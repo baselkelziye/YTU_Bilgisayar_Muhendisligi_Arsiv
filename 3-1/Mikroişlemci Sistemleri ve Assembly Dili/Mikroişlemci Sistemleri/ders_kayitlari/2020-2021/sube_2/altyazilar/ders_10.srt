@@ -1,0 +1,2288 @@
+1
+00:05:39,339 --> 00:05:45,899
+Merhaba arkadaşlar, umarım hepiniz iyisinizdir, derse başlayalım.
+
+2
+00:05:45,899 --> 00:05:54,290
+Evet, geçen hafta arkadaşlar sayıcılarla alakalı giriş yaptık.
+
+3
+00:05:54,290 --> 00:06:02,449
+6 moddan, mod 0'dan 5'e kadar olan modlardan 3 tanesini inceledik ve bitirmiştik dersimizi.
+
+4
+00:06:02,449 --> 00:06:10,689
+Bu hafta son geri kalan mod 4-5, hatta 3-4-5'i de inceleyip örneği geçeceğiz, örneği yapacağız.
+
+5
+00:06:11,170 --> 00:06:23,490
+Genel olarak bir daha hızlıca bir tekrar etmek gerekirse, 82-74 entegremiz bizim programlayabileceğimiz bir sayıcı devresiydi esasında.
+
+6
+00:06:23,490 --> 00:06:31,170
+Geriye doğru sayıyordu ve sayım bitince moduna göre farklı farklı aksiyonlar gerçekleştiren bir entegreydi.
+
+7
+00:06:31,730 --> 00:06:50,050
+Aynı şekilde zaten bütün entegrelerde olduğu gibi bunun da bir adres boşluğuna, adres uzayına yerleşmesi gerekiyor ki içerisinde gerekli programların gömülebileceği ve gerekirse işte o oradan veri okuyabileceğimiz bir adres uzayını tanımlamamız gerekiyordu.
+
+8
+00:06:50,050 --> 00:06:55,490
+Bütün entegrelerde şimdiye kadar 80-86'yı bağladığımız bütün entegrelerde olduğu gibi.
+
+9
+00:06:55,490 --> 00:07:00,610
+Sesim geliyor değil mi arkadaşlar sormadım ama sonra boşak konuşuyor olmayın.
+
+10
+00:07:01,009 --> 00:07:03,009
+Geliyor hocam.
+
+11
+00:07:05,009 --> 00:07:16,209
+İç yapısına baktığımızda da her entegre şimdiye kadar işlediğimiz input-output entegresi olabilir veya ileride işleyeceğimiz başka interab entegreler olabilir.
+
+12
+00:07:16,209 --> 00:07:30,209
+Hepsinde olacağı gibi bir control word registerımız burada da mevcut içerisinde 3 adet sayıcı olduğundan bahsettik ve bu sayıcıların da bir adet her bir sayıcıya ait kendine özel sayım sonucunda
+
+13
+00:07:30,209 --> 00:07:35,170
+1 veya 0 olma durumunu yansıtacağı bir out pin'in olduğunu bahsettik.
+
+14
+00:07:35,170 --> 00:07:44,610
+Gate uçları kontrol edebilmemiz içindi yani işte gate'in geçişine göre mi kontrol edeceğiz bu sayıcıyı yoksa işte clock pulse'ine göre mi bakacağız.
+
+15
+00:07:44,610 --> 00:07:54,769
+Gate'in sadece duraksama işte o sayım sırasında duraksaması için kontrol etmemiz mi isteniyor buna göre gate bir kontrol ucuydu.
+
+16
+00:07:55,329 --> 00:08:00,689
+Ama bütün sayıcılara clock'un düşen kenarında işlem yapmaktaydı demiştik.
+
+17
+00:08:00,689 --> 00:08:12,689
+A0-A1 yine diğer entegreler gibi burada bizim kontrol gördüğü seçmemizi gerecek olan kısım olacak yani oradan adresini seçeceğimiz kısım olacak.
+
+18
+00:08:21,310 --> 00:08:28,910
+0-0 verdiğimizde 0'ınca sayıcı binary olarak verdiğimiz değerleri göre sayıcıya seçmemiz sağlanmaktaydı.
+
+19
+00:08:28,910 --> 00:08:34,669
+1-1 bizim kontrol rejistirine ulaşmamızı sağlayan ayarlamaydı.
+
+20
+00:08:34,669 --> 00:08:48,559
+Burada kontrol gördüğün formatından bahsetmiştik ilk ipini hangi counter'ı seçeceğimiz yani hangi counter'a ait nasıl davranması gerektiğini belirteceğimiz selection kısmı olacaktı.
+
+21
+00:08:48,559 --> 00:08:58,320
+Burada 0-0-0-1-1-0 zaten counter seçimi gitti 1-1 özel bir duruma var aslında komentleri gene okuyabileceğimiz kısım.
+
+22
+00:08:58,320 --> 00:09:11,090
+Evet ben bir şak sizin mümüt ettim değil mi arkadaşlar biz sizden ses alıyorum ama ben tamam.
+
+23
+00:09:11,090 --> 00:09:25,889
+Sonra iki pin ise bizim rewrite dediğimiz normalde şuraya baktığımızda da görebileceğimiz gibi içinde bu entegrede 7 bitlik 8 bitlik bir entegreydi.
+
+24
+00:09:26,450 --> 00:09:41,570
+Sıfırdan B7'ye kadar bir database buffer kısmından sonra entegrenin girişi vardı ama bizim 80-86'ın 16 bitlik bir data mimarisi olduğundan dolayı burada bir leçleme yani bir tutma veyahut da seçme işlemi yapmamız gerekmekteydi.
+
+25
+00:09:41,570 --> 00:09:53,090
+Bunun için de biz şu 2 pin'i set ederek yani bir şekilde konfigurasyonu sağlayarak farklı şekillerde 16 bitliklerimizi analiz edebiliyorduk.
+
+26
+00:09:53,490 --> 00:10:14,690
+Sıfır sıfırı bugün işleyeceğiz onu şu an geçelim 0-1 de rewrite'ın yani yapacağımız işlemde v-significant yani 16 bitin a-x'e 16 bit dersek a-h ve a-h ve a-l diye ikiye ayırdığımızda 8 biter a-l'sini analiz edeceğimiz kısım olmaktaydı.
+
+27
+00:10:14,690 --> 00:10:34,850
+Bir sıfırda da a-h'ı analiz edeceğimiz kısımda bir bir yaptığımızda da bir sıralamaya sokuyordu kendini ilk etapta a-l'yi yazıyor sonra a-h'ı a-l'nin üzerine yazarak tekrardan ikinci cycle'da 16 bitlik veriyi sayıcının içerisinde gömeme mimarisi sağlıyordu.
+
+28
+00:10:35,809 --> 00:10:43,490
+Şu 3 pin ise bizim tamamen modlar dediğimiz gibi 6 farklı modumuz olacak bu modların seçim üçleriydi.
+
+29
+00:10:43,490 --> 00:11:04,210
+En sağda da eğer ki cotara ürse yani bizim sayılmak istediğimiz sayım değerleri binary değil de yani normalde decimal format'taki bir sayım yetiyorsa ki biliyorsunuz binary daha fazla bir 16 sıfırdan 15'e kadar sayıyı yazabileceğimiz halde decimal de 9'a kadar yazabileceğiz.
+
+30
+00:11:05,169 --> 00:11:19,330
+Bunu ayarlayabileceğimiz bölmeydi yani sıfır yaparsak biz binary bir hex sayısı verebilir ve oradan geriye saydırabiliriz bir yazarsak da decimal olarak bir sayının sayılması mümkün olmaktaydı.
+
+31
+00:11:19,330 --> 00:11:24,370
+Bunları zaten yapmıştık örnekle çözmüştük buraları geçiyorum.
+
+32
+00:11:25,250 --> 00:11:30,450
+Burada genel bir modlara isimlerden bahsettik ama dediğim gibi ezberlemeye gerek yok.
+
+33
+00:11:30,690 --> 00:11:37,490
+Sadece sizin zaten paylaştığımız pdf de bunların time diagramları mevcut.
+
+34
+00:11:37,490 --> 00:11:49,250
+O time diagramlarından bir anlam çıkartılacak yani çıkartılabilir biz burada her birinin time diagramını zaman diagramını anlayacağız yani üçünü ettik zaten diğer üçünü de bugün öpeceğiz.
+
+35
+00:11:49,250 --> 00:12:15,940
+Ama genel olarak mod 0'ın belli bir sayımdan sonra çıkışta bir oluşturma durumu yani ilk kontrolde 1'den 0'a sonra 0'dan 1'e yükselme durumu mod 1'de işte one-shot denmiş ama aslında mod 1'de de belli bir sayımdan sonra tekrardan biri yükselme durumunun olduğunu bahsedeceğiz.
+
+36
+00:12:15,940 --> 00:12:21,379
+Bu diagramları bu şekilde okumayı bilmek daha mantıklı ya buradaki ezberlemekten ziyarete.
+
+37
+00:12:21,379 --> 00:12:40,259
+Sadece ezberlenecek iki şey var burada yani bilinmesi gereken eğer ki sizden soruda bir pulse diagramı isteniyorsa yani bir sinyal de belli bir herzden sonra bir darbe sinyali isteniyorsa bu mod 2'dir.
+
+38
+00:12:40,259 --> 00:13:09,700
+Çünkü biliyorsunuz bu bir kloktan sonra tekrar kendini eski moduna getiren bir mod olduğu için yani sayım bitti bittikten sonra altın sıfıra indi sonra bir klok sonra tekrar 1'e yükseliyor otomatikma yani bir pulse yapıyor pulse deniyorsa mod 2 işlemi yapacağız demek eğer ki kare dalga bir sinyal isteniyorsa bugün göreceğimiz konu mod 3 bu ikisini bilsek yeterdi hem ismem kare dalga isteniyorsa mod 3.
+
+39
+00:13:10,179 --> 00:13:23,220
+Bir puls dalgası bir darbe dalga yani darbe sinyali isteniyorsa belli bir frekansa ait mod 2 diyeceğiz arkadaşlar bir telefon çalıyor hemen bir açıklayacağız.
+
+40
+00:13:23,220 --> 00:14:02,399
+Mod 2 ve mod 3'ün ismini en azından biri mod 2'nin pulse generator olduğu veya red generator olduğu mod 3'ün ise süker kare dalga generator olduğunu bilsek kâfi diğerleri zaten diğer gamlardan anlaşılabilecek problemler.
+
+41
+00:14:02,879 --> 00:14:27,840
+Hızlıca bunları tabi bu üçünü de analiz edelim mod sıfır neydi ilk etapta kontrol word yazdıktan sonra zaten ilk yüklenmesi yani out dediğimiz bakacağımız kontrol edeceğimiz sinyal pin ucu kontrol word yazıldıktan sonra 1'den sıfıra düşüyor bu modda sonrasında her klon düşen kenarında sayma işlemi yapıyor ilkinde yükleme yapıyor sonrasında sayma işlemi yapıyor.
+
+42
+00:14:28,080 --> 00:14:52,159
+Gate 1 ise geri sayıyor. Gate 0 ise saymayı durduruyor. Sayma değeri sıfır olduğunda da çıkıştan biz sıfırın bir olma durumunu kontrol ederek daha doğrusu sayma sıfırı yerleştiğinde out'un gir şeklindeki bilgiyi biz istediğimiz yerde işte bir interapt oluşturacaksak veyahut da bir LED yakacaksak bunu buradan out ucundan kullanabiliyoruz.
+
+43
+00:14:53,120 --> 00:15:36,210
+Örnek yani bu diyagramlar önemli zaten ilk ben burada cetvel açıyordum size onu bir ayarlayayım cetvelde daha iyi anlaşılıyor tutan ne dersen göstereceğim çünkü tam ekranda cetvel gelmiyor gözüküyor mu arkadaşlar cetvel ve sunum?
+
+44
+00:15:36,210 --> 00:15:39,940
+Evet hocam.
+
+45
+00:15:39,940 --> 00:16:09,940
+Tamam ilk kontrol 4'den sonra dediğimiz gibi out 1'den sıfıra düştü sayma işleminin ilk burada LSB'yi tanımlamışız yani 4 diye bir sayıyı yükleyeceğiz şurada yüklendikten sonra ilk düşen kenar tetiklemede bu sayı counter'ın içerisine yazılıyor şu aşağıda gözüktüğü gibi sonra bundan sonra artık sayma işlemi devam ediyor her düşen kenarda bir tane azalarak en son
+
+46
+00:16:09,940 --> 00:16:26,580
+sıfır yani birden sıfıra doğru geçerken yani artık sayım bittiğinde out'un sıfırdan bire yükselen kenar şeklinde oluyor sonra duruyor tabi sonra tekrar yani burada bir tekerrür söz konusu değil her seferinde üstüne yüklenen bir sayım modu değildir bu.
+
+47
+00:16:26,580 --> 00:16:56,500
+Sonra başka bir senaryoyu daha gate bazından da izledik yükledik düşen kenarda şurada yüklendi sayıyoruz sayma işlemi ikiye düştü şurada sonra ama gate ucum benim yani kontrol ucum 1'den sıfıra düşmüş ama bu ta ne zaman durduğunu anlayacağız bir sonraki çünkü şu düşen kenardan önce düşürmüşüz yani burada duraklamaya başlayacak burada bir değişiklik olmayacak.
+
+48
+00:16:56,500 --> 00:17:23,619
+Burada da bir değişiklik olmayacak. Ta ki yükselen kenardan sonraki yani şu gate'in yükselen kenarından sonraki ilk düşende gate'in o anki gate'in 1 olduğu için sayım devam edecek şu an mesela şu düşen kenarda gate'in 1 olduğu için sayım devam etti bu şekilde en basit anlamda duraklatma gate ucuyla duraklatmayı sağladığımız bir mod bu.
+
+49
+00:17:24,339 --> 00:17:27,140
+Ama dediğim gibi tekerrür etmiyor bu önemli.
+
+50
+00:17:28,980 --> 00:17:32,339
+Başka bir üst üste verinin yazılma durumunu analiz edelim.
+
+51
+00:17:32,779 --> 00:17:45,420
+Kontrolörtü yüklediğimiz gibi altımız düştü ilk lsv 3'den sonra ilk düşen kenarda tekrardan değeri yazdık 3 düşen kenar gate'in de 1 olduğu için saymaya devam ediyorum.
+
+52
+00:17:46,380 --> 00:18:00,380
+Düşen kenar gate'in 1 olduğu için saymaya devam ediyorum ama şu an daha tam yüklenmedi fark ettiyseniz yani yüklenmeyi anlaması için bir düşen kenar yani işlem bittikten sonra düşen kenara ihtiyaç var.
+
+53
+00:18:01,099 --> 00:18:19,579
+Şu an işlem bitti ilk düşen kenarda normalde 1'di sayım sıfır olması lazımken yeni değerle yüklenir arkadaşlar bu modda yani öncekini bitireyim sonra devam yani sonra yeni değerle yükleneyim modu değildir bu onun modu da var o ayrı buradaki mod sıfırda üstüne yazar.
+
+54
+00:18:19,579 --> 00:18:49,579
+İlk düşen kenarda son yüklenen değer ve seti olduğu kontrolün içerisi sonraki düşen kenarlarda da tek tek sayım işlemi bitiyor bittikten sonra ff'liyor zaten yani kendisini tekerrür etmiyor yine aynı şekilde mod sıfır bu anlamda basit anlamda bir sayma değeri var saymanın neticesinde sadece tek pas yani tek seferlik bir sinyali ihtiyacın var kullanılabilir veyahut da güncelleme geldiğinde yeni güncelli
+
+55
+00:18:49,579 --> 00:19:18,420
+değerleri o an içerisi kontrolün içerisi sıfırlansın yani sıfırlansın demeyelim o değere set olsun istiyorsak kullanılabilir mod 1'e bakarsak eğer mod 1'de out başta 1 gene aynı kontrol vörüten sonra şurada hatta şey yapalım kontrol vörtü yükledik yüklediğimiz gibi out yükseliyor sonra her düşen kenara ilk etapta şu yüklendikten sonra lsb ilk düşen kenarda
+
+56
+00:19:19,259 --> 00:19:42,210
+yüklemesi lazımdı şurada ama bunun tek farkı yani bunun farkı gate ucunun da etkisinin olması gate ucu için sıfır sıfır bir geçişinde altta bir değişiklik yaşıyoruz yani şurada düşen kenarda yüklenmedi bu değişim olacak ki ondan sonra yüklenecek
+
+57
+00:19:42,210 --> 00:20:09,369
+yani gate'deki değişimi önemli yüklenebilmesi için ondan sonra çıktığımızda yani out'umuzda zaten sıfırlanıyor ve sayma işlemi bittikten sonra her düşen kenarda saymaya devam ediyoruz sayma işlemi bittikten sonra ise yükselen yani kendisini out'u yükseltiyor tekrardan biz bunu düşünmek istediğimizde yani sayım tekrar devam etsin reset yani tekerrur etsin de istersek
+
+58
+00:20:09,369 --> 00:20:09,529
+bu gate'i tekrardan change etmemiz gerekiyor yani mesela gate bir kere change ettik saydı bitti sonra ff ile devam eder yani herhangi bir sayma işlemi kendini tekrar etmez ta ki ama hafızada kalır saymak istediği değer ta ki gate'imizin ucu yani gate'deki bir sıfır change olursa ondan sonra tekrardan bir düşen kenar sonra yüklenir ve sayma işlemi tekrardan devam eder sayma işlemi bir kere
+
+59
+00:20:39,369 --> 00:20:58,009
+bittikten sonra out'umuz sıfırdan birine tekrar yükselir burada gate sıfırla gate bir arasındaki fark şey mode sıfırla mode bir arasındaki fark gate ucunun change'ine bakması ve tekrar edebilmesi için hafızalandırması yani buradaki veriyi kendi içerisinde tutuyor
+
+60
+00:20:58,009 --> 00:21:01,339
+bunları zaten analiz etmiştik yine hızlıca bakıyoruz şurada change olduktan sonra ilk düşen kenarda yükledik üçü devam ediyoruz iki yaptık sonra bir changement daha yani bir değişiklik daha yaptık burada ama daha henüz saymaya devam edecek çünkü bir düşen kenar sonra bu changement aktif oluyor çünkü düşen kenardan sonrasına kadar sürünmüş bu gate'in günündeki değişim ama sayma bitmeden de gate'i değiştirirsen
+
+61
+00:21:30,700 --> 00:22:00,700
+zaten resetlemiş oluyorum arkadaşlar aynı şuradaki gibi yani sayma bittikten sonra gate'i değiştirmek zaten saymayı tekrar ettiriyor idi ama sayma bitmeden ben gate'i değiştirirsem yani gate'in ucundaki şeyi o zaman her düşen kenarda tekrardan sıfırlanarak saymaya devam edecek sıfır olduğunda da zaten out'umuz bir olacak buralarda problem var mı yok herhalde
+
+62
+00:22:00,700 --> 00:22:30,700
+çünkü üstüne bir veri yazarsak ne olacak onu analiz edelim yine kontrol örtü yüklenince bir oldu şurada değeri yükledik changement yaptık ve düşen kenarda da değer başladı saymaya ikiydi burada tekrar bire düştü sonraki düşen kenarda yeni değer yüklemiş olmamıza rağmen mod sıfırdan bir farkı da bu eski değerin bitmesini bekliyor sonraki eğer ki gate'im change
+
+63
+00:22:30,700 --> 00:23:03,450
+yoksa yeni değeri yükleniyor arkadaşlar tamam mı ff yani burada yükselttik artık bundan sonra saymalar ff neden çünkü şunu biliyoruz ki mod 1'in sayması için gate'in yani başlaması veyahut da yeni değeri yüklenmesi için gate ucunun change'i şart şurada yaptıktan sonra şuradaki 4 değeri yüklenmiş oluyor ilk düşen kenar tetiklemesinde tamameniz herhalde tamameniz mod 1 mod 2 dediğim gibi
+
+64
+00:23:03,450 --> 00:23:33,450
+mod 3'i 1 ismi var pulse üretir yani 1'den sıfıra düşer yani sayım işlemi bittikten sonra out başta 1'dir sayma bittikten sonra bittikten derken burada önemli nokta 1 olduğunda diyelim yani tam sıfır olduğunda değil diğerinden farkı bu 1 olduğunda out 1'den sıfıra düşer bir clock sonra da otomatik mod 0'dan bire tekrar yükselir ve bu periodik olarak tekrarlanır yani aslında bir pulse üreteci ters açıda yani
+
+65
+00:23:33,450 --> 00:24:04,759
+üretmesine gerek yok negative pulse da bir pulse'dır tabi gate sıfır olması burada duraklatan bir etkiye sahip analiz edelim kontrol vörtü yüklediğimiz gibi out 1 oldu ilk düşen kenarda vsb 3'ü yükledim sonra sayıyorum 2 1 olduğunda pulse ürettim sonra tekrar 3'e yükledim yani bir daha değeri işte bir clock'la tetikleyeyim veyahut da işte tekrardan yüklemem lazım mod 0 ve mod 1'de olan
+
+66
+00:24:04,759 --> 00:24:23,960
+bu uydur burada kendini tekrar ediyor sinyal ta ki duraklatmak istiyorsak sadece gate'in verdiği yani sıfıra indirdikten sonraki ilk düşen kenarda değeri 2 şeklinde duraklatacağız yani bu gate süresince gate'in sıfır olduğu sürece düşen kenarlarda
+
+67
+00:24:23,960 --> 00:24:53,960
+yani daha önceki değerden bir altına tetiklenecek yani çünkü şurada clock pulse'ı burada biraz kaymış ama normalde arkadaşlar clock pulse'ı bir tık öndedir şeyden gate sinyalinden burası biraz tam olmamış ama burayı hissediyor clock daha hızlı bir sinyallik burayı hissediyor 2'ye düşürüyor sonraki düşen kenarda gate'in benim düşen yani sıfır olduğu için 2'de duraklıyor sonra devam eden düşen kenarda
+
+68
+00:24:53,960 --> 00:25:27,349
+resetliyor tekrardan 3-2-1'den devam edecek tamam mıyız arkadaşlar üstüne değer yazarsak ne oluyor onu da anlayıcı edelim hızlıca şurada yükledik 4'ü yüklendi 1 düşen kenarda 3'e indirdik öteki düşen kenarda 2'ye indirdik daha yüklenmedi zaten değer şu düşen kenarda normalde yüklenmesi beklenirken yüklenmedi bu değer normal 1'e düştü 1'e düştüğü için de zaten out'un
+
+69
+00:25:27,349 --> 00:26:07,880
+tetiklendi sonraki değerlerde yeni değerin üzerinden işlem görür mod 2 için bir örnek yapmıştık demiştik ki counter sıfırı seçelim 50 mikrosaniyede bir pulse üretecek şekilde ayarlayalım şimdi 50 mikrosaniye dediğimiz şey saniyenin yani bu bir frekans bandında da düşünebiliriz normalde neydi frekans hesabı f eşittir 1 bölü t değil mi şimdi eğer ki bize sorun
+
+70
+00:26:07,880 --> 00:26:47,190
+50 mikrosaniye diyorsa 50 çarpı 10 üzeri eksi 6 yapacağız değil mi bu cepre olunca da yapışıyor bu paranın niye büyüdüm yani 10 üzeri eksi 6 oluyor bunun frekans bandına geçmemiz şu yüzden önemli çünkü bizim entegre besleme olarak verilen clock pulse frekans cinsinden verilmiş megahertz cinsinden verilmiş o yüzden frekans bandına geçip amaç şunu yapmak
+
+71
+00:26:47,190 --> 00:27:17,190
+işte 2 diye bir değer girdik ve bu 1'e düşecek sonra da sıfıra düşecek değil mi bir düşme yani bir sayma işlemi yapacağız bu ikiden 1'e düşme aslında bu şu demek 2 megahertz de gerçekleştiriliyormuş e ben toplam hepsini bütün sayma sistemini eğer bir sistemi 2 megahertz de yapıyorsam hepsini kaç megahertz de yaparım yani bunun cevabı bu aslında yani bu kadar megahertz veya neyse ne çıkacaksa
+
+72
+00:27:17,190 --> 00:27:47,190
+bundan ne çıkıyor 1 milyon böyle 50'den 200 kilo herz mi çıkıyor acaba sanki herhalde 200 kilo herz gibi bir değerde bunu sabitlemem lazım değil mi bu kadar sayı nasıl bir sayı bu kadar yani nasıl ne kadar bir sayıyı her bir site bir 2 megahertz şeklinde tetiklersem genelde sistem sıfıra bu kadar süre sonra ulaşır sorsunun cevabına bakıyoruz ilk başta kontrolü örtü bir analiz ediyoruz
+
+73
+00:27:47,190 --> 00:28:17,109
+bir de bu niye bu kadar kalın şurayı incelteyim biraz şurası counter seçmeydi counter sıfır dediği için sıfır burası lsb msb veya önce lsb sonra msb seçme ayarlamasıydı bu da şu an lsb ile iş yapacağız sadece demek yani onu şey yaptık çünkü muhtemelen yetecek bu muhtemelen mevzus da şu normalde biliyoruz biz 16 bittik sayı
+
+74
+00:28:17,109 --> 00:28:38,869
+sayabiliyor yani maksumum f f f f'den sıfır sıfır sıfır sıfıra kadar sayı sayabiliyor bu sayar çünkü neden 16 bittik sayı dedik peki burada kaç değer var 65.536 tane değer var 65.536'ın her bir step'i
+
+75
+00:28:38,869 --> 00:29:07,349
+yani milyon iki megahertz frekansla düşüyormuş bize diyor ki soru öyle bir sayı seç ki bütün sayım yani sıfıra ulaşma 50 mikrosaniyede tamamlansın gibi bir soru şimdi burayı da lsb'sini sadece kullanabiliyor dedik yetecek çünkü 8 bit mod 2'yi seçtik çünkü puls üretecek demiş
+
+76
+00:29:07,349 --> 00:29:35,349
+ve en sonunda da sıfır bainer bir sayı vereceğim demektir bir de bin cd yani ondalık bir sayı verebilirim demektir baineri ya bu önemli değil bu isterseniz bir yapın isterseniz sıfır ama önemli olan şu bir yaparsak ne vereceğimiz sıfır yaparsak ne vereceğimiz çok önemli mesela burayı bir yapıp 64 vermek tamamen yanlış bir değere bizi çıkartacak kontrol mörde 14 aşı seçtik
+
+77
+00:29:35,349 --> 00:29:55,349
+şimdi sayma değerinde de her bir step iki megahertz şimdi tersten düşüneceksiniz megahertz ne kadar artıyorsa o kadar sık demek yani şeyse saniye bazında da megahertz ne kadar artıyorsa saniye o kadar kısalıyor demektir
+
+78
+00:29:55,349 --> 00:30:25,349
+oradan ters orantılı olarak çıkarttığımızda 2 megahertz'in işte normalde bir böyle 50 çarbanın üzeri x6 frekans bağında kaç tanelikten oluşacağını biliyoruz yani 100 tane 2 megahertz bunu oluşturuyor diyebiliriz burada da 100 aslında normalde ondalık bir sayı eğer ki ben buraya bir yapar ve 100'ü yükleseydim gene olabilirdi ama burada da sıkıntı şuydu 100 sadece lsb'ye sığmazdı çünkü
+
+79
+00:30:25,349 --> 00:30:42,349
+bu vereceksen ben şöyle bir değer vermem lazım ilk başta işte burayı bir bir yapmam gerekirdi ilk başta lsb'yi gönderirdim sonra msb'yi gönderirdim yüzde 1'i anlatabilmek için ama ben böyle bir tasarım yaptığım için yani sadece
+
+80
+00:30:42,349 --> 00:31:18,170
+lsb'yi kullan dediğim için bunu 16'lık tabana çevirdim ve burayı da o yüzden 1 değil 0 yaptım burası anlaşıldı mı herhalde anlaşıldı tamam devam edelim işte 14 aşı kontrol ve örtü al' aldık kontrol adresine al' yazdık sonra 64 aşı al' alarak yani bu işte şeyin adresini sonuçta a0 ve a1 vardı ya a1 ile a0
+
+81
+00:31:18,170 --> 00:31:36,859
+bir bir şurayı nomine ediyordu sıfır sıfır da burayı nomine edecek şekilde farklı adreslere bu veriyi yazdık şimdi geldik biraz daha bu haftanın konularına mod 3 kare dalga üretici arkadaşlar square wave generator diye de geçer
+
+82
+00:31:36,859 --> 00:31:57,859
+kare dalga üretici devresi burada normalde bizim şimdiye kadar bir sayma işlemi bitti veya bir saykıl kala ki mod 2 de öyleydi yani bir step kala 1 deyken out'un bir değişimi söz konusuydu ve o out'un değişiminin uzunluğu da moduna göre değişiyordu işte mod 2'de
+
+83
+00:31:57,859 --> 00:32:20,859
+mod 3'de ise biraz daha farklı out sayma değerinin yarısında bir diğer yarısında sıfır oluyor ki kare dalgın frekansı bizim bütün saymamız oluyor yani öyle düşünebiliriz
+
+84
+00:32:20,859 --> 00:32:46,859
+peyodik olarak tekrarlıyor bu da aynı şekilde zaten generator sinyal generatörler peyodik olarak devam etmesi lazım mod 2'den duty değerinin %50 olması ile ayrılıyor duty dediğimiz bir saykılın değeri mod 2'den tek farkı biraz daha uzun bir şekilde yani girdiği pozitif değer ile negatif değerin şuranın oranlarının %50 olması burada
+
+85
+00:32:46,859 --> 00:33:19,329
+git sıfır ise burada da saymanın duraklatması söz konusu analiz edelim chatlerimizi alalım şu kontrol mürtleri tek tek izah etmiyorum zaten hepsi sıfır counter sıfırı seçtiğimiz senaryoda lsbi'yi seçtiğimiz senaryo ve öteki taraf 6 olan kısım ise zaten modları seçip en sonunda sıfır olarak girdiğimiz kısım sıfır bir bir sıfır yani burada mod 4 şey mod 3'ü analiz ediyoruz
+
+86
+00:33:19,329 --> 00:33:36,329
+ilk counter'ı yükleyince yine altın 1 oldu düşen kenar geçtim düşen kenar geçtim bir şey olmayacak ta ki lsbi'yi yüklendi düşen kenarla sayım yani counter'ın içerisine atıldı bundan sonra her düşen kenarda saymaya devam ediyoruz
+
+87
+00:33:36,329 --> 00:34:06,329
+ama burada ikişer ikişer göstermez sırf hani sıfıra eğersin diğerkinde de diğer taraf sıfıra eğersin diye ama yani amaç burada şunu göstermek yarısında şey yarısında şey olması yani ikişer ikişer aktarmanın amacı o 4 düşen kenarda 2'ye düştü daha iki kere saydı yani 4 3 oldu 2 1'de de tam işte tersi olacak yani 1 iken sıfır sıfırken 1'e düştü
+
+88
+00:34:06,329 --> 00:34:36,329
+tam sıfır olacak 4 2 burada tekrardan bu tekrar edecek şekilde bir kare dalga üreten bir mod dediğimiz gibi 4 step saydıktan sonra değiştirmiyor iki step saydıktan sonra değişip bir iki step daha saydı buraya 6 yaparsak 3 sayacaktı sonra diğer 3 de yükselen kenarda sayacaktı 6 bu şekilde bir çalışması var 5 verirsek ne oluyor ilk düşen kenarda yükledik
+
+89
+00:34:36,329 --> 00:35:08,059
+4'e yüklendi 2 oldu bir tarafı 3 saykıldaki altın yükselen kenarında daha fazla olur yani ilk etapta 1'le başlıyoruz ya o 1'le olan kısımda sayımlarda tek sayılarda 3'ü orada ikisi düşen kenar gibi ayarlanır ikisi de düşen kenarda olacak şekilde 5 de bu şekilde 7 olsaydı misal bir de 4 tane normal 1 3 tane de düşen kenar
+
+90
+00:35:08,059 --> 00:35:41,260
+şu düşen kenar şeklinde altımız üretilmiş olacaktı gate'in analizine bakalım yükledik 4'ü 2'ye düşürdük sonra sıfır oldu altın sonra 4'ü yüklendi 2'ye düştü şurada bir kayma sözü ha gate varmış pardon şurada gate'in sıfıra inmesinden dolayı şu kısımda şurada 4'ü yükledik düşen oldu şu düşen kenarda
+
+91
+00:35:41,260 --> 00:36:01,260
+2 olması gerekirken şuradaki gate direkt duraklatıyor sayımı duraklatıyor ve avutumuzu yükselen kenara çıkartıyor ve tekrardan ne zaman ki gate'in benim 1 oldu ve sonraki stepte sıfırlanarak yani tekrardan saymaya devam ediyoruz
+
+92
+00:36:01,260 --> 00:36:14,260
+yani gate'in burada duraklattığı kısım şurası şu 2 kısmı gate tekrardan yukarı çıktığında ilk düşen kenarda tekrardan saymaya devam ediyor
+
+93
+00:36:14,260 --> 00:36:46,030
+mod 3 için örnek yapacak olursak counter 1'i seçtiğimiz 1 kHz frekansına kare dalga üretecek şekilde ayarlayın 2 MHz'lik bir ana clock parsimiz varmış hep aynı şeyi diyoruz 2 MHz'in içerisinde kaç tane daha doğrusu 1 kHz'in içerisinde kaç tane 2 MHz var bunu araştırmamız lazım buradaki kilo ile mega'yi çok karıştırıyorsunuz o yüzden üstüne vurguluyorum tersten düşüneceksiniz
+
+94
+00:36:46,030 --> 00:37:09,500
+yani 2.000 tane aslında sinyal alabiliyor tek bir puls sinyali için bunun için 2.000 tane daha bunun içerisinde bu var diyebiliriz yani 2.000'e kadar bu frekansa sahip bir counter 2.000'den geriye sayarsa aslında 1 kHz'lik bir sinyal üretmiş oluyor
+
+95
+00:37:09,500 --> 00:37:32,500
+bu kısımda counter 1'i seçtik burada 2.000 olduğu için hani dsb ve msb'yi ayrı ayrı vererek vermemiz lazım bunu hegze de çevirirseniz sonuçta 3 bit olacak yani 8 bitten fazla olacak öyle olduğu için de hem önce dsb'yi sonra msb'yi yükledik
+
+96
+00:37:32,500 --> 00:38:04,219
+sonra mod'umuzu seçtik mod 3 en sonunda da binary olarak yani decimal olarak sayı 20'yi seçtik yani bunun da hegzası 77'e haşmış 77'e haşı yüklüyoruz kontrol adresine sonra ilk başta low msb'yi gönderiyoruz counter 1'in adresine sonra da msb'yi gönderiyoruz counter 1'in adresine
+
+97
+00:38:04,219 --> 00:38:19,800
+mod 3'de sıkıntımız var mı arkadaşlar chat'i ben açmayı unutmuşum yazdı herhalde bir şey ama chat açılmıyor şu an
+
+98
+00:38:19,800 --> 00:38:33,780
+sorumuz var mı yok herhalde mod 4 örneğine geçelim out başta bunda da bir sayma değeri 1 olunca bu da aynı mod 2'ye göre mod 2 gibi
+
+99
+00:38:33,780 --> 00:38:48,780
+out 1'den sıfıra düşüyor 1 clock sonra out sıfırdan 1 olur ve kalır diyor orası önemli yeni sayma değeri yazılmadıkça tekrarlanmaz git sıfır ise sayma duraklar bakalım
+
+100
+00:38:48,780 --> 00:39:16,019
+ilk düşen kenar şurası yazdık 3'ün 3 değeri varmış 2 1 şurada düşen kenar oldu yani mod 2'nin tam tersi şu an o düş yani nasıl diyeyim tam ters değil de mod 2'ye benzer bir şekilde sıfırda yani şu 1'den sonra düşüyor
+
+101
+00:39:16,019 --> 00:39:36,219
+ondan sonra yükseliyor ama tekrar etmiyor mod 4 tamam mod 5'e bakalım bunda da out başta 1 gate 01 geçişinde saymaya başlayacak bunda da bir geçiş süreci var yani mod 1 gibi sayma değeri 1 olunca out 1'den sıfıra düşecek
+
+102
+00:39:36,219 --> 00:39:57,219
+1 clock sonra out sıfırdan 1 olur ve kalır diyor burada burada da önemli olan gate'in 01 geçişi olmadıkça tekrarlanması ötekinde de gate'in 1 olma durumu söz konusu ama bu bir kontrol sağlamıyordu burada burada geçişler önemli mod 5'de
+
+103
+00:39:57,219 --> 00:40:17,659
+işte düşen kenarda şurada yazmadık çünkü daha geçiş tamamlanmadı geçişi sağladıktan sonraki clock da düşen kenarda yüklemeyi gerçekleştirdik 3 2 1 sayımı devam etti sıfırda
+
+104
+00:40:17,659 --> 00:40:36,659
+işte tekrar mod 4'deki gibi düşen kenarı yaptı sonra tekrardan şurada yüklenmiyor geçiş olduktan sonraki düşen kenarda şuradaki değerimiz yüklenecek tekrardan sayma işlemi yapacak gate'e bağlı bir sayma söz konusu
+
+105
+00:40:36,659 --> 00:40:43,550
+tamam mıyız arkadaşlar mod 4 ve mod 5'de soru var mı?
+
+106
+00:40:43,550 --> 00:40:49,550
+mod 5'de sayma bitmeden gate'i tekrardan puls atarsak resetliyor mu başa mı dönüyor?
+
+107
+00:40:49,550 --> 00:40:52,550
+sesin çok az geldi bir daha alabilir miyim?
+
+108
+00:40:52,550 --> 00:41:02,550
+mod 5'de daha sayma bitmeden daha puls almadan gate'i tekrardan puls atarsak başa mı dönüyor?
+
+109
+00:41:02,550 --> 00:41:05,550
+başa döner aynen 3'den başlar tekrardan saymaya
+
+110
+00:41:06,550 --> 00:41:09,550
+gate burada aynı bizim şurada da vardı ya mod 1'di
+
+111
+00:41:09,550 --> 00:41:12,550
+hatırladınız mı? şuradaki gibi
+
+112
+00:41:12,550 --> 00:41:25,329
+şurada vardı ya 3'ü yüklüyoruz 2 1 ama gate işte change oldu bir sonraki saykılda 3'e yükleniyor
+
+113
+00:41:25,329 --> 00:41:32,329
+mod 1'in aynısı mod 1'deki gibi ama bu uzun süreçte değil bir saykıla bakıyor
+
+114
+00:41:32,329 --> 00:41:38,110
+mod 5 şuradaki gibi
+
+115
+00:41:38,110 --> 00:41:45,920
+tamam yani dediğim gibi başa var
+
+116
+00:41:45,920 --> 00:41:51,920
+herhalde başka soru var mı arkadaşlar? mod 4 mod 5 bunlar zaten buradan anlaşılır
+
+117
+00:41:51,920 --> 00:41:56,920
+tekerrüre edilmesi eğer bir kontrole bağlıysa ve bir puls üretmek istiyorum ama gate'e de bağlı olsun
+
+118
+00:41:56,920 --> 00:42:01,920
+belki mod 5 kullanmak gerekir çünkü gate'e ki change'e bağlı olarak tekerrüre ediyor
+
+119
+00:42:01,920 --> 00:42:03,920
+ama bunda da sıkıntı şu
+
+120
+00:42:03,920 --> 00:42:08,920
+gate'i aynı frekansda acaba tekerrüre ettirebilecek misiniz?
+
+121
+00:42:08,920 --> 00:42:12,920
+gibi farklı kumanın yerleri var
+
+122
+00:42:12,920 --> 00:42:20,579
+evet şimdi şunu yine ben bir full ekran yapayım çünkü bundan sonra jetfire ile işimiz kalmadı
+
+123
+00:42:20,579 --> 00:42:35,340
+evet şimdi sayıcının biraz daha başka modüllerini analiz edeceğiz
+
+124
+00:42:35,340 --> 00:42:43,340
+ya bu 5 modu var ama bu 5 modunun o kontrol 4'de incelemediğimiz 2 veya 3 özelliği daha var
+
+125
+00:42:43,340 --> 00:42:47,340
+bunlardan bir tanesi hani iç yapısına baktığımızda
+
+126
+00:42:47,340 --> 00:42:51,340
+şuradaki birim bir leçleme birimi
+
+127
+00:42:51,340 --> 00:42:53,340
+yani havuzada tutma birimi
+
+128
+00:42:53,340 --> 00:42:57,340
+neyi havuzda tutuyor? bir sayıcı sayıyor içeriden
+
+129
+00:42:57,340 --> 00:43:03,340
+ama belki ben işte 100. iterasyonda 100. sayım noktasında leçe bilgi yaz dedim
+
+130
+00:43:03,340 --> 00:43:07,340
+ve leçin içerisindeki veriyi mikro işlemciye çekmek isteyebilirim
+
+131
+00:43:07,340 --> 00:43:10,340
+oradaki sayım değerini kullanmak isteyebilirim
+
+132
+00:43:10,340 --> 00:43:16,340
+yani sayım neticesinde sıfıra ulaşmaz bana out filinden bir sinyal veriyor doğru
+
+133
+00:43:16,340 --> 00:43:19,340
+ama veya işte bir wave veriyor veya bir pulse veriyor
+
+134
+00:43:19,340 --> 00:43:22,340
+veya bir square generator bir square wave form veriyor
+
+135
+00:43:22,340 --> 00:43:27,340
+ama belki ben sayımın içerisinde de bazı işlemler yapmak isteyeceğim
+
+136
+00:43:27,340 --> 00:43:31,340
+yani bin olunca her bin düştüğünde bir şey yaptırmak istiyorum
+
+137
+00:43:31,340 --> 00:43:38,340
+yani sayım değerinin de okumak istediğimde bana bu sayım değerini veren bir birimi var
+
+138
+00:43:38,340 --> 00:43:46,340
+bu birimin üzerinden o sayıcıyı içerisinde sayıcının hangi değer olduğunu okuyabiliyoruz
+
+139
+00:43:46,340 --> 00:43:56,210
+burada leçlemeden şurası önemli sayım değerini okumak hatayı veriyor
+
+140
+00:43:56,210 --> 00:43:59,210
+ilk leçlememiz gerekiyor leçlemek ne demek? şu demek
+
+141
+00:43:59,210 --> 00:44:03,210
+burada bu kontrol york bir tane var zaten
+
+142
+00:44:03,210 --> 00:44:06,210
+ileride iki üçten farklı kontrol yorda olan enteplere göreceğiz
+
+143
+00:44:06,210 --> 00:44:08,210
+ama bunda bir tane var
+
+144
+00:44:08,210 --> 00:44:12,210
+kontrol gördüğünüz şu ilk iki pini benim counter seçtiğimiz pindi
+
+145
+00:44:12,210 --> 00:44:17,210
+001,01,01,01 olduğunda counterları seçiyordu
+
+146
+00:44:17,210 --> 00:44:25,210
+ama 1,1 olduğunda benim aslında leçteki verimi okuyabileceğimi sağlayacak bir şey
+
+147
+00:44:25,210 --> 00:44:28,210
+bunu bir sonraki strike'da analiz edeceğiz
+
+148
+00:44:28,210 --> 00:44:32,210
+gerçi de burada şurada beşinci ve dördüncü pinlerimiz
+
+149
+00:44:32,210 --> 00:44:35,210
+normalde şunları sağlıyordu bize hatırlarsanız
+
+150
+00:44:35,210 --> 00:44:38,210
+01 sadece LSB işlemi yap
+
+151
+00:44:38,210 --> 00:44:41,210
+10 MSB işlemi yap
+
+152
+00:44:41,210 --> 00:44:44,210
+11'de de ilk LSB'yi al
+
+153
+00:44:44,210 --> 00:44:48,210
+sonra MSB'yi al demiştik değil mi?
+
+154
+00:44:48,210 --> 00:44:50,210
+bir de orada 00 ayarmaması vardı
+
+155
+00:44:50,210 --> 00:44:54,210
+eğer ki ben 00'ı seçersem bu kontrol yorkte bu şu demek
+
+156
+00:44:54,210 --> 00:44:58,210
+şu ilgili counter'ın hangi counter'ı seçersem burada
+
+157
+00:44:58,210 --> 00:45:00,210
+onun içeriğini leçle demek
+
+158
+00:45:00,210 --> 00:45:05,210
+yani şurada söylediğim şu entegre'nin içerisinde saklan
+
+159
+00:45:05,210 --> 00:45:08,210
+ve ben bunu sonra okuyabilirim
+
+160
+00:45:08,210 --> 00:45:13,210
+ama eğer leçlemezsem leçlemeden sayıcının içerisindeki veriyi okuyamam
+
+161
+00:45:13,210 --> 00:45:22,800
+tamam leçlemenin anlamı bu yani sayıcının içerisindeki o an devre okumak için
+
+162
+00:45:22,800 --> 00:45:30,849
+bir de burada bahsettiğimiz hani şurası leçleme ve MSB LSB seçimi pinleriydi
+
+163
+00:45:30,849 --> 00:45:34,849
+bir de şurada bahsetmediğimiz 1-1 olma durumu vardı
+
+164
+00:45:34,849 --> 00:45:38,849
+yani sayıcı çesiyordu bir de 1-1 yaparsak
+
+165
+00:45:38,849 --> 00:45:40,849
+readback command denen bir komutumuz vardı
+
+166
+00:45:40,849 --> 00:45:45,849
+bu komut aslında leçlenen değeri ve statüs dediğimiz
+
+167
+00:45:45,849 --> 00:45:49,849
+counter hangi counter'sa onun durumunu sorgulamak
+
+168
+00:45:49,849 --> 00:45:52,849
+yani ondaki veriyi okumak için gereken bir şey
+
+169
+00:45:52,849 --> 00:45:54,849
+yani ilk başta leçleyeceğiz
+
+170
+00:45:54,849 --> 00:45:56,849
+sonra leç dediğimizi readback command'la okuyacağız
+
+171
+00:45:56,849 --> 00:45:58,849
+uzun lafın kısası
+
+172
+00:45:58,849 --> 00:46:03,849
+peki burada multiple counter'dan aynen de veri çekebiliriz
+
+173
+00:46:03,849 --> 00:46:08,849
+counter'larımız buraya numarik işte 1 yazdığımızda
+
+174
+00:46:08,849 --> 00:46:14,849
+ilgili counter'ı statüsünü veya counter'ının buraya sıfır tabi anlamlı bunlarda
+
+175
+00:46:14,849 --> 00:46:18,849
+sıfır olma durumuna göre işte eğer ki ben counter sıfır dedim
+
+176
+00:46:18,849 --> 00:46:21,849
+statüs'e 1 dedim şunlarda şöyle bir
+
+177
+00:46:21,849 --> 00:46:25,849
+burası hep sıfır olmak zorunda burası rezerve edilmiş
+
+178
+00:46:25,849 --> 00:46:27,849
+burası değişmeyecek
+
+179
+00:46:27,849 --> 00:46:30,849
+ilk iki tanesi de 1-1 olmak zorunda neden?
+
+180
+00:46:30,849 --> 00:46:32,849
+çünkü zaten şeyde
+
+181
+00:46:32,849 --> 00:46:39,219
+şurası 1-1 ile biz readback command yapıyorduk
+
+182
+00:46:39,219 --> 00:46:43,219
+diğer buralar normalde counter'ın selection açılarıydı
+
+183
+00:46:43,219 --> 00:46:47,219
+1-1 yaptığımda şuradaki belirttiğim counter
+
+184
+00:46:47,219 --> 00:46:49,219
+şu an örnekti 1. counter
+
+185
+00:46:49,219 --> 00:46:54,219
+counter 1'in counter verisini daha önceden leçlediğimi düşündüm tabi
+
+186
+00:46:54,219 --> 00:46:58,219
+leçlediysem counter verisini çekebileceğimi söyler
+
+187
+00:46:59,219 --> 00:47:02,219
+ama değiştiremediyseniz hata veririz
+
+188
+00:47:02,219 --> 00:47:04,219
+tamam
+
+189
+00:47:04,219 --> 00:47:08,219
+statüs dediğimizde o counter'ın hangi mode'da çalıştığını
+
+190
+00:47:08,219 --> 00:47:14,369
+gibi bilgileri öğrenebildiğimiz bir kısmı
+
+191
+00:47:14,369 --> 00:47:17,369
+şimdi burada readback command'de bir sıralama var arkadaşlar
+
+192
+00:47:17,369 --> 00:47:20,369
+hep diyoruz hani leçlenmemişse eğer
+
+193
+00:47:20,369 --> 00:47:24,369
+leçlenmeden bir readback command yapamayız
+
+194
+00:47:24,369 --> 00:47:27,369
+örnek verelim bunlar sırayla gidiyor
+
+195
+00:47:27,369 --> 00:47:30,369
+1-1 neydi burası readback command yapacağım demek
+
+196
+00:47:30,369 --> 00:47:33,369
+zaten burası command hepsi aynı
+
+197
+00:47:33,369 --> 00:47:36,369
+yani sırayla okuma yapıyorum ben
+
+198
+00:47:36,369 --> 00:47:39,369
+readback command ikinci
+
+199
+00:47:39,369 --> 00:47:41,369
+şu D5 ve D4 neydi?
+
+200
+00:47:41,369 --> 00:47:44,369
+statüs mü, count mu okuyacağım
+
+201
+00:47:44,369 --> 00:47:48,369
+0, ikisini de okumak istediğimi söylüyordu
+
+202
+00:47:48,369 --> 00:47:50,369
+D3 neydi?
+
+203
+00:47:50,369 --> 00:47:53,369
+şurası benim hangi counter'dan okuyacağım verisiydi?
+
+204
+00:47:53,369 --> 00:47:55,369
+şu an 1. counter'dan
+
+205
+00:47:55,369 --> 00:47:58,369
+yani 0'lar doğrusu counter 0'dan veri okuyacağım
+
+206
+00:47:59,369 --> 00:48:02,369
+efendim
+
+207
+00:48:02,369 --> 00:48:05,369
+ses geldi ama sorun mu var arkadaşlar?
+
+208
+00:48:05,369 --> 00:48:07,369
+sorumuz var mı?
+
+209
+00:48:07,369 --> 00:48:11,380
+yok herhalde
+
+210
+00:48:11,380 --> 00:48:14,380
+baktığımızda counter 0'ın
+
+211
+00:48:14,380 --> 00:48:17,380
+counter statüsü leçlenmiş durumda
+
+212
+00:48:17,380 --> 00:48:20,380
+çünkü neden? okuyacağım için
+
+213
+00:48:20,380 --> 00:48:22,380
+bunu leçledim
+
+214
+00:48:22,380 --> 00:48:24,380
+sonraki etaba baktığımda
+
+215
+00:48:24,380 --> 00:48:27,380
+şimdi ilki counter ikincisi
+
+216
+00:48:28,380 --> 00:48:32,380
+counter 1 için sadece statüsünü okumak istiyorum burada
+
+217
+00:48:32,380 --> 00:48:35,380
+bunun da statüsünü leçlenmiş bulundum
+
+218
+00:48:35,380 --> 00:48:38,380
+sadece statüsü istediğim için
+
+219
+00:48:38,380 --> 00:48:42,380
+sonrasında eğer ki ben tekrardan burada biraz işler değişecek
+
+220
+00:48:42,380 --> 00:48:45,380
+mesela 1-0'la dedim ki
+
+221
+00:48:45,380 --> 00:48:48,380
+bu hem 2 hem 1
+
+222
+00:48:48,380 --> 00:48:51,380
+counter'lardan hem 1. counter hem 2. counter'ın
+
+223
+00:48:51,380 --> 00:48:53,380
+sadece statüsünü oku
+
+224
+00:48:53,380 --> 00:48:55,380
+komutu verdim
+
+225
+00:48:55,380 --> 00:48:58,380
+counter 1 için bir işlem yapmaz arkadaşlar
+
+226
+00:48:58,380 --> 00:49:01,380
+counter 2 için statüsü leçler
+
+227
+00:49:01,380 --> 00:49:03,380
+counter bile bir iş yapmaz
+
+228
+00:49:03,380 --> 00:49:07,380
+çünkü counter 1 zaten daha önceden bir statüs leç yapılmıştı
+
+229
+00:49:07,380 --> 00:49:09,380
+yani
+
+230
+00:49:09,380 --> 00:49:11,380
+tek satırda da yapılabileceği gibi
+
+231
+00:49:11,380 --> 00:49:13,380
+step by step de yapılabiliyor bunlar
+
+232
+00:49:13,380 --> 00:49:15,380
+ama leçlenme
+
+233
+00:49:15,380 --> 00:49:18,380
+yani sırayla aklımda tutuyor leç verisini
+
+234
+00:49:18,380 --> 00:49:20,380
+öteki etapta
+
+235
+00:49:20,380 --> 00:49:23,380
+işte mesela 2. counter'ın
+
+236
+00:49:23,380 --> 00:49:26,380
+neyini demişiz sadece counter verisini oku demişiz
+
+237
+00:49:26,380 --> 00:49:29,380
+counter verisi counterdekinin leçlendi
+
+238
+00:49:29,380 --> 00:49:31,380
+şu an okundu yani
+
+239
+00:49:31,380 --> 00:49:34,380
+ama sonrasında counter 1 için
+
+240
+00:49:34,380 --> 00:49:37,380
+eğer ki ben ikisini birden istediysem
+
+241
+00:49:37,380 --> 00:49:40,380
+zaten counter 1'in
+
+242
+00:49:40,380 --> 00:49:43,380
+statüsü daha önceden leçlendiği için
+
+243
+00:49:43,380 --> 00:49:45,380
+bir daha leçlenmiyor
+
+244
+00:49:45,380 --> 00:49:46,380
+tutunmuyor
+
+245
+00:49:46,380 --> 00:49:50,380
+gibisinden bu tarz işlemler yapılabiliyor
+
+246
+00:49:50,380 --> 00:49:52,380
+verileri okumak için
+
+247
+00:49:52,380 --> 00:49:56,849
+var mı arkadaşlar sorumuz?
+
+248
+00:49:56,849 --> 00:49:58,849
+genel olarak
+
+249
+00:49:58,849 --> 00:50:00,849
+feedback komentten veya
+
+250
+00:50:00,849 --> 00:50:06,110
+counter leç komentten
+
+251
+00:50:06,110 --> 00:50:08,110
+yoksa örneğe geçeceğiz
+
+252
+00:50:08,110 --> 00:50:47,650
+bir şey daha atmamışız
+
+253
+00:50:47,650 --> 00:50:49,650
+ona gidelim
+
+254
+00:50:49,650 --> 00:51:03,039
+bunu anlattıktan sonra bir de
+
+255
+00:51:03,039 --> 00:51:05,039
+statüsü öğrenmek demiştik
+
+256
+00:51:05,039 --> 00:51:09,039
+hani nasıl bir modutla çalışıyor vs. gibisinden
+
+257
+00:51:09,039 --> 00:51:11,039
+bunun için de
+
+258
+00:51:11,039 --> 00:51:13,039
+yine aynı şekilde
+
+259
+00:51:13,039 --> 00:51:16,039
+bizim normalde control world'ün
+
+260
+00:51:16,039 --> 00:51:19,039
+içerisindeki statüsü okuduğumuzda
+
+261
+00:51:19,039 --> 00:51:20,039
+şunları söylüyor bize
+
+262
+00:51:20,039 --> 00:51:23,039
+okuduktan sonra deminki kodlarla
+
+263
+00:51:23,039 --> 00:51:25,039
+control world'u gönderip
+
+264
+00:51:25,039 --> 00:51:28,039
+döntünü okuyunca 8 bitlik bir veri geliyor
+
+265
+00:51:28,039 --> 00:51:31,039
+baktığımızda ilk pin bizim out butun
+
+266
+00:51:31,039 --> 00:51:34,039
+yani o sayıcının çıkışının
+
+267
+00:51:34,039 --> 00:51:38,039
+1 veya 0 olduğu durumla alakalı bir veriyi veriyor
+
+268
+00:51:38,039 --> 00:51:40,039
+ikinci pin
+
+269
+00:51:40,039 --> 00:51:42,039
+eğer ki counter biz
+
+270
+00:51:42,039 --> 00:51:45,039
+leçlemediysek içerisindeki şeyi
+
+271
+00:51:45,039 --> 00:51:47,039
+ilk başta leçlememiz lazım
+
+272
+00:51:47,039 --> 00:51:49,039
+daha sonra statüsü okuyabiliriz
+
+273
+00:51:49,039 --> 00:51:51,039
+leçlemediysek burada null gelir
+
+274
+00:51:51,039 --> 00:51:53,039
+yani bir değer gelmez ama leçlediysek
+
+275
+00:51:53,039 --> 00:51:57,039
+normalde count okunabileceği verisi gelir
+
+276
+00:51:57,039 --> 00:52:01,039
+bu kısımlar zaten diğer bizim şu an
+
+277
+00:52:01,039 --> 00:52:05,039
+ilk başta gidiş yaptığımız neydi
+
+278
+00:52:05,039 --> 00:52:07,039
+şurası şu 3 tanesi
+
+279
+00:52:07,039 --> 00:52:09,039
+modları seçtiğimiz kısımdı
+
+280
+00:52:09,039 --> 00:52:11,039
+şurası da
+
+281
+00:52:11,039 --> 00:52:13,039
+lsb mi msb mi
+
+282
+00:52:13,039 --> 00:52:15,039
+yoksa lsb artı msb mi
+
+283
+00:52:15,039 --> 00:52:19,039
+veya bir bir yapılar yaptığımız kısımdı
+
+284
+00:52:19,039 --> 00:52:21,039
+readback operation mıydı
+
+285
+00:52:21,039 --> 00:52:23,039
+bu veriyi öğrenebileceğimiz kısım
+
+286
+00:52:23,039 --> 00:52:25,039
+en sağlıkta bu işlem bcd işlemimi
+
+287
+00:52:25,039 --> 00:52:27,039
+yoksa decimal işlemimi
+
+288
+00:52:27,039 --> 00:52:31,039
+bunu öğrenebileceğimiz kısımdı
+
+289
+00:52:31,039 --> 00:52:41,469
+bunu demine attıklamışız
+
+290
+00:52:41,469 --> 00:52:46,349
+sorumuz var mı arkadaşlar
+
+291
+00:52:46,349 --> 00:52:49,980
+yoksa şu şeyi açalım
+
+292
+00:52:49,980 --> 00:52:51,980
+diyarlamamızı
+
+293
+00:52:51,980 --> 00:53:05,980
+diyarlamamıza bakalım
+
+294
+00:53:05,980 --> 00:53:07,980
+yine aynı şekilde
+
+295
+00:53:07,980 --> 00:53:09,980
+zaten sol tarafa hiç girmiyorum
+
+296
+00:53:09,980 --> 00:53:11,980
+sadece adreslemeye bakalım
+
+297
+00:53:11,980 --> 00:53:13,980
+nasıl bir adresleme yapılmış
+
+298
+00:53:15,980 --> 00:53:19,980
+yedinci pinden bir çiftsevek seçilmiş
+
+299
+00:53:19,980 --> 00:53:21,980
+o zaman burası 1 1 1 olduğu
+
+300
+00:53:21,980 --> 00:53:23,980
+senaryoyu anı izletmemiz lazım
+
+301
+00:53:23,980 --> 00:53:25,980
+değil mi
+
+302
+00:53:25,980 --> 00:53:47,019
+şimdi a0 1 olması lazım
+
+303
+00:53:47,019 --> 00:53:49,019
+ki seçebilirim
+
+304
+00:53:49,019 --> 00:53:51,019
+5 de 7 de 1 olacak
+
+305
+00:53:51,019 --> 00:53:55,230
+6
+
+306
+00:53:55,230 --> 00:53:57,230
+buradan sıfır çıkabilmesi için
+
+307
+00:53:57,230 --> 00:54:00,610
+sıfır olması lazım
+
+308
+00:54:00,610 --> 00:54:02,610
+3 1 4 sıfır olması lazım
+
+309
+00:54:04,610 --> 00:54:06,610
+yani aslında a
+
+310
+00:54:06,610 --> 00:54:08,610
+bu ikisi de
+
+311
+00:54:08,610 --> 00:54:10,610
+aşağıda
+
+312
+00:54:10,610 --> 00:54:12,610
+şöyle aşağı geçelim
+
+313
+00:54:12,610 --> 00:54:16,690
+yapmam lazım
+
+314
+00:54:16,690 --> 00:54:22,590
+a1 ve a2 buraya bağlı olduğu için
+
+315
+00:54:22,590 --> 00:54:24,590
+00 gönderirsek
+
+316
+00:54:24,590 --> 00:54:30,849
+00 gönderirsek
+
+317
+00:54:30,849 --> 00:54:32,849
+00 gönderirsek counter 1
+
+318
+00:54:32,849 --> 00:54:36,769
+01 de
+
+319
+00:54:36,769 --> 00:54:38,769
+counter 2
+
+320
+00:54:38,769 --> 00:54:40,769
+1 00
+
+321
+00:54:40,769 --> 00:54:42,769
+3
+
+322
+00:54:42,769 --> 00:54:44,769
+1 1 de
+
+323
+00:54:44,769 --> 00:54:46,769
+kontrol gördüğü seçeceğiz demektir
+
+324
+00:54:46,769 --> 00:54:48,769
+yani benim ilk etapta kontrol gördüğü neymiş o zaman
+
+325
+00:54:48,769 --> 00:54:52,940
+a f miç değil mi
+
+326
+00:54:52,940 --> 00:54:54,940
+a f miç
+
+327
+00:54:54,940 --> 00:54:56,940
+birinci analizimiz buydu
+
+328
+00:54:56,940 --> 00:54:58,940
+yani a ve f'e ben bir verim göndereceğim
+
+329
+00:54:58,940 --> 00:55:00,940
+yapmak istediğim bu soru da şu
+
+330
+00:55:00,940 --> 00:55:02,940
+aslında size derste de sormuştum
+
+331
+00:55:02,940 --> 00:55:04,940
+ben geçen hafta
+
+332
+00:55:04,940 --> 00:55:06,940
+eğer ki bir counter'ın
+
+333
+00:55:06,940 --> 00:55:08,940
+benim 2 MHz bir
+
+334
+00:55:08,940 --> 00:55:10,940
+beslemesi varsa
+
+335
+00:55:10,940 --> 00:55:12,940
+yani 2 MHz
+
+336
+00:55:12,940 --> 00:55:14,940
+bir claw varsa ve ben
+
+337
+00:55:14,940 --> 00:55:16,940
+istesem ki bir
+
+338
+00:55:16,940 --> 00:55:18,940
+1 Hz
+
+339
+00:55:18,940 --> 00:55:20,940
+1 Hz
+
+340
+00:55:20,940 --> 00:55:22,940
+pulse üretmek istiyorum
+
+341
+00:55:22,940 --> 00:55:24,940
+bunu gerçekleştirmek için ne yapmak lazım
+
+342
+00:55:24,940 --> 00:55:26,940
+şimdi şunu biliyoruz ki biz
+
+343
+00:55:26,940 --> 00:55:28,940
+2 MHz
+
+344
+00:55:28,940 --> 00:55:30,940
+normalde
+
+345
+00:55:30,940 --> 00:55:32,940
+normalde 65536
+
+346
+00:55:32,940 --> 00:55:34,940
+da yazsak buraya tek bir
+
+347
+00:55:34,940 --> 00:55:36,940
+counter'la 1 Hz
+
+348
+00:55:36,940 --> 00:55:38,940
+olmuyor yani 65536
+
+349
+00:55:38,940 --> 00:55:40,940
+ayarlarsak
+
+350
+00:55:40,940 --> 00:55:42,940
+yaklaşık 30 Hz
+
+351
+00:55:42,940 --> 00:55:44,940
+gibi bir şey oluyordu değil mi yanlış mı hatırlıyorum
+
+352
+00:55:44,940 --> 00:55:52,380
+görüyordum değil mi 30 Hz
+
+353
+00:55:52,380 --> 00:55:54,380
+yapıyor doğru yani biraz
+
+354
+00:55:54,380 --> 00:55:59,940
+güçlü rahatı var ama
+
+355
+00:55:59,940 --> 00:56:03,539
+niye gelmiyor
+
+356
+00:56:03,539 --> 00:56:05,539
+30 Hz gibi bir değer yapıyor o da maksimum
+
+357
+00:56:05,539 --> 00:56:07,539
+bir counter için değil mi
+
+358
+00:56:07,539 --> 00:56:09,539
+ben ne yapmam lazım
+
+359
+00:56:09,539 --> 00:56:11,539
+1 counter'ları çoğaltmam lazım
+
+360
+00:56:11,539 --> 00:56:13,539
+yani aslında 1 counter'ı
+
+361
+00:56:13,539 --> 00:56:15,539
+2 MHz'de titikleyeceğim
+
+362
+00:56:15,539 --> 00:56:17,539
+öteki counter'ı da 30 Hz'de
+
+363
+00:56:17,539 --> 00:56:19,539
+titikleyeceğim
+
+364
+00:56:19,539 --> 00:56:21,539
+değil mi ki öteki
+
+365
+00:56:21,539 --> 00:56:23,539
+counter'ı titiklediğim counter
+
+366
+00:56:23,539 --> 00:56:25,539
+1 Hz'lik bir sinir üretsin
+
+367
+00:56:25,539 --> 00:56:27,539
+amaç bu yani
+
+368
+00:56:27,539 --> 00:56:29,539
+bağlamak birilerine tabii
+
+369
+00:56:29,539 --> 00:56:31,539
+65536'da hesap yapmak daha
+
+370
+00:56:31,539 --> 00:56:33,539
+zor da basit olarak şöyle yapabiliriz
+
+371
+00:56:33,539 --> 00:56:35,539
+değil mi 2 çarpı
+
+372
+00:56:35,539 --> 00:56:37,539
+10 üzeri 6 bu
+
+373
+00:56:37,539 --> 00:56:39,539
+normal Hz'ydi
+
+374
+00:56:39,539 --> 00:56:41,539
+normal klon Hz
+
+375
+00:56:41,539 --> 00:56:43,539
+ama ben bunu 65536'yı şöyle
+
+376
+00:56:43,539 --> 00:56:45,539
+2.000 çarpı
+
+377
+00:56:45,539 --> 00:56:47,539
+iki tane entegredeki sayım
+
+378
+00:56:47,539 --> 00:56:49,539
+işte buna counter
+
+379
+00:56:49,539 --> 00:56:51,539
+1 için
+
+380
+00:56:51,539 --> 00:56:53,539
+şuna da counter
+
+381
+00:56:53,539 --> 00:56:55,539
+2 için yazdığım iki
+
+382
+00:56:55,539 --> 00:56:57,539
+değer ile yaptığımda 1 Hz
+
+383
+00:56:57,539 --> 00:56:59,539
+elde edebilirim
+
+384
+00:56:59,539 --> 00:57:01,539
+soru buydu ya bunun
+
+385
+00:57:01,539 --> 00:57:03,539
+gerçeklemesi üzerine bakalım
+
+386
+00:57:03,539 --> 00:57:05,539
+şimdi nasıl yapmışız
+
+387
+00:57:05,539 --> 00:57:07,539
+şimdi ekranı nasıl silebiliriz
+
+388
+00:57:07,539 --> 00:57:31,360
+şimdi baktığımızda tasarımla
+
+389
+00:57:31,360 --> 00:57:33,360
+clock partisine bir bakalım
+
+390
+00:57:33,360 --> 00:57:35,360
+2 MHz'lik bir
+
+391
+00:57:35,360 --> 00:57:37,360
+clock verilmiş
+
+392
+00:57:37,360 --> 00:57:39,360
+hangisine
+
+393
+00:57:39,360 --> 00:57:41,360
+sıfırıncı
+
+394
+00:57:41,360 --> 00:57:43,360
+counter'a
+
+395
+00:57:43,360 --> 00:57:45,360
+sonra gate'i 1 verilmiş
+
+396
+00:57:45,360 --> 00:57:47,360
+çünkü ben biliyorum ki
+
+397
+00:57:47,360 --> 00:57:49,360
+mod 2'de gate 1 olmak zorunda
+
+398
+00:57:49,360 --> 00:57:51,360
+sonra out'un
+
+399
+00:57:51,360 --> 00:57:53,360
+yani çiftlisin
+
+400
+00:57:53,360 --> 00:57:55,360
+bir sinyal cene oseras
+
+401
+00:57:55,360 --> 00:57:57,360
+kopa bağlanmış
+
+402
+00:57:57,360 --> 00:57:59,360
+ki sinyali göreyim
+
+403
+00:57:59,360 --> 00:58:01,360
+yani pittleri göreceğim
+
+404
+00:58:01,360 --> 00:58:03,360
+sonra diğer
+
+405
+00:58:03,360 --> 00:58:05,360
+out'dan öteki counter'ın
+
+406
+00:58:05,360 --> 00:58:07,360
+clock'ı da tetiklenmiş
+
+407
+00:58:07,360 --> 00:58:09,360
+clock'ı tetiklenmiş
+
+408
+00:58:09,360 --> 00:58:11,360
+bu şu demek ne zaman ben bir
+
+409
+00:58:11,360 --> 00:58:13,360
+pulse üretsem bu bir clock
+
+410
+00:58:13,360 --> 00:58:15,360
+almış olacak
+
+411
+00:58:15,360 --> 00:58:17,360
+ve bir sayım yapacak
+
+412
+00:58:17,360 --> 00:58:19,360
+ta ki ben buna 2.000 yazsam
+
+413
+00:58:19,360 --> 00:58:21,360
+counter'a 2.000 sayım bittikten sonra
+
+414
+00:58:21,360 --> 00:58:23,360
+2 MHz'i 2.000 ile
+
+415
+00:58:23,360 --> 00:58:25,360
+bitirdikten sonra
+
+416
+00:58:25,360 --> 00:58:27,360
+bir pulse ile
+
+417
+00:58:27,360 --> 00:58:29,360
+bin kere de bu sayısını
+
+418
+00:58:29,360 --> 00:58:31,360
+diyeceğim ve bin kere bu
+
+419
+00:58:31,360 --> 00:58:33,360
+saydıktan sonra bunun altından bir pulse göreceğim
+
+420
+00:58:33,360 --> 00:58:35,360
+ki bu benim artık 1 MHz'lik
+
+421
+00:58:35,360 --> 00:58:37,360
+sinyal pulse'ım olacak
+
+422
+00:58:37,360 --> 00:58:39,360
+bununla da bakalım
+
+423
+00:58:39,360 --> 00:58:41,360
+tabi bu örnekte
+
+424
+00:58:41,360 --> 00:58:43,360
+herhalde şeyde evet
+
+425
+00:58:43,360 --> 00:58:45,360
+2.000 yani 1 kHz'miş
+
+426
+00:58:45,360 --> 00:58:47,360
+1 kHz'lik bir şey
+
+427
+00:58:47,360 --> 00:58:49,360
+muhtemelen evet
+
+428
+00:58:49,360 --> 00:58:53,760
+sıfır sıfır ile
+
+429
+00:58:53,760 --> 00:58:55,760
+ilk iki tanesi ile
+
+430
+00:58:55,760 --> 00:58:57,760
+counter sıfırı seçtim
+
+431
+00:58:57,760 --> 00:58:59,760
+bir bir ile
+
+432
+00:58:59,760 --> 00:59:12,510
+işte ilk
+
+433
+00:59:12,510 --> 00:59:14,510
+niye bilmiyor bu yazılar
+
+434
+00:59:14,510 --> 00:59:16,510
+sonra mod 2'yi seçtim ve
+
+435
+00:59:16,510 --> 00:59:18,510
+binary bir sayı
+
+436
+00:59:18,510 --> 00:59:20,510
+decimal bir sayı göndereceğimi söyledim
+
+437
+00:59:20,510 --> 00:59:22,510
+sonra sıfır bir ile
+
+438
+00:59:22,510 --> 00:59:24,510
+counter 1'i seçtim
+
+439
+00:59:24,510 --> 00:59:26,510
+bir bir ile de önce
+
+440
+00:59:26,510 --> 00:59:28,510
+DSB sonra MSB
+
+441
+00:59:28,510 --> 00:59:30,510
+1 seçtim sıfır bir
+
+442
+00:59:30,510 --> 00:59:32,510
+sıfır ile mod 2'yi seçtim ve bir
+
+443
+00:59:32,510 --> 00:59:34,510
+yine de decimal sayıyı göndereceğimi söyledim
+
+444
+00:59:34,510 --> 00:59:36,510
+neye yazdım bunları
+
+445
+00:59:36,510 --> 00:59:38,510
+control word'e yazdım
+
+446
+00:59:38,510 --> 00:59:40,510
+değil mi
+
+447
+00:59:40,510 --> 00:59:42,510
+yani iki mod'u da
+
+448
+00:59:42,510 --> 00:59:44,510
+iki counter'da pardon iki counter'da
+
+449
+00:59:44,510 --> 00:59:46,510
+mod ve işte
+
+450
+00:59:46,510 --> 00:59:48,510
+sayı düzleminde hangi
+
+451
+00:59:48,510 --> 00:59:50,510
+ne tarz bir sayıyla
+
+452
+00:59:50,510 --> 00:59:52,510
+counter sayısını göndereceğimi
+
+453
+00:59:52,510 --> 00:59:54,510
+belirttim sonra
+
+454
+00:59:54,510 --> 00:59:56,510
+egzorladım aileyle
+
+455
+00:59:56,510 --> 00:59:58,510
+aileyi niye böyle bir şey yaptım
+
+456
+00:59:58,510 --> 01:00:04,349
+evet arkadaşlar niye yaptım
+
+457
+01:00:04,349 --> 01:00:10,539
+bir sayıyı kendisiyle
+
+458
+01:00:10,539 --> 01:00:12,539
+egzorlamak ne demek
+
+459
+01:00:12,539 --> 01:00:14,539
+sıfırladı koşa
+
+460
+01:00:14,539 --> 01:00:16,539
+evet yani sıfırladım
+
+461
+01:00:16,539 --> 01:00:18,539
+bu başka
+
+462
+01:00:18,539 --> 01:00:20,539
+tekniklerle de yapılabilirdi ama
+
+463
+01:00:20,539 --> 01:00:22,539
+normal değişiklik olsun diye
+
+464
+01:00:22,539 --> 01:00:24,539
+ailemiz sıfırlandı yani burada
+
+465
+01:00:24,539 --> 01:00:26,539
+sonra ben bu aileyi
+
+466
+01:00:26,539 --> 01:00:28,539
+outlara göndererek
+
+467
+01:00:28,539 --> 01:00:30,539
+counter 0 ve counter 1'e göndererek
+
+468
+01:00:30,539 --> 01:00:32,539
+sayıcıları sıfırladım yani şu an içerisi
+
+469
+01:00:32,539 --> 01:00:34,539
+boş
+
+470
+01:00:34,539 --> 01:00:36,539
+sonra diğeri gönderiyorum
+
+471
+01:00:36,539 --> 01:00:38,539
+20
+
+472
+01:00:38,539 --> 01:00:40,539
+ve 20 buradan gönderiyorum
+
+473
+01:00:40,539 --> 01:00:42,539
+10 da ötekisine gönderiyorum
+
+474
+01:00:42,539 --> 01:00:44,539
+amaç burada şu 2 MHz
+
+475
+01:00:44,539 --> 01:00:46,539
+ile 20 sayım
+
+476
+01:00:46,539 --> 01:00:48,539
+bittikten sonra
+
+477
+01:00:48,539 --> 01:00:50,539
+yani iki bölü
+
+478
+01:00:50,539 --> 01:00:52,539
+2 milyon bölü 20
+
+479
+01:00:52,539 --> 01:00:54,539
+sonra bir tane buradan
+
+480
+01:00:54,539 --> 01:00:56,539
+gidecek e bu da
+
+481
+01:00:56,539 --> 01:00:58,539
+yani o 2 milyon
+
+482
+01:00:58,539 --> 01:01:00,539
+bölü 20 çarpı 10'la
+
+483
+01:01:00,539 --> 01:01:02,539
+bir sinyal üretecek
+
+484
+01:01:02,539 --> 01:01:04,539
+ki o herhalde 200 kilo
+
+485
+01:01:04,539 --> 01:01:06,539
+veya 2 kilo Hz mi oluyor
+
+486
+01:01:06,539 --> 01:01:08,539
+öyle bir şey zannedersem
+
+487
+01:01:08,539 --> 01:01:10,539
+bölersiniz
+
+488
+01:01:10,539 --> 01:01:12,539
+ne yapıyor yok
+
+489
+01:01:12,539 --> 01:01:14,539
+2 MHz
+
+490
+01:01:14,539 --> 01:01:16,539
+değil mi ya 20 kilo Hz
+
+491
+01:01:16,539 --> 01:01:18,539
+yapıyor ya 2 kilo Hz yapıyor
+
+492
+01:01:18,539 --> 01:01:20,539
+böldüğümüzde
+
+493
+01:01:20,539 --> 01:01:22,539
+sayımız üretmiş oluyoruz
+
+494
+01:01:22,539 --> 01:01:28,349
+çalıştıralım biraz daha
+
+495
+01:01:28,349 --> 01:01:30,349
+görebilmek için ufaltacağım
+
+496
+01:01:30,349 --> 01:01:32,349
+şimdi üstteki sarı
+
+497
+01:01:32,349 --> 01:01:34,349
+baktığımda a
+
+498
+01:01:34,349 --> 01:01:36,349
+dediğimiz yani 1. counter'ın
+
+499
+01:01:36,349 --> 01:01:38,349
+pulse'ları
+
+500
+01:01:38,349 --> 01:01:40,349
+alttaki mavi ise b dediğimiz
+
+501
+01:01:40,349 --> 01:01:42,349
+2. counter'ın pulse'ları
+
+502
+01:01:42,349 --> 01:01:44,349
+tabi 2. counter'ı görebilmek için
+
+503
+01:01:44,349 --> 01:01:46,349
+birazcık
+
+504
+01:01:46,349 --> 01:01:48,349
+daha
+
+505
+01:01:48,349 --> 01:01:50,349
+resolution'i arttırmamız gerekiyor
+
+506
+01:01:50,349 --> 01:01:52,349
+çünkü
+
+507
+01:01:52,349 --> 01:01:54,349
+evet
+
+508
+01:01:54,349 --> 01:01:56,349
+bunu bir trigger'lasak ya
+
+509
+01:01:56,349 --> 01:02:00,179
+evet
+
+510
+01:02:00,179 --> 01:02:02,179
+şimdi baktığımızda
+
+511
+01:02:02,179 --> 01:02:04,179
+burada
+
+512
+01:02:04,179 --> 01:02:06,179
+tabi çok net gözükmüyor ama
+
+513
+01:02:06,179 --> 01:02:08,179
+saysak
+
+514
+01:02:08,179 --> 01:02:10,179
+yaklaşık 200 taneden sonra
+
+515
+01:02:10,179 --> 01:02:12,179
+bir tane burası oluşacak
+
+516
+01:02:12,179 --> 01:02:14,179
+yani şu an
+
+517
+01:02:14,179 --> 01:02:16,179
+göremiyoruz tabi de o kadar
+
+518
+01:02:16,179 --> 01:02:18,179
+biraz daha ufaltırsak maviyi de
+
+519
+01:02:18,179 --> 01:02:20,179
+kaybedeceğiz o yüzden sayamayacağız
+
+520
+01:02:20,179 --> 01:02:22,179
+çünkü kırmızıda
+
+521
+01:02:22,179 --> 01:02:24,179
+çok çok fazladan sonra bir mavi pulse yaşıyoruz
+
+522
+01:02:24,179 --> 01:02:26,179
+neden
+
+523
+01:02:26,179 --> 01:02:28,179
+çünkü birbirini tetiklediği için
+
+524
+01:02:28,179 --> 01:02:32,059
+anlatabildik mi o
+
+525
+01:02:32,059 --> 01:02:34,059
+bu kısma anlaşıldı mı arkadaşlar
+
+526
+01:02:34,059 --> 01:02:38,269
+yani sarı dediğimiz
+
+527
+01:02:38,269 --> 01:02:40,269
+2. counter 2 MHz ile tetiklenmiş
+
+528
+01:02:40,269 --> 01:02:42,269
+clock'la beraber
+
+529
+01:02:42,269 --> 01:02:44,269
+kendi sayımlarını gösteriyor
+
+530
+01:02:44,269 --> 01:02:46,269
+ama kaç tane sayacak
+
+531
+01:02:46,269 --> 01:02:48,269
+20 tane saydıktan sonra
+
+532
+01:02:48,269 --> 01:02:50,269
+aşağıdan bir tane
+
+533
+01:02:50,269 --> 01:02:52,269
+yani bir şey geçmiş olacak
+
+534
+01:02:52,269 --> 01:02:54,269
+tabi o aşağıda da 10 tane daha
+
+535
+01:02:54,269 --> 01:02:56,269
+20 sayması lazım ki bir pulse üretsin
+
+536
+01:02:56,269 --> 01:02:58,269
+yani 200
+
+537
+01:02:58,269 --> 01:03:00,269
+bir pulse üretecek
+
+538
+01:03:00,269 --> 01:03:03,550
+anlaşıldı mı
+
+539
+01:03:03,550 --> 01:03:05,550
+arkadaşlar
+
+540
+01:03:05,550 --> 01:03:07,550
+soru var mı
+
+541
+01:03:07,550 --> 01:03:09,550
+anladık hocam
+
+542
+01:03:09,550 --> 01:03:13,699
+soru da yok herhalde
+
+543
+01:03:13,699 --> 01:03:19,570
+çok güzel arkadaşlar
+
+544
+01:03:19,570 --> 01:03:21,570
+yani bu counterda sorunuz yoksa çok güzel
+
+545
+01:03:25,570 --> 01:03:27,570
+tamam o zaman arkadaşlar
+
+546
+01:03:27,570 --> 01:03:29,570
+ders bu kadardı sorumuz varsa
+
+547
+01:03:29,570 --> 01:03:31,570
+soruları alabilirim yoksa
+
+548
+01:03:31,570 --> 01:03:33,570
+dersi bitirebiliriz
+
+549
+01:03:33,570 --> 01:03:35,570
+ara vermedik
+
+550
+01:03:35,570 --> 01:03:37,570
+çünkü zaten geçen haftada
+
+551
+01:03:37,570 --> 01:03:39,570
+baya ilerledik bu hafta sadece
+
+552
+01:03:39,570 --> 01:03:41,570
+geri kalan kısmında örneği
+
+553
+01:03:41,570 --> 01:03:43,570
+yaparız demiştim
+
+554
+01:03:43,570 --> 01:03:49,409
+o yüzden
+
+555
+01:03:49,409 --> 01:03:51,409
+çet ekranı niye açılmıyor ya biri bir şey yazdı
+
+556
+01:03:51,409 --> 01:03:59,300
+gibi geldim ama
+
+557
+01:03:59,300 --> 01:04:01,300
+tamam daha önceden yazmış
+
+558
+01:04:01,300 --> 01:04:03,300
+tamam arkadaşlar sorunuz da yoksa
+
+559
+01:04:03,300 --> 01:04:05,300
+bu haftaki konumuz bu kadar
+
+560
+01:04:05,300 --> 01:04:07,300
+bugün labınız var
+
+561
+01:04:07,300 --> 01:04:09,300
+haftaya yeni konu yeni entegre ile
+
+562
+01:04:09,300 --> 01:04:11,300
+devam edeceğiz anlatımlarımıza
+
+563
+01:04:11,300 --> 01:04:14,960
+ADC DAC vardı
+
+564
+01:04:14,960 --> 01:04:21,090
+herhalde haftaya yanlış matematik
+
+565
+01:04:21,090 --> 01:04:23,090
+evet ADC DAC
+
+566
+01:04:23,090 --> 01:04:26,619
+tamam iyi çalışmalar
+
+567
+01:04:26,619 --> 01:04:28,619
+arkadaşlar soru yok herhalde aynen
+
+568
+01:04:28,619 --> 01:04:30,619
+daha sınavınızı okumadım
+
+569
+01:04:30,619 --> 01:04:32,619
+okuyunca zaten
+
+570
+01:04:32,619 --> 01:04:34,619
+şey yaparız
+
+571
+01:04:34,619 --> 01:04:36,619
+hadi iyi çalışmalar
+
+572
+01:04:36,619 --> 01:04:38,619
+iyi dersler iyi laplar
+

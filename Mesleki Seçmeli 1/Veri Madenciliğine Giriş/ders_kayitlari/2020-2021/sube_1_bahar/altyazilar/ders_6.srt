@@ -1,0 +1,11480 @@
+1
+00:10:15,090 --> 00:10:27,490
+Merhaba arkadaşlar, bir ses gelsin ya, teşekkür ederim belki.
+
+2
+00:10:28,690 --> 00:10:29,769
+Merhaba hocam.
+
+3
+00:10:29,870 --> 00:10:34,250
+Evet, merhaba. Sesinizi kileyim ya, ilk açarken en azından.
+
+4
+00:10:34,509 --> 00:10:36,370
+Hepiniz birden söyleyin yani.
+
+5
+00:10:39,830 --> 00:10:44,809
+Evet, şu an 32 kişi olduk. Umarım hepiniz iyisinizdir, görüşmeyeli.
+
+6
+00:10:44,809 --> 00:10:52,230
+Evet, haftanın son günü ama bence çok güzel konular var.
+
+7
+00:10:52,350 --> 00:10:55,929
+Hiç sıkılmayacaksınız, keyifle dinleyeceksiniz, öyle düşünüyorum.
+
+8
+00:10:57,529 --> 00:11:00,470
+Bu hafta yeni bir sınıflayıcıdan bahsedeceğim size.
+
+9
+00:11:03,710 --> 00:11:06,590
+Naibayez Klasifier'dan bahsedeceğim.
+
+10
+00:11:08,269 --> 00:11:14,210
+Daha önce karar ağaçları ile sınıflama nasıl yapılır, decision tree'leri öğrendik.
+
+11
+00:11:14,210 --> 00:11:19,129
+Geçen hafta, bu hafta da Naibayez Klasification yöntemini göreceğiz.
+
+12
+00:11:19,629 --> 00:11:21,289
+Böylece iki yöntem öğrenmiş olacağız.
+
+13
+00:11:21,470 --> 00:11:28,169
+Aslında bu dersin sonuna bir de K en yakın komşu sınıflayıcıyı ekleyeyim.
+
+14
+00:11:28,830 --> 00:11:31,509
+Lütfen ben unutursam siz bana hatırlatın.
+
+15
+00:11:32,350 --> 00:11:39,149
+Bir üçüncü sınıflayıcıyı böyle 10 dakikada anlatabileceğimiz çok basit bir sınıflayıcıdan bahsedeceğim.
+
+16
+00:11:39,830 --> 00:11:41,429
+İlginizi çekecektir.
+
+17
+00:11:44,960 --> 00:11:48,570
+Şimdi.
+
+18
+00:11:48,850 --> 00:12:04,509
+Ve bu hafta bir de dengesiz veri varsa elimizde, bir veri setinde sınıflardan birindeki örnek sayısının diğerindeki örnek sayısından fazla olması durumunda
+
+19
+00:12:04,509 --> 00:12:13,110
+imbalans data dediğimiz dengesiz veri ile çalışırken nelere dikkat etmemiz gerekiyor, bunlardan bahsedeceğim.
+
+20
+00:12:13,110 --> 00:12:17,669
+Hepsi gerçekten ilginç örnekler var içinde.
+
+21
+00:12:17,669 --> 00:12:21,490
+Ve sıkılmadan dinleyeceğinizi düşünüyorum.
+
+22
+00:12:22,090 --> 00:12:24,690
+Evet, kalemimizi de bulduk.
+
+23
+00:12:26,860 --> 00:12:31,480
+Şimdi şöyle sizinle bir ekran paylaşayım.
+
+24
+00:12:31,940 --> 00:12:35,940
+Tahta üzerinden anlatmak, yazmak, çizmek daha kolay oluyor.
+
+25
+00:12:39,940 --> 00:12:43,700
+Şimdi bunu bir de slide show yaparsak tamamdır.
+
+26
+00:12:43,700 --> 00:12:52,059
+Evet, sevgili arkadaşlar ilk konu başlığımız Bayezid Klasifiers olacak.
+
+27
+00:12:52,179 --> 00:13:02,179
+Bu, şurada belirtilen kitabın yayın evi tarafından paylaştığı slidelardır.
+
+28
+00:13:02,179 --> 00:13:23,039
+Bayezid Klasifiers nedir, nasıl çalışır, bunu anlatabilmek için çok kısa, son derece basit bir şekilde özetleyebileceğim bir koşullu olasılık, bir de Bayezid Teoreminden bahsedeceğim.
+
+29
+00:13:23,039 --> 00:13:23,460
+Evet.
+
+30
+00:13:23,460 --> 00:13:45,379
+Koşullu olasılık, verilen bir x için y'nin olma olasılığı dediğimiz olasılık, sağ tarafta gördüğümüz gibi pxy birleşik olasılığı bölü px şeklinde yazılabilir.
+
+31
+00:13:45,379 --> 00:13:53,379
+Bunu bir y bize verildiğinde x'in olma olasılığı.
+
+32
+00:13:53,460 --> 00:13:58,440
+Yani y'nin olma olasılığı şeklinde de yazıp aynı şekilde inceleyebiliriz.
+
+33
+00:13:58,440 --> 00:14:03,440
+Bayezid Teoremi bize şöyle bir kolaylık sağlıyor aslına bakarsanız.
+
+34
+00:14:03,440 --> 00:14:23,440
+Diyor ki, verilen x değişkeni için y'nin olma olasılığı dediğimiz koşullu olasılığı, sağ tarafta gördüğümüz şekilde y'nin olma olasılığı çarpı verilen y için x'in olma olasılığı.
+
+35
+00:14:23,460 --> 00:14:28,700
+Olma olasılığı, bu koşullu olasılık bölü px şeklinde yazabiliyoruz.
+
+36
+00:14:28,840 --> 00:14:35,679
+Bayez teoremi bunu bu şekilde kolaylıkla yazmamızı sağlıyor.
+
+37
+00:14:37,850 --> 00:14:42,870
+Şimdi Bayez klasifayır da tabii Bayez teoremine dayanıyor.
+
+38
+00:14:43,610 --> 00:14:53,250
+Kompleks şeyler değil, basit örneklerle size aslında bu koşullu olasılığı ve Bayez teoremini anlatmaya çalışacağım.
+
+39
+00:14:53,250 --> 00:15:02,750
+Burada çok güzel bir örnek vermiş Bayez teoremiyle ilgili nasıl kullanıldığına dair.
+
+40
+00:15:02,950 --> 00:15:05,250
+Bu basit örnekte diyor ki,
+
+41
+00:15:05,250 --> 00:15:15,110
+A doctor knows that meningitis causes stiff neck 50% of the time.
+
+42
+00:15:17,570 --> 00:15:22,110
+Meningit hastalığının %50 oranında,
+
+43
+00:15:23,250 --> 00:15:30,169
+boyun tutulması dediği, işte bu stiff neck'i ben öyle çevirdim, bir duruma sebep oluyormuş.
+
+44
+00:15:30,970 --> 00:15:34,269
+Meningitle ilgili böyle bir tespitli varmış doktorların.
+
+45
+00:15:35,090 --> 00:15:42,210
+Sonra bir de prior probabilities of any patients having meningitis is demiş
+
+46
+00:15:42,210 --> 00:15:50,210
+ve bir hastanın meningit olma olasılığı 50.000'de 1 olarak verilmiş.
+
+47
+00:15:55,740 --> 00:15:59,580
+Ense sertliği deniyor hocam Türkçe'de.
+
+48
+00:15:59,580 --> 00:16:07,519
+Evet, yani ben hani boyun tutulması diye düşündüm, böyle bir şeyi varmış, sebebi varmış efendim.
+
+49
+00:16:07,519 --> 00:16:12,639
+Ondan sonra tabii bu örnek için bir şey, parametre bizim için.
+
+50
+00:16:12,639 --> 00:16:25,460
+Ve diyor ki, any patients having stiff neck, herhangi bir hastanın böyle bir boyun tutulması ya da işte sertliği rahatlatması,
+
+51
+00:16:25,460 --> 00:16:29,200
+rahatsızlığına sahip olma olasılığı da 20'de 1'miş.
+
+52
+00:16:29,940 --> 00:16:35,899
+Bu olasılıklara göre ben şöyle bir olasılık hesaplamak istiyorum.
+
+53
+00:16:37,279 --> 00:16:43,639
+Boyun tutulması olan bir hastanın meningit olma olasılığı nedir diye.
+
+54
+00:16:43,639 --> 00:16:51,200
+Yani verilen bir durum var, buna bağlı olarak diğer durumun olma olasılığını hesaplamak istiyorum.
+
+55
+00:16:51,639 --> 00:16:55,399
+Ve bunu az önce söylediğimiz şekilde Bayez teoremine,
+
+56
+00:16:55,460 --> 00:17:04,200
+göre meningit olma olasılığı, meningit olanlar içerisinde Boyun tutulmasının olma olasılığı,
+
+57
+00:17:04,200 --> 00:17:13,200
+çarpımlarını stiff neck dediğimiz, boyun tutulmasına oranladığımızda Bayez teoremine göre hesaplayabiliyoruz.
+
+58
+00:17:13,299 --> 00:17:23,480
+Bu basit Bayez teoremine bir örnek olsun diye verilmiş bir şey, example vermiş burada.
+
+59
+00:17:23,480 --> 00:17:25,380
+Sonuçta bu olasılıkları çarpınca, bu ayaklarodye ve bu montreın teoremizde çok çok yaratılmaktadır.
+
+60
+00:17:25,380 --> 00:17:49,559
+Meningitin toplum içerisinde olma görülme sıklığı 50 binde birdi. Meningit hastalarının böyle bir boyun tutulması dediğimiz yaşama olasılığı yukarıda %50 olarak verilmişti ve stiff neck içinde bunun olma olasılığını biliyoruz.
+
+61
+00:17:49,559 --> 00:18:03,920
+1 bölü 20. Dolayısıyla buradan aslında boyun tutulması problemi yaşayan birinin menenjit olma olasılığını hesaplamış olduk. Bu da ne diyor bize? 10 binde 2'dir diyor.
+
+62
+00:18:03,920 --> 00:18:17,920
+Yani herhangi bir insanın menenjit olma olasılığı 50 binde 1 iken burada boyun tutulması dediğimiz problemi yaşayan bir kişinin,
+
+63
+00:18:17,920 --> 00:18:30,599
+birinin menenjit olma olasılığı tabii ki yani herhangi birine göre biraz daha ilişkisi yüksek olduğu için 10 binde 2'ye çıkmış oluyor.
+
+64
+00:18:31,140 --> 00:18:41,140
+Bunu Bayez Teoremi ile Bayez Teoremi'ni kullanarak hesaplayabildik. Şimdi classification'da biz bunu nasıl kullanacağız? Buna bakalım.
+
+65
+00:18:41,140 --> 00:18:48,279
+Using Bayez Teorem for Classification.
+
+66
+00:18:48,279 --> 00:19:00,480
+Bizim elimizdeki dataset'te hepiniz de biliyorsunuz ki bir ne var? Öz nitelikler var ve bir class label'ı var.
+
+67
+00:19:01,859 --> 00:19:04,680
+Sonuçta böyle bir veri seti var elimizde.
+
+68
+00:19:05,299 --> 00:19:15,720
+Given a record with attributes demiş. Bize belli öz nitelikleri i eşit birden d'ye kadar d boyutlu bir dataset'te veriliyor.
+
+69
+00:19:15,720 --> 00:19:17,720
+Ve amacımız...
+
+70
+00:19:18,279 --> 00:19:20,279
+Biz buna test sample'ı diyoruz.
+
+71
+00:19:22,140 --> 00:19:34,920
+Test sample'ı için bize bir kayıt veriliyor diyor. Bu kayıt için ben bütün öz niteliklerin aldığı değerleri biliyorum fakat neyi bilmiyorum? Class label'ını bilmiyorum.
+
+72
+00:19:34,920 --> 00:19:45,180
+Ve amacım burada bu sample'ın hangi sınıfa ait olduğunu bulmak. Classification ile bunu çözmek.
+
+73
+00:19:45,180 --> 00:19:48,180
+Ve bunu da bu...
+
+74
+00:19:48,279 --> 00:19:58,279
+Öğrendiğimiz koşullu olasılık şeklinde yazmak gerekirse, bize verilen şey nedir? Bir sample'ın tüm öz nitelikleri.
+
+75
+00:19:58,279 --> 00:20:07,779
+Ben bir sample'ın işte birden d'ye kadar olan tüm öz niteliklerinin, feature'larının aldığı değerleri biliyorum.
+
+76
+00:20:07,779 --> 00:20:16,079
+Buradan neyi bulmak istiyorum? Bu verilen sample için class label'ı bulmak istiyorum.
+
+77
+00:20:16,079 --> 00:20:18,079
+Class label'ı bulmak istiyorum.
+
+78
+00:20:18,079 --> 00:20:18,599
+Class label'ı bulmak istiyorum.
+
+79
+00:20:18,599 --> 00:20:19,099
+Class label'ı bulmak istiyorum.
+
+80
+00:20:19,099 --> 00:20:19,599
+Class label'ı bulmak istiyorum.
+
+81
+00:20:19,599 --> 00:20:29,640
+Ve bunu datadan doğrudan elimizdeki datayı kullanarak yapabiliriz diyoruz, bias teoremine göre. Nasıl yapacağız?
+
+82
+00:20:29,640 --> 00:20:34,160
+Şöyle. Burada yine bir örnek var, örnek üzerinden gidelim.
+
+83
+00:20:34,160 --> 00:20:37,140
+Example data.
+
+84
+00:20:37,140 --> 00:20:39,440
+Giving a test record.
+
+85
+00:20:39,440 --> 00:20:44,599
+Bakın bias teoreminde diğer klasifierlar dan farklı olarak bize
+
+86
+00:20:44,599 --> 00:20:46,460
+Bize test örneğinin öz nitelikleri olduklarını hesaplamak gerekir.
+
+87
+00:20:46,559 --> 00:20:48,720
+Bize test örneğinin öz nitelikleri olduklarını hesap etmektir.
+
+88
+00:20:48,720 --> 00:20:49,599
+사실 crap için utiliz enemies Rosa obtained classifier to test our sample data.
+
+89
+00:20:49,599 --> 00:21:07,680
+Başta veriliyor ve diyor ki bu sample için classification sonucunu söyle. Yani biz bir sample based bir output üretiyoruz. Decision tree'de biliyorsunuz bir tüm train data setini kullanarak bir model üretiyoruz.
+
+90
+00:21:07,680 --> 00:21:43,980
+Burada ise farklı her test sample için yeniden hesaplama yapmamız gerekiyor. Başta bize test sample'ının öz niteliklerin aldığı tüm değerler verilmiş. Train data setinde ise bu da bizim training data setimiz. Bu data sete baktığım zaman kaç tane sample var data sette? Aynı dili konuşuyor muyuz? Kaç sample var, kaç tane öz nitelik var?
+
+91
+00:21:43,980 --> 00:21:45,480
+10 tane.
+
+92
+00:21:45,519 --> 00:21:46,819
+10 sample var hocam.
+
+93
+00:21:47,180 --> 00:21:47,380
+Evet.
+
+94
+00:21:47,779 --> 00:21:50,859
+4 tane de, yani 3 tane öz nitelik bir classification var.
+
+95
+00:21:50,859 --> 00:22:12,859
+Güzel. 3 tane öz nitelik var, 1 tane de class label var. 4 sütundan oluşuyor. Bu data set bir kredi çekmiş bir kişinin. Refund dediği şey geri ödemelerinin ne kadar düzenli olduğunu gösteriyor.
+
+96
+00:22:12,859 --> 00:22:14,980
+Düzenli ödeme yapıyorsa.
+
+97
+00:22:15,519 --> 00:22:19,329
+Bir dakika.
+
+98
+00:22:21,089 --> 00:22:46,759
+Düzenli ödeme yapıyor ise. Ödemelerinde düzensizlik var mı? Özür dilerim. Bunu gösteriyordu. Düzensizlik varsa eğer yes, düzensizlik yoksa no ile etiketliyor. Bu biraz başta benim kafamı karıştırmıştı. Yine aynı şeyi yaşadım.
+
+99
+00:22:46,759 --> 00:22:52,759
+Sonra kredi çeken müşterilerin meselesi.
+
+100
+00:22:52,839 --> 00:23:07,299
+Bedeni durumu. Evli, bekar veya boşanmış olabilir. Ve taxable income. Vergilendirilebilir. Geliri ne kadar diye gösteren 3 tane öz niteliği var.
+
+101
+00:23:07,859 --> 00:23:20,640
+Evade dediği ise bu kredilerini nihayete erdirir ve düzenli öder, bitirir mi? Yoksa bu işi yarı yolda bırakır, çıkar gider mi? Gösteriyor bize.
+
+102
+00:23:21,599 --> 00:23:22,420
+Evet.
+
+103
+00:23:22,839 --> 00:23:25,779
+Tirmipotek, mümpotek gibi işlemler işin içine giriyor.
+
+104
+00:23:25,779 --> 00:23:38,859
+Evade no olursa eğer bu kaçmayacak bu işi sonuna kadar götürecek demek, yes olması demek. Bu işi yarı yolda bırakacak anlamına geliyor.
+
+105
+00:23:39,859 --> 00:23:49,859
+Ve bize verdiği test örneğinde, ödemleri... Düzenli ödeme yapıyor mu?
+
+106
+00:23:49,859 --> 00:23:50,859
+Evet.
+
+107
+00:23:50,859 --> 00:23:51,859
+Ödemeleri de düzensizlik var mı?
+
+108
+00:23:51,859 --> 00:23:52,380
+Evet.
+
+109
+00:23:52,380 --> 00:23:54,200
+var mıydı değil mi?
+
+110
+00:23:54,700 --> 00:23:56,339
+Neyse refund no demiş.
+
+111
+00:23:56,900 --> 00:23:57,559
+Divorced
+
+112
+00:23:57,559 --> 00:24:00,539
+medeni durumu için
+
+113
+00:24:00,539 --> 00:24:02,539
+boşanmış demiş ve
+
+114
+00:24:02,539 --> 00:24:05,160
+yıllık geliri de
+
+115
+00:24:05,160 --> 00:24:06,319
+120 bin
+
+116
+00:24:06,319 --> 00:24:08,420
+demiş. İşte
+
+117
+00:24:08,420 --> 00:24:10,299
+120 bin dolar mesela.
+
+118
+00:24:11,500 --> 00:24:12,859
+Ve bunun
+
+119
+00:24:12,859 --> 00:24:14,500
+class label'ını
+
+120
+00:24:14,500 --> 00:24:16,579
+soruyor bize bu test
+
+121
+00:24:16,579 --> 00:24:18,640
+sample'ı için. Class
+
+122
+00:24:18,640 --> 00:24:19,440
+label'ı
+
+123
+00:24:19,440 --> 00:24:22,359
+nedir diye soruyor.
+
+124
+00:24:22,380 --> 00:24:24,380
+Sonuçta
+
+125
+00:24:25,240 --> 00:24:26,660
+biz aslında
+
+126
+00:24:26,660 --> 00:24:28,160
+iki tane
+
+127
+00:24:28,160 --> 00:24:30,779
+koşullu olasılık hesaplayacağız.
+
+128
+00:24:30,940 --> 00:24:31,799
+Birincisi
+
+129
+00:24:31,799 --> 00:24:34,559
+verilen bu x test
+
+130
+00:24:34,559 --> 00:24:35,420
+örneğinin
+
+131
+00:24:35,420 --> 00:24:37,579
+yes
+
+132
+00:24:37,579 --> 00:24:40,539
+olan sınıfa ait
+
+133
+00:24:40,539 --> 00:24:41,700
+olma olasılığını
+
+134
+00:24:41,700 --> 00:24:43,640
+hesaplayacağız. Bir de
+
+135
+00:24:43,640 --> 00:24:46,440
+aynı test sample'ının
+
+136
+00:24:46,440 --> 00:24:48,180
+no sınıfına ait
+
+137
+00:24:48,180 --> 00:24:50,220
+olma olasılığını hesaplayacağız.
+
+138
+00:24:50,220 --> 00:24:51,900
+Bu iki olasılığı
+
+139
+00:24:51,900 --> 00:24:52,220
+birbirine
+
+140
+00:24:52,380 --> 00:24:54,839
+karşılaştıracağız.
+
+141
+00:24:57,269 --> 00:24:58,730
+Ve hangi olasılık
+
+142
+00:24:58,730 --> 00:24:59,809
+daha büyükse
+
+143
+00:24:59,809 --> 00:25:01,289
+output
+
+144
+00:25:01,289 --> 00:25:04,150
+label'ını ona göre
+
+145
+00:25:04,150 --> 00:25:06,250
+seçeceğiz. Mantığımız
+
+146
+00:25:06,250 --> 00:25:07,569
+buna dayanıyor.
+
+147
+00:25:08,049 --> 00:25:10,230
+Zaten iki seçenek olduğu için birisi
+
+148
+00:25:10,230 --> 00:25:12,450
+diğerinin bir eksi hali olmayacak peki?
+
+149
+00:25:13,109 --> 00:25:14,470
+Doğru ama burada
+
+150
+00:25:14,470 --> 00:25:16,670
+biz naiv
+
+151
+00:25:16,670 --> 00:25:18,809
+classifier
+
+152
+00:25:18,809 --> 00:25:19,829
+yapıyoruz. Naiv
+
+153
+00:25:19,829 --> 00:25:21,750
+classifier'de bazı
+
+154
+00:25:21,750 --> 00:25:23,730
+işlemleri atlayacağız.
+
+155
+00:25:23,789 --> 00:25:25,349
+Hepsini yapmayacağız.
+
+156
+00:25:25,349 --> 00:25:28,150
+O yüzden şey yapıyoruz.
+
+157
+00:25:28,150 --> 00:25:30,150
+Yani ikisini ayrı ayrı hesaplıyoruz.
+
+158
+00:25:30,150 --> 00:25:32,150
+Birazdan açıklayacağım size.
+
+159
+00:25:32,150 --> 00:25:34,150
+Tamamdır.
+
+160
+00:25:34,150 --> 00:25:38,150
+Şimdi şurayı birazcık
+
+161
+00:25:38,150 --> 00:25:40,150
+temizlemem gerekiyor sanırım.
+
+162
+00:25:40,150 --> 00:25:42,150
+Eraser.
+
+163
+00:25:42,150 --> 00:25:44,150
+Şunları silelim.
+
+164
+00:25:44,150 --> 00:25:47,430
+Dedik ki
+
+165
+00:25:47,430 --> 00:25:49,430
+biz bu uygulamada
+
+166
+00:25:49,430 --> 00:25:51,430
+pardon
+
+167
+00:25:51,430 --> 00:25:55,740
+hangi sınıfın olma olasılıkları var?
+
+168
+00:25:55,740 --> 00:25:56,740
+Biz bu uygulamada hangi sınıfın olma olasılığı var?
+
+169
+00:25:56,740 --> 00:25:57,240
+Biz bu uygulamada hangi sınıfın olma olasılığı var?
+
+170
+00:25:57,240 --> 00:25:58,799
+Bu olasılığı daha yüksektir.
+
+171
+00:25:58,799 --> 00:26:00,599
+Bunu hesaplayacağız.
+
+172
+00:26:00,599 --> 00:26:02,599
+Peki devam ediyorum.
+
+173
+00:26:02,599 --> 00:26:04,599
+Bu işlemi yaparken
+
+174
+00:26:04,599 --> 00:26:06,599
+yani şu olasılığı
+
+175
+00:26:06,599 --> 00:26:08,599
+hesaplarken
+
+176
+00:26:08,599 --> 00:26:10,599
+verilen bir x
+
+177
+00:26:10,599 --> 00:26:12,599
+test sample'ı için
+
+178
+00:26:12,599 --> 00:26:14,599
+verilen bir x
+
+179
+00:26:14,599 --> 00:26:16,599
+test sample'ı için
+
+180
+00:26:16,599 --> 00:26:18,599
+bu sample'ın yes
+
+181
+00:26:18,599 --> 00:26:20,599
+sınıfına ait olma olasılığını
+
+182
+00:26:20,599 --> 00:26:22,599
+Bayez teoremine göre yazacağım dedim.
+
+183
+00:26:22,599 --> 00:26:24,599
+Bunu yazdığımda aslında şöyle
+
+184
+00:26:24,599 --> 00:26:26,599
+yazabiliyorum. Burada gördüğünüz
+
+185
+00:26:26,599 --> 00:26:29,240
+gördüğünüz gibi
+
+186
+00:26:29,240 --> 00:26:31,240
+bizim x dediğimiz
+
+187
+00:26:31,240 --> 00:26:33,240
+test örneğinin
+
+188
+00:26:33,240 --> 00:26:35,240
+burada
+
+189
+00:26:35,240 --> 00:26:37,240
+n demiş ama
+
+190
+00:26:37,240 --> 00:26:39,240
+d boyutu
+
+191
+00:26:39,240 --> 00:26:41,240
+var. Niye oraya
+
+192
+00:26:41,240 --> 00:26:43,240
+n yazdı? D olacak o.
+
+193
+00:26:43,240 --> 00:26:45,240
+Burada yanlış. Şurada
+
+194
+00:26:45,240 --> 00:26:47,240
+d doğru yazılmış.
+
+195
+00:26:47,240 --> 00:26:49,240
+Elimizdeki x
+
+196
+00:26:49,240 --> 00:26:51,240
+test örneğinin d boyutlu bir
+
+197
+00:26:51,240 --> 00:26:53,240
+datasette tüm öz niteliklerini
+
+198
+00:26:53,240 --> 00:26:55,240
+ben biliyorum ve
+
+199
+00:26:55,240 --> 00:26:56,599
+bu test örneğinin
+
+200
+00:26:56,599 --> 00:26:58,599
+ait olduğu sınıfı bulmaya
+
+201
+00:26:58,599 --> 00:27:00,599
+çalışıyorum. Burada bu
+
+202
+00:27:00,599 --> 00:27:02,599
+öz niteliklerin her biri için ya da
+
+203
+00:27:02,599 --> 00:27:04,599
+diyelim ki bu koşullu
+
+204
+00:27:04,599 --> 00:27:06,599
+olasılığı Bayez teoremine göre
+
+205
+00:27:06,599 --> 00:27:08,599
+yazacak olursak eşitliğin sağ
+
+206
+00:27:08,599 --> 00:27:10,599
+tarafında ne görüyoruz?
+
+207
+00:27:10,599 --> 00:27:12,599
+Y sınıfının olma olasılığı
+
+208
+00:27:12,599 --> 00:27:14,599
+çarpı y sınıfı
+
+209
+00:27:14,599 --> 00:27:16,599
+içerisinde x'in
+
+210
+00:27:16,599 --> 00:27:18,599
+olma olasılığı
+
+211
+00:27:18,599 --> 00:27:20,599
+bölü px
+
+212
+00:27:20,599 --> 00:27:22,599
+diye yazıyoruz.
+
+213
+00:27:22,599 --> 00:27:24,599
+Şimdi bizim
+
+214
+00:27:24,599 --> 00:27:26,599
+bizim
+
+215
+00:27:26,599 --> 00:27:28,599
+buradaki
+
+216
+00:27:28,599 --> 00:27:30,599
+yaptığımız işlemde
+
+217
+00:27:30,599 --> 00:27:32,599
+şu
+
+218
+00:27:32,599 --> 00:27:34,599
+gördüğümüz
+
+219
+00:27:34,599 --> 00:27:36,599
+burada bir saniye
+
+220
+00:27:36,599 --> 00:27:42,369
+how to
+
+221
+00:27:42,369 --> 00:27:44,369
+estimate dediği
+
+222
+00:27:44,369 --> 00:27:46,369
+şu olasılığı nasıl
+
+223
+00:27:46,369 --> 00:27:48,369
+hesaplayacağız sorusu var. Yani
+
+224
+00:27:48,369 --> 00:27:50,369
+y sınıfı içerisinde bu
+
+225
+00:27:50,369 --> 00:27:52,369
+verilen test
+
+226
+00:27:52,369 --> 00:27:54,369
+örneğinin
+
+227
+00:27:54,369 --> 00:27:56,369
+olma olasılığını
+
+228
+00:27:56,369 --> 00:27:58,369
+hesaplamamız gerekiyor. Kesirin üst
+
+229
+00:27:58,369 --> 00:28:00,369
+tarafında bunu nasıl
+
+230
+00:28:00,369 --> 00:28:02,369
+hesaplayacağız sorusu geliyor.
+
+231
+00:28:02,369 --> 00:28:04,369
+Şimdi
+
+232
+00:28:06,369 --> 00:28:08,369
+bunu hesaplarken
+
+233
+00:28:08,369 --> 00:28:10,369
+burada bir örnekle devam
+
+234
+00:28:10,369 --> 00:28:12,369
+ediyor yine.
+
+235
+00:28:12,369 --> 00:28:14,369
+Bize verilen test örneğinde
+
+236
+00:28:14,369 --> 00:28:16,369
+birinci öz nitelik için
+
+237
+00:28:16,369 --> 00:28:18,369
+no, ikinci öz
+
+238
+00:28:18,369 --> 00:28:20,369
+nitelik için medeni
+
+239
+00:28:20,369 --> 00:28:22,369
+durum divorce demiş ve
+
+240
+00:28:22,369 --> 00:28:24,369
+gelirine de 120
+
+241
+00:28:24,369 --> 00:28:26,369
+bin demiş. Bu
+
+242
+00:28:26,369 --> 00:28:28,369
+özellikte bir
+
+243
+00:28:28,369 --> 00:28:30,369
+müşteri için
+
+244
+00:28:30,369 --> 00:28:32,369
+class label'ı bulmak istiyoruz.
+
+245
+00:28:32,369 --> 00:28:34,369
+X dediğimiz test
+
+246
+00:28:34,369 --> 00:28:36,369
+sample'ını gösteriyor ve
+
+247
+00:28:36,369 --> 00:28:38,369
+şu da bizim class label'ımızı
+
+248
+00:28:38,369 --> 00:28:40,369
+gösteriyor. Yani verilen
+
+249
+00:28:40,369 --> 00:28:42,369
+test örneğinin yes sınıfına ait
+
+250
+00:28:42,369 --> 00:28:44,369
+olma olasılığı
+
+251
+00:28:44,369 --> 00:28:46,369
+burada yes sınıfının olma
+
+252
+00:28:46,369 --> 00:28:48,369
+olasılığı çarpı
+
+253
+00:28:48,369 --> 00:28:50,369
+yes sınıfı içerisinde x'in olma olasılığı
+
+254
+00:28:50,369 --> 00:28:52,369
+bölü px şeklinde yazılır.
+
+255
+00:28:52,369 --> 00:28:54,369
+Diğer sınıf
+
+256
+00:28:56,369 --> 00:28:58,369
+kredisini geri
+
+257
+00:28:58,369 --> 00:29:00,369
+ödemeyebilir ve
+
+258
+00:29:00,369 --> 00:29:02,369
+bu işi yarı yolda bırakabilir.
+
+259
+00:29:02,369 --> 00:29:04,369
+Bu durumda
+
+260
+00:29:04,369 --> 00:29:06,369
+x test sample'ının no sınıfına
+
+261
+00:29:06,369 --> 00:29:08,369
+ait olma olasılığı deyip
+
+262
+00:29:08,369 --> 00:29:10,369
+bias teoremine göre
+
+263
+00:29:10,369 --> 00:29:12,369
+no sınıfının olma olasılığı
+
+264
+00:29:12,369 --> 00:29:14,369
+çarpı no sınıfı içerisinde
+
+265
+00:29:14,369 --> 00:29:16,369
+x'in olma olasılığı
+
+266
+00:29:16,369 --> 00:29:18,369
+bölü px şeklinde yazıyoruz.
+
+267
+00:29:18,369 --> 00:29:20,369
+İki tane ayrı ayrı
+
+268
+00:29:20,369 --> 00:29:22,369
+olasılık hesaplayacağız.
+
+269
+00:29:22,369 --> 00:29:24,369
+Sonuçta burada
+
+270
+00:29:24,369 --> 00:29:26,369
+hesaplamamız gereken
+
+271
+00:29:26,369 --> 00:29:28,369
+şu iki olasılık yani kesrin üstünde
+
+272
+00:29:28,369 --> 00:29:30,369
+gördüğümüz şu iki olasılık
+
+273
+00:29:30,369 --> 00:29:32,369
+nasıl hesaplayacağız sorusunu
+
+274
+00:29:32,369 --> 00:29:34,369
+bu örnek içinde
+
+275
+00:29:34,369 --> 00:29:36,369
+tekrar soracağız.
+
+276
+00:29:36,369 --> 00:29:38,369
+Bunu şöyle
+
+277
+00:29:38,369 --> 00:29:40,369
+hesaplıyoruz arkadaşlar
+
+278
+00:29:40,369 --> 00:29:42,369
+bias classifier'da
+
+279
+00:29:42,369 --> 00:29:44,369
+diyoruz ki
+
+280
+00:29:44,369 --> 00:29:46,369
+elimizdeki öz niteliklerin
+
+281
+00:29:46,369 --> 00:29:48,369
+hani birden d'ye kadar
+
+282
+00:29:48,369 --> 00:29:50,369
+öz nitelikler vardı ya
+
+283
+00:29:50,369 --> 00:29:52,369
+bu öz niteliklerin
+
+284
+00:29:52,369 --> 00:29:54,369
+independent
+
+285
+00:29:54,369 --> 00:29:56,369
+birbirinden bağımsız
+
+286
+00:29:56,369 --> 00:29:58,369
+olduğunu varsayıyoruz.
+
+287
+00:29:58,369 --> 00:30:00,369
+Tamam
+
+288
+00:30:00,369 --> 00:30:02,369
+independence among
+
+289
+00:30:02,369 --> 00:30:04,369
+attributes x i
+
+290
+00:30:04,369 --> 00:30:06,369
+when class is given
+
+291
+00:30:06,369 --> 00:30:08,369
+demiş. Şimdi
+
+292
+00:30:08,369 --> 00:30:10,369
+bu durumda ben
+
+293
+00:30:10,369 --> 00:30:12,369
+bu olasılığı yazarken
+
+294
+00:30:12,369 --> 00:30:14,369
+şurada
+
+295
+00:30:14,369 --> 00:30:16,369
+her bir olasılığı ayrı ayrı
+
+296
+00:30:16,369 --> 00:30:18,369
+yj sınıfı
+
+297
+00:30:18,369 --> 00:30:20,369
+içerisinde x1'in olma
+
+298
+00:30:20,369 --> 00:30:22,369
+olasılığı çarpı
+
+299
+00:30:22,369 --> 00:30:24,369
+yj sınıfı içerisinde x2'nin
+
+300
+00:30:24,369 --> 00:30:26,369
+olma olasılığı diyerek
+
+301
+00:30:26,369 --> 00:30:28,369
+bu şekilde olasılıklar
+
+302
+00:30:28,369 --> 00:30:30,369
+çarpımı şeklinde
+
+303
+00:30:30,369 --> 00:30:32,369
+yazabiliyorum. Neye istinaden
+
+304
+00:30:32,369 --> 00:30:34,369
+yazıyorum bunu? Öz niteliklerin
+
+305
+00:30:34,369 --> 00:30:36,369
+bağımsız olması kuralından
+
+306
+00:30:36,369 --> 00:30:38,369
+faydalanarak yazıyorum. Tabii
+
+307
+00:30:38,369 --> 00:30:40,369
+data'nın böyle bir
+
+308
+00:30:40,369 --> 00:30:42,369
+özelliğinin olduğunu
+
+309
+00:30:42,369 --> 00:30:44,369
+varsayıyoruz.
+
+310
+00:30:44,369 --> 00:30:46,369
+Tamam
+
+311
+00:30:46,369 --> 00:30:48,369
+Buna göre
+
+312
+00:30:48,369 --> 00:30:52,160
+şurada gördüğümüz
+
+313
+00:30:52,160 --> 00:31:00,119
+şekliyle bunu
+
+314
+00:31:00,119 --> 00:31:02,119
+yazabiliyoruz. Tabii bir de
+
+315
+00:31:02,119 --> 00:31:04,119
+kesrin üstünde pyj
+
+316
+00:31:04,119 --> 00:31:06,119
+dediğimiz
+
+317
+00:31:06,119 --> 00:31:08,119
+class label'ı vardı
+
+318
+00:31:08,119 --> 00:31:10,119
+işlemi orada
+
+319
+00:31:10,119 --> 00:31:12,119
+göstermiş. Şimdi conditional
+
+320
+00:31:12,119 --> 00:31:14,119
+independence için
+
+321
+00:31:14,119 --> 00:31:16,119
+burada biraz açıklama yapmış
+
+322
+00:31:16,119 --> 00:31:18,119
+bana biraz hani gereksiz
+
+323
+00:31:18,119 --> 00:31:20,119
+geldi ama şöyle kısaca üstünden
+
+324
+00:31:20,119 --> 00:31:22,119
+geçeyim. Bir basit örnek
+
+325
+00:31:22,119 --> 00:31:24,119
+vermiş
+
+326
+00:31:24,119 --> 00:31:26,119
+arm length and reading
+
+327
+00:31:26,119 --> 00:31:28,119
+skills diye
+
+328
+00:31:28,119 --> 00:31:30,119
+yani işte ikisi birbirinden
+
+329
+00:31:30,119 --> 00:31:32,119
+bağımsız, iki öz niteliktir
+
+330
+00:31:32,119 --> 00:31:34,119
+diyor. Baktığımız zaman
+
+331
+00:31:34,119 --> 00:31:36,119
+bu
+
+332
+00:31:36,119 --> 00:31:38,119
+şeyde
+
+333
+00:31:38,119 --> 00:31:40,119
+conditionally independent given age
+
+334
+00:31:40,119 --> 00:31:42,119
+demiş. Arm length and reading
+
+335
+00:31:42,119 --> 00:31:44,119
+skills bu şekilde. Ama tabii ki
+
+336
+00:31:44,119 --> 00:31:46,119
+biz bunu data'da
+
+337
+00:31:46,119 --> 00:31:48,119
+böyle hani bu ilişkilidir, bu
+
+338
+00:31:48,119 --> 00:31:50,119
+değildir demek yerine bunu tabii
+
+339
+00:31:50,119 --> 00:31:52,119
+matematiksel olarak ifade etmemiz
+
+340
+00:31:52,119 --> 00:31:54,119
+gerekiyor.
+
+341
+00:31:54,119 --> 00:31:56,119
+Koşullu
+
+342
+00:31:56,119 --> 00:31:58,119
+yani
+
+343
+00:31:58,119 --> 00:32:00,119
+şey
+
+344
+00:32:00,119 --> 00:32:02,119
+independence dediğimiz
+
+345
+00:32:02,119 --> 00:32:04,119
+birbirinden bağımsız olma kuralını
+
+346
+00:32:04,119 --> 00:32:06,119
+bunları istatistikte var.
+
+347
+00:32:06,119 --> 00:32:08,119
+Tekrar orada
+
+348
+00:32:08,119 --> 00:32:10,119
+anlatmayacağım o yüzden.
+
+349
+00:32:10,119 --> 00:32:12,119
+Şimdi geldik örneğimize tekrar
+
+350
+00:32:12,119 --> 00:32:14,119
+dönüp dolaşıp aynı
+
+351
+00:32:14,119 --> 00:32:16,119
+örneğe geliyoruz.
+
+352
+00:32:16,119 --> 00:32:18,119
+Gördüğünüz gibi
+
+353
+00:32:18,119 --> 00:32:20,119
+elimizde bizim
+
+354
+00:32:20,119 --> 00:32:22,119
+test örneğimiz var
+
+355
+00:32:22,119 --> 00:32:24,119
+ve bu test örneğinde
+
+356
+00:32:24,119 --> 00:32:26,119
+bu sample'ın
+
+357
+00:32:26,119 --> 00:32:28,119
+her bir öz niteliğinin aldığı
+
+358
+00:32:28,119 --> 00:32:30,119
+değere göre ben
+
+359
+00:32:30,119 --> 00:32:32,119
+ne yapacağım? İşte efendim
+
+360
+00:32:32,119 --> 00:32:34,119
+yes sınıfı içerisinde
+
+361
+00:32:34,119 --> 00:32:36,119
+bu x test örneğinin
+
+362
+00:32:36,119 --> 00:32:38,119
+olma olasılığını
+
+363
+00:32:38,119 --> 00:32:40,119
+ve no sınıfı içerisinde
+
+364
+00:32:40,119 --> 00:32:42,119
+bu x test örneğinin
+
+365
+00:32:42,119 --> 00:32:44,119
+olma olasılığını
+
+366
+00:32:44,119 --> 00:32:46,119
+hesaplayacağım.
+
+367
+00:32:46,119 --> 00:32:48,119
+Az önce yazdığımız gibi
+
+368
+00:32:48,119 --> 00:32:50,119
+burada yer alan
+
+369
+00:32:50,119 --> 00:32:52,119
+üç tane öz niteliğin
+
+370
+00:32:52,119 --> 00:32:54,119
+birbirinden bağımsız olduğunu
+
+371
+00:32:54,119 --> 00:32:56,119
+varsayarak biz bunları
+
+372
+00:32:56,119 --> 00:32:58,119
+olasılıklar çarpımı şeklinde
+
+373
+00:32:58,119 --> 00:33:00,119
+yazabiliriz dedik ve o zaman
+
+374
+00:33:00,119 --> 00:33:02,119
+ne olduğu durum
+
+375
+00:33:02,119 --> 00:33:04,119
+yes sınıfı içerisinde
+
+376
+00:33:04,119 --> 00:33:06,119
+işte test örneğinde
+
+377
+00:33:06,119 --> 00:33:08,119
+refund dediğim
+
+378
+00:33:08,119 --> 00:33:10,119
+geri ödeme
+
+379
+00:33:10,119 --> 00:33:12,119
+düzenli ödeme şeyinin
+
+380
+00:33:12,119 --> 00:33:14,119
+no olma olasılığını
+
+381
+00:33:14,119 --> 00:33:16,119
+yine
+
+382
+00:33:16,119 --> 00:33:18,119
+yes sınıfı içerisinde
+
+383
+00:33:18,119 --> 00:33:20,119
+medeni durumunun
+
+384
+00:33:20,119 --> 00:33:22,119
+boşanmış olması
+
+385
+00:33:22,119 --> 00:33:24,119
+ve yes sınıfı içerisinde
+
+386
+00:33:24,119 --> 00:33:26,119
+gelirinin 120 bin olması
+
+387
+00:33:26,119 --> 00:33:28,119
+olasılıklarını hesaplayacağım
+
+388
+00:33:28,119 --> 00:33:30,119
+bunları birbiriyle çarparak
+
+389
+00:33:30,119 --> 00:33:32,119
+bu olasılığı koşullu olasılığı
+
+390
+00:33:32,119 --> 00:33:34,119
+bulabileceğim diyorum.
+
+391
+00:33:34,119 --> 00:33:36,119
+Aynı işlemi bir de
+
+392
+00:33:36,119 --> 00:33:38,119
+no sınıfı için yapacağız.
+
+393
+00:33:38,119 --> 00:33:40,119
+no sınıfı
+
+394
+00:33:40,119 --> 00:33:42,119
+içerisinde
+
+395
+00:33:42,119 --> 00:33:44,119
+birinci öz nitelik refund
+
+396
+00:33:44,119 --> 00:33:46,119
+bunun no olma olasılığını
+
+397
+00:33:46,119 --> 00:33:48,119
+yazacağım
+
+398
+00:33:48,119 --> 00:33:50,119
+sonra yine
+
+399
+00:33:50,119 --> 00:33:52,119
+ikinci öz nitelik için
+
+400
+00:33:52,119 --> 00:33:54,119
+divorced olma
+
+401
+00:33:54,119 --> 00:33:56,119
+olasılığını no sınıfı için
+
+402
+00:33:56,119 --> 00:33:58,119
+yazacağım ve böyle ilerleyeceğim
+
+403
+00:33:58,119 --> 00:34:00,119
+bir iki tanesini yazalım
+
+404
+00:34:00,119 --> 00:34:02,119
+mesela bu veri setinde
+
+405
+00:34:02,119 --> 00:34:04,119
+evet sınıfına ait
+
+406
+00:34:04,119 --> 00:34:06,119
+toplam üç tane sample var
+
+407
+00:34:06,119 --> 00:34:08,119
+o yüzden şu
+
+408
+00:34:08,119 --> 00:34:10,119
+olasılığı
+
+409
+00:34:10,119 --> 00:34:18,869
+biraz temizleyelim ortamı
+
+410
+00:34:18,869 --> 00:34:20,869
+yazalım
+
+411
+00:34:20,869 --> 00:34:22,869
+olasılıkların bir kısmında
+
+412
+00:34:22,869 --> 00:34:24,869
+bir kere
+
+413
+00:34:24,869 --> 00:34:26,869
+veri seti içerisinde
+
+414
+00:34:26,869 --> 00:34:32,199
+yes sınıfına ait
+
+415
+00:34:32,199 --> 00:34:34,199
+toplam örnek sayısını
+
+416
+00:34:34,199 --> 00:34:36,199
+biliyorum
+
+417
+00:34:36,199 --> 00:34:38,199
+no sınıfına ait
+
+418
+00:34:38,199 --> 00:34:43,909
+pardon
+
+419
+00:34:43,909 --> 00:34:45,909
+toplam örnek sayısını biliyorum
+
+420
+00:34:45,909 --> 00:34:47,909
+veri setinde toplam 10 tane sample olduğunu biliyorum
+
+421
+00:34:47,909 --> 00:34:49,909
+o yüzden
+
+422
+00:34:49,909 --> 00:34:51,909
+yes sınıfının bu data seti
+
+423
+00:34:51,909 --> 00:34:53,909
+içerisinde olma olasılığı
+
+424
+00:34:53,909 --> 00:34:55,909
+3 bölü 10
+
+425
+00:34:55,909 --> 00:34:57,909
+no sınıfının olma olasılığı da
+
+426
+00:34:57,909 --> 00:34:59,909
+4 5 6 7
+
+427
+00:34:59,909 --> 00:35:03,440
+bölü 10 dur
+
+428
+00:35:03,440 --> 00:35:05,440
+ve
+
+429
+00:35:05,440 --> 00:35:07,440
+buradan devam ediyorum şimdi
+
+430
+00:35:07,440 --> 00:35:09,440
+yes sınıfı içerisinde
+
+431
+00:35:09,440 --> 00:35:11,440
+yani o üç kişilik grup içerisinde
+
+432
+00:35:11,440 --> 00:35:13,440
+inceleyeceğim refund no olan
+
+433
+00:35:13,440 --> 00:35:15,440
+kaç kişi var diye bakacağım
+
+434
+00:35:15,440 --> 00:35:17,440
+1
+
+435
+00:35:17,440 --> 00:35:19,440
+2
+
+436
+00:35:19,440 --> 00:35:21,440
+3
+
+437
+00:35:21,440 --> 00:35:23,440
+yani şu
+
+438
+00:35:23,440 --> 00:35:25,440
+olasılık için
+
+439
+00:35:25,440 --> 00:35:27,440
+3 bölü 3
+
+440
+00:35:27,440 --> 00:35:29,440
+yani 1 diyeceğim
+
+441
+00:35:29,440 --> 00:35:31,440
+sonra yes sınıfı içerisinde
+
+442
+00:35:31,440 --> 00:35:33,440
+boşanmış
+
+443
+00:35:33,440 --> 00:35:35,440
+kişilerin
+
+444
+00:35:35,440 --> 00:35:37,440
+olduğunu görüyoruz
+
+445
+00:35:37,440 --> 00:35:39,440
+bunların olasılığı nedir diye bakıyorum
+
+446
+00:35:39,440 --> 00:35:41,440
+3 kişide
+
+447
+00:35:41,440 --> 00:35:43,440
+1
+
+448
+00:35:43,440 --> 00:35:45,440
+1 tane var
+
+449
+00:35:45,440 --> 00:35:47,440
+o zaman bu olasılık
+
+450
+00:35:47,440 --> 00:35:49,440
+1 bölü 3 olacak
+
+451
+00:35:49,440 --> 00:35:51,440
+diye gidiyorum
+
+452
+00:35:51,440 --> 00:35:53,440
+bu nümerik bir öz nitelik olduğu için
+
+453
+00:35:53,440 --> 00:35:55,440
+toplamayacağım onu ayrıca göstereceğim size
+
+454
+00:35:55,440 --> 00:35:57,440
+benzer işlemleri
+
+455
+00:35:57,440 --> 00:35:59,440
+no sınıfı içinde yapalım
+
+456
+00:35:59,440 --> 00:36:01,440
+no sınıfı içerisinde
+
+457
+00:36:01,440 --> 00:36:03,440
+toplam 7 tane sample olduğunu
+
+458
+00:36:03,440 --> 00:36:05,440
+biliyorum
+
+459
+00:36:05,440 --> 00:36:07,440
+bu 7 tane sample da
+
+460
+00:36:07,440 --> 00:36:09,440
+refund
+
+461
+00:36:09,440 --> 00:36:11,440
+no olanların sayısına
+
+462
+00:36:11,440 --> 00:36:13,440
+bakıyorum
+
+463
+00:36:13,440 --> 00:36:15,440
+refund no olanların sayısına bakıyorum
+
+464
+00:36:15,440 --> 00:36:17,440
+1
+
+465
+00:36:17,440 --> 00:36:23,119
+2
+
+466
+00:36:23,119 --> 00:36:25,119
+3
+
+467
+00:36:25,119 --> 00:36:27,119
+4 saydım
+
+468
+00:36:27,119 --> 00:36:29,119
+buraya diyeceğim ki
+
+469
+00:36:29,119 --> 00:36:31,119
+bunun olma olasılığı 4 bölü 7 dir
+
+470
+00:36:31,119 --> 00:36:33,119
+çünkü toplam
+
+471
+00:36:33,119 --> 00:36:35,119
+7 tane sampleımız vardı
+
+472
+00:36:35,119 --> 00:36:37,119
+no sınıfı içerisinde
+
+473
+00:36:37,119 --> 00:36:39,119
+yine no sınıfı içerisinde
+
+474
+00:36:39,119 --> 00:36:41,119
+baktığımda
+
+475
+00:36:41,119 --> 00:36:43,119
+1 tane
+
+476
+00:36:43,119 --> 00:36:45,119
+divorced var
+
+477
+00:36:45,119 --> 00:36:47,119
+o zaman 1 bölü 7
+
+478
+00:36:47,119 --> 00:36:49,119
+olacak bunun olma olasılığı
+
+479
+00:36:49,119 --> 00:36:51,119
+ve bunları çarparak
+
+480
+00:36:51,119 --> 00:36:53,119
+şuradaki koşullu
+
+481
+00:36:53,119 --> 00:36:59,889
+olasılığı hesaplayacağım
+
+482
+00:36:59,889 --> 00:37:03,300
+evet bunları
+
+483
+00:37:03,300 --> 00:37:05,300
+burada yazmış
+
+484
+00:37:05,300 --> 00:37:07,300
+az önce gösterdiğimiz gibi
+
+485
+00:37:07,300 --> 00:37:09,300
+no sınıfın olma olasılığı
+
+486
+00:37:09,300 --> 00:37:11,300
+yes sınıfın olma olasılığı
+
+487
+00:37:11,300 --> 00:37:13,300
+for categorical attributes
+
+488
+00:37:13,300 --> 00:37:15,300
+elimizde kategorik öz nitelikler
+
+489
+00:37:15,300 --> 00:37:17,300
+varsa
+
+490
+00:37:17,300 --> 00:37:19,300
+az önce söylediğim gibi
+
+491
+00:37:19,300 --> 00:37:21,300
+k sınıfının içerisinde
+
+492
+00:37:21,300 --> 00:37:23,300
+yani k sınıfında kaç tane
+
+493
+00:37:23,300 --> 00:37:25,300
+sample varsa
+
+494
+00:37:25,300 --> 00:37:27,300
+bu k sınıfı içerisinde
+
+495
+00:37:27,300 --> 00:37:29,300
+i
+
+496
+00:37:29,300 --> 00:37:31,300
+niteliğini taşıyan
+
+497
+00:37:31,300 --> 00:37:33,300
+örneklerin sayısı bölü
+
+498
+00:37:33,300 --> 00:37:35,300
+k sınıfı içerisindeki toplum örnek
+
+499
+00:37:35,300 --> 00:37:37,300
+sayısından bunları hesaplıyoruz
+
+500
+00:37:37,300 --> 00:37:39,300
+az önce örnekte
+
+501
+00:37:39,300 --> 00:37:41,300
+gördüğünüz gibi
+
+502
+00:37:41,300 --> 00:37:43,300
+mesela no sınıfı içerisinde
+
+503
+00:37:47,300 --> 00:37:49,300
+maritim status medeni durumu
+
+504
+00:37:49,300 --> 00:37:51,300
+evli olanların
+
+505
+00:37:51,300 --> 00:37:53,300
+olma olasılığı diye bakacak olursak
+
+506
+00:37:53,300 --> 00:37:55,300
+burada
+
+507
+00:37:55,300 --> 00:37:57,300
+bu veriden
+
+508
+00:37:57,300 --> 00:37:59,300
+4 bölü 7 olarak
+
+509
+00:37:59,300 --> 00:38:01,300
+no sınıfı
+
+510
+00:38:01,300 --> 00:38:03,300
+içerisindeki samplelarımız
+
+511
+00:38:03,300 --> 00:38:07,300
+1-2-3-4-5-6-7 tane
+
+512
+00:38:07,300 --> 00:38:09,300
+bunların içerisinde
+
+513
+00:38:09,300 --> 00:38:11,300
+marit olanlar
+
+514
+00:38:11,300 --> 00:38:17,300
+1-2-3-4 tane
+
+515
+00:38:17,300 --> 00:38:19,300
+o yüzden burada
+
+516
+00:38:19,300 --> 00:38:21,300
+bu olasılığa 4 bölü 7
+
+517
+00:38:21,300 --> 00:38:23,300
+demiş
+
+518
+00:38:23,300 --> 00:38:25,300
+bunu datadan hesaplıyoruz
+
+519
+00:38:25,300 --> 00:38:27,300
+gördüğünüz gibi
+
+520
+00:38:27,300 --> 00:38:29,300
+bizim şu an üzerinde çalıştığımız
+
+521
+00:38:29,300 --> 00:38:31,300
+veri seti
+
+522
+00:38:31,300 --> 00:38:33,300
+10 tane sampledan oluşuyor
+
+523
+00:38:33,300 --> 00:38:35,300
+basit bir veri seti
+
+524
+00:38:35,300 --> 00:38:37,300
+üzerinden bu
+
+525
+00:38:37,300 --> 00:38:39,300
+istatistiği çıkarmak çok böyle
+
+526
+00:38:39,300 --> 00:38:41,300
+anlamlı görünmüyor belki size ama
+
+527
+00:38:41,300 --> 00:38:43,300
+çok daha büyük
+
+528
+00:38:43,300 --> 00:38:45,300
+veri setleri üzerinde çalışırken
+
+529
+00:38:45,300 --> 00:38:47,300
+yapıyı modellemek için
+
+530
+00:38:47,300 --> 00:38:49,300
+aslında son derece güzel bir
+
+531
+00:38:49,300 --> 00:38:51,300
+gösterge
+
+532
+00:38:51,300 --> 00:38:53,300
+bu kullandığımız
+
+533
+00:38:53,300 --> 00:38:58,019
+olasılıklar
+
+534
+00:38:58,019 --> 00:39:00,019
+şimdi biz az önce
+
+535
+00:39:00,019 --> 00:39:02,019
+eğer elimizdeki
+
+536
+00:39:02,019 --> 00:39:04,019
+öz nitelikler kategorik
+
+537
+00:39:04,019 --> 00:39:06,019
+ise for categorical
+
+538
+00:39:06,019 --> 00:39:08,019
+attributes dedik
+
+539
+00:39:08,019 --> 00:39:10,019
+bu olasılıkları sayarak
+
+540
+00:39:10,019 --> 00:39:12,019
+bulabildik işte
+
+541
+00:39:12,019 --> 00:39:14,019
+mesela ne dedik
+
+542
+00:39:14,019 --> 00:39:16,019
+no sınıfı içerisinde
+
+543
+00:39:16,019 --> 00:39:18,019
+medeni durumu evli olanların
+
+544
+00:39:18,019 --> 00:39:20,019
+evli olan
+
+545
+00:39:20,019 --> 00:39:22,019
+kişilerin
+
+546
+00:39:22,019 --> 00:39:24,019
+olma olasılığı nedir gibi
+
+547
+00:39:24,019 --> 00:39:26,019
+ya da böyle bir soru sorduğumuzda
+
+548
+00:39:26,019 --> 00:39:28,019
+bunu veriden sayarak hesapladık
+
+549
+00:39:28,019 --> 00:39:30,019
+ve basit bir
+
+550
+00:39:30,019 --> 00:39:32,019
+oranla da bunu ifade edebildik
+
+551
+00:39:32,019 --> 00:39:34,019
+ama
+
+552
+00:39:34,019 --> 00:39:36,019
+işin bir de nümerik
+
+553
+00:39:36,019 --> 00:39:38,019
+veri boyutu var
+
+554
+00:39:38,019 --> 00:39:40,019
+yani burada gördüğümüz
+
+555
+00:39:40,019 --> 00:39:42,019
+vergilendirilebilir
+
+556
+00:39:42,019 --> 00:39:44,019
+gelir dediği sütun
+
+557
+00:39:44,019 --> 00:39:46,019
+sizin de gördüğünüz gibi
+
+558
+00:39:46,019 --> 00:39:48,019
+nümerik bir öz nitelik
+
+559
+00:39:48,019 --> 00:39:50,019
+ve buna
+
+560
+00:39:50,019 --> 00:39:52,019
+continuous variable
+
+561
+00:39:52,019 --> 00:39:54,019
+diyoruz
+
+562
+00:39:54,019 --> 00:39:56,019
+eğer elimizdeki
+
+563
+00:39:56,019 --> 00:39:58,019
+öz nitelik
+
+564
+00:39:58,019 --> 00:40:00,019
+böyle bir
+
+565
+00:40:00,019 --> 00:40:02,019
+continuous
+
+566
+00:40:02,019 --> 00:40:04,019
+bir değer alıyorsa
+
+567
+00:40:04,019 --> 00:40:06,019
+nasıl çözeceğiz
+
+568
+00:40:06,019 --> 00:40:08,019
+bu problemi yani
+
+569
+00:40:08,019 --> 00:40:10,019
+bu olasılığı nasıl hesaplayacağız
+
+570
+00:40:10,019 --> 00:40:12,019
+hangi olasılığı hesaplamam gerekiyor
+
+571
+00:40:12,019 --> 00:40:14,019
+burada benim mesela
+
+572
+00:40:14,019 --> 00:40:16,019
+no sınıfı içerisinde
+
+573
+00:40:16,019 --> 00:40:18,019
+gelirinin 125 bin olma olasılığı diye
+
+574
+00:40:18,019 --> 00:40:20,019
+bir değer hesaplayacağım
+
+575
+00:40:20,019 --> 00:40:22,019
+bunu nasıl hesaplayabilirim
+
+576
+00:40:22,019 --> 00:40:24,019
+soru bu
+
+577
+00:40:24,019 --> 00:40:26,019
+burada iki çözüm yolu var
+
+578
+00:40:26,019 --> 00:40:28,019
+birincisi
+
+579
+00:40:28,019 --> 00:40:30,019
+discretization
+
+580
+00:40:30,019 --> 00:40:32,019
+yani elimizdeki o nümerik veriyi
+
+581
+00:40:32,019 --> 00:40:34,019
+discretize edebiliriz
+
+582
+00:40:34,019 --> 00:40:36,019
+yani aralıklara böleriz
+
+583
+00:40:36,019 --> 00:40:38,019
+ki işte
+
+584
+00:40:38,019 --> 00:40:40,019
+40 bine kadar
+
+585
+00:40:40,019 --> 00:40:42,019
+olan geliri olanlar
+
+586
+00:40:42,019 --> 00:40:44,019
+40 ile
+
+587
+00:40:44,019 --> 00:40:46,019
+işte efendim
+
+588
+00:40:46,019 --> 00:40:48,019
+80 bin arası geliri olanlar
+
+589
+00:40:48,019 --> 00:40:50,019
+80 ile 120 bin
+
+590
+00:40:50,019 --> 00:40:52,019
+arası geliri olanlar gibi
+
+591
+00:40:52,019 --> 00:40:54,019
+aralıklara bölebiliriz ve böylece
+
+592
+00:40:54,019 --> 00:40:56,019
+aralık haline getirdiğimiz zaman
+
+593
+00:40:56,019 --> 00:40:58,019
+bunları bu
+
+594
+00:40:58,019 --> 00:41:00,019
+aynı
+
+595
+00:41:02,019 --> 00:41:04,019
+kategorik veri şeklinde
+
+596
+00:41:04,019 --> 00:41:06,019
+devam edebiliriz
+
+597
+00:41:06,019 --> 00:41:08,019
+ondan sonrasında
+
+598
+00:41:08,019 --> 00:41:10,019
+replace continuous
+
+599
+00:41:10,019 --> 00:41:12,019
+values with
+
+600
+00:41:12,019 --> 00:41:14,019
+1000 values dediği
+
+601
+00:41:14,019 --> 00:41:16,019
+işte ya da o aralığı temsil eden
+
+602
+00:41:16,019 --> 00:41:18,019
+bir değerle bunu ifade edebiliriz
+
+603
+00:41:18,019 --> 00:41:20,019
+diyebiliriz ki işte low medium
+
+604
+00:41:20,019 --> 00:41:22,019
+high diye gelir seviyesini
+
+605
+00:41:22,019 --> 00:41:24,019
+böyle kategorik
+
+606
+00:41:24,019 --> 00:41:26,019
+değerlere dönüştürebiliriz
+
+607
+00:41:26,019 --> 00:41:28,019
+veya veya
+
+608
+00:41:28,019 --> 00:41:30,019
+ikinci yol probability
+
+609
+00:41:30,019 --> 00:41:32,019
+density estimation dediğimiz
+
+610
+00:41:32,019 --> 00:41:34,019
+yöntemi kullanabiliriz
+
+611
+00:41:34,019 --> 00:41:36,019
+burada izlediğimiz yol
+
+612
+00:41:36,019 --> 00:41:38,019
+şu diyoruz ki
+
+613
+00:41:38,019 --> 00:41:42,019
+doğada pek çok olayı
+
+614
+00:41:42,019 --> 00:41:44,019
+modellemek için
+
+615
+00:41:44,019 --> 00:41:46,019
+normal dağılımdan
+
+616
+00:41:46,019 --> 00:41:48,019
+faydalanıyoruz yani gaussian
+
+617
+00:41:48,019 --> 00:41:50,019
+distribution dediğimiz
+
+618
+00:41:50,019 --> 00:41:52,019
+dağılımdan faydalanıyoruz
+
+619
+00:41:52,019 --> 00:41:54,019
+verimizin bir
+
+620
+00:41:54,019 --> 00:41:56,019
+normal dağılım gösterdiğini
+
+621
+00:41:56,019 --> 00:41:58,019
+varsayıp
+
+622
+00:41:58,019 --> 00:42:00,019
+bu dağılımın
+
+623
+00:42:00,019 --> 00:42:02,019
+parametrelerini
+
+624
+00:42:02,019 --> 00:42:04,019
+tahmin etmeye çalışıyoruz
+
+625
+00:42:04,019 --> 00:42:06,019
+nasıl datadan use data
+
+626
+00:42:06,019 --> 00:42:08,019
+estimate parameters of
+
+627
+00:42:08,019 --> 00:42:10,019
+distribution demiş
+
+628
+00:42:10,019 --> 00:42:12,019
+bu dağılımın parametrelerini
+
+629
+00:42:12,019 --> 00:42:14,019
+veriden
+
+630
+00:42:14,019 --> 00:42:16,019
+tahmin etmek demek
+
+631
+00:42:16,019 --> 00:42:18,019
+işte ilgili öz niteliğin
+
+632
+00:42:18,019 --> 00:42:20,019
+ortalamasını ve
+
+633
+00:42:20,019 --> 00:42:22,019
+standart sapmasını hesaplayarak
+
+634
+00:42:22,019 --> 00:42:24,019
+ben bunun
+
+635
+00:42:24,019 --> 00:42:26,019
+dağılım parametrelerini
+
+636
+00:42:26,019 --> 00:42:28,019
+bu şekilde
+
+637
+00:42:28,019 --> 00:42:30,019
+bulabilirim ve daha sonra
+
+638
+00:42:30,019 --> 00:42:32,019
+işte normal dağılımın
+
+639
+00:42:32,019 --> 00:42:34,019
+şeyini
+
+640
+00:42:34,019 --> 00:42:36,019
+bildiğim için
+
+641
+00:42:36,019 --> 00:42:38,019
+formülünü bildiğim için
+
+642
+00:42:38,019 --> 00:42:40,019
+buradan faydalanarak
+
+643
+00:42:40,019 --> 00:42:42,019
+elimdeki var olan
+
+644
+00:42:42,019 --> 00:42:44,019
+bir değerin
+
+645
+00:42:44,019 --> 00:42:46,019
+bu dağılım içerisinde
+
+646
+00:42:46,019 --> 00:42:48,019
+ne değer alacağını hesaplayabilirim
+
+647
+00:42:48,019 --> 00:42:50,019
+şunu demek istedim
+
+648
+00:42:50,019 --> 00:42:52,019
+bir güzel bir çizim yapayım size
+
+649
+00:42:52,019 --> 00:42:54,019
+daha iyi anlaşılsın
+
+650
+00:42:54,019 --> 00:43:00,050
+güzel olmadı yamuk çizdik
+
+651
+00:43:00,050 --> 00:43:04,320
+şöyle bir
+
+652
+00:43:04,320 --> 00:43:06,320
+grafik çizeceğim
+
+653
+00:43:06,320 --> 00:43:08,320
+normal
+
+654
+00:43:08,320 --> 00:43:10,320
+dağılımdan bahsettik
+
+655
+00:43:10,320 --> 00:43:12,320
+az önce şöyle bir dağılım oluştu
+
+656
+00:43:12,320 --> 00:43:14,320
+bu dağılımın ben
+
+657
+00:43:14,320 --> 00:43:16,320
+datadan
+
+658
+00:43:16,320 --> 00:43:18,320
+böyle bir
+
+659
+00:43:18,320 --> 00:43:20,320
+normal dağılım yani
+
+660
+00:43:20,320 --> 00:43:22,320
+çan eğrisi dediğimiz eğri formunda
+
+661
+00:43:22,320 --> 00:43:24,320
+olduğunu varsaydık
+
+662
+00:43:24,320 --> 00:43:26,320
+buradan bir
+
+663
+00:43:26,320 --> 00:43:28,320
+mean value yani ortalama
+
+664
+00:43:28,320 --> 00:43:30,320
+değer hesaplayıp
+
+665
+00:43:30,320 --> 00:43:32,320
+bu veriden yine faydalanarak
+
+666
+00:43:32,320 --> 00:43:34,320
+bir standart sapma
+
+667
+00:43:34,320 --> 00:43:36,320
+veya
+
+668
+00:43:36,320 --> 00:43:41,199
+veya
+
+669
+00:43:41,199 --> 00:43:43,199
+varyansı
+
+670
+00:43:43,199 --> 00:43:45,199
+hesaplayabilirim
+
+671
+00:43:45,199 --> 00:43:47,199
+eğer
+
+672
+00:43:47,199 --> 00:43:49,199
+bu gauss dağılımının
+
+673
+00:43:49,199 --> 00:43:52,869
+g x diyeyim
+
+674
+00:43:52,869 --> 00:43:54,869
+buraya da
+
+675
+00:43:54,869 --> 00:43:56,869
+x ekseni diyeyim
+
+676
+00:43:56,869 --> 00:44:00,500
+gauss dağılımının
+
+677
+00:44:00,500 --> 00:44:02,500
+formülünü biliyorsunuz
+
+678
+00:44:02,500 --> 00:44:04,500
+1 bölü kare kök içerisinde
+
+679
+00:44:04,500 --> 00:44:06,500
+2 pi
+
+680
+00:44:06,500 --> 00:44:08,500
+sigmayı dışarı yazdım
+
+681
+00:44:08,500 --> 00:44:10,500
+dikkat içeride de yazarsam
+
+682
+00:44:10,500 --> 00:44:12,500
+sigma kare oluyordu
+
+683
+00:44:12,500 --> 00:44:14,500
+kare kök içerisinde
+
+684
+00:44:14,500 --> 00:44:16,500
+2 pi sigma kare
+
+685
+00:44:16,500 --> 00:44:18,500
+e üzeri eksi
+
+686
+00:44:18,500 --> 00:44:20,500
+m'nin
+
+687
+00:44:20,500 --> 00:44:22,500
+karesi
+
+688
+00:44:22,500 --> 00:44:24,500
+bölü 2
+
+689
+00:44:24,500 --> 00:44:26,500
+sigma karedir
+
+690
+00:44:26,500 --> 00:44:28,500
+gauss dağılımı
+
+691
+00:44:28,500 --> 00:44:31,940
+y x
+
+692
+00:44:31,940 --> 00:44:33,940
+yani ben
+
+693
+00:44:33,940 --> 00:44:35,940
+burada ortalaması
+
+694
+00:44:35,940 --> 00:44:37,940
+m olan işte bakın şurada
+
+695
+00:44:37,940 --> 00:44:39,940
+formülde yazdım
+
+696
+00:44:39,940 --> 00:44:41,940
+standart sapması sigma
+
+697
+00:44:41,940 --> 00:44:43,940
+olan
+
+698
+00:44:43,940 --> 00:44:45,940
+dağılım için
+
+699
+00:44:45,940 --> 00:44:49,250
+böyle bir formül yazdım
+
+700
+00:44:49,250 --> 00:44:51,250
+dağılımın formülünü yazdıktan
+
+701
+00:44:51,250 --> 00:44:53,250
+sonra arkadaşlar
+
+702
+00:44:53,250 --> 00:44:55,250
+yoruldunuz mu
+
+703
+00:44:55,250 --> 00:44:57,250
+saat kaç oldu
+
+704
+00:44:57,250 --> 00:44:59,250
+40 daha vakit varmış
+
+705
+00:44:59,250 --> 00:45:01,250
+için
+
+706
+00:45:01,250 --> 00:45:05,079
+dağılımı yazdıktan sonra
+
+707
+00:45:05,079 --> 00:45:07,079
+likelihood probability
+
+708
+00:45:07,079 --> 00:45:09,079
+dediğimiz
+
+709
+00:45:09,079 --> 00:45:11,079
+bir değer hesaplayacağız
+
+710
+00:45:11,079 --> 00:45:13,079
+bu dağılım üzerinden
+
+711
+00:45:13,079 --> 00:45:15,079
+ne yapacağım ben artık
+
+712
+00:45:15,079 --> 00:45:17,079
+bu dağılım formülünü bildiğime göre
+
+713
+00:45:21,570 --> 00:45:23,570
+bu dağılımın üzerinde
+
+714
+00:45:23,570 --> 00:45:25,570
+x için herhangi bir
+
+715
+00:45:25,570 --> 00:45:27,570
+değeri tutarak
+
+716
+00:45:27,570 --> 00:45:30,920
+bu değerin
+
+717
+00:45:30,920 --> 00:45:32,920
+g x
+
+718
+00:45:32,920 --> 00:45:34,920
+değerini hesaplayabilirim
+
+719
+00:45:34,920 --> 00:45:36,920
+doğru mu mesela
+
+720
+00:45:36,920 --> 00:45:38,920
+az önce verdiğimiz örnekte
+
+721
+00:45:38,920 --> 00:45:40,920
+geliri
+
+722
+00:45:40,920 --> 00:45:42,920
+geliri
+
+723
+00:45:42,920 --> 00:45:44,920
+125 bin
+
+724
+00:45:44,920 --> 00:45:46,920
+olan
+
+725
+00:45:46,920 --> 00:45:48,920
+müşterinin
+
+726
+00:45:48,920 --> 00:45:53,280
+müşteri için
+
+727
+00:45:53,280 --> 00:45:55,280
+bu popülasyon
+
+728
+00:45:55,280 --> 00:45:57,280
+içerisinde bunun
+
+729
+00:45:57,280 --> 00:45:59,280
+olma olasılığını hesaplayabilirim
+
+730
+00:45:59,280 --> 00:46:01,280
+ama bu popülasyon
+
+731
+00:46:01,280 --> 00:46:03,280
+içinde derken
+
+732
+00:46:03,280 --> 00:46:05,280
+aslında ben bu işlemi
+
+733
+00:46:05,280 --> 00:46:07,280
+class based yapacağım
+
+734
+00:46:07,280 --> 00:46:09,280
+yani bir
+
+735
+00:46:09,280 --> 00:46:12,980
+kredi
+
+736
+00:46:12,980 --> 00:46:14,980
+çeken
+
+737
+00:46:14,980 --> 00:46:16,980
+müşterilerin
+
+738
+00:46:16,980 --> 00:46:18,980
+evade dediğimiz
+
+739
+00:46:18,980 --> 00:46:20,980
+bu işlemi sonuna kadar
+
+740
+00:46:20,980 --> 00:46:22,980
+götürüp borcunu ödeyecek mi
+
+741
+00:46:22,980 --> 00:46:24,980
+yoksa yarı yolda vaz mı
+
+742
+00:46:24,980 --> 00:46:26,980
+geçecek diye gösterilen
+
+743
+00:46:26,980 --> 00:46:28,980
+bir class labelımız vardı
+
+744
+00:46:28,980 --> 00:46:30,980
+biz bu
+
+745
+00:46:30,980 --> 00:46:32,980
+dağılımı
+
+746
+00:46:32,980 --> 00:46:34,980
+class based yapacağız
+
+747
+00:46:34,980 --> 00:46:36,980
+yani class labelı
+
+748
+00:46:36,980 --> 00:46:38,980
+no olan
+
+749
+00:46:38,980 --> 00:46:40,980
+grup için ayrı bir
+
+750
+00:46:40,980 --> 00:46:42,980
+dağılım oluşturacağız
+
+751
+00:46:42,980 --> 00:46:44,980
+yes olan sınıf için
+
+752
+00:46:44,980 --> 00:46:46,980
+ayrı bir dağılım oluşturacağız
+
+753
+00:46:46,980 --> 00:46:48,980
+daha sonra her bir
+
+754
+00:46:48,980 --> 00:46:50,980
+x değeri için
+
+755
+00:46:50,980 --> 00:46:52,980
+likelihood probability dediğimiz
+
+756
+00:46:52,980 --> 00:46:54,980
+probabilityyi bu g x
+
+757
+00:46:54,980 --> 00:46:56,980
+normal dağılım
+
+758
+00:46:56,980 --> 00:46:58,980
+denkleminde yerine koyarak
+
+759
+00:46:58,980 --> 00:47:00,980
+bulabileceğiz
+
+760
+00:47:00,980 --> 00:47:02,980
+buna bir örnek
+
+761
+00:47:02,980 --> 00:47:04,980
+hemen
+
+762
+00:47:04,980 --> 00:47:06,980
+bizim test örneğimizde
+
+763
+00:47:06,980 --> 00:47:08,980
+geliri 120.000
+
+764
+00:47:08,980 --> 00:47:10,980
+olan vardı
+
+765
+00:47:10,980 --> 00:47:12,980
+no sınıfı içerisinde
+
+766
+00:47:12,980 --> 00:47:14,980
+geliri
+
+767
+00:47:14,980 --> 00:47:16,980
+yani bir müşterinin gelirinin 120.000
+
+768
+00:47:16,980 --> 00:47:18,980
+olma olasılığı
+
+769
+00:47:18,980 --> 00:47:20,980
+no class içerisinde
+
+770
+00:47:20,980 --> 00:47:22,980
+1 2 3 4 5 6
+
+771
+00:47:22,980 --> 00:47:24,980
+7 tane sample
+
+772
+00:47:24,980 --> 00:47:26,980
+vardı
+
+773
+00:47:26,980 --> 00:47:28,980
+bu 7 tane sample'ın
+
+774
+00:47:28,980 --> 00:47:30,980
+gelir
+
+775
+00:47:30,980 --> 00:47:32,980
+yıllık gelirleri
+
+776
+00:47:32,980 --> 00:47:39,269
+şurada gördüğümüz değerler
+
+777
+00:47:39,269 --> 00:47:41,269
+için
+
+778
+00:47:41,269 --> 00:47:44,639
+2 4 6 7 tane
+
+779
+00:47:44,639 --> 00:47:46,639
+bu değerler üzerinden
+
+780
+00:47:46,639 --> 00:47:48,639
+ben bir
+
+781
+00:47:48,639 --> 00:47:50,639
+class no
+
+782
+00:47:50,639 --> 00:47:52,639
+için
+
+783
+00:47:52,639 --> 00:47:54,639
+sample mean
+
+784
+00:47:54,639 --> 00:47:56,639
+ve sample variance
+
+785
+00:47:56,639 --> 00:47:58,639
+hesaplayacağım
+
+786
+00:47:58,639 --> 00:48:02,019
+tamam 7 tane
+
+787
+00:48:02,019 --> 00:48:04,019
+değer üzerinden ortalama
+
+788
+00:48:04,019 --> 00:48:06,019
+geliri
+
+789
+00:48:06,019 --> 00:48:08,019
+ve bunun
+
+790
+00:48:08,019 --> 00:48:10,019
+arasını no sınıfı için
+
+791
+00:48:10,019 --> 00:48:12,019
+her sınıf için ayrı ayrı yapacağım
+
+792
+00:48:12,019 --> 00:48:14,019
+dedim no sınıfı için
+
+793
+00:48:14,019 --> 00:48:16,019
+bulacağım
+
+794
+00:48:16,019 --> 00:48:18,019
+bunlar benim dağılımımın
+
+795
+00:48:18,019 --> 00:48:20,019
+parametreleri
+
+796
+00:48:20,019 --> 00:48:22,019
+olmuş olacak
+
+797
+00:48:22,019 --> 00:48:24,019
+ve buna göre
+
+798
+00:48:24,019 --> 00:48:27,719
+şöyle bir
+
+799
+00:48:27,719 --> 00:48:29,719
+gaussian distribution çizecek olursam
+
+800
+00:48:29,719 --> 00:48:31,719
+bunun ortalaması
+
+801
+00:48:31,719 --> 00:48:33,719
+110'muş
+
+802
+00:48:33,719 --> 00:48:37,440
+110 ve diyor ki
+
+803
+00:48:37,440 --> 00:48:39,440
+110 için
+
+804
+00:48:39,440 --> 00:48:41,440
+110 için
+
+805
+00:48:41,440 --> 00:48:43,440
+ortalaması 110
+
+806
+00:48:43,440 --> 00:48:45,440
+iken biz 120'nin
+
+807
+00:48:45,440 --> 00:48:49,269
+buradaki değerini bulmak istiyoruz
+
+808
+00:48:49,269 --> 00:48:51,269
+120 için
+
+809
+00:48:51,269 --> 00:48:53,269
+gideceğiz
+
+810
+00:48:53,269 --> 00:48:55,269
+yx fonksiyonunda ne değer alır
+
+811
+00:48:55,269 --> 00:48:57,269
+buna bakacağız
+
+812
+00:48:57,269 --> 00:48:59,269
+ve bunun için
+
+813
+00:48:59,269 --> 00:49:01,269
+burada gördüğümüz
+
+814
+00:49:01,269 --> 00:49:03,269
+gauss dağılımı
+
+815
+00:49:03,269 --> 00:49:05,269
+formülünü kullanacağız
+
+816
+00:49:05,269 --> 00:49:07,269
+1 bölü
+
+817
+00:49:07,269 --> 00:49:09,269
+karekök içerisinde 2 pi
+
+818
+00:49:09,269 --> 00:49:11,269
+sigmayı içeri almış burada
+
+819
+00:49:11,269 --> 00:49:13,269
+sigma ij dediği
+
+820
+00:49:13,269 --> 00:49:15,269
+sınıfının i parametresi
+
+821
+00:49:15,269 --> 00:49:17,269
+için
+
+822
+00:49:19,269 --> 00:49:22,679
+sigma kare varyansı
+
+823
+00:49:22,679 --> 00:49:24,679
+gösteriyor
+
+824
+00:49:24,679 --> 00:49:26,679
+e üzeri eksi
+
+825
+00:49:26,679 --> 00:49:28,679
+lütfen dikkat burada bir eksi işaret
+
+826
+00:49:28,679 --> 00:49:30,679
+var eksi
+
+827
+00:49:30,679 --> 00:49:32,679
+x i eksi
+
+828
+00:49:32,679 --> 00:49:34,679
+mü
+
+829
+00:49:34,679 --> 00:49:36,679
+kare bölü 2
+
+830
+00:49:36,679 --> 00:49:38,679
+sigma kare
+
+831
+00:49:38,679 --> 00:49:40,679
+bu formülde bu değerleri
+
+832
+00:49:40,679 --> 00:49:42,679
+yerine yazarak
+
+833
+00:49:42,679 --> 00:49:44,679
+yani nedir
+
+834
+00:49:44,679 --> 00:49:46,679
+var yansı ve
+
+835
+00:49:46,679 --> 00:49:48,679
+benim aradığım x değerini
+
+836
+00:49:48,679 --> 00:49:50,679
+yerine yazarak
+
+837
+00:49:50,679 --> 00:49:52,679
+formülde
+
+838
+00:49:52,679 --> 00:49:54,679
+likelihood probability
+
+839
+00:49:54,679 --> 00:49:56,679
+dediğimiz bir probability
+
+840
+00:49:56,679 --> 00:49:58,679
+hesaplayacağız bu olasılık
+
+841
+00:49:58,679 --> 00:50:00,679
+işte burada 0,0072
+
+842
+00:50:00,679 --> 00:50:02,679
+çıkmış
+
+843
+00:50:02,679 --> 00:50:04,679
+no klası için
+
+844
+00:50:04,679 --> 00:50:06,679
+no klası için
+
+845
+00:50:06,679 --> 00:50:08,679
+tamam aynı işlemi
+
+846
+00:50:08,679 --> 00:50:10,679
+bir de yes sınıfı için yapmam
+
+847
+00:50:10,679 --> 00:50:14,280
+gerekiyor şimdi burada
+
+848
+00:50:14,280 --> 00:50:16,280
+birkaç tane örnek vermiş
+
+849
+00:50:16,280 --> 00:50:20,929
+efendim
+
+850
+00:50:20,929 --> 00:50:22,929
+bu koşullu olasılıkların
+
+851
+00:50:22,929 --> 00:50:24,929
+hesaplanmasıyla ilgili
+
+852
+00:50:24,929 --> 00:50:26,929
+şöyle bakabiliriz
+
+853
+00:50:26,929 --> 00:50:28,929
+hepsine gerek yok ama
+
+854
+00:50:28,929 --> 00:50:30,929
+sadece egzersiz olsun
+
+855
+00:50:30,929 --> 00:50:32,929
+bunlar nasıl hesaplanıyor görelim
+
+856
+00:50:32,929 --> 00:50:34,929
+diye yapılmış bir işlem bu
+
+857
+00:50:34,929 --> 00:50:36,929
+no sınıfı içerisinde
+
+858
+00:50:36,929 --> 00:50:38,929
+refundun yes olma olasılığı
+
+859
+00:50:38,929 --> 00:50:40,929
+ve no olma olasılıklarını yazmış
+
+860
+00:50:40,929 --> 00:50:42,929
+efendim ondan sonra
+
+861
+00:50:42,929 --> 00:50:44,929
+yes sınıfı için
+
+862
+00:50:44,929 --> 00:50:46,929
+aynı şeyi tekrar hesaplamış
+
+863
+00:50:46,929 --> 00:50:48,929
+aslında bizim için sadece
+
+864
+00:50:48,929 --> 00:50:52,210
+sadece
+
+865
+00:50:52,210 --> 00:50:54,210
+refundun no
+
+866
+00:50:54,210 --> 00:50:56,210
+olduğu durum
+
+867
+00:50:56,210 --> 00:50:59,650
+yani şu
+
+868
+00:50:59,650 --> 00:51:01,650
+ve bu
+
+869
+00:51:01,650 --> 00:51:03,650
+gerekiyor
+
+870
+00:51:05,650 --> 00:51:07,650
+şeyde yes sınıfı ve
+
+871
+00:51:07,650 --> 00:51:09,650
+no sınıfı içerisinde refundun no
+
+872
+00:51:09,650 --> 00:51:11,650
+olduğu değerleri bilmem gerekiyor
+
+873
+00:51:11,650 --> 00:51:13,650
+sadece aslına bakarsanız
+
+874
+00:51:13,650 --> 00:51:15,650
+ama hani egzersiz olsun diye bu
+
+875
+00:51:15,650 --> 00:51:17,650
+diğer şeyleri de
+
+876
+00:51:17,650 --> 00:51:19,650
+durumları da
+
+877
+00:51:19,650 --> 00:51:21,650
+hesaplamış
+
+878
+00:51:21,650 --> 00:51:23,650
+sonra
+
+879
+00:51:25,650 --> 00:51:27,650
+class no ve class yes
+
+880
+00:51:27,650 --> 00:51:29,650
+için marital
+
+881
+00:51:29,650 --> 00:51:31,650
+status da divorce da hesaplamam
+
+882
+00:51:31,650 --> 00:51:33,650
+gerekiyor
+
+883
+00:51:33,650 --> 00:51:35,650
+no sınıfı için
+
+884
+00:51:35,650 --> 00:51:37,650
+7 tane sample vardı bunun içerisinde
+
+885
+00:51:37,650 --> 00:51:39,650
+1 tane divorce
+
+886
+00:51:39,650 --> 00:51:41,650
+boşanmış var
+
+887
+00:51:41,650 --> 00:51:43,650
+aynı şey
+
+888
+00:51:43,650 --> 00:51:45,650
+yes sınıfı içinde toplam
+
+889
+00:51:45,650 --> 00:51:47,650
+3 tane sample vardı
+
+890
+00:51:47,650 --> 00:51:49,650
+3'ün içinde 1 tane
+
+891
+00:51:49,650 --> 00:51:51,650
+boşanmış müşteri
+
+892
+00:51:51,650 --> 00:51:53,650
+vardı
+
+893
+00:51:53,650 --> 00:51:55,650
+3. öz niteliğimiz
+
+894
+00:51:55,650 --> 00:51:57,650
+nümerik olan öz nitelik
+
+895
+00:51:57,650 --> 00:51:59,650
+için for taxable
+
+896
+00:51:59,650 --> 00:52:01,650
+income demiş
+
+897
+00:52:01,650 --> 00:52:03,650
+neyi hesaplıyor
+
+898
+00:52:03,650 --> 00:52:05,650
+her sınıf için
+
+899
+00:52:05,650 --> 00:52:07,650
+class no için sample mean ve
+
+900
+00:52:07,650 --> 00:52:09,650
+sample variansı hesaplıyor
+
+901
+00:52:09,650 --> 00:52:11,650
+sonra class yes
+
+902
+00:52:11,650 --> 00:52:13,650
+için aynı şekilde
+
+903
+00:52:13,650 --> 00:52:15,650
+sınıf içi
+
+904
+00:52:15,650 --> 00:52:17,650
+ortalamayı ve
+
+905
+00:52:17,650 --> 00:52:19,650
+variansı hesaplıyor
+
+906
+00:52:19,650 --> 00:52:21,650
+ve
+
+907
+00:52:21,650 --> 00:52:25,119
+sonra bu değerleri
+
+908
+00:52:25,119 --> 00:52:27,119
+değerleri
+
+909
+00:52:27,119 --> 00:52:29,119
+işte bizim
+
+910
+00:52:29,119 --> 00:52:31,119
+formülde yerine
+
+911
+00:52:31,119 --> 00:52:33,119
+yazmamız gerekiyor
+
+912
+00:52:33,119 --> 00:52:35,119
+bir de şunu zaten hesaplamıştık
+
+913
+00:52:35,119 --> 00:52:37,119
+yes sınıfının ve
+
+914
+00:52:37,119 --> 00:52:39,119
+no sınıfının olma
+
+915
+00:52:39,119 --> 00:52:41,119
+olasılıklarını
+
+916
+00:52:41,119 --> 00:52:43,119
+biz bu işlemin
+
+917
+00:52:43,119 --> 00:52:45,119
+sonunda bakacak olursak
+
+918
+00:52:45,119 --> 00:52:57,300
+1
+
+919
+00:52:57,300 --> 00:52:59,300
+2 3 bölü
+
+920
+00:52:59,300 --> 00:53:01,300
+bunları niye yazdı
+
+921
+00:53:01,300 --> 00:53:08,130
+buraya
+
+922
+00:53:08,130 --> 00:53:10,130
+miydi yoktu
+
+923
+00:53:10,130 --> 00:53:14,239
+şuradan bakıyorum bir daha
+
+924
+00:53:14,239 --> 00:53:20,309
+evet bunlar egzersiz olsun diye
+
+925
+00:53:20,309 --> 00:53:22,309
+birkaç farklı şey daha yapmış
+
+926
+00:53:22,309 --> 00:53:24,309
+ama aslında bizim
+
+927
+00:53:24,309 --> 00:53:26,309
+amacımız
+
+928
+00:53:28,309 --> 00:53:30,309
+şurada
+
+929
+00:53:30,309 --> 00:53:32,309
+bu da yine ekstra örnek
+
+930
+00:53:32,309 --> 00:53:34,309
+yine problemden saptı
+
+931
+00:53:34,309 --> 00:53:48,079
+sonuçları yazmamış orada
+
+932
+00:53:48,079 --> 00:53:50,079
+neyse geçtim bunu
+
+933
+00:53:50,079 --> 00:53:52,079
+burada bir başka örnek
+
+934
+00:53:52,079 --> 00:53:54,079
+buraya kadar anlattıklarım anlaşıldı mı
+
+935
+00:53:54,079 --> 00:53:56,079
+arkadaşlar onu bir soralım
+
+936
+00:53:56,079 --> 00:53:58,079
+sorunuz var mıdır
+
+937
+00:53:58,079 --> 00:54:00,079
+evet buyrun
+
+938
+00:54:00,079 --> 00:54:02,079
+hocam bu şey yaparken
+
+939
+00:54:02,079 --> 00:54:04,079
+income ona bakarken dedik ya
+
+940
+00:54:04,079 --> 00:54:06,079
+continuous olduğu için
+
+941
+00:54:06,079 --> 00:54:08,079
+işlem yaptık gaussian
+
+942
+00:54:08,079 --> 00:54:10,079
+evet
+
+943
+00:54:10,079 --> 00:54:12,079
+yaklaşımıyla hocam onun
+
+944
+00:54:12,079 --> 00:54:14,079
+daha böyle gerçekçi bir şey çıkması için
+
+945
+00:54:14,079 --> 00:54:16,079
+çünkü burada mesela 10 tane sample var
+
+946
+00:54:16,079 --> 00:54:18,079
+bir tanesi 120k
+
+947
+00:54:18,079 --> 00:54:20,079
+bir tanesi 125k hani birbirlerine
+
+948
+00:54:20,079 --> 00:54:22,079
+böyle yakın değerler ama
+
+949
+00:54:22,079 --> 00:54:24,079
+bulduğu değer çok küçük
+
+950
+00:54:24,079 --> 00:54:26,079
+doğru
+
+951
+00:54:26,079 --> 00:54:28,079
+çok fazla sample mı olması lazım
+
+952
+00:54:28,079 --> 00:54:30,079
+böyle olasılığın
+
+953
+00:54:30,079 --> 00:54:32,079
+yani continuous'a gerçekten yakın mı olması lazım
+
+954
+00:54:32,079 --> 00:54:34,079
+şey accuracy'sinin fazla olması için
+
+955
+00:54:36,079 --> 00:54:38,079
+ya bir kere
+
+956
+00:54:38,079 --> 00:54:40,079
+sample sayısı kesinlikle orada çok
+
+957
+00:54:40,079 --> 00:54:42,079
+belirleyici biz bu örnekte
+
+958
+00:54:42,079 --> 00:54:44,079
+oldukça az sayıda örnekle gidiyoruz
+
+959
+00:54:44,079 --> 00:54:46,079
+fakat
+
+960
+00:54:46,079 --> 00:54:48,079
+olasılık gerçekten küçük
+
+961
+00:54:48,079 --> 00:54:50,079
+çıkacaktır onun bir şeyi
+
+962
+00:54:50,079 --> 00:54:52,079
+yok ama her iki sınıf içinde aynı
+
+963
+00:54:52,079 --> 00:54:54,079
+durum söz konusu
+
+964
+00:54:54,079 --> 00:54:56,079
+yani burada baktığınızda
+
+965
+00:54:56,079 --> 00:54:58,079
+mesela şurada
+
+966
+00:54:58,079 --> 00:55:00,079
+şurada çarpımları vermiş
+
+967
+00:55:00,079 --> 00:55:02,079
+bakın
+
+968
+00:55:02,079 --> 00:55:04,079
+4 bölü 7
+
+969
+00:55:04,079 --> 00:55:06,079
+1 bölü 7 şu
+
+970
+00:55:06,079 --> 00:55:08,079
+nümerik öz nitelik için
+
+971
+00:55:08,079 --> 00:55:10,079
+az önce hesaplamıştık no sınıfı içinde
+
+972
+00:55:10,079 --> 00:55:12,079
+gelirin 120 bin olmasını
+
+973
+00:55:12,079 --> 00:55:14,079
+gauss dağılımından buldu
+
+974
+00:55:14,079 --> 00:55:16,079
+0,0072
+
+975
+00:55:16,079 --> 00:55:18,079
+ama aynı durum
+
+976
+00:55:18,079 --> 00:55:20,079
+yes sınıfı içinde geçerli
+
+977
+00:55:20,079 --> 00:55:22,079
+yani her iki tarafta da
+
+978
+00:55:22,079 --> 00:55:24,079
+aslında her iki
+
+979
+00:55:24,079 --> 00:55:26,079
+olasılığı hesaplamak için
+
+980
+00:55:26,079 --> 00:55:28,079
+olarken de gauss dağılımından
+
+981
+00:55:28,079 --> 00:55:30,079
+yararlanıyoruz iki tarafta da o sayı
+
+982
+00:55:30,079 --> 00:55:32,079
+oldukça küçük bu mesela
+
+983
+00:55:32,079 --> 00:55:34,079
+belirgin bir şekilde daha
+
+984
+00:55:34,079 --> 00:55:36,079
+küçük bir sayı
+
+985
+00:55:36,079 --> 00:55:38,079
+tamam
+
+986
+00:55:38,079 --> 00:55:40,079
+yani hani doğrudan o şeyi sayıyı
+
+987
+00:55:40,079 --> 00:55:42,079
+aşağıya çekiyor mu diye düşünüyorsunuz
+
+988
+00:55:42,079 --> 00:55:44,079
+değil mi bu kadar küçük bir sayının
+
+989
+00:55:44,079 --> 00:55:46,079
+ama dediğim gibi iki tarafta
+
+990
+00:55:46,079 --> 00:55:48,079
+da benzer bir işlem yapıyoruz
+
+991
+00:55:48,079 --> 00:55:50,079
+iki tarafta da likelihood
+
+992
+00:55:50,079 --> 00:55:52,079
+probability'den faydalanıyoruz
+
+993
+00:55:52,079 --> 00:55:54,079
+bu likelihood probability
+
+994
+00:55:54,079 --> 00:55:56,079
+biraz şey yani hani
+
+995
+00:55:56,079 --> 00:55:58,079
+yazdığınız zaman
+
+996
+00:55:58,079 --> 00:56:00,079
+biraz okuyun likelihood probability
+
+997
+00:56:00,079 --> 00:56:02,079
+oldu mu
+
+998
+00:56:02,079 --> 00:56:04,079
+ben bir parça onu okumuştum
+
+999
+00:56:04,079 --> 00:56:06,079
+hani bununla ilişkilendirerek böyle
+
+1000
+00:56:06,079 --> 00:56:08,079
+buradan gitmek
+
+1001
+00:56:08,079 --> 00:56:10,079
+işte naive bias solution
+
+1002
+00:56:10,079 --> 00:56:12,079
+dediğimiz solution böyle bir şey
+
+1003
+00:56:12,079 --> 00:56:14,079
+sonuç
+
+1004
+00:56:14,079 --> 00:56:16,079
+şeye geldiğimizde
+
+1005
+00:56:16,079 --> 00:56:23,039
+şurada bir örneğe gelmiştik evet
+
+1006
+00:56:23,039 --> 00:56:25,039
+burada şöyle bir
+
+1007
+00:56:25,039 --> 00:56:27,039
+yani buraya kadar sorun yok
+
+1008
+00:56:27,039 --> 00:56:29,039
+sanıyorum aslında şeyi yazmadı
+
+1009
+00:56:29,039 --> 00:56:31,039
+galiba en son durumda
+
+1010
+00:56:31,039 --> 00:56:33,039
+ben size yazayım
+
+1011
+00:56:33,039 --> 00:56:35,039
+şurayı
+
+1012
+00:56:35,039 --> 00:56:37,039
+doldurmadık henüz dolduralım onu
+
+1013
+00:56:39,039 --> 00:56:41,039
+bizim amacımız
+
+1014
+00:56:41,039 --> 00:56:43,039
+bize verilen
+
+1015
+00:56:43,039 --> 00:56:45,039
+test sample'ının
+
+1016
+00:56:45,039 --> 00:56:47,039
+yes sınıfına mı ait
+
+1017
+00:56:47,039 --> 00:56:49,039
+no sınıfına mı ait
+
+1018
+00:56:49,039 --> 00:56:51,039
+bunu
+
+1019
+00:56:51,039 --> 00:56:53,039
+bulmaktı verilen
+
+1020
+00:56:53,039 --> 00:56:56,480
+x sample'ı için
+
+1021
+00:56:56,480 --> 00:56:58,480
+bunun için işte
+
+1022
+00:56:58,480 --> 00:57:00,480
+yes sınıfı içerisinde
+
+1023
+00:57:00,480 --> 00:57:02,480
+x'in
+
+1024
+00:57:02,480 --> 00:57:04,480
+olma olasılığı dedik
+
+1025
+00:57:04,480 --> 00:57:06,480
+ve
+
+1026
+00:57:06,480 --> 00:57:08,480
+evet sınıfının olma olasılığı
+
+1027
+00:57:08,480 --> 00:57:10,480
+ve px dedik
+
+1028
+00:57:10,480 --> 00:57:12,480
+burada da
+
+1029
+00:57:12,480 --> 00:57:17,239
+no sınıfı
+
+1030
+00:57:17,239 --> 00:57:19,239
+içinde x'in
+
+1031
+00:57:19,239 --> 00:57:21,239
+olma olasılığı no sınıfının
+
+1032
+00:57:21,239 --> 00:57:23,239
+olma olasılığı bölü px dedik
+
+1033
+00:57:23,239 --> 00:57:25,239
+biz
+
+1034
+00:57:25,239 --> 00:57:27,239
+yes sınıfının
+
+1035
+00:57:27,239 --> 00:57:29,239
+olma olasılığını
+
+1036
+00:57:29,239 --> 00:57:31,239
+yukarıda yazdık
+
+1037
+00:57:31,239 --> 00:57:33,239
+3 bölü 10
+
+1038
+00:57:33,239 --> 00:57:35,239
+no sınıfının olma olasılığı
+
+1039
+00:57:35,239 --> 00:57:37,239
+7 bölü 10
+
+1040
+00:57:37,239 --> 00:57:39,239
+bu taraftaki olasılığı da
+
+1041
+00:57:39,239 --> 00:57:41,239
+3 tane koşullu olasılığın
+
+1042
+00:57:41,239 --> 00:57:43,239
+çarpımından hesaplıyoruz
+
+1043
+00:57:43,239 --> 00:57:45,239
+dedik aynı şekilde
+
+1044
+00:57:45,239 --> 00:57:47,239
+no sınıfı içinde bu hesaplamayı
+
+1045
+00:57:47,239 --> 00:57:49,239
+böyle yapıyoruz
+
+1046
+00:57:49,239 --> 00:57:51,239
+şu iki değerin karşılaştırılmasında
+
+1047
+00:57:51,239 --> 00:57:53,239
+yani ben bunları
+
+1048
+00:57:53,239 --> 00:57:55,239
+karşılaştırarak bir karar
+
+1049
+00:57:55,239 --> 00:57:57,239
+vereceğim dedim hangi sınıfa ait
+
+1050
+00:57:57,239 --> 00:57:59,239
+olduğuna yani hangisi büyükse
+
+1051
+00:57:59,239 --> 00:58:01,239
+bu olasılıkların
+
+1052
+00:58:01,239 --> 00:58:03,239
+o sınıfa aittir diyeceğim
+
+1053
+00:58:03,239 --> 00:58:05,239
+o zaman diyor ki
+
+1054
+00:58:05,239 --> 00:58:07,239
+bu iki olasılığı hesaplarken
+
+1055
+00:58:07,239 --> 00:58:09,239
+her iki olasılıkta da
+
+1056
+00:58:09,239 --> 00:58:11,239
+kesrin altında
+
+1057
+00:58:11,239 --> 00:58:13,239
+px var diyor o zaman
+
+1058
+00:58:13,239 --> 00:58:15,239
+ben niye px'i tekrar hesaplıyorum
+
+1059
+00:58:15,239 --> 00:58:17,239
+ki yani
+
+1060
+00:58:17,239 --> 00:58:19,239
+bu sonucu değiştirmeyecek
+
+1061
+00:58:19,239 --> 00:58:21,239
+daha az işlem yapmak adına
+
+1062
+00:58:21,239 --> 00:58:23,239
+söylüyoruz bunu
+
+1063
+00:58:23,239 --> 00:58:25,239
+şuradaki px değerini
+
+1064
+00:58:25,239 --> 00:58:27,239
+kesrin altında yer alan px değeri
+
+1065
+00:58:27,239 --> 00:58:29,239
+zaten her iki
+
+1066
+00:58:29,239 --> 00:58:31,239
+olasılıkta da var o zaman
+
+1067
+00:58:31,239 --> 00:58:33,239
+ben sadece kesrin üstündeki
+
+1068
+00:58:33,239 --> 00:58:35,239
+değer çarpımı
+
+1069
+00:58:35,239 --> 00:58:37,239
+hesaplayarak
+
+1070
+00:58:37,239 --> 00:58:39,239
+şurayı hesaplayarak
+
+1071
+00:58:39,239 --> 00:58:41,239
+sonuca karar verebilirim diyorum
+
+1072
+00:58:41,239 --> 00:58:43,239
+ve hesaplamada da
+
+1073
+00:58:43,239 --> 00:58:45,239
+sadece bu bölümü hesaplıyorum
+
+1074
+00:58:45,239 --> 00:58:47,239
+ve sonuçları karşılaştırıyorum
+
+1075
+00:58:47,239 --> 00:58:49,239
+hangisi büyük hangisi küçük
+
+1076
+00:58:49,239 --> 00:58:51,239
+hangisi büyükse class label olarak da
+
+1077
+00:58:51,239 --> 00:58:53,239
+onu
+
+1078
+00:58:53,239 --> 00:58:55,239
+seçiyorum
+
+1079
+00:58:55,239 --> 00:58:57,239
+bu değerleri yerine yazdıktan sonra
+
+1080
+00:58:57,239 --> 00:58:59,239
+şunları da
+
+1081
+00:58:59,239 --> 00:59:01,239
+neyse yazayım mı buraya
+
+1082
+00:59:01,239 --> 00:59:03,239
+şunu yazarken
+
+1083
+00:59:03,239 --> 00:59:05,239
+yes sınıfı içerisinde
+
+1084
+00:59:05,239 --> 00:59:07,239
+px'i hesaplarken
+
+1085
+00:59:07,239 --> 00:59:09,239
+üç tane olasılık
+
+1086
+00:59:09,239 --> 00:59:11,239
+çarpımı şeklinde
+
+1087
+00:59:11,239 --> 00:59:13,239
+yazacağız demiştik
+
+1088
+00:59:13,239 --> 00:59:15,239
+buraya yazalım onu da
+
+1089
+00:59:15,239 --> 00:59:17,239
+çünkü sanki slide'da bunun çözümünü
+
+1090
+00:59:17,239 --> 00:59:19,239
+görmedim
+
+1091
+00:59:19,239 --> 00:59:21,239
+daha önce görmüştüm
+
+1092
+00:59:21,239 --> 00:59:23,239
+şimdi niye görmedim bilemedim
+
+1093
+00:59:23,239 --> 00:59:25,239
+yes sınıfı içerisinde
+
+1094
+00:59:25,239 --> 00:59:28,960
+px'i hesaplarken
+
+1095
+00:59:28,960 --> 00:59:30,960
+bizim elimizdeki
+
+1096
+00:59:30,960 --> 00:59:32,960
+örnekte
+
+1097
+00:59:32,960 --> 00:59:34,960
+verilen örnekte
+
+1098
+00:59:34,960 --> 00:59:36,960
+refund'u
+
+1099
+00:59:36,960 --> 00:59:38,960
+no'ydu galiba
+
+1100
+00:59:38,960 --> 00:59:40,960
+bakıyorum
+
+1101
+00:59:40,960 --> 00:59:42,960
+hemen örnek sample'ımıza bakıyoruz
+
+1102
+00:59:42,960 --> 00:59:44,960
+no'ydu evet
+
+1103
+01:00:02,440 --> 01:00:04,440
+yes sınıfı içinde
+
+1104
+01:00:04,440 --> 01:00:06,440
+bir de bir tane daha
+
+1105
+01:00:06,440 --> 01:00:08,440
+olasılık var çarpımı
+
+1106
+01:00:08,440 --> 01:00:10,440
+p income'ı
+
+1107
+01:00:10,440 --> 01:00:12,440
+120.000
+
+1108
+01:00:12,440 --> 01:00:14,440
+yes sınıfı içinde
+
+1109
+01:00:14,440 --> 01:00:16,440
+bu olasılıkları yazarken
+
+1110
+01:00:16,440 --> 01:00:18,440
+yes sınıfında
+
+1111
+01:00:18,440 --> 01:00:20,440
+üç tane sample
+
+1112
+01:00:20,440 --> 01:00:22,440
+var yes sınıfı içerisinde
+
+1113
+01:00:22,440 --> 01:00:24,440
+refund'u
+
+1114
+01:00:24,440 --> 01:00:26,440
+no olan
+
+1115
+01:00:26,440 --> 01:00:32,849
+pardon
+
+1116
+01:00:32,849 --> 01:00:40,260
+3 bölü 3
+
+1117
+01:00:40,260 --> 01:00:42,260
+yes sınıfı
+
+1118
+01:00:42,260 --> 01:00:44,260
+içerisinde
+
+1119
+01:00:44,260 --> 01:00:50,679
+divorced olan
+
+1120
+01:00:50,679 --> 01:00:52,679
+1 bölü 3
+
+1121
+01:00:52,679 --> 01:00:54,679
+çarpı az önce hesapladığımız
+
+1122
+01:00:54,679 --> 01:00:56,679
+yes sınıfı için
+
+1123
+01:00:56,679 --> 01:00:58,679
+gauss dağılımında
+
+1124
+01:00:58,679 --> 01:01:00,679
+bulduğumuz
+
+1125
+01:01:00,679 --> 01:01:02,679
+değer
+
+1126
+01:01:02,679 --> 01:01:06,469
+0.0
+
+1127
+01:01:06,469 --> 01:01:08,469
+72
+
+1128
+01:01:08,469 --> 01:01:10,469
+burada çarpmış işte üçünü
+
+1129
+01:01:10,469 --> 01:01:12,469
+bunların çarpımının sonucu
+
+1130
+01:01:12,469 --> 01:01:14,469
+şu çıkıyor diyor
+
+1131
+01:01:14,469 --> 01:01:16,469
+evet az önce göremediğim şeyi
+
+1132
+01:01:16,469 --> 01:01:18,469
+sonucu şimdi burada gördüm
+
+1133
+01:01:18,469 --> 01:01:20,469
+bu üçünün çarpımı da
+
+1134
+01:01:20,469 --> 01:01:22,469
+şurada
+
+1135
+01:01:22,469 --> 01:01:24,469
+yes sınıfı için
+
+1136
+01:01:24,469 --> 01:01:26,469
+burası no sınıfı için
+
+1137
+01:01:26,469 --> 01:01:28,469
+burada bu çarpımları
+
+1138
+01:01:28,469 --> 01:01:30,469
+vermiş zaten
+
+1139
+01:01:30,469 --> 01:01:32,469
+sonuçta bunları ben
+
+1140
+01:01:32,469 --> 01:01:34,469
+sadece
+
+1141
+01:01:34,469 --> 01:01:36,469
+şurada gördüğümüz gibi
+
+1142
+01:01:36,469 --> 01:01:38,469
+sınıfların olma olasılıklarıyla
+
+1143
+01:01:38,469 --> 01:01:40,469
+çarparak karar
+
+1144
+01:01:40,469 --> 01:01:42,469
+verebileceğim zaten buradaki
+
+1145
+01:01:42,469 --> 01:01:44,469
+değerlere baktığımız zaman
+
+1146
+01:01:44,469 --> 01:01:46,469
+yes sınıfı çok küçük çıkıyor
+
+1147
+01:01:46,469 --> 01:01:48,469
+no sınıfın olma olasılığı
+
+1148
+01:01:48,469 --> 01:01:50,469
+daha büyük çıkıyor ve ben
+
+1149
+01:01:50,469 --> 01:01:52,469
+output label
+
+1150
+01:01:52,469 --> 01:01:54,469
+olarak yani class label olarak
+
+1151
+01:01:54,469 --> 01:01:56,469
+class no kararını
+
+1152
+01:01:56,469 --> 01:01:58,469
+veriyorum bu çarpma işleminin
+
+1153
+01:01:58,469 --> 01:02:00,469
+sonucunda
+
+1154
+01:02:00,469 --> 01:02:02,469
+p
+
+1155
+01:02:02,469 --> 01:02:04,469
+verilen
+
+1156
+01:02:04,469 --> 01:02:06,469
+x test
+
+1157
+01:02:06,469 --> 01:02:08,469
+örneğin
+
+1158
+01:02:08,469 --> 01:02:10,469
+no sınıfına ait olma olasılığı
+
+1159
+01:02:10,469 --> 01:02:12,469
+büyük
+
+1160
+01:02:12,469 --> 01:02:14,469
+yes sınıfına ait olma
+
+1161
+01:02:14,469 --> 01:02:16,469
+olasılığı olduğu için
+
+1162
+01:02:16,469 --> 01:02:18,469
+bu karşılaştırmayı yaparak
+
+1163
+01:02:18,469 --> 01:02:20,469
+şeye
+
+1164
+01:02:20,469 --> 01:02:22,469
+output class'a karar vermiş oluyoruz
+
+1165
+01:02:22,469 --> 01:02:24,469
+fakat
+
+1166
+01:02:24,469 --> 01:02:26,469
+bu hesapladığımız probability
+
+1167
+01:02:26,469 --> 01:02:28,469
+bu sınıfın
+
+1168
+01:02:28,469 --> 01:02:30,469
+olma olasılığı demek değil bakın
+
+1169
+01:02:30,469 --> 01:02:32,469
+biz sadece burada karşılaştırma
+
+1170
+01:02:32,469 --> 01:02:34,469
+için bunu kullanıyoruz
+
+1171
+01:02:34,469 --> 01:02:36,469
+ona dikkat çünkü ne yaptık
+
+1172
+01:02:36,469 --> 01:02:38,469
+şeyi hesaplamadık
+
+1173
+01:02:38,469 --> 01:02:40,469
+biz
+
+1174
+01:02:40,469 --> 01:02:42,469
+kesirin altını hesaplamadık
+
+1175
+01:02:42,469 --> 01:02:45,780
+evet
+
+1176
+01:02:45,780 --> 01:02:47,780
+buraya kadar
+
+1177
+01:02:47,780 --> 01:02:49,780
+anlaşıldı mı acaba
+
+1178
+01:02:49,780 --> 01:02:51,780
+anlattıklarımız
+
+1179
+01:02:51,780 --> 01:02:53,780
+bir ara vereceğim
+
+1180
+01:02:53,780 --> 01:02:55,780
+sonra
+
+1181
+01:02:55,780 --> 01:02:57,780
+değişik durumlar
+
+1182
+01:02:57,780 --> 01:02:59,780
+için bir iki
+
+1183
+01:02:59,780 --> 01:03:01,780
+örnek daha çözeceğim
+
+1184
+01:03:01,780 --> 01:03:11,400
+var mı sorunuz peki
+
+1185
+01:03:11,400 --> 01:03:13,400
+eğer sorunuz
+
+1186
+01:03:13,400 --> 01:03:15,400
+yoksa 10 dakika
+
+1187
+01:03:15,400 --> 01:03:17,400
+ara diyelim
+
+1188
+01:03:17,400 --> 01:03:19,400
+eee
+
+1189
+01:03:19,400 --> 01:03:21,400
+aklınıza soru gelirse chatten
+
+1190
+01:03:21,400 --> 01:14:09,029
+yazabilirsiniz
+
+1191
+01:14:09,029 --> 01:14:11,029
+evet arkadaşlar ara bitti
+
+1192
+01:14:11,029 --> 01:14:13,029
+derse devam edebiliriz
+
+1193
+01:14:13,029 --> 01:14:17,329
+şu an derste
+
+1194
+01:14:17,329 --> 01:14:19,329
+47 kişi görünüyor
+
+1195
+01:14:19,329 --> 01:14:21,329
+acaba kimler bilgisayarının başında
+
+1196
+01:14:21,329 --> 01:14:23,329
+evet lütfen
+
+1197
+01:14:23,329 --> 01:14:25,329
+elleri görelim
+
+1198
+01:14:25,329 --> 01:14:27,329
+bakayım kimler burada
+
+1199
+01:14:27,329 --> 01:14:31,760
+21
+
+1200
+01:14:31,760 --> 01:14:33,760
+daha yarıyı bulamadık he
+
+1201
+01:14:33,760 --> 01:14:35,760
+evet tamam
+
+1202
+01:14:35,760 --> 01:14:37,760
+evet yarıyı geçti
+
+1203
+01:14:37,760 --> 01:14:39,760
+28 kişi buradayım
+
+1204
+01:14:39,760 --> 01:14:41,760
+dedi
+
+1205
+01:14:41,760 --> 01:14:43,760
+28 29
+
+1206
+01:14:43,760 --> 01:14:45,760
+peki arkadaşlar
+
+1207
+01:14:45,760 --> 01:14:47,760
+teşekkür ediyorum
+
+1208
+01:14:47,760 --> 01:14:49,760
+bilgisayarın başında olan
+
+1209
+01:14:49,760 --> 01:14:51,760
+arkadaşlara beni dinledikleri
+
+1210
+01:14:51,760 --> 01:14:53,760
+için
+
+1211
+01:14:53,760 --> 01:14:55,760
+şimdi
+
+1212
+01:14:55,760 --> 01:14:57,760
+size bir örnek
+
+1213
+01:14:57,760 --> 01:14:59,760
+yapayım diyorum
+
+1214
+01:14:59,760 --> 01:15:15,199
+örneğimiz
+
+1215
+01:15:15,199 --> 01:15:17,199
+açıyorum
+
+1216
+01:15:17,199 --> 01:15:19,199
+whiteboard da çözeceğim
+
+1217
+01:15:19,199 --> 01:15:22,869
+örneği sizlerde
+
+1218
+01:15:22,869 --> 01:15:24,869
+ekranımı
+
+1219
+01:15:24,869 --> 01:15:26,869
+paylaşıyorum
+
+1220
+01:15:26,869 --> 01:15:28,869
+evet bu örnekte
+
+1221
+01:15:28,869 --> 01:15:30,869
+iki tane problem birden
+
+1222
+01:15:30,869 --> 01:15:32,869
+var şöyle
+
+1223
+01:15:32,869 --> 01:15:34,869
+çok basit bir data set vereceğim
+
+1224
+01:15:34,869 --> 01:15:36,869
+yani bu kadar da olmaz
+
+1225
+01:15:36,869 --> 01:15:38,869
+diyeceksiniz hani basit hızlıca görelim
+
+1226
+01:15:38,869 --> 01:15:40,869
+diye
+
+1227
+01:15:40,869 --> 01:15:42,869
+bu iki tane problem
+
+1228
+01:15:42,869 --> 01:15:44,869
+biri nümerik data olması
+
+1229
+01:15:44,869 --> 01:15:46,869
+içinde nümerik data ile
+
+1230
+01:15:46,869 --> 01:15:48,869
+nasıl uğraşıyoruz nasıl çözüm
+
+1231
+01:15:48,869 --> 01:15:50,869
+yapıyoruz hem onu görelim diye
+
+1232
+01:15:50,869 --> 01:15:52,869
+hem de
+
+1233
+01:15:52,869 --> 01:15:54,869
+bir başka
+
+1234
+01:15:54,869 --> 01:15:56,869
+sorun daha var
+
+1235
+01:15:56,869 --> 01:15:58,869
+çözmemiz gereken bakalım
+
+1236
+01:15:58,869 --> 01:16:03,649
+görünce
+
+1237
+01:16:03,649 --> 01:16:05,649
+ne diyeceksiniz sorunun ne olduğunu
+
+1238
+01:16:05,649 --> 01:16:07,649
+ben size soracağım ben söylemeyeceğim
+
+1239
+01:16:07,649 --> 01:16:13,010
+güzel
+
+1240
+01:16:13,010 --> 01:16:15,010
+bir naive wise example
+
+1241
+01:16:15,010 --> 01:16:19,960
+diyelim elimde
+
+1242
+01:16:19,960 --> 01:16:21,960
+tableti tutup yazmak çok zor
+
+1243
+01:16:21,960 --> 01:16:23,960
+naive
+
+1244
+01:16:23,960 --> 01:16:28,000
+wise
+
+1245
+01:16:28,000 --> 01:16:31,439
+example
+
+1246
+01:16:31,439 --> 01:16:33,439
+data setinde
+
+1247
+01:16:33,439 --> 01:16:35,439
+yaş var
+
+1248
+01:16:35,439 --> 01:16:37,439
+bu şey otomobillerin
+
+1249
+01:16:37,439 --> 01:16:39,439
+yaşı
+
+1250
+01:16:39,439 --> 01:16:41,439
+otomobilin türü
+
+1251
+01:16:41,439 --> 01:16:43,439
+car type
+
+1252
+01:16:43,439 --> 01:16:45,439
+ve
+
+1253
+01:16:45,439 --> 01:16:47,439
+bu otomobilin
+
+1254
+01:16:47,439 --> 01:16:49,439
+çalınma riski
+
+1255
+01:16:49,439 --> 01:16:51,439
+risk
+
+1256
+01:16:51,439 --> 01:16:53,439
+risk diyelim
+
+1257
+01:16:53,439 --> 01:16:57,840
+üç tane
+
+1258
+01:16:57,840 --> 01:16:59,840
+stum var
+
+1259
+01:16:59,840 --> 01:17:01,840
+ikisi input
+
+1260
+01:17:01,840 --> 01:17:03,840
+variable
+
+1261
+01:17:03,840 --> 01:17:05,840
+bir output variable
+
+1262
+01:17:05,840 --> 01:17:07,840
+data setimizde
+
+1263
+01:17:07,840 --> 01:17:09,840
+sample lar
+
+1264
+01:17:09,840 --> 01:17:13,760
+25
+
+1265
+01:17:13,760 --> 01:17:15,760
+yaşında
+
+1266
+01:17:15,760 --> 01:17:17,760
+spor araba
+
+1267
+01:17:17,760 --> 01:17:19,760
+çalınma
+
+1268
+01:17:19,760 --> 01:17:21,760
+riski düşük
+
+1269
+01:17:21,760 --> 01:17:23,760
+20 yaşında
+
+1270
+01:17:23,760 --> 01:17:25,760
+vintage
+
+1271
+01:17:25,760 --> 01:17:27,760
+araba
+
+1272
+01:17:27,760 --> 01:17:29,760
+çalınma riski
+
+1273
+01:17:29,760 --> 01:17:31,760
+yüksek
+
+1274
+01:17:31,760 --> 01:17:35,270
+25
+
+1275
+01:17:35,270 --> 01:17:37,270
+sports
+
+1276
+01:17:37,270 --> 01:17:40,869
+low
+
+1277
+01:17:40,869 --> 01:17:44,500
+35
+
+1278
+01:17:44,500 --> 01:17:48,000
+4. sample
+
+1279
+01:17:48,000 --> 01:17:54,710
+20
+
+1280
+01:17:54,710 --> 01:18:05,989
+sports
+
+1281
+01:18:05,989 --> 01:18:09,430
+25
+
+1282
+01:18:09,430 --> 01:18:11,430
+suv
+
+1283
+01:18:11,430 --> 01:18:13,430
+ay
+
+1284
+01:18:13,430 --> 01:18:15,430
+2 4 6 tane
+
+1285
+01:18:15,430 --> 01:18:17,430
+sample var son derece basit
+
+1286
+01:18:17,430 --> 01:18:19,430
+böyle hani elle çözeceğimiz
+
+1287
+01:18:19,430 --> 01:18:21,430
+bir örnek
+
+1288
+01:18:21,430 --> 01:18:23,430
+diyor ki burada
+
+1289
+01:18:23,430 --> 01:18:25,430
+bana bir test sample
+
+1290
+01:18:25,430 --> 01:18:27,430
+train data setimiz tabi doğal olarak
+
+1291
+01:18:27,430 --> 01:18:29,430
+bize bir de test sample'ı
+
+1292
+01:18:29,430 --> 01:18:33,409
+verilmiş
+
+1293
+01:18:33,409 --> 01:18:35,409
+test sample'ı üzerinden
+
+1294
+01:18:35,409 --> 01:18:37,409
+hep çalışıyoruz dedik yani orada verilen
+
+1295
+01:18:39,409 --> 01:18:41,409
+öz niteliğin aldığı değerlere göre
+
+1296
+01:18:41,409 --> 01:18:43,409
+ben şeyleri hesaplıyorum
+
+1297
+01:18:43,409 --> 01:18:45,409
+koşullu
+
+1298
+01:18:45,409 --> 01:18:47,409
+olasılıkları hesaplıyorum test sample'ı
+
+1299
+01:18:47,409 --> 01:18:49,409
+için diyor ki
+
+1300
+01:18:49,409 --> 01:18:51,409
+x test
+
+1301
+01:18:51,409 --> 01:18:53,409
+sample'ı diyelim
+
+1302
+01:18:53,409 --> 01:18:55,409
+age
+
+1303
+01:18:55,409 --> 01:19:00,739
+23
+
+1304
+01:19:00,739 --> 01:19:02,739
+ve car type'ı
+
+1305
+01:19:02,739 --> 01:19:10,020
+ııı
+
+1306
+01:19:10,020 --> 01:19:12,020
+track
+
+1307
+01:19:12,020 --> 01:19:14,020
+için
+
+1308
+01:19:14,020 --> 01:19:16,020
+ııı
+
+1309
+01:19:16,020 --> 01:19:18,020
+class label'ı ne olur diye soruyor
+
+1310
+01:19:18,020 --> 01:19:27,029
+soru bu
+
+1311
+01:19:27,029 --> 01:19:29,029
+bir yorum yapar mısınız
+
+1312
+01:19:29,029 --> 01:19:31,029
+muhakkak aklınıza
+
+1313
+01:19:31,029 --> 01:19:33,029
+geliyordur yani
+
+1314
+01:19:33,029 --> 01:19:35,029
+hocam bu ne falan diye
+
+1315
+01:19:35,029 --> 01:19:37,029
+sormayacak mısınız
+
+1316
+01:19:37,029 --> 01:19:40,819
+hocam verilen tiplerde track yok
+
+1317
+01:19:40,819 --> 01:19:42,819
+değil mi teşekkür
+
+1318
+01:19:42,819 --> 01:19:44,819
+ediyorum işte sorun
+
+1319
+01:19:44,819 --> 01:19:46,819
+ikinci sorun bu evet
+
+1320
+01:19:46,819 --> 01:19:48,819
+verilen araba
+
+1321
+01:19:48,819 --> 01:19:50,819
+türlerinde hiç
+
+1322
+01:19:50,819 --> 01:19:52,819
+kamyon olmamasına rağmen
+
+1323
+01:19:52,819 --> 01:19:54,819
+bu aracı bu araç türünü
+
+1324
+01:19:54,819 --> 01:19:56,819
+test örneğine koyduk şimdi nasıl
+
+1325
+01:19:56,819 --> 01:19:58,819
+işlem yapacağız
+
+1326
+01:19:58,819 --> 01:20:02,899
+buna bakalım
+
+1327
+01:20:02,899 --> 01:20:08,449
+evet iki tane
+
+1328
+01:20:08,449 --> 01:20:10,449
+yine sınıfımız var bu sınıfların
+
+1329
+01:20:10,449 --> 01:20:12,449
+olma olasılıklarını
+
+1330
+01:20:12,449 --> 01:20:14,449
+hesaplayacağım
+
+1331
+01:20:14,449 --> 01:20:16,449
+şöyle ilerleyelim
+
+1332
+01:20:16,449 --> 01:20:18,449
+önce
+
+1333
+01:20:18,449 --> 01:20:20,449
+numeric data için
+
+1334
+01:20:20,449 --> 01:20:22,449
+bakalım numeric data
+
+1335
+01:20:22,449 --> 01:20:24,449
+ııı
+
+1336
+01:20:24,449 --> 01:20:28,439
+elimizde
+
+1337
+01:20:28,439 --> 01:20:31,939
+yaş öz niteliği var
+
+1338
+01:20:31,939 --> 01:20:33,939
+bu
+
+1339
+01:20:33,939 --> 01:20:35,939
+yaş öz niteliğini
+
+1340
+01:20:35,939 --> 01:20:37,939
+ııı
+
+1341
+01:20:37,939 --> 01:20:39,939
+low class ve high class
+
+1342
+01:20:39,939 --> 01:20:41,939
+sample'ları için gruplayıp
+
+1343
+01:20:41,939 --> 01:20:43,939
+baktığımızda
+
+1344
+01:20:43,939 --> 01:20:48,399
+ııı
+
+1345
+01:20:48,399 --> 01:20:52,390
+low için
+
+1346
+01:20:52,390 --> 01:20:54,390
+iki tane araç var
+
+1347
+01:20:54,390 --> 01:20:56,390
+25 25
+
+1348
+01:20:56,390 --> 01:20:58,390
+high class da
+
+1349
+01:20:58,390 --> 01:21:00,390
+ise
+
+1350
+01:21:00,390 --> 01:21:02,390
+iki tane sample var
+
+1351
+01:21:02,390 --> 01:21:04,390
+araçların yaşları 20
+
+1352
+01:21:04,390 --> 01:21:06,390
+40 20
+
+1353
+01:21:06,390 --> 01:21:08,390
+45
+
+1354
+01:21:08,390 --> 01:21:10,390
+20 25
+
+1355
+01:21:10,390 --> 01:21:12,390
+diye gidiyor
+
+1356
+01:21:12,390 --> 01:21:14,390
+dört tane bu grupta var
+
+1357
+01:21:14,390 --> 01:21:16,390
+iki tane burada var
+
+1358
+01:21:16,390 --> 01:21:18,390
+bunlar üzerinden ben önce neyi
+
+1359
+01:21:18,390 --> 01:21:20,390
+hesaplıyorum işte
+
+1360
+01:21:20,390 --> 01:21:22,390
+low class için
+
+1361
+01:21:22,390 --> 01:21:24,390
+ııı ortalama
+
+1362
+01:21:24,390 --> 01:21:26,390
+yaş
+
+1363
+01:21:26,390 --> 01:21:28,390
+mean value for low class
+
+1364
+01:21:28,390 --> 01:21:30,390
+low class için
+
+1365
+01:21:30,390 --> 01:21:32,390
+25
+
+1366
+01:21:32,390 --> 01:21:35,890
+high class için
+
+1367
+01:21:35,890 --> 01:21:37,890
+mean value
+
+1368
+01:21:37,890 --> 01:21:39,890
+27.5'miş
+
+1369
+01:21:39,890 --> 01:21:44,039
+ııı ve
+
+1370
+01:21:44,039 --> 01:21:46,039
+bunların tabi bir de standart
+
+1371
+01:21:46,039 --> 01:21:48,039
+sapmalarını hesaplayacağım
+
+1372
+01:21:48,039 --> 01:21:50,039
+bu sigma
+
+1373
+01:21:50,039 --> 01:21:52,039
+l değeri
+
+1374
+01:21:52,039 --> 01:21:54,039
+ııı
+
+1375
+01:21:54,039 --> 01:21:56,039
+low class için
+
+1376
+01:21:56,039 --> 01:22:00,180
+neyi söyleyin
+
+1377
+01:22:00,180 --> 01:22:05,279
+iki tane sample var ikisi de
+
+1378
+01:22:05,279 --> 01:22:07,279
+ortalama değeri eşit
+
+1379
+01:22:07,279 --> 01:22:09,279
+standart sapması 0
+
+1380
+01:22:09,279 --> 01:22:11,279
+yani gerçek hayatta bir örnekte
+
+1381
+01:22:11,279 --> 01:22:13,279
+bu karşımıza çıkar mıydı
+
+1382
+01:22:13,279 --> 01:22:15,279
+çıkmazdı
+
+1383
+01:22:15,279 --> 01:22:17,279
+bu örnek biraz sığ bir örnek
+
+1384
+01:22:17,279 --> 01:22:19,279
+olduğu için çıktı
+
+1385
+01:22:19,279 --> 01:22:21,279
+onlattı 31'miş
+
+1386
+01:22:21,279 --> 01:22:23,279
+sigma değeri
+
+1387
+01:22:23,279 --> 01:22:25,279
+ııı
+
+1388
+01:22:25,279 --> 01:22:27,279
+bu değerleri yerine yazarak
+
+1389
+01:22:27,279 --> 01:22:29,279
+ben neyi bulmaya çalışacağım
+
+1390
+01:22:29,279 --> 01:22:31,279
+yaş öz niteliği için
+
+1391
+01:22:31,279 --> 01:22:33,279
+ııı bir
+
+1392
+01:22:33,279 --> 01:22:35,279
+ııı age
+
+1393
+01:22:35,279 --> 01:22:37,279
+test örneğinde
+
+1394
+01:22:37,279 --> 01:22:39,279
+23 yaşındaki bir aracın
+
+1395
+01:22:39,279 --> 01:22:41,279
+ııı çalınma riskini
+
+1396
+01:22:41,279 --> 01:22:43,279
+sorduğu için
+
+1397
+01:22:43,279 --> 01:22:45,279
+low risk grubu araçlar
+
+1398
+01:22:45,279 --> 01:22:47,279
+içerisinde 23 yaşında bir aracın
+
+1399
+01:22:47,279 --> 01:22:49,279
+olma olasılığını
+
+1400
+01:22:49,279 --> 01:22:51,279
+ııı normal dağılımdan
+
+1401
+01:22:51,279 --> 01:22:53,279
+faydalanarak bulmam gerekiyor
+
+1402
+01:22:53,279 --> 01:22:55,279
+ama ııı
+
+1403
+01:22:55,279 --> 01:22:57,279
+low class için baktığımda
+
+1404
+01:22:57,279 --> 01:22:59,279
+ııı
+
+1405
+01:22:59,279 --> 01:23:01,279
+ortalama değer 25 standart
+
+1406
+01:23:01,279 --> 01:23:03,279
+sapma 0 olduğu için
+
+1407
+01:23:03,279 --> 01:23:05,279
+bu olasılık burada 0 çıkıyor
+
+1408
+01:23:05,279 --> 01:23:07,279
+normal dağılımda yerine koyup bulunuyor
+
+1409
+01:23:07,279 --> 01:23:09,279
+normalde
+
+1410
+01:23:09,279 --> 01:23:11,279
+öz niteliği 23
+
+1411
+01:23:11,279 --> 01:23:13,279
+high class için
+
+1412
+01:23:13,279 --> 01:23:15,279
+baktığımda
+
+1413
+01:23:15,279 --> 01:23:17,279
+bunu ııı
+
+1414
+01:23:17,279 --> 01:23:19,279
+şuradaki parametreleri
+
+1415
+01:23:19,279 --> 01:23:21,279
+kullanarak
+
+1416
+01:23:21,279 --> 01:23:23,279
+likelihood probability den
+
+1417
+01:23:23,279 --> 01:23:25,279
+hesaplayabilirsiniz
+
+1418
+01:23:25,279 --> 01:23:27,279
+bu olasılık
+
+1419
+01:23:27,279 --> 01:23:29,279
+high risk grubu için
+
+1420
+01:23:29,279 --> 01:23:31,279
+ııı 0,035
+
+1421
+01:23:31,279 --> 01:23:41,479
+çıkmış
+
+1422
+01:23:41,479 --> 01:23:43,479
+şimdi geçelim diğer probleme
+
+1423
+01:23:43,479 --> 01:23:45,479
+bizim elimizde
+
+1424
+01:23:45,479 --> 01:23:47,479
+ııı
+
+1425
+01:23:47,479 --> 01:23:49,479
+3 tür araç vardı
+
+1426
+01:23:49,479 --> 01:23:51,479
+sport
+
+1427
+01:23:51,479 --> 01:23:53,479
+sports, vintage ve
+
+1428
+01:23:53,479 --> 01:23:55,479
+suv diye
+
+1429
+01:23:55,479 --> 01:23:57,479
+şimdi burada bize test örneğinde
+
+1430
+01:23:57,479 --> 01:23:59,479
+bir dördüncü ııı
+
+1431
+01:23:59,479 --> 01:24:01,479
+tür araç verdi
+
+1432
+01:24:01,479 --> 01:24:03,479
+bu problem
+
+1433
+01:24:03,479 --> 01:24:05,479
+ııı
+
+1434
+01:24:05,479 --> 01:24:07,479
+çözmek için
+
+1435
+01:24:07,479 --> 01:24:09,479
+ııı
+
+1436
+01:24:09,479 --> 01:24:11,479
+slide da da var
+
+1437
+01:24:11,479 --> 01:24:13,479
+görmüşsünüzdür herhalde
+
+1438
+01:24:13,479 --> 01:24:15,479
+ııı
+
+1439
+01:24:15,479 --> 01:24:17,479
+program yapıyoruz
+
+1440
+01:24:17,479 --> 01:24:19,479
+nerede onu nereye yazdım
+
+1441
+01:24:19,479 --> 01:24:21,479
+bakayım şurada bir yerde
+
+1442
+01:24:21,479 --> 01:24:32,760
+ha laplace adjustment
+
+1443
+01:24:32,760 --> 01:24:34,760
+çözümün adı
+
+1444
+01:24:34,760 --> 01:24:36,760
+ne yapıyor laplace adjustment
+
+1445
+01:24:36,760 --> 01:24:38,760
+diyor ki
+
+1446
+01:24:38,760 --> 01:24:40,760
+hi ve
+
+1447
+01:24:40,760 --> 01:24:42,760
+low diye
+
+1448
+01:24:42,760 --> 01:24:44,760
+benim 2 tane ııı
+
+1449
+01:24:44,760 --> 01:24:46,760
+klasım var diyor
+
+1450
+01:24:46,760 --> 01:24:48,760
+ve burada ııı araç türü
+
+1451
+01:24:48,760 --> 01:24:50,760
+olarak ııı
+
+1452
+01:24:50,760 --> 01:24:52,760
+car type'ı
+
+1453
+01:24:52,760 --> 01:24:56,960
+sports vintage
+
+1454
+01:24:56,960 --> 01:24:59,460
+ve olmayan
+
+1455
+01:24:59,460 --> 01:25:00,840
+araç türümüz truck.
+
+1456
+01:25:01,659 --> 01:25:03,020
+Bunları koyuyoruz.
+
+1457
+01:25:05,220 --> 01:25:05,960
+Ondan sonra
+
+1458
+01:25:05,960 --> 01:25:09,500
+mevcut durumda
+
+1459
+01:25:09,500 --> 01:25:11,460
+elimizde ne kadar bu araçlardan
+
+1460
+01:25:11,460 --> 01:25:13,279
+var bunları sayarak buluyoruz.
+
+1461
+01:25:13,699 --> 01:25:15,420
+High Class'da 4 tane
+
+1462
+01:25:15,420 --> 01:25:16,600
+sample'ımız vardı.
+
+1463
+01:25:17,159 --> 01:25:19,079
+Bu 4 tane sample'ın kaç
+
+1464
+01:25:19,079 --> 01:25:21,239
+tanesi spor arabaydı
+
+1465
+01:25:21,239 --> 01:25:23,359
+acaba? Bana sayıp söyleyin lütfen.
+
+1466
+01:25:24,680 --> 01:25:25,060
+Her şeyi
+
+1467
+01:25:25,060 --> 01:25:27,199
+devletten beklemeyin. Haydi bakalım.
+
+1468
+01:25:28,399 --> 01:25:29,739
+Bir tane hocam High Class'da
+
+1469
+01:25:29,739 --> 01:25:31,699
+spor. Tamam. Çok güzel.
+
+1470
+01:25:32,239 --> 01:25:34,020
+High Class'da
+
+1471
+01:25:34,020 --> 01:25:35,600
+vintage kaç tane
+
+1472
+01:25:35,600 --> 01:25:37,600
+araç var? Vintage var mı?
+
+1473
+01:25:39,989 --> 01:25:40,710
+O da bir tane.
+
+1474
+01:25:41,069 --> 01:25:42,989
+Bir tane. Tamam. SUV?
+
+1475
+01:25:45,939 --> 01:25:46,819
+İki tane var ondan.
+
+1476
+01:25:47,640 --> 01:25:49,420
+İki. Truck? Hiç yok.
+
+1477
+01:25:50,060 --> 01:25:51,720
+Tamam. Şimdi geçtik Low Class'a.
+
+1478
+01:25:51,779 --> 01:25:53,520
+Low Class'da iki tane
+
+1479
+01:25:53,520 --> 01:25:55,479
+sample var. İkisi de
+
+1480
+01:25:55,479 --> 01:25:56,899
+spor. Doğru mu?
+
+1481
+01:25:58,319 --> 01:25:58,939
+Doğru.
+
+1482
+01:25:59,659 --> 01:26:01,159
+Peki. İki.
+
+1483
+01:26:01,159 --> 01:26:02,779
+Sıfır.
+
+1484
+01:26:03,039 --> 01:26:04,300
+Sıfır. Sıfır.
+
+1485
+01:26:06,489 --> 01:26:08,270
+Şimdi Low Class Adjustment
+
+1486
+01:26:08,270 --> 01:26:09,989
+çok havalı bir adı var ama
+
+1487
+01:26:09,989 --> 01:26:12,430
+komik bir yöntem bana göre.
+
+1488
+01:26:12,770 --> 01:26:14,310
+Çok basit bir
+
+1489
+01:26:14,310 --> 01:26:15,989
+çözüm var. Diyor ki
+
+1490
+01:26:15,989 --> 01:26:18,529
+arkadaşlar madem
+
+1491
+01:26:18,529 --> 01:26:20,250
+böyle bir sıfır olma olasılığı
+
+1492
+01:26:20,250 --> 01:26:21,810
+sıfır olan bir durum var.
+
+1493
+01:26:22,350 --> 01:26:24,430
+Bu durumda bundan kurtulmak
+
+1494
+01:26:24,430 --> 01:26:26,829
+için bütün sınıflardaki
+
+1495
+01:26:26,829 --> 01:26:30,609
+sample sayılarını
+
+1496
+01:26:30,609 --> 01:26:32,529
+bir arttırın diyor.
+
+1497
+01:26:32,630 --> 01:26:34,430
+Ve buraya
+
+1498
+01:26:34,430 --> 01:26:44,220
+biri ekliyor. Sonuç
+
+1499
+01:26:44,220 --> 01:26:46,079
+işte efendim burada iki tane
+
+1500
+01:26:46,079 --> 01:26:48,380
+burada iki, burada
+
+1501
+01:26:48,380 --> 01:26:50,439
+üç, burada bir tane
+
+1502
+01:26:50,439 --> 01:26:52,600
+High Class içerisinde
+
+1503
+01:26:52,600 --> 01:26:54,739
+yedi, sekiz
+
+1504
+01:26:54,739 --> 01:26:56,439
+tane sample olmuş oluyor.
+
+1505
+01:26:57,340 --> 01:26:58,140
+Burada da
+
+1506
+01:26:58,140 --> 01:27:00,220
+üç, bir,
+
+1507
+01:27:00,840 --> 01:27:02,380
+bir, bir,
+
+1508
+01:27:03,060 --> 01:27:04,380
+altı tane sample da
+
+1509
+01:27:04,380 --> 01:27:06,279
+burada olmuş oluyor. Ve artık
+
+1510
+01:27:06,279 --> 01:27:08,159
+bütün olasılıkları bunun üzerinden
+
+1511
+01:27:08,159 --> 01:27:09,880
+hesaplıyor. Yani şöyle.
+
+1512
+01:27:10,340 --> 01:27:12,560
+High Class içerisinde
+
+1513
+01:27:12,560 --> 01:27:14,300
+track olma olasılığı
+
+1514
+01:27:14,300 --> 01:27:15,239
+dediğim zaman
+
+1515
+01:27:15,239 --> 01:27:19,060
+bir bölü
+
+1516
+01:27:19,060 --> 01:27:20,880
+sekiz diyorum.
+
+1517
+01:27:22,779 --> 01:27:23,500
+Veya işte
+
+1518
+01:27:23,500 --> 01:27:24,199
+efendim
+
+1519
+01:27:24,199 --> 01:27:27,140
+başka olasılık yazalım.
+
+1520
+01:27:28,579 --> 01:27:29,779
+Low Class
+
+1521
+01:27:29,779 --> 01:27:30,899
+içerisinde
+
+1522
+01:27:30,899 --> 01:27:32,939
+sports
+
+1523
+01:27:32,939 --> 01:27:38,829
+olma olasılığı
+
+1524
+01:27:38,829 --> 01:27:39,810
+dediğim zaman
+
+1525
+01:27:39,810 --> 01:27:42,949
+üç bölü altı diyorum.
+
+1526
+01:27:44,409 --> 01:27:44,909
+Bu şekilde.
+
+1527
+01:27:44,909 --> 01:27:45,390
+Bir.
+
+1528
+01:27:45,430 --> 01:27:46,909
+Düzeltme işlemi
+
+1529
+01:27:46,909 --> 01:27:48,210
+yapıyoruz. Ve
+
+1530
+01:27:48,210 --> 01:27:50,810
+böylece işte
+
+1531
+01:27:50,810 --> 01:27:52,850
+hiç olmayan
+
+1532
+01:27:52,850 --> 01:27:54,609
+araç türünü buraya
+
+1533
+01:27:54,609 --> 01:27:56,909
+eklemiş oluyoruz.
+
+1534
+01:27:57,529 --> 01:27:58,630
+Bir bölü sekiz. Diğer
+
+1535
+01:27:58,630 --> 01:28:00,789
+olasılığı da yazalım. Low Class için
+
+1536
+01:28:00,789 --> 01:28:02,789
+bunun olma olasılığı nedir?
+
+1537
+01:28:08,659 --> 01:28:09,819
+Bir bölü altı.
+
+1538
+01:28:10,720 --> 01:28:12,359
+Evet. Teşekkür ederim.
+
+1539
+01:28:12,460 --> 01:28:13,380
+Bir bölü altı.
+
+1540
+01:28:13,779 --> 01:28:16,100
+Hocam peki o yüzlerce sample olmuş olsaydı da
+
+1541
+01:28:16,100 --> 01:28:18,319
+artı bir mi ekleyecek, yapacaktık yani?
+
+1542
+01:28:18,319 --> 01:28:19,819
+Evet, evet, evet.
+
+1543
+01:28:20,119 --> 01:28:20,560
+O kadar.
+
+1544
+01:28:20,680 --> 01:28:22,560
+Öyle basit bir iş yani
+
+1545
+01:28:22,560 --> 01:28:24,520
+işlem. Daha doğrusu.
+
+1546
+01:28:25,220 --> 01:28:26,100
+Nedir? Sıfır
+
+1547
+01:28:26,100 --> 01:28:28,039
+yutan elemanya çarpmada.
+
+1548
+01:28:28,640 --> 01:28:30,399
+Oradaki sıfırla çarpma
+
+1549
+01:28:30,399 --> 01:28:32,399
+şeyinden kurtulmak
+
+1550
+01:28:32,399 --> 01:28:34,899
+amaç. Probleminden kurtulmak.
+
+1551
+01:28:35,380 --> 01:28:36,119
+Anlatabildim mi? Bu
+
+1552
+01:28:36,119 --> 01:28:37,659
+çünkü hani
+
+1553
+01:28:37,659 --> 01:28:40,539
+olasılıklar
+
+1554
+01:28:40,539 --> 01:28:42,460
+çarpımı şeklinde yazıyoruz ya
+
+1555
+01:28:42,460 --> 01:28:44,420
+kesrin üstünde.
+
+1556
+01:28:44,640 --> 01:28:46,539
+Bundan kurtulmak için kullanılmış
+
+1557
+01:28:46,539 --> 01:28:48,600
+bir geliştirilmiş bir yol
+
+1558
+01:28:48,600 --> 01:28:49,859
+aslına bakarsanız.
+
+1559
+01:28:50,680 --> 01:28:52,920
+Böylece tabi burada hala
+
+1560
+01:28:52,920 --> 01:28:55,500
+bir sıfırla çarpma problemi yaşayacağız.
+
+1561
+01:28:55,500 --> 01:28:56,699
+O da neden?
+
+1562
+01:28:56,699 --> 01:28:58,760
+Biliyorsunuz Low Class'ta
+
+1563
+01:28:58,760 --> 01:29:00,239
+iki tane sample vardı.
+
+1564
+01:29:00,239 --> 01:29:02,779
+Gauss dağılımı orada olasılığı sıfır hesapladı.
+
+1565
+01:29:02,779 --> 01:29:06,180
+23 yaşında arabanın olma olasılığını sıfır hesapladı.
+
+1566
+01:29:06,180 --> 01:29:08,840
+Ama dediğim gibi orada bir düzeltmeye gerek yok.
+
+1567
+01:29:08,840 --> 01:29:10,720
+Nümerik öz nitelikte
+
+1568
+01:29:10,720 --> 01:29:14,479
+standart sapmanın sıfır çıkacağı bir case
+
+1569
+01:29:14,479 --> 01:29:15,800
+düşünemiyorum yani.
+
+1570
+01:29:15,800 --> 01:29:20,010
+Olamaz öyle bir şey.
+
+1571
+01:29:20,010 --> 01:29:22,130
+Örneğimiz bu.
+
+1572
+01:29:22,630 --> 01:29:27,949
+Bu örnekte hem nümerik bir data hem de
+
+1573
+01:29:27,949 --> 01:29:30,130
+Laplace Adjustment işlemini
+
+1574
+01:29:30,130 --> 01:29:32,649
+göstermiş olduk.
+
+1575
+01:29:32,649 --> 01:29:35,390
+Sonra işte bunları yerine yazarak
+
+1576
+01:29:35,390 --> 01:29:37,449
+bu olasılıkları
+
+1577
+01:29:37,449 --> 01:29:40,409
+hesaplayabiliriz.
+
+1578
+01:29:40,409 --> 01:29:47,029
+Neyi bulmaya çalışıyoruz?
+
+1579
+01:29:47,029 --> 01:29:51,039
+Bulmaya çalıştığımız şey
+
+1580
+01:29:51,039 --> 01:29:53,880
+Class Label'ını bulmaya çalışıyorduk.
+
+1581
+01:29:54,140 --> 01:30:02,369
+Verilen X test sample'ının sınıfının
+
+1582
+01:30:02,369 --> 01:30:05,750
+risk sınıfının yüksek olması
+
+1583
+01:30:05,750 --> 01:30:09,850
+veya bunun risk sınıfının
+
+1584
+01:30:09,850 --> 01:30:12,949
+düşük olması şeklinde.
+
+1585
+01:30:12,949 --> 01:30:15,649
+Bayez teoremine göre
+
+1586
+01:30:15,649 --> 01:30:16,850
+bunu
+
+1587
+01:30:16,850 --> 01:30:22,779
+yüksek risk sınıfı içerisinde X'in olma olasılığı
+
+1588
+01:30:22,779 --> 01:30:25,220
+yüksek risk sınıfının
+
+1589
+01:30:25,220 --> 01:30:28,779
+olma olasılığı bölü Px şeklinde.
+
+1590
+01:30:28,779 --> 01:30:31,600
+Yazdık aynı işlemi.
+
+1591
+01:30:31,600 --> 01:30:36,680
+Burada da düşük risk grubu içerisinde
+
+1592
+01:30:36,680 --> 01:30:41,829
+X'in olma olasılığı düşük risk grubunun
+
+1593
+01:30:41,829 --> 01:30:45,170
+olasılığı bölü Px şeklinde yazdık.
+
+1594
+01:30:45,170 --> 01:30:51,300
+Şuradan kalemin rengini
+
+1595
+01:30:51,300 --> 01:30:53,100
+çok kırmızı oldu.
+
+1596
+01:30:53,100 --> 01:30:54,880
+Hep değiştirelim.
+
+1597
+01:30:54,880 --> 01:30:59,500
+Şunları zaten datadan yine görüp
+
+1598
+01:30:59,500 --> 01:31:00,779
+hesaplamıştık.
+
+1599
+01:31:00,779 --> 01:31:01,779
+Neydi?
+
+1600
+01:31:01,779 --> 01:31:03,180
+Hi Class içinde kaç tane kısım var?
+
+1601
+01:31:03,180 --> 01:31:05,479
+Kaç tane sample vardı?
+
+1602
+01:31:05,479 --> 01:31:08,949
+Hi'de 4 tane.
+
+1603
+01:31:08,949 --> 01:31:12,270
+2 bölü 6.
+
+1604
+01:31:12,270 --> 01:31:17,390
+Şuradaki olasılıkta
+
+1605
+01:31:17,390 --> 01:31:44,060
+olasılıklar çarpımı şeklinde yazacağız.
+
+1606
+01:31:44,060 --> 01:31:47,640
+Yüksek risk grubu içinde
+
+1607
+01:31:47,640 --> 01:31:50,199
+bunun olma olasılığını
+
+1608
+01:31:50,199 --> 01:31:53,520
+0.035
+
+1609
+01:31:53,520 --> 01:31:55,060
+hesaplamıştık.
+
+1610
+01:31:55,060 --> 01:31:56,859
+Gauss dağılımından.
+
+1611
+01:31:56,899 --> 01:32:00,220
+Yüksek risk grubu içerisinde
+
+1612
+01:32:00,220 --> 01:32:01,260
+bunun
+
+1613
+01:32:01,260 --> 01:32:03,039
+kamyon olma olasılığını
+
+1614
+01:32:03,039 --> 01:32:09,180
+1 bölü 8 olarak hesaplamıştık.
+
+1615
+01:32:09,180 --> 01:32:13,539
+Bunların 3'ünü de çarptığımızda nihai sonucu bulacağız.
+
+1616
+01:32:13,539 --> 01:32:15,579
+Burada sonuç
+
+1617
+01:32:15,579 --> 01:32:34,750
+yukarıda bakayım çarpma işleminin sonucu ne diyor?
+
+1618
+01:32:34,750 --> 01:32:39,369
+Biri de çarptı. Hocam ben buldum demiyor tabii bu arada.
+
+1619
+01:32:40,689 --> 01:32:44,270
+0.035 çarpı 1 bölü 8
+
+1620
+01:32:44,270 --> 01:32:48,109
+0,0044 çıkıyor.
+
+1621
+01:32:48,109 --> 01:32:50,670
+Onu bir daha çarpmak gerekiyor. Orayı
+
+1622
+01:32:50,670 --> 01:32:53,229
+çarpıp bir sonuç yazmamışım ben burada.
+
+1623
+01:32:53,229 --> 01:32:55,529
+Peki siz çarpın o zaman.
+
+1624
+01:32:55,529 --> 01:33:00,909
+Burada aslında çarpmadan da görebileceğimiz bir nokta şu.
+
+1625
+01:33:00,909 --> 01:33:02,710
+Zaten ben
+
+1626
+01:33:02,710 --> 01:33:06,069
+yaşın
+
+1627
+01:33:06,069 --> 01:33:08,369
+23
+
+1628
+01:33:08,369 --> 01:33:09,649
+olduğu
+
+1629
+01:33:09,649 --> 01:33:12,210
+olma olasılığını low class içinde.
+
+1630
+01:33:12,770 --> 01:33:14,050
+Yazarken
+
+1631
+01:33:14,050 --> 01:33:26,430
+buraya 0 yazdığım için burası 0 çıkacak.
+
+1632
+01:33:26,430 --> 01:33:32,569
+Şunun olma olasılığı 1 bölü 6. Burası 0 olduğu için bu olasılık 0.
+
+1633
+01:33:32,569 --> 01:33:34,109
+Dolayısıyla
+
+1634
+01:33:34,109 --> 01:33:36,170
+şurası 0 olacak.
+
+1635
+01:33:36,170 --> 01:33:41,029
+Yani ne olursa olsun bu şeyin class label'ı high diye çıkacak.
+
+1636
+01:33:41,029 --> 01:33:42,569
+Görünen o ki değil mi?
+
+1637
+01:33:42,569 --> 01:33:43,329
+Ama
+
+1638
+01:33:43,329 --> 01:33:47,430
+burada gördüğümüz şu 0 değeri tekrar söylüyorum.
+
+1639
+01:33:47,430 --> 01:33:48,970
+Yani bu
+
+1640
+01:33:48,970 --> 01:33:50,250
+dağılımdan böyle bir
+
+1641
+01:33:50,289 --> 01:33:51,829
+ölçüyü hesaplamak
+
+1642
+01:33:51,829 --> 01:33:55,930
+çok olası bir şey değil. Yani bu örneğin biraz
+
+1643
+01:33:55,930 --> 01:33:57,210
+sığ olmasından
+
+1644
+01:33:57,210 --> 01:33:59,510
+kaynaklı olduğunu belirtmiştim.
+
+1645
+01:33:59,510 --> 01:34:03,609
+Bu problemde sadece dikkatinizi çekmek istediğim nokta
+
+1646
+01:34:03,609 --> 01:34:07,449
+Laplace adjustment kısmı.
+
+1647
+01:34:07,449 --> 01:34:08,970
+Böyle bir
+
+1648
+01:34:08,970 --> 01:34:09,750
+durumla
+
+1649
+01:34:09,750 --> 01:34:12,050
+karşılaşabiliyoruz. Laplace adjustment
+
+1650
+01:34:12,050 --> 01:34:20,689
+işlemine ihtiyaç duyabiliyoruz.
+
+1651
+01:34:20,689 --> 01:34:23,250
+Pekala.
+
+1652
+01:34:23,250 --> 01:34:28,779
+Bu da tamam.
+
+1653
+01:34:28,779 --> 01:34:29,819
+Şeyde.
+
+1654
+01:34:29,819 --> 01:34:32,380
+Slide'lardan gidecek olursak.
+
+1655
+01:34:32,380 --> 01:34:33,659
+Slide'da
+
+1656
+01:34:33,659 --> 01:34:35,699
+bir şey örneği vardı.
+
+1657
+01:34:35,699 --> 01:34:37,239
+İlgimi çeken,
+
+1658
+01:34:37,239 --> 01:34:40,319
+sizinle paylaşmak istediğim.
+
+1659
+01:34:40,319 --> 01:34:42,100
+Diyor ki burada
+
+1660
+01:34:42,100 --> 01:34:45,180
+aslında aynı problemi getiriyor beraberinde.
+
+1661
+01:34:45,180 --> 01:34:48,760
+Consider the table with
+
+1662
+01:34:48,760 --> 01:35:01,680
+transaction ID. Yani burada TID dediği 7. satırın
+
+1663
+01:35:01,680 --> 01:35:08,399
+Slide'ı görebiliyorsunuz değil mi arkadaşlar?
+
+1664
+01:35:08,399 --> 01:35:10,460
+Evet hocam.
+
+1665
+01:35:10,460 --> 01:35:11,479
+Tamam.
+
+1666
+01:35:11,479 --> 01:35:19,159
+Az önce çözdüğümüz örnek 10 tane sample'dan oluşan bir training data setim var.
+
+1667
+01:35:19,159 --> 01:35:25,560
+Bu data set de diyor ki 7. satırdaki sample'ı sildiğimizi varsayalım diyor.
+
+1668
+01:35:25,560 --> 01:35:29,659
+Yani bir sample'ın data içerisinden silinmesi durumunda
+
+1669
+01:35:29,659 --> 01:35:32,479
+tüm şeyleri baştan hesaplıyor.
+
+1670
+01:35:32,479 --> 01:35:36,819
+Ve burada bizim az önce karşılaştığımız duruma benzer bir durum.
+
+1671
+01:35:36,819 --> 01:35:39,640
+Yes sınıfı içerisinde refund'u yes'i olan hiç sample'ı
+
+1672
+01:35:39,640 --> 01:35:40,399
+Yes sınıfı içerisinde refund'u yes'i olan hiç sample'ı
+
+1673
+01:35:40,399 --> 01:35:41,439
+Yes sınıfı içerisinde refund'u yes'i olan hiç sample'ı
+
+1674
+01:35:41,439 --> 01:35:46,560
+yok. Yani böyle bir sıfır olasılık görünüyor.
+
+1675
+01:35:46,560 --> 01:35:55,000
+Bir de şurada yes sınıfı içerisinde
+
+1676
+01:35:55,000 --> 01:35:59,880
+medeni durumu evli olan hiç örnek yok diyor.
+
+1677
+01:35:59,880 --> 01:36:03,720
+Yani ben burada eğer
+
+1678
+01:36:03,720 --> 01:36:07,800
+bu şekilde işlem yapıyorsam
+
+1679
+01:36:07,800 --> 01:36:10,619
+her iki sınıf için yine
+
+1680
+01:36:10,619 --> 01:36:11,399
+class,
+
+1681
+01:36:11,439 --> 01:36:17,579
+niye burada class no, if class no demiş?
+
+1682
+01:36:17,579 --> 01:36:19,880
+Yanlış demiş. Neyse.
+
+1683
+01:36:19,880 --> 01:36:22,439
+Sample, mean and variance hesaplarken
+
+1684
+01:36:22,439 --> 01:36:26,039
+birinde yes, birinde no olacaktı. Neyse.
+
+1685
+01:36:26,039 --> 01:36:33,720
+Bu işlemleri bir transaction'ı yani bir işlemi veri setinden sildiğinde
+
+1686
+01:36:33,720 --> 01:36:37,800
+nasıl çalıştığını göstermek için bir örnek yapmış.
+
+1687
+01:36:37,800 --> 01:36:43,539
+Az önce bizim örneğimizde olduğu gibi,
+
+1688
+01:36:43,579 --> 01:36:49,720
+çarpma işleminde bir değer sıfır.
+
+1689
+01:36:49,720 --> 01:36:53,560
+Diğer tarafta da mesela bir değer sıfır
+
+1690
+01:36:53,560 --> 01:36:56,380
+çıkmış. Bu durumda, bu durumda
+
+1691
+01:36:56,380 --> 01:36:59,460
+işlem yaparken galiba şuydu, evet
+
+1692
+01:36:59,460 --> 01:37:01,789
+şu
+
+1693
+01:37:01,789 --> 01:37:05,630
+satırda. Çünkü bizde hiç married örneği yoktu. Neyse.
+
+1694
+01:37:05,630 --> 01:37:09,210
+Sıfıra çarptığı, sıfırla çarptığı için
+
+1695
+01:37:09,210 --> 01:37:12,029
+çarpma işleminin sonucu sıfır çıkıyor.
+
+1696
+01:37:12,029 --> 01:37:12,789
+Ve
+
+1697
+01:37:12,789 --> 01:37:15,109
+naibaez will not able to
+
+1698
+01:37:15,149 --> 01:37:17,189
+classify X
+
+1699
+01:37:17,189 --> 01:37:18,729
+as yes or no
+
+1700
+01:37:18,729 --> 01:37:21,289
+demiş. Yani bu problemden dolayı
+
+1701
+01:37:21,289 --> 01:37:23,350
+bu sınıflandırmayı
+
+1702
+01:37:23,350 --> 01:37:25,390
+naibaez yapamaz diyor.
+
+1703
+01:37:25,390 --> 01:37:31,029
+Ne yapabiliriz çözüm için? Burada benim az önce gösterdiğim Laplace adjustment işlemini
+
+1704
+01:37:31,029 --> 01:37:32,810
+yine veriyor.
+
+1705
+01:37:32,810 --> 01:37:36,649
+Veya M-estimate dediği bir başka alternatif çözüm var.
+
+1706
+01:37:36,649 --> 01:37:39,470
+Ben derste sadece Laplace'dan bahsettim.
+
+1707
+01:37:39,470 --> 01:37:43,989
+Bunu bilmeniz benim için yeterlidir.
+
+1708
+01:37:43,989 --> 01:37:46,029
+Ve geldik bir başka örneğe.
+
+1709
+01:37:46,029 --> 01:37:46,810
+Daha büyük bir örneğe.
+
+1710
+01:37:46,850 --> 01:37:52,029
+Örnek.
+
+1711
+01:37:52,029 --> 01:37:56,390
+Yani bu kadar çok örneğe gerek yok aslında. Belki bunu atlayabiliriz.
+
+1712
+01:37:56,390 --> 01:38:00,229
+Siz bir inceleyin bu örneği isterseniz.
+
+1713
+01:38:00,229 --> 01:38:03,289
+15.33 olmuş.
+
+1714
+01:38:03,289 --> 01:38:05,350
+Ya da bakalım yine.
+
+1715
+01:38:05,350 --> 01:38:09,689
+Çünkü bir de ben K-N'en anlatacağım bugün size. Onu unutmamam lazım.
+
+1716
+01:38:09,689 --> 01:38:11,489
+Şöyle özetleyelim.
+
+1717
+01:38:11,489 --> 01:38:14,310
+Bizim elimizde yine bir training data set var.
+
+1718
+01:38:14,310 --> 01:38:19,430
+Bu data set'te class dediği sütun, bizim output variable'miz.
+
+1719
+01:38:19,470 --> 01:38:29,189
+Buna göre işte canlıların isimlerini yazmış.
+
+1720
+01:38:29,189 --> 01:38:36,369
+Class şeyde canlı türlerini memeliler ve memeli olmayanlar diye iki gruba ayırıyor.
+
+1721
+01:38:36,369 --> 01:38:47,890
+İşte burada insan örneği var, [öğrenci] var, kurbağa var, yarasa var vesaire gibi değişik canlıların.
+
+1722
+01:38:47,890 --> 01:38:49,029
+Bu gruplara ayırıyoruz.
+
+1723
+01:38:49,029 --> 01:38:51,590
+Bu gruplara göre dağılımını vermiş.
+
+1724
+01:38:51,590 --> 01:38:54,909
+Biraz da bir değişik bir örnek olmuş.
+
+1725
+01:38:54,909 --> 01:38:57,729
+Buna göre bizim elimizdeki öz nitelikler.
+
+1726
+01:38:57,729 --> 01:39:03,630
+Give birth, can fly, live in water, have legs şeklinde.
+
+1727
+01:39:03,630 --> 01:39:06,689
+Dört tane öz nitelik vermiş.
+
+1728
+01:39:06,689 --> 01:39:09,510
+Bu dört tane öz niteliğe göre
+
+1729
+01:39:09,510 --> 01:39:13,609
+sınıf etiketine karar vermek istiyoruz.
+
+1730
+01:39:13,609 --> 01:39:18,210
+Burada give birth yes test örneği var.
+
+1731
+01:39:18,210 --> 01:39:24,609
+Test örneğini söylüyor yani şu bize verilmiş olan test örneği.
+
+1732
+01:39:24,609 --> 01:39:27,170
+Bu test örneğine göre
+
+1733
+01:39:27,170 --> 01:39:28,970
+ben işte
+
+1734
+01:39:28,970 --> 01:39:31,010
+give birth yes olan
+
+1735
+01:39:31,010 --> 01:39:33,569
+can fly özelliği no olan
+
+1736
+01:39:33,569 --> 01:39:36,130
+live in water özelliği yes
+
+1737
+01:39:36,130 --> 01:39:36,890
+olan
+
+1738
+01:39:36,890 --> 01:39:39,970
+ve have legs özelliği no olan
+
+1739
+01:39:39,970 --> 01:39:42,270
+bir canlının
+
+1740
+01:39:42,270 --> 01:39:44,829
+class label'ını bulmak istiyorum.
+
+1741
+01:39:44,829 --> 01:39:46,630
+Bu test örneği üzerinden
+
+1742
+01:39:46,630 --> 01:39:48,170
+çözümü
+
+1743
+01:39:48,210 --> 01:39:50,250
+kurgulamamız gerekiyor.
+
+1744
+01:39:50,250 --> 01:39:52,810
+Bir takım kısaltmalar yapmış.
+
+1745
+01:39:52,810 --> 01:39:55,630
+Attributes'ü gösteriyor diyor.
+
+1746
+01:39:55,630 --> 01:39:59,989
+Memelileri ne non-mammals dediği grubu gösteriyor.
+
+1747
+01:39:59,989 --> 01:40:01,010
+Buna göre
+
+1748
+01:40:01,010 --> 01:40:03,050
+verdiği örnekte
+
+1749
+01:40:03,050 --> 01:40:05,609
+işte ne yapmamız gerekiyor?
+
+1750
+01:40:05,609 --> 01:40:10,489
+Bu koşullu olasılığı, şu koşullu olasılığı hesaplayacağız.
+
+1751
+01:40:10,489 --> 01:40:16,109
+Memeliler grubu içerisinde bu özelliklere sahip olma olasılığını önce hesaplıyor.
+
+1752
+01:40:16,109 --> 01:40:17,909
+Sonra non-mammals dediği grubu
+
+1753
+01:40:17,909 --> 01:40:19,449
+içine saplıyor.
+
+1754
+01:40:19,449 --> 01:40:23,789
+Ondan sonra bunları her bir grubun olma olasılığı ile çarparak
+
+1755
+01:40:23,789 --> 01:40:26,609
+her bir sınıfın olma olasılığı ile çarparak
+
+1756
+01:40:26,609 --> 01:40:27,890
+nihai
+
+1757
+01:40:27,890 --> 01:40:29,949
+sonucu buluyor.
+
+1758
+01:40:29,949 --> 01:40:31,229
+Pardon.
+
+1759
+01:40:31,229 --> 01:40:32,510
+Sonuç
+
+1760
+01:40:32,510 --> 01:40:33,789
+olarak
+
+1761
+01:40:33,789 --> 01:40:38,649
+bu iki değeri kıyaslayarak bu verilen
+
+1762
+01:40:38,649 --> 01:40:41,210
+özellikte bir canlının
+
+1763
+01:40:41,210 --> 01:40:42,989
+büyük bir olasılıkla
+
+1764
+01:40:42,989 --> 01:40:46,590
+memeliler grubunda olduğunu söyleyebiliriz diyor.
+
+1765
+01:40:46,590 --> 01:40:47,869
+Yani bu
+
+1766
+01:40:47,869 --> 01:40:51,970
+eğitim örneklerinde
+
+1767
+01:40:51,970 --> 01:40:55,550
+20 tane sample var.
+
+1768
+01:40:55,550 --> 01:41:00,409
+Bu 20 tane sample ve 4 tane öz nitelikten faydalanarak
+
+1769
+01:41:00,409 --> 01:41:03,229
+bu training datasetini kullanarak
+
+1770
+01:41:03,229 --> 01:41:05,529
+ne yaptık? Bir test örneğinin
+
+1771
+01:41:05,529 --> 01:41:07,590
+sınıf etiketine
+
+1772
+01:41:07,590 --> 01:41:09,630
+karar vermiş olduk.
+
+1773
+01:41:09,630 --> 01:41:14,210
+Bu da böyle bir basit örnek.
+
+1774
+01:41:14,210 --> 01:41:19,069
+Şimdi bu aşamada size bir de
+
+1775
+01:41:19,630 --> 01:41:24,750
+ikinci sınıflama algoritmasında böylece öğrenmiş oldunuz.
+
+1776
+01:41:24,750 --> 01:41:26,029
+Sorunuz var mıdır?
+
+1777
+01:41:26,029 --> 01:41:32,979
+Önce onu sorayım.
+
+1778
+01:41:32,979 --> 01:41:34,260
+Soru yok diyorsunuz.
+
+1779
+01:41:34,260 --> 01:41:35,020
+Peki.
+
+1780
+01:41:35,020 --> 01:41:38,859
+Şimdi ben sizinle bir de
+
+1781
+01:41:38,859 --> 01:41:52,229
+K en yakın komşu ile classification'ı anlatacağım demiştim.
+
+1782
+01:41:52,229 --> 01:41:55,569
+Oraya geçiyorum o yüzden.
+
+1783
+01:41:55,569 --> 01:41:58,390
+Bunu şeye aktarmamışım.
+
+1784
+01:41:58,390 --> 01:42:00,430
+Hemen hemen hemen
+
+1785
+01:42:00,430 --> 01:42:02,229
+bunu tablete gönderelim.
+
+1786
+01:42:02,229 --> 01:42:15,960
+Bir dakikanızı alacağım.
+
+1787
+01:42:16,000 --> 01:42:18,039
+Arkadaşlar bu...
+
+1788
+01:42:18,039 --> 01:42:19,579
+Hocam ben de bir şey söyledim mi?
+
+1789
+01:42:19,579 --> 01:42:21,119
+Tabi buyrun.
+
+1790
+01:42:21,119 --> 01:42:23,939
+Şimdi biz BIOS terörümünde ilgili
+
+1791
+01:42:23,939 --> 01:42:27,000
+IHT1'den D'ye kadar olan tüm boyutlar için,
+
+1792
+01:42:27,000 --> 01:42:28,039
+atribütler için
+
+1793
+01:42:28,039 --> 01:42:31,100
+hepsinin olasılıklarını hesaplayıp birbirleriyle doğrudan çarptık.
+
+1794
+01:42:31,100 --> 01:42:34,439
+Ama mesela veri setimizin özelliğine bağlı olarak
+
+1795
+01:42:34,439 --> 01:42:38,279
+output'a belli atribütlerin daha çok etki etmesini
+
+1796
+01:42:38,279 --> 01:42:43,979
+tespit edip buna göre bir ağırlıklandırma yapabilir miyiz?
+
+1797
+01:42:43,979 --> 01:42:47,819
+Ama zaten o ağırlıklandırmayı içeride bu istatistiksel bir
+
+1798
+01:42:47,859 --> 01:42:49,899
+yöntem olduğu için kendisi yapıyor.
+
+1799
+01:42:49,899 --> 01:42:53,239
+Yani bir daha ekstra bir ağırlık mı vermek istiyorsunuz?
+
+1800
+01:42:53,239 --> 01:42:55,279
+Belli öz nitelikler benim için
+
+1801
+01:42:55,279 --> 01:42:59,899
+daha ayırt edicidir diyerek mesela belki bunu yapabilirsiniz.
+
+1802
+01:42:59,899 --> 01:43:02,460
+Mesela o kredide diyelim ki
+
+1803
+01:43:02,460 --> 01:43:06,539
+belki income daha çok etkili ya da işte
+
+1804
+01:43:06,539 --> 01:43:09,359
+cinsiyetin çok da önemi yok gibi tespitler.
+
+1805
+01:43:09,359 --> 01:43:10,899
+Olabilir olabilir.
+
+1806
+01:43:10,899 --> 01:43:14,479
+Bunların hepsi denemeye açık şeyler. O kadar hani böyle
+
+1807
+01:43:14,479 --> 01:43:17,819
+fikir üretip yaratıcı şeyler yapabilirsiniz.
+
+1808
+01:43:17,819 --> 01:43:21,140
+Ki çok da keyifli uygulamalar.
+
+1809
+01:43:21,140 --> 01:43:23,960
+Bilmiyorum yani ben anlatırken de
+
+1810
+01:43:23,960 --> 01:43:26,260
+keyifli anlatıyorum.
+
+1811
+01:43:26,260 --> 01:43:28,319
+Dediğim gibi
+
+1812
+01:43:28,319 --> 01:43:32,159
+bunlarla ilgili denemeler yapılabilir. Mesela o bizim elimizde
+
+1813
+01:43:32,159 --> 01:43:33,439
+şeyler var ya
+
+1814
+01:43:33,439 --> 01:43:34,979
+birtakım
+
+1815
+01:43:34,979 --> 01:43:39,840
+data setler var UCI repository sayfasında. Oradan indirip
+
+1816
+01:43:39,840 --> 01:43:43,159
+mesela bunları deneyebilirsiniz çok rahat.
+
+1817
+01:43:43,159 --> 01:43:45,979
+Ama Bayez'de otomatik olarak yapılıyor dediniz. Doğru mu?
+
+1818
+01:43:45,979 --> 01:43:46,739
+Hayır.
+
+1819
+01:43:46,739 --> 01:43:47,779
+Bayez'de
+
+1820
+01:43:47,819 --> 01:43:50,640
+normal
+
+1821
+01:43:50,640 --> 01:43:52,680
+siz geçme sıklığına göre
+
+1822
+01:43:52,680 --> 01:43:57,800
+bir olasılığı daha fazla olabilir dediniz ya o olasılığı zaten kullanıyor.
+
+1823
+01:43:57,800 --> 01:43:58,819
+Ama hani
+
+1824
+01:43:58,819 --> 01:44:02,159
+öz niteliklerin seçiciliklerine göre
+
+1825
+01:44:02,159 --> 01:44:05,220
+diye bakacak olursak mesela siz dediniz ya
+
+1826
+01:44:05,220 --> 01:44:07,779
+yıllık gelir orada daha etkili bence.
+
+1827
+01:44:07,779 --> 01:44:09,060
+Yani hani
+
+1828
+01:44:09,060 --> 01:44:14,439
+kişinin cinsiyetinden ya da medeni durumundan çok bu daha etkilidir diye bir
+
+1829
+01:44:14,439 --> 01:44:15,979
+şeyiniz varsa
+
+1830
+01:44:15,979 --> 01:44:17,779
+bilginiz varsa mesela
+
+1831
+01:44:17,779 --> 01:44:21,359
+bunu katabilirsiniz. Orada bir ağırlıklandırma yapabilirsiniz.
+
+1832
+01:44:21,359 --> 01:44:23,159
+Anladım. Teşekkürler.
+
+1833
+01:44:23,159 --> 01:44:29,079
+Rica ederim.
+
+1834
+01:44:29,079 --> 01:44:32,140
+Nerede? Bunu indirememiş miyim?
+
+1835
+01:44:32,140 --> 01:44:47,800
+Pardon.
+
+1836
+01:44:47,800 --> 01:44:55,819
+Burada gelmiş.
+
+1837
+01:44:55,819 --> 01:45:07,829
+Bayez'i kapattık.
+
+1838
+01:45:07,829 --> 01:45:09,350
+Şimdi
+
+1839
+01:45:09,350 --> 01:45:23,539
+evet
+
+1840
+01:45:23,539 --> 01:45:26,859
+ekranımı görüyorsunuz herhalde. Instance based learning
+
+1841
+01:45:26,859 --> 01:45:29,159
+diye bir
+
+1842
+01:45:29,159 --> 01:45:32,840
+slide paylaştım.
+
+1843
+01:45:32,840 --> 01:45:34,640
+Burada
+
+1844
+01:45:34,640 --> 01:45:36,180
+K'ya yakın komşu
+
+1845
+01:45:36,180 --> 01:45:37,460
+yöntemiyle
+
+1846
+01:45:37,460 --> 01:45:40,279
+bir üçüncü sınıflayıcıyı
+
+1847
+01:45:40,279 --> 01:45:41,300
+öğreneceğiz.
+
+1848
+01:45:41,300 --> 01:45:43,600
+Bu yöntemin ismi
+
+1849
+01:45:43,600 --> 01:45:46,420
+instance based learning. Çünkü
+
+1850
+01:45:46,420 --> 01:45:48,220
+elimizdeki yine
+
+1851
+01:45:48,220 --> 01:45:51,020
+test örneğine göre bir
+
+1852
+01:45:51,020 --> 01:45:57,899
+şey yapıyoruz, işlem yapıyoruz.
+
+1853
+01:45:57,899 --> 01:46:04,890
+K'ya en yakın komşu
+
+1854
+01:46:04,890 --> 01:46:07,449
+yöntemi, instance based
+
+1855
+01:46:07,449 --> 01:46:12,310
+classifiers altında nearest neighbor yöntemini konuşacağız ve
+
+1856
+01:46:12,310 --> 01:46:14,609
+K closest point dediği
+
+1857
+01:46:14,609 --> 01:46:18,970
+komşulardan faydalanarak bu
+
+1858
+01:46:18,970 --> 01:46:20,250
+sınıflama
+
+1859
+01:46:20,250 --> 01:46:22,550
+işlemi gerçekleştirilecek.
+
+1860
+01:46:22,550 --> 01:46:31,250
+Nearest neighbor classifier için, burada komik bir örneğimiz var biraz da eğlenelim diye.
+
+1861
+01:46:31,250 --> 01:46:36,630
+If it walks like a duck, quacks like a duck, then probability a duck.
+
+1862
+01:46:36,630 --> 01:46:40,210
+Yani bize verilmiş olan öz nitelikleri arasında
+
+1863
+01:46:40,210 --> 01:46:42,270
+işte görüntüsü neye benziyor,
+
+1864
+01:46:42,270 --> 01:46:44,310
+ondan sonra
+
+1865
+01:46:44,310 --> 01:46:48,149
+nasıl yani nasıl yürüyor, özür dilerim
+
+1866
+01:46:48,149 --> 01:46:50,210
+ve nasıl
+
+1867
+01:46:50,210 --> 01:46:54,050
+guaklıyor gibi bir takım soruların cevaplarına göre
+
+1868
+01:46:54,050 --> 01:46:56,090
+hangi sınıfa ait olduğunu
+
+1869
+01:46:56,090 --> 01:46:57,890
+karar veriyoruz. Burada
+
+1870
+01:46:57,890 --> 01:47:00,710
+bir training records vermiş.
+
+1871
+01:47:00,710 --> 01:47:03,270
+Bu training records içinde
+
+1872
+01:47:03,270 --> 01:47:06,069
+bize verilmiş olan test örneğinin
+
+1873
+01:47:06,069 --> 01:47:11,710
+bu öz nitelikler işte yürüme, guaklama gibi öz nitelikler açısından değerlendirip
+
+1874
+01:47:11,710 --> 01:47:12,229
+hangisine
+
+1875
+01:47:12,229 --> 01:47:13,770
+daha benzer olduğunu
+
+1876
+01:47:13,770 --> 01:47:15,310
+söyleyebiliyoruz.
+
+1877
+01:47:15,310 --> 01:47:17,609
+Bunu
+
+1878
+01:47:17,609 --> 01:47:19,149
+bunu daha
+
+1879
+01:47:19,149 --> 01:47:23,750
+teknik bir yolla anlatacak olursak,
+
+1880
+01:47:23,750 --> 01:47:26,829
+iki boyutlu bir data setimiz olduğunu varsayalım.
+
+1881
+01:47:26,829 --> 01:47:30,909
+Two dimensional
+
+1882
+01:47:30,909 --> 01:47:32,189
+data
+
+1883
+01:47:32,189 --> 01:47:34,750
+yani benim bir
+
+1884
+01:47:34,750 --> 01:47:38,350
+x eksenim var, bir de y eksenim var ve ben
+
+1885
+01:47:38,350 --> 01:47:41,670
+bir düzlemde, plane üzerinde işlem yapıyorum.
+
+1886
+01:47:41,670 --> 01:47:44,229
+Bu plane üzerinde yer alan noktaları
+
+1887
+01:47:44,229 --> 01:47:48,069
+iki tane sınıfa
+
+1888
+01:47:48,069 --> 01:47:50,890
+ayırmışım.
+
+1889
+01:47:50,890 --> 01:47:54,470
+Örneklerimin class label'ları
+
+1890
+01:47:54,470 --> 01:47:56,770
+class label'ları
+
+1891
+01:47:56,770 --> 01:47:59,590
+pozitif veya negatif olabilir.
+
+1892
+01:47:59,590 --> 01:48:03,170
+Burada düzlemde, düzlemde
+
+1893
+01:48:03,170 --> 01:48:06,250
+pozitif olan örnekler
+
+1894
+01:48:06,250 --> 01:48:09,569
+ve negatif olan örnekleri
+
+1895
+01:48:09,569 --> 01:48:11,109
+görebiliyorsunuz.
+
+1896
+01:48:11,109 --> 01:48:12,909
+Diyor ki
+
+1897
+01:48:12,909 --> 01:48:14,189
+bu yöntem
+
+1898
+01:48:14,189 --> 01:48:14,949
+bana bir
+
+1899
+01:48:14,949 --> 01:48:18,029
+unknown record verilmiş.
+
+1900
+01:48:18,029 --> 01:48:20,329
+Bilmediğim bir sample verilmiş.
+
+1901
+01:48:20,329 --> 01:48:24,170
+Ama bu sample'ın ben yine öz niteliklerini biliyorum aslında.
+
+1902
+01:48:24,170 --> 01:48:26,729
+Ve bildiğim için bakın konumunu
+
+1903
+01:48:26,729 --> 01:48:27,489
+konumunu
+
+1904
+01:48:27,489 --> 01:48:29,029
+çok rahat şuraya
+
+1905
+01:48:29,029 --> 01:48:30,829
+bir kırmızıyla
+
+1906
+01:48:30,829 --> 01:48:33,630
+yerleştirmişim.
+
+1907
+01:48:33,630 --> 01:48:35,430
+Bu noktada
+
+1908
+01:48:35,430 --> 01:48:37,229
+bu
+
+1909
+01:48:37,229 --> 01:48:39,270
+unknown record dediğim
+
+1910
+01:48:39,270 --> 01:48:40,550
+test örneğinin
+
+1911
+01:48:40,550 --> 01:48:44,130
+hangi sınıfa ait olduğuna karar vermek için
+
+1912
+01:48:44,130 --> 01:48:45,149
+elimdeki
+
+1913
+01:48:45,149 --> 01:48:46,949
+training samples
+
+1914
+01:48:46,949 --> 01:48:50,029
+eğitim örneklerinden faydalanacağım.
+
+1915
+01:48:50,029 --> 01:48:51,050
+Ve
+
+1916
+01:48:51,050 --> 01:48:55,149
+bu düzlemde gördüğünüz bütün artılar eksiler benim
+
+1917
+01:48:55,149 --> 01:48:56,430
+eğitim örneklerim.
+
+1918
+01:48:56,430 --> 01:48:59,229
+Bunlar training data.
+
+1919
+01:48:59,229 --> 01:49:00,510
+Training
+
+1920
+01:49:00,510 --> 01:49:02,829
+samples.
+
+1921
+01:49:02,829 --> 01:49:06,409
+Neden? Çünkü ben bu örneklerin her birinin
+
+1922
+01:49:06,409 --> 01:49:08,449
+class label'ını biliyorum.
+
+1923
+01:49:08,449 --> 01:49:10,510
+X, Y düzlemindeki yerini biliyorum.
+
+1924
+01:49:10,550 --> 01:49:11,310
+Bir de
+
+1925
+01:49:11,310 --> 01:49:13,109
+sınıf etiketini biliyorum.
+
+1926
+01:49:13,109 --> 01:49:15,409
+O nedenle bu örnekler benim için
+
+1927
+01:49:15,409 --> 01:49:17,470
+eğitim örnekleri.
+
+1928
+01:49:17,470 --> 01:49:19,250
+Elimdeki
+
+1929
+01:49:19,250 --> 01:49:23,460
+test örneğinin
+
+1930
+01:49:23,460 --> 01:49:33,979
+eğitim örneklerinin her birine olan uzaklığını hesaplıyorum.
+
+1931
+01:49:33,979 --> 01:49:38,579
+Bakın bunların her bir sample'ına bu
+
+1932
+01:49:38,579 --> 01:49:41,399
+düzlemde bana verilmiş eğitim örneklerinin
+
+1933
+01:49:41,399 --> 01:49:44,720
+her birine tek tek uzaklıklarını hesaplıyorum.
+
+1934
+01:49:44,720 --> 01:49:48,319
+Bu aslına bakarsanız oldukça maliyetli bir iş.
+
+1935
+01:49:48,359 --> 01:49:50,159
+Düzlem diye düşünmeyin.
+
+1936
+01:49:50,159 --> 01:49:51,680
+İki boyut değil, bu üç boyut,
+
+1937
+01:49:51,680 --> 01:49:54,239
+dört boyut, beş boyut olduğunda işlem
+
+1938
+01:49:54,239 --> 01:49:55,779
+karmaşıklığı
+
+1939
+01:49:55,779 --> 01:50:02,500
+artıyor iyice.
+
+1940
+01:50:02,500 --> 01:50:05,920
+Ve
+
+1941
+01:50:05,920 --> 01:50:09,000
+bu arada chat'e bakıyorum aralıklarla. Arkadaşlar
+
+1942
+01:50:09,000 --> 01:50:11,819
+bana mesaj yazıyor musunuz diye.
+
+1943
+01:50:11,819 --> 01:50:17,180
+Sorunuz varsa oradan yazabilirsiniz. Aralıklarla kontrol ediyorum.
+
+1944
+01:50:17,180 --> 01:50:18,220
+Bu şekilde
+
+1945
+01:50:18,220 --> 01:50:20,779
+elimdeki test örneğine,
+
+1946
+01:50:20,779 --> 01:50:24,359
+örneğinin tüm eğitim örneklerine
+
+1947
+01:50:24,359 --> 01:50:27,439
+olan uzaklıklarını hesapladıktan sonra
+
+1948
+01:50:27,439 --> 01:50:28,460
+bunları
+
+1949
+01:50:28,460 --> 01:50:31,020
+sıralıyorum küçükten büyüğe.
+
+1950
+01:50:31,020 --> 01:50:36,399
+En yakın komşusu ve en uzak komşusu olacak şekilde bu uzaklıkları
+
+1951
+01:50:36,399 --> 01:50:37,939
+bulabiliyorum.
+
+1952
+01:50:37,939 --> 01:50:42,020
+Bu uzaklıkları hesapladıktan sonra
+
+1953
+01:50:42,020 --> 01:50:50,470
+burada gördüğümüz gibi mesela kırmızı olan bu örneğin
+
+1954
+01:50:50,470 --> 01:50:52,529
+test sample'ının,
+
+1955
+01:50:52,529 --> 01:50:56,170
+en yakınındaki,
+
+1956
+01:50:56,170 --> 01:50:56,949
+şurada,
+
+1957
+01:50:56,949 --> 01:50:59,250
+en yakınındaki komşularına
+
+1958
+01:50:59,250 --> 01:51:07,729
+diyorum ki ben burada mesela üç tane en yakın komşusuna bakarak
+
+1959
+01:51:07,729 --> 01:51:09,010
+karar vereceğim.
+
+1960
+01:51:09,010 --> 01:51:12,329
+Üç en yakın komşuya göre karar verdiğimde
+
+1961
+01:51:12,329 --> 01:51:15,149
+üç en yakın komşu şu demek,
+
+1962
+01:51:15,149 --> 01:51:18,989
+test örneğinin etrafına ben bir çember çiziyorum
+
+1963
+01:51:18,989 --> 01:51:21,550
+ve bu çemberi git gide büyütüyorum.
+
+1964
+01:51:21,550 --> 01:51:26,930
+Bu çemberin içerisinde üç tane sample kaldığında duruyorum.
+
+1965
+01:51:26,930 --> 01:51:27,449
+Ve,
+
+1966
+01:51:27,489 --> 01:51:30,310
+bu çemberin içinde kalan
+
+1967
+01:51:30,310 --> 01:51:32,090
+sample'ların
+
+1968
+01:51:32,090 --> 01:51:34,649
+hangi sınıfa ait olduğuna bakıyorum.
+
+1969
+01:51:34,649 --> 01:51:36,970
+Çoğunluk hangi sınıftansa
+
+1970
+01:51:36,970 --> 01:51:38,250
+test örneğini de
+
+1971
+01:51:38,250 --> 01:51:39,270
+o sınıfa
+
+1972
+01:51:39,270 --> 01:51:40,810
+aittir diyorum.
+
+1973
+01:51:40,810 --> 01:51:47,710
+Bu komşu sayısı üç en yakın komşu yerine ben bunu beş en yakın komşu diye de
+
+1974
+01:51:47,710 --> 01:51:53,149
+kullanabilirim.
+
+1975
+01:51:53,149 --> 01:51:54,189
+Bu durumda
+
+1976
+01:51:54,189 --> 01:51:56,750
+çemberi biraz daha genişleteceğim.
+
+1977
+01:51:56,750 --> 01:51:58,789
+Çemberi biraz daha genişleteceğim.
+
+1978
+01:51:58,789 --> 01:52:00,590
+Ve belki
+
+1979
+01:52:00,590 --> 01:52:01,609
+şu
+
+1980
+01:52:01,609 --> 01:52:03,649
+noktaları içine alacak.
+
+1981
+01:52:03,649 --> 01:52:04,930
+O zaman
+
+1982
+01:52:04,930 --> 01:52:07,489
+çemberin içerisinde diyeceğim ki
+
+1983
+01:52:07,489 --> 01:52:08,270
+dört
+
+1984
+01:52:08,270 --> 01:52:10,310
+tane pozitif sınıftan
+
+1985
+01:52:10,310 --> 01:52:12,869
+bir tane negatif sınıftan örnek var.
+
+1986
+01:52:12,869 --> 01:52:17,229
+Ama çoğunluk pozitif dediği için, pozitif olduğu için
+
+1987
+01:52:17,229 --> 01:52:21,310
+bu test örneğinin sınıfı da pozitif olmalıdır
+
+1988
+01:52:21,310 --> 01:52:23,630
+diyeceğim.
+
+1989
+01:52:23,630 --> 01:52:24,649
+Bu
+
+1990
+01:52:24,649 --> 01:52:26,949
+komşu sayısının
+
+1991
+01:52:26,949 --> 01:52:28,489
+tek olması
+
+1992
+01:52:28,489 --> 01:52:29,250
+gerekiyor.
+
+1993
+01:52:29,250 --> 01:52:31,050
+Üç en yakın komşu,
+
+1994
+01:52:31,050 --> 01:52:32,590
+beş en yakın komşu,
+
+1995
+01:52:32,590 --> 01:52:34,630
+yedi en yakın komşu gibi.
+
+1996
+01:52:34,630 --> 01:52:38,210
+Neden tek sayıda olması gerekiyor?
+
+1997
+01:52:38,210 --> 01:52:41,810
+Çünkü iki sınıf arasında karar verirken
+
+1998
+01:52:41,810 --> 01:52:45,130
+bir eşitlik durumu doğmasın diye.
+
+1999
+01:52:45,130 --> 01:52:46,409
+Komşu sayısının
+
+2000
+01:52:46,409 --> 01:52:47,949
+tek olması
+
+2001
+01:52:47,949 --> 01:52:50,510
+gerekiyor.
+
+2002
+01:52:50,510 --> 01:52:56,909
+K en yakın komşu kaç dakikada anlattım arkadaşlar herhalde bir beş dakika falan sürmüştür.
+
+2003
+01:52:56,909 --> 01:52:58,449
+Bu kadar basit bir yöntem.
+
+2004
+01:52:58,489 --> 01:53:00,029
+Geometrik bir yöntem.
+
+2005
+01:53:00,029 --> 01:53:05,409
+Sadece distance üzerinden giderek karar veriyor.
+
+2006
+01:53:05,409 --> 01:53:10,529
+Burada değişik örnekleri var. Bir en yakın komşuya göre karar verebilirim.
+
+2007
+01:53:10,529 --> 01:53:15,390
+İki en yakın komşu kullanmış, üç en yakın komşu kullanmış.
+
+2008
+01:53:15,390 --> 01:53:16,149
+Ama
+
+2009
+01:53:16,149 --> 01:53:17,430
+dediğim gibi
+
+2010
+01:53:17,430 --> 01:53:18,210
+eğer
+
+2011
+01:53:18,210 --> 01:53:22,810
+iki sınıflı bir sınıflayıcı yapıyorsanız yani binary classifier dediğimiz bir
+
+2012
+01:53:22,810 --> 01:53:24,609
+sınıflayıcı yapıyorsanız
+
+2013
+01:53:24,609 --> 01:53:27,170
+komşu sayısının tek olması gerekir. Ama
+
+2014
+01:53:27,170 --> 01:53:28,449
+yani sınıf,
+
+2015
+01:53:28,489 --> 01:53:29,770
+sayısı
+
+2016
+01:53:29,770 --> 01:53:32,329
+işte
+
+2017
+01:53:32,329 --> 01:53:37,710
+iki değil daha fazlaysa bu kural çok da geçerli olmuyor.
+
+2018
+01:53:37,710 --> 01:53:39,250
+Burada
+
+2019
+01:53:39,250 --> 01:53:44,109
+Voronoi diagram diye bir diagram verilmiş arkadaşlar.
+
+2020
+01:53:44,109 --> 01:53:45,890
+Bu ilginç bir örnek.
+
+2021
+01:53:45,890 --> 01:53:48,210
+Bir en yakın komşuya göre,
+
+2022
+01:53:48,210 --> 01:53:52,289
+bir en yakın komşuya göre
+
+2023
+01:53:52,289 --> 01:53:54,850
+burada var olan her sample'ın,
+
+2024
+01:53:54,850 --> 01:54:00,520
+her sample'ın
+
+2025
+01:54:00,520 --> 01:54:03,600
+düzlemdeki bütün noktaların
+
+2026
+01:54:03,600 --> 01:54:07,939
+bu verilmiş olan merkezlere olan uzaklığına göre
+
+2027
+01:54:07,939 --> 01:54:09,739
+düzlemi
+
+2028
+01:54:09,739 --> 01:54:12,800
+bölgelere ayırabiliyorsunuz.
+
+2029
+01:54:12,800 --> 01:54:14,340
+Bu şu demek,
+
+2030
+01:54:14,340 --> 01:54:15,880
+bakın burada
+
+2031
+01:54:15,880 --> 01:54:18,180
+merkez diye bize verilmiş
+
+2032
+01:54:18,180 --> 01:54:20,479
+eğitim örnekleri var.
+
+2033
+01:54:20,479 --> 01:54:22,539
+Bu eğitim örneklerinin
+
+2034
+01:54:22,539 --> 01:54:23,819
+yerleri
+
+2035
+01:54:23,819 --> 01:54:25,100
+belli.
+
+2036
+01:54:25,100 --> 01:54:26,640
+Diyorsunuz ki
+
+2037
+01:54:26,640 --> 01:54:30,479
+bu düzlemde her bir pikselin,
+
+2038
+01:54:30,520 --> 01:54:32,319
+her bir pikselin
+
+2039
+01:54:32,319 --> 01:54:35,640
+bu eğitim örneklerine olan uzaklıklarına bakıp
+
+2040
+01:54:35,640 --> 01:54:37,680
+bu noktanın en yakın,
+
+2041
+01:54:37,680 --> 01:54:41,779
+birinci sıradaki en yakın komşusu hangisidir diye bakıyorsunuz
+
+2042
+01:54:41,779 --> 01:54:43,579
+ve o noktayı
+
+2043
+01:54:43,579 --> 01:54:44,600
+düzlemde
+
+2044
+01:54:44,600 --> 01:54:46,640
+işaretlediğimiz o pikseli
+
+2045
+01:54:46,640 --> 01:54:48,699
+bu noktanın
+
+2046
+01:54:48,699 --> 01:54:50,739
+ait olduğu sınıfa
+
+2047
+01:54:50,739 --> 01:54:55,359
+ait kılıyorsunuz. Böylece düzlemde gördüğünüz her noktayı
+
+2048
+01:54:55,359 --> 01:54:57,399
+aslında
+
+2049
+01:54:57,399 --> 01:54:58,680
+bir
+
+2050
+01:54:58,680 --> 01:55:00,220
+train sample'ının
+
+2051
+01:55:00,520 --> 01:55:02,319
+ne diyelim
+
+2052
+01:55:02,319 --> 01:55:04,359
+yörüngesi gibi bir alana
+
+2053
+01:55:04,359 --> 01:55:05,899
+kilitlemiş oluyorsunuz.
+
+2054
+01:55:05,899 --> 01:55:07,680
+Voronoi diagram bu demek.
+
+2055
+01:55:07,680 --> 01:55:09,220
+Çok güzel bir şey
+
+2056
+01:55:09,220 --> 01:55:13,319
+ama çok maliyetli tabii. Durduk yere niye böyle bir şey yapar insan?
+
+2057
+01:55:13,319 --> 01:55:17,420
+Sadece hani bu yapıyı ve bunun bize sunduğu
+
+2058
+01:55:17,420 --> 01:55:18,699
+imkanları
+
+2059
+01:55:18,699 --> 01:55:19,979
+göstermek için
+
+2060
+01:55:19,979 --> 01:55:21,520
+belki olabilir.
+
+2061
+01:55:21,520 --> 01:55:22,279
+Yoksa
+
+2062
+01:55:22,279 --> 01:55:24,319
+hakikaten çok maliyetli bir iş.
+
+2063
+01:55:24,319 --> 01:55:26,640
+Düzlemdeki her noktanın
+
+2064
+01:55:26,640 --> 01:55:27,920
+hangi
+
+2065
+01:55:27,920 --> 01:55:29,199
+sample'a
+
+2066
+01:55:29,199 --> 01:55:30,479
+yakın,
+
+2067
+01:55:30,520 --> 01:55:31,800
+yakın olduğunu bulup
+
+2068
+01:55:31,800 --> 01:55:34,619
+birinci sırada en yakın olduğu komşunun
+
+2069
+01:55:34,619 --> 01:55:37,939
+bölgesine dahil etmek bunu
+
+2070
+01:55:37,939 --> 01:55:43,060
+ve düzlemi bu şekilde bölgelere ayırmak.
+
+2071
+01:55:43,060 --> 01:55:47,159
+Ben bu bölgeleri bildikten sonra artık gelen her sample'ın
+
+2072
+01:55:47,159 --> 01:55:50,479
+aslında hangi
+
+2073
+01:55:50,479 --> 01:55:52,800
+train sample'ının
+
+2074
+01:55:52,800 --> 01:56:00,020
+yörüngesindedir, bölgesindedir bunu söyleyebilirim.
+
+2075
+01:56:00,020 --> 01:56:01,300
+Evet.
+
+2076
+01:56:01,300 --> 01:56:02,319
+Hocam.
+
+2077
+01:56:02,319 --> 01:56:03,100
+Buyurun.
+
+2078
+01:56:03,399 --> 01:56:08,000
+Bu gelen bizim train için kullandığımız veriler,
+
+2079
+01:56:08,000 --> 01:56:09,039
+hani mesela
+
+2080
+01:56:09,039 --> 01:56:12,359
+çok uç yerlerde ise kullandığımız veriler,
+
+2081
+01:56:12,359 --> 01:56:16,960
+onları çok geniş bir grup yaptıktan sonra tekrardan hani
+
+2082
+01:56:16,960 --> 01:56:19,020
+ayrıma gibi bir durumu oluyor mu
+
+2083
+01:56:19,020 --> 01:56:20,800
+bu algoritmanın?
+
+2084
+01:56:20,800 --> 01:56:21,840
+Yani tam
+
+2085
+01:56:21,840 --> 01:56:26,960
+tam olarak ne demek istediğinizi anlamadım ama şöyle bir şey var arkadaşlar.
+
+2086
+01:56:26,960 --> 01:56:29,260
+Bu çok maliyetli bir iş.
+
+2087
+01:56:29,260 --> 01:56:33,359
+Yani şöyle düşünün. Voronoi diagram için söylemiyorum. Yani
+
+2088
+01:56:33,399 --> 01:56:38,260
+K en yakın komşu ile sınıflama problemi için söylüyorum.
+
+2089
+01:56:38,260 --> 01:56:40,819
+Eğitim örneklerinin
+
+2090
+01:56:40,819 --> 01:56:45,439
+her birinin test sample'ına olan uzaklığını hesaplıyoruz çünkü.
+
+2091
+01:56:45,439 --> 01:56:49,020
+Şimdi burada sizin sorunuza cevap vereceğim birazdan.
+
+2092
+01:56:49,020 --> 01:56:51,060
+Şu distance'ı da anlatayım.
+
+2093
+01:56:51,060 --> 01:56:54,640
+Çok güzel bir soru sordunuz.
+
+2094
+01:56:54,640 --> 01:56:58,479
+Mesafe hesaplamayla ilgili formülleri zaten göstermiştim.
+
+2095
+01:56:58,479 --> 01:57:01,819
+En yaygın kullandığımız öklit mesafesi.
+
+2096
+01:57:01,819 --> 01:57:03,359
+Öklit mesafesinin
+
+2097
+01:57:03,359 --> 01:57:06,680
+açısına göre
+
+2098
+01:57:06,680 --> 01:57:07,720
+burada
+
+2099
+01:57:07,720 --> 01:57:08,739
+iki tane
+
+2100
+01:57:08,739 --> 01:57:12,579
+noktanın yani iki tane sample'ın pi ve
+
+2101
+01:57:12,579 --> 01:57:15,399
+qi dediği
+
+2102
+01:57:15,399 --> 01:57:20,260
+ya da p ve q dediği iki tane nokta var.
+
+2103
+01:57:20,260 --> 01:57:23,319
+p and q.
+
+2104
+01:57:23,319 --> 01:57:24,359
+Bu noktaların
+
+2105
+01:57:24,359 --> 01:57:26,140
+her biri
+
+2106
+01:57:26,140 --> 01:57:29,720
+işte d boyutlu olabilir. Burada d dimension'ı var.
+
+2107
+01:57:29,720 --> 01:57:33,319
+Burada d'yi distance için kullanmış. Hadi değiştirelim.
+
+2108
+01:57:33,359 --> 01:57:34,640
+n olsun o zaman.
+
+2109
+01:57:34,640 --> 01:57:35,920
+d değişkenini
+
+2110
+01:57:35,920 --> 01:57:38,479
+başka bir iş için kullanmış.
+
+2111
+01:57:38,479 --> 01:57:43,600
+n olsun. i eşit birden n'e kadar n boyutlu, n tane öz niteliğiniz varsa
+
+2112
+01:57:43,600 --> 01:57:46,159
+işte burada gördüğünüz formülüyle
+
+2113
+01:57:46,159 --> 01:57:55,340
+distance, öklit mesafesi, öklit distance'ı hesaplayabiliyorsunuz.
+
+2114
+01:57:55,340 --> 01:57:57,399
+Evet şimdi
+
+2115
+01:57:57,399 --> 01:58:05,079
+k en yakın komşu yönteminde çemberin içinde kalan noktaların hangi sınıfa ait olduğuna göre karar veriyoruz dedik.
+
+2116
+01:58:05,079 --> 01:58:06,880
+Pozitif sınıfta kaç örnek var?
+
+2117
+01:58:06,880 --> 01:58:09,180
+Negatif sınıfta kaç örnek var?
+
+2118
+01:58:09,180 --> 01:58:12,000
+Majority votes of class labels
+
+2119
+01:58:12,000 --> 01:58:12,760
+dediği
+
+2120
+01:58:12,760 --> 01:58:13,779
+şekilde
+
+2121
+01:58:13,779 --> 01:58:15,579
+bir
+
+2122
+01:58:15,579 --> 01:58:17,119
+çözüm oluşturuluyor.
+
+2123
+01:58:17,119 --> 01:58:23,000
+Ama burada ikinci bir çözüm yöntemi daha var. O da
+
+2124
+01:58:23,000 --> 01:58:25,300
+weighted voting.
+
+2125
+01:58:25,300 --> 01:58:28,640
+Ağırlıklı ortalama alabiliyoruz. Yani
+
+2126
+01:58:28,640 --> 01:58:32,979
+daha doğrusu şöyle söyleyeyim.
+
+2127
+01:58:32,979 --> 01:58:35,039
+Bir trained sample'ının
+
+2128
+01:58:35,079 --> 01:58:38,399
+test sample'ına olan uzaklığına göre
+
+2129
+01:58:38,399 --> 01:58:44,560
+oy miktarını değiştirebiliyoruz. Burada weight factor dediğimiz bir faktör ekleyebiliyoruz.
+
+2130
+01:58:44,560 --> 01:58:48,640
+Şöyle düşünün bunu. Düzlemde benim pozitif
+
+2131
+01:58:48,640 --> 01:58:49,159
+ve
+
+2132
+01:58:49,159 --> 01:58:50,960
+negatif
+
+2133
+01:58:50,960 --> 01:58:52,739
+train
+
+2134
+01:58:52,739 --> 01:58:54,279
+sample'larım var.
+
+2135
+01:58:54,279 --> 01:58:59,920
+Şurada da bir, burada da tam böyle sınıra yakın bir yerde de bir test örneğim var.
+
+2136
+01:58:59,920 --> 01:59:03,760
+Bunun işte birinci sırada en yakın komşusu bu.
+
+2137
+01:59:03,760 --> 01:59:04,779
+İşte efendim
+
+2138
+01:59:04,779 --> 01:59:07,600
+ikinci sırada en yakın komşusu bu.
+
+2139
+01:59:07,600 --> 01:59:09,640
+Üçüncü sırada bu.
+
+2140
+01:59:09,640 --> 01:59:14,000
+Ve belki ne bileyim dördüncü sırada bu gibi gidiyor.
+
+2141
+01:59:14,000 --> 01:59:15,539
+Burada
+
+2142
+01:59:15,539 --> 01:59:18,600
+mesela üç en yakın komşuya göre karar veriyorsam
+
+2143
+01:59:18,600 --> 01:59:20,659
+iki pozitif
+
+2144
+01:59:20,659 --> 01:59:26,539
+iki pozitif, bir negatif örnek var deyip majority voting yöntemine göre
+
+2145
+01:59:26,539 --> 01:59:27,300
+ben
+
+2146
+01:59:27,300 --> 01:59:29,859
+diyebiliyorum ki test örneğinin sınıfı
+
+2147
+01:59:29,859 --> 01:59:31,140
+pozitif olacak.
+
+2148
+01:59:31,140 --> 01:59:33,460
+Class pozitiftir diyeceğim.
+
+2149
+01:59:33,460 --> 01:59:33,960
+Ama
+
+2150
+01:59:33,960 --> 01:59:38,319
+ağırlıklı oylama dediğim bir teknik kullanarak
+
+2151
+01:59:38,319 --> 01:59:40,619
+her eğitim örneğinin
+
+2152
+01:59:40,619 --> 01:59:42,399
+oy miktarını
+
+2153
+01:59:42,399 --> 01:59:45,220
+o test örneğine olan uzaklığına göre
+
+2154
+01:59:45,220 --> 01:59:49,840
+ağırlıklandırabilirim. Burada W dediğimiz bir ağırlık var mesela.
+
+2155
+01:59:49,840 --> 01:59:51,359
+W ağırlığı
+
+2156
+01:59:51,359 --> 01:59:52,640
+mesafenin
+
+2157
+01:59:52,640 --> 01:59:55,199
+mesafeyle
+
+2158
+01:59:55,199 --> 01:59:56,479
+ters orantılı
+
+2159
+01:59:56,479 --> 01:59:58,539
+bir bölü d kare şeklinde
+
+2160
+01:59:58,539 --> 01:59:59,819
+bir
+
+2161
+01:59:59,819 --> 02:00:01,100
+formül
+
+2162
+02:00:01,100 --> 02:00:02,640
+kullanabilirim.
+
+2163
+02:00:02,640 --> 02:00:04,680
+Buradan bir weight hesaplarım.
+
+2164
+02:00:04,680 --> 02:00:06,479
+Bu weight üzerinden de
+
+2165
+02:00:06,479 --> 02:00:09,560
+yakınında olan noktaların
+
+2166
+02:00:09,560 --> 02:00:12,359
+oyu daha fazla olur.
+
+2167
+02:00:12,359 --> 02:00:14,420
+Uzağında olan noktaların
+
+2168
+02:00:14,420 --> 02:00:15,960
+oyu daha az
+
+2169
+02:00:15,960 --> 02:00:16,979
+olabilir.
+
+2170
+02:00:16,979 --> 02:00:19,800
+Bu güzel bir çözüm.
+
+2171
+02:00:19,800 --> 02:00:21,840
+Ama galiba ara vermeyi unuttuk.
+
+2172
+02:00:21,840 --> 02:00:23,119
+Yok 56.
+
+2173
+02:00:23,119 --> 02:00:24,659
+Tam ara saati.
+
+2174
+02:00:24,659 --> 02:00:27,720
+Bir 10 dakika ara vereceğim.
+
+2175
+02:00:27,720 --> 02:00:32,600
+Ondan sonra bununla ilgili bir iki bir şey daha söyleyeceğim. Bitmedi burada söyleyeceklerim.
+
+2176
+02:00:32,640 --> 02:00:37,000
+Arkadaşınızın sorusunun da cevabı gelecek.
+
+2177
+02:00:37,000 --> 02:10:58,619
+10 dakika ara.
+
+2178
+02:10:58,619 --> 02:10:59,399
+Evet.
+
+2179
+02:10:59,399 --> 02:11:01,439
+Merhaba arkadaşlar.
+
+2180
+02:11:01,439 --> 02:11:07,500
+Son saatimiz.
+
+2181
+02:11:07,500 --> 02:11:09,539
+Şu an derste 50 kişi görünüyor.
+
+2182
+02:11:09,539 --> 02:11:11,079
+Kimler bizimle
+
+2183
+02:11:11,079 --> 02:11:14,819
+bilgisayarın başında acaba?
+
+2184
+02:11:14,819 --> 02:11:21,470
+Bakıyorum.
+
+2185
+02:11:21,470 --> 02:11:23,510
+26 kişi.
+
+2186
+02:11:23,510 --> 02:11:27,609
+27 kişi. Neyse yarıyı geçmeyi başardık.
+
+2187
+02:11:27,609 --> 02:11:29,670
+Ooo çok iyi 30 oldu.
+
+2188
+02:11:29,670 --> 02:11:31,710
+Teşekkür ediyorum arkadaşlar.
+
+2189
+02:11:33,550 --> 02:11:38,149
+Beni can kulağıyla dinlediğiniz için.
+
+2190
+02:11:38,149 --> 02:11:40,710
+Peki.
+
+2191
+02:11:40,710 --> 02:11:55,750
+Ellerinizi indirebilirsiniz.
+
+2192
+02:11:55,750 --> 02:11:56,529
+Peki.
+
+2193
+02:11:56,529 --> 02:12:03,880
+Şimdi
+
+2194
+02:12:03,880 --> 02:12:06,199
+kaldığımız yerden devam edelim.
+
+2195
+02:12:06,199 --> 02:12:12,630
+Burada sözünü ettiğimiz
+
+2196
+02:12:12,630 --> 02:12:13,390
+çözüm
+
+2197
+02:12:13,390 --> 02:12:14,930
+yani
+
+2198
+02:12:14,930 --> 02:12:19,789
+weighted voting dediğimiz
+
+2199
+02:12:19,789 --> 02:12:22,869
+oyların ağırlıklandırılması konusu
+
+2200
+02:12:22,869 --> 02:12:24,149
+önemli.
+
+2201
+02:12:24,189 --> 02:12:28,289
+Yani bu yöntemin iyileştirilmesi
+
+2202
+02:12:28,289 --> 02:12:29,829
+yönünde
+
+2203
+02:12:29,829 --> 02:12:34,819
+kullanılabilecek bir teknik.
+
+2204
+02:12:34,819 --> 02:12:37,380
+Ağırlıklandırılmış oylama
+
+2205
+02:12:37,380 --> 02:12:40,380
+tekniği.
+
+2206
+02:12:40,380 --> 02:12:42,180
+Şimdi
+
+2207
+02:12:42,180 --> 02:12:44,220
+bu yöntemle ilgili
+
+2208
+02:12:44,220 --> 02:12:45,239
+birkaç
+
+2209
+02:12:45,239 --> 02:12:46,520
+sorumuz var.
+
+2210
+02:12:46,520 --> 02:12:49,340
+Mesela sorulardan biri şu.
+
+2211
+02:12:49,340 --> 02:12:51,140
+K değeri nasıl seçilmeli?
+
+2212
+02:12:51,140 --> 02:12:54,460
+Choosing the value of K demiş.
+
+2213
+02:12:54,460 --> 02:12:56,000
+Çünkü
+
+2214
+02:12:56,000 --> 02:12:56,760
+burada
+
+2215
+02:12:56,760 --> 02:12:58,300
+eğer
+
+2216
+02:12:58,300 --> 02:13:02,899
+K'yı çok küçük seçersek
+
+2217
+02:13:02,899 --> 02:13:05,979
+Sensitive to noise points diyor.
+
+2218
+02:13:05,979 --> 02:13:08,539
+Yani o bölgede var olan
+
+2219
+02:13:08,539 --> 02:13:12,880
+gürültülerden etkilenebilir. Mesela bir en yakın komşu, belki
+
+2220
+02:13:12,880 --> 02:13:15,199
+üç en yakın komşu gibi.
+
+2221
+02:13:15,199 --> 02:13:20,060
+Belki 5-7 iyi olabilir.
+
+2222
+02:13:20,060 --> 02:13:21,840
+Peki diğer tarafta
+
+2223
+02:13:21,840 --> 02:13:23,119
+K değerinin
+
+2224
+02:13:23,119 --> 02:13:26,199
+çok büyük olması da bir sorun.
+
+2225
+02:13:26,199 --> 02:13:28,239
+Çünkü
+
+2226
+02:13:28,239 --> 02:13:30,800
+çemberi o kadar büyütüyorsunuz ki
+
+2227
+02:13:30,800 --> 02:13:34,140
+bu çemberin içinde kalan noktalar
+
+2228
+02:13:34,140 --> 02:13:38,239
+artık diğer sınıfa ait noktalar olmaya başlıyor.
+
+2229
+02:13:38,239 --> 02:13:39,260
+O yüzden
+
+2230
+02:13:39,260 --> 02:13:41,300
+aslında kritik bir konu.
+
+2231
+02:13:41,300 --> 02:13:45,920
+Bu K sayısına nasıl karar vereceğimiz konusu.
+
+2232
+02:13:45,920 --> 02:13:50,779
+Genelde burada K'nın seçimi için özel bir
+
+2233
+02:13:50,779 --> 02:13:53,079
+ayrılmış bir veri üzerinde
+
+2234
+02:13:53,079 --> 02:13:54,880
+bu
+
+2235
+02:13:54,880 --> 02:13:56,159
+kararlaştırılabilir.
+
+2236
+02:13:56,199 --> 02:13:58,239
+Buna
+
+2237
+02:13:58,239 --> 02:14:00,560
+validasyon datası diyoruz.
+
+2238
+02:14:00,560 --> 02:14:03,359
+Yani train datasının içerisinden
+
+2239
+02:14:03,359 --> 02:14:05,159
+belli bir bölümü
+
+2240
+02:14:05,159 --> 02:14:09,760
+validasyon işlemi için, bu parametre seçimi için
+
+2241
+02:14:09,760 --> 02:14:12,079
+test amaçlı
+
+2242
+02:14:12,079 --> 02:14:13,600
+kullanılabilir.
+
+2243
+02:14:13,600 --> 02:14:15,659
+Ama bunun test kümesinden
+
+2244
+02:14:15,659 --> 02:14:16,939
+bağımsız olması
+
+2245
+02:14:16,939 --> 02:14:21,359
+tercih edilir.
+
+2246
+02:14:21,359 --> 02:14:22,880
+Bir diğer konu
+
+2247
+02:14:22,880 --> 02:14:25,199
+bu çözüm yöntemi
+
+2248
+02:14:25,199 --> 02:14:27,239
+bir
+
+2249
+02:14:27,239 --> 02:14:29,039
+mesafe ölçüsüne dayandığında,
+
+2250
+02:14:29,079 --> 02:14:36,229
+kullandığımız öz niteliklerin
+
+2251
+02:14:36,229 --> 02:14:39,550
+belli bir aralığa ölçeklendirilmesi gerekir.
+
+2252
+02:14:39,550 --> 02:14:40,310
+Çünkü
+
+2253
+02:14:40,310 --> 02:14:42,630
+kullandığımız öz niteliklerden
+
+2254
+02:14:42,630 --> 02:14:46,710
+mesela burada bir örnek vermiş. Varsayalım ki biri
+
+2255
+02:14:46,710 --> 02:14:49,029
+kişinin boyu
+
+2256
+02:14:49,029 --> 02:14:51,590
+metre cinsinden 1.5-
+
+2257
+02:14:51,590 --> 02:14:56,189
+1.80 arası değişiyor demiş. 2 metre de olabilir.
+
+2258
+02:14:56,189 --> 02:15:00,550
+Fakat dar bir aralıkta değişiyor. Küçük bir sayı en büyük değer alabiliriz.
+
+2259
+02:15:00,550 --> 02:15:03,869
+İşte 2 metre olabilir diyoruz.
+
+2260
+02:15:03,869 --> 02:15:07,710
+Diğer yanda kişinin kilosu
+
+2261
+02:15:07,710 --> 02:15:10,270
+burada libre olarak vermiş.
+
+2262
+02:15:10,270 --> 02:15:12,829
+90 ile 300 arasında
+
+2263
+02:15:12,829 --> 02:15:14,630
+değer alabilir diyor.
+
+2264
+02:15:14,630 --> 02:15:17,189
+Ama aynı datasetinde bir üçüncü
+
+2265
+02:15:17,189 --> 02:15:21,789
+öz nitelik olarak kişinin geliri ile ilgili bir bölüm varsa
+
+2266
+02:15:21,789 --> 02:15:22,569
+bu
+
+2267
+02:15:22,569 --> 02:15:26,149
+çok büyük bir aralıkta değişim gösterebilir ve en büyük değer
+
+2268
+02:15:26,149 --> 02:15:27,689
+işte 1 milyon
+
+2269
+02:15:27,689 --> 02:15:30,510
+yıllık bir de bakıyoruz burada, yıllık gelirine bakıyoruz.
+
+2270
+02:15:30,550 --> 02:15:32,590
+1 milyon olabilir.
+
+2271
+02:15:32,590 --> 02:15:33,630
+Ve ben
+
+2272
+02:15:33,630 --> 02:15:35,670
+bu eksenlerde
+
+2273
+02:15:35,670 --> 02:15:37,210
+işte ne dedik?
+
+2274
+02:15:37,210 --> 02:15:39,510
+Kişinin
+
+2275
+02:15:39,510 --> 02:15:43,869
+boyu, kilosu, geliri gibi böyle öz nitelikleri diziyorum.
+
+2276
+02:15:43,869 --> 02:15:44,890
+Birinin
+
+2277
+02:15:44,890 --> 02:15:48,470
+değişim aralığı çok küçükken öbürü çok büyük aralıkta
+
+2278
+02:15:48,470 --> 02:15:51,289
+değişebiliyor ve ben distance hesaplarken
+
+2279
+02:15:51,289 --> 02:15:52,569
+bu
+
+2280
+02:15:52,569 --> 02:15:56,909
+çok büyük sayı alan bu öz nitelik
+
+2281
+02:15:56,909 --> 02:15:58,449
+mesafede
+
+2282
+02:15:58,449 --> 02:15:59,470
+daha dominant,
+
+2283
+02:15:59,470 --> 02:16:00,510
+daha etkin
+
+2284
+02:16:00,510 --> 02:16:02,050
+bir
+
+2285
+02:16:02,050 --> 02:16:04,350
+parametre haline geliyor.
+
+2286
+02:16:04,350 --> 02:16:06,390
+Bunun önüne geçmemiz gerekiyor.
+
+2287
+02:16:06,390 --> 02:16:08,710
+Kayın yakın komşu yönteminde
+
+2288
+02:16:08,710 --> 02:16:10,750
+tüm öz nitelikleri başta bir
+
+2289
+02:16:10,750 --> 02:16:12,550
+normalize edip
+
+2290
+02:16:12,550 --> 02:16:14,850
+0-1 aralığına normalize edip
+
+2291
+02:16:14,850 --> 02:16:16,390
+ondan sonra bakmak
+
+2292
+02:16:16,390 --> 02:16:20,989
+bütün öz niteliklere eşit şans vermek anlamına gelir.
+
+2293
+02:16:20,989 --> 02:16:22,270
+Aksi takdirde
+
+2294
+02:16:22,270 --> 02:16:26,109
+yaptığımız işlem
+
+2295
+02:16:26,109 --> 02:16:29,189
+öz niteliğin büyük olduğu eksen üzerinde
+
+2296
+02:16:29,189 --> 02:16:30,210
+bir
+
+2297
+02:16:30,210 --> 02:16:35,069
+baskın çözüm oluşturacaktır.
+
+2298
+02:16:35,069 --> 02:16:38,909
+Bunu işte basit bir örnekle burada vermiş.
+
+2299
+02:16:38,909 --> 02:16:42,250
+Geçelim, bu binary bir öz nitelik.
+
+2300
+02:16:42,250 --> 02:16:46,459
+Geçeceğim bunu.
+
+2301
+02:16:46,459 --> 02:16:49,020
+Bu yöntemle ilgili
+
+2302
+02:16:49,020 --> 02:16:51,840
+birtakım yorumlar
+
+2303
+02:16:51,840 --> 02:16:54,659
+şimdi burada görüyorsunuz.
+
+2304
+02:16:54,659 --> 02:16:57,219
+Diyor ki, kayın yakın komşu
+
+2305
+02:16:57,219 --> 02:16:58,239
+sınıflayıcı
+
+2306
+02:16:58,239 --> 02:17:00,799
+bir lazy learner olarak geçiyor.
+
+2307
+02:17:00,799 --> 02:17:02,340
+Tembel öğrenici.
+
+2308
+02:17:02,899 --> 02:17:05,200
+Nereden geliyor bu
+
+2309
+02:17:05,200 --> 02:17:06,219
+isim?
+
+2310
+02:17:06,219 --> 02:17:07,500
+Diyor ki,
+
+2311
+02:17:07,500 --> 02:17:10,319
+they do not build models
+
+2312
+02:17:10,319 --> 02:17:11,600
+explicitly.
+
+2313
+02:17:11,600 --> 02:17:16,979
+Elimizdeki veriden aslında bir model oluşturmuyor. Sadece instance based, yani yine
+
+2314
+02:17:16,979 --> 02:17:19,540
+bir örnek tabanlı bir çözüm yöntemi.
+
+2315
+02:17:19,540 --> 02:17:22,100
+O yüzden buna lazy learner deniyor.
+
+2316
+02:17:22,100 --> 02:17:24,659
+Weka'nın altında da genelde
+
+2317
+02:17:24,659 --> 02:17:26,200
+şeydedir bu
+
+2318
+02:17:26,200 --> 02:17:30,799
+k-n-n yöntemi lazy learner'ın altında yer alır.
+
+2319
+02:17:30,799 --> 02:17:32,860
+Classifying unknown rules.
+
+2320
+02:17:32,899 --> 02:17:38,020
+Records are relatively expensive demiş.
+
+2321
+02:17:38,020 --> 02:17:40,059
+Bir test örneğinin
+
+2322
+02:17:40,059 --> 02:17:42,120
+sınıf etiketine
+
+2323
+02:17:42,120 --> 02:17:43,899
+karar vermek için
+
+2324
+02:17:43,899 --> 02:17:48,000
+train datasetindeki tüm örnekleri olan uzaklığı hesapladığı için
+
+2325
+02:17:48,000 --> 02:17:49,799
+maliyetli bir yöntem.
+
+2326
+02:17:49,799 --> 02:17:50,819
+Yani
+
+2327
+02:17:50,819 --> 02:17:52,100
+işlem
+
+2328
+02:17:52,100 --> 02:17:53,120
+şeyi
+
+2329
+02:17:53,120 --> 02:17:57,219
+ihtiyacı çok fazla. O yüzden maliyetli bir yöntem.
+
+2330
+02:17:57,219 --> 02:17:59,520
+Bunu azaltmak gerekiyor.
+
+2331
+02:17:59,520 --> 02:18:04,250
+Bunu azaltmamız lazım.
+
+2332
+02:18:04,250 --> 02:18:05,290
+Can produce RBCs?
+
+2333
+02:18:05,329 --> 02:18:07,629
+Unitrally shaped decision boundaries.
+
+2334
+02:18:07,629 --> 02:18:11,729
+O Voronoi diagramda gördüğümüz gibi
+
+2335
+02:18:11,729 --> 02:18:12,750
+bir karar
+
+2336
+02:18:12,750 --> 02:18:15,569
+şeyi, sınırı dediğimiz
+
+2337
+02:18:15,569 --> 02:18:16,569
+sınır
+
+2338
+02:18:16,569 --> 02:18:18,389
+çizebiliriz
+
+2339
+02:18:18,389 --> 02:18:26,829
+bu yöntemi kullanarak.
+
+2340
+02:18:26,829 --> 02:18:32,709
+Easy to handle variable interactions since the decisions are based on
+
+2341
+02:18:32,709 --> 02:18:35,530
+local information.
+
+2342
+02:18:35,530 --> 02:18:37,329
+Burada
+
+2343
+02:18:37,329 --> 02:18:40,149
+değişkenler arasında bir etkileşim var.
+
+2344
+02:18:40,190 --> 02:18:58,989
+Easy to handle variable interactions. Since the decisions are based on local information. Sonra selection of right proximity measure is essential diye devam ediyor.
+
+2345
+02:18:58,989 --> 02:19:14,950
+Geçeceğim. Bunlar artık biraz fazla detay. Şimdi az önce biz bu yöntemin çok maliyetli bir yöntem olduğundan bahsettik. Çünkü bütün train samplarına uzaklık ölçüyorsunuz.
+
+2346
+02:19:14,950 --> 02:19:23,969
+Avoid having to compute distance to all objects in the training set. İşte bu maliyeti indirgemek için.
+
+2347
+02:19:23,969 --> 02:19:28,969
+Yani veri setinde bulunan tüm train örneklerine olan uzaklık.
+
+2348
+02:19:28,989 --> 02:19:35,930
+Uzaklığı hesaplama maliyetinden kurtulmak için birkaç tane çözüm yöntemi var sunulan.
+
+2349
+02:19:36,549 --> 02:19:41,670
+Birinci sırada multidimensional access method dediği metoddan bahsedeceğim.
+
+2350
+02:19:41,670 --> 02:19:55,079
+Bu KD tree dediğimiz bir yöntem. Aslında eksenlerin her birinin düzlemden gidelim biz yine.
+
+2351
+02:19:55,379 --> 02:20:00,219
+Üçüncü boyutu katmayalım. Üçüncü boyutu katmayalım. İki boyut.
+
+2352
+02:20:00,239 --> 02:20:19,959
+İki boyutlu bir yapıdan bahsedelim. Düzlemde bir sample'ın eğer yerini bu şekilde işaretleyebiliyorsam ben bu düzlemi bu X'de ve Y'de alabileceği en büyük değerleri bildiğim için şöyle bir düzlemle sınırlayabilirim.
+
+2353
+02:20:19,959 --> 02:20:23,719
+Ve bu düzlemi bölgelere ayırabilirim.
+
+2354
+02:20:24,920 --> 02:20:29,959
+Bu ayırdığım bölgeler içerisinde mesela en basitinden dört bölgeye ayırsam.
+
+2355
+02:20:30,239 --> 02:20:36,559
+Dört bölgeye ayırsam. X sample'ı hangi bölgede kalıyor? Bu bölgede.
+
+2356
+02:20:37,379 --> 02:20:46,120
+Eğitim örneklerinin her birinin de başta aslında X ekseninde ve Y ekseninde işte buradaki threshold diyelim.
+
+2357
+02:20:46,379 --> 02:20:56,659
+X threshold Y. Bu threshold değerlerinden büyük ya da küçük olmasına göre hangi bölgede kaldığını bilebilirim.
+
+2358
+02:20:56,659 --> 02:20:59,659
+Ve bu test örneğinin.
+
+2359
+02:21:00,239 --> 02:21:05,979
+Sadece o bölge içerisindeki örneklere olan uzaklığına bakabilirim.
+
+2360
+02:21:06,639 --> 02:21:15,040
+Böylece aslında işlem maliyetinden yani dörtte bir oranında işlem maliyetini azaltabilirsiniz.
+
+2361
+02:21:15,040 --> 02:21:17,860
+Tabii burada ben çok kabaca çizdim bu yapıyı.
+
+2362
+02:21:18,260 --> 02:21:28,020
+Bu biraz daha hani birbirine yakın komşular arasında da arama vesaire özelliklerini içine katacak şekilde düzenlenebilir.
+
+2363
+02:21:30,620 --> 02:21:31,600
+K en yakın.
+
+2364
+02:21:31,620 --> 02:22:00,620
+Komşu sınıflama yöntemi ile ilgili benim söyleyeceklerim bu kadar arkadaşlar sizin sorunuz var mı acaba arkadaşımızın sorduğu sorunun cevabı buydu ben öyle anladım yani şöyle düşündüm burada bir test örneği var ben bu test örneği için neden gidip şu bölgede şuradaki bir train sample olan uzaklığına bakayım ki yani buna yakın olan bölge etrafında.
+
+2365
+02:22:00,620 --> 02:22:24,940
+Aslında sadece odaklanıp aramayı arama uzayını daha küçültmem gerekir daha az sayıda örnek için öklit mesafesi hesaplamalıyım bunu nasıl azaltabilirim yakın çevresinde olabilecek komşular için de sadece distance hesaplayarak bu hesaplama maliyetini azaltabilirim diyorum.
+
+2366
+02:22:26,540 --> 02:22:29,579
+Bilmiyorum sorunuz bu muydu ama ben öyle anladım.
+
+2367
+02:22:29,579 --> 02:22:30,600
+Ben cevabımı aldım.
+
+2368
+02:22:30,620 --> 02:23:07,489
+Hocam az önce tam bu değildi ama farklı bir şekilde söylediklerinizden ben anladım yani peki peki evet sorunuz var mıdır yok peki son yarım saat ve bir son konu başlığımız olan imbalans klas problem dediğimiz probleme geçeceğim.
+
+2369
+02:23:09,329 --> 02:23:15,459
+Bunu paylaştım sanıyorum sizinle sadece.
+
+2370
+02:23:15,659 --> 02:23:19,540
+Aynen slaytları olmayabilir sizde.
+
+2371
+02:23:22,559 --> 02:23:24,360
+Peki şimdi buradan devam edelim.
+
+2372
+02:23:24,360 --> 02:23:29,360
+Bu konu başlığında artık biz üç tane sınıflayıcı öğrendik.
+
+2373
+02:23:30,920 --> 02:23:44,440
+Sınıflayıcılarla ilgili karşılaşabileceğimiz problemlerden biri de dengesiz veri dağılımı yani sınıflara dağılım dengeli olmayabilir.
+
+2374
+02:23:44,440 --> 02:23:47,440
+İmbalans klas problemi.
+
+2375
+02:23:47,479 --> 02:23:50,719
+Bağılım dediğimiz problem bu.
+
+2376
+02:23:51,079 --> 02:23:53,079
+Peki ne zaman karşılaşıyoruz?
+
+2377
+02:23:53,079 --> 02:23:55,719
+Hangi tür datalarda karşımıza çıkıyor?
+
+2378
+02:23:55,719 --> 02:24:03,840
+L hospa f형 problem verdi klasar skilük dediği yani dağılımına baktığımız zaman bir tarafa yılmalı demek oluyor.
+
+2379
+02:24:03,840 --> 02:24:13,280
+Bu bir tarafta yılmış devrilmiş bir yapıya sahip olabilir bu dağılım.
+
+2380
+02:24:13,280 --> 02:24:13,819
+Nerede karşılaşıyoruz?
+
+2381
+02:24:13,819 --> 02:24:16,379
+Ezel on cliffốcちは227.
+
+2382
+02:24:16,379 --> 02:24:16,879
+G Или bu yıla karşılaşıyoruz?
+
+2383
+02:24:16,879 --> 02:24:17,399
+perfil premium perceptions etc.
+
+2384
+02:24:17,399 --> 02:24:27,100
+Mesela kredi kartı sahteciliği gibi bir problem de karşımıza çıkıyor.
+
+2385
+02:24:27,579 --> 02:24:37,180
+Milyon tane işlem yapılır kredi kartıyla ama içinde fraud olan yani sahte olan işlem sayısı çok azdır.
+
+2386
+02:24:37,180 --> 02:24:49,780
+Dolayısıyla verinin doğal yapısı zaten işte milyon tane transakşından bir tanesinin sadece fraud olması durumunu karşımıza getiriyor.
+
+2387
+02:24:50,120 --> 02:24:59,260
+Fraud sample'ların sayısı çok azken normal doğru işlem sayısı çok fazla olabilir.
+
+2388
+02:24:59,879 --> 02:25:03,639
+Intrusion detection yani network saldırılarında olabilir.
+
+2389
+02:25:03,639 --> 02:25:06,639
+Network üzerinde hepimiz gündemimizde.
+
+2390
+02:25:07,180 --> 02:25:10,159
+Ve yüzlerce işlem yapıyoruz.
+
+2391
+02:25:10,540 --> 02:25:13,280
+Hepimiz normal kullanıcıyız.
+
+2392
+02:25:13,420 --> 02:25:22,979
+Hiçbir saldırı amacımız yok ama işte bir anda bir kullanıcı gelip bir saldırı gerçekleştirebilir.
+
+2393
+02:25:22,979 --> 02:25:36,180
+Bunların sayı olarak normal operasyonların sayısı çok fazlayken bu tür saldırıların sayısının daha az olduğunu vurgulamak amaç.
+
+2394
+02:25:37,139 --> 02:25:37,159
+Ve...
+
+2395
+02:25:37,159 --> 02:25:54,440
+Bir tarafta da defective products dediği kusurlu ürünlerin işte bir üretim bandı üzerinde geçen ürünlerin kalite kontrolü yapılırken kusurlu olan ürünlerin sayısı her zaman daha azdır.
+
+2396
+02:25:54,860 --> 02:26:01,559
+Bunun gibi elimizde az sayıda bu sınıftan örnek yer alıyor.
+
+2397
+02:26:01,559 --> 02:26:06,559
+Ama bizim sınıflama başarısını ölçerken bu durumda...
+
+2398
+02:26:07,159 --> 02:26:17,559
+Evaluation measures such as accuracy is not well suited for imbalanced classes demiş.
+
+2399
+02:26:19,360 --> 02:26:35,139
+Bu şekilde dengesiz veri dağılımı olan bir veri setinde sadece accuracy kullanarak bir modelin başarılı ya da başarısız olduğunu söylemek yanlış olur.
+
+2400
+02:26:35,139 --> 02:26:43,500
+Farklı parametreler eklememiz gerekiyor bu değerlendirmeye.
+
+2401
+02:26:43,500 --> 02:26:50,819
+Şimdi bunun için class confusion matriz dediğimiz bir matrizden faydalanacağız.
+
+2402
+02:26:51,020 --> 02:26:53,299
+Bunun adı sınıf karışıklık matrizi.
+
+2403
+02:27:01,440 --> 02:27:06,979
+Sınıf karışıklık matrizi bir binary classification problemi için verilmiş.
+
+2404
+02:27:11,629 --> 02:27:16,860
+Neden? Çünkü iki tane sınıf görüyoruz.
+
+2405
+02:27:16,979 --> 02:27:18,059
+Pozitif sınıf, negatif sınıf.
+
+2406
+02:27:18,059 --> 02:27:21,440
+Ya da yes veya no sınıfı gibi.
+
+2407
+02:27:23,639 --> 02:27:42,159
+Bu matrizde actual class dediğimiz gerçek sınıflar yatayda predicted class yani sınıflayıcının tahmin ettikleri ise sütunlara yerleştirilmiş.
+
+2408
+02:27:42,159 --> 02:27:47,000
+Buna göre burası true pozitifi gösteriyor.
+
+2409
+02:27:47,000 --> 02:27:51,420
+Şuranın hep pozitif, buranın negatif olduğunu varsayıyoruz.
+
+2410
+02:27:52,020 --> 02:28:03,620
+True pozitif, true negatif, false pozitif, false negatif şeklinde yerleştiriliyor bu matrize.
+
+2411
+02:28:04,159 --> 02:28:05,420
+True pozitif ne demek?
+
+2412
+02:28:06,100 --> 02:28:13,040
+Gerçekte pozitif sınıf olup sınıflayıcının da pozitif dediklerine true pozitif diyoruz.
+
+2413
+02:28:13,700 --> 02:28:15,360
+Peki false pozitif ne demek?
+
+2414
+02:28:15,700 --> 02:28:16,639
+Gerçek sınıf.
+
+2415
+02:28:16,639 --> 02:28:16,700
+Gerçek sınıf.
+
+2416
+02:28:16,700 --> 02:28:16,780
+Gerçek sınıf.
+
+2417
+02:28:16,780 --> 02:28:16,879
+Gerçek sınıf.
+
+2418
+02:28:16,879 --> 02:28:16,979
+Gerçek sınıf.
+
+2419
+02:28:17,000 --> 02:28:24,120
+Sınıfı negatif olan ama sınıflayıcının pozitif dediği örneklere false pozitif diyoruz.
+
+2420
+02:28:26,639 --> 02:28:40,979
+False negatif için konuşacak olursak, sample'ın gerçek sınıfı pozitifken sınıflayıcının negatif demesi durumuna false negatif diyoruz.
+
+2421
+02:28:41,719 --> 02:28:41,879
+Tamam.
+
+2422
+02:28:41,879 --> 02:28:52,709
+Buna göre bir sınıflayıcının ekürisi yani bir...
+
+2423
+02:28:53,690 --> 02:29:09,950
+Doğruluğu, ne kadar doğru çalıştığını gösteren ölçü, true pozitiflerle true negatiflerin toplamı bölü toplam örnek sayısı şeklinde hesaplanır.
+
+2424
+02:29:10,549 --> 02:29:14,750
+True pozitif artı true negatif bölü toplam sample sayısı.
+
+2425
+02:29:15,129 --> 02:29:17,770
+Buradan biz ekürisiye hesaplıyoruz.
+
+2426
+02:29:17,770 --> 02:29:24,500
+Şimdi az önce konuştuğumuz imbalans...
+
+2427
+02:29:25,420 --> 02:29:28,899
+Data örneğini görüyorsunuz.
+
+2428
+02:29:29,500 --> 02:29:33,659
+Class 0'da total number of test samples demiş.
+
+2429
+02:29:33,819 --> 02:29:38,260
+10 bin tane sample'ımız var, test sample'ımız var.
+
+2430
+02:29:38,739 --> 02:29:45,840
+Ve bu 10 bin tane sample içerisinde sadece 10 tane class 1 örnek var.
+
+2431
+02:29:46,340 --> 02:29:46,680
+Ne var?
+
+2432
+02:29:46,680 --> 02:29:54,680
+Burada sınıflara dağılımına baktığımız zaman örneklerin işte dengesiz veri dağılımı dediğimiz dağılımı görüyorsunuz.
+
+2433
+02:29:55,420 --> 02:30:09,149
+10 bin tane sample'da 10 tane sadece yani binde bir class, bir sample'ı olduğu anlamına geliyor.
+
+2434
+02:30:13,200 --> 02:30:17,659
+Yine aynı problem üzerinde konuşuyoruz.
+
+2435
+02:30:18,659 --> 02:30:21,520
+Two class, iki sınıflı bir sınıflayıcı.
+
+2436
+02:30:22,440 --> 02:30:28,079
+Class no samples için bu defa 990'a 10 örneğini vermiş.
+
+2437
+02:30:28,079 --> 02:30:30,260
+Toplam bin tane sample var diyor.
+
+2438
+02:30:30,819 --> 02:30:54,700
+Ve ben hiçbir sınıflayıcı çalıştırmadan doğrudan zaten bu dengesiz dağılımı bildiğim için yani diyebilirim ki bütün gelen test örneklerine class no etiketi koyacağım ve tahmin olarak bunu yazacağım dersem zaten bu sınıflayıcı 10 tane hata yapacak.
+
+2439
+02:30:54,700 --> 02:31:00,700
+990 tanesini doğru sınıflamış olacak ve sınıflayıcının doğruluğu %90'dır.
+
+2440
+02:31:00,819 --> 02:31:01,799
+Tam 9 çıkacak.
+
+2441
+02:31:02,319 --> 02:31:03,079
+Oh ne güzel.
+
+2442
+02:31:03,520 --> 02:31:10,040
+Hiç de bir iş yapmadan ben %99 doğrulukla çalışan bir sınıflayıcı yapmış oldum.
+
+2443
+02:31:10,159 --> 02:31:12,559
+Her gelen örneğe no dedim.
+
+2444
+02:31:12,899 --> 02:31:14,200
+Class no etiketi yapıştırdım.
+
+2445
+02:31:15,440 --> 02:31:18,079
+Ama burada şöyle bir sıkıntı var.
+
+2446
+02:31:18,079 --> 02:31:27,479
+Bizim burada nadir örnek sayısına sahip olduğumuz sınıf aslında bizim için en önemli sınıf olabilir.
+
+2447
+02:31:27,639 --> 02:31:30,559
+Mesela fraud detection'da fraud işlemleri.
+
+2448
+02:31:30,819 --> 02:31:33,920
+Fraud işlemleri zaten 10 tane fraud var.
+
+2449
+02:31:34,280 --> 02:31:36,139
+10'unu da kaçırmış oluyorum.
+
+2450
+02:31:36,420 --> 02:31:37,719
+Tahmin edememiş oluyorum.
+
+2451
+02:31:39,780 --> 02:31:50,139
+Dolayısıyla demek ki bir sınıflayıcının sadece accuracy değerine bakarak iyi olup olmadığını söyleyemeyiz.
+
+2452
+02:31:50,280 --> 02:31:56,520
+Özellikle bu bir dengesiz veri dağılımı söz konusuysa.
+
+2453
+02:31:56,520 --> 02:32:02,590
+Peki iki parametremiz daha var burada.
+
+2454
+02:32:03,190 --> 02:32:15,329
+Söyleyebileceğimiz precision değeri burada ABCD diye gösterilmiş değerler üzerinden gidebiliriz.
+
+2455
+02:32:16,590 --> 02:32:21,190
+A bölü A artı C diyor.
+
+2456
+02:32:21,649 --> 02:32:24,250
+A artı C şu toplam.
+
+2457
+02:32:24,250 --> 02:32:25,829
+Yani bu şu demek.
+
+2458
+02:32:26,350 --> 02:32:32,930
+Doğru tahmin edilen pozitiflerin true pozitiflerin neye oranı?
+
+2459
+02:32:33,190 --> 02:32:37,489
+Sınıflayıcının pozitif dediği tüm örneklere oranı.
+
+2460
+02:32:37,790 --> 02:32:39,510
+Sınıflayıcının pozitif dediği.
+
+2461
+02:32:39,590 --> 02:32:46,190
+Buraya ben hep pozitif, negatif çünkü şeyde öyle kullanıyoruz.
+
+2462
+02:32:46,809 --> 02:32:55,190
+Klasik literatürde yes no yerine pozitif negatif diyoruz.
+
+2463
+02:32:55,190 --> 02:32:59,680
+Ve burası true pozitif.
+
+2464
+02:33:00,200 --> 02:33:02,819
+Burası false pozitif.
+
+2465
+02:33:03,500 --> 02:33:05,120
+Burası true negatif.
+
+2466
+02:33:05,600 --> 02:33:05,860
+Burası false.
+
+2467
+02:33:06,299 --> 02:33:07,920
+False negatifleri gösteriyor.
+
+2468
+02:33:08,739 --> 02:33:11,219
+Tabi bu actual class satırdayken.
+
+2469
+02:33:11,579 --> 02:33:11,600
+Tamam.
+
+2470
+02:33:12,420 --> 02:33:15,540
+Buna göre precision'ı, precision'ı ne dedik?
+
+2471
+02:33:15,700 --> 02:33:20,840
+True pozitif bölü sınıflayıcının pozitif dediği tüm örnekler.
+
+2472
+02:33:21,299 --> 02:33:23,760
+True pozitif artı false pozitifler.
+
+2473
+02:33:24,659 --> 02:33:25,639
+Precision'ı veriyor.
+
+2474
+02:33:27,260 --> 02:33:29,579
+Recall dediğim ikinci bir parametre var.
+
+2475
+02:33:29,700 --> 02:33:31,000
+Bu çok daha önemli.
+
+2476
+02:33:32,059 --> 02:33:33,079
+Recall şu demek.
+
+2477
+02:33:33,079 --> 02:33:36,079
+Ben gerçekte pozitif olan örnekleri...
+
+2478
+02:33:36,299 --> 02:33:38,299
+...ne kadarını bulabildim?
+
+2479
+02:33:39,940 --> 02:33:41,940
+True pozitiflerin sayısı bölü...
+
+2480
+02:33:42,700 --> 02:33:51,860
+...gerçekten pozitif olanların sayısı yani gerçek sınıfı pozitif olan örnek sayısı a artı b ile bulunuyor.
+
+2481
+02:33:52,379 --> 02:33:57,479
+Bu da true pozitif artı false negatif demek.
+
+2482
+02:33:59,139 --> 02:34:00,479
+İki parametre ürettik.
+
+2483
+02:34:00,559 --> 02:34:02,559
+Bu iki parametre ikisi de çok önemli.
+
+2484
+02:34:02,559 --> 02:34:06,280
+Bu ikisini ayrı ayrı izlemek bazen zor olabiliyor.
+
+2485
+02:34:06,299 --> 02:34:14,299
+Yani işte precision bir yerde artarken recall düşüyor ama acaba hangisi daha iyi kararını vermekte zorlandığımız noktada...
+
+2486
+02:34:15,559 --> 02:34:20,280
+...arkadaşlar F-measure dediğimiz bir ölçü devreye giriyor.
+
+2487
+02:34:20,799 --> 02:34:26,520
+Bu precision ve recall üzerinden hesaplanan bir değer nedir?
+
+2488
+02:34:26,719 --> 02:34:28,459
+Harmonik ortalaması.
+
+2489
+02:34:28,700 --> 02:34:34,559
+P ve R'nin yani precision ve recall değerinin harmonik ortalaması.
+
+2490
+02:34:36,299 --> 02:34:43,360
+İki R çarpı P bölü R artı P formülünden çıkıyor.
+
+2491
+02:34:48,670 --> 02:34:50,750
+Şimdi burada ilginç örnekler var.
+
+2492
+02:34:55,340 --> 02:34:57,739
+Bir class confusion matriz verilmiş.
+
+2493
+02:34:58,079 --> 02:35:03,760
+Bu class confusion matrize göre dengesiz bir veri dağılımı var.
+
+2494
+02:35:04,700 --> 02:35:08,920
+Pozitif sınıfta gerçek pozitiflerin sayısı nedir acaba?
+
+2495
+02:35:13,879 --> 02:35:14,059
+On.
+
+2496
+02:35:14,840 --> 02:35:17,479
+Gerçek negatiflerin sayısı nedir?
+
+2497
+02:35:17,479 --> 02:35:17,559
+On.
+
+2498
+02:35:17,559 --> 02:35:17,579
+On.
+
+2499
+02:35:17,579 --> 02:35:17,600
+On.
+
+2500
+02:35:17,600 --> 02:35:17,620
+On.
+
+2501
+02:35:17,620 --> 02:35:17,639
+On.
+
+2502
+02:35:17,639 --> 02:35:17,659
+On.
+
+2503
+02:35:17,659 --> 02:35:17,719
+On.
+
+2504
+02:35:17,719 --> 02:35:17,760
+On.
+
+2505
+02:35:17,760 --> 02:35:17,780
+On.
+
+2506
+02:35:17,780 --> 02:35:17,799
+On.
+
+2507
+02:35:17,799 --> 02:35:17,819
+On.
+
+2508
+02:35:17,819 --> 02:35:17,840
+On.
+
+2509
+02:35:17,840 --> 02:35:17,879
+On.
+
+2510
+02:35:17,879 --> 02:35:17,899
+On.
+
+2511
+02:35:17,899 --> 02:35:17,959
+On.
+
+2512
+02:35:17,959 --> 02:35:23,760
+On.
+
+2513
+02:35:23,760 --> 02:35:23,780
+On.
+
+2514
+02:35:23,780 --> 02:35:23,819
+On.
+
+2515
+02:35:23,819 --> 02:35:23,879
+On.
+
+2516
+02:35:24,180 --> 02:35:24,479
+On.
+
+2517
+02:35:24,479 --> 02:35:24,520
+On.
+
+2518
+02:35:24,520 --> 02:35:24,579
+On.
+
+2519
+02:35:24,579 --> 02:35:24,600
+On.
+
+2520
+02:35:24,600 --> 02:35:24,799
+On.
+
+2521
+02:35:25,799 --> 02:35:25,959
+On.
+
+2522
+02:35:25,959 --> 02:35:25,979
+On.
+
+2523
+02:35:25,979 --> 02:35:26,000
+On.
+
+2524
+02:35:26,159 --> 02:35:26,420
+On.
+
+2525
+02:35:26,420 --> 02:35:26,459
+On.
+
+2526
+02:35:26,459 --> 02:35:26,479
+On.
+
+2527
+02:35:26,479 --> 02:35:26,500
+On.
+
+2528
+02:35:26,500 --> 02:35:26,520
+On.
+
+2529
+02:35:26,520 --> 02:35:26,600
+On.
+
+2530
+02:35:26,600 --> 02:35:26,760
+On.
+
+2531
+02:35:26,760 --> 02:35:26,840
+On.
+
+2532
+02:35:26,840 --> 02:35:26,899
+On.
+
+2533
+02:35:26,899 --> 02:35:27,059
+On.
+
+2534
+02:35:27,059 --> 02:35:27,120
+On.
+
+2535
+02:35:27,120 --> 02:35:27,139
+On.
+
+2536
+02:35:27,139 --> 02:35:27,239
+On.
+
+2537
+02:35:27,239 --> 02:35:27,360
+On.
+
+2538
+02:35:27,360 --> 02:35:27,379
+On.
+
+2539
+02:35:27,379 --> 02:35:27,399
+On.
+
+2540
+02:35:27,399 --> 02:35:27,420
+On.
+
+2541
+02:35:27,420 --> 02:35:27,760
+On.
+
+2542
+02:35:27,760 --> 02:35:27,879
+On.
+
+2543
+02:35:27,879 --> 02:35:27,899
+On.
+
+2544
+02:35:27,899 --> 02:35:27,920
+On.
+
+2545
+02:35:27,920 --> 02:35:27,959
+On.
+
+2546
+02:35:27,959 --> 02:35:28,059
+On.
+
+2547
+02:35:28,059 --> 02:35:28,079
+On.
+
+2548
+02:35:28,079 --> 02:35:28,520
+On.
+
+2549
+02:35:28,520 --> 02:35:28,620
+On.
+
+2550
+02:35:28,620 --> 02:35:28,639
+On.
+
+2551
+02:35:28,639 --> 02:35:28,719
+On.
+
+2552
+02:35:28,719 --> 02:35:28,739
+On.
+
+2553
+02:35:28,739 --> 02:35:28,840
+On.
+
+2554
+02:35:28,840 --> 02:35:29,180
+Pardon.
+
+2555
+02:35:29,180 --> 02:35:29,840
+Pardon.
+
+2556
+02:35:29,840 --> 02:35:49,799
+Şimdi pozitiflerin sayısı gerçek pozitiflerin sayısı dediğim zaman bu doğrultuda toplam alıyorum on gerçek negatiflerin sayısı nedir dediğimde de şurayı topluyorum 990 ve toplam örnek sayısı burada bin tane örnek var diye görünüyor.
+
+2557
+02:35:49,799 --> 02:35:54,799
+Şimdi ben bu data sette precision'ı önce hesaplayacağım.
+
+2558
+02:35:55,620 --> 02:35:56,940
+Precision ne demekti?
+
+2559
+02:35:57,139 --> 02:35:59,739
+Doğru tahmin ettiğim pozitiflerin sayısı.
+
+2560
+02:35:59,840 --> 02:36:05,420
+Bölü sınıflayıcının pozitif dediği örnek sayısı yani şu doğrultuda toplam alıyor.
+
+2561
+02:36:05,920 --> 02:36:11,700
+On bölü on artı on buradan on bölü yirmi sıfır nokta beş çıkıyor.
+
+2562
+02:36:12,059 --> 02:36:17,659
+Precision'ı bu pozitif sınıf için bir precision hesaplamış oluyorum.
+
+2563
+02:36:18,500 --> 02:36:23,659
+Recall değeri recall değeri ise gerçekte on tane sample vardı.
+
+2564
+02:36:23,780 --> 02:36:27,459
+Bu on tanenin ne kadarını doğru tahmin ettim diye söylüyor bana.
+
+2565
+02:36:27,459 --> 02:36:29,819
+Onun onunu da doğru tahmin etmişim.
+
+2566
+02:36:29,840 --> 02:36:32,459
+Yani recall değeri yüzde yüz çıkıyor.
+
+2567
+02:36:34,280 --> 02:36:37,500
+F-measure bu ikisinin harmonik ortalaması demiştik.
+
+2568
+02:36:37,940 --> 02:36:47,719
+Accuracy ise diagonal yönde toplam 990 bölü bin yani yüzde doksan dokuz çıkıyor.
+
+2569
+02:36:50,100 --> 02:36:51,360
+Burada bir başka örnek.
+
+2570
+02:36:54,760 --> 02:37:03,110
+Yine 990 tane negatif örnek var.
+
+2571
+02:37:04,110 --> 02:37:06,250
+Ama negatif örnekleri.
+
+2572
+02:37:06,370 --> 02:37:09,790
+Neyse çok yorum yapmadan şey yapayım.
+
+2573
+02:37:10,829 --> 02:37:16,809
+Yine toplamda baktığımız zaman on tane pozitif sınıftan örnek var.
+
+2574
+02:37:17,290 --> 02:37:25,129
+Ama bu sınıflayıcı bu sınıflayıcı on tane pozitif örnekten sadece bir tanesini doğru sınıflayabilmiş.
+
+2575
+02:37:25,670 --> 02:37:29,010
+Geriye kalan dokuz tanesine negatif demiş.
+
+2576
+02:37:29,309 --> 02:37:29,790
+No demiş.
+
+2577
+02:37:29,790 --> 02:37:34,770
+Bu sınıflayıcı için bu sınıflayıcı için.
+
+2578
+02:37:34,850 --> 02:37:35,790
+Precision hesaplamış.
+
+2579
+02:37:36,370 --> 02:37:38,389
+Kulladığımızda precision şu demekti.
+
+2580
+02:37:38,909 --> 02:37:43,069
+Evet dediklerinin kaç tanesi gerçekten evet?
+
+2581
+02:37:45,149 --> 02:37:46,030
+Yüzde yüz.
+
+2582
+02:37:47,030 --> 02:37:51,790
+Ama precision burada iyi bir ölçü olmadı benim için.
+
+2583
+02:37:52,170 --> 02:37:55,430
+Çünkü ben kaçırdığım şu dokuz tane sample dayım.
+
+2584
+02:37:55,729 --> 02:37:57,549
+Onu bana gösteren ölçü nedir?
+
+2585
+02:37:58,049 --> 02:37:58,530
+Recall.
+
+2586
+02:37:58,530 --> 02:38:05,629
+Recall değeri diyor ki pozitif sınıfta on tane sample vardı.
+
+2587
+02:38:05,629 --> 02:38:08,049
+Sen bunun sadece birini bulabildin.
+
+2588
+02:38:08,930 --> 02:38:12,870
+Yani senin recall değerin yüzde on diyor.
+
+2589
+02:38:14,350 --> 02:38:18,510
+Bunu en iyi gösteren ölçü burada recall olmuş oldu.
+
+2590
+02:38:18,930 --> 02:38:26,930
+Ve bunun üzerinden tabii F-measure'a baktığımız zaman F-measure yukarıdakiyle kıyasladığımızda belirgin olarak düştü.
+
+2591
+02:38:27,370 --> 02:38:33,629
+Dolayısıyla hani iyi bir ölçü olmadığını bu kullanım geliştirilen modelin iyi sonuç üretmediğini.
+
+2592
+02:38:33,629 --> 02:38:35,629
+Yükarıdaki modelin daha.
+
+2593
+02:38:35,629 --> 02:38:35,969
+Daha iyi.
+
+2594
+02:38:36,329 --> 02:38:44,350
+Hani aşağıdakiyle kıyaslayacak olursak yukarıda kullanılan sınıflayıcı modelin daha iyi olduğunu söyleyecektir bize.
+
+2595
+02:38:44,350 --> 02:38:56,170
+Ecuracy açısından baktığımızda alttaki daha iyi gibi görünmekle birlikte aslında üstteki model daha başarılıdır diyebiliyoruz.
+
+2596
+02:39:04,979 --> 02:39:10,600
+Burada gerçek pozitif örneklerin sayısı ne?
+
+2597
+02:39:10,739 --> 02:39:12,459
+Gerçek negatiflerin sayısı ne?
+
+2598
+02:39:17,780 --> 02:39:18,280
+Ünlüye.
+
+2599
+02:39:18,399 --> 02:39:20,479
+50'ye 50 eşit.
+
+2600
+02:39:20,739 --> 02:39:22,260
+Çok güzel teşekkürler.
+
+2601
+02:39:23,540 --> 02:39:29,719
+Ve her iki sınıfta da eşit sayıda hata yapılmış gördüğünüz gibi.
+
+2602
+02:39:31,079 --> 02:39:35,159
+10 tane örnek gerçekte pozitifken negatif bulunmuş.
+
+2603
+02:39:36,159 --> 02:39:40,799
+10 tane örnek gerçekte negatifken pozitif bulunmuş.
+
+2604
+02:39:41,159 --> 02:39:45,479
+Ve bu şekilde eşit sayıda hata yapıldığını görebilirsiniz.
+
+2605
+02:39:45,479 --> 02:39:47,780
+Bu bir imbalans data değildi.
+
+2606
+02:39:47,780 --> 02:39:51,059
+Bu verdiğim örnek dengeli bir dataydı.
+
+2607
+02:39:51,420 --> 02:39:55,260
+Yani her iki sınıftan eşit sayıda olduğu için bir problem yok orada.
+
+2608
+02:39:55,959 --> 02:40:02,420
+Ama şimdi mesela ikinci gelen Class Confusion matriste dengesiz bir data dağılımı var.
+
+2609
+02:40:02,920 --> 02:40:08,579
+Pozitif örneklerin sayısı 50 iken negatif örneklerin sayısı 5000.
+
+2610
+02:40:10,540 --> 02:40:12,579
+Baya dengesiz bir veri.
+
+2611
+02:40:12,639 --> 02:40:17,540
+Yüzde biri kadar oluyor pozitif örneklerin sayısı.
+
+2612
+02:40:17,780 --> 02:40:26,780
+Bu Classifier'ın yapısına baktığımız zaman benzer şekilde burada Precision ve Recall hesaplamam gerekiyor.
+
+2613
+02:40:27,340 --> 02:40:29,879
+Precision değeri nasıl hesaplanıyordu?
+
+2614
+02:40:30,040 --> 02:40:34,590
+Precision 40 bölü.
+
+2615
+02:40:34,590 --> 02:40:37,829
+40 bölü ne olacak?
+
+2616
+02:40:40,069 --> 02:40:40,850
+1040 mı?
+
+2617
+02:40:41,010 --> 02:40:42,110
+1040 olacak.
+
+2618
+02:40:42,409 --> 02:40:43,790
+Evet güzel teşekkürler.
+
+2619
+02:40:43,790 --> 02:40:46,530
+Ve Recall değeri.
+
+2620
+02:40:46,670 --> 02:40:47,690
+Recall değeri.
+
+2621
+02:40:49,670 --> 02:40:49,790
+Toplamda.
+
+2622
+02:40:50,790 --> 02:40:56,729
+Toplamda 50 tane sample'dan 40'ını doğru bulduğum için yüzde 80 çıkıyor.
+
+2623
+02:40:57,629 --> 02:40:59,370
+Bu verilen modelde.
+
+2624
+02:41:00,870 --> 02:41:07,659
+İki modeli birbiriyle kıyaslamayacağım çünkü sample sayıları farklı.
+
+2625
+02:41:10,530 --> 02:41:11,690
+Biz ne öğrendik?
+
+2626
+02:41:12,110 --> 02:41:18,270
+Biz burada bir sınıflayıcının doğruluğunu ölçmek için Accuracy'i öğrendik.
+
+2627
+02:41:18,829 --> 02:41:20,930
+Precision'ı öğrendik.
+
+2628
+02:41:21,709 --> 02:41:23,290
+Recall'ı öğrendik.
+
+2629
+02:41:23,290 --> 02:41:23,930
+Burada.
+
+2630
+02:41:24,350 --> 02:41:24,969
+Bunun dışında.
+
+2631
+02:41:25,010 --> 02:41:26,870
+Başka ölçüler var.
+
+2632
+02:41:26,969 --> 02:41:33,590
+Mesela Error Rate dediğim zaman hata oranı bir eksi Accuracy ile hesaplanabilir.
+
+2633
+02:41:34,229 --> 02:41:38,989
+Burada Specificity diye bir kavram var.
+
+2634
+02:41:39,090 --> 02:41:40,370
+Çok zor okuyorum ben bunu.
+
+2635
+02:41:41,090 --> 02:41:44,450
+Bunun diğer bir adı True Negative Rate.
+
+2636
+02:41:45,049 --> 02:41:48,930
+True Negative Rate kullanabiliriz ölçü olarak.
+
+2637
+02:41:49,629 --> 02:41:53,629
+Efendim False Positive Rate'i kullanabiliriz ölçü olarak.
+
+2638
+02:41:55,010 --> 02:42:00,129
+Başka, başka False Negative Rate diye bir kavram var.
+
+2639
+02:42:00,389 --> 02:42:04,989
+Böyle değişik ölçüler burada formüllerini gördüğümüz ölçüler var.
+
+2640
+02:42:04,989 --> 02:42:06,270
+Neyi bilmenizi istiyorum?
+
+2641
+02:42:07,549 --> 02:42:09,090
+Precision Recall.
+
+2642
+02:42:09,350 --> 02:42:10,110
+Accuracy.
+
+2643
+02:42:10,110 --> 02:42:13,950
+Bunu gözünüz kapalı söyleyebilmenizi isterim.
+
+2644
+02:42:14,209 --> 02:42:17,790
+Diğerlerine de o kadar şey değil bakabilirsiniz yani öbürlerine.
+
+2645
+02:42:18,309 --> 02:42:19,069
+Formülüne.
+
+2646
+02:42:21,100 --> 02:42:25,959
+Evet burada diğer parametreleri False Positive Rate.
+
+2647
+02:42:26,520 --> 02:42:27,280
+Eee
+
+2648
+02:42:27,540 --> 02:42:33,440
+Vesaire nasıl hesaplanır bir klas, verilen bir class confusion maddesi üzerinden.
+
+2649
+02:42:33,680 --> 02:42:35,479
+Bunları göstermiş.
+
+2650
+02:42:35,739 --> 02:42:37,780
+Değişik örnekler var.
+
+2651
+02:42:39,959 --> 02:42:42,260
+Bir başka değerlendirme metriyi.
+
+2652
+02:42:44,120 --> 02:42:50,260
+Receiver Operating Characteristik dediğimiz ROC eğrileri var arkadaşlar.
+
+2653
+02:42:51,540 --> 02:42:57,159
+Sınıflayıcının başarısını ölçmek için kullanılıyor yine.
+
+2654
+02:42:57,940 --> 02:42:59,479
+1950 yılında.
+
+2655
+02:42:59,520 --> 02:43:02,340
+Bunlar da geliştirilmiş efendim.
+
+2656
+02:43:02,840 --> 02:43:05,159
+ROC Curve dediğimiz Curve.
+
+2657
+02:43:05,659 --> 02:43:11,799
+True Positive Rate eksenine False Positive Rate eksenine yani iki eksen var.
+
+2658
+02:43:12,059 --> 02:43:14,360
+Bu eksen üzerinde plot ediliyor.
+
+2659
+02:43:14,879 --> 02:43:15,899
+Ve
+
+2660
+02:43:17,700 --> 02:43:25,879
+Performance of a Model Represented as a Point in a ROC Curve demiş.
+
+2661
+02:43:28,200 --> 02:43:29,479
+ROC Curve dediğimiz
+
+2662
+02:43:29,780 --> 02:43:34,379
+Receiver Operating Characteristik eğrisinin altında kalan alanın
+
+2663
+02:43:34,899 --> 02:43:37,200
+bire yakın olması
+
+2664
+02:43:38,479 --> 02:43:42,059
+sınıflayıcının yüksek başarım gösterdiği anlamına geliyor.
+
+2665
+02:43:43,600 --> 02:43:45,899
+Az önce dedik ki
+
+2666
+02:43:46,920 --> 02:43:48,979
+iki eksenimiz var.
+
+2667
+02:43:50,520 --> 02:43:52,040
+True Positive Rate
+
+2668
+02:43:54,299 --> 02:43:57,620
+ve False Positive Rate eksenlerimiz.
+
+2669
+02:43:58,399 --> 02:43:59,680
+Bu eksenlere göre
+
+2670
+02:44:03,850 --> 02:44:05,370
+çiziliyor bu eğri.
+
+2671
+02:44:07,930 --> 02:44:09,469
+Bu eğri üzerinde
+
+2672
+02:44:09,989 --> 02:44:13,569
+Diagonal Line için Random Guessing demiş.
+
+2673
+02:44:15,799 --> 02:44:19,750
+Amacımız
+
+2674
+02:44:20,270 --> 02:44:24,110
+olabildiğince bu kırmızı eğri ile verildiği gibi
+
+2675
+02:44:24,610 --> 02:44:25,389
+şunun
+
+2676
+02:44:25,889 --> 02:44:27,170
+olabildiğince
+
+2677
+02:44:27,950 --> 02:44:28,969
+bu şekilde
+
+2678
+02:44:29,469 --> 02:44:30,250
+çıkması.
+
+2679
+02:44:30,510 --> 02:44:33,069
+Bu ne demek? Bakın eksenler 0 ile
+
+2680
+02:44:33,309 --> 02:44:34,590
+1 arasında
+
+2681
+02:44:34,850 --> 02:44:36,129
+değiştiği için
+
+2682
+02:44:36,129 --> 02:44:38,950
+bu eğrinin altında kalan alan
+
+2683
+02:44:39,450 --> 02:44:40,729
+tam bu eğri
+
+2684
+02:44:40,989 --> 02:44:42,790
+şöyle olsa 1 olurdu.
+
+2685
+02:44:43,049 --> 02:44:47,129
+Bire ne kadar yakın olursa bu eğrinin altında kalan alan
+
+2686
+02:44:47,389 --> 02:44:50,469
+bu sınıflayıcı model o kadar başarılıdır
+
+2687
+02:44:50,729 --> 02:44:51,489
+anlamına
+
+2688
+02:44:52,010 --> 02:44:52,510
+geliyor.
+
+2689
+02:44:53,030 --> 02:44:54,569
+Neye bakıyoruz dedik?
+
+2690
+02:44:55,069 --> 02:44:57,889
+True Positive Rate
+
+2691
+02:44:58,649 --> 02:44:59,430
+ile
+
+2692
+02:45:00,450 --> 02:45:00,969
+False
+
+2693
+02:45:01,469 --> 02:45:02,750
+Positive
+
+2694
+02:45:03,270 --> 02:45:04,290
+Rate'e
+
+2695
+02:45:04,549 --> 02:45:05,049
+bakıyoruz.
+
+2696
+02:45:05,049 --> 02:45:06,090
+True Positive Rate'i
+
+2697
+02:45:06,649 --> 02:45:08,690
+false positive rate'e bakıyoruz.
+
+2698
+02:45:08,950 --> 02:45:09,709
+Bunu da
+
+2699
+02:45:09,969 --> 02:45:11,250
+tekrar şöyle
+
+2700
+02:45:11,510 --> 02:45:12,010
+gidip
+
+2701
+02:45:15,540 --> 02:45:17,079
+şuradan
+
+2702
+02:45:17,579 --> 02:45:19,120
+bakacak olursak
+
+2703
+02:45:23,309 --> 02:45:24,590
+True Positive Rate'i
+
+2704
+02:45:25,870 --> 02:45:27,149
+True Positive Rate'i
+
+2705
+02:45:27,930 --> 02:45:29,450
+True pozitiflerin
+
+2706
+02:45:30,489 --> 02:45:31,510
+neye oranı dedik?
+
+2707
+02:45:31,770 --> 02:45:34,329
+True positive artı false negatiflere
+
+2708
+02:45:34,569 --> 02:45:35,090
+oranı.
+
+2709
+02:45:35,610 --> 02:45:36,110
+Yani
+
+2710
+02:45:37,389 --> 02:45:38,670
+True pozitiflerin
+
+2711
+02:45:38,670 --> 02:45:44,309
+True pozitif artı false negatife oranı
+
+2712
+02:45:44,549 --> 02:45:45,829
+recall değeri.
+
+2713
+02:45:46,350 --> 02:45:49,170
+Daha önce tanımladığımız recall değeri.
+
+2714
+02:45:52,579 --> 02:45:54,379
+Diğer parametremiz
+
+2715
+02:45:54,639 --> 02:45:56,420
+False positive rate'ti.
+
+2716
+02:45:56,940 --> 02:45:58,979
+False positive rate
+
+2717
+02:45:59,239 --> 02:46:01,799
+şurada görüyorsunuz false pozitiflerin
+
+2718
+02:46:06,000 --> 02:46:08,799
+True negatif artı false pozitiflere
+
+2719
+02:46:09,059 --> 02:46:09,579
+oranı.
+
+2720
+02:46:10,600 --> 02:46:11,879
+False pozitiflerin
+
+2721
+02:46:12,440 --> 02:46:15,260
+false pozitif artı True negatiflere
+
+2722
+02:46:15,520 --> 02:46:16,280
+oranı
+
+2723
+02:46:16,540 --> 02:46:17,559
+şeklinde
+
+2724
+02:46:17,819 --> 02:46:18,579
+verilmiş.
+
+2725
+02:46:20,379 --> 02:46:21,920
+False pozitif
+
+2726
+02:46:22,159 --> 02:46:22,940
+bölü
+
+2727
+02:46:23,440 --> 02:46:26,000
+false pozitif artı True negatif
+
+2728
+02:46:26,260 --> 02:46:27,540
+şeklinde verilmiş.
+
+2729
+02:46:28,059 --> 02:46:29,079
+Şimdi buradan
+
+2730
+02:46:31,379 --> 02:46:33,180
+Rock Curve nasıl çizilire
+
+2731
+02:46:33,440 --> 02:46:33,940
+doğru
+
+2732
+02:46:34,200 --> 02:46:34,719
+geçeceğim.
+
+2733
+02:46:36,819 --> 02:46:38,620
+Yoruldunuz biliyorum ama
+
+2734
+02:46:41,270 --> 02:46:44,350
+şurada decision tree örneği üzerinden
+
+2735
+02:46:45,629 --> 02:46:46,649
+vermiş bunu.
+
+2736
+02:46:47,209 --> 02:46:52,229
+Bir örneğimiz var.
+
+2737
+02:46:55,659 --> 02:46:57,440
+Bu Rock Curve için değil de
+
+2738
+02:46:57,700 --> 02:46:58,719
+şeyleri de
+
+2739
+02:47:00,520 --> 02:47:02,559
+Class Confusion matrisi
+
+2740
+02:47:02,819 --> 02:47:04,879
+gösteriyor.
+
+2741
+02:47:06,399 --> 02:47:07,940
+Rock Curve example
+
+2742
+02:47:12,719 --> 02:47:14,520
+Rock Curve example burada.
+
+2743
+02:47:18,799 --> 02:47:21,620
+Farklı
+
+2744
+02:47:22,120 --> 02:47:23,659
+skor değerleri için
+
+2745
+02:47:24,440 --> 02:47:26,739
+şurada gördüğümüz skor değerleri için
+
+2746
+02:47:26,739 --> 02:47:39,729
+True Class değerlerini bildiğimiz örnekler üzerinden bir analiz yapıyoruz.
+
+2747
+02:47:39,989 --> 02:47:40,489
+Bakın
+
+2748
+02:47:42,790 --> 02:47:43,829
+10 tane
+
+2749
+02:47:45,610 --> 02:47:46,629
+sample var.
+
+2750
+02:47:47,149 --> 02:47:50,989
+Bu sample'ların her biri için
+
+2751
+02:47:51,510 --> 02:47:56,870
+Use a classifier that produces a continuous-valued score for each instance.
+
+2752
+02:47:57,389 --> 02:47:58,409
+For each instance.
+
+2753
+02:47:58,409 --> 02:48:01,989
+Elimizde 10 tane sample var. 1'den 10'a kadar.
+
+2754
+02:48:02,250 --> 02:48:03,530
+Her biri için
+
+2755
+02:48:03,790 --> 02:48:11,209
+Produce a continuous-valued score for each instance demiş.
+
+2756
+02:48:13,010 --> 02:48:14,790
+Pozitif sınıfa ait olma
+
+2757
+02:48:15,049 --> 02:48:18,370
+skorunu buluyor. 0,95 gibi.
+
+2758
+02:48:18,889 --> 02:48:19,409
+Tamam.
+
+2759
+02:48:20,170 --> 02:48:25,030
+Sort the instances in descending order
+
+2760
+02:48:25,290 --> 02:48:26,569
+according to the score.
+
+2761
+02:48:26,829 --> 02:48:28,110
+Yani biz bir Rock Curve çizdik.
+
+2762
+02:48:28,409 --> 02:48:29,430
+Rock Curve çizdirmek için.
+
+2763
+02:48:29,690 --> 02:48:30,969
+Rock Curve çizdirmek için.
+
+2764
+02:48:31,229 --> 02:48:31,729
+Bunları
+
+2765
+02:48:31,989 --> 02:48:34,549
+küçükten şey büyükten küçüğe doğru
+
+2766
+02:48:35,569 --> 02:48:37,370
+Decreasing
+
+2767
+02:48:37,889 --> 02:48:40,690
+Decreasing order according to the score.
+
+2768
+02:48:40,950 --> 02:48:44,530
+Decreasing order zaten burada gördüğümüz şekilde.
+
+2769
+02:48:44,790 --> 02:48:47,610
+Daha sonra apply a threshold at each
+
+2770
+02:48:47,870 --> 02:48:51,190
+unique value of the score diyor.
+
+2771
+02:48:51,969 --> 02:48:52,469
+Ve
+
+2772
+02:48:52,729 --> 02:48:58,370
+count the number of true positive, false positive, true negative and false negative at each
+
+2773
+02:48:58,670 --> 02:48:59,170
+threshold.
+
+2774
+02:49:03,530 --> 02:49:05,829
+Şimdi bu thresholdlara göre
+
+2775
+02:49:06,090 --> 02:49:07,889
+bu
+
+2776
+02:49:08,129 --> 02:49:12,489
+Class Confusion Matrix'teki true positive, false positive
+
+2777
+02:49:13,010 --> 02:49:18,629
+true negative, false negative sayılarını hesaplayacağız. Daha sonra onu bu formülde yerine yazacağız.
+
+2778
+02:49:19,649 --> 02:49:21,450
+Tablo oluşturuyoruz bunun için.
+
+2779
+02:49:21,709 --> 02:49:22,469
+Tabloda
+
+2780
+02:49:24,399 --> 02:49:26,700
+diyoruz ki
+
+2781
+02:49:27,979 --> 02:49:28,739
+şurada
+
+2782
+02:49:29,000 --> 02:49:30,799
+koyduğumuz threshold'a göre
+
+2783
+02:49:31,819 --> 02:49:32,840
+threshold değeri
+
+2784
+02:49:32,840 --> 02:49:33,860
+büyük
+
+2785
+02:49:34,120 --> 02:49:36,680
+eşit 0,25
+
+2786
+02:49:36,940 --> 02:49:37,959
+dediğim zaman
+
+2787
+02:49:40,000 --> 02:49:47,239
+bu pozitif sınıf için
+
+2788
+02:49:47,500 --> 02:49:49,299
+kaç tane
+
+2789
+02:49:49,540 --> 02:49:51,860
+sample
+
+2790
+02:49:53,379 --> 02:49:57,479
+pozitif sınıfta çıkıyor, ne kadarı doğru sınıflanıyor bunların?
+
+2791
+02:49:57,739 --> 02:49:59,280
+Bunların sayılarını
+
+2792
+02:50:00,299 --> 02:50:00,819
+burada
+
+2793
+02:50:01,059 --> 02:50:02,100
+giriyoruz.
+
+2794
+02:50:03,620 --> 02:50:04,139
+Şu örnek
+
+2795
+02:50:04,399 --> 02:50:08,239
+tabii hem önümüzde olması gerekiyor bunu söyleyebilmek için.
+
+2796
+02:50:08,540 --> 02:50:09,299
+0,25'te
+
+2797
+02:50:10,340 --> 02:50:11,100
+decreasing order
+
+2798
+02:50:15,790 --> 02:50:16,309
+apply at
+
+2799
+02:50:16,569 --> 02:50:17,590
+threshold value
+
+2800
+02:50:17,850 --> 02:50:20,909
+0,25 değerini uyguladığımızda
+
+2801
+02:50:21,170 --> 02:50:23,469
+0,25 değerini uyguladığımızda
+
+2802
+02:50:25,500 --> 02:50:26,780
+threshold değeri için
+
+2803
+02:50:31,180 --> 02:50:32,459
+true pozitiflerin
+
+2804
+02:50:32,719 --> 02:50:34,520
+sayısı ve
+
+2805
+02:50:34,780 --> 02:50:36,819
+bir dakika ya nasıl çıktı orası?
+
+2806
+02:50:39,659 --> 02:50:40,440
+Ben de yoruldum.
+
+2807
+02:50:40,700 --> 02:50:42,219
+Şu anda kafam durdu.
+
+2808
+02:50:43,500 --> 02:50:49,659
+Evet ben pes ediyorum. Bugün çok yorulduk arkadaşlar. Bunu bırakıyorum önümüzdeki haftaya. Önümüzdeki hafta 20.
+
+2809
+02:50:49,700 --> 02:50:52,780
+23 Nisan tatil var ama
+
+2810
+02:50:55,340 --> 02:50:59,440
+ne olacak? Demek ki bu konuyla ilgili size sınavda soru
+
+2811
+02:50:59,700 --> 02:51:00,200
+soramayacağım.
+
+2812
+02:51:00,459 --> 02:51:01,219
+Bu demek oluyor.
+
+2813
+02:51:02,760 --> 02:51:04,040
+Evet bu konuyu
+
+2814
+02:51:04,559 --> 02:51:09,420
+bu konuyu sınavdan sonraki haftaya bırakalım. Rock Curve çizimini
+
+2815
+02:51:10,180 --> 02:51:12,500
+ona göre önümüzdeki hafta
+
+2816
+02:51:13,780 --> 02:51:16,079
+şey yaparız, devam ederiz buradan.
+
+2817
+02:51:16,340 --> 02:51:17,860
+Bana hatırlatın ama bu konuyu
+
+2818
+02:51:18,120 --> 02:51:19,920
+anlatmadığımı mutlaka
+
+2819
+02:51:21,500 --> 02:51:22,780
+hatırlatın bana.
+
+2820
+02:51:23,299 --> 02:51:24,059
+Yoksa
+
+2821
+02:51:24,579 --> 02:51:27,379
+şey yarım kalacak bu çalışma.
+
+2822
+02:51:46,940 --> 02:51:48,219
+5'e 5 çıktı.
+
+2823
+02:51:48,479 --> 02:51:50,020
+Şurada kaldım ben hala.
+
+2824
+02:51:50,780 --> 02:51:53,860
+Şurada bir tanesini doğru söylemiş oluyoruz.
+
+2825
+02:51:54,360 --> 02:51:57,940
+Burada 1, 2, 3, 4 tane sample var.
+
+2826
+02:51:58,459 --> 02:51:59,739
+4 tanesi
+
+2827
+02:52:03,229 --> 02:52:06,030
+true pozitiflerin sayısına 5 demiş yalnız.
+
+2828
+02:52:06,290 --> 02:52:09,870
+0,25 den büyük olanlara demiş galiba.
+
+2829
+02:52:10,909 --> 02:52:13,209
+Büyük olanlara evet şimdi oldu.
+
+2830
+02:52:13,510 --> 02:52:19,149
+O zaman yine 4 tane burada pozitif örnek var. Evet demek ki benim kafa gerçekten durdu.
+
+2831
+02:52:19,389 --> 02:52:19,909
+Yoruldum.
+
+2832
+02:52:20,430 --> 02:52:22,209
+Bugün 6. saatim bu.
+
+2833
+02:52:22,469 --> 02:52:26,829
+Burada bırakıyorum arkadaşlar. Bu örneği ben size haftaya anlatayım. En iyisi
+
+2834
+02:52:27,069 --> 02:52:28,110
+daha sağlam bir
+
+2835
+02:52:28,350 --> 02:52:29,889
+şeyde gideriz.
+
+2836
+02:52:32,139 --> 02:52:32,899
+Peki
+
+2837
+02:52:33,159 --> 02:52:35,719
+bu haftalık bu kadar.
+
+2838
+02:52:35,979 --> 02:52:36,739
+Sorunuz
+
+2839
+02:52:37,000 --> 02:52:38,280
+var mıdır
+
+2840
+02:52:38,780 --> 02:52:39,299
+bana?
+
+2841
+02:52:41,440 --> 02:52:44,000
+Bu slide'ı paylaştım değil mi ben sizinle?
+
+2842
+02:52:44,780 --> 02:52:45,799
+Var mı duvarda?
+
+2843
+02:52:48,700 --> 02:52:50,239
+Hocam bu vardı galiba ama
+
+2844
+02:52:50,500 --> 02:52:51,260
+KNN yoktu.
+
+2845
+02:52:52,020 --> 02:52:55,100
+KNN yok tamam onu o zaman yükleyelim.
+
+2846
+02:52:55,860 --> 02:52:57,139
+Ondan sonra
+
+2847
+02:52:59,200 --> 02:52:59,700
+tamam.
+
+2848
+02:53:05,299 --> 02:53:05,819
+Peki
+
+2849
+02:53:06,579 --> 02:53:08,120
+aklım soruda kaldı.
+
+2850
+02:53:09,899 --> 02:53:14,260
+Sevgili arkadaşlar hepinize iyi hafta sonları diliyorum.
+
+2851
+02:53:15,280 --> 02:53:16,299
+Evdeyiz yine.
+
+2852
+02:53:18,100 --> 02:53:22,200
+Haftaya görüşmek üzere. Yok haftaya görüşemiyoruz. Sınavda görüşmek üzere.
+
+2853
+02:53:22,459 --> 02:53:23,739
+Sınavla ilgili söyleyeceğim
+
+2854
+02:53:24,040 --> 02:53:24,540
+ne var?
+
+2855
+02:53:24,799 --> 02:53:28,639
+Öğrendiğimiz tüm konulardan sorumlusunuz. Sınavı test yapacağım.
+
+2856
+02:53:29,159 --> 02:53:33,760
+Sınav kolay yani test de olunca sizin için daha kolay ama belki bir
+
+2857
+02:53:34,020 --> 02:53:35,299
+süre kısıtımı olabilir.
+
+2858
+02:53:35,819 --> 02:53:41,440
+Zamanı kısa tutarak sizi biraz böyle hani sağa sola dağılmamanız için
+
+2859
+02:53:41,959 --> 02:53:44,780
+bir şey yol izleyebilirim.
+
+2860
+02:53:46,059 --> 02:53:46,559
+Peki
+
+2861
+02:53:46,819 --> 02:53:50,920
+hepinize tatiller hoşça kalın.
+
+2862
+02:53:51,180 --> 02:53:53,739
+Sınav haftaya değil haftaya 23 Nisan.
+
+2863
+02:53:54,040 --> 02:54:00,180
+Ondan sonraki hafta 8. hafta sınav haftası ya o yüzden sınava kadar görüşemeyeceğiz
+
+2864
+02:54:00,440 --> 02:54:00,940
+sizlerle.
+
+2865
+02:54:03,100 --> 02:54:05,139
+Hoşça kalın tekrar iyi tatiller.
+
+2866
+02:54:05,399 --> 02:54:07,200
+Teşekkürler hocam iyi günler.
+
+2867
+02:54:07,440 --> 02:54:08,979
+Güle güle hoşça kalın.
+
+2868
+02:54:13,979 --> 02:54:15,500
+İyi günler arkadaşlar.
+
+2869
+02:54:15,760 --> 02:54:17,559
+Altuğ, [öğrenci] teşekkürler.
+
+2870
+02:54:34,450 --> 02:54:35,989
+İyi günler hoşça kalın.
+

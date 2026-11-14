@@ -1,0 +1,1500 @@
+1
+00:13:47,279 --> 00:13:49,279
+Sesim geliyor mu arkadaşlar?
+
+2
+00:13:49,279 --> 00:13:51,279
+Geliyor hocam.
+
+3
+00:13:51,279 --> 00:13:53,279
+Tamam süper.
+
+4
+00:13:53,279 --> 00:14:05,279
+Şimdi Cihan Hocanızın başka bir toplantısı daha olduğu için iki gruba birden o bitene kadar toplantısı bitme durumuna bağlı olarak göreceğiz.
+
+5
+00:14:05,279 --> 00:14:08,279
+İki gruba birden ben anlatacağım bugün.
+
+6
+00:14:08,279 --> 00:14:12,279
+Ekranda da bir sorun yok diye tahmin ediyorum.
+
+7
+00:14:12,279 --> 00:14:17,279
+congestion control diye herhalde görünüyor diye düşünüyorum ekranda slaglar.
+
+8
+00:14:17,279 --> 00:14:24,279
+Şimdi geçen hafta kaldığımız yerden devam edebiliriz o zaman.
+
+9
+00:14:24,279 --> 00:14:35,179
+Şimdi arkadaşlar doğal olarak günlük yaşantımızda da karşılaşıyoruz.
+
+10
+00:14:35,179 --> 00:14:54,019
+Normal araç trafiğinde de yolların planlanmış olduğu kapasitesinden daha fazla araç bir şekilde yollara çıkacak olursa trafik sıkışıklığı yaşıyoruz.
+
+11
+00:14:54,019 --> 00:14:58,019
+Normal hızda seyredemiyoruz.
+
+12
+00:14:58,019 --> 00:15:07,019
+Normal sürede gideceğimiz yerlere çok fazla gecikmelerle gidiyoruz ve hareket hızımız düşüyor.
+
+13
+00:15:07,019 --> 00:15:17,019
+Planlanmış olan o yollar için planlanmış olan hareket hızının çok çok daha altında bir hızla ilerleyebiliyoruz.
+
+14
+00:15:17,019 --> 00:15:23,019
+Aynı durum bilgisayar ağları içinde geçerli.
+
+15
+00:15:23,019 --> 00:15:29,019
+Sonuçta network layer'ın görevini ne olarak tariflemiştik?
+
+16
+00:15:29,019 --> 00:15:44,019
+Bir topoloji içerisinde bir paketi çıkış noktasında hedef noktaya aktarma olarak temel görevlerinden bir tanesi buydu.
+
+17
+00:15:44,019 --> 00:15:56,019
+Şimdi bu açıdan bakacak olursak geçen haftada hatırlarsanız uzun uzun routing algoritmalarına, yoğunluğu algoritmalarına yer verdik, onları konuştuk, onları inceledik.
+
+18
+00:15:56,019 --> 00:16:16,019
+Bu açıdan bakacak olursak eğer bir topolojinin planlanmış özellikle ad hoc değilse, kağıt üzerinde tasarlanıp gerçekleştirildiyse, tasarlama sırasında planlanmış olan bir kapasitesi var.
+
+19
+00:16:16,019 --> 00:16:18,019
+Paket aktarım kapasitesi var.
+
+20
+00:16:18,019 --> 00:16:34,019
+Bu paket aktarım kapasitesini açtığımız zaman gerçek hayattaki örnekte olduğuna benzer bir şekilde sıkışıklıkla karşılaşıyoruz, tıkanıklıkla karşılaşıyoruz ve network çalışamaz hale geliyor.
+
+21
+00:16:34,019 --> 00:16:46,019
+Paketleri aktaramaz hale geliyor. Hatta öyle bir noktaya geliniyor ki hiçbir şey ilerlemiyor. Tam anlamıyla bir durma noktasıyla karşılaşıyoruz.
+
+22
+00:16:46,019 --> 00:17:02,019
+Şimdi network layer'ın bu açıdan da bu durumun oluşmasını engellemek veya oluştuysa da çözmek için çaba sarf etmesi lazım.
+
+23
+00:17:02,019 --> 00:17:07,019
+Network layer içerisinde bununla alakalı mekanizmaların olması lazım.
+
+24
+00:17:07,019 --> 00:17:17,019
+Yalnız congestion control sadece ve sadece network layer'da adreslenebilecek, çözülebilecek bir konu değil.
+
+25
+00:17:17,019 --> 00:17:34,019
+Daha alt seviyede yani link layer'da da birtakım tedbirlerin alınması gerekiyor. Network layer'da da birtakım tedbirlerin alınması gerekiyor ve üst tarafta transport layer'da da birtakım tedbirlerin alınması lazım.
+
+26
+00:17:34,019 --> 00:17:47,019
+Yani aslında üç layer'ı birden ilgilendiren bir konu. Link layer'ı biliyorsunuz bizim bu dersin kapsamında işlediğimiz katmanlardan biri değil.
+
+27
+00:17:47,019 --> 00:17:52,019
+O datacom veri iletişimi dersinde işlenen katmanlardan biri.
+
+28
+00:17:52,019 --> 00:18:09,019
+O tarafta, o katmanda congestion control ile alakalı tıkanıklık kontrolü ile alakalı neler yapılması gerektiğine dair bilgileri tazelemek istiyorsanız o dersinizle alakalı kaynaklara bakmanızı tavsiye ederim.
+
+29
+00:18:09,019 --> 00:18:23,019
+Kavramsal olarak konuşacağımız şeyler çok benzer aslında üç katman için ama siz de biliyorsunuz link layer noktadan noktaya, network layer ve hatta transport layer ise uçtan uca.
+
+30
+00:18:23,019 --> 00:18:36,019
+Yani routing'te de gördük birden fazla sıçrama ile birden fazla hop ile bir noktadan bir başlangıç noktasından bir hedef noktasına doğru ilerliyoruz.
+
+31
+00:18:36,019 --> 00:18:57,660
+Şimdi congestion ile alakalı network layer'ın elinde buna karşı kullanmak, bu tıkanıklığa karşı kullanmak adına birkaç tane yaklaşım oluşturulmuş.
+
+32
+00:18:57,660 --> 00:19:02,660
+Bu yaklaşımların bir kısmı birazdan göreceğiz.
+
+33
+00:19:02,660 --> 00:19:18,660
+Daha böyle congestion oluşmadan önce congestion'ın oluşmasını engelleyecek tarzda yaklaşımlar yani diğer bir terimle proaktif yaklaşımlar.
+
+34
+00:19:18,660 --> 00:19:28,660
+Diğerleri ise congestion oluştuktan sonra bu durumun çözülmesi için uygulanabilecek yaklaşımlar.
+
+35
+00:19:28,660 --> 00:19:31,660
+Bunlara da reaktif yaklaşımlar diyoruz.
+
+36
+00:19:31,660 --> 00:19:48,660
+Yani biri durum oluşmadan önce, tıkanıklık oluşmadan önce planlama yapılması, tedbir alınması, buna göre hareket edilmesi proaktif bir şekilde ve buna bağlı olarak da tıkanıklığın hiç oluşmaması üzerine kurulu.
+
+37
+00:19:48,660 --> 00:19:57,660
+Diğerleri ise tıkanıklığın oluşması sonrasında bunun çözülmesi üzerine kurulu.
+
+38
+00:19:57,660 --> 00:20:11,660
+Şimdi niye böyle iki türlü yaklaşım var dersek aslında pek çok mühendislik probleminde karşılaştığımız bir trade-off durumundan ötürü.
+
+39
+00:20:11,660 --> 00:20:22,660
+Yani bir şeyden fedakarlık ettiğimiz zaman, bir şey daha doğrusu oluşmasın diye tedbir aldığımız zaman diğer bir şeyden fedakarlık etmek zorunda kalıyoruz, taviz vermek zorunda kalıyoruz.
+
+40
+00:20:22,660 --> 00:20:40,660
+Eğer bir network'un hiç tıkanıklık olmadan çalışmasını öngörüyorsak, çoğunlukla bu network'un kağıt üzerinde tasarlanmış, planlanmış olan kapasitesinin yüzde yüzünü kullanmıyoruz aslında.
+
+41
+00:20:40,660 --> 00:20:46,660
+Daha alt bir seviyede kalıyoruz, mesela yüzde 70'inde kalıyoruz, yüzde 80'inde kalıyoruz.
+
+42
+00:20:47,660 --> 00:21:04,660
+Böylece bu durum hiç oluşmuyor ama o kullanılmayan yüzde 70 veya yüzde 80'inin üstündeki dilim, 30'luk veya 20'lik dilim gerçek anlamda faydaya dönüştürülemiyor.
+
+43
+00:21:04,660 --> 00:21:09,660
+Proaktif yaklaşımlardaki sıkıntılardan bir tanesi bu.
+
+44
+00:21:09,660 --> 00:21:14,660
+Çünkü birazdan göreceğiz, dayan usulü çalışılıyor.
+
+45
+00:21:14,660 --> 00:21:26,660
+Yani bir uygulama bir başka uygulamayla konuşacağı zaman benim trafiğim budur diyor. Birim zamanda bu kadar bit göndereceğim diyor.
+
+46
+00:21:26,660 --> 00:21:32,660
+Kilobit, megabit, gigabit cinsinden ne olursa olsun ama sonuçta birim zamanda.
+
+47
+00:21:32,660 --> 00:21:44,660
+Fakat hepimiz biliyoruz ki bir uygulamanın hiç durmadan böyle ardı ardına kesintisiz bir şekilde o kadarlık bir trafiği sürekli üretmesi mümkün değil.
+
+48
+00:21:44,660 --> 00:21:50,660
+Ancak özel şartlarda streaming uygulamaları, ses veyahut da görüntü tarzı.
+
+49
+00:21:50,660 --> 00:21:55,660
+Ama orada da bunun bir süresi var.
+
+50
+00:21:55,660 --> 00:22:00,660
+Diyelim 5 dakika boyunca, yarım saat boyunca, 40 dakika veya 1 saat boyunca.
+
+51
+00:22:00,660 --> 00:22:04,660
+Ama sonrasında yine bir azalma veya değişim oluyor.
+
+52
+00:22:04,660 --> 00:22:17,660
+O yüzden orada uygulama uç noktaya göre oluşturabileceği en üst trafik miktarına göre bu beyanı yaptığı için
+
+53
+00:22:17,660 --> 00:22:25,660
+network kapasitesinden de o kadarlık bir miktar düşülerek geri kalanı üzerinden devam edildiği için
+
+54
+00:22:25,660 --> 00:22:39,660
+diğer uygulamalar adına bakıldığında hep normal şartlarda kullanılmayan, kenarda atıl olarak duran bir kapasite ile karşılaşıyoruz.
+
+55
+00:22:39,660 --> 00:22:56,059
+Diğer taraftan eğer bunu yapmazsak yani o atıl kapasite olmasın, daha fazla networkten yararlanalım dersek
+
+56
+00:22:56,059 --> 00:23:06,059
+o zaman da bir an geliyor ki çok fazla uygulama aynı anda network üzerinden paket aktarıyor.
+
+57
+00:23:06,059 --> 00:23:10,059
+Yani bir tane uygulamadan bahsetmiyoruz, en tane uygulamadan bahsediyoruz.
+
+58
+00:23:10,059 --> 00:23:20,059
+Öyle bir an veya öyle anlar geliyor ki birden fazla uygulamanın tepe noktası paket trafiği açısından,
+
+59
+00:23:20,059 --> 00:23:30,059
+bilgi gönderip alma ihtiyacı açısından pik noktası, tepe noktası birbiriyle örtüşüyor tam üst üste biniyor.
+
+60
+00:23:30,059 --> 00:23:42,059
+Ve oradaki ihtiyaçları topladığımızda network'un toplam paket aktarım kapasitesinin çok çok üzerine çıkılmış oluyor.
+
+61
+00:23:42,059 --> 00:23:46,059
+Bu durumda da tıkanıklık oluşuyor.
+
+62
+00:23:46,059 --> 00:23:58,059
+Şimdi aslında baktığımızda işte şu an evlerimize bağlı olan internet servisi veyahutta telefon servisi,
+
+63
+00:23:58,059 --> 00:24:10,059
+bu tarz servisler hep ortalama bir yoğunluk hesabı üzerine kuruludur, ona göre tasarlanmıştır.
+
+64
+00:24:10,059 --> 00:24:14,059
+Nedir? Yüzde 70 doluğa, yüzde 80 doluğa göre.
+
+65
+00:24:14,059 --> 00:24:24,059
+Ama acil bir durum olduğunda işte bir doğal felaket yaşanıyor, herkes birilerine erişip durumunu öğrenmek istiyor,
+
+66
+00:24:24,059 --> 00:24:30,059
+iyi olup olmadığını öğrenmek istiyor, bir mesaj yollayıp cevabını almak istiyor.
+
+67
+00:24:30,059 --> 00:24:39,059
+O zaman bir anda bakıyoruz ne oluyor? Telefonlar meşgul sesi dahi veremez hale geliyor, mesajlar gidemez hale geliyor.
+
+68
+00:24:39,059 --> 00:24:43,059
+Ve bir kilitlenme durumu yaşanıyor.
+
+69
+00:24:43,059 --> 00:24:53,059
+İşte bu da aslında az önce söylediğim senaryonun farklı bir şekilde hayatımızda karşımıza çıkış şekli.
+
+70
+00:24:53,059 --> 00:25:02,700
+Normal belirli bir yüzde sen kullanım var, ona göre her şey planlanmış.
+
+71
+00:25:02,700 --> 00:25:09,700
+Bunun üzerine çıktığında artık ne yapılması lazım? Reaktif olarak bu durumu çözülmesi lazım.
+
+72
+00:25:09,700 --> 00:25:13,700
+Yani ona bir reaksiyon, bir tepki göstermeliyiz ki çözebilelim.
+
+73
+00:25:13,700 --> 00:25:17,700
+Beklersek zaten durum daha da kötü olacak.
+
+74
+00:25:17,700 --> 00:25:23,700
+Şimdi elimizde neler var? Trafik aware routing var.
+
+75
+00:25:23,700 --> 00:25:28,700
+Aslında bir önce işlediğimiz konuyla hemen ilişkilendirilmiş durumda.
+
+76
+00:25:28,700 --> 00:25:36,700
+Akıtılacak trafiği bilirsek, bunun farkında olursak ne kadarlık bir trafik akıtılacak.
+
+77
+00:25:36,700 --> 00:25:44,700
+O zaman buna bağlı bir akıllı routing algoritması çalıştırabiliriz.
+
+78
+00:25:44,700 --> 00:25:51,700
+Böylece tıkanıklık oluşmasını engelleyebiliriz. Bunun mantığı bu.
+
+79
+00:25:51,700 --> 00:25:54,700
+Diğer tarafta admission control var.
+
+80
+00:25:55,700 --> 00:26:01,700
+Atmission kabul demek burada kabul edeceğimiz şey ne?
+
+81
+00:26:01,700 --> 00:26:07,700
+Bir paketi göndermek adına network layer'ın teslim alması.
+
+82
+00:26:07,700 --> 00:26:15,700
+O zaman network layer belirli paket teslim alma kuralları çalıştırabilir.
+
+83
+00:26:15,700 --> 00:26:20,700
+Veya uygulamalarla bu anlamda anlaşma imzalayabilir.
+
+84
+00:26:20,700 --> 00:26:27,700
+Karar verebilir, uygulanacak kurallar bütünü buradaki anlaşmadan kastettiğim şey bu.
+
+85
+00:26:27,700 --> 00:26:29,700
+Bunları gerçekleştirebilir.
+
+86
+00:26:29,700 --> 00:26:39,700
+Bunun sonucunda da mesela diyelim ki uygulamanın karakteristiğine bağlı olarak saniyede en fazla 100 tane paket kabul eder.
+
+87
+00:26:39,700 --> 00:26:44,700
+50 tane kabul eder, 1000 tane kabul eder, neyse. Daha fazlasını kabul etmez.
+
+88
+00:26:44,700 --> 00:26:49,700
+Bu da admission control. Şimdi birazdan ayrıntıları daha net göreceğiz.
+
+89
+00:26:49,700 --> 00:26:53,700
+Trafik throttling, trafiği yavaşlatma.
+
+90
+00:26:53,700 --> 00:26:57,700
+Throttle yavaşlatma anlamında kullanılıyor burada.
+
+91
+00:26:57,700 --> 00:26:59,700
+Frenleme anlamında.
+
+92
+00:26:59,700 --> 00:27:02,700
+Yani bir gelen trafik var.
+
+93
+00:27:02,700 --> 00:27:09,700
+Gelen trafiği bekleterek çıkışa gönderiyoruz.
+
+94
+00:27:09,700 --> 00:27:18,700
+Böylece çıkışta görünen trafik akışı girişte görülen trafik akışından daha düşük oluyor.
+
+95
+00:27:18,700 --> 00:27:21,700
+Frenlemiş, yavaşlatmış oluyoruz.
+
+96
+00:27:21,700 --> 00:27:35,700
+Ama tabii ki doğal olarak bunu yapabilmemiz için bu yavaşlatmayı yapacak olan yerde router sonuçta ciddi anlamda buffer olması lazım.
+
+97
+00:27:35,700 --> 00:27:37,700
+Bellek olması lazım.
+
+98
+00:27:37,700 --> 00:27:45,700
+Yoksa nasıl onları durduracak ki giriş hızı daha yüksek, çıkış hızı daha düşük.
+
+99
+00:27:45,700 --> 00:27:51,700
+O zaman arada gelen paketlerin bekletileceği bir bölge olması lazım.
+
+100
+00:27:51,700 --> 00:27:54,700
+Bir ara bellek, tampon bellek, buffer olması lazım.
+
+101
+00:27:54,700 --> 00:27:56,700
+Bu da memory demek.
+
+102
+00:27:56,700 --> 00:27:59,700
+Tabii onun da bir kısıtı var.
+
+103
+00:27:59,700 --> 00:28:07,700
+Load shedding, gereksiz yükten kurtulmak demek, bu yükü atmak demek.
+
+104
+00:28:08,700 --> 00:28:20,700
+Yani artık paketleri şöyle düşünün, biriktireceğiniz ve yavaşlatabileceğiniz bir buffer alanınız da kalmamış.
+
+105
+00:28:20,700 --> 00:28:23,700
+Ama paketler hala da gelmeye devam ediyor.
+
+106
+00:28:23,700 --> 00:28:25,700
+O zaman ne yapacaksınız?
+
+107
+00:28:25,700 --> 00:28:28,700
+Paketleri gelmemiş kabul edeceksiniz.
+
+108
+00:28:28,700 --> 00:28:30,700
+Yani o paketlerden kurtulacaksınız.
+
+109
+00:28:30,700 --> 00:28:36,700
+Buffera koyamayacağınıza göre paket size kadar geldi ama sonrasında devam etmiyor.
+
+110
+00:28:36,700 --> 00:28:40,170
+Öyle düşünün.
+
+111
+00:28:40,170 --> 00:28:47,180
+Şimdi az önce de söylerim grafik olarak da bakalım.
+
+112
+00:28:47,180 --> 00:29:01,329
+Eğer bir network'e planlı kapasitesinden daha fazla trafik verirsek tıkanıklık oluyor.
+
+113
+00:29:01,329 --> 00:29:03,329
+Niçin?
+
+114
+00:29:03,329 --> 00:29:12,329
+Ya kayıplar başlıyor ya da gecikmelerden ötürü retransmisionlar artıyor.
+
+115
+00:29:12,329 --> 00:29:23,329
+Şimdi hatırlayın, hani Connection Oriented ve Connectionless servislerden bahsetmiştik işin temelinde.
+
+116
+00:29:23,329 --> 00:29:27,329
+Connection Oriented'de iki taraf el sıkışıyorlar.
+
+117
+00:29:27,329 --> 00:29:30,329
+Paket alıp verecekleri aşikar.
+
+118
+00:29:30,329 --> 00:29:35,329
+O zaman bir taraf paket gönderiyor, diğer tarafta bu paketin gelmesini bekliyor.
+
+119
+00:29:35,329 --> 00:29:47,329
+Eğer belirli bir süre gelmezse senden paket gelmedi diye karşı tarafa ya açıkça şeyi yolluyor, tekrar istek yolluyor
+
+120
+00:29:47,329 --> 00:29:56,329
+ya da kendisinden o paketin geldiğine dair göndericiye bir onay gitmediği için gönderici diyor ki
+
+121
+00:29:56,329 --> 00:30:00,329
+herhalde paketin başına bir şey geldi ben bunu tekrar yollayayım.
+
+122
+00:30:00,329 --> 00:30:10,329
+Halbuki paket o sırada aslında iletimde ama yaşanan tıkanıklıktan dolayı daha yavaş bir hızla iletiliyor.
+
+123
+00:30:10,329 --> 00:30:21,329
+Fakat bunun bizim açımızdan network açısından bakıldığında görünen haline çok basit network'taki paket sayısının artması.
+
+124
+00:30:22,329 --> 00:30:30,329
+Şimdi burada normalde biliyorsunuz true put, verim kavramından bahsederiz.
+
+125
+00:30:30,329 --> 00:30:38,329
+Bir sistemden geçen akıp giden o sistemin yaptığı iş miktarı aslında.
+
+126
+00:30:38,329 --> 00:30:43,329
+Girdi var onu işliyor çıkışa veriyor, girdi var işliyor çıkışa veriyor.
+
+127
+00:30:43,329 --> 00:30:46,329
+İşte buna true put, verim diyoruz.
+
+128
+00:30:46,329 --> 00:30:52,329
+Burada ise good put terminden bahsediyoruz.
+
+129
+00:30:52,329 --> 00:31:05,329
+Yani olması gereken zaman sınırları içerisinde gitmesi gereken hedefe aktarılabilen paket miktarı.
+
+130
+00:31:05,329 --> 00:31:22,779
+Şimdi area'ya bakacak olursanız bu aslında linear bir şekilde network'e verilen yük arttıkça offered load kısmı paket bölü saniye cinsinden.
+
+131
+00:31:22,779 --> 00:31:28,779
+Bunlarda paket bölü saniye cinsinden hedefe teslim ediliyorlar.
+
+132
+00:31:28,779 --> 00:31:33,779
+Ne gecikme var, ne kayıp var, ne retransmission var.
+
+133
+00:31:33,779 --> 00:31:35,779
+Her şey olması gerektiği gibi çok güzel.
+
+134
+00:31:35,779 --> 00:31:52,779
+Burada bakın normalde bu area'nın yukarıdaki network kapasitesini gösteren çizgiye kadar hiç eğilmeden, bozulmadan linear bir şekilde gitmesi ondan sonra da ideal pozisyonda o şeyde ilerlemesi lazım.
+
+135
+00:31:52,779 --> 00:31:55,779
+Mümkün değil. Çünkü niye?
+
+136
+00:31:55,779 --> 00:32:04,779
+İllaki hatalar oluşacak, illaki buna bağlı kayıtlar oluşacak, illaki bunun sonucunda retransmissionlar olacak.
+
+137
+00:32:04,779 --> 00:32:10,779
+Öyle veya böyle anlık sıçramalar, zıplamalar yaşanacak.
+
+138
+00:32:10,779 --> 00:32:26,779
+O anlık sıçramalar, zıplamalar bile network'ün taşıyabileceği yük cinsinden miktarı böyle oynatacağı için bir denge noktasından çıkartacağı için salınımlar oluşacak.
+
+139
+00:32:26,779 --> 00:32:30,779
+O salınımların sonucunda da kondresyon durumu olacak.
+
+140
+00:32:31,779 --> 00:32:36,779
+Ideal hali görmemize bu yüzden imkan yok.
+
+141
+00:32:36,779 --> 00:32:47,779
+Peki onun yerine hoşumuza giden yani böyle olursa daha rahat ederiz, network'imiz böyle davranırsa daha iyi olur dediğimiz eğri hangisi?
+
+142
+00:32:47,779 --> 00:33:02,779
+Desirable response. Yani belli bir yere kadar linear gitti, ondan sonra asimptotik bir şekilde maksimum kapasiteye yaklaşıyor.
+
+143
+00:33:02,779 --> 00:33:10,779
+Hiçbir zaman maksimum kapasite olmayacak. Ona böyle sonsuz da yaklaşacak bir tail şeklinde gidecek.
+
+144
+00:33:10,779 --> 00:33:20,779
+Bunu yapabilirsek muhteşem. Zaten congestion control bunun üzerine çalışan bir şey, bunu sağlamaya çalışan bir şey.
+
+145
+00:33:20,779 --> 00:33:44,779
+Ama eğer düzgün tedbirleri almazsak, düzgün kontrolleri yapmazsak o zaman şu congestion collapse, collapse'ne yıkılmak, çökmek tıkanıklıktan dolayı network'ın çökmesi durumuyla karşılaşıyoruz.
+
+146
+00:33:44,779 --> 00:33:59,420
+Şu pembe elips içerisinde alınmış olan bölge bizim için çok çok önemli. Çünkü ne yapacaksak kontrol etmek için orada yapmamız lazım.
+
+147
+00:33:59,420 --> 00:34:13,420
+O bölgenin bir adım ötesinde zaten congestion var, kontrolsüzlük var. O bölgeye de ne isim veriyoruz? Congestion başlangıcı, tıkanıklık başlangıcı diyoruz.
+
+148
+00:34:13,420 --> 00:34:31,469
+Şimdi az önceki yaklaşımlar vardı ya, proaktif olanlar ve reactif olanlar. Bazen proaktif olanlara preventatif de engelleyici yaklaşımlarda diyoruz.
+
+149
+00:34:31,469 --> 00:34:58,579
+Çünkü neden? Kağıt üzerinde tasarım yaparken bir şeylere belirlediğimiz için. Her şeyden önce her network'u ad hoc olmadığı sürece yani telsiz bir şekilde o an düğümlerin birbirleriyle haberleşmesiyle dinamik tarzlı bir topoloji oluşturmadıkları,
+
+150
+00:34:58,579 --> 00:35:11,579
+kağıt üzerinde topolojinin oluşturulduğu, önceden planlandığı her türlü network için network'ün düzgün planlanması gerekiyor.
+
+151
+00:35:11,579 --> 00:35:23,579
+Her network'te giriş hakları vardır, çıkış hakları vardır. Çünkü sonuçta bir noktadan bir başka noktaya doğru paketleri aktaracağız.
+
+152
+00:35:23,579 --> 00:35:34,579
+Mutlaka ve mutlaka giriş hatlarının toplam kapasitesinin çıkış hatları tarafından karşılanabileceğinden emin olmamız gerekiyor.
+
+153
+00:35:34,579 --> 00:35:47,579
+Zaten eğer başlangıçta bunu yapmadıysak, bu network provisioning'ten bahsediyorum, network'un konumlandırılması, planlanması ve konumlandırılması bundan bahsediyorum.
+
+154
+00:35:47,579 --> 00:36:02,579
+Eğer bunu düzgün bir şekilde yapmadıysak, bu network'un yaşamı içerisinde çok farklı senaryolarda çok ciddi kondresyonlarla karşılaşması işin doğasındadır.
+
+155
+00:36:02,579 --> 00:36:10,579
+Fakat bunu düzgün yapıyor olmamızın da bir bedeli var. Maliyeti çok arttırıyor.
+
+156
+00:36:10,579 --> 00:36:31,579
+Yani şöyle düşünün, en basitinden network katmanında anahtarlama yapan switchler, yani aslında router şeklinde çalışan layer 3 switchler,
+
+157
+00:36:31,579 --> 00:36:41,579
+giriş hatlarına ve bir üst seviyeye bağlantı sağlayan çıkış hatlarına, uplink diyoruz. Onlara sahip.
+
+158
+00:36:41,579 --> 00:36:53,579
+Şimdi 48 tane 1 gigabit'i destekliyor. Şöyle düşünün, çıkış hattı 4 tane var, her biri 10 gigabit.
+
+159
+00:36:53,579 --> 00:37:07,579
+Bakın her birini, bu üreticilerin genelde endüstri standlardadır, her bir uplink'i aktif bile yapsanız aslında 4'ünün toplamı ne? 40 gigabit.
+
+160
+00:37:07,579 --> 00:37:18,369
+Halbuki sizin alt tarafta neyiniz var? 48 gigabitiniz var. O zaman bu switchin kalitesi işin içine girecek.
+
+161
+00:37:18,369 --> 00:37:32,369
+Ya o aradaki 8 gigabitlik farkı bufferlayacak ama sonsuza kadar bufferlayamaz. Çünkü sonsuz buffer'ı olamaz.
+
+162
+00:37:32,369 --> 00:37:38,619
+Bedelli süreler için bufferlayacak. Tamponunun buffer'ının olması lazım.
+
+163
+00:37:38,619 --> 00:37:48,619
+Ya da bu yoksa alt taraftaki uygulamaların 48'i birden 1 gigabit'i gönderirlerse tıkanıklık yaşanacak.
+
+164
+00:37:48,619 --> 00:38:02,619
+Şimdi siz böyle bir yapıda, böyle bir yapıda o 4 tane uplink'ten ikisini, üçünü, hatta birini kullanıksanız durum daha felaket hale gelecek.
+
+165
+00:38:02,619 --> 00:38:11,619
+Peki bunun 1, 2, 3, 4'ünü kullanmanızdaki şey ne? Tamamen bütçesel durumunuz, maddi imkanlarınız.
+
+166
+00:38:11,619 --> 00:38:19,900
+Düşünün 48 gigabit'e karşı 10, 20, 30 veya 40 gigabit.
+
+167
+00:38:19,900 --> 00:38:28,900
+Ha yapabilirsiniz, diyebilirsiniz ki bunun daha üst şeyleri var işte 25 gigabit olanı var, 50 gigabit olanı var, 100 gigabit olanı var.
+
+168
+00:38:28,900 --> 00:38:34,900
+Süper. Ama onun da yine bir maliyeti var.
+
+169
+00:38:34,900 --> 00:38:41,900
+Neyi hesaba katmanız gerekiyor? Bu tarz bir hesaplama ve provisioning yapıyorsunuz.
+
+170
+00:38:41,900 --> 00:39:01,900
+Hakikaten alt taraftaki uygulamaların kaç tanesinin birden es zamanlı olarak en fazla ne süreyle bu yoğunlukta trafiği üreteceğinin hesabını düzgün bir şekilde yapmanız gerekiyor.
+
+171
+00:39:01,900 --> 00:39:15,900
+Bakın işin mühendislik tarafı bu. Yoksa onun haricinde şu switch'i seçtim, onu oraya bağladım, onun ucuna şunu taktım, bunun fiberi buraya bağlanıyordu, bunun ethernet'i buraya bağlanıyordu.
+
+172
+00:39:15,900 --> 00:39:38,900
+Bu herkesin yapabileceği bir şey ama şu network provisioning'i düzgün yapabilmek hem maliyet açısından optimize ederek hem de tıkanıklık oluşmasını kontrolü bir şekilde en azı indirecek şekilde yapabilmek mühendisliğin bir parçası.
+
+173
+00:39:38,900 --> 00:39:48,900
+O yüzden olayın bu tarafını iyi kavramanız lazım. Bir sonraki aşamada ne var? Trafik aware routing var.
+
+174
+00:39:48,900 --> 00:39:58,900
+Sonrasında add machine control var, sonrasında trafik routing, sonrasında load sharing. Az önceki slide'de hani bunlardan bahsetmiştim genel olarak.
+
+175
+00:39:58,900 --> 00:40:15,900
+Sol taraftaki yöntemler daha yavaş tepki veriyorlar, sağ taraftaki yöntemler daha hızlı tepki veriyorlar. Çünkü niye? Sol taraftan sağ tarafa doğru geçtiğimiz zaman artık aslında ne var?
+
+176
+00:40:15,900 --> 00:40:34,900
+Bir an önce onu çözmemiz lazım. Çünkü eğer çözmezsek hatırlayın grafikte o congestion collapse, congestion'dan tıkanıklıktan dolayı network'ün tamamen çökmesi yaşanabilir.
+
+177
+00:40:34,900 --> 00:40:48,900
+Bu ise hiç isteyeceğimiz bir şey değil. Yani bazen deriz ya trafik tıkalı ama akıyor en azından. Gidebiliyoruz, durmadık beklemiyoruz, aynı noktada durmuyoruz.
+
+178
+00:40:48,900 --> 00:41:11,739
+İşte ondan ötürü sağa doğru ilerledikçe o yöntemlerin müdahalesi ve onlara bağlı olarak tıkanıklığın çözünme süresi daha hızlanıyor. Sol taraftakiler daha yavaş.
+
+179
+00:41:11,739 --> 00:41:30,269
+Şimdi bakın, traffic aware routing. Bu Amerika kıtasından aslında bir örnek. Bu kitaptaki pek çok böyle büyük topoloji, yukarıdan baktığımızda o Amerika kıtasını tam ortadaki bandı gösteriyor.
+
+180
+00:41:30,269 --> 00:41:44,269
+Burada da topoloji kendi içerisinde batı ve doğu olmak üzere ikiye ayrılmış. Yani meşhur vardı bir batı yakası, doğu yakası Amerika'nın. Öyle düşünün.
+
+181
+00:41:44,269 --> 00:42:01,110
+Şimdi batı ile doğu arasında iki tane geçiş noktası var. Biri CF üzerinden öbürü de EI üzerinden.
+
+182
+00:42:01,110 --> 00:42:12,110
+Buradaki okun kalınlığı veya inceliği, oradaki trafiğin ne kadar yoğun olduğunu veya ne kadar az olduğunu gösteriyor.
+
+183
+00:42:12,110 --> 00:42:29,809
+Başlangıçta diyelim ki şurada gördüğümüz şekilde yani CF arasında çok ciddi bir trafik oluşmuş, EI arasında ise trafik neredeyse yok gibi.
+
+184
+00:42:29,809 --> 00:42:37,809
+Routing algoritması da trafiğe göre routingi düzenleyecek şekilde tasarlanmış ya.
+
+185
+00:42:37,809 --> 00:42:50,809
+Şimdi routing algoritması diyor ki ben bir route güncellemesi yayınlamadığım çünkü CF arasındaki trafik arttı, bir eşik değerine yaklaştı.
+
+186
+00:42:50,809 --> 00:43:02,809
+O eşik değere aşılırsa tukanıklık başlayacak. O yüzden trafiği EI'nin üzerine almak gerekiyor.
+
+187
+00:43:02,809 --> 00:43:22,179
+Trafiği EI'nin üzerine almak demek topolojinin gerisinde yer alan batı için konuşuyorum ABD routerlarına, doğu için konuşuyorum GHG routerlarına güncelleme bilgisinin gitmesi.
+
+188
+00:43:22,179 --> 00:43:38,980
+Böyle olunca bir süre sonra CF hattı kullanılmayacak, daha az kullanılacak ve EI hattı daha yoğun bir şekilde kullanılacak.
+
+189
+00:43:38,980 --> 00:43:44,980
+Yani kalın ok yukarıdan aşağıya, ince ok da aşağıdan yukarıya gelecek.
+
+190
+00:43:44,980 --> 00:43:56,980
+Şimdi doğal olarak yine routing algoritması bu durumu gözlemleyeceği için az önce söylediğimizin tam tersini gerçekleştirecek.
+
+191
+00:43:56,980 --> 00:44:10,980
+Ne yapacak? Trafiğin EI'den değil de CF'den akmasını sağlayacak şekilde hem batıda hem doğuda routing güncellemeleri yayınlayacak.
+
+192
+00:44:10,980 --> 00:44:25,449
+Eğer bunlar çok sık gerçekleşmiyorsa büyük bir sorun yok ama trafiğin o kadar yüksek olduğunu düşünün ki,
+
+193
+00:44:25,449 --> 00:44:35,449
+CF'den EI'ye geçtikten sonraki dakikalar içerisinde EI'yi doluyor ve tekrar CF'ye geçilmesi gerekiyor.
+
+194
+00:44:35,449 --> 00:44:39,449
+Yine dakikalar içerisinde CF doluyor tekrar EI'ye geçilmesi gerekiyor.
+
+195
+00:44:39,449 --> 00:44:48,449
+Yani ne oluyor? CF-EI arasında böyle pinpon topu gibi gidiş gelişler söz konusu.
+
+196
+00:44:48,449 --> 00:44:51,449
+Ama bunun bir bedeli var, az önce konuştuk.
+
+197
+00:44:51,449 --> 00:45:00,449
+Bunun değiştirilmesi demek arka taraftaki batıda ve doğuda topolojide güncellemelerin yayınlanması.
+
+198
+00:45:00,449 --> 00:45:14,449
+Sürekli network kendini yeni çıkış hattına göre, trafikten dolayı yeni çıkış hattına göre adapte etmekle uğraşıyor.
+
+199
+00:45:14,449 --> 00:45:17,449
+Hiç durmadan routing güncellemeleri yayınlanıyor.
+
+200
+00:45:17,449 --> 00:45:23,449
+Routerlar hiç durmadan yeniden topoloji hesabı yapıyorlar, yeniden çıkış hattı hesabı yapıyorlar.
+
+201
+00:45:23,449 --> 00:45:25,449
+Bunun da bir maliyeti var.
+
+202
+00:45:25,449 --> 00:45:30,449
+Çünkü sonuçta ne dedik? Distributed routing uyguluyoruz.
+
+203
+00:45:30,449 --> 00:45:43,449
+İşte geçen hafta gördük shortest path first uyguluyoruz veya intersystem intersystem uyguluyoruz ki burası tam bir IS-IS örneği.
+
+204
+00:45:43,449 --> 00:45:52,449
+Böyle olduğunda routerların sürekli işlem gücü harcayıp hesaplar yapması lazım.
+
+205
+00:45:52,449 --> 00:45:55,449
+O Dijkstra'nın algoritmasını ran etmesi lazım.
+
+206
+00:45:55,449 --> 00:46:06,449
+Aralarında çok daha sık bir şekilde güncelleme bilgilerinin, o geçitme bilgilerinin değiştokuş edilmesi lazım.
+
+207
+00:46:06,449 --> 00:46:21,449
+Bu da routerların işlem gücünün ve sonuçta da routing kapasitelerinin büyük bir kısmının routing hesabıyla ayrılmasını ve performans düşüşü yaşanmasına sebep olacak.
+
+208
+00:46:21,449 --> 00:46:24,449
+Ve iç içe geçmiş sıkıntılı durum.
+
+209
+00:46:24,449 --> 00:46:28,449
+Burada teknik terim osülasyon. Niye?
+
+210
+00:46:28,449 --> 00:46:34,449
+Osülatör hani çıkışında sürekli değişen bir dalga sinuso eder veya bir dalga oluşturur ya.
+
+211
+00:46:34,449 --> 00:46:39,449
+İşte burada da osülasyon CFEI, CFEI, CFEI.
+
+212
+00:46:39,449 --> 00:46:49,449
+Yani bunu şey gibi düşünün bir eşit değeri aşıldı EI'ye, bir eşit değeri aşıldı CFEI'ye.
+
+213
+00:46:49,449 --> 00:46:53,449
+CFEI'ye baktığınız zaman kare dalga oluşturunuz.
+
+214
+00:46:53,449 --> 00:46:56,449
+Bir o tarafta, bir bu tarafta bir osülasyon var.
+
+215
+00:46:56,449 --> 00:47:00,449
+Burada önemli olan bunun periyodu.
+
+216
+00:47:00,449 --> 00:47:06,449
+Eğer periyodu çok uzunsa büyük bir sorun değil, olabilecek bir şey.
+
+217
+00:47:06,449 --> 00:47:17,449
+Ama periyodu işte az önce söylediğim gibi dakikalar mertebesindeyse daha bir tarafa geçildikten sonra şey olmadan öbür tarafa geçilmesi gerekiyorsa büyük bir sıkıntı.
+
+218
+00:47:17,449 --> 00:47:21,449
+Bunun bir alternatifi de şu olabilir.
+
+219
+00:47:21,449 --> 00:47:25,449
+Bazen bununla da karşılaşıyoruz, bunu da uyguluyoruz.
+
+220
+00:47:25,449 --> 00:47:31,449
+CFEI'yi bir yönde, EI'yi diğer bir yönde kullanıyoruz.
+
+221
+00:47:31,449 --> 00:47:38,449
+Yani batıdan doğuya gidileceği zaman CFE, doğudan batıya gidileceği zaman EI'yi kullanırız.
+
+222
+00:47:38,449 --> 00:47:44,449
+Ancak bu her zaman akıl kârı olmuyor, faydalı olmuyor.
+
+223
+00:47:44,449 --> 00:47:56,449
+Çünkü neden, CFE ve EI'nin gecikmeleri, had kapasiteleri, artı topolojinin diğer bağlantılarının hızları falan aynı olmayabilir.
+
+224
+00:47:56,449 --> 00:48:04,449
+O yüzden paketin gidiş süresiyle geri dönüş süresi aynı olmayabilir.
+
+225
+00:48:04,449 --> 00:48:27,449
+Bu da birtakım uygulamalarda beklenmedik ek gecikmeler oluşmasına, uygulamaların yolun gecikmesini yanlış hesaplamalarına ve buna bağlı olarak da gereksiz ek retransmission tetiklemelerine sebep olabilir.
+
+226
+00:48:27,449 --> 00:48:33,449
+Bunu uygulama doğrudan yapmayacak ama transport değer yapacak, netfork'un bir üstündeki katman yapacak.
+
+227
+00:48:33,449 --> 00:48:46,449
+Çünkü biz hep ne diye düşünüyoruz, simetrik diye düşünüyoruz, elde ettiğimiz değerleri ikiye bölüyoruz, yarısı gidişte yarısı gelişte geçmiştir diyoruz.
+
+228
+00:48:46,449 --> 00:48:50,449
+Ama gelin görün ki öyle olmuyor.
+
+229
+00:48:51,449 --> 00:48:59,449
+Bunun belki %60'ı gidişte geçti, %40'ı veya %70'i gidişte geçti, %30'u geri dönüşte geçti.
+
+230
+00:48:59,449 --> 00:49:10,449
+O zaman burada süre ölçümünün de çok hassas bir şekilde yapılması lazım, çok net bir şekilde yapılması lazım.
+
+231
+00:49:10,449 --> 00:49:25,900
+Ama her zaman bu netlikte bunu yapma şansımız maalesef olmayabiliyor.
+
+232
+00:49:25,900 --> 00:49:27,900
+Evet şimdi devam.
+
+233
+00:49:27,900 --> 00:49:31,619
+Admission control.
+
+234
+00:49:31,619 --> 00:49:46,920
+Admission control, cümleyi de okuyacak olursak net bir şekilde ne diyor, allows any traffic load only if the network has sufficient capacity.
+
+235
+00:49:46,920 --> 00:49:54,920
+Şimdi bakın yan tarafta da bir şey var, for example demiş, with virtual circuits.
+
+236
+00:49:54,920 --> 00:50:04,920
+Yeterli miktarda kapasitenin olup olmadığını bilebilmek için bir noktadan bir başka noktaya gidilecek yolu önceden bilmek lazım.
+
+237
+00:50:04,920 --> 00:50:07,920
+Eşittir, connection oriented çalışmak lazım.
+
+238
+00:50:07,920 --> 00:50:12,920
+Yani connection less bir yapıda bunu yapabilmemiz çok zor.
+
+239
+00:50:12,920 --> 00:50:20,920
+Connection oriented yapıda ise uzun uzun konuşmuştuk, size anlatmıştık hatırlarsanız.
+
+240
+00:50:20,920 --> 00:50:25,920
+Virtual circuit, sanal devre mantığıyla bunu gerçekleştiriyorduk.
+
+241
+00:50:25,920 --> 00:50:36,920
+Bakın A ve B noktası arasında, tabii network'un bu bilgiyi sağlıyor olması lazım, o da ayrı bir şey.
+
+242
+00:50:36,920 --> 00:50:38,920
+Onu da göreceğiz.
+
+243
+00:50:38,920 --> 00:50:43,920
+Yukarıda congestion var, böyle yıldız gibi işaretlenmiş.
+
+244
+00:50:43,920 --> 00:50:48,920
+Aşağıda congestion var, o da yıldız gibi işaretlenmiş.
+
+245
+00:50:48,920 --> 00:51:09,920
+O zaman arada A ile B arasında oluşturulacak olan sanal devrenin kesinlikle ve kesinlikle yukarıdan veya aşağıdan o zaten dolmuş ve fazla kapasiteden dolayı
+
+246
+00:51:09,920 --> 00:51:17,920
+sıkıntı yaşayan routerlardan, düğümlerden, onlara bağlı olan yollardan gitmemesi lazım.
+
+247
+00:51:17,920 --> 00:51:29,920
+Burada tabii örnek gösterilebilmesi adına A ile B arasında ne yukarının işin içine girdiği ne de aşağının işin içine girdiği
+
+248
+00:51:29,920 --> 00:51:35,920
+aradan geçen düzgün bir yol var, tıkanıklık yaşanmaya.
+
+249
+00:51:35,920 --> 00:51:53,920
+Ve bu yol boyunca ilerlenildiğinde de topolojinin yeterli miktarda kapasitesi olacak, bu yeterli miktarda kapasiteden ötürü de tıkanıklık yaşanılacak.
+
+250
+00:51:53,920 --> 00:52:04,969
+Ama bir kez daha söylüyorum, böyle bir şeyin olabilmesi için connection oriantık bir yapının olması lazım.
+
+251
+00:52:04,969 --> 00:52:13,969
+Hani o konuştuğumuz datagram falan mantığı var ya, orada zaten önceden bir bağlantı kurulmuyor, yollar belirlenmiyor.
+
+252
+00:52:13,969 --> 00:52:30,780
+Her paket farklı bir yoldan gidebiliyor. Öyle bir yapıda connection control yapabilmek neredeyse mümkündür.
+
+253
+00:52:30,780 --> 00:52:40,090
+Trafik trot link. Şimdi trot'un ne demiştik? Fren yapma, yavaşlatma.
+
+254
+00:52:40,090 --> 00:52:57,000
+Buradaki mantık şu, eğer bir router çıkışında sıkıntı yaşıyorsa, çıkışında tıkanıklık yaşıyorsa,
+
+255
+00:52:57,000 --> 00:53:07,000
+o zaman bunu durdurmak için girişinin gerisinde kalan sistemlere haber vermek zorunda.
+
+256
+00:53:07,000 --> 00:53:15,000
+Çünkü niye? Çıkışındaki trafiği girişinde gelen trafik oluşturuyor.
+
+257
+00:53:15,000 --> 00:53:26,000
+Yani bu yönde, bu açıdan bakıldığında paketlerin gittiği yönün tersinde durdurmamız gerekiyor.
+
+258
+00:53:26,000 --> 00:53:36,710
+Trafik trot link'in çalışma mantığı tamamen bunun üzerine kurulu.
+
+259
+00:53:36,710 --> 00:53:43,710
+Ve burada da neden bahsediyoruz? Explicit congestion notification'dan bahsediyoruz.
+
+260
+00:53:43,710 --> 00:53:52,710
+Bakın, şimdi sol tarafta host var, sağ taraftaki hosta gönderiyor bir tane paket.
+
+261
+00:53:52,710 --> 00:54:02,710
+Şimdi bu paket ilk routerdan geçiyor, çok güzel ama ilk router'ın önünde tıkanıklık yaşayan bir router var.
+
+262
+00:54:02,710 --> 00:54:09,710
+Tıkanıklık yaşayan routerdaki paket sayısı artmış. Bunları yeterince hızlı bir şekilde aktaramıyor.
+
+263
+00:54:09,710 --> 00:54:16,710
+Zaten dikkat ettiyseniz de aradaki bağlantıyı, link'i böyle bir tık daha koyu çizmişler.
+
+264
+00:54:16,710 --> 00:54:21,710
+Yani orada daha fazla trafik olduğu anlamına geliyor.
+
+265
+00:54:21,710 --> 00:54:29,710
+Şimdi burada bu paket işaretleniyor.
+
+266
+00:54:29,710 --> 00:54:32,710
+Bu paket işaretleniyor.
+
+267
+00:54:32,710 --> 00:54:43,719
+İşaretlenmiş bir şekilde hosta gidiyor, yani destination'a gidiyor.
+
+268
+00:54:43,719 --> 00:54:56,719
+Destination congestion olduğunu anladığı için yolda, çünkü kendisine özel olarak işaretlenmiş bir paket geldiğinden dolayı ne yapıyor?
+
+269
+00:54:56,719 --> 00:55:08,719
+Diyor ki, o zaman ben bana bu paketleri gönderen hosta yani oradaki uygulamaya haber vereyim.
+
+270
+00:55:08,719 --> 00:55:16,719
+Bana daha az sayıda veya daha seyrek şekilde paket göndersin.
+
+271
+00:55:16,719 --> 00:55:32,719
+Böylece ne sağlansın? Topolojide bir anda oluşacak paket sayısının azaltılması, kontrollü bir şekilde azaltılması sağlansın.
+
+272
+00:55:32,719 --> 00:55:39,030
+Çünkü paketleri durdurmanın en güzel yolu ne?
+
+273
+00:55:39,030 --> 00:55:46,030
+Kaynağa söylemek. Kaynağa diyeceksiniz ki, çıkan yere diyeceksiniz ki, bunları daha yavaş gönder.
+
+274
+00:55:46,030 --> 00:55:54,030
+O zaman tabii ki bunu application'ın bufferlaması lazım, uygulamada bunun tamponlanması lazım.
+
+275
+00:55:54,030 --> 00:56:00,030
+Bu şekilde bir mekanizma oluşması lazım. Bu en doğrusu aslında.
+
+276
+00:56:00,030 --> 00:56:15,030
+Çünkü diğer türlü yapacak olursa her seferinde aradaki routerların bunu bir şekilde bufferlamaya çalışması veya yavaşlatmaya çalışması,
+
+277
+00:56:15,030 --> 00:56:22,030
+ön taraftaki tıkanıklık gidene kadar arka tarafı durdurabilmesi gerekecek.
+
+278
+00:56:22,030 --> 00:56:35,030
+Bu daha zor bir okul. Burada gördüğünüz bu traffic trot link mekanizmasında aslında ileri doğru bir notification gönderiliyor.
+
+279
+00:56:35,030 --> 00:56:50,940
+Ancak bu notification geriye uygulamaya döndürülerek uygulamanın ürettiği trafiği azaltması sağlamıyor.
+
+280
+00:56:50,940 --> 00:57:11,940
+Bunun ikinci alternatifi, router'ın az önce söylediğim gibi geri dönüş yolunda bir önceki routera bunu açıkça söylemesi her paket için.
+
+281
+00:57:11,940 --> 00:57:25,940
+Yani uygulamanın kendisine paket gönderen uygulamaya göndermesini beklemek yerine router, şu ortadaki router'ı düşünelim,
+
+282
+00:57:25,940 --> 00:57:45,579
+tıkanıklık yaşıyor ya, karşıdan baktığımızda solundaki bir öncesindeki routera gönderdiği paketlerde, paketlerin içerisinde yine bir explicit congestion notification bitini set edecek.
+
+283
+00:57:45,579 --> 00:57:59,579
+Bunu gören router da anlayacak ki ileride tıkanıklık var. Öyleyse benim ileriye daha az paket göndermem lazım.
+
+284
+00:57:59,579 --> 00:58:09,579
+Oraya giden paketleri hızımı yavaşlatmam lazım. Bilim zamanda gidecek paket miktarını düşünmem lazım.
+
+285
+00:58:10,579 --> 00:58:22,579
+Şimdi bakın dikkat edin, birinde congestion notification'ı ileriye gönderiyoruz, uca kadar gidiyor, uçtan en geriye dönüyor.
+
+286
+00:58:22,579 --> 00:58:33,579
+Yani end to end oluyor fakat notification ileri doğru gidiyor işaretlerle. Bu yüzden buna forward congestion notification diyoruz.
+
+287
+00:58:33,579 --> 00:58:53,579
+Diğerinde ise router yaşadığı durumu, ilerisinde yaşadığı, kendi çıkışında yaşadığı tıkanıklık durumunu, geriye doğru gönderdiği paketleri işaretleyerek bir adım öncesindeki routera anlatmaya çalışıyor.
+
+288
+00:58:53,579 --> 00:59:03,579
+Ve böylece o routerin tedbir almasını sanıyor. Tabii ki doğal olarak o router da kendisinden bir önceki routera bunu söyleyecek.
+
+289
+00:59:03,579 --> 00:59:14,579
+O bir önceki routera, tam nereye kadar gelecek? Source noktasına, kaynak noktasına kadar gelecek. O zaman burada da neden bahsedebiliriz?
+
+290
+00:59:14,579 --> 00:59:39,579
+Backward congestion notification olarak bahsedebiliriz. Yani biri ileriye doğru yapılan, biri geriye doğru yapılan ama ileriye doğru yapılan da amaç uçtaki hedef uygulamanın diğer uçtaki kaynak uygulamaya mesaj göndermesi ve onu yavaşlatması.
+
+291
+00:59:39,579 --> 00:59:55,579
+O yüzden burada source noktasında end to end, kaynak noktasında bir yavaşlatma yapıyoruz. Diğerinde ise hop by hop geriye doğru bu durumu bildirerek.
+
+292
+00:59:55,579 --> 01:00:09,579
+Tabii burada şöyle bir şey daha var. Bakın üzerine basa basa söyledim. Bir bit seteliyoruz dedim. Yani paketin içerisinde bu iş için ayrılmış özel bir alanı kullanıyoruz.
+
+293
+01:00:09,579 --> 01:00:23,579
+Bu durumu ifade ekmek için ayrı paket göndermeye kalkarsak zaten paketlerden dolayı tıkanıklık yaşayan dinet fırkı daha da tıkanmış olacağız.
+
+294
+01:00:23,579 --> 01:00:39,579
+Daha fazla trafik üretmiş olacağız. O yüzden paketlerin içerisinde başvuk bölümünde bu iş için ayrılmış ki protokolleri arki protokollerini incelerken buna da özellikle bakacağız.
+
+295
+01:00:39,579 --> 01:00:54,579
+Alanlar var. Bu alanlardaki özel bitler yeri geldiğinde az önce anlattığım senaryolar doğrultusunda bire set edilerek konuşacağız için durumu ifade etmek için kullanılıyor.
+
+296
+01:00:54,579 --> 01:01:13,579
+Burada piggybacking deniyor. Aslında piggybacking kavramını yine veri iletiminden o dersten fiziksel katman ve buna bağlı olarak link katmanından biliyor olmanız lazım.
+
+297
+01:01:13,579 --> 01:01:33,579
+Teknoloj bilgisi mesela piggybacking ile gönderilir. Diğer tarafa gönderilecek bir frame ile beraber orada bir alan vardır. Piggyback ne demek? Birinin sırtına binip o kişinin sırtında ilerlemek demek.
+
+298
+01:01:33,579 --> 01:01:47,579
+Yani zaten o yöne doğru giden bir paket var. O paketin içerisinde de ben bu biti set ediyorum. Ayrılmış olan alanı kullanıyorum. Böylece ekstra trafik üretmiyor.
+
+299
+01:01:47,579 --> 01:02:08,059
+Şimdi load shedding bu da yine bakın end to end veyahut da link by link yapılabilir. Bütün yöntemler yetersiz kaldı şu ana kadar konuştuğumuz.
+
+300
+01:02:08,059 --> 01:02:22,059
+Yani düzgün bir provizyonlanma yapılmamış, eksik yapılmış mesela. Traffic aware routing uygulanıyor bazen uygulanmayabilir. Her topolojide traffic aware routing uygulanacak diye bir kural yok.
+
+301
+01:02:22,059 --> 01:02:41,059
+İşte add machine controlling uygulanabileceği veya uygulanamayacağı yerler var. Bunu bahsettik. Explicit congestion notification, imit traffic trolling bunların hepsi bir şekilde öyle veya böyle etkisiz kaldı.
+
+302
+01:02:41,059 --> 01:03:03,889
+O zaman yaptığımız şey load shedding. Fazla yükten kurtulmak. Eşittir paketleri drop etmek, eşittir gelen paketleri gelmemiş provretmek. End to end de olabilir veya link to link de olabilir.
+
+303
+01:03:03,889 --> 01:03:25,840
+Şimdi link by link yaparsak sağ taraftaki örnekte olduğu gibi bu çok hızlı bir şekilde rahatlama sağlıyor. Çünkü neden? Uca kadar bunun yani gönderene kadar bunun gitmesi için beklenmiyor.
+
+304
+01:03:25,840 --> 01:03:41,840
+Link'te, link'in iki ucunda birer tane router var doğal olarak zaten gözünüzün önünde canlanıyor olması lazım. Bu iki router arasında bu iş çözülüyor.
+
+305
+01:03:41,840 --> 01:03:55,840
+Bakın şey olarak çok benziyor aslında. Trafik trolling ile load shedding benziyor. Trafik trolling de azaltma ve bufferlama üzerine kurulu bir mekanizma var.
+
+306
+01:03:55,840 --> 01:04:09,840
+Ama azaltılamıyorsa veyahut da bufferlar yetmiyorsa o zaman bunu uygulamak durumunda kalıyoruz. Yani paketleri devre dışı bırakıyoruz, işlemiyoruz, gelmemiş gibi kabul ediyoruz.
+
+307
+01:04:09,840 --> 01:04:30,840
+Şimdi buradaki özel bu iş için kullanılan paketin adı da çok paketi, çok boğulmak. Yani routerin bir önceye söylediği ben boğuluyorum acil durum bilgisi.
+
+308
+01:04:30,840 --> 01:04:43,840
+Bakın AE, EF, FD arasında var. EF çok kalın çizilmiş. Orada çok ciddi bir trafik var. Ama bu trafin fazlalığı FD'yi daha çok etkiliyor.
+
+309
+01:04:43,840 --> 01:04:56,840
+FD bu trafik altında eziliyor ve boğuluyorum diyor. F'ye mesaj gönderiyor. F azaltıyor. Daha doğrusu düşürüyor, paket drop ediyor.
+
+310
+01:04:56,840 --> 01:05:09,840
+F paket drop ederken aynı zamanda E'ye giden paketlerde de bu çok bilgisini, boğulma bilgisini replike ediyor. O zaman E de paket düşürmeye başlıyor.
+
+311
+01:05:09,840 --> 01:05:30,840
+E de bunu nereye gönderiyor arkadaşlar? A'ya gönderiyor. A da düşürüyor ve bir anda yol boyunca A'sı da, E'si de, F'si de paket düşürdüğü için 4 ve 5'te görülen, şey durumu 5'te görülen durum oluşuyor.
+
+312
+01:05:30,840 --> 01:05:51,840
+Bu yoğun ve routerların tıkanmasına sebep olan trafikten daha az yoğun trafiği. Ama tabii ki bunun bedeli ne? Bunun bedeli paketlerin kaybolmuş olması, paketlerin işlenmemiş olması, gelmemiş gibi davranması.
+
+313
+01:05:51,840 --> 01:06:15,840
+Ve buna bağlı olarak da, buna bağlı olarak da paketlerin retransmit edilecek olması. Şimdi end to end örneğine bakalım. Burada end to end'de daha geç bir efekt var.
+
+314
+01:06:15,840 --> 01:06:43,920
+D'den F'ye yine çoğuk paketi gidiyor, ben boğuluyorum diyor. F henüz bir şey yapmıyor, bunu E'ye gönderiyor. E de henüz bir şey yapmıyor, bunu A'ya gönderiyor. A bunun üzerine kaynak ya gönderme hızını azaltmaya başlıyor.
+
+315
+01:06:43,920 --> 01:07:12,920
+Şimdi o arada paketler yine drop ediliyor fakat A'ya kadar da bu bilgi gittiği için E tarafından drop edildi, F tarafından drop edildi ama aynı zamanda A tarafından da paket çıkarım hızı azaltıldı ya, ikisi bir arada aslında daha efektif ve uzun vadede daha düzgün bir congestion kontrol sağlamış oluyor.
+
+316
+01:07:13,920 --> 01:07:34,920
+Bakın şunu unutmayın, congestion oluşmasının temel sebebi bir uygulamanın ön görülenden daha fazla trafik üretmesidir. Burada A'daki uygulama normale göre daha fazla trafik üretiyor.
+
+317
+01:07:34,920 --> 01:08:00,920
+Diğer uygulamaların trafikleriyle bir araya geldiğinde D rutunun boğulmasına sebep oluyor. O zaman yani bir taraftan paket devre dışı bırakarak rahatlama sağlayacaksak, bunun uzun süreli olmasını istiyorsak A'ya da diyebilmemiz lazım ki yavaşla paketleri daha yavaş olarak gönder.
+
+318
+01:08:00,920 --> 01:08:19,920
+Şimdi bakın burada önemli bir şey daha var. Paket drop edeceksek ve buffer da bekleyen paketleri drop edeceksek, çünkü ne dedim paket drop etmenin yani load shedding'in bir öncesi trafik dropping orada da ne söz konusuydu?
+
+319
+01:08:19,920 --> 01:08:39,920
+Bu buffer'lama söz konusuydu. Eğer böyle bir şey yapacaksak şu soruyu düzgün bir şekilde cevaplayabilmemiz lazım. Hangi paketleri drop edeceğiz?
+
+320
+01:08:39,920 --> 01:09:02,920
+Yeni gelen paketlerimi drop edeceğiz, eski gelen paketlerimi drop edeceğiz. Şimdi burada teknik terim olarak süt ve şarap kullanılıyor. Niye derseniz sütün tazesi makbul, şarabın da eskisi.
+
+321
+01:09:02,920 --> 01:09:24,920
+Bazı uygulamalarda en son gelen paketler kaybolmamalı, ondan önceki paketler kaybolsa da sorun çıkmaz yaklaşımalar. Bazı uygulamalarda ise eski ilk gelen paketler kaybolmamalı, yeni gelen paketler kaybolsa sorun çıkmaz.
+
+322
+01:09:24,920 --> 01:09:45,670
+Biri sütle biri şarapla, milk, wine. Terminolojideki şey bu, ismi bu bunun. Bir video izliyorsanız o videonun son sahnesinden devam edilebilir, aradaki bozukluklara rağmen.
+
+323
+01:09:45,670 --> 01:10:09,670
+Çünkü normal bir akışın içerisinde. Bunu aslında analog dünyada çok daha iyi biliyoruz. Dijital yayın değil de analog yayınlarda, analog antenler üzerinden alınır da ekranlarda gösteren analog televizyonlarda, uydu yayını da bunlardan bir tanesi aslında veya yerel televizyon yayınları başkası.
+
+324
+01:10:09,670 --> 01:10:21,670
+Şimdi diyelim bazen bir parazitik durum oluşurdu ve o an o sahne bozulur. Ne olduğunu tam anlayamazsınız ama sonra düzelir ve sahne devam eder.
+
+325
+01:10:21,670 --> 01:10:35,670
+Veya işte aşırı yağmur yağışı varsa, uydu hakları bazen sıkıntı oluşturuyor. Kullanılan frekanslar ötürü havadaki su, buharı, nem arttığında bozuluyorlar.
+
+326
+01:10:35,670 --> 01:10:53,670
+Sıkıntı oradan kaynaklanıyor. Görüntüde bir kopukluk oluyor falan ama devam ediyor. Şimdi burada hangi şey önemli? Milk yani süt yaklaşımı, son paket oradan kaldığı yerden devam ediyor.
+
+327
+01:10:53,670 --> 01:11:07,670
+Ama diğer taraftan file transferi yapıyorsunuz. Bir filen sunucudaki halini istemciye aynen aktarmamız lazım. İşte browserınızdan download ediyorsunuz.
+
+328
+01:11:07,670 --> 01:11:19,670
+Şimdi bu durumda son paketi kurtarıp eski paketleri çöpe atmak durumu daha felaket edebilecek. Niye? Çünkü zaten onlar eksik olduğu için tekrar istenecekler.
+
+329
+01:11:19,670 --> 01:11:31,670
+Sırayı bozamazsınız ki öbür tarafta hangi sıradaysa, hangi yapıdaysa, bu tarafta da aktarıldığı tarafta da aynı yapıda, aynı sırada olması gerekiyor.
+
+330
+01:11:31,670 --> 01:11:52,390
+O zaman burada da neden bahsediyoruz? Şarap, vayn yaklaşımından bahsediyoruz. Şimdi arkadaşlar bugün konuşacağımız zaten congestion kontroldü.
+
+331
+01:11:52,390 --> 01:12:09,739
+Onunla alakalı olası hem preventatif diyebileceğimiz, hem proaktif diyebileceğimiz yaklaşımları gözden geçirdik.
+
+332
+01:12:09,739 --> 01:12:16,739
+Hem de reactif diyeceğimiz yaklaşımları gözden geçirdik. Aralarındaki ilişkileri ortaya koyduk.
+
+333
+01:12:16,739 --> 01:12:29,739
+Çoğu zaman bunun bir tanesini değil birkaç tanesini bir arada uygulamamız gerekiyor. Preventatif veya proaktif olanlar daha yavaş davranıyorlar.
+
+334
+01:12:29,739 --> 01:12:49,739
+Reaktif olanlar daha hızlı davranıyorlar. Şeyi de öğrendik yani çok böyle kontrollü bir şekilde, disiplinli bir şekilde bir network kullanımı sağladığımızda bu sefer networkün önemli bir kısmını kullanamamış oluyoruz.
+
+335
+01:12:49,739 --> 01:13:09,739
+Ama bundan feragat ettiğimizde de diğer taraftan anlık kullanımlar, PIC yaptığında ve networkümüzün kapasitesinin yeteneklerini açtığında congestion ile karşılaşıyoruz, tıkanıklıkla karşılaşıyoruz.
+
+336
+01:13:09,739 --> 01:13:22,739
+Yani orada ince bir denge var. Şeyi de gördük, az önce işte örneğiyle beraber topolojideki örneğiyle beraber de üzerinden geçtik.
+
+337
+01:13:22,739 --> 01:13:39,739
+Net Mission Control, virtual circuit yapılarında çok rahat çalışabilecek bir şey. İş hayatımızı kolaylaştırabilecek bir şey ama diğer taraftan datagram yapısına kesinlikle uygun olmayan bir yaklaşım.
+
+338
+01:13:39,739 --> 01:13:54,739
+Trafik throttling'i ister virtual circuit'te yaparsınız, ister datagramda ama virtual circuit'te az önce öğrendiğiniz bilgiler dahilinde ne diyebiliyor olmanız lazım.
+
+339
+01:13:54,739 --> 01:14:09,739
+Virtual circuit'te niye trafik throttling yapalım ki zaten öncesinde bir mission control'den geçilmiştir, trafik belirlenmiştir yani uygulamanın söz verdiği trafikten daha fazlasını aktarmayacak olması gerekiyor.
+
+340
+01:14:09,739 --> 01:14:23,739
+Bunun bu şekilde planlanmış olması lazım. Ama diğer taraftan da işte trafik throttling hem forward yönde hem backward yönde, datagram netvorklarında çok rahat bir şekilde uygulanabilir.
+
+341
+01:14:23,739 --> 01:14:39,739
+Önemli olan router'ın paketleri işaretlemesi, ileri yönde veyahut da geri yönde diğer router'ları veya uçtaki uygulamayı haberdar etmesi şeyin de önemini gördünüz.
+
+342
+01:14:39,739 --> 01:14:54,210
+Kaynağında bunu çözebilmek gerekiyor. Network layer açısından bakıldığında çünkü birden fazla hop'tan bahsediyoruz. Tek hop varsa o network layer sayılmaz.
+
+343
+01:14:54,210 --> 01:15:12,210
+En azından 2-3 hop olması gerekiyor. O zaman da congestion'ın uzun vadede düzgün yönetilebilmesi için paketlerin çıkış noktasındaki hızının kontrol edilmesi önem taşıyor.
+
+344
+01:15:12,210 --> 01:15:26,210
+Yani bu durumda link by link, hop by hop çözümler uygulanabilir ancak end to end çözümler daha efektif çözümler.
+
+345
+01:15:26,210 --> 01:15:44,210
+Şimdi haftaya quality of service'den devam edeceğiz. Bakın dikkat edin burada da çok ilginç değil mi? Trafik shaping var, paket scheduling var, admission control var.
+
+346
+01:15:44,210 --> 01:16:00,210
+Yani az önce bizim congestion kontrolde gördüğümüz konulara benzer konular var. Buradan da şunu söyleyebiliriz.
+
+347
+01:16:00,210 --> 01:16:15,210
+Tıkanıklığı kontrol edebildiğimiz zaman onun bir üst seviyesi daha böyle rafine edilmiş bir şeyiyle de paket aktarım kalitesini belirleyebiliriz.
+
+348
+01:16:15,210 --> 01:16:25,210
+Gecikme sürelerini kontrol edebiliriz. Band genişliklerini kontrol edebiliriz. Bu da tabii ki işin farklı bir tarafı.
+
+349
+01:16:25,210 --> 01:16:34,069
+Efendim Hüma bir şey sormak istiyorsun galiba?
+
+350
+01:16:34,069 --> 01:16:41,069
+Evet hocam. Trafik trod link ve load shedding reaktif mi oluyor yani?
+
+351
+01:16:41,069 --> 01:16:44,069
+Evet. Sağ tarafta.
+
+352
+01:16:45,069 --> 01:16:55,069
+Yani tam ortada yer alıyor. Ne tam reaktif ne tam proaktif ikisinin ortasında. Öyle düşün. Yani obiskala.
+
+353
+01:16:55,069 --> 01:17:02,069
+Sol tarafa doğru gittiğin zaman preventatif veya proaktif, sağ tarafa doğru gittiğin zaman reaktif.
+
+354
+01:17:02,069 --> 01:17:16,069
+Admission control bir noktada reaktif olabilir. Şöyle ki normalde admission control yapmazsın ama congestion başladığının ve ilerlediğinin farkına vardığında admission control yaparsın.
+
+355
+01:17:16,069 --> 01:17:23,069
+O zaman reaktif bir şeydir. Ama sen dersin ki ben çok sağlamcı davranacağım. Çok disiplinli davranacağım.
+
+356
+01:17:23,069 --> 01:17:29,069
+Bütün uygulamalar için şu anda congestion olsun olmasın admission control uygulayacağım.
+
+357
+01:17:29,069 --> 01:17:34,069
+O zaman admission control ne olacaktır? Preventatif veya proaktif olacaktır.
+
+358
+01:17:34,069 --> 01:17:39,069
+Yani o tam böyle ikisinin ortasında bir yerde. İki türlü de kullanabilirsin.
+
+359
+01:17:39,069 --> 01:17:41,069
+Aynen hocam.
+
+360
+01:17:41,069 --> 01:17:47,350
+Ama trafik trod linki veya load shedding'i congestion olmadan uygulayamazsın zaten.
+
+361
+01:17:47,350 --> 01:17:49,350
+Tamam.
+
+362
+01:17:49,350 --> 01:17:51,350
+Sağ olun.
+
+363
+01:17:51,350 --> 01:17:53,350
+Var mı başka soru arkadaşlar?
+
+364
+01:17:53,350 --> 01:17:59,979
+O zaman hepinize iyi akşamlar.
+
+365
+01:17:59,979 --> 01:18:02,979
+Haftaya görüşmek üzere.
+
+366
+01:18:02,979 --> 01:18:06,539
+Teşekkürler hocam. İyi akşamlar.
+
+367
+01:18:06,539 --> 01:18:14,239
+Sağ olun.
+
+368
+01:18:14,239 --> 01:18:18,239
+Hocam pardon haftaya pazartesi lab olacak mı acaba?
+
+369
+01:18:18,239 --> 01:18:21,239
+Labların planlanması daha bitmedi.
+
+370
+01:18:21,239 --> 01:18:24,239
+Zaten onun duyurusu size yapılacaktır.
+
+371
+01:18:24,239 --> 01:18:28,239
+Benim de şu anda net bir şekilde şeyim yok.
+
+372
+01:18:28,239 --> 01:18:31,239
+Çünkü o planlama yapılıyor.
+
+373
+01:18:31,239 --> 01:18:34,239
+Ona bağlı olarak ne olduğunu göreceğiz.
+
+374
+01:18:34,239 --> 01:18:36,239
+Tamamdır hocam. İyi akşamlar.
+
+375
+01:18:36,239 --> 01:18:38,239
+İyi akşamlar. Sağ olun.
+

@@ -1,0 +1,3964 @@
+1
+00:06:12,370 --> 00:06:16,870
+Evet arkadaşlar, başlayalım artık. Sesimi geliyor mu? Bir problem var mı?
+
+2
+00:06:16,870 --> 00:06:22,079
+Lab ders biter bitmez başlayacak [öğrenci].
+
+3
+00:06:22,079 --> 00:06:31,079
+Yani derste ara vermeyeceğim. Çünkü zaten kısa bir ders. Tamam geliyor ses.
+
+4
+00:06:31,079 --> 00:06:35,579
+Lab ile alakalı zaten asistan arkadaşlar duyuru yapmıştır.
+
+5
+00:06:35,579 --> 00:06:42,079
+Hani labda gösterme kendinize vakit ayırabileceksiniz lab saatinde muhtemelen.
+
+6
+00:06:42,079 --> 00:06:45,389
+Yani bir sıraya göre alacaklar.
+
+7
+00:06:45,389 --> 00:06:47,889
+Evet arkadaşlar, şimdi geçen hafta ne yapmıştık?
+
+8
+00:06:47,889 --> 00:06:54,389
+Geçen hafta 82.55 input-output entegresini mod 1'ini analiz etmiştik.
+
+9
+00:06:54,389 --> 00:06:58,889
+Ve mod 2'sine de baktık ama bizim işimiz daha çok mod 1'de demiştik.
+
+10
+00:06:58,889 --> 00:07:00,889
+Mod 2'de izah etmiştik ama.
+
+11
+00:07:00,889 --> 00:07:06,389
+Bu hafta bununla alakalı bir örneğimiz var. Örnek proteos örneği.
+
+12
+00:07:06,389 --> 00:07:13,889
+Onu anlatacağım ama öncesinde tekrardan hızlıca bazı yani anlamak kavramakla
+
+13
+00:07:13,889 --> 00:07:17,389
+en önemli kısımlar olan o kısımları bir daha vurgulamak istedim.
+
+14
+00:07:17,389 --> 00:07:22,889
+Bunları vurguladıktan sonra örnek üzerinde örneği de yapacağız.
+
+15
+00:07:22,889 --> 00:07:24,889
+Sonra yeni konuya geçeceğiz bugün.
+
+16
+00:07:24,889 --> 00:07:30,389
+Arkadaşlar ne demiştik ilk başta? Her entegre'nin kendi kontrolü ördü olacak.
+
+17
+00:07:30,389 --> 00:07:32,389
+Dörtte başlıyor evet.
+
+18
+00:07:32,389 --> 00:07:36,389
+Her entegre'nin kendi kontrolü ördü olacak.
+
+19
+00:07:36,389 --> 00:07:41,889
+Bu aslında o entegre'nin davranışını belirleyeceğimiz bir sözcük dizilimidir.
+
+20
+00:07:41,889 --> 00:07:43,889
+Bu şekilde belirtmiştik.
+
+21
+00:07:43,889 --> 00:07:49,889
+Bu 82.55'in de en önemli sözcük dizilimi yani bu kontrol sözcüğü.
+
+22
+00:07:49,889 --> 00:07:51,889
+Aslında mod selection kısmı.
+
+23
+00:07:51,889 --> 00:07:53,889
+Hangi moda sokacağımızla alakalı.
+
+24
+00:07:53,889 --> 00:07:57,889
+Çünkü biliyoruz ki mod 0.1.2 bir tane de bit set reset modumuz var.
+
+25
+00:07:57,889 --> 00:08:01,889
+Şimdi mod 1'de en önemli etken şunu biliyorum.
+
+26
+00:08:01,889 --> 00:08:09,889
+Port A ve Port B arasında handshaking dediğimiz yani karşılıklı iletişim tabanlı bir alışveriş.
+
+27
+00:08:09,889 --> 00:08:12,889
+Yani bir data'nın gönderilmesi veya data'nın okunması.
+
+28
+00:08:12,889 --> 00:08:18,889
+Ama nasıl? Port A'daki data okuyorsa, Port B'ye gönderen desek,
+
+29
+00:08:18,889 --> 00:08:23,389
+Port B'nin Port A arasında bir tamam mısın göndereyim mi?
+
+30
+00:08:23,389 --> 00:08:28,389
+Veyahut da aldım yenisini gönder gibi bir iletişime sokmamız gereken moddu.
+
+31
+00:08:28,889 --> 00:08:33,389
+Ve control word'de de mod 1 yapmak için aslında iki yerimiz var.
+
+32
+00:08:33,389 --> 00:08:35,889
+Şu iki yeri seçiyorduk.
+
+33
+00:08:35,889 --> 00:08:45,389
+Ve burada işte Port B'nin input mu, output mu, Port A'nın input mu, output mu olduğunu belirliyorduk.
+
+34
+00:08:45,389 --> 00:08:50,889
+Ayrıca şu da bir mod selection arasında eğer biz set reset yapmayacaksak,
+
+35
+00:08:50,889 --> 00:08:57,389
+en anlamlı olan 7. pin'in veya 8. pin'in 1 olması gerektiğini söylemiştik.
+
+36
+00:08:57,389 --> 00:09:03,389
+Bu D3 ve D0 pinleri de Port C'nin lower ve upper pinleriydi.
+
+37
+00:09:03,389 --> 00:09:09,389
+Ancak bunları tabi mod 1'de yaptığımızda bazı sinyal yani handshaking'e gidecek olan
+
+38
+00:09:09,389 --> 00:09:20,389
+kontrol sinyalleri Port C'den okunabileceği için bunları sadece belirlenmiş 6 ve 7. pinler için kullanabiliyoruz demiştik.
+
+39
+00:09:20,389 --> 00:09:34,299
+Hatta şu figür üzerinden anlatalım.
+
+40
+00:09:34,299 --> 00:09:38,299
+Evet, şu da daha net anlaşılacak.
+
+41
+00:09:38,299 --> 00:09:43,299
+Misal Port A'yı input, Port B'yi de output yaptığımızda.
+
+42
+00:09:43,299 --> 00:09:54,299
+Port A'yı ben handshake mod 1 mantığıyla input, Port B'yi de mod 1 mantığıyla output yaptığımda ne yapmam gerekiyordu?
+
+43
+00:09:54,299 --> 00:09:58,299
+Bir kere Port A'nın ilgili olan o 2 bitlik kısmı mod 1'e getirdim.
+
+44
+00:09:58,299 --> 00:10:02,299
+Tabi burası dediğimiz gibi mod selection yapıyorsak hep 1 olacaktı.
+
+45
+00:10:02,299 --> 00:10:06,299
+Sonra burası input yapacağımız için Port A'yı input seçmiştim.
+
+46
+00:10:06,299 --> 00:10:12,299
+Port B'yi output olarak yaptığımızda ise Port A'yı modu seçtim.
+
+47
+00:10:12,299 --> 00:10:15,299
+Port B'nin de outputunu define ettim.
+
+48
+00:10:15,299 --> 00:10:20,299
+Burada bu ikisi arasında bir iletişim kurmamız gerekeceği için yani buradaki
+
+49
+00:10:20,299 --> 00:10:28,299
+Strobe, IBF gibi pinlerin kendi içerisinde C portuna bağlı bir değer okuması yapacağımız için
+
+50
+00:10:28,299 --> 00:10:31,299
+her C portunun pinini kullanamıyorduk.
+
+51
+00:10:31,299 --> 00:10:34,299
+Ama bize rezerv edilmiş bir iki tane pinimiz vardı.
+
+52
+00:10:34,299 --> 00:10:37,299
+6 ve 7 eğer Port A'yı input ise.
+
+53
+00:10:37,299 --> 00:10:44,299
+O yüzden bu kısma 6. ve 7. pinlerin input-output olma durumunu belirleyebiliyorduk.
+
+54
+00:10:44,299 --> 00:11:09,450
+Port C'nin 6. ve 7. pinlerini bize kullanmamız için açılmıştı demiştik.
+
+55
+00:11:09,450 --> 00:11:12,450
+Ama tam ters Port A'yı ben output yaparsam
+
+56
+00:11:12,450 --> 00:11:15,450
+Port A'nın output dizaynına bakalım.
+
+57
+00:11:15,450 --> 00:11:18,450
+Yine aynı şekilde mod 1'i seçtim.
+
+58
+00:11:18,450 --> 00:11:23,450
+D4'ün benim Port A'nın input mu output mu olduğunu belirteyen kısımdı.
+
+59
+00:11:23,450 --> 00:11:28,450
+Output olarak ayarladım ve bu sefer 6-7 değil 4-5'e bize olanak sunuyor.
+
+60
+00:11:28,450 --> 00:11:34,450
+Çünkü 6-7 de benim output yaptığımda Port A'yı
+
+61
+00:11:34,450 --> 00:11:40,450
+Port C üzerinden okuma yapabileceğim ve iletişimde kullanabileceğim portlar olacak.
+
+62
+00:11:40,450 --> 00:11:43,450
+Bu detay önemli.
+
+63
+00:11:43,450 --> 00:11:49,450
+Port B değilse zaten Port C'nin upper veya lower ile alakalı bir işlem yapmıyoruz.
+
+64
+00:11:49,450 --> 00:11:51,450
+Port B'yi define ederken.
+
+65
+00:11:51,450 --> 00:11:55,450
+Çünkü zaten arta kalan 6 ve 7'yi burada kullandık.
+
+66
+00:11:55,450 --> 00:11:57,450
+Diğerleri hep define edilmiş.
+
+67
+00:11:57,450 --> 00:12:00,450
+Hala hala kullanılmakta olan pinler C portunun.
+
+68
+00:12:00,450 --> 00:12:06,450
+Yani şöyle 1-2, 0-1-2, 3-4-5 şu ikisini bağladığımda.
+
+69
+00:12:06,450 --> 00:12:14,450
+Şu ikisini bağladığımda da aynı şekilde 4-5 dışındakilerin hepsi kullanıldığı için onları atama yapamıyoruz demiştik.
+
+70
+00:12:14,450 --> 00:12:18,450
+Şimdi ben niye bir daha bu kısmı anlattım.
+
+71
+00:12:18,450 --> 00:12:24,450
+Şu yüzden burada bir int A ve int B denen iki tane şeyimiz var.
+
+72
+00:12:24,450 --> 00:12:26,450
+Bayrak diyebiliriz esasında.
+
+73
+00:12:26,450 --> 00:12:29,450
+Yani enable, interrupt'ı enable edeceğim.
+
+74
+00:12:29,450 --> 00:12:31,450
+Daha doğrusu şöyle söyleyelim.
+
+75
+00:12:31,450 --> 00:12:41,450
+Eğer ki ben port A'nın koşulları yerine geldiğinde bir interrupt üreteceksem bu interrupt'ın oluşabilmesi iki şeye bağlı.
+
+76
+00:12:41,450 --> 00:12:47,450
+Bir, zaten bu Entegra'nın A portunun interrupt'ı enable edilmiş olması lazım.
+
+77
+00:12:47,450 --> 00:12:53,450
+İki, strop ve IBF arasındaki iletişim tamamen doğru yapılmış olması lazım.
+
+78
+00:12:53,450 --> 00:13:04,450
+Yani IBF acknowledgement'a, işte OBF'de stroba bağlandı ve o arasındaki iletişimin senkron olması, yani handshaking yapılmış olması gerekir.
+
+79
+00:13:04,450 --> 00:13:16,450
+Burada int A ve int B bunu eğer ben set etmezsem, buradaki iletişim ne derecede düzgün olsa bir işe yaramayacak.
+
+80
+00:13:16,450 --> 00:13:18,450
+Yani bir interrupt oluşmayacak.
+
+81
+00:13:18,450 --> 00:13:20,450
+Bunu nereden set ediyorum?
+
+82
+00:13:20,450 --> 00:13:23,450
+Burada ki paralelindeki pinler bunları gösteriyor.
+
+83
+00:13:23,450 --> 00:13:38,450
+Biraz orada belki anlam karmaşası olmuş ama int B'yi ben, eğer ki B portunun interrupt'ı enable'ını aktif etmek istiyorsam bir kere C2 portuna bit set reset modülüyle,
+
+84
+00:13:38,450 --> 00:13:50,450
+yani mod selection değil, 1 ile başlayan vardı ya, X, X, X, sonra 3 tane pin, bu dijit yani ne yaptığımızla alakalı binary karşılığı.
+
+85
+00:13:50,450 --> 00:13:52,450
+Yani bunu nasıl göstereyim?
+
+86
+00:13:52,450 --> 00:13:56,450
+Şöyle A dersek belki A portuyla karışır.
+
+87
+00:13:56,450 --> 00:14:01,450
+Z diyelim, Z3, pardon Z2, Z1, Z0.
+
+88
+00:14:01,450 --> 00:14:04,450
+En sonda da 1 mi 0 mi yaptığımızın kararı.
+
+89
+00:14:04,450 --> 00:14:13,450
+Yani misal şurayı ben, eğer ki B portunun interrupt'ını enable edeceksem ki etmem lazım bir handshake yapacaksam programın başında,
+
+90
+00:14:13,450 --> 00:14:24,450
+bunu ikinci portu, C portunun yani 0, 1, 0'ı 1 şeklinde ilk başta, burası önemli değil dediğim gibi,
+
+91
+00:14:24,450 --> 00:14:28,450
+şu kodu bit set reset modülünde ctrl-vert olarak göndermem gerekiyor.
+
+92
+00:14:29,450 --> 00:14:36,450
+Çünkü ben interrupt B'yi yani B portunu gönderen taraftı eğer bu kısmı aktif etmem lazım.
+
+93
+00:14:36,450 --> 00:14:42,450
+Gerçi alan tarafta da interrupt B aynı şekilde, ikinci C portunun ikinci pin'i de aktif olacak.
+
+94
+00:14:42,450 --> 00:14:46,450
+Sadece A portunun birinde dördüncü C portunu set etmem lazım.
+
+95
+00:14:46,450 --> 00:14:51,450
+Eğer A portu gönderiyorsa 6. pinini set etmem gerekiyor.
+
+96
+00:14:51,450 --> 00:14:53,450
+Buradan bu anlam çıkıyor.
+
+97
+00:14:53,450 --> 00:14:55,450
+Bunu böyle okuyacağız.
+
+98
+00:14:55,450 --> 00:14:57,450
+Anlaşıldı mı arkadaşlar?
+
+99
+00:14:57,450 --> 00:15:08,750
+Bir problem yok değil mi? Bunları anlattık ama ben hızlıca bir daha geçiyorum çünkü örneğe geçeceğim.
+
+100
+00:15:08,750 --> 00:15:10,750
+Örnekte bunlar lazım olacak bize.
+
+101
+00:15:10,750 --> 00:15:15,509
+Diğer kısımları anlatmıştım zaten.
+
+102
+00:15:15,509 --> 00:15:18,509
+Şurada mod 2'de ne farkındalık vardı?
+
+103
+00:15:18,509 --> 00:15:24,509
+Aslında şey yoktu sadece port B kısmı artık port A'ya gömülmüş bir şekildeydi.
+
+104
+00:15:25,509 --> 00:15:35,509
+Port A'nın kendi içerisinde biz bir directional bir şekilde yani bir hattan hem gönderip hem alım olacak şekilde bir yapı oluşturabiliyorduk.
+
+105
+00:15:35,509 --> 00:15:43,509
+Ama burada da aynı şekilde interruptlar 6. ve 4. pin için set edilmesi gerekiyor diyeceğiz.
+
+106
+00:15:43,509 --> 00:15:47,940
+Bu okumayı yapabiliyor olmamız lazım.
+
+107
+00:15:47,940 --> 00:15:49,940
+Tamam herhalde.
+
+108
+00:15:49,940 --> 00:15:51,940
+O zaman örneğe geçeceğim arkadaşlar.
+
+109
+00:15:52,940 --> 00:15:54,940
+Pardon.
+
+110
+00:15:54,940 --> 00:16:08,649
+Güncelleme gelmiş herhalde.
+
+111
+00:16:18,850 --> 00:16:45,720
+Proteos ekranı geliyor mu arkadaşlar?
+
+112
+00:16:45,720 --> 00:16:55,019
+Peki şöyle source koda geçtiğimde de geliyor mu?
+
+113
+00:16:55,019 --> 00:16:57,019
+Bir problem yok değil mi?
+
+114
+00:16:57,019 --> 00:16:59,019
+Source kod gözüküyor mu?
+
+115
+00:16:59,019 --> 00:17:00,019
+Geliyor hocam.
+
+116
+00:17:00,019 --> 00:17:01,019
+Tamam.
+
+117
+00:17:01,019 --> 00:17:04,019
+Yazık kontunu belki biraz büyütmek lazımdı.
+
+118
+00:17:04,019 --> 00:17:07,019
+Neyse okunuyor herhalde.
+
+119
+00:17:08,019 --> 00:17:13,019
+Şimdi arkadaşlar ilk etapta şunu yapıyorduk her problemde.
+
+120
+00:17:13,019 --> 00:17:26,019
+Bir adresin ne olduğunu hani size böyle bir dizan gelmiş olduğunda kodlamaya geçerken ilk yapacağımız iş aktif adres nereye yerleştirilmiş?
+
+121
+00:17:26,019 --> 00:17:35,019
+Yani bu 82 yani herhangi bir bugün işleyeceğimiz 82.51 de olur 82.55 de olur.
+
+122
+00:17:35,019 --> 00:17:46,019
+Ama buradaki yerleştirdiğimiz şey Entegre nereye yerleşmiş adres buradayında bunun belirlenmesi ilk etap eğer şablon verildiyse.
+
+123
+00:17:46,019 --> 00:17:49,019
+Şablon verilmedi ama kod verildi.
+
+124
+00:17:49,019 --> 00:17:55,019
+Koddan bu şablonda yani bu dizaynını da elde etmek mümkün zaten aynı şey.
+
+125
+00:17:55,019 --> 00:17:58,019
+İlk etapta biz de ne yapacağız?
+
+126
+00:17:58,019 --> 00:18:00,019
+Bunun bir adresini bulalım.
+
+127
+00:18:00,019 --> 00:18:04,019
+Evet bakıyorum.
+
+128
+00:18:04,019 --> 00:18:07,019
+Şurası yüksek anlamlı düşük anlamlı şekilde.
+
+129
+00:18:07,019 --> 00:18:11,019
+Şurada aşağıya bir inelim.
+
+130
+00:18:11,019 --> 00:18:13,019
+Tabii ben bunu seçince.
+
+131
+00:18:13,019 --> 00:18:19,549
+İyi o bir pinini çipselekti seçmiş.
+
+132
+00:18:19,549 --> 00:18:25,549
+Yani şuradaki pin çipselekte bağlanmış durumda.
+
+133
+00:18:25,549 --> 00:18:31,549
+Yani benim aslında buradan dekodermantıyla 001 elde etmem.
+
+134
+00:18:31,549 --> 00:18:36,549
+Ve öylelikle buna sıfır verişi ile bunu aktif etmem isteniyor.
+
+135
+00:18:36,549 --> 00:18:39,549
+Pinleri yazalım şöyle.
+
+136
+00:18:39,549 --> 00:18:43,549
+A9'dan başlayacağım 1 0 0 0.
+
+137
+00:18:43,549 --> 00:18:50,549
+Sonra bakıyorum 13 14 15 de şeymiş sıfırmış değil mi?
+
+138
+00:18:50,549 --> 00:18:58,230
+9 10 11 12 13 14 15 de sıfır.
+
+139
+00:18:58,230 --> 00:18:59,230
+Aynen.
+
+140
+00:18:59,230 --> 00:19:01,230
+Şöyle nokta koydum ama yanlış anlaşılmasın.
+
+141
+00:19:01,230 --> 00:19:03,230
+Şöyle ayı yazalım.
+
+142
+00:19:03,230 --> 00:19:07,230
+Bu durumda da Clare'den seçemiyorum her şeyi.
+
+143
+00:19:07,230 --> 00:19:22,009
+Yani aslında 8 9 10 11 12 13 14 15.
+
+144
+00:19:22,009 --> 00:19:23,009
+Böyle bir yapı var.
+
+145
+00:19:23,009 --> 00:19:28,009
+Çünkü bu üçü sıfır olacak ki buradan bir gelsin biri ters değil buraya sıfır düşsün.
+
+146
+00:19:28,009 --> 00:19:30,009
+Bir de bakıyorum hani kontrol ediyorum.
+
+147
+00:19:30,009 --> 00:19:33,009
+Öteki enable'da input output'a set edilmiş mi?
+
+148
+00:19:33,009 --> 00:19:35,009
+Çünkü sıfır gelince aktif oluyor doğru.
+
+149
+00:19:35,009 --> 00:19:38,009
+Çünkü bu bir input output bir memori adresi değil.
+
+150
+00:19:38,009 --> 00:19:40,009
+Bu kısım böyle A8'e kadar.
+
+151
+00:19:40,009 --> 00:19:44,009
+Peki burada esas problem şu aslında.
+
+152
+00:19:44,009 --> 00:19:53,009
+A7 ile A0 arasındaki bir design pattern yani bir adresleme yerleştirilmemiş.
+
+153
+00:19:53,009 --> 00:19:56,009
+Ta ki şuradaki A1 A2'ye kadar.
+
+154
+00:19:56,009 --> 00:20:00,009
+A1 A2'de işte ilk başta kontrol gördü göndereceğimiz için.
+
+155
+00:20:00,009 --> 00:20:07,009
+Yani entegrenin nasıl davranacağını hangi moda geçeceğini belirleyeceğimiz için bizim 1 1 bir baz alalım.
+
+156
+00:20:07,009 --> 00:20:11,009
+A0 da belli değil esasında.
+
+157
+00:20:11,009 --> 00:20:13,009
+Evet A8 de yok.
+
+158
+00:20:13,009 --> 00:20:15,009
+Doğru diyorsun.
+
+159
+00:20:15,009 --> 00:20:20,319
+Bu Zoom'un niye error izleri seçilmiyor?
+
+160
+00:20:20,319 --> 00:20:22,319
+Ya mesela burası da belli değil.
+
+161
+00:20:22,319 --> 00:20:23,319
+Doğru dedi arkadaşınız.
+
+162
+00:20:23,319 --> 00:20:24,319
+A8 de yok.
+
+163
+00:20:24,319 --> 00:20:28,319
+Yani bizim bu soruda bir sıkıntımız var esasında.
+
+164
+00:20:28,319 --> 00:20:30,319
+Ben onu da bir size...
+
+165
+00:20:30,319 --> 00:20:33,319
+Hocam bir şey söyleyebilir miyim?
+
+166
+00:20:33,319 --> 00:20:37,319
+Galiba şöyle normalde bizden hani bekliyorsunuz ya tek bir adres çalıştırsın.
+
+167
+00:20:37,319 --> 00:20:40,319
+İlk bir adres çalıştırsın istiyorsunuz ya normalde sorular için.
+
+168
+00:20:40,319 --> 00:20:41,319
+Evet.
+
+169
+00:20:41,319 --> 00:20:45,319
+Orada onların hepsi X kabul edilsin gibi bir durum varmış sanırım.
+
+170
+00:20:45,319 --> 00:20:46,319
+Tamam.
+
+171
+00:20:46,319 --> 00:20:53,319
+Ama burada o durum işte onu söyleyeceğim misal 0 2 şurası 0 şurası 2 şuraya 0.
+
+172
+00:20:53,319 --> 00:20:57,319
+Buraya da işte şu ikisini sıfır aldığımda ne yapıyor 3 mi yapıyor?
+
+173
+00:20:57,319 --> 00:20:58,319
+3 yapıyor.
+
+174
+00:20:58,319 --> 00:21:00,319
+Yo pardon şurası sıfırdı.
+
+175
+00:21:00,319 --> 00:21:04,720
+Orası da 6 yapacak.
+
+176
+00:21:04,720 --> 00:21:08,720
+Biraz tabi ayarsız yazmışız.
+
+177
+00:21:08,720 --> 00:21:11,720
+Şunları bir düzenleyelim arkadaşlar.
+
+178
+00:21:12,720 --> 00:21:14,720
+Şurası A7 olmayacak.
+
+179
+00:21:14,720 --> 00:21:16,720
+Şunu da bir düzenleyelim.
+
+180
+00:21:19,720 --> 00:21:21,720
+Şuraya da soru işareti koyuyorum.
+
+181
+00:21:21,720 --> 00:21:24,720
+Şunlar 1 1 olsun kontrol gördüğü için şurada soru işareti.
+
+182
+00:21:24,720 --> 00:21:29,720
+Şimdi eğer soru işareti olan yerleri sıfır alırsak tamam mı?
+
+183
+00:21:29,720 --> 00:21:31,720
+Ne olacak bunun adresi?
+
+184
+00:21:31,720 --> 00:21:34,720
+Burası 6 olduğu için 0 206 değil mi?
+
+185
+00:21:34,720 --> 00:21:36,720
+Kontrol gördüm göndereceğim adres olacak.
+
+186
+00:21:36,720 --> 00:21:37,720
+Doğru mu?
+
+187
+00:21:38,720 --> 00:21:40,720
+Ya bu soru da 206 çalışır.
+
+188
+00:21:40,720 --> 00:21:41,720
+Bir problem yok.
+
+189
+00:21:41,720 --> 00:21:45,720
+Ama soru da özellikle onu belirtmek için söylüyorum.
+
+190
+00:21:45,720 --> 00:21:54,720
+200'den başlayan adrese yerleştirilmiş bir entegre deniyorsa bu soru arkadaşlar yanlış olur.
+
+191
+00:21:54,720 --> 00:21:58,720
+Çünkü bunu ben şöyle de tetikleyebilirim.
+
+192
+00:21:58,720 --> 00:22:00,720
+Şuraya bir tane 1 olsun.
+
+193
+00:22:00,720 --> 00:22:02,720
+0 0 0 1'den gelsin.
+
+194
+00:22:03,720 --> 00:22:05,720
+Bu da kontrol gördü gidecek.
+
+195
+00:22:05,720 --> 00:22:06,720
+Doğru mu?
+
+196
+00:22:06,720 --> 00:22:12,720
+Çünkü bunu çipselektini seçmemesizini sağlayan bir pin yok burada.
+
+197
+00:22:12,720 --> 00:22:23,259
+Eğer ki hani 200 diye bir adres define edildiyse bütün kapılarla bir şekilde sadece onu tetikleyecek.
+
+198
+00:22:23,259 --> 00:22:26,259
+200 200 2 204 206'yı yani.
+
+199
+00:22:26,259 --> 00:22:32,259
+Zaten ötekiler şu A1 A2'den dolayı zaten portları seçmiş olacaksınız.
+
+200
+00:22:32,259 --> 00:22:35,259
+Kontrol gördükle alakalı kontrol gördüğü de.
+
+201
+00:22:36,259 --> 00:22:39,259
+Ancak bu soru da misal 216'da olur.
+
+202
+00:22:39,259 --> 00:22:41,259
+0 200 26'da olur.
+
+203
+00:22:41,259 --> 00:22:45,259
+Yani burada pek çok farklı adresten ben buna ulaşabiliyorum.
+
+204
+00:22:45,259 --> 00:22:49,259
+Sözde olarak sorulmadığı için literal anlamda soru yanlıştır.
+
+205
+00:22:49,259 --> 00:22:50,259
+Doğrudur diyemeyiz.
+
+206
+00:22:50,259 --> 00:23:01,259
+Ama eğer ki sizde 200'den başlayan bir adresleme blona yerleştirilsin deniyorsa 200 200 2 204 206'a yerleştireceksiniz.
+
+207
+00:23:01,259 --> 00:23:02,259
+Yani spesik ol.
+
+208
+00:23:02,259 --> 00:23:07,259
+Ama şöyle deniyorsa 0 2 x x'da başlayan bir adres blona yerleştirilsin.
+
+209
+00:23:07,259 --> 00:23:10,259
+O zaman istediğin yere yerleştir.
+
+210
+00:23:10,259 --> 00:23:16,259
+Veyahut da 0 2 x 0'la başlayan bir adres blona yerleştirilsin deniyorsa.
+
+211
+00:23:16,259 --> 00:23:23,259
+O zaman şunları da şu ikinin de 0 0 gelmesini sağlayacak bir yapıya sokmamız lazım.
+
+212
+00:23:23,259 --> 00:23:26,259
+Anlatabildim mi?
+
+213
+00:23:26,259 --> 00:23:32,730
+Bu sorunun yani analiz ederken gözlemlediğim böyle bir bug'ı diyelim.
+
+214
+00:23:32,730 --> 00:23:38,730
+Yani o düşündünmemiş ama diğer pinleri de siz kesinlikle boş bırakmıyorsunuz.
+
+215
+00:23:38,730 --> 00:23:42,730
+Eğer ki belli statik bir adresleme söylendiyse.
+
+216
+00:23:42,730 --> 00:23:44,730
+Tamam.
+
+217
+00:23:44,730 --> 00:23:46,730
+Şimdi o zaman adresini bulduk.
+
+218
+00:23:46,730 --> 00:23:48,730
+200 200 2 204 206 olacak.
+
+219
+00:23:48,730 --> 00:23:53,730
+Şimdi şunu biliyorum ben bir kere her entegre sadece bu da değil.
+
+220
+00:23:53,730 --> 00:23:56,730
+Mesela biz bugün başka entegreler biten daha entegre işte.
+
+221
+00:23:56,730 --> 00:23:58,730
+Ustard entegresine de bakacağız.
+
+222
+00:23:58,730 --> 00:24:01,730
+Eğer yetişirse baktığınız.
+
+223
+00:24:01,730 --> 00:24:05,730
+Ustard entegresinde de göreceğiz ki onda da var bir kontrol gördü.
+
+224
+00:24:05,730 --> 00:24:10,730
+Yani her entegrenin davranışını belirleyebileceğimiz bir kontrol gördüğü ilk atama yapmamız lazım.
+
+225
+00:24:10,730 --> 00:24:17,730
+Yani aslında ilk başta biz 206'ya geçip bunun davranışını belirleyeceğimiz moduya geçeceğiz değil mi?
+
+226
+00:24:17,730 --> 00:24:20,730
+Geç açıyorum kodu.
+
+227
+00:24:20,730 --> 00:24:25,730
+206'ya DX'e atadık sonra bir değer atadık AL'ye.
+
+228
+00:24:25,730 --> 00:24:27,730
+Şimdi bu değer ne olabilir?
+
+229
+00:24:27,730 --> 00:24:29,730
+Şimdi 206'ya değer atacağız.
+
+230
+00:24:29,730 --> 00:24:31,730
+Tamam ilk etapta o ama ne atadığımız da önemli.
+
+231
+00:24:31,730 --> 00:24:33,730
+Şimdi biz burada mod 1.
+
+232
+00:24:33,730 --> 00:24:35,730
+Bak ben de bakalım.
+
+233
+00:24:35,730 --> 00:24:38,730
+Biz burada amacımız şu şeyden de baktığımda.
+
+234
+00:24:43,730 --> 00:24:48,730
+Şuraya baktığımda görüyorum ki PC4 ile PC5 arasında bir iletişim var.
+
+235
+00:24:48,730 --> 00:24:55,730
+Yani bir karşılıklı 4 ile 5'in ve 1 ile 2'nin kullanıldığı durum var.
+
+236
+00:24:55,730 --> 00:24:57,730
+Yani ben burada bir handshaking yapacağım.
+
+237
+00:24:57,730 --> 00:25:05,730
+Çünkü şimdi ara yüzde de göreceksiniz 4-5 ve 1-2 de handshake sinyallerinin senkronizasyon olduğu kısımlar.
+
+238
+00:25:05,730 --> 00:25:12,670
+Bu kısımları bir kere oradan çıkarttık.
+
+239
+00:25:12,670 --> 00:25:15,670
+Yani burada bir handshaking yapılacağını anladık.
+
+240
+00:25:15,670 --> 00:25:20,670
+Veyahut da handshake isteniyorsa bu finlerin karşılıklı bağlanması gerektiğini biliyorum.
+
+241
+00:25:20,670 --> 00:25:28,670
+Çünkü elimizde o dediğim gibi ara yüzler PDF'den bunu görüyoruz.
+
+242
+00:25:28,670 --> 00:25:33,670
+Şimdi şuna baktığımda ne göndermişsiniz ilk başta?
+
+243
+00:25:33,670 --> 00:25:46,960
+Şimdi ilk başta ilk etapta ne dedim ben?
+
+244
+00:25:46,960 --> 00:25:48,960
+Interrupt'ları ayarlamamız lazım.
+
+245
+00:25:48,960 --> 00:25:54,960
+Yani interrupt pinlerinin hem A için hem B için enable edilmesi lazım.
+
+246
+00:25:54,960 --> 00:25:59,960
+Ve bunun için de bitset reset modülüne sokuyoruz ilk etapta.
+
+247
+00:25:59,960 --> 00:26:02,960
+Bitset reset modülünde şurası önemsiz zaten.
+
+248
+00:26:02,960 --> 00:26:07,960
+Ne demişiz? 6. pinini yani C6'yı setle.
+
+249
+00:26:07,960 --> 00:26:09,960
+İlk bunu gönderiyorum.
+
+250
+00:26:09,960 --> 00:26:12,960
+Neydi C6? Port A içindi yanlış hatırlamıyorsam.
+
+251
+00:26:12,960 --> 00:26:19,960
+Port A'nın input, şimdi ara yüzler yanımda açık değil zaten sizlere demiyoruz ezberleyin diye illa ama
+
+252
+00:26:19,960 --> 00:26:27,960
+A'nın input olarak kullanıldığında interrupt'ının enable olmasıydı.
+
+253
+00:26:27,960 --> 00:26:30,960
+Değil mi? Ben öyle hatırlıyorum. Yanlışsam düzeltirim.
+
+254
+00:26:30,960 --> 00:26:40,960
+Bu da C6 pinini 1 yaparak ben şuradaki A portunun input kullanımındaki interrupt'ı aktif ettim.
+
+255
+00:26:40,960 --> 00:26:43,960
+Anlaşıldı herhalde.
+
+256
+00:26:43,960 --> 00:26:47,960
+Sonra geldim, 0.5'i yazdım.
+
+257
+00:26:47,960 --> 00:27:04,319
+0.5 da aslında B portunun interrupt'ını enable edecek değil mi?
+
+258
+00:27:04,319 --> 00:27:06,319
+0.5 mi demiş? Pardon ya.
+
+259
+00:27:06,319 --> 00:27:11,319
+Sabahtan da ters değil mi arkadaşlar? Malut görün.
+
+260
+00:27:11,319 --> 00:27:14,319
+Evet. Şimdi bunu da analiz ettiğinde şurası önemli değil.
+
+261
+00:27:14,319 --> 00:27:17,319
+Bitset reset modülüne sokmuş.
+
+262
+00:27:17,319 --> 00:27:20,319
+Burası 2. port yani C2.
+
+263
+00:27:20,319 --> 00:27:22,319
+Ve bunu set et demişiz.
+
+264
+00:27:22,319 --> 00:27:25,319
+Ve şunu biliyorum ben neden bunu yaptım.
+
+265
+00:27:25,319 --> 00:27:37,319
+Çünkü 2. port yani B portunun ben output olarak kullandığımda 2. C2'yi yani bunun interrupt'ını enable edebilmem için
+
+266
+00:27:37,319 --> 00:27:42,319
+bunu C portunun 2. pinini set etmem gerekiyor demiştik.
+
+267
+00:27:42,319 --> 00:27:44,319
+Diagramdan da o çıkmıştı.
+
+268
+00:27:45,319 --> 00:27:55,319
+Bu ikisi aslında yani Bitset reset modülünde biz bu iki veriyle aslında A ve B portunun input-output oluşup durumlarına göre
+
+269
+00:27:55,319 --> 00:28:00,319
+interrupt'larını enable etmiş bulunuyoruz.
+
+270
+00:28:00,319 --> 00:28:16,759
+Sonra tekrardan yazalım 11, B, C'yi de yazalım.
+
+271
+00:28:16,759 --> 00:28:22,759
+Sonra artık ben bu reset modülünden,
+
+272
+00:28:22,759 --> 00:28:28,759
+evet, PSR modunda sadece C portunu set reset yapabilirsiniz arkadaşlar.
+
+273
+00:28:28,759 --> 00:28:30,759
+Geçen hafta buna da değilmiştim.
+
+274
+00:28:30,759 --> 00:28:33,759
+Sadece C portu üzerinden nedeni de bu aslında.
+
+275
+00:28:33,759 --> 00:28:37,759
+Bizim işimiz C portunu reset etmek zaten.
+
+276
+00:28:37,759 --> 00:28:40,759
+Kontrollerimiz bizim C portu üzerinden.
+
+277
+00:28:40,759 --> 00:28:45,759
+Bu işlemleri yaptıktan sonra artık biz Bitset reset modülünden çıkıyoruz.
+
+278
+00:28:45,759 --> 00:28:49,759
+Mod selection modülüne geliyoruz kontrol gördüğüne.
+
+279
+00:28:49,759 --> 00:28:54,759
+Port A'yı mod 1 seçtim ve port A'yı input yaptım.
+
+280
+00:28:54,759 --> 00:28:59,759
+Port B'yi mod 1 seçtim, port B'yi output yaptım.
+
+281
+00:28:59,759 --> 00:29:05,759
+Şu iki pin, port C'nin upper ve lower'larıydı.
+
+282
+00:29:05,759 --> 00:29:07,759
+Benim için şu an önemli değil.
+
+283
+00:29:07,759 --> 00:29:12,759
+Şurası port C'nin 6 ve 7. pini.
+
+284
+00:29:12,759 --> 00:29:15,759
+Şurası da bir şey anlamı yok, X yani.
+
+285
+00:29:15,759 --> 00:29:17,759
+Yani burası kullanılmıyor.
+
+286
+00:29:17,759 --> 00:29:21,759
+6, 7'yi input yapmış ama kullanıyor muyum, kullanmıyorum.
+
+287
+00:29:21,759 --> 00:29:27,759
+Çünkü diagramda veyahut da problemde öyle bir şeyimiz yok.
+
+288
+00:29:27,759 --> 00:29:30,759
+Yani öyle bir istek yok yani.
+
+289
+00:29:30,759 --> 00:29:39,640
+Port A'yı mod 1'de input yap, port B'yi mod 1'de output yap dedik.
+
+290
+00:29:39,640 --> 00:29:43,140
+Devam ediyorum.
+
+291
+00:29:43,140 --> 00:29:47,140
+Bunu yazdık yine kontrol gördü.
+
+292
+00:29:47,140 --> 00:29:49,140
+Sonra artık port B'ye geçtim.
+
+293
+00:29:49,140 --> 00:29:55,140
+200 port A, 202 B, 204 C, 206 kontrol gördü.
+
+294
+00:29:55,140 --> 00:29:57,140
+Port B'ye geçtim.
+
+295
+00:29:57,140 --> 00:29:59,140
+Neden port B'ye geçtim?
+
+296
+00:29:59,140 --> 00:30:00,140
+Bakıyorum.
+
+297
+00:30:00,140 --> 00:30:03,140
+Port B ekrana bir şey yazacak değil mi?
+
+298
+00:30:03,140 --> 00:30:05,140
+Belki ilk başta bir sıfırlamak istenebilir.
+
+299
+00:30:05,140 --> 00:30:07,140
+Buraya bir şey yazabilirdiniz.
+
+300
+00:30:07,140 --> 00:30:08,140
+Ama yazılmamış.
+
+301
+00:30:08,140 --> 00:30:11,140
+Hani sıfırlamak da istenebilir ekranı belki diye.
+
+302
+00:30:11,140 --> 00:30:13,140
+Bir şey yazılmamış zaten.
+
+303
+00:30:13,140 --> 00:30:16,140
+Sonra geldik port C'ye.
+
+304
+00:30:16,140 --> 00:30:19,140
+Port C'yi ne amaçta kullanıyoruz mod 1'de?
+
+305
+00:30:19,140 --> 00:30:21,140
+Durum kontrolü için.
+
+306
+00:30:21,140 --> 00:30:28,140
+Port C'nin pinlerini şu ara yüzü yansıtabilir miyim aynı anda ekrana bilmiyorum ama.
+
+307
+00:30:28,140 --> 00:30:30,140
+Şu an göremiyorsunuz değil mi siz?
+
+308
+00:30:30,140 --> 00:30:32,140
+Sadece Proteus ekranı açık.
+
+309
+00:30:32,140 --> 00:30:38,000
+Muhtemelen öyle.
+
+310
+00:30:38,000 --> 00:30:40,000
+O zaman şöyle bir şey yapayım.
+
+311
+00:30:40,000 --> 00:30:45,849
+Çünkü yan yana olsa daha iyi algılayabilirsiniz.
+
+312
+00:30:45,849 --> 00:30:55,849
+Cam galiba ekran paylaşımında tek bir sekme yani bir programı değil de ilk baştaki seçeneği aktıklarsanız galiba bütün ekranı paylaşıyor.
+
+313
+00:30:55,849 --> 00:30:57,849
+Evet öyle yapacağım.
+
+314
+00:30:57,849 --> 00:30:59,849
+Öyle yapacağım.
+
+315
+00:30:59,849 --> 00:31:01,849
+Şöyle yapalım.
+
+316
+00:31:01,849 --> 00:31:20,279
+Şöyle yapsak acaba görebilecek misiniz?
+
+317
+00:31:20,279 --> 00:31:23,279
+Birazcık ekranımız da ufak ama.
+
+318
+00:31:23,279 --> 00:31:39,000
+Zaten çok anlamlı değil.
+
+319
+00:31:39,000 --> 00:31:41,000
+Şunu büyüteyim.
+
+320
+00:31:41,000 --> 00:31:43,000
+Şöyle kısaltayım.
+
+321
+00:31:43,000 --> 00:31:47,119
+Şimdi ekranı.
+
+322
+00:31:47,119 --> 00:31:50,119
+Evet ikisi de yan yana gözüküyor zannedersem.
+
+323
+00:31:50,119 --> 00:31:52,119
+Görüneceğim şu an.
+
+324
+00:31:52,119 --> 00:31:55,119
+Evet şimdi C portunu biz mod 1'de.
+
+325
+00:31:55,119 --> 00:31:57,119
+Şurada C'ye geçtik ya.
+
+326
+00:31:57,119 --> 00:32:00,119
+C portunu biz mod 1'de bir şey için kullanacağız.
+
+327
+00:32:01,119 --> 00:32:03,119
+Status word'u okumak için.
+
+328
+00:32:03,119 --> 00:32:05,119
+Status word neydi?
+
+329
+00:32:05,119 --> 00:32:14,119
+Bu handshake sinyallerinin kendi içerisinde acaba yani tamam mı birbiri arasındaki kontrol sağlandı mı bunun için.
+
+330
+00:32:14,119 --> 00:32:18,119
+Yani biz işte status'te port A'ya biz ne bağladık?
+
+331
+00:32:18,119 --> 00:32:19,119
+Bir k-pad bağladık.
+
+332
+00:32:19,119 --> 00:32:21,119
+Port B'de 7 segment bağladık.
+
+333
+00:32:21,119 --> 00:32:27,119
+Port A'da k-pad'den bir veri girdiğinin kontrolünden sonra interrupt oluşacak ya.
+
+334
+00:32:27,119 --> 00:32:32,119
+Bu interrupt'ı biz status word'u okuyarak detekleteceğiz.
+
+335
+00:32:32,119 --> 00:32:37,119
+204 C portuna atandık yani C portuna geçtik.
+
+336
+00:32:37,119 --> 00:32:41,119
+Ve dedik ki C portundaki bütün veri ki o status word'ım oluyor.
+
+337
+00:32:41,119 --> 00:32:43,119
+Akımlatör'e yaz.
+
+338
+00:32:43,119 --> 00:32:48,119
+Akımlatör'e yazdı ve ondan sonra akımlatörü biz 08h'la entliyoruz.
+
+339
+00:32:48,119 --> 00:32:50,119
+Ne demek bu? Şu demek.
+
+340
+00:32:50,119 --> 00:32:52,119
+Buradan kalem otomatik geliyor mu?
+
+341
+00:32:52,119 --> 00:32:54,119
+Hah geldi.
+
+342
+00:32:54,119 --> 00:32:59,519
+08h bu değil mi?
+
+343
+00:32:59,519 --> 00:33:11,519
+Bakın burada aslında akımlatörün içerisini biz A portundan veriyi okuduktan sonra yani interrupt oluşup oluşmama durumuna göre kontrol ediyoruz.
+
+344
+00:33:11,519 --> 00:33:13,519
+A portunda veri var mı yok mu diye bakmıyoruz.
+
+345
+00:33:13,519 --> 00:33:19,519
+A portundan interrupt oluşmuşsa zaten veri gelmiştir diyeceğiz.
+
+346
+00:33:19,519 --> 00:33:23,519
+Burada peki A portundaki interrupt oluşma durumu ne?
+
+347
+00:33:23,519 --> 00:33:27,519
+Zaten hand shake'in sağlandığı durum kendi içerisinde A ile B portunu.
+
+348
+00:33:27,519 --> 00:33:37,900
+Şimdi burada interrupt A'yla entlemesinden kasıt eğer ki interrupt gelmiş olsa şöyle bir şey.
+
+349
+00:33:37,900 --> 00:33:40,900
+Bu ikisini entlerseniz yine 08h çıkar değil mi?
+
+350
+00:33:40,900 --> 00:33:46,900
+Yani interrupt gelse ben 08h'la şurada entliyorum.
+
+351
+00:33:47,900 --> 00:33:51,900
+Interrupt geldiği için de yine 08h çıkacak.
+
+352
+00:33:51,900 --> 00:33:56,900
+Yani A'yı 0-0 ile kompere ettiğimde ben A'yı ne olacak?
+
+353
+00:33:56,900 --> 00:34:00,900
+0 olmayacak ve jump eq'lu tekrara düşecek.
+
+354
+00:34:00,900 --> 00:34:04,900
+Yani interrupt gelmiş olacak.
+
+355
+00:34:04,900 --> 00:34:08,900
+Interrupt geldiği için de bu tekrar dönmeyecek burada.
+
+356
+00:34:08,900 --> 00:34:13,900
+Çünkü 08h 0-0'a kompere edince eq'lu olmayacak.
+
+357
+00:34:13,900 --> 00:34:16,900
+Ama mesela interrupt gelmemiş olsa 0.
+
+358
+00:34:16,900 --> 00:34:19,900
+Bunu entlediğimde sonuç 0-0 olur değil mi?
+
+359
+00:34:19,900 --> 00:34:21,900
+Yani akumatörün içerisinde 0-0 olur.
+
+360
+00:34:21,900 --> 00:34:27,900
+E kompere ettiğimde 0-0 ile 0-0'ı jump eq'lu yapacak ve tekrar dönecek.
+
+361
+00:34:27,900 --> 00:34:32,900
+Ta ki ben interrupt A'yı enable oluncaya kadar.
+
+362
+00:34:32,900 --> 00:34:36,900
+Yani port A'dan bir veri girişi oluncaya kadar.
+
+363
+00:34:36,900 --> 00:34:43,840
+Anlaşıldı mı? Devam edelim.
+
+364
+00:34:43,840 --> 00:34:51,480
+Sonra şimdi dediğimiz gibi her daim portu kontrol etmiyoruz.
+
+365
+00:34:51,480 --> 00:34:53,480
+Interrupt geldiğinde portu kontrol edeceğiz.
+
+366
+00:34:53,480 --> 00:34:55,480
+Amaç o zaten her şeyi ki.
+
+367
+00:34:55,480 --> 00:34:59,480
+Interrupt geldi yani demek ki port A yazdı bir şey.
+
+368
+00:34:59,480 --> 00:35:00,480
+Buffer'ladı.
+
+369
+00:35:00,480 --> 00:35:04,480
+Bu noktada 200'ü yani 200'ün oğlu adres neydi?
+
+370
+00:35:04,480 --> 00:35:06,480
+Port A'nın adresi girişteki input adresimiz.
+
+371
+00:35:06,480 --> 00:35:12,480
+DX'e atadık ve işte normalde DX'teki veriyi akumatöre yazdık.
+
+372
+00:35:12,480 --> 00:35:13,480
+Şu an port A okundu.
+
+373
+00:35:13,480 --> 00:35:16,480
+Niye okundu? Çünkü bir interrupt geldi.
+
+374
+00:35:16,480 --> 00:35:18,480
+Interrupt gelmeseydi boş yere okumayacaktım.
+
+375
+00:35:18,480 --> 00:35:20,480
+Sonra devam ediyorum.
+
+376
+00:35:20,480 --> 00:35:24,480
+Bu akumatörü bir B'yle değişkenine atıyorum şu anlık.
+
+377
+00:35:24,480 --> 00:35:30,480
+Çünkü şu iki tarafda handshake'in mantığı A'dan hazırdı okudum ama
+
+378
+00:35:30,480 --> 00:35:34,480
+B'nin de yazabilmem için B portunun da hazır olması lazım.
+
+379
+00:35:34,480 --> 00:35:36,480
+B portunu da kontrol etmem lazım.
+
+380
+00:35:36,480 --> 00:35:42,480
+Şu an akumatöre bu geçici olarak akumatördeki değer A portunda okuduğum değer
+
+381
+00:35:42,480 --> 00:35:45,480
+bir B rejisterine atadım geçici.
+
+382
+00:35:45,480 --> 00:35:47,480
+Sonra B portuna geçtim.
+
+383
+00:35:47,480 --> 00:35:51,480
+Pardon C portuna geçtim.
+
+384
+00:35:51,480 --> 00:35:56,480
+C portunun statüsünü okuyacağım ama bu sefer 01H'da kontrol ediyorum.
+
+385
+00:35:56,480 --> 00:35:59,480
+Neden? Çünkü, evet çok güzel.
+
+386
+00:35:59,480 --> 00:36:03,480
+Çünkü B portunun interrupt'ını da almam lazım.
+
+387
+00:36:03,480 --> 00:36:05,480
+Ne demek olacak bu?
+
+388
+00:36:05,480 --> 00:36:11,480
+B portunda tamam ben hazırım gönderebilirsin demesi için bunu kontrol etmem lazım.
+
+389
+00:36:12,480 --> 00:36:15,480
+Diyoruz değil mi?
+
+390
+00:36:15,480 --> 00:36:20,480
+Gerçi ben yukarıdan anlattım ama siz anladınız herhalde şu olacak değil mi?
+
+391
+00:36:20,480 --> 00:36:22,480
+Şu ikisi.
+
+392
+00:36:22,480 --> 00:36:25,480
+O yukarısı input'u yani statüsü set etme noktası.
+
+393
+00:36:25,480 --> 00:36:29,480
+Bak set ettiğimiz noktalarda da şu ikisiydi değil mi?
+
+394
+00:36:29,480 --> 00:36:32,480
+Hatırlarsanız iki ile dört.
+
+395
+00:36:32,480 --> 00:36:34,480
+Dört mü?
+
+396
+00:36:34,480 --> 00:36:36,480
+Pardon şu altı.
+
+397
+00:36:36,480 --> 00:36:41,480
+Çünkü A portu input modunda altı.
+
+398
+00:36:41,480 --> 00:36:46,880
+B portu zaten değişmiyor.
+
+399
+00:36:46,880 --> 00:36:56,880
+Sonra B portundan da bir veri geldiğinde 01'le entlediğimde geldiğinde eğer bir interrupt oluştuğunda
+
+400
+00:36:56,880 --> 00:36:58,880
+ne olacak?
+
+401
+00:36:58,880 --> 00:37:01,880
+Zaten burada interrupt oluşmuş diyecek ve atacak.
+
+402
+00:37:01,880 --> 00:37:05,880
+Ama interrupt oluşmadığında bu tekrar içerisinde B portunu bekleyeceğiz.
+
+403
+00:37:05,880 --> 00:37:10,880
+Bizim B portu kendi tamam veriyi gönderebilirsin diyene kadar.
+
+404
+00:37:10,880 --> 00:37:16,880
+Sonra 202.0 adresdeki neresiydi B portuydu?
+
+405
+00:37:16,880 --> 00:37:23,880
+B portunu değişse atadım ve BL'ye de benim zaten daha önceden almış olduğum A portundaki veri var.
+
+406
+00:37:23,880 --> 00:37:29,880
+Akımotör atayıp akımotörden de 202'ye yani B portuna verimi göndermiş oldu.
+
+407
+00:37:29,880 --> 00:37:34,889
+Anlaşıldı mı arkadaşlar?
+
+408
+00:37:37,909 --> 00:37:41,909
+Hocam 21. satır sanki fazladan gibi geldi bana ama.
+
+409
+00:37:41,909 --> 00:37:42,909
+20 kaç?
+
+410
+00:37:42,909 --> 00:37:44,909
+25.
+
+411
+00:37:44,909 --> 00:37:46,909
+Evet burası şunun içindi.
+
+412
+00:37:46,909 --> 00:37:48,909
+Altında hatta bir boşluk var.
+
+413
+00:37:48,909 --> 00:37:50,909
+Daha önceden yazmıştık herhalde sonra silmişiz de.
+
+414
+00:37:50,909 --> 00:37:54,909
+Şu amaçlar şimdi 202.0 B portu.
+
+415
+00:37:54,909 --> 00:37:58,909
+Baktığımda ben B portuna şey var ekran var.
+
+416
+00:37:58,909 --> 00:38:05,909
+Belki hani önce bir değer varsa silelim anlamında buraya bir 0.0 gönderiyor olabilir.
+
+417
+00:38:05,909 --> 00:38:09,909
+Yani burada B portunu seçtikten sonra 0.0 gönderebilirsiniz.
+
+418
+00:38:09,909 --> 00:38:11,909
+Amaç o yani.
+
+419
+00:38:11,909 --> 00:38:13,909
+Şey değil ya.
+
+420
+00:38:13,909 --> 00:38:15,909
+Efektif bir şey değil yani sıfırlasın diye.
+
+421
+00:38:15,909 --> 00:38:22,980
+Şimdi burada peki hocam şunu sorabilirsiniz.
+
+422
+00:38:22,980 --> 00:38:24,980
+Çalıştıralım.
+
+423
+00:38:24,980 --> 00:38:27,980
+Bastığımda 7 yazdı.
+
+424
+00:38:27,980 --> 00:38:28,980
+1'e bastım 7 yazdı.
+
+425
+00:38:28,980 --> 00:38:30,980
+Aslında indisini göndermiş.
+
+426
+00:38:30,980 --> 00:38:32,980
+Indisini okuyoruz.
+
+427
+00:38:32,980 --> 00:38:44,210
+Yani düğmenin indisini gösteren bir sistemi var.
+
+428
+00:38:44,210 --> 00:38:49,210
+Peki burada hedef bunu nasıl yani nasıl indisini bulduğumuz değil.
+
+429
+00:38:49,210 --> 00:38:51,210
+Buradaki hashtag mantığını anlatmaktı.
+
+430
+00:38:51,210 --> 00:38:56,210
+Bu indiris mevzusunu yapan şeyse aslında şuradaki iki tane entegre.
+
+431
+00:38:56,210 --> 00:39:03,210
+Şu entegre burada yazdığımız tuşladığımız düğmenin koordinatını veriyor.
+
+432
+00:39:03,210 --> 00:39:09,210
+Şu entegre de o koordinatın yani 1, 2, 3, 4 gibi bir koordinat veresi geliyor.
+
+433
+00:39:09,210 --> 00:39:13,210
+Bu da bunu hexadesimal o A, B, C, D, F, G'yi hatırlarsanız.
+
+434
+00:39:13,210 --> 00:39:21,210
+Onun kodlamasını yapıp orada yazılmış olan desimal sayıyı burada ekrana basan bir entegre.
+
+435
+00:39:21,210 --> 00:39:24,210
+Yani burada indisi veren aslında şuradaki entegre.
+
+436
+00:39:24,210 --> 00:39:28,210
+Yani sizin bu örnekte onu düşünmenize gerek yok.
+
+437
+00:39:28,210 --> 00:39:33,210
+Amaç burada hashtag mantığını göstermekte zaten.
+
+438
+00:39:33,210 --> 00:39:37,230
+Var mı soru arkadaşlar?
+
+439
+00:39:37,230 --> 00:39:39,230
+Hocam benim kodla alakalı sorum var.
+
+440
+00:39:39,230 --> 00:39:40,230
+Tamam.
+
+441
+00:39:40,230 --> 00:39:43,570
+Evet.
+
+442
+00:39:44,570 --> 00:39:51,980
+Burada B portuna output için kontrol ediyoruz ya tekrar da.
+
+443
+00:39:51,980 --> 00:39:54,980
+B portuna output şu kısmı mı diyorsun?
+
+444
+00:39:54,980 --> 00:39:55,980
+Evet.
+
+445
+00:39:55,980 --> 00:39:57,980
+Niye 41H değil de?
+
+446
+00:39:57,980 --> 00:39:58,980
+Entlerken.
+
+447
+00:39:58,980 --> 00:39:59,980
+Evet.
+
+448
+00:39:59,980 --> 00:40:00,980
+40.
+
+449
+00:40:00,980 --> 00:40:01,980
+Satırda.
+
+450
+00:40:01,980 --> 00:40:03,980
+Şurada neden 41H değil diyorsun?
+
+451
+00:40:03,980 --> 00:40:04,980
+Evet.
+
+452
+00:40:04,980 --> 00:40:06,980
+Çünkü interrupt A'mız zaten enable değil mi şu an?
+
+453
+00:40:06,980 --> 00:40:07,980
+Yukarıda.
+
+454
+00:40:07,980 --> 00:40:08,980
+Yok.
+
+455
+00:40:08,980 --> 00:40:12,980
+Şöyle geçen hafta şu sunumdan da açarız orayı.
+
+456
+00:40:12,980 --> 00:40:19,980
+Bu okuduktan sonra okuyorsunuz ya read ve write komutlarına göre bu interrupt sıfırlanıyor.
+
+457
+00:40:19,980 --> 00:40:23,980
+Şimdi biz read yaptık, read sinyali geldi, okuduk.
+
+458
+00:40:23,980 --> 00:40:30,980
+Sonra write sinyalini read sinyali yükseldiğinde write sonuçta B portuna yazacak write sinyali göndermesi lazım.
+
+459
+00:40:30,980 --> 00:40:34,980
+Aslında şuradaki in outlar write sinyalini gösteriyor.
+
+460
+00:40:34,980 --> 00:40:39,980
+Bu write sinyali geldiğinde bu interrupt A sıfırlanır.
+
+461
+00:40:39,980 --> 00:40:43,349
+Tamam.
+
+462
+00:40:43,349 --> 00:40:44,349
+Tamam.
+
+463
+00:40:44,349 --> 00:40:47,349
+Yani read sinyalinde de mesela interrupt B sıfırlanacak.
+
+464
+00:40:47,349 --> 00:40:48,349
+Tamamdır hocam.
+
+465
+00:40:48,349 --> 00:40:53,349
+O otomatikman şurada sunumda da tekrardan çalışırken değinirsiniz.
+
+466
+00:40:53,349 --> 00:40:55,349
+Açayım ben o kısmı.
+
+467
+00:40:55,349 --> 00:40:56,349
+Açabileceksem.
+
+468
+00:41:01,159 --> 00:41:03,159
+Evet bak burada yazıyor görüyor musun?
+
+469
+00:41:03,159 --> 00:41:15,239
+Interrupt write ile beraber tabi burada okuma için yazmış da resetleniyor yani onu söyleyeyim ben sana.
+
+470
+00:41:15,239 --> 00:41:21,239
+Bu da read ile beraber tabi bunun A portunun okuma ve yazma mevzusuna göre değişecek.
+
+471
+00:41:21,239 --> 00:41:23,239
+Resetleniyor yani interruptlar.
+
+472
+00:41:23,239 --> 00:41:29,340
+Başka var mı bir soru arkadaşlar?
+
+473
+00:41:29,340 --> 00:41:39,320
+Hatta bak burada da gösterebiliriz interrupt gelmiş, read yapmışım, okumuşum yani interrupt geldiğini.
+
+474
+00:41:39,320 --> 00:41:44,320
+Sonra okuma işlemi bitince bittiği bir süre sonra interrupt otomatikman düşüyor.
+
+475
+00:41:44,320 --> 00:41:49,400
+Veyahut da okuduktan sonra hemen düşüyor.
+
+476
+00:41:49,400 --> 00:41:51,400
+Desek daha doğru olacak.
+
+477
+00:41:51,400 --> 00:41:52,400
+Şu arası.
+
+478
+00:41:52,400 --> 00:42:05,920
+Soru yoksa arkadaşlar bu ne alakalı bir deneyiniz var herhalde bir hafta sonra yani haftaya yapacaksınız.
+
+479
+00:42:05,920 --> 00:42:08,920
+Bugünkü konumuza geçelim.
+
+480
+00:42:08,920 --> 00:42:57,869
+Evet bugünkü konumuz arkadaşlar yeni konumuz haberleşme entegresi olan SES'in 2.51 ile.
+
+481
+00:42:57,869 --> 00:43:04,869
+Öncesinde bu haberleşmeden kastımız ne biraz zaten networkten biliyorsunuz ama burada da hızlıca anlatıp.
+
+482
+00:43:04,869 --> 00:43:13,869
+82.51 entegresi olan entegreyi daha çok yoğunlaşıp bunun üzerinde örnek haftaya kalır yine zannedersem.
+
+483
+00:43:13,869 --> 00:43:22,869
+Çünkü recall gibi oluyor biraz hani bu öğrendiğiniz şeyleri bir daha haftaya örnek üzerinden tekrardan yanında sunumda açmak belki daha iyi olur.
+
+484
+00:43:22,869 --> 00:43:25,869
+Bu hafta örneğe geçmeyeceğim yani.
+
+485
+00:43:25,869 --> 00:43:27,869
+Örneği de var bunun.
+
+486
+00:43:27,869 --> 00:43:32,869
+Şimdi iletişimden kastımız aslında bir veri gönderme ve veri alma.
+
+487
+00:43:32,869 --> 00:43:40,869
+Veri alma bunu kastediyoruz ama bunu yapmanın iki yolu var bilgisayar mimarilerinde veya herhangi bir sayısal tasarım mimarilerinde.
+
+488
+00:43:40,869 --> 00:43:44,869
+Bir paralel olarak veriyi göndermek bir de seri olarak göndermek.
+
+489
+00:43:44,869 --> 00:43:48,869
+Şimdi paralelin tabii ki çok kullanım alanı önceden vardı.
+
+490
+00:43:48,869 --> 00:43:54,869
+Şimdi biraz daha yani kendini seri moda daha çok geçerli.
+
+491
+00:43:54,869 --> 00:43:57,869
+Önceden yazıcılar vesaire hep paralel yetişimindeydi.
+
+492
+00:43:57,869 --> 00:44:01,869
+Paralel olarak yapılırdı yazıcı bağlantıları.
+
+493
+00:44:01,869 --> 00:44:05,869
+Şimdi daha çok seri modülde tasarlanıyorlar.
+
+494
+00:44:05,869 --> 00:44:08,869
+Şimdi paralel de seri arasındaki en büyük fark zaten maliyetten.
+
+495
+00:44:08,869 --> 00:44:11,869
+Seri maliyeti daha az olan bir teknoloji.
+
+496
+00:44:11,869 --> 00:44:15,869
+Paralel iletişim ise daha maliyetli bir teknoloji.
+
+497
+00:44:15,869 --> 00:44:21,869
+Paralel de kısa mesafelerin arasında bir iletişim hattı kurgulamak mümkün.
+
+498
+00:44:21,869 --> 00:44:25,869
+Seri de de uzun yerlere gönderim mümkün.
+
+499
+00:44:25,869 --> 00:44:31,869
+Tabii seri daha yavaş çünkü aynı boyuttaki bir veriyi paraleleştirmek
+
+500
+00:44:31,869 --> 00:44:37,869
+ve aynı t-cycle döneminde o paralel veriyi toplu halde atmak tabii daha hızlı bir çözüm.
+
+501
+00:44:37,869 --> 00:44:45,869
+Ama serinin de kendince işte verinin acaba hatalı mı gitti, hatasız mı gitti gibi kontrolünün basit olması
+
+502
+00:44:45,869 --> 00:44:50,869
+yavaş ama emin adımlarla göndermek gibi bir tabiri ortaya çıkartmış.
+
+503
+00:44:50,869 --> 00:44:54,869
+Yani bu açıdan avantajları, dezavantajları var.
+
+504
+00:44:54,869 --> 00:44:59,869
+Seri, seri iletişiminde kendi içerisinde hikaye edeceğiz.
+
+505
+00:44:59,869 --> 00:45:02,869
+Senkron ve asenkron olarak bunlara değineceğiz.
+
+506
+00:45:02,869 --> 00:45:09,869
+Zaten biliyoruz paralel dediğimiz gibi en bittik veriyi eğer ki en tane veri hattımız var ise
+
+507
+00:45:09,869 --> 00:45:14,869
+enini birden t-cycle da atma işlemi paralelleşme.
+
+508
+00:45:14,869 --> 00:45:18,869
+Seri de ise bu en bittik veriyi kendi içerisinde bit by bit denir.
+
+509
+00:45:18,869 --> 00:45:25,869
+Yani bitten bite belli bir dizilim işte MSB önce LSB sonra da dizebilirsiniz.
+
+510
+00:45:25,869 --> 00:45:30,869
+Veyahut da LSB önce MSB sonra da dizebilirsiniz.
+
+511
+00:45:30,869 --> 00:45:36,869
+Bu dizilimlere göre karşı tarafa gönderip karşı tarafında buna göre çözüm yapan
+
+512
+00:45:36,869 --> 00:45:39,869
+conversion devresini de buna göre ayarladı.
+
+513
+00:45:39,869 --> 00:45:45,869
+Yani gene bir orada aynı dili konuşması söz konusu olması lazım.
+
+514
+00:45:45,869 --> 00:45:53,869
+Karşı tarafında buna göre çözüm sunarak işte veriyi anlamlandırdığı yapılar.
+
+515
+00:45:53,869 --> 00:46:00,559
+Şimdi senkron ve asenkron da seri iletişiminde iki tane teknik var dedik.
+
+516
+00:46:00,559 --> 00:46:01,559
+Senkron ve asenkron.
+
+517
+00:46:01,559 --> 00:46:07,559
+Senkronlar yani bütün veriyi, bütün seri veriyi senkron şekilde gönderen,
+
+518
+00:46:07,559 --> 00:46:10,559
+karşı tarafla haberleşerek yapan bir iş.
+
+519
+00:46:10,559 --> 00:46:13,559
+Tabii bu expensive yani daha pahalı bir çözüm.
+
+520
+00:46:13,559 --> 00:46:22,559
+Ama tabii senkron olmasında veri kaybının ve işte gereksiz belki yani daha hızlı gönderebileceğimiz bir veriyi
+
+521
+00:46:22,559 --> 00:46:29,559
+yavaşlatıyor olabiliriz ama yani veri kaybını önlemekten yana daha başarılı bir çözüm.
+
+522
+00:46:29,559 --> 00:46:32,559
+Block block bir datayı göndermek mümkün buradan.
+
+523
+00:46:32,559 --> 00:46:34,559
+Senkron olduğun kasıt bu.
+
+524
+00:46:34,559 --> 00:46:42,559
+Asenkronlarda ise belli bir dışarıdan bir güç veya bir sinyal tabanla bir iletişim söz konusu değil.
+
+525
+00:46:42,559 --> 00:46:50,559
+Sadece verinin içerisinde start ve stop bitleri oluşturup bu start ve stop bitlerine göre karşı tarafa veriyi gönderiyoruz.
+
+526
+00:46:50,559 --> 00:46:58,559
+Burada veri paketleri diyebileceğimiz o datanın aslında başına sonuna bir şeyler ekleyerek datanın boyutu artıyor.
+
+527
+00:46:58,559 --> 00:47:01,559
+Bunun davantıcı bu biraz.
+
+528
+00:47:01,559 --> 00:47:07,559
+Bir de veri içerisinde herhangi bir sıkıntıda verinin kontrolde zorlaşıyor.
+
+529
+00:47:08,559 --> 00:47:10,559
+Şurada bir diyaklam var.
+
+530
+00:47:10,559 --> 00:47:17,559
+Zaten hani flip floplardan hatırlarsanız bir clock paysi vardı orada da logic devreler dersinden.
+
+531
+00:47:17,559 --> 00:47:19,559
+Clock paysi ne yapıyordu?
+
+532
+00:47:19,559 --> 00:47:23,559
+Bütün flip flopların aynı anda veriyi işlemesini sağlıyordu.
+
+533
+00:47:23,559 --> 00:47:26,559
+Burada da aynı mantık söz konusu.
+
+534
+00:47:26,559 --> 00:47:28,559
+Asenkron için.
+
+535
+00:47:28,559 --> 00:47:41,559
+Asenkronlarda bir dışarıdan sinyal ile verici taraf ile alıcı taraf arasında bir iletişim hakkı tanımlanıyor.
+
+536
+00:47:41,559 --> 00:47:45,559
+Yani clock paysi verdiğimiz anda sender datayı gönderiyor.
+
+537
+00:47:45,559 --> 00:47:48,559
+Eğer ki bufferladığı bir data varsa bir sınırın.
+
+538
+00:47:48,559 --> 00:47:52,559
+Karşı tarafta bufferdan işleme alıyor aynı boyuttaki data.
+
+539
+00:47:52,559 --> 00:47:55,559
+Bu da data paketleri aynı boyutlukta olmak zorunda.
+
+540
+00:47:55,559 --> 00:47:57,559
+Çünkü şöyle düşünün.
+
+541
+00:47:57,559 --> 00:48:01,559
+Eğer sender tarafındaki gönderilen data 8 bit, receiver 4 bitlik işlem yapıyor.
+
+542
+00:48:01,559 --> 00:48:11,559
+O zaman bir birikme olacak bufferda ve 4-4 yani bir data paketini iki sayfada işlemeyeceği için iki clock paysi istemesi gerekir kendisi sorar.
+
+543
+00:48:11,559 --> 00:48:14,559
+Sender tek clock paysi ile bütün datayı gönderecek.
+
+544
+00:48:14,559 --> 00:48:16,559
+Bu da büyük bir sıkıntı.
+
+545
+00:48:16,559 --> 00:48:19,559
+Yani burada senkronizasyon hatasının olması bu demek.
+
+546
+00:48:19,559 --> 00:48:24,559
+Sekronizasyon hatasının olmaması gerekiyor bu tarz senkron iletiminde.
+
+547
+00:48:24,559 --> 00:48:28,559
+Asenkronda böyle bir zorunluluk yok.
+
+548
+00:48:28,559 --> 00:48:37,559
+Start and stop bitleri olduğu sürece data'nın kendi içerisinde kaç bit ile olduğu yani belli bir standarta bağlı olmadan karşı tarafa alabiliyor.
+
+549
+00:48:37,559 --> 00:48:40,559
+Çünkü 8 bitlik data vardır.
+
+550
+00:48:40,559 --> 00:48:48,559
+Start stop bit nerede başladı, nerede bittiğini söyledikten sonra receiver bütün data'yı data olarak paket olarak alıp işleyecektir.
+
+551
+00:48:48,559 --> 00:48:50,559
+Asenkronun avantajı da bu.
+
+552
+00:48:50,559 --> 00:48:56,559
+Ama tabi asenkron biraz daha hataya meyilli bir vetim attı.
+
+553
+00:48:56,559 --> 00:49:04,800
+Dedik bir clock paysine gerek olmayan vetişim.
+
+554
+00:49:04,800 --> 00:49:09,800
+Veriler tabi bitler haline gönderiliyor bu senkron içinde, asenkron içinde böyle.
+
+555
+00:49:09,800 --> 00:49:19,800
+Asenkron da ama dediğimiz gibi bir start ve stop bitleri olması lazım ki karşı taraf algılayabilsin verinin başladığı ve bittiği noktayı.
+
+556
+00:49:19,800 --> 00:49:23,800
+Yani verinin neresi işlenecek veri olduğunu çıkarabilsin.
+
+557
+00:49:23,800 --> 00:49:28,800
+Normalde halk boştayken lojik bir değerinde olan bir aşağıdaki saykıla bakalım.
+
+558
+00:49:28,800 --> 00:49:32,800
+İşte start bit ilk gelmiş yani bir sıfıra inmiş.
+
+559
+00:49:32,800 --> 00:49:44,800
+Karşı taraf bu iki tane biri data olarak algılayıp, sonraki sıfırı data olarak algılayıp biri biri biri biri ve sıfırı aslında orada şu yanlış yapılmış.
+
+560
+00:49:44,800 --> 00:49:46,800
+Şurası tu olacak.
+
+561
+00:49:46,800 --> 00:49:49,800
+1, 2, 3, 4, 5, 6, 7.
+
+562
+00:49:49,800 --> 00:49:52,800
+Şurada bir tane daha olacak.
+
+563
+00:49:52,800 --> 00:49:54,800
+Şu sıfır.
+
+564
+00:49:54,800 --> 00:50:01,800
+İki tane sıfırı arda arda gördüğü anda stop biti olarak bunu buradan datayı kesecek.
+
+565
+00:50:01,800 --> 00:50:10,800
+Eğer ki tanımladığı data paketinin boyutu 7 bitse, 8 bitse bundan sonraki bir sıfır daha olmasını gelmesini beklemesi gerekecek.
+
+566
+00:50:10,800 --> 00:50:16,800
+Yani işin özü şunu yapması lazım asenkron üretiminde.
+
+567
+00:50:16,800 --> 00:50:28,800
+Start ve stop bitleri olması lazım ki karşı taraf anlayabilsin nereden başlayacak data, nerede bitecek diye bunun için böyle bir yapı oluşturmamız gerekiyor asenkronda.
+
+568
+00:50:28,800 --> 00:50:31,800
+Ki biz de 82.01'de böyle bir şey yapacağız.
+
+569
+00:50:31,800 --> 00:50:40,239
+Asenkronda ise bir flop falsinden bahsettik.
+
+570
+00:50:40,239 --> 00:50:49,239
+Yani start stop'a gerek olmadan asenkron datası geldiğinde transmit olur veya receive alacak olan bir yapı bu.
+
+571
+00:50:49,239 --> 00:50:55,239
+Burada daha IBM'in şey yaptığı, yayınladığı bir protokol var.
+
+572
+00:50:55,239 --> 00:51:02,239
+Bu protokol'a göre gene bir beginning başlangıç bayrağı veriliyor ama bu aslında flop falsinin ürettiği şey.
+
+573
+00:51:02,239 --> 00:51:06,239
+Karşı tarafı da bunu ürettiği için aynı şeyden bahsediyoruz.
+
+574
+00:51:06,239 --> 00:51:09,239
+Bu şekilde bir yapı yapılmış.
+
+575
+00:51:09,239 --> 00:51:17,239
+Ama burada esasında bir flop falsiyle üretim hattının, data'nın gönderimi veya data'nın alınması söz konusu oluyor.
+
+576
+00:51:17,239 --> 00:51:24,090
+Şimdi seri iletişimlerde tabi bir simplex, duplex mantığı var.
+
+577
+00:51:24,090 --> 00:51:29,090
+Nedir bu? İşte simplexler aslında tek yönlü bir üretim hattını söyler bize.
+
+578
+00:51:29,090 --> 00:51:35,090
+Aynı bilgisayardan yazıcıya gibi yazıcıdan bir okuma yapamayız ama yazıcıya yazı yazabiliriz.
+
+579
+00:51:35,090 --> 00:51:39,090
+Dublexler ise iki taraflı. Bunun da iki versiyonu var.
+
+580
+00:51:39,090 --> 00:51:45,090
+Eğer aynı hattı direkt kullanabiliyorsa aynı t zamanında o zaman full dublex.
+
+581
+00:51:45,090 --> 00:51:53,090
+Eğer ki ilk önce bir göndereceğim sonra aynı hattan alacağım diyorsa bu da half dublex versiyonu oluyor.
+
+582
+00:51:53,090 --> 00:51:55,090
+Burada bir grafımız var.
+
+583
+00:51:55,090 --> 00:52:00,090
+Burada işte eğer transmitter receiver şu ikisi varsa şu ikisi olmamakta.
+
+584
+00:52:00,090 --> 00:52:03,090
+Ne zaman ki işte switch edildi.
+
+585
+00:52:03,090 --> 00:52:08,090
+Ondan sonra o öteki yön olarak değiştirilebilecek bir half dublex yapıcı bu.
+
+586
+00:52:08,090 --> 00:52:13,090
+Simplex de zaten bahsettik tek taraflı verilir.
+
+587
+00:52:15,090 --> 00:52:23,090
+Tabi bu transfer verinin transferi bir noktadan öteki noktaya geçilmesi için tabir edilen bir performans veya hız kariteri var.
+
+588
+00:52:23,090 --> 00:52:26,090
+Ona da bout rate dediğimiz kariter.
+
+589
+00:52:26,090 --> 00:52:40,090
+Bu aslında bizim her saniyedeki ya buna bit per second da diyorlar bps ama her saniyedeki bitlerdeki değişim desek daha mantıklı olacak.
+
+590
+00:52:40,090 --> 00:52:45,090
+Çünkü transfer edilen bit de denebilir buna saniye başına transfer edilen bit.
+
+591
+00:52:45,090 --> 00:52:48,090
+Ama orada işte bitlerdeki değişimin de etkisi önemli.
+
+592
+00:52:48,090 --> 00:52:54,090
+Mesela 1200 bpm şu demek saniyede 1200 tane bitin konumunu değişiyormuş.
+
+593
+00:52:54,090 --> 00:52:56,090
+Yani bir yerden bir yere geçiyormuş.
+
+594
+00:52:56,090 --> 00:53:11,090
+Bu da yani eğer ki bir bitin hareket hızını öğrenmek istediğimizde 1 bölü 1200'den 0.83 milil saniyede bir bit transferi söz konusudur diyebiliyoruz bu örnek için.
+
+595
+00:53:11,090 --> 00:53:19,090
+Genelde printerlar işte eski modemler bu bout rate üzerinden bize sunulurdu 56k modem vesaire derler.
+
+596
+00:53:19,090 --> 00:53:22,090
+Bu şekilde bir hesaplaması var.
+
+597
+00:53:22,090 --> 00:53:24,090
+Burada bir örneğimiz var.
+
+598
+00:53:24,090 --> 00:53:33,199
+Demişiz ki bir bitin transfer süresi 3.33 mili saniyeymiş.
+
+599
+00:53:34,199 --> 00:53:36,199
+Bit başta şunu soruyor.
+
+600
+00:53:36,199 --> 00:53:39,199
+Yani saniyedeki bitin hızı nedir denmiş.
+
+601
+00:53:39,199 --> 00:53:42,199
+Yani bir saniyede kaç bit transfer edilir?
+
+602
+00:53:42,199 --> 00:53:43,199
+Ve ne yapacağız?
+
+603
+00:53:43,199 --> 00:53:52,199
+Zaten bu mili saniyede 3 ise bunun tersini aldığımızda bize direkt saniyedeki bitler hızı verecektir.
+
+604
+00:53:52,199 --> 00:53:59,199
+Yani mili saniyede 3 bit gidiyorsa işte biz bir saniyede kaç bit göndeririz hesabında?
+
+605
+00:53:59,199 --> 00:54:02,199
+Bunu 300 bit olarak bulacağız.
+
+606
+00:54:02,199 --> 00:54:04,199
+Burada bir soru şu önemli esasında.
+
+607
+00:54:04,199 --> 00:54:06,199
+Karakter rate ne demiş?
+
+608
+00:54:06,199 --> 00:54:13,199
+Karakter rate şu demek bizim bir paketimiz var ve bu tanımlamaya göre bu belli ki bir asenkron bir paketini attı.
+
+609
+00:54:13,199 --> 00:54:18,199
+Ve asenkron yetimi hakkında bir start ve iki stop biti tanımlanmış.
+
+610
+00:54:18,199 --> 00:54:19,199
+8 bitli data var.
+
+611
+00:54:19,199 --> 00:54:24,199
+Yani toplam 11 bitlik bir paketten bahsediyoruz karakter paketi.
+
+612
+00:54:24,199 --> 00:54:27,199
+Bu 11 bitin hesabını yapmamız lazım.
+
+613
+00:54:27,199 --> 00:54:34,199
+Bir bitimiz bizim 3.33 mili saniye ise 11 bitimiz 36-63 mili saniye gereklidir diyeceğiz.
+
+614
+00:54:34,199 --> 00:54:48,199
+Bunu da hani bit second değil de char second şeklinde ayarlamak istersek de yani bir paketin saniyede kaç adet böyle paket transfer ediliyor sorusunun cevabı.
+
+615
+00:54:48,199 --> 00:54:55,199
+Tersini alarak da bulabileceğimiz aynı kardeşinin aynısı saygı diktiği karakter anlamındaki analize olacak.
+
+616
+00:54:55,199 --> 00:55:08,199
+Tabii işte dediğim gibi networkler eskiden 56K gibi işte daha yavaş hatta 9600 yazıcılar bir dönem 9600 seri portu ilk çıkarken bu şekilde ayarlanıyordu.
+
+617
+00:55:08,199 --> 00:55:11,199
+Bunlar bu tarz iletim hatları var.
+
+618
+00:55:11,199 --> 00:55:14,199
+Bununla alakalı bir örnek yapalım.
+
+619
+00:55:14,199 --> 00:55:16,199
+Demişiz ki bir megabayt dosya var.
+
+620
+00:55:16,199 --> 00:55:22,199
+Bir bilgisayardan modem vasıtasıyla başka bir tarafa transfer edilecek, gönderebilecek.
+
+621
+00:55:22,199 --> 00:55:30,199
+Bu paketin içerisi aslında byte denen kısmı bir start, yedi data, bir parity, bir stop bitinden oluşuyormuş.
+
+622
+00:55:30,199 --> 00:55:32,199
+Yani kaç oluyor?
+
+623
+00:55:32,199 --> 00:55:33,199
+10 mu?
+
+624
+00:55:33,199 --> 00:55:35,199
+Evet 10 bitli bir yapı var.
+
+625
+00:55:35,199 --> 00:55:38,199
+Ama 1 milyon tane 10 bitli bir yapıdan bahsediyoruz.
+
+626
+00:55:38,199 --> 00:55:40,199
+Çünkü bir meyden dolayı.
+
+627
+00:55:40,199 --> 00:55:42,199
+Onda ne yapacağız?
+
+628
+00:55:42,199 --> 00:55:45,199
+1 milyon çarpı 10'dan toplam bit sayısını bulacağız.
+
+629
+00:55:46,199 --> 00:55:54,199
+Bu normalde toplam bit sayısını biz 9600 hızıyla şuradaki hızı baz almışız.
+
+630
+00:55:54,199 --> 00:55:59,199
+Bu bps tabi ki de yani saniyedeki bit transferi.
+
+631
+00:55:59,199 --> 00:56:03,199
+Saniyede 9600 gidiyorsa bu kadarı kaç saniyede gider?
+
+632
+00:56:03,199 --> 00:56:06,199
+Sorusunun cevabını arıyoruz esasında.
+
+633
+00:56:06,199 --> 00:56:13,199
+Böldüğümüzde 9600'e 1092 saniye, o da 18 dakika 12 saniye gibi bir değer çıkacak.
+
+634
+00:56:13,199 --> 00:56:21,199
+Tabi bunu daha da arttırırsak 28800 bps yaparsak bu 6 dakikaya inmiş olacak vesaire vesaire.
+
+635
+00:56:21,199 --> 00:56:26,199
+Zaten hadiyazadaki yani şu an 1 GHz'ler falan hızlardan bahsediyoruz.
+
+636
+00:56:26,199 --> 00:56:28,199
+İndirme hızı vesaire belli zaten.
+
+637
+00:56:28,199 --> 00:56:32,199
+O hesap da aynı bu şekilde yapılan bir hesap zaten.
+
+638
+00:56:32,199 --> 00:56:41,719
+Parity check dediğimiz şey bütün seri iletişimlerinde çok erzen bir nokta.
+
+639
+00:56:41,719 --> 00:56:45,719
+Çünkü bir veriyi siz karşı tarafa seri iletimden gönderdiğinizde,
+
+640
+00:56:45,719 --> 00:56:51,719
+karşı tarafın bunun doğru veri gelip gelmediğini kontrol edebilmesi lazım.
+
+641
+00:56:51,719 --> 00:56:53,719
+Bunun için de bazı teknikler düşünmüşler.
+
+642
+00:56:53,719 --> 00:56:55,719
+Bunlardan en basit parity biti.
+
+643
+00:56:55,719 --> 00:57:00,719
+Sonra check sum, sonra CRC'leri falan net nokta göreceksiniz zaten.
+
+644
+00:57:00,719 --> 00:57:10,719
+CRC bitleri ki bu kolinomiyel bir denkleme sokup o kolinomiyel denklemini karşı tarafın kontrol etmesini istediği bir gizlem.
+
+645
+00:57:10,719 --> 00:57:13,719
+Ama biz bu derste parity'yi çokça anlatacağız.
+
+646
+00:57:13,719 --> 00:57:15,719
+Parity bitini daha önce anlattık.
+
+647
+00:57:15,719 --> 00:57:17,719
+İşte misal datamız şöyle bir şey.
+
+648
+00:57:17,719 --> 00:57:19,719
+Dört litrik bir veri gönderiyorum.
+
+649
+00:57:19,719 --> 00:57:24,719
+Bu içerisindeki birilerin sayısı şu an bu örnekle 3 adet.
+
+650
+00:57:24,719 --> 00:57:26,719
+Yani tek.
+
+651
+00:57:26,719 --> 00:57:28,719
+Tek sayı 1 var.
+
+652
+00:57:28,719 --> 00:57:35,719
+Eğer ki ben iletim hakkında şöyle bir kural tanımladıysam ben even parity ile kontrol edeceğim.
+
+653
+00:57:35,719 --> 00:57:44,719
+Yani parity'yi çiftlik parity ile kontrol edeceğim diyorsam benim bir tane parity bitim daha olacak şurada.
+
+654
+00:57:44,719 --> 00:57:46,719
+Paketin içerisinde.
+
+655
+00:57:46,719 --> 00:57:48,719
+Bu parity biti amacı şu.
+
+656
+00:57:48,719 --> 00:58:01,719
+Eğer çift olarak anlaşma sağlandıysa yani iletim haklı çift parity destekleyecekse bu amaç buradaki parity biti bütün paketin çift adet bir olmasını sağlaması yönlü olacak.
+
+657
+00:58:01,719 --> 00:58:07,719
+Yani ben buraya bir koyarsam bütün pakette 4 adet bir olduğu için çift parity olmuş olacak.
+
+658
+00:58:07,719 --> 00:58:10,719
+Ve karşı tarafa bu şekilde gidecek.
+
+659
+00:58:10,719 --> 00:58:18,719
+Karşı taraf yine aynı şekilde çift parity ile anlaştığımız için şu bire bakacak.
+
+660
+00:58:18,719 --> 00:58:29,719
+Diyecek ki benim parity birim çiftlik parity eşlenenliğinde bir gelmiş ise bunun içerisinin tek sayı adedince bir olması gerekiyor diyecek.
+
+661
+00:58:29,719 --> 00:58:34,719
+Ama bak burada mesela 3 tane var tamam bir problem yok diyecek.
+
+662
+00:58:34,719 --> 00:58:36,719
+Ama şöyle bir örnek yapalım.
+
+663
+00:58:36,719 --> 00:58:43,719
+İçerisi şöyle gelmiş olsun ve benim parity bitimde bozuntuya uğramamış bu şekilde gelmiş.
+
+664
+00:58:43,719 --> 00:58:47,719
+Şimdi karşı taraf diyor ki ben çiftlik parity ile anlaştım.
+
+665
+00:58:47,719 --> 00:58:52,719
+Yani benim parity bitim birse bunun içerisinin tek olması lazım.
+
+666
+00:58:52,719 --> 00:58:54,719
+Ama bakıyor içerisi çift.
+
+667
+00:58:54,719 --> 00:58:58,719
+O zaman diyor ki bu data hatalı geldi tekrar gönder.
+
+668
+00:58:58,719 --> 00:59:02,719
+Tabii bu parity bitlerinde bir sıkıntı var nedir?
+
+669
+00:59:02,719 --> 00:59:09,880
+Böyle bir veri geldi.
+
+670
+00:59:09,880 --> 00:59:17,880
+Böyle bir veri geldiğinde yine çift parity bitimde anlaştığını düşünelim iki verici ve alıcı tarafın.
+
+671
+00:59:17,880 --> 00:59:21,880
+Baktı burası bir demek ki içerisi tek sayı olması lazım dedi.
+
+672
+00:59:21,880 --> 00:59:22,880
+Baktı tek sayı var.
+
+673
+00:59:22,880 --> 00:59:23,880
+Buna da onay verici.
+
+674
+00:59:24,880 --> 00:59:28,880
+Yani tek bit değişimlerde hatayı bulan yaklaşımlardır.
+
+675
+00:59:28,880 --> 00:59:34,880
+Ama çift bit değişimlerde hatayı bulamayan tekniklerdir bu parity bitim.
+
+676
+00:59:34,880 --> 00:59:39,880
+Ot bunun tam tersi yani even parity ot parity ikisi de aynı şeyi söylüyor aslında.
+
+677
+00:59:39,880 --> 00:59:43,880
+İçerisi işte bunun ot parity'e göre gönderseydim bunu aynı veriyi.
+
+678
+00:59:43,880 --> 00:59:51,880
+İçerisinin tek olmasını sağlayacaktı ve tek olmasını sağlayabilmesi için yani çift olmasını sağlayacaktı.
+
+679
+00:59:52,880 --> 00:59:57,599
+Kafam karıştı yiyeceğim.
+
+680
+00:59:57,599 --> 01:00:02,599
+Evet içerisinin tek olmasını sağlayacak çünkü çiftlikte çift olmasını sağlıyorduk.
+
+681
+01:00:02,599 --> 01:00:06,599
+Burada tek olmasını sağlayacağız ve bu yüzden bu pakete sıfır eklememiz lazımdı.
+
+682
+01:00:06,599 --> 01:00:18,599
+Ve bunu karşı taraf çözerken de eğer ki teknik parity de çözülüyorsa karşı taraf buraya bakınca sıfır demek ki bunun içerisindeki yapılar teknik parity de tek olması lazım.
+
+683
+01:00:18,599 --> 01:00:20,599
+Tek olarak gelecek diyecekti.
+
+684
+01:00:20,599 --> 01:00:25,099
+Anlaşıldı mı arkadaşlar bu?
+
+685
+01:00:26,099 --> 01:00:35,099
+Tek parity, çift parity, anlaşma birimi, ondan sonra içeriğinin tek veya çift yapılması bizim göndereceğimiz paketin parity bitimindeki diğer ile olacak.
+
+686
+01:00:35,099 --> 01:00:40,099
+Karşı tarafta bunu okuyacak ilk, bunu okuduktan sonra içeriği kontrol edecek.
+
+687
+01:00:40,099 --> 01:00:43,099
+Çeksam başka bir teknik.
+
+688
+01:00:43,099 --> 01:00:58,099
+Bu aslında bir tık daha belki yani aynı yerdeki bir bitleri kontrol edemez ama farklı noktadaki bir bit bozuntuyu kontrol edebilen bir teknik.
+
+689
+01:00:58,099 --> 01:01:01,099
+Şöyle ki karşı tarafa şöyle bir veri gönderdik.
+
+690
+01:01:01,099 --> 01:01:09,099
+Bunun çeksamı tümleyeni ile topladığımızda sıfır elde etme durumu.
+
+691
+01:01:09,099 --> 01:01:15,099
+Eğer ki sıfır elde etmiyorsa karşı tarafta diyor ki ben bunun yanlış bir veri aldım diyor.
+
+692
+01:01:15,099 --> 01:01:17,099
+Yani bu veriyi de gönderiyorsun.
+
+693
+01:01:17,099 --> 01:01:21,099
+Bu bitti, bozuntulu bir şekilde bitti.
+
+694
+01:01:21,099 --> 01:01:22,099
+Şöyle gelsin.
+
+695
+01:01:22,099 --> 01:01:26,099
+Tümleyeni ile bunu topladığımda sıfır elde etmeyecek.
+
+696
+01:01:26,099 --> 01:01:29,099
+O zaman diyecek ki tekrar gönder.
+
+697
+01:01:29,099 --> 01:01:30,099
+Hocam?
+
+698
+01:01:30,099 --> 01:01:31,099
+Evet.
+
+699
+01:01:31,099 --> 01:01:34,099
+Ya tümleyeni de bozulursa ve sıfır verirse?
+
+700
+01:01:34,099 --> 01:01:35,099
+İşte var evet.
+
+701
+01:01:35,099 --> 01:01:36,099
+Öyle sıkıntılar da var.
+
+702
+01:01:36,099 --> 01:01:41,099
+Onun için de en şu an günümüzde kurbanılan CRC teknikleri zaten.
+
+703
+01:01:41,099 --> 01:01:44,099
+Biz zaten çeksamada çok girmeyeceğiz.
+
+704
+01:01:44,099 --> 01:01:48,099
+Bizim amacımız işte basit anlamda parity check bitini.
+
+705
+01:01:48,099 --> 01:01:54,099
+Hatta bilmiyorum örnek var mıydı hatırlamıyorum ama parity check ile de çok değişimiz olmayabilir yani örneklerde.
+
+706
+01:01:54,099 --> 01:01:58,099
+Ama teorik olarak bilmenizi istediğimiz kısım bu aslında.
+
+707
+01:01:58,099 --> 01:02:01,349
+Yani bu dersin kapsamında.
+
+708
+01:02:01,349 --> 01:02:05,460
+Network'ta göreceksiniz diğerlerini.
+
+709
+01:02:05,460 --> 01:02:06,460
+Tamam herhalde.
+
+710
+01:02:08,460 --> 01:02:12,820
+Evet.
+
+711
+01:02:12,820 --> 01:02:18,230
+Şimdi yazılımsal olarak düşünürsek seri iletişimi.
+
+712
+01:02:18,230 --> 01:02:26,230
+Dediğimiz gibi burada bir karakterin adedi boyutunca bir loop'a girmemiz lazım.
+
+713
+01:02:26,230 --> 01:02:27,230
+Neden?
+
+714
+01:02:27,230 --> 01:02:32,230
+Çünkü biz bir karakteri byte by byte göndermemiz lazım.
+
+715
+01:02:32,230 --> 01:02:34,230
+Biz start bit'i koyduk.
+
+716
+01:02:34,230 --> 01:02:36,230
+Sonra bir süre bekledik.
+
+717
+01:02:36,230 --> 01:02:40,230
+Sonra bir tane akumülatöre o göndereceğimiz veri.
+
+718
+01:02:40,230 --> 01:02:42,230
+Hexadecimai sayı karakter.
+
+719
+01:02:42,230 --> 01:02:46,230
+Bir akumülatöre alıyoruz.
+
+720
+01:02:46,230 --> 01:02:55,230
+Sonra bunu bit by bit bir döngü de göndermemiz lazım.
+
+721
+01:02:55,230 --> 01:02:57,230
+Bir süre bekletiyoruz.
+
+722
+01:02:57,230 --> 01:03:01,230
+Sonra roteyt ediyoruz bütün işte o karakter dizisini.
+
+723
+01:03:01,230 --> 01:03:06,230
+Roteyt edip en şeydeki yani en BSB veya MSB.
+
+724
+01:03:06,230 --> 01:03:10,230
+Hangi tarafa roteyt ettiysemiz oradaki veriyi gönderip.
+
+725
+01:03:10,230 --> 01:03:13,230
+İşte son bit mi değilse bir daha başa al.
+
+726
+01:03:13,230 --> 01:03:14,230
+Ama bir tane bir counter.
+
+727
+01:03:14,230 --> 01:03:17,230
+Şurada bir fan setup yaptığımız counter'ı düşürterek.
+
+728
+01:03:17,230 --> 01:03:19,230
+Aslında şöyle bir verimizi.
+
+729
+01:03:19,230 --> 01:03:22,230
+İşte ilk başta bunu gönderdik.
+
+730
+01:03:22,230 --> 01:03:25,230
+Sonra bir sağa kaydırdım verimi.
+
+731
+01:03:25,230 --> 01:03:27,230
+Sonra bunu göndereceğim.
+
+732
+01:03:27,230 --> 01:03:29,230
+Bir sayı kaydırdım.
+
+733
+01:03:29,230 --> 01:03:31,670
+Bunu göndereceğim.
+
+734
+01:03:31,670 --> 01:03:36,670
+Bu şekilde tamamen sonlanana kadar yani buradaki counter 4 tabi.
+
+735
+01:03:36,670 --> 01:03:40,670
+4 sayı bitene kadar bunu bitirmiş olacağız.
+
+736
+01:03:40,670 --> 01:03:46,670
+Bu şekilde veriyi ayarlamış olacağız seri yetişme yazımsa olarak.
+
+737
+01:03:46,670 --> 01:03:49,670
+Parity bit'i gerektiği ise en son konuyu.
+
+738
+01:03:49,670 --> 01:03:53,670
+Dediğimiz gibi içeriğiyle alakalı bir yeriz zaten o parity bit'i.
+
+739
+01:03:53,670 --> 01:03:56,670
+Sonra da işte 2 stop bit'i konuyor genelde asenkromda.
+
+740
+01:03:56,670 --> 01:04:04,800
+2 de stop bit'i koyup paketimizi göndermiş oluyoruz asenkrom modda.
+
+741
+01:04:04,800 --> 01:04:06,800
+Şu sağ taraf çok önemli değil.
+
+742
+01:04:06,800 --> 01:04:09,800
+Koda da zaten şeyde bakacağız örnekte.
+
+743
+01:04:09,800 --> 01:04:11,800
+Burayı şimdi geçelim.
+
+744
+01:04:11,800 --> 01:04:14,800
+Çok da anlaşılmıyordu zaten.
+
+745
+01:04:14,800 --> 01:04:22,800
+Alma durumunda ise bir alpot portunu yani çıkış portunu okuma yapıyoruz.
+
+746
+01:04:22,800 --> 01:04:25,800
+Eğer bir start bit'i hani tanımladık ya gönderirken.
+
+747
+01:04:25,800 --> 01:04:29,800
+Start bit'i gelmişse gelmemişse zaten okuma devam.
+
+748
+01:04:29,800 --> 01:04:36,800
+Start bit'i gelmişse bir süre bekletip sonra hala start bit'indeki çünkü şunu biliyorum ben.
+
+749
+01:04:36,800 --> 01:04:38,800
+Normalde yetim atları 1'dir.
+
+750
+01:04:38,800 --> 01:04:40,800
+Start bit'i geldiğinde sıfıra düşer.
+
+751
+01:04:40,800 --> 01:04:45,800
+Ama bazen gürültüler olabileceği için şöyle bir şeyler de olabilir.
+
+752
+01:04:45,800 --> 01:04:51,800
+Bunları start bit olarak görmemek için veyahut da tanımlanan 2 start bit'i de olabilir.
+
+753
+01:04:51,800 --> 01:04:57,800
+Yani sonuçta start bit'inden sonra bir süre lovda kalmasını bekliyoruz.
+
+754
+01:04:57,800 --> 01:05:03,800
+Eğer bir süre lovda kalmadıysa zaten gürültü olabilir deyip hiç ona dikkat edinmeden bir alpot okuyoruz.
+
+755
+01:05:03,800 --> 01:05:08,800
+Ama bir süre lovda kaldıysa artık bir counter set ediyoruz.
+
+756
+01:05:08,800 --> 01:05:16,800
+Bu counter ileriye doğru bir counter set ettikten sonra işte rejisterları...
+
+757
+01:05:16,800 --> 01:05:18,800
+Sevme bir dakika.
+
+758
+01:05:18,800 --> 01:05:19,800
+He he he.
+
+759
+01:05:19,800 --> 01:05:23,800
+Rejisterları içerisine yazılacağımız için siliyoruz.
+
+760
+01:05:23,800 --> 01:05:26,800
+Sonra bir süre bekledikten sonra porttan okuma yapıyoruz.
+
+761
+01:05:26,800 --> 01:05:29,800
+Bir bit olarak tabi okuduk gönderen tarafta.
+
+762
+01:05:29,800 --> 01:05:31,800
+Bir bit okuduk.
+
+763
+01:05:31,800 --> 01:05:36,800
+Sonra bir sonraki bit için tekrardan bir hazırlama modüne geçiyoruz.
+
+764
+01:05:36,800 --> 01:05:41,800
+Sonra bir tane counter azaltıp son olasıya kadar bu şekilde okuma yapıyoruz.
+
+765
+01:05:41,800 --> 01:05:44,800
+Bit by bit okumuş olacağız sonra.
+
+766
+01:05:44,800 --> 01:05:48,800
+En nihayetinde de party bit'ini karşı taraf gönderdiyse eğer...
+
+767
+01:05:48,800 --> 01:05:55,800
+Kontrol edip hatalı mı değil mi diye yazıntı olarak bu işlem basamaktayı ile de okuma yapmış oluyoruz.
+
+768
+01:05:55,800 --> 01:06:08,920
+Saatimiz kaç? Daha vaktimiz var herhalde değil mi?
+
+769
+01:06:08,920 --> 01:06:10,920
+Arkadaşlar bir 5 dakika ara verelim mi?
+
+770
+01:06:10,920 --> 01:06:12,920
+Hatta 10 dakika bir ara verelim.
+
+771
+01:06:12,920 --> 01:06:14,920
+Benim de boğazım kurudu.
+
+772
+01:06:14,920 --> 01:06:17,920
+Sonra 8251 usarta giriş yapacağız.
+
+773
+01:06:17,920 --> 01:06:19,920
+10 dakika ara.
+
+774
+01:06:19,920 --> 01:18:00,390
+Evet arkadaşlar başlayalım. Devam edelim yani daha doğrusu.
+
+775
+01:18:00,390 --> 01:18:11,390
+Şimdi bizim bir bu seri iletişim için 8255'e 8086'a kullanabileceğimiz bir entegremiz var.
+
+776
+01:18:11,390 --> 01:18:13,390
+8251 usart entegresi.
+
+777
+01:18:13,390 --> 01:18:17,890
+Bu entegre seri iletişimi sağlıyor.
+
+778
+01:18:17,890 --> 01:18:20,890
+Seri iletişimde iki modül var demiştik.
+
+779
+01:18:20,890 --> 01:18:22,890
+İstik, senkron ve asenkron durumları.
+
+780
+01:18:22,890 --> 01:18:28,890
+Bu iki senkron ve asenkronu seçebileceğimiz bir iletişim olanağına sunan bir entegre.
+
+781
+01:18:28,890 --> 01:18:32,890
+Ve işte iletişimde verimi göndereceğiz, verimi alacağız.
+
+782
+01:18:32,890 --> 01:18:36,890
+Bunun da tabii ki ayarlamasını yapabileceğimiz bir entegre.
+
+783
+01:18:36,890 --> 01:18:41,890
+Şimdi baktığımızda iç yapısına bir adres yolumuz var. Bu ne için?
+
+784
+01:18:41,890 --> 01:18:49,890
+Çünkü bu 8251 de 8255'de olduğu gibi ve 8254 işte farklı farklı daha işleyeceğimiz bütün entegrelerde olacağı gibi
+
+785
+01:18:49,890 --> 01:18:52,890
+bir adres uzayına yerleşmesi lazım.
+
+786
+01:18:52,890 --> 01:18:57,890
+Yani 8086'nın bu adres uzayından bunu seçebiliyor olması lazım.
+
+787
+01:18:57,890 --> 01:18:59,890
+Adresinde tanımlı olması lazım.
+
+788
+01:18:59,890 --> 01:19:07,890
+Aynı şekilde yani bunu da bir adreslemeyle tetikleyebileceğimiz bir yapıya sokacağız.
+
+789
+01:19:07,890 --> 01:19:13,890
+Sonra data basımız zaten göndereceğimiz veya alacağımız verimin hattının yapılacak kısım.
+
+790
+01:19:13,890 --> 01:19:17,359
+Şu kalemimi alayım dedim herhalde.
+
+791
+01:19:17,359 --> 01:19:19,359
+Evet, şurası data basımız.
+
+792
+01:19:19,359 --> 01:19:23,359
+Sonra bir de bizim kontrol basımız var. Bu ne için önemli?
+
+793
+01:19:23,359 --> 01:19:29,359
+Bu aslında receive ve transmission yapıldı, itti.
+
+794
+01:19:29,359 --> 01:19:32,359
+Sinyallerini okuyup kontrol edeceğimiz kısım.
+
+795
+01:19:32,359 --> 01:19:38,359
+Veyahut da read yapacaksak write yapacaksak write sinyalini göndereceğimiz kısımlar olacak.
+
+796
+01:19:38,359 --> 01:19:42,359
+Burada bir clock pass'ini görüyoruz.
+
+797
+01:19:42,359 --> 01:19:48,789
+Şu ekran gitmiyor mu ya?
+
+798
+01:19:48,789 --> 01:19:54,789
+Clock pass'i kısımımız var. Bu clock pass'i senkron dediğim gibi senkron ve asenkron yapıya göre değişiyordu.
+
+799
+01:19:54,789 --> 01:19:58,789
+O yüzden senkronu kullanacağımız vakit clock pass'ini vermemiz gerekecek.
+
+800
+01:19:58,789 --> 01:20:01,789
+Clock pass'inin de bir kaidesi var.
+
+801
+01:20:01,789 --> 01:20:10,789
+Bizim datadardaki bitsel dizaynını okuma hızından 30 kat daha yavaş yani daha hızlı bir clock pass'i göndermemizi istiyor.
+
+802
+01:20:10,789 --> 01:20:12,789
+Başka neyimiz var?
+
+803
+01:20:12,789 --> 01:20:20,789
+Yoar seri input'umuz, input'u okuyacağımız kısım, output'umuz eğer ki veri göndereceksek veriyi göndereceğimiz kısım.
+
+804
+01:20:20,789 --> 01:20:23,789
+Seri olduğu için tek bir pin var gördüğünüz gibi.
+
+805
+01:20:23,789 --> 01:20:27,789
+1-1-1-1 gidecek yani bitsel gidecek, bit bit gidecek.
+
+806
+01:20:27,789 --> 01:20:32,789
+Burada tabi bir datayı bufferlayabiliriz ama bit diyeceğiz, bit bit göndereceğiz.
+
+807
+01:20:32,789 --> 01:20:35,789
+Burada bir de kontrol kısmı var.
+
+808
+01:20:35,789 --> 01:20:40,789
+Aslında bu 82.55'teki C portunu okuyorduk ya kontrol etmek için.
+
+809
+01:20:40,789 --> 01:20:43,789
+Onunla alakalı yani onun gibi düşünebilirsiniz.
+
+810
+01:20:43,789 --> 01:20:51,789
+Burada işte CTS, RTS iki tane önemli şeyimiz olacak bahsedeceğiz yere gelince bunlardan da bahsedeceğiz.
+
+811
+01:20:51,789 --> 01:20:54,789
+Bunlar kontrollerimiz sağlayacağımız kısımlar olacak.
+
+812
+01:20:54,789 --> 01:20:58,069
+Şimdi şuraya tekrardan değinelim.
+
+813
+01:20:58,069 --> 01:21:02,069
+Burada bir tane C, D değil Sivici var.
+
+814
+01:21:02,069 --> 01:21:04,069
+Ne demek bu?
+
+815
+01:21:04,069 --> 01:21:08,069
+Yine aynı şeye geliyoruz aslında data mı gönderiyorsun, kontrol gönderiyorsun.
+
+816
+01:21:08,069 --> 01:21:10,069
+Bunun seçimini yapacağımız kısım.
+
+817
+01:21:10,069 --> 01:21:16,069
+Eğer ki bu kısım buradan gelecek pin 0'sa ben data gönderiyorum demek olacak.
+
+818
+01:21:16,069 --> 01:21:20,069
+1'se kontrol word'u gönderiyorum demek olacak.
+
+819
+01:21:20,069 --> 01:21:25,069
+Chips erect'imiz zaten adres platında şey olacak ve o 0'da titikleniyor.
+
+820
+01:21:25,069 --> 01:21:31,069
+Yani ne zaman ki bu 1'se zaten high impedance dediğimiz true state durumunda.
+
+821
+01:21:31,069 --> 01:21:33,069
+Ne zaman 0?
+
+822
+01:21:33,069 --> 01:21:40,069
+O zaman eğer ki read ve write sinyallerinin ikisi de 1'se bu da yine aynı şekilde çalışmayan durumu gösteriyor.
+
+823
+01:21:40,069 --> 01:21:54,069
+Ne zaman chips erect 0 ve control word yani kontrolü seçtiysek ondan sonra da read'i seçtiysek ben o anki control word'ü ben cpu'da okuyabilmemiz sağlıyor.
+
+824
+01:21:54,069 --> 01:22:02,069
+Write'i seçtiysek de modu kontrolü ve senkronizasyon datasını cpu'dan göndereceğimiz kısım oluyor.
+
+825
+01:22:02,069 --> 01:22:10,069
+Yani aynı 8255'teki 1-1 gönderme modu 1-1'e getirme durumunda aynı bir şey aslında bu kısım.
+
+826
+01:22:10,069 --> 01:22:16,069
+Sonra data'yı seçtim de zaten data'yı ya gönderiyoruz ya da okuyoruz demek olacak.
+
+827
+01:22:16,069 --> 01:22:21,069
+Şimdi 8251 entegresini ilk ayarlama kısmı önemli.
+
+828
+01:22:21,069 --> 01:22:29,069
+Çünkü aynı 8255'te olduğu gibi bir ilklendirme yani mod 1'inde olduğu gibi bir ilklendirme yapmamız lazım.
+
+829
+01:22:29,069 --> 01:22:33,069
+Ki bundaki yani bu entegrenin aklı gelen ilklendirmesi ne olabilir?
+
+830
+01:22:33,069 --> 01:22:37,069
+Bu entegre asenkron mu çalışacak, senkron mu çalışacak?
+
+831
+01:22:37,069 --> 01:22:39,069
+İlk bunu bir tanımlamamız gerekiyor.
+
+832
+01:22:39,069 --> 01:22:43,069
+İşte mod register moduyuna sokuyoruz bunu.
+
+833
+01:22:43,069 --> 01:22:48,069
+Yani bunu sokmak için de bir komut göndereceğiz, onlara değineceğiz birazdan.
+
+834
+01:22:48,069 --> 01:22:55,069
+Sonra bu mod register'a gönderdiğimiz komuta göre senkron mu, daha doğrusu asenkron mu değil mi kontrolünü yapıyoruz.
+
+835
+01:22:55,069 --> 01:23:00,069
+Bu akış diagramı zaten anlaşılması daha kolay.
+
+836
+01:23:00,069 --> 01:23:07,069
+Asenkron değilse eğer, senkrondur demek zaten bu senkronizasyon karakterlerine bakacağız.
+
+837
+01:23:07,069 --> 01:23:11,069
+Ama asenkronsa A0 kontrolünü yapıyoruz.
+
+838
+01:23:11,069 --> 01:23:15,069
+Ne demek A0? A0 dediğimiz C ve D pin idi.
+
+839
+01:23:15,069 --> 01:23:22,210
+Yani şurada A0 bağlanmış gördüğünüz gibi.
+
+840
+01:23:22,210 --> 01:23:30,210
+Buradaki A0 adreslemedeki sıfırıncı pin C ve D olma durumuna göre buraya geliyoruz.
+
+841
+01:23:30,210 --> 01:23:34,210
+Eğer ki A0 birse kontrol vörtledir yani.
+
+842
+01:23:34,210 --> 01:23:37,210
+Yani biz bunu programlayabileceğimiz modüldedir.
+
+843
+01:23:37,210 --> 01:23:42,210
+Birse ve reset edilmişse zaten başa gelecek reset operation'a girecek.
+
+844
+01:23:42,210 --> 01:23:48,210
+Ama reset edilmemişse eğer kontrol register'ına bir veri göndereceğiz.
+
+845
+01:23:49,210 --> 01:23:56,210
+Eğer ki A0 bir değilse yani data modülünde ise o zaman da datayı göndereceğiz.
+
+846
+01:23:56,210 --> 01:23:58,210
+Bit bit göndermiş olacağız.
+
+847
+01:23:58,210 --> 01:24:03,210
+Öteki taraftan asenkron değil de senkron gitseydik bir senkronizasyon karakteri gönderiyoruz.
+
+848
+01:24:03,210 --> 01:24:06,210
+Yani senkron olup olmadığını kontrol ediyoruz.
+
+849
+01:24:06,210 --> 01:24:09,210
+Eğer ki iki bitle de senkronize kontrol edilebiliyor.
+
+850
+01:24:09,210 --> 01:24:15,210
+Eğer ki tek bitle kontrol ediyorsa false'a iki bitle ise ikinci bitine de bakarak senkronizasyonun.
+
+851
+01:24:15,210 --> 01:24:18,210
+Yine aynı süreci izleyip kontrolü yapıyorsak.
+
+852
+01:24:18,210 --> 01:24:21,210
+Kontrol vörü göndereceksek kontrol vörü seçiyoruz.
+
+853
+01:24:21,210 --> 01:24:26,210
+Yok data'yı göndereceksek A0'ı yani D'yi seçiyoruz.
+
+854
+01:24:26,210 --> 01:24:28,210
+O da sıfır demek zaten.
+
+855
+01:24:28,210 --> 01:24:31,210
+Var mı? Buradan da sinyalmiş arkadaşlar.
+
+856
+01:24:31,210 --> 01:24:38,920
+Şimdi gelelim mod yazma işlerine.
+
+857
+01:24:38,920 --> 01:24:46,920
+Dediğimiz gibi ilk etapta bizim bunun senkron ve asenkron olduğunu tanımlamamız gereken kontrol vördümüzü define etmemiz lazım.
+
+858
+01:24:46,920 --> 01:24:55,680
+Bunun için son iki pin'i sıfır sıfır ise senkron moddadır şu alttaki.
+
+859
+01:24:55,680 --> 01:25:02,680
+Eğer sıfır sıfır değilse sıfır bir bir sıfır veya bir bire göre bunlar asenkronun hızlarıdır.
+
+860
+01:25:02,680 --> 01:25:05,680
+Hızlanma seçenekleri.
+
+861
+01:25:05,680 --> 01:25:07,680
+Bunları seçmiş oluyoruz.
+
+862
+01:25:07,680 --> 01:25:09,680
+Ama asenkron şunlar.
+
+863
+01:25:09,680 --> 01:25:11,680
+Sıfır sıfır da senkron oluyor.
+
+864
+01:25:11,680 --> 01:25:15,680
+Sonrakine baktığımızda sonraki iki pin iki şey içinde.
+
+865
+01:25:15,680 --> 01:25:17,680
+Senkron da asenkron da da şunu söylüyor bize.
+
+866
+01:25:17,680 --> 01:25:24,680
+Bu pakette veri bloğunda kaç pin data göndereceksin kaç bit data göndereceksin?
+
+867
+01:25:24,680 --> 01:25:29,680
+Beş bit altı yedi sekiz maksimum sekiz bit data'yı pakete sığdırabiliyoruz.
+
+868
+01:25:29,680 --> 01:25:33,680
+Aynı şekilde senkron da da o şekilde.
+
+869
+01:25:33,680 --> 01:25:37,680
+Sonra parity kullanacak mısın kullanmayacak mısın?
+
+870
+01:25:37,680 --> 01:25:40,680
+Yani bir kontrol mekanizmanı olacak mı olmayacak mı?
+
+871
+01:25:40,680 --> 01:25:41,680
+Birisini giriyoruz.
+
+872
+01:25:41,680 --> 01:25:45,680
+Eğer biz buraya sıfır yazarsak herhangi bir parity'e bakmıyor.
+
+873
+01:25:45,680 --> 01:25:48,680
+Bir yazarsak bir sonraki EP'nin önemi var.
+
+874
+01:25:48,680 --> 01:25:52,680
+Bir yazarsak ikisinde de EP'nin yani sıfır parity'e mi bakacağız?
+
+875
+01:25:52,680 --> 01:25:54,680
+Yani çift parity'e mi bakacağız?
+
+876
+01:25:54,680 --> 01:25:55,680
+Tek parity'e mi bakacağız?
+
+877
+01:25:55,680 --> 01:25:58,680
+Bunun bilgisini yazıyoruz.
+
+878
+01:25:58,680 --> 01:26:03,680
+Sonrasında ise stop bit'in kaç adet olacağı neden?
+
+879
+01:26:03,680 --> 01:26:06,680
+Çünkü asenkron da benim stop bit'i vermem lazım.
+
+880
+01:26:06,680 --> 01:26:08,680
+O yüzden var bu.
+
+881
+01:26:08,680 --> 01:26:10,680
+Eğer sıfır sıfırsa hiç stop...
+
+882
+01:26:10,680 --> 01:26:12,680
+Ya bu invalid zaten olmayacak.
+
+883
+01:26:12,680 --> 01:26:14,680
+Böyle bir şey senaryo yok.
+
+884
+01:26:14,680 --> 01:26:16,680
+Ya sıfır bir tek stop bit'i gönderirim.
+
+885
+01:26:16,680 --> 01:26:20,680
+Ya bir cycle yani şöyle bir tane gönderirim.
+
+886
+01:26:20,680 --> 01:26:22,680
+Şöyle bir tanedir.
+
+887
+01:26:22,680 --> 01:26:25,680
+Bir de yarım cycle daha gelir sonra bitiririm.
+
+888
+01:26:25,680 --> 01:26:27,680
+Ya da iki cycle tam gönderirim.
+
+889
+01:26:27,680 --> 01:26:30,680
+Bilgisini girdiğimiz kısım.
+
+890
+01:26:30,680 --> 01:26:34,680
+Tabii bu senkronizasyon da değişiyor şu iki pin.
+
+891
+01:26:34,680 --> 01:26:37,680
+Burada senkronizasyon pinleri var.
+
+892
+01:26:37,680 --> 01:26:42,680
+Bunları sonra geri gelince deneyeceğiz çünkü çok havada kalacak.
+
+893
+01:26:42,680 --> 01:26:44,680
+Bunlara şimdilik boş veririm.
+
+894
+01:26:44,680 --> 01:26:50,039
+Ama senkron olması için gereken iki pin bunlar.
+
+895
+01:26:50,039 --> 01:26:54,039
+Şimdi aynı şekilde mod1'de bizim bir kontrolü yazdık.
+
+896
+01:26:54,039 --> 01:26:56,039
+Sonra status okuma durumumuz vardı.
+
+897
+01:26:56,039 --> 01:27:00,039
+Burada da aynı şey status okumak değil de...
+
+898
+01:27:00,039 --> 01:27:03,039
+veriyi gönderiyoruz ve alıyoruz değil mi?
+
+899
+01:27:03,039 --> 01:27:07,039
+İki tane kontrol edeceğimiz mod var.
+
+900
+01:27:07,039 --> 01:27:10,039
+Gene aynı şekilde interaptı nasıl kontrol ediyorsak.
+
+901
+01:27:10,039 --> 01:27:13,039
+Şimdi burada baktığımda...
+
+902
+01:27:13,039 --> 01:27:17,039
+bu reset pin'i reset etmemiz gereken kısım.
+
+903
+01:27:17,039 --> 01:27:22,039
+Sonra buralarda şu Rx önemli olanları şey yapıyorum.
+
+904
+01:27:22,039 --> 01:27:24,039
+Receiver Enable etme.
+
+905
+01:27:24,039 --> 01:27:27,840
+Yani misal bir tarafı...
+
+906
+01:27:27,840 --> 01:27:31,840
+Bir saniye arkadaşlar.
+
+907
+01:27:31,840 --> 01:28:06,350
+Bir saniye geliyorum hemen.
+
+908
+01:28:06,350 --> 01:28:08,350
+Evet arkadaşlar geldim.
+
+909
+01:28:08,350 --> 01:28:11,350
+Bu kısımda Receiver mi olarak kullanacağız?
+
+910
+01:28:11,350 --> 01:28:14,350
+Yoksa Transmitter yani alıcı mı göndereci mi?
+
+911
+01:28:14,350 --> 01:28:16,350
+Bunu enable ettiğimiz kısım.
+
+912
+01:28:16,350 --> 01:28:18,350
+Önemli olan bu iki pin zaten.
+
+913
+01:28:18,350 --> 01:28:22,350
+Diğerleri çok da önemli değil şu etapta bizim için.
+
+914
+01:28:22,350 --> 01:28:26,350
+Bazılarını ben bir daha açıp okumadım esasında.
+
+915
+01:28:26,350 --> 01:28:28,350
+Ama bunlara değiniyoruz gerekirse.
+
+916
+01:28:28,350 --> 01:28:30,350
+Şimdilik sadece şu iki tane pinin.
+
+917
+01:28:30,350 --> 01:28:32,350
+Yani Receiver mi yapacağız?
+
+918
+01:28:32,350 --> 01:28:34,350
+Yoksa Transmitter mi yapacağız?
+
+919
+01:28:34,350 --> 01:28:37,350
+Enable etmek için bu modülü kullanacağız.
+
+920
+01:28:37,350 --> 01:28:39,350
+En sonda durum yazmacımız var.
+
+921
+01:28:39,350 --> 01:28:44,350
+Yani misal Receiver ve Transmitter pinini aktif ettik.
+
+922
+01:28:44,350 --> 01:28:48,350
+Burada da Ready mi yani almaya uygun mu değil mi?
+
+923
+01:28:48,350 --> 01:28:50,350
+Kontrol edeceğimiz pin olacak.
+
+924
+01:28:50,350 --> 01:28:52,350
+Pin modülü olacak.
+
+925
+01:28:52,350 --> 01:28:54,350
+Buraları hızlı geçtim arkadaşlar.
+
+926
+01:28:54,350 --> 01:28:55,350
+Nedeni şöyle.
+
+927
+01:28:55,350 --> 01:28:59,350
+Çünkü örnekle beraber haftaya bir daha değineceğim bunlara zaten.
+
+928
+01:28:59,350 --> 01:29:01,350
+Örnek de var.
+
+929
+01:29:02,350 --> 01:29:05,350
+Bu hafta biraz bende de yorgunluk başladı.
+
+930
+01:29:05,350 --> 01:29:07,350
+O yüzden böyle biraz hızlıca geçtim.
+
+931
+01:29:07,350 --> 01:29:11,350
+Ama genel olarak sorumuz varsa tekrardan başlayalım.
+
+932
+01:29:11,350 --> 01:29:13,350
+Sorumuz var mı?
+
+933
+01:29:13,350 --> 01:29:18,350
+Yoksa bu haftaki ders evet buraya kadardı.
+
+934
+01:29:18,350 --> 01:29:22,350
+Genel olarak haftaya bir daha bu kısımları anlatacağız zaten.
+
+935
+01:29:22,350 --> 01:29:29,390
+Ama yine de sorunuz varsa sıcağı sıcağına gene cevaplayalım.
+
+936
+01:29:29,390 --> 01:29:31,390
+Sınav belli oldu.
+
+937
+01:29:32,390 --> 01:29:34,390
+8. hafta ne oluyor ya?
+
+938
+01:29:34,390 --> 01:29:36,390
+7 Kasım mı oluyor?
+
+939
+01:29:36,390 --> 01:29:37,390
+Kaç Kasım oluyor?
+
+940
+01:29:37,390 --> 01:29:39,390
+Aralık.
+
+941
+01:29:39,390 --> 01:29:41,390
+Biz şu an 5'teyiz.
+
+942
+01:29:41,390 --> 01:29:42,390
+6.20'si.
+
+943
+01:29:42,390 --> 01:29:44,390
+7.27'si.
+
+944
+01:29:44,390 --> 01:29:46,390
+Herhalde 4 Kasım oluyor.
+
+945
+01:29:46,390 --> 01:29:48,829
+Aralık oluyor.
+
+946
+01:29:48,829 --> 01:29:54,829
+Bugün çözdüğüm örneği ben sanki geçen hafta paylaştım ya.
+
+947
+01:29:54,829 --> 01:29:59,829
+Bir bakın isterseniz benim Avesis'te paylaşılmadı mı arkadaşlar?
+
+948
+01:29:59,829 --> 01:30:01,829
+Şu an 6 mı?
+
+949
+01:30:01,829 --> 01:30:02,829
+5'te olmadı ya.
+
+950
+01:30:02,829 --> 01:30:06,460
+5'te değil miyiz biz?
+
+951
+01:30:06,460 --> 01:30:10,569
+6. haftada mıyız?
+
+952
+01:30:10,569 --> 01:30:11,569
+Yapma ya.
+
+953
+01:30:11,569 --> 01:30:12,569
+Bir saniye.
+
+954
+01:30:12,569 --> 01:30:18,720
+Nasıl 6 ya?
+
+955
+01:30:18,720 --> 01:30:20,720
+23 Kasım'da başlıyoruz.
+
+956
+01:30:20,720 --> 01:30:27,949
+Ondan dolayı değil mi?
+
+957
+01:30:27,949 --> 01:30:31,949
+Sınav haftası peki lab olur mu?
+
+958
+01:30:31,949 --> 01:30:34,949
+Yani zannetmiyorum.
+
+959
+01:30:34,949 --> 01:30:37,949
+Ama biliyorsunuz biz bir sınav yapıyoruz.
+
+960
+01:30:37,949 --> 01:30:39,949
+Yani tek vize.
+
+961
+01:30:39,949 --> 01:30:43,949
+O yüzden hani 2. vize haftasında olur diye düşünüyordum.
+
+962
+01:30:43,949 --> 01:30:46,949
+Ama bizim yaptığımız vize haftasında olmayacaktır diye düşünüyorum.
+
+963
+01:30:46,949 --> 01:30:48,949
+Biz 1'de veya 2'de yaparız.
+
+964
+01:30:48,949 --> 01:30:51,949
+Onu şu an bir konuşmadık açıkçası da.
+
+965
+01:30:51,949 --> 01:30:54,949
+Yani yaptığımız hafta olmaz.
+
+966
+01:30:54,949 --> 01:30:59,119
+Yapmadığımız hafta olur.
+
+967
+01:30:59,119 --> 01:31:01,119
+Bir Avesis'e bir bakayım.
+
+968
+01:31:01,119 --> 01:31:03,119
+Ama ben sanki bu örneği paylaştım arkadaşlar.
+
+969
+01:31:03,119 --> 01:31:08,119
+Şey yani bu örnek derken 82 Mod 1 örneğini paylaşmadım mı?
+
+970
+01:31:08,119 --> 01:31:19,090
+4. hafta paylaşmamış mıyım?
+
+971
+01:31:19,090 --> 01:31:38,479
+Bir bakayım arkadaşlar da.
+
+972
+01:31:38,479 --> 01:31:40,479
+Var arkadaşlar.
+
+973
+01:31:40,479 --> 01:31:43,479
+Zip'in içerisinde 4. hafta örnek diye bir şey var.
+
+974
+01:31:43,479 --> 01:31:47,859
+Bir daha bakabilir miyiz? Yanlış olmasın.
+
+975
+01:31:47,859 --> 01:31:53,859
+Mikro işlemci 6.3.6.4.zip diye bir dosya paylaşmışım.
+
+976
+01:31:53,859 --> 01:31:59,039
+Avesis şifresi neydi arkadaşlar?
+
+977
+01:31:59,039 --> 01:32:01,039
+Yazalım tekrardan.
+
+978
+01:32:01,039 --> 01:32:03,039
+Yo Avesis şifresi yok ya.
+
+979
+01:32:03,039 --> 01:32:06,039
+Mikroda şifresiz koydum diye hatırlıyorum.
+
+980
+01:32:06,039 --> 01:32:07,039
+Şu an şifre yok.
+
+981
+01:32:07,039 --> 01:32:11,529
+Mikroya bak evet.
+
+982
+01:32:11,529 --> 01:32:19,090
+Evet arkadaşlar.
+
+983
+01:32:19,090 --> 01:32:21,090
+İlk defa herhalde Zip'i açıyoruz.
+
+984
+01:32:21,090 --> 01:32:29,300
+Hayırlı olsun.
+
+985
+01:32:29,300 --> 01:32:30,300
+Tamam.
+
+986
+01:32:30,300 --> 01:32:32,300
+O örneği inceleyin arkadaşlar.
+
+987
+01:32:32,300 --> 01:32:34,300
+Mod 1 ile alakalı labınız olacak.
+
+988
+01:32:34,300 --> 01:32:44,329
+Çünkü ondan eminim.
+
+989
+01:32:44,329 --> 01:32:46,329
+Tamam o zaman arkadaşlar.
+
+990
+01:32:46,329 --> 01:32:48,329
+Başka sorunuz yoksa dersi bitirebiliriz.
+
+991
+01:32:48,329 --> 01:32:50,329
+Lab'da başarılar.
+

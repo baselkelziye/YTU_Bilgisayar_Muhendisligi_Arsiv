@@ -1,0 +1,4676 @@
+1
+00:06:03,730 --> 00:06:17,470
+Evet, iyi akşamlar arkadaşlar. 10 Aralık bugün, akşam saat 5, 5'i 5 geçe yine katılım için bekleyip teorik dersimize devam edeceğiz.
+
+2
+00:06:17,470 --> 00:06:24,870
+Derse geçmeden önce dün bir ödev çalışması verdim sizlere.
+
+3
+00:06:24,870 --> 00:06:35,670
+Yaklaşık 30 civarı, 30-40 arası teslim vardı. 40'a yakın. Henüz daha başlamadım okumaya.
+
+4
+00:06:35,670 --> 00:06:40,269
+Önümüzdeki hafta büyük bir ihtimalle bunları okumaya çalışacağım.
+
+5
+00:06:40,269 --> 00:06:48,269
+Vizelere gelince, vize sınavlarında şu 35 puanlık algoritma ve kod sorusu hariç hepsini okudum.
+
+6
+00:06:48,269 --> 00:06:54,069
+Önceki üç tane, iki quiz ve bir ödev onları da okudum.
+
+7
+00:06:54,269 --> 00:07:03,870
+Onlar da tamam. Algoritma sorusunda da üçte biri falan bitti, üçte ikisi kaldı gibi.
+
+8
+00:07:03,870 --> 00:07:09,269
+İnşallah bu hafta sonu onları okuyup bitireceğim. Böylece vize sınavlarında okumasını tamamlamış olacağız.
+
+9
+00:07:09,269 --> 00:07:12,870
+Sonra da dediğim gibi dünkü ödev çalışmasına geçerim.
+
+10
+00:07:13,670 --> 00:07:20,069
+Güncel konulardan çarpıcı ve gerçekten aslında bilgisayar bilimlerinde kullanılan
+
+11
+00:07:20,069 --> 00:07:25,069
+temel algoritmik yöntemlerle alakalı bir ödev hazırlamaya çalıştım.
+
+12
+00:07:25,069 --> 00:07:32,269
+Şeye bakmadığım için henüz kim ne yaptı diye fakat bir iki kişiyi yetiştiremedim gibi yazmış.
+
+13
+00:07:32,269 --> 00:07:34,670
+Bakacağız hepsini değerlendireceğim.
+
+14
+00:07:34,670 --> 00:07:43,050
+Dediğim gibi mümkün olduğunca bütün yaklaşımlarınızı notlandırmaya gayret ediyorum.
+
+15
+00:07:43,850 --> 00:07:52,850
+Evet, bu akşamki konumuza geçecek olursak temelde iki tane başlığa odaklanacağız.
+
+16
+00:07:52,850 --> 00:07:56,850
+Birincisi açgözlü algoritmalar olacak, greedy.
+
+17
+00:07:58,850 --> 00:08:02,850
+C kodu halinde çözümünü yapabilir misiniz dünkü sorunun?
+
+18
+00:08:02,850 --> 00:08:04,850
+Şu anda yapamam, derse geçtik.
+
+19
+00:08:04,850 --> 00:08:09,850
+Ama temel mantık şu olacaktı, şimdi örtüşmeyen şekilde
+
+20
+00:08:10,649 --> 00:08:14,649
+yaparsınız, yaparsınız.
+
+21
+00:08:14,649 --> 00:08:16,649
+Şöyle bir mantık kurgulamanız gerekiyor.
+
+22
+00:08:16,649 --> 00:08:23,649
+Örtüşmediğine göre olabilecek maksimum uzunluktaki substring ne olabilir?
+
+23
+00:08:23,649 --> 00:08:25,649
+N bölü 2 olabilir, değil mi?
+
+24
+00:08:25,649 --> 00:08:30,649
+N bölü 2'den başlarsınız, 1'e doğru azalta azalta,
+
+25
+00:08:30,649 --> 00:08:34,649
+ki örtüşmediği için onları çok daha hızlı şekilde azaltabilirsiniz.
+
+26
+00:08:34,649 --> 00:08:36,649
+N bölü 2, N bölü 4 şeklinde.
+
+27
+00:08:37,450 --> 00:08:40,450
+Azaltıp arayacaksınız, mesela Boyer-Murla arayacaksınız,
+
+28
+00:08:40,450 --> 00:08:42,450
+ya da brute force arayacaksınız.
+
+29
+00:08:44,450 --> 00:08:46,450
+Ve bir yerde de sayacaksınız,
+
+30
+00:08:46,450 --> 00:08:50,450
+kaç kere geçtiğini dizide ya da bir yerde tutacaksınız.
+
+31
+00:08:50,450 --> 00:08:55,450
+Ondan sonra da en uzun ve en çok sayıda geçeni,
+
+32
+00:08:55,450 --> 00:09:02,450
+yani olası en büyük uzunluktakilerin içinde sayısı 1'den büyük olan hangisi ise
+
+33
+00:09:02,450 --> 00:09:04,450
+onu bana sonuç olarak döndüreceksiniz.
+
+34
+00:09:05,250 --> 00:09:09,250
+Verdiğim örnekte de üçlüler vardı hatırlarsanız.
+
+35
+00:09:09,250 --> 00:09:12,250
+Tabii ki çok kısa bir anlaşılsın diye bir örnek vermiştim.
+
+36
+00:09:12,250 --> 00:09:17,250
+Yani orada da N bölü 2'den başlayıp azalta azalta devam edebilirsiniz.
+
+37
+00:09:17,250 --> 00:09:20,250
+Aramaya, her bir adımda aramanız gerekecek
+
+38
+00:09:20,250 --> 00:09:24,250
+ve aradıktan sonra da örtüşmeyenleri bir yerde sayacaksınız.
+
+39
+00:09:24,250 --> 00:09:26,250
+Efendim, [öğrenci]?
+
+40
+00:09:26,250 --> 00:09:29,250
+Hocam haftaya, kusura bakmayın.
+
+41
+00:09:29,250 --> 00:09:30,250
+[öğrenci], buyur.
+
+42
+00:09:31,049 --> 00:09:38,049
+Haftaya böyle yine 2 saatlik böyle çarşamba günü laboratuvar olacak.
+
+43
+00:09:38,049 --> 00:09:41,049
+Orada bir kısa bir şekilde en azından gösterme şansınız var mı?
+
+44
+00:09:41,049 --> 00:09:44,049
+Beraber böyle code along gibi bir şey yapsak.
+
+45
+00:09:44,049 --> 00:09:46,049
+Gerçekten zorlandık.
+
+46
+00:09:46,049 --> 00:09:50,049
+Kendi adıma da sadece söylemiyorum hocam.
+
+47
+00:09:50,049 --> 00:09:52,049
+Hem süre olsun.
+
+48
+00:09:52,049 --> 00:09:55,049
+Yani süre özellikle.
+
+49
+00:09:55,049 --> 00:09:58,049
+Mesela ben kendi açımı söyleyeyim.
+
+50
+00:09:58,049 --> 00:10:01,049
+Son 1 saat kalınca hani paniğe kapılıyorum.
+
+51
+00:10:01,049 --> 00:10:05,049
+Sonuçta hem öğrenmek de istiyoruz tabii ama bir yandan teslim etmek istiyoruz.
+
+52
+00:10:05,049 --> 00:10:10,049
+Paniğe kapılıp sağdan sola bunu açık şekilde söylemek zorunda kalıyorum.
+
+53
+00:10:10,049 --> 00:10:13,049
+Sağdan sola kodu bakıyorum, örnek bakıyorum.
+
+54
+00:10:13,049 --> 00:10:17,049
+Orada yazıyorsunuz internette bir şeyler var diye ama yapmamaya çalışıyoruz.
+
+55
+00:10:17,049 --> 00:10:19,049
+Ama bir yandan da teslim etmek istiyoruz.
+
+56
+00:10:19,049 --> 00:10:23,049
+Bu zaman kadar hiçbir kodu teslim edemedim.
+
+57
+00:10:23,049 --> 00:10:27,049
+İstiyorum yani ama bir yandan öğrenmek de istiyorum.
+
+58
+00:10:27,049 --> 00:10:30,049
+Yani böyle sağdan soldan bakınca aklımda bir şey kalmıyor.
+
+59
+00:10:30,049 --> 00:10:38,049
+Peki ödev süresi bittikten sonra en azından kendinizi çalışmaya devam edip de çözmeye denediniz mi?
+
+60
+00:10:38,049 --> 00:10:41,049
+Mesela [öğrenci] hatırlarsanız ilk ödevi yapmıştı.
+
+61
+00:10:41,049 --> 00:10:43,049
+Evet onu izledim aynen.
+
+62
+00:10:43,049 --> 00:10:45,049
+Onları yapıyorum sonradan.
+
+63
+00:10:45,049 --> 00:10:47,049
+Ama böyle 2-3 gün sürüyor.
+
+64
+00:10:47,049 --> 00:10:49,049
+1 saatlık şey.
+
+65
+00:10:49,049 --> 00:10:52,049
+Yani ama hani en azından öğreniyorum.
+
+66
+00:10:52,049 --> 00:10:54,049
+Ama bu seferde teslim edemiyor muyum?
+
+67
+00:10:54,049 --> 00:10:57,049
+Dersler muhtemelen geçemeyeceğim yani bu şekilde güzelse.
+
+68
+00:10:57,049 --> 00:10:59,049
+Yapabilenler var yalnız onu söyleyeyim.
+
+69
+00:10:59,049 --> 00:11:02,049
+Yani hani kodları doğru çalışanlar var.
+
+70
+00:11:02,049 --> 00:11:05,049
+Şey tamam ilk ödevde olmasa da ikinci de vardı yani.
+
+71
+00:11:05,049 --> 00:11:08,710
+Bu yüzden.
+
+72
+00:11:08,710 --> 00:11:13,710
+Bilmiyorum en azından hafta yani beraber böyle bu biraz daha zor gibi geldimiz şu an yapamadık.
+
+73
+00:11:13,710 --> 00:11:17,710
+Hani hala da dünden beri bakıyorum.
+
+74
+00:11:17,710 --> 00:11:25,710
+Mesela haftaya sizin bakış açısınızdan hani beraber böyle mantığına kod bir şekilde otursak.
+
+75
+00:11:25,710 --> 00:11:27,710
+Tamam bakarız.
+
+76
+00:11:27,710 --> 00:11:29,710
+Hocam çözürüz.
+
+77
+00:11:29,710 --> 00:11:37,710
+Evet WhatsApp grubunda kendisi yapan algoritmayı kendisi çizip kendisi kodunu yazan kim var dedik.
+
+78
+00:11:37,710 --> 00:11:39,710
+Bir kişi çıktı.
+
+79
+00:11:39,710 --> 00:11:41,710
+Onunki de denemem lazım ana tekste.
+
+80
+00:11:41,710 --> 00:11:45,710
+Ben daha küçük bir tekste işte kullanıcıdan aldım filan dedi.
+
+81
+00:11:46,710 --> 00:11:52,710
+Grupta da bir 100 kişi civarında var dersi tek katılanların ya sessiz bir şekilde çözenler var.
+
+82
+00:11:52,710 --> 00:11:57,710
+Sesini çıkartmıyorlar grupta ya da kimse çözememiş gibi bir hal var.
+
+83
+00:11:57,710 --> 00:12:00,710
+İnternette 300 satırlık şeyi bulduk.
+
+84
+00:12:00,710 --> 00:12:02,710
+Kod buldum ben.
+
+85
+00:12:02,710 --> 00:12:04,710
+Yani copy paste yapılabilirdi.
+
+86
+00:12:04,710 --> 00:12:07,710
+Ama hoşuma gitmedi böyle bir şey yani hani.
+
+87
+00:12:07,710 --> 00:12:08,710
+Hangi kod?
+
+88
+00:12:08,710 --> 00:12:10,710
+Matrisle çözen mi?
+
+89
+00:12:10,710 --> 00:12:14,710
+Yok ağaç yapısı gibi bir durum yapıyla çözmüş galiba.
+
+90
+00:12:14,710 --> 00:12:18,710
+Anladım şey olduğu için ama ben açıkçası öyle çözmenizi beklemiyordum.
+
+91
+00:12:18,710 --> 00:12:21,710
+String search ile çözmenizi bekliyordum.
+
+92
+00:12:21,710 --> 00:12:29,710
+Hani geçen haftada hatırlarsanız şunları bir yazın hani bunlar lazım olur size demiştim.
+
+93
+00:12:29,710 --> 00:12:36,710
+Evet hazırda da beklettik hatta hocam o string search algoritmalarını hani copy paste yapabilelim diye ama.
+
+94
+00:12:36,710 --> 00:12:38,710
+İplemente etmek zor oldu.
+
+95
+00:12:38,710 --> 00:12:40,710
+Örneklerine de baktık internetten.
+
+96
+00:12:40,710 --> 00:12:48,710
+Dedik abi bunlar farklı bizim için anlaması bile zor oldu internetteki kodları yani.
+
+97
+00:12:48,710 --> 00:12:51,710
+Allah Allah değişik.
+
+98
+00:12:51,710 --> 00:12:56,710
+Bu şekilde hocam yani çoğunluk çözemediği için önceden de aldım ben derse.
+
+99
+00:12:56,710 --> 00:12:58,710
+Bazı ödevleri ben yapamıyordum.
+
+100
+00:12:58,710 --> 00:13:02,710
+Sessizce devam ediyordum ama çoğunluk gerçekten çözemedik dediler.
+
+101
+00:13:02,710 --> 00:13:07,710
+Şimdi kaç kişi söyleyecek bilmiyorum ama birazcık zor oldu bizim için.
+
+102
+00:13:07,710 --> 00:13:10,710
+Genelde böyle ödevleri dönem sonu ödevi olaraktan yapıyorduk.
+
+103
+00:13:10,710 --> 00:13:15,710
+Bir hafta 10 gün çalışıp kanka nasıl yaptım ben şöyle yaptım böyle yaptım deyip bir şekilde çözüyorduk.
+
+104
+00:13:15,710 --> 00:13:20,710
+Vallahi 38 kişi yollamış tamam mı 2 kişi de mail ile attı.
+
+105
+00:13:20,710 --> 00:13:26,710
+Ama onlarınki sistemde var mı yok mu kontrol ederim yani maksimum 40 kişi atmış.
+
+106
+00:13:26,710 --> 00:13:35,710
+Sınıfında 104 kişi 105 kişi 104 kişi olduğunuzu düşündüğünüzde yaklaşık yüzde 40 gibi kabaca bir katılım var.
+
+107
+00:13:35,710 --> 00:13:40,710
+Kaçı yaptı kaçı doğru çözdü şu anda dediğim gibi incelemedim.
+
+108
+00:13:40,710 --> 00:13:44,710
+Ne zaman ki bunların hepsine tek tek bakarım o zaman bir şey söyleyebilirim.
+
+109
+00:13:44,710 --> 00:13:49,710
+Ama nihayetinde hani 10 kişiden 4'ü bir şekilde ödevini yollamış.
+
+110
+00:13:49,710 --> 00:13:53,710
+Bir de hocam uğraşıp hiç yollamayanlar var benim gibi.
+
+111
+00:13:53,710 --> 00:14:00,710
+Yani bir şeyler yollayacağım ama çalışmayacak ya da çalışan copy paste yapılmış bir ödev olacaktı.
+
+112
+00:14:00,710 --> 00:14:04,710
+O yüzden hiç yollamadık bazı arkadaşlar olaraktan.
+
+113
+00:14:04,710 --> 00:14:12,710
+En azından bu soruların çözümünü yani kod üzerinden yaparsak biliyorsunuz senin kendine özgü tarafları var.
+
+114
+00:14:12,710 --> 00:14:15,710
+Kod yazmak da bir yerden sonra zor olabiliyor.
+
+115
+00:14:15,710 --> 00:14:18,710
+En azından öyle bir örnekten gidebilirsek çok seviniriz hocam.
+
+116
+00:14:18,710 --> 00:14:22,710
+Peki hiç kimse bir böyle bir mantık kurmadı mı düşünmedi mi?
+
+117
+00:14:22,710 --> 00:14:24,710
+En azından şu anda 47 kişi var derste.
+
+118
+00:14:24,710 --> 00:14:27,710
+Şöyle hocam ben bir kısa konuşabildim.
+
+119
+00:14:27,710 --> 00:14:30,710
+Kim konuşuyor? Birkaç kişinin mikrofonu açık.
+
+120
+00:14:30,710 --> 00:14:31,710
+[öğrenci].
+
+121
+00:14:31,710 --> 00:14:32,710
+[öğrenci] evet.
+
+122
+00:14:32,710 --> 00:14:34,710
+Şöyle grupa yazan kişi bendim.
+
+123
+00:14:34,710 --> 00:14:38,710
+Çözdüm ama sadece ama kullanıcıdan aldığım bir tekste göre çözdüm.
+
+124
+00:14:38,710 --> 00:14:41,710
+Yani tekst faili okumaya sürem yetmedi.
+
+125
+00:14:41,710 --> 00:14:43,710
+Çok burada arkadaşlar katlıyorum.
+
+126
+00:14:43,710 --> 00:14:47,710
+Yani bazı şeyleri iki saate sığdırmak çok zor olabilir.
+
+127
+00:14:47,710 --> 00:14:49,710
+Yani deneme yanılma bazı şeyleri.
+
+128
+00:14:49,710 --> 00:14:51,710
+Ama ben size şey dedim ödevde.
+
+129
+00:14:51,710 --> 00:14:56,710
+Yani alın oradaki teksti kopyalayıp direkt değişikene yapıştırabilirsiniz diye yazdım.
+
+130
+00:14:56,710 --> 00:14:57,710
+Yapıştırdım hocam.
+
+131
+00:14:57,710 --> 00:15:00,710
+Orada da biraz segmentation fault hatası aldım.
+
+132
+00:15:00,710 --> 00:15:02,710
+Önce bir kısasını yaparsın değil mi?
+
+133
+00:15:02,710 --> 00:15:04,710
+Yani kısasında çalışıyordu hocam.
+
+134
+00:15:04,710 --> 00:15:07,710
+Örneğiniz verdiğiniz kısada çalışıyor kodum.
+
+135
+00:15:07,710 --> 00:15:08,710
+Ama büyük de çalışmıyordu.
+
+136
+00:15:08,710 --> 00:15:15,710
+Şöyle bir şey yani ödev olarak zaten son saniyeye kadar geliştirme yaptım ve yetiştirebildim.
+
+137
+00:15:15,710 --> 00:15:18,710
+Arkadaşları bu yönden katlıyorum.
+
+138
+00:15:18,710 --> 00:15:22,710
+Tamam süreyi uzatayım o zaman bundan sonra daha uzun süre vereyim size.
+
+139
+00:15:22,710 --> 00:15:26,710
+En azından süreyi uzatmanız bizim açımızdan çok iyi olabilir.
+
+140
+00:15:26,710 --> 00:15:32,710
+Bundan sonra bu tip bir çözüm ödevi ya da analiz ödevi verirsem daha uzun süre vereceğim.
+
+141
+00:15:32,710 --> 00:15:34,710
+2 saat değil daha uzun 4 saat 5 saat.
+
+142
+00:15:34,710 --> 00:15:37,710
+Ama ondan sonra bana demen yine hocam çözemedik süre yetmedi diye.
+
+143
+00:15:37,710 --> 00:15:38,710
+Hocam.
+
+144
+00:15:38,710 --> 00:15:41,710
+O zaman da 20 saatlik bir ödev verseniz.
+
+145
+00:15:41,710 --> 00:15:44,710
+Ama bu sınav için bence 5 saat idealdi hocam.
+
+146
+00:15:44,710 --> 00:15:45,710
+Aynen.
+
+147
+00:15:45,710 --> 00:15:51,710
+Şehir kısmını o diğer ben Safik Stereo ile çözdüm ve Safik Stereo kodlarını tamamen internetten aldım.
+
+148
+00:15:51,710 --> 00:15:55,710
+Ama ben size Safik Stereo yani internetten çözmeyin diye söyledim.
+
+149
+00:15:55,710 --> 00:15:57,710
+Safik Stereo'yu anlattım mı ben size?
+
+150
+00:15:57,710 --> 00:16:00,710
+Yok hocam işte sorun oydu aslında.
+
+151
+00:16:00,710 --> 00:16:05,710
+Biz tam olarak anlamadık ve internetten araştıracağız tabi ki başka araştıracağımız yer yoktu.
+
+152
+00:16:05,710 --> 00:16:12,710
+İnternette hep böyle master tezleri falan var işte Safik Stereo ile çözmüş bir şey yapmışlar falan böyle.
+
+153
+00:16:13,710 --> 00:16:16,710
+Biz de ona anlayacağız diye çok vakit kaybettim.
+
+154
+00:16:16,710 --> 00:16:20,710
+Ben en son şey yapayım dedim brute force yaptım.
+
+155
+00:16:20,710 --> 00:16:22,710
+Örnekte de hocam örnekler yanlış.
+
+156
+00:16:22,710 --> 00:16:27,710
+Üç demiştiniz ya o üç tane değil dört harf tekrar eden bir tane vardı.
+
+157
+00:16:27,710 --> 00:16:28,710
+Var mı?
+
+158
+00:16:28,710 --> 00:16:30,710
+Evet dört harf tekrar eden vardı.
+
+159
+00:16:30,710 --> 00:16:33,710
+O da zaten başta bir yarım saatlik soruyu anlamadık hocam.
+
+160
+00:16:33,710 --> 00:16:34,710
+Dur bakalım.
+
+161
+00:16:34,710 --> 00:16:38,090
+Açalım bakalım.
+
+162
+00:16:38,090 --> 00:16:42,549
+Hangi dört de tekrar ediyor?
+
+163
+00:16:42,549 --> 00:16:45,830
+Hocam soruyu bir ekrana atabiliyorum.
+
+164
+00:16:45,830 --> 00:16:46,830
+Tabii.
+
+165
+00:16:46,830 --> 00:16:50,830
+Ttta demiş hocam şu an şeyde ya hatırlayanlar.
+
+166
+00:16:50,830 --> 00:16:59,860
+Dur doğru ttta varmış evet ben onu şey yapmışım.
+
+167
+00:16:59,860 --> 00:17:01,860
+Evet o iki tekrar varmış.
+
+168
+00:17:01,860 --> 00:17:04,859
+Tamam o zaman cevap direkt şey ttta iki tekrar.
+
+169
+00:17:04,859 --> 00:17:07,859
+İndisi de işte bir ve bilmem kaç.
+
+170
+00:17:07,859 --> 00:17:09,859
+Evet oradan da biraz bir kafamız karıştı.
+
+171
+00:17:09,859 --> 00:17:12,859
+Demek ki benim yazdığım kodda da hata varmış.
+
+172
+00:17:14,859 --> 00:17:16,859
+Hocam ben de bir şey söyleyebilir miyim?
+
+173
+00:17:16,859 --> 00:17:17,859
+Evet.
+
+174
+00:17:17,859 --> 00:17:18,859
+Kim söylüyor?
+
+175
+00:17:18,859 --> 00:17:23,859
+Ben de geçen dönem bir ödevimiz vardı browser cache diye link listeli yapmıştık.
+
+176
+00:17:23,859 --> 00:17:25,859
+Ne vardı duymadım?
+
+177
+00:17:25,859 --> 00:17:28,859
+Browser cache vardı geçen dönem.
+
+178
+00:17:28,859 --> 00:17:29,859
+Tamam.
+
+179
+00:17:29,859 --> 00:17:30,859
+Bu listeli yapmıştık ya.
+
+180
+00:17:30,859 --> 00:17:35,859
+Ben onun mantığını kullandım yani aslında texti verdim yani bir fonksiyon yazdım.
+
+181
+00:17:35,859 --> 00:17:39,859
+Bütün onun sub isimleri bulan bütün olası sub isimleri.
+
+182
+00:17:39,859 --> 00:17:42,859
+Sonra onları tekrar eden o link listeli yazdım.
+
+183
+00:17:42,859 --> 00:17:46,859
+En çok tekrar eden ve sayısı en fazla olanları baş nota getirdim.
+
+184
+00:17:47,859 --> 00:17:54,859
+Sonra onu Bayramur ile aramaya çalıştım ama zaman kısıtlı olduğu için bitiremedim.
+
+185
+00:17:54,859 --> 00:17:56,859
+Yani kodun tam çalışmıyor ama.
+
+186
+00:17:56,859 --> 00:18:03,000
+Olsun bir kod var yani ortada değil mi?
+
+187
+00:18:03,000 --> 00:18:05,000
+Yani yolladığınız bir kod var.
+
+188
+00:18:05,000 --> 00:18:10,569
+Yani benimki en azından tam çalışıyor ama dediğim gibi yarısı internetten çalıntı.
+
+189
+00:18:12,569 --> 00:18:15,569
+Bakacağım hepsini değerlendireceğim siz merak etmeyin tamam mı?
+
+190
+00:18:15,569 --> 00:18:20,980
+Yani bilmiyorum hocam nasıl oldu kabul eder misin bu kodu?
+
+191
+00:18:20,980 --> 00:18:25,980
+Bakacağım dediğim gibi yani çözüm yaklaşımınıza bir bakacağız.
+
+192
+00:18:25,980 --> 00:18:29,980
+Ona göre yani yüzde 100 her ödev mutlaka doğru olacak.
+
+193
+00:18:29,980 --> 00:18:32,980
+Yani doğru olacak derken full çalışacak diye bir şey söz konusu değil.
+
+194
+00:18:32,980 --> 00:18:35,980
+Bak benim de yazdığımda hata varmış zaten.
+
+195
+00:18:35,980 --> 00:18:38,980
+Şimdi ben de oturacağım akşam yazdığıma bir daha bakacağım.
+
+196
+00:18:38,980 --> 00:18:40,980
+Demek ki ben de dörtlüyü kaçırmışım.
+
+197
+00:18:40,980 --> 00:18:42,980
+Bir de şöyle bir şey var hocam.
+
+198
+00:18:42,980 --> 00:18:48,980
+Bu ödevler bir şey endişemiz de şu yüzden ödevler ve quizler yüzde kırk olarak gözüküyor.
+
+199
+00:18:48,980 --> 00:18:58,980
+Neredeyse final kadar bir değerlemesi olan bir şeyi çoğu muz yapamayınca ya da çok böyle harap halinde kalıyoruz grup olarak.
+
+200
+00:18:58,980 --> 00:19:00,980
+Ben iki ödevi mesela yetiştiremedim.
+
+201
+00:19:00,980 --> 00:19:02,980
+Son iki ödev sadece yetiştirebildim.
+
+202
+00:19:02,980 --> 00:19:04,980
+O da ne kadar doğru bilemiyorum.
+
+203
+00:19:04,980 --> 00:19:08,980
+Şimdilik ödevlerde söyle ilk quiz 10 puandı.
+
+204
+00:19:08,980 --> 00:19:10,980
+İkincisi 20 puandı.
+
+205
+00:19:10,980 --> 00:19:13,980
+Ödevler de 10 her puan şeklinde devam etti.
+
+206
+00:19:13,980 --> 00:19:16,980
+Belki 15 her puan yapacaktık onları tam şu anda hatırlamıyorum.
+
+207
+00:19:16,980 --> 00:19:18,980
+Yani bir 50 60 puanlık bir şey birikti.
+
+208
+00:19:18,980 --> 00:19:20,980
+Bir 40 puan daha yapacağız.
+
+209
+00:19:20,980 --> 00:19:24,980
+Anlayacağınız hocam dönem ödevi olarak verme şansınız var mı?
+
+210
+00:19:24,980 --> 00:19:34,980
+Yani bizim çoğunluk batık durumda o batık durumda olanlar kendini birazcık toparlasa birkaç dönemdir dersini veremeyenler bu dönem geçse böyle.
+
+211
+00:19:34,980 --> 00:19:36,980
+Ulan Göksel Hoca ile geçtik.
+
+212
+00:19:36,980 --> 00:19:37,980
+Ne kadar güzel oldu.
+
+213
+00:19:37,980 --> 00:19:44,980
+Adam da mükemmel anlatıyordu var ya diye söylesek gelecekte geçemezseniz nasıl anlatacaksınız?
+
+214
+00:19:44,980 --> 00:19:50,980
+Geçemezsek de Göksel Hoca çok güzel anlattı ama bizim hayalatızlığımız da geldi diyeceğiz yani hocam.
+
+215
+00:19:50,980 --> 00:19:54,980
+Yani şimdi bu dersin kolay olmayacağını baştan söylemiştik hatırlarsanız.
+
+216
+00:19:54,980 --> 00:19:56,980
+Hocam ben bir de normal öğrenciyim.
+
+217
+00:19:56,980 --> 00:19:58,980
+Bir şeyde bilimsel hazırlık filan değilim.
+
+218
+00:19:58,980 --> 00:20:01,980
+Birkaç kez gördüm bu dersi ama gittikçe seviye yükseliyor.
+
+219
+00:20:01,980 --> 00:20:05,980
+Benim seviye yükselmem derse yetişemiyor birazcık.
+
+220
+00:20:05,980 --> 00:20:06,980
+Öyle oluyor.
+
+221
+00:20:06,980 --> 00:20:11,980
+Bu da bizden inciler bu kadar hocam.
+
+222
+00:20:11,980 --> 00:20:13,980
+Tamam siz umudunuzu kaybetmeyin.
+
+223
+00:20:13,980 --> 00:20:14,980
+Yani önemli olan bu.
+
+224
+00:20:14,980 --> 00:20:19,980
+Zaten ödevleri, quizleri hani çok yapmaya çalışıyoruz ya.
+
+225
+00:20:19,980 --> 00:20:22,980
+Maksat şey hani %40 etkili evet ama.
+
+226
+00:20:22,980 --> 00:20:33,980
+En azından toplamda böyle işte vize kadar belki vizenin belli bir yüzdesi kadar bir şeyler toparlamış olun diye düşünüyorum.
+
+227
+00:20:33,980 --> 00:20:36,980
+Bir de nihayetinde çan erisi var biliyorsunuz.
+
+228
+00:20:36,980 --> 00:20:39,980
+Hani belki de ortalama şey çıkacak yani 42 çıkacak bilmiyorum ki.
+
+229
+00:20:39,980 --> 00:20:47,319
+Bu durumda hani çan böyle çok sıkışık bir çan da olabilir.
+
+230
+00:20:47,319 --> 00:20:51,319
+Evet [öğrenci] seni de alalım son olarak.
+
+231
+00:20:51,319 --> 00:20:53,319
+Ondan sonra da artık konulara geçelim.
+
+232
+00:20:53,319 --> 00:21:00,319
+Hocam ben bu kadar zorlanmamızın en büyük nedeni dersli çörnek yapmamız olduğunu düşünüyorum.
+
+233
+00:21:00,319 --> 00:21:03,319
+Sadece mantık anlatıyorsunuz.
+
+234
+00:21:03,319 --> 00:21:06,319
+Kodlama üzerinde çok az duruluyor.
+
+235
+00:21:06,319 --> 00:21:09,319
+Ama quizler öderler sınav full kodlama üzerine.
+
+236
+00:21:09,319 --> 00:21:16,319
+Yani dersin adı veri yapıları ve algoritmalar belki çok kod göstermiyorsunuz ama sınavlar öyle değil.
+
+237
+00:21:16,319 --> 00:21:26,319
+Yani ya derslerdeki kod kodlar üzerine daha fazla duralım ya da sınavda daha mantık üzerine sorular gelsin diye düşünüyorum.
+
+238
+00:21:26,319 --> 00:21:27,319
+Bu biraz şey oluyor.
+
+239
+00:21:27,319 --> 00:21:29,319
+Armut Piş ağzıma düş oluyor.
+
+240
+00:21:29,319 --> 00:21:38,890
+Yani bu teori derslerini ben verdikten sonra sizin aslında bunların hepsine bir şekilde oturup implementasyonu yapıyor olmanız lazım.
+
+241
+00:21:38,890 --> 00:21:44,890
+Yani kodları da hepsinin kodunu da ki çoğu bana birçok şeyin kodunu da veriyorum.
+
+242
+00:21:44,890 --> 00:21:53,890
+Algoritmalarını, püsödo kodlarını, bire bir örnek üzerindeki şeylerini nasıl çalıştığını veriyorum ki bugün de vereceğim.
+
+243
+00:21:53,890 --> 00:21:56,890
+Ama mesela bugün iki tane algoritma tanıtacağım size yine.
+
+244
+00:21:56,890 --> 00:21:59,890
+Yine Merge Sort ve Quick Sort'tan bahsedeceğiz.
+
+245
+00:21:59,890 --> 00:22:01,890
+Yettiği kadar belki Quick Sort haftaya bırakırım.
+
+246
+00:22:01,890 --> 00:22:06,890
+Ama yine onların kodunu oturup böyle satır satır vermeyeceğim.
+
+247
+00:22:06,890 --> 00:22:11,890
+Ama internette zaten Merge Sort yazdığınızda Wikipedia'da bile var kodu, C kodu yani.
+
+248
+00:22:11,890 --> 00:22:15,890
+Hani bunu tekrar oturup benim burada söylememe bir gerek yok.
+
+249
+00:22:15,890 --> 00:22:18,890
+Ben burada size teorisini ve mantığını anlatmaya çalışıyorum.
+
+250
+00:22:18,890 --> 00:22:22,890
+Siz ondan sonra alırsınız o kodu ya da oturup kendiniz yazarsınız.
+
+251
+00:22:22,890 --> 00:22:26,890
+Teori pratiğinizle birlikte pekiştirmiş olursunuz.
+
+252
+00:22:26,890 --> 00:22:28,890
+Aslında mantık budur.
+
+253
+00:22:28,890 --> 00:22:37,680
+Yoksa yani kodu da ben verdikten sonra siz ne yapacaksınız diye bir cevap vereyim.
+
+254
+00:22:37,680 --> 00:22:42,680
+Mümkün olduğunca da kodları yani çoğu yerde de kod paylaştığımı düşünüyorum ayrıca.
+
+255
+00:22:43,680 --> 00:22:50,680
+Şeylere, slide'lere bakarsak hani hiç o kadar da kodsuz sadece teorik olarak anlatıp geçtiğimi de söyleyemeyiz.
+
+256
+00:22:50,680 --> 00:22:54,680
+Bol bol pratikte yaptığımı düşünüyorum örneklerle birlikte.
+
+257
+00:22:54,680 --> 00:22:57,680
+Onu rica ederim.
+
+258
+00:22:57,680 --> 00:23:00,680
+[öğrenci] dört mesleki toplam sekiz ders alıyorum.
+
+259
+00:23:00,680 --> 00:23:03,680
+Vakit kalmıyor hocam demiş.
+
+260
+00:23:03,680 --> 00:23:06,680
+Yani evet ne diyeyim.
+
+261
+00:23:06,680 --> 00:23:10,680
+Ben de dört ders veriyorum.
+
+262
+00:23:10,680 --> 00:23:15,680
+Benim de vaktim kalmıyor ki başka işlerde var malum bildiğiniz gibi projeler.
+
+263
+00:23:15,680 --> 00:23:23,680
+Gibi bir de onları da katarsak o iki de proje hatta üç projemiz var.
+
+264
+00:23:23,680 --> 00:23:27,680
+Yüksekstans da iki tezleri mezleri de düşünürseniz benim de sekiz tane varmış.
+
+265
+00:23:27,680 --> 00:23:32,470
+Üç ödev kaldıysa beş falan yapsak.
+
+266
+00:23:32,470 --> 00:23:35,470
+Yok belki kuis yaparız yine.
+
+267
+00:23:36,470 --> 00:23:43,819
+Şöyle şeyde oldu ben size söyleyeyim.
+
+268
+00:23:43,819 --> 00:23:48,819
+Üçüncü baktım kodlamalı ödevde yani iki kuis biz sonra yaptığımız ödevde.
+
+269
+00:23:48,819 --> 00:23:59,819
+Mesela şey hani kod dediğiniz gibi doğru mantığı doğru ama tam böyle tam yüzde yüz çalışmıyorsa on üzerinden sekiz veriyorum.
+
+270
+00:23:59,819 --> 00:24:10,319
+Bir dakika şey hızınıza yetişemiyorum.
+
+271
+00:24:10,319 --> 00:24:18,339
+Ama işte en azından side mutlaka burada pekiştirmemiz gerekiyor.
+
+272
+00:24:18,339 --> 00:24:23,900
+Tamam evet.
+
+273
+00:24:23,900 --> 00:24:26,900
+Hocam eli havada kaldı onu ben indireyim.
+
+274
+00:24:26,900 --> 00:24:30,900
+Üç ödev kaldı dediniz de hocam normalde üç ödev üç kuis di başta ben öyle hatırlıyorum.
+
+275
+00:24:30,900 --> 00:24:34,900
+Yani üç ödev bitti ödevler bitti şimdi iki kuisimiz kaldı gibi hatırlıyorum.
+
+276
+00:24:34,900 --> 00:24:36,900
+Üç ödev yaptık mı ya?
+
+277
+00:24:36,900 --> 00:24:38,900
+Evet bu üçüncü ödevdi hocam.
+
+278
+00:24:38,900 --> 00:24:40,900
+Üçtü hocam evet.
+
+279
+00:24:40,900 --> 00:24:42,900
+Ben ilk ikisini kuis diye şey yaptım ya.
+
+280
+00:24:42,900 --> 00:24:44,900
+Yok bir tane kuis yaptık hocam şimdiye kadar.
+
+281
+00:24:44,900 --> 00:24:50,900
+Neyse ödev kuis fark etmez ben ikisini aynı şey olarak görüyorum.
+
+282
+00:24:50,900 --> 00:24:56,900
+Hem kuis hem ödev benim için kafada aynı yani adı ödev ya da kuis olmuş çok önemli değil.
+
+283
+00:24:56,900 --> 00:25:00,900
+Kuismek biraz daha kolay olacak bizim için yani en azından bir tanesi öyle yitirelim.
+
+284
+00:25:00,900 --> 00:25:08,900
+Bundan sonra en az bir iki tane daha kuis çıkar o zaman hani kodlama ödevin de proje gibi sona bırakayım.
+
+285
+00:25:08,900 --> 00:25:10,900
+Tamam.
+
+286
+00:25:10,900 --> 00:25:14,900
+Büyük bir ihtimalle kodlama ödevi yine graflarla alakalı olacak.
+
+287
+00:25:14,900 --> 00:25:20,900
+Yani hani daha büyük olan ödev graflarla alakalı olacak.
+
+288
+00:25:20,900 --> 00:25:22,900
+Tamam.
+
+289
+00:25:22,900 --> 00:25:28,900
+Peki bundan sonra biraz daha kuis ve hafifimsi şeyler yapmaya gayret edelim.
+
+290
+00:25:28,900 --> 00:25:30,900
+Kuis olursa daha iyi.
+
+291
+00:25:30,900 --> 00:25:32,900
+En azından ders saatinin içinde de tamamlayabiliriz.
+
+292
+00:25:32,900 --> 00:25:38,900
+Siz de vakit yetmiyor şeklinde serzin içinde bulunmazsınız diye düşünüyorum.
+
+293
+00:25:38,900 --> 00:25:40,900
+Evet [öğrenci].
+
+294
+00:25:40,900 --> 00:25:42,900
+Çok teşekkür ederiz.
+
+295
+00:25:42,900 --> 00:25:44,900
+Rica ederiz.
+
+296
+00:25:44,900 --> 00:25:46,900
+Herkes dertli.
+
+297
+00:25:46,900 --> 00:25:48,900
+Anlıyorum sizi.
+
+298
+00:25:48,900 --> 00:25:58,900
+Ama sonuçta bu hakikaten bilgisayar bilimlerinin hani ileride ben bu işin mühendisiyim diyeceksiniz.
+
+299
+00:25:58,900 --> 00:26:06,900
+Fark yaratacağınız ve gerçekten mühendislik çözümü geliştirirken kullanacağınız temelleri aldığınız en önemli derslerden biri.
+
+300
+00:26:06,900 --> 00:26:10,900
+Burada zorlanırsanız ileride aslında çok daha rahat edersiniz.
+
+301
+00:26:10,900 --> 00:26:12,900
+Şeye girin.
+
+302
+00:26:12,900 --> 00:26:14,900
+Yani 50 tane site var.
+
+303
+00:26:14,900 --> 00:26:16,900
+Biliyorsunuz bu yok interview questions.
+
+304
+00:26:16,900 --> 00:26:20,900
+Yok işte hacker bilmem ne şeyleri hackathonları bilmem neleri.
+
+305
+00:26:20,900 --> 00:26:24,900
+Oralarda pek çok algoritmik soru var.
+
+306
+00:26:24,900 --> 00:26:26,900
+Benim sorduğum şeyler onlardan çok farklı değil.
+
+307
+00:26:26,900 --> 00:26:28,900
+Sonuçta ben de oralara bakıyorum.
+
+308
+00:26:28,900 --> 00:26:34,900
+Onlar bunları soruyorsa ve çözebiliyorsa insanlar demek ki sizin de bunları öğrendikten sonra yapabiliyor olmanız lazım diye düşünüyorum açıkçası.
+
+309
+00:26:34,900 --> 00:26:36,900
+Biraz çalışmak lazım.
+
+310
+00:26:36,900 --> 00:26:44,900
+Haklısanız zor ama çalışırsanız daha iyi daha hızlı çözümler geliştirirsiniz diye düşünüyorum.
+
+311
+00:26:44,900 --> 00:26:46,900
+Peki.
+
+312
+00:26:46,900 --> 00:26:48,900
+Şimdi geldik.
+
+313
+00:26:48,900 --> 00:26:50,900
+Nereye geldik?
+
+314
+00:26:50,900 --> 00:26:52,900
+Ben de dağıldım.
+
+315
+00:26:52,900 --> 00:26:54,900
+Aç gözlü.
+
+316
+00:26:54,900 --> 00:26:56,900
+Ha grid algoritmalar tamam.
+
+317
+00:26:56,900 --> 00:26:58,900
+Ekranda şeyde gördüm.
+
+318
+00:26:58,900 --> 00:27:00,900
+Şunları şöyle bir düzelteyim.
+
+319
+00:27:00,900 --> 00:27:04,900
+Ekranda bilmem neydi derken ben de bu online de hakikaten tamam.
+
+320
+00:27:04,900 --> 00:27:06,900
+Evet.
+
+321
+00:27:06,900 --> 00:27:10,900
+Şimdi bu greedy algoritmalarla önce bir başlayalım.
+
+322
+00:27:10,900 --> 00:27:18,900
+Aslında biz bunları biraz gördük işledik ama yine de bir üzerinden tekrar geçmek istiyorum.
+
+323
+00:27:18,900 --> 00:27:24,900
+Bu bir algoritmik çözüm yaklaşımı aç gözlü aç gözlü ya da hırslı olarak Türkçe'ye çeviriyoruz.
+
+324
+00:27:24,900 --> 00:27:36,900
+Yani greedy böyle hırslı davranan sömürmeye çalışan etrafındakileri bir şekilde benim olsun benim olsun diye uğraşan tiplere verdiğimiz sıfat aslında tanımlamak için kullandığımız sıfat.
+
+325
+00:27:36,900 --> 00:27:40,900
+Greed ya da işte böyle davrananlar greedy diyoruz.
+
+326
+00:27:40,900 --> 00:27:48,900
+Peki o zaman greedy algoritma deyince biz tam olarak nasıl bir çözüm yaklaşımı anlamalıyız ya da öğrenmeliyiz düşünmeliyiz.
+
+327
+00:27:48,900 --> 00:27:50,900
+Şimdi ondan bahsedeceğim.
+
+328
+00:27:50,900 --> 00:27:56,900
+Şimdi elimizde bir problem var ki genellikle de greedy yöntemler böyle bir optimizasyon problemlerine daha çok uygulanırlar.
+
+329
+00:27:56,900 --> 00:28:18,900
+Yani daha bir çözümü ya da bir durumu daha iyi bir şekilde çözebilmek amacıyla ya oluşturulan çözümler genellikle greedy olur elimizde diyelim ki bir problemi çözerken herhangi bir teanında yani herhangi bir aşamada yapabileceğimiz bir çözüm.
+
+330
+00:28:18,900 --> 00:28:22,900
+Ya da yapabileceğimiz çeşitli hamleler var.
+
+331
+00:28:22,900 --> 00:28:24,900
+Yani işte satranç gibi düşün.
+
+332
+00:28:24,900 --> 00:28:40,900
+Hani atı da oynayabilirsiniz fili de çekebilirsiniz falan gibi böyle problemi çözerken belirli bir aşamaya ya da belirli bir adıma geldiğinizde yapabileceğiniz birkaç hamle varsa ya da birkaç seçenek varsa.
+
+333
+00:28:40,900 --> 00:29:06,900
+Ve işte bunların içinden belli bir tanesini belli kriterlere göre seçerek onu işletip ondan sonraki adıma ilerleyip o adımda da yine aynı şekilde belli seçeneklerden birini seçip daha sonra bir sonraki adıma geçip şeklinde ilerleyen çözüm yöntemlerine biz işte hırslı ya da açgözlü çözüm yaklaşımı ya da algoritmalar adını veriyoruz.
+
+334
+00:29:06,900 --> 00:29:11,900
+Peki her adımda yapılabileceklerden birini seçecek dedik.
+
+335
+00:29:11,900 --> 00:29:16,900
+Ay etkin ne zaman yazdın sen bunu?
+
+336
+00:29:16,900 --> 00:29:17,900
+Ben mi görmedim?
+
+337
+00:29:17,900 --> 00:29:18,900
+Yeni mi geldi?
+
+338
+00:29:18,900 --> 00:29:20,900
+Geçen dersten soru sorabilir miyim?
+
+339
+00:29:20,900 --> 00:29:22,900
+Aradan önce sorarsın olur mu?
+
+340
+00:29:22,900 --> 00:29:24,900
+Şimdi en azından greedy'yi bitirelim.
+
+341
+00:29:24,900 --> 00:29:27,900
+Ne diyorduk?
+
+342
+00:29:27,900 --> 00:29:31,900
+Şimdi seçim yaparken yani bir hamle yapacağız, bir davranış sergileceğiz.
+
+343
+00:29:31,900 --> 00:29:36,900
+İşte bir kod işleteceğiz ya da belli bir algoritma parçası işleteceğiz diye düşünelim.
+
+344
+00:29:36,900 --> 00:29:40,900
+Burada yapacağımız seçimin bir kere ilk olarak yapılabilir olması lazım.
+
+345
+00:29:40,900 --> 00:29:41,900
+Yani feasible diyoruz biz buna.
+
+346
+00:29:41,900 --> 00:29:46,900
+Yapılamaz bir hamle zaten doğal olarak yapılamayacağı için saçma olacaktır.
+
+347
+00:29:46,900 --> 00:30:06,900
+İkinci ve en önemli şey seçimdeki kriter yerel olarak yani o anda algoritmik çözümün o T anındaki aşamasında olabileceklerin en iyisini yani eldekilerin en iyisini ya da eldeki çözümlerin ya da hamlelerin en başarılısını seçmek gerekir.
+
+348
+00:30:06,900 --> 00:30:14,900
+Buna da locally optimal diyoruz seçim kriteri olarak ve sonuncu olarak da yaptığımız seçimin geri alınamaz olması lazım.
+
+349
+00:30:14,900 --> 00:30:22,900
+Yani siz bu algoritmanın adımını işlettikten sonra belli bir şey T artı bir durumuna geçtiğinizde ay ben bunu beğenmedim.
+
+350
+00:30:22,900 --> 00:30:29,900
+Geri döneyim de şunu yapayım bunun yerine şöyle bir hamle yapsaydım daha iyi olacakmış gibi bir şey söyleyemezsiniz.
+
+351
+00:30:29,900 --> 00:30:31,900
+Yani geleceğe dair bir şeyiniz yok.
+
+352
+00:30:31,900 --> 00:30:44,900
+Sadece o anda o lokalde o adımda yapabileceklerinizin içinden en iyisini seçip işletmek açgözlü ya da hırslı algoritmik çözüm gerçekleştirmek demektir.
+
+353
+00:30:44,900 --> 00:30:58,900
+Şimdi bu yöntem işin tabi algoritmanın izi kısmına çok fazla girmiyorum ama bazı problemlerin tüm örnekleri için yani belirli bir problemin bütün olası durumları için optimal çözüm sunabilir.
+
+354
+00:30:58,900 --> 00:31:00,900
+Biraz sonra bir iki tanesine bakacağız.
+
+355
+00:31:00,900 --> 00:31:06,900
+Çok zaten bildiğiniz şeyler olacak zaten bir de Huffman mesela şimdiden söyleyeyim Huffman kodlaması.
+
+356
+00:31:06,900 --> 00:31:14,900
+Ama tabi çoğu problem için çoğu problemin bütün örnekleri için optimal çözümü başaramayabilir.
+
+357
+00:31:14,900 --> 00:31:23,900
+Neden geri alınamaz dedik yani ay ben bunu yapsaydım ya da şu üç hamleyi şu sırayla yapsaydım çok daha iyi bir sonuca gidiyordum diyebilirsiniz.
+
+358
+00:31:24,900 --> 00:31:32,900
+Ama her adımda geri dönmemeniz gerektiği için çoğu problemde optimal çözümü yakalayamayabilirsiniz greedy yöntemlerle.
+
+359
+00:31:32,900 --> 00:31:43,900
+Ama şöyle bir güzelliği var her adımda enkarlı olanı yap şeklinde sürekli ileri doğru kendini attığı için aslında bize çözüme doğru hızlı bir şekilde yakınsar.
+
+360
+00:31:43,900 --> 00:31:55,900
+Yani hızlı çalışan ya da mümkün olduğu kadar optimale yakın çözümü hızlı bir şekilde bize sunabilen yaklaşımlar olur greedy algoritmalar.
+
+361
+00:31:55,900 --> 00:32:05,900
+Şimdi nedir greedy algoritmaların örnekleri iki tane şeyden bahsetmiştik bir optimal çözüm sunabilir bir de optimale yakın çözüm sunanlar var sunabilir demiştik.
+
+362
+00:32:06,900 --> 00:32:18,900
+Optimal çözüm mesela bozuk para üstü verme problemi ne biçim problem diyeceksiniz ama işte bu da böyle bir problem şimdi bir sonraki slide'da örneğini göstereceğim.
+
+363
+00:32:18,900 --> 00:32:28,900
+Elimizde işte hani belli basılı bozuk paralar var ve bir para üstü vermemiz gerekiyor hangisinden kaç tane verelim ona bakacağız.
+
+364
+00:32:28,900 --> 00:32:40,900
+İkincisi mesela optimal çözüm ürettiği problemlerden bir tanesi en küçük yayılımlı ağaç minimum spinning tree problemi iki farklı yöntemle çözümünü göreceğiz ilerleyen haftalarda son iki haftada.
+
+365
+00:32:40,900 --> 00:32:52,900
+Hatta sondan önceki haftada prim ve kuru skala algoritmalarının nasıl çalıştığını göreceğiz tabi onlardan önce bizim grafları tanımamız gezintileri falan öğrenmemiz de gerekecek.
+
+366
+00:32:52,900 --> 00:33:11,900
+Pardon bunu son hafta göreceğiz galiba tam şimdi şeyi hatırlamıyorum sıralamayı bir üçüncü greedy yöntemlerin optimal çözdüğü problem single source yani tek kaynaktan belirli bir hedefe doğru giden en kısa yolu bulma problemi yani shortest path.
+
+367
+00:33:11,900 --> 00:33:31,900
+Evet işte burada da Dijkstra'nın algoritması aslında yine greedy olarak çalışır ne yapıyor her adımda mümkün olan en iyi hamleyi yapıyor aslında basit çizelgeleme problemleri işte bu şey hani işçi iş makine eşleştirme gibi basit problemler işte macer algoritması falan en çok burada bilinenlerdir.
+
+368
+00:33:31,900 --> 00:33:46,900
+Bunlar da yine optimal çözüm üretirler bir de mesela bitwise enkoding dediğimiz huffman kodlaması işte veri sıkıştırmada kullandığımız ve optimal çözüm üreten başka bir greedy yöntem orada da hatırlarsanız her adımda ne yapıyorduk.
+
+369
+00:33:46,900 --> 00:34:10,900
+Frekansı en yüksek olanları alıp birleştirip yeni bir düğüm halinde tekrar acı ekliyorduk. Yaklaşık yani optimale yakın çözüm getiren yöntemlerde ise greedy yaklaşımlarda şu problemleri görürüz genellikle kombinatorial optimization problem denen çalışma alanında greedy yöntemler optimale yakın çözüm üretir.
+
+370
+00:34:10,900 --> 00:34:33,900
+Şimdi tabii kombinatorial optimizasyon problemine girmeyeceğiz yine o da yön eylem araştırmasının bir konusu ama algoritmik çözüm işte özellikle de greedy algoritmik çözümler açısından gezgin satıcı problemi traveling salesman işte bir şey var harita var haritada iller ya da işte ilçeler var ya da işte müşteriler var diyelim.
+
+371
+00:34:33,900 --> 00:34:52,900
+Bunlar birbirine bağlı hangisinden hangisine gidebildiğimiz ya da gidemediğimizi biliyoruz. Bizim de bir satıcımız var işte bu satıcı hangi sırayla nasıl gezsin ki en az yorulmayı ya da işte en az eforu sarf ederek bütün şeyleri düğümleri ziyaret edebilsin yani bütün müşterileri gezebilsin gibi.
+
+372
+00:34:52,900 --> 00:35:14,900
+İkinci bir problem napsak problem olarak biliniyor sırt çantası problemi diyoruz buna Türkçe de bu nedir işte elimizde kutular var ya da işte paketler var diyelim her bir paketin ağırlığı ve değeri var hani şey gibi işte mesela bir tane yüzük ufacık paketi var ama işte ağırlığı şey değeri çok fazla.
+
+373
+00:35:14,900 --> 00:35:34,900
+Onun yanında işte ne bileyim 5 kilo un paketi var 5 kilo ama değeri işte ne bileyim 20 lira gibi işte ben elimde verilen kutulara ve değerlerine göre yani paketlere ve değerlerine göre en yüksek kârı elde edecek şekilde şeyi çantayı nasıl doldurmam gerekir.
+
+374
+00:35:34,900 --> 00:36:02,900
+Mesela bu da yine greedy yaklaşımlarla optimale yakın çözülebilir tabi mesela napsak problem şeylere yine girmedik algoritma analizi tarafına ama polinom zamanda çözülen çözülemeyen problemlere en güzel örneklerden biridir bu problemin tabi iki tane modi şey var versiyonu var tam problemin gerçek versiyonuna bakarsanız mp complete dediğimiz tiptedir ama işte bazı kısıtları kolaylaştırdığınızda np hard hale döner.
+
+375
+00:36:02,900 --> 00:36:26,900
+Mp hard da işte mesela greedy yaklaşımla en azından polinom zamanda çözebilirsiniz optimal olmasa bile optimale yakın bir çözümü bulabilirsiniz en azından polinom zamanda bu detayları şimdilik çok fazla takılmayın tabi ki ve bunun gibi pek çok dediğim gibi başka optimizasyon problemlerinde de greedy yöntemler güzel çözümler ve hızlı sonuçlar üretebiliyor.
+
+376
+00:36:26,900 --> 00:36:56,900
+Şimdi ilk işte greedy yöntemlerden çözdüğü pro iyi çözdüğü optimal çözdüğü problemlerden bir tanesi bozuk para üstü verme problemi şimdi elimizde bizim Türkiye'de hangi bozuk paralar var 1 lira var işte 100 kuruş diyelim ona 50 kuruş 25 kuruş 10 kuruş 5 kuruş bir de 1 kuruş var bir kuruş hani var ama yok diyorsunuz ama işte en azından burada teori de 1 kuruşun da olduğunu söylememiz gerekecek şimdi işte ben alışveriş yaptım
+
+377
+00:36:56,900 --> 00:37:26,900
+52 kuruş tuttu 1 lira verdim kasiyer bana 48 kuruş para üstü verecek 48 kuruş para üstünü acaba bana kasiyer nasıl versin mümkün olan en az sayıda şeyi bana vermesi gerekiyor ki 48 tane 1 kuruş da verebilir tabi ki ama çangır şungur gezeriz ortalıkta peki buradaki greedy yaklaşım ne olabilir yani nasıl bir çözüm getirebiliriz benim mesela ilk aklıma gelen ilk adımdayım zaten kasiyerler de genellikle bunu şakır şakır yapar
+
+378
+00:37:26,900 --> 00:37:56,900
+işte markete gittiğinizde eminim ki görüyorsunuz dur bu kasanın altında hepsi bozuk paraların hepsi başka gözlerde durur ya şimdi ben 48 kuruş vermeye çalışıyorum benim ilk hamlemde yapmam gereken şey aslında şudur elimdeki paraların yani elimdeki bozuklukların ya da işte mtl'ların diyelim mümkün olan en büyük değere sahip olanı bir kere vereyim ki amacım burada aslında şunu yapmak elimdeki bakiyeyi mesela 48'e
+
+379
+00:37:56,900 --> 00:38:04,099
+mümkün olduğunca azaltmaya çalışıyorum ilk hamlede şimdi ben ne demiştim her adımda mümkün olan
+
+380
+00:38:04,099 --> 00:38:09,699
+en iyi hamleyi yapmaya çalış burada mümkün olan en iyi hamle ne verebileceğim kalan miktarı
+
+381
+00:38:09,699 --> 00:38:15,059
+mümkün olduğunca azaltmak burada neyle azaltabilirim 50 kuruşla azaltamam çünkü 50
+
+382
+00:38:15,059 --> 00:38:22,500
+büyüktür 48 yani kasa cepten vermiş olur tabii günümüz gerçek Türkiye'sinde düşündüğünüzde
+
+383
+00:38:22,500 --> 00:38:29,940
+48 kuruş para üstünü büyük bir ihtimalle 50 kuruş vereceklerdir ama hani tam şey Amerika usulü
+
+384
+00:38:29,940 --> 00:38:36,820
+sentlerin bile önemli olduğu bir ortamı düşünelim ne yapacak eldekilerin verebileceğim mümkün olan
+
+385
+00:38:36,820 --> 00:38:42,980
+en büyük kupuru verecek yani 25 kuruşu verecek bu ne demek oluyor aslında ben problemin boyutunu
+
+386
+00:38:42,980 --> 00:38:49,619
+48'den 23'e düşürdüm tek bir hamleyle neden o anda yapabileceğim en iyi hamle oydu en büyük para
+
+387
+00:38:49,699 --> 00:38:56,500
+elimde şimdi daha ne kadar para üstü vermem lazım 23 kuruş daha vermem lazım peki 23 kuruşa
+
+388
+00:38:56,500 --> 00:39:02,420
+acaba nasıl vereyim 25 kuruş yine veremiyorum Allah kahretmesin o zaman gideceğim bir tane 10
+
+389
+00:39:02,420 --> 00:39:09,619
+kuruş vereceğim verdim bir tane 10 kuruş böylece hala vermem gereken para miktarını azaltabildiğim
+
+390
+00:39:09,619 --> 00:39:15,619
+kadar elimdekilerin en iyisi kadar azalttım yani 13 kuruşa azalttım şimdi bundan sonra
+
+391
+00:39:16,099 --> 00:39:23,059
+5 kuruş verebilirim ama hala 10 kuruş verirsem çok daha fazla azaltmış olacağım 13 kuruş olduğu
+
+392
+00:39:23,059 --> 00:39:30,340
+için 10 kuruş daha veririm yani iki tane 10 kuruş vermiş oldum ve hala vermem gereken 3 kuruşum kalır
+
+393
+00:39:30,340 --> 00:39:36,340
+3 kuruşu da beşlikle veremeyeceğim için başka da şansım olmadığına göre 1 1 1 şeklinde 3 tane de
+
+394
+00:39:36,340 --> 00:39:44,980
+1 kuruş vermem gerekir yani toplamda 6 tane bozuk para vererek buradaki 48 kuruş para
+
+395
+00:39:44,980 --> 00:39:51,940
+onu verebileceğim en az parayla en az coin yani işte madeni parayla bozuk parayla
+
+396
+00:39:51,940 --> 00:40:00,260
+vermiş oluyorum nedir buradaki greedy çözüm ya da greedy yaklaşım her adımda kalan miktarı
+
+397
+00:40:00,260 --> 00:40:05,139
+en az yapacak olan bozuk para miktarını seç ve yani elindeki şey parçalardan birini
+
+398
+00:40:05,139 --> 00:40:11,619
+seç ve onu kullan evet Mehmet Ali hocam burada elimizde 24 kuruşluk paralarımız olsaydı
+
+399
+00:40:11,699 --> 00:40:22,340
+2 tane 24 kuruş verdin 25 daha çok düşüreceği için doğru evet 24 pardon 25 kuruş hala var
+
+400
+00:40:22,340 --> 00:40:28,500
+değil mi evet 25 kuruşumuz var ama o zaman evet greedy yaklaşımda maalesef önce 25 kuruşu
+
+401
+00:40:28,500 --> 00:40:38,579
+verecektin ondan sonra geriye şey kalacaktı ne kalacaktı ne kalacaktı yani bu şimdiki gibi
+
+402
+00:40:39,139 --> 00:40:48,420
+25-24 ve pardon 25 verdiği için evet aynen bu şekilde devam edecekti şimdi geri dönse
+
+403
+00:40:48,420 --> 00:40:54,980
+geri dönebilme şansımız olsaydı mesela şunu söyleyebilirdik ben en yüksek kupuru
+
+404
+00:40:54,980 --> 00:40:59,300
+vermeyeyim de ikinciyi verseydim sonuca daha çabuk varabiliyordum işte dediğin gibi
+
+405
+00:40:59,300 --> 00:41:05,380
+mesela 24-24 verseydim iki tane 48 kuruşu şak diye iki parayla verebilecektim ama
+
+406
+00:41:05,380 --> 00:41:14,159
+bu yöntemde 25 de başladığın için evet onu kaçırıyorsun o şansını tamam ama tabii bu
+
+407
+00:41:14,159 --> 00:41:20,159
+şey niye çalışıyor burada onu da söyleyelim bizim paraların 25-15 ve 1 şeklinde ya da
+
+408
+00:41:20,159 --> 00:41:27,760
+bütün hani dünyadaki şeyler de öyledir para nedir bozuk paralar mesela Avrupa'da şey de
+
+409
+00:41:28,000 --> 00:41:38,400
+Amerika'da da var tabii hani 2 cent ya da 2 euro'nun şeyi ne ya
+
+410
+00:41:38,400 --> 00:41:46,800
+o da sanat diyorlar herhalde hocam nasıl euro cent euro cent mi deniyor onu mesela 2 euro
+
+411
+00:41:46,800 --> 00:41:51,760
+cent de var o zaman ne yapardım ben şurada 3 kuruştayken bir tane ikilik verirdim bir tane de
+
+412
+00:41:52,320 --> 00:42:01,199
+bir tane daha yırtmış olurdum yani bu paraların aslında 1-5-10-25 şeklinde katlanması nedeniyle
+
+413
+00:42:01,199 --> 00:42:07,840
+ben burada optimal çözümü de oluşturabiliyorum dediğiniz gibi arada 24 lükler ya da işte başka
+
+414
+00:42:07,840 --> 00:42:19,150
+şeyler olsaydı belki başka türlü davranmam gerekecekti Evet bir başka yöntem bunu aslında
+
+415
+00:42:19,150 --> 00:42:23,309
+uzun uzun anlatmıştım o yüzden tekrar şey yapmayacağım ama hızlıca en azından
+
+416
+00:42:23,309 --> 00:42:29,230
+hızlıca bir şekilde şurada üzerinden geçmek istedim hufman kodlama hatırlarsanız biz bunu bir
+
+417
+00:42:29,230 --> 00:42:37,150
+işte Max Priority Q pardon neydi Priority Q'lar konusunda pardon Max Hip Min Hip diyecektim
+
+418
+00:42:37,150 --> 00:42:44,110
+Priority Q konusunda bunu işlemiştik amacımız neydi elimizde karakterler var ve bunların
+
+419
+00:42:44,110 --> 00:42:49,389
+işte elimizdeki metinde geçme sıklıklarını biliyoruz bunlara frekans dedik işte toplamda
+
+420
+00:42:49,389 --> 00:42:54,590
+4 harf bir de boşluk olsun 5 karakterimiz varsa bunların da frekansları bu şekildeymiş
+
+421
+00:42:54,590 --> 00:43:01,710
+toplamı bir yapıyor gördüğünüz gibi şimdi ben burada en sık geçen şey nedir A karakteri çok
+
+422
+00:43:01,710 --> 00:43:08,349
+sık geçiyor mümkün olduğunca onu kısa bir kodla kodlarsam kar elde edeceğim işte B az
+
+423
+00:43:08,349 --> 00:43:14,949
+geçiyor 0.1 frekansa sahip boşlukta 0.15 bunları biraz daha uzun kodlar kullanarak
+
+424
+00:43:14,949 --> 00:43:21,230
+yapabilirim peki o zaman ne yapacağız aslında ilk olarak işte şeyle başlıyoruz en elimizdeki
+
+425
+00:43:21,230 --> 00:43:26,630
+az geçen iki taneyi birleştiriyoruz 0.1 ve 0.15 birleştiriyoruz boşluk ve B karakterlerini
+
+426
+00:43:26,630 --> 00:43:34,070
+0.25 diye bir tane ara node üretiyoruz sonra ne geliyor 0.2 0.2 0.25 0.2 ile 0.2
+
+427
+00:43:34,070 --> 00:43:39,750
+birleştiriyoruz 0.4 lük bir ara node üretiyoruz ne oldu elimizde şimdi ne var
+
+428
+00:43:39,750 --> 00:43:48,670
+0.25 0.35 0.4 var en ufak iki tanesi 25 ve 35 olduğu için bunları birleştirip bir ara düğümde
+
+429
+00:43:48,670 --> 00:43:56,150
+bağlıyoruz elimizde 0.4 ve 0.6 kaldı bunları da birleştiriyoruz ve bir diye hani frekans
+
+430
+00:43:56,150 --> 00:44:00,989
+toplamı zaten bir olacak burada bir düğümde birleştiriyoruz nihayetinde benim elimde şöyle
+
+431
+00:44:00,989 --> 00:44:10,469
+bir ağaç oluşmuş oluyor bu ağaçta da işte mesela sıfır sıfır şeklinde gidersek C karakterini
+
+432
+00:44:10,469 --> 00:44:16,670
+yani sıfır sıfır bitlerini kullanırsak C karakterini kodlamış oluyoruz 0.1 ile D'yi kodlamış oluyoruz
+
+433
+00:44:16,670 --> 00:44:22,230
+A'yı da birbiriyle kodlamış oluyoruz demek ki ben en yüksek frekans buydu ama
+
+434
+00:44:22,230 --> 00:44:29,150
+C ve D'de bir şekilde bu dağılımdan dolayı ikişer bitle kodlanmış oldular B ve boşlukta
+
+435
+00:44:29,150 --> 00:44:37,190
+üçer bit uzunlukta kodlanmış oldu işte 1 0 0 ve 1 0 1 ile de B ve boşluğu kodlamış olduk
+
+436
+00:44:37,190 --> 00:44:43,190
+hesabını yaptığınızda karakter başına frekanslarıyla da işte o ağırlıkta ortalamasını aldığınızda
+
+437
+00:44:43,190 --> 00:44:49,949
+karakter başına ortalama 2.25 bit harcadığınızı hesap diyebilirsiniz sabit uzunlukta kodlasaydık
+
+438
+00:44:49,949 --> 00:44:59,429
+bunu toplamda işte 5 karakter olduğuna göre 4 bit pardon 2 bit yetmeyecekti 202.4'dür 3 bit kullanmak
+
+439
+00:44:59,429 --> 00:45:06,630
+zorundayım 203.8 tane karaktere kadar kodlayabilirim demek ki sabit uzunlukta kodlasaydım 3 bit
+
+440
+00:45:06,630 --> 00:45:12,110
+harcayacaktım ama ben burada ortalama 2.25 bit harcıyorum sıkıştırma oranım nedir 3 eksi
+
+441
+00:45:12,110 --> 00:45:22,110
+25 bölü 3 çarpı yüzde ile aldığınızda da 0.25 çarpı yüzden dolayı da şey 25 yani yüzde 25
+
+442
+00:45:22,110 --> 00:45:31,190
+sıkıştırmış oldunuz sadece buradaki açgözlü yaklaşımla o andaki en ufak olanları birleştir o
+
+443
+00:45:31,190 --> 00:45:37,070
+andaki en ufak olanları birleştir şeklinde bir ağaç oluşturmaya gayret ederek burada da yine
+
+444
+00:45:37,070 --> 00:45:43,590
+aslında bir çözüm oluşturmuş oluyorsunuz özellikle sabit uzunluklu kodlama ile karşılaştırdığınızda
+
+445
+00:45:43,590 --> 00:45:49,349
+yaptığımız şey dediğim gibi burada da her adımda en düşük frekansları bul ve bunları birleştir
+
+446
+00:45:49,349 --> 00:45:55,829
+yani topla yeni bir düğüm olarak ağaca ekle şeklindeki bir yaklaşım ben burada mesela daha
+
+447
+00:45:55,829 --> 00:46:00,630
+iyi bir sıkıştırma elde edemez miydim evet edebilirdim mesela işte bu anın frekansı
+
+448
+00:46:00,630 --> 00:46:06,110
+yüksek ya belki ben bu ayı tek bir bitle kodlasaydım daha fazla kar elde edecektim
+
+449
+00:46:06,110 --> 00:46:12,230
+ben hesabını yapmadım ağırlıklı ortalamasıyla ama hani olabilir de diyelim işte bu gibi şeyler
+
+450
+00:46:12,230 --> 00:46:16,750
+açgözlü yaklaşımlarda tabii ki yok ama burada biliyoruz ki bir optimal bir çözüm
+
+451
+00:46:16,750 --> 00:46:21,909
+üretiyor en azından sabit uzunlukta ki kodlama ile karşılaştırdığımızda bu yüzden de
+
+452
+00:46:21,909 --> 00:46:27,429
+işte hufmanın tabi daha yüksek sıkıştırmasına sahip başka algoritmik yaklaşımlarda mevcut ama
+
+453
+00:46:27,429 --> 00:46:36,650
+açgözlü olarak optimal bir çözüm üretiyor buradaki problemi Evet şimdi böl ve yönete
+
+454
+00:46:36,690 --> 00:46:42,690
+geçeceğiz iki açgözlü yöntemleri az çok tanıdığımızı düşünüyorum zaten hufmanda da bunu
+
+455
+00:46:42,690 --> 00:46:46,969
+görmüştük ama hani bozuk para problemiyle de bir basit bir örnek olsun diye söyledim
+
+456
+00:46:46,969 --> 00:46:53,650
+her bir adımda olası hamlelerin en iyisini yaptığınızda açgözlü bir yöntem ya da işte
+
+457
+00:46:53,650 --> 00:46:59,250
+hırslı bir yöntem gerçekleştirmiş olursunuz bir problemden daha bahsedeyim belki fikri olan
+
+458
+00:46:59,250 --> 00:47:04,250
+ya da nasıl bir çözüm yaklaşımı getirebilirim diye düşünen olabilir şimdi elimizde bir tane
+
+459
+00:47:04,250 --> 00:47:11,289
+satranç tahtası olsun ama satranç tahtası biraz büyük olsun mesela yüzeyüz normalde
+
+460
+00:47:11,289 --> 00:47:19,090
+sekize sekizdir ya nedense bu arkadaş yüzeyüzlük bir şey yapmış satranç tahtası yapmış ve işte
+
+461
+00:47:19,090 --> 00:47:25,010
+sıfıra sıfır ya da bire bir ya da a bir koordinatı ne derseniz deyin bir köşede bir tane
+
+462
+00:47:25,010 --> 00:47:34,539
+at var bu atı çapraz köşeye taşımak istiyorsunuz nedir amacınız mümkün olan en az
+
+463
+00:47:34,579 --> 00:47:40,219
+neyle doğal olarak çapraz köşeye gitmek istiyorsunuz yani şöyle şey yapayım mı
+
+464
+00:47:40,219 --> 00:48:04,619
+bir dakika şuradan whiteboard açalım tamam şöyle bir daha ufak çizeyim de tamam sonra acaba
+
+465
+00:48:04,619 --> 00:48:10,539
+burada bunları doldurabiliyor muyuz dolduramıyoruz o zaman şöyle yapalım basitçe yapmaya
+
+466
+00:48:10,539 --> 00:48:26,119
+geçeyim idare edin olduğu kadar işte şöyle şöyle karelerimiz var tamam böyle böyle gidiyor
+
+467
+00:48:26,119 --> 00:48:34,880
+checkerboard bunu güzel yapamadık evet çok şık oldu gerçekten de iki tane andu yapayım
+
+468
+00:48:34,880 --> 00:48:44,880
+şunları beğenmedim şöyle şöyle gidiyor tamam böyle bir şeyiniz var tamam böyle şurada da
+
+469
+00:48:47,079 --> 00:48:56,650
+şöyle kırmızı ile çizelim mesela bir tane at var benzedimi bilmiyorum idare edin
+
+470
+00:48:56,650 --> 00:49:04,489
+kuyruk şey kulak da yapalım ata tamam amacım ne bu atı şuraya almak istiyorum
+
+471
+00:49:04,489 --> 00:49:28,079
+bu buraya getirmek istiyorum nasıl çözersiniz var mı fikri olan ana kimsede fikri kalmamış
+
+472
+00:49:30,800 --> 00:49:38,000
+peki yani hocam ben araya biraz şey gibi girmiş olacağım ama gir zaten le şeklinde
+
+473
+00:49:38,000 --> 00:49:42,800
+gidiyor ya at onu unutmayın yani at buradan nereye gidebilir ya 1 2 3 ya şuraya gidebilir
+
+474
+00:49:42,800 --> 00:49:49,119
+ya da 1 2 3 şuraya gidebilir değil mi 33 ile 50 hamle arası bir şey yapıyor zaten en
+
+475
+00:49:49,119 --> 00:49:54,159
+yukarıya ulaşmak veya en sağa ulaşmak için şöyle 100 çarpı yüzlük diyelim tamam yani
+
+476
+00:49:54,159 --> 00:50:01,159
+33 hamle veya işte 33 ile 50 arası hamle yapacağız en yukarıya ve en sağa ulaşmak için
+
+477
+00:50:01,159 --> 00:50:08,079
+oradaki aradaki şeyi hesaplamak lazım bu sefer ne kadar sağ ne kadar yukarı ve ikisini
+
+478
+00:50:08,079 --> 00:50:11,800
+kaç adımda gidersiniz diye sormuyorum nasıl gidersiniz nasıl bir çözüm yöntemi
+
+479
+00:50:11,800 --> 00:50:16,559
+algoritmanız ne olur evet işte onun en kestirme yolu için şeyi hesaplanabilir
+
+480
+00:50:16,559 --> 00:50:20,400
+önce en küçük bölüm mesela ona gidene kadar ne kadar hesaplıyoruz gibi
+
+481
+00:50:21,119 --> 00:50:32,679
+hıh hocam o opsiyonları yazıp greedy şeklinde gidebilir miyiz mesela 3 sağa 1 aşağı 1
+
+482
+00:50:32,679 --> 00:50:42,280
+opsiyon hıhı 100 sağa 100 aşağı iniyeceğiz hıhı bir aşağı bir opsiyon işte 3 sağa bir
+
+483
+00:50:42,280 --> 00:50:49,920
+opsiyon anlamadım ses biraz gitti 3 aşağı 3 aşağı 1 sağa 1 opsiyon yani bütün
+
+484
+00:50:49,920 --> 00:50:56,880
+L şekillerine yapabileceğimiz bütün L şekillerini yazıp greedy şeklinde tutabiliriz gibi düşündüm
+
+485
+00:50:56,880 --> 00:51:03,599
+bir yerde tutacaksın ona onluk falan değil yüze yüzlük tahta [öğrenci] buraya yazdım
+
+486
+00:51:03,599 --> 00:51:10,320
+kocaman elimizde kocaman bir tahta var müteahhit'e yaptırdık pardon müteahhit'e tahta
+
+487
+00:51:10,320 --> 00:51:15,599
+yaptırılmaz marangoz'a yaptırdık hocam direk 1 sağa 1 aşağı 1 sağa 1 aşağı
+
+488
+00:51:15,599 --> 00:51:22,920
+şeklinde gitsek çapraz çapraz ilerlemiş oluruz tamam peki yani buradaki şey çözüm yaklaşımınız
+
+489
+00:51:22,920 --> 00:51:27,880
+ne olur böyle zaten leğe gidecek at başka türlü hareket edemiyor ya ama yapabileceği 2
+
+490
+00:51:27,880 --> 00:51:36,050
+leğe var yani ya buraya gidecek ya buraya gidecek sınırlara gelmedikçe kontrol yaparım
+
+491
+00:51:36,050 --> 00:51:45,690
+gelirse diğer durumu çalıştırırım 1 sağa 1 aşağı şeklinde varana kadar devam ettiririm
+
+492
+00:51:45,889 --> 00:51:52,650
+ya hep aynı leğe yaparım diyorsun öyle mi mesela 2 aşağı 1 sağ şeklindekini yaparım
+
+493
+00:51:53,650 --> 00:51:58,449
+evet bir örüntüde devam ettiririm ama arada bir herhalde öbüründen de yapman
+
+494
+00:51:58,449 --> 00:52:04,889
+gerekecek ki 1 sağa 1 aşağı yapınca zaten çaprazda kaç ilerlemiş oluyor 4 ilerlemiş oluyor
+
+495
+00:52:04,889 --> 00:52:11,289
+4 4 4 habire çaprazla ilerler peki hep bu leğe yaptığımızda varabilecek miyiz
+
+496
+00:52:11,289 --> 00:52:15,650
+buraya geldim şuraya geldim şuraya geldim büyük bir ihtimali şurada bir yerde kalacağım çünkü
+
+497
+00:52:15,650 --> 00:52:19,170
+bu yüze yüzdük burada 100 adım ilerlediğinde burada 50 adım ilerleyebilmiş olacaksın
+
+498
+00:52:19,170 --> 00:52:27,250
+yapacağım bir tane sağ bir tane sol yani bir sağdan bir aşağıdan hocam güzel peki
+
+499
+00:52:27,250 --> 00:52:32,409
+bak güzel bir şey söylediniz bir ondan bir ondan yaparım hocam dediniz gibi anlıyorum
+
+500
+00:52:32,409 --> 00:52:39,650
+değil mi ya da işte 3 10'dan 3 10'dan yaparım gibi tamam demek ki aslında bizim
+
+501
+00:52:39,690 --> 00:52:46,610
+burada çözüm yaklaşımımızda şöyle bir düşünceye sahip olmamız lazım her adımda
+
+502
+00:52:46,610 --> 00:52:53,570
+ben bir hamle yapıyorum ya yaptığım hamle o andaki bulunduğum koordinattan beni hedefime
+
+503
+00:52:53,570 --> 00:53:01,769
+mümkün olduğunca en yakına getirmesi lazım tamam olay bu greedy çözüm bakın ben buradayım
+
+504
+00:53:01,769 --> 00:53:08,369
+100 bu 100 yani x koordinatında 100 y koordinatında 100 uzaklıktayım bunu da
+
+505
+00:53:08,409 --> 00:53:12,730
+ben bunu da yapsam ilk hamlede büyük bir ihtimalle zaten aynı distans da olacağım şuraya
+
+506
+00:53:12,730 --> 00:53:21,210
+şu işte öklit distansını ölçün şöyle tamam bununkini de ölçün şöyle büyük bir ihtimalle
+
+507
+00:53:21,210 --> 00:53:26,889
+aynı çıkacaktır ama bir sonraki ne geçtiğinizde mesela şuraya geldiğimizi düşünelim
+
+508
+00:53:26,889 --> 00:53:32,489
+tamam mı baktığınızda mesela ben şuraya gidersem ile işte şuraya gidersem
+
+509
+00:53:32,489 --> 00:53:37,570
+arasında öklitlerin de fark çıkmaya başlayacak yani benim aslında şu hamleyi
+
+510
+00:53:37,610 --> 00:53:43,409
+bu taraftansa bu hamleyi yapmam dediğiniz gibi bir buleyi yapıp bir buleyi yapmam beceremedim
+
+511
+00:53:43,409 --> 00:53:55,170
+anladın siz şunu şey iki yana bir aşağı şöyle çizelim güzel olmadı şöyle daha iyi oldu
+
+512
+00:53:55,170 --> 00:54:03,289
+değil mi tamam yani ben şu noktadayken baktım distansa şuraya erişmeye çalışıyorum bu da
+
+513
+00:54:03,289 --> 00:54:08,650
+neyse bunu yaptım ilk geleni yaptım ama bu noktaya geldiğimde artık bir daha bunu
+
+514
+00:54:08,650 --> 00:54:13,210
+yapmakla şunu yapmak arasında distans açısından fark oluşacak yani bunu yapmam daha kârlı
+
+515
+00:54:13,210 --> 00:54:17,489
+o aşamada o yüzden bunu yapacağım sonra bunu yapacağım sonra bunu yapacağım
+
+516
+00:54:18,489 --> 00:54:25,289
+gibi büyük bir ihtimalle gidecektir her adımda ben hedefe hangisini yaparsam daha
+
+517
+00:54:25,289 --> 00:54:32,929
+çok yaklaşırım diye sorarım ve her adımda beni hangisi hedefime daha çok yaklaştırıyorsa
+
+518
+00:54:33,130 --> 00:54:40,690
+hamleyi yaparım sonuçta ne yapmış oldum mümkün olan en az hamleyle köşeye doğru kendime
+
+519
+00:54:40,690 --> 00:54:47,849
+taşımış oldum çözüm yaklaşımım ne her adımda mümkün olan en iyi hamleyi yap mümkün olan
+
+520
+00:54:47,849 --> 00:54:53,170
+en iyi hamlenin formülü ne burada hedefe beni en çok yaklaştıran hamle o anda benim
+
+521
+00:54:53,170 --> 00:54:57,969
+için en iyi hamledir işte bu şekilde de optimal bir çözüm geliştirebilirsiniz
+
+522
+00:54:58,010 --> 00:55:03,289
+gridi olarak mesela ben bundan güzel sınav sorusu olurdu harcadık soruyu hocam peki
+
+523
+00:55:03,289 --> 00:55:10,369
+99'a 99 olsaydı mesela ya da 101'e 101 mesela ya gidebildiğini bir kere bili olmamız
+
+524
+00:55:10,369 --> 00:55:15,210
+lazım şimdi hani çözümü olmayan problemi sormamamız lazım değil mi orada işte
+
+525
+00:55:15,210 --> 00:55:23,730
+atta normalde tahta yeterince bir yükse farklı adımlar yaparak geriye gelebilecek
+
+526
+00:55:23,730 --> 00:55:31,170
+normalde ayarlarız olması gerekiyor normal satrançta birkaç hamle geri yapıp
+
+527
+00:55:31,170 --> 00:55:36,690
+tekrar ileri yaparak ulaşabilmesi gerekir tamam ama gridi yöntemde biliyorsun hani geri
+
+528
+00:55:36,690 --> 00:55:43,010
+gidemiyoruz ya anladım yani o yüzden problemin uygun olması lazım zaten çözemeyeceğim
+
+529
+00:55:43,010 --> 00:55:49,260
+probleme doğal olarak o yaklaşımı şey yapamaz büyük ihtimalle gider ben şu anda
+
+530
+00:55:49,260 --> 00:55:55,460
+oturup onun şeyini yapmayacağım ama nihayetinde gridiyle de aslında çözülebilir gibi
+
+531
+00:55:55,460 --> 00:55:59,860
+geliyor bana oradaki yöntem oradaki yaklaşım orada da gene uzunluklara
+
+532
+00:55:59,860 --> 00:56:05,380
+baksak olur mu hocam en az geri gitmeye bakabiliriz orada da yapabiliriz ama o
+
+533
+00:56:05,380 --> 00:56:08,940
+zaman şey yapman lazım bir hafıza falan tutman lazım o da gridinin doğasına
+
+534
+00:56:08,940 --> 00:56:12,699
+ters yani ben hiçbir şey tutmuyorum o anda ki eldekilerin en iyisini yapıyorum
+
+535
+00:56:12,699 --> 00:56:28,250
+tamam tamam şimdi etkin sen bir soru soracaktın geçen dersten sor bakalım ondan sonra da
+
+536
+00:56:28,250 --> 00:56:59,949
+bir ara verelim etkin ters mi yazmışız ters yazmışızdır emler enler karışır fat finger
+
+537
+00:56:59,949 --> 00:57:10,670
+ml klavye de yan yana ters mi yazmışım onları kontrol ederiz best case de en bölü
+
+538
+00:57:10,670 --> 00:57:16,389
+en dedik tekstin uzunluğuna en mi demiştik zaten en bölü en olsa zaten çok saçma bir
+
+539
+00:57:16,389 --> 00:57:23,989
+şey çıkıyor ki yani tamam evet tamam o şey yapmışız ters yapmışız demek ki mantıklı
+
+540
+00:57:23,989 --> 00:57:29,230
+olanı söylersiniz emmülemdir o evet xy düzleminde düşünürsek
+
+541
+00:57:30,630 --> 00:57:39,820
+geometrik uzaklık hesaplayarak yapılsa daha uzun mu sürer ne demek bu aynı olur
+
+542
+00:57:39,900 --> 00:57:45,099
+yok ki öykü diyen uzaklık mesafesini hesaplayıp diyor yani ya ben olsam
+
+543
+00:57:45,099 --> 00:57:50,059
+menhatınla hesaplarım mesela daha hızlı olur yani bu aslında hocam problem çok basitti
+
+544
+00:57:50,059 --> 00:57:55,699
+de biz ben kendim için söyleyeyim siz hep zor bir şey soruyorsunuz diye yani çok zor
+
+545
+00:57:55,699 --> 00:58:00,300
+bir şey bekliyorum ben ama aslında çok basit ödev de öyleymiş ödev de dersin başında
+
+546
+00:58:00,300 --> 00:58:05,340
+şimdi dediniz ya tekstin yarısını al direk yarısından hesapla yani bu sınavda
+
+547
+00:58:05,420 --> 00:58:12,059
+gelse ya işte şey panik oluyorsunuz bence eyvah eyvah iki saatte nasıl yetişecek modunda
+
+548
+00:58:12,059 --> 00:58:18,860
+aslında şey değil hani biraz düşünseniz rahatlatacak aslında sizi ama Lola'nın dediği
+
+549
+00:58:18,860 --> 00:58:23,900
+gibi bir saat geçtikten sonra zaten artık tamamen şartımız hayır doğru haklısınız
+
+550
+00:58:24,139 --> 00:58:34,380
+stres yöntemi kolay değildi hocam ödeyip yani öyle git kodda buldum çok benzerini seviyesi
+
+551
+00:58:34,380 --> 00:58:43,099
+1044 yani 1044. soru harp seviyesinin neydi var mı git kodda benzeri var Evet
+
+552
+00:58:43,099 --> 00:58:50,139
+ha iyi ama o sub sekuns olanı vardı onun orada diye hatırlıyorum şimdi şey
+
+553
+00:58:50,139 --> 00:58:55,820
+benim omcular özellikle bu genel çalışanlar substring aramıyor normalde sub sekuns arıyorlar
+
+554
+00:58:55,820 --> 00:59:04,380
+o biraz farklı tam olarak aynı şey değil yani hani birbirine yakın olan anlamlı
+
+555
+00:59:04,380 --> 00:59:09,019
+proteinleri falanları filanları arıyorlar hani illa böyle bire bir exact match aramıyorlar
+
+556
+00:59:09,019 --> 00:59:16,539
+o yüzden orada bir farklılık olması lazım benzer de azından daplik sub
+
+557
+00:59:16,539 --> 00:59:23,579
+substring diyordu ve bununla ilgili hani birçok kişi çalışma yapıyor mesela bilgisayar
+
+558
+00:59:23,579 --> 00:59:28,619
+kaç yıllık bilgisayar mühendisleri olanlar bile hani oradaki time limit oluyor ya onlar
+
+559
+00:59:28,619 --> 00:59:37,260
+geçemiyorlar ama sizin elinizde hazır sörç metotları bilmem nelerin olduğunu düşünüyordum
+
+560
+00:59:37,260 --> 00:59:43,179
+ben hani bunları zaten yazmışsınızdır onları direkt kullanacaksınız diye ben düşünmüştüm
+
+561
+00:59:43,179 --> 00:59:53,260
+ben karprofen onun adı neydi onu yapmaya çalıştım ama peki o zaman şimdi bir ara verelim
+
+562
+00:59:53,260 --> 01:00:05,869
+arkadaşlar saatte 6 oldu 6.10 geçe Bahattin yazıyor musun 18.10'da devam divaiden konkurla
+
+563
+01:00:05,869 --> 01:15:37,329
+hadi görüşürüz evet kusura bakmayın arkadaşlar 3-4 dakika geciktim aslında buradaydım da kod
+
+564
+01:15:37,489 --> 01:15:50,369
+biraz sonra paylaşacağım kodu şöyle yaparsak tamam evet hazır Evet şimdi geldik başka bir
+
+565
+01:15:50,369 --> 01:15:56,289
+algoritmik çözüm yaklaşımı olan böl ve yönet ya da gerçek adıyla hani ingilizce'deki karşılığıyla
+
+566
+01:15:56,289 --> 01:16:05,170
+Divide and Konkur algoritmik çözüm yaklaşımına şimdiye kadar ne gördük brute force gördük
+
+567
+01:16:05,170 --> 01:16:11,569
+hatırlarsınız bu ne yapıyordu brute force başta dümdüz ilerle hep aynı şeyi yap ve
+
+568
+01:16:11,569 --> 01:16:17,890
+paldır küldür çözüme doğru ilerle yani hep böyle körlemesine diyeyim hani hiçbir şeyi
+
+569
+01:16:17,890 --> 01:16:24,369
+sorgulamadan dümdüz bir şekilde ileri doğru ilerle mesela bir üs alma probleminiz var
+
+570
+01:16:24,369 --> 01:16:30,210
+diyelim a üzeri en ne yaparsınız en kere a'yı çarparsınız çarp çarp çarp çarp çarp
+
+571
+01:16:30,210 --> 01:16:36,210
+a üzerini bulmuş olursunuz selection sort ya da bubble sort hatırlarsınız Bunlar da yine
+
+572
+01:16:36,210 --> 01:16:41,649
+iki döngü iç içe böyle yapıp baştan sona doğru teker teker baka baka devam ediyordu ya da
+
+573
+01:16:41,649 --> 01:16:48,529
+işte geçen haftaki brute force substring sörç tek tek karşılaştır birinci karakter tutarsa
+
+574
+01:16:48,529 --> 01:16:54,210
+ikinciye bak tutarsa üçüncüye bak tutmazsa bir kaydır bir sonrakinden tekrar bakmaya
+
+575
+01:16:54,210 --> 01:17:02,529
+bir daha şeklinde bir arama yöntemiydi ikincisi açgözlüler vardı zaten hatta bir saat
+
+576
+01:17:02,529 --> 01:17:09,170
+önce yani geçen saatimizde detaylarıyla inceledik her adımda o an için o adım için
+
+577
+01:17:09,170 --> 01:17:14,609
+en iyi olan lokal optimum çözüm neyse onu uygula işte Hoffman encoding mesela bunların
+
+578
+01:17:14,609 --> 01:17:22,689
+örneklerinden bir tanesiydi bir tanesi daha bahsettik biraz ama çok detaylı olarak
+
+579
+01:17:22,689 --> 01:17:28,130
+ilerledik hani bu bazı kaynaklarda belli bir algoritmik çözüm yaklaşımı olarak geçerken
+
+580
+01:17:28,130 --> 01:17:34,130
+bazılarında geçmiyor bu da decrease and conquer decrease and conquer nedir aslında
+
+581
+01:17:34,130 --> 01:17:40,369
+divide and conquer'a yaklaşıyor biraz amacımız elimizde bir problem var ama bu problemi
+
+582
+01:17:40,369 --> 01:17:45,729
+küçültelim küçültüp çözelim ondan sonra da bu bunu son çözüme doğru ilerletelim
+
+583
+01:17:45,729 --> 01:17:51,090
+işte mesela a üzeri n nedir a üzeri n-1 çarpı adır aslında yani elinizde bir yerlerde
+
+584
+01:17:51,090 --> 01:17:56,930
+en eksi biri bulabiliyorsanız en azından sadece tek bir çarpımla bunu çözebilirsiniz
+
+585
+01:17:56,930 --> 01:18:03,170
+ya da insertion sort insertion sort ne yapıyordu hani karışık olan kartlar elimizde ya da işte
+
+586
+01:18:03,170 --> 01:18:10,449
+sıralanması beklenenler sonda böyle kalıyordu ama gitgide elimizde başa doğru sıralanmış
+
+587
+01:18:10,449 --> 01:18:15,090
+olarak bir parça kalıyordu yani aslında arama uzayımızı gitgide ufaltıyorduk hatırlarsanız
+
+588
+01:18:15,329 --> 01:18:20,210
+bir diğeri mesela josephus problemi vardı circular linked listle çözmüştük hani
+
+589
+01:18:20,210 --> 01:18:27,649
+şeyler bir araya halka şeklinde toplanıyorlardı da işte m kişi vardı n tanesini sayıp
+
+590
+01:18:27,649 --> 01:18:32,130
+onu halkadan çıkarıyorlardı yani ya öldürüyorlardı ya da hani sen başkan olamazsın
+
+591
+01:18:32,130 --> 01:18:38,050
+diyorlardı ne oluyor halka gitgide küçülüyor yani her adımda biz halkadan bir elemanı
+
+592
+01:18:38,050 --> 01:18:43,010
+dışarı atıyoruz ve bu sayede de işte hangi eleman kalır problemini çözmek için
+
+593
+01:18:43,010 --> 01:18:50,689
+yapmadım ufaltarak arama uzayımızı küçülterek yolumuza devam ediyoruz peki bunlar işte
+
+594
+01:18:50,689 --> 01:18:55,810
+brute force olsun greedy olsun decrease and conquer olsun farklı farklı algoritmik çözüm
+
+595
+01:18:55,810 --> 01:19:02,210
+yöntemleriydi şimdi elimizde bir de bugün bahsedeceğimiz divide and conquer yöntemi
+
+596
+01:19:02,210 --> 01:19:10,689
+var divide and conquer aslına bakarsanız tam olarak işte bire bir dünyada yaşadığınız
+
+597
+01:19:11,170 --> 01:19:18,050
+hatta çoğu zaman kızdığınız sinir olduğunuz çözüm yöntemlerinden bir tanesi nedir böyle
+
+598
+01:19:18,050 --> 01:19:25,010
+yönet ya da işte parçala ve onlara hükmet işte bu klasik amargamınızın dünyaya yaptığı
+
+599
+01:19:25,010 --> 01:19:31,810
+şeyler ne derler çok soktuğu çomaklar bu şekilde işte en son mesela biliyorsunuz
+
+600
+01:19:31,810 --> 01:19:39,489
+komşumuzda komşumuzun halini biliyorsunuz ne hale geldi işte ne oldu parçaladılar
+
+601
+01:19:39,729 --> 01:19:46,689
+başka yine orta doğudaki başka ülkelerde de aynı şeyleri yaptılar önce bir karışıklık
+
+602
+01:19:46,689 --> 01:19:54,130
+yarat orayı parçala parçalayabildiğin küçük sonrasındaki küçük şeyleri dağılmış
+
+603
+01:19:54,130 --> 01:20:00,529
+olan küçük parçaları problemin ufak parçalarını çöz yani bunları yönet ondan sonra hepsini
+
+604
+01:20:00,529 --> 01:20:06,130
+yönetince zaten bütün problemi de hükmetmiş ya da çözmüş ya da hepsini yönetmiş
+
+605
+01:20:06,210 --> 01:20:13,090
+bu şekilde bir yaklaşım şimdi biz bu gerçek hayat dersini ya da yaklaşımını alıp da
+
+606
+01:20:13,090 --> 01:20:18,529
+algoritmik çözümlere uyarlarsak da divaiden konkür tipindeki algoritmik çözüm yaklaşımını
+
+607
+01:20:18,529 --> 01:20:24,689
+oluşturmuş oluruz yani aslında problemimizi aynı tipte küçük problemleri ayrıştırırız
+
+608
+01:20:24,689 --> 01:20:31,329
+aynı tipte olması tabii ki önemli ve bunları genellikle eşit boyutlu olarak
+
+609
+01:20:31,890 --> 01:20:38,930
+bu farklı şekillerde eşitlik mesela değere göre ya da boyuta göre yani işte hacme
+
+610
+01:20:38,930 --> 01:20:45,010
+göre eşitlik diyebilirsiniz ki işte bugün konuşacağımız mersort ve quicksort bunun iki
+
+611
+01:20:45,010 --> 01:20:52,130
+farklı yaklaşımını size gösterecek genellikle eşit boyutlu olan aynı tipte küçük problemleri
+
+612
+01:20:52,130 --> 01:20:58,369
+biz ana problemimizi böleriz ondan sonra ayrıştırdığımız böldüğümüz bütün bu alt
+
+613
+01:20:58,449 --> 01:21:05,010
+yöntemlerin hepsini teker teker çözeriz genellikle böl ve yönet yöntemlerinde
+
+614
+01:21:05,010 --> 01:21:11,250
+öz yineleme yani recursion o sıklıkla kullanılır ama kullanmak zorunda da değilsiniz
+
+615
+01:21:11,250 --> 01:21:18,689
+örneğin işte mersortta göreceğiz biraz sonra bir yöntemle recursif olarak çözerken
+
+616
+01:21:18,689 --> 01:21:23,850
+başka bir yaklaşımda recursif çözmeye gerek kalmayacak adım adım ilerleyeceğiz bu
+
+617
+01:21:23,930 --> 01:21:33,449
+şekilde de yapılabilir fakat nihayetinde genellikle küçük problemleri bölünemeyecek
+
+618
+01:21:33,449 --> 01:21:43,930
+kadar küçük problemler haline getiririz pardon bir saniye bölünemeyecek kadar küçük
+
+619
+01:21:43,930 --> 01:21:50,409
+problemler haline getiririz ve artık bölünemeyecek kadar ufalttığımız o kadar
+
+620
+01:21:50,409 --> 01:21:57,369
+ufak bir uzayası dediğimiz problemi çözeriz ondan sonra da bu alt çözümleri alt problemlerin
+
+621
+01:21:57,609 --> 01:22:05,369
+bir şekilde bir araya getiririz ve bunları bir araya getirdikçe de orjinal probleme
+
+622
+01:22:05,369 --> 01:22:12,090
+ait bütün uzayı kapsayan ana problemin son çözümünü yani nihayet çözümünü oluştururuz
+
+623
+01:22:12,090 --> 01:22:17,850
+şimdi burada aslında gördüğünüz gibi iki tane problemle baş başayız bir nasıl
+
+624
+01:22:17,850 --> 01:22:23,449
+bölüceğiz iki böldük ve diyelim ki küçük problemi çözdük tamam mı mesela toplayarak
+
+625
+01:22:23,609 --> 01:22:28,729
+bir şeyler yaparak belli bir algoritme işleterek basit bir şekilde çözdük sonra da
+
+626
+01:22:28,729 --> 01:22:32,569
+ben bu çözümleri acaba nasıl toplayacağım yani bunları bir araya nasıl getireceğim
+
+627
+01:22:32,569 --> 01:22:37,850
+ve toplam çözümü nasıl oluşturacağım yani burada aslında çözmemiz gereken iki tane
+
+628
+01:22:37,850 --> 01:22:46,970
+ayrı aşama ya da ayrı algoritma adımı karşımıza çıkacak şimdi bu bölve yöneti
+
+629
+01:22:46,970 --> 01:22:54,409
+güzel güzel anlatıyoruz ama her zaman da bu iyidir ve hep optimum çözüm sağlar ya da işte
+
+630
+01:22:54,409 --> 01:22:58,890
+brute force'a göre brute force ile karşılaştığında daha iyidir diyemezsiniz böyle bir şart yoktur
+
+631
+01:22:58,890 --> 01:23:04,729
+yani illaki brute force'dan daha iyi olacak divaydan konkür diye bir genelleme yapmanız doğru
+
+632
+01:23:04,729 --> 01:23:11,689
+olmaz böyle bir şart yok ama bu da başka bir çözüm yaklaşımı peki bunun en bize getirdiği
+
+633
+01:23:11,689 --> 01:23:16,729
+çok avantaj ne her ne kadar biz bu ders kapsamında bu tabii ki buraya girmeyecek
+
+634
+01:23:16,729 --> 01:23:23,770
+olsak da biz eğer bir problemi parçalara ayırıyorsak daha küçük parçalara ayırabiliyorsak
+
+635
+01:23:23,770 --> 01:23:31,050
+ben bunları kolaylıkla paralelleştirebilirim yani her bir alt problemi mesela ayrı bir
+
+636
+01:23:31,050 --> 01:23:36,489
+işlemci çekirdeğinde ya da ayrı bir işlemci de koşturabilirim ve sonuçta da mesela
+
+637
+01:23:36,489 --> 01:23:42,170
+benim elimde dört çekirdek olsun problemi dörde böldüm dört küçük problemi böldüm ve bunları
+
+638
+01:23:42,170 --> 01:23:47,689
+eş zamanlı çalıştırdım yani normalden dört kat daha hızlı ha biraz overhead olacak tabii ki
+
+639
+01:23:47,689 --> 01:23:53,289
+birleştirmek için ama normalde erişemeyeceğim çalışma zamanlarını daha kısaltarak
+
+640
+01:23:53,289 --> 01:23:59,689
+paralelleştirerek elde etmiş olabilirim tabii ki bunun için yöntemlerin ya da bir
+
+641
+01:23:59,689 --> 01:24:04,569
+şekilde alt problemlerin paralelleştirilebiliyor birbirini beklemiyor olmaları da yani
+
+642
+01:24:04,649 --> 01:24:13,529
+bu için de bağımsız çözüm üretiyor olması temel şart sofistike kavramını kullanmayı çok
+
+643
+01:24:13,529 --> 01:24:31,939
+sevmiyorum sofistike ne demek sofistilerin hocam yaklaşımı sofist ne demek yani eski bir
+
+644
+01:24:32,180 --> 01:24:42,180
+akım her şeye şüpheyle bakan doğru bilginin hiçbir zaman elde edilmeyeceğini savunan
+
+645
+01:24:42,180 --> 01:24:50,819
+yaklaşım yani daha detaylı da merkeş olur ama tam olarak emin misin yoksa yani doğru bilgi
+
+646
+01:24:50,819 --> 01:24:55,619
+hiçbir zaman şey yapmayacağız hafızatalarla doğru bilgileri şey yapmaya çalışan bir akım
+
+647
+01:24:55,619 --> 01:25:01,779
+olarak aklımda kalmışlar bence siz sofistike kelimesinin kökenini etimolojisini
+
+648
+01:25:01,779 --> 01:25:11,140
+kısırın o yüzden niye kullanmak istemediğimi anlarsınız evet hadi size şey ee serbest ödev
+
+649
+01:25:11,140 --> 01:25:18,100
+hemen bakarız ya sözlükten bakmayın çok gelişmiş çok karmaşık diye sözlükte öyle
+
+650
+01:25:18,100 --> 01:25:22,579
+evet günümüzdeki kullanımı o ama etimolojisine bakarsanız o kelimenin nereden
+
+651
+01:25:22,579 --> 01:25:30,020
+çıktığına bakarsanız sofistikenin anlamını daha iyi öğrenirsiniz şey hani şöyle söyleyeyim
+
+652
+01:25:30,100 --> 01:25:34,100
+yani hani karmaşık falan kendini çok böyle karmaşık gibi gösterir ama aslında içi
+
+653
+01:25:34,100 --> 01:25:43,699
+boştur teneke'dir yani tın tındır şeydir o sofistler o yüzden okursunuz Evet biraz
+
+654
+01:25:43,699 --> 01:25:49,060
+araştırın yani direk sözlükten kelime anlamına bakmayın sofistike sofistike
+
+655
+01:25:49,060 --> 01:25:54,579
+diyorlar hani herkes kullanıyor ama işte bizim de tabii çoğu zaman çok geçmişini
+
+656
+01:25:54,579 --> 01:26:04,500
+kullandığımız kelimeler olabiliyor bunları bilip kullanmakta fayda var Evet yani sofistike mi
+
+657
+01:26:04,500 --> 01:26:10,340
+dersin ne dersin bilmiyorum ve bazen sofistike olabiliyor Evet yani illaki bu en iyisidir ya da
+
+658
+01:26:10,340 --> 01:26:16,979
+brute force'a göre hep böyle gol atar zaten hani hep böyle maçı bu kazanır gibi bir şey
+
+659
+01:26:16,979 --> 01:26:21,939
+söz konusu değil ama getirdiği en büyük özellik ve güzellik paralelleştirmenin
+
+660
+01:26:22,020 --> 01:26:31,460
+kolaylanması ha şimdi hemen şey yaptı okudun mu peki bitirmek üzereyim hocam tamam bitirince
+
+661
+01:26:31,460 --> 01:26:37,699
+özetle peki nasıl yapacağız biz bu işi şu şekilde elimizde bir problem var en boyutunda
+
+662
+01:26:37,699 --> 01:26:41,460
+mesela en boyutlu bir dizi var ben bu diziyi sıralamaya çalışıyorum alın size en boyutlu
+
+663
+01:26:41,460 --> 01:26:49,220
+bir problem en bildiğimiz temel dertlerimizden bir tanesi sıralama problemi ben bunu mesela
+
+664
+01:26:49,220 --> 01:26:54,500
+ikiye bölüyorum diyorum ki ben bu diziyi ikiye böleyim en böyle iki en böyle iki şeklinde
+
+665
+01:26:54,500 --> 01:26:59,460
+iki parçaya ayırayım sonrasında bu küçük parçayı kendi içinde sıralayayım bunu da
+
+666
+01:26:59,460 --> 01:27:04,739
+kendi içinde sıralamaya tabi tutayım elimde iki tane sıralanmış ufak dizi var sonrasında
+
+667
+01:27:04,739 --> 01:27:09,460
+ben bunları bir şekilde birleştireyim birleştirdikten sonra ne yapmış oldum en
+
+668
+01:27:09,460 --> 01:27:16,579
+boyutunda ve en uzunlukta bir sıralanmış dizi elde edeyim yani çözülmüş bir problem
+
+669
+01:27:16,739 --> 01:27:22,659
+en boyutunda elde edeyim dediğim gibi bir ben bu bölme işlemini nasıl yapacağım bir problem
+
+670
+01:27:22,659 --> 01:27:28,420
+ya bir soru işareti ikincisi de ya böldük çözdük eyvallah hani hatta bu birinci
+
+671
+01:27:28,420 --> 01:27:32,340
+işlemci de bu ikinci işlemci de çalıştı aynı anda çalıştılar sonrasında birilerinin
+
+672
+01:27:32,340 --> 01:27:37,619
+bunu bir şekilde birleştirmesi lazım bu nasıl olacak buna da aslında konkür tarafı
+
+673
+01:27:37,619 --> 01:27:43,140
+diyebiliriz konkür nasıl olacak ve nasıl birleştirilerek orjinal çözüm üretilecek
+
+674
+01:27:43,140 --> 01:27:49,779
+bu da ikinci çözmemiz gereken problem şimdi evet [öğrenci] neymiş anlat bize
+
+675
+01:27:49,779 --> 01:27:57,220
+hocam temelde yani aldatmaca anlamını şey yapıyormuşta 15. yüzyılda daha çok
+
+676
+01:27:57,220 --> 01:28:02,100
+kullanılmaya başlamış sofiste benim düşündüğüm gibi değil de tam olarak şeymiş öncesinde
+
+677
+01:28:02,100 --> 01:28:10,739
+bilgisini parayla satan kişi yani şimdiki öğretmenler diyelim ama sonrasında daha
+
+678
+01:28:11,300 --> 01:28:16,500
+filozoflar daha ön plana çıkmışlar daha çok böyle küçümseyici bir kavram olarak
+
+679
+01:28:16,500 --> 01:28:25,699
+kalmış öyle söylüyor özet olarak hocam anladığım kadarıyla peki peki günümüzde
+
+680
+01:28:25,699 --> 01:28:31,060
+bilgi para eder mi en çok para ediyor hocam hayır şöyle hani sen dedin ya
+
+681
+01:28:31,060 --> 01:28:37,619
+öğretmenler bilgiyi satıyor dedin ya ben size işte mesela şeyi öğreteyim
+
+682
+01:28:37,779 --> 01:28:44,020
+arkadaşlar şimdi mersort algoritmasını anlatıyorum şunları veriyoruz ondan sonra
+
+683
+01:28:44,020 --> 01:28:49,060
+şunları şöyle fora sokuyoruz ife sokuyoruz ondan küçükse bu tarafa büyükse bu
+
+684
+01:28:49,060 --> 01:28:55,220
+tarafa pas ediyoruz sonra da bunları böyle birleştiririz oldu bitti sonra da para
+
+685
+01:28:55,220 --> 01:29:02,020
+alıyorsunuz kurs açası bu mudur yoksa çoğunlukla budur ha ama şimdi internet var
+
+686
+01:29:02,020 --> 01:29:06,500
+hocam yazdı Bahattin yani ben size zaten mersort diye yazın internete dedim ya
+
+687
+01:29:06,500 --> 01:29:11,779
+her yerde bile kodu var her yerde şey hazır çözülmüş hali var bunun için bir
+
+688
+01:29:11,779 --> 01:29:15,140
+kafa patlatmıyorsunuz bir şey yapmıyorsunuz ben burada size bilgi mi satmış oldum
+
+689
+01:29:15,140 --> 01:29:25,479
+ya o da yok hocam yani günümüzde aslında bakarsanız bilgi de para etmiyor dediğiniz
+
+690
+01:29:25,479 --> 01:29:30,359
+gibi internet var yani bir şekilde bir yerlerden bir şeyleri buluyorsunuz ödevi de buluyorsunuz
+
+691
+01:29:30,359 --> 01:29:34,439
+kodu da buluyorsunuz ne bileyim çözümü de buluyorsunuz her şeyi bir şekilde
+
+692
+01:29:34,439 --> 01:29:39,720
+bir yerlerden bulursunuz önemli olan bilgi değil artık önemli olan bilgi kullanmak
+
+693
+01:29:40,680 --> 01:29:48,359
+bilmek işte mesela hani bir yaklaşımı bir çözümü ben bunu şöyle kullansam daha
+
+694
+01:29:48,359 --> 01:29:52,680
+iyi olur ya da şunu şuraya şu şekilde uyarlarsam algoritmada da şunu şöyle veri
+
+695
+01:29:52,680 --> 01:29:57,640
+yapısında şöyle tutarsam daha iyi olur şeklindeki düşünceleri birleştirmek aslında
+
+696
+01:29:57,640 --> 01:30:01,880
+elimden geldiğince böyle şeyler yapmaya çalışıyorum hatta sınav sorusunda bile
+
+697
+01:30:01,880 --> 01:30:07,960
+bu vardı hatırlarsanız olduğu kadar bakalım olmazsa sofistike sofistike takılırız
+
+698
+01:30:08,119 --> 01:30:09,239
+Estağfurullah hocam
+
+699
+01:30:11,800 --> 01:30:19,399
+Evet Mertzort niye Mertzort çünkü Mertzort Dividend Conqueror aktarmak için anlatmak
+
+700
+01:30:19,399 --> 01:30:24,680
+için anlamak için çok güzel bir yöntem ve elimizde zaten temel dedim ya problemlerden
+
+701
+01:30:24,680 --> 01:30:30,600
+bir tanesi başımızın belalarından biri sıralama sıralarken acaba ben mesela
+
+702
+01:30:30,600 --> 01:30:37,000
+sıralamayı paralelleştirebilir miyim elimde şey var 16 32 çekirdekli işlemci var
+
+703
+01:30:37,159 --> 01:30:41,960
+yani ben aslında diziyi 32'ye bölsem de bunları 32 parçada sıralasam ondan sonra
+
+704
+01:30:41,960 --> 01:30:47,399
+bunları birleştirsem neredeyse işte 30 kat daha hızlı bir şekilde sıralamayı
+
+705
+01:30:47,399 --> 01:30:54,680
+gerçekleştiremez miyim evet gerçekleştirebilirim tabii hani bu şey ayırma ve toparlama
+
+706
+01:30:54,680 --> 01:31:00,680
+overheadlerini her zaman unutmamanız gerekiyor soru ya da problem ne işte elimizde yine
+
+707
+01:31:00,680 --> 01:31:05,319
+sıfırdan eneksi biri bir an dizisi var bu diziyi acaba ben bölerek ve sonra da
+
+708
+01:31:05,399 --> 01:31:10,520
+bu dizileri sıralayabilir miyim şöyle yaparım mademki ben bölüyorum direkt olarak
+
+709
+01:31:10,520 --> 01:31:17,399
+karpuz gibi diziyi ortadan ikiye bölerim tamam ne yapmaya çalışıyordum problemi
+
+710
+01:31:17,399 --> 01:31:23,000
+eş parçalara ayırmaya çalışıyordum aynı özellikte ve mümkün olduğunca aynı boyutta
+
+711
+01:31:23,000 --> 01:31:29,239
+parçalara bölmeye çalışıyordum o zaman elimde en boyutta bir dizi olduğuna göre
+
+712
+01:31:29,239 --> 01:31:35,239
+ben en bölü ikilik iki tane dizi haline getiririm sonra bunu da ikiye bölerim
+
+713
+01:31:35,239 --> 01:31:43,800
+tamam mesela diyelim ki 8 bu 8 uzunlukta bir diziniz var ne oldu böldünüz 44 şimdi aldınız
+
+714
+01:31:43,800 --> 01:31:49,880
+ilk dörtlüyü kendi içinde bir daha böldünüz 2 2 öbürünü de böldünüz 2 2 yani 4 tane ikiliniz
+
+715
+01:31:49,880 --> 01:31:56,439
+var sonra bunları da böldünüz birer tane elemana kadar düştünüz tamam yani
+
+716
+01:31:56,439 --> 01:32:03,640
+asif olarak elinizdeki parçaları kendi içinde ikiye bölmeye devam edersiniz biz bu işleme
+
+717
+01:32:03,640 --> 01:32:10,520
+işte merch sort algoritması adını veriyoruz yani işin merch sort tarafı sadece işi
+
+718
+01:32:10,520 --> 01:32:18,039
+bölmektir tamam yani devide tarafıdır elimizde ne kaldı elimizde en tane tek
+
+719
+01:32:18,039 --> 01:32:23,640
+elemanlı parça kaldı ben şunu biliyorum bir boyutlu dizi sıralı mıdır değil midir
+
+720
+01:32:24,039 --> 01:32:31,079
+doğal olarak hani teoremi ispat edersiniz sıralı olma şartı neydi kendinden sonra gelenlerden
+
+721
+01:32:31,079 --> 01:32:35,640
+küçük ve eşit olmak kendinden sonra hiçbir şey gelmiyorsa zaten bu şartı sağlıyor demektir
+
+722
+01:32:35,640 --> 01:32:42,840
+yani benim tek elemanlı parçalarım zaten sıralıdır hoppa ne oldu problemi çözdüm bitti
+
+723
+01:32:42,840 --> 01:32:48,840
+ne oldu sıraladım ama neyi sıraladım en tane sap problemi alt problemi sıralamış oldum
+
+724
+01:32:49,000 --> 01:32:56,239
+gördüğünüz gibi sıralama maliyeti de yok hiçbir şey yapmadım bunun için fakat gel
+
+725
+01:32:56,239 --> 01:33:02,960
+gelelim şimdi elimde en tane kendi içinde sıralı teker eleman var da acaba ben bunları nasıl
+
+726
+01:33:02,960 --> 01:33:12,039
+birleştireceğim demek ki ben her bir sıralanmış alt alt parçayı bu sıralama mantığını bozmadan
+
+727
+01:33:12,039 --> 01:33:18,920
+birleştirmem gerekir demek ki parçalar birleşirken bunlar birleştikçe ya da bunları da
+
+728
+01:33:18,920 --> 01:33:27,399
+birleşen parçaları da sıralı olarak birleştirmeyi garanti etmem gerekiyor işte bu da algoritmanın
+
+729
+01:33:27,399 --> 01:33:35,239
+konkür tarafı yani mörç işlemini yaptığımız nokta aslına bakarsanız mörç sortun bölme
+
+730
+01:33:35,239 --> 01:33:42,760
+bunda hiçbir şey yok sort zaten işlem bile yapmıyorsunuz ama gel gelelim ben bu sıralanmış
+
+731
+01:33:42,760 --> 01:33:48,359
+alt parçaları yani çözdüğüm problemleri bir araya getirirken biraz uğraşmam gerekiyor ya da
+
+732
+01:33:48,359 --> 01:33:55,000
+onları sıralamayı bozmayacak şekilde bir araya getirmen birleştirmem bağlamam gerekiyor
+
+733
+01:33:55,000 --> 01:34:05,600
+Peki nasıl yapacağız işte mörç sort bu şimdi niye top down dedim sebebini göreceğiz algoritma
+
+734
+01:34:05,600 --> 01:34:15,560
+şimdilik ona takılmayalım ne dedik ben diziyi ikiye böleceğim yani lo benim işte sol taraftaki
+
+735
+01:34:15,560 --> 01:34:21,520
+indisim hayda en ince indisim olsun en başta yani sıfırla en şeklinde verdim ya en eksi
+
+736
+01:34:21,520 --> 01:34:29,279
+iki neyse esi de verdiğimi düşünün ben bu şart sağlandığı sürece aslında mörç işlemini
+
+737
+01:34:29,279 --> 01:34:34,479
+yapmaya devam etmem lazım ne zaman ki bu şart sağlamaz duracağım ne demektir bu aslında
+
+738
+01:34:34,479 --> 01:34:40,159
+ben bölebildiğim kadar böldüm demektir her bir adımda önce bir orta noktayı bulmam lazım
+
+739
+01:34:40,159 --> 01:34:48,760
+önce nereden böleceksem onu buluyorum ondan sonra dizinin şöyle şeyimi açayım alet kutusunu
+
+740
+01:34:48,760 --> 01:34:55,760
+yapalım şuradan şöyle bir çizgi çekelim yeşil yeşil oldu sonra da kırmızı ile mesela dedim ki
+
+741
+01:34:55,760 --> 01:35:06,920
+şurası diyemedim bir dakika şu şunla diyim şurası lov tamam şurası hay noktası ve
+
+742
+01:35:06,920 --> 01:35:14,760
+şurayı ben haşırt diye mid olarak belirledim şimdi ne yapacağım Aslında ben ilk olarak
+
+743
+01:35:14,760 --> 01:35:22,000
+lovdan mid'e kadar olan şu kısmı kendi içinde mörç sort edeceğim sonra bu bittikten sonra
+
+744
+01:35:22,000 --> 01:35:28,960
+bunun bitmesi de ne demektir başka renge geçelim yine burası yeni lov kendi içinde burası yeni
+
+745
+01:35:28,960 --> 01:35:41,699
+hay şurası yeni mid yazmaya çalıştım ondan sonra bunu al kendi içinde tekrar onu da
+
+746
+01:35:41,899 --> 01:35:50,340
+toruncuyla yapalım burası yeni lov burası yeni hay şurası da yeni mid olsun tamam daha fazla
+
+747
+01:35:50,340 --> 01:35:54,899
+bölemeyelim mesela bu kendi içinde tek eleman sıralı bu da kendi içinde tek eleman sıralı
+
+748
+01:35:54,899 --> 01:36:02,300
+o zaman ben bu kısmı bitirdim demektir aynısını geri döndüm şu taraf içinde yaptım tamam ve
+
+749
+01:36:02,300 --> 01:36:07,899
+buradaki bütün sor mörç sort işlemini yani bölme işlemini gerçekleştirdim ama hala bu
+
+750
+01:36:08,100 --> 01:36:13,659
+var ne yapacağız mid artı birden hay'a kadar olan kısmını da yapacağız o da burası aynı
+
+751
+01:36:13,659 --> 01:36:22,100
+şekilde bu şu sonra şu sonra çık buraya bu tarafını yap yani şuradaki kısmını işlet bunu
+
+752
+01:36:22,100 --> 01:36:27,979
+tekrar şöyle belli olsun diye ayrı çizeceğim biraz bunu yap tamam bu kadar bu şekilde
+
+753
+01:36:27,979 --> 01:36:36,380
+ben elemanları mesela burada 8 eleman olduğunu düşünelim tamam mı şurada 4 pardon şurada
+
+754
+01:36:36,380 --> 01:36:45,020
+4 olsun şöyle 4 yazdık şurada ikişer eleman var iki iki burada da ikişer eleman var iki
+
+755
+01:36:45,020 --> 01:36:53,020
+ve iki burada da teker elemana kadar düştüm bir bir bir bir bir bir bir ve bir ne yapmış
+
+756
+01:36:53,020 --> 01:36:57,699
+oldum böyle bildiğim kadar böldüm bunların her biri kendi içinde sıralı sonra ne yapacağım
+
+757
+01:36:57,699 --> 01:37:05,699
+dana'nın kuyruğu burada kopuyor ben bu böldüğüm parçayı artık low mid hay noktalarını
+
+758
+01:37:05,699 --> 01:37:12,180
+bilerek birleştireceğim niye ben bu noktalara ihtiyaç duyuyorum e çünkü elimde bir parça
+
+759
+01:37:12,180 --> 01:37:18,819
+var bir de hemen yanındaki birleştirmek istediğim şu parça var demek ki benim şu low şu midi
+
+760
+01:37:18,819 --> 01:37:27,420
+şu midi şu hayı bilmem lazım ki buradaki sıralamayı bozmadan nihai birleşmiş en
+
+761
+01:37:27,460 --> 01:37:33,500
+sonun için nihai olan birleşmiş parçacığı oluşturabileyim tamam peki bunu nasıl yapacağız
+
+762
+01:37:33,500 --> 01:37:43,500
+şöyle yapacağız mouse'u tutturabilirsem oldu şunları temizleyelim tamam bu da
+
+763
+01:37:43,500 --> 01:37:49,420
+mörj işlevi şimdi bu buna şey in place abstract in place mörj adını vereceğim
+
+764
+01:37:49,420 --> 01:37:56,380
+detayına çok takılmayın biraz sonra yine dediğim gibi slide'lar ilerledikçe
+
+765
+01:37:56,380 --> 01:38:01,260
+alacaksınız in place falan ne demek ya da niye böyle oluyor şimdi ne alıyordum ben
+
+766
+01:38:01,260 --> 01:38:06,899
+low mid ve hayları alıyorum şimdi iki tane de şeye ihtiyacım var döngü değişkenine ihtiyacım var
+
+767
+01:38:06,899 --> 01:38:12,579
+pardon indis değişkenine ihtiyacım var biri işte böyle hangisi nerede daha büyük daha küçük
+
+768
+01:38:12,579 --> 01:38:19,779
+bunları takip etmek için elimde iki parça vardı şöyle tekrar şuraya iki tane şey çizeyim
+
+769
+01:38:19,779 --> 01:38:27,340
+şöyle şimdi bu iyi şurayı gösterecek özetle şunları kırmızı yapayım işte burası
+
+770
+01:38:27,340 --> 01:38:35,859
+lov j de j de burayı gösteriyor gibi düşünebilirsiniz şimdi ben burada mörj sort'un
+
+771
+01:38:35,859 --> 01:38:45,380
+belki de en zayıf noktası şurada gördüğünüz gibi böyle bir dizi kopyalama işlemi yapmak
+
+772
+01:38:45,380 --> 01:38:52,180
+alıyorum bunun sebebi bir şekilde benim bu orjinal değerleri bir yerde tutma ihtiyacımın
+
+773
+01:38:52,180 --> 01:38:58,340
+olması yani eski halini en azından mörj şey divide edilmiş halini diyelim yani onun önceki
+
+774
+01:38:58,340 --> 01:39:04,460
+halini biliyor olmam lazım ki ben gerçek dizi üzerinde bu değiştirme işlemlerini
+
+775
+01:39:04,460 --> 01:39:12,180
+gerçekleştirebileyim yani bu mörj'ün en zayıf noktası mörj sort'un daha doğrusu en zayıf
+
+776
+01:39:12,180 --> 01:39:22,619
+noktası bu ne demektir ben space kompleksiti açısından şuraya space yazalım tamam mı şöyle
+
+777
+01:39:22,619 --> 01:39:32,130
+iki nokta üstü yazalım o enlik bir alana ihtiyaç duyuyorum yani enlik diziyi
+
+778
+01:39:33,569 --> 01:39:42,770
+sıralamak için mörj sort yöntemiyle benim en boyutunda bir harici bellek alanına ihtiyacım
+
+779
+01:39:42,810 --> 01:39:50,449
+var işte mesela diyelim ki 16 gigabaytlık veriyi sıralamaya çalışıyorsunuz doğal olarak
+
+780
+01:39:50,449 --> 01:40:00,729
+16 gigabaytlık bir kopya yaratmanız gerekecek demek ki eğer benim böyle space yani yer kısıtım
+
+781
+01:40:00,729 --> 01:40:06,970
+varsa o zaman belki de mörj sort kullanmam doğru olmayacaktır ama yer kısıtım diyelim ki
+
+782
+01:40:06,970 --> 01:40:12,529
+yani ben bellek sağlarım hocam diyorsunuz ama paralelleştirme istiyorum hocam ben burada
+
+783
+01:40:12,529 --> 01:40:17,289
+mümkün olduğunca paralel çalıştırmak istiyorum diyorsanız o zaman da mörj sort sizin için çok
+
+784
+01:40:17,289 --> 01:40:23,729
+daha başarılı bir çözüm olarak karşınıza çıkacaktır işte bu şey no free lunch yani hiç bir
+
+785
+01:40:23,729 --> 01:40:29,770
+şekilde her şeyi optimum olan bir yöntem maalesef bulamıyoruz belki kuantumla bilmem neyle
+
+786
+01:40:29,770 --> 01:40:34,810
+bir şeyler çözülmeye başlar sonrasında yaptığımız işlem burada özetle tam olarak şu
+
+787
+01:40:34,810 --> 01:40:41,409
+yandan ha ya kadar dönüyorum ve aslında şunu yapmaya çalışıyorum şimdi şöyle bir örnek
+
+788
+01:40:41,409 --> 01:40:49,770
+hemen şuraya yazalım diyelim ki burada iki olsun burada 6 olsun burada kaç olsun dur bakayım
+
+789
+01:40:49,770 --> 01:40:59,130
+güzel bir örnek olması açısından 4 yok 7 olsun hadi dur bakalım önce bir 7 ve 8 olsun
+
+790
+01:40:59,130 --> 01:41:12,439
+tamam ama bu zaten sıralı oldu beğenmedim 2 6 4 ve 8 olsun şöyle tamam şimdi burada
+
+791
+01:41:12,439 --> 01:41:22,760
+yaptığımız şey aslında şu bunu 2 al 4 al bak hangisi daha küçükse önce onu yaz ve onun
+
+792
+01:41:22,760 --> 01:41:30,720
+işte indisine iyi bir arttır mesela şuraya getir sonra 6 ile 4 karşılaştır bu hala
+
+793
+01:41:30,920 --> 01:41:38,720
+çünkü bunu almadık hangisi büyük bu büyük o zaman ama hangisi küçük özür dilerim 4 yani
+
+794
+01:41:38,720 --> 01:41:45,399
+j indisi küçük o zaman dördü al buraya koy j bir arttır j şurayı göstersin sonra
+
+795
+01:41:45,399 --> 01:41:52,279
+i ile j tekrardan karşılaştır işte eğer bir taraf geçtiyse zaten kalanı kopyalayacağız
+
+796
+01:41:52,279 --> 01:41:57,359
+demektir bu örnekte ikili olduğu için tam anlayamıyoruz ama bir sonraki slidelerde
+
+797
+01:41:57,399 --> 01:42:07,159
+göreceğiz 6 mı 8 mi küçük 6 küçük 6'yı al bu bu tarafa geldi ne oldu aslında iyi midi geçmiş
+
+798
+01:42:07,159 --> 01:42:12,319
+oldu tamam mı iyi mid noktasını geçtiği için şunu biliyorum artık ben burada kaç
+
+799
+01:42:12,319 --> 01:42:16,439
+eleman varsa bunların kalanının hepsini hopadanak diye buraya kopyalamam lazım
+
+800
+01:42:16,439 --> 01:42:22,079
+bunun daha uzun bir dizi olduğunu düşünün 8 9 15 22 gibi sayılar olduğunu düşünün bunların
+
+801
+01:42:22,079 --> 01:42:26,560
+hepsini oradan alıp bire bir kopyalayabiliyorum başka bir sorgu yapmadan ya da başka bir
+
+802
+01:42:26,600 --> 01:42:32,920
+karşılaştırma yapmadan o yüzden şu geçti mi şu geçti mi diye kontrol yapıyoruz Nihayetinde
+
+803
+01:42:32,920 --> 01:42:38,520
+gördüğünüz gibi sıralama maliyeti yok dedim ama Aslında esas problem mörj
+
+804
+01:42:38,520 --> 01:42:44,039
+işleminde yani konkür işleminde gerçekleşiyor bölmek çok kolay ama böldükten sonra
+
+805
+01:42:44,039 --> 01:42:49,479
+bunları sıralı halde olduklarını garanti ederek tekrar birleştirmek biraz maliyet
+
+806
+01:42:49,479 --> 01:42:54,119
+ve bir tane de ekstradan dizi kullanımı gerektiriyor ekstra dizi kullanımda şu
+
+807
+01:42:54,119 --> 01:43:01,279
+ihtiyaç duyuyoruz gördüğünüz gibi ben orijinal değerleri burada alıp pardon ya sonuncu
+
+808
+01:43:01,279 --> 01:43:07,239
+yanlış çizdik orijinal değerleri alıp buradaki a dizisine atıyorum bu nedenle de
+
+809
+01:43:07,239 --> 01:43:17,590
+harici bir diziye bir kopya diziye ihtiyaç duymak zorunda kalıyorum şimdi örnek
+
+810
+01:43:17,590 --> 01:43:27,590
+şimdi devam edersek ne oldu buna daha iyi anlayacaksınız tabii bu bir dakika
+
+811
+01:43:27,590 --> 01:43:35,909
+tamam önce bundan bahsedelim a dizisi şurada verilmiş bu mörj trace aslında yazıyor
+
+812
+01:43:35,909 --> 01:43:41,149
+şunlarda sonradan şeyde kamşı idare edin şurayı görmeyin hadi oraya şöyle şey
+
+813
+01:43:43,310 --> 01:43:49,470
+bakayım yapabiliyor muyum yaptım valla tamam böyle daha güzel oldu ama biraz sonra
+
+814
+01:43:49,470 --> 01:43:54,109
+sileceğim en azından üzerinde konuşurken böyle temiz kalsın şimdi ben inputu burada
+
+815
+01:43:54,109 --> 01:44:03,350
+sahibim şuradan da kırmızı bir şey alalım tamam toplamda 10 uzunlukta bir dizim
+
+816
+01:44:03,350 --> 01:44:09,949
+var tamamen ve bunlar e e g m r a c e r t şeklinde oluşmuş olsun ben bunu
+
+817
+01:44:10,149 --> 01:44:15,670
+tamam şuraya auxiliary diziye kopyaladım bu auxiliary diziden aslında şimdi işlemleri
+
+818
+01:44:15,670 --> 01:44:21,949
+yapmaya başlayacağım ne yapıyorum ben sadece şu beşli beşli bölme konusundaki
+
+819
+01:44:21,949 --> 01:44:28,869
+bölünmüş birleştirmeye bakıyorum tamam mı şimdi ne yaptım elimde iki tane parça
+
+820
+01:44:28,869 --> 01:44:34,310
+var birinci parça bu ikinci parça da bu bunları teker teker karşılaştıracağım
+
+821
+01:44:34,909 --> 01:44:43,069
+bu ne demektir ilk karakterleri karşılaştır yani ilk elemanlarını karşılaştır
+
+822
+01:44:43,069 --> 01:44:49,869
+e mi büyük a mı pardon e mi küçük a mı küçük küçükten büyüğe sıralıyoruz a küçük o zaman
+
+823
+01:44:49,869 --> 01:44:56,829
+ben iyi değil a'yı almalıyım a'yı aldım bakın buradaki a dizisinin şurasına şöyle
+
+824
+01:44:56,829 --> 01:45:05,029
+kıladım tamam bu sondaki işlemle ve buradan iyi bir arttı pardon j'yi bir arttırdım
+
+825
+01:45:05,029 --> 01:45:12,069
+j 6 oldu yani aslında şu elemanı silmiş oldum hala burada a olsa da olmasa da ben
+
+826
+01:45:12,069 --> 01:45:19,310
+artık bunu görmüyorum benim için yeni j point'ı buraya gösteriyor i point'ı hala
+
+827
+01:45:19,310 --> 01:45:23,510
+sıfırda ve buraya gösteriyor şimdi kimleri karşılaştıracağım burada bir ilerlemiş
+
+828
+01:45:23,510 --> 01:45:30,029
+yani c mi küçük e mi küçük c küçük o yüzden c'yi alıp çık diye buraya kopyalıyorum
+
+829
+01:45:30,029 --> 01:45:38,069
+tamam doğal olarak j'yi bir arttırıyorum ve şu noktaya geliyorum tamam iyi hala sıfır
+
+830
+01:45:38,069 --> 01:45:44,510
+buraya geldim şimdi şu adımdayım e ve e'yi karşılaştırıyorum şimdi e mi küçük
+
+831
+01:45:44,510 --> 01:45:54,069
+e mi küçük güzel bir soru e küçük hangi e'yi alacağım mersortta önce soldaki yani
+
+832
+01:45:54,069 --> 01:46:00,590
+daha önce öne yakın olan yani sıfıra yakın olanı ilk olarak alırız ve ben aslında
+
+833
+01:46:00,590 --> 01:46:07,189
+bu sefer şuradaki e'yi alıp bakın bu e değil kırmızıyla boyadığım bunu e'yi
+
+834
+01:46:07,189 --> 01:46:14,510
+alıp şuradaki çık diye yapıştırıyorum tamam ve iyi bir arttırıyorum bu sefer çünkü
+
+835
+01:46:14,510 --> 01:46:20,229
+bu karakteri geçtim şuraya geldim şimdi bu e ile bu e'yi karşılaştırıyorum tekrar
+
+836
+01:46:20,229 --> 01:46:26,109
+bunun indisi hala yedide duruyordu hangi e'yi alacağım yine başa yakın olan e'yi
+
+837
+01:46:26,109 --> 01:46:35,510
+alacağım buraya koydum gördüğünüz gibi orijinal dizide inputta başa yakın olan
+
+838
+01:46:35,550 --> 01:46:44,470
+e'ler yani daha önce görülmüş olan e'ler çıktıda da yine daha önde yer alıyor şurada
+
+839
+01:46:44,470 --> 01:46:50,069
+şurada yer alıyor tamam yani ben bunların yanına mesela birer tane sayı yazsaydım
+
+840
+01:46:50,069 --> 01:46:56,869
+şu e'nin yanına mesela bir yazsaydım tamam mı bunun yanına iki yazsaydım
+
+841
+01:46:56,869 --> 01:47:02,390
+şurada üçüncü e tamam mı şunun yanında üç yazsaydım çıktıda da bu bir numaralı
+
+842
+01:47:02,590 --> 01:47:08,750
+bu iki numaralı e bu da üç numaralı e olarak ya da işte mavi e yeşil e mor e şeklinde
+
+843
+01:47:08,750 --> 01:47:17,670
+renklendirseydim bu şekilde gelecekti işte in place kavramı bu yani ben aslında yerinde
+
+844
+01:47:17,670 --> 01:47:22,430
+sıralama yapıyorum başa yakın olan yine sonunda da başa yakın olmuş çıktıda da
+
+845
+01:47:22,430 --> 01:47:32,869
+baş tarafta olmasını garanti etmiş oluyorum bu 1 2 3'ü şimdi silelim sildik tamam e'yle
+
+846
+01:47:32,869 --> 01:47:41,949
+e'yi karşılaştırdım buradaki e'yi koydum dedim tamam şimdi şuradayım iyi bir arttırdım
+
+847
+01:47:41,949 --> 01:47:49,590
+g ile e'yi karşılaştırıyorum e daha küçük e daha küçük olduğu için burada çıktı ya e
+
+848
+01:47:49,789 --> 01:47:56,789
+g'ye gidiyor sağ taraftaki gidiyor ve indisini bir arttırıyorum j'yi j şu anda 8 oldu g mi küçük
+
+849
+01:47:56,789 --> 01:48:05,909
+re mi küçük g küçük o yüzden çıktı ya g gidiyor ve şeyi bir artıyor i indisi 5'i gösteriyor
+
+850
+01:48:05,909 --> 01:48:17,140
+5'i mi gösteriyor yanlış yazmışız ya bunu neyse e me mi re mi me daha küçük me
+
+851
+01:48:17,140 --> 01:48:25,060
+gidiyor bir artıyor re mi re mi soldaki re'yi alıyorum ilk re'yi aldım çık diye koydum bu taraf
+
+852
+01:48:25,060 --> 01:48:31,779
+bitti bittiği için artık karşılaştırma yapmama da gerek yok kalanları yani bu re'yi alıp buraya
+
+853
+01:48:31,779 --> 01:48:39,979
+bu te alıp buraya koyabilirim işte üzerinde karşılaştırma yapacağım için ve bir yere de
+
+854
+01:48:39,979 --> 01:48:45,260
+çıktı yazmam gerektiği için ben bunun bir kopyasını gördüğünüz gibi mersort yaparken
+
+855
+01:48:45,300 --> 01:48:53,619
+tutmak zorunda kalıyorum ne oldu a c e e e g m r r t şeklinde a'dan z'ye doğru buradaki
+
+856
+01:48:53,619 --> 01:49:03,140
+şöyle ok çizelim a'dan z'ye doğru küçükten büyüğe doğru sıralamayı merge ederek yapmış olduk
+
+857
+01:49:03,140 --> 01:49:10,100
+şimdi bunun bir de algoritmasını bu şekilde verdim ama psödo kodunu da vermek istiyorum
+
+858
+01:49:10,100 --> 01:49:18,739
+ha ya da şöyle yapayım bir dakika hemen new share diyelim demin geç kalmamız sebebi şu
+
+859
+01:49:18,739 --> 01:49:34,250
+Evet biraz daha büyüteyim görünüyor değil mi işte mersort kodu [öğrenci] sen mi söylemiştin kod diye
+
+860
+01:49:34,250 --> 01:49:41,250
+Buyurun sizin için oturdum arada yazdım algoritmanın birebir implementasyonu mersort mersort
+
+861
+01:49:41,289 --> 01:49:48,609
+yapıyor bir tane dizi alıyor ve lo ve hay yani sol ve sağ indisi yani en soldaki küçük ve en
+
+862
+01:49:48,609 --> 01:49:53,890
+sağdaki büyük indisi alıyor burada left ve right olarak da okuyabilirsiniz tamam me de mid
+
+863
+01:49:53,890 --> 01:50:00,729
+olsun buradaki me nedir left right artı left bölü iki dir inti ciroldu için işte soldakini
+
+864
+01:50:00,729 --> 01:50:06,090
+alacak hani tam şeyse tek sayısa ne olacak diye şey yaparsanız bir taraf küçük bir taraf
+
+865
+01:50:06,289 --> 01:50:14,609
+olacak eğer sağ sol sağ bu tarafa geçtiyse yani sol daha büyükse ne demektir ben zaten böyle
+
+866
+01:50:14,609 --> 01:50:19,890
+bildiğim kadar böldüm midi de geçtim o zaman burada daha fazla mersort edecek bir şey
+
+867
+01:50:19,890 --> 01:50:25,289
+kalmamıştır demiş oluyorum ve bu benim aslında durma noktamdır burada return ediyorum
+
+868
+01:50:25,289 --> 01:50:31,649
+eğer etmiyorsam yani hala sol bu tarafta sol tarafta sağ sağ tarafta kaldıysa
+
+869
+01:50:31,649 --> 01:50:38,930
+neye devam etmem gerekiyorsa her seferinde lo'dan mid'e mersort'u rekürsif olarak çağırırım
+
+870
+01:50:38,930 --> 01:50:46,170
+sol tarafı bitirdikten sonra mid'den hay'a doğru yani mid'den right'a doğru mersort'u rekürsif
+
+871
+01:50:46,170 --> 01:50:52,689
+olarak çağırırım ve bu bütün işlemler bitince aslında şuradaki mersort'lar bitince şuradaki
+
+872
+01:50:52,689 --> 01:50:57,130
+recursion'lar bundan içinde bir de merge ederim nasıl merge edeceğim left medium ve
+
+873
+01:50:57,329 --> 01:51:03,489
+mid ve right'i kullanarak yani sol orta ve sağ değerlerini kullanarak merge işlemini
+
+874
+01:51:03,489 --> 01:51:07,850
+gerçekleştireceğim onu nasıl yapacağım şimdi burada bir oksidere dizi kopyalamasının olduğunu
+
+875
+01:51:07,850 --> 01:51:13,569
+hazır a ile birebir kopyalandığını şuraya dışarı yazdım merge fonksiyonu ne alacak işte
+
+876
+01:51:13,569 --> 01:51:21,890
+bir dizi yine yazması gereken a dizisi var love mid ve hay ya da left ve right değerlerimizi
+
+877
+01:51:21,890 --> 01:51:27,569
+yapacağız şurada üç tane üç tane ayrı olmasına gerek yok ama kod böyle her biri ayrı çalıştığı
+
+878
+01:51:27,569 --> 01:51:35,170
+anlaşılsın diye üç tane değişken var şimdi birincisi şunu yapıyor bakın mid artı birden
+
+879
+01:51:35,170 --> 01:51:46,050
+başlıyor ve left'e doğru oksidleri i-1'i a i-1'e kopyalıyor ikincisi de mid'den başlıyor
+
+880
+01:51:46,090 --> 01:51:53,569
+ve right'e kadar r artı m eksi j indisine j artı biri kopyalıyor şimdi bundan sonrası da
+
+881
+01:51:53,569 --> 01:52:01,050
+aslında yaptığımız karşılaştırma hangisi küçükse bunu çık diye yazıyoruz tamam mı j
+
+882
+01:52:01,050 --> 01:52:06,050
+x eksi ya da i artı artıyı yazıyoruz yani biri sağdan biri soldan yaklaşıyor bu şekilde
+
+883
+01:52:06,050 --> 01:52:13,050
+hızlı bir implementasyon gerçekleştirebilirsiniz şöyle pardon nereye gitti o
+
+884
+01:52:13,930 --> 01:52:22,489
+ha hala duruyor değil mi tamam bu da mesela basit bir şekilde hiçbir açıklaması yok okunur
+
+885
+01:52:22,489 --> 01:52:33,409
+bir kod değil ama kaç satırla yazmışım 12345678 satır mörcün içi 12345 satırda mörç
+
+886
+01:52:33,409 --> 01:52:39,569
+sortun içi toplam 13 satır şeyleri de koy şuradaki 15 hadi şunun da kopyalamasını koy
+
+887
+01:52:39,569 --> 01:52:46,890
+20 satır gördüğünüz gibi 20 satır içinde mörç sortu rahatlıkla halledebiliyorsunuz şimdi
+
+888
+01:52:48,130 --> 01:52:59,970
+slide'mıza geri gelelim nerede o burada tamam burada da yine aynı yaklaşım gördüğünüz
+
+889
+01:52:59,970 --> 01:53:05,289
+gibi ama bu sefer bir fark var isterseniz böyle de implement edebilirsiniz burada
+
+890
+01:53:05,289 --> 01:53:12,489
+bir psödo kodu var kopyalamayı yani a'dan en böyle iki leksi birden şeyi hani A ve B'yi
+
+891
+01:53:12,489 --> 01:53:18,409
+A ve C'yi ikiye bölerek direkt olarak mörç sortun içinde de kopyalayabilirsiniz ondan
+
+892
+01:53:18,409 --> 01:53:24,890
+sonra bu kopyaladıklarınızı B ve C'yi mörç sortu edip sonrasında bu üç dizi parçasını tekrar
+
+893
+01:53:24,890 --> 01:53:30,890
+B C'yi kopyaladıklarınız hallerini tekrar A içinde mörç edebilirsiniz bu da bir
+
+894
+01:53:31,449 --> 01:53:38,409
+aslında tamamen aynı şeyi yapıyor hani böyle bir kod gördüm de diyebilirsiniz bu da dediğim
+
+895
+01:53:38,409 --> 01:53:44,090
+gibi aslında yine harici bir kopyalama yapıyor kopyaladıklarının üzerinde mörç sort
+
+896
+01:53:44,090 --> 01:53:49,050
+işlemini gerçekleştirip sonra kopyaladıklarını tekrar birleştiriyor hiçbir farkı yok burada
+
+897
+01:53:49,050 --> 01:53:57,170
+da yine birebir aynı kodu görüyorsunuz aslında karşılaştır ve işte küçükleri kopyalar
+
+898
+01:53:57,170 --> 01:54:02,729
+büyük varsa onları kopyalar ondan sonra da teker teker karşılaştırman gerekiyorsa da buradaki
+
+899
+01:54:02,729 --> 01:54:10,090
+karşılaştırma işlemlerini yap tekrar üzerinde durmayacağım ama bu işte mesela psödo kod
+
+900
+01:54:10,090 --> 01:54:15,970
+nasıl çalışıyor örnek üzerinde göstermek istiyorum yaptığı şey tam olarak şu elimde
+
+901
+01:54:15,970 --> 01:54:22,010
+sekiz elemanlı bir dizi var bu diziyi önce ikiye bölüyor tamam mı yani aslında ilk
+
+902
+01:54:22,210 --> 01:54:32,010
+ve şunu yapıyor şöyle önce birinci adımda aslında şu işlemi yapıyor sonra ikinci adımda bu
+
+903
+01:54:32,010 --> 01:54:38,090
+işlemi yapıyor sonra üçüncü ve dördüncü adımlarda aslında bu işlemleri yapıyor ondan
+
+904
+01:54:38,090 --> 01:54:45,489
+sonra geliyor buraya beşinci adımda bunu altıncı ve beşinci altıncı ve yedinci
+
+905
+01:54:45,489 --> 01:54:50,050
+adımlarda bunu yapıyor burayı bitirdikten sonra bu tarafa geliyor hani sıfırdan mid'e
+
+906
+01:54:50,090 --> 01:54:59,250
+var midden right'e kadar gibi düşünün kaçta kaldık sekizde bunu yapıyor 9 10 11 sonra
+
+907
+01:54:59,250 --> 01:55:09,409
+geliyor buraya right tarafına geçiyor 12 13 14 şeklinde divide işlemini gerçekleştiriyor
+
+908
+01:55:09,409 --> 01:55:14,489
+şimdi elimde ne var benim dediğim gibi birer elemanlı ve kendi içinde sıralı sekiz tane
+
+909
+01:55:14,489 --> 01:55:21,569
+bir parçacığı var şimdi artık işin konkür tarafına geçeceğiz üç mü sekiz mi üçü alıyor
+
+910
+01:55:22,569 --> 01:55:30,409
+tamam mı sonrasında üç bittiği için sekizi olduğu gibi çık diye kopyalıyor üç yani sağ
+
+911
+01:55:30,409 --> 01:55:38,649
+taraf bittiği için iki mi dokuz mu ikiye alıyor bu taraf şöyle hatta şunu çizelim bitti
+
+912
+01:55:38,810 --> 01:55:45,050
+o da bitti sonra ikiye aldı bu taraf tamamlandığı için bittiği için dokuzu çık diye kopyalıyor
+
+913
+01:55:45,050 --> 01:55:52,930
+bunu da attık yedi mi bir mi biri alıyor biri şöyle şey yapalım çarpı yapalım demin çarpı
+
+914
+01:55:52,930 --> 01:55:58,250
+yaptık biri çık diye yazıyor bu taraf tamamen bittiği için bunu da olduğu gibi kalan
+
+915
+01:55:58,250 --> 01:56:04,569
+tarafını kopyalıyor yediği de buraya kopyaladık beş mi dört mü dördü alıyor dördü çık diye
+
+916
+01:56:04,569 --> 01:56:09,850
+alıyor beşi de bu taraf tamamen bittiği için buradaki kalanların hepsini çık diye kopyalıyor
+
+917
+01:56:09,850 --> 01:56:14,729
+ne oldu kendi içinde sıralı iki elemanlı parçalarımız oluşmuş oldu şimdi bunları
+
+918
+01:56:14,729 --> 01:56:23,770
+birleştirmemiz lazım clear şimdi ne yapacağız üç sekiz iki dokuz şimdi üçle ikiyi
+
+919
+01:56:23,770 --> 01:56:31,850
+karşılaştıracağız ikiyi çık diye yazacağız üçle dokuzu karşılaştıracağız üçü çık diye
+
+920
+01:56:31,850 --> 01:56:38,850
+yazacağız bir arttırdık bunu da şunu arttırmıştık sekizle dokuzu karşılaştıracağız sekizi
+
+921
+01:56:38,850 --> 01:56:43,609
+çık diye yazacağız bu taraf bittiği için kalanları olduğu gibi kopyalayacağız dokuzu
+
+922
+01:56:43,609 --> 01:56:50,289
+buraya kopyaladık burada da bir ile dördü karşılaştıracak biri çık diye yazacak
+
+923
+01:56:50,289 --> 01:56:56,489
+indisini bir arttıracak yedi ile dördü karşılaştıracak dördü yazacak bir arttıracak
+
+924
+01:56:56,489 --> 01:57:05,369
+yedi ile beşi karşılaştıracak beşi yazacak bu taraf bitti o zaman kalanları yani yediyi buraya
+
+925
+01:57:05,369 --> 01:57:12,810
+kopyalayacak şimdi elimizde iki üç sekiz dokuz ve bir dört beş yedi şeklinde sıralı iki
+
+926
+01:57:12,810 --> 01:57:19,289
+tane parça bulundu ve ben şimdi bunları birleştireceğim iki ile biri karşılaştır
+
+927
+01:57:20,289 --> 01:57:27,449
+şuraya geldim iki ile dördü karşılaştır ikiyi çık diye yaz üçle dördü karşılaştır üçü
+
+928
+01:57:27,449 --> 01:57:35,569
+çık diye yaz sekizle dördü karşılaştır dördü çık diye yaz bir arttır sekizle beşi karşılaştır beşi yaz
+
+929
+01:57:35,569 --> 01:57:42,850
+sekizle yediği karşılaştır yediği yaz bu taraf bitti o zaman kalanları yani sekiz ve dokuzu
+
+930
+01:57:42,850 --> 01:57:49,289
+kullanarak buraya kopyaladım ve bir iki üç dört beş yedi sekiz dokuz şeklinde sıralanmış
+
+931
+01:57:49,289 --> 01:58:00,449
+birleştirilmiş diziyi elde etmiş oldum hemen bir başka örnek daha yapalım şunları yine
+
+932
+01:58:00,449 --> 01:58:08,689
+temizleyelim yine bu sayısal değil de harfli örneğe tekrar bakalım elimizde on altılık
+
+933
+01:58:08,689 --> 01:58:13,489
+bir dizi var [öğrenci] sort example diye bir string mesela dediğim gibi illa intikür olmak
+
+934
+01:58:13,529 --> 01:58:23,500
+değil stringleri de rahatlıkla yapabilirsiniz sıralayabilirsiniz efendim hocam hep çift sayılar
+
+935
+01:58:23,500 --> 01:58:31,060
+gidiyoruz da tek sayı olunca ortadaki şey mi yapıyoruz ne yani ortadaki yine ne yapacağız tek
+
+936
+01:58:31,060 --> 01:58:36,819
+sayı olunca şöyle yapacaksın çok basit hemen şuraya yapalım mesela diyelim ki 9 eleman var
+
+937
+01:58:36,819 --> 01:58:47,140
+o zaman mid eşittir ne dedik sıfır artı dokuz tabi şey içinde parantez içinde ölü iki
+
+938
+01:58:47,140 --> 01:58:57,279
+kaç çıkar buradan dört dört çıkar değil mi Tamam demek ki benim bir tarafta
+
+939
+01:58:57,279 --> 01:59:05,399
+lodan yani sıfır bir iki ve üç indisleri bir tarafta kalacak ondan sonra da dört beş
+
+940
+01:59:05,399 --> 01:59:12,840
+ve altı yedi sekiz indisleri bir tarafta kalacak tamam böyle böleceksiniz anladım hocam sonrasında
+
+941
+01:59:12,840 --> 01:59:20,039
+bu zaten kendi içinde sıfır bir ve iki üç olarak bölünecek bu da aynı şekilde ne olacak dört beş
+
+942
+01:59:20,039 --> 01:59:28,720
+ve altı yedi sekiz olarak bölünecek bu sıfır ve bir bu iki ve üç olarak bölündü bu dört ve beş
+
+943
+01:59:28,720 --> 01:59:38,439
+bölündü bu altı ve yedi sekiz olarak bölündü tamam mı sonra bu sıfır bir tekrar yazalım iki üç
+
+944
+01:59:38,439 --> 01:59:46,520
+dört beş altı bu da kendi içinde bölündü yedi ve sekiz olarak böldüğünüz indislere bu şekilde
+
+945
+01:59:46,520 --> 01:59:52,760
+ölebilirsiniz yani şey tek sayı çift sayı çok fark etmiyor anlatırken daha kolay diye
+
+946
+01:59:53,760 --> 02:00:01,359
+anladım ama yani şey tam sayı bölme yaptığınız için sol taraf bir eleman eksik sağ taraf bir eleman
+
+947
+02:00:01,359 --> 02:00:05,960
+fazla kalacak doğal olarak orada bir tane daha fazla divayet işlemi yapmak zorunda kalacaksınız
+
+948
+02:00:05,960 --> 02:00:16,060
+Evet şimdi buna bakalım nasıl çalışacağız yine kendi içinde rekürsif olarak biraz sonra
+
+949
+02:00:16,060 --> 02:00:20,859
+nasıl rekörjün tri'de nasıl gittiğinde göstereceğim ilk adımda ne yapıyoruz
+
+950
+02:00:20,859 --> 02:00:29,619
+ilk adımda ben bu 15'i ikiye bölüyorum 16'i ikiye bölüyorum 8-8 sonra bunu bölüyorum 4-4 bunu
+
+951
+02:00:29,619 --> 02:00:36,380
+bölüyorum 2-2 bunu bölüyorum 1-1 yani ilk olarak şuradaki sıfır ve bir indislerindeki iki
+
+952
+02:00:36,380 --> 02:00:41,699
+karakter e-m ve e kendi içinde sıralı şimdi önce bunları birleştiriyorum e mi küçük
+
+953
+02:00:41,699 --> 02:00:46,020
+m mi küçük e küçük buraya aldım kalan meyi buraya yapıştırdım şuradaki
+
+954
+02:00:46,020 --> 02:00:54,659
+bir dakika ha şuradaki ev emeği birleştirmesini yaptım Ondan sonra buradan yukarı çıkıp
+
+955
+02:00:54,659 --> 02:01:01,220
+şuraya gelmem gerekiyor ikili re ve g karşılaştırdım kendi içinde tekil tekil re ve
+
+956
+02:01:01,220 --> 02:01:06,819
+g sıralı g mi küçük re mi küçük birleştirirken g küçük re de öbür tarafa kopyalandı
+
+957
+02:01:07,020 --> 02:01:13,140
+sonra ben hala en sol tarafı bitirmeye çalışıyorum ya rekörjün de böyle ağaç
+
+958
+02:01:13,140 --> 02:01:17,380
+şeklinde gittiğim için hatırlarsanız 1-2-3-4 diye önceki slide'da yazmıştım
+
+959
+02:01:17,380 --> 02:01:23,060
+e-m-g-r'i birleştiriyorum artık o mu küçük bu mu küçük demeyeceğim direkt
+
+960
+02:01:23,060 --> 02:01:30,060
+olarak e-g-m ve re şeklinde çıktığı oluşturdum şimdi ben neyi bitirmiş oldum
+
+961
+02:01:30,060 --> 02:01:37,819
+aslında 16'lının 8 tarafının ilk 8 tarafının ilk 4 tarafının önce ilk ikisini sonra
+
+962
+02:01:37,819 --> 02:01:43,619
+diğer ikisini ve sonrada ilk dörtlüyü bitirdim yani ben şuraya kadar bu işlemi tamamlamış oldum
+
+963
+02:01:43,619 --> 02:01:48,220
+ne yapacağım şimdi burayı yapacağım ama bunu da yine divide ettiğim için önce sol
+
+964
+02:01:48,220 --> 02:01:56,180
+tarafını yani e ve s'yi kendi içinde sıraladım es şeklinde kaldı ovr'yi sıraladım m n o p r
+
+965
+02:01:56,180 --> 02:02:04,979
+gittiği için ovr şeklinde sıralandı birleştirdim nasıl gelecek e o p r s diye gelecek e
+
+966
+02:02:04,979 --> 02:02:10,500
+or şeklinde bunu da sıraladım bu tarafta bitti şimdi ne yapmam lazım sol tarafı kendi
+
+967
+02:02:10,500 --> 02:02:16,659
+içindeki mörcünü tamamlamam lazım yani e-g-m-r ve e-o-r-s'yi bir araya getirmem lazım
+
+968
+02:02:16,659 --> 02:02:31,899
+şöyle gideceğiz e geldi e geldi g-m-o-r şu re ondan sonra re ve s şeklinde birleşti
+
+969
+02:02:31,899 --> 02:02:49,500
+sonra bunları şöyle oklarla gösterelim şu e bu e g ondan sonra m o ilk re ikinci re ve s
+
+970
+02:02:49,500 --> 02:02:59,340
+evet tam olarak bu şekilde oluştu sonra işi sol tarafı bitirdiğime göre sağ tarafına
+
+971
+02:02:59,340 --> 02:03:06,140
+geçiyorum geçmeye çalışıyorum geçiyorum sekizinci adımdan itibaren t ve e kendi
+
+972
+02:03:06,140 --> 02:03:13,300
+içinde teki sıralı birleştirdim ev t haline geldi hemen birleştirelim et sonra bunu
+
+973
+02:03:13,300 --> 02:03:18,220
+sağ tarafına geçtim ikinin x ve a a x şeklinde sıralandı şimdi bu dörtlüğü
+
+974
+02:03:18,220 --> 02:03:25,819
+bitirmem lazım yani bu parçanın sol tarafını tamamlamam lazım a e t ve x şeklinde
+
+975
+02:03:25,819 --> 02:03:31,300
+sıraladım sol dörtlüğü bitirdiğime göre sağ dörtlüğe geçmem lazım sağ dörtlüğün
+
+976
+02:03:31,300 --> 02:03:37,819
+önce sol tarafını yapacağım m ve p sıraladımda mp şeklinde oldu l ve e sıralımda
+
+977
+02:03:37,819 --> 02:03:44,699
+el olarak birleşti sonra da e le ve mp'de direkt olarak çıktı yazdık sağ tarafın
+
+978
+02:03:44,699 --> 02:03:51,420
+sağı da bittiğine göre artık bunun tamamını birleştirmem mörc etmem lazım
+
+979
+02:03:51,420 --> 02:04:06,380
+bunu da yine hemen oklarımızla yapalım a geldi e bu e geldi bu e geldi le me pe ondan
+
+980
+02:04:06,380 --> 02:04:12,380
+sonra bunları da kopyaladım buraya kalanları tvx bu şekilde birleştirdim şimdi elimde
+
+981
+02:04:12,380 --> 02:04:23,020
+var şimdi elimde iki tane kendi içinde sıralı sekizli var şu parça aslında dur bir
+
+982
+02:04:23,020 --> 02:04:30,899
+dakika onu da başka renkte yapalım yine tutturamıyorum şu parçayla şu parça var
+
+983
+02:04:31,899 --> 02:04:45,210
+tamam onları birleştireceğim ne yapacağız ayı aldık e'yi aldık bu sarıyı beğenmedim ya
+
+984
+02:04:46,609 --> 02:05:03,479
+turuncu ile yapayım ayı aldık bu e geldi bu e geldi şu e geldi şu e geldi g geldi le geldi ilk
+
+985
+02:05:04,359 --> 02:05:21,800
+e ikinci me o p r s t ve x şeklinde sıralamayı kopyalı yapıştır gerçekleştirmiş olduk
+
+986
+02:05:22,720 --> 02:05:34,520
+şimdi bu niye tap dağ mört sort gördüğünüz gibi Aslında ben şöyle gidersem soldan
+
+987
+02:05:34,520 --> 02:05:38,880
+başlayıp sağa doğru bir şekilde buradaki mörc işlemlerini yapıyorum bakın bunu bunu
+
+988
+02:05:38,880 --> 02:05:46,159
+bunu bunu bunu ve bunu sonrasında bu tarafa geçiyorum bunu bunu bunu solu
+
+989
+02:05:46,159 --> 02:05:51,520
+sağı tamamını ve bütün hepsini sol ve sağı büyük parçalarını birleştiriyorum yukardan
+
+990
+02:05:51,560 --> 02:05:59,079
+sağa doğru bir gidiş olduğu için buna tap dağ mörc sort adını veriyoruz bunun
+
+991
+02:05:59,079 --> 02:06:05,720
+recursion treesine bakarsak eğer Aslında benim çağırırken ilk yaptığım şey left ve right
+
+992
+02:06:05,720 --> 02:06:12,520
+için ya da love ve hi için sıfırla 15 indislerini kullanmakta değil mi sıfır 15 kullandığımda
+
+993
+02:06:12,520 --> 02:06:21,039
+bu kendi içinde aslında iki kere iki çeğe bölecek sıfırdan yediye tamam sıfırdan yediyenin
+
+994
+02:06:21,039 --> 02:06:27,920
+de de doğal olarak sıfırdan üçe olacak solun solu solu diye gidiyorum bir daha böldüğümde
+
+995
+02:06:27,920 --> 02:06:33,159
+de sıfırla biri mört sort edeceğim şimdi artık daha fazla bölemiyorum tamam sıfırla
+
+996
+02:06:33,159 --> 02:06:39,479
+bir oldu bir şey yaptımda birle sıfır ters olacak o zaman ne yapacağım mörc işlemine
+
+997
+02:06:39,479 --> 02:06:46,800
+geçeceğim love mid ve hi şeklinde de left mid ya da right şeklinde de okuyabilirsiniz
+
+998
+02:06:46,840 --> 02:06:53,399
+mörc işlemini gerçekleştireceğim bu taraf bitince neye geçiyorum 2 3'e geçiyorum yani
+
+999
+02:06:53,399 --> 02:07:00,600
+üçüncü ve dördüncü elemanları mörc sorta sokuyorum burada da kendi içinde a 223 yani
+
+1000
+02:07:00,600 --> 02:07:06,600
+love ve hi şeklinde ve mid şeklinde tekrar mörc ediliyor bu işlem bu iki mörc sort bittiğine
+
+1001
+02:07:06,600 --> 02:07:14,000
+göre ben artık sıfırdan üçe kadar olan kısmı mörc ediyorum yani şu kısmı e g m r i mörc
+
+1002
+02:07:14,000 --> 02:07:19,520
+yapıyorum sonra ne yapacağım gördüğünüz gibi şurada es or yani bu taraftakileri
+
+1003
+02:07:19,520 --> 02:07:25,680
+halletmem lazım mörc sort a'dan dörtle yedi arasını yapacak o da kendi içinde dörtten
+
+1004
+02:07:25,680 --> 02:07:29,920
+beşe kadar yapacak daha fazla bölemediği için bunları mörc edecek dört dört beş
+
+1005
+02:07:29,920 --> 02:07:36,399
+şeklindeki indislerden sonra sağına geçecek 6 ve 7 ye mörc edecek daha fazla bölemediği
+
+1006
+02:07:36,399 --> 02:07:42,159
+için 6 6 7 şeklinde mörc edecek sonrasında da bu 2 2 dörtlü olarak birleştirecek
+
+1007
+02:07:42,159 --> 02:07:48,800
+dörtten yediye beşten beşinci karakterden sekizinci karakter kadar olan karakterleri
+
+1008
+02:07:48,800 --> 02:07:54,520
+bir araya getirecek sonuçta ne oldu ben sıfırdan yediye kadar yani ilk 8 karakteri
+
+1009
+02:07:54,520 --> 02:07:59,760
+soldaki 8 karakteri kendi içinde mörc ettiğime göre bunu birleştireceğim yani dört dört
+
+1010
+02:07:59,760 --> 02:08:05,159
+daha 8 karakteri birleştireceğim aynısını 8'den 15'e kadar için yapacağım kendi
+
+1011
+02:08:05,359 --> 02:08:13,359
+8 11 10 11 diye bölecek 8 11 de içinde 8 9 pardon 8 9 ve 10 11 diye böleceğim 8 9'u
+
+1012
+02:08:13,359 --> 02:08:17,439
+daha fazla bölemediğim için mörc edeceğim 10 11'i bölemediğim için mörc edeceğim
+
+1013
+02:08:17,439 --> 02:08:23,119
+sonuçta da 8'den 11'e kadar olan dörtlüyü mörc edeceğim ne kaldı elimde en sağdaki
+
+1014
+02:08:23,119 --> 02:08:29,239
+dörtlü kaldı 12'den 15'e bunda kendi içinde 12 13 14 15 şeklinde mörc sort edeceğim
+
+1015
+02:08:29,359 --> 02:08:36,560
+bunları birleştireceğim 12'den 15'e 8'den 15'e birleştireceğim sağdaki 8'liyi bitirmiş oldum
+
+1016
+02:08:36,560 --> 02:08:44,760
+en son olarak da soldaki 8'li sıfırdan yediye ve sağdaki 8'li yani 8'den 15'e kadar
+
+1017
+02:08:44,760 --> 02:08:52,840
+olanları birleştirdiğimde de ben burada 16 haneli 16 tane elemanı olan dizinin
+
+1018
+02:08:52,840 --> 02:08:59,359
+sıralanmış halini çıktı olarak üreteceğim işte a e g l m bilmem ne diye x'e doğru giden
+
+1019
+02:08:59,359 --> 02:09:05,760
+sırayı oluşturmuş olacağım yukarıdan aşağı dememizin sebebi bu tam olarak peki
+
+1020
+02:09:05,760 --> 02:09:12,359
+eee bunun bir de karmaşıklığına hızlıca bakalım çok detayına girmeyeceğim ama şöyle
+
+1021
+02:09:12,359 --> 02:09:20,079
+bir yapı var eee şuraya kadar geri geleyim burada bakarsanız 8 elemanı ben bölüyorum
+
+1022
+02:09:20,119 --> 02:09:24,520
+ve ikiye ikiye bölüyorum bu ne demek aslında ikili bir ağaç yapısı görüyorsunuz burada
+
+1023
+02:09:24,520 --> 02:09:33,560
+eee kaç tane tekil eleman var burada 8 tane kaç seviye olabilir 200'leri kaç 8'e der 3
+
+1024
+02:09:33,560 --> 02:09:40,600
+baktığımızda 1 2 3 seviye var demek ki aslında ben eee gördüğünüz gibi log n yani
+
+1025
+02:09:40,600 --> 02:09:46,880
+yükseklikli ağacın yüksekliğiyle orantılı bir şekilde bölme işlemi gerçekleştiriyorum
+
+1026
+02:09:47,079 --> 02:09:54,880
+sonrasında ben eee ne demektir bu log n mertebesinde bölme işlemi gerçekleştiriyorum
+
+1027
+02:09:54,880 --> 02:10:01,560
+demektir her bir bölünmüş parçayı da aslında enlik bir işleme tabi tutuyorum değil mi
+
+1028
+02:10:01,560 --> 02:10:06,479
+aslında c enlik bir işleme tabi tutuyorum eee neden mesela burada enlik bir dizi
+
+1029
+02:10:06,479 --> 02:10:11,199
+kopyalaması yaptık farkındaysanız tabi o en ufalıyor ama toplamda büyük en
+
+1030
+02:10:11,199 --> 02:10:17,600
+ufalıyor eee ne demek istiyorum log n mertebesinde en tane işlem yapıyorum
+
+1031
+02:10:17,600 --> 02:10:23,000
+değil mi burada 8 tane log 8 gibi düşünün 8 tane log enlik işlem yapıyorum demek
+
+1032
+02:10:23,000 --> 02:10:30,159
+ki ben en tane log n işlem yapmak zorundayım hem divide edip sonrasında da konkür edebilmek
+
+1033
+02:10:30,159 --> 02:10:36,399
+için işte bu nedenle kabaca baktığımızda eee mersort'un kötü durum karmaşıklık
+
+1034
+02:10:36,399 --> 02:10:41,960
+mertebesini büyük o notasyonda en log n olarak veririz kabaca dediğim gibi n tane
+
+1035
+02:10:41,960 --> 02:10:48,520
+seviye log n tane adımda işlenebilir ya da işte ka seviyeler sıfırdan eneksi
+
+1036
+02:10:48,520 --> 02:10:54,520
+bire kadar gider her bir kancı seviyede iki üzeri ka tane alt dizi bulunur uzunlukları
+
+1037
+02:10:54,520 --> 02:10:59,399
+da iki üzeri eneksi ka kadardır iki üzeri eneksi ka tane karşılaştırma yapmanız
+
+1038
+02:10:59,399 --> 02:11:04,399
+gerekecektir çarptığınızda her en için iki üzeri en şeklinde işlem yapacaksınız
+
+1039
+02:11:04,399 --> 02:11:10,319
+en çarpı iki üzeri en tabii ki bu en küçük en farkındaysanız yani bir mesela son
+
+1040
+02:11:10,319 --> 02:11:16,960
+şeye düştüğünüzde bunu birleştirdiğinizde büyük en'e daha doğrusu dönüştürdüğünüzde
+
+1041
+02:11:16,960 --> 02:11:21,159
+şimdi bu dönüşüm burada göstereceğim bunun ispatı biraz uzun fakat şöyle
+
+1042
+02:11:21,159 --> 02:11:27,760
+yapacaksınız eee recursion kompleksi hani t'leri yazıyoruz ya o şekilde yazarak
+
+1043
+02:11:27,760 --> 02:11:32,119
+topladığınızda bu işlemleri gerçekleştirdiğinizde de en log n mertebesine
+
+1044
+02:11:32,319 --> 02:11:41,479
+görebilirsiniz ama kabaca dediğim gibi ben bunu böldüğümde log n mertebesinde derinliğe
+
+1045
+02:11:41,479 --> 02:11:48,199
+sahip bir ağaç elde ediyorum log n tane işlem yapmam lazım her birinde de en adımlı
+
+1046
+02:11:48,199 --> 02:11:53,159
+bir işlem yapmam lazım en tane log n işlem yapmak zorunda kalıyorum diye hızlı bir
+
+1047
+02:11:53,159 --> 02:11:59,039
+şekilde karmaşıklığını analiz edebilirsiniz gerçekte bakacak olursanız gerçekte
+
+1048
+02:11:59,039 --> 02:12:04,119
+bunun bulaşında bir de c var dedim yani c en bunun c'si de altıdır yani aslında
+
+1049
+02:12:04,119 --> 02:12:10,680
+sizin mörç sort yaparken toplamda altı en log n'lik dizi erişiminiz vardır tamam mı
+
+1050
+02:12:10,680 --> 02:12:17,920
+bu altı en nereden geliyor her bir mörç işleminde iki en tane kopya iki en tane
+
+1051
+02:12:17,920 --> 02:12:23,600
+geri taşıma iki en tane de karşılaştırma yapmak zorundasınız bu nedenle de her
+
+1052
+02:12:23,600 --> 02:12:31,359
+işte altı enlik bir işlem yapmanız lazım log n tane altı en yaptığınızda da altı
+
+1053
+02:12:31,359 --> 02:12:37,079
+en log n'lik aslında bir karmaşıklığınız var ama biz big o'da biliyorsunuz katsayıları
+
+1054
+02:12:37,079 --> 02:12:43,039
+kullanmadığımız için şuradaki en log n mertebesine ulaşmış oluyoruz.
+
+1055
+02:12:43,039 --> 02:12:52,079
+Şunu bir görselleştireyim istedim bunu aslında kitaptan aldım yine sevgi vikin
+
+1056
+02:12:52,159 --> 02:12:59,079
+bu bundan top down mörç sort'un nasıl çalıştığına dair bir görselleştirme burada
+
+1057
+02:12:59,079 --> 02:13:04,920
+çubuklar rastgele sayılar hani mesela şu bir şu da mesela ne bileyim 15 gibi düşünün tamam
+
+1058
+02:13:04,920 --> 02:13:12,079
+ya da daha fazla neyse birden yüze kadar falan sayılar var rastgele ben top down diye bakın
+
+1059
+02:13:12,079 --> 02:13:16,119
+en soldan başlayıp en sağ doğru kendi içinde parçaları sıralıyorum.
+
+1060
+02:13:16,319 --> 02:13:24,920
+Eee şuradan toolbox'umdan bir şey alayım bakın bu ilk parça sol aslında nasıl böldük
+
+1061
+02:13:24,920 --> 02:13:32,960
+biz bunu şuradan kırmızı çizgi alalım önce şunu böldük tam orta olduğunu kabul edin sonra
+
+1062
+02:13:32,960 --> 02:13:40,039
+Eee dur tam bölememişim bir dakika geri al aslında şuradan şöyle hizalırsak
+
+1063
+02:13:40,079 --> 02:13:50,399
+ha şöyle yapalım tamam mı önce bunu böldüm sonra şunu böldüm idare edin biraz sola kaydı
+
+1064
+02:13:50,399 --> 02:14:00,039
+sonra şunu böldüm tamam ve bunu kendi içinde mörç ettim mörç ettiğimde bu kendi içinde
+
+1065
+02:14:00,039 --> 02:14:06,239
+sıralanmış oldu sonra bu parçayı mörç ettim bu da bakın ilk başta şöyleydi kendi
+
+1066
+02:14:06,279 --> 02:14:13,199
+böyle sıralanmış oldu sonra bu parçayı ve bu parçayı mörç ettim şunu ve şunu mörç
+
+1067
+02:14:13,199 --> 02:14:18,239
+ettiğimde de kendi içinde bu şekilde sıralı bir parçacık oluştu dizinin bu tarafı hala
+
+1068
+02:14:18,239 --> 02:14:24,279
+karman çorma sonra bu tarafa geçtim kendi içinde sıraladım bu tarafa geçtim
+
+1069
+02:14:24,279 --> 02:14:29,840
+şöyleydi kendi içinde sıraladım sonra bu ikisini mörç ettim kendi içinde şu şekilde
+
+1070
+02:14:29,840 --> 02:14:36,199
+bu parçayı sıralandı sonra bununla bunu mörç ettim burada da ilk yarıyı sıralamış oldum
+
+1071
+02:14:36,199 --> 02:14:44,079
+aynı şekilde burayı burayı birleştir şurayı sırala şurayı sırala birleştir Ondan sonra
+
+1072
+02:14:44,079 --> 02:14:49,920
+şununla şunu birleştir elimizde bu oldu baktığımızda bakın şöyle şöyle sıralı bir
+
+1073
+02:14:49,920 --> 02:14:56,279
+dizi var bunları da mörç ettiğinizde bu şekilde a'dan z'ye ya da küçükten
+
+1074
+02:14:56,279 --> 02:15:03,000
+böyle sıralanmış değerlerin nasıl oluştuğunu görebiliyorsunuz bir YouTube paylaşıldı
+
+1075
+02:15:03,000 --> 02:15:10,640
+geçenlerde izlemiş iki tane YouTube geldi tamam onlara da bakarsınız YouTube'dan bunların
+
+1076
+02:15:10,640 --> 02:15:15,439
+nasıl şıkır şıkır şıkır böyle kendi içinde sıralanarak birleştiğini de görebilirsiniz
+
+1077
+02:15:15,439 --> 02:15:27,579
+Evet mausul toolbox'tan mausul seçtiğinizde iki kere seçmeniz gerekiyor şeyi var
+
+1078
+02:15:27,579 --> 02:15:43,359
+anladım tamam saat kaç oldu ya Batımap mörç sortu da mı yapsak bakayım tamam hadi
+
+1079
+02:15:43,359 --> 02:15:49,199
+onu da yapalım Ondan sonra bırakalım ara vermedik şimdi Batımap mörç sortu da
+
+1080
+02:15:49,199 --> 02:15:55,359
+tap dağ mörç sortun tam aslında tersi niye tersi ben şunu yapmaya çalışıyorum
+
+1081
+02:15:55,399 --> 02:16:03,800
+acaba ben bunları diziyi 1 1 ondan sonra 2 2 4 4 8 8 en bölü 2 en bölü 2 ye kadar
+
+1082
+02:16:03,800 --> 02:16:11,560
+birleştire birleştire gidemez miyim yani bir küçük kendi içindeki parçaları direkt olarak
+
+1083
+02:16:11,560 --> 02:16:18,079
+mörç edeyim ondan sort edeyim sonrasında da sort ettiklerimi mörç edeyim şeklinde
+
+1084
+02:16:18,079 --> 02:16:24,199
+bir yaklaşım sergileyemez miyim tabii ki yapabilirsiniz bu durumda da aslında
+
+1085
+02:16:24,239 --> 02:16:30,920
+biraz daha karlısınız şu şekilde 1 bölü 2 enlogen ile 6 tabi bu 6 biliyorsunuz
+
+1086
+02:16:30,920 --> 02:16:38,360
+bu top down'da da altıydı 6 enlogen arasında karşılaştırma yapmanız ve 6 enlogen
+
+1087
+02:16:38,360 --> 02:16:46,760
+dizi erişimi yapmanız gerekiyor şimdi burada direkt algoritmasını sonra incelersiniz
+
+1088
+02:16:46,760 --> 02:16:52,200
+aslında yaptığımız şey örnek üzerinde anlattığımda daha iyi anlayacaksınız şimdi
+
+1089
+02:16:52,200 --> 02:16:57,479
+ben bir size'a ihtiyacım var yani bir sub array size'e ihtiyacım var
+
+1090
+02:16:57,479 --> 02:17:02,760
+ben bunu birden başlatacağım ve ikinin katları şeklinde büyüteceğim neden
+
+1091
+02:17:02,760 --> 02:17:08,840
+1'li 1'li git bunları birleştir sonra ikilileri birleştir sonra dörtlüleri birleştir
+
+1092
+02:17:08,840 --> 02:17:16,280
+sekizlileri birleştir şeklinde büyüterek gitmem lazım işte önce en altta olan
+
+1093
+02:17:16,280 --> 02:17:22,440
+batımda olan ikilileri 1-1 yani size eşitleri birden başlayarak ikili haline
+
+1094
+02:17:22,440 --> 02:17:27,319
+getirmem gerekiyor sonra ikilileri dörtlüler haline dörtlüleri sekizler haline getirmem
+
+1095
+02:17:27,319 --> 02:17:32,680
+gerekiyor bu şekilde birleştirme git gide büyüterek gittiğimiz için de
+
+1096
+02:17:32,680 --> 02:17:40,360
+batım up şeklinde isimlendiriyoruz buradaki yaklaşımı onur bir şey mi diyeceksin
+
+1097
+02:17:41,159 --> 02:17:43,959
+yok hocam peki
+
+1098
+02:17:43,959 --> 02:17:51,079
+mikrofon açınca bir şey diyeceksin sandım şimdi nasıl yapacağız bakın size eşittir 1 ne demektir
+
+1099
+02:17:51,079 --> 02:17:56,360
+1'lileri birleştir yani ikililer oluştur diyorum nasıl yapacağım m ile eyi birleştirdim
+
+1100
+02:17:56,360 --> 02:18:03,639
+birleştirmeye çalışıyorum birleştirdim m şeklinde bunlar sıralandı r ile g'yi birleştiriyorum
+
+1101
+02:18:03,799 --> 02:18:14,840
+bakın sıfırla 1'i yaptım şöyle göstereyim çizemedik ya sıfırla 1 2 ile 3 4 ile 5 6 ile 7 8 ile 9
+
+1102
+02:18:14,840 --> 02:18:21,079
+tek sayı kalırsa sonunda tek kalacak gördüğünüz gibi 14 ile 15 16 olsaydı şu da 17 eleman olsaydı
+
+1103
+02:18:21,079 --> 02:18:30,200
+şu da şurada bir tane kalacaktı tamam birleştirdik em gr sonra bunu birleştirdik es sonra bunu
+
+1104
+02:18:30,200 --> 02:18:41,239
+birleştirdik or'e 8 ile 9'a baktık et 10 ile 11'e baktık ax 12 ile 13'e baktık mp 14 ile 15'e
+
+1105
+02:18:41,239 --> 02:18:46,200
+baktık el şeklinde kendi içinde sıralandı şimdi ben neyi biliyorum batım tarafta birliler
+
+1106
+02:18:46,200 --> 02:18:51,959
+bitti ve sıralı olduğunu garanti ettiğim ikililerim var artık o zaman ben size 1 arttıracağım
+
+1107
+02:18:51,959 --> 02:19:03,989
+size artı size yapacağım yani size 2 ile çarpacağım ve şunları temizleyelim şimdi size eşittir 2 için yapacağım
+
+1108
+02:19:03,989 --> 02:19:11,989
+bu ne demektir ikilileri birleştirip dörtlü haline getireceğim hemen bakalım ilk soldaki dörtlüyü şöyle
+
+1109
+02:19:11,989 --> 02:19:17,350
+aslında birleştirmiş olacağım şunları böyle birleştireceğim bunları böyle bunları da böyle
+
+1110
+02:19:17,350 --> 02:19:24,229
+birleştireceğim tam dört tane elimde dörtlü olacak yani merg şeklindeydi önceki
+
+1111
+02:19:24,229 --> 02:19:34,469
+slide'da dönmeye çalışırsak evet em gr şeklindeydi tamam bunları sıraladığımda e g m r'yi elde ettim
+
+1112
+02:19:34,469 --> 02:19:44,219
+yine mörj yapıyorum burada buradakileri önceki slide'dan hatırlarsanız şey yaparsanız
+
+1113
+02:19:44,219 --> 02:19:50,860
+birleştirdiğinizde e o r s'yi elde ettim fark etmez şurada bile gözle halledebilirsiniz bunları
+
+1114
+02:19:50,860 --> 02:19:56,219
+sıraladığımda a e t x elde ettim ama unutmayın bunları bir önceki adımdaki ikillerden oluşturuyorsunuz
+
+1115
+02:19:56,219 --> 02:20:04,860
+burada da e l m p'yi oluşturduğum şimdi size'ı bir yine iki ile çarptım yani bir art 2 arttırdım
+
+1116
+02:20:04,860 --> 02:20:11,340
+diyelim size 2 idi size 4 oldu şurada gördüğümüz gibi ne demek bu dörtlüleri birleştir dört dört daha
+
+1117
+02:20:11,420 --> 02:20:31,819
+gizliler elde et e yine burada ok kullanalım şöyle e geldi e geldi g m o r buraya ve bu s tamam sonra işte a geldi
+
+1118
+02:20:32,780 --> 02:20:46,780
+e geldi e geldi l m p geldi t x de buraya kopyalandı şimdi artık elimde iki tane sekizli var
+
+1119
+02:20:46,780 --> 02:20:55,299
+say 2 ile çarpıyorum dört çarpı 2 sekiz artık size'ım şeyde kaldı size'ım 8 oldu artık
+
+1120
+02:20:55,459 --> 02:21:05,860
+sekizleri birleştireceğim işte e e g m o r r s ile a e l m p t x sekizlerini birleştireceğim işte a buraya
+
+1121
+02:21:05,860 --> 02:21:15,219
+geldi e geldi e geldi t geldi x geldi diye buradaki işlemleri gerçekleştirdim bu da ufaktan
+
+1122
+02:21:15,780 --> 02:21:25,659
+yani 0 1 2 3 4 5 6 7 ondan sonrasında 0 1 2 3 ve 4 5 6 7 en son olarak da 0 1 2 3 4 5 6 7
+
+1123
+02:21:25,659 --> 02:21:33,700
+birleştirip hani size'ı ikinin katları şeklinde arttırarak birleştire birleştire yerinde
+
+1124
+02:21:33,700 --> 02:21:40,979
+sıralama örneği bir öncekinde önce bölüp sonra birleştiriyorduk burada şey yapmaya
+
+1125
+02:21:40,979 --> 02:21:46,139
+çalışıyoruz yani biz zaten hani iki iki ya da bir birden başlıyoruz ya onu ikili haline
+
+1126
+02:21:46,139 --> 02:21:50,379
+getirelim birleştirip dörtlü haline geçirelim birleştirip sekizli haline getirelim şeklinde
+
+1127
+02:21:50,379 --> 02:22:00,180
+ilerlemeye çalışıyoruz analizine baktığımızda da aslında mörc'ü nasıl çağırıyoruz mörc 0
+
+1128
+02:22:00,180 --> 02:22:08,379
+1 dediğimizde şunu yaptık m ve e'yi eme şeklinde sıraladık mörc 2 3 dediğimde 2 ile 3
+
+1129
+02:22:08,379 --> 02:22:16,379
+sıraladım mörc 4 5 dediğimde mid her zaman yine 4 4 5 midleri okumayacağım 4 ile 5'i sıraladım
+
+1130
+02:22:16,379 --> 02:22:23,659
+6 ile 7'i sıraladım 8 ile 9'u 10 ile 11 12 ile 13 14 ile de 15'i sıraladım ikililer bitti
+
+1131
+02:22:23,659 --> 02:22:33,979
+sonra size 2 ile çarptım size 2 oldu ne demek bu 0'dan 3'e mörc et yani eme ile gr'yi
+
+1132
+02:22:34,540 --> 02:22:46,780
+yap 4'ten 7'e mörc et şuradaki s oru e ors haline getir 8'den 11'e et a x'i a et x haline getir
+
+1133
+02:22:46,780 --> 02:23:00,899
+12'den 15'e mp el'i el'e mp haline getir dedik 2 ile çarptık s'yi 4 oldu 0'dan 7'e şuradaki
+
+1134
+02:23:00,899 --> 02:23:09,739
+lmr e ors'yi şu hale getirdi sonrasında 8'den 15'e a et x'i el'e mp'li birleştirdik 2 ile
+
+1135
+02:23:09,739 --> 02:23:17,100
+çarptık 8 oldu 0'dan 15'e mörc ettik hepsi bir araya geldi ve a'dan başlayıp x'e kadar
+
+1136
+02:23:17,100 --> 02:23:25,739
+giden sıralı son dizimizi elde etmiş olduk bu da bir başka mörc sort yaklaşımı bottom up
+
+1137
+02:23:26,299 --> 02:23:34,700
+dediğimiz yöntem bunu görselleştirdiğimizde de şunu görüyoruz size 1'deyken yaptığımız şey
+
+1138
+02:23:34,700 --> 02:23:47,100
+aslında şöyle çizemedim şu kendi içinde sıralı bu kendi içinde sıralı şöyle aralardan şey yapayım da
+
+1139
+02:23:47,100 --> 02:23:55,540
+birer birer çizersem daha iyi olacak şöyle tamam bu kendi içinde sıralı bu bu ikililer kendi içinde sıralı
+
+1140
+02:23:55,940 --> 02:24:04,340
+bu şekilde sonrasında size 2 yaptığınızda da dörtlüler kendi içinde sıralı hale geliyor
+
+1141
+02:24:04,340 --> 02:24:14,559
+şöyle şöyle yaparsam 1 2 3 4 anlıyor biliyorsunuz değil mi takip etmesi biraz daha kolay hale geldi
+
+1142
+02:24:14,559 --> 02:24:23,059
+becerebildiğim kadar çizmeye çalıştım sonra da bakın iki kalmış yine şunu da şöyle çizebiliriz
+
+1143
+02:24:23,059 --> 02:24:32,620
+ondan sonra size 2 ile büyüttüğümüzde aslında 8'liler kendi içinde sıralı hale gelmeye başlıyor zaten görüyorsunuz
+
+1144
+02:24:32,620 --> 02:24:40,540
+şöyle şöyle sonra 2 ile çarptık bu sefer 16'liler kendi içinde sıralı hale gelmeye başlıyor
+
+1145
+02:24:40,540 --> 02:24:48,379
+burada 16'dan az var şöyle çizelim sonra 2 ile çarpmışız mesela 16 ne demek bu 32'liler kendi içinde sıralı
+
+1146
+02:24:48,379 --> 02:24:56,739
+bunda 32 tane yok olsun sonra da daha da büyütemiyoruz zaten 32 yaptık sayısı diyelim zaten dizinin toplan boyutu
+
+1147
+02:24:56,739 --> 02:25:06,299
+tamamını mörce etmem gerekiyor bu da sıfırdan n'e kadar olanları sıralamayı sağlıyor şimdi şunları temizleyip
+
+1148
+02:25:07,579 --> 02:25:17,540
+tekrar şöyle geri geleceğim bakarsak bakın burada mesela mörce ederken a'yı love mid ve high olarak alıyorduk hatırlarsanız
+
+1149
+02:25:17,579 --> 02:25:26,219
+ama hayda bakın iki tane seçenekten minimum olanını al diyor nedir bu i artı s artı s eksi bir ya da n eksi bir
+
+1150
+02:25:26,219 --> 02:25:36,700
+yani sonda gördüğümüz gibi hep ikinin katı kalmak zorunda değil ikinin katı kalmadıysa n eksi bire kadar olanını al şeklinde yapıyoruz
+
+1151
+02:25:36,700 --> 02:25:44,219
+ve bunun da şuradaki görselleştirme de nasıl sonda böyle iki kaldı sonda biraz işte 6 kaldı
+
+1152
+02:25:44,219 --> 02:25:58,579
+sonda 16 32 32'den az bir şey kaldı pardon 16 16 şurada 16'dan az kaldı 1 2 3 4 5 6 7 8 9 10 11 12 13 14 tane kalmış burada
+
+1153
+02:25:58,579 --> 02:26:10,899
+burada 32'den çok daha az kaldığını görüyoruz ama 32 mi pardon 16 mı yoksa n eksi bir mi hangisi küçüksü 16 dediğimiz için burada n eksi bir daha küçük olduğu için
+
+1154
+02:26:11,100 --> 02:26:20,700
+burada 32 tane eleman varken kendi içinde sıralı alt parça burada daha az sayıda var bunu garanti etmiş oluyorsunuz şuradaki algoritmadaki
+
+1155
+02:26:20,700 --> 02:26:31,100
+ve mörce ederkenki sağ tarafın şu ya da şunun minimumunu al diyerek artımlar da iki s artı s şeklinde ilerliyor onu da buradan takip edebilirsiniz
+
+1156
+02:26:31,100 --> 02:26:40,899
+size önce bir dış döngüde neden size 1 için size 2 için size 4 için 8 için 16 için şeklinde gitmem gerekiyor
+
+1157
+02:26:40,899 --> 02:26:57,979
+ve içinde de her birini kendi içinde mörç ede ede devam etmem gerekiyor her bir parçayı soldan sağa doğru 0 1 2 3 4 5 ya da 0'dan 4'de zaman 0'dan 3'e dıdıdıd şeklinde
+
+1158
+02:26:59,620 --> 02:27:11,420
+evet bu görselleştirmelerinde biraz daha özellikle mörç konusunda nasıl parçaladığını ve bunları kendi içinde nasıl sıralıya sıralıya birleştirdiğini daha rahat gösterdiğini düşünüyorum
+
+1159
+02:27:11,420 --> 02:27:23,620
+bu noktada durayım saat 7 buçuk oldu arada vermedik bu haftalık burada keseyim önümüzdeki hafta yine böl ve yönete devam edeceğim
+
+1160
+02:27:23,940 --> 02:27:35,700
+eee tremino puzzle nedir nasıl çözülür buna bakacağız quick sort üzerinde duracağız ve sonrasında da zaman kalırsa
+
+1161
+02:27:35,700 --> 02:27:49,899
+özellikle basamak sıralama konusunda counting sort ve radix sort konusunda bir şeyler anlatmak istiyorum bu şekilde hem de sıralama üzerinden de zaten divide and conquer anlattık
+
+1162
+02:27:49,899 --> 02:27:59,180
+eee başka sıralama yöntemlerini de öğrenip hepsini bir arada bir karşılaştıralım da istiyorum haftaya da bu şekilde yolumuza devam ederiz
+
+1163
+02:27:59,180 --> 02:28:17,659
+bu kaçıncı haftaydı ya 10 mı 11 mi 10 ucağım 10 10 bitti mi ııı tamam 11'de divide and conquer 12 graph 13 ııı şey short sped
+
+1164
+02:28:18,219 --> 02:28:30,860
+14'de de minimum spending tree'ler falan anlatırız tamam 14 haftayı dolduruyoruz zaten eee okey tamam peki o zaman ben dediğim gibi bu haftalık burada kesiyorum arkadaşlar
+
+1165
+02:28:30,860 --> 02:28:45,260
+bir 10 dakika hani arada vermedik sürekli konuşunca ben de yoruldum siz de yorulmuşsunuzdur tavsiyem yine mert sort'u oturup bir kodlayın bottom up'ı olsun top down'ı olsun
+
+1166
+02:28:45,260 --> 02:28:54,459
+bunları deneyin eee bu şekilde daha iyi oturacaktır örneklerle gördüğünüz gibi anlatmak görselleştirmek biraz daha işi rahatlatıyor
+
+1167
+02:28:54,459 --> 02:29:08,299
+eee fakat kendiniz yaparsanız dediğim gibi her zaman daha iyi olacaktır daha iyi oturacaktır eee ben de hepinize teşekkür ediyorum dinlediğiniz için haftaya görüşmek üzere hoşçakalın
+
+1168
+02:29:09,100 --> 02:29:11,579
+iyi akşamlar hocam
+
+1169
+02:29:11,579 --> 02:29:13,579
+iyi akşamlar
+
