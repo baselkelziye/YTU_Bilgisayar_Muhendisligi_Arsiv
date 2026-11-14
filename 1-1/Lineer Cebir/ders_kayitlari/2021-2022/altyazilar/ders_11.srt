@@ -1,0 +1,2535 @@
+1
+00:01:04,212 --> 00:01:04,752
+Hoşçakalın arkadaşlar.
+
+2
+00:01:11,475 --> 00:01:12,956
+Geçen hafta ders yapamadık.
+
+3
+00:01:17,587 --> 00:01:21,387
+Benim dersim haricinde online dersiniz var mıydı geçen hafta salı günü?
+
+4
+00:01:30,195 --> 00:01:36,135
+Günaydın [öğrenci]. Geçen hafta salı var mıydı [öğrenci] dersiniz online yapamadığınız, benimkinin haricinde?
+
+5
+00:01:37,756 --> 00:01:40,756
+Dersiniz vardı hocam ama sizin dersinizden önceydi.
+
+6
+00:01:41,995 --> 00:01:43,015
+O ders oldu mu peki?
+
+7
+00:01:43,816 --> 00:01:48,756
+Ben o dersi kaçırdım hocam ama oldu diyebiliyorum sizin dersinizde problem çıktı.
+
+8
+00:01:50,415 --> 00:01:54,175
+Evet, yani 11 sularında interneti falan kestiler ondan sonra.
+
+9
+00:01:54,676 --> 00:02:18,795
+UZEM sayfasına giriş yapamadım. Daha doğrusu sonu Yıldız Yedü TR ile biten hemen hemen birçok web sitesine giriş mümkün değil diye. Yani onun telafisini yapmamız gerekiyor. Büyük bir ihtimalle bu hafta sonuna telafi dersi koyacağım. Cumartesi olur. Yani öğleden sonra. 3'te veya 4'te başlatırım. 4 çok geç olabilir. Belki 3'te başlatabilirim. Size bir mesaj atarım toplu.
+
+10
+00:02:21,044 --> 00:02:39,084
+Evet, kaç kişiyiz? 10 kişi. 12. haftadayız. Eskiden olsa bu haftada sınav yapardık biz. Ama size tek sınav yapacağımız için bu haftayı pas geçiyoruz. Final sınavı takvimi belli olmadı değil mi? Olmadı diye biliyorum.
+
+11
+00:02:39,784 --> 00:02:47,044
+Mazeret sınavlarını Ocağın 7'sinde yapacağız. Final sınavlarınızda büyük bir ihtimalle Ocak ayının 2. haftası olur. Yani ona göre şimdiden kendinizi...
+
+12
+00:02:48,756 --> 00:03:11,456
+Hazırlayın. Şimdi biz geçen hafta buradan devam ettim. Hiç hatırlamıyorsam, tarihi atmışım buraya zaten. 21-12 diye. Sorularınız var mı vektör uzaylarıyla ilgili? Bakın bu kısımlar önemli final sınavı için. Sorusu olan varsa sorularınızı cevaplayarak da başlayabilirim.
+
+13
+00:03:11,456 --> 00:03:15,456
+Eğer bir soru var, sorularınızı sorabilirim.
+
+14
+00:03:18,259 --> 00:03:19,979
+Please, don't hesitate to ask.
+
+15
+00:03:21,199 --> 00:03:21,800
+Any question?
+
+16
+00:03:25,587 --> 00:03:51,307
+All right. Let me refresh your memory first. We were talking about vector spaces, right? Vector space, what was the formal definition of vector space? You have a non-zero set, just an ordinary set, right? And you provide this set with two operations, right? Symbol is not important, okay?
+
+17
+00:03:51,860 --> 00:03:56,120
+Ve bu birçok yerine ihtiyacınız var.
+
+18
+00:03:56,120 --> 00:04:02,700
+Yani, birçok yerine bir parçok yerine ihtiyacınız var.
+
+19
+00:04:02,700 --> 00:04:06,860
+Ve birçok yerine ihtiyacınız var.
+
+20
+00:04:06,860 --> 00:04:17,360
+Bu birçok yerine ihtiyacınız var.
+
+21
+00:04:46,644 --> 00:04:53,403
+So, consider such a set, ve, there's two operations, but this is not the formal definition yet, right?
+
+22
+00:04:54,124 --> 00:04:58,343
+You have to require four properties for each operation, right?
+
+23
+00:04:58,963 --> 00:05:09,463
+Four axiom for some, and four more properties for the other application, excuse me, for the other operation, right?
+
+24
+00:05:09,463 --> 00:05:14,283
+I don't want to write, because you already know.
+
+25
+00:05:14,803 --> 00:05:20,504
+Okay. If you don't remember, I recommend you to take a look at it again. Okay.
+
+26
+00:05:24,531 --> 00:05:27,611
+We gave some examples for vector spaces.
+
+27
+00:05:28,151 --> 00:05:33,491
+Why we call such a set with this properties a vector space or a linear space?
+
+28
+00:05:33,851 --> 00:05:43,531
+That's because whenever you have a vector space, and if you consider the Euclidean space, the dimension is not important, right?
+
+29
+00:05:43,831 --> 00:05:47,031
+Just consider R2 or R3, for example, right?
+
+30
+00:05:47,811 --> 00:05:50,211
+Love dimension or 3.
+
+31
+00:05:50,836 --> 00:05:55,836
+Ve bu veklere adıcı ve veklere adıcı ve veklere adıcı ve veklere adıcı.
+
+32
+00:06:19,732 --> 00:06:36,332
+Eğer duymak için smart enough, siz de bilgisayarınız, siz de bilgisayarınızı gerekli, aynı şekilde aynı işlemini için, yeni operasyonu, bu konuları, bu konuları, vektör sprints.
+
+33
+00:06:41,812 --> 00:06:46,352
+I mentioned something about vector spaces or vector subspaces also, right?
+
+34
+00:06:46,592 --> 00:06:52,932
+What happens, for example, I'm just giving you a brief resume, right?
+
+35
+00:06:53,292 --> 00:06:59,812
+Suppose V is a vector space and you consider a subset within V, right?
+
+36
+00:07:00,472 --> 00:07:07,692
+So the question is, when such a subset W forms a vector space within V, right?
+
+37
+00:07:08,276 --> 00:07:11,355
+Bu, roughly speaking, the answer is clear.
+
+38
+00:07:11,915 --> 00:07:18,036
+If you restrict your operations to this set, both operations, right?
+
+39
+00:07:18,115 --> 00:07:19,876
+Not just one of them.
+
+40
+00:07:20,756 --> 00:07:23,936
+This means, this vertical segment means restriction.
+
+41
+00:07:24,936 --> 00:07:25,156
+Okay?
+
+42
+00:07:25,936 --> 00:07:30,276
+If the restrictions of your operations on the environmental vector space...
+
+43
+00:07:31,444 --> 00:07:55,692
+8 axiyonun yetiştirmek için bu bölümünün bir bölümünün bir bölümünün bir bölümünün bir bölümünün bir bölümünün bir bölümünün bir bölümünün bir bölümünün bir bölümünün bir bölümünün bir bölümünün bir bölümünün bir bölümünün bir bölümünün bir bölümünün bir bölümünün bir bölümünün bir bölümünün bir bölümünün bir bölümünün bir bölümünün bir bölümünün bir bölümünün bir bölümünün bir bölümünün bir bölümünün bir bölümünün bir bölümünün bir bölümünün bir bölümünün bir bölümünün bir bölümünün bir bölümünün bir bölümünün bir bölümünün bir bölümünün bir bölümünün bir bölümünün bir bölümünün bir bölümünün bir bölümünün bir böl
+
+44
+00:07:56,244 --> 00:07:59,504
+Eğitim, 8 in total, right?
+
+45
+00:07:59,624 --> 00:08:04,064
+So this doesn't look like a practical or easy, easier way.
+
+46
+00:08:04,944 --> 00:08:09,903
+So we had a theorem, which is quite nice.
+
+47
+00:08:11,423 --> 00:08:19,463
+Roughly speaking, if V is a vector space, and if you consider a subset W, this subset is a subspace.
+
+48
+00:08:22,584 --> 00:08:23,764
+If and only if.
+
+49
+00:08:25,396 --> 00:08:36,155
+I mean, the necessary and sufficient condition for W being a subspace is that you have to require or verify two conditions, right?
+
+50
+00:08:36,476 --> 00:08:40,355
+For every U, V in W, U plus.
+
+51
+00:08:41,076 --> 00:08:53,395
+V has to be in W. Of course, this new element is in V, in any case, but you see, we require that this resulting element is still in W, right?
+
+52
+00:08:54,016 --> 00:09:07,635
+And the second condition means that if you take any scalar, non-zero, of course, right, and U in W, K times,
+
+53
+00:09:09,139 --> 00:09:12,319
+U has to be in W, right?
+
+54
+00:09:12,740 --> 00:09:27,740
+Some people say simply, if for any U, V in W, and K in R, let me say, let us take two scholars, right?
+
+55
+00:09:28,659 --> 00:09:33,639
+T times U plus K times U, V, excuse me.
+
+56
+00:09:34,004 --> 00:09:43,403
+If this sum, this combination, if you prefer, still belongs to W, then W is a subspace, right? W is a subspace.
+
+57
+00:09:45,203 --> 00:09:46,044
+All right.
+
+58
+00:09:49,104 --> 00:09:51,324
+Let me show you the theorem.
+
+59
+00:09:53,463 --> 00:09:55,064
+Just to remember, right?
+
+60
+00:10:02,772 --> 00:10:28,192
+Look at this theorem. V is a vector space. These are the operations you provide. You take a non-empty subset of V, and here is the condition, necessary and sufficient condition, because if and only if, you see, necessary and sufficient condition for W being a subspace. Look at this. I would like to emphasize this term, subspace.
+
+61
+00:10:29,107 --> 00:10:51,107
+If the two conditions below occur, right? Look at the first. For any pair of vectors, when you apply the sum operation, you have to generate a new element in W, right? The second one is the multiplication, but this is a restriction if you are...
+
+62
+00:10:52,436 --> 00:11:04,495
+Bekleyin, you will realize that we are talking about restriction, right? Restriction of sum and multiplication, which we have in our vector space V, right?
+
+63
+00:11:04,916 --> 00:11:11,836
+You restrict, and if you still have closeness in W, then it will become a subspace, right?
+
+64
+00:11:12,895 --> 00:11:15,716
+If you have a question, please don't hesitate to stop me, right?
+
+65
+00:11:20,403 --> 00:11:29,084
+Trivial existing subspaces, for example, zero subspace, if you remember, every vector space has a zero element, right?
+
+66
+00:11:30,384 --> 00:11:34,084
+Every vector, I repeat, every vector space has a zero element.
+
+67
+00:11:34,903 --> 00:11:40,624
+But just consider a subset which consists of only zero and nothing else.
+
+68
+00:11:41,543 --> 00:11:46,964
+This set is a subspace, but it's a trivial subspace.
+
+69
+00:11:48,307 --> 00:11:51,608
+Çünkü you don't have any non-zero vector, right?
+
+70
+00:11:52,288 --> 00:11:56,748
+You even don't need to verify eight axioms, right?
+
+71
+00:11:56,807 --> 00:12:00,628
+Or verify the theorem to see this is a subspace.
+
+72
+00:12:00,908 --> 00:12:05,228
+Zero subspace, we don't need to speak about trivial things, right?
+
+73
+00:12:06,148 --> 00:12:11,687
+So any subset consisting only zero is a zero subspace, zero vector subspace, if you prefer.
+
+74
+00:12:12,108 --> 00:12:13,528
+Look at the second example.
+
+75
+00:12:13,919 --> 00:12:17,979
+Bu notation, whenever you see this notation, you have to understand what?
+
+76
+00:12:18,419 --> 00:12:25,559
+This is the set of all polynomials of degree, not greater than 2, right?
+
+77
+00:12:26,319 --> 00:12:28,559
+Not greater than 2. Look at this.
+
+78
+00:12:30,199 --> 00:12:37,479
+That means you, here in this set, you have a polynomial, you might have a polynomial of degree exactly 2, or
+
+79
+00:12:37,840 --> 00:12:42,879
+Degre 1, or even constant polynomial, degree 0, right?
+
+80
+00:12:43,560 --> 00:12:49,779
+So consider all kind of polynomials, all these polynomials of degree not greater than 2,
+
+81
+00:12:50,899 --> 00:12:55,980
+and add to this collection the 0 polynomial, right?
+
+82
+00:12:56,019 --> 00:13:00,379
+Because if you don't add 0 polynomial, this set will never be a vector space.
+
+83
+00:13:00,879 --> 00:13:04,680
+Why? Because any vector space has a 0 element.
+
+84
+00:13:05,268 --> 00:13:10,947
+Ve bu space of polynomials, of course, 0 element means 0 polynomial, right?
+
+85
+00:13:11,727 --> 00:13:19,947
+So, this set together with 0 polynomial is a vector space, okay?
+
+86
+00:13:20,367 --> 00:13:22,668
+And what are the operations in this vector space?
+
+87
+00:13:22,668 --> 00:13:27,987
+Of course, the summation, excuse me, the addition of polynomials, right?
+
+88
+00:13:28,847 --> 00:13:29,668
+And...
+
+89
+00:13:30,515 --> 00:13:33,076
+Scala multiplication of a polynomial, right?
+
+90
+00:13:36,096 --> 00:13:41,775
+For example, let me show you something here.
+
+91
+00:13:43,495 --> 00:13:46,035
+You consider this set, okay?
+
+92
+00:13:46,755 --> 00:13:49,055
+I suppose that zero is contained in the set, right?
+
+93
+00:13:50,135 --> 00:13:52,615
+I suppose zero is contained in the set.
+
+94
+00:13:53,355 --> 00:13:54,555
+What are the elements?
+
+95
+00:13:55,015 --> 00:13:57,535
+Polynomials of degree not greater than two.
+
+96
+00:13:57,971 --> 00:14:23,831
+That means polynomials in one variable, of course, of this time, a, b, c, the coefficient, are real numbers, right? I'm talking about this set, okay? If you take a, b, c, all zero, then you have a zero polynomial here, right? If a, b, c are all zero, then you have a zero polynomial, okay?
+
+97
+00:14:24,884 --> 00:14:37,444
+If you take, for example, if you take a is equal to zero, but b, c, not necessarily zero, then you have a polynomial of degree one, right?
+
+98
+00:14:38,224 --> 00:14:44,744
+Then degree, this is the notation, degree of pt is one, right?
+
+99
+00:14:47,084 --> 00:14:49,624
+If, for example, a is non-zero,
+
+100
+00:14:51,412 --> 00:15:07,180
+B ve C'ye neyden ney
+
+101
+00:15:10,964 --> 00:15:14,804
+Not greater than 2, in P2, right?
+
+102
+00:15:16,904 --> 00:15:24,464
+Okay, so this set is a vector subspace, and these are the standard operations here.
+
+103
+00:15:25,064 --> 00:15:28,944
+How do you sum two polynomials?
+
+104
+00:15:29,244 --> 00:15:30,304
+I think you already know, right?
+
+105
+00:15:30,364 --> 00:15:33,804
+You will simply consider the...
+
+106
+00:15:34,419 --> 00:15:39,799
+Sum of a coefficient in front of the terms of the same degree, right?
+
+107
+00:15:40,759 --> 00:15:59,959
+And you might remember this multiplication also means k times a times t to the power 2 plus k times b times t plus k times c, right?
+
+108
+00:16:04,884 --> 00:16:22,683
+I didn't write explicitly here the polynomial addition, but you know, let me write a1t2 b1t plus c1, this, suppose this is the pt, right, this polynomial.
+
+109
+00:16:24,124 --> 00:16:28,083
+Let me consider another polynomial, q of t.
+
+110
+00:16:34,964 --> 00:16:41,944
+P plus Q will give you another polynomial of the same degree, right?
+
+111
+00:16:42,543 --> 00:16:45,984
+How do you define this operation?
+
+112
+00:16:47,024 --> 00:16:52,184
+Use sum, you consider the sum of the coefficient of the term of the same degree, as I said.
+
+113
+00:16:52,744 --> 00:16:58,604
+So, what are the coefficients of the largest degree in these polynomials?
+
+114
+00:17:00,275 --> 00:17:27,675
+A1 and A2, right? So you have to sum and write in front of t to the power 2, right? And the same for the other coefficient, b plus, excuse me, b1, b2 times t plus c1 plus c2. This is the constant of the resulting polynomial, right? This is again in p2, of course, right? So these are the operations. Actually, I would like to give you a practical way.
+
+115
+00:17:28,564 --> 00:17:37,983
+Since we applied test exam for you, it will be nice to mention this connection between polynomials and vectors.
+
+116
+00:17:38,844 --> 00:17:45,084
+Whenever you have a polynomial, suppose it's a polynomial of degree exactly two, right?
+
+117
+00:17:45,084 --> 00:17:51,503
+If you have a polynomial of this type, you can represent.
+
+118
+00:17:51,743 --> 00:17:58,384
+Or you can consider equivalently this polynomial as a triple, A, B, C.
+
+119
+00:17:59,384 --> 00:18:02,103
+Is it okay for you or not, this representation?
+
+120
+00:18:02,543 --> 00:18:13,983
+Because this polynomial, P of T, whenever it's given to you, it is defined uniquely in terms of this coefficient, A, B, C, right?
+
+121
+00:18:13,983 --> 00:18:15,443
+Whenever you have this.
+
+122
+00:18:15,759 --> 00:18:23,019
+3-coefficient, you have your polynomial. If you have your polynomial, you have at hand this coefficient ABC.
+
+123
+00:18:23,960 --> 00:18:29,639
+So this representation is really clear to understand.
+
+124
+00:18:30,700 --> 00:18:42,180
+So I don't know if you realize, but the operation, the sum of two polynomials is then reduced to vector addition.
+
+125
+00:18:42,963 --> 00:18:49,284
+So, for example, let me write A1, B1, C1, right?
+
+126
+00:18:50,104 --> 00:18:58,903
+So, if you take another polynomial, if you take another polynomial, I'm using the representation, right?
+
+127
+00:18:59,104 --> 00:19:05,463
+I hope you understand what I'm writing here, in what sense I'm writing, right?
+
+128
+00:19:05,463 --> 00:19:06,991
+So, P...
+
+129
+00:19:06,991 --> 00:19:15,311
+t plus q of t is a polynomial, but this polynomial is uniquely defined or determined by its coefficient, right?
+
+130
+00:19:15,451 --> 00:19:21,412
+So it's enough for you to provide this coefficient. You have to give me this triple, okay?
+
+131
+00:19:27,827 --> 00:19:29,028
+Bu, bu, iyi bir şey.
+
+132
+00:19:30,028 --> 00:19:32,687
+Bu, iyi bir şey.
+
+133
+00:19:33,687 --> 00:19:34,947
+Bir test exam, değil mi?
+
+134
+00:19:38,087 --> 00:19:38,807
+Tamam.
+
+135
+00:19:42,579 --> 00:20:01,920
+But another example shows something very interesting. Consider instead, consider this time V as a set of all polynomials of degree exactly two. You have to be very careful term here. Exactly two. Look at compare.
+
+136
+00:20:29,428 --> 00:20:34,588
+Polynomial P of t here, this polynomial has degree exactly 2, as you see, right?
+
+137
+00:20:35,048 --> 00:20:39,588
+And suppose you are given another polynomial of degree exactly 2.
+
+138
+00:20:41,048 --> 00:20:51,168
+If you consider some of this polynomial, you will realize immediately that it is not a polynomial of degree exactly 2, right?
+
+139
+00:20:51,168 --> 00:20:56,408
+Why? Because the coefficients are chosen.
+
+140
+00:20:58,740 --> 00:21:02,059
+Bu şekilde, bu şekilde, bu kadar, zayıfızlık, zayıfızlık, zayıfızlık.
+
+141
+00:21:25,652 --> 00:21:53,420
+Bu setin de
+
+142
+00:21:54,516 --> 00:22:10,136
+Closeness condition, right? Is it clear for you or not? Let me see how many people, 26. Is it okay for everybody? The idea of vector space, vector subspace?
+
+143
+00:22:10,136 --> 00:22:17,136
+Hocam, bir şey söyleyebilir miyim? Bu polinom derece ilişkisinin üzerinden bir kez de Türkçe geçebilir miyiz mümkün?
+
+144
+00:22:17,156 --> 00:22:18,396
+Tabii, burada söylediği şu.
+
+145
+00:22:18,768 --> 00:22:34,008
+Bütün polinomların kümesini al diyor. Yani derecesi 2'den büyük olmasın dediğine bakma. İstersen 3'den büyük olmasın, n'den büyük olmasın fark etmez. Burada bir örnekleme yaptığı için 2'yi özellikle almıştım. Tamam 2 olsun. İstersen 3, 4, 5, n diyebilirsin. Hiç önemli değil.
+
+146
+00:22:34,768 --> 00:22:39,707
+Derecesi en fazla 2 dediği anda bu kümeye derecesi 1 olan polinomda girer mi?
+
+147
+00:22:40,915 --> 00:23:04,655
+Girer. Derecesi eşit iki olan polinomda var mı bu kümede? Var. Derecesi sıfır olan polinom, yani sabit polinomda var mı? Var. Şimdi kümen bu. Tamam mı? Bu kümede iki polinom nasıl toplanıyorsa o toplama işlemini kondur. Bir polinomun bir sayıla çarpımından ne anlıyorsan o işlemi de kondur. Vektör uzayı mı değil mi? Soru bu. Vektör uzayı. Vektör uzayı.
+
+148
+00:23:07,443 --> 00:23:26,903
+İki polinomu topluyorsun, gene bir polinom oluyor. Derecesiyle ilgili bir sorun yaşamazsın. Bir tanesi birinci dereceden, öteki ikinci derecedense toplamları ne olur böyle iki polinomun? Sana sorum olsun. Bak şimdi derecesi iki veya daha küçük polinomların kümesi diyorsun ya P2'ye.
+
+149
+00:23:28,903 --> 00:23:34,403
+Şimdi bu kümeden derecesi bir tane bir olan polinomal, bir de derecesi iki olan polinomal.
+
+150
+00:23:34,463 --> 00:23:37,443
+Toplamları derecesi kaç olan bir polinom verir sana?
+
+151
+00:23:38,644 --> 00:23:40,844
+Derecesi 2 olan bir polinom olmaz mı?
+
+152
+00:23:41,223 --> 00:23:46,104
+Evet olur, sorun yok. Zaten kümende ne var? En fazla derecesi 2 olacak kadar polinomlar var.
+
+153
+00:23:46,884 --> 00:23:51,544
+Değil mi? Mesela iki tane polinom alsan, birisi birinci dereceden, öteki de birinci dereceden.
+
+154
+00:23:51,644 --> 00:23:54,344
+Toplasan bunları, kaçıncı dereceden polinom bulacaksın?
+
+155
+00:23:55,604 --> 00:23:57,304
+Birinci dereceden mi koyuyorum?
+
+156
+00:23:57,304 --> 00:23:58,983
+Tamam. Gene aynı kümede misin hala?
+
+157
+00:23:59,503 --> 00:24:00,624
+Evet, aynı kümedeyim.
+
+158
+00:24:00,644 --> 00:24:12,304
+Tamam. Dolayısıyla mesela o yukarıdaki iki tane koşuldan biri sağlandı. Yani vektör alt uzayı olabilmesi için iki tane koşulun sağlanması gerekiyor.
+
+159
+00:24:12,403 --> 00:24:19,344
+İki eleman al, toplamları da oradaysa, bir eleman al, çarpımı da oradaysa o zaman vektör alt uzayı diyorduk. Ama her küme kendisinin alt uzayıdır zaten.
+
+160
+00:24:19,983 --> 00:24:21,384
+Tamam mı? Burada yapılan şey o.
+
+161
+00:24:22,932 --> 00:24:30,471
+Ama bir sonraki örnekte anlıyorsun işte bak, bir sonraki örnekte diyor ki, bu defa bütün polinomları al ama derecesi tas tamam eşit 2 olsun.
+
+162
+00:24:31,192 --> 00:24:38,672
+Yani bu kümede artık derecesi 1 olan bir polinom yok. Bu kümede sabit polinom var mı?
+
+163
+00:24:41,412 --> 00:24:44,251
+Sıfır olmayan sabit bir polinom var mı böyle bir kümede?
+
+164
+00:24:47,667 --> 00:25:09,887
+Sabit polinomun derecesi 2 olmayacağı için tabii ki yok, değil mi? Bak, derecesi tas tamam 2 olan polinomların kümesini alırsan bu küme vektör uzayı olmaz. Neden olmaz? İşte burada örnek verdi. İki tekare, bak bir daha sileyim ekranı, tekrar bakalım istersen. Burada çok ince bir nüans var, bunu anlayan.
+
+165
+00:25:11,892 --> 00:25:37,291
+Bunun esprisini de anlar. Bak şimdi. İkinci dereceden bir polinom bu, altını çizdiğim. Ötekisi de ikinci dereceden, değil mi? Evet hocam, ikisi de ikinci derece. Topluyorum, ikinci derece değil. Evet. Birinci derece. Toplamları ne bunların? 4T artı 3, değil mi? Hı hı. Ama 4T artı 3 derecesi tas tamam eşit 2 olan bir polinom vermedi ki bana.
+
+166
+00:25:38,163 --> 00:25:41,304
+O zaman örnek uzay sağlamıyor diyoruz değil mi?
+
+167
+00:25:41,403 --> 00:25:45,683
+Sağlamıyor çünkü ürettiğin yeni polinom uzayında değil ki.
+
+168
+00:25:46,284 --> 00:25:47,604
+Doğru hocam, tamam şu anlamda.
+
+169
+00:25:47,604 --> 00:25:53,443
+Yani kapalılık özelliği yok. Zaten bu olmadı mı aksiyonlara bakmanın bir anlamı yok.
+
+170
+00:25:53,443 --> 00:26:03,384
+Biz en başta vektör uzayın tanımını yaparken tamam, iki tane işlem konduralım diyoruz ama bir kere o işlemlerin kapalı olma şartı var her şeyden önce. Ne demek kapalı olması?
+
+171
+00:26:03,807 --> 00:26:23,108
+Tamam, uzayın elemanlarını o işleme tabi tutup yeni bir şeyler üretiyorsun ama o ürettiklerin de aynı evrende olacak bir kere. Ondan sonra bakıyorsun bir takım özellikler sağlanıyor mu sağlanmıyor mu? Veya işte kısa yoldan gidecek olursan iki tanesinin toplamı gene orada mı? Herhangi bir tanesini aldığında bir katını aldığında gene orada mı?
+
+172
+00:26:23,667 --> 00:26:50,008
+Alt uzay olarak bakacak olursan. Burada mesela sağlanmadı. Neden sağlanmadı diye merak ediyorsan, şu koşuldan, yani burada bir koşul var, tamamen tam iki olsun diyor. İşi bozan bu. Yukarıda mesela bir esneklik var, en fazla iki olsun dediğin anda bu esneklik sana vektör uzayı yapısı veriyor, kazandırıyor. Ama şu exactly, bu kısıtı koyarsan olmuyor işte. Söylemek istediği bu iki örneği. Bilmem anlaşıldı mı?
+
+173
+00:26:50,932 --> 00:26:52,672
+Evet hocam anladım, teşekkür ederim.
+
+174
+00:26:52,692 --> 00:27:16,831
+Şimdi bakalım, bir de mesela test sınavına gireceksiniz. Bu tip sorular önemlidir mesela. Bakın bir sonraki örnekte ne diyor? Rekare, düzlemin, düzlemdeki aşağıdaki hükümelerden hangileri, işte elementer, vektör toplamı ve skaler çarpımı işlemlerine göre bir alt uzayını verir düzlemin mesela. Şunlara bakalım mesela. Böyle bir şey gelirse ne yapacaksın?
+
+175
+00:27:18,163 --> 00:27:27,163
+Böyle bir soru. W1 dediği düzlemin neresine karşılık geliyor? Bir bakalım. X'i negatif olmayacak, Y herhangi bir şey olabilir. Nereye karşılık geliyor bu acaba?
+
+176
+00:27:28,043 --> 00:27:43,223
+What is the corresponding region for this subset W1 in R2, two space? You have to consider the set of all ordered pairs, X, Y, such that the first coordinate is never negative, right?
+
+177
+00:27:44,372 --> 00:27:55,231
+Never negative. So I understand exactly this half space, right half space of the plane. Do you think this set is a vector subspace or not?
+
+178
+00:27:59,059 --> 00:27:59,819
+Any answer?
+
+179
+00:28:03,892 --> 00:28:05,292
+Very simple question.
+
+180
+00:28:07,772 --> 00:28:12,552
+Do you think this, this is the W, let me write, W is here, right?
+
+181
+00:28:14,012 --> 00:28:20,492
+Do you think this set, as a subset of the plane, is a vector subspace or not?
+
+182
+00:28:28,468 --> 00:28:36,088
+The operations we have are the vector addition, usual vector addition, and usual scalar multiplication of vectors in the plane, okay?
+
+183
+00:28:37,568 --> 00:28:42,428
+What do you think? And answer, the zero element is right here, right?
+
+184
+00:28:48,307 --> 00:28:52,468
+Any opinion? This is a very simple question.
+
+185
+00:28:57,076 --> 00:29:01,255
+Kimsenin buna verecek bir cevabı yok mu arkadaşlar? Yani görsel bir soru bakın yani.
+
+186
+00:29:03,235 --> 00:29:17,175
+Düzlemin sağ yarısı. Bildiğiniz adi vektör toplamı ve skalale çarpımı işlemlerine göre bu küme, bu sağ yarı düzlem vektör uzayı olur mu düzlemde? Düzlemin alt uzayı olur mu diye sormuş. Olur mu?
+
+187
+00:29:18,635 --> 00:29:21,495
+İki tane vektör alsan toplamının orada olması lazım.
+
+188
+00:29:21,940 --> 00:29:33,539
+Hangi vektörü alsan al, katının yine orada olması lazım. Bunlardan biri veya ikisi fark etmez. En az biri sağlanmıyorsa bu koşullardan vektör uzayı olmaz. Sağlıyor mu, sağlamıyor mu?
+
+189
+00:29:40,180 --> 00:29:44,900
+Evet, çok ilginç yani, bu soruya da cevap veremiyor olmanız gerçekten çok ilginç.
+
+190
+00:29:46,240 --> 00:30:05,400
+This will not a vector subspace, this will never be a vector subspace, because, look at this, if you take a vector, something like this, and if you multiply by a negative constant, or simply if you consider minus u, this is not in w1, right?
+
+191
+00:30:06,996 --> 00:30:15,236
+It doesn't stay in the right half space, if you consider scalar multiplication through positive scalars, right?
+
+192
+00:30:15,976 --> 00:30:18,236
+This is evident, okay?
+
+193
+00:30:19,816 --> 00:30:21,776
+What else? The second one.
+
+194
+00:30:22,196 --> 00:30:30,756
+W2 is a set of all vectors of the form, x, y, where both x and y are not negative, right?
+
+195
+00:30:35,988 --> 00:30:36,888
+Of the plane.
+
+196
+00:30:42,259 --> 00:30:44,140
+Bu, v2.
+
+197
+00:30:46,900 --> 00:30:47,960
+What do you think?
+
+198
+00:30:48,700 --> 00:30:52,819
+Is this subset a vector subspace of the plane or not?
+
+199
+00:30:56,115 --> 00:30:58,115
+Vektör subspeks?
+
+200
+00:30:59,236 --> 00:30:59,836
+Are you sure?
+
+201
+00:31:04,723 --> 00:31:31,643
+Let me draw some picture here. Arkadaşlar, bakın bu tip sorular böyle test sınavlarında da çıkar. Yani vektör uzayının ne olduğu kafanda canlandıysa bunları leblebi gibi çözmen lazım. Şekle bakıp yani. İlkinde ne dedi? Bak, ilkinde şunu söyledi. Ve W bu, bu buydu. Tamam mı? Ötekinde ne diyor? Şunu veriyor bakın. Üçlerine de yazalım kümelerimizi. W1 buydu, W2 de buydu.
+
+202
+00:31:32,852 --> 00:31:56,032
+Sıfır elemanı var mı? Var. Sıfır elemanı var mı? Var. Ha, buradan buna vektör uzayıdır demeyeceksin tabii değil mi? Bak, bu vektör uzayı değil W1. Neden? Yani şuradan bir eleman alsan, U, eksi 1 ile çarpsan, eksi 5 ile de çarpabilirsin, eksi 10 ile de çarparsın, sorun değil. Tamam mı? Mesela şu eleman yok. Ama vektör uzayı olmuş olsaydı olması gerekirdi. Değil mi?
+
+203
+00:31:56,884 --> 00:32:21,084
+Yani şimdi diyebilirsin ki hocam ama buradan mesela şöyle bir V alsam bunların toplamları burada. Olabilir. 8 aksiyonun 8'inin de sağlanması lazım ama. 7 tanesi sağlanmış, bir tanesi sağlanmamış. Vektör uzayı değil ki. Zaten bir tane sağlanmayan aksiyon bulduğun anda diğerlerine bakmana gerek yok. Vektör uzayı değil. Bu hiç olmaz. Koni zaten bu. Koni vektör uzayı olmaz ki. Yani gene aynı mantık.
+
+204
+00:32:21,971 --> 00:32:28,611
+Yine my eye mark, şu vektörü al, bunun eksi iki u katını al, eksi iki katını al, eksi iki u, elemanı değil.
+
+205
+00:32:31,451 --> 00:32:32,171
+Elemanı değil.
+
+206
+00:32:34,131 --> 00:32:34,431
+Değil mi?
+
+207
+00:32:36,331 --> 00:32:38,491
+Vektör uzayı olmayacağı bunun da belli yani.
+
+208
+00:32:39,891 --> 00:32:41,151
+Bilmem anlatabildim mi?
+
+209
+00:32:41,831 --> 00:32:45,051
+I hope this picture is clear for you to understand.
+
+210
+00:32:47,059 --> 00:32:50,559
+No one of these subsets are vektör subspace of the plane, right?
+
+211
+00:32:57,844 --> 00:33:24,423
+All right. And what about the third set, W3? Do you think this set of all vectors, where the first coordinate is exactly zero, a vector subspace or not? Let me give you a picture. What kind of vectors are contained in the subset, W3? X is exactly zero, but the second coordinate might be anything, because any condition.
+
+212
+00:33:25,875 --> 00:33:31,056
+We don't have any condition, restriction, constraint on y, right?
+
+213
+00:33:31,195 --> 00:33:36,255
+Just, we have a constraint on x, which says x has to be 0.
+
+214
+00:33:36,415 --> 00:33:38,235
+So, where x is 0?
+
+215
+00:33:42,804 --> 00:33:46,764
+Bu, bu, x'e 0, right?
+
+216
+00:33:50,771 --> 00:34:13,631
+So, W3 is exactly this, which means y-axis. Do you think this is a vector subspace of R2 or not? This is a line, right? This is the real line. I mean, W3 here is exactly the real line. So, it's a vector space, of course.
+
+217
+00:34:15,476 --> 00:34:26,735
+I say, of course, because it passes through the zeros, right? Passes through the origin. That's why it's a vector space. Excuse me.
+
+218
+00:34:28,796 --> 00:34:38,115
+This is also a real line, but it doesn't contain zeros. So this is not a vector space, right?
+
+219
+00:34:39,411 --> 00:34:49,731
+suppose this is a V4, V4 is not a vector space, but V3 is a vector space because it's a line, but not because it's a line.
+
+220
+00:34:50,471 --> 00:34:58,211
+It contains the zero, it contains the origin. As I always say, vector space always has its zero element.
+
+221
+00:34:59,591 --> 00:35:04,452
+You don't have to say that any line is a vector space. This is not true, right?
+
+222
+00:35:05,460 --> 00:35:14,420
+It is only true if your line is passing through the origin, right? Is it clear for everybody or not?
+
+223
+00:35:16,539 --> 00:35:27,119
+Sıfırdan geçen her doğru bir vektör uzayıdır arkadaşlar. Ama sıfırdan geçmezse vektör uzayı olmaz. Olmaz değil mi? Neden? Sıfır vektör uzayının olması gereken elemanı yani.
+
+224
+00:35:28,860 --> 00:35:31,000
+Bakın, cevaplana bakın. W, bir.
+
+225
+00:35:32,244 --> 00:35:57,304
+X'ye düzleminin sağ yarısı, işte vektör subspace değil. Ben cevabına hiç bakmıyorum, bile gerek yok yani. Mesela 2-3 almış, 2-3 dediği vektör nedir? İşte 2 birim burada, 3 birim burada yani. Şunların toplamı. Aldığı vektör bu, 2-3 dediği vektör bu. Eksi 3 katını alıyorsun, bir katı burada, iki katı burada, üç katı.
+
+226
+00:35:58,291 --> 00:36:00,492
+Eksi üç katı bu.
+
+227
+00:36:02,391 --> 00:36:04,051
+Elemanı değil yani, değil mi?
+
+228
+00:36:07,860 --> 00:36:21,360
+Diğerine bakalım. Diğeri neydi? W2. Aynen söylediğim gibi bu konik kesitiydi. Düzlemin dörtte biri. Bu da vektör uzayı değil. Değil mi? Bakın.
+
+229
+00:36:27,443 --> 00:36:52,323
+W3'e bakalım. W3'e burada, bir dakika, burada bir tuhaflık var arkadaşlar, değil mi? W3'ü y'nin pozitif y ekseni gibi çizmiş burada sanki, değil mi? Oysa, yani x eşitli sıfır diyor. x eşitli sıfır y ekseni demektir. Niye y'nin sadece pozitif kısmı olsun ki? Yani bu şekilde bir tuhaflık var.
+
+230
+00:36:54,132 --> 00:36:58,431
+sadece bu şekilde verirse, pozitif y ekseni olarak alırsan W3'ü, bu vektör uzayı olmaz.
+
+231
+00:36:58,532 --> 00:37:04,672
+If W3 is a strictly positive y akses, it will never be a vektör speed, right?
+
+232
+00:37:04,731 --> 00:37:07,012
+There is something rare in this picture.
+
+233
+00:37:14,483 --> 00:37:22,703
+Look at this. W3 is a subspace, but there is something wrong with this picture, right?
+
+234
+00:37:26,387 --> 00:37:29,527
+You have to extend. This is W3, right?
+
+235
+00:37:31,167 --> 00:37:35,827
+If you consider just, look at this.
+
+236
+00:37:36,287 --> 00:37:47,367
+If this would be W3, it is never a subspace, because you take this vector and multiply by minus 1.
+
+237
+00:37:48,507 --> 00:37:53,067
+So this is not in the same set, right?
+
+238
+00:37:54,804 --> 00:37:58,223
+So, that's why I said there is something strange in the picture, right?
+
+239
+00:37:58,943 --> 00:37:59,304
+Okay.
+
+240
+00:38:01,003 --> 00:38:03,103
+Is it okay for everybody or not?
+
+241
+00:38:03,443 --> 00:38:08,824
+Because, you see, there is no restriction on the second coordinate, right?
+
+242
+00:38:08,884 --> 00:38:17,143
+So, this W3 may not be the positive y-axis, right?
+
+243
+00:38:17,483 --> 00:38:20,123
+This is not the image of W3, right?
+
+244
+00:38:21,172 --> 00:38:26,791
+This set, let me write W' prime, would be something like this.
+
+245
+00:38:30,931 --> 00:38:32,532
+If you write this way, it's okay.
+
+246
+00:38:34,331 --> 00:38:36,172
+And w' prime is not a vector space.
+
+247
+00:38:36,592 --> 00:38:36,831
+Okay?
+
+248
+00:38:41,427 --> 00:38:44,468
+Okay, I have to run a bit now.
+
+249
+00:38:46,688 --> 00:38:57,847
+For example, many examples here, to fix this subject, you will have some questions regarding vektör subspaces in your final exam.
+
+250
+00:38:57,968 --> 00:39:02,307
+So this part, I recommend you to understand better this part.
+
+251
+00:39:02,307 --> 00:39:03,367
+Right.
+
+252
+00:39:03,891 --> 00:39:10,791
+Suppose you are given a set W, being the set of all vectors in free space of this form.
+
+253
+00:39:11,331 --> 00:39:15,531
+What do you understand? What do you have to understand from this vector?
+
+254
+00:39:16,271 --> 00:39:23,891
+In the set W, you consider just vectors or triples in such a way that the third condition...
+
+255
+00:39:45,184 --> 00:39:46,784
+Three space, right?
+
+256
+00:39:47,344 --> 00:39:53,704
+If you see, there is no restriction on the first and second coordinate, right?
+
+257
+00:39:53,984 --> 00:39:55,724
+No condition, no restriction.
+
+258
+00:39:56,524 --> 00:40:00,004
+But the third coordinate is subject to some restriction.
+
+259
+00:40:00,164 --> 00:40:01,144
+What is this restriction?
+
+260
+00:40:02,064 --> 00:40:06,464
+This restriction says that the third coordinate is depending on the first two.
+
+261
+00:40:06,704 --> 00:40:08,724
+But in what way it is dependent?
+
+262
+00:40:10,044 --> 00:40:11,544
+There's some, right?
+
+263
+00:40:12,384 --> 00:40:12,604
+So,
+
+264
+00:40:13,043 --> 00:40:29,163
+Let us see, take two element, according to our theorem, such a subset becomes a vector subspace if the sum of any two vectors is still in W, and if any multiple belongs to the same.
+
+265
+00:40:29,556 --> 00:40:37,255
+So you have to verify both condition to ensure that this W is a subspace indeed.
+
+266
+00:40:37,596 --> 00:40:40,976
+So I take two typical elements. Typical means what?
+
+267
+00:40:41,416 --> 00:40:52,516
+You have to pick two vectors that obey the type of vectors contained in W.
+
+268
+00:40:53,588 --> 00:41:06,448
+That means you fix a pair of vectors such that their third conditions are always given as the sum of their first two coordinates, right?
+
+269
+00:41:07,068 --> 00:41:15,588
+Okay, so suppose you and we are such vectors in W. Consider the vector addition, usual vector addition, right?
+
+270
+00:41:16,248 --> 00:41:19,488
+Usual vector addition means this one, right?
+
+271
+00:41:23,827 --> 00:41:38,147
+If you organize this third coordinate here, you will see that the resulting vector, I mean this resulting vector, obey the same condition, right?
+
+272
+00:41:38,208 --> 00:41:45,668
+The third coordinate is indeed the sum of the first and second coordinates.
+
+273
+00:41:47,347 --> 00:42:06,907
+It is in accordance with our recipe, right? So that means this is still in W. And this is good, right? It only remains one condition to verify. You have to verify if any multiple of such a vector still belongs to the same set, right?
+
+274
+00:42:14,963 --> 00:42:42,284
+ve bu üçüncü ve bu üçüncü ve bu üçüncü ve bu üçüncü ve bu üçüncü ve bu üçüncü ve bu üçüncü ve bu üçüncü ve bu üçüncü ve bu üçüncü ve bu üçüncü ve bu üçüncü ve bu üçüncü ve bu üçüncü ve bu üçüncü ve bu üçüncü ve bu üçüncü ve bu üçüncü ve bu üçüncü ve bu üçüncü ve bu üçüncü ve bu üçüncü ve bu üçüncü ve bu üçüncü ve bu üçüncü ve bu üçüncü ve bu üçüncü ve bu üçüncü ve bu üçüncü ve bu üçüncü ve bu üçüncü ve bu üçüncü ve bu üçüncü ve bu üçüncü ve bu üçüncü ve bu üçüncü ve bu üçüncü ve bu üçüncü ve bu üçüncü ve bu üçüncü ve bu üçüncü ve bu üçüncü ve bu üçüncü ve bu üçüncü ve bu üç
+
+275
+00:42:42,483 --> 00:42:46,283
+A vector subspace, right? This is a simple but nice example.
+
+276
+00:42:48,123 --> 00:42:49,003
+All right.
+
+277
+00:42:50,183 --> 00:42:55,663
+What else? A simple way of constructing subspaces in a vector space is as follows.
+
+278
+00:42:55,804 --> 00:42:58,304
+Let me see what example six says to us.
+
+279
+00:42:58,804 --> 00:43:01,123
+Let W1 and WB.
+
+280
+00:43:03,284 --> 00:43:10,503
+Feksel vektörs in a vector space, any vector space, v, and w be a set of all vectors in v of this form.
+
+281
+00:43:12,023 --> 00:43:18,103
+This is, we call this expression as a linear combination of v1, v2, right?
+
+282
+00:43:18,603 --> 00:43:21,583
+Linear combination is another vector, right?
+
+283
+00:43:21,983 --> 00:43:24,223
+Another vector because look at the first term.
+
+284
+00:43:24,643 --> 00:43:29,284
+You multiply, you consider a multiple of a vector, you consider multiple of...
+
+285
+00:43:29,583 --> 00:43:32,583
+ve diğer bir vekta var.
+
+286
+00:43:32,583 --> 00:43:38,583
+Bu vekta var.
+
+287
+00:43:38,583 --> 00:43:40,583
+V3'e görebilirsiniz.
+
+288
+00:43:40,583 --> 00:43:44,583
+Bu vekta var.
+
+289
+00:43:44,583 --> 00:43:46,583
+V3'e görebilirsiniz.
+
+290
+00:43:46,583 --> 00:43:48,583
+V1 ve V2'e görebilirsiniz.
+
+291
+00:43:48,583 --> 00:43:52,460
+Vekta var.
+
+292
+00:43:53,780 --> 00:44:04,519
+All right, what happens? If you consider now, vektörs of this time, I mean you fix v1, v2, and produce their linear combination.
+
+293
+00:44:04,700 --> 00:44:12,380
+What I mean, produce? Produce means, this linear combination is not unique, right?
+
+294
+00:44:13,887 --> 00:44:19,947
+change the coefficient a1, a2, you will generate another vector, another linear combination.
+
+295
+00:44:20,148 --> 00:44:24,568
+So we have an infinite number, infinite possibility of such combinations, right?
+
+296
+00:44:24,608 --> 00:44:28,467
+So why don't you think all these linear, possible linear combinations in a set?
+
+297
+00:44:29,827 --> 00:44:31,508
+This set is W, right?
+
+298
+00:44:32,447 --> 00:44:35,467
+Of course, this is a subset of our...
+
+299
+00:44:35,956 --> 00:45:00,096
+Environmental vector space V, right? Because we are using a pair of vectors in V, just a pair of vectors from this set, this, excuse me, this environmental vector space V, and we produce all possible linear combinations of this pair of vectors taken from V, and this new set formed by linear combinations.
+
+300
+00:45:00,980 --> 00:45:07,259
+Bu, of course, a subset of me, but we are curious about if this is a more than subset.
+
+301
+00:45:07,980 --> 00:45:15,579
+I mean, if, for example, if this is a subspace, more than subset means in this context, subspace, of course, right?
+
+302
+00:45:16,000 --> 00:45:19,440
+If this is a subspace, more than ordinary subset.
+
+303
+00:45:20,619 --> 00:45:20,980
+All right.
+
+304
+00:45:22,000 --> 00:45:25,879
+So the recipe is clear to follow, right?
+
+305
+00:45:27,139 --> 00:45:28,500
+You take two elements.
+
+306
+00:45:29,331 --> 00:45:31,331
+İzlediğiniz için,
+
+307
+00:45:31,331 --> 00:45:35,331
+ve verifiyorsanız,
+
+308
+00:45:35,331 --> 00:45:56,875
+bir resultantı,
+
+309
+00:45:57,139 --> 00:46:04,300
+A1, A2, will give you one linear combination, which we call W1 here.
+
+310
+00:46:04,820 --> 00:46:14,619
+If you use another pair of coefficient, B1, B2, and this linear combination W2 will give you another element of W, right?
+
+311
+00:46:14,619 --> 00:46:20,440
+So W1, W2 are typical element from W.
+
+312
+00:46:22,516 --> 00:46:28,156
+We have to verify if the sum is still a linear combination or not.
+
+313
+00:46:29,156 --> 00:46:34,336
+But this is also almost trivial because look at this.
+
+314
+00:46:35,176 --> 00:46:37,496
+This is another coefficient, right?
+
+315
+00:46:37,856 --> 00:46:39,076
+This is another coefficient.
+
+316
+00:46:39,316 --> 00:46:47,196
+And in any case, you have again a linear combination of the same fixed vector v1, v2, right?
+
+317
+00:46:47,276 --> 00:46:48,576
+So this is a linear combination.
+
+318
+00:46:48,576 --> 00:46:49,176
+So.
+
+319
+00:46:50,771 --> 00:47:14,771
+It is in W, right? As a new vector. And now consider a linear combination and consider its multiplication, right? Its multiplication. I'm talking about this operation here, right? You know what does it mean? After you write this way, you will understand that this is...
+
+320
+00:47:15,155 --> 00:47:17,235
+Indeed, a lineer combination, right?
+
+321
+00:47:17,695 --> 00:47:19,155
+What has changed here?
+
+322
+00:47:19,875 --> 00:47:22,096
+Just the coefficients are changed, right?
+
+323
+00:47:22,755 --> 00:47:28,076
+We are not interested in the value of a coefficient in front of V1, V2.
+
+324
+00:47:29,056 --> 00:47:33,415
+We are just interested in the format, linear combination, right?
+
+325
+00:47:33,895 --> 00:47:35,675
+One vector, another vector.
+
+326
+00:47:36,884 --> 00:47:57,583
+Consider multiple of each vector, right? And then sum, consider the sum. This is a linear combination. It doesn't matter the value of alpha, beta here, right? All right. This is the linear combination. So this example simply says that, or clearly says that,
+
+327
+00:48:02,099 --> 00:48:11,500
+Linear combinations, the set of linear combinations of a finite set of vectors becomes a vector subspace.
+
+328
+00:48:11,639 --> 00:48:19,199
+Why did I say finite number of fixed vectors? Because you don't need two vectors, right?
+
+329
+00:48:19,219 --> 00:48:22,479
+You don't need to fix two vectors to consider a linear combination.
+
+330
+00:48:22,479 --> 00:48:27,179
+You can also mention linear combination of three vectors.
+
+331
+00:48:27,603 --> 00:48:30,423
+4-vektörs, or n-vektörs, for example.
+
+332
+00:48:31,223 --> 00:48:33,483
+Not necessarily you have to fix 2-vektör, right?
+
+333
+00:48:34,003 --> 00:48:43,283
+If you have a finite number of vectors, and if you want to produce a linear combination, you will need an exact number of coefficient, right?
+
+334
+00:48:44,323 --> 00:48:48,543
+Alpha 1, alpha n are scalars, right?
+
+335
+00:48:49,203 --> 00:48:54,183
+So the linear combination of these n-vektörs
+
+336
+00:48:54,483 --> 00:48:56,203
+will be something like this.
+
+337
+00:48:59,827 --> 00:49:00,188
+Ok?
+
+338
+00:49:08,596 --> 00:49:27,135
+Alright, as I said, lineer combination, and you don't need to fix exactly two vectors. You can fix a finite number of vectors in a vector space. And the linear combination of them means this. Generally, we prefer this compact notation, right?
+
+339
+00:49:30,739 --> 00:49:31,880
+All right, any questions?
+
+340
+00:49:38,291 --> 00:49:57,031
+Evet, ara sıra böyle bu ekrana dönsem fena olmaz. Çünkü internet giderse, ben orada notlar uygulamasını kullandığım için kaçırmış olabilirim. Kendi kendime de konuşuyor olabilirim. Ara sırada bakmakta fayda var. 29 kişi olmuşuz. Var mı sorusu olan arkadaşlar? Birazdan ara vereceğim çünkü. Var mı sorusu olan?
+
+341
+00:50:02,547 --> 00:50:03,067
+Evet.
+
+342
+00:50:05,248 --> 00:50:08,647
+Let me see what we have in example 7.
+
+343
+00:50:10,208 --> 00:50:11,467
+Let us read.
+
+344
+00:50:11,687 --> 00:50:20,887
+In example 5, we showed that W, which means the set of all vectors in three spaces of this form, is a subspace, right?
+
+345
+00:50:20,947 --> 00:50:22,427
+We have already seen this, right?
+
+346
+00:50:22,567 --> 00:50:27,228
+This subset is indeed a subspace of three spaces, R3.
+
+347
+00:50:28,007 --> 00:50:29,748
+Now, fix.
+
+348
+00:50:30,208 --> 00:50:37,988
+If you insist to see explicitly where these vectors live,
+
+349
+00:50:38,907 --> 00:50:47,628
+V1, look at this, 1 here, 1 here, this is V1, right?
+
+350
+00:50:47,628 --> 00:50:52,548
+It's a vector in X, Z plane, right?
+
+351
+00:50:54,628 --> 00:50:56,331
+V2 is...
+
+352
+00:50:57,364 --> 00:50:58,324
+This vektör.
+
+353
+00:50:59,764 --> 00:50:59,983
+Right?
+
+354
+00:51:04,275 --> 00:51:30,695
+All right. So consider this pair of vectors in R3. Now, every vector in W, which is a lineer combination of this blue pair of vectors, right? Let me write, this is V1, this is V2. Just consider the lineer combinations of this pair of blue vectors, right? V1, V2.
+
+355
+00:51:39,188 --> 00:52:05,347
+Do you see what geometrically, what does it mean? What is the set of all lineer combinations of this pair of blue vectors? Geometrically speaking. Bunun ne olduğunu görebiliyor musunuz arkadaşlar? Bakın iki tane düzlem var, birbirlerine dik. Görebiliyor musunuz bunu? Şöyle çizelim size. Bakın iki tane düzlem var.
+
+356
+00:52:06,675 --> 00:52:23,796
+Şöyle, tamam mı? Bunlar birbirlerine dik. Şuradan bir vektör aldın, bir tane de buradan bir vektör aldın. V1, V2. Bunların lineer kombinezonlarının toplamı, pardon, lineer kombinezonlarının kümesi bir vektör uzayı diyoruz ya.
+
+357
+00:52:24,244 --> 00:52:45,003
+Onun da aslında geometrik bir gösterimi var. Bunlar neyi gerer biliyor musunuz? Neticede V1, V2'nin yönü doğrultusunda olan iki doğruyu düşünün. Bir noktada kesişiyorlar. Onların gerdiği uzay da zaten gelen kavramına geçiş yapacağı için bu örneği veriyor. Size bir düzlem verir. Yani iki noktada şöyle bir doğru çifti size bir ve yalnız bir düzlem verir değil mi?
+
+358
+00:52:45,748 --> 00:52:57,548
+Yani şu düzlemi kastediyor arkadaşlar. Bakın ben sadece bir porsiyonunu çiziyorum, tamam mı? Yani W dediği bu. Sadece bir porsiyonunu çiziyorum ama bakın yanlış anlamayın, tamam mı? Yani bunun uzantısı var.
+
+359
+00:52:57,548 --> 00:53:10,648
+You have to consider the extension. This portion is not the whole W.
+
+360
+00:53:11,155 --> 00:53:19,896
+Linear combinations of v1, v2, right? This is just a portion in the, let's say, diagonal plane, right? Diagonal plane.
+
+361
+00:53:25,331 --> 00:53:25,871
+Alright.
+
+362
+00:53:31,092 --> 00:53:49,152
+Evet, burada bir ara vereyim arkadaşlar. Do you have any questions? If you don't have any questions, I have to stop for 10 minutes now, and then continue later, okay? Any questions? All right, see you 10 minutes later, okay?
+
+363
+01:02:18,675 --> 01:02:20,056
+All right, let us continue.
+
+364
+01:02:22,056 --> 01:02:23,115
+Let me see.
+
+365
+01:02:24,475 --> 01:02:25,635
+Okay, example eight.
+
+366
+01:02:25,875 --> 01:02:28,475
+Let us see what is example eight.
+
+367
+01:02:29,395 --> 01:02:31,556
+In example two,
+
+368
+01:02:33,215 --> 01:02:37,215
+t2 was the vector space of all polynomials of degree two or less,
+
+369
+01:02:37,536 --> 01:02:40,495
+not greater than two, in other words, right?
+
+370
+01:02:41,268 --> 01:02:47,248
+Together with the zero polynomial, we have seen that this set is a vector space, right?
+
+371
+01:02:47,827 --> 01:02:51,788
+With the usual polynomial sum and usual multiplication.
+
+372
+01:02:53,208 --> 01:03:04,367
+Okay, every vector in P2 has the form A times t to the power 2 plus B times t plus C.
+
+373
+01:03:04,367 --> 01:03:07,288
+This is a typical polynomial of degree.
+
+374
+01:03:07,679 --> 01:03:09,519
+2, right?
+
+375
+01:03:10,319 --> 01:03:10,739
+But
+
+376
+01:03:10,739 --> 01:03:13,779
+this is actually a linear combination,
+
+377
+01:03:13,960 --> 01:03:14,159
+right?
+
+378
+01:03:14,980 --> 01:03:17,939
+What are the fixed polynomials
+
+379
+01:03:17,939 --> 01:03:19,939
+to generate a typical
+
+380
+01:03:19,939 --> 01:03:21,559
+generic
+
+381
+01:03:21,559 --> 01:03:23,359
+polynomial of degree
+
+382
+01:03:23,359 --> 01:03:25,980
+not greater than
+
+383
+01:03:25,980 --> 01:03:27,139
+2? These are the
+
+384
+01:03:27,139 --> 01:03:29,679
+fixed polynomials, right?
+
+385
+01:03:29,679 --> 01:03:30,639
+So this
+
+386
+01:03:30,639 --> 01:03:33,679
+expression
+
+387
+01:03:35,347 --> 01:03:40,128
+might be considered as an example of linear combination.
+
+388
+01:03:40,268 --> 01:03:45,807
+So what are the fixed vectors to generate such a linear combination?
+
+389
+01:03:45,988 --> 01:03:52,128
+Of course, you have to consider t squared, t, but this is not enough.
+
+390
+01:03:52,307 --> 01:03:55,268
+This pair of polynomials are not enough.
+
+391
+01:03:56,008 --> 01:03:59,307
+You have to also consider one as a constant polynomial.
+
+392
+01:04:01,556 --> 01:04:09,016
+Three samples, right? And then you multiply by A, multiply by B, and multiply by C.
+
+393
+01:04:10,135 --> 01:04:19,376
+Then consider their sum, right? So this is exactly an example of linear combination, right?
+
+394
+01:04:21,516 --> 01:04:23,476
+And let me see.
+
+395
+01:04:25,556 --> 01:04:31,096
+We have one more exercises here. Let me delete this screen.
+
+396
+01:04:32,016 --> 01:04:32,536
+Drawing.
+
+397
+01:04:34,396 --> 01:04:41,756
+Okay, example nine says what? We are in three space. We have three fixed vectors, right?
+
+398
+01:04:42,316 --> 01:04:51,356
+So we are asked if this V is a linear combination of V1, V2, V3.
+
+399
+01:04:51,923 --> 01:05:07,463
+What's the meaning of linear combination of these three initial vectors? I mean, if there exists, we are asked to determine if there exists alpha, beta, gamma, scalars, such that V is a linear combination of V1, V2, V3.
+
+400
+01:05:19,423 --> 01:05:24,963
+bu ve v'in bir coördini var,
+
+401
+01:05:24,963 --> 01:05:26,963
+2, 1, 5'in bir coördini var.
+
+402
+01:05:26,963 --> 01:05:28,463
+Bu bir coördini var,
+
+403
+01:05:28,463 --> 01:05:31,163
+bir coördini var,
+
+404
+01:05:31,163 --> 01:05:32,264
+bir coördini var.
+
+405
+01:05:32,264 --> 01:05:33,864
+Bu bir coördini var,
+
+406
+01:05:33,864 --> 01:05:35,684
+bir coördini var.
+
+407
+01:05:35,684 --> 01:05:36,663
+Bu bir coördini var,
+
+408
+01:05:36,663 --> 01:05:38,663
+bir coördini var.
+
+409
+01:05:38,663 --> 01:05:42,284
+Bu bir coördini var.
+
+410
+01:05:42,284 --> 01:05:44,364
+Bir coördini var,
+
+411
+01:05:44,364 --> 01:05:44,976
+bir coördini var.
+
+412
+01:06:13,012 --> 01:06:40,396
+Bu, iki vektörünün iki vektörünün iki vektörünün iki vektörünün iki vektörünün iki vektörünün iki vektörünün iki vektörünün iki vektörünün iki vektörünün iki vektörünün iki vektörünün iki vektörünün iki vektörünün iki vektörünün iki vektörünün iki vektörünün iki vektörünün iki vektörünün iki vektörünün iki vektörünün iki vektörünün iki vektörünün iki vektörünün iki vektörünün iki vektörünün iki vektörünün iki vektörünün iki vektörünün iki vektörünün iki vektörünün iki vektörünün iki vektörünün iki vektörünün iki vektörünün iki vektörünün iki vektörün
+
+413
+01:06:40,500 --> 01:06:49,000
+Look at this, this expression, this expression is equivalent to a linear system sigma, right?
+
+414
+01:06:55,476 --> 01:07:00,355
+A1 plus, let me write.
+
+415
+01:07:06,771 --> 01:07:09,951
+Bu, ilk lineer equation in your system, right?
+
+416
+01:07:10,951 --> 01:07:18,871
+The other one is two times, the second line, two times a1, and a3.
+
+417
+01:07:19,551 --> 01:07:30,491
+The third and the last linear equation in the linear system is a1 plus two times a2 is equal to five.
+
+418
+01:07:31,431 --> 01:07:33,211
+Is it true or not?
+
+419
+01:07:34,900 --> 01:07:41,619
+Am I correct to represent or to interpret this expression as a linear system or not?
+
+420
+01:07:43,400 --> 01:07:46,179
+Why three linear equations and three unknowns?
+
+421
+01:07:46,779 --> 01:07:49,380
+Because vectors are given in three space, right?
+
+422
+01:07:49,500 --> 01:07:52,299
+Each one of them has three coordinates.
+
+423
+01:07:53,819 --> 01:07:54,699
+Three coordinates.
+
+424
+01:07:54,839 --> 01:08:01,059
+And the coefficient in the linear combination here, a1, a2, a3, have the role
+
+425
+01:08:01,492 --> 01:08:06,271
+have the role of unknown in your linear system sigma, right?
+
+426
+01:08:07,532 --> 01:08:23,492
+So, how do you know if there exists indeed some coefficient in such a way that we might be written as a linear combination of V1, V2, V3, through the coefficient 1, 2, and...
+
+427
+01:08:26,492 --> 01:08:27,131
+...solution.
+
+428
+01:08:30,195 --> 01:08:34,595
+...for this linear system means there exists no coefficient.
+
+429
+01:08:36,796 --> 01:08:39,835
+So you can write, right?
+
+430
+01:08:39,835 --> 01:08:43,835
+So we will now...
+
+431
+01:08:43,835 --> 01:09:05,323
+...
+
+432
+01:22:32,115 --> 01:22:42,155
+Arkadaşlar, demin bir ses, yani bağlantı sorunu yaşadık galiba, son anda fark ettim ben, not uygulamasından bir şeyler karalıyordum. Nereden itibaren kesildi farkında, söyler misiniz bana?
+
+433
+01:22:49,684 --> 01:22:59,283
+Takip eden varsa söyleyebilir mi bana? Nerede koptu tam olarak? Oradan geriye alayım tekrar. Şu an duyuyor musunuz efendim?
+
+434
+01:23:08,564 --> 01:23:09,844
+Şu an duyuyor musunuz beni?
+
+435
+01:23:16,212 --> 01:23:17,632
+Kimse cevap vermeyecek mi?
+
+436
+01:23:24,532 --> 01:23:26,692
+[öğrenci] orada mısın? [öğrenci].
+
+437
+01:23:34,963 --> 01:23:43,224
+[öğrenci], orada mısın [öğrenci]? Check edelim bakalım, yani listede gözükenler gerçekten dersi dinliyor mu?
+
+438
+01:23:47,028 --> 01:23:53,968
+[öğrenci], bu zaten telefonu, mikrofonu bile açık değil, bilgisayarının ya da. [öğrenci].
+
+439
+01:24:02,163 --> 01:24:06,003
+Yani şu anda bağlı olduğu halde dersi dinleyen biri yok mu ya içinizde?
+
+440
+01:24:18,868 --> 01:24:26,188
+Evet, kimse ses çıkarmıyor, çok ilginç yani. Yani biriniz de hocam sesiniz geliyor desin ya.
+
+441
+01:24:41,652 --> 01:25:09,152
+Evet, 21 kişiye düşmüşüz. Ben devam ederim. Yani kimseden cevap yok. Demek ki telefonları açtınız, derste gözüküyorsunuz ama belki çoğunuz da dinlemiyor yani. Ama sorun değil. Buradan devam ederim. Kayıttan dinlemeyi tercih ediyorsunuz madem. Ben devam ederim. 20 dakika daha anlatırım ondan sonra dersi sonlandırırım. Evet, burada bazı egzersizler var. We have some exercises here.
+
+442
+01:25:10,771 --> 01:25:14,251
+Many nice exercises you have to take a look at here, right?
+
+443
+01:25:15,051 --> 01:25:20,091
+For example, number five looks like a good one.
+
+444
+01:25:21,471 --> 01:25:21,652
+Okay.
+
+445
+01:25:22,951 --> 01:25:30,791
+For example, if this set of vectors form a vector subspace or not, a, b, one.
+
+446
+01:25:32,404 --> 01:25:43,704
+A and B are real numbers, of course, right? Suppose you have this set, where? In three space. Do you think this subset is a vector space or, excuse me, is a vector space or not?
+
+447
+01:25:46,424 --> 01:25:53,304
+Surely it's not a vector space, because if you take two typical elements, and if you consider the usual vector addition,
+
+448
+01:25:54,676 --> 01:25:59,156
+The third coordinate will be two, not one, right?
+
+449
+01:25:59,296 --> 01:26:06,115
+So this is enough for you to say, to affirm, this set will never have a vektör subspace, right?
+
+450
+01:26:06,556 --> 01:26:10,316
+So you have to take a look at the other exercises.
+
+451
+01:26:11,456 --> 01:26:16,516
+I don't want to spend my time with these exercises.
+
+452
+01:26:16,516 --> 01:26:18,252
+Maybe I can...
+
+453
+01:26:18,931 --> 01:26:30,652
+Say, a few words about different kinds of exercises, matrices for example, matrices, consider this set of 3x3 matrices of this form.
+
+454
+01:26:31,031 --> 01:26:35,431
+You have only non-zero element on the first and second diagonal, right?
+
+455
+01:26:35,971 --> 01:26:44,652
+So, show that if such a set is a subspace of, this is a vector space of all square matrices.
+
+456
+01:26:46,228 --> 01:26:58,768
+With real entries, right? This is a vector space. But we are asked if this subset is a subspace, right? A, B.
+
+457
+01:26:59,507 --> 01:27:00,007
+Hocam.
+
+458
+01:27:00,408 --> 01:27:02,868
+Efendim. Az önce bir kockukluk oldu galiba.
+
+459
+01:27:03,388 --> 01:27:05,587
+Kusura bakmayın. Söylüyorum ama ekranını paylaşmadım.
+
+460
+01:27:06,048 --> 01:27:12,648
+Ekranı paylaşmadım, doğru. Bak tekrardan bağlandım, ekranı paylaşmadım. Teşekkür ederim. Birisi de söyleyebilirdi yani.
+
+461
+01:27:15,764 --> 01:27:21,123
+Ben notlar uygulamasını kullandığımda Zoom'un kendi ekranını görmüyorum arka planda.
+
+462
+01:27:21,924 --> 01:27:29,444
+O yüzden o arada internet giderse, yani farkında olmadan kendi kendime konuşmuş oluyorum. Başıma geldi daha önceden.
+
+463
+01:27:29,944 --> 01:27:35,963
+Yani aynı ekranda, pdf üzerinde hiçbir yere gitmeden konuşacak olsam tamam bu sorunu yaşamayız ama
+
+464
+01:27:35,963 --> 01:27:43,264
+kendim bir şeyler çizmeye çalışınca, başka bir ekrana uygulamaya geçince göremeyebiliyorum yani arka planda.
+
+465
+01:27:43,680 --> 01:27:45,000
+Kopukluk olup olmadığını.
+
+466
+01:27:46,899 --> 01:27:47,500
+Evet.
+
+467
+01:27:49,300 --> 01:27:55,780
+Şunu söylüyordum. M33 ile gösterdiği 3x3'lük bütün kare matrislerin vektör uzayı. Bunun üzerinde böyle bir alt kümü alalım.
+
+468
+01:27:55,940 --> 01:28:02,460
+Sadece, yani yine 3x3'lük matrisler ama birinci ve ikinci köşegen haricinde diğer elemanları kesinlikle sıfır.
+
+469
+01:28:03,020 --> 01:28:05,460
+A, B, C, D, E bunlar.
+
+470
+01:28:06,899 --> 01:28:13,119
+Şöyle söyleyeyim, real sayı sıfırda olabilir mi? Olabilir ama şunlar her zaman sıfır.
+
+471
+01:28:14,059 --> 01:28:17,479
+Böyle matrislerin kümesi vektör uzayı olur mu mesela?
+
+472
+01:28:20,559 --> 01:28:24,119
+[öğrenci]ydı değil mi demin bana ekran paylaşımı yapmadınız diyen?
+
+473
+01:28:32,372 --> 01:28:35,012
+Evet [öğrenci], sence bu vektör uzayı olur mu?
+
+474
+01:28:40,851 --> 01:28:42,471
+Olur mu sizce bu vektör uzayı?
+
+475
+01:28:46,452 --> 01:28:49,992
+İki tane böyle matris alsanız toplamı yine aynı tip matris olur mu?
+
+476
+01:28:57,108 --> 01:29:00,488
+Gene aynı tip olur mu? Böyle iki maddisin toplamı.
+
+477
+01:29:03,488 --> 01:29:08,448
+[öğrenci]'ymış az önce beni uyaran. Teşekkür ederim [öğrenci]. Cevap verebilir misin şimdi sorduğum soruya?
+
+478
+01:29:10,948 --> 01:29:12,128
+Hocam ben bilmiyorum.
+
+479
+01:29:12,916 --> 01:29:31,115
+Ama bakalım, beraber bak, bak burada matris'e bir bakar mısın? Bir birinci köşegeni var, bir de ikinci köşegeni var. Onun haricindeki elemanlar sıfır olmalı diyor. A, B, C, D de sıfır olamaz mı? Olabilir ama her halükarda sıfır olması gereken elemanlar bu pozisyonda. Bak matris bu şekilde verilmiş. Böyle iki matris toplasan gene aynı tip olmaz mı?
+
+480
+01:29:32,948 --> 01:29:34,308
+Yani olur gibi duruyor.
+
+481
+01:29:34,708 --> 01:30:00,000
+Evet olur. Ya çok basit bir soru yani. Mesela bu bak ben pozisyonlar söyleyeyim. Matris'in birinci satır ikinci sütün elemanıyla, ikinci satır birinci sütün elemanı, ikinci satır üçüncü sütün, üçüncü satır ikinci sütün elemanları sıfır, onun haricindeki elemanlar sıfır olabilirdi olmayabilirdi. Orada bir gevşeklik var, esneklik var ama şu pozisyondaki elemanlar kesinlikle sıfır olacak şekilde. İki tip matris al. Gene aynı tipteki, aynı pozisyondaki elemanlar kesinlikle sıfır olacak.
+
+482
+01:30:00,000 --> 01:30:17,800
+Çünkü sıfır artı sıfır olacak herhalde. Değil mi? Ya toplama işlemine göre kapalı olduğu belli yani. Böyle iki tip elemanı alırsan toplamları da gene aynı tip. Peki çarpımını alırsan, böyle bir maddesi bir sayıla çarparsan gene aynı tip maddesi olur mu [öğrenci]?
+
+483
+01:30:19,680 --> 01:30:20,600
+Olur hocam.
+
+484
+01:30:21,079 --> 01:30:27,460
+Olur değil mi? Çünkü sıfırla çarpıyorsun. Skalerin ne olduğu hiç önemli değil. Aynen öyle. O zaman vektör uzayı mesela bak.
+
+485
+01:30:27,891 --> 01:30:55,332
+Yani bu kalem oynatmana gerek olmayan bir soru aslında değil mi? Yani test sınavında bu tip şeyler çıkacak karşınıza böyle yani A, B, C, D, E şıklarında matrisler görüp de böyle korkmanıza gerek yok. Anlatabiliyor muyum? Böyle dingin bir kafayla rahatlıkla cevaplayabileceğiniz sorular çıkacak en nihayetinde. Yani size 4-5 dakika veriyorsak sınavda bir soru için ortalama. Yani uzun hesap kitap gerektiren, işlem gerektiren bir şey soramayız.
+
+486
+01:30:55,859 --> 01:31:00,719
+Değil mi? O yüzden bu pratikliği kazanmanız lazım, çok soru çözerekten.
+
+487
+01:31:03,459 --> 01:31:07,119
+Evet, burada çok güzel örnekler var. Mesela bakalım, şu örneğe bakalım.
+
+488
+01:31:07,119 --> 01:31:20,000
+Let us see this exercise. Do you think the set of vectors of this form, A, B, C, where the third coordinate is strictly greater than zero, forms a vector subspace of R3 or not?
+
+489
+01:31:22,579 --> 01:31:29,960
+RQP'te böyle vektörlerin kümesi, birinci koordinatı kesin kesin sıfırdan büyük, diğerler için hiçbir koşul yok. Vektör uzayı olur mu?
+
+490
+01:31:34,068 --> 01:31:46,247
+Burada kalem oynatmamıza bile gerek yok. Olmaz, neden olmaz? Bunun skalayla çarpımını alırsan, sorun orada zaten. Yani böyle bir vektörü negatif bir sayıla çarparsan, birinci koordinatı pozitif olur mu arkadaşlar?
+
+491
+01:31:50,003 --> 01:32:13,164
+Olmaz değil mi? Olmaz. O yüzden de vektör uzayı olmaz. Değil mi? Ha sen skaleri de pozitif alırsan, tabii ki birinci koordinatı pozitif olduğu için çarptıktan sonra birinci koordinat gene pozitif oluyor ama skaler herhangi bir skaler. Negatif alırsan da aynı koşula reayet etmesi gerekir, vektör uzayı olması isteniyorsa ama olmuyor. Değil mi?
+
+492
+01:32:15,572 --> 01:32:25,752
+Evet, bu şekilde arkadaşlar eleyebilirsiniz kendinizden, kalem kağıt oynatmadan bir sürü soruyu çözebilirsiniz. Yani burada bir sürü soru var, bunlara bakmanızı tavsiye ederim.
+
+493
+01:32:26,792 --> 01:32:34,652
+Mesela ben, yani soruyu okumuyorum bile ama şuna bir bakalım. Ya bu bir parabol olsun ya, bu şeye benziyor, yeşilir x kare paraboluna benziyor diyelim.
+
+494
+01:32:35,332 --> 01:32:38,572
+Tamam mı? Yani V3 dediğim şey şu olsun, öyle x, y'ler ki...
+
+495
+01:32:41,811 --> 01:32:50,112
+Yani X için bir koşulu yok, her şey olabilir ama Y X'e bağımlı. X neyse Y onun karesi. Bu bir vektör uzayı olur mu?
+
+496
+01:32:54,036 --> 01:32:56,595
+Standart vektör toplamı ve çarpımı ile.
+
+497
+01:32:57,556 --> 01:33:03,796
+V3'in bu bölgenin, vektör uzayları, vektör uzayları, değil mi?
+
+498
+01:33:08,724 --> 01:33:10,384
+Var mı buna cevap vermek isteyen?
+
+499
+01:33:12,104 --> 01:33:13,783
+Any volunteer to respond my question?
+
+500
+01:33:19,731 --> 01:33:26,871
+It is clear that it is not a vector space. Why? Look at this. Take two vectors. What does it mean?
+
+501
+01:33:28,692 --> 01:33:42,391
+This is a vector, this is another vector, right? U and V, right? I mean U means x1, x1 square, right? V means x2, x2 square, right?
+
+502
+01:33:42,391 --> 01:33:46,131
+For some real numbers, x1, x2.
+
+503
+01:33:46,644 --> 01:33:47,584
+Yes or not?
+
+504
+01:33:48,604 --> 01:33:50,504
+So what do you think about their sum?
+
+505
+01:33:52,623 --> 01:33:54,344
+Their sum, usual sum, right?
+
+506
+01:34:02,579 --> 01:34:12,300
+Bu, bu, v3, çünkü, you see, look at this, their sum, is this vector, right?
+
+507
+01:34:15,119 --> 01:34:21,960
+And, head of this new vector, does not touch the parabola, right?
+
+508
+01:34:23,380 --> 01:34:29,960
+Geometrically speaking, this is the answer, but, you can also see that this second coordinate,
+
+509
+01:34:30,484 --> 01:34:55,043
+Bu, never, can never be written as a x1 plus x2 to the power 2, right? This is not possible, okay? This is an algebraic answer, but geometrically speaking, if you consider the sum of u and v, u plus v is not a vector whose head is on the parabola, right?
+
+510
+01:34:57,939 --> 01:34:58,439
+Ok.
+
+511
+01:35:02,899 --> 01:35:06,899
+Bu, yine de vektör uzayları, değil.
+
+512
+01:35:11,220 --> 01:35:37,079
+Many questions, right? More than you need. Okay, now we have an important notion here, span, which is span. We have defined so far a mathematical structure, which we call real vector space. We have also complex vector space, but it's not of our interest, right? We have also mentioned some of the properties, some of its properties.
+
+513
+01:35:37,619 --> 01:35:55,239
+Now we are going to see something interesting here. Look at the definition 4.7. Suppose you have a set of vectors, some set S, consisting of a finite number of vectors from a vector space V, right?
+
+514
+01:35:55,859 --> 01:36:04,520
+The set of all vectors in V, which are linear combinations of the vectors in the subset S, is denoted by span S.
+
+515
+01:36:05,076 --> 01:36:32,615
+Span S. This is the notation, right? So what's the meaning of span S? Some people say S is a spanning set. What is the typical element of span S? A typical element in this set, actually it is more than a set, it is a subspace. A typical element in this subspace is a linear combination, right?
+
+516
+01:36:33,171 --> 01:36:34,171
+Linear combination.
+
+517
+01:36:35,491 --> 01:36:36,111
+We will see.
+
+518
+01:36:37,431 --> 01:36:39,231
+Consider this example one.
+
+519
+01:36:40,871 --> 01:36:42,031
+Consider the set of,
+
+520
+01:36:43,531 --> 01:36:47,331
+the set S of 2 by 3 matrices given by this set.
+
+521
+01:36:47,391 --> 01:36:55,251
+Look at, look at, this is a subset of these vector space of 2 by 3.
+
+522
+01:36:56,372 --> 01:37:05,212
+matrisi, real entries, right? You have a subset, this is just a subset within a vector space, right?
+
+523
+01:37:05,851 --> 01:37:14,252
+Alright, so these matris, if you prefer, you can consider as a vector. You can call simply vector, right?
+
+524
+01:37:14,692 --> 01:37:22,972
+We have four vectors from this vector space, V to form our set S, okay?
+
+525
+01:37:23,572 --> 01:37:27,032
+So the question is that, what is the span s?
+
+526
+01:37:27,832 --> 01:37:28,512
+Span s.
+
+527
+01:37:29,832 --> 01:37:31,192
+Look at the definition.
+
+528
+01:37:31,672 --> 01:37:38,572
+Definition says that span s consists of all linear combinations of the vectors in s.
+
+529
+01:37:39,352 --> 01:37:39,512
+Right?
+
+530
+01:37:40,432 --> 01:37:42,932
+So these vectors, v1, v2, vk,
+
+531
+01:37:43,380 --> 01:37:52,760
+You can consider in somehow generators of your set. You use these generators to generate new vectors, right?
+
+532
+01:37:53,180 --> 01:38:02,960
+These line vectors are always of the form of linear combination. And S, there is a difference between S and its span.
+
+533
+01:38:04,100 --> 01:38:10,539
+It is clear for me, I don't know if it's clear for you, but S is always contained in its span.
+
+534
+01:38:10,931 --> 01:38:11,452
+Right?
+
+535
+01:38:12,051 --> 01:38:18,912
+Because any vector here might be clearly written as a linear combination of the others.
+
+536
+01:38:19,572 --> 01:38:19,752
+Right?
+
+537
+01:38:21,832 --> 01:38:22,592
+Okay.
+
+538
+01:38:25,332 --> 01:38:26,092
+Now.
+
+539
+01:38:31,572 --> 01:38:39,072
+We have a set, and we are interested in to determine what is the span of this set, right?
+
+540
+01:38:39,671 --> 01:38:53,332
+So, according to the definition, we have to write all possible a1, v1, a2, v2, a3, v3, a4, v4, right?
+
+541
+01:38:53,431 --> 01:38:56,992
+These are coefficients, which are real numbers, right?
+
+542
+01:38:59,539 --> 01:39:21,323
+Bu bir şey, bu bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey, bir şey
+
+543
+01:39:23,475 --> 01:39:44,355
+This is A1 times V1, right? This is, okay, I said A1, A2, A3, A4, but it doesn't matter, right? You can use, you can simply use A, B, C, D. This is A times V, B times V1, B times V2, C times V3.
+
+544
+01:39:44,948 --> 01:39:55,188
+d times v, 4. This is the linear combination, and that means exactly you generate this typical linear combination, right?
+
+545
+01:39:55,608 --> 01:40:02,168
+So this is a typical element of your span, spanning S, span set, right?
+
+546
+01:40:03,648 --> 01:40:08,068
+A, B, C, D are real numbers, right?
+
+547
+01:40:08,807 --> 01:40:09,900
+This is...
+
+548
+01:40:11,315 --> 01:40:16,655
+A vector subspace of this vector space, right?
+
+549
+01:40:17,515 --> 01:40:20,855
+I don't say the same for the set S itself.
+
+550
+01:40:21,115 --> 01:40:23,575
+You have to be very careful here, right?
+
+551
+01:40:23,915 --> 01:40:31,255
+S is just a set consisting of a finite number of vectors, but its span is a vector subspace, right?
+
+552
+01:40:32,055 --> 01:40:33,475
+Its span is a vector subspace.
+
+553
+01:40:33,615 --> 01:40:36,675
+Don't confuse this, right?
+
+554
+01:40:36,955 --> 01:40:38,715
+This is a vector subspace.
+
+555
+01:40:40,948 --> 01:40:42,628
+Bu, bu, sadece bir sub-set.
+
+556
+01:40:44,868 --> 01:40:45,428
+Okay?
+
+557
+01:40:47,347 --> 01:40:51,208
+If you want to understand why we have this inclusion,
+
+558
+01:40:52,387 --> 01:40:55,928
+you have to answer that any vector, any element here,
+
+559
+01:40:56,708 --> 01:41:02,628
+might be written as a linear combination of the generators of S, right?
+
+560
+01:41:02,868 --> 01:41:06,868
+This is clear because, look at this.
+
+561
+01:41:09,235 --> 01:41:33,676
+Look at this. S is this set, v1, vk, right? You can, any vectors from S is an element of span S, right? Why? For example, v, suppose i is equal to 1, right? So v1,
+
+562
+01:41:35,923 --> 01:41:44,224
+V1'i a linear combination of the total, V1'i a linear combination of all elements in S.
+
+563
+01:41:44,703 --> 01:41:48,703
+1, what kind of linear combination you have to propose here?
+
+564
+01:41:48,703 --> 01:42:02,483
+1 times V1, 0 times V2, always you have to multiply the other vectors by 0 to obtain V1 as a linear combination of the generators, right?
+
+565
+01:42:03,412 --> 01:42:05,592
+You can do it for any element.
+
+566
+01:42:05,971 --> 01:42:10,872
+If you take V2, V2 might be written also as an inner combination of the element of S.
+
+567
+01:42:11,011 --> 01:42:17,032
+For example, 0 times V1, 1 times V2, 0 times V3.
+
+568
+01:42:17,032 --> 01:42:27,612
+If you continue with this, continue this time, this way, you will see that this is actually an inner combination, right?
+
+569
+01:42:28,500 --> 01:42:32,799
+So, every element here is actually an element of its span.
+
+570
+01:42:33,479 --> 01:42:39,059
+So, that's why I simply write S is contained in its span.
+
+571
+01:42:39,639 --> 01:42:42,539
+But you have to distinguish this set.
+
+572
+01:42:43,099 --> 01:42:48,219
+This is a subset, but this is a vector subspace, right?
+
+573
+01:42:48,799 --> 01:42:54,699
+Both are contained in V, but this is contained as a vector subspace.
+
+574
+01:42:56,180 --> 01:43:01,100
+This is containing V as a subset. It is not a subspace, right?
+
+575
+01:43:02,920 --> 01:43:08,100
+Okay, we have ten more minutes. Do you have any question?
+
+576
+01:43:10,960 --> 01:43:19,100
+Sorusu olan var mı arkadaşlar? Sorusu olan varsa sorsun, hızlıca cevaplayalım ve hemen biraz daha konu işleyelim çünkü...
+
+577
+01:43:19,444 --> 01:43:26,144
+En az bir hafta gerideyiz yani, geçen hafta ders yapamadığım için. Var mı sorusu olan? 22 kişiye düşmüşüz bu arada.
+
+578
+01:43:32,020 --> 01:43:32,520
+Evet.
+
+579
+01:43:39,220 --> 01:43:51,439
+Devam edelim. İki numaralı örneğe bakalım. Let me see the example too. You have a set S in this vector space. So what is this spanning set of S?
+
+580
+01:43:55,828 --> 01:44:01,728
+Here, it is clear that span of s is the vector space itself.
+
+581
+01:44:02,468 --> 01:44:12,368
+Because we have already seen that with these three generators, we can generate any polynomials of degree, not greater than 2, right?
+
+582
+01:44:13,368 --> 01:44:14,368
+Not greater than 2.
+
+583
+01:44:14,828 --> 01:44:18,988
+And look at this, this polynomial, just remember the representation.
+
+584
+01:44:47,315 --> 01:44:55,036
+means 1, 0, 0, right?
+
+585
+01:44:55,175 --> 01:44:59,055
+You can think this way.
+
+586
+01:44:59,576 --> 01:45:03,155
+t, you can represent with this vector.
+
+587
+01:45:04,395 --> 01:45:08,376
+1, you can represent as 0, 0, 1, right?
+
+588
+01:45:08,935 --> 01:45:11,095
+Actually, it's not good to write 1.
+
+589
+01:45:11,095 --> 01:45:13,095
+It's not good to write...
+
+590
+01:45:13,363 --> 01:45:15,844
+Eğol, let me say, equivalent.
+
+591
+01:45:18,404 --> 01:45:18,963
+Okay?
+
+592
+01:45:23,123 --> 01:45:23,724
+Alright.
+
+593
+01:45:31,731 --> 01:45:36,832
+Please, take a look at the rest of this exercise, B and C.
+
+594
+01:45:38,091 --> 01:45:42,011
+This I will leave you to see at home, okay?
+
+595
+01:45:47,252 --> 01:45:59,231
+Let me see what we have here. In theorem 4.4, we have a set of vectors in a vector space v, then span is a subspace, right?
+
+596
+01:45:59,652 --> 01:46:04,252
+We already see, roughly speaking, but the proof is very clear, right?
+
+597
+01:46:04,811 --> 01:46:06,771
+So I don't want to repeat again.
+
+598
+01:46:07,652 --> 01:46:10,252
+Since we have already seen that linear combinations of...
+
+599
+01:46:10,579 --> 01:46:14,539
+A fixed set of vectors is a vector subspace.
+
+600
+01:46:14,819 --> 01:46:20,699
+I don't need, I don't see the necessity of repeating the same argument here.
+
+601
+01:46:20,939 --> 01:46:23,960
+So I will skip the proof of theorem 4.4.
+
+602
+01:46:24,939 --> 01:46:27,759
+So let me see what we have next.
+
+603
+01:46:28,439 --> 01:46:29,380
+Some examples.
+
+604
+01:46:29,819 --> 01:46:38,039
+Example 3 says that if this set S consisting of two polynomials as a subset of the vector space P2,
+
+605
+01:46:41,076 --> 01:46:43,076
+What is the span of this set?
+
+606
+01:46:44,475 --> 01:46:46,996
+We are, actually we are not asked.
+
+607
+01:46:48,855 --> 01:47:01,376
+It is a claim that span of such a set S is the subspace of all polynomials of the form A times t squared plus B times t, right?
+
+608
+01:47:01,556 --> 01:47:03,876
+Where A and B are of course real numbers.
+
+609
+01:47:05,556 --> 01:47:08,155
+Right? This is very clear because
+
+610
+01:47:08,692 --> 01:47:21,051
+If you consider linear combinations, right, you have to write something, something like this, right, this is a typical linear combination.
+
+611
+01:47:21,192 --> 01:47:28,131
+If you change A and B, each time you generate another linear combination, and the set of such linear combination is a vector space.
+
+612
+01:47:29,131 --> 01:47:34,031
+So this is, this is the spanning set, right?
+
+613
+01:47:35,091 --> 01:47:46,591
+Bu anlamda, polinomiyatlar, 2'ye daha büyük, değil mi? Evet, yok mu?
+
+614
+01:47:48,931 --> 01:47:53,711
+Yani böyle bir kümeyle hangi vektör uzayını gelerseniz deseler size ne diyeceksiniz arkadaşlar?
+
+615
+01:47:53,871 --> 01:47:58,271
+Derecesi 2'den büyük olmayan, sabit terimi olmayan polinomların vektör uzayı olur, değil mi?
+
+616
+01:48:00,564 --> 01:48:18,704
+Evet, example 4'te ne diyor, 4 numaralı örnekte? Burada da 2x2'lik kare matrislerin vektör uzayında bir küme vermiş. Ne demek? Oradan iki tane matris almış. Bu iki matristen müteşekkil bir S kümesi var burada. Bunun spen, bunun geren kümesi nedir? Onu soruyor. Böyle iki matrisle ne gerersiniz arkadaşlar?
+
+617
+01:48:18,704 --> 01:48:27,344
+What kind of subspace you generate, you spend by using generators of this time? This is my question.
+
+618
+01:48:28,243 --> 01:48:30,783
+Actually, this is the question in example four, right?
+
+619
+01:48:31,823 --> 01:48:33,323
+So what is the answer?
+
+620
+01:48:33,663 --> 01:48:37,523
+What kind of space, vector space, you can generate with this set?
+
+621
+01:48:40,403 --> 01:48:47,083
+You have to consider, let me write V1 to avoid writing matrices each time.
+
+622
+01:48:47,723 --> 01:48:53,143
+Why don't we call V1, V2, these two matrices, and consider this linear combination.
+
+623
+01:48:53,323 --> 01:48:54,483
+This is a vector, right?
+
+624
+01:48:54,836 --> 01:49:03,235
+Ama, if you write as a matrix of order 2, you will write something like this.
+
+625
+01:49:04,115 --> 01:49:06,836
+This is a diagonal, as typical diagonal matrix.
+
+626
+01:49:07,836 --> 01:49:13,256
+So, this set generates a vector subspace of diagonal matrices.
+
+627
+01:49:13,975 --> 01:49:14,076
+Okay?
+
+628
+01:49:17,076 --> 01:49:21,916
+Alright. Sorusu olan var mı arkadaşlar? Ben artık biraz yoruldum, burada bırakayım.
+
+629
+01:49:22,771 --> 01:49:23,851
+Var mı sorusu olan?
+
+630
+01:49:27,667 --> 01:49:33,287
+Bu cumartesi saat 3'e ders koyacağım arkadaşlar, tamam mı? Link size gelir, sistem tarafından.
+
+631
+01:49:33,867 --> 01:49:37,267
+Geçen haftayı telafi etmek zorundayız. Yani benim elimde olan bir şey değil.
+
+632
+01:49:37,627 --> 01:49:42,167
+Maalesef okulda internet çalışması vardı, altyapı çalışması olan bize oldu.
+
+633
+01:49:43,567 --> 01:49:44,407
+Var mı sorusu olan?
+
+634
+01:49:47,507 --> 01:49:51,287
+Peki, görüşmek üzere. Hepinize iyi dersler dilerim. İyi günler, hoşçakalın.

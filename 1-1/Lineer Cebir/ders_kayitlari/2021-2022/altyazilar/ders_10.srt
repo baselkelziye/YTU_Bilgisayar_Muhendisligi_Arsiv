@@ -1,0 +1,3175 @@
+1
+00:01:09,492 --> 00:01:11,492
+Günaydın arkadaşlar.
+
+2
+00:01:12,992 --> 00:01:14,668
+Good morning everybody.
+
+3
+00:01:24,019 --> 00:01:29,619
+Arkadaşlar, size bir şey sormak istiyorum. Sınav notlarınızı görüyor musunuz öğrenci bilgi sistemi üzerinden?
+
+4
+00:01:42,355 --> 00:01:47,655
+Peki, sınava girdiği halde notu gözükmeyen var mı? Ya da girmediği gözüken var mı?
+
+5
+00:01:59,656 --> 00:02:01,555
+İçinizde böyle arkadaşlar var mı?
+
+6
+00:02:04,563 --> 00:02:11,043
+Çünkü benim grubumda olmayıp da başka sınıfta sınava girenler olmuş, aynı şey karşılıklı olmuş olabilir.
+
+7
+00:02:12,343 --> 00:02:18,144
+Sizlerden birisi gidip başka bir sınıfta derse sınava girmiş olabilir. O yüzden listelerden çekelim onları.
+
+8
+00:02:18,783 --> 00:02:26,543
+Kimsenin notu zayi olmasın. Gerçi ben bütün kontrollerimi yaptım ama var mı içinizde böyle? Sınava girdiği halde girmedi gözüken notu.
+
+9
+00:02:30,580 --> 00:02:35,460
+Pekala, yok diye anlıyorum. On kişiyiz. Nasıl geçti sınavınız arkadaşlar?
+
+10
+00:02:38,740 --> 00:02:43,379
+Sormuştuk bunu daha önce ama, yani memnun musunuz aldığınız notlardan?
+
+11
+00:02:44,620 --> 00:02:49,819
+İngilizce sınıfların başarı ortalaması genelde Türkçe gruplara göre daha düşürür.
+
+12
+00:02:50,540 --> 00:02:56,480
+Online olunca daha da düşürür tabii yani. Artık bu tecrübeyle sabit. Yüz yüze eğitim gibi olmuyor.
+
+13
+00:02:57,843 --> 00:03:01,483
+Neyse, biz dersimize başlayalım. Let me start the lesson today.
+
+14
+00:03:02,303 --> 00:03:06,663
+If I'm not wrong, I was talking about the Scala product, right?
+
+15
+00:03:07,183 --> 00:03:10,463
+This is not something that you have never seen before.
+
+16
+00:03:13,623 --> 00:03:21,883
+But today we have to add some more product, cross product, for example, mixed product, right?
+
+17
+00:03:30,028 --> 00:03:32,867
+Scala product is related with the projection.
+
+18
+00:03:33,348 --> 00:03:37,648
+If you remember, I have mentioned this fact before, right?
+
+19
+00:03:38,187 --> 00:03:43,648
+Just to refresh your memory, look at this picture here.
+
+20
+00:03:44,268 --> 00:03:46,648
+You have a vector u, another vector b.
+
+21
+00:03:47,168 --> 00:03:49,487
+There is some angle between them, right?
+
+22
+00:03:50,028 --> 00:03:53,648
+Theta, suppose this is an angle between 0 and...
+
+23
+00:03:54,099 --> 00:03:57,879
+180 degree, right?
+
+24
+00:04:00,199 --> 00:04:09,644
+Then, cosine of this angle, as we know, is equal to this number, the dot product of u and v, divided by...
+
+25
+00:04:10,036 --> 00:04:12,876
+Deir, product of Deir, magnitudes, right?
+
+26
+00:04:13,256 --> 00:04:19,115
+All the expression you see on the right side of this equality is just a real number.
+
+27
+00:04:19,576 --> 00:04:24,716
+So if you know this real number, you are able to isolate the theta, right?
+
+28
+00:04:24,796 --> 00:04:30,056
+This is the arc cosine of this number, right?
+
+29
+00:04:34,483 --> 00:04:57,675
+Bu, bu
+
+30
+00:04:59,060 --> 00:05:06,680
+Before then, maybe it would be nice to give a resume, right?
+
+31
+00:05:07,180 --> 00:05:19,040
+So this dot product, it doesn't matter if your vectors u and b are in R2 or R3, even if they are vectors in n-dimensional vector space, right?
+
+32
+00:05:19,100 --> 00:05:25,779
+So it doesn't matter. These u and b might be vectors in R2, R3.
+
+33
+00:05:26,303 --> 00:05:30,183
+Rn, right?
+
+34
+00:05:30,764 --> 00:05:33,524
+So, but it's enough for us, these two cases.
+
+35
+00:05:34,264 --> 00:05:35,983
+So, this is by definition,
+
+36
+00:05:38,144 --> 00:05:39,303
+equal to what?
+
+37
+00:05:40,943 --> 00:05:41,264
+So,
+
+38
+00:05:41,963 --> 00:05:46,764
+if you have a couple of vectors in R2, that means each of them
+
+39
+00:05:46,764 --> 00:05:49,783
+has two coordinates, right?
+
+40
+00:05:49,943 --> 00:05:50,891
+If they are in...
+
+41
+00:05:50,899 --> 00:06:01,740
+They have vectors in three space, that means they have three coordinates. So you have to write this sum, right?
+
+42
+00:06:04,539 --> 00:06:17,319
+Okay, and this is a real number. Okay? If you have a couple of vectors in R2, in this sum you have just two terms. If instead you have
+
+43
+00:06:17,651 --> 00:06:19,231
+A couple of vectors in R3.
+
+44
+00:06:20,192 --> 00:06:25,471
+In this sum, you will have three terms, right?
+
+45
+00:06:26,531 --> 00:06:29,512
+So, it's quite clear.
+
+46
+00:06:30,072 --> 00:06:35,231
+We have already seen this dot product when we define matrix multiplication, right?
+
+47
+00:06:35,271 --> 00:06:42,391
+If you remember, we have already defined this and we have spent some words about this dot product before.
+
+48
+00:06:42,391 --> 00:06:44,363
+So, let us...
+
+49
+00:06:46,451 --> 00:06:48,451
+Mention now cross product.
+
+50
+00:06:49,951 --> 00:06:53,152
+This is in R3, right?
+
+51
+00:06:53,152 --> 00:06:57,891
+Some people say vector product instead of cross product, right?
+
+52
+00:06:58,812 --> 00:07:00,192
+So cross product means,
+
+53
+00:07:02,292 --> 00:07:03,012
+this is the,
+
+54
+00:07:04,652 --> 00:07:07,752
+if you have a couple of vectors in R3,
+
+55
+00:07:08,552 --> 00:07:11,112
+their cross product means what?
+
+56
+00:07:11,212 --> 00:07:13,451
+We have to see this expression, right?
+
+57
+00:07:19,348 --> 00:07:26,468
+So, each vektör has 3 coördinates, right? 3 coördinates.
+
+58
+00:07:33,747 --> 00:07:41,567
+And this u, product, cross product v, is equal to this symbolic determinant.
+
+59
+00:07:48,307 --> 00:08:00,307
+Since you know some basic knowledge about the determinant, how to calculate a determinant, you are in a position to evaluate this symbolic determinant.
+
+60
+00:08:00,307 --> 00:08:08,307
+I say symbolic, but all the rules you know for determinant are also valid for this symbolic determinant.
+
+61
+00:08:08,307 --> 00:08:13,995
+Symbolic because the first line of this determinant
+
+62
+00:08:40,371 --> 00:08:57,631
+Alright, so if you fix the first line as your reference, and then use the cofactor expansion, you can write immediately this determinant as a vector.
+
+63
+00:08:58,071 --> 00:09:06,251
+Since the first row is a vector, it's clear that the resulting determinant, I mean the result of this determinant,
+
+64
+00:09:06,687 --> 00:09:10,467
+Bu bir vektör.
+
+65
+00:09:10,467 --> 00:09:14,467
+Çünkü bu bir vektör.
+
+66
+00:09:14,467 --> 00:09:29,467
+Bu vektör.
+
+67
+00:09:36,019 --> 00:09:38,339
+Okay, this is the cofactor expansion, right?
+
+68
+00:09:40,019 --> 00:09:45,379
+So let us put the coefficient in front of i, j, and k, right?
+
+69
+00:09:46,179 --> 00:09:53,139
+The first coefficient means determinant of this submatrix, of course, right?
+
+70
+00:10:01,427 --> 00:10:08,528
+And the third coefficient, for example, means this one, okay? Let me write.
+
+71
+00:10:19,988 --> 00:10:32,768
+And the second coefficient I'm going to write is equal to u1 times v3 minus u3 times v1, right?
+
+72
+00:10:33,848 --> 00:10:35,728
+You have to delete.
+
+73
+00:10:36,340 --> 00:11:01,019
+The line and column that contains J, as you know, and then write the determinant of the resulting 2x2 submetrics, right? Determinant of the 2x2 submetrics. So this is the cross product and geometrically it means that there exists a geometrical meaning of this product, like in the scalar product, right? Scalar product means projection, as I said, roughly speaking.
+
+74
+00:11:02,432 --> 00:11:07,572
+Geometrically, it represents a projection of one vector onto the other, right?
+
+75
+00:11:08,011 --> 00:11:15,572
+But what about the cross product? Is there any geometrical interpretation associated to this product?
+
+76
+00:11:16,371 --> 00:11:25,552
+Yes, the answer is yes. So let me show you this geometrical interpretation, right?
+
+77
+00:11:27,251 --> 00:11:38,431
+suppose u and v form this angle, teta, right, between 0 and 180 degree.
+
+78
+00:11:38,951 --> 00:11:43,791
+So such a couple of vectors form, of course, this parallelogram, right?
+
+79
+00:11:45,111 --> 00:11:51,131
+This parallelogram, and you are able to calculate the area, right?
+
+80
+00:11:51,271 --> 00:11:52,711
+How do you calculate the area?
+
+81
+00:11:59,155 --> 00:11:59,955
+This area.
+
+82
+00:12:01,735 --> 00:12:04,775
+Let me call parallelogram, P of parallelogram.
+
+83
+00:12:04,775 --> 00:12:07,255
+This notation means parallelogram.
+
+84
+00:12:09,875 --> 00:12:18,095
+Parallelogram generated by U and V.
+
+85
+00:12:18,515 --> 00:12:19,875
+So what is the area?
+
+86
+00:12:20,995 --> 00:12:25,515
+Area of this parallelogram, right?
+
+87
+00:12:25,775 --> 00:12:26,735
+How do you obtain?
+
+88
+00:12:37,587 --> 00:12:38,867
+Any opinion to say?
+
+89
+00:12:40,987 --> 00:12:42,547
+The answer here or not?
+
+90
+00:12:44,507 --> 00:12:47,067
+At least you can say this one, look at this.
+
+91
+00:12:50,803 --> 00:12:55,364
+You can divide this parallelogram and you have two triangle, right?
+
+92
+00:12:55,563 --> 00:13:02,223
+So why don't you calculate the area of one of these triangles and then multiply by two, right?
+
+93
+00:13:02,644 --> 00:13:06,943
+If you do that, you will see immediately this one.
+
+94
+00:13:07,764 --> 00:13:08,323
+Look at this.
+
+95
+00:13:10,024 --> 00:13:12,403
+This is the height, right?
+
+96
+00:13:12,803 --> 00:13:14,183
+Let me call h here.
+
+97
+00:13:15,024 --> 00:13:16,875
+So you know that the...
+
+98
+00:13:17,139 --> 00:13:21,559
+Let me call A this area, right? The half area means what?
+
+99
+00:13:26,196 --> 00:13:36,427
+Bu, bu
+
+100
+00:13:41,908 --> 00:13:45,648
+What about the age here?
+
+101
+00:13:47,028 --> 00:13:47,487
+Where?
+
+102
+00:13:52,947 --> 00:13:54,327
+H means what?
+
+103
+00:13:56,607 --> 00:13:58,847
+Can you say what is the value of H here?
+
+104
+00:14:07,635 --> 00:14:10,875
+No opinión, no answer, nobody can speak.
+
+105
+00:14:13,055 --> 00:14:17,115
+It seems we will end the semester this way, right?
+
+106
+00:14:17,815 --> 00:14:18,135
+Alright.
+
+107
+00:14:20,915 --> 00:14:29,956
+So, if you take the sign of this angle, you will find what?
+
+108
+00:14:30,275 --> 00:14:30,836
+Look at this.
+
+109
+00:14:34,100 --> 00:14:39,372
+Bu bölümün
+
+110
+00:14:43,251 --> 00:14:47,851
+This is the hypothesis, right? The magnitude of U.
+
+111
+00:14:50,651 --> 00:14:53,871
+Hocam, cos theta formülünü kullanabilir miyiz?
+
+112
+00:14:54,931 --> 00:15:02,951
+Kullanabilirsin. Onu kullanacağım zaten bende ama ekranın kaydı, notlarım nereye gitti ona bakıyorum şu anda.
+
+113
+00:15:09,427 --> 00:15:11,648
+Neyse, yeni not yazıcı açalım, sorun değil.
+
+114
+00:15:15,731 --> 00:15:18,491
+Şöyle bir paralelogramımız vardı, değil mi?
+
+115
+00:15:21,011 --> 00:15:36,451
+Yarısını hesaplamaya çalışıyordum. Şurası V'nin uzunluğu, burası U'nun uzunluğu. Şurada bir açı vardı. O zaman sinüsünü almam gerekiyor, değil mi? Söz alan arkadaşımız söyleyebilir.
+
+116
+00:15:37,748 --> 00:15:50,288
+Kosinüsünü alırsan, komşu kenarı kullanman lazım. Karşı kenarı kullanman lazım ki U'nun şiddetini dahil edebilirsin. Burada şu parçayı bilmiyorsun, şu kadarını bilmiyorsun. Sadece şunu biliyorsun. Değil mi?
+
+117
+00:15:53,228 --> 00:16:04,588
+Yani sinüsünü alsan, karşı kenar bölü hipotenüs mü? Şöyle yazalım, U'yu B gibi yazmayalım. Karışmasın.
+
+118
+00:16:05,299 --> 00:16:06,539
+Doğru mu? Bu yazdığı.
+
+119
+00:16:10,868 --> 00:16:17,288
+Buradan da h eşittir, u'nun normu, çarpı, açının sinüsü çıkar, değil mi?
+
+120
+00:16:18,388 --> 00:16:35,148
+So, after you find this value of h, you can write the half of area, as I said, base, product h of, h divided by 2, which is equal to what?
+
+121
+00:16:43,764 --> 00:16:50,028
+Bu, bu
+
+122
+00:17:00,532 --> 00:17:08,532
+ve bu kadar da bu korsan oluşturma.
+
+123
+00:17:08,532 --> 00:17:13,532
+Bu korsan oluşturma.
+
+124
+00:17:27,827 --> 00:17:28,427
+25.
+
+125
+00:17:30,427 --> 00:17:31,327
+All right.
+
+126
+00:17:46,516 --> 00:17:57,596
+Scalar products and vektör products have some nice properties. I think it must be necessary to say some word here about these rules or properties.
+
+127
+00:17:57,716 --> 00:18:10,444
+For example, look at this. If U, V, and W be vectors in R2 or R3, and if you take C as a scalar, right, these are vectors in R2 or...
+
+128
+00:18:10,708 --> 00:18:15,568
+Depending on the case, there might be vectors in R3, it doesn't matter, right?
+
+129
+00:18:15,847 --> 00:18:19,387
+Then the standard inner product or dot product, right? It doesn't matter.
+
+130
+00:18:19,468 --> 00:18:25,688
+We have two names to indicate the same product, right?
+
+131
+00:18:26,387 --> 00:18:34,968
+So the first property says that scalar product of a vector with itself is never a negative real number.
+
+132
+00:18:34,968 --> 00:18:38,128
+Always positive, right? Always positive.
+
+133
+00:18:39,988 --> 00:18:52,948
+It will be zero if and only if the vector itself is zero vector, right? Otherwise, it is never negative. It's never zero, right?
+
+134
+00:18:55,448 --> 00:19:03,908
+But please don't confuse. This product, or this is the notation we usually use.
+
+135
+00:19:04,271 --> 00:19:08,271
+Bu nedenle bir nesil bir nesil bir nesil.
+
+136
+00:19:10,271 --> 00:19:13,271
+Ama bu nesil bir nesil bir nesil,
+
+137
+00:19:13,271 --> 00:19:17,271
+bu nesil ve nesil ve nesil bir nesil.
+
+138
+00:19:17,271 --> 00:19:21,271
+Bu nesil bir nesil bir nesil.
+
+139
+00:19:21,271 --> 00:19:23,271
+Bu nesil bir nesil.
+
+140
+00:19:23,271 --> 00:19:31,115
+İlk nesil.
+
+141
+00:19:31,316 --> 00:19:38,316
+The third product says, somehow you can use the distributivity rule, right? Look at this.
+
+142
+00:19:39,316 --> 00:19:48,036
+You have a sum of two vectors, which is a vector, of course, and then you might consider such a scalar product between these vectors, right?
+
+143
+00:19:48,496 --> 00:19:50,336
+So it doesn't matter, you can distribute.
+
+144
+00:19:50,867 --> 00:19:56,067
+ve bu eklik tarafından dağılıkları,
+
+145
+00:19:56,067 --> 00:19:59,307
+bu iki Scala'dan dağılıkları,
+
+146
+00:20:12,627 --> 00:20:19,587
+Scala products, and then multiply the resulting Scala product with a C.
+
+147
+00:20:20,927 --> 00:20:22,768
+Okay, it doesn't matter, right?
+
+148
+00:20:26,259 --> 00:20:53,559
+Okay, we know what's the meaning of unit vectors, right? You can always obtain a unit vector. Given a vector, you can always associate a given vector, a unit vector to that vector, right? It's very easy. Suppose you are in R2, and consider this circle with the center at the origin, and this reduces 1, right? And if this is your vector u,
+
+149
+00:20:54,387 --> 00:21:04,667
+According to the picture, according to the picture, this u has a magnitude strictly greater than one, of course, right?
+
+150
+00:21:06,207 --> 00:21:11,967
+Because its head does not touch the circumference here, right?
+
+151
+00:21:12,447 --> 00:21:14,987
+So its magnitude is strictly greater than one.
+
+152
+00:21:15,347 --> 00:21:39,628
+So, what is the unit vector that is on the same supporting line, has the same direction as u? Let me write this. u sub zero. This is the unit vector associated to u, right? So, this vector is easy to obtain. Just divide the vector or multiply your vector by this.
+
+153
+00:21:42,355 --> 00:21:44,935
+1 over magnitude of u, right?
+
+154
+00:21:45,715 --> 00:21:50,635
+If you do that, you will obtain this vector, right?
+
+155
+00:21:50,735 --> 00:21:56,375
+This is the unit vector, u0, that has the same direction as u.
+
+156
+00:21:56,875 --> 00:21:59,576
+The difference, of course, is the magnitude, right?
+
+157
+00:21:59,955 --> 00:22:03,816
+That's why we call it unit, because its magnitude is one unit.
+
+158
+00:22:04,995 --> 00:22:05,175
+Alright?
+
+159
+00:22:07,796 --> 00:22:09,975
+For example, consider this vector.
+
+160
+00:22:10,259 --> 00:22:15,019
+It's not a unit vector, because its magnitude is 5, right?
+
+161
+00:22:16,060 --> 00:22:19,759
+So, what is the unit vector that has the same direction as x?
+
+162
+00:22:20,460 --> 00:22:29,460
+Just divide or multiply the vector x by this scalar number, right?
+
+163
+00:22:29,960 --> 00:22:32,500
+C or k, right?
+
+164
+00:22:39,092 --> 00:22:55,092
+Ok, let me see what we have here. I have to, ok, cross product in our tree. We have already started this part, right? And you, actually you can say some, some...
+
+165
+00:22:55,251 --> 00:23:04,711
+Something more related with the scalar product. Whenever the scalar product of two vectors is a zero, that means they are perpendicular or they are orthogonal, right?
+
+166
+00:23:04,711 --> 00:23:17,511
+For example, consider these two vectors and this angle, right? If they are perpendicular, that means
+
+167
+00:23:18,355 --> 00:23:22,355
+Buna nasıl understand, yukarıda 90 derece, ne? Buna görebilirsiniz.
+
+168
+00:23:22,355 --> 00:23:26,355
+Evaluate the scalar product, ve görebilirsiniz.
+
+169
+00:23:26,355 --> 00:23:32,355
+Buna görebilirsiniz, yukarıda 90 derece, yukarıda 90 derece.
+
+170
+00:23:32,355 --> 00:23:36,355
+Buna görebilirsiniz, yukarıda 90 derece.
+
+171
+00:23:36,355 --> 00:23:44,355
+Bu yüzden bir kriteri var, yukarıda bir parçal konuları, yukarıda bir parçal konuları.
+
+172
+00:23:47,731 --> 00:23:48,211
+Alright.
+
+173
+00:23:50,892 --> 00:23:53,672
+Kroos produk also has some nice properties.
+
+174
+00:23:54,672 --> 00:23:56,231
+For example, look at this.
+
+175
+00:23:56,471 --> 00:23:58,152
+This is a vector, this is a vector.
+
+176
+00:23:58,152 --> 00:24:06,352
+Let me write in terms of their component or analytical expressions of each vector is like this.
+
+177
+00:24:06,432 --> 00:24:06,872
+Look at this.
+
+178
+00:24:07,132 --> 00:24:09,312
+2, 1, and 2.
+
+179
+00:24:09,832 --> 00:24:15,031
+According to example 1, the other vector v has coordinate 3 minus 1.
+
+180
+00:24:15,604 --> 00:24:17,604
+3-3
+
+181
+00:24:17,604 --> 00:24:18,604
+ve
+
+182
+00:24:18,604 --> 00:24:20,124
+çünkü de definiçin
+
+183
+00:24:20,124 --> 00:24:20,963
+kros product
+
+184
+00:24:20,963 --> 00:24:23,423
+bu sümbolik
+
+185
+00:24:23,423 --> 00:24:24,144
+determinantsin
+
+186
+00:24:24,144 --> 00:24:25,483
+2
+
+187
+00:24:25,483 --> 00:24:29,544
+3-1
+
+188
+00:24:29,544 --> 00:24:30,724
+3-3
+
+189
+00:24:30,724 --> 00:24:31,463
+if you evaluate
+
+190
+00:24:31,463 --> 00:24:32,244
+this determinant
+
+191
+00:24:32,244 --> 00:24:33,403
+you will
+
+192
+00:24:33,403 --> 00:24:33,943
+obtain
+
+193
+00:24:33,943 --> 00:24:34,364
+this
+
+194
+00:24:34,364 --> 00:24:34,784
+vector
+
+195
+00:24:34,784 --> 00:24:36,624
+ok
+
+196
+00:24:36,624 --> 00:24:37,364
+not
+
+197
+00:24:37,364 --> 00:24:37,663
+a
+
+198
+00:24:37,663 --> 00:24:37,963
+scalar
+
+199
+00:24:37,963 --> 00:24:38,903
+don't
+
+200
+00:24:38,903 --> 00:24:39,324
+confuse
+
+201
+00:24:40,276 --> 00:24:45,276
+Bu, ilk defa, bu vektörü ve vektörü ve vektörü.
+
+202
+00:24:45,276 --> 00:24:48,276
+Bu, değilse, bu vektörü.
+
+203
+00:24:48,276 --> 00:24:50,276
+Bu, çok iyi bir şekilde,
+
+204
+00:24:50,276 --> 00:24:55,276
+ve vektörü ve vektörü.
+
+205
+00:24:55,276 --> 00:24:59,276
+Bu, bu vekörüde de kroprodukta?
+
+206
+00:24:59,796 --> 00:25:25,771
+You can, you by, you yourself can explore immediately. One of them, for example, you know that if you interchange the roles in a determinant, then determinant changes its sign, right? So that means cross product is not commutative, right? In contrast to Scala product, cross product is never commutative, right? That's why...
+
+207
+00:25:26,132 --> 00:25:43,776
+Bu, u'v'e bu'u'v'e bu'u'v'e bu'u'v'e bu'u'v'e bu'u'v'e bu'u'v'e bu'u'v'e bu'u'v'e bu'u'v'e bu'u'v'e bu'u'v'e bu'u'v'e bu'u'v'e bu'u'v'e bu'u'v'e bu'u'v'e bu'u'v'e bu'u'v'e bu'u'v'e bu'u'v'e bu'u'v'e bu'u'v'e bu'u'v'e bu'u'v'e bu'u'v'e bu'u'v'e bu'u'v'e bu'u'v'e bu'u'v'e bu'u'v'e bu'u'v'
+
+208
+00:25:43,776 --> 00:25:47,996
+Determinant change the sign, so that means cross product is never competitive.
+
+209
+00:25:48,656 --> 00:25:55,176
+What about the second property? Look at this. You have a distributivity, right, of cross product to vector addition.
+
+210
+00:25:55,375 --> 00:26:03,196
+Look at this. You have to consider this cross product and this cross product and consider their sum, right?
+
+211
+00:26:03,976 --> 00:26:08,776
+This is easy, but you can prove. It's not complicated, right?
+
+212
+00:26:09,364 --> 00:26:11,364
+Bu ne?
+
+213
+00:26:11,364 --> 00:26:13,364
+3-vektörsünün a3
+
+214
+00:26:13,364 --> 00:26:14,364
+ve
+
+215
+00:26:14,364 --> 00:26:15,364
+birçok birçok
+
+216
+00:26:15,364 --> 00:26:34,604
+birçok
+
+217
+00:26:40,051 --> 00:26:44,491
+Çünkü, bu konuları, çözünürlük, çözünürlük, çözünürlük, çözünürlük.
+
+218
+00:26:45,451 --> 00:26:45,851
+All right.
+
+219
+00:26:47,871 --> 00:26:50,531
+Let me continue with the third property.
+
+220
+00:26:51,391 --> 00:26:53,172
+What is the difference between B and C?
+
+221
+00:26:53,631 --> 00:26:54,932
+Actually, there is no difference.
+
+222
+00:26:55,091 --> 00:26:59,152
+The only difference is the position, right?
+
+223
+00:26:59,751 --> 00:27:00,432
+It's the position.
+
+224
+00:27:02,036 --> 00:27:12,756
+In the case B, you consider the cross product between one vector and sum of two other vectors.
+
+225
+00:27:13,556 --> 00:27:22,536
+So it doesn't matter if you consider first sum of two vectors and then cross product of resulting vector with the other vector.
+
+226
+00:27:22,536 --> 00:27:27,536
+So B and C is actually the same. You just evaluate the...
+
+227
+00:27:29,299 --> 00:27:30,720
+Distributivity, right?
+
+228
+00:27:33,180 --> 00:27:37,359
+What about the fourth property, D, I mean, right?
+
+229
+00:27:37,779 --> 00:27:42,220
+What happens if you take a multiple of a cross product?
+
+230
+00:27:43,819 --> 00:27:53,839
+The reflection of this action is that you can distribute, you can put this multiple in one of the vectors involved in the cross product, right?
+
+231
+00:27:53,899 --> 00:27:55,559
+This property says exactly this.
+
+232
+00:28:22,963 --> 00:28:23,963
+De...
+
+233
+00:28:28,884 --> 00:28:34,844
+The other property, this one, says that cross product of any vector itself is zero.
+
+234
+00:28:35,703 --> 00:28:41,163
+Just remember that for Scala product, this is different, right?
+
+235
+00:28:42,144 --> 00:28:48,624
+This is different. I mean, u dot product is zero if and only if u is zero, right?
+
+236
+00:28:48,824 --> 00:28:53,804
+That means if u is not a zero vector, this cross product is never zero, right?
+
+237
+00:28:53,983 --> 00:28:55,844
+But here, always zero.
+
+238
+00:28:56,564 --> 00:28:59,844
+It is also related with the angle, right?
+
+239
+00:29:02,104 --> 00:29:02,724
+Because
+
+240
+00:29:02,724 --> 00:29:09,964
+This cross product means
+
+241
+00:29:14,067 --> 00:29:18,028
+Well, maybe it's better not to say this for now, right?
+
+242
+00:29:18,807 --> 00:29:19,168
+Okay.
+
+243
+00:29:21,867 --> 00:29:23,548
+What about the other property?
+
+244
+00:29:24,288 --> 00:29:33,367
+If you consider the cross product between any vectors, where one of the vector is zero, so the resulting cross product is always zero, right?
+
+245
+00:29:33,844 --> 00:29:37,204
+Bu, double cross product, right?
+
+246
+00:29:37,544 --> 00:29:42,884
+It's perfectly possible because, look at this, V cross product, W is a vector by definition.
+
+247
+00:29:42,884 --> 00:29:52,424
+So, you can consider the cross product of this resulting vector with another one, right?
+
+248
+00:29:52,564 --> 00:29:54,684
+So, that means it's perfectly possible.
+
+249
+00:29:55,304 --> 00:29:59,884
+It's well defined to consider double cross product or simply...
+
+250
+00:30:00,259 --> 00:30:04,240
+birçok
+
+251
+00:30:00,000 --> 00:30:02,000
+Kördücüsü, değil mi?
+
+252
+00:30:03,000 --> 00:30:04,000
+Kördücüsü,
+
+253
+00:30:04,000 --> 00:30:05,000
+ama
+
+254
+00:30:05,000 --> 00:30:08,000
+bu,
+
+255
+00:30:08,000 --> 00:30:11,000
+daha çok daha interesting.
+
+256
+00:30:11,000 --> 00:30:12,000
+Bakın,
+
+257
+00:30:12,000 --> 00:30:13,000
+doğru.
+
+258
+00:30:13,000 --> 00:30:14,000
+Bu,
+
+259
+00:30:16,000 --> 00:30:17,000
+let me
+
+260
+00:30:17,000 --> 00:30:18,000
+bu,
+
+261
+00:30:18,000 --> 00:30:20,000
+daha iyi.
+
+262
+00:30:20,000 --> 00:30:21,000
+Bu,
+
+263
+00:30:21,000 --> 00:30:24,000
+bu,
+
+264
+00:30:24,000 --> 00:30:25,000
+bir
+
+265
+00:30:25,000 --> 00:30:26,316
+ilerlerine
+
+266
+00:30:26,548 --> 00:30:36,868
+Lineer combination of what? We have one vector here, another vector here. Since we know the scalar product is always a real number, let's say alpha here and beta here, right?
+
+267
+00:30:37,248 --> 00:30:45,448
+So alpha times vector plus beta time, another vector. This is a vector, right?
+
+268
+00:30:46,036 --> 00:31:13,216
+Excuse me, this generates a plane, right? Something like this. If this is V, if you multiply by alpha, this is the alpha times V. If this is W, and if you multiply W by beta, this will be the extended vector, right? So this is the plane, and this is a vector in this plane generated by V and W.
+
+269
+00:31:13,652 --> 00:31:36,112
+So, the property, Gauss says that the double cross product is a vector in the plane generated by V and W. How do you know? Of course, this might be proved, right? It's not trivial, it's not direct, right? But maybe for you, it's enough.
+
+270
+00:31:36,779 --> 00:31:37,779
+ilerlerine
+
+271
+00:31:36,596 --> 00:32:02,731
+Bu, bu vektörde, bu vektörde, bu vektörde, bu vektörde, bu vektörde, bu vektörde, bu vektörde, bu vektörde, bu vektörde, bu vektörde, bu vektörde, bu vektörde, bu vektörde, bu vektörde, bu vektörde, bu vektörde, bu vektörde, bu vektörde, bu vektörde, bu vektörde, bu vektörde, bu vektörde, bu vektörde, bu vektörde, bu vektörde, bu vektörde, bu vektörde, bu vektörde, bu vektörde, bu vektörde, bu vektörde, bu vektörde, bu vektörde, bu vektörde, bu vektörde, bu vektörde, bu vektörde
+
+272
+00:32:05,076 --> 00:32:05,675
+All right.
+
+273
+00:32:07,016 --> 00:32:09,115
+And the order is not important, right?
+
+274
+00:32:09,375 --> 00:32:13,036
+I mean, the parentheses might appear first, right?
+
+275
+00:32:14,115 --> 00:32:15,536
+Might appear first.
+
+276
+00:32:18,655 --> 00:32:19,596
+What else?
+
+277
+00:32:21,455 --> 00:32:24,215
+These are the unit vectors, i, j, and k.
+
+278
+00:32:24,336 --> 00:32:29,387
+And this is, I don't know if you are aware, but this is a...
+
+279
+00:32:31,635 --> 00:32:34,956
+Bu şekilde direk bir şekilde var mı?
+
+280
+00:32:34,956 --> 00:32:40,155
+Bu şekilde, negatif gibi.
+
+281
+00:32:40,155 --> 00:32:41,276
+Bu şekilde, ne kadar?
+
+282
+00:32:41,276 --> 00:32:43,115
+Bu direkçü ile de,
+
+283
+00:32:43,115 --> 00:32:45,996
+bu şekilde, coklokwise veya coklokwise direkçü?
+
+284
+00:32:45,996 --> 00:32:47,395
+Bu ne?
+
+285
+00:32:47,395 --> 00:32:48,556
+Bu direkçü ile de,
+
+286
+00:32:48,556 --> 00:32:54,347
+5.11.
+
+287
+00:33:03,700 --> 00:33:04,300
+Alright.
+
+288
+00:33:06,820 --> 00:33:09,720
+Saat yönünde. Nasıl söylüyorsun [öğrenci]? Saat yönünde.
+
+289
+00:33:14,675 --> 00:33:22,296
+İngilizcesi nasıl söyleniyor saatin yönü? Clockwise diyeceksin değil mi? Saatin ters yönü counterclockwise, evet.
+
+290
+00:33:28,788 --> 00:33:33,268
+Şimdi şurayı bir silelim.
+
+291
+00:33:35,587 --> 00:33:42,228
+What you see here in this picture is cross product between these unit vectors, right?
+
+292
+00:33:44,468 --> 00:33:51,268
+This is always zero because of this property here, right? Look at this.
+
+293
+00:33:55,763 --> 00:34:19,743
+Because of E. Let me write this way. And what about this? The cross product between I and J gives you K. The product between J and K gives you I. There is a simple rule here, if you realize. Look at this. You put I, J, K in this order, in this circle, right?
+
+294
+00:34:20,148 --> 00:34:24,748
+Kep in the direction as given in the figure, right?
+
+295
+00:34:25,788 --> 00:34:33,688
+So, if you consider cross product between I and J, the resulting vector is just the vector in the sequence, right?
+
+296
+00:34:34,408 --> 00:34:37,188
+You will see, I mean the K.
+
+297
+00:34:38,188 --> 00:34:47,188
+So, if you consider now the cross product between J and K, you will obtain the vector
+
+298
+00:34:49,076 --> 00:34:52,715
+İçerideki, I, right?
+
+299
+00:34:53,336 --> 00:34:54,135
+Bakın, bu.
+
+300
+00:34:58,387 --> 00:35:23,307
+ve yi'ye baktığınızda k ile k'e yi'ye baktığınızda k'e yi'ye baktığınızda k'e yi'ye baktığınızda k'e yi'ye baktığınızda k'e yi'ye baktığınızda k'e yi'ye baktığınızda k'e yi'ye baktığınızda k'e yi'ye baktığınızda k'e yi'ye baktığınızda k'e yi'ye baktığınızda k'e yi'ye baktığınızda k'e yi'ye baktığınızda k'e yi'ye baktığınızda k'e yi'ye baktığınızda k'e yi'ye baktığınızda k'e yi'ye baktığınızda k'e yi'ye baktığınızda k'e yi'ye
+
+301
+00:35:24,532 --> 00:35:32,931
+Not to write, for example, when you consider this, you don't have to write something like this, which is wrong, okay?
+
+302
+00:35:33,572 --> 00:35:38,092
+You have to put minus sign in front of K, right?
+
+303
+00:35:39,672 --> 00:35:40,412
+All right.
+
+304
+00:35:45,588 --> 00:35:53,368
+What else? We have one more product, which is mixed product, right? Mixed product means exactly this one here.
+
+305
+00:35:54,948 --> 00:36:10,427
+Why do we say mixed product? Because you mix cross product and dot product, right? This is a combination, combo of cross and dot product.
+
+306
+00:36:11,188 --> 00:36:15,688
+Bu yüzden bu birçok birçok birçok.
+
+307
+00:36:15,688 --> 00:36:18,128
+Bazen bazıları sayılır,
+
+308
+00:36:18,128 --> 00:36:20,128
+bu birçok birçok.
+
+309
+00:36:20,128 --> 00:36:25,128
+Bu birçok birçok.
+
+310
+00:36:25,128 --> 00:36:35,128
+Bu, ilk olarak, bu birçok ve buçok ve buçok ve buçok.
+
+311
+00:36:36,083 --> 00:36:45,304
+W, right? You don't need to do that because there is a simple criterion to write the mixed product through determinant, right?
+
+312
+00:36:46,683 --> 00:36:53,603
+Let me see if we have the definition here. I will write for you.
+
+313
+00:36:56,483 --> 00:37:02,023
+This is a vector and it makes sense to consider now this dot product, right?
+
+314
+00:37:03,219 --> 00:37:03,699
+Ok.
+
+315
+00:37:04,599 --> 00:37:07,899
+Suppose U has this coordinate.
+
+316
+00:37:20,340 --> 00:37:22,780
+Bu, bu, determinant.
+
+317
+00:37:38,288 --> 00:37:44,688
+Bu sektör, u1, u2, u3, as a first row.
+
+318
+00:37:44,768 --> 00:37:49,967
+The second row will be the coordinate row, because v is the vector in the sequence, right?
+
+319
+00:37:51,748 --> 00:37:54,608
+v1, v2, v3.
+
+320
+00:37:55,268 --> 00:38:02,367
+And the last row will be the coordinates of w, w1, w2, and w3, right?
+
+321
+00:38:05,268 --> 00:38:17,588
+Bu, bu, iyi bir şekilde de hatırlayabilirsiniz. Bu, birçok bir nokta, birçok bir nokta, birçok bir nokta.
+
+322
+00:38:30,675 --> 00:38:31,036
+Alright.
+
+323
+00:38:34,235 --> 00:38:37,655
+Mixed product also has a geometrical meaning.
+
+324
+00:38:37,815 --> 00:38:38,395
+Look at this.
+
+325
+00:38:39,815 --> 00:38:41,175
+This figure here.
+
+326
+00:38:42,515 --> 00:38:45,036
+There is a vector W, another vector U.
+
+327
+00:38:45,475 --> 00:38:50,175
+With this pair of vectors, you generate this parallelogram, right?
+
+328
+00:38:50,579 --> 00:38:57,239
+Bu paralelogram, and you know how to evaluate, how to calculate the area of this paralelogram.
+
+329
+00:38:57,359 --> 00:39:02,119
+Let me write P, W, U, right?
+
+330
+00:39:02,199 --> 00:39:05,480
+I mean, the paralelogram generated by the vectors W and U.
+
+331
+00:39:05,880 --> 00:39:09,279
+So you know how to calculate the area.
+
+332
+00:39:09,380 --> 00:39:14,619
+Area of P, W, U is equal to what?
+
+333
+00:39:15,284 --> 00:39:23,564
+We have already calculated, right? This is the magnitude of cross product, this cross product, right?
+
+334
+00:39:25,463 --> 00:39:34,624
+So you have one more vector, V now, and this vector is not in the plane or parallelogram generated by W and U.
+
+335
+00:39:34,764 --> 00:39:41,644
+You have to be careful with this observation, right? Otherwise, you don't have this parallel pipette, right?
+
+336
+00:39:42,420 --> 00:39:49,420
+ve bu kadar
+
+337
+00:39:49,420 --> 00:39:58,700
+bu
+
+338
+00:40:05,619 --> 00:40:09,639
+Ok.
+
+339
+00:40:17,043 --> 00:40:24,163
+I think I didn't say something very important regarding cross product. Let me write here.
+
+340
+00:40:33,172 --> 00:40:45,431
+For example, if you have a couple of vectors in R3, we already said that U is orthogonal or perpendicular to V, if and only if their dot product is zero, right?
+
+341
+00:40:46,611 --> 00:40:52,531
+And we said that this is a vector, but we didn't say what kind of vector.
+
+342
+00:40:53,051 --> 00:40:58,291
+This is a vector which is orthogonal to both U and V.
+
+343
+00:40:59,875 --> 00:41:09,875
+bu
+
+344
+00:40:58,655 --> 00:41:02,655
+Bu bir kısım var, bu kısım var.
+
+345
+00:41:02,655 --> 00:41:20,655
+Bu kısım var, bu kısım var.
+
+346
+00:41:20,655 --> 00:41:23,467
+Bu kısım var.
+
+347
+00:41:23,731 --> 00:41:26,951
+It is orthogonal to u and also orthogonal to v.
+
+348
+00:41:29,552 --> 00:41:41,851
+So, this observation will help you to calculate the volume of parallel pipet, given by three vectors, not in a unique plane.
+
+349
+00:41:42,991 --> 00:41:43,132
+Okay?
+
+350
+00:41:44,351 --> 00:41:45,451
+Look at this.
+
+351
+00:41:45,692 --> 00:41:49,291
+W, u, and v.
+
+352
+00:41:49,871 --> 00:41:51,331
+Consider the parallel pipet.
+
+353
+00:41:51,860 --> 00:41:59,599
+Generated by this triple of vector, that means consider this one, right?
+
+354
+00:42:03,635 --> 00:42:05,635
+Bu parallel pipet, bu parallel pipet.
+
+355
+00:42:05,635 --> 00:42:07,635
+Bu, bu parallel pipet var.
+
+356
+00:42:07,635 --> 00:42:30,764
+Bu parallel pipet var.
+
+357
+00:42:32,244 --> 00:42:47,044
+Bu, area related, maybe we can write immediately, what is the area, right? This area is exactly this number, right?
+
+358
+00:42:48,004 --> 00:42:58,784
+So, you already know that W, the cross product of W and U is a vector, look at this.
+
+359
+00:42:59,380 --> 00:43:05,100
+V is a vector, both orthogonal to w, and u, right?
+
+360
+00:43:11,476 --> 00:43:19,636
+Okay, so this age will be related with the projection, right? Projection. Let me show you.
+
+361
+00:43:26,708 --> 00:43:28,387
+Let me show you the figure here.
+
+362
+00:43:30,728 --> 00:43:31,208
+Right?
+
+363
+00:43:46,099 --> 00:43:56,539
+You will use the same argument we have used before to calculate the area of parallelogram to determine the altitude or age, height here, right?
+
+364
+00:43:57,440 --> 00:44:07,219
+You will again have such a triangle and then determine this value of age, right?
+
+365
+00:44:11,891 --> 00:44:17,731
+Consider the projection of this vector, something like this, right?
+
+366
+00:44:19,291 --> 00:44:21,511
+If this is H, for example, right?
+
+367
+00:44:23,311 --> 00:44:28,551
+And this red vector is, you can consider as the cross product.
+
+368
+00:44:29,631 --> 00:44:32,231
+This is orthogonal to W, orthogonal to U.
+
+369
+00:44:32,820 --> 00:44:40,820
+vektör uzayları, bu renkli vektör, bu renkli vektör, hizmeti, değil.
+
+370
+00:44:40,820 --> 00:44:43,820
+Bu, bu, büyük bir şey.
+
+371
+00:44:59,571 --> 00:45:01,571
+Bu parallel pipet var.
+
+372
+00:44:59,199 --> 00:45:07,239
+Çünkü bu bir
+
+373
+00:45:07,239 --> 00:45:09,239
+bir numara var.
+
+374
+00:45:09,239 --> 00:45:25,239
+Bu bir numara var.
+
+375
+00:45:25,239 --> 00:45:26,251
+Bu numara var.
+
+376
+00:45:54,099 --> 00:45:56,099
+Part, right.
+
+377
+00:45:58,099 --> 00:46:03,099
+Right-hand coordinate systems, I have already mentioned, right.
+
+378
+00:46:04,099 --> 00:46:06,099
+Let me see what we have here.
+
+379
+00:46:09,099 --> 00:46:10,099
+Okay.
+
+380
+00:46:11,099 --> 00:46:12,099
+All right.
+
+381
+00:46:12,099 --> 00:46:13,099
+Vektör spaces.
+
+382
+00:46:15,099 --> 00:46:16,099
+Do you have any question?
+
+383
+00:46:19,099 --> 00:46:21,099
+Is there any question?
+
+384
+00:46:22,099 --> 00:46:24,220
+Var mı sorusu olan arkadaşlar?
+
+385
+00:46:30,324 --> 00:46:43,784
+Sorusu olan yok. 5 dakika daha ders yapalım, ondan sonra bir 10 dakika ara verelim isterseniz. Vektör uzaylarına giriş yapalım. Artık, yani final sınavınız için ağırlıklı konular bunlar artık. Tamam mı?
+
+386
+00:46:45,884 --> 00:46:57,304
+Final sınavınız için ağırlıklı konular, bundan sonra vektör uzayları, alt vektör uzayları, vektör spaces, sub spaces, lineer span, linearly independent, independent vektör.
+
+387
+00:46:58,228 --> 00:47:02,548
+Bu konuda sonrasında, bu konuda sonrasında, değil mi?
+
+388
+00:47:06,708 --> 00:47:12,308
+All right, let us see what is the definition or what do we have to understand by a vector space.
+
+389
+00:47:12,448 --> 00:47:16,148
+Some people say linear space, it's the same there. Doesn't matter, yeah?
+
+390
+00:47:16,828 --> 00:47:29,548
+If you write linear or vector, it's exactly the same meaning, linear space or vector space.
+
+391
+00:47:39,507 --> 00:47:40,427
+Let me see.
+
+392
+00:47:43,307 --> 00:47:52,347
+We have a very important notion of a vector space, which consists of a set, ordinary set, not empty set, of course.
+
+393
+00:47:52,788 --> 00:48:10,320
+bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir
+
+394
+00:48:10,320 --> 00:48:17,880
+A real vector space, we have also complex vector space, but it will not be of our interest for this course, right?
+
+395
+00:48:18,000 --> 00:48:22,860
+But it's nice for you to know that there are also complex vector spaces, right?
+
+396
+00:48:23,220 --> 00:48:26,280
+So let me see what's the meaning of real vector space.
+
+397
+00:48:26,820 --> 00:48:33,360
+Suppose you have a set, not empty set, V, of some object, right?
+
+398
+00:48:33,715 --> 00:48:47,516
+It's just called element. It doesn't matter what kind of object are included in the set. V is a non-empty set of some element, object, on which we have two operations. This is a sum and this is a multiplication, right?
+
+399
+00:48:48,576 --> 00:48:52,876
+Why do we use this strange symbol? You can ask.
+
+400
+00:48:55,155 --> 00:49:01,615
+Bu operasyonu, bu işlemlerden birçok
+
+401
+00:49:01,615 --> 00:49:08,115
+ve öcredin birçok ve öcredin birçok ve öcredin birçok.
+
+402
+00:49:08,115 --> 00:49:17,615
+Vektor space ile ilgili birçok birçok ve öcredin birçok ve öcredin birçok ve öcredin birçok.
+
+403
+00:49:19,092 --> 00:49:23,152
+Bu, generalizasyonu, you can consider it as a generalizasyon, extension.
+
+404
+00:49:23,371 --> 00:49:24,831
+I mean, there are some similarities.
+
+405
+00:49:25,011 --> 00:49:27,431
+These spaces are models, right?
+
+406
+00:49:28,271 --> 00:49:32,411
+Are taken as model, and then you define vector space.
+
+407
+00:49:32,672 --> 00:49:33,451
+How do you define?
+
+408
+00:49:33,592 --> 00:49:42,152
+You observe what do you have here, and then go to the general case, which is a vector space, right?
+
+409
+00:49:43,027 --> 00:49:43,867
+Vektor space.
+
+410
+00:49:43,867 --> 00:49:47,807
+And the operations there are not necessarily usually vector addition
+
+411
+00:49:47,807 --> 00:49:49,327
+and usual scalar multiplication.
+
+412
+00:49:49,847 --> 00:49:53,027
+That's why we use these different symbols, right?
+
+413
+00:49:53,067 --> 00:49:55,547
+To distinguish the two operations, right?
+
+414
+00:49:57,667 --> 00:49:58,007
+Okay.
+
+415
+00:50:01,047 --> 00:50:02,067
+A real vector space.
+
+416
+00:50:02,067 --> 00:50:08,707
+So vector space, you have a set and two operations.
+
+417
+00:50:09,300 --> 00:50:13,300
+Ama bu kadar yeterli.
+
+418
+00:50:13,300 --> 00:50:16,300
+Bu iki operasyonlar
+
+419
+00:50:16,300 --> 00:50:36,300
+bu operasyonlar
+
+420
+00:50:36,755 --> 00:50:43,755
+V'nin V'nin V'nin V'nin
+
+421
+00:50:43,755 --> 00:50:51,755
+bu
+
+422
+00:50:52,980 --> 00:51:20,980
+Burayı anladınız mı arkadaşlar? Bakın, yani şu iki işlem altında kümenin kapalı olması demek şu. Oradan ne zaman iki eleman alsan, toplamını alsan, o da orada. Çarpımını alsan, o da orada. Yani yeni şeyler üretiyorsun, toplayarak, çarparak. Ama onlar da aynı evrene düşüyor olması gerekiyor. Bu asgari müşteri. Tamam mı? Bu yani talep edeceğinin asgarisi yeterli değil ama vektör uzayının tanımı bu değil. Evvela bunlar olsun diyorsun, ondan sonra da her bir işlem aşağıdaki dört özelliği sağlayacak.
+
+423
+00:51:20,980 --> 00:51:34,039
+O zaman vektör uzayı oluyor. Tamam mı? Burada bırakayım, ara vereyim. On dakika, ondan sonra döndüğümde kaldığım yerden devam edeyim. Oldu mu? On dakika arkadaşlar.
+
+424
+01:02:25,204 --> 01:02:28,364
+Arkadaşlar, devam edelim dersimize. Ekran paylaşımı yapayım tekrardan.
+
+425
+01:02:35,443 --> 01:02:38,403
+Evet, şuradan devam edelim. Bektör uzayının tanımı.
+
+426
+01:02:40,664 --> 01:02:40,923
+Okay.
+
+427
+01:02:43,604 --> 01:02:50,864
+As I said, you start with a non-empty set V, which is provided with two operations, right?
+
+428
+01:02:51,164 --> 01:03:00,324
+Sum and multiplication, let's say this one, right? A couple of operations you equipped, right?
+
+429
+01:03:03,059 --> 01:03:26,139
+suppose that your set is closed under these operations, right? Closed. And I have already said what was the meaning of V is closed under the given operation, right? Each operation has some properties, actually four properties, four axioms, right? Look at the properties, four properties for some.
+
+430
+01:03:28,724 --> 01:03:32,764
+4, more properties for the other operation, multiplication, right?
+
+431
+01:03:34,744 --> 01:03:40,384
+If you prefer, you can put A1, A of addition, right? Just to remember.
+
+432
+01:03:41,544 --> 01:03:44,364
+A2, A3, A4.
+
+433
+01:03:45,084 --> 01:03:48,424
+And M of multiplication, you can call M1.
+
+434
+01:03:48,784 --> 01:03:53,484
+Instead of 5, 6, 7, 8, you can do it, for example.
+
+435
+01:03:55,476 --> 01:04:17,164
+Evet, işte bir grup var, m'i de
+
+436
+01:04:17,396 --> 01:04:18,956
+Sum operation.
+
+437
+01:04:19,436 --> 01:04:21,196
+It says it is quantitative, right?
+
+438
+01:04:21,576 --> 01:04:28,316
+I mean, the order is not important when you sum two vectors, when you consider the sum of two vectors in your set V.
+
+439
+01:04:28,316 --> 01:04:29,516
+All right.
+
+440
+01:04:30,420 --> 01:04:42,700
+And why you assume something like this? Because this is exactly the case that occurs for vectors in R2 or R3 or even n-dimensional Euclidean space, Rn, right?
+
+441
+01:04:43,480 --> 01:04:50,140
+Do you remember, I said Euclidean spaces are taken as models for vector spaces, right?
+
+442
+01:04:51,420 --> 01:04:57,840
+You see, if you and we are vectors in two space or if you prefer three space,
+
+443
+01:04:58,579 --> 01:05:05,039
+And consider this strange symbol of sun as the usual vector addition.
+
+444
+01:05:05,519 --> 01:05:09,179
+So this property is clearly valid, right?
+
+445
+01:05:09,840 --> 01:05:14,059
+U plus addition of U and V is equal to addition of V and U.
+
+446
+01:05:15,559 --> 01:05:16,039
+All right.
+
+447
+01:05:16,639 --> 01:05:23,980
+But we require here in the first axiom that the same property should be valid for this new...
+
+448
+01:05:24,335 --> 01:05:28,935
+Some operation, I don't say the usual vector addition, don't confuse.
+
+449
+01:05:30,935 --> 01:05:40,055
+All right, the second one, the second property related with the operation says you have to require associativity, right?
+
+450
+01:05:41,175 --> 01:05:42,835
+Associativity, okay?
+
+451
+01:05:43,435 --> 01:05:47,955
+This is also valid for vectors in R2 or R3, if you remember, right?
+
+452
+01:05:48,820 --> 01:05:50,020
+Bu, aynı.
+
+453
+01:05:50,020 --> 01:05:51,420
+Ama ne farklılık?
+
+454
+01:05:51,420 --> 01:05:52,420
+Bu, aynı.
+
+455
+01:05:52,420 --> 01:05:53,420
+Aynı.
+
+456
+01:05:53,420 --> 01:05:56,420
+Bu, aynı.
+
+457
+01:05:56,420 --> 01:06:18,120
+Aynı.
+
+458
+01:06:17,012 --> 01:06:24,952
+Yani, if you consider the usual vector addition of any vector, the zero, you will obtain the vector itself, right?
+
+459
+01:06:25,132 --> 01:06:33,892
+So we require here in the third axiom, we require that the same happens for this new sum operation, right?
+
+460
+01:06:34,552 --> 01:06:37,492
+And every vector has its opposite, right?
+
+461
+01:06:37,492 --> 01:06:44,492
+And when you sum, when you can consider the vector, usual vector addition of a vector with its opposite,
+
+462
+01:06:45,108 --> 01:06:52,188
+You will obtain zero vector. So we require the same for this new operation, right? Number four is exactly this.
+
+463
+01:06:53,028 --> 01:07:06,048
+You will see that the other four properties related with the multiplication are actually, can be extracted from the usual multiplication of vectors in R2 or R3, right?
+
+464
+01:07:09,775 --> 01:07:26,675
+something like distributivity of multiplication onto the sum, right? But both multiplication and sum are not the usual sum and usual multiplication, right? But the same rule is valid.
+
+465
+01:07:27,675 --> 01:07:36,623
+Arkadaşlar, bunu anlayabiliyor musunuz? Vektör uzayının tanımı biraz karmaşık olabilir. Öğrenci böyle 8 tane aksiyon görünce afallıyor biraz ama...
+
+466
+01:07:36,623 --> 01:07:52,823
+Aksız da değil ama bütün bunlar düzlemde veya üç boyut uzayda vektörler arasında gördüğünüz o basit elementer işlemler var değil. Vektörlerin toplamı, bir vektörün bir sayıda çarpımı. Onların sağladığı bir takım özellikler var. Oradan türetiliyor. Bilmem anlatabiliyor muyum?
+
+467
+01:07:53,763 --> 01:07:57,983
+Ya fark ne peki? Ya o özellikler burada yeni işlem içinde geçerli olsun diyorsun.
+
+468
+01:07:58,675 --> 01:08:21,735
+Şimdi merak ediyorsunuzdur belki, bu yeni toplama ne demek, nasıl bir şey, biraz daha örnek verecek göreceksin. Tamam mı? 5 numara, 6 numara, 7, 8 numara, yani şu son 4 özellik çarpımla ilgili, yani bildiğin normal re karede, re küpteki vektörlerin bir sayıda, bir sikarede çarpımı için geçerli kuralların ta kendisi.
+
+469
+01:08:21,735 --> 01:08:24,235
+Ta kendisi. Tamam mı?
+
+470
+01:08:26,355 --> 01:08:49,735
+Demek ki bir kümenin vektör uzayı olabilmesi için ne gerekiyormuş? Bir, üzerine iki tane işlem konduracaksın. Yetmez. O işlem altında uzayın, kümen, pardon, kapalı olacak. Kapalı olması ne demek? İki tane vektör alıp toplama veya çarpıma tabi tuttuğunda elde ettiği yeni vektör de o evrende, o kümede kalacak. Bundan sonra her bir işlem için dört tane özellik.
+
+471
+01:08:50,319 --> 01:09:14,179
+olduğunu da göstermen lazım. Tüm bunlardan sonra vektör uzayı olduğunu söyleyebiliriz. Mesela hem toplama hem çarpma işleminde dörder tane özellik var. Bu dört tane özellikten bir tanesi sağlanmamış olsa vektör uzayı diyemezsin. Değil mi? Hatta şu çıkarımda da bulunabilirsiniz. Bir kümenin vektör uzayı olup olmadığını nasıl anlarsın? İşte sekiz tane aksiyonumuz sekizinin de sağlandığını göstermen lazım.
+
+472
+01:09:14,676 --> 01:09:24,476
+Ama bazen vektör uzayı olmadığını anlamak daha kestirme oluyor. Neden? İşte bu 8 aksiyomdan en az bir tanesi sağlanmamış olsa, vektör uzayı değildir, kalanlarına bakmana gerek yok.
+
+473
+01:09:26,576 --> 01:09:40,476
+If one of these 8 aksiyom is fail, fails to be satisfied, then you can say that your set is not vector space, right? This part is easier than...
+
+474
+01:09:41,332 --> 01:09:46,412
+I'll to know if I said provided the two operations is a vector space or not.
+
+475
+01:09:46,891 --> 01:09:47,132
+Alright?
+
+476
+01:09:49,532 --> 01:09:50,891
+Let's see what we have.
+
+477
+01:09:51,852 --> 01:09:57,132
+I think I have to give some example for you to understand these operations.
+
+478
+01:10:00,132 --> 01:10:01,252
+Let me see.
+
+479
+01:10:04,252 --> 01:10:05,811
+Some examples we have.
+
+480
+01:10:06,192 --> 01:10:08,252
+For example, this example is...
+
+481
+01:10:08,884 --> 01:10:13,064
+Bu, you already know, I guess, consider the n-dimensional space.
+
+482
+01:10:13,543 --> 01:10:17,543
+This is the set of column matrices, right?
+
+483
+01:10:18,363 --> 01:10:19,404
+With real entries.
+
+484
+01:10:20,043 --> 01:10:24,423
+So here, the sum is the matrix addition.
+
+485
+01:10:25,463 --> 01:10:33,144
+And the other operation, multiplication, is a multiplication of a matrix by a real number.
+
+486
+01:10:33,144 --> 01:10:35,064
+I mean, the scalar multiplication, right?
+
+487
+01:10:35,507 --> 01:10:44,307
+Maltıcıs, matrisi, matrisi, but matrisi here are n by n matrisi, of course, if you are interested in this space, right?
+
+488
+01:10:44,387 --> 01:10:58,087
+This is the vector space, look at this, these are the operations, and this means matris sum, sum of two matrisi, matris addition, let's say, right?
+
+489
+01:10:58,087 --> 01:11:02,028
+And the other one is a scalar multiplication of matrisi.
+
+490
+01:11:02,644 --> 01:11:03,024
+Okay?
+
+491
+01:11:05,604 --> 01:11:10,184
+Maybe it's not so different than what you learned from Euclidean Spaces.
+
+492
+01:11:12,944 --> 01:11:24,024
+Maybe, for example, look at the example four, example two, excuse me, the set of m by n matrices, rectangular matrices, also...
+
+493
+01:11:24,979 --> 01:11:26,579
+vektör sping.
+
+494
+01:11:26,579 --> 01:11:30,299
+So, what are the operations, associated operations?
+
+495
+01:11:30,299 --> 01:11:35,099
+Again, matrix addition and multiplication of a matrix by a real number.
+
+496
+01:11:35,099 --> 01:11:36,659
+With these operations,
+
+497
+01:11:36,659 --> 01:11:38,099
+indolved,
+
+498
+01:11:38,547 --> 01:11:57,747
+Your set of n by n matrices form a vector space, real vector space. Real because we consider matrices with real entries, right? If you consider complex entries, if you permit scalar multiplication through complex number, then you will have a complex vector space. But it's not of our interest, as I said.
+
+499
+01:11:57,747 --> 01:11:58,608
+Okay?
+
+500
+01:12:02,087 --> 01:12:03,407
+Let me see.
+
+501
+01:12:05,908 --> 01:12:18,708
+Evet, example 4 is a nice example for you to see, the difference versus usual, or elementary, or standard, vektör edisyon, right?
+
+502
+01:12:18,948 --> 01:12:27,208
+Look at the difference. Now we are defining a set of 1 by n matrices, I mean the row matrices, right?
+
+503
+01:12:27,828 --> 01:12:31,228
+Let me see, no, no, this is not a different exercise.
+
+504
+01:12:31,796 --> 01:12:40,096
+Excuse me, don't forget about it. This is not so different than the vector space of the column matrices, right?
+
+505
+01:12:42,156 --> 01:12:50,115
+It's almost the same. Let me see the example 5. V is the set of 2 by 2 matrices with trace equal to 0.
+
+506
+01:12:50,935 --> 01:12:58,536
+If I didn't define trace of a matrix, I define now. Suppose
+
+507
+01:12:59,539 --> 01:13:03,360
+Bu, a 2x2 metriks, A.
+
+508
+01:13:04,119 --> 01:13:10,799
+By trace of this, you have to understand the sum of entries located on the main diagram.
+
+509
+01:13:11,399 --> 01:13:13,899
+It is independent of the order.
+
+510
+01:13:14,484 --> 01:13:20,363
+Eğer sizden 3x3 metriksin, deklarınızı da aynı zamanda, değil mi?
+
+511
+01:13:20,944 --> 01:13:27,404
+Eğer sizden nxn2 metriksin, deklarınızı da aynı zamanda, deklarınızı da aynı zamanda.
+
+512
+01:13:27,404 --> 01:13:29,423
+Değil, deklarınızı da aynı zamanda.
+
+513
+01:13:29,504 --> 01:13:38,024
+Sizinize de main diagonal, sizize de sumin allı altı, altı, or fundamental diagonal, to find a trace.
+
+514
+01:13:38,764 --> 01:13:40,504
+Bu, bu deklarınızı da aynı zamanda.
+
+515
+01:13:42,739 --> 01:13:51,139
+Okay, and what about our set, which we want as a vector space, right?
+
+516
+01:13:51,520 --> 01:13:56,699
+So V, let me write, V is this space, look at this.
+
+517
+01:13:58,579 --> 01:14:06,299
+Two by two matrices such that their traces are zero, right?
+
+518
+01:14:10,644 --> 01:14:13,644
+ve 2 operasyonu var.
+
+519
+01:14:13,644 --> 01:14:19,644
+Ama bu bir metriks edişim ve
+
+520
+01:14:19,644 --> 01:14:21,644
+bir metriks edişim ve bir metriks edişim.
+
+521
+01:14:23,644 --> 01:14:25,644
+Bir de bu.
+
+522
+01:14:25,644 --> 01:14:29,644
+Bu, bu, bu operasyonu var.
+
+523
+01:14:29,644 --> 01:14:32,644
+Bu, bu, bu bir metriks edişim.
+
+524
+01:14:33,395 --> 01:14:37,775
+METİS'i bu operasyonu var.
+
+525
+01:14:37,775 --> 01:14:40,895
+Bu, bu operasyonu var.
+
+526
+01:14:40,895 --> 01:14:45,275
+Bu operasyonu var.
+
+527
+01:14:45,275 --> 01:14:51,275
+Bu, bu operasyonu var.
+
+528
+01:14:51,275 --> 01:14:53,275
+Bu, A ve B'ye bu operasyonu var.
+
+529
+01:14:53,811 --> 01:15:03,451
+Matrisi ile 0-trace, right? Trace of A means A plus D is 0, trace of B is 0, means R plus P is 0, right?
+
+530
+01:15:03,672 --> 01:15:17,951
+So, if you write the sum or vector matrix addition and calculate the trace, you will see that, look at this, the resulting sum is again a traceless matrix.
+
+531
+01:15:19,136 --> 01:15:31,056
+V is closed under this operation, right? You can see, you can verify the same for the multiplication. You will see that it is indeed closed under this operation too, right?
+
+532
+01:15:31,216 --> 01:15:45,456
+And then it only remains for you to check four axioms for each operation, right? Four axioms for sum, matrix sum, matrix addition, and four axioms for scalar multiplication of a matrix.
+
+533
+01:15:46,228 --> 01:15:48,547
+Zer trace, ok?
+
+534
+01:15:51,788 --> 01:15:55,188
+For example, what is the zero element here?
+
+535
+01:15:56,108 --> 01:15:59,907
+Zero element according to the matrix sum, right?
+
+536
+01:16:00,567 --> 01:16:08,528
+If you are aware of the four properties related with the sum, look at this.
+
+537
+01:16:09,268 --> 01:16:13,747
+According to this operation, you have a zero element, right?
+
+538
+01:16:14,292 --> 01:16:39,052
+Zero element. So what is the zero element? V is the set of traceless two by two matrices. So zero element is exactly the zero matrix, right? This is very clear. Very clear. And whenever you consider the sum, matrix sum of a traceless matrix A and this zero matrix, the resulting sum, of course, will be again a traceless.
+
+539
+01:16:39,439 --> 01:16:50,279
+Matris, right? So what is the opposite? What is the opposite of any matris? According to this matris edition. Look at this. It's enough.
+
+540
+01:17:07,347 --> 01:17:11,827
+If A is traceless, then its opposite is also traceless, right?
+
+541
+01:17:12,987 --> 01:17:20,007
+And if you sum these two matrices, you will stay with the zero matrix, right?
+
+542
+01:17:20,127 --> 01:17:22,768
+These are clear arguments, right?
+
+543
+01:17:22,827 --> 01:17:26,427
+I think you can understand by yourself.
+
+544
+01:17:28,087 --> 01:17:29,387
+This is an example where we are.
+
+545
+01:17:29,387 --> 01:17:29,788
+Okay.
+
+546
+01:17:30,487 --> 01:17:33,948
+So why don't you check the other four properties?
+
+547
+01:17:35,699 --> 01:18:01,387
+Bu, bu
+
+548
+01:18:01,555 --> 01:18:09,095
+B, take a scalar from real numbers, and see if this is still an element of B, right?
+
+549
+01:18:10,935 --> 01:18:24,395
+So, since the operation means multiplication of a matrix by a scalar number, you write the resulting matrix, and see if it is traceless or not, right?
+
+550
+01:18:24,395 --> 01:18:26,395
+Its trace is...
+
+551
+01:18:26,707 --> 01:18:32,587
+The sum of entries you see on the diagonal, so k times a plus k times d.
+
+552
+01:18:33,387 --> 01:18:45,847
+If you write in the common parentheses of k, k, and since a is treaseless, a plus d is zero, so whenever you multiply zero by any scalar, k, you will stay with zero, right?
+
+553
+01:18:45,927 --> 01:18:50,567
+So this is indeed an element of William Mewkin.
+
+554
+01:18:52,595 --> 01:19:05,755
+Delete this question mark, right? Because it's true. So that means V is closed under this multiplication, but it's not enough. You have to verify full axiom for this operation, right?
+
+555
+01:19:06,975 --> 01:19:16,855
+Okay, so please take a look at this part, right? It's not complicated, it's not difficult to understand. I think you can do it by yourself.
+
+556
+01:19:18,855 --> 01:19:19,895
+Let me see.
+
+557
+01:19:21,011 --> 01:19:26,271
+Another example might be the set of polynomials, for example, right?
+
+558
+01:19:27,192 --> 01:19:37,311
+If you remember the definition of vector space, we said, we started with, let us consider a set of some object, right?
+
+559
+01:19:37,311 --> 01:19:42,311
+So these objects, we have a generic vector, but...
+
+560
+01:19:43,055 --> 01:20:06,795
+You can call a matrix as a vector, polynomial as a vector, it doesn't matter. There is nothing strange in this terminology, right? You can consider polynomials as vectors. That's because the set of polynomials give a vector space, form a vector space. In this sense, you can call a polynomial as a vector. It's not strange, right? Because the set of them...
+
+561
+01:20:07,507 --> 01:20:09,507
+Buna bir vektörü bir vektörü.
+
+562
+01:20:09,507 --> 01:20:11,507
+Bu, bir vektörü olarak,
+
+563
+01:20:11,507 --> 01:20:35,019
+bir vektörü olarak,
+
+564
+01:20:35,188 --> 01:20:41,788
+Bu bir farklı bir tür bir poynomiyon, ama bu bir bir parçok var.
+
+565
+01:20:41,788 --> 01:20:50,427
+Bir parçok var, bir parçok var, bir parçok var, bir parçok var, bir parçok var, bu parçok var.
+
+566
+01:20:54,195 --> 01:21:03,036
+Just look at the coefficient a0, a1, a n, sub n, these are all real numbers and n is a non-negative integer, right?
+
+567
+01:21:03,336 --> 01:21:07,155
+Everybody is familiar with this polynomial expression, right?
+
+568
+01:21:08,376 --> 01:21:15,695
+So what happens if you consider the set of all polynomials in t, like this?
+
+569
+01:21:18,256 --> 01:21:21,695
+Do you think this set forms a vector space?
+
+570
+01:21:23,539 --> 01:21:33,539
+To answer this question, you have to say, what are the operations? And if the set of polynomials are closed or not under these operations, right?
+
+571
+01:21:34,819 --> 01:21:39,059
+This is the minimum. This is the minimum that you can require, right?
+
+572
+01:21:40,340 --> 01:21:49,619
+In the SQL, you of course have to check four axioms for each operation. This is the definition, formal definition of vector space, right?
+
+573
+01:21:50,515 --> 01:21:59,435
+So, for example, what is the meaning of degree of such a polynomial, p of t?
+
+574
+01:21:59,956 --> 01:22:16,735
+We say that p of t has the degree n, if the coefficient in front of the t to the power n is non-zero, right?
+
+575
+01:22:17,747 --> 01:22:21,947
+Bu, exactly indicatiyonu, degree of your polynomial.
+
+576
+01:22:22,467 --> 01:22:27,867
+If a sub n is 0, so you don't have this term, right?
+
+577
+01:22:28,847 --> 01:22:36,747
+Whenever it is non-zero, so you have this term, and this is the term that contains the largest degree, right?
+
+578
+01:22:37,287 --> 01:22:38,127
+The largest degree.
+
+579
+01:22:38,127 --> 01:22:42,907
+This constant term, independent of variability,
+
+580
+01:22:44,148 --> 01:23:08,148
+is of degree zero, right? Degree zero. For example, consider such a polynomial, simple, quite simple polynomial. Its degree is one, right? Its degree is one, as you know. The constant polynomial has degree zero, right? Zero polynomial in particular, you can...
+
+581
+01:23:09,268 --> 01:23:12,208
+Denote by boldface letter.
+
+582
+01:23:13,208 --> 01:23:13,408
+Okay.
+
+583
+01:23:14,048 --> 01:23:16,288
+It has no degree, of course.
+
+584
+01:23:17,087 --> 01:23:18,948
+And in general, you can consider
+
+585
+01:23:18,948 --> 01:23:24,507
+the set of all polynomials of degree
+
+586
+01:23:24,507 --> 01:23:28,548
+smaller or equal,
+
+587
+01:23:29,468 --> 01:23:31,368
+less or equal than n,
+
+588
+01:23:31,788 --> 01:23:33,828
+together with the zero polynomial, right?
+
+589
+01:23:34,208 --> 01:23:37,028
+This will give you a vector space.
+
+590
+01:23:37,939 --> 01:23:43,639
+I would like to repeat this sentence because it's important.
+
+591
+01:23:43,840 --> 01:23:52,199
+Whenever you consider set of all polynomials of degree, less or equal n, together with the zero polynomial, this is important.
+
+592
+01:23:52,199 --> 01:24:04,399
+If you don't consider, if you don't include the zero polynomial, the set of polynomial will not give you a vector space, because every vector space has a zero element.
+
+593
+01:24:05,011 --> 01:24:10,832
+No vector space, there is no vector space without zero.
+
+594
+01:24:11,671 --> 01:24:23,691
+Okay, so how do we know that such polynomials of degree, less than or equal to n, together with the zero polynomial, forms indeed a vector space?
+
+595
+01:24:23,691 --> 01:24:31,467
+You have to check, you have to introduce first, what is the...
+
+596
+01:24:31,604 --> 01:24:55,148
+Bu, bu
+
+597
+01:24:55,539 --> 01:25:01,880
+If this is a polynomial, this is another polynomial, how do you consider their sum?
+
+598
+01:25:03,979 --> 01:25:10,380
+You consider the sum of the coefficient in front of the terms of the same degree, right?
+
+599
+01:25:10,860 --> 01:25:15,440
+This is the term of degree n.
+
+600
+01:25:15,828 --> 01:25:31,868
+n, the same degree. So you have to sum a sub n, b sub n, and write their sum as the coefficient of t to the power n, right, in this resulting polynomial.
+
+601
+01:25:31,868 --> 01:25:40,368
+And do it the same for the rest of terms, right? Always consider sum of the coefficient.
+
+602
+01:25:41,908 --> 01:25:45,108
+...in front of the terms having the same degree.
+
+603
+01:25:45,108 --> 01:25:46,108
+OK?
+
+604
+01:25:46,108 --> 01:25:52,108
+This is the polynomial addition or sum between two polynomials.
+
+605
+01:25:52,108 --> 01:25:53,508
+OK?
+
+606
+01:25:55,307 --> 01:25:57,708
+And what about the multiplication?
+
+607
+01:25:57,708 --> 01:25:59,508
+This is one of the operations.
+
+608
+01:25:59,508 --> 01:26:01,708
+We have to introduce one more operation, right?
+
+609
+01:26:01,708 --> 01:26:02,908
+Multiplication.
+
+610
+01:26:04,212 --> 01:26:31,771
+Take a polynomial, take a scala, see? So what is the multiple of this polynomial? You have to consider the multiple of every term in your polynomial expression, right? This is the multiplication of polynomials, right? In this set. So this will be a vector space, right? So whenever you see this notation,
+
+611
+01:26:32,467 --> 01:26:34,148
+You have to understand what?
+
+612
+01:26:37,507 --> 01:26:38,948
+Something like this.
+
+613
+01:26:39,828 --> 01:26:42,288
+A and T and
+
+614
+01:26:47,859 --> 01:26:48,539
+Excuse me.
+
+615
+01:26:53,427 --> 01:26:57,087
+A1t, A0, right?
+
+616
+01:27:00,692 --> 01:27:25,963
+Bu, bu
+
+617
+01:27:27,572 --> 01:27:32,652
+ve
+
+618
+01:27:38,131 --> 01:27:38,891
+All right.
+
+619
+01:27:42,387 --> 01:27:47,087
+Is there any question? Let me see if you have a question. Any question?
+
+620
+01:27:48,868 --> 01:27:50,047
+Sorusu olan var mı arkadaşlar?
+
+621
+01:27:58,292 --> 01:28:00,492
+Evet, sorusu olan yok.
+
+622
+01:28:05,427 --> 01:28:05,887
+Bakalım.
+
+623
+01:28:16,148 --> 01:28:19,307
+That is an important, actually interesting remark here.
+
+624
+01:28:20,307 --> 01:28:32,688
+The vector space of polynomials, this Pn, behaves algebraically in exactly the same manner as the octitian space of dimension n plus 1.
+
+625
+01:28:33,068 --> 01:28:43,587
+n plus 1 because a polynomial of degree n contains n plus 1 terms in its expression, right?
+
+626
+01:28:44,083 --> 01:28:49,123
+Bu nedenle, bu iki
+
+627
+01:29:05,876 --> 01:29:12,896
+Y, the set of polynomials and the open space are actually the same, or they behave algebraically in the same manner.
+
+628
+01:29:13,156 --> 01:29:18,536
+Look at this. Pn versus Rn plus 1.
+
+629
+01:29:19,476 --> 01:29:22,816
+Take a polynomial, P of t here.
+
+630
+01:29:22,816 --> 01:29:24,816
+That means...
+
+631
+01:29:31,667 --> 01:29:49,507
+How many coefficient, how many terms you have here? N plus 1. You can interpret, you can represent, look at this, you can represent this term, this polynomial, excuse me, in terms of this coefficient, uniquely, right?
+
+632
+01:29:49,507 --> 01:29:57,827
+So, you can write, whenever you have this coefficient, you have your polynomial, right? But look at this.
+
+633
+01:29:58,612 --> 01:30:25,452
+This n plus 1 tuple, this is an element in r to the power n plus 1. It's a vector in n plus 1 space. And it defines uniquely, it determines uniquely, it's such a polynomial p, so the set of polynomials of degree less or equal to n, together with 0 of course, behaves exactly.
+
+634
+01:30:26,868 --> 01:30:31,408
+Algebra, it behaves exactly like r to the power n plus 1, right?
+
+635
+01:30:32,268 --> 01:30:49,328
+So this representation is nice, and I don't know if you are aware, but the sum of two polynomials means, if you take, for example, right, q of t is b n, t to the power n, b1 t.
+
+636
+01:30:49,844 --> 01:31:07,463
+B0, let's say Q of t is something like this. So what is the polynomial addition? You can consider as vector addition in r to the power m minus 1, right? Look at this.
+
+637
+01:31:14,739 --> 01:31:24,600
+Burası açık mı arkadaşlar bilmiyorum ama yani bu polinomların uzayını vektör uzayını bildiğiniz öklük uzayı gibi düşünmenizde hiçbir beis yok. Tamam mı?
+
+638
+01:31:24,832 --> 01:31:45,931
+Çünkü bir polinomu katsayıları belirler tek türlü. Katsayılarını biliyorsan polinomu yazarsın, polinomu biliyorsan katsayılarını biliyorsundur. O katsayıları da en ince dereceden bir polinomun n artı bir tane terim olduğuna göre n artı bir tane katsayı, sayı kullanıyorsun demektir skaler. Bunları koordinat, komponent kabul eden bir vektör yazarsan r üzeri n artı birdesin demektir.
+
+639
+01:31:46,260 --> 01:31:59,779
+Bu bir representation'dır, temsildir yani. Polinomu bir vektör olarak temsil edebilirsin. O zaman iki polinom arasındaki toplama da bunları represent eden, bunları temsil eden vektörlerin toplamından, adi toplamından başka bir şey değil yani. Değil mi?
+
+640
+01:32:05,076 --> 01:32:05,756
+All right.
+
+641
+01:32:10,452 --> 01:32:14,052
+We have one more example here, look at the example seven here.
+
+642
+01:32:14,612 --> 01:32:18,912
+Now the objects are real valued functions defined on R.
+
+643
+01:32:19,692 --> 01:32:32,912
+I mean, what I understand here is that V is the set of all continuous functions of one variable, real valued functions of one variable, right?
+
+644
+01:32:33,052 --> 01:32:33,992
+Something like this.
+
+645
+01:32:36,307 --> 01:32:38,528
+F is continuous, right?
+
+646
+01:32:39,268 --> 01:32:40,167
+Consider this set.
+
+647
+01:32:43,796 --> 01:32:50,796
+ve özvektör uzayları,
+
+648
+01:32:50,796 --> 01:33:02,796
+ve özellikle,
+
+649
+01:33:07,060 --> 01:33:10,300
+C times one function, right?
+
+650
+01:33:15,507 --> 01:33:28,547
+You have to define first, and then verify if v is closed under these operations, and finally you have to verify eight axioms for this couple of operations, okay?
+
+651
+01:33:29,927 --> 01:33:35,147
+How do you define a new function?
+
+652
+01:33:36,767 --> 01:33:40,827
+If f is a one variable, function of one variable,
+
+653
+01:33:42,612 --> 01:34:10,060
+Bu, bu
+
+654
+01:34:10,515 --> 01:34:15,895
+Bu, değil mi? Çünkü, yine de yi'nin bir noktası var.
+
+655
+01:34:15,895 --> 01:34:18,335
+Ama f ve g'nin bir noktası var,
+
+656
+01:34:18,335 --> 01:34:21,235
+bu noktası var, değil mi?
+
+657
+01:34:21,235 --> 01:34:26,536
+Bu, bu noktası var, değil mi?
+
+658
+01:34:26,536 --> 01:34:28,895
+F'nin bir noktası var, g'nin bir noktası var,
+
+659
+01:34:28,895 --> 01:34:32,215
+bu noktası var, ve bu noktası var.
+
+660
+01:34:32,215 --> 01:34:34,891
+Evet, bu noktası var.
+
+661
+01:34:42,131 --> 01:34:42,891
+Look at this.
+
+662
+01:34:45,291 --> 01:34:47,111
+I'm defining right now.
+
+663
+01:34:47,651 --> 01:34:49,131
+F of t is a real number.
+
+664
+01:34:49,271 --> 01:34:50,231
+C is a scalar.
+
+665
+01:34:50,631 --> 01:34:53,111
+So why don't you consider this ordinary multiplication?
+
+666
+01:34:54,171 --> 01:34:55,951
+This is again a real number, right?
+
+667
+01:34:57,971 --> 01:34:59,391
+This is a real number.
+
+668
+01:35:01,531 --> 01:35:03,871
+And this function is continuous, right?
+
+669
+01:35:05,091 --> 01:35:05,651
+It's continuous.
+
+670
+01:35:06,151 --> 01:35:08,131
+So that means V is...
+
+671
+01:35:09,811 --> 01:35:32,203
+Bu, bu
+
+672
+01:35:33,908 --> 01:35:41,588
+Çünkü, look at this, it doesn't matter if you change the position of these two numbers to be added, okay?
+
+673
+01:35:42,488 --> 01:35:50,428
+Here also, associativity is also clear, right? It is also clear.
+
+674
+01:35:50,807 --> 01:36:00,928
+Look at this, if you have three functions, and if you consider this sum, it is the same with this.
+
+675
+01:36:01,427 --> 01:36:02,387
+Function, right?
+
+676
+01:36:36,724 --> 01:36:37,184
+All right.
+
+677
+01:36:41,971 --> 01:36:54,011
+We have one more example, example 8, in which v is given as the set of all real multiples of exponential functions of the form a to the power k times x.
+
+678
+01:36:55,011 --> 01:36:57,752
+This is interesting, right?
+
+679
+01:36:58,252 --> 01:37:04,811
+Now your set is the set of exponential, right?
+
+680
+01:37:06,292 --> 01:37:08,712
+K is a real number.
+
+681
+01:37:08,872 --> 01:37:12,352
+Just consider the set of such functions, right?
+
+682
+01:37:12,672 --> 01:37:17,452
+Change the K each time to produce another exponential function, right?
+
+683
+01:37:17,572 --> 01:37:19,972
+And then consider the set of them.
+
+684
+01:37:21,052 --> 01:37:26,972
+And introduce now, or define now, a vector addition in this way.
+
+685
+01:37:27,112 --> 01:37:27,652
+Look at this.
+
+686
+01:37:29,232 --> 01:37:30,155
+This is...
+
+687
+01:37:30,836 --> 01:37:38,836
+This is interesting, right? You have a couple of two exponential functions, and then...
+
+688
+01:38:19,764 --> 01:38:43,764
+Evet arkadaşlar, kendimi burada, internetin iyi çektiği bir sınıfa kilitledim. Kapı çalındığı için bakmam zorunda kaldım. Bölüm sekreteri bir şey söylemek için gelmiş, kusura bakmayın. Bir on dakika daha dersimiz var, ondan sonra bitireceğim dersi. Bakın, bu sekiz numaralı örnek gerçekten ilginç. Tamam mı? Üstel fonksiyonların kümesini vermiş.
+
+689
+01:38:44,467 --> 01:38:49,268
+Yani şuradaki k sayısını değiştirerekten her defasında bir üstel fonksiyon üretiyorsun. Bunların kümesi.
+
+690
+01:38:50,008 --> 01:39:00,208
+Orada da bir tane toplama, çarpma işlemi tanımlıyorsun. Vektör uzayı olabilmesi için de her bir işlemin dört tane aksiyonun sağladığını gösterirsen vektör uzayı olduğunu söylüyorsun.
+
+691
+01:39:00,927 --> 01:39:06,608
+Bakın toplama işlemine bakın nasıl tanımlanmış. Bir tane aldım. Bir tane daha aldım.
+
+692
+01:39:08,979 --> 01:39:33,199
+Tamam mı? Ya bu başındaki skalerler nereden çıktı diye sorabilirsin. Yani üçler bir fonksiyonu bir sayıla çarpabilirsin yani sorun değil. Yani başında bir sayı da olabilir. Toplama işlemi bu durumda nasıl olur diye soruyorsan işte böyle verilmiş. Böyle verilmiş. Tamam mı? Çarpma işlemini de şöyle vermiş bize bakın.
+
+693
+01:39:35,475 --> 01:39:55,935
+Çarpma işlemi de böyle vermiş. Dikkat edin, şu iki skaleri çarparak üstel fonksiyonu önüne koy diyor bize. Burada da yaptığı şey şu, K ve M, yani üstteki sayıları topla, üstel, yani kuvvet olan sayıları topla, başındaki sayılarla çarp, önüne koy. Değil mi? Böyle verilmiş yani.
+
+694
+01:40:00,000 --> 01:40:20,219
+Bunların 8 tane aksiyonu sağladığını göstermeyi size bırakayım arkadaşlar. Tamam mı? Bunun zaten kolay bir yolu var. Alt uzay diye bir şeyden bahsedeceğim. Yani böyle bir kümenin vektör uzayı olduğunu, hele de test sınavı olacağız. 8 tane aksiyon falan sağlamanızı istemez kimse sizden yani.
+
+695
+01:40:20,576 --> 01:40:40,495
+Yani çok zorlaman lazım. Çok zorlaman lazım. Alt uzaylarla ilgili bir şeylerden bahsedeceğim. İşte orada bir kriter var, basit bir kriter. Bir kümenin vektör uzayı olması için gerekli iki tane şart var. Oradan çok daha kestirme bir şekilde vektör uzayı olup olmadığını anlamamıza olanak verecek.
+
+696
+01:40:40,495 --> 01:40:47,915
+We will have a quite simple criteria to understand if a given set is a vector space or not.
+
+697
+01:40:48,404 --> 01:40:50,404
+Seqlal, değil mi?
+
+698
+01:40:50,404 --> 01:40:56,404
+Bu büyük bir liste de 8 axioms
+
+699
+01:40:56,404 --> 01:40:58,404
+verifiyorsa,
+
+700
+01:40:58,404 --> 01:41:01,404
+bu sektörünün bir vektörüyle değil.
+
+701
+01:41:01,404 --> 01:41:03,404
+Evet?
+
+702
+01:41:03,404 --> 01:41:07,404
+Öncelikle,
+
+703
+01:41:07,404 --> 01:41:09,404
+bu ne var.
+
+704
+01:41:09,404 --> 01:41:14,404
+Bu ne var.
+
+705
+01:41:15,475 --> 01:41:23,876
+All of them, just let's focus on this theorem 4.2.
+
+706
+01:41:24,256 --> 01:41:28,456
+The following theorem presents some useful properties common to all vector space.
+
+707
+01:41:28,956 --> 01:41:36,416
+So let us see what are the common properties that occur for any vector space.
+
+708
+01:41:36,536 --> 01:41:40,115
+If V is a vector space, then look at this.
+
+709
+01:41:41,684 --> 01:41:48,783
+0 times u is 0. C times c is a scalar, right? C times 0 is 0, of course.
+
+710
+01:41:50,144 --> 01:41:57,804
+If you extend or contract 0 vector, you still stay with the 0 vector, right?
+
+711
+01:41:58,503 --> 01:42:06,283
+If you consider 0 multiple of any vector, you have to have 0 vector, not the vector itself.
+
+712
+01:42:06,283 --> 01:42:07,283
+This is also...
+
+713
+01:42:08,083 --> 01:42:09,523
+Completely trivial, right?
+
+714
+01:42:09,963 --> 01:42:14,304
+The third property says that a multiple of a vector is zero.
+
+715
+01:42:16,783 --> 01:42:21,123
+If the multiple is zero or the vector itself is zero, right?
+
+716
+01:42:21,764 --> 01:42:24,923
+This is what is written in the property C.
+
+717
+01:42:27,483 --> 01:42:30,823
+Zero if C is zero, right?
+
+718
+01:42:31,344 --> 01:42:33,783
+Or zero if U is zero.
+
+719
+01:42:34,644 --> 01:42:41,864
+Let me write the bold phase letter, to understand that this is a zero vector, not a scalar zero, right?
+
+720
+01:42:42,364 --> 01:42:50,544
+And the fourth property says, you can generate the opposite always, right?
+
+721
+01:42:52,544 --> 01:42:58,004
+In any vector space, any element possess its opposite, right?
+
+722
+01:42:58,284 --> 01:43:00,460
+So these properties are...
+
+723
+01:43:00,627 --> 01:43:02,627
+ve bu bölümde.
+
+724
+01:43:03,627 --> 01:43:04,627
+Yine?
+
+725
+01:43:05,627 --> 01:43:08,527
+Bir
+
+726
+01:43:08,627 --> 01:43:09,627
+yüzeyken.
+
+727
+01:43:10,627 --> 01:43:12,627
+Ve bu bölümde.
+
+728
+01:43:13,627 --> 01:43:15,627
+Öncelikle,
+
+729
+01:43:16,627 --> 01:43:17,627
+bu bölümde.
+
+730
+01:43:18,627 --> 01:43:21,627
+V'nin ve
+
+731
+01:43:21,627 --> 01:43:28,627
+V'nin
+
+732
+01:43:28,532 --> 01:43:30,572
+W is a subset.
+
+733
+01:43:31,572 --> 01:43:41,352
+This is a vector space, and W is just a subset without any structure, right?
+
+734
+01:43:41,811 --> 01:43:43,612
+Without any linear space structure.
+
+735
+01:43:44,212 --> 01:43:51,012
+When this subset is also vector space, you can ask this natural question, right?
+
+736
+01:43:51,731 --> 01:43:54,771
+It will be a vector space within V.
+
+737
+01:43:55,731 --> 01:44:10,931
+If, when you restrict these two operations to W, if W is still vector space, then you will say that W is a subspace of V. This is the idea, right?
+
+738
+01:44:10,931 --> 01:44:21,612
+I mean, whenever you take a subset of your vector space, restrict the operations of your vector space to that subset, and
+
+739
+01:44:22,131 --> 01:44:30,792
+Verify if that subset with the restricted operations is a vector space or not.
+
+740
+01:44:31,612 --> 01:44:31,912
+Right?
+
+741
+01:44:34,731 --> 01:44:41,152
+That means you have to verify eight axioms for the restrictions of the two operations.
+
+742
+01:44:41,152 --> 01:44:41,551
+Right?
+
+743
+01:44:41,931 --> 01:44:47,231
+But this is not a smart way to understand.
+
+744
+01:45:07,891 --> 01:45:21,891
+İlk adım, you don't need to verify the eighth axiom, you just verify this to axiom to know if a given subset becomes a vector space on that.
+
+745
+01:45:22,431 --> 01:45:29,112
+Alright, let us read the statement of our theorem.
+
+746
+01:45:29,712 --> 01:45:31,891
+Suppose V is a vector space with...
+
+747
+01:45:33,652 --> 01:45:39,171
+Vektör space with these two operations, right? W is a non-empty subset, okay?
+
+748
+01:45:39,992 --> 01:45:48,811
+So, the theorem says that W is a subspace, or sometimes we say vector subspace or linear subspace of V, if and only if.
+
+749
+01:45:49,412 --> 01:45:56,832
+Look, look at this. It's important. It doesn't say only if, right? If and only if.
+
+750
+01:45:58,036 --> 01:46:04,435
+That means it's necessary and sufficient that you have to understand in this way, right?
+
+751
+01:46:04,876 --> 01:46:12,036
+W, the subset W, is a vector subspace if and only if the following conditions, two conditions, hold.
+
+752
+01:46:12,676 --> 01:46:20,971
+Look at the first one. Whenever you take two vectors, two elements from your subset, their sum, this sum means...
+
+753
+01:46:21,011 --> 01:46:44,192
+The sum in the vector space is restricted to the elements of the subset W, right? Of course, the resulting vector is a vector in V, but you have to verify what? If it is in W or not, okay? Arkadaşlar, bunu anlamamız lazım. Mesela bakın.
+
+754
+01:46:44,576 --> 01:47:06,636
+U ve V'yi W alt kümesinden aldığım zaman bunların toplamları V uzayında tabii ki. Ama ben W'nun kendisinde mi diye bakıyorum. Yani şöyle düşünün bakın. Bu V olsun, tamam mı? Şu da W olsun. Tamam mı? Yani buradan bir vektör aldın, bir tane daha aldın. Bunların toplamları gene V'de mi? Yani şu mu? Eğer buraya düşüyorsa olmaz.
+
+755
+01:47:08,083 --> 01:47:20,423
+Yani vektör uzayında oluyor zaten her zaman ama alt uzayda kalması lazım. Yani kısıtlanmış işlemlerin iyi tanımlı olması lazım. Bilmem anlatabiliyor muyum? Yani bunu böyle anlamamız lazım.
+
+756
+01:47:20,423 --> 01:47:33,184
+Tamam mı? This is the first property. The second one is that multiple of vectors in W is still in W.
+
+757
+01:47:33,684 --> 01:47:44,923
+Roughly speaking, these two conditions say that if you restrict, whenever you restrict the operations on your vector space v to the subset w, they are still well defined.
+
+758
+01:47:45,144 --> 01:47:54,523
+I mean, the subset w is still closed under restricted operations, right? Restricted operations.
+
+759
+01:47:56,644 --> 01:47:57,503
+All right.
+
+760
+01:47:57,939 --> 01:48:21,099
+Some people, instead of two conditions, write just one. W is a subspace, if and only if, for example, C times U plus D times V is in W, for every U, V in W, and Cd in R.
+
+761
+01:48:21,747 --> 01:48:29,807
+You can also see something like this in other books, right? It's true, right? It's another way to write the same action.
+
+762
+01:48:31,487 --> 01:48:38,847
+Instead of two in one, you can write this way or two in one like this, right?
+
+763
+01:48:42,452 --> 01:49:07,172
+Okay, this is the criterion to understand when a subset within a vector space is a subspace, vector subspace or not. I don't care the proof for now because I don't have time, but you can understand. It's not a complicated proof, right? You are not responsible for any proof in the test exam, but
+
+764
+01:49:07,572 --> 01:49:18,892
+I recommend you to take a look at this proof, right? If you are interested in understanding, okay?
+
+765
+01:49:19,372 --> 01:49:27,771
+But it's enough for me, if you know the statement of the theorem, and if you are able to apply these two conditions on any exercise, right?
+
+766
+01:49:28,819 --> 01:49:30,279
+Here is the first example.
+
+767
+01:49:30,979 --> 01:49:35,099
+For every vector space, every vector space has at least two subspaces, right?
+
+768
+01:49:35,159 --> 01:49:37,019
+These are the trivial subspaces.
+
+769
+01:49:37,199 --> 01:49:43,380
+This is the first one, the space only consisting the zero vector.
+
+770
+01:49:43,739 --> 01:49:47,939
+As I said, every vector space has its zero vector, right?
+
+771
+01:49:48,159 --> 01:49:51,819
+If you don't have any other vector, I mean just the zero,
+
+772
+01:49:52,899 --> 01:49:53,899
+V'nin
+
+773
+01:49:52,239 --> 01:49:54,340
+Bu, bu, zero-vector space.
+
+774
+01:49:54,739 --> 01:49:57,279
+Bu, bu, trivial subspace.
+
+775
+01:49:57,439 --> 01:49:59,300
+Bu, trivial subspace
+
+776
+01:49:59,300 --> 01:50:01,159
+is the vector space itself.
+
+777
+01:50:02,479 --> 01:50:03,460
+You know, any set
+
+778
+01:50:03,460 --> 01:50:05,699
+might be considered as a subset
+
+779
+01:50:05,699 --> 01:50:06,840
+of itself, right?
+
+780
+01:50:07,039 --> 01:50:08,219
+So, in this sense,
+
+781
+01:50:08,639 --> 01:50:09,880
+you have always these two
+
+782
+01:50:09,880 --> 01:50:11,300
+trivial subspaces
+
+783
+01:50:11,300 --> 01:50:13,139
+which are not interesting, okay?
+
+784
+01:50:14,219 --> 01:50:15,719
+Which are not interesting.
+
+785
+01:50:16,300 --> 01:50:17,855
+We are interested in...
+
+786
+01:50:17,855 --> 01:50:26,175
+proper vektör subspaces, right? I mean, the subspaces that are not zero or the whole vector space.
+
+787
+01:50:27,615 --> 01:50:28,375
+Okey.
+
+788
+01:50:31,415 --> 01:50:35,595
+Arkadaşlar, burada durmam gerekiyor, sınıfı boşaltmam lazım, ders yapılacakmış burada.
+
+789
+01:50:36,435 --> 01:50:58,375
+Var mı sorusu olan? Önümüzdeki hafta kaldığımız yerden devam ederiz. Final sınavında bu konular ağırlıklı olur. Lütfen vektör uzaylarından itibaren çalışmadıysanız, başlamadıysanız çalışmaya başlayın. Yani o skaler çarpım, vektör çarpımı, vektör uzayları, alt vektör uzayları, lineer bağımlılık, bağımsızlık, bundan sonra göreceğimiz şeyler, yani artık final sınavına hazırlık. Var mı sorusu olan?
+
+790
+01:51:03,155 --> 01:51:04,255
+Any other, any question?
+
+791
+01:51:06,615 --> 01:51:07,395
+All right.
+
+792
+01:51:07,655 --> 01:51:10,876
+I have to end the session for today.
+
+793
+01:51:11,275 --> 01:51:12,475
+See you next week, right?
+
+794
+01:51:13,036 --> 01:51:13,315
+Bye.

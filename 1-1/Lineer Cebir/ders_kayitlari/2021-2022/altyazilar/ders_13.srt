@@ -1,0 +1,1907 @@
+1
+00:01:03,859 --> 00:01:04,359
+İyi gün arkadaşlar.
+
+2
+00:01:10,195 --> 00:01:29,675
+Kaç kişiyiz? Dört kişiyi. Üç kişiyi. Evet, sormak istediğiniz bir şey var mı buraya kadar anlattıklarımdan? Haftaya değil, ondan sonraki hafta sınavınız var. İlan ettim tarihi, zaten biliyorsunuzdur. On yedisinde, bilmeyen var mı içinizde? Matematik bölümü sayfamızda zaten var.
+
+3
+00:01:33,331 --> 00:01:37,531
+Evet, mesela [öğrenci]'ya soralım. Sormak istediğin bir şey var mı [öğrenci]?
+
+4
+00:01:46,995 --> 00:02:08,756
+Şimdilik yok. [kişisel bilgi] O yüzden ara ara mikrofonu kapatıp kesinlik olabilir. Elimden geldiği kadar anlatmaya çalışayım size. 14. haftanın konusunu anlatacağım. Özdeğer, özvektör. Burası da sınava dair final sınavına. Keşke daha interaktif bir ders yapabilseydik sizinle dönem başından beri.
+
+5
+00:02:09,120 --> 00:02:34,860
+Ben istedim ki bana soru sorun, beni meşgul edin ama yani dört dönemdir online ders veriyoruz burada neredeyse. Ben böyle bir sınıfa rastlamadım. İlgisiz demeyeceğim tabii. Bilgisayardan ders takip etmenin de kendine göre zorluğu var. Çok ideal bir ortam değil. Ama yani neredeyse hiç soru gelmemesi de normal değil. Daha önce de birkaç kere söylediğimi hatırlıyorum. Yani yüz yirmi, yüz otuz kişilik sınıfla.
+
+6
+00:02:35,572 --> 00:02:57,992
+Ders yaptığımı biliyorum ve yani sorular peş peşe geliyordu. Güzeldi yani, o şekilde ders yaptığım dönem de oldu ama bu sınıfla maalesef istediğim gibi bir ders yapamadım. Yeni gelen arkadaşlarımız var. Evet, [öğrenci] gelmiş. Biz ekran paylaşımımızı yapalım.
+
+7
+00:02:59,348 --> 00:03:02,668
+Evet, özdeğer vektörlerle devam edelim.
+
+8
+00:03:02,728 --> 00:03:07,708
+This is the chapter 7 of our reference book, right?
+
+9
+00:03:07,867 --> 00:03:09,148
+Coleman, Hilma, Coleman & Hil.
+
+10
+00:03:11,168 --> 00:03:15,687
+It's an important topic for your final exam, right?
+
+11
+00:03:16,528 --> 00:03:18,508
+So let me see what is the definition.
+
+12
+00:03:18,687 --> 00:03:19,708
+This is very important.
+
+13
+00:03:19,908 --> 00:03:23,747
+Even the Google uses eigenvalues, eigenvektörs, right?
+
+14
+00:03:26,580 --> 00:03:40,600
+Google to search some keywords, for example, let's say implicitly, these eigenvalues, eigenvektörs are included in some computation, let's say this way, right?
+
+15
+00:03:42,840 --> 00:03:52,220
+Okay, in the definition, I see linear transformation, but since this part is not included in our course schedule, look at this.
+
+16
+00:03:53,075 --> 00:04:02,596
+The sentence starts with, let L be a linear transformation of an n-dimensional vector space V into itself, right?
+
+17
+00:04:03,156 --> 00:04:13,895
+We don't know what is linear transformation, right? I didn't say anything. It's not included in our course schedule, so I will skip.
+
+18
+00:04:20,980 --> 00:04:35,080
+A square matrix, right? Not a linear transformation, but it's good to know that this definition is actually given for linear transformation and then matrices that represent linear transformation, right?
+
+19
+00:04:35,139 --> 00:04:47,659
+But for us, it's enough to know that we are interested in eigenvalues and the corresponding eigenvektors of square matrices, right? Square matrices.
+
+20
+00:04:48,276 --> 00:04:51,576
+Okay, so let me skip some pages here.
+
+21
+00:04:55,507 --> 00:05:03,647
+Let me find the part that starts with matrices directly, right?
+
+22
+00:05:04,747 --> 00:05:06,147
+Okay, still linear transformations.
+
+23
+00:05:07,907 --> 00:05:15,147
+I have to show you the formal definition of eigenvalue first, and then what is the meaning of corresponding eigenvektör.
+
+24
+00:05:15,788 --> 00:05:19,247
+Right, so let me see where it is.
+
+25
+00:05:24,052 --> 00:05:28,492
+Compüren eigenvalues and eigenvektörs.
+
+26
+00:05:31,451 --> 00:05:34,052
+OK, I think it starts right here.
+
+27
+00:05:36,512 --> 00:05:41,772
+So as I said, we are not interested in eigenproblem for linear transformation, right?
+
+28
+00:05:41,792 --> 00:05:42,711
+So forget about it.
+
+29
+00:05:43,512 --> 00:05:50,331
+We now formulate the notion of eigenvalue and the corresponding eigenvektör for any square matrix.
+
+30
+00:05:51,475 --> 00:06:03,115
+Yani, suppose A is a matriksiyonu, ordu n. In another word, A is an n by n matriksiyonu.
+
+31
+00:06:03,379 --> 00:06:05,259
+Real Entries, of course.
+
+32
+00:06:05,819 --> 00:06:09,560
+We are mainly interested in matrices with Real Entries, right?
+
+33
+00:06:09,819 --> 00:06:13,660
+So forget, ignore those matrices with complex entries.
+
+34
+00:06:14,139 --> 00:06:18,379
+We will also ignore eigenvalues, complex eigenvalues, right?
+
+35
+00:06:18,660 --> 00:06:21,819
+We will be mainly interested in Real Eigenvalues.
+
+36
+00:06:21,819 --> 00:06:28,900
+So let me show you.
+
+37
+00:06:30,036 --> 00:06:32,256
+The definition, let me see where is.
+
+38
+00:06:35,216 --> 00:06:46,795
+Whenever you see something like this, you have to be aware that the notion of eigenvalue is being defined, right?
+
+39
+00:06:47,795 --> 00:06:55,636
+This lambda will be an eigenvalue, and the non-zero x that satisfies this equation for,
+
+40
+00:06:56,244 --> 00:07:08,804
+A'ı, will be the corresponding eigenvektör. You see, the action of matrix A is that when you multiply A by non-zero x, x you can consider as a column vector, right, in Rn.
+
+41
+00:07:09,684 --> 00:07:19,004
+So the left side of this equality, 4, means a standard matrix multiplication, and the right side means just a multiple of the non-zero x, right?
+
+42
+00:07:19,764 --> 00:07:47,144
+So, it is something like this. Suppose you have a certain x here, non-zero x. So, what is the action of matrix A? If you see right side, the action means this, right? You are still, you apply matrix A, but you're still on the same supporting line, right? Because A times x is a multiple of x, right?
+
+43
+00:07:51,315 --> 00:08:05,675
+The real number, lambda, that satisfies this equality for is called eigenvalue of the matrix A, and x satisfying the same equation will be the corresponding eigenvector, right?
+
+44
+00:08:06,656 --> 00:08:16,855
+Corresponding means the eigenvector associated with lambda, or eigenvector corresponding to eigenvalue lambda, right, in this sense.
+
+45
+00:08:20,372 --> 00:08:33,792
+For example, we are given in this example 10, let us do some computation to clarify the notion of eigenvalue of square matrix, right?
+
+46
+00:08:34,152 --> 00:08:38,412
+So we are seen as square matrix of order 2, very simple matrix.
+
+47
+00:08:39,092 --> 00:08:44,632
+And suppose we are asked to find the eigenvalues of this matrix A.
+
+48
+00:08:45,107 --> 00:09:10,795
+ve aynı zamanda ve aynı zamanda ve aynı zamanda ve aynı zamanda ve aynı zamanda ve aynı zamanda ve aynı zamanda ve aynı zamanda ve aynı zamanda ve aynı zamanda ve aynı zamanda ve aynı zamanda ve aynı zamanda ve aynı zamanda ve aynı zamanda ve aynı zamanda ve aynı zamanda ve aynı zamanda ve aynı zamanda ve aynı zamanda ve aynı zamanda ve aynı zamanda ve aynı zamanda ve aynı zamanda ve aynı zamanda ve aynı zamanda ve aynı zamanda ve aynı zamanda ve aynı zamanda ve aynı zamanda ve aynı zamanda ve aynı zamanda ve aynı zamanda ve aynı zamanda ve aynı zamanda ve aynı zamanda ve aynı zamanda ve aynı zamanda ve aynı zamanda ve aynı zamanda ve aynı zamanda ve aynı zamanda ve aynı zamanda ve aynı zamanda ve aynı zamanda ve aynı zamanda ve aynı zamanda ve aynı zamanda ve aynı zamanda ve aynı zamanda ve aynı zamanda ve aynı zamanda ve aynı zamanda ve aynı zamanda ve aynı zamanda ve aynı zam
+
+49
+00:09:10,836 --> 00:09:17,976
+We wish to find all numbers lambda and all non-zero vectors x, that satisfies this equation, right?
+
+50
+00:09:18,056 --> 00:09:25,216
+This equation means a times x is a multiple of x by lambda, right?
+
+51
+00:09:26,056 --> 00:09:29,836
+So, what you see here...
+
+52
+00:09:34,644 --> 00:09:40,423
+A' times x on the left side and lambda times x on the right side, right?
+
+53
+00:09:40,844 --> 00:09:48,463
+So if you write this in coordinate, you will obtain a linear system, right?
+
+54
+00:09:49,283 --> 00:09:50,163
+Linear system.
+
+55
+00:09:52,043 --> 00:09:57,844
+Or, if you prefer, you can still write this way, the same linear system, right?
+
+56
+00:09:57,884 --> 00:10:00,000
+Because you have to organize.
+
+57
+00:10:24,563 --> 00:10:34,983
+vekutör uzayları, aynı zamanda x2, bu sistemlerden bir homojeni, bir sistemlerden bir hizmetin.
+
+58
+00:10:34,983 --> 00:10:43,563
+Öncelikle, bir başka bir pizmada yazı, bir başka bir pizmada yazı.
+
+59
+00:10:52,500 --> 00:11:03,500
+So, we are trying to find an eigenvalue, lambda, real eigenvalue, and associated eigenvector.
+
+60
+00:11:04,660 --> 00:11:11,080
+So, we have to satisfy, we have to look for lambda and non-zero x that satisfy this equation, right?
+
+61
+00:11:11,560 --> 00:11:13,740
+This equation, let me call asterisk here.
+
+62
+00:11:15,280 --> 00:11:19,720
+So, this is also equivalent to, right?
+
+63
+00:11:20,755 --> 00:11:36,875
+A, let me write clearly for some lines first, get this, you can write this way of course, and then you can still write something like this, lambda times identity, right?
+
+64
+00:11:44,244 --> 00:11:51,043
+You can still continue with the algebra, right? And then write this time.
+
+65
+00:11:56,148 --> 00:11:57,268
+Something like this.
+
+66
+00:11:59,788 --> 00:12:03,668
+So this is your homogenous system, okay?
+
+67
+00:12:05,048 --> 00:12:08,568
+Some people also use this one.
+
+68
+00:12:08,668 --> 00:12:09,168
+Look at this.
+
+69
+00:12:09,427 --> 00:12:17,168
+Lambda times identity minus the given matrix A times X.
+
+70
+00:12:21,395 --> 00:12:34,895
+So, the problem of finding an eigenvalue, lambda, and the corresponding eigenvector, x, is reduced to solve this homogenous linear system of equations, right?
+
+71
+00:12:36,375 --> 00:12:42,816
+You see, this is the coefficient matrix of this linear system, right? Homogenous system.
+
+72
+00:12:44,696 --> 00:12:48,651
+So, the difference is just the sign. Some people use...
+
+73
+00:12:48,980 --> 00:12:52,519
+This, some other people use this one, right?
+
+74
+00:12:54,059 --> 00:13:00,159
+The difference is just the minus sign, which doesn't matter, okay?
+
+75
+00:13:01,679 --> 00:13:06,960
+Okay, let me continue with the rest of the solution.
+
+76
+00:13:08,579 --> 00:13:14,159
+Okay, so as I said, this is, excuse me.
+
+77
+00:13:16,851 --> 00:13:29,231
+This is just lambda minus, excuse me, lambda times identity minus matrix A times x equal to 0, right?
+
+78
+00:13:30,311 --> 00:13:39,111
+Let me delete some part of the screen for you to see better, okay?
+
+79
+00:13:42,772 --> 00:13:48,912
+Or maybe I can write in a better way.
+
+80
+00:13:49,412 --> 00:13:56,532
+This is lambda times identity minus A times x equal to 0, right?
+
+81
+00:13:57,912 --> 00:14:07,912
+So this homogeneous system of two equations and two unknowns has a non-trivial solution if and only if the determinant of the coefficient matrix is 0, right?
+
+82
+00:14:09,032 --> 00:14:10,636
+So this is the...
+
+83
+00:14:14,388 --> 00:14:23,528
+Bu, bu, co-efficient matrix, ve, we are, we are going to calculate its determinant, right, which must be zero.
+
+84
+00:14:24,747 --> 00:14:29,388
+If you are interested in non-trivial, existence of non-trivial solution, right?
+
+85
+00:14:30,967 --> 00:14:31,528
+Okay.
+
+86
+00:14:33,367 --> 00:14:34,827
+It's very easy, right?
+
+87
+00:14:35,268 --> 00:14:40,107
+You will obtain this polynomial in lambda of degree 2.
+
+88
+00:14:40,692 --> 00:14:42,692
+Bu şekilde,
+
+89
+00:14:42,692 --> 00:14:44,692
+ve bu şekilde,
+
+90
+00:14:44,692 --> 00:14:48,692
+ve bu poynumla,
+
+91
+00:14:48,692 --> 00:15:02,692
+bu poynumla,
+
+92
+00:15:02,692 --> 00:15:07,467
+bu,
+
+93
+00:15:08,500 --> 00:15:13,819
+Determinant, this gives you a polynomial in lambda, right?
+
+94
+00:15:14,719 --> 00:15:30,959
+And if you look for lambda that satisfies this polynomial, I mean, lambda that is a root of this polynomial, then you will obtain the eigenvalues of your matrix, right?
+
+95
+00:15:36,596 --> 00:15:42,975
+Non-trivial solutions of these linear systems, right? Non-trivial solutions.
+
+96
+00:15:43,695 --> 00:15:50,235
+To find the, these are the eigenvalues. The next step is to determine the corresponding eigenvektörs, right?
+
+97
+00:15:50,675 --> 00:15:59,995
+You are just obtained the real numbers that satisfy this equation, which are called eigenvalues, right?
+
+98
+00:16:01,296 --> 00:16:09,736
+You have to find the vectors that satisfy this equation for the specific lambda you have just obtained, right?
+
+99
+00:16:11,176 --> 00:16:16,636
+This is the procedure to find eigenvalues and the associated eigenvektors, right?
+
+100
+00:16:17,016 --> 00:16:22,976
+For each eigenvalue, you have to follow the same route, right?
+
+101
+00:16:24,016 --> 00:16:25,876
+Let's start with the first.
+
+102
+00:16:26,772 --> 00:16:42,032
+eigenvalue, which is 2, right? Order is not important. You can start with 3 if you want, right? So take this as an eigenvalue, and then let me clear this part of screen.
+
+103
+00:16:50,707 --> 00:17:00,087
+I'm going to obtain a non-zero x such that a times x is 2 times x, right?
+
+104
+00:17:00,187 --> 00:17:03,507
+I didn't write lambda times x because lambda is 2, right?
+
+105
+00:17:04,007 --> 00:17:11,268
+I have used the exact value of our lambda to find the corresponding eigenvector, okay?
+
+106
+00:17:11,268 --> 00:17:13,067
+So,
+
+107
+00:17:13,556 --> 00:17:18,396
+This x will be the eigenvektör associated with 2.
+
+108
+00:17:19,556 --> 00:17:19,956
+Right?
+
+109
+00:17:21,655 --> 00:17:22,456
+Okay.
+
+110
+00:17:23,096 --> 00:17:24,576
+So this means that,
+
+111
+00:17:26,956 --> 00:17:29,155
+let me write in this
+
+112
+00:17:29,155 --> 00:17:31,516
+order.
+
+113
+00:17:40,211 --> 00:17:45,192
+2 times x minus a times x is equal to 0, right?
+
+114
+00:17:46,811 --> 00:17:55,632
+So, 2 times lambda x c, excuse me, 2 times identity matrix minus a times x is 0.
+
+115
+00:18:00,211 --> 00:18:03,351
+Okay, so look at this.
+
+116
+00:18:04,851 --> 00:18:09,692
+This is the system that you have to solve.
+
+117
+00:18:09,692 --> 00:18:10,471
+Okay.
+
+118
+00:18:13,236 --> 00:18:16,176
+Bu, bu sistemlerle ilgili bir sistemlerle ilgili,
+
+119
+00:18:16,176 --> 00:18:18,736
+bu sistemlerle ilgili bir sistemlerle ilgili.
+
+120
+00:18:18,736 --> 00:18:20,856
+Bu, bu sistemlerle ilgili,
+
+121
+00:18:20,856 --> 00:18:24,276
+bu sistemlerle ilgili bir sistemlerle ilgili.
+
+122
+00:18:24,276 --> 00:18:26,736
+Bu sistemlerle ilgili bir sistemlerle ilgili.
+
+123
+00:18:26,736 --> 00:18:30,036
+Ve bu sistemlerle ilgili çok kolay.
+
+124
+00:18:30,036 --> 00:18:33,736
+Bu, x1'e x2'e x2'e yaratı.
+
+125
+00:18:33,736 --> 00:18:37,436
+İlk olarak, bu sistemlerle ilgili bir sistemlerle ilgili.
+
+126
+00:18:37,523 --> 00:18:42,363
+Zaten aynı zamanda, x1, x2, are coincident.
+
+127
+00:18:43,303 --> 00:18:50,163
+So, that means you have to select one of these two variables as a free variable, right?
+
+128
+00:18:50,343 --> 00:18:52,703
+And the other one will be dependent on the other, right?
+
+129
+00:18:53,583 --> 00:18:58,963
+If x1 is your free variable, x2 will be dependent on x1, right?
+
+130
+00:19:00,115 --> 00:19:06,436
+If x2 is your free variable, then x1 will be dependent on x2, right?
+
+131
+00:19:08,256 --> 00:19:19,096
+So this means that in your book, x2 was chosen as a free variable, but it doesn't matter.
+
+132
+00:19:20,036 --> 00:19:26,876
+You can, if you prefer, you can choose x1 as your free variable, right? Any number.
+
+133
+00:19:27,380 --> 00:19:28,800
+R is any number here.
+
+134
+00:19:29,520 --> 00:19:33,440
+And then x2 is x1, right?
+
+135
+00:19:33,560 --> 00:19:34,860
+It's exactly the same.
+
+136
+00:19:36,500 --> 00:19:40,720
+So, look, these are the, don't forget that these are the coordinates of your non-zero x,
+
+137
+00:19:40,720 --> 00:19:45,640
+which is the eigenvector associated with the eigenvalue 2, right?
+
+138
+00:19:46,140 --> 00:19:53,060
+So, let me write as a column vector this non-zero x, the eigenvector, corresponding eigenvector.
+
+139
+00:19:54,067 --> 00:19:58,627
+If x2 is r, then you have to write something like this.
+
+140
+00:19:59,127 --> 00:20:03,747
+And don't forget to emphasize that r is any real number, right?
+
+141
+00:20:06,507 --> 00:20:09,167
+So, how many vectors we have?
+
+142
+00:20:09,367 --> 00:20:16,907
+How many vectors you think we have as associated eigenvector with the eigenvalue 2?
+
+143
+00:20:17,207 --> 00:20:18,507
+This is my question for you.
+
+144
+00:20:19,988 --> 00:20:24,147
+Bu benim sorumlum. Bu ne kadar öğrenci? 9 öğrenci.
+
+145
+00:20:24,307 --> 00:20:27,307
+Ok.
+
+146
+00:20:30,647 --> 00:20:35,407
+Let me ask [öğrenci]. [öğrenci], are you there? Can you ask me my question, please?
+
+147
+00:20:44,723 --> 00:20:47,763
+Would you please open your microphone and answer my question?
+
+148
+00:20:52,660 --> 00:20:53,220
+Alright.
+
+149
+00:21:03,412 --> 00:21:27,231
+Okay, for this eigenvalue, this is the corresponding eigenvektör, right? R is any non-zero. I said any real number, but of course you have to exclude the zero, right? Because if you take zero in this case, you will obtain the zero vector, but eigenvektör by definition is never zero, right? Because why? Because you see,
+
+150
+00:21:27,892 --> 00:21:35,412
+If x is 0, this equation is always satisfied, there is nothing to do, right? So x is non-zero.
+
+151
+00:21:37,612 --> 00:21:46,211
+That's why you cannot take 0 number to replace with r here, right? All right.
+
+152
+00:21:46,771 --> 00:21:53,991
+But if you attribute some specific real number to r, for example, you can find a specific eigenvector, right?
+
+153
+00:21:54,387 --> 00:22:00,488
+Any other eigenvektör will be the multiple of this one, actually, x1, right?
+
+154
+00:22:00,488 --> 00:22:16,268
+So you can actually say that the set of eigenvektörs corresponding to the eigenvalue 2 is generated by this unique vector, for example, 1, 1, right?
+
+155
+00:22:17,556 --> 00:22:26,576
+So, as I said, we have to follow the same procedure for the other eigenvalue, which is 3, right?
+
+156
+00:22:26,576 --> 00:22:28,576
+So, you have to...
+
+157
+00:22:28,576 --> 00:22:35,015
+Excuse me, let me clear my screen here.
+
+158
+00:22:42,324 --> 00:22:50,504
+Look at this. For lambda 1, 2, we obtain the non-zero eigenvector, something like this, right?
+
+159
+00:22:53,544 --> 00:23:02,484
+Let me say any non-zero, real number. Now we have to follow the same procedure for the other eigenvector, right?
+
+160
+00:23:02,804 --> 00:23:07,044
+So we have to obtain this vector now.
+
+161
+00:23:08,964 --> 00:23:09,604
+So.
+
+162
+00:23:10,132 --> 00:23:19,951
+How do you obtain? You have to use always this reference equation, right? For lambda equal 3, right?
+
+163
+00:23:20,852 --> 00:23:37,352
+So why don't you write the equation? For lambda equal 3. A times x is, let me write, let me see the matrix, 1, 1, the first line, and the second line, minus 2, 4.
+
+164
+00:23:50,355 --> 00:24:02,395
+Okay, this is the standard matrix multiplication, and we have to write lambda times x, which means three times x1, three times x2, right? Let me write.
+
+165
+00:24:04,895 --> 00:24:16,576
+Okay, so this means x1 plus x2 is equal to three times, I'm writing.
+
+166
+00:24:17,364 --> 00:24:28,484
+Right now, the corresponding linear equation, whose solution will reveal the coordinate of the eigenvector corresponding to 3, right?
+
+167
+00:24:29,624 --> 00:24:37,584
+Minus 2 times x1 plus 4 times x2 is equal to 3 times x2, okay?
+
+168
+00:24:42,291 --> 00:24:57,471
+All right. You have to solve this linear equation, linear system, to find x1, x2, coordinates of your eigenvektör, right? Or you can still prefer to work with this one. Look at this.
+
+169
+00:24:59,092 --> 00:24:59,572
+x1.
+
+170
+00:25:07,028 --> 00:25:10,428
+Minus 3 times x1 plus x2 is equal to 0.
+
+171
+00:25:11,867 --> 00:25:12,428
+Right?
+
+172
+00:25:18,644 --> 00:25:20,644
+Let me simplify this equation.
+
+173
+00:25:25,748 --> 00:25:38,147
+Minus 2 times x1 plus x2 is equal to 0. Minus 2 times x1 plus x2 is equal to 0. Right?
+
+174
+00:25:40,687 --> 00:25:46,587
+So what do you see from this linear system, homogeneous linear system? What is the solution?
+
+175
+00:25:48,028 --> 00:25:50,807
+This is the solution. Look at this. x1.
+
+176
+00:25:51,412 --> 00:25:54,352
+2 times x1 is equal to x2.
+
+177
+00:25:54,951 --> 00:25:56,432
+This is the solution, right?
+
+178
+00:26:18,804 --> 00:26:21,544
+All right, let me return to the page.
+
+179
+00:26:28,660 --> 00:26:29,220
+You see?
+
+180
+00:26:33,044 --> 00:26:59,692
+Bu, bu
+
+181
+00:27:00,019 --> 00:27:17,000
+S, and x1 will be the half. So this is a typical eigenvector that is associated with the eigenvalue 3, right?
+
+182
+00:27:17,395 --> 00:27:26,075
+S cannot be zero, of course, otherwise you will have a zero vector as your eigenvector, which is impossible, right, by definition.
+
+183
+00:27:26,275 --> 00:27:30,475
+I would like to repeat once again, eigenvector is a non-zero vector, right?
+
+184
+00:27:31,055 --> 00:27:40,795
+So whenever you obtain something like this as your typical eigenvector, be careful that you cannot attribute a zero number, right?
+
+185
+00:27:41,428 --> 00:27:45,048
+Eğer, if you, suppose your eigenvector is something like this,
+
+186
+00:27:45,888 --> 00:27:48,348
+then you can attribute, of course, 0 to S.
+
+187
+00:27:49,548 --> 00:27:53,128
+Because vector will be the 0, 1, coordinate 0, 1.
+
+188
+00:27:53,488 --> 00:27:54,708
+And this is never 0, right?
+
+189
+00:27:55,048 --> 00:27:57,468
+But for this kind of situations,
+
+190
+00:27:58,088 --> 00:28:02,408
+you have to be careful not to generate the 0 vector
+
+191
+00:28:02,408 --> 00:28:04,128
+as your eigenvector, right?
+
+192
+00:28:04,968 --> 00:28:07,268
+That will be something.
+
+193
+00:28:08,596 --> 00:28:09,836
+Absurd, right?
+
+194
+00:28:11,956 --> 00:28:12,776
+Okay.
+
+195
+00:28:19,220 --> 00:28:32,420
+So, if you are interested to find a specific eigenvektör corresponding to lambda 2, you can attribute some non-zero s, right?
+
+196
+00:28:32,420 --> 00:28:40,799
+And write the corresponding vector. For example, if you take s as 2, let me take my pencil here.
+
+197
+00:28:43,819 --> 00:28:46,660
+If you take s equal to,
+
+198
+00:28:47,220 --> 00:28:52,860
+Bu bir de de eigenvektörsizle ilgili olan bir de.
+
+199
+00:28:53,400 --> 00:28:54,519
+Lambda 2, evet?
+
+200
+00:28:55,420 --> 00:28:58,620
+Bir de çok fazla vektörsiz var, evet?
+
+201
+00:28:59,120 --> 00:29:04,360
+Bir de başka bir seçim var, bir de bir eigenvektör var.
+
+202
+00:29:04,360 --> 00:29:06,160
+Ama bu bir de çok önemli bir de,
+
+203
+00:29:06,160 --> 00:29:11,440
+bu de all these vektörsizle ilgili aynı suportaj var, evet?
+
+204
+00:29:12,360 --> 00:29:13,195
+Çünkü...
+
+205
+00:29:13,203 --> 00:29:21,963
+If you take another s, you will see that the relationship between the vectors are just one is multiple of the other, right?
+
+206
+00:29:24,303 --> 00:29:29,203
+Okay, we now use the method followed in example 10 as our standard.
+
+207
+00:29:30,708 --> 00:29:34,908
+Bu, bu metriksiyonu ve ilgili ilgili ilgili ilgili bir metriksiyonu var.
+
+208
+00:29:34,908 --> 00:29:37,208
+Bu, ilk bir metriksiyonu var.
+
+209
+00:29:37,208 --> 00:29:41,708
+Şimdi, bir metriksiyonu var.
+
+210
+00:29:41,708 --> 00:29:45,708
+Bu metriksiyonu var.
+
+211
+00:29:45,708 --> 00:29:49,708
+Bu, bu metriksiyonu var.
+
+212
+00:29:49,708 --> 00:29:52,708
+Bu metriksiyonu var.
+
+213
+00:29:52,708 --> 00:29:55,708
+Bazen insanlar, bu metriksiyonu var.
+
+214
+00:29:56,788 --> 00:30:02,068
+It doesn't matter, right? The difference is just the minus sign.
+
+215
+00:30:03,068 --> 00:30:10,168
+Since we are going to consider the determinant of this matrix, right?
+
+216
+00:30:11,128 --> 00:30:21,568
+So the difference is that if you consider in the reverse order, this equation, lambda times identity minus A, in the reverse order, the difference is just the minus sign.
+
+217
+00:30:21,568 --> 00:30:22,568
+And if you...
+
+218
+00:30:23,248 --> 00:30:30,248
+Bu, refleksiyonu, multiply-1, determinantsin bir metriksiyonu,
+
+219
+00:30:30,248 --> 00:30:36,248
+you know, you have to just change the sign of the determinant, resulting determinant, right?
+
+220
+00:30:36,248 --> 00:30:41,248
+So we already know this as one of the properties of determinant,
+
+221
+00:30:41,248 --> 00:30:46,248
+so it doesn't matter, but you have to be aware that some authors…
+
+222
+00:30:47,188 --> 00:30:51,188
+bu order, ve diğer altıları kullanan bu order.
+
+223
+00:30:51,188 --> 00:30:56,188
+Evet, şimdi, bu partijden başlayalım.
+
+224
+00:31:13,491 --> 00:31:23,032
+A polynomial in lambda, right? If you consider its determinant, of course, and right equal to zero, right?
+
+225
+00:31:30,036 --> 00:31:54,375
+Okay, look at this. Determinant of these metrics is a polynomial in lambda, right? But you have to put equal to zero, of course, to obtain as a polynomial, and then try to calculate the roots, right? So don't forget this zero.
+
+226
+00:31:55,476 --> 00:32:00,076
+Bu, bu, karakteristik ekvasyonu, matris A.
+
+227
+00:32:02,415 --> 00:32:10,195
+Whenever you are given a square matrix, form this one and calculate its determinant, it will give you a polynomial in lambda.
+
+228
+00:32:10,624 --> 00:32:23,463
+If you want to find the eigenvalues, and later the corresponding eigenvektörs, you have to search for the roots of this characteristic polynomial, right, in lambda.
+
+229
+00:32:25,463 --> 00:32:35,223
+And the procedure is applied in this way, right? Characteristic equation and characteristic polynomial.
+
+230
+00:32:37,304 --> 00:32:37,864
+Okay?
+
+231
+00:32:38,740 --> 00:32:39,539
+Any question?
+
+232
+00:32:44,339 --> 00:33:11,243
+Bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle
+
+233
+00:33:11,251 --> 00:33:35,596
+Bu, bu
+
+234
+00:33:35,635 --> 00:33:46,536
+Değri 2-3
+
+235
+00:33:46,536 --> 00:34:00,587
+Değri 4
+
+236
+00:34:01,683 --> 00:34:25,703
+Let me show you in bulk to clarify what I mean. So look at this, we are given a square matrix for the tree. So the characteristic polynomial of these metrics, by definition, this one, right? You can write immediately this matrix and then calculate its determinant. It is also easy, okay?
+
+237
+00:34:30,260 --> 00:34:43,340
+And determinant of this 3x3 matrix will give you, as I said, a polynomial in lambda. Degree is 3, right? Degree is 3.
+
+238
+00:34:45,560 --> 00:34:48,340
+So if you don't know how to solve...
+
+239
+00:34:50,544 --> 00:34:52,544
+Değri 4
+
+240
+00:34:49,396 --> 00:34:52,216
+Bu konuda bu konuda alınmıyor.
+
+241
+00:34:52,376 --> 00:34:59,096
+Bu konuda alınmıyor.
+
+242
+00:34:59,236 --> 00:35:01,936
+Ama sonra bu konuda alınmıyor.
+
+243
+00:35:03,216 --> 00:35:06,796
+Bu konuda alınmıyor.
+
+244
+00:35:06,876 --> 00:35:09,756
+Ama bu konuda alınmıyor.
+
+245
+00:35:09,756 --> 00:35:15,756
+Bu konuda alınmıyor.
+
+246
+00:35:18,643 --> 00:35:28,003
+Do you remember how to solve this equation? How to find the roots of a cubic equation, let's say this way, right?
+
+247
+00:35:31,507 --> 00:35:34,507
+Bu konuda bir konuda bir konuda,
+
+248
+00:35:34,507 --> 00:35:38,507
+bir konuda yaratıcı bir konuda,
+
+249
+00:35:38,507 --> 00:35:58,987
+bir konuda,
+
+250
+00:35:59,923 --> 00:36:06,324
+So within these possibilities, you have to look for the factorization, right?
+
+251
+00:36:08,623 --> 00:36:17,443
+Look at the theorem 7.1. Let's read the statement of the theorem.
+
+252
+00:36:18,104 --> 00:36:25,703
+Let A be an n by n matrix, then the eigenvalues of A are the roots of the characteristic polynomial of A.
+
+253
+00:36:26,195 --> 00:36:34,815
+So, I don't care the proof of this theorem, but it's enough for you to know the statement of the theorem, right?
+
+254
+00:36:35,215 --> 00:36:43,195
+The roots of the characteristic polynomials give you the eigenvalues of your matrix, right?
+
+255
+00:36:43,235 --> 00:36:44,996
+This is what we need to know.
+
+256
+00:36:47,155 --> 00:36:47,935
+All right.
+
+257
+00:36:49,844 --> 00:36:56,664
+So, for example, example 12 is actually the continuation of the example, the preceding example, right?
+
+258
+00:36:56,744 --> 00:37:09,003
+Preceding example, in the preceding example 11, we have just obtained the characteristic polynomial of our matrix, right?
+
+259
+00:37:09,623 --> 00:37:12,003
+Nobody said to find the...
+
+260
+00:37:12,788 --> 00:37:15,868
+eigenvalues ve eigenvektörs de bu metriks.
+
+261
+00:37:15,967 --> 00:37:24,007
+But, the next example, I mean, example 12, is about finding eigenvalues ve eigenvektörs de bu metriks.
+
+262
+00:37:24,488 --> 00:37:31,587
+Since, characteristic polynomial is already obtained, so we have to do in the next example,
+
+263
+00:37:32,587 --> 00:37:35,307
+what to solve this?
+
+264
+00:37:37,327 --> 00:37:39,387
+Cubic polynomial, right?
+
+265
+00:37:39,795 --> 00:37:46,416
+As I said, these are the common divisor of this constant term, 6, right?
+
+266
+00:37:46,416 --> 00:37:51,275
+You can immediately realize that 1 satisfies this equation.
+
+267
+00:37:51,815 --> 00:38:07,435
+If you replace lambda by 1, you will see that 1 to the power 3 minus 6 times 1 square plus 11 times 1 minus 6 is 0.
+
+268
+00:38:07,891 --> 00:38:19,751
+Bu yüzden lambda 1'a root, or in another word, this is an eigenvalue, one of the eigenvalues.
+
+269
+00:38:19,751 --> 00:38:22,791
+You can also represent this in the following way.
+
+270
+00:38:22,911 --> 00:38:33,192
+If one satisfies this equation, that means this cubic, you can divide this cubic polynomial.
+
+271
+00:38:37,588 --> 00:38:41,827
+Bu, let me write here.
+
+272
+00:38:43,427 --> 00:38:45,568
+I don't have enough space here.
+
+273
+00:38:46,568 --> 00:38:47,007
+So,
+
+274
+00:38:50,867 --> 00:39:07,708
+Let me write here, lambda to the power 3, minus 6 times lambda square, plus 11 times lambda, lambda minus 6.
+
+275
+00:39:07,708 --> 00:39:16,428
+You can consider this division algorithm, right? Since lambda is a root, lambda 1 is a root.
+
+276
+00:39:18,036 --> 00:39:25,195
+So, I suppose you know how to divide this cubic polynomial by this lambda minus 1, right?
+
+277
+00:39:25,835 --> 00:39:28,295
+This is called the division algorithm, right?
+
+278
+00:39:30,215 --> 00:39:31,936
+It is something like this.
+
+279
+00:39:33,315 --> 00:39:41,275
+When you consider this division, you write 3 here, and this is the rest you find, right?
+
+280
+00:39:41,416 --> 00:39:42,115
+So, 7.
+
+281
+00:39:42,708 --> 00:39:47,568
+Divided by 2 means 3 plus 1 over 2, right?
+
+282
+00:39:53,619 --> 00:40:01,519
+So, you have to, right, more or less, roughly speaking, you have to follow the same thing, right?
+
+283
+00:40:01,900 --> 00:40:14,759
+You will obtain a polynomial here, another polynomial here, I don't care for now, and you will have a rest here, right?
+
+284
+00:40:21,556 --> 00:40:35,076
+It's not difficult, right? This will be zero. This will be lambda squared minus five times lambda plus six. This is an easier task, right?
+
+285
+00:40:36,456 --> 00:40:45,016
+Let me show you just for one time how to consider the division algorithm between polynomials, right?
+
+286
+00:40:49,012 --> 00:40:49,372
+Ok.
+
+287
+00:40:53,876 --> 00:40:56,536
+Lambda to the power 3.
+
+288
+00:41:06,195 --> 00:41:12,576
+Let me just check if I wrote the polynomial, cubic polynomial in the correct way.
+
+289
+00:41:12,576 --> 00:41:23,195
+Minus 6 times lambda square, okay, plus 11 times lambda minus 6, all right.
+
+290
+00:41:24,456 --> 00:41:26,284
+So you have to...
+
+291
+00:41:27,155 --> 00:41:34,275
+Only if you multiply lambda by lambda square, you will obtain lambda to the power 3, right? This is easy.
+
+292
+00:41:35,795 --> 00:41:50,555
+And if you, you know how to distribute, right? If you multiply minus 1 by lambda square and right here, and then sum, changing the, let me see.
+
+293
+00:41:55,315 --> 00:41:56,996
+Power 3 is plus, right?
+
+294
+00:41:57,415 --> 00:42:02,735
+So I'm going to change the sign, and then consider sum.
+
+295
+00:42:03,835 --> 00:42:11,476
+That means you can cancel lambda to the power 3, with minus lambda to the power 3, right?
+
+296
+00:42:11,476 --> 00:42:20,556
+The same with the term containing lambda squared, and you stay with 11 times lambda, minus 6.
+
+297
+00:42:22,675 --> 00:42:29,536
+Only if you multiply lambda by 11, you will obtain itself, right?
+
+298
+00:42:32,016 --> 00:42:40,395
+Here is the sign is positive, of course. I change the sign and then consider their sum, okay?
+
+299
+00:42:43,275 --> 00:42:49,324
+Minus 6 plus 11 gives you 5. So you have to...
+
+300
+00:42:50,579 --> 00:42:54,179
+I think I failed to write.
+
+301
+00:42:57,940 --> 00:43:00,139
+It is something strange here, right?
+
+302
+00:43:01,719 --> 00:43:04,320
+Let me check my computation.
+
+303
+00:43:05,079 --> 00:43:07,420
+If you multiply lambda by lambda square,
+
+304
+00:43:08,900 --> 00:43:09,400
+okay,
+
+305
+00:43:10,400 --> 00:43:12,139
+okay, here is the
+
+306
+00:43:12,139 --> 00:43:13,880
+mistake.
+
+307
+00:43:19,603 --> 00:43:25,143
+Minus 6 times lambda square plus lambda square gives you minus 5.
+
+308
+00:43:29,523 --> 00:43:35,843
+Minus 5 times lambda square plus 11 lambda minus 6, right?
+
+309
+00:43:36,743 --> 00:43:50,003
+So, you have to multiply lambda by minus 5 times lambda to obtain minus 5 times lambda to the power 2, right?
+
+310
+00:43:54,291 --> 00:43:58,412
+Okay? So, change the sign and then sum.
+
+311
+00:44:02,516 --> 00:44:29,476
+Okay, so we stay with 6 times lambda minus 6. So you have to multiply lambda by 6 to obtain 6 lambda here and here, right? If you change signs and then sum, you obtain 0L as your rest, right?
+
+312
+00:44:31,731 --> 00:44:33,811
+Bu, bu, bu, 0.
+
+313
+00:44:58,643 --> 00:45:04,603
+Right? This is the R of Lambda, which is 0.
+
+314
+00:45:04,603 --> 00:45:05,355
+So...
+
+315
+00:45:13,172 --> 00:45:25,371
+Q'lambda means, lambda square, minus 5 lambda,
+
+316
+00:45:32,884 --> 00:45:33,143
+Right?
+
+317
+00:45:44,532 --> 00:45:47,532
+Bu, bu, bir de.
+
+318
+00:45:57,556 --> 00:45:59,936
+2-3, do you think these are roots or not?
+
+319
+00:46:02,836 --> 00:46:03,356
+4-3, do you think these are roots or not?
+
+320
+00:46:06,867 --> 00:46:16,708
+I think we have to put minus sign here, right? No, plus sign, excuse me. Plus sign.
+
+321
+00:46:30,996 --> 00:46:58,655
+Bu, bu
+
+322
+00:46:58,655 --> 00:46:59,615
+Test exam.
+
+323
+00:47:04,403 --> 00:47:13,584
+Alright, these are the roots, or in another word, these are our eigenvalues.
+
+324
+00:47:14,064 --> 00:47:23,923
+Now the next step, as I said several times, the next step is to determine the corresponding eigenvector for each eigenvalue, right?
+
+325
+00:47:23,923 --> 00:47:27,664
+So you start with lambda 1 is 1.
+
+326
+00:47:28,824 --> 00:47:29,923
+After you obtain...
+
+327
+00:47:30,804 --> 00:47:38,824
+After you determine the corresponding eigenvector, you will repeat the same procedure for the other eigenvalue, which is 2.
+
+328
+00:47:39,983 --> 00:47:47,664
+Right? And you will repeat the same procedure once again for the other, for the last eigenvalue, which is 3. Right?
+
+329
+00:47:58,804 --> 00:48:15,844
+A, this matrix, right, times eigenvalue, eigenvektör x, equal to zero, right? Here, lambda is one, okay? That's why we are working with this matrix, okay?
+
+330
+00:48:20,884 --> 00:48:31,464
+So, you have to solve this equation, matris equation, right?
+
+331
+00:48:32,664 --> 00:48:39,224
+Which is easy to solve because this gives you a homogenous system, right?
+
+332
+00:48:39,224 --> 00:48:41,224
+Whose solution is...
+
+333
+00:48:44,692 --> 00:48:46,692
+Bu şekilde, bu şekilde,
+
+334
+00:48:46,692 --> 00:48:48,692
+I understand what?
+
+335
+00:48:48,692 --> 00:48:52,692
+I understand from this that x3 is r,
+
+336
+00:48:52,692 --> 00:48:56,692
+which is a non-zero real number,
+
+337
+00:48:56,692 --> 00:49:02,692
+x2 is x3,
+
+338
+00:49:02,692 --> 00:49:04,692
+half of x3,
+
+339
+00:49:04,692 --> 00:49:08,692
+and x1 is
+
+340
+00:49:08,692 --> 00:49:10,668
+minus
+
+341
+00:49:11,411 --> 00:49:12,331
+X3,
+
+342
+00:49:12,811 --> 00:49:16,331
+divided by 2, right?
+
+343
+00:49:16,471 --> 00:49:21,051
+This is the solution vector of this homogeneous system, right?
+
+344
+00:49:21,171 --> 00:49:30,391
+So that means this is the corresponding eigenvector to lambda equal 1, right?
+
+345
+00:49:30,471 --> 00:49:32,611
+For any non-zero real number,
+
+346
+00:49:34,331 --> 00:49:36,711
+you will obtain a corresponding eigenvector.
+
+347
+00:49:36,831 --> 00:49:37,931
+So this is one of them.
+
+348
+00:49:38,291 --> 00:49:40,151
+Just one of them, right?
+
+349
+00:49:40,411 --> 00:49:48,771
+If you take R equal to, then you will obtain just a representative, let's say this way, right?
+
+350
+00:49:48,891 --> 00:49:57,711
+This is just a representative of those eigenvektörs associated with lambda 1, which is equal to 1, right?
+
+351
+00:49:57,951 --> 00:50:05,131
+As I said, you have to repeat the same procedure for the other two eigenvalues, which are 2 and 3.
+
+352
+00:50:06,291 --> 00:50:13,771
+Procedure will not change, right? You have to follow the same computations for different values.
+
+353
+00:50:15,571 --> 00:50:21,511
+Okay, I think I will offer a break, 10-minute break here. Do you have any question?
+
+354
+00:50:22,971 --> 00:50:27,651
+Any question regarding eigenvalues and associated eigenvectors?
+
+355
+00:50:30,483 --> 00:50:36,943
+No question, as always. Okay, stop here and see you 10 minutes later, right?
+
+356
+01:01:35,731 --> 01:01:37,731
+Evet, devam edelim.
+
+357
+01:01:37,731 --> 01:01:39,731
+Ayrıvalyuz, let me share the screen.
+
+358
+01:01:46,931 --> 01:01:47,231
+Ok.
+
+359
+01:01:55,027 --> 01:02:22,867
+Okay, let us continue with the same example, right? As I said, we will repeat the same procedure for the other argument, right? We have already used, and now it's time to use the other argument, which is two, right? So you have to, you have to,
+
+360
+01:02:23,987 --> 01:02:30,907
+Consider this, right, which means, let me write here, lambda times identity minus A.
+
+361
+01:02:31,907 --> 01:02:37,567
+But you have to replace lambda here by 2, right?
+
+362
+01:02:37,567 --> 01:02:45,107
+This matrix times this vector x is equal to 0, right?
+
+363
+01:02:47,827 --> 01:02:57,648
+Of course, the x here is a tree vector, and the matrix lambda times identity minus a is a tree by tree square matrix, right?
+
+364
+01:02:57,708 --> 01:03:03,008
+The zero on the right-hand side means zero vector, right?
+
+365
+01:03:03,668 --> 01:03:15,288
+So we again, we will again have a homogeneous system, this one, and try to solve this.
+
+366
+01:03:15,731 --> 01:03:26,923
+Homogeneous system, right? To find the corresponding eigenvektör, right? So we are...
+
+367
+01:03:30,420 --> 01:03:32,200
+Looking for this vector here.
+
+368
+01:03:33,700 --> 01:03:34,660
+Such that,
+
+369
+01:03:37,300 --> 01:03:42,340
+Lambda A times X is equal to 2 times X, right?
+
+370
+01:03:43,240 --> 01:03:53,440
+Which is equivalent to say that 2 times identity minus A times X is 0, right?
+
+371
+01:03:54,700 --> 01:03:55,040
+So,
+
+372
+01:03:58,099 --> 01:04:21,860
+Let me write the solution, right? The solution here, I don't want to make the calculation to find the solution, because we have already seen how to solve a homogenous system before, right? So I will just use the solution vector here. So x3,
+
+373
+01:04:22,387 --> 01:04:45,987
+X3, a free variable, right? That's why I will put R here. And X2, you will find in terms of X3. X3 divided by 4. And then X1 is X3 divided by 2. And then you change the sign.
+
+374
+01:04:48,019 --> 01:04:50,139
+This is the solution vector, right?
+
+375
+01:04:52,480 --> 01:04:59,279
+I don't want to show you how to find this, because we have done it several times, right?
+
+376
+01:04:59,480 --> 01:05:01,079
+So this is the solution vector.
+
+377
+01:05:02,400 --> 01:05:07,239
+R here is a real number, but non-zero, right?
+
+378
+01:05:07,719 --> 01:05:13,559
+You have to pick non-zero R to find the typical eigenvector corresponding to
+
+379
+01:05:14,612 --> 01:05:31,432
+The eigenvalue, so for example, if you attribute 4 to R, this is the vector, typical eigenvector, that you will associate with this eigenvalue here, right?
+
+380
+01:05:34,072 --> 01:05:40,132
+Alright, so as I said, we have still one more eigenvalue, so you have to
+
+381
+01:05:40,563 --> 01:05:59,743
+You have to follow once again the same procedure, which means solving this homogeneous linear system, right, to obtain the corresponding or associated eigenvector to the eigenvalue of 3, right?
+
+382
+01:06:01,583 --> 01:06:02,344
+Okay.
+
+383
+01:06:06,324 --> 01:06:08,864
+This is the solution here. X3.
+
+384
+01:06:11,364 --> 01:06:21,983
+So, this is the eigenvector corresponding to this eigenvalue, right? R is a non-zero real number here.
+
+385
+01:06:23,123 --> 01:06:32,543
+If you attribute 4, for example, if you take R as being 4, this is a typical eigenvector that you will obtain.
+
+386
+01:06:33,907 --> 01:06:35,627
+Bu sadece bir de.
+
+387
+01:06:35,688 --> 01:06:37,167
+İkinci bir de.
+
+388
+01:06:37,167 --> 01:06:38,228
+İkinci eigenvektörs.
+
+389
+01:06:38,587 --> 01:06:40,248
+Correspondi tov.
+
+390
+01:06:40,748 --> 01:06:41,127
+3.
+
+391
+01:06:41,607 --> 01:06:43,268
+But all of them.
+
+392
+01:06:43,567 --> 01:06:44,748
+In the same.
+
+393
+01:06:45,248 --> 01:06:46,047
+Supporting line.
+
+394
+01:06:46,407 --> 01:06:46,607
+Okay.
+
+395
+01:06:47,927 --> 01:06:48,827
+Any questions?
+
+396
+01:06:52,347 --> 01:06:52,827
+Do you have.
+
+397
+01:07:01,715 --> 01:07:06,075
+Any question regarding eigenvalues and how to compute their corresponding eigenvektors?
+
+398
+01:07:08,455 --> 01:07:09,995
+No question, okay.
+
+399
+01:07:12,275 --> 01:07:17,155
+I'm almost finished, finishing this part.
+
+400
+01:07:17,375 --> 01:07:19,655
+We have one more example.
+
+401
+01:07:21,255 --> 01:07:28,955
+Now we are asked to compute the eigenvalues and the associated eigenvektors of these matrix here.
+
+402
+01:07:30,452 --> 01:07:46,732
+Right? You write immediately the characteristic polynomial, which is this one, this cubic, polynomial again, once again, and then you have to find the roots to determine the eigenvalues, of course, right?
+
+403
+01:07:48,072 --> 01:07:55,692
+You look at this constant term here. Lambda 3 is one of the roots of this polynomial, which means...
+
+404
+01:07:55,891 --> 01:08:23,115
+Bu, 3'e 3'
+
+405
+01:08:23,891 --> 01:08:45,391
+Another factor, right? I mean, P of lambda will be written as lambda minus three times something, another polynomial of lambda in degree two, right? Otherwise, you will not obtain a polynomial in degree three, right?
+
+406
+01:08:47,764 --> 01:09:12,764
+Okay, I think this is not a good example because one of the roads are complex numbers. So, as I said, we will not be interested in this course with complex eigenvalues, right? As we didn't consider matrices with complex entries, right? So forget about complex eigenvalues and their corresponding eigenvectors.
+
+407
+01:09:13,524 --> 01:09:15,443
+So, I will skip this example 13.
+
+408
+01:09:16,824 --> 01:09:17,923
+Let me see.
+
+409
+01:09:18,684 --> 01:09:22,184
+But it's good to know that we also have this version of eigenvalues, right?
+
+410
+01:09:22,344 --> 01:09:23,283
+Complex version.
+
+411
+01:09:24,783 --> 01:09:25,184
+Okay.
+
+412
+01:09:28,244 --> 01:09:30,104
+This is a linear operator.
+
+413
+01:09:30,404 --> 01:09:33,164
+We didn't see linear operator, linear transformation.
+
+414
+01:09:33,164 --> 01:09:35,244
+So, I will skip this.
+
+415
+01:09:37,011 --> 01:09:43,951
+All right, this is the procedure for finding the eigenvalues and associated eigenvektors of a matrix, square matrix.
+
+416
+01:09:44,692 --> 01:09:50,451
+Right, the step, the first step starts with the determining the roots of the characteristic polynomial.
+
+417
+01:09:50,652 --> 01:09:57,611
+So you have to write immediately the characteristic polynomial of your matrix A, right?
+
+418
+01:09:57,611 --> 01:10:01,451
+The roots of this polynomial will...
+
+419
+01:10:28,340 --> 01:10:52,811
+Bu, bu
+
+420
+01:10:54,387 --> 01:11:00,488
+So forget about these kind of exercises, because they use linear transformation, right?
+
+421
+01:11:01,807 --> 01:11:04,188
+Nothing about eigenvalues of linear transformation.
+
+422
+01:11:04,628 --> 01:11:07,887
+We are just interested in eigenvalues of matrices, right?
+
+423
+01:11:09,968 --> 01:11:10,548
+All right.
+
+424
+01:11:12,288 --> 01:11:14,887
+Okay, this one you can also ignore.
+
+425
+01:11:17,887 --> 01:11:18,868
+What else?
+
+426
+01:11:23,188 --> 01:11:26,847
+Evet, bu sonuçta, yang ikinimde bahsedeceğim.
+
+427
+01:11:27,608 --> 01:11:30,268
+Kehli-Hamilton Theorem, bu çok önemli,
+
+428
+01:11:31,268 --> 01:11:35,708
+Theorem, regarding eigenvalues, ve eigenvalues ve eigenvektörs.
+
+429
+01:11:36,467 --> 01:11:38,387
+The theorem states that,
+
+430
+01:11:39,148 --> 01:11:42,087
+let me enlarge the screen,
+
+431
+01:11:43,307 --> 01:11:45,427
+The Kehli-Hamilton Theorem states that,
+
+432
+01:11:46,420 --> 01:11:52,920
+A matrix satisfies its characteristic equation. Very clear theorem, right? The statement is very clear.
+
+433
+01:11:55,319 --> 01:11:59,800
+It's roughly speaking. It says that any matrix can be considered as a root of its characteristic
+
+434
+01:11:59,800 --> 01:12:10,800
+polynomial. That's the Kylie-Hamilton theorem, right? In another word, if A is an n by n matrix,
+
+435
+01:12:11,667 --> 01:12:15,127
+Bu, bu, P'lambda'ın,
+
+436
+01:12:15,127 --> 01:12:20,307
+bu, A'ı,
+
+437
+01:12:20,307 --> 01:12:37,003
+bu,
+
+438
+01:12:37,939 --> 01:12:44,959
+Bu kitabı, bu kitabı, bu kitabı, bu kitabı, bu kitabı, let's say, ileride algembar.
+
+439
+01:13:01,872 --> 01:13:07,932
+Any matrix, square matrix, is a root of its characteristic polynomial, right?
+
+440
+01:13:08,412 --> 01:13:11,032
+This is the Kiley-Hamilton theorem.
+
+441
+01:13:11,192 --> 01:13:14,792
+Look at one of the application, exercise 31.
+
+442
+01:13:15,912 --> 01:13:20,212
+Suppose A, B, and N, Y, and matrix whose characteristic polynomial is this one, right?
+
+443
+01:13:20,692 --> 01:13:22,731
+Suppose that your matrix is non-single.
+
+444
+01:13:23,311 --> 01:13:26,792
+This is a special choice, right?
+
+445
+01:13:27,199 --> 01:13:40,199
+Kiley-Hamilton Theorem, bu kriteri değil. Biz de A'a nonsingular bir n by n. Bu ne kadar bir metriksiyonu. Bu ne kadar bir metriksiyonu. Bu ne kadar bir metriksiyonu. Bu ne kadar bir metriksiyonu.
+
+446
+01:13:40,199 --> 01:13:45,675
+Bu ne kadar bir metriksiyonu. Bu ne kadar bir metriksiyonu.
+
+447
+01:13:45,975 --> 01:13:49,975
+bu,
+
+448
+01:13:45,811 --> 01:14:11,787
+Bu, mesela, eğer, bu metriksin, bu metriksin, bu metriksin, bu metriksin, bu metriksin, bu metriksin, bu metriksin, bu metriksin, bu metriksin, bu metriksin, bu metriksin, bu metriksin, bu metriksin, bu metriksin, bu metriksin, bu metriksin, bu metriksin, bu metriksin, bu metriksin, bu metriksin, bu metriksin, bu metriksin, bu metriksin, bu metriksin, bu metriksin, bu metriksin, bu metriksin, bu metriksin, bu metriksin, bu metriksin, bu metriksin, bu metriksin, bu metriksin, bu metriksin, bu metriksin, bu metriksin,
+
+449
+01:14:11,956 --> 01:14:38,444
+Bu, bu
+
+450
+01:14:40,212 --> 01:14:43,132
+Bu, bu metriksin birinçliğine görebilirsiniz.
+
+451
+01:14:43,132 --> 01:15:01,412
+Bu metriksin birinçliğine görebilirsiniz.
+
+452
+01:15:02,963 --> 01:15:08,403
+Ama burada dikkat edin, çünkü bu koncenten, AN,
+
+453
+01:15:08,403 --> 01:15:13,604
+if it is zero, you will have trouble, right?
+
+454
+01:15:13,644 --> 01:15:14,264
+It is clear.
+
+455
+01:15:15,403 --> 01:15:16,363
+You have to be careful.
+
+456
+01:15:18,644 --> 01:15:22,403
+All right, I think we are done, right?
+
+457
+01:15:22,543 --> 01:15:28,083
+This was the last thing that I wanted to say.
+
+458
+01:15:29,427 --> 01:15:31,967
+ve bu konuları çalışmamızı tamamladık.
+
+459
+01:15:32,768 --> 01:15:34,327
+Sizin bir soru var mı?
+
+460
+01:15:38,260 --> 01:15:46,260
+Eğer bir soru yok mu yoksa, ben de bugün bu soruyu stoppacağım. Çünkü ben gerçekten iyi değilim.
+
+461
+01:15:47,260 --> 01:15:55,120
+Var mı sorusu olan arkadaşlar? [kişisel bilgi] Özdeğerleri, özvektörleri de anlattık size.
+
+462
+01:15:56,239 --> 01:16:03,720
+Bununla ilgili biraz soru çözmeniz gerekiyor. Tamam mı? Kitabınızdaki soruları çözmeniz bence kâfi.
+
+463
+01:16:04,948 --> 01:16:12,708
+Var mı sorusu olan? Tekrarlamamı istediğiniz bir yer varsa tekrarlayabiliriz. Kaç kişi var sınıfta? 13 kişi gözüküyor.
+
+464
+01:16:15,188 --> 01:16:42,048
+Mikrofonunuzu açıp konuşabilirsiniz arkadaşlar. Dönemin son dersi, özdeğer, özvektörleri anlattık. Bir matrisin özdeğeri, özvektörü. Lineer dönüşümler için de yapılabilir bu. Ama biz bununla ilgilenmiyoruz. Artı kompleks özdeğerlerle de ilgilenmiyoruz. Nasıl ki real değerli kompleks matrisleri almadık şimdiye kadar. Burada da aynı şekilde ama kompleks versiyonu olduğunu da bilin. Özdeğer denilen şeyin kompleks versiyonu da var.
+
+465
+01:16:54,131 --> 01:16:58,231
+[kişisel bilgi]
+
+466
+01:16:59,451 --> 01:17:07,252
+Var mı sorusu olan arkadaşlar? Yani yaptığım şey kabaca aynı. Ne kadar dikkatinizi verdiniz bilemiyorum ama olmadı, banttan izlersiniz.
+
+467
+01:17:08,471 --> 01:17:14,051
+Yani özdeğer dediği şey, matrisin karakteristik polinomu, karakteristik denklemi denen şeyin ne olduğunu biliyorsan.
+
+468
+01:17:14,811 --> 01:17:19,611
+İşte o denklem lambda cinsinden bir polinomdur. Derecesi 2 olur, 3 olur, 5 olur, önemli değil.
+
+469
+01:17:20,148 --> 01:17:40,247
+İşte o denklemin karakteristik denklem veya karakteristik polinom dediğimiz polinomun köklerinden matrisin özdeğeri diyoruz. Tamam mı? Özdeğerleri buldun. Peki özdeğerlere karşılık gelen özvektörler var. Tanımdan özvektör dediğin şey bir kere sıfır olmaması gerekir. Sıfır olmaması gerekir. Peki bir özdeğere karşılık gelen özvektörü biz nasıl bulacağız?
+
+470
+01:17:41,332 --> 01:18:04,852
+Onu da gösterdik. Aslında hep aynı şey. Ne kadar özdeğerin varsa o kadar tekrarlıyorsun aynı şeyi. Yani her özdeğer için farklı bir şey yapmıyorsun. Bütün özdeğerler için aynı şeyi yapıyorsun. O yaptığın şey de aslında iki adımdan oluşan bir şey değil mi? Önce karakteristik polinomu yaz, köklerini bul, bunlar sana özdeğerleri verir. Her bir özdeğere karşılık gelen özvektörü nasıl bulursun? İşte AX eşittir, Lambda X.
+
+471
+01:18:05,395 --> 01:18:10,956
+denklem sistemi, ki bu seni homojen bir lineer sisteme götürür, onun çözümüne bakarsın.
+
+472
+01:18:12,055 --> 01:18:18,315
+Değil mi? Orada o bulacağın non-trivial çözüm, aldığın özdeğine karşılık gelen özvektördür.
+
+473
+01:18:20,315 --> 01:18:24,495
+Evet, sorusu olan yoksa ben dersi burada bitireceğim arkadaşlar, müsaadenizle.
+
+474
+01:18:26,575 --> 01:18:27,435
+Var mı sorusu olan?
+
+475
+01:18:29,775 --> 01:18:32,255
+Mesajlarımıza bakalım. Mesaj da yok sanırım.
+
+476
+01:18:34,899 --> 01:18:59,639
+Peki arkadaşlar, hepinize sınavda şimdiden başarılar dilerim. Sınav tarihimiz de belli oldu, matematik bölümü sayfasında ilan edildi. 17 Ocak, pazartesi diye biliyorum. Saati de öğleden sonra 3'tü diye hatırlıyorum. Tamam mı? Siz gene de matematik bölümü sayfasına bakın. Henüz bilgilendirme yapılmadıysa sizin bölüm tarafından. Yani bugün ayın kaçı? Dördü.
+
+477
+01:19:00,500 --> 01:19:27,760
+İşte haftaya değil, ondan sonraki hafta desek, iki haftanız var, en fazla iki hafta. Umarım bu iki hafta iyi değerlendirip sınava iyi bir şekilde hazırlanırsınız. Gene 20 soruluk bir test sınavı olacaksınız. Tamam mı? İşte en az bir 90 dakika, 100 dakika verilir size. Evet, sorusu olan yok anladım kadarıyla. Ben müsaadenizle dersi burada bitirmek istiyorum. Hepinize şimdiden final sınavında iyi. Başarılar dilerim, iyi seneler. Hoşçakalın.

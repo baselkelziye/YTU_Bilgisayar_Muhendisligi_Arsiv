@@ -1,0 +1,2575 @@
+1
+00:00:51,667 --> 00:00:52,926
+Evet, sorusu olan var mı arkadaşlar?
+
+2
+00:00:57,076 --> 00:01:03,276
+Kofaktör, minör bunlar anlaşıldı mı acaba? Anlamadığınız anla tekrar edebilirim.
+
+3
+00:01:03,276 --> 00:01:05,956
+I can repeat if you think you do not understand.
+
+4
+00:01:15,956 --> 00:01:28,995
+We have an interesting sign table here. As you see, the cofactor and the difference between the cofactor and the minor of any entry is just a sign, right?
+
+5
+00:01:30,694 --> 00:01:40,855
+So, why don't you distribute signs as in this table you see, as checkerboard pattern, right?
+
+6
+00:01:46,322 --> 00:02:11,804
+Look at this table of sine. If this is, this is the case of a 3x3 matrix, of course, right? It doesn't matter. If it is 4x4, you have to distribute the sine in the same way, right? So this is independent from the order of your score matrix, right? You distribute the sine, as in this table here, and then write the determinant of
+
+7
+00:02:12,658 --> 00:02:16,459
+sub-matrisis to find the cofactor, right?
+
+8
+00:02:19,986 --> 00:02:46,955
+Okay, let me see what we have here. Theorem 3.10. This is an interesting theorem. This is an interesting result, which says if A is a square matrix of order n, then it's determinant. Look at this formula, very nice formula that gives the expansion of determinant along one of the rows, right? You are free to...
+
+9
+00:02:47,252 --> 00:03:15,211
+İçin bir kere, bu kere, bu kere, bu kere, bu kere, bu kere, bu kere, bu kere, bu kere, bu kere, bu kere, bu kere, bu kere, bu kere, bu kere, bu kere, bu kere, bu kere, bu kere, bu kere, bu kere, bu kere, bu kere, bu kere, bu kere, bu kere, bu kere, bu kere, bu kere, bu kere, bu kere, bu kere, bu kere, bu kere, bu kere, bu kere, bu kere, bu kere, bu kere, bu kere, bu kere, bu kere, bu kere, bu kere, bu kere, bu kere, bu kere, bu kere, bu kere, bu kere, bu kere, bu kere, bu kere, bu kere, bu kere,
+
+10
+00:03:16,084 --> 00:03:23,603
+ve ilk bölüm, look at this, I1, I2, right?
+
+11
+00:03:26,323 --> 00:03:27,242
+I, N.
+
+12
+00:03:27,603 --> 00:03:34,002
+So you see the row, let me write this way.
+
+13
+00:03:43,378 --> 00:04:09,299
+So, what is the cofactor of this entry? This one, look at this. And by definition, this is minus one to the power i plus one. This power might be odd or even number. It depends on i, right? If i is an odd number,
+
+14
+00:04:11,572 --> 00:04:22,531
+i plus 1 will be an even number, right? If it is even, then i plus 1 will be an odd number, and consequently, you will have a negative sign.
+
+15
+00:04:23,252 --> 00:04:32,651
+Whenever this happens, right? And minor, you have to put minor of the same entry, which is determinant of the corresponding submetrics, right?
+
+16
+00:04:33,872 --> 00:04:35,052
+I suppose you know.
+
+17
+00:04:35,507 --> 00:04:48,346
+What I mean when I say submetrics, right? Submetrics you obtain by deleting the row i and column j, right?
+
+18
+00:04:49,346 --> 00:05:00,586
+So in this formula, you see always, you use what? Essentially, you use the entries of the same line, right?
+
+19
+00:05:00,992 --> 00:05:28,531
+You multiply each entry in a fixed row by its corresponding cofactor, right? And then sum, all of them, to find the determinant. This is the expansion of determinant along one of the rows. Alternatively, you can expand the determinant, expand of, you can give expansion of determinant along one of the columns of your matrix, right?
+
+20
+00:05:30,196 --> 00:05:33,795
+Look at the alternative version, alternative formula we have here.
+
+21
+00:05:36,196 --> 00:05:47,795
+Right? This time you use, let me write the entries. Let me fix now the column J, right? Column J.
+
+22
+00:05:52,819 --> 00:06:18,795
+So you have what? 1j here, right? The first entry of this fixed column. And the next entry will be, of course, i2j, right? And the last entry will be i sub n j, right? I'm talking about this fixed column, right? So you...
+
+23
+00:06:18,836 --> 00:06:40,336
+Take each entry of this column, fixed column, multiply by its own cofactor, do this for each entry, in the sequence, right, and sum all the numbers, resulting numbers, you obtain, right? This way you will obtain the determinant, but using
+
+24
+00:06:40,819 --> 00:06:55,639
+Column instead of row, okay? That's why it says expansion of determinant along one of the columns. So it doesn't matter if you expand the determinant based on a row or based on a column, right?
+
+25
+00:06:57,079 --> 00:07:06,480
+But you cannot apply something, let's say, mixed here, right? I mean, for example, if you fix row i,
+
+26
+00:07:07,764 --> 00:07:11,764
+bu bölümde, bu bölümde,
+
+27
+00:07:11,764 --> 00:07:15,764
+bu bölümde,
+
+28
+00:07:15,764 --> 00:07:17,764
+bir bölümde,
+
+29
+00:07:17,764 --> 00:07:33,764
+bu bölümde,
+
+30
+00:07:35,540 --> 00:07:42,300
+Okay, you have to expand determinant along one of the rows or along one of the columns.
+
+31
+00:07:42,300 --> 00:08:00,560
+That means whenever you fix a row or column, you base yourself on entries of your matrix in that row or in that column and then multiply each of these entries by their corresponding cofactor, right?
+
+32
+00:08:01,560 --> 00:08:02,139
+Cofactor.
+
+33
+00:08:03,636 --> 00:08:06,255
+Is it clear for everybody at this point or not?
+
+34
+00:08:09,843 --> 00:08:11,343
+Can you understand me or not?
+
+35
+00:08:16,754 --> 00:08:23,995
+I think it will be more clear in an example, right? Let us evaluate this determinant of 4x4.
+
+36
+00:08:30,483 --> 00:08:56,554
+4x4'e 4x4
+
+37
+00:08:56,562 --> 00:09:23,211
+Bu, bu, 0'e, bu, 0'e, bu, 0'e, bu, 0'e, bu, 0'e, bu, 0'e, bu, 0'e, bu, 0'e, bu, 0'e, bu, 0'e, bu, 0'e, bu, 0'e, bu, 0'e, bu, 0'e, bu, 0'e, bu, 0'e, bu, 0'e, bu, 0'e, bu, 0'e, bu, 0'e, bu, 0'e, bu, 0'e, bu, 0'e, bu, 0'e, bu, 0'e, bu, 0'e, bu, 0'e, bu, 0'e, bu, 0'e, bu, 0'e, bu, 0'e, bu, 0'e, bu, 0'e, bu, 0'e, bu, 0'e, bu, 0'e, bu, 0'e
+
+38
+00:09:23,250 --> 00:09:50,078
+Bu da bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, baz
+
+39
+00:09:50,080 --> 00:09:57,278
+You have to fix some row or some column that contains more zeros, right? If you are smart enough,
+
+40
+00:10:00,159 --> 00:10:09,519
+you should select a row or a column that contains more zeros, right? To reduce the job, okay?
+
+41
+00:10:10,798 --> 00:10:17,038
+To reduce the job. So let us evaluate this determinant, A.
+
+42
+00:10:19,988 --> 00:10:43,988
+So, this is your matrix, right? As you see, the third row has or contains two zeros or the second column also contains two zeros. So, you are free to work with the third row or second column. It doesn't matter, right? Look at the explanation here.
+
+43
+00:11:13,778 --> 00:11:15,558
+That row or that column, right?
+
+44
+00:11:16,119 --> 00:11:24,639
+Always the row or column that contains the largest number of zeros you have to select to reduce the job, right?
+
+45
+00:11:24,958 --> 00:11:29,399
+Or to follow the optimal course of action as your book says here, right?
+
+46
+00:11:30,798 --> 00:11:35,698
+Why? Because in that case, the cofactors, look at this.
+
+47
+00:11:36,148 --> 00:11:42,248
+Çünkü, in that case, the cofactors of those entries, which are zero, do not have to be evaluated.
+
+48
+00:11:42,248 --> 00:11:56,467
+Because, I don't know if it is clear for you, but it says, look at this, it doesn't matter the cofactor you have to evaluate here, right?
+
+49
+00:11:56,648 --> 00:11:59,847
+i plus j here as the power of minus one.
+
+50
+00:12:00,288 --> 00:12:02,868
+Since you are multiplying by zero,
+
+51
+00:12:03,379 --> 00:12:08,240
+So you don't need to be worried about this determinant together with its sign.
+
+52
+00:12:10,538 --> 00:12:14,980
+Namely, the cofactor of zero, right? Cofactor of zero.
+
+53
+00:12:15,759 --> 00:12:21,600
+If you multiply by zero at the end, so it doesn't matter. You don't have to evaluate this cofactor.
+
+54
+00:12:22,318 --> 00:12:26,960
+Whenever you multiply by zero, that's what's being said here, right?
+
+55
+00:12:27,918 --> 00:12:28,538
+Look at this.
+
+56
+00:12:31,187 --> 00:12:49,986
+So, expanding along the third row, if you fix the third row, again, it's not mandatory, right? You can also work with the second column, because in this column also you have exactly two zeros, so it doesn't matter, no difference, no difference.
+
+57
+00:12:51,908 --> 00:12:52,307
+All right.
+
+58
+00:12:54,706 --> 00:12:56,626
+So, let us follow.
+
+59
+00:12:57,652 --> 00:12:59,652
+Bu, and fix the third row,
+
+60
+00:13:01,652 --> 00:13:03,371
+to evaluate the determinant.
+
+61
+00:13:04,072 --> 00:13:04,991
+Look at this.
+
+62
+00:13:05,471 --> 00:13:09,572
+According to the checkboard pattern, you distribute to sign, right?
+
+63
+00:13:09,851 --> 00:13:10,831
+You distribute to sign.
+
+64
+00:13:11,231 --> 00:13:19,491
+You start with plus, continue with negative in the first row, plus negative here, plus, excuse me,
+
+65
+00:13:21,892 --> 00:13:24,652
+negative, plus,
+
+66
+00:13:25,490 --> 00:13:31,370
+These signs are signs of the cofactor of entries, right?
+
+67
+00:13:34,964 --> 00:13:45,764
+Look at this, plus, negative, plus, negative, negative, positive, negative, positive.
+
+68
+00:13:47,524 --> 00:13:47,764
+Right?
+
+69
+00:13:50,563 --> 00:14:01,043
+So look at this, we are fixing this row, okay? The third row. Let me write this way.
+
+70
+00:14:02,355 --> 00:14:27,676
+To indicate the third row. All right. So determinant of A, according to the formula, is what? You have to start with the entries you see in this row, right? Three times, but what's the sign? What's the sign of this entry? Plus, I mean, excuse me, not the sign of entry. This sign?
+
+71
+00:14:28,082 --> 00:14:56,075
+Bu, bu
+
+72
+00:14:56,082 --> 00:15:17,003
+Determinant of the resulting submetrics, whose rows respectively are 2, minus 3, 4, this is the first row, 2, 1, 3, 0, minus 2, and 3, right?
+
+73
+00:15:19,123 --> 00:15:22,802
+Good. And then you continue now with the next entry.
+
+74
+00:15:23,442 --> 00:15:39,682
+Zero, but what is the sign of its cofactor? Negative. Negative minus zero times, I don't need to evaluate its cofactor, right? What is the sign of the next entry on the same fetched row? Zero again.
+
+75
+00:15:40,802 --> 00:15:49,682
+Sign of zero now is positive, right? Zero times, I don't care, its cofactor.
+
+76
+00:15:51,316 --> 00:16:16,956
+Here, the last entry has negative sign in front of its cofactor, right? Minus 3. So, minus minus 3 times, you have to write determinant of the resulting 3 by 3 submetrics, right?
+
+77
+00:16:17,524 --> 00:16:24,124
+That means you have to delete the third row and the fourth column, right?
+
+78
+00:16:24,124 --> 00:16:40,183
+So the resulting submetrics is 1, 2, minus 3, minus 4, 2, 1, 2, 0.
+
+79
+00:16:40,606 --> 00:16:42,606
+ve 2.
+
+80
+00:16:42,606 --> 00:16:43,606
+Evet,
+
+81
+00:16:43,606 --> 00:16:50,606
+bu,
+
+82
+00:16:50,606 --> 00:16:52,606
+3x3.
+
+83
+00:16:52,606 --> 00:16:53,606
+Bu,
+
+84
+00:16:53,606 --> 00:16:54,606
+Sarrus rule,
+
+85
+00:16:54,606 --> 00:17:06,954
+bu,
+
+86
+00:17:07,092 --> 00:17:19,571
+Look at this, if you don't, if I don't do that, you see, it's not nice. Let me clear all drawings and then skip the rows.
+
+87
+00:17:22,451 --> 00:17:23,571
+Look at this.
+
+88
+00:17:28,236 --> 00:17:31,236
+bu,
+
+89
+00:17:28,084 --> 00:17:51,084
+Bu, bu
+
+90
+00:17:51,442 --> 00:18:05,844
+Evaluatiyna, determinants of 4x4 matrix, is actually reduced to the job of calculating determinants of 3x3 matrices, right? Which is easy.
+
+91
+00:18:07,103 --> 00:18:14,284
+Which is easy. So, I think everybody can calculate this 3x3 determinant and obtain this number now.
+
+92
+00:18:20,242 --> 00:18:29,123
+Okay, one more exercise, but here the book uses elementary column operation. It doesn't matter, right?
+
+93
+00:18:30,563 --> 00:18:39,682
+It doesn't matter. What's the meaning of this operation? According to our notation, this means the column four.
+
+94
+00:18:43,858 --> 00:18:59,058
+Let me consider this column, excuse me, the first column you multiply by three and then add to the fourth column, right?
+
+95
+00:19:01,460 --> 00:19:09,460
+So that means this part, the first three columns are unchanged. You can see here, right?
+
+96
+00:19:10,132 --> 00:19:14,810
+You are manipulating this column, right?
+
+97
+00:19:17,330 --> 00:19:21,730
+When you perform something like this.
+
+98
+00:19:22,172 --> 00:19:25,412
+So this is the new fourth column.
+
+99
+00:19:27,412 --> 00:19:28,152
+Okay?
+
+100
+00:19:43,188 --> 00:20:07,428
+So, what is the next step? When you face something like this, what's the next step? Of course, the third row contains 3,0, right? This is the unique row that contains the largest number of zeros, okay? So, that's why I'm going to fix third row and then expand determinant along with the third row, right?
+
+101
+00:20:08,884 --> 00:20:15,982
+So, I don't need to evaluate the cofactor of this entry, which is 0, this entry, and this entry.
+
+102
+00:20:15,982 --> 00:20:23,982
+Just one determinant of 3 by 3 is enough to finish the work, right?
+
+103
+00:20:24,163 --> 00:20:31,763
+So, let us remember the distribution of signs of cofactors of entries of this original matrix.
+
+104
+00:20:32,344 --> 00:20:33,864
+Starts with positive.
+
+105
+00:20:34,578 --> 00:20:54,338
+negative, positive, negative in the first column, but since we are fixing the third row, and since we are having only one non-zero entry, which is one here, this determinant will be one times...
+
+106
+00:20:56,500 --> 00:21:23,500
+Look at this. I said one times because its sign is positive. Why positive? Because this number is located in the first row, excuse me, third row, and first column. Third plus one gives you four. Four is an even number. Minus one to an even power gives you always positive sign, right? So you just need to write the determinant of the...
+
+107
+00:21:23,796 --> 00:21:37,134
+3x3, corresponding submetrics, right? Which means you have to delete the row and the column that contains this entry that was here, right?
+
+108
+00:21:37,134 --> 00:21:50,454
+So now you have just reduced your job of evaluating determinant of 4x4 matrix to that of
+
+109
+00:21:50,798 --> 00:22:01,720
+3x3 metriks, right? This is relatively easier. It's still easier because you have again zero in the first column or in the third row, right?
+
+110
+00:22:09,971 --> 00:22:25,131
+You can write immediately by using Saru's rule, or you can continue with some elementary, suitable elementary operations to obtain more than one zero in one of the rows or one of the columns.
+
+111
+00:22:25,290 --> 00:22:35,090
+That's what's been done here by the book, right? Look at this. It says, look at the elementary operation. You multiply the second row.
+
+112
+00:22:35,476 --> 00:23:01,996
+bir bir
+
+113
+00:23:05,140 --> 00:23:07,819
+You have to focus on this number.
+
+114
+00:23:13,010 --> 00:23:23,651
+And then consider its cofactor to write, finally, the determinant of this one, right? Original. Terminant A.
+
+115
+00:23:27,988 --> 00:23:28,548
+Alright.
+
+116
+00:23:29,248 --> 00:23:29,768
+Hocam.
+
+117
+00:23:30,387 --> 00:23:30,748
+Evet.
+
+118
+00:23:31,387 --> 00:23:44,268
+Bu 3 artı 1'deki 3 ile ilk olanı kolum olarak almıyor muyduk? Diğerlerini de öyle yapmamış mıydık? A üzeri mesela 3 artı 3 31 falan olunca kolum almıyor muyduk ikine? Burada row aldık sanki.
+
+119
+00:23:45,008 --> 00:23:46,907
+Sütünden satıra geçtim onu mu diyorsun?
+
+120
+00:23:47,208 --> 00:23:47,627
+Aynen.
+
+121
+00:23:48,567 --> 00:23:49,907
+Determinant hesaplıyor ama.
+
+122
+00:23:51,528 --> 00:23:53,347
+Determinant tam tersi oluyor yani.
+
+123
+00:23:54,132 --> 00:23:58,971
+Şimdi bak, ilk matrisimiz şöyle üstünü çizeyim. İlk bana verilen matris bu değil mi?
+
+124
+00:23:59,971 --> 00:24:00,290
+Evet.
+
+125
+00:24:00,590 --> 00:24:07,412
+İstersen kofaktörü kullanarak, bir tane satır, bir tane sütun seçerek, hiç bunlara gerek kalmadan da yapabilirsin. Bir önceki örnekte olduğu gibi.
+
+126
+00:24:08,330 --> 00:24:15,750
+Burada değişik bir yöntem deniyor. Yani burada, aslında burada da kofaktör uygulayacak ama ne yapıyor?
+
+127
+00:24:16,818 --> 00:24:25,900
+Yani direkt kofaktör uygulamadan bir satır veya bir sütunda elde edebileceği maksimum sıfır sayısına ulaşmaya çalışıyor.
+
+128
+00:24:25,900 --> 00:24:31,640
+Yani şimdi bu matrisin tam haline bakınca sen üçüncü satırda iki tane sıfır görüyorsun değil mi?
+
+129
+00:24:32,558 --> 00:24:33,000
+Evet.
+
+130
+00:24:33,640 --> 00:24:39,900
+Veya ikinci sütunda da iki tane sıfır var ama bu diyor ki şu elementer sütun işlemini yaparsak,
+
+131
+00:24:42,355 --> 00:24:50,234
+İki tane sıfırı, üç tane sıfırı yapabilirim diyor. Önce bunu yapıp sonra kofaktör uygularsam, kestir, yani yolu kısaltmış olursun.
+
+132
+00:24:52,154 --> 00:24:53,115
+Anladım hocam.
+
+133
+00:24:53,214 --> 00:24:59,894
+Kısaltmış olursun, yani ben bu hamlemi yapayım diyor önce, hemen sıfırların sayısını çoğaltayım, ondan sonrası kolay yani.
+
+134
+00:25:01,734 --> 00:25:08,776
+Formülü hesaplaması çok kolay, ne kadar sıfır o kadar iyi, ne kadar çok sıfır o kadar iyi. Şuraya geldin.
+
+135
+00:25:09,182 --> 00:25:13,982
+Şimdi burada ne yapacaksın? Üçüncü satırı seçeceksin değil mi? Çünkü orada üç tane.
+
+136
+00:25:14,923 --> 00:25:19,804
+Bak seçmek zorunda mısın? Değilsin. İstersen birinci sütunu seç. Orada hiç sıfır yok ama uzatırsın.
+
+137
+00:25:21,462 --> 00:25:22,742
+Daha fazla işlemle uğraşırsın.
+
+138
+00:25:24,522 --> 00:25:25,442
+Anladım hocam.
+
+139
+00:25:25,462 --> 00:25:27,564
+Yukarıdaki teoremin söylediği şey şuydu.
+
+140
+00:25:27,564 --> 00:25:34,282
+Yani expansion of determinant along the row I diyor. Yani sen orada istediğin satırı seçmekte hürsün.
+
+141
+00:25:34,644 --> 00:25:48,242
+İstediğin bir satıra göre ekspend edebilirsin determinant veya istediğin bir sütuna göre. İstediğin sütuna satıra göre dediyse sen de orada ne yapacaksın? Ya sıfır sayısı fazla olan sütun veya satıra odaklanacaksın.
+
+142
+00:25:49,084 --> 00:25:54,663
+Bu üç veya bir içinden biri olacak değil mi? Ya üçüncü satır sütunu olabilir ya da birinci satır sütun.
+
+143
+00:25:55,884 --> 00:25:57,163
+Üçüncü satır.
+
+144
+00:25:57,906 --> 00:26:09,268
+Veya ikinci sütun dedik burada. Bak, şu ilk haline bak. Üçüncü satırda iki tane sıfır var. Bunu seçebilirsin. Veya ikinci sütun seçebilirsin. Burada da iki tane sıfır var.
+
+145
+00:26:10,807 --> 00:26:11,788
+Tamam hocam.
+
+146
+00:26:12,028 --> 00:26:22,508
+Mecbur değilsin. İstersen hiçbirini seçme. Bak, istersen bunu seç. Ama işi uzatıyorsun. Neden? Çünkü bu öndeki sayılar var ya, birini neyle çarpacaksın? Kendi cofaktörüyle.
+
+147
+00:26:22,846 --> 00:26:49,028
+A11. Ondan sonra, eksi 4'ü neyle çarpacaksın? Kendi kofaktörüyle. A21. Değil mi? Artı, 1'i ne yapacaksın? Kendi kofaktörüyle. A31. Ondan sonra ne yapacaksın? 2'yi kendi kofaktörüyle. A41. Yani determinant dediğin şey bu. Ama burada bak hesaplaman gereken kaç tane kofaktör, bu kofaktörlerin hepsi de 3x3'lük determinantlar değil mi?
+
+148
+00:26:50,036 --> 00:26:51,816
+Kaç tane hesaplaman gerekiyor böyle?
+
+149
+00:26:53,016 --> 00:26:53,816
+Dört tane.
+
+150
+00:26:54,474 --> 00:26:57,934
+Ama yani çünkü hiçbirinin önündeki kat sayı sıfır değil de ondan.
+
+151
+00:27:00,134 --> 00:27:00,894
+Tamam hocam.
+
+152
+00:27:01,316 --> 00:27:06,076
+Yani burada söylediği, bunu direkt hesaplayabilirdin üçüncü satıra göre.
+
+153
+00:27:06,076 --> 00:27:12,776
+Ama o dedi ki şu işlemi uygulayalım, üçüncü satırdaki sıfırların sayısını bir arttıralım. Ondan sonra geriye kaldı sadece bu.
+
+154
+00:27:13,516 --> 00:27:17,714
+Bunun da yani satranç tahtasındaki işaret tablosunu düşün, artı eksi artı.
+
+155
+00:27:18,030 --> 00:27:33,971
+Tamam mı? Yani şu yani. Kısaca artı diyorum ben ona. Yani bunlar kafanızı karıştırıyorsa, sahtanış tahtasındaki işaret dağılımını aklına getir, direkt yaz oraya. Bak, matrisin elemanının işareti değil o, sakın karıştırma. Tamam mı?
+
+156
+00:27:34,230 --> 00:27:35,010
+Tamam hocam.
+
+157
+00:27:35,250 --> 00:27:39,790
+Yani tamam, bana verilen bir, pozitif bir verilmiş ama onun kofaktör işareti de bir.
+
+158
+00:27:41,106 --> 00:27:55,048
+Sonra ne yapacaksın? Onun bulunduğu satır ve sütünü sileceksin. Kalan alt matrise bak, 3x3'lük. Tamam mı? Yani şu sana verilen dörtlük matrisin determinantını hesaplama işi, hop, şu adımı uyguladıktan sonra buraya indirgendi mi?
+
+159
+00:27:55,846 --> 00:27:56,767
+Daha kolay oldu.
+
+160
+00:27:57,048 --> 00:28:03,106
+Daha kolay oldu. İstersen burada bak, bunu kullanmak zorunda değilsin. İstersen tek seferde söyleyebilirsin. Ama...
+
+161
+00:28:03,634 --> 00:28:25,855
+Nasıl soruya başlarken ne yaptıysa burada da benzerini yapıyor. Diyor ki, ben bir hamle daha yapayım da ondan sonra hesaplayayım. O da şu, yani 2 ile 2'nin burada aynı olduğunu gördü. Bu satırlardan birini, eksi bile çarpıp ötekine eklersen, bu ikilerden bir tanesi sıfır olur. O zaman birinci sütunda bir değil, iki tane sıfır olur. Tamam mı?
+
+162
+00:28:26,855 --> 00:28:27,255
+Tamam.
+
+163
+00:28:27,892 --> 00:28:55,632
+Yani, çok da lazım mı? Lazım değil. İstersen sarıç kuralından bir seferde yaz yani. Sorun değil. Zaten test sınavı yapacağız size. Yani nasıl çözdüğünüz şey değil ki. Önemli değil ki. Doğru cevabı bulman önemli. Öyle değil mi? Evet hocam. Ama test sınavında pratiklik fark yaratıyor mu? Yaratıyor işte. Yani uzun uzun çözmeye kalkarsan süreden yersin. Değil mi?
+
+164
+00:28:55,872 --> 00:29:00,352
+O yüzden böyle pratik yolları bilmekte fayda var yani zamandan tasarruf etmek için.
+
+165
+00:29:02,612 --> 00:29:03,412
+Another question?
+
+166
+00:29:05,612 --> 00:29:06,632
+No, thanks.
+
+167
+00:29:07,152 --> 00:29:14,230
+Okay, application to computing areas. We can skip this part. Let me see.
+
+168
+00:29:19,092 --> 00:29:46,955
+All right. I think we can now speak about inverse of a matrix, right? Since you know what's the definition of cofactor and minor, actually, we don't need to pronounce minor, right? Because minor is included, is embedded in the definition of cofactor, right? Since you know what's the meaning of cofactor, now you can calculate inverse of a matrix. But for that, you need to...
+
+169
+00:29:47,220 --> 00:30:00,220
+Um, you need to say something more. This theorem 3.11 is interesting. Look at this. If you are given a square matrix of order n, then-
+
+170
+00:30:03,762 --> 00:30:12,182
+Look at this formula. I don't know what you understand by this formula, but I understand the following. Look at this.
+
+171
+00:30:12,742 --> 00:30:24,923
+This is the entry of my matrix located in the row i, right? This is the first entry of the row i, right?
+
+172
+00:30:25,864 --> 00:30:29,202
+And I'm going, look at the cofactor in product.
+
+173
+00:30:30,036 --> 00:30:45,455
+If k is not equal to i, that means you don't multiply this entry by its corresponding cofactor, right or not?
+
+174
+00:30:52,403 --> 00:30:54,784
+Otherwise, this sum shouldn't be zero.
+
+175
+00:30:57,784 --> 00:31:03,604
+And you can say the same or analogous thing by using columns, right?
+
+176
+00:31:03,702 --> 00:31:09,722
+Look at this. This entry is located in the column J, the first number in the column J.
+
+177
+00:31:10,284 --> 00:31:15,982
+Look at this. This is the next, I mean, the second number, second entry in the column J.
+
+178
+00:31:15,982 --> 00:31:18,982
+But look at the...
+
+179
+00:31:21,202 --> 00:31:26,222
+co-factors, they are not the corresponding co-factors of these entries, right?
+
+180
+00:31:27,884 --> 00:31:29,864
+If c is not equal to k.
+
+181
+00:31:30,803 --> 00:31:33,604
+Anlıyor musunuz arkadaşlar? Burayı Türkçe söylemiş diyorsanız bakın yani.
+
+182
+00:31:34,384 --> 00:31:37,202
+Hele de ilk defa görüyorsan böyle bir formül anlamaman normaldir.
+
+183
+00:31:38,522 --> 00:31:39,782
+Bakın burada söylediği şey şu.
+
+184
+00:31:41,564 --> 00:31:46,163
+Burası, yani şu sıfırı görmeyiver bir an için tamam mı? Sıfırı bir an için görmeyiver.
+
+185
+00:31:46,962 --> 00:31:53,722
+Burada i eşittir k olmuş olsaydı, biz yukarıda bu formülü ne diye gördük? Determiant diye gördük değil mi?
+
+186
+00:31:56,202 --> 00:32:09,502
+Satır cinsinde, determinant açılımı. Aşağıdaki de sütün cinsinden açılım olurdu ama j ve k birbirinin aynı olsaydı, ne demek bu aynı olsaydı? Her elemanı...
+
+187
+00:32:09,502 --> 00:32:22,182
+Hangi satır veya sütunu sabitlediysem, referans seçtiysem, o satır veya sütundaki elemanların sırasıyla kendi kofaktörleriyle çarparak toplayınca determinanti elde ettiğimi söyledim.
+
+188
+00:32:22,182 --> 00:32:33,344
+Ama burada ne diyor? Bu indisler uyuşmazsa, her elemanı kendi, bir satır veya bir sütundaki her elemanı kendi kofaktörleriyle değil, başka bir satırdan.
+
+189
+00:32:33,875 --> 00:32:38,414
+elemanın kofaktörüyle çarpmış olduğu için bu sana determinantı vermez, sıfır verir diyor.
+
+190
+00:32:39,555 --> 00:32:41,055
+Bu teorinin söylediği bu.
+
+191
+00:32:44,692 --> 00:32:48,092
+Güzel bir teorema. Yani test sınavında kullanılabilecek bir kriter.
+
+192
+00:32:49,010 --> 00:32:50,152
+Kullanılabilecek bir kriter.
+
+193
+00:32:52,030 --> 00:32:55,730
+Mesela, şuna bakalım arkadaşlar.
+
+194
+00:32:56,672 --> 00:32:59,510
+Şu, bu arada 20 dakikam var.
+
+195
+00:33:00,332 --> 00:33:04,070
+Şu matrisin determinantını mesela bakalım.
+
+196
+00:33:05,550 --> 00:33:06,230
+Kime soralım?
+
+197
+00:33:10,228 --> 00:33:11,366
+İzlediğinizi seçelim bakalım.
+
+198
+00:33:18,194 --> 00:33:26,076
+[öğrenci], orada mısın [öğrenci]? Mikrofonu açıp cevap verebilir misin sorunu?
+
+199
+00:33:38,386 --> 00:33:44,926
+Evet, [öğrenci] bizi dinlemiyor anlaşılan. [öğrenci]'e soralım. [öğrenci]. Burada mısın [öğrenci]?
+
+200
+00:33:54,770 --> 00:33:59,711
+Evet, [öğrenci]'den de cevap yok. Peşinde [öğrenci] var mesela. [öğrenci]'e soralım.
+
+201
+00:34:03,316 --> 00:34:04,875
+Mikrofonu açar mısın [öğrenci]?
+
+202
+00:34:13,300 --> 00:34:14,639
+Evet, melekten de ses yok.
+
+203
+00:34:14,780 --> 00:34:16,480
+Hocam, ben buradayım, mikrofon açamadım.
+
+204
+00:34:16,940 --> 00:34:17,400
+[öğrenci] mı?
+
+205
+00:34:18,539 --> 00:34:18,820
+Evet.
+
+206
+00:34:19,559 --> 00:34:30,840
+[öğrenci], bak, şu example 1'de bir matris verilmiş bize, 3x3'lük bir matris. Yukarıda da bir şeylerden bahsettim. Şimdi burada hiçbir satır veya sütünde 0 yok değil mi?
+
+207
+00:34:31,320 --> 00:34:31,880
+Evet, yok hocam.
+
+208
+00:34:31,880 --> 00:34:39,360
+O zaman yani iş başa düştü. Mecburen hesaplayacaksın. Yani bir satır veya bir sütuna göre.
+
+209
+00:34:39,860 --> 00:34:46,260
+yapacaksın işlerini. İstediğin satırı veya sütunu seç. Seç bakalım buradan bir satır veya bir sütunu.
+
+210
+00:34:50,780 --> 00:34:58,820
+Hangi satırı seçiyorsun sütunu? Şu matriste bir tane satır veya bir tane sütunu seç bakalım.
+
+211
+00:35:00,780 --> 00:35:03,400
+En üstelik satırı seçeyim hocam. İlk satırı seçiyorsun, güzel.
+
+212
+00:35:04,371 --> 00:35:20,431
+Bana ilk satıra göre bu matrisin determinantını aç desem, ne yazdırırsın bana? Şöyle yazdır bakalım, determinant. O satırdaki her sayının, her sayıyı kofaktörüyle çarp, topla. Determinant bu değil mi?
+
+213
+00:35:22,532 --> 00:35:22,871
+Evet.
+
+214
+00:35:23,471 --> 00:35:31,931
+Söyle bana şimdi, birle başlıyor, sonra iki var sırada, sonra üç var. Şimdi işaretleri de bak, maviyle yazalım, artı.
+
+215
+00:35:32,467 --> 00:35:40,086
+Bu maviyle yazdığım işaretler matris'in elemanlarının işareti değil. O elemanların kofa eş çarpanlarının işaretleri değil mi?
+
+216
+00:35:41,728 --> 00:35:52,206
+Şimdi, birin işareti artı. Bir çarpı birin kofaktörünü yazacağım tamam mı? Onu sembolle yazalım istersen. A1, 1 değil mi?
+
+217
+00:35:52,887 --> 00:35:55,847
+Sonra ne var sırada? 2 var. İşareti ne? Eksi 2.
+
+218
+00:35:55,847 --> 00:35:56,887
+2 çarpı A1, 2.
+
+219
+00:36:00,659 --> 00:36:27,699
+Şöyle yazalım bak. Artı 2 çarpı A12. Değil mi? Evet. Artı 3 çarpı ne diyeceksin? Kendi kofaktörü A13. Bak şimdi buradaki kofaktörlerin hepsini bulup yerine koyarsan, bu matrisin determinantını bulursun. İstersen bunu herhangi bir sütuna göre de yapabilirdin. Bu bir şey.
+
+220
+00:36:28,755 --> 00:36:39,474
+Ama yukarıda söylenen şey şu. Söylenen şey şu, bak, onu da başka bir renkle yazalım. Neyle yazalım? Şuraya. Hadi yeşille yazalım bunu da.
+
+221
+00:36:41,054 --> 00:36:48,175
+Şimdi bak, şimdi yazacağım şey, determinant A değil. Gene birinci satırı kullanıyorum, dikkat et.
+
+222
+00:36:56,179 --> 00:37:10,659
+2 çarpı A2, 1, artı 3 çarpı A3, 1. Ne yaptığımı burada anlayabildin mi?
+
+223
+00:37:11,079 --> 00:37:12,239
+Evet, anladım hocam.
+
+224
+00:37:14,378 --> 00:37:16,659
+Birinci satırı sabitledin.
+
+225
+00:37:17,364 --> 00:37:25,083
+O satırdaki elemanları alıyorum ama kendi kofaktörlerle çarpmıyorum. Nerede, hangi elemanların kofaktörlerle çarpmışım?
+
+226
+00:37:44,210 --> 00:37:47,871
+O sütundaki her bir elemanın pofaktörüyle çarparak toplayacaksın.
+
+227
+00:37:49,251 --> 00:37:50,692
+Sıfır bası sıfır tercih ediyoruz.
+
+228
+00:37:51,552 --> 00:37:59,351
+Evet. Teoremin söylediği, burası sıfırdır. Tamam mı? Böyle mix yaparsan sıfır.
+
+229
+00:38:02,231 --> 00:38:05,971
+Tamam mı? Bir dakika. Kapıda konuşanlar var. Onları bir uyarayım bir dakika.
+
+230
+00:38:29,076 --> 00:38:33,976
+Evet, bu kısım anlaşıldı mı? Yani mesela test sınavlarında bu kriteri kullanabilirsin işte.
+
+231
+00:38:36,036 --> 00:38:36,996
+Anlaşıldı hocam, evet.
+
+232
+00:38:36,996 --> 00:38:54,215
+Mesela bak, şunu verseydim, şu ifade aşağıdakilerden hangisi? Deseydin. Yani A maddesi bu. Bu A maddesi için bu ifade aşağıdakilerden hangisine eşittir deseydim, sen de kalkıp determinantını yazsaydın veya eksilisini, artılısını.
+
+233
+00:38:54,867 --> 00:39:19,567
+Yanlış bir cevap vermiş olurdun. Doğru olduğunu zannederek işte. Ama yukarıdaki teorik bilgi diyor ki bu sıfırdır diyor. Yani sen sıfır olmayan bir seçeneği işaretledin mi? Hele bir de oturup işlem yaptın mı? Bunların için tek tek hesaplayıp, yerine koyup, toplayıp, bir sayı bulup onu da determinant bu dedin mi? Hem yanlış cevap vermişlerim hem de süreden kaybettin. Anlatabiliyor muyum? Yani bu tip kriterler teslim alanında kullanışlı olur.
+
+234
+00:39:22,804 --> 00:39:23,364
+Alright.
+
+235
+00:39:25,182 --> 00:39:30,583
+Hocam, geçen ders, bir önceki, aradan önce de, ben mikrofon açma çalıştığımı açamadım. Bir sorun vardı, sorabilir miyim?
+
+236
+00:39:31,023 --> 00:39:31,282
+Sor.
+
+237
+00:39:32,043 --> 00:39:34,804
+Hocam, şimdi sınavlarla alakalı. Bizim...
+
+238
+00:39:35,523 --> 00:39:43,143
+Sınavlarla ilgili fazla konuşmak istemiyorum. Bak, ben ders yapmam lazım, gerideyim. Yani, hiç söylemediğim bir şeyse sor ama, yani, sekreate söylemeyeyim aynı şeyi.
+
+239
+00:39:43,523 --> 00:39:49,202
+Hiç söylemediğim bir şey, hocam. Bizim lineer sığımıza hemen sonra, diferentsel sığımız var. Arka arkaya, hiç aradan olay yok.
+
+240
+00:39:49,556 --> 00:39:51,795
+Biz bununla alakalı bölüme mi başvuracağız?
+
+241
+00:39:52,635 --> 00:39:55,016
+Yani o pek insani olmamış tabii yani.
+
+242
+00:39:55,396 --> 00:39:57,556
+Yani yetişemeyiz ki hocam direkt zaten sağdan çıkıp geri dönüşürüz.
+
+243
+00:39:57,556 --> 00:39:59,556
+Biz de bizim bölümün dersi.
+
+244
+00:40:00,436 --> 00:40:01,695
+Evet, ikisi de sizin bölümün dersi.
+
+245
+00:40:01,695 --> 00:40:08,114
+Yani niye bunu bölüme iletmediniz vakitlice? Aslında hala zaman var, söyleyebilirsiniz yani.
+
+246
+00:40:08,916 --> 00:40:11,275
+Yani bölüme ileteceğiz değil mi hocam? Biz kendi bölümümüzde.
+
+247
+00:40:11,295 --> 00:40:13,416
+Bölüme iletin yani çünkü yani.
+
+248
+00:40:14,003 --> 00:40:33,003
+Biz de insanız yani, 4 saat ağzında maskeyle sınav mı yapacaksın yani? Öğrenci de insan yani, olmaz yani. Ben olsam, belki şeydir, gözlerinden kaçmıştır, onlar da özellikle yapmamıştır. Çünkü çarşma durumu söz konusu, bilmiyorum yani, sınıf sorunu olur mu olmaz mı emin değilim ama.
+
+249
+00:40:33,364 --> 00:40:34,563
+Sırtı çoğunluğu böyle.
+
+250
+00:40:35,563 --> 00:40:39,563
+Ayarlanabilir yani. Yani bir dakika, hepiniz için de geçerli değil ama.
+
+251
+00:40:40,275 --> 00:40:44,494
+Bir kısmınız hem lineerce bir hem diferansel denklem sınavına gidecek, öyle mi?
+
+252
+00:40:44,715 --> 00:40:46,755
+Yok, büyük çoğulluğumuz hocam, çok büyük çoğulluğumuz.
+
+253
+00:40:46,954 --> 00:40:52,074
+Büyük çoğulluğumuz. O zaman bunu acilen matematik bölümü başkanına iletin yani.
+
+254
+00:40:53,614 --> 00:40:54,096
+Tamamdır hocam.
+
+255
+00:40:54,755 --> 00:40:57,934
+Temsilciniz varsa gelip bizzat iletsin.
+
+256
+00:40:59,494 --> 00:41:03,974
+Veya işte bölüm başkanını arayın, 4310 dahili numarası.
+
+257
+00:41:05,460 --> 00:41:13,320
+Diyebiliyorum. 43.12 matematik bölümün sekreterliğinin dahili numarasını. Bölüm sekreterine söyleyin. Tamam mı?
+
+258
+00:41:14,280 --> 00:41:14,840
+Tamamdır hocam.
+
+259
+00:41:15,139 --> 00:41:22,820
+Bence de hoş değil yani. İki saat bir sınavdan çıkıp başka bir sınava girmek. Diferansiyel denklem de test olur büyük bir tüm ay. Değil mi?
+
+260
+00:41:23,340 --> 00:41:23,639
+Evet.
+
+261
+00:41:24,360 --> 00:41:28,219
+Yani dört saat ağzında maskeyle, yani sınav hoş değil ya.
+
+262
+00:41:29,440 --> 00:41:32,800
+Dört saat olmasa bile sınavdan çıkıp yetişemeyiz hocam direkt ya. Koşamayız zaten öyle.
+
+263
+00:41:33,364 --> 00:41:40,523
+Çünkü akakak ya da. Yani iki saat kalacağının bir garantisi de yok ki zaten bir sınavda. Belki daha çabuk çıkacaksın.
+
+264
+00:41:41,083 --> 00:41:43,443
+Ama işte sürekli kullanmak. Teşekkür ederim hocam.
+
+265
+00:41:43,443 --> 00:42:00,664
+Şey değil. Şimdi bakalım. Şu soruya bakalım. Example 1. Look at this matrix A. And look at this expression. This is zero.
+
+266
+00:42:01,300 --> 00:42:22,000
+I don't need to calculate this sum to say it is zero, right? Because I have realized immediately that, look at this, 3, 1, 3, 2, 3, 3, 3, which row is being fixed here in this matrix?
+
+267
+00:42:26,164 --> 00:42:45,224
+The third row, right? Look at this. Third row, but we don't multiply these entries by their corresponding cofactors, right? Look at the cofactors. 2, 1, 2, 2, and 2, 3.
+
+268
+00:42:52,052 --> 00:42:56,811
+You are using cofactors of entries in another row, right?
+
+269
+00:42:59,452 --> 00:43:01,452
+So that's why it is zero.
+
+270
+00:43:03,251 --> 00:43:03,891
+Okay?
+
+271
+00:43:08,306 --> 00:43:17,268
+Okay, now we are in a position to define adjoint matrix, right? Look at the definition 3.5.
+
+272
+00:43:17,268 --> 00:43:26,467
+Suppose A is an n by n square matrix with real entries, then we call adjoint and write, as you see here,
+
+273
+00:43:27,668 --> 00:43:34,387
+the adjoint of A, which is the matrix whose ij entry is the cofactor of its
+
+274
+00:43:34,900 --> 00:43:36,460
+Corresponding entry, right?
+
+275
+00:43:38,260 --> 00:43:39,079
+Look at this.
+
+276
+00:43:40,980 --> 00:43:47,760
+It is something like, maybe you are more familiar with this.
+
+277
+00:44:09,012 --> 00:44:22,552
+You can write this and use transpose. Arkadaşlar, burada dikkatli olmanız lazım. Tamam mı? Eğer adjointini yazarken, transpose'ini yazarsan, hepsi yanlış çıkar.
+
+278
+00:44:22,552 --> 00:44:36,032
+You have to be extremely careful here. If you prefer to write this, matrix whose entries are cofactors, you have to put the transpose here.
+
+279
+00:44:37,139 --> 00:44:44,099
+If you don't like writing transpose, you can write this way, right?
+
+280
+00:44:44,360 --> 00:44:55,880
+But please don't confuse, don't confuse this simple fact, otherwise you will make a terrible mistake and lose the question in your exam, right?
+
+281
+00:45:01,619 --> 00:45:25,920
+All right. This is the adjoint of A. For example, if A is this matrix, how to compute its adjoint? Look at this. You have to, by definition, you have to calculate for each entry its corresponding cofactor, right? And then you write a matrix whose entries are these cofactors.
+
+282
+00:45:28,052 --> 00:45:31,471
+But in the transpose form, right?
+
+283
+00:45:32,471 --> 00:45:33,530
+The transpose form.
+
+284
+00:45:39,219 --> 00:45:40,259
+Here is the adjoint.
+
+285
+00:45:43,378 --> 00:45:43,699
+Okay.
+
+286
+00:45:45,219 --> 00:45:48,659
+So let's see what the theorem 3.12 says.
+
+287
+00:45:49,458 --> 00:45:55,699
+If A is an n by n square matrix here, this theorem says that adjoint of your matrix commutes with the
+
+288
+00:45:55,699 --> 00:46:01,938
+original A, right? This is exactly what I see here in this formula. Adjoint of A.
+
+289
+00:46:03,188 --> 00:46:18,967
+A'ı, and this multiplication is exactly a multiple of the identity, right? And this constant is exactly, this multiple is exactly the determinant. Okay? Look at this.
+
+290
+00:46:23,188 --> 00:46:25,347
+So, let's keep the proof.
+
+291
+00:46:27,228 --> 00:46:29,188
+Whenever you, if you follow,
+
+292
+00:46:30,987 --> 00:46:33,427
+patient with this proof, you will see that
+
+293
+00:46:33,427 --> 00:46:35,208
+this multiplication,
+
+294
+00:46:36,688 --> 00:46:37,608
+A times adjoint,
+
+295
+00:46:38,608 --> 00:46:39,347
+will be this
+
+296
+00:46:39,347 --> 00:46:40,806
+diagonal
+
+297
+00:46:40,806 --> 00:46:42,648
+matrix, right?
+
+298
+00:46:43,987 --> 00:46:46,306
+Actually, it's a scalar matrix, right?
+
+299
+00:46:46,306 --> 00:46:49,068
+Because the entries on the main diagonal are repeated.
+
+300
+00:46:51,539 --> 00:47:00,960
+The number repeated is determinant, so that's why I say this multiplication is a multiple of identity matrix, right?
+
+301
+00:47:01,778 --> 00:47:16,960
+This is an interesting result, which has also interesting corollary, because it says an inverse of a nonsingular, whenever this determinant is not zero, look at this, if this determinant...
+
+302
+00:47:18,132 --> 00:47:32,652
+A is not zero, that means if A is non-singular, then you know that A is invertible. I mean, it admits inverse, right? And if you multiply by left, for example,
+
+303
+00:47:38,356 --> 00:47:42,195
+Let me write this way. Adjoint A.
+
+304
+00:47:48,244 --> 00:47:48,923
+Um.
+
+305
+00:47:54,547 --> 00:47:59,887
+Determinant, A, times, identity, right?
+
+306
+00:48:00,547 --> 00:48:09,887
+So this part is identity, and if this is not zero, you see?
+
+307
+00:48:11,266 --> 00:48:14,726
+Let me show you immediately the formula we have, right?
+
+308
+00:48:19,764 --> 00:48:45,824
+Here is the corollary I was trying to say. If A is a nonsingular matrix, then it admits an inverse, and its inverse, you can find by using the adjoint, right? Just write the adjoint matrix and then divide by, or this is a matrix, a scalar multiplication, right? You have this adjoint matrix and then multiply.
+
+309
+00:48:46,324 --> 00:48:53,744
+Bu, bu, non-zero, skala. Non-zero, because A is non-singular, right?
+
+310
+00:48:54,664 --> 00:49:06,123
+So this is an efficient and easy way to evaluate or to find an inverse matrix of a non-singular square matrix, right?
+
+311
+00:49:06,844 --> 00:49:11,164
+Of course, we do have another method to find, but this is one more.
+
+312
+00:49:11,891 --> 00:49:16,391
+way to find the inverse by using the adjoint, okay?
+
+313
+00:49:21,715 --> 00:49:23,596
+Okay, do you have any questions?
+
+314
+00:49:26,635 --> 00:49:32,675
+If you don't have any questions, I want to stop here because I have another lecture 10 minutes later, right?
+
+315
+00:49:33,235 --> 00:49:38,255
+So it's going to be a tough day for me today, every Tuesday actually.
+
+316
+00:49:38,875 --> 00:49:39,815
+Do you have any questions?
+
+317
+00:49:41,675 --> 00:49:45,315
+Let me see what we have. Exercises, as always, at the end of each section.
+
+318
+00:49:46,016 --> 00:49:47,775
+Nice questions we have here, right?
+
+319
+00:49:49,492 --> 00:49:50,532
+Nice questions.
+
+320
+00:49:54,291 --> 00:50:02,612
+All right. See you on Saturday at 4 p.m. Okay? Bye.
+
+321
+00:51:02,898 --> 00:51:15,338
+Günaydın arkadaşlar. Sesim geliyor mu? Bu sefer iPad'den ders veremeyeceğim size. Wi-Fi erişim noktasında bir sorun var. Kablolu bağlantı, laptopumdan ders veriyorum. Ses geliyor mu arkadaşlar?
+
+322
+00:51:21,010 --> 00:51:24,791
+Tamam, hızlı bir şekilde kaldığımız yerden devam edelim.
+
+323
+00:51:25,271 --> 00:51:33,251
+If I'm not wrong, I was saying something about how to calculate determinants of square matrices, right?
+
+324
+00:51:33,650 --> 00:51:39,271
+And this example, 8, I didn't say anything about this example, right?
+
+325
+00:51:39,331 --> 00:51:44,391
+So let us practice what we have learned, okay?
+
+326
+00:51:45,170 --> 00:51:46,059
+So...
+
+327
+00:51:48,403 --> 00:51:55,403
+Bu, 3x3 matrix A'ı, ve bu şekilde birçok ayı
+
+328
+00:51:55,403 --> 00:51:56,603
+yapmak için birçok ayı?
+
+329
+00:51:56,603 --> 00:52:00,403
+Önceleriye uygulamalar, bu birçok ayı
+
+330
+00:52:16,275 --> 00:52:31,315
+Let us recall this notational convention before starting the example. As you should know, let me say this notation here.
+
+331
+00:52:33,454 --> 00:52:35,315
+Okay, it means you are...
+
+332
+00:52:36,019 --> 00:52:59,059
+performing interchange of row i and row j in A, right? Matrix A. And this is the, you can call another matrix, B, for example. This is the resulting matrix, which is equivalent to your original, initial matrix A, right? And what is the relationship between the determinant of the resulting matrix and the original matrix? This line says that
+
+333
+00:52:59,730 --> 00:53:14,652
+Whenever you perform these operations, I mean, interchanging rows, two rows, then you have to multiply the determinant of original matrix by minus one, right?
+
+334
+00:53:16,230 --> 00:53:24,291
+If you multiply one of the rows by some non-zero scale, okay, so this means you have to multiply
+
+335
+00:53:24,788 --> 00:53:28,188
+Determinant of your original matrix by the same scale, right?
+
+336
+00:53:28,788 --> 00:53:38,487
+If you perform this property, if I'm not wrong, we said this is type 3 elementary operation, right?
+
+337
+00:53:38,847 --> 00:53:41,728
+So this does not affect indeterminant, right?
+
+338
+00:53:42,166 --> 00:53:47,907
+So it doesn't matter if you, whenever you perform something like this, determinant stays the same, right?
+
+339
+00:53:48,326 --> 00:53:51,987
+But of course, i and j shouldn't be equal, okay?
+
+340
+00:53:54,387 --> 00:53:57,967
+Look at this. Please don't let me write.
+
+341
+00:54:00,728 --> 00:54:08,206
+It's not easy to write with mouse, right? iPad is really very nice to give online lecture.
+
+342
+00:54:08,987 --> 00:54:18,527
+Let me, okay, look at this line and this one, right? So please don't confuse.
+
+343
+00:54:19,635 --> 00:54:23,514
+You have to be sure in what way exactly you need to use.
+
+344
+00:54:24,675 --> 00:54:29,436
+This, as I said, you can call B, the resulting matrix, which is equivalent to A, right?
+
+345
+00:54:29,855 --> 00:54:39,235
+So, if you are given a matrix A, and of course, if you know its determinant, then you are able to find the determinant of B, right?
+
+346
+00:54:39,675 --> 00:54:46,436
+But if somebody says something like this to you, suppose B, a matrix that...
+
+347
+00:54:47,603 --> 00:55:13,943
+Noun matrix, right? A certain B is given to you, right? So you know the determinant of this matrix B. And suppose we say this B is obtained from some A after applying some concrete operation. And then you can try to find the determinant of the original matrix, right?
+
+348
+00:55:14,706 --> 00:55:17,547
+So, you have to convert this way.
+
+349
+00:55:18,646 --> 00:55:18,827
+Right?
+
+350
+00:55:20,766 --> 00:55:24,427
+If you are asked to find the determinant of b, use this.
+
+351
+00:55:25,766 --> 00:55:34,286
+If b is given, but you are asked to find the determinant of the original matrix, so you have to arrange this formula.
+
+352
+00:55:34,286 --> 00:55:38,666
+And the same with another formula.
+
+353
+00:55:40,882 --> 00:56:07,523
+Ok, so let us work with this example here. We are asked to compute its determinant. Of course, you can try to compute its determinant immediately, directly, right? You can use a Sarus rule, for example. I think I have already mentioned Sarus rule, right? You can add two rows or two columns, and then use that rule we call Sarus.
+
+354
+00:56:07,923 --> 00:56:17,003
+to find its determinant, but we are going to apply elementary raw operations, obtain equivalent matrices,
+
+355
+00:56:17,003 --> 00:56:25,324
+and then try to complete the determinant of A in terms of determinant of equivalent matrices, right?
+
+356
+00:56:25,703 --> 00:56:34,583
+So look at this. Let me see what is being done here. It says, why don't you, let me.
+
+357
+00:56:34,996 --> 00:56:55,436
+Excuse me. This one. This is my target, right? I'm going to multiply the third row by 1 over k. This is my nonzeros color k, right? So, if you do that, you will obtain this matrix here.
+
+358
+00:56:56,690 --> 00:57:08,690
+İlk başta 2, 2, 3, 2, 3, 2, 3.
+
+359
+00:57:08,690 --> 00:57:10,690
+Çünkü bu iki, 2.
+
+360
+00:57:22,099 --> 00:57:33,739
+Since you have multiplied by 1 over 2, determinant of the original matrix is 2 times determinant of B, right?
+
+361
+00:57:33,958 --> 00:57:37,378
+If you write here 1 over 2, you are wrong.
+
+362
+00:57:38,998 --> 00:57:41,059
+Is it clear for everybody or not?
+
+363
+00:57:41,759 --> 00:57:43,958
+Am I making myself clear enough or not?
+
+364
+00:57:47,668 --> 00:57:58,748
+Let me see how many students we have. 34 students. If it is not clear, please you interrupt me and ask. Whatever you ask. Whatever you want, okay?
+
+365
+00:58:01,266 --> 00:58:12,748
+You have to be aware of what is being done here. If you multiply instead of two by one over two, you are committing a...
+
+366
+00:58:15,730 --> 00:58:18,411
+So, please don't do that.
+
+367
+00:58:23,668 --> 00:58:28,087
+All right, let me clear my screen again.
+
+368
+00:58:28,748 --> 00:58:41,467
+And once again, I would like to tell you, please be careful with these formulas, right?
+
+369
+00:58:41,467 --> 00:58:42,728
+Be careful.
+
+370
+00:58:53,364 --> 00:59:00,963
+Ok, let us continue. We have multiplied, we have just multiplied the third row by 1 over 2.
+
+371
+00:59:01,603 --> 00:59:09,603
+So determinant of A is 2 times determinant of the resulting matrix, right? Which is here, okay?
+
+372
+00:59:10,724 --> 00:59:19,364
+Alright. So in the next step, what is being done here? Let me see. If you interchange the first and third row
+
+373
+00:59:21,715 --> 00:59:49,579
+bu bir
+
+374
+00:59:49,778 --> 01:00:09,898
+All right, so let us continue. Okay, this is the... We are here, right? Okay, let me see. Two more elementary operations to be performed here.
+
+375
+01:00:10,578 --> 01:00:33,962
+Önce bir şey.
+
+376
+01:00:34,483 --> 01:00:41,023
+Of course, you need to multiply the first row by minus 3, and then add to the second row, right?
+
+377
+01:00:43,742 --> 01:00:46,163
+And this is done, right?
+
+378
+01:00:46,523 --> 01:00:49,802
+Let us see the other element row operation.
+
+379
+01:00:49,943 --> 01:00:58,702
+The other one, it says that multiply the first row by minus 4 and add to the third row to obtain your new third row, right?
+
+380
+01:00:58,702 --> 01:01:00,702
+This is because we want...
+
+381
+01:01:01,682 --> 01:01:14,644
+Z, we want zero here, right? Zero here. All right. So, but let me ask you, what is the effect of these two operations in determinant?
+
+382
+01:01:19,154 --> 01:01:26,775
+Is there any change, indeterminate or not, when you apply something like this? Let me ask one of the students.
+
+383
+01:01:28,215 --> 01:01:30,235
+Present. [öğrenci].
+
+384
+01:01:31,675 --> 01:01:34,275
+Could you please answer my question, [öğrenci]?
+
+385
+01:01:38,931 --> 01:01:44,952
+Hocam ben tam kavrayamadım da anlamaya çalışıyordum. Yani sözü o yüzden cevap veremeyeceğim şu an.
+
+386
+01:01:46,791 --> 01:01:47,931
+Neresini kavrayamadın?
+
+387
+01:01:48,572 --> 01:01:52,530
+Ya şu değişimlerin falan nereden geldiğini tam anlayamadım.
+
+388
+01:01:53,130 --> 01:01:53,952
+Başından beri mi?
+
+389
+01:01:54,952 --> 01:01:58,072
+Evet, kaçırdım başını. O yüzden toparlamaya çalışıyorum.
+
+390
+01:02:00,831 --> 01:02:01,931
+Yani...
+
+391
+01:02:02,387 --> 01:02:07,007
+Satır işlemlerini biliyorsun herhalde değil mi? Elementer satır işlemlerinden ne kastettiğimizi biliyorsun.
+
+392
+01:02:07,467 --> 01:02:08,746
+Evet, evet biliyorum hocam.
+
+393
+01:02:08,746 --> 01:02:14,746
+Tamam. Onların determinanta etkisini notasyon olarak aynı notasyonları kullanmıştık hatırlarsan.
+
+394
+01:02:15,528 --> 01:02:23,346
+Matrisler üzerinde yapılan, hani denk matrislerden bahsederken elementer satır işlemleri uygulayarak bir matrisi ona denk başka bir matrise dönüştürmekten bahsetmiştik.
+
+395
+01:02:24,148 --> 01:02:26,827
+Aynı notasyonları determinantlar için de kullandım.
+
+396
+01:02:27,346 --> 01:02:40,606
+Ama determinanta etkisi değişik. Onları söyledik. Bir matrisin iki satırını değiştirirsen ona denk yeni bir matris bulursun ama yeni elde ettiğin matrisin determinantıyla öncekinin determinanti arasında işaret farkı var.
+
+397
+01:02:42,907 --> 01:02:54,487
+Mesela verilen orijinal bir matrisin, yani A matrisi, ilk verilen matrisin bir satırını bir sayıyla çarparsan, elde edeceğin yeni matris ki ilkine denk olacak onun determinantı
+
+398
+01:02:54,962 --> 01:02:59,623
+Önceki matrisin determinantının hangi sayıyla çarpdıysan satırını o kadar katı dedik.
+
+399
+01:03:00,682 --> 01:03:03,862
+Değil mi? Bunları herhalde kaçırmadın değil mi bunları?
+
+400
+01:03:04,083 --> 01:03:05,583
+Yok yok hocam, onları hatırlıyorum.
+
+401
+01:03:05,583 --> 01:03:10,643
+En son bir tane daha var. Bir sayıyla çarp, başka bir satıra ekle ama bunun determinantı etkisi yok.
+
+402
+01:03:10,842 --> 01:03:20,462
+Bak, istersen göstereyim sana. Yukarıdaydı. Ekrandan takip etmek çok da kolay değil ama söylediği şey şu bak.
+
+403
+01:03:21,619 --> 01:03:27,599
+Bir A matrisine, yani iPad'le ders veremiyor olmak canımı sıkıyor benim ama ne yapayım?
+
+404
+01:03:28,840 --> 01:03:33,519
+Bu bilgi işlemden talepte bulundum arkadaşlar.
+
+405
+01:03:33,819 --> 01:03:43,159
+Adamların bana söylediği şey şu, sizin matematik bölümünde koridorlar çok uzun, o yüzden koridorun bir başına bir de diğer ucuna erişim noktası koyduk.
+
+406
+01:03:43,360 --> 01:03:47,920
+İşte duvarlar yüzünden sinyal ofisinize zayıf gelebilir, yapabileceğimiz bir şey yok.
+
+407
+01:03:50,739 --> 01:04:01,079
+Bu haftada yapamadık. Yani sinyal hiç gelmiyordu. Sinyalin dibindeki sınıfı rezerve ettim. Sırf size ders verebilmek için ama bu hafta artık sinyal azizliğine uğradık herhalde.
+
+408
+01:04:02,340 --> 01:04:12,500
+Neden öyle oldu? Araştırmak istemiyorum onun arkasını. Direkt laptop'tan bağlandım. Bakın burada söylediği şey şu. K çarpı gerçekten de mouse ile yazmak. Mesele yani.
+
+409
+01:04:14,720 --> 01:04:17,819
+Kalemle yazmak çok daha kolay bunlar. Şu.
+
+410
+01:04:18,547 --> 01:04:30,547
+Yani ben istersen buna B'dir. Tamam. Şimdi bu B, A'ya denk bir matris. Peki, determinantlar arasında nasıl bir ilişki var? Söylediği şey şu. B'nin determinantı, A'nın determinantının aynıdır.
+
+411
+01:04:30,547 --> 01:04:43,403
+Yani aslında kendinden önceki iki özelliğe bakarsan biraz tuhaf duruyor değil mi [öğrenci]? İlkinde diyorsun, satırları bile değiştirsen işaret değiştiriyor. Sayıyla çarparsan determinantı çarpman gerekiyor ama burada...
+
+412
+01:04:43,412 --> 01:04:52,172
+İkisinin kombinasyonu gibi, yani gibi değil tabii ki. Değil mi? Bir satırı bir sayıyla çarpıyorsun, ötekine ekliyorsun ama determinant değişmiyor.
+
+413
+01:04:52,492 --> 01:05:00,132
+Bunların ispatları var ama sizden ispatını bilmenizi istemiyoruz. Kuralları öğrenmeniz yeterli, uygulamanız yeterli. Tamam mı?
+
+414
+01:05:00,552 --> 01:05:07,572
+İşte o matris de bu kuralı uyguladığım için değişmedi. Bak şimdi matrisime dönüyorum, örneğime.
+
+415
+01:05:09,298 --> 01:05:33,078
+Üçüncü satırını, şu matrisin üçüncü satırını, bir bölü ikiyle çarptım. Tamam mı? O zaman, A'nın determinantı, yeni elde ettiğim matrisin determinantın iki katı. Bir bölü iki katı değil. Yeni matris, şunun determinantı, A'nın determinantının bir bölü iki katı. Bunları karıştırmayın birbirine. Tamam mı?
+
+416
+01:05:38,387 --> 01:06:03,907
+Ondan sonra işte satır şurada şöyle çerçeve içine alayım. Burada satır değiştirdiğim için işaret değişecek determinant. O yüzden işareti koyduk şuraya başına. Tamam mı? Bir sonraki şuraya kadar geldik. Şöyle alayım kutunun içine. Şöyle. Tamam mı? Burada uyguladığım satır işlemlerine bakacak olursan az önce yukarıda söylediğim determinantı değiştirmeyen tip.
+
+417
+01:06:04,980 --> 01:06:15,038
+Bir satır işlemi uygulanmış. O yüzden determinant aynen kalıyor. Bakın, matris dönüşüyor. Yeni dönüşen matrisin determinantı aynı kalıyor. Bilmem anlatabildi mi?
+
+418
+01:06:17,599 --> 01:06:19,458
+Anladım hocam, teşekkür ederim.
+
+419
+01:06:20,659 --> 01:06:30,260
+Peki, okey, let me continue. I think we were here. What I have said is that these two operations doesn't affect undeterminate, right?
+
+420
+01:06:30,802 --> 01:06:41,802
+According to our rules, right? So we are here and you can, I think, go one step further because...
+
+421
+01:06:46,483 --> 01:07:13,386
+Bu, bu
+
+422
+01:07:14,260 --> 01:07:22,260
+Bu, çünkü, i'm going to have exactly an upper triangular matrix.
+
+423
+01:07:24,019 --> 01:07:31,460
+If you remember, determinant of upper or lower triangular matrices is easy, right?
+
+424
+01:07:33,618 --> 01:07:38,739
+Easy to calculate. What was the determinant of this upper triangular matrix?
+
+425
+01:07:42,804 --> 01:07:52,023
+Do you remember? I remember I have said how to calculate the determinant of upper triangular or lower triangular matrix, right? Matrix.
+
+426
+01:07:52,923 --> 01:08:02,903
+You just, if you remember, let me put some numbers, I don't care who are the numbers, right?
+
+427
+01:08:03,304 --> 01:08:08,543
+So we have some non-trivial triangular block.
+
+428
+01:08:09,010 --> 01:08:33,211
+above the main diagonal, right? Here, you have just zeros, right? Below the diagonal. So, whenever you have such a matrix, upper triangular, its determinant is multiplication of the numbers or entries you see in the main diagonal, right?
+
+429
+01:08:33,682 --> 01:08:37,002
+It's very easy to calculate. So, look at the diagonal.
+
+430
+01:08:39,023 --> 01:08:45,844
+What are the numbers you see on the diagonal? 1, minus 8, and minus 30 over 4.
+
+431
+01:08:46,404 --> 01:08:57,222
+So, you have to multiply these three numbers to find the, let me change the color, to find the determinant of this matrix, right?
+
+432
+01:08:57,324 --> 01:09:01,002
+And then, you multiply by minus 2, you will obtain...
+
+433
+01:09:01,523 --> 01:09:05,903
+Determinant of the original A, right?
+
+434
+01:09:08,483 --> 01:09:10,382
+Let me clear my drawings.
+
+435
+01:09:11,743 --> 01:09:16,863
+And then this number is minus 120, right?
+
+436
+01:09:17,182 --> 01:09:22,422
+So why don't you check without using this method now?
+
+437
+01:09:22,823 --> 01:09:25,002
+Why don't you calculate directly?
+
+438
+01:09:25,163 --> 01:09:27,722
+I mean, using Sauros rule, for example.
+
+439
+01:09:28,211 --> 01:09:35,832
+Determinant of A, and try to show if it is equivalent to minus 120 or not.
+
+440
+01:09:36,372 --> 01:09:39,471
+Okay, it has to be. It has to be, right?
+
+441
+01:09:42,931 --> 01:09:55,591
+So, maybe you can say, why we have to do with this, why we have to follow these long operations, if we have an easy way to calculate the determinant, right?
+
+442
+01:09:55,591 --> 01:10:01,730
+This is actually not a nonsense question, right?
+
+443
+01:10:02,291 --> 01:10:09,652
+If we don't say anything in the exam, so you are free to use the method you wish, right?
+
+444
+01:10:10,047 --> 01:10:20,288
+But if we say compute determinant of this matrix, applying elementary raw operations, then you have to use.
+
+445
+01:10:20,846 --> 01:10:28,688
+You have to use. Another method you can use just to check if your answer is correct or not. Okay?
+
+446
+01:10:31,007 --> 01:10:31,851
+All right.
+
+447
+01:10:34,420 --> 01:10:50,659
+Bu, what you have seen in the preceding example, is called the reduction to triangular form, because we are applying elementary raw operations and converting our initial matrix to upper triangular matrix, right?
+
+448
+01:10:51,378 --> 01:10:57,479
+So, what you have done here is a kind of reduction to triangular form, okay?
+
+449
+01:10:59,440 --> 01:11:01,838
+Alright, any question?
+
+450
+01:11:04,659 --> 01:11:12,659
+There's a lemma here. If e is an elementary matrix, then determinant of...
+
+451
+01:11:14,020 --> 01:11:14,818
+Okay, let me...
+
+452
+01:11:17,538 --> 01:11:29,779
+You have to know, basically here, this formula. Whenever you have to calculate, determinant of a product, this means...
+
+453
+01:11:32,146 --> 01:11:34,528
+Exactly this formula here, right?
+
+454
+01:11:36,886 --> 01:11:41,907
+It's enough for you to know for now this formula for determinant, right?
+
+455
+01:11:44,426 --> 01:11:45,068
+Okay.
+
+456
+01:11:46,047 --> 01:11:52,207
+Determinant of a multiplication of two matrices is equal to the multiplication of their determinant, right?
+
+457
+01:11:52,268 --> 01:11:54,268
+This is what our formula says.
+
+458
+01:11:55,646 --> 01:11:56,307
+Okay.
+
+459
+01:12:08,404 --> 01:12:28,604
+All right. Let me see what we have here. Theorem 3.8 says, whenever you have a squamatic A of order n, then it is non-singular if and only if its determinant is non-zero. This is an important result, right? I don't care it's proof.
+
+460
+01:12:32,243 --> 01:12:57,355
+Bu, bu
+
+461
+01:12:57,715 --> 01:13:07,755
+Eğer bu birçok makrola sıra sı
+
+462
+01:13:18,770 --> 01:13:21,810
+Okay, there is something related to linear systems here.
+
+463
+01:13:24,091 --> 01:13:28,770
+It's not time to mention linear systems. Look at this.
+
+464
+01:13:31,550 --> 01:13:44,734
+I already said this theorem, right? This formula that determinants satisfy square matrices of the same order if you are...
+
+465
+01:13:44,734 --> 01:13:56,055
+interested in calculating determinant of this product, so it's enough to find each determinant and then multiply them, right, since they are real numbers.
+
+466
+01:13:57,055 --> 01:13:57,835
+All right.
+
+467
+01:14:01,395 --> 01:14:02,395
+Ok.
+
+468
+01:14:04,514 --> 01:14:09,315
+For square matrices of order 2, we have a very easy formula to find
+
+469
+01:14:11,715 --> 01:14:12,514
+the inverse.
+
+470
+01:14:14,835 --> 01:14:18,595
+Suppose your matrix is non-singular, then determinant,
+
+471
+01:14:20,595 --> 01:14:27,875
+excuse me, I said we have a easy way to find its inverse. Actually, it's not wrong, but
+
+472
+01:14:28,404 --> 01:14:38,384
+The subject here is determinant, right? So we have an easy way, easy formula to find the determinant of its inverse. That's what I wanted to say actually, right?
+
+473
+01:14:47,282 --> 01:15:06,882
+Alright, similar matrices, you don't need to care this, but don't confuse similar matrices with equivalent matrices. These are two different definitions, right? You know what's the meaning of equivalent matrices. You don't know what's the meaning of similar, right? Doesn't matter.
+
+474
+01:15:12,115 --> 01:15:13,815
+Let's see what we have.
+
+475
+01:15:16,074 --> 01:15:17,875
+All right, there are some exercises.
+
+476
+01:15:18,534 --> 01:15:21,494
+For example, this one looks interesting.
+
+477
+01:15:22,375 --> 01:15:23,055
+Number eight.
+
+478
+01:15:25,295 --> 01:15:28,895
+Do you think that this is always true or not?
+
+479
+01:15:29,779 --> 01:15:56,818
+Of course, we cannot ask something like this in test exam, right? Because we are saying what? Justify your answer. You cannot justify your answer in a test exam. By the way, I don't know if you know, but the date of your midterm exam is already determined, right? I think 27, November 27, right? If I'm not wrong.
+
+480
+01:15:57,779 --> 01:16:01,059
+Do you know about the exam date or not?
+
+481
+01:16:07,859 --> 01:16:08,979
+Let me show you.
+
+482
+01:16:14,199 --> 01:16:15,939
+Alright, look at this.
+
+483
+01:16:23,028 --> 01:16:24,788
+Ekranımı görüyor musunuz arkadaşlar?
+
+484
+01:16:31,220 --> 01:16:41,559
+Görüyorsunuz değil mi ders ekranı? Servis dersleri yılıçı ve mazeret sınav takvimi diyor. Bakın. Tıklayalım.
+
+485
+01:16:47,220 --> 01:16:52,378
+Evet, November 27, right?
+
+486
+01:16:55,988 --> 01:16:56,648
+Excuse me?
+
+487
+01:17:06,355 --> 01:17:08,355
+Bakın, bu.
+
+488
+01:17:08,355 --> 01:17:11,355
+Bir başta bir başta bir exam, değil mi?
+
+489
+01:17:11,355 --> 01:17:12,355
+Önline.
+
+490
+01:17:12,355 --> 01:17:15,355
+Probabilirsiniz, bir test exam,
+
+491
+01:17:15,355 --> 01:17:17,355
+ama başta bir başta bir başta, değil mi?
+
+492
+01:17:17,355 --> 01:17:18,355
+Önline değil mi?
+
+493
+01:17:18,355 --> 01:17:19,355
+Önce bir soru?
+
+494
+01:17:19,355 --> 01:17:21,355
+Bu soru var mı?
+
+495
+01:17:26,739 --> 01:17:34,600
+You have to open your microphone and ask whatever you want, right? I don't want to read chat messages, okay?
+
+496
+01:17:48,115 --> 01:17:49,774
+Hocam bir şey sorabilir miyim?
+
+497
+01:17:50,335 --> 01:17:50,595
+Sor.
+
+498
+01:17:51,595 --> 01:17:56,354
+Diğer %20'lik kısmı nasıl değerlendireceksiniz?
+
+499
+01:17:57,074 --> 01:17:58,755
+%20'lik kısımdan neyi kastediyorsun?
+
+500
+01:17:59,354 --> 01:18:02,255
+Final %40 galiba standart olarak.
+
+501
+01:18:03,335 --> 01:18:04,315
+Onlar çok önemli değil.
+
+502
+01:18:05,139 --> 01:18:24,439
+Yani çok önemli değil. Neyse, odur yani tek sınav yapın derlerse, yüzde altmış alın derlerse biz de öyle yaparız. Yani final yüzde kırk olur. Bana soracak olursan çok da anlamlı değil. Yani büyük bir ihtimalle altı haftalık mifredattan size bir sınav yapacağız. O da yüzde altmış olacak. Ama on dört haftalık mifredattan sınava gireceksin final sınavına. Onun değeri de yüzde kırk olacak. Sence mantıklı mı?
+
+503
+01:18:24,898 --> 01:18:30,639
+Yok, öyle değil ama bazı hocalarımız bazı derslerde ödev veriyordu yüzde otuzluk.
+
+504
+01:18:31,699 --> 01:18:32,859
+Onu sorayım dedim.
+
+505
+01:18:33,020 --> 01:18:38,520
+Burada olmaz. Çünkü yani 150, 200, 250 tane öğrencisi olan sınıflar var. Nasıl vereceksin ödeye?
+
+506
+01:18:39,059 --> 01:18:40,420
+Bence de, evet, haklısınız.
+
+507
+01:18:40,440 --> 01:18:42,600
+O senin dediklerin bölüm dersleri için olabilir.
+
+508
+01:18:43,199 --> 01:18:45,399
+Yani yüzde altmış vize gibi, yüzde kırk milyar gibi.
+
+509
+01:18:45,399 --> 01:18:50,600
+Bu üyes salonunda ders veren hocalar var, iki yüz elli, üç yüz kişiye yani. Bunlar nasıl ödev versin şimdi bu hoca?
+
+510
+01:18:50,739 --> 01:18:51,880
+Tabii ki, haklısınız.
+
+511
+01:18:52,059 --> 01:18:56,460
+Yani biz servis dersi olduğu için ortak hareket ediyoruz, o yüzden o dediğin olmaz, ödev olmaz yani.
+
+512
+01:18:56,979 --> 01:18:59,979
+Yani yüzde altmış uygulayın, tek vize yapın derlerse, odur yani.
+
+513
+01:19:00,880 --> 01:19:02,260
+Kurcalamayız fazla, anlatabiliyor muyum?
+
+514
+01:19:02,644 --> 01:19:04,443
+Tamamdır. Sağ olun. Teşekkür ederim.
+
+515
+01:19:04,462 --> 01:19:07,983
+Matematik bölümünün lineer Cebiri olsa, tamam, o zaman olur dedi.
+
+516
+01:19:08,262 --> 01:19:08,502
+Evet.
+
+517
+01:19:08,502 --> 01:19:10,983
+Bütün lineer Cebiri dersinden bahsediyoruz.
+
+518
+01:19:11,682 --> 01:19:12,202
+Evet.
+
+519
+01:19:12,404 --> 01:19:12,844
+Haklısınız.
+
+520
+01:19:13,462 --> 01:19:13,762
+Evet.
+
+521
+01:19:14,904 --> 01:19:16,104
+Şuraya bakalım.
+
+522
+01:19:17,722 --> 01:19:21,182
+Do you think any opinion for this example or not?
+
+523
+01:19:22,104 --> 01:19:23,702
+What do you see in this example?
+
+524
+01:19:24,222 --> 01:19:26,083
+Two matrices, A and B.
+
+525
+01:19:27,635 --> 01:19:31,635
+2 matrices, 2 matrices of the same order, right?
+
+526
+01:19:31,635 --> 01:19:33,635
+Very particular case, right?
+
+527
+01:19:37,426 --> 01:19:41,367
+vektör, they are committing.
+
+528
+01:19:41,367 --> 01:19:46,907
+If they are committing, of course, their determinant should be equal, right?
+
+529
+01:19:47,627 --> 01:19:51,907
+But if not, what do you think?
+
+530
+01:19:53,028 --> 01:19:56,346
+Is this equality always true or not?
+
+531
+01:19:58,028 --> 01:19:59,228
+Think about it, right?
+
+532
+01:19:59,346 --> 01:20:00,988
+Nine is also...
+
+533
+01:20:01,268 --> 01:20:05,288
+There are many interesting exercises here, right?
+
+534
+01:20:07,907 --> 01:20:18,047
+I suggest you to take a look at these exercises, try to solve at least odd numbers exercises, right?
+
+535
+01:20:19,307 --> 01:20:24,467
+Probably you will have some similar questions in your exam, okay?
+
+536
+01:20:27,730 --> 01:20:35,072
+And something more. I have to reserve an extra class for this salary.
+
+537
+01:20:38,131 --> 01:20:54,730
+Arkadaşlar, geçen cumartesi saat dörde elli dakikalık bir ders koyalım dedik. Sadece üç kişi geldi. Bakın, yani bu eksik dersi telafi etmek zorundayız. Benden de kaynaklanan bir eksiklik değil o. Söylemiştim daha önce. İlk hafta...
+
+538
+01:20:55,123 --> 01:21:21,384
+Sisteme tanımlanmadığı için ders olmadı. Ondan sonraki hafta kampüste genel bir erişim sorunu olduğu için gene olmadı. Tamam mı? Ben elimden geldiğince hızlı gitmeye çalıştım tabii. Hızın da bir sınırı var. Koştura koştura anlatıp da öğrencinin bir şey anlamaması olmaz, o da olmaz. Yani bir derste ben onu eksiği hallederim gibi geliyor, telafi ederim gibi geliyor. Ama siz böyle iki kişi, üç kişi bağlanırsanız olmaz. Nasıl olsa kayıtan izliyoruz diyorsun belki.
+
+539
+01:21:22,068 --> 01:21:45,068
+İzliyorsun ama soru soramayacaksın. Belki bir arkadaşın soru soracak, senin için de iyi olacak. Belki senin de benzer bir sorun var. Ama kimse sormazsa, kapalı kapılar ardında ders yapıyormuşum gibi olacak. Kayıttan dinlemişsin hiçbir farkı yok. Yani banttan ders yapalım o zaman. Online ders yapmanın bir anlamı kalmıyor. Yani birbirimizi görmüyoruz ama...
+
+540
+01:21:45,747 --> 01:21:50,507
+Yani spontane bir şekilde soru sorabiliyorsunuz, sorunuzu yöneltebiliyorsunuz.
+
+541
+01:21:51,627 --> 01:21:51,788
+Yani.
+
+542
+01:21:55,007 --> 01:21:58,488
+Bu cumartesi, bakın yazıyorum buraya.
+
+543
+01:22:01,228 --> 01:22:01,886
+This Sarure.
+
+544
+01:22:01,886 --> 01:22:03,448
+Okey.
+
+545
+01:22:09,652 --> 01:22:36,791
+Extra Class. Eğer iki saat uzun olur diyorsanız, saat dört çok geç oluyor diyorsanız, elli dakika da olur, istediğiniz saatte de olur arkadaşlar. Ama böyle hiçbir şey söylemiyorsanız ben böyle emrivaki yaparım, tamam mı? Cumartesi saat dörtte uygun mudur arkadaşlar? İki saat uzun olur diyorsanız elli dakika da olur. Ondan sonraki hafta bir elli dakika daha koyarız. Sorun değil.
+
+546
+01:22:42,804 --> 01:22:46,663
+Let's say 4 p.m., right?
+
+547
+01:22:49,243 --> 01:22:53,023
+15-minute lecture, okay?
+
+548
+01:22:59,730 --> 01:23:05,291
+I will reserve this extra class and you will receive the link by email, okay?
+
+549
+01:23:07,931 --> 01:23:10,612
+Please don't forget this extra class, okay?
+
+550
+01:23:14,194 --> 01:23:14,715
+Alright.
+
+551
+01:23:24,146 --> 01:23:49,507
+Let me see what we have. Okay, this is an important subject. Co-factor expansion. So far, we have evaluated determinants of square matrices by using definition 3.2. What was the definition 3.2? I don't remember, but we can see. Let's see. And the properties established in section 2.3.2.
+
+552
+01:23:51,570 --> 01:23:54,070
+Let me see, what is definition three point?
+
+553
+01:24:00,307 --> 01:24:04,186
+Let me find this definition 3.2.
+
+554
+01:24:21,076 --> 01:24:29,876
+Here is the definition. The standard, the formal definition of determinant by means of odd and even permutation, right?
+
+555
+01:24:30,996 --> 01:24:34,694
+So you know how to calculate the determinant using the definition.
+
+556
+01:24:35,655 --> 01:24:41,755
+Just calculating the even, determining the even and odd permutations, and then multiplying them.
+
+557
+01:24:42,895 --> 01:24:44,934
+Distinguishing, of course, their signs, right?
+
+558
+01:24:46,067 --> 01:24:53,608
+You have to sum the product and the number you will obtain is exactly, by definition of course, determinant of your matrix.
+
+559
+01:24:54,926 --> 01:25:03,407
+We have also seen some operations called elementable raw operations to find determinant of matrices, right?
+
+560
+01:25:04,567 --> 01:25:12,707
+Now we are in a position to mention another method to find or to calculate determinant.
+
+561
+01:25:13,300 --> 01:25:17,000
+This is called cofactor expansion, right?
+
+562
+01:25:17,719 --> 01:25:23,159
+Actually, we are going to give another method to calculate determinant.
+
+563
+01:25:23,899 --> 01:25:27,399
+Laplace expansion or Laplace rule.
+
+564
+01:25:27,719 --> 01:25:29,440
+You know Sarrou's rule, right?
+
+565
+01:25:30,780 --> 01:25:35,760
+But this is just for 3x3 matrices, right?
+
+566
+01:25:35,819 --> 01:25:37,500
+You can use Sarrou's rule.
+
+567
+01:25:39,340 --> 01:25:40,235
+Let me...
+
+568
+01:25:42,131 --> 01:26:08,211
+Remind you, if you are given a 3x3 matrix, and if you want to calculate this determinant, you can write, you can extend these matrix to this one by adding two row, two columns or two rows. It doesn't matter, right? And then you multiply the entries you see on these roots and then subtract.
+
+569
+01:26:09,940 --> 01:26:10,880
+The sum of
+
+570
+01:26:15,411 --> 01:26:22,411
+Bu, bu adıları, bu adıları,
+
+571
+01:26:22,411 --> 01:26:27,411
+bu adıları,
+
+572
+01:26:27,411 --> 01:26:29,411
+iki adıları,
+
+573
+01:26:29,411 --> 01:26:31,411
+değiliz bir adıları.
+
+574
+01:26:31,411 --> 01:26:33,411
+Bu adıları,
+
+575
+01:26:33,411 --> 01:26:35,411
+3x3 adıları,
+
+576
+01:26:35,411 --> 01:26:37,411
+bu adıları,
+
+577
+01:26:42,194 --> 01:26:52,215
+Efficient way to calculate determinant, and of course it shouldn't depend on the order, right?
+
+578
+01:26:52,434 --> 01:26:56,735
+So that's why we are going to talk about cofactor expansion.
+
+579
+01:26:56,735 --> 01:27:00,815
+So let us see what is cofactor.
+
+580
+01:27:02,835 --> 01:27:07,295
+We have to say what's the meaning of minor.
+
+581
+01:27:09,203 --> 01:27:32,244
+So, suppose you are given a n by n square matrix, if you delete row i and column j of these matrix, of course you will obtain a submatrix of your initial matrix, right, whose order is n minus 1, all right?
+
+582
+01:27:32,947 --> 01:27:48,288
+So, the determinant of this submetrics is called the minor of entries of A. So, according to this definition, every entry of A has its minor, right? Has its minor.
+
+583
+01:27:49,288 --> 01:27:54,166
+For example, let me write.
+
+584
+01:28:00,083 --> 01:28:13,403
+3x3, consider a 3x3 matris, for example. As I said, you have nine entries and nine minors, right? Every entry of this matrix has its own minor.
+
+585
+01:28:14,403 --> 01:28:21,403
+By definition, minor of some of the entries means determinant of the sub-matrix.
+
+586
+01:28:22,771 --> 01:28:35,351
+Obtained by deleting one row and one column, right? So, for example, this is A3, 3, right? This, what is the minor of this entry of our matrix A?
+
+587
+01:28:36,692 --> 01:28:49,652
+You have to delete the row and the column that contains this entry. I'm talking about the third row and third column, right? So, the submetrics is this one, two by two, right?
+
+588
+01:28:50,131 --> 01:28:52,131
+2x2
+
+589
+01:28:52,131 --> 01:28:56,131
+Bu m3, 3
+
+590
+01:28:56,131 --> 01:29:00,131
+Bu m3
+
+591
+01:29:00,131 --> 01:29:10,507
+M3
+
+592
+01:29:13,556 --> 01:29:39,423
+corresponding submetrics Mij, right? Mij. All right, this is a very easy definition. Let's see now what's the meaning of cofactor. The same way you define the minor of any entry, you can now define the cofactor of any entry of your matrix, right? If A is an M by N square matrix, then...
+
+593
+01:29:39,423 --> 01:29:46,744
+By cofactor of some entry a sub ij, you have to understand this one. Look at this.
+
+594
+01:29:50,547 --> 01:29:55,567
+You have to be careful not to confuse minor and cofactor, right?
+
+595
+01:29:55,926 --> 01:30:00,027
+What's the difference between minor and cofactor? Just the sine, right?
+
+596
+01:30:00,746 --> 01:30:03,787
+Just the sine. If you consider the minor of an entry,
+
+597
+01:30:05,226 --> 01:30:12,346
+the, its appropriate sine, then it will be the cofactor of that entry, okay?
+
+598
+01:30:14,746 --> 01:30:16,686
+And this sine is
+
+599
+01:30:17,172 --> 01:30:18,771
+Positive or negative?
+
+600
+01:30:19,431 --> 01:30:28,631
+It will be positive if this exponent, if this power i plus j here, is an even number, of course.
+
+601
+01:30:28,711 --> 01:30:33,371
+Whenever it's an odd number, so you will have a negative sign, right?
+
+602
+01:30:34,692 --> 01:30:37,152
+As the sign of cofactor, okay?
+
+603
+01:30:39,315 --> 01:30:45,175
+Burası açık mı arkadaşlar sizin için? Değilse Türkçe'de söyleyebilirim yani. Bir satır, hızlı bir şekilde.
+
+604
+01:30:47,895 --> 01:30:53,914
+Evet, kırk dört dakika olmuş. Bir beş dakika daha ders yapıp ara verelim. Sorusu olan var mı?
+
+605
+01:30:55,274 --> 01:31:02,675
+Yani minörüyle kofaktörü bir matrisin elemanının, bir elemanının tabii, herhangi bir elemanının minörü, kofaktörü nedir? Bu anlaşıldı mı acaba?
+
+606
+01:31:10,483 --> 01:31:21,063
+Cevap yok. Ben böyle bir sınıf görmedim ya şimdiye kadar. Yani 110-115 kişiyle de lineerce bir dersi yaptım. Yani çocuklar canavar gibi soru soruyordu yani.
+
+607
+01:31:27,411 --> 01:31:29,570
+Beni biraz hayal kırıklığına uğrattı bu sınıf.
+
+608
+01:31:34,036 --> 01:31:45,556
+Bazı hoca vardır ki öğrencinin soru sormasını da istemez. Dersini anlatıp kapayıp gitmeyi sever. Ben interaktif ders anlatmayı seviyorum. Öğrenciden soru gelsin istiyorum. Bakalım.
+
+609
+01:32:01,012 --> 01:32:15,730
+Suppose we are given these matrix, square matrix of order 3. Look at this. When you see this expression, determinant of M12, M12 means what?
+
+610
+01:32:18,532 --> 01:32:22,371
+This is the, in this, in this,
+
+611
+01:32:25,251 --> 01:32:27,012
+indicating the row and the other one.
+
+612
+01:32:28,643 --> 01:32:35,643
+M3
+
+613
+01:32:27,520 --> 01:32:51,851
+Bu, bu
+
+614
+01:32:52,532 --> 01:33:02,612
+Determinant of this submetrics is minus 34, and this is the minor of what? Minor of?
+
+615
+01:33:05,572 --> 01:33:09,291
+What and how? Which entry has this? Has its minor?
+
+616
+01:33:12,172 --> 01:33:19,411
+Of course, this number, right? The entry of A, located in the first row and the second.
+
+617
+01:33:22,483 --> 01:33:24,483
+Column, right? This.
+
+618
+01:33:26,483 --> 01:33:27,483
+Okay.
+
+619
+01:33:28,483 --> 01:33:39,483
+For example, here, M23, M23 means what? You delete. Let me clear my drawing, change the color.
+
+620
+01:33:39,483 --> 01:33:47,340
+This means you are interested in obtaining the minor of...
+
+621
+01:33:47,764 --> 01:33:51,863
+Bu nelerin bu nelerin bu nelerin?
+
+622
+01:33:51,863 --> 01:33:57,163
+İlk adı, 2nd row.
+
+623
+01:33:57,163 --> 01:34:00,863
+İlk adı, 3rd column.
+
+624
+01:34:00,863 --> 01:34:05,462
+Bu nelerin bu nelerin.
+
+625
+01:34:05,462 --> 01:34:14,412
+İlk adı, 2x2 nelerin.
+
+626
+01:34:15,667 --> 01:34:24,148
+So, you write immediately the determinant of this submetrics to find the minor of this entry here, right?
+
+627
+01:34:26,708 --> 01:34:32,708
+The same way you can find the minor of the rest of the elements, of course, right?
+
+628
+01:34:32,708 --> 01:34:40,067
+Since you have nine element, you have to associate nine minors, right?
+
+629
+01:34:42,643 --> 01:34:51,744
+Okay. Now, you have to be careful with the notations you use. This capital A and capital M, right?
+
+630
+01:34:52,923 --> 01:35:07,744
+These notation means you are trying to find the cofactor of the entry in the first row, second column, right? Let me show you.
+
+631
+01:35:08,083 --> 01:35:22,542
+First row and second column, this one. Consider this entry of A. A12 means the cofactor of this number, right? Let me write cofactor.
+
+632
+01:35:26,962 --> 01:35:31,863
+Faktör, minus 1.
+
+633
+01:35:32,983 --> 01:35:38,962
+Actually, it's not good to write minus 1 because you can have minus 1 in different positions, right?
+
+634
+01:35:38,962 --> 01:35:44,523
+So let us write the entry.
+
+635
+01:35:45,940 --> 01:35:52,940
+İzlediğiniz için, bu konuları ve
+
+636
+01:36:09,587 --> 01:36:21,448
+But since i is 1 and j is 2 here, look at this, i plus j is, for this answer I'm talking about a12, right?
+
+637
+01:36:21,448 --> 01:36:29,528
+So i plus j is 1 plus 2 is 3, which is obviously an odd number.
+
+638
+01:36:30,507 --> 01:36:36,047
+So this will be what? Its sign will be negative, right?
+
+639
+01:36:37,076 --> 01:37:02,854
+Minus 1 to the power 3, times determinant, you have to delete, right, and write the determinant of the resulting submetrics, which is this one, right, and you will obtain 34, right?
+
+640
+01:37:03,987 --> 01:37:08,167
+Just compare the minor of the same entry and the cofactor.
+
+641
+01:37:10,346 --> 01:37:10,926
+Right?
+
+642
+01:37:12,547 --> 01:37:15,768
+As I said, the difference is just the sign, right?
+
+643
+01:37:16,128 --> 01:37:24,608
+Look at this. Minor of this entry here is minus 34, but the cofactor is positive 34, right?
+
+644
+01:37:27,027 --> 01:37:27,628
+Okay.
