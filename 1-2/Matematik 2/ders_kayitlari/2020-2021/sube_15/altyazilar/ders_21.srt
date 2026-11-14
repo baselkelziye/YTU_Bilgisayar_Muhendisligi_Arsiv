@@ -1,0 +1,2219 @@
+1
+00:01:48,756 --> 00:01:49,915
+Merhaba arkadaşlar.
+
+2
+00:01:51,475 --> 00:01:54,096
+En son yönlü türevden bahsetmiştik.
+
+3
+00:02:14,228 --> 00:02:30,048
+Örneklere bakıyordum. Bir de gradyan vektör kavramı var. Gradyan vektör ise, şu demek, bir çok değişkenli fonksiyonun ters üçgen f şeklinde gösteriliyor.
+
+4
+00:02:31,048 --> 00:02:38,008
+Fonksiyonun x'e göre türevi i, artı fonksiyonun y'e göre türevi j şeklinde tanımlanan vektör.
+
+5
+00:02:38,008 --> 00:02:40,908
+Burada gradyan vektör diyoruz.
+
+6
+00:02:41,300 --> 00:02:46,200
+Bununla ilgili bir video izliyorduk.
+
+7
+00:03:58,515 --> 00:04:08,115
+Öncelikle, yönlü türevi, tanımdan elde ettik. Şimdi, yönlü türevi,
+
+8
+00:04:12,051 --> 00:04:17,651
+Formülden elde etmeye çalışalım arkadaşlar. Bir de formülden elde etmeye çalışalım.
+
+9
+00:04:36,819 --> 00:04:37,620
+İkisi görüntüle.
+
+10
+00:04:59,956 --> 00:05:01,076
+bu şekilde
+
+11
+00:05:05,779 --> 00:05:08,679
+noktasında yönlü türevi ifade edersem,
+
+12
+00:05:10,860 --> 00:05:14,819
+dOfx'y'nin x0, y0 noktasındaki değerini
+
+13
+00:05:18,100 --> 00:05:18,660
+Bu şekilde.
+
+14
+00:05:48,019 --> 00:06:04,459
+Bakın, aslında burada, fx, i artı fg, j zaten gradyan, diğeri de, a, i artı b, j vektörü şeklinde, Skaler çarpanına çarptığımız zaman, aslında yönlü türevi elde ediyoruz arkadaşlar.
+
+15
+00:06:34,867 --> 00:06:35,747
+Se işte, if it
+
+16
+00:06:50,291 --> 00:06:57,491
+e, u, f, x, y, 1, 2 noktasında şeklinde de ifade edebiliyorum.
+
+17
+00:06:59,891 --> 00:07:02,891
+Artı, f fonksiyonunu y'ye götürevi,
+
+18
+00:07:06,891 --> 00:07:11,791
+i, artı, f fonksiyonunu y'ye götürevi, 2, y, 1, 2 noktasında,
+
+19
+00:07:12,971 --> 00:07:15,512
+şi, skaler çarpım,
+
+20
+00:07:16,468 --> 00:07:19,708
+A'yı artı 5'i, 0'yı artı
+
+21
+00:07:29,812 --> 00:07:35,532
+Burası zaten 0 olduğu için birbirini götürecek. Beni ilgilendiren burası aslında.
+
+22
+00:07:36,512 --> 00:07:46,072
+2y'de, burada x'in 1, x'in 1, y'in 2 olduğu için y'e yerine 2 yazarsam 4j olur.
+
+23
+00:07:46,711 --> 00:07:54,752
+4j ile şeyin çarpımında, scalar çarpımında 1 olacağı için bunun sonucunu 4 olarak elde ederim.
+
+24
+00:08:00,500 --> 00:08:01,451
+ve katlı
+
+25
+00:08:09,172 --> 00:08:10,124
+Bu işin bir
+
+26
+00:09:17,716 --> 00:09:32,755
+f'in y gözlemi, x0, ys bu noktasında, g, skaler çarpım, eğer bize verilen a eşittir, u eşittir, a i artı b eşittir,
+
+27
+00:09:36,052 --> 00:09:38,831
+vektörü, birbirin vektörü değilsin.
+
+28
+00:10:00,000 --> 00:10:07,840
+A kare artı B kare, kare gök içerisinde, çi şeklinde, birim vektörü haline getirerek hesaplamalarımı yapıyoruz.
+
+29
+00:10:07,840 --> 00:10:16,179
+Birim vektör neydi arkadaşlar? O vektörün boyuna bölüyorduk. Bu vektörün boyu nedir? A i artı B i vektörün boyu nedir?
+
+30
+00:10:17,076 --> 00:10:27,895
+Kök içinde akar artı b kare'dir. Dolayısıyla, a bölü kök içinde akar artı b kare, i artı b bölü kök içinde akar artı b kare j şeklinde birim vektör haline getirdik.
+
+31
+00:10:28,975 --> 00:10:33,556
+Farklı sorularda, birim vektör olması gerektiğini unutmayalım.
+
+32
+00:10:58,899 --> 00:11:01,500
+u şarkı olarak da gösterebileceğimizi söylemiştim.
+
+33
+00:11:02,220 --> 00:11:07,539
+u vektörü bölü, u vektörünün boyu şeklinde ifade edebiliriz.
+
+34
+00:11:24,436 --> 00:11:28,776
+BK gökçesinin A kare artı B kare eşittir, bir ise bu bir, birim metrubu.
+
+35
+00:11:43,860 --> 00:11:50,299
+Bir vektör verildiğinde, vektörün boyunu aldığımızda, vektörün boyu bir birimse, o vektöre birim vektör diyoruz.
+
+36
+00:11:50,480 --> 00:11:55,399
+Ama eğer boyu birden farklı çıkarsa, bunu birim vektöre dönüştürmemiz gerekiyor.
+
+37
+00:11:55,500 --> 00:12:01,340
+O da, U'nun birim vektörü, mesela U vektörünün birim vektörü, U şapkalı olarak gösteriliyor.
+
+38
+00:12:02,180 --> 00:12:07,180
+U vektörü bölü, U vektörünün boyu şeklinde elde ediliyor arkadaşlar.
+
+39
+00:12:10,180 --> 00:12:10,940
+Dolayısıyla,
+
+40
+00:12:27,412 --> 00:12:27,971
+İkse göre.
+
+41
+00:12:49,940 --> 00:12:50,560
+İçin olarak.
+
+42
+00:12:55,379 --> 00:13:11,480
+vektörü olarak verildiyse u, yönlü türev f'in x'e göre türevi i, f'in y'e göre türevi j ve noktadaki değerlerini alıyorum elde ettiğim fonksiyonların, türev fonksiyonlarını.
+
+43
+00:13:13,160 --> 00:13:14,720
+Bu şekilde elde ederim.
+
+44
+00:13:15,660 --> 00:13:20,180
+Eğer u vektörü birim vektörü değilse,
+
+45
+00:13:21,364 --> 00:13:23,903
+Birim vektör haline dönüştürmem gerekir.
+
+46
+00:13:25,544 --> 00:13:27,104
+Birim vektör haline de
+
+47
+00:13:27,104 --> 00:13:31,403
+A, İ artı B, Ş şeklindeki bir vektörü
+
+48
+00:13:31,403 --> 00:13:33,264
+A bölü akar artı B kare
+
+49
+00:13:33,264 --> 00:13:35,284
+İ artı
+
+50
+00:13:35,284 --> 00:13:36,403
+B bölü
+
+51
+00:13:36,403 --> 00:13:38,644
+Karakök içerisinde akar artı B kare
+
+52
+00:13:38,644 --> 00:13:41,403
+Ş şeklinde
+
+53
+00:13:41,403 --> 00:13:44,683
+Birim vektöre dönüştürebilirim.
+
+54
+00:13:44,735 --> 00:13:51,676
+Eğer a, i, b, j, c, k şeklinde verdiyse de a bölü kare kök içerisinde a, b, c k, c k,
+
+55
+00:13:52,015 --> 00:14:03,576
+artı b bölü kare kök içerisinde a, b, c k, c k, k şeklinde elde edebilirim.
+
+56
+00:14:05,415 --> 00:14:09,936
+Diyelim ki 3 değişkenli bir fonksiyon olarak verdi.
+
+57
+00:14:12,563 --> 00:14:13,563
+bir
+
+58
+00:14:15,563 --> 00:14:17,563
+üç değişkende fonksiyon alın
+
+59
+00:14:41,908 --> 00:14:48,087
+0 giderken, t'deki değişim 0 giderken,
+
+60
+00:15:01,940 --> 00:15:22,300
+z artı delta z eksi f, x yi z bölü delta t olarak ifade edilir. Bunun açık yazımlarına ve bu fonksiyonun, bu türev fonksiyonunun açıklamalarına girilir. Ancak 3 değişkenli fonksiyon için,
+
+61
+00:15:25,971 --> 00:15:30,192
+Kısacın türev tanımını şu şekilde
+
+62
+00:15:41,556 --> 00:16:07,855
+değişkenli fonksiyon olarak ifade edeceğimi söylemiştim. Buradaki türeve o yüzden dikkat edelim. F fonksiyonunu bir tek değişkenli fonksiyon olarak ifade ettiğimi varsayalım. Yani F fonksiyonu, Fx, Zz fonksiyonu, bir Ft fonksiyonu şeklinde ifade edilsin. Farklı bir fonksiyon olarak Ft şeklinde ifade edilir.
+
+63
+00:16:08,916 --> 00:16:11,916
+O zaman D pisi bölü, D t.
+
+64
+00:16:13,336 --> 00:16:18,336
+Çünkü arkadaşlar, kısmi türevde çok değişkenli fonksiyonu ihtiyacım var.
+
+65
+00:16:18,776 --> 00:16:22,296
+Ya da 3 değişkenli bir fonksiyonun tek değişkenli bir türevi alınmaz.
+
+66
+00:16:23,296 --> 00:16:25,155
+Ya zincir kurulacak vesaire.
+
+67
+00:16:25,436 --> 00:16:30,576
+Eğer kısı t gibi bir fonksiyonu eşitliyorsam ben onu, normal türevi almak zorundayım.
+
+68
+00:16:32,655 --> 00:16:35,036
+D pisi bölü.
+
+69
+00:16:37,011 --> 00:16:37,672
+Diz.
+
+70
+00:16:50,515 --> 00:16:54,115
+ds, ds bölü, dt olarak,
+
+71
+00:16:59,187 --> 00:17:02,408
+Zincir kuralından bu formülü elde ediyor.
+
+72
+00:17:03,107 --> 00:17:08,728
+Aslında bu da iki tane vektörün skaler çarpıları.
+
+73
+00:17:23,188 --> 00:17:25,908
+D x bölü, D z, k.
+
+74
+00:17:27,048 --> 00:17:27,568
+Burada
+
+75
+00:17:45,044 --> 00:17:49,024
+DZ'ye gürü DT, K olarak ifade edelim.
+
+76
+00:17:50,304 --> 00:17:52,184
+Bunun bir birim vektörü olması,
+
+77
+00:17:56,307 --> 00:18:17,168
+Burası ise, f fonksiyonunun sırasıyla türevlerimi aldığımız, f'in x'e göre türevi, i artı f'in y'ye göre türevi, j artı f'in z'ye göre türevi, yani aynı durumu 3 değişkenli fonksiyonunda da yönlü türevi ya da gradyanti bu şekilde alıyoruz.
+
+78
+00:18:49,364 --> 00:18:51,044
+Böylelikle, birim ekliyorum.
+
+79
+00:19:06,228 --> 00:19:12,788
+ma i artı, b j artı, c k şeklinde ifade edebiliriz.
+
+80
+00:19:16,051 --> 00:19:19,791
+açıklamalardan sonra bir örnek üzerinden
+
+81
+00:19:27,092 --> 00:19:32,092
+fonksiyon için açıklamalarını biraz hızlı geçtik.
+
+82
+00:19:35,763 --> 00:19:37,203
+x yazı fonksiyon olarak
+
+83
+00:19:41,971 --> 00:19:59,251
+fonksiyonu alalım. x² y² z² fonksiyonunu alalım. Bu fonksiyonun 1, 2, 3 önündeki 1, 2, 3 noktası.
+
+84
+00:20:06,195 --> 00:20:16,056
+I artı, J artı, K vektör yönündeki doğru yönlü türevini alalım.
+
+85
+00:20:37,652 --> 00:20:41,811
+Şimdi arkadaşlar, bakın burada u vektörü mesela, birim vektörü mü?
+
+86
+00:20:51,284 --> 00:20:53,244
+Tabii ki onu dosya listede yollayayım.
+
+87
+00:20:53,884 --> 00:20:55,704
+Bu birim vektör mü arkadaşlar? Evet.
+
+88
+00:20:57,384 --> 00:20:58,244
+Ne düşünüyorsunuz?
+
+89
+00:21:06,579 --> 00:21:07,559
+Dosiyası atacağım.
+
+90
+00:21:22,228 --> 00:21:28,048
+Evet arkadaşlar, bu vektör birim vektör mü.
+
+91
+00:21:36,307 --> 00:21:37,448
+Ne düşünüyorsunuz?
+
+92
+00:22:18,355 --> 00:22:19,355
+İç segeri türev ve
+
+93
+00:22:25,652 --> 00:22:30,852
+Şi artı, F'in z'ye göre türevi, K şeklinde ifade edilir.
+
+94
+00:22:32,492 --> 00:22:36,592
+U'yu birim vektör olarak almamız gerektiğini söylemiştim.
+
+95
+00:22:37,771 --> 00:22:40,291
+U vektörü birim vektör değildir.
+
+96
+00:22:40,592 --> 00:22:46,432
+Bakın birin karesi artı, birin karesi artı, birin karesi köküçtür.
+
+97
+00:22:46,932 --> 00:22:49,032
+Birden farklıdır, birim vektör değildir.
+
+98
+00:22:51,700 --> 00:23:06,920
+Birim vektörünü alınır. U şartla, U vektörü bölü, U vektörünün boyu şeklinde olacaktır. Bu da, 1 bölü, köküç, i, U vektörünün boyunu, köküç olarak bulduk burada bakın.
+
+99
+00:23:08,500 --> 00:23:16,420
+Artı 1 bölü, köküç, j, artı 1 bölü, köküç, k olarak elde ediyoruz.
+
+100
+00:23:18,483 --> 00:23:21,364
+f'in x'e göre türevi, 2x
+
+101
+00:23:26,355 --> 00:23:28,835
+f'in z'ye göre türevi, 2 z'dir.
+
+102
+00:23:30,195 --> 00:23:43,275
+Ancak burada, 1, 2, 3 noktasındaki f'in x'e göre türevi, 1, 2, 3 noktasındaki f'in y'ye göre türevi, ve 1, 2, 3 noktasında f'in z'ye göre türevi olduğunu unutulalım.
+
+103
+00:23:46,395 --> 00:23:48,536
+Dolayısıyla, bu hesaplamaları da yapalım.
+
+104
+00:23:48,695 --> 00:23:52,476
+Bakın, f'in x'e göre türevi, x karenin türevi sadece 2x olacak.
+
+105
+00:23:53,523 --> 00:23:58,923
+y kare ve z karenin x'e göre türevi sıfır zaten. Çünkü y kare ve z kareyi sabit sayılar gibi düşünüyorduk.
+
+106
+00:23:59,403 --> 00:24:05,143
+f'in y'ye göre türevi, y karenin türevi 2y, f'in z'ye göre türevi 2z, sadece z'ye göre.
+
+107
+00:24:05,743 --> 00:24:09,103
+f'in y'ye göre türevinde x kare ve z karenin türevi de sıfır oluyor.
+
+108
+00:24:09,864 --> 00:24:13,323
+f'in z'ye göre türevinde y kare ve x kareler...
+
+109
+00:24:13,332 --> 00:24:35,291
+z'ye götürüvü sıfır oluyor. Bakın burada z, y ve x bağımsız değişkenler. Ona dikkat edin. Yani z, x'e ve y'ye bağlı değil. f, x, y, z. Belki şöyle olabilir. Bir w gibi bir fonksiyon olabilir. Yani w eşittir. Pardon. Kötü oldum. W eşittir. f, x, y, z gibi bir fonksiyon olabilir.
+
+110
+00:24:35,776 --> 00:24:46,736
+Böyle bir fonksiyon olduğunda da W bağımlı değişkendir. Yani X, Y, Z, T bağımlı değişkendir. W eşittir. W, X, Z şeklinde gösterebiliriz. Y eşittir, Y, X fonksiyonu gibi düşünün.
+
+111
+00:24:48,256 --> 00:24:56,516
+Buraya dikkat edin arkadaşlar. Dolayısıyla X karenin türevini alıyorum. F'in X'e göre türevini alırken.
+
+112
+00:24:57,044 --> 00:25:04,844
+Y kalemi türevini alıyorum, F'in Y göre türevini alırken, Z kalemi türevini alıyorum, F'in Z göre türevini alırken, diğerleri zaten otomatikman sıfır oluyor.
+
+113
+00:25:04,944 --> 00:25:09,903
+Artı durumunda olduğu için, otomatik olarak direkt sıfır oluyor arkadaşlar.
+
+114
+00:25:17,268 --> 00:25:42,988
+F'in x'e göre türevi, x yerine 1 verirsek, 2x, 2 olur. 2i, artı. F'in y'e göre türevi 2y'dir. y değeri olarak noktadaki değer 2'dir, 4ş olur. Artı. F'in z'e göre türevi 2z'dir. z 3 olduğu için, 2 kere 3, 6k olarak elde edelim. Burası da, 1 bölü köküç i.
+
+115
+00:25:46,355 --> 00:25:59,735
+artı, bir bölü köküç, j artı, bir bölü köküç, k olarak, birim vektör haline getirerek, bu vektörü de bu şekilde yazıyorum.
+
+116
+00:26:01,815 --> 00:26:11,775
+Bu çarpımı alırsam da, iki bölü köküç, artı, dört bölü köküç, artı, altı bölü köküç ifadesinden,
+
+117
+00:26:12,819 --> 00:26:18,360
+12 bölü kök 3 olarak yönlü türevi elde edelim.
+
+118
+00:26:24,564 --> 00:26:30,543
+Değişkenli fonksiyon olarak ifade edip, tek değişkenli fonksiyon üzerinden limit alarak yapılmasını yapmayacağım.
+
+119
+00:26:30,943 --> 00:26:34,983
+O oldukça uzun ve zorlu bir soru olmuş oluyor.
+
+120
+00:26:35,463 --> 00:26:44,704
+Ancak iki değişkenli durumda, tek değişkenli bir fonksiyon olarak ifade edip, yönlü türevinin alınmasını bilmeniz iyi olur.
+
+121
+00:26:45,704 --> 00:26:48,704
+O şekilde sorulabilir.
+
+122
+00:26:49,943 --> 00:26:52,023
+Ancak daha fazla değişkenlerde,
+
+123
+00:26:52,980 --> 00:26:57,900
+biraz daha zorlu olduğu için o konuya girmeyeceğim.
+
+124
+00:27:00,200 --> 00:27:05,659
+F'in x'e göre türevi i, artı F'in y'ye göre türevi j, artı F'in z'ye göre türevi k.
+
+125
+00:27:05,659 --> 00:27:10,539
+Ancak bu türev fonksiyonların noktadaki değerlerini alıyorum.
+
+126
+00:27:11,099 --> 00:27:16,559
+Daha sonra u yönündeki türevi soruyor.
+
+127
+00:27:20,692 --> 00:27:32,831
+Unutmayalım arkadaşlar. U birim vektörü yönündeki türev ise, eğer bize bir vektör verdiyse, U yönünde dediyse, U birim vektör haline getirmem gerekiyor.
+
+128
+00:27:34,172 --> 00:27:46,251
+Aynı zamanda, bir farklı soru tipi olarak, U vektörü olarak değil de, bir A noktası ve bir B noktası vererek,
+
+129
+00:27:47,412 --> 00:28:05,311
+x0, y0, z0, b noktası x1, y1, z1 noktası olarak vererek, ab yönünde ya da ba yönünde doğrult süreninde sorabilir.
+
+130
+00:28:10,771 --> 00:28:28,311
+yönünde ya da BA yönünde türevini sorabilir. Ya da Z0 çıkaralım. X0, Y0, X1. Bu durumda arkadaşlar, A ve B nokta arası arasındaki farkı alarak, yani ne yapıyorduk? X1-X0, Y, artı,
+
+131
+00:28:30,099 --> 00:28:40,500
+y1-y0, j artı z1-z0, k şeklinde vektör oluşturuyorduk. O vektör yönündeki türevini alacağız.
+
+132
+00:28:41,699 --> 00:28:55,739
+y1 olarak verip, ab yönünde doğrultu türevini sorabilir. Bu takdirde ab yönü derse, x1-x0, y1-y0 olarak ab yönündeki
+
+133
+00:28:56,980 --> 00:29:16,740
+vektörü alacağız. O vektörü de eğer birim vektörü değilse, eğer birim vektörü çıkarsa ne ala? Birim vektörü çıkarsa zaten direkt yaparız. Ama birim vektörü çıkmazsa, o yöndeki türevü sorarsa, elde ettiğimiz vektörü birim vektörü haline getirerek o yöndeki türevi elde ederiz.
+
+134
+00:29:17,460 --> 00:29:33,380
+Birim vektör haline getirmek için de, eğer bu şekilde verirse, ne yapıyorduk? A, i artı, b, j halinde olduğunu varsayalım. Yani x, 1-x, 0'ın, a, y, 1-y, 0'ın, b olduğunu düşünelim. A, i artı, b, j şeklinde bir vektör olduğunu düşünelim.
+
+135
+00:29:34,480 --> 00:29:45,355
+Ya da 3 değişkenli de, 3 boyutlu da olabilir. 3 tane de olabilir. A, b, c, a, i artı, b, j, artı, c, k şeklinde de vermiş olabilir. Bu takdirde, her iki değişkenli olduğunu...
+
+136
+00:29:45,587 --> 00:30:10,587
+A'yı artı B'şi vektörü eğer birim vektörü değilse, birim vektörü haline A bölü kare kök içerisinde akarı artı B kare, B bölü kare kök içerisinde akarı artı B kare i artı B bölü kare kök içerisinde akarı artı B kare j şeklinde birim vektörü haline getirip işlemleri yapmam gerekir.
+
+137
+00:30:10,587 --> 00:30:12,587
+Buraya dikkat ederseniz.
+
+138
+00:30:14,548 --> 00:30:17,788
+Görünür türev. Anlatacaklarım benim bu kadar.
+
+139
+00:30:25,299 --> 00:30:32,579
+Şimdi gradyan vektöre bakalım. F'in x'e göre türevi, kısmi türevi i, f'in y'e göre türevi kısmi türevi i'dir.
+
+140
+00:30:33,139 --> 00:30:46,859
+Yönlü türevde fx'ye fonksiyonu f0, x0, y0 içeren bir bölgede türevlenebilirse, bu durumda f'in p0'daki u birim vektörü yönündeki türevidir.
+
+141
+00:30:46,859 --> 00:30:51,279
+Yani bir birim vektörü yönündeki türevidir. Aslında bu da arkadaşlar, gradyan f.
+
+142
+00:30:51,796 --> 00:30:58,976
+Demin yaptığımız işlemler, gradiyent f, p sıfır noktasında çarpı u birim vektörüdür arkadaşlar.
+
+143
+00:30:59,396 --> 00:31:01,236
+u birim vektörüdür.
+
+144
+00:31:02,076 --> 00:31:12,296
+Dolayısıyla, gradiyent f'i alıp, u birim vektörü ile çarptığında, yönlü türevi elde ediyorum ben.
+
+145
+00:31:18,483 --> 00:31:22,603
+V eşittir 3'ye eksi 4'ye yönündeki türevine bakalım arkadaşlar.
+
+146
+00:31:23,103 --> 00:31:24,103
+Bu yönündeki türevine bakalım.
+
+147
+00:31:25,483 --> 00:31:26,223
+Şimdi sırasıyla
+
+148
+00:31:26,223 --> 00:31:29,783
+Önce
+
+149
+00:31:35,667 --> 00:31:48,807
+V vektörü, birim vektörü mü arkadaşlar? Birim vektörü mü? Değil. O zaman birim vektörü dönüştürmemiz lazım. Yani vektörün boyuna bölmemiz lazım vektörü.
+
+150
+00:31:49,647 --> 00:31:59,407
+3'ün karesi artı 4'ün karesinin kare kökü, kök 25'tir. 5 olarak çıkartışır. 3 bölü 5 i, eksi 4 bölü 5 i olarak birim vektörü dönüştürür.
+
+151
+00:32:01,071 --> 00:32:08,311
+Vektörünün birim vektörü, v şapkalı olarak gösterilir. V vektörü bölü, v vektörünün boyu ile hesapladır.
+
+152
+00:32:08,791 --> 00:32:16,091
+Şimdi birim vektör, 3 bölü 5 i, eksi 4 bölü 5 j olarak elde ediliyor. Bu birim vektörü kullanacağım.
+
+153
+00:32:17,871 --> 00:32:24,311
+Bir de, bana ne lazım? Gradyan lazım. Gradyan f nedir?
+
+154
+00:32:27,728 --> 00:32:32,028
+Artı f fonksiyonunun y'ye göre türevi j'dir.
+
+155
+00:32:32,228 --> 00:32:35,148
+F fonksiyonunun x'e göre türevini ve y'ye göre türevini alın.
+
+156
+00:32:36,048 --> 00:32:41,488
+Şimdi f fonksiyonunun x'e göre türevi, x e üzeri y'nin x'e göre türevi, e üzeri y'dir zaten.
+
+157
+00:32:42,228 --> 00:32:43,488
+E üzeri y. Bakın.
+
+158
+00:32:45,088 --> 00:32:50,008
+Kosünüs x'i y'nin x'e göre türevi, x'i y'nin x'e göre türevini alacağız.
+
+159
+00:32:50,248 --> 00:32:51,588
+x'i y'nin x'e göre türevini aldık.
+
+160
+00:32:51,588 --> 00:32:55,068
+Y. Kosünüs x'i y'nin türevini aldık.
+
+161
+00:32:55,412 --> 00:32:57,472
+eksi sinüs, x'i oldu.
+
+162
+00:32:57,952 --> 00:33:02,712
+Fosinüs'ün türevi, eksi sinüs. Bir de y vardı, eksi y, sinüs x'i oldu.
+
+163
+00:33:03,492 --> 00:33:06,632
+e üzeri y, eksi y, sinüs x'i oldu.
+
+164
+00:33:06,792 --> 00:33:12,052
+Artı, şimdi fonksiyonun y'ye göre türevini alıyorum.
+
+165
+00:33:12,392 --> 00:33:14,292
+x, e üzeri y'nin türevi, x, e üzeri y'dir.
+
+166
+00:33:14,612 --> 00:33:18,172
+Sadece y'li fonksiyonun türevini alıyorum.
+
+167
+00:33:18,172 --> 00:33:20,732
+O da e üzeri y. e üzeri y'nin y'ye götürür zaten.
+
+168
+00:33:21,292 --> 00:33:22,592
+Tekrar e üzeri y.
+
+169
+00:33:23,476 --> 00:33:46,816
+Kosinus x'i'nin y'ye göre türevi, eksi sinüs x'i'ye. Bir de ne var? İçerisinin y'ye göre türevi arkadaşlar. x'i'nin y'ye göre türevi x'dir. y'nin türevi y'ye göre 1'dir zaten. x'de sabit bir sayı gibi kalır arkadaşlar. Dolayısıyla, gradyan f'in,
+
+170
+00:33:49,011 --> 00:34:07,311
+2, 0 noktasındaki değerine ihtiyacım var benim. Buradaki x yerine 2, y yerine de 0 koyuyorum. Bakın y yerine 0 koydum. E üzeri 0, 1. Y yerine 0 koydum. Bu taraf gitti. 1i oldu bakın. 1i. Şimdi şuraya bakalım.
+
+171
+00:34:08,563 --> 00:34:17,003
+Burası artık önemli değil, zaten gitti. X yerine 2 koydum, Y yerine 0 koydum. E sinüs 0, 0 burası da gitti.
+
+172
+00:34:20,143 --> 00:34:35,583
+X yerine 2 koydum, Y yerine 0 koydum, E zili 0, 1, 1 çarpı 2'den burası 2 oldu. Dolayısıyla 2J oldu. Yani İ artı 2J olarak elde ettim, gradyanı.
+
+173
+00:34:35,903 --> 00:34:50,324
+Gradiyan, skaler çarpım, birim vektör diyorduk. Birim vektörü de elde ettik arkadaşlar. Bakın bunu 3y-4j olarak hesaplamayın. Yanlış sonuç elde edersiniz. 3 bölü 5y, eksi 4 bölü 5j olarak aldım.
+
+174
+00:34:51,284 --> 00:34:56,404
+Bu skaler çarpımı yaptığımda, i'li terimleri çarptım, 3 bölü 5 çarpı 1, 3 bölü 5 oldu.
+
+175
+00:34:56,963 --> 00:35:01,123
+j'li terimleri çarptım, eksi 4 bölü 5 ile 2'yi çarptım, eksi 8 bölü 5 oldu.
+
+176
+00:35:01,244 --> 00:35:05,384
+3 bölü 5, eksi 8 bölü 5, eksi 5 bölü 5'ten, eksi 1 olarak elde ediyorum.
+
+177
+00:35:05,963 --> 00:35:11,463
+Skaler çarpımda zaten i'lerin ve j'lerin çarpımları, i ve j vektörleri birbirlerinin dik olduğu için,
+
+178
+00:35:12,644 --> 00:35:16,564
+kosünüs 90'da 0 olduğu için 0 oluyordu arkadaşlar.
+
+179
+00:35:17,876 --> 00:35:26,236
+Birbirine paralel vektörlerin çarpımı sadece aralarındaki açı 0 olduğu için, kusun 0, 1 olduğu için, 1 olarak elde ediliyor arkadaşlar.
+
+180
+00:35:29,076 --> 00:35:32,936
+Ve şunu da ifade edelim. Yönlü türevi neyi ifade eder?
+
+181
+00:35:33,576 --> 00:35:43,155
+Z-Eşitir F-X-Y'nin yönlü türevi bir noktadaki, P0 noktasında mesela yönlü türevi, U yönündeki yönlü türevi, U yönünde,
+
+182
+00:35:43,956 --> 00:35:51,796
+O noktada, yani P0 noktadaki artış hızı oranı, azalış hızı oranı, değişim oranı anlamlarına gelir.
+
+183
+00:35:52,296 --> 00:35:54,256
+Yani bunlardan bir anlamlarına gelir.
+
+184
+00:35:54,736 --> 00:35:57,536
+Yani artışsa artıştır, azalışsa azalıştır.
+
+185
+00:35:57,536 --> 00:36:01,976
+O türevin vektörün yönüne göre bu değişir arkadaşlar.
+
+186
+00:36:02,996 --> 00:36:04,476
+Yani değişim oranını ifade eder.
+
+187
+00:36:04,816 --> 00:36:05,695
+Bildiğimiz türev aslında.
+
+188
+00:36:08,036 --> 00:36:10,516
+Şimdi yönlü türevin bazı özellikleri var.
+
+189
+00:36:11,668 --> 00:36:13,827
+Buraya kadar anlaşılmayan bir yer var mı?
+
+190
+00:37:06,579 --> 00:37:32,619
+O zaman şimdi özelliklerine bakalım. Yönü türev'in özellikleri, duf aslında gradyan f çarpı yönü türev. O istenen, verilen vektörün çarpımıdır, birim vektörün çarpımıdır, birim vektörün çarpımıdır. Aynı zamanda gradyan f'in boyu çarpı u çarpı cos theta'dır.
+
+191
+00:37:33,331 --> 00:37:42,172
+Ya da gradyan f'in boyu çarpı kosterildir. Kosterist teta eşittir 1 olduğunda, yani teta 0 olduğunda, f fonksiyonu en hızlı şekilde artar.
+
+192
+00:37:42,492 --> 00:37:52,931
+Yani en büyük yönlü türev değerine ulaşır. U ile gradyan f aynı yöndedir. Yani en çok P'deki gradyan vektör yönünde artar.
+
+193
+00:37:53,391 --> 00:37:55,912
+Bu yöndeki türev de d, u, f'tir dolayısıyla.
+
+194
+00:37:56,788 --> 00:38:04,728
+Benzer şekilde f fonksiyonu en fazla, eksi gradyan f yönünde azalır. Bu yöndeki türevde eksi gradyan f'tir.
+
+195
+00:38:06,448 --> 00:38:15,547
+Ve gradyan f sıfırdan farklıysa arkadaşlar, gradyane dik olan herhangi bir u yönü f'teki sıfır değişimi yönüdür.
+
+196
+00:38:15,748 --> 00:38:18,327
+Çünkü teta nedir? pi bölü 2'dir arkadaşlar.
+
+197
+00:38:18,988 --> 00:38:23,248
+Ve dolayısıyla buradan ne elde ederim ben?
+
+198
+00:38:23,987 --> 00:38:29,827
+teta eşitir, pi bölü 2'dir ve duf, gradyan f çarpı kosunus pi bölü 2, sıfırdır.
+
+199
+00:38:30,387 --> 00:38:32,827
+Şimdi bakalım, örneklere gidelim.
+
+200
+00:38:51,284 --> 00:38:58,444
+Diyelim ki bize şöyle bir fonksiyon verdi. x kare bölü 2 artı y kare bölü 2 şeklinde bir fonksiyon verdi arkadaşlar.
+
+201
+00:38:59,123 --> 00:39:00,163
+Bu durumunu ne yapacağım ben?
+
+202
+00:39:01,704 --> 00:39:04,744
+Aşağıdaki durumlarda yönünü bulunmamış.
+
+203
+00:39:05,163 --> 00:39:09,804
+1, 1'de en çok artan, 1, 1'de en çok azalan f'teki sıfır değişimin yönü.
+
+204
+00:39:10,364 --> 00:39:12,224
+Bunların anlamlarını gördük.
+
+205
+00:39:12,224 --> 00:39:14,844
+Şimdi tek tek yönlü türevlerine bakalım.
+
+206
+00:39:16,224 --> 00:39:18,224
+U ile gradyan f aynı yöndedir.
+
+207
+00:39:20,083 --> 00:39:31,903
+Dolayısıyla, u vektörü, i bölü, kök 2 artı j bölü, kök 2 olacak. Değil mi? Bunun bir, bir noktasının birim vektör olmadığını biliyoruz. Birim vektörü dönüşeceğiz.
+
+208
+00:39:32,823 --> 00:39:46,923
+i bölü, kök 2, bir bölü kök 2, i artı bir bölü kök 2, j olacak. Dolayısıyla, yönlü vektörü buldum. U ile gradyan f,
+
+209
+00:39:47,284 --> 00:40:02,104
+Ters yönlüdür. Dolayısıyla ters yönlü olduğunda en çok azalandır. Bu durumda da eksi bir bölü kökü i, eksi bir bölü kökü j'dir. Boyu zaten hep aynı arkadaşlar. Eksi bir de olsa, eksi birin karası artı, eksi birin karası yine kökü yapıyor.
+
+210
+00:40:02,844 --> 00:40:12,484
+F'teki sıfır değişimi yönü neydi? Birbirine dikti gradyanla u vektörü. U eşitir a'yı artı b'j'yi. Gradiyan f, i'ye artı j'yi arkadaşlar.
+
+211
+00:40:21,300 --> 00:40:36,880
+Birbiri noktasında, bakın bu gradyan i artı j oldu. X'e göre türev aldık, y'ye göre türev aldık. Birbiri noktasındaki değerini yazdık. U çarpı gradyan f sıfırdır. Dolayısıyla a artı b de sıfırdır. Çünkü bunların çarpımları a artı b oluyor.
+
+212
+00:40:41,108 --> 00:40:57,927
+B-1'dir. A-1 ise B-1'dir arkadaşlar. Dolayısıyla, U1, i bölü kök 2, eksi j bölü kök 2, U2'de eksi i bölü kök 2, artı j bölü kök 2 olarak elde edilir arkadaşlar.
+
+213
+00:41:04,916 --> 00:41:15,456
+fx'ye türevlenir bir fonksiyorsa, tanım kümesinin her x0, y0 noktasında f'in gradyan vektörü x0, y0 noktasında seviye eğisinde normaldir.
+
+214
+00:41:15,556 --> 00:41:23,856
+Seviye eğilerinden bahsetmiştim arkadaşlar. Buna normal vektör olarak, dik bir vektör olarak elde edilir.
+
+215
+00:41:24,224 --> 00:41:47,124
+Yani mesela fxc fonksiyonu gti artı htj boyunca sabit değer alıyorsa, fgthc'ye eşittir. Yani t'ye göre türevde dolayısıyla, bakın, df bölü dx dx bölü dt artı df bölü dye dy bölü dt olacak. Bu sıfırdır. Çünkü sabitin türevi neydi? Sıfırdı arkadaşlar.
+
+216
+00:41:47,603 --> 00:42:07,743
+Bu gt'nin türevidir, bu da ht'nin türevidir, x'i artı y'i olarak aldığımızda. Dolayısıyla bu da gradyan f çarpı, rt'nin türevidir, bu da sıfırdır. Dolayısıyla t et, gradyan f eğriye normaldir arkadaşlar, seviyesine normaldir.
+
+217
+00:42:12,659 --> 00:42:29,899
+Gradiyan F ile Gradiyan G toplanabilir. Gradiyan F ile Gradiyan G çarpımı, G çarpı Gradiyan F artı F çarpı Gradiyan G'dir. Türev kurallarına benziyor bunlar. Bölümün türevi şeklinde bu da bakın. Aynı kurallar geçerli, türevdeki kurallar geçerli.
+
+218
+00:42:29,899 --> 00:42:38,480
+3 değişkenli fonksiyonlarda da Gradiyan yine benzer şeklinde. Gradiyan F, Fx, i artı, Fy, j artı, Fz, k şeklinde.
+
+219
+00:42:39,092 --> 00:42:42,452
+Yönlü türevde, gradyan f çarpı u'ydu arkadaşlar.
+
+220
+00:42:43,912 --> 00:42:51,412
+Yani iki değişkenli fonksiyonlarda oluşturduğumuz kurallar, üç değişkenli fonksiyonlarda da geçerli.
+
+221
+00:42:52,452 --> 00:42:55,512
+fx, y, z, x küp, x, y, kare, x, z olsun.
+
+222
+00:43:10,579 --> 00:43:15,859
+P11 sıfır noktasında, V yönünde türevi bulalım.
+
+223
+00:43:18,079 --> 00:43:21,460
+F en hızlı olarak P sıfırda hangi yönünde değişir?
+
+224
+00:43:22,139 --> 00:43:23,939
+Bakın bu yöndeki değişim oranı nedir?
+
+225
+00:43:24,899 --> 00:43:28,920
+V eşittir, V bölü V'nin boyu diyoruz.
+
+226
+00:43:29,699 --> 00:43:33,179
+Öncelikle vektörü, birim vektörü dönüştürmemiz gerekir.
+
+227
+00:43:33,779 --> 00:43:34,460
+Dönüştürdük.
+
+228
+00:43:34,931 --> 00:43:47,192
+Yani 2'nin karesi, 3'ün karesi, artı 6'nın karesi, 144 yapıyor ve bunun kare kökü de 7 olarak, pardon 49 yapıyor. Bu da 7 olarak çıktı kare kökten.
+
+229
+00:43:49,748 --> 00:44:16,568
+Bunun x'e göre türevini aldık. x kübün türevini aldık. x kare, x'e karenin türevini aldık. x'e göre y kare, 3x kare x'e kare i. Artı buranın y'e göre türevini alıyoruz. x'in ve z'nin türevleri zaten sıfır oldu arkadaşlar. x'e karenin türevi 2x'ye oldu. 2x'ye j, z'e göre türev zaten, x'i z'in türevi, x'i bir k olmuş oldu. Gradyan hep bu. 2y eksi, 2j eksi k'dır.
+
+230
+00:44:17,076 --> 00:44:29,815
+Dolayısıyla u ile gradyan f çarptığında da 4 bölü 7'yi elde ediyorum. Bu vektörle bu gradyan vektörünü çarptığında 4 bölü 7 oluyor. Sırasıyla çarpacağız. İli terimleri, jli terimleri ve k6 terimleri.
+
+231
+00:44:30,635 --> 00:44:34,755
+Dolayısıyla fonksiyon en hızlı gradyan f yönünde artar.
+
+232
+00:44:35,123 --> 00:44:43,063
+Eksi gradyan F'nin azalır. Bunun eksisini alıp o vektör yönünde azaldığını söyleyebilirim. Yani şıklarda, sorularda bu şekilde düşünmeniz gerekiyor.
+
+233
+00:44:43,683 --> 00:44:52,103
+Bu yönlerde değişim oranları da bunların boyunu aldığım zaman gradyan F'nin boyu 3, eksi gradyan F'de eksi 3 olarak elde edilir.
+
+234
+00:44:53,344 --> 00:44:59,103
+Bundan sonra da T düzden ve normal doğru kavramlarına geçeceğiz.
+
+235
+00:44:59,860 --> 00:45:08,560
+Yine yerleştirme ve diferansiyel kavramları ve maksimum minimumlar var. Daha sonra katlı integralere geçeceğiz arkadaşlar.
+
+236
+00:45:14,643 --> 00:45:28,923
+Şimdi birkaç tane daha örnek yapalım, gradyan vektörle ilgili. Daha sonra da diferansiyel ve lineerleştirme, t-düzlem ve normal doğrusuna geçeceğiz arkadaşlar.
+
+237
+00:45:37,811 --> 00:45:47,351
+Şimdi, gradyanla ilgili arkadaşlar, gradyan vektör nedir? Bir bakalım.
+
+238
+00:45:48,431 --> 00:45:53,831
+Yönlü türevinin maksimum değerini ve en hızlı artış yönünü bulabileceğimiz vektör.
+
+239
+00:45:53,831 --> 00:45:56,931
+Çok değişkenli fonksiyonlarda, z eşidir.
+
+240
+00:45:57,391 --> 00:45:59,231
+Z'lik, z şeklinde bir fonksiyonun.
+
+241
+00:46:05,108 --> 00:46:19,948
+Maksimum değerini ve artış hızını bilmek isteyebiliriz. Bu durumda gradyan vektöre ihtiyacımız var. Gradyan vektör ters üçgen ile ifade edilir.
+
+242
+00:46:23,188 --> 00:46:23,967
+İçin bir der.
+
+243
+00:46:28,403 --> 00:46:40,024
+F fonksiyonunun, x'e göre kısmi türevi, çarptı i, artı F fonksiyonunun, y'ye göre kısmi türevi, j şeklinde ifade edilir.
+
+244
+00:46:40,583 --> 00:46:46,804
+Aslında gradyan vektör, yönlü türevin, ilk kısmı olduğunda, görüyoruz burada.
+
+245
+00:46:47,704 --> 00:46:54,423
+Yönlü türevde, f'in x'e göre türevi, i, artı f'in y'ye göre türevi, j, bir de,
+
+246
+00:46:55,188 --> 00:47:00,228
+yön olarak aldığımız birim vektörü, skaler çarpımlarını almıştık.
+
+247
+00:47:03,731 --> 00:47:11,592
+F fonksiyonunu, Z işte F, X, Y şeklinde fonksiyonu, bir X, Y noktasında,
+
+248
+00:47:16,820 --> 00:47:37,260
+Birinci dereceden kısmi türevleri mevcutsa, yani df bölü dx kısmi türevi ve df bölü dy kısmi türevleri mevcutsa, f fonksiyonunun noktadaki gradyanı, gradyan fksiye eşittir.
+
+249
+00:47:38,260 --> 00:47:43,240
+f'in x'e göre türevi i artı f'in y'e göre türevi g şeklindedir.
+
+250
+00:47:43,476 --> 00:48:05,956
+Ve bir noktada gradyende, gradyanın fx'i'ye, ab'e' noktasında isterse, f'in x'e göre türevi, ab, i, artı f'in y'e göre türevi, ab, j şeklinde bulunur.
+
+251
+00:48:07,396 --> 00:48:10,976
+Görünür türevde yine gradyanın değerini bulmuştuk.
+
+252
+00:48:37,523 --> 00:48:43,523
+fonksiyon ve ser, bu fonksiyonun, gradyan, gradyan, e...
+
+253
+00:48:55,764 --> 00:49:16,623
+E0, Z0, i artı, f'in y'ye göre türevi, x0, y0, z0, j artı, f'in z'ye göre türevi, x0, y0, z0, k şeklinde ifade edilir.
+
+254
+00:49:40,659 --> 00:49:55,899
+F'in x'e göre türevi, a, i, artı, f'in y'e göre türevi, a noktasındaki değeri, g, artı, f'in z'e göre türevi, a noktasındaki k şeklinde de ifade edebiliriz.
+
+255
+00:49:56,139 --> 00:49:58,359
+Gösterimi bu şekilde de yapabiliriz.
+
+256
+00:49:59,579 --> 00:50:00,579
+Kralde M vektörü
+
+257
+00:50:10,900 --> 00:50:26,940
+Ben bir fonksiyonun bir noktadaki gradyanını bulalım. Z eşittir fx'ye fonksiyonu x kare altı y kare olarak verilsin. Bu fonksiyonun gradyanını bulalım.
+
+258
+00:50:38,132 --> 00:50:42,772
+Artı, efendim, yeğe göre, smi türevi, şişe.
+
+259
+00:50:48,596 --> 00:50:53,675
+F fonksiyonunun x'e göre kısmi türevi y'yi sabit olarak düşünüyoruz.
+
+260
+00:50:53,775 --> 00:51:00,675
+x karen türevi 2x, y artı, f'in y'ye göre türevi 2y, j şeklinde.
+
+261
+00:51:05,139 --> 00:51:24,539
+İlk noktadaki gradyan, ilk iki noktasında gradyanını hesap edelim. Bir iki noktasında gradyan, A bir iki noktası olsun. Bir iki noktasının A bir iki noktası şekliyi paylaşacağız.
+
+262
+00:51:34,483 --> 00:51:41,723
+x'e göre türevi, a noktasında, artı f fonksiyonunu y'ye göre türevi, a noktasında, j şeklindedir.
+
+263
+00:51:46,228 --> 00:51:54,347
+f fonksiyonunu x'e götürelim. 2x, 1'e 2 noktasındaki değeri i, artı 2'yi,
+
+264
+00:51:59,188 --> 00:52:08,448
+Gradyan kavramı bu şekilde. Yani fonksiyon x'e göre türevini alıyoruz i vektörü, fonksiyon y'e göre türevini alıyoruz j vektörü şeklinde tanımlanıyor.
+
+265
+00:52:27,731 --> 00:52:29,172
+Kendi işçisi nedir?
+
+266
+00:52:30,811 --> 00:52:31,291
+Yönültü.
+
+267
+00:52:47,572 --> 00:52:51,180
+yönlü türevi, gradyanla daha kolay tanımlayabiliriz.
+
+268
+00:53:16,755 --> 00:53:17,315
+İkise göre.
+
+269
+00:53:22,708 --> 00:53:32,907
+Skaler çarpım, a, i artı, b, j olarak tanımlamışlık. Buradaki u vektörü, bir birim vektörü,
+
+270
+00:53:38,036 --> 00:53:51,056
+f yeşil, gradyant f'tir. O zaman, yönlü türe, d, u, f, x, y, eşitir. Gradyant f, skaler çarpım, u, birim mektur.
+
+271
+00:53:55,731 --> 00:54:05,251
+Z eşittir, fx'ye şeklindeki fonksiyonun, u vektörü yönündeki yönlü türev.
+
+272
+00:54:08,916 --> 00:54:10,220
+U1 mektörü
+
+273
+00:54:20,755 --> 00:54:21,556
+Bu durumda ise
+
+274
+00:54:37,172 --> 00:54:41,512
+B, J artı, C, K şeklinde gösterimini yaparız.
+
+275
+00:54:43,711 --> 00:54:56,612
+Bu vektör bir birim vektör olsun. Birim vektör olmadığında, A bölük kare kök içerisinde A kare artı B kare artı C kare, İ artı B bölük kare kök içerisinde A kare artı B kare artı C kare,
+
+276
+00:54:57,108 --> 00:55:07,408
+j artı c bölü, tarak ökü içerisinde, a kare artı b kare artı c kare, k şirkinde boyunu alarak birim vektörü haline getirebileceğimizi ifade etmiştik.
+
+277
+00:55:09,228 --> 00:55:16,568
+Bu durumda da, du f x y z, aslında, gradyan f,
+
+278
+00:55:21,268 --> 00:55:22,967
+fonksiyonu, skaler çarpım.
+
+279
+00:55:31,251 --> 00:55:31,771
+İfade.
+
+280
+00:55:41,268 --> 00:55:44,347
+hesabında kolaylık sağlayacaktır.
+
+281
+00:55:45,987 --> 00:55:46,307
+Şimdi,
+
+282
+00:55:49,548 --> 00:55:54,128
+yönlü türevi ve gradyan ilişkisini görmüş olduk. Buna yönelik nasıl sorular gelebilir?
+
+283
+00:55:54,188 --> 00:55:59,827
+Doğrultu türevinin gradyan vektörü yoluyla hesaplarız.
+
+284
+00:56:12,884 --> 00:56:18,024
+x'ye z fonksiyon olarak, x'ye artı z fonksiyon olarak.
+
+285
+00:57:00,532 --> 00:57:09,891
+X'ye artı Z fonksiyonunun, A, 1, 2, 3 noktasında, gradyanını hesaplayacağız.
+
+286
+00:57:15,764 --> 00:57:33,244
+3 noktasında, f'in x'e göre türevi, f'in x'e göre türevi, x'ye artı z fonksiyonunun x'e göre türevi, z'nin x'e göre türevi 0'dır. Sabit gibi düşüneceğiz. x'ye'nin x'e göre türevi y'dir.
+
+287
+00:57:33,884 --> 00:57:35,604
+Bakın buradaki fonksiyon arkadaşlar.
+
+288
+00:57:36,403 --> 00:57:58,744
+2 değişkenli fonksiyon değil. 3 değişkenli fonksiyon. Yani W, Y, Y, Z diyebiliriz belki. Yani Z, X'e, Y'ye değişkenliğine bağlı değil. Bağımsız bir değişkenli olarak düşünüyoruz. Dolayısıyla F, Y, Y, Z, K şeklinde aldığımız fonksiyon da F'nin X'e göre türevi de X'e göre türevi aldığımızda Z'nin türevi 0 oluyor arkadaşlar.
+
+289
+00:57:59,744 --> 00:58:03,744
+1, 2, 3 noktasında İ.
+
+290
+00:58:04,467 --> 00:58:11,967
+Artı, x'ye artı z fonksiyonunun y'ye yürü türevi, x olarak buluruz.
+
+291
+00:58:13,228 --> 00:58:15,288
+1, 2, 3 noktasında.
+
+292
+00:58:16,128 --> 00:58:27,027
+Artı, x'ye artı z fonksiyonunun z'ye yürü türevi, x'ye sabit gibi düşünülür, sıfırdır, z'ye yürü türevi, z'nin z'ye yürü türevi, 1'dir.
+
+293
+00:58:27,927 --> 00:58:29,248
+1, 2, 3 noktasında.
+
+294
+00:58:33,108 --> 00:58:46,888
+y yerine x değerimiz 1, y değerimiz 2, z değerimiz 3, 2, i, artı, x yerine, burada x değerim 1, y değerim 2, z değerim 3, x yerine 1, yadır.
+
+295
+00:58:46,888 --> 00:58:54,888
+1, şi, artı, 1, sabit bir fonksiyon, bütün noklardaki değeri 1'dir.
+
+296
+00:58:55,295 --> 00:59:01,195
+2'ye artı, j'ye artı, k olarak elde edelim.
+
+297
+00:59:02,675 --> 00:59:04,915
+Gradyanı bu şekilde elde ettim.
+
+298
+00:59:06,115 --> 00:59:09,895
+Peki ama, doğrultu türev ve gradiyan ne ifade eder?
+
+299
+00:59:12,576 --> 00:59:20,855
+Gradyan, bir doğrultu yönündeki maksimum değeri bulmamıza yarar.
+
+300
+00:59:24,211 --> 00:59:25,632
+bir ek fonksiyonu
+
+301
+00:59:39,699 --> 00:59:40,760
+FİTA ışıktır.
+
+302
+00:59:49,907 --> 00:59:52,167
+Bir yüzey boyunca ilerlediğimiz düşünelim.
+
+303
+00:59:54,047 --> 00:59:58,987
+Sıfır noktasında, kte işte sıfırken, böyle bir açı yaparız.
+
+304
+00:59:58,987 --> 01:00:04,567
+Ve burada, hız maksimum olur.
+
+305
+01:00:07,987 --> 01:00:11,947
+d-eşitli 0 iken, kosinus d-eşitli 1'dir.
+
+306
+01:00:12,507 --> 01:00:26,487
+Dolayısıyla, gönlü türevin maksimum değeri d-u-f eşittir, gradyan f'in boyu çarpı kosinus 0 ile bulmuş.
+
+307
+01:00:38,003 --> 01:00:39,243
+Olurla Ağa
+
+308
+01:00:48,052 --> 01:00:51,652
+f fonksiyonunun en hızda olduğu değeri bulurum.
+
+309
+01:00:53,012 --> 01:00:54,312
+Yani gradyan f
+
+310
+01:01:01,556 --> 01:01:02,155
+Maksimum
+
+311
+01:01:11,092 --> 01:01:13,291
+Gradiyan f'in boyu ile
+
+312
+01:01:22,036 --> 01:01:28,296
+hızlı, eksi, gradyant f'in boyu yönünde azıldır.
+
+313
+01:01:31,987 --> 01:01:38,467
+Dolayısıyla, gradyanın, dik bir u yönü için,
+
+314
+01:01:42,195 --> 01:01:47,275
+90'ın 0 olduğu yönde, dik bir oyun için
+
+315
+01:01:55,123 --> 01:02:00,603
+Sönüşpüte sıfır oldu için, bu değişim sıfır oldu. Dolayısıyla,
+
+316
+01:02:04,659 --> 01:02:09,559
+teta eşitir 0'da f'nin türevinin maksimum değerini buluyoruz.
+
+317
+01:02:10,739 --> 01:02:21,159
+Ve cos 90 0 olduğu için de teta eşitir pi bölü 2 olarak alarak gradiyan f ve eksi gradiyan f ile de değişimleri elde ediyoruz.
+
+318
+01:02:21,159 --> 01:02:26,079
+Ben gradiyanın mutlak değeri yoluyla elde edelim.
+
+319
+01:02:31,092 --> 01:02:32,632
+O zaman demek ki
+
+320
+01:03:00,019 --> 01:03:08,400
+Yani dolayısıyla arkadaşlar, maksimum değeri, gradyan f'in boyuydu. Minimum değeri de eksi gradyan f. Bu arada bir değer alacak fonksiyonun yönetimi.
+
+321
+01:03:17,364 --> 01:03:19,684
+Z fonksiyonunu almıştık.
+
+322
+01:03:20,804 --> 01:03:22,784
+Ve P1, 2, 3 noktasında
+
+323
+01:03:31,315 --> 01:03:38,295
+bize maksimum değer vermesi için, P123 noktasında maksimum değerini bulalım.
+
+324
+01:03:39,775 --> 01:03:40,355
+Gradyanı
+
+325
+01:03:57,556 --> 01:04:02,096
+P1-2-3 noktasındaki maksimum değer veriyoruz.
+
+326
+01:04:03,175 --> 01:04:04,496
+Yani D-U-F'in
+
+327
+01:04:33,012 --> 01:04:36,940
+aksiyon değerini, gradyan, ekim boyunu olarak elde ediyoruz.
+
+328
+01:04:40,692 --> 01:04:49,731
+Yönlü türevin en hızlı olduğu, en hızlı artışı, gradyan F ile bulunuyor.
+
+329
+01:04:50,372 --> 01:04:56,412
+Ve yönlü türevin en hızlı azaldığı yerde, eksi gradyan F'in boyu ile elde ediliyor.
+
+330
+01:04:57,852 --> 01:05:05,492
+Eğer gradyan, ortogonal bir U yönü için istenirse, yani dik bir U yönü için istenirse,
+
+331
+01:05:06,260 --> 01:05:13,880
+f fonksiyonundaki değişim sıfır olur. Çünkü teta pi bölü 2 açısında kosinus 90 sıfır olur.
+
+332
+01:05:16,940 --> 01:05:22,880
+Dolayısıyla, sonuç olarak, yönlü türev,
+
+333
+01:05:49,364 --> 01:05:49,864
+konusunda.
+
+334
+01:07:18,643 --> 01:07:26,343
+Aynı zamanda, f, g fonksiyonu, toplam ve farklarının gradyanında, gradyan f,
+
+335
+01:08:54,996 --> 01:08:58,735
+x80 ile teta eşitir pi bölü 3 açısını yapan yönde.
+
+336
+01:09:00,675 --> 01:09:02,235
+Açım pi bölü 3.
+
+337
+01:09:13,908 --> 01:09:21,968
+artı sinüs teta, g ile elde edelim. Bakın burada vektörü vermemiş ama noktayı vermiş, 1-2 noktasında.
+
+338
+01:09:22,528 --> 01:09:29,667
+x80 ile teta eşitli p1 3 açısı yapan vektör yönünde demiş arkadaşlar. Burada ne yapacağız?
+
+339
+01:09:30,268 --> 01:09:35,667
+u eşitli cos teta i artı sin teta g şeklinde alacağız.
+
+340
+01:09:47,699 --> 01:09:48,359
+Sim, kare.
+
+341
+01:09:52,180 --> 01:09:53,940
+bir olarak elde ediyoruz.
+
+342
+01:09:54,840 --> 01:09:55,780
+Burada da
+
+343
+01:10:00,372 --> 01:10:07,391
+Kosinus, pi bölü 3, i, artı, sinüs, pi bölü 3, j olarak 50.
+
+344
+01:10:08,612 --> 01:10:11,752
+Kosinus ve sinüsün değerlerini yerine yazarsam,
+
+345
+01:10:20,307 --> 01:10:29,667
+U vektörü, 1 bölü 2 i, 3 bölü 2 j şeklinde elde edilir ve bir birim vektörü.
+
+346
+01:10:30,948 --> 01:10:34,667
+U birim vektörü yönünde, kısmi türevi alıyor.
+
+347
+01:10:35,807 --> 01:10:36,747
+D, U, F
+
+348
+01:10:42,707 --> 01:10:43,927
+çarpanı, uventür.
+
+349
+01:10:48,756 --> 01:10:54,876
+1-2 noktasında alacağım. O zaman gradyan evi de 1-2 noktasında almam lazım.
+
+350
+01:11:05,619 --> 01:11:15,579
+1-2 noktasında, artı, F'in Y'yi götürdü, 2Y, G, 1-2 noktasında, gradyan F
+
+351
+01:11:20,500 --> 01:11:26,079
+noktasında, 2i artı, 4i şeklinde elde edilir.
+
+352
+01:11:27,880 --> 01:11:32,059
+Yörüntü türev ile ilgili sorularla da, aynı fonksiyonunu kullanmıştım.
+
+353
+01:11:34,180 --> 01:11:37,659
+Anlaşım açısından tekrar, aynı fonksiyonunu kullanıyorum.
+
+354
+01:11:39,659 --> 01:11:40,460
+Dolayısıyla,
+
+355
+01:11:44,916 --> 01:11:45,736
+4 çiğ ile
+
+356
+01:11:54,228 --> 01:11:56,007
+J vektörlüğünü, Scarac'a çarpma.
+
+357
+01:11:57,228 --> 01:11:58,188
+Buradan
+
+358
+01:12:04,404 --> 01:12:09,204
+Dolayısıyla, 1 artı 2 kök 3 olarak
+
+359
+01:12:21,652 --> 01:12:48,832
+B noktasına, şeklinde, yön verirse ne yapacağım? Burada bakın, açı olarak yön vermişti. Tabi burada, soru tipi olarak, x ekseniyle, theta bölü, theta işte, p bölü 3 açısı yapan, bir, vektör yönünde, doğrultu, yönlü türev sordu. Ancak, y ekseniyle,
+
+360
+01:12:50,163 --> 01:13:04,904
+açısını verebilir veya x ekseniyle yaptığı açıyı ve y ekseniyle yaptığı açıyı da verebilir. Bu durumlarda da benzer şekilde soruyu çözeriz.
+
+361
+01:13:06,724 --> 01:13:16,324
+Şimdi 3 değişkenli bir fonksiyon alarak, bir noktadan başka bir noktaya bir vektör oluşturarak
+
+362
+01:13:17,908 --> 01:13:22,908
+O vektör yönünde, yönün türev sonunda basit yapacağımızı görelim.
+
+363
+01:13:24,908 --> 01:13:33,908
+Ve x, y, z fonksiyonu, yine aynı fonksiyonu x kare artı, y kare artı, z kare şeklinde genişletelim.
+
+364
+01:13:35,908 --> 01:13:39,908
+A x, y, z noktası
+
+365
+01:13:46,644 --> 01:13:53,304
+A2, A1 noktasından,
+
+366
+01:13:59,347 --> 01:14:01,347
+Yine buna yakın başka bir nokta alıyorum.
+
+367
+01:14:02,067 --> 01:14:03,208
+A2 noktası alayım.
+
+368
+01:14:03,948 --> 01:14:04,647
+2, 3,
+
+369
+01:14:08,180 --> 01:14:21,360
+A2-234 noktası yönünde, noktası yönünde, yönlü türevini alayım.
+
+370
+01:14:26,931 --> 01:14:28,391
+Bakın demin dediğim...
+
+371
+01:14:28,391 --> 01:14:29,572
+Ya da şöyle söyleyeyim.
+
+372
+01:14:34,612 --> 01:14:39,512
+Bir noktadan başka bir noktaya kadar yönünde yönlü türev sormuş.
+
+373
+01:14:40,692 --> 01:14:41,791
+A1'den A2.
+
+374
+01:14:41,791 --> 01:14:57,711
+Ya da A1 noktasında A1'i A2'ye birleştiren A1'i A2'ye birleştiren A1 A2 vektörü yönünde yönlü türev nedir?
+
+375
+01:14:58,152 --> 01:14:59,131
+Değişen bir şey yok.
+
+376
+01:15:01,268 --> 01:15:02,628
+Vektörü elde edeceğiz.
+
+377
+01:15:04,948 --> 01:15:12,628
+Bu noktadan, bu noktayı çıkartacağım sırası. 2-1i, artı 3-2.
+
+378
+01:15:13,108 --> 01:15:16,128
+İki nokta arasındaki vektörü nasıl elde edeceğimizi biliyordum.
+
+379
+01:15:16,927 --> 01:15:18,288
+Artı 4-3.
+
+380
+01:15:22,292 --> 01:15:37,412
+Dolayısıyla, A1, A2 vektörünü bir U vektörü şeklinde yazayım. Konuyu anlatırkenki notasyonla uyumlu olması açısından U vektörü olarak alıyoruz.
+
+381
+01:15:38,552 --> 01:15:40,712
+U vektörü bir birim vektörü.
+
+382
+01:15:44,724 --> 01:16:10,724
+Bulmak için birim vektörü ihtiyacım var. Birim vektörü şapkalı u şeklinde ifade ediyorum. Notasyonum bu şekilde. U vektörü bölü, u vektörünün u şeklinde birim vektörü elde edeceğim. U vektörü için birim vektör, bir bölü, kare kök içerisinde birin karesi arttı, birin karesi arttı, birin karesi. İyi bulacağım.
+
+383
+01:16:11,412 --> 01:16:23,311
+Yani, bir bölü köküç, i artı, benzer şekilde bir bölü köküç, j artı bir bölü köküç, k şeklinde, elde edeceğim.
+
+384
+01:16:37,108 --> 01:16:39,208
+1-2-3-3-3 şeklinde elde ettik.
+
+385
+01:16:42,515 --> 01:16:49,036
+D, U, F yönlü türevi, A1 noktasında alın.
+
+386
+01:17:04,627 --> 01:17:14,467
+yönünde fonksiyonun değişimi zınıfı. Ya da A1, A2 vektörü yönünde, A1 noktasında yönlü türevi. Sonra da onu varsayalım.
+
+387
+01:17:17,779 --> 01:17:18,603
+D-U-E
+
+388
+01:17:25,076 --> 01:17:28,235
+Bu birim vektörü şeklinde hesapladır.
+
+389
+01:18:09,971 --> 01:18:17,091
+Şi, A1 noktasındaki değeri, artı F'in Z'ye götürevi, K, A1 noktası.
+
+390
+01:18:18,412 --> 01:18:19,711
+Gönelde yani F bu şekilde.
+
+391
+01:18:26,547 --> 01:18:28,907
+Bir de u vektörü.
+
+392
+01:18:29,427 --> 01:18:30,368
+U birin vektörü.
+
+393
+01:18:33,684 --> 01:18:36,644
+Bu noktasında 2x'in 2.
+
+394
+01:18:45,140 --> 01:19:04,260
+U1'in vektörün, 1 bölü köküçü, i artı, 1 bölü köküçü, i artı, 1 bölü köküçü, i artı, 1 bölü köküçü, her şeklinde elde edildi. Dolayısıyla, bu ikisinin çarpını alırsam, burada tabi A1 noktasında, A1'den A2'ye giden vektör yönünde yöntü rev sorgul için, bu şekilde alıyoruz arkadaşlar.
+
+395
+01:19:04,260 --> 01:19:11,960
+2 bölü köküç, artı, 4 bölü köküç, artı, 6 bölü köküç.
+
+396
+01:19:12,724 --> 01:19:18,844
+olarak elde edin. Bu toplamda 12 bölü 43 olarak
+
+397
+01:19:44,851 --> 01:19:51,152
+Şimdi, çok değişkenli fonksiyonlarda t düzlem ve normal doğrusu denklemlerine bakalım.
+
+398
+01:19:53,231 --> 01:20:02,412
+t düzlem ve normal doğrusu fx, yz eşittir c fonksiyonu için, gradyan f p0 vektörünü alalım.
+
+399
+01:20:11,792 --> 01:20:28,391
+Diktir. Gradyan f, p0 vektörü, p0, x0, y0'dan geçen normal doğruya paraleldir. Aslında gradyan dik bir vektör demektir. Gradyan f, f'in x'e göre türevi i, artı f'in y'e göre türevi j, f'in z'e göre türevi k'ydi.
+
+400
+01:20:28,391 --> 01:20:34,512
+Bu, p0 noktasındaki değeri de bu elde edilen türev fonksiyonlarının p0 noktasındaki değerdir.
+
+401
+01:20:38,463 --> 01:20:53,304
+P0'daki t'ye düzlemi de, f'in x'e göre türevi, P0'da, x-x-x0, f'in y'e göre türevi, P0 noktasında, y-y0, f'in z'e göre türevi, P0 noktasında, z-z0 eşitli sıfır ile elde edilir.
+
+402
+01:20:53,783 --> 01:21:05,583
+Dolayısıyla, normal doğrusu da, x eşittir, x0 artı, f'in x'e göre türevi, çarpı t, y eşitli y0 artı, f'in y'e göre türevi, çarpı t olarak,
+
+403
+01:21:05,920 --> 01:21:14,739
+elde edilir arkadaşlar. Şimdi burada doğru denklemlerinden bunları elde ediyorduk zaten. Bu kısmını anlatmıştım.
+
+404
+01:21:16,319 --> 01:21:23,039
+t-düzlem ve normal doğrusu denklemlerine bakmıştık daha önce de. Bir tane örnek üzerinden bakalım.
+
+405
+01:21:23,920 --> 01:21:30,680
+z eşitir 9-x²-y² yüzeyinin p0'daki t-düzlemi ve normal doğrusunu elde edelim.
+
+406
+01:21:32,659 --> 01:21:48,479
+z artı x kare artı y kare eksi 9 eşit de sıfırdır. z eşittir 9 eksi x kare eksi y kare ise kapalı f fonksiyonu da budur. Kapalı f fonksiyonun x'e göre türevi 2x y'e göre türevi 2y z'e göre türevi 1'dir. Bunun x'e, y'ye ve z'e göre türevi.
+
+407
+01:21:56,783 --> 01:22:06,423
+x'e 1 veriyorum, y'ye 2 veriyorum, z'ye 4 veriyorum arkadaşlar. Dolayısıyla 2'ye artı 4'ye artı 4 k'dır arkadaşlar.
+
+408
+01:22:08,403 --> 01:22:23,163
+Dolayısıyla, abc olarak da, t'ye dik düzleme, t'ye dik, normal doğru yapılan paralel bir vektör elde edelim. 2, 4, 1 vektör. Yani 2'ye artı 4'ye artı k vektörü.
+
+409
+01:22:23,572 --> 01:22:45,051
+Şimdi bunu 2 çarpı x eksi 1, x eksi x 0 diyorum. y eksi y 0, z eksi z 0. 4 çarpı y eksi 2, 1 çarpı z eksi z 0. Yani z eksi 4 ile çarpıp 0 eşitlediğim zaman ben t' et düzlemi elde etmiş olurum arkadaşlar. Normal doğrusu da
+
+410
+01:22:45,492 --> 01:22:58,912
+Buradaki değerleri alacağım. 1 artı 2t, 2 artı 4t, 4 artı t olarak elde edilir arkadaşlar. Normalde usta bu şekilde elde ediliyor.
+
+411
+01:23:01,452 --> 01:23:06,612
+Başka örneklere bakalım. Bir iki örneğimiz daha var. Sonunda lineayleştirmeye geçeceğiz.
+
+412
+01:23:09,391 --> 01:23:10,992
+Şimdi sıvır sıvır noktasında
+
+413
+01:23:11,764 --> 01:23:17,104
+z eşitir x cos y eksi y e üzeri x düzeyine tez olan düzlemi sormuş.
+
+414
+01:23:18,024 --> 01:23:22,963
+Şimdi bakın, fonksiyonumu kapalı fonksiyon olarak aldım.
+
+415
+01:23:23,224 --> 01:23:26,423
+z eksi x cos y artı y e üzeri x eşitir sıfır.
+
+416
+01:23:26,503 --> 01:23:31,344
+f'in x'e göre türevini aldım, f'in y'e göre türevini aldım, f'in z'e göre türevini aldım arkadaşlar.
+
+417
+01:23:32,283 --> 01:23:37,423
+f'in x'e göre türevi sıfır sıfır sıfır noktasında, bakın noktayı vermiş.
+
+418
+01:23:38,003 --> 01:23:50,564
+Eksi 1'dir. F'in y'ye götürüyorum. Burada x, y, z yerine 0 koyuyorum. 1'i elde ediyorum. 0 çarpı sinüs 0 artı. E üzeri 0, 1 zaten. 1 elde ettim. F'se zaten 1 arkadaşlar.
+
+419
+01:23:51,155 --> 01:23:56,415
+Dolayısıyla, gradyan f, eksi 1 i, artı 1 j, artı k'dır.
+
+420
+01:23:56,615 --> 01:24:04,935
+f'in x'e göre türevinin, çünkü 0, 0, 0 noktasındaki değeri, eksi 1, y'ye göre türevinin o noktadaki değeri 1, z'ye göre türevi de o noktada 1 oluyor.
+
+421
+01:24:05,576 --> 01:24:07,595
+Gradyan f ile neyi çarpacaktım arkadaşlar?
+
+422
+01:24:07,595 --> 01:24:09,976
+Eksi 1, 1, 1 ile x eksi.
+
+423
+01:24:10,912 --> 01:24:26,512
+X0, Y-YS0, Z-Z0. Yani X0, Y0'a 0, 0 olduğu için X0, Y0, Z0'la çarpıp 0 eşitliyorum. Bu da XX artı Y artı Z, heyet düzlemini bana veriyor arkadaşlar.
+
+424
+01:24:29,252 --> 01:24:38,112
+Bir tane daha örnek var. Ona bakalım. Bakın burada da bir FX, Y, Z silindiri vermiş.
+
+425
+01:24:38,576 --> 01:24:51,855
+Ve bir düzlem vermiş. Bu silindir, bu düzlemle, e elipsi boyunca kesişiyor. Yani bir düzlemi, bir silindiri bir düzlemle kestiğimiz zaman, bu da bir elips oluşur. Değil mi arkadaşlar? Şöyle bir elips oluşur.
+
+426
+01:24:52,915 --> 01:25:00,275
+Bunun da kesiliyor. P0 noktasında, e'ye t'yet olan doğrunun, parametrik denklemini sormuş bana.
+
+427
+01:25:01,427 --> 01:25:10,747
+F doğru, P0'da hem gradyan F'e hem de gradyan G'ye diktir. Yani gradyan F çarpı gradyan G'ye paralel olacak.
+
+428
+01:25:11,587 --> 01:25:20,247
+Gradyan F'i elde ettim, 2X'ye artı 2YJ'dir. Değil mi arkadaşlar? Bunun türevini aldım X'e göre, Y'ye göre türevini aldım, Z'e göre türev zaten 0.
+
+429
+01:25:21,087 --> 01:25:28,667
+Z'e bir değişken yok çünkü. Gradyan F'in P0 noktasındaki değeri, 1,1,3 noktasındaki değeri 2'ye artı 2.
+
+430
+01:25:29,555 --> 01:25:49,875
+Gradyan G nedir? Bu düzlemin gradyanı, i artı k. Şimdi, elips boyunca kesişiyor, E'ye t olan doğrunun parametrik denklemini soruyor bana. Yani E elipsine t olan doğruyu soruyor.
+
+431
+01:25:58,612 --> 01:26:04,592
+vektörel çarpımlarını alırsam, bunu elde ederim.
+
+432
+01:26:11,475 --> 01:26:18,055
+Gradiyan f ve gradiyan genin vektörel çarpanları neydi arkadaşlar? Bir determinant şeklinde düzenleniyorduk.
+
+433
+01:26:18,695 --> 01:26:20,956
+2, 2, 0, gradiyan f.
+
+434
+01:26:21,555 --> 01:26:43,235
+Gradyan g'de i artı k zaten 1, 0, 2 şeklinde yazılıyor. Bu çarpımı anlatmıştım arkadaşlar. Vektörel çarpımda anlatmıştık. i'yi kapatıyorduk, buranın determinantını alıyorduk. j'yi kapatıyorduk, buranın determinantını alıyorduk, bu ikisinin. k'yi kapatıyorduk, buranın determinantını alıyorduk. Sadece j'de başına eksi geliyordu arkadaşlar.
+
+435
+01:26:43,631 --> 01:26:51,631
+Bu determinantı hesapladığım zaman da bu vektörel çarpımı 2'ye eksi 2j, eksi 2k olarak elde ediyorum arkadaşlar.
+
+436
+01:26:51,971 --> 01:26:57,471
+Dolayısıyla, bu t doğrunun doğru denklemleri,
+
+437
+01:27:04,564 --> 01:27:07,844
+P0, 1, 1, 3'ü noktasını vermiş ya arkadaşlar.
+
+438
+01:27:09,623 --> 01:27:14,064
+Bu noktada E, Y, T olan doğrun denklemlerini istiyor benden.
+
+439
+01:27:14,604 --> 01:27:17,524
+Bakın noktayı alıyorum. 1, 1, 3.
+
+440
+01:27:19,252 --> 01:27:32,811
+Parametrik denklemini aldım. 2-2-2 ile 1-2t, 1-2t, 3-2t şeklinde doğrunun, t doğrunun parametrik denklemini elde ederim arkadaşlar.
+
+441
+01:27:34,032 --> 01:27:37,192
+Şimdi bakın, gradyan f ile gradyan g.
+
+442
+01:27:41,203 --> 01:27:54,483
+Silindire ve bu düzleme dik doğrular. Bunların vektörel çarpımlarını aldığım zaman ben, o ikisine, yani bu kesişim silindirine t-et doğruyu elde ederim.
+
+443
+01:27:54,943 --> 01:28:03,203
+T-et bir vektör elde ederim daha doğrusu. Dolayısıyla o t-et doğrunun parametrik denklemi de o noktadan başlattığım zaman...
+
+444
+01:28:04,212 --> 01:28:10,472
+P0113'ten 1 artı 2t, 1 eksi 2t, 3 eksi 2t şeklinde elde edilir arkadaşlar.
+
+445
+01:28:11,592 --> 01:28:16,652
+Şimdi biraz da farklı örneklere bakalım, parametrik denklemlerle ilgili.
+
+446
+01:29:10,899 --> 01:29:20,600
+Biz Z'e, F'e şeklinde tanımlı bir fonksiyonun oluşturduğu yüzeye, Z'e, F'e şeklinde iki değişkenli bir fonksiyon, bir yüzey oluşturuyor.
+
+447
+01:29:20,680 --> 01:29:25,879
+Doğu yüzeye T'e olsun ve bu T'e düzleminin denklemini bulmaya çalışalım.
+
+448
+01:29:26,420 --> 01:29:33,460
+Amacımız, bir yüzeye T'e düzleminin denklemini bulma.
+
+449
+01:29:37,296 --> 01:29:46,376
+Bir A noktasında, X0, Y0, Z0 şeklinde tamamla, bir A noktası alalım, bu yüzde üzerinde.
+
+450
+01:29:48,275 --> 01:29:56,015
+Bulmak istediğimiz düzden, A, X0, Y0, Z0 noktasında, bu yüzdeye T olsun.
+
+451
+01:29:58,216 --> 01:30:04,896
+Arkadaşlar, geometrik açıklamanı anlayabilmek için, bunları birkaç kez dinleyin. Daha iyi anlamanız için.
+
+452
+01:30:05,395 --> 01:30:12,575
+Burada bakın, geometrik olarak gradyanın, işte T düzleminin normalde olsun ne olduğunu anlatıyorum.
+
+453
+01:30:18,228 --> 01:30:33,528
+Bu noktada t'ye dolan düzden, bu şekilde çekeyim, basitçe. Bu yüzeye t'ye dolan düzden, üzerinde bir b noktası alın. Bu b noktasını,
+
+454
+01:30:39,956 --> 01:30:42,716
+Bu, bulmak istediğim t dizem.
+
+455
+01:30:44,076 --> 01:30:46,716
+A noktası, yüzey üzerinde.
+
+456
+01:30:47,675 --> 01:30:49,315
+Yüzey diyelim ki böyle geliyor.
+
+457
+01:30:49,996 --> 01:30:57,015
+A, x0, y0, z0.
+
+458
+01:31:05,043 --> 01:31:08,764
+Düzlem noktasında t net olduğunu varsayalım.
+
+459
+01:31:09,863 --> 01:31:11,423
+Bir yüzeyimiz var.
+
+460
+01:31:12,324 --> 01:31:22,083
+O yüzeyi A noktasında, o yüzeyin A noktasında, 0, y, 0, z, 0 noktasında, o yüzeyi t net olan düzlemin denklemi durmaya çalışıyoruz.
+
+461
+01:31:22,824 --> 01:31:26,804
+Ve bu düzlem üzerinde bir B noktası alalım.
+
+462
+01:31:27,603 --> 01:31:30,283
+Bu B noktası düzlem üzerinde herhangi bir nokta olsun.
+
+463
+01:31:30,612 --> 01:31:36,372
+x, y, z şeklinde tanımlı, herhangi bir nokta olsun.
+
+464
+01:31:38,372 --> 01:31:39,252
+Bu takdirde,
+
+465
+01:31:41,252 --> 01:31:41,731
+ab,
+
+466
+01:31:50,195 --> 01:31:57,536
+x0, y-i0, z-z0'dır.
+
+467
+01:31:58,015 --> 01:32:15,855
+Ya da, AB vektörünü, x-x0, i, artı, y-i0, j, artı, z-z0, k şeklinde ifade edebilir miyaklar?
+
+468
+01:32:16,467 --> 01:32:18,627
+AB vektörü bu şekildedir.
+
+469
+01:32:19,427 --> 01:32:20,007
+Daha sonra,
+
+470
+01:32:21,987 --> 01:32:24,047
+normal doğusunu almam gerekiyor.
+
+471
+01:32:24,787 --> 01:32:26,447
+Normal doğusunu açıklamak için,
+
+472
+01:32:27,528 --> 01:32:28,108
+buraya istiyoruz.
+
+473
+01:32:42,228 --> 01:32:43,907
+İk sepır, e sepır.
+
+474
+01:32:47,347 --> 01:32:49,108
+Düzler üzerinde eksiye bize.
+
+475
+01:32:51,007 --> 01:32:53,247
+Ve normal doğrusuna ihtiyacımız var.
+
+476
+01:32:53,768 --> 01:32:56,307
+Oraya gittim. Normal doğrusuna ihtiyacımız var.
+
+477
+01:32:56,847 --> 01:33:00,547
+Normal doğrusunu ise, A noktasındaki normal doğrusunu,
+
+478
+01:33:04,372 --> 01:33:05,811
+Ali vektörü olarak
+
+479
+01:33:05,811 --> 01:33:07,391
+D, F
+
+480
+01:33:15,572 --> 01:33:35,932
+Kısmi türev şeklinde ifade ettiğimiz fonksiyonun A noktasındaki değeri, i artı, df bölü d y'nin A noktasındaki değeri, j artı, df bölü dz'nin A noktasındaki değeri, k şeklinde ifade ediyoruz.
+
+481
+01:33:36,752 --> 01:33:42,152
+Buradaki çizgi a, df bölü dx fonksiyonun A noktasındaki değer.
+
+482
+01:33:45,108 --> 01:33:47,108
+Bala Bey'in
+
+483
+01:33:48,708 --> 01:33:50,123
+x ayısı x 0
+
+484
+01:33:56,819 --> 01:34:01,319
+Z-Z0, k şeklinde, müsaade etmiştim.
+
+485
+01:34:03,500 --> 01:34:05,459
+AB vektörü, ve
+
+486
+01:34:17,108 --> 01:34:33,108
+seriler çarpanlarının sıfır olması olduğunu söylemiştik. Yani burada AB çarpı AN eşittir, sıfır olacak. O zaman AB çarpı AN'yi alırsak,
+
+487
+01:34:44,180 --> 01:35:03,940
+x-x0 artı df bölü dy'nin a noktasındaki değeri çarpı y-y0 artı df bölü ds'nin a noktasındaki değeri çarpı
+
+488
+01:35:03,940 --> 01:35:11,740
+Bakın arkadaşlar, ab ve an birbirlerine dik vektörler. Dolayısıyla ab ve an'nin birbirlerine dik vektörler olması özelliğine
+
+489
+01:35:12,180 --> 01:35:17,480
+özelliğinden biz yararlanıyoruz. Nerede yararlanıyoruz? Bundan bir denklem elde ediyoruz.
+
+490
+01:35:18,020 --> 01:35:21,020
+Orada işte düzlem denkleme diyeceğiz.
+
+491
+01:35:32,115 --> 01:35:44,796
+Bir fonksiyon almıştım. Z işte fz şeklinde fonksiyon. Bir yüzeye gelir diyordu. Ancak normal doğrusu ve düzem denklemini bulmam için z değişkenlere ihtiyacım var.
+
+492
+01:35:45,636 --> 01:35:58,355
+Bunu bir kapalı fonksiyon şeklinde fxyz eşitir fxy eksi z eşitir sıfır şeklinde ifade edersem.
+
+493
+01:35:58,836 --> 01:36:05,675
+Bu türevlere df bölü dx, df bölü dy ve df bölü dz türevlerini alabilirim.
+
+494
+01:36:07,675 --> 01:36:08,956
+Normal denklemi ise,
+
+495
+01:36:12,336 --> 01:36:13,175
+Denzel şekilde,
+
+496
+01:36:14,816 --> 01:36:16,956
+Yine türevler kullanılarak,
+
+497
+01:36:18,476 --> 01:36:19,175
+Elde edilir.
+
+498
+01:36:28,467 --> 01:36:29,291
+Sizin sorun
+
+499
+01:36:35,859 --> 01:36:37,559
+bir k noktası alın.
+
+500
+01:36:39,180 --> 01:36:42,359
+x, y, z olarak k noktasını ifade edelim.
+
+501
+01:36:43,159 --> 01:36:49,439
+k noktası, an vektörü üzerinde, doğrusu üzerinde değişken bir noktadır.
+
+502
+01:36:50,600 --> 01:36:54,000
+an, normal doğrusu denklemi bulmak için,
+
+503
+01:36:58,323 --> 01:36:59,843
+vektörünü elde edelim.
+
+504
+01:37:07,988 --> 01:37:11,128
+z eksi, z sıfır, kıs.
+
+505
+01:37:12,328 --> 01:37:13,448
+Aynı zamanda,
+
+506
+01:37:35,572 --> 01:37:36,692
+Lama ne çarpı?
+
+507
+01:37:44,275 --> 01:37:44,735
+Ne.
+
+508
+01:37:49,524 --> 01:37:57,264
+D, Z, A noktasındaki değeri, K şeklinde ifade etmiştik.
+
+509
+01:38:11,796 --> 01:38:12,556
+Değil.
+
+510
+01:38:26,036 --> 01:38:32,996
+df bölü dz'nin, a noktasındaki bir yeri, k olarak, bulmuş.
+
+511
+01:38:34,796 --> 01:38:45,815
+ak'ların, kat sayılarının birbirine eşitlersek, burada ak'larının kat sayısı, x, x, x, 0'dır. Burada lambda çarpı, df bölü dx'in, a noktasındaki, d'ye.
+
+512
+01:38:53,011 --> 01:39:10,451
+Eşittir. Lambda çarpı df bölü dx'in a noktasındaki değerini elde ediyoruz. Dolayısıyla burada lambdayı çekersek, lambda eşittir. x0 bölü f'in x'e göre türevinin a noktasındaki değerini elde ediyoruz.
+
+513
+01:39:11,191 --> 01:39:16,711
+Lambdayı bu eşittik de çekersek, lambda çarpı df bölü dy
+
+514
+01:39:17,908 --> 01:39:24,328
+y-y0 eşittir. Bakın parametrik denklemini nasıl elde ettiğini de burada açıkladım.
+
+515
+01:39:24,908 --> 01:39:41,579
+j'nin kat sayıları ve k'nın kat sayıları da bir gün eşittir. Bunların üçünde bir gün eşitlersek, y-y0 bölü, df bölü, d'ye'nin a noktasındaki değeri, z-z0 bölü, df bölü, dz'nin a noktasındaki değeri.
+
+516
+01:39:41,844 --> 01:39:48,804
+Yani biz t kullanıyoruz ama lambda parametresi olduğunu varsaydığımda da lambda parametresine göre çıkartılışını gösteriyorum.
+
+517
+01:39:49,363 --> 01:39:57,484
+Bu değerini elde ediyoruz. Bu denklemde bize normal doğrusunun denklemini verir.
+
+518
+01:40:50,771 --> 01:40:54,971
+z'şit x kare kare yüzde üzerinde bir nokta olur.
+
+519
+01:40:56,092 --> 01:41:03,012
+a, bir, eksi bir, iki noktası, yüzde üzerindeki bir noktadır.
+
+520
+01:41:26,195 --> 01:41:27,015
+Geek set up.
+
+521
+01:41:38,484 --> 01:41:50,543
+Önce bakın kapalı fonksiyonumuzu oluşturuyoruz. Neden? Çünkü onunla çarptığımızda sıfır elde etmemiz lazım ki bana bir tane düzlem denklem versin.
+
+522
+01:42:15,252 --> 01:42:20,811
+A1-1, 2 noktasındaki değeri, x yerine 1 yazacağız, 2'dir.
+
+523
+01:42:22,292 --> 01:42:25,612
+Ve F bölüdeyeğinin A noktasındaki değeri,
+
+524
+01:42:32,627 --> 01:42:44,528
+2y'dir. x tane ve z'nin y'ye götürebildiği 0'dır. 2y'nin a noktasındaki değeri, a noktasında y'ye değeri eksi 1'dir. Eksi 2 olarak ne beliriz?
+
+525
+01:42:55,060 --> 01:43:01,220
+x kare ve y karenin z'ye göre türevi c sıfırdır. Eksi z'nin türevi z'ye göre eksi 1'dir.
+
+526
+01:43:01,899 --> 01:43:11,800
+Ve eksi 1, fonksiyonu sabit fonksiyonu, bu sabit fonksiyonun a noktasındaki değeri yine eksi 1 olarak elde edilir.
+
+527
+01:43:24,180 --> 01:43:49,819
+x eksi, x sıfırdı, x sıfırdı, 1'dir. 2 çarpı, x eksi, 1. Artı, ve f bölüde y'nin a noktasındaki değeri, x 2 çarpı, y eksi, y sıfırdı, y sıfır eksi 1'dir, y eksi, eksi 1. Artı,
+
+528
+01:43:53,268 --> 01:44:02,228
+bz fonksiyonunun ağır noktasındaki değeri, eksi 1, şarpı, z eksi, z sıfır, gidir.
+
+529
+01:44:03,747 --> 01:44:08,247
+Eşittir, sıfır şeklinde t düzevi dengilimde elde ediliriz.
+
+530
+01:44:08,908 --> 01:44:10,908
+Bu dengileme düzenlersek eğer,
+
+531
+01:44:46,163 --> 01:44:46,703
+Teşekkürler.
+
+532
+01:45:00,500 --> 01:45:04,500
+İkisi 2 eşittir. 0 olarak k düzenin denklemini...
+
+533
+01:45:24,051 --> 01:45:26,831
+z eksi 2 bölü, eksi 1 olarak
+
+534
+01:45:52,819 --> 01:46:13,340
+Bakın bu şekilde t-düzlemin ve normal doğrusunun denklemlerini elde etmiş olduk. Kapalı fonksiyonundan yararlanarak, bakın kapalı fonksiyon ve türevini göstermiştik, t-düzlemi bulduk ve aynı zamanda kapalı fonksiyonundan yararlanarak t-düzlemi bulduktan sonra da normal doğrusunu da elde etmiş olduk arkadaşlar.
+
+535
+01:46:13,340 --> 01:46:15,340
+Haftaya...
+
+536
+01:46:16,192 --> 01:46:21,291
+Lineerleştirme, diferansiyel kavramıyla devam edeceğiz arkadaşlar. Hepinize iyi günler diliyorum.
+
+537
+01:46:25,171 --> 01:46:27,631
+Bu konularla ilgili sorusu olan var mı?
+
+538
+01:46:32,148 --> 01:46:34,668
+Bunlarla ilgili ders anlatımlarını gönderdim.
+
+539
+01:46:34,668 --> 01:46:35,507
+Youtube
+
+540
+01:46:42,676 --> 01:46:46,195
+Üzerinden de bu videoları dinleyebilirsiniz.
+
+541
+01:46:46,815 --> 01:46:53,775
+Youtube'da hızlandırma, yavaşlatma, durdurma seçenekleri mevcut.
+
+542
+01:46:55,655 --> 01:46:56,908
+Oradan da...
+
+543
+01:47:39,252 --> 01:47:48,252
+Yönlü türev, gradyan ve t düzen ve normal doğrusu denklemlerine baktık. Bunlara...
+
+544
+01:47:51,444 --> 01:47:52,484
+yönlü türev
+
+545
+01:48:01,076 --> 01:48:02,036
+radyan vektör
+
+546
+01:48:05,747 --> 01:48:12,107
+Bunları da link olarak atıyorum arkadaşlar. Bunlara da bakarsınız.
+
+547
+01:48:15,427 --> 01:48:17,787
+Yine Whatsapp'tan da atacağım.
+
+548
+01:48:19,807 --> 01:48:21,427
+Evet, sorusu olan var mı arkadaşlar?
+
+549
+01:48:53,300 --> 01:48:55,400
+WhatsApp'tan da bunları atıyorum.
+
+550
+01:49:04,756 --> 01:49:12,616
+Gradyan vektör nedir? Yörünü türev nedir? T-et düzen ve normal doğrusu denklemleri nedir? Bu konuları işledik arkadaşlar.
+
+551
+01:49:12,836 --> 01:49:21,956
+Föyden, yine Föyleri de attım. Çok değişkenli fonksiyonlar, 3. Bu ders anlatımlarından yararlanabilirsiniz.
+
+552
+01:49:22,676 --> 01:49:31,136
+Youtube videolarını hızlandırarak izleyebilirsiniz. Bunlardan yararlanabilirsiniz. Aynı zamanda örnek.
+
+553
+01:49:33,108 --> 01:49:44,807
+sorularda, diğer hocalarınızın sayfalarında da örnek soru çözümleri, uygulama çözümleri var. Onlardan da yayınlanabilirsiniz arkadaşlar.
+
+554
+01:49:46,307 --> 01:49:50,307
+Sorusu olan var mı? Burada dersi bitiriyorum arkadaşlar.
+
+555
+01:49:55,828 --> 01:49:58,248
+Sorusu olan yoksa dersi bitiriyorum.

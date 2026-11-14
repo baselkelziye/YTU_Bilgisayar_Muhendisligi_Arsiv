@@ -1,0 +1,363 @@
+1
+00:08:11,923 --> 00:08:15,644
+Günaydın arkadaşlar, en son vektörel fonksiyonlarda kalmıştık.
+
+2
+00:08:17,562 --> 00:08:21,543
+Vektörel fonksiyon neydi? 3 boyutlu sayıda hareket eden bir parçacı.
+
+3
+00:08:22,983 --> 00:08:38,602
+Hareketini tanımlamak için x, y, z koordinatlarını parametrize ederek oluşturduğumuz vektörlere bağlı olarak oluşturduğumuz bir fonksiyon tipiyle vektörel fonksiyonunda değişkeni
+
+4
+00:08:38,836 --> 00:08:41,716
+t zaman olarak almıştık.
+
+5
+00:08:43,316 --> 00:08:47,916
+Diyelim ki bir, elimizde parçacık var.
+
+6
+00:08:48,375 --> 00:08:57,155
+Parçacığın belli bir andaki konum vektörü, x, i artı, y, j artı, z, k olsun.
+
+7
+00:09:02,610 --> 00:09:21,291
+x, i artı, y, j artı, z, k şeklini tanımladığımız, bir r vektörüne bağlı olarak tanımladığımız parçacığın hareketini, t parametresine göre tanımlamak istersek, rt eşit x, t, i artı, y, t, j artı, z, t, k olarak tanımlarız.
+
+8
+00:09:21,291 --> 00:09:26,530
+Ve bu rt fonksiyonuna vektörel fonksiyon diyecektik.
+
+9
+00:09:31,892 --> 00:09:38,892
+t değiştikçe, mesela bakın burada d'yi bir tanım bölgesi olarak almış, real sayılarda tanımlı.
+
+10
+00:09:40,292 --> 00:09:49,511
+t değişkeni değiştikçe, d'nin her elemanına bir vektör atanır.
+
+11
+00:09:50,072 --> 00:09:55,851
+Yani bu ne demek? t'nin her değeri için, burada x, t, y, t ve z, t farklı olacağı için,
+
+12
+00:09:57,620 --> 00:10:03,580
+a, i artı, b, j artı, c, k şeklinde bir vektör atanacaktır.
+
+13
+00:10:05,120 --> 00:10:13,318
+Dolayısıyla, sonuç olarak aslında t artarken, burada r, t konum vektörüyle belirtilmiş parçacık,
+
+14
+00:10:13,940 --> 00:10:19,580
+aslında konum değiştireceği için, bu r, t vektörü her konumda farklı bir değer alacağı için,
+
+15
+00:10:20,360 --> 00:10:23,700
+aslında bu parçacık bir hareket oluşturmuş olur.
+
+16
+00:10:25,586 --> 00:10:33,726
+Parçacığın oluşturduğu hareketi bir RT fonksiyonu ile tanımlayabilmemiz mümkündür.
+
+17
+00:10:34,668 --> 00:10:39,626
+Bu da aslında 3 boyutlu uzayda bir eğri oluşturmuş olan arkadaşlar.
+
+18
+00:10:43,730 --> 00:10:48,811
+Peki, böyle bir fonksiyonun türevi nasıl alınacak?
+
+19
+00:10:49,932 --> 00:11:05,091
+Eğer, f, g ve h fonksiyonları, türevlenebilir fonksiyonlarsa, t'ye bağlı olarak, bu durumda, r, t'nin türevi de aslında, sırasıyla,
+
+20
+00:11:06,034 --> 00:11:14,955
+i'nin kat sayısının türevi, j'nin kat sayısı olan fonksiyon türevi ve k'nın kat sayısı olan fonksiyon türevi olarak tanımlanır arkadaşlar.
+
+21
+00:12:21,427 --> 00:12:21,986
+Er,
+
+22
+00:12:25,490 --> 00:12:32,412
+reinin türevini aldığımızda, bu sürekli bir fonksiyon olarak ortaya çıkıyorsa,
+
+23
+00:12:36,788 --> 00:12:56,148
+ve asla sıfır olmuyorsa, yani f, g ve h fonksiyonunun hepsi aynı anda sıfır olmayan, birinci mertebeden türevleri sahiplerse, bu re'nin oluşturduğu eğri, yani o parçacığın hareketi, düzgün dönemdir.
+
+24
+00:12:59,860 --> 00:13:11,600
+R uzayda düzgün bir eğri boyunca hareket ediyorsa, yani birinci türevler mevcutsa ve aynı anda 3'ü birden 0 olmuyorsa, dolayısıyla bir hareket var demektir.
+
+25
+00:13:13,259 --> 00:13:17,860
+Bu durumda RT konum vektörü olarak tanımlanmıştı zaten.
+
+26
+00:13:18,740 --> 00:13:25,519
+Konum vektörünün türevi bize hızı 1 ve eğriye T'tir.
+
+27
+00:13:25,519 --> 00:13:27,679
+Çünkü zaten şunu biliyoruz.
+
+28
+00:13:27,796 --> 00:13:31,235
+Mesela bu bir konum vektörü.
+
+29
+00:13:33,515 --> 00:13:35,395
+RT konum vektörü.
+
+30
+00:13:36,056 --> 00:13:40,995
+Buna t'et olan doğru da rt'nin türevidir.
+
+31
+00:13:41,755 --> 00:13:45,775
+Türevin fonksiyona t'et olan doğru olduğunu biliyorduk.
+
+32
+00:13:47,135 --> 00:13:48,336
+t'eti verdiğini biliyorduk.
+
+33
+00:13:50,115 --> 00:13:55,255
+Aynı zamanda eğer v'nin mutlak değerini alırsak, bu da
+
+34
+00:13:56,370 --> 00:14:05,811
+bize parçacığın süratini veriyor. Bu da bir tanım. Süratinin ne olduğunu sorarsa, V'nin normunu alacaksınız. Yani uzunluğunu hesaplayacaksınız.
+
+35
+00:14:07,551 --> 00:14:21,010
+İvme ise, hızın türevi olarak tanımlanmıştır. Yani V'nin tekrar türevini aldığımızda, yani konum vektörünün ikinci türevi de, ivme vektörüdür.
+
+36
+00:22:33,875 --> 00:22:43,536
+Hız vektörünü eğer hız vektörünün boyuna bölersek ise, birim t-vektörü elde etmiş oluruz.
+
+37
+00:22:43,615 --> 00:22:47,496
+Yani t-vektörün birim vektörünü aslında elde etmiş oluruz.
+
+38
+00:22:48,096 --> 00:22:54,875
+Bu da t anında, aldığımız bir t noktasında bize hareketin yönünü ifade eder.
+
+39
+00:22:55,914 --> 00:23:00,394
+Hız vektörünün, kolum vektörünün türevi olduğunu biliyoruz.
+
+40
+00:23:02,067 --> 00:23:06,326
+Ve hızda sürat çarpı yönüdür.
+
+41
+00:23:06,386 --> 00:23:07,488
+Sürat kavramı neydi?
+
+42
+00:23:08,067 --> 00:23:09,606
+Hız vektörünün boyuydu.
+
+43
+00:23:10,268 --> 00:23:14,548
+Bununla yönü çarptığımız zaman da hız vektörünü elde ederiz.
+
+44
+00:23:18,290 --> 00:23:42,351
+Mesela bir RT vektörü, 3 cos t i artı, 3 sin t j artı, t k k olsun. Bu durumda birim t et vektör nedir? Buna bakalım. Birim t et vektör, bulunmadan önce hız vektörünü elde etmemiz lazım. Hız vektörü neydi? Konum vektörünün türeviyle, dr bölü dt'yi elde edelim.
+
+45
+00:23:42,804 --> 00:23:50,364
+Eksi 3 sin t i, artı 3 cos t j, artı 2 t k olarak hız vektörünü elde ediyorum.
+
+46
+00:23:52,144 --> 00:23:54,223
+Peki hız vektörünün boyu nedir?
+
+47
+00:23:55,284 --> 00:24:08,462
+Eksi 3 sin t'nin karesi, 9 sin kare t, 3 cos t'nin karesi, 9 cos kare t, ve 2 t'nin karesi, 4 t kare olarak elde edilir arkadaşlar.
+
+48
+00:24:09,778 --> 00:24:29,179
+Ve bu da, kök içerisinde, sin kare t artı kos kare t neydi? 1'dir. 9 parantezinde sin kare t artı kos kare t'yi alırsak, 9 çarpı 1, 9 artı 4 tekrar olarak elde edilir burası.
+
+49
+00:24:33,010 --> 00:24:39,412
+Dolayısıyla, v vektörü bölü v'nin boyudur. Yani d, r bölü d, t bölü d, r bölü d, t'nin boyudur.
+
+50
+00:24:41,971 --> 00:24:44,010
+d, r bölü d, t yazıyorum.
+
+51
+00:24:44,270 --> 00:24:50,172
+Eksi 3 sin t, artı 3 cos t, j artı 2 t, k olarak
+
+52
+00:24:50,932 --> 00:24:59,632
+Her birinde, kök içerisinde 9 artı 4 t kareye bölüyorum arkadaşlar. Bu, bana birim t vektörü veriyor.
+
+53
+00:25:06,036 --> 00:25:08,336
+Şimdi limit ve sürekliliğe bakalım.
+
+54
+00:25:15,858 --> 00:25:24,118
+Diyelim ki, konum vektörü, bize verilen vektör değerli fonksiyon, bir d bölgesinde tanımlanmış olsun.
+
+55
+00:25:24,919 --> 00:25:27,378
+Ve bir l vektörü alalım.
+
+56
+00:25:27,980 --> 00:25:30,739
+l1i artı, l2j artı, l3k.
+
+57
+00:25:31,199 --> 00:25:32,239
+Çekilme bir vektör alalım.
+
+58
+00:25:32,318 --> 00:25:33,838
+Bu l1, l2 ve l3.
+
+59
+00:25:36,838 --> 00:25:38,739
+Sabit sayılar olarak düşünmelidir.
+
+60
+00:25:39,939 --> 00:25:41,338
+t giderken t sıfıra.
+
+61
+00:25:43,570 --> 00:26:04,151
+RT vektör değerli fonksiyonun limiti, L vektörü iken, bu durumda, T, T sıfıra giderken, FT'nin limiti L1, GT'nin limiti L2, TT sıfıra giderken, bakın buraya dikkat edin, HT'nin limiti L3'tür. Yani,
+
+62
+00:26:08,980 --> 00:26:18,359
+RT fonksiyonun limiti, TT sıfıra giderken, limit FD, i, artı limit GT, j, artı limit HD, k'dır.
+
+63
+00:26:19,940 --> 00:26:25,220
+Eğer TT sıfıra giderken, RT fonksiyonun limiti,
+
+64
+00:26:26,996 --> 00:26:33,316
+r fonksiyonun t0 noktasındaki değerini eşitse, bu neyin tanımıydı? Sürekliliğin tanımıydı.
+
+65
+00:26:33,715 --> 00:26:37,816
+rt t0 elemanıdır, d noktasında süreklidir arkadaşlar.
+
+66
+00:26:48,050 --> 00:26:53,010
+Burada anlaşılmayan bir nokta var mı? Limit ve süreklilik konusunda.
+
+67
+00:30:31,284 --> 00:30:33,423
+Limit ve sürekli bir örnek yapalım.
+
+68
+00:30:34,304 --> 00:30:41,104
+Mesela bize fonksiyon olarak, rt eşitir, cos di artı sintetji artı tk fonksiyonunu vermiş olsun.
+
+69
+00:30:44,084 --> 00:30:50,064
+Bu fonksiyonun t, pi bölü 4'e yaklaşırken, limitini alalım.
+
+70
+00:30:51,092 --> 00:30:59,432
+tp bölü 4'e yaklaşırken, cos t'nin limitini, sin t'nin limitini ve en son olarak da t'nin limitini alacağız.
+
+71
+00:31:01,231 --> 00:31:08,951
+tp bölü 4'e giderken, cos t zaten kök 2 bölü 2 olacaktır. cos p bölü 4'ü elde edeceğim.
+
+72
+00:31:09,551 --> 00:31:17,192
+tp bölü 4'e giderken, sin p bölü 4, kök 2 bölü 2 olur. sin 45 ve cos 45'i zaten biliyoruz.
+
+73
+00:31:19,380 --> 00:31:36,980
+tp bölü 4'e giderken t'nin limiti zaten p bölü 4'tür. Dolayısıyla kök 2 bölü 2 i artı kök 2 bölü 2 j artı p bölü 4 k olarak ben limiti elde ettim. Sırasıyla fonksiyonların limitlerini alıyorum arkadaşlar.
+
+74
+00:31:45,044 --> 00:32:01,804
+ti artı, tekareji artı, teküp k konum vektörü ile verilen cismin t'iştir birdeki hız ve ivme vektörlerini bulalım. t'iştir birdeki hız ve ivme vektörleri v'iştir dr bölü dt idi.
+
+75
+00:32:05,010 --> 00:32:20,310
+Vektör değerli fonksiyonu t görev türevini alacağım. t'nin türevi bakın, sırasıyla türevlerini alıyorum, 1'dir. 1i, i, t kare türevi, 2t, j, artı t küpün türevi, 3t kare, k olarak elde edilir.
+
+76
+00:32:21,152 --> 00:32:31,071
+i, m vektörü ise hız vektörün türevidir. i'nin türevi, i'nin kat sayısının türevi, 1'in türevi 0'dır. Dolayısıyla 0'ı iyi olunca
+
+77
+00:32:31,508 --> 00:32:44,667
+i ortadan kalkmış oldu. j'nin kat sayısı 2t. 2t'nin türevi 2'dir. 2j'yi artı 3t²'nin türevi 6tk olarak ivme vektörü elde edilir.
+
+78
+00:32:45,386 --> 00:32:53,647
+Ve t'şitir 1 içinde, t'şitir 1 noktasında da, bakın buradaki t değerlerini 1 alacağım.
+
+79
+00:32:54,098 --> 00:33:03,980
+i artı 2tj, 2j oldu. 3t kare kada, 3 çarpı 1'in karısı çarpı kadan, 3k olarak elde edilir arkadaşlar.
+
+80
+00:33:05,259 --> 00:33:10,278
+İvme vektörü ise, 2j artı 6 çarpı 1 çarpı k olur.
+
+81
+00:33:10,500 --> 00:33:16,778
+t işte bir noktasında, 2j artı 6k olarak elde edilir arkadaşlar.
+
+82
+00:33:21,652 --> 00:33:23,551
+Burada anlaşılmayan bir nokta var mı?
+
+83
+00:33:29,268 --> 00:33:37,307
+Konum vektörü, cos t, i, artı, sin t, j, artı, t, k, olan cismin t eşitir 1'deki süratini ve ivmesini bulun demiş.
+
+84
+00:33:38,748 --> 00:33:51,768
+Hızını hesaplayalım. Türevini alacağız. cos t'nin türevi, eksi sin t, i, sin t'nin türevi cos t, j, artı, t kareli türevi, 2 t, k, olarak hız vektörünü hesapladım.
+
+85
+00:33:55,476 --> 00:34:18,936
+Hızı, eksi sim bir i, artı kos bir j, artı iki k olarak hesaplanır. İvme vektörü de, hız vektörü, türevidir. Sinte enin türevi, eksi koste, koste enin türevi, eksi sinte, eksi sinte enin türevi, eksi koste, sinte enin türevi koste, ama başında eksi var bakın.
+
+86
+00:34:19,956 --> 00:34:32,614
+cos t'nin türevi, eksi sinteji, artı 2 t'nin türevi de 2'dir arkadaşlar. Yani, ivme vektörü, eksi cos t i, eksi sinteji, artı 2 k olarak elde edilir.
+
+87
+00:34:32,614 --> 00:34:40,835
+Ve bir noktasındaki ivmesi de, cos 1 i, eksi cos 1 i, eksi sin 1 j, artı 2 çarpı 1 k.
+
+88
+00:34:44,659 --> 00:35:08,858
+2K olarak elde edilir. Süratı hesaplayalım. Hız vektörünün boyuydu. Hız vektörünün boyunu alalım. Hız vektörümüz bir noktasında, sin 1 i artı, eksi sin 1 i artı, cos 1 j artı 2 kaydı. Sin 1'in karesi, cos 1'in karesi, bir de 2'nin karesini topluyorum. Sin kare 1 artı, cos kare 1, 1'di zaten.
+
+89
+00:35:09,523 --> 00:35:22,583
+sin kare x artı kos kare x 1'di, sin kare 1 artı kos kare 1'de 1'dir. 1 artı 2'nin karesi, 1 artı 4'ten, burası 5'tir. Kare kök 5 olarak, kök 5 olarak elde edelim arkadaşlar.
+
+90
+00:35:24,402 --> 00:35:26,103
+Burada anlaşılmayan bir nokta var mı?
+
+91
+00:38:01,907 --> 00:38:03,806
+Bu hafta sınav haftanız mı arkadaşlar?

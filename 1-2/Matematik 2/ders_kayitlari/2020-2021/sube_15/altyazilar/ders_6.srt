@@ -1,0 +1,1767 @@
+1
+00:03:38,484 --> 00:03:40,683
+Merhaba arkadaşlar. Sesim geliyor mu?
+
+2
+00:03:43,463 --> 00:03:44,384
+Geliyor hocam.
+
+3
+00:03:45,544 --> 00:03:46,304
+Teşekkürler.
+
+4
+00:03:47,584 --> 00:03:49,743
+En son alternatif serileri işledik arkadaşlar.
+
+5
+00:03:52,243 --> 00:03:56,144
+Alternatif seriler negatif terimli serilerdi arkadaşlar.
+
+6
+00:03:57,403 --> 00:04:02,784
+Negatif terimli serilerde, eksi bir zeri en şeklinde bir terimimiz vardı.
+
+7
+00:04:04,383 --> 00:04:18,084
+eksi 1 üzeri n şeklinde bir terim olduğundan dolayı seri 1 pozitif, bir de negatif değerler alıyordu.
+
+8
+00:04:26,899 --> 00:04:36,000
+Peki ama bir pozitif, bir negatif değer alan bir serinin yakınsaklığını ya da ıraksaklığını nasıl incelemeliyiz?
+
+9
+00:04:37,159 --> 00:04:43,319
+Bunun içinde birkaç yolumuz vardı. Öncelikle şart diye bir kavramdan bahsetmiştim.
+
+10
+00:04:46,620 --> 00:04:49,799
+Şartlar alternatçı için şunlardı.
+
+11
+00:04:50,836 --> 00:05:13,576
+3 tane şart var demiştik, 3 tane koşul var demiştik. Bunlar, birincisi, seri, eksi 1 üzeri n çarpı an şeklinde, an'in sıfırdan büyük olmasıydı. Birinci koşulum buydu. İkinci koşulum, an artı 1, küçüktür, an olmalıydı.
+
+12
+00:05:16,851 --> 00:05:23,331
+AN'in limitini aldığımda, AN derken kastettiğim serinin genel terimi.
+
+13
+00:05:23,731 --> 00:05:33,371
+Yani mesela, eksi 1 üzeri N, 1 bölü N kare artı 1 serisinde, AN derken kastettiğim burada, burası.
+
+14
+00:05:33,671 --> 00:05:42,751
+Normalde aslında tamamı AN olması gerekiyor ama, eksi 1 üzeri N çarpı AN şeklinde tanımladığım için, AN burada mesela 1 bölü N kare artı 1.
+
+15
+00:05:43,411 --> 00:06:10,811
+Ya da eksi bir zelen çarpı bir bölen serisinde bir bölen benim a n'im. Limit a n sıfırsa da 3 koşulu, 3 şartı alternat seri sağlamış oluyor. Bunları sağlıyorsa alternat seri yakınsaktır diyorum. Ancak bir de ben mutlak yakınsaklık kavramını tanımladım. Mesela şu.
+
+16
+00:06:12,915 --> 00:06:33,235
+Şu seri, bir bölü en kare artı bir, hem sıfırdan büyük, hem bir bölü en kare artı bir için, bir bölü en artı birin karesi artı bir, bir bölü en kare artı birden küçük ya, a en artı bir küçüktür, a en koşulu ve bir bölü en kare artı bir en sonrası giderken sıfıra gittiği için, üçüncü koşul da sağlıyor.
+
+17
+00:06:33,995 --> 00:06:36,415
+Alternatif seriyi testine göre yakınsakdırılıyor.
+
+18
+00:06:36,915 --> 00:06:38,816
+Bir kavram daha işledik.
+
+19
+00:06:41,139 --> 00:06:46,179
+Mutlak yakınsaklık kavramı. Peki, mutlak yakınsaklık kavramı nedir?
+
+20
+00:06:47,959 --> 00:06:54,480
+Negatif terimli serinin mutlak değerini alıyorum. Bu kısmının mutlak değerini alıyorum. Ne oluyor?
+
+21
+00:06:56,480 --> 00:07:07,439
+Eksi bir üzerinden ortadan kalkmış oluyor arkadaşlar. Yani seriye AN'e dönüşmüş oluyor. Sadece AN'e dönüşmüş oluyor.
+
+22
+00:07:07,860 --> 00:07:25,259
+En eşitli birden sonrası, an şeklinde bir seri oluşmuş oluyor. Bu seri, eğer yakınsaksa, eksi bir ziri an, an serisi, alternle seri, orijinal alternle seri de mutlak yakınsaktır, diyorum.
+
+23
+00:07:26,300 --> 00:07:33,699
+Bakın, seri yakınsak ise, bu seri mutlak yakınsaktır, diyorum. Mutlak yakınsak bir seri yakınsaktır.
+
+24
+00:07:34,132 --> 00:07:42,992
+Ancak yakınsak bir seri, mutlak yakınsak olmayabilir. Yani burada yakınsaklıktan kastim, bu şartları sağlayan yakınsaklık.
+
+25
+00:07:44,192 --> 00:08:00,052
+Dolayısıyla o zaman burada bir tanım daha yapmak durumundayım. O tanımda şartlı yakınsaklık kavramı. Şartlı yakınsaklıkta 3 tane şartım vardı.
+
+26
+00:08:02,004 --> 00:08:27,163
+Eksi 1 üzeri an serisi yakınsak, yani bu şartları sağlıyor, 3 şartı sağlayan yakınsak, ancak mutlak yakınsak değilse, yani mutlak değerlerini aldım, mutlak yakınsaklığı elde edemedim. O zaman eksi 1 üzeri an serisine şartlı yakınsaktır diyorum. Şartlı yakınsaktık için alternatif seri testini uyguladık. Yani o 3 maddeyi uyguladık.
+
+27
+00:08:28,915 --> 00:08:38,915
+Şöyle bir durumum var. Öncelikle pozitif terimli serilerdeki testlerin aynılarını mutlak yakınsaklıkla test etmek için kullanıyorum.
+
+28
+00:08:39,036 --> 00:08:44,915
+Dolayısıyla zaten benim bugüne kadar öğrendiğim serilerle ilgili testlerin hepsini burada kullanabilirim.
+
+29
+00:08:45,915 --> 00:08:49,596
+Dolayısıyla bu alternat seri kavramını öğrenmenizde fayda var.
+
+30
+00:08:49,596 --> 00:08:55,596
+Çünkü alternat seri sorduğunda zaten serilerde öğrenmiş olduğunuz testleri,
+
+31
+00:08:57,268 --> 00:09:21,947
+Kullanmanızı da ölçmüş oluyoruz. Dolayısıyla, alternatisi kavramını bilmeden, bütün sihirlerdeki testleri bilmenizin anlamı yok. Yani buradaki kavramsal yapıyı algılamadan, bütün testleri bilmenizin bir mantığı yok. Yani buradaki kavramsal yapıyı bilmeden, sorulara yanlış cevap verebilirsiniz.
+
+32
+00:09:26,836 --> 00:09:53,496
+Buradaki yapıyı bilmediğiniz zaman, buradaki kavramları bilmediğiniz zaman, serinin yakınsaklık testleri, mukayese testlerini uygulayamamış oluyorsunuz. Dolayısıyla soruyu yanlış yapabilirsiniz. Dolayısıyla burayı anlamanız önemli. Ondan dolayı buraya biraz dikkat edin. Bu testleri mutlak AL serisine uyguluyorum. Yani, eksi büzeden ortadan kalkmış oluyor.
+
+33
+00:09:54,196 --> 00:10:15,796
+Pozitif terimi seri için 2 tane durumum vardı. Yakınsaklık ya da ıraksaklık. 2 tane durumum var. Yakınsaklık ya da ıraksaklık. Alterneseri içinse yakınsak olabilir, ıraksak olabilir. Zaten ıraksaksa tamam diyorum.
+
+34
+00:10:16,211 --> 00:10:33,511
+Yakınsaksa, yani o 3 şartı sağlayarak bir yakınsak oluşmuşsa, yani alternatif seri testine göre yakınsaksa, mutlak yakınsak mı, değil mi, ona bakıyorum. Çünkü mutlak yakınsak olabilir, mutlak yakınsaksa zaten yakınsak demiştik.
+
+35
+00:10:35,604 --> 00:10:44,504
+Mutlak yakınsak değilse, ancak yakınsaksa, şartlı yakınsaktır diyorum seriye. Zaten ıraksaksa, ıraksak olmuş oluyor.
+
+36
+00:10:45,943 --> 00:10:51,504
+Dolayısıyla öncelikle, mutlak yakınsaklığa bakacağız.
+
+37
+00:10:53,244 --> 00:10:57,584
+Şimdi bakalım, mutlak yakınsaklık var mı?
+
+38
+00:11:02,227 --> 00:11:22,807
+1 bölü n serisine harmonik seri demiştik. Eksi 1 üzeri n artı 1, 1 bölü n serisine de alterna harmonik seri denir. Şimdi bunu inceleyelim. Harmonik seri kesinlikle ıraksak. 1 bölü n serisi harmonik seri. Ne yaptım ben? Eksi 1 üzeri n artı 1, 1 bölü n serisinin mutlak değerini aldım.
+
+39
+00:11:23,168 --> 00:11:46,567
+Bu da bir bölen serisini verdi bana. Bir bölen serisinin yakınsaklığına ve ıraksaklığına bakıyorum. Bir bölen serisi harmonik seri zaten ıraksak. Dolayısıyla eksi bir üzeri en artı bir bir bölen mutlak yakınsak değildir. Bunu tespit ettim. Mutlak yakınsak olmadığını tespit ettim. Mutlak yakınsaksa zaten yakınsaklık vardı.
+
+40
+00:11:47,379 --> 00:11:58,539
+Şimdi, şartlı yakınsaklık var mı? Ona bakacağım. Çünkü burada mutlak yakınsaklığı elde edemedim. Bakalım, şartlı yakınsaklık var mı?
+
+41
+00:11:59,440 --> 00:12:07,960
+Eksi 1 üzeri n artı 1, 1 bölen sesi, şartlı yakınsak mı? Bakalım, 1 bölen büyüktür, 0. Doğru. Bakın, 1 bölen neden büyüktür, 0?
+
+42
+00:12:08,180 --> 00:12:13,700
+n eşittir, 1'den başlıyor, dikkat edin. 1, 2, 3, 4, 5, 6, 7, sonsuza kadar gidiyor.
+
+43
+00:12:14,032 --> 00:12:40,851
+Dolayısıyla 1 bölü n de 1 bölü 1, 1 bölü 2, 1 bölü 3, 1 bölü 4, 1 bölü 5, 1 bölü 6, 1 bölü 7, 1 bölü 8 gibi bir sayı. Bunların hepsi pozitif sayılar. Dolayısıyla bu büyüktür sıfır diyoruz. 1 bölü n artı 1 küçüktür 1 bölü n. Yani mesela n'i 3 alalım, 1 bölü 3 artı 1, 1 bölü 4 olur. 1 bölü 3'ten küçüktür. Yani 1 bölü n artı 1 her zaman 1 bölü n'den küçük. a n artı 1 küçüktür a n derken bunu kastediyor.
+
+44
+00:12:41,748 --> 00:13:00,768
+Bunu da sağladı. 1 bölü en zaten en sonsuza giderken sıfır arkadaşlar. Üçüncü koşulda sağlattım. Dolayısıyla bu şartları sağladığından, Alterne seri testine göre seri yakınsaktır diyorum. Seri mutlak yakınsak değil, o zaman şartlı yakınsaktır diyorum arkadaşlar.
+
+45
+00:13:02,908 --> 00:13:05,768
+Yani Alterne Harmonik seri.
+
+46
+00:13:06,323 --> 00:13:10,263
+Alterne Harmonik seri, şartlı, yakınsaktır arkadaşlar.
+
+47
+00:13:11,423 --> 00:13:14,283
+Alterne Harmonik seri, şartlı, yakınsaktır.
+
+48
+00:13:21,043 --> 00:13:22,683
+Burada anlaşılmayan bir yer var mı?
+
+49
+00:13:25,444 --> 00:13:27,043
+Hızlı anlatmıyorum değil mi?
+
+50
+00:13:28,444 --> 00:13:32,923
+Şimdi n cosmp bölü, 2 üzeri n serisinin yakınsaklığına bakalım.
+
+51
+00:13:33,084 --> 00:13:36,384
+Burayı zaten dün anlatmıştım, ondan dolayı biraz hızlı geçeceğim.
+
+52
+00:13:41,652 --> 00:13:43,832
+Anlaşılmayan yerleri yine sorun arkadaşlar.
+
+53
+00:13:45,372 --> 00:13:49,372
+n çarpı kosinus n p bölü 2 üzeri n serisini yakınsaklığına inceleyin demiş.
+
+54
+00:13:50,132 --> 00:13:53,152
+Kosinus n p'nin eksi 1 üzeri n olduğunu söylemiştik.
+
+55
+00:13:53,432 --> 00:13:56,792
+Dolayısıyla burada aslında alternat seriyi sormuş oluyor.
+
+56
+00:13:56,792 --> 00:13:59,332
+Yani hangi yakınsaklık türü var ona bakacağız.
+
+57
+00:14:00,332 --> 00:14:04,252
+Eksi 1 üzeri n, n bölü 2 üzeri n serisine eşittir bu seri.
+
+58
+00:14:04,755 --> 00:14:13,995
+O zaman bu alternatif serinin yakınsaklık ve yraksaklığını inceleyeceğiz. Mutlak yakınsak mı? Önce ona bakacağız. Birincisi mutlak yakınsak mı?
+
+59
+00:14:16,635 --> 00:14:30,735
+N bölü 2 üzeri N, yani buranın mutlak değerini aldım. N bölü 2 üzeri N oldu. Bu mutlak yakınsak mı? Ona bakacağım. Ona bakmak için buranın mutlak değerini aldıktan sonra elde ettiğim seri N bölü 2 üzeri N serisi.
+
+60
+00:14:32,275 --> 00:14:38,075
+Bu seri için, zaten biz daha önce yapmıştık, an artı bir bölü an oran kuralını kullanabiliriz.
+
+61
+00:14:39,055 --> 00:14:46,995
+Kullandık, limitini aldık, an artı bir, n artı bir bölü, iki üzeri n artı bir oldu.
+
+62
+00:14:47,695 --> 00:14:52,175
+an nedir? n bölü, iki üzeri n arkadaşlar.
+
+63
+00:14:53,615 --> 00:14:57,235
+n bölü iki üzeri n yukarı, iki üzeri n bölü n olarak geçti.
+
+64
+00:14:58,196 --> 00:15:24,015
+Dolayısıyla buradaki 2 üzeri n ile bu n gitti. n artı 1 bölü n'in limiti zaten 1. Burada sadece 2 üzeri 1 kaldı. Dolayısıyla buranın sonucu 1 bölü 2. Bu da küçüktür 1 olduğu için bu ifade yakınsak çıktı. Bakın mutlak değerini aldığımızda seri yakınsak çıktı. O zaman bu seri mutlak yakınsaktır diyoruz arkadaşlar. Mutlak yakınsak seri zaten yakınsaktı.
+
+65
+00:15:25,971 --> 00:15:31,992
+eksi 1 üzeri n bölü n kare ln n serisinin yakınsaklık türünü belirleyiniz demiş.
+
+66
+00:15:36,244 --> 00:16:02,064
+Şimdi arkadaşlar, serisinin yakınsaklık türünü belirleyiniz demiş. Mutlak yakınsak mı? Yani, eksi bir üzeri n'i çıkardım. Yani, eksi bir üzeri n artı bir oluyor, mutlak değerini alınca. Bir bölü n kare elenen yakınsak mı ona bakıyoruz. Limit testini uygulayalım. Bir bölü n kareyi seçelim. Neden? Bir bölü n kareler birbirini götürür. Zaten bunu da daha önce yapmıştık aslında.
+
+67
+00:16:03,347 --> 00:16:06,347
+Bir bölü en kare sesini seçip bölelim arkadaşlar.
+
+68
+00:16:07,767 --> 00:16:08,747
+Biraz aşağı alıyorum.
+
+69
+00:16:15,251 --> 00:16:20,471
+Böldüğüm zaman, 1 bölü n kareler birbirini götürdü.
+
+70
+00:16:20,711 --> 00:16:25,091
+Ya da ters çevirip, yukarı n kare çarpım olarak götürüp, böyle de götürebilirsiniz. Fark etmez.
+
+71
+00:16:25,651 --> 00:16:29,431
+1 bölü elenen, sonuç olarak elenen, n sonsuza giderken de sonsuza gider.
+
+72
+00:16:29,611 --> 00:16:32,391
+Dolayısıyla, 1 bölü elenen, n sıfıra gitmiş olur.
+
+73
+00:16:33,331 --> 00:16:40,071
+1 bölü n kare yakınsak olduğundan, limit testine göre, 1 bölü n kare elenen de yakınsak olur.
+
+74
+00:16:40,416 --> 00:16:47,116
+O halde, n eşitir 2'den sonrası, eksi 1 üzeri n bölü n kare elenen, mutlak yakınsaktır arkadaşlar.
+
+75
+00:16:49,936 --> 00:16:55,816
+Mutlak olmayan yakınsaklığı göstermek için, alternatif seri testi kullanılır.
+
+76
+00:16:55,896 --> 00:17:02,316
+Yani, mutlak yakınsaklık yoksa, şartlı yakınsaklık için alternatif seri testini kullanıyorduk.
+
+77
+00:17:04,339 --> 00:17:29,940
+Kosinus n pi bölü l n pi, l n n şeklinde bir seri vermiş. Şimdi bunun yakınsaklığı inceleyin demiş. Kosinus n pi'nin eksi bir üzeri ne olduğunu söylemiştik. Yani 1 bölü l n n yakınsak mı ona bakacağız. Neden? Çünkü önce mutlak yakınsaklığa bakıyorduk. Mutlak yakınsak mı? Buranın mutlak değerini aldık. Buranın mutlak değerini alınca burası 1 bölü l n n sirisine dönüşmüş oldu.
+
+78
+00:17:30,420 --> 00:17:43,380
+Şimdi mukayese testini kullanalım. Yani karşılaştırma testi. L, N, N, küçüktür, N olduğunu biliyoruz. Ters döndürdüğümüz zaman bir bölü L, N, N, büyüktür, bir bölü N'den oluyor.
+
+79
+00:17:45,360 --> 00:17:55,380
+Bir bölü N serisi, ıraksak bir seri, harmonik seri olduğunu biliyoruz. Temel bir seri. Harmonik seri, ıraksak, harmonik serinin...
+
+80
+00:17:56,147 --> 00:18:02,867
+Genel teriminden daha büyük terimlere sahip bir seriden bahsediyoruz.
+
+81
+00:18:03,387 --> 00:18:05,627
+Kesinlikle ıraksaktır değil mi arkadaşlar?
+
+82
+00:18:06,007 --> 00:18:12,507
+Düşünün, ıraksak bir serinin terimlerinden daha büyük terimlere sahip bir seri var ortada.
+
+83
+00:18:12,947 --> 00:18:14,107
+E bu da ıraksaktır.
+
+84
+00:18:14,667 --> 00:18:23,507
+Dolayısıyla, mukayese testine göre, yani tabii mukayese testi falan diyor ama hani sonuçta,
+
+85
+00:18:24,468 --> 00:18:35,928
+belli bir mantığı var. Yani bu mantıkta karşılaştırdığım seri ıraksaksa, bu ıraksak serinin terimlerinden daha büyük terimlere sahip olan seri kesinlikle ıraksaktır diyor.
+
+86
+00:18:36,948 --> 00:18:44,788
+Bakın, bir bölü elenen serisi ıraksak çıktı. E o zaman ne yapacağım? Yakınsaklığı elde edemedim.
+
+87
+00:18:45,395 --> 00:19:05,596
+Mutlak yakınsak değil bu seri. İyi de ne yapmam lazım o zaman? Tek tek koşullara uyguluyorum arkadaşlar. Koşullara bakacağım. Birincisi ne demiştik? Mutlak yakınsak mı? İkincisi, eğer mutlak yakınsaklık yoksa, şimdi ikinci maddeye geldim, şartlı yakınsak mı? Ona bakacağım.
+
+88
+00:19:07,476 --> 00:19:29,936
+a n'i alıyorum, eksi 1 üzeri n'i çıkardığımda, 1 bölü l n n a n, 1 bölü l n n büyüktür, sıfırdır. Birinci koşul sağlandı. Bakın n ney? 1, 2, 3, 4, 5 gibi sayılar. Birden büyük sayılar yani. Dolayısıyla l n n de e üzeri bir logaritma.
+
+89
+00:19:30,612 --> 00:19:45,852
+E tabanında N zaten. Bu logaritma E tabanında 2, 3, 5, 7, 10, 11, 12 neyse, E üzeri bir pozitif sayıdır. Dolayısıyla, burası da bir bölü o pozitif sayı da zaten sıfırdan büyüktür arkadaşlar. Pozitiftir yani her zaman.
+
+90
+00:19:46,652 --> 00:19:54,211
+Elen N artı 1, bir bölü Elen N'den küçüktür. Artış var. Dolayısıyla buradaki artışa bağlı olarak.
+
+91
+00:19:55,188 --> 00:20:06,307
+İfadede, payda artınca, ifade küçülüyor. Yani, an artı bir küçüktür, an'i de elde ettim. Çünkü, bir bölü elen, en artı bir, bir bölü elenenden küçük arkadaşlar.
+
+92
+00:20:07,367 --> 00:20:18,768
+İkinci koşulu da sağlattım. İki şart tamam. Üçüncü şart, zaten tamam. Bir bölü elenen, en sonsuza giderken sıfıra gidiyor. Alternasyon testine göre, seri yakınsaktır.
+
+93
+00:20:19,508 --> 00:20:25,428
+Ancak mutlak yakınsaklık mevcut olmadığından dolayı şartlı yakınsaktır diyorum.
+
+94
+00:20:30,387 --> 00:20:38,027
+Evet, bu şartlı yakınsaklıkla ilgili alternasıyla ilgili sorusu olan var mı arkadaşlar?
+
+95
+00:20:41,107 --> 00:20:46,587
+Artık kuvvet serilerine geçiyorum. Yani başka bir konuya geçeceğiz artık.
+
+96
+00:20:56,147 --> 00:20:58,847
+Sorusu olan varsa, sorsun arkadaşlar.
+
+97
+00:23:03,155 --> 00:23:08,675
+Umarım alternatik seri kavramı anlaşılmıştır arkadaşlar. Çünkü diğer konuya geçiyorum artık.
+
+98
+00:23:15,827 --> 00:23:17,867
+Serilerin yeniden düzenlenmesi.
+
+99
+00:23:19,067 --> 00:23:33,907
+Eğer bir seri mutlak yakınsak ise serinin pozitif terimleriyle oluşturulan alt seriyle negatif terimlerinden oluşturulan alt serinin ikisi de yakınsaktır.
+
+100
+00:23:34,527 --> 00:23:35,027
+Şimdi bakın.
+
+101
+00:23:35,847 --> 00:23:37,347
+Bir seri mutlak yakınsak.
+
+102
+00:23:38,248 --> 00:23:40,748
+Yani mutlak değerlerini aldım serinin.
+
+103
+00:23:43,124 --> 00:23:56,044
+Dolayısıyla serinin, terimlerinin mutlak değerlerini aldığım takdirde, aslında ne olmuş oluyor? Bütün terimleri aynı işaretli yapmış oluyorum.
+
+104
+00:23:56,044 --> 00:24:01,771
+Dolayısıyla, pozitif terimli...
+
+105
+00:24:07,700 --> 00:24:20,559
+Pozitif terimleri sonsuza kadar topladığımda oluşan seri ile negatif terimleri sonsuza kadar topladığımda oluşan seri aynı oluyor arkadaşlar.
+
+106
+00:24:37,556 --> 00:24:47,916
+Yani bakın, seri normalde, bir pozitif, bir negatif, bir pozitif, bir negatif terime sahip şekilde ilerleyen bir seri.
+
+107
+00:24:48,816 --> 00:24:52,556
+Ve mutlak değerlerini aldım serinin genel teriminin.
+
+108
+00:24:53,276 --> 00:24:59,236
+Yani, eksi bir üzere, n, a, n şeklinde bir serim var.
+
+109
+00:24:59,796 --> 00:25:01,395
+Bunların mutlak değerlerini aldım.
+
+110
+00:25:01,395 --> 00:25:03,395
+Ne oldu? Seri.
+
+111
+00:25:04,339 --> 00:25:10,759
+AN şeklinde, terimlere sahip bir seriye dönüştü. Bu AN serisi de, yakınsak çıktı.
+
+112
+00:25:12,759 --> 00:25:16,639
+Ve, dolayısıyla bu seri, mutlak yakınsaktır dedim.
+
+113
+00:25:18,759 --> 00:25:23,699
+Bu mutlak yakınsak serinin, pozitif terimlerini alıyorum, bir seri oluşturuyorum.
+
+114
+00:25:25,268 --> 00:25:34,248
+Bu seri de yakınsaktır. Ya da negatif terimlerini alıyorum. Bir seri oluşturuyorum. Bu seri de yakınsaktır arkadaşlar.
+
+115
+00:25:34,448 --> 00:25:39,548
+Bunlara iki tane alt seri diyorum. Bu alt serilerin ikisi de yakınsaktır arkadaşlar.
+
+116
+00:25:41,548 --> 00:25:48,448
+Eğer bir seri şartlı yakınsak ise, yani 3 koşulu sağladı.
+
+117
+00:25:49,448 --> 00:25:51,368
+İşte am büyüktür 0.
+
+118
+00:25:51,892 --> 00:25:54,332
+A n artı bir küçüktür A n.
+
+119
+00:25:58,996 --> 00:26:03,036
+Ve limit an sıfıra gidiyor. Bu üç koşulu sağladı.
+
+120
+00:26:04,576 --> 00:26:10,236
+Yani genel terim, eksi bir çıkardığım takdirde sıfırdan büyük.
+
+121
+00:26:11,016 --> 00:26:14,276
+An artı bir küçüktür an, yani azalanlık var.
+
+122
+00:26:15,016 --> 00:26:20,475
+Üçüncü olarak da an'in limitini aldım en sonsuza giderken, an sıfıra yaklaşıyor.
+
+123
+00:26:21,516 --> 00:26:24,215
+Bu durumda diyorum ki, şartla yakınsaktır.
+
+124
+00:26:25,344 --> 00:26:47,104
+Mutlak yakınsak da değil. Bu durumda. Zaten bakın mutlak yakınsaksa, pozitif terimleri de alsam, negatif terimleri de alsam, yakınsaklık elde ediyorum. Negatif terimli alt seri, eksi sonsuza, pozitif terimli alt seri, artı sonsuza, yaksar.
+
+125
+00:26:48,468 --> 00:26:54,968
+Çünkü şartlı yakınsaksa zaten ne var? Aslında mutlak yakınsaklık yok. Dolayısıyla yakınsaklığı elde edemiyorum zaten.
+
+126
+00:26:56,028 --> 00:27:09,248
+O zaman pozitif terimlerden oluşan serinin artı sonsuza gittiğini, negatif terimlerden oluşan serinin de eksi sonsuza gittiğini söyleyebiliriz arkadaşlar.
+
+127
+00:27:18,483 --> 00:27:36,083
+Eğer bir seri mutlak yakınsak ise, serinin terimlerini farklı bir sıralama ile yeniden düzenlersek, bakın mutlak yakınsaklık var cebimde, farklı bir sıralama ile yeniden düzenledim.
+
+128
+00:27:37,491 --> 00:28:00,291
+Yeni seriye ne olmalı arkadaşlar? Haliyle zaten orijinal serinin toplamına yakınsak. Değişen bir şey olmaz. Sonsuz tane terim var. O sonsuz terimin toplamında belli bir sayıya gidiyor zaten. Mutlak yakınsaklık varsa da. Zaten pozitif terim seride, negatif terim seride yakınsak da o zaman terimlerine sıralamasını değiştirmek.
+
+129
+00:28:00,660 --> 00:28:24,160
+orijinal serinin karakterini değiştirmez. Karakter yine aynı kalır arkadaşlar. Eğer bir seri şartlı yakınsak ise ve L elemanıdır real sayılar olacak şekilde bir L sayısı olduğunu varsayalım. Bir L alıyorum, real sayılardan olsun diyorum. Yani R'den bir L alıyorum.
+
+130
+00:28:24,980 --> 00:28:35,880
+1 olabilir, 2 olabilir, kök 2 olabilir, pi olabilir, e olabilir, herhangi bir real sayı alıyorum. 1 bölü 2 olabilir. Böyle bir sayı alıyorum. L sayısı.
+
+131
+00:28:37,460 --> 00:28:47,700
+O zaman, serinin terimleri, bakın şartlı yakınsaklık var elimde. Artı solsuz, eksi solsuz, ıraksar.
+
+132
+00:28:48,564 --> 00:28:55,304
+veya L sayısına yakın sayacak şekilde yeniden düzenlenebilir.
+
+133
+00:29:01,332 --> 00:29:14,812
+Ama bakın burada mutlak yakınsaklık yok. Buraya dikkat. Mutlak yakınsaklık varsa, sıralamayı değiştirsem de, yeniden düzenlesemse, yine yakınsaklığı elde ediyor. Ama şartlı yakınsaklıkta biraz farklı bir durum var.
+
+134
+00:29:15,652 --> 00:29:26,012
+Serinin terimlerini tekrar düzenlediğimde ya da farklı düzenlediğimde, artı veya eksi solsa ırak sayabilir veya l sayısına yakın sayabilir arkadaşlar.
+
+135
+00:29:27,763 --> 00:29:37,803
+Serinin yapısına göre, terimlerin nasıl artı eksi gittiğine göre, artıları bir tarafa toplayıp, eksileri bir tarafa topladığınızda zaten ortaya çıkacak bir şey.
+
+136
+00:29:39,743 --> 00:29:41,644
+Burada anlaşılmayan bir yer var mı?
+
+137
+00:29:47,251 --> 00:29:57,971
+Böylelikle alternat seri, serilerde, pozitif terimli serilerde testler ve alternat seri kavramlarını bitirmiş olduk arkadaşlar.
+
+138
+00:29:58,751 --> 00:30:01,352
+Testleri pozitif terimli seriler için anlattık.
+
+139
+00:30:02,192 --> 00:30:06,112
+Negatif terimli serileri farklı bir başlık altında belirttik.
+
+140
+00:30:06,251 --> 00:30:07,591
+Alternat seriler dedik.
+
+141
+00:30:08,511 --> 00:30:10,811
+İlk başta işlediğimiz pozitif terimli serilerde.
+
+142
+00:30:10,811 --> 00:30:13,731
+İkincisi alternat seri kavramını işledik.
+
+143
+00:30:13,831 --> 00:30:14,811
+Alternat seriler.
+
+144
+00:30:15,200 --> 00:30:23,859
+Eksi bir üzeri n şeklinde olan serilerde, bir artı bir eksi negatif terimli serilerde, negatif terimlere sahip olabilen serilerde.
+
+145
+00:30:24,319 --> 00:30:28,859
+Üçüncü olarak da, son olarak da, kuvvet serilerini işleyeceğiz.
+
+146
+00:30:30,319 --> 00:30:31,839
+Kuvvet serisi nedir?
+
+147
+00:30:34,680 --> 00:30:42,839
+Kuvvet serisi aslında, normalde biz seriyi n eşittir, birden son sanıyorduk.
+
+148
+00:30:46,836 --> 00:31:02,296
+an gibi bir genel terim ile ifade ediyorduk. Bu an terimi de, n'e bağlı bir fonksiyondu aslında. Fn şeklinde bir fonksiyondu. Yani mesela 1 bölü n, 1 bölü n kare artı 1 gibi gibi.
+
+149
+00:31:18,291 --> 00:31:31,331
+n küp gibi gibi farklı ifadeler olabiliyordu. Yani n'e bağlıydı. Önemli olan bu. Burada kuvvet serisi kavramında farklı olan şu.
+
+150
+00:31:32,491 --> 00:31:42,251
+a n var, bir de x'e bağlı bir terim var. Yani bu da bir fonksiyon ama sadece n'e bağlı bir fonksiyon değil arkadaşlar.
+
+151
+00:31:42,851 --> 00:31:45,771
+Aynı zamanda f x'e bağlı bir fonksiyon.
+
+152
+00:31:46,099 --> 00:31:54,039
+Yani, x değişkeni de burada ikinci bir değişken olarak, x değişkeni de mevcut arkadaşlar.
+
+153
+00:31:54,819 --> 00:31:55,039
+Şimdi,
+
+154
+00:31:56,147 --> 00:32:06,827
+a n çarpı x eksi c üzeri n şeklinde yazılan seriye, kuvvet serisi diyorum, a 0 artı a 1 x eksi c artı a 2 x eksi c'nin karesi şeklinde gidiyor.
+
+155
+00:32:07,487 --> 00:32:15,727
+Yani a n çarpı x eksi c üzeri n'e yazıyorum, a 0 a 1 işte a 2 a 3, a 1 ile x eksi c üzeri 1'i çarpıyorum değil mi?
+
+156
+00:32:16,287 --> 00:32:18,387
+a 2 ile x eksi c'nin karesini çarpıyorum.
+
+157
+00:32:21,647 --> 00:32:28,967
+x eşittir c kuvvetlerinin kuvvet serisi veya x eşittir c civarında bir kuvvet serisi denir arkadaşlar.
+
+158
+00:32:29,627 --> 00:32:35,347
+x eşittir c'nin civarında aslında bir fonksiyonun seriye açılımı da diyeceğiz sonra.
+
+159
+00:32:37,127 --> 00:32:42,847
+a0, a1 ve a2'ler burada artık serinin genel terimi değiller.
+
+160
+00:32:42,847 --> 00:32:45,727
+Kuvvet serisinin aslında kat sayılarıdır.
+
+161
+00:32:49,203 --> 00:32:59,743
+Kuvvet serisinin terimleri, bir x değişkeninin fonksiyonu olduğundan, bakın, fx gibi bir fonksiyonun açılımı aslında bu.
+
+162
+00:33:01,023 --> 00:33:06,083
+Seri, x'in her bir değeri için yakın sayabilir veya ıraksayabilir.
+
+163
+00:33:06,083 --> 00:33:08,076
+Şimdi bakın, biz...
+
+164
+00:33:08,339 --> 00:33:17,279
+Pozitif terimi serileri gördük, onlar da yakınsaklık testlerini gördük, negatif terimi serileri gördük, alternatif serileri gördük, onlar da yakınsaklık ve aksaklık kavramlarını inceledik.
+
+165
+00:33:18,379 --> 00:33:27,619
+Şimdi burada x'e, x'in değerlerine bağlı olarak serinin değişebileceğini de söyleyebilirim artık.
+
+166
+00:33:27,779 --> 00:33:34,960
+x üzeri en şeklinde bir terim var. Bakın bu serinin yapısı aslında en eşittir sıfırdan sonsuza ya da birden sonsuza.
+
+167
+00:33:35,539 --> 00:33:57,579
+AN çarpı, bakın buraya dikkat, AN çarpı, X üzeri N şeklinde, ya da X eksi C üzeri N şeklinde. Burada X de var, AN de var. X'in değişimine bağlı olarak, üstü N var, X'teki değişime bağlı olarak bu seriye yakınsak olabilir, ıraksak olabilir. Bunu inceleyeceğim işte.
+
+168
+00:34:02,048 --> 00:34:04,968
+x'e bağlı fonksiyon tanımları arkadaşlar.
+
+169
+00:34:06,428 --> 00:34:07,428
+Yani sonuç olarak,
+
+170
+00:34:08,768 --> 00:34:09,748
+c noktası,
+
+171
+00:34:17,331 --> 00:34:28,891
+C noktası, an çarpı, x eksi c üzeri, serisinin arkadaşlar, kuvvet serisinin, yakınsaklık merkezidir arkadaşlar.
+
+172
+00:34:29,532 --> 00:34:36,911
+Seri x eşittir c'de, a sıfır noktasına yakınsaklık.
+
+173
+00:34:36,911 --> 00:34:37,551
+Neden?
+
+174
+00:34:44,788 --> 00:34:49,927
+Üzeri 1 artı a2, x eksi c'nin karesi dedim.
+
+175
+00:34:52,327 --> 00:34:58,028
+Artı a3, x eksi c'nin küpü.
+
+176
+00:34:59,087 --> 00:35:00,148
+Böyle bakın gidiyor bu.
+
+177
+00:35:00,707 --> 00:35:06,148
+Bütün terimlerde an var, bir de x eksi c üzeri n var.
+
+178
+00:35:06,247 --> 00:35:06,688
+Dikkat edin.
+
+179
+00:35:07,347 --> 00:35:09,367
+Artı nokta nokta böyle devam ediyor.
+
+180
+00:35:09,947 --> 00:35:14,188
+Şimdi bakın, a sıfırdan sonraki terimler, x eşittir c için ne oluyor?
+
+181
+00:35:14,547 --> 00:35:19,007
+x'e c verdiğimde, c verelim x'e, hepsi sıfır oluyor bakın.
+
+182
+00:35:19,327 --> 00:35:22,528
+Sıfır, sıfır, sıfır, sıfır, sıfır, hepsi gidiyor.
+
+183
+00:35:23,248 --> 00:35:28,387
+Dolayısıyla, a sıfıra yakınsak bir seridir bu.
+
+184
+00:35:28,688 --> 00:35:30,228
+x eşittir c noktasında bakın.
+
+185
+00:35:33,907 --> 00:35:35,547
+Şimdi bununla ilgili teorema bakalım.
+
+186
+00:35:36,527 --> 00:35:45,148
+a n çarpı x eksi c üzeri n kuvvet serisi, sadece x eşittir c'de yakınsaktır.
+
+187
+00:35:46,167 --> 00:35:47,047
+x elemanıdır.
+
+188
+00:35:49,427 --> 00:35:50,987
+Her x elemanıdır.
+
+189
+00:35:52,467 --> 00:35:53,728
+R için yakınsaktır.
+
+190
+00:35:53,728 --> 00:36:01,307
+Ya da bir diğer ihtimal, x eksi c küçüktür r gibi bir sayıdan küçük ise,
+
+191
+00:36:02,483 --> 00:36:07,723
+Bu aralıkta, kuvvet serisi, yakınsaktır. Ne demek bu?
+
+192
+00:36:10,223 --> 00:36:16,103
+X eksi c, mutlak değerini aldım, küçüktür, r olacak.
+
+193
+00:36:16,503 --> 00:36:27,063
+Yani x eksi c'nin farkını aldığımda, r gibi bir sayıdan küçük oluyorsa, bu eşitsizliği sağlayan, her x de yakınsak oluyor.
+
+194
+00:36:31,219 --> 00:36:48,699
+Eğer böyle bir r sayısı varsa, o zaman seri, x eşittir c artı r, ve x eşittir c eksi r, uç noktalarında yakın sayabilir, veya ıraksayabilir. Bunları ayrıca incelemem gerekiyor. Bakın burada anlatmak istediğim şey şu.
+
+195
+00:36:54,132 --> 00:37:08,271
+Seri alıyorum, bu seriyi inceliyorum. Birincisi, aşağıdakilerden biri sağlanır demiş, bakın burada. Seri sadece x eşittir c'de yakınsak olabilir. Tamam.
+
+196
+00:37:10,032 --> 00:37:18,132
+x eşittir c'de yakınsak olabilir. Güzel. Bu olursa zaten çok güzel. Her x için yakınsak olabilir. Tamam. Yani...
+
+197
+00:37:19,603 --> 00:37:42,684
+x0 olabilir, vesaire. Sabit sayı olabilir. Her x için yakınsak olabilir. Ona göre bir seri yapısı burada mevcut olabilir. Her aldığım x için seri yakınsak olabilir. Ya da seri x-c küçüktür, re eşitsizliğini sağlayan x sayıları için yakınsaktır. Yani mutlak x-c.
+
+198
+00:37:44,307 --> 00:37:47,748
+Küçüktür R durumunda, seri yakınsak olsun diyorum.
+
+199
+00:37:48,188 --> 00:38:04,148
+Yani, sadece şurası, bir R sayısından küçük olduğunda, bakın buranın mutlak değerini aldığımda, ve R sayısından küçük olduğunda, bu seri yakınsak olsun diyorum.
+
+200
+00:38:13,907 --> 00:38:18,387
+ıraksak olacak şekilde, bir r veya sayısı olabilir.
+
+201
+00:38:19,587 --> 00:38:28,807
+Bakın, x-c küçüktür r için yakınsak olacak, x-c büyüktür r için de ıraksak olacak şekilde, bir r sayısı mevcut mu?
+
+202
+00:38:28,807 --> 00:38:32,807
+Eğer mevcutsa, bu ne demektir zaten? Aslında r'nin...
+
+203
+00:38:46,132 --> 00:38:48,592
+Ve eksi re'nin arasında olması demektir bu.
+
+204
+00:38:49,332 --> 00:38:55,931
+Yani x de o zaman c eksi re ile c artı re arasındadır değil mi arkadaşlar?
+
+205
+00:38:56,072 --> 00:38:57,231
+Bu c'yi bu taraflara atıyorum.
+
+206
+00:38:58,672 --> 00:38:59,891
+Yani x eşittir.
+
+207
+00:39:01,891 --> 00:39:02,231
+x
+
+208
+00:39:06,164 --> 00:39:10,684
+c eksi re ile c artı re arasındadır.
+
+209
+00:39:11,564 --> 00:39:31,584
+Bakın, mutlak x eksi c küçüktür re için bu ifade yakınsak ya arkadaşlar, yani çeşitli testler yaptım, bunu inceledim, bir sayı buldum, bu sayıdan küçük olduğunda x eksi c farkı ya da x, seri yakınsak oluyor.
+
+210
+00:39:32,115 --> 00:39:35,596
+Bu durumda, x, c, eksi, re ile c artı re arasındadır.
+
+211
+00:39:36,596 --> 00:39:50,635
+Eğer, x, eksi, c'nin mutlak değeri küçüktür re için seri yakınsaksa, x, c, eksi, re ile c artı re arasında olduğunda, bu seri yakınsaktır diyebilirim değil mi arkadaşlar?
+
+212
+00:39:57,460 --> 00:40:08,400
+c eksi r ile c artı r arasındaki bütün sayılar için bu seri yakınsaklık diyebilirim.
+
+213
+00:40:08,699 --> 00:40:17,079
+Ancak bununla beraber, burada küçüktür r için serinin yakınsaklığını elde ettim ben.
+
+214
+00:40:17,588 --> 00:40:28,228
+Küçük eşit demedim. O zaman x eşittir c eksi r için ve x eşittir c artı r için yakınsak mı, ıraksak mı bilmiyorum.
+
+215
+00:40:29,048 --> 00:40:35,608
+Sadece ben x eksi c, küçüktür r olduğunda yakınsakla elde ettim.
+
+216
+00:40:36,208 --> 00:40:39,588
+x eşittir c eksi r ve x eşittir c artı r noktalarında
+
+217
+00:40:40,019 --> 00:40:52,699
+Bunlara uç noktalar diyorum. Bu uç noktalarda yakınsak mı, ıraksak mı bilmiyorum. O zaman bunları ayrıca incelemem gerekiyor. Yakınsayabilir veya ıraksayabilir bu noktalarda.
+
+218
+00:40:54,279 --> 00:41:04,440
+Yani o zaman ben, bakın burada bir aralık elde ettim. X'ler C-R ile C-R arasındaysa seri yakınsaktır dedim.
+
+219
+00:41:07,251 --> 00:41:16,051
+Yakınsaklık aralığı diyeceğim arkadaşlar. Yani kuvvet serisinin yakınsak olduğu aralığa, noktaya yakınsak aralığı denir.
+
+220
+00:41:16,371 --> 00:41:23,951
+C-R'den büyükken x der, C-R'den küçükken yakınsakmış. Bu aralığa yakınsaklık aralığı diyorum.
+
+221
+00:41:25,591 --> 00:41:33,391
+Bir incelemem gereken şey ne var? Bu R'ye de yakınsaklık yarış çapı diyorum.
+
+222
+00:41:37,844 --> 00:41:38,844
+Eğer bakın...
+
+223
+00:41:42,739 --> 00:41:43,380
+Burada yok.
+
+224
+00:41:45,380 --> 00:41:53,579
+Eğer diyelim ki, x eşittir c eksi r'de seri yakınsak çıktı arkadaşlar.
+
+225
+00:41:54,880 --> 00:42:02,800
+O zaman, burada yakınsak çıktı, x eşittir c artı r noktasında da ıraksak çıktı.
+
+226
+00:42:02,800 --> 00:42:08,079
+O zaman, c eksi r'den,
+
+227
+00:42:08,211 --> 00:42:22,012
+Büyük eşittir x diyorum, bakın c-r noktasında yakınsak çıktı. Küçüktür c artı r diyorum. Çünkü c artı r noktasında küçük eşit, büyük eşit yapmıyorum. Şuraya eşittir koymuyorum. Neden?
+
+228
+00:42:22,952 --> 00:42:34,472
+c artı r noktasında ıraksak olarak elde ettim arkadaşlar. Yakınsaklık aralığım benim c-r'den büyük eşittir x küçüktür c artı r diyorum. Bakın yakınsaklık aralığını
+
+229
+00:42:34,896 --> 00:42:37,536
+Bu şekilde belirliyorum arkadaşlar.
+
+230
+00:42:39,615 --> 00:42:45,876
+Bakın, ne yapmış oldu? Yakınsak olduğu noktaları da bu aralığa dahil etmiş oldu.
+
+231
+00:42:45,996 --> 00:42:48,556
+Şimdi bu kavramları biraz açıklayalım.
+
+232
+00:42:50,275 --> 00:42:51,516
+Kavramsal alt yapı nasıl?
+
+233
+00:42:52,115 --> 00:43:00,016
+Yakınsaklık yarış çapı, R ise, yakınsaklık merkezinde C ise, bu durumda,
+
+234
+00:43:00,724 --> 00:43:04,164
+Yakınsaklık aralığı c-re ile c-re arasında olabilir.
+
+235
+00:43:05,003 --> 00:43:08,324
+c-re ile c-re, bakın burası açık aralık olabilir.
+
+236
+00:43:09,124 --> 00:43:12,764
+c-re açık aralık olabilir, c-re kapalı aralık olabilir.
+
+237
+00:43:13,063 --> 00:43:20,224
+Yani bu ne demek? Mesela c-re'den büyük x'ler, c-re'den de küçük eşit.
+
+238
+00:43:20,304 --> 00:43:26,644
+Yani c-re noktasında seri yakınsakmış, ama c-re noktasında seri bıraksakmış.
+
+239
+00:43:26,744 --> 00:43:27,923
+Dolayısıyla burayı büyük alıyorum.
+
+240
+00:43:28,500 --> 00:43:34,059
+Açık aralık burada, c-re, burası kapalı aralık arkadaşlar.
+
+241
+00:43:34,639 --> 00:43:41,259
+Burada da hem c-re noktasında hem c-re noktasında seri, ıraksakmış arkadaşlar.
+
+242
+00:43:43,139 --> 00:43:45,539
+Bu 4 aralıktan biri olabilir.
+
+243
+00:43:46,539 --> 00:43:47,779
+Yani ilk olarak ne dedik?
+
+244
+00:43:49,139 --> 00:44:07,039
+c-re ile c-re arasında. Ancak c-re ve c-re noktalarını ayrıca incelememiz gerekiyor dedik. İnceledik diyelim ki, bir yaraksak, bir yakınsak çıktı. Yakınsak olan noktaları da aralığa dahil ediyorum arkadaşlar. Sonuç olarak, özet olarak olay bu.
+
+245
+00:44:12,340 --> 00:44:15,040
+Şimdi mutlak yakınsaklık
+
+246
+00:44:19,539 --> 00:44:21,219
+Kavramı nasıl incelenecek?
+
+247
+00:44:28,340 --> 00:44:40,219
+Mutlak yakınsaklıkta şöyle bir durum var. Mutlak yakınsaklık aralığı sonlu ise uç noktalarda yakınsaklık, ıraksaklık incelemesi yapıldır arkadaşlar.
+
+248
+00:44:41,400 --> 00:44:48,740
+Yakınsaklık aralığı dışında kalan noktalarda seri ıraksaktır. Peki ama yakınsaklığını nasıl inceleyeceğim?
+
+249
+00:44:50,003 --> 00:44:51,943
+Oran testi uygulayacağım arkadaşlar.
+
+250
+00:44:52,703 --> 00:44:56,123
+Şimdi ben oran testini uygularken, ne yapmıştım?
+
+251
+00:44:56,843 --> 00:45:00,743
+a n artı 1 bölü, a n almıştım değil mi arkadaşlar?
+
+252
+00:45:02,263 --> 00:45:03,123
+E burada ne yapacağım?
+
+253
+00:45:04,463 --> 00:45:13,103
+a n artı 1, çarpı, x'e n artı 1, bölü, a n x'e ne alacağım arkadaşlar?
+
+254
+00:45:14,867 --> 00:45:18,667
+Bu şekilde, oran testini de, kuvvet serisinde uygulayacağım.
+
+255
+00:45:21,567 --> 00:45:34,047
+Ve aralığı bulacağım. X-C, küçüktür, R için yakınsaksa, aralık budur diyeceğim. Sonra, C-R ve C-R noktalarında ayrıca seriyi inceleyeceğim arkadaşlar.
+
+256
+00:45:36,547 --> 00:45:37,827
+Şimdi arkadaşlar,
+
+257
+00:45:51,860 --> 00:45:59,700
+X'e n bölü n faktöriyel, hangi X değerleri için yakınsak diye sormuş bize. Oran testini uygulayalım.
+
+258
+00:46:00,300 --> 00:46:07,539
+A n artı bir bölü, a n alıyorum. A n artı bir derken, buraya a n demiş burada bakın, burayı karıştırmayın.
+
+259
+00:46:08,440 --> 00:46:14,260
+Yani normalde a n çarpı x'e n şeklinde, burada a n bir bölü n faktöriyel olması gerekiyor.
+
+260
+00:46:14,260 --> 00:46:18,559
+Ama fark etmez. Yani bu genel terimin tamamına a n dersem,
+
+261
+00:46:20,340 --> 00:46:34,340
+Burada a, n aslında hem n'e hem de x'e bağlı bir fonksiyondur değil mi arkadaşlar? Bakın a, n burada hem x'e hem de n'e bağlı bir fonksiyon olarak tanımlanmış.
+
+262
+00:46:36,800 --> 00:46:43,280
+A, n artı bir, böyle a, n alacağım. Bakın a, n artı bir, böyle a, n alırken dikkat edin. Hem x'si sürüleli hem n faktörüye incelemiyorum.
+
+263
+00:46:46,643 --> 00:46:49,123
+bölü n artı 1 faktöre alıyorum.
+
+264
+00:46:50,523 --> 00:46:51,983
+a n artı 1'i aldım burada bakın.
+
+265
+00:46:57,300 --> 00:47:00,760
+a n artı bir bölü a n'in mutlak değerini alıyorum. Buraya dikkat bakın.
+
+266
+00:47:02,760 --> 00:47:08,079
+Neden mutlak değerini alıyorum? Şimdi bakın inceleyeceğiz. Mutlak yakınsaklığa bakacağız aslında.
+
+267
+00:47:09,039 --> 00:47:18,480
+n faktöriyel bölü, mutlak x'e n bölü a n neydi arkadaşlar? Burada bakın x'e n artı bir bölü n artı bir faktöriyel aldım.
+
+268
+00:47:19,900 --> 00:47:23,360
+a n neydi? x'e n bölü n faktöriyel.
+
+269
+00:47:27,635 --> 00:47:49,475
+Bunu mutlak değerine aldım. n faktoryal zaten pozitif. Mutlak x üzeri n kaldı burada. Bu da yukarı n faktoryal bölü x üzeri n olarak geçti. Mutlak x üzeri n olarak geçti arkadaşlar. Yani burayı elde ettim. Üçüncü olarak x üzeri n gitti. Buradaki n gitti. Bunlar birbirini götürür. Sadece bakın mutlak x kaldı burada.
+
+270
+00:47:50,643 --> 00:48:03,804
+n faktöriyelle, n artı 1 faktöriyelle gitti. n artı 1 faktöriyelle, n faktöriyel çarpı, n artı 1 olarak yazabilirim. Bunun n faktöriyeliyle, buradaki n faktöriyel gider, sadece n artı 1 kalır burada.
+
+271
+00:48:05,583 --> 00:48:09,403
+n sonsuza giderken, bu nedir?
+
+272
+00:48:13,204 --> 00:48:23,903
+En sonsuza giderken, x ne olursa olsun burada, sabit bir sayı olduğu sürece, yani 3, 5, 7, herhangi bir sayı olduğu için, mutlak x de herhangi bir sayıdır.
+
+273
+00:48:24,604 --> 00:48:30,523
+Bu sayı bölü sonsuza giden bir limit ifadesi ne olur? Sıfır olur arkadaşlar.
+
+274
+00:48:30,523 --> 00:48:36,523
+Bu da küçüktür, 1 olduğu için, her x elemandır r için,
+
+275
+00:48:37,364 --> 00:48:41,423
+Ne olur? Mutlak yakınsak olur seri arkadaşlar.
+
+276
+00:48:46,804 --> 00:48:48,163
+Diğer soruya bakalım.
+
+277
+00:48:51,827 --> 00:49:00,867
+n! çarpı x üzeri n şeklinde bir seri vermiş. Hangi x değerleri için yakınsak diye sormuş.
+
+278
+00:49:02,347 --> 00:49:07,347
+a n artı 1 ile a n aldım. x üzeri n artı 1 çarpı n artı 1!
+
+279
+00:49:17,940 --> 00:49:32,940
+Faktöryel kavramı gitmiş oldu. N artı 1 kaldı burada. Mutlak x çarpı n artı 1 oldu. Bu da zaten sonsuzdur. Ne zaman sonsuzdur? x farkları sıfır çın sonsuzdur. x farkları sıfır olduğunda, yani...
+
+280
+00:49:37,588 --> 00:49:54,788
+x farklı sıfır için seriyi her zaman arkadaşlar, ıraksaktır. O zaman sadece nerede yakınsaktır? x eşittir, sıfır noktasında yakınsaktır arkadaşlar. Diğer her yerde ıraksak olarak bulduk.
+
+281
+00:49:56,608 --> 00:49:58,248
+Sorusu olan var mı burayla ilgili?
+
+282
+00:50:28,307 --> 00:50:42,627
+Şimdi diğer soru da, şunu sormuş. Serinin mutlak yakınsak, şartlı yakınsak, ve ıraksak olduğu x değerlerini bulmuş diye sormuş.
+
+283
+00:50:44,007 --> 00:50:51,248
+A n artı 1 ile A ne aldım? x'e n artı 1 bölü n artı 1, x'e n bölü n yukarı n bölü x'e n olarak geçti.
+
+284
+00:50:53,331 --> 00:51:13,731
+Eni ile buradaki en birbirini götürdü. Sadece mutlak x kaldı geriye. Ve bakın burada x-c küçüktür r falan demiştim ya. Burada c sıfır arkadaşlar. Aslında burası da x-c şeklinde ama c sıfır arkadaşlar. Tamam mı? Buraya dikkat edin.
+
+285
+00:51:19,635 --> 00:51:42,096
+n bölü n artı 1 limiti de 1 arkadaşlar. Benim elde ettiğim şey ne sonuçta? n artı 1 bölü n oran testini uyguladığımda elde ettiğim şey mutlak x arkadaşlar. Mutlak x elde ettim. Şimdi oran testini uyguladığımda limit işte limit n artı 1 ile aynı alıyordum.
+
+286
+00:51:46,132 --> 00:52:13,692
+Ve ne diyorum? Mutlak yakınsaklık var mı? Ona bakıyorum. İşte hani artı eksi olabilir, x'ler filan. Bunun mutlak değerini aldım. Bu a'n artı bir bölü a'n limiti ne olmalıydı arkadaşlar? Yakınsaklık için konuşuyorum. Küçüktür bir olmalıydı değil mi? E ben burada a'n artı bir bölü a'n ifadesini aldım. Bir seri için, x'ler var içinde. Ve sonuç olarak mutlak x'i elde ettim bakın arkadaşlar. Dikkat edin. Mutlak x'i elde ettim.
+
+287
+00:52:14,771 --> 00:52:40,972
+Bu seri o zaman ne zaman yakınsak olur? Eğer mutlak x küçüktür bir ise yakınsak olur arkadaşlar. Bakın buraya dikkat. Mutlak x buldum, oran testimi uyguladım. Burada bakın kök testi de uygulanabilir. En ince dereceden köken alınır. Kök testine göre de küçüktür bir için yakınsak değil mi? Hatırlayın. Bazen kuvvet serilerinde o da uygulanıyor. Yine mutlak değer olarak çıkıyor dışarı mutlak x.
+
+288
+00:52:41,972 --> 00:52:43,872
+Mutlak x küçüktür. 1 için
+
+289
+00:52:47,987 --> 00:53:11,788
+yakınsaktır. O zaman, bakın bir koşul elde ettim ben. X eksi sıfır küçüktür bir için seriyi mutlak yakınsak. Hani X eksi C, küçüktür R için yakınsak diye hatırlayın. X eksi C, mutlak küçüktür R için yakınsaktı. Onu elde ettim. X eksi sıfır.
+
+290
+00:53:12,371 --> 00:53:16,311
+Mutlak x, x, 0 küçüktür bir için seriyi mutlak yakınsak.
+
+291
+00:53:16,912 --> 00:53:18,152
+Rem burada benim 1.
+
+292
+00:53:19,472 --> 00:53:22,851
+Dolayısıyla o zaman bakın bir yakınsaklık aralığı elde ediyorum.
+
+293
+00:53:24,172 --> 00:53:29,492
+x'ler, x'i 1 ile 1 arasındayken mutlak x küçüktür 1'dir değil mi arkadaşlar?
+
+294
+00:53:30,952 --> 00:53:36,351
+Dolayısıyla x'i 1 ile 1 arasında seriyi mutlak yakınsak arkadaşlar.
+
+295
+00:53:38,195 --> 00:53:41,516
+O zaman benim yakınsaklık aralığım, eksi 1 ile 1 aralığı.
+
+296
+00:53:45,331 --> 00:53:48,431
+Ama bakın, yakınsaklık aralığını ne elde etmiş?
+
+297
+00:53:49,031 --> 00:53:49,951
+Eksi birden
+
+298
+00:53:55,891 --> 00:54:08,432
+Büyük eşittir x'ler, küçüktür 1 elde etmiş. Neden böyle elde etmiş? Çünkü ne yapmam gerekiyordu arkadaşlar? Uç noktalar için incelemem gerekiyordu.
+
+299
+00:54:10,072 --> 00:54:17,371
+Şimdi benim aralığım, eksi 1 ile 1 aralığı. Bu aralıkta mutlak yakınsak olduğunu biliyorum.
+
+300
+00:54:19,155 --> 00:54:23,775
+Peki ama, eksi 1 ve 1 noktalarında durum ne? Bunların dışında da ıraksak olmalı.
+
+301
+00:54:24,556 --> 00:54:27,695
+Eksi 1 ve 1 noktaları için de bir inceleme yapalım arkadaşlar.
+
+302
+00:54:30,056 --> 00:54:32,795
+Seri yakınsak mı, ıraksak mı?
+
+303
+00:54:33,976 --> 00:54:36,755
+X'e eksi 1 verelim. X eşittir eksi 1 için.
+
+304
+00:54:37,496 --> 00:54:41,915
+X üzeri n bölü n serisi, eksi 1 üzeri n bölü n serisine dönüştür.
+
+305
+00:54:42,056 --> 00:54:44,935
+Bakın, X üzeri n bölü n serisinde X yerine eksi 1 koydum.
+
+306
+00:54:45,811 --> 00:55:10,971
+Eksi 1 üzeri n bölü n serisi nedir? Alterne, harmonik seridir. Şartlı yakınsaktır arkadaşlar. Yani ıraksak değil. Mutlak yakınsak mı? Mutlak yakınsak da değil. Ama alterne seri testine göre yakınsak. Yani şartlı yakınsaklık kavramda sahibinin bir yakınsaklığı var yani. Iraksak değil sonuçta.
+
+307
+00:55:13,300 --> 00:55:16,280
+Mutlak yakınsaklık olmadığı için şartlı yakınsaktır diyorum.
+
+308
+00:55:16,880 --> 00:55:23,139
+X eşit bir için bir bölü n serisi elde ediliyor.
+
+309
+00:55:23,639 --> 00:55:27,519
+Bakın, x üzeri n bölü n serisinde x yerine bir koyuyor.
+
+310
+00:55:27,519 --> 00:55:32,920
+X yerine bir koydum burada, x yerine bir koyunca bir üzeri n bölü n oldu.
+
+311
+00:55:33,079 --> 00:55:34,599
+Bir üzeri n nedir zaten? Birdir.
+
+312
+00:55:35,260 --> 00:55:37,400
+Bir bölü n serisini elde etmiş oldum arkadaşlar.
+
+313
+00:55:37,559 --> 00:55:38,680
+Bu da harmonik seri.
+
+314
+00:55:39,411 --> 00:55:53,791
+O da ıraksak seri. Dolayısıyla x eşitleri 1'i dahil etmiyorum. Ancak x eşitleri 1, eksi 1'de alternat seri testine göre yakınsak olduğu için şartlı yakınsaklık var. Onu dahil edeceğim arkadaşlar.
+
+315
+00:55:55,072 --> 00:56:05,771
+Yani dolayısıyla sonuç olarak şurada, eksi 1, 1 aralığında, açık aralığında seri mutlak yakınsak arkadaşlar. Bunu biliyorum.
+
+316
+00:56:07,380 --> 00:56:09,400
+Mesela bunu şöyle de sorabilir.
+
+317
+00:56:11,420 --> 00:56:17,720
+Hangileri doğrudur? İşte i verir, 2 i verir, 3 i verir.
+
+318
+00:56:19,039 --> 00:56:26,760
+Bunlardan hangileri doğrudur? Buradaki ifadeleri doğru ya da yanlış verebilir arkadaşlar.
+
+319
+00:56:32,371 --> 00:56:38,771
+Eksi 1, 1'de serinin yakınsak olduğunu tespit ettik zaten mutlak yakınsak olduğunu.
+
+320
+00:56:38,871 --> 00:56:41,892
+X eşitleri, eksi 1'de şartlı yakınsaklığı bulduk.
+
+321
+00:56:42,791 --> 00:56:44,952
+Burada seri ıraksaktır dedik.
+
+322
+00:56:45,092 --> 00:56:49,692
+Dolayısıyla yakınsaklık aralığım benim, eksi 1 kapalı, 1 açık oldu.
+
+323
+00:56:49,992 --> 00:56:58,472
+Yani eksi 1'den, büyük eşitler x için, birden küçüktür x'ler için, benim serim yakınsak arkadaşlar.
+
+324
+00:56:59,219 --> 00:57:01,039
+Burada anlaşılmayan bir yer var mı?
+
+325
+00:57:35,891 --> 00:57:37,131
+Şimdi diğer soruya bakalım.
+
+326
+00:57:39,091 --> 00:57:42,331
+X'e n bölü, kök içinden karar, artı 3 şeklinde bir seri vermiş.
+
+327
+00:57:44,391 --> 00:57:53,611
+Serinin mutlak şartlı yakınsak ve ıraksak olduğu X değerlerini araştırın ve yakınsaklık aralığını bulun, elde edin demiş.
+
+328
+00:57:56,991 --> 00:57:59,231
+A n artı 1 bölü, a n'in limitini alıyor.
+
+329
+00:58:01,235 --> 00:58:09,436
+x üzeri n artı 1 bölü, n yerine n artı 1 yazdım, kare kök içerisinde n artı 1'in karesi artı 3 oldu, bölü aynı yazdım.
+
+330
+00:58:10,615 --> 00:58:16,255
+x üzeri n bölü, kök n kare artı 3, yukarı, kök n kare artı 3, bölü x üzeri n şeklinde geçti.
+
+331
+00:58:16,956 --> 00:58:20,496
+Burada x üzeri n ile bu n gitti.
+
+332
+00:58:21,811 --> 00:58:33,211
+Kök içinde n kare artı 3 bölü, n artı 1'in karesi artı 3 ifadesi, hepsini aynı kök içerisinde alırsam, en yüksek dereceli terimlerinin kat sayıları eşit.
+
+333
+00:58:33,912 --> 00:58:44,811
+İki tane polinomun birbirine bölümü şeklinde bir limit. Bu da 1'dir bu limit. Dolayısıyla bu da ortadan kalktı. Sadece elimde mutlak x kaldı arkadaşlar.
+
+334
+00:58:52,851 --> 00:59:06,851
+Bu seri yakınsaktır. Yani bu an artı bir bölü an, aldığımda mutlak x diye bir şey elde ettim. Mutlak x küçüktür bir içinde. Yani bu elde ettiğim ifade birden küçükken seri yakınsaktır.
+
+335
+00:59:32,659 --> 00:59:37,039
+Şimdi, eksi bir, bir aralığını yakınsaklık aralığı olarak elde ettim.
+
+336
+00:59:38,439 --> 00:59:44,199
+Sonrasında, eksi bir, bir açık aralığında mutlak yakınsaklık var.
+
+337
+00:59:44,959 --> 00:59:51,879
+İkinci aşama olarak, uç noktalarda seriyi incelemem gerekiyor.
+
+338
+01:00:00,000 --> 01:00:01,420
+Ona bakacağım arkadaşlar.
+
+339
+01:00:02,340 --> 01:00:04,880
+X eşittir 1 için seriyi inceleyelim.
+
+340
+01:00:05,600 --> 01:00:14,820
+X'e 1 verdiğimde, 1 üzeri n bölü, kök içinde n kare artı 3 ifadesi elde edilir.
+
+341
+01:00:20,083 --> 01:00:46,203
+Yakınsak mı, ıraksak mı? Buna bakacağım. Bunun için 1 bölü n serisiyle bunu kıyaslayabilirim arkadaşlar. Harmonik seriyi seçtim. Neden bunu seçtim? Kıyasladığım takdirde, bakın bu limiti alabiliyorum. Neden? Bunun derecesi kare kök içerisinde olduğu için 1'dir arkadaşlar.
+
+342
+01:00:48,016 --> 01:01:14,056
+1'dir. 2 bölü 2'den 1 olur. Dolayısıyla, n bölü, n kare artı 3, limiti de 1 olur. Bu limit 1 olduğu için, sonuç 0 veya sonsuzdan farklı olduğu için, limit testine göre, 2 seri de aynı karakterlerdir. Harmonik seri ıraksak olduğu için, bu seri de ıraksak olarak elde edilir arkadaşlar.
+
+343
+01:01:14,835 --> 01:01:25,195
+En eşitli birden sonsa, bir bölen ıraksak olduğundan, en eşitli birden sonsa, kök içinde en karart 3 serisi de ıraksaktır arkadaşlar.
+
+344
+01:01:26,355 --> 01:01:28,016
+Diğer seriye bakalım.
+
+345
+01:01:29,735 --> 01:01:34,315
+Yani eksi biri, pardon, biri dahil etmiyorum sonuç olarak.
+
+346
+01:01:34,916 --> 01:01:36,155
+Bir dahil değil.
+
+347
+01:01:37,815 --> 01:01:40,056
+Çünkü bir noktasında ne çıktı?
+
+348
+01:01:41,016 --> 01:01:41,855
+Iraksak çıktı.
+
+349
+01:01:42,996 --> 01:01:48,256
+Bir noktası, yakınsaklık aralığına, dahil edilmeyecek arkadaşlar.
+
+350
+01:01:50,256 --> 01:01:53,396
+Şimdi, x eşittir.
+
+351
+01:01:57,204 --> 01:01:58,563
+Eksi 1 için bakalım.
+
+352
+01:02:00,764 --> 01:02:09,923
+X eşittir eksi 1 için, eksi 1 üzeri n bölü, kök içinde n kare artı 3'ü elde ettim. Mutlak yakınsak mı?
+
+353
+01:02:11,219 --> 01:02:26,119
+Zaten yukarıdaki seri arkadaşlar, değil mi? Eksi bir üzeri, ortadan kalkıyor mutlak değerlerini aldığımda. 1 bölü kök Ankara artı 3 testi elde ediliyor. Onu da yukarıda inceledik. Limit testine göre, ıraksak çıktı. Yani mutlak yakınsak değildir. Bunu biliyorum.
+
+354
+01:02:27,799 --> 01:02:32,779
+Peki, tamam. Şartlı yakınsak mı? Buna bakalım.
+
+355
+01:02:34,860 --> 01:02:35,619
+İnceleyelim.
+
+356
+01:02:36,947 --> 01:02:44,208
+Bir bölü kök içinde n kare artı 3 pozitiftir. n kare her zaman pozitif. Kara kök içerisinde de olsa pozitif zaten.
+
+357
+01:02:44,847 --> 01:03:01,188
+A n artı 1'in paydası n artı 1. A n'in paydasından burada n var, burada n artı 1 var. Daha büyük. Dolayısıyla a n artı 1 a n'den küçük. İkinci koşulda sağlandı.
+
+358
+01:03:02,420 --> 01:03:14,279
+En sonuçta giderken, 1 bölü kök içinde, n kar artı 3, 0'a yakınsak arkadaşlar. Dolayısıyla, 3. koşul da sağlandı. Alternatif seri testine göre, yakınsaktır arkadaşlar.
+
+359
+01:03:15,440 --> 01:03:29,460
+X elemandır, eksi 1 aralığında, mutlak yakınsak da, x eşitir, eksi 1 de şartlı yakınsak, 1 de ıraksak da. Dolayısıyla, eksi 1'den, büyük eşittir, x küçüktür 1 için.
+
+360
+01:03:31,315 --> 01:03:35,915
+X'in bu aralıktaki değerleri için serim yakınsak arkadaşlar.
+
+361
+01:03:36,655 --> 01:03:42,175
+Eksi birden büyük eşit, birden küçük iken X'ler serim yakınsak.
+
+362
+01:03:42,315 --> 01:03:46,495
+X bir noktasında neydi? X eşitleri bir olduğunda serim bıraksak.
+
+363
+01:03:46,595 --> 01:03:50,655
+Onu dahil etmiyorum bakın arkadaşlar. O noktayı dahil etmiyorum.
+
+364
+01:03:50,835 --> 01:03:57,695
+Yani eksi bir kapalı, bir açık aralığında serim yakınsak.
+
+365
+01:03:58,164 --> 01:04:02,003
+Yakınsaklık aralığım sonuç olarak bu arkadaşlar.
+
+366
+01:04:04,043 --> 01:04:05,824
+Ne zamanıraksak?
+
+367
+01:04:08,164 --> 01:04:12,224
+R fark,
+
+368
+01:04:14,023 --> 01:04:16,184
+eksi bir, bir de ise,
+
+369
+01:04:16,604 --> 01:04:19,523
+ıraksak arkadaşlar. Evet, sorusu olan var mı bu soruyla ilgili?
+
+370
+01:09:25,300 --> 01:09:41,100
+x'in biraz daha farklı olduğu bir durum. 2x artı 5 üzeri de n şeklinde bir kuvvet serisine bakalım. 2x artı 5 üzeri n var, n kare artı 1 çarpı 3 üzeri n var. Bu serinin yakınsaklık aralığını inceleyelim.
+
+371
+01:09:42,676 --> 01:10:08,576
+En sonunda giderken, mutlak aynı artı yürüyüyle aynı alıyor. 2x artı 5'leri, n artı 1, bölü, n yerini, n artı 1 aldım. n artı 1'in karesi, artı 1 oldu burası. Çarpı 3 üzeri, n artı 1. A'yı zaten bu, bunu aldım. Bu, ters dönerek yukarı geçti. Yani, n kare artı 1 çarpı 3 üzeri, n olarak geçti.
+
+372
+01:10:09,140 --> 01:10:13,940
+2x artı 5 üzeri n ile buradaki n birbirini götürdü arkadaşlar.
+
+373
+01:10:18,452 --> 01:10:25,452
+Şu n gitti. Dolayısıyla, yukarıda, 2x artı 5 kaldı.
+
+374
+01:10:26,552 --> 01:10:33,811
+n kare artı 1 bölü, n artı 1'in karesi artı 1 kaldı.
+
+375
+01:10:35,032 --> 01:10:39,311
+Bunu yazıyorum. n kare artı 1 bölü, n artı 1'in karesi artı 1 kısmı kaldı.
+
+376
+01:10:39,699 --> 01:10:59,559
+Mutlak 2x artı 5 kaldı. Bir de 3 üzeri n ile buradaki n gitti. Aşağıda 3 kaldı. Yani mutlak 2x artı 5 bölü 3 ifadesi kaldı arkadaşlar. Ne yapmam lazım? n kare artı 1 bölü, n artı 1'in karesi artı 1 limitini almam lazım.
+
+377
+01:11:06,847 --> 01:11:34,188
+Kolinomlardan oluşan, rasyonel bir ifade bu. Bu tür ifadelerin limiti en sonsuza giderken, en yüksek dereceli terimlerin oranıydı. Buradan, bunun sonucu 1 çıktı. Bu limit 1. Dolayısıyla elimde benim, mutlak 2x artı 5 bölü 3 kaldı. Bu ne olmalıydı arkadaşlar? Oran testine göre, buranın yakınsak olması için, bu ifadenin birden küçük olması gerekiyordu.
+
+378
+01:11:34,931 --> 01:11:49,451
+Mutlak 2x artı 5 bölü 3 küçüktür 1 olmalıydı. Mutlak 2x artı 5 bölü 3 küçüktür 1 olması için, mutlak 2x artı 5 küçüktür 3 olmalı arkadaşlar.
+
+379
+01:11:53,031 --> 01:11:59,091
+Dolayısıyla 2x artı 5, eksi 3 ile 3 aralığındadır arkadaşlar.
+
+380
+01:12:02,228 --> 01:12:05,208
+Eksi 4 ile eksi 1 aralığındadır.
+
+381
+01:12:07,288 --> 01:12:07,887
+Ve
+
+382
+01:12:07,887 --> 01:12:14,007
+Şurayı düzenleyip, 5'i bu tarafa eksi attım.
+
+383
+01:12:15,728 --> 01:12:17,087
+Bu tarafa eksi attım.
+
+384
+01:12:18,127 --> 01:12:19,448
+Burası eksi 2 oldu.
+
+385
+01:12:20,387 --> 01:12:21,768
+Burası eksi 8 oldu.
+
+386
+01:12:22,788 --> 01:12:25,807
+2x bakın, eksi 8 ile eksi 2 arasında oldu.
+
+387
+01:12:25,887 --> 01:12:26,948
+Her tarafı 2'ye böldüm.
+
+388
+01:12:27,507 --> 01:12:29,368
+x eksi 4 ile eksi 1 aralığında oldu.
+
+389
+01:12:29,844 --> 01:12:34,943
+Bu aralıkta mutlak yakınsaklığa sahibim arkadaşlar. Mutlak değerini aldım bakın.
+
+390
+01:12:35,863 --> 01:12:44,084
+Yani negatiflik, pozitiflik olabilir diye. Sonuçta bu bir negatif terimli seride olabilir. Değil mi arkadaşlar?
+
+391
+01:12:44,304 --> 01:12:52,244
+Çünkü x'ler küçüktür, eksi bir için. x üzeri n'li gibi bir ifade var. Bu da alternatif seri veriyor.
+
+392
+01:12:52,363 --> 01:12:56,664
+Dolayısıyla mutlak yakınsaklığa bakıyorum ki mutlak yakınsaksa yakınsaktı zaten.
+
+393
+01:12:58,899 --> 01:13:03,339
+Şimdi bu aralıkta mutlak yakınsaklığa sahibim ama yeterli mi benim için?
+
+394
+01:13:04,119 --> 01:13:05,959
+Değil, ne yapmam gerekiyor?
+
+395
+01:13:06,459 --> 01:13:11,239
+Bir de uç noktalarda seriyi incelemem gerekiyor.
+
+396
+01:13:11,359 --> 01:13:16,199
+Eksi 4 ile eksi 1 de yakınsak mı, ıraksak mı buna bakmam gerekiyor arkadaşlar.
+
+397
+01:13:23,188 --> 01:13:34,927
+Eksi bir noktasında, x eşittir eksi bir için, x eşittir eksi bir için, bu seri, bir bölü, n kare artı bir şeklindedir.
+
+398
+01:13:39,412 --> 01:13:48,492
+n eşittir 1'den sonsuza, 1 bölü n kare, p eşittir 2, büyüktür 1 olduğu için yakınsak, p serisini seçelim.
+
+399
+01:13:49,052 --> 01:13:54,412
+Bu p serisi, yakınsak bir seri, bununla kıyaslayabilirim.
+
+400
+01:13:55,332 --> 01:13:58,452
+Ya da, limit testini uygulayabilirim.
+
+401
+01:13:59,712 --> 01:14:06,231
+Limit testini uyguladığımda, ya da mukayese testini uyguladığımda, ne oluyor arkadaşlar?
+
+402
+01:14:07,667 --> 01:14:18,528
+1 bölü n kare artı 1 bölü, 1 bölü n kare limiti, n kare bölü n kare artı 1 eşittir, 1 çıkıyor, 0 ve sonsuzdan farklı olduğu için, limit testine göre aynı karakterdedir.
+
+403
+01:14:18,948 --> 01:14:21,528
+Yani, yakınsaklık arkadaşlar.
+
+404
+01:14:22,907 --> 01:14:26,387
+Mukayese testine göre de yakınsak bir seriden daha küçük terimlere sahiptir.
+
+405
+01:14:26,467 --> 01:14:31,487
+Bakın, 1 bölü n kare artı 1, 1 bölü n kareden küçüktür.
+
+406
+01:14:32,051 --> 01:14:52,072
+Payda büyüdü, ifade küçüldü. Yakınsaktır. Yani yakınsak bir serinin terimlerinden, daha küçük terimlere sahip bir seride yakınsaktır. Dolayısıyla bir bölen kararı artı bir yakınsak olarak elde ettim. Mutlak yakınsaklığım var o zaman cepte. Burada da mutlak yakınsaklığı elde ettim.
+
+407
+01:14:54,448 --> 01:15:01,228
+x ışıktır, eksi 1 için yakınsak bu noktayı dahil ediyorum aralığa. Yakınsak aralığına.
+
+408
+01:15:01,728 --> 01:15:03,347
+x ışıktır, eksi 4'e bakalım.
+
+409
+01:15:05,427 --> 01:15:06,448
+Serim benim neydi?
+
+410
+01:15:08,368 --> 01:15:13,388
+Bakın arkadaşlar, benim serim, şuraları bir silelim.
+
+411
+01:15:14,188 --> 01:15:18,988
+2x artı 5 üzeri n bölü, n kare artı 1. Burada x yerine eksi 4 yazıyorum.
+
+412
+01:15:21,395 --> 01:15:39,095
+2 kere eksi 4, eksi 8, 5 daha, eksi 3. Eksi 3 üzeri n, eksi 3 üzeri n, bölü, n kare artı 1, çarpı 3 üzeri n oldu değil mi seri?
+
+413
+01:15:40,775 --> 01:15:44,136
+3 üzeri n'ler birini götürür, yukarıda eksi 1 üzeri n kalır.
+
+414
+01:15:45,636 --> 01:15:47,996
+Ve sonuç olarak serim ne olur arkadaşlar?
+
+415
+01:15:49,427 --> 01:15:50,708
+Bakın, [öğrenci] ne olur?
+
+416
+01:15:51,948 --> 01:15:57,788
+Eksi 3 üzeri en, hatta, şurayı bir geri alalım, bir dakika.
+
+417
+01:15:58,887 --> 01:16:00,307
+Eksi 3 üzeri en yerine,
+
+418
+01:16:02,608 --> 01:16:03,087
+eksi,
+
+419
+01:16:07,667 --> 01:16:25,047
+1 üzeri n çarpı 3 üzeri n yazabilirim. Bölü n kare artı birim var elimde. Bir de 3 üzeri n var aşağıda. Bunlar birbirini götürdü arkadaşlar bakın. Sadece ne kaldı? Eksi 1 üzeri n bölü n kare artı bir kaldı.
+
+420
+01:16:28,819 --> 01:16:41,219
+Şimdi bakın, x eşittir, eksi 4 için, x yerine eksi 4 koydum kuvvet serisinde, eksi 1 üzeri n bölü n kar artı bir serisini elde ettim. Bakın burada.
+
+421
+01:16:42,639 --> 01:16:54,559
+Bunu koydum yerine, bu seriyi elde ettim. Şimdi bu seriyi inceleyeceğim. Eksi 1 üzeri n bölü n kar artı bir serisi, yakınsak mı, raksak mı?
+
+422
+01:16:55,347 --> 01:17:08,987
+Mutlak yakınsak mı arkadaşlar? Ona bakacağım önce. Mutlak değerini aldığımda bu seri 1 bölengar artı 1 serisi olur. 1 bölengar artı 1 serisi yakınsak da, zaten yukarıda da aynı şey var.
+
+423
+01:17:08,987 --> 01:17:22,987
+Eksi 1 seri, bölengar artı 1 de mutlak yakınsaktır. O zaman eksi 4 noktası da dahil yakınsak karalığına. Çünkü eksi 4 noktasında benim kuvvet serim,
+
+424
+01:17:23,572 --> 01:17:47,332
+yakınsak arkadaşlar. X eşittir, eksi 4 aldığında, bu seri yakınsak bir seri oluyor. Mutlak yakınsak bir seri oluyor. O zaman, eksi 4, eksi 1 kapalı aralığında, seriyi mutlak yakınsak. Yani, X büyük eşittir, eksi 4, küçük eşittir, eksi 1 aralığında, seriyi yakınsak arkadaşlar. Dolayısıyla, yakınsak aralığı bu oluyor.
+
+425
+01:17:49,939 --> 01:18:06,579
+Şartlı yakınsaklık yok arkadaşlar. Bir de, ıraksak aralığı aralık neresi? Iraksak aralığı da, re fark, eksi 4, eksi 1. Bu eksi 4, eksi 1 aralığının dışındaki bütün noktalarda seri ıraksak arkadaşlar.
+
+426
+01:18:10,452 --> 01:18:12,692
+Burada anlaşılmayan bir yer var mı arkadaşlar?
+
+427
+01:19:06,003 --> 01:19:14,984
+Peki bu kuvvet serisinde yakınsaklık aralığı kavramını ve bu soruyu anlayanlar 1'e bastın arkadaşlar. Genel olarak anlaşıldı mı?
+
+428
+01:19:50,739 --> 01:19:55,780
+Teşekkürler arkadaşlar. Ödevlerinizi de yapmışsınız. Yapan arkadaşlara teşekkür ediyorum.
+
+429
+01:19:57,800 --> 01:20:02,159
+Her gün küçük tekrarlar yaparsanız sınav dönemine birikmez konular.
+
+430
+01:20:02,880 --> 01:20:11,360
+Yine haftaya olan derse kadar, haftaya salı günü 9'daki derse kadar arkadaşlar.
+
+431
+01:20:15,123 --> 01:20:37,123
+İki tane örnek yapın arkadaşlar. İki adet örnek bulun. Yani yakınsaklık aralığını bulun arkadaşlar. İki tane farklı kuvvet serisi için. Yani mutlak yakınsaklık var mı, şartlı yakınsaklık var mı, yakınsaklık aralığına dahil mi, değil mi? Onları bir inceleyin. İki farklı seri sorusunda bunu yapın arkadaşlar. Haftaya kadar da...
+
+432
+01:20:38,003 --> 01:20:42,564
+Bu şekilde bir çalışma yaparsanız sizin için yararlı olacağını düşünüyorum arkadaşlar.
+
+433
+01:20:44,484 --> 01:20:47,804
+Ödevlerin nota etkisi yok deyince ödev sayısı azaldı.
+
+434
+01:20:47,804 --> 01:20:53,083
+Ama arkadaşlar, ödev yapmazsanız sınavlarda zorluk çekersiniz.
+
+435
+01:20:53,863 --> 01:20:56,884
+Yaparsanız yararını göreceksiniz sınav döneminde.
+
+436
+01:20:58,724 --> 01:21:02,404
+Şimdiden yapılan tekrarlar yararlı olacaktır arkadaşlar.
+
+437
+01:21:04,275 --> 01:21:09,996
+Sorusu olan var mı arkadaşlar? Haftaya kuvvet serilerinde işlemlerden devam edeceğim.
+
+438
+01:21:10,155 --> 01:21:12,735
+Kuvvet serilerinde işlemlerle devam edeceğiz.
+
+439
+01:21:12,735 --> 01:21:24,536
+Daha sonra kuvvet serilerinde toplama, çıkarma vs. gibi işlemleri gördükten sonra da sabitle çarpma, türev, integrasyon.
+
+440
+01:21:25,652 --> 01:21:35,612
+Nasıl yapılıyor kuvvet serilerinde bunlara bakacağız. Daha sonra da bazı özel kuvvet serileri var. Taylor ve Maclaurin serileri. Onlara bakacağız arkadaşlar.
+
+441
+01:21:39,859 --> 01:21:45,500
+Sorusu olan yoksa arkadaşlar, dersi dinlediğiniz için, katılım gösterdiğiniz için teşekkür ediyorum.
+
+442
+01:21:48,019 --> 01:21:57,359
+Ödev yapanlara tekrardan teşekkür ediyorum. Haftaya kadar da ödevlerinizi yaparsanız çok mutlu olurum. Kendinize iyi bakın. İyi günler diliyorum.
