@@ -1,0 +1,2883 @@
+1
+00:21:06,067 --> 00:21:07,087
+Arkadaşlar, merhaba.
+
+2
+00:21:12,339 --> 00:21:13,240
+Sesin geliyor mu?
+
+3
+00:21:14,679 --> 00:21:15,139
+Geliyor.
+
+4
+00:21:15,199 --> 00:21:15,819
+Geliyor hocam.
+
+5
+00:21:16,220 --> 00:21:16,439
+Tamam.
+
+6
+00:21:54,579 --> 00:22:01,759
+Okey. Yavaş yavaş arkadaşlar geliyor. Biz başlayabiliriz.
+
+7
+00:22:10,612 --> 00:22:26,231
+Evet, geçtiğimiz hafta 33. slide'da kaldık diye hatırlıyorum ben. Siz de teyit edin lütfen, daha ilerlemiş olmayalım. Geçtiğimiz hafta constructor konusunu konuşmuştuk.
+
+8
+00:22:38,996 --> 00:22:47,836
+Yazmak istediğimiz kodun, programın logic flow'unu, control flow'unu içerdiğini söylemiştik.
+
+9
+00:22:48,196 --> 00:22:53,736
+İçerisinde main metot olmadan bir sınıfı çalıştıramıyoruz demiştik.
+
+10
+00:22:53,736 --> 00:23:04,016
+İçerisinde main metot olan bir sınıfı çalıştırırken de main metot içerisinde yazılan kodlar aynı sırasıyla
+
+11
+00:23:05,428 --> 00:23:09,188
+Birinci satırdan son satıra kadar execute ediliyor demiştik.
+
+12
+00:23:11,068 --> 00:23:14,008
+Okay, let's switch to English.
+
+13
+00:23:15,448 --> 00:23:19,628
+Now, this is an example of a class.
+
+14
+00:23:20,728 --> 00:23:23,948
+So, if you look at this class syntax,
+
+15
+00:23:25,548 --> 00:23:27,948
+so you'll see that, so we have
+
+16
+00:23:31,635 --> 00:23:38,296
+So we have the data member fields, which is here, right here.
+
+17
+00:23:39,915 --> 00:23:44,495
+And this is data member field is only one.
+
+18
+00:23:45,735 --> 00:23:48,076
+And its type is string.
+
+19
+00:23:48,816 --> 00:23:49,056
+Okay.
+
+20
+00:23:49,056 --> 00:23:52,375
+And its access modifier is private.
+
+21
+00:23:53,172 --> 00:23:58,392
+And then you see that in the second segment of the code, you see the member methods.
+
+22
+00:23:58,971 --> 00:24:00,692
+All these are member methods.
+
+23
+00:24:01,112 --> 00:24:01,352
+Okay?
+
+24
+00:24:01,672 --> 00:24:03,172
+If you look at the UML...
+
+25
+00:24:04,403 --> 00:24:07,804
+Representation, you see that we have three segments.
+
+26
+00:24:08,023 --> 00:24:10,644
+The first, the top segment, is the name of the class.
+
+27
+00:24:10,804 --> 00:24:13,703
+The second segment is the member methods.
+
+28
+00:24:14,203 --> 00:24:16,344
+The third segment is the member.
+
+29
+00:24:16,723 --> 00:24:19,584
+The second segment is the data member fields.
+
+30
+00:24:19,743 --> 00:24:21,743
+The third segment is the member methods.
+
+31
+00:24:22,884 --> 00:24:26,683
+Now, in previous lecture, we talked about the constructor,
+
+32
+00:24:27,003 --> 00:24:31,743
+and we said that we need this constructor when we want to...
+
+33
+00:24:32,223 --> 00:24:45,563
+Create an object of a class. So remember, class is a template and the object is the real entity which is created based on this template.
+
+34
+00:24:45,563 --> 00:24:57,083
+Okay. Bir sınıf ile bir obje arasındaki ilişkiyi en iyi anlatmak için şey demiştik. Hani bir arabanın
+
+35
+00:24:57,811 --> 00:25:18,711
+Dizaynını düşünün. Kağıt üzerindeki dizaynını düşünün. Buna class diyebilirsiniz. İşte burada da bir class'ın sintaksı var. Ve bu dizayna göre siz fabrikada bir araba üretirseniz ne oluyor? Artık bir gerçek dünya içerisinde bir fiziksel objeye dönüşüyor araba.
+
+36
+00:25:25,811 --> 00:25:32,511
+Taslak üzerinde, bu tasarım kağıt üzerindeki tasarım üzerinde. Bunu da aynı şekilde kafanızda yerleştirebilirsiniz.
+
+37
+00:25:33,371 --> 00:25:39,871
+Burada gördüğünüz sınıf içerisinde bu sınıftan üretilecek olan objenin bütün detayları var.
+
+38
+00:25:40,631 --> 00:25:48,511
+Buradaki member metot dediğimiz şeyler, bu objenin sahip olacağı fonksiyonel özellikler diye düşünebilirsiniz.
+
+39
+00:25:48,891 --> 00:25:53,811
+Ondan sonra bu data member filtrisi bu objenin içerisinde...
+
+40
+00:25:53,811 --> 00:25:55,651
+içinde tutacağı data diyebilirsiniz.
+
+41
+00:25:57,299 --> 00:26:11,200
+Böylesi bir objeyi böyle bir sınıftan üretebilmek için de geçen hafta konuştuk. Constructor metoduna ihtiyacımız var. Constructor metodu, it has to be the same name as the class name and it doesn't have any return value.
+
+42
+00:26:11,200 --> 00:26:24,799
+Okay, it's a special method. So that's why we call it constructor method. It has, its name has to be the same name as the class name and it doesn't have a return method. And usually,
+
+43
+00:26:25,299 --> 00:26:29,779
+Most of the time, access modifier is public.
+
+44
+00:26:31,480 --> 00:26:35,019
+And so you can have zero parameter constructor.
+
+45
+00:26:35,159 --> 00:26:40,179
+You can have one parameter constructor, two parameter constructor, and so on.
+
+46
+00:26:40,884 --> 00:27:01,364
+Now, if you did not write a constructor in your class, when you compile this code, so remember, back in the first class, very first class, I told you that Java is an interpreted language, right?
+
+47
+00:27:02,387 --> 00:27:04,607
+Java is an interpreted language.
+
+48
+00:27:05,007 --> 00:27:16,007
+So when you give the source code to a Java compiler, which is java.exe, it compiles the code and it creates a java.class, right?
+
+49
+00:27:16,387 --> 00:27:17,087
+.class.
+
+50
+00:27:17,248 --> 00:27:24,967
+So if you have a car.java, when you compile it with the Java compiler, it creates car.class.
+
+51
+00:27:25,407 --> 00:27:26,607
+That's the compile code.
+
+52
+00:27:26,788 --> 00:27:29,327
+Now, if you don't have a constructor,
+
+53
+00:27:29,907 --> 00:27:37,907
+What compiler is doing is that it is inserting a zero parameter constructor in your code.
+
+54
+00:27:38,548 --> 00:27:42,008
+And then it compiles it and creates the car.class.
+
+55
+00:27:42,367 --> 00:27:42,607
+Okay.
+
+56
+00:27:42,607 --> 00:27:48,008
+So which means that every class has to have a constructor.
+
+57
+00:27:48,548 --> 00:27:51,927
+Even the developer did not write any constructor.
+
+58
+00:27:52,407 --> 00:27:56,867
+The compiler adds the zero parameter constructor and then compiles it.
+
+59
+00:27:57,307 --> 00:28:02,476
+And once the car.class is constructed and then we have a...
+
+60
+00:28:02,740 --> 00:28:27,320
+Java Virtual Machine, which is Java.exe. In some cases, it's Java.exe. And then Java.exe, it's an executable file which takes this class as its input and it executes your class in the CPU. Okay. So then you can understand the importance of the constructor.
+
+61
+00:28:30,740 --> 00:28:41,880
+So we have other methods, like in this case, we have getPlate, setPlate, and these are getter and setter methods that we use for the member fields.
+
+62
+00:28:41,880 --> 00:28:52,880
+Okay, now I will ask you to write getter and setter methods every time you use a private...
+
+63
+00:28:53,523 --> 00:28:55,283
+Data member fields.
+
+64
+00:28:55,703 --> 00:28:55,763
+Okay.
+
+65
+00:28:56,263 --> 00:29:00,103
+And getter method basically is a zero parameter method.
+
+66
+00:29:00,523 --> 00:29:03,503
+It will return the value of the member field.
+
+67
+00:29:03,983 --> 00:29:10,683
+And the setter method is the method that we use in order to update the value of the global member field.
+
+68
+00:29:11,163 --> 00:29:13,823
+And its return value is void.
+
+69
+00:29:13,823 --> 00:29:14,363
+Okay.
+
+70
+00:29:15,263 --> 00:29:20,384
+Bu bütün data member fieldleri arkadaşlar private olarak tanımlıyoruz.
+
+71
+00:29:21,523 --> 00:29:38,303
+tanımlamamızın amacı şu, biz bu sınıftan bir tane obje yarattığımız zaman bu yaratılmış olan objenin datasını sadece bu sınıfın metotlarını kullanarak değiştirmek istiyoruz.
+
+72
+00:29:38,303 --> 00:29:49,063
+Yani memoride bulunan bir başka obje gelip de bu objenin, ilk yarattığımız objenin datasını değiştirsin istemiyoruz.
+
+73
+00:29:49,556 --> 00:29:58,915
+Bu yüzden bu her bir sınıfa yazarken bu sınıfın data member filklerini private olarak tanımlıyoruz.
+
+74
+00:30:00,000 --> 00:30:21,680
+olarak tanımladığınız durumlarda olabilir ama bunlar çok nadir durumlardır. Bu yüzden sizden de size sınavlarda ya da dönem projesinde soracağımız, vereceğimiz problemlerde bu data member filtleri private olarak tanımlamanızı isteyeceğim. Aynı şekilde ya bekleyeceğim diyelim.
+
+75
+00:30:28,000 --> 00:30:41,804
+Bu konuda, class, object, constructor, inheritance, and other things that are not available to you.
+
+76
+00:30:43,059 --> 00:31:02,400
+Bunu söylerken şunu anlamanız gerekiyor. Demek ki Getter ve bir sınıf yazarken bu sınıfın içerisindeki member field'lerin private olarak tanımlanması oldukça önemli ve bu private tanımlanmış olan data member field'ler için Getter ve Setter metodlarının yazılması da oldukça önemli.
+
+77
+00:31:04,084 --> 00:31:07,364
+Geçen hafta main metoddan konuşmuştuk.
+
+78
+00:31:07,644 --> 00:31:15,224
+So we talked about the main method and we said that the main method is the method that we use in order to run a class.
+
+79
+00:31:15,524 --> 00:31:17,224
+So in order to execute a class.
+
+80
+00:31:17,364 --> 00:31:18,384
+So what does this mean?
+
+81
+00:31:18,923 --> 00:31:28,384
+Now, if you want the objects that are generated from this class, do some action, do some execution,
+
+82
+00:31:28,384 --> 00:31:32,084
+then in that case, this class has to have...
+
+83
+00:31:32,084 --> 00:31:33,443
+A main method.
+
+84
+00:31:33,844 --> 00:31:34,064
+Okay.
+
+85
+00:31:34,443 --> 00:31:40,064
+So main method has, includes the control flow.
+
+86
+00:31:40,064 --> 00:31:44,804
+So which means that starting from the first line all the way to the last line.
+
+87
+00:31:45,344 --> 00:31:50,764
+So the execution, the control flow is in the main method.
+
+88
+00:31:51,084 --> 00:31:56,284
+So when you run this class,
+
+89
+00:31:56,688 --> 00:32:05,248
+So in that case, so what Java Virtual Machine is doing, so it's going to execute the first line, then the second line, and the third line, okay?
+
+90
+00:32:05,648 --> 00:32:16,008
+So in this particular example, so what we do here, in the first line, we create a variable where the type is car.
+
+91
+00:32:16,468 --> 00:32:24,688
+And then in the second line, first, we create an object of the car class, as you see, we...
+
+92
+00:32:24,688 --> 00:32:28,248
+We call the constructor method with this string here.
+
+93
+00:32:28,968 --> 00:32:31,768
+And then once the object is created,
+
+94
+00:32:32,307 --> 00:32:38,668
+Then we assign the reference to this object to this variable.
+
+95
+00:32:39,668 --> 00:32:52,367
+Böyle bir satır gördüğünüz zaman, satırın içerisinde bir eşitlik varsa, öncelikle Java Virtual Machine eşitliğin sağ tarafını execute ediyor.
+
+96
+00:32:52,508 --> 00:32:54,367
+Yani öncelikle objeyi yaratıyor.
+
+97
+00:32:54,867 --> 00:32:59,248
+Objeyi yarattıktan sonra bu objeyi memoride bir lokasyona koyuyor.
+
+98
+00:32:59,527 --> 00:33:01,307
+Physical memoride bir lokasyona koyuyor.
+
+99
+00:33:02,067 --> 00:33:09,627
+Arkasından Physical memorideki bu objeye olan lokasyonun adresini şuradaki değişkene atıyor.
+
+100
+00:33:09,627 --> 00:33:16,307
+Yani artık bu şu demek, bu kodun içerisinde bu yaratılmış olan objeye nereden ulaşacağım?
+
+101
+00:33:16,587 --> 00:33:18,748
+Şu değişkeni kullanarak ulaşacağım.
+
+102
+00:33:18,907 --> 00:33:20,047
+E-card değişkenini.
+
+103
+00:33:21,332 --> 00:33:29,451
+In the next line, when I call, when I use the ACAR variable, then I can call one of the methods of this object.
+
+104
+00:33:30,192 --> 00:33:41,372
+Bu object, bu sınıfa dayalı olarak oluşturmuştuk ya, demek ki benim bu oluşmuş olan objemin içerisinde şurada gördüğünüz bütün member filtler var, including the introduce self.
+
+105
+00:33:41,492 --> 00:33:49,332
+So when I call the introduce self method of that object, so what Java Virtual Machine is going to do, it's going to execute the...
+
+106
+00:33:49,332 --> 00:33:54,892
+This method, okay, for the object that is generated in the second line, okay?
+
+107
+00:33:55,392 --> 00:34:11,972
+And so in this method, as you see, I have a getPlate method, and getPlate is going to call another member method of the object, and which is here, and this will take the value of the global member field that is right here.
+
+108
+00:34:12,884 --> 00:34:22,824
+So basically this, so it will call this method, and this will take the value of the global member field is right here, plate, okay?
+
+109
+00:34:23,403 --> 00:34:25,764
+And what is the value for the global member field?
+
+110
+00:34:25,903 --> 00:34:35,684
+So remember, when I first generated this object, I assigned this string in the constructor to this global member field.
+
+111
+00:34:35,684 --> 00:34:40,884
+So which means that in that object, the value for the plate is this.
+
+112
+00:34:40,884 --> 00:34:42,003
+This particular string.
+
+113
+00:34:42,284 --> 00:34:42,423
+Okay.
+
+114
+00:34:42,804 --> 00:34:47,423
+So in that case, when I go back to the introduce self method, when I call the get plate method,
+
+115
+00:34:47,423 --> 00:34:55,203
+so Java virtual machine will execute this method and it will take the value for the global member field, which is the string.
+
+116
+00:34:55,344 --> 00:35:08,884
+It will return that string and then Java virtual machine will append these two strings together and then it will write it on.
+
+117
+00:35:08,884 --> 00:35:10,163
+Ok?
+
+118
+00:35:13,844 --> 00:35:23,023
+Now, if you have a question, if you don't understand something that I explained to you, please stop me so that I could go over it, okay?
+
+119
+00:35:23,384 --> 00:35:26,903
+You can write it on the chat or you can turn on your...
+
+120
+00:35:26,903 --> 00:35:28,284
+Okay, evet.
+
+121
+00:35:28,284 --> 00:35:36,344
+Constructor metotlar geri dönüşü yok demiştiniz ama yaratılan nesnenin referansını geri döndürüyor galiba.
+
+122
+00:35:37,963 --> 00:35:38,284
+Yes.
+
+123
+00:35:39,027 --> 00:35:51,967
+But when we define it, we don't identify that particular return value.
+
+124
+00:35:51,967 --> 00:36:00,587
+But you are right. It returns the object which has the same type as the class type.
+
+125
+00:36:01,407 --> 00:36:03,407
+Mesela şu metoda bakalım.
+
+126
+00:36:03,927 --> 00:36:06,347
+Metodun ismi setplate.
+
+127
+00:36:06,963 --> 00:36:15,083
+In addition to the name of the method, so here you see a return value, either it's word or string.
+
+128
+00:36:15,243 --> 00:36:27,123
+But as for the constructor, now if you consider this as the name of the constructor, which is the same name as the class, apart from that, so we don't identify anything.
+
+129
+00:36:27,764 --> 00:36:32,724
+But in fact, it returns the object of the class.
+
+130
+00:36:32,963 --> 00:36:34,963
+So there is a return value, which is...
+
+131
+00:36:34,963 --> 00:36:36,963
+Aşkı, class, object, object, object.
+
+132
+00:36:36,963 --> 00:36:37,963
+You are right.
+
+133
+00:36:39,963 --> 00:36:40,963
+Okay.
+
+134
+00:36:44,963 --> 00:36:45,963
+So,
+
+135
+00:36:48,963 --> 00:36:50,963
+So, let's take a look at this one.
+
+136
+00:36:50,963 --> 00:36:51,963
+Now,
+
+137
+00:36:53,460 --> 00:37:05,199
+Now, if this is a class representation of a UML representation of a class, and we call this as the class diagram.
+
+138
+00:37:05,199 --> 00:37:16,480
+Okay, so let me, I can show you another class diagram, so you will see it later in the class, but let me show you right now.
+
+139
+00:37:18,280 --> 00:37:18,920
+Okay.
+
+140
+00:37:19,411 --> 00:37:29,771
+Now, this is also a class diagram. You see there is one class and there is one class and there is another class and there are relations between them. So this is a class diagram.
+
+141
+00:37:29,771 --> 00:37:45,991
+Okay. Now, this on the other hand is called sequence diagram and this diagram is different than the class diagram. It helps us to write.
+
+142
+00:37:46,612 --> 00:37:51,731
+The control flow within a given method.
+
+143
+00:37:52,159 --> 00:38:06,920
+Okay, now let's take a look at the main method. In the main method, as you see, we here in the first line, we identify a variable where the type is, we define a variable where the type is car.
+
+144
+00:38:07,319 --> 00:38:19,920
+And then we create an object of that class, of the car class, and then we assign it to this variable. Okay, so let's go to...
+
+145
+00:38:20,159 --> 00:38:29,460
+Now, as you see here, I have an object here.
+
+146
+00:38:29,460 --> 00:38:39,460
+Now, this is basically, so you can say that, so this is...
+
+147
+00:38:40,340 --> 00:38:43,880
+invoked by the Java Virtual Machine, right?
+
+148
+00:38:44,360 --> 00:38:52,240
+So when you run the Java Virtual Machine, Java Virtual Machine executes the main methods, right?
+
+149
+00:38:52,360 --> 00:38:57,720
+Because we said that without main methods, Java Virtual Machine cannot execute a class.
+
+150
+00:38:58,291 --> 00:39:02,132
+So, this main method is being called by the Java Virtual Machine.
+
+151
+00:39:02,351 --> 00:39:10,672
+And within the main method, you see that there is an object creation with the new keyword.
+
+152
+00:39:10,672 --> 00:39:11,132
+Okay.
+
+153
+00:39:11,931 --> 00:39:21,431
+And so, and whenever an object is created, so we have to use this diagram as well.
+
+154
+00:39:21,532 --> 00:39:24,672
+So, we have, so this is also an object.
+
+155
+00:39:24,952 --> 00:39:25,211
+Okay.
+
+156
+00:39:26,260 --> 00:39:31,140
+And this particular object is an object of the car class.
+
+157
+00:39:31,280 --> 00:39:33,440
+So therefore, we have to show it like this.
+
+158
+00:39:34,060 --> 00:39:38,520
+And on the right hand side of the column, you see it's the type car.
+
+159
+00:39:38,940 --> 00:39:42,860
+On the left hand side, you have the name of the object.
+
+160
+00:39:43,079 --> 00:39:47,000
+OK, now you see I create an object here.
+
+161
+00:39:47,000 --> 00:39:53,000
+So and there is a code block here and this code block is the constructor method.
+
+162
+00:39:54,260 --> 00:39:59,360
+The constructor method returns the reference to the object that is created.
+
+163
+00:39:59,360 --> 00:39:59,860
+OK.
+
+164
+00:40:00,000 --> 00:40:06,619
+The return values is shown with the dash arrow, okay?
+
+165
+00:40:07,000 --> 00:40:09,179
+Not the straight arrow, but the dash arrow.
+
+166
+00:40:09,679 --> 00:40:13,979
+So therefore, so whenever you have a return value, so we have to show it like this.
+
+167
+00:40:13,979 --> 00:40:19,819
+So as a return, we get a reference to an object that is created, okay?
+
+168
+00:40:20,340 --> 00:40:24,719
+And later in the main method, so let's go back later in the main method.
+
+169
+00:40:25,396 --> 00:40:31,636
+You see that we are calling the introduce self method, okay, by using the same reference.
+
+170
+00:40:32,235 --> 00:40:39,695
+Since we are using the same reference, then we are going to call the introduce self method of that object which is created, okay?
+
+171
+00:40:39,695 --> 00:40:43,536
+Remember, this object is created and inserted into physical memory.
+
+172
+00:40:45,108 --> 00:40:53,788
+Okay. Now, so when we call the introduce self method, so this is the code block for the introduce self method.
+
+173
+00:40:53,967 --> 00:40:56,768
+So let's go back to the code block for the introduce self method.
+
+174
+00:40:57,228 --> 00:41:01,528
+In the introduce self method, as you see, so we have the get plate method.
+
+175
+00:41:02,108 --> 00:41:09,668
+So which means that we are calling the get plate method in order to get a value for the plate number.
+
+176
+00:41:09,668 --> 00:41:11,368
+Okay. So therefore,
+
+177
+00:41:12,596 --> 00:41:19,716
+You see, so here we are calling the getPlate method, which is also another member field of the same object.
+
+178
+00:41:19,855 --> 00:41:21,536
+So therefore we show it like this.
+
+179
+00:41:21,796 --> 00:41:21,936
+Okay.
+
+180
+00:41:22,516 --> 00:41:24,436
+Another member field of the same method.
+
+181
+00:41:24,836 --> 00:41:34,355
+And once the result, so we receive the result, then so we have this return value that so we have.
+
+182
+00:41:34,355 --> 00:41:38,275
+And in fact, so this is a void method.
+
+183
+00:41:38,456 --> 00:41:40,056
+It does not return anything.
+
+184
+00:41:40,336 --> 00:41:40,576
+It just.
+
+185
+00:41:40,596 --> 00:41:52,596
+It prints out the result to the console, but still, even it's a void method, so we have to show it like this, because the execution comes back to the...
+
+186
+00:41:52,847 --> 00:42:09,667
+main methods. So right after this gets executed, the Java virtual machine comes back and then executes if there is any other line underneath. Okay. It comes back to the main methods.
+
+187
+00:42:11,923 --> 00:42:24,823
+Now, what I have shown you, and so once the main method is done, then the execution goes back to the Java Virtual Machine. Java Virtual Machine then kills this, your program, okay?
+
+188
+00:42:25,264 --> 00:42:38,563
+Now, this is the sequence diagram. So in the exams, I'm going to ask you to write sequence programs for different methods. I may ask you to write sequence program for the main method that you write.
+
+189
+00:42:38,963 --> 00:42:45,684
+I could ask you to write the sequence diagram for a particular method in your program, etc.
+
+190
+00:42:45,684 --> 00:42:46,364
+Okay?
+
+191
+00:42:51,827 --> 00:43:05,288
+Okay, so now let's take a look at this code. It's the same code, but only the data member fields are different. Now we have another data member field, which is Chase's number, okay, ChasseNumerası.
+
+192
+00:43:05,788 --> 00:43:16,648
+And it's type, again, it's string, and as you can see, it's also defined as private. Now take a look at the syntax for the car class, so you see that I have two private methods.
+
+193
+00:43:18,579 --> 00:43:28,340
+And so two private member fields and as they should be and their types are string and I have a constructor.
+
+194
+00:43:28,519 --> 00:43:33,099
+But in the constructor, I have now two parameter constructor, right?
+
+195
+00:43:33,800 --> 00:43:45,019
+And in the two parameter constructor, now in the first line, you see that I assign the value that comes as an argument to the global member field, which is OK.
+
+196
+00:43:46,579 --> 00:43:56,940
+So, in the second line, I use the keyword this. So, remember, I taught you this keyword in the previous lecture. So, when you have the same name,
+
+197
+00:43:57,300 --> 00:44:10,180
+Argument as the global member field. In that case, in order to distinguish these two, you need to use this keyword in order to refer the global member field.
+
+198
+00:44:10,180 --> 00:44:13,780
+Okay. So this is why we are using this keyword. Okay.
+
+199
+00:44:16,659 --> 00:44:25,539
+And so here I have the second line basically takes the value for the second argument and assigns the global member field.
+
+200
+00:44:26,059 --> 00:44:40,559
+I have getter and setter methods for the plate and I have getter method for the chasse numeracy, chase's number, but I should also have the setter method for the chasse numeracy as well.
+
+201
+00:44:44,659 --> 00:44:50,779
+I would expect you to write the getter and setter methods for every global member field that you have.
+
+202
+00:44:51,299 --> 00:44:51,399
+Okay.
+
+203
+00:44:52,039 --> 00:44:57,399
+Now, the difference between this class and the previous class is that this one does not have the...
+
+204
+00:44:57,684 --> 00:44:58,824
+Main method.
+
+205
+00:44:59,384 --> 00:45:07,684
+If a class does not have a main method, when you run that class, then basically, so it will not do anything.
+
+206
+00:45:08,423 --> 00:45:16,024
+So we have to have a main class in order to Java Virtual Machine to run your class.
+
+207
+00:45:18,083 --> 00:45:24,003
+Now, take a look at this one.
+
+208
+00:45:25,619 --> 00:45:34,559
+Here, I have two class syntax.
+
+209
+00:45:35,359 --> 00:45:47,679
+Now, in the first one, you have two parameter constructors, okay, as I have shown you in the previous slide.
+
+210
+00:45:48,211 --> 00:45:55,291
+In the second one, I have one parameter constructor and another one parameter constructor.
+
+211
+00:45:55,291 --> 00:46:07,931
+Okay. Now, this means that the signature of this constructor is the same as the signature of this constructor.
+
+212
+00:46:07,931 --> 00:46:09,091
+Now.
+
+213
+00:46:09,652 --> 00:46:17,311
+Another way to say this, the signature of this method is the same as the signature of this method.
+
+214
+00:46:17,311 --> 00:46:20,311
+Okay, so what does signature means?
+
+215
+00:46:20,916 --> 00:46:46,876
+And if so, the name of the method, the return value of the method, and also the argument types of the method. Altogether, we call it signature. Okay. We cannot have same signature methods in the same class. So when we have same signature methods in the same class, the compiler, when it compiles your source code,
+
+216
+00:46:47,347 --> 00:46:48,927
+It will give an error.
+
+217
+00:46:49,547 --> 00:46:49,627
+Okay.
+
+218
+00:46:50,047 --> 00:47:04,507
+So therefore, so we cannot, in the first step, when we compile our code, so we are going to get an error for the second car class syntax.
+
+219
+00:47:04,507 --> 00:47:13,507
+But in the first one, since I only have one two-parameter constructor, I won't have any problems.
+
+220
+00:47:13,887 --> 00:47:14,007
+Okay.
+
+221
+00:47:15,476 --> 00:47:23,396
+Bu konuştuğumuz şey yani aynı signature, constructor diğer metotlar için de geçerli.
+
+222
+00:47:23,576 --> 00:47:30,336
+Yani iki tane aynı signature'a sahip metot ben aynı sınıf içerisinde yazamam arkadaşlar.
+
+223
+00:47:32,916 --> 00:47:34,976
+Signature'dan kastımız neydi?
+
+224
+00:47:35,416 --> 00:47:45,596
+Metodun ismi, argümanların sayısı, argümanların tipleri, metodun return values'u bunların hepsi beraber ne oluyor?
+
+225
+00:47:45,735 --> 00:47:47,556
+O metodun signature olmuş oluyor.
+
+226
+00:47:47,936 --> 00:47:51,275
+Metodun içerisi farklı olabilir.
+
+227
+00:47:51,275 --> 00:47:58,856
+Yani şu curly parantezler içerisi farklı olabilir ama metodun eğer signature'ı aynıysa o durumda ne yapamam?
+
+228
+00:47:59,136 --> 00:48:00,596
+Bunu ben compile edemem.
+
+229
+00:48:00,916 --> 00:48:05,996
+Şuradaki argümanların isimleri farklı olması bir şeyi değiştirmiyor.
+
+230
+00:48:06,076 --> 00:48:08,976
+Önemli olan bu argümanların tiplerinin aynı olması.
+
+231
+00:48:08,976 --> 00:48:14,115
+Bunu diğer regular metotlarda da aynı şekilde düşünebilirsiniz.
+
+232
+00:48:14,296 --> 00:48:22,676
+O yüzden sınavlarda da eğer iki tane aynı signature'a sahip metodu yazmışsanız buradan puan kaybedeceksiniz.
+
+233
+00:48:28,179 --> 00:48:36,879
+Okay, now, so before I go further, so I'm going to show you the, so some of the,
+
+234
+00:48:41,748 --> 00:48:42,748
+Examples.
+
+235
+00:48:43,648 --> 00:48:44,207
+Okay.
+
+236
+00:48:44,568 --> 00:48:50,667
+Now, I have downloaded the Eclipse as you should be doing.
+
+237
+00:48:51,068 --> 00:48:56,608
+And here I also downloaded the codes that are available in the website.
+
+238
+00:48:57,347 --> 00:49:04,827
+And so in the website, so if you go to do these codes, so you will see everything that we have studied.
+
+239
+00:49:05,327 --> 00:49:09,387
+So far, the source posts are available there.
+
+240
+00:49:09,387 --> 00:49:09,788
+Okay.
+
+241
+00:49:10,748 --> 00:49:13,387
+Now, here...
+
+242
+00:49:16,755 --> 00:49:44,695
+So let's see. So here is an example that I have shown you. It's the car class. So you see the global member field here. And my constructor here, getter and setter methods are here. Introduce self method here. Okay. And so here is the main method. And within the main methods, I have some other codes. You have not learned some of these syntax, some of the concepts here.
+
+243
+00:49:44,755 --> 00:49:46,996
+But I'm going to show it to you anyways.
+
+244
+00:49:47,956 --> 00:49:53,875
+So in the first line here, I am defining a variable where the type is car.
+
+245
+00:49:54,295 --> 00:49:59,875
+In the second line, I am creating an object of a class which is...
+
+246
+00:50:00,000 --> 00:50:01,779
+You will learn it later.
+
+247
+00:50:02,000 --> 00:50:09,560
+So which is responsible to write something, to read something from the console, okay, the scanner object.
+
+248
+00:50:10,079 --> 00:50:17,239
+And then I assign the reference to this object to this variable where the variable type is this class.
+
+249
+00:50:17,239 --> 00:50:18,279
+This is a class.
+
+250
+00:50:18,771 --> 00:50:29,891
+And then I write something to the console, system out print or system out print line is writing something, some string into the console.
+
+251
+00:50:30,572 --> 00:50:37,652
+And in the following line, here you see I'm creating an object of the car class.
+
+252
+00:50:38,231 --> 00:50:44,091
+And as for the argument, I am entering the value that I get from the user.
+
+253
+00:50:44,947 --> 00:50:54,667
+And so once the object is created, I assign the reference to this object to this variable which is created, which is defined earlier.
+
+254
+00:50:55,219 --> 00:51:14,879
+Okay. And then I call introduce self method of this object. And so once I am done, I am calling the close method of this scanner object, which I created earlier. Okay. So let's go and run this car class.
+
+255
+00:51:17,019 --> 00:51:17,579
+Okay.
+
+256
+00:51:19,347 --> 00:51:23,748
+So, when I run this, as you see, it started.
+
+257
+00:51:24,248 --> 00:51:28,967
+And as you see, now my program is running in Java Virtual Machine.
+
+258
+00:51:29,608 --> 00:51:33,427
+So, you can see if the red light is over here.
+
+259
+00:51:33,528 --> 00:51:35,927
+So, this means that execution is still going on.
+
+260
+00:51:35,927 --> 00:51:43,608
+Now, my program is asking me to enter a license plate number, let's say.
+
+261
+00:51:44,188 --> 00:51:46,627
+So, let's add.
+
+262
+00:51:48,436 --> 00:52:16,416
+A license plate number. So once I add it, so it's going to take this value as a string. So with input.next line, so it's going to take this as a string. It will create a car object. Okay. And so once it created the car object, it then will call the introduce self method. And introduce self method is going to write it on the console. As you see right now, my program stops. So therefore, so you don't see any red.
+
+263
+00:52:16,436 --> 00:52:17,336
+Lightyear, okay?
+
+264
+00:52:18,076 --> 00:52:24,735
+And here is another class, main test class.
+
+265
+00:52:24,735 --> 00:52:40,615
+Now, so this time, so what I have done is that I, instead of keeping the, instead of controlling this car class,
+
+266
+00:52:41,331 --> 00:52:47,771
+Within the same class, I'm going to use this, I'm going to control it with another class.
+
+267
+00:52:47,891 --> 00:52:50,091
+And I call this as main test, okay?
+
+268
+00:52:50,391 --> 00:52:55,971
+Now, this main test class, as you see, it doesn't have any data member fields.
+
+269
+00:52:56,152 --> 00:53:00,351
+It doesn't have any member methods other than the main method, okay?
+
+270
+00:53:00,491 --> 00:53:03,331
+It only has only one method, which is the main method.
+
+271
+00:53:03,831 --> 00:53:09,331
+And so within this, you see that in the first line, so I'm defining the...
+
+272
+00:53:09,331 --> 00:53:21,831
+a car variable, just like in the previous example, a car. I am creating a scanner object which is responsible for reading text from the command line.
+
+273
+00:53:22,371 --> 00:53:29,991
+Okay, just like what I did in the previous main method. Okay, assigning to this variable where the type is scanner.
+
+274
+00:53:30,480 --> 00:53:42,739
+I'm writing something out to the console, enter a license plate number, and I'm getting that value and assigning this locally defined variable where the type is string.
+
+275
+00:53:43,155 --> 00:53:47,215
+And now I'm creating an object of two car class.
+
+276
+00:53:47,395 --> 00:53:57,395
+Now, as you see, the car class and the main test class, if you look at this package here, they both are under the same package.
+
+277
+00:53:57,395 --> 00:54:01,355
+So, which means that they can both see each other.
+
+278
+00:54:01,655 --> 00:54:06,395
+So, therefore, in the main method of the main test, when I say...
+
+279
+00:54:07,539 --> 00:54:22,699
+When I wanted to create an object of the car class, Java Virtual Machine will be able to create this car class, object of this car class, and assign the reference to this object to this variable.
+
+280
+00:54:22,699 --> 00:54:32,539
+And then I'm going to call the introduceSouth method and then close the input object which I generated earlier.
+
+281
+00:54:32,680 --> 00:54:35,539
+So I can also run the main test.
+
+282
+00:54:35,539 --> 00:54:48,119
+Okay, now I'm running the main test method. So let's give a simple string. Okay, as you see, it did the same thing. So this means that
+
+283
+00:54:48,563 --> 00:54:54,483
+I can have the main method in the same class as well as I can have another class.
+
+284
+00:54:54,844 --> 00:54:57,283
+In that class, I can keep the main method.
+
+285
+00:54:57,603 --> 00:55:03,184
+OK, but so I need to keep them under the same package.
+
+286
+00:55:03,184 --> 00:55:16,563
+If I wanted to keep them in different packages, in that case, I need to have an import statement in order to let this class to know where the object is.
+
+287
+00:55:16,563 --> 00:55:20,243
+Okay.
+
+288
+00:55:20,363 --> 00:55:21,243
+So what else?
+
+289
+00:55:21,483 --> 00:55:22,483
+Let me see.
+
+290
+00:55:24,243 --> 00:55:30,863
+I have already shown you this class in the slides.
+
+291
+00:55:35,539 --> 00:55:36,099
+Okay.
+
+292
+00:55:38,099 --> 00:55:43,119
+I also have shown you in this class.
+
+293
+00:55:43,440 --> 00:55:49,059
+So as you see in the code, I have just to play with it.
+
+294
+00:55:49,220 --> 00:55:51,920
+I did some other stuff as well.
+
+295
+00:55:51,920 --> 00:55:52,559
+For example,
+
+296
+00:55:53,076 --> 00:55:57,836
+I created a variable where the type is car.
+
+297
+00:55:57,996 --> 00:56:04,516
+Now I'm creating an object of the car, assigning to this car variable, calling the introduce self method.
+
+298
+00:56:04,516 --> 00:56:13,255
+Now I'm creating another object of this car and assigning its reference to this variable.
+
+299
+00:56:13,896 --> 00:56:16,516
+And I'm calling the introduce self method of that object.
+
+300
+00:56:17,376 --> 00:56:20,775
+Now I have at this point, I have two objects, this one and this one.
+
+301
+00:56:21,072 --> 00:56:40,932
+And here, I am getting the get plate number of the first one and I am setting into the, I am getting the plate number of the second one and I am setting into the first one and I call the introduce sub method and I am printing out the end.
+
+302
+00:56:40,932 --> 00:56:49,052
+Okay. Arkadaşlar, sizlerin de bu size gösterdiğimi yapmanızı istiyorum. Ne demeye çalışıyorum? Bir eklip.
+
+303
+00:56:49,072 --> 00:57:08,912
+Eclipse'i kuracaksınız gelecek haftaya kadar. İki sayfadaki kodları indireceksiniz. Burada benim yaptığım gibi bu sayfadaki kodları Eclipse'e import edeceksiniz ve burada sol taraftaki menüde bütün package'ları göreceksiniz.
+
+304
+00:57:09,460 --> 00:57:16,519
+Ve ilgili package'in içerisindeki sınıflara, derste işlediğimiz kodlara teker teker gireceksiniz.
+
+305
+00:57:16,679 --> 00:57:18,284
+Ve benim yaptığım gibi...
+
+306
+00:57:18,804 --> 00:57:46,804
+Buradaki metotları sizler de çağıracaksınız. Ben burada eğer bir tane sınıf yaratmışsam siz başka bir sınıf yaratacaksınız. Sınıfın başka bir obje yaratacaksınız. Objenin metotlarını çağıracaksınız. Bir objenin değerini alıp diğer objeye set edeceksiniz. Buradaki kodları kendiniz güncelleyip her seferinde de bunu çalıştıracaksınız. Sonucunu.
+
+307
+00:57:46,804 --> 00:57:54,964
+Bunu göreceksiniz. Sizlerden beklediğim bu. Bunu yaparsınız ancak Object Oriented Programming dersinden düzgün bir nokta geçebilirsiniz.
+
+308
+00:57:56,984 --> 00:58:06,044
+Okey. Ümit ediyorum bu konuda anlaştık. Çünkü artık bu şu anda işlediğimiz konular ilk birkaç tane pakici içeriyor.
+
+309
+00:58:07,004 --> 00:58:11,804
+Şurada gördüğünüz bütün pakicilerin hepsini ders ilerlerken...
+
+310
+00:58:12,244 --> 00:58:18,663
+inceleyeceğiz, öğreneceğiz. O yüzden bu söylediğimi yapmanız şart arkadaşlar.
+
+311
+00:58:22,996 --> 00:58:23,496
+Okay.
+
+312
+00:58:24,936 --> 00:58:32,256
+So let's go back to where we left, which is data types.
+
+313
+00:58:33,316 --> 00:58:33,576
+Okay.
+
+314
+00:58:34,516 --> 00:58:47,176
+Now, in object-oriented programming languages, just like the other functional programming languages like C, so we have the data types.
+
+315
+00:58:47,764 --> 00:58:49,784
+And we have the primitive data types.
+
+316
+00:58:50,124 --> 00:58:52,524
+And these primitive data types are eight.
+
+317
+00:58:52,824 --> 00:58:57,484
+There are eight different primitive data types like integer, long, short, byte.
+
+318
+00:58:58,923 --> 00:59:02,504
+So, character, double, float.
+
+319
+00:59:02,923 --> 00:59:05,544
+So, you can see double, float, character, boolean.
+
+320
+00:59:05,544 --> 00:59:09,164
+So, we have these eight different data types.
+
+321
+00:59:15,347 --> 00:59:17,748
+Eeeh...
+
+322
+00:59:20,115 --> 00:59:26,276
+So, it has different byte requirement, I should say.
+
+323
+00:59:26,675 --> 00:59:29,016
+For example, integer requires four bytes.
+
+324
+00:59:29,376 --> 00:59:32,215
+Long integer requires eight bytes.
+
+325
+00:59:32,675 --> 00:59:32,755
+Okay.
+
+326
+00:59:33,316 --> 00:59:35,396
+A short integer requires two bytes.
+
+327
+00:59:35,916 --> 00:59:36,175
+Okay.
+
+328
+00:59:36,516 --> 00:59:46,115
+So, these byte requirements or the memory requirements is defining how much memory that Java Virtual Machine should...
+
+329
+00:59:46,739 --> 00:59:49,299
+Allocate in the physical memory.
+
+330
+00:59:49,719 --> 00:59:49,859
+Okay.
+
+331
+00:59:50,239 --> 01:00:05,339
+If you have, let's say, 16 gigabytes physical memory in your computer, so then Java Virtual Machine runs in your computer, it allocates certain percentage of that 16 gigabytes, right?
+
+332
+01:00:05,339 --> 01:00:07,879
+And within the Java Virtual Machine.
+
+333
+01:00:08,403 --> 01:00:14,664
+Let's say Java Virtual Machine takes up one gigabyte of your physical memory.
+
+334
+01:00:15,204 --> 01:00:22,443
+And within that one gigabyte physical memory, your program is going to run.
+
+335
+01:00:22,784 --> 01:00:31,543
+So basically Java Virtual Machine is going to run your program within that one gigabyte allocated memory that's allocated for the Java.
+
+336
+01:00:36,724 --> 01:00:55,184
+That you have for an individual object, when that object is created, Java Virtual Machine is going to insert that object into some location in the physical memory, and it will consume some space from that one gigabyte allocated memory.
+
+337
+01:00:55,184 --> 01:01:04,724
+And each integer or the long integer, small integer, float, etc., whichever type that you have in your...
+
+338
+01:01:04,724 --> 01:01:15,023
+As the data member fields in your object, it will, Java Virtual Machine will reserve some space for them.
+
+339
+01:01:15,324 --> 01:01:15,384
+Okay.
+
+340
+01:01:16,224 --> 01:01:23,844
+Now, so here, you see for the double, it requires 8 bytes.
+
+341
+01:01:23,943 --> 01:01:27,503
+For float variables, it requires 4 bytes, etc.
+
+342
+01:01:28,003 --> 01:01:28,244
+Okay.
+
+343
+01:01:29,244 --> 01:01:31,744
+Now, apart from these,
+
+344
+01:01:32,159 --> 01:01:38,619
+We also have, apart from this, we also have wrappers.
+
+345
+01:01:39,360 --> 01:01:39,420
+Okay.
+
+346
+01:01:40,000 --> 01:01:50,219
+Now, Java Virtual, Java Programming Language provides us classes corresponding to each primitive type.
+
+347
+01:01:50,400 --> 01:01:51,440
+So what does this mean?
+
+348
+01:01:52,119 --> 01:01:58,800
+If you have an integer, Java Virtual Machine provides an integer class.
+
+349
+01:01:59,923 --> 01:02:01,263
+If you have a double,
+
+350
+01:02:01,695 --> 01:02:11,035
+Java Virtual Machines, Java Libraries, Java Software Development Kit Libraries provides a class called double.
+
+351
+01:02:11,615 --> 01:02:17,315
+You have a class called float. You have a class called character, etc.
+
+352
+01:02:18,535 --> 01:02:29,695
+Demek ki her bir primitive type için Java Software Development Kit, yani Java ile beraber gelen kütüphane, by default kütüphane, bize her bir...
+
+353
+01:02:29,695 --> 01:02:32,455
+primitive type için bir tane de class veriyormuş.
+
+354
+01:02:33,115 --> 01:02:38,355
+Now, each class has these methods.
+
+355
+01:02:39,376 --> 01:02:48,876
+For example, for integer, so you have the compare to, you have the int value method, you have the parse int method, you have the to string method, etc.
+
+356
+01:02:49,876 --> 01:03:01,216
+Demek ki bize Java kütüphanesiyle beraber gelen bu wrapper class'larıyla birlikte biz bir takım metotlar elde ediyoruz.
+
+357
+01:03:02,228 --> 01:03:11,208
+Şimdi bu primitive data type'ları istersek hani class olarak kullanabiliriz.
+
+358
+01:03:11,583 --> 01:03:15,583
+İstersek normal primitive data type olarak kullanabiliriz.
+
+359
+01:03:16,263 --> 01:03:20,663
+Class olarak kullandığımız zaman mesela şurada bakalım integer'ı düşünelim.
+
+360
+01:03:21,143 --> 01:03:27,884
+Integer, E isminde bir integer'ı tanımlamışım ve buna 3 değerini esan etmişim.
+
+361
+01:03:27,884 --> 01:03:29,884
+Şimdi ben bunu eğer...
+
+362
+01:03:30,739 --> 01:03:38,039
+wrapper sınıfı olarak tanımlamış olsaydım. Yani inti, integer sınıfı olarak tanımlamış olsaydım. Şurada olduğu gibi.
+
+363
+01:03:38,799 --> 01:03:48,459
+Bu durumda ne yapacaktım? İşte integer tipinde mesela burada yapmışım. Integer sarma 1 demişim. Sarma 1 eşittir.
+
+364
+01:03:48,859 --> 01:03:57,000
+İşte new integer 1. Yani şurada integer'in bir tane objesini yaratmışım ve bu objeyi de sarma 1'e atamışım.
+
+365
+01:03:57,300 --> 01:04:14,320
+Yani bu integer primitive type'ın bir objesini yaratmışım. Peki, böylesi bir objeleri yaratmamıza izin vermesinin avantajları ne? Niye biz primitive data type kullanmıyoruz? Gidiyoruz bu objeyi kullanıyoruz arkadaşlar.
+
+366
+01:04:15,480 --> 01:04:23,159
+Burada görüyorsunuz farklı metotlar bize sağlamış. Mesela bir string değerini integer'a dönüştürebiliyoruz.
+
+367
+01:04:23,731 --> 01:04:34,132
+Ondan sonra ya da işte bir integer'ı string'e dönüştürebiliyoruz.
+
+368
+01:04:34,708 --> 01:04:43,547
+Bir stringin içerisindeki integer değerini alabiliyoruz. Bir integer değerini bir başka integer değeriyle karşılaştırabiliyoruz.
+
+369
+01:04:44,268 --> 01:04:58,467
+Normalde eğer ben bu metotlar olmamış olsa bunun için ayrıca kod yazmam gerekecek bu tür şeyleri yapabilmek için ama integer sınıfını bize sağlamakla beraber Java, software, development kit bunları yapmama olanak sağlıyor.
+
+370
+01:05:02,708 --> 01:05:06,608
+rapper sınıflarını oldukça fazla kullanıyoruz.
+
+371
+01:05:10,612 --> 01:05:10,952
+Ok?
+
+372
+01:05:13,139 --> 01:05:18,219
+Şimdi bu, tekrardan bu wrapper sınıflarına döneceğim.
+
+373
+01:05:18,359 --> 01:05:30,559
+But before I go back to the wrapper classes, so let us take a look at the aritmetik operations and the binary operations that we can apply on the primitive data types.
+
+374
+01:05:30,559 --> 01:05:40,980
+Now, all these operations like the plus and the subtraction, multiplication, division or the percentage, all these aritmetik operations.
+
+375
+01:05:41,139 --> 01:05:45,019
+I can do it on with the primitive data types with no problem.
+
+376
+01:05:45,019 --> 01:05:50,439
+OK. And we also have shorthands.
+
+377
+01:05:50,959 --> 01:05:57,919
+OK. So which means that Java provides some shorthand syntax that we can use.
+
+378
+01:05:58,359 --> 01:06:06,639
+For example, if you see this sign here, so plus and equals, so which means that.
+
+379
+01:06:08,083 --> 01:06:11,083
+For example, if you see...
+
+380
+01:06:11,648 --> 01:06:15,648
+A plus equal to number.
+
+381
+01:06:16,007 --> 01:06:20,208
+So in that case, which means that A equals to A plus number.
+
+382
+01:06:20,608 --> 01:06:28,847
+Eğer artı ve hemen arkasından eşittir görüyorsanız, burada da A varsa, burada da eklemek istediğiniz sene number değeri varsa,
+
+383
+01:06:29,387 --> 01:06:38,507
+Java'nın sağlamış olduğu bu daha az kod yazaraktan aynı işlemi gerçekleştirmek için short-end sintakslardan bir tanesi.
+
+384
+01:06:39,648 --> 01:07:07,648
+Açılışının bu olduğunu bileceğiz. A eşittir, A plus number. Ya da şu, I plus plus. Hani burada şu demek, I eşittir, I plus one demek. I'nin bir arttırıyoruz. Ya da plus plus I demek, I'nin değerini bir arttırıyoruz. Şu ikisi arasında bir fark var. Bu ikisi arasındaki fark da şu. Eğer plus plus...
+
+385
+01:07:07,648 --> 01:07:13,688
+class değeri sağ taraftaysa ve burada bir assignment varsa mesela şuna bakalım.
+
+386
+01:07:14,096 --> 01:07:42,096
+Bu durumda öncelik bir sonraki satıra geçerken öncelikli olarak bu assignment'ı gerçekleştiriyoruz. Yani i'ye 3'e atıyoruz. Ondan sonra i'nin değerini arttırarak aşağı iniyoruz. Yani bu satırı egzeküt ettiğimiz zaman, mesela ilk başta i'ye 3 değerini atamışım. Sonra bu satır gelmiş. Java Virtual Machine bu satırı egzeküt ettikten sonra bir sonraki satıra geçtiğimde anı...
+
+387
+01:07:42,096 --> 01:08:09,096
+A'nın değeri 3, i'nin değeri 4 olacaktır. Hani burada ne yapmış oldum? i'yi öncelikle assign ediyor. Yani i'nin değerini buraya atıyor. Sonra i'nin değerini ne yapıyor? 4'e çıkartıyor. Peki burada ne oluyor? Burada da plus plus i'nin önünde. Öncelikle ne yapıyor? A'nın değerini arttırıyor. A'nın değeri ne kalmıştı bir üst satırdan? 3 olarak gelmişti. 3'ün değerini bir arttırdı 4. 4'ü B'ye atadı.
+
+388
+01:08:10,096 --> 01:08:13,956
+B'nin değeri de ne oldu? 4 oldu. A'da 4, B'de 4 olmuş oldu.
+
+389
+01:08:13,956 --> 01:08:21,315
+Her ikisi de E'nin değerini arttırıyor. Orada bir sorun yok.
+
+390
+01:08:21,716 --> 01:08:31,476
+Yalnızca eğer bu assignment işleminin sağ tarafındaysa, plus plus sağ tarafta olursa önce assignment'ı gerçekleştirip sonra değerini arttırır.
+
+391
+01:08:31,615 --> 01:08:35,976
+Sol tarafındaysa önce değerini arttırıp sonra assignment'ı gerçekleştiriyor.
+
+392
+01:08:37,011 --> 01:09:05,011
+Bunu diğer şeyde mesela minus minus dediğim zaman ne yapıyor? İ'nin bir değerini decrement edeceğiz. Plus plus deyince değerini arttıracağız. Mesela plus equal to'yu şurada minus equal to, multiplication equal to, division equal to, percentage equal to bunların hepsini şunun yerine koyup şuradaki açılımı siz kendinizde çıkartabilirsiniz.
+
+393
+01:09:05,011 --> 01:09:12,231
+Bunlar aritmetik operationlar arkadaşlar. Bu aritmetik operationların dışında bir de binary operationlar var.
+
+394
+01:09:13,939 --> 01:09:39,859
+Burada da mesela binary operation örneğini görüyoruz. Binary derken ikili sayılı düzeninden bahsediyoruz. Mesela 12. 12'nin ikili sayılı düzeninde yazımını yapmışım. 25'in ikili sayılı düzenden yapmışım. 2 üzeri 0, 1, 2 üzeri 2, 2 üzeri 3 şeklinde düşünün. Bunu dönüştürdüğünüz zaman integer'a ne yapıyor? 12. Şuradaki değeri dönüştürdüğünüz zaman ne yapıyor? 25.
+
+395
+01:09:40,467 --> 01:09:46,407
+Şimdi buradaki koda bakalım. Burada benim bir tane class'ım var. Class'ımın içerisinde de main metodum var.
+
+396
+01:09:46,788 --> 01:09:54,768
+Main metodun içerisinde de integer tipinde iki tane variable tanımlamışım ve bu variable'lara da değer atamışım.
+
+397
+01:09:56,448 --> 01:09:59,768
+Birinci variable'ın değeri 12, ikincisi...
+
+398
+01:10:00,000 --> 01:10:07,799
+25 olmuş. Üçüncü variable ise bir şey atamamışım. Ama üçünün de yani number 1, number 2, result bunların hepsinin tipi integer.
+
+399
+01:10:08,399 --> 01:10:16,579
+Buradan şunu da görüyorsunuz. Birden fazla değişkenin tipini aynı satırda belirleyebiliyorum.
+
+400
+01:10:16,719 --> 01:10:21,840
+Araya virgül koyduktan sonra birden fazla değişkenin tipini belirleyebiliyorum.
+
+401
+01:10:22,176 --> 01:10:36,056
+Şimdi burada ne yapmışım? Bir or operation'ı yapmışım. Bu bitwise yani ikili sayılı düzende bir or operation'ı yapmışım. Demek ki bu türden binary operation'ları Java'da yapabiliyorum.
+
+402
+01:10:36,775 --> 01:10:49,876
+Number 1 ile number 2 için bitwise or operation'ı yapmışım. Bunu görünce Java Virtual Machine öncelikle number 1'i binary sayıya dönüştürüyor. Number 2'yi binary sayıya dönüştürüyor.
+
+403
+01:10:50,176 --> 01:11:01,756
+Bunları binary düzende topluyor. Bunları binary düzende topladıktan sonra elde ettiği değeri ise tekrardan integer'a dönüştürüp benim için yazdırıyor.
+
+404
+01:11:02,868 --> 01:11:14,228
+Bunu end operation için de düşünebilirsiniz. Burada da bitwise end operation yapmışım. Aynısı, kodu aynı. Birinci değerle ikinci değeri endlemişim.
+
+405
+01:11:14,728 --> 01:11:23,588
+Bunu da ne yapıyor? Şu değeri ikili düzene dönüştürüyor. 12'yi, 25'i ve ikisi arasında bir end gerçekleştiriyor.
+
+406
+01:11:30,868 --> 01:11:36,548
+Zendeki değeri tekrardan dönüştürüyor integer'a ve bunu yazdırıyor arkadaşlar.
+
+407
+01:11:37,088 --> 01:11:39,368
+Bu da bitwise end operation.
+
+408
+01:11:39,528 --> 01:11:44,648
+Demek ki Java'da aritmetik operasyonlar yanı sıra bunları da yapabiliyoruz.
+
+409
+01:11:46,048 --> 01:11:48,388
+Biraz duralım, bir ondaki karı verelim.
+
+410
+01:11:48,388 --> 01:11:49,768
+Saat ikiye elli geçiyor.
+
+411
+01:11:50,508 --> 01:11:53,728
+Saat üçte devam ediyoruz arkadaşlar.
+
+412
+01:11:55,155 --> 01:12:01,376
+Mikrofonu kapatıyorum ama ekran paylaşımım devam edecek. Bir yere gitmeyin, devam ediyoruz.
+
+413
+01:24:25,587 --> 01:24:29,587
+Evet arkadaşlar, sesim geliyorsa lütfen bir teyit edin.
+
+414
+01:24:32,427 --> 01:24:33,047
+Biliyor hocam.
+
+415
+01:24:33,528 --> 01:24:35,108
+Tamam, okey. Başlayalım o zaman.
+
+416
+01:24:37,747 --> 01:24:41,507
+Şimdi wrapper sınıfların amacını söyledik.
+
+417
+01:24:41,927 --> 01:24:51,268
+Primitive data type'larla yapamadığımız bir takım fonksiyoneliteleri bu wrapper sınıfları ile birlikte
+
+418
+01:24:51,807 --> 01:24:56,847
+Java SDK, Java'nın core kütüphanesi bize sunuyor.
+
+419
+01:24:57,827 --> 01:25:02,988
+Bununla beraber bütün primitive data type'ların neleri var?
+
+420
+01:25:04,087 --> 01:25:05,288
+Rapper sınıfları var.
+
+421
+01:25:05,708 --> 01:25:11,108
+Biz bu rapper sınıfları kullanarak da primitive data type'ları yönetebiliyoruz.
+
+422
+01:25:15,252 --> 01:25:19,412
+Primitive Data Type'lar üzerindeki aritmetik operasyonları gördük.
+
+423
+01:25:19,852 --> 01:25:27,852
+Aynı şekilde Primitive Data Type'lar üzerinde binary operation'larda yapabileceğimizi konuştuk.
+
+424
+01:25:28,971 --> 01:25:35,132
+Bunlarla ilgili örneklerin hepsini sizlerle paylaştığım kodlarda bulabilirsiniz.
+
+425
+01:25:35,731 --> 01:25:43,551
+You will be responsible not only from the slides that I'm sharing with you, but also the codes that I am sharing with you.
+
+426
+01:25:43,551 --> 01:25:53,912
+So if you see a question in the exam that comes from the codes that I shared with you, so don't be surprised.
+
+427
+01:25:54,072 --> 01:26:00,992
+So not only the slides that I'm sharing in the course websites, but also the codes that I shared.
+
+428
+01:26:01,492 --> 01:26:02,731
+You will be responsible.
+
+429
+01:26:03,152 --> 01:26:03,372
+Okay?
+
+430
+01:26:10,387 --> 01:26:12,203
+Now, um...
+
+431
+01:26:15,572 --> 01:26:19,231
+So let's take a look at this code here.
+
+432
+01:26:19,692 --> 01:26:22,832
+Let's make, yeah, let's take a look at this code here.
+
+433
+01:26:23,631 --> 01:26:33,811
+Now you see that here I am defining a variable where the type is integer wrapper, okay?
+
+434
+01:26:34,287 --> 01:26:39,307
+But I am assigning an integer value to this variable.
+
+435
+01:26:39,307 --> 01:26:45,188
+Okay. Instead of creating an object of this wrapper class.
+
+436
+01:26:45,507 --> 01:26:50,127
+Okay. I am assigning directly an integer variable.
+
+437
+01:26:50,608 --> 01:26:55,087
+Okay. Now, can I do that? Yes, I can.
+
+438
+01:26:55,367 --> 01:27:00,367
+But what happens is here Java virtual machine understand that.
+
+439
+01:27:00,948 --> 01:27:07,748
+That I am trying to assign an integer value to an object.
+
+440
+01:27:08,788 --> 01:27:13,908
+And what it does, it creates an integer object.
+
+441
+01:27:14,708 --> 01:27:25,328
+And it puts this value into its constructor and assign the reference to this variable.
+
+442
+01:27:25,328 --> 01:27:26,248
+Okay.
+
+443
+01:27:27,604 --> 01:27:30,804
+But this is called auto-boxing.
+
+444
+01:27:31,463 --> 01:27:31,604
+Okay.
+
+445
+01:27:31,963 --> 01:27:49,284
+So what it does is, so whenever I try to do an assignment like this, okay, Java creates an object on my behalf, just like this, puts this value into the constructor of this object.
+
+446
+01:27:49,779 --> 01:27:55,760
+Asides, creates this object and assigns the reference to this object to this variable.
+
+447
+01:27:56,219 --> 01:27:56,319
+Okay.
+
+448
+01:27:56,819 --> 01:28:02,779
+So this means, so here in this line, I'm creating two different integer objects.
+
+449
+01:28:03,299 --> 01:28:03,439
+Okay.
+
+450
+01:28:03,979 --> 01:28:09,359
+Now, so Sarma 1 is a reference to an object where the value is 1.
+
+451
+01:28:09,479 --> 01:28:12,959
+Sarma 2 is a reference to another object where the value is 7.
+
+452
+01:28:13,199 --> 01:28:13,420
+Okay.
+
+453
+01:28:14,420 --> 01:28:23,520
+And so remember, the reason why we are using these wrappers classes, because it provides such useful methods to us.
+
+454
+01:28:23,520 --> 01:28:27,319
+For example, I can compare two integer values, for example.
+
+455
+01:28:28,212 --> 01:28:32,311
+I can say compare Sarma 1.
+
+456
+01:28:32,652 --> 01:28:34,012
+So let's go back.
+
+457
+01:28:34,652 --> 01:28:34,912
+Okay.
+
+458
+01:28:35,252 --> 01:28:39,192
+I can say Sarma 1 compared to Sarma 2.
+
+459
+01:28:39,311 --> 01:28:42,612
+I can compare one integer with another one.
+
+460
+01:28:43,112 --> 01:28:52,252
+Now, in this particular example, if the value that I'm comparing is bigger than the first value, then it will return minus one.
+
+461
+01:28:52,252 --> 01:28:55,952
+If it is less than the first value, it will return.
+
+462
+01:28:56,212 --> 01:28:57,012
+Arkadaşlar, plus one.
+
+463
+01:28:57,192 --> 01:29:05,452
+Arkadaşlar, so this way, basically, by using the methods of these wrapper classes, I can do different kinds of things.
+
+464
+01:29:05,452 --> 01:29:15,792
+Arkadaşlar, one of them is using, one of them is comparing two integers.
+
+465
+01:29:18,432 --> 01:29:21,192
+Arkadaşlar, okay, so let's move forward.
+
+466
+01:29:21,855 --> 01:29:28,635
+Here you see another important class that we should know is the string class.
+
+467
+01:29:29,015 --> 01:29:32,995
+String class is one of those classes that we will use frequently.
+
+468
+01:29:33,835 --> 01:29:40,536
+The string class is not one of those primitive wrappers, but it's also an important class that we use as the type.
+
+469
+01:29:41,844 --> 01:29:44,443
+As you see, it has different methods.
+
+470
+01:29:44,664 --> 01:29:50,084
+It has length methods, compare to methods, compare to ignore case methods.
+
+471
+01:29:50,084 --> 01:29:53,004
+So you can get the length of the string.
+
+472
+01:29:53,384 --> 01:29:55,863
+You can compare one string to another.
+
+473
+01:29:56,604 --> 01:30:01,804
+You can compare two strings by ignoring whether they are capital letters or small letters.
+
+474
+01:30:02,744 --> 01:30:02,904
+OK.
+
+475
+01:30:03,764 --> 01:30:05,404
+You can do all these things.
+
+476
+01:30:05,963 --> 01:30:07,783
+So let's take a look at this code here.
+
+477
+01:30:08,023 --> 01:30:10,564
+So here you see I have a class.
+
+478
+01:30:10,996 --> 01:30:16,895
+Here for string ops operations 01.
+
+479
+01:30:17,556 --> 01:30:21,895
+And this class is under package NYP01C.
+
+480
+01:30:22,556 --> 01:30:28,675
+And within this class, you see I have only one method, which is the main method.
+
+481
+01:30:28,675 --> 01:30:35,195
+So remember that the signature of the main method is the same for all the main methods.
+
+482
+01:30:35,415 --> 01:30:36,355
+It doesn't change.
+
+483
+01:30:36,895 --> 01:30:37,456
+So therefore,
+
+484
+01:30:37,952 --> 01:30:56,792
+You need to learn this by heart. So, if you do a mistake when you write the signature of the main method in the exam, you will lose points. Okay? If you forget writing static or void in your codes, then you will lose points. Okay?
+
+485
+01:30:57,268 --> 01:31:12,268
+The whole purpose of this course is to teach you object-oriented programming, but help you to write code without the help of any tutorials or any other additional...
+
+486
+01:31:14,100 --> 01:31:21,739
+Sources. You should be able to write Java code, basic Java code, without any further help.
+
+487
+01:31:22,300 --> 01:31:27,980
+So therefore, so you need to make sure that you learn these syntax properly.
+
+488
+01:31:27,980 --> 01:31:32,920
+Okay. Now let's go into details of the static main method.
+
+489
+01:31:33,400 --> 01:31:38,380
+So you see that I have two variables where the type is string.
+
+490
+01:31:38,783 --> 01:32:03,663
+Okay, I am defining two variables where the type is string. Here, I am assigning this string value to the first string. And in the next line, I am assigning another string value to this variable. So, say, Thera A is the first variable, say, Thera B is the second variable. Okay?
+
+491
+01:32:06,163 --> 01:32:23,703
+Just like the integer, so when the Java Virtual Machine or when the Java Compiler sees this, it understands that, so I'm trying to create an object of the string class.
+
+492
+01:32:23,703 --> 01:32:34,163
+So it creates a string object and it puts this into a constructor as the argument and then it creates a string.
+
+493
+01:32:34,163 --> 01:32:37,843
+String object and assigns the reference to this variable.
+
+494
+01:32:38,323 --> 01:32:43,623
+So here you should see that, you should understand that there is an autoboxing that happens here.
+
+495
+01:32:44,123 --> 01:32:48,943
+There is one String object right here and there is another String object right here.
+
+496
+01:32:49,283 --> 01:32:49,363
+Okay.
+
+497
+01:32:50,283 --> 01:33:01,703
+Now, so here I am calling the compareTo method of the first String object and I am comparing one String object with the other one.
+
+498
+01:33:02,100 --> 01:33:24,260
+Now, if the second one is bigger than the first one in lexical graphical order, so A is bigger than, T is bigger than A in lexical graphical order, so therefore the outcome will be minus, okay?
+
+499
+01:33:30,100 --> 01:33:35,400
+is lower than the first string in the lexical graphical order.
+
+500
+01:33:35,820 --> 01:33:39,980
+So in that case, the output would be plus.
+
+501
+01:33:39,980 --> 01:33:40,659
+Okay.
+
+502
+01:33:47,315 --> 01:34:01,076
+As you see, the string class has nice methods. It has contains methods. So you can check whether one string is within another string. It has two uppercase methods. It has two lowercase methods, etc.
+
+503
+01:34:01,155 --> 01:34:08,515
+So there are really nice methods for the string class. We can do many things with the string class methods.
+
+504
+01:34:09,108 --> 01:34:12,788
+Now, let's take a look at this method here, this class here.
+
+505
+01:34:12,788 --> 01:34:16,228
+So, this class is called string cooperation 02.
+
+506
+01:34:16,587 --> 01:34:20,068
+It's under the package nyp01c.
+
+507
+01:34:20,907 --> 01:34:23,167
+Here, you see I have the main method.
+
+508
+01:34:23,268 --> 01:34:30,208
+In the main method, you see that I'm defining two different variables,
+
+509
+01:34:30,887 --> 01:34:35,547
+and I'm assigning these string values to these variables.
+
+510
+01:34:36,180 --> 01:34:42,460
+And so basically here I'm creating two different string objects.
+
+511
+01:34:43,079 --> 01:34:43,220
+Okay.
+
+512
+01:34:43,659 --> 01:34:47,440
+The first object reference is ctr-e.
+
+513
+01:34:47,720 --> 01:34:49,739
+The second object reference is ctr-e.
+
+514
+01:34:50,120 --> 01:34:52,560
+And then in the following line.
+
+515
+01:34:52,819 --> 01:34:55,980
+So what I'm doing is that I'm calling the contains method.
+
+516
+01:34:57,171 --> 01:35:10,091
+Of the first CTRA object, and I'm checking whether it contains the yieldless value in it.
+
+517
+01:35:10,992 --> 01:35:21,152
+So in that case, so it will return, so since it doesn't include it, it will return false.
+
+518
+01:35:23,984 --> 01:35:34,484
+I am creating another object, string object, and I'm assigning the reference of this object to CTRB.
+
+519
+01:35:34,484 --> 01:35:47,384
+So this time CTRA is pointing to a string object which contains Istanbul and CTRB is pointing to another object which contains Tan.
+
+520
+01:35:47,844 --> 01:35:51,623
+Okay, so remember there was another object which contains Yildiz.
+
+521
+01:35:51,984 --> 01:35:58,203
+But now none of these string variables are pointing to Yildiz.
+
+522
+01:35:58,524 --> 01:36:01,744
+One is pointing to object which contains Istanbul.
+
+523
+01:36:02,203 --> 01:36:06,664
+The other one is pointing to object which contains Tan.
+
+524
+01:36:06,884 --> 01:36:09,684
+And then I'm doing the same thing this time.
+
+525
+01:36:09,824 --> 01:36:13,924
+I'm checking whether the CTRA A contains the CTRA B.
+
+526
+01:36:14,283 --> 01:36:18,924
+In that case, it will return yes because Istanbul includes Tan in it.
+
+527
+01:36:20,051 --> 01:36:28,591
+And then, so what I do is, I call the C-Terebi to uppercase, okay?
+
+528
+01:36:29,511 --> 01:36:36,091
+And now, so this will return the uppercase.
+
+529
+01:36:36,595 --> 01:36:48,355
+A value for Tom. It will return T capital letter T capital letter A and capital letter N. But this one, it will not change.
+
+530
+01:36:48,720 --> 01:36:54,280
+The actual data value in that object.
+
+531
+01:36:54,280 --> 01:36:59,159
+It will just return the capital letter version of this string.
+
+532
+01:36:59,680 --> 01:36:59,780
+Okay.
+
+533
+01:37:00,200 --> 01:37:05,036
+Now, when I print it out, it will still...
+
+534
+01:37:05,043 --> 01:37:14,724
+Write the small letters because I did not actually change the small letters to the capital ones.
+
+535
+01:37:15,064 --> 01:37:25,123
+OK, I just call this method and this method returned to me the capital version of this TAN string.
+
+536
+01:37:25,123 --> 01:37:29,164
+OK, now here you see I am comparing.
+
+537
+01:37:30,292 --> 01:37:40,252
+CTRA contains CTRA B. Since I did not change the actual content of CTRA B, it will still say true.
+
+538
+01:37:41,112 --> 01:37:48,792
+But here, as you see, this time, I am again calling the CTRA B to uppercase.
+
+539
+01:37:49,332 --> 01:37:58,272
+This is exactly the same thing as this one. It will return the capital letter version of TAN.
+
+540
+01:37:58,772 --> 01:38:06,272
+OK. And then I am going to assign that to CTRB. This time CTRB will point.
+
+541
+01:38:06,804 --> 01:38:17,503
+To a string object where the content of the string has capital letter TAN.
+
+542
+01:38:18,264 --> 01:38:18,344
+Okay.
+
+543
+01:38:18,804 --> 01:38:27,943
+And when I write the result of the CTRAB, this time I will see that it will have capital letter TAN.
+
+544
+01:38:28,503 --> 01:38:28,764
+Okay.
+
+545
+01:38:28,764 --> 01:38:34,764
+And if I check whether CTRA contains the capital letter TAN, then the...
+
+546
+01:38:34,804 --> 01:38:41,443
+The return value will be false because Istanbul does not have TAN in capital letters.
+
+547
+01:38:41,603 --> 01:38:45,244
+It only has small letters.
+
+548
+01:38:45,244 --> 01:38:46,244
+So,
+
+549
+01:38:52,500 --> 01:38:53,260
+Arkadaşlar, class, object,
+
+550
+01:38:59,347 --> 01:39:00,108
+Patsy.
+
+551
+01:39:13,555 --> 01:39:16,735
+Okay, now, so we can do this.
+
+552
+01:39:23,412 --> 01:39:28,612
+Okay, here is the same example that I have shown you.
+
+553
+01:39:29,231 --> 01:39:39,211
+So at the beginning, so when I'm going to run this code, string operation 02, again, so that you can see how I run a Java application.
+
+554
+01:39:39,771 --> 01:39:42,152
+Okay, now you see the results in console.
+
+555
+01:39:42,591 --> 01:39:58,931
+So at the first, at the line six, when I write the result for whether, for the system of current line, so it will say it's false because Istanbul does not have Yelda's in it.
+
+556
+01:39:59,351 --> 01:40:08,691
+Then when I check in the line eight, whether Istanbul has a small letter TAN, it will give me the true.
+
+557
+01:40:09,235 --> 01:40:33,876
+And you see, I called the two uppercase methods of the CTRB, but so I didn't do anything with the return value. It's just I called the method. In line number 10, I printed out the result. It's still, since I did not change the content of the CTRB, it will still say true.
+
+558
+01:40:37,235 --> 01:40:47,195
+Then, so in line 12, I am updating the value of CtrA B with the CtrA B to uppercase.
+
+559
+01:40:47,195 --> 01:40:55,956
+So this time CtrA B is going to point to a string object where the content of it is in capital letter TAN.
+
+560
+01:40:56,716 --> 01:41:04,915
+And when I do the same thing, whether CtrA contains CtrA B, it will return to me value false because Istanbul does not have
+
+561
+01:41:05,235 --> 01:41:07,155
+Tan in capital letters.
+
+562
+01:41:08,415 --> 01:41:08,775
+Okay?
+
+563
+01:41:17,908 --> 01:41:19,768
+Okay, any questions so far?
+
+564
+01:41:24,787 --> 01:41:33,407
+Okay, no question. So, I'm assuming that you are following everything and you are understanding everything.
+
+565
+01:41:33,967 --> 01:41:41,707
+If there is no question, I will assume that so everything is perfect and you are following the lecture and you are understanding everything.
+
+566
+01:41:42,224 --> 01:41:51,023
+So, but if you do not have, if you do not understand and if you want to ask a question, please ask.
+
+567
+01:41:51,023 --> 01:41:55,963
+So, this is the time to ask questions otherwise.
+
+568
+01:41:58,203 --> 01:42:01,703
+So, you will lose your chance to learn in the class.
+
+569
+01:42:02,023 --> 01:42:02,164
+Okay?
+
+570
+01:42:04,684 --> 01:42:05,283
+Now.
+
+571
+01:42:06,260 --> 01:42:08,460
+We talked about the wrapper classes.
+
+572
+01:42:09,060 --> 01:42:10,920
+We talked about the string class.
+
+573
+01:42:10,920 --> 01:42:16,739
+And another important class that we should learn is the math class.
+
+574
+01:42:17,159 --> 01:42:17,220
+Okay.
+
+575
+01:42:18,420 --> 01:42:24,780
+Math class is another class which has very usable methods like the random method.
+
+576
+01:42:25,239 --> 01:42:25,380
+Okay.
+
+577
+01:42:25,920 --> 01:42:30,280
+We need to learn the methods of the math class.
+
+578
+01:42:30,899 --> 01:42:32,100
+So here, as you see,
+
+579
+01:42:32,528 --> 01:42:50,768
+So I have one class here and within this class I have a main method and within this main method so I have in the first line what I do is that I am calling the random method of the math class.
+
+580
+01:42:51,427 --> 01:43:00,108
+Now you can tell me that if so far what we have learned that
+
+581
+01:43:00,384 --> 01:43:09,584
+If we want to call a method of an object, we have to first create that object.
+
+582
+01:43:10,203 --> 01:43:15,524
+So which means that we have to first create an object of that class, then call its method.
+
+583
+01:43:16,304 --> 01:43:16,543
+Okay.
+
+584
+01:43:16,923 --> 01:43:19,003
+That's what we have learned so far.
+
+585
+01:43:19,764 --> 01:43:23,904
+But when we talked about the static method,
+
+586
+01:43:24,435 --> 01:43:35,475
+I told you that if the method is defined as the static method, for those methods, we don't need to create the object of that class.
+
+587
+01:43:36,135 --> 01:43:46,455
+Okay, so let's go back and let me remind you that concept when we talked about the static methods.
+
+588
+01:43:48,404 --> 01:43:57,184
+So remember, when we talked about the static keyword, we said that we can use the static keyword for member field and also the member methods.
+
+589
+01:43:57,724 --> 01:44:01,464
+When we use the static keyword for member methods,
+
+590
+01:44:02,195 --> 01:44:11,076
+If we wanted to call this member method, we can directly call it by using its class name, class name, and then the name of the method.
+
+591
+01:44:11,076 --> 01:44:19,015
+Okay. So we don't need to create an object of that class. Okay. So that's very important concept.
+
+592
+01:44:27,091 --> 01:44:38,471
+So, therefore, you see that when you call the random method, since the random method is a static method of that class, so I can directly call the random method.
+
+593
+01:44:38,911 --> 01:44:46,471
+So, what random method is going to do, it's going to return a random value between 0.0 and 1.0.
+
+594
+01:44:46,471 --> 01:44:50,391
+Okay, it will return a value where the value is double.
+
+595
+01:44:50,991 --> 01:44:52,471
+Okay, its type is double.
+
+596
+01:44:53,231 --> 01:44:55,091
+And then, so once I get this.
+
+597
+01:44:55,091 --> 01:44:59,451
+I can then print it out into the console.
+
+598
+01:44:59,891 --> 01:45:00,031
+Okay.
+
+599
+01:45:00,531 --> 01:45:08,031
+So if I wanted to generate a random value, math class is a class that I can use.
+
+600
+01:45:08,031 --> 01:45:08,431
+Okay.
+
+601
+01:45:09,492 --> 01:45:31,291
+Now, in the exam, if I tell you that I want you to create a random number and use this random number for such and such purpose, in that case, I'm not going to tell you that you should use the math class and I'm not going to tell you that you should use random method.
+
+602
+01:45:31,291 --> 01:45:37,492
+Okay, so therefore, you should know the methods of the math class.
+
+603
+01:45:37,492 --> 01:45:44,051
+And when a question is asked in that direction, you should be able to use it.
+
+604
+01:45:45,911 --> 01:45:46,072
+Okay.
+
+605
+01:45:47,271 --> 01:45:53,072
+Math class has also other important methods like absolute value.
+
+606
+01:45:53,511 --> 01:45:53,692
+Okay.
+
+607
+01:45:53,871 --> 01:45:58,331
+So it can take a data type, then it will return.
+
+608
+01:45:59,220 --> 01:46:05,800
+The absolute value of the parameter of whatever the input type is.
+
+609
+01:46:06,159 --> 01:46:09,500
+Or it can, so the maximum value.
+
+610
+01:46:09,500 --> 01:46:21,159
+So you can give two primitive data types and this, it will return to you the value which is the maximum.
+
+611
+01:46:21,339 --> 01:46:26,139
+So you basically, so you can give two different variables.
+
+612
+01:46:26,579 --> 01:46:30,319
+It will choose the one which is the higher than the other.
+
+613
+01:46:30,899 --> 01:46:34,539
+And so, for example, let's see this one.
+
+614
+01:46:34,880 --> 01:46:40,140
+So this here, it takes the two primitive data type where the primitive data type is double.
+
+615
+01:46:40,539 --> 01:46:48,760
+It will choose the one that is the bigger and it will return it back with the double return value.
+
+616
+01:46:49,359 --> 01:46:51,279
+Similarly, the mean value.
+
+617
+01:46:51,579 --> 01:46:54,020
+So here is the signature of that method.
+
+618
+01:46:55,859 --> 01:46:59,199
+It will take the primitive data, two data types.
+
+619
+01:46:59,199 --> 01:47:06,680
+It will compare them, whichever the minimum, so it will return the value as double.
+
+620
+01:47:07,239 --> 01:47:07,859
+Okay.
+
+621
+01:47:11,283 --> 01:47:17,943
+And seal methods, okay, it will return the upwards rounded value.
+
+622
+01:47:18,383 --> 01:47:24,323
+For example, if you give 3.1, so the seal method will return 4.
+
+623
+01:47:24,323 --> 01:47:27,463
+It will give another method floor.
+
+624
+01:47:27,583 --> 01:47:33,623
+If you give, for example, 3.9, so this method will return 3.0.
+
+625
+01:47:34,228 --> 01:47:43,347
+If you give a round value, so it will round it up to the closest value, right?
+
+626
+01:47:43,967 --> 01:47:45,368
+So square root value.
+
+627
+01:47:45,568 --> 01:47:52,328
+So if you give a value, it will return to you the square root of the argument that you are passing.
+
+628
+01:47:52,328 --> 01:47:53,688
+So all these are.
+
+629
+01:47:54,100 --> 01:48:03,460
+important and useful methods of the math class. You should know them by heart and you should be able to use it in your code.
+
+630
+01:48:05,720 --> 01:48:06,319
+Hocam.
+
+631
+01:48:07,039 --> 01:48:07,640
+Evet.
+
+632
+01:48:09,600 --> 01:48:20,539
+Daha demin ki random metodunda bu C'de biz şey yapıyorduk, gerçek bir erinci olabilmesi için, işte time kütüphanesi kullanıp bir sayıyla çarpıyorduk. Burada öyle bir şeye ihtiyaç var mı?
+
+633
+01:48:21,460 --> 01:48:46,160
+Burada yok. Bir tane daha random sınıfı kullanacağız, öğreneceğiz. Orada bir input argümanı da alıyor. Bu input argümanlardan bir tanesi de time argümanı. Orada biraz daha yapmış olduğu random generation daha da farklılaşıyor. Ama bu matclassta herhangi bir argüman almıyor.
+
+634
+01:48:48,595 --> 01:49:03,075
+Yani random sınıfları bilgisayarın içerisinde çalışan, quartz kristaline dayalı çalışan saatin içerisinden de değer alabiliyor.
+
+635
+01:49:03,075 --> 01:49:13,835
+Ya da farklı bir random generator kullanarak da random değeri yaratabiliyor.
+
+636
+01:49:16,595 --> 01:49:26,715
+Gördüğümüz random sınıflarından bir tanesi bu random, MET sınıfının altındaki MET kılası. Onun haricinde bir tane daha random generator sınıfı göreceğiz.
+
+637
+01:49:27,955 --> 01:49:31,935
+Onun inputunda şey var, time var.
+
+638
+01:49:32,895 --> 01:49:34,395
+Sağ olun hocam, teşekkür ederim.
+
+639
+01:49:35,075 --> 01:49:40,375
+Şimdi arkadaşlar, bu konuştuğumuz bütün kodlar burada var.
+
+640
+01:49:41,555 --> 01:50:08,015
+Mesela buradaki mesela şey mesela round metodunu mesela burada illustrate etmişiz. Ondan sonra şurada az önce söylemiştim ya hani metin dışında bir de random sınıfı var. Random sınıfını kullanarak da biz bir şey yaratabiliyoruz. İşte bu da random sınıfını kullanarak random generator yapmak.
+
+641
+01:50:08,372 --> 01:50:13,692
+Bu random sınıfı da javadatutil package'inin altında yer alıyor.
+
+642
+01:50:13,812 --> 01:50:19,312
+javadatutil package'inin altındaki bütün sınıfları import etmek istersek bu şekilde yapıyoruz.
+
+643
+01:50:19,452 --> 01:50:21,292
+Noktadan sonra yıldız koyuyoruz.
+
+644
+01:50:22,972 --> 01:50:24,292
+Burada ben...
+
+645
+01:50:25,363 --> 01:50:53,023
+Örneğin bir tane random sınıfını yaratmışım. Random sınıfından bir tane integer istemişim. Burada random sınıfını yaratırken constructor'ı, zero constructor kullanabileceğim gibi bunun içerisine farklı seed değerleri de koyabilirim. Arkadaşınızın dediği gibi time değerini de çünkü birden fazla constructor'ları var bunun. Burada bir tane integer değeri istemişim.
+
+646
+01:50:53,363 --> 01:50:57,503
+Bundan sonra onun da bir şeyler yapmışım. Bir tane daha integer değeri istemişim.
+
+647
+01:50:57,943 --> 01:51:05,303
+Integer değeri isterken isteyeceğim integer değerinin kaçıncı sırada olduğunu da söyleyebilirim.
+
+648
+01:51:05,303 --> 01:51:13,043
+Bana yaratacağı random değerler içerisinden özellikle şununcu sırada olanı verdi diyebilirim.
+
+649
+01:51:15,220 --> 01:51:33,220
+Burada da yine random sınıfıyla kullanaraktan başka işlemler yapmışım. Bunlardan arkadaşlar sorumlusunuz. Bakın buradaki mat operationlarından, random operationlarından, string operationlarından, şu sınıfların içerisinde verdiğim bütün örneklerden sorumlusunuz.
+
+650
+01:51:33,399 --> 01:51:40,680
+Bu şu demek, bu kodları çalıştıracaksınız, içindekileri okuyacaksınız, değiştirmeye çalışacaksınız, öğreneceksiniz.
+
+651
+01:51:43,283 --> 01:51:52,064
+Bunlarla sınavda karşılaştığınızda, hocam ben bunu ilk defa görüyorum deme şansınız yok.
+
+652
+01:51:59,956 --> 01:52:16,096
+Okay, so this is the random class, Java.util. The previous class was the met class, and this is the Java.util random class. As you see, Java.util random class also has some useful methods in it.
+
+653
+01:52:17,056 --> 01:52:26,436
+And so you can see the return values for these methods and also the signature of these methods.
+
+654
+01:52:29,108 --> 01:52:35,228
+And this here is an example of how the random class is being used.
+
+655
+01:52:35,787 --> 01:52:41,408
+I have just shown you the example in Eclipse, so I'm going to skip that.
+
+656
+01:52:44,228 --> 01:52:51,467
+Okay, now, so we are going to talk about the command line input and output.
+
+657
+01:52:51,927 --> 01:52:54,948
+Okay, now I have shown you the example.
+
+658
+01:52:55,439 --> 01:53:07,760
+How we can input data into your program or how can we output data from your program to the console?
+
+659
+01:53:07,760 --> 01:53:14,880
+But now, so let's take a look at some examples in specific.
+
+660
+01:53:15,579 --> 01:53:21,659
+So we have print line and print that we use in order to print something into the console.
+
+661
+01:53:22,180 --> 01:53:23,439
+These print line and print...
+
+662
+01:53:23,439 --> 01:53:27,380
+methods are the methods of the system.out class.
+
+663
+01:53:27,380 --> 01:53:27,979
+Okay?
+
+664
+01:53:32,148 --> 01:53:38,467
+And if we wanted to get something from the user, then we use the scanner class.
+
+665
+01:53:38,847 --> 01:53:44,747
+Okay. Scanner class is the class that we use in order to get some input from the user.
+
+666
+01:53:45,447 --> 01:53:47,567
+Now, here is an example.
+
+667
+01:53:48,387 --> 01:53:53,148
+So, obviously, scanner class, just like the math class, just like the...
+
+668
+01:53:53,587 --> 01:54:21,467
+Random class, they are under java.util package. So when I do java.util star, I'm going to include all these classes. In this particular example, I wanted to add specifically the scanner class. So therefore, I wrote it like this. Okay. So I imported the scanner class. Now let's take a look at this class definition.
+
+669
+01:54:21,587 --> 01:54:25,367
+Here, I have only one main method.
+
+670
+01:54:25,887 --> 01:54:33,847
+In the main method in the first line, here, I am creating an object of the scanner class.
+
+671
+01:54:34,068 --> 01:54:43,947
+And as its input, it takes system.in, which is basically creating a channel between the console and the physical memory.
+
+672
+01:54:44,948 --> 01:54:47,948
+The Java Virtual Machine.
+
+673
+01:54:48,168 --> 01:54:53,948
+So basically, whenever I want to create a scanner object, this is how I'm creating it.
+
+674
+01:54:54,048 --> 01:54:57,848
+So the system.in is the default argument.
+
+675
+01:54:58,488 --> 01:54:58,628
+Okay.
+
+676
+01:54:59,208 --> 01:55:09,488
+So when I create an object of the scanner class, I assign the reference to this object, to this variable where the type is scanner.
+
+677
+01:55:10,579 --> 01:55:13,239
+And I write something into the console.
+
+678
+01:55:14,099 --> 01:55:16,840
+And then I'm asking the user to enter.
+
+679
+01:55:17,971 --> 01:55:45,891
+Something in return. And if I wanted to get something from the user by using the scanner object, I need to call one of its methods, in this case, next line. Okay. And then it will get a name and then I will write something else to the console. And again, I will, this time I will call next int method. The next int method will get the integer value.
+
+680
+01:55:45,971 --> 01:55:49,572
+From the user, then I will write it.
+
+681
+01:55:49,811 --> 01:55:56,212
+So I will write all these values to this screen, okay, to the console.
+
+682
+01:55:56,731 --> 01:56:04,532
+And finally, when I'm done with the scanner object, I need to close the scanner object with the close method, okay,
+
+683
+01:56:04,612 --> 01:56:10,011
+because I no longer need that channel between the console and the physical memory.
+
+684
+01:56:16,212 --> 01:56:24,972
+Okay. Now, there is one thing to keep in mind. So if you want to use the scanner object...
+
+685
+01:56:25,235 --> 01:56:48,055
+First of all, so when you call the next int first, when you want to get the integer value first, okay, then if you want to get a string value right after that, okay, then you need to make sure that you need to write a next line.
+
+686
+01:56:48,500 --> 01:56:59,060
+Right after the next int, because the Java Virtual Machine, so when you run the next line, right after next int, it goes forward.
+
+687
+01:56:59,600 --> 01:57:12,780
+Okey? Hani bu Java ile beraber gelenebiliriz. Yani daha doğrusu scanner objesiyle gelen bir şey, durum. Scanner objesini implement ederken böyle bir şey yapmışlar.
+
+688
+01:57:16,500 --> 01:57:44,500
+yapmak istiyorsan alabilirsin ama integer value'nun hemen arkasından yazılacak olan string değeri de yakalamak istiyorsan öncelikle bir tane boşa bir next line yazıyorsun. Ondan sonra bir tane daha next line yazıyorsun. İkinci next line'da bizim yazmış olduğumuz string değerini yakalıyor. Demek ki buradaki yazmış olduğum next line'i yazmamış.
+
+689
+01:57:44,500 --> 01:57:45,079
+Olsam
+
+690
+01:57:46,484 --> 01:57:57,003
+What is your name'den sonra benim next line için yazacağım şeyi yakalamadan benim programımı tamamlıyor.
+
+691
+01:57:57,003 --> 01:58:13,003
+Bunu aşabilmek için sadece bu scanner objekle çalışırken next line'dan önce next integer ya da next float ya da next double gibi sayısal değerler topluyorsam bunlardan hemen sonra next line metodunu bir defa boşa çağırıyorum.
+
+692
+01:58:14,484 --> 01:58:19,024
+Bu Scanner Object'in Java tarafından yayınlanmış tutorialından.
+
+693
+01:58:24,307 --> 01:58:24,687
+Okay.
+
+694
+01:58:26,727 --> 01:58:30,507
+Now that we learned the...
+
+695
+01:58:31,283 --> 01:58:38,623
+The scanner object, and so here is a full example of what we have learned so far.
+
+696
+01:58:38,623 --> 01:58:46,243
+Here is my package, and I am importing the scanner object, which is under java.util.
+
+697
+01:58:46,843 --> 01:58:54,843
+So therefore, java.util.star, this imports all available classes that's available under java.util.
+
+698
+01:58:55,263 --> 01:58:57,883
+Here I am defining the car class.
+
+699
+01:58:58,271 --> 01:59:00,852
+You see I have one member field here.
+
+700
+01:59:01,532 --> 01:59:05,092
+And then I have a getter and setter methods.
+
+701
+01:59:05,716 --> 01:59:09,256
+Usually, the constructor is written first.
+
+702
+01:59:09,355 --> 01:59:13,735
+But in this particular example, so I had a mistake.
+
+703
+01:59:13,876 --> 01:59:14,695
+It doesn't change.
+
+704
+01:59:15,055 --> 01:59:18,195
+The compiler doesn't give any error.
+
+705
+01:59:18,355 --> 01:59:22,576
+But by convention, first, we write the constructor.
+
+706
+01:59:22,576 --> 01:59:29,155
+So therefore, so first, you should also do that first, write the constructor.
+
+707
+01:59:29,576 --> 01:59:32,115
+In this case, I have only one parameter constructor.
+
+708
+01:59:32,595 --> 01:59:33,716
+Then I have getter and c.
+
+709
+01:59:33,716 --> 01:59:36,815
+Setter methods for the global member field here.
+
+710
+01:59:37,615 --> 01:59:46,996
+And right after that, I have one method, introduce self, regular method, it returns void, so it doesn't have any return value.
+
+711
+01:59:46,996 --> 01:59:48,935
+And then I have the main method.
+
+712
+01:59:49,395 --> 01:59:56,515
+I have already shown you an example of this previously, so I'm going to skip this as well.
+
+713
+01:59:59,015 --> 01:59:59,695
+Okay.
+
+714
+02:00:00,000 --> 02:00:20,939
+Now, for today, I'm going to stop right now. So we are at slide number 55. So here, so we are going to, so starting from the next lecture, so we are going to start with the parameter calls and also the control flow.
+
+715
+02:00:21,363 --> 02:00:36,043
+So we are a little bit faster than the other sessions. So we'll give a break today and we'll continue in the next lecture starting from slide 55.
+
+716
+02:00:36,043 --> 02:00:45,563
+Okay. Arkadaşlar, gelecek haftaya kadar mutlaka Eclipse'i download edip kurmayan varsa kursun. İlla Eclipse kurmak zorunda değilsiniz.
+
+717
+02:00:46,707 --> 02:01:07,188
+IntelliJ de olabilir, NetBeans de olabilir. Bir editör kurun ve bu sayfaya koymuş olduğum kodları import edin. Aynı benim size gösterdiğim gibi kendi development ortamınızda bu kodları edit edebilme şansınız olsun. Lütfen bunu gelecek haftaya kadar yapın.
+
+718
+02:01:14,707 --> 02:01:20,068
+Modife edebilmenizi, bunun üzerinde bir şeyler yazabiliyor olmanızı bekleyeceğim arkadaşlar.
+
+719
+02:01:24,819 --> 02:01:26,059
+Sorusu olan var mı?
+
+720
+02:01:28,639 --> 02:01:31,340
+Mikrofonunu açabilir yahut da chatten yazabilir.
+
+721
+02:01:37,811 --> 02:01:49,911
+Okey, sessizlik var. Demek ki soru yok. Tamamdır arkadaşlar. O zaman haftaya slide number 55'den devam ediyoruz. Katıldığınız için teşekkür ederim. Kolay gelsin. İyi dersler dilerim.

@@ -1,0 +1,3075 @@
+1
+00:07:05,267 --> 00:07:05,887
+[öğrenci] merhaba.
+
+2
+00:07:11,891 --> 00:07:12,992
+Sesim geliyor mu sana?
+
+3
+00:14:56,628 --> 00:15:00,028
+Evet arkadaşlar, merhabalar. Sesim geliyor mu? Bir teyit eder misiniz?
+
+4
+00:15:06,323 --> 00:15:07,943
+Geliyoruz. Tamam.
+
+5
+00:15:10,383 --> 00:15:17,963
+Okey. Dönem projesini açıkladık arkadaşlar. Bunu biliyorsunuzdur. Sizlere e-mail gönderdim.
+
+6
+00:15:20,103 --> 00:15:28,223
+Dönem projesi bireysel olarak yapacağınız bir proje. Dönem projesiyle ilgili dosyayı dersin sayfasından inceleyebilirsiniz.
+
+7
+00:15:29,172 --> 00:15:40,211
+Zamanınız hem var hem de sınırlı bir zaman. Hızlı geçecek. O yüzden hiç beklemeden bunun üzerinde çalışmaya başlayın.
+
+8
+00:15:43,112 --> 00:15:51,812
+Son tarihten önce göndermeniz gerekecek. Nasıl göndereceğinizle ilgili instructionların hepsi burada var.
+
+9
+00:15:52,500 --> 00:15:56,259
+Bu gönderimi gerçekleştirdikten sonra
+
+10
+00:15:56,259 --> 00:16:06,000
+asisten arkadaşlarımız sizlerle birer toplantı yapacak.
+
+11
+00:16:06,379 --> 00:16:09,179
+Ayrı ayrı onun tarihleri, skeci olu açıklanacak.
+
+12
+00:16:09,639 --> 00:16:14,340
+Ve yaptığınız ödevin demosunu orada gerçekleştireceksiniz.
+
+13
+00:16:16,419 --> 00:16:17,659
+Okey.
+
+14
+00:16:25,491 --> 00:16:27,951
+Dönem projesiyle ilgili sorunuz var mı arkadaşlar?
+
+15
+00:16:33,011 --> 00:16:41,951
+Okey. Olursa yine bana e-mail ile iletebilirsiniz ya da asistan arkadaşlarınıza iletebilirsiniz. Yardımcı olmaya çalışacağız.
+
+16
+00:16:43,371 --> 00:16:55,791
+Okey. Now the topics left till the end of the lecture this semester is exception handling, typecasting.
+
+17
+00:16:56,628 --> 00:17:03,468
+Working with files and IO operations, inner classes, multitreading and graphical user interfaces.
+
+18
+00:17:07,380 --> 00:17:13,940
+Now, today I'm going to cover the exception lending, typecasting, and working with files.
+
+19
+00:17:13,940 --> 00:17:23,500
+And in the next class, I will be covering inner classes, multi-threading, and graphical user interfaces, depending on the time.
+
+20
+00:17:24,100 --> 00:17:31,940
+I may also do a lecture on the last week, because on that week, I will be...
+
+21
+00:17:32,084 --> 00:17:34,824
+Konducting makeup exam.
+
+22
+00:17:36,244 --> 00:17:42,604
+But so those students who will be entering the makeup exam, they can take it.
+
+23
+00:17:42,724 --> 00:17:55,903
+At the same time, I can also do the last lecture, which will highly likely be on different kinds of examples that you might encounter on the final exam.
+
+24
+00:17:56,723 --> 00:18:13,603
+Now, initially, we told you that there will be a second midterm exam, but now that we are giving you a project, the project will be instead of the second midterm exam.
+
+25
+00:18:14,463 --> 00:18:19,384
+So this means that there won't be any second midterm. Instead, there will be a project.
+
+26
+00:18:19,923 --> 00:18:37,003
+Now, those of you who are taking this lecture for the first time, so what you have is you have the first midterm exam, you have the term project, and you have the lab assignments.
+
+27
+00:18:37,003 --> 00:18:45,003
+These three things will affect your cumulative...
+
+28
+00:18:45,428 --> 00:18:47,428
+Bu konuda çalışmalıdır.
+
+29
+00:18:48,848 --> 00:18:53,428
+Ve bu konuda çalışmalıdır.
+
+30
+00:18:53,428 --> 00:19:11,403
+Bu konuda çalışmalıdır.
+
+31
+00:19:11,756 --> 00:19:14,135
+Arkadaşlar, class, object, çalış,
+
+32
+00:19:11,412 --> 00:19:13,412
+To do the term project.
+
+33
+00:19:13,832 --> 00:19:14,072
+Okay.
+
+34
+00:19:14,692 --> 00:19:15,692
+Now you have time.
+
+35
+00:19:16,852 --> 00:19:18,951
+The term project is not that difficult.
+
+36
+00:19:19,491 --> 00:19:25,172
+So given that timeframe, you should immediately start working on your term project.
+
+37
+00:19:25,951 --> 00:19:27,811
+It's an individual project.
+
+38
+00:19:28,172 --> 00:19:33,852
+So you cannot work with your friends and you cannot copy their work as well.
+
+39
+00:19:34,132 --> 00:19:36,352
+So there will be a plagiarism check.
+
+40
+00:19:36,884 --> 00:19:49,344
+There will be your instructors will carefully cross-check all the homeworks, term projects for three sessions, three different sessions.
+
+41
+00:19:49,344 --> 00:20:00,304
+So if there is a, if you copy somebody else's work, then so you will have problem in.
+
+42
+00:20:00,884 --> 00:20:08,663
+In the whole course, not only the term project note, but you will have a problem passing this course.
+
+43
+00:20:08,784 --> 00:20:09,683
+So don't do that.
+
+44
+00:20:09,884 --> 00:20:14,983
+Okay, try your best to complete your term project as much as you can.
+
+45
+00:20:15,104 --> 00:20:20,644
+So it doesn't have to be the perfect project, but it will be your own project.
+
+46
+00:20:20,923 --> 00:20:25,443
+Okay, do not copy somebody else's work and do not give your work somebody else.
+
+47
+00:20:25,443 --> 00:20:25,784
+Okay.
+
+48
+00:20:28,307 --> 00:20:32,228
+Now, in the previous lecture, we completed the data structures.
+
+49
+00:20:32,668 --> 00:20:36,748
+So, remember the kinds of data structures that we talked about?
+
+50
+00:20:38,048 --> 00:20:39,867
+Arrays at the beginning of the lecture.
+
+51
+00:20:40,947 --> 00:20:42,387
+Okay, [öğrenci], senin sorun var.
+
+52
+00:20:42,827 --> 00:20:43,927
+Senden başlayalım.
+
+53
+00:20:44,567 --> 00:20:46,548
+Hocam, sesim geliyor mu?
+
+54
+00:20:46,988 --> 00:20:47,508
+Evet, geliyor.
+
+55
+00:20:48,127 --> 00:20:50,907
+Ben en son derste vize de bir soru vardı.
+
+56
+00:20:50,988 --> 00:20:52,288
+Onunla ilgili sormuştum.
+
+57
+00:20:53,728 --> 00:20:54,208
+Haklısın.
+
+58
+00:20:54,607 --> 00:21:06,427
+İstersen bunu ders bittikten sonra beraber bakalım mı? Bugünkü lecture'ı tamamlayalım. Ondan sonra seninle bu Zoom toplantısına devam edip o sorunun üzerine gidelim. Uygun mudur?
+
+59
+00:21:06,907 --> 00:21:07,667
+Olur hocam, olur.
+
+60
+00:21:08,167 --> 00:21:08,387
+Tamam.
+
+61
+00:21:09,447 --> 00:21:09,708
+Okey.
+
+62
+00:21:12,372 --> 00:21:23,852
+So we said that at the beginning of the lecture, we said that we can organize the data objects in an array, and we gave you examples of how to use arrays.
+
+63
+00:21:24,403 --> 00:21:29,463
+And then, so we talked about linkless data structure.
+
+64
+00:21:29,683 --> 00:21:31,943
+We talked about ArrayList data structure.
+
+65
+00:21:32,064 --> 00:21:34,423
+We gave examples of linkless and ArrayList.
+
+66
+00:21:35,324 --> 00:21:40,943
+And so we talked about vector, which is exactly the same as the ArrayList.
+
+67
+00:21:40,943 --> 00:21:44,824
+The only difference is that it's a thread safe.
+
+68
+00:21:45,223 --> 00:21:52,403
+So which means that if you have a multi-threaded program, you should use vector instead of ArrayList.
+
+69
+00:21:52,403 --> 00:22:09,364
+ArrayList. We talked about HashMap. We gave you an example of how HashMap is being used. And we also talked about HashTable. We didn't give an example of it, but it's exactly the same thing, same functions.
+
+70
+00:22:10,003 --> 00:22:20,644
+But the only difference is that it's a thread safe, which means that if you have a multi-threaded program, you need to use hash table instead of hash map.
+
+71
+00:22:20,644 --> 00:22:21,364
+Okay.
+
+72
+00:22:22,516 --> 00:22:31,876
+Now, so all the examples, you can find it in the previous lectures on online Yildiz Editorial that I taught.
+
+73
+00:22:32,036 --> 00:22:41,556
+You can find the video lectures and also you can find the codes for all the examples with data structures on the website.
+
+74
+00:22:41,556 --> 00:22:48,376
+You can download these codes and you can work on them on your editor.
+
+75
+00:22:49,556 --> 00:22:51,776
+Now let's start with the exception handling.
+
+76
+00:22:52,855 --> 00:23:01,936
+Okay, the reason that we are using exception handling is that we want our program to run without any error.
+
+77
+00:23:01,936 --> 00:23:12,776
+There may be error that may happen while our program is running, but we don't want our program to stop completely.
+
+78
+00:23:13,332 --> 00:23:25,152
+If we have such errors, so which means that there may be errors because of the users, there may be errors because of the file system or the file that we are working on.
+
+79
+00:23:25,152 --> 00:23:35,112
+It may be related with the memory. So if such errors may happen, we don't want our program to come to a full stop.
+
+80
+00:23:35,432 --> 00:23:41,292
+Okay. So we want to handle these errors. We want to show some.
+
+81
+00:23:41,332 --> 00:23:56,192
+Notifications to the user or we want to do some preventive actions in order our program to continue working.
+
+82
+00:23:56,192 --> 00:23:56,692
+Okay.
+
+83
+00:23:57,592 --> 00:23:57,912
+Now.
+
+84
+00:23:58,612 --> 00:24:02,572
+This is the reason that we are using exception handling.
+
+85
+00:24:02,731 --> 00:24:10,831
+We want the errors that are happening while our program not to stop our program completely.
+
+86
+00:24:10,831 --> 00:24:11,892
+Now,
+
+87
+00:24:13,491 --> 00:24:17,391
+Obviously, so we are using exception handling classes.
+
+88
+00:24:17,632 --> 00:24:22,071
+There are exception handling classes just like the data structure classes.
+
+89
+00:24:22,331 --> 00:24:27,891
+There are exception handling classes, which is included in core Java library.
+
+90
+00:24:28,692 --> 00:24:35,711
+As you see, so this is the inheritance tree of this exception handling classes.
+
+91
+00:24:36,132 --> 00:24:37,211
+There is a throwable.
+
+92
+00:24:37,663 --> 00:24:48,604
+interface, so class, abstract class, which is extended by an error class, an exception class underneath.
+
+93
+00:24:49,003 --> 00:24:53,023
+That exception class is extended by IO exception and the runtime exception.
+
+94
+00:24:53,403 --> 00:25:05,023
+Now you see on this diagram, some of the classes are checked, has a label checked, and some of them has a label unchecked.
+
+95
+00:25:05,587 --> 00:25:24,248
+What checked exception handling class is, if you have an exception handling class that is checked, in that case, you specifically need to use try catch block, which I will show you in a minute, okay, in order to handle this error.
+
+96
+00:25:25,268 --> 00:25:39,407
+If the exception handling class is an unchecked class, if such an error happens, in that case, you don't have to put that code segment in a try-catch block.
+
+97
+00:25:39,867 --> 00:25:49,548
+You don't necessarily have to put them in a try-catch block, but if you put them, in case such errors happen, your program can still...
+
+98
+00:25:50,132 --> 00:25:51,251
+Continue working.
+
+99
+00:25:51,532 --> 00:26:01,152
+But if the exception handling is a checked exception, then you have to put it into try catch block.
+
+100
+00:26:01,251 --> 00:26:02,831
+So you will see in a minute.
+
+101
+00:26:04,532 --> 00:26:07,152
+Now, there are different exception handling classes.
+
+102
+00:26:07,351 --> 00:26:15,331
+Each exception handling class is responsible for handling certain type of error that might happen while our program is running.
+
+103
+00:26:16,211 --> 00:26:21,791
+So one of them is Java.lang.error exception handling class.
+
+104
+00:26:21,791 --> 00:26:24,791
+Now this class is responsible for...
+
+105
+00:26:25,875 --> 00:26:30,655
+Errors that might happen outside of our program.
+
+106
+00:26:31,096 --> 00:26:35,416
+And these errors might be related with the Java Virtual Machine.
+
+107
+00:26:35,416 --> 00:26:39,336
+It might be related with the environment that we are working on.
+
+108
+00:26:39,516 --> 00:26:41,556
+So it's not related with our program.
+
+109
+00:26:42,016 --> 00:26:47,775
+But if such things happen, it may also affect the way that our program is running.
+
+110
+00:26:49,236 --> 00:26:54,556
+Usually, we don't handle these errors. These errors are outside of our school.
+
+111
+00:26:55,536 --> 00:27:02,736
+Now, the second type of error, Java dot, second type of exception ending class, Java dot LUNC runtime exception ending class.
+
+112
+00:27:03,556 --> 00:27:12,456
+Now, this is an unchecked exception ending class, which means that we don't have to
+
+113
+00:27:13,011 --> 00:27:20,991
+Handle this type of errors, but if we do, it will help our program to continue running.
+
+114
+00:27:21,491 --> 00:27:23,532
+Now, what kind of errors do we see here?
+
+115
+00:27:24,152 --> 00:27:31,572
+For example, if you are doing a division and if in the division...
+
+116
+00:27:32,692 --> 00:27:41,271
+If the denominator part of the division is zero, then your program might give an error.
+
+117
+00:27:41,951 --> 00:27:50,552
+Or if you have a pointer that is null and you are trying to invoke a method of that...
+
+118
+00:27:50,900 --> 00:27:55,940
+And that object, then you might get a null pointer exception.
+
+119
+00:27:56,440 --> 00:27:56,600
+Okay.
+
+120
+00:27:57,080 --> 00:28:03,720
+Or if you are trying to access a certain index of an array, but that index is not there.
+
+121
+00:28:04,039 --> 00:28:08,580
+So in that case, you may get an error index out of bounds exception error.
+
+122
+00:28:08,720 --> 00:28:13,280
+So all these errors are runtime exception, but these are unchecked exceptions.
+
+123
+00:28:13,360 --> 00:28:17,480
+So which means that you don't necessarily have to put it into try catch block.
+
+124
+00:28:17,480 --> 00:28:18,800
+I will show it.
+
+125
+00:28:18,900 --> 00:28:21,600
+What try catch block is in a minute.
+
+126
+00:28:22,500 --> 00:28:28,660
+And the last exception handy class which we are commonly using is the checked exception.
+
+127
+00:28:28,660 --> 00:28:36,060
+So which means that if there is an error that is related with the IO, then you have to put it into try catch block.
+
+128
+00:28:36,180 --> 00:28:39,539
+This is kind of an exception that must be handled.
+
+129
+00:28:40,080 --> 00:28:40,240
+Okay.
+
+130
+00:28:43,284 --> 00:28:46,604
+Now, what do we do when we want to handle an exception?
+
+131
+00:28:46,784 --> 00:28:49,044
+So you see a try catch block here.
+
+132
+00:28:49,864 --> 00:28:58,264
+And in try, so you see within the try, there is a code segment within the curly parenthesis.
+
+133
+00:28:58,264 --> 00:29:04,423
+And for the catch phrase, we have within the curly parenthesis, we have a code segment.
+
+134
+00:29:05,164 --> 00:29:09,996
+Now, when we do exception handling, we are putting the...
+
+135
+00:29:10,036 --> 00:29:20,736
+Code that might produce an error in the first segment of the structure, which means that we are putting into try block.
+
+136
+00:29:20,736 --> 00:29:29,736
+Okay. So if there is an error that happens here, then it is being cached by the exception handling class.
+
+137
+00:29:30,756 --> 00:29:34,816
+And so the catchphrase in that case is being executed.
+
+138
+00:29:35,380 --> 00:29:57,060
+So whenever there is an error that happens in the try block related with that exception, that is being catched by the exception ending class and the catchphrase is executed and whatever we write here, in that case, it is executed in order to prevent our code to come complete stop.
+
+139
+00:29:57,060 --> 00:29:57,500
+Okay.
+
+140
+00:29:59,020 --> 00:29:59,980
+Now some.
+
+141
+00:30:00,000 --> 00:30:03,000
+Sometimes we might also...
+
+142
+00:30:06,799 --> 00:30:15,480
+Instead of handling wherever the error is happening, we might let other methods to handle with this error.
+
+143
+00:30:15,659 --> 00:30:24,199
+In that case, for example, within this method, you see that there is a cold segment that needs to be put into try catch block.
+
+144
+00:30:24,359 --> 00:30:33,799
+Instead of putting it inside of this error, what I did is that I am throwing the same exception whenever there is an error that happens.
+
+145
+00:30:33,799 --> 00:30:34,759
+I am throwing this.
+
+146
+00:30:34,799 --> 00:30:52,019
+Exception. And whichever method that is calling this method, in that case, in that method, that exception needs to be handled, which means that in that method, we need to put it into try-catch block. You will see examples of this in a minute.
+
+147
+00:30:55,700 --> 00:30:56,220
+No.
+
+148
+00:30:57,011 --> 00:31:04,931
+The try catch block structure, in the try catch block structure, you may have more than one catch phrases, okay?
+
+149
+00:31:05,251 --> 00:31:11,971
+Because in this particular code segment, there may be more than one type of error, okay?
+
+150
+00:31:12,391 --> 00:31:22,871
+So, for example, this could be a runtime exception, it could be an IO exception, there may be a code that may produce more than one type of error.
+
+151
+00:31:25,011 --> 00:31:52,711
+Different types of exception handling classes. Whenever such an error happens, then that error is being caught by the corresponding exception handling class and corresponding catchphrase is executed. Okay. And only one catchphrase is executed. And the other one. And after that, the Java Virtual Machine will continue executing the rest of the code. Okay.
+
+152
+00:31:53,011 --> 00:31:56,172
+After the try catch phrases.
+
+153
+00:31:59,411 --> 00:32:04,411
+Now, one other thing that we need to be informed is that
+
+154
+00:32:05,531 --> 00:32:09,611
+the try catch block also have a last segment,
+
+155
+00:32:09,611 --> 00:32:12,991
+which is a finally segment.
+
+156
+00:32:12,991 --> 00:32:15,172
+So what finally segment is that?
+
+157
+00:32:15,380 --> 00:32:22,280
+Regardless of an error happens in the try block, finally segment will be executed.
+
+158
+00:32:23,040 --> 00:32:23,160
+Okay.
+
+159
+00:32:23,520 --> 00:32:32,780
+If an error happens in the try block, corresponding catchphrase will be executed, corresponding catch body will be executed.
+
+160
+00:32:33,360 --> 00:32:42,320
+And in addition to that, the finally segment will be executed, which means that if the try catch block has the finally segment at the end of it,
+
+161
+00:32:42,771 --> 00:32:46,351
+The final segment will be executed no matter what.
+
+162
+00:32:46,351 --> 00:32:47,151
+Okay?
+
+163
+00:32:47,700 --> 00:33:15,700
+If there is no error in the try block, finally will be implemented. If there is an error in the try block, corresponding catchphrase will be executed. And right after that, the finally code segment will be executed. Okay. Now, in what cases are we using the finally segment? For example, if we want to do a clean exit, for example, let's say you have
+
+164
+00:33:15,700 --> 00:33:17,340
+We have a scanner object, right?
+
+165
+00:33:17,519 --> 00:33:24,480
+The reason that we were using scanner object in order to get an input from the keyboard into our program, right?
+
+166
+00:33:24,840 --> 00:33:29,660
+So we are creating the scanner object and we are doing the input.
+
+167
+00:33:30,019 --> 00:33:31,360
+We are getting the input.
+
+168
+00:33:31,840 --> 00:33:36,420
+And at the end, we want to close the socket, the scanner object, okay?
+
+169
+00:33:36,800 --> 00:33:41,860
+Because we don't want that channel between the keyboard and the physical memory open.
+
+170
+00:33:42,288 --> 00:33:57,248
+All the time. So we were closing the scanner object. So if we have such things like we have to close the connection, in that case, we put it into finally segment because that's going to be executed no matter what. Okay.
+
+171
+00:33:58,867 --> 00:34:08,708
+So one thing that is also important is that for any exception handling class, there is a method called printStackTrace.
+
+172
+00:34:08,708 --> 00:34:09,307
+Okay.
+
+173
+00:34:09,867 --> 00:34:17,768
+This is just like the two-string method, just like the systemout.println method.
+
+174
+00:34:18,047 --> 00:34:23,288
+So this is a method that is printing.
+
+175
+00:34:23,744 --> 00:34:29,024
+All the, everything that we should know related with that error.
+
+176
+00:34:29,024 --> 00:34:29,524
+Okay.
+
+177
+00:34:29,963 --> 00:34:37,064
+And so all the exception handling classes have this print stack trace method.
+
+178
+00:34:37,444 --> 00:34:43,003
+So you can have this print stack trace in the catchphrases whenever error happens.
+
+179
+00:34:43,524 --> 00:34:49,224
+So for information, you can print it on console to let the user know.
+
+180
+00:34:51,507 --> 00:34:58,007
+Okay, now let's take a look at some examples. Exception handling class. So this is an example.
+
+181
+00:34:59,427 --> 00:35:11,007
+Here, I have two global member fields. Both of them have a class type. They are complex type. And I have...
+
+182
+00:35:13,043 --> 00:35:19,623
+Void method, as you see, and within the Void method, as you see, I have tryCatchBlock.
+
+183
+00:35:20,224 --> 00:35:24,144
+And this tryCatchBlock has also finally statement with it, okay?
+
+184
+00:35:24,523 --> 00:35:32,483
+Now, if you look at the tryBlock, here I'm creating an object of this MyScreenRenderer class.
+
+185
+00:35:33,324 --> 00:35:36,324
+And then I'm calling an open file.
+
+186
+00:35:37,043 --> 00:35:42,663
+This must be another method that I can access, okay?
+
+187
+00:35:43,123 --> 00:35:51,323
+Which in turn gives me my file which has the type of my CAD file, okay?
+
+188
+00:35:51,791 --> 00:35:55,091
+And then I am reading something from this file.
+
+189
+00:35:55,771 --> 00:36:01,971
+And whatever I read, I call draw figures method, which is not visible here.
+
+190
+00:36:01,971 --> 00:36:09,152
+So apparently open file and draw figures are the other methods of this class.
+
+191
+00:36:09,568 --> 00:36:13,347
+And then I'm closing the file.
+
+192
+00:36:13,688 --> 00:36:13,768
+Okay.
+
+193
+00:36:14,288 --> 00:36:19,948
+Now, this is an IO access operation.
+
+194
+00:36:19,948 --> 00:36:27,868
+So which means that whenever there is an IO access operation, this is a checked exception handling.
+
+195
+00:36:28,408 --> 00:36:32,807
+So therefore, I must have the try catch block for this case.
+
+196
+00:36:33,668 --> 00:36:36,828
+And the type of the exception handling class is IO access.
+
+197
+00:36:37,568 --> 00:36:39,347
+Exception, which I have shown you here.
+
+198
+00:36:40,408 --> 00:36:40,728
+Okay.
+
+199
+00:36:41,108 --> 00:36:41,828
+Are you an exception?
+
+200
+00:36:41,988 --> 00:36:42,708
+This is a checked.
+
+201
+00:36:42,708 --> 00:36:42,748
+Check.
+
+202
+00:36:45,108 --> 00:37:13,088
+Arkadaşlar, exception and link. And here, as you see, I'm not only writing something into the console, I'm also writing the details of the error that happens. And as you see, after that, I'm exiting the system. But so regardless of this being here, the final statement will be executed. The final statement will be executed no matter what. And then
+
+203
+00:37:13,108 --> 00:37:14,148
+Programme will exist.
+
+204
+00:37:14,608 --> 00:37:14,868
+Okay?
+
+205
+00:37:20,467 --> 00:37:29,507
+Now, obviously, there are exception ending classes by default provided by Java Software Development Kit.
+
+206
+00:37:30,307 --> 00:37:35,268
+We can also have our own exception ending class.
+
+207
+00:37:35,731 --> 00:37:39,311
+For example, here I created my own exception ending class.
+
+208
+00:37:39,511 --> 00:37:42,592
+I gave a name to it, my file format exception.
+
+209
+00:37:42,592 --> 00:37:49,351
+And now this exception class can extend an existing exception class.
+
+210
+00:37:49,771 --> 00:37:52,192
+Now it is extending IO exception.
+
+211
+00:37:52,832 --> 00:38:02,431
+Obviously, when I extend it, I am inheriting all the methods that IO exception has.
+
+212
+00:38:03,731 --> 00:38:07,731
+Now, whenever I create my own file, I need to...
+
+213
+00:38:08,916 --> 00:38:36,896
+We create two constructors. The first one is a zero constructor. Second one is the constructor with one parameter. And in both of them, what I need to do, I need to call the super constructor. I need to call the IO exception constructor. If it is a zero parameter constructor, I need to do this. If it's the one parameter constructor, then I need to do this. In both cases.
+
+214
+00:38:36,916 --> 00:38:45,356
+If I wanted to use just this one, so I have to have this super meta tier.
+
+215
+00:38:45,556 --> 00:38:52,615
+So I have to have super phrase here in order to make sure that I'm calling the constructor of the parent class.
+
+216
+00:38:52,856 --> 00:38:56,596
+If I have a zero parameter constructor, I need to have this here.
+
+217
+00:38:56,976 --> 00:39:04,615
+OK. And apart from that, in the exception ending class, if there is something that needs to be done, so this is where it should go.
+
+218
+00:39:04,916 --> 00:39:06,836
+in the constructor. Okey?
+
+219
+00:39:10,804 --> 00:39:21,764
+Now, I have shown you the example exception handling class that I can create, exception handling class that belongs to me.
+
+220
+00:39:22,543 --> 00:39:27,644
+Now, you can also have a method that throws an exception, okay?
+
+221
+00:39:28,123 --> 00:39:35,984
+So I said it earlier, sometimes you might not want to handle the exception within the method, okay?
+
+222
+00:39:35,984 --> 00:39:38,804
+You might handle the exception wherever this method is.
+
+223
+00:39:38,804 --> 00:39:59,684
+The method is being called. There are cases that you might want to do that. For example, here. Now, there is a class that is called AProgram. Within this class, there is only one method. As you see, the name of the method process file. And in this method, I have some statements. And also, I have an if condition.
+
+224
+00:40:00,000 --> 00:40:09,359
+Right. So what I want to do in case a particular condition happens, I want to throw an exception.
+
+225
+00:40:09,359 --> 00:40:18,679
+OK, now this may not an error necessarily. There may be a certain situation.
+
+226
+00:40:19,219 --> 00:40:24,559
+In which case I want to throw an error, right?
+
+227
+00:40:25,159 --> 00:40:28,239
+And so, for example, here is my statements.
+
+228
+00:40:28,799 --> 00:40:37,479
+And right after that, if there is a situation that I need to check, and if this is an unexpected situation, then I might throw an exception, okay?
+
+229
+00:40:37,779 --> 00:40:42,079
+And here, I am the one who is throwing the exception, okay?
+
+230
+00:40:42,619 --> 00:40:47,219
+And if I throw the exception here, and since I am not handling the exception,
+
+231
+00:40:47,219 --> 00:40:54,079
+exception within this method, then I need to add this to the description of the function.
+
+232
+00:40:54,079 --> 00:40:54,719
+Okay.
+
+233
+00:40:55,019 --> 00:41:00,139
+And so as you see, I added this and this goes with the trolls keyword.
+
+234
+00:41:01,039 --> 00:41:06,299
+And after that, and the name of the exception class.
+
+235
+00:41:06,579 --> 00:41:06,880
+Okay.
+
+236
+00:41:13,268 --> 00:41:28,387
+Now, let's take a look at an example. Okay. Now, here in this case, first, I want to identify, I want to define my own exception ending class. And I called it impossible info. That's the name that I gave.
+
+237
+00:41:29,012 --> 00:41:34,472
+And this impossible info class extends the IO exception.
+
+238
+00:41:34,692 --> 00:41:35,771
+So what does this mean?
+
+239
+00:41:35,851 --> 00:41:38,172
+IO exception is a checked exception.
+
+240
+00:41:38,532 --> 00:41:47,692
+If I have a class that extends the IO exception, this means that my class also, exception in the class will also be a checked exception.
+
+241
+00:41:48,403 --> 00:42:03,844
+And you see, I have a one parameter constructor. I must have a constructor here. And within the constructor, the first line is the super phrase. I'm calling the super class, parent class constructor by doing so. Okay.
+
+242
+00:42:04,503 --> 00:42:12,724
+Now, as you see, and the IO exception is under java.io, and I have to import this exception and link class.
+
+243
+00:42:13,844 --> 00:42:19,003
+So one other thing is that here, as you see, there is a notation here.
+
+244
+00:42:19,463 --> 00:42:19,743
+Okay.
+
+245
+00:42:20,104 --> 00:42:24,104
+Now, this notation is for expressing warnings.
+
+246
+00:42:24,764 --> 00:42:34,083
+If I don't do this, then the Java Virtual, so when I compile my program, the compiler is giving a warning to me.
+
+247
+00:42:34,579 --> 00:42:48,300
+The reason the warning is that the compiler is looking for a serial, a global variable for the serial number for this class.
+
+248
+00:42:48,300 --> 00:42:53,319
+Okay. Now, if there is no such a thing.
+
+249
+00:43:02,291 --> 00:43:21,731
+If there is no such a thing, so no such warning, so in that case, the compiler will give me a warning every time I compile, but it does not, it is not an error. If I do not want to see those warnings, I have to have this notation here.
+
+250
+00:43:23,751 --> 00:43:29,032
+Okay, let's now take a look at the person class. Now, you have seen the person class before.
+
+251
+00:43:29,780 --> 00:43:36,760
+And now, so we are going to revise the person class for this particular example.
+
+252
+00:43:36,760 --> 00:43:39,240
+Now, let's take a look at what we have here.
+
+253
+00:43:39,720 --> 00:43:42,880
+Here is the name, is the class person.
+
+254
+00:43:43,280 --> 00:43:45,560
+I have two global member fields.
+
+255
+00:43:46,320 --> 00:43:47,900
+I have one constructor.
+
+256
+00:43:48,740 --> 00:43:55,680
+And I have getter methods for these two global member fields.
+
+257
+00:43:56,211 --> 00:44:00,751
+I have a toString method and I have a setH method.
+
+258
+00:44:01,119 --> 00:44:05,720
+Now, in the setH method, what I want to do, I want to do a check, okay?
+
+259
+00:44:05,980 --> 00:44:17,680
+I want to check if the pastH is less than 0, which would be impossible, or it is above 150, which would be impossible.
+
+260
+00:44:18,420 --> 00:44:26,880
+If both of them are, if one of them are true, then if condition will be true, and then I will execute this line.
+
+261
+00:44:29,119 --> 00:44:36,159
+Here we are throwing an impossible info exception error, right?
+
+262
+00:44:36,399 --> 00:44:40,859
+And this impossible info is a checked exception, right?
+
+263
+00:44:41,119 --> 00:44:43,039
+Because it extends to IO exception.
+
+264
+00:44:43,199 --> 00:44:48,500
+This means that it has to be put into inside the try-catch block.
+
+265
+00:44:48,960 --> 00:44:53,119
+But here, as you see, I didn't want to put it into try-catch block here.
+
+266
+00:44:53,119 --> 00:44:57,119
+And I wanted to be...
+
+267
+00:44:57,119 --> 00:45:01,399
+Handled wherever the setH method is being called.
+
+268
+00:45:02,000 --> 00:45:15,779
+In that case, what I need to do, I need to say, I need to add throws a phrase at the end of the description of the method, and then I need to write the name of the exception handling class.
+
+269
+00:45:16,275 --> 00:45:29,895
+In that case, so I'm telling the Java Virtual Machine that, okay, there may be an exception which will be thrown in this method, but I'm not going to handle this exception here.
+
+270
+00:45:30,015 --> 00:45:38,895
+Wherever the setH method is being called, that is the place where this exception will be handled.
+
+271
+00:45:45,972 --> 00:45:54,052
+Okay, now, so let's take a look at the test method, the test class that I'm using in order to test what I have written.
+
+272
+00:45:54,852 --> 00:45:59,992
+And the name of the class is testExceptions. And as you see, I have a main method.
+
+273
+00:46:00,980 --> 00:46:15,480
+And within the main method, the first thing that I do, I am creating a scanner object and I'm assigning the add reference to the scanner object to this local variable where the type of local variable is scanner.
+
+274
+00:46:16,403 --> 00:46:21,043
+And I'm printing something into screen and I'm asking the user to enter a name.
+
+275
+00:46:21,503 --> 00:46:22,903
+That's what user is doing.
+
+276
+00:46:23,344 --> 00:46:31,104
+And I'm assigning this value which I received from the user to this local variable where the type is string.
+
+277
+00:46:31,984 --> 00:46:43,503
+Then I'm creating a new person with this name and assigning the reference to this new person object to this local variable where the type of local variable is person.
+
+278
+00:46:44,884 --> 00:46:52,304
+And as you see, I have try block and I inserted this called segment into try catch block.
+
+279
+00:46:52,684 --> 00:46:57,503
+And the reason that I inserted is that I have setH method here.
+
+280
+00:46:57,864 --> 00:47:01,503
+So remember the setH method is throwing an exception.
+
+281
+00:47:03,284 --> 00:47:09,923
+Which is a checked exception, which means that this exception needs to be put into try catch block.
+
+282
+00:47:09,923 --> 00:47:10,524
+Okay.
+
+283
+00:47:11,104 --> 00:47:13,804
+And therefore I put it into try catch block.
+
+284
+00:47:14,204 --> 00:47:23,244
+Here I am, as I'm saying that, so I'm printing something into screen and I'm letting user to enter something.
+
+285
+00:47:23,795 --> 00:47:31,415
+And then whatever the user enters into screen, I assign that, I pass that to the setH method.
+
+286
+00:47:32,515 --> 00:47:38,635
+And so right after that, I'm printing the information related with this person object insan.
+
+287
+00:47:39,635 --> 00:47:39,855
+Okay.
+
+288
+00:47:40,315 --> 00:47:42,355
+Now, if something happens...
+
+289
+00:47:43,284 --> 00:47:53,364
+Here, if the age that I'm entering is less than zero, it's about above 150, then the set age method will throw an impossible import exception.
+
+290
+00:47:54,099 --> 00:48:03,539
+And then, so which means that the setH exception will be handled by this catchphrase.
+
+291
+00:48:03,679 --> 00:48:06,420
+The catchphrase will be executed.
+
+292
+00:48:06,720 --> 00:48:09,079
+In that case, this line will be executed.
+
+293
+00:48:09,840 --> 00:48:09,980
+Okay.
+
+294
+00:48:10,420 --> 00:48:14,739
+Now, as you see, this try catch block has finally segment as well.
+
+295
+00:48:15,135 --> 00:48:31,836
+So, and in the finally segment, basically what we do is we are closing, we are trying to do clean exit. As you see, I already created the scanner object, which also needs to be closed. And in the finally segment, I am closing the scanner object that I created. Okay.
+
+296
+00:48:35,827 --> 00:48:43,327
+Okay, so try catch block is highly important concepts and exception in the concept.
+
+297
+00:48:43,707 --> 00:48:47,768
+It's something that you will encounter in the final exam for sure.
+
+298
+00:48:47,768 --> 00:48:58,228
+So therefore, you need to take a look at the quotes that I uploaded into the website and make sure that you have seen enough examples of try catch block.
+
+299
+00:48:58,488 --> 00:48:58,648
+Okay.
+
+300
+00:48:59,731 --> 00:49:04,931
+Now, I'm going to move forward and I'm going to talk about the typecasting.
+
+301
+00:49:12,596 --> 00:49:12,956
+Ok.
+
+302
+00:49:16,980 --> 00:49:29,519
+Now, remember when we talked about inheritance, we said that an object of subclass can be used wherever the superclass is expected.
+
+303
+00:49:29,519 --> 00:49:37,519
+Okay. So basically, so you can keep track of the child objects by using the...
+
+304
+00:49:38,112 --> 00:49:44,592
+Parents object, parents class time.
+
+305
+00:49:44,592 --> 00:49:45,172
+Okay.
+
+306
+00:49:45,891 --> 00:50:00,971
+Now, if you do that, okay, then you need to be able to convert these objects between the parent and the child.
+
+307
+00:50:01,412 --> 00:50:01,672
+Okay.
+
+308
+00:50:02,420 --> 00:50:12,160
+Now, if you do this conversion, then this conversion has a name which is called typecasting.
+
+309
+00:50:13,240 --> 00:50:20,300
+Now, so let's take a look at how we are doing this conversion on an example.
+
+310
+00:50:21,235 --> 00:50:31,695
+Now, first, I want to show you the example, then I will show you how we are doing the typecasting, which is essentially the conversion of one object to another object.
+
+311
+00:50:32,556 --> 00:50:37,895
+Now, in this example, you have seen this example, so market shelf example.
+
+312
+00:50:38,516 --> 00:50:46,375
+Now, in this market shelf, I have a number of items, and all these items are being stored in a linked list.
+
+313
+00:50:46,719 --> 00:50:54,880
+And so this item is an interface and there are two regular classes that implement this interface.
+
+314
+00:50:55,199 --> 00:50:57,519
+One is food and the other one is electronics.
+
+315
+00:50:58,099 --> 00:50:58,219
+Okay.
+
+316
+00:50:59,099 --> 00:51:12,900
+And the market shelf has also some methods like adding an item, checking whether an item exists or print expired items that are in the market shelf.
+
+317
+00:51:12,900 --> 00:51:13,579
+Okay.
+
+318
+00:51:16,019 --> 00:51:33,920
+Now, take a look at this code. Here is the market shelf code. So here you see I have a global member fields where the type is linked list. And in between the linked list, as you see, only the item type objects will be kept, right?
+
+319
+00:51:34,675 --> 00:51:38,055
+And here I have a constructor.
+
+320
+00:51:38,355 --> 00:51:40,255
+So remember the purpose of constructor.
+
+321
+00:51:40,255 --> 00:51:48,575
+Whenever I have a constructor, that's the place where I need to create, initialize the global member fields.
+
+322
+00:51:49,055 --> 00:51:51,035
+As you see, I have a global member field.
+
+323
+00:51:51,155 --> 00:51:53,655
+I am here initializing this global member field.
+
+324
+00:51:53,755 --> 00:51:57,415
+I'm creating an object of the linked list.
+
+325
+00:51:58,132 --> 00:52:02,452
+And assigning the reference to this object to this global member fields.
+
+326
+00:52:04,012 --> 00:52:06,811
+And I have a method called does exist.
+
+327
+00:52:06,952 --> 00:52:13,112
+Does exist basically checks whether this item is available in the linked list structure.
+
+328
+00:52:13,112 --> 00:52:18,291
+So it is doing a for each loop on the items data structure.
+
+329
+00:52:18,900 --> 00:52:31,000
+And within the for each loop, it is checking whether the item that is available in the linked list is equal to the item that is being passed to this method.
+
+330
+00:52:31,300 --> 00:52:36,500
+If it is equal to each other, then it will return true, otherwise it will return false.
+
+331
+00:52:37,619 --> 00:52:42,519
+The other method is adding an item into this linked list data structure.
+
+332
+00:52:42,980 --> 00:52:48,440
+First thing is that we are checking whether that item is available in the linked list.
+
+333
+00:52:48,440 --> 00:52:52,899
+We do this by calling this method that we already created.
+
+334
+00:52:53,639 --> 00:52:56,960
+And so if yes, we return false.
+
+335
+00:52:57,059 --> 00:53:02,099
+Otherwise, we add this item into the linked list data structure and we return true.
+
+336
+00:53:05,043 --> 00:53:09,063
+Now, let's take a look at the print expired items.
+
+337
+00:53:09,903 --> 00:53:22,664
+Now, in this data structure, the type of things that we are going to keep has a class type item, right?
+
+338
+00:53:23,144 --> 00:53:30,664
+Now, if you go back and take a look at the UML structure, as you see, item...
+
+339
+00:53:31,023 --> 00:53:36,644
+is a superclass of food and electronics, right?
+
+340
+00:53:36,923 --> 00:53:44,043
+So, which means that an object of the subclasses can be used wherever the superclass is expected.
+
+341
+00:53:44,043 --> 00:53:54,423
+So, I can use item type variables in order to keep track of food objects or electronic objects.
+
+342
+00:53:54,831 --> 00:54:08,192
+Okay. And this is what I intend to do here. I want to keep into this linkless structure both food objects and electronics objects because they both have the type item, right?
+
+343
+00:54:12,628 --> 00:54:28,868
+Now, if I have both food and electronics objects within the same data structures, okay, then I need to have a way to identify whether that object is a food object or electronics object, okay?
+
+344
+00:54:28,888 --> 00:54:35,468
+I know that they both have the item type, but in fact, one of them is a food object, the other one is the electronics object.
+
+345
+00:54:35,468 --> 00:54:38,508
+I need to have a way to identify, okay?
+
+346
+00:54:42,291 --> 00:54:59,211
+Arkadaşlar, the first thing that I do is that I do a for each loop on the item status structure and I use Java's programming language, another phrase called instanceof.
+
+347
+00:55:00,052 --> 00:55:13,731
+Now, the instance of is a Java syntax terminology, just like the super, just like the this, just like troll, just like trolls, okay?
+
+348
+00:55:14,351 --> 00:55:19,731
+And it's another terminology that comes with the Java programming language.
+
+349
+00:55:19,731 --> 00:55:22,771
+Now, instance of is checking.
+
+350
+00:55:23,476 --> 00:55:33,876
+Arkadaşlar, whether this item, this object that is referred by item has a type of food, right?
+
+351
+00:55:34,695 --> 00:55:37,876
+So this means that we are going to...
+
+352
+00:55:44,467 --> 00:55:46,467
+Just give me a minute. I'm coming in a minute.
+
+353
+00:56:15,956 --> 00:56:26,396
+Okay, so instance of is checking whether an object that is referred by a superclass type variable.
+
+354
+00:56:26,776 --> 00:56:30,456
+So we are checking whether that object has a type of food.
+
+355
+00:56:31,296 --> 00:56:36,156
+Okay, now in order to do that, we are using instance of.
+
+356
+00:56:36,820 --> 00:56:49,579
+Now, if we find out that the item which is in the linkless structure, the object which is in the linkless structure, it has a type food.
+
+357
+00:56:49,579 --> 00:56:57,039
+In that case, we need to convert that object's type to the food type.
+
+358
+00:56:57,364 --> 00:57:13,063
+Right. So which means that from this point forward, instead of using superclass identifier, superclass variable, we will now be using food type variable in order to keep track of this object.
+
+359
+00:57:13,684 --> 00:57:21,744
+Okay. Now, in order to do this, what we are doing is that we are doing typecasting. We are converting this object into food type.
+
+360
+00:57:22,260 --> 00:57:28,300
+And by doing so, we will have an object where the type is food.
+
+361
+00:57:28,900 --> 00:57:40,420
+In that case, we can call isExpiredMethod, which is a method of food class.
+
+362
+00:57:42,920 --> 00:57:48,059
+Now, if we do this check and if we call the isExpiredMethod,
+
+363
+00:57:48,659 --> 00:57:57,699
+If we didn't do check and if we are trying to convert the object into food, we might encounter with a problem.
+
+364
+00:57:57,699 --> 00:58:07,500
+Okay. The reason is that item is referring to both food type objects and electronics type objects.
+
+365
+00:58:07,980 --> 00:58:14,239
+Okay. So therefore, before we convert an object,
+
+366
+00:58:14,675 --> 00:58:21,135
+To subclass type, before we do typecasting, we need to do this check.
+
+367
+00:58:21,135 --> 00:58:33,835
+We need to make sure that the object that we are trying to typecast has the same as the object that we are expecting.
+
+368
+00:58:34,275 --> 00:58:37,575
+So in this particular case, we are expecting the food.
+
+369
+00:58:38,356 --> 00:58:48,716
+Type objects, if yes, and then we are converting that object into food type, and then calling is expired method of it, okay?
+
+370
+00:58:49,456 --> 00:58:58,796
+And if the, so if, so whenever we call is expired method, if it is yes, then we are going to update the has expired item with true,
+
+371
+00:58:58,796 --> 00:59:04,756
+and then we are going to print out the information related with this object, okay?
+
+372
+00:59:05,416 --> 00:59:05,896
+Otherwise,
+
+373
+00:59:06,356 --> 00:59:26,076
+If none of the objects in the linked list structure is instance of food, or if there is a food, if it is not expired, so then has expired item will not be updated, and it will remain false.
+
+374
+00:59:26,076 --> 00:59:31,876
+And if it remains false, then we will write all items are fresh at the end.
+
+375
+00:59:32,256 --> 00:59:32,416
+Okay.
+
+376
+00:59:37,076 --> 00:59:56,775
+Now, it's highly important. It's highly important for us to know that before we do typecasting, we need to check the instance of, we need to check the type of the object before we convert. Otherwise, we are going to get an error, which is a typecasting error.
+
+377
+00:59:58,416 --> 01:00:00,000
+Now, let's take a look at the
+
+378
+01:00:00,000 --> 01:00:10,880
+The final class related with this example, which is a class, which in this class we have a main method.
+
+379
+01:00:11,420 --> 01:00:25,000
+And in the main method, what we are doing that we are creating an object of the market shelf and assigning the reference to this, of this object to this local variable where the type of the local variable is market shelf class.
+
+380
+01:00:26,420 --> 01:00:36,380
+And now we are seeing another important class that you should also know very well.
+
+381
+01:00:36,699 --> 01:00:38,599
+It's called calendar class.
+
+382
+01:00:38,599 --> 01:00:43,079
+And this calendar class helps us to get date objects.
+
+383
+01:00:43,739 --> 01:00:43,800
+Okay.
+
+384
+01:00:44,259 --> 01:00:52,599
+Now, calendar class has a method called get instance, which is giving an object of to get calendar.
+
+385
+01:00:53,500 --> 01:00:54,400
+And so we are.
+
+386
+01:00:54,420 --> 01:01:00,519
+assigning the reference of this object to this local variable where the type of this local variable is calendar class.
+
+387
+01:01:00,519 --> 01:01:01,119
+Okay.
+
+388
+01:01:02,039 --> 01:01:07,019
+Now, now I have an object.
+
+389
+01:01:07,827 --> 01:01:14,708
+Of a calendar in which I can do some modifications, right?
+
+390
+01:01:15,087 --> 01:01:25,768
+If I don't do any modifications, the calendar object that I get will have the current day information in it.
+
+391
+01:01:26,507 --> 01:01:29,407
+Now you see that I am updating it.
+
+392
+01:01:29,847 --> 01:01:32,188
+I am going to add to this calendar.
+
+393
+01:01:32,188 --> 01:01:33,487
+I'm going to say, okay.
+
+394
+01:01:34,931 --> 01:01:40,611
+Arkadaşlar, the day of the month will be one.
+
+395
+01:01:41,371 --> 01:01:41,651
+Arkadaşlar, okay?
+
+396
+01:01:42,691 --> 01:01:48,491
+Arkadaşlar, and then I'm going to, after this addition, I'm going to get the time.
+
+397
+01:01:48,831 --> 01:01:54,271
+It will give me an object where the type is date.
+
+398
+01:01:54,708 --> 01:02:20,827
+Okay. But this has, this has the day of month information. It will be one. And the month and the year information in this date object will be current date information. Okay. Now, then, so what I'm doing is that I still have the calendar object at hand.
+
+399
+01:02:21,215 --> 01:02:24,436
+I am updating the year, month, and date.
+
+400
+01:02:25,036 --> 01:02:30,355
+And after I do these updates, I again get the time from the calendar object.
+
+401
+01:02:30,476 --> 01:02:33,175
+Now it will give me another date object.
+
+402
+01:02:33,552 --> 01:02:37,632
+But this time, the date object will have this information in it.
+
+403
+01:02:37,731 --> 01:02:41,152
+So the year will be 2010, et cetera.
+
+404
+01:02:41,791 --> 01:02:50,351
+Now, the date future, okay, so we'll have the information from the initial update.
+
+405
+01:02:50,351 --> 01:02:56,851
+The date past will have the information from the latest updates, okay?
+
+406
+01:02:57,011 --> 01:03:01,132
+Now, I have two date object, future and the past, right?
+
+407
+01:03:01,552 --> 01:03:05,592
+And then I can put a foot with the past date.
+
+408
+01:03:05,711 --> 01:03:08,211
+I can put a foot with the future date.
+
+409
+01:03:08,211 --> 01:03:13,811
+I can put an electronics object into this shelf.
+
+410
+01:03:14,231 --> 01:03:16,592
+And I can call check for expression method.
+
+411
+01:03:17,451 --> 01:03:18,451
+Expression method.
+
+412
+01:03:18,811 --> 01:03:27,916
+Now, in that case, so what will happen is that expression date with the past date, so it will not appear in the...
+
+413
+01:03:28,851 --> 01:03:32,311
+So, check for expressionless.
+
+414
+01:03:32,311 --> 01:03:36,632
+So, the food with the future, it will be okay.
+
+415
+01:03:37,152 --> 01:03:45,811
+And the new electronics, since it's not the food type, it won't be visible as the result of this check expression method.
+
+416
+01:03:52,563 --> 01:03:58,603
+Okay, now take a look at the isExpired method.
+
+417
+01:03:58,803 --> 01:04:04,263
+Now, here I have the food class which implements the item.
+
+418
+01:04:04,523 --> 01:04:07,983
+So far, I have shown you the market shelf.
+
+419
+01:04:10,083 --> 01:04:13,503
+I have shown you the market shelf which has main method in it.
+
+420
+01:04:13,743 --> 01:04:16,143
+Now, I am showing you the food class.
+
+421
+01:04:18,675 --> 01:04:24,375
+And the food class implements the interface item. It has one global member field where the type is date.
+
+422
+01:04:25,516 --> 01:04:27,855
+And I have one global member field.
+
+423
+01:04:29,775 --> 01:04:40,475
+And I have one constructor. So here it has one parameter constructor in which I am updating the global member field.
+
+424
+01:04:41,460 --> 01:04:46,000
+And I have a getter method for this global member field.
+
+425
+01:04:46,139 --> 01:04:47,719
+And I have isExpart method.
+
+426
+01:04:47,820 --> 01:04:54,340
+Now, in the isExpart method, what I do is that first I am creating a date object.
+
+427
+01:04:55,099 --> 01:05:01,800
+Now, whenever I do this, this will give me today's date.
+
+428
+01:05:02,208 --> 01:05:18,768
+Okay. Then I am checking whether the expired date. So remember, whenever I was creating the food object, I was creating with the past date and the future date, right?
+
+429
+01:05:19,068 --> 01:05:29,768
+And whenever I was calling the constructor of the food, I was passing the past and the future date, which then was...
+
+430
+01:05:30,208 --> 01:05:33,788
+Initializing the expired date global member field.
+
+431
+01:05:34,307 --> 01:05:41,148
+So basically what I do is that I am checking the future date and the past date against today.
+
+432
+01:05:41,947 --> 01:05:43,148
+So if it is...
+
+433
+01:05:44,052 --> 01:05:51,952
+If it is past date, then it will be before today, then this will be true, and it will return true, which will say expired.
+
+434
+01:05:52,652 --> 01:06:00,291
+If it is future date, so it won't be before today, so it will return false, which is not expired.
+
+435
+01:06:06,931 --> 01:06:18,311
+Okay. So typecasting is a future that is effective and it has nice, it's a good future for us to keep.
+
+436
+01:06:18,672 --> 01:06:24,432
+Child class objects in the parents type data structures.
+
+437
+01:06:24,792 --> 01:06:40,432
+But we need to make sure that whenever we use the typecasting, before we do the typecasting, we need to check whether the object that we want to typecast is what we are anticipating.
+
+438
+01:06:41,652 --> 01:06:41,812
+Okay.
+
+439
+01:06:41,872 --> 01:06:46,432
+If we don't do this check before we do the typecast, if...
+
+440
+01:06:46,672 --> 01:06:58,392
+And if we are trying to typecast some other object into another class, in that case, we will get a typecasting error.
+
+441
+01:06:58,512 --> 01:07:06,472
+So therefore, whenever we use the typecasting, we need to check whether it is something that we anticipated.
+
+442
+01:07:06,472 --> 01:07:07,152
+Okay.
+
+443
+01:07:08,628 --> 01:07:10,548
+All right, working with files.
+
+444
+01:07:10,827 --> 01:07:14,947
+I'm going to start with the working with files after 10 minutes break.
+
+445
+01:07:14,947 --> 01:07:19,947
+So let's meet at 10 minutes after.
+
+446
+01:07:21,088 --> 01:07:25,148
+So 10 past 3, we will meet again and continue.
+
+447
+01:18:05,908 --> 01:18:11,988
+Ok, let's move forward. Now we are going to talk about working with files.
+
+448
+01:18:15,764 --> 01:18:16,264
+Okey.
+
+449
+01:18:17,744 --> 01:18:19,384
+So when we do with...
+
+450
+01:18:19,384 --> 01:18:23,324
+Öncelikle arkadaşlar, sesim geliyor mu? Bir T'yi dedin lütfen.
+
+451
+01:18:26,324 --> 01:18:28,084
+Geliyor hocam. Tamamdır.
+
+452
+01:18:32,948 --> 01:18:38,868
+[öğrenci], ders bittikten sonra bir yere gitme, seninle devam edeceğiz. Senin sorun aklımda haberin olsun.
+
+453
+01:18:40,628 --> 01:18:50,167
+Okay. Now, when we do with files, we have two different kinds of operations. One is the file management operations.
+
+454
+01:18:51,283 --> 01:19:01,063
+which we are using in order to create a file in the file system or delete in the file system or rename the name of the file.
+
+455
+01:19:01,143 --> 01:19:03,543
+We can create a file in the file system.
+
+456
+01:19:04,003 --> 01:19:08,384
+All these kinds of operations are related with the file management.
+
+457
+01:19:08,384 --> 01:19:08,943
+Okay.
+
+458
+01:19:09,811 --> 01:19:14,912
+Now, the other kinds of operations are IO operations, input-output operations.
+
+459
+01:19:14,912 --> 01:19:22,912
+These are the kinds of operations where we can insert data into a file or we can read data from the file.
+
+460
+01:19:23,251 --> 01:19:23,311
+Okay.
+
+461
+01:19:24,332 --> 01:19:34,291
+Now, in both types of input-output operations, IO operations, we have some exception classes as well.
+
+462
+01:19:34,608 --> 01:19:37,288
+Now, we already talked about the exception classes.
+
+463
+01:19:37,568 --> 01:19:43,148
+We said that there are checked exception handling classes and there are unchecked exception handling classes.
+
+464
+01:19:43,988 --> 01:19:49,188
+Any exception handling class that is related with the files, they are checked exception class,
+
+465
+01:19:49,188 --> 01:20:00,000
+which means that those code segments that are doing file operation, they need to be put into insertion.
+
+466
+01:20:00,000 --> 01:20:01,680
+Insert, try catch block.
+
+467
+01:20:02,100 --> 01:20:02,260
+Okay.
+
+468
+01:20:02,520 --> 01:20:04,360
+There are examples of this.
+
+469
+01:20:04,460 --> 01:20:20,319
+For example, Java.io exception handling class, Java.io end of file exception class, Java.io file not found exception class, Java.long security exception class.
+
+470
+01:20:20,319 --> 01:20:24,220
+Now they all are related with the files.
+
+471
+01:20:27,988 --> 01:20:31,688
+The file management classes.
+
+472
+01:20:32,548 --> 01:20:34,308
+So one of them is the file.
+
+473
+01:20:35,927 --> 01:20:40,908
+Now, so with this class, we can create a file object.
+
+474
+01:20:41,128 --> 01:20:48,228
+And then so once we create the file object, we can also write it into the file system.
+
+475
+01:20:48,228 --> 01:20:52,988
+For example, I can call the constructor of the file.
+
+476
+01:20:53,460 --> 01:21:02,020
+object, I can call the constructor of the file class, which then would give me a file object.
+
+477
+01:21:02,020 --> 01:21:11,299
+But remember, when you create a file object, it does not necessarily mean that you actually create a file on the file system.
+
+478
+01:21:11,880 --> 01:21:12,000
+Okay.
+
+479
+01:21:12,979 --> 01:21:18,279
+So we basically just create a file object when we call the file object.
+
+480
+01:21:19,299 --> 01:21:19,619
+And...
+
+481
+01:21:20,372 --> 01:21:21,092
+So,
+
+482
+01:21:22,644 --> 01:21:26,703
+When we create a file, we need to give a name to this file.
+
+483
+01:21:27,524 --> 01:21:33,443
+And also, sometimes we also need to give a path to this file.
+
+484
+01:21:33,564 --> 01:21:41,724
+If we don't give a path, the Java Virtual Machine will create this file in the folder that it is running.
+
+485
+01:21:42,423 --> 01:21:42,584
+Okay.
+
+486
+01:21:43,024 --> 01:21:49,203
+And this path could be a relative path or a full path.
+
+487
+01:21:49,203 --> 01:21:50,644
+So if it is a full path,
+
+488
+01:21:50,644 --> 01:21:54,644
+Then you need to start giving the path starting from the...
+
+489
+01:21:56,627 --> 01:22:24,547
+The home directory. Okay. And if it is a relative path, then the Java Virtual Machine will understand that you are starting from the location where you are running this program. And from that, whatever path that you give, it is relative to the location that you are running this application. Okay. And so when you give path, so if you are using Windows,
+
+490
+01:22:24,627 --> 01:22:27,787
+Then you need to use this separator.
+
+491
+01:22:27,987 --> 01:22:32,527
+If you are using Unix, then you need to use this separator.
+
+492
+01:22:32,707 --> 01:22:39,087
+So you need to pay attention to the operating system that you are working on.
+
+493
+01:22:39,367 --> 01:22:48,507
+Accordingly, you need to give the separators between the folders when you give the path to your program.
+
+494
+01:22:48,507 --> 01:22:49,047
+Okay.
+
+495
+01:22:50,260 --> 01:22:58,780
+And here is the constructor where you can give the path and the file name.
+
+496
+01:23:03,539 --> 01:23:03,939
+Okay.
+
+497
+01:23:05,139 --> 01:23:15,539
+Now, after you create an object of the file, there are a number of methods that you can call with related with the file object, right?
+
+498
+01:23:15,539 --> 01:23:27,739
+So, basically, after you create the file object, you can call the exist method and check whether that file, there is a file in the file system.
+
+499
+01:23:28,180 --> 01:23:35,539
+And you can check whether this is a file or a folder.
+
+500
+01:23:36,200 --> 01:23:36,380
+Okay.
+
+501
+01:23:37,119 --> 01:23:45,680
+And you can get the parent file, which returns to the directory of this file or the folder results.
+
+502
+01:23:46,800 --> 01:23:52,420
+You can get the path to this file from this file object.
+
+503
+01:23:54,547 --> 01:23:59,387
+You can check whether this file is readable.
+
+504
+01:23:59,827 --> 01:24:05,287
+So you can check whether it is writable, whether you can write this file.
+
+505
+01:24:06,003 --> 01:24:20,743
+And if you want, so initially when you create an object of the file, I told you that this does not necessarily mean that you created the actual file on the file system.
+
+506
+01:24:20,863 --> 01:24:27,863
+But if you want to create the actual file on the file system, then you need to call create new file method.
+
+507
+01:24:27,863 --> 01:24:33,603
+Now the create new file method, in this case, it actually creates a file.
+
+508
+01:24:34,003 --> 01:24:37,683
+in the file system corresponding to your file object, okay?
+
+509
+01:24:38,724 --> 01:24:52,963
+And if this is a folder instead of file, then you can call a makeadir, so which in that case will create the folder in the file system.
+
+510
+01:24:53,623 --> 01:25:00,224
+Now, if, for example, if you're in your file object, there are, there are, if you give a path,
+
+511
+01:25:00,640 --> 01:25:23,899
+And after that, and if you give a name to this folder, and when it creates it, if the other folders in your path is not there, they do not exist, MakeAdiers will create the necessary folders in your path on your behalf.
+
+512
+01:25:24,627 --> 01:25:31,047
+You can call the rename method, which will then rename the name of the file.
+
+513
+01:25:31,167 --> 01:25:32,707
+You can delete the method.
+
+514
+01:25:34,407 --> 01:25:39,448
+All these methods belong to the Java.file class.
+
+515
+01:25:40,108 --> 01:25:45,047
+And so they all are for the management of the file.
+
+516
+01:25:49,140 --> 01:25:57,140
+Now, the other kinds of IO operations, file operations is the IO operations.
+
+517
+01:26:03,988 --> 01:26:15,228
+Okay, now for the input-output operations, so we can, so what we are doing is that we are either reading from file or writing into this file.
+
+518
+01:26:15,228 --> 01:26:16,007
+Okay.
+
+519
+01:26:17,043 --> 01:26:27,163
+And basically, there are different IO operation classes, which I will show you in a minute.
+
+520
+01:26:28,003 --> 01:26:36,304
+But in essence, these classes provided by java.io package
+
+521
+01:26:36,787 --> 01:26:49,287
+They can either write and read binary format data or they can write and read text format data.
+
+522
+01:26:49,287 --> 01:27:04,387
+Okay. And so if you are using a binary data format, the IO with the binary format is fast and efficient, but it is not readable by humans.
+
+523
+01:27:04,787 --> 01:27:09,887
+If you are using test formatted file, so it's vice versa.
+
+524
+01:27:10,188 --> 01:27:16,688
+So it takes more time to handle text formatted files, but at the same time, it is readable by humans, right?
+
+525
+01:27:17,807 --> 01:27:24,067
+And you can do a random access and sequential access into the files.
+
+526
+01:27:24,067 --> 01:27:32,407
+And if you do sequential access, which means that you will start reading the file from the first line of the file,
+
+527
+01:27:32,783 --> 01:27:39,923
+And if you do random access to a file, then you can go to some locations of the file directly.
+
+528
+01:27:40,443 --> 01:27:40,563
+Okay.
+
+529
+01:27:41,363 --> 01:27:48,103
+Now, so Java chains, streams, classes together.
+
+530
+01:27:48,243 --> 01:27:50,063
+So I will show you in a minute.
+
+531
+01:27:50,963 --> 01:27:51,243
+Okay.
+
+532
+01:27:51,243 --> 01:27:58,903
+Now, here, as you see, there are different Java IO classes that's available.
+
+533
+01:27:59,412 --> 01:28:10,432
+And in order for us to work with the objects, Java chains together different classes.
+
+534
+01:28:10,432 --> 01:28:21,332
+For example, it chains file input stream with object input stream when you want to read an object from a file into the memory.
+
+535
+01:28:21,779 --> 01:28:31,180
+And if you want to write an object into the file, then Java chains, object output stream and the file output stream together.
+
+536
+01:28:31,299 --> 01:28:36,939
+So which means that when I say chain, it means that these two classes are being used together.
+
+537
+01:28:36,939 --> 01:28:40,359
+Okay. These two classes are being used together.
+
+538
+01:28:40,768 --> 01:29:06,108
+Okay. Now, so let's take a look at the two different kinds of data file. So one is, as I said, the text file. The other one is the binary file. Okay. Now for the binary files, so we use the input stream and output stream classes.
+
+539
+01:29:06,688 --> 01:29:11,288
+For the text files, we use the reader and writer classes.
+
+540
+01:29:11,888 --> 01:29:11,988
+Okay.
+
+541
+01:29:12,688 --> 01:29:23,108
+Now, basically, so using the stream classes, input stream and output stream classes is much faster.
+
+542
+01:29:23,108 --> 01:29:25,408
+That's why we are teaching here.
+
+543
+01:29:25,728 --> 01:29:28,368
+We are showing you the examples of the stream classes.
+
+544
+01:29:28,948 --> 01:29:34,628
+But you can use the reader and writer classes in the same manner.
+
+545
+01:29:34,688 --> 01:29:38,988
+Okay, so let's take a look at the examples of it.
+
+546
+01:29:39,528 --> 01:29:52,688
+Now here, so what I will show you is that I will show you how we can chain together a file input stream with the object input stream and file output stream and the object output stream.
+
+547
+01:29:53,228 --> 01:29:59,167
+Now here is your program and you want to read something from the source file.
+
+548
+01:30:00,000 --> 01:30:10,260
+These somethings are objects, like zero is object, one is object, and another one is object, and you are reading all these objects into your program, okay?
+
+549
+01:30:10,600 --> 01:30:19,800
+Now, when you want to do that, in that case, so you are chaining together the file input stream and file object input stream, okay?
+
+550
+01:30:19,800 --> 01:30:28,000
+So in that case, the file input stream, so we'll get all the data from the source file.
+
+551
+01:30:28,000 --> 01:30:38,260
+And then it will hand it over to object input stream, which will then convert the incoming data into an object and it will give an object to your program.
+
+552
+01:30:38,260 --> 01:30:45,399
+Okay. Now here, your program is here and your program wants to write objects into a file. Right.
+
+553
+01:30:45,860 --> 01:30:51,260
+So every, these, these yellow rounded shapes are objects.
+
+554
+01:30:51,479 --> 01:30:56,000
+In that case, you are chaining the file output stream and object output stream.
+
+555
+01:30:56,000 --> 01:31:05,659
+Ok, so basically what you are doing is that you are writing your object into object output stream, which will then hand it to file output stream.
+
+556
+01:31:06,200 --> 01:31:11,100
+The file output stream will be writing your object into this file.
+
+557
+01:31:11,940 --> 01:31:14,319
+Ok, here is an example of it.
+
+558
+01:31:15,239 --> 01:31:20,579
+Now, so in this particular example, we are reading from the file.
+
+559
+01:31:21,747 --> 01:31:31,207
+As you see, the file input stream class is chained together with object input stream class, which means that they are being used together.
+
+560
+01:31:32,268 --> 01:31:37,608
+First, I am creating an object of file input stream by giving the name of the file.
+
+561
+01:31:38,527 --> 01:31:46,307
+And the file input stream gets the file and converts it into bytes and sends it to object input stream.
+
+562
+01:31:46,771 --> 01:31:51,172
+And as you see, I'm putting this into the constructor of object input stream.
+
+563
+01:31:51,371 --> 01:31:57,471
+Object input stream waits for all the necessary bytes until it constructs the object.
+
+564
+01:31:57,752 --> 01:32:09,211
+After it constructs the object, it gives it, after it constructs the objects, then the object input stream has a method called read object.
+
+565
+01:32:09,711 --> 01:32:14,731
+It will convert that object to whichever type that you want it to be converted.
+
+566
+01:32:14,771 --> 01:32:20,351
+In this particular case, I know that I inserted an integer type.
+
+567
+01:32:20,851 --> 01:32:48,851
+Object into this file. So whenever I read this object, I typecast it into integer type. So remember, whenever we use the typecasting, we are converting an object type into a type that we know. Okay. So in this particular case, we know that so we inserted integer type object because we are the one who insert this.
+
+568
+01:32:48,851 --> 01:32:52,851
+This object, we are the one who will read this object from the file.
+
+569
+01:32:53,152 --> 01:33:10,451
+So in this particular case, so, so apparently we put it an integer type object and we read this object and typecast it to integer and then assign the, this object to this local variable where the type is integer.
+
+570
+01:33:11,752 --> 01:33:14,711
+Now we are doing the same thing with the output stream.
+
+571
+01:33:14,711 --> 01:33:15,652
+So this time.
+
+572
+01:33:16,595 --> 01:33:20,435
+So, we want to write an object into the file.
+
+573
+01:33:20,635 --> 01:33:26,495
+So, in order to do that, we are chaining together the file output stream with the object output stream.
+
+574
+01:33:27,255 --> 01:33:27,395
+Okay.
+
+575
+01:33:27,935 --> 01:33:38,615
+And then we are creating an object output stream object and assign it to this local variable.
+
+576
+01:33:38,615 --> 01:33:43,115
+And then we are calling the write object method of the object output stream.
+
+577
+01:33:43,572 --> 01:33:51,231
+And so in this particular case, again, I am putting an integer type object into this file.
+
+578
+01:33:51,372 --> 01:34:01,492
+In that case, I am passing this integer object into write object method, which will then be inserted back into the file.
+
+579
+01:34:03,332 --> 01:34:03,932
+Okay.
+
+580
+01:34:06,311 --> 01:34:06,932
+Now.
+
+581
+01:34:10,195 --> 01:34:17,435
+When we write an object into a file, the thing that we are doing is called serialization.
+
+582
+01:34:18,056 --> 01:34:18,175
+Okay.
+
+583
+01:34:18,735 --> 01:34:21,195
+When we read something from...
+
+584
+01:34:21,747 --> 01:34:27,608
+A file and then we convert it into an object. The thing that we are doing is called deserilization.
+
+585
+01:34:28,047 --> 01:34:38,827
+Okay. Now, in order for us to do the serialization, we need to make sure that that object is a serializable object.
+
+586
+01:34:38,827 --> 01:34:49,747
+Okay. Which means that that object, that class in which this object belongs to is implementing the...
+
+587
+01:34:49,747 --> 01:35:12,127
+Java.io serializable interface. Okay, you will see examples of it in a minute. Okay, let's take a look at an example. Now in this particular example, I have a class called Arkadaş. And as you see, this class is implementing Java.io serializable. So which means that this
+
+588
+01:35:12,448 --> 01:35:18,408
+Objects of this Arkadaş class can be written into a file.
+
+589
+01:35:18,408 --> 01:35:31,888
+If I didn't have this implements Java.Serializable here, in that case, objects of Arkadaş cannot be written into the file.
+
+590
+01:35:32,507 --> 01:35:32,748
+Okay.
+
+591
+01:35:41,235 --> 01:35:49,456
+[öğrenci], şimdi bana şu kısmı da bitireyim ondan sonra hemen senin sorunu alacağım.
+
+592
+01:35:49,456 --> 01:35:55,456
+Okay. Now, here you see that I have...
+
+593
+01:35:56,851 --> 01:36:04,931
+Serial version UID, which has a type private.
+
+594
+01:36:04,931 --> 01:36:09,491
+It is defined as static final long.
+
+595
+01:36:10,571 --> 01:36:16,571
+So basically, whenever you have a class that is serializable,
+
+596
+01:36:16,911 --> 01:36:20,192
+you have to have the serial version UID.
+
+597
+01:36:20,595 --> 01:36:25,135
+Otherwise, you will get a warning when you compile this code.
+
+598
+01:36:25,435 --> 01:36:25,535
+Okay.
+
+599
+01:36:25,975 --> 01:36:32,315
+So Java compiler is looking for this information whenever you have a class that is serializable.
+
+600
+01:36:32,495 --> 01:36:46,855
+The reason for this is that so when you have an object of a class that you want to write into a file, in time, you might have different versions of this class.
+
+601
+01:36:47,444 --> 01:37:01,904
+Okay, if you have a different version of this class and if you are writing objects of different versions of this class into a file, then you need to have a way to differentiate these objects.
+
+602
+01:37:01,904 --> 01:37:15,404
+Okay, and this is the only way for us to differentiate every time we update these classes, we update the serial version UID and whenever we write.
+
+603
+01:37:15,444 --> 01:37:23,464
+An object of this class, this serial version UID is also written into that file.
+
+604
+01:37:24,464 --> 01:37:32,524
+Okay, here you see I have a global member fields and then I have a constructor and I have getter methods for the global member fields.
+
+605
+01:37:32,524 --> 01:37:35,544
+I have setter methods and two string methods.
+
+606
+01:37:37,652 --> 01:37:54,652
+Okay. I already talked about the annotations. And if you want to suppress a warning, then you need to have an annotation in this particular case. If I didn't have this realizable information, and if I wanted to...
+
+607
+01:37:56,564 --> 01:38:12,224
+If this class is realizable and if I didn't have the first line, then I would have the annotation which says suppress warnings serial, saying that I know that I don't have serial version UID, but it's okay.
+
+608
+01:38:12,503 --> 01:38:18,024
+So that the compiler won't give me any error.
+
+609
+01:38:18,024 --> 01:38:18,923
+Okay.
+
+610
+01:38:19,988 --> 01:38:31,307
+Okey. [öğrenci], senin sorunu hemen ben yanıtlamaya çalışayım. Hala buradasın. Şimdi senin sorun şeyle ilgiliydi. Bu...
+
+611
+01:38:35,636 --> 01:38:36,796
+Şunu alabiliyor muyum?
+
+612
+01:38:43,956 --> 01:38:56,015
+Okey. Sen şunu sormuştun. Aşağıdakilerden hangisi zero or more multilicity anlamına geliyordu değil mi?
+
+613
+01:38:58,135 --> 01:38:58,735
+Evet hocam.
+
+614
+01:38:59,095 --> 01:39:00,415
+Bu soruyla ilgiliydi evet.
+
+615
+01:39:01,175 --> 01:39:10,415
+Şimdi bunun için hani iki yönlü şey kullanmıştık ya yani bizim şeyimize bakacak olursak burada var mı?
+
+616
+01:39:13,108 --> 01:39:15,867
+UML diagramlarımızda.
+
+617
+01:39:23,220 --> 01:39:29,059
+Evet, yani şu tarafı, sadece şu tarafını şey yapalım, şunu düşünelim.
+
+618
+01:39:29,699 --> 01:39:34,139
+Burada hani bunu konuşurken buna zero or more diyoruz.
+
+619
+01:39:38,228 --> 01:39:46,228
+Eğer ben bunun yanında nokta nokta bir koymuş olsaydım, zero ya da zero'dan bire kadar olmuş olacaktı.
+
+620
+01:39:47,488 --> 01:39:53,387
+Hocam orada cevaplardan birinde nokta nokta sıfır da vardı şu C şıkkı. O yanlış mı?
+
+621
+01:39:56,268 --> 01:40:00,000
+Bu yanlış evet. Yani şey hani burada bir...
+
+622
+01:40:00,000 --> 01:40:07,800
+Sayı olması demek buradaki 0'nun, ya bu aslında yanıltıcı bir seçenek.
+
+623
+01:40:07,899 --> 01:40:10,099
+Yani böyle bir şeyi görmemiş olman lazım.
+
+624
+01:40:10,220 --> 01:40:13,960
+Ama bunun yerine bir integer koymuş olsaydın ne koyardın?
+
+625
+01:40:14,059 --> 01:40:15,899
+1 koyardın, 2 koyardın, 3 koyardın.
+
+626
+01:40:15,899 --> 01:40:17,300
+Onun anlamı da şu olurdu.
+
+627
+01:40:17,939 --> 01:40:22,880
+Hani sıfırdan 1'e 2'ye kadar şeyi olabilir.
+
+628
+01:40:23,260 --> 01:40:26,039
+Hani obje olabilir olurdu.
+
+629
+01:40:26,380 --> 01:40:27,960
+Ama hani bu şey doğru.
+
+630
+01:40:28,000 --> 01:40:30,479
+yanıt değil, yanıltıcı yanıt olarak koymuşlar.
+
+631
+01:40:32,119 --> 01:40:38,180
+Hocam ben mailde soruyu sordum da size fotoğraf eklemiştim oraya.
+
+632
+01:40:39,899 --> 01:40:43,059
+Bazı kaynaklarda bu da zero or more diye geçiyor.
+
+633
+01:40:43,539 --> 01:40:46,880
+Yıldız Hacan'ın işte short versiyonu gibi de geçiyor.
+
+634
+01:40:46,880 --> 01:41:06,500
+Okey, yani şey hani doğrudur hani ama bizim derste işlediğimiz notation da özellikle bunu belirttik ama hani farklı kaynaklarda bunun şu notation'ın olmuş olması bunun doğru olduğu anlamına gelmiyor.
+
+635
+01:41:06,619 --> 01:41:10,720
+Yani bunun mantığından gitmeni istiyorum. Yani böyle bir şeyi niye koyarsın?
+
+636
+01:41:10,720 --> 01:41:11,539
+Zero'dan zero.
+
+637
+01:41:11,539 --> 01:41:31,779
+Hani buraya bir koymuş olsan ve şey olur. Hani zero bir olur. Ama hani mesela şurada zero or more şey konsepti var ya. Hani şu onu vermiyor. Hani farklı kaynak bunu söylemiş olsa bile.
+
+638
+01:41:34,100 --> 01:41:35,100
+Anladım hocam.
+
+639
+01:41:35,439 --> 01:41:38,139
+Sanırım hani sen bunu söylüyorsun. C'yi değil de B'yi söylüyorsun.
+
+640
+01:41:38,139 --> 01:41:39,019
+B'yi, B'yi aynen.
+
+641
+01:41:39,259 --> 01:41:55,199
+Sen B'yi söylüyorsun. Hani bu zero or more söylemiş olsa bile hani bu şey bizim şu ana kadar kullandığımız bütün kaynaklarda bu ama hani şey bu direkt translation olmuş yani.
+
+642
+01:41:56,779 --> 01:42:02,199
+Ben şey için sordum yani şey sınavdan sonra birçok kaynağı.
+
+643
+01:42:02,479 --> 01:42:14,559
+Araştırdım. İşte videolarda falan da bunu kullanıyorlardı. Yani E şıkkı da doğru ama ikisi de aslında aynı anlama geliyor. Ben yani kaynaklarda öyle buldum.
+
+644
+01:42:14,559 --> 01:42:15,559
+Yani şey...
+
+645
+01:42:16,083 --> 01:42:44,083
+Sen şöyle yapalım istersen, hakkınız da kaybolmasın. Sen bana bu kaynakların linklerini bir de şeylerini gönder. Bu soruları ben hazırlamamıştım. Ben ilk hocamıza göndereyim. Bir öğrencinin böyle bir şeyi var diye. Hocamız değerlendirsin ama dediğim gibi bu E'nin yanlış olduğu anlamında değil. Yani B'nin de ek olarak doğru olabileceği.
+
+646
+01:42:44,083 --> 01:43:05,003
+konusunda senin bir iddian var. Ben bunu ileteyim. Hocalarımızı değerlendirmesi. Ama derste hani biz hiç bu notation'ı kullanmadık. Hani onu bilgi olarak sana veriyorum. Ama senin şeyini de değerlendirmesi için diğer hocalarımıza da ileteceğim. Çünkü böyle bir değişiklik olursa sadece senin için olmaz. Bütün üç tane sınıf için olur.
+
+647
+01:43:06,463 --> 01:43:07,923
+Tamamdır hocam. Teşekkür ederim.
+
+648
+01:43:09,564 --> 01:43:09,884
+Okey.
+
+649
+01:43:11,252 --> 01:43:14,772
+Sen sınavın var galiba sen ayrılabilirsin biz devam edelim.
+
+650
+01:43:43,923 --> 01:43:48,644
+Okay, so we said that, so we have the suppress warning notation.
+
+651
+01:43:49,524 --> 01:44:04,804
+We have the suppress warning notation, which basically is used whenever if we have a serializable class and if we don't use the serial version UID, then we have to use suppress warnings serial.
+
+652
+01:44:04,804 --> 01:44:11,084
+Otherwise, whenever we compile our code, Java compiler will give us the warnings.
+
+653
+01:44:12,564 --> 01:44:13,064
+Okay.
+
+654
+01:44:15,484 --> 01:44:20,423
+Now, let's take a look at the Arkadaş oluştur class.
+
+655
+01:44:21,624 --> 01:44:24,024
+And here you see I have a main method.
+
+656
+01:44:24,164 --> 01:44:32,684
+In this main method, I am creating an integer type.
+
+657
+01:44:32,684 --> 01:44:40,083
+I'm defining an integer type, local variable, Arkadaş say, so this is for me to keep track of the number of
+
+658
+01:44:40,435 --> 01:44:42,975
+Objects that I'm going to write into this file.
+
+659
+01:44:43,915 --> 01:44:54,075
+And then I'm creating and defining, I'm not creating at this point, I'm defining an array where the array type is Arkadaş.
+
+660
+01:44:55,035 --> 01:45:02,615
+And then I'm creating scanner object and assigning the reference to the scanner object to this local variable where the type is scanner.
+
+661
+01:45:03,764 --> 01:45:12,664
+And I'm writing something into the screen asking the user enter the number of p Arkadaş that you want to enter.
+
+662
+01:45:12,664 --> 01:45:15,424
+The user enters an integer value.
+
+663
+01:45:15,664 --> 01:45:21,964
+Then I assign it to this Arkadaş say variable which I defined earlier.
+
+664
+01:45:23,644 --> 01:45:24,324
+Okay.
+
+665
+01:45:24,964 --> 01:45:31,264
+And then what I do is that now I'm creating an array of Arkadaş.
+
+666
+01:45:31,764 --> 01:45:39,104
+And assigning the reference to this array to Arkadaşlar, array which I defined earlier.
+
+667
+01:45:39,664 --> 01:45:49,344
+Now at this point, now I have an array of Arkadaş, but note that I did not create the Arkadaş objects yet.
+
+668
+01:45:49,484 --> 01:45:52,064
+I only created the Arkadaş array.
+
+669
+01:45:52,064 --> 01:45:53,144
+Okay.
+
+670
+01:45:53,844 --> 01:45:59,184
+And I assign the arkadaş array to arkadaşlar name.
+
+671
+01:45:59,684 --> 01:45:59,784
+Okay.
+
+672
+01:46:00,344 --> 01:46:06,784
+And then what I do is that I do a for loop for arkadaş sayısı times.
+
+673
+01:46:07,891 --> 01:46:28,992
+And then in each iteration of this for loop, I'm asking the user to enter the name of the Arkadaş. Whenever the user enters, I create an Arkadaş object. Then I assign this Arkadaş object to the corresponding cell of the Arkadaşlar array.
+
+674
+01:46:29,716 --> 01:46:40,816
+Okay. And then for this arkadaş, I'm setting, I'm asking the telephone number and e-postal number, email from the user and I'm updating this object.
+
+675
+01:46:41,316 --> 01:46:48,516
+And now at the end of the first iteration, now I have an arkadaş object in the first cell of the arkadaşlar array.
+
+676
+01:46:48,596 --> 01:46:51,656
+And I keep doing this for the arkadaş sayısı.
+
+677
+01:46:52,376 --> 01:46:52,856
+Okay.
+
+678
+01:46:56,916 --> 01:47:04,176
+Now, I have an array called Arkadaşlar, and in each cell of this array, I have an Arkadaş object.
+
+679
+01:47:04,756 --> 01:47:04,876
+Okay.
+
+680
+01:47:05,515 --> 01:47:11,515
+And the total number of objects in the Arkadaşlar array is Arkadaş sayısı times.
+
+681
+01:47:12,155 --> 01:47:12,395
+Okay.
+
+682
+01:47:12,956 --> 01:47:19,855
+Now, then, what I do is that I am in the try catch block, in the try segment.
+
+683
+01:47:20,319 --> 01:47:24,159
+I am creating an object output stream.
+
+684
+01:47:24,300 --> 01:47:32,739
+Remember, whenever I want to write an object into a file, I use, I chain together object output stream and the file output stream together.
+
+685
+01:47:33,239 --> 01:47:43,359
+Here you see I am chaining together the file output stream and the object output stream and assigning the reference to this object output stream to this variable here.
+
+686
+01:47:45,039 --> 01:47:45,659
+Okay.
+
+687
+01:47:45,659 --> 01:47:47,399
+And then I am writing.
+
+688
+01:47:48,243 --> 01:47:55,724
+An object to this file. And what is the object that I'm writing? Arkadaş sayısı integer object.
+
+689
+01:47:56,500 --> 01:48:06,720
+Okay, now the first object that I insert into this file is the number of Arkadaş that I will insert, which is integer object, right?
+
+690
+01:48:07,019 --> 01:48:24,199
+So the first object is the integer object. After I insert the integer object in which I have the number of Arkadaş that I will insert, okay, after that I do a for each loop, and within the for each loop, I am taking, I'm
+
+691
+01:48:24,500 --> 01:48:31,420
+taking every Arkadaş object from the Arkadaşlar array, and I am writing it into this file one by one.
+
+692
+01:48:32,220 --> 01:48:39,119
+Okay, now the first object is the integer object and the remainder objects are Arkadaş objects, right?
+
+693
+01:48:39,279 --> 01:48:41,300
+And then I am closing this file.
+
+694
+01:48:42,515 --> 01:48:53,615
+Okay, now at the end of this code segment, what I have done is that first I have written the number of Arkadaş object in an integer wrapper object into this file.
+
+695
+01:48:53,615 --> 01:49:00,455
+And after that, for that many number, I added the Arkadaş objects.
+
+696
+01:49:03,699 --> 01:49:26,919
+Okay. Now, what I have done is this serialization. So which means that I took an object in the physical memory and put it inside a file in the file system. So this is called serialization. Okay. Now what I'm going to do, I'm going to do deserilize. Okay. I'm going to take these objects from the files and put it into physical memory. So let's do that.
+
+697
+01:49:28,564 --> 01:49:33,884
+Now, this is this class called Arkadaş Göstler. Now, you see that it has a main method.
+
+698
+01:49:35,184 --> 01:49:45,783
+Okay, now, again, this time, since I'm going to be reading from the file, okay, I am chaining together the file input stream and the object input stream, okay?
+
+699
+01:49:46,452 --> 01:49:58,131
+And so I'm giving the name of the file to file input stream and I'm chaining this together to object input stream and which then will create an object input stream object.
+
+700
+01:49:58,391 --> 01:50:04,572
+And I will assign the reference to object input stream object to this local variable.
+
+701
+01:50:06,492 --> 01:50:13,391
+And after that, what I will do, I will read the first object from the file.
+
+702
+01:50:13,844 --> 01:50:21,123
+Ok, by using the object input stream and I will convert it into integer type.
+
+703
+01:50:22,123 --> 01:50:23,844
+I will do typecasting.
+
+704
+01:50:24,564 --> 01:50:39,024
+Since I already know the very first object in this file is an integer object, I am safely typecasting this object into integer because I am the one who wrote this file.
+
+705
+01:50:39,184 --> 01:50:41,524
+Now I am the one who will read from this file.
+
+706
+01:50:41,524 --> 01:50:42,043
+Okay.
+
+707
+01:50:42,444 --> 01:50:46,264
+Now the first object that I'm reading is the integer type.
+
+708
+01:50:46,344 --> 01:50:52,524
+So I'm typecasting into integer and then I will assign it to this local variable where the type.
+
+709
+01:50:52,564 --> 01:50:53,083
+integer.
+
+710
+01:50:53,939 --> 01:51:15,399
+And I will do a for loop and within the for loop, I will then read the rest of the objects within the file loop and then from the file and I will typecast it to Arkadaş object because I know that every other object after the integer variable is Arkadaş type objects.
+
+711
+01:51:15,399 --> 01:51:21,939
+So therefore I can safely typecast it to Arkadaş type object and I can print out the data.
+
+712
+01:51:21,939 --> 01:51:34,059
+of the Arkadaş. After I conclude this, I can close the file. Okay. So I can close the object input stream that I already created.
+
+713
+01:51:37,555 --> 01:51:44,055
+And since this is a file operation, obviously, I have catchphrases.
+
+714
+01:51:44,535 --> 01:51:53,715
+One catchphrase is, so it is catching the exception ending class for class not found exception because I'm reading from the file.
+
+715
+01:51:53,715 --> 01:52:04,955
+The other one is IO exception. Class not found exception handles the cases where the class is not the data, the file is not there.
+
+716
+01:52:05,555 --> 01:52:11,835
+So far, sorry, class not found exception is related with the type typecasting.
+
+717
+01:52:12,875 --> 01:52:19,535
+IEO exception is related with whether or not the data is not found in the file.
+
+718
+01:52:34,963 --> 01:52:42,863
+Okay, now let's take a look at the linked list version of this example.
+
+719
+01:52:42,863 --> 01:52:48,064
+Now, since if I use the linked list, then I don't have to.
+
+720
+01:52:48,448 --> 01:52:53,587
+Insert the number of objects that I'm going to write into a file.
+
+721
+01:52:53,587 --> 01:52:59,188
+OK, I can just write the whole linked list into the file.
+
+722
+01:52:59,528 --> 01:53:09,908
+OK, because linked list, as you know, as the object and I can use the linked list and every everything, every object inside the linked list into a file.
+
+723
+01:53:10,028 --> 01:53:14,387
+But the objects inside the linked list has to be sterilizable.
+
+724
+01:53:14,528 --> 01:53:16,188
+Otherwise, I would get an error.
+
+725
+01:53:16,448 --> 01:53:18,307
+Okay, pay attention to this.
+
+726
+01:53:18,887 --> 01:53:25,488
+If I want to write a linked list into a file, every object in the linked list has to be a serializable object.
+
+727
+01:53:26,207 --> 01:53:28,768
+Now, here is the example.
+
+728
+01:53:29,467 --> 01:53:35,228
+Now, again, I have the Arkadaş oluştur class, and within this, I have the main method.
+
+729
+01:53:35,347 --> 01:53:39,047
+In the main method, first thing that I do is that I'm creating a linked list.
+
+730
+01:53:39,423 --> 01:53:44,423
+So where the linked list will only include Arkadaş type objects.
+
+731
+01:53:44,944 --> 01:53:56,844
+And then I will assign the reference to this linked list object to this Arkadaşlar variable where the type of the variable is linked list here.
+
+732
+01:53:57,623 --> 01:54:06,024
+And I'm creating a scanner object and assigning the reference of the scanner object to this local variable where the type is scanner.
+
+733
+01:54:07,155 --> 01:54:09,036
+And I'm asking the...
+
+734
+01:54:09,587 --> 01:54:15,987
+I'm asking the user the number of arkadaş that he wants to enter.
+
+735
+01:54:16,728 --> 01:54:20,967
+And I do the same thing for the number of arkadaş sayısı.
+
+736
+01:54:21,327 --> 01:54:22,507
+I do a for loop.
+
+737
+01:54:23,087 --> 01:54:29,827
+But this time, instead of inserting these arkadaş objects into an array,
+
+738
+01:54:29,827 --> 01:54:37,228
+I am inserting, as you see, into the link list by using the add method of the arkadaşlar link list.
+
+739
+01:54:37,587 --> 01:54:44,467
+Okay. Now, at the end of this, now, Arkadaşlar link list will include all the Arkadaş objects.
+
+740
+01:54:46,148 --> 01:54:46,527
+Okay.
+
+741
+01:54:47,091 --> 01:54:52,231
+Now, I want to serialize this linked list into a file.
+
+742
+01:54:52,331 --> 01:55:03,971
+So what I do is that, again, I chain together the file output stream and the object output stream together and create an object of the object output stream called yazıcı.
+
+743
+01:55:04,771 --> 01:55:08,971
+And now, as you see, the only thing that I do is that...
+
+744
+01:55:09,235 --> 01:55:26,695
+And for, I'm calling the right object and I'm writing the whole linked list. And when I write the whole linked list, Java Virtual Machine will write not only the linked list itself, but all the objects inside of that linked list into this file. Okay, then I will call close.
+
+745
+01:55:28,015 --> 01:55:28,536
+Okay.
+
+746
+01:55:30,579 --> 01:55:36,439
+Now, so let's read it back. Let's do the deserialization with the linked list.
+
+747
+01:55:36,840 --> 01:55:48,519
+Okay. And it's, as you see in the main method, so I am chaining together the file input stream and object input stream and creating an object of the object input stream.
+
+748
+01:55:48,960 --> 01:55:57,859
+Okay. And then what I do is that I am calling the read object method, which will then read the linked list object from the file.
+
+749
+01:55:58,292 --> 01:56:08,152
+And I will typecast it to the linked list where the linked list will only keep the Arkadaş type objects.
+
+750
+01:56:08,851 --> 01:56:14,552
+And then I will typecast it and assign it to this variable where the type is linked list.
+
+751
+01:56:15,052 --> 01:56:22,992
+And now I have the whole linked list and inside of it all the whole Arkadaş objects in the physical memory.
+
+752
+01:56:23,412 --> 01:56:31,672
+And I can do a for loop for each loop on this linked list and I can write all the details of the Arkadaş objects within this linked list.
+
+753
+01:56:32,511 --> 01:56:36,792
+And after that, I need to close this input stream.
+
+754
+01:56:38,355 --> 01:56:44,576
+And similarly, I have two exception ending catchphrases.
+
+755
+01:56:44,956 --> 01:56:47,615
+One is the class not found exception.
+
+756
+01:56:47,916 --> 01:56:49,876
+It's related to the typecasting.
+
+757
+01:56:50,076 --> 01:56:56,916
+The other one, IO exception, it's related with the reading information or reading data from the file.
+
+758
+01:57:10,195 --> 01:57:30,195
+Okay, I'm going to stop here. So we are at inner classes. So next week, I will talk about inner classes, multi-threading, and I will also talk about graphical user interfaces with Swing. So make sure that you start the...
+
+759
+01:57:32,020 --> 01:57:32,980
+Term project.
+
+760
+01:57:33,640 --> 01:57:39,020
+Again, all the information related to term project is published on the website.
+
+761
+01:57:40,880 --> 01:57:41,320
+And
+
+762
+01:57:43,155 --> 01:57:52,555
+If you have any questions related to the term project, ask me or the assistant instructors.
+
+763
+01:57:53,895 --> 01:57:57,836
+But so this semester we won't have second midterm exam.
+
+764
+01:57:57,935 --> 01:57:59,595
+We will only have the term project.
+
+765
+01:57:59,595 --> 01:58:03,395
+So therefore the weight of the term project is increased.
+
+766
+01:58:04,076 --> 01:58:07,355
+Make sure that you complete the term project on time.
+
+767
+01:58:09,716 --> 01:58:11,956
+Evet, sorusu olan var mıdır arkadaşlar?
+
+768
+01:58:18,484 --> 01:58:20,544
+Okey, katıldığınız için teşekkür ederim.
+
+769
+01:58:21,644 --> 01:58:22,664
+Haftaya görüşmek üzere.
