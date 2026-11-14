@@ -1,0 +1,2267 @@
+1
+00:03:00,627 --> 00:03:01,267
+Hiptoniye.
+
+2
+00:03:50,132 --> 00:03:52,072
+Evet arkadaşlar, merhabalar, hoş geldiniz.
+
+3
+00:03:55,292 --> 00:03:55,692
+Merhaba.
+
+4
+00:04:06,195 --> 00:04:18,156
+Şimdi birinci sonundaki ilk nerededir? [kişisel bilgi]. Burada mıyız?
+
+5
+00:04:18,156 --> 00:04:19,935
+Aynen, evet, evet. Burayız.
+
+6
+00:04:20,375 --> 00:04:23,795
+Ekran paylaşımını yapabiliriz arkadaşlar, hemen gidelim.
+
+7
+00:05:06,100 --> 00:05:08,280
+Evet, ekipten herkes burada mı arkadaşlar?
+
+8
+00:05:15,187 --> 00:05:27,467
+Buyurun, 25 dakika süremiz var toplamda. O süreyi kendi içinizde ayarlayabilirsiniz. Buna göre ortalama 6'şer dakika gibi bir şey oluyor.
+
+9
+00:05:29,608 --> 00:05:33,647
+Aynı ekran geliyor değil mi? Şunu da geliyor. Tamamdır.
+
+10
+00:05:34,067 --> 00:05:47,187
+Başlayalım o zaman. Ben [öğrenci]. Bugün bizim projemizde perekande ortamında, ortam yanda müşteri deneyimini, iyileştirme bütün, ses bakışlı verilerin kullanılma hakkında aslında.
+
+11
+00:05:47,387 --> 00:05:54,647
+Aynı zamanda bu verileri kullanarak da yapay zeka destekli duygu ve davranış eğilimleri analiziyle model performans karşılaştırması aslında bulduğumuz.
+
+12
+00:05:58,196 --> 00:06:02,376
+Şimdi bu projeye bahsetmeden önce bir alışveriş deneyimlerinden bahsetmek gerekiyor.
+
+13
+00:06:03,276 --> 00:06:09,916
+Perekendi sektörüne zaten müşteri deneyimi, rekabetlerin gücünü arttırmak için çok kritik bir faktör oynayabiliyor.
+
+14
+00:06:10,016 --> 00:06:12,196
+Özellikle alışveriş arasında müşterilerin...
+
+15
+00:06:12,543 --> 00:06:18,603
+Çevresel faktörlerden nasıl etkilendiğini anlamak, özellikle daha iyi bir mazla atmosferi tasarımı için önemli oluyor.
+
+16
+00:06:19,303 --> 00:06:26,363
+Genelde bu tarz durumlar içinde görsel ve mekansal faktörler bu alanda sıklıkla çalışılıyor zaten.
+
+17
+00:06:26,543 --> 00:06:27,903
+Fotoğrafta da görüleceği üzere.
+
+18
+00:06:28,583 --> 00:06:34,403
+İşitsel çevre unsurlar işte müzik olsun veya arka plana bir gürültü olsun ya da tamamen sessizlik olsun.
+
+19
+00:06:35,091 --> 00:06:43,451
+Bu tarz müşterilerin ruh hali, memnuniyeti veya davranış eğilimleri üzerine tam bir etkisi araştırılmadığını görüyoruz literatürde de.
+
+20
+00:06:43,932 --> 00:06:54,211
+İşte literatürde yaptığımız araştırmalarda mağazada çalınan müziğin temposu veya sessizliğin olması, müşterilerin alışveriş süresini etkiler mi veya memnuniyeti üzerinde bir etkileri var mıdır?
+
+21
+00:06:54,803 --> 00:07:13,803
+gibi kapsamlı ve sistematik bir analizin eksik olduğunu görüyoruz. Özellikle akustik özelliklerin detaylı olarak incelenmesi ve bunu elde ettiğimiz verilerden yolu çıkarak yapay zeka tabanlı analiz yöntemleriyle desteklenen araştırmaları oldukça sınırlı olduğunu da görüyoruz burada. Aslında projede amacımız...
+
+22
+00:07:14,079 --> 00:07:23,980
+Bu ortamlarda sesin önemini, denilemesini ele almak ve işitsel verilerin müşteri deneyimindeki rolünü ele almak aynı şekilde de ve bu bilgi hoşlanırı doldurmaya amaçlıyoruz aslında.
+
+23
+00:07:24,819 --> 00:07:31,439
+Elde ettiğimiz bu sonuçlarda da hem akademik çerçevede hem de metodolojik katkı sağlayacağına da öndürüyoruz diyebilirim.
+
+24
+00:07:31,519 --> 00:07:37,159
+Hem aynı zamanda da hipotez geliştirmekte de kullanılabilir tabii ki de prekende alışverişlerinin önünde.
+
+25
+00:07:37,819 --> 00:07:39,915
+Amaçlara gelecek olursan...
+
+26
+00:07:39,987 --> 00:07:57,367
+En önemli amacımız zaten müşteri deneyimi ve perakendi ortamlarında farklı akustik koşulların seslilik olması veya müzikli olması, müziğin türüne göre de değişiklik gösterecek şekilde veya gürültülü olması müşteri deneyimi üzerine etkileri araştırmayı da başlıyor.
+
+27
+00:07:57,367 --> 00:08:03,367
+Ve bu çalışma aynı zamanda müşterinin o anki ruh halini etkiliyor mu, memnuniyetini etkiliyor mu veya o...
+
+28
+00:08:03,935 --> 00:08:13,216
+Alışveriş yaparken davranış eğilimlerini ne gibi farklılıklar oluşturuyor. Bu tarz stratejik öneriler geliştirmek için deneysel bir tasarım kuruluyor aslında.
+
+29
+00:08:13,755 --> 00:08:18,315
+Aynı şekilde de bu işleri yaparak da bir veri toplamamız gerekiyor ki bir model eğitelim.
+
+30
+00:08:18,975 --> 00:08:26,355
+İşte müşteri deneyimi üzerinde hem nitel hem de nicel veri toplama yöntemleriyle edilerek kapsamlı bir analiz gerçekleştirmek istiyoruz.
+
+31
+00:08:27,028 --> 00:08:38,908
+Elde ettiğimiz verilerle de makine öğrenmesi algoritmalarını kullanarak farklı ses koşullarının, sessiz olsun, müzikli olsun veya gürültü olsun etkiler üzerine daha denilemesini inceleyeceğini de arayacağım.
+
+32
+00:08:38,908 --> 00:08:40,148
+Amacımız oluyor.
+
+33
+00:08:40,528 --> 00:08:50,988
+Ve en son da elde ettiğimiz veriler ve deneyimlediğimiz makine öğrenmesiyle en son elde eden çıktı da PRKM satış stratejisinde.
+
+34
+00:08:51,827 --> 00:09:09,048
+Katkı sağlayarak mağaza atmosferinin optimize edilmesine yönelik pratik çözümler sağlamak aslında. Böylelikle de amacımız aslında işitsel çevre düzenli önemi, işletme performansına göre veya müşteri mümkünün artırına potansiyel olarak ortaya koyabiliriz amaç olarak. Hedeflediğimiz belli başlık problemler var.
+
+35
+00:09:09,620 --> 00:09:23,440
+Literatür de yine daha önce de bahsettiğim gibi görsel ve metinsel faktörlere odaklanılıyor genelde. Ses için bu tam olarak söyleyemeyiz literatür için. Göz ardı edilen bir faktör olarak söyleyebiliriz.
+
+36
+00:09:23,960 --> 00:09:36,600
+İşsel çevrenin müşteriliği üzerinde etkisini ortaya koyarak perakende sektörüne bazı atmosferine daha verimli ve müşter odaklı bir aslında optimize edilmesine katkıda bulmaya da hedefliyoruz. Burada belli başlı problemlerimiz var hedeflediğimiz.
+
+37
+00:09:37,940 --> 00:10:04,440
+Bu literatürdeki çalışmalar genellikle görsel veya metinsel odaklanmalar oluyor. İşte ne oluyor? Günümüz perakende ortamlarında mağaza müzikleri ve genel ses düzenlemeleri genellikle sezgisel olarak yapılıyor. Yani bu deneysel olarak yapılmıyor. Bir değişiklik yapılabilir mi bu konu hakkında veya mağaza stratejisi yüzlerinde bir etkisi olabilir mi? Bu tarz şeyler yapılmıyor genel anlamda. Aynı şekilde de işte ses koşullarının müşterinin mühendislerinin etkisini anlamak.
+
+38
+00:10:04,788 --> 00:10:10,647
+Ve perakende mağazaların müşteri odaklı hizmet sunumlarını iyileştirmesine de katkı sunmak istiyoruz.
+
+39
+00:10:49,620 --> 00:10:53,339
+Bunun da şey, devam edebilirsin, bir ses mi kesildi?
+
+40
+00:10:57,908 --> 00:10:58,908
+[öğrenci] duyuyor musun?
+
+41
+00:11:00,688 --> 00:11:06,488
+Hocam, okulda elektrik gitti birden. Muhtemelen [öğrenci] de sınıfların birindeydi. Bilgisayar kapanmış olabilir, emin değilim.
+
+42
+00:11:11,635 --> 00:11:15,096
+Diğer sıradaki aynı ekipten arkadaş kim var?
+
+43
+00:11:17,615 --> 00:11:24,316
+Ben varım da. Ekran paylaşımını başka biri yapabilir mi? Paylaşamayacağım.
+
+44
+00:11:27,764 --> 00:11:29,303
+Ben ne krempe de şim.
+
+45
+00:11:38,580 --> 00:11:39,940
+Herhalde geldi herhalde.
+
+46
+00:11:40,240 --> 00:11:44,220
+Aynı, düştüm bir ara. Hemen geri paylaşayım ekran.
+
+47
+00:11:50,292 --> 00:12:13,192
+Özgün değerlerde kalmıştık diye tutamıyorum. Hemen devam edeyim oradan. Doğru hatırlıyorsam. Veri çeşitliğinden tekrar bahsedeyim. Hem nitel hem de nicel veri kaynaklarımız var. Nitel veri olarak anketler olsun, davranış gözlemleri olsun, akustik özellikler de aynı şekilde. Bunları hem nitel verileri hem de nicel verileri bir araya getirerek aslında kapsamlı bir veri seti oluşturmak istiyoruz.
+
+48
+00:12:13,716 --> 00:12:29,716
+Aynı şekilde de bu elde ettiğimiz verileri, hem nitel verileri hem de intihal verileri, makine öğrenmesi yardımlarıyla, işte SBM olsun, karar araçları, Run the Force, MLP, CNN gibi algoritmları kullanarak sesin müşteri deneyimine bir etkileri var mı ve daha hassas ve öngörüleyebilir şekilde incelenmesi hakkında.
+
+49
+00:12:30,475 --> 00:12:34,716
+Ve aynı şekilde bir pratik uygulamalar, özellikle sadece teorik katkılarla sınırlık almayıp işte...
+
+50
+00:12:35,443 --> 00:12:50,283
+Bu sektöre yönelik stratejiler öneriler de sunmak istiyoruz. Müşteri memnuniyeti artırmak için stratejilerin nasıl optimize edebileceğini gösterecek bir şekilde. İteratürde de böyle bir yenilik yapmak istiyoruz aynı şekilde. İş self-factorlilerin gerekende ortamında, rolü hakkında.
+
+51
+00:12:52,403 --> 00:13:07,303
+Peki araştırma sorumuz ne? Akustik koşulları kontrol ederek sessizlik, farklı tempolarda müzik gürültü ve müşterilerin duygusal durumunu, memnuniyetin ve davranış yerinlerini ölçülebilir ve engörülebilir bir şekilde etkiler mi? Hipotezimiz ne oluyor burada?
+
+52
+00:13:07,923 --> 00:13:14,403
+Farklı akustik ortam koşulları, müşteri deneyimlerinin anlamlı bir etkiye sahip olduğunu aslında öngörüyoruz.
+
+53
+00:13:14,783 --> 00:13:26,943
+Ve sessiz, müzikli veya gürültülü ortamlarda müşterilerin ruh halini, mağazalara kalış sürelerini veya genel memnuniyet düzeylerini, farklı biçimlerine etkileyeceğini öngörülerek böyle bir hipotez oluşturmuş oluyoruz böylelikle.
+
+54
+00:13:27,347 --> 00:13:44,847
+Hedeflerimiz var belli, dört adet. Veri toplama ve çeşitlendirme, daha önce de bahsettiğim gibi farklı akustik koşullarda verileri toplam var. Nitel veriler de olsun, anketler, müşteri yeri bildirimleri veya nicel veriler, mağazada geçirilen süre, ürün sayısı, akustik özellikler gibi nicel veriler de aynı şekilde.
+
+55
+00:13:48,596 --> 00:13:56,375
+Daha sonra akustik özelliklerin analizi de var. Ses kayıtlarını kullanarak belli akustik özelliklerin çıkarılması ve bu müşteri davranışlarından nasıl bir etkileri var.
+
+56
+00:13:56,375 --> 00:14:06,395
+Ve aynı şekilde elde ettiğimiz ve ilerle birlikte makine dönemesi modellerinin geliştirilmesi ve en son açıkta da uygulanabilir stratejiler ve geliştirme olarak söyleyebiliriz hedef olarak.
+
+57
+00:14:07,316 --> 00:14:08,656
+Burada [öğrenci]'yı bırakayım.
+
+58
+00:14:10,740 --> 00:14:22,740
+Merhabalar, ben [öğrenci]. Araştırmanın yöntem kısmında projenin nasıl gerçekleştirdiğine dair adımlardan ve kullanılacak tekniklerden bahsedeceğim. Sonraki sayfaya geçebiliriz.
+
+59
+00:14:24,179 --> 00:14:32,919
+Biz bu araştırmayı perakenti ortamlarındaki sesin müşteri deneyim üzerindeki etkilerini anlamaya amaçlayan bir deneysel bir çalışma olarak tasarladık.
+
+60
+00:14:33,039 --> 00:14:41,439
+Çalışmamızda sessiz, müzikli ve gürültülü olmak üzere üç farklı ses ortamında müşteri memnuniyeti, ruh hali ve davranışlar üzerindeki etkilerini inceleyeceğiz.
+
+61
+00:14:41,959 --> 00:14:45,899
+Bu amaçla gerçek bir mağaza ortamında kontrollü deneyler gerçekleştireceğiz.
+
+62
+00:14:45,899 --> 00:14:52,120
+Deney sırasında mağaza ortamındaki sesleri kaydedecek ve bu kayıtlardan akustik özellikler çıkaracağız.
+
+63
+00:14:52,179 --> 00:14:57,019
+Ayrıca anketler aracılığıyla müşterim memnuniyet ve ruh haline ilişkin veriler toplayacağız.
+
+64
+00:14:57,759 --> 00:15:05,759
+Topladığımız verilerle de makine öğrenmesi yöntemleri kullanarak modeller geliştirecek ve ortam seslerinin müşteri deneyimi üzerindeki etkilerini tahmin edeceğiz.
+
+65
+00:15:06,179 --> 00:15:11,639
+Bu sayfada araştırma tasarımının temel adımlarını da görebiliyoruz. İlk adımda deney ortamının hazırlanması yer alınıyor.
+
+66
+00:15:11,639 --> 00:15:19,639
+Bu aşamada deneylerin yapılacağı mağaza ortamının gerekli düzenlemelerini yapacağız. Biz bu mağaza ortamı olarak orta ölçekli bir...
+
+67
+00:15:20,179 --> 00:15:48,179
+Süpermarket tercih ettik. Mağaza içindeki ürün yerleşimi, aydınlatma, sıcaklık gibi çevresel faktörleri sabit tutarak yalnızca sesleri değiştireceğiz. İkinci adımda ekipman ve araçların kurulumu yapılacak. Ses kayıt cihazları ve diğer gerekli araçları mağaza içerisine yerleştireceğiz ve ortamı deney sürecine uygun hale getireceğiz. Sonraki adımda katılımcıların seçimi ve bilgilendirilmesi yapılacak. Deney için katılımcılar rastgele seçilecek ve deneyin amacı süreci ve etik kurulacak.
+
+68
+00:15:48,179 --> 00:15:51,399
+Kuralları hakkında bilgilendirilip onaylar alınacak.
+
+69
+00:15:52,799 --> 00:15:55,819
+Dördüncü atımda DNA'ların gerçekleştirilmesine başlayacağız.
+
+70
+00:15:55,819 --> 00:16:01,500
+Her bir ses ortamında deneyler yapacağız ve bu süreçte müşteri davranışları, müşterinin emniyetliği ile ilgili veriler toplayacağız.
+
+71
+00:16:02,419 --> 00:16:04,639
+Son adımda da toplanan verileri analiz edeceğiz.
+
+72
+00:16:04,759 --> 00:16:11,679
+Deney süresince elde edilen verileri, istatiksel analiz yöntemleri ve makine öğrenimi teknikleri kullanarak değerlendireceğiz.
+
+73
+00:16:12,159 --> 00:16:13,639
+Sonraki sayfaya geçebiliriz.
+
+74
+00:16:15,124 --> 00:16:27,064
+Bu sayfada bağımsız değişkenler olarak 3 farklı ses ortamını görmekteyiz. Bu ses ortamları deneyin temel değişkenleri olup, müşteri deneyim üzerindeki etkilerini incelemek için kullanacağız.
+
+75
+00:16:27,304 --> 00:16:34,004
+Çalışmamızda sessiz ortam, müzikli ortam ve gürültülü ortam olmak üzere 3 farklı ses koşuluna odaklanıyoruz.
+
+76
+00:16:34,724 --> 00:16:43,124
+Sessiz ortam, herhangi bir müzik veya dış gürültü bulunmayan ortam. Bu ortamın sesin etkisini değerlendirebilmek için kontrol grubu olarak kullanacağız.
+
+77
+00:16:43,124 --> 00:16:59,283
+Gürültülü ortamda gerçekçi bir mağaza ortamını simüle etmek için insan ses konuşmaları, kasa sesleri, ambalaj şişırtları gibi seslerden oluşan bir ses kaydı kullanacağız. Bu ortamda alışveriş sırasında yaşanabilecek gerçek deneyimi yansıtmaya başlıyoruz.
+
+78
+00:16:59,283 --> 00:17:08,284
+Müzikli ortamda ise farklı müzik türleri ve tempoları kullanarak sesin müşteri deneyimi üzerindeki etkisini analiz edeceğiz. Sonraki sayfaya geçebiliriz.
+
+79
+00:17:10,036 --> 00:17:30,476
+Müzikli ortamda müşteri deneyimini incelemek için iki temel değişkene odaklandık. Müzik türü ve tempo. Bu ortamda müşterilere klasik, pop, rock, jazz ve elektronik olmak üzere beş farklı türde müzik dinleteceğiz. Bu çeşitlilik farklı müzik türlerinin müşteriler üzerinde nasıl etkiler yarattığını anlamamıza yardımcı olacak.
+
+80
+00:17:38,036 --> 00:17:59,036
+Etkisini daha detaylı bir şekilde incelemeye başlıyoruz. Müzikler yavaş, orta, hızlı tempolarda sunulacak. Böylece hem müzik türünün hem de temponun müşterilerin ruh hali ve alışveriş davranışları üzerindeki etkisini kapsamlı bir şekilde analiz edebileceğiz. Sonraki sayfaya geçebiliriz.
+
+81
+00:18:00,956 --> 00:18:03,155
+Bu BPM ne acaba?
+
+82
+00:18:03,892 --> 00:18:05,532
+Weeds permit.
+
+83
+00:18:05,532 --> 00:18:06,532
+Yeah.
+
+84
+00:18:08,531 --> 00:18:15,211
+Araştırmamızdaki bağımlı değişkenler ortam seslerinin müşteri üzerindeki etkilerini ölçmek için belirlediğimiz ölçütler.
+
+85
+00:18:15,811 --> 00:18:23,152
+Bunlardan ilki müşteri memnuniyeti. Bu ölçüt müşterinin ortam sesinde alışveriş deneyimini nasıl değerlendirdiğini gösteriyor.
+
+86
+00:18:23,152 --> 00:18:28,791
+Bu verileri anketler aracılığıyla toplayacağız ve bu anketlerde yedirli dikart ölçeyi kullanacağız.
+
+87
+00:18:29,311 --> 00:18:36,531
+Örneğin bu ortamda alışveriş deneyiminizi nasıl değerlendirirsiniz gibi sorularla müşterinin memnuniyet düzeyini beliriyoruz.
+
+88
+00:18:36,531 --> 00:18:58,071
+Yüksek memnuniyet puanları da ortam sesinin olumlu bir etkisi olduğunu gösterecek. Bir diğer ölçüs ise müşteri ruh hali ortam sesinin, müşterilerin stres, mutluluk gibi duygusal durumları üzerindeki etkisini anlamaya çalışacağız. Bu da yine anketlerle ölçülecek ve yedirli likart ölçeyi kullanacak. Son olarak da müşteri davranışlarını incereceğiz.
+
+89
+00:18:59,380 --> 00:19:08,039
+Mağazada geçirilen toplam süre, satın alınan ürün sayısı ve harcanan para miktarı gibi somut ölçütlere odaklanıyoruz.
+
+90
+00:19:08,200 --> 00:19:19,220
+Örneğin, mağazada geçirilen toplam süre müşterilerin ortam sesinden nasıl etkilendiğini ve bu etkin onları mağazada daha uzun veya kısa sürede tutup tutmadığını anlamamızı sağlayacak.
+
+91
+00:19:19,380 --> 00:19:27,380
+Satın alınan ürün sayısı ise sesin satın alma eğilimlerini nasıl etkilediğini gösterecek. Harcanan para miktarı da ortam sesinin satış acımıza.
+
+92
+00:19:27,380 --> 00:19:34,760
+Bu verileri gözlemler ve kameralar oyuncuyla kaydedeceğiz. Sonraki sayfaya geçebiliriz.
+
+93
+00:19:36,468 --> 00:19:52,928
+Veri toplama sürecinde çeşitli araçlar ve yöntemler kullanacağız. İlk olarak 7.0'lik kart ölçeği ile hazırlanmış anketlerimiz olacak. Bu anketlerle bir önceki slide'da bahsettiğim müşteri geri bildirimlerini toplayacağız. Örneğin, ortam sesi alışveriş deneyimizi nasıl etkiledi gibi sorular soracağız.
+
+94
+00:19:53,387 --> 00:20:02,347
+Ayrıca aynı konuda birkaç farklı soru sorarak katılımcıların verdikleri cevapların tutarlığını da ölçmeyi planlıyoruz. Bunun yanı sıra kameralar ve gözlemler.
+
+95
+00:20:02,771 --> 00:20:24,771
+Gözlemciler kullanacağız. Bu araçlarda müşterilerin mağazada geçirdiği süre, satın alınan ün sayısı gibi davranışlar verileri kaydedeceğiz. Ses kayıt cihazları yine de mağaza ortamındaki sesleri kaydedeceğiz. Bu kayıtların ortamının oksistik özelliklerini analiz etmek, farklı ses koşullarını karşılaştırmak için kullanacağız. Sonraki sahifeye geçebiliriz.
+
+96
+00:20:25,119 --> 00:20:36,319
+Ankette de bu ortamda alışveriş deneyimizi nasıl değerlendirirsiniz? Bu ortamda alışveriş yaparken kendinizi rahat hissettiğiniz mi? gibi sorular soracağız. Sonraki sayfaya geçebiliriz.
+
+97
+00:20:37,172 --> 00:21:02,092
+Araştırmamızda çeşitli analiz yöntemleri kullanacağız. İlk olarak ses verilerimizi üzerinde bazı ön işlemler gerçekleştireceğiz. Bu aşamada ses kayıtlarında bulunan, istenmeyen gürültüler temizlenecek ve ardından akustik özellikler çıkarılacak. Akustik analizde MFCC spektral özellikler gibi metrikleri kullanacağız. Aynı şekilde anketlerden elde eden veriler de gözden geçirecek.
+
+98
+00:21:02,511 --> 00:21:12,751
+Eksik veriler ortalama veya medyan gibi yöntemler de tamamlanacak. Hatalı veriler ise düzeltilmeye çalışılacak.
+
+99
+00:21:13,652 --> 00:21:18,652
+Bir sonraki adımda toplanan verilerin temel istatiksel özelliklerini değerlendireceğiz.
+
+100
+00:21:19,192 --> 00:21:23,512
+Örneğin, ortalama, medyan ve standart satma gibi değerleri hesaplayacağız.
+
+101
+00:21:24,192 --> 00:21:28,211
+Gruplar arasındaki farkları test etmek için S-Varyans Analizi yöntemini kullanacağız.
+
+102
+00:21:29,172 --> 00:21:32,932
+Son olarak, makine öğrenmesi modelleri kullanarak daha derinleme sanalizler yapacağız.
+
+103
+00:21:32,932 --> 00:21:37,652
+Bu modelleri kullanmamızın temel amacı ses ortamlarının müşteri davranışları.
+
+104
+00:21:38,579 --> 00:21:46,980
+Müşteri memnuniyeti, ruh hal ve davranışları üzerindeki etkilerini daha detaylı bir şekilde analiz etmek ve bu etkileri öngörebilmek.
+
+105
+00:21:47,480 --> 00:21:55,859
+Bu süreçte karar araçları, rastgele ormanlar, destek vektör makineleri, multilayer, persoptron ve CNN gibi algoritmalardan faydalanacağız.
+
+106
+00:21:56,480 --> 00:22:01,159
+Her modelin performansını artırmak için hiper parametre optimizasyonu yapacağız.
+
+107
+00:22:01,159 --> 00:22:06,579
+Bu modellerin başarılarını doğruluk, F1 skoru, precision ve recall gibi belirleyeceğiz.
+
+108
+00:22:06,579 --> 00:22:09,779
+Centriklerle değerlendireceğiz. Bir sonraki sayfaya geçebiliriz.
+
+109
+00:22:11,251 --> 00:22:34,592
+Projeye başlamadan önce küçük ölçekli bir oyun çalışma gerçekleştirdik. Bu çalışmayı hedeflediğimiz süpermarket ortamına benzer ancak daha küçük ölçekli bir perakende mağazasına yaptık. Çalışmaya 15 katılımcı dahil oldu ve her bir katılımcıya rastgele bir ses koşuldan, sesli, müzikli, pop müzik bulandık veya gürültülü ortamı atayarak testleri gerçekleştirdik.
+
+110
+00:22:39,251 --> 00:22:49,051
+Her müzikli ortamın sessiz ortama kıyasla müşteri memnuniyetini ve mağazada geçirilen süreyi artırdığını, görüntülü ortamın ise bu ölçüleri azaldığını gösteriyor.
+
+111
+00:22:49,051 --> 00:22:55,951
+Bu ön çalışmayla projenin başarıyla uygulanabileceğini de doğrulamış olduk. Şimdi sözü [öğrenci]'a bırakıyorum.
+
+112
+00:22:57,431 --> 00:22:58,931
+Merhabalar, ben [öğrenci].
+
+113
+00:22:59,923 --> 00:23:23,403
+Şimdi etik hususlardan bahsedeceğim. Daha sonrasında diğer kısımlara geçeceğim. Şimdi etik hususları aslında projede büyük bir önem taşıyor. Bu tarz projeler aslında çoğu kişi tarafından yapılabiliyor ama etik konularına geldiğimiz zaman aslında izinler vesaire çok uğraştıran kısımlar. Bu anlamda ilk olarak pilot bölge çalışma yapacağız dediğimiz gibi. Bu alan için ilk başta gelen katılımcılardan onay yazısı alacağız.
+
+114
+00:23:23,903 --> 00:23:27,124
+Daha sonrasında bunun gönüllü kısası proje olduğundan da bahsedeceğiz.
+
+115
+00:23:27,744 --> 00:23:38,264
+Ayrıca biz kamera ve ses kayıt cihazları kullandığımız için ve bunlar da KBK kapsamında saklanması gereken verileri olduğu için burada anonimlik ve gizlilik kısımlarına çok dikkat edeceğiz.
+
+116
+00:23:38,264 --> 00:23:48,824
+Ve bunları da en sonunda elde ettiğimiz bütün verileri ve gizlilikleri de etik duruz onayına sunarak oradan gelen geri dönüşler ve kabullere göre de projemize devam edeceğiz.
+
+117
+00:23:50,204 --> 00:23:51,244
+Son ilk sayfaya geçebiliriz.
+
+118
+00:23:53,236 --> 00:24:10,196
+Şimdi projemizde tabii ki bir iş zaman çizelgesi tasarladık. Bu zaman çizelgesi 8 aşamadan oluşuyor. Bu çizelge tasarlarken tabii ki şu anlamda yaptık. Derste bahsettiğiniz gibi bir görev yaparken eğer diğer görev ondan bağımsızsa veya diğer görev aynı sürede yapılabiliyorsa.
+
+119
+00:24:10,644 --> 00:24:26,423
+Aynı görevleri aynı tarihlerde koyduk. Misal, deneysel alt tipi hazırlığı ve sistem kurulumunu 6 aylık bir süre sarladık. Aslında bunun amacı 6 ay boyunca sarlık bir görev yapması değil, daha sonrasında 3. aydan itibaren başlayan veri toplama ve sensör artikasyonunun da 3. ayda başlaması.
+
+120
+00:24:26,847 --> 00:24:33,587
+Yani burada ilk iki ay altyapı hazırlanını yapacağız. Daha sonrasında üçüncü aydan itibaren veri toplamaya başlayacağız.
+
+121
+00:24:34,048 --> 00:24:40,147
+Ve aynı zamanda altyapı devam edecek. Altyapı altıncı aya kadar mağaza içerisinde farklı yerlerde tasarlanacak.
+
+122
+00:24:40,687 --> 00:24:47,048
+Ama o sırada biz veri toplamaya devam edeceğiz. Üçüncü aydan dokuzuncu aya kadar da veri toplamı ve sensör ötekarasyonunu gerçekleştireceğiz.
+
+123
+00:24:47,048 --> 00:24:52,627
+Daha sonrasında toplanan verilerin ön işlemesi gerçekleştirilecek.
+
+124
+00:24:52,980 --> 00:24:57,980
+Bu aşamada da veriler önüşenlikten sonra tabii ki bunların saklanması...
+
+125
+00:24:58,708 --> 00:25:08,208
+Zor kısımlar, tabii ki çok fazla veri var. Bunlar için biz bir alt tıp geliştireceğiz. Alt tıpının geliştirilmesinden sonra veriler burada makine öğrenmesi modellerine sokulacak.
+
+126
+00:25:08,348 --> 00:25:14,688
+Tabii ki burada bir sürü model kullanacağı için bir sürü model deneyinin çeşinde bunların geliştirilmesi olacak.
+
+127
+00:25:15,108 --> 00:25:24,208
+Daha sonrasında geliştiren modeller de performans testlerine sokulacak ve en sonunda performans testleri eğer olumlu sonuçlar verirse de bunları biz model doğrulamaya sokacağız.
+
+128
+00:25:24,756 --> 00:25:32,396
+Ve model doğrulama devamında da proje eğer başarılıysa bunu raporlama aşamasına geçeceğiz. Bir sonraki saate geçebiliriz.
+
+129
+00:25:34,116 --> 00:25:37,596
+Burada iş paketlerini kişilere göre ayırdık.
+
+130
+00:25:37,872 --> 00:26:04,652
+Gördüğünüz isimler mesela ilk kısımlarda [öğrenci], sonrasında [öğrenci] ve Ben başlıyoruz. Burada tamamen kişilerin yetkinliklerine göre, projede neler yapabilir bunu konuştuk. Daha sonrasında herkese 8 adet görevleri eşit bir şekilde dağıttık. Burada dediğim gibi mesela ilk baştaki ilk görev alt yapı hazırlığı. Burada [öğrenci], [öğrenci] ve Ben alt yapı hazırlığına başlayacağız. O sırada [öğrenci] boş kalmayacak. [öğrenci] o sırada veri toplamı ve sensör öde deklarasyonu için ön çalışma yapacak.
+
+131
+00:26:04,980 --> 00:26:17,440
+Üçüncü aya geldiğimizde ben projenin üçüncü görevi için ön çalışmaya başlayacağım. [öğrenci], [öğrenci] ve [öğrenci] burada sensör integrasyonu kısmında çalışmaya başlayacak. Daha sonrasında entegrasyonun bitimine doğru.
+
+132
+00:26:17,971 --> 00:26:32,331
+Entegrasyon bittikten sonra [öğrenci] okusunlara başlayacak ve ben ön çalışmada elde ettiğim verileri [öğrenci] ile [öğrenci]'a vereceğim. Burada dördüncü aşamada aslında veritleri saklanması altyapısı zor bir kısım olduğu için burada danışman desteği alacağız.
+
+133
+00:26:32,331 --> 00:26:40,451
+Onun anlayı sizin isminizi yazarak burada [öğrenci], [öğrenci] ve Ahmet Eldir Hoca olarak danışman desteğini aldık. Sonra eksparta geçebiliriz.
+
+134
+00:26:42,036 --> 00:27:00,675
+Devam kısımlarda aslında burada işte dediğim gibi görevler eşit bir şekilde dağıldı. İşte [öğrenci], [öğrenci], [öğrenci] burada beşinci görev. O bir görevler aynı zamanda burada isim yazdığımızın nedeni az önceki slide'larda bahsettiğimiz eşit zamançı sergisiyle aynı görevler olması. Burada sadece isim kısımlarından bahsettik.
+
+135
+00:27:01,140 --> 00:27:28,460
+5. görevden itibaren de [öğrenci], [öğrenci], [öğrenci] daha sonrasında isimler eşit bir şekilde dağıtlarak yapılacak. Burada en son kısım tabii ki en önemli kısım. Burada modelin doğrulama kısmı, model işleri ne kadar doğruluk olanı elde ettik. Burada yine aynı zamanda danışman desteği alacağız. Ve eğer [öğrenci] ve [öğrenci] burada yetkinlikleri doğrultusunda doğruluğu kanıtlarsa ve size sunduğu zaman siz burada doğruluğu onaylarsanız burada artık raporlama aşamasına geçeceğiz ve projeyi bitireceğiz.
+
+136
+00:27:28,980 --> 00:27:48,980
+Sonraki saate geçebiliriz. Risk kısmında tabii ki projeye başlamadan önce bizim hangi aşamalarda ne gibi risklerle karşılaşacağımızı görebiliyoruz. Bunlar öngörülen riskler. Tabii öngörülemedi riskler de var. Öngörülen riskler olarak biz yine de bir önlem aldık. Misal burada ilk görev olarak...
+
+137
+00:27:49,779 --> 00:27:58,508
+Tedarik sıkıntısı. Tabii ki tedarik olarak biz burada sensörler, donanım ortamı kurulması vs. yapacağız ama bunlar...
+
+138
+00:27:58,644 --> 00:28:03,963
+İstediğimiz kısımları da bulamayabiliriz. Bundan dolayı, misal Avrupa'dan bulamazsak, Çin'den alacağız şeklinde.
+
+139
+00:28:04,423 --> 00:28:08,703
+Farklı farklı telatür taramçıları belirleyeceğiz. Daha sonrasında sensörlerin uyumluluk testleri.
+
+140
+00:28:08,703 --> 00:28:13,823
+Burada biz sensörleri belirledik proje öncesinde. Üçüncü aydan itibaren sensör testlerine başlayacağız.
+
+141
+00:28:14,263 --> 00:28:21,443
+Yani sensörlere başlayacağız kullanmaya. Ancak biz birinci aydan itibaren, projeye başladığımız zamanlar itibaren de
+
+142
+00:28:22,163 --> 00:28:37,403
+Projede o kısımda görev almayan kişi, mesela [öğrenci], o kısımda sensörlerin testlerini yapacak. Böylece 3. aya geldiğimizde, eğer projede sensörlerin uyumluluğu saptanamazsa, o zaman biz burada sensör değişiklerine giderek 3. aydın itibaren farklı sensörler kullanacağız.
+
+143
+00:28:38,183 --> 00:28:47,839
+Devamlı kısımlarda aslında yine aynı mantıkla, işte algoritma testleri, buradaki eğer algoritmalar geliştirilemezse veya algoritmalar...
+
+144
+00:28:47,839 --> 00:29:12,920
+Yeterli doğruluğu sağlanması, algoritm bunları geliştireceğiz. Veya burada veri tabanı için mesela esnik veri saklama yöntemleri. Burada veri tabanı tabii çok önemli bir kısım olacak. Onun anlayı projeye başlamadan önce o kısma gelene kadar boşta olan kişiler de burada onların teslimi yapacak. Bu şekilde risk yönetimi için, her madde için hangi tedbir alacağımızı belirledik ve öngörülen tedbirler olarak da bunları sıraladık. Sonun ilk tarifte geçebiliriz.
+
+145
+00:29:14,867 --> 00:29:34,587
+Merhaba, ben [öğrenci]. Araştırma olanakları için ilk parçada bizim yüksek kaliteli ses kayıt cihazlarına ihtiyacımız var. Müşterinin mağaza içindeki seslerin detaylı şekilde analiz edilmesi ve büyük bir doğrulukla akustik veriliklerinin hesaplanması için video kayıt sistemlerine ihtiyacımız olacak.
+
+146
+00:29:34,587 --> 00:29:42,087
+Müşteri davranışlarının gözlemlenmesi ve mağazada geçilen süre, ürün inceleme sıklığı gibi.
+
+147
+00:29:42,836 --> 00:29:49,336
+Verileri toplamak için. Akustik analiz ve ses işleme yazılımlarına ihtiyacımız olacak.
+
+148
+00:29:49,476 --> 00:29:55,855
+Toplanan ses kayıtlarının, akustik özelliklerin çıkarılması, gürültülerin filtrelenmesi gibi.
+
+149
+00:29:56,936 --> 00:30:06,895
+Yine makine öğrenmesi ve derin öğrenme algoritmaları için, büyük veri setlerinin işlenmesi için yüksek kapasiteli GPU'lara ihtiyacımız olacak.
+
+150
+00:30:09,907 --> 00:30:21,267
+Güvenliği ölçeklenebilir ve sürdürülebilir şekilde saklanması için de veri tabanına ihtiyacımız olacak. Bir sonraki sayfaya geçebiliriz.
+
+151
+00:30:21,347 --> 00:30:24,947
+Bir tane ya, bunlar ihtiyacımız olacaksa bunlar nasıl olanı anıt oluyor?
+
+152
+00:30:27,947 --> 00:30:32,347
+Şu bizim kullanacağımız aslında şey.
+
+153
+00:30:33,811 --> 00:30:36,132
+Altyapı, konacağımız altyapılar bunlar aslında.
+
+154
+00:30:36,912 --> 00:30:43,851
+Altyapı da olanak değil ki. Bunları temin etmeniz gereken şeyler. Hali hazırda bulunan şeyleri burada söylemeniz gerekiyor.
+
+155
+00:30:44,951 --> 00:30:46,511
+Kuruluşta bulunan diyor mesela.
+
+156
+00:30:47,571 --> 00:30:50,132
+Zaten bunlar hani...
+
+157
+00:30:50,784 --> 00:31:06,604
+Bu projeyi devam etmememiz için ihtiyacımız olan, örneğin mesela bir yazılım, bir makine öğrenmesi için bir algoritma söyledi [öğrenci] mesela. O algoritmalara ihtiyacımız olacak. Bunları hangi olanaklarla kullanacağımızı açıklamaya çalıştık aslında hocam. Hangi algoritmalar kullanacağız?
+
+158
+00:31:06,604 --> 00:31:14,944
+Kuruluşta bulunan diyorsun. Onlar varsa, tabii varmış gibi gösteriyorsun ama temin edeceğiz demeyeceksiniz.
+
+159
+00:31:15,667 --> 00:31:18,427
+Yani kullandığımız diyelim o zaman.
+
+160
+00:31:19,007 --> 00:31:29,107
+Yani sonuçta bir malzeme alım satımı vesaire otel şey bu işin ekonomik fizibilite tarafına girecekse orada, bu kuruluştaki herhangi bir hal hazırla olanak değil.
+
+161
+00:31:30,207 --> 00:31:31,587
+Tamam, devam edebiliriz.
+
+162
+00:31:33,347 --> 00:31:35,067
+Tamam, bir sonraki sayfaya geçebiliriz.
+
+163
+00:31:35,443 --> 00:31:44,163
+Çıktılar. Bilimsel ve akademik çıktı olarak uluslararası ve bilimsel dergilerden yayınlanacak en az iki makale görüyoruz.
+
+164
+00:31:44,163 --> 00:31:53,483
+Yine ekonomik ve sosyal olarak geliştiren veri integrasyonu ve optimizasyonu algoritması üzerine faydalı model başvurusu yapılacak 28-32. aylarda yine.
+
+165
+00:31:55,296 --> 00:32:06,376
+Araştırmacı yetişilmesi ve yeni projeler oluşmasına yönelik çıktıklarında ise proje kapsamında iki yüksek lisans tezi hazırlanmasını görülmekte. Bir sonraki sayfaya geçebiliriz.
+
+166
+00:32:10,612 --> 00:32:22,492
+Yine proje açıkçalarının paylaşımında web sayfası olarak Akademi Esenler ve Araştırmacılar görevi alacak. Onları da zaten ilk proje raporunda belirtmiş olduk.
+
+167
+00:32:24,147 --> 00:32:36,248
+Çalıştay olacak proje ekibi ve üniversite yönetimi olarak. 18. ayda bir günde yapılacak. Eğitimde teknik personel, arasılmacı ve öğrenciler olacak. 24. ay ve 1. haftasında görülüyor.
+
+168
+00:32:37,187 --> 00:32:51,567
+Uluslararası konferans ve sunularda ise yine akademisyen, endüstri temsilcileri ve arasılmacılar yer alacak. 24. ve 36. aylar arasında her biri 1-2 gün sürmek üzere. Bir sonraki tablomuza geçebiliriz.
+
+169
+00:32:53,236 --> 00:33:12,215
+Etkilere ilişkin, projede oluşmasına öngörülen etkilere ilişkin bilgiler yer alıyor burada. Toplumsal ve kültürel etkilerde projeye müşteri deneyimini iyileştireceği için akustik düzenlemeler veya payızlık uygulamasını olarak perakende sektörünün kullanıcı deneyimini iyileştirecek ve bu da toplumsal yaşam kalitesine katkı sağlayacaktır.
+
+170
+00:33:12,692 --> 00:33:28,031
+Proje özellikle gürültü kirliliğini önleyeceğini öngörüldüğü için toplumsal bir soruna çözüm getirilmesini umuyoruz. Bu da perakende sektöründeki gürültü ve kalabalık sayısını azalatarak toplumsal refahı arttıracağını öngörüyoruz.
+
+171
+00:33:28,031 --> 00:33:39,971
+Yine bu perakende sektöründe teknoloji ve eğitim alanındaki kurumlar ile çevre ve ses kirliliği üzerinde çalışan sivil toplum kuruşları olarak öngörülebiliriz.
+
+172
+00:33:40,435 --> 00:33:48,236
+Ancak, sınım esnasında ekrandan okumayın. Kendi bilimlerinizi kurun. Aynı şeyi zaten biz okuyacağız.
+
+173
+00:33:50,236 --> 00:33:59,296
+Ekonomik etki olarak proje yeni pazarların doğmasına yol olacak.
+
+174
+00:33:59,296 --> 00:34:06,296
+Çünkü ses verileri üzerine bir çalışma yaptığımız için müşteri deneyimini arttırarak yeni...
+
+175
+00:34:06,612 --> 00:34:24,612
+pazarların oluşmasına yol açabilir. Yine yapay zeka tabanlı ses analizi yapacağımız için büyük veri setleriyle. Bu da küresel arayacak da bir yaygınlık kazandırabilir. Ayrıca rekabetçi bir ortam yaratacaktır Türkiye özelinde. Ses görevlerin işlenmesinde özellikle çok...
+
+176
+00:34:27,092 --> 00:34:33,672
+Bir dergi yok dedik. Türkiye'de buna yönelik bir araştırma da yok dedik. Bu da bir fark yaratacaktır diye düşünüyoruz.
+
+177
+00:34:33,892 --> 00:34:37,992
+Bununla alakalı bir kaynağımız var mı? Bu konuda hiç bir dergi yok dediğimiz gibi.
+
+178
+00:34:38,811 --> 00:34:45,900
+Literatür taramasında aslında hocam bunları belirtmişti. Kaynaklarımız kısmında da zaten buna benzer olan, yakın olan...
+
+179
+00:34:46,291 --> 00:34:50,731
+Sesle çalışan, duygu tanıma vs. bu konuda ilk yapım şey yok mu? Yok dediğiniz için?
+
+180
+00:34:51,251 --> 00:34:59,872
+Yok değil, çok daha sınırlı ve kısıtlı. Görüntü ve görüntü işlemeye göre çok daha kısıtlı olduğu için.
+
+181
+00:35:00,251 --> 00:35:04,132
+Görüntü ile ne alakası var? Görüntü başka bir problem. Siz burada ses konusuna veriyorsunuz.
+
+182
+00:35:04,851 --> 00:35:14,112
+Aslında biz hem görüntü hem ses aynı anda kullanıyoruz hocam projede. Yani sadece sesveri değil ama bizim asıl odaklandığımız kısım ses analizi üzerine.
+
+183
+00:35:15,491 --> 00:35:18,072
+Tamam da yani yok demek için burada biraz iddia...
+
+184
+00:35:18,072 --> 00:35:28,711
+Yok değil tabii. Daha öbür yöntemlere göre daha kısıtlı diyebiliriz. Zaten kaynaklarımız kısmında da bunları görebiliyoruz.
+
+185
+00:35:30,483 --> 00:35:35,783
+Bir sonraki safhaya da geçebiliriz. Zaten slide'ımız da burada bitiyor. Dinlediğiniz için teşekkür ederiz.
+
+186
+00:35:36,543 --> 00:35:42,224
+Peki, şey soracağım. Şimdi ses çıkarmayla alakalı yazgımlar kullanılabiliriz. Siz söylediniz. Ne yazgımı bu?
+
+187
+00:35:42,684 --> 00:35:44,943
+Testten özellik çıkarmayla alakalı yazgım dediniz.
+
+188
+00:35:45,619 --> 00:36:08,720
+Bunu [öğrenci] arkadaşımız da söyledi. İşte MFCC, Pitch, Tempo gibi görüntü ve normalizasyon işlemi işlemleri. Ya yazılım olarak biz ses, aslında ses ve anket gözlem verilerini biz derin öğrenme, makine öğrenmesi algoritması kullanarak dedik. Eğiteceğiz aslında biz bunları.
+
+189
+00:36:09,204 --> 00:36:11,003
+Bunlar yazılımlanıyor yani.
+
+190
+00:36:11,404 --> 00:36:14,003
+İlk kısımda bunların algoritmaları vardı hocam.
+
+191
+00:36:15,204 --> 00:36:17,824
+Tamam, yazılım temin edeceğiz dediniz de bunlar yazılım değil.
+
+192
+00:36:18,284 --> 00:36:20,644
+Hazır kütüphaneler var Python'da.
+
+193
+00:36:21,704 --> 00:36:24,543
+O da bir maliyet unsuru değil genellikle okusun sor.
+
+194
+00:36:25,423 --> 00:36:29,423
+Yani tamam, sunum bu kadar yeter. Zaten diğer grup hazırlanabilir.
+
+195
+00:36:30,099 --> 00:36:47,739
+Yani bir kere sunumunuzun içeriği hakkında şu an herhangi bir değerlendirmesini izlemek için, diğer gruplarını etkilemek istemiyorum. İçerikle alakalı bazı eksiklerimiz var. Onlar da zaten rapor değerlendirmesinde sizlere gelebiliriz diyeceğiz. Evet, teşekkür ederiz. Elinize sağlık. Diğer ekibe geçelim.
+
+196
+00:36:57,748 --> 00:37:01,288
+Aradaki ekip, hemen bakayım.
+
+197
+00:37:02,867 --> 00:37:10,367
+24, 50, 10, 98, 24, 50, 10, 95, 23, 50, 11, 27, 23, 50, 10, 90.
+
+198
+00:37:10,367 --> 00:37:11,327
+Yok ya biz de.
+
+199
+00:37:14,488 --> 00:37:15,047
+Evet.
+
+200
+00:37:16,528 --> 00:37:20,248
+25 dakika süreyi çok geçmeyelim arkadaşlar. Buna göre ayarlarsak.
+
+201
+00:37:27,284 --> 00:37:28,324
+Başlayabilirsiniz.
+
+202
+00:37:29,884 --> 00:37:33,824
+Hocam bizim grup değil mi? Numaraları farklı okudunuz sanki de o yüzden.
+
+203
+00:37:34,244 --> 00:37:39,104
+Grup 8, ikinci sunum sonrasında [kişisel bilgi] değil.
+
+204
+00:37:39,104 --> 00:37:42,503
+Tamam, tamam. 0.98 gibi bir şey yapayım. Hemen paylaşıyorum.
+
+205
+00:37:51,251 --> 00:37:52,652
+Geldi sanırım hocam, yok canım.
+
+206
+00:37:52,751 --> 00:37:54,032
+Evet, başlayalım hemen.
+
+207
+00:37:55,731 --> 00:38:04,831
+Merhaba arkadaşlar, biz derin öğrenme tabanlı kalp sağlığı risk analizi ve tahmin sistemi tasarımı başlıklı projemizi anlatacağız.
+
+208
+00:38:04,831 --> 00:38:10,831
+Ben [öğrenci], [öğrenci], [öğrenci] ve [öğrenci] ile beraber yaptık bu projeyi.
+
+209
+00:38:12,307 --> 00:38:23,688
+Sunum planımız şu şekilde. Öncelikle projenin özgün değerinden bahsedeceğiz. Daha sonra projenin yönteminden, proje yönetiminden, yaygın etkisinden bahsedeceğiz. En sonunda kaynakçayı verip sunumumuzu bitireceğiz.
+
+210
+00:38:23,688 --> 00:38:33,688
+Yani aslında rapordaki şeyler üzerinden bir sunumda da. Projemizin özgün değer kısmında öncelikle kalp damar hastalıklarından biraz bahsetmek gerekiyor. Kalp damar hastalıkları...
+
+211
+00:38:35,411 --> 00:38:51,251
+Hem yaygın bir hastalık hem de önemli bir hastalık diyebiliriz. Çünkü ölümle sonuçlanabilen bir hastalık. Yanlış hatırlamıyorsunuz, 2019 yılındaki verilerde, yani biz onu bulabildik, ölümlerin %32'si kalp damar hastalıkları kaynaklı olarak geçiyordu.
+
+212
+00:38:51,795 --> 00:38:58,635
+Bu nedenle bölüme yol açabilen hastalık olduğu için erken teşhis de önemli oluyor kalp damar hastalıklarında.
+
+213
+00:38:59,095 --> 00:39:05,215
+Ve biz de bu kalp damar hastalıklarında erken teşhis yapabilmek için bir uygulama, bir proje geliştirmeyi.
+
+214
+00:39:05,619 --> 00:39:07,179
+geliştirmek istedik.
+
+215
+00:39:07,899 --> 00:39:13,420
+Tabi bu kalplaman hastalıkları tespitinde yapay zeka kullanılıyor.
+
+216
+00:39:13,420 --> 00:39:17,819
+Yani diğer sağlık verilerinde veya hastalık tahminlerinde kullanıldığı gibi.
+
+217
+00:39:18,359 --> 00:39:28,119
+Daha çok görüntü üzerinden yapılanlar daha yaygın yani işte kanser tarzında ama bu şeyde de yine EKG verileri üzerinden vesaire bir tahmin yapılıyor.
+
+218
+00:39:28,608 --> 00:39:46,888
+Ancak bizim buradaki yeni olarak sunmaya çalıştığımız şey, atıyorum birisi geldi, kalp rahatsızlığım var ve EKG çektirdi gibi değil de, daha çok erken teşhis olarak, daha önceki verilerinden, geçmiş sağlık verilerinden, işte bu enabız verileri olabilir veya aile hekiminden alınacak çeşitli veriler olabilir.
+
+219
+00:39:46,888 --> 00:39:55,328
+Bunları kullanarak bir aslında erken tespit, erken teşhis olarak bir özgün değer sunmak istiyoruz.
+
+220
+00:39:56,608 --> 00:40:04,688
+Yani geçmiş sağlık verilerinin ek olarak da bir anlık bilgi akışı da uygulamamıza, projemize entegre etmek istiyoruz.
+
+221
+00:40:04,788 --> 00:40:13,668
+Bunu da doğal dil işleme üzerinden, geliştireceğimiz uygulama, mobil uygulama üzerinden hastaların veya hastalık şüphesi olanların girerek,
+
+222
+00:40:16,416 --> 00:40:26,275
+Bir ağrı hissettiğinde, sol kolumda uyuşma var şeklinde bunu doğal değişlemeyle alıp eski verileriyle, yani geçmiş sağlık verileriyle bunu birleştirip yine bir tespit veya teşhis yapmak istiyoruz.
+
+223
+00:40:27,336 --> 00:40:34,896
+Bu şey kısmını yaptıktan sonra, modeli eğittikten sonra yapay zeka derini öğrenme modeline bir uygulama, mobil uygulama geliştirmek istiyoruz.
+
+224
+00:40:35,356 --> 00:40:39,596
+Bunlarla beraber de sağlık sistemine bir katkı sunmak istiyoruz.
+
+225
+00:40:41,268 --> 00:40:50,867
+Öncelikle bu alanda yapılan literatür çalışmaları, biz raporumuza 20 küsur tane ekledik. Buraya da 5-6 tanesini aldım. Hızlıca bunlardan bahsetmek istiyorum.
+
+226
+00:40:50,867 --> 00:40:59,867
+2021 yılında yapılan çalışmada, AN ve diğerlerinin yaptığı çalışmada Deep Risk isimli bir model geliştiriyorlar ve bu da...
+
+227
+00:41:01,492 --> 00:41:07,892
+Dikkat mekanizması derin öğrenme tekniğiyle bir tespit yapıyor kalp rahatsızlıkları için.
+
+228
+00:41:08,112 --> 00:41:14,832
+Yine 2021 yılında yapılan bir ders çalışmada da evrişimli sinir ağları kullanılıyor ve çok yüksek başarım elde ediliyor.
+
+229
+00:41:14,952 --> 00:41:25,612
+Ama bunlar biraz önce de söylediğim gibi daha önce yapılan çalışmalar, bu çalışmaların çoğu EKG verileri gibi veriler üzerinden sinyal işleme ile yapılmış uygulamalar.
+
+230
+00:41:29,492 --> 00:41:37,412
+kullanılarak bir sensörler üzerinden veri akışıyla bir hastalık tahmini modeli geliştiriliyor.
+
+231
+00:41:38,692 --> 00:41:45,952
+Bunda da biz ara düşünmüştük projemize bu IOT'ları entegre etmeyi. Daha sonra vazgeçtik. Onun için bunları da eklemiştik.
+
+232
+00:41:46,516 --> 00:42:09,615
+2023 yılında yapılan çalışmada da özellik artırma kullanılarak bir tahmin yapılıyor. 2023 yılında yapılan bir diğer çalışmada da Gogi'nin, Gogi ve diğerlerini yaptığı çalışmada tanı yardımcısı olarak kullanılıyor. Yani doktorlara yardımcı olarak kullanılıyor. Bir diğerinde tarlatın yaptığı çalışmada yine evrişimli sinir ağlarını kullanıp kardiyosentit net isimli bir model geliştiriyorlar.
+
+233
+00:42:14,516 --> 00:42:33,896
+modeller geliştiriyorlar. Burada bizim bunlardan farklı olarak, özgün değer olarak eklediğimiz şey, biz daha çok geçmiş veriler üzerinden ve EKG gibi kalp verileri değil, kolesterol, yaş, çeşitli veriler üzerinden bir hastalık riski tespiti yapmak istiyoruz.
+
+234
+00:42:34,496 --> 00:42:36,456
+Ve doğal ilişlemeyi de buna entegre etmek istiyoruz.
+
+235
+00:42:37,652 --> 00:42:48,892
+Projemizdeki adımlar veya hedefler şu şekilde açıklanabilir. İlk önce biz eğitileceklerini öğrenme modeli için veri toplanması aşaması.
+
+236
+00:42:54,547 --> 00:43:10,467
+Aile hekimi gibi çeşitli yerlerden veri toplamak istiyoruz. Daha sonra bu verilerin temizlenmesi, işlenmesi kısmı var. Burada da normalizasyonlar, aykırı değer tespitleri veya hatalı veriler varsa onların silinmesi gibi işlemler var bu adımda da.
+
+237
+00:43:10,467 --> 00:43:22,427
+Burada bir diğer önemli kısım da, tabii bunlar sağlık verisi olduğu için veri gizliliği de önemli oluyor. Bunun için de biz anonim bir şekilde modelimizi eğitirken özellikle gerekli izinleri alıp,
+
+238
+00:43:22,547 --> 00:43:42,347
+Bakanlıktan vs. Sağlık Bakanlığı'ndan anonim bir şekilde verileri almak istiyoruz. Ancak o şekilde kişisel verileri korumak için o şekilde modelimizi yetmek istiyoruz. Daha sonra model mimarisi seçimi ve eğitimin tamamlanması. Bu model mimarisi kısmını zaten arkadaşlarım biraz sonra yöntem kısmında vs. daha detaylı anlatacaklar.
+
+239
+00:43:42,735 --> 00:43:51,675
+Daha sonra biz bu modeli eğittikten sonra, tamamladıktan sonra uygulamanın arayüzünü geliştirmek istiyoruz.
+
+240
+00:43:52,076 --> 00:43:57,155
+En sonunda uygulamayı test ederek mobil uygulama platformlarına yüklemek istiyoruz.
+
+241
+00:43:58,276 --> 00:44:02,036
+Buradan sonra [öğrenci] devam edecek. [öğrenci] de yanımda hemen diğer bir işler oluyoruz.
+
+242
+00:44:08,916 --> 00:44:17,876
+Herkese merhabalar. İsmim [öğrenci]. Ben bugün size projemizde bulunan, aslında az önce [öğrenci]'nın da bahsettiği hedefleri biraz daha detaylı olarak anlatmak istiyorum.
+
+243
+00:44:18,076 --> 00:44:22,656
+Yani bu hedefleri gerçekleştirirken hangi yöntemleri kullanacağımızdan bahsetmek istiyorum.
+
+244
+00:44:22,816 --> 00:44:33,176
+Öncelikle biz uygulamayı geliştirirken burada anlık veri akışını kullanmak için, daha doğrusu oradan önemli anahtar kelimeleri çıkarmak için bir dikkat mekanizmalı.
+
+245
+00:44:33,715 --> 00:44:45,255
+Doğal el işleme modeli kullanacağız. Bir de az önce [öğrenci]'nın dediği gibi genel geçmiş sağlık bilgilerinin bilgileriyle, verileriyle eğitilen bir model eğiteceğiz.
+
+246
+00:44:45,795 --> 00:44:49,935
+Bu veriler işte en abiz gibi dijital platformlar ve aile hekimlerinden alınacak.
+
+247
+00:44:51,415 --> 00:44:56,135
+İlk aşamada aslında bu verilerin hepsinin tabii ki sayısal olması gerekiyor öncelikle.
+
+248
+00:44:56,295 --> 00:45:00,795
+Çünkü LSTM modeli yani bizim bu yapay zeka modeli geçmiş verilerle eğitilecek olan.
+
+249
+00:45:01,715 --> 00:45:21,615
+olasılık değeri üretecektir. Yani bu olasılık değeri aslında kalp rahatsızlığı olasılığını hesaplayıp, ondan sonra onu uygulamaya gönderip ona göre bir rapor üretilecektir. Bu yüzden bir kere bu verilerin hepsinin sayısal olması gerekiyor. İlk aşamada aslında kalp sağlığını direkt olarak etkileyen kolesterol, tansiyon, kan şekeri ve trombozit değeri bilgileri.
+
+250
+00:45:23,476 --> 00:45:26,756
+Hekimlerden alınacaktır hastaların veya kullanıcıların.
+
+251
+00:45:27,676 --> 00:45:29,932
+Mesela misal olarak...
+
+252
+00:45:30,260 --> 00:45:54,520
+Sağlık raporlarında belki görmüşsünüzdür, trombosit PLT değerinin normal aralığı 150.000 ve 450.000 hücre başına hücre ise bundan fazla veya eksiğin artık normal dışı olduğu anlaşılır raporlardan veya bir başka örnekte kolesterolün normal değeri ve normal olmayan değer aralıkları vardır.
+
+253
+00:45:55,219 --> 00:46:00,659
+Bizim elde edeceğimiz veri setinde bunlar hepsi sayısal olarak ifade edilecektir.
+
+254
+00:46:01,679 --> 00:46:12,139
+Veri setini aldıktan sonra tabii ki genel olarak yapay zikare, derin öğrenme tabanlı projelerin esas kısımlarından biri olan veri setinin işlenmesi aşaması var.
+
+255
+00:46:12,219 --> 00:46:16,519
+Burada işte az önce arkadaşımın da dediği gibi standart normalizasyon, aykırı değer analizi.
+
+256
+00:46:17,204 --> 00:46:27,543
+Veya boş satırların, diyelim işlevsiz olan satırların, çünkü veri setinin tüm kısımları hiçbir zaman yani işlevli olmaz, işlevsiz olan kısımların silinmesi gelecektir.
+
+257
+00:46:28,123 --> 00:46:36,423
+Bu aşamadan sonra bir mimari yapının seçilmesi gerek. Dediğim gibi geçmiş verilere uygun olan modelin, verili için olan modelin eğitilmesi için.
+
+258
+00:46:36,923 --> 00:46:41,443
+Şimdi şöyle biz bu geçmiş sağlık bilgileri aslında zaman ilişkili veriler.
+
+259
+00:46:42,164 --> 00:47:02,344
+Ve sıralı aslında bir nevi sıralı bilgiler zaman ilişkili olduğu için. Şimdi bu uzun süreli bağımlılıkların ve kapsamlı bir veri seti olacağı için aslında uzun süreli bağımlılıkların eğitilmesi için efektif bir modelin seçilmesi gerekiyor. Bunun için yenilemeli sinra mimarisinin aslında çok advanced dediğimiz yani iyi seviyede.
+
+260
+00:47:02,867 --> 00:47:26,588
+Performans gösteren LSTM isimli yani uzun kusa süreli bellek isimli mimari yapısı seçilecektir. Bu mimari yapı aslında kapı mekanizması ve hücre durumu özellikleri sayesinde önemli olan bilgileri, önemlisi olan bilgilere nazaran sonucu daha efektif bir şekilde götürmeyi sağlıyor bizi. Bu yüzden bu mimari yapının daha uygun olacağını.
+
+261
+00:47:27,155 --> 00:47:50,855
+Bu bizim geçmiş sağlık verileriyle eğitilecek olan modelimiz. Bir diğer taraftan az önce arkadaşımın dediği gibi bizim uygulamamızın aslında özgün değeri aynı şekilde kullanıcı tarafından girilebilecek anlık veri, anlık bildirim yani misal olarak anlık olarak bir sağlık komplakasyonu olasılığını hesaplamak için diyelim sol omuzda yanma veya sol kolda uyuşma gibi.
+
+262
+00:47:51,699 --> 00:47:59,499
+Anlık gereken bilgiler. Bu bilgiler cümle olarak da girilebilir kullanıcı tarafından uygulamaya veya ses yazısı olarak da girilebilir.
+
+263
+00:47:59,899 --> 00:48:06,039
+Şimdi burada önemli madde şu aslında bu cümle olarak girildiği için bu cümlenin içinden anahtar kelimelerin seçilmesi lazım.
+
+264
+00:48:06,579 --> 00:48:11,519
+Bunun için yeniden bir model eğitmeyeceğiz. Bunun için prompt temelli bir model kullanacağız.
+
+265
+00:48:11,956 --> 00:48:17,436
+Önceden eğitilmiş olan Turkish Robert ve Bertürk tipli transformaları kullanmayı planlıyoruz.
+
+266
+00:48:17,616 --> 00:48:27,716
+Veri ses yazısının metni çevrilmesi için şimdiki aşamada hem Türkçe içi Türkçe desteği olan ve iyi performans gösteren Google API kullanmayı planlıyoruz.
+
+267
+00:48:27,876 --> 00:48:35,856
+Ben aslında Google API İngilizce için daha önceden kullandığım için araştırmaları da biraz bu proje içinde araştırdım ve iyi olabileceğini düşündüm.
+
+268
+00:48:35,856 --> 00:48:38,316
+O yüzden bunu seçtik proje için.
+
+269
+00:48:39,411 --> 00:48:43,711
+Şimdi ise genel olarak aslında bir akış diagramını da göstermek istiyorum.
+
+270
+00:48:43,851 --> 00:48:50,091
+Eğer kullanıcı tarafından uygulama giriş yapıldığında, anlık veri girişi olmazsa direkt raporlar üretilecektir.
+
+271
+00:48:56,052 --> 00:49:07,852
+Tahliller yaptırdığı sürede onun kalp sağlığı, rahatsızlığını hesaplayacak olan olasılık değerlerini etkilecektir ve o rapor güncel kalacaktır ve her zaman değişecektir.
+
+272
+00:49:08,192 --> 00:49:19,932
+Eğer kullanıcı uygulama giriş yaptığında anlık veri girişi yaparsa, ses yasası değilse prompt ile anahtar sözleri çıkarıp onu da hesaplanacak olasılık değerini etki edecek şekilde uygulamaya entegre edecektir.
+
+273
+00:49:23,668 --> 00:49:34,788
+Kuda ile, yani Nvidia ile eğitilmesini basit olarak yazmak istedim. Yani o modeli özel olarak eğiteceğiz sıfırdan, fakat berte, dikkat edin, front olarak kullanacağız.
+
+274
+00:49:34,788 --> 00:49:44,048
+Sonunda kullanıcı dostu bir görselleştirme için uygulama yazmak için de hem Android hem de iOS cihazlarında kullanılabilen Flutter dilini kullanacağız.
+
+275
+00:49:47,923 --> 00:49:55,584
+Görselleştirilebilir raporlar hazırlamayı planlıyoruz uygulamayla. Şimdi takım arkadaşım proje yönetimi hakkında bilgi verecek.
+
+276
+00:49:59,635 --> 00:50:01,115
+Ekranı benle paylaşabilirim.
+
+277
+00:50:02,956 --> 00:50:04,336
+Devam edemiyorsun.
+
+278
+00:50:14,420 --> 00:50:16,099
+Merhaba, sesim geliyormuş.
+
+279
+00:50:16,679 --> 00:50:17,279
+Geliyor.
+
+280
+00:50:18,199 --> 00:50:26,500
+Ben proje yönetimi kısmından bahsedeceğim. Bu kısımda iş zamanı çizelgesi, iş paketleri ve risk yönetim tablosundan sizi bilgilendiriyor olacağım.
+
+281
+00:50:27,155 --> 00:50:49,996
+İlk olarak iş zaman çizelgesinden bahsedeceğim. Projemiz için hedeflediğimiz süre 36 ay. Bu 36 ay içerisinde ise 6 tane iş paketimiz mevcut. Bu iş paketlerinden en önemlilerini ilk ikisi olarak söyleyebiliriz. Bu yüzden de bu iki iş paketinde tüm proje grubunun desteğini bekliyoruz.
+
+282
+00:50:50,867 --> 00:51:00,367
+Veri hükümesini işlerken aynı zamanda tekrardan bir veri ihtiyacı olabilir. Bu yüzden bu iki işin birbirine paralel olmasını hedefledik.
+
+283
+00:51:00,820 --> 00:51:18,940
+Bunun yanı sıra, modal seçimi ve eğitimin tamamlanmasının ara ara çalışıldığını görüyoruz. Bu da TÜBİTAK jürilerine gösterecek bir ürünümüzün olması ve sistem testini yapabilmemiz için bir olanak sağlayacak bize bunun bu şekilde olması.
+
+284
+00:51:20,244 --> 00:51:39,264
+İkinci model sürümümüzden sonra erken erişimde bir uygulama yayınlamayı düşünüyoruz. Böylelikle sona kadar dayanmadan elimizde sistemi deneyebilecek bir yapı olacak. Uygulama geliştirmeye baktığımızda ise diğer işlerle paralel olarak sürekli olarak mevcut ve gelişmeye devam ediyor.
+
+285
+00:51:40,264 --> 00:51:42,523
+Şimdi iş paketlerine geldik.
+
+286
+00:51:43,443 --> 00:52:09,023
+Derin öğrenme modelinin etkin bir şekilde eğitilebilmesi için büyük ve kaliteli bir veriye ihtiyacımız var. O yüzden veri toplanması bizim başlayan ilk işimiz, iş paketimiz. Buradaki başarı ölçütümüz güvenilir kaynaklardan veri hükümesi elde etmek. Buradaki güvenilirden kayıt yasal ve etik olması, veri çeşitliliğinin yüksek olması gibi özelliklerdir.
+
+287
+00:52:10,324 --> 00:52:30,364
+Sonraki iş paketimiz ise veri kümesinin işlenmesi. Veri kümesinin işlenmesinde burada temizlenme, yani hatalı, eksik bilgilerin silinmesi, texlerin sayı makinelerini anlayacağı şekilde sayıya dönüştürülmesi veya birden fazla sütünün füzyon edilerek yeni, daha anlamlı veriler üretilmesi gibi yapılandırmalar mevcut.
+
+288
+00:52:30,364 --> 00:52:34,724
+İş paketinin başarı ölçütü ise KVKK'ya uygun.
+
+289
+00:52:35,188 --> 00:52:41,088
+Derin öğrenme modelinin üstlerinde çalışabileceği anlamlı bir ver hükümesi oluşturmak.
+
+290
+00:52:42,427 --> 00:52:47,387
+Üçüncü iş paketimize geldiğimizde bu model seçimi ve eğitimin tamamlanması.
+
+291
+00:52:48,947 --> 00:52:59,088
+Buradaki hedefimiz modelin belirlenmesi, seçilen modelin eğitimin tamamlanması ve sonuç olarak bu sonuçlarının değerlendirilmesi olarak belirledik.
+
+292
+00:53:00,307 --> 00:53:06,527
+Başarı ölçüsü ise derin öğrenme modelinin doğruluk ve hassasiyet oranının proje gereksinimlerine uygun olması.
+
+293
+00:53:08,487 --> 00:53:25,327
+Dördüncü iş paketimiz uygulamanın geliştirilmesi. Burada kullanıcıdan veri alabilen, bu veri sesli de olabilir ve sonucunda kullanıcıya kendine ait modelin tahmin sonuçlarını görebildiği bir mobil uygulamanın geliştirilmesini hedefliyoruz.
+
+294
+00:53:26,036 --> 00:53:36,375
+Bu uygulama kendi içinde uygulamanın altyapısının hazırlanması, verinin entegrasyonunun hazırlanması, test ve ayıklama gibi kendine ait alt görevleri içeriyor.
+
+295
+00:53:38,556 --> 00:53:43,875
+Beşinci iş paketimiz sistemin test edilmesi. Buradaki hedef sistemin uçtan önce çalıştığını doğrulamak.
+
+296
+00:53:44,275 --> 00:53:47,655
+Bunu yapabilmek için zaten ara ara sürekli versiyonlar alıyoruz.
+
+297
+00:53:48,563 --> 00:53:59,123
+Başarı ölçütümüz ise kendi verilerine mobil uygulamadan kendi verilerine giren bir kişiye yine sesli ol verilebilir bu veriliğe. Kendine ait sonuçları görmesi yine.
+
+298
+00:54:00,943 --> 00:54:09,663
+Sonuç paketimiz ise uygulamanın mobil uygulama indirme platformlarına yüklenmesi. Burada platform yüklenemezse APK gibi dağıtımlar yapılabilir.
+
+299
+00:54:11,043 --> 00:54:15,804
+Uygulama kullanıcılar tarafından indirilip kullanılabildiğinde bunu başarılı olarak kabul ediyoruz.
+
+300
+00:54:16,628 --> 00:54:35,108
+Son olarak risk yönetimi tablosundan bahsedeceğim. Buradaki 7 tane risk tanımladık. Buradan 4 tanesi aslında veri kümesiyle alakalı. Yanındaki iş paketleri numarası ise bu hatanın fark edilebileceği paket. Bu yüzden buraya aslında bunları yazmak istedim.
+
+301
+00:54:36,068 --> 00:54:43,788
+Hatalara baktığımızda veri kümesi hatalı olabilir veya yapaydır. Veri kümesi işlenmede düzeltilir bunun tedbiriyle.
+
+302
+00:54:44,500 --> 00:55:03,420
+Veri kümesi kapsayıcı değildir. Veri kümesine farklı bölgelerden data eklenir. Veri kümesinde yılma mevcuttur. Yine veri kümesi düzeltilir, işlenebilir veya regularizasyon yöntemleriyle bu düzeltilebilir.
+
+303
+00:55:04,640 --> 00:55:12,100
+Overfit de yine aynı şekilde veri çeşitliliği artırılabilir veya regularizasyon yöntemleriyle overfitin önüne geçilir.
+
+304
+00:55:12,755 --> 00:55:24,076
+Dördüncü riskimiz, uygulamayı geliştirmeden önce oluşturan gereksinimler yanlış olabilir. Hatalı gereksinimler fark edildiğinde toplantıyla bu tekrardan düzgün bir hale getirilir.
+
+305
+00:55:25,195 --> 00:55:32,056
+Sistemin test edilmesi için yeterli vakit kalmayabilir. Zaten bunu önlemek için ara ara sürümler alıp sürekli sistemi test ediyor oluyorduk.
+
+306
+00:55:32,715 --> 00:55:38,815
+Son riskimiz ise uygulama ve mobil uygulama indirme platformları tarafından reddedilir. Bu sık bir şey aslında reddedilmesi.
+
+307
+00:55:39,476 --> 00:55:44,155
+Reddedilme nedenini analiz ederek, uygulamada düzeltmeler yaparak bunun önüne geçebiliriz.
+
+308
+00:55:45,235 --> 00:55:50,635
+Ekibimizin olanakları ise mobil uygulamayı geliştirecek bilgisayarımız var.
+
+309
+00:55:51,096 --> 00:55:54,275
+Sadece tek bir tane olduğu için bunu slide'a eklemedim.
+
+310
+00:55:54,576 --> 00:55:57,795
+Alınacak GPU'lar, daha güçlü bilgisayarlar ekikimizde mevcut.
+
+311
+00:55:59,016 --> 00:56:03,755
+Benim sunumum bu kadardı. Şimdi sözü [öğrenci]'ya bırakabilirim.
+
+312
+00:56:11,092 --> 00:56:13,092
+Bu yüzden yardım etkisimden.
+
+313
+00:56:13,092 --> 00:56:14,092
+Evet.
+
+314
+00:56:16,092 --> 00:56:18,092
+Ben de beklemiyordum.
+
+315
+00:56:18,092 --> 00:56:19,019
+O, saksım.
+
+316
+00:56:22,132 --> 00:56:34,511
+Öncelikle Bilimsel Akademik Çıkta olarak Halka Açıklığı Verisleti, Burstumay'ın hedefli bu verisleti en hapıstan ve hatta nereden alan verilerin anonimleştirilmesiyle ortaya alınacak.
+
+317
+00:56:35,311 --> 00:56:41,551
+Böylelikle sağlık alanında çalışmaları için katkı sunacağız.
+
+318
+00:56:43,471 --> 00:56:46,692
+İlk olarak bu projenin açıklarını sunmak için 12.18 ay.
+
+319
+00:56:47,507 --> 00:56:51,427
+Arasında bir Uluslararası Konserens'a bir bilgileriyle kalınçı gerçekleştireceğiz.
+
+320
+00:56:52,748 --> 00:56:59,807
+Ardından projenin bütün gelişimi ve modellemesini anlattığımız bir makaleyle geleceğiz.
+
+321
+00:57:01,947 --> 00:57:10,487
+Bütün vardede sisteme dair farklı riskler, uzmanlar ile klinik değerlendirme sonuçlarını ortaya koyduk.
+
+322
+00:57:10,487 --> 00:57:14,567
+Bu kapsamlı bir makaleyle geleceğiz proje sonrası.
+
+323
+00:57:16,244 --> 00:57:27,204
+Ekonomik ve ticari çiftler olarak, bu arada sonucunda geliştirilen modul bulur ama doğrudan kullanıcılara ulaşılacak, olabileceği bir ürün ortaya konuşulacak.
+
+324
+00:57:28,344 --> 00:57:40,423
+Topladığımız veri tabanı, sağlık politikalarının gelişmesinde yol gösterici olacak, yol gösterici olabilecek analizlere yolla çaracaktır.
+
+325
+00:57:41,907 --> 00:57:53,107
+Ayrıca, bu proje sadece belli hastalıklar için değil, diğer farklı hastalıklar için akıl sistemlerin oluşturulmasını dolaşacaklar.
+
+326
+00:57:55,627 --> 00:58:02,387
+Proje kapsamında bir yüksek lisans tezi ve bir doktor öğretesi tamamlanması planlandı.
+
+327
+00:58:03,487 --> 00:58:08,787
+Ek olarak iki yüksek lisans öğrencisi, iki doktor öğrencisi, yani düşen bir grup.
+
+328
+00:58:09,204 --> 00:58:13,204
+Akıllı sağlık sistemlerinin geliştirilmesi zamanında deneyim kadına canlı götürür.
+
+329
+00:58:15,204 --> 00:58:20,204
+Proje çıktılarını sunmak için ikinci den çalıştığı bir şey.
+
+330
+00:58:21,204 --> 00:58:27,204
+Bu da tıp ve yapay zeka alanından uzmanlarla, sağlık bakımlılığından etkilerle araya gelerek,
+
+331
+00:58:28,204 --> 00:58:36,204
+bu kurulan yapay zeka sisteminin sağlık üzerindeki etkilerinin tartışıldığı bir çalıştığı bir şey.
+
+332
+00:58:37,172 --> 00:58:51,172
+24. aylar arasında elde ettiğimiz bulguları ciddi asayi şirketleriyle, akademisyenlerle ve kalp hasarıyla buluşturabileceğimiz bir web kısmı sınav edeceğim.
+
+333
+00:58:52,172 --> 00:58:55,172
+Bu yüzden projenin iş değişimi ve bulgularını kamuoyuna paylaşabileceğimiz.
+
+334
+00:58:58,172 --> 00:59:03,172
+Bu projenin sonucunda oluşulması, öngörülen etkilerde ve toplumsal ve kültürel etkiler.
+
+335
+00:59:04,500 --> 00:59:12,980
+Kalp hastalıklarının erken teşkil ve tabi artması, ölümlerin ve ciddi hastalıkların önüne geçebilecek.
+
+336
+00:59:13,860 --> 00:59:20,980
+Böylece de sağlık sistemlerine ulaşmak, bağlayacak ve yaşam kalpistlerinin artmasından görelim.
+
+337
+00:59:23,000 --> 00:59:27,059
+Bu da 12. Kalkınma Kıramı'nın ve sağlık sistemlerinin yaygınlaşması hedefiydi.
+
+338
+00:59:27,059 --> 00:59:28,340
+Bunu da hoppun görüyoruz.
+
+339
+00:59:31,903 --> 00:59:44,903
+Yapay zeka sistemdenin, toplam atılması, çift hasar enerjilerin yaygınlaşması ile toplumun bağlamındaki çiftel, sağlık okul, yazarlığı ve farkındalarını arttıracağına göre.
+
+340
+00:59:47,903 --> 00:59:58,891
+Ekonomik etkili olarak hastanede, flexel olarak bulunmak yerine evden takip sistemi, hastanedeki yükün azaltılmasına fayda sağlayacak ve böylece maliyetleri düşürecektir.
+
+341
+00:59:59,668 --> 01:00:11,668
+Bu projenin elde edecek ürün küresel pazarlıkta ihraç edilebilir bir dijital tarih sistemi olarak pazarlanmış.
+
+342
+01:00:11,668 --> 01:00:21,260
+Ayrıca oluşturulan veri zamanı da RG'de kullanılmaktadır bir konukte dönüştürülebilir.
+
+343
+01:00:21,876 --> 01:00:35,136
+Son olarak, ulusal güvenlik için en abız ve hastaların olan verileri, değerli ve güvenli bir durum tamına saklanması ve işlenmesiyle, sağlık verilerinin korunması ve olasılığı ilhallerin önüne geçebilecektir.
+
+344
+01:00:35,136 --> 01:00:38,756
+Böyle sıra güvenliği arttıracaktır.
+
+345
+01:00:39,736 --> 01:00:48,816
+Değerli teknoloji ile sağlık verilerinin işlenmesi ise, dışı bağımlılığı azaltacak, ekonomik güvenliğe katkı sağlayacağını düşünür.
+
+346
+01:00:49,652 --> 01:00:54,271
+Bulut ortamında saklayacağız dediniz de, bu çok mu güvenli olacak böyle yapımda?
+
+347
+01:00:55,791 --> 01:00:58,132
+Derli olması belki biraz daha antaşlı.
+
+348
+01:00:58,132 --> 01:01:07,331
+Ama yakın zamanda biliyorsun, bulut ortamında veriler çalındı. Yani onun bir altyapısı nasıl olacak? Buluttan kastımız burada ne?
+
+349
+01:01:11,411 --> 01:01:13,451
+Yani Google'da mı saklayacağız?
+
+350
+01:01:13,711 --> 01:01:15,931
+Yok yok, Sağlık Bakanlığı'nda.
+
+351
+01:01:17,091 --> 01:01:19,711
+Var mı böyle bir şey? Araştırdınız mı?
+
+352
+01:01:23,123 --> 01:01:26,323
+Yani onların böyle bir imkan sağlaması, alt yapıları var mı?
+
+353
+01:01:29,715 --> 01:01:39,955
+Hocam, mobil uygulamayı mı diyorsunuz? Yoksa kişisel sağlık verilerinin bulut ortamında saklanmasından bahsettiniz? Böyle bir imkanı var mı?
+
+354
+01:01:41,955 --> 01:01:49,215
+Sadece entegre olduğu için birileri erişebiliriz.
+
+355
+01:01:53,331 --> 01:02:00,331
+Eğer böyle bir şeye erişemezsek zaten değişmek zorunda kalırız. Sadece bu önceden plan olarak böyle sunuyoruz.
+
+356
+01:02:02,072 --> 01:02:03,331
+Yani şey...
+
+357
+01:02:03,771 --> 01:02:08,692
+Anunlarda yasalarla mümkün mü değil mi? Onu tam şey yapmadık ama...
+
+358
+01:02:08,692 --> 01:02:14,811
+Yasayı geçtim. Yakın zamanda Sağlık Bakanlığı'na yakalı biliyorsunuz bir Google Drive sıkıntısı olmuştu.
+
+359
+01:02:16,032 --> 01:02:17,331
+Yani bunun...
+
+360
+01:02:17,811 --> 01:02:32,251
+Bulut ortamında derken, böyle bir projeyi gerçekten tübü takatılmış olsanız, nasıl bir ortamda saklanacağını, kaynağının ne olacağını açık açık söylemek gerekiyor. Yoksa bu bir mesela sıkıntı.
+
+361
+01:02:33,891 --> 01:02:39,151
+Tamam arkadaşlar, diğer ekip sunuma başlayabiliriz. Teşekkür ederiz. Sağ olun. Sağ olun.
+
+362
+01:02:40,431 --> 01:02:41,491
+Dilediğiniz için teşekkürler.
+
+363
+01:02:46,036 --> 01:02:50,276
+Diğer ekibimiz, buranın hemen bakalım.
+
+364
+01:02:51,676 --> 01:02:53,096
+Hocam sesim geliyor mu benim?
+
+365
+01:02:53,236 --> 01:02:54,336
+Grup, grup 5.
+
+366
+01:02:55,016 --> 01:02:55,556
+Geliyor mu sesim?
+
+367
+01:02:55,896 --> 01:02:56,256
+Geliyor.
+
+368
+01:02:57,696 --> 01:03:05,136
+[öğrenci] [öğrenci], [kişisel bilgi]. Buyurun.
+
+369
+01:03:07,716 --> 01:03:09,136
+[öğrenci], [öğrenci], [öğrenci].
+
+370
+01:03:09,996 --> 01:03:11,615
+Ben ekran paylaşacağım.
+
+371
+01:03:28,275 --> 01:03:29,435
+Geliyor mu görüntü?
+
+372
+01:03:30,635 --> 01:03:30,975
+Geliyor.
+
+373
+01:03:31,875 --> 01:03:34,455
+Tamam. Merhabalar, ben [öğrenci].
+
+374
+01:03:35,275 --> 01:03:44,975
+Bugün [öğrenci] ve [öğrenci]'le birlikte size görme engelli bireyler için görsel söz cevap sistemi tasarımımızla alakalı sizin ilgi gerçekleştireceğiz.
+
+375
+01:03:46,115 --> 01:03:55,076
+Projenin özetinden bahsedecek olursak öncelikle, görme engelli bireylerin günlük yaşamlarında birçok sorunla karşılaştıklarını zaten hepimiz biliyoruzdur.
+
+376
+01:03:56,115 --> 01:03:59,675
+algısal eksikliklere mevcut iletişim zorlukları yaşıyorlar.
+
+377
+01:04:00,255 --> 01:04:07,496
+Biz de bunları daha iyi bir şekilde, daha çözüm üretebilmek için aslında, iyi bir çözüm üretebilmek için
+
+378
+01:04:07,496 --> 01:04:13,476
+görüntü işleme, doğal dilişleme ve ses işleme katılmalarının entegre edildiği bir sistem tasarladık.
+
+379
+01:04:13,996 --> 01:04:17,855
+Öncelikle kullanıcımız, bu bizim küçük bir proje değerli almanız.
+
+380
+01:04:19,135 --> 01:04:22,976
+Öncelikle kullanıcımızın iletişime geçeceği ilk modülümüz ses işleme modülümüz olacak.
+
+381
+01:04:23,860 --> 01:04:41,980
+Ses işleme modülüne kullanıcı istediği soruyu soracak. Örneğin bu ortamı tasvir et ya da benim önümde şu anda nasıl bir nesne var gibi sorular soracak. Daha sonrasında ses işleme modülümüz bu soruyu nesne dönüştürüp.
+
+382
+01:04:42,228 --> 01:05:01,208
+Bir NLP modülümüz daha, bir NLP modülümüz de var aynı zamanda. Bu NLP modülüne verecek. NLP modülümüz ise bu metini sınıflandırarak bizim soru gruplarımız olacak bu proje kapsamında. Gruplandıracak. Daha sonrasında görüntü işleme modülümüz de aktaracak.
+
+383
+01:05:01,844 --> 01:05:21,764
+Buradaki oklarımız çift yönlü fark ettiyseniz. Bunun sebebi şu, biz geri bildirimli bir proje yapmayı hayal ediyoruz. Görüntü işlem modülü işlemlerini bitirdikten sonra geri dönüşümü aynı şekilde sonucu bir NLP modülümüze verecek. NLP modülümüz daha sonrasında sesli bir yanıt oluşturarak kullandığımıza geri bildirimde bulunacak.
+
+384
+01:05:23,251 --> 01:05:47,092
+Özgün değerden önce kısaca şeyden bahsedeyim. Literatür taramamızda aslında bu tarz bir projelere alakalı çok fazla çalışma görmedik. Bir tane çalışma var aslında. Ama çalışmada sadece görüntü ve doğal işleme kurulmamış. Siz işleme modülü entegre edilmemiş. Bizim aslında ek olarak özgün değerimizin ana sebebi siz işleme modüllerinin de entegre edilmesi bu sistemen.
+
+385
+01:05:49,235 --> 01:06:00,495
+Örneğin, çok spesifik alanlar için bu projeler gerçekleştirilmiş. Mesela mutfaktaki eşyaları tasvir etmekle alakalı bir proje daha var literatürde.
+
+386
+01:06:01,355 --> 01:06:11,755
+Bunun dışında görmeyen gelmeyi, bağımsız yaşam belirlenini arttırmak istiyoruz ve dolayısıyla aslında yeni teknolojiler, yani gelişmiş olan teknolojilerle birlikte sosyal bir payda sağlamaya başlıyoruz.
+
+387
+01:06:14,356 --> 01:06:27,296
+Amaç fedeflerimize gelecek olursak, çalışma kapsamında aslında genel olarak çevresel nesneleri tanımlamayı, ortam tasfiri yapmayı, nesneler hakkında sorular sormayı ve anlamlı bir geri bildirim alma sürecini oluşturmak istiyoruz.
+
+388
+01:06:28,196 --> 01:06:37,716
+Bunları yaparken dediğim gibi proje kapsamında 3 ana modülümüz mevcut. Bir tanesi görüntü işleme. Görüntü işlemini modülünün yapmasını beklediğimiz 3 tane ana.
+
+389
+01:06:38,195 --> 01:07:05,776
+amacı var. Ortam tasviri. Ortam tasviri gerçekleştirirken birazdan iş parçalarında daha detaylı bahsedeceğiz. Ortam tasviri yaparken genel olarak image segmentation dediğimiz görüntüleri segmentasyonu, segmentleme çalışmalarını kullanacağız burada. Bununla birlikte kümelemeyi de işin içine katmayı planlıyoruz. Bunun dışı nesneleri test edeceğiz. Nesnelerin de özelliklerini aktaracağız. Burada neyi kastediyoruz? Örneğin,
+
+390
+01:07:06,195 --> 01:07:12,476
+Önümdeki nesnenin rengi nedir, kaç adet vardır gibi bir şey hayal ediyoruz, planlıyoruz.
+
+391
+01:07:13,155 --> 01:07:23,876
+Doğa denişleme kısmında ise bizim sesten aldığımız, metne çevirdiğimiz kısmın anlamlandırılması ve anlamlandırıldıktan sonra da soruların gruplandırılması işlemleri yapılacak.
+
+392
+01:07:24,884 --> 01:07:32,384
+Son olarak da set işleme kısmı var. Ses işlemede de sesli isteğin yazıya dönüştürülmesine, sesli bir yanıt verilmesini istiyoruz.
+
+393
+01:07:32,384 --> 01:07:43,384
+Burada aslında bizim amacımız sadece İngilizce yanıt vermek veya İngilizce sorulara cevap vermek değil, aynı zamanda Türkçe çalışmayı hedefliyoruz.
+
+394
+01:07:44,596 --> 01:08:01,016
+Yönteme gelecek olursam eğer. Öncelikle veri toplayacağız. Açık kaynaklı verilerle birlikte, örneğin görüntü işleme için açık kaynaklı MS-Coco data setemimiz biliyoruzdur. Bunu kullanacağız ama tabii ki de kendimiz aitliyetten doğal ve ses işleme modülü için Türkçe verilerle toplanmayı planlıyoruz.
+
+395
+01:08:01,492 --> 01:08:09,132
+Bunun dışında tasarım kısmında görüntü işlemede yola oldukça başarılı, nesne tespit yapma işlemlerinde.
+
+396
+01:08:09,572 --> 01:08:13,052
+Yola ve reset'i birlikte kullanarak nesne tespiti gerçekleştireceğiz.
+
+397
+01:08:13,452 --> 01:08:16,231
+K-Wins ve Albo'yu kullanarak renk tespitleri yapacağız.
+
+398
+01:08:16,391 --> 01:08:20,792
+Çünkü görüntü işlem modülümüzün içerdiği bir özellik de renklerin tespit edilmesiyle.
+
+399
+01:08:20,792 --> 01:08:25,772
+Ve görüntü segmentasyonu ve gümeleme ile birlikte de ortam tasarımı gerçekleştireceğiz.
+
+400
+01:08:26,771 --> 01:08:29,851
+Doğa dil işlemede ders kullanmayı planlıyoruz.
+
+401
+01:08:31,731 --> 01:08:33,172
+Elbow burada ne işe yarayacak?
+
+402
+01:08:36,131 --> 01:08:41,771
+Elbow burada ne işe yarayacak? Hocam, kümeleme, kaç tane kümemiz olması gerektiğini aslında Elbow ile bulmuş olacağız.
+
+403
+01:08:42,644 --> 01:08:43,884
+Nasıl yapıyor?
+
+404
+01:08:44,104 --> 01:08:51,963
+Yani aslında bu aslında bizim projemizin kaç tane, ne kadar renk skalamızı vermekle alakalı aslında.
+
+405
+01:08:52,484 --> 01:08:55,164
+Örneğin şu kadar renk tespit etmek istiyoruz.
+
+406
+01:08:55,543 --> 01:08:58,203
+Yani seçtiğimiz 12 tane rengimiz var diyelim ki.
+
+407
+01:08:58,524 --> 01:09:03,884
+12 tane rengin aslında kullanılması için elbubu tercih edeceğiz.
+
+408
+01:09:04,423 --> 01:09:07,224
+Yani K'yı doğrudan 12'ye alsak olmuyor mu?
+
+409
+01:09:08,212 --> 01:09:11,972
+O da olur hocam. Yani elbobu aslında bir desteklemek amacıyla.
+
+410
+01:09:11,972 --> 01:09:22,992
+Yani şu söylem olacak. Birden 12'ye kadar elbobu metotla skorlar elde edeceksiniz. O elbobu metodun biliyorsun nerede dramatik tüktüyse oradan sonra kesiliyor.
+
+411
+01:09:23,811 --> 01:09:30,972
+O şekilde yani. Sadece bir 12 renk var ama o 12 rengin içinde belki 8 olur, 9 olur falan diye düşünüyorum.
+
+412
+01:09:30,972 --> 01:09:32,391
+Tamam.
+
+413
+01:09:32,948 --> 01:09:40,768
+Evet hocam, ona benzer. Aynen. Desteklesin diye aslında keymisi. Görüntü segmentasyonu ve kümelemeyle birlikte de ortam taksini gerçekleştireceğiz demiştik.
+
+414
+01:09:40,768 --> 01:09:58,128
+Doğal dil işlenme kısmında BERT kullanmayı planlıyoruz. Türkçe kısmına dahil edeceğiz işin içine. Az önce özgün değerde atlamış olabilirim. Bizim aslında literatürden ayrıştığımız kısımda Türkçe yanıt verebilme kısmı bir yandan. Sorular bu şekilde gruplandırılacak.
+
+415
+01:09:58,908 --> 01:10:00,000
+Son olarak da ses işlenme kısmı.
+
+416
+01:10:00,000 --> 01:10:12,860
+Toplanan Türkçe ses verilerinde gürültü temizleme işleminden sonra metne çevirecek bu ses işlem modülünü, ses yanıt özelliği de bu modülde gerçekleşecek diyeyim ve sözü [öğrenci].
+
+417
+01:10:14,739 --> 01:10:16,360
+Merhabalar, ismi [öğrenci].
+
+418
+01:10:18,719 --> 01:10:20,600
+Paylaşım kalabilir, bu arada.
+
+419
+01:10:22,780 --> 01:10:24,139
+Sesimi kapatmaya çalışıyorum.
+
+420
+01:10:29,619 --> 01:10:31,039
+Neyse, alsın.
+
+421
+01:10:35,960 --> 01:10:40,619
+Ben projemizin iş paketlerinden biraz bahsetmek istiyorum. Temel olarak altı iş paketine...
+
+422
+01:10:41,076 --> 01:11:00,416
+Projeyi ayararak yönetmeye yapılırız. İlk üç iş paketini, görüntü verisinin toplanması ve ön işleme adımlarının ayırlanması, sonrasında Türkçe ses verisinin toplanması ve ön işlemesi ve ses işleme algoritmalarının değiştirilmesi ve seslenme, dönüşüm modulunun hazırlanması paketlerini altışar aylık sürelerle işlemeyi hedefliyoruz.
+
+423
+01:11:06,931 --> 01:11:14,391
+İlk 6 ayda görüntü verisini toplayarak, 4. aydan itibaren de Türkçe ses verisinin toplanmasıyla devam etmek istiyoruz.
+
+424
+01:11:14,531 --> 01:11:26,751
+Aslında orada bir üst üste girilecek 2 veri toplanma aşaması. Daha sonrasında 8'er aylık doğal dili işleme algoritmalarının geliştirmesi ve metinlerinden anlam çıkartılması ve görüntü işleme ve ortam tasfiği algoritmalarının geliştirmesi iş paket konumuz var.
+
+425
+01:11:27,104 --> 01:11:33,904
+Son olarak da SESİ'nin, Odevin'in geliştirmesi ve geri bildirimleri ile kullanıcı gelir bildirimleri ile sistemin iyileştirmesi paketimiz var.
+
+426
+01:11:33,904 --> 01:11:42,463
+Bunların detaylarına geçecek olursak, öncelikle görüntü verisinin toplanması ve ön işleme adımlarının uygulanmasında,
+
+427
+01:11:44,032 --> 01:11:50,311
+Hem açık kaynaklı, az önce [öğrenci]'un da bahsettiği gibi açık kaynaklı veri setlerinden, veri kümmelerinden faydalanacağız.
+
+428
+01:11:50,432 --> 01:11:56,532
+Hem de modeli daha iyi eğitebilmek için kendi görüntüverimizi kameralara analizle toplayacağız.
+
+429
+01:11:57,032 --> 01:12:01,231
+Sonrasında bu görüntüler üstünde ön işleme, işte preprocessing işlemlerini yapacağız.
+
+430
+01:12:01,731 --> 01:12:03,492
+Daha sonrasında ise çıktılığı test edeceğiz.
+
+431
+01:12:03,492 --> 01:12:12,032
+Ara çıktılığı olarak da işlenmiş görüntülerden oluşan bir veri kümesi ve görüntü işleme algoritma modeliyle optimiz edilmiş görüntüler olmasına hedef.
+
+432
+01:12:12,032 --> 01:12:22,432
+Başarı ölçtığımız ise net bir değer verip ölçülebilmesi amacıyla işlenmiş yönteminin %95 doğrulukla kullanılabilir hale getirilmesi olacak.
+
+433
+01:12:23,811 --> 01:12:28,092
+Daha sonraki iş paketimiz Türkçe ses verisinin toplanması ve ön işlemesi.
+
+434
+01:12:29,871 --> 01:12:32,976
+Şu an açık kaynaklı olarak Türkçe ses verisi...
+
+435
+01:13:00,975 --> 01:13:11,296
+Bu yüzden temizlenmiş Türkçe Sesveri İkibisi elde etmiyoruz. Başarı ölçüldüğümüz olarak toplam sesverilerin %90 doğruluk oranıyla görüntülen aramaların ısını belirliyoruz.
+
+436
+01:13:14,292 --> 01:13:20,132
+Bir sonraki iş paketimiz ses işleme algoritmalarının değiştirilmesi ve sesten metni dönüşüm modülünün hazırlanması.
+
+437
+01:13:20,811 --> 01:13:27,832
+Burada gürültü temizleme algoritmalarını uygulamaya hedefliyoruz. Daha sonrasında sesli komutların metni çevrilmesi için bir modül hazırlamaya hedefliyoruz.
+
+438
+01:13:27,832 --> 01:13:31,832
+Daha sonrasında da doğruluk alanlarının arttırılması için testler yapılmasına hedefliyoruz.
+
+439
+01:13:32,332 --> 01:13:42,132
+Açıkları olarak gürültü temizleme algoritması sonucu, algoritmasının uygulaması sonucunda elde edilen ses birimiz ve gürültüden arandırılmış sesli komutlarına elde edilen metin.
+
+440
+01:13:42,292 --> 01:13:51,252
+veri kümesi olmasını hedefliyoruz. Sesli komutların işlenmesi ve ISO 95'le olarak metne dönüştürülmesi de bu paketin başarıda da çıt olacak.
+
+441
+01:13:53,587 --> 01:13:59,268
+Daha sonrasında doğal dil işleme algoritmalarının geliştirilmesi ve metinden anlam çıkarılma yapması paketimiz var.
+
+442
+01:13:59,347 --> 01:14:08,327
+Burada metin verisinin temizlenmesi ve ön işleme adımları, aynı şekilde metinden anlam çıkarılma algoritmalarının geliştirilmesi ve çıkılardan test edilmesi yapacağımız işler olacak.
+
+443
+01:14:08,327 --> 01:14:17,327
+Ara açıklar olarak, ön işlemden geçirilmiş metin veri kümesi, geliştirilen doğal dil işleme algoritmalarımız ve bu metinler üstünde uyguladığımız analizlerin sonuçları olacak.
+
+444
+01:14:18,100 --> 01:14:27,200
+Başarı ölçüde olarak metin verisinden anlam çıkarılması için doğal değişim algoritmalarının uygulanması ve bu algoritmaların %90 doğruluklarıyla çalıştılmasını kendimize belirledik.
+
+445
+01:14:29,800 --> 01:14:31,280
+Bir sonraki iş paketimiz görüntü.
+
+446
+01:14:31,280 --> 01:14:35,700
+Metin verisinde ön işleme olarak ne yapabiliriz mesela burada?
+
+447
+01:14:36,243 --> 01:14:46,923
+Work to Web gibi, hocam, işte kelimelerin vektörize edilmesi, sınıflandırılması gibi preproses işlemleri var, temizlenmesi, gürtülen arındırılması gibi işlemleri hedefliyoruz.
+
+448
+01:14:46,923 --> 01:14:56,923
+Ya Work to Web'in dışında bir yöntem mesela yok mu? Mesela ben burada derin öğrenme falan kullanacak olsam veya klasik makine öğrenmesi yöntemleri kullanacak olsam...
+
+449
+01:14:57,555 --> 01:15:03,916
+Bir metni nasıl vektör formatına getirdim başta? Vektör World World için ben. Çünkü bu eski bir yöntem.
+
+450
+01:15:07,036 --> 01:15:23,095
+Hocam, o konuda aslında şöyle, biz iş paketlerini parça parça araştırmacılar bazında bölmeye hedefledik. Doğal düz işleme daha çok araştırmacı olarak [öğrenci]'un tarafında. O belki daha iyi bir cevap verebilir.
+
+451
+01:15:23,335 --> 01:15:24,335
+Öğleyebilirsin, evet.
+
+452
+01:15:38,292 --> 01:15:56,572
+Geliyorum şu an. Aslında ön işlem adımı olarak, Word'u vektan de önce, hocam burada şeyi kastediyoruz, stuff Word'lerin kaldırılması, genel olarak metnin daha anlamlı hale getirilmesi aslında. Bu ön aşamalar derken bunları kastediyoruz. Vektorize etmeden de önceki hali aslında.
+
+453
+01:15:56,572 --> 01:16:04,692
+Tamam, vektorize etmek için başka yöntem yok mu? Onu anladım mesela, gereksiz yere emojili falan varsa onların çıkartılması olabilir.
+
+454
+01:16:05,203 --> 01:16:07,623
+Veya hatalı kelimelerle yapılıyor.
+
+455
+01:16:08,243 --> 01:16:10,043
+Ben oraya girebilir miyim hocam?
+
+456
+01:16:10,923 --> 01:16:11,123
+Gir.
+
+457
+01:16:11,796 --> 01:16:39,796
+Hocam, aslında burada biz, Bert biliyorsunuz, vektör boyutu daha küçük olan bir model. Sizden anladığım kadarıyla, hani böyle vektör boyutu büyük olan, böyle artık LLM tabanlı modeller çıktı. Hani onlar da kullanılabilir diye, biz de düşündük aslında bunu ama. LLM tabanlı modellerde hocam, vektör öğretimi işlemleri falan çok uzun sürüyor. Aslında bizim sistemimizin de böyle biraz daha real time'a yakınsa bir şekilde olması gerekiyor. Hani böyle, hani görüntü tasarını isteyen kişinin 10 dakika onu beklemek gibi bir şey yok. Hani biraz daha...
+
+458
+01:16:39,796 --> 01:16:56,196
+Hızlı cevap almak istiyoruz. O yüzden de biraz daha böyle küçük ama etkili diyebileceğimiz bir modeli tercih ettik burada. Hani Bert, şey, küçük bir dil modeli diğerlerine göre gerçekten, el elemlere göre falan. Ama daha hızlı ve biraz daha ortalama doğruluklu çalışan bir model. O yüzden Bert tercih ettik için aslında.
+
+459
+01:16:57,196 --> 01:17:03,876
+Peki, Word2Wake'in çalışma karmaşıklığı gecikme oluşturmayacak mı?
+
+460
+01:17:05,235 --> 01:17:10,235
+Tabii ki oluşturacak hocam ama büyük LLM modellerininki çok daha yüksek.
+
+461
+01:17:10,915 --> 01:17:13,895
+Ama eğitim başka, test aşılmasında başka.
+
+462
+01:17:14,255 --> 01:17:16,595
+Yani o LLM'i eğitmek farklı konu.
+
+463
+01:17:17,615 --> 01:17:24,215
+Hocam, sonuçta elde ettiğimiz teksti embedding işlemiyle modele vermemiz gerekecek bizim ara katmanlarda.
+
+464
+01:17:25,055 --> 01:17:26,915
+Diğer modellere de vermemiz gerekecek.
+
+465
+01:17:26,915 --> 01:17:28,811
+O yüzden orada...
+
+466
+01:17:29,171 --> 01:17:47,112
+Eğitilmiş bir modelden bahsediyoruz. Eğitilmiş modele input veriyorsun. Öbüründe de work to work'ten geçirip, bir vektör olup durup makine öğrenmesini yöntemine veriyorsun. Eğitilmiş bir modele input vermek ve onun sonununu almakla bu kadar gecikme olmayacak. Tamam, devam edebilirsin.
+
+467
+01:17:48,511 --> 01:17:55,112
+Hocam ama dediğinizi anladık aslında ama dediğimiz gibi bu üç tane sisteminde bir arada çalışacağı bir...
+
+468
+01:17:55,731 --> 01:18:02,372
+3 modülünde daha doğrusu çalışacağı bir sistem hayal ettiğimiz için daha küçük çaplı düşündük ama dediğinizi de uygulayabiliriz belki nereden sonra.
+
+469
+01:18:02,372 --> 01:18:13,472
+Yani şöyle, sonuçta argeniteli ön plana çıkacak bir şey düşünüyorsanız, burada çok çok daha yeni, yani World2Wake bazı aşamalarda basit ve yetersiz kalıyor.
+
+470
+01:18:13,472 --> 01:18:22,692
+Hani %90-95 doğruluk oranı falan diyoruz ya, World2Wake ile ilk düğme yanlışlıkla yorulabilirsiniz.
+
+471
+01:18:24,115 --> 01:18:30,215
+Olabilir hocam. Doğal dilin genel konseptinde Bert's'ti aslında amacımız.
+
+472
+01:18:31,295 --> 01:18:32,375
+Gelemedelim.
+
+473
+01:18:34,115 --> 01:18:40,275
+Tamam hocam. Bir sonraki iş paketimiz görüntü işleme ve ortam tasdiri algoritmalarının geliştirilmesi olacak.
+
+474
+01:18:40,956 --> 01:18:46,735
+Burada yapacağımız işleri görüntü sınavlandırma algoritmalarının geliştirilmesi, sonrasında nesne tespit algoritmalarının geliştirilmesi.
+
+475
+01:18:47,231 --> 01:18:56,391
+Sonrasında nesnelerin sayısı ve renginin tespit edilecek modelinin hazırlanması ve sonrasında da bu ortam tasvirinin başarısının ölçülmesi olacak şekilde öğretmeyebiliriz.
+
+476
+01:18:56,991 --> 01:19:06,192
+Araçlıklarımız olarak geliştirilen görüntüsüne sandırma alıyor üretmaları, daha sonrasında geliştirilen nesne tespit alıyor üretmaları, geliştirilen renk tespit alıyor üretmesi ve ortam tasviri raporları.
+
+477
+01:19:06,411 --> 01:19:15,192
+Aslında burada az önce keyimiz, elbow konuşmuştuk. Burada renk tespiti yapabilmek amacıyla biz pikterlerin kümelerini...
+
+478
+01:19:15,231 --> 01:19:30,371
+ve en doğru küme sayısında kümeleyerek o nesnenin rengini, bu pikselleri doğru bir şekilde kümeleyerek o nesnenin rengini olabilecek en doğru şekilde hesaplamayı hedefliyoruz.
+
+479
+01:19:30,851 --> 01:19:38,871
+Başarı ölçütümüz olarak nesne tespiti ve görüntü sınıflandırma algoritmalarının %95 ve üzeri itabetlikle çalışmasına kendimize hedef koyduk.
+
+480
+01:19:43,231 --> 01:19:52,751
+Başarı olan hesaplanmasını hedef olarak belirledik. Son iş paketimiz, sesli yanıt modülünün geliştirilmesi ve geri bildirimleriyle seslemin iyileştirmesi olacak.
+
+481
+01:19:53,331 --> 01:20:00,000
+Burada sesli yanıt modülünün geliştirilmesi, daha sonrasında ortam tasvili sonuçlarının sesli yanıtlara dönüştürülmesi aslında en önemli bir şey.
+
+482
+01:20:00,000 --> 01:20:04,920
+NLP modülünün çıktısını sesli bir anıta dönüştürüp seslendirme konusu.
+
+483
+01:20:05,319 --> 01:20:11,679
+Sonrasında en son aşama olarak kullanıcılardan aldığımız geri bildirimleri toplanması ve analiz edilmesini hedefliyoruz.
+
+484
+01:20:12,739 --> 01:20:19,239
+Araçlıkları olarak sesli yanıt modülünün çıktığı ve kullanıcı geri bildirimlerine dayalı bir performans raporu oluşturmayı hedefliyoruz.
+
+485
+01:20:19,239 --> 01:20:27,439
+Başarı ölçüdüğümüz olarak da kullanıcıların geri bildirimlerini %90 memnuniyet oranı sağlamasına kendimize hedef koyduk.
+
+486
+01:20:28,819 --> 01:20:34,819
+Bundan sonraki kısmı, CAFERAN'ın edecek. Kamera, o anda olacak. O yüzden...
+
+487
+01:20:37,220 --> 01:20:39,619
+Selamlar hocam. Sesim geliyor mu?
+
+488
+01:20:39,619 --> 01:20:40,523
+Geliyor.
+
+489
+01:20:40,564 --> 01:20:57,043
+Ben de projede oluşabilecek aslında olası listelerden biraz bahsedeceğim. Projemizde iki farklı input alacağımız için aslında input alacağımız cihazların kalitesi biraz önem arz ediyor. Hem ses anlamında hem görüntü anlamında input alacağımız cihazların biraz kaliteli olması gerekiyor.
+
+490
+01:20:57,043 --> 01:21:08,564
+Çünkü diğer türlü alternatif karona donanımlarında kalibrasyonlarda bazı sıkıntılar yaşayabiliriz ya da ses inputu alacağımız zaman gürültü anlamında da ortamın gürültülü olacağımız.
+
+491
+01:21:08,564 --> 01:21:15,564
+durumunda da sıkıntı yaşayabiliriz. Bunun için zaten gürültü, filtreleme, algoritmaları kullanacağız ama yine de ses ve görüntü alacağımız input...
+
+492
+01:21:16,083 --> 01:21:26,064
+cihazlarının biraz kaliteli olması gerekiyor. Bunun haricinde arada modeller kullanacağımız için bu modellerde istediğimiz başarıyı elde edemeyeceğimiz durumlar olabilir.
+
+493
+01:21:26,064 --> 01:21:32,884
+Bu yüzden de aslında modellerin, [öğrenci] de bahsetti, belli bir doğruluk oranının üstünde olmayan modellerle çalışmamamız gerekiyor.
+
+494
+01:21:33,003 --> 01:21:42,064
+Çünkü kullanan kişi bizim ona verdiğimiz bilgilerle herhangi bir aksiyon yapabilir. O yüzden belli doğruluk altındaki modellerle burada çalışmamamız gerekiyor.
+
+495
+01:21:42,844 --> 01:21:44,064
+Onun haricinde ses yanıt modelleri...
+
+496
+01:21:44,083 --> 01:22:00,743
+Modülün kullanıcı geri bildirimlerine göre düşük memnuniyet sağlaması gibi sorunlarla da karşılaşabiliriz. Bunun için geri bilimlere göre modellerin yeniden fine-tune edilmesi, yani aslında oluşturduğumuz yazılımı insanlara denetip onun çıktılarını bir konuşmamız gerekiyor. Bundan ileride de bahsedeceğim.
+
+497
+01:22:03,347 --> 01:22:15,427
+Yaygan etiklerden bahsedecek olursak, bilimsel ve akademik çıktılar bazında öncelikle tabii ki projemiz başarılı olduktan sonra akademik geçerliliği olan uluslararası bir dergide bir makale yayınlamayı düşünüyoruz.
+
+498
+01:22:15,887 --> 01:22:19,347
+Onun haricinde de projemizde aslında literatüre...
+
+499
+01:22:20,168 --> 01:22:21,347
+Kamerayı açabilir miyiz?
+
+500
+01:22:22,068 --> 01:22:26,467
+Benim kameram hocam [öğrenci]'den görünüyor ama benim kameram bozuk olduğu için [öğrenci]'den bakıyorum.
+
+501
+01:22:27,887 --> 01:22:29,768
+Ben niye şey tamamı bulayım?
+
+502
+01:22:30,387 --> 01:22:32,387
+Farklı görünüm.
+
+503
+01:22:32,707 --> 01:22:33,268
+Tamam, şimdi.
+
+504
+01:22:34,515 --> 01:22:42,715
+Tamamdır. Bilimsel ve akademik çıktılardan bahsediyorum hocam. Dediğim gibi ultradası geçerli olan bir dergiden makale yayınlamayı hedefliyoruz.
+
+505
+01:22:43,115 --> 01:23:01,155
+Onun haricinde de aslında literatüre direkt katkı anlamında çok büyük bir katkımız yok ama literatürde hali hazırda çok yüksek doğruluk oranlarında çalışan doğal deli işleme, görüntü işleme ve seslendirme algoritmaları gibi algoritmaları bir arada kullanarak insanlara fayda sağlayabilecek bir proje geliştirmeyi hedefliyoruz aslında.
+
+506
+01:23:04,212 --> 01:23:26,012
+Bunu gerçek bir şey de söylesem bayağı sıkıntı olur. Literatüre katkımız olmayacak. Literatüre tam katkımız olmayacak. Yeni bir yöntem sunmuyoruz aslında. Var olan yöntemleri kullanarak bir proje oluşturuyoruz gibi. Bu da Bimbir projesinin doğatına aykırı bir şey zaten. Yani bindiğin dalı kesiyoruz. Anladım hocam.
+
+507
+01:23:26,484 --> 01:23:42,844
+Ekonomik, ticari ve sosyal çıkklara bakacak olursak aslında projemizin ekonomik ve ticari bir çıktısını beklemiyoruz. Çünkü projemiz daha çok bir sosyal sorumluluk projesi gibi. Engelli bireylerin bu yazılım sayesinde hem çalışma hayatında hem okul hayatında daha hızlı adapte olabilmesini sağlıyoruz.
+
+508
+01:23:42,844 --> 01:23:54,484
+Tabii ki de yaptığımız bu yazılım hem yerel hem de küresel piyasada bir pazar oluşturabilir. Çünkü böyle bir ihtiyaç var yani böyle bir pazar oluşturabilir ama projemizin çıkışı anlamında ekonomik...
+
+509
+01:23:54,484 --> 01:23:59,064
+Ekonomik ve ticari bir çıktı beklemiyoruz sizin açıkçası. Daha çok sosyal bir proje yaptığınız proje.
+
+510
+01:24:02,131 --> 01:24:14,771
+Toplumsal ve kültürel etkilerden bakacak olursak aslında 12. Kalkınma Planı'nda çok net olarak engelli hizmetleri hedefinde çok net bir şekilde belirtiliyor ve bizim de tam olarak aslında projede yapmaya çalıştığımız şey bu.
+
+511
+01:24:14,771 --> 01:24:23,431
+Engelli bireylere sunulan hizmetlerde bireysel gereksinim ve destekler dikkate alınarak engellilerin bağımsız olarak toplumsal yaşama katılımları sağlanacaktır.
+
+512
+01:24:23,511 --> 01:24:29,771
+Aslında tam olarak bizim projede yaptığımız şey engelli bireylerin bizim gibi normal hayatta, eğitimde ve çalışma hayatına...
+
+513
+01:24:30,131 --> 01:24:34,492
+Daha rahat adapte olmaları ve biz aslında bizim gibi yaşayabilmelerini sağlamak temel amacımız bu.
+
+514
+01:24:35,131 --> 01:24:38,011
+Bunun haricinde hocam iki tane de çalıştay düşünüyoruz.
+
+515
+01:24:38,612 --> 01:24:41,511
+Görme engelliler topluluğu adına verdiğimiz bir topluluk var.
+
+516
+01:24:41,591 --> 01:24:43,751
+Bununla bir zirve yapmayı düşünüyoruz.
+
+517
+01:24:43,751 --> 01:24:54,431
+Burada yaşı 40 ve üzeri olan görme engelli bireyler toplanarak aslında yazılımlı uğra deneyerek hem 40 yaş üstü bireylerde hani çünkü onların teknoloji yaklaşımları farklı olabiliyor.
+
+518
+01:24:54,532 --> 01:24:56,912
+Hani onlar bunu nasıl kullanabiliyor onu gözlemlemek.
+
+519
+01:24:57,311 --> 01:24:58,131
+Aynı zamanda da...
+
+520
+01:24:58,131 --> 01:25:16,152
+Görme engelli topluluğuna bağlı bazı ilkokul ve ortaokullar var. Bu ilkokul ve ortaokullarda yaşı daha genç diyebileceğimiz insanlar üzerinde de deneyerek onlar üzerinde de bir çıktı elde etmek ve nerelerde eksiğimiz var, nereleri düzeltebiliriz şeklinde bir çıktı elde etmeyi planlıyoruz.
+
+521
+01:25:18,251 --> 01:25:19,551
+Dinleniriz için teşekkür ederiz hocam.
+
+522
+01:25:20,652 --> 01:25:24,791
+Tamamdır, teşekkür ederiz. Çok kısa bekleteceğim arkadaşlar. Geneli bekleteceğim, pardon.
+
+523
+01:26:20,851 --> 01:26:22,532
+Kulüm düşünüm var bu şekilde.
+
+524
+01:26:24,612 --> 01:26:32,731
+Tabii burada biz şu an sadece sizin sunum becerimizi, ondan sonra slide ile alakalı şeyleri değerlendirmiş olduk.
+
+525
+01:26:34,492 --> 01:26:42,731
+Sunumumuzun şu kısmı şöyle iyiydi, şöyle kötüydü, işte test sonunu şöyle şeydi, anlattığım şeyleri burada diğer ekiplere...
+
+526
+01:26:44,256 --> 01:26:51,576
+Adaletsizlik olmasını diye şu an için açıklamıyoruz. Kriterlerimiz zaten, derste anlattığımız kriterler neyse onlar burada değerlendiriliyor.
+
+527
+01:26:52,476 --> 01:26:59,396
+Yüklediğiniz proje raporları da hem dutlum şeyleri hem de raporlar bir arada.
+
+528
+01:27:00,115 --> 01:27:11,916
+İki Asistan Hocamız var, bir de ben varım. Üç tane not vereceğiz. Onların ortalaması sizin rapor notunuz, bir de sunum notunuz. İki tane not totalde alacaksınız. Dönem sonuna kadar böyle devam edeceğiz.
+
+529
+01:27:12,136 --> 01:27:18,836
+Kalan iki haftamızda. Şimdi hızlıca bir yoklama yapıp bir şey de söyleyip ondan sonra biteceğim. [öğrenci] burada mı? Buradayım hocam.
+
+530
+01:27:20,315 --> 01:27:26,496
+[öğrenci] yoktur. [öğrenci], [öğrenci] yoktur. [öğrenci] [öğrenci] burada. [öğrenci]? Buradayım.
+
+531
+01:27:27,119 --> 01:27:54,260
+[öğrenci]. Buradayım hocam. [öğrenci] yoktur, [öğrenci] yoktur, [öğrenci] burada, [öğrenci] burada, [öğrenci] yoktur oda. [öğrenci]. Buradayım hocam. Buradayım. [öğrenci] yoktur, [öğrenci]. Buradayım hocam. [öğrenci] [öğrenci]. [öğrenci]. [öğrenci] yoktur, [öğrenci].
+
+532
+01:27:55,028 --> 01:27:55,988
+Buradayım hocam.
+
+533
+01:27:57,168 --> 01:27:58,448
+[öğrenci].
+
+534
+01:28:00,108 --> 01:28:01,548
+[öğrenci].
+
+535
+01:28:02,448 --> 01:28:03,108
+[öğrenci] burada.
+
+536
+01:28:03,968 --> 01:28:04,768
+[öğrenci] da.
+
+537
+01:28:05,028 --> 01:28:05,908
+[öğrenci].
+
+538
+01:28:07,948 --> 01:28:09,348
+[öğrenci].
+
+539
+01:28:11,768 --> 01:28:12,608
+[öğrenci] burada.
+
+540
+01:28:14,468 --> 01:28:15,728
+Buradayım hocam.
+
+541
+01:28:16,408 --> 01:28:17,208
+[öğrenci].
+
+542
+01:28:17,808 --> 01:28:18,608
+Buradayım hocam.
+
+543
+01:28:19,368 --> 01:28:20,548
+[öğrenci].
+
+544
+01:28:22,612 --> 01:28:31,911
+[öğrenci], [öğrenci] burada, [öğrenci] burada, [öğrenci] burada, [öğrenci], [öğrenci].
+
+545
+01:28:33,152 --> 01:28:34,011
+Buradayım hocam.
+
+546
+01:28:34,992 --> 01:28:45,851
+[öğrenci] burada, [öğrenci] [öğrenci], [öğrenci], [öğrenci].
+
+547
+01:28:46,868 --> 01:28:47,948
+Buradayım hocam.
+
+548
+01:28:48,468 --> 01:28:51,328
+[öğrenci] yok herhalde. [öğrenci].
+
+549
+01:28:54,188 --> 01:28:55,428
+[öğrenci].
+
+550
+01:28:58,148 --> 01:28:59,288
+[öğrenci].
+
+551
+01:29:02,676 --> 01:29:03,836
+[öğrenci].
+
+552
+01:29:05,136 --> 01:29:05,716
+Buradayım.
+
+553
+01:29:06,876 --> 01:29:08,676
+[öğrenci], [öğrenci].
+
+554
+01:29:11,676 --> 01:29:12,716
+[öğrenci].
+
+555
+01:29:16,212 --> 01:29:29,692
+Şimdi rapor yüklemeyen ama bazı ekiplerden rapor yüklemeyenler var. [kişisel bilgi] numarası ve [kişisel bilgi] kimmiş bu arkadaşlar?
+
+556
+01:29:30,492 --> 01:29:32,612
+Evet hocam. Hocam bizim ekipten.
+
+557
+01:29:34,432 --> 01:29:40,252
+Yani ekipten bir kişi yüklemiş, öbür kişiler yüklememiş veya birkaç kişi yüklememiş, bir kişi yüklememiş.
+
+558
+01:29:40,640 --> 01:29:50,619
+Bunlar bir ekip. Niye yüklemediniz? Bu bir duyarıydı. Yani burada ekip bundan etkilenmeyecek. Yüklemeyen kişi belli bir kesintiye uğrayacak.
+
+559
+01:29:53,180 --> 01:29:58,960
+Hocam biz bir kişi gönderse sorun olmaz diye düşünüp de yollamadık.
+
+560
+01:29:58,979 --> 01:30:05,760
+Hayır, şimdi proje ekip kurallarına bakarsanız ve benim duyurlarına bakarsanız herkesin yüklemesi gerekmiyor diye orada açıklayabiliyor.
+
+561
+01:30:06,868 --> 01:30:32,828
+[kişisel bilgi], [kişisel bilgi], [kişisel bilgi]. Diğer şey de bu. Diğer gruptan da bir grup zaten tamamen projeyi yapmaktan vazgeçtiler. İki grubumuz da belli arkadaşlar yüklemiş, belli arkadaşlar yüklememiş. Bu raporun üzerinden belli bir kesinti yüklemeyenlere kesinti olacak anlamlıdır. Submission kuralları ile alakalı ufak bir parçamız var.
+
+562
+01:30:33,235 --> 01:30:35,416
+Onun ihlal edildiğini gösteriyor diyelim.
+
+563
+01:30:35,956 --> 01:30:36,876
+Sorumuz var mı arkadaşlar?
+
+564
+01:30:40,724 --> 01:30:54,283
+Peki, haftaya görüşmek üzere. Yeni sınımlarla, diğer grupların sınımlarıyla zaten listesi de var. Dördüncü grup, üçüncü grup ve yedinci grupla haftaya görüşeceğiz. Üçüncü grup olmadığı için yedinci grup biraz daha erken çoğulacak.
+
+565
+01:30:54,283 --> 01:31:05,984
+Haftaya dolayısıyla erken çoğul. Diğer haftalardan hocam biz haftaya sunmak istiyoruz diyen varsa bana mail göndersinler. O sunumu haftaya alabiliriz. Çünkü gelecek hafta iki tane sunumumuz var.
+
+566
+01:31:06,579 --> 01:31:10,960
+süreci erken almak isteyenler bu şekilde değerlendirebilirler. Hepinize iyi akşamlar.
+
+567
+01:31:12,119 --> 01:31:14,480
+İyi akşamlar.

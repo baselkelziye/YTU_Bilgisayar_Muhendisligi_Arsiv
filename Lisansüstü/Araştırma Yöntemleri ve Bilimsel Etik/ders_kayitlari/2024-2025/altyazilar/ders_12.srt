@@ -1,0 +1,1487 @@
+1
+00:03:13,524 --> 00:03:15,463
+Arkadaşlar, merhabalar, hoş geldiniz.
+
+2
+00:03:17,783 --> 00:03:18,563
+Hoş bulduk hocam.
+
+3
+00:03:20,264 --> 00:03:25,524
+Şimdi, hemen ilk grup hazır mı burada?
+
+4
+00:03:27,384 --> 00:03:28,204
+Evet hocam, buradayız.
+
+5
+00:03:29,403 --> 00:03:34,484
+Tamamdır. Ekranınızı paylaşabilirsiniz. Hazırlığımızı yapın.
+
+6
+00:03:36,304 --> 00:03:39,304
+Ben de şuradan grup sıralamalarını bulayım.
+
+7
+00:03:55,316 --> 00:03:57,536
+Bir iki dakika içerisinde başlayalım arkadaşlar.
+
+8
+00:03:59,456 --> 00:04:00,956
+Sizin grubunuz dördüncü gruptay mı?
+
+9
+00:04:02,556 --> 00:04:03,116
+Evet hocam.
+
+10
+00:04:03,956 --> 00:04:04,536
+Tamamdır.
+
+11
+00:04:05,936 --> 00:04:07,836
+Görüntü gelmiş olmasın altına çıkmışım.
+
+12
+00:04:08,216 --> 00:04:09,675
+Şu an slide görüntüsü geldi.
+
+13
+00:04:09,675 --> 00:04:11,616
+Evet.
+
+14
+00:05:03,444 --> 00:05:06,724
+Evet arkadaşlar, hazırsanız sunuma başlayabilirsiniz.
+
+15
+00:05:07,544 --> 00:05:08,004
+Tamamdır.
+
+16
+00:05:08,084 --> 00:05:17,744
+Merhabalar hocam, öncelikten benim adım [öğrenci], [öğrenci], ben [öğrenci]'le [öğrenci], dördümüz bu projeyi yapıyoruz.
+
+17
+00:05:19,244 --> 00:05:21,163
+İlk ben başlayacağım sunuma.
+
+18
+00:05:21,620 --> 00:05:29,740
+Bizim projemizin konusu hareketli bir kurulum ile monoküler görüntü dizilerinden nesnenin 3 boyutlu konum tahmini.
+
+19
+00:05:30,439 --> 00:05:34,480
+Bu başlıkta anlayacağımız şey hareketli bir kurulumdan kastımız otonom bir araç.
+
+20
+00:05:35,279 --> 00:05:41,879
+Bu bir araba olabilir, kamerası olan bir araba ya da özellikle dronelar aslında bizim hedefimiz.
+
+21
+00:05:42,439 --> 00:05:43,340
+Kamerası olan bir dron.
+
+22
+00:05:44,307 --> 00:05:53,127
+Görüntü dizilerinden de kastımız, bu kamerası video çekecek, kısacası, ya da birden fazla fotoğraf çekecek bir saniyede.
+
+23
+00:05:53,127 --> 00:05:57,127
+Ve bu çektiği fotoğraflardan da...
+
+24
+00:05:57,555 --> 00:06:05,656
+Çevresindeki nesnelerin, tabii bizim belediğimiz nesnenin, bu bir insan olabilir, bir araba olabilir ya da başka bir şey olabilir, onların konumunu tahmin edecek.
+
+25
+00:06:05,656 --> 00:06:17,395
+Bu sunumumuzun içerisinde öncelikten bir giriş bölümü var. Giriş bölümünde biraz bahsedeceğiz projemizden. Sonrasında projemizin özgür değerlerinden bahsedeceğiz.
+
+26
+00:06:18,420 --> 00:06:36,319
+Hemen ardından amaçlar ve hedefler bölümünde adından dalaşabileceği gibi bu projede neyi hedeflediğimizi anlatacağız. Ondan sonra [öğrenci] arkadaşımız sözü alacak benden ve bu projeyi gerçekleştirmede nasıl bir yöntem izledik ondan bahsedecek.
+
+27
+00:06:36,723 --> 00:06:48,144
+Sonrasında [öğrenci], proje yönetimini nasıl yaptığımızdan bahsedecek. En sonunda da [öğrenci], [öğrenci], yaygın etkiden bahsedecek ve bir sonuç konuşması yapıp kapatacak sunumu.
+
+28
+00:06:49,403 --> 00:06:50,683
+Sonuçta geçebiliriz [öğrenci].
+
+29
+00:06:53,823 --> 00:06:55,583
+Öncelikle giriş kısmından bahsedelim.
+
+30
+00:06:57,396 --> 00:07:06,316
+Projeyi yaparken, ki amacımız biraz daha drone'lar. Drone'ların üzerinde bir GPS alıcısı olacak.
+
+31
+00:07:06,755 --> 00:07:11,436
+O şekilde drone kendi konumunu bilecek ve aynı zamanda bir kamerası olacak.
+
+32
+00:07:11,436 --> 00:07:19,696
+Ve bu şekilde havadayken etrafındaki nesnelerin konumunu bize bildirecek.
+
+33
+00:07:25,139 --> 00:07:32,939
+Bir kamerayla etrafındaki konuları bularak, tabii ki başka bir türlü problemlere çözüm olabilecek bir proje olduğunu düşünüyoruz.
+
+34
+00:07:33,819 --> 00:07:43,240
+Bu projeyi yaparken de, bir sonraki saate geçebiliriz insanlar, bizim diğerlerinden farkımız tek kamera kullanılacak olmamız.
+
+35
+00:07:43,240 --> 00:07:46,659
+Yani normalde bu böyle bir görev için.
+
+36
+00:07:47,315 --> 00:08:00,455
+birden fazla sensöre ihtiyaç duyulurken, biz aslında tam olarak konumu tespit etmeyeceğiz ama, bir tahminle daha az maliyette en çok verimle bu işlemi yapmak istiyoruz.
+
+37
+00:08:02,755 --> 00:08:04,955
+Bu sebeple tek kamera kullanacağız.
+
+38
+00:08:06,075 --> 00:08:06,955
+Ayrıca...
+
+39
+00:08:07,507 --> 00:08:12,307
+İşin içerisine sadece hesaplamalar değil, bir de yapay zekayı katmayı düşünüyoruz.
+
+40
+00:08:12,807 --> 00:08:17,987
+Yapay zekada da sadece bir fotoğraftan değil de sekaz tabanlı bir şekilde bu işi yapmak istiyoruz.
+
+41
+00:08:18,707 --> 00:08:24,227
+Yani sadece bir görüntüyü işleyip o görüntünün son ucunda bize bir sonuç vermeyecek.
+
+42
+00:08:24,227 --> 00:08:26,807
+Hem o şekilde bir hesaplama yapacak.
+
+43
+00:08:29,076 --> 00:08:47,016
+Ve gelen sonuçların hepsini toplayarak birçok görüntüdeki bilgileri birbirinden karşılaştırarak yapay zeka bir sonuca varacak. Bu sonuçta da daha verimli bir şekilde neslinin alanını bulacak.
+
+44
+00:08:47,256 --> 00:08:55,016
+Ayrıca bir yenilikçi bir benchmark yöntemimiz olacak. Bir manuel konuma algoritmamız olacak. Bu manuel konuma algoritmasıyla...
+
+45
+00:08:56,500 --> 00:09:14,700
+Bir trigonometrik yollarla nesnenin konumunu tespit edeceğiz. Sonra da bunu yapay zekada, yapay zeka kullanarak elde ettiğimiz sonuçla karşılaştıracağız ve ne kadar bölümde olmuş onu test edeceğiz. Bir sonraki sunuma geçen emel.
+
+46
+00:09:18,868 --> 00:09:31,168
+Buradaki hedefimiz de, daha önce de bahsetmiş olduğum gibi, böyle bir sistem oluşturup bunun verimini test etmek olacak.
+
+47
+00:09:31,168 --> 00:09:41,128
+Yani hem maliyeti azalttık, hem parasal manada maliyeti azalttık, hem enerji manasında tasarruf ettik.
+
+48
+00:09:41,567 --> 00:09:44,108
+Peki bunun bize kazancı ne kadar olacak? Onu test edeceğiz.
+
+49
+00:09:46,355 --> 00:09:53,096
+Acaba yeterince verimi aldık mı diye bir sonuçları değerlendireceğiz.
+
+50
+00:09:53,796 --> 00:10:05,915
+Ve eğer sonuçlar beklediğimizden beklediğimiz gibi ise bunu endüstriyel alanlarda da nasıl kullanacağımızı ve orada da nasıl uygulanabileceğine dair sonuçları elde edeceğiz.
+
+51
+00:10:06,996 --> 00:10:08,496
+Yani kısacası hedeflerimiz bu şekilde.
+
+52
+00:10:09,796 --> 00:10:10,436
+Daha mı edelim [öğrenci]?
+
+53
+00:10:13,331 --> 00:10:16,432
+Evet, ben sözü alayım istersen [öğrenci].
+
+54
+00:10:17,251 --> 00:10:22,231
+Yöntem kısmına gelecek olursak, bizim dört ana başlığımız var yöntem kısmında.
+
+55
+00:10:22,231 --> 00:10:27,011
+İlk önce veri setimizi oluşturmak kısmında mevcut.
+
+56
+00:10:27,932 --> 00:10:32,831
+Sonrasında sekans tamamlı model mimarisini kurgulamak kısmı var.
+
+57
+00:10:33,892 --> 00:10:40,531
+Yani mimarinin verilenmesi ve mimariye eklenebilecek potansiyel şeylerin verilenmesi.
+
+58
+00:10:41,043 --> 00:10:55,384
+Sonrasında modelin eğitilmesi ve parametre optimizasyonu mevcut. En son olarak da [öğrenci] arkadaşımın söylediği gibi Manuel konum tahmin algoritması geliştirmesi mevcut. Geçelim buraya isterseniz.
+
+59
+00:10:58,084 --> 00:11:07,183
+Şimdi ilk önce veri setinden bahsedecek olursak bizim veri seti için tasarladığımız 3 senaryo mevcut. Bunlardan birincisi.
+
+60
+00:11:07,892 --> 00:11:29,012
+Hareketli kamera videolarıyla yerde hareketsiz bir cismin konum tahmini. Buradaki hedef aslında en kolay sunabileceğimiz problem de bizim modelimiz nasıl bir sonuç elde edebiliyor. O yüzden hareketsiz bir cism.
+
+61
+00:11:30,323 --> 00:11:46,523
+Bizim modelin mimarisinden ötürü biz her zaman hareketli kamera ile bunları sağlayacağız. Fakat cismimiz hareketsiz olacak. İkinci senaryoda bu sefer cismin hareket etmesini olarak sağlayacağız.
+
+62
+00:11:47,475 --> 00:11:56,615
+Bu sefer biraz daha karmaşık bir problem olmuş olacak. Fakat yine yerde olduğu için nispeten daha kolay bir senaryo olmuş olacak.
+
+63
+00:11:57,135 --> 00:12:09,875
+Üçüncü senaryoda bizim aslında hedeflediğimiz asıl problem olmuş oluyor. Havada hareketli cisim veya drone diyebilirsiniz belki. Başka cisimler de olabilir.
+
+64
+00:12:14,803 --> 00:12:24,803
+Biz havada veya yerde de olabiliriz fakat bizim konumunu tespit etmeyi hedeflediğimiz cisim havada olmuş olacak ve hareketli bir cisim olmuş olacak.
+
+65
+00:12:25,823 --> 00:12:26,403
+Geçelim buraya.
+
+66
+00:12:29,423 --> 00:12:33,103
+İkinci kısımda model mimarisinin kurgusu mevcut.
+
+67
+00:12:34,003 --> 00:12:37,823
+Burada yine üç tane noktadan bahsedebiliriz.
+
+68
+00:12:39,508 --> 00:13:05,988
+Araştırdığımız zaman benzer problemler mevcut. Bu konuda yapılmış bazı çalışmalar mevcut. Fakat bizim vurguladığımız problemin tamamen aynısını çözen herhangi bir mimari mevcut değil. O yüzden bizim farklı farklı problemleri çözmek için kullanılan mimarileri deneyerek
+
+69
+00:13:06,580 --> 00:13:11,540
+Hangi mimarinin daha iyi olabileceği hakkında bir fikir sahibi olmamız gerekiyor.
+
+70
+00:13:12,340 --> 00:13:26,780
+Sonrasında bizim mimari daha çok zamansal özellikleri baz aldığı için, yani biz görüntüleri arda arda verdiğimiz için aslında zamansal özellikler daha ön plana çıkıyor.
+
+71
+00:13:27,400 --> 00:13:34,040
+Bunun için bu zamansal özellikleri vurgulayan hangi eklentileri yapabiliriz bu mimarilere?
+
+72
+00:13:34,515 --> 00:13:54,735
+Bunları araştırmamız gerekiyor ve uygulamamızı, test etmemiz. Üçüncüsünün nedeni, bir sonraki saatte göstereceğim mimarinin takip algoritmasının çıktısını nasıl kurgulamamız gerektiğini aynı zamanda araştırmamız gerekiyor. Geçelim bu saati.
+
+73
+00:13:56,788 --> 00:14:05,587
+Şimdi modelin etimeti ve parametrem optimizasyonu. Burada göstermiş olduğumuz pipeline aslında bizim kullanacağımız ana mimari.
+
+74
+00:14:05,587 --> 00:14:23,867
+Burada ilk olarak tespit modeli ve takip modeli var. Bunlar bizim seçeceğimiz ve onlara aslında dokunmayacağımız modeller. Bunlar bize görüntüden ID ve bounding box bilgilerini verecek.
+
+75
+00:14:24,596 --> 00:14:37,995
+Sonrasında biz GPS bilgilerini, açılar bilgilerini ve görüntüyü tekrar vererek bizim deneyeceğimiz aslında sekans tabanlı modelleri burada veriyoruz.
+
+76
+00:14:38,495 --> 00:14:45,836
+Sonrasında bu modelden almaya çalıştığımız çıktı da bu nesnelerin konumu olmuş olacak.
+
+77
+00:14:52,115 --> 00:14:58,915
+Model aslında sekans tabanlı model olmuş olacak. Diğer modellere herhangi bir şekilde müdahilede bulunmayacağız.
+
+78
+00:14:59,615 --> 00:15:07,475
+Fakat takip modelinin çıktısını hangi şekilde vermemiz en uygun olur bu sekans tabanlı modellere?
+
+79
+00:15:08,275 --> 00:15:11,436
+Burada da bir optimizasyona gelirebilir.
+
+80
+00:15:13,296 --> 00:15:14,096
+Bir sonraki geçelim.
+
+81
+00:15:15,956 --> 00:15:19,296
+En son olarak manuel konum tahmini algoritması mevcut.
+
+82
+00:15:19,923 --> 00:15:29,223
+Burada bu algoritmanın genel şemasını çizmeye çalıştım. Şöyle çok kısa bir şekilde anlatılabilir.
+
+83
+00:15:30,223 --> 00:15:43,203
+Küçük zamansal değişimde elde edilen görüntü kaleleri. Yani 3-5 frame sonrası ve gerisinde elde edilen görüntü kalelerini beraber incelemek suretiyle bir algoritma mevcut.
+
+84
+00:15:46,259 --> 00:16:03,060
+Her bir görüntünün tespitlerini bir üç boyutlu uzayda silindir uzay kesiti oluşturmak. Bu kesitlerin ortak kesişim alanları da bizim aslında onun tahmini bölgesi olmuş olacak.
+
+85
+00:16:04,240 --> 00:16:11,259
+Burada bunu çizmeye çalışmıştım fakat biraz zor bir işlem. O yüzden sizin...
+
+86
+00:16:12,596 --> 00:16:18,076
+Yaratıcılığınızda biraz daha şey yapmak zorunda kaldım. Buraya geçelim.
+
+87
+00:16:20,936 --> 00:16:26,756
+Burada da başka bir çalışmadan, pensel bir çalışmadan bir görüntü vermiş oldum.
+
+88
+00:16:27,236 --> 00:16:31,456
+Burada tespit edilen bir cismin hareket yörüngesi tahmin ediliyor.
+
+89
+00:16:31,456 --> 00:16:39,896
+Ve yanındaki görüntüde de bunun gerçek yörüngesi veriliyor.
+
+90
+00:16:40,788 --> 00:16:56,407
+Burada sabit bir kamera ile bunları yapmaya çalışmışlar ve gayet başarılı olmuşlar. Bizim hedefimiz hareketli bir kamera ile aynı benzer sonuçlara sahip olmak.
+
+91
+00:16:57,168 --> 00:16:57,707
+Burayı da yürütelim.
+
+92
+00:17:00,187 --> 00:17:03,887
+Evet. [öğrenci]'ye sözü bırakıyorum ben.
+
+93
+00:17:06,288 --> 00:17:07,168
+Merhaba.
+
+94
+00:17:07,923 --> 00:17:18,364
+24 ayda gerçekleştirmeyi planladığımız projemizin süreçlerini 4 iş paketine böldük. Bunlardan ilki veri toplama ve hazırlama paketi.
+
+95
+00:17:19,163 --> 00:17:25,963
+Veri toplama projemizde oldukça önemli bir yere sahip zaten proje başarısındaki önem olarak da 125 olarak verdik tabloda.
+
+96
+00:17:25,963 --> 00:17:31,304
+Bu aşama 10 ay sürecek. Araştırmacılarımız ve buzgelerimiz görev alacak.
+
+97
+00:17:31,955 --> 00:17:39,036
+Veri toplama ve hazırlama paketinde belirlenen yöntemler ve senaryolara uygun olarak veriler yani videolar toplanacak.
+
+98
+00:17:39,476 --> 00:17:42,536
+Ardından toplanan videolar GPS verileriyle eşleştirilecek.
+
+99
+00:17:43,275 --> 00:17:47,835
+Veri kalitesi ve tutarlılık kontrolleri de yapıldıktan sonra bu paket sonlanmış olacak.
+
+100
+00:17:47,835 --> 00:17:55,835
+Bu paket için başarı ölçütü olarak ise ortalama her biri altı paradan oluşan 200 video toplamayı belirledik.
+
+101
+00:17:55,915 --> 00:17:59,955
+Bu paketi tamamladığımızda elimize etiketlenmiş bir şekilde veri sefi geçeceğiz.
+
+102
+00:17:59,955 --> 00:18:13,195
+Ardından iş paketi ikiye baktığımız zaman manuel konum algoritmasının geliştirilmesine başlayacağız. Bu paket içinde dört aylık bir geliştirme süreci belirledik. Araştırmacımızın tamamı yine bu aşamada görev alacak.
+
+103
+00:18:13,915 --> 00:18:22,976
+Manuel konum algoritması geliştirilecek ve test edilecek ve elimizde ara çıktı olarak da algoritmanın performans değerlendirmesi geçecek.
+
+104
+00:18:23,347 --> 00:18:31,587
+Mana konum algoritmasının geliştirilmesi aşaması çıktıktan sonra projemizin diğer önemli aşaması olan Sekans Havan modelin geliştirilmesi aşamasına başlayacağız.
+
+105
+00:18:32,128 --> 00:18:39,867
+Projemizin geri kalan onayla bu iş paketinde çalışacağız. Yine araştırmacılarımızın tamamı bu aşamada da görev alacak.
+
+106
+00:18:40,367 --> 00:18:49,327
+Araştırmacı sayımız kısıt olduğu için araştırmacılarımızın tamamını iş bölümüne yapmak yerine her biri tamamıyla iş paketinde çalışacak şekilde bir plan yaptık.
+
+107
+00:18:49,683 --> 00:18:57,683
+Son paketimiz olan manuel konumu azaltmasıyla sekans tabanlı modelin tarpmaz kayıplaması aşaması da iş paketi 3 ile senkronize bir şekilde yapılacak.
+
+108
+00:18:57,683 --> 00:19:07,183
+Yani iş paketi 3 bitmeden iş paketi 4'e de başlamış olacağız. Zaten bu ikisi birbirleriyle bağlantılı.
+
+109
+00:19:07,311 --> 00:19:24,672
+Bu iş paketini de araştırmacılarının yanında danışman da görev alacak. Bu paketin başarı ölçütü, sekans tabanlı modelin manuel algoritmaya göre daha az hata oranına sahip olması da zaten bizim amacımız da bu. Bu sağlanana kadar eş zamanlı olarak iş paket 3'te belirttiğimiz sekans tabanlı modelde çeşitli iyileştirmeler yapacağız.
+
+110
+00:19:24,672 --> 00:19:28,931
+Ayrıca bir sonraki slide'a geçelim.
+
+111
+00:19:32,307 --> 00:19:40,827
+Projemizin ilerleyişte olup bir yönde etkileyecek potansiyel riskler de var. Bu durumlarla karşılaşması halinde alınacak tedbirleri belirledik.
+
+112
+00:19:41,708 --> 00:19:50,768
+Model eğitimi sırasında, yani iş paketi 3 sırasında daha doğrusu, hesaplama kaynaklarının yeterli kanma riski var.
+
+113
+00:19:50,768 --> 00:19:55,148
+Bu duruma çözüm olarak bulut tabanlı GPU kaynaklarının devreye alınmasını planlıyor.
+
+114
+00:19:55,228 --> 00:20:00,000
+Bir de aslında az önce bundan bahsettim, iş paketi 4, yani sekans tabanlı...
+
+115
+00:20:00,000 --> 00:20:04,800
+Model manual algoritmine göre daha düşük performans gösterirse, model mimarisini yeniden gözden geçireceğiz.
+
+116
+00:20:06,160 --> 00:20:07,840
+Araştırma projesini kullanacağımız...
+
+117
+00:20:07,840 --> 00:20:16,619
+Bir saniye şey soruyoruz. Şimdi burada bulut tabanlı GPU içimde peki fizibilite düşündünüz mü?
+
+118
+00:20:18,200 --> 00:20:19,119
+Yok.
+
+119
+00:20:22,180 --> 00:20:25,960
+Peki, model mimarisinin yeniden tasarımı?
+
+120
+00:20:26,612 --> 00:20:31,692
+Sekans tabanlı model burada olmuyorsa, Altenas modelimizi raporda yazdık mı?
+
+121
+00:20:33,112 --> 00:20:37,612
+Hocam, aslında her zaman sekans tabanlı bir yaklaşım düşünmüştük.
+
+122
+00:20:38,271 --> 00:20:46,311
+Fakat burada yeniden tasarım derken, bu mimarinin daha detayından kastediyoruz.
+
+123
+00:20:47,059 --> 00:20:54,339
+Yani mevcut mimari üzerindeki konvolüsyöner katmanlar, ondan sonra diğer işlemler, onu mu değiştirdin?
+
+124
+00:20:55,219 --> 00:20:55,940
+Yani evet.
+
+125
+00:20:56,900 --> 00:21:14,771
+Tamam.
+
+126
+00:21:00,276 --> 00:21:06,036
+Araştırma projesinde kullanacağımız ve kurumumuzda var olan çeşitli araştırma alanakları da var.
+
+127
+00:21:06,155 --> 00:21:14,096
+Bunları verileri toplarken kullanacağımız GPS donanımları, toplanan görüntülerin etiketlenmesine yardımcı olacak veri etiketleme yazılımı,
+
+128
+00:21:14,096 --> 00:21:24,155
+algoritma geliştirme ve model eğitimi süreçlerinde kullanacağımız bilgisayar laboratörleri ve derin öğrenme modelinin eğitimi ve testinde kullanılabilecek GPU olarak sıralayabiliriz.
+
+129
+00:21:32,403 --> 00:21:38,203
+Merhabalar, ben [öğrenci]. Projedenizde yaygın etki kısmını ben anlatacağım.
+
+130
+00:21:41,443 --> 00:21:49,683
+Öncelikle proje sonunda ve proje boyunca vereceğimiz çıktılardan bahsedeyim.
+
+131
+00:21:59,892 --> 00:22:14,352
+Makaleleri yayınlayacağız. Ekonomik olarak, çıktı olarak da projemizin kaynak kodlarını ve veri setini, topladığımız veri setini açık kaynaklı şekilde paylaşacağız.
+
+132
+00:22:16,471 --> 00:22:26,832
+Diğer çalışmalara da kanıt sağlaması için. Araştırılması yetiştirilmesine yönelik olarak da projemizde çalıştıracağımız bu sürelerde
+
+133
+00:22:28,019 --> 00:22:36,379
+Bilgi birikimi ve deneyimi kazandırarak araştırmaların devam edecek yeni araştırmalar yetiştirmeyi öngörülüp planlıyoruz.
+
+134
+00:22:39,923 --> 00:22:58,943
+Proje bu oyunca da yapacağımız gelişmeleri, sunacağımız yerler, web sayfası ve sosyal medyada proje bu oyunca sunumunu yapacağız, yayılımını yapacağız. Bunun dışında da yerli ve yabancı yatırımcılarla buluşmakta denerek toplantılar düzenleyeliyiz.
+
+135
+00:23:02,867 --> 00:23:11,659
+Projemizin sonrasında da beklediğimiz anı görüler olarak, etkiler olarak, ekonomik anlamı, öncelikle...
+
+136
+00:23:15,092 --> 00:23:24,471
+Toplumsal anlamda geliştireceğimiz bu yöntemin, sitenin maliyetinin düşük olmasıyla otonom araçlarda yaygınlaşmayı öngörüyoruz.
+
+137
+00:23:25,112 --> 00:23:26,652
+Yaygınlaşmayı kolaylaştıracağım.
+
+138
+00:23:27,711 --> 00:23:31,731
+Bu sayede toplum içinde trafik kazalarının azalmasına yol açacak.
+
+139
+00:23:32,812 --> 00:23:42,432
+Bunun sonucu olarak ortaya çıkan maddi ve manevi masrafların da önüne geçerek toplum içinde bir refah yükselmesine yol açacak.
+
+140
+00:23:45,460 --> 00:24:00,879
+Ayrıca da otomaraçlarında halk içinde yaygınlaşması, halkın teknolojiye ve yeniliğe daha açık bir konuma geleceğini, bu sayede gelişimin daha kolay olacağını öngörüyoruz.
+
+141
+00:24:08,915 --> 00:24:15,895
+Yerli ekonomi olarak da bu geliştirdiğimiz yöntemle masrafları düşüreceğiz.
+
+142
+00:24:16,235 --> 00:24:23,055
+Otonom araçlarının yaygınlaşması, ilkemizde de yaygınlaşmasıyla yerli üretimi destekleyeceğiz.
+
+143
+00:24:25,055 --> 00:24:29,915
+Bu sayede yerli firmalarımız...
+
+144
+00:24:31,028 --> 00:24:36,827
+Uluslararası düzeyde de rekabet edebilecek bir seviyeye gelmesine katkı sağlayacağımızı öngörüyoruz.
+
+145
+00:24:39,567 --> 00:24:48,087
+Ayrıca da bu sektörlerde de oluşan istihdamın da ülke ekonomisine katkı sağlayacağını düşünüyoruz.
+
+146
+00:24:50,428 --> 00:24:54,948
+Ulusal güvenlik olarak da bu geliştirdiğimiz model
+
+147
+00:24:56,468 --> 00:25:03,248
+hava araçlarında, insansız hava araçlarında da kullanılacak bir şekilde uygulamaya geçirilecektir.
+
+148
+00:25:04,148 --> 00:25:10,188
+Bu sayede de güvenmeye bir katkısı olacak, savunmaya bir katkısı olacaktır.
+
+149
+00:25:10,508 --> 00:25:18,168
+Ayrıca dışa bağımlılığı azaltacaktır ve ülkemizin de öne çıkmasını sağlayacaktır bu konuda.
+
+150
+00:25:22,067 --> 00:25:30,947
+Benim de, numaralarda, bu bir rakabiliyok. Sesiniz gelmiyor hocam.
+
+151
+00:25:31,167 --> 00:25:38,507
+Şimdi bu bahsettiğimiz, network'un yapısıyla alakalı bir görselimiz var mı? Daha detaylı. Raporunuzu açabilirsiniz.
+
+152
+00:25:39,267 --> 00:25:40,367
+İmari mi hocam?
+
+153
+00:25:46,771 --> 00:25:48,011
+Bu rapor müpadeşi.
+
+154
+00:25:49,091 --> 00:25:50,311
+Tato'yu rapora çalışırsınız.
+
+155
+00:26:03,316 --> 00:26:05,016
+Diğer grup hazır olsun arkadaşlar.
+
+156
+00:26:08,076 --> 00:26:10,635
+Şu an biz şey görüyoruz, sadece PowerPoint görüyoruz.
+
+157
+00:26:12,175 --> 00:26:13,276
+Şu an açmış olman lazım.
+
+158
+00:26:18,420 --> 00:26:30,420
+Normal bir konvorsiyonel nörel, literatür mimarisinden farkı ne? Mesela neden onu kullanmıyoruz da bunu...
+
+159
+00:26:31,880 --> 00:26:35,420
+Hocam görsel yok da isterseniz ben biraz açıklayabilirim.
+
+160
+00:26:36,360 --> 00:26:38,820
+Şimdi hocam normalde...
+
+161
+00:26:38,820 --> 00:26:41,120
+Yöntem kısmında olması lazım bu.
+
+162
+00:26:41,800 --> 00:26:42,140
+Evet.
+
+163
+00:26:43,700 --> 00:26:51,720
+Hocam, sekans tabanlı yaklaşımı neden seçtiniz diye bir soruya aslında cevap veriyorum.
+
+164
+00:26:51,720 --> 00:26:55,599
+Sonuçta bir de şey var, hem o var, bir de niye diğer yöntemlerdi?
+
+165
+00:26:56,160 --> 00:27:10,759
+Hocam, aslında şöyle, benim gördüğüm kadarıyla bu zamansal bilgiyi kullanarak, yani videoların az görüntü karelerinde oluşan,
+
+166
+00:27:11,220 --> 00:27:22,059
+Az farkı işleyebilen ve buradan anlamlı bilgi çıkarabilen model türü sekans taba aldığım modeller oluyor.
+
+167
+00:27:22,059 --> 00:27:32,180
+Ve bu konum tahmini, konum tespiti alanında bu zamansal bilgiye çok önem verilmiyor.
+
+168
+00:27:32,380 --> 00:27:38,059
+Onun yerine daha çok tek bir görüntü üzerinden konum tahmini modelleri...
+
+169
+00:27:39,155 --> 00:27:56,315
+Aslında BİF'imiz bu sekans tabanlı yaklaşımı bu alanda iyi sonuçlar verebileceğini ve bu konuda biraz daha açılımın olmasını sağlamaya çalışmak.
+
+170
+00:27:59,700 --> 00:28:09,859
+Yani sadece video tarzında hem zaman bilgisi hem de görüntü bilgisinin olduğu bir veri seti üzerinde çalışacağımız için böyle bir modelin daha uygun olacağını söylüyoruz.
+
+171
+00:28:10,819 --> 00:28:14,480
+Bunun dışında mesela başka modeller de var, onları araştırdın mı?
+
+172
+00:28:15,639 --> 00:28:16,660
+Evet hocam.
+
+173
+00:28:17,279 --> 00:28:18,720
+Peki onları niye kullanmadınız?
+
+174
+00:28:19,960 --> 00:28:24,859
+Sekans tabanlı konum tahmini yapan bir şey var mı hocam?
+
+175
+00:28:27,284 --> 00:28:34,403
+İngilizce bu kadarı da var. En azından şeyleri bileştik. Transformer'lar da bunları zaman tabanlı kullanıyorlar.
+
+176
+00:28:36,284 --> 00:28:51,244
+Onlar şey yapıyor olabilir, yani hareketsiz bir kamera, 3 boyutlu bounding box'u çizen bu tarz şeyler var. Transformer tabanlı. Ama bizim problem biraz daha...
+
+177
+00:28:51,380 --> 00:29:04,500
+Hareketli kamera mevcut ve tek bir nokta tahmin etmeye çalışıyoruz. Üç boyutlu banding box çizmeye çalışmıyoruz.
+
+178
+00:29:05,880 --> 00:29:11,420
+Tamamdır, tekrar. Yeterler arkadaşlarım kadar, evlileye sağlık.
+
+179
+00:29:13,560 --> 00:29:15,940
+Diğer kurulumdaki arkadaşlarımız.
+
+180
+00:29:16,723 --> 00:29:23,223
+Ekran paylaşımını yapabilirler. Yedinci gruptu galiba. Yedinci grup burada mı?
+
+181
+00:29:24,363 --> 00:29:25,063
+Evet, hocam.
+
+182
+00:29:25,663 --> 00:29:26,223
+Tamam.
+
+183
+00:29:26,563 --> 00:29:27,643
+Ekran paylaşıyorum hemen.
+
+184
+00:29:28,343 --> 00:29:28,843
+Tamam, buyurun.
+
+185
+00:29:32,003 --> 00:29:32,883
+Gözüküyor değil mi?
+
+186
+00:29:33,463 --> 00:29:34,243
+Üç kişisiniz.
+
+187
+00:29:34,663 --> 00:29:34,903
+Evet.
+
+188
+00:29:35,283 --> 00:29:35,623
+Tamam.
+
+189
+00:29:37,003 --> 00:29:37,763
+Buyurun başlıyoruz.
+
+190
+00:29:37,971 --> 00:29:46,692
+Hocam, ben başlayacağım. [öğrenci] ve [öğrenci]'la birlikte İHA tabanlı kargo teslimat sistemleri konulu projemizi sunacağız sizlere.
+
+191
+00:29:49,812 --> 00:29:58,932
+Burada problemlerimiz var. Karayolu kargo taşımacılığında yaygınlaşması ve artması ile birlikte oluşan problemler var.
+
+192
+00:29:59,152 --> 00:30:03,512
+Büyüyen pazar, hızlı teslimat, temas teslimat ve bölgeleri erişim problemi bunlardan.
+
+193
+00:30:04,435 --> 00:30:20,595
+Büyüyen pazarla birlikte eğitici sektöründeki artan kullanıcı sayısı, hızlı teslimatta uzun teslimat süreleri, temas teslimatta özellikle salgın döneminden sonra ortaya çıkan teslimat talebi ve bölgeleri ilişim problemleri dediği lojistik problemleri artışı var.
+
+194
+00:30:21,555 --> 00:30:28,575
+İHA teknolojisiyle birlikte bunlar daha indirgenerek ilerletilmiş bir şekilde oluyor.
+
+195
+00:30:31,539 --> 00:30:56,720
+Geçebilir zaten. Biz bu konuyla alakalı eksikliklerin ve geliştirmeye açık olan konuların araştırmak için ilk önce bir literatür taraması gerçekleştirdik. Projemizin güvenilir, yenilikçi ve uygulanabilir olması adına da bir literatür taraması yaptık. Mevcutta olan yapılmış geliştirmeleri de göz önünde bulundurduk. Demin de dediğim gibi e-ticaretin günden güne büyümesiyle
+
+196
+00:30:59,188 --> 00:31:01,148
+[öğrenci] devam ediyordum daha ama.
+
+197
+00:31:03,308 --> 00:31:11,088
+Günler güne bilmesiyle ve teslimat sürecinin hızlandırılmasıyla lojistik sektöründe İHA teknolojisi önemli bir yere sahip olma yolunda ilerliyor.
+
+198
+00:31:11,908 --> 00:31:15,908
+Aslında ilk olarak kullanımı askeri amaçlarla geliştirilmiş.
+
+199
+00:31:16,068 --> 00:31:22,088
+Daha sonra ilerleyen süreçlerde de 2000'li yılların başından itibaren ticaret ve lojistik alanlarında kullanılmaya başlanmış.
+
+200
+00:31:23,248 --> 00:31:23,808
+Geçebiliriz.
+
+201
+00:31:26,644 --> 00:31:34,503
+Burada Medrinet, Valkorio ve DHL gibi literatürde benzer çalışmalar gözlerinde bulundurulmuş.
+
+202
+00:31:34,983 --> 00:31:39,503
+Medrinet, dünyanın önde gelen bir teknoloji platformunun geliştiricisi.
+
+203
+00:31:39,703 --> 00:31:45,124
+Burada havadan teslimatla sağlık, ticaret ve lojistik kuruluşlarına hizmet olarak sunuyorlar.
+
+204
+00:31:45,483 --> 00:31:54,644
+Valkorio'da hem drone hem de geleneksel teslimatlar için güvenli bir teslimat sağlayan patentli drone teslimat istasyonuyla...
+
+205
+00:31:54,644 --> 00:32:06,864
+sonuç olarak çözen tek drone teslimat çözümüdür. DHL'de daha çok trafik yoğunluğu baz alarak, teslimatta bir alternatif çözüm üreterek,
+
+206
+00:32:06,963 --> 00:32:11,644
+pasrikopter adı verilen droneları geliştirip, 2013 yılından beri onları test ediyorlar.
+
+207
+00:32:14,451 --> 00:32:23,532
+Burada UPS, Wink ve Amazon var. UPS, drone ile kargo teslimatı yapmaya yetkili ilk kargo şirketi. 2019 yılında belirlenmiş.
+
+208
+00:32:24,112 --> 00:32:30,451
+Ve yaptığımız araştırmalarda da Wink ile Amazon aslında bu konuda en çok bilinen iki çalışma olarak görünüyor.
+
+209
+00:32:30,592 --> 00:32:37,572
+Wink, Google'ın bir yan kurucusu olarak biliniyor ve Ea teslimatları için başarılı pilot projeler gerçekleştirmiş.
+
+210
+00:32:38,228 --> 00:32:51,048
+Amazon'da Amazon Prime Air olarak e-haların hızlı teslimat açısından nasıl yenilik çözümler sununa dair önemli bir katkı sağlayacak e-hataban teslimat sistemini duyurmuşlar.
+
+211
+00:32:54,516 --> 00:33:08,576
+Burada da yine Medinger, 2014 yılında İHA'ların kargo taşımacılığında geleneksel olarak nasıl daha verimli bir şekilde çalışacağını ve avantaj sunduğunu çalışmalarıyla birlikte gerçekleştirmiş.
+
+212
+00:33:09,316 --> 00:33:16,316
+Scholes, 2017 yılında hız, maliyet, çevresi etkiler ve güvenilirlik açısından inceleme sağlamış.
+
+213
+00:33:16,316 --> 00:33:22,516
+Liu Wezeng, 2022 yılında yine İHA'lar ve yapay zekanın kargo teslimatlarında.
+
+214
+00:33:22,516 --> 00:33:40,655
+verimlerini inceleyerek nasıl arttırılabileceğini tartışmış. Küçük ve diğer akademik araştırmacılar da 2023 yılında Türkiye'deki E-A tabanlı kargo teslimat sistemlerinde mevcutta yer alan mevzuatın geliştirilmesi yönünde tezler sunmuşlardır.
+
+215
+00:33:44,500 --> 00:34:02,420
+Burada programımızın amacı, tam otonom uçuşa sahip, görüntü işleme tabanlı, hassasiz iş yapabilen, kargo istasyonu ve kullanıcı ile de güvenli veri alışverişinde bulunabilen, düşük ağırlık taşıma kapasiteli ve optimum güç tüketimine sahip, insansız hava aracı geliştirmeyi amaçladık.
+
+216
+00:34:06,804 --> 00:34:30,583
+SWOT analizi gerçekleştirdik iatabanlı kargo teslimat sistemleri için. Burada da amacımız konuyu tam olarak tüm yönleriyle ele almaktı. Güçlü yönlerimiz, zayıf yönlerimiz, fırsatlarımız ve tehditlerimiz var. Güçlü yönlerimiz olarak hız ve verimlilik, çevre dostu oluşu, düşük işletme maliyetleri, ulaşılması zor bölgeleri erişimi, görüntü izleme ve aktarması bulunuyor. Zayıf yönlerimizde güvenlik sorunları, pil ömrü kısıtları, düşük işletme maliyetleri, ulaşılması zor bölgeleri, erişimi, görüntü izleme ve aktarması bulunuyor.
+
+217
+00:34:34,804 --> 00:34:39,463
+Düşük manevra kabiliyeti ve tehlikeye algılama kabiliyeti olarak söz konusu.
+
+218
+00:34:40,052 --> 00:34:45,672
+Fırsatlarımızda e-ticaretin hızla büyümesi ve çevre dostu teslimatlara artan ilgilerimiz var.
+
+219
+00:34:46,212 --> 00:34:53,412
+Tehditlerde güvenlik açıkları ve siber saldırılara karşı savunmasızdırlar, artan ilgi rekabeti yol açabilir ve maliyet artışları söz konusu.
+
+220
+00:34:53,412 --> 00:35:01,271
+Burada zayıf yönler ve tehditler içinde sunumumuzun sonlarına doğru yer alan risk yönetim tablomuz var.
+
+221
+00:35:01,851 --> 00:35:08,012
+Orada bunlara karşı alabileceğimiz tedbirlerle nasıl daha indirgeyebiliriz? Bunları da göreceğiz.
+
+222
+00:35:12,692 --> 00:35:17,692
+Özgün değerimizde yaptığımız literatür taraması sonucunu ve SWOT analizindeki...
+
+223
+00:35:18,835 --> 00:35:30,155
+İleti'ye baz alındığında, İATA bağlı teslimat çalışmalarının eksiklerine odaklandık ve daha sürdürülebilir ve ekonomik bir tasarım hayatı geçirmeye hedefledik.
+
+224
+00:35:31,295 --> 00:35:42,496
+Projemizin özgün değerleri olarak sürdürülebilir operasyon kabiliyeti, yerli bir lojistik alternatifi ve son bir ihtiyacına yönelik kentsel bölgelere uygun, güvenli bir tasarım yapmayı hedefliyoruz.
+
+225
+00:35:45,684 --> 00:35:53,984
+Merhabalar, ben [öğrenci]. Sizlere gerçekleştireceğimiz tasarım ile alakalı daha detaylı bilgiler vermek adına yöntem kısmını anlatmaya çalışacağım.
+
+226
+00:35:54,904 --> 00:35:58,324
+Öncelikle hedefimiz tam otanom bir teslimat sistemine uygun.
+
+227
+00:35:58,735 --> 00:36:20,195
+Bir İHA tasarımı gerçekleştirmek. Bu noktada yaptığımız literatür araştırmalarındaki en büyük eksiğin aslında sürdürülebilirlik olduğunu ve ekonomik anlamda sürdürmenin güç olduğunu gördük. Bu sebeple daha büyük kargolar yerine daha ufak paketler taşıyabilen ve buna uygun uçuş hızına ve uçuş süresine sahip bir drone tasarlama hedefinde bulunduk.
+
+228
+00:36:26,900 --> 00:36:41,400
+düz kanatlı olarak, sabit kanatlı olarak gerçekleştirdiğini gördük. Fakat bizim hedefimiz kentsel yaşamlara uygun, sokak aralarında bile kullanılabilen ve son mil teslimatındaki çözüme yönelik olduğu için biz döner kanatlı bir insan savı aracı tasarlama hedefi koyduk.
+
+229
+00:36:41,699 --> 00:36:53,820
+Bu noktada hedefimiz temel olarak dört rotorlu bir döner kanatlı insan savı aracı tasarlamak. Bu insan savı aracında hedefimiz 20 metre bölü saniye uçuş yazına erişebilmek potansiyel olarak ve maksimum 2000 gramlık bir taşıma kapasitesi.
+
+230
+00:36:55,155 --> 00:37:16,055
+Diğer gereksinimlerimize de göz atacak olursak, bu noktada kentsel bölgelerde teslimat hedeflediğimiz için özellikle Amazon ve diğer firmaların gerçekleştirmiş olduğu prototiplerden görüntülerde Amerika'da çokça kırsal bölgeye teslimat yaptığını fakat hassas bir biçimde insanların yaşadığı bölgelere güvenli bir teslimatla alakalı çok fazla çalışmalar olmadığını gördük.
+
+231
+00:37:16,055 --> 00:37:23,155
+Bu noktada sokak aralarında, caddelerde insanların rahat erişebileceği noktalardaki kargo dalabını, kargo istasyonu.
+
+232
+00:37:29,972 --> 00:37:54,972
+Ve buna bağlı olarak donanım ve yazılım araçlarını sistemimize dahil ettik. Uçuş süresi olarak 25 dakikayı belirledik. Az gibi görünüyor fakat hedefimiz istasyonun aslında batarya değişimine ve şarj olanaklarına sahip olduğunu varsayarak bunu yaptık. Özellikle döner kanatlı insan savı araçlarının güç tüketimi noktasındaki zayıflıklarını bildiğimiz için bu noktada uçuş süresini rota planlama kabiliyetiyle takviye ederek daha uzun...
+
+233
+00:37:55,923 --> 00:38:04,824
+uçuş sürelerine ulaşma hedefledik ve aslında uçuş süresine göre kargo teslimat oranımızı en iyi seviyede tutmaya hedefledik.
+
+234
+00:38:05,243 --> 00:38:12,523
+Tabii ki kargo teslimatlarının izlenebilirliği ve telemetri verilerini aktarabilmesi için de internete ilişme imkanı olması gereken bir diğer özellik.
+
+235
+00:38:13,364 --> 00:38:18,203
+Bu noktada İHA tasarımını mekanik donanım ve yazılım olarak 3 aşamada incelemeye çalıştık.
+
+236
+00:38:19,064 --> 00:38:20,503
+Mekanik tasarımla hazır bir çözüme.
+
+237
+00:38:21,331 --> 00:38:35,051
+gitmeye çalıştık. Özellikle prototip aşamasının hızlı ulaşabileceğimize, sonrasında da devamlı sürdürülebilir ve hızlı bir şekilde erişilebilecek bir mekanik tasarımını sistemimize dahil etmeyi hedefledik.
+
+238
+00:38:35,051 --> 00:38:48,051
+Bu noktada kapsamının dışında olduğunu söyleyebiliriz bizim projemiz açısından mekanik tasarımın. DJI firmasının, dünyanın önünde gelen drone firmalarından birinin F-450 model drone şasesini sistemimize dahil ettik ve İHA gövdesi olarak kullanmaya karar verdik.
+
+239
+00:38:49,268 --> 00:38:54,124
+Elektronik tasarım tarafında kendi ihtiyaçlarımıza özel bir...
+
+240
+00:38:54,516 --> 00:39:18,876
+Anakart, bir kontrolcü kartı tasarlama hedefine yüttük. Çünkü piyasada bulunan hazır kontrolcülerin farklı drone tiplerine uygun şekilde tasarlanması aslında hem boyut olarak hem maliyet olarak çok daha yüksek seviyede seyretmesine sebep oluyor. Bizim gerçekleştireceğimiz tasarım hem kendi tasarımımız hem kendi kartımız olacak hem de içerisinde kullanacağımız sensörler, komponentler sadece bizim ihtiyacımız olacak şekilde seçilmiş olacak.
+
+241
+00:39:21,268 --> 00:39:40,528
+Bir İHA bağlantı işlemesi görüyoruz. Merkezdeki aslında SM32F407 bulunan kartımız bizim proje kapsamında üretmeyi hedeflediğimiz kart diyebilirim. Bu noktada uçuş verilerinin sağlıklı alınabilmesi için, uçuş ve aktarılabilmesi için belli başlı komponentleri sistemimize dahil ettik.
+
+242
+00:39:48,403 --> 00:39:54,584
+Yine güç sisteminde motorlar ve motor sürücülerle sistemimizin elektronik tasarımını tamamladık.
+
+243
+00:39:55,644 --> 00:39:59,903
+Bu noktada görüntü işleme kabiliyetinin ihtiyacından bahsetmiştik teknik gereksinimler kısmında.
+
+244
+00:40:00,083 --> 00:40:09,923
+Tabii ki bunu hem işleyebilecek hem de görüntü alabilecek sensör gibi ihtiyaçlar sebebiyle elektronik tasarıma Raspberry Pi 4 tek kartlı bilgisayara dahil ettik.
+
+245
+00:40:09,923 --> 00:40:21,884
+Bu noktada Raspberry Pi 4'ün hem görevi görüntü işleme kabiliyetini kazandırmak hem de aslında anakartımızdan almış olduğu telemetre verilerini internet vasıtasıyla kullanıcılara ve veri tabanına aktarmak.
+
+246
+00:40:22,943 --> 00:40:24,923
+Bu aktarımla ilgili basit bir şemayı da...
+
+247
+00:40:24,943 --> 00:40:40,043
+Slide'da görüyorsunuz. Raspberry Pi 4'ü dahil edeceğimiz bir sim kart, LT Base Hut modülüyle sistemin devamlı olarak internetle haberleşmesini sağlamayı, yine Raspberry Pi'larda sıklıkla kullanılan bir kamera modülünü sisteme dahil ederek otonomi inişte kullanmayı hedefledik.
+
+248
+00:40:40,284 --> 00:40:46,183
+Bu noktada UART üzerinden de kendi tasarlamış olduğumuz 3 kontrol kartıyla devamlı bir haberleşme hedefinde bulunduk.
+
+249
+00:40:47,764 --> 00:41:15,764
+Kontrol yazılımını da yine proje kapsamında gerçekleştireceğimiz bir diğer iş parçası diyebiliriz. Bu noktada bizim anakarta gömeceğimiz uçuş kontrol yazılımından temel beklentimiz aracı belli bir konumda yükseklikte sabitleyebilmesi ve baştan sona otonom uçuşu sağlayabilmesi. Bunun haricinde az önce de bahsettiğim gibi internette devamlı olarak veri alışverişinde bulunması gerekiyor. Telemetri verilerini aktarabilme özelliğini sağlaması gerekiyor. Aynı zamanda uçuş verilerini kendi kartı üzerindeki flash memuride de sürekli olarak depolayabilmesini hedeflediğimiz.
+
+250
+00:41:15,764 --> 00:41:32,903
+Burada uçuş kontrol diagramını görmektesiniz. Basit olarak aslında PPID kontrolcülerden, kaskat kontrolcülerden oluşan bir uçuş kontrol yazılımının algoritmasını yazılımıza dahil ederek temel olarak otonum uçuşu sağlayacak diagramı çıkarmaya çalıştı.
+
+251
+00:41:33,684 --> 00:41:47,384
+Bu noktada sensörlerden gelen verileri bir sensör füzyonu işleminden geçirebilmek adına da dinamik sistemlerde bilinmeyen değişkenlerin farklı sensörlerden faydalanarak tamir edilmesine kullanılan ekstandard kalma filtreyi sistemimize dahil etmeyi hedefledik.
+
+252
+00:41:47,644 --> 00:41:50,384
+Özellikle drone kontrolcülerinde çok sıklıkla kullanılıyor.
+
+253
+00:41:52,148 --> 00:42:14,548
+Burada yazılımımızda kullanacağımız araçlardan da kısaca bahsetmek gerekirse, STM32 tabanlı bir anakartımız olduğundan bahsetmiştim. Bu noktada gömül yazılım tarafında C kullanmayı ve STM32 küpüde ortamında geliştirme yapmayı planladık. Gerçek zamanlı işitim sistemi farklı taskların bir arada çalışabilmesi ve doğru yönetilebilmesi için bizim sistemimiz de gerekli. Burada da açık kaynak kodlu Fili Artos kullanmayı hedefledik.
+
+254
+00:42:15,668 --> 00:42:40,847
+Yine veri aktarımı sistemimizde hedeflediğimiz noktalardan biriydi. Sağ tarafta hem kullanıcıyla hem sistemimizle hem de yer istasyonuyla, yer istasyonu kapsamımızın dışında fakat inşaatmayı planladığımız yer istasyonuyla da bir veri aktarımı sağlanabilmesi gerekiyor. Basit bir şekilde kendi aralarında haberleşebilmesini sağlamak, veri tabanıyla ortak bir veri tabanıyla bağlantısını sağlamak ve bunun güvenli bir şekilde aktarılabilmesi bizim için önemli bir kriter.
+
+255
+00:42:44,467 --> 00:43:08,847
+Merhaba, ben [öğrenci]. Roto planlama konusunu anlatacaktım. Sistemimizde roto planlama aslında oldukça önemli bir konu. Hem şehir içinde çalışacağımız için can güvenliği ve özellikle can güvenliği ve mal güvenliği konusunda roto planlamanın çok büyük bir yeri var. Burada paket kısıtlı bir batarya ömrümüz var. Bunu da bir evvelimli şekilde kullanmamız gerekiyor. Bunun için roto planlama algoritmalarından yararlandık.
+
+256
+00:43:12,467 --> 00:43:18,708
+En çok bilinenler de Astar ve Dixir. Bunlar graf tabanlı olup başlangıçın bitiş noktası belli olan haritalarda çalışıyorlar.
+
+257
+00:43:19,268 --> 00:43:28,748
+Bunlar temel algoritmalardır ama statik algoritmalardır. Bunlar anlık güncelleme yapamıyor, anlık rotasını güncelleyemiyor ya da tehlikelerden kaçamıyor gibi dezavantajlara sahip.
+
+258
+00:43:28,748 --> 00:43:32,167
+O yüzden biz farklı bir yol izledik burada. Geçebiliriz artık.
+
+259
+00:43:32,916 --> 00:44:00,916
+Burada Adaptive and Random Exploration yaklaşımı denen bir yaklaşım var. Bu metod hibrit bir metod. Rapidly Exploring Random Trees ve Monte Carlo Something gibi metodlardan karmasından oluşuyor. Burada hem engelden kaçmada, yani trap escaping denilen mekanizma var, hem de decision ya da action denilen bir mekanizma var. Bu argotmanın en büyük avantajı hem kendi öğrenebiliyor, hem de yakınsak rastgele arama yaparak lokal minimum noktalarında saplanıp kalmasına...
+
+260
+00:44:00,916 --> 00:44:16,736
+Yani drone'un belli bir yerde çıkmaza kaçmasını önlüyor. O yüzden hem istediğimiz gibi bir algoritma hem de drone'un yanlış çalışmasını ya da hatalı davranmasını, çünkü şehir içinde çalışacağımızı belirtmiştik, çok kararsız ortamlarda saplanın kalmasını önleyen güzel bir algoritma.
+
+261
+00:44:17,300 --> 00:44:20,820
+Geçebiliriz zaten. Biraz çalışmasından bahsedeyim algoritmanın.
+
+262
+00:44:21,180 --> 00:44:26,840
+Algoritmada aslında 3 farklı modül var. Burada Action modülü var bizim aksiyonlarımızı gerçekleştirdiğimiz.
+
+263
+00:44:26,840 --> 00:44:31,480
+Bu Action modülü 2 farklı modülden besleniyor. Bu Trap Escape modülü var ve Learning modülü var.
+
+264
+00:44:31,940 --> 00:44:34,840
+Eğer Arrangement aşamasında herhangi bir...
+
+265
+00:44:35,603 --> 00:44:50,323
+tuzak veya herhangi bir engel tespit edilmezse, drone hareket ediyor, learning modüleye gidiyor. Oradan beraber action modüle geçiyor. Eğer herhangi bir engelle karşılasırsa, diyor ki bu engelden kaçmam gerekir şeklinde action modülüne gidiyor.
+
+266
+00:44:51,251 --> 00:45:03,791
+engelden kaçıp tekrardan arrangement kısmına geliyor. Eğer engel yoksa dediğim gibi learning modülde işte burası güvenli, buradan tekrardan geçebilirsin şeklinde bir girdi veriyor. Çalışma şeması bu şekilde. Geçebiliriz arkadan.
+
+267
+00:45:04,884 --> 00:45:31,684
+Burada da biraz daha detaylı anlatımı var. Başta environment kısmında drone'a bulunduğu konumun anlık bilgileri veriliyor ve diyor ki harekete geç ve current state'e ilerliyor. Eğer bir tehlike varsa dediğim gibi trap escape stratejisini çalıştırıyor ve tuzaktan kaçıyor veya engelden kaçıyor. Eğer yoksa bu alan güvenlidir şeklinde neural net öykünü güncelliyor ve tekrar action modülüne ilerliyor. Oradan yeni duruma geçip bu döngüyü devam ettiriyor.
+
+268
+00:45:32,884 --> 00:45:48,463
+Enforcement Learning yöntemi kullanıyor. Q-volülerini güncelliyor duruma göre bu Update Neural Network kısmında. Böyle böyle etrafı keşfederek, engellerden kaçarak ve anlık olarak güncelleme yaparak drone'un en optimizle şekilde hareket etmesi sağlanıyor. Geçebiliriz.
+
+269
+00:45:49,684 --> 00:46:10,544
+Hassas otonom iniş, burada da iniş kısmında da birçok problem yaşanıyor aslında dronelarda. Özellikle GPS tabanlı olanlarda GPS'in sapması artabiliyor. Biz özellikle yine belirtmek isterim. Şehir içindeki gibi çalıştığı yerlerde GPS sinyalleri binalardan sekebiliyor veya işte bulunduğumuz coğrafyada çok fazla GPS jamming olayları var.
+
+270
+00:46:17,684 --> 00:46:24,064
+GPS'in yanında başka bir alternatif geliştirmemiz gerekiyordu. Bunun için bir çalışma gerçekleştirdik biz. Geçebiliriz [öğrenci]'ın.
+
+271
+00:46:26,228 --> 00:46:52,728
+Bu iniş sırasında pozisyon kontrolü yapıyoruz. Aslında burada kontrolümüz 3 çeşit oluyor. Pozisyon kontrolü, iltifak kontrolü ve hız kontrolü şeklinde. İlk aşamamız, eğer yerdeki bir iniş konumunu tespit ettiğimizde, oraya yaklaşarak, oraya tam üzerine geldiğimizde, oraya yaklaştıkça hızımızı kontrol ettiğimiz şekilde, tam üstüne geldiğimizde de iniş yapmaya başladığımız şekilde bir pozisyon kontrolümüz var.
+
+272
+00:46:53,108 --> 00:46:54,068
+geçebiliriz.
+
+273
+00:46:55,443 --> 00:47:23,324
+Az önce de bahsettiğim şekilde 3 farklı kontrolümüz var. Pozisyon kontrolü, iltifak kontrolü ve hız kontrolü. O yerdeki ineceğimiz noktaya gelene kadar ki kısım pozisyon kontrolü olarak geçiyor. Buraya kadar kendi drone ineceğimiz yeri tespit edip oraya yaklaşana kadar pozisyon kontrolü yapıyoruz. Oraya tam ineceğimiz noktanın üstüne geldiğimizde de helikopterlerde de gördüğümüz Hover'a benzeyen yani o noktanın üstüne sabit durma hareketini sağlayabilmesi için hız kontrolü yapıyoruz. Hızımız da artık optimize.
+
+274
+00:47:23,443 --> 00:47:28,523
+Bu şekilde olduğunda, o noktanın tam üstünde durduğumuzda da artık irtifa kontrolüyle inişi sağlıyoruz.
+
+275
+00:47:28,623 --> 00:47:32,203
+Ayrıca bu hız kontrolü irtifa ayarlamasında da kullanılıyor.
+
+276
+00:47:33,108 --> 00:47:57,288
+Geçebiliriz. Burada biz kamera destekli otonomin işten faydalanıyoruz. Bu otonomin işlerde sık sık kullanılan bir yöntem. Diğer yerde bahsettiğim bir nokta dediğim aslında işaretçiye. Bu işaretçiyi kamera tarafından tespit ederek hava aracının bu noktaya doğru yönelmesini sağlıyoruz ve o noktaya iniş yapmasını sağlıyoruz. Bu noktaya gidene kadar tabii GPS'ten yararlanıp bu noktayı tespit ettikten sonra bu noktaya iniş sağlıyoruz biz. Osonom şekilde.
+
+277
+00:47:58,291 --> 00:48:09,211
+İşaretçiler olarak da ariko markerları kullanıyoruz. Bu ariko markerlar, 5'e 5'lik bir işaretçi, 5'e 5 bitlik, yani toplamda 25 bitlik bir ID barındırabiliyor içinde.
+
+278
+00:48:09,971 --> 00:48:18,291
+Bu drone tarafından tespit edildiğinde drone onun üzerine doğru yönelip onun üzerine iniş yapması sağlanacak. Bu şekilde bir iniş stratejisiyiz dedik biz.
+
+279
+00:48:20,019 --> 00:48:38,399
+Otonomin inşa alık olmasını daha böyle özetlemek gerekirse, hedef noktaya otonom uçuş yapıyoruz biz. Daha sonra o noktaya yaklaştık da artık drone o işaretçiyi aramaya başlıyor. İşaretçi tespit edildiği zaman o noktaya göre drone'un konumuyla işaretçinin konumu arasında bağlı pozisyon tespiti yapılıyor.
+
+280
+00:48:38,399 --> 00:48:47,399
+Bu bağlı pozisyon tespitine göre drone'umuz o ineceğimiz noktaya ilerliyor ve tam onun üstüne geliyor o ayarladığımız pozisyon.
+
+281
+00:48:48,019 --> 00:48:53,480
+Bu algoritmalıyla beraber o noktanın üstüne geldiğinde yavaş yavaş iniş yapmaya başlıyor ve inişini tamamlıyor.
+
+282
+00:48:55,119 --> 00:49:09,739
+Burada da bizim kontrolcüye beslediğimiz datalar var. Uzaklığın tespitinden sonra X ve Y eksenlerine olan uzaklığı Y ve X ile çarparak dünya eksenine çeviriyoruz pozisyonumuzu, durumun pozisyonunu.
+
+283
+00:49:10,099 --> 00:49:15,539
+Daha sonra bunu da pozisyon kontrolcülerine besleyerek hedef olarak inişe sağlayabiliyoruz hedefimizden.
+
+284
+00:49:20,179 --> 00:49:40,859
+Projemizin son kısmında da proje yönetimi kısmı var. Burada iş zaman çizelgeleri, iş paketleri, risk yönetimi tablosu, araştırma anlakları tablosu, projenin elde edilmesi öngörülen çıktılara ilişkin bilgiler, proje çıktılarını yayılım ve paylaşım tablosu ve projenin oluşması öngörülen etkilerle ilişkin bilgiler tablolarımız yer alıyor.
+
+285
+00:49:44,052 --> 00:49:55,452
+Burada iş zaman çizelgesinde iş paketi adlarımız, projede başarısındaki önemi kimler tarafından gerçekleştireceği ve aylar kısımları yer alıyor. Burayı geçebiliriz.
+
+286
+00:49:55,672 --> 00:49:56,732
+Bir dakika geçmeyelim.
+
+287
+00:49:57,772 --> 00:49:58,312
+Geçmeyelim.
+
+288
+00:49:58,332 --> 00:50:08,552
+Şimdi bu iş tablo iş zaman çizelgesinde hiçbir iş parçacığı paralel olarak yürütülemiyor mu? Yürütülemiyor mu? İlla böyle peş peşe ucuca mekanet sorunu.
+
+289
+00:50:10,579 --> 00:50:14,119
+Yani bu şekilde düzenlemiştik ama yani öyle de olabilir tabii.
+
+290
+00:50:14,499 --> 00:50:15,939
+Evet aslında paralel olarak da yürütülebilir.
+
+291
+00:50:15,939 --> 00:50:21,859
+Bunun bir oluru yok mu mesela yani beş parçaya böldüm, bu beş parça ucuyacağım olmak zorunda.
+
+292
+00:50:22,519 --> 00:50:26,079
+Veya bu bir iyi bir fizibilite değil, ne zaman fizibilitesi.
+
+293
+00:50:27,219 --> 00:50:31,779
+Yani belki tamam, gerçek uygulama yaparken siz bunu şey yapacaksınız işte.
+
+294
+00:50:33,907 --> 00:50:49,127
+Alt modüllere bölüyorsunuz, iş parçacıkları işte birin biri, birin ikisi, ikiin biri şeklinde. Onlar belki içinde paralel yürütülebilir ama biri bitecek, öbürü başlayacak şeklinde bir iş zaman çizelgesi zamanı kötü kullanmak açısından bir şey değil.
+
+295
+00:50:49,127 --> 00:50:57,307
+Ne bileyim, belki burada hassas iniş algoritması tasarımı yaparken rota planlama algoritması tasarımı birlikte yürütülebilir.
+
+296
+00:50:58,708 --> 00:51:06,827
+Bu da sizin belirlenen bir işi. Zamanından, yani daha iyi zamanı verilmiş kullanmak yapmanıza neden olabilir.
+
+297
+00:51:08,128 --> 00:51:11,528
+Bu Gantt Diagramı meselesini birazcık araştırma arkadaşlar.
+
+298
+00:51:11,528 --> 00:51:16,268
+Tamam.
+
+299
+00:51:17,028 --> 00:51:17,928
+Teşekkür ederim.
+
+300
+00:51:20,692 --> 00:51:35,192
+Burada iş paketi bir ilk iş paketimiz İHA güç ve kontrol donanımlarının tasarımı olarak geçiyor. Buradaki hedefimiz kargo taşıma görevini yerine getirecek kabiliyette dört otorlu bir İHA'nın donanım tasarımını elde etmek.
+
+301
+00:51:37,951 --> 00:51:47,591
+İkinci iş paketinde tam otonom uçuş gerçekleşebilen uçuluş kontrol yazılımı geliştirilmesi var. Burada hedefimiz İHA'nın güvenli ve otonom bir şekilde hareket etmesi olacak.
+
+302
+00:51:50,996 --> 00:52:03,476
+Üçüncü iş paketimizde rota planlama algoritması tasarımı var. Burada hedefimiz operasyonel verimliliği arttırmak ve teslimat süresini kısaltıp batarya ömrünü uzatmak olarak söyleyebiliriz.
+
+303
+00:52:04,851 --> 00:52:18,871
+Dördüncü iş paketimiz, hassas inşa algoritması tasarımı. Burada İHA'nın teslimat platformu üzerine güvenli ve hassas inşini gerçekleştirebilmesi söz konusu. Burada pozisyon, kontrollü, yükseklik gibi durumlara, süreçlere bakacağız.
+
+304
+00:52:21,556 --> 00:52:35,256
+Burada da son iş paketimizde de üretim ve saha testleri var. Buradaki hedefimizde tasarımı yapılan IHAN'ın fiziksel üretimin tamamlanması ve performans değerlendirilmesinin yapılması. Burada testlerimizi ve simülasyon testlerini gerçekleştireceğiz.
+
+305
+00:52:37,907 --> 00:52:58,788
+Risk yönetim tablosu burada, projenin başında da gerçekleştirilmiş olduğumuz bir SWOT analizi vardı. Oradaki aslında o riskler için alınacak tedbirlerimiz söz konusu. Elektronik donanım arızalarıyla karşılaşırsak, bununla indirgeyebilmek için detaylı simülasyon ve stres testlerini yapabiliriz.
+
+306
+00:52:59,103 --> 00:53:06,663
+Pil sorunları için pil durumu performans sürekli olarak izlenebilir ve herhangi bir sorun çıktığında ona yönelik çalışmalar gerçekleşebiliriz.
+
+307
+00:53:07,443 --> 00:53:13,683
+Bağlantı sorunlarını da acil durumlarda kullanılacak algoritmalar geliştirmeli ve bağlantı sorunlarına karşı önlem alınmalıdır.
+
+308
+00:53:14,420 --> 00:53:28,720
+Görüntü işlemesi sırasında çevresel faktörlerden etkilenmekte, burada sis olabilir ya da fazla görüntü alamayacağımız durumlarda yüksek çözünürlüklü kamera ve montaj sistemi kullanmamız bu durumu indirgeyebilir.
+
+309
+00:53:29,599 --> 00:53:38,920
+Engel tespitinde rota planlamasında da yapacağımız gerçek zamanlı harita güncellemelerin sağlanması karşılaşabilecek sorunların önlemesine fayda sağlayacak.
+
+310
+00:53:39,476 --> 00:53:48,076
+Çevresel faktörlerde de simülasyon testleri gerçekleştirilerek algoritmalar test edilecek. Bunlar sayesinde de riskler indirgenmiş olacak.
+
+311
+00:53:49,276 --> 00:53:53,816
+Burada kuruluşta bulunan ekipmanlarımız ve projede kullanım amaçları var.
+
+312
+00:53:54,356 --> 00:54:00,255
+Multimetre gibi ölçüm cihazlarıyla sistemdeki elektronik donanımların test edilmesini sağlayacağız.
+
+313
+00:54:00,815 --> 00:54:07,315
+Protodipleme aletleriyle elektronik bağlantıların yapılmasını, mekanik aletleriyle de mekanik montajı yapılmasını sağlayacağız.
+
+314
+00:54:11,539 --> 00:54:27,619
+Burada elde edilmesi öngörülen çıktılarımız var. Öngörülen çıktılar ve elde edilmesi öngörülen zaman aralığımız mevcut. Alpen burayı geçebilirsin dersen. Burayı da geçebiliriz.
+
+315
+00:54:30,195 --> 00:54:35,495
+Burada öngörülen etki türü ve etkinin oluşması öngörülen zamanlarımız var.
+
+316
+00:54:36,215 --> 00:54:45,335
+Projemizin yaşam kalitesine katkısı olarak söylediğim üzere el tabanlı kargo teslimat sistemlerinde ürünler müşterilere hızlı bir şekilde teslim ediliyor.
+
+317
+00:54:45,955 --> 00:54:50,076
+Ve trafik sıkışıklıklarından da etkilenmediği için zamandan tasarruf sağlıyor.
+
+318
+00:54:58,195 --> 00:55:03,415
+Bu durumlar göz önünde bulundurulduğunda toplumsal yaşam kalitesine katkı sağladığını öngörebiliriz.
+
+319
+00:55:04,455 --> 00:55:13,536
+Sürdürülebilir çevre ve enerjiye katkıda da İHA'lar elektrik enerjiyle çalıştıkları için karbon salınımını büyük ölçüde azaltıyorlar.
+
+320
+00:55:14,155 --> 00:55:19,536
+Şehirlerdeki trafik yoğunluğunu azaltarak da hava kirliliğinin önüne geçiyor ve enerji birimliliğini sağlıyorlar.
+
+321
+00:55:20,115 --> 00:55:32,615
+Refah ve eğitim seviyesi iyileştirilmesine katkısal olarak ulaşılması zor olan bölgelerde, dağlı ve kırsal kesimlerde yaşayan öğrencilere materyal ilişim kolaylığı sağlayarak eğitimde fırsat eşitliğini arttırabilir.
+
+322
+00:55:33,172 --> 00:55:45,372
+Ülke ya da dünya düzeyinde önemli bir sosyal sorununa getirebilecek çözümler olarak da olası doğal afet durumlarında ulaşım sağlanabilir ve ihtiyaç duyulan malzemeler afet bölgesinde iletilebilir.
+
+323
+00:55:45,952 --> 00:55:51,771
+Aynı zamanda ülke arasında yapılacak teslimat süreçleri de hızlandırılarak uluslararası ticarete de katkıda bulunabiliriz.
+
+324
+00:55:53,012 --> 00:56:07,471
+Potansiyel sektörde uygulama alanları olarak da aslında birçok sektörde uygulanabiliyorlar. Başta e-ticaret olmak üzere sanayi savunma, güvenlik, tarım sağlık bu gibi birçok alanda yer alıyor.
+
+325
+00:56:08,152 --> 00:56:15,471
+İstihdam katkısı olarak İHA Teknoloji yeni yeni gelişmekte olan bir alan olduğu için yeni iş alanları oluşturuyor.
+
+326
+00:56:16,436 --> 00:56:27,976
+Rekabiyetçilik açısından İHA teknolojisini erken bilimselen ve geliştirilen ülkelerde lojistik alanında diğer bilimselen ülkelerin önüne geçerek hem ekonomik hem de teknolojik üstünlük sağlayabilirler.
+
+327
+00:56:28,876 --> 00:56:38,996
+Enerji güvenliği olarak demin de bahsettiğim gibi İHA'lar karbon sanımını büyük ölçüde azaltıyorlar ve geleneksel yakıt tükemiz timini de azaltarak enerji bağımlılığını azaltmada katkı sağlıyorlar.
+
+328
+00:56:42,068 --> 00:56:50,368
+Uluslararası taşımacılıkta daha güvenli ve kontrollü geçişler sağlayıp hem bilgilerin hem de ürünlerin korunmasını ve güvenli taşınmasında büyük rol oynuyorlar.
+
+329
+00:56:51,428 --> 00:56:58,188
+Gıda güvenliğinde gıda malzemelerinin daha hızlı taşınabilmesi için ilo teknolojisinden yine aynı zamanda yararlanabilir.
+
+330
+00:56:58,623 --> 00:57:20,243
+Ekonomik güvenlik olarak da ekonomik faaliyetler daha hızlı ve daha verimli bir süreçle ya da tabanlı teslimat sistemleriyle geçirebilirler. Bu durumda ekonomik güvenliğin artmasında yardımcı olabilmektedir. Bunların etkisinin oluşmasına öngörülen zaman olarak hepsini bu yıl sonrası olarak belirledik. Bitti galiba. Evet, bizi dinlediğiniz için teşekkür ederiz.
+
+331
+00:57:20,963 --> 00:57:25,923
+Peki arkadaşlar, benim de sağlık. Sizler kontrolcü falan mısınız? Elektronik kışta mı?
+
+332
+00:57:26,356 --> 00:57:28,856
+Orayla ben mekatronikçiyiz hocam.
+
+333
+00:57:29,176 --> 00:57:30,136
+Ben, ben.
+
+334
+00:57:31,396 --> 00:57:42,136
+Yani şey, bilim alanı ama şey, oranın donanımsal tasarım da işin içerisinde olduğu için genelde bilimsel bilgisayarlar o konulara çok yönelmiyorlar. Güzel olmuş, elinize sağlık.
+
+335
+00:57:42,176 --> 00:57:42,756
+Teşekkür ederim.
+
+336
+00:57:42,796 --> 00:57:43,496
+Teşekkür ederiz.
+
+337
+00:57:44,516 --> 00:57:44,936
+Sağ olun.
+
+338
+00:57:44,936 --> 00:57:52,516
+Evet, şimdi kısaca yok konumuzu alalım. Haftaya devam edeceğiz şunlarımızla.
+
+339
+00:57:53,556 --> 00:58:19,536
+Arkadaşlar, derse başka arkadaşlarınıza saygı açısından geç kalmayın. Herkes durum yapıyor. Yani katılıp katılmamak devam noktasında illa burada olup olmamak sizin için bir şey olabilir ama. Yani gelip dinleyin. Şey kaybetmezsiniz. [öğrenci] burada, [öğrenci] yok, [öğrenci] yok, [öğrenci] yok, [öğrenci].
+
+340
+00:58:20,371 --> 00:58:33,811
+[öğrenci] yok, [öğrenci], [öğrenci], [öğrenci] burada, [öğrenci] yok, [öğrenci] yok, [öğrenci] burada mı? Buradayım hocam.
+
+341
+00:58:34,811 --> 00:58:47,331
+[öğrenci], [öğrenci]. Buradayım hocam. [öğrenci] burada mı? Yok, [öğrenci] hocam, buradayım.
+
+342
+00:58:49,012 --> 00:58:51,192
+[öğrenci]
+
+343
+00:58:51,192 --> 00:58:52,752
+Buradayım hocam
+
+344
+00:58:52,752 --> 00:58:54,372
+[öğrenci]
+
+345
+00:58:57,748 --> 00:58:58,987
+[öğrenci].
+
+346
+00:58:59,728 --> 00:59:00,548
+Buradayım hocam.
+
+347
+00:59:01,347 --> 00:59:03,088
+Emir, [öğrenci].
+
+348
+00:59:04,068 --> 00:59:04,847
+Buradayım hocam.
+
+349
+00:59:06,407 --> 00:59:07,608
+[öğrenci].
+
+350
+00:59:10,568 --> 00:59:12,248
+Nasıl değil mi? Yok, [öğrenci].
+
+351
+00:59:14,827 --> 00:59:15,708
+[öğrenci].
+
+352
+00:59:15,748 --> 00:59:16,068
+Buradayım.
+
+353
+00:59:22,228 --> 00:59:24,188
+[öğrenci] yerine cevap vermedin herhalde değil mi?
+
+354
+00:59:25,087 --> 00:59:26,447
+Hocam mesaj atmış ama.
+
+355
+00:59:28,188 --> 00:59:28,708
+Mesaj.
+
+356
+00:59:30,688 --> 00:59:31,188
+Tamam.
+
+357
+00:59:32,447 --> 00:59:33,208
+[öğrenci].
+
+358
+00:59:37,715 --> 00:59:44,135
+[öğrenci], [öğrenci] burada, [öğrenci].
+
+359
+00:59:44,576 --> 00:59:45,375
+Buradayım hocam.
+
+360
+00:59:46,195 --> 00:59:47,435
+[öğrenci].
+
+361
+00:59:47,855 --> 00:59:48,695
+Buradayım hocam.
+
+362
+00:59:49,516 --> 00:59:50,355
+[öğrenci].
+
+363
+00:59:53,195 --> 00:59:54,135
+[öğrenci].
+
+364
+00:59:54,755 --> 00:59:55,235
+Buradayım.
+
+365
+00:59:56,315 --> 00:59:57,596
+[öğrenci].
+
+366
+01:00:00,435 --> 01:00:01,855
+[öğrenci], [öğrenci].
+
+367
+01:00:03,375 --> 01:00:04,655
+[öğrenci].
+
+368
+01:00:08,500 --> 01:00:34,599
+[öğrenci]. Buradayım hocam. Buradayım. [öğrenci]. Buradayım. [öğrenci] [öğrenci]. [öğrenci]. [öğrenci]. Buradayım. [öğrenci]. [öğrenci]. [öğrenci] burada. [öğrenci] burada. [öğrenci].
+
+369
+01:00:35,155 --> 01:00:36,396
+Buradayım hocam.
+
+370
+01:00:37,256 --> 01:00:42,615
+[öğrenci], [öğrenci], [öğrenci] burada, [öğrenci] burada. Peki, sorunuz var mı arkadaşlar?
+
+371
+01:00:46,036 --> 01:00:49,356
+Haftaya görüşmek üzere. İyi akşamlar, hoşçakalın.
+
+372
+01:00:50,996 --> 01:00:51,796
+İyi günler hocam.
