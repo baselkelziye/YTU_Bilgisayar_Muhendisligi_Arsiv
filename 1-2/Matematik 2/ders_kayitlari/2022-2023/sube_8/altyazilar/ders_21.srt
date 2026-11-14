@@ -1,0 +1,2607 @@
+1
+00:01:02,804 --> 00:01:03,684
+Merhaba arkadaşlar.
+
+2
+00:01:51,379 --> 00:02:00,379
+Evet, dün itibariyle en son neye yaklaştım? Yani neye versiyon ve difensiyon kavramı üzerinde doğduk.
+
+3
+00:02:02,140 --> 00:02:07,339
+Şimdi bugün o kısmın şöyle bir biraz geriye doğru özetimi yapacağım.
+
+4
+00:02:08,680 --> 00:02:13,639
+PDF'den, arkasından da ekstrem değerlerle devam edeceğiz.
+
+5
+00:02:16,340 --> 00:02:18,240
+Biraz da arkadaşlarımı göresin.
+
+6
+00:03:12,243 --> 00:03:17,644
+Tabi bu ders notlarını içeren özellikle kısmi türevlerle ilgili.
+
+7
+00:03:19,243 --> 00:03:28,243
+Kısmi türevler 1 ve kısmi türevler 2 notlarını tabi kitap yazımı formunda şeyde bulabilirsiniz yani.
+
+8
+00:03:30,644 --> 00:03:35,843
+Dersleşirdiğimiz tabi konuların.
+
+9
+00:03:37,556 --> 00:03:45,616
+yazdırma, işlemi olma, tatlı veya tatlı kullanımı dışında yani. Ayrıca, adetik de ulaşabilirsiniz bunlara, bilginiz olsun.
+
+10
+00:03:52,307 --> 00:04:04,127
+Şimdi o amaçla hemen ben tekrar doğrusu süreli gradyan ve tövbe, teatür üzerinde redifat edilir ve eklemleri ve erit tutar gibi konulara biraz daha ilgileceğim.
+
+11
+00:04:05,767 --> 00:04:08,108
+Bunun için hemen sizden şu pdp'yi paylaşayım.
+
+12
+00:04:14,931 --> 00:04:33,172
+Evet, sayımız tabi az, biraz daha fazla olmasını bekliyordum ama sınavdan sonra maalesef biraz eks sınavın sonucu ilk çoğmuştu ama katılımda düşüş gördük.
+
+13
+00:04:35,012 --> 00:04:36,531
+Bununla da yapacak bir şey yok.
+
+14
+00:05:05,139 --> 00:05:07,220
+Evet, önce şurada bir tekrar edelim.
+
+15
+00:05:08,519 --> 00:05:11,639
+Kısmi türevler 2 ders notumuz.
+
+16
+00:05:12,300 --> 00:05:17,819
+Böyle 2020 yazmışım ama, yani bu her dönem için geçerli olan notlarımız zaten.
+
+17
+00:05:19,860 --> 00:05:22,180
+Thomas'la denilenmiş, topla, notla.
+
+18
+00:05:23,360 --> 00:05:26,539
+Doğru türev ve gradyan vektörler, türev vektörler, türev vektörler, türev vektörler, türev vektörler, türev vektörler.
+
+19
+00:05:28,000 --> 00:05:32,159
+Konusunu en son gördük. Bugün de ekseme derle ve eğer noktalarıyla devam edeceğiz.
+
+20
+00:05:33,588 --> 00:05:49,208
+Doğru türevini söylemiştik aslında, tamam. Kes anlamıyla çok kısmına uzatmaya gerekiyor. Önce şöyle bir limit de tanımlıyoruz. F fonksiyonu bir P0 noktasında bir U birim mektörü örnek, doğru türevini. Bir denklemiyle tanımlıyoruz.
+
+21
+00:05:50,588 --> 00:06:00,208
+Daha çok sembolik olarak şu sembolü D, U, F, P0 şeklinde de gösteriliyor. Bu örneği zaten dün yapmıştık beraber.
+
+22
+00:06:00,819 --> 00:06:10,399
+eksi karat, eksi yap fonksiyonunun verilen ube denektörlerindeki ve 1,2 noktasındaki doğrultu türevini, yani yönlü türevini nedir, etablamıştık, bulmuştuk.
+
+23
+00:06:11,779 --> 00:06:16,360
+Bunu normal tanım uygulayarak türevini, tümüt tanımını burada görüyorsunuz.
+
+24
+00:06:18,100 --> 00:06:26,939
+Biz standart olan, daha çok doğrultu türevini tanımının, gradyan vektörü ile birlikte verildiği,
+
+25
+00:06:27,764 --> 00:06:30,004
+kısımla ilişkili olarak elde etmiştik.
+
+26
+00:06:32,283 --> 00:06:39,484
+Yani şu çarpım bir adetimiz zaten, bakın burada direkt otomatik olarak şöyle bir kadar denip adetim, vektörün tanımlıyor fonksiyonun.
+
+27
+00:06:39,963 --> 00:06:44,884
+Yani birleşenler x ve y'ye göre türevler var, türevler var, bir vektör fonksiyonu.
+
+28
+00:06:46,103 --> 00:06:52,024
+Bu teorem 9, aşağıda görüyorsunuz, bu teorem 9 tam olarak, yani dört noktasında verilen bu bağıntı aslında.
+
+29
+00:06:53,204 --> 00:07:04,644
+İşte, doğrultu türevinin, yani yönlü türevinin, kralioyan ve öbür ürün vektörün, skala çarpmıyı da, benim noktadaki oluşan bir değer oldu. Bu da görmüş olmalıdır.
+
+30
+00:07:11,220 --> 00:07:14,500
+Aynı şekilde başka bir örneği bundan günlük görmüştük.
+
+31
+00:07:19,348 --> 00:07:24,447
+Özellikle gradyan vektörün fonksiyonu tanık bir vektör olarak resimleyebiliriz.
+
+32
+00:07:24,788 --> 00:07:25,467
+Bu da kiliteli.
+
+33
+00:07:26,187 --> 00:07:32,327
+Yani bu fonksiyon da böyle bir u birimetrünün yakara değiştiği oranda eksi bir itir.
+
+34
+00:07:32,327 --> 00:07:41,927
+Yani bu da aslında o şeyin sonucu tabii eksi çıkmasının f'teki değişimin azaldığı anlamına gelir değil mi?
+
+35
+00:07:42,048 --> 00:07:42,827
+İşte anlamına gelir.
+
+36
+00:07:44,067 --> 00:07:45,487
+Ve şu yorumlarda yapmıştık.
+
+37
+00:07:48,052 --> 00:07:59,091
+F'teki değişimi, en hızlı, ekin en hızlı arttığı yön, en hızlı azaldığı yön, eksi, kral denek yönü, en hızlı arttığı yön, kral denek yönüydü.
+
+38
+00:07:59,992 --> 00:08:07,731
+Ve F'teki değişimin 0'su olduğu, yani değişmediği yönde, zaten T'te doğrusunun olduğu yönde.
+
+39
+00:08:07,851 --> 00:08:10,552
+Bu şekilde, bir iki durumda karşısında çıkar.
+
+40
+00:08:13,363 --> 00:08:20,483
+Dolayısıyla, gradyan vektörde ortak olan vektörlerden t-t vektörü oluşu koyuyor. Aslında bizim aradığımız bu yöndür.
+
+41
+00:08:22,143 --> 00:08:26,803
+Bununla ilgili yine bu örneği çözmüştük dün. Ne 1 ve ne 2 bulduk.
+
+42
+00:08:28,703 --> 00:08:33,483
+Seviye erdiğin gradyanetleri ve t-tlerini verdik hatta. 5 renk temin ilgilenir olarak.
+
+43
+00:08:34,703 --> 00:08:36,864
+Yani gradyan çarpı.
+
+44
+00:08:38,624 --> 00:08:40,523
+Bakım baktığımız zaman bu R1.
+
+45
+00:08:40,980 --> 00:08:54,779
+fx, c fonksiyonu, düzgün bir zede eğilisi üzerinde tabi bir c değeri varsa, o zaman fonksiyon bu eğil altındaki değeri c olur.
+
+46
+00:08:55,059 --> 00:08:59,899
+Onun zayı yerlerden, iki tarafın türevini arayacak, türevini bu konumuna ulaşabiliriz.
+
+47
+00:08:59,899 --> 00:09:05,940
+Yani kredi en vektörü o zaman t, renin türevi olan t et vektörü önerir.
+
+48
+00:09:06,644 --> 00:09:12,084
+türev vektörün ne olacaktır? Aslında türev vektörün neyini bilir?
+
+49
+00:09:12,084 --> 00:09:18,644
+Eğimin bir sepeylemi yoksak ama normalde vektör vakit yapalım tamam, o türev vektörünün bir devir var.
+
+50
+00:09:18,644 --> 00:09:27,644
+Dolayısıyla, gradyan için aslında türev vektör, terev vektör bölgesi normal olduğunda böylece görmüş oluyoruz.
+
+51
+00:09:29,644 --> 00:09:32,644
+Sonra yine bir noktadan geçen.
+
+52
+00:09:33,011 --> 00:09:36,412
+Bunu da dün sürüpçüymıştım hatırlasanız, taksit olarak.
+
+53
+00:09:37,991 --> 00:09:46,811
+Yine bir noktadan geçen ve işte normali şöyle bu şekilde verilen bir doğruluğun denkleğini,
+
+54
+00:09:47,531 --> 00:09:53,571
+axx1, xxx0, xxx0, xxx0, xxx0, xxx0, xxx0, xxx0, xxx0, xxx0 şeklinde verildiğini biliyorsunuz.
+
+55
+00:09:54,871 --> 00:09:59,211
+Dolayısıyla ne vektörü böyle bir ilaçınları,
+
+56
+00:10:00,000 --> 00:10:13,680
+f'in x'e göre türevi ve f'in y'e göre türevi olan gradyanetle ne yapabilir? O zaman bu doğru denklemin bu türevler anlamında altı denklemle verilebilir.
+
+57
+00:10:13,840 --> 00:10:21,879
+Yani fx, x0, y0, a, xx, x0, artı fx, x0, y0, çarpı y, x0, y0, y0, y0 şeklinde verilir.
+
+58
+00:10:23,759 --> 00:10:26,220
+Bunu da aklımızın bir ucunda ne yapıyoruz tutuyoruz arkadaşlar.
+
+59
+00:10:30,451 --> 00:10:32,612
+Hemen bir örnek şurada bakalım verelim.
+
+60
+00:10:35,892 --> 00:10:42,211
+Gerçi bunu da düngel fikine. Böyle bir elipse, bir elipse, T'ye doğru bulmak fikri.
+
+61
+00:10:43,011 --> 00:10:48,612
+Yani şu bir elipse eklemi tabii. Bu elipsin üzerine tükkânca şey çıkıyor.
+
+62
+00:10:52,659 --> 00:10:54,680
+Evet, çevirin, ondan altı tamam.
+
+63
+00:10:58,839 --> 00:11:04,079
+Elipsinin eksi 2, 1 noktasındaki TRT'nin denklemini bulmuş.
+
+64
+00:11:06,720 --> 00:11:18,159
+Aslında şu denklem, şöyle bir eğilimin seviye edilmesi, en hangi düzeydeki CZ-2 ya da C-2 seviye edilmesi.
+
+65
+00:11:19,316 --> 00:11:34,596
+Buradaki gradyen vektörü hesaplayıp gradyen vektörün bileşenlerini x-x0 ve y-x0'ın kastayı kabul eden doğru, aslında bizim burada bulunmak istediğimiz doğrudur.
+
+66
+00:11:34,696 --> 00:11:37,596
+T doğrudur. O da bu da hesap olarak basitçe çıkar.
+
+67
+00:11:38,556 --> 00:11:46,896
+x-1 çarpı x-x0 x-x2 bir noktası olduğu için x-x-x2'den x-x2 yapar.
+
+68
+00:11:47,604 --> 00:11:55,703
+Artı 2 çarpı, y-1. Eşti sıfırdan, x-2'ye doğru tutuyoruz. Bunu zaten biz de çizmiş çıkartırlar.
+
+69
+00:11:57,044 --> 00:12:03,784
+Burada tabii şu eksi 1 ve 2 önemli olan nereden? Radyan vektörün birleşenlerinden karşımıza geliyor.
+
+70
+00:12:15,668 --> 00:12:16,228
+Evet.
+
+71
+00:12:24,788 --> 00:12:38,788
+Burada da elipsimizi görüyoruz. Eksi 2'bir noktasını şöyle işaretlediğimizde, burada graden vektörümüz şu vektör, burada t-h vektörüyle dekolan, normal kabul eden, aslında t-h normal kabul ettiği vektör derim graden vektörümüz.
+
+72
+00:12:39,327 --> 00:12:42,887
+Zorada t-h doğrusunun vektörünü bu anlamda neyefekte yapacağız diye düşünüyoruz.
+
+73
+00:12:46,899 --> 00:12:58,639
+Şimdi yazmadım ama, gradiyan, vektörün özellikleri biraz türeve benziyor. Zaten türev ile ilgili olduğu için, türev ile ilgili olduğu için, direk nedir? Özellikleri benzer şekilde çalışır.
+
+74
+00:12:58,639 --> 00:13:12,180
+Yani iki, bir k çarpı f ifadesinin gradiyeni eşitir, k çarpı gradiyen f'tir. İki de iki fonksiyonun toplamının f artı genin gradiyen eşitir, gradiyenler toplamı.
+
+75
+00:13:13,043 --> 00:13:23,403
+Üçte fark kuralı. İki fonksiyonun farkının gradientler farkı. Yani delta fxg, delta fxg, delta g şeklinde başımıza çıkar.
+
+76
+00:13:24,564 --> 00:13:34,364
+Çarpım kuralı var. Delta fxg eşittir. Bu da türev gibi fxnabla g, delta dc pardon, artı gxnabla f.
+
+77
+00:13:34,364 --> 00:13:40,724
+Nabla g okuyorduk ya, bazen d yokumuz. Delta'nın tersi yani yukarıya dönmüş şekli.
+
+78
+00:13:41,524 --> 00:13:43,163
+Zatışır ve şifli, please.
+
+79
+00:13:46,707 --> 00:13:51,187
+Bölüm kuralı nabla f bölüge eşitliği burada, aynen türev ekli.
+
+80
+00:13:52,127 --> 00:13:59,227
+Payın gradyaneti çarpı payda, eksi pay çarpı paydanın gradyaneti bölü, paydanın karetiği gibi çalışıyor.
+
+81
+00:14:01,148 --> 00:14:05,087
+Ve bu özellikleri de özelliklerinin uygulamasını da burada görmek zor değil.
+
+82
+00:14:06,327 --> 00:14:11,967
+fx ve gx'ye fonksiyonları, bir xx, gd, yarı, üçü olarak
+
+83
+00:14:12,628 --> 00:14:17,848
+Hemen birincinin gradienti i-c, ikincinin gradienti 3c olarak bulunur.
+
+84
+00:14:18,947 --> 00:14:28,187
+Dolayısıyla buna göre, mesela gradient 2 etsin, hesaplanması direkt 2 ile eş yaptığımız zaman gradientin eşitliğini sağlandığını görüyoruz.
+
+85
+00:14:28,187 --> 00:14:35,187
+2x, 2c olur. Ya da e-partıgenin gradienti i-c olur değil mi? Oradan zaten belli.
+
+86
+00:14:36,567 --> 00:14:37,687
+i artı 2c, pardon.
+
+87
+00:14:38,196 --> 00:14:45,076
+Hani eksi 1 artı 3 olacak, tamam. Sonra f eksi g'de orada eksi olacaktır, i eksi 4c olur.
+
+88
+00:14:46,276 --> 00:14:52,596
+f çarpı g'de de çarpım ifadesi, gradyanların çarpımının gözünün altında bulunur, o ifade edelim.
+
+89
+00:14:54,216 --> 00:14:57,456
+Tabii f lege'nin çarpımını alıp ondan sonra kalemelere gidiyoruz.
+
+90
+00:14:57,456 --> 00:15:02,735
+Bu dilek ondan gradyanlarımızı elde edebilecek bir ifade şöyle olabilir.
+
+91
+00:15:03,016 --> 00:15:05,456
+f çarpı g'nin gradyanlenti artı.
+
+92
+00:15:06,100 --> 00:15:19,100
+g çarpı f'in gradyan, gibi ifadesinden ona ulaşamıştık. Normalde iki fonksiyonu çarpı gradyan alıp, oradan hareket ederek i ve j ayrımını gözlerine alarak, işte bu şekilde yenilebilir.
+
+93
+00:15:19,100 --> 00:15:23,100
+Ama o şekilde yazmak zorunda değil, sadece eşitliği görmek açısından düşünülebilir.
+
+94
+00:15:23,100 --> 00:15:32,100
+Beşte de f bölüge min gradyan. Yani f bölüge tabii ifadesi...
+
+95
+00:15:32,467 --> 00:15:41,427
+x-x2'ye bölü 3'e, onu x bölü 3'e, x-1 bölü 3'e yazıp, oradan da normal gradyan ifadesine yararlanarak elde edebiliriz.
+
+96
+00:15:45,971 --> 00:16:06,451
+Aynı şekilde üç çeşkene fonksiyonları gözden aldığımızda, bir fxc fonksiyonu ve uzayda bir u vektörü, bilim yönündeki gradienti bu şekilde ve aynı şekilde yönü türevinde, yani doğrultu türevinde, sadece artı bir bileşen yani z, tt göre türev çarpı u üç şeklinde geldiğini biliyoruz. Görüyoruz.
+
+97
+00:16:09,299 --> 00:16:33,779
+Özellikle yine doğal türevinin bildiğimiz anlamda, hani, skaler çarpımın tanımı gereği, özelliği gereği, çarpım vektörlerin uzunlukları çarpı adekatının kısmi şeklinde geldiği için, burada da yine benzer şekilde, bizden aldığımız bir gradyan vektörün yorumuna bağlı. Burada da yine doğal türevi için aynı benzer yorumları yapabilir.
+
+98
+00:16:35,187 --> 00:16:49,528
+Yani bu f fonksiyonu, gradyan f tolumsunda en hızlı artar, eksi gradyan f tolumsunda en hızlı azalır ve gradyan eti ortogonal olarak, v den filan gibi yönünde süre 0 olur.
+
+99
+00:16:55,860 --> 00:16:57,980
+Bir tane de üç çeşken için bir örnek.
+
+100
+00:16:59,940 --> 00:17:01,200
+Yazıklıyı hatırlıyorum.
+
+101
+00:17:01,920 --> 00:17:14,180
+A çıkkında x küp x, x, y kare, x, d'nin f0, b, 1, 0'daki, ve eşittir 2, i, x, 3, y, artı, 6, k yönündeki dolu türevini bulun.
+
+102
+00:17:15,000 --> 00:17:20,440
+B'de de f, f0'da hangi yönlerde en kısa değişir ve bu yönelik değişim oranından nedir?
+
+103
+00:17:20,948 --> 00:17:23,748
+Sanırım bu açlıklarını dün çözdük, B'yi çözmedik.
+
+104
+00:17:25,008 --> 00:17:33,528
+A'daki zaten B'nin bir defa yönü olarak B'nin uzunluğuna bölerek buluruz.
+
+105
+00:17:33,668 --> 00:17:34,768
+Birim mektur olarak tabii.
+
+106
+00:17:35,008 --> 00:17:36,188
+B bölü B'nin uzunluğu.
+
+107
+00:17:36,928 --> 00:17:40,688
+İşte 2 bölü 7, i eksi 3 bölü 7, j artı 6 bölü 7, k c.
+
+108
+00:17:42,168 --> 00:17:44,367
+B'nin P'si bu dakikası bir türev dedi.
+
+109
+00:17:45,268 --> 00:17:54,607
+fxf2, fz ve verilen noktada bir bir sıfır daha yapmamışsa fx2, f2 eksi 2, fz eksi 1 oluyor.
+
+110
+00:17:55,668 --> 00:18:02,087
+Böylece gradiyan vektörümüz bu birleşenlerde 2j eksi k şeklinde bulunuyor.
+
+111
+00:18:04,668 --> 00:18:09,807
+Şimdi P0 noktasında en hızlı tabip gradiyan bu vektör yönünde aslında değişir.
+
+112
+00:18:13,683 --> 00:18:17,864
+Değişim oranı dediğimizde değeri yani, o uzunluğun değeri aslında.
+
+113
+00:18:17,864 --> 00:18:22,123
+Siz atladığımız zaman, 4, 8, 9, 9'un kalesi günü 3 çıkar.
+
+114
+00:18:23,923 --> 00:18:25,923
+Gerçekten öyledir.
+
+115
+00:18:27,203 --> 00:18:30,963
+Fonksiyonun en hızlı bu yönde atar ve en hızlı bu yönde atar.
+
+116
+00:18:31,284 --> 00:18:35,603
+Bu yöndeki değişim oranı da 3, burada da x'i 3.
+
+117
+00:18:36,243 --> 00:18:40,243
+Tabi bazı kanayaklar...
+
+118
+00:18:40,271 --> 00:18:48,011
+değişimin değeri dediğimiz zaman, sonuçta bu artışın maksimum değeri, bu da azarışın maksimum değeri aslında.
+
+119
+00:18:48,951 --> 00:18:54,711
+Azarışın maksimum değeri maksimum eksik değilse ama maksimum olarak tabii en fazla o kadar şey yapmış.
+
+120
+00:18:55,491 --> 00:18:59,172
+Eksiç birimine bilmiş ama yüksel değer sonra yaparken tamamen o da düştü.
+
+121
+00:19:03,092 --> 00:19:03,592
+Peki.
+
+122
+00:19:09,619 --> 00:19:18,019
+Sonra t-tür üzenler ve dipenselerden bahsettikler arkadaşlar. Yani kısmını önemsiyorum çünkü, yani, katılmamamız gereken noktalar var.
+
+123
+00:19:18,719 --> 00:19:36,619
+T-tür üzenler ve normal denkleminden bahsettik. Özellikle, işte biraz önce de okudum, dipenselerin bir f fonksiyonu, fxd, c seviye yüzüğü üzerinde tutukluğum eğiliyse, bu durumda f'teki değeri tabiçe olur, yani c olur.
+
+124
+00:19:37,172 --> 00:19:39,632
+Bu denk sistemin iki tarafında
+
+125
+00:19:44,756 --> 00:19:53,675
+türevini alırsak, karşımıza işte gradiyan f ve dhre bölü desenin kare çarpanın 0 olduğu bir durum karşımıza çıkar.
+
+126
+00:19:54,816 --> 00:20:00,655
+Doğruca eğri boyunca her noktada gradiyan eğrinin aslında hız vektörünü otominal ediyordu.
+
+127
+00:20:00,715 --> 00:20:05,175
+Normalde türev hız vektörünü veriyordu ya daha önceki parametrik koordinatından bir cördü.
+
+128
+00:20:05,776 --> 00:20:08,916
+Birinci türev hız vektörünü, ikinci türev de izme vektörünü veriyordu.
+
+129
+00:20:13,715 --> 00:20:26,655
+Şimdi burada, P0'dan geçen E'leriyle sınırlayalım. Bütün hızlı vektörleri P0'dan gradiyan etken ortogonaldır. Dolayısıyla E'lerin terevleri P0'dan geçen veya gradiyan etken normal olan düzlemizyonda bulundu. Doğru.
+
+130
+00:20:27,576 --> 00:20:37,395
+Ve bu düzleme, yüzeyin P0 noktasındaki terevlemi diyecek. Ve P0'dan geçen ve düzleme dik olan doğru, aslında yüzeyin P0'daki normal adımdır.
+
+131
+00:20:38,804 --> 00:20:43,804
+Şurada gördüğünüzde graden f vektörü, bu düzlemin, t üzerinde düzlemin normal ekstra.
+
+132
+00:20:49,619 --> 00:20:50,619
+Peki.
+
+133
+00:20:52,980 --> 00:20:54,219
+P-düzlem,
+
+134
+00:20:56,219 --> 00:21:00,619
+n-normal doğru denklemleri? Aslında 2 ve 3 denklemle verilmektedir.
+
+135
+00:21:01,019 --> 00:21:10,019
+Bir tanım ifadesi var, zaten P-düzlem, kredyen, P-safıda kredyen, normal olan düzlemdir.
+
+136
+00:21:18,259 --> 00:21:32,980
+FxD2'de seviye yüzeyi üzerinde, P0, X0, yüze bu terefü noktasındaki T0'dan geçen ve işte bu kadar brons terefüde kraliante normal olan bir zemdir.
+
+137
+00:21:34,279 --> 00:21:41,119
+Yüzeyin P0'daki normali de hatta P0'dan geçen ve gradyan eti paralel olan doğruluğuna karşımıza çıkıyor.
+
+138
+00:21:44,788 --> 00:21:53,107
+Şimdi t-tü denecek temin normalde fxp0, xxx0 artı fp0, yxd0 artı fzp0,
+
+139
+00:21:54,147 --> 00:21:56,508
+ve teklifte 0, hd0 şeklinde gönderdir.
+
+140
+00:21:58,087 --> 00:22:05,748
+Öte yandan normal doğru da xx0 artı fxp artı yhd0 artı fp.
+
+141
+00:22:06,708 --> 00:22:13,988
+Tetris seti, bu artı, F set de. Fx, F set de tabi nerede? P, Sıbrı'daki değerlerini etkaklanmış halin karşımıza çıkmak.
+
+142
+00:22:16,528 --> 00:22:18,728
+Tüm bunları biraz dikkat ediyorsunuz arkadaşlar.
+
+143
+00:22:21,368 --> 00:22:25,288
+Şimdi dolayısıyla, t-100'den beri normal doğruyu bulmaya çalışalım.
+
+144
+00:22:25,288 --> 00:22:28,428
+İşte bakın, şurada sağdaki şekilde görüyorsunuz.
+
+145
+00:22:29,328 --> 00:22:31,328
+X kararati yakar, aktarati işte 9.
+
+146
+00:22:32,500 --> 00:22:40,500
+Belki de ekstrokrasi türev güzeyinin, 1-2-4'teki devlet izin ve normal doğrusunu bir örnek bulabilmiş.
+
+147
+00:22:40,500 --> 00:22:43,500
+Bir defa kısmi türevleri bulacağız.
+
+148
+00:22:48,627 --> 00:22:52,988
+Yani birinci kısmı türev, aslında gradyanı bulmaktır. Sonra gradyanı bulduktan sonra,
+
+149
+00:22:54,867 --> 00:23:03,627
+kat sayıları bu gradyan vektörün birleştirilmesi olan denklem, yani düzlem denklem, bizim burada aradığımız t-tülem denklemdir, V'lerin ortada.
+
+150
+00:23:04,988 --> 00:23:11,528
+İşte 2 çarpı gradyan vektörün birleştirilmesi, x-1 artı, 4 çarpı 2, x-2 artı,
+
+151
+00:23:12,211 --> 00:23:19,532
+zx, 4 eşit, 0. Ve bu düzenleti 2x artı 4y artı z eşit, 14 şeklinde buluruz.
+
+152
+00:23:20,132 --> 00:23:20,652
+T'ye tutup.
+
+153
+00:23:22,272 --> 00:23:30,852
+P0'daki normale gelince, direkt olarak x eşit, 1 artı 2t, y eşit, 2 artı 4t, z eşit, 4 artı t şeklinde buluruz.
+
+154
+00:23:31,892 --> 00:23:38,752
+Yani hani formülümüz var ya, x0 artı fx, p0, t falan şeklinde geliyor diye bu şekildeki formülü de.
+
+155
+00:23:39,251 --> 00:23:41,211
+direkt bunu çıkarıp elde edebiliyoruz.
+
+156
+00:23:42,091 --> 00:23:42,731
+Tamam mı?
+
+157
+00:23:49,875 --> 00:24:08,115
+Var mı sorumlu arkadaşlar? Umarım dikkatli şeyi takvite biliyorsunuz. Dün bunların detaylarını gördüğümüz için zaten biraz da bazı yerleri, hazır içiyorum. Ama önemli olan tıkkak sevgisi.
+
+158
+00:24:10,291 --> 00:24:30,291
+Eğer, biz başta böyle vermiştik atan, dün yazdığımızda, t-tü denilen renklemini, z-tü x-tü yine, x-tü x-tü x-tü olan, t-tü olan, düzlemin renklemini, işte 4 numaralı renklem olarak alabiliriz.
+
+159
+00:24:31,291 --> 00:24:34,191
+Sadece burada f-tü yi bulacağız, z-tü olduğu için.
+
+160
+00:24:34,675 --> 00:24:49,395
+Mesela fx-c'ye eksi z eksi, kıpı tek yazılan z tegöle türe orada eksi bir çıkar. O yüzden burada z tegöle türe kasıt sayısı eksi biridir. Yani eksi türevi eksi bir olduğu için. Dolayısıyla bu nedenle bu şekilde karşımıza çıkıyor.
+
+161
+00:24:50,996 --> 00:24:57,696
+Hemen bu anlamda örnek 2'ye bakarsanız, daha önceden aldığımız fonksiyonumuz zaten belli fonksiyonumuz.
+
+162
+00:24:58,420 --> 00:25:03,280
+x kod c eksi y üzeri x'in 0,0 taksiye tüzelemini bulunmuş birbirimize.
+
+163
+00:25:15,220 --> 00:25:18,220
+Yani orijindeki t düzen bulmaya çalışıyoruz.
+
+164
+00:25:21,220 --> 00:25:32,220
+Tabii z tüzen, kosin x'i eksi y üzeri x, orijinden geçer mi geçer? Yani x'in ve y'nin 0 olduğu yerde değil mi? Z 0 olduğu için.
+
+165
+00:25:32,220 --> 00:25:35,220
+Bu orijinden geçer. Orası orada da bir t durumu.
+
+166
+00:25:35,220 --> 00:25:37,220
+t düzen söz konusu olur.
+
+167
+00:25:40,019 --> 00:25:50,740
+Yerine koyduğumuzda, yukarıdaki renklem 4'ümüz, böylece düzenler çek, eksi x, eksi y, eksi z çekiminde, eksi sıfır çekiminde karşılaşmış olur.
+
+168
+00:26:05,683 --> 00:26:13,683
+Şurada bir tane örnek var, onu dün çözmedim ama göster olarak istedim, görsel üzerinden daha iyi görür diye bunu şey yapalım.
+
+169
+00:26:13,683 --> 00:26:27,683
+İki yüzeyin kesim elisine tf de olur. Yani iki yüzeyi tabii kesişir, keçtiği zaman ne olur? Bir id ortaya çıkar.
+
+170
+00:26:33,556 --> 00:26:37,556
+O eğri üzerindeki noktalar, her iki yüze üzerinde bulunan noktalardır aslında.
+
+171
+00:26:39,056 --> 00:26:44,556
+Yani fx, yz, işte bu şekilde bir silindir, diğeri bir tane de düzden göz önünde almışız.
+
+172
+00:26:44,556 --> 00:26:51,556
+fx, yz, x kare altı yakar, x ikiye işte kalır, yi x yz de x altı yakar, x ikiye işte kalır.
+
+173
+00:26:53,056 --> 00:26:54,347
+Yüzeyleri
+
+174
+00:27:01,491 --> 00:27:03,991
+Evet, bir e-elipsini kestirirler.
+
+175
+00:27:04,991 --> 00:27:06,692
+Şekli yukarıda.
+
+176
+00:27:08,091 --> 00:27:09,892
+Bir sonra vermişiz, pardon.
+
+177
+00:27:10,591 --> 00:27:11,991
+Neydi? Ha, şurada.
+
+178
+00:27:12,491 --> 00:27:14,791
+Şu bizim düz denmiş, şu da bizim silindirimiz.
+
+179
+00:27:14,791 --> 00:27:17,291
+Kestiği zaman şöyle bir, bakın şu,
+
+180
+00:27:17,692 --> 00:27:20,491
+bir şekilde bir elips karşımıza var.
+
+181
+00:27:20,491 --> 00:27:21,692
+E-elipsimiz bu.
+
+182
+00:27:22,091 --> 00:27:22,991
+Tamam mı?
+
+183
+00:27:24,791 --> 00:27:28,692
+Şimdi sorumuz şu, P0113 noktasında
+
+184
+00:27:29,332 --> 00:27:41,332
+E elipsinin, T'nin parametrik nektimleri bulunur. Kesinlikle bir elipsi edildi. Elipsinin parametrik nektimlerini istiyor.
+
+185
+00:27:46,996 --> 00:27:54,996
+Şimdi bir defa t doğru, t sıfırda hem gradyan f hem de gradyan g ortogonadır. Doğru değil mi?
+
+186
+00:27:57,996 --> 00:28:11,532
+Tabi bunlar, orada bulunan t düzenin değil mi? t düzenin ortogona olanakta, doğrulardır, vektörlerdir.
+
+187
+00:28:12,564 --> 00:28:19,564
+Dolayısıyla bunların, gradyan çarpanları aslında t-t doğruya paralel olur.
+
+188
+00:28:21,564 --> 00:28:36,564
+Şimdi buradaki, bu vektörel çarpanı elde edilen, paralel vektörümüzün bileşimleri ve P0'ün koordinatları arsındaki ilişkiyi şu şekilde elde edebiliyoruz.
+
+189
+00:28:37,940 --> 00:28:45,720
+Yani bir dakikada B'nin birleşimleri, PS0'ın, PS0'ın koordinatı, Dohr'un denklemlerini verir.
+
+190
+00:28:46,859 --> 00:28:48,920
+Dohr'un denklemlerini verir. Evet.
+
+191
+00:28:50,659 --> 00:28:52,759
+Gradien F bulduk, gradien G'yi bulduk.
+
+192
+00:28:58,932 --> 00:29:06,331
+Ve benim determinattan yararlanak hesapladık. Bunları hitaplamayı biliyorduk. Ancak üzerinde çok çok duymuş detayını verdik.
+
+193
+00:29:09,556 --> 00:29:15,736
+Şimdi diyoruz ki, ren'in bileşenleri ve P0'un koordinatları doğrunun renkliğini verir.
+
+194
+00:29:16,195 --> 00:29:17,276
+P0'un koordinatları.
+
+195
+00:29:18,276 --> 00:29:22,756
+Ne diyoruz? P0'un noktasında N'in TRT'nin parametrik renkliğini bulunuyor.
+
+196
+00:29:24,115 --> 00:29:25,895
+N'in TRT'nin parametrikliğini bulunuyor.
+
+197
+00:29:35,571 --> 00:29:37,571
+Bir daha dikkat okuyalım.
+
+198
+00:29:38,571 --> 00:29:42,571
+E'nin, T'nin, evet, elipsin,
+
+199
+00:29:42,571 --> 00:29:46,571
+V'ler noktadaki T'nin parametre meklimlerini buluyoruz.
+
+200
+00:29:46,571 --> 00:29:50,571
+Zaten şuraya baktınız ama, şurada göreceğiz. Çok rahat.
+
+201
+00:29:50,571 --> 00:29:53,571
+Demek istediğimi, anlattık dediğimizi.
+
+202
+00:29:53,571 --> 00:29:58,571
+Bir de var, gradyan delta G, eğer gradyan F,
+
+203
+00:30:01,332 --> 00:30:12,072
+O eğrinin t-e'ni nedir? Likle artır, değil mi? Dolayısıyla onların vetüel çarpanları, oradaki t-e'nin noktadaki, birbiriç noktadaki t-e'nin noktada paraleldir.
+
+204
+00:30:14,732 --> 00:30:24,212
+O zaman o noktadan geçtiğine göre, o vektörün, o vektörün bileşenleri ve noktanın koordinatlarında nedir? Ardını, doğru netlemini yazarız.
+
+205
+00:30:25,572 --> 00:30:28,892
+İşte uzaydaki doğru netlemini kavramında değil mi?
+
+206
+00:30:41,299 --> 00:30:45,119
+Zaten böyle bir doğru denklemi vereceğinizde hatırlarsanız ne diyorduk?
+
+207
+00:30:46,000 --> 00:30:56,379
+İşte 1,1, pardon, 1,1,3 noktasından geçen, işte 2,2,2 vektörüne paylaşılan doğru denklemi diyor.
+
+208
+00:30:56,799 --> 00:30:58,240
+Aradığımız şey bu işte.
+
+209
+00:31:06,804 --> 00:31:09,044
+Şekilden de çok açık bir şekilde görüyoruz.
+
+210
+00:31:10,044 --> 00:31:14,044
+Silindir ile şu beyaz olan bir tilden var, klide a.dolusu.
+
+211
+00:31:14,044 --> 00:31:16,804
+Bunların kesimde bir elipsi veriyor.
+
+212
+00:31:16,804 --> 00:31:22,564
+Dolayısıyla bu elipsin o velenoktaki TET'nin denklemini neden ediyoruz.
+
+213
+00:31:22,564 --> 00:31:28,804
+Onların kesiminden, kesimde buluyor. Niye?
+
+214
+00:31:28,804 --> 00:31:33,044
+Şöyle düşünüyoruz, gradyan ekle, gradyan ge o TETOS'una.
+
+215
+00:31:33,460 --> 00:31:39,740
+Dikolacaklar için, oran vektörle çarpımlar, helixin'in dikolojiye için, nereye paralel olacaktır?
+
+216
+00:31:41,480 --> 00:31:42,900
+Her tektörü paralel olacaktır.
+
+217
+00:31:43,720 --> 00:31:46,840
+Dolayısıyla V'ler nokta ve V vektörün birleştirilir, biz aradığımızda oluyor.
+
+218
+00:31:47,200 --> 00:31:48,400
+Otomatik olarak dersiz.
+
+219
+00:31:48,759 --> 00:31:52,840
+Zaten şu anda, şekildin nevi ediyoruz.
+
+220
+00:31:54,840 --> 00:31:55,559
+Tamam mı?
+
+221
+00:32:00,692 --> 00:32:01,211
+Peki.
+
+222
+00:32:06,836 --> 00:32:09,836
+İnnerleşme kavramlarından bahsedelim.
+
+223
+00:32:09,836 --> 00:32:14,836
+İnnerizasyon da standart değer yaklaşım.
+
+224
+00:32:14,836 --> 00:32:23,836
+F fonksiyonunun x'e işlemlerle ilgili f'in diferiteye belirliği tersde 1, 2, 0, yüze okumak nelerizasyonu 5 denklemde vermekte.
+
+225
+00:32:23,836 --> 00:32:25,836
+Yani dx'e eşittir.
+
+226
+00:32:31,476 --> 00:32:34,496
+f'ye x0'ye 0 çarpı y'ye x'ye 0 çarpı y'ye 0 çarpı.
+
+227
+00:32:36,696 --> 00:32:42,696
+Burada aslında amaç f fonksiyonunun herhangi noktasındaki yaklaşımını nereden?
+
+228
+00:32:52,084 --> 00:33:01,084
+Lx'e den, yani nereyle yaklaşımdan kolaylıkla elde edebiliriz. Buna bir tane örnek vereceğim zaten söylemiştim. Şu kısım bitireyim, onu vereceğim hemen.
+
+229
+00:33:03,084 --> 00:33:18,084
+Yani rezerasyonu bulmak işte, direkt aslında burada 3-2 nöktasındaki sürelerini bulup, fonksiyonu 1 noktadaki değerini bulup, yukarıda geçiyor Lx'e ifadesine, yani şurada da yazmış zaten, direkt yerine yazmak, yazdığımız zaman
+
+230
+00:33:18,355 --> 00:33:24,940
+f'in içindeki, üçügedeki nirazasyonun d'x'i d
+
+231
+00:33:48,756 --> 00:33:52,756
+Bir bir pensel kavramı vardır. Bir pensel kavramı toplam bünen soru olarak da edildi.
+
+232
+00:33:53,756 --> 00:33:54,756
+Konuştuk.
+
+233
+00:33:55,756 --> 00:34:06,756
+İşte bir x0 y0 noktasından, bir başka bir x0, dt noktasına olan fonksiyonundaki aslında değişim, onu d-type ile gösteriyoruz.
+
+234
+00:34:07,756 --> 00:34:12,756
+Fonksiyonun o noktadaki farkı eksi, x0 y0daki değeri değil mi? Onun farkı.
+
+235
+00:34:13,300 --> 00:34:29,380
+Doğal seri, Lx'lerin tanımı da x'i tıksa delta x'i tıksa delta'ya göstermek kullanarak, doğrudan bir tababine, aslında yukarıdaki L'de buna karşılık gelen değişikliği kolayca bu şekilde görebiliriz.
+
+236
+00:34:32,000 --> 00:34:40,699
+Delta ile eşittir, fx0, y0, delta x artı, fx0, y0 çarpı delta'ya olduğu görülür.
+
+237
+00:34:45,684 --> 00:34:50,684
+Demek ki dx ve d, burada aslında, differentiyenin bağımsız değişkenleri olarak karşılığında var.
+
+238
+00:34:50,684 --> 00:34:58,684
+D, delta x olarak da, delta y olarak da şöyle bir sürüdür. Bunlara herhangi değerler verilebilir.
+
+239
+00:34:58,684 --> 00:35:02,684
+Hepin differentiyel veya toplam differentiyel için aşırı tanımı verebiliriz buna göre.
+
+240
+00:35:02,684 --> 00:35:05,684
+Şu tanımı zaten dünyada katılak var.
+
+241
+00:35:12,340 --> 00:35:14,659
+F'in nerezasyonu bundan kaynaklı var.
+
+242
+00:35:16,300 --> 00:35:17,300
+Yani
+
+243
+00:35:19,180 --> 00:35:20,659
+VF eşittir,
+
+244
+00:35:21,420 --> 00:35:24,539
+bu şekil değişimini F'in toplam bir transferi diyoruz.
+
+245
+00:35:30,739 --> 00:35:35,659
+Hatta dün yine bu örneği yazdık arkadaşlar. Hazimdeki kesimin değişimi.
+
+246
+00:35:51,956 --> 00:35:57,396
+Şimdi örneği gördük zaten. Yani daha tekrar etmek istemiyorum.
+
+247
+00:35:58,576 --> 00:36:00,956
+Belki başka bir örnek daha verecek. Ayrılık.
+
+248
+00:36:02,216 --> 00:36:03,876
+Evet, başka bir örnek vereceğim.
+
+249
+00:36:05,456 --> 00:36:06,036
+Ayrılık.
+
+250
+00:36:36,307 --> 00:36:37,047
+Mersi uza.
+
+251
+00:36:44,083 --> 00:36:45,583
+Yani örnek ayırmıştım.
+
+252
+00:37:00,947 --> 00:37:07,467
+hem mineralizasyon hem de toplam bir fesat, bir tanesini birlikte kullanıldığı bir örnek düşünülebiliriz.
+
+253
+00:37:10,963 --> 00:37:18,203
+şöyle diyelim, fx y eşittir, kök içinde 2x kare,
+
+254
+00:37:25,652 --> 00:37:26,811
+Şöyle bir araç ekleyelim.
+
+255
+00:37:28,811 --> 00:37:29,931
+Kök içinde.
+
+256
+00:37:31,032 --> 00:37:33,072
+2x kare artı ev üzeri 2'ye.
+
+257
+00:37:37,108 --> 00:37:37,568
+Evet.
+
+258
+00:37:39,688 --> 00:37:40,448
+Fonksiyonun
+
+259
+00:37:46,516 --> 00:37:58,716
+Bir noktada 2,2, virgül, o nokta koyuyorum buna, eksi 0.2 noktasındaki yaklaşık değeri ne?
+
+260
+00:38:08,244 --> 00:38:12,244
+Nedir? Ya da bunun gibi birleştik. Tamam mı?
+
+261
+00:38:14,244 --> 00:38:16,244
+Her başlık değerini yapacağız.
+
+262
+00:38:16,244 --> 00:38:18,244
+Şimdi burada arkadaşlar bir defa,
+
+263
+00:38:19,244 --> 00:38:22,244
+2.2, x0 noktaki nereye yakın nokta?
+
+264
+00:38:22,244 --> 00:38:24,244
+2.0 noktasına yakın noktaya,
+
+265
+00:38:24,244 --> 00:38:27,244
+zoraysa x0 noktasına kadar nerekaçımı bulacağız.
+
+266
+00:38:29,244 --> 00:38:31,244
+2.1, 0 noktasındaki,
+
+267
+00:38:35,059 --> 00:38:36,220
+Dinleyerek başlam.
+
+268
+00:38:42,036 --> 00:38:42,436
+Kulunç.
+
+269
+00:38:46,804 --> 00:38:50,644
+Hemen fonksiyon x'lik kurdaki değerini hesaplarsak, otomatik kurdaki 3 çıkar.
+
+270
+00:38:52,003 --> 00:38:52,524
+Bakın.
+
+271
+00:38:54,123 --> 00:38:54,543
+F
+
+272
+00:38:59,572 --> 00:39:08,092
+2, 0, x'in 2'ye yerine tıpık yazdığımızda, sembolatik 1 olur. Buradan daha 4, 8, 9'dan 3 çıkar.
+
+273
+00:39:10,792 --> 00:39:23,632
+Dolayısıyla fx ifademiz, hatta şuraya da bulabiliriz, fx ifadeni hemen bulalım, bunun hesaplar 2x bölü, kare tut 2x kare,
+
+274
+00:39:26,675 --> 00:39:28,315
+Artı E üzer 2'ye
+
+275
+00:39:34,195 --> 00:39:55,155
+Dolayısıyla, F'yi de bulalım. O da, 2E üzeri, 2 ile gider, E üzeri 2'ye kalır direkt şu kararıda, tamam, bölü, kök içinde, 2X kare, artı E üzeri 2, Y.
+
+276
+00:39:57,635 --> 00:40:00,715
+Şu kök içinde. Şunlar şey.
+
+277
+00:40:02,068 --> 00:40:04,008
+Şu ikiler iyi gibi oluyor da bunlar.
+
+278
+00:40:06,748 --> 00:40:07,548
+Bir daha yazalım onu.
+
+279
+00:40:09,228 --> 00:40:11,548
+Bugün kalemi çok kullandım, parlamamacı evler.
+
+280
+00:40:13,408 --> 00:40:14,108
+Bekman da.
+
+281
+00:40:14,948 --> 00:40:16,768
+Evet, 2x kare artı, evler 2.
+
+282
+00:40:17,968 --> 00:40:20,528
+Ve burada hemen fx'in x0'daki değeri.
+
+283
+00:40:23,048 --> 00:40:24,608
+Hesaplarsak 4 bölü 3.
+
+284
+00:40:26,608 --> 00:40:29,108
+Ve fy'nin 2'in x0'daki değeri.
+
+285
+00:40:36,563 --> 00:40:39,363
+Ötüklerinin yazına bir bölü çöperek kolay hesaplarız.
+
+286
+00:40:42,123 --> 00:40:44,203
+Böylece de iksi ifademiz arkadaşlar.
+
+287
+00:40:48,563 --> 00:40:51,643
+FAB'ye de fx0'ya da fx0'ya da fx'e de alıyor.
+
+288
+00:40:52,063 --> 00:40:53,003
+Diğerine 3.
+
+289
+00:40:54,203 --> 00:40:57,683
+Artı fx çarpı yani 4 bölü 3 çarpı xx x0.
+
+290
+00:40:58,903 --> 00:40:59,943
+Yani xx2.
+
+291
+00:41:00,864 --> 00:41:03,743
+Artı 1 bölü 3 çarpı y-0.
+
+292
+00:41:05,743 --> 00:41:06,083
+Değil mi?
+
+293
+00:41:09,844 --> 00:41:18,764
+Ve şunu yapacak olursak, aradığımız değeri yapmak istedik 2.2 virgül eksi 0.2 ifade etti.
+
+294
+00:41:18,923 --> 00:41:25,824
+Aslında yaklaşık olarak, benim buradaki değeri, x'e 2.2 yerine eksi 0.2 yazacağız.
+
+295
+00:41:27,204 --> 00:41:30,224
+2.2 virgül eksi 0.2.
+
+296
+00:41:31,444 --> 00:41:32,684
+Eşittir arkadaşlar.
+
+297
+00:41:34,444 --> 00:41:35,844
+3 artı 4 bölü 3.
+
+298
+00:41:37,204 --> 00:41:42,624
+2.2 eksi 0.2 olur.
+
+299
+00:41:43,444 --> 00:41:44,404
+Onu direkt yazalım.
+
+300
+00:41:46,044 --> 00:41:47,604
+Sonra artı 1 bölü 3,
+
+301
+00:41:49,284 --> 00:41:50,564
+ye dediğimizde zaten,
+
+302
+00:41:51,764 --> 00:41:53,963
+ifadenin kendisi, eksi 0.2.
+
+303
+00:41:56,923 --> 00:41:57,644
+Evet.
+
+304
+00:42:02,420 --> 00:42:12,079
+Buradan basit bir hesaplamını basarak, 3 artı, 8 bölü 30 değil mi?
+
+305
+00:42:15,320 --> 00:42:17,280
+4 bölü 15 bekleyebiliriz.
+
+306
+00:42:20,079 --> 00:42:24,119
+Eksi, 2 bölü 30 mu olur?
+
+307
+00:42:27,119 --> 00:42:28,180
+1 bölü 10 diyebiliriz.
+
+308
+00:42:28,755 --> 00:42:47,355
+Yani 3 artı 4 bölü 15, eksi 1 bölü 15. Yani 3 bölü 15 aslında değil mi? 3 artı 3 bölü 15 o da 1 bölü 5. Yani 0.2 demek ki bu eşit 3.2 yapar.
+
+309
+00:42:48,775 --> 00:42:52,795
+Bu fonksiyonun böyle noktadaki yaklaşık değeri 3.2 olarak bulunur.
+
+310
+00:42:57,076 --> 00:43:02,096
+Aslında gerçekten bu değerin şöyle bir şey olduğunu söyleyebiliriz.
+
+311
+00:43:05,652 --> 00:43:06,652
+Gerçek değer.
+
+312
+00:43:10,260 --> 00:43:13,579
+eşittir. Ne kadarmış? 3.
+
+313
+00:43:18,195 --> 00:43:20,195
+21, 72
+
+314
+00:43:26,708 --> 00:43:35,088
+Yani yaklaşık 4 kıyasladık, devamı da var da. 3 nokta, 7,21,72.
+
+315
+00:43:37,428 --> 00:43:40,988
+Tabi bu devam ediyor, o bilini yazmıyorum. Tabi şey bir sayım.
+
+316
+00:43:46,483 --> 00:43:49,883
+ve ilasyonu da ilasyon edilir. Tamam mı?
+
+317
+00:43:58,260 --> 00:44:11,260
+Peki, biraz dinlenirim arkadaşlar. 10 dakika kadar, yakınlar. Yeni şeye devam edeceğiz. Var mı sorumluluk? Bunu anladık mı?
+
+318
+00:44:11,260 --> 00:44:16,260
+Siz bunu ne yapabilirsiniz? Bunu siz toplam diferansiyede de bulabilirsiniz.
+
+319
+00:44:16,260 --> 00:44:24,044
+Hani, biraz önce hale çıktı ya, toplam ditahti grafiği. Orada yapacağınız tek şey,
+
+320
+00:44:35,860 --> 00:44:40,620
+D diferansiyeli, fonksiyonun altın niktarı olan D tarihlerini almak.
+
+321
+00:44:42,400 --> 00:44:44,800
+Yani onu şöyle düşünelim aslında.
+
+322
+00:44:47,260 --> 00:44:50,800
+Hani bu örnek anlamında konuşursak.
+
+323
+00:44:52,180 --> 00:44:53,039
+Şöyle F.
+
+324
+00:44:54,440 --> 00:44:55,340
+Bunun bir yeri olsun.
+
+325
+00:44:56,480 --> 00:44:59,300
+2.2 nedir?
+
+326
+00:45:00,100 --> 00:45:00,900
+2 artı.
+
+327
+00:45:01,364 --> 00:45:04,644
+0.2, x-f-delta integral için geçirelim işte.
+
+328
+00:45:05,744 --> 00:45:08,943
+Bu da 0 artı eksi 0.2.
+
+329
+00:45:14,804 --> 00:45:16,244
+Eşittir, aslında şu.
+
+330
+00:45:17,943 --> 00:45:18,784
+Delta F
+
+331
+00:45:18,784 --> 00:45:21,463
+artı
+
+332
+00:45:21,463 --> 00:45:22,584
+F
+
+333
+00:45:22,584 --> 00:45:24,564
+2.0
+
+334
+00:45:24,564 --> 00:45:29,004
+2.1.0
+
+335
+00:45:29,004 --> 00:45:31,824
+Tabi delta F'de şöyle
+
+336
+00:45:31,824 --> 00:45:33,923
+Bunun tabi delta F'de
+
+337
+00:45:33,923 --> 00:45:36,004
+Delta F'in
+
+338
+00:45:36,004 --> 00:45:36,824
+Neredeki değeri?
+
+339
+00:45:37,844 --> 00:45:45,443
+böyle noktadaki değeri. P0 değerini, 2.0'daki değeri, onu yazalım. 2.0.
+
+340
+00:45:46,884 --> 00:45:56,443
+Bu açtı bu değer, tarih değerini yaklaşık olarak, D'ye alırsak, 0, D'ye dikhaneti hesaplayacağız.
+
+341
+00:45:56,884 --> 00:46:02,644
+Artı, F2.0. Getikmenin adında bu yaklaşık değeri, yaklaşık değeri bulacağız.
+
+342
+00:46:02,900 --> 00:46:19,599
+Bunu da biliyoruz. Neydi? f'in x'e kökület türevinin, şöyleydi, fx çarpı delta x artı f'ye çarpı delta y'ye, ya da d'ye, artı f'in iki sıfırtaki değeri.
+
+343
+00:46:20,700 --> 00:46:23,500
+Bu f'x'i hesapladık. Ne bulduk orada? 4 bölü 3.
+
+344
+00:46:24,500 --> 00:46:28,940
+Bd noktaki değeri tabii. Çarpı delta x, nedir? Sıfır nokta 2.
+
+345
+00:46:31,443 --> 00:46:34,443
+Artı f ifadesi 1 bölü 3 kurduk.
+
+346
+00:46:34,943 --> 00:46:37,943
+d ifadesi eksi 0.2 yukarıda var.
+
+347
+00:46:39,844 --> 00:46:42,844
+Sonra artı f'in 2 tıpıdaki değeri, o da neydi? 3.
+
+348
+00:46:44,143 --> 00:46:48,443
+Bakın bunları toplarsan, zaten o da l x ifadesi dekliğe toplamın değerini aslında aynı.
+
+349
+00:46:48,943 --> 00:46:50,443
+3.2 çıkar.
+
+350
+00:46:51,943 --> 00:46:55,943
+Bu da toplam difrenselin ne yerine kullanılır? Delta f.
+
+351
+00:46:57,076 --> 00:47:08,395
+değişimi, app'teki değişim yerine kullanılır yaklaşık olarak. Sonuçta bizim bu fonksiyonun, Alignan kutadaki değerini, yaklaşık olarak 3.2 olduğunu toplam difanelerini bulmuş olduk.
+
+352
+00:47:09,155 --> 00:47:11,775
+Bunu da isterseniz ikinci yol diyelim ya da ikinci metot.
+
+353
+00:47:15,096 --> 00:47:16,255
+Bu da aklımda takatim diyor.
+
+354
+00:47:17,096 --> 00:47:17,295
+Tamam.
+
+355
+00:47:19,515 --> 00:47:23,515
+Peki, aradaydı arkadaşlar. Aradan sonra görüşelim.
+
+356
+00:47:24,275 --> 00:47:25,803
+ve netlikler.
+
+357
+00:47:31,188 --> 00:47:32,807
+Sadece şeyi kapatacağım ben.
+
+358
+00:47:34,548 --> 00:47:36,748
+Tertve örüntü, burası katlı, yazadır, yazadır.
+
+359
+01:03:03,668 --> 01:03:04,807
+Evet, devam edelim arkadaşlar.
+
+360
+01:03:17,876 --> 01:03:19,896
+ekstrem değerlere geçeceğiz.
+
+361
+01:03:21,695 --> 01:03:24,276
+Önce yerya maksimum, yerya minimum değerleri.
+
+362
+01:03:29,076 --> 01:03:49,796
+tanımlayalım. Ondan sonra da, onların tabii bu, tamlarına karşı gelen değerleri hangi noktada, bu anlamda, türev testleri var. O türev testlerini gözden alarak, fark etmeyeceğiz.
+
+363
+01:04:08,916 --> 01:04:11,576
+Eksemlerle ve eğer noktalar başlık olarak diyelim.
+
+364
+01:04:45,235 --> 01:04:50,255
+Şöyle ki arkadaşlar, sürekli iki değişkenli fonksiyonlar,
+
+365
+01:04:56,755 --> 01:04:58,415
+Rektor, değişkenli.
+
+366
+01:05:10,420 --> 01:05:11,680
+Kapalı ve sınırlı
+
+367
+01:05:16,692 --> 01:05:19,291
+Kümeler üzerinde bölgeler diyebiliriz.
+
+368
+01:05:24,628 --> 01:05:26,427
+Maksim ve Münim değerlerini aralar.
+
+369
+01:05:50,835 --> 01:05:59,395
+Şimdi önce, yedel ekstrem değerler nedir? Bunun bir tanımına bakalım.
+
+370
+01:06:03,507 --> 01:06:10,907
+Sadece, yerel deriz, buna zaten de, bağlı ekstremlidir.
+
+371
+01:06:29,235 --> 01:06:30,915
+Etiksiyye fonksiyonu.
+
+372
+01:06:39,092 --> 01:06:40,791
+Bir AB noktasının içeriği.
+
+373
+01:06:47,507 --> 01:06:48,748
+Bir bölgede
+
+374
+01:06:53,108 --> 01:06:57,108
+Yani buna tanımlı olsun diyebiliriz. Ve büglatik olan diyebiliriz.
+
+375
+01:07:01,811 --> 01:07:02,851
+Ve belirti anlattı.
+
+376
+01:07:17,460 --> 01:07:18,960
+Şimdi üç tane tanım var.
+
+377
+01:07:19,799 --> 01:07:20,360
+Böyle diyelim.
+
+378
+01:07:22,559 --> 01:07:23,739
+AB nukçasının içeriye.
+
+379
+01:07:32,179 --> 01:07:37,759
+Bu da tabii açık diyebilirsiniz. Açık bir daire içinde falan diyebiliriz. Bazen öyle olabilir.
+
+380
+01:07:38,979 --> 01:07:42,859
+Ya da haber noktasında merkezlenmiş, belki o tanımda kullanmamız daha iyi olabilir.
+
+381
+01:07:44,959 --> 01:07:45,919
+Şöyle diyelim.
+
+382
+01:07:50,739 --> 01:07:53,919
+A ver, notasını da meykez demiş.
+
+383
+01:08:00,436 --> 01:08:02,836
+Açık bir daire içinde, küçük de bu.
+
+384
+01:08:12,820 --> 01:08:14,360
+Tüm X'e noktalar için.
+
+385
+01:08:23,507 --> 01:08:38,448
+fx'ye, küçük ölçü fab oluyor ise, direkt kredimi, yeterli ya. fab, f'in genel maksimumudur. Direkt tanımını söyleyebiliriz.
+
+386
+01:08:42,739 --> 01:08:49,579
+FAB değeri, FAB, F'in, bir yeri maksimittir.
+
+387
+01:08:54,003 --> 01:08:55,243
+Bu da maksimum değeridir.
+
+388
+01:09:00,756 --> 01:09:01,916
+Çok bir şey yaptık.
+
+389
+01:09:04,396 --> 01:09:04,896
+Bir şey oldu.
+
+390
+01:09:14,931 --> 01:09:17,931
+Bak sen baltasıyla, ben bunu kendimle ederdim.
+
+391
+01:09:17,931 --> 01:09:19,931
+Yer maksimile ederdim.
+
+392
+01:09:35,252 --> 01:09:36,272
+Köstük.
+
+393
+01:09:44,884 --> 01:09:46,423
+EFİM TAN Hükümesindeki
+
+394
+01:10:02,100 --> 01:10:03,620
+Tüm X'ye noktaları
+
+395
+01:10:16,212 --> 01:10:25,692
+FAB, F'in bir mutlak, maden koloboz edin burada, mutlak maksimum değeri adını alır.
+
+396
+01:10:28,772 --> 01:10:30,412
+Maksimum değeri, tekrar edin.
+
+397
+01:10:33,012 --> 01:10:38,712
+Atlatan ve emper, yani maksimum değeri, birini geri maksimum değeri, bu da mutlak maksimum değeri diyor.
+
+398
+01:10:42,452 --> 01:10:42,712
+Tamam.
+
+399
+01:10:57,492 --> 01:11:06,692
+Şimdi benzer tanımı sadece eski daha doğru çevirerek, yani efeksiye büyük işçilik ehbab ettiğiniz zaman, adamın ehbabı minimum değer olacak değil mi?
+
+400
+01:11:11,091 --> 01:11:12,591
+Ondan tekrar yazmamak adına.
+
+401
+01:11:14,511 --> 01:11:15,531
+Devlet tarımlar.
+
+402
+01:11:19,699 --> 01:11:20,659
+Yerel minimum.
+
+403
+01:11:25,460 --> 01:11:29,859
+ve mutlak bir fonksiyonu.
+
+404
+01:11:33,171 --> 01:11:34,291
+değerleri içinde
+
+405
+01:11:38,676 --> 01:11:39,676
+Dler için
+
+406
+01:11:39,676 --> 01:11:43,576
+istedik
+
+407
+01:11:48,979 --> 01:11:50,199
+Şu şekilde anlarak.
+
+408
+01:11:56,819 --> 01:12:13,500
+Büyük adı fx'e küçük eşitir fab demiştik. Burada fx'e büyük eşitir fab demiştik. Yani fx'e büyük eşitir fab dediğimizde değil mi?
+
+409
+01:12:15,119 --> 01:12:23,299
+Büyük adı sağlanan x'e noktalar için bu eşit sağlanan fab ya yerel minimum diye ya da mutlak minimum diye şekilde karşılıklı çıkacaktır.
+
+410
+01:12:29,587 --> 01:12:37,067
+Tabii, genel maksimum fonksiyonların aslında yüzey üzerindeki mesela dağ tepelerine, genel mümürlerisi, ova diplerine karşı tepkiler.
+
+411
+01:12:37,067 --> 01:12:44,707
+Diyazatla, güncel konuşmak gerekirse. Böyle noktalar da varsa, teyat düzenler aslında yataydır, değil mi?
+
+412
+01:12:45,507 --> 01:12:49,347
+Maksimum ve mümür olduğu noktalar da eğer varsa teyat düzenler yataydır.
+
+413
+01:12:49,747 --> 01:12:58,028
+Badan gelir ekstremlerden, mağır ekstremlerden deriz. Hatta mutlaka yerine global ekstremler vs. diyebiliriz yani.
+
+414
+01:13:05,395 --> 01:13:12,075
+Şimdi, şu tanımı da hatırlatmakta fayda var.
+
+415
+01:13:18,100 --> 01:13:19,724
+Kötüçük tutan, değil mi?
+
+416
+01:13:26,292 --> 01:13:30,372
+Bazen bazı kanyaklar, kütürtükte ve simile nokta tanımını ayrıcılar.
+
+417
+01:13:32,612 --> 01:13:37,692
+Kıspitörleri 0 yapan, yani o zaman kıspitörlerden 0 olduğu yerde ne olacaktır?
+
+418
+01:13:38,712 --> 01:13:41,512
+Fonksiyonun, gradyan sıkılacak değil mi?
+
+419
+01:13:55,572 --> 01:13:56,452
+Tanımsız oldu.
+
+420
+01:14:02,707 --> 01:14:03,948
+AB noktasına
+
+421
+01:14:10,868 --> 01:14:15,747
+F'in, bir kütle tutabilir.
+
+422
+01:14:25,779 --> 01:14:27,819
+Efendim bu, bir kıyık kutla şeyler.
+
+423
+01:14:38,355 --> 01:14:40,956
+mesela fx-t eşitliğini alalım.
+
+424
+01:14:47,859 --> 01:14:49,859
+x-ara şeye kayın.
+
+425
+01:14:49,859 --> 01:14:51,859
+Başçı.
+
+426
+01:14:53,859 --> 01:14:55,859
+Bu ne gradyanların ıraksak.
+
+427
+01:15:03,283 --> 01:15:05,443
+2x'i art, 2y'i j.
+
+428
+01:15:14,996 --> 01:15:16,996
+Ve bu ne zaman 0 olur?
+
+429
+01:15:18,996 --> 01:15:24,996
+Eğitim 0'dır. Ancak bence, ilk şey 0, değil mi?
+
+430
+01:15:32,275 --> 01:15:40,811
+0.0
+
+431
+01:15:57,140 --> 01:15:58,260
+Şimdi baktığımız zaman
+
+432
+01:16:06,068 --> 01:16:10,788
+x'ye farklı 0, 0 için
+
+433
+01:16:24,916 --> 01:16:51,076
+fx'e nedir? Daima pozitiktir. Değil mi? Aslında bu 0,0 f'in 0,0 daki değeri. Olup, f0,0 nedir? F0,0,0 nedir? F0,0 minimum değerini alır.
+
+434
+01:16:58,068 --> 01:17:01,068
+0-0 milim değerine alır.
+
+435
+01:17:02,568 --> 01:17:09,068
+Yani, diğer şöyle bir 0-0 milim, bazen milim noktada verirler.
+
+436
+01:17:09,068 --> 01:17:17,708
+Yeter milim nokta falan diyebiliriz. O maksimum, mutlak milim noktası. 0-0 milim değerine alır.
+
+437
+01:17:42,771 --> 01:17:44,391
+Şimdi teorem şöyle söyler,
+
+438
+01:17:46,171 --> 01:17:49,351
+Ephixia fonksiyonu, elektronik mevcut serisi aslında bu.
+
+439
+01:17:52,131 --> 01:18:00,431
+AB iç noktasında bilgilerin maksimum yatan minimum varsa, bu noktada birinci mevcuttan kısmi türevler, mevcutsa 0.
+
+440
+01:18:01,031 --> 01:18:01,931
+Hemen bunu söylerim.
+
+441
+01:18:08,020 --> 01:18:08,780
+Altı kum.
+
+442
+01:18:11,740 --> 01:18:12,360
+Çağır, ya?
+
+443
+01:18:24,659 --> 01:18:28,800
+FXL fonksiyonlu, sarım türesinin
+
+444
+01:18:33,492 --> 01:18:34,811
+ve iç noktasında
+
+445
+01:18:40,212 --> 01:18:44,891
+Hatta bu konusunda, tanesim 1.5'da, bir geril minimum.
+
+446
+01:18:46,972 --> 01:18:49,692
+Ya da, geril maksimum.
+
+447
+01:18:52,332 --> 01:18:53,172
+Maksimum bu.
+
+448
+01:18:54,932 --> 01:18:58,132
+Varsa, maksimum değeri varsa anlamda.
+
+449
+01:18:59,052 --> 01:19:03,891
+Maksimum değeri.
+
+450
+01:19:07,052 --> 01:19:07,932
+Varsa,
+
+451
+01:19:10,100 --> 01:19:11,060
+Bu noktada.
+
+452
+01:19:15,764 --> 01:19:20,764
+bir tanık ücretinin bir iş noktasında.
+
+453
+01:19:24,020 --> 01:19:30,760
+Bir girelim, minim ve da girelim maksimum değeri varsa ve bu noktada, kısmi türev ve mevcut ise,
+
+454
+01:19:39,444 --> 01:19:40,024
+Bu zaman.
+
+455
+01:19:43,731 --> 01:19:50,351
+Fx, ABD noktada. Yani AB falan, konusunda da bir daha iyi olurdu.
+
+456
+01:19:52,131 --> 01:19:53,051
+Böyle yapalım, şöyle.
+
+457
+01:19:53,211 --> 01:19:56,412
+Bir, şuraya yazayım hemen arkadaşlar.
+
+458
+01:19:58,031 --> 01:20:01,431
+Şuraya AB, bir, bir AB iş noktasında.
+
+459
+01:20:02,231 --> 01:20:08,492
+Bir YM'ye almak değil varsa, ve bu noktadaki sürüler meclisse o zaman Fx, AB.
+
+460
+01:20:09,716 --> 01:20:13,176
+h0 ve fgab h0.
+
+461
+01:20:14,935 --> 01:20:18,176
+Yani bir anında, gradyan fab h0.
+
+462
+01:20:27,956 --> 01:20:29,235
+Öğren bir de bunu söyler.
+
+463
+01:20:32,056 --> 01:20:37,976
+Kırt noktayı tanımadık. Tabii, kırt noktaların tanımında belki bir şey dikkatini çeker.
+
+464
+01:20:54,515 --> 01:20:55,515
+Ona bir daha dönelim.
+
+465
+01:21:05,203 --> 01:21:18,484
+FAB'nin tanımsız olduğu bir rakama az zaman, FAB ne zaman tanımsız oldu? Ya X'ye göre çevirin tanımsız olduğu, ya Y'ye göre çevirin tanımsız olduğu, her ikisinin bile tanımsız olduğu, duruma karşılıklıdır.
+
+466
+01:21:19,224 --> 01:21:21,203
+Bunu öylece de seyrandırabiliriz.
+
+467
+01:21:22,663 --> 01:21:23,363
+Çok geldik.
+
+468
+01:21:44,148 --> 01:21:46,068
+Mesela burada bir örnek daha vereyim arkadaşlar.
+
+469
+01:21:49,971 --> 01:21:52,531
+Mesela gx, y olsun eşittir.
+
+470
+01:21:54,192 --> 01:21:55,851
+1x, x kare, x, y kare.
+
+471
+01:21:57,231 --> 01:21:59,752
+Bakın arkadaşlar, bunu hemen çizilecek olursak şöyle.
+
+472
+01:22:07,828 --> 01:22:08,587
+Evet, sen artık.
+
+473
+01:22:46,515 --> 01:22:47,456
+Bu şekilde bir şey değil mi?
+
+474
+01:22:56,275 --> 01:23:05,576
+Şurası 1. Yıkartı giden bu fonksiyonun, bu ortada neye bak? 1'in üzerine başka çıkamayacak değil mi? Yani bu bizim fonksiyonu.
+
+475
+01:23:05,576 --> 01:23:16,496
+gx'i etti, gx'i etti, 1-x kare eksi, g kare fonksiyonu. 0-0'da 1 oluyor değil mi fonksiyonu? Bakın bu yüzden daha başka değil ama aşağıya doğru gidebilir tabii, onu bilemiyoruz.
+
+476
+01:23:16,496 --> 01:23:19,996
+Bir kısıt tam olmazsa, yani minimumunu bilemiyoruz.
+
+477
+01:23:23,764 --> 01:23:29,943
+Fonksiyonun burada şekil de gözük zaten minimum değeri, biraz da bu mutlak minimum değer.
+
+478
+01:23:34,068 --> 01:23:36,288
+g0, 0,1'tir.
+
+479
+01:23:37,528 --> 01:23:38,268
+1, değil mi?
+
+480
+01:23:40,268 --> 01:23:42,548
+g'nin, yani fonksiyonu,
+
+481
+01:23:45,188 --> 01:23:45,908
+minimdiyet.
+
+482
+01:23:49,747 --> 01:23:57,067
+Bu hatta, global olarak dediğimiz zaman, mutlak milim değer değil mi? Mutlak milimdur.
+
+483
+01:23:57,427 --> 01:24:04,227
+Tabi her mutlak milim değerlerden uzan bir yerel milimdir ama tersi söyleyebiliriz.
+
+484
+01:24:04,227 --> 01:24:09,227
+Mutlak milim ya da mutlak kısım varsa tek tek bir başka yoktur.
+
+485
+01:24:11,067 --> 01:24:12,067
+Mutlak milim var.
+
+486
+01:24:13,076 --> 01:24:29,456
+Şimdi orası ile gradyan ne olmalı? Daha zutu türevler, bu noktada sıfır olmalı. Gerçekten, gradyan g eşittir, eksi 2 x i, eksi 2 y, inşe. Ve sıfır çapı da sıfır çapı türevler.
+
+487
+01:24:37,395 --> 01:24:41,675
+Bu nokta türevde sıkır. Yani teoremi ne yapıyor? Otomatik olarak doğru oluyor.
+
+488
+01:24:45,796 --> 01:24:58,915
+Şimdi, demek ki aslında aday noktalar fonksiyonun, ekranından değerlerini verecek noktalar, aday noktalar kimmiş aslında? Bakın bakalım.
+
+489
+01:24:59,515 --> 01:25:03,515
+Krit noktalardan eleyebilir, değil mi? Krit noktalardan bulacak.
+
+490
+01:25:20,467 --> 01:25:28,247
+Bu verdiğim teorem aslında, yeryeksiam değerler için birinci türev testi adına alır.
+
+491
+01:25:28,987 --> 01:25:31,827
+Yani bu teorema birinci türev testi diyebiliriz.
+
+492
+01:25:32,688 --> 01:25:37,528
+Şöyle biraz da aşağı alayım, kımrıyı da yazayım ki aklımıza kalktık.
+
+493
+01:25:39,228 --> 01:25:40,368
+Birinci türev testi.
+
+494
+01:25:49,363 --> 01:25:50,363
+Teşekkür ederim.
+
+495
+01:25:57,171 --> 01:26:10,291
+Demek ki, şunu söyleyeceğim. Biz, yerel maksim ya da yerel yaşat değil tabii de, yerel maksim ya da ünlümleri ararken, nereden bulduk? 40 noktalardan edildi.
+
+496
+01:26:12,791 --> 01:26:15,671
+Benim türetler tepkilerimiz için, bunlardan bulduk.
+
+497
+01:26:28,020 --> 01:26:28,560
+Peki.
+
+498
+01:26:31,960 --> 01:26:32,780
+Devam edelim.
+
+499
+01:26:34,140 --> 01:26:36,320
+Mesela bir tane de şöyle bir örnek alalım.
+
+500
+01:26:43,539 --> 01:26:48,899
+x'ye, ıştır, y'ye kar, x'i x kar.
+
+501
+01:26:53,171 --> 01:26:57,531
+Bunlar sizinle zor bir örnek aslında ama bakalım size bir tek yorum.
+
+502
+01:27:28,467 --> 01:27:40,467
+Şöyle yapalım. Şöyle yapalım. Şöyle yapalım. Buradan bağlayalım. Şöyle.
+
+503
+01:27:44,020 --> 01:27:49,760
+Böyle çıktık, bu da burada oldu ama, o zararı yok. Şöyle.
+
+504
+01:27:49,760 --> 01:27:52,268
+Şimdi şu nokta önlem olacak.
+
+505
+01:28:00,212 --> 01:28:00,712
+Evet.
+
+506
+01:28:04,692 --> 01:28:10,891
+Şu orijin noktası bizim için önemli olacak. Bu fonksiyonun grafiği bu arkadaşlar.
+
+507
+01:28:10,891 --> 01:28:16,891
+Aslında ne yemeği gibi, bu bine kayvanlarda olur ya, atlardım, ben de kullanıyorum. Eğer dediğimiz kısmı.
+
+508
+01:28:16,891 --> 01:28:21,891
+Sizil dediğimiz bu noktaları, sizil de eğer noktaları dediğimiz.
+
+509
+01:28:21,891 --> 01:28:26,539
+Şimdi fonksiyon sıfır sıfır da nedir?
+
+510
+01:28:30,100 --> 01:28:39,700
+0 değil mi? Öte yandan, altında 0 soru bir krit noktada. Bak hemen buradan bulabilir değil mi? Nasıl olur buradan?
+
+511
+01:28:43,700 --> 01:28:52,900
+Hx 0, 0, 0, 0 ve Hy 0, 0. Dolayısıyla gradyan 0.
+
+512
+01:28:53,900 --> 01:28:56,500
+Şunu bir alayım, şöyle yazalım buraya.
+
+513
+01:29:01,811 --> 01:29:06,692
+Yani, süreden h5'i sıfır, nerede? Sıfır tıfır da tabii.
+
+514
+01:29:17,587 --> 01:29:20,427
+Bu ne demek? 00144'ü değil mi?
+
+515
+01:29:29,076 --> 01:29:30,060
+Ancak...
+
+516
+01:29:43,956 --> 01:29:45,956
+Hatta H0,0 değer de 0'dur.
+
+517
+01:29:47,956 --> 01:29:50,956
+H0,0 eğitir, 0 olup.
+
+518
+01:29:52,956 --> 01:29:58,956
+Mesela H, Y, 0,Y. Değil mi?
+
+519
+01:29:59,956 --> 01:30:00,956
+Her zaman edin pozitif.
+
+520
+01:30:02,956 --> 01:30:05,956
+Nereden büyüktür? Bu H0,0'dan büyüktür.
+
+521
+01:30:09,555 --> 01:30:12,695
+ve h mesela x sıfıra bakalım.
+
+522
+01:30:14,775 --> 01:30:16,695
+Bu da nedir? Her zaman daima negatif.
+
+523
+01:30:17,935 --> 01:30:20,695
+Yani h sıfır sıfırdan küçüktür.
+
+524
+01:30:24,467 --> 01:30:35,967
+Ne demektir? 0-0 divarında, 0-0'dan farkı, 0-0'da çok yakınlanma noktalarda fonksiyonun hem pozitif, yani 0'dan hem büyük hem de küçük değerleri var.
+
+525
+01:30:37,208 --> 01:30:44,407
+Bu neyin tanımına aykırı? Yerel maksimiyede, yerel minimum olma noktanın, değerinin tanımına aykırı.
+
+526
+01:30:47,764 --> 01:30:53,764
+Böylece, bu ne demektir? Böylece,
+
+527
+01:30:56,764 --> 01:30:59,764
+h'nin, sıfır sıfır da,
+
+528
+01:31:02,764 --> 01:31:07,764
+bir ekstrem bu, yerel ekstrem diye baktığa, yerel ekstrem bu.
+
+529
+01:31:12,979 --> 01:31:13,859
+Olmadı, öyle.
+
+530
+01:31:18,899 --> 01:31:22,500
+maksimum noktalara ekstrem noktalar diyor değil mi? ya da değerler diyor.
+
+531
+01:31:24,659 --> 01:31:26,340
+Bu tür noktalara
+
+532
+01:31:29,492 --> 01:31:38,832
+Yani, kırık nokta olup da, birer maksimum olmadığı noktalar. Onu isterseniz öyle yazalım.
+
+533
+01:31:40,032 --> 01:31:40,652
+Şöyle yazalım.
+
+534
+01:31:44,307 --> 01:31:46,155
+ve katlı bir süre.
+
+535
+01:31:57,555 --> 01:32:05,136
+A1 fonksiyonun bir kıtıklıkçası.
+
+536
+01:32:11,380 --> 01:32:14,479
+Ancak bu noktada
+
+537
+01:32:19,539 --> 01:32:22,979
+Bir geri ekstrem durumu yoksa,
+
+538
+01:32:29,876 --> 01:32:35,336
+Değer değil mi anlamda? Yoksa, AB noktasına bir ER noktası gelir.
+
+539
+01:32:45,524 --> 01:32:47,524
+eğer, evet.
+
+540
+01:32:49,524 --> 01:32:50,524
+eğer noktası.
+
+541
+01:32:50,524 --> 01:32:53,524
+Tamam mı arkadaşlar? Bunu yazın böyle, kayıt edelim.
+
+542
+01:32:53,524 --> 01:32:56,524
+ab noktasında bir eğer noktası.
+
+543
+01:32:56,524 --> 01:33:00,524
+Yani bizim bu örneğimizdeki sıfır sıfır noktası aslında.
+
+544
+01:33:00,524 --> 01:33:03,524
+Fonksiyonun nesil fonksiyonun bir eğer noktasıdır.
+
+545
+01:33:03,524 --> 01:33:08,524
+Bu zaten hem de bu örnek şeyde var, ne bileyim.
+
+546
+01:33:10,515 --> 01:33:13,995
+Gerçi ben x kareksi, orada x kareksi yakaraya almışım, önemli değil.
+
+547
+01:33:15,435 --> 01:33:16,235
+Orada var.
+
+548
+01:33:27,923 --> 01:33:30,083
+Evet, örnekti. Bir de örnekti vermişiz.
+
+549
+01:33:42,868 --> 01:33:46,188
+Çünkü geril ekstrem değerler için 2. türev testi var arkadaşlar.
+
+550
+01:33:48,108 --> 01:34:02,068
+O da fonksiyonun belli bir ABM'li tezli bir dairede 1. ve 2. kısım türevlerinin, metafinal kısım türevlerinin sürekli olduklarını ve 1. metafinal türevlerinin 0 olduğunu varsayalım.
+
+551
+01:34:03,068 --> 01:34:05,068
+O zaman ona göre bir işlem yapacağız.
+
+552
+01:34:17,652 --> 01:34:21,791
+Onlara verelim. Böylece bu bizim testimizin finali olsun.
+
+553
+01:34:37,203 --> 01:34:37,923
+Hello Tim.
+
+554
+01:34:45,332 --> 01:34:46,811
+Er, ekseminar için,
+
+555
+01:34:51,475 --> 01:34:52,456
+İnçü eti eti.
+
+556
+01:35:00,500 --> 01:35:01,500
+Şuraya dizi.
+
+557
+01:35:05,716 --> 01:35:07,816
+bir AB noktasını içeren
+
+558
+01:35:12,627 --> 01:35:14,047
+Bir derde, küçük bir derde.
+
+559
+01:35:18,547 --> 01:35:20,547
+EFXIA fonksiyonlarının
+
+560
+01:35:24,083 --> 01:35:26,163
+Birinci ve ikinci metrekare çevrenin
+
+561
+01:35:39,123 --> 01:35:40,404
+Kriptozu terni.
+
+562
+01:35:47,347 --> 01:35:53,908
+ve fx, ab, h0 ve fg, ab
+
+563
+01:35:58,100 --> 01:36:00,900
+olduğunu kabul edelim.
+
+564
+01:36:08,083 --> 01:36:16,683
+O zaman o takdirde, aşk şöyle, yani bu AB bunların üstü yok. AB çekeceğiz.
+
+565
+01:36:18,243 --> 01:36:27,804
+Aşıkın da şu, FX, FXX 2 süre, AB'nin otasyonunu biliyorsunuz.
+
+566
+01:36:28,923 --> 01:36:32,443
+Küçük sıfır ve FX.
+
+567
+01:36:34,228 --> 01:36:39,587
+xfy'ye, eksi fxy kare.
+
+568
+01:36:40,907 --> 01:36:43,548
+Bunun AB noktasında olduğumuzu söyleyelim.
+
+569
+01:36:47,828 --> 01:36:53,888
+Şöyle bir, bu büyükse, politikse.
+
+570
+01:36:58,355 --> 01:36:59,195
+Et ad
+
+571
+01:37:03,091 --> 01:37:04,671
+1, 7,
+
+572
+01:37:06,752 --> 01:37:08,431
+maksimum değer.
+
+573
+01:37:23,764 --> 01:37:28,504
+Bazen de fonksiyonun AB anlattasından bir değeri maksimum vardır deriz.
+
+574
+01:37:30,024 --> 01:37:30,664
+Beş şıkkı.
+
+575
+01:37:38,003 --> 01:37:39,344
+Evet, bu da çok daha iyi bir şey.
+
+576
+01:37:42,931 --> 01:37:46,332
+f, x, x,
+
+577
+01:37:49,131 --> 01:37:49,692
+a, v,
+
+578
+01:37:51,652 --> 01:37:52,532
+küçük sıfır,
+
+579
+01:37:53,731 --> 01:37:55,431
+yok, büyük sıfır olarak yapardım.
+
+580
+01:37:56,492 --> 01:37:57,211
+Buna bağlı çünkü.
+
+581
+01:38:00,692 --> 01:38:02,211
+Ve yine bu pozitifler.
+
+582
+01:38:15,636 --> 01:38:22,436
+F-A-B bu defa bir gereğe minimumdeğe.
+
+583
+01:38:26,771 --> 01:38:30,211
+Bu şekilde işte fonksiyonun AB.1GDL minimumu vardır.
+
+584
+01:38:32,031 --> 01:38:36,211
+Fonksiyonun AB.1GDL minimumu vardır.
+
+585
+01:38:53,300 --> 01:39:01,500
+Zaten FX, ABHC0, FI, ABHC0 olduğunu söylemekle, AB noktasının bir kütle nokta olduğunu söylemiş olduk zaten değil mi?
+
+586
+01:39:04,884 --> 01:39:13,304
+C diyelim, E noktası hangi durumda çıkacaktır? Şu farkın, Gülsere F'den farkının negatif olması durumunda.
+
+587
+01:39:14,724 --> 01:39:22,923
+Fx, Dx, Fy, Y, Eksi, Fx, Y'nin kaleti, V'ler noktada, ABD.
+
+588
+01:39:28,148 --> 01:39:29,468
+Küçük sıfır ise
+
+589
+01:39:35,155 --> 01:39:45,155
+Yani, AB'ye mi demek lazım? AB'de bir eğer noktası vardır. Fonksiyonun AB'de bir eğer noktası vardır. Şöyle söyleyebilir.
+
+590
+01:39:50,484 --> 01:39:55,484
+Ekin, dedi, eğer ben bir elektrashire atacağım.
+
+591
+01:40:04,659 --> 01:40:29,920
+Evet. Bir şey daha, tabii o bizim için de yaramayacak. Yani 2.3 dersi maalesef 2.3'e yaramayacak. O da şu, eğer bu fark 0 ise, AB.1'in kısmi türesi olduğu halde, o zaman 2.3 dersi ne verir mi? Sonuç çöremiyor. Dolayısıyla bu da 2.3 dersi bir anlamda biraz ne olduğu, zayıf olduğu bir durum.
+
+592
+01:40:33,619 --> 01:40:35,100
+A, B, C, D diyelim.
+
+593
+01:40:41,619 --> 01:40:52,000
+fx, fy, y, y, eksi, fx, y, kare, bölüm, a, v nuklasında, f0 ise,
+
+594
+01:40:55,956 --> 01:40:56,996
+Bu test sonuçlar.
+
+595
+01:41:02,612 --> 01:41:04,612
+Ne demek yani arkadaşlar?
+
+596
+01:41:06,112 --> 01:41:10,612
+AB noktasında bir yer maksimum ya da yer yer minimum olabilir, olmayabilir de.
+
+597
+01:41:10,612 --> 01:41:13,612
+Bunun için bu testi de bulamıyoruz.
+
+598
+01:41:13,612 --> 01:41:17,612
+Burası neye bakmamız lazım? Yine bir iki testine dönüp türevin, işaretini denememiz lazım.
+
+599
+01:41:17,612 --> 01:41:18,612
+O da güzel bir sorun.
+
+600
+01:41:18,612 --> 01:41:23,148
+Hatta ben fonksiyon olup yerden noktada sağında bir sorun da işareti değiştiriyorum, değiştiriyorum değil mi?
+
+601
+01:41:26,547 --> 01:41:30,108
+İyi seyirler, iyi seyirler, tabii şartı için nefine ait.
+
+602
+01:41:35,796 --> 01:41:41,236
+Ben buna bir örnek verelim, böylece, bugün bir dersimizde, dikilmiş olur.
+
+603
+01:41:43,796 --> 01:41:45,976
+x, y, x, x kare, x, y kare,
+
+604
+01:41:47,916 --> 01:41:49,356
+şarj çarpanı çıkmaz.
+
+605
+01:41:53,971 --> 01:42:01,791
+Aslında burada fx, fx, fx, fx'nin kare ifadesi. Fonksiyonun diskriminant, f'nin diskriminant adını alır.
+
+606
+01:42:03,231 --> 01:42:12,811
+Bu bahçen Jacobian determinat tarzında direkt bu da anlama gelmez ama ona benzer bir ifadeye sahiptir.
+
+607
+01:42:13,891 --> 01:42:20,171
+Özellikle verilen bir mesela AB noktasında bu ifade, kut, de yüzeyin her yerinde aynı şekilde sevildiğini söyler.
+
+608
+01:42:20,171 --> 01:42:21,511
+Yani 2. türev.
+
+609
+01:42:22,068 --> 01:42:30,068
+negatif ise bir yere maksimum oturarak aşağı, kütüre kutu ise bir yere minimum oturarak yukarı.
+
+610
+01:42:30,068 --> 01:42:39,068
+Değerli yandan AB noktasında eğer negatif etsinler, bazı yönler de yukarı, bazı yönler de aşağı yukarı da bir eğer noktası hasıl olur.
+
+611
+01:42:39,068 --> 01:42:41,068
+Böyle bir yorum var.
+
+612
+01:42:41,068 --> 01:42:48,844
+X'ye eksi, artı 4 var.
+
+613
+01:42:50,676 --> 01:42:52,216
+Şöyle yapmaya çalışalım.
+
+614
+01:42:54,456 --> 01:42:54,716
+Evet.
+
+615
+01:43:18,228 --> 01:43:22,007
+fonksiyonunun, umarım işaretler doğrudur, bakayım.
+
+616
+01:43:24,807 --> 01:43:26,708
+Evet, evet doğru.
+
+617
+01:43:33,971 --> 01:43:38,531
+İki üçe yoruluklar. Başka da ulaşamayın.
+
+618
+01:43:40,931 --> 01:43:41,251
+Amin.
+
+619
+01:43:45,076 --> 01:43:47,515
+Fonksiyon, krit noktalarını bulunca sırpanı diyelim.
+
+620
+01:43:49,515 --> 01:43:54,095
+Fonksiyonlar, kritik noktalarını.
+
+621
+01:44:22,292 --> 01:44:45,412
+Şimdi kolay ip ademen türevleri alıp, x'e göre türev alıp, y-2x-2, 5-0, fy'yi alıp, x-2y-2, eşli sıfırdan, buradan x-y'yi çözecek, x-y'ye, sanırım x-2y-2 mi çıkar?
+
+622
+01:44:55,123 --> 01:45:08,224
+ortak çözümünden başka bir şey değil mi? İki doğru olduğuna göre, iki doğru tek bir noktada keseceğine göre o da eksi 2 eksi. Yani eksi 2 eksi 2 tek kritik noktada.
+
+623
+01:45:15,060 --> 01:45:17,400
+Hemen fxx türevine bakalım.
+
+624
+01:45:19,100 --> 01:45:19,800
+Eksi 2.
+
+625
+01:45:21,239 --> 01:45:22,800
+Fyy türevine bakalım.
+
+626
+01:45:23,420 --> 01:45:24,200
+O da eksi 2.
+
+627
+01:45:25,420 --> 01:45:26,760
+Fxy türevine bakalım.
+
+628
+01:45:26,880 --> 01:45:27,340
+Bir mi olur?
+
+629
+01:45:28,980 --> 01:45:29,220
+Bir.
+
+630
+01:45:33,108 --> 01:45:38,448
+Verilen noktada tabii, zaten sabit çıktıkları için hesaplaması koru olacaktır, verilen noktaya tıklamaya gerek yok.
+
+631
+01:45:39,528 --> 01:45:46,408
+Eksi 2 çarpı, eksi 2, eksi 1. İfade açıkça pozitif.
+
+632
+01:45:48,548 --> 01:45:54,888
+Öteyden fx, yine verilen noktada, yani nerede? Eksi 2, eksi 2 noktası.
+
+633
+01:45:59,604 --> 01:46:01,144
+negatif, değil mi?
+
+634
+01:46:02,384 --> 01:46:14,524
+Demek ki, evet, fonksiyonun kısmi türev tetkine göre, eksiki 2'de 1, eksiki 2'de 1, yerel maksimum var, değil mi?
+
+635
+01:46:29,076 --> 01:46:35,476
+Ondan götürüp o maksimum değerde fonksiyonun kendi eksi 2, eksi 2 de yerine yazarak etaplayacağız.
+
+636
+01:46:35,815 --> 01:46:44,855
+Burası 4 olur. Eksi 4, eksi 4, artı 4, artı 4, artı 4.
+
+637
+01:46:46,255 --> 01:46:49,355
+Yani şöyle şunlar birbirlerine götürüp eşitlik edelim.
+
+638
+01:46:51,095 --> 01:46:55,435
+Yani maksimum değerde direkt 8 olarak karşımıza çıkar.
+
+639
+01:47:00,180 --> 01:47:01,319
+Bu bizim maksimile.
+
+640
+01:47:10,739 --> 01:47:15,840
+Evet, eksi 2, eksi 2'de aldığım maksimum değeri fonksiyonu çekilmiş.
+
+641
+01:47:18,340 --> 01:47:22,479
+Yani grafiğini hatırlamıyorum, grafiğini tabii ki, gelebiliriz diye bir şey yok.
+
+642
+01:47:22,479 --> 01:47:23,859
+Nasıl bir şey?
+
+643
+01:47:25,359 --> 01:47:28,940
+Korkmamış mı?
+
+644
+01:47:34,195 --> 01:47:49,576
+Evet, bu konunun sonuna kadar arkadaşlar bütün bilgiler, işte bunun tepkı türev 1 ve kısmi türev 2 altında, Aves'i mevcut, oradan indirip yerlenebilirsiniz.
+
+645
+01:47:50,855 --> 01:47:59,296
+Ama burada bizim anlatımımız tarzı, notanızı alıp ve işlediyseniz, bunlar size çok yararlı olacaktır, o yüzden.
+
+646
+01:48:00,756 --> 01:48:04,236
+Önemli. Burada kalmış olalım. Haftaya artık.
+
+647
+01:48:06,695 --> 01:48:12,195
+İki değişkenlik fonksiyonlar, şöyle dolayısıyla iki değişkenlik fonksiyonlar derken, kat integraller işte.
+
+648
+01:48:12,576 --> 01:48:16,576
+Orada artık değişkenler için tabii kat integrallere geçeceğiz.
+
+649
+01:48:17,796 --> 01:48:18,336
+Tamam arkadaşlar.
+
+650
+01:48:19,996 --> 01:48:21,476
+Peki, kendinize iyi bakın.
+
+651
+01:48:22,615 --> 01:48:24,695
+Sorunuz varsa sorun, sorunacaksa kendinize iyi bakın.
+
+652
+01:48:26,236 --> 01:48:27,855
+Partisi, görüşmek üzere.
