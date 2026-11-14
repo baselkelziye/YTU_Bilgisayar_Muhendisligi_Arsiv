@@ -1,0 +1,3043 @@
+1
+00:04:29,076 --> 00:04:31,076
+Merhaba [öğrenci], ekranı görüyor musun?
+
+2
+00:04:33,776 --> 00:04:35,276
+Merhaba hocam, görüyorum.
+
+3
+00:04:35,276 --> 00:04:40,076
+Tamam. Dün sabah ilk açtığımızda bir ara görünmemişti de ekrandaki yazılar.
+
+4
+00:04:42,076 --> 00:04:46,576
+Biraz bekleyelim arkadaşlarınız da geçsin, zaten daha dokuzda çıkıyor. Başlarız.
+
+5
+00:12:30,484 --> 00:12:34,084
+Arkadaşlar merhaba. Hazırsanız başlayabilir miyiz?
+
+6
+00:12:34,824 --> 00:12:39,984
+Merhaba hocam.
+
+7
+00:12:41,364 --> 00:12:42,084
+Başlıyorum.
+
+8
+00:12:43,464 --> 00:12:48,024
+En son artı sinüs fonksiyonunu, yani sinüs fonksiyonunun tersinin nasıl tanımlanacağını söylemiştim.
+
+9
+00:12:48,104 --> 00:12:52,403
+Orada bırakmıştım. Çok kısa bir tekrar yapıyorum. Ondan sonra aşağı doğru devam edelim.
+
+10
+00:12:53,024 --> 00:12:56,264
+Sinüs fonksiyonu birebir değildir. Dolayısıyla tersi yoktur.
+
+11
+00:12:58,100 --> 00:13:04,600
+Dar bir aralıkta sinüs fonksiyonunu tanımlarsak, yani tanım kümlesini dar bir aralık alırsak, bu takdirde sinüsün tersinden bahsedebiliriz.
+
+12
+00:13:04,840 --> 00:13:07,680
+Diğer bir ifadeyle, sinüs birebir olur demiştim.
+
+13
+00:13:08,879 --> 00:13:12,600
+Sinüsün dar aralığı ise, x p bölü 2x, p bölü 2x.
+
+14
+00:13:13,172 --> 00:13:41,172
+aralığıdır dedim. Onun nasıl çıktığını kabaca bazı arkadaşlarımız integralı bilmediği için onları es geçerek integralı bilenler üzerine söylemiştim. Yani kosinüsün pozitif olduğu birinci ve dördüncü bölge olan x p bölüki artı p bölüki aralığını alıyoruz. Yani keyfi bir seçim yok. Öyle rastgele seçmiyoruz. Matematikte x p şey duyduk yerde ortaya atılmamıştır. Mutlaka sebebi vardır demiştim. Eğer sinüsün tanım kümesini x p bölüki artı p bölüki kafalar aralığı alırsak zaten sinüs eksi bir...
+
+15
+00:13:41,172 --> 00:13:48,451
+artı 1 aralığında değerler alacağı için, yani görüntü kümesi 1 artı 1 olduğu için, otomatik olarak örten oluyor.
+
+16
+00:13:48,572 --> 00:13:51,912
+Birebir örtenin şartı da, sizin daha önceden bildiğim şartı da sağlamaktadır.
+
+17
+00:13:52,172 --> 00:13:56,491
+Dolayısıyla tersi mevcut olur. Tersi de art sinüs x de gösteriliyor demiştim.
+
+18
+00:13:56,831 --> 00:13:59,731
+Bazı yabancı kitaplarda sinüs üzeri eksi 1 x diye yazıyor.
+
+19
+00:14:00,091 --> 00:14:06,292
+Ben onu sevmiyorum. Yani sinüs üzeri eksi 1, yanına x koyduğunuz zaman sanki biri böyle sinüs x'miş gibi görünüyor.
+
+20
+00:14:06,292 --> 00:14:08,812
+Ya da öyle anlaşılıyor. Çok karşılaştığım için.
+
+21
+00:14:09,172 --> 00:14:19,172
+artı 3x), tecrübeyle sabit. Böyle göstermeyi uygun bulmadığım için ben daha yaygın olan arsünüs x kelimesini diyelim ya da formülünü kullanıyorum.
+
+22
+00:14:20,172 --> 00:14:29,172
+Bunu böyle söyledikten sonra eğer sinüs x x x 1 x 1 x 1 aralığında tanımlanırsa onun tersi şüphesiz x 1 x 1 aralığında tanımlanacaklar.
+
+23
+00:14:29,172 --> 00:14:35,855
+Yani bunlar yer değiştirir. Örkenlikle dikkate alındığı zaman dolayısıyla f' üzer x 1 yani arsünüs x
+
+24
+00:14:35,855 --> 00:14:38,775
+Tanım çubesi bu, değer çubesi de, geri çubesi de bu olur.
+
+25
+00:14:39,255 --> 00:14:43,576
+Şimdi arkadaşlar, şurada bir şey var da, onun için buraya geldim, dün söylemediğimi diye hatırlıyorum.
+
+26
+00:14:43,975 --> 00:14:45,395
+Bakın, şu çok önemli.
+
+27
+00:14:45,812 --> 00:15:00,792
+Y eksi pi bölü 2 artı pi bölü 2 aralığında olduğu zaman sinüs y eşittir olması için gerek yeter şart diyor.
+
+28
+00:15:01,192 --> 00:15:04,292
+İş eksi 1 ile artı 1 arasında olduğu zaman y eşittir artı sinüs 1.
+
+29
+00:15:04,292 --> 00:15:05,672
+Bu şunu söylüyor arkadaşlar.
+
+30
+00:15:07,988 --> 00:15:20,448
+sinüsün tanım kümesi şu aralık olduğu zaman, x kare artı 1x kare artı 1x kare artı 2x aralık olduğu zaman tersi ar sinüsliktir, birebire şeme vardır demek istiyor tamam mı? Dolayısıyla şu bağıratıyı unutmayacaksınız. Bir şey daha söyleyeyim.
+
+31
+00:15:21,844 --> 00:15:30,944
+Limit bitene kadar, tamam mı? Limit konusu, limit ve süreklilik konusu bitene kadar sinüsle, art sinüs arasındaki bu bağlantıyı unutmayın.
+
+32
+00:15:31,403 --> 00:15:35,324
+Türevde bir iki şey daha söyleyeceğim bu bağlantıya. Eki olarak bir iki şey daha söyleyeceğim.
+
+33
+00:15:35,624 --> 00:15:45,584
+Yani aklınıza, ters türev yönetik fonksiyonlarla, aklınıza demeyeyim de, ters türev yönetik fonksiyonlarla ilgili bir işlemi yapacaksanız, türeve kadar olan kısmı söylüyorum.
+
+34
+00:15:45,984 --> 00:15:49,784
+Ters türev yönetik fonksiyonlarla ilgili bir işlemi yapacaksanız, hemen aklınıza düzü gel.
+
+35
+00:15:49,844 --> 00:15:51,544
+Arturistiksin düzü kim?
+
+36
+00:15:53,224 --> 00:15:53,684
+[öğrenci].
+
+37
+00:15:56,504 --> 00:15:57,884
+Arturistiksin düzü.
+
+38
+00:15:58,744 --> 00:15:59,903
+Sinüs mü hocam?
+
+39
+00:16:00,184 --> 00:16:00,424
+Evet.
+
+40
+00:16:00,924 --> 00:16:02,364
+Bir daha tekrar ediyorum.
+
+41
+00:16:03,824 --> 00:16:04,544
+Süreve kadar.
+
+42
+00:16:06,884 --> 00:16:07,903
+Özür dilerim.
+
+43
+00:16:08,164 --> 00:16:08,684
+Süreve kadar.
+
+44
+00:16:10,192 --> 00:16:19,251
+x kare artı 2x'in düzü.
+
+45
+00:16:09,299 --> 00:16:22,579
+Böyle türevde bir iki ilave daha yapacağım. Eğer şimdilik türeve kadar olan kısımda ters trigonometrik fonksiyon, özellikle arksinüs fonksiyonuna karşılaşırsanız, yüzü aklınıza gelecek. Yani sinüsle devam edeceksiniz. Tamam mı? Bunu unutmayın.
+
+46
+00:16:23,000 --> 00:16:23,419
+Hocam.
+
+47
+00:16:23,419 --> 00:16:25,459
+Bunun üzerinden tekrar geçerim.
+
+48
+00:16:26,159 --> 00:16:27,339
+Bir şey sorabilir miyim hocam?
+
+49
+00:16:27,859 --> 00:16:28,119
+Buyurun.
+
+50
+00:16:28,859 --> 00:16:32,599
+Ben tam anlamadım bu arksinin sin olayını, sinüs olayını.
+
+51
+00:16:33,539 --> 00:16:34,099
+Şurayı mı?
+
+52
+00:16:34,819 --> 00:16:35,519
+Evet hocam.
+
+53
+00:16:36,115 --> 00:16:37,615
+Dün derste miydin?
+
+54
+00:16:38,895 --> 00:16:41,115
+Efendim sesiniz biraz...
+
+55
+00:16:41,695 --> 00:16:43,076
+Dün derste miydin?
+
+56
+00:16:43,515 --> 00:16:44,775
+Dün dersteydim hocam, evet.
+
+57
+00:16:45,655 --> 00:16:49,735
+O zaman bir daha tekrar edeyim. Normal olarak arkadaşlar sinüs yük fonksiyonun tersi yoktur.
+
+58
+00:16:50,175 --> 00:16:54,056
+Çünkü sinüs yük fonksiyonu birebirdi, birebir değildir. Burayı anladık mı?
+
+59
+00:16:54,675 --> 00:16:55,255
+Evet hocam.
+
+60
+00:16:55,695 --> 00:16:58,855
+Bu konuda isminizle hitap edeyim. Görüntüle göremiyorum sizi.
+
+61
+00:16:59,395 --> 00:16:59,795
+[öğrenci].
+
+62
+00:17:00,500 --> 00:17:14,619
+[öğrenci], tamam mı? Normal olarak sinüs fonksiyonu genel tanımcım ve sizlerle birebir olmadığı için tersi mevcut değildir. Eğer illa da sinüsün tersini mevcut kılmak istiyorsak onu daha dar, birebir olduğu bir aralığa kısıtlamamız gerekiyor. Tamam mı?
+
+63
+00:17:15,339 --> 00:17:15,579
+Tamam.
+
+64
+00:17:16,147 --> 00:17:19,327
+Mesela sinüsün tanım kümesini, real sayılar kümesi alabilirsiniz.
+
+65
+00:17:19,728 --> 00:17:22,987
+x 2p'den artı 2p'ye olan kapalı alabilirsiniz.
+
+66
+00:17:23,387 --> 00:17:26,207
+0'dan 2p'ye olan kapalı alabilirsiniz vs.
+
+67
+00:17:26,587 --> 00:17:28,567
+Bunların hiçbirisinde sinüs fonksiyonu birebir değil.
+
+68
+00:17:29,207 --> 00:17:33,067
+Eğer sinüs fonksiyonunu birebir yaparsanız tersinden bahsedebilirsiniz.
+
+69
+00:17:33,467 --> 00:17:39,028
+Onun için en uygun ve işlemler yapılarak bulunmuş aralık x pi bölükü artı pi bölükü aralığıdır.
+
+70
+00:17:40,016 --> 00:17:45,056
+Bunu da rastgele yazmadık, işlemler sonucu bu çıkmıştır dedim. Orayı hatırlıyor musun?
+
+71
+00:17:45,456 --> 00:17:46,456
+Hatırlıyorum hocam, evet.
+
+72
+00:17:46,916 --> 00:17:57,096
+Integralle, yani o integrale geldiğimiz zaman kısmı sorursa, ya da boş bir vakitte belki konuşursak, gene bir şeyler uygulamalarda falan, integralleli bir kısmından tekrar bunu nasıl çıktığını söylerim size.
+
+73
+00:17:57,316 --> 00:17:59,536
+Tamam, ben malzememiz fazla olsun diye burada anlatıyorum dedim.
+
+74
+00:17:59,536 --> 00:18:01,536
+Şimdi sinüsü böyle tanımlarsak...
+
+75
+00:18:01,971 --> 00:18:17,751
+Zaten görüntü hükümeti görüyorsunuz. x1, x1 aralığı. Yani sinüsün alabileceği en küçük değer x1, alabileceği en büyük değer x1'dir. Eğer sinüsü şu şekilde tanımlarsa tersinden bahsedebilir. Tamam. Tersi de şunların yerini değişimiyle elde ediliyor. Böyle oluyor.
+
+76
+00:18:18,711 --> 00:18:22,692
+Sinüsün tersini asimistlikle gösteriyor. Buraya kadar tamam mı? Tamam hocam, anladım.
+
+77
+00:18:23,220 --> 00:18:25,099
+Şu kısımda
+
+78
+00:18:25,099 --> 00:18:27,059
+teorem 5'ti galiba değil mi?
+
+79
+00:18:27,120 --> 00:18:29,319
+Teorem 5'ti bu teoremi hatta kırmızıyı işaretlemiştim ama
+
+80
+00:18:29,319 --> 00:18:30,940
+sonra gitti o. Orada
+
+81
+00:18:30,940 --> 00:18:32,759
+F birleşke F'ye cileksin bir de
+
+82
+00:18:32,759 --> 00:18:34,559
+F'ye cileksin bir birleşke F'ye vardı.
+
+83
+00:18:34,779 --> 00:18:36,160
+İşini sağlaması gerekiyordu ya.
+
+84
+00:18:36,400 --> 00:18:38,180
+Bunu türetliyelim. Ancak ve ancak diye.
+
+85
+00:18:39,000 --> 00:18:40,740
+İlave olarak da diyorum ki
+
+86
+00:18:40,740 --> 00:18:42,120
+türeve kadar olan kısımda
+
+87
+00:18:42,120 --> 00:18:44,460
+türeve ekleri yapacağım. Türeve kadar
+
+88
+00:18:44,460 --> 00:18:46,500
+olan kısımda eğer
+
+89
+00:18:47,220 --> 00:19:04,079
+tersiz bir fonksiyonla karşılaşırsanız, özel olarak da art sinüsle, burada geçtiği için, karşılaşırsanız hemen düzüne dönün. Düzü kim? Sinüs için. Tamam mı? Sinüs. Düzüne dönün, işlemlerinizi düzünden devam ettirin, derin. Buraya kadar tamam mı? Tamam hocam, anladım. Teşekkür ederim.
+
+90
+00:19:04,948 --> 00:19:10,568
+Şunun biraz daha güncellenmiş şekli, bak yukarıdaki tanımlamaya göre diyor ya, güncellenmiş şekli bu.
+
+91
+00:19:10,968 --> 00:19:18,188
+Tamam mı? Ben özellikle x koyuyorum arkadaşlar. Yani buraya x koymamızın bir sakıncası yok ama şöyle bir kafa karışıklığı uyandırabilir.
+
+92
+00:19:18,428 --> 00:19:23,948
+Şurada mesela mutlak x, çizgi, çizgi yazıyoruz ya. Arkadaşların tanım kümesinden dolayı. Şurada bakın.
+
+93
+00:19:24,564 --> 00:19:34,664
+Buraya da mutlak x 3 keçit p bölük yazınca, ya hem x bu oluyor hem de x bu oluyor gibi kafa karışıklığı olabilir ya, bu tecrübeyle sabit oluyor diye özellikle y yazdım.
+
+94
+00:19:34,923 --> 00:19:40,564
+Ama pratikte kullanırken her ikisini x diye kullanabiliriz. Söyledi de kullandı. Tamam mı? Bunu da söyledim.
+
+95
+00:19:41,024 --> 00:19:49,884
+Şurada galiba arkadaşlarımızın bazıları, eğer kimse konuşursa sevinirim, şunu nasıl kullandığımızı sormuştu, bilmiyorum demişti. Burada mı arkadaşımız?
+
+96
+00:19:51,059 --> 00:19:54,740
+Bir iki arkadaşımız şunun nasıl kullanıldığını bilmiyorum bir şey söylemişti.
+
+97
+00:19:55,259 --> 00:20:00,319
+Ama aranızda şu dik işini nasıl kullanıldığı, şu hesapların yapılabilmesi için, pratik hesapların yapılabilmesi için.
+
+98
+00:20:03,667 --> 00:20:05,747
+Dünden değil de hatırlıyorum ben, demedim mi?
+
+99
+00:20:07,507 --> 00:20:09,947
+Dünden nereden değilim ama bilmiyorum hocam.
+
+100
+00:20:10,427 --> 00:20:15,307
+Tamam, tamam. Ben kısacık izah ediyorum. Şöyle bir dikişken çiziyorsunuz, tamam mı bu?
+
+101
+00:20:15,987 --> 00:20:20,327
+Yani bütün testi biyonometrik fonksiyonları için, aşağıda 1-2 tane daha var. Şöyle bir dikişken çiziyoruz.
+
+102
+00:20:21,567 --> 00:20:27,807
+Eğer mevzu konusu asimüs ise açığı asimüs alıyorsunuz. Tamam mı [öğrenci]?
+
+103
+00:20:28,403 --> 00:20:56,103
+Tamamdır hocam. Burada mevzu arsini 6 olduğu için arsini 6'i açı olarak alıyorsunuz. Bunu teta diye düşünebilirsin. Tamam teta diye düşünebilirsin. Şunu ölene kadar tutmayacaksınız. Şunu ve bunu. Bak sinüsü arsini 6'le uyguladığınız zaman işini veriyor. Arsini 6'le uyguladığınız zaman gene işini veriyor. Burada tamam mı? Tamamdır hocam. Tamam. Şimdi devam ediyor. Şunu teta diye düşünebilirsiniz. Bakın sinüsü arsini 6'le uyguladığınız zaman işini veriyor.
+
+104
+00:20:56,948 --> 00:21:18,628
+Mesela kosinüs'ü bulmak istiyorum. Kosinüs'ün dikişken tanımı ne? Karşılık kenarın, değil mi? Karşılık kenarın, özür dilerim. Komşulık kenarın hipotenüsü oranlığı. Bak, komşulık kenarın hipotenüsü oranlığı. Bak bu çift. Mesela tancantı bulmak isterseniz, tancant neydi? Karşı bölü komşu. Karşı bölü komşu, bak görüyor musun?
+
+105
+00:21:18,895 --> 00:21:41,995
+Ne kadar pratik değil mi? İnanılmaz bir revide pratik. Şu x'te biri nasıl yerleştiğinizi de söyleyeyim ben. Eğer mevzu bahis olan arsenik ile bunu açı olarak buraya koyarsanız karşısına x koyuyorsunuz. Neden olduğunu biliyor musun? Aha bundan. Şundan bakın. Eğer buraya açı olarak arsenik koyarsanız karşısına x koyuyorsunuz. Sebebi de şu.
+
+106
+00:21:42,675 --> 00:21:56,576
+Tamam mı? Şunu ölene kadar unutmayın diyorum ya, onlar. Sebebi de bu. Tamam mı? Şu özdeşlem dolayı bunu koyuyorsunuz. Şimdi sinüs, karşı dikenarın hipotenüs oranı olduğu için x'i vermesi anlamında buraya x koyduğunuz zaman buraya 1 koyuyorsunuz.
+
+107
+00:21:57,576 --> 00:21:59,576
+Psago teoremine göre de...
+
+108
+00:22:00,403 --> 00:22:10,724
+dik kenarların kareleri toplamı hipotenüsü veriyor ya, dik kenarların kareleri toplamı hipotenüsü veriyor. Dolayısıyla burası çıkıyor.
+
+109
+00:22:11,284 --> 00:22:16,203
+Burada böyle çıkıyor, başkasında başka türlü çıkıyor. Tamam, diğerinde genel nasıl? Burayı da anladığımıza göre geçiyorum.
+
+110
+00:22:17,203 --> 00:22:20,043
+Bir de şöyle bulma var arkadaşlar, bak şu şekilde.
+
+111
+00:22:20,500 --> 00:22:24,460
+Bu kolay değil. Ben gene anlatayım. Mesela siz şunu bulmak istiyorsunuz.
+
+112
+00:22:24,679 --> 00:22:30,319
+Diyelim, tancant, arsünüs x, eşittir x bölü kök içinde bir eksiklikler olduğunu göstermek istiyorsunuz.
+
+113
+00:22:30,539 --> 00:22:34,619
+Südik işleyen yardımıyla değil de normal gebi serişlerimi yaparak bulmak istiyorsunuz.
+
+114
+00:22:34,860 --> 00:22:38,759
+Bakın nasıl yapıyoruz. Şimdi bu ifadenin tamamına u diyoruz. Tamam mı?
+
+115
+00:22:39,599 --> 00:22:45,380
+Eğer şunu bulmak istiyorsak. Bu ifadenin tamamını, yani tancant, arsünüs x'e u diyoruz.
+
+116
+00:22:45,940 --> 00:22:48,299
+İçine, arsünüs x'e v diyoruz.
+
+117
+00:22:49,395 --> 00:22:59,855
+Bırakalım mı? İfadenin tamamına u diyoruz. İçinde ne varsa ona v diyoruz. Sonra v'den, bakın, v eşitir asimistirle daima ne yapacaksınız? Yüzüne geçeceksiniz dedim.
+
+118
+00:23:00,076 --> 00:23:05,415
+x ne eşit oluyor? Sinüs v eşit oluyor. Devam edelim.
+
+119
+00:23:08,948 --> 00:23:25,948
+u eşittir tanjant asimist x ve v eşittir asimist x. U eşittir tanjant v. Devam edelim. Tanjant v ne? Sinüs v bölü kosinist v. Siz burada kosinist v'yi x sinisinden bilmiyorsunuz.
+
+120
+00:23:27,948 --> 00:23:35,028
+Ama ölene kadar unutmayacağınız bir özdeşlik biliyorsunuz. Dün de söyledim. Kosinist kare artı sinist kare eşittir 1.
+
+121
+00:23:35,476 --> 00:23:51,656
+Bunu ölene kadar unutmayacaksınız. x kare artı sinüs kare eşittir 1. Şimdi siz x kare artı sinüs kare ve sinüs çektiğiniz zaman x kare eşittir, kök içine bireksiz sinüs kare v oluyor. Burayı ben aldık mı? Şurayı.
+
+122
+00:23:51,656 --> 00:23:52,876
+Tamam.
+
+123
+00:23:55,571 --> 00:23:56,371
+Anladık hocam.
+
+124
+00:23:56,791 --> 00:23:57,031
+Tamam.
+
+125
+00:23:57,411 --> 00:23:59,031
+Tirmus B yerine ilk yazdınız.
+
+126
+00:23:59,311 --> 00:24:01,111
+Bunun yerine de bunu yazarsanız bakın çıkıyor musun?
+
+127
+00:24:01,491 --> 00:24:02,711
+Bu biraz uğraştırıcı ama.
+
+128
+00:24:03,071 --> 00:24:07,611
+Mesela kotancanı, botancanı bulurken yerlerde işecek gelen işyerde işler çarpma yapmak gerekebilir.
+
+129
+00:24:07,971 --> 00:24:08,531
+Uğraştırıcı.
+
+130
+00:24:08,771 --> 00:24:13,692
+Eğer şunu sindirebilirseniz, şunu iyi öğrenirseniz bu çok kolay.
+
+131
+00:24:13,791 --> 00:24:14,851
+İnanılmaz derecede kolay.
+
+132
+00:24:15,111 --> 00:24:16,451
+Şimdi tanjantta buna bir daha döneriz.
+
+133
+00:24:16,948 --> 00:24:34,208
+Örnek var galiba. Ha, örnek yapıyoruz. Bak, demin de dedim. Defalarca söyleyeceğim. Bu konuda haklı çıkmak, ben gurur duyuyorum. Eğer ters trigonometrik bir fonksiyonla karşılaşırsanız, şimdilik türeve kadar olan kısımda, yüzüne dönün, devam edin demiştim, değil mi? Öyle dedim. Şimdi devam. Örnek şu.
+
+134
+00:24:34,948 --> 00:24:40,048
+f' x'estir kök içine 4x'in iskare, artı, artı, 2x, artı 1 bölü 3.
+
+135
+00:24:40,372 --> 00:24:45,612
+ise diyor, f fonksiyonu böyle tanımlanmışsa f'nin tanım aralığını bulmuş ya da tanım künesini bulmuş.
+
+136
+00:24:45,991 --> 00:24:49,912
+2 tane ifade olduğu için bunları ayrı ayrı değerlendirip birleştirebiliriz.
+
+137
+00:24:50,372 --> 00:24:55,652
+Tamam mı? 2 tane ifade var. Bakın bir böyle ifade var, bir böyle ifade var. Bunları ayrı ayrı değerlendirip birleştirebiliriz.
+
+138
+00:24:55,951 --> 00:25:05,731
+Mesela birinci ifade, çök işinin 4x kare olduğu için bunun tanımlı olması, anlamlı olması, ancak ve ancak 4x karenin büyü geçir sıfır olması ile nesi. Değil mi?
+
+139
+00:25:06,420 --> 00:25:19,420
+4x'in x kare 1, büyük eşit 0 olması ile nöbiliyorsunuz. Yani x kare küçük eşit 4 olmalı. Orayı çözdüğünüz zaman, x kare küçük eşit 4'ü çözdüğünüz zaman, x'in 2 artı 2 kapalı aralığında değiştiğini görüyorsunuz.
+
+140
+00:25:20,059 --> 00:25:25,720
+Kar kökçü ile 4x'in x'in 2 artı 2 kapalı aralığında değiştiğini görüyorsunuz.
+
+141
+00:25:25,780 --> 00:25:30,780
+Zaten mutlaka küçük eşit 2 yazabilirsiniz. Bu tamam. Bu kolay zaten. Şimdi şimdisi bakın.
+
+142
+00:25:31,167 --> 00:25:58,367
+İkincisini de v ile göstermişim. Arsinius x ile ilgili bir şey yapacağız. Arsinius ile ilgili bir şey yapacağız. Onu v ile gösterelim. v eşittir arsinius 2x artı 1 bölü 3 olsun diyor. Hemen düzüne dönüyorum. Görüyor musun? Bakın hemen düzüne dönüyor. Buradan ne oluyor? Sinüs v eşittir 2x artı 1 bölü 3 oluyor. Buraya anladık mı? v eşittir arsinius 2x artı 1 bölü 3 yazıyoruz. Hemen sinüs düzüne dönüyoruz. Buradan sinüs v eşittir 2x artı 1 bölü 3 oluyor.
+
+143
+00:25:58,703 --> 00:26:07,483
+Dolayısıyla siz de sinüsün eksi 1 ile artı 1 arasında R'ye aldığını biliyorsunuz. Değil mi? Bakın. Sinüsün eksi 1 ile artı 1 arasında R'ye aldığını biliyorsunuz. O zaman ne olmalıdır arkadaşlar?
+
+144
+00:26:07,483 --> 00:26:18,043
+2x artı 1 bölü 3, 2x artı 1 bölü 3, eksi 1 ile artı 1 arasında olmalıdır. Yani eksi 1 küçük eşit 2x artı 1 bölü 3, küçük eşit 1 olmalıdır.
+
+145
+00:26:18,483 --> 00:26:27,543
+paydayı, yani bütün ifadenin, eşitsizliğin bütün terimlerini 3 ile çarparsanız, x küçük eşit 2x1, küçük eşit 3 çıkar.
+
+146
+00:26:28,384 --> 00:26:39,344
+Şimdi, x'i yalnız bırakmak için, şu ikili eşitsizlikte, x'i yalnız bırakmak için, önce eşitsizliğin sol ve sağ taraflarından biri çıkarırsınız.
+
+147
+00:26:39,743 --> 00:26:44,903
+eşitliğin, eşitsizliğin, sol ve sağ taraflarına bir çıkarsınız.
+
+148
+00:26:45,344 --> 00:26:48,083
+x2, küçük eşit 2, küçük eşit 2 olur.
+
+149
+00:26:48,743 --> 00:26:49,864
+Sonra da 2'ye bölersiniz.
+
+150
+00:26:50,103 --> 00:26:53,384
+Pardon, x4, küçük eşit 2, küçük eşit 2 olur.
+
+151
+00:26:53,864 --> 00:26:55,003
+Sonra da 2'ye bölersiniz.
+
+152
+00:26:55,163 --> 00:26:58,603
+Böldüğünüz zaman x2, küçük eşit x, küçük eşit 1 olur.
+
+153
+00:26:59,523 --> 00:26:59,983
+Tamam mı?
+
+154
+00:27:00,103 --> 00:27:03,243
+Şurada x2, küçük eşit x, küçük eşit 2 var.
+
+155
+00:27:03,243 --> 00:27:06,463
+Burada x2, küçük eşit x, küçük eşit 1 var.
+
+156
+00:27:07,028 --> 00:27:13,088
+Bunları birleştirdiğiniz zaman ortak tanım kümesi, yani ikisini birden kapsayan tanım kümesi, x iki ile bir aralığı.
+
+157
+00:27:13,367 --> 00:27:19,088
+Çeki çizmiştim bir daha ister misiniz? Dün yapmıştım galiba. Nereden yapmıştım? Şuradan yapmıştım.
+
+158
+00:27:19,367 --> 00:27:20,367
+Bakın şöyle görebilirsiniz.
+
+159
+00:27:23,628 --> 00:27:24,548
+Serek miydi?
+
+160
+00:27:32,564 --> 00:27:33,244
+başıydı.
+
+161
+00:27:37,140 --> 00:28:03,039
+Tamam. Şöyle çizelim bakın. Şu kırmızı geldi. Elim de çizemiyor ama niye çizemiyor mu bilmiyorum. Önce bir doğru çiziyoruz. Çizdim doğruyu. İlkinin işaretliyorum. Şurası eksi 2. Burası da içi olsun. 2.
+
+162
+00:28:03,923 --> 00:28:08,023
+diğerini işaretliyorum. O da x2'den başlıyor. 1 de bitiyor.
+
+163
+00:28:10,963 --> 00:28:12,063
+1 de bitiyor.
+
+164
+00:28:13,423 --> 00:28:15,523
+Önce şu bozukluğu bir sileyim.
+
+165
+00:28:15,523 --> 00:28:16,824
+Kaçtama amelisi.
+
+166
+00:28:19,571 --> 00:28:42,731
+Şunu geri x2 yapayım. Şimdi arkadaşlar, bakın, şu kısım, değil mi? Şu kısım, x2 ile x2 olan, çöpçü ile 4 x x karenin tanım tüm etsi, x2 ile 1 olan da, x2 ile 1 olan da, arsınız 2x artı 1 bölü 3'ün tanım tüm etsi. Birleştirdiğiniz zaman, formatı değiştirdiğinizde, maviye gelelim.
+
+167
+00:28:42,731 --> 00:28:44,531
+Ha, şurası, bakın şurası.
+
+168
+00:28:45,875 --> 00:28:50,556
+istenilen tanımcılığı mesulü yok. Tamam mı? Böyle görebilirsiniz. Şu şekilde görebilirsiniz.
+
+169
+00:28:51,495 --> 00:28:53,935
+Devam edeyim. Bunu silmem gerekir yine.
+
+170
+00:28:58,579 --> 00:29:00,480
+mağazıda geçeyim diye hamlediyorum.
+
+171
+00:29:00,480 --> 00:29:05,380
+tanım kümesini bulmayı öğrendik. Diğerlerine de gelirse benzer şeyleri yapacağım. Şimdi ikincisi arkadaşlar,
+
+172
+00:29:06,020 --> 00:29:12,360
+artı 1x fonksiyonu. Sonra tek artı 1xbrance'dan bahsedip diğerlerine özet geçeceğim. Sebebini de orada söylerim.
+
+173
+00:29:12,360 --> 00:29:21,080
+Şimdi artı 1x fonksiyonu dolayısıyla tanjant fonksiyonu da dolayısıyla sinüs ve kosinüsten dolayı daha doğrusu birebir değildir.
+
+174
+00:29:21,280 --> 00:29:28,380
+Birebir olmadığı için onun da tersi mevcut değildir. Birebir kılmak istiyorsak onu da dar bir tanım kümesine kısıtlamamız gerekiyor.
+
+175
+00:29:28,480 --> 00:29:39,940
+Ancak, tancat fonksiyonu sinüs bölü kosinüs olarak tanımlandığından, bak, tancat fonksiyonu sinüs bölü, tancat sinüs bölü kosinüs değil miydi?
+
+176
+00:29:40,780 --> 00:29:41,060
+Evet.
+
+177
+00:29:41,580 --> 00:29:50,820
+Evet, tamam. Sinüs bölü kosinüs olarak tanımlamamız gerektiğinden, bakın, tanım kimesini açık, eksik, f' bölü 2 artı f' bölü 2 aralığına kısıtlamamız gerekiyor.
+
+178
+00:29:51,220 --> 00:29:52,980
+Neden açık olduğunu bilen var mı [öğrenci]?
+
+179
+00:29:54,228 --> 00:29:55,067
+Neden açık?
+
+180
+00:29:55,268 --> 00:29:56,028
+Bilmiyorum hocam.
+
+181
+00:29:56,048 --> 00:29:56,628
+Anlaşmalı değildi.
+
+182
+00:29:57,048 --> 00:29:57,288
+Efendim?
+
+183
+00:29:58,768 --> 00:29:59,548
+Bilmiyorum hocam.
+
+184
+00:29:59,548 --> 00:30:00,048
+Sanan şanslık gelmesin.
+
+185
+00:30:00,048 --> 00:30:00,827
+Hidayda biliyor musun?
+
+186
+00:30:03,028 --> 00:30:03,708
+Hayır.
+
+187
+00:30:04,468 --> 00:30:07,327
+[öğrenci], ekranda gördüklerimin isimlerini okuyorum şu anda.
+
+188
+00:30:08,107 --> 00:30:09,628
+[öğrenci], bir fikrin var mı?
+
+189
+00:30:12,723 --> 00:30:14,403
+Tanımsızlık oluyor sanırım.
+
+190
+00:30:14,803 --> 00:30:19,324
+Aynen, tanımsızlık oluyor. Bakın tekrar söylüyorum, sinüs bölü kosinüs yazıyorsunuz değil mi?
+
+191
+00:30:19,324 --> 00:30:25,563
+Tanjant için. Sinüs bölü kosinüs yazıyorsunuz. Payda da kosinüs var. Bak sıfır başımızın belası demiştim.
+
+192
+00:30:25,824 --> 00:30:29,104
+Nüsvet bilimlerde sıfır başımızın belası. Çok dikkatli olmamız lazım.
+
+193
+00:30:29,844 --> 00:30:33,824
+Kosinüs fonksiyonu hem eksi pi bölükiyle hem de artı pi bölükiyle sıfır.
+
+194
+00:30:34,503 --> 00:30:38,063
+Dolayısıyla ne yapamıyorsunuz? Aralığın uç noktalarını dikkate alamıyorsunuz.
+
+195
+00:30:38,112 --> 00:30:44,652
+O nedenle sinüsle kapalı olan bu aralığı tanjanta açmak zorunda. Anlaştık mı? [öğrenci], [öğrenci]?
+
+196
+00:30:45,512 --> 00:30:46,172
+Anladım hocam.
+
+197
+00:30:46,232 --> 00:30:46,752
+Evet hocam.
+
+198
+00:30:47,296 --> 00:30:51,395
+Demek ki paydaya kosinüs olduğu için aralığı açmamız gerekiyor.
+
+199
+00:30:51,576 --> 00:30:53,276
+Şimdi sekanta da benzer şeyler söyleyeceğim.
+
+200
+00:30:53,495 --> 00:31:01,816
+Şimdi aralığı o zaman arkadaşlar sinüsden dolayı paydaya kosinüsün gelmesi itibariyle açarak tanjantı böyle tanımlarsak, R sayılarda değerler alıyor değil mi?
+
+201
+00:31:01,895 --> 00:31:02,875
+Gördük çıkması R sayılarda.
+
+202
+00:31:03,296 --> 00:31:05,995
+Böyle tanımlarsak tanjant fonksiyonu birebir oluyor.
+
+203
+00:31:06,556 --> 00:31:08,115
+Birebir olunca da tersinden bahsedebilir.
+
+204
+00:31:08,336 --> 00:31:09,375
+Bak buraya yazmışım görür müsün?
+
+205
+00:31:09,435 --> 00:31:11,495
+Tanjant üzeri eksi biriyle de gösterilebilir diyor.
+
+206
+00:31:11,791 --> 00:31:15,091
+tanjant birebir olduğu için tersim mevcut oluyor ve böyle oluyor.
+
+207
+00:31:15,632 --> 00:31:18,231
+R'den buraya artanjant 1.
+
+208
+00:31:19,711 --> 00:31:22,511
+Gene bu arada öne kadar unutmayacağınız şeyi söyleyeyim.
+
+209
+00:31:22,611 --> 00:31:28,132
+Şimdi gene artanjantı da gördüğünüz zaman süreve kadar olan kısımda yüzüne döneceksiniz.
+
+210
+00:31:28,231 --> 00:31:31,951
+Yani tanjantla devam edeceksiniz. Bu konuda demin anlaştık. Bir kez daha tekrar etmiş oluyorum.
+
+211
+00:31:32,231 --> 00:31:34,531
+Grafiği bu daha sonra grafik filmle tekrar buraya dönerim.
+
+212
+00:31:34,932 --> 00:32:00,531
+Şunu da ölene kadar unutmuyoruz. Tamam mı? Yukarıdaki tanımlamaya göre diyor ya, hepsinde bu var. Şunu ölene kadar unutmuyoruz. Yani, bu, şu ikisi arkadaşlar, tanjantla R tanjant, şu bağlamda x'in re sayı olması ve y'nin f' bölü 2'de açık aralığa değişmesi anlamında birbirinin tersidir demek bu. f'ye birleşke f'ye birleşke f'ye birleşke f'ye birleşke f'ye birleşke f'ye birleşke f'ye. Tamam mı? Şunu da ölene kadar bu x'i unutuyoruz. Geldik aşağıya.
+
+213
+00:32:02,355 --> 00:32:24,615
+Şunların bulunması, yani artan janta diğer trigonometrik fonksiyonlar etki ettiği zaman çıkan sonuçlar. Gene buradan hareket ediyoruz arkadaşlar. Bakın şuradan. Gene burada da mevcut açı olan tanjant olduğu için açıyı tanjant alıyoruz. Demin asini salmıştık, burada da artan jant aldık. Tamam mı? Şimdi tanjanta göre değerlendireceğiz. Tanjantın iki üçgen tanımı neydi arkadaşlar?
+
+214
+00:32:25,135 --> 00:32:51,756
+karşılık kenarı oranı değil mi? Bakın, karşılık kenarı, komşulık kenarı oranı. Karşılık kenarı x yazarsanız, komşulık kenarı 1 yazmak zorunda. Bir daha tekrar ediyorum. Karşılık kenarı x yazdığınız zaman, komşulık kenarı 1 yazmak zorunda. Dolayısıyla bunu buluyorsunuz. Tersini yazamazsınız. Yani, süre x buraya 1 yazamazsınız, o zaman 1 bölge x olur değil mi? Tamam mı? Doğrusu bu. Buraya x yazıyorsunuz, buraya 1 yazıyorsunuz. Episel bölü teoremine göre de hipoteniz kareleri toplamının kare kökü değil mi?
+
+215
+00:32:52,127 --> 00:33:00,627
+Bakın, hipotenüs, karelerin toplamının kare çökü. Onu da buraya koyuyorsunuz. Diğerlerini bulmak kolay. Mesela sinüs ne oluyor? Karşı dikkenarın hipotenüsü oran.
+
+216
+00:33:00,788 --> 00:33:10,788
+Bak, karşı dikkenarın hipotenüsü oran. Mesela sekantı, 1 bölü geliyor ya, o biraz şey, sekant neydi arkadaşlar tanım olarak? 1 bölü.
+
+217
+00:33:10,948 --> 00:33:12,048
+1 bölü kosinüs.
+
+218
+00:33:12,968 --> 00:33:17,607
+1 bölü kosinüs, şu 1 bölü kök içine 1x kare ya, bir daha böldüğümüz zaman.
+
+219
+00:33:18,516 --> 00:33:21,516
+çök işine bir artı, çök işine bir artı, çök işine bir artı, gire geliyor filan.
+
+220
+00:33:22,155 --> 00:33:25,655
+Burada anlaşılmıyor bir şey, şunu anlarsanız arkadaşlar çök işinize yarayacak.
+
+221
+00:33:25,976 --> 00:33:32,236
+Çünkü daha sonra, integrasyon tekliflerini anlatırken, trigonometrik yerine koymalar var.
+
+222
+00:33:32,676 --> 00:33:36,016
+Sınavda karşınıza çıkma ihtimali %99, virgül milyar tane 9.
+
+223
+00:33:36,615 --> 00:33:38,816
+Trigonometrik yerine koymalarla ilgili.
+
+224
+00:33:39,571 --> 00:33:50,311
+Şunu eğer bu dikiçkenden ters trigonometrik fonksiyonları, trigonometrik fonksiyonları özleştirmeleri, etkileri hızda tutabilirsiniz şu dikiçken yardımıyla.
+
+225
+00:33:50,311 --> 00:33:56,191
+Hemen pratik olarak hızlı sonuç almak için. Yoksa demin gösterdiğim gibi anahtik çözümlerini bulabilirsiniz ama o biraz uğraştırır.
+
+226
+00:33:56,411 --> 00:34:01,551
+Bu çok inanılmaz derece salihselik hızlı sonuçlar veriyor. Onun için bunun üzerinde bir kere daha zor bir sonuç.
+
+227
+00:34:01,811 --> 00:34:04,771
+Şimdi bir tanım sübesi ödemeye devam mı var? Ha yok, bu başkaymış.
+
+228
+00:34:05,076 --> 00:34:20,115
+Eğer x farklı 2 ise, şöyle bir artanca kötüsünde 1 artı 2 istenir, eksi, arksiyonuz 1 bölü x eksi 2. Eşittir pi bölü 2. Eşitliğini doğrulayan x değerini ya da değerlerini de olabilir. Bulunuz diyor.
+
+229
+00:34:20,628 --> 00:34:29,728
+Artanca çöz içinde 1 artı x kare, eksi artı 1 bölü x eksi 2 eşitir, pi bölü 2 veren x değer veya değerlerini bulunuz diyor.
+
+230
+00:34:30,068 --> 00:34:34,208
+Tabii ben hasbeli kadar bir matematik olarak her şeyi çok dikkatli yazmaya çalışıyorum.
+
+231
+00:34:34,208 --> 00:34:38,128
+Bakın, şurada 1 bölü x eksi 2 olduğu için, görüyor musunuz? x farklı 2 yazmış.
+
+232
+00:34:38,807 --> 00:34:44,728
+Çünkü 1 bölü x eksi 2 yazdım buraya, dolayısıyla x farklı 2 yazmam lazım ki sıfıra bölme tanımlı değil, sıkıntı çıkmasın.
+
+233
+00:34:44,768 --> 00:34:51,068
+Şimdi arkadaşlar, bu özdeşliği sinüsün açılımını ya da tanjantın açılımını kullanarak yapabiliriz.
+
+234
+00:34:51,288 --> 00:34:57,688
+Tanjantın açılımı biraz uzunca olduğu için, akılda tutması da çok kolay olmadığı için sinüsün açılımından bulunmak daha kolay.
+
+235
+00:34:58,208 --> 00:35:02,507
+Şunun tamamını bak, şurayı, şuradan arşinüsü çekmişiz.
+
+236
+00:35:03,028 --> 00:35:08,648
+Arşinüs 1 bölü 2x2 eşittir, arşinüsü 1 artı 2x kare, eksi pi bölü 2 yazmışız.
+
+237
+00:35:09,076 --> 00:35:17,115
+Şuradan, bakın şu eşitlikten, arşimsi çekmişim. Sebebi ise sinüsü uygulama. Tamam mı? Sebebisi sinüsü uygulama.
+
+238
+00:35:17,416 --> 00:35:22,115
+Şimdi şu eşitliği görüyorsunuz. Bu eşitliğin her iki tarafına sinüsü uygulayalım şimdi.
+
+239
+00:35:22,935 --> 00:35:25,916
+Birinci tarafı bir söyleyelim, ikiinci tarafla ilgili genel bilgiler verelim.
+
+240
+00:35:26,536 --> 00:35:33,096
+Formülleri. Şimdi her iki tarafını uyguluyoruz. Sol tarafı uyguladık. Bakın, arşimse sinüsü uyguladığımız zaman argümanını veriyor.
+
+241
+00:35:33,096 --> 00:35:36,076
+Ölene kadar unutmayacağım. Bir daha yukarı gideyim hızlıca geri geleyim.
+
+242
+00:35:39,443 --> 00:35:43,364
+Şu, tamam mı? Şu. Bu da var da şu. Bunu ölene kadar unutmayacağız.
+
+243
+00:35:44,443 --> 00:35:50,403
+Sinüs, asinüs argümanını verir diye, yani birbirinin tersidir gerçeğini ölene kadar unutmayacağız.
+
+244
+00:35:50,963 --> 00:35:52,023
+Hemen geri gelelim buraya.
+
+245
+00:35:52,947 --> 00:35:57,507
+Şimdi, sinüsü buraya uyguladığımız zaman argümanını verdik, 1 bölü 2x2.
+
+246
+00:35:57,768 --> 00:36:02,007
+1 bölü 2x2'yi çok rahat bir şekilde yazabiliriz çünkü bize x partı 2 olduğu verilmiş.
+
+247
+00:36:02,327 --> 00:36:06,847
+Karşı taraf ise arkadaşlar, ben bir kere görün diye yazdım bakın, sinüs şuraya uygulayacağız.
+
+248
+00:36:07,167 --> 00:36:10,947
+Buradan sinüs a-b'yi varsayın.
+
+249
+00:36:11,648 --> 00:36:15,467
+Sinüs parantez içinde a-b diye düşünün.
+
+250
+00:36:15,847 --> 00:36:18,667
+Açılımı aklınızda bulunmayabilir, ezberinizde bulunmayabilir.
+
+251
+00:36:18,768 --> 00:36:19,847
+Açılımı ben bir kere söylüyorum.
+
+252
+00:36:20,275 --> 00:36:29,056
+sinüs a çarpı kosinüs b eksi kosinüs a çarpı sinüs b. Tekrar etmemiştir misiniz?
+
+253
+00:36:30,315 --> 00:36:31,355
+Evet hocam, bir şey daha.
+
+254
+00:36:31,376 --> 00:36:45,596
+Bu olması gereken bir şey. Bir daha tekrar edeyim ben. Şurayı a, bunu da b diye düşünürseniz, sinüs a çarpı kosinüs b eksi, şu eksi, kosinüs a çarpı sinüs b diye yazılıyor. Formülü bu.
+
+255
+00:36:45,936 --> 00:36:56,115
+Tamam mı? Yalnız şimdi, o zaman sinüs artanca bu, çarpı kosinüs pi bölü 2, eksi, şey eksi, kosinüs artanca bu, çarpı sinüs pi bölü 2.
+
+256
+00:36:56,676 --> 00:37:04,576
+Kosinüs pi bölü 2'nin sıfır, sinüs pi bölü 2'nin 1 olduğunu biliyoruz. Tamam mı? Kosinüs pi bölü 2'nin sıfır, sinüs pi bölü 2'nin 1 olduğunu biliyoruz.
+
+257
+00:37:05,056 --> 00:37:10,756
+Geriye şu kalıyor. Kosinüs eksisini düşünürüz. Kosinüs artanca türev içinde bir artı ekstra nedir?
+
+258
+00:37:11,251 --> 00:37:39,251
+tamam mı? Kosinüs, artı tanjant, kök şimde 1 artı x kare nedir? Bunu bilmemiz gerekiyor. Bunu da dikiçen yardımıyla yapıyoruz. Burada argümanımız, açımız daha doğrusu. Açımız bu. Şu, artı tanjant, kök şimde 1 artı x kare tamam mı? Açımız bu. Bunu bir dikiçen yardımıyla şurada var ya, böyle bir dikiçen yardımıyla elde ediyoruz. Açıyı buraya koyuyorsunuz. Karşını ona göre ayarlıyorsunuz. O zaman k çıkıyormuş. Eksisi zaten şuradan gelenekti. 1 bölü kök şimde 2 artı x kare çıkıyormuş. Şu anda hemen görebiliyoruz.
+
+259
+00:37:39,251 --> 00:37:47,792
+Dikişkeni çizip, yukarıda anlattığım şekilde işaretlemeleri yaparsanız, şu olduğunu, 1 bölü kök içinden 2 artı 2 kare olduğunu göreceksiniz.
+
+260
+00:37:48,292 --> 00:37:51,532
+Tamam, dikişken yardımıyla hemen görebilirsiniz. Ya da anlatık çözümünü görebilirsiniz.
+
+261
+00:37:51,912 --> 00:37:57,692
+Demek ki, 1 bölü x eksik eşittir, eksi 1 bölü kök içinden 2 artı 2 kare. Eşitlik varmış.
+
+262
+00:37:58,032 --> 00:38:00,891
+Şimdi işler dışarı çarpımı yapıp, sonra kare alacağım.
+
+263
+00:38:01,684 --> 00:38:20,664
+Bir daha söylüyorum, şu ikisinden, içler dışlar çarpımı yapıp, sonra kare alacağım. Bunu bir söyleyeyim, sonra çok önemli bir şey daha söyleyeceğim, tamam mı? Kare alacağım. Kare aldığımız zaman, kareyi alıp açtığımız zaman, şu oluyormuş. Şöyle açtık, bakın x kare, eksi 4x artı 4 eşitti, 2 artı x kare oluyor.
+
+264
+00:38:25,780 --> 00:38:35,600
+2xx eşittir, eksi, kök içinde 2 artı x kare oluyor ya, işler dışarı çarpımı yaptığımız zaman. 2xx eşittir, eksi, kök içinde 2 artı x kare oluyor.
+
+265
+00:38:35,900 --> 00:38:43,000
+Karelerini alıyorum el iki tarafın. 2xx'in karesi x kare, eksi 4x artı 4. Buranın karesini aldığımız zaman da 2 artı x kare.
+
+266
+00:38:43,460 --> 00:38:48,500
+Biraz sadeleştirdiğimiz zaman, eksi 4x artı 2 eşittir 0 oluyor. Buradan 2 eşittir 1 bölü küçük.
+
+267
+00:38:48,847 --> 00:38:57,987
+Cevap bu kadar. Şimdi arkadaşlar, burada bir tehlike var. Yani bu örnekte değil de genel bir tehlike var. Bunun matematikçi olarak size anlatırsak.
+
+268
+00:38:58,527 --> 00:39:11,608
+Siz arkadaşlar, bakın, ben de dur, üşenmeyip, o ne? Ses geldi. Ben üşenmeyip, şuraya yazayım. Bakın, şöyle bu. Üşenmeyip yazıyorum.
+
+269
+00:39:36,052 --> 00:39:48,112
+Gördük mü arkadaşlar? İşler dışarı çarpımı yaptığımı varsayın, 2xx'in karesi eşittir, eksi, çök içinde 2 artı x kare. Tamam mı burası? Demin söylediğim. Şimdi buradan özür dilerim, şu yok. Değil mi? Kare yok. Dur.
+
+270
+00:39:56,115 --> 00:39:56,476
+Şu.
+
+271
+00:39:58,536 --> 00:40:00,115
+Tamam mı? 2x eşittir.
+
+272
+00:40:00,376 --> 00:40:01,235
+Eksi kök işinde bu.
+
+273
+00:40:01,635 --> 00:40:03,056
+İşler dışarı çarpımı yaptığımız zaman.
+
+274
+00:40:03,456 --> 00:40:04,935
+Şimdi her iki tarafın karesini alıyoruz.
+
+275
+00:40:05,775 --> 00:40:07,175
+Tamam mı? Her iki tarafın karesini alıyoruz.
+
+276
+00:40:08,876 --> 00:40:09,355
+Alalım.
+
+277
+00:40:20,244 --> 00:40:45,284
+Böyle oluyor. Şimdi 2x karesini açtık bakın burası. x'nin karesi art olduğu için burayı açtığımız zaman bu. Yalnız arkadaşlar, genel olarak bu bir tehlikeli işlemdir. Şu işlem çok tehlikeli. Sebebini bilen var mı? Yani her iki tarafın kare kökten kurtulmak için her iki tarafın karesini alarak devam etmekte bir tehlike vardır diyorum. Bu tehlikeyi göz arbetmeden devam etmek lazım diyorum. Sebebini bilen var mı?
+
+278
+00:40:45,811 --> 00:40:47,811
+negatiflikle mi alakalı hocam?
+
+279
+00:40:47,811 --> 00:40:48,811
+efendim?
+
+280
+00:40:48,811 --> 00:40:50,811
+negatiflikle mi alakalı?
+
+281
+00:40:50,811 --> 00:40:53,811
+hocam bir kere daha tekrar eder misiniz?
+
+282
+00:40:53,811 --> 00:40:57,811
+şimdi, şuraya kadar kim konuştu? zeynet, sen mi konuştu?
+
+283
+00:40:57,811 --> 00:40:59,811
+ben dedim hocam tekrar da mısınız?
+
+284
+00:40:59,811 --> 00:41:01,811
+kim konuştu?
+
+285
+00:41:01,811 --> 00:41:02,811
+su'den
+
+286
+00:41:02,811 --> 00:41:05,771
+ha su'den, şuraya kadar atamam mı? su'den
+
+287
+00:41:06,260 --> 00:41:08,860
+Evet hocam, sorunuzu ben sadece anlamadım.
+
+288
+00:41:30,132 --> 00:41:40,952
+Tamam mı? Kare kökten işini çözebilmek için kare kökten kurtulmak adına kare alma işlemi bazen tehlikeli olabilir. Bunun sebebini biliyor musunuz?
+
+289
+00:41:41,211 --> 00:41:43,132
+Şey, kök kaybı olmuyor mu hocam?
+
+290
+00:41:43,271 --> 00:41:47,832
+Evet, kök kaybı oluyor. Kök kaybı olması bir tehlike yaratabilir. Şimdi söylüyorum, bakın.
+
+291
+00:41:48,275 --> 00:42:12,536
+Şurada kare kökçü ile 2 artı x kare var ya, bu her x için tanımlı değil mi? Şurada herhangi bir problem yok. Her x için tanımlı. Siz kare kökü kaldırdığınız zaman, yani kare aldığınızda kare kök kalkıyor ya, dolayısıyla burası bağımsız hale geliyor. Mesela şurayı 2x x kare diye düşünseydik, bakın 2x x kare diye düşünseydik, bu nasıl, ne zaman tanımlı olacaktı? 2x x kare diye düşünsek.
+
+292
+00:42:12,980 --> 00:42:36,860
+x eksi kök 2 artı kök 2 aralığında olduğu zaman tanımlı olacaktı değil mi? Şurası eksi olsaydı. Ama siz kareyi kaldırdığınız zaman, şey kare kökü kaldırdığınız zaman burası 2x'i x kare olacak ve her iş için tanımlı olacaktı. Büyük bir sıkıntı çıkabilirdi. Bunu aklınızın bir köşesine yazın. Maksimum minimumu anlatırken orada bir sıkıntı yaşandığını ve nasıl sıkıntıyı besraf ettiğimi size göstereceğim.
+
+293
+00:42:37,396 --> 00:42:46,195
+Yani şunu demek istiyorum. Kırış herifler var ya, eskiyi unutmamak lazım. Önümde bakalım derken, eskiyi de her zaman unutmamak lazım.
+
+294
+00:42:46,195 --> 00:42:56,956
+Devam etmemiz lazım. Eskiyi unutarak önümüze bakamayız. Biz şimdi karakökten kurtulmak için kare alırken önümüze bakıyoruz ama geri dönüp karakökeyi de düşünerek devam etmek zorundayız.
+
+295
+00:42:57,016 --> 00:43:04,115
+Bunu unutmayalım. Burada bir sıkıntı yok. Ama genel olarak karakökten kurtulmak için kare aldığımız zaman sıkıntı çıkabilir.
+
+296
+00:43:04,788 --> 00:43:10,408
+özel işlemleri yapmak gerekebilir. Geriye dönüp bakmak gerekebilir. Mutlaka bunu yapacağız.
+
+297
+00:43:10,807 --> 00:43:16,307
+Maximum minimumda çok önemli bir örnek var. Orada bu konuya tekrar değinip bazı bilgileri vereceğim. Tamam mı?
+
+298
+00:43:16,387 --> 00:43:19,108
+Şimdilik burayı silip devam edeyim. Silmezsek aşağı geliyordu.
+
+299
+00:43:21,972 --> 00:43:31,452
+Evet, devam ediyoruz. Bir tane de buraya problem koymuşum. Sistemi yüklediğimde, size söylerim zaten ben, alayış sayfamı yüklediğimde biraz daha kısaltırım.
+
+300
+00:43:31,572 --> 00:43:41,872
+Alayış sayfamı yüklerken sizin çok sayfa sayısı olmasın sizin için diye. Bazı hikaye kısımlarını kısaltırım. Kısa kısa özet şekilde yüklerim. Oradan indirdiğinizde bunu da çözer.
+
+301
+00:43:42,812 --> 00:43:46,152
+Aynı yukarıdaki gibi çözüm. Cevabını vermişim. Bakın iki tane değer olacak.
+
+302
+00:43:47,155 --> 00:44:03,416
+Evet, şimdi artı 3x'lik fonksiyonu var. Demin konuşmuştuk, artı sekant 3x fonksiyonu var. Sekant 1 bölü kosinüs diye tanımlı değil mi arkadaşlar? Sekant 1 bölü kosinüs diye tanımlı. Kosinüs fonksiyonunun tersinin mevcut olması için kosinüsün 0p aralığında değerler alması gerekiyor demiş.
+
+303
+00:44:03,744 --> 00:44:19,864
+Bir daha söylüyorum, kosinüsün 0p kapalı aranda değerler alırsa, kosinüs fonksiyonu birebir olur, dolayısıyla ters olur demiştim. Şimdi 1 bölüm kosinüsten bahsedildi. O zaman bakın, sekant değil mi? 0p'nin içinde ne var arkadaşlar? Kapalı aralık 0p'nin içinde pi bölü 2 var.
+
+304
+00:44:20,244 --> 00:44:29,764
+pi bölü 2'de de kosinüs 0. Dolayısıyla sekant da 1 bölü kosinüs olduğu için pi bölü 2 sıkıntıya çıkarıyor değil mi? O sıkıntıyı ortadan kaldırmak için bakın, görüyor musunuz?
+
+305
+00:44:29,784 --> 00:44:39,423
+pi bölü 2'yi açık aralığa alıyor. Yani bunu kapalar olarak bazı kitaplarda yazmışlar ama üzülerek söylüyorum, gözden kaçmış olduğunu düşünmemiz lazım değil mi?
+
+306
+00:44:39,663 --> 00:44:47,443
+Bilmiyor olamazlar herhalde kitaplar yazanlar. Gözden kaçmış olması lazım. Burayı 0 pi diye yazamazsınız çünkü sekant pi bölü 2'de tanımlı değil.
+
+307
+00:44:48,244 --> 00:44:54,024
+pi bölü 2'yi dışarı çıkartmanız gerekiyor. Yani aralığın dışına atmanız gerekiyor. Aralığın dışına atmanın bir yolu bu.
+
+308
+00:44:54,420 --> 00:45:18,699
+0 pi bölü 2, birleşim pi bölü 2 pi diye yazmak. Ya da 0 pi kapalı aralığı, eksi küme içinde pi bölü 2 diye yazabilirsiniz ama o güzel görünmez. Güzel görünmediği için onu yazmıyorum tamam mı? Şimdi aralığı böyle yazdığınız zaman arkadaşlar, sekans fonksiyonunun tanım kümesini böyle yaptığınız zaman, görüntü kümesi de eksi sonsuz sonsuz değil. Bakın eksi bir bir aralığı da işin içine giriyor. Şu şekilde o ulaşıyor.
+
+309
+00:45:19,092 --> 00:45:36,292
+Görüntü kümesi de bu şekilde oluşuyor. Sekansı görüntü kümesiyle birlikte böyle tanımladığınız zaman artık bu birebir bir örtenlik şarjının işini birden sağlıyor. Dolayısıyla tersi mevcut oluyor. Tersi de böyle gösteriyor. Arkadaşlar, Matematik 1'de genel olarak art sekans fonksiyonunu çok fazla kullanmıyor.
+
+310
+00:45:36,639 --> 00:45:37,739
+Bir daha tekrar ediyorum.
+
+311
+00:45:38,239 --> 00:45:40,960
+Artegrad fonksiyonunu çok fazla kullanmıyoruz.
+
+312
+00:45:41,380 --> 00:45:43,819
+Daha çok, türevde de çok fazla kullanmayacağız.
+
+313
+00:45:43,899 --> 00:45:46,180
+Ben yine üzerinde kısmına az bir şey duracağım ama.
+
+314
+00:45:46,599 --> 00:45:51,639
+İntegralde bazı integralleri hesaplarken, bazı integralleri hesaplarken, kare köşe içinde...
+
+315
+00:45:52,788 --> 00:46:17,268
+Karaköp içinde ifadeler geliyor. x kare eksi 1 gibi mesela. Ya da x kare eksi 2x gibi. İntegrali görmüş olanları hatırlayacaktır. Bazı ifadeler geliyor. Dolayısıyla sekant dönüşüme ihtiyaç duyuyoruz. Orada art sekanta da ihtiyaç duyulmuş oluyoruz. Az da olsa art sekantından kullanımı söz konusu olabiliyor. Onun için üzerinde biraz durmakta fayda var burada. Oraları anlatırken gene buraya dönüp bunları söyleyebilirim.
+
+316
+00:46:17,619 --> 00:46:20,359
+Gene şunu da ölene kadar unutmayın.
+
+317
+00:46:21,359 --> 00:46:27,340
+Sekant, askant birbirinin tersidir şu anlamda, şu anlamda birbirinin tersidir olayını unutmayalım.
+
+318
+00:46:27,956 --> 00:46:38,416
+ilk üçgen yardımıyla da bu r sekanta diğer 5-6 hatta kendisinde katarsak sekantı da trigonometrik fonksiyonunun etkisini de bulabiliriz.
+
+319
+00:46:38,775 --> 00:46:45,115
+Burada hedef fonksiyonumuz r sekant x olduğu için açı olarak r sekantı buraya yazıyorsunuz.
+
+320
+00:46:45,115 --> 00:46:55,956
+Sekant 1 bölü kosinüsten dolayı kosinüs komşu dikenarın hipotenüse oranı ya, sekant hipotenüsün komşu dikenarına...
+
+321
+00:46:55,956 --> 00:47:05,556
+dikenar oranı. Dolayısıyla buraya x'i, buraya 1'i koyuyorsunuz. Buraya da Pythagot teoremi kurarak ne gelecekse, yani x kare artı 2x, onu koyuyorsunuz. Bu patır patır çıkıyor.
+
+322
+00:47:06,056 --> 00:47:13,456
+Yani şunu anladığınız zaman çok kolay. 1-2 tane yapınca anlatırsınız. Şunu anladığınız zaman bunları yazmak, yani 1-2 saniyelik bir şey.
+
+323
+00:47:16,047 --> 00:47:22,487
+Test trigonometrik fonksiyonlarla ilgili söyleyeceklerim bu kadar arkadaşlar. Demin defalarca söylediğimi bir kez daha söylüyorum.
+
+324
+00:47:22,887 --> 00:47:32,887
+Türeve kadar olan kısımda test trigonometrik bir fonksiyonla karşılaşır isek yüzüne dönerek, yani normal trigonometrik fonksiyonlara dönerek işlem yapacağız.
+
+325
+00:47:33,887 --> 00:47:39,587
+Bir daha tekrar ediyorum. Test trigonometrik fonksiyonlara karşılaşırsak yüzüne dönerek işlem yapacağız.
+
+326
+00:47:39,847 --> 00:47:42,788
+Bunu çok sık olarak tekrar edeceğim zaten ihtiyacımız olduğu için.
+
+327
+00:47:43,476 --> 00:47:46,655
+Tesliyonik fonksiyonları da bir tesisten sonra gelelim.
+
+328
+00:47:46,996 --> 00:47:48,476
+Üstelik de logartik fonksiyonlara.
+
+329
+00:47:48,756 --> 00:47:52,715
+Ondan sonra şey var, üstelik de logartik fonksiyonlarının devamında.
+
+330
+00:47:53,036 --> 00:47:53,135
+Tabii.
+
+331
+00:47:54,003 --> 00:47:59,023
+hiperbölük ve ters hiperbölük fonksiyonlar var. Onlara çok hızlı değiniriz zaten. Çok fazla kullanmıyoruz.
+
+332
+00:47:59,383 --> 00:48:03,943
+Pratikte de çok fazla karşımıza o haliyle çıkmıyor. Hızlıca değinip geçeriz.
+
+333
+00:48:03,943 --> 00:48:15,603
+Şimdi şunlar liseden bildiği şeyler var arkadaşlar. Üstler de çöpler. Mesela ne tane a'yı kendisiyle çarparsanız, ne tane a'yı kendisiyle çarparsanız, sembolik olarak a üzeri ne ile gösteriliriz.
+
+334
+00:48:16,083 --> 00:48:26,083
+n tane a sayısının, b sayının kemsili çarpımı sembolik olarak a üzeri n ile gösteriyor. Bu bir anlaşma. Matematik anlaşma. Ya da konsensüs diye düşünebiliriz.
+
+335
+00:48:26,683 --> 00:48:32,683
+Şu da özel bir durum arkadaşlar. Bu bir anlaşma. Tamam mı? Bunun adına anlaşma diyoruz.
+
+336
+00:48:33,023 --> 00:48:42,883
+a üzeri sıfırın a ne olursa olsun bir olduğunu kabul ediyoruz. O zaman şu soru akla gelecektir değil mi? Peki a sıfır olursa ne olacak? [öğrenci] aklına geldi mi? [öğrenci]?
+
+337
+00:48:44,500 --> 00:48:48,440
+Hiçbir sayı olmadığı için direkt sayıda doğada bulunan bir sayısı var.
+
+338
+00:48:48,519 --> 00:48:58,540
+Yok yok, kaydet yok. Bak şimdi hangi bir AR sayısı için ne tane AR sayısının kendisiyle çarpımını A üzeri ne ile gösteriyoruz dedim ya, sembolik olarak.
+
+339
+00:48:59,000 --> 00:49:07,920
+Peki, neyi doğa sayı olarak alıp, bak pozitif bir tam sayılıyor ya, neyi sıfır olarak alıp A üzeri sıfır yazarsak, bu bir olur.
+
+340
+00:49:08,239 --> 00:49:10,759
+Bunun adına bir anlaşma diyorum.
+
+341
+00:49:11,439 --> 00:49:13,499
+Buna anlaşma yaptık diyorum.
+
+342
+00:49:13,859 --> 00:49:15,039
+O zaman şu sorakla geliyor.
+
+343
+00:49:15,439 --> 00:49:19,719
+A herhangi bir sayı olduğu için, A eşittir sıfır olursa şurası ne oluyor?
+
+344
+00:49:20,239 --> 00:49:21,499
+Görtü, şurası?
+
+345
+00:49:21,639 --> 00:49:22,799
+Tanımsız olmaz mı?
+
+346
+00:49:23,159 --> 00:49:24,419
+Belirsiz değil mi hocam?
+
+347
+00:49:25,539 --> 00:49:27,379
+Hayır, limit ve belirsiz.
+
+348
+00:49:27,839 --> 00:49:28,919
+Bunun adına tanımsız demiyoruz.
+
+349
+00:49:29,679 --> 00:49:31,619
+Sayının sıfıra bölümü anlamsızdır.
+
+350
+00:49:32,000 --> 00:49:41,540
+0 bölü 0 anlamsızdır. Tamam mı? 0 bölü. Limitte onlara bir anlam vereceğiz. Limite geldiğim zaman oradan bahsedeceğim kısmı sorusu hafıya.
+
+351
+00:49:42,140 --> 00:49:50,940
+A üzeri 0'a 1 diyoruz. Ben de diyorum ki A 0 olsa ne olacak diyorum. İşte o zaman şunu söylemiş oluyorum. Bakın. A 0 olsa da bunu 1 alacağız.
+
+352
+00:49:51,940 --> 00:49:59,840
+Yani 0 üzeri 0 limit gördüğünüz belirsiz gerçeği burada karşımızda yok diyorum. Tamam mı?
+
+353
+00:50:00,000 --> 00:50:04,100
+Bu bir anlaşma. Burada hemfikir mi? Anlaştık mı?
+
+354
+00:50:05,260 --> 00:50:06,220
+Anlaştık hocam.
+
+355
+00:50:06,300 --> 00:50:17,600
+Tamam. AR sayısı için A üzeri sıfırı 1 kabul edeceğiz. Böyle kabul edeceğiz. Eğer bunu yapmaz isek, bunu yapmaz isek o zaman üstel fonksiyonları tanımlayamayız.
+
+356
+00:50:17,860 --> 00:50:23,440
+Üstel fonksiyonları tanımlayamayınca da logaritma yük fonksiyonları tanımlayamayız. Dolayısıyla bir fonksiyon olmaz elimizde.
+
+357
+00:50:23,635 --> 00:50:32,175
+Bu anlaşma ile birlikte tanımıyoruz. Şimdi bunu 1 bölü yazacağım için bakın burada çok dikkatli bir şekilde A'yı sıfırdan farklı kabul ediyorum.
+
+358
+00:50:32,516 --> 00:50:38,795
+A'yı sıfırdan farklı bir R sayı kabul edersin. A üzeri eksimeyi 1 bölü AN diye yazıyor. 1 bölü AN diye yazıyor.
+
+359
+00:50:38,943 --> 00:50:41,983
+Bu ikisi artık bizim her şeyimizi yapmamıza izin verecek.
+
+360
+00:50:42,483 --> 00:50:47,063
+A herhangi bir R sayı, eğer A üzeri eksi ne olursa, mesela A üzeri eksi bir.
+
+361
+00:50:47,264 --> 00:50:50,204
+Bir böyle A diye yazacağız ya, mecburen A'nın sıfırdan farklı olmasını aldım.
+
+362
+00:50:50,463 --> 00:50:52,724
+Bak bunların üzerinde çok diliyorum arkadaşlar.
+
+363
+00:50:53,364 --> 00:50:53,923
+Çok önemli.
+
+364
+00:50:54,304 --> 00:50:58,384
+Yani paydaya yazdığınız şeyin sıfırdan farklı olduğunu söylemek ya da bilmek zorundasınız.
+
+365
+00:50:58,384 --> 00:51:03,644
+Ben başa koyarak tersiyle sıkıntıyı, problemi ortadan kaldırarak devam ediyorum.
+
+366
+00:51:04,003 --> 00:51:04,664
+Şimdi arkadaşlar.
+
+367
+00:51:05,460 --> 00:51:19,940
+Tabii ki her ne kadar buraya kadar, buraya kadar bakın yazarınıza kadar olan kısmında A herhangi bir R sayı ise de bundan sonra yapacağımız işlemlerde logaritmaya da geçerken A'nın negatif olması bizi sıkıntıya sokacak.
+
+368
+00:51:20,259 --> 00:51:28,339
+Tırat bir korona söyleyelim biraz sonra gelecek. Siz biliyorsunuz ki ve ölene kadar unutmayacaksınız ki sadece pozitif sayıların logaritmasını anlıyor değil mi?
+
+369
+00:51:28,980 --> 00:51:31,399
+Sadece pozitif sayıların logaritmasını anlıyor.
+
+370
+00:51:31,568 --> 00:51:57,068
+Dolayısıyla, ondan sonraki yapacağımız işlemlerde A'yı, tamam mı? A'yı, şimdilik negatif olmayan bir sayı, biraz sonra kesip pozitif alırlar. Tamam mı? Kesip pozitif alırlar. A'yı pozitif alırlar, devam edelim. Mesela şöyle sıkıntılar da var, onu da söyleyeyim de. Mesela, x'i 1'in karesi ne? x'i 1'in karesi? 1. Artı 1. x'i 1 üzeri 1 bölü 3 ne? x'i 1 üzeri 1 bölü 3. x'i 1.
+
+371
+00:51:57,619 --> 00:52:00,300
+Peki, x 1 üzeri 1 bölü 4?
+
+372
+00:52:01,280 --> 00:52:01,880
+Artı 1.
+
+373
+00:52:02,420 --> 00:52:03,800
+Yok, yok.
+
+374
+00:52:04,860 --> 00:52:07,059
+Negatif sayıların kara kökü tanımlanmamıştır, değil mi?
+
+375
+00:52:07,880 --> 00:52:08,800
+Tanımsız mı oluyor?
+
+376
+00:52:10,019 --> 00:52:13,039
+Evet, negatif sayıların kara kökü tanımlanmamıştır.
+
+377
+00:52:13,559 --> 00:52:16,180
+Bak, x 1 üzeri 1 bölü 4 dedim.
+
+378
+00:52:17,780 --> 00:52:21,099
+x 1 üzeri 1 bölü 4.
+
+379
+00:52:21,619 --> 00:52:23,280
+Yani, köküm kökü, değil mi?
+
+380
+00:52:23,731 --> 00:52:27,311
+Evet, ama tanımlanmamıştır ki.
+
+381
+00:52:27,572 --> 00:52:29,451
+x kare artı 2x, f'nin için de x olmadığı için.
+
+382
+00:52:30,052 --> 00:52:37,552
+Değil mi? Dolayısıyla eksi sayılarla devam etmek, kuvvetlerde eksi sayılarla devam etmek bizi sıkıntıya sokacak.
+
+383
+00:52:37,552 --> 00:52:43,572
+Bu sıkıntının önüne geçmek için bundan sonra, şimdilik negatif olmayan diyorum, biraz sonra pozitif diyeceğim. Tamam mı?
+
+384
+00:52:43,831 --> 00:52:46,511
+Şimdilik negatif olmayan artık, biraz sonra pozitif diyeceğim.
+
+385
+00:52:46,831 --> 00:52:51,711
+Ayrıca negatif olmayan bir sayı ise, arkadaşlar bizim için şu o kadar önemli kişi o.
+
+386
+00:52:51,731 --> 00:53:11,751
+O kadar önemli ki, bunu bilmiyoruz demeyin. Herkes biliyor, eminim. Herkesin bildiğinden. Şu ikisini. Herkesin bildiğinden eminim ama pratikte kullanamıyoruz. Ben kullanıyorum da siz kullanamıyorsunuz aslında. Pratikte bunu kullanamıyorsunuz. Pratikte bunu kullanamıyorsanız bilmiyorsunuz demektir. Yani hem bilip hem kullanmak diye bir şey söz konusu olamaz.
+
+387
+00:53:12,079 --> 00:53:17,259
+süre bahsi geldiğinde bunu nasıl kullandığının ne kadar önemli bir şey olduğunu bir daha söyleyeceğim.
+
+388
+00:53:17,460 --> 00:53:19,480
+Süre konusu geldiğinde bir daha söyleyeceğim.
+
+389
+00:53:19,779 --> 00:53:21,679
+Şimdi böyle olduğunu aklınıza tutun yeter.
+
+390
+00:53:22,000 --> 00:53:23,659
+a'yı büyük sıfır almışım çünkü bölme yapıyorum.
+
+391
+00:53:23,779 --> 00:53:26,900
+Bakın ikinci de bölme yaptığım için a'yı büyük sıfır almışım.
+
+392
+00:53:27,119 --> 00:53:28,880
+Şurada a'nın sıfırdan büyük olması gerekir.
+
+393
+00:53:29,980 --> 00:53:32,119
+Şimdi geldik a'yı zx fonksiyonuna.
+
+394
+00:53:32,659 --> 00:53:36,699
+Arkadaşlar, a üzeri x, a tabanlı üstel fonksiyon demek, tamam mı?
+
+395
+00:53:36,859 --> 00:53:39,639
+a üzeri x, a tabanlı üstel fonksiyon demek.
+
+396
+00:53:40,079 --> 00:53:41,799
+Her x d sayısı için tanımlı.
+
+397
+00:53:42,079 --> 00:53:43,499
+Ne zaman? a pozitif de.
+
+398
+00:53:43,499 --> 00:53:46,439
+Demin söyledim ya, ekşi 1 üzeri 1 bölü 2 tanımlı değil diye.
+
+399
+00:53:46,519 --> 00:53:49,499
+Bakın, a'yı pozitif kabul ederseniz, üstel fonksiyon tanımlı.
+
+400
+00:53:49,719 --> 00:53:54,459
+Dolayısıyla, işte amacımıza uymak için, yani ileriye doğru gidebilmek için ne yapıyoruz?
+
+401
+00:53:54,815 --> 00:54:03,635
+Yani, düşünün ya, bir karlı yolda, kar var gidemiyorsunuz, ne yapacaksınız? Önünüzü sürekli açacaksınız. En basit örneği değil mi? Önünüzü açarak yürümek zorundasınız.
+
+402
+00:54:03,728 --> 00:54:14,468
+a herhangi bir reye sayırken devam edemiyorsunuz. Önümüzün açılması için üstel fonksiyonun, a-z-x fonksiyonunun, dolayısıyla logaritma fonksiyonunun tanımlanabilmesi için a'nın pozisyonu olması gerekiyor.
+
+403
+00:54:14,648 --> 00:54:18,968
+a aldım. Başka sebepler de söyledim. a tabanlı üstel fonksiyon bu oluyor arkadaşlar.
+
+404
+00:54:19,248 --> 00:54:23,648
+Tamam, şöyle bir grafik girişim oraya koydum. Daha sonra bu grafiklerle ilgili genel bilgiler vereceğim.
+
+405
+00:54:24,088 --> 00:54:29,388
+a-z-x, a tabanlı üstel fonksiyon diye okunuyor. Şimdi a-z-x ile ilgili bazı şeyler söyleyeceğim. Tamam mı?
+
+406
+00:54:29,388 --> 00:54:31,728
+Altı hata. Bunu muhtemelen liseyden biliyorsunuz.
+
+407
+00:54:31,728 --> 00:54:39,168
+ben hızlıca bir tekrar etmiş olayım. Mesela, tanım kümesi R'dir değil mi? Delikliği için tanımlıdır bu. A pozitif olunca.
+
+408
+00:54:39,468 --> 00:54:49,148
+Görüntü kümesi arkadaşlar, iç yerine hangi sayıyı koyarsanız koyun, negatif ya da pozitif, hangi sayıyı koyarsanız koyun, üstel fonksiyon daima pozitif.
+
+409
+00:54:50,148 --> 00:54:58,928
+İç yerine hangi sayıyı koyarsanız koyun, üstel fonksiyon daima pozitif. Dolayısıyla, görüntü kümesi R artıdır.
+
+410
+00:54:59,411 --> 00:55:08,891
+Tanım kümesi, real sayılar kümesi, görüntü kümesi, pozitif real sayılar kümesidir. Bunu unutmayacağız. Biraz sonra bir daha tekrar edeceğiz.
+
+411
+00:55:08,891 --> 00:55:21,492
+Şimdi arkadaşlar, a pozitif olduğu için a büyük sıfır diye yazıyoruz. Şuraya ben bir daha yazayım, dursun. Ekranın şurasına yazayım, dursun. Şuraya.
+
+412
+00:55:25,588 --> 00:55:29,048
+ya şey, çiftliyor, mouse çiftliyor, yazamıyor.
+
+413
+00:55:30,068 --> 00:55:32,828
+Hocam, metin kutusu açarsanız daha rahat olabilir.
+
+414
+00:55:33,188 --> 00:55:34,228
+Hani metin kutusu nerede?
+
+415
+00:55:35,088 --> 00:55:38,208
+Anotate'den gene text yazan yer var.
+
+416
+00:55:39,908 --> 00:55:44,168
+Benimkinde şey gözlüyor. Spotlight gözüküyor.
+
+417
+00:55:45,288 --> 00:55:48,688
+Hocam, Draw'ın yanında text var, şöyle açıyoruz.
+
+418
+00:55:49,008 --> 00:55:51,148
+O buradan yazıyoruz. Size geldi mi bu şey?
+
+419
+00:55:51,956 --> 00:55:56,196
+Ben de şey görüyorum, bak, mouse, select, text şu mu?
+
+420
+00:55:56,736 --> 00:55:59,796
+Aynen, texte tıklayıp hocam oradan yazı yazabilirsiniz.
+
+421
+00:56:00,016 --> 00:56:01,576
+Texte tıklayıp bir şey yazamıyorum şu anda.
+
+422
+00:56:02,176 --> 00:56:05,916
+Açmanız lazım, mouse'u basılı tutup biraz genişletme, aynen.
+
+423
+00:56:06,516 --> 00:56:08,816
+Bravo açıyorum galiba. Tamam, açtım, dur bakayım.
+
+424
+00:56:10,456 --> 00:56:11,056
+Yok hocam.
+
+425
+00:56:12,056 --> 00:56:13,016
+Açtım, iyi, bak.
+
+426
+00:56:15,716 --> 00:56:16,115
+İyi değil mi?
+
+427
+00:56:17,172 --> 00:56:17,891
+İyi hocam.
+
+428
+00:56:18,491 --> 00:56:20,331
+Tamam bir bakayım, geri ileri gidiyor mu bu?
+
+429
+00:56:22,811 --> 00:56:24,991
+Neyse tamam, bu böyle kalktın şimdilik de.
+
+430
+00:56:25,211 --> 00:56:25,871
+A büyük sıfır.
+
+431
+00:56:26,351 --> 00:56:27,231
+Tamam mı? A büyük sıfır.
+
+432
+00:56:27,531 --> 00:56:30,351
+Dolayısıyla A büyük sıfır demek arkadaşlar, ne demek A?
+
+433
+00:56:30,771 --> 00:56:31,291
+Ne demek A?
+
+434
+00:56:31,851 --> 00:56:32,511
+Büyük sıfır demek.
+
+435
+00:56:33,112 --> 00:56:33,731
+Bak şöyle demek.
+
+436
+00:56:34,991 --> 00:56:36,311
+Pozitif demek de bir de şu demek.
+
+437
+00:56:38,391 --> 00:56:39,371
+Sıfır, değil mi?
+
+438
+00:56:41,112 --> 00:56:41,571
+Küçük.
+
+439
+00:56:43,411 --> 00:56:43,891
+A.
+
+440
+00:56:47,059 --> 00:56:50,779
+küçük, sonsuz demek.
+
+441
+00:56:51,579 --> 00:56:55,679
+Tamam mı? Yani a pozitif demeyi şöyle de yorumlayabiliriz.
+
+442
+00:56:56,420 --> 00:56:59,039
+Sonsuz bir sayı temsil etmediği zaman hiçbir zaman sonsu eşit değil.
+
+443
+00:56:59,299 --> 00:57:01,599
+Sıfır eşit olabileceği yerler olabilir. Burada değil de.
+
+444
+00:57:01,900 --> 00:57:06,519
+Şimdi arkadaşlar, şöyle baktığım zaman bakın, a aslında nasıl geliyor?
+
+445
+00:57:06,659 --> 00:57:09,279
+Bir daha yazayım, üşenmeyeceğim. Bir daha yazacağım şunlardan.
+
+446
+00:57:10,019 --> 00:57:13,739
+Bakın, sıfır, küçük,
+
+447
+00:57:15,284 --> 00:57:29,344
+a küçük, 1 ve 1 küçük, a küçük, sonsuz diye yazdığımızı düşünelim.
+
+448
+00:57:31,083 --> 00:57:34,384
+Şunu yani sıfır küçük, a küçük, sonsuz şöyle yazabilirim değil mi?
+
+449
+00:57:34,643 --> 00:57:38,744
+Şöyle. Sıfır küçük, a küçük, 1. Bir küçük, a küçük, sonsuz diye yazabilirim.
+
+450
+00:57:38,923 --> 00:57:41,703
+Şimdi bir arkadaşınız diyebilir ki, neden eşit almadım?
+
+451
+00:57:42,643 --> 00:57:44,244
+Diyor musunuz? Deyin, deyin.
+
+452
+00:57:44,523 --> 00:57:46,804
+Neden eşit almadık hocam?
+
+453
+00:57:47,183 --> 00:57:49,963
+E koyalım şuraya. Hiçbir sebebi yok. Ben yazmamışım.
+
+454
+00:57:50,503 --> 00:57:52,063
+Hiçbir sebebi yok. Ben yazmamışım.
+
+455
+00:57:52,324 --> 00:57:55,703
+Birine eşitliği koyacağız. Şuraya da koyabiliriz, buraya da koyabiliriz.
+
+456
+00:57:56,423 --> 00:57:58,384
+Tamam mı? Şuraya da koyabiliriz, buraya da koyabiliriz.
+
+457
+00:57:58,683 --> 00:58:01,223
+Neden şuraya koymayıp buraya koymadığını söyle.
+
+458
+00:58:01,695 --> 00:58:10,036
+Şimdi arkadaşlar, şöyle yazabiliriz demek ki şunu, 0 küçük, a küçük, sonsuzu, bu ikili olarak, birleşim yazacaktım mı? Bu şekilde yazabiliriz.
+
+459
+00:58:10,096 --> 00:58:17,415
+Şimdi, a bakın, birden büyük olduğu zaman, dikkat edin eşitliği yok. Ben özellikle buraya eşitliği koydum, burada gördüğüm için, tamam mı? Şöyle eşitliği yok.
+
+460
+00:58:17,755 --> 00:58:23,775
+a büyük bir olduğu zaman arkadaşlar, x1 küçük x2 iken, fx1 küçük f2 oluyor, tamam mı? Bu neyin tanımaydı şu?
+
+461
+00:58:24,159 --> 00:58:49,639
+artan. Artanlığın, teşekkür ederim [öğrenci]. Artanlığın tanımı. Dolayısıyla A1'in olduğu zaman, süreklik fonksiyon, ajelik fonksiyonu artan. Tamam mı? Şunu, aşağıda geçsin, bir şey olmaz. Durun, aşağıda geçsin. Aşağıda görünsün, bir şey olmaz. Bakın, A0'la 1'in arasında olduğu zaman arkadaşlar, A0'la 1'in arasında olduğu zaman, dikkat edin, sıra bozuldu. Ne oldu o zaman [öğrenci]? Azalan.
+
+462
+00:58:49,639 --> 00:58:51,000
+Azalan oldu.
+
+463
+00:58:51,248 --> 00:59:05,248
+Demek ki A, B'den büyük olunca üstel fonksiyon artan, A sıfırla 1 olsun da olunca üstel fonksiyon azalanmış. Peki, soru ne? A eşittir 1 olsun. Değil mi soru o. Söyleyin A eşittir 1 olsa ne oluyor arkadaşlar?
+
+464
+00:59:05,567 --> 00:59:07,288
+A şurada A eşittir 1 koyun ne oluyor? Artan oluyor.
+
+465
+00:59:08,007 --> 00:59:10,047
+Yok yok. Şurada A eşittir 1 koyun ne oluyor?
+
+466
+00:59:12,007 --> 00:59:14,547
+1 üzeri x ne? x ne olursa olsun?
+
+467
+00:59:15,127 --> 00:59:15,467
+1.
+
+468
+00:59:15,967 --> 00:59:16,547
+Sağ ol.
+
+469
+00:59:16,547 --> 00:59:17,127
+Fonksiyon.
+
+470
+00:59:17,523 --> 00:59:31,623
+1 yani, 1 değil mi? 1 üzeri 1 olduğu için onu değerlendirmenin bir anlamı yok ki sabit fonksiyonu değil mi? Sabit fonksiyonun hem artan hem azalan gözüyle bakabilir miyiz? Zaten şuraya eşittiği, şuraya ya da buraya eşittiği koymaz, sakat oluyor. Sabit fonksiyona hem artan hem azalan diyebilirsin.
+
+471
+00:59:31,891 --> 00:59:35,371
+O maksimumdan ilgili sabit fonksiyonumuz gibi bir şey söyleyeceğim daha.
+
+472
+00:59:35,731 --> 00:59:36,091
+Tamam mı?
+
+473
+00:59:36,271 --> 00:59:37,231
+Eşitliğe dikkat almıyoruz.
+
+474
+00:59:37,311 --> 00:59:39,652
+Çünkü A eşitliği 1 olduğu zaman sabit fonksiyon var.
+
+475
+00:59:39,731 --> 00:59:40,451
+1 var elimizde.
+
+476
+00:59:40,511 --> 00:59:41,311
+Onun dikkat almıyor.
+
+477
+00:59:41,771 --> 00:59:42,551
+Sonra alacağız ama.
+
+478
+00:59:42,911 --> 00:59:43,251
+Tamam mı?
+
+479
+00:59:43,371 --> 00:59:43,911
+Bunu da anladık.
+
+480
+00:59:43,971 --> 00:59:47,771
+Demek ki A 1'den büyük olduğu zaman üstelik fonksiyon artan.
+
+481
+00:59:49,051 --> 00:59:49,311
+A.
+
+482
+00:59:50,900 --> 00:59:59,220
+sıfırla bir arasındaki olduğu zaman üstel fonksiyon azalan. Çok önemli bir şey söyleyeceğim biraz sonra. Eğer aşağıda varsa zaten söylerim. Yoksa ben kafadan söyleyeyim.
+
+483
+00:59:59,340 --> 01:00:05,900
+Aişe buraya yazmışım bak. Bir sabit fonksiyon dedi. Zaten yazmışım. Aişe birbiri özel halinde. Üstel fonksiyon bir sabittir.
+
+484
+01:00:06,612 --> 01:00:27,852
+Şimdi şu özdeşlikleri var. Bakın, yani tabanlar aynı ise üstler toplanır kuralı. Tabanlar aynı ise üstler toplanır. Bu da bunun devamı. Bir de şu arkadaşlar, bak. Şunu da lütfen ölene kadar unutmayın, tamam mı? Bakın. Kuvveti kuvveti kuvvetlerin çarpımıdır diyor değil mi? Türkçe kelimelerini ifade edersek formülü.
+
+485
+01:00:28,244 --> 01:00:50,464
+kuvvetin, kuvveti, kuvvetlerin çarpımıdır diyor. Eğer bunu aklınıza tutarsanız mesela logaritman, sürevin falan ıspat etmek çok kolay olur. Bazı yerler de içimize yarayacak. O limit hesaplar yaparken mesela ben bunlara tekrar döneceğim. Kuvvetin, kuvveti, kuvvetlerin çarpımıdır. Bunu da aklınıza tuttuk. Şimdi şuraya geldim bakın. a büyük sıfır ve a farklı bir olmak üzere.
+
+486
+01:00:51,123 --> 01:01:15,284
+a büyük sıfır ve a farklı 1 olmak üzere. Neden a'yı 1 almıyormuşum? Göreceksiniz. 1 olmak üzere f, R'den R'ye artıyor, f'ye eşittir a üzeri. Yukarıda sadece a pozitiflerine tanınmamıştım. Bir daha üşenmeden gideyim. Bakın, şurada nerede? Şurada bakın. Görüntükü nerede yazıyordu ya? Yazmamış mı? Diğeri yazdım diye hatırlıyorum.
+
+487
+01:01:18,260 --> 01:01:19,840
+ilk başlarda yazıyordu galiba.
+
+488
+01:01:20,099 --> 01:01:37,780
+a pozitifte. Sadece a pozitifte, yani o şuna denk geliyor dedim ya. Şuna denk geliyor dedim ya. Sonra böyle açtım. Bakın, biri birisine katabiliriz dedim. Kattığımız zaman ne olacağını söyledim. Şimdi, şuraya gelince, bakın, şuraya gelince, a'nın 1 olmasını istemiyorum. Nedenini göreceksiniz şimdi.
+
+489
+01:01:37,780 --> 01:01:44,780
+a, 1 olmasın. Bunun dışında diyorum, r'den r artıya, şurada yazıyor bakın, r'den r artıya.
+
+490
+01:01:45,780 --> 01:01:56,680
+f'leştir, ayüzelik şeklinde tanımlarsak bu fonksiyon birebir olur diyor. Şimdi birebir olduğunu buradan gösterebiliriz ama çok önemli bir şey söylüyorum. Aşağıda var mı? Bakayım.
+
+491
+01:01:59,620 --> 01:02:05,920
+Yok. Aşağıda yok. Şimdi şunu sileyim. Şuraya kadar şöyle geleyim. Şunu bir sileyim.
+
+492
+01:02:07,827 --> 01:02:32,708
+Şimdi size çok önemli bir şey söyleyeceğim. Daha sonra da bununla bahsedeceğim. Ben şimdi şuraya yazarken arkadaşlar siz de şey yapın. Bir yere not edin. Buraya unutmuşum herhalde. Siz bir yere not edin. Ediyor musunuz? Evet hocam. Tamam. Bak şimdi. x1. Güzel olmak için ne yapıyordum? Gökyüzsün mü söylemiştik? Hekse geçiyordum. Grav yapıyordum. Sonra ne yapıyordum?
+
+493
+01:02:33,300 --> 01:02:35,140
+Trav yapmıyorsunuz hocam teksten.
+
+494
+01:02:35,820 --> 01:02:40,000
+Trav yapmanıza gerek yok.
+
+495
+01:02:40,540 --> 01:02:47,620
+Hayali bir köşegen çizmeyi düşün. O zaman olur. Hayali bir köşegen çizim, o zaman kutucuk açılıyor.
+
+496
+01:02:49,460 --> 01:02:51,500
+Bu şekilde mesela yazı yazıyor.
+
+497
+01:02:51,500 --> 01:02:51,800
+Aynen.
+
+498
+01:02:53,260 --> 01:02:54,540
+Evet hocam, onun için yazılıyor.
+
+499
+01:02:54,540 --> 01:02:55,180
+Şimdi klavyeden yazılıyor.
+
+500
+01:02:56,640 --> 01:02:57,920
+X1 yazmak istiyorum.
+
+501
+01:02:58,660 --> 01:03:00,100
+Hocam işte klavyeden yazıyor.
+
+502
+01:03:01,396 --> 01:03:01,956
+Efendim?
+
+503
+01:03:03,296 --> 01:03:05,336
+Klavyeden şimdi yazmaya başlayacaksınız.
+
+504
+01:03:05,576 --> 01:03:06,736
+x eşit bir işten.
+
+505
+01:03:06,736 --> 01:03:07,276
+Anne yazmıyor.
+
+506
+01:03:11,059 --> 01:03:35,980
+Bak, bu gidip geliyor. x bir diyorum şöyle. Yok. Ne yapayım? Klavyeye basıyor musunuz? Kravyeye mi? Evet, klavyeden yazın. Altına bir. Altını nasıl yapacağım? Böyle daha zor değil mi? Zor ya, zor dur dur, boş ver. Zor zor. Sürdürü ala yapalım. x bir.
+
+507
+01:03:38,099 --> 01:03:43,460
+artanlıktan bahsedeyim sadece, azalanlıkta aynı şekilde tamam mı? Böyle başlayın yani iyi kötü anlaşılıyor zaten.
+
+508
+01:03:48,628 --> 01:03:50,028
+Sadece artanlıktan bahsediyorum.
+
+509
+01:03:58,036 --> 01:04:00,076
+Aynı şeylerin azamanlık içinde geçerli.
+
+510
+01:04:05,108 --> 01:04:11,908
+İyi kötü gördünüz değil mi artanlığı? x1 küçük x2 iken f1 küçük fx2. Burada tamam mıyız arkadaşlar?
+
+511
+01:04:12,648 --> 01:04:14,048
+Evet hocam.
+
+512
+01:04:14,048 --> 01:04:30,268
+Şimdi birebirlikle ilgili ben size bir teorem, hatırlıyor musunuz? Aksiyon dedim değil mi? Aksiyon, önerme ve teoremden bahsederken, tanımların tamamı teorendir, doğrudur yani demiştim. Her zaman doğru demiştim. Dolayısıyla onu teorem olarak düşünürüz demiştim.
+
+513
+01:04:31,699 --> 01:04:37,999
+Bir teoremin olumsuz tersli teoremi olduğu için, mesela orada birebirinin tanımını ben hızlı bir şekilde söyleyeyim.
+
+514
+01:04:38,359 --> 01:04:44,279
+fx1 eşittir fx iken, x1 eşittir x'lik oluyorsa f fonksiyonu birebir demiştim. Hatırladınız mı?
+
+515
+01:04:45,659 --> 01:04:51,559
+fx1 eşittir fx iken, x1 eşittir x'lik oluyorsa f fonksiyonu birebir demiştim.
+
+516
+01:04:51,939 --> 01:04:52,819
+Doğru.
+
+517
+01:04:53,619 --> 01:04:55,759
+Onun olumsuz tersini de şöyle yazmıştım.
+
+518
+01:04:55,956 --> 01:05:07,135
+Şimdi, olumsuz sesi neydi? x1 farklı x2 iken, fx1 farklı fx2 oluyorsa fonksiyon birebilir demiştim. Hatırladınız mı? Hatırlamadıysanız yukarı gidip göstereceğim.
+
+519
+01:05:08,056 --> 01:05:10,816
+Evet. Hatırladım. Hatırladık hocam.
+
+520
+01:05:11,416 --> 01:05:18,916
+fx1 farklı fx2 oluyorsa f fonksiyonu birebilir demiştim. Şimdi, x1 küçük x2 demek, x1 farklı x2 demek midir?
+
+521
+01:05:20,659 --> 01:05:43,519
+x kare artı 2x, f'
+
+522
+01:05:43,476 --> 01:06:03,635
+Azalan fonksiyon daima birebirdir. Şimdi üstel fonksiyon bir yerde artıyor mu? Artıyor, birebir. Başka bir yerde azalıyor mu? Azalıyor, birebir. Şimdi daha kısasını söylüyorum, tamam mı? Monoton her fonksiyon birebirdir. Monoton ne demekti arkadaşlar? Daima artan ya da daima azalan demekti.
+
+523
+01:06:03,635 --> 01:06:05,255
+Ya da sabitlerde oluyor mu?
+
+524
+01:06:05,907 --> 01:06:06,367
+Efendim?
+
+525
+01:06:07,147 --> 01:06:08,007
+Sabitlerde oluyor mu?
+
+526
+01:06:08,367 --> 01:06:10,387
+Sabitlerde farklı bir şey var. Oraya sonra değinizeceğim.
+
+527
+01:06:10,507 --> 01:06:12,127
+Tamam mı? Oraya geldiğiniz zaman sonra bir tanım vereceğim.
+
+528
+01:06:12,188 --> 01:06:12,607
+Değinizeceğim.
+
+529
+01:06:12,927 --> 01:06:14,607
+Şimdi bir daha tekrar ediyorum ara vermeden önce.
+
+530
+01:06:14,987 --> 01:06:16,587
+Monoton her fonksiyon birebirdir.
+
+531
+01:06:17,447 --> 01:06:17,927
+Yazdınız mı?
+
+532
+01:06:18,804 --> 01:06:44,564
+Bunu ölene kadar unutmayın. Devamında bir cümle daha kurayım. Devamında bir cümle daha kurayım. Onu da yazın. Eğer bir yerlerde yazılırsa gene oraya gelirim. Şimdi aklıma geldi. Şimdi yazıyordum. Şimdi ben cümleyi hızlı bir şekilde cümle olarak kurayım. Sonra yazacağınız kısmı söyleyeyim. Şimdi bakın. Birebir olan her fonksiyonun görüntü kümesinde tersi mevcuttur. Bunu öğrendik. Değil mi? Birebir olan her fonksiyon artan ya da azalan. Değil mi? Monoton.
+
+533
+01:06:45,076 --> 01:07:03,735
+O zaman ne oluyor arkadaşlar? Kısa olarak monoton her fonksiyonun tersi mevcuttur. Yazıl. Ve ölene kadar unutmayın. Tamam mı? Monoton her fonksiyonun tersi mevcuttur. Bunu yazdınız, ölene kadar unutmayacaksınız. Bana da çok dua edeceğinizden eminim. Burayı da anladınız mı? Ve şimdi şunu sileyim.
+
+534
+01:07:04,724 --> 01:07:17,304
+saat 11.54 olmuş, 15.55 diyelim, 11.55, 12.55'e kadar ara verelim, 12.50 gibi bırakılır. Ben şimdi bir ara vereyim, az dik dinleneyim, tamam mı? O notara devam edelim.
+
+535
+01:07:17,923 --> 01:07:18,643
+Tamamdır hocam.
+
+536
+01:07:19,003 --> 01:07:20,443
+Tamamdır hocam, teşekkürler.
+
+537
+01:07:26,612 --> 01:07:29,852
+Dersten ayrılalım mı yoksa yok yazılır mıyız ya?
+
+538
+01:07:30,291 --> 01:07:32,492
+Ayrılmayın ayrılmayın, geri girmeniz zor olabilir.
+
+539
+01:07:33,152 --> 01:07:33,592
+Tamamdır.
+
+540
+01:07:34,211 --> 01:07:35,452
+Geri girmeniz zor olabilir.
+
+541
+01:07:35,572 --> 01:07:37,052
+Bir 5-6 dakikada sonra gelirim.
+
+542
+01:07:37,452 --> 01:07:38,112
+Tamamdır.
+
+543
+01:14:14,771 --> 01:14:19,091
+11.30 gibi bırakırız öyle bir sonra da dersim var. Onun için başlayalım hazırsanız.
+
+544
+01:14:24,180 --> 01:14:25,319
+Arkadaşlar, hazır mısınız?
+
+545
+01:14:26,500 --> 01:14:27,700
+Hazırız hocam.
+
+546
+01:14:28,280 --> 01:14:28,540
+Tamam.
+
+547
+01:14:29,399 --> 01:14:32,739
+Başlayalım, 10.30'u bırakırız. Öğrenden sonra da dersin başlıyor.
+
+548
+01:14:34,612 --> 01:14:41,492
+artan azalanın birebirle özdeş olduğunu, dolayısıyla monoton olan her fonksiyonun tersi mevcut olduğunu bir kere daha söylemiş olayım.
+
+549
+01:14:42,292 --> 01:14:47,852
+Eğer üstel fonksiyonu şu şekilde tanımlarsak bunun tersi mevcut olur. Birebir olduğu için tersi mevcut olur.
+
+550
+01:14:48,172 --> 01:14:52,471
+Tersi arkadaşlar logaritma A tabanına göre x olarak gösteriliyor. Logaritma A tabanına göre x olarak gösteriliyor.
+
+551
+01:14:52,471 --> 01:15:01,872
+Logaritma A tabanına göre x ile gösteriliyor. Biz log ile çok fazla uğraşmayacağız. Daha çok elenle uğraşacağız.
+
+552
+01:15:02,612 --> 01:15:06,492
+Bunlar genel özellikleri hızlıca. Liseden bir şey söyleyip geçeyim.
+
+553
+01:15:07,131 --> 01:15:08,152
+Demek ki eğer
+
+554
+01:15:10,228 --> 01:15:19,708
+aljelik fonksiyonu R'den R' artıya bu şekilde tanımlarsanız, A'ı 0 ve A'ı 1 olmak üzere, onun tersi mevcuttur ve logaritma A tabanında da x ile gösterilmiştir.
+
+555
+01:15:20,208 --> 01:15:29,747
+Şurada birbiriyle özdeş olan özellikler, yani y eşitli logaritma A tabanına göre x demek, aljelik y eşittir, x demektir.
+
+556
+01:15:30,147 --> 01:15:33,528
+A'ını üstüne çıkarttığımız zaman x aşağı inir, logaritmadan kurtulur.
+
+557
+01:15:33,627 --> 01:15:38,228
+Yani üstel fonksiyonla logaritma fonksiyonu altındaki bağlantı birbirlerinin tersinin olduğunu kurabiliyor.
+
+558
+01:15:38,228 --> 01:15:50,067
+Biz A'yı ne yazarak devam edeceğiz? Neden E'ye yazıyoruz? Onu da biraz sonra söyleyeceğim. Logaritmanın özellikleri tek değerli bir fonksiyodur. Bunu biliyorsunuz. Bakın, logaritman A tamamıyla göre 1,
+
+559
+01:15:50,963 --> 01:16:18,724
+Sıfırdan arkadaşlar. Bunu ölene kadar unutmuyoruz tamam mı? Logartma A taban ne olursa olsun. Logartma 1'in sıfır olduğunu ölene kadar unutmuyoruz. Tabanla eğer argüman aynıysa, tabanla argüman aynıysa onun da biri olduğunu unutmuyoruz. Logartma 1'in sıfır, tabanla eğer argüman aynıysa biri olduğunu unutmuyoruz. Bu sık sık karşımıza çıkacak. Bazı şeyleri daha söyleyeyim şuradan. Argümanlar tabii her kişinin içli ve içli pozitif olmak üzere.
+
+560
+01:16:18,963 --> 01:16:21,724
+kelimelerini ifade ediyorum. Burada formül yazıyor.
+
+561
+01:16:22,503 --> 01:16:26,203
+2 pozitif sayının çarpımının logaritması, logaritmanların toplamını eşittir diyor.
+
+562
+01:16:26,203 --> 01:16:26,543
+Tamam mı?
+
+563
+01:16:26,824 --> 01:16:31,503
+2 pozitif sayının çarpımının logaritması, logaritmanların toplamını eşittir diyor.
+
+564
+01:16:32,423 --> 01:16:33,783
+Kuvvet başa gelir diyor.
+
+565
+01:16:35,183 --> 01:16:38,463
+Argümanın kuvveti kat sayı olarak başa yazılabilir diyor.
+
+566
+01:16:38,923 --> 01:16:40,743
+x ise x gelir, art ise artı gelir.
+
+567
+01:16:40,863 --> 01:16:43,243
+Kuvvet ne ise o başa yazılabilir diyor.
+
+568
+01:16:44,020 --> 01:16:48,700
+2 pozitif sayının bölümünün logaritması logaritmanın farkına işit ediliyor. Bunu da biliyorsunuz.
+
+569
+01:16:48,940 --> 01:17:01,020
+2 pozitif sayının bölümünün logaritması, tabii 2 pozitif sayının bölümünün logaritması, tabii 2 pozitif sayının bölümünün logaritması logaritmanın farkına işit ediliyor.
+
+570
+01:17:01,020 --> 01:17:08,520
+Başka şeyler, aynı üstel fonksiyonundan, tabii üstel fonksiyon da A0 ile 1 arasında olunca, üstel fonksiyon neydi arkadaşlar?
+
+571
+01:17:08,700 --> 01:17:10,100
+A'da da anlıyor, görüyorsunuz da aynı.
+
+572
+01:17:11,347 --> 01:17:16,148
+özellikleri değişmiyor. a1'den büyük olduğu zaman artlandı, bakın, geri özellikleri değişmiyor.
+
+573
+01:17:16,648 --> 01:17:18,567
+Şunu ölene kadar unutmayın, şunu.
+
+574
+01:17:20,268 --> 01:17:23,347
+0 ile 1 arasındaki sayıların logaritması negatiftir.
+
+575
+01:17:24,547 --> 01:17:27,067
+Tamam mı? Arkadaşlar, duydunuz beni değil mi?
+
+576
+01:17:27,587 --> 01:17:28,167
+Duydun hocam.
+
+577
+01:17:28,247 --> 01:17:33,228
+0 ile 1 arasındaki sayıların logaritması negatiftir. Bunu ölene kadar unutmayacaksınız.
+
+578
+01:17:33,667 --> 01:17:37,907
+Unutursanız, logaritmik ifadeler neyle ilgili olsun olsun. Başınızı belaya sokar.
+
+579
+01:17:38,739 --> 01:17:47,939
+argümanın hangi aralıkta değer aldığını bilerek devam edeceksiniz. Eğer argüman 0 ile 1 arasında değer alıyorsa, logik nasıl negatif diyoruz.
+
+580
+01:17:48,460 --> 01:17:57,619
+Birden büyük olduğu zaman da pozitif. 1 olunca 0 olduğu için, bakın, senin dedim ya, A farkı 1 olmak üzere. 1 olunca 0 oluyor, bir işlem yapılmıyor 0 olduğu için. Onun için ayrı 1 almıyor.
+
+581
+01:17:59,460 --> 01:18:03,479
+Özür dilerim.
+
+582
+01:18:05,300 --> 01:18:13,380
+Şunlar da var işte. Taban değişimi var ya. Bunlar da bir bel a alınca ekşi geliyormuş. Bunlar da biliyorsunuz zaten.
+
+583
+01:18:13,380 --> 01:18:25,420
+E sayısından kısacık bahsedeyim. Arkadaşlar şunu, ben bu kitapları ilk yazdığım zamanlar, yani ta 2005'li yıllarda, Euler denen kişinin, Euler, ünlü Alman matematikti bakın, Euler.
+
+584
+01:18:25,720 --> 01:18:29,760
+Euler'in bu soy adı, bir şeyi önerdi. Onu o bulmuş.
+
+585
+01:18:30,292 --> 01:18:51,292
+Ta ne zamanda tarihini yazmamıştım? 1800 yıllarda galiba. O bulmuş, şöyle yazmış, sende el yazısını görmüştüm, bu. Bakın arkadaşlar, bu sayı mesela 1,2,2,3,6 falan diye gidiyor ya. Şunu ne kadar uzatırsanız uzatın, toplayınca 2.71,82,81,82 falan diye gidiyor. Tamam mı? Şu ifadeyi...
+
+586
+01:18:51,887 --> 01:19:18,887
+Ne kadar burayı artırırsanız artırın. Yani 1 bölü 4 faktoriyeli, 1 bölü 5 faktoriyeli böyle koymaya devam edin. 2.71, 82, 81, 82 falan diye gidiyor ama hiç birbirini tekrar etmiyor. Tekrar etmiyor bu rastı. Acayip bunu daha yüzlerce onlarlıkta hesaplamışlar. Tekrar etmiyor bu. Böyle bir sayı çıkıyor. Bunu şu sayıyı evler kendi soyadının baş harfi olan E harfi de göstermiş.
+
+587
+01:19:19,024 --> 01:19:19,703
+Bu ne video mi?
+
+588
+01:19:20,435 --> 01:19:21,275
+Yok hocam.
+
+589
+01:19:21,536 --> 01:19:27,876
+Tamam, öğrendim şimdi. Evlerin, ünlü Alman matematik evlerin, soyadının başkarsız E.
+
+590
+01:19:28,195 --> 01:19:32,576
+E, en küçük E derseniz büyük E başkalla kullanıyormuşsa, onun için küçük E ile gösterin.
+
+591
+01:19:32,855 --> 01:19:36,496
+E sayısı bu. Siz yaklaşık E sayısının 2.72 olduğunu düşünün.
+
+592
+01:19:36,935 --> 01:19:39,976
+Tamam mı? E sayısının yaklaşık 2.72 olduğunu düşünün.
+
+593
+01:19:39,976 --> 01:19:48,435
+Çok fazla 2.72 olarak kullanmak gerekmeyebilir ama bazen sayısal değerlerle x'i yorumlamak ihtiyacı hissettiğimizde 2.metreler...
+
+594
+01:19:48,435 --> 01:19:56,395
+x diyelim, 3 gelmiştir. E ile mükâyesedeceksiniz, değil mi 3'ü? O zaman 2.72 olduğu akıllı tutmak gerekiyor.
+
+595
+01:19:56,735 --> 01:20:07,976
+Şimdi, E tabanına göre logaritma, bak birçok açıdan önemlidir demişim. Doğal logaritma elde etmek için, yani eleni elde etmek için, A yerine E alıyoruz.
+
+596
+01:20:08,315 --> 01:20:10,355
+Sebebini bilen var mı? Burada yazmıyor çünkü.
+
+597
+01:20:11,252 --> 01:20:19,752
+Neden log A'da A, Y, E alarak log E'den kurtulup sadece elenik adına doğal olarak diyoruz? Sebebi bilen var mı?
+
+598
+01:20:23,796 --> 01:20:29,356
+En üstte [öğrenci]'yı görüyorum. [öğrenci] sebebini biliyor musun? [öğrenci]?
+
+599
+01:20:30,275 --> 01:20:31,716
+Hayır hocam, hatırlamıyorum.
+
+600
+01:20:32,596 --> 01:20:41,916
+Tamam. Ben şimdi söyleyeyim. En önemli sebeplerinden birisi türev bahsediyor. Eleniksin türevini hatırlıyor musunuz? [öğrenci] hatırlıyor mu Eleniksin türevini?
+
+601
+01:20:44,156 --> 01:20:45,436
+Eleniksin türevini.
+
+602
+01:20:46,216 --> 01:20:48,956
+Maalesef hocam. Ben elisi de de görmedim.
+
+603
+01:20:49,395 --> 01:20:52,355
+Tamam. Okuldan ayrıladı, neredeyse 20 yıl oldu.
+
+604
+01:20:53,315 --> 01:20:56,395
+Ha olsun, kusura bakma [öğrenci]. Ben öyle ekranda gördüm.
+
+605
+01:20:56,395 --> 01:20:57,315
+Ben teşekkür ederim.
+
+606
+01:20:57,315 --> 01:20:58,815
+Ben hatırlatma anlamında soruyorum da, tamam.
+
+607
+01:21:00,456 --> 01:21:01,775
+L'NX'in türevi 1 bölü 2x.
+
+608
+01:21:02,579 --> 01:21:25,459
+L'N x'in türevi 1 bölü x tamam mı? Ama logaritma A tabanları x'in önüne bir L'N A gelecek türevde. L'N A gelecek. O pozitif bir sayı. E 2.72 olduğu için pozitif bir sayı. Eğer bu pozitif sayıyı görmek istemiyorsanız A yerine E alırsınız. Log A tabanları x'den A yerine E koyarak L'N'e geçersiniz. Dolayısıyla sadece 1 bölü x'i kullanabilirsiniz.
+
+609
+01:21:25,652 --> 01:21:34,652
+Tamam mı? Çok önemli. Şimdi süreve geldiğimiz zaman onu bir daha tekrar edeceğiz. Onun için arkadaşlar bundan sonra A yerine E alarak devam edeceğiz. Başka sebepleri de var.
+
+610
+01:21:35,371 --> 01:21:43,811
+Faiz hesabı vesaire gibi bir sürü sebebi var. Ama matematik 1'de en can alıcı sebebi A yerine E alıp E'lerle devam edeceğiz.
+
+611
+01:21:44,152 --> 01:21:51,172
+En can alıcı sebeplerinden birisi bu. Biz de böyle devam edeceğiz. O zaman ters fonksiyon kuralına göre şu iki çıkar. Tamam mı?
+
+612
+01:21:51,859 --> 01:22:03,260
+Yani bu her ikisinin x'in gelmesi bu büyüdüğü büyüdüğün tersidir diyor. Şu ikisini unutmuyoruz. Yani f bileşke f üzeri x'i ve f üzeri x'i bir bileşke f'yi unutmuyoruz. Şu ikisini.
+
+613
+01:22:03,579 --> 01:22:07,559
+Tersin ünlü porsiyonlar da unutmamışım. Şöyle bir tablo yapmışım. Bunu boş verin.
+
+614
+01:22:08,467 --> 01:22:21,567
+Burada da bir şey yok. Şeyleri kullanmışız. Sadece şunu söyleyeyim burada. Bakın, tanım cümesini bulunuz diyor. Demin de bir örnekte vardı, iki taneydi. İki tane ifade var değil mi? Birisi böyle kök içinde şu, 4xx, biri de elembo.
+
+615
+01:22:21,971 --> 01:22:28,652
+Şimdi arkadaşlar, şu x-f' içinde 4x'in tarım tümesini buluruz. Hangi aralıkta tarım onu buluruz.
+
+616
+01:22:28,851 --> 01:22:34,351
+Elen ifadesini, elen ifadesini, elen ifadesini, tarım tümesini buluruz. Bunları birleştiririz.
+
+617
+01:22:34,531 --> 01:22:38,731
+Birleştiririz derken birleşimini alırız demek istemiyorum. Demin yaptım ya, ortak tanım tümesini.
+
+618
+01:22:38,731 --> 01:22:40,011
+Ortak şeylerini buluruz.
+
+619
+01:22:40,631 --> 01:22:43,171
+Evet, ortak kısmı alıyoruz anlamında sözde.
+
+620
+01:22:43,636 --> 01:22:53,636
+Birinci dikkat ettiğiniz zaman şuna yani payda da bakın payda da kara köşğünde 4-x kare var. Normal olarak kara köşğünde 4-x kare...
+
+621
+01:22:54,515 --> 01:23:04,335
+işçi, yani şurası, büyük eşit sıfır olduğu zaman tanımlı değil mi? Karakök, şurası eşit sıfır olduğu zaman tanımlı. Ama bu paydaya gelmiş, o zaman ne yapıyoruz arkadaşlar?
+
+622
+01:23:04,975 --> 01:23:06,075
+Sadece büyük olarak.
+
+623
+01:23:06,075 --> 01:23:12,995
+Eşitliği kabul ediyoruz. Teşekkür ederim. Sadece pozitif kısmından olur. Eşitliği kabul ederek sadece pozitif kısmından olur.
+
+624
+01:23:13,268 --> 01:23:22,708
+4xx² büyük sıfıla devam ediyoruz. Buradan x küçük x küçük 2 çıkıyor. Yani x kare küçük 4 çıkıyor. Buradan da açık aralık olarak şunu buluyoruz.
+
+625
+01:23:23,847 --> 01:23:29,388
+Şimdi diğerine geldiğimiz zaman arkadaşlar, şuraya geldiğimiz zaman da demin söyledim ölene kadar unutmayın dedim ya.
+
+626
+01:23:29,747 --> 01:23:35,967
+sadece pozitif sayıların logaritma sağında değil mi? Sadece pozitif sayıların logaritma sağında ise pozitiftir.
+
+627
+01:23:36,327 --> 01:23:42,947
+Evet. 5x2 x kare pozitif olduğu zaman logaritma tanımlı olduğuna göre, bakın buraya yazdım. 5x2 x kare pozitif.
+
+628
+01:23:43,587 --> 01:23:49,147
+Buradan da arkadaşlar x0 ile 5 aralığında çıkıyor. Eğer siz bunu şuradan şuraya geçeyim, direkt veremiyorsanız,
+
+629
+01:23:49,647 --> 01:23:52,127
+şunun için bir tablo yapın. Ben yapmıştım hatırlıyor musun?
+
+630
+01:23:52,435 --> 01:24:08,956
+Bir tane tablo yapmıştım. Pratik olarak bunu kullanabilirsiniz demiştim. Yani tabloya x'i koyarsınız. 5x'i koyarsınız. Sonra 5x'i x kareye koyarsınız. Eksiyle eksi artı, artıyla artı artı. Eksi artı, eksi olur derdi. Tablodan yapardınız. Ben bir tane yapmıştım. Komut örnek olsun diye.
+
+631
+01:24:09,264 --> 01:24:14,264
+Oradan çözdüğünüz zaman x'in burada da 0 ile 5 arasında olması gerektiğini görüyorsunuz.
+
+632
+01:24:14,484 --> 01:24:19,484
+x'ini birleştirdiğiniz zaman bakın, şuradan 0 geliyor değil mi? Şuradan 0 geliyor, buradan da 2 geliyor.
+
+633
+01:24:19,844 --> 01:24:22,004
+Gene deminki gibi R elektron üzerinde bunu görebiliriz.
+
+634
+01:24:24,184 --> 01:24:30,904
+Burada bir teknik ilgili örnek var, onu geçeyim. En sade hale getiririz diyor. Şunu yapayım mı? Yapmamı ister misin şunu?
+
+635
+01:24:32,435 --> 01:24:39,435
+özellikleri kullanacaktınız. Özellikleri kullanacaktınız. Tabanlar aynısı üstel toplanır diyor ya. Topladınız üstelinde pat pat pat bu çıkıyor.
+
+636
+01:24:41,175 --> 01:24:52,136
+Bu faiz etabıyla ilgili kısım. Limit de bu. Bak neye çok büyük olduğunda diyor ya, işte limitle ilgili bir şey. Şu E olacak arkadaşlar. Neye çok büyük olduğunda bu E olacak.
+
+637
+01:24:52,376 --> 01:24:58,275
+Tamam mı? E olacak. Hakikaten 2.72'ye giriyor bu. Bu faiz etabında kullanılıyor. Hala kullanılıyor.
+
+638
+01:24:58,996 --> 01:25:19,895
+Günümüzde de kullanılıyor. Bu hala faiz hesabında kullanılıyor. Ben kitabın başına yazmıştım bunu. O kısımda, geldiği kısımda yazmıştım. Oradan bir yerden buldum ya, faiz hesabında nasıl kullanılıyor. Faizi bildiğimde değil de nasıl kullanılıyor anlamında yazmıştım. Şuradaki bir bölümüne bakın. Burada x bölümüne yazarsanız arkadaşlar, bunda limitini aldığımızda, kısmet orası haftaya başlayacağız, limitini aldığımız zaman e'ye geliyor.
+
+639
+01:25:21,684 --> 01:25:27,344
+a başka bir şey. e aldığımız zaman şurası da e olacak. Orada söyleyeceğim zaten bunu da ölene kadar unutmam.
+
+640
+01:25:29,604 --> 01:25:31,463
+Bir arkadaşımız bir şey söyledi gibi sanki.
+
+641
+01:25:33,064 --> 01:25:37,783
+Hocam kimse bir şey demedi sanırım.
+
+642
+01:25:38,443 --> 01:25:42,324
+Tamam bir ses söylediğim gibi. Tamam. Bu ifsini sonra kullanacağız. Tamam mı?
+
+643
+01:25:43,423 --> 01:25:46,684
+Şimdi bir şey daha özellikle belirteyim arkadaşlar. Bakın.
+
+644
+01:25:47,224 --> 01:25:48,703
+Taban 10 olduğu zaman bu lok.
+
+645
+01:25:49,492 --> 01:26:03,172
+Tamam mı? Taban 10 olduğu zaman blok. Taban 10'un dışında, 10 sayısının dışında herhangi bir pozitif sayı olduğu zaman altına yazıyorsun. Taban E olduğunda, özel olarak E olduğunda da L'nx yazıyorsun.
+
+646
+01:26:03,891 --> 01:26:24,971
+Bunların dışındaki bütün yazılımlar yanlıştır arkadaşlar. Yani şunu yazmaya gerek yok diyor, kuruyor onu. Tamam mı? Şu on yerde eye gelirse elenik yazıyoruz. Bunların dışındaki yazılımlar yanlıştır diyor. İleride integral ile bahsederken ne büyük yanlışlar yapıldığını kitaplarda göstereceğim size. Malifesiniz de öyle öğrendiniz. Eminim orada soracağım. Gene sorduğum zaman açıkça konuşuyoruz.
+
+647
+01:26:25,268 --> 01:26:32,728
+Bunu burada bitiriyorum. Fazla süremiz kalmadı. Hiperbölük ve ters hiperbölük fonksiyonlarla aynı başlık altında anlatıyorum. Orada bitiyor zaten.
+
+648
+01:26:34,407 --> 01:26:36,307
+Tamam, iki sayfamız kalmış.
+
+649
+01:26:37,203 --> 01:26:58,423
+Şimdi hiperbölük fonksiyonları arkadaşlar, şunu kısa kısa bahsedeyim, kanıma geçmeden. Arkadaşlar, elimizde bir e üzeri x var değil mi? Şu anda. A yerine e aldığımız için elimizde bir e üzeri x var. Bir de onun çarpmaya göre tersi var o zaman değil mi? E üzeri x'in çarpmaya göre tersi mi? E üzeri x'in çarpmaya göre tersi.
+
+650
+01:26:58,923 --> 01:27:01,843
+Bir böyle e üzeri x mi? Yani e üzeri x.
+
+651
+01:27:02,420 --> 01:27:22,600
+Değil mi? x kare artı 2x. O zaman arkadaşlar, bunlarla ilgili 2 tane işlem yapılabilir. x kare artı 2x ve onun çarpmaya göre tersi olan x kare artı 2x ile ilgili 2 tane işlem yapılabilir. Birisi onlar toplanır, diğeri de onlar çıkarılır. Bakın hemen altta duruyor. Şöyle biraz daha girip, bakın burada duruyor. Tamam mı?
+
+652
+01:27:22,899 --> 01:27:31,619
+bununla toplanabilir ya da çıkarılabilir. Peki, neden toplamına kosinüs, süperbörlük denmiş, farkına, sinüs, süperbörlük denmiş biliyor musunuz?
+
+653
+01:27:34,180 --> 01:27:34,520
+Bilemez mi?
+
+654
+01:27:34,520 --> 01:27:35,640
+Ben de abicim, yok.
+
+655
+01:27:36,020 --> 01:27:46,480
+Bu kıyamı unutmayın, bu kıyamı unutmayın. Bakın, topladığınız zaman, evdilikse evdileri eksikse topladığınız zaman, bu kosinüsün özelliklerini sağlıyor.
+
+656
+01:27:47,859 --> 01:27:50,760
+Çıkardığınız zaman bu sinüsün özelliklerini sağlıyor.
+
+657
+01:27:51,659 --> 01:27:56,119
+Yani elizleri eksik yazdığınız zaman zaten iki tane işlem var, başka yok.
+
+658
+01:27:56,119 --> 01:27:58,300
+Bu da sinüsün özelliklerini sağlıyor.
+
+659
+01:27:58,640 --> 01:28:01,260
+Mesela, şimdi 1 bölü 2'ye ben gelmiştim onu da söyleyeceğim.
+
+660
+01:28:01,500 --> 01:28:04,159
+Mesela, 2 yerine 0 koyun. Şurası kaç oluyor arkadaşlar?
+
+661
+01:28:05,199 --> 01:28:05,520
+Şurası?
+
+662
+01:28:08,239 --> 01:28:10,380
+1 bölü 2'yi dikkat alırsanız, 1 oluyor.
+
+663
+01:28:10,640 --> 01:28:12,119
+1 bölü 2'yi dikkat almadan koyalım.
+
+664
+01:28:12,340 --> 01:28:13,039
+Şu parantezde 2.
+
+665
+01:28:13,359 --> 01:28:14,420
+1 artı 1 2.
+
+666
+01:28:15,315 --> 01:28:31,916
+Efendim? 2. 1 artı 1'den 2 yani. Kaç arkadaşlar? Kosinüs 0? Kosinüs 0, 1. Ama burası 1 bölü, sırası 2. Peki bunu 1 yapmanın yolu ne? Önüne 1 bölü 2 koymak. Anladık mı?
+
+667
+01:28:32,307 --> 01:28:57,507
+Bak, 1 bölü 2 de ondan geliyor. Toplamından ve önüne 1 bölü 2 koyarsanız, kosinüsün özellikleri, bir şey daha söyleyeyim mesela, kosinüsün özelliklerine. Kosinüs çift bir fonksiyon değil mi? x yerine x x yazdığınız zaman, eksiği dışarı çıkarmıyor. Peki şurada x yerine x x yazdığınız zaman dışarı çıkıyor mu? Şurada. Hiçbir şey olmuyor değil mi? e üzeri x x artı e üzeri x oluyor bakın, aynısı oluyor.
+
+668
+01:28:58,452 --> 01:29:06,152
+Yani bu ifade, e-yücelik artı e-yücelik eksik, kosinüs'ün özelliklerini taşıyor, biri de versin diye önüne bir bölüklük koymuşsunuz.
+
+669
+01:29:06,372 --> 01:29:11,412
+Dolayısıyla kosinüs deniyor. Burada duralım, kosinüs deniyor da duralım, sinüse geçelim.
+
+670
+01:29:12,292 --> 01:29:15,591
+Sinüste de arkadaşlar bakın, sinüs sıfır neydi? Sinüs sıfır.
+
+671
+01:29:16,532 --> 01:29:16,971
+Sıfır.
+
+672
+01:29:17,572 --> 01:29:21,252
+Sıfır. Şurada iki şeyine sıfır koyun. Şurada iki şeyine sıfır koyun.
+
+673
+01:29:22,036 --> 01:29:23,456
+Ne oldu parantezim için?
+
+674
+01:29:23,635 --> 01:29:25,095
+1-1'den 0 geldi.
+
+675
+01:29:25,256 --> 01:29:28,216
+Aynen 0 geldi. Yani bu da sinüsüm özelliklerini taşıyor.
+
+676
+01:29:28,435 --> 01:29:29,256
+Bir şey daha söyleyeyim.
+
+677
+01:29:29,555 --> 01:29:31,496
+İçliğine x-x koyalım bakın ne oluyor?
+
+678
+01:29:32,135 --> 01:29:35,496
+E üzeri x-x, eksi e üzeri x-x oluyor görüyor musunuz?
+
+679
+01:29:35,756 --> 01:29:37,935
+Eksiyi dışarı çıkarıyor yani değil mi? Önüne getiriyor.
+
+680
+01:29:38,475 --> 01:29:39,496
+İçliğine x koyarsanız.
+
+681
+01:29:40,496 --> 01:29:43,496
+Sinüslere, içliğine x koyarsanız eksiği önüne getiriyor.
+
+682
+01:29:43,756 --> 01:29:44,876
+Yani sinüs tek fonksiyon.
+
+683
+01:29:45,115 --> 01:29:45,775
+Dolayısıyla bu da.
+
+684
+01:29:46,144 --> 01:30:12,384
+sinüs özellikleri de taşıyor. Dolayısıyla buna da e üzeri x, e üzeri x, x de sinüs demek yerindedir. Şimdi o zaman şuna kosinüs demenin, buna da sinüs demenin yerinde olduğunu, mantıklı olduğunu anladık mı? Bu kıyamı unutmayın. Bir yerde bulamazsınız. Ben söyleyince oluyor. Ben matematikten ne anladığımı size anlatıyorum. Şimdi geriye ne kalıyor arkadaşlar? Neden bunlara hiperbolik gelmiş kalıyor değil mi? Neden bunlara hiperbolik gelmiş kalıyor?
+
+685
+01:30:12,640 --> 01:30:22,220
+Hatırlayın, ben demiştim ki, kosinüs kare artı sinüs kare eşittir bir, daire denklemini sağladığı için onlara dairesel fonksiyon denir. Hatırladınız mı? Kalitlada var.
+
+686
+01:30:22,979 --> 01:30:30,760
+Kosinüs kare artı sinüs kare 1 olduğu için o bir daire denklemini sağladık, onlara daire denir demiştim. Onun için dairesel fonksiyonlar denir demiştim.
+
+687
+01:30:30,760 --> 01:30:39,140
+Tamam, şimdi yazıyorum. Harfleri değiştirdim. Bu U, güzel görünmedi ama U.
+
+688
+01:30:40,756 --> 01:31:05,576
+x eksi, v'nin karesi, eşittir 1. Okuyorum şimdi yazdığımı. u kare eksi ve kare eşittir 1. Bunu tanıyor musunuz? u kare artı ve kare eşittir 1 olsa daire. u kare eksi ve kare eşittir 1 olsa tanıyor musunuz? Bunu. Ben söyleyeyim. hiperborik. hiperborik. Bu hiperbor. Bunun adı hiperbor.
+
+689
+01:31:06,323 --> 01:31:25,323
+u kare artı b kare eşittir bir daire, u kare eksi b kare eşittir bir hiperbol. Şimdi arkadaşlar, u yerine şunu yazdım, 1 bölü 2x'leri eksik, v yerine de 1 bölü 2x'leri eksik yazarsanız 1 olduğunu göreceksiniz. Şu 1 bölü 2 de ondan geliyor. 1 olduğunu göreceksiniz. Yani...
+
+690
+01:31:25,427 --> 01:31:49,728
+şu ifadeyle bu ifadenin kareleri farkı biriveriyor. Yani hiperbolin denklemini sağlıyor. O zaman bunlara ne dememiz lazım? Kosinüsle birlikte hiperbolik, sinüsle birlikte hiperbolik. O zaman şu ifade kosinüs hiperboliktir, bu ifade de sinüs hiperboliktir. İşte ben tarihinden anladığım bu. Tamam mı? Neden bunlara bunların denildiğini böyle anlıyoruz. Tarihi bu bundan.
+
+691
+01:31:51,988 --> 01:32:01,847
+Çildim. Bunu da anladık. Devam edelim şimdi. Şimdi şunları söyledim zaten. Grafiklerimle çizdim daha sonra belki deyiliriz.
+
+692
+01:32:02,448 --> 01:32:11,608
+Tanjant, hiper bölük arkadaşlar sinüs bölük, kosinüs. Kotanjant, hiper bölük, kosinüs bölük. Aynı bunlar. Bunlar aynı. Yalnız kotanjant, hiper bölük tanımlarken bir tehlike var. Görüyor musun?
+
+693
+01:32:12,404 --> 01:32:21,388
+x kare artı 2x, f'
+
+694
+01:32:21,652 --> 01:32:48,231
+Onun için x farkı sıfır diyoruz. Mesela sekant hiperbölü tanımlarken, bir şey yok ama kosekan hiperbölü tanımlarken, şu sinüs hiperbölükten gelen, iç yerine sıfır koyunca sıfır olma ihtimali, onun için orada da x farkı sıfır kabul ediyorsunuz. Demek ki, kotansiyon hiperbölükte, kosekan hiperbölükte x farkı sıfır olduğunu kabul etmemiz gerekiyor. Kullanacak mıyız? Yok, kullanmıyoruz. Neredeyse hiç kullanmıyoruz ama yani şu ikisini
+
+695
+01:32:48,655 --> 01:32:53,536
+kosinüs hiper bölümünün bu olduğu anlamında, şimdisi de bu olduğu anlamda çok fazla kılamıyoruz.
+
+696
+01:32:53,856 --> 01:32:55,256
+Pratikte çok lazım olmuyor bize.
+
+697
+01:32:56,276 --> 01:32:58,615
+Toplanırken, çıkarırken bile direkt alabiliriz.
+
+698
+01:32:58,916 --> 01:33:00,776
+Karşısına hiper bölümlerini yazmayabiliriz.
+
+699
+01:33:00,776 --> 01:33:05,236
+Çok fazla ilgilenmiyoruz ama müfredat içinde olduğu için söylemiş olduk.
+
+700
+01:33:06,216 --> 01:33:08,456
+Özleşikleri de bunlar, oradan çıkarabilirsiniz.
+
+701
+01:33:09,716 --> 01:33:20,996
+Testleri de arkadaşlar, mesela bir tanesinin çıkarmışım bakın, şu birebirini söylemek için. Görüyorsunuz, sinüs, süperbolik, şu neydi arkadaşlar?
+
+702
+01:33:22,036 --> 01:33:31,976
+Şu şartın sağlanması. Teşekkür ederim. Artanlık'tı. Artan olunca sinüs, süperbolik fonksiyonu ne oluyor? Artan olduğu için. Birebir oluyor.
+
+703
+01:33:31,976 --> 01:33:34,076
+Birebir oluyor. Monoton.
+
+704
+01:33:34,996 --> 01:33:35,756
+Arsini oluyor.
+
+705
+01:33:37,203 --> 01:33:48,384
+Terzili bulmak çok kolay. Ben hızlı göstereyim bak. Terzili bulmak için sinüs süper bölük yerine y yazdınız. Ondan sonra işler işler şartımı yapıp düzenliyor. Şöyle, düzenliyor.
+
+706
+01:33:49,684 --> 01:34:11,963
+Şurada bakın, x kare 2x'e göre ikinci derecede bir denklem var değil mi? x kare 2x'e göre ikinci derecede bir denklem var. x kare 2x'e u yazarsanız, ben okuyayım şimdi, x kare 2y u eksi 1 eşittir 0 oluyor. Bir daha söylüyorum, x kare 2y u eksi 1 eşittir 0 oluyor.
+
+707
+01:34:17,684 --> 01:34:44,663
+bunu belirsiz. Tamam mı? Bu x'nin u yazdınız. u'ya göre ikinci dereceye tekremi çözdünüz. Şöyle çıkacak. x'nin pozitif olması gerçeği, böyle olması gerektiğini söylenecek. Şimdi arkadaşlar, buradan her iki tarafın logaritmasını atsanız şurada vardı ya, üşenmeyeyim gideyim, ölene kadar unutmayacaksınız dedim ya. Çok mu yukarıda kaldı? Ha şu, burayı ölene kadar unutmayacaksınız dedim ya. Geri geleyim aşağıya, üşenmeyeyim.
+
+708
+01:34:46,515 --> 01:35:11,956
+Şurada her iki tarafı logaritmasını aldığınız zaman burası x olur, burası logaritmanın içine girer. Çok rahatlıkla bunu yapabilirsiniz. Niye? Çok rahatlıkla bunu yapabilirsiniz. Neden arkadaşlar? Burası pozitif görüyorsunuz değil mi? Şurası pozitif. Dolayısıyla her iki tarafı logaritmasını rahatlıkla alabilirsiniz. Şimdi burada x gördüğünüz yere f'ye üzeri eksi bir x, y gördüğünüz yere x yazarsanız tersini bulmuşuz.
+
+709
+01:35:12,884 --> 01:35:39,304
+Diğerlerinin tersini bu şekilde bulabilirsiniz. Çok kolay. İkinci dereceden bir denklemi çözmek ve Ejderic'in pozitif olduğu gerçeğini kullanmak. Ejderic'in pozitif olduğu gerçeğini kullanmak hemen bu sonuçlar. Diğerleri de böyle. Kozini siperverlik ve tanjant siperverlik de böyle oluyor. Ve burada bitirdik. Şimdi arkadaşlar, buraya kadar olan kısımlarda yeryüzünde var olan bütün fonksiyonları tanıdık.
+
+710
+01:35:39,539 --> 01:35:50,339
+Yeryüzünde var olan bütün fonksiyonları tanıdık. Onlarla ilgili teknik özellikleri hatırladık. Bunların içinde matematik olarak bilmediğiniz şeyler var mıydı bu fonksiyonların içinde?
+
+711
+01:35:51,539 --> 01:35:56,839
+Yani aklınıza gelen bilmediğiniz, sormak istediğiniz bir şeyler var mı? Ben birçok şey söyledim ama.
+
+712
+01:35:58,719 --> 01:36:07,239
+Logaritmayla olsun, üstel fonksiyonla olsun, test virgönümesi fonksiyonla ilgili olsun, hala bilmediğiniz, benim de aklıma gelmeyi söylemediğim şeyler var mı?
+
+713
+01:36:09,684 --> 01:36:10,204
+Hocam.
+
+714
+01:36:10,784 --> 01:36:11,104
+Efendim?
+
+715
+01:36:11,624 --> 01:36:14,184
+Yok hocam. En azından ben kendi acımdan diyorum.
+
+716
+01:36:14,824 --> 01:36:21,804
+Tamam. Arkadaşlar, konuşursanız sevinirim. Bir 5-6 dakika bu konuşmayı gerçekleştirelim. Ondan sonra bitiririz dersi.
+
+717
+01:36:23,504 --> 01:36:24,684
+Benim acımdan da yok.
+
+718
+01:36:25,904 --> 01:36:30,304
+Aklınıza takılan, açıklamamı istediğiniz herhangi bir şey var mı?
+
+719
+01:36:32,324 --> 01:36:33,684
+Benim de yok hocam.
+
+720
+01:36:34,195 --> 01:36:35,935
+Yok hocam, teşekkür ederiz.
+
+721
+01:36:36,376 --> 01:36:38,155
+Herkes her şeyi öğrendi o zaman.
+
+722
+01:36:38,739 --> 01:36:40,819
+Umarız hocam, bir sindirmek lazım.
+
+723
+01:36:41,380 --> 01:36:51,699
+Tabii ki sindireceksiniz. Arkadaşlar, ben bunların bu fonksiyonlar başlığını biraz daha kısaltıp, özet hale getirerek, bazı laflar var ya, atladığım şeyleri var.
+
+724
+01:36:52,039 --> 01:36:58,079
+Özet hale getirerek, uzun bir zamanında dersler var ya, dersler bittikten sonra, belki hafta sonu falan bilmiyorum.
+
+725
+01:36:59,439 --> 01:37:03,260
+Benim AVS sayfama koyacağım, size u sistem toplu mesaj atacağım.
+
+726
+01:37:03,507 --> 01:37:21,387
+Tamam mı? Bu sistemi toplu mesajı atacağım. Toplu mesajı attığım zaman benim bu sistemi sayfama girersiniz. Oradan dokümanlar mı? Ne var galiba? Siz nasıl veriyorsunuz? Benim sayfayı bilmiyorum ama. Oradan dokümanlardan indirebilirsiniz. Şifre koyacağım. Ama emeğini zayi etmeyin. Şifreyi sadece ben kendi öğrencilerime vereceğim.
+
+727
+01:37:21,387 --> 01:37:23,467
+Hocam teşekkürler.
+
+728
+01:37:23,527 --> 01:37:23,807
+Tamam mı?
+
+729
+01:37:23,867 --> 01:37:25,327
+Tamamdır hocam. Çok teşekkürler.
+
+730
+01:37:25,327 --> 01:37:26,427
+Hocam çok sağ olun.
+
+731
+01:37:27,188 --> 01:37:28,827
+Tamamdır hocam. Çok teşekkürler.
+
+732
+01:37:29,363 --> 01:37:40,983
+Ben teşekkür ederim arkadaşlar. Sağlıcakla kalın. Kendinize iyi bakın. Haftaya kısmet olursa limit başlığıyla en önemli başlıklardan birisi. Limit olmazsa hayat olmaz. Size söyleyeyim. Limit yok, hayat yok.
+
+733
+01:37:41,311 --> 01:38:05,492
+Onun için limit üzerinde çok fazla duracak. Çok da örnek yapacağım. Yani belki bilmiyorum, düze yakın örnek yapacağımdır. Sonra da uygulamalar, sınavayın uygulamalar da yine başka şeyler yapar. En önemli başlığımız ribit olacak haftaya 40-30 olursa. Onu bilmiyorum ne kadar sürede bitirir. Ben fonksiyonları özellikle bir haftada bitirmek adına bazı şeyleri hızlı geçmiş olabilirim. Ama gelen başlıklarda yine kafamıza takılan şeyler olursa oradan hatırlayarak devam edeceğiz.
+
+734
+01:38:05,712 --> 01:38:08,192
+Hadi arkadaşlar, tekrar teşekkür ederim. Sağlıcakla.
+
+735
+01:38:08,612 --> 01:38:10,391
+İyi günler hocam.
+
+736
+01:38:10,391 --> 01:38:11,112
+Hoşçakalın.
+
+737
+01:38:11,271 --> 01:38:12,672
+İyi günler hocam, görüşürüz.
+
+738
+01:38:12,672 --> 01:38:13,752
+İyi günler, hoşçakalın.
+
+739
+01:38:33,332 --> 01:38:34,732
+[öğrenci] [öğrenci] hatta mısın?
+
+740
+01:38:38,452 --> 01:38:39,412
+[öğrenci] [öğrenci]
+
+741
+01:38:39,412 --> 01:38:43,372
+Çıktınız mı? Aptal mısınız?
+
+742
+01:38:46,963 --> 01:38:48,043
+Tamam çıkmışsınız.
+
+743
+01:38:57,235 --> 01:38:59,155
+Hocam şu an çıkmamış gözüküyor ama
+
+744
+01:38:59,155 --> 01:39:01,576
+cevap vermedi.
+
+745
+01:39:02,355 --> 01:39:03,275
+Yabancı ya
+
+746
+01:39:03,275 --> 01:39:05,336
+Türkçe takip edebiliyor musun diye
+
+747
+01:39:05,336 --> 01:39:06,076
+soracaktım da.
+
+748
+01:39:07,076 --> 01:39:08,115
+Hocam buradayım.
+
+749
+01:39:09,315 --> 01:39:11,235
+Türkçe takip edebiliyor musunuz?
+
+750
+01:39:11,336 --> 01:39:12,635
+Evet hocam.
+
+751
+01:39:15,127 --> 01:39:19,127
+Hocam şu an çıkmamış gözüküyor ama...
+
+752
+01:39:14,323 --> 01:39:15,883
+Yok, cücüne biliyorsunuz.
+
+753
+01:39:16,083 --> 01:39:16,523
+Evet, evet.
+
+754
+01:39:16,943 --> 01:39:23,503
+Ha, tamam. Bir sıkıntı olursa bana uyar, çünkü hızlı konuştum ama yüzde de bazen, hocam biraz daha yavaş konuşuyor musunuz falan diyorlardı.
+
+755
+01:39:23,983 --> 01:39:24,743
+Yok, tamam.
+
+756
+01:39:25,803 --> 01:39:26,643
+Onun için, tamam.
+
+757
+01:39:28,643 --> 01:39:29,323
+Teşekkürler.
+
+758
+01:39:29,343 --> 01:39:31,943
+Teşekkür ederim arkadaşlar. Ben artık çıkıyorum. Hadi hoşçakalın.
+
+759
+01:39:33,063 --> 01:39:33,803
+Görüşürüz hocam.
+
+760
+01:39:36,183 --> 01:39:37,023
+Görüşürüz [öğrenci].
+
+761
+01:39:44,051 --> 01:39:45,051
+çılın...

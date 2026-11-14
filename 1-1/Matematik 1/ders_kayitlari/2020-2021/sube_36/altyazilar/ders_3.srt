@@ -1,0 +1,5151 @@
+1
+00:00:42,515 --> 00:00:44,515
+Günaydın arkadaşlar, ekran gördüğümü.
+
+2
+00:01:00,084 --> 00:01:01,924
+[öğrenci] ekran görünüyor mu?
+
+3
+00:01:05,299 --> 00:01:07,039
+Ekran gözüküyor hocam.
+
+4
+00:01:09,379 --> 00:01:12,719
+Tamam. 52 geçiyor. 8 dakika sonra başlar.
+
+5
+00:08:21,843 --> 00:08:23,384
+Tekrar günaydın arkadaşlar.
+
+6
+00:08:26,995 --> 00:08:29,755
+Günaydın hocam.
+
+7
+00:08:30,615 --> 00:08:32,255
+Ses görüntü problemi yok değil mi?
+
+8
+00:08:41,043 --> 00:09:03,764
+Şimdi de tibaren arkadaşlar limit konusuna başlıyoruz. Bazı laflar edeyim ondan sonra konuya girelim. Limitsiz hiçbir şey yoktur arkadaşlar. Yani müsbet bilimlerde, fen bilimlerinde limit olmadan hiçbir şey yapılamaz. Şöyle düşünebilirsiniz, insan vücudunun kan neyi ifade ediyorsa müsbet bilimler için de limit onu ifade ediyor.
+
+9
+00:09:04,000 --> 00:09:10,179
+Limit'i bilmezsek, limit'i öğrenemezsek, limit yoksa matematik yoktur. Matematik olmayınca da hiçbir şey olmaz.
+
+10
+00:09:10,179 --> 00:09:25,179
+Bu vurgul yaptıktan sonra başlayalım. Önce arkadaşlar, limit fikri diye bir başlık attım ben. Limit'i nasıl kullanıyoruz, nasıl ortaya çıkıyor, yazmışım bakın. Matematik alanında en önemli temel taşlarından hakikaten önemli.
+
+11
+00:09:25,268 --> 00:09:44,268
+Eğer limiti bilmezseniz sürekli yapamıyorsunuz, türevi yapamıyorsunuz, uygulamalarını yapamıyorsunuz, integralini yapamıyorsunuz. Yani kısaca her şey limit. Bak, limit hesap yoktur. Hakikaten öyle olduğunu göreceksiniz. Önde limit şekli diye limiti aşağıya alın. Feklimizi geliştirelim. Sonra limitin...
+
+12
+00:09:44,724 --> 00:09:59,724
+matematiksel tanımı, ben onu resmi tanımlıyorum. Zaten şeyde de, İngilizcesinde de formal ve informal diye yazıyor. Form dediği zaman onu resmi diye birleştirebiliriz. Inform dediği zaman da geçici ya da sergisel diye.
+
+13
+00:10:00,000 --> 00:10:26,940
+önce sezrisel olarak limiti anlamaya çalışacağız. Sonra resmi olarak limitin delta epsilon tanımı var. Onu ortaya koyacağız. O biraz teorik, matematiyle de ilgilendiriyor. Ben yine de onu söyleyip bir tane de örnek yapacağım. Çok iyi anlaşılmayabilir. Yani tecrübe de sabit bu. Çok kolay bir şey değil hakikaten. Ama yine de anlatacağım. Sınavlarda falan onunla ilgili bir şey çıkmıyor. Delta epsilon tanımıyla ilgili bir şey çıkmıyor. Teorik bir şey zaten.
+
+14
+00:10:28,000 --> 00:10:35,600
+en üstü görevlerine sorulmuyor. Yine de yerleştireceğiz onu. Ondan sonra limit kurallarına geçince limitleri nasıl hesaplandığını göreceksiniz.
+
+15
+00:10:35,600 --> 00:10:42,799
+O alışık bir şekilde geçen hafta anlattığımız fonksiyonların hepsini uygunca sonra sürekli devam edelim.
+
+16
+00:10:44,399 --> 00:10:48,000
+Evet, bu girişten sonra tanımlayalım bakın bunu iki.
+
+17
+00:10:50,163 --> 00:10:57,163
+f, bir c sayısı civarındaki bütün nikleri için tanımlı olsun diyor. Ama c'de tanımlı olması gerekmiyor. Göreceksiniz örneklerde.
+
+18
+00:10:57,683 --> 00:11:07,423
+f, c sayısı civarındaki bütün nikleri için tanımlı olsun. Eğer x, c'ye yeterince yakın olduğunda. Şimdi arkadaşlar, yeterince yakın olduğu demek,
+
+19
+00:11:07,803 --> 00:11:17,244
+iç yerine c'ye koyacaksınız demek anlamına gelmiyor. Konması mümkün de olabilir ama konacağı anlamına gelmiyor. Nasıl olacağını şimdi örneklerde göreceksiniz.
+
+20
+00:11:17,716 --> 00:11:27,475
+ilk c sayısına yeterince yakın olduğunda, f fonksiyonunda belli bir l sayısı demek, bildiğiniz sayılardan birisi demek.
+
+21
+00:11:28,016 --> 00:11:34,216
+Belli bir l sayısına yaklaşıyorsa, f'nin c'deki limiti l'dir diyoruz ve sembolik olarak şöyle gösteriyor.
+
+22
+00:11:34,875 --> 00:11:35,816
+Ben bunu liseden biliyorum.
+
+23
+00:11:36,371 --> 00:11:48,891
+Limit x a'ya giderken fx eşittir L. Eğer belli bir L sayısına yaklaşıyorsa. Şimdi o zaman şu sorakla geliyor. Peki x a'ya giderken, yani a gibi bir R sayıya giderken, fx belli bir L sayısına yaklaşmazsa.
+
+24
+00:11:49,299 --> 00:11:54,039
+3 şekilde yaklaşmayabilir ya da 3 şekilde limitin yokluğundan bahsedilebilir.
+
+25
+00:11:54,399 --> 00:11:57,299
+Artı sonsuz çıkabilir, eksi sonsuz çıkabilir ya da yok çıkabilir.
+
+26
+00:11:57,599 --> 00:12:03,299
+Bunların detaylarına gireceğim tamam mı? İşlemleri esnasında örnekler çözerken ya da teori kısmı geldiğinde detaylarına gireceğim.
+
+27
+00:12:03,639 --> 00:12:11,279
+Şimdi bunu yani x'in belli bir c sayısına yaklaşması halinde fx nasıl bir belli bir d sayısına yaklaşıyor?
+
+28
+00:12:11,579 --> 00:12:12,679
+Onun örnek üzerinde görelim.
+
+29
+00:12:14,679 --> 00:12:15,319
+Soru.
+
+30
+00:12:15,731 --> 00:12:25,812
+Örnek 2, biri silmiştim de, kalmış burada olsun, ışığınız. x bir sayısına yaklaşırken, fx eşittir, x kare eksi 1 hangi değere yaklaşır diyor bak.
+
+31
+00:12:26,131 --> 00:12:34,331
+Şimdi bunu, lisede görmemiş olabilirsiniz, bir tablo ile anlayalım. Tamam mı? x bir sayısına yaklaşırken, x kare eksi 1 ne oluyormuş bir bakalım.
+
+32
+00:12:34,751 --> 00:12:42,711
+Şimdi arkadaşlar, bunu yaparken, bir sayısının solunda bire yakın ve sağında bire yakın değerler vererek x kare eksi 1'i hesaplıyorum.
+
+33
+00:12:42,991 --> 00:12:55,871
+Tekrar söylüyorum, x bir sayısının kolunda ve sağında bire yakın değerler alırken, x kare eksi 1'in hangi değerleri aldığını bir tablo yardımıyla hesap makinası yardımıyla hesaplıyor.
+
+34
+00:12:56,392 --> 00:13:01,791
+Şimdi x yerine 0.9 koyduk, x kare eksi 1 eksi 0.19 oldu.
+
+35
+00:13:02,311 --> 00:13:09,831
+Bakın, bire biraz daha yaklaşıyorum, x yerine 0.99 koyuyorum, x kare eksi 1 eksi 0.0199 oldu.
+
+36
+00:13:10,355 --> 00:13:35,755
+Biraz daha yaklaşayım bire. 0.999 koyduğum zaman bakın x 0.001999 oluyor. Burada bıraktım. 9'ların sayısını arttırabilirim. Artırdıkça, yani 0.9'ların sayısını artırdıkça bire çok yaklaştığımı göreceksiniz. Ama şu paraleli devam ediyor. Şimdi birinin sağ tarafına geçiyorum. Bire yaklaşıyorum. Önce bakın 1.1 koyduğumuz işini şuradan başlayalım. 0.21 olduğunu görüyorum.
+
+37
+00:13:36,052 --> 00:14:00,043
+Sonra bire yaklaşalım, 1.01 koyalım, o zaman da bakın 0.0201 olduğunu görüyoruz. Şimdi bire biraz daha yaklaşalım, 1.001 koyalım, bakın 0.002001 oluyor. Böyle böyle devam ediyoruz, şuradaki sıfırların sayısını artırdıkça bire daha çok yaklaşmış oluyoruz. Şu çift çizgiyi görüyorsunuz burada bakın, bu çift çizgiyi. Şimdi arkadaşlar, bu tabloyu yaptıktan sonra
+
+38
+00:14:00,596 --> 00:14:14,596
+Birinin sol tarafından hareket ettiğim zaman bakın, birinin sol tarafından şu şekilde hareket ettiğim zaman, dokuzların sayısını artırdığımda, şurada da noktadan sonraki sıfırların sayısını arttığını görüyorsunuz.
+
+39
+00:14:15,556 --> 00:14:23,975
+Tahmini olarak diyorum ki şurası sıfıra doğru gidecektir. Şu kısım, şuradaki dokuzların sayısını artırıp da sıfıra doğru gidecektir.
+
+40
+00:14:23,975 --> 00:14:28,076
+Sol taraftan gelen okul sıfıra doğru gittiğini tahminli olarak söylüyorum.
+
+41
+00:14:28,596 --> 00:14:55,276
+olarak çıkartacağım. Şimdi, birinin sağından, birinin biraz büyük değerlerle yaklaştığım zaman, gene bakın burada da sıfırdan sonraki sıfırdan sayısının arttığını görüyorsunuz. Bunun da tahminin sıfıra doğru yaklaştığını, dikkat et, yaklaştığını fark ediyorum. Dolayısıyla şu iki oku görürseniz bakın, okun başlarına bakın, her iki okta aynı sayıyı gösteriyor. Tamam mı? Bu tahminle her iki okta aynı sayıyı gösteriyor. Dolayısıyla limit odur diyorum.
+
+42
+00:14:55,988 --> 00:15:18,148
+Her kökte aynı sayıyı gösterdiği için limit o da diyor. Aşağıya yazmışım bakın. Tablodan anlaşılacağı gibi x1 sayısına yaklaştık ya, f' x de x'lerine 1 koydum. Biraz sonra açıklayacağım. x'lerine 1 koydum. 1'in kare x'i 1 eşittir 0 sayısına yaklaşmaktadır. Ama hiçbir x değeri için, 1'e yakın x değeri için x'e 1 eşittir 0 olmaz.
+
+43
+00:15:19,091 --> 00:15:25,572
+Limit halinde x1'e yaklaşırken x kare eksi 1'in 0 olduğunu söylüyoruz. Bakın, limit halinde böyle olduğunu söylüyoruz.
+
+44
+00:15:25,812 --> 00:15:31,652
+Koyacağınız hiçbir bire yakın x değeri x kare eksi 1'in 0 yapmaz. Bu yaklaşmak. Tamam mı?
+
+45
+00:15:31,912 --> 00:15:37,652
+Bu durumda, tablodan anlaşılan bu durumda, limit x1'e giderken x kare eksi 1 eşittir 0 şeklinde yazıyoruz.
+
+46
+00:15:38,031 --> 00:15:45,591
+Ve okuduğumuzda, bakın, x1 sayısına yaklaşık ve f fonksiyonunun limiti 0 diye ifade ediliyormuş. Tamam mı?
+
+47
+00:15:46,004 --> 00:15:51,443
+Şimdi notu bir görelim. Bakın, bu limit değeri bulunurken fonksiyonu da x değerine 1 koyduk.
+
+48
+00:15:53,395 --> 00:16:16,384
+dikkat edin. Fakat bu özel durum için geçerli olan x yerine doğrudan değer koyma işlemi birçok önemli limite yanlış cevap verebilir veya hiç cevap veremeyebilir. Daha net söylersek her zaman x yerine x'in gittiği sayıyı koymak sonucu vermez ya da saçma sapan bir durum ortaya çıkarabilir diyor. Bunun gerçekleştirilmesi...
+
+49
+00:16:16,384 --> 00:16:26,384
+tablo ile yapılıyor. Tablo ile yapılıyor ama her vefasında bu tablo işlemini yapmayacağız. Mesela x sıfıra giderken sinüs x bölü x nereye gidiyordu biliyor musunuz? Hatırlıyor musunuz?
+
+50
+00:16:27,483 --> 00:16:30,543
+x sıfıra giderken sinüs x bölü x. Hatırlayan var mı?
+
+51
+00:16:34,292 --> 00:17:00,971
+Yok mu? 93 kişiden hiç kimse hatırlamadı mı? x sıfıra giderken sinüs x bölü x nereye gidiyor? 1'e gidiyor. 1'e gidiyor. Bakın. 0'ın sağınları solundan x yerine sinüs x bölü x ve x yerine değerler koyarsanız hiçbir zaman 1 olduğunu göremeyeceksiniz. 1'e çok yakın değerler olduğunu göreceksiniz. Bunun limit haline 1. Şimdi gelelim ikinci örneğe arkadaşlar. Bakın.
+
+52
+00:17:01,748 --> 00:17:18,907
+2 ve 2 olmuştur. Düzeltmeyi unutmuştur. Neyse şey, avet sayfama koyarken düzeltirim. Şimdi şu fonksiyona bakın. x kare x'i 1 bölü x'i 1. İle verilen f fonksiyon x 1 civarındayken nasıl lağlanır? Şimdi arkadaşlar, burada hiç kimse x yerine 1 koyamaz. Koyarsanız ne olur?
+
+53
+00:17:20,307 --> 00:17:22,048
+Tamam, sıfır olur. Çarpanlarına ayırma.
+
+54
+00:17:22,048 --> 00:17:28,168
+Bakın, hem pay hem payda sıfır olur. Sıfır bölü sıfır, biraz sonra gelecek, ona limite belirsizlik diyeceğiz.
+
+55
+00:17:28,567 --> 00:17:36,768
+Normal olarak, birisi size sıfır bölü sıfır nedir derse, sıfır bölü sıfırdan ne anlıyorsunuz derse, limite belirsizlik anlıyorum diyeceğiz.
+
+56
+00:17:37,387 --> 00:17:43,327
+Limiti katmazsanız eğer, anlamsız bir şeydir. Çünkü sıfıra bölme tanımlanmamıştır, tamam mı? Bir anlamı yoktur.
+
+57
+00:17:43,508 --> 00:17:59,508
+ama limit de bunun adına belirsizlik diyoruz. Şimdi x yerine 0 bölü 0 gibi bir durum ortaya çıkıyor. Buraya yazmışım bakın. Bununla birlikte eğer x farklı biri olduğunu kabul ederseniz
+
+58
+00:17:59,571 --> 00:18:04,851
+Eğer x farklı bir olduğunu kabul ederseniz, kare ve faydayı ortak çarpandan ayırıyorsunuz.
+
+59
+00:18:05,991 --> 00:18:08,591
+x kare eksi bir bir x eksi bir eşittir x artı bir yazıyorsunuz.
+
+60
+00:18:08,931 --> 00:18:11,491
+Burada bir şey söylüyorum arkadaşlar şu yazıyı gördükten sonra.
+
+61
+00:18:11,491 --> 00:18:18,192
+Benim öğrencim kesinlikle faydanın sıfırdan farklı olduğunu bilmeden bölme yapamaz.
+
+62
+00:18:19,539 --> 00:18:28,539
+Bir kez daha söylüyorum. Benim öğrencim kesinlikle paydanın sıfırdan farklı olduğunu bilmeden ya da söylemeden kesinlikle şu işlemi yapmamalıdır.
+
+63
+00:18:29,039 --> 00:18:33,559
+Bakın ben buraya yazdım biliyor musunuz? x farklı 1 olduğunu kabul ederseniz x artı 1 olur.
+
+64
+00:18:44,500 --> 00:19:08,480
+Tablosu var mı bunun? Var. Şimdi şurayı gördünüz değil mi? Burayı gördünüz. Eğer arkadaşlar bunu bu şekilde düşünürsek sadece ve sadece bunu limitle yapabiliriz. Bak. Bu sadeleştirilmiş işlemi limitle yapabiliriz. Normal olarak bu işlem yapılamaz. Bazı kitaplar maalesef yanlış yazmış. Şimdi üşenli mi yazardım ama bazı kitaplar yanlış yazmış. Doğru değil. Limitte...
+
+65
+00:19:08,480 --> 00:19:31,840
+Limite geçerken bunu yapabilirsiniz. Ben bunu söyledim. Şimdi şuraya gelelim bakın. Şuradan hareket ederseniz x1'e giderken x kare x1, x8, değil mi? Eşittir limit x1'e giderken x artı 1. Halbuki siz x farklı bir dediniz. Burada da ne yapıyorsunuz? x yerine 1 koymuş oluyorsunuz ki 2 çıktı. Değil mi? Yani amacımız aslında ne ya da hedefimiz ne? Şu şekilde yapmak.
+
+66
+00:19:32,852 --> 00:19:59,632
+Şuradaki değer değil, birinin solunda ve birinin sağında bir yakın değerler vermek. Onu tablodan görelim şimdi bakın. Birinin solunda bire yakın değerler veriyor. Bakın 0.9 koyduğum zaman 1.9 değil mi? 0.99 koyduğum zaman 1.99. 9'un sayısını arttırdığım zaman bakın 1.9'ların sayısı artıyor. O zaman şuradan bir tahmin yürütebiliriz değil mi? Rahatlıkla. Sol taraftan baktığımız zaman bir tahmin yürütebiliriz. Rahatlıkla.
+
+67
+00:20:00,000 --> 00:20:08,279
+2'ye doğru gidiyor. Ama hiçbir x değer için, bire yakın hiçbir x değer için burada çıkacak değerin bir 2 olduğunu söyleyemez.
+
+68
+00:20:09,039 --> 00:20:11,799
+2'ye çok yakın. O zaman limit hali 2'dir diyor.
+
+69
+00:20:12,468 --> 00:20:26,568
+Bire yakın, birinin sağındaki değerlerle gittiğim zaman bakın, 1.1 koyunca 2.1, 1.01 koyunca 2.01, sıfırların sayısını yukarıda arttırdığımız zaman, yani bire çok yaklaştığımız zaman, bakın bu da 2'ye çok yaklaşıyor.
+
+70
+00:20:26,807 --> 00:20:33,508
+Dolayısıyla arkadaşlar, sol taraftan ok çıkardığım zaman da, sağ taraftan ok çıkardığım zaman da, bunun 2'ye doğru gittiğini söylüyorum.
+
+71
+00:20:33,807 --> 00:20:39,867
+Hakikaten 2'yi görüyor musun? Bu pratik hesabı olacak. Şurası pratik hesabı, bu tabloyla ispat oluyor.
+
+72
+00:20:40,468 --> 00:20:51,148
+arası tabloyla basılıyor. Şimdi örnek 3'e gelelim. Örnek 3 çok önemli arkadaşlar. Genel ispari önemli. Çok basit ama çok önemli.
+
+73
+00:20:52,108 --> 00:20:59,488
+f seçistir mutlak x bölü x. En basit hali bu zaten. İlervenen f fonksiyonunun diyor x0'a yaklaşırken davranışını inceleyelim.
+
+74
+00:21:00,627 --> 00:21:26,027
+Elinizde mutlak x'in böyle x fonksiyonu var. x sıfıra yaklaşırken davranışı inceleyinizdir. Şimdi iç yerine sıfır koyamıyorsunuz, veriyorsunuz ama tablo yapabilirsiniz. Şimdi ben daha geniş tutmuşum. Sıfırın solunda değerler vermişim. Bakın, eksi 2 vermişim, eksi 1 çıkmış, eksi 1 vermişim, eksi 1 çıkmış, eksi 0.1 vermişim, eksi 1 çıkmış. Sıfıra daha çok yaklaşmaya devam etsem hep eksi 1 bulacağım. Değil mi? Sol taraftan.
+
+75
+00:21:26,675 --> 00:21:54,295
+sıfırın solundan sıfıra yakın değerler vermeye devam ettim. Daima eksi 1 buluyorum. Sıfırın sağ tarafında sıfıra yaklaşırken, bak 2 verdiğim zaman 1, 1 verdiğim zaman 1, 0.1 verdiğim zaman 1. Mesela 0.001 versen gene 1. Şimdi oklayalım bunu. Bak sıfırın solundan sıfıra doğru geldiğim zaman, burada gördüğüm yerler, çizgiye dikkat edin demiştim. Sol tarafından sıfıra doğru geldiğim zaman hep eksi 1 oluyor. Görüyor musunuz? Hepsi eksi 1. O zaman burası eksi 1.
+
+76
+00:21:55,251 --> 00:21:59,051
+sıfıra yakın sıfırın sağ tarafından değerler verdiğim zaman da hepsi bir oluyor.
+
+77
+00:22:00,092 --> 00:22:02,351
+Demin şu iki örnekte söyledim.
+
+78
+00:22:02,351 --> 00:22:06,612
+Bak, bu örnekte oklar aynı sayıyı gösterirse limit odur dedim.
+
+79
+00:22:07,211 --> 00:22:08,572
+Tamam mı? İkinci örneğe geldim.
+
+80
+00:22:09,211 --> 00:22:14,511
+Oklar aynı sayıyı gösterirse, tahminin sayımız da yaklaşık değerimiz, oklar aynı sayıyı gösterirse limit odur dedim.
+
+81
+00:22:14,891 --> 00:22:16,592
+E burada oklar aynı sayıyı göstermiyor.
+
+82
+00:22:17,523 --> 00:22:25,063
+Değil mi? Sıfırın solundan sıfıra doğru geldiğimiz zaman eksi 1 oluyor. Sıfırın sağından sıfıra doğru geldiğimiz zaman artı 1 oluyor. O zaman ne diyeceğiz arkadaşlar?
+
+83
+00:22:25,784 --> 00:22:26,523
+Limit yok mu?
+
+84
+00:22:27,059 --> 00:22:54,179
+Limit yoktur diyeceğiz. Yani hiç kimse şunu diyemez. Ya işte eksi 1'i gördüm, eksi 1'dir. Ya da a1'i gördüm, a0 diyemez. Herkes aynı şeyi söylemek zorundadır. Dolayısıyla mutlak x bölü x'in x sıfıraya açısının limiti yoktur. Bakın yoktur kelimesini unutmayacağız. Tamam mı? Ölene kadar, artık söyledim. Benim öğrendiğim ölene kadar yoktur kelimesini unutmayacağız. Burada limit yoktur. Niye? Aynı sayıya, oklar aynı sayıyı göstermediği için limit yoktur.
+
+85
+00:22:55,059 --> 00:23:03,859
+Her zaman tablo mu yapacağız? Hayır, yapmayacağız. Demin söyledim ya, limitin resmi tanımını yapıp ona örnek verdikten sonra limit hesaplama kuralları var.
+
+86
+00:23:04,239 --> 00:23:08,039
+Limit alma kuralları var. O kuralları verdikten sonra daha pratik işlemler yapacağız.
+
+87
+00:23:08,440 --> 00:23:11,480
+Dolayısıyla arkadaşlar, burada limit yoktur diyoruz.
+
+88
+00:23:12,692 --> 00:23:22,771
+Şimdi o zaman şu var. Matematikteki hiçbir şey durduk yerde ortaya atılmamıştır. O ortaya çıkan her şeyin mutlak suretle bir sebebi açıklanabilir bir hali vardır.
+
+89
+00:23:23,132 --> 00:23:28,392
+Şimdi o zaman arkadaşlar, burada x1 sayısını ve x1 sayısını hiç dikkate almayacak mıyız?
+
+90
+00:23:28,652 --> 00:23:38,032
+Ya da mutlak x bölüş şeklinde verilen ifadeleri yok mu sayacağız? Hayır, yok saymayacağız. O zaman bunun da bir anlamı olabilir. Hatırlayan var mı?
+
+91
+00:23:38,804 --> 00:23:40,903
+Bunun da bir anlamı olacak. Hatırlayan var mı?
+
+92
+00:23:43,483 --> 00:23:43,983
+Yok.
+
+93
+00:23:44,443 --> 00:23:45,784
+Parçalı fonksiyon ne oluyor?
+
+94
+00:23:45,923 --> 00:23:46,264
+Efendim?
+
+95
+00:23:46,403 --> 00:23:47,784
+Parçalı fonksiyon ne oluyor?
+
+96
+00:23:48,024 --> 00:23:49,744
+Biraz daha sesli konuşuruz. Sesini uzayamadım.
+
+97
+00:23:50,079 --> 00:23:52,000
+Parçalı fonksiyon mu oluyordu hocam?
+
+98
+00:23:52,440 --> 00:24:00,360
+Hem parçalı fonksiyon, limit diye de bir adı var onun. Soldan ve sağdan limit kavramını ortaya çıkarır. Tamam mı?
+
+99
+00:24:00,559 --> 00:24:04,900
+Dedim ya, matematikte hiçbir şey durduk yerde ortaya atılmamıştır. Mutlaka sebebi vardır.
+
+100
+00:24:05,219 --> 00:24:11,699
+Bakın böyle fonksiyonların x'e 0'la davranışını incelediğimiz zaman farklı davranış gösteriyor değil mi?
+
+101
+00:24:12,039 --> 00:24:16,400
+0'un sol tarafında farklı bir davranış gösteriyor, 0'un sağında farklı bir davranış gösteriyor.
+
+102
+00:24:16,400 --> 00:24:18,079
+O zaman 0'un soluna ayrı değerini...
+
+103
+00:24:18,079 --> 00:24:25,079
+0'ın sağını ayrı değerlendirebiliriz. O zaman da onun adı sağdan ve soldan limit diye geçeceğiz. Tamam mı?
+
+104
+00:24:25,079 --> 00:24:43,079
+Şimdi geldik parçalı bir fonksiyona. Benim öğrendiğim parçalı fonksiyonları çok sevmek zorundadır. Bakın en kolay, en şık, en güzel sorular parçalı fonksiyonlarda üretilir. Onun için parçalı fonksiyonları çok sevindirmiştir. Şu örnek çok basit örneği çözelim. Daha çok bununla ilgili çok örneksiz.
+
+105
+00:24:44,084 --> 00:24:49,144
+Fonksiyon bu şekilde tanımlanmış. x eşitli sıfırdaki limiti 3 oldu. 3'tür demişim cevabını.
+
+106
+00:24:49,324 --> 00:24:54,844
+Cevabını 3'tür demişim. Bakalım. Yani x eşitli sıfırdaki limitini bulur diye de sormuş olabilirim.
+
+107
+00:24:56,824 --> 00:25:04,264
+Şimdi arkadaşlar, fx x fa tuttılırken x kare artı 2 ile tanımlanmış. x eşitli sıfır iken 2 ile tanımlanmış.
+
+108
+00:25:04,584 --> 00:25:09,564
+Şimdi x eşitli sıfırdaki limitine bakarken şurada bakıyoruz. Tamam şurada. Buradan değil.
+
+109
+00:25:10,228 --> 00:25:17,307
+Daha çok parçalı fonksiyonlar da gelecek. Küçüklü büyüklü gelecek. O süreklilikle daha çok karşımda çıkacak. Orada da daha detaylı izah ederim.
+
+110
+00:25:17,648 --> 00:25:25,728
+Şimdi bu fonksiyonun x eşitli sıfırdaki limiti hesaplarken, limit x sıfıra giderken f'yi çiziyorsunuz. Eşittir limit x sıfıra giderken x kare artı 3.
+
+111
+00:25:26,068 --> 00:25:30,907
+Şimdi burada bir problem yok. Görüyor musunuz? Burada bir problem yok. O zaman x yerine sıfır koyduğunuz cevap düştü.
+
+112
+00:25:38,000 --> 00:25:45,220
+limiti alınan değerde herhangi bir problem yok ise işleyen o değeri koyarak sonucu elde ediyoruz.
+
+113
+00:25:46,579 --> 00:25:47,579
+Tekrar etmeni ister misiniz?
+
+114
+00:25:50,039 --> 00:25:52,019
+Bir defa daha der misiniz hocam?
+
+115
+00:25:53,159 --> 00:26:01,899
+Eğer bir fonksiyonun bir değerde limitini hesaplarken o değer fonksiyon için bir problem teşkil etmiyorsa,
+
+116
+00:26:03,079 --> 00:26:05,299
+bakın şunda bir problem teşkil ediyor.
+
+117
+00:26:06,420 --> 00:26:31,000
+Değil mi? Şunda da bir problem teşkil ediyor. Baştan söylüyorum, eğer limit değeri fonksiyon için bir problem teşkil etmiyor ise, o değeri direkt fonksiyonla yerine yazıp limiti buluyorsunuz. Problem teşkil etmiyorsunuz. Ama sizin karşınıza çıkacak örneklerin %99, milyar tane 9'unda problem teşkil edecek. Problem teşkil etmeyen örnek karşınıza çıkmaz diye düşünüyorum.
+
+118
+00:26:31,104 --> 00:26:47,023
+Tamam mı? Limit düştü diyoruz. x yerine sıfır koyduk. Bakın x farklı sıfır değil mi? Limit böyle bir şey işte. Onun için böyle tablolarla anlatmayı uygun buluyorum arkadaşlarım. Limit böyle bir iş. Hocam bir şey söyleyebilir miyim? İsminizi de söyletseniz. [öğrenci].
+
+119
+00:26:47,443 --> 00:26:48,384
+Tamam, buyurun [öğrenci].
+
+120
+00:26:48,763 --> 00:26:56,084
+Şimdi bu örnek 4'te bizim x0'deki limitine 3 dedik, aşağıda da x0'dekine 2 dedik. 2 değer çıkıyor.
+
+121
+00:26:56,703 --> 00:27:00,983
+Söylüyorum, söylüyorum. Şimdi limiti 3'tür, tamam mı? Burada anlaştık.
+
+122
+00:27:01,344 --> 00:27:07,403
+Bakın, f0 değeri soruyu soran tarafından, yani benim tarafımdan 2 olarak alınmış.
+
+123
+00:27:09,144 --> 00:27:13,144
+Limit değeri 3, fonksiyonun iç seçtiği 0'daki değeri 2.
+
+124
+00:27:13,811 --> 00:27:27,172
+Tamam mı? Şimdi matematikteki hiçbir şey durduk yerde ortaya atılmadığına göre bunun şu f0 eşitliği için limitle bir alakası var. Bunu bilen var mı? Limit dolanın işçesini. Hatırlayan var mı?
+
+125
+00:27:29,591 --> 00:27:31,652
+Sürekli süreksizlik bu halde.
+
+126
+00:27:31,731 --> 00:27:33,731
+Kim konuştu? İsminizi de söylesen.
+
+127
+00:27:33,971 --> 00:27:34,331
+[öğrenci].
+
+128
+00:27:34,804 --> 00:27:59,364
+[öğrenci], teşekkür ediyorum. Bakın [öğrenci]'e teşekkür ediyoruz. Bu limit değerinin fonksiyon değeriyle alakası süreklilik sorumunu ortaya çıkaracak. Görüyorsunuz değil mi? Matematikte hiçbir şey durduk yerde ortaya atılmamıştır. Hepsinin bir anlamı vardır. Şuradaki tanımlanan değer, bunu tabii soruyu soran tanımlıyor. Şu değer bu değerle alakalıdır. Eşit olmasıyla ilgili veya eşit olmamasıyla ilgili bir isim alacak.
+
+129
+00:27:59,827 --> 00:28:02,228
+Tamam mı? Bunu da anladık. [öğrenci] anladın değil mi?
+
+130
+00:28:02,607 --> 00:28:03,367
+Tamam hocam anladım.
+
+131
+00:28:03,367 --> 00:28:12,548
+Şimdi arkadaşlar, yukarıdaki 2 örnek, şu örnekte, en azından mutlak değer örneğinde, 0'un sonunda bir sayı çıkmıştı, sağında bir sayı çıkmıştı.
+
+132
+00:28:12,827 --> 00:28:20,087
+Bunu ya limit yoktur deyip geçiştirmiyoruz. Yani burada olayı noktalamıyoruz, kapatmıyoruz. Bunlara da bir anlam veriyoruz.
+
+133
+00:28:20,243 --> 00:28:25,003
+demiştim. Nasıl anlamları verdiğimizi tanımının arkasından bir daha anlatayım.
+
+134
+00:28:25,503 --> 00:28:32,663
+Ah işte çıktı bakın. Sağdan ve soldan limitler. Şimdi neden sağdan ve soldan limitlere ihtiyaç var onunla birlikte burada bunu da söyleyeyim.
+
+135
+00:28:32,663 --> 00:28:40,243
+Mesela arkadaşlar köküks son sorunu göz önüne alalım. Siz öğrendiğiniz ölene kadar unutmayacaksınız ki köküks ne zaman tanımlıdır?
+
+136
+00:28:43,092 --> 00:28:45,972
+pozitif olduğunda, x'in 0'dan büyük olduğunda.
+
+137
+00:28:46,352 --> 00:28:52,852
+Megazip olmadığı zaman ya da x'in 0 olduğu zaman diyeceksiniz. Pozitif yarım oluyor, eksik kalıyor.
+
+138
+00:28:53,212 --> 00:28:53,912
+Tamamdır hocam.
+
+139
+00:28:53,912 --> 00:28:58,532
+Ben ne dedim yukarıdaki örneklerin tamamında?
+
+140
+00:28:59,039 --> 00:29:06,279
+O değerin sağında ve solunda değere yakın, değil mi? O değere yakın değerleri vererek bir tablo yapacaksınız.
+
+141
+00:29:06,619 --> 00:29:11,159
+Şimdi, kök x için x eşittir sıfırın solunda değer vermek mümkün mü?
+
+142
+00:29:13,839 --> 00:29:14,519
+Değil.
+
+143
+00:29:14,919 --> 00:29:19,179
+Değil. O zaman kök x için x eşittir sıfırın solu tanımlı değil.
+
+144
+00:29:20,299 --> 00:29:25,259
+O zaman direkt kestirip, limit yoktur, bu fonksiyonu kaldırıp atalım dememiz lazım, öyle mi?
+
+145
+00:29:25,663 --> 00:29:28,663
+O zaman bu fonksiyonla işimiz yok dememiz lazım.
+
+146
+00:29:28,663 --> 00:29:29,663
+Böyle değil.
+
+147
+00:29:29,663 --> 00:29:30,663
+Evet hocam.
+
+148
+00:29:30,663 --> 00:29:31,663
+Böyle değil.
+
+149
+00:29:31,663 --> 00:29:34,663
+Çöküş, yeryüzünde var olan en önemli fonksiyonlardan birisidir.
+
+150
+00:29:34,663 --> 00:29:35,663
+Niye?
+
+151
+00:29:35,663 --> 00:29:38,663
+Uzun şartlarda kimin tersiydi?
+
+152
+00:29:38,663 --> 00:29:40,663
+Uzun şartlarda.
+
+153
+00:29:40,663 --> 00:29:43,663
+Bunu örnek olarak çözmüştüm.
+
+154
+00:29:43,663 --> 00:29:45,579
+Kimin tersiydi? Uzun şartlarda.
+
+155
+00:29:45,779 --> 00:30:13,419
+x karenin tersiydi değil mi? Görüntü kümetini ayarlıyorduk, x karenin tersi oluyordu. Dolayısıyla o zaman kare fonksiyonunu da işleyemezsiniz. Yani birçok fonksiyonunu işlemez hale getirebilirsiniz. İşler hale getirmek için arkadaşlar, bilim insanları yeni kavramları ortaya atmışlar. Soldan ve sağdan. Mesela çökük x küçük sıfır iken tanımlı olmadığından, x büyü geçiş sıfır iken tanımlı olduğu için o zaman limiti de x büyü geçiş sıfır. Yani sıfırın sağında değerlendirmemiz lazım çökük.
+
+156
+00:30:13,728 --> 00:30:22,508
+O zaman sağında değerlendirmenin adı sağdan limit olacak. Solunda değerlendirmenin adı da soldan limit olacak. Sonra bunların birleşimiyle ilgili de bir şey söyleyeceğiz.
+
+157
+00:30:24,228 --> 00:30:35,788
+Önce tanımı yapıyorum. Bunlar arkadaşlar informal diyorlar ya İngilizce'de. Nasıl diyelim? Geçici diyelim, resmi olmayan diyelim. Nasıl anlatsanız ya da kelimelerle diyelim.
+
+158
+00:30:35,788 --> 00:30:38,128
+Şimdi tanımlıyorum.
+
+159
+00:30:38,740 --> 00:30:56,159
+Bakın, eğer x c sayısına soldan yaklaşırken, yani c'nin solundan, sıfırın solundan gibi, x c sayısına soldan yaklaşırken, f, lebir gibi bir değere yaklaşırsa, lebir bir R'ye sayı, bakın sayıya diyorum, dikkat edin, sonsuz bir sayı değildir.
+
+160
+00:30:56,480 --> 00:31:03,179
+Ben sayı kelimesini kullandığım zaman, size verdiğim notlar da daima böyledir, sayı kelimesini kullanıyorsam, bu bildiğiniz bir R sayı.
+
+161
+00:31:03,667 --> 00:31:08,667
+Çünkü sonsuz ve eksi sonsuz birer sayıyı temsil etmiyor. Bununla anlaşmıştık.
+
+162
+00:31:09,047 --> 00:31:20,767
+Şimdi, L1 gibi bir sayıya yaklaşırken, yaklaşırsa, x c sayısına soldan yaklaşırken, f x L1 gibi bir R sayıya yaklaşırsa, f'nin c'deki soldan limiti L'dir deniyor.
+
+163
+00:31:21,167 --> 00:31:23,767
+Tembolik olarak şöyle yazılıyor, bakın. Limit x c.
+
+164
+00:31:24,468 --> 00:31:36,688
+üzeri eksi koyduğumuz zaman soldan yaklaşmak demek ki arkadaşlar. fx eşittir L1. Artık önce de sağdır. Aynı şekilde limit x, y'ye artı ile gidelim fx eşittir L2 yazılıyor. Bu da sağdan limit demiş.
+
+165
+00:31:37,288 --> 00:31:42,928
+c'nin üzerine, sayının üzerine eksi koyduğumuz zaman soldan limit, artı koyduğumuz zaman sağdan limit. Şimdi
+
+166
+00:31:44,147 --> 00:32:00,028
+not 2'yi ben bir kere okuyayım. Bakın bir fonksiyonun bir değerde. Soldan ve sağdan limitlerin mevcut olması fonksiyonun o noktada limitinin mevcut olacağı anlamına gelmez. Bunu bir daha tekrar ediyorum kayda geçsin diye. Bir fonksiyonun bir değerde.
+
+167
+00:32:00,500 --> 00:32:24,100
+soldan ve sağdan limitlerinin mevcut olması fonksiyonun o noktada limitinin mevcut olacağı anlamına gelmez. O mutlak x böyle işte de gördük. Soldan ve sağdan limitler vardı ama eşit değildi. Onun için limit yoktur demiş olalım. Şimdi şurada bakın. Hem bir vikletiyen için almışım hem de güzelce boyamışım dikkatinizi çeksin diye.
+
+168
+00:32:25,971 --> 00:32:48,011
+Burayı ölene kadar unutmayacağız. Tamam mı? Şurayı. Örnek 5'in üstündeki şu boyanmış ve dikdört kentriği almış kısmı ölene kadar unutmayacağız. Eğer bir f fonksiyonunun x eşitli diye için limiti mevcut olacaksa soldan ve sağdan limitleri hem var olacak hem eşit olacak. Tamam mı? Şu üçlü birbirine eşit olursa limit mevcuttur diyecek. Bunu ölene kadar unutmuyorsunuz.
+
+169
+00:32:48,096 --> 00:33:16,036
+Eğer bir fonksiyonun bir değer için limiti mevcut olacaksa, soldan ve sağdan limitleri mevcut ve eşit olacak. Bunun birçok açılımını göreceksin. Tamam mı? Bu diktörülerin için aldığım boyalı ifadenin birçok açılımını göreceksiniz. Örnekler geldikçe onları açıklarım ya da teori kısımları da gelirse açıklarım. Burada arkadaşlar bazı anlaşılmayan ufak tefek noktalar da olacak ileride sorularda falan. Tecrübe de tabi. Çok sorulduğu için iyi.
+
+170
+00:33:16,096 --> 00:33:28,855
+Eylül yoluyla ben çok zorundayım. İzah ederim size. Şimdi, artık parçalı fonksiyonların küçük büyükleriyle devam ediyoruz. Örneği görüyorsunuz, bu rakamların hepsini düzeltmeyi unutmuşum. Bir daha kontrol ederim bunları.
+
+171
+00:33:30,996 --> 00:33:40,936
+x eşitlik sıfır arkadaşlar şu fonksiyonun için nasıl bir sayıydı? Bunu unutmayın. Parçalı fonksiyonları kankörlüm demiştim. x eşitlik sıfır. Şu fonksiyonun için nasıl bir sayıydı?
+
+172
+00:33:42,163 --> 00:34:00,524
+Kritik sayıydı. Söylese de söylemese de. Kritik sayısı sıfır. Onun için orada söylüyor zaten. F'nin seçtiği sıfırda limiti mevcut mudur? diyor. Matematikte arkadaşlar, müsvet bilimlerde yalın olarak evet ya da hayır diye bir cevap yoktur.
+
+173
+00:34:00,884 --> 00:34:23,224
+Benim öğrencim mevcutmudur sorusuna evet ya da hayır diye cevap veremez. Şöyle ama yazabilir. Bunu da sevmiyorum ama böyle devam edilebilir. Evet çünkü, hayır çünkü diye devam edilebilir. Etmeyin. Benim öğrencim evet çünkü, hayır çünkü diye devam etmesin. Mevcutmudur diye bir soru sormuş ya. Hiçbir şey demeden bakıyoruz. Bakalım şimdi.
+
+174
+00:34:23,603 --> 00:34:45,243
+Verilen fonksiyonun bir seçimli sıfırdaki soldan ve sağdan limitlerini hesaplayalım. Sonra mevcut muzulun cevabını söyler. Soldan limit arkadaşlar, bakın, x küçük sıfır iken alınan limit demek. Soldan limit, x küçük sıfır iken alınan limit demek. Alıyorum, limit x sıfıra soldan giderken f eşittir. Limit x sıfıra soldan giderken kim alıyorum?
+
+175
+00:34:45,664 --> 00:34:51,884
+Soruyu kim sorduysa ona saygı duyarak, bakın x küçük sıfır için x kareyi koymuş, x kareye doğru. Sıfır çıktı.
+
+176
+00:34:52,484 --> 00:35:00,423
+Sağdan limit, limit x sıfır artı ile giderken fx eşittir. Limit x sıfır artı ile giderken, bakın, x büyük sıfır için bir art x tanımlanmış.
+
+177
+00:35:00,704 --> 00:35:06,604
+O zaman bir art x koyuyorum, eşitli bir çıkıyor. Görüyorsunuz, hem soldan hem de sağdan limitler mevcut.
+
+178
+00:35:06,604 --> 00:35:10,944
+Ama onlar birbirini eşit değil. Şurayı ölener, karar unutmayacağım.
+
+179
+00:35:11,188 --> 00:35:23,568
+fonksiyonun, verilen fonksiyonun, parçal fonksiyonun hem soldan hem de sağdan limitleri mevcut olmakla birlikte eşit değil. Dolayısıyla cevabımız verilen fonksiyonun x eşitli sıfırdan limiti yoktur.
+
+180
+00:35:24,648 --> 00:35:33,868
+Tamam mı? x eşitli sıfırdan limiti yoktur. Bir sonraki örnekte de aynı şeyler var arkadaşlar. Bakın soldan limit hesaplıyorsunuz, sağdan limit hesaplıyorsunuz, 2 çıkıyor.
+
+181
+00:35:34,356 --> 00:35:43,876
+Tamam. Soldan limit hesapladınız, 2x çıktı. Sağdan limit hesapladınız, 2x çıktı. [öğrenci] beni duyuyor musunuz?
+
+182
+00:35:43,896 --> 00:35:44,956
+Ben duyuyorum acaba.
+
+183
+00:35:45,236 --> 00:35:48,076
+Bakın burada da görüyor musunuz? Limit değeriyle bu aynı değil.
+
+184
+00:35:48,467 --> 00:36:04,367
+Ben bunu bilinçli olarak yazdım. Bu soruyla karşılaşayım diye. Bunları bilinçli olarak yazıyorum. Yani şuraya 2 koyabilirdim. Özellikle koymuyorum. Bazıları dikkat etsin, dikkatini çeksin ya da göremezse sorsun diye özellikle yapıyorum. Bu üçün de bir anlamı var.
+
+185
+00:36:07,923 --> 00:36:27,324
+Diğer örnek dedi arkadaşlar, diğer örnek, önceki hiç örnekten biraz değişik. Şimdi burada bakın, eğer x eşitli sıfırı dikkate alsaydı, kritik sayısı x eşitli sıfır ya bunu, sıfırı dikkate alsaydı başka bir şey söyleyecek. Burada x eşitli ikideki limit ile bakınız diyor.
+
+186
+00:36:28,052 --> 00:36:37,992
+Fonksiyon böyle verilmiş ki x-axis limit, x-axis limit, x-axis limitine bakınız diyor. Şimdi arkadaşlar, bu fonksiyon x-axis limit, x-axis limit, x-axis limitine bakarken hangi parçayı kullanacağız?
+
+187
+00:36:40,712 --> 00:36:42,132
+Şuradan büyük olanı.
+
+188
+00:36:43,603 --> 00:36:49,163
+Bunu söyleyerek daha yüksek sesler ya da mikrofonuna yakın durursanız duyun sesini.
+
+189
+00:36:49,283 --> 00:36:51,163
+Sıfırdan daha büyük olanı kullanmayacak mıyız?
+
+190
+00:36:51,304 --> 00:36:57,703
+Evet. x eşittir, ikideki limitini dediğine göre x büyüyeşit sıfırdan alacağız. Değil mi?
+
+191
+00:36:58,063 --> 00:37:04,823
+x eşittir, iki de diyor. Mesela x eşittir, ekşir de deseydi o zaman hangi parçayı kullanacaktık?
+
+192
+00:37:05,268 --> 00:37:15,748
+Evet, 1x x kareyi kullanacaktık. x x'i 2'deki limitini hesaplayın dediği için 5x x'i kullanacağız. Kullandık 5x x'i 2, cevap 1.
+
+193
+00:37:16,748 --> 00:37:26,188
+Tamam, x x'i 2'deki limiti, cevap limiti 1 oluyor. Bunun gibi bakın, sıfırdaki soldan limiti arkadaşlar, şurayı kullanacağımız için.
+
+194
+00:37:27,027 --> 00:37:50,867
+1, sıfırdaki sağdan limiti, sıfırdaki sağdan limiti, gene bunu kullanacağımız için 5 çıkıyor. Tamam mı? Evet, bir de grafik üzerine verelim. Sınav testi olursa eğer böyle sorularla karşılayacaktım. Şöyle, bu, şu parçalı fonksiyon verilmiş. Bu da parçalı, aslında bu da parçalı ama grafik olarak verilmiş. Sınavlarda şu literi de görmüş olabilirsiniz.
+
+195
+00:37:52,403 --> 00:38:04,443
+bir grafik veriyor, o parçalı fonksiyon, işte şuradaki limitini hesaplayınız diye soruluyor. Bakalım şimdi, burada açıklaması var, örneğe bakalım. Bak grafiğe aşağıda verilen fonksiyon için diyor,
+
+196
+00:38:06,583 --> 00:38:16,823
+p fonksiyon için, x seçtimizde ve x seçtimizde ve x seçtimizde 2'deki limitlerin varlığını araştırın. Grafiğe bakıyoruz arkadaşlar. Grafiğe bakıyoruz. Şimdi, şurası x seçtimiz bir değeri değil mi? Böyle gidiyor.
+
+197
+00:38:17,396 --> 00:38:24,876
+Şimdi, 1'in solunda arkadaşlar, limit x1'e soldan gireken fx neden sıfır oluyor? Anladınız mı?
+
+198
+00:38:24,876 --> 00:38:29,876
+grafiğe göre, x1'e soldan gireken fx neden sıfır oluyor?
+
+199
+00:38:29,876 --> 00:38:34,195
+Eee, sıfır ama burası sıfır.
+
+200
+00:38:34,195 --> 00:38:39,076
+Bakın, tam şöyle, şu mouse'u şeyini görüyor musunuz? Şunu, eli.
+
+201
+00:38:39,135 --> 00:38:39,576
+Evet.
+
+202
+00:38:40,055 --> 00:38:41,675
+Bakın, burası sıfır değil mi?
+
+203
+00:38:42,076 --> 00:38:42,315
+Evet.
+
+204
+00:38:42,555 --> 00:38:44,916
+İçte 1'i koyduğunuz zaman y'ye sıfır olduğu için burası sıfır.
+
+205
+00:38:45,275 --> 00:38:47,315
+x 1'e soldan giderken sıfır oluyormuş.
+
+206
+00:38:47,555 --> 00:38:48,135
+Arkadaşlar, 0.
+
+207
+00:38:48,456 --> 00:38:50,335
+x 1'e sağdan girese de gene ne oluyor arkadaşlar?
+
+208
+00:38:50,496 --> 00:38:52,135
+Burada durduğu için gene sıfır oluyor.
+
+209
+00:38:53,335 --> 00:38:53,876
+Bu basit.
+
+210
+00:38:54,135 --> 00:38:55,275
+Burayı anladığınızı da sayalım.
+
+211
+00:38:55,555 --> 00:38:57,536
+Şimdi, dolayısıyla x 1'deki limit sıfır.
+
+212
+00:38:58,195 --> 00:38:59,275
+Şimdi 2'de böyle değil.
+
+213
+00:38:59,275 --> 00:39:03,635
+Şimdi bakın, x 2'ye soldan giderken şuraya bakıyorsunuz değil mi?
+
+214
+00:39:03,735 --> 00:39:04,255
+Sol burası.
+
+215
+00:39:04,755 --> 00:39:29,695
+Soldan giderken ne oluyor arkadaşlar? 1. Karşı tarafa geldik, evet, 1 oluyor bakın. x1'e soldan giderken fx1 oluyor. Biraz daha. x1'e sağdan giderken bu tarafa bakıyoruz. Tamam mı? Yani şuraya bakıyoruz. Bakın, x1'e sağdan giderken ne olmuş? 2 olmuş. Dolayısıyla soldaki değer, sağdaki değeri, limit değerleri, içi olmadığı için 2x2'de limiti mevcut değildir diyor. Tamam mı? Burayı da anladık mı? Bu grafiği.
+
+216
+00:39:30,036 --> 00:39:35,735
+Eğer şu örneği anladıysanız arkadaşlar, böyle karşılaştık her soruyu rahatlıkla cevaplandırabilirsiniz.
+
+217
+00:39:36,255 --> 00:39:37,155
+Dikkatli olacaksınız.
+
+218
+00:39:37,536 --> 00:39:40,975
+Solu bu tarafı, ikiye gidip bakın, şöyle bakıyorsunuz.
+
+219
+00:39:41,395 --> 00:39:45,975
+Sağ bu tarafı, ikiye gidip geldiğiniz buraya, bu tarafta baktığınız için şuna bakıyoruz.
+
+220
+00:39:47,416 --> 00:39:48,895
+Böyle örnekleri çoğaltabiliriz.
+
+221
+00:39:48,895 --> 00:39:49,895
+Şimdi şu da.
+
+222
+00:39:50,675 --> 00:40:02,036
+Son örnek galiba bu değil mi? Evet son örnek. Buradaki son örnek. Şimdi, fx fontiyonun kök işine bir eksikçisiyle verilmiş. Şimdi soruyu hatalı diye düşünmeyin.
+
+223
+00:40:04,467 --> 00:40:25,327
+İlerverilen f fonksiyonun x'e çifti bizdeki limitin bağlılarını araştırmıyoruz diyor. Şimdi arkadaşlar, verilen fonksiyonu tanımadan üzerinde işlem yapılamaz diye söyledim. Bakın fonksiyonlarının tanım kimyelerinin üzerinde çok durdum. Benim öğrendiğim önce fonksiyonu tanıyacak. Tehlikeli formüllerde ona tehlikeli durum ortaya koyacak. Şimdi kalitör fonksiyonu ne zaman tanımlıydı?
+
+224
+00:40:26,931 --> 00:40:33,651
+x'i büyügeşit sıfır olduğu zaman tanımlıydı. Şimdi bire eksik büyügeşit sıfır yazarsanız x küçük eşit bir olur, öyle mi?
+
+225
+00:40:34,291 --> 00:40:35,131
+Evet hocam.
+
+226
+00:40:35,692 --> 00:40:42,131
+Dolayısıyla arkadaşlar, x birden büyük değerler aldığı zaman bu kök içindeki bire eksik tanımlı değil.
+
+227
+00:40:42,371 --> 00:40:47,711
+Yani x yerine 1.0 milyar tane sıfır bir korsanız bile burası tanımlı değil.
+
+228
+00:40:48,192 --> 00:40:54,031
+O zaman siz ne yapamıyorsunuz? Birin değil mi? Birin sağ tarafını dikkate alamıyorsunuz.
+
+229
+00:40:54,132 --> 00:41:10,251
+birinin sol tarafını dikkate alacaktır. Buraya yazdım. Bak. Görüyor musun? İçin tanımlıdır. Bak. Dolayısıyla fonksiyon limit hesaplanacak ki bir sayısının bakın sağ tarafını dikkate alamayız diyor. Çünkü karekör tanımlı olmaz. Bak altına da yazmış. Tamam mı?
+
+230
+00:41:11,831 --> 00:41:16,291
+Benden fonksiyon için dolayısıyla ne diyoruz? Limit ve evcut değildir.
+
+231
+00:41:18,099 --> 00:41:29,579
+Yani sağdan ve soldan limitler mevcut ve eşit olmalıdır diyor ya, o zaman limit mevcut değildir. Böyle fonksiyonları kaldırıp atmamak için de o zaman uygun durumundaki limitine bakıyoruz.
+
+232
+00:41:30,199 --> 00:41:40,680
+x kare eşit 1 olduğu, 1 kemplan olduğu için verilen fonksiyon bunun birinin sol tarafı için limiti mevcuttur. Yani soldan limiti mevcuttur. O da budur.
+
+233
+00:41:42,324 --> 00:42:09,524
+Şimdi arkadaşlar, bazen şöyle sorular soruluyor. Ekrana bakıyorsunuz. Limit x bire giderken fx şöyle yazıyor. Şuradan soruyorum. Limit x bire giderken kök içinde 1x limitini hesaplayınız desen. Tekrar söylüyorum. Limit x bire giderken kök 1x limitini hesaplayınız. Cevap? Cevap veren arkadaşlar önce ismini söylesin, sonra cevabını versin. Buyurun.
+
+234
+00:42:09,907 --> 00:42:11,087
+Yok ki bence.
+
+235
+00:42:11,788 --> 00:42:12,547
+Anımsız hocam.
+
+236
+00:42:14,087 --> 00:42:16,248
+Yoktur, yok. Doğru cevap yoktur.
+
+237
+00:42:16,788 --> 00:42:20,527
+Limit x 1'e... Yok, özür dilerim. Beni de çarkayın.
+
+238
+00:42:21,168 --> 00:42:27,307
+Limit x 1'e giderken çöp 1-x. Limitini hesaplayınız diye bir soru sorduk.
+
+239
+00:42:27,987 --> 00:42:29,987
+Cevap alayım. İsminizi de söyleyeyim.
+
+240
+00:42:31,668 --> 00:42:31,987
+Buyurun.
+
+241
+00:42:33,367 --> 00:42:36,268
+Hocam, x'in 1'de limiti yoktur. [öğrenci].
+
+242
+00:42:36,851 --> 00:42:40,211
+[öğrenci], doğru değil. Başka cevap olan?
+
+243
+00:42:44,788 --> 00:42:45,648
+Ben söyleyeyim mi?
+
+244
+00:42:46,028 --> 00:42:48,268
+Sadece soldan yaklaşırken bir limiti var.
+
+245
+00:42:48,668 --> 00:42:50,388
+Onu biraz daha, kim konuştu?
+
+246
+00:42:51,028 --> 00:42:51,748
+[öğrenci] hocam.
+
+247
+00:42:51,988 --> 00:42:56,188
+Tamam [öğrenci]. Onu biraz daha net söyleyeyim ben. [öğrenci]'nun söylediği yanlış değil ama daha net söyleyeyim.
+
+248
+00:42:57,008 --> 00:43:01,827
+Tekrar soruyu tekrar okumuş olayım. Limit x bire giderken kök içinde 1-x.
+
+249
+00:43:02,488 --> 00:43:07,408
+Limitin hesaplaymış sorusunun cevabı böyle bir limit yoktur.
+
+250
+00:43:08,128 --> 00:43:12,348
+Bakın limit yoktur demiyorum. Böyle bir limit yoktur.
+
+251
+00:43:12,980 --> 00:43:21,980
+Yani hiç kimse limit x1'e giderken kötü işinde 1x1'e giderken kötü işinde 1x1'e hesaplayınız diye sormamalıdır. Çünkü yeryüzünde böyle bir şey yoktur. Niye yoktur [öğrenci]?
+
+252
+00:43:24,980 --> 00:43:25,240
+[öğrenci]?
+
+253
+00:43:25,320 --> 00:43:26,100
+Bilmiyorum hocam.
+
+254
+00:43:26,340 --> 00:43:26,660
+Bilmiyorum.
+
+255
+00:43:26,660 --> 00:43:29,600
+Bir çık nokta olduğu için mi?
+
+256
+00:43:30,120 --> 00:43:37,059
+Hayır. Bizim sağ tarafı yok ya. Kötü işinde 1x1'e de bizim sağ tarafı yok ya.
+
+257
+00:43:37,376 --> 00:43:48,115
+O zaman siz limit x1'e giretiniz, kökücüsü mü birekçik yazamazsınız. Anladınız mı? Anlamayan varsa sorsun bir daha tekrar edeyim. Yani de tekrar edeyim.
+
+258
+00:43:49,936 --> 00:44:00,716
+Hocam ben tam anlayamadım orayı. Kim anlamadı? [öğrenci]. Hocam ben de tam anlayamadım. Bir daha bir tekrar edebilir miyiz? Tamam söylüyorum. Şimdi o zaman yazayım daha iyi. Durun.
+
+259
+00:44:00,796 --> 00:44:04,776
+Nereden yazıyorduk? Şuraya geliyorduk. Şuna geçiyorduk. Durun yazayım daha iyi ya.
+
+260
+00:44:05,235 --> 00:44:18,655
+Bak, daha basit bir şey yazıyorum, şuraya yazayım. Limit. Biri de katmayın da şey yazayım. x'i, çök x'i yazacağım. Ok bu.
+
+261
+00:44:25,844 --> 00:44:26,743
+Soru şu olsun.
+
+262
+00:44:29,384 --> 00:44:34,223
+Limit değil, sıfıra giderken kötü, limitini hesaplayınız o dediler tamam mı?
+
+263
+00:44:35,364 --> 00:44:38,223
+Siz cevabım diyeceksiniz ki böyle bir limit yoktur.
+
+264
+00:44:38,983 --> 00:44:42,023
+Böyle bir limit yoktur derken bu limit yoktur demiyorsun.
+
+265
+00:44:42,543 --> 00:44:45,563
+Yani hiç kimse böyle bir şey yazamaz diyorsun.
+
+266
+00:44:46,824 --> 00:44:49,503
+Şimdi birisi çıkıp bana şunu söylemesin.
+
+267
+00:44:49,844 --> 00:44:52,083
+Ya kitaplarda var demesin. Yanlış yazılmış.
+
+268
+00:44:52,980 --> 00:44:57,800
+Yani birisi böyle limit ile hesaplayınca diye sormuşsa yanlış yani. Böyle bir şey yok ki.
+
+269
+00:44:59,079 --> 00:45:06,400
+Neden yok? Siz bu limiti hesaplayabilmek için sıfırın solunda ve sağında sıfıra yakın değerleri vereceksiniz.
+
+270
+00:45:06,400 --> 00:45:14,280
+Şimdi solunda değer verelim. Eksi sıfır nokta bir verdik. Koyun bakalım işleyene eksi sıfır nokta bir. Var mı böyle bir şey?
+
+271
+00:45:15,740 --> 00:45:16,000
+Yok.
+
+272
+00:45:16,860 --> 00:45:19,360
+Negatif sayıların karakçı tanımlı mı?
+
+273
+00:45:20,980 --> 00:45:37,291
+x kare artı 2x, f'
+
+274
+00:45:37,396 --> 00:45:54,135
+Yani şöyle bir şey yazıp limitin hesaplarını diyemez. Çünkü kare kürk fonu sayı negatif olmayan sayılar için tanımlamıştır. Limitin varlığı soldan ve sağdan limitlerin varlığıyla ortaya konmaktadır. Üşenmeyin biraz yukarı gideyim.
+
+275
+00:45:55,496 --> 00:46:02,996
+Çöküçte hesap yapılacaksa eğer hesabı şöyle yapılması lazım. Şunu bir sileyim de. Yazı geliyor ya.
+
+276
+00:46:05,268 --> 00:46:12,748
+Tamam, hesabın böyle yapılması gerekir. Ama siz bu tarafı yapamıyorsunuz ki Türkçü. Bunu yapamıyorsunuz. Dolayısıyla olmaz. Tamam mı?
+
+277
+00:46:13,347 --> 00:46:23,867
+Doğru yazın, doğru yazın, x sıfıra artıyla giderken Türkçü, burada da doğru yazın. Bu örneğimizde, geçtim mi?
+
+278
+00:46:26,148 --> 00:46:31,847
+Bu örneğimizde de doğru yazın bu arkadaşlar. Tamam mı? x1'e ekşiyle giderken burası. Doğru yazın bu.
+
+279
+00:46:32,340 --> 00:46:40,640
+İlla da zorlama olursa, yani demin söylediğim gibi burası limit x, bire, gire, f'
+
+280
+00:46:40,640 --> 00:46:51,019
+Böyle bir limit yazılamaz denmek gerekmiyorsa, dün bir test dolduruyorum, bir soru soruyor, cevabı veriyorum, cevap yanlış diyor. Doğru cevap diyorum, soru yanlış çıkıyor.
+
+281
+00:46:51,635 --> 00:47:17,175
+Bizimle ilgili bir şey vardı ya, bir daha tekrar ediyorum. Dün bir şey vardı. Bir okuduğumuz bir şeyle ilgili sorular vardı. Bir tane soru da, işte bir soru sormuş, cevapçıkları var. Birden fazla doğru var, dört çık vardı. Üç tanesi doğru galiba. Şekerek bir tane oluşum, ben bir tanesini işaretledim. Yanlış dedi. Doğru cevabı soruyorum. Sorunun cevapçıklarında bize sorulan cevapçıkları yok.
+
+282
+00:47:17,972 --> 00:47:29,972
+Dolayısıyla ben yanlış yapmış oluyorum. Yani aslında doğru yapmış olmak onu hesaplamama, yani ona cevap vermemek mi onu da bilmiyoruz tabii de nasıl bir şeyse bu da böyle bir şey oluyor.
+
+283
+00:47:29,972 --> 00:47:40,972
+Yani limit x1'e giderken köşede 1xx limit dinle hesaplarınız demek eğer zorlanma olursa böyle bir limit yazılamaz demek kırışık olacağı için herhalde limit yoktur demek mi oluyor bilmiyorum.
+
+284
+00:47:41,684 --> 00:47:49,684
+onu bilmiyorum. Burayı geçelim. Burada bir sorunuz yok herhalde. Geçiyorum. Şimdi şeyde...
+
+285
+00:47:51,539 --> 00:47:59,199
+fonksiyonlarda aralık tespit ederken, mesela x büyük sıfırı bir aralık yazarken açık aralık şekilde bir sonsuz yazmıştım.
+
+286
+00:47:59,299 --> 00:48:03,419
+Orada sonsuz nedir demiştim. Ona beraber bir açıklama getirmiştik değil mi?
+
+287
+00:48:03,699 --> 00:48:13,759
+Kısa cevabı say değildir, uzun cevabı beleğimize canlandırabildiğimiz en büyük saydan daha büyük olan şeye, şeye, tembole yani sonsuz diyoruz demiştim.
+
+288
+00:48:13,759 --> 00:48:17,319
+Onu söylüyoruz mesela burada ama limite bir anlam vereceğiz şimdi.
+
+289
+00:48:19,487 --> 00:48:33,127
+tabit bir sayı, yani belli bir sayıya yaklaşırken, fx çok büyük olabilir ya da mutlak değerce çok büyük olabilir. Mutlak değerce çok büyük olabilir demek, mutlak değeri kaldırsa anımız çok küçük olabilir demek, onun adı olacak.
+
+290
+00:48:33,467 --> 00:48:34,067
+Şimdi arkadaşlar,
+
+291
+00:48:35,059 --> 00:48:59,519
+1 bölü x ve 1 bölü x aşağıda var galiba. Bakayım mı? Evet. Şimdi biz 1 bölü x kare ve 1 bölü x ile ilgili açılama yapacağım belirsizde. Arkadaşlar bunun üzerinde de dikkatli bir şekilde uzun işlemlerle duracağım. Maalesef kayda geçecesini çok nazik konuşmak istiyorum. Bunu anlatanların da birçoğu idrak edemiyor.
+
+292
+00:48:59,887 --> 00:49:08,807
+Çok üzgünüm bu durumdan. Ama yapabileceğimiz bir şey yok. Bu tecrübe de sabit. Bakın anlatanların da çok büyük bir kısmı bunu...
+
+293
+00:49:09,108 --> 00:49:37,108
+Gerisini getirmeyin. Üzülüyorum. Hakikaten üzülüyorum bunu söylerken. Kayda geçeceğini bir şey söylememeyi söyleyeyim. Ben size doğrusunu öğreteyim. İki tane örneğimiz var burada. Birisi 1 bölü 2x kare, diğeri 1 bölü 2x olacak. Bakın, x sıfır civarındayken 1 bölü 2x kare davranışını yerizliyor. Son derece basit. X sıfır civarındayken sıfır civarında demek sıfıra sıfırdan yakın değerlerle sıfırdan büyük yakın değerlerle.
+
+294
+00:49:37,108 --> 00:50:02,688
+yaklaşın demek. Yaklaşıyorum. Bakın sıfıra, sıfırdan küçük değerlerle yaklaştım. Eşi 0.1, eksi 0.01, eksi 0.001 koydum. Sonra da sıfıra, sıfıra büyük değerlerle yaklaşıyorum. 0.1, 0.01, 0.001 diye koydum. Çift çizgiye gelince arkadaşlar dur demek. Tamam mı? Şu. Soldan ve sağdan gelirken çift çizgiye gelince dur demek. Şimdi arkadaşlar.
+
+295
+00:50:03,764 --> 00:50:23,104
+Oku kaldırmışım buradan. Şimdi 0'a 0'ın solunan değerlerine yaklaşıyorum. Bakın, okuyorum. Eşli 0.1 koyduğum zaman ne oluyor? 100. Değil mi? Eşli 0.01 koyunca 100.000 mi oluyor? Eşli 0.001 koyunca kaç oluyor?
+
+296
+00:50:24,148 --> 00:50:25,468
+1 milyon sanırım hocam.
+
+297
+00:50:25,488 --> 00:50:37,048
+1 milyon oluyor. Şimdi arkadaşlar, bunu böyle değerler koyduğumuzu düşünerek şuradan ok götürelim. Durun onu üşenmeyelim. Ok götürelim. Ben adını koyacağım da onun için.
+
+298
+00:50:38,888 --> 00:50:46,408
+Ne yazmam lazım buraya arkadaşlar? Bakın, sıfıra yaklaştıkça 1 bölük sigara inanılmaz bir şekilde büyüyor.
+
+299
+00:50:46,867 --> 00:50:49,268
+İnanılmaz bir şekilde büyüyor. Yani ne oluyor?
+
+300
+00:50:49,268 --> 00:50:49,867
+Son sus.
+
+301
+00:50:49,867 --> 00:50:54,228
+Belliğimizde canlandırabildiğimiz en büyük saydan daha büyük olan şey oluyor. Ne yok?
+
+302
+00:50:54,288 --> 00:50:55,367
+Son sus.
+
+303
+00:50:55,667 --> 00:51:00,387
+İşte bakın, limitli buna bir anlam vermek için arkadaşlar, görüyor musunuz?
+
+304
+00:51:00,708 --> 00:51:03,987
+Belliğimizde canlandırabildiğimiz en büyük saydan daha büyük olan şey oluyor.
+
+305
+00:51:04,347 --> 00:51:07,047
+Öyle büyüyüp gidiyor. Ama herkese göre değişiyor.
+
+306
+00:51:07,347 --> 00:51:10,467
+Ben mesela x0.001 koydum, 1 milyon oldu.
+
+307
+00:51:10,867 --> 00:51:14,407
+Bir tane 0 daha koyarsanız daha büyüyecek, bir tane 0 daha koyarsanız daha büyüyecek.
+
+308
+00:51:14,407 --> 00:51:14,847
+Bu.
+
+309
+00:51:14,867 --> 00:51:38,587
+Bu oluyor. Sıfırın solundan sıfıra yakın değerlerle yaklaşırsanız. Aynı şeyi sıfırın sağından yaklaşarak, sıfıra yakın değerlerle yaklaşarak tekrar ettiğimiz zaman valla durum değişmiyor. Görüyor musunuz? Durum değişmiyor. Gene bu oluyor. Ben ne dedim arkadaşlar demin? Bütün örneklerde oklar, buraya kadar olan kısımda oklar aynı sayıyı gösteriyorsun, limit odur dedim mi?
+
+310
+00:51:39,699 --> 00:51:40,519
+Evet hocam.
+
+311
+00:51:40,719 --> 00:51:51,499
+Dedim. Şimdi burada bakın birazcık bir kelimeyi değiştiriyorum. Şimdi burada oklar aynı neyi gösteriyor? Neyi? Bir kelimeyi değiştireceğiz.
+
+312
+00:51:51,499 --> 00:51:51,899
+Şeyi.
+
+313
+00:51:52,519 --> 00:51:53,999
+Teşekkür ederim. Kim söyledi?
+
+314
+00:51:55,139 --> 00:51:56,219
+[öğrenci] hocam.
+
+315
+00:51:56,479 --> 00:52:04,599
+[öğrenci] çok teşekkür ederim. Demek ki anlaşıyoruz arkadaşlar. Benim öğrencim böyle olacak. Aynı şeyi gösteriyor. Şey bu. O zaman limit olur.
+
+316
+00:52:05,108 --> 00:52:22,987
+Bakın, limit x sıfıra, soldan giderken de artı sonsuzdur. Aşağıda geliyor mu? Sağdan giderken de artı sonsuz. Şimdi, yukarıda ne demiştim? Limitler soldan ve sağdan yaklaşırken, limitler aynı oluyorsa, fonksiyonun o değerdeki limiti odur dedim mi ben? Dedim değil mi?
+
+317
+00:52:23,327 --> 00:52:24,228
+Evet, [öğrenci] dediniz.
+
+318
+00:52:24,228 --> 00:52:32,327
+Bu yazmış, boyazmıştı, öğlene kadar unutmayacaktınız. O zaman bunu yazarım. O zaman bunu yazarım. Tamam mı? Bunu yazarım. Şimdi arkadaşlar.
+
+319
+00:52:33,043 --> 00:52:54,663
+O zaman şöyle bir durum ortaya çıkıyor. Dedim ya, size anlatanlar da maalesef bunu idrak edemiyor, tamamlayamıyor, bilemiyor ama anlatıyor. Anlattın ya da siz ne kadar anlıyorsunuz, onu tartışmamız lazım. Maalesef ben bu yüzden birçok insanlar tartışmış durumdayım. O insanlar öğrenci değil tabii. Şimdi limit odur dedik. O zaman limit x sıfıra giderken bir böyle x kare eşittir, solsun.
+
+320
+00:52:55,347 --> 00:53:20,087
+Limit olarak böyle yazmamız lazım. Şimdi, diğer taraftan bakınca arkadaşlar, sonsuz bir sayıyı temsil etmiyor. Değil mi? Sonsuz bir sayıyı temsil etmiyor. O zaman ben yine vardır demiş olmuyor mu? Bakın, limit vardır demiş olmuyor mu ki? Sonsuz bir sayıyı temsil etmiyor mu? Ama matematik bir kural var. Matematik olarak bir kural var. Üçemiyorum, yukarı gidiyorum. Bu var, bu var.
+
+321
+00:53:21,043 --> 00:53:26,124
+soldan yaklaşırken, sağdan yaklaşırken aynı yere gidiyorsanız, o zaman limit olur diyor.
+
+322
+00:53:26,684 --> 00:53:31,083
+Buna, şimdi biliyorsunuz, teoremler tanım aksiyondur değil mi?
+
+323
+00:53:31,364 --> 00:53:35,884
+Her zaman ve her yerde doğrudur. Teoremlerde ispat edilmesi gereken tanım aksiyondur dedi.
+
+324
+00:53:36,384 --> 00:53:39,583
+E öyle diyor. Ben demiyorum ki bunu. O diyor. Matematik diyor.
+
+325
+00:53:39,844 --> 00:53:43,864
+Kim demiş bunu? Evler, şey, adını unuttum ya neydi?
+
+326
+00:53:44,864 --> 00:53:47,003
+Neyse adını unuttum sonra aklıma gelirse söylerim.
+
+327
+00:53:49,012 --> 00:54:00,351
+O zaman sağdan ve soldan yaklaştığımız zaman, ha, Newton, Newton, İngiliz, fizikçi aslında da Newton, fizikçi aslında, Newton'un simini duydunuz mu?
+
+328
+00:54:02,099 --> 00:54:02,819
+Bir saniye.
+
+329
+00:54:03,299 --> 00:54:04,279
+Evet hocam.
+
+330
+00:54:04,860 --> 00:54:08,059
+Her yüzündeki müstehirlenlerde var olan birçok şey o bulmuştur.
+
+331
+00:54:08,119 --> 00:54:09,440
+Allah kanı kanı rahmet eylesin.
+
+332
+00:54:09,900 --> 00:54:10,679
+İngiliz bu.
+
+333
+00:54:11,980 --> 00:54:13,659
+Kalkülüsü bulan kişi de bu arkadaşlar.
+
+334
+00:54:13,880 --> 00:54:15,199
+İki kişi buluyor kalkülüsü.
+
+335
+00:54:15,579 --> 00:54:18,779
+Tamamıyla birbirinden farklı insanlar.
+
+336
+00:54:19,000 --> 00:54:20,179
+Birbirini görmemişler.
+
+337
+00:54:21,659 --> 00:54:31,579
+x kare artı 2x, f'
+
+338
+00:54:20,784 --> 00:54:42,563
+Leibniz, Alman, Leibniz diye yazılıyor, çok üzerinde duracak. Biz Leibniz'i kullanacağız. Newton fizikçi olduğu için. Leibniz ve Newton, biri Alman, biri İngiliz, birbirinden tamamıyla bağımsız bir şekilde matematikteki bu kalkülüsü ortaya koyuyorlar. 17. yüzyılın başlarına kadar gelişiyor bu. 16. yüzyıl, 1690'lara kadar falan tamamıyla birbirinden bağımsız.
+
+339
+00:54:48,784 --> 00:54:53,983
+Newton fiziksel olarak baktığı için işlemlere gösterimleri daha çok fiziğe uygun.
+
+340
+00:54:54,344 --> 00:54:58,023
+Leibniz matematik olarak geliştirdiği için gösterimleri matematiğe uygun.
+
+341
+00:54:58,284 --> 00:55:03,523
+Dolayısıyla yıl 2020 biz hala Leibniz'de gidiyoruz.
+
+342
+00:55:03,903 --> 00:55:07,063
+Ama 16. yüzyılın sonlarında yaşadığımızı söyleyebiliriz.
+
+343
+00:55:07,183 --> 00:55:08,683
+Oradan sonra da hiç geliştirilememiş.
+
+344
+00:55:08,963 --> 00:55:13,163
+Yani geliştirilememiş derken olumsuz bir şey söyledim ama olumsuz anlamda değil.
+
+345
+00:55:14,663 --> 00:55:16,483
+Ortaya konulacak bir şey kalmamış. Hepsini bulmuşlar.
+
+346
+00:55:16,784 --> 00:55:30,143
+Tamam, her şeyi bulmuşlar. Bu işte Newton'un geliştirdiği, sonra Leibniz'in formüze ettiği, İtalyan bir matematik dilinde günümüze uyarladığı hali bu. Tamam mı? O zaman böyle diyeceğiz arkadaşlar.
+
+347
+00:55:31,155 --> 00:55:39,096
+Limit x'ı bırakın 1 bölü x eşit bir sonsuz yazmamız, sonsuz bir sayıyı temsil etmediği için limit vardır demek anlamına gelmiyor.
+
+348
+00:55:39,096 --> 00:55:50,096
+Şimdi bir daha soruyorum, limit yoktur ile limitin sonsuz çıkması aynı şey midir? Soruyorum. Limit yoktur demekle limitin sonsuz çıkması aynı şey midir arkadaşlar?
+
+349
+00:55:50,771 --> 00:55:51,652
+Değildir.
+
+350
+00:55:51,811 --> 00:55:52,211
+Hayır.
+
+351
+00:55:52,511 --> 00:55:53,331
+Hayırdır hocam.
+
+352
+00:55:53,711 --> 00:55:58,652
+Limit yoktur neydi arkadaşlar? Sağdan ve soldan limitler var olsa bile eşit değildi değil mi?
+
+353
+00:55:59,071 --> 00:55:59,451
+Aynen.
+
+354
+00:55:59,451 --> 00:56:01,111
+Farklı sayılardı.
+
+355
+00:56:01,911 --> 00:56:12,692
+Sağdan ve soldan limitler var olsa bile eşit olmaması anlamında idi. Burada ise sonsuz çıkıyor. Burada bambaşka bir durum var. Eksi sonsuza çıkabilir.
+
+356
+00:56:12,692 --> 00:56:18,471
+Şimdi bir soru sorayım. Ondan sonra bir sonraki örnekle beraber ara verelim.
+
+357
+00:56:19,219 --> 00:56:41,239
+Bilginiz varsa soruyorum. Limit x0'a giderken 1 bölük limiti nedir arkadaşlar? Varsa yani. Limit x0'a giderken 1 bölük. Bakın limit x0'a giderken 1 bölük x kare eşli. Limit x0'a giderken... Efendim? Soldan yaklaştığımızda eksi olur bu limit. Sağdan yaklaştığımızda pozitif olur. Yani böyle bir limit yoktur deriz.
+
+358
+00:56:41,239 --> 00:56:44,400
+Çok teşekkür ederim. Kim konuştu? [öğrenci].
+
+359
+00:56:45,300 --> 00:57:12,640
+[öğrenci], alamadım sesini. Çok teşekkür ederim. Bakın, aynen böyle olacak. Şimdi soruyu sorayım, ara vereceğim. Diyor ki, 1 bölü 2'nin x0 divanında dolaştıran davranışını inceleyiniz diyor. Hızlı geçeyim, hemen sıfırın, sıfırın sonundaki değerler ve sıfırın sonundaki değerler aldık arkadaşlar. Bak, ben özellikle bunu bilinç olarak farklı yazdım, görüyor musun? Bilinç olarak farklı yazdım. Bakın, ok. Nereye gitti?
+
+360
+00:57:13,523 --> 00:57:17,843
+nereye gitti arkadaşlar? x sonsuza.
+
+361
+00:57:17,903 --> 00:57:25,783
+belleğimizi canlandırabildiğimiz en büyük sayıdan daha büyük, belleğimizi canlandırabildiğimiz en küçük sayıdan daha küçük olan şeye gitti.
+
+362
+00:57:26,303 --> 00:57:28,003
+Bunu da özellikle buraya yazdım.
+
+363
+00:57:28,583 --> 00:57:32,843
+Sıfırın sağında sıfıra yakın değerlerle yaklaştığımız zaman birbirlik de bu oldu.
+
+364
+00:57:34,063 --> 00:57:36,283
+Özellikle şuraya koymadım ki yan yana gelmez.
+
+365
+00:57:36,283 --> 00:57:39,683
+Şimdi arkadaşlar, ne oluyor bakın şimdi?
+
+366
+00:57:40,115 --> 00:57:50,276
+0'ın solunda 0'a yakın değerler verdiğiniz zaman böyle bir sembolik bir şey buluyorsunuz. 0'a yakın 0'ın sağında değerler verdiğiniz zaman böyle sembolik bir şey buluyorsunuz.
+
+367
+00:57:50,456 --> 00:57:58,115
+Bunu matematik sembolüleriyle ifade ederseniz şu oluyor. x0'a soldan yaklaşırken 1 bölük eşittir x tonsuz.
+
+368
+00:57:58,115 --> 00:58:02,036
+[öğrenci]'ın dediği, şurayı sileyim, altındakini de söyleyeyim.
+
+369
+00:58:05,715 --> 00:58:15,075
+0'a sağdan yaklaşırsanız 1 bölü 2 çıkıyor. E o zaman limit, burada limit nedir diyoruz arkadaşlar? Bakın yoktur diyoruz.
+
+370
+00:58:15,395 --> 00:58:29,755
+Görüyor musunuz? Burada yoktur. Limit x 0'a giderken 1 bölü x kare eşittir artı solsuz yazarken, limit x 0'a giderken 1 bölü x kare eşittir artı solsuz yazarken, limit x 0'a giderken 1 bölü x kare eşittir artı solsuz yazarken, limit x 0'a giderken 1 bölü x limiti yoktur diyeceğiz.
+
+371
+00:58:29,755 --> 00:58:32,035
+Şimdi arkadaşlar, lisede bunu böyle mi duydunuz?
+
+372
+00:58:37,331 --> 00:58:41,311
+limit x0'a girelim 1,1,2, bitir yoktur diye mi duydunuz? Artı sonsuz mu yazdınız?
+
+373
+00:58:42,291 --> 00:58:43,731
+Artı sonsuz galiba.
+
+374
+00:58:44,011 --> 00:58:51,431
+Evet, maalesef üniversitede arkadaşlar, birçok matematik, bir dersindeki birçok sınıflarda böyle yazıldığını biliyoruz.
+
+375
+00:58:51,431 --> 00:58:57,051
+Bu tecrübeler sabit. Zaten ben bu çalışma olduğu için şu tabloyla yapmaya ihtiyacı hissettim.
+
+376
+00:58:57,511 --> 00:58:59,931
+İknar etmekte, ancak bu tabloyla ikna edebiliyorsunuz.
+
+377
+00:59:00,307 --> 00:59:23,647
+Başka siz ikna edemezsiniz. Yukarıdaki teoremi veriyorsunuz, tabloyla yapın diye ikna ediyorsunuz. Demek ki arkadaşlar, bize artık benim öğrencim 3-0'a giderken 1 bölüklü. Yani arkadaşlar bakın, kısaca limitin mevcudiyeti tacının solcuya eşit olması lazım. Mevcudiyet, varlık kelimesinin geçtiği her yerde tacı solcuya eşit midir diye düşüneceğiz. Duymayan var mı?
+
+378
+00:59:25,460 --> 00:59:37,940
+varlığın ya da mevcudiyetin söz konusu olduğu her yerde ta ve sol kavramı göz önüne gelecek, aklımıza gelecek, onların eşitliğini kontrol edeceğiz.
+
+379
+00:59:38,259 --> 00:59:47,679
+Bunu öğrendik. Şimdi arkadaşlar, genel fonksiyonlar için de sağdan soldan limitler hesaplar.
+
+380
+00:59:48,820 --> 00:59:55,180
+genel bir fonksiyonun sağdan ve soldan limitlerini hesaplarken şu iki formülü kullanıyoruz.
+
+381
+00:59:55,460 --> 00:59:58,680
+Sisteme yüklediğimiz zaman bunu alacaksınız. Ben şimdi bir ara vereyim.
+
+382
+00:59:58,920 --> 01:00:01,100
+10 ile şu açıklamadan devam edelim.
+
+383
+01:00:02,140 --> 01:00:05,700
+10 ile 2x ara 10 gibi devam ederiz.
+
+384
+01:07:42,164 --> 01:07:44,384
+Geldim ben arkadaşlar, hazır mıyız?
+
+385
+01:07:50,291 --> 01:07:50,991
+Evet hocam.
+
+386
+01:07:51,491 --> 01:08:03,111
+Tamam. Arkadaşlar şu iki örneği ile ilgili son bir şey daha söyleyeyim. x kare ve 1 bölü x kare ve 1 bölü x ile ilgili. Grafikten nasıl anlarız bunları? Şu yazımları grafikten.
+
+387
+01:08:07,860 --> 01:08:15,740
+Tamam, ben söylüyorum. Bakın grafiğimde şöyle yapabiliriz. Mesela x kare için grafik, ay, önce biraz yukarı gireyim, onu şuraya çizeyim.
+
+388
+01:08:18,700 --> 01:08:23,899
+Bakın, şuna grafik çizersek mesela şöyle yapabiliriz. 1 bölü x kareye.
+
+389
+01:08:36,115 --> 01:08:37,716
+Bunun gratiği şu arkadaşlar.
+
+390
+01:08:40,095 --> 01:08:41,935
+Yani şöyle diyebiliriz.
+
+391
+01:08:42,036 --> 01:08:46,376
+Bakın, 1 bölü x kare x sıfıra giderken aynı davranışı gösterir.
+
+392
+01:08:46,915 --> 01:08:49,855
+1 bölü x kare x sıfıra giderken aynı davranışı gösterir.
+
+393
+01:08:49,895 --> 01:08:50,956
+Görüyor musunuz? Gratiği de bu.
+
+394
+01:08:52,395 --> 01:08:55,235
+Tabii şu yaklaşmalarında bir adı var biliyor musunuz?
+
+395
+01:08:55,335 --> 01:08:56,175
+Daha sonra göreceğiz.
+
+396
+01:08:56,935 --> 01:08:59,216
+Şu eksemlere yaklaşmalarında bir adı var.
+
+397
+01:08:59,835 --> 01:09:00,536
+Tamam, gratiği bu.
+
+398
+01:09:01,268 --> 01:09:06,807
+Şu yazımın da açıklaması. Bunu sileyim, diğerleri altta çizeyim.
+
+399
+01:09:10,899 --> 01:09:12,500
+Onunla şuraya çizeyim.
+
+400
+01:09:29,779 --> 01:09:44,199
+x'in sıfıra sağdan yaklaşması anlamında grafik bu, bakın. Yani y eşittir 1 bölü 2'nin x büyük sıfırken grafiği bu. y eşittir 1 bölü 2'nin x küçük sıfırken grafiği bu. Görüyor musunuz? Farklı davranışlar gösteriyor.
+
+401
+01:09:44,739 --> 01:09:50,159
+x pozitif olduğu zaman grafik burada, x'e kaçtif olduğu zaman grafik burada. Arada bir sürü fark var, görüyor musunuz?
+
+402
+01:09:50,159 --> 01:09:57,219
+Onun için x sıfıra soldan giderken x sonsuz çıkıyor, x sıfıra sağdan giderken x sonsuz çıkıyor. Böyle de anlayabilirsiniz.
+
+403
+01:10:01,524 --> 01:10:13,644
+Devam edelim şimdi arkadaşlar. Sağdan ve soldan limitleri hesaplarken şu iki formülü kullanacağız demiştik. Arkadaşlar, dikkat ederseniz bakın, soldan limitte de sağdan limitte de h0 artıyla gidiyor tamam mı?
+
+404
+01:10:13,944 --> 01:10:27,724
+Soldan limitte de sağdan limitte de h0 artıyla gidecek. Eğer soldan limit hesaplıyorsanız c-h, bakın c-h yazıyorsunuz. Sağdan limit hesaplıyorsanız c artı h yazıyorsunuz.
+
+405
+01:10:27,923 --> 01:10:34,664
+Tamam. Bunun lisede büyük ihtimalle görmüş olabilirsiniz. Liseden bu formülleri hatırlıyor musunuz? Gördünüz mü? Gördüğünüzü hatırlıyor musunuz?
+
+406
+01:10:35,523 --> 01:10:36,824
+Gördüğünüzü hatırlıyor musunuz? Evet.
+
+407
+01:10:37,404 --> 01:10:41,003
+Tamam. Soldan giderken c eksi h yazıyorsunuz.
+
+408
+01:10:41,395 --> 01:10:45,695
+sağdan c artı h yazıyorsunuz x yerine.
+
+409
+01:10:45,695 --> 01:10:48,496
+Terif bir durumda da h sıfır artıyla gidiyor.
+
+410
+01:10:48,496 --> 01:10:54,996
+Bu formülü genel fonksiyonlarda, genel ifadeler olunca kolay da, o kadar kolay değil.
+
+411
+01:10:54,996 --> 01:11:01,195
+Mesela 1 bölü 2x1'e bakalım arkadaşlar. Bakın, şimdi 1 bölü 2x için x sıfırda geçerli olan şeyler...
+
+412
+01:11:02,644 --> 01:11:10,203
+1 bölü x için x eşittir 0'da geçerli olan her şey, 1 bölü x eşittir 1 için de x eşittir 1'de geçerli.
+
+413
+01:11:10,463 --> 01:11:19,824
+Mesela x 1'e soldan giderken, 1 bölü x eşittir 1'e dert limitini saplayacaksanız, t sıfıra artıyla giderken, bak x yerine 1-x görüyorsunuz, görüyor musun?
+
+414
+01:11:20,532 --> 01:11:47,231
+Yani bu da analitik ispat oluyor. Demin tabloyla yaptık ya, bu analitik ispat. x yerine 1-x koyuyorsunuz, birileri birbirini üretiliyor, 1 bölü eksi h kalıyor, eksi'yi başa koydunuz. Bakın, limit h sıfıra giderken 1 bölü h nereye gidiyor? Demin yukarıda gördünüz, artı sonsuza. Önünde ne var? Eksi. Arkadaşlar, sonsuz ile bir tek işlem yapılır. Tekrar söylüyorum, sonsuz ile bir tek işlem yapılır. O da eksi 1 ile çarpmak.
+
+415
+01:11:47,636 --> 01:11:50,716
+Benim öğrencim şimdi bunu duydu, ölene kadar unutmayacak.
+
+416
+01:11:51,996 --> 01:11:54,556
+Anladınız mı? Duydunuz ve anladınız mı?
+
+417
+01:11:57,876 --> 01:12:00,176
+Hocam ben bu H çıkarma olayını anlamadım.
+
+418
+01:12:00,372 --> 01:12:21,711
+Tamam, baştan söylüyorum. Şimdi arkadaşlar, genel bir sağ-sol limit hesaplayacaksak, genel bir fonksiyon için soldan-sağdan limit hesaplayacaksak, mesela soldan limit hesaplayacaksak, bakın, xc'e c-h yazıyoruz. Şurayı anladık mı? Şurayı. xc'e c-h yazıyoruz. Ama h sıfırda sağdan gidiyor.
+
+419
+01:12:21,939 --> 01:12:27,260
+Eğer sağdan limit hesaplayacaksak, x yerine c artı h yazıyoruz.
+
+420
+01:12:27,340 --> 01:12:27,959
+Şu artı yazıyoruz.
+
+421
+01:12:28,059 --> 01:12:29,100
+c artı h yazıyoruz.
+
+422
+01:12:29,420 --> 01:12:30,799
+Gene h sıfıra artıyla gidiyor.
+
+423
+01:12:30,959 --> 01:12:31,340
+Tamam mı?
+
+424
+01:12:32,359 --> 01:12:34,840
+Soldan limitte c eksi h yazıyoruz x yerine.
+
+425
+01:12:35,219 --> 01:12:37,659
+Sağdan limitte x yerine c artı h yazıyoruz.
+
+426
+01:12:38,199 --> 01:12:41,279
+Her iki durumda da h sıfıra sağdan gidiyor, artıyla gidiyor.
+
+427
+01:12:42,612 --> 01:12:51,891
+Bunu söyledikten sonra bakın, 1 bölü x-1'i x eşittir, 1'deki soldan limiti hesaplarken x gördüğümüz yere o zaman 1-h yazacağım.
+
+428
+01:12:52,512 --> 01:13:03,492
+Yazdım, birler birbirini kısalttı, burada 1 bölü x-h kaldı, x'yi dışarı aldım, limit h sıfır artı ile giderken 1 bölü h sıraklı yani artı sonsuz.
+
+429
+01:13:03,828 --> 01:13:31,288
+Demin söyledim, duydunuz diye sormuştum. Sonsuz ile yapılan bir tek işlem vardır. O da x1 ile çarpmaz. Artı sonsuzluğu x1 ile çarptığı zaman x1 sonsuz. Peki şu soru akla gelir mi? x2 ile çarpamaz mıyım? Ya valla çarpmasınız ama en sade sayıyı söyledim. Yani sonsuz sadece bir işlemle, bir işleme tabi tutulur. O da negatif sayı ile çarptı işlemine x1 sonsuz. Arkadaşlar, burada aklıma gelmişken söylemezsem içimde kalır.
+
+430
+01:13:31,891 --> 01:13:53,711
+Mesela ben yüzde de sanatırken tahtada bazı şeyler görüyordum. Tahtada bazı şeyler görüyordum. Çilerken üzerinde duruyordum. Şimdi ben bir kere tahtada şöyle görmüştüm. Bir kere değil, çok kez gördüm. Kitaplarda da bunu gösterdim. Şunun cevabını bilen var mı? Yani yazılımını bilen var mı? Doğru, yanlış anlamış olsam.
+
+431
+01:13:53,711 --> 01:13:54,152
+Olsun.
+
+432
+01:13:55,051 --> 01:13:56,332
+Olmaz mı acaba?
+
+433
+01:13:56,612 --> 01:13:56,932
+Olsun.
+
+434
+01:13:57,876 --> 01:14:02,855
+Tahtada böyle yazıyordu. Kim yazmıştır tahtaya? Öğrenci olmaya yazmıştır. Değil mi?
+
+435
+01:14:07,923 --> 01:14:09,004
+Şu yazdım doğru mu?
+
+436
+01:14:10,863 --> 01:14:11,144
+Hayır.
+
+437
+01:14:11,264 --> 01:14:12,623
+İki sonsuz olmaz ki.
+
+438
+01:14:12,844 --> 01:14:13,703
+İki sonsuz olmaz.
+
+439
+01:14:13,703 --> 01:14:19,904
+Peki bunu ikna edici bir ispatını yapabilir misiniz? Determinatı yaparsınız ikna edici bir ispatını.
+
+440
+01:14:20,304 --> 01:14:29,664
+Sonsuz zaten, sonsuz yani tanımlı olmayan bir şey. O yüzden başına iki koyarsak sayı olmadığı için ikiyle çarpmamızın da bir mantığı olmaz.
+
+441
+01:14:30,283 --> 01:14:31,984
+Ama o zaman şu doğruymuş gibi görünüyor.
+
+442
+01:14:32,203 --> 01:14:32,804
+Senin dediğin gibi.
+
+443
+01:14:34,484 --> 01:14:40,784
+Hayır hocam, yani 2x sonsuz diye bir şey olmaması gerekir. Çünkü sonsuz bir sayı değil zaten.
+
+444
+01:14:41,184 --> 01:14:44,264
+Olur, olur. 2x sonsuz gibi bir şey olabilir, sonsuz diyebiliriz.
+
+445
+01:14:44,584 --> 01:14:47,084
+2x sonsuzun da eşit olup olmadığını bilmiyoruz hocam.
+
+446
+01:14:47,084 --> 01:14:53,564
+Hayır, hayır. 2x sonsuz diye bir şey olur. Eksiki çarpı sonsuz diye bir şey olur. Olmaz demiyorum.
+
+447
+01:14:54,100 --> 01:15:03,100
+şu yazım doğru mu diye soruyorum. Buradan harekete şu yazım doğru mu diye. Hayır diyorsunuz, cevabını biliyor musunuz? İkna edebilir misiniz karşı tarafı diye soruyorum.
+
+448
+01:15:03,560 --> 01:15:04,940
+Hocam bence cevap verebilir miyim?
+
+449
+01:15:05,380 --> 01:15:05,620
+Evet.
+
+450
+01:15:06,840 --> 01:15:12,820
+Hocam soldaki iki sonsuzunda aynı değerde olup olmadığını bilmiyoruz. O yüzden ikiyle çarpamak.
+
+451
+01:15:14,140 --> 01:15:18,480
+Yok yok öyle değil. Bak ben sizi ikna edeyim şimdi. Sadece şu ikisini düşünün.
+
+452
+01:15:18,760 --> 01:15:20,500
+Hanım kümesi aynı olmadığı için değil mi?
+
+453
+01:15:20,500 --> 01:15:21,040
+Yok yok yok.
+
+454
+01:15:21,524 --> 01:15:23,123
+Sadece şu ikişini düşünün.
+
+455
+01:15:23,783 --> 01:15:24,324
+Şu ikişini düşünün.
+
+456
+01:15:24,963 --> 01:15:30,084
+Eğer bu doğruysa, bakın şu yazım doğruysa, ben yanlış olduğunuz pati diyeyim mi?
+
+457
+01:15:30,084 --> 01:15:37,844
+Yani birçok çocuğuna bile, deteler ki bize, iki sonsuz eşitir sonsuz yazmak doğru mudur deteler, cevap hayırdır.
+
+458
+01:15:38,484 --> 01:15:41,584
+Bunu karşı tarafa ikna edin diyor, hayır ha.
+
+459
+01:15:42,064 --> 01:15:43,703
+Sizin söylediğiniz ifadeleri ikna etme.
+
+460
+01:15:44,123 --> 01:15:45,224
+Bakın ben size ikna edeyim.
+
+461
+01:15:45,584 --> 01:15:46,484
+Şu ikişini düşünün.
+
+462
+01:15:46,664 --> 01:15:48,564
+Hatta, şunu sileyim.
+
+463
+01:15:49,619 --> 01:16:02,059
+Nerede silgi? Şurada. Şunu siliyorum. Bak. Şuna bakalım. Tamam mı? Şimdi ben ikna etmek istiyorum ya. Eğer bu doğruysa şöyle yazarım ben bunu. İkna etkiyim mi ya?
+
+464
+01:16:08,916 --> 01:16:13,195
+Bunu nasıl yazdım [öğrenci]? Şuradan bunu nasıl yazdım?
+
+465
+01:16:15,815 --> 01:16:17,076
+Sıfır mı hocam o?
+
+466
+01:16:17,735 --> 01:16:26,576
+Dur, evet sıfır. Şöyle yazdım değil mi? İki sonsuz eşittir sonsuz doğruysa, iki sonsuz eksi, sonsuz eşittir sıfırdır değil mi?
+
+467
+01:16:27,699 --> 01:16:29,420
+Öyle değil mi? Bu doğruyu.
+
+468
+01:16:29,439 --> 01:16:30,899
+Evet hocam, yanlış olur o zaman.
+
+469
+01:16:30,920 --> 01:16:35,359
+x kare artı 2x sonsuz eşitlik sıfırdır. O zaman sonsuzlar aynı olduğuna göre ortak para cezaların.
+
+470
+01:16:35,659 --> 01:16:37,819
+Şuradan ne yazmam lazım? Şuradan.
+
+471
+01:16:39,219 --> 01:16:43,239
+Benim öğrencim daima iki şeyin çarpımı sıfır eşitse en az biri sıfır eşitli diyecek.
+
+472
+01:16:43,519 --> 01:16:46,619
+Araya da tehlikeli kelime koyacaktı. Tehlikeli kelime neydi?
+
+473
+01:16:47,600 --> 01:16:47,859
+V.
+
+474
+01:16:47,859 --> 01:16:48,840
+V yani.
+
+475
+01:16:49,340 --> 01:16:54,920
+Şimdi sonsuz sıfır eşit olmadığına göre, sonsuz sıfır eşit olmadığına göre ne yazması lazım?
+
+476
+01:16:55,988 --> 01:16:58,068
+2x1 de sıfır olamaz.
+
+477
+01:16:59,268 --> 01:17:01,148
+Bak, şimdi bu doğru mu?
+
+478
+01:17:03,108 --> 01:17:07,668
+Yanlış. Yanlış. Bu yanlışsa bu da yanlış, bu yanlışsa bu da yanlış.
+
+479
+01:17:07,968 --> 01:17:14,808
+Demek ki arkadaşlar, hiç kimse ne yapamaz? Sonsuz artı sonsuz eşittir, iki sonsuz, o eşittir sonsuz yazamaz.
+
+480
+01:17:15,228 --> 01:17:18,608
+Bakın, yazım yanlış. Kelimelerde şöyle ifade edeceğiz.
+
+481
+01:17:19,252 --> 01:17:42,752
+Belliğimizi de canlandırabildiğimiz, en büyük sayıdan daha büyük olan iki şeyi topladığımız zaman, Erol Özgün şartısında vardı ya, ne olur? Ne olur? İşte öyle bir şey olur. Kim anlamadı? Herkes anladı mı? Ben anlamadım. Anlamadınız? Ben anlamadım.
+
+482
+01:17:42,899 --> 01:18:04,279
+Denkleme bir daha geleyim, bak. Denkleme bir daha geleyim. [öğrenci] sen mi konuştun, kim konuştu? Ben [öğrenci]. [öğrenci], tamam. Tekrar geleceğim oraya. Şimdi diyorum ki, bakın. Belirliğimizde, şunu bir daha yazayım o zaman. Şöyle yazayım. Buradan geldik ya.
+
+483
+01:18:07,648 --> 01:18:31,208
+Şimdi herkes cevabını bildi bunun aslında. Bu yazım doğru mudur dedim değil mi? Şu yazım doğru mudur dedim. Herkes cevabını bildi. Hayır doğru değildir dedim. Doğru değildir, neden doğru değildir dediğimde, kimi dedi ki başına 2 koymamız doğru değil. Ben dedim ki 2 sonsuz olabilir, yani çarpılabilir. Sonsuzlu çarpı 2 yazabilirsin. O gene sonsuzdur.
+
+484
+01:18:31,923 --> 01:18:45,663
+Eşit yazmak doğru değil dedim. Tamam mı? İki sonsuz eşittir. Sonsuz yazmak doğru değildir. Ben demin bir şey söyledim. Sonsuz sadece negatif bir sayıyla çarpılır. O da eşit sonsuz olur dedim. Burada hemfikir miyiz?
+
+485
+01:18:46,824 --> 01:18:57,404
+Evet hocam. Tamam. Şimdi ben de diyorum ki şu yazımların tamamı yanlıştır. Sebebini de şuradan görüyorsunuz. Bakın. Eğer bu doğruysa bu doğrudur. Bu doğruysa bu doğrudur.
+
+486
+01:18:59,604 --> 01:19:19,884
+Testen bakalım. Bu yanlış olduğuna göre bu da yanlıştır. Bu yanlış olduğuna göre burası da yanlıştır. Ne dedik? Bir töremin olumsuz teste töremini dedik, oradan geliyor. Eğer bu yanlışsa bu da yanlıştır. Bu yanlışsa bu da yanlıştır. Demek ki bu yazım yanlış. Şimdi ben onu kelimelerle nasıl ifade edildim diye şöyle söylüyorum.
+
+487
+01:19:27,380 --> 01:19:32,079
+şeyleri topladığımız zaman işte öyle bir şey olur.
+
+488
+01:19:32,579 --> 01:19:37,539
+Kelimeleri ifade ederken sonsuzda sonsuzluğu toplamak yine sonsuzdur diyor.
+
+489
+01:19:38,500 --> 01:19:39,659
+Siz de bunu diyorsunuz değil mi?
+
+490
+01:19:40,119 --> 01:19:42,719
+Sonsuzda sonsuzluğu toplamak yine sonsuzdur diyorsunuz.
+
+491
+01:19:42,920 --> 01:19:45,420
+Ama böyle yazmak kesinlikle yanlıştır.
+
+492
+01:19:46,760 --> 01:19:47,760
+Böyle yazmak yanlıştır.
+
+493
+01:19:48,180 --> 01:19:50,119
+Yazmayacaksınız, söyleyeceksiniz.
+
+494
+01:19:50,600 --> 01:19:55,244
+Anlaştık mı?
+
+495
+01:19:57,444 --> 01:19:58,724
+Evet hocam.
+
+496
+01:19:59,764 --> 01:20:01,184
+Evet hocam, evet.
+
+497
+01:20:01,584 --> 01:20:06,564
+Bak, tekrar söylüyorum. Yazmayacaksınız ama söyleyeceksiniz.
+
+498
+01:20:07,364 --> 01:20:08,764
+Yukarı çıkıyorum, üşenmiyorum.
+
+499
+01:20:09,984 --> 01:20:10,724
+Bu burada dursun.
+
+500
+01:20:15,444 --> 01:20:31,444
+Burayı iyice pekiştirelim ki, limitsiz hiçbir şey yoktur ya. İyice pekiştirelim. Ondan sonra rahat rahat devam edebiliriz. Bak, şuraya yazıyorum şimdi. İkiyi görmeyin. Hiç kimse arkadaşlar, hiç kimse...
+
+501
+01:20:37,427 --> 01:20:38,887
+x kare artı 2x'yi görmeyin.
+
+502
+01:20:41,407 --> 01:20:42,688
+Eşit de şuraya koyun.
+
+503
+01:20:43,467 --> 01:20:44,667
+Böyle yazamaz, bakın.
+
+504
+01:20:45,207 --> 01:20:47,047
+Hiç kimseye bu hak verilmemiştir.
+
+505
+01:20:47,507 --> 01:20:51,768
+Limit x1'e giderken x kare eksi 1 bölü x eksi 1 eşittir 0 bölü 0 yazamaz.
+
+506
+01:20:52,347 --> 01:20:54,288
+Diyeceksiniz ki, kitaplarda yazıyor.
+
+507
+01:20:54,868 --> 01:20:57,347
+Ne yapayım kitaplar yanlış yazdıysa ben de mi yanlış yazayım?
+
+508
+01:20:58,087 --> 01:21:00,067
+Kitaplar yanlış yaptı diye ben de mi yanlış yazayım?
+
+509
+01:21:01,460 --> 01:21:11,539
+Hiç kimse limit x1'e giderken x kare eksi 1 bölü x eksi 1 eşittir sıfır bölü sıfır yazamaz. Bakın sıfır bölü sıfırın limit dışında bir anlamı yoktur.
+
+510
+01:21:11,807 --> 01:21:30,227
+Limit dışında bir anlamı yoktur. Eğer olay limit olay ise, onun limit konusu ise 0 bölü 0'ın adı belirsizliktir. Ama nasıl yazılmalıdır bu? Limit x1'e giderken x kare artı 1 bölü x x 1, 0 bölü 0 belirsizliği vermektedir diye yazılmalıdır.
+
+511
+01:21:30,387 --> 01:21:47,207
+Tekrar söylüyorum, limit x1'e giderken x kare eksi 1 bölü x eksi 1, 0 bölü 0 belirsizliği vermektedir diye yazılmazdır. Eşit bir 0 yazamaz. Hiç kimse bu hakka sahip değil. Bak ben bile yazmamışımdır. Bak görüyor musunuz? Bak 0 bölü 0 şeklinde diyor.
+
+512
+01:21:47,604 --> 01:22:15,484
+Yani limit alırsanız 0 bölü 0 şeklinde bir belirsize olur. Hiç kimse arkadaşlar eşittir 0 bölü 0 yazamaz. Bu hakka sahip değildir. Tamam mı? Bu hakka sahip değildir. Benim öğrencim kesinlikle eşittir diye yazmayacak. Ve daha sonra örnekleri de göreceksiniz. Kesinlikle eşittir yazılmayacak. Şuraya virgül atacağız. Limit x1'e giderken x kare artı 1 bölü 2x 81 virgül 0 bölü 0 belirsizliği verir diyeceğiz. Verir demek ayrı bir şey. Eşit yazmak ayrı bir şey. Şimdi eğer siz eşit yazarsanız ne oluyor? Bakın.
+
+513
+01:22:15,859 --> 01:22:39,719
+Bak, 2 eşittir 0 bölü 0'e oluyor, görüyor musun? Eğer eşittir yazarsanız, 2 eşittir 0 bölü 0. Ya 2 0 bölü 0 eşit olur mu ya? Böyle bir şey var mı? Yok, o zaman yazamazsınız. Tamam mı? Matematikte doğru teklif arkadaşlar. Bizden fazla doğru yok. Doğru teklif. Bunu da anladık. Sonsuz da anladık. Artı sonsuz vesaire olayını nasıl geldiğini anladık. Nereden gelmişti o?
+
+514
+01:22:41,876 --> 01:23:00,355
+Yine kafanıza takılan bir şey varsa soracaksınız, söyleyeceğim tabi. Şurada kalmıştık. Bunu anladık değil mi? Sonsuz ak, sonsuz eşittir, sonsuz yazmayacağımızı anladık. Yazılı olmak. Şimdi arkadaşlar, resmi bir şey var bak. Söz dışarı yazı kalır diyor ya. Söz dışarı yazı kalır. Yazdığınız zaman yanlış oluyor.
+
+515
+01:23:01,011 --> 01:23:25,591
+Söz olarak derseniz ki, belirliğimize canlanda bildiğimiz en büyük saygıdan daha büyük olan şey, gene öyle bir şeydir. İşte öyle bir şeydir derseniz, mesele yok. Onu da üşenmeyeceğim, yazacağım. Daha sonra gelecek ama ben şimdi burada bir daha ikna edici olsun diye, mesele yazmayayım buraya. Biraz sonra gelecek. Biraz sonra gelecek, orada konuştuk. Daha fazla vakit kaybetmeyin. Şimdi şurada anladık mı? [öğrenci]. [öğrenci] mı sormuş? Şurayı.
+
+516
+01:23:26,868 --> 01:23:27,668
+Evet hocam.
+
+517
+01:23:29,507 --> 01:23:32,628
+Soldan giderken x yerine 1-h koyuyoruz.
+
+518
+01:23:32,868 --> 01:23:34,328
+Sağdan giderken bu yönetikleri söylüyorum.
+
+519
+01:23:34,548 --> 01:23:35,528
+1-h koyuyoruz.
+
+520
+01:23:35,748 --> 01:23:36,048
+Tamam mı?
+
+521
+01:23:36,248 --> 01:23:39,788
+Limit h0 artıyla giderken 1 bölü h artı sonsuz.
+
+522
+01:23:40,188 --> 01:23:43,968
+Limit h0'a giderken artıyla giderken 1 bölü h artı sonsuz.
+
+523
+01:23:44,168 --> 01:23:48,968
+Önünde eksi olduğu için sonsuzda bir tek işlem yapıldığı eksiyle çarptıldığı için eksi sonsuz.
+
+524
+01:23:49,308 --> 01:23:49,968
+Diğerde artı sonsuz.
+
+525
+01:23:50,488 --> 01:23:50,828
+Tamam.
+
+526
+01:23:51,667 --> 01:24:02,288
+Şimdi siz aklına da gelebilir tabii. Sonsuz artı sonsuz, eşittir sonsuz yazmayacaksak, sonsuz çarpı sonsuz için de ne yazmayacak? Sonsuz çarpı sonsuz için eşittir sonsuz yazmayacak.
+
+527
+01:24:02,807 --> 01:24:12,047
+Tamam mı? Belliğimizi de canlandırabildiğiniz en büyük saydanın daha büyük olan şeyi kendisiyle çarparsanız öyle bir şey olur diyeceksiniz. Öyle bir şeyin de sembolik ifadesi sonsuz.
+
+528
+01:24:12,884 --> 01:24:20,744
+x kareli de bakın, 1 bölü x'e x'in birin karesini soldan ve saldan içtirdik bir de limitini alırsanız gene artı sonsuz çıkar.
+
+529
+01:24:20,923 --> 01:24:27,304
+Yani 1 bölü x ve 1 bölü x kare için yaptığım işlemleri 1 bölü x'e x'in bir ve 1 bölü x kare x'in birin içinde yaptık.
+
+530
+01:24:28,224 --> 01:24:39,543
+Olayı şu formülü de yoğun bir şekilde kullanalım, karşımıza çıktığı zaman kullanabilelim diye, bunu da formülü görelim, uygulamasını görelim diye bu iki örneği de yazmış olalım.
+
+531
+01:24:40,435 --> 01:24:46,395
+Bakın burada da yazı x kipte de vesaire şeyler olduğunu söylemişim. Şimdi limitin resmi tanımı, bunu hızlı geçeceğim arkadaşlar.
+
+532
+01:24:46,795 --> 01:24:55,715
+Yani matematik bölümünde detaylı üzerinde durulan mühendislik öğrencilerinde sadece söylenip geçiren bir şey. Bir tane de örnek yapacağım. Karışık bir şey tabii.
+
+533
+01:24:55,715 --> 01:25:08,375
+Şimdi bak bir f fonksiyonu var, bir cr sayımız var. Gene f fonksiyonunun bu c sayısında tanımlı olmasını talep etmiyorsunuz ama c sayısını çıkardığınız zaman şöyle bir açık aralıkta tanımlı olmasını talep edebiliriz.
+
+534
+01:25:08,435 --> 01:25:25,255
+Aralığı açmamızın sebebi, g işin işine girerse problem çıkacak ya işine atacaksın onun için. Şöyle bir aralıkta tanım olduğunu varsayalım. G'den küçük bir aralık değil mi? Bakın p pozitif bir sayı ya. Şöyle bir aralıkta tanım olduğunu varsayıyorsunuz, devam ediyorsunuz. Epsilon pozitif.
+
+535
+01:25:25,652 --> 01:25:49,631
+Şunun Yunanca bir harfi bu, Yunan harfi. Epsilon diye okunuyor. Şu da Yunan harfi. Bu da delta diye okunuyor. Bu dediğim gibi 1690'lı yıllarda ortaya konmuş, İterlem bir matematik tarafından ortaya konmuş resmi tanım. Formülüze eden kişi İterlem matematik. Ama bir şey, limiti, delta epsilon tanımı diye veriyoruz. Ben okuyorum. Şu kısımda sorarsınız.
+
+536
+01:25:50,163 --> 01:26:07,523
+Denilmiş epsilon pozitif sayısı için x aralıkta tabii ve sıfır küçük mutlak x-c küçük delta iken mutlak fx-l küçük epsilon olacak şekilde pozitif bir delta sayısı varsa f'nin c'deki limiti l'dir deniyor. Gene gösterir ve aynı.
+
+537
+01:26:08,787 --> 01:26:20,527
+Şuraya neden sıfırın eşit gelmediğini normalde mutlak değer daima büyük eşit sıfırdır değil mi? Yani mutlak x sekizceye daima büyük eşit sıfırdır. Neden eşitliği kaldırmış bilen var mı? Söyleyip geçirir sardı. Bilen var mı?
+
+538
+01:26:23,123 --> 01:26:38,083
+Ses gelmediğine göre, cevap vermediğine göre kimse bilmiyor. Bak, c'de tanım olması gerekmeyen diyor ya, eğer siz şu sıfır küçükliğe başlamazsanız, mutlak x, x, c, büyügeç sıfır yazabiliriz için, x'in c'ye eşit olması ortaya çıkar.
+
+539
+01:26:38,355 --> 01:26:53,355
+işin C'ye eşit olmasını talep etmiyorsanız, şunu koyarsınız. Zaten mutlak C'ye koyarsınız. Ama bir de eşitlik var. Eşitliği kaldırmak anlamında bunu koyuyorsunuz. Dolayısıyla C'de tanımlı olmasının gerekmesini söylüyorsunuz. Bu gerektirme, şu önerme.
+
+540
+01:26:53,775 --> 01:26:56,215
+Doğruysa o zaman limit neydir diyorsunuz?
+
+541
+01:26:56,515 --> 01:27:03,655
+Tabii, Dertan'ın seçimi x10 sayısının x10 sayısı verildiği için onun seçimine bağlı, iş hemen onunla birlikte çıkacak.
+
+542
+01:27:03,935 --> 01:27:06,575
+Şimdi çok basit bir tane örnek yapacağım, bunu geçeceğiz.
+
+543
+01:27:06,795 --> 01:27:09,655
+Bugün en büyük öğrencilerinde sınavlarda falan sorulmuyor.
+
+544
+01:27:10,795 --> 01:27:13,195
+Nasıl olduğunu görelim diye ben bir tane örnek yapacağım.
+
+545
+01:27:13,735 --> 01:27:16,455
+Anlamayan, muhtemelen birçok kişi anlamayabilir.
+
+546
+01:27:16,715 --> 01:27:19,935
+Anlamazsanız bir daha üzerinden geçeriz, burayı kapatırız.
+
+547
+01:27:20,212 --> 01:27:40,632
+Sorumuz şu. Zaten böyle sorularda arkadaşlar, çünkü bu tanımı vermezsek şu teoremi falan yazamıyoruz. Böyle sorularda, şu şekildeki sorularda tek çözüm yolu budur. İlha tekrar ediyorum. Bu tip sorular, yani limit x1'e giderken 2x1 eşitliği olduğunu gösterdiniz diyor ya. Olduğunu gösterdiniz şeklindeki bu tip sorularda tek çözüm yolu tanımı kullanmak.
+
+548
+01:27:41,140 --> 01:28:03,940
+Tanımı kullanırken de arkadaşlar, epsisyon pozitif sayısının verildiğini kabul ediyorsunuz. Yani bu aklımızda bir sayı. Nasıl bir sayı? Miniminnacık pozitif bir sayı. Mesela 0.1 milyar tane 0.1. Miniminnacık pozitif bir sayı. Verildiğini kabul ediyorsunuz. Sonra soruda ortaya çıkan değerleri burada yazıyoruz. Biraz yukarı çıkayım bakın. İçsekçici ediyor ya.
+
+549
+01:28:04,243 --> 01:28:24,703
+c 1 olduğu için şuraya 1 koyuyorsunuz. 0 küçük, mutlak x eksi 1 küçük. Şöyle olduğu gibi yazdım. Sadece c yerine 1 koydum. Diğer kısımda mutlak fx eksiyle olacak ya, mutlak değer fx'lerine 2x artı 1 yazdım. L dediği şeyde 3, onu da yazdım. Olacak şekilde pozitif bir data sayısı arıyoruz.
+
+550
+01:28:24,975 --> 01:28:39,275
+diye başlıyoruz. Olacak şekilde. Yani şu tanımda geçen gerektirmeyi somutlaştırmış, örnekleştirmiş haliyle buraya yazıyoruz. Sonra epsilonsuz kısım, şu mutlak değer kısımdan başlayacağız, bir yorum yapacağız.
+
+551
+01:28:40,340 --> 01:29:05,440
+Bir yorum yapacağız. Buradan başlayalım. Yani bu iki sarısına bağladık hocam. Şuradan başlıyorum. Bakın. Mutlak değer 2x saatin 1x3 eşittir bu. Şimdi arkadaşlar, son tahlilde, son adımda, son işlemde kesinlikle şurayı bulmamız gerekiyor. Şurayı bulmamız gerekiyor. Bakın yaptığım işlemleri görüyor musunuz? İki tane mutlak x-1 çıktı. Son işlem mutlaka şurayı verir.
+
+552
+01:29:06,003 --> 01:29:19,483
+Yanında bir şeyler olabilir, sakınca sıkıntı yok. Ama şunu görmemiz lazım. Bunu gördükten sonra arkadaşlar, çıkan sonuç, 2 mutlak x-81 olduğuna göre, bunun neden küçük kalmasını bekliyorum?
+
+553
+01:29:19,923 --> 01:29:33,583
+Bunu yazmıyorum ama kurnazlık yaparak söylüyorum. Yani şuraya küçük etsylon yazmam gerekiyor ya, ben yazayım şimdi, siz görün diye yazıyorum. Şöyle yazmam gerekiyor ya, küçük de güzel olmadı ama, ya bir anda gidiyor.
+
+554
+01:29:40,435 --> 01:30:05,296
+Böyle yazman gerekiyor ya. Bunun yazmanım da, yani şey olarak yazmanım ama söylüyorum. Küçük epsilonmuş gibi düşünüyoruz. Sonra mutlak x-1'i yalnız bırakıyoruz. Şuradaki neyse artık. Bu örnek için bu. Mutlak x-1'i yalnız bıraktığımız zaman arkadaşlar burası ne oluyor? Mutlak x-1 küçük epsilon böyle 2 gibi görünüyor. Halbuki mutlak x-1 neden küçük kalması lazım? Deltadan küçük kalması lazım. Değil mi?
+
+555
+01:30:05,712 --> 01:30:11,032
+yasadan küçük kalması lazım. Hadi üşemeyin bunu da yazayım. Buradan şöyle çıkıyor ya.
+
+556
+01:30:17,332 --> 01:30:20,892
+Bunu normalde çözüm yaparken yazmıyoruz da ben siz görün diye yazıyorum.
+
+557
+01:30:24,884 --> 01:30:25,724
+Şöyle çıkıyor.
+
+558
+01:30:26,804 --> 01:30:29,463
+Şimdi zaten sol tarafı pozitif olduğu için sol tarafı yazmadım.
+
+559
+01:30:29,743 --> 01:30:33,384
+Bakın burayı çözdüğüm zaman mutlak x 81 küçük epsilon beli ki çıkıyor.
+
+560
+01:30:33,663 --> 01:30:37,743
+Şimdi orijinal olarak mutlak x 81 nereden küçük kalması gerekiyordu aslında?
+
+561
+01:30:38,144 --> 01:30:39,304
+Dersadan küçük kalması gerekiyor.
+
+562
+01:30:39,344 --> 01:30:40,323
+O zaman ne yapıyoruz bakın?
+
+563
+01:30:40,563 --> 01:30:42,304
+Ders eşittir epsilon beli ki seçiyoruz.
+
+564
+01:30:42,804 --> 01:30:43,203
+Tamam mı?
+
+565
+01:30:43,203 --> 01:30:43,844
+Bunu anladık mı?
+
+566
+01:30:45,703 --> 01:30:46,604
+Evet hocam.
+
+567
+01:30:47,444 --> 01:30:57,503
+Çok teşekkür ederim, anlayanlar çıktı. Hakikaten memur oldum. Yani kolay değil. Mesela burada birinci derecede bir fonksiyon var değil mi? Bir polinom var. İkinci derece alınca biraz daha karışıyor.
+
+568
+01:30:58,260 --> 01:31:02,659
+Biraz daha karışıyor. Şu çözümü bulmak kolay olmuyor. Daha çok işlemi yapmak gerekiyor.
+
+569
+01:31:03,020 --> 01:31:10,180
+Kara çök gelince, kara çökünün negatif olmaması gerektiği gerçeği daha da işlemleri karıştırıyor, daha da zor oluyor.
+
+570
+01:31:10,480 --> 01:31:14,840
+Daha çok işlemleri yapmak gerekiyor o zaman. Ama mühendisli öğrencilerinden bunu beklemiyoruz.
+
+571
+01:31:14,840 --> 01:31:19,079
+Bunlar teorik şeyler. Mühendisli öğrencilerinden beklemiyoruz. Bunları sileyim.
+
+572
+01:31:19,636 --> 01:31:30,116
+Bir örnekle, yani limitin resmi tanımı, formül diyorlar İngilizce, formül tanımı nasıl kullanılıyor, şurası nasıl kullanılıyor, bir kere görün diye bir tane örnek yazdım.
+
+573
+01:31:30,436 --> 01:31:36,976
+Şimdi arkadaşlar, bu tanımı yapmazsak, bundan sonra yararlıca bir söylemiz haber emek.
+
+574
+01:31:38,068 --> 01:31:56,468
+Teoremi, size ispat etmeyeceğim ben de kendimi iznan etmek için söylüyorum. Teoremini ispat etmenin tek yolu bu tanım. İşte o tanım yapılmış, bu tanım yapılmış. Dolayısıyla şu aşağıya yazacağımız teoremler kolaylıkla ispat edilebilir hale gelmiş. Kolay mı deseniz çok kolay değil ama ispat edilebilir hale gelmiş.
+
+575
+01:32:06,068 --> 01:32:12,808
+Bir fonksiyonun limitini, bir fonksiyonun limitini şu şekilde tabloları yaparak görmek o kadar kolay değil.
+
+576
+01:32:13,808 --> 01:32:20,148
+Trigonometrik fonksiyon gelecek, logaritmik fonksiyon gelecek, ters trigonometrik fonksiyon gelecek, üstel fonksiyon gelecek.
+
+577
+01:32:20,628 --> 01:32:26,368
+Elimize hesap makinesi alıp her defasında bunları yapmak çok zor ya da imkansız hale gelebilir.
+
+578
+01:32:27,060 --> 01:32:51,000
+Bunlardan kurtulmak için Leibniz'e Newton ve sonra rahmetle anacağız. Aslında limiti bulan, limiti geliştiren, günümüze getiren ve bilimle, şu anda kullandığımız bilimde çığır açan kişinin adını biliyor musun? O bölümün limitini hesaplama kuralı falan var ya. Neydi o?
+
+579
+01:32:51,412 --> 01:33:07,472
+bölümün limiti hesaplama kuralı, belirsiz limitleri hesaplama kuralı. Hatırlıyor musunuz? L ile başlıyordu ya. L'Hospital. L'Hospital diye okunuyor. O hospital hastane demek. L'Hospital diye okunuyor. Yalnız arkadaşlar o kuralın adı L'Hospital kural değil. Daha önce duymuş muyum?
+
+580
+01:33:08,275 --> 01:33:11,755
+Hocam, bizim zamanımızda müfredattan kaldırılmıştı. Biz görmedik.
+
+581
+01:33:12,115 --> 01:33:18,755
+Yok, önemli değil. Ben sadece bir bilgi olsun diye söylüyorum. L'Hospital kuralı diye bildiğiniz kuralın adı arkadaşlar Bernolü kuralı.
+
+582
+01:33:18,935 --> 01:33:25,935
+Diyeceksiniz ki, neden kitaplara L'Hospital kuralı diye geçmiş? Valla onun mazisi var, anlatırım size. Tarihi var, anlatırım.
+
+583
+01:33:26,195 --> 01:33:30,876
+Kitap mada yazdım, anlatırım. O kural geldiğinde anlatırım. Sadece ben bilgi olsun diye söylüyorum.
+
+584
+01:33:34,323 --> 01:33:59,583
+Şimdi geri buraya dönesek arkadaşlar. Demek ki bir fonksiyonun bir değerdeki limitini böyle tabloyla hesaplamak çok zor olabilir, imkansız olabilir. Çok donanımlı bir hesap masinasına ihtiyacımız olabilir. Olabilir derken bunu ben düşünmedim tabii. Kimler? 1690'lı yıllarda bilim insanları düşünmüş. Newton ve Latinx'den sonra Benöl'ü bunu düşünmüş. Bunlar limit hesaplama kuralları getirmişler.
+
+585
+01:34:00,051 --> 01:34:04,291
+Kuraları getirmek, teoremler ortaya atmak demek. Bakalım şimdi neler söylenir.
+
+586
+01:34:05,031 --> 01:34:10,431
+Tanımı kullanarak teorem. Yani tanım üzerine bazı kısıtlamalar getirdiğimiz zaman teoremler ortaya çıkıyor demiştim ya.
+
+587
+01:34:10,631 --> 01:34:14,211
+Şimdi birincisi arkadaşlar. Daha önce söylediğimiz teoremi haline getirilmiş hali.
+
+588
+01:34:14,471 --> 01:34:23,491
+Ölene kadar unutmayın demiştim ya demin. Bir fonksiyon mevcudiyetin, varlığın geçtiği her yerde sağda ve soldan limitlerin aynı olması gerekir dedim ya.
+
+589
+01:34:23,491 --> 01:34:27,551
+Bu tanımı onun en genel hali. Bakın. Eğer bir fonksiyonun
+
+590
+01:34:27,956 --> 01:34:35,755
+kısa okunuşu, limit varsa tektir. Bunu unutmuyoruz. Ölene kadar unutmayacağız. Limit varsa tektir.
+
+591
+01:34:36,148 --> 01:34:58,967
+Bunu artık unutmayacağım. Eğer iki tane limit çıkmış gibi görünürse, limitin mevcudiyeti, varlığı, L1'in L2 eşit olmasını gerektirir demişiz. Bunu özelleştirirsek, sağdan ve soldan limitler var da eşit olarak değil, tekrarlayabiliriz. Sağ sol gerekmediği zaman da böyle. Limit varsa tektir.
+
+592
+01:34:59,731 --> 01:35:24,672
+Yani hiç kimse 2 tane limitten bahsedemez diyor. Öyle bir şey olabilir mi ya? Birisi o zaman eksi bir şey söyler, diğeri artı bir şey söyler. Böyle bir şey olabilir mi? Limit varsa tektir. Ölene kadar unutmuyoruz. Şu ikinciyi de arkadaşlar, bak koyadım zaten hep, bunu da ölene kadar unutmayacağım. Negatif olmayan bir fonksiyonun limiti negatif değildir. Bunu ölene kadar unutmayacağım. Daha keskin söylemek gerekirse, pozitif bir fonksiyonun limiti pozitiftir.
+
+593
+01:35:26,003 --> 01:35:47,783
+Bu teoremi tekrar edersem, negatif olmayan bir fonksiyonun limiti negatif değildir. Bunu da ölene kadar unutmayacağız. Bakın bunu zaman zaman hatırlatacağım. Süreklilikte, türevde, türevini uygulamalarında ve integralde. Her zaman, her yerde bize lazım. Her zaman, her yerde bize lazım. Mesela integral yazıyı.
+
+594
+01:35:52,340 --> 01:35:55,240
+Her yerde lazım da en son konumuzu yazalım.
+
+595
+01:35:58,612 --> 01:36:18,351
+Her şey limittir arkadaşlar. Yeryüzünde karşılaştığınız müsbet her şey limittir. Şimdi arkadaşlar, okuyorum A'dan B'ye fx değil. Eğer f, eğer f şurası, integral fx negatif olmayan bir fonksiyon ise bu integralın adı nedir? Ya da bu integral neyi temsil eder biliyor musun?
+
+596
+01:36:20,351 --> 01:36:25,572
+Eğer fx negatif değilse yani büyü geçiş 0 ise bu integral neyi temsil eder?
+
+597
+01:36:27,315 --> 01:36:28,335
+Ne eder hocam?
+
+598
+01:36:28,975 --> 01:36:30,895
+Eğri altındaki alanı temsil eder.
+
+599
+01:36:31,576 --> 01:36:32,496
+Tamam mı?
+
+600
+01:36:32,755 --> 01:36:40,496
+Face eğrisi ile oluşturulmuş, sınırlarda bunlar olabilir, face eğrisi ile oluşturulmuş bölgenin alanını temsil eder.
+
+601
+01:36:40,855 --> 01:36:42,215
+Bakın, her şey limitle.
+
+602
+01:36:43,015 --> 01:36:43,615
+Her şey limit.
+
+603
+01:36:43,815 --> 01:36:44,115
+Bakın.
+
+604
+01:36:44,916 --> 01:36:52,916
+süreklilik limit, türev limit, integral limit, her şey limit. Dolayısıyla limitin üzerine çok duruyorum, limiti çok yayınlayacak.
+
+605
+01:36:52,916 --> 01:36:59,796
+Demek ki arkadaşlar, negatif olmayan bir fonksiyonun limiti negatif değildir. O zaman demek ki yazdığım integral negatif değilse bir alanı tepsi etmek değil mi?
+
+606
+01:37:00,195 --> 01:37:07,275
+Bakın oraya kadar gidecek. Yani matematik 1'in tamamı limitle alakalı. Tamamı limitle alakalı. Matematik 2'nin bir kısmına limit kullanılmıyor.
+
+607
+01:37:08,979 --> 01:37:31,059
+Ölene kadar unutmuyoruz. Limit varsa tektir. Negatif olmayan bir fonksiyonun limiti negatif değildir. Biraz daha keskin söyleseniz, pozitif bir fonksiyonun limiti pozitif. E tersini okuyabiliriz değil mi? O zaman negatif bir fonksiyonun limiti de nedir? Cevap bekliyorum. Negatif bir fonksiyonun limiti negatiftir değil mi? Devam edelim şimdi.
+
+608
+01:37:32,083 --> 01:37:35,244
+Şimdi bu da sağdan ve soldan limitleri resmi tanımı arkadaşlar.
+
+609
+01:37:35,604 --> 01:37:37,324
+Sağdan ve soldan limitleri resmi tanımı.
+
+610
+01:37:37,623 --> 01:37:39,384
+Ben ihtiyaç olduğu için yazdım.
+
+611
+01:37:39,423 --> 01:37:43,543
+Yani size değil de anlatım anlamında ihtiyaç olduğu için buraya yazdım.
+
+612
+01:37:43,543 --> 01:37:45,543
+Bu şekilde geçiyorum.
+
+613
+01:37:46,024 --> 01:37:49,284
+Bak ilk sağda, sağdan limitde ilk sağda değerler alıyor.
+
+614
+01:37:49,364 --> 01:37:50,604
+C'den büyük değerler alıyor.
+
+615
+01:37:50,684 --> 01:37:50,844
+Yürü.
+
+616
+01:37:51,384 --> 01:37:52,384
+C'eta pozitif ya.
+
+617
+01:37:52,819 --> 01:37:58,019
+pozitif çıkacak ya, c'den büyük değerleri aldığı için sağdan limitliyoruz.
+
+618
+01:37:58,219 --> 01:38:02,679
+C'ye geldiğiniz zaman bakın, şuraya geleyim, bakın burada da, biliyor musunuz?
+
+619
+01:38:04,179 --> 01:38:06,919
+Ne diyor? Ha şurada. Bakın burada da c'den küçük değerler alıyor, biliyor musunuz?
+
+620
+01:38:07,339 --> 01:38:08,759
+Buna da soldan limitliyoruz.
+
+621
+01:38:09,059 --> 01:38:14,539
+Tamam c'den küçük değerleri alınca soldan limit, c'den büyük değerleri alınca sağdan limitliyoruz.
+
+622
+01:38:15,315 --> 01:38:31,996
+Bu resmi tanımlar. Demin dedik ya, c sayısından daha küçük değerlerle yaklaştıran soldan limit diyoruz, c sayısından daha büyük değerlerle yaklaştıran sağdan limit diyoruz ya. Bu, şembolize edilmiş, resmileştirilmiş hali oluyor. Burada da ıspatı var bak.
+
+623
+01:38:32,659 --> 01:38:42,899
+Bunları da geçtim. Gene, daha önce söylediğimiz gibi diyor, limitin mevcut olması için sağda ve sola limitler mevcut ve eşit olmalıdır diyor. Böylece arkadaşlar,
+
+624
+01:38:43,796 --> 01:38:54,336
+Önceli limitin, informal tanımını verdik, tablo yardımıyla örnekleri yaptık, sonra resmileştirdik tanımı, törenler yazabilmek için, oradaki tane tören yazdık.
+
+625
+01:38:54,336 --> 01:39:03,336
+Şimdi, demin dedim ya, her şeyi tabloyla yapmak mümkün değil, çok donanımlı hesapmak için olsa bile, hakikaten dakikalar sürebilir.
+
+626
+01:39:03,775 --> 01:39:11,315
+Yani, tabloyla limit hesaplamak dakikalar sürebilir ama, limitlerin hesaplanmasına dair, yani belli törenler, kurallar getirdiğiniz zaman,
+
+627
+01:39:11,796 --> 01:39:14,815
+Limitlerin hesaplanması saliseler sürebilir.
+
+628
+01:39:15,036 --> 01:39:16,376
+Hadi salise çok küçük oluyor.
+
+629
+01:39:16,716 --> 01:39:18,536
+Saniyeler içinde limitleri hesaplayabilir.
+
+630
+01:39:18,876 --> 01:39:25,155
+Şimdi limitlerin hesaplanmasına dair kuralları ben tek tek yazdım ama hızlı bir şekilde tekrar edeyim.
+
+631
+01:39:25,456 --> 01:39:26,635
+Onu kurallar diye söylerim.
+
+632
+01:39:26,716 --> 01:39:27,855
+Ben teoremler diye yazdım.
+
+633
+01:39:28,115 --> 01:39:29,676
+Sonra özetlerim bir şeyler daha.
+
+634
+01:39:31,555 --> 01:39:34,555
+Şimdi teoremleri söylüyorum, özetleyeceğim.
+
+635
+01:39:34,935 --> 01:39:36,456
+Şu birincisi şunu diyor arkadaşlar.
+
+636
+01:39:36,615 --> 01:39:38,376
+İki tane var aslında burada.
+
+637
+01:39:39,859 --> 01:39:44,460
+Limitin mevcut, iki fonksiyonun toplamının limiti, limitlerin toplamına eşittir.
+
+638
+01:39:45,039 --> 01:39:53,279
+Cümleyi tekrar ediyorum. Limitin mevcut, iki fonksiyonun toplamının limiti, limitlerin toplamına eşittir.
+
+639
+01:39:53,819 --> 01:40:00,119
+Yazmışım bakın bunu. Limitin mevcut iki tane fonksiyon var, onların toplamının limiti, limitlerin toplamına eşittir.
+
+640
+01:40:00,680 --> 01:40:03,460
+Farkı da aynı şekilde, limitlerin farkına eşittir.
+
+641
+01:40:03,764 --> 01:40:28,543
+Şimdi arkadaşlar bakın, cümleyi üçüncü kez tekrarlıyorum, sonra yanlış bildiğiniz bir şey söyleyeceğim. Muhtemelen yanlış bildiğiniz ya da hiç bilmediğiniz bir şey söyleyeceğim. Üçüncü kez tekrarlıyorum. Limiti mevcut, iki fonksiyonun toplamının limiti, limitlerin toplamına eşittir. Şimdi bunu tersten okumayın. Tamam mı? Bakın, tersten okumak olumsuzsa doğrudur.
+
+642
+01:40:28,884 --> 01:40:52,584
+Bir daha tekrar ediyorum. Bir teoremi tersten okumak olumsuz ise doğrudur. Olumlu okuyamazsınız. O zaman olumlu okuyacaksınız. Bu teoremin tersi doğru değildir. Yani iki fonksiyonu topladığınız zaman limitinin mevcut çıkması, belli bir sayı çıkması fonksiyonların ayrı ayrı limitlerinin olduğu anlamına gelmez.
+
+643
+01:40:53,203 --> 01:41:02,203
+Bir daha tekrar ediyorum. İki fonksiyonun toplamının limitinin mevcut olması fonksiyonların limitinin mevcut olacağı anlamına gelmez.
+
+644
+01:41:02,543 --> 01:41:09,743
+Kesinlikle bu yanlışa düşmeyecek. Örnek. Daha fazla sayı dolusa da gene aynı demektir. Örnekle bakın.
+
+645
+01:41:10,884 --> 01:41:14,364
+Şimdi arkadaşlar, birinci fonksiyon x bölü x 81 olsun.
+
+646
+01:41:14,591 --> 01:41:24,991
+Limiti mevcut değil, değil mi? Bakın, limiti mevcut değil. Niye? İç bire soldan gitti, eksi sonsuz çıkıyor, sağdan gitti, artı sonsuz çıkıyor, filan. Değil mi? Bunu tabloyla görebiliriz.
+
+647
+01:41:25,991 --> 01:41:34,811
+Birinci fonksiyonun limiti mevcut değil. İkinci fonksiyonun limiti mevcut değil. Bunu da gördük. Tabloyla görebiliriz. Sağdan soldan bakabiliriz. Ya da formülle görebiliriz.
+
+648
+01:41:35,411 --> 01:41:37,771
+Her iki fonksiyonun içleştirilmesi de limiti mevcut değil.
+
+649
+01:41:39,060 --> 01:41:44,900
+Böyle olması topladığınız ya da çıkardığınız zaman limitin meclisi olmayacağı anlamına gelmez diyor.
+
+650
+01:41:45,200 --> 01:41:51,920
+Şimdi yapalım. Bakın toplamışım. Tamam mı? Birinci fonksiyon, ikinci fonksiyon topluyor. Sonuç ne çıkıyor arkadaşlar?
+
+651
+01:41:51,920 --> 01:41:55,560
+Toplayalım şimdi. Bakın. x artı 1 bölü.
+
+652
+01:41:56,051 --> 01:42:10,531
+Pardon, paydaları düzenleyelim, paydaları. Yani pardon derken, paydalar aynı değil ya. Şimdi burasını nasıl yazacaksınız? Şurasını 1 bölü 1x'i yazıp, şunun paydası ile aynı olsun diye, eksi olacaksınız. Yani ne oluyor?
+
+653
+01:42:11,531 --> 01:42:19,231
+x bölü 2x1, eksi 1 bölü 2x1 oluyor. Topladığımız ne çıktı? x eksi 1 bölü 2x1. Cevap 1.
+
+654
+01:42:20,243 --> 01:42:31,184
+Tabisinin limiti, değil mi? Burası 1 oldu. Şimdi cevap 1 oldu. Burayı anladık mı? Şurayı. Evet. O zaman bak. Evet hocam. Görüyorsunuz değil mi? Matematiği seviyorum.
+
+655
+01:42:32,180 --> 01:43:00,180
+Dedim ya, dersi dinlemek bir ayrıcalıktır. Bakın, birçok şey aklınızın bir köşesinde kalacaktır. Ölene kadar unutmayacak, ölene kadar diyorum ya, o da aklınızın bir köşesinde kalacak çünkü. Bakın, her iki fonksiyonun da limiti mevcut değil ki çeşitli bir de. Ama toplayınca limit 1 çıktı. Ben tersen söyledim değil mi? İki fonksiyonun toplamının limitinin mevcut çıkması, onların ayrı bir limitlerin mevcut olacağı anlamına gelmez. Sakın bu yanlışa düşmeyin. Bakın, sakın bu yanlışa...
+
+656
+01:43:00,180 --> 01:43:10,199
+düşmeyin demiştim. Bu son derece önemli. Eğer her iki fonksiyonunda limiti mevcut ise toplamının limiti, limitlerin toplamına, farkın limiti, limitlerin farkına eşittir diyoruz.
+
+657
+01:43:10,560 --> 01:43:19,300
+Tersen bakarsanız olumsuz bakacağız. Olumlu bakarsanız böyle bir tuhaf ya da yanlışa düşme ihtimara ortaya çıkacak.
+
+658
+01:43:20,851 --> 01:43:43,551
+Bir tane örnek koymuşum. Gerek yok ama ben bir tane koydum işte. Birinin limiti, iki diğerinin limiti eksi birse cevap değildir diye. Şunu tam karşılayasın diye, şurayı tam karşılayasın diye bir tane örnek koymuşum. Bir tane daha örnek, iki tane örnek koymuşum. Bunları sisteme AVS'e koyarken şunları silerim. Sayısı sayısı az olsun. Şey, fonksiyonlar aldınız mı? Evet. Bazı kısımlarını silerek yazdım. 15 saati indirin.
+
+659
+01:43:43,551 --> 01:43:44,872
+Kocam fonksiyonlarım.
+
+660
+01:43:45,771 --> 01:43:46,511
+Evet, efendim.
+
+661
+01:43:47,347 --> 01:43:48,067
+Aldık.
+
+662
+01:43:48,507 --> 01:43:54,847
+Tamam. O 20 sayfa falan da ben onu şey yaparak, kısaltarak lazım olan kısımları sadece koydum.
+
+663
+01:43:55,007 --> 01:43:56,327
+Teşekkür ederiz.
+
+664
+01:43:56,867 --> 01:43:57,847
+Teşekkürler hocam.
+
+665
+01:43:59,268 --> 01:44:12,527
+Bunları silerim tamam mı? Gene sistemi okulak, PDF'sini yüklerken bunları silerim ama Zoom'da dururuz. Siz istediğiniz zaman Zoom'a girip bunları okursunuz. Sayfa sayısı az olsun çıkarırken diye. Şunları silerim.
+
+666
+01:44:13,076 --> 01:44:40,155
+Çarpım için de aynı şey geçerli arkadaşlar. Bakın limiti mevcut 2 fonksiyonun çarpımının limiti, limitlerin çarpımı eşittir diyor. Bunun da tepsi doğru değil tamam mı? Yani bunun 2 fonksiyonun çarpımının limitinin belli bir sayı çıkması onların fonksiyonlar ayrı ayrı limitin mevcut olacağı anlamına gelmez diyor. Buna da örnek yapmış olabilirim, yapmamışım. Aşağıda olabilir. Burada da buraya ben tabii çok yer kaplanmasının 2 fonksiyonu yazıyorum. Şurada da bakın genelini yazıyorum.
+
+667
+01:44:40,659 --> 01:45:04,279
+Yani 2 tane olması gerekmiyor. Ne tane olabilir? Bir sürü fonksiyon olabilir. Aynen kural geçerlidir. Burada da bakın, bu teoremin tersi doğru değildir diyor. Görüyorsunuz, bakın fonksiyonlarından birisi x olsa, limiti sıfır, x eşitir sıfırda. Diğeri bir bölü x olsa, onun x eşitir sıfırda limiti yok. Bakın birinin var, birinin yok. Çarpınca 1 çıkıyor, görür müsünüz? Matematiği seviyorum ya.
+
+668
+01:45:04,448 --> 01:45:29,008
+İkna etmek ne kadar kolay değil mi? İnsanları ikna etmek ne kadar kolay. Tersi doğru değil derken. Aldım bak, birinin limiti var, diğerinin limiti yok, çarpınca limit çıkıyor. Limitin çıkması bunların ayrı ayrı limitlerinin olacağı anlamına gelmez. Ayrı ayrı limitlerinin olacağı anlamına gelmezdi. Nasıl almıyorsunuz? Bana söyler misiniz? Yani şunu açık yazsam ne anlarsınız arkadaşlar? Açık yazmak istesen? Ben yazayım.
+
+669
+01:45:31,123 --> 01:45:32,623
+Biri sildiğimi düşünün.
+
+670
+01:46:02,484 --> 01:46:05,664
+Özür dilerim ama arkadaşlar bu matematiği katletmek gerekir biliyor musun?
+
+671
+01:46:06,244 --> 01:46:10,963
+Limit x0'a girelim, x x1, x3, bunu yazmak matematiği katletmek demektir.
+
+672
+01:46:11,664 --> 01:46:14,724
+Bir şey söyleyeceğim, benim öğrencim diye devam edeceğim sonra.
+
+673
+01:46:15,084 --> 01:46:21,764
+Arkadaşlar, benim öğrencim kesinlikle böyle bir şey yapmayacak.
+
+674
+01:46:21,764 --> 01:46:23,384
+Bak, tekrar söylüyorum.
+
+675
+01:46:23,904 --> 01:46:26,764
+Benim öğrencim kesinlikle...
+
+676
+01:46:28,051 --> 01:46:32,651
+2 ya da daha çok fonksiyonun toplamı, farkı ya da çarpımı bölümünde aşağıda söyleyeceğim.
+
+677
+01:46:33,051 --> 01:46:39,731
+2 ya da daha çok fonksiyonun toplamının, farkının ya da çarpımının limitini hesaplıyorsa kesinlikle böyle bir şey yazmayacak.
+
+678
+01:46:40,371 --> 01:46:43,651
+Kesinlikle böyle bir şey yazmayacak. Bu matematiğin katli demek.
+
+679
+01:46:44,871 --> 01:46:46,111
+Bu matematiğin katli demek.
+
+680
+01:46:48,331 --> 01:46:49,111
+Sakın ha.
+
+681
+01:46:49,779 --> 01:47:10,139
+Böyle bir şey yok matematikte. Matematikte genel olarak böyle bir şey yok. Şöyle diyebilirsiniz. Ya hoca, böyle yazmışsınız da buraya. Bak, buraya böyle yazmışsınız da diyebilirsiniz. Demeyin. Burada başka bir şey söylüyor. Burada ne diyor? Limit mevcut iki fonksiyonun çarpımın limiti, limitlerin çarpımı eşitci diyor. Peki burada limitler mevcut mu arkadaşlar?
+
+682
+01:47:10,739 --> 01:47:35,840
+Arkadaşlar, limitler mevcut mu? E değil. O zaman benim öğrencim kesinlikle, söyleme de dikkat etse bile böyle yazmayacak. Tamam mı? Limitleri dağıtmayacak. Duymayan var mı? [öğrenci], [öğrenci], [öğrenci], [öğrenci]. Duyduk hocam. Yok hocam. Benim öğrencim kesinlikle limiti içeri dağıtmayacak.
+
+683
+01:47:35,988 --> 01:47:59,887
+Olay ne olursa olsun, kesinlikle içeri dağıtmayacak. Bunu siliyorum şimdi. Dağıtırsanız ne kadar vahim şeyler çıkacağımı daha sonra gene göreceksiniz. Dağıtma yok. Peki dağıtmayacaksak nasıl etabileceğiz? Sorsan gelebilir onu söyleyeceğim. Şimdi arkadaşlar, biliyorsunuz tehlikeli değil mi? Bölme. Niye? Payda sıfır olabilir. Burada sıfır olmasın diyor. Tamam mı? Burada sıfır olmasın diyor. Şimdi.
+
+684
+01:48:00,948 --> 01:48:24,648
+limit mevcut, ben kelimelerle okuyorum sonra formülünü görüyorsunuz zaten. Ekranda formülünü görüyorsunuz, ben kelimelerle okuyorum. Bu da diyor ki, limiti mevcut, iki fonksiyonun bölümünün limiti uygun durumda limitlerin bölümüne eşittir. Bir daha tekrar ediyorum, limiti mevcut, iki fonksiyonun bölümünün limiti uygun durumda limitlerin bölümüne eşittir diyor. Uygun durum nedir?
+
+685
+01:48:25,908 --> 01:48:27,268
+Uygun durum nedir?
+
+686
+01:48:28,851 --> 01:48:31,731
+Paydanın sıfırdan farklı olmaması.
+
+687
+01:48:32,731 --> 01:48:43,131
+Paydanın sıfır olmaması. Peki, olursa ne olur? Payda sıfır olursa ne olur? Cevabı olan var mı? Payda sıfır olursa ne olur?
+
+688
+01:48:44,471 --> 01:48:45,391
+Belirsiz olur.
+
+689
+01:48:46,811 --> 01:48:48,332
+Değil. Cevap değil o.
+
+690
+01:48:48,431 --> 01:48:49,952
+Löpüter mi yaparız?
+
+691
+01:48:50,652 --> 01:48:50,872
+Hayır.
+
+692
+01:48:53,684 --> 01:49:04,863
+Fazla yüzmeden sizi ben söylüyorum. Payda sıfır olursa arkadaşlar pay kısmına bakar. Payda sıfır olursa pay kısmına bakar. Eğer pay kısmı da sıfır olursa onun bir adı var. Sıfır bölü sıfır neydi?
+
+693
+01:49:07,804 --> 01:49:08,323
+Belirsizlik.
+
+694
+01:49:09,684 --> 01:49:18,684
+Belirsizlik değil mi? Sıfır bölü sıfır limit ve belirsizlikti. Peki belirsiz bir şeyi belirli hale getirmek mümkün mü? Belirsiz bir şeyi belirli hale getirmek mümkün mü?
+
+695
+01:49:18,684 --> 01:49:19,684
+Mümkün.
+
+696
+01:49:20,180 --> 01:49:34,340
+Olabilir. Değil mi? Mümkün olabilir. Paya bakarız dedik ya. Peki payda sıfır iken pay sıfırdan farklı ise ne olur arkadaşlar? Payda sıfır iken pay sıfırdan farklı ise iki şey olabilir.
+
+697
+01:49:35,140 --> 01:49:36,980
+İki şey olabilir. Kim konuştu?
+
+698
+01:49:37,360 --> 01:49:38,020
+[öğrenci] hocam.
+
+699
+01:49:38,500 --> 01:49:47,100
+[öğrenci]. İki şey olabilir. Tek değil. Ne olabilir? Artı sonsuz veya eksi sonsuz olabilir. Değil mi?
+
+700
+01:49:47,667 --> 01:49:59,747
+Artı sonsuz veya eksi sonsuz olabilir. Sadece artı sonsuz da olabilir mi? Olabilir. Sadece eksi sonsuz da olabilir mi? Olabilir. Her halükarda limit mevcut değildir.
+
+701
+01:49:59,947 --> 01:50:09,867
+Eğer artı yapı eksi sonsuz çıkarsa zaten o çıkmış oluyor ama sonsuz bir sayı ya da eksi sonsuz bir sayı temsil etmediği için limit vardır demiyoruz. Sadece eşittir odur diye yazıyoruz.
+
+702
+01:50:09,867 --> 01:50:12,687
+Bunu da anladık. Bakın örneğe. Örneğe bakın.
+
+703
+01:50:13,619 --> 01:50:39,039
+Şimdi x1'e giderken x karenin limiti 1. x1'e giderken 2x bölü x kare artı 1'in limiti ne arkadaşlar? 2, cevap 0 çıkıyor. Bakın, her ikisinde limiti mevcut görüyor musunuz? Herhangi bir problem yoktur. Dolayısıyla değeri yerine yazabiliriz. Herhangi bir problem yoktur. Değeri yerine yazabiliriz. Sonucu buluruz. Problem varsa o zaman problemi dikkat alacağız.
+
+704
+01:50:42,612 --> 01:51:09,472
+Bu son derece bastığı örnekleri öyle olmayacak diye sıfıra bölme gibi bir durum. Tehlikeli durum söz. Tehlikeli de koyacağız samayı giydir. Bakın tehlikeli bir durum söz konusu değil burada. Olabilir. Olsa ne olacak? Şu örnekte görebiliriz. Bak, limit x1'e giderek f' için f' için 0. Limit x1'e giderek f' için g' için 0 ise diyor, limit x1'e giderek f' için g' için g' için hakkında ne söylenir? Demin [öğrenci] ne demişti? [öğrenci] ne demişti?
+
+705
+01:51:10,452 --> 01:51:33,352
+0 bölü 0 belirsiz olur demiş. Şimdi arkadaşlar, bu şurada geçerli. Neredeydi o? Sildim mi? Neyse yukarıda bir şeydi, bir yerde, ha şurada. L'de 0 olsa 0 bölü 0 olur demiştim. Burada arkadaşlar böyle bir şey söz konusu bakalım. Bak, çiorem kullanılamıyor. Bakalım.
+
+706
+01:51:36,047 --> 01:51:59,967
+0 belirsizliği ortaya çıkarsa, oyaydı galiba, oya mıydı? Kaldırılabilir, kaldırılabilir, ebilir, ebilir, ebilir koymuşsun. Bazen belirsizlik ortadan kalkmayabilir, tamam mı? Çoğunlukla kalkar ama kalkmayabilir. Mesela, bakın, fx'nin x81'in karesi, gx'nin x81 koyarsanız belirsizlik ortadan kalkar ve sonuç 0 olur.
+
+707
+01:52:00,627 --> 01:52:02,807
+Sonuç 0 olur. Dikkat ediyor musunuz?
+
+708
+01:52:03,067 --> 01:52:04,107
+X farklı 1 yazıyorum.
+
+709
+01:52:04,627 --> 01:52:06,467
+Sonra da X yerine 1 koyuyorum. İşte limit budur.
+
+710
+01:52:06,587 --> 01:52:08,167
+İlk örneğimizdi değil mi? Bakın.
+
+711
+01:52:08,768 --> 01:52:10,107
+Eğer F X yerine X kareksi
+
+712
+01:52:10,107 --> 01:52:12,467
+X 81'in kareksi koyarsanız, G X yerine
+
+713
+01:52:12,467 --> 01:52:14,547
+X 81 koyarsanız verisizlik ortadan
+
+714
+01:52:14,547 --> 01:52:16,207
+kalkar. Ne söylenebilir diyor ya.
+
+715
+01:52:16,507 --> 01:52:18,287
+Limit hakkında ne söylenebilir? Bakın böyle
+
+716
+01:52:18,287 --> 01:52:19,967
+koyarsanız sonuç 0 çıkabilir.
+
+717
+01:52:21,171 --> 01:52:46,591
+Eğer fx'lerini x kare eksi 1, gx'lerini x kare eksi 1 koyarsanız, gene x farklı sıfır kabul ettiğiniz zaman, sonuç 2 çıkar. Gene belirsizlik ortadan kalkabilir. Bir düşünceye bakalım. Bakın, fx'lerini x kare eksi 1, gx'lerini x kare eksi 1 koyarsanız arkadaşlar, x farklı bir kabul ederek sadece eşliğine yaksanız bile x farklı bir, x kare eksi 1 olur. Bakın, görüyor musunuz?
+
+718
+01:52:48,948 --> 01:52:52,448
+O limit ne oluyor? Bu limit nedir arkadaşlar?
+
+719
+01:52:53,368 --> 01:52:53,927
+Mevcut.
+
+720
+01:52:55,248 --> 01:53:01,028
+İçbire gideceğim 1 bölü 2x81 limiti yok ya. A'dan solda yaklaşmadığı için 1 bölü 2x81 limiti yok.
+
+721
+01:53:01,368 --> 01:53:08,148
+Ve x2 yoktur. Değil mi? Limit mevcut değildir. Tam limit mevcut. Böyle şeyler söylenebilir.
+
+722
+01:53:08,588 --> 01:53:09,708
+Hocam bir şey sorabilir miyim?
+
+723
+01:53:09,708 --> 01:53:10,128
+Bu üç.
+
+724
+01:53:11,208 --> 01:53:12,088
+Bu, kim soruyor?
+
+725
+01:53:14,468 --> 01:53:16,048
+Karşılıkla konuşmak için. [öğrenci] var.
+
+726
+01:53:16,404 --> 01:53:17,984
+Evet hocam, bir şey soracaktım.
+
+727
+01:53:19,304 --> 01:53:24,884
+Bunun neye göre x kare eksi 1 ya da x eksi 1'in karesini seçiyoruz? Kafamıza göre mi?
+
+728
+01:53:25,684 --> 01:53:26,664
+Göreşiyor, göreşiyor.
+
+729
+01:53:27,463 --> 01:53:32,364
+Evet, evet. Şey diyor ya, göreşiyor.
+
+730
+01:53:33,203 --> 01:53:40,583
+x1'e gizetim fx limiti sıfır, x1'e gizetim gizetim 0 ise fx bölü gx'in x1'e gizetim limit hakkında ne söylenir diyor ya.
+
+731
+01:53:40,823 --> 01:53:41,103
+Evet.
+
+732
+01:53:41,323 --> 01:53:42,543
+Ben bugün şeyler yazıyorum.
+
+733
+01:53:42,683 --> 01:53:44,783
+Mesela x1'e gizetim fx sıfır olacak ya.
+
+734
+01:53:44,843 --> 01:53:48,303
+O zaman ben fx'in x1'in x1'in kare çalışsam x1'e gizetim sıfır olmuyor.
+
+735
+01:53:48,303 --> 01:53:48,803
+Evet hocam.
+
+736
+01:53:49,123 --> 01:53:49,423
+Oluyor.
+
+737
+01:53:49,883 --> 01:53:51,263
+x1'in x1'i alıyorum.
+
+738
+01:53:51,443 --> 01:53:51,763
+Oluyor.
+
+739
+01:53:52,103 --> 01:53:54,243
+Bakın belirsizlik ortadan kalkar ve sonuç çıkar diyor.
+
+740
+01:53:54,707 --> 01:53:56,728
+Bir başka alternatif olur.
+
+741
+01:53:57,287 --> 01:53:58,527
+Gene şu kurala
+
+742
+01:53:58,527 --> 01:54:00,507
+uygun şekilde fx yerine x kare x1
+
+743
+01:54:00,507 --> 01:54:02,507
+koyarsam gx yerine x kare x1 koyarsam
+
+744
+01:54:02,507 --> 01:54:04,367
+gene genişsizlik ortadan kalkar
+
+745
+01:54:04,367 --> 01:54:05,387
+ve sonuç 2 olur diyor.
+
+746
+01:54:06,527 --> 01:54:08,367
+Bu kurallara uyarak x yerine
+
+747
+01:54:08,367 --> 01:54:10,707
+x kare x1 g yerine
+
+748
+01:54:10,707 --> 01:54:14,287
+fx yerine x kare x1
+
+749
+01:54:14,287 --> 01:54:16,287
+gx yerine x kare x koyarsam
+
+750
+01:54:16,287 --> 01:54:17,728
+bu kez böyle bir şey çıkar diyor.
+
+751
+01:54:18,387 --> 01:54:18,747
+Yani
+
+752
+01:54:19,412 --> 01:54:42,412
+şu kurallara uygun iki tane fonksiyon yazıp hakkında ne söylenebilir diyor ya, ben de bunlar söylenir diyor. Alternatifleri ortaya koyuyorum. Başka alternatifleri de bulabilirsin. Nereye varmak istiyorsun? [öğrenci], burayı anladın mı? Anladım hocam. Kısmen keyifli. Peki nereye varmak istiyorsunuz diye bir soru aklındaysa.
+
+753
+01:54:43,380 --> 01:54:58,400
+Aha varmak istiyorum. Şu başlığa varmak istiyorum. Matematikte hiçbir şey durduk yerine doğru şey atılmamış ya. x bölü gx limitiyle ilgili bazı tomut şeyler söyledikten sonra varmak istediğim bu. Şimdi özet. Belirli ve belirsiz limitte.
+
+754
+01:54:59,860 --> 01:55:06,420
+fx'in limitinin 2c'ye giden L, gx'in limitinin 2c'ye giden M olduğunu kabul edelim.
+
+755
+01:55:06,703 --> 01:55:12,703
+O zaman 3 hal söz konusuymuş. Yukarıda söylediklerimize istinaden 3 hal söz konusuymuş.
+
+756
+01:55:14,043 --> 01:55:23,363
+Bakın, M0'dan farklıysa arkadaşlar, faydası 0'dan farklıysa bu belirli bir limit.
+
+757
+01:55:24,203 --> 01:55:30,323
+Tamam mı? M0'dan. Tabi 0 olursa diye bir soru aklına geliyor mu? Gelmez. İyi de, gelirse de cevap verir.
+
+758
+01:55:31,060 --> 01:55:35,360
+m sıfırdan farklı ise, L ile ilgili herhangi bir şey söylemem gerekiyor mu?
+
+759
+01:55:37,140 --> 01:55:38,100
+Cevap bekliyorum.
+
+760
+01:55:39,880 --> 01:55:40,380
+Gerekmiyor.
+
+761
+01:55:42,079 --> 01:55:47,640
+Gerekmiyor değil mi? L sıfır olsun olmasın. Gerekmiyor. Eğer m sıfırdan farklı ise, bu limitin adı belirli.
+
+762
+01:55:49,020 --> 01:55:52,760
+Önceki örneğin birincisi ve ikincisinde gördünüz. Tamam mı?
+
+763
+01:55:53,300 --> 01:55:56,800
+Burada sıfır gibi görünse de, burada ortadan kalkıyor.
+
+764
+01:55:57,203 --> 01:56:18,043
+Buna adına belirli limit diyoruz. Manipülasyon sonucu da olsa belirli limit diyoruz. Eğer fayda sıfırdan farklı ise. Tamam mı? Eğer arkadaşlar bakın, L sıfırdan farklı iken M sıfırsa bu limit mevcut değildir. Ne olacağını bilmiyorum. Artı sonsuz çıkabilir, eksi sonsuz çıkabilir ya da limit yok çıkabilir.
+
+765
+01:56:18,484 --> 01:56:29,564
+pi sıfırdan farklı iken, pi da sıfır olursa limit mevcut değildir. Pratiğe döktüğünüz zaman, eksi sonsuz olabilir, artı sonsuz olabilir, ya da yok olabilir, genelde mevcut değildir.
+
+766
+01:56:29,924 --> 01:56:38,624
+Üçüncü ve en önemli hal, karşınıza çıkmama ihtimali olmayan hal.
+
+767
+01:56:41,684 --> 01:56:51,084
+her ikisi de sıfırsa, yani hem F'nin hem de G'nin ise C'deki limiti sıfır çıkıyorsa buna belirsiz limit diyoruz.
+
+768
+01:56:52,524 --> 01:56:58,944
+Belirsiz limitler ortadan kaldırılabilir. Yani belirli hale getirilebilir.
+
+769
+01:56:59,328 --> 01:57:15,208
+0x0 belirsizliği veren limitler ortadan kaldırılabilir, belirsizken belirli hale getirilebilir. Peki hepsi, hayır hepsi değil, belirsizliğin devam ettiği durumlar da olabilir.
+
+770
+01:57:15,788 --> 01:57:26,648
+Olabilir ya da belirsizlikten somut bir sonuç, sayısal bir değer almak zor olabilir, olmayabilir. Sayısal bir değer diyorum, dikkat edin, kelimeyi seçerek söylüyorum.
+
+771
+01:57:27,796 --> 01:57:41,395
+Örnekler var. Buna tekrar deyim mi? Bakın. Şimdi arkadaşlar, bölme yapacağımız şey payda da ya. Bakın ben has ve kader bir matematik olarak çok dikkatli yazıyorum. Öğrencimin de dikkat etmesini sağlamaz.
+
+772
+01:57:41,395 --> 01:57:54,596
+x'i x2'ye böleceğim için x'i ikiden farklı kabul ediyorum. Gördüğüm zaman bu çıkıyor, sonucu söyleyeceğim. Tamam mı? Burada mesela, burada payı çarpanları ayırdım. Bakın, payı çarpanları ayırdım.
+
+773
+01:57:54,804 --> 01:58:20,524
+paydan da çarpanlarını biliyorum. x birden farklı kabul ederek bölme yaptığım limiti hesaplayabilirim. Bunları daha önce yaptığım için tekrarlamıyorum. Şimdi arkadaşlar, iki teorem var, iki teorem var. Dördüncü teorem bu, bu da beşinci teorem. Dördüncü teorem söyleyeyim, beşinci teorem üzerinde çok kolay değil mi? Ara vereyim. Dördüncü teorem şöyle diyor, limiti mevcut iki fonksiyon.
+
+774
+01:58:21,171 --> 01:58:35,491
+arasında bir eşitsizlik kurabilirsiniz. Yani eğer bir f fonksiyonu var, limiti mevcut, bir de g fonksiyonu var, limiti mevcut iken fx, fiş, eşit, gx ise bu eşitsizliği terim terim limitlerine alabilirsiniz.
+
+775
+01:58:36,311 --> 01:58:48,471
+f ve g fonksiyonların limitleri mevcut ve şöyle bir eşitsizlik varsa, fx, fiş, eşit, gx gibi bir eşitsizlik varsa eşitsizliği terim terim limitlerini alabilirsiniz.
+
+776
+01:58:48,752 --> 01:59:06,391
+Burada bir tane eşitsizlik var. Eşitsizlik sayısı daha fazla olsa da işlemi tekrar edebilirsiniz diyor. O da bu. O da bu. Şimdi ekranı buraya taşıyorum. Şu teoremi söyleyeceğim. Sonra üzerinde konuşacağım. Şimdi 10 dakika ara. 10 dakika ara veriyoruz. 10 dakika sonra görüşürüz.
+
+777
+01:59:09,908 --> 01:59:11,288
+Şu sesi de kıstayım da.
+
+778
+02:08:11,604 --> 02:08:15,724
+Arkadaşlar ben geldim. Hazır mısınız? Arkadaşlar?
+
+779
+02:08:16,624 --> 02:08:18,564
+Evet hocam.
+
+780
+02:08:19,564 --> 02:08:26,864
+Arkadaşlar bize bir reklamiyonu resmi bildirim yapıldı. 12 Ekim'den itibaren sistem üzerinden yoklama alınacağı şeklinde.
+
+781
+02:08:27,699 --> 02:08:55,019
+12 Ekim'den itibaren sistem üzerinden yoklama alınacak diye bir bilgilim yapıldı. Ayrıntılı söylemedi. Sadece bu kadar söylendi. Tahmin yürütmeyim şimdi. Sistem üzerinden yoklama, yani herhalde sisteme girdiğimiz zaman mı yoklamayı kabul ediyor bilmiyorum. Yoklamaya dikkat etmemiz lazım. Devamsızlıktan kalma durumu olabilir. Derse takip etmeyen vakit, tanıdığınız arkadaşlarınız falan varsa onlara da iletirseniz iyi olur.
+
+782
+02:08:55,604 --> 02:08:59,524
+12 Ekim'den itibaren sistem üzerine yoklama alınacağı söylenildi.
+
+783
+02:09:00,184 --> 02:09:02,604
+Hocam yani siz isim olarak almayacaksınız.
+
+784
+02:09:02,844 --> 02:09:04,184
+Şey sistem alacak değil mi?
+
+785
+02:09:04,224 --> 02:09:05,864
+Çünkü bazen hata yapabiliyor sistem.
+
+786
+02:09:05,964 --> 02:09:07,384
+Olanları yok yazabiliyor da o yüzden.
+
+787
+02:09:08,307 --> 02:09:23,768
+Yok, ben işimi olarak almıyorum. Tahmini yürütmek gerekirse, bize bildirim gelmedi de bu konuda. Ayrıntılı bilgi gelirse onu size söylerim. Belki de siz bu sisteme benimle beraber girdiğiniz zaman otomatik sizi var yazıyor diye düşünmemiz lazım, değil mi?
+
+788
+02:09:23,768 --> 02:09:30,768
+Hocam, okul mailinden mail geliyor ben sisteme girdiğimde.
+
+789
+02:09:31,587 --> 02:09:35,807
+Aynen, mail geldiği başladı artık.
+
+790
+02:09:37,363 --> 02:09:39,003
+Bana gelmiyor işte mesela.
+
+791
+02:09:40,803 --> 02:09:43,383
+O zaman kim dedi bana gelmiyor diye?
+
+792
+02:09:44,023 --> 02:09:45,203
+Bana hocam, [öğrenci].
+
+793
+02:09:46,063 --> 02:10:00,483
+[öğrenci], o zaman sen bizim bilgi işleme bir e-postat, de ki hoca derse girdiği zaman bana mail gelmiyor de, senin e-mail adresinde bir sıkıntı olabilir.
+
+794
+02:10:01,103 --> 02:10:04,763
+Peki canım sana şeyden, Usist'ten yazdığım geldi mi fonksiyonları koydun diye?
+
+795
+02:10:05,619 --> 02:10:06,859
+O geldi hocam.
+
+796
+02:10:07,559 --> 02:10:10,859
+Bunu da gelmesin lazım ama sen gene şeye sor.
+
+797
+02:10:11,760 --> 02:10:15,760
+Tamam hocam, eğer böyle bugün de gelmezse sorarım ben.
+
+798
+02:10:16,884 --> 02:10:38,203
+Tamam. Benim bildiğim kadarıyla arkadaşlar, birinci dönemde öyleydi. Ben sistemi açınca orada şey yazıyordu. Öğrencilere toplu e-posta gönder yazıyordu. Ben onun üzerine tıkladığım zaman size otomatik e-posta gitmiş. Hatta ben öğrencilere benim e-postatmamı beklemeyin. Siz şu adrese girin demiştim. Öyle anlaşmıştık. Mutlaka geliyor olması lazım.
+
+799
+02:10:38,923 --> 02:10:42,283
+Hocam zaten biz sisteme girdiğimizde bize e-posta geliyor direkt.
+
+800
+02:10:43,731 --> 02:10:44,692
+Girince mi geliyor?
+
+801
+02:10:45,052 --> 02:10:49,872
+Evet, direkt girince katıldığınız için, kayıt olduğunuz için falan mail geliyor direkt.
+
+802
+02:10:49,891 --> 02:10:50,231
+Tamam.
+
+803
+02:10:50,532 --> 02:10:57,372
+Hocam bana sizin mailiniz geldi ama katıldığınız için teşekkürler gibi ve mail gelmedi.
+
+804
+02:10:58,872 --> 02:11:00,952
+Onu o zaman bilgi işleme bir sor, [öğrenci].
+
+805
+02:11:02,260 --> 02:11:03,060
+[öğrenci] Hocam.
+
+806
+02:11:03,960 --> 02:11:13,739
+Aynı bu bana söylediğimi bilgi işleme yaz, onlar sana bir cevap versin ki söz dışarı yazdı kalır ya ona göre hareket et. Sonra biliyorsun sıkıntı her zaman yaşanabilir.
+
+807
+02:11:14,239 --> 02:11:17,400
+Tamam mı? Yok, romancılık gibi bilgiler verdikten sonra devam ediyorum arkadaşlar.
+
+808
+02:11:20,460 --> 02:11:25,020
+Şu ekranda gördüğünüz teoremi daha önce lisede gördünüz mü? Şu ekrandaki teoremi.
+
+809
+02:11:27,079 --> 02:11:27,860
+Adı başka olabilir.
+
+810
+02:11:29,939 --> 02:11:34,159
+adını farklı duymuş olabilirsin. Gördünüz mü bunu daha önce?
+
+811
+02:11:36,579 --> 02:11:37,439
+Hayır galiba.
+
+812
+02:11:37,459 --> 02:11:39,039
+Görmemiş olma ihtimaliniz yok.
+
+813
+02:11:39,819 --> 02:11:42,459
+Yani tanıdık geliyor ama çok hatırlamıyor.
+
+814
+02:11:43,099 --> 02:11:44,819
+Sandeviş de önemli demiş olabilirler mi?
+
+815
+02:11:45,899 --> 02:11:47,819
+Evet hocam öyle bir şey. Duydum ben.
+
+816
+02:11:48,319 --> 02:11:55,979
+Sandeviş dediği de yanlış söylemişler. Acıkmıştır size anlatan kişi. Acıkmıştır, sandeviş demiştir. Bunun adı sıkıştırma kuralı. Tek doğrusu bu.
+
+817
+02:11:56,787 --> 02:12:24,647
+Kitaplarda sandviç teoremi yazıyor. İngilizce kitaplarda da gördüm ben. Yanlış. Yani bakın, ben okuyorum şimdi. Şuralarda geçmiş olayım. Bakın, bir H fonksiyonu soldan F ile sağdan G ile sandviç mü yapılıyor? Yok. Bakın bir H fonksiyonu soldan F ile sağdan da G ile ne yapılıyor arkadaşlar? Sıkıştırılıyor ya. Eğer illa de sıkıştırmanın dışında bir isim koyacaksanız tost makinası teoremi diyebiliriz.
+
+818
+02:12:26,260 --> 02:12:52,340
+Sandış devreni demek abesli işçigaldir ya. Hakikaten yanlış. Bak, h fonksiyonu soldan bir f fonksiyonu ile sağdan da bir g fonksiyonu ile sıkıştırılıyorsa o zaman bunun adı sıkıştırma kuralıdır. Ve arkadaşlar, şu eşitsizlik varsa ve hem f'nin hem de g'nin limiti aynı ise hem f'nin hem de g'nin limiti aynı ise ortadakinin limiti de odur diyor.
+
+819
+02:12:53,011 --> 02:13:08,231
+Bunun adına sıkıştırma kuralı diyoruz. Bu teoremi ölene kadar unutmayacağız. Çok affedersiniz, bir insan sıkışınca ne yapacak limitte? Söyleyin. Sıkıştığınız ne yapacaksınız?
+
+820
+02:13:10,371 --> 02:13:12,152
+Çıkmaya çalışırız hocam.
+
+821
+02:13:13,871 --> 02:13:15,551
+Çıkmaya çalışırız.
+
+822
+02:13:16,171 --> 02:13:17,992
+Sıkıştırma kuralını kullanacaksınız.
+
+823
+02:13:18,420 --> 02:13:21,460
+Bir daha söyleyeceğim, benim öğrencim ödene kadar unutmayacak.
+
+824
+02:13:22,159 --> 02:13:24,939
+Sıkıştığınız limitle, sıkıştırma kuralını kullanacak.
+
+825
+02:13:26,420 --> 02:13:28,380
+Tamam, adı üstünde ya, sıkıştık.
+
+826
+02:13:28,699 --> 02:13:31,760
+Sıkıştırma kuralı sizi sıkışmaktan kurtaracak.
+
+827
+02:13:32,307 --> 02:13:49,408
+Bunu unutmuyoruz tamam mı? Bir limit hesabı yapacaksınız, yapmaya gayret ediyorsunuz ama bildiğiniz hiçbir teknik o limit hesaplayamaya yetmiyor. Yani ne yaptınız? Sıkıştınız. O zaman ne yapıyormuşuz? Sıkıştırma kuralını kullanıyoruz. Bunu unutmuyoruz. Örnek daha sonra gelecek.
+
+828
+02:13:50,868 --> 02:14:14,068
+Devam ediyoruz. Şimdi sonsuz emberlerimi yukarıda izah ettim. Şimdi limitle alakasını söyleyeceğim. Bir kısmını söyledim. Birinci başlıkta değil mi? Limit fikri vardı ya. O başlıkta bir kısmını söyledim. Karan kısmını da burada söyleyeceğim. Şimdi arkadaşlar bu başlığa kadar olan kısımda x belli bir sayıya yaklaşırken fx'in durumunu inceledik.
+
+829
+02:14:14,579 --> 02:14:18,959
+Belli bir sayıya yaklaştığı gibi, eksi sonsuz olabildi, artı sonsuz olabildi.
+
+830
+02:14:19,079 --> 02:14:21,499
+Değil mi? Eksi sonsuz olabildi, artı sonsuz olabildi.
+
+831
+02:14:21,839 --> 02:14:37,339
+Bu kısımda da x sonsuza ya da eksi sonsuza yaklaşırken, yani çok büyürken ya da çok küçülürken, fx'in çok büyümesi, çok küçülmesi ya da belli bir sayıya yaklaşması durumlarda ele alınacak.
+
+832
+02:14:38,219 --> 02:14:41,639
+x çok büyürken ya da çok küçülürken bunu yapacağız.
+
+833
+02:14:42,576 --> 02:14:49,056
+x sonsuza giderken eğer fx belli bir sayıya yaklaşıyorsa, limit odur, L'dir diye, L diye yazıyoruz.
+
+834
+02:14:49,696 --> 02:14:58,916
+Tabii, çok küçük bir sayıya, çok küçülürse, yani x sonsuza giderken de fx belli bir sayıya yaklaşabilir, o zaman da gene L'ye yazıyoruz.
+
+835
+02:14:59,956 --> 02:15:25,155
+Çok büyürken L'ye yaklaşır, L'ye olabilir değil mi? Çok küçülürken gene L'ye olabilir. Kısaca matematik bir deyle x sonsuza giderken fx'de olabilir, x sonsuza giderken fx'de olabilir. x sonsuza giderken fx aşağıda gelecek. Şu öne gelirim geri. Bakın x sonsuza giderken fx sonsu olabilir ya da x sonsu olabilir. Tamam mı? Bunlara değineceğiz. Şimdi birinciyi gördünüz.
+
+836
+02:15:25,551 --> 02:15:36,551
+Bir örneği, önce her şeyi tabloyla yapıyoruz ya, iyice yerleşsin diye. Bakın, x çok büyürken 1 bölük nasıl davranır diye bakmış olalım.
+
+837
+02:15:36,551 --> 02:15:43,091
+x çok büyürken 1 bölük nasıl davranır diye bakmış olalım. Bakıyorum işte, x çok büyürken büyütüyorum.
+
+838
+02:15:43,439 --> 02:15:54,239
+10 verdim, 100 verdim, 1000 verdim, 10.000 verdim, büyütüyorum. Bakın, 10 verince 0.1 oluyor, 100 verince 0.01 oluyor, böyle böyle devam ediyor. Bakın, görüyor musunuz?
+
+839
+02:15:54,519 --> 02:16:02,099
+x çok büyüğümde, buradan hangi tahmini yürütüyorum? 0 olacağı tahmini yürütüyorum, buraya 0 yazıyorum. Bir tane okum var, neyi gösteriyor?
+
+840
+02:16:02,676 --> 02:16:20,796
+Tabii sonsuz bir sayıyı temsil etmediği için sağdan soldan gibi bir kavram yok sonsuzda değil mi? Sayıyı temsil etmiyor. Sağdan soldan diye bir şey düşünmüyorum. Bir yerden bakıyorum. Bakın sıfıra çok yaklaşıyor. Limit halinde bu sıfırdır diyorum. Ama iç yerine koyacağım hiçbir büyük sayı 1 bölü 2x'i sıfır yapmaz.
+
+841
+02:16:22,484 --> 02:16:44,584
+Ben o zaman hangi mantığı yürütüyorum? Bakın, bu sayı sıfıra çok yakındır. 1 gülden sonra 3 tane bulsam, değil mi? Görsem, bakın 1 gülden sonra 3 tane görsem sıfırdır diyorum. Dediğim bu. Tamam mı? İlk yerine koyacağım hiçbir değer sıfır yapmaz ama limiti sıfırdır diyorum. Şu özel hali, bu genel hali, şunu ölene kadar unutmuyoruz. Duydunuz değil mi?
+
+842
+02:16:45,075 --> 02:17:12,295
+Bunu ölene kadar unutmuyoruz. Karşımıza çıkacak limitlerin çok büyük bir kısmında bir şekilde bununla karşılaşacağız. Bir şekilde. En sade hali bu, en genel hali bu. Yani 1 bölü x kare olabilir, 1 bölü x küp olabilir, 1 bölü kök x olabilir, 1 bölü x kütleri 3 bölü 2 olabilir vs. Ama paydaya gelen x'in daima pozitif olduğunu unutmayın. Tamam mı?
+
+843
+02:17:12,559 --> 02:17:37,759
+x sonsuza giderken ya da artı sonsuza giderken, tabii şimdi şu soru aklınıza gelebilir, x negatif olursa, k da negatif olursa, x sonsuza nasıl gidecek diye bir soru gelebilir aklınıza. Onu sormayın diye yazmış bu. Genel hali, tamam mı? Genel hali. Yani burada bir tanımsızlık söz konusu olmadığı durumlarda böyle olacak. Negatif olunca da onu yapar ama böyle olacak. Bunu ölene kadar şunu unutmayacağım.
+
+844
+02:17:39,123 --> 02:17:52,443
+Yani x çok büyürken ya da çok büyürken yani x sonsuza ya da artı sonsuza ya da x sonsuza giderken 1 bölüş limiti daima sıfır olur. 1 bölü x kare, 1 bölü kürtüsü vs. hepsi daima sıfırdır.
+
+845
+02:17:52,543 --> 02:17:57,384
+Eks sonsuza da gitse, uygun durumlarda artı sonsuza da gitse daima limit sıfırdır diyoruz.
+
+846
+02:17:57,583 --> 02:18:02,403
+Tekrar söylüyorum, k'nın 1 bölü 2 olması halinde falan bunu ona göre halletmiş olacağız.
+
+847
+02:18:02,835 --> 02:18:27,036
+Tabii x sonsuza ya da x sonsuza giderken arkadaşlar, fx limiti sonsuz olabilir, x sonsuz olabilir. Yani başlık şey ya, sonsuz sembolleri ve limit ya, onu izah ediyor. Böyle olabilir, eksil olabilir. Bakın, x sonsuza giderken x gibi x'i bir göz önüne aldığımız zaman, görüyor musunuz? x gibi x'i bir göz önüne aldığımız zaman, sayılar inanılmaz bir şekilde büyüyor. Ne kadar çok büyüyor, görüyor musunuz? Ve sonsuza giderken.
+
+848
+02:18:27,103 --> 02:18:34,543
+iş eksi sonsuza gitse, aynı tabloyu yapsanız inanılmaz bir şekilde küçülecek, ona da eksi sonsuza yazıyoruz. Bunlar sembolik yazımlar.
+
+849
+02:18:35,383 --> 02:18:40,743
+Artı sonsuz, bunun için eşit ve sonsuz, bunun için eksi sonsuz yazarken limit vardır demiyoruz.
+
+850
+02:18:41,083 --> 02:18:46,683
+Çünkü sonsuz bir sayıyı temsil etmiyor. Yoktur da demiyoruz, limit yoktur başka bir anlama geliyor.
+
+851
+02:18:47,063 --> 02:18:48,963
+Tamam mı? Böyle acayip bir şey.
+
+852
+02:18:50,388 --> 02:18:57,948
+Şimdi bunu ben biraz genelleştirdim. Daha önce söylemiştim. Sonsuz ile bir tek işlem yapılır. O da negatif sayıyla çarpmaktır demiştim.
+
+853
+02:18:58,268 --> 02:19:02,368
+Hatta bazı arkadaşlar şey demişti değil mi? 2 sonsuz diye bir şey olmaz demişti.
+
+854
+02:19:02,848 --> 02:19:12,388
+Onu da 2 çarpı yazmıştım. Bakın eğer a negatif bir sayıysa, 2 sonsuza giderken şurası sonsuz oluyor ya.
+
+855
+02:19:12,688 --> 02:19:17,028
+a negatif bir sayıysa yani bu a çarpı sonsuza değiştirerek sonsuz diye yazmıyorsun.
+
+856
+02:19:17,311 --> 02:19:33,051
+negatif bir sayıla çarpı atsanın sonsuza eksi sonsuza olur diye yazıyorsunuz. Doğrusu budur diyorum ya. Doğrusu budur. Ama x eksi sonsuza giderse 2 negatif sayının çarpımı neydi? 2 negatif sayının çarpımı pozitif.
+
+857
+02:19:33,051 --> 02:19:40,051
+Pozitif. Dolayısıyla burası art oluyor. Yani eksi sonsuzun önünde eksi 1 olduğunu düşünüyoruz ya. Onun için dedim ya eksi 1 ile çarpılabilir diye o.
+
+858
+02:19:40,468 --> 02:19:47,028
+Eğer a büyük sıfırsa arkadaşlar, şurada x sonsuza giderken artı sonsuz, x sonsuza giderken de x sonsuza oluyor.
+
+859
+02:19:47,968 --> 02:19:51,808
+Şimdi, birinci derece ifade edelim. İkinci derece ifade edelim de bu şekilde.
+
+860
+02:19:52,348 --> 02:19:57,528
+En yüksek dereceli terime bakıyorsunuz ve eksi sonsuz mu, artı sonsuz mu olduğunu söylüyorsunuz.
+
+861
+02:19:57,628 --> 02:20:02,688
+En yüksek dereceli terimin kat sayısına bakarak, negatifin pozitif olduğuna bakarak onu söylüyorsunuz.
+
+862
+02:20:02,948 --> 02:20:04,468
+Biraz sonra bunlara değiniriz.
+
+863
+02:20:06,148 --> 02:20:06,927
+Genelde bu.
+
+864
+02:20:07,379 --> 02:20:19,680
+Geneli de bu. Bakın, en geneli, L'nin limit, f fonksiyonun limiti, L ve negatif, G'nin limiti, artı sonsuz. Buraya yani L çarpı sonsuz diye bir şey yazmıyorsunuz.
+
+865
+02:20:19,959 --> 02:20:31,219
+Tadece bunun negatifliğini bildiğinizi düşünerek eksi sonsuz yazıyorsunuz. L pozitifse artı sonsuz yazıyorsunuz. Tamam mı? Öbür türlü yazım söz konusu değil. Demin ihtiyaçta hem yazıp hem açıkladım onu.
+
+866
+02:20:32,819 --> 02:20:57,100
+Şimdi iki polinomun bölümünde durup, bu başlık arkadaşlar polinom diye yazıldı ama biraz sonra not diye düşecek onu. Genel halde doğrudur diye düşecek. Şimdi arkadaşlar, eğer böyle bir polinomunuz varsa, ane ve pozitifte, elimin katı açısına bakıyorsunuz değil mi ya? Bakın ane pozitifte x sonsuza giderken polinomun limiti sonsuz. Zaten polinomun limiti arkadaşlar sonsuzda, artı sonsuzda da x sonsuzda da x sonsuzda çıkart.
+
+867
+02:20:57,396 --> 02:21:06,456
+polinomun limiti x sonsuza giderken ası sonsuz ya da eksi sonsuz çıkar. Eksi sonsuza giderken de gene ası sonsuz ya da eksi sonsuz çıkar.
+
+868
+02:21:06,876 --> 02:21:14,115
+x'in derecesiyle alakalı bir durum. Tamam mı? Dolayısıyla şuraya da onu yazın. N'nin çiftliğine ya da tekniğine yazın.
+
+869
+02:21:15,476 --> 02:21:23,876
+Şuraya da bakın bir ifade yazdım, en büyük serinden atılır diye. Şimdi şuradan özetleyeyim ben size. Muhtemelen bir kere söylediğimde anlayacaksınız, tekrar yapmam gereksin de derim.
+
+870
+02:21:23,876 --> 02:21:33,876
+Şimdi daha fesel, px ve qx birer polinom. px'in n'inci dereceden bir polinom, qx'in de n'inci dereceden bir polinom olduğunu varsayalım.
+
+871
+02:21:35,195 --> 02:21:40,876
+px'in n'inci dereceden, qx'in de n'inci dereceden bir polinom olduğunu varsayalım.
+
+872
+02:21:41,811 --> 02:21:58,811
+Eğer bölümün limitini, yani px bölü qx, rasyonel ifadesini, limitini hesaplıyorsanız, kat sayları dışarı aldım. Aslında x üzeri m bölü x üzeri n'nin limitini hesaplıyorsunuz demektir. Birçok kitapta şöyle yazdığını görebilirsiniz. Gerek yok, ihtiyaç da yok. Şuraya...
+
+873
+02:22:00,211 --> 02:22:10,991
+a ne eksi üzeri, a ne eksi bir, x üzeri ne eksi bir, a diye burayı yazıyor, şuraya. Altına da buna benzer ifadeyi yazıyor. Buna gerek yok. Nedenini de yukarıya yazdım bakın.
+
+874
+02:22:11,651 --> 02:22:18,252
+En yüksek kuvvet diyor ya, nedenini de buraya yazdım, doğru mu? Sadeleştirmeyi de açıklamayı bunun üzerine yazdım.
+
+875
+02:22:19,171 --> 02:22:25,371
+Demek ki P'nin en yüksek dereceli terimi x üzeri ne, Q'nun en yüksek dereceli terimi x üzeri ne.
+
+876
+02:22:26,388 --> 02:22:39,628
+f, m, q'niki ne? Bölümün limitine hesaplıyorsanız, sabit dışarı çıktığına göre, a bölü b çarpı, tabi a ve b sıfırdan farklı değil mi? Aksi taktirde bunlar olmaz. Bu limiti hesaplıyorsunuz demek ki. 3 hal söz konusu arkadaşlar.
+
+877
+02:22:40,328 --> 02:22:52,628
+m, n'den küçük olabilir, m, n'ye eşit olabilir, bir de m, n'den büyük olabilir. 3 hal söz konusudur. Eğer m, n'den büyükse, m, n'den büyükse,
+
+878
+02:22:53,396 --> 02:22:54,716
+Burası nasıl olur arkadaşlar?
+
+879
+02:22:55,056 --> 02:22:55,796
+M ne denliyse.
+
+880
+02:22:56,355 --> 02:22:57,056
+Şurası nasıl olur?
+
+881
+02:22:59,716 --> 02:23:01,396
+x üzeri
+
+882
+02:23:01,396 --> 02:23:02,916
+x
+
+883
+02:23:06,772 --> 02:23:09,212
+eğer M, N'den büyükte 2'ni yazıyorum.
+
+884
+02:23:13,907 --> 02:23:15,907
+x üzeri m eksi ne olur değil mi?
+
+885
+02:23:17,207 --> 02:23:20,587
+m n'den büyükse burası x üzeri m eksi ne olur?
+
+886
+02:23:20,987 --> 02:23:26,587
+Şurası pozitif olduğu için x sonsuza giderken otomatik olarak bu sonsuza gitmiş oluyor.
+
+887
+02:23:26,747 --> 02:23:29,507
+Anladık mı rayı arkadaşlar? Birinci, bir şeylere söyleyeceğim çünkü.
+
+888
+02:23:29,780 --> 02:23:30,540
+Bunu anladık mı?
+
+889
+02:23:30,840 --> 02:23:31,139
+Anladım.
+
+890
+02:23:31,260 --> 02:23:31,819
+Evet hocam.
+
+891
+02:23:31,920 --> 02:23:34,400
+M, N'den büyük olunca, tamam mı? Bunu anladık.
+
+892
+02:23:34,900 --> 02:23:37,280
+Silelim, silmeyin, biraz sonra bir daha kullanacağım.
+
+893
+02:23:37,680 --> 02:23:44,799
+Eğer arkadaşlar M, N'yi eşitse, bakın, o zaman M, N'yi eşitse, yani x üzeri M bölü, x üzeri M gibi görünüyor, değil mi?
+
+894
+02:23:45,340 --> 02:23:48,280
+Böldüğünüz zaman 1 oluyor, dolayısıyla 1.
+
+895
+02:23:48,540 --> 02:23:55,220
+Yani bu sokak bir ile konuşursak, müstakil evde oturanlar için söylemiş oluyorum, önce kapıyı önüne temizleyeceksin, değil mi?
+
+896
+02:23:55,319 --> 02:23:57,780
+Temizlikten bahsetmek için önce kendimi görüyorum, kapıyı önüne temizleyeceksin.
+
+897
+02:23:57,780 --> 02:24:21,299
+bu işini demek istiyorum. İçeriyi hesaplıyorsunuz, içeriği çıkanın limitini alıyorsunuz demek bu tamam mı? İçeride var olan işlemleri yapıyorsunuz, sonra limit hesaplıyorsunuz demek bu. Sonsuz bölü sonsuz diye bir şey söz konusu değil. Daha sonra sıfır bölü sıfırla da gelelim, tekrar izah ederim. Dolayısıyla dereceler aynı olduğu için bölgünüz bir çıktı, bir indiğimiz de bir.
+
+898
+02:24:21,811 --> 02:24:43,711
+Şimdi geriye şu üçüncü kaldı. Önemli bir şey söyleyeceğim burada. Arkadaşlar bakın, eğer M'ye neyden küçükse, hiç kimse bunu yazamaz. Özellikle benim öğrencim M'ye neyden küçükse, x üzeri M bölü, x üzeri N yerine, x üzeri M ekti N'ye yazmayacak. Bir kez daha tekrar ediyorum. Benim öğrencim,
+
+899
+02:24:44,048 --> 02:25:09,368
+x üzeri negatif yazmayacak. Nereye kadar yazmayacak biliyor musunuz? Integrale kadar. Aşağı yukarı 10. haftaya kadar. Benim öğrencim x üzeri eksi yazmayacak. Daha genel bir ifadeyle değişken üzeri eksi yazmayacak. Duymayan var mı? Duymayan var mı? Yok hocam. Yok hocam. Yok hocam.
+
+900
+02:25:09,780 --> 02:25:21,360
+üzeri eksi yazmıyoruz. Buradan anlaştık. O zaman m küçük ne ise nasıl yazacağız arkadaşlar? m küçük ne ise üzeri eksi yazmayacağımıza göre nasıl yazacağız?
+
+901
+02:25:22,500 --> 02:25:33,680
+n eksi m. Teşekkür ederim. Bunu n eksi m diye yazacağız. Şimdi arkadaşlar m m'den büyük olduğu için burası pozisyon.
+
+902
+02:25:34,164 --> 02:25:39,463
+x sonsuza giderken gene ne oluyor? x sonsuza giderken burası ne oluyor? Burası?
+
+903
+02:25:40,123 --> 02:25:40,524
+Sonsu.
+
+904
+02:25:40,524 --> 02:25:43,004
+m'den büyük olduğu için x sonsuza giderken buyurun?
+
+905
+02:25:43,724 --> 02:25:44,283
+Sonsu.
+
+906
+02:25:44,484 --> 02:25:49,064
+Sonsu oluyor. Peki, x sonsuza giderken 1 bölü x üzeri ne eklemeye ne oluyor?
+
+907
+02:25:50,184 --> 02:25:50,623
+Sıfır.
+
+908
+02:25:51,024 --> 02:25:53,184
+Sıfır oluyor. Anladık mı bunu da? Üçüncüyü?
+
+909
+02:25:54,324 --> 02:25:55,164
+Evet, hocam.
+
+910
+02:25:55,584 --> 02:25:58,544
+Şöyle yapacaksınız yani demek istiyorum. Şöyle.
+
+911
+02:25:59,572 --> 02:26:11,132
+Mecbur anlayacaksınız, anlamazsanız üzülüyorum. Bak, iyice sesim kısıldı. Ne dedim şurada? Şurada ne dedim? Bunu ölene kadar unutmayacaksınız dedim. Ölene kadar.
+
+912
+02:26:12,412 --> 02:26:20,051
+Bak, burası pozitif, görüyor musunuz? Değil mi? Bunu ölene kadar unutmayacaksınız. Yani karşımda çıkan 100 limit varsa 90'da, 95'inde bununla karşılaşacaksınız.
+
+913
+02:26:21,051 --> 02:26:22,592
+Bunu da anladık, siliyorum.
+
+914
+02:26:23,603 --> 02:26:28,203
+Demek ki üzeri eksi yazmayacağız. Üzeri eksi yazmayacağınıza göre pi diye getireceğiz.
+
+915
+02:26:28,463 --> 02:26:33,403
+Pi diye getirdiğimiz zaman da burası 1 bölü x üzeri neye ekleme olacak? Limit sıfır olacak.
+
+916
+02:26:35,223 --> 02:26:40,623
+Şimdi arkadaşlar, neden sadece eniştekleri celtelimler alıyoruz? Bunu buradan görüyorsunuz bakın.
+
+917
+02:26:41,723 --> 02:26:44,783
+Şimdi bunu biraz daha güzel bir sokak biriyle anlatayım.
+
+918
+02:26:44,783 --> 02:26:48,443
+Şimdi arkadaşlar, x eksi sonsuza giderken pi nereye gidiyor?
+
+919
+02:26:51,572 --> 02:26:52,572
+ne lirik diyor?
+
+920
+02:26:55,891 --> 02:26:59,191
+x eksi sonsuza giderken bu pay nereye gidiyor?
+
+921
+02:26:59,492 --> 02:26:59,891
+Paydaya.
+
+922
+02:27:01,112 --> 02:27:01,752
+Efendim?
+
+923
+02:27:02,112 --> 02:27:02,711
+Paydaya.
+
+924
+02:27:03,391 --> 02:27:03,891
+Pay pay.
+
+925
+02:27:04,191 --> 02:27:05,092
+Eksi sonsuza.
+
+926
+02:27:07,332 --> 02:27:09,211
+Kim dedi eksi sonsuza gidiyor diye?
+
+927
+02:27:09,511 --> 02:27:10,132
+Ben [öğrenci].
+
+928
+02:27:11,072 --> 02:27:12,592
+[öğrenci] doğru demedi.
+
+929
+02:27:13,572 --> 02:27:14,272
+Doğrusu ne bunun?
+
+930
+02:27:14,371 --> 02:27:16,051
+Sonsu değil midir hocam artı sonsuz?
+
+931
+02:27:17,752 --> 02:27:18,612
+Biliyor muyuz kesin?
+
+932
+02:27:19,832 --> 02:27:20,932
+Kesin biliyor muyuz?
+
+933
+02:27:21,572 --> 02:27:22,452
+Gösterebilir miyiz?
+
+934
+02:27:23,379 --> 02:27:25,619
+Yani gösteremem galiba.
+
+935
+02:27:26,180 --> 02:27:28,119
+Ben göstereyim. Ben göstereyim mi?
+
+936
+02:27:28,219 --> 02:27:29,619
+Evet hocam.
+
+937
+02:27:30,199 --> 02:27:36,759
+Ama hemen gösteriyorum. Bak derte gelmek bir ayrıcalık dedim ben. Takip etmek bir ayrıcalık.
+
+938
+02:27:40,755 --> 02:27:48,295
+Şimdi belki de [öğrenci] diyor ki, hocam ya gerek var mıydı? Direkt yapıyorduk ya diyor. Diyor mu [öğrenci]? [öğrenci]?
+
+939
+02:27:49,095 --> 02:27:50,036
+Hayır hocam demiyorum.
+
+940
+02:27:50,415 --> 02:27:50,795
+Demiyor.
+
+941
+02:27:56,468 --> 02:27:58,468
+Bakın, üşenmedim mi yazdım.
+
+942
+02:28:00,407 --> 02:28:04,468
+Şimdi arkadaşlar, burada bir şey söyleyeceğim şimdi, sonra gerekirse yazalım.
+
+943
+02:28:04,868 --> 02:28:08,668
+Şimdi, x'e xonsuz'a giderken, x'e de xsonsuz koyduğunuzu düşünün.
+
+944
+02:28:08,988 --> 02:28:10,988
+Koyduğunuzu düşünün. Yazmayacağız da.
+
+945
+02:28:11,888 --> 02:28:15,148
+x küp nereye gidiyor arkadaşlar? x xonsuz'a giderken x küp nereye gidiyor?
+
+946
+02:28:15,888 --> 02:28:16,988
+x küp nereye gidiyor?
+
+947
+02:28:16,988 --> 02:28:17,668
+x sonsuz.
+
+948
+02:28:17,668 --> 02:28:19,228
+x sonsuza gidiyor. Tamam mı?
+
+949
+02:28:20,587 --> 02:28:21,968
+x küp x sonsuza gidiyor.
+
+950
+02:28:22,963 --> 02:28:25,904
+Peki, x x sonsuza giderken x kare nereye gidiyor?
+
+951
+02:28:26,684 --> 02:28:28,283
+Artı sonsuza.
+
+952
+02:28:28,484 --> 02:28:29,763
+Aslında ne var elimizde?
+
+953
+02:28:31,144 --> 02:28:32,423
+Ekrana bakın. Ne var?
+
+954
+02:28:33,943 --> 02:28:36,623
+Bakın, sonsuz ve x sonsuz var. Değil mi? Elimizde bu var o zaman.
+
+955
+02:28:37,963 --> 02:28:41,283
+Değil mi? Bunun adı ne? Daha sonra gelecek.
+
+956
+02:28:43,423 --> 02:28:44,783
+Bu belirsizlik değil mi?
+
+957
+02:28:45,427 --> 02:28:52,167
+Bu belirsizlik. Hatırıyor musunuz? Demin ne demiştim? Sonsuz artı sonsuz, eşittir 2 sonsuzlar yazmak yanlıştır demiştim.
+
+958
+02:28:52,308 --> 02:28:57,128
+Eğer doğrudur derseniz, o zaman sonsuz, eksi, sonsuzlar da eşittir sıfır yazmamız lazım değil mi?
+
+959
+02:28:57,707 --> 02:28:58,028
+Aynen.
+
+960
+02:28:58,708 --> 02:29:16,927
+Fakfati'yi seviyoruz. Onun için seviyoruz. Bak, sonsuz artı sonsuz eşittir, 2 sonsuz yazamıyorsanız, sonsuz ekşi sonsuz eşittir, sıfırda yazamazsınız. Bunu daha sonra tekrar göreceğiz. İleride gelir herhalde. Bu belirsizlik. O zaman arkadaşlar, demin sordum ya, x'e sonsuza giderken x kub artı 2x kare nereye gider dedim. Bakın böyle bir şey var.
+
+961
+02:29:21,139 --> 02:29:41,899
+buna belirsiz diyebiliriz. Ben bunun doğrusunu söyleyeyim. Şimdi arkadaşlar, benim öğrencim şu yazımla birlikte anlayacak ki böyle bir limit hesaplarken çift kuvveti, eksilerde yani, eksisonsa giderken, böyle bir limit hesaplarken çift kuvveti dışarıya çıkaracak. Kim anlamadı? O zaman söyleyin.
+
+962
+02:29:45,811 --> 02:29:46,311
+söylen.
+
+963
+02:29:52,948 --> 02:29:56,167
+Dedim ya, benim öğrenci bir şey kuvvetli dışarı çıkaracak diye.
+
+964
+02:29:56,827 --> 02:29:59,587
+x kareyi çıkaracak.
+
+965
+02:30:00,028 --> 02:30:00,628
+Benim öğrenci.
+
+966
+02:30:01,308 --> 02:30:03,268
+Tamam, benim öğrenci bir x kareyi dışarı çıkaracak.
+
+967
+02:30:16,020 --> 02:30:34,959
+Tahtayı gördünüz, çıkardın değil mi x kareyi inşallah. Bak çift kuvvet olduğu zaman x'e, eksiye giderken tamam mı? Benim öğrenimim içeride çift kuvvet varsa dışarı çıkaracak. Peki deseniz, şurası x üzeri 5 olsaydın olacaktı. Neyi çıkaracaktınız? Şurası x üzeri 5 olsaydı? x köpü. Yine x kare.
+
+968
+02:30:34,959 --> 02:30:41,079
+x kare. x kare çıkartacaktık. x üzeri 4 diye çıkarabilirsiniz. Tamam.
+
+969
+02:30:41,652 --> 02:30:48,031
+Şimdi bu örneğe geldik. Şimdi arkadaşlar, x eksi sonsuza giderken x kare nereye gidiyor? Bak yazmıyoruz, konuşuyoruz sadece.
+
+970
+02:30:48,452 --> 02:30:57,231
+x eksi sonsuza giderken x kare nereye gidiyordu? Aklı sonsuza. Aklımızda dursun. x eksi sonsuza giderken x artı 2 nereye gidiyor?
+
+971
+02:30:58,072 --> 02:31:03,211
+Eksi sonsuza. Eksi sonsuza gidiyor. Eksi, eksi 1 çarpı sonsuz diye düşünün.
+
+972
+02:31:03,592 --> 02:31:09,092
+Sadece sonsuzda yapılan bir tek işlem var, eksi 1 ile çarpmak demiştim. Dedim değil mi? Hem de defalarca dedim.
+
+973
+02:31:09,556 --> 02:31:21,195
+Şimdi, x1 çarpı ne var arkadaşlar? Sonsuz çarpı sonsuz. Sonsuz çarpı sonsuz ne oluyor? Sonsuz çarpı sonsuz. Sonsuz oluyor. Önünde ne var? Önünde?
+
+974
+02:31:22,015 --> 02:31:34,476
+Eksi var. Eksi var. O zaman bunun cevabı neymiş arkadaşlar? Bunun cevabı? Bak, onları yazmıyor. Tamam mı? Onları yazmıyor. Cevap bu. Böyle yazıyor.
+
+975
+02:31:34,932 --> 02:32:01,512
+Tamam. Yaz bakım böyle yazıyoruz. Bu eşittir, bu, bu da eşittir, eksi sonsuz. Ama onu sessiz söylerik. x sonsuza, eksi sonsuza giderken x kare artı sonsuza gider, 2 eksi sonsuza giderken x artı 2 eksi sonsuza gittiği için cevap eksi sonsuzdur. Bu doğru. Şu yazım doğru. Yalnız şuraya eşittir sonsuz şartı eksi sonsuz falan yazmak yanmıştır. Aşı taktirde buna eşittir şeyi yazarsınız. Değil mi?
+
+976
+02:32:01,935 --> 02:32:08,435
+eşittir sıfır falan yazarsınız. Doğru değil. Bunu da anladık. Anladık değil mi burayı?
+
+977
+02:32:09,155 --> 02:32:15,716
+Hocam anladım da ben bir şey soracağım. Hani x küp artı 2x üstü 5 yazarsak yine 4 kare. [öğrenci].
+
+978
+02:32:16,376 --> 02:32:17,355
+[öğrenci] buyur.
+
+979
+02:32:18,695 --> 02:32:24,115
+5 yazarsak üstüne yine x kare olarak çıkartacağız dedik ya neden x küp olarak çıkartmıyoruz?
+
+980
+02:32:24,515 --> 02:32:28,216
+Çift kuvvet, eksiye x eksi sonsa giderken çift kuvvetleri dışarı alabiliriz sadece.
+
+981
+02:32:29,012 --> 02:32:31,652
+Peki o artı sonsuz olsaydı o zaman küp olarak çıkabiliriz.
+
+982
+02:32:31,652 --> 02:32:34,572
+O şey yok ki artı sonsu olsa zaten bunu eşitir sonsuz diye yazarız.
+
+983
+02:32:34,851 --> 02:32:35,092
+Tamam.
+
+984
+02:32:35,612 --> 02:32:39,632
+Yani limit x sonsu'a gidiyorsa 3 kubat 2x'e eşittir artı sonsuz diye yazarız direkt zaten.
+
+985
+02:32:40,031 --> 02:32:40,952
+O zaman sıkıntı yok.
+
+986
+02:32:41,332 --> 02:32:43,731
+İstik, x sonsu'a gittiğince sonsu, x sonsu var ya burada.
+
+987
+02:32:44,072 --> 02:32:44,871
+Sıkıntıya öler atıyor.
+
+988
+02:32:45,432 --> 02:32:45,672
+Tamam.
+
+989
+02:32:46,672 --> 02:32:48,531
+Evet, bunu da geçtik.
+
+990
+02:32:49,351 --> 02:32:51,531
+Şimdi tabii bu çıkartmanın şeyleri de var.
+
+991
+02:32:51,972 --> 02:32:53,952
+Özel durumları, incelikleri de var.
+
+992
+02:32:54,515 --> 02:32:57,896
+O zaman arkadaşlar, şimdi gelelim bölümün limitine.
+
+993
+02:32:57,896 --> 02:33:10,115
+Böyle bir bölümün limitini hesaplıyorsak arkadaşlar, pi ve pi'de ortak olan x'i dışarı alıyoruz.
+
+994
+02:33:11,095 --> 02:33:13,795
+Şimdi pi ve pi'de ortak olan x değil mi?
+
+995
+02:33:14,175 --> 02:33:19,135
+Bakın pi'de x olduğu için pi kısmında da x'i dışarı çıkar.
+
+996
+02:33:20,404 --> 02:33:41,036
+Yani x kareyken buradan x kareye çıkıyoruz. Burayı da anladık mı? Şurayı. Bu önemli çünkü üzerinde duruyorum sonra lazım olacak. Kısalttık, bu kaldı. Bakın x yonsa giderken x yonsa gidiyor. Artı sonsuza, x yonsa gittiği için gene sıkıntı var. O sıkıntıyı halletmek için de şunu dışarı çıkartalım.
+
+997
+02:33:41,172 --> 02:34:07,512
+Tamam mı? Şimdi, [öğrenci]'nın bilgisine ilave edeceğimi burada gördün mü ki, ilave edeyim diye burada söyledim. Şimdi bakın, x x10 sakizletin x nereye gidiyor? Burada çift kuvveti de çıkarabiliriz de. Çift kuvveti çıkarsak nasıl olur? Benim dediğim yanlış değil yani. Burada x kareyi dışarı çıkarsak nasıl olurdu? Daha da güzel olurdu. Daha da güzel olurdu. Benim vurgum başka bir şey bu. Bakın şöyle yazabilirim bunu. Bunu yazarken ben başka bir şeyi vurgulamak için yaparım. Şöyle yazabiliriz.
+
+998
+02:34:09,236 --> 02:34:14,236
+x kare artı 2x, f'a giderken bunu şöyle yazabiliriz.
+
+999
+02:34:17,492 --> 02:34:24,311
+Daha güzel de bu yazım. Ben bir şeye uygulamak için özellikler de öneririm. Burası ne oluyor?
+
+1000
+02:34:24,311 --> 02:34:27,031
+x kare artı 2x
+
+1001
+02:34:32,051 --> 02:34:58,631
+Köşeli parantezı unutmayın. Bak köşeli parantezi koymazsanız, süre köşeli parantezi koymazsanız bunu kastetmez. Şimdi arkadaşlar, bakın x'e x'i sonsuza giderken x kare nereye gidiyor? x kare artı sonsuza gidiyor. Artı sonsuza aklımıza durdur. x sonsuza giderken 2 bölü x nereye gidiyor? Ölene kadar unutmayacaksınız. Nereye gidiyor? Oho! Ölene kadar unutmayacaksınız dedi mi ya? E burada yapıyorum. Efendim?
+
+1002
+02:34:59,347 --> 02:35:00,488
+0'a hocam.
+
+1003
+02:35:00,548 --> 02:35:12,007
+0'a gidiyor. Ölene kadar unutmayacağım. O zaman ne oluyor? Sonsuz serpil 1 gibi. Eşittir sonsuz serpil 1 yazmıyor. Eşittir ne yazıyoruz? Eşittir sonsuz serpil 1. Tamam mı?
+
+1004
+02:35:13,427 --> 02:35:40,887
+Cevap da zaten bu çıkmış. Bu da diğer şekli. Diğer şekli. Yani eğer illa de çift kuvveti dışarı almak istemiyorum diye bir zorlama söz konusuysa, çift kuvveti de aldığınız zaman görebilirsiniz demek bu. Burada da iki tane x sonsuz var değil mi? Burası x sonsuz, burası da x sonsuz. x1 x x1 artı 1 olduğu için artı sonsuz diye yazıyorsunuz. Bu görün diye yazdığım bir şey ama kesin ol en güzeli burası. Tamam mı? Şurası. En güzeli.
+
+1005
+02:35:41,652 --> 02:35:42,551
+Şurası en güzeli.
+
+1006
+02:35:44,191 --> 02:35:45,472
+Bunu da sileyim.
+
+1007
+02:35:47,452 --> 02:35:48,512
+Bundan sonra ben böyle yapacağım.
+
+1008
+02:35:50,972 --> 02:35:52,012
+Devam ediyoruz.
+
+1009
+02:35:52,332 --> 02:36:00,772
+Demek ki arkadaşlar, şimdilik iki polinomum bölümünün yani rasyonel bir fonksiyonu sonsuzda ya da x sonsuzda limitini hesaplarken,
+
+1010
+02:36:01,312 --> 02:36:03,592
+e yüksekleri terimlerin ortak parantezini alıyorum.
+
+1011
+02:36:03,987 --> 02:36:22,887
+Bu örnekte pay kısmında x kare var, payda kısmında x kare var. O zaman x kare parantezini alıyoruz. Sonuç işlemlerini yaptığımız zaman 2 bölük çıkıyor. Özetleyeyim bunu. Eğer payın derecesi daha büyük ise limit eksiye dağıtı sonsuz. Payın derecesi daha büyük ise limit eksiye dağıtı sonsuz.
+
+1012
+02:36:23,283 --> 02:36:32,203
+Eğer pay ve paydanın derecesi aynı ise limit, e-iştek dereceden terimlerin kat saylarının bölümü.
+
+1013
+02:36:32,743 --> 02:36:39,463
+Pay ve paydanın derecesi aynı ise limit, e-iştek dereceden terimlerin kat saylarının bölümü.
+
+1014
+02:36:40,683 --> 02:36:43,263
+Bunu da açık işlemlerle gördüğümüz 2 bölüş.
+
+1015
+02:36:43,843 --> 02:36:46,563
+Eğer payın derecesi daha küçük ise limit 0.
+
+1016
+02:36:47,144 --> 02:36:50,164
+Şu çizgi ne? Bizi buraya çizgi yaptı. Kim yaptı bu çizgiyi?
+
+1017
+02:36:52,020 --> 02:37:07,560
+1.60 ben sildim. Tamam mı? Payın derecesi daha büyükse limit sıfır. Bunun da analitik çözümünü gördüm. Dolayısıyla şu üçünü arkadaşlar, şu üçünü, bu payın derecesi daha büyük, payın derecesi daha...
+
+1018
+02:37:08,500 --> 02:37:11,380
+limitte. A böyle bire önünde duruyor.
+
+1019
+02:37:12,020 --> 02:37:13,680
+Bunu zaman zaman kullanacağız.
+
+1020
+02:37:14,279 --> 02:37:20,459
+Öyle durumlar çıkacak ki arkadaşlar, normalde limiti 1 saniye içinde hesaplarken çökebiliriz.
+
+1021
+02:37:21,180 --> 02:37:22,819
+Yani çözümsüz gibi görebiliriz.
+
+1022
+02:37:23,239 --> 02:37:27,860
+Aslında 1 saniyede hesaplanıyordur ama bazı şeyleri bilmezsek çökeriz.
+
+1023
+02:37:28,100 --> 02:37:30,560
+Anılarım da var bunlarla ilgili, onları da söylerim.
+
+1024
+02:37:34,100 --> 02:37:36,100
+Devam ediyorum bunu da anladık.
+
+1025
+02:37:36,100 --> 02:37:38,100
+Şimdi bir not buradaymış.
+
+1026
+02:37:38,100 --> 02:37:44,100
+Bak, ortak parantezi alma işlem, arkadaşlar, 3 işlem ortak parantezi alma işlemi.
+
+1027
+02:37:44,100 --> 02:37:45,515
+Bunu aklımızda tutalım.
+
+1028
+02:37:45,652 --> 02:38:08,711
+Sadece rasyonel fonksiyonlarla sınırlı değil dedi. Yani pay ve payla ortak derecesini dışarı çıkarma işlemi sadece rasyonel fonksiyonlar için yeterli değildir diyor. Gebersel bir fonksiyon olsa da aynı işlemi yapabilirsiniz ama çok dikkatli olmak gerekir diyor. Tamam mı? Çok dikkatli olmak gerekir. Eğer pay ve payla rasyonel olmasa çok dikkatli olmamız gerekir.
+
+1029
+02:38:13,747 --> 02:38:20,387
+Şimdi arkadaşlar, bazı aykırı, 1-2 aykırı cümle de kullandığımı fark edecektiniz burada.
+
+1030
+02:38:21,007 --> 02:38:29,007
+Şimdi, tayin derecesi, kaç görmezseniz kaç? Bu örnek, 6. örnekte tayin derecesi x kare hocam.
+
+1031
+02:38:29,007 --> 02:38:31,648
+1 bölü 2
+
+1032
+02:38:31,648 --> 02:38:34,188
+Yok, yok.
+
+1033
+02:38:35,227 --> 02:38:36,448
+x kare, x kare hocam.
+
+1034
+02:38:37,075 --> 02:38:37,955
+2x, 2x.
+
+1035
+02:38:37,955 --> 02:38:39,835
+2x değil mi hocam? Derecesi.
+
+1036
+02:38:40,055 --> 02:38:44,175
+Hayın derecesi, karışık ki görmezseniz 2x.
+
+1037
+02:38:44,175 --> 02:38:48,175
+Şimdi kuracağım cümle aykırı bir cümle.
+
+1038
+02:38:48,855 --> 02:38:50,915
+Birisi bir şey, bir bölü 2 dedi ya, aykırı bir cümle.
+
+1039
+02:38:51,095 --> 02:38:53,315
+Şimdi kuracağım cümle bir aykırı cümle, tamam mı?
+
+1040
+02:38:53,615 --> 02:38:56,415
+Şimdi şunu, şurayı düşüneceğiz ya, şurayı.
+
+1041
+02:38:57,735 --> 02:38:59,655
+Aykırı bir cümle kuruyoruz şimdi.
+
+1042
+02:38:59,956 --> 02:39:17,376
+Karakökle birlikte düşünürseniz arkadaşlar, payın derecesinin ne olduğunu düşünürseniz. Bak düşünce bu he. Düşüncenin doğru olması gerekmiyor. Burada doğru bir mantık yürütüyorum ben. Şimdi, payın derecesi, karaköki düşünmezseniz 2. Karakökle birlikte düşünürseniz derecesinin kaç olduğunu düşünebiliriz?
+
+1043
+02:39:17,376 --> 02:39:17,976
+1.
+
+1044
+02:39:18,656 --> 02:39:20,876
+1. Paydanın derecesi kaç?
+
+1045
+02:39:21,492 --> 02:39:22,051
+1.
+
+1046
+02:39:22,512 --> 02:39:28,772
+1. O zaman x parantezini de görmemiz lazım değil mi? Pay ve paydayı x parantezini almamız lazım.
+
+1047
+02:39:29,211 --> 02:39:38,652
+Şimdi payı x parantezini alabilmek için arkadaşlar, payı x parantezini alabilmek için önce x kareyi dışarı çıkarmamız gerekiyor.
+
+1048
+02:39:39,152 --> 02:39:42,772
+Ama kare kökte duruyor. Bak kare kök duruyor. Tamam mı?
+
+1049
+02:39:43,972 --> 02:39:45,371
+Çünkü x karenin kare kökü ne?
+
+1050
+02:39:46,891 --> 02:39:48,172
+x.
+
+1051
+02:39:48,659 --> 02:39:55,420
+Hayır. Ne? Benim öğrendiğim ölene kadar unutmayacaksınız. Beni üzmeyin.
+
+1052
+02:39:55,799 --> 02:39:57,420
+x kare artı 2x, ne?
+
+1053
+02:39:57,899 --> 02:39:58,680
+Mutlak x.
+
+1054
+02:39:58,799 --> 02:40:00,819
+Mutlak x olarak dışarıya çıkar.
+
+1055
+02:40:01,040 --> 02:40:05,979
+Aynen. Mutlak x olarak dışarı çıkardık ama x nereye gidiyor arkadaşlar? Sonsuza gidiyor.
+
+1056
+02:40:06,139 --> 02:40:15,399
+Yani o zaman mutlak değere gerek yok. x olarak dışarı çıkardık ve kısalttık. Geriye kalan bu. Burayı mı unutma?
+
+1057
+02:40:16,115 --> 02:40:28,096
+Şimdi ölene kadar unutmayacaktınız. x-10'sa giderken 2x0'a gidiyor. x-10'sa giderken 5x0'a gidiyor. Cevap 5. Anladık mı soruyu arkadaşlar? Çünkü daha zoru, daha ilginç, aşağıda geliyor. Bunu anladık mı?
+
+1058
+02:40:28,935 --> 02:40:29,815
+Evet hocam.
+
+1059
+02:40:30,056 --> 02:40:40,995
+Anladık. Gelelim bir sonraki örneğe. Bakın. x-10'sa giderken. Şuralarla ayrıntı vermiyorum. Bak görüyor musunuz? Demin o x diyenler kimlerdi isimlerini bir söylesin bana.
+
+1060
+02:40:41,427 --> 02:40:43,747
+iki tane kız demişti. Kimdi onlar?
+
+1061
+02:40:44,847 --> 02:40:45,567
+[öğrenci] hocam.
+
+1062
+02:40:45,587 --> 02:40:47,308
+Kişireyi çıkar demiştik hocam.
+
+1063
+02:40:47,308 --> 02:40:50,788
+Kişireyi çıkar diyenlere hayır demişti.
+
+1064
+02:40:51,227 --> 02:40:51,488
+Evet.
+
+1065
+02:40:51,507 --> 02:41:00,288
+Bak benim öğrencim böyle bir şey yapmayacak. Benim öğrencim her zaman, her durumda karakökün dışına ifadeyi mutlak olarak çıkarır.
+
+1066
+02:41:00,747 --> 02:41:01,608
+Çıkardık mı?
+
+1067
+02:41:02,028 --> 02:41:02,648
+Çıkardık.
+
+1068
+02:41:03,387 --> 02:41:05,047
+Çıkardık. X nereye gidiyor?
+
+1069
+02:41:05,608 --> 02:41:06,488
+Eks sonsuz.
+
+1070
+02:41:06,488 --> 02:41:07,867
+Nasıl değerler alıyor?
+
+1071
+02:41:09,043 --> 02:41:09,603
+eksi.
+
+1072
+02:41:10,543 --> 02:41:11,724
+Negatif değerli aralık.
+
+1073
+02:41:12,024 --> 02:41:12,404
+Şunu,
+
+1074
+02:41:12,644 --> 02:41:13,804
+şunu,
+
+1075
+02:41:14,484 --> 02:41:15,584
+iyice idrak edin,
+
+1076
+02:41:15,984 --> 02:41:18,644
+iyice idrak edin, aklınıza yazın diye şöyle yazın.
+
+1077
+02:41:19,783 --> 02:41:21,963
+x'in eksi sonsuza gitmesi şöyle demek değil mi?
+
+1078
+02:41:22,364 --> 02:41:23,404
+Hayır, özür dilerim.
+
+1079
+02:41:25,844 --> 02:41:27,384
+x küçük sıfır ne demekti arkadaşlar?
+
+1080
+02:41:27,384 --> 02:41:28,263
+x küçük sıfır.
+
+1081
+02:41:29,283 --> 02:41:31,043
+Bakın şu demek.
+
+1082
+02:41:32,123 --> 02:41:34,224
+Bunu aralık olarak nasıl yazıyorduk?
+
+1083
+02:41:34,543 --> 02:41:35,084
+Aralık olarak.
+
+1084
+02:41:35,763 --> 02:41:36,103
+Söyleyin.
+
+1085
+02:41:38,708 --> 02:41:41,168
+eksi sonsuzdan sıfıra, x de dahil değil.
+
+1086
+02:41:41,848 --> 02:41:43,888
+Evet, teşekkür ederim. Böyle yazıyor.
+
+1087
+02:41:44,528 --> 02:41:46,048
+Şimdi biz şunu kullanmıştık değil mi?
+
+1088
+02:41:46,188 --> 02:41:48,828
+Şunu kullanmıştık. Bakın, sonu sağa yok, sonsuzun ya.
+
+1089
+02:41:49,028 --> 02:41:49,747
+Bunu kullanmıştık.
+
+1090
+02:41:49,988 --> 02:41:53,028
+Tamam mı? Yani x negatif değerler alıyor diye düşünüyoruz.
+
+1091
+02:41:53,328 --> 02:41:56,268
+x ekstremsüde giderken x negatif değerler alıyor diye düşünüyoruz.
+
+1092
+02:41:56,648 --> 02:41:59,427
+x kare, o zaman kare tükkü dışına mutlak x çıkıyor.
+
+1093
+02:41:59,968 --> 02:42:03,848
+O zaman ne oluyor? Mutlak x de dışarı, mutlak değeri kaldırırsak ne oluyor arkadaşlar?
+
+1094
+02:42:04,404 --> 02:42:10,704
+işleksiyonsa gittiği için mutlak değeri kaldırırsak burası ne oluyor? x x. x x olarak.
+
+1095
+02:42:11,884 --> 02:42:17,424
+Görüyor musunuz? x yedi limitin başını alırsın. Başı aldık. Cevap ne? x. x 1.
+
+1096
+02:42:18,103 --> 02:42:26,304
+Evet. Şimdi arkadaşlar, bunu ben daha önce sınavda sordum biliyor musun? Şöyle sormuştum.
+
+1097
+02:42:26,463 --> 02:42:53,344
+Matematik bölümü öğrencilerine de sormuştum. Limit x-onsu'a giderken bu ifade, limit x-onsu'a giderken bu ifade. Şimdi bazı beni dikkatli dinleyen eğer Salih Hoca aynı şeyi iki kere sormuşsa ya da sormuşsa bunda bir trik vardır. Bir ince nokta vardır diye düşünüp görenler olmuştur. Yani 150 öğrenci varsa bunun içinde birkaç tane gören olmuştur. Genelde herkes bir yansı. Herkes bir yansı.
+
+1098
+02:42:53,600 --> 02:43:12,520
+Dolayısıyla yarısı gitti. Ama bakın, defalarca tekrar ediyorum, hiç üşenmeden, sıkılmadan bunu tekrar edecek. Benim öğrencim x kareyi, bir şeyi kare çökümünün dışına çıkarırken mutlak değer olarak çıkaracak. Sonra x için pozitif ya da negatif olmasına göre mutlak değeri kaldıracak.
+
+1099
+02:43:12,979 --> 02:43:28,919
+Bunu ölene kadar unutmayacak. Birinci örnekte x pozitif olduğu için mutlak değeri kaldırdık. Yani mutlak değeri ihtiyaç duymadık. İkinci örnekte x negatif olduğu için eksi x diye yazdık ve cevap eksi 1 çıktı. Bu da aynı. Bu da aynı. Söylüyor bakın burada.
+
+1100
+02:43:29,971 --> 02:43:57,971
+Geçtim. Bir özel durum var arkadaşlar. Bir özel durum. Bu başlığı ben uydurdum arkadaşlar. Bu başlığı ben uydurdum. Yani Türkçe ya da İngilizce birçok kitabı, kitapların hiçbirinde belki de böyle bir başlık olmayabilir. Benim hoşuma gidiyor. Ben uydurdum derken bir şey bulmuşum anlamında değil. Hakikaten bana özel geliyor. Özel geldiği için bunu ayrıca yazma ihtiyacı hissettim. Yıllardır kitabı da yazdım. Zaten bu kitaptan alma. Böyle anlatıyorum. Özel durum şu arkadaşlar. Din dediğine bakmayın. Bir tane değil. Özel durum dediğinde...
+
+1101
+02:43:57,971 --> 02:44:10,252
+iş yok. Bakın, içerisinde kare kök bulunduran ve limiti 0 bölü 0 ya da sonsuz ekli sonsuz belirsizliğine uygun olan içerisinde kare kök olacak.
+
+1102
+02:44:10,672 --> 02:44:36,551
+Tekrar söylüyorum. Kare kök olacak ve limiti bundan sonra ilk vuruşta diyeceğim. İlk vuruş diyeceğim. Lazım artık. Limiti 0 bölü 0 ya da sonsuz eşli sonsuz belirsizliğine uygun olan bir limit ile karşılaşır isek fonksiyonun pay ve faydasını kare kökü bulunan kısmın eşleniyle çarpıyoruz.
+
+1103
+02:44:37,332 --> 02:44:49,531
+fonksiyonun pay ve paydasını kare kökü bulunduran kısmın eşleniği ile çarpıyoruz. Bu eşlenik çarpımından kastımız arkadaşlar kompleks eşlenik değil.
+
+1104
+02:44:52,092 --> 02:45:01,492
+Kare kökün solunda veya sağında bulunan işareti değiştirmek. 6 ise eksi yapmak, eksi ise artı yapmak.
+
+1105
+02:45:01,492 --> 02:45:03,592
+Şimdi örneğe gelelim.
+
+1106
+02:45:04,915 --> 02:45:29,875
+Şimdi, bakın, limit ile saplayınız diyor. Bundan sonra tekrar edeceğim dedim ya, ilk vuruşu yapacak benim öğrentim. İlk vuruşu yaptık. x'e giderken pay nereye gidiyor arkadaşlar? x'e giderken pay, bakın, nereye gitti? 0'a. 0'a gitti. Pay da 0'a gitti. Nasıl bir belirsizlik var? Eşitti diye yazmıyoruz. Nasıl bir belirsizlik var?
+
+1107
+02:45:30,420 --> 02:45:32,100
+0 bölü 0 bölü.
+
+1108
+02:45:32,680 --> 02:45:41,819
+O zaman eğer limit alan ifadenin içinde, pay kısmında ya da payda kısmında ya da her kisimde bir kare kök varsa eşlenir çarpımı yapacağız.
+
+1109
+02:45:42,059 --> 02:45:44,440
+Şimdi bir cümle kuracağım, ölene kadar unutmayacaksınız.
+
+1110
+02:45:44,440 --> 02:45:54,479
+Benim öğrencim artık kare köklü bir ifadeyle karşılaştırır ise hemen aklına eşlenir çarpımı gelecek.
+
+1111
+02:45:54,899 --> 02:45:55,699
+Bir daha tekrar ediyorum.
+
+1112
+02:45:57,907 --> 02:46:21,487
+Eğer kare kökli bir ifade ile karşılaşır ise hemen aklına eşlenik çarpımı gelecek. Çarpmak zorunda değilsiniz. Kullanmak zorunda değilsiniz. %99, milyar tane dokuzunda kullanacaksın. Tekrar söylüyorum, %99 nokta milyar tane dokuzunda integral de dahil kullanacaksın.
+
+1113
+02:46:21,940 --> 02:46:31,740
+Kullansanız da, kullanmasanız da, konu ne olursa olsun benim öğrencim karı kökle karşılaşınca aklına eşlenir çarpımı gelecek.
+
+1114
+02:46:32,020 --> 02:46:34,860
+Üçüncü kez tekrar ettim. Tamam mı? Anlaştık mı?
+
+1115
+02:46:35,891 --> 02:46:36,672
+Evet hocam.
+
+1116
+02:46:36,711 --> 02:46:37,471
+Anlaştık hocam.
+
+1117
+02:46:37,992 --> 02:46:38,592
+Devam edelim.
+
+1118
+02:46:39,031 --> 02:46:41,152
+Şimdi limitin ilk vuruşunu yaptık.
+
+1119
+02:46:41,432 --> 02:46:43,871
+0 bölü 0 belirsizliği olduğunu gördük.
+
+1120
+02:46:43,871 --> 02:46:49,092
+Şimdi pay ve paydayı, karı kökü bulunduran kısım pay kısmında olduğu için onun eşyeliğine çarpıyoruz.
+
+1121
+02:46:49,371 --> 02:46:53,752
+Yani karı kökün sonunda ya da sağında bulunan artı yarı eksiği değiştiriyoruz.
+
+1122
+02:46:54,332 --> 02:46:55,412
+Bu orijinal kısım.
+
+1123
+02:46:56,432 --> 02:46:58,832
+Şurada köşeli parantez için almam gerekiyordu ya unutmuşum.
+
+1124
+02:46:59,412 --> 02:47:18,711
+size yüklerken herhalde alırım. Şuraya köşeli parantez almam. Böyle yazdığım doğru değil. Bu orijinal kısım. Bakın şimdi pay ve paydayı karaköklü kısmının eşeniyle çarptım. Uygun kısmı sadeleştiriyorum. Bakın payda kısmı, pay kısmı eşeni çarpı mı ya? Yani bunu şöyle düşünün.
+
+1125
+02:47:19,636 --> 02:47:25,496
+a artı b, a eksi b. Ya da a eksi b ile a artı b'yi çarpıyormuş gibi düşünün. Ne oluyor?
+
+1126
+02:47:25,976 --> 02:47:33,176
+a eksi b çarpı a artı b, a kare eksi b kare. Çarptık. Bakın, 2 parantezde x kare eksi 1. Buraya anladık değil mi?
+
+1127
+02:47:33,176 --> 02:47:39,376
+Şurada süreye geçiyor. Fikiflığın çarpı onu bu. 2x kare eksi 1'in kareti, 2x kare eksi 1, eksi 1.
+
+1128
+02:47:39,987 --> 02:48:04,847
+2x1, x1 çarpınca. İki parantezini aldım. Payda kısmında da arkadaşlar x, x1 var. Payda kısmında da x, x1 var. Şimdi limit de, ben buraya yazdım ama bazen şuraya da yazabilirsiniz. Limit de sağ değiştirmeyi şunu söyleyerek yapabilirsiniz dedim. Pay kısmında x, x1 çarpı x, x1 diye yazarsanız x, x1'ler kısa olur bu kadar. Bu kadar.
+
+1129
+02:48:05,332 --> 02:48:25,152
+Burada bakın artık paydadaki sıfır problemi ortadan kalktı. Kalkması gerekiyor muydu? Kalkması gerekiyor muydu? Hayır gerekmiyordu. Bakın tekrar söylüyorum. Kalkması gerekmez. Yani paydada x1'e giderken sıfır olma, paydanın sıfır olma durumu söz konusu olabilir. O zaman da artı sonsuza, x sonsuza verdik. Yukarıda onu örneklemiştim.
+
+1130
+02:48:25,311 --> 02:48:36,431
+Burada kalktı. Şimdi 0, ayda 0 olmadığı için x yerine 1 koydunuz. Ay 0 olsa da koyabilirsiniz. Koyunca 4 bölü 2 cevap 2. Bu önü ayarladık mı arkadaşlar?
+
+1131
+02:48:38,291 --> 02:48:41,492
+Bu örneği anladıkça, bu örneği rahatlıkla yapalım.
+
+1132
+02:48:41,492 --> 02:48:42,351
+Evet hocam.
+
+1133
+02:48:42,471 --> 02:48:43,611
+Evet hocam anladıkça.
+
+1134
+02:48:44,291 --> 02:48:45,891
+Böyle örneği rahatlıkla yapamıyoruz.
+
+1135
+02:48:46,172 --> 02:48:48,811
+Şimdi ikinci örnek, şu örnek, aynısın.
+
+1136
+02:48:49,211 --> 02:48:50,412
+Bak, görüyor musunuz?
+
+1137
+02:48:50,492 --> 02:48:53,512
+Hastal kadar bir matematik olarak ne kadar sorumlu bir şekilde yazıyor.
+
+1138
+02:48:53,891 --> 02:48:56,572
+Eğer şu artıyı koymazsanız böyle bir limit yazılamaz.
+
+1139
+02:48:57,131 --> 02:48:57,871
+Bunu söyledim değil mi?
+
+1140
+02:48:58,811 --> 02:49:02,592
+Eğer şuraya artıyı koyan böyle bir limit ibadeti yazılamaz.
+
+1141
+02:49:02,672 --> 02:49:02,811
+Neden?
+
+1142
+02:49:03,476 --> 02:49:05,376
+Çünkü faydada kök x var.
+
+1143
+02:49:05,396 --> 02:49:09,896
+Faydada kök x var değil mi? Faydada kök x var. Şuraya artıyı koymak zorundasınız.
+
+1144
+02:49:10,356 --> 02:49:12,356
+Yani ne yapıyoruz zorundasınız?
+
+1145
+02:49:12,976 --> 02:49:20,096
+Böyle artıyı koymazsanız limitin hesaplayan sorusu olamaz. Olmamalıdır. Yazanlar yanlış yazmıştır. Olmamalıdır.
+
+1146
+02:49:20,876 --> 02:49:23,896
+Bundan sonrası yukarıdaki örneğin çözümünün tamamıyla aynısı.
+
+1147
+02:49:24,436 --> 02:49:29,316
+Aradaki ilave, ilavesi hem pay kısmında hem de payda kısmında.
+
+1148
+02:49:29,907 --> 02:49:51,607
+çöklü ifade var. Hem pay kısmında hem de payda kısmında çöklü ifade var. Arkadaşlar, burada hevkçide de var ya, öncelikle bir tercih hakkı kullanıyorsunuz, bir sonuca ulaşırsanız mesele yok. Yani payın eşleniğiyle çarptık burada, tercih hakkımızı pay için kullandık, mesele yok.
+
+1149
+02:49:53,683 --> 02:50:02,783
+payın eşleniyle çarptığınız zaman işlemden bir sonuç alamazsanız, belirsizlik devam ediyor ise o zaman devamında paydanın eşleniyle kullanabilirsiniz.
+
+1150
+02:50:03,263 --> 02:50:09,783
+Paydanın eşleniyle kullanabilirsiniz. Ama ben burada biraz daha dikkatli ve kurnaz davranarak paydaya eşleni koymadım.
+
+1151
+02:50:10,224 --> 02:50:13,164
+Çöküşün eşleni var mı? Çöküşün eşleni.
+
+1152
+02:50:14,548 --> 02:50:40,368
+Ya aslında var değil mi? x kare artı 2x dersiniz ama hiçbir şey değil o. Değil mi? Ben yukarıda ne dedim? Kare çökün sağına veya sonuna gelen artı ya da eksiği değiştiriyorsunuz dedim. Orada ama yanında bir sayı olduğunu varsayarak söyledim. Yanında şöyle sıfırdan farklı bir sayı olduğunu varsayarak söyledim. Dolayısıyla kök x'in eşleniğinin x kare artı 2x olduğunu düşünerek çarpmak sizi bir sonuca götürmez. Burada tek seçenek var aslında o da bu.
+
+1153
+02:50:40,724 --> 02:50:42,603
+İki seçenekte olabilir. Tekrar ediyorum.
+
+1154
+02:50:43,403 --> 02:50:45,523
+Şimdi arkadaşlar, bir sonraki örnekte bakın.
+
+1155
+02:50:45,823 --> 02:50:49,743
+Pay ve paydası karı kökü bulunduran kısmının eşyeliği ile çarpılır dedik ya.
+
+1156
+02:50:50,384 --> 02:50:52,683
+E payda yok. O zaman paydayı ne kabul ediyoruz?
+
+1157
+02:50:53,003 --> 02:50:53,403
+Paydayı?
+
+1158
+02:50:54,923 --> 02:50:55,203
+Bir.
+
+1159
+02:50:55,203 --> 02:50:59,323
+Bir kabul ediyoruz. Bakın paydayı bir kabul ediyoruz ve eşyeliği ile çarpıyoruz.
+
+1160
+02:51:00,063 --> 02:51:00,923
+Çarptığımız zaman...
+
+1161
+02:51:02,611 --> 02:51:08,131
+yukarısı x'leri 4, artı 2x'leri, eksi x'leri 4, aşağısı, artı 2x'leri yok.
+
+1162
+02:51:08,591 --> 02:51:09,951
+Sadece işlediğimiz zaman neyle?
+
+1163
+02:51:10,851 --> 02:51:11,851
+Benimle konuşun arkadaşlar.
+
+1164
+02:51:13,251 --> 02:51:15,551
+Kendi aranızda konuşuyorsunuz, ses her yere gidiyor.
+
+1165
+02:51:17,271 --> 02:51:19,171
+Soracağınız soru varsa bana sorsun, her şeyi veririz.
+
+1166
+02:51:19,511 --> 02:51:21,171
+Şimdi bile soruyor musunuz, bilemiyormuşsunuz.
+
+1167
+02:51:22,391 --> 02:51:23,731
+Var mı soracağınız soru?
+
+1168
+02:51:24,391 --> 02:51:24,671
+Yok.
+
+1169
+02:51:25,056 --> 02:51:43,756
+Şimdi, pay ve paydayı ortak parantez aldım arkadaşlar. x kareyi dışarı çıkarttım. x kareyi dışarı çıkarttım. Ölene kadar unutmayacağız. 2 bölü x kare, x artı sonsuza da gitti, x sonsuza da gitti. 0'a gidiyor. Dolayısıyla 2 bölü 2 cevap 1. Bu soruyu anladık mı? Çok basit. Yukarıdaki örnekleri tekrarı. Bir eşleniş çarpımı var.
+
+1170
+02:51:44,948 --> 02:52:01,307
+13. örnekte böyle arkadaşlar. Bakın burada normal son seksiyon gibi görünüyor. Önemli değil. Önemli değil. Paylaşıtıyorsunuz. Daha önce de yapmıştık. Paylaşıtıyorsunuz. Yukarıda bakın. Çekemenlikli durum ortaya çıkıyor. Eşlenmiş çarpımı yaptığınız zaman sonuç bu oluyor.
+
+1171
+02:52:01,620 --> 02:52:09,180
+Bu örnekleri de siz incelesiniz. Aklınıza takılan şeyler olursa e-postayla bana sorarsınız. Sorduğunuz zaman anında cevaplar.
+
+1172
+02:52:09,659 --> 02:52:11,479
+Hocam, bu notu da ekleyecek misiniz?
+
+1173
+02:52:12,100 --> 02:52:17,020
+Tabii tabii, bunu ekleyeceğim bunu. Biraz kısaltacağım bunları. Bunları biraz kısaltacağım, ekleyeceğim.
+
+1174
+02:52:17,020 --> 02:52:23,979
+Burada çalıştığınız, anlamadığınız şeyler olursa bana e-posta sorarsınız. E-postama baktığımda, gördüğümde cevabını verir misiniz?
+
+1175
+02:52:24,319 --> 02:52:25,260
+Teşekkür ederiz.
+
+1176
+02:52:25,840 --> 02:52:28,639
+Tamam, buraya da geçtik. Şimdi geldik trigonometrik limitlere.
+
+1177
+02:52:29,363 --> 02:52:40,583
+Şimdi arkadaşlar, bugün gördüğünüz gibi yoğun yapıyorum. Yani 10'a dakikada, 9'a dakikada karar verdim. Çünkü yarın hem öğleden önce hem de öğleden sonra benim dersim var. Sizin de var mı dersim?
+
+1178
+02:52:41,907 --> 02:52:43,188
+Var hocam.
+
+1179
+02:52:43,468 --> 02:52:45,688
+Birçok kişinin var, biliyorum birçok kişinin olduğunu.
+
+1180
+02:52:46,048 --> 02:52:52,188
+11.30'da bırakıyorum ki yarım saatli yemek, bir şeyler içme, çay molası vereyim diye 11.30'da bitiriyorum.
+
+1181
+02:52:52,567 --> 02:52:54,128
+Yani 2 saatlik olan dersimizi.
+
+1182
+02:52:54,427 --> 02:52:55,987
+Onun için bugün dolu dolu yapıyoruz.
+
+1183
+02:52:56,108 --> 02:52:57,628
+Yarın 11.30'da bırakıyoruz.
+
+1184
+02:52:57,868 --> 02:53:03,268
+Normalde bir 20 dakikanızı çalmış gibi, 10-15 dakikanızı çalmış gibi gözüküyorum ama buradan onu telafi ediyorum.
+
+1185
+02:53:03,667 --> 02:53:04,907
+Bir eksiğiniz kalmayacak.
+
+1186
+02:53:05,247 --> 02:53:06,468
+İlave ders de yapabiliriz.
+
+1187
+02:53:06,548 --> 02:53:08,387
+Gerektiği zaman ilave ders yapacağız.
+
+1188
+02:53:08,979 --> 02:53:11,659
+Hocam, yarınki dersimiz 11'de başlıyor ama.
+
+1189
+02:53:12,100 --> 02:53:12,399
+Efendim?
+
+1190
+02:53:13,139 --> 02:53:14,940
+Yarınki dersimiz 11'de başlıyor.
+
+1191
+02:53:15,159 --> 02:53:17,260
+11'de başlıyor, 12.30'da bırakıyoruz ya.
+
+1192
+02:53:18,000 --> 02:53:20,959
+Yüzde de bir daha dersimiz olduğu için yemek yiyelim diye.
+
+1193
+02:53:22,020 --> 02:53:22,979
+Onu diyorum.
+
+1194
+02:53:23,760 --> 02:53:24,459
+Tamamdır hocam.
+
+1195
+02:53:24,760 --> 02:53:27,860
+Bir daha derkeni bırakmış oluyoruz, onun için bugün dolu dolu yapıyoruz.
+
+1196
+02:53:29,079 --> 02:53:32,619
+Şimdi trigonometrik limitleri arkadaşlar, şeyi gördünüz.
+
+1197
+02:53:33,159 --> 02:53:35,059
+Bak, ne kadar süslemişim, görüyor musunuz?
+
+1198
+02:53:35,731 --> 02:54:02,471
+matematikteki en önemli limitlerin başında bu geliyor. Demin söylemiştim değil mi? Sinüs x bölix diye söylemiştim. Bunu ölene kadar unutmuyoruz. Tamam mı? Bak ne güzel süslemişim. Dışı gri, içi beyaz. Bunu ölene kadar unutmayacaksınız. Ispatına ihtiyacınız yok. Kimse size bunu ispat edin diye sormayacak. Arkadaşlar, bir şimdi cümle kuracağım. O cümleyi de ölene kadar unutmayacaksınız. Bir iki kere tekrar ederim. Eğer bir limit hesabı yaparken,
+
+1199
+02:54:02,932 --> 02:54:13,212
+limit anlam ifadede fonksiyonda trigonometrik veya test trigonometrik fonksiyon varsa, bu kısmı bir daha tekrar ediyorum.
+
+1200
+02:54:13,212 --> 02:54:23,992
+Eğer bir limit hesabında limit anlam ifadede içinde trigonometrik ya da test trigonometrik fonksiyon var ise,
+
+1201
+02:54:25,396 --> 02:54:31,556
+Limitin sıfır bölü sıfır belirsizliği vermesi halindeki bütün limitler bundan geçecek.
+
+1202
+02:54:32,456 --> 02:54:33,615
+Kim duymadı ve anlamadı?
+
+1203
+02:54:35,376 --> 02:54:36,816
+Var mı anlamayan, duymayan?
+
+1204
+02:54:37,415 --> 02:54:38,556
+Ben anlamadım hocam.
+
+1205
+02:54:39,376 --> 02:54:40,236
+Tekrar ediyorum.
+
+1206
+02:54:41,175 --> 02:54:42,835
+Bir limit hesabı yapıyorsunuz.
+
+1207
+02:54:43,595 --> 02:54:48,575
+Limit alan ifadenin içinde trigonometrik ya da ters trigonometrik fonksiyon var.
+
+1208
+02:54:49,332 --> 02:55:01,672
+sinüs, kosinüs, tanjant, ars sinüs, kosinüs, ars kosinüs, ars sekant, neyse. Burayı anladık mı? Limit alınan bir ifade var. İçinde trigonometrik ya da tess trigonometrik bir fonksiyon var. Tamam, bunu anladık mı?
+
+1209
+02:55:03,252 --> 02:55:12,852
+Tamam, bunu anladık hocam. Tamam. Eğer limit ilk vuruşta, limit ilk vuruşta 0 bölü 0 belirsizliği verirse,
+
+1210
+02:55:13,332 --> 02:55:19,751
+Bir daha tekrar ediyorum. Eğer limit ilk vuruşta 0 bölü 0 belirsizliği verirse, bunu da anladık mı?
+
+1211
+02:55:21,551 --> 02:55:22,391
+Evet hocam.
+
+1212
+02:55:22,652 --> 02:55:22,992
+Aynen.
+
+1213
+02:55:24,351 --> 02:55:31,111
+Kesin şu limitten geçiliyor. Matematiği seviyorum. Kesin bu limitten geçiliyor.
+
+1214
+02:55:32,811 --> 02:55:39,231
+Bir daha özetlemem ister misin? Örnekle yaparsın. Örnekle yaparsın. Kesin buradan geçiliyor. Kesin.
+
+1215
+02:55:39,667 --> 02:56:02,907
+Başka hiçbir çözüm yolu yoktur şimdi. Şimdi arkadaşlar, bu sonuç. Bu sonuç. Ispatını yaptım ben, şuna vurgu yaptım ya, onu görelim diye. Şimdi şimdi bir de bakın arkadaşlar. Bunu ezberinizde tutacaksınız. Bunu ölene kadar unutmayacaksınız. Şunu unutabilirsiniz, çözümü çok basit. 1 dakika tutmaz. Yazma süresiyle 1 dakika tutmaz. Yazma süresiyle.
+
+1216
+02:56:03,087 --> 02:56:10,667
+Şimdi, bunu aklımıza tutacağız. Şuna bakalım. İlk vuruşu yaptık arkadaşlar. Teta sıfıra gideceğim. Direkt, kos teta bölü teta nasıl bir belirsizlik veriyor?
+
+1217
+02:56:11,887 --> 02:56:12,788
+0 bölü 0.
+
+1218
+02:56:13,087 --> 02:56:17,948
+0 bölü 0. Demek ki ölene kadar unutmayacağız. Nereden geçecek bu? Nereden geçecek?
+
+1219
+02:56:19,167 --> 02:56:28,608
+Teta bölü teta'dan geçecek. Bakın, trigonometrik ya da t-sirgonetrik bir fonksiyon varsa ve ilk vuruşlar limit 0 bölü 0 belirsizliği veriyorsa kesin buradan geçecek.
+
+1220
+02:56:28,736 --> 02:56:51,195
+Şimdi arkadaşlar, kesin buradan geçecek demek, ne yapıp edip bu ifadenin içine kirisi yerleştirsin demek. Bir daha tekrar ediyorum. Kesin şuradan geçecek demek, ne yapıp edip şu ifadenin içine sintetayı yerleştirin demek. Birkaç şekilde yapabiliriz bunu. Nasıl yapabiliriz mesela? Bu ifadenin içine sintetayı nasıl sokarız?
+
+1221
+02:56:52,755 --> 02:56:57,195
+şeyden galiba, sin kare x artı kos kare x eşittir bir ya, oradan.
+
+1222
+02:56:57,235 --> 02:57:04,036
+Teşekkür ederim, oradan yapabiliriz. Oradan yapabiliriz. Yani bir artı kos tete ile çarparız diyorsun değil mi?
+
+1223
+02:57:06,375 --> 02:57:07,875
+Yani evet, onu denk geliyorum.
+
+1224
+02:57:07,875 --> 02:57:09,255
+Bir artı kos tete ile çarparız diyor.
+
+1225
+02:57:09,556 --> 02:57:32,796
+Bir başka yolu daha var. Yarım açı formülü kullanabiliriz değil mi? Kosinüs ikstedenin açılarını kullanabiliriz. Ama o ezderinizde olmayabilir ama ölene kadar unutmayacağınız ne vardı? Kos kare artı sin karenin 1 olduğu var. Bunu ölene kadar unutmayacaktım. Oradan devam edelim şimdi. Bakın. Ne yapıp edip bunun içine sinüs detayı yerleştirmek istiyorum. O zaman sin karenin 1x kos kare çarpı 1 artı kos kare olduğunu biliyorum.
+
+1226
+02:57:33,683 --> 02:57:59,803
+Demek ki, bunu limit hesaplayabilmek için pay ve paydayı bir artı kol setayla çarpacağım. Ya da şuradan görebilirsiniz. Şuradan bakın, her iki tarafı şeye bölerseniz, seteye bölerseniz de çıktığını görüyorsunuz. Ben detaylı bir şekilde söylüyorum size şimdi. Detaylı bir şekilde söylüyorum. Tamam mı? Şu hazır var. Şurası hazır var. Ben diğerini söylüyorum. Yazıyorsunuz değil mi? Ben diğerini söylüyorum. Yazıyor, ben yazıyorum. Pardon, siz yazmıyorsunuz. Ben yazıyorum.
+
+1227
+02:58:12,020 --> 02:58:14,020
+Pay ve payday arkadaşlar
+
+1228
+02:58:16,180 --> 02:58:17,180
+olmadı.
+
+1229
+02:58:39,283 --> 02:58:43,643
+limit kısmını yazmadım. Burayı anladık mı arkadaşlar?
+
+1230
+02:58:45,803 --> 02:58:48,723
+Evet hocam. Arkadaşlar, burayı anladık mı? Evet hocam.
+
+1231
+02:58:48,723 --> 02:58:49,763
+Evet hocam.
+
+1232
+02:58:50,723 --> 02:58:54,543
+Pay ve paydayı bir artı kostet ile çarptım.
+
+1233
+02:58:54,623 --> 02:58:59,983
+Şimdi pay kısım ne oluyor?
+
+1234
+02:59:02,983 --> 02:59:04,303
+Sim kare x.
+
+1235
+02:59:06,548 --> 02:59:08,388
+x kısım yazıyorum.
+
+1236
+02:59:09,288 --> 02:59:11,628
+x kare artı kos kare dedim.
+
+1237
+02:59:12,108 --> 02:59:12,328
+Dur.
+
+1238
+02:59:13,208 --> 02:59:16,108
+Üşenmeden yazacağım. Bunu bitirince dersi bırakıyorum zaten.
+
+1239
+02:59:16,968 --> 02:59:17,968
+Üşenmeden yazıyorum.
+
+1240
+02:59:28,371 --> 02:59:30,252
+artı biraz elim titredi gibi oldu.
+
+1241
+02:59:31,391 --> 02:59:32,192
+Güzel görünmedi.
+
+1242
+02:59:36,755 --> 02:59:45,456
+Bunun buna eşit olduğunu biliyoruz değil mi? Burası 1-kos kare teta, onun yerine sin kare teta yazdım. Aşağısta teta çarpı 1-kos teta. Bunu da anladık mı arkadaşlar?
+
+1243
+02:59:47,036 --> 02:59:59,136
+Başka bir şey yazmayacağım. Başka bir şey yazmayacağım. Anlatacağım yani. Şimdi ben buradan ne bekliyorum arkadaş? Arkadaşlar ölene kadar neyi unutacağım? Sin teta bölü teta. Bakın sin teta bölü teta. Burada ne var?
+
+1244
+03:00:00,211 --> 03:00:06,811
+x kare bölü teta var. Peki, x kare bölü teta olması için, şunun ne olması lazım arkadaşlar, şuranın? Ne olması lazım?
+
+1245
+03:00:08,451 --> 03:00:09,531
+x kare teta bölü teta.
+
+1246
+03:00:09,951 --> 03:00:14,051
+x kare teta olması lazım. Peki, x kare teta'yı x kare teta şeklinde nasıl yazalım?
+
+1247
+03:00:14,492 --> 03:00:17,351
+x kare teta çarpı x kare teta.
+
+1248
+03:00:17,351 --> 03:00:21,572
+x kare teta çarpı x kare teta. Bakın, x kare teta çarpı x kare teta. Burayı gördük mü?
+
+1249
+03:00:23,156 --> 03:00:43,855
+gördük. Aşağısına bakın teta yazdım. Burası da geriye kalan sintetayı da buraya yazdım. Sonuç çıktı. Bir şey daha söyleyeceğim arkadaşlar burada. Bir şey daha söyleyeceğim şimdi. Şurada. Bunu da söylüyorum, bırakıyorum. Tamam mı? Şimdi yukarıda ne var arkadaşlar? Bir daha söyleyin yukarıyı. Hadi.
+
+1250
+03:00:43,855 --> 03:00:47,236
+Şimdi teta, böyle teta. Yukarıda yukarıda. Ne var?
+
+1251
+03:00:48,500 --> 03:00:51,920
+x kare tete var.
+
+1252
+03:00:52,099 --> 03:00:57,139
+Peki, o x kata böyle teteye uyması için aşağısının ne olması lazım?
+
+1253
+03:00:58,000 --> 03:01:00,639
+x kata böyle teteye uyması için aşağısının ne olması lazım?
+
+1254
+03:01:01,760 --> 03:01:02,119
+Deta.
+
+1255
+03:01:04,059 --> 03:01:07,519
+Bu niye gitmiyor ya? Demin gidiyordu. Aşağı gitmiyor.
+
+1256
+03:01:08,139 --> 03:01:10,539
+Hayır, hayır. [öğrenci] sen mi konuşuyorsun?
+
+1257
+03:01:11,180 --> 03:01:11,879
+Evet hocam.
+
+1258
+03:01:12,659 --> 03:01:17,699
+Burası sin kare tete olduğuna göre aşağının ne olması lazım? Sin tete bölü tete kullanabilmemiş.
+
+1259
+03:01:17,760 --> 03:01:18,279
+Tete kare.
+
+1260
+03:01:18,739 --> 03:01:20,159
+Teşekkür ederim. Kim söyledi oya?
+
+1261
+03:01:20,600 --> 03:01:21,439
+Evet, benim hocam.
+
+1262
+03:01:21,680 --> 03:01:26,319
+Teşekkür ederim. Bunun tete kare olması lazım. Peki orijinalinde var mı?
+
+1263
+03:01:26,659 --> 03:01:27,219
+Orijinalinde?
+
+1264
+03:01:27,859 --> 03:01:28,139
+Yok.
+
+1265
+03:01:28,619 --> 03:01:33,459
+Yok. Haşaşa kim var etti? Biz var etti. 2 bize güzel görünmedi.
+
+1266
+03:01:33,760 --> 03:01:36,579
+Dersi bitiyorum zaten. Buraya gelip bitiriyorum. 2'yi düzelteyim.
+
+1267
+03:01:37,279 --> 03:01:39,340
+Biraz emek çekiyorum ama çok önemli çünkü.
+
+1268
+03:01:40,852 --> 03:01:44,032
+Tamam. Şimdi arkadaşlar, o zaman buraya ne yazmalıyız? Hayal.
+
+1269
+03:01:46,632 --> 03:01:49,232
+Matematiği seviyorum. Görüyorsunuz değil mi?
+
+1270
+03:01:58,932 --> 03:02:08,051
+Şimdi arkadaşlar, limit aldığımız zaman sin kare bölü teta karesinin limiti ne? Limit teta sıfıra giderek sin kare teta bölü teta kare ne?
+
+1271
+03:02:08,532 --> 03:02:09,051
+Sıfır.
+
+1272
+03:02:09,592 --> 03:02:10,692
+Birin karesi, hayır.
+
+1273
+03:02:11,872 --> 03:02:12,211
+Bir.
+
+1274
+03:02:12,372 --> 03:02:15,152
+Bir. Bak, böyle ne kalıyor?
+
+1275
+03:02:16,731 --> 03:02:20,432
+Nerede? Burada. Bak, bir. Birin karesi bu, değil mi?
+
+1276
+03:02:21,236 --> 03:02:37,296
+teta sıfıra giderken sin kare teta bölü teta kare. Yani sin teta bölü tetanın parantez karesi. Bu birin karesi. Şurası ney? Şurası sıfır bölü 2x0. Birin karesi çarpı sıfır? Sıfır.
+
+1277
+03:02:38,131 --> 03:02:43,431
+Tamam mı? Anladık mı? Belki demin söyleyen bayan arkadaşımız tamamını söyledi herhalde.
+
+1278
+03:02:44,051 --> 03:02:51,951
+Sin teta 0'a giderken sin kare teta bölü teta kare 1, teta bölü 1 artı teta, şey kos teta 0, birin karesi 0 eşittir 0.
+
+1279
+03:02:52,211 --> 03:02:58,832
+Ama kesinlikle eşittir eşittir diye yazmıyoruz. Son bir direk yazıyoruz. Anladık mı arkadaşlar bunu?
+
+1280
+03:02:59,832 --> 03:03:00,591
+Evet hocam.
+
+1281
+03:03:03,188 --> 03:03:08,347
+Yani ölene kadar, siddete böyle, peta sıfıra giderek 1 olduğunu unutmuyoruz.
+
+1282
+03:03:08,667 --> 03:03:13,148
+Şimdi, bundan sonra örneklerimiz arkadaşlar, bunun genişletilmiş hali tamam mı?
+
+1283
+03:03:13,468 --> 03:03:15,347
+Bunun genişletilmiş hali, şunun.
+
+1284
+03:03:15,860 --> 03:03:38,360
+Şunun daha genişletilmiş hali. Bazı yerlerde bunu da kullanacağız. Ben şimdi bunu biliyor varsayarak, şurayı biliyor varsayarak bunu hızlı şekilde, eşitli 0 olduğunu düşünerek devam edeceğim. Tamam mı? Ama sizin karşınıza manuel işlemler de yani elle yapılan işlemler karşında çıkarsa bunu biliyor kabul edemezsiniz. Şöyle yapacaksınız. Bir şekilde. Sınavınız test olursa gerekmiyor ama.
+
+1285
+03:03:39,443 --> 03:03:56,503
+Şimdi, nerede kalmıştık diye sorulduğunda, örnek 2, örnek 1 bastı olduğu için tekrar yazmayayım. Şuradan devam. Neyse, örnek 1'den devam eder. Tamam mı? 11.55 saat. Dersi bırakıyorum arkadaşlar. Sağlıcakla Karın. Beni dinlediğiniz için teşekkür ederim. Yarın görüşürüz.
+
+1286
+03:03:56,523 --> 03:03:57,804
+Biz teşekkür ederiz hocam. İyi günler.
+
+1287
+03:03:57,804 --> 03:04:00,144
+Teşekkürler hocam. Görüşürüz hocam.
+
+1288
+03:04:00,703 --> 03:04:01,644
+Teşekkürler hocam.
