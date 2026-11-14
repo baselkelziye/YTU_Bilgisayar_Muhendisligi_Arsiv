@@ -1,0 +1,2663 @@
+1
+00:00:07,123 --> 00:00:07,623
+Evet.
+
+2
+00:00:11,316 --> 00:00:14,016
+[öğrenci], tabi ki dedin ilk katıman sensin.
+
+3
+00:00:14,336 --> 00:00:18,335
+[öğrenci], bir sırada, [öğrenci]'de, bir sırada.
+
+4
+00:00:19,956 --> 00:00:23,996
+Evet, dedim ki derse başlarken, 2 hafta kaldı sınavları.
+
+5
+00:00:25,836 --> 00:00:27,876
+Sınavlar çalışmadan gelmeyin.
+
+6
+00:00:29,096 --> 00:00:31,475
+Mutlaka, kitaptan, şunu.
+
+7
+00:00:38,195 --> 00:00:40,195
+Çalışıyorlar, o orkusal olarak.
+
+8
+00:00:45,195 --> 00:00:51,195
+Yani bence bu da için böyle en güzel şekilde çalışmak için güzel bir kısalt, yani veri tabanı.
+
+9
+00:00:51,195 --> 00:00:52,195
+Oldukça,
+
+10
+00:00:54,195 --> 00:00:56,195
+kitap da oldukça güzel.
+
+11
+00:00:56,195 --> 00:00:59,195
+O yüzden sınavı mutlaka çalışarak gelip,
+
+12
+00:00:59,195 --> 00:01:02,195
+anlamadığın yeri varsa o sınavda çıkıyordur.
+
+13
+00:01:02,195 --> 00:01:04,195
+Ondan size dokun emin olabilirsiniz.
+
+14
+00:01:04,195 --> 00:01:06,111
+O yüzden sorun, öğrenin.
+
+15
+00:01:06,111 --> 00:01:14,111
+Ya klastıma sorun, ya bilgilerize, ya bana sorun. Ama çok bir hareket olmuyor.
+
+16
+00:01:14,111 --> 00:01:24,111
+Evet. Her halükarda derse geçiyorsunuz. Anlayarak geçmek var. İstifade etmek, iyice, az nasıl.
+
+17
+00:01:24,111 --> 00:01:32,075
+Bir de fabriklerle geçmek var. Bence en karlısı. Biraz böyle hem zaman ayırıyoruz, biraz daha iyice anlayarak geçelim.
+
+18
+00:01:34,548 --> 00:01:55,548
+Anlayın yani, anlamaya çalıştık. Bir yolu var ama. Ben de yüz yüze anlamadım. Bazen anlamadığım yerler var. Yani veritabanın çok katlanıyor konu yani. Bütün büyük resmi görmek kolay olmuyor. Her yerde tam böyle şey yapmak için bir şey olmuyor. Ama ana hatları ile kavramları anlamamız lazım. Bu bir mesela kavramsal tasarım. Yani...
+
+19
+00:01:55,987 --> 00:02:03,867
+Bugüne kadar üzerinde çalıştığımız hazır bir ilişkisel modeli tabloları var.
+
+20
+00:02:04,667 --> 00:02:05,807
+Bunları bir açalım ya.
+
+21
+00:02:06,727 --> 00:02:08,527
+Çünkü sen yaştan geçen, hep de bütüyor.
+
+22
+00:02:18,771 --> 00:02:23,372
+Bilinen şeyler ama, vurgu yapmakta bende fayda var.
+
+23
+00:02:24,651 --> 00:02:36,532
+Aksi taksitle, reportlarda kriziniz vardı, takip ediyordum, nasıl geçti, zor muydu, kolay mıydı?
+
+24
+00:02:36,671 --> 00:02:42,852
+Bunun haricinde bir de her dersin sonunda ufak bir sınav gibi bir şey oluyor, ders takibimizi kontrol eden.
+
+25
+00:02:44,500 --> 00:02:48,500
+Onlara dikkat ediyorsunuz. Evet, Advanced F2 bitirmiştik.
+
+26
+00:02:48,500 --> 00:02:51,500
+Chapter 6, ER diyagramları.
+
+27
+00:02:54,500 --> 00:02:58,500
+Evet, önemli bir yorum yok miseden.
+
+28
+00:02:58,500 --> 00:03:00,500
+Şimdi, kaygamsat tasarım.
+
+29
+00:03:00,500 --> 00:03:03,500
+Sizler bize paylaşalım.
+
+30
+00:03:03,500 --> 00:03:05,500
+İçeride paylaşalım.
+
+31
+00:03:14,548 --> 00:03:31,807
+[öğrenci]'ın ödürü derse katılıyor, Açıkçan Akıbetimiz. Yine anlamadığınız yerleri beraber düşünülebilir, beraber bakılabilir, sınava hazırlık yaparken. Sonra gelip bana sorabilirsiniz. Yani bir etkileşim olunca daha iyi oluyor.
+
+32
+00:03:59,412 --> 00:04:01,092
+Bir altıya astım, çektim, 14.
+
+33
+00:04:01,092 --> 00:04:02,592
+Şimdi, ne oldu?
+
+34
+00:04:06,831 --> 00:04:07,072
+Evet.
+
+35
+00:04:09,231 --> 00:04:16,252
+Kahramsal tasarım, diğer diagramları. Bu altın üstünü misleten biraz daha kolay. Ekran paylaşımını yapmadık.
+
+36
+00:04:16,432 --> 00:04:17,151
+Yaptık mı?
+
+37
+00:04:17,672 --> 00:04:18,451
+Tekrar yapalım.
+
+38
+00:04:19,851 --> 00:04:22,632
+Sesim geliyor değil mi? Mikrofon almadım ama...
+
+39
+00:04:29,267 --> 00:04:30,027
+Şimdi geliyordu.
+
+40
+00:04:32,447 --> 00:04:32,707
+Evet.
+
+41
+00:04:35,587 --> 00:04:37,788
+Ben de bir geri beslemi olmadım. Herhalde geliyor.
+
+42
+00:04:38,675 --> 00:04:54,135
+Evet, karamsal tasarım dediğimiz zaman bu konu başlıkları var. Çepteli altını isteten daha kolaydı. Yani ana hatlarıyla EIR ve bu karamsal tasarım diagramının ilişkisel model tablolarına dönüştürülmesi var.
+
+43
+00:04:54,275 --> 00:05:02,555
+Bizim an üzerinde çalıştığımız esküverleri yazdığımız o şema var. O şemaya dönüştürme kuralları var.
+
+44
+00:05:02,555 --> 00:05:06,555
+Tabii burada böyle kurallar böyle kuru ham değil.
+
+45
+00:05:06,675 --> 00:05:07,915
+İçine doğdurmak lazım.
+
+46
+00:05:10,995 --> 00:05:16,716
+Dediğiniz sanki o bir meleki haline gelsin bu dönüşünü yaparken.
+
+47
+00:05:17,415 --> 00:05:22,135
+Şimdi dediğim gibi bu altıncı çepte biraz daha hazır.
+
+48
+00:05:22,436 --> 00:05:25,395
+Çepte 7'de de normalizasyon konusu var.
+
+49
+00:05:25,895 --> 00:05:30,216
+O da veri bütünlüğüyle, yani data integrity ile alakalı bir mesele.
+
+50
+00:05:30,635 --> 00:05:34,915
+Orada bir takım böyle formalizasyonlar var.
+
+51
+00:05:34,915 --> 00:05:37,196
+Yani bazı böyle definişlerimiz var.
+
+52
+00:05:40,052 --> 00:06:03,831
+Bir de var. Chapter 7'nin yarısını yapacağız. Diğer yarısına çok bilmiyoruz. Yani biraz çok ağır bir teorisi var. Yani 5NF, 5NF, normal konu var normalizasyonda. Biz 1, 2, 3 ve BCNF'den bahsediyoruz. Yani bu hafta ve haftaya, sınava kadar herhalde bunları veririz. Belki bir parça kalır.
+
+53
+00:06:05,716 --> 00:06:20,776
+Sınavdan sonra. Ama sınava böyle hem biliminin hasarlanması, kavramsat tasarı, o dönüşümler, hem de SQL, ilişkisel gibi böyle anahtarıyla veritabanının böyle bütün temel kavramlarını anlamış olarak girmiş olacağız.
+
+54
+00:06:20,776 --> 00:06:23,276
+İnşallah ara sınav bile.
+
+55
+00:06:23,891 --> 00:06:38,092
+Şimdi bu konu içerisinde neler varmış? Bir dizayn proses, ER diyagramından bahsedecek ve böyle bir takım büyük şekillerle bir bu kağıda hamsat tasarımı kağıda döküyoruz.
+
+56
+00:06:38,399 --> 00:06:51,599
+Sonuçta, şu anda en başa döndük. Yani küçük bir dünyamız var. O küçük dünyaya kağıda aktaracağız. Bu diagramlarla. O diagramın da işte bir takım definisyonları var. İşte şekillerimiz var.
+
+57
+00:06:51,599 --> 00:07:03,999
+Bu tabii universal bir şey yani, ER. Bir uniform bir şey olsun diye. Yani ben ER'ı burada çizdim. Yani yurt dışında başka biri, bambaşka biri de bakınca anlayacak onu. Standart gibi bir şey.
+
+58
+00:07:04,223 --> 00:07:13,024
+İşte burada o standart kapsamında kompleks atölyetler, kardinal etkiler nasıl ifade ediliyor, primal etkiliği nasıl ifade ediliyor?
+
+59
+00:07:13,312 --> 00:07:41,172
+Sonra, Dundas'ı problemi, ondan bahsedeceğiz. Daha sonra, ER diyagramlarının dönüştürülmesi, yani daha iyi bir ER çizebilir miyiz falan gibi kavramlar var. Daha sonra, ER böyle, tamam, çoğu işimizi görüyor fakat, böyle daha specialization, generalization gibi, aggregation gibi bazı kavramlar var. O küçük dünyayı daha iyi böyle reprezent etmek noktasında.
+
+60
+00:07:41,312 --> 00:08:09,211
+Bu noktada, E-Extended PR var. Onun böyle oyuncaklarından bahsediliyoruz. Orada birkaç yeni definiçin, PostgreSQL. Sonra, bu da VML'den bir parça bahsetmiş. VML, Unified Modeling Language, daha çok PostgreSQL tarafından çıkan bir düzenleme. Ama tabanı, dünyası da bundan hissesini almış yani. Yazılım mühendisliğinin bir kavramı.
+
+61
+00:08:09,312 --> 00:08:19,951
+Ama veri tabanı dünyası da diyelim, UML'i UML'e ziyaret eden, madem unified modeli gibi bir şey, burada biz modelleme yapıyoruz.
+
+62
+00:08:20,752 --> 00:08:26,192
+Database de oradan hissesini almış. UML'de de yapılan tasarımlar var.
+
+63
+00:08:26,591 --> 00:08:42,591
+Ancak tabii veritabanının klasik tarzı ER, o güzel tatminkar. Yani ER, EER, çoğu veritabanı kitabında bunları göreceksiniz. Alternatifalar bir yerlerde gösteriyor. Burada da az bir parça göstermiş alternatifleri.
+
+64
+00:08:42,591 --> 00:08:52,591
+Şimdi dediğim gibi, bu veritabanın daha kavramsal tasarım, burada da outline devam ediyor.
+
+65
+00:08:54,163 --> 00:09:01,364
+Entity Relation Design İş'i, bu dönüşümlerde herhalde burada bulunuyoruz olacak.
+
+66
+00:09:01,364 --> 00:09:09,003
+Şimdi, Data Needs'i, yani biz bu küçük dünyada hangi veriyi istiyoruz?
+
+67
+00:09:09,144 --> 00:09:12,864
+Data Needs, of the perspective of the database users.
+
+68
+00:09:13,083 --> 00:09:16,703
+Yani bu küçük dünya içerisindeki kullanıcılar ne istiyorlar?
+
+69
+00:09:17,556 --> 00:09:33,216
+Data needs. Hangi datayı istiyorlar? Hangi datayı saklamam lazım? Bu çıkış noktamız burası. Daha sonra ikinci yardımda Functional Design'da bu veriyle ne yapacağız? Yani ne gibi işlemler yapacağız?
+
+70
+00:09:33,216 --> 00:09:43,216
+Bu iki tuvali üniversiteleri tabanında düşündüğünüz zaman üniversiteleri tabanında öğrenciler, hocalar, dersler...
+
+71
+00:09:43,796 --> 00:09:52,956
+Sektionlar var, her dönem açılıyor, bilersin mikrofis sektional. Bunlar sayesinde, hasil etmeye başladığım zaman, veri kendini gösteriyor.
+
+72
+00:09:52,956 --> 00:09:59,956
+Ve genelde kurduğum o cümlelerde, bu cümle kuramıyorum ama, onun böyle duyduğum...
+
+73
+00:10:00,000 --> 00:10:04,200
+Bir kompozisyon yazsak, bir paragraf halini ifade etsek.
+
+74
+00:10:04,320 --> 00:10:08,680
+Sonra da çoğu zaman özgünlerin, özneleri bizim varlıklar oluyor.
+
+75
+00:10:08,840 --> 00:10:10,340
+Yani data oluşuyor.
+
+76
+00:10:10,440 --> 00:10:13,539
+İşte o data, bizim data ve bizim o dataları onlar.
+
+77
+00:10:14,039 --> 00:10:16,800
+Öğrenciler var, öğrenciler ders alıyorlar.
+
+78
+00:10:17,220 --> 00:10:21,080
+Derslerde birçok section var mesela gibi.
+
+79
+00:10:21,300 --> 00:10:22,720
+Dost section'ı detaylandıracağım.
+
+80
+00:10:22,899 --> 00:10:24,379
+Section 3'te bir dönem açılıyor.
+
+81
+00:10:24,600 --> 00:10:25,920
+Sınıfta veriliyor ders.
+
+82
+00:10:28,000 --> 00:10:31,800
+Yapacaksam sınıfta ilgili bir dünya kurmaya başladım. O sınıfta kalmaya başladım.
+
+83
+00:10:32,192 --> 00:10:49,272
+O yüzden burada tabii o gereksinim listesini düzgün bir şekilde ifade etmek gerekiyor ve oradan yıla çıkarak da hangi veriye ihtiyaç var onu tespit etmek gerekiyor.
+
+84
+00:10:49,272 --> 00:10:55,731
+Mesela biraz önceki böyle kırık kırık ifadelerimden ne anlaşılıyor mesela?
+
+85
+00:10:56,012 --> 00:10:57,532
+Tekrar başa dediğim ne dedi mesela?
+
+86
+00:11:00,192 --> 00:11:20,851
+Öğrencilerimiz var, öğrenciler ders alıyorlar. Dersler her dönem açılıyor veya bazı dönemler açılmıyor. Ama açıldığı dönemler birçok seksiyon açılıyor. Öğrenciler dersi bir hocadan alıyorlar, not alıyorlar, belli bir departmana bağlılar. Departmanlar var üniversitemizde falan filan. Böyle devam ediyor hikaye.
+
+87
+00:11:22,211 --> 00:11:26,692
+Nur'la bir üniversite verisi saklanıyor mu?
+
+88
+00:11:28,179 --> 00:11:29,679
+Üniversiteye etkili saklanma.
+
+89
+00:11:30,196 --> 00:11:56,956
+Tek bir üniversitedeki defatmanlar, tek bir üniversitedeki öğrenciler, tek bir üniversitedeki dersler. O zaman bir üniversite aranmıyor yani. Üniversiteleri listeler, ülkedeki üniversitede listeler diye bir şey aranmıyor. Yani burada aranan şey, istenilen veri hangi üniversite değil? Yıldız Tekniversitesi, bu üniversite bünyesinde bir ortal oluşturmaya çalışıyoruz, data verilmesi çalışıyoruz.
+
+90
+00:11:58,196 --> 00:12:04,975
+O yüzden orada hiçbir zaman şu üniversitenin size farkını demedim yani demiyorum.
+
+91
+00:12:04,975 --> 00:12:13,735
+İşte biraz gerçekten ihtiyaç duyulan bir nedir? Onları böyle, onlar kafada canlanması.
+
+92
+00:12:13,995 --> 00:12:17,235
+İkinci aşamamız, ikinci aşama functional.
+
+93
+00:12:18,636 --> 00:12:20,276
+Burada farklı.
+
+94
+00:12:21,652 --> 00:12:25,012
+genel olarak
+
+95
+00:12:25,012 --> 00:12:27,652
+Karnam Saat Tasarım dediğimiz zaman
+
+96
+00:12:28,472 --> 00:12:32,872
+konseptçü olsun
+
+97
+00:12:32,872 --> 00:12:37,552
+ben de bir saptan gözden getirdim
+
+98
+00:12:37,552 --> 00:12:38,512
+bunlara bakmadım
+
+99
+00:12:38,512 --> 00:12:43,512
+bunlara sayılarını değiştiremiyorum ama
+
+100
+00:12:43,512 --> 00:12:44,792
+bazı yerleri vurguluyor
+
+101
+00:12:44,792 --> 00:12:46,652
+kırmızıyla veya çatı şeylerle
+
+102
+00:12:48,467 --> 00:12:50,867
+Şimdi beraber bakalım, ancak bu arada.
+
+103
+00:12:51,508 --> 00:13:02,208
+Evet, demek ki böyle tam komple bir, fully developed conceptual bir şemada, functional requirement'larda olması lazım.
+
+104
+00:13:02,328 --> 00:13:07,408
+Functionary requirement, yani bu veri tamam bunlar olacak. Bu kişiler, bu veride neler yapacaklar?
+
+105
+00:13:07,628 --> 00:13:13,308
+Yani öğrenciler, derse kayıt olacaklar. Öğrenciler, dersten geçecekler, kalacaklar falan.
+
+106
+00:13:13,308 --> 00:13:19,508
+Çoğuncadan aldılar. İşte bu böyle zünneli genelde iyi kısımları almak, dersi almak.
+
+107
+00:13:19,508 --> 00:13:20,628
+Ama kaydoğum.
+
+108
+00:13:20,783 --> 00:13:22,443
+Bu dersler için oldu, aldı.
+
+109
+00:13:23,063 --> 00:13:25,423
+Orada yüklem kısımları biraz ne oluyor?
+
+110
+00:13:25,863 --> 00:13:26,903
+Bir operasyon oluyor.
+
+111
+00:13:27,483 --> 00:13:30,563
+Bu operasyon bir transaction tarzı olabilir.
+
+112
+00:13:31,024 --> 00:13:32,323
+Transactionlardan bahsettik.
+
+113
+00:13:32,463 --> 00:13:36,423
+Yani bir bütünlük gerektirebilir mesela.
+
+114
+00:13:36,423 --> 00:13:38,343
+O küçük dünya içerisinde.
+
+115
+00:13:39,384 --> 00:13:40,843
+Veya çok basit bir şey olabilir.
+
+116
+00:13:40,963 --> 00:13:44,103
+Basit bir şey ise biz bunu ilişkilerle yapabiliyoruz.
+
+117
+00:13:44,244 --> 00:13:46,644
+Yani işte öğrendi, şu dersi aldı.
+
+118
+00:13:46,903 --> 00:13:48,463
+Aldı bağlantısı.
+
+119
+00:13:48,783 --> 00:14:03,783
+Mesela orada bir tane diamond gökken gövdesinin tekniği öyle bir şey kullanılıyor. Yani bir şekilde o, bu requirement listesini bu kağıda taşımak lazım.
+
+120
+00:14:05,443 --> 00:14:13,903
+Evet, daha sonra kağıda taşıdım ne oldu? O kağıttan işte makineye taşımak için onun da bir formalizasyonu var. Ondan bahsedelim.
+
+121
+00:14:16,211 --> 00:14:29,211
+Şimdi burada yapılması gereken okuyalım. Final phase, sizler iki tane aşamadan bahsettik. Conceptual Schema, Functional Operations, Requirements'lar falan. Sizem bilmiyorsunuz.
+
+122
+00:14:29,211 --> 00:14:35,211
+Şimdi logical design'da, işte bunlar var esasında.
+
+123
+00:14:35,211 --> 00:14:42,211
+Yani hangi veriyi istiyoruz, hangi ilişkisel şema ortaya çıkacak.
+
+124
+00:14:42,419 --> 00:14:53,039
+Hangi tablolar ortaya çıkacak, o tablolar hangi nitelikler olacak, o niteliklerin domeni ne olacak, hangi belirti olacak falan bunlar ortaya çıkıyor oluyor.
+
+125
+00:14:55,080 --> 00:15:01,580
+Bu şekilde bir ilişkisel model şeması karşıma çıkıyor.
+
+126
+00:15:01,899 --> 00:15:05,840
+İkinci aşama, dizayn aşaması, physical design.
+
+127
+00:15:06,419 --> 00:15:17,639
+Bu daha böyle biraz daha kritik. İkisi de çok esasında dizayn zaten, yani ben bizimki de ağırım, diğer bizimler de öyle yani.
+
+128
+00:15:17,939 --> 00:15:23,919
+Tasarım oldukça problemli veya zor, biraz tecrübe gerektiriyor yani.
+
+129
+00:15:24,299 --> 00:15:27,579
+Hani ufak bir fonksiyon bir program yazmak gibi değil yani.
+
+130
+00:15:27,679 --> 00:15:34,419
+Çünkü bir ağacın çekirdeği gibi, yani bütün ağacın meyvelerine o çekirdeğe bakıyor yani.
+
+131
+00:15:34,419 --> 00:15:54,119
+O şekilde boğdukta menüler de boğduk olacak. O yüzden ilk adımı atıyoruz burada. Bundan sonra veritabanı kullanılması süreli içerisinde belki senelerde kullanılacak. O zaman çok performanslı bir veritabanı olmayacak. Zaten kullanılmayacağız o zaman sonra.
+
+132
+00:15:54,528 --> 00:16:05,048
+Ama bizim buradaki böyle veritabanlarımız, yani bu üniversitede bir proje yaparken, hani tek kişilik bir projelerde bu çoğu zaman biraz daha prototip oluyor.
+
+133
+00:16:05,348 --> 00:16:08,668
+Üniversite veritabanımız da böyle, yani bunu tek başına yapabiliriz.
+
+134
+00:16:08,728 --> 00:16:18,528
+Ama gerçek bir, gerçek hayatta bir veritabanın tasarımı, yani geleneksel, ilişkisel model tarzında diyelim, yani tek kişinin yapacağı bir şey değil.
+
+135
+00:16:18,528 --> 00:16:22,528
+Çünkü bu küçük dünyadaki roller kimlerse...
+
+136
+00:16:22,528 --> 00:16:34,668
+Onlarla bir irtibat bulmak gerekiyor. Yani sizin istediğiniz nedir? Hangi veriyi istiyorsunuz? Şimdi üniversiteyi biliyoruz. Üniversitede neler oluyor? Hepimiz sayabiliriz. Bunlar bunlar oluyor.
+
+137
+00:16:34,668 --> 00:16:37,807
+Biraz da söylediğin şeyler detaylandırabiliriz daha da bize.
+
+138
+00:16:38,868 --> 00:16:49,188
+Ama şimdi başka bir küçük dünyaya gittiğimiz zaman öğrenmem lazım bu dünyayı. Burada neler var, kimler ne yapacak, kurmalıcılar kimler, hangi veriler var, ne yapacaklar falan gibi.
+
+139
+00:16:49,188 --> 00:16:58,088
+O yüzden böyle bir ekip çalışması, o profillerle bir irtibat gerektiriyor ve geri beslemeli bir şey belki, bir noktada geri beslemeli.
+
+140
+00:16:59,128 --> 00:17:03,788
+Çünkü daha da ileri gitmeden problem, onu bir şekilde izler etmem gerektiriyor.
+
+141
+00:17:05,135 --> 00:17:16,915
+Bu, tabii, logical design esasında biraz daha, öyle, kritik. Yani, çünkü, physical design, physical design ise, physical design, bu biz tablolarımız oluşturduk.
+
+142
+00:17:16,915 --> 00:17:23,235
+İlişkisel model, kavramsat basarımız, ilişkisel model tablolarımız oluşturduk, veriyi yükledik, artık böyle, hayata geçti veri tabanımız.
+
+143
+00:17:23,315 --> 00:17:29,215
+Soğukluğa alakalı falan, ne güzel. Bir tane de application, web uygulaması olabilir, her neyse.
+
+144
+00:17:30,275 --> 00:17:32,915
+Bu, physical design ise, dosyalarımız...
+
+145
+00:17:33,135 --> 00:18:00,415
+Bu işlem model tablolarına bakıyoruz. Bu işlem model tablolarımızın makinedeki yansımaları nedir? Her bir tablo makinede bu bir tabanı diskte olduğu için diskte bir dosyaya saklanıyor. Acaba o dosyanın kişi nedir? Binary dosya o zaman, her zaman belki. Ama o binary dosyaların da farklı şekil için olması var.
+
+146
+00:18:01,135 --> 00:18:03,776
+İndeks dosyaları var.
+
+147
+00:18:03,875 --> 00:18:05,735
+D-plastri, D-plastri, D-plastri.
+
+148
+00:18:06,735 --> 00:18:12,895
+Mesela Diktada da farklı veri platformlarında farklı formatlar var.
+
+149
+00:18:12,995 --> 00:18:16,355
+Calum, Oriented, Parku, Avro.
+
+150
+00:18:16,695 --> 00:18:18,495
+Böyle bir sürü dosyatı var.
+
+151
+00:18:18,596 --> 00:18:19,855
+Açılın hani physical design.
+
+152
+00:18:19,855 --> 00:18:23,851
+Yani bu veri tabanının saklandığı o...
+
+153
+00:18:23,892 --> 00:18:31,852
+donanım ortamındaki bizim dosyetleri neler ve burada nasıl veri yapıları kullanılıyor?
+
+154
+00:18:32,307 --> 00:18:42,927
+Burada da aklınıza gelmesi gereken B++3 var, WorldStrike, Nelstriği var, MSM, Novakistar Veri Kamallarında, Büyük Veri Sistemlerinde kullanılan,
+
+155
+00:18:43,367 --> 00:18:50,248
+da Udosya organizasyonları var. Bunlar hepsi çok önemli.
+
+156
+00:18:50,407 --> 00:18:55,187
+Gerçek zamanlı kullanılması, gerçek zamanlı kullanılması. Ne demek?
+
+157
+00:18:55,788 --> 00:18:57,807
+Yani bir sorgu kendiliğe hemen cevabı geliyor.
+
+158
+00:18:58,675 --> 00:19:05,995
+Yani bir sorumluluk yönlerini işlemi postele gelmiyorlar yani. Herkes aynı zamanda bunu kullanıyor.
+
+159
+00:19:05,995 --> 00:19:11,235
+Ki bunun böyle olmasına imkan sağlayan arkada böyle algoritmalar dönüyor.
+
+160
+00:19:11,235 --> 00:19:18,315
+Risk etaklı algoritmalar. Bir de daha tıklı birisi farklı formlarda böyle algoritmalar dönüyor.
+
+161
+00:19:18,420 --> 00:19:25,420
+Şimdi buradaki fiziksel dizayn çok önemli ama o biraz daha süre bilebiliyor.
+
+162
+00:19:25,420 --> 00:19:30,420
+Yani ne dedim? Bir plastik kullanıyorum.
+
+163
+00:19:30,420 --> 00:19:34,420
+Bir yerde bir zaman peşin test kullandım. Tamam bir plastik kullanıyorum.
+
+164
+00:19:34,420 --> 00:19:39,420
+Şimdi RSM kullanıyorum. Bu geçişler daha esnek yani.
+
+165
+00:19:39,420 --> 00:19:43,420
+Ama logical dizayn da biraz daha kolay değil.
+
+166
+00:19:43,420 --> 00:19:46,420
+Biraz geri besleneler dedim ama...
+
+167
+00:19:46,420 --> 00:19:54,000
+geri tabanını böyle kimsenin kullandığı konu, hadi şimdi tabloyu değiştireceğim şamasını, biraz daha zor bir şey yani.
+
+168
+00:19:54,000 --> 00:19:58,000
+O yüzden daha kritik esasında, böyle bir kızdan daha...
+
+169
+00:19:58,000 --> 00:20:00,000
+Bir de işin...
+
+170
+00:20:00,000 --> 00:20:12,659
+Çünkü, yani, daha da zor rastıran, bir yakın böyle, esasta, bu tasarım için. Yani, bizim dersimizin, bunun böyle, video düzenleri bu arada, video düzenleri, şimdi aşama olarak bahsettim.
+
+171
+00:20:14,079 --> 00:20:27,699
+Yani, bu, physical independence'dan kaynaklanıyor. Yani, physical alt tarafta, ben, neyi değiştirirsem değiştireyim, uygulamalar değişmiyor. Yani, uygulama, o veri tabanını kullanan şekli.
+
+172
+00:20:28,000 --> 00:20:32,399
+Değişmiyor. Bu, Digital Data Independence sayesinde böyle yani.
+
+173
+00:20:33,119 --> 00:20:37,979
+İşte, B-Plus'li kullanıyordum, Hatch kullandım. İşte, VSM kullanıyordum, işte, farklı şey kullandım.
+
+174
+00:20:38,079 --> 00:20:41,959
+Bu, sadece performansa arttırıyor. Tune ediyoruz yani, veri taban.
+
+175
+00:20:42,019 --> 00:20:50,979
+Ama, Döjgül Design, dersimizin konusu, Döjgül Design'de baştan yaptığım o tasarımda, böyle, çok esnek değil yani.
+
+176
+00:20:51,079 --> 00:20:55,959
+Hani, hadi değiştireyim, işlemayı değiştireyim. İşte, o esneklik, biraz ilişkisel modelde katı olduğu için zaten.
+
+177
+00:20:56,000 --> 00:21:14,839
+No S.P.E.D.'in çıkış noktası da biraz bundan kaynaklanıyor. Biraz daha flexibil olsun. Çünkü gerçek hayat o kadar böyle üniversite küçük dünyası gibi katı değil yani. Öğrenciler, nitelikleri belli. Hocalar, nitelikleri belli, dersler belli. Yani bu da her şey biraz daha deterministlik yani değil mi? İşte çok güzel yürüyor.
+
+178
+00:21:24,000 --> 00:21:35,439
+Gerçek hayatı böyle her şey, değil mi? Bu üniversitedeki, dünya gibi, strikt değil yani öyle. Yani içerikler skadar olacak. Orada içerikleri böyle olacak. Yani çok uygulama var.
+
+179
+00:21:36,359 --> 00:21:46,779
+Böyle gerçek dünyada. Flexible bir şemaya ihtiyaç duyan. Değil mi? Bunu çok örnekler verebiliriz. Yani işte bir sosyal medya platformlarındaki verilere bakın mesela.
+
+180
+00:21:51,700 --> 00:22:02,140
+Ticaret uygulamasında, film video uygulamasında, filmi izleyenler bir rating veriyorlar oraya. Onamızı saklanıyor yani.
+
+181
+00:22:02,448 --> 00:22:06,988
+O filmlerin özellikleri farklı farklı bir türener olabilir.
+
+182
+00:22:07,508 --> 00:22:13,188
+Elektronik ticaret sitesinde her gün için farklı nitelik setleri olabilir.
+
+183
+00:22:13,628 --> 00:22:15,708
+Her şeyi çok geniş yani.
+
+184
+00:22:16,088 --> 00:22:21,128
+Alışveriş noktasına bakıldığı zaman o küçük dünyada çok tesletlik gerektiriyor yani.
+
+185
+00:22:21,688 --> 00:22:29,008
+Ama banko uygulamaları, bizim üniversiteleri zamanı ve muhasebeleri zamanında ihtiyaçlarından beri çok net yani.
+
+186
+00:22:29,008 --> 00:22:30,448
+Biraz daha net.
+
+187
+00:22:30,448 --> 00:22:42,448
+O yüzden ilişkisel modeli oraya çok daha uygun. Nereden geldik buraya? Logical Design'da, demek ki böyle geleneksel, ilişkisel model tasarımı noktasında, ki bu da çok önemli yani,
+
+188
+00:22:42,728 --> 00:22:51,588
+şimdi bizde, yani, no SQL ne kadar yaygın da olsa, SQL sistemleri, yani şey, endüstrinin %70-80'ini hakim gene yani.
+
+189
+00:22:51,588 --> 00:22:57,408
+Yani, legasi olmaları noktasında, legasi olması, legasi terimesi ne demek?
+
+190
+00:22:58,448 --> 00:23:06,068
+Bir şey var, yapı var. Hadi şimdi üniversiteye bir tane çıktı, bomba gibi, şurada çok iyi çalıştı, tamam, kaldıralım, bomba gibi tutuyor.
+
+191
+00:23:06,188 --> 00:23:10,368
+Bu geçişler çok kolay olmuyor. Bir sene bir adam onu kullanıyor, onu ortamda yetiş.
+
+192
+00:23:11,028 --> 00:23:18,168
+Sen orada şey yapsan, süper harikalar oluşturursan bizleri de bana, o geçişler çok kolay olmuyor.
+
+193
+00:23:18,648 --> 00:23:26,168
+Kaldı ki, kimse demiyor ki, 3-5 sene sonra, 2-5 sene sonra, 2-5 sene sonra bir sistemi kalmayacak ve bütün sistemler üniversite olacaktır.
+
+194
+00:23:26,448 --> 00:23:31,288
+İhtiyacı göre sistemin kullanılması söz konusu.
+
+195
+00:23:32,051 --> 00:23:56,051
+Dediğim gibi esnek şama, böyle çok böyle dağıtık veri noktalarında, NOASK'a sistemleri çok tabii daha tercih ediliyor yani. Yeni bir sistem kuruyorsa, NOASK'a sistemi o zaman kullanmak tercih ediyor. Bunlar ilgili liste çok uzun. Bakarsanız göreceksiniz. Çünkü ihtiyaca göre şekillendirilmiş birçok veri tabanı var. İlişkisel model o noktada çok katı oluyor yani.
+
+196
+00:23:56,564 --> 00:24:16,944
+İlişkisel model, logical design'daki problem, bir takım böyle dizaynın, tasarımın kötü olmaması için bir takım esaslar var maddeler halinde. Bunları göreceğiz ileride. Tamam, bunları riayet ettik ama bu seferde problem, good design, yani iyi tasarım çok farklı olabilir.
+
+197
+00:24:17,344 --> 00:24:42,783
+Yani üç beş tane, on tane farklı iyi tasarımlar olabilir. Hangisini seçildi? Hangi yoldan yöntemizde? Bu tabi ileride de performansı biraz etkiliyor yani. Tamam, benim dizayn olmadı ama bu dizaynın alternatifi de oldukça çok. Bu da tabi şöyle bir ifade geçiyor. Yani belki bu katılımda sonra geçiyordur. Yani böyle hem science hem de art.
+
+198
+00:24:43,220 --> 00:24:53,759
+Ne demek istiyoruz? Yani tamam, bazı böyle mühendisliği noktasında, bazı esaslar var ama bir yere kadar, biraz da böyle bir meleke tasarımı yapmak, biraz da bir tecrübe diye.
+
+199
+00:24:53,759 --> 00:24:54,720
+Haydi bir şey.
+
+200
+00:24:56,000 --> 00:24:59,339
+Çünkü bu böyle kısım kurallarımız yok.
+
+201
+00:25:00,500 --> 00:25:05,799
+Şimdi buradaki designing, şurada, evet, hatırlıyorum bir şey var mı?
+
+202
+00:25:06,483 --> 00:25:08,604
+Yok, an altlarıyla bahsediyoruz burada.
+
+203
+00:25:09,324 --> 00:25:16,243
+In designing a database, we must ensure that we avoid two major pitfalls.
+
+204
+00:25:16,344 --> 00:25:20,263
+İşte burada bazı esaslar var dedik ya, redundancy incompleteness.
+
+205
+00:25:20,263 --> 00:25:32,183
+Yani istenilen şeyler, tabanın tasarımında, yaptığım o tasarımda bazı bilgiler birden çok kez tekrar etmesi tırtlı olması olabilir.
+
+206
+00:25:32,948 --> 00:25:39,768
+O yüzden tabloları böyle parçalamamız gerekiyor. Aksi takdirde de o bilgi çok tekrar edecek.
+
+207
+00:25:40,276 --> 00:25:49,516
+Buna Redound ancilli diyoruz. O Redound ancilli biz tasarım yaptıktan sonra geri beslemeyle onu test edip azaltmamız gerekiyor, azaltabiliriz.
+
+208
+00:25:49,516 --> 00:25:56,556
+Tabi daha çok böyle bu esasdan bile daha büyük veri tabanı tasarımlarında daha çok karşılığı çıkıyor yani.
+
+209
+00:25:56,556 --> 00:26:01,836
+Şimdi buradaki örnek veri tabanımızda da yine birkaç örnekte bunu açıklayabilir elbette.
+
+210
+00:26:08,276 --> 00:26:31,336
+impossible model. Yani o küçük dünyada istenilen her şeyi böyle tam aktaramayabiliriz yani. Ve aktarmamıza gerekmiyor. Yani öyle işte biraz böyle bunu verim modeline değil de onu functional olarak yapabiliriz. Yapmamız daha uygun olabilir. Evet.
+
+211
+00:27:28,019 --> 00:27:34,240
+Burada üniversite veri tabanına geç bize yer yok.
+
+212
+00:27:42,291 --> 00:27:56,171
+Evet. Şimdi ER modeli, ER modelimiz içerisinde, yani burada kadansal tasarımda kullanacağımız model, şey dediğim gibi biraz önce ER modeli.
+
+213
+00:27:56,531 --> 00:28:07,311
+Buradaki her bir varlık, böyle entitylerle ve o varlıkların, yani entitylerin, böyle bir takım özelliklerin, çelikleri olacak.
+
+214
+00:28:10,228 --> 00:28:15,508
+Mübarisların bir dünya ile olan bağıntıları ile ilgili bazı bağıntılar çalışacağız.
+
+215
+00:28:15,748 --> 00:28:20,008
+Yani bu, ödüzüm dediğim gibi, genelde yüklem olan şeyler, biz bağıntıyı hasta getireceğiz.
+
+216
+00:28:21,940 --> 00:28:29,259
+İşte buna Entity Relationship Diagram diyeceğiz veya Extended Entity Relationship Diagram diyeceğiz.
+
+217
+00:28:29,259 --> 00:28:35,099
+İşte bu tasarım yaptıktan sonra da bir takım normalizasyon kurallarıyla burada bir tuning yapacağız.
+
+218
+00:28:35,319 --> 00:28:43,079
+Yani data integrity, veri bütünlüğünün daha isabetli, daha doğru olması için, verinin veri kaybı olmaması için.
+
+219
+00:28:43,220 --> 00:28:45,099
+Yani bir tasarım yapıyoruz, veri kaybı olabilir.
+
+220
+00:28:45,819 --> 00:28:47,919
+Enteresan bir soru yani nasıl veri kaybı olur?
+
+221
+00:28:48,208 --> 00:29:00,648
+Veya işte tam istediğimiz gibi yapamayabiliriz. Yani o kısık dünyanın gereksinimini sağlayamayabiliriz. Yani o yaptığım tablo tasarımıyla. Bunlarla ilgili çarpıcı örnekler var.
+
+222
+00:29:00,648 --> 00:29:05,988
+Oradan yola çıkarak normalizasyonundan bahsedelim. Şimdi biraz daha basit şeylerden bahsedelim.
+
+223
+00:29:06,928 --> 00:29:15,148
+Şimdi, Database Design Enterprise Şama, Deadly Pills, and the Overall Logical Structure of a Database.
+
+224
+00:29:15,539 --> 00:29:41,700
+ER diyagramında entity setlerimiz var, relationship setlerimiz var ve attributelerimiz var. Yani varlık setleri. Bir varlık, o varlığa, varlıkla aynı, benzer niteliklere sahip olan bir varlık seti var. Set ne demekti? Set, partında da set tanımlıyoruz. Yani benzersiz elemanlardan olup set, o manada. O yüzden demek ki bir key olması lazım.
+
+225
+00:29:43,539 --> 00:29:58,279
+Bundan bahsettikten dönemde. Gene relationship setler, gene orada da relationship bağıntı, yani iki varlığın birbiriyle arasında olan bir bağıntı seti. O bağıntı setinin de nitelikleri var. Onun da nitelikleri olabilir.
+
+226
+00:30:00,000 --> 00:30:13,940
+Bunların farklı çeşitleri var. Attribütler, işte mouse, value, compositivive, derivative var. Entry setlerin weak olması var, strong olması var falan. Relationship setlerinin de yine kardinal itisi var.
+
+227
+00:30:14,039 --> 00:30:25,960
+Bile delik, bile enenlik, enenlik falan, total participation gibi. Böyle bunların çeşitleri var. Ama ana hatlarıyla böyle diğer diyagramı dediğimiz zaman entrysiler, relationshipler ve attributeler var.
+
+228
+00:30:28,000 --> 00:30:30,639
+İstikten sonra bunu biz tablolara dönüştürüz.
+
+229
+00:30:32,276 --> 00:30:45,395
+Evet, entity setler, bizim örnek olarak, entity dediğimiz zaman, bu bir tek individual, tek bir kişi, yani person, student, instructor, tek bir satır.
+
+230
+00:30:45,596 --> 00:30:53,216
+Fiziksel olarak, tablodaki bir satır yani, değil mi? Entity, ona denk geliyor.
+
+231
+00:30:53,816 --> 00:30:55,875
+Biraz daha tumultu olması noktasında.
+
+232
+00:31:00,276 --> 00:31:08,276
+Bir şey'e karşılık geliyor. Veya, müştana kadar üzerine çalıştığınız bir tabloya karşılık geliyor. Instractive tablo. Dedik işte o NF, set.
+
+233
+00:31:08,276 --> 00:31:20,276
+E, karnımasaları düşündüğün zaman da aynı bitiriklere sahip olacak olan artık o kişiler, individual değil de artık o kişilerden oluşan bir set hakkında geliyor. Instractive NF, seti mesela.
+
+234
+00:31:21,395 --> 00:31:34,995
+Bunların nitelikleri aynı. İşte burada Instructor, ID, Name, Salary, Course'da da mesela Course ID, Item, Credits. Demek ki bunlar bu niteliklere sahip olan bir Entity Set.
+
+235
+00:31:41,748 --> 00:31:53,788
+Unically Identified, each number of the set. Adem set diyoruz, o seti uniquely identify edecek bir nitelik veya nitelik vurguna ihtiyacımız var. Onlara da anahtar diyoruz.
+
+236
+00:31:54,516 --> 00:32:02,915
+Prime ID 2 biraz daha özel bir kelime. Yani böyle key'ler olabilir, candidate key'ler olabilir.
+
+237
+00:32:02,915 --> 00:32:09,516
+Unically identify' eden key'ler olabilir. Onlardan arasında yapılan seçim olmuş oluyor.
+
+238
+00:32:09,516 --> 00:32:17,016
+Yani o veritabını tasarlayan admin veya tasarımı yapan designer, orada o Prime ID 2'nin seçmesi oluyor.
+
+239
+00:32:17,016 --> 00:32:19,516
+Prime ID 2 bir tane olacak değil yani.
+
+240
+00:32:20,180 --> 00:32:25,180
+Bir primary key bir tane ama key bir tane olmayamıyorsa, çok key olarak ödü, kendi de key ile.
+
+241
+00:32:25,180 --> 00:32:28,180
+Bunun tanımını daha önce yapmıştık herhalde.
+
+242
+00:32:28,180 --> 00:32:30,180
+Şimdi biraz daha detaylanacak yani.
+
+243
+00:32:30,180 --> 00:32:34,180
+Çünkü fonksiyonel bağımlılıklar da bunları kullanacağım.
+
+244
+00:32:34,180 --> 00:32:38,180
+Evet, burada iki tane entity set görüyoruz.
+
+245
+00:32:38,180 --> 00:32:42,180
+Instructor entity seti, sağ tarafta da student.
+
+246
+00:32:43,407 --> 00:32:45,867
+Teknik satıra baktığınız zaman onlar da entitir.
+
+247
+00:32:45,867 --> 00:32:47,527
+Yani kavramlar oldukça açık.
+
+248
+00:32:49,527 --> 00:32:52,407
+Diğer diagrama olarak bunların karşılığı
+
+249
+00:32:52,407 --> 00:32:55,207
+böyle bir dikdörtgen.
+
+250
+00:32:55,747 --> 00:32:57,987
+Dikdörtgenin başlığı var.
+
+251
+00:32:58,567 --> 00:33:00,288
+Ve altta da nitelikler var.
+
+252
+00:33:00,667 --> 00:33:03,667
+Bu niteliklerin de altı çizili olanlar
+
+253
+00:33:03,667 --> 00:33:04,807
+primelikleri oluyor.
+
+254
+00:33:05,307 --> 00:33:06,847
+Oldukça açık herhalde.
+
+255
+00:33:07,267 --> 00:33:09,667
+Underline Indicates, primelikleri de tutturuluyor.
+
+256
+00:33:10,007 --> 00:33:11,387
+Yani bu seçimi daha kavramsat.
+
+257
+00:33:11,407 --> 00:33:23,587
+tasarımda, ER diyagramında bunu yapıyorum. Instructorlar, hangi nitelikleri, yani bunu soruyorum, oksijmiye kalamıyorsam. Burada hocalarla ilgili hangi nitelikleri görmek istiyorsunuz? Hangi nitelikleri takmamışsın?
+
+258
+00:36:35,380 --> 00:36:38,300
+Slide görünüyor değil mi? ER model.
+
+259
+00:36:38,820 --> 00:36:40,659
+Bu slide göründü değil mi?
+
+260
+00:36:40,659 --> 00:36:43,380
+Burada, slide'ı gizli diye gidiyor.
+
+261
+00:36:44,980 --> 00:36:46,980
+Ha, orada gizli. Tamam.
+
+262
+00:36:48,180 --> 00:36:49,180
+Evet.
+
+263
+00:36:50,020 --> 00:36:54,779
+İşte burada bir Advisor Ration Seti gözüküyor bu seferde.
+
+264
+00:36:54,779 --> 00:36:59,020
+Set olunca, her bir binary olduğu için her bir ikili
+
+265
+00:36:59,251 --> 00:37:11,731
+İkilinin ikili instansı gözüküyor. Yani KRIK, KANAKA'nın advisorıymış. KAS, hem ŞANKAR'ın hem ZANG'ın advisorıymış.
+
+266
+00:37:11,731 --> 00:37:18,072
+Yani, bu şekilde bunu canlandırabiliriz.
+
+267
+00:37:27,987 --> 00:37:32,387
+Şimdi bu, karaksal olarak belli olmakla beraber ER diyagramında
+
+268
+00:37:52,788 --> 00:38:00,328
+Diğer diagramında relationshipleri bu şekilde, varlık seti bu şekilde, varlık setinin ismi işte bunları söyledik.
+
+269
+00:38:00,668 --> 00:38:07,948
+İkisi arasında böyle bir diamond ile bu diamond relationship bağıntıyı ifade ediyor.
+
+270
+00:38:13,427 --> 00:38:25,887
+Buradaki relationship setin bir takım bazı özellikleri olabilir. Mesela date özelliği var burada. Kavramsal olarak böyle, ER diyagramında da bu şekilde ifade ediyoruz.
+
+271
+00:38:25,887 --> 00:38:41,427
+Kavramsal olarak her bir bağıntının, yani Crick'ın Tanaka'yı advice etmesi, advice etmeye başladığı tarih olabilir. Ne olacak başka? 2008-3 Mayıs'ta imzal.
+
+272
+00:38:41,427 --> 00:39:05,927
+Bu şekilde, şu, şurada da işte, farklı iki bağıntı için farklı nitelikler var. Yani aynı hoca, Kats'ın Şankar'ı, Advise etmesi şu tarihte, zangı şey yapması bu tarihte gibi. Demek ki, nasıl varlık setlerimizin böyle nitelikleri oluyor, ID, NAME gibi. O zaman şu relationship seti de,
+
+273
+00:39:06,224 --> 00:39:15,224
+birden çok varlıktan gelen bilgilerin toplandığı o entity'nin de bazı nitelikleri olacak.
+
+274
+00:39:15,224 --> 00:39:22,224
+Burada date gibi mesela. İşte bunun ER diyagramındaki karşılığı da bu şekilde nokta noktayla bağlanıp gene dikdörtgen.
+
+275
+00:39:22,224 --> 00:39:27,224
+Fakat dikdörtgenin işte böyle şu şekilde değil yani anladın.
+
+276
+00:39:27,224 --> 00:39:32,224
+Refah dökme, şöyle gerek yok. Bu şekilde ifade ediyoruz.
+
+277
+00:39:33,523 --> 00:39:59,664
+Burada bir de bağıntıların içerisinde rol tanımı olabilir. Burada tabii binary de veya turner'i de bizden çok şey olduğu zaman bu oldukça açık. Yani burada bu bağıntı içerisinde instructor ve daha student arasında olduğu için bu instructor rolünde birisi. Bu da student rolünde. Yani rol biraz daha oradaki semantiyi açığa çıkartıyor.
+
+278
+00:40:00,436 --> 00:40:25,036
+diye bir ifadeyle. Ama bazı böyle bağıntılar recursive oluyor. Yani burada course, gene course ile bağıntı içerisinde. Nasıl olabilir? Bir course'un, sadece bu tabloyu disinelim mesela, course'un ID'si, title'ı, krediti. Ve bu course'un da alt koşulları, recursive course'ları olabilir.
+
+279
+00:40:25,907 --> 00:40:45,927
+Yani bir dersin prerequisite courselarını da saklamak istiyoruz. O zaman burada yine bir fiil var, fiil okusu var yani diğer bir ifadeyle. Bir dersin ön koşullarını da saklamak istiyoruz. Dersin ön koşulları var. Ön koşulları da yine bir ders. O zaman da bir bağıntı var.
+
+280
+00:40:47,387 --> 00:40:53,427
+İşte bu bağıntıyı şu şekilde ifade ediyoruz. Bu sefer de bu bağıntıda rolleri tanımlamam lazım.
+
+281
+00:40:53,844 --> 00:41:01,743
+Çünkü, işte, aynı etrafa,
+
+282
+00:41:26,612 --> 00:41:28,612
+Bu nedenle, bu bölümünün bir bölümünü arayacak.
+
+283
+00:41:28,612 --> 00:41:32,612
+Bu bölümünün bir bölümünü arayacak.
+
+284
+00:41:32,612 --> 00:41:36,612
+Ama bu bölümünün bir bölümünü arayacak.
+
+285
+00:41:36,612 --> 00:41:39,612
+Bu bölümünün bir bölümünü arayacak.
+
+286
+00:41:39,612 --> 00:41:40,612
+Evet.
+
+287
+00:42:37,300 --> 00:42:48,300
+Bu da bir öğrenci, bir soru gibi, bir soru gibi, bir soru gibi, bir soru gibi soruyor.
+
+288
+00:42:48,300 --> 00:42:51,300
+Bir soru gibi soruyor. Bir soru gibi soruyor.
+
+289
+00:42:51,300 --> 00:42:56,300
+Yine aynı öğrenci, bir soru gibi soruyor. Başka bir soru gibi soruyor.
+
+290
+00:42:56,300 --> 00:43:00,300
+Bu zaman, bu soru gibi soruyor.
+
+291
+00:44:38,867 --> 00:44:45,867
+Bu da bir mesela, T1 projesini çalışıyoruz. Yine T1, T1 projesini çalışıyoruz.
+
+292
+00:44:45,867 --> 00:44:48,867
+Sizdeki bu anda ben en kolay bir sözü değil.
+
+293
+00:44:48,867 --> 00:44:53,867
+T1'in öğrenci, T1 projesini, T1'in gençliğe çalışıyoruz.
+
+294
+00:44:53,867 --> 00:45:00,867
+Yine T1'in danışmanı, T1'in danışmanı, T1'in danışmanı, T1'in, burada da bu bilis aslında.
+
+295
+00:46:39,668 --> 00:46:43,668
+Bu, ben senin böyle yazılma yaparızı dedim, o zaten çok daha çeker.
+
+296
+00:47:05,427 --> 00:47:12,427
+Yönetimi derslerle bu bölgelerden çalıştılar.
+
+297
+00:49:40,371 --> 00:49:41,371
+Evet.
+
+298
+00:51:36,916 --> 00:51:38,916
+Bunun yan yagrı, nasıl bir şekilde?
+
+299
+00:53:22,387 --> 00:53:23,967
+Onlar gibi öyle, bir diğer kişilik.
+
+300
+00:53:24,487 --> 00:53:27,087
+Evet.
+
+301
+00:55:34,228 --> 00:55:41,668
+Bu tür kendi başına kolay etsin belki ama birazcık
+
+302
+00:56:23,860 --> 00:56:26,760
+Bu nedenle bu gibi fark etkileşecek bir yorumlar.
+
+303
+00:56:26,760 --> 00:56:32,652
+Bu nedenle bu ağa bağlı bir sesimizin takipçi bu şu an üzerinde...
+
+304
+00:56:44,980 --> 00:56:55,460
+Bu bir şey.
+
+305
+00:58:02,195 --> 00:58:12,195
+Bu arada, bu da olabilir, sammet olabilir ama o zaman o bağımsı içerisinde, birkaç etersiz olacağı, kendini belirlemiyor yani.
+
+306
+00:58:12,195 --> 00:58:14,195
+O, çok semantik tercih.
+
+307
+00:58:15,195 --> 00:58:17,195
+Evet, burada da çok...
+
+308
+01:03:38,003 --> 01:03:41,003
+Yine sizlere sevdimler, sizinle söyleşinle.
+
+309
+01:03:41,003 --> 01:03:43,003
+Ama yani o kadar ki,
+
+310
+01:03:43,003 --> 01:03:45,003
+ben buradan ilgili bir şey yok.
+
+311
+01:03:45,003 --> 01:03:47,003
+Çok çok farklı değil.
+
+312
+01:03:47,003 --> 01:03:48,003
+Ama başka bir,
+
+313
+01:04:48,563 --> 01:04:56,556
+Bu, cihaz esasında kaliteli olan ama nedense...
+
+314
+01:05:42,356 --> 01:05:43,736
+Evet, bunu da yerler.
+
+315
+01:06:41,652 --> 01:06:51,652
+İstiklilikleri çok öğrenci olabilir.
+
+316
+01:06:51,652 --> 01:06:55,652
+Ama bazı işaretçilerin kişilerin sorun ne bilir?
+
+317
+01:06:55,652 --> 01:07:01,652
+Bu, bu kişinin bir öğrenci bu kadar kişilikleri çok anlayalım.
+
+318
+01:07:01,652 --> 01:07:05,652
+Biz de ok hikayesi olacak.
+
+319
+01:09:46,739 --> 01:09:52,139
+Andres'in, İtlantivide, en fazla ziyaret varolucu gibi bir video.
+
+320
+01:09:53,940 --> 01:09:57,440
+Bir tane varolucu, iki tane varolucu gibi bir video.
+
+321
+01:09:57,440 --> 01:09:59,539
+Bir tane varolucu gibi bir video.
+
+322
+01:09:59,539 --> 01:10:03,840
+Bir tane varolucu gibi bir video. Ama, böyle bir tane varolucu gibi bir video.
+
+323
+01:11:56,564 --> 01:11:58,564
+Ben de ben deyim.
+
+324
+01:11:58,564 --> 01:12:30,615
+Ben deyim.
+
+325
+01:12:07,891 --> 01:12:09,891
+Neyden bir değer değil.
+
+326
+01:12:09,891 --> 01:12:13,891
+Bir de size bir tekte neyden bir şey değil.
+
+327
+01:12:13,891 --> 01:12:19,891
+Ve hiç değer değer sizinle bir şey değil.
+
+328
+01:12:19,891 --> 01:12:21,891
+Bu da olabilir diyor.
+
+329
+01:12:21,891 --> 01:12:25,891
+Yani bir halde görelim.
+
+330
+01:12:25,891 --> 01:12:27,891
+Değerliyle ortaya tutar.
+
+331
+01:12:27,891 --> 01:12:29,891
+Bir zaman ağzını yapıp göremez.
+
+332
+01:12:29,891 --> 01:12:31,891
+Göremez diye. Yani böyle bir şey oldu.
+
+333
+01:13:10,452 --> 01:13:20,748
+ve bu
+
+334
+01:13:33,108 --> 01:13:59,756
+Bu, bu
+
+335
+01:14:27,891 --> 01:14:33,891
+ve hep koku olarak, hep koku olduğu zaman, bir de olmaz bu konuları oluşturulurlar.
+
+336
+01:15:17,524 --> 01:15:21,784
+Şimdi gücüyü görmek lazım.
+
+337
+01:15:23,404 --> 01:15:23,584
+Evet.
+
+338
+01:15:24,864 --> 01:15:26,524
+Şimdi şu ana kadar gördüğünüz için,
+
+339
+01:15:27,264 --> 01:15:28,203
+kavramlarda,
+
+340
+01:15:28,384 --> 01:15:28,623
+yani,
+
+341
+01:15:29,724 --> 01:15:30,844
+Taduk şekeri olsun,
+
+342
+01:15:31,024 --> 01:15:32,504
+Türekli şekeri olsun,
+
+343
+01:15:32,864 --> 01:15:34,043
+Örnelekliler olsun.
+
+344
+01:15:34,043 --> 01:15:34,304
+Evet.
+
+345
+01:16:28,787 --> 01:16:31,347
+İngilizce bir ödentikli ver düşünüktedik.
+
+346
+01:16:33,667 --> 01:16:33,947
+Evet.
+
+347
+01:16:35,127 --> 01:16:36,927
+Ver de ödentikli ödentikli.
+
+348
+01:16:37,427 --> 01:16:38,867
+Bizi bir ödentikli veren başlayın.
+
+349
+01:19:07,347 --> 01:19:10,007
+Bileciğinde burada bir tek karda.
+
+350
+01:19:10,007 --> 01:19:15,068
+Bileciğinde bir ağzı destek ama bileciğinde bir takip etkiler.
+
+351
+01:19:15,068 --> 01:19:24,667
+Yani bu müdür bir tek kısım için bunun veya bunun farkları
+
+352
+01:19:24,667 --> 01:19:28,347
+bir tek karda olacaktır.
+
+353
+01:19:28,347 --> 01:19:31,347
+Sen iyi oluruz, mesela.
+
+354
+01:19:31,347 --> 01:19:35,211
+Ama birerden bir en iyi noktalarım için.
+
+355
+01:19:37,779 --> 01:20:00,000
+Bu ağzın, bu ağzın ve ağzın, bu ağzın ve ağzın ve ağzın ve ağzın ve ağzın ve ağzın ve ağzın ve ağzın ve ağzın ve ağzın ve ağzın ve ağzın ve ağzın ve ağzın ve ağzın ve ağzın ve ağzın ve ağzın ve ağzın ve ağzın ve ağzın ve ağzın ve ağzın ve ağzın ve ağzın ve ağzın ve ağzın ve ağzın ve ağzın ve ağzın ve ağzın ve ağzın ve ağzın ve ağzın ve ağzın ve ağzın ve ağzın ve ağzın ve ağzın ve ağzın ve ağzın ve ağzın ve ağzın ve ağzın ve ağzın ve ağzın ve ağzın ve ağzın ve ağzın ve ağzın ve ağzın ve ağzın ve
+
+356
+01:20:24,243 --> 01:20:35,523
+İki taraftan ilgilenen, ilgilenmesinden verici, bu olmalı, kolinerizasyon, stek ve stek olabilen.
+
+357
+01:20:35,523 --> 01:20:43,804
+Eğitim, ne denemeyiz? Ne denemeyiz? Ne denemeyiz? O noktasını kullanalım, söylediler herhalde.
+
+358
+01:20:43,804 --> 01:20:49,683
+Bu ne denemeyiz? Bu da değeri, ancak ağzıyla ortaya çıkabilir.
+
+359
+01:20:52,595 --> 01:20:55,695
+Derevinden, artık sizlerle,
+
+360
+01:20:56,895 --> 01:21:00,995
+Erevin haricinde olan, ama adet, direkt olabilirsiniz.
+
+361
+01:21:01,995 --> 01:21:04,095
+Yani bu, bir fiklet içerisinde,
+
+362
+01:21:04,095 --> 01:21:05,775
+etkisinin bizim olması,
+
+363
+01:21:05,775 --> 01:21:07,055
+görebileceklerden de,
+
+364
+01:21:07,796 --> 01:21:09,995
+en olan taraf,
+
+365
+01:21:10,495 --> 01:21:12,095
+4G varlığı,
+
+366
+01:21:12,095 --> 01:21:15,695
+5G,
+
+367
+01:21:15,895 --> 01:21:16,795
+en olan taraf,
+
+368
+01:21:16,795 --> 01:21:17,996
+5G varlığı,
+
+369
+01:21:17,996 --> 01:21:19,996
+5G,
+
+370
+01:21:52,659 --> 01:21:59,659
+Evet, burası anlayışım olarak, buçukla çoğu önemli. Yani, karrahanı yoksa, buçukla çoğu doğru değil.
+
+371
+01:22:46,068 --> 01:22:49,068
+O program ortadan kaldı bir şey yok.
+
+372
+01:22:49,068 --> 01:22:52,068
+Yani bu arzaya bir de ortaya çıkıyor.
+
+373
+01:22:52,068 --> 01:22:58,068
+Ama sen okulduğun zaman acaba A-Maskelobe'yi istiyor yoksa arzaya ne?
+
+374
+01:22:58,068 --> 01:23:00,068
+A-D'ye bir şey yok diye.
+
+375
+01:23:01,068 --> 01:23:03,068
+Bu o zaman bu kadar.
+
+376
+01:23:03,068 --> 01:23:06,068
+Çünkü bu kadar kendi canlısı,
+
+377
+01:23:06,068 --> 01:23:09,068
+bu kadar, bu kadar, bu kadar aradık.
+
+378
+01:23:09,068 --> 01:23:12,000
+Bu kadar daha ne geçilendi?
+
+379
+01:23:19,475 --> 01:23:21,876
+Bu zaten biraz zor deriz şu an.
+
+380
+01:23:27,315 --> 01:23:30,235
+Evet, oraya tekrar geleceğiz.
+
+381
+01:23:30,515 --> 01:23:33,055
+Söyledik o Muğlahtır'ıma tekrar geleceğiz.
+
+382
+01:23:33,175 --> 01:23:35,716
+Düzünlerin de döneşini var, tabloların döneşini var.
+
+383
+01:23:35,876 --> 01:23:37,675
+Orada tekrar o da söyleyebiliriz.
+
+384
+01:23:38,235 --> 01:23:41,475
+Oradaki daha akademik bir soru, daha akademik bir soru.
+
+385
+01:23:42,275 --> 01:23:42,796
+Evet.
+
+386
+01:23:45,275 --> 01:23:45,956
+Saat geçeceğim.
+
+387
+01:24:18,195 --> 01:24:22,195
+Bu ders daha geçen hafta ismini yetkendi de.
+
+388
+01:24:22,195 --> 01:24:23,195
+Evet.
+
+389
+01:24:23,195 --> 01:24:26,195
+O zaman geç şu şekilde kaybetli olan.
+
+390
+01:24:26,195 --> 01:24:30,195
+Buna dolayı ama şu an közdeki ismini istedik.
+
+391
+01:24:30,195 --> 01:24:33,195
+Şuan köze girdim mi?
+
+392
+01:24:33,195 --> 01:24:34,195
+Girmedin mi?
+
+393
+01:24:34,195 --> 01:24:36,195
+Daha bulur musun?
+
+394
+01:24:36,195 --> 01:24:38,195
+Daha bulurum.
+
+395
+01:24:38,195 --> 01:24:39,195
+Zilin yapıldık.
+
+396
+01:24:39,195 --> 01:24:41,195
+Bir razet mektir, zilin yapıldık.
+
+397
+01:24:41,195 --> 01:24:45,195
+Yani onu sen, [öğrenci] ile yapıldık.
+
+398
+01:24:45,908 --> 01:24:49,148
+Bu organizasyonu.
+
+399
+01:24:49,148 --> 01:24:50,828
+Bu organizasyonu onun üzerinde.
+
+400
+01:24:51,387 --> 01:24:52,528
+Ben çok müdahale etmiyorum.
+
+401
+01:24:53,288 --> 01:24:55,028
+Anahtarıyla biliyorum ben olacağım ama
+
+402
+01:24:55,028 --> 01:24:56,688
+detayları onlarda.
+
+403
+01:24:59,268 --> 01:25:00,528
+Yok yapamadım.
+
+404
+01:25:00,628 --> 01:25:01,608
+İmraniyorum. Yapıldı mı?
+
+405
+01:25:03,427 --> 01:25:05,148
+Onlar laboratuvar yapıyor.
+
+406
+01:25:06,068 --> 01:25:07,307
+İki hafta sonra.
+
+407
+01:25:07,448 --> 01:25:08,328
+Alın daha belli olacak.
+
+408
+01:25:08,988 --> 01:25:10,028
+Sıralar ilan edecek.
+
+409
+01:37:36,692 --> 01:38:01,131
+Zayıf varlıklar. Burada bir tane örnek var. Bu örnekte, sectionlar ve course'lar arasında. Her dönemde derslerin birden çok section'a açılmasıyla ilgili. Üniversite ve itabanında derslerimiz course tablosu bu şekilde.
+
+410
+01:38:02,387 --> 01:38:11,268
+böyle, course, course ID, title, playlist, section ise, bir section tablosunda ise, sectionları da bu şekilde ifade edebiliriz.
+
+411
+01:38:11,988 --> 01:38:18,047
+Section, course ID, section ID, çünkü her diz dersin sectioni var, semester ve year'ı var.
+
+412
+01:38:18,047 --> 01:38:19,108
+Bu şekilde.
+
+413
+01:38:22,287 --> 01:38:47,887
+Buradaki section ile course arasında şöyle bir bağıntı kurabiliriz. Yani bire çoklu. Çünkü buradaki sectiondaki course'un daha detaylı bilgileri burada. Bu course ID. O zaman burada tekrar etmiş oluyor. Hem course ID burada var hem de burada olduğu için. O zaman bu course ID'yi çıkartmamız gerekiyor. Yani burada bir redundancy var.
+
+414
+01:38:48,307 --> 01:39:13,247
+Yani tasarımımızda ne dedik? Varlık setlerini oluşturuyoruz, bağıntıları kuruyoruz. Yani course tablosunu oluşturdum, section tablosunu oluşturdum. Course tablosunun nitelikler var, section'da bunun nitelikleri olacak. Section'ın course'u var, section'ın ID'si var, nitelik de var. Gidişat böyle. O zaman böyle bir manzara ortaya çıkıyor. Section ile course arasında da bir bağıma kurarsam.
+
+415
+01:39:14,452 --> 01:39:21,671
+Böyle olunca, şuradaki Cores ID, burada tekrar etmiş oluyor. O zaman onu çıkartayım.
+
+416
+01:39:22,251 --> 01:39:30,492
+Yani el yordamıyla, tasarımda, şey dediğim gibi, biraz dersin başında söylediğimiz gibi, 2x2-4 kurallar yok yani.
+
+417
+01:39:30,492 --> 01:39:38,492
+Hani keşke olsa, her şey böyle net olsa. İşte böyle bir noktaya vardığımız için bu tasarım sırasında, Cores ID'yi çıkartırsam da,
+
+418
+01:39:42,452 --> 01:39:55,652
+Section'de anahtarı kaybetmiş oluyoruz. Bu Section'de Course ID kalmış olsaydı anahtarın ne olacaktı? Course ID ve Section ID ikisi birden olacaktı. Yani Course ID tek başına olamazdı anahtar.
+
+419
+01:39:55,952 --> 01:40:08,532
+Section ID olamazdı. Course ID çıkınca Section ID tek başına olamaz. Çünkü her dersin Section'ları olabilir. Section ID tek başına anahtar olma özelliğini sağlamıyor.
+
+420
+01:40:08,884 --> 01:40:22,884
+İşte bu noktadan hareketle böyle bir tasarımda böyle bir noktaya varıyorsak eğer buradaki bu varlık setine zayıf diyoruz. Zayıf varlık. Bunun güçlüsü...
+
+421
+01:40:23,604 --> 01:40:43,644
+Şu şekilde bir notasyonla, identifying entity, yani o zayıf varlıkları, zayıf varlık setindeki zayıf varlıkları birbirinden ayırt etmek için güçlü bir varlığa, yani anahtarı olan güçlü bir varlığa bir bağıntı kuruyup, bu bağıntı da şu şekilde ifade ediliyor.
+
+422
+01:40:44,764 --> 01:40:47,244
+Ona identifying relation şık diyoruz. İşte burada.
+
+423
+01:40:48,243 --> 01:40:53,843
+Biraz önce dediğim gibi bu noktaya geldiğiniz zaman CoresID'i çıkardım.
+
+424
+01:40:53,843 --> 01:40:55,843
+Çünkü burada da var o CoresID.
+
+425
+01:40:55,843 --> 01:41:01,843
+Ve şuradaki seksyonda artık sadece bunlar var. Bunun zayıf olduğuna kanaat getirdim.
+
+426
+01:41:01,843 --> 01:41:09,443
+Çünkü bu nitelikler buradaki varlık setlerini birbirinden ayırt edemiyor. O zaman bunu güçlü bir varlığa bağladık.
+
+427
+01:41:10,771 --> 01:41:17,171
+Ve bağlantımızda da Identifying Relationship olduğunu da çift çizgiyle çiziyorum.
+
+428
+01:41:17,311 --> 01:41:27,131
+Yani hem zayıf varlık setini hem onun güçlüsüne ulaşmak için kullandığım bağıntı setini çift çizgiyle ifade ediyorum.
+
+429
+01:41:28,551 --> 01:41:35,351
+Şimdi bu tasarımın sırasında birçok defa karşıma çıkabilir ve bu esasında iyi bir şey.
+
+430
+01:41:35,351 --> 01:41:38,751
+Yani çünkü redundancy'den kurtulmak için böyle.
+
+431
+01:41:38,771 --> 01:41:46,192
+yapıyorum. Şuradaki redan nesliyi anladık. Böyle bir tasarımda böyle bir şey ortaya çıktı. Redan nesli problemi var.
+
+432
+01:41:47,471 --> 01:42:01,211
+Ve bundan kurtulmak için de şöyle bir yol oldu. Aksi takdirde, hani, ilişkisel olarak diğer uç noktaya gidelim. Yani bu dosyalar, bunlar nihayetinde, şey, primary key olacak.
+
+433
+01:42:06,228 --> 01:42:26,807
+Fiziksel olarak konuşuyoruz. İki dosyada da primary key olması ve o kısıtların sağlanması var. Bir de şurada bir tane primary key olması var. Şurada bu primary key kısıtı altında şunların distinguish edilmesi var. Yani burada fiziksel olarak da yükümüz biraz daha hafifledi yani esasında.
+
+434
+01:42:34,228 --> 01:43:01,899
+tasarım oldu. Bu çıkarımları yapabiliriz esasında. Şimdi bu burada onun güçlü bir şey, bu identifying relationship ile güçlü bir varlığa bağlandığım zaman her bir course'un içerisinde şurada bu seti ayırt etmek için acaba hangi niteliklere ihtiyacım var? Her bir güçlü bir varlık altındaki
+
+435
+01:43:01,939 --> 01:43:11,339
+Şuradaki bir varlık setinden, güçlü bir varlık altındaki, şuradaki bu setin elemanlarını nasıl ayırt edebilirim?
+
+436
+01:43:11,339 --> 01:43:14,339
+Section ID yeterli değil gene.
+
+437
+01:43:14,339 --> 01:43:18,339
+Çünkü o course'un...
+
+438
+01:43:18,579 --> 01:43:29,060
+Section ID'si her dönem değişmiyor. Bu dönem 1, 2, 3Section'lar açıldı. Bahar yarı yılında yine 1, 2, 3Section'lar açılacak.
+
+439
+01:43:29,200 --> 01:43:37,880
+Yani Section ID yine yeterli değil. Bu güçlü bir varlık altında Section ID yeterli değil.
+
+440
+01:43:38,000 --> 01:43:40,720
+Section ID semester yine yeterli değil.
+
+441
+01:43:41,152 --> 01:43:54,912
+Çünkü 2024'ün birinci semestri, yani güç semestri diyelim, yine 2025'in de güç, 2025 başka seneye gittiğin zaman da yine güç semestrinde 1-2-3 açılacak. Yine ikisi birden yeterli değil.
+
+442
+01:43:55,252 --> 01:44:02,412
+O zaman burada da yine bunları ayırt edebilecek bir nitelik grubu arıyorum. O da ancak 3'ü birden oldu yani.
+
+443
+01:44:03,507 --> 01:44:27,788
+Buna anahtar değil de buna da discriminator deniyor. Yani teminolojide bu şekilde bir ifade var. O zaman işte weak entity set'e karar verdim. Bunun güçlüsünü bu şekilde bir identifying relationship ile bağladım. Şurada da bunun total olması lazım. Yani buradaki her bir varlığın mutlaka bir güçlüsü olması lazım. O yüzden burası yine total oldu.
+
+444
+01:44:28,307 --> 01:44:34,148
+Ve bir tane güçlüye bağlanması lazım. O yüzden burada mutlaka bir tane ok olması lazım.
+
+445
+01:44:34,587 --> 01:44:40,807
+Yani WIC, zayıf bir varlık setinin formatı bu şekilde olması gerekiyor, tanım gereği.
+
+446
+01:44:41,307 --> 01:44:45,807
+Varlık setinin zayıf var da böyle tanımladıysak, şurada bir discriminator olması lazım.
+
+447
+01:44:46,807 --> 01:44:53,347
+Notasyonu şekli bu şekilde. Bir tane mutlaka güçlüye bağlanması lazım. En az bir tane güçlüye.
+
+448
+01:44:53,447 --> 01:44:56,148
+Bazen de birden çok güçlüye bağlanabilir.
+
+449
+01:44:56,307 --> 01:45:02,127
+Veya geçişli olarak zayıflar bir araya gelip bir tane gizliğe bağlı olabilir.
+
+450
+01:45:02,268 --> 01:45:06,768
+Yani bütün bu kombinasyonlar farklı tasarımlarda görünebiliyor, karşımıza çıkabilir yani.
+
+451
+01:45:08,467 --> 01:45:08,627
+Evet.
+
+452
+01:45:10,247 --> 01:45:14,307
+Diğer redundant atribütler, burada mesela...
+
+453
+01:45:15,188 --> 01:45:24,608
+Yine tasarımımızı yaparken öğrenci için ne diyoruz mesela? Öğrenci varlığını düşünürken, öğrenci için ID's var, lane'i var, total crediti tutmuş burada.
+
+454
+01:45:24,988 --> 01:45:31,028
+Hatalı dedi ki ona ama drive olabilir falan. Her neyse, total crediti tutacağız elbette.
+
+455
+01:45:31,807 --> 01:45:40,427
+Sonra bir de departmentlerden bahsediyoruz, department listesinde bakarken. Departmentlarımız var, departmentin ismi var, building var, budget var falan.
+
+456
+01:45:42,931 --> 01:45:49,331
+Student ile de department arasında bir tane bağıntı kuracağız. Çünkü bu öğrenciler bu departmana bağlılar.
+
+457
+01:45:50,131 --> 01:45:58,051
+İşte burada yine bir redundancy problemi var. Yani sizdeki department ne? Şu bağlantıdan çıkartılabilir.
+
+458
+01:45:58,911 --> 01:46:05,771
+Bu bağlantı bize diyor ki bir öğrencinin bir tane departmanı var. Bu departmantada birçok öğrenci var.
+
+459
+01:46:06,811 --> 01:46:10,072
+Burada redundant olan niteliği hangisi şu department ne?
+
+460
+01:46:10,484 --> 01:46:16,244
+Bu Department of Name'i ben bu bağıntıdan, bu çıkarımı yapabilirim yani.
+
+461
+01:46:16,244 --> 01:46:29,004
+Yani diğer bir ifade ile, bu şekilde Department of Name'i buradan çıkarmamız lazım.
+
+462
+01:46:29,004 --> 01:46:32,604
+Bakın burada bunu böyle çıkardık. Aynısını şey yapalım.
+
+463
+01:46:34,868 --> 01:46:43,568
+O zaman bu esaslar çerçevesinde tasarımımızı, ilk İA diyagramımızı bu şekilde çizebiliriz.
+
+464
+01:46:43,708 --> 01:46:52,928
+Yani tabii böyle bütün anlattıklarımızı böyle bir araya getirirsek bunu çizebilecek hale geldik esasında.
+
+465
+01:46:54,148 --> 01:46:56,408
+Tabii böyle böyle çok örneğe bakmak lazım.
+
+466
+01:46:56,851 --> 01:47:09,151
+Ve burada varlık setlerini belirdikten sonra bağlantıları belirlemek biraz daha şey, biraz sallantılı diyeyim, biraz daha bilirsel bir şey var.
+
+467
+01:47:10,868 --> 01:47:24,868
+Burada zayıf olan varlıklar bizi korkutmasın. Zayıf olması bilakis daha iyi bir şey. Çünkü fiziksel tasarımda dediğim gibi, Prime 2...
+
+468
+01:47:24,916 --> 01:47:39,315
+takibi yükünü hafifletmiş oluyoruz. Bir tane primary key var, discriminatorlar var. İki tane primary key olması yerine, bir tane primary key var, bunun altında belki çalışan başka zayıf varlıklar var. Bu daha iyi bir tasarım esasında.
+
+469
+01:47:42,452 --> 01:47:52,132
+Bakıldığı zaman mesela instructor, şunları oluşturacağım ilk olarak. Department'ı oluşturacağım, işte student'ı oluşturacağım.
+
+470
+01:47:53,712 --> 01:48:01,351
+İşte student'ı mesela department name'i çıkardım. Çünkü şuradaki department name'le bir bağıntı içerisinde ya, onu çıkardık.
+
+471
+01:48:02,012 --> 01:48:10,452
+Instructor'da da yine aynı mana olsa gerek. Yani instructor'ı böyle tanımlarken, çünkü burada department name olacak, instructor'ın bağlı bulunduğu bir department name.
+
+472
+01:48:10,452 --> 01:48:25,771
+Aynı zamanda şöyle bir bağıntı çizdiysem, ki bu bağıntı olması lazım. Çünkü bu Instagram'ın bağlı bununla departmanla ilgili bilgileri elde etmek istiyorum. Bu bağıntının olması lazım. Ama bu bağıntı çizdiysem şu anki department name'i çıkardım. Orayı dandinsiden dolayı.
+
+473
+01:48:25,771 --> 01:48:32,672
+Evet. Sonra şurada section'ı halletmiştik yine bakın. Bu section'ın da güçlüsü course.
+
+474
+01:48:33,203 --> 01:48:44,083
+Dediğimiz gibi biraz önce şu meseleyi de hallettik o zayıf varlık şeyinde. Yine course içerisinde bir tane bankruptcy, bir tane şey var bakın, banka var.
+
+475
+01:48:44,083 --> 01:48:47,524
+Coursların prerequisite courseları gibi.
+
+476
+01:48:47,891 --> 01:49:03,891
+Sonra, şurada, section'ın, burada, işte, Time Slot'u var. Time Slot ID'yi, her bir section'a bir Time Slot ID veriyoruz ve o Time Slot ID'nin birçok farklı...
+
+477
+01:49:04,192 --> 01:49:31,032
+zaman bilimleri var, zaman aralıkları var. Yani işte bir dersin TimeSlot ID'si bir tane ve o TimeSlot ID'de 3 tane oturum var mesela. Bu derste de mesela 2 tane TimeSlot ID'miz bir tane var ve orada 2 tane oturumumuz var. Bir tanesi işte 1 ile 4 arasında, diğeri de 4 ile 6 arasında robotar cisimde. Onun gibi.
+
+478
+01:49:32,192 --> 01:49:39,192
+Burada da day, start, time ve end time olmak üzere multiverse bir şey var yani. Çoklu oturumları ifade ediyor burada.
+
+479
+01:49:39,192 --> 01:49:47,192
+Değil mi? Bu şekilde bire çokluya bir. Mutlaka bir time slot olması lazım yani.
+
+480
+01:49:47,192 --> 01:49:53,192
+Sektionun bir şekilde her bir seksionun bir time slot olması lazım. Öyle değil mi? O yüzden burası total olmuş.
+
+481
+01:49:53,192 --> 01:50:00,000
+Ama bir time slot numarası yani bir dönem kullanılmış, başka bir dönem yok mesela olabilir.
+
+482
+01:50:00,000 --> 01:50:20,399
+Yani bir eşleşen bir şey olmayabiliriz tarafı. Gene kısmi mesela. Yani her bir çizginin, her bir manasını o şey içerisinde, o küçük dünya içerisinde bir olumlu bulabilirsiniz yani. Hani baksana mesela, şimdi biraz geri bakıyorum mesela, şu course department, burası tekli, tekli mi buldunuz? Şurası çift.
+
+483
+01:50:20,948 --> 01:50:37,627
+Bire çoklu. Yani, bir course bir tane departman tarafından açılıyor. Demek ki ortak iki departman tarafından açılmıyor. Makul bir dersin bir departman tarafından açılması. Ama bir departmanda tabii birden çok ders açılabilir.
+
+484
+01:50:38,100 --> 01:50:47,800
+Ama daha departmanda hiç ders açılmayabilir. Çünkü partial burada kısmi gözüküyor. Şimdi departman daha yine ortaya çıkmış. Daha ders açmamış bir dönem mesela olabilir.
+
+485
+01:50:48,480 --> 01:50:55,740
+Ama şurada iki çizgiden anladığımız ne? Bir ders açıldıysa bir departmanın bünyesinde açılmıştır. Yani iki çizgi olması lazım.
+
+486
+01:50:56,275 --> 01:51:04,435
+Her bir buradaki hareketin manasını okuçuk dünyada bulabilirsiniz. Veya okuçuk dünyayı düşünün bunu çizmek noktası.
+
+487
+01:51:04,516 --> 01:51:11,996
+Yani tabii reverse engineering denilen, yani şunu gördükten sonra requirement listesini yazmak daha kolay.
+
+488
+01:51:11,996 --> 01:51:13,676
+Çünkü hepsinin bir manası var.
+
+489
+01:51:15,347 --> 01:51:26,768
+O gereksinim listesini düşünüp de bunu yazmak biraz daha zor. Çünkü tasarımı yapıyorsunuz, dizayn ediyorsunuz. O biraz daha zor olan şeyi. İki tarafında bir egzersiz yapın yani çalışırken.
+
+490
+01:51:26,768 --> 01:51:42,068
+Tabii bunlara ilgili çok örnekler var. Kitaptaki, kitabın sonundaki örnekler var. Oldukça yerine olsun bir standartı var. Ufak tabi nüanslar var, farklılıklar var ama birçok örnek bulabilirsiniz bununla ilgili.
+
+491
+01:51:42,612 --> 01:51:48,252
+Evet, burada kafamıza takılan bir şey var. Mesela Advisor'da halletmiştik.
+
+492
+01:51:54,771 --> 01:51:55,771
+Hangisi?
+
+493
+01:51:55,771 --> 01:51:56,771
+Core.
+
+494
+01:51:56,771 --> 01:51:57,771
+Şurası.
+
+495
+01:51:57,771 --> 01:52:04,771
+Yani burada bir dersin, yani şunu çıkartalım.
+
+496
+01:52:04,771 --> 01:52:07,771
+Burada istiyoruz ki bir dersin ön koşullarının olmasını istiyoruz.
+
+497
+01:52:07,771 --> 01:52:08,771
+Ön koşullarının.
+
+498
+01:52:08,771 --> 01:52:20,771
+Bu zaman şurada Cours'un listesi içerisinde CoreSID, Title, Credits, bir de Prerequisits diye bir tane nitelik olması lazım.
+
+499
+01:52:20,771 --> 01:52:21,707
+Prerequisits.
+
+500
+01:52:21,779 --> 01:52:41,019
+Bu prerequisite niteliği, esasında, nasıl açıklayalım bunu, prerequisite niteliği olabilir veya, yani mantıverut olabilir.
+
+501
+01:52:41,019 --> 01:52:43,679
+Ama mantıverut bu prerequisite niteliği olabilir.
+
+502
+01:52:47,923 --> 01:52:59,484
+Fakat o nitelik değerleri ne? Yine, korslar yani. Öyle değil mi? Yine korslar. O zaman, hani, o şunun gibi değil yani.
+
+503
+01:53:14,452 --> 01:53:19,452
+Bu değerler, bu değerler, antideye kadar bir şeyler oldu.
+
+504
+01:53:41,555 --> 01:53:43,555
+kontrolü olabilir.
+
+505
+01:53:43,555 --> 01:53:45,555
+Ve onların,
+
+506
+01:53:45,555 --> 01:53:49,555
+burada, bu iş paylaşımın olabilirdiği olarak ortak.
+
+507
+01:54:18,579 --> 01:54:27,579
+...ve o dediğimiz örneğin sorularını okumaklarımız da konumda bekliyemez.
+
+508
+01:54:27,579 --> 01:54:34,579
+Yani derdimizin en yanı, en yanı olduğu için derdimizin sütlerine okumlu var.
+
+509
+01:54:34,579 --> 01:54:40,579
+Ondan da diğer bir tanesi, bir tanesi, bir tanesi okumaklarına var.
+
+510
+01:55:18,420 --> 01:55:43,595
+İçinize, birçok birç
+
+511
+01:56:54,804 --> 01:57:00,503
+Bakıyoruz, güzel, nasıl oldu, bakıyoruz, biraz daha iyi olur, biraz güzel.
+
+512
+01:57:00,503 --> 01:57:02,204
+Bir de, değil mi, zaten?
+
+513
+01:57:02,204 --> 01:57:07,204
+Bunu anlayan bütün şeylere baktığınızda, en büyük bir şey daha var.
+
+514
+01:57:21,235 --> 01:57:23,435
+Biriler, biriler şeyden olmak üzere.
+
+515
+01:58:08,435 --> 01:58:21,336
+Yani öğrencinin ağzı bir okama, öğrenciyi meslek yazamam yani, transaction'a da yazamazsın. Değil mi? Ne yazamazsın?
+
+516
+01:58:21,336 --> 01:58:32,636
+Re-digile yazalım, öğrencinin toplum yerine ama hangiler çekil? Veya, ve-re-yaktan bir seksinin nol bilir. Aha görevle.
+
+517
+01:58:37,395 --> 01:58:42,895
+Enayi de kaydet bilgi şeklinde doğrulu gerek aldırmak maksabı doyar.
+
+518
+01:58:42,895 --> 01:58:46,895
+Bu, bu enayi olduğu için buraya yazabiliriz.
+
+519
+01:58:46,895 --> 01:58:49,395
+Ama direkinde bu soru sayısı da,
+
+520
+01:58:49,395 --> 01:58:52,895
+sizleri nereye yazabiliriz?
+
+521
+02:00:00,448 --> 02:00:08,448
+Farklı bir şey. O zaman fikriyle karşılaştık ki oraya değiştirmem lazım. Ama burada, sizler,
+
+522
+02:00:08,448 --> 02:00:27,448
+ve, sizin tarafını, sizin tarafını yazarsak, ve yazarsak, sizin tablosu, inspektif tablosu, en olan tarafı yazarsak, değilsin.
+
+523
+02:00:51,828 --> 02:01:06,668
+Doğru, en önemli tarzı. Öğrenciler, burada bir kez, bir tane tarzı var. Öğrenciler'in bir tane tarzı var. O, R'li cidden, iki defa etkili ötesi istek. Ama ocağı çok defa etkili ötesi istek.
+
+524
+02:01:10,292 --> 02:01:23,372
+Yani öncesi, bu, bu, bu, insperse tarafından alırsam, bir insperse, insperse tarafından bir koca rekorunu da sen, ağırlık vermiştir.
+
+525
+02:01:23,372 --> 02:01:35,172
+Hangi öğrenciye bakıyor? Ayrıca, ama öğrenciye, bir tane, bir sosyal öğrenci rekorundan, bu, o, sahi,
+
+526
+02:01:35,636 --> 02:01:37,636
+Neyi şerket ediyor?
+
+527
+02:01:37,636 --> 02:01:39,636
+Tanışmanıyla
+
+528
+02:01:39,636 --> 02:01:41,636
+artikası anlatmaya başlayan bir karakteri
+
+529
+02:01:41,636 --> 02:01:43,636
+karakteri kayboluyor.
+
+530
+02:01:43,636 --> 02:01:45,636
+O zaman en olan olarak karakteri
+
+531
+02:01:45,636 --> 02:01:47,636
+bile ilgili fark etmediğimiz şey var.
+
+532
+02:01:47,636 --> 02:01:49,636
+En önemli şeyde
+
+533
+02:01:49,636 --> 02:01:51,636
+bu karakteriyle
+
+534
+02:01:51,636 --> 02:01:53,636
+ben bunları
+
+535
+02:01:53,636 --> 02:01:55,636
+anlamamın enge
+
+536
+02:01:55,636 --> 02:01:57,636
+bu karakteri
+
+537
+02:01:57,636 --> 02:01:59,636
+sebepleri anlatılıyor.
+
+538
+02:01:59,636 --> 02:02:01,636
+Yani niye bunların ilgili burada diye
+
+539
+02:02:01,636 --> 02:02:03,180
+onları yapabiliriz.
+
+540
+02:02:05,011 --> 02:02:16,212
+Evet. Şimdi, mesele, karlaması tasarım bu şekilde. Bundan sonra bunu ilişkisel model tablolarına dönüştürmemiz gerekiyor.
+
+541
+02:02:16,212 --> 02:02:26,412
+Burada yine bana aferin yazı olarak olan, sizlerle soru bir karım yaptık. Yani hızlı olanlarınızı var.
+
+542
+02:02:26,412 --> 02:02:32,011
+Bence, ilişkisel model tablolarını çeşitli. Zayıf olanlar...
+
+543
+02:02:59,283 --> 02:03:17,783
+Evet, yani ana askeri, bu ispatifi, bu bilgisayar mı? Burada mesela, şu aşağıdaki kısım, PostgreSQL, burada, section için, bu zeyno var mı?
+
+544
+02:03:27,188 --> 02:03:37,188
+Bu konuda beraber bir şeyin öncelikle bu noktada sınavı anlatan bir şeyin bir tane kalmadı.
+
+545
+02:03:37,188 --> 02:03:40,188
+Bir sonraki bir tane kalmadı.
+
+546
+02:03:40,188 --> 02:03:47,188
+Böyle, o şekilde böyle, varlıklı bir şeyin bir şeyin en büyük bir tane kalmadı.
+
+547
+02:03:47,188 --> 02:03:50,188
+O zamanın teması benimle.
+
+548
+02:03:50,188 --> 02:03:53,188
+Bu konuda aynı şeyin bir tanesi.
+
+549
+02:04:47,956 --> 02:04:51,096
+İntrolerle şimdi yapıyorum.
+
+550
+02:04:51,195 --> 02:04:54,136
+İntrolerle beraber bir haber oldu.
+
+551
+02:05:34,931 --> 02:05:39,331
+İktidar ile yapabiliriz. İktidar ile ilgili, İktidar ile ilgili.
+
+552
+02:05:41,531 --> 02:05:42,931
+Onlarla nasıl yapabiliriz?
+
+553
+02:05:42,931 --> 02:05:44,931
+Yani, öncelikle, çok daha duymuşuz.
+
+554
+02:05:44,931 --> 02:05:45,931
+Onlarla.
+
+555
+02:05:46,931 --> 02:05:54,931
+Herkes, bu karakterin telefonun arası, farklı sayıda telefonun arasında olabilir.
+
+556
+02:05:55,931 --> 02:06:00,931
+O yüzden, burada, sonlandır diyebiliriz.
+
+557
+02:06:03,891 --> 02:06:09,891
+O yüzden, en fazla telefonun arasında, hakikaten.
+
+558
+02:06:09,891 --> 02:06:12,891
+Şu an parçalarımız, sen parçaların.
+
+559
+02:06:14,891 --> 02:06:17,891
+Bir tane, on nabalık değil.
+
+560
+02:07:23,315 --> 02:07:49,612
+...sugun olmalı, evet burada da bir sula da olur ama ben de farkında buraya 16,16
+
+561
+02:08:18,131 --> 02:08:23,891
+İzlediğiniz olan değerleri farklı bir tabloda taklamam lazım.
+
+562
+02:08:46,963 --> 02:09:10,123
+Bu zaman, bu zaman, bu konularda, bu konularda, bu konularda, bu konularda, bu konularda, bu konularda, bu konularda, bu konularda, bu konularda, bu konularda, bu konularda, bu konularda, bu konularda, bu konularda, bu konularda, bu konularda, bu konularda, bu konularda, bu konularda, bu konularda, bu konularda, bu konularda, bu konularda, bu konularda, bu konularda, bu konularda, bu konularda, bu konularda, bu konularda, bu konularda, bu konularda, bu konularda, bu konularda, bu konularda, bu konularda, bu konularda, bu konularda, bu konularda, bu konularda, bu konularda, bu konularda, bu konularda, bu konularda, bu kon
+
+563
+02:09:21,492 --> 02:09:25,851
+Bu da ben okulara da söyleyebilirim.
+
+564
+02:09:25,851 --> 02:09:28,612
+Bu, yani bu,
+
+565
+02:09:28,612 --> 02:09:30,612
+bu,
+
+566
+02:09:30,612 --> 02:09:35,332
+Atomic Programı'nın bir şekilde olsam,
+
+567
+02:09:35,332 --> 02:09:38,212
+her bir insatsının,
+
+568
+02:09:38,212 --> 02:09:41,811
+telefon, space'ının aynı vakitlerine alınmış.
+
+569
+02:09:41,811 --> 02:09:43,971
+İçeriden vakit için olmadı.
+
+570
+02:09:43,971 --> 02:09:46,731
+10 tane yaptım,
+
+571
+02:10:36,724 --> 02:10:43,724
+Bu da
+
+572
+02:10:58,836 --> 02:11:03,336
+Bu da, bunun üstadak bir tablo da ihlal etmektedir.
+
+573
+02:11:03,336 --> 02:11:14,336
+Yani, şöyle birbirlerine, bu neymiş bir süsler burada, en herhangi, oklu bir terapyada, 90-90 yılanlılar, cezaevi bir anlıktı.
+
+574
+02:11:14,336 --> 02:11:17,336
+Bunun için, hemen üstadaklı bir tablo da bana yazdık.
+
+575
+02:11:20,336 --> 02:11:22,336
+Bunun üstadak, ne olur mu yazdık?
+
+576
+02:11:22,707 --> 02:11:26,407
+Ama geleceğiniz için değerlendikler de nasıl olacak?
+
+577
+02:11:26,407 --> 02:11:28,747
+Bu da kabar olasılmayı gerekir.
+
+578
+02:11:34,739 --> 02:11:36,139
+Nikolay Tüya'yı yine bakalım.
+
+579
+02:11:39,079 --> 02:11:42,579
+Mesela, şu anda, bizim bilet topluluğu, sağlamıştır.
+
+580
+02:11:48,884 --> 02:12:16,108
+Şimdi burada, şu tabloya, şu departman tablosuna, madem ki burada bir ilstilatçı bir tane departmana ait ise, o zaman toplu olan tarafa, şu bağlantıyı ile temsil ettik için, toplu olan tarafa, bu departmanın maddesine, karif ettiği yol,
+
+581
+02:12:36,435 --> 02:13:01,483
+Bu hale gittik, biz de
+
+582
+02:13:02,036 --> 02:13:16,036
+En önemli bir kısımda bir kısımda bir kısımda var. Şimdeki insatörün aileyi ancak buraya kaçıyarak her bir öğrencinin insatörüne marka bitiriyoruz.
+
+583
+02:13:16,036 --> 02:13:19,036
+Yani toplumla tarafa yaklaşmak.
+
+584
+02:13:27,252 --> 02:13:34,252
+Yani, pardon, ben de yapıyorum ama, şeyde, okulu okulu bağlantılı böyle bir şey yapamam.
+
+585
+02:13:35,252 --> 02:13:36,252
+Yani SSK'ye dönüştür.
+
+586
+02:13:36,252 --> 02:13:44,252
+Burada mesela, bir ID, bir web, belki de ID olarak bir yabancı anlayabilirsiniz.
+
+587
+02:13:51,859 --> 02:13:58,699
+Ağabey mi öneririm? Çünkü, İntrolarının bir tane öğrenci çok iyi.
+
+588
+02:14:19,155 --> 02:14:25,155
+İnteksiyon, İstor'un rekordu ve o manha alması lazım.
+
+589
+02:14:25,155 --> 02:14:29,155
+Onun için burada, ne, bu olayın bir şey araydı.
+
+590
+02:14:29,155 --> 02:14:31,155
+O, bu olayın bir şey araydı.
+
+591
+02:14:31,155 --> 02:14:35,155
+Bir advisor'ı anledemeyiz. Ayrı tablo olması lazım.
+
+592
+02:14:46,000 --> 02:14:52,039
+Bu, ocaziden öğrendiğinizde,
+
+593
+02:14:52,039 --> 02:15:12,140
+...susunca,
+
+594
+02:15:41,684 --> 02:16:07,372
+Bu da bu
+
+595
+02:16:07,828 --> 02:16:10,728
+Bu yüzden çok olan taraflar ne istiyoruz?
+
+596
+02:16:10,728 --> 02:16:13,728
+O zaman da her neye bir alınıştık?
+
+597
+02:16:13,728 --> 02:16:15,728
+Bütün örgü, yani öyle değil.
+
+598
+02:16:15,728 --> 02:16:19,228
+Bu dünya, o sen buluruz,
+
+599
+02:16:19,228 --> 02:16:21,728
+yani sen buluruz,
+
+600
+02:16:21,728 --> 02:16:26,828
+bu internet, bu farkında bir noktada
+
+601
+02:16:26,828 --> 02:16:30,828
+olmanın herhangi bir konferansı olarak
+
+602
+02:16:30,828 --> 02:16:32,828
+bu şekilde yetenekten sonra,
+
+603
+02:16:34,260 --> 02:16:43,260
+Bu, artık bir arz olarak söylüyorum. O olan bir işler mi yanlış değil. Ama o zaman biraz bir anlık değil mi olur.
+
+604
+02:16:43,260 --> 02:16:52,260
+Bu tanemde ilgili de bu süreçtenin ayet etkiler olacağız. Çünkü o bekler ediyor.
+
+605
+02:16:52,260 --> 02:17:00,260
+O kısmı bir süreçte bir arzınız var. Ben de bana o, o tercih ettiği var.
+
+606
+02:17:02,579 --> 02:17:07,799
+İstasyon ID, bir daha kaydım etmeye çalışacak.
+
+607
+02:17:08,040 --> 02:17:10,420
+O zaman, o zaman, bir tanesi olur.
+
+608
+02:17:10,420 --> 02:17:17,360
+Yani, yanında, bir tanesi, bir tanesi, bir tanesi.
+
+609
+02:17:18,360 --> 02:17:23,720
+Yani, bir tanesi, bir tanesi, bir tanesi, bir tanesi, böyle olur.
+
+610
+02:18:06,963 --> 02:18:11,963
+One-sided, GAR, GAR, GİMİNİ, buraya geçip, yuvarlan, arka doğruya yaptık.
+
+611
+02:18:11,963 --> 02:18:18,963
+Eğer, sizin gibi, şu, bu manatıda, toposik de böyle yapalım.
+
+612
+02:18:35,252 --> 02:18:40,252
+O da, daha önce size kaçırız. Yani, sadece sistemde inmez bir şey.
+
+613
+02:19:06,172 --> 02:19:09,172
+Birincisi bağıntıda ise,
+
+614
+02:19:09,172 --> 02:19:11,172
+Evet,
+
+615
+02:19:25,747 --> 02:19:35,148
+En ekstra sürüdükken, elimizin bir kitle yoksa, Evoş tamam. O zaten bankının, hisseliğinin hangi tarafı açması gerektiğini onu söyledik zaten.
+
+616
+02:19:35,148 --> 02:19:44,747
+Ve gelebildikten eseraydı, Yurubankı'dan elimizin söyleyebiliriz, gelebildikten bağımsız.
+
+617
+02:19:55,540 --> 02:20:00,540
+Eğer bu tılsa, tamam.
+
+618
+02:20:00,540 --> 02:20:04,540
+Burada A var, burada B var.
+
+619
+02:20:04,540 --> 02:20:08,540
+Bu, bu B tablası.
+
+620
+02:20:08,540 --> 02:20:14,540
+E'nin, şuraya A ile beraber,
+
+621
+02:20:14,540 --> 02:20:16,540
+ve yabancı anıcı olacak tekste,
+
+622
+02:20:16,540 --> 02:20:18,540
+böyle bir tasarım yapabiliriz.
+
+623
+02:20:18,540 --> 02:20:20,540
+Ve yabancı anıcı.
+
+624
+02:20:20,540 --> 02:20:21,540
+Tamam mı?
+
+625
+02:20:23,987 --> 02:20:29,987
+Eğer ve aynı şekilde bir bölge de yapabiliriz.
+
+626
+02:20:52,308 --> 02:20:54,308
+Bu arada, bu soru olsun.
+
+627
+02:20:54,308 --> 02:20:57,308
+O zaman hangisi tercih edelim?
+
+628
+02:20:57,308 --> 02:20:59,308
+Namlarını da kaldırsanız.
+
+629
+02:20:59,308 --> 02:21:02,308
+Yani, bu soru olduğu için,
+
+630
+02:21:02,308 --> 02:21:05,308
+Reoman tarafında yamanlarımız, bunun sırası aynı.
+
+631
+02:21:05,308 --> 02:21:08,308
+Bunun sırası yer alıysa bir bağır düşecekken,
+
+632
+02:21:08,308 --> 02:21:11,308
+ama aslında diğer katılımda,
+
+633
+02:21:11,308 --> 02:21:13,308
+SELECT'e karar olmalı.
+
+634
+02:21:14,067 --> 02:21:18,768
+Bu da bütün bu denizliğin rekordlarında bulmamız ki,
+
+635
+02:21:18,768 --> 02:21:21,268
+akreter bir durum olduğunu söyleyemez.
+
+636
+02:21:21,268 --> 02:21:23,268
+Yani burada nalar farkındalık için.
+
+637
+02:21:23,268 --> 02:21:29,268
+İşte burada sosu olan tarafa ekranlarınızı tutman gerekir.
+
+638
+02:21:29,268 --> 02:21:33,867
+Daha da bir de bir de bir olur.
+
+639
+02:21:33,867 --> 02:21:37,567
+Her tarafa da nalar farkındalık.
+
+640
+02:21:37,567 --> 02:21:39,467
+Ben hiç madem niye ne yapalım?
+
+641
+02:22:08,084 --> 02:22:12,084
+Bu tablo, bu tablo, e-d kablosu.
+
+642
+02:22:36,340 --> 02:22:38,940
+Daha iyi bir tasarım daha iyi bir düşünce yapmadan,
+
+643
+02:22:38,940 --> 02:22:39,739
+daha çok iyi bir düşünce,
+
+644
+02:22:39,739 --> 02:22:41,739
+bir sene, bir sene, bir sene, bir sene, bir sene.
+
+645
+02:22:41,739 --> 02:22:43,340
+Bu, bir tane de,
+
+646
+02:22:43,340 --> 02:22:45,340
+ben, bana, teşkil ettiğinde, yani,
+
+647
+02:22:45,340 --> 02:22:47,340
+ekstradan, tavla uçuştur.
+
+648
+02:22:47,340 --> 02:22:48,340
+Ama gerekli de o,
+
+649
+02:23:15,731 --> 02:23:26,851
+Evet arkadaşlar, bu da işte böyle yeterli herhalde bugün. Şurada birden, burada haftaya koyalım. X-Ten, ER'de kalmış olduk.
+
+650
+02:23:26,851 --> 02:23:39,851
+E-ER. Haftaya bunu bitirip normalizasyondan biraz daha dikkat ederiz. Kitaptan okuyun arkadaşlar, yani bu konuyu özellikle...
+
+651
+02:23:42,963 --> 02:23:44,963
+Kapanım biraz daha karışsın.
+
+652
+02:23:45,963 --> 02:23:49,963
+Yok, tam tarifi. Yani kitap olduğunca biraz daha usul üreğine bağlı şey.
+
+653
+02:23:52,963 --> 02:23:53,963
+Evet, kesinlikle.
+
+654
+02:23:53,963 --> 02:23:55,691
+Bu dersini de barı bir şey.
+
+655
+02:24:06,388 --> 02:24:07,388
+Evet.
+
+656
+02:24:07,388 --> 02:24:11,388
+Orada da gösteriliyoruz, orada da var.
+
+657
+02:24:11,388 --> 02:24:13,388
+Evet.
+
+658
+02:24:13,388 --> 02:24:18,388
+Hepsi işin geçerli.
+
+659
+02:24:18,388 --> 02:24:23,388
+Mesela one to one'da total olmasında ne mana var?
+
+660
+02:24:23,388 --> 02:24:26,388
+Demek ki her iki varlık sesindeki elemanı...
+
+661
+02:24:28,628 --> 02:24:35,528
+Hele ki varlık sesindeki elemanlar aynı. Aynı sayıda elemanlar. 1000 tane orada var, 1000 tane orada var. O Pablo Dac.
+
+662
+02:24:36,528 --> 02:24:39,927
+Çünkü o her 1000, diğer 1000 tanesine eşleşiyor yani.
+
+663
+02:24:43,540 --> 02:24:44,600
+Ayo, Ritman.
+
+664
+02:24:55,860 --> 02:25:02,940
+Yani o küçük dünyadaki o şey, o küçük dünyanın gerektirdiği bir şey olabilir ve olmayabilir.
+
+665
+02:25:03,840 --> 02:25:13,580
+Yolsa bağdaydığı bir şey yok yani. Bir de topluysa, bir de bilinirse, toplulacak, ilan parçal olacak diye bir kural yok yani. Olabilir olmayabilir.
+
+666
+02:25:17,172 --> 02:25:21,692
+Farklı örneklere mutlaka bakın yani. Sadece bu üniversiteyi kavanozlar kalmayın.

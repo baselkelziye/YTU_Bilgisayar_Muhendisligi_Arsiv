@@ -1,0 +1,2791 @@
+1
+00:01:26,132 --> 00:01:27,871
+Aplıçmalı, ödeyeceğim.
+
+2
+00:02:51,967 --> 00:02:54,207
+...detendiklik yetiştik istiyoruz.
+
+3
+00:02:54,207 --> 00:02:56,207
+Böyle matematik...
+
+4
+00:02:56,207 --> 00:02:59,048
+...şey olarak dediğim, sayısal bir olarak.
+
+5
+00:02:59,048 --> 00:03:00,967
+Sözü böyle net bir sonucu oluşturuyoruz.
+
+6
+00:03:00,967 --> 00:03:02,647
+Performansa baktık.
+
+7
+00:03:02,647 --> 00:03:05,447
+...yedimi ölçün falan.
+
+8
+00:03:05,447 --> 00:03:08,167
+Ama yani sayısal olarak böyle sayısal bir şey istiyoruz.
+
+9
+00:03:08,167 --> 00:03:09,727
+Ve yuvarlak kalınca...
+
+10
+00:03:09,727 --> 00:03:12,087
+...çokosunuza gitmiyor.
+
+11
+00:03:12,087 --> 00:03:13,687
+O yüzden bu konu bile böyle.
+
+12
+00:03:13,687 --> 00:03:14,687
+Yani...
+
+13
+00:03:14,687 --> 00:03:19,167
+...biraz böyle yuvarlak taraftan...
+
+14
+00:03:19,168 --> 00:03:29,968
+Açık olan kapıları var. Fakat, yine de tabii ki, böyle yöntemler, metodlar var. Bunlar da, böyle bir group design yapmıyor. Group design.
+
+15
+00:03:29,968 --> 00:03:36,568
+Best design olmasın da, orta halde, ince bir tasarım, iyi halde bir tasarım yapmıyor.
+
+16
+00:03:36,568 --> 00:03:43,968
+Hata, ne dedik? Not only science, but also art.
+
+17
+00:03:46,163 --> 00:03:51,723
+O yüzden böyle bir şey gerektiriyor, süreç gerektiriyor, yani bir tecrübe gerektiriyor.
+
+18
+00:03:51,943 --> 00:03:56,943
+İşte böyle bir tecrübe gerektiriyor. Artık bir gibi zaman veritabanın tasarınları yaptıkça olmayı gerektiriyor.
+
+19
+00:03:57,483 --> 00:04:05,603
+Bir merke haline gelmesi lazım. Şimdi bu dersteki maskerimiz nasıl böyle veritabanın SQL'de SQL'i gördüğünüz zaman ne yapacağını anlamak.
+
+20
+00:04:05,603 --> 00:04:13,723
+En azından burada da bir diğer bir yöntem, bu kavramsal tasarım sisteması gördüğünüz zaman ne dönüyor orada onu anlamak.
+
+21
+00:04:14,163 --> 00:04:21,163
+bir parçada orta halde iyice bir tasarım yapmak. Bunun böyle bazı ince noktaları var. Onlara da...
+
+22
+00:04:21,235 --> 00:04:48,175
+Aklımız geldiğinde değineceğiz. Ama bazı noktalar dediğim gibi biraz açık kalıyor. Kitapta da öyle diyor. Bazı noktalarda nasıl bir ifade geçiyor? Olabilir diyor, olmayabilir diyor. Yani ortada bırakıyor. Kitabı okursanız başka kaynakları da ben bu konuda iki önemli kaynağı takip ettim. Notları da iki ders kitabını da notlarını paylaştım sizinle.
+
+23
+00:04:49,235 --> 00:05:11,915
+İleride bir katı açıklamalar koyduğum, onları da açık bakarız diyara. O yüzden bu noktadan hareket ederek çalışın yani. Bunları dikkate alarak çalışın. Daha iyi bir formül bulabiliyorsanız bunu öne sürebilirsiniz. Ama şu ana kadar bütün çalışmalarının geldiği nokta böyle olmuş. Böyle bir hava esiyor.
+
+24
+00:05:13,139 --> 00:05:22,919
+Şimdi geçen hafta böyle, tabi basit yani, ana hatları da basit olan şeyleri çok yani, basit olan, notasyonu basit ama bazı noktalarda böyle biraz garip şeyler var.
+
+25
+00:05:23,279 --> 00:05:27,120
+Ama bunu ben deyim, vurgulamak isterim, geçen hafta da söylemiştik.
+
+26
+00:05:27,539 --> 00:05:31,079
+Şimdi basit olanlar üzerinden şöyle bir geçelim, hatırlama manasına.
+
+27
+00:05:31,240 --> 00:05:34,120
+Bugün bunun üzerinden bir geçelim, bitirelim.
+
+28
+00:05:34,360 --> 00:05:35,799
+O yüzden zaten bitirmek üzereyiz.
+
+29
+00:05:37,012 --> 00:05:45,772
+Biraz normalizasyona başlarız. Orada da 1NF'ye kadar geliriz diye düşünüyorum. Ondan sonra da haftaya sınava hazır olmuş oluruz.
+
+30
+00:05:45,772 --> 00:05:56,692
+Yani artık ne kadar istiyorsak onu belirleyelim. Sınavla ilgili açıklama, yani format belirli olsun ben bir bilgilendirme yaparım klaslumda.
+
+31
+00:05:57,292 --> 00:06:05,012
+Hayriyeten klaslumda bir ekstra bir açıklama yapmadım tarih, tarihde olacak, turda olacak diye. Zaten benim sayfasında bilan ediyoruz.
+
+32
+00:06:17,108 --> 00:06:25,867
+Sınavın formatıyla ilgili bir açıklama yaparım. Genel olarak, şimdiden bilmemiz gereken sınav böyle biraz uzun olabiliyor.
+
+33
+00:06:26,668 --> 00:06:35,288
+Ya uzun sınavı olur ama kısa cevaplı, kısa sorulu. Yani böyle 5-6 soru, uzun cevaplı. Bunu değerlendirmek çok zor bir şey.
+
+34
+00:06:36,187 --> 00:06:44,288
+Hazırlaması kolay. Bu nedir diye sorabilirim yani. Ama değerlendirmesi çok zor. Çünkü karşı taraf bu sefer...
+
+35
+00:06:45,108 --> 00:06:48,567
+sorunun cevabına cevabı haricinde birçok şey yazabiliyor.
+
+36
+00:06:48,848 --> 00:06:50,927
+Veya onu ayıklamak çok zor oluyor falan.
+
+37
+00:06:51,088 --> 00:06:53,608
+Bir de uzun cevap sorulun ve değerlendirmek çok zor olur.
+
+38
+00:06:54,268 --> 00:06:59,228
+Bundan da anlayacağımız gibi, yani siz olsanız nasıl soru hazırlarsanız, işte ben de öyle hazırlıyorum.
+
+39
+00:06:59,947 --> 00:07:02,127
+Yani değerlendirmesi kolay olacak.
+
+40
+00:07:02,468 --> 00:07:06,927
+Test veya kısa cevap, doğru, yanlış soru olabilir veya cevabı 5-10.
+
+41
+00:07:07,264 --> 00:07:18,524
+İş yıkılığı mesela sorular olabilir. O yüzden böyle bir 15-20 soru oluyor. Genel olarak. Evet, genel konu başlıkları da zaten belli.
+
+42
+00:07:19,795 --> 00:07:43,956
+Yani SQL yazın diye sorar mısın deniyoruz. SQL yazın diye sorulabilir elbette. Ama bu çok karmaşık bir SQL olmaz. İç içe koraliyet sorguyu yazın tarzında öyle çok olmaz. %100 olmaz demiyorum ama daha basit herkesin hemen yazabileceği, benim de kolay değerlendirebileceği falan.
+
+43
+00:07:43,956 --> 00:07:47,795
+Ama tabii dememezsiniz, bir sorgulur çok farklı şekillerde yazılabilir yani.
+
+44
+00:07:47,795 --> 00:07:59,115
+Yani, şimdi onun için çıkmak çok doğru. 240 kişi alıyor derse. Hepsini değerlendirmek çok doğru bir şey. Ama cevaplar net. ABD'de doğru cevap var diğerde.
+
+45
+00:07:59,115 --> 00:08:08,036
+O dikkatli hazırlamışsa, o zaman çok doğru. Yani bu böyle, buradan hareketle sınav hazırlık yaparsanız.
+
+46
+00:08:08,627 --> 00:08:15,228
+Yani ben olsam sunumları iyice anlarım. Sunumlardaki sorguları iyice anlarım. Hatta onları kapatıp yazabilirim.
+
+47
+00:08:15,228 --> 00:08:25,207
+O seviyeye gelirsek çok sorun olmaz. Ayrıca tabii daha vaktiniz varsa başka veritabanları, mesela laboratuvardaki kampanyi veritabanı, bugün biraz üzerinden bakacağız.
+
+48
+00:08:26,355 --> 00:08:35,255
+Ondan biraz çalışabilirsiniz veya yine başta ufak 3-4 tablolu veri tabanlarıyla ilgili sorgular yine yapabilirsiniz.
+
+49
+00:08:35,475 --> 00:08:45,475
+Yani olayı fikir, fikir, fikir, işletme açıdan. Çünkü o küçük dünyayı tanımak lazım ve o küçük dünya üzerinde sorgu yazılır ve o küçük dünyayı tanımak lazım ne olduğunu.
+
+50
+00:08:46,004 --> 00:08:56,004
+Sınavda hangi şema olur? Ona da çok önemli bir şey söyleyemem. Üniversite şeması olabilir veya kampana olabilir veya herhangi bir şema olabilir.
+
+51
+00:08:57,524 --> 00:09:07,144
+Ama çok semantiği karışık olan bir şey olmuyor genelde. O küçük dünya karmaşı olmamış olmuyor. Önemli olan şey anlaması olduğu için bu şekilde.
+
+52
+00:09:07,963 --> 00:09:10,004
+Gene store procedure, triggerler falan.
+
+53
+00:09:12,211 --> 00:09:15,011
+Söpresi'ci verip bunu atıyor mesela.
+
+54
+00:09:15,011 --> 00:09:18,912
+Sorduğuma göre Söpresi'ci ve Trigger'de biraz karmaşık olabilir yani.
+
+55
+00:09:18,912 --> 00:09:20,111
+Söpresi olmaz yani.
+
+56
+00:09:20,111 --> 00:09:23,692
+Bu formattaki sorular biraz daha öyle oluyor yani.
+
+57
+00:09:23,892 --> 00:09:31,992
+trigger'ı okumayı bilmek lazım. Bir event olacak, condition, bir action olacak. O akışı görmek lazım o trigger'da mesela.
+
+58
+00:09:31,992 --> 00:09:38,832
+Yine system konseptler, yani ilk haftalarda üzerinde durduğumuz, yani index nedir mesela, nedir bu index?
+
+59
+00:09:39,292 --> 00:09:42,552
+Veya transaction, ACID mesela, ACID kriter grubu bilin.
+
+60
+00:09:42,899 --> 00:09:51,480
+Bunların ana temalarını, ana kavram, ana fikrini, çünkü bu veri kanalı dünyasında mevcut olan terminoloji.
+
+61
+00:09:51,819 --> 00:10:00,359
+Yani bu kelime, bu ders alıyorsak, tamam esküver öğrendikleri, veri kanalı tasarımı yapacağız ama, bununla beraber bu terminolojiyi de bir parça bilmek lazım.
+
+62
+00:10:01,395 --> 00:10:12,395
+O yüzden bunlarda, bunların üzerinden mutlaka kitap okuması yapın yani. Uzay, işte 1. chapter bunları biraz anlatıyor. 2. chapter ilişkisel model falan.
+
+63
+00:10:12,395 --> 00:10:27,395
+Şimdi tekrar gelelim ilişkisel model tasarımına. Şimdi bu tabi böyle NoSQL değil ve geleneksel ilişkisel model tablolarının tasarımıyla ilgili. NoSQL biraz daha böyle şemalıs.
+
+64
+00:10:27,764 --> 00:10:38,523
+Felsifesiyle hareket ettiği için şemalıs, yani şemasız manasında. Böyle olunca, böyle çok metodolojik bir şey görünmüyor orada.
+
+65
+00:10:39,644 --> 00:10:43,344
+Elbette bir takım yolları var ama biraz daha esnek.
+
+66
+00:10:43,344 --> 00:10:49,804
+İşte Document Database, Key Value Database veya Graph Database.
+
+67
+00:10:50,128 --> 00:11:12,807
+gibi böyle farklı onların da modelleri var. Onlardan da bahsetmeyi düşünüyorum. Çünkü konularımız böyle iyi gidiyor. Yani sınavdan sonra biraz fiziksel, biraz application programlama falan biraz ufak değişiklik de yapabiliriz. Çok ufak yani, çok büyük bir değişiklik olmaz.
+
+68
+00:11:14,196 --> 00:11:35,956
+Evet, şimdi burada modelleme dediğimiz zaman bir kavramsal modellemede diğer diagramlarından bahsettik. Bunlar oldukça zevkli, kolay. O küçük dünyadaki kısıtları kağıda aktarmam gerekiyor. Ondan sonra da makineye aktaracağım. Yani ilişkisel model dönüşümleri yaparak. Ana fikir bu. Bu esas üzerine hareket ediyoruz.
+
+69
+00:11:36,336 --> 00:11:52,336
+Bundan sonra, ER diyagramları ile yapacağımızı söyledik. Tabi burada aynı zamanda, functional requirement da var. Burada hangi transaction var, hangi işlemler olacak, bunları kimler yapabilir, authorization falan, onlar da olabilir.
+
+70
+00:11:52,336 --> 00:11:58,336
+Yani böyle modelleme çok kapsamlı bir şey. Biz sadece data modeling kısmını görüyoruz.
+
+71
+00:11:58,336 --> 00:12:03,115
+Hangi datalar var, hangi datalar arasında bağıntılar var.
+
+72
+00:12:03,187 --> 00:12:08,187
+Ana fikrimiz bu. Buraya fokus oluyoruz. Bundan sonra bir fonksiyonel akış var.
+
+73
+00:12:09,327 --> 00:12:15,667
+Hangi yetkilendirmeler var. Onlar da tasarım yani kim ne yapabilir, ne yapamaz falan onlar.
+
+74
+00:12:16,148 --> 00:12:42,187
+Ve daha sonraki başka bir aşamada logical design bunlar. Bundan sonra da physical design var ki o da ayrı bir dünya. Yani buradaki oluşturduğum o ilişkisel model tabloları, hangi tip dosyalarda saklanacak, orada hangi indeksler olacak, hangi veri yapıları olacak falan. Bunları şey, bu ikisi arasındaki önemli bir fark, geçen hafta atılıyorum şimdi söylediğiniz. Logical design böyle ümit ediyoruz ki,
+
+75
+00:12:42,644 --> 00:12:58,264
+Bir kere yaptık. Yani çok zorda kalmayınca değişmemesi ümit ediliyor. Elbette hepimiz başta da ona göre yapmak lazım tabii. İleride şunlar olabilir. Yani mesela bir instructor, bir departmana aittir.
+
+76
+00:12:58,687 --> 00:13:18,908
+Ama bir ihtimal ileride böyle joint profesör olabilir, joint hoca. Yani bir de bir daha çok departmana ait olabilecek. Yani onu da dikkate alarak ileride öyle bir açılım yapacak şekilde baştan tasarım yapmak daha böyle profesyonel bir şey. Ama şu anda öyle bir şey yok. Şu anda sadece bir hoca bir departmana ait mesela.
+
+77
+00:13:19,508 --> 00:13:38,508
+İleride değiştiğinde, mevcut olan durumu bozmayacak bir şey tasarlamak. Bunlar tabii ayrı bir tecrübe gerektiriyor. Neden? Çünkü biz bu tasarımı yaptığımız zaman bütün her şey bunun üzerine inşa edilecek.
+
+78
+00:13:38,508 --> 00:13:43,508
+Tamam, ağaç büyüyecek, meyve verecek.
+
+79
+00:13:43,711 --> 00:13:48,071
+O meyveler, o ağrıların çekirdeğine bağlı.
+
+80
+00:13:49,011 --> 00:13:52,531
+Çekirdek bozdukta meyveler de bozuk olur veya sağlam olmuyor.
+
+81
+00:13:52,879 --> 00:14:12,779
+O yüzden ilk adım olduğu için bu mümkün olduğunca good design olması ümit ediliyor. Physical design öyle değil ama. Physical design böyle çevre harici etkenlere, kullanıcı profillerine göre, datanın karakteristikliğine göre değişebilir yani. Hatta günümüzde çok değişiyor.
+
+82
+00:14:13,135 --> 00:14:19,755
+İşte sosyal medya ortamındaki veri karakteristikleri çok patlamalı, çok değişken olduğu için,
+
+83
+00:14:20,195 --> 00:14:23,355
+Fizikal Design zaten değişmeye çok açık yani.
+
+84
+00:14:24,211 --> 00:14:28,371
+Arasında böyle önemli bir fark var yani kavram olarak. Tamam mı?
+
+85
+00:14:28,371 --> 00:14:33,971
+Şimdi dediğimiz gibi, logical design'ında data modelleme üzeriniz.
+
+86
+00:14:34,072 --> 00:14:37,971
+Fonksiyonel modelleme çok veritabanı kitaplarında çok geçmiyor.
+
+87
+00:14:38,072 --> 00:14:40,251
+O daha çok sistem analizi dersinde geçiyor.
+
+88
+00:14:40,432 --> 00:14:45,032
+Belki görüyorsunuzdur. Sistem akışı, fonksiyonel akışı, kullanıcılar falan böyle.
+
+89
+00:14:45,111 --> 00:14:47,392
+Onların da bir takım böyle diagramları var.
+
+90
+00:14:49,131 --> 00:14:52,211
+Veritabanı kitaplarında çoğu ondan bahsediyor.
+
+91
+00:14:52,211 --> 00:15:19,512
+Hemen görmedim. O yüzden burada bir data modeli üzerine. Yani hangi data olacak, hangi attribütler olacak, hangi bağlantılar olacak. Anahtarıyla kolay, dediğim gibi %80'i kolay, %90'ı, %10'u da böyle zor. Yani çünkü tam net bir şey yok. Burada iki tane problem karşımıza çıkıyor. Bir redundancy tespit etmek, bir de gerçekten istenilen requirement'ları, gereksinimleri sağlıyor muyuz?
+
+92
+00:15:20,724 --> 00:15:22,663
+Sağlamıyorsak, incomplete oldu.
+
+93
+00:15:24,663 --> 00:15:35,724
+Ve gene diğer problem, incomplete ile beraber, belki üçüncü madde daha olsa iyi olur burada, veri kaybı olabilir mesela. O da var.
+
+94
+00:15:36,403 --> 00:15:40,903
+Ondan çok bazı eksikleri var tabii sunuların. TÜMEL 2-3 de bu yaptığım için.
+
+95
+00:15:41,296 --> 00:15:48,696
+Şimdi bir kitapta bazı şeyler çok iyi anlatılmış. Bazı vurgular çok iyi mesela. Bazı vurgular başka kitapta daha az mesela.
+
+96
+00:15:48,816 --> 00:15:54,716
+Burada mesela data loss, onu bu listede geçebilir mesela. Yani veri kaybı olabilir tasarımımızda.
+
+97
+00:15:55,956 --> 00:16:12,036
+Bugün bu üzerinden geçeceğiz biraz. O yüzden ona göre yaptığımız tasarımın üzerinden geçmemiz lazım. Yani onu daha kayıtsız bir hale getirmemiz lazım. Yani normalizasyon yapmamız lazım. Evet.
+
+98
+00:16:15,028 --> 00:16:22,807
+Evet, burada varlık setlerimiz var, bağıntı setlerimiz var ve niteliklerimiz var. Bunlar nitelikler hem varlık hem de bağıntı setleri için geçerli.
+
+99
+00:16:23,307 --> 00:16:31,288
+Diğer diagramlarımızda böyle varlık setlerimiz var. Set olduğu için burada bir anahtar var, ID mesela.
+
+100
+00:16:31,288 --> 00:16:35,288
+Ve bu bağıntılarımız arasında bağıntı...
+
+101
+00:16:35,764 --> 00:17:03,384
+Bağıntı setlerimiz var. Bu bağıntı setlerimiz de böyle şemala da ifade edilebilir. ER diyagram olarak da böyle ifade ediliyor. Mesela bu neydi arkadaşlar? Böyle bir advisor bağıntısı. Instructor, student arasında öğrencilerle, hocalar arasında böyle bir advice bağıntısı. Tamam mı? Hoca birçok öğrenciyi advise ediyor. Yani danışmanlık yapıyor. Bir öğrencinin de birçok hoca danışmanı olabilir.
+
+102
+00:17:03,764 --> 00:17:18,604
+Yani, gerçek hayata bakmıyor ama, gerçek hayata bakan hangisi? Bir hocanın birçok danışmanlık yaptığı öğrenci olabilir, bir öğrencinin de bir tane danışmanı olabilir.
+
+103
+00:17:19,144 --> 00:17:26,364
+Yani tipik olarak böyle yani. Ama şimdi bugün ileride başka bir durumdan da bahsedeceğiz. Bir öğrencinin birden çok danışmanı da olabilir.
+
+104
+00:17:27,744 --> 00:17:29,543
+Ama aynı departmanda değil.
+
+105
+00:17:31,092 --> 00:17:41,092
+Bir danışman, bir departmanda, bir danışman başka departmanda. Yani bu öğrenci demek ki double yapıyor. Double deniyor yani. Böyle mi deniyor? Çift ana dal yapıyor mesela.
+
+106
+00:17:41,092 --> 00:17:54,092
+Öyle olunca mesela bakın, o küçük dünyadaki o şart değişti bir anda. Değil mi? Tasarım değişti. Yani küçük bir şey belki ama ince bir nokta, tasarım değişti. Tablo değişecek.
+
+107
+00:17:54,996 --> 00:18:02,155
+Kullandığım tablolar, tablolar değişecek. Bir tabloyken belki iki tablo olacak falan veya tam tersi. Değişiyor yani?
+
+108
+00:18:03,635 --> 00:18:21,895
+Şimdi burada basit formlar var tabii. Geçen hafta bunların üzerinden geçtik. Bugün de böyle çok zor şeylerden, işte biraz zorlaşınca sınıfta tam benim aktarmam, ben unutuyorum. Yani önceden anladığım şeyi buradan tekrar hatırlayıp da anlatmak zor oluyor. Unutuyorum yani.
+
+109
+00:18:22,816 --> 00:18:31,395
+İnce noktaları olduğu için aklıma ne kadar şey oluyorsa o kadar aktarmaya çalışıyorum. O yüzden böyle kağıda döktüm. Yani bir not aldım.
+
+110
+00:18:31,635 --> 00:18:49,355
+Oraya. Mesele biraz daha orada açığa çıkıyor, netleşiyor yani. Yani yazı uçar, söz uçar, yazı kalır derler ya. Yani yazdığın zaman kafanın yerinde, tutarlı oluyor. Tamam, olayı çözdüm. Ama sözde dökmek...
+
+111
+00:18:49,364 --> 00:19:12,943
+Yani, SELECT'e dökülen şeyler basit olunca biraz ana hatlarıyla iskelet oturuyor yani. Ama şimdi ben teferruat, ince noktaları aktarmam hem benim için zor oluyor hem de karşı tarafın onu algılaması da zor oluyor. Tamam mı? Yani işte onu anladınız. Yani %80 meseleyi burada çözebiliriz. %20, %20 de değil. %18 o şeye bakınca anlaşılır. Evet, aldım o notlara. %2.
+
+112
+00:19:13,652 --> 00:19:17,851
+Kalacak. %2 tam anlamımız mümkün değil. Yani zor olan meselelerden bahsediyor.
+
+113
+00:19:18,751 --> 00:19:29,311
+Biz böyle sayısal olduğumuz için her şeyi sayılara döküyoruz. Yani %8'i tam burada anladık. %18 aldığım notlarla biraz daha pekiştirebilirsin. %2 biraz soru işareti kalıyor.
+
+114
+00:19:29,311 --> 00:19:30,451
+Evet.
+
+115
+00:19:33,044 --> 00:19:40,464
+Şimdi evet, burada nottan üzerinden böyle geçiyorum yani, kafanıza takılan anlamadığınız bir yer varsa sorabilirsiniz yani işte hafta ya sınav var.
+
+116
+00:19:40,464 --> 00:19:47,884
+O üzerinden böyle geçmiş olduk. Böyle relationship setlerin de, bağıntı setleri de, bir set yani varlık seti gibi.
+
+117
+00:19:47,884 --> 00:19:53,264
+Ama bu bağıntı setinde, mouse gözüküyor mu bu arada? Gözükmüyor değil mi?
+
+118
+00:19:53,264 --> 00:19:55,644
+O zaman şu laser'ı açalım.
+
+119
+00:19:55,644 --> 00:19:59,340
+Veya kalemi açalım, kalem de iyi.
+
+120
+00:20:00,000 --> 00:20:01,000
+Doğru, değil mi?
+
+121
+00:20:03,679 --> 00:20:07,379
+Yok burada herhalde. Kapatınca gidiyor zaten. İstediğim de o.
+
+122
+00:20:08,319 --> 00:20:18,399
+Evet, burada bakın mesela şu date, bir şey, nitelik. Yani bağıntının, bağıntı setinin nitelikleri.
+
+123
+00:20:20,119 --> 00:20:25,379
+Advise etmeye şu tarihte başladı mesela. Tamam mı? Bunun notasyonu bu şekilde.
+
+124
+00:20:27,284 --> 00:20:43,364
+Yani bir I1 hocası S1 öğrencisini şu tarihte advise etmeye başladı. İmza tarihi mesela. İşte I1 hocası S2 öğrencisini başka bir date de imza attı.
+
+125
+00:20:43,364 --> 00:20:50,204
+Yani kafamızda böyle sample base canlandırabiliriz. Burada bu hadiseler var.
+
+126
+00:20:53,652 --> 00:21:04,991
+Evet, gene böyle rolleri gerektiren bir durum, reküsif bağıntılarda bunlardan bahsettik. Bizim üniversite veri tabanında da bu var.
+
+127
+00:21:06,516 --> 00:21:30,915
+Yani o zaten örnek orada. Horsların ön koşulları mesela. Bunlara recursive deniyor. Çünkü yani zincirleme bir şekilde gidebiliyor yani o manada. Yoksa böyle self-deference değil yani. Çünkü bir dersin ön koşulları var. Onların ön koşulları var. Onların ön koşulları. Öyle öyle gidiyor yani. O yüzden recursive doğru bir ifade olur herhalde.
+
+128
+00:21:34,324 --> 00:21:59,204
+Şimdi burada işte bağıntı setlerinin derecelerinden bahsediyor. Çoğunlukla tabii binary relation daha böyle hemen algılama noktasında daha iyi. Ama bazı durumlarda kitaptaki için ifade natively, yani bizim tabirimizle böyle doğal desem o biraz felsefe olacak, fitriği diyeyim. Daha böyle fitriği olarak.
+
+129
+00:22:01,011 --> 00:22:03,231
+Çok daha güzel bir şekilde temsil edebiliriz.
+
+130
+00:22:04,051 --> 00:22:06,612
+İşte o yüzden onlara da çok kulu, want to be oluyor.
+
+131
+00:22:06,711 --> 00:22:09,612
+İşte karışıklık biraz buradan çıkıyor. Onun notunu aldım ben.
+
+132
+00:22:10,872 --> 00:22:12,471
+Ek bilgilerde bu var.
+
+133
+00:22:13,251 --> 00:22:15,932
+Şimdi mesela biz şöyle bir cümle söylesek.
+
+134
+00:22:15,932 --> 00:22:19,892
+Students work on research projects under the guidance of an instructor.
+
+135
+00:22:21,395 --> 00:22:35,936
+Yani bu bağıntıdaki, bu cümledeki, bu küçük dünyadaki hadise, 2 tane varlık seti arasında değil. Yani biraz daha karışık. Demek ki 3 tane varlık seti arasında veya 30 tane de olabilir yani.
+
+136
+00:22:36,948 --> 00:22:52,088
+Değil mi? Böyle anlaşılıyor ki, o bağıntı, o hadise, tamam mı? İkiden daha çok olunca, o zaman bunları ben binary relationship öğrendim ya, ikili bağıntılarla yapabilir miyim sorusu hakta geliyor.
+
+137
+00:22:52,368 --> 00:23:01,288
+Hiç uğraşmayın, zorlamaya gerek yok. Onlarla yapmayalım, tamam mı? Onlarla yapabilir miyiz, yapamayız mevzusu açılıyor, tamam mı?
+
+138
+00:23:01,971 --> 00:23:27,751
+Orada da bir takım zorluklar ortaya çıkıyor. O kadarını söyleyeyim. Biraz daha söyleyeceğim daha ama. Hani böyle bir cümle gördüğümüz zaman bunu Turner'i yapalım. Veya işte dörtlü yapalım. Her neyse, beşli neyse. O kadar da karışık olmuyor da. Ama böyle olunca daha böyle native, daha fıtri, daha böyle tam meseleye hitap eden bir manzara oluyor. Zaten kavramsat tasarındaki maksadımız o yani.
+
+139
+00:23:28,627 --> 00:23:33,248
+O kavramı kağıda bu oyuncaklarla dökmek.
+
+140
+00:23:33,548 --> 00:23:38,688
+Belki ben anladım, bir sene sonra baktığınız zaman gene ben anlayayım, başkası baktığınız zaman gene anlasın.
+
+141
+00:23:38,928 --> 00:23:40,827
+Yani standart yapmaya çalışıyoruz.
+
+142
+00:23:42,268 --> 00:23:48,627
+İşte bunun böyle kağıda dökülmesi şu, ben şu notları aldım, ekstradan şunları aldım.
+
+143
+00:23:50,107 --> 00:23:51,627
+Fakat ilaiki sunularda bunlar...
+
+144
+00:23:52,400 --> 00:24:00,500
+Bunlar zaten varmış. Olsun, tekrar olmuş oldu. Yani bu açıklama varmış ileriki sunularda. Şimdi burada bakın şöyle bir ifade geçiyor gene.
+
+145
+00:24:00,500 --> 00:24:16,799
+More convenient. Tamam. Yani daha iyi yani, daha güzel. Yoksa olmaz değil. Olmaz değil şey ne? İkili bağıntılarla yapmak. Yani there are occasions when it's more convenient to represent relationship as non-binary.
+
+146
+00:24:17,811 --> 00:24:34,911
+İşte burada mesela biraz önceki cümle, yani hocalar öğrencilerle proje yapıyorlar. Bir hoca bir öğrenciyi bir projede koordine ediyor. Cümleyi böyle okuyabilirim, farklı bir şekilde de okuyabilirim yani. Ama sonuçta bu hadisede 3 tane varlık var yani.
+
+147
+00:24:35,731 --> 00:24:59,811
+Şimdi, burada mesela aynı şeydeki gibi, binary'deki gibi, şuralardaki kardinaliti dediğimiz kısıt akla geliyor. Yani burada kaça kaçtık. Tamam mı? Kaça kaçtık. Ona birazdan geleceğiz. Şimdi bu böyle çoklu çoklu olmuş olsun yani. Yani burada bu bağıntıda birçok hoca var, birçok öğrenci var, birçok proje var.
+
+148
+00:25:00,192 --> 00:25:12,452
+Öğrenciler, birçok hocayla, birçok projede çalışıyorlar. Tamam mı? Her şey çoklu yani. Böyle bir kısıt yok yani. Böyle kısıt çoklu olmasın.
+
+149
+00:25:13,011 --> 00:25:34,412
+Böyle bir manzara düşünüyorum. Şimdi ben bunu, şimdi biraz daha hani, kurcalamayın diyorum ama, rahat da durmuyoruz yani. Şimdi bakacağız olabilir mi diye işte biraz, mühendislik de bunu gerektiriyor herhalde. Böyle olur mu, şöyle olur mu falan, biraz böyle kurcalamamız lazım. Yani kurcalayalım. Kurcalayınca gelinen nokta, şu oluyor.
+
+150
+00:25:35,508 --> 00:26:00,008
+Biz bunu şu şekilde, sağdaki gibi, böyle, yani, yapmaya kalktığımız zaman, buradaki mana ne? Burada diyor ki, A ve B arasında bir bağıntı, A ile C arasında bir bağıntı, B ile C arasında bir bağıntı olarak yapsam ben bunu, yani basit her şeyi binary yapmaya kalksam,
+
+151
+00:26:00,415 --> 00:26:06,295
+Çünkü bunların dönüşümünü ona göre yapacağım. Böyle yapsam nasıl olur desem.
+
+152
+00:26:09,011 --> 00:26:14,011
+Burada bakın, ben şunu şöyle özetledim. Bunu anlatıyor bir sayfa falan da, merak eden okuyabilir.
+
+153
+00:26:14,011 --> 00:26:34,011
+Yani, burada şöyle bir mana var, uzun yapım kısası. Şuradaki bilgiden, şuradaki küçük dünya sample datasına baktığınız zaman, buradan şu sample datayı çıkarabilirim. Belki. Orada da belki var.
+
+154
+00:26:34,011 --> 00:26:35,011
+Tamam mı?
+
+155
+00:26:35,571 --> 00:26:51,031
+Ama şuradan yola çıkarak, şuradaki bilgiyi çıkarmam için biraz daha masraflı. Yani çıkarabilirim gene. Ama tam denk değil. Yani tam çıkaramayabilirim.
+
+156
+00:26:51,031 --> 00:26:53,391
+Bir arada konuşmaya başladım. Çünkü öyle, o yüzden.
+
+157
+00:26:55,251 --> 00:27:03,151
+Şimdi bunu ben işte o şeyde açıklamalarda, chapter 6 açıklamasında bir örnekle açıklamaya çalıştım.
+
+158
+00:27:03,471 --> 00:27:06,251
+Veya başka bir kitaptaki bir örnekle açıkladım.
+
+159
+00:27:07,031 --> 00:27:19,351
+Çünkü burada her ne kadar burada şöyle bağıntılarla buna ifade edildiyse, ifade ediliyor olsa da,
+
+160
+00:27:23,251 --> 00:27:28,291
+Bu birleşimleri yapmam lazım yani. Tamam mı? Bu birleştirmeleri yapmam lazım.
+
+161
+00:27:30,931 --> 00:27:46,751
+Bir de bununla beraber burada daha az bir data ile daha çok mana şey yapıyor. Yani şuradaki manayı kaplıyor. Bu mana var. Yani şuradan buraya çıkarım yapabilirim.
+
+162
+00:27:47,476 --> 00:27:57,716
+Ama buradan, buraya çıkarım yapamam. Bunu sample data ile görebilirsiniz, merak ediyorsunuz. Ben biraz daha detaylı anlatmaya çalıştım dokümanda.
+
+163
+00:27:57,716 --> 00:28:08,036
+İstersen bundan sonrasında oraya bırakıyorum yani. Çok da merak eden varsa gelip beraber düşünebiliriz veya e-mail ile veya başka bir kanaldan şey yapabiliriz yani. Şimdi daha ileri gitmiyorum.
+
+164
+00:28:15,476 --> 00:28:36,956
+yapılabilir. Niye denk? Yani, şimdi burada bir tane ortada, şöyle şunu çift çizgi yaptım. Çünkü bu weak olduğundan dolayı zayıf. Geçen hafta zayıf varlıkları görmüştük. Bu zayıf varlık olduğundan dolayı, bu zayıfın da böyle, bunlar da çift çizgi olsaydı unutmuştum onları. Yani, şunlar da şöyle çift çizgi olması lazım. Tamam mı?
+
+165
+00:28:37,811 --> 00:28:52,172
+Şöyle, şu da öyle. Çünkü bunun, bu zayıf varlığın identifier'ları olması lazım. Onlar da şu B, A ve C'ler. Tamam mı? A, A, B ve A, B, C'ler.
+
+166
+00:28:52,172 --> 00:28:59,051
+İşte şuradaki bir instance, bir varlık A, B, C'den birer tane içeriyor.
+
+167
+00:28:59,604 --> 00:29:14,144
+Veya daha fazla içeriyor. Çoklu çoklu olabiliyor. Şuradaki şeyi, sizde zaten istediğim şey ne? F1, I1, S1. İşte aynı veriyi burada üretebilirim yani.
+
+168
+00:29:15,444 --> 00:29:25,144
+Yani olayın özeti, şöyle bir turneri bir bağıntıyı, şu şekilde ekstradan bir varlık seti kullanarak,
+
+169
+00:29:25,364 --> 00:29:32,604
+ve şu binary bağıntıları kullanarak yapabilirim. Bunda herhangi bir süper olmaması lazım.
+
+170
+00:29:32,604 --> 00:29:38,364
+Ama şu şekilde yaparsam bilgi kaybı olabilir.
+
+171
+00:29:38,364 --> 00:29:45,364
+Olmayabilir, bilgi kaybı olabilir. Ama o yüzden şurada eşittir, eşit değildir manası var.
+
+172
+00:29:45,364 --> 00:29:53,163
+Bilgi kaybı olmaması, şuradan JOIN'larla, birleşimlerle şu tablolarda şu bilgiye evişebilirim.
+
+173
+00:29:53,428 --> 00:30:02,428
+Ama bazen de erişemeyebilirim. Bunun açıklaması için dokumana bakabilirsiniz. Olayın özeti böyle.
+
+174
+00:30:02,428 --> 00:30:06,428
+Soru da gelmediğine göre devam ediyorum.
+
+175
+00:30:06,428 --> 00:30:09,120
+Evet. Şimdi eee...
+
+176
+00:30:09,119 --> 00:30:34,159
+Varlık setlerinin böyle şeyi, içerisindeki nitelikler, onların domainleri, yine bağıntıların birbirleriyle, bağıntıların eleman sayıları, yani cardinality denilen bağıntı şeyleri, bira birlik, bira çoklu çoklu birlik. Bunların notasyonu bu şekilde. Ama bunlarda da bir sıkıntı olmaması lazım. Bunları basit olan şeyler bunlar.
+
+177
+00:30:34,644 --> 00:30:51,403
+Bunlarda bir sorun olmasın lütfen. Yani bunu gördüğünüz zaman bu bireçoklu. Mesela one to many. Yani ne demek? Şuradaki bir sample, burada many manasında. Tamam mı? Yani bir öğrencinin bir tane hocası advise ediyor.
+
+178
+00:30:52,051 --> 00:31:13,271
+Ama bir instructor, birçok, şurada çoklu, yok ya çoklu. Şimdi biraz şurada karışıyor. Buna alternatif aynı kitapta, hani başka kitap olsa tamam. Aynı kitapta buna alternatif biraz daha bunu detaylandırmak adına şöyle bir notasyon kullanmış, tamam mı? Şöyle, şöyle, birebir mesela. Yani burada LOL.
+
+179
+00:31:13,779 --> 00:31:41,779
+Hayır. Yani minimum, maksimum. Yani tamam burada çoklu oluyor ama maksimum ne kadar yani? Yani bir hoca maksimum kaç öğrenciye tanışmanlık yapabilir? Küçük dünyada bu da var yani. Hani çünkü hocanın bir kapasitesi var. Diyor ki ben 10 tane öğrenci alırım diyor. Öteki diyor ki 20 tane alırım diyor mesela. O yüzden burada da bir üst sınırı koymamız gerekir, aktarmamız gerekebilir. O küçük dünyada buraya aktarmaya çalışıyoruz ya. O yüzden burada bu biraz daha detaylı. Yani 0 yıldız diyor ki...
+
+180
+00:31:41,779 --> 00:32:08,779
+diyor ki, bu instructor'ın hiç öğrencisi olmayabilir sıfır o manada. Yıldız diyor ki, bu hocanın birçok öğrencisi var. Yani şuradaki low ve high, burayla alakalı bir şey. Tamamıyla buraya bakıyor, tamam mı? Bu da bununla alakalı bir mesele. Bunu böyle okuyoruz. Yani bir şekilde bu formalizasyonu yapmam lazım. Çünkü öteki türlü karışacak.
+
+181
+00:32:08,788 --> 00:32:31,028
+Yani niye böyle? Böyle kitapta öyle tanımadık. Başka kitaplar biraz daha farklı oluyor. Maalesef diyorum. Benim sizinle paylaştığım sunuda, ER diyagramı var. O ER'lar bizim buradaki ER'a yakın, buna yakın. Ama UML var. UML'de kullanılan şu notasyon buna ters. Tamam mı? Oraya bakıp da kafanız karışmasın.
+
+182
+00:32:31,476 --> 00:32:59,476
+Ben onu, o notu paylaşırken dikkat etmedim. Paylaştım. Artık şimdi geri almayayım. O örnek, ER diyagramı. Orada sadece ER'a bakın yani. Onunla ilgili bir not yazayım ben klasfuma. Sizinle paylaştığım ekstra ER örnekleri dokümanı var. Bir başka ders kitabının ders notları var. Ona da bakabilirsiniz. Ama orada başka bir notasyon da olur. Yani ona çok bakmayın bence. Sizinle paylaştığım...
+
+183
+00:32:59,476 --> 00:33:15,556
+İçeride, bilim ders notlarımaş. Oradaki İA'lara bakın. Oradaki UYM'lere bakmayın. Oradaki UYM'lerdeki bu notasyonla o farklı. Tamam mı? Yani bunu ben yazacağım classroom'a ama gene kafanız karışırsa bana sorun.
+
+184
+00:33:16,084 --> 00:33:29,484
+ve herhalükarda bu şunudaki notasyonları kullanacağız. Bu ders de sınavda tamam mı? Esas olarak bunları alıyoruz. Orada daha çok örnek olsun diye ben şey yaptım.
+
+185
+00:33:30,184 --> 00:33:37,164
+Oraya da hiçbir bakmayla da bilirsin yani. Sadece kitabın bu son kısımdaki egzersizlere de bakabilirsin yani.
+
+186
+00:33:37,844 --> 00:33:44,784
+Evet, burada demek ki kısıt noktasında cardinality söz konusu, bir de participation meselesi var.
+
+187
+00:33:45,104 --> 00:33:51,264
+İşte burada participation, ilk değerle participation manası yükleniyor.
+
+188
+00:33:52,124 --> 00:33:55,723
+İkinci değerle de cardinality manası yükleniyor.
+
+189
+00:33:55,923 --> 00:33:57,423
+Esasın olayın özeti böyle.
+
+190
+00:33:57,864 --> 00:34:01,683
+Yani şu sıfır diyor ki, instructor'ın hiç öğrencisi olmayabilir.
+
+191
+00:34:01,683 --> 00:34:02,864
+Bunu söylüyor.
+
+192
+00:34:03,539 --> 00:34:13,940
+Bu da diyor ki, student'in bir tane hocası mutlaka olması lazım, low 1. En az bir tane hocası olması lazım. Yani burası total participation, burası partial participation, kısmı.
+
+193
+00:34:15,140 --> 00:34:29,340
+Bu ne değiş, neyi değiştirecek bu yani? İşte bu küçük dünyadaki bu vaziyeti ben buraya aktardım. İlişkisel model dönüşümlerinde tablo oluşacak mı, oluşmayacak mı, yabancı anahtar sağ mı gidecek, sol ama gidecek, bunları şekillendiriyor yani ileride. Tamam mı?
+
+194
+00:34:29,652 --> 00:34:53,792
+Kimden tahmin edebilirsin? Geçen hafta yine bir parça anlat. Biraz tekrar oluyor bu hafta. Hem de sınava hazırlık oluyor. Bakın yukarıdaki notasyon, aşağıdakiyle denk olduğunu görün. Aşağıda şu ana kadar kullandığımız bileç okulu, ok olan taraf, diyor ki öğrencinin bir tane instructor var.
+
+195
+00:34:54,356 --> 00:35:13,856
+Öğrencinin bir tane instructor olduğunu, şurada şu söylüyor esasında, şu, bir. Bir tane olduğunu şu söylüyor. Burada şu söylüyor. Şu, bir diyor ki, öğrencinin mutlaka bir advisor var, total olduğunu şu söylüyor. Görüyorsunuz değil mi [öğrenci]?
+
+196
+00:35:14,260 --> 00:35:22,260
+Şurada da iki çizgi söylüyor. Yani bu iki şeklin denk olmasındaki notasyonlar birbirine nasıl denk olduğunu göstermiş oldum. Tamam mı?
+
+197
+00:35:22,260 --> 00:35:29,260
+Çok karışık değil ama dikkat edin yani buna. Bu malzemeler üzerine bir şey yapmaya çalışıyoruz yani.
+
+198
+00:35:29,260 --> 00:35:35,260
+Evet. Şimdi eee...
+
+199
+00:35:36,371 --> 00:35:42,231
+Çoklu, yine kritik bir nokta, geçen hafta da bahsettiğim kritik bir nokta burası.
+
+200
+00:35:42,631 --> 00:35:49,451
+Şimdi, çoklu bağıntılarda, yani Turnley, şimdi Turnley'i halletsek diğer meseleler hallolacaklar.
+
+201
+00:35:49,492 --> 00:35:53,951
+O kadar da zaten zorlamaya gerek yok, yani böyle olayın teorisini şey yapmaya da gerek yok.
+
+202
+00:35:54,251 --> 00:35:57,291
+Turnley'de meseleyi anlasak, yani onu da kısmen anlıyoruz.
+
+203
+00:35:58,171 --> 00:36:00,532
+Çünkü bazı böyle bulanık noktalar var.
+
+204
+00:36:00,891 --> 00:36:04,331
+Burada da şöyle bir kolaylaştırma yapıyor, veya bu kitap da böyle yapmış.
+
+205
+00:36:04,371 --> 00:36:14,831
+Benim eski notlarda böyle değildi. Yine orada bir şey var. Burada diyor ki, şuradaki karmaşıklıktan dolayı,
+
+206
+00:36:14,831 --> 00:36:27,751
+to avoid confusion, we outlawed more than one arrow. Yani çoklu bağıntıda eleman sayıları, cardinality yani, çoklu çoklu çoklu olduğunu biz gördük biraz önceki şeyde.
+
+207
+00:36:28,091 --> 00:36:31,991
+Yani proje, instructor, student, proje, guide.
+
+208
+00:36:32,371 --> 00:36:47,691
+turn'leri bağıntısında onu gördük. Ama orada, küçük dünyada öyle mi? Yani mesela bir öğrenci, bir instructor'la sadece bir projede çalışabilirdi sen. Böyle bir kısıt olsa o küçük dünyada.
+
+209
+00:36:50,291 --> 00:36:58,132
+O zaman orada bazı eleman sayıları, kardinaliti değişecek. Onu o turner'e aktarmam lazım.
+
+210
+00:36:58,132 --> 00:37:16,531
+İşte burada, buradan hareketle buradaki tekli olan, yani çoklu değil de tekli olan ok koyduğum bir tane olsa, burada bir ambiguity yok. Burada bir bilisizlik yok.
+
+211
+00:37:16,724 --> 00:37:36,204
+Yani, Turner'in bir bağıntı düşünün. Şekil hiç ilmemiş ama. Bir tane ok var. Yani ABC, varlık setlerim var. Şuradaki yazıyor mesela ABC. R between ABC. With arrows, B and C diyor. Yani arrow'lar B, B, C'de var.
+
+212
+00:37:36,563 --> 00:37:57,683
+Bu karışıklık çıkan, sadece B'ye bir ok olmuş olsun. Yani A ve C'ye, Turner'i bağıntıdan A ve C'ye ok yok, sadece B'ye var. Buradan ne anlıyoruz? A ve C'den bir sample aldığım zaman, A1, C1 mesela,
+
+213
+00:37:58,228 --> 00:38:25,067
+Burada bir tane B ile eşleşiyor. B1. Bir daha A1, C1 hiç yıldız zaman karşıma çıkmıyor yani. Ama A1 çıkabilir tek başına. C1 çıkabilir. Yani C1, A2 olabilir mesela. Kataya kalkıp yazmıyorum buradan uzaklaşmaması için. Ama A1, C1 bir daha karşıma çıkmıyor. Onu söylüyor yani. Bunda bir belirsizlik yok. Ama iki ok olduğu zaman, bir mi olacak, iki mi olacak?
+
+214
+00:38:27,443 --> 00:38:54,983
+Yani, B ve C'ye oklar olmuş olsa, A bir kez ortaya çıkıp, B ve C ile eşleşecek. Yani A1, B1, C1, bir daha hiç A1 yok. Bu manada mı? Yoksa, iki tane ok olduğu zaman B ve C'ye, gene biraz önceki gibi düşünüp, A1, B1, C1, A1, B1 bir daha çıkmayacak. Ama A1, B2 çıkabilir.
+
+215
+00:38:57,523 --> 00:39:01,923
+Biraz önce hiç A1 bir daha çıkamıyordu yani. Böyle mi değerlendireceğim?
+
+216
+00:39:22,739 --> 00:39:34,099
+2 ok, yani bir turneri bağıntıda çoklu çoklu çoklu zaten sorun yok. Çoklu çoklu bir ok olunca tamam. Orada belirsiz bir durum yok.
+
+217
+00:39:34,780 --> 00:39:43,860
+Ama 2 ok olduğu zaman onu turneri yapmayalım. Onu nasıl yapabiliriz peki? Böyle bir durum varsa. Onu biraz önce dönüşümler yaptık ya.
+
+218
+00:39:44,307 --> 00:39:50,788
+İşte onlardan soldaki her zaman mümkündür. Sağdaki her zaman mümkündür. Soldaki gibi yapalım.
+
+219
+00:39:50,788 --> 00:39:57,268
+Şimdi üşenmeye tekrar geriye gidiyorum. Çünkü bu noktayı netleştirmek adına. Ben bir kere kafamda netleştirmem lazım.
+
+220
+00:39:57,268 --> 00:40:06,867
+Ondan sonra size aktarıyorum. İşte biraz da bulanık bir şey olduğu için bu çok kolay olmuyor. Ama benim geldiğim nokta böyle. Bunu sizinle paylaşıyorum.
+
+221
+00:40:07,987 --> 00:40:29,527
+Burada eğer çoklu çoklu çoklu değil de, bunu keyfi olarak yaptık. Bu zaten mümkünse bunu kullanmak. Bu çok native bir şey yani. Ama eğer çoklu bildiyse yine kullanalım.
+
+222
+00:40:35,923 --> 00:41:03,083
+şöyleyse. Bunun manası ne? Yani demek ki burada bir öğrenci bunun manası nasıl söyleyebilir? Böyle bir manasını içine bırakalım. Böyle bir durum gördüğünüz zaman bunu böyle yapmayalım da bunu bu şekilde yapalım. Şunlara oklar koyalım şöyle. Şöyle bu okları koyalım. O zaman daha doğru okunuyormuş yani. Bu zaten sakat yani.
+
+223
+00:41:03,923 --> 00:41:07,923
+yapmayabilir dedik ya burada. O yüzden şu daha böyle sağlam. Böyle yapmamız lazım.
+
+224
+00:41:07,923 --> 00:41:18,923
+E burada da iki ok olduğu zaman böyle kullanmıyoruz. Şöyle kullanıyoruz. İki ok olması durumu nasıl olacak? Yani nasıl bir kısıt var bu küçük dünyada?
+
+225
+00:41:18,923 --> 00:41:29,451
+Bunu nasıl ifade edebiliriz? Bir öğrenci bir projede bir instructor ile çalışabilir.
+
+226
+00:41:30,324 --> 00:41:32,983
+Bu öğrenci başka projede çalışabilir mi?
+
+227
+00:41:46,356 --> 00:42:05,096
+Bu mana, yani S1, E1, I1 var. Bir daha S1 görecek miyim yani? S1, P2, I1 görmeyeceğim tamam da. S1, P2, I2 görebilecek miyim mesela?
+
+228
+00:42:09,076 --> 00:42:12,036
+Söylemeyeceğim. Yani benim sanatımı görememe noktası.
+
+229
+00:42:12,856 --> 00:42:14,695
+Tamam. Yani çünkü burada
+
+230
+00:42:30,452 --> 00:42:31,532
+Benim kanaatim öyle.
+
+231
+00:42:34,472 --> 00:42:35,392
+Evet.
+
+232
+00:42:38,312 --> 00:42:46,992
+Şimdi bu kitap da böyle bırakmış. Tamam mı? Ben kanaatımı paylaştım. İtiraz olan varsa tekrar değerlendirebilir.
+
+233
+00:42:47,539 --> 00:43:15,539
+Şimdi, burada, bu kısıtlar ve bu varlığı setleri ve varlığı bağımsız setlerinden hareketle, burada diğer bir kısıtımız, primary key, kısıtları. Bu varlığı setleri için kolay, yani kavram olarak kolay, bağımsız setleri için de kolay, şu gibi yanlış bir ifade vardı, açıkçası, net bir şekilde, durasın, doğru değil, özellikle kafanızı karıştırıyorsun, okumayın diye. Çok önemli değil yani, nedense böyle bir şey yazmış.
+
+234
+00:43:15,539 --> 00:43:27,840
+Bağıntı setlerinde, menu to menu de, bağıntı seti için anahtar, her iki taraftaki primary keyler olması gerekiyor.
+
+235
+00:43:29,680 --> 00:43:35,940
+Yani, çoklu çoklu bağıntı seti için anahtar ne olacak dediğimiz zaman,
+
+236
+00:43:38,255 --> 00:43:46,255
+Çoklu çoklu bağıntıda binary olsun mesela, orada her iki taraftaki anahtarın ikisi birden olması lazım.
+
+237
+00:43:46,255 --> 00:43:52,255
+Anahtara, primary key, o bağıntısı etlerin primary keyine dahil olması lazım.
+
+238
+00:43:52,255 --> 00:44:00,255
+Çünkü orada bir tanesi diğerleriyle eşleşebiliyor yani, diğer birden çok eşleşebiliyor.
+
+239
+00:44:00,255 --> 00:44:04,235
+Tekrar ediyor, herhangi bir tanesi olamaz yani. Ama bire çoklu da,
+
+240
+00:44:04,532 --> 00:44:31,311
+O bağımsıda, o pair, o ikililerde, bile çoklu da, çoklu olan tarafın anahtarı olması lazım. Tekli olan taraf, orada yani A1, B1 ile A1, B2 ile A1, B3 ile, bunu böyle görüyoruz. Yani A1 tekrar ediyor orada. A1 anahtarı olamaz. Ama diğer B1,
+
+241
+00:44:31,923 --> 00:44:44,923
+Bir tek abin de gözükebilir, bire çoklu dedim ya. O zaman o player da, o data setinde, yani o bounty setinde, çoklu olan taraf anahtar olması lazım. O bounty setin anahtarı böyle.
+
+242
+00:44:44,923 --> 00:44:56,923
+The primary key of the main side is minimal super key and is used as the primary key. Tamam mı? Şimdi böyle duruşun. Diğerleri aynı devam ediyor. One to one da nasıl? Herhangi bir tanesi.
+
+243
+00:44:57,268 --> 00:45:11,048
+Herhangi bir tanesi prime key olabilir. Çünkü bir sample alın soldan, bir sample sağdan. Bir daha ne soldan ne sağdan o sample çıkmayacak yani ortaya. O yüzden fark etmez hangisi o
+
+244
+00:45:11,048 --> 00:45:18,447
+Faire data'ya baktığınız zaman ikisinden bir tanesi prime key olabilir yani o bağımlı seçtiği için. Şimdi bu böyle olmakla beraber.
+
+245
+00:45:20,628 --> 00:45:29,028
+Şimdi tabi, ilişkisel model tablolarına dönüşümde, bunlar, bunları kullanacağız bu fikri. Bu fikri anlamış olmamız lazım.
+
+246
+00:45:31,428 --> 00:45:45,028
+Bu fikri anladık. Sorun yok. Geri dönüş olmadı. Diğer bir mesele, weak entity setler idi. Bu da, zayıf varlık setleri. Yani bu zayıf, istenmeyen bir şey diye düşünmeyin. Zayıf varlık.
+
+247
+00:45:45,235 --> 00:45:58,615
+Bu aslında sisteme yük getirmeyen bir şey yani. Çünkü zayıf varlıkların bir güçlü varlığı var. Zayıf varlıklar için ayrıyeten ekstra böyle bir primary key'yi tanımlamıyoruz yani.
+
+248
+00:45:59,155 --> 00:46:06,155
+Tamam mı? Belki o cidden daha hafif yani. İstemi için daha hafif olduğunu söyleyebiliriz. Yani güzel bir şeydi aslında.
+
+249
+00:46:06,155 --> 00:46:19,155
+Burada, bunu açıklamıştık kesen hafta. Burada böyle bir formda, bunu şu şekilde zayıf varlığa, dönüştürüp zayıf varlıklar, herhangi bir primary key'i içermiyorlar.
+
+250
+00:46:19,155 --> 00:46:27,155
+Burada görünüyor. Fakat şu primary key'i yani bunun düştü varlığı altında şöyle bir discriminator içeriyor.
+
+251
+00:46:27,155 --> 00:46:51,155
+bir dirici varlık içeriyor. Buradaki semantiği çalıştıkça bakarsınız yani. Bizim tasarımımızdaki bir parça bu. Ve en nihayetinde şöyle bir noktaya varmıştık. Yani bizim diğer diagramımız, üniversite veri tabanının diğer diagramı böyle. Diğer bir parçayı analiz edin, anlayın yani.
+
+252
+00:46:51,360 --> 00:47:00,679
+Hatta kendiniz çizmeye çalışın. Güzel ki hangi varlıklar olması lazım, o varlıklar arası hangi bağımsız lazım.
+
+253
+00:47:00,679 --> 00:47:08,840
+Biraz da meleke kazandık ya, bunu çizebilirseniz kapalı olarak güzel bir noktaya varmışız biz demek.
+
+254
+00:47:08,840 --> 00:47:17,039
+Aynı şekilde laboratörde kullanmanız kampanı veri tabanı içinde aynı çalışmayı yapabilirsiniz. Bence güzel bir egzersiz.
+
+255
+00:47:17,152 --> 00:47:28,152
+Şimdi burada bunu böyle havale ediyorum. Burada git yansı üzerinden geçmiş bir parça zaten üzerinden geçmişimden özel konularda.
+
+256
+00:47:28,152 --> 00:47:39,152
+Şimdi burada diğer önemli bir nokta, biz bu tasarımımızı yaptıktan sonra, yani bu noktaya geldikten sonra esasında bir aşama daha var. Burada bir normalizasyon var. Bunu biraz erteliyorum.
+
+257
+00:47:41,556 --> 00:47:48,056
+Normalizasyonu da yaptıktan sonra, normalizasyonu tabi tablolar üzerinde de yapabiliriz.
+
+258
+00:47:48,056 --> 00:47:53,756
+Normalizasyon öyle olsa daha iyi oluruz, doğru. Burada yapmaya gerek yok bu aşamada.
+
+259
+00:47:53,756 --> 00:47:59,556
+Bunu biz İstanbul aşamalarına dönüştürmemiz lazım. Bu aşamalarında da bir tabi kurallar var.
+
+260
+00:47:59,556 --> 00:48:07,056
+O kurallarda böyle içi dolu. Bir tanesinin manasını biraz önce söyledim, bağımsızların primi 2 noktasında.
+
+261
+00:48:07,507 --> 00:48:19,147
+Burada güçlü olan varlık setleri, tabloya dönüştürülecek. Hangi tablolar ortaya çıkacak, hangi nitelikler olacak falan. Bu meseleler yani burada.
+
+262
+00:48:22,675 --> 00:48:34,655
+Mesela işte, CORSE tablosu, Section, şey, zayıf olduğu için, o Section'ın güçlü varlığının primary key ile beraber yazdık.
+
+263
+00:48:34,875 --> 00:48:42,515
+Yani güçlü olanlarda zaten sorun yok. Yani CORSE için burada, CORSE, CORSE ID, TIT, TREDIT tablosuna dönüşecek bu. O gayet açık zaten.
+
+264
+00:48:42,880 --> 00:48:52,280
+Ama zayıf olanlar da şu görünen niteliklerle beraber, bunun güçlüsüyle beraber, CORS ID, TEXION ID, semester, YEAR olacak yani, tamam mı?
+
+265
+00:48:54,280 --> 00:48:58,880
+Bunu böyle hallettik. Güçlüyü hallettik, zayıfı hallettik. Kurallar bunlar.
+
+266
+00:48:58,880 --> 00:49:05,880
+Zaten bunun manasına böyle şey yapmışız, öyle bir şey. O yüzden bu nokta gayet açık.
+
+267
+00:49:06,260 --> 00:49:25,620
+Bu varlık seti içerisindeki niteliklerde, böyle en tepedeki adres değil de en aşağıdakileri böyle nitelikleri kullanıyoruz. Yani, bunları çıkartıyoruz. Bunlar, manakavram olarak bunlar burada duruyorlar.
+
+268
+00:49:25,620 --> 00:49:33,000
+İşte NEM'i kullanmıyoruz nitelik olarak. Bunları kullanıyoruz. Bunları kullanıyoruz.
+
+269
+00:49:33,940 --> 00:49:41,059
+Tamam. Phone number burada neydi? Hatırlayalım mısınız? Bakın şu notasyona. Üstü parentesi diyorlar ya.
+
+270
+00:49:45,684 --> 00:49:59,684
+Bu, MultiValue. Yani bir hocanın, bir tane adresi var, bir tane id'si var, bir tane ismi var. Bunlar hep, SingleValue.
+
+271
+00:49:59,684 --> 00:50:09,684
+Şunun manası, Composite idi. Yani bir SingleValue ama alt başlıkları var, o Attribute'nin.
+
+272
+00:50:12,628 --> 00:50:16,788
+Composite ise, Type'lar var alt.
+
+273
+00:50:16,788 --> 00:50:28,788
+Bununla beraber, şu, Fon namur ise, Multi-Lay, yani, bir, Instructure'nın birden çok telefon numarası var.
+
+274
+00:50:31,956 --> 00:50:33,276
+Şu neydi?
+
+275
+00:50:34,816 --> 00:50:35,615
+Hatırlığınız var mı?
+
+276
+00:50:42,068 --> 00:50:59,568
+Evet, drive. Evet, drive. Yani drive bir literik. Yani bunu ben saklamıyorum. Hage'i tabloya saklamıyoruz. Bunu ben drive edebilirim, hesaplayabilirim. Neyle? SORT prosedürünü hesaplayabilirim. Tamam mı?
+
+277
+00:51:01,460 --> 00:51:09,199
+Evet, burada bu demek ki Instructor'a ait olan şemamız, tablomuz böyle bakın.
+
+278
+00:51:09,199 --> 00:51:11,179
+TG görmüyoruz burada değil mi?
+
+279
+00:51:11,179 --> 00:51:14,059
+FirstName, MiddleName, LastName bunları aldık.
+
+280
+00:51:14,059 --> 00:51:18,460
+Sonra StreetName, DepartmentNumber onları aldık.
+
+281
+00:51:18,460 --> 00:51:19,460
+Tamam.
+
+282
+00:51:19,460 --> 00:51:22,259
+City, State, Zip'i aldık.
+
+283
+00:51:22,259 --> 00:51:23,860
+Date of 4'i aldık.
+
+284
+00:51:23,860 --> 00:51:26,059
+OnNumber'ını da almadık bakın, bunu da almıyoruz.
+
+285
+00:51:26,059 --> 00:51:28,012
+Bunu da almıyoruz, bunu da almıyoruz.
+
+286
+00:51:28,532 --> 00:51:32,532
+Son numara nereye yazıyoruz? Hadi Eci sonra nereye hesaplarız? Son numara nasıl yapacağız?
+
+287
+00:51:32,532 --> 00:51:38,532
+Multi-valued olan nitelikler, başka bir tabloda saklanması lazım.
+
+288
+00:51:39,532 --> 00:51:51,532
+Çünkü burada bir RAW'da, bir RECORD'da bir tane nitelik değeri saklayabiliriz. Yani ilişkisel model tasarımı bunu gerektiriyor.
+
+289
+00:51:51,635 --> 00:52:05,956
+Bir ID'nin, the instructor ID'nin birden çok fon numarası varsa, bunu başka tabloda saklamam lazım. O tablonun acaba primary key ne olması lazım? Ve o tablonun nitelik şeması ne olması lazım?
+
+290
+00:52:08,756 --> 00:52:10,756
+Evet, ve?
+
+291
+00:52:12,996 --> 00:52:13,996
+Aynen.
+
+292
+00:52:14,596 --> 00:52:18,196
+Peki, anahtarı ne o tablonun primary key?
+
+293
+00:52:19,668 --> 00:52:22,668
+ID yeterli mi? Fon number yeterli mi?
+
+294
+00:52:24,527 --> 00:52:27,487
+İkisinin beraber olması lazım. Evet. Ben hep düşünerek.
+
+295
+00:52:29,108 --> 00:52:54,648
+Yani, kurallar çıkıyor ama, bunu ezberleyebiliriz, bu kuralları. Ama onun yerine, maksat, yani, primary key ne demek, onları öğrendik, kablo ne demek, şaman öğrendik. O temel şeydir öğrendikten sonra, yani o bütün meşeğini işleterek, yani burada ben, instructor'da, on number'ların hepsini bir rekord içerisinde tutmuyorum. Şimdi burada da tabii, niye tutmuyorum? Tutayım.
+
+296
+00:52:57,331 --> 00:53:06,971
+İstersen bu Instructor'ın Fon Number'ının nitelik tipi ne olması lazım?
+
+297
+00:53:08,652 --> 00:53:16,911
+Nitelik tipi ne olması lazım? Yani bir tane telefon numarası olsa Fon Number için nasıl bir nitelik tipi olabilir?
+
+298
+00:53:21,043 --> 00:53:23,443
+integer değil herhalde, double değil mi?
+
+299
+00:53:25,443 --> 00:53:32,643
+WarChart, WarChart, WarChart da değil, Chart, telefon numarası 10 dijit falan herhalde değil mi? Çok değişken bir şey değil.
+
+300
+00:53:32,643 --> 00:53:41,043
+Hadi WarChart, WarChart 10 dijit mesela değil mi? Ama birden çok telefon numarası varsa, nasıl yapacağım?
+
+301
+00:53:46,643 --> 00:53:51,843
+Yani tasarım yapıyoruz ya, bu şekilde bunu ben bu tabloya aktarmam lazım.
+
+302
+00:53:52,643 --> 00:53:59,243
+Böyle bir şey önersem, 11, 12, 13, o kadar.
+
+303
+00:54:00,243 --> 00:54:05,243
+Bu iyi bir tasarım olur mu? Yani good design diyelim ya, good design olur mu?
+
+304
+00:54:08,851 --> 00:54:10,851
+Array yapsak, tamam güzel.
+
+305
+00:54:10,851 --> 00:54:12,851
+Yani bu noktaya. Array yapabiliriz.
+
+306
+00:54:12,851 --> 00:54:17,851
+Bir önceki söylediğim, Fon1, Fon2, Fon3'ün ne zararı var?
+
+307
+00:54:19,851 --> 00:54:25,851
+Yani herkesin 3 tane telefonu olmayabilir ya, yani %80 hocanın bir tane telefonu vardır.
+
+308
+00:54:25,851 --> 00:54:29,851
+E onlar için Fon2, Fon3 boş kalacak, NAL kalacak yani.
+
+309
+00:54:30,164 --> 00:54:38,563
+Kaldı ki, belki de başka bir küçük dünyada aynı veri tabanında kullanan çoğu hocanın 4-5 tane telefonu var. Onlara yazamayacağım oraya.
+
+310
+00:54:38,563 --> 00:54:47,043
+Hani baştan kısıt koydum yani, kısıtlamış olduk böyle 3 tane. 10 tane koysam telefon numarası, aman hiç veri kaybolmasın diye.
+
+311
+00:54:47,043 --> 00:54:56,164
+O da oldu. Yani iyi bir tasarım olmadı yani. Böyle çok, yani böyle self-adaptif bir şey olması lazım yani.
+
+312
+00:54:57,748 --> 00:55:13,528
+Array koyabilirim fakat Array, yani, phone number, phone number, phone number bir Array içerisinde. Buradaki verit tipimizde artık Varchar değil de Array. Array'ın içerisinde herhangi bir şey yazabiliriz. Yani oldukça denelik bir Array oluyor.
+
+313
+00:55:13,528 --> 00:55:21,088
+Vizyosperde var, bütün elitabanlarında var. O yüzden elitabanlar esasında Pure diyor ne demek? Tam böyle.
+
+314
+00:55:22,036 --> 00:55:27,036
+Saf, hiç katıksız, ilişkisel model değiller. Object Relational.
+
+315
+00:55:27,036 --> 00:55:31,036
+Yani, Relational esaslı ama objelerde koyabiliriz.
+
+316
+00:55:31,827 --> 00:55:39,487
+Tamam mı? Bu manada, object yorayışınız. Yani baktığınız zaman bunların kategorilerine object yorayışınızı göreceksiniz.
+
+317
+00:55:39,487 --> 00:55:49,467
+Dikkat edilen tabanlara object yorayışınızı. Bu ama formal ilişkisel modelin formal ilişkisel modele aykırı bir durum. Tamam mı?
+
+318
+00:55:49,727 --> 00:55:55,167
+Yani normalizasyon için böyle bir şey 1NF'yi bile sağlamıyor yani.
+
+319
+00:55:55,539 --> 00:56:10,539
+Birazdan bahsedeceğiz normalizasında. Ama çok daha efficient. Yani ben burada array olarak saklamam. Olası bazı veri kayıplarını, gözümünü alarak, orada array olarak saklıyoruz yani.
+
+320
+00:56:11,092 --> 00:56:24,492
+Onu da çok tahammül edebiliyoruz. Formal olan da bunu saklayamam. İşte buradaki benim ek bir multivariate etribütler için ayrı bir şama tanımlama durumu
+
+321
+00:56:24,719 --> 00:56:40,039
+Pure ilişkisel model için geçerli bir şey. Tamam mı? Bunu böyle yapabiliriz. Yapma edebiliriz. Çünkü ayrı bir tablo açıyorum. Ayrı bir primary key tanımlıyorum. Belki o tablo çok büyük olmayacak belki ama, gene büyük olacak yani.
+
+322
+00:56:40,299 --> 00:56:47,499
+Stratumların sayısı ve onların telefon numarasının sayısı kadar olacak yani. 100 tane hoca varsa, her birinin 3 tane telefonu varsa 300 satır olacak.
+
+323
+00:56:47,499 --> 00:56:50,699
+Ve belki evvelkinde 100 satır vardı hocaların tablosu.
+
+324
+00:56:50,943 --> 00:57:02,664
+100 tane koca var dedik. 3 tane telefonu varsa 300 satır ortaya çıktı yani. Ama onun yerine ben bunu araya olarak tutabilirdim. Arada baya bir fark var yani. Evet.
+
+325
+00:57:02,664 --> 00:57:15,864
+Şimdi buna devam edelim. Yani multi-verit'in farklı bir tabloda saklama durumu ve burada bu tablonun şemasının ID, yani Instructor ID ve Phone Number.
+
+326
+00:57:16,083 --> 00:57:29,804
+olduğunu görelim. Bu bilgiyi taşımaya çalışıyorum ya. Esas şeyde bunu saklayamadım. Orada yapamadım. Şimdi birçok on numarasını saklamam lazım.
+
+327
+00:57:31,603 --> 00:57:41,003
+bir tapal için, birden çok fon numarası olması lazım. O tapalı tekrar edemiyorum çünkü Instructor'ın ID'si tekrar edemez.
+
+328
+00:57:41,003 --> 00:57:46,003
+Unique olması lazım. Tamam mı? Bütün yolları denedik. Yani anca farklı tablo olması gerektiği noktasına vardık.
+
+329
+00:57:46,003 --> 00:57:53,403
+Bu tablonun anahtarı da hem Instructor ID olması lazım, hem de Phone Number olması lazım. Öyle değil mi?
+
+330
+00:57:53,403 --> 00:57:56,403
+Sadece Instructor ID olsa,
+
+331
+00:57:57,172 --> 00:58:00,731
+Olmaz. Çünkü bir Instraktor'ın birden çok telefonu var.
+
+332
+00:58:01,451 --> 00:58:03,451
+On numarası olsa, tek.
+
+333
+00:58:05,731 --> 00:58:07,491
+Bu biraz olabilir gibi.
+
+334
+00:58:08,091 --> 00:58:11,611
+Yani düşünüyoruz küçük dünyayı. Hiç de ezbere yapmıyoruz bakın.
+
+335
+00:58:11,611 --> 00:58:16,731
+Küçük dünyayı düşünelim. Orada phone number sanki olabilir gibi.
+
+336
+00:58:19,891 --> 00:58:31,092
+Ama, hani iki hocada, aynı telefonu kullanıyor olabilirler, ev telefonu, dur evlidir mesela, öyle değil mi? Olabilir. Çok garip bir varsayım söylemedim yani.
+
+337
+00:58:32,092 --> 00:58:37,692
+Öyle olunca, telefon numarası, iki hocadan da telefonu tekrar edecek yani.
+
+338
+00:58:37,692 --> 00:58:45,692
+10 numarası, I1 hocası için, I2 hocasını aynı telefon numarası için. Yani telefon numarada da tekrar edebilir yani orada.
+
+339
+00:58:45,940 --> 00:58:56,739
+Sol taraf ID, Instructor, zaten tekrar ediyoruz. Yani bizim istediğimiz ne ile primary keyin benzersiz yapması, o takılı, o rekordu benzersiz yapması gerekiyor.
+
+340
+00:58:56,739 --> 00:59:06,739
+O yüzden demek ki böyle, multi-valuatlarda bu şekilde 2 nitelik birden şey olması lazım, ID ve Fondam. Evet.
+
+341
+00:59:08,628 --> 00:59:28,808
+Böylece bağıntı setleri için şeye geldik. Bağıntı setlerinin tablolara dönüştürülmesine geldik. Minutu Meni de mutlaka bağıntı seti için yeni bir tablo tamamlamam lazım. Mutlaka. Yani başka yolları deneyin.
+
+342
+00:59:29,172 --> 00:59:53,612
+Yine tamam bunu ezberleyeceğiz ama bunun başka türlü olamayacağını da görebilirsiniz. Yani diğerlerini söyleyeyim mesela. Çoklu, bire çoklu da çoklu olan tarafa, çoklu olan tarafa, diğer işaret ettiği niteliğin, diğer birine olan taraftaki anahtarı çoklu olan tarafa taşımam lazım ve yabancı anahtar yapmam lazım.
+
+343
+00:59:54,420 --> 01:00:01,920
+İlişkisel model dedik ya, bu ilişkiler bize bu tablolarda yabancı anahtarı olarak ortaya çıktılar.
+
+344
+01:00:02,699 --> 01:00:06,539
+Çoklu olan tarafa yabancı anahtar taşımam lazım.
+
+345
+01:00:06,539 --> 01:00:11,800
+Tekli olan tarafa taşıyın bakın, olmadığını görün.
+
+346
+01:00:13,019 --> 01:00:20,820
+Yani, şimdi burada I1, D1, I1, D1, I2.
+
+347
+01:00:20,880 --> 01:00:25,880
+D1, I3, D1, I4.
+
+348
+01:00:25,880 --> 01:00:27,880
+İyice gördük mü?
+
+349
+01:00:27,880 --> 01:00:37,880
+Yani, I1'in departmanı D1, I2'nin departmanı D1, I3'ün departmanı D1.
+
+350
+01:00:37,880 --> 01:00:41,880
+Her bir I1, I2, I3'te o D1 gözükmesi lazım.
+
+351
+01:00:41,880 --> 01:00:47,880
+Ama burada D1'e ben, D1 bir tane sample, bir tane data. D1 rekordu.
+
+352
+01:00:48,755 --> 01:01:02,155
+Orada I1 var, I2 var, I3 var. O rekord içerisinde ben bunları nasıl yazacağım? D1, I1, I2. Bir şekilde bu bağıntıyı aktarmam lazım. İşte bu bağıntıyı bile çokluysa çoklu olan tarafa aktarabilirim ancak.
+
+353
+01:01:03,835 --> 01:01:13,715
+Çoklu olan tarafa yabancı olan tarafa aktarabilirim. Tamam mı? Tek yol böyle mi? Tek yol bu değil. Başka nasıl olabilir?
+
+354
+01:01:17,876 --> 01:01:30,876
+Geç hafta hızlı bir şekilde bunun üzerinden geçtik. Şimdi tekrar geçiyoruz belki tekrar oluyor ama maalesef sizde benim kolay suallerime cevap vermiyorsunuz. Demek ki çalışmadınız.
+
+355
+01:01:36,947 --> 01:01:47,447
+Yani bu veritabanının en temel şeyleri, yani en temel kavramları, tasarım olsun, SQL, SQL, en temel şeyleri mutlaka anlayın yani.
+
+356
+01:01:47,447 --> 01:01:52,447
+Ben veritabanı dersi bilgisayar mernisliğinde yani, ha.
+
+357
+01:01:58,516 --> 01:02:07,076
+Başka bir yolu var. Şu bağıntı için ayrı bir tablo tanımlamak. O zaman şuradaki dediğim yere geldik.
+
+358
+01:02:07,076 --> 01:02:19,235
+Şurada ne demiştim? Bağıntı setleri için primal key meselesine şuraya geri döndüm. Primal key relationship sets.
+
+359
+01:02:19,668 --> 01:02:26,407
+Şurası, burası. Menu to one için. Yani bir bağıntı için ayrı bir tablo tanımlamak istesem bunu yapabilirim.
+
+360
+01:02:28,027 --> 01:02:34,387
+Eğer yaparsam, menu to menu de zaten bunu yapmam gerekiyor. Mutlaka ayrı bir tablo oluşmam gerekiyor.
+
+361
+01:02:34,467 --> 01:02:39,527
+Menu to one da, one to menu de, one to one da ayrı bir tablo gene yapabilirim yani.
+
+362
+01:02:40,563 --> 01:02:47,763
+Peki, niye yapabilirim? O soru dursun bir kenarda. Yaparsan peki o tablonun anahtarı ne olacak? İşte onun cevabı buradaydı.
+
+363
+01:02:47,763 --> 01:02:59,363
+Menu to one'da, menu olan taraf, primary key olacak. Neden? O sample data oluşturun, görün. Menu olan taraf primary key olacak. Değil mi?
+
+364
+01:03:01,363 --> 01:03:07,763
+One to one'da herhangi bir tanesi olacak. Peki, gelelim son noktaya.
+
+365
+01:03:08,179 --> 01:03:16,579
+Niye böyle bir şey yapmak zorunda veya zorunda da değiliz? Niye böyle bir şey yapmayı tercih ederiz? Şuradaki manzarada.
+
+366
+01:03:17,139 --> 01:03:45,139
+Şuradaki manzarada diyorum ki, bunların hepsi aynı, şurada da aynı muhabbet, burada da aynı şey var. Diyorum ki şöyle, bire çoklu olan bir bağıntıda, ben şuradaki çoklu olan tarafa, department name'i, şunu buraya taşıyacağım, tabloda sakın, karonsal tasarımda bunu buraya taşımayın. Tamam mı? O, Rida'nın denisi oluyor. Birazdan sonunlarda o geçecek. Karonsal tasarımda kavramı, en böyle öz şekilde buraya aktarmaya...
+
+367
+01:03:45,139 --> 01:03:50,139
+Daha sonra tablo dönüşümleri yaparken, burada departmantlerin buraya gelebilir.
+
+368
+01:03:50,139 --> 01:03:56,139
+Kuralı söyledik zaten, gelecek dedik. Ama burada bunu departmantin yazmayın sakın. O bir hata.
+
+369
+01:03:57,139 --> 01:04:04,139
+Bunu böyle yapabiliriz. Fakat böyle yapmayalım dedik. Onun yerine şunun için ayrı bir tablo tanımlayalım dedik.
+
+370
+01:04:04,139 --> 01:04:09,139
+Şöyle bir tablo tanımlıyoruz. İsmi ne? Instructor Department tablosu.
+
+371
+01:04:09,139 --> 01:04:11,139
+Burada da işte ne olacak?
+
+372
+01:04:12,692 --> 01:04:15,012
+İki tane nitelik olacak. Onlar neler?
+
+373
+01:04:15,572 --> 01:04:24,291
+İle çoklu bir bağıntı setindeki şöyle bir tablo oluştursak, varlık seti oluştursak burada, tablo oluştursak. Bu tablonun nitelikleri ne olacak?
+
+374
+01:04:25,891 --> 01:04:37,251
+ID ve Department name olacak. Çok güzel. Şurada onlar yazıyor. Instructor ID ve Department name olacak. Gilelim bu tablonun anahtarına.
+
+375
+01:04:38,012 --> 01:04:39,692
+Ne olması lazım dedik ona?
+
+376
+01:04:39,871 --> 01:04:51,552
+Çoklu olan tarafın olması lazım dedik. Değil mi? Çoklu olan taraf Instructor. Çünkü Instructor ID, burada bir tane geçiyor. Bu Instructor'ın bir tane departmanı var.
+
+377
+01:04:51,552 --> 01:04:56,431
+Hemen sample'a dökün olayı. I1, D1. I1, D2 olur mu?
+
+378
+01:04:57,108 --> 01:05:24,608
+Olmaz, I1'in bir tane departmanı var. Bir tane bak, okunu gösteriyor. Tamam mı? Ama D1'de birçok olabilir. O zaman D1 olmaz. Çoklu olan taraf, primary key olacak. Yani şu primary key, bu primary key. I1 buradaysa, şey, instructor, buradaysa bu primary key. Peki, gelelim son sorumuza, bu meseledeki. Burada şununla ilgili, ben bunu buraya taşımak yerine şöyle bir tablo niye oluşturmak?
+
+379
+01:05:24,851 --> 01:05:26,811
+oluşturmayı tercih ederim.
+
+380
+01:05:29,151 --> 01:05:31,091
+Niye böyle bir şey tercih ederim?
+
+381
+01:05:38,003 --> 01:05:38,804
+Burada ne var?
+
+382
+01:05:42,124 --> 01:05:43,923
+Yok, bak işaret ettiğim yerde.
+
+383
+01:05:47,539 --> 01:05:50,300
+Evet, total var. Cevap burada.
+
+384
+01:05:51,780 --> 01:05:52,480
+Total olması.
+
+385
+01:05:53,760 --> 01:05:56,480
+Total ise,
+
+386
+01:05:57,519 --> 01:05:59,000
+Yabancı anahtarını buraya taşırım.
+
+387
+01:06:00,179 --> 01:06:02,800
+Yani buradaki her bir instructor'ın bir departmanı var.
+
+388
+01:06:02,800 --> 01:06:05,800
+Her bir instructor kapılığında bir departmanı göreceğim.
+
+389
+01:06:06,039 --> 01:06:08,519
+Hiç nal görmeyeceğim. Ama burası kısmi ise,
+
+390
+01:06:09,331 --> 01:06:17,091
+Buradaki bazı instructor'ların, bilmiyorum ki, belki yarısı, hiç departmanı yok. Ben yabancı natı olarak bunu buraya taşısam ne olacak?
+
+391
+01:06:17,731 --> 01:06:25,611
+O instructor tablosunun yarısı, yarısındaki department name'ler null olacak. Null. Değil mi?
+
+392
+01:06:26,011 --> 01:06:31,931
+Öyle olmayacak mı? Böyle olacak. Bu bir good design değil. Null olmasın.
+
+393
+01:06:32,563 --> 01:06:53,403
+Yarı hoca için, burada ayrı bir tablo oluşturabilirim. O tablonun da, burada 1000 tane hoca varsa, 500 tanesinin departmanı yok ise, çok kaba bir örnek oldu ama, burada 500 tane nal görmek yerine, burada 500 tane daha satır koydum. Gerçekten departmanı olanlar burada gözüküyor artık.
+
+394
+01:06:54,403 --> 01:06:59,503
+Demek ki, şöyle bile çoklu da, bizi bu noktaya sevk eden şey ne oldu o zaman?
+
+395
+01:07:01,940 --> 01:07:13,940
+Şuradaki total olup olmaması olur. Burada hepsi total olduğu için total değil. Şunun için, bunun için şu advisor için ayrı bir tablo yapmam daha iyi.
+
+396
+01:07:13,940 --> 01:07:22,940
+Ama bunlar için gerek yok, bunun için gerek yok. Burada da yine department name ne olacak? Buraya gidecek. Tamam mı?
+
+397
+01:07:22,940 --> 01:07:28,907
+Ama advisor için tablo oluşturmam iyi olacak. Yani bu örnek için geldiğimiz nokta
+
+398
+01:07:29,076 --> 01:07:31,115
+Bu olmuş oldu.
+
+399
+01:07:31,956 --> 01:07:32,155
+Evet.
+
+400
+01:07:41,427 --> 01:07:45,127
+Sesim biraz uzaktan geliyor. Biraz yüksek sesle net.
+
+401
+01:07:52,340 --> 01:08:02,559
+Evet, yani bir daha tekrar edeyim anladığım doğru mu? Instructor Departmanı arasındaki Instructor Departmanı bağıntısı için ayrı bir tablo oluşturabiliriz dedim. Evet.
+
+402
+01:08:07,923 --> 01:08:08,183
+Ö.
+
+403
+01:08:19,283 --> 01:08:23,283
+Evet, doğru.
+
+404
+01:08:23,583 --> 01:08:24,583
+Doğru, çok güzel.
+
+405
+01:08:25,083 --> 01:08:26,083
+Güzel bir yorum.
+
+406
+01:08:27,783 --> 01:08:28,783
+Yani bu bir trade-off.
+
+407
+01:08:28,783 --> 01:08:32,283
+Yani sonuçta bunun için zaten söz konusu değil.
+
+408
+01:08:32,283 --> 01:08:34,583
+Çünkü burası total olduğu için oluşturmayacağız.
+
+409
+01:08:35,083 --> 01:08:37,583
+Ama burası için, AdWords için oluşturabiliriz.
+
+410
+01:08:37,583 --> 01:08:38,583
+Bu bir yol.
+
+411
+01:08:39,188 --> 01:08:53,868
+Ama biliyorsak ki, buradaki öğrencilerin tek tük birkaç tanesinin instructor'ı yok desek, o zaman yine ilk yoldan devam edebilirim. Yabancı anlatak. Çünkü dediğim gibi bir tane tablo var.
+
+412
+01:08:53,868 --> 01:09:01,987
+Yeni bir tablo oluşturmak muhtemelen yeni bir dosya olacak fiziksel olarak sistemde ölçemizde. Ve bunlar ayrı bir join maliyeti olacak falan.
+
+413
+01:09:01,987 --> 01:09:06,188
+Tamam mı? Yani daha böyle genel düşününce dediğim nokta oluyor yani.
+
+414
+01:09:08,275 --> 01:09:09,395
+Anladınız mı herkes?
+
+415
+01:09:12,335 --> 01:09:13,055
+Evet.
+
+416
+01:09:14,475 --> 01:09:15,395
+Yani işte böyle
+
+417
+01:09:17,203 --> 01:09:33,343
+Böyle tam net değil yani. Buradan da anlaşılıyor, bu örnekten de anlaşılıyor. Tam net değil. Ama genel şey burada ayrı bir tablo oluşturmamak yani. Yabancı anahtar olarak toplu olan tarafı atmak. Birebirleriyle de aynı mevzuyu düşünebilirsiniz. Herhangi bir tarafı yabancı anahtar olarak atılıyor.
+
+418
+01:09:33,804 --> 01:09:40,203
+Yok efendim bunlar total değil, partial ise çok nal olacak falan olabilir. O zaman ayrı bir tablo oluşturursun mesela.
+
+419
+01:09:40,692 --> 01:09:57,692
+Eğer çok az birisi varsa ayrı bir tablo olsa da yine çok az sample olacak. Çünkü partial kısmı olduğu için öteki türlü öteki tarafta bir ton null olacak belki. Bilmiyorum. O küçük dünyada çok az bir durum var o bağıntı için mesela.
+
+420
+01:09:57,692 --> 01:10:08,235
+O yüzden ayrı bir tablo yine olabilir. Çünkü çok ufak bir tablo olacak. Orada onu JOIN yapması çok masraflı olmayacak. Çünkü ana hafızayı alacak onu mesela. Hani siz sorarak düşünsek. Bunlar olabilir yani.
+
+421
+01:10:09,555 --> 01:10:11,555
+Evet, eee...
+
+422
+01:10:14,115 --> 01:10:16,115
+Burada anlattığımız şeyler var.
+
+423
+01:10:16,595 --> 01:10:44,595
+Evet, burada, işte, weak entity için, bile çoklu için, zaten biz şu zayıf olanı için tablo oluştururken, güçlü olanın primary key'ini buraya taşıdık yani. Tamam mı? O yüzden, bu güçlüyü hallettik, zayıfı hallettik, güçlüyü zaten hallettik. Bu bağıntı için bir daha düşünmeme gerek yok yani. Bu zayıfın delili yani bu olduğu için zaten bunu yabancı anlatılarak buraya ekleyeceğiz.
+
+424
+01:10:44,595 --> 01:10:46,155
+demiştik yani. Burada onu söylüyor.
+
+425
+01:10:46,963 --> 01:10:57,764
+Extended ER diyagramları da 2 tane mesele var veya 3 tane. Specialization, Generalization ve Aggregation.
+
+426
+01:10:57,764 --> 01:11:07,764
+Specialization, Generalization aynı manada olduğu için, yani biri bir varlık setinin specialized edilmesi, detaylandırılması.
+
+427
+01:11:07,764 --> 01:11:14,963
+Diğer bir bakış açısı farklı varlık setlerinin generalize edilip tek bir yerde toplanması.
+
+428
+01:11:14,963 --> 01:11:24,963
+Nasıl bakıyorsak olaya. İkinci bir mesele de aggregation meselesi, küm eleme. Bu da bağıntılar arasında bir bağıntı durumu oluyor.
+
+429
+01:11:24,963 --> 01:11:34,963
+Genelde veritabanı kitaplarında bu iki esas üzerine gidiyor. Bu noktada da bazı terminolojide farklılıklar var.
+
+430
+01:11:36,180 --> 01:12:04,180
+Şimdi burada bu specialization da örnek üzerinden gayet açık yani çok zor bir mesele değil. Daha iyi bir tasarım oluyor, daha detaylı oluyor. Yani person mesela burada bütün personlarımızda bu süper varlık seti olsa bunun alt varlık setlerini şu şekilde ifade ediyorum. Şöyle alt varlık seti. Çünkü bu alt varlık setlerinin kendine has bazen delikleri var.
+
+431
+01:12:04,180 --> 01:12:18,180
+Mesela, Person'lar, Employee ve Student olabilir. Employee'lerde salari niteliği var. Student'larda Total Credit niteliği var. Bu Total Credit Employee'de yok.
+
+432
+01:12:19,412 --> 01:12:36,292
+Veya salary burada yok. O yüzden burada ben bunları hiç düşünmeyin. Hepsi person olsa burada şu nitelikler, şu bazı personlar için salary niteliği boş kalacak. Total credit boş kalacak.
+
+433
+01:12:36,292 --> 01:12:47,412
+EGRANG boş kalacak bazıları için. Şunlar için hepsi var ama ID, NAM, LEVEL, STRIM, bunlar hepsi için var. O yüzden detaylandırdığım zaman Nulları eliminate
+
+434
+01:12:47,412 --> 01:12:55,712
+etmiş oluyoruz biz bu noktada. Maksadımız o. Yani daha böyle belirsiz bir veri tabanından daha belirli bir hale geldik.
+
+435
+01:12:55,967 --> 01:13:02,367
+Tabi onun bir bedeli olacak yani ayrı bir tablo yapmazlarında kalacağız mesela gibi o gibi şeyler olabilir yani.
+
+436
+01:13:02,367 --> 01:13:08,447
+Şimdi bu kavramı buraya daha detaylı aktarmış olduk ve kısıtlarımız ortaya çıkacak.
+
+437
+01:13:08,447 --> 01:13:20,687
+Acaba bu parçalanma, bu specialization, yani yukarıdan aşağı doğru bakarsam, bu specialization, öyle okuyorsam, bu specialization acaba öyle overlap mi yoksa
+
+438
+01:13:22,131 --> 01:13:30,531
+şey mi, disjoint mi? Overlap olması demek, yani şuradaki bir varlık şu olamaz.
+
+439
+01:13:31,331 --> 01:13:44,931
+Aylık yani, şey olabilir, overlap olması. Yani bir tane sample düşünelim, P1 sample'ı. P1 hem student'dır, hem de employee'dir. Şimdi gerçek hayatta düşünelim, bu olabilir mi?
+
+440
+01:13:45,268 --> 01:13:58,948
+Olabilir. Yani işte bizim burada da kısmı zamanlı öğrenciler var mesela. İşte asistan yapabiliyor veya işte bir devlet platform, her neyse. Yani bu olabilecek bir şey yani gayet makul. O zaman bakın bu OVLAP. OVLAP'in de gösterimi böyle.
+
+441
+01:14:00,467 --> 01:14:10,967
+Yani bence çok iyi bir gösterim değil yani bu notasyon böyle. Diğer başka ekleyelerle onu göstermeyiz mi daha karışmasın kafamız.
+
+442
+01:14:10,967 --> 01:14:20,967
+Ama işte böyle yani öyle böyle. Şurada disjoint. Yani disjoint işte böyle ayrılıyor. O manasak oradan çıkarım yapabilirsiniz. Disjoint değilse burada...
+
+443
+01:14:21,811 --> 01:14:47,631
+Bir tane AROV kullanılıyor, şöyle bir ayrı var. Burada da yani bir tane SE1 sample'ı aynı zamanda bir instructor olamaz. Yani oy lep etmiyorlar yani. Oldukça açık değil mi? Yani bir instructor'ın sekretör olması biraz garip bir durum yani veya tam tersi. İşte o yüzden buradaki o küçük dünyadan hemen intikal ediyoruz ki bu diyoruz ki disjonit olması lazım. Diğer bir kısıt,
+
+444
+01:14:48,020 --> 01:15:06,940
+Diğer bir mesele, şuradaki süper varlık seti diyelim yukarıdaki. Aşağıya specialize ederken, bütün participation noktasında, bu sefer düşünüyoruz, bütün hepsi acaba ya person ya employee mi olacak veya ya instructor ya sekreter mi olacak?
+
+445
+01:15:07,440 --> 01:15:14,720
+Aşağıda mutlaka bir SAP grupta olması mı lazım? Bunun cevabı. Eğer olması lazım ise total.
+
+446
+01:15:15,667 --> 01:15:31,907
+Küçük dünyaya bakıyoruz orada da. Veya soruyoruz bu bizim muhatap olduğumuz işe. Böyle mi yani? Bütün herkes illa employee, size yok öyle değil. Burada bir de işte employee olmayıp student kategorisinde olmayan bazı böyle sözleşmeli diyelim.
+
+447
+01:15:34,579 --> 01:15:47,579
+Birkaç ay çalışıp giden, mesela bu sıralar bizim çalışma var ya fakültemizde böyle. Mesela onlar employee değil, farklı bir yerin employee. Yani çalışanı. Bizim çalışanımız değil yani değil mi?
+
+448
+01:15:47,579 --> 01:16:01,579
+İşte böyle oldu, böyleyse eğer, o zaman bunun böyle çok katı olmaması yani total değil, partial. Burada da notasyonumuz böyle total yazıyoruz. Böyle basit yani ayrı bir.
+
+449
+01:16:02,260 --> 01:16:04,659
+Bir şey kullanmadık yani. Tamam mı?
+
+450
+01:16:05,860 --> 01:16:12,020
+Veya burada total isimler. Şurada ne düşünürsünüz? Employee, Instructor, Secretary.
+
+451
+01:16:14,579 --> 01:16:15,940
+Employee.
+
+452
+01:16:17,380 --> 01:16:21,579
+Esasında person, burası total olabilir.
+
+453
+01:16:25,363 --> 01:16:36,363
+Total olabilir belki. Ama şu employee şurası mesela partial olabilir. Çünkü bazı employe'ler bunların haricinde employee.
+
+454
+01:16:37,876 --> 01:17:05,775
+Olabilir. Evet. Şimdi bunların tabii bizim maksadımız, bu kavram sırtasından sonra hemen tablo dönüşümünü yapmak. Burada mesela iki tane metot söylemiş. Bunu daha da detaylandırabiliriz. Burada biraz üstün körü geçmiş. Çok da önemli değil yani. Zaten böyle el yordamıyla bir tasarım yapıyoruz. Zaten maksadı anladık, ana fikri anladık. O yüzden ikisini de görmek kolay. Yani burada Person, Student, Employee diye üç tane tablo.
+
+455
+01:17:05,876 --> 01:17:13,635
+person, student, employee diye şu kısım için 3 tane tablo yapabiliriz.
+
+456
+01:17:13,975 --> 01:17:23,815
+Person için bakın şöyle ID, name, street, city, student için ID, total credit, employee için ID, salary olabilir.
+
+457
+01:17:25,395 --> 01:17:29,536
+Burada bütün bilgiyi bu tablolara aktardım. Böyle olabilir.
+
+458
+01:17:30,376 --> 01:17:33,355
+Veya burada bakın drawback var. Burayı okuyun.
+
+459
+01:17:38,260 --> 01:17:42,780
+Yani bir student'ın adres bilgisi için JOIN yapmam gerekiyor.
+
+460
+01:17:43,260 --> 01:17:44,860
+Person'a gitmem lazım.
+
+461
+01:17:46,460 --> 01:17:52,140
+Burada ise bütün nitelikler, yani bütün tablolar ayrı. Person ayrı.
+
+462
+01:17:52,980 --> 01:17:54,380
+Mesela bu,
+
+463
+01:17:56,820 --> 01:17:58,460
+bu mesela
+
+464
+01:17:59,900 --> 01:18:03,820
+partial için bu mesela daha iyi.
+
+465
+01:18:05,203 --> 01:18:11,843
+Total için, Total ise, Total ise şu daha iyi.
+
+466
+01:18:13,123 --> 01:18:16,323
+Hatta Total ise, Person'a hiç gerek olmayıp,
+
+467
+01:18:17,395 --> 01:18:28,916
+student, mesela total ve disjoint ise, bunu böyle detaylandırabilirsiniz. Total ve disjoint ise, bence, siz de feyit edin, benim gözümden kaç ay olabilir.
+
+468
+01:18:28,916 --> 01:18:36,596
+Total ve disjoint ise, person'a hiç gerek yok. student, id total credit name street city, bunlar burada.
+
+469
+01:18:36,596 --> 01:18:42,596
+ve employee, id salari name street city olsa, çok güzel değil mi?
+
+470
+01:18:44,275 --> 01:18:49,056
+Total, yani his person, hepsi, yes student, the employee ve disjoint.
+
+471
+01:18:51,028 --> 01:19:00,828
+Hiçbir veri tekrarı yok. İşte oradaki o kısıtlara göre, buradaki redundancyyi minimize edecek şekilde bir tablo tasarımı yapabiliriz.
+
+472
+01:19:00,828 --> 01:19:10,828
+Burada iki metodun drawbackleri gözüküyor. Biz bu drawbackleri, bu tablo tasarımını şuradaki 4 kombinasyon için değerlendirebiliriz.
+
+473
+01:19:10,828 --> 01:19:18,828
+Yani overlap total, overlap partial, distroint total, distroint partial olması durumunda acaba hangi metod olacak?
+
+474
+01:19:19,028 --> 01:19:32,387
+Hangisi metot daha iyi olabilir, RIDA anlayısı noktasında. Yani bu da kesin bir kural yok, bir sel zaman olduğu gibi. Böyle yapabiliriz yani işte, o küçük dünyanın gerektirdiği şekilde. Anladınız orayı değil mi? Anahtarıyı.
+
+475
+01:19:33,967 --> 01:19:46,048
+Oradan çok ileri gitmeyelim, ileri girince karışıyor. Anahtarı anlasak yeter. Evet. Generalization dediğimiz gibi bu sefer generalize ediyoruz. Yani bakış açısına göre değişiyor. Başka bir şey yok burada.
+
+476
+01:19:46,547 --> 01:19:50,547
+Sonra
+
+477
+01:19:54,547 --> 01:19:58,547
+Bu da total partial'ı anlatmış. Tamam. Şimdi gelelim
+
+478
+01:19:58,547 --> 01:20:02,547
+Saat 3 oldu bu arada. Şimdi bir
+
+479
+01:20:02,547 --> 01:20:05,547
+8 dakika ara verin arkadaşlar.
+
+480
+01:20:05,547 --> 01:20:09,547
+8 ya da 10 dakika. 3'ü 10 geçer. Tekrar başlarız.
+
+481
+01:20:09,547 --> 01:20:11,547
+Tamam mı?
+
+482
+01:20:12,020 --> 01:20:20,020
+Sonra bir 45 dakika kadar daha yaparız. Normalizasyona başlarız ve biraz daha yaparız. Tamam mı? Sonra...
+
+483
+01:20:24,020 --> 01:20:26,956
+Ve öğrenebilirim yani. Nenelim biraz.
+
+484
+01:34:24,756 --> 01:34:26,376
+Evet arkadaşlar, devam ediyorum.
+
+485
+01:34:29,456 --> 01:34:34,596
+Şimdi aggregation meselesi de, şu yere ben başlığı biraz değiştirdim.
+
+486
+01:34:34,596 --> 01:34:37,716
+Needs to express relationship among relationship.
+
+487
+01:34:38,676 --> 01:34:44,356
+Burada bir bağıntının aggregate edilmesi var.
+
+488
+01:34:44,976 --> 01:34:47,076
+Aggregation ne demek?
+
+489
+01:34:48,376 --> 01:34:51,996
+Aggregation, aggregate ne demek kelime manası?
+
+490
+01:35:00,500 --> 01:35:01,119
+Menememe.
+
+491
+01:35:24,819 --> 01:35:28,819
+Reaction.
+
+492
+01:35:30,819 --> 01:35:31,819
+Toplamak.
+
+493
+01:35:32,819 --> 01:35:35,819
+Toplamak, topaklamak, üneleşme, yiyişme.
+
+494
+01:35:36,819 --> 01:35:37,819
+Yani,
+
+495
+01:35:40,819 --> 01:35:49,819
+Yani, burada, şu ismi vermesinin sebebi, Project Guide şu bağıntıyı toplu olarak düşünüyorum.
+
+496
+01:35:50,819 --> 01:35:51,819
+O manada.
+
+497
+01:35:52,595 --> 01:36:06,595
+Şimdi buradaki maksadımız, bir tane turneri bağıntı. Bütün karmaşıklıklar zaten buradan çıkıyor. Turneri bir bağıntımız var. Bu bağıntı gene proje, student ve instructor arasında project guide bağıntısı.
+
+498
+01:36:17,876 --> 01:36:31,556
+ilgili bir bilgiye ihtiyacımız var. Yani bu proje, instructor, student arasındaki bu proje, guide, şeyin değerlendirmesi, evaluation'ın yapılması lazım.
+
+499
+01:36:32,659 --> 01:36:48,300
+Şimdi burada en kolay olan, belki farklı yollar var. Mesela ben şurada sağa not aldım. Siz de açıklamalar kısmında, not kısmında, TFT'leri gördüğünüz için o şeyi görebilirsiniz, okuyabilirsiniz. CDF değil çünkü.
+
+500
+01:36:49,300 --> 01:36:55,800
+İlk durumda burada Project Guide olarak dördüncü bir şey.
+
+501
+01:36:58,003 --> 01:37:06,684
+Varlık seti şey yapıp, şu üçlü bağıntıyı, dörtlü bağıntı olarak düşünebiliriz. Düşünebilir miyiz? Böyle yapabilir miyiz?
+
+502
+01:37:06,684 --> 01:37:22,524
+Yani istiyoruz ki, bir öğrenci, bir instructor'ın altında, bir projede bir çalışma yapıyor. Bir de bu değerlendirilecek, evaluation varlık seti var. Değerlendirilecek.
+
+503
+01:37:25,011 --> 01:37:31,671
+Böyle bir şey güzel, iyi bir fikir. Yani bunun dörtlü olması. Şunu unutun. Tamam mı?
+
+504
+01:37:33,711 --> 01:37:35,251
+Bunun böyle
+
+505
+01:37:38,071 --> 01:37:39,351
+Dörtlü olması.
+
+506
+01:37:52,180 --> 01:37:56,460
+4 dereceli olması mesela olabilir.
+
+507
+01:37:57,240 --> 01:37:57,560
+Dedik.
+
+508
+01:37:58,380 --> 01:37:58,760
+Tamam mı?
+
+509
+01:37:59,100 --> 01:37:59,380
+Fakat,
+
+510
+01:38:00,060 --> 01:38:02,660
+Fakat burada problem şu,
+
+511
+01:38:03,460 --> 01:38:03,680
+Yani,
+
+512
+01:38:05,420 --> 01:38:06,880
+Bütün projeler,
+
+513
+01:38:07,980 --> 01:38:09,160
+Değerlendirilmeyebilir.
+
+514
+01:38:10,180 --> 01:38:11,539
+Bazıları değerlendirilebilir.
+
+515
+01:38:11,539 --> 01:38:12,460
+O zaman,
+
+516
+01:38:12,980 --> 01:38:14,700
+Burada bir proje hadisesi var,
+
+517
+01:38:14,980 --> 01:38:16,460
+Bir de değerlendirme hadisesi var.
+
+518
+01:38:17,740 --> 01:38:19,640
+O projenin değerlendirme hadisesi var.
+
+519
+01:38:19,956 --> 01:38:29,956
+Bütün projeler değerlendirmeye alınmıyor olabilir yani. Değerlendirilmiyordur, öyle bir kategori değil. Yani, tasarımımızı farklı bir boyuta taşımış oluyor bu.
+
+520
+01:38:29,956 --> 01:38:44,684
+Eğer gerçekten bütün projeler değerlendiriyorsa, tamam, buna 4'lü yapabiliriz. Tamam mı? O yüzden bu Case 1'i böyle eliminate ettik. Yani mümkün değil, çok yanlış değil ama bunu böyle şey yaptık.
+
+521
+01:38:45,076 --> 01:39:06,336
+İkinci bir durumda, case2, multi-valued bir şey koyabiliriz. Şurada, şu pro, şunları bunu görmeyin daha. Sadece şunu görüyoruz tamam mı? Bunu dörtlü yaptım, olmadı. Şu turneri bağıntı için bir tane multi-valued bir tane şey, multi-valued bir tane şey, multi-valued görmüyorsunuz değil mi? Açayım yine.
+
+522
+01:39:07,380 --> 01:39:16,260
+Şurada şöyle bir multi-valued bir nitelik koydum.
+
+523
+01:39:18,540 --> 01:39:20,540
+Bunun nasıl bir dezavantajı var?
+
+524
+01:39:27,220 --> 01:39:36,580
+Burada da şöyle bir ihtiyaç olabilir. Yine çok yanlış değil. Ama Evaluation meselesi, Evaluation hadisesi,
+
+525
+01:39:36,847 --> 01:39:43,247
+Önceler içinde ne var? Bir öğrencinin, bir hocanın danışmanlığında bu projeyi yapması var.
+
+526
+01:39:43,547 --> 01:39:50,167
+İşte bu değerlendirme, bir departmana bildirilmek gerekebilir, bir burs ofisine bildirilmesi gerekebilir.
+
+527
+01:39:50,287 --> 01:39:51,867
+Orada öyle bir bağıntı olabilir yani.
+
+528
+01:39:52,387 --> 01:39:56,927
+Yani benim bu varlık seti yapmamı gerektirecek bir durum olabilir yani.
+
+529
+01:39:58,067 --> 01:39:59,207
+Öyle değil mi?
+
+530
+01:40:04,847 --> 01:40:10,608
+Dörtlü bağıntı olarak bunu yapabilirim. Yani, Evaluational for,
+
+531
+01:40:11,315 --> 01:40:21,676
+Burada ne var? Şu instructor, bu student, bu proje ile beraber şu evaluation yapıldı ve bu evaluation da işte departmana bildirildi.
+
+532
+01:40:21,876 --> 01:40:25,536
+Burada işte bu departmanın kontrolü altında yapıldı bu evaluation.
+
+533
+01:40:26,176 --> 01:40:32,155
+Veya işte burs verilecekse işte bu projenin başarılı olmamasına göre işte burs ofisi falan.
+
+534
+01:40:32,256 --> 01:40:36,615
+Buralarda böyle şeyler dönüyor olabilir yani. O yüzden zaten bunu böyle kaldırdık.
+
+535
+01:40:36,735 --> 01:40:38,996
+Böyle bir dörtlü bu sefer bir bağıntı yaptık yani.
+
+536
+01:40:39,315 --> 01:40:40,815
+Bu da olabilir.
+
+537
+01:40:41,956 --> 01:40:47,296
+İşte şöyle bir dörtlü bağıntının nasıl bir dezavantajı olabilir?
+
+538
+01:40:48,235 --> 01:40:50,176
+Yani işte görüyorsunuz, konu böyle.
+
+539
+01:40:51,756 --> 01:40:53,195
+Öyle de olur, böyle de olur.
+
+540
+01:40:53,195 --> 01:40:54,496
+Bunun hepsi yanlış değil yani.
+
+541
+01:40:54,576 --> 01:40:57,216
+Ama duruma göre daha iyi bir şey yakalamaya çalışıyoruz.
+
+542
+01:40:57,496 --> 01:40:57,855
+Tamam mı?
+
+543
+01:40:58,615 --> 01:41:00,475
+Kitabı aşağısında farklı bir şey anlatmıyor yani.
+
+544
+01:41:01,796 --> 01:41:03,576
+Yani çok da garip değil yani.
+
+545
+01:41:03,836 --> 01:41:06,576
+Hakikaten böyle ama biraz işte el yordamıyla.
+
+546
+01:41:07,315 --> 01:41:09,315
+Bir şey yapmaya çalışıyoruz.
+
+547
+01:41:09,916 --> 01:41:14,716
+Yani konunun şeyini anladınız, garipliğini veya ana fikri diyeyim yani.
+
+548
+01:41:16,836 --> 01:41:26,596
+Veya işte dersin başında dediğim gibi sadece science değil, art yani biraz böyle de olur böyle de olur yani hepsi oluyor çok da yanlış değil yani ama daha iyisini arıyoruz.
+
+549
+01:41:26,596 --> 01:41:32,492
+O zaman 4 derecede olmasını attık bir kenara, multivariot olmasını...
+
+550
+01:41:32,532 --> 01:41:54,792
+kenara koyduk. Böyle bir tane aileye ten, turn'in yanında bir tane de dörtlü bir tane, eee, koysam, tamam, iyi gibi. Bunun neziden dezavantajı olabilir? Bunun dezavantajı, ise, bunun dezavantajı ise, eee, burada, eee, tekrar var.
+
+551
+01:41:55,539 --> 01:41:57,539
+Burada da tekrar problemi var.
+
+552
+01:41:57,539 --> 01:42:02,539
+Yani şurada, T1, I1, S1 projesi bilgileri var.
+
+553
+01:42:02,539 --> 01:42:08,539
+Bir de değerlendirilenler için, %80'i değerlendiriliyor olsun, ne var?
+
+554
+01:42:08,539 --> 01:42:11,539
+T1, I1, S1 ve E1 var.
+
+555
+01:42:11,539 --> 01:42:16,539
+Yani T1, S1, I1 bilgileri başka bir yerde tekrar ediyor.
+
+556
+01:42:16,539 --> 01:42:18,539
+İnanılırsa problemi var.
+
+557
+01:42:18,539 --> 01:42:20,203
+Sanırım güzel bir örnek yani.
+
+558
+01:42:22,612 --> 01:42:30,612
+İşte bu yüzden, bu yüzden, burada işte onları özetliyor, okuyoruz.
+
+559
+01:42:30,612 --> 01:42:38,612
+O yüzden, şurada şöyle bunu bir abstract bir şey içine alıyoruz. İşte aggregation burası, bunu aggregate ediyoruz.
+
+560
+01:42:38,612 --> 01:42:49,324
+Bu bağıntı ile beraber, şu olay, beraber bir tane evaluation bağıntısı böyle bile çoklu oluşturuyoruz, tamam mı?
+
+561
+01:42:49,747 --> 01:42:53,987
+İşte burada o zaman bilgi tekrarı yok.
+
+562
+01:42:56,507 --> 01:43:03,507
+Acaba bunun için tablo dönüşümü nasıl olacak?
+
+563
+01:43:03,507 --> 01:43:06,647
+Buradaki hadiseyi tabloya dönüştürsek?
+
+564
+01:43:10,036 --> 01:43:11,315
+Şama böyle.
+
+565
+01:43:14,895 --> 01:43:20,155
+Eliminate the redundancy by aggregation. We are introducing redundancy. The following diagramı'ı teyzen.
+
+566
+01:43:20,235 --> 01:43:29,416
+A student is guided by a particle instructor and particle project. A student-instructor project combination may have an associated evaluation.
+
+567
+01:43:29,416 --> 01:43:36,676
+O zaman, eğer bütün projeler böyle değerlendiriliyor ise,
+
+568
+01:43:37,184 --> 01:43:54,684
+değerlendiriliyor ise, tamam mı? O zaman burada sadece evaluation için şu, şu ve şu ve bunun dördünün birden primelik bir araya gelerek bir tane evaluation for yapmam yeterli olacak. Yani şu.
+
+569
+01:43:54,684 --> 01:44:03,064
+Tişama evaluation for, evalu for, SELECT, PROJECT, INSTARCTA evaluation ID. Tişama project guide is redundant if.
+
+570
+01:44:03,507 --> 01:44:27,627
+Aggregation is totally participant with evaluation code. Yani buradaki bütün projeler değerlendiriliyor ise, o zaman bu şey olacak. Redundant olacak. Yani şu redundant olacak. Project ID'sim bir şey yapmama gerek yok yani. Sanki dörtlü yapıyormuş gibi olacak. Ama eğer şey ise, böyle değil ise,
+
+571
+01:44:28,212 --> 01:44:33,932
+Yani bazı projeler değerlendiriliyor ise, o zaman ne yapabilirim?
+
+572
+01:44:33,932 --> 01:44:44,972
+Ayrıyeten proje guide için, T1, I1, S1'i içeren, T, I, S onların primary keyine içen ayrı bir tablo yaparsam ne olacak?
+
+573
+01:44:51,283 --> 01:44:57,283
+EVAL FOR ile beraber, böyle ayrıca bir tablo yaparsam ne olacak?
+
+574
+01:44:58,283 --> 01:45:01,283
+O zaman da tekrar olacak yani.
+
+575
+01:45:01,283 --> 01:45:12,283
+SELECT, PROJECT, ILECT, EVALATION ile ilgili bilgiler tekrar edilir. Bir de orada PROJECT için onlar olacak.
+
+576
+01:45:25,268 --> 01:45:31,148
+O yüzden, burada yazmıyor ama, işte bazı yerleri açık kalmış, açık kalıyor.
+
+577
+01:45:31,148 --> 01:45:43,268
+Hani, şurada, bu Evaluation Core için mesela, Artificial, yani yapay bir tane anahtar tanımlarsak, anahtar, tamam mı?
+
+578
+01:45:43,268 --> 01:45:46,268
+Bu anahtar, yani şurada Artificial bir anahtar.
+
+579
+01:45:48,884 --> 01:45:50,884
+Sekons olabilir mesela.
+
+580
+01:45:50,884 --> 01:45:58,884
+1, 2, 3, 4, 5 mesela. O Sekons numarası hem şurada hem burası için bir anahtar olacak.
+
+581
+01:45:58,884 --> 01:46:02,884
+Yani bu proje bir kodlu proje mesela.
+
+582
+01:46:02,884 --> 01:46:04,884
+Bir kodlu proje.
+
+583
+01:46:04,884 --> 01:46:10,884
+İçerisinde şunlar var. Bunun primary key, bu. Yani onlar var.
+
+584
+01:46:11,444 --> 01:46:27,944
+Burada da bu E1'i, E1 yabancı anahtarı olacak yani buna. Buradaki proje, instructor, student, onlar tekrar etmeyecekler bu tarafta. Tamam mı? Böyle bir tasarım olabilir.
+
+585
+01:46:32,659 --> 01:46:58,119
+Evet. Böyle arkadaşlar. Şimdi genel olarak ER diyagramlarında yapılan yaygın hatalar burada. Güzel bu nokta. Burada mesela böyle yapmayın. Tamam mı? Mesela bir ER diyagramı. Burada bakın student için ben şöyle bir liste hazırlayabilirim. Yani ilk olarak bunu böyle yazabiliriz ama sonradan redanded olanları çıkartalım yani o manada.
+
+586
+01:46:58,420 --> 01:47:06,420
+STONE'un için ID, NAME, total credit, bunun bir departmanı var. Her öğrencinin bir departmanı var, bunu buraya yazabilirim.
+
+587
+01:47:06,420 --> 01:47:14,420
+Ama, departman için de departmanı da building budget yazdım, sonra bir de bağıntı kurdum. Dedim ki STONE'un da departman arasında bile çok büyük bir bağıntı var.
+
+588
+01:47:14,420 --> 01:47:22,420
+Artık şu bağıntı, şu manayı taşıyor zaten. O yüzden bunu buraya yazmamam lazım. Ama, bununla beraber,
+
+589
+01:47:22,739 --> 01:47:36,439
+Bu bile çoklu bağıntıyı ben tabloya dönüştürdüğüm zaman çoklu olan tarafa, yabancı anahtarı olarak bu department hem gelecek, gelsin, o dönüşümün bir neticesi yani.
+
+590
+01:47:37,159 --> 01:47:42,020
+Tamam mı? Ama burada ben bunu yazarsam hem burada bu var, hem burada bu var, bu olmuyor.
+
+591
+01:47:44,212 --> 01:48:06,391
+Onu böyle yapmayalım diye söylüyor burada. Common mistakes diye. Ben de bu noktada, bunun garip bir durum olduğu noktasında şey, yani bazı noktada işte böyle biraz şey, evvel de bahsettiğim şeyler gibi bazı noktalar da biz de tam şey yapıyoruz yani, gerçekten öyle olması lazım diyoruz.
+
+592
+01:48:11,731 --> 01:48:17,731
+Basit, %10-15 zor, %5 bulanık.
+
+593
+01:48:17,731 --> 01:48:26,731
+Tamam mı? Öyle bir manzara var burada yani. %5 bulanık. Bir şeyinizden şu %80 de yerine oturtturalım yani şeyi.
+
+594
+01:48:26,731 --> 01:48:34,731
+Aşağıda bakın, şurada çok yanlış. Yani şurada student, mesela şu departmentin burada olmaması lazım.
+
+595
+01:48:35,444 --> 01:48:53,144
+Bununla beraber şunlar da olmaması lazım. Yani, Student Department'ın bu bağıntının bireçoklu olmasına rağmen, şuraya ID'yi buraya taşımış bakın, Department Name'i buraya taşımış. Bu da çok yanlış. Şimdi bu bilgiler zaten burada var, redundant yani.
+
+596
+01:48:54,644 --> 01:49:21,224
+Gene şurada şöyle bir garip bir durum var. Burada öğrenciler mesela, section'lar alıyorlar. Section'lar da var. Bu öğrenci bu section'ı almış yani. Bu section'da bütün nitelikler var. Yani birinci assignment, işte 30 aldı. İkinci ödevden tır kaldı. Üçüncü ödevden, işte burada
+
+597
+01:49:22,323 --> 01:49:26,724
+Yani buradaki student'ın bu section'ı almasında bir tane bir rekord var.
+
+598
+01:49:27,684 --> 01:49:37,423
+Oysa burada iki tane nitelik var ve bu nitelikte bir rekord için bir rekorda sığmaz yani.
+
+599
+01:49:37,563 --> 01:49:38,563
+Rekorda sığmıyor.
+
+600
+01:49:39,703 --> 01:49:40,123
+Ne dedim?
+
+601
+01:49:40,123 --> 01:49:42,663
+S1, section 1.
+
+602
+01:49:43,264 --> 01:49:45,344
+Mesela S1, section 1.
+
+603
+01:49:45,443 --> 01:49:48,983
+A1 ödevi 10 aldı.
+
+604
+01:49:49,395 --> 01:49:53,395
+S1, Section 1, A2 ödevi 20 aldı.
+
+605
+01:49:54,395 --> 01:50:00,895
+Yani, burada olan şey S1, Section 1.
+
+606
+01:50:01,395 --> 01:50:07,395
+Bu bilgi var burada. O rekordda bunları nasıl yerleştirmem lazım?
+
+607
+01:50:07,895 --> 01:50:10,895
+Bunu şu şekilde bir tasarım yapmam lazım burada bakın.
+
+608
+01:50:11,395 --> 01:50:13,895
+Yani burada, Section...
+
+609
+01:50:14,644 --> 01:50:23,764
+Assignment, bu assignment, section'ın altında assignment'lar. Yani section 1, deninci assignment, section 1, ikinci assignment.
+
+610
+01:50:24,724 --> 01:50:31,163
+Bu section de esasında zayıf bu arada, burada güçlü gözüküyor ama section da zayıf. Section'ın da güçlüsü var, corso'da.
+
+611
+01:50:31,163 --> 01:50:41,043
+Yani şu corso'nun, şu section'ındaki, bu corso'nun, bu section'ındaki, bu assignment. İşte bu assignment'taki öğrencinin notu.
+
+612
+01:50:41,876 --> 01:50:53,216
+Bu korsun, bu seksiyonunun, bu assignmentta öğrencinin notu. Bakın burada çok daha net yani tasarım değil mi? Burası bulanık yani.
+
+613
+01:50:53,216 --> 01:50:59,115
+Burada bir şeyler yapmaya çalışıyoruz ama tek bir rekordda bu bilgileri saklamam mümkün değil yani.
+
+614
+01:50:59,115 --> 01:51:03,020
+Çok böyle kabataslak bir...
+
+615
+01:51:03,444 --> 01:51:09,844
+Çok kavramsal yani. Burada daha doğru. Bu neredeyse yanlış.
+
+616
+01:51:11,644 --> 01:51:15,224
+Veya şöyle de yapabiliriz bakın şöyle bir tane
+
+617
+01:51:15,984 --> 01:51:19,824
+şey multivalued bir attribute.
+
+618
+01:51:20,083 --> 01:51:22,904
+Bu multivalued attributeümüz de composite.
+
+619
+01:51:23,663 --> 01:51:30,583
+Multivalued, composite. Yani burada bir öğrenci bir seksiyon da birden çok
+
+620
+01:51:30,703 --> 01:51:46,944
+Assignment mark, yani ödev notlar gözükecek. Bir öğrencinin bir seksiyonunda multi-valued. Birinci ödev 30, ikinci ödev 4, bu şekilde. Tamam mı?
+
+621
+01:51:52,307 --> 01:51:52,907
+Evet.
+
+622
+01:52:02,579 --> 01:52:04,919
+Burada ufak böyle detaylar da var.
+
+623
+01:52:06,279 --> 01:52:09,579
+Yani çok, bu fon numarasını hallettik zaten.
+
+624
+01:52:10,259 --> 01:52:12,339
+Değil mi? Onda bir sorun yok.
+
+625
+01:52:14,219 --> 01:52:21,079
+Ent, değişip, değişip. Yani bazı durumlarda varlık seti mi olacak, yoksa bağıntı seti mi olacak?
+
+626
+01:52:22,359 --> 01:52:25,939
+Veya bağıntı seti tanımlamam gerekiyor mu?
+
+627
+01:52:26,099 --> 01:52:28,899
+Şu cümleyi ben buraya ekledim. Mesela section'la
+
+628
+01:52:29,247 --> 01:52:34,007
+Student arasında TX bağıntısı var bizim orijinal tasarımımızda.
+
+629
+01:52:34,007 --> 01:52:35,007
+Tamam mı?
+
+630
+01:52:37,487 --> 01:52:42,407
+Onun yerine şöyle bir Registration varlık seti üzerinden bunu yapabilirim.
+
+631
+01:52:42,407 --> 01:52:44,087
+Bakın bunlar Total.
+
+632
+01:52:44,087 --> 01:52:48,687
+Registration hadisesi varsa Registration'da bir öğrenci var.
+
+633
+01:52:48,687 --> 01:52:52,207
+Bir de Section var. Bunların olması lazım. O yüzden burası Total.
+
+634
+01:52:52,351 --> 01:52:57,351
+Böyle de yapabilirim ama bu daha, yani öteki daha...
+
+635
+01:52:57,876 --> 01:53:24,975
+ne diyor, concise diyorlar, daha öz yani. Bu yanlış değil, doğru. Ama ekstradan 2 tane bağıntı gözüküyor bakın, ekstradan bir bağıntı olmuş oldu, 2 tane varlık seti olmuş oldu. Dönüştürdüğün zaman belki aynı kapıya çıkacak ama biraz dolandırmış oldum. Ama işte burada şu registration, başka bir bağıntısı varsa bunun, başka bir varlık seti, bir bağıntısı söz konusuysa, o zaman
+
+636
+01:53:25,359 --> 01:53:28,779
+Bu noktaya beni zorlayan bir şey var demek ki.
+
+637
+01:53:31,420 --> 01:53:36,659
+Evet, bu meseleyi hallettik. Şu binary, non-binary meselesini hallettik.
+
+638
+01:53:36,739 --> 01:53:41,199
+Orada belki sonunda ben oraya taşımıştım. O yüzden bunu da tekrar etmiyorum.
+
+639
+01:53:43,199 --> 01:53:44,000
+Evet.
+
+640
+01:53:47,699 --> 01:53:50,419
+Şimdi, böyle ER'ı burada özetliyor.
+
+641
+01:53:53,059 --> 01:53:56,419
+Diğer diagramını, diagramında kullanılan şeyleri.
+
+642
+01:53:56,979 --> 01:54:07,299
+Şu varlık seti, mesela şu relationship, bu da identifying relationship, zayıf varlığı belirleyen bağıntı.
+
+643
+01:54:07,619 --> 01:54:13,219
+Şu total participation notasyonu, primary key, bu discriminator.
+
+644
+01:54:13,779 --> 01:54:24,100
+Bunlar böyle kompozit, şu multi-valued, şu drive, tamam mı? Bu notasyonları mutlaka bilelim yani sınavda.
+
+645
+01:54:25,460 --> 01:54:36,739
+ER içinde şunlar vardı. Overlap, buraya yazıyoruz mesela. Overlap yazmıyoruz. Şu overlap demek zaten. Şu disjoint demek.
+
+646
+01:54:37,460 --> 01:55:02,460
+Şurada kardinal eti limitleriyle beraber kardinal eti limitleriyle verdik. Bu işte total, işte bire birli, çoklu çoklu falan. Tamam mı? Bütün bu notasyonları böyle kullanıyoruz. Diğer alternatif notasyonlar, şu notasyon işte diğer sunrularda benim örnek tek sunrularda verdiğim notasyon bu. Bunlara işte...
+
+647
+01:55:02,847 --> 01:55:11,407
+şu oluyor, ismi bu oluyor, bu olabilir yani, tam ben de bilmiyorum ama bu notasyon da güzel esasında bir aralar örnekler bunun üzerindeydi daha çok.
+
+648
+01:55:12,287 --> 01:55:17,467
+Bu paylaştığım dokümanda bu örneklere bakın. YML örneklerine bakmayın yani.
+
+649
+01:55:19,147 --> 01:55:25,287
+YML örnekleri bizim buradaki sunurdakilerden farklı.
+
+650
+01:55:26,807 --> 01:55:29,667
+İşte şu notasyon bizim sunurdaki diğer.
+
+651
+01:55:30,195 --> 01:55:36,235
+Limit ifade eden notasyondan daha farklı olduğu için o kafa karıştırıcı, ona bakmayın.
+
+652
+01:55:38,416 --> 01:55:42,796
+Evet, böylece chapter 6'yı bitirmiş oluyoruz.
+
+653
+01:55:44,916 --> 01:55:46,935
+Evet, bunları saklamak istemiyoruz.
+
+654
+01:55:46,935 --> 01:55:47,456
+Süper.
+
+655
+01:55:49,395 --> 01:55:55,475
+Şimdi, isterseniz burada bırakalım, normalizasyona kadar olsun sınavımız.
+
+656
+01:55:56,819 --> 01:56:02,319
+Sınavdan sonra normalizasyon, chapter 7'ye başlarız. Genel bir giriş yapacaktım da.
+
+657
+01:56:07,319 --> 01:56:17,119
+Sınavımız buraya kadar, chapter 6'ya kadar. Chapter 5'te advanced olan o rank ve window'lar yok. Onları işlemedik zaten.
+
+658
+01:56:18,819 --> 01:56:21,319
+İşte en son o chapter 5'te.
+
+659
+01:56:21,344 --> 01:56:25,104
+STOAT PRESS'e, CETRIGGER'ler falan var. En son onlar vardı galiba.
+
+660
+01:56:27,224 --> 01:56:32,664
+Kapsam böyle. Ben sınav sorusunu hazırlayayım da gene formatı size dinledim.
+
+661
+01:56:35,024 --> 01:56:37,224
+Evet, sorumuz varsa sorun arkadaşlar.
+
+662
+01:56:39,704 --> 01:56:43,804
+Yine kafanıza takılan bir şey olursa, platforma veya e-mail'e sorabilirsiniz.
+
+663
+01:56:44,804 --> 01:56:47,804
+Yani soru olmaması...
+
+664
+01:56:50,036 --> 01:56:54,155
+Olsa daha iyi olur yani. Bazı anlamadığınız yerleri, kavramları sorsanız.
+
+665
+01:57:00,115 --> 01:57:03,416
+Assignment tablosunda Course ID olacak mı?
+
+666
+01:57:03,996 --> 01:57:04,655
+Section A.
+
+667
+01:57:11,060 --> 01:57:21,500
+Asignment tablosunda, course ID olacak mı? Seçine ilk olarak bağlıydı. Hadi bakalım.
+
+668
+01:57:48,212 --> 01:57:50,692
+Bu meseleden bahsediyoruz, sizden edersem.
+
+669
+01:57:51,152 --> 01:57:53,212
+Şuradaki multi-valued meselesi.
+
+670
+01:57:53,952 --> 01:57:55,131
+Assignment tablosu.
+
+671
+01:57:55,811 --> 01:57:57,212
+Assignment tablosunda...
+
+672
+01:58:02,676 --> 01:58:18,156
+Assignment tablosu, section ve course ID'leri içeriyor. Yani, course ID, section, çünkü section da zayıf olduğu için. Burada zayıf gözükmüyor maalesef.
+
+673
+01:58:18,156 --> 01:58:28,156
+Course ID, section ID, assignment no olacak assignment tablosunda. Tamam mı? Şurası çoklu çoklu olduğu için de,
+
+674
+01:58:29,332 --> 01:58:43,752
+Burada Marks için ayrı bir tablo yapmamız lazım ki o da Students ve Assignment ID, Section ID, Course ID, bütün bu saydığım 4 tanesi anahtar olacak.
+
+675
+01:58:56,307 --> 01:59:13,747
+Şu C1 dersindeki notunu saklayabileceğim. Şurada ben bir sample data oluşturmuştum. Bakın onu biraz önce göremediniz siz. Burada görünmüş oldu böylece. Yani sample'larla teyit edebiliriz yani bu doğruluğu. Senin soruna bakayım tekrar.
+
+676
+01:59:20,340 --> 01:59:22,340
+Yani güzel soru.
+
+677
+01:59:22,340 --> 01:59:24,340
+Yerinde bir soru.
+
+678
+01:59:24,340 --> 01:59:26,340
+Bu sohbet nerede?
+
+679
+01:59:42,644 --> 01:59:57,403
+Asignment tablosuna course ID olacak mı? Evet, olacak. Yani hem section ID olacak, hem course ID olacak. Çünkü section de zayıf. Yani bir zayıfın mutlaka bir boşluğe ulaşması lazım.
+
+680
+01:59:58,863 --> 02:00:04,403
+Asignment zayıfsa, bağlandığı section zayıf ise, section de course'a...
+
+681
+02:00:04,916 --> 02:00:12,596
+ki cores güçlü, öylece assignment tablosunda olması lazım. Çünkü baktığımız zaman şu sample data'ya da gerçekten
+
+682
+02:00:13,496 --> 02:00:19,256
+bunun böyle olması gerektiğini görüyoruz. Yani S1 öğrencisi, Section 1'de
+
+683
+02:00:19,344 --> 02:00:24,864
+A1 assignment'ında 10 almış. İşte burada eksik dediğin gibi.
+
+684
+02:00:25,804 --> 02:00:27,923
+Yani veya işte iyi oldukça yapmaz.
+
+685
+02:00:28,024 --> 02:00:32,963
+Section 1'de esasında C1 dersinin section.
+
+686
+02:00:33,811 --> 02:00:58,811
+İşte öğrenci, SELECT, C1 dersinde, SEXION 1 de A1 10 almış. İşte buradaki sample'dan anlaşıldığı gibi, burada şu 4, 4'ü 1'den PRIME 2 olması lazım. Tamam mı? Anlaşıldı mı? Daha fazla söze gerek yok. Burada da mesela C2 olsun. Yani hiçbir...
+
+687
+02:00:59,024 --> 02:01:04,144
+İkili, üçlü kombinasyon, ancak şu dördü birden primary key olabilir.
+
+688
+02:01:04,783 --> 02:01:09,903
+Hiçbir şekilde ikili, üçlü kombinasyonların anahtar olamayacağını görün yani.
+
+689
+02:01:10,863 --> 02:01:21,863
+Çünkü bir öğrenci, dersin bir seksiyonunda, bir ödevinde bir nota aldı. Ödev numarası 1 mesela.
+
+690
+02:01:24,344 --> 02:01:26,024
+Doğru mu? Doğru mu bir?
+
+691
+02:01:26,228 --> 02:01:27,328
+Anlamadığınız yer.
+
+692
+02:01:29,688 --> 02:01:30,948
+Peki başka sorusu olan?
+
+693
+02:01:34,676 --> 02:01:42,456
+Güzel, bu şekilde böyle analiz yaparak çalıştım. Yani hep mesela kurallar diyorum ama o kuralların içini de anlayarak.
+
+694
+02:01:50,356 --> 02:01:54,076
+Peki, o zaman görüşmek üzere. İyi çalışmalar diliyorum.
+
+695
+02:02:05,587 --> 02:02:06,587
+[öğrenci] söyleyin.
+
+696
+02:02:11,587 --> 02:02:12,587
+Gerek yok.
+
+697
+02:02:12,587 --> 02:02:15,587
+Gibi. Eğer olursa ben ona yazarım.
+
+698
+02:02:15,587 --> 02:02:16,460
+Klas.

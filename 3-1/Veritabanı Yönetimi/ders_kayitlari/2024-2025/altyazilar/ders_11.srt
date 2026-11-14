@@ -1,0 +1,2083 @@
+1
+00:01:33,043 --> 00:01:34,963
+Merhaba arkadaşlar, da açın bir video.
+
+2
+00:01:45,331 --> 00:01:46,371
+S-Control.
+
+3
+00:02:01,748 --> 00:02:06,748
+Evet arkadaşlar, bu hafta son dersimizi yapacağız inşallah.
+
+4
+00:02:07,148 --> 00:02:09,068
+O haftaya mazere sınavımız var.
+
+5
+00:02:09,768 --> 00:02:13,688
+Aynı tarihte, yani dersin olduğu zaman.
+
+6
+00:02:14,448 --> 00:02:17,248
+Rapor olan arkadaşlar sınava gelebilirler.
+
+7
+00:02:18,828 --> 00:02:23,028
+Bu dönem ters konularını yetiştirdik.
+
+8
+00:02:25,395 --> 00:02:30,575
+Hatta bugünkü derste biraz tereddüt ettim hangi konuyu dahil edeyim diye.
+
+9
+00:02:31,475 --> 00:02:40,175
+Hatırladığım kadarıyla geçen haftaki derslerde ikinci ara sınavdan sonra normalizasyon konusunu bitirdik.
+
+10
+00:02:40,955 --> 00:02:43,695
+O da ikinci sınava dahildir daha doğrusu.
+
+11
+00:02:44,235 --> 00:02:49,315
+İkinci sınavdan sonra NOA SK veri tabanları hakkında genel bir bilgilendirmemiz oldu.
+
+12
+00:02:49,759 --> 00:02:55,379
+Ondan sonraki dersi fiziksel tasarımla ilgili, indexlerle ilgili bir dersimiz oldu.
+
+13
+00:02:55,379 --> 00:03:14,319
+Bu haftada gene veritabanlarında Active Data Based, Active Veritabanları ismi altında ve diğer bir konu olarak da güvenlik konusunda eksik kalan bazı konular var. Onlardan bahsedeceğim.
+
+14
+00:03:14,704 --> 00:03:25,564
+Tabii bu özellikle güvenlik konusu son senelerde siber güvenlik kapsama altında birçok alt konu başlarından bir tanesi veritabanlarındaki güvenlik reddette.
+
+15
+00:03:26,403 --> 00:03:29,183
+Bu konu tabii bir haftaya sığacak bir konu değil.
+
+16
+00:03:30,504 --> 00:03:37,444
+Fakat ben eski ders notlarımdan bazı düzenlemelerle sizinle paylaşacağım bazı şeyler var.
+
+17
+00:03:38,444 --> 00:03:40,683
+Bunlar SQL'e en yakın.
+
+18
+00:03:42,996 --> 00:03:46,795
+SQL ile yapabileceğimiz şeyler var. Bir de ek olarak
+
+19
+00:03:48,020 --> 00:04:14,180
+Mandatory Access Control meselesi var. Bir de istatistiksel veri tabanlarında, Covered Channel denilen, böyle veri tabanındaki açık noktaları, olarak oradan ilginç sızdırma teknikleri var. Böyle ilginç bazı yollar var bununla ilgili. Bunlara böyle, Açıklar, sistemin açık noktaları.
+
+20
+00:04:16,019 --> 00:04:25,439
+yetkilendirme de yapsak, kimlik doğrulama da yapsak, bu açık noktalardan veri dışarıya sızabilir.
+
+21
+00:04:25,819 --> 00:04:27,379
+İşte bunların ilgili örnekler var.
+
+22
+00:04:29,019 --> 00:04:32,439
+Şimdi ilk olarak, ilk bahsettiğim bu trigger konusu.
+
+23
+00:04:32,599 --> 00:04:38,699
+Yani Active Database kapsama altında böyle daha kapsamlı triggerler var.
+
+24
+00:04:44,052 --> 00:04:53,532
+harici olaylara karşı daha böyle detaylı trigger sisteminin kurulması söz konusu.
+
+25
+00:04:54,812 --> 00:05:03,532
+Bu örnek, bugün burada bahsedeceğim bu örnek, burayı ilk başta bizim bahsettiğimiz, daha önceden bahsettiğimiz basit association örnekleri var.
+
+26
+00:05:03,532 --> 00:05:10,632
+İlk olarak onların üzerinden geçelim, böyle hatırlamak için. Ondan sonra daha kapsamlı bir trigger örneğimiz var. Ondan bahsedeceğim.
+
+27
+00:05:12,052 --> 00:05:29,892
+Diyenekte, Elmas Cinavetinin kitabından gene. Bu sunularda yaklaşık 40 sayfa. Bunları da sizinle paylaşacağım, koyamadım yetişmeli. Gene public olan o ek bilgiler dizimde bunları paylaşacağım. Bunlar da böylece derse dahil olmuş oluyorlar.
+
+28
+00:05:31,112 --> 00:05:34,211
+Dediğim gibi bazı şeyleri zaten yaptık.
+
+29
+00:05:35,439 --> 00:05:42,960
+Onların üzerine birkaç madde daha koymuş olacağız. Biraz daha açılma, pano kapsamını genişletmekte olacağız.
+
+30
+00:05:42,960 --> 00:05:49,680
+Bu nedenle ilki trigger dediğim gibi. Triggerlerden önce işte burada basit password için örnekleri var.
+
+31
+00:05:49,908 --> 00:05:53,008
+Bunların grameri oldukça basit.
+
+32
+00:05:54,228 --> 00:05:56,668
+ASEL için tabii yetki isteyen bir şey.
+
+33
+00:05:56,908 --> 00:05:58,668
+Yetkilendimede de birazdan göreceğiz.
+
+34
+00:05:59,067 --> 00:06:02,927
+Sınavlarda da sordum hatta, her iki sınavda da sorduğumu hatırlıyorum.
+
+35
+00:06:02,927 --> 00:06:12,927
+Grant references gerektiren, yani yetkisi kuvvetli olan, references yetkisi gerektiren bir işlem.
+
+36
+00:06:13,908 --> 00:06:17,908
+Çünkü Velita bana böyle çok, ASEL için yazan...
+
+37
+00:06:17,908 --> 00:06:27,788
+veritabanına 6 yıl bir vaziyete getirebiliriz. Yani kullanımını ithal edebiliriz. Yani bütün kullanıcılara zarar verebiliriz.
+
+38
+00:06:28,387 --> 00:06:35,408
+Burada böyle mouse search'unlar var. O bahsettiğim search'un ilerideki sunularda bir yerde karşılığında çıkıyor.
+
+39
+00:06:35,956 --> 00:06:42,956
+Mesela burada gayet kolay anlaşılıyor yani. Yapılması istenen şey. Bu yüzden çok üzerinde durmuyorum.
+
+40
+00:06:42,956 --> 00:06:50,956
+Burada da yine basit asylasınlarımız var. Yani derse kayıtla ilgili. Yukarıda bir ders kayıt veritabanı var.
+
+41
+00:06:50,956 --> 00:06:56,956
+Şimdi bu örneklerle öyle 2-3 tane örneğimiz var. Derste kullandığımız company veritabanı, laboratuvarda da kullandığımız.
+
+42
+00:06:56,956 --> 00:07:03,956
+Aynı zamanda SELEBATİŞAS'ın üniversite kayıt veritabanı var. Bir de bu var.
+
+43
+00:07:03,956 --> 00:07:09,495
+Bu da başka bir kitaptaki yine üniversite kayıt veri tamamı sistemi.
+
+44
+00:07:10,836 --> 00:07:25,735
+Burada da işte böyle bir şema var. Yani bu sorguları indirmeden önce bu şemayı bir hazmetmek lazım. Ne oluyor, ne bitiyor diye. Burada işte anahtarlar, yabancı anahtarlar, bu künya'daki hadiseleri burada kafada canlandırmak lazım.
+
+45
+00:07:25,735 --> 00:07:38,396
+Şimdi ben uzun şey yapmayacağım ama işte öğrenciler gene departmanlara bağlılar. Şurada major ID var. Dersler var, sekşinler derslerin altında açılan sekşinler var. İşte bir hoca veriyor.
+
+46
+00:07:38,836 --> 00:07:39,935
+şu sene açılmış falan.
+
+47
+00:07:42,075 --> 00:07:45,675
+Yine dersin hangi departmanda açıldığı da var.
+
+48
+00:07:45,875 --> 00:07:48,475
+Ve öğrenciler de derslere kayıt oluyorlar.
+
+49
+00:07:49,555 --> 00:07:56,276
+Anahtarıyla bizim daha önce kullandığımız ders notlarındaki veritabanına benziyor.
+
+50
+00:07:57,195 --> 00:08:00,836
+İsimlendirme farklı. Biraz daha kabaca bir tasarım esasında.
+
+51
+00:08:02,291 --> 00:08:19,151
+Şimdi burada yapılan şey zaten hemen anlaşılıyor. Aşağıda da açıklaması var. Ders almada yani her dersin, her sectionin mutlaka 30 öğrenci almasını burada ifade ediyor. Gayet kolay bir asr-öçün gene.
+
+52
+00:08:19,812 --> 00:08:30,291
+Genelde asr-öçünlerin formatı veya grameri diyelim bu şekilde oluyor. Yani check not exist veya check exist gibi yani correlated gibi.
+
+53
+00:08:30,291 --> 00:08:32,172
+formda oluyor.
+
+54
+00:08:33,531 --> 00:08:37,491
+Burada işte hep bu gramerler genelde kullanılıyor.
+
+55
+00:08:38,591 --> 00:08:50,872
+Evet, bir öğrencinin işte bir seksiyonu birden çok almaması gibi veya bir dersi en fazla bir kez alması gibi daha kritik bir asıl için mesela.
+
+56
+00:08:50,872 --> 00:08:53,872
+Yani, evet.
+
+57
+00:08:55,316 --> 00:09:23,296
+Bunların açıklamaları da var burada. Bunları çalışırsanız, burada da ufak açıklamalar var. Şimdi çok üzerinde durmayacağım bunların. Trigger'lardan bahsedelim gene. Trigger'lar biraz olmazsa olmaz ama uzak durulması da gereken bir şey olarak geçiyor genel bir literatürde. Hem tarihçesinde oldukça eskiye dayanıyor. Yani veritabanının ilk zamanlarından beri trigger'lar var.
+
+58
+00:09:23,316 --> 00:09:38,355
+Böyle yeni bir kavram değil, evet. Hatta, yani günümüzde çoğunlukla, hani NoSQL'dan bahsetsek, NoSQL veri tabanlarında çoğunlukla böyle karmaşık şeyler application'a havale ediliyor.
+
+59
+00:09:38,536 --> 00:09:43,456
+Ta ki veri tabanlarını biraz daha basit tutalım. Daha böyle basit bir iskelet olsun.
+
+60
+00:09:43,996 --> 00:09:51,316
+Ve karmaşık bir şey yapılacaksa, mesela karmaşık join'lar veya karmaşık böyle trigger makamında şeyler yapılacak.
+
+61
+00:09:51,316 --> 00:09:56,776
+Bunu hep de cash'in kendisi yapsın. Ardında bir yaklaşım yaygın.
+
+62
+00:09:57,256 --> 00:10:00,000
+Bununla beraber gene geleneksel tarih...
+
+63
+00:10:00,000 --> 00:10:07,539
+Bu konuları da trigger'ların kullanımı bazı durumlarda zaruri, yani kullanılması önem arz ediyor.
+
+64
+00:10:08,200 --> 00:10:10,639
+Ve bunun da kapsamı da böyle geniş olabiliyor.
+
+65
+00:10:11,059 --> 00:10:18,720
+Ve burada da performansla ilgili, yani verimle ilgili, sistem verimiyle ilgili bazı noktalara dikkat edilmesi gerekiyor.
+
+66
+00:10:19,019 --> 00:10:20,839
+İşte bugün bundan bahsedeceğim esasında.
+
+67
+00:10:21,019 --> 00:10:22,799
+Biz basit trigger'lar gördük.
+
+68
+00:10:23,199 --> 00:10:25,620
+Hatta sınavda da çoğu zaman, 2 sınavda da sordum.
+
+69
+00:10:26,079 --> 00:10:27,980
+Burada da biraz daha karmaşık bir trigger var.
+
+70
+00:10:28,000 --> 00:10:35,759
+Yine burada ilk olarak trigger'ın ana göremelerini ifade ediyor. Event, Condition, Action tarzında.
+
+71
+00:10:35,759 --> 00:10:46,360
+Yani herhangi bir hadise olduğu zaman, yani assertion her gibi değil, assertion her zaman, her bir harekette, her bir aktivitede assertion kontrol ediliyor.
+
+72
+00:10:46,500 --> 00:10:48,799
+Yani sisteme oldukça yüklü olduğunu söyledik.
+
+73
+00:10:49,172 --> 00:10:51,231
+Sistem için büyük bir yük olduğunu söyledik.
+
+74
+00:10:51,672 --> 00:10:56,152
+Ama burada bir event ile onu biraz daha şekillendiriyoruz.
+
+75
+00:10:56,152 --> 00:11:09,152
+Yani şu tabloda, şu kolonda, insert olduğu zaman mesela veya şu tabloda, şu kolonda, şu kolonlarda, şu nitelikler üzerine bir update olduğu zaman gibi.
+
+76
+00:11:09,672 --> 00:11:17,152
+Bu hadiseyi, olayı bu şekilde şey yapıyoruz, kodluyoruz yani şekillendiriyoruz.
+
+77
+00:11:17,172 --> 00:11:26,512
+İşte bundan sonra bir condition olduğu zaman, yani bundan sonra bir condition o şart sağlandığı zaman burada bir action alıyoruz.
+
+78
+00:11:27,072 --> 00:11:30,392
+Trigger'ın böyle genel yapısı bu şekilde.
+
+79
+00:11:32,052 --> 00:11:51,991
+Şimdi burada temel bir trigger şeyi var. Kullanılan gramer var. Burada create or alter da olabilir. Yani mevcut trigger varsa onu değiştiriyorsak bu sefer create or alter kullanmamız lazım.
+
+80
+00:11:51,991 --> 00:12:00,052
+Bunu diğer objelerde de görüyoruz. Yani fonksiyonlarda da, prosedürlerde da, işte viewlarda da. Genelde PGSQ'de de bu fonksiyonlarda da.
+
+81
+00:12:00,052 --> 00:12:13,052
+Bu formda var. Öteki türlü, biz önceden mevcut olan bir trigger'ı değiştirdiysek, yeniden bu komutu çalıştırırsak, o zaman mevcut olduğu için hata verecek.
+
+82
+00:12:13,052 --> 00:12:28,052
+Ya drop etmemiz lazım, yani belki aynı isimli trigger'ı drop edip, yine isimli veya aynı isimli, işte yine definition'ını değiştirdiğim bir trigger tanımlamam lazım. O yüzden...
+
+83
+00:12:28,052 --> 00:12:32,052
+Creator Altı'lı güzel bir form olmuş oluyor.
+
+84
+00:12:32,052 --> 00:12:37,052
+Kullanma noktasında veya diğer objelerde de aynı, fonksiyonlarda, tablolarda da aynı.
+
+85
+00:12:37,052 --> 00:12:48,052
+Ondan sonra buna bir isim veriyoruz tabii. Daha sonra bunu, bazı böyle fonksiyonlarda bunu tetikleyeceğiz yani.
+
+86
+00:12:48,436 --> 00:13:01,615
+Ve ondan sonra eventımız, after insert on table name şeklinde. Yani tablo üzerine bir insert yapıldıktan sonra. Bunun sonrası öncesi de önemli olduğunu söylemiştik.
+
+87
+00:13:01,871 --> 00:13:09,591
+Çünkü sonrasında ortaya çıkan tabloyu burada, Condition'da değerlendireceğiz.
+
+88
+00:13:09,951 --> 00:13:12,692
+Mesela ve oradaki o veriyi kullanacağız burada.
+
+89
+00:13:13,211 --> 00:13:18,851
+Her harikâ, her nasılsa artık o küçük dünyadaki o hadiseye göre.
+
+90
+00:13:19,379 --> 00:13:34,139
+Ondan sonra FOREACH RAW ile yapılan, yani ortaya çıkan değişikliğin değişen her bir satır için şu şartı kontrol ediyoruz ve action yapıyoruz.
+
+91
+00:13:34,139 --> 00:13:41,139
+Ve gene diğer bir satır için, yani böyle bir anda bir operasyonla bir...
+
+92
+00:13:41,519 --> 00:14:02,240
+insert ile, mesela bazı insertler, teker teker, one by one yükleme yapıldığını ama, yani insert into table mesela, ama bazı mesela bulk, yani toplu tarzda veri yükleme, böyle imkanları var veri tabanlarında, copy, copy gibi mesela, daha efkesent bir şekilde.
+
+93
+00:14:09,519 --> 00:14:31,519
+bu, SELECT, ACTION'ı almak yerine bütün o insertlerin hepsi için bir kez buraya çalıştırmak oldukça dil verişli olabilir. Çoğu zaman böyle toplu update'lerde, toplu yüklemelerde veya toplu silmelerde, burada kullanılan kelime bulk kelimesi. Yani bulk delete, bulk update, bulk insert gibi mesela.
+
+94
+00:14:32,692 --> 00:14:56,231
+Hem o operasyonun optimize bir şekilde gerçeklenmesi imkanı var geri tabanında. Hem de burada ona bağlı olan bir trigger varsa, buradaki gibi mesela, burada tek tek şey yapıyor ama, oradaki bütün o eklemeler için bir tane action yapsak çok daha elverişli olacak.
+
+95
+00:14:56,231 --> 00:14:58,731
+İşte bahsedeceğim konu bu olacak.
+
+96
+00:15:00,692 --> 00:15:06,171
+İstegar'ın daha kapsamlı bir halde, böyle, şey var, tipleri var.
+
+97
+00:15:08,884 --> 00:15:29,804
+Bunlardan yaygın kullanılanlar yani before insert, after insert, before update, before after update mesela, gene before after delete ve gene son olarak bir de instead of var. Bu da materialized view'larda genelde kullanılıyor. Yani ileride örnek yok herhalde şimdi söyleyeyim.
+
+98
+00:15:36,884 --> 00:16:04,144
+dediğimiz zaman, o tabloda yapmak yerine bunu, oradaki o base tablolarda bunu yapıyor. Yani instead of oradan geliyor esasında. Veya materialize view olur, normal view olur. O view'da bir şey yapmıyoruz. Onun yerine arkada o view'un bağlantı içerisinde olduğu tablolarda esas işlemi yapıyoruz. Bunu kurguluyor instead of da.
+
+99
+00:16:04,884 --> 00:16:11,584
+Bunlarla ilgili örnek sunularda yok. Bakılabilir. Ona da siz bakarsınız. Ama mana itibariyle böyle.
+
+100
+00:16:12,084 --> 00:16:17,524
+Bu türdeki bu vurgular birçok şeyi değiştiriyor. Sınavlarda da sormuştum zaten.
+
+101
+00:16:18,067 --> 00:16:32,528
+Burada basit trigger örneklerimiz var gene. Öğrenci veritabanı üzerinde. Trigger'ın böyle akışından da anlaşılıyor ne yaptığı. Gene for each row ağzında bir sorgu.
+
+102
+00:16:32,528 --> 00:16:45,987
+Enrow'da herhangi bir not update edildiği zaman değişen her bir satır için şöyle bir definition yapıyor. Eski row, yeni row.
+
+103
+00:16:46,067 --> 00:16:47,268
+olacak şekilde.
+
+104
+00:16:49,491 --> 00:17:01,931
+Daha sonra eğer burada bir değişiklik varsa, yani notta bir değişiklik varsa, bu değişikliği yine bir log tablosuna kopyalıyor.
+
+105
+00:17:02,511 --> 00:17:10,112
+Yani bir grade, enrolleda grade notumuz var ama bu değişikliği logluyor her nedense.
+
+106
+00:17:11,371 --> 00:17:14,491
+Yani bunu sistem seviyesinde bu loglar var zaten.
+
+107
+00:17:15,692 --> 00:17:17,491
+Yani bunu sistem gerçeklemede görüyoruz.
+
+108
+00:17:17,491 --> 00:17:39,112
+Ama şeyde ayrıca user seviyesinde de kullanıcı seviyesinde de bu logları tutmak istemiş yani. O yüzden burada her bir satır için böyle bir log kaydı oluşturulup bu buraya ekleniyor. Action kısmı burası, condition burası, event da burası oluyor.
+
+109
+00:17:40,276 --> 00:18:07,336
+Evet. Daha sonra burada da yine aşağıda da açıklaması var zaten. Yeni bir öğrenci gelildiği zaman bu öğrencinin grad yeri mevcut şu andaki tarihten 4 sene sonradan daha fazla olması lazım. Eğer böyle değilse buna nal atıyor.
+
+110
+00:18:07,859 --> 00:18:35,579
+şu condition sağlanıyorsa, yani işte 2000 girişte mesela, 2004 grad year olması lazım. Eğer 2024 grad year'e girmediyse veya 2025-2026 girmediyse o zaman onun yerine default olarak NAL basıyor. Gene bu insert olan her bir toplu için böyle bir şey işlem yapıyoruz. Bunlar basit olanlarda.
+
+111
+00:18:35,859 --> 00:18:48,099
+Şimdi şöyle bir şema üzerinde biraz daha değişik bir trigger göreceğiz. Bu triggerımız da for each statement olacak.
+
+112
+00:18:49,587 --> 00:19:02,387
+Yine buradaki meseleyi anlamak adına ilk başta For Each Row örneği var. Burada ilk olarak Şema'yı tanıyordum. O sizin yabancı olmadığınız, yine aşikar olduğunuz, company veli tabanına ait olan bir Şema.
+
+113
+00:19:02,567 --> 00:19:14,407
+Onun bir kısmı biraz dejenere olmuş bir hale. Aynı normalizasyonda da yapıyorduk bir şeyler. Fakat o tarz bir şey değil de, yani normalizasyonu bozan bir tarz da değil.
+
+114
+00:19:17,587 --> 00:19:32,347
+ekleme tarzında bir şey var. Yani gayet böyle masumane bir şekilde employee, işte salary'si var, department'ı var, işte amiri, yöneticisi var. Bu bilgiler vardı zaten employee ile.
+
+115
+00:19:32,907 --> 00:19:36,867
+Buna beraber department'ta da department'den DNO, manager SSN vardı.
+
+116
+00:19:37,460 --> 00:20:01,779
+Bunlar vardı ama şunu ekledik, Total Sudden'ı ekledik. Yani her bir departmandaki toplam maaş miktarını burada kaydetmeye baktık. Bu olabilir fakat bu esasında derived, kavramsal tasarımda da bahsettiğim gibi derived olması gereken. Yani bu ihtiyaç olduğu zaman bu hesaplanabilen emanasında.
+
+117
+00:20:04,115 --> 00:20:16,596
+Böyle olduğu için bunu aynen böyle saklamanın yani fiziksel olarak saklamanın biraz tehlikeli olabileceğini daha önce söylemiştik. Aynı yaş bilgisi gibi.
+
+118
+00:20:17,715 --> 00:20:30,036
+Yani yaş bilgisi saklamak yerine date of birth'ı saklamamız lazım. Veya yine total kredit yerine bütün aldığı kredilerin, her dersi aldığı kredileri saklıyoruz.
+
+119
+00:20:30,455 --> 00:20:38,715
+Ne zamanki işte GTA hesabı isteniyorsa o zaman da onları calculate edeceğiz. Yani bir tane trigger olabilir, sort prosedür olabilir.
+
+120
+00:20:38,715 --> 00:20:44,576
+Ama bunları saklamak demek, burada tutarlılığın sağlanması demek.
+
+121
+00:20:45,715 --> 00:20:56,955
+Bazı hadiselerde bu maaş bilgisinin değiştiği veya departman numarasının değiştiği daha da karmaşık olabilir yani.
+
+122
+00:20:57,915 --> 00:21:03,756
+Burada hani biraz orta halde bir şey tutmak adına, karmaşık da biraz daha kısıtlamak adına.
+
+123
+00:21:03,756 --> 00:21:13,076
+Burada departmanın toplam seferisinde şununla konsistent olması, şuradaki bilgilerle konsistent olması için
+
+124
+00:21:13,715 --> 00:21:16,836
+Bazı böyle trigger'larla bunu sağlayabiliriz.
+
+125
+00:21:18,319 --> 00:21:28,099
+Bundan evvel, şu küçük dünya için böyle basit bir sorgu yazılmış. Basit bir trigger yazılmış. Bunu zaten anlarsanız, burada çok bir sorun yok.
+
+126
+00:21:29,900 --> 00:21:44,940
+Zaten for each row tarzında. Benim üzerimde duracağım esasında burası. Şimdi burada, Department of Total Study'nin updated olması lazım. Yani konsistent olması lazım.
+
+127
+00:21:46,319 --> 00:21:59,819
+Bu konsistensiyi, yani bu veri tutarlılığını tehdit edecek, zarar verecek olan işlemler nelerdir? Bunu tetkik etmek lazım. Yani mesela birinci hadisede,
+
+128
+00:22:01,587 --> 00:22:17,028
+Yeni bir employee eklendiği zaman, bir departmana, buradaki total salary, department'ın total salary'in, salarisinin, bu yeni gelen employee'nin salarisini dahil etmesi lazım buraya.
+
+129
+00:22:17,688 --> 00:22:28,907
+Oldukça basit. Yani, after insert on employee table'da, as da imzalı bir şey lazım, trigger lazım yani.
+
+130
+00:22:29,428 --> 00:22:41,768
+O zaman burada her bir row için, yani insert edilen her bir row için, burada departmentın update olması lazım.
+
+131
+00:22:42,195 --> 00:22:59,216
+Tabii burada condition da var. O condition da eklenen kişilerin, işçilerin, eğer department numaraları girilmediyse o zaman bir action yapmama gerek yok.
+
+132
+00:22:59,216 --> 00:23:10,195
+Yani department number'da bir not null kısıtı yoksa o zaman null olabilir. Yani sadece işçinin ismini, SSN numarasını...
+
+133
+00:23:10,195 --> 00:23:18,415
+SADRİS'ine giriyorum. Supervisor'a da giriyorum mesela. Departmada bana sınıf girmiyor olabilirim. Daha şimdi departmada atanmamıştır yani.
+
+134
+00:23:18,836 --> 00:23:42,256
+İşte burada ben mesela 100 tane işçi, employee ekliyor isem, bu eklenen işçilerin hiçbirisinde department number yok ise, yani null ise, null olarak insert edildiyse, o zaman herhangi bir action yapmama gerek yok. Zaten consistent yani bu gayet açık.
+
+135
+00:23:46,836 --> 00:23:48,675
+Koordine etmemiz lazım.
+
+136
+00:23:49,816 --> 00:24:08,195
+Diğer bir hadise, buradaki consistency, yani department employee tablolarının, tutarlılığının sağlanmasını zarar verecek olan diğer hadiseler, mesela bir employee'nin maaşını değiştirmek.
+
+137
+00:24:09,556 --> 00:24:29,436
+Burada yine maaşı değiştirilen emploiler, işte belli bir miktarsa, yani 100 kişi mesela maaşı değişiyorsa, yani işte maaşı 10.000'den küçük olanların maaşına %5 zam yaptık, böyle böyle işte 100 kişi var. O update komutu, tek bir update komutunda böyle 100 kişinin maaşı değişebilir.
+
+138
+00:24:34,708 --> 00:24:49,208
+Burada her tek tek değişen her biri için eğer gene bu değişen satırın maaşı değişen kişinin departmanı NAL değilse o zaman da departman gene şey olacak.
+
+139
+00:24:49,428 --> 00:24:53,708
+Lotus adresini güncellemem gerekecek. Çünkü maaş güncellendi.
+
+140
+00:24:53,708 --> 00:25:02,668
+Ama gene burada update olan ve maaşı güncellenen 100 kişinin hepsinin de departman numarası zaten.
+
+141
+00:25:02,708 --> 00:25:26,868
+alırsa, o zaman action'a gerek yok. Yani bu kontrolü yine yapmam gerekiyor. Benzer şekilde bunu, yani buradaki bütün dört tane durumu böyle tetkik ettikten sonra bunları biz for each row'la, yani row base, row esasla bunları yazabiliriz. Bu da o kadar zor değil. Yani gramara dikkat ederek.
+
+142
+00:25:27,920 --> 00:25:46,060
+Bu hadiseleri böyle dikkatli böyle şekillendirerek event, condition, actionını, for each role'da gayet kolay yazabiliriz. Zaten ilk örnekler öyle. Ama for each statement biraz daha zor. Ama daha verimli, daha efficient bir şekilde yazılıyor.
+
+143
+00:25:55,920 --> 00:26:14,860
+Delirt olmasıyla beraber, bu işçilerle, bu işçiler bir departmana, en az bir tanesi bir departmana bağlıysa, o departmanın tutusal resminin de azalması lazım. Yani o çıkan kişinin maaşı kadar azalması lazım.
+
+144
+00:26:16,243 --> 00:26:39,923
+Dördüncü hadise de departmanla ilgili. Yani bir işçinin departmanı değişirse, bu durumda da evvelki departmanın total salarisinden o kişinin maaşını çıkarıp hangi departmana eklendiyse bu departmana yeni işçinin dahil olması demek.
+
+145
+00:26:44,243 --> 00:26:49,483
+eklenmesi, total sadarısına, bu yeni kişinin sadarısının eklenmesi demek oluyor.
+
+146
+00:26:51,123 --> 00:26:57,703
+Evet, anladınız herhalde. Yani buradaki tabloda bir tane nitelik eklemek, böyle çok hafif bir işlem değil.
+
+147
+00:26:57,703 --> 00:27:08,643
+Yani bunu böyle eklediğimiz zaman, ya bunu authentication'a havare edeceğiz, authentication seviyesinde bunlar böyle güncel inecek.
+
+148
+00:27:08,976 --> 00:27:15,435
+Ya da bu güncellemeyi, şey yapacağız, trigger'lerde sağlayacağız.
+
+149
+00:27:15,988 --> 00:27:41,028
+Burada T1 için, yani şuradaki birinci durum için, yani yine bir employee'nin eklenmesi durumu için, her eklenen employee için, eğer eklediğim kişi işçinin departmanı belli değilse, NAL ise, o zaman bir şey yapmıyoruz.
+
+150
+00:27:41,028 --> 00:27:43,448
+Ama NAL olması durumunda.
+
+151
+00:27:43,988 --> 00:28:10,688
+O zaman bu new dno ya bu new dno'yu departmada bulup, bu new dno, dno, departmada bulup, o legi total sadriği yeni gelen insert edilen yeni topu, yani new olan bu yeni, burada öyle bir değişken tanımlamış, new olarak tanımlamış.
+
+152
+00:28:10,688 --> 00:28:11,928
+Yani tanımlamamış da default.
+
+153
+00:28:11,988 --> 00:28:27,048
+olarak öyle demek ki. Bunu Total Salary'e ekliyoruz. Bu kolay esasında. Şimdi burada kullanılan notasyon zannedersem Oracle tarzı bir şey var.
+
+154
+00:28:28,756 --> 00:28:38,556
+Oracle tarzı bir grameri var. Fakat bunu eğer merak ediyorsanız, TGSP'ye de böyle şey yapabilirsiniz.
+
+155
+00:28:40,596 --> 00:29:05,695
+değiştirebilirsiniz. PCS Cloud formatına da değiştirebilirsiniz. Bunu ben geçen senelerde böyle proje olarak veriyordum. Proje şey, laboratuvarı geçmeden evvel. Yani burada da ödev olarak verdiğim zamanlar oldu. PCS Cloud'da bu örneği ödev olarak vermiyorum şu anda ama normal şeyimizin dışına çıkmayalım. Ama tam öyle merak edenler, öğrenmek isteyenler.
+
+156
+00:29:08,596 --> 00:29:33,215
+yazabilirler. İşte burada T2'nin hem for each role ile for each statement ile yazılmış adleri var. Şimdi T2'ye tekrar bir bakalım. T2'de employee işçinin mevcut olan bir işçinin maaşının değişmesi söz konusu. Yani bir update ile ilgili bir mesele.
+
+157
+00:29:34,900 --> 00:30:00,879
+Employee tablosunda bir update işlemi. İşte o yüzden Employee tablosunda After Update of Salary olduğu zaman şöyle T2 isimli bir trigger tanımı. Burada yine maaşı değişenlere, employee değişen, maaşı değişen işçilerin eski halleri Old Row'lar, O olsun, yeni olanlar da New olsun.
+
+158
+00:30:01,268 --> 00:30:19,528
+Burada her bir değişiklik yapılan her bir satır için, eğer burada ben Sadari'yi değiştirdim, yani Defarment No'yu değiştirmedim. O yüzden ya N'ye ya O'ya bakmam yeterli. Yani iznafnal olması noktasında.
+
+159
+00:30:20,019 --> 00:30:36,220
+Burada eğer navdan farklı ise o zaman gerçekten bir action yapmam lazım. Çünkü departmanın total sadarisine bu değişikliği yansıtmam gerekiyor.
+
+160
+00:30:37,220 --> 00:30:47,019
+Burada her bir satır için üzerinde değişiklik olan her bir satırı ne ve o ile kodladığım için bu total sadariden
+
+161
+00:30:48,019 --> 00:30:56,639
+eski salariyi çıkartıyorum, yeni salariyi ekliyorum veya şu aradaki farkı, fark kadar bir total salariyle değişiklik oluyor.
+
+162
+00:30:57,039 --> 00:31:02,500
+Ya pozitif ya negatif yani. Çünkü maaşı azaltmış da olabilirim, arttırmış da olabilirim.
+
+163
+00:31:03,059 --> 00:31:14,599
+İşte action kısmında bu department no'yu now değildi ya, bu department no'yu bulup, bu department total salarisini yine böyle güncellemiş olduk.
+
+164
+00:31:15,220 --> 00:31:28,119
+Şimdi bunu eğer maaşı güncellenen böyle yüzlerce kişi varsa bu trigger biraz daha zaman alacaktır. Çok böyle verimli olmayacaktır.
+
+165
+00:31:28,276 --> 00:31:45,956
+Çünkü burada Condition her biri için çalıştırılıyor. Yani bu çok korkunç bir gecikme değildir zannedersem. Yani ben de bununla ilgili bir laboratuvar çalışması yapmadım. Onu ben belki merak edenler için böyle teşvik ediyorum bakmalarına.
+
+166
+00:31:45,956 --> 00:31:56,276
+Tabii employee'de de yeterli miktarda veri olması lazım. Yani öyle 810 veriyle 80-100 veriyle veri tabanında böyle verim performans ölçümü yapmak.
+
+167
+00:31:56,276 --> 00:32:07,276
+tablolarının çok bir manası da yok açıkçası. Siz de tahmin ediyorsunuzdur. Yani velitabanın tablolarının böyle en az 10-20 MB, 80-100 MB olması lazım ki.
+
+168
+00:32:07,796 --> 00:32:29,416
+Buradaki teknikler, performans esaslı olan açılımlar, yeni teknikler karşımıza manalı bir şeyler çıkarsın. O yüzden burada da yine aynı mesele söz konusu. Yani bir iki tane kişinin maaşı değişiyorsa, polis statement'ın karmaşıklığıyla uğraşmaya değmez yani.
+
+169
+00:32:34,644 --> 00:32:46,663
+KSS'ini yapmak lazım her zaman. Ama çok veri varsa, veritabanı böyle yüklüyse, veritabanıysa, o zaman böyle bir statement yazmak çok akıllıca olacaktır.
+
+170
+00:32:47,364 --> 00:32:54,384
+Şimdi burada gene grameylerimiz aynı fakat şurada for a statement var.
+
+171
+00:32:54,836 --> 00:33:18,276
+Burada ben kalemle çizdiğim şekiller var. Mesela Employee tablosunun eski hali ve yeni hali. Burada değişen Salary'deki update'ler. Bu eski hali, eski tablo olacak. Maaşı değişenler.
+
+172
+00:33:22,740 --> 00:33:45,319
+gerek yeni tabloda, NAL'dan farklı, en az bir tane TUPLE var ise, yani bir OAT employee var, bir de NEW tablosu var employee'nin. Bu NEW'de maaşı değişenler var. Hayal edin öyle 100 kişi var orada, maaşları değişmiş.
+
+173
+00:33:45,759 --> 00:34:04,579
+O tablosunda da o 100 kişinin maaşı değişmeden önceki halleri var. Bir de employee tablosu var. Employee'nin esas tablosu var. O tabloda employee'nin kendisi var. O tablo gene.
+
+174
+00:34:05,152 --> 00:34:19,952
+Maaşı değişmeyenler eski hali. Yenisinde de maaşı değişenler var. Şimdi burada maaşı değişenler veya maaşı değişenlerin eski hali var.
+
+175
+00:34:19,952 --> 00:34:31,952
+O zaman şöyle diyelim. Maaşı değişen, maaşı değişmeyenlerin, yani salari maaşı değişmeyenlere hiç dokunmuyoruz. Onlara da böyle...
+
+176
+00:34:33,152 --> 00:34:56,692
+Çıkarmıyoruz employee'den. Burada old oda eski maaş bilgilerini içeren bir tablo. Bu da yeni maaş bilgilerini içeren. Bir de bunların haricinde hiç bu update'e maruş kalmayanlar var. Maaşı hiç değişmeyenler var. Böyle hayal edebiliriz arkadaki veri öbeklerini yani.
+
+177
+00:34:56,992 --> 00:35:20,432
+İşte burada gerek old, gerek değil olanda yani maaşları değişenlerin arasında department numarası NAL'dan farklı olan en az bir tane kayıt var ise o zaman action yapmam lazım.
+
+178
+00:35:24,403 --> 00:35:36,804
+Bir kişi mesela sadece bir kişi bunların arasında yeni bir departmana tahsis edindiyse, yeni bir departmana geçtiyse o departmanın güncellenmesi lazım.
+
+179
+00:35:38,503 --> 00:35:46,184
+Veya her halükarda herhangi bir durum olabilir yani bunların içerisinde.
+
+180
+00:35:46,184 --> 00:35:48,663
+İşte o yüzden şöyle bir condition'ımız var.
+
+181
+00:35:49,300 --> 00:36:09,460
+Condition'ımız var. Bu Condition'dan sonra, şurası da oldukça önemli. Burada da bir kere bu Condition'dan sonra şu Action bir kez çalıştırılması için bazı noktalara dikkat edilmem gerekiyor. Bu da kümülatif operasyonlar kullanmakla anca olabilir.
+
+182
+00:36:09,967 --> 00:36:29,347
+Yani burada maaş bilgisi değişen kişilerin yeni maaşlarının toplamı ve eski maaşlarının toplamı. Bunu her departman için yapacağım.
+
+183
+00:36:31,187 --> 00:36:35,347
+Bu departman, her departman için bunu düşüneceğim. Bu departman...
+
+184
+00:36:35,760 --> 00:36:51,740
+Her harikarda, şunların arasındaysa, yani bu maaş değişikliğine maruz kalan, new veya old içerisindeyse, bunların içerisindeyse, işte o departmanda bir şeyler olacak.
+
+185
+00:36:51,740 --> 00:37:00,180
+İşte olacak olan şey, o departmandaki yeni tablodaki new salarilerin toplamı,
+
+186
+00:37:00,628 --> 00:37:11,907
+Yani buraya, o departmana gelen sadece bir kişinin değil, oraya gelen, yani bu hadisenin neticesinde buraya gelen o 100 kişiden 20'si mesela o departmana geldi.
+
+187
+00:37:12,827 --> 00:37:23,628
+Tamam yani orada büyük resmi kaçırmamak gerekiyor. Bunun kurgusu biraz zorca. Bunların hepsini eklemem lazım, o departmana. O departmandan da old...
+
+188
+00:37:23,987 --> 00:37:47,248
+tarafındaki sadar iner'in, toplamını çıkarmam lazım. Çünkü onlar artık güncellendi. Eski maaşlar onlar. Bunların departmanı değişmiyor ama, yani şu condition'a da, departmanları değişiyor için yazmadı zaten. Departmanları değişmiyor. Bunların sadece maaşları değişiyor. Ama maaşlarının değişmesinde,
+
+189
+00:37:49,940 --> 00:37:54,799
+Bu maaşların, yani maaşı değişen bir de parklanda çok kişi olabilir.
+
+190
+00:37:57,588 --> 00:38:08,908
+İşte bu sebeplerden dolayı bu şekilde kümülatif operasyonlarla tek bir query statement'ta böyle bir kurgu yazabiliriz.
+
+191
+00:38:09,468 --> 00:38:19,668
+En azından burada böyle sample data ile bunu böyle sağlamasını, böyle değişimini yapmakla daha böyle içimize sindirebiliriz.
+
+192
+00:38:20,623 --> 00:38:48,403
+Burada mesela şu şekilde maaş bilgisi mesela 200'den 700 olmuş ve 300'den 900 olmuş. Birinci departmanda ve ikinci departmandaki şu kişiler yani şuradaki bir dataset içerisinde iki tane satırdan sadece bahsediyoruz. Şimdi burada bu değişen satırların eğer department null'ları null olmuş olsaydı
+
+193
+00:38:48,623 --> 00:39:14,623
+O zaman şurada hem eski hem yeni versiyonda bunlar NAL olacaktı zaten. O zaman bir action almayacaktık. Yani şu durumda mesela şurada yani bu değişiklik olanlar 200'den 700, 300'den 900 olan burada bir değişiklik hadisesinde hiçbir departmanın güncellenmesine gerek yok yani.
+
+194
+00:39:16,623 --> 00:39:19,063
+exclude ettik yani. Bunu çıkardık.
+
+195
+00:39:20,003 --> 00:39:26,804
+Şurada bunu şey yapıyor. Ama en az bir tanesinde varsa o zaman ne yapmamız lazım?
+
+196
+00:39:27,364 --> 00:39:33,523
+Burada bir numarada departmanda iki, bir tane kişinin maaşı değişmiş.
+
+197
+00:39:34,183 --> 00:39:38,764
+Ama böyle böyle arkada bu sadece bir sample, temsili bir şekil.
+
+198
+00:39:41,556 --> 00:40:07,596
+bir değerden başka bir değere geçen kişiler var. Yani 200-700 olmuş, 100-300 olmuş falan gibi öyle bir sürü değişiklik. O yüzden burada bu departman için maaşın eski değerini çıkartıp yeni değerini, yeni değerlerini, yeni değerlerini toplamını buraya eklemem lazım.
+
+199
+00:40:07,987 --> 00:40:09,467
+Evet.
+
+200
+00:40:12,688 --> 00:40:15,807
+Şimdi tabii burada şu da olabilir.
+
+201
+00:40:16,867 --> 00:40:26,688
+Burada mesela gene T2'de aynı update komutu içerisinde hem salary hem de department node'a değişebilir.
+
+202
+00:40:27,407 --> 00:40:32,108
+Bunun değişmesiyle şu T2'de gene tetiklenecek.
+
+203
+00:40:32,820 --> 00:40:40,940
+Bu çünkü employee'deki salary'nin update olması o
+
+204
+00:40:41,523 --> 00:40:48,143
+Daha kapsamlı hadisenin bir alt kümesi, yani alt hadisesi olduğu için bu da tetiklenecek.
+
+205
+00:40:49,223 --> 00:40:57,823
+İşte o yüzden burada sadece bir tanesi için, yani madem departement no değişmiyor demedik.
+
+206
+00:40:58,223 --> 00:41:00,663
+Yani N ve O'nun ikisine birden baktık.
+
+207
+00:41:00,783 --> 00:41:07,683
+Burada da N ve O'nun bütün bunun içerisinde olmasına baktık yani.
+
+208
+00:41:08,500 --> 00:41:13,819
+Ben bunu böyle sample data ile biraz daha anlaşılır bir hale getirmeye çalıştım.
+
+209
+00:41:14,159 --> 00:41:41,399
+Siz de belki daha iyi anlarsınız. Ama en azından şu mesele anlaşılması. Şurada SALE ve DNA'nın değişmesi durumu. Burada ise sadece SALE'nin değişmesi durumunda. Şuradaki kümülatif fonksiyonların bu işi gördüğünü biraz daha sample data kullanarak onu validate edebilirsiniz diye düşünüyorum.
+
+210
+00:41:42,835 --> 00:41:44,755
+İşte anlatmak istediğim buydu.
+
+211
+00:41:45,856 --> 00:42:05,516
+Yani, Fully Statement'ın daha verimli olduğu, yani iki tane sample, iki tane böyle temporary tablo üzerinde fonksiyonları kullanarak, tek bir action ile çok daha verimli bir şekilde bu salary güncellemesi yapılabilir.
+
+212
+00:42:13,856 --> 00:42:20,656
+İzlediğiniz böyle kağıtta sample data ile bunu teyit edebilirsiniz. Bu sorgular gerçekten onu yapıyor mu diye.
+
+213
+00:42:21,296 --> 00:42:27,416
+Ben böyle ufak bir şeyle yaptım yani burada. Çok kapsamlı değil. Tam net gözükmüyor yani.
+
+214
+00:42:27,728 --> 00:42:29,968
+ve gene makinede de bunu yapabilirsin.
+
+215
+00:42:29,968 --> 00:42:39,408
+PCSQL'de şu Oracle sintaksi olmasına rağmen bunu çevirip PCSQL'de veya Oracle kullanırsanı da Oracle'da da yapabilirsin.
+
+216
+00:42:39,408 --> 00:42:42,368
+Bence güzel bir egzersiz olabilir.
+
+217
+00:42:43,368 --> 00:42:44,208
+Fayda sağlar.
+
+218
+00:42:44,568 --> 00:42:55,328
+Buna beraber gene şunu da ifade etmekte fayda var ki triggerler dediğim gibi tehlikeli böyle objeler veri tabanlarında.
+
+219
+00:42:55,728 --> 00:43:01,788
+hep böyle yorumlar okunuyor. Okudum yani, siz de görmüşsünüzdür. O yüzden mümkün olunca,
+
+220
+00:43:01,788 --> 00:43:06,228
+hele özellikle noise cover tabanlarında bu gibi karmaşık şeyleri,
+
+221
+00:43:06,228 --> 00:43:12,728
+application'a havale etmeyenin daha temkinli olduğuna dair birçok yorum var.
+
+222
+00:43:13,248 --> 00:43:17,268
+Ama bunu da böyle, bu örneği de dahil etmiş olduk.
+
+223
+00:43:19,199 --> 00:43:41,619
+Herhangi bir yorumu olan yoksa, burada T2 için for each statement komutu var. Bunu şu diğer T2, T3, T1, T3, T4'lere de evirebilirsiniz. Onlar için de yazabilirsiniz. Sadece T2 için yazılmış orada for each statement.
+
+224
+00:43:42,291 --> 00:44:05,371
+Hem bunu iyice anlayıp, hem de T1'e çevirmek, T3'e çevirmek ve onları böyle mevcut bir data set üzerinde doğruluğunu tespit etmek, daha büyük bir set üzerinde bu trigger'ı tetikleyen update'in daha hızlı olduğunu görmek, bunları laboratuvar çalışması olarak düşünülebilir.
+
+225
+00:44:05,371 --> 00:44:10,031
+Yani ben mesela vaktim olsa merak ediyorum yani gerçekten.
+
+226
+00:44:10,291 --> 00:44:12,751
+Polisliğe ne kadar bir hız kazanıyor?
+
+227
+00:44:13,396 --> 00:44:40,456
+Yani 100 MB tipi veri setinde 500 tane, 1000 tane kayıt değiştiriyorsak, POLISTATEMENT triggerıyla bunu yapıyorsak arkada, bu konsistiği sağlamak adına, bunun çok daha hızlı olduğunu, şuradaki bu karmaşık durgu sayesinde, bunun daha verimli olduğunu görmek noktasında güzel bir veri tabanı egzersizi olabilir.
+
+228
+00:44:41,043 --> 00:44:42,743
+diye düşünüyorum.
+
+229
+00:44:43,843 --> 00:44:47,443
+Evet. Bir yorum falan gelmediği için
+
+230
+00:44:47,443 --> 00:44:50,983
+devam ediyorum.
+
+231
+00:44:53,940 --> 00:45:10,579
+Güvenlik konusunda dediğim gibi açık kalan bazı noktalar var. Onları üzerinden geçeceğim. Bunlar da yetkilendirme ile ilgili. Böyle grant diagramları var. Onlardan bahsedeceğim.
+
+232
+00:45:10,579 --> 00:45:18,380
+Gene hatırlamak için bazı yetkilendirme ile ilgili komutlara bakacağız. Grant referencesden bahsedeceğiz.
+
+233
+00:45:18,751 --> 00:45:37,152
+Sonra da son olarak istatistiksel veya OLAP tarzı veri tabanlarında OLAP, analytical processing deniyor. Burada bazı böyle kısıtlar var. O kısıtların kapsamı içerisinde bazı böyle açık noktalar.
+
+234
+00:45:38,483 --> 00:45:56,403
+Olabilir, onlardan bahsedeceğiz. Bir de son olarak, daha öncesinde, yani bunun öncesinde, bu yetkilendirmenin disk krişleri, yani böyle, Türkçesi neydi onun, şöyle disk krişleri, yani takdire dayalı, öyle bir,
+
+235
+00:45:58,195 --> 00:46:24,135
+İsimlendirme yapmışım Türkçe'ye çevirip. Mandatory'den de bahsedeceğiz. Mandatory'de daha böyle katı bir yapı ama daha güvenli. Yani böyle açıkları, sistem açıklarını, veritabanı noktasında tabii loop u denilen bu sistemin açıklarını daha dikkatli bir şekilde şey yapan, önünü alan bir sistem.
+
+236
+00:46:26,195 --> 00:46:46,536
+desteklediği bir şey değil. SQL'de bunu yapamıyoruz. SQL'de yapabildiğimiz diskreşleri, yani yetkilendirme ayarlarına, dersleri de öğrendiğimiz yollar var. Yani grant ve revoke ile bunları koordine etmek, kullanıcıların rolleri koordine etmek var.
+
+237
+00:46:54,195 --> 00:47:04,976
+diğer uygulamalar, diğer sistemler içerisinde bir güvenlik sınıflarının tespit edilmesi ve bunun koordinasyonuyla ilgili ekibi yazılımla olabilecek bir şey.
+
+238
+00:47:05,435 --> 00:47:18,016
+SQL ile ilgili bir şey değil yani. O yüzden derste bundan bahsetmemiştik ama yani siber güvenlik noktasında bu veritabanına bakan tarafta önemli bir konu oluyor.
+
+239
+00:47:18,835 --> 00:47:28,755
+Evet, bu kelimeleri bilmek lazım. Yani bizim şu andaki konumuz authentication değil, authorization, yani yetkilendirme.
+
+240
+00:47:28,755 --> 00:47:40,695
+Ama elbette yetkilendirmeden evvel, ben bir kişiye bir yetki veriyorsam, o kişinin o olduğu gerçekten, yani bunun zorlanması lazım. Buna authentication veriyorum.
+
+241
+00:47:40,820 --> 00:48:06,840
+Gerek authentication, gerek authorization. Bunlarla ilgili tabii çok kullanıcılı bir ortamda. Çok deyince bunun da sınırı yok. Yani 5-10 kişi de olabilir, 5-10 milyon kişi de olabilir. O yüzden arkada genelde gerçek zamanlı uygulamalarda arkada bunlara bakan, bu işe bakan serverlar var, servis sağlayıcılar var. Bunlar da işte bu isimlerle iade ediyor.
+
+242
+00:48:07,123 --> 00:48:09,483
+authorization, authentication, serverler gibi.
+
+243
+00:48:10,623 --> 00:48:16,083
+Şimdi biz konumuzun kapsamı içerisinde dediğim gibi iki tarz yetkilendirme var.
+
+244
+00:48:17,683 --> 00:48:23,344
+Bunlar discretionary diye geçiyor. Bir tanesi diğer ise mandatory olarak geçiyor.
+
+245
+00:48:23,764 --> 00:48:42,864
+Discretionary'de öğrendiğimiz gibi daha önceki derslerde tablolara, tabloların niteliklerine, bu tablo veya tablo nitelikleri üzerine bir takım kullanıcılara veya rollere bazı böyle privilege'ler, yani yetkiler veriyoruz.
+
+246
+00:48:42,864 --> 00:48:50,044
+Ve bu yetkileri verdiğim zaman bu yetkileri dağıtabilecek şekilde de verebilirim.
+
+247
+00:48:50,884 --> 00:48:51,764
+SQL'de bunu...
+
+248
+00:48:51,764 --> 00:48:56,084
+böyle kurgusunu, koordinasyonunu kolay bir şekilde yapıyoruz.
+
+249
+00:48:57,679 --> 00:49:05,839
+Şimdi bunu hatırlayalım. Mesela burada geçen kelimeler böyle. Yetkilik, görevliş manasında.
+
+250
+00:49:06,519 --> 00:49:14,259
+Tabloyu biz oluşturduğumuz zaman yetkileri zaten bizim üzerimizde. Bu noktada bir şey yok zaten.
+
+251
+00:49:14,259 --> 00:49:19,199
+Bu tabloyu silebiliriz, değiştirebiliriz, istediğimiz sorguyu bunun üzerine yapabiliriz.
+
+252
+00:49:25,679 --> 00:49:53,679
+yetkilerimiz, SELECT, INSERT, READ, UPDATE gibi bilinen, daha çok bilinen yetkiler. Bunlarla beraber, yine şu references oldukça, yetkisi kuvvetli bir yetki. Yine işte trigger oluşturma, fonksiyon çalıştırma gibi, şu under, şu usage, bunları da ben şu anda hatırlamıyorum. Onlara bakılabilir. Belki de, yani kullanımda da olmayabilir. Yani SQL s...
+
+253
+00:49:53,679 --> 00:50:05,559
+Standartında olup, sistemde de olmayı da bilir yani. Ama ana hatlarıyla bunları bilmemiz lazım. Şunları en azından. Buradaki sintaksı biliyorsunuz zaten.
+
+254
+00:50:07,399 --> 00:50:18,439
+Şimdi burada yine öğrenci kayıt veritabanı üzerine şöyle bir yetkilendirme manzarası var. Yani o küçük dünyada
+
+255
+00:50:20,371 --> 00:50:25,052
+ne olması gerekiyorsa, oldukça flexible yani gerçekten.
+
+256
+00:50:27,188 --> 00:50:36,168
+işte dekan mesela, admission office student da ne yapabilirse o şekilde bunları böyle yetkilere dağıtıyoruz.
+
+257
+00:50:36,648 --> 00:50:44,448
+Tabloların üzerindeki niteliklere veya tablonun hepsini bu rollere dağıtmış olduk.
+
+258
+00:50:44,948 --> 00:50:47,528
+Şimdi roll ve kullanıcıdan da bahsetmiştik.
+
+259
+00:50:48,528 --> 00:50:53,368
+Çoğu veritabanında roll esaslı bir yetkilendirme meselesi var.
+
+260
+00:50:55,188 --> 00:51:22,488
+Bu oldukça elverişli. Yani bu koordinasyonu yapma noktasında oldukça elverişli. Çünkü rollerin sayısı daha az. Yani daha üst seviyeli bir manzara bize veriyor. Şu, şu, şu roller var. İşte burada mesela gördüğünüz gibi işte registrar rolü var. İşte dean rolü var. Dekanlar yani. İşte kabul ofisinin şeyi var. Şimdi elbette bir tane dean yok.
+
+261
+00:51:23,188 --> 00:51:25,128
+Bir tane admission'da bir kişi yok.
+
+262
+00:51:26,488 --> 00:51:37,808
+Bunlar işte mesela 100 tane fakülte varsa 100 kişi için 100 kişi olacak bu dekanlık rolü altında.
+
+263
+00:51:39,428 --> 00:51:41,188
+Ve sırrıda da mesela işte...
+
+264
+00:51:41,715 --> 00:52:01,376
+100 kişi varsa mesela, gene onların her biri için bu rollere atandıysa bir kişi oluşturulduğu zaman, hani create user mesela oluşturulduğu zaman, o kişiye şu rollere atandığı zaman, o rollerin yetkileri otomatik olarak o kişiye geçecek.
+
+265
+00:52:09,715 --> 00:52:20,355
+hem deyin ise, dekan ise, hem profesör ise, hem dekanlık yetkileri, hem de profesör yetkileri otomatik olarak atanacak.
+
+266
+00:52:20,715 --> 00:52:31,396
+Her iki rolden gelen yetkilerin unionı, yani hepsi beraber şey olacak, o kişiye aktarılmış olacak.
+
+267
+00:52:34,579 --> 00:52:44,299
+O yüzden öyle rol tanımı oldukça önemli. Kolay kolay değişmiyor. O küçük bir yandaki rolden ama kullanıcılar bazı rollere girip çıkabilirler.
+
+268
+00:52:44,299 --> 00:52:52,459
+Ve birden çok rol de alabilirler. Hiç bir rolü de olmayabilir. Sadece bir kullanıcıdır. Buna ayrı bir yetki veriliyordur mesela.
+
+269
+00:52:52,459 --> 00:52:59,339
+Yani bu noktada oldukça fleksibel bir şey sağlamış oluyor. Rol ve user tanımları.
+
+270
+00:53:01,844 --> 00:53:29,663
+Evet. Burada Ground'la ilgili böyle bazı örnekler var gene. Bunların şeyine yabancı değilsiniz. Gramerine veya kullanımına. Burada biraz daha şekillendirme noktasında mesela Ground, SELECT, Enroll biraz böyle tabirca size kaldırılık bir şey yetki verme oluyor yani. O yüzden bunu biraz daha All on Nothing'den çıkartıp biraz daha
+
+271
+00:53:29,844 --> 00:53:39,483
+detaylandırabiliriz. Yani SELECT, STUDENT ID, GRADE, ON, ENROLLED TO, DEAN, PROFESSOR. Şu roldaki kişilere ne veriyoruz?
+
+272
+00:53:40,384 --> 00:53:54,903
+STUDENT ID ve GRADE üzerinde okuma yetkisi veriyoruz. Diğerlerini görmesinler. Enrol'daki ne zaman, hangi tarihte kayıt olduğu, kaç aldığını görüyor da, Enrol'daki diğer detayları görmese gerek yok.
+
+273
+00:53:55,783 --> 00:53:57,043
+Görmemesi lazım belki.
+
+274
+00:53:57,523 --> 00:54:03,663
+gibi bu noktada o küçük dünya neyi gerektiriyorsa bu şekilde daha detaylı şekillendirebiliriz.
+
+275
+00:54:04,023 --> 00:54:08,663
+Burada yine güzel bir örnek var. Şurada statementlar var mesela.
+
+276
+00:54:11,343 --> 00:54:18,163
+Bu sorguların çalıştırabilmesi için çalıştıracak kişinin hangi yetkilere sahip olması lazım?
+
+277
+00:54:18,675 --> 00:54:36,336
+Bununla ilgili bir örnek. Mesela burada, işte student enroll üzerinde hangi niteliklere eriştiyse, bu niteliklerde SELECT yetkisi gerekiyor. Herhangi bir update olmadığı için burada, o yüzden sadece SELECT yetkisi yeterli. Yani minimal hangi yetkilere sahip olması gerekiyor.
+
+278
+00:54:36,755 --> 00:55:03,096
+Siz de bunu böyle detaylı bakıp çalışırken bunu teyit edebilirsiniz. Çok detay inmeye gerek yok. Burada da mesela yine hiç içe bir sorgu var. Hem Course hem Department tablo. O yüzden Course'da bütün niteliklere eriştiği için SELECT ON COURSE. Ama Department'da sadece DAD ve DNM eriştiği için Department'da şu iki niteliği SELECT etmesi yeterli.
+
+279
+00:55:03,635 --> 00:55:16,355
+Burada delete olduğu için delete yetkisi var. Diğerlerinde de bazı başka tablolardan okuma yaptığı için SELECT etkisi de var.
+
+280
+00:55:16,851 --> 00:55:33,731
+Şurada aşağıda bir sual var. Bazı update'ler SELECT de gerektirebilir. O yüzden sadece update yeterli olmayabilir. Mesela burada Enroll tablosundaki bütün notlara 100 veriyoruz.
+
+281
+00:55:36,563 --> 00:55:59,803
+Yani bu update işlemi içerisinde herhangi bir okuma yok gerçekten. Buna blind write deniyor. Blind write yani kör yazma. Eski notunu bir arttır, eski notunu yarıya böl falan gibi bir işlem değil. Eski notunu okumuyoruz. Blind, kör olarak yazma.
+
+282
+00:56:00,052 --> 00:56:25,112
+Bu manada. Böyle olunca SELECT yetkisine gerek yok. Ama şu aşağıdaki kör yazma değil. Eski notunu okuyorum. İşte bir puan yanlış kırılmış. Bir puan ekliyorum mesela. İşte burada eski notunu okuma noktasında bu update yetkisi yani şu projörüse verilen bu update yetkisi yeterli olmayacaktır. Aynı zamanda SELECT yetkisi de olması lazım.
+
+283
+00:56:25,456 --> 00:56:32,696
+Evet. Yani detaylara inince, dikkat etmek gerekiyor. O yetkiler yeterli mi, değil mi diye.
+
+284
+00:56:32,696 --> 00:56:34,696
+Evet.
+
+285
+00:56:38,216 --> 00:56:41,776
+Tablo esaslı yetkilerdik.
+
+286
+00:56:42,096 --> 00:56:58,915
+Tablodaki nitelik bazlı, yani nitelik esaslı yetkiler verdik. Bu da yeterli olmayabilir veya biraz daha bunu detaylandırmamız gerekebilir. Mesela birçok profesör var Enroll tablosunda notlara bakabilir.
+
+287
+00:57:03,856 --> 00:57:16,176
+Yani fine tuning yapmamız gerekebilir. Daha detaylı olan her profesörün sadece kendi verdiği derslerin notlarına bakabilmesi veya öğrenci için de bunu söyleyebiliriz.
+
+288
+00:57:16,236 --> 00:57:29,156
+Yani öğrenci, erno tablosunda sadece kendi notuna bakması gerekiyor. Yani böyle olması gerekiyor o küçük dünya içerisinde.
+
+289
+00:57:30,516 --> 00:57:50,876
+Şimdi fakat biz direkt olarak işte grant, select, grade, on enroll to professor desek, evvelki şeylerde vardı galiba, öyle desek bunu sağlayamayacağız.
+
+290
+00:57:50,876 --> 00:57:55,635
+O yüzden burada şöyle bir view tanımlıyoruz. Böyle daha detaylı olan.
+
+291
+00:57:58,003 --> 00:58:25,223
+yetkilendirme durumlarında, o tabloda, o profesörün bakması, bakabileceği, erişebileceği, okuyabileceği, o alt tabloyu, view ile şekillendirebiliriz. İşte burada, şurada yapılan işlem o. Yani, Current User, şu anda sisteme bağlı olan, konsolda olan o, Profesör, Current User'ın,
+
+292
+00:58:26,003 --> 00:58:37,983
+O, section'daki, verdiği, verdiği derslerin, notlarını, Enroll'daki tabloyla, burada, JOIN ettik onu.
+
+293
+00:58:38,303 --> 00:58:40,583
+Yani, iç çetoru var burada.
+
+294
+00:58:42,223 --> 00:58:46,983
+O, o, o, o, section'lar, profesyonun verdiği section'lar olması lazım.
+
+295
+00:58:47,223 --> 00:58:51,443
+Korayet bir sorgu değil ama, değil mi, set esaslı bir sorgu.
+
+296
+00:58:51,443 --> 00:58:54,003
+Bu, hocanın verdiği derslerin,
+
+297
+00:58:54,003 --> 00:59:19,463
+Enroll'daki notları, işte bunlara bakabilir. Bunları update edebilir. Yani hem bunları SELECT etmesi, hem de bunları update etmesi noktasında. Bunu view ile tanımlayabiliriz. Belki de as notlarında bu mesela view şeyi yoktu. O yüzden bu da güzel oldu.
+
+298
+01:01:36,307 --> 01:01:38,867
+Evet, tekrar geldim. Bağlantı koktu da.
+
+299
+01:01:42,579 --> 01:01:59,880
+Şimdi bir tekrar başlamadan evvel bir 5 dakika bekleyelim. 5 dakikalara verelim arkadaşlar. Sonra kaldığımız evden devam edelim. Yaklaşık yarım saatlik bir işimiz kaldı. Çok bir şeyimiz kalmadı. Bir 5 dakika sonra görüşürüz.
+
+300
+01:07:45,235 --> 01:07:46,855
+Evet arkadaşlar, devam ediyorum.
+
+301
+01:07:50,016 --> 01:07:52,275
+Ekran paylaşımı açalım gene.
+
+302
+01:08:05,876 --> 01:08:25,916
+Evet, bütün önekleri yapmayalım. Şöyle atlayalım. Gene, asr-atışınla ilgili, asr-atışının ayrı bir yetki gerektirmesi ile ilgili bir örnek. Biraz önce asr-atışınlardan bahsederken, burada asr-atışının tehlikeli olabileceğinden bahsetmiştim.
+
+303
+01:08:26,287 --> 01:08:36,287
+İşte burada bunun bir örneği var. Bunu yazmak çok kolay. Ve sadece student tablosunda ABC ve grad year...
+
+304
+01:08:36,431 --> 01:08:50,811
+ABC ve 0 grad yearly veri olmasına izin veriyor. Onun dışında bunların haricinde bir şey olmasına izin vermiyor. Yani hiçbir şey değiştiremiyorum, hiçbir şey ekleyemiyorum gibi.
+
+305
+01:08:51,532 --> 01:09:04,332
+Bu şekilde basit bir sorgu yazarak şurada, yani zararlı bir sorgu, bu tabloyu kullanılsız bir hale getirebilirim. O yüzden bu şekilde yani
+
+306
+01:09:04,431 --> 01:09:07,051
+Grand Assertion diye bir şey yok.
+
+307
+01:09:08,092 --> 01:09:21,051
+Gerek Assertion için, gerek yabancı anahtarı tanımlamak için, Grand References şeklinde bir komutumuz var.
+
+308
+01:09:21,427 --> 01:09:24,788
+yetkimiz var. Bu yetki biraz daha kuvvetli.
+
+309
+01:09:26,407 --> 01:09:33,807
+Veya işte burada olduğu gibi asölyosini güvenilir kimselere vermek noktasında.
+
+310
+01:09:34,307 --> 01:09:38,407
+Kore'nin ki örneğini de sınavda sormuştum. Diğer sunularda da geçiyordu zaten.
+
+311
+01:09:39,087 --> 01:09:41,907
+Burada bir yabancı anahtar tanımlıyorsak eğer,
+
+312
+01:09:42,271 --> 01:09:52,451
+Bu yabancı anahtarın işaret ettiği tablodaki aktiviteleri sınırlandırmış oluyoruz.
+
+313
+01:09:52,791 --> 01:09:59,672
+Mesela burada SELECT, PREVILICİT yeterli değil.
+
+314
+01:10:07,380 --> 01:10:29,880
+şey yaparsak, yani şu delete no action şeklinde enroll'u oluşturuyorsam eğer, bu yabancı anahtarı, yabancı anahtar student'a işaret ediyor ve delete no action tarzında bir kısıt koyuyorsak buraya, o zaman student'ın kendi kullanıcısını kısıtlamış oluyoruz.
+
+315
+01:10:29,880 --> 01:10:34,479
+Çünkü onun delete yapmasına mani olmuş oluyoruz yani.
+
+316
+01:10:34,768 --> 01:11:02,768
+Burada daha hafif olan, taskat gibi şeyler kullanılmış olsa, sorun olmayacaktı. Ama bu şekilde böyle referans, yabancı anaktayla başka tabloya referans ediyorsa, yani referans manası var burada. Burada da asasiyonlarda da bu tablolara referans manası var. Tabloda üzerinde bir şeyler yapıyorum, bir kısıtlar yapıyorum. O yüzden bu tabloların esas kullanıcılarına zaten...
+
+317
+01:11:02,768 --> 01:11:30,768
+daha vermiş oluyoruz. İşte o yüzden, Grand References tarzında, bir şey var. Burada niye reject edildiği var. Burada Grand References verdikten sonra, bunun tabloyu oluşturabildiğimiz var. Bence bu da mesela gene deneyebilirsiniz konsoldan. Herhangi bir kullanıcının bu şekilde, başka sahibi olmadığı bir başka tabloya referans vermesine izin vermemesi lazım.
+
+318
+01:11:30,768 --> 01:11:46,768
+Yani. Bunu tabi böyle konsolda görünce daha canlı oluyor. Daha içimi de siniyor yani. Gerçek hayatta da karşılığa çıkarsa hemen hatırlayabiliyoruz yani. Sonra kağıt üstünde kalınca şey olmuyor. Evet.
+
+319
+01:11:48,304 --> 01:12:02,503
+Burada, With Grand Option'dan, biz de bahsetmiştik zaten. Bunun kritik olduğundan bahsediyor. Biraz daha güçlü çünkü, Powerful. Çünkü, Grand yetkisi, verme yetkisini de devrediyor.
+
+320
+01:12:02,931 --> 01:12:16,572
+Sadece benim kendi tablomu şu kolonlarına, niteliklerine erişme, insert et falan gibi yetkileri vermeyle beraber bu yetkileri devretme yetkisi de vermek.
+
+321
+01:12:17,131 --> 01:12:25,752
+Bu da böyle bütün el tabanında bütün kullanıcılara yayılabilir. O yüzden bu yetki, daha kuvvetli olan bu yetkiyi güvenilir dirine vermemiz gerekiyor.
+
+322
+01:12:26,420 --> 01:12:42,420
+İşte bu meseleden dolayı, GRAND diyagramları karşılığında çıkıyor. Bu diyagramları şu şekilde böyle formülize etsek, böyle karmaşık şekiller ortaya çıkmış oluyorlar.
+
+323
+01:12:42,579 --> 01:12:55,600
+Tabii bunlar böyle sistemde graflarla değil de böyle access control list denilen yapılarla, veri yapılarıyla bunlar koordine ediliyor.
+
+324
+01:12:55,600 --> 01:13:03,600
+Yani mesela arkada birçok rol var, birçok kullanıcı var ve bunlar birbirlerine yetkiler veriyorlar.
+
+325
+01:13:05,079 --> 01:13:09,979
+Yetkiyi devretme yetkisi veriyorlar veya yetkiyi kaldırıyorlar.
+
+326
+01:13:10,579 --> 01:13:16,020
+Etkiyi kaldırırken devlet ve yetkisiyle beraber kaldırıyor gibi.
+
+327
+01:13:16,659 --> 01:13:18,579
+Burada bakın bütün bu kombinasyonlar.
+
+328
+01:13:18,659 --> 01:13:23,059
+Birçok kişi, birçok rol üzerine olduğu zaman çok karmaşık bir şey ortaya çıkacak.
+
+329
+01:13:23,239 --> 01:13:30,780
+Yani mana çok zor değil ama bu seconds of grant alacak bir grafla temsil edebilir.
+
+330
+01:13:30,780 --> 01:13:34,020
+Bunlar sadece logical şeyler.
+
+331
+01:13:34,239 --> 01:13:38,579
+Yani fiziksel olarak akses matrislerle veya akses kontrol.
+
+332
+01:13:38,579 --> 01:13:49,940
+listelerle bunlar arkada fiziksel olarak gerçekleniyor. Tabi sistem içinde yük olmaması gerekiyor çok fazla. En eficiente bir şekilde gerçeklenmesi gerekiyor.
+
+333
+01:13:50,192 --> 01:14:18,192
+Burada şu veri tabanı için şöyle bir yetkilendirme senaryosu var. Ben renklendirerek biraz daha böyle manzara net gözüksün diye şey yaptım. Şuradaki kodlamamızda şu yetki noktası diyelim. Yetkiyi tarif ediyor, privilege. Kullanıcıyı tarif ediyor ve bunun owner olup...
+
+334
+01:14:18,192 --> 01:14:29,652
+olmadığını, yani çift yıldız bunun owner olduğunu, tek yıldız owner değil ama bunu devletme yetkisi olduğunu şey yapıyor.
+
+335
+01:14:29,752 --> 01:14:43,452
+O yüzden şu sağdaki grab durumu açıklıyor zaten. Yani bu kullanıcısı, E yetkisine sahip ve bu obje üzerinde sahip. Bu obje de sahip.
+
+336
+01:14:45,235 --> 01:15:12,775
+Bu şey, Q'ya bu yetkiyi devrediyor. Bu yetkiyi veriyor ve yetki vermeyi de devrediyor. Yani with ground option ile beraber V rolüne veya V kullanıcısına bu U bunu veriyor. Çünkü U'nun sahibi, bu objenin sahibi U zaten.
+
+337
+01:15:13,460 --> 01:15:15,860
+Evet.
+
+338
+01:15:16,579 --> 01:15:20,659
+İşte bu manzarayı böyle böyle sıkıcı dünyada
+
+339
+01:15:21,587 --> 01:15:31,747
+çoğaltırsak, burada çoğalttığımız zaman, mesela yeşil olanlar admin olmuş olsunlar. Yani bu veri tabanı tablolarını oluşturmuşlar.
+
+340
+01:15:33,327 --> 01:15:43,768
+Burada daha fazla yetkiye de sahip olabilirler esasında ama sadece bir tanesi yazılmış. SELECT ON ENROLL, INSERT ON ENROLL. Burada da bunların sahipleri, çift yıldız.
+
+341
+01:15:43,768 --> 01:15:49,387
+Bu yetkileri kimlere vermişler? Profesöre vermiş, asistana vermiş.
+
+342
+01:15:49,587 --> 01:16:03,627
+Envoo tablosörün insert yetkisini de gene profesörü ve asistana vermiş. Böylece ikisini de aynı düğümde çizebilirdik ama farklı farklı her yetki için bir düğüm çizilmiş yani.
+
+343
+01:16:03,627 --> 01:16:13,747
+Ta ki o yetkiyi devrediyorum, diğer yetkiyi başka birine devrediyorum mesela. O yüzden böyle hakikaten karmaşık graf ortaya çıkıyor.
+
+344
+01:16:14,144 --> 01:16:23,064
+Burada çok detay yemeyeceğim zaten anlaşılıyor. Ama her bir grantın ortaya çıkardığı manzara böyle olacak.
+
+345
+01:16:23,064 --> 01:16:36,344
+Bununla beraber burada Cascade ve Restrict şeyleriyle, Black'leriyle beraber bunun manaları burada açıklanmış.
+
+346
+01:16:41,524 --> 01:16:43,524
+O, privileged.
+
+347
+01:16:43,524 --> 01:16:51,524
+Ve, specifically, revoked and privileged that was granted only because of granted.
+
+348
+01:16:51,524 --> 01:16:56,524
+It has any note that is non-accessible from some ownership, non-isosal direct.
+
+349
+01:16:56,524 --> 01:17:03,524
+Yani burada zincir öyle bir şekilde bu yetkilerin kaldırılması.
+
+350
+01:17:03,524 --> 01:17:07,524
+Revoked'a kaskat. Restrict'te sadece...
+
+351
+01:17:09,203 --> 01:17:17,043
+Sadece ilk adımdaki yetkinin kaldırılması söz konusu oluyor.
+
+352
+01:17:18,163 --> 01:17:24,023
+İşte buradaki manaları böyle eğil edecek şu örnekler var burada.
+
+353
+01:17:24,819 --> 01:17:47,819
+Şekil olduğu için, er yazması hemen çıkıyor. Burada mesela, REVOC komutuyla, asistandan, kaskat olarak, asistandan, enroll üzerine SELECT ve INSERT yetkililiği kaldırılmış. O yüzden burada SELECT'in, işte şu,
+
+354
+01:17:48,467 --> 01:18:11,568
+Şuradaki, ve bu, şu, ve gene bu asistanın verdiği yetkiler, sekretere verdiği yetki, kendisindeki o yetki kalkmasıyla ve şu manzara ortaya çıktı. Yani Kaskat'tan dolayı şunlar da.
+
+355
+01:18:11,956 --> 01:18:29,716
+Şu ve şu da gitti. Yani sadece asistan'daki bunlar değil, asistanla beraber enroll tablosunda asistanla beraber sekreterine verdikleri bu yetkiler de askattan dolayı onlar da çıkarılmış oldu ve şu manzara kaldı.
+
+356
+01:18:29,716 --> 01:18:39,896
+İşte graf böyle karmaşık veya matris artık nasıl temsil ediyorsa böyle karmaşık olmakla beraber her bir grant ve revoke operasyonuyla
+
+357
+01:18:39,956 --> 01:18:43,116
+Bu grafın güncellenmesi.
+
+358
+01:18:44,656 --> 01:18:51,776
+Bu bize böyle tipik olarak ders kapsamında birçok örnek ortaya çıkartıyor.
+
+359
+01:18:52,436 --> 01:18:56,116
+Bu örnekleri de anlaşılıyor. Yani bunları yapmanız çok zor değil.
+
+360
+01:18:56,692 --> 01:19:01,251
+Ben burada çok fazla detaya inmeyeceğim.
+
+361
+01:19:02,451 --> 01:19:07,311
+Ötelere burada yine sahip olan bu user, U kullanıcısı.
+
+362
+01:19:07,311 --> 01:19:12,652
+İşte V, V, V'ye R üzerinde insert yetkisi vermiş.
+
+363
+01:19:13,152 --> 01:19:17,331
+Daha sonra R üzerinde A'nın.
+
+364
+01:19:20,756 --> 01:19:24,076
+A üzerinde güncelleme yetkisi vermiş mesela.
+
+365
+01:19:25,356 --> 01:19:28,436
+Daha sonra bunu kaldırmış. Şurada, ikinci adımda.
+
+366
+01:19:30,736 --> 01:19:33,296
+Restrict olduğu için bu kalmış sadece.
+
+367
+01:19:33,816 --> 01:19:37,656
+Yani şu, şunu çıkarmadı. Sadece bunu çıkardık.
+
+368
+01:19:39,436 --> 01:19:39,956
+Evet.
+
+369
+01:19:44,148 --> 01:20:09,288
+Burada da, bu örnekte de yine bunları da yaparsınız. Yani o caskat ve restriktin manasını iyice anlayarak şu örnekleri çözümleyebilirsiniz diye düşünüyorum. Ben daha fazla burada zaman harcamayacağım. Bunlar çözümlü örnekler. Bunlar ise bir tane grant diagramının oluşturulması. Buna bakarak grant diagramını oluşturabilirsiniz.
+
+370
+01:20:10,899 --> 01:20:30,019
+Evet, diğer bir konumuz mandatory access control. Yani şimdiye kadar gördüğümüz, diğer ders kitabında da gördüğümüz disk grışınları gibi idi. Mandatory'de ise bazı böyle loophole'ların, yani açık noktaların ortadan kaldırılması hedefleniyor.
+
+371
+01:20:32,372 --> 01:21:00,372
+zararlı, yani manışız bir profesörden bahsediyor. Yani profesör de olsa demek ki zararlı biri olabiliyor. Burada şöyle bir zararlı bir iş yapabilir. Yani bu kullanıcı profesöre biz bazı yetkiler verdik. İşte biraz önce Enroll tablosunda grade notlara bakması, değiştirilmesi.
+
+372
+01:21:00,372 --> 01:21:09,072
+noktasında adi etkileri olduğunu düşünelim. Bu profesör şöyle bir tablo oluşturup, bu tabloyu public yapıp,
+
+373
+01:21:09,119 --> 01:21:28,279
+Bu arada public'ten bahsetmedim ama tabloyu public yapınca herkes bu tabloya erişebiliyor. Yani SELECT'e erişmesi mümkün oluyor. Tablonun sahibi bu tabloyu oluşturdu. Yani Manasit Profesör bu tabloyu oluşturdu ve bu tabloyu public yaptı. Herkes erişebilir SELECT noktasında.
+
+374
+01:21:28,724 --> 01:21:41,664
+Daha sonra bu tabloya, Enroll, yani kendisinin yetkisi olduğu, Enroll tablosunda erişebildiği kendi notlarını bu tabloya kopyaladım.
+
+375
+01:21:42,744 --> 01:21:46,744
+O zaman, niye malışçısı oldu bu, profesör? İşte bu yüzden.
+
+376
+01:21:46,744 --> 01:21:54,144
+Yani, buradaki Enroll tablosunda, benim o veri tabanında Enroll üzerinde yaptığım,
+
+377
+01:21:54,228 --> 01:22:05,288
+Bütün yetkileri alt üst etti. Yani kendi not verebildiği öğrencilerin o notlarını tamamıyla dış dünyaya açtı.
+
+378
+01:22:05,847 --> 01:22:13,648
+Oysa onu başka profesyonelere göremiyordu. Başkaları, başka profesyonelere de göremiyordu o notlar esasında.
+
+379
+01:22:14,260 --> 01:22:24,520
+İşte bu işlemiyle, bu işlemleriyle, çok basit bu işlemlerle bütün o yetkilendirme şeyini ortadan kaldırdı.
+
+380
+01:22:24,620 --> 01:22:25,760
+Onların hepsini koydu.
+
+381
+01:22:26,100 --> 01:22:34,500
+Demek ki discretionary yöntemde, yani şu ana kadar gördüğünüz yöntemlerde kişiye güven esası var yani.
+
+382
+01:22:35,091 --> 01:22:40,831
+İlk cümle, remember the description and control, assume that the users are transferred.
+
+383
+01:22:41,131 --> 01:22:44,831
+Yani, manacist bir profesör olamaz manası vardı orada.
+
+384
+01:22:46,111 --> 01:22:54,451
+Yani, kişiye güven olmaz ise, çok kolay bir şekilde kişi, işte bu tabloyu public yapabilir.
+
+385
+01:22:54,451 --> 01:22:56,231
+Yani, kopyalayıp tabloyu yapamaz.
+
+386
+01:22:56,771 --> 01:23:02,151
+Şimdi, o tablodaki yetkileri değiştiren belki, esas o tablonun sahibi.
+
+387
+01:23:02,591 --> 01:23:03,091
+O profesör.
+
+388
+01:23:03,091 --> 01:23:12,891
+Ama o tablolardaki bilgileri kopyalayıp, başka bir tabloya kopyalayıp, o tabloyu public yaptı.
+
+389
+01:23:13,264 --> 01:23:41,104
+Böylece çok kolay bir şekilde bunu bütün o private şeyini public yapmış oldu yani. İşte mandatory access control buna mani oluyor. Burada yetkiyi hem kullanıcılar hem de data üzerine bir güvenlik şeyi bir confidentiality sağlayarak
+
+390
+01:23:41,264 --> 01:23:51,444
+Confidential, gizlilik demek değil mi? Confidential, gizlilik. Yani bir gizlilik ayarı tahsis ederek hem veri hem de kullanıcı için böyle bir
+
+391
+01:23:53,076 --> 01:24:10,975
+Confidential seviyesi tahsis ederek, bunları classification level vereceğiz. Yani her bir obje, bu obje kişi de olabilir, veri de olabilir. Bu objenin seviyesi nedir? Gizlilik seviyesi.
+
+392
+01:24:10,975 --> 01:24:20,155
+Gizlilik seviyesinde burada 4 farklı seviyemiz var. Yani genel manada bunun farklı protokolüleri vardır elbette.
+
+393
+01:24:21,076 --> 01:24:28,076
+UNSECRECT, SELECT, CLASSIFIED, UNCLASSIFIED, UNCLASSIFIED, PUBLIC'e benziyor. Yani, herkese bunu okuyabilir.
+
+394
+01:24:28,076 --> 01:24:33,076
+Burada dikkat edilmesi gereken, şöyle bir
+
+395
+01:24:33,619 --> 01:25:01,619
+Foundation var diyelim. Yani temel bir mana var. Gene bu konunun böyle ilk şeyleri. Tabi güvenlik konuları oldukça kapsamlı konular. Yani ayrı bir bilgisayar bilimleri altında, ayrı bir alt ana dal. O yüzden çok kapsamlı değil burada anlattıklarım ama bir fikir verme noktasında mesela oldukça ilginç bir esas var burada. Yani okuma özellikle,
+
+396
+01:25:01,619 --> 01:25:11,059
+özelliği bir obje kendisinin veya kendisinden daha düşük olan bir gizlilik seviyesinde veriyi okuyabilir.
+
+397
+01:25:11,479 --> 01:25:26,859
+Yani secret olan bir obje, yani kişi mesela, subject dediği burada kişi, o kişi gene secret olan, gizli olan veya classified olan, unclassified olan bir veriyi okuyabilir.
+
+398
+01:25:27,604 --> 01:25:34,004
+TopSecret olan birisi, işte hepsini okuyabilir. Classified olan birisi, Secret olan bir veriyi okuyamaz.
+
+399
+01:25:34,524 --> 01:25:42,444
+Çünkü Classified modunda biri, o seviyede birisi yani. Bu oldukça aşikar. Yani böyle olması lazım.
+
+400
+01:25:42,511 --> 01:25:59,731
+Fakat yazma noktasında bir obje, yani bir sabce daha doğrusu, bir kişinin güvenlik seviyesi neyse, bu güvenlik seviyesinden daha kendisi gibi aynı seviyede veya daha düşük seviyede bir veri yazabilir.
+
+401
+01:26:00,404 --> 01:26:11,704
+Yani classified, yani secret birisi mesela, bu seviyede bir obje, classified, unclassified seriyede bir ürün çıkartabilir.
+
+402
+01:26:12,504 --> 01:26:23,984
+Aksak de topsecret bir şekilde bir ürün çıkartamaz yani. Öyle olursa, o zaman, şey, ben ne dedim, yanlış söyledim.
+
+403
+01:26:26,036 --> 01:26:45,036
+Doğru, yanlış söyledim. Doğru söylemedim. Yani bir obje okumayı daha düşük seviyelerde yapabiliyor. Yani topsecret'ü okuyamıyor. Ama yazmayı ancak daha yukarılara yazabiliyor. Evet, aynen böyle. Böylece...
+
+404
+01:26:45,460 --> 01:27:06,500
+Şu esas sağlanmış oluyor. Yani information must flow from lower security to higher security. Aksi takdirde yukarıdaki seviyede birisi, aşağıdaki seviyedeki veriyi yazsa, o zaman gizli olan bilgi aşağılara doğru akmış olacak yani.
+
+405
+01:27:06,963 --> 01:27:14,163
+Yani okuma ve yazmada bu esas çerçevesinde işlemler olabiliyor sadece.
+
+406
+01:27:15,952 --> 01:27:38,332
+Bu sayede zaten, bu şu Take a Peak problemi, yani şu Take a Peak tablosu şurada olan, şurada bahsettiğimiz bir tabloya bunu kopyaladı ya mesela, profesörün, burada şu tabloların, şu objelerin, şu tabloların, verinin diyelim, bir güvenlik seviyesi var.
+
+407
+01:27:38,752 --> 01:27:43,952
+Bunların güvenlik seviyesi mesela, şöyle olsun, şuradaki örnekten.
+
+408
+01:27:43,952 --> 01:27:49,351
+klasifiyat olsun.
+
+409
+01:27:49,351 --> 01:28:00,452
+Profesörün secret mesela. Take a peek de secret olacak.
+
+410
+01:28:00,452 --> 01:28:09,952
+Onun oluşturduğu. Diğer enroll section course ise, enroll section course'un durumu ne burada?
+
+411
+01:28:12,212 --> 01:28:19,372
+EnrollSecret mesela, Classified ve Course da Unclassified olacak.
+
+412
+01:28:19,372 --> 01:28:21,112
+Burada
+
+413
+01:28:22,771 --> 01:28:37,051
+Bunu biz kopyaladığımız zaman, şuradaki veriyi başka bir tabloya kopyaladığımız zaman, diğer kullanıcılar classified ise bu veriyi göremeyecekler.
+
+414
+01:28:37,152 --> 01:28:46,692
+Ne kadar bunu profesörde kopyalasa, secret olan birisi kopyalasa, biz bunu biraz önce public yapmıştık.
+
+415
+01:28:46,692 --> 01:28:49,511
+Yani şurada bu yetkilendirmeli artık yapmıyoruz.
+
+416
+01:28:49,771 --> 01:28:50,192
+Bu yok.
+
+417
+01:28:50,771 --> 01:29:08,771
+Bunun üzerinde başka bir yetkilendirmemiz daha var. O mandatory access control işte. Burada artık veri benim secret bir veri. Çünkü secret olan profesörün kopyaladığı, secret olan bir tablo oluşturduğu, o tablodaki şey.
+
+418
+01:29:18,771 --> 01:29:22,811
+daha yüksek olan bir veri olduğu için okuyamayacak.
+
+419
+01:29:27,891 --> 01:29:55,891
+Buradaki şeyde mesela, buradaki bu loophole problem, burada işte tricky olan yani zararlı olan kullanıcı, bu tabloyu oluşturması, bu tabloyu profesöre tahsis etmesi, insert yetkisi vermesi profesöre ve o profesörün notları girdiği uygulamada, yani veritabanı haricindeki bir uygulamada kodu değiştirir.
+
+420
+01:29:55,891 --> 01:30:09,891
+Yani onun işte burada bu zararlı kişi o makineye ulaşıp oradaki kodu değiştirip, profesör kendi enroll tablosuna veri girdiği zaman otomatik olarak...
+
+421
+01:30:10,384 --> 01:30:26,003
+T tablosuna, yani bu tricky, artık profesör malışist değil, tricky diye başka birisi de olsa, böyle uygulamada, uygulama kodunda arıza olsa, güvenlik açığı olsa, profesörün girdiği verileri,
+
+422
+01:30:27,220 --> 01:30:41,220
+Bu T tablosuna kopyalasak dahi gene burada şu sebepten dolayı kullanıcı gene bu yani diğer kullanıcılar bu veri okuyamayacaklar.
+
+423
+01:30:43,283 --> 01:30:52,923
+Burada şu yetkilendirme ayarlarıyla bunu yapabilir ama şu mandatory modelle bunu yapamayacak.
+
+424
+01:30:52,923 --> 01:31:09,323
+Yani çünkü burada tricky kullanıcısının şeyi classified, profesör secret olduğu için her ne kadar kodu da değiştirsek mesela burada tricky olan
+
+425
+01:31:11,283 --> 01:31:17,463
+Daha alt seviyede bir şeye bunu yazamaz.
+
+426
+01:31:17,463 --> 01:31:21,083
+Yani, Profesyonel Application can not try to help.
+
+427
+01:31:21,403 --> 01:31:23,903
+Profesyonel Application'a secret olduğu için,
+
+428
+01:31:24,467 --> 01:31:38,407
+Bu T tablosu da classified olduğu için, daha düşük seviyeli bir, güvenlik seviyeli bir tablo olduğu için, bu profesörün notları girdiği uygulamadan T tablosuna veri akışı olamaz.
+
+429
+01:31:39,987 --> 01:31:52,467
+Mandatory model buna izin vermiyor. Ne kadar biz arkada uygulama kodunu da değiştirsek, profesörün verdiği notları T tablosuna kopyalasak da bu kopyalamaya izin vermiyor.
+
+430
+01:31:52,467 --> 01:32:07,228
+vermemiş oluyor yani. Evet, yani bu şekilde mandatory access control de bazı açık noktaları böyle şey yapıyor, kapatıyor.
+
+431
+01:32:12,115 --> 01:32:22,515
+Şimdi son olarak cover channel'lardan bahsedelim. Burada da ilginç birkaç nokta var. Bunlar bir takım böyle çıkarımlarla yani
+
+432
+01:32:23,072 --> 01:32:38,731
+infer etmek, çıkarmak demek değil mi? Veritabanında bazı bilgilerin her ne kadar burada mandatory de kullansak, mandatory model de kullansak, bazı çıkarımlarla veri sızabilir dışarıya.
+
+433
+01:32:38,731 --> 01:32:50,231
+Mesela burada her TAPL'da, her reportta bir güvenlik seviyesi var. Bu tabloda işte çok sayıda kayıt var diyelim, her kaydın bir güvenlik seviyesi var.
+
+434
+01:32:50,996 --> 01:33:07,975
+Burada bir kullanıcı C seviyesinde bir kullanıcı, yani classified kullanıcı. Burada tabloda 101'i göremeyecek. Çünkü 101 secret. S secret manasında classified C.
+
+435
+01:33:08,479 --> 01:33:18,519
+Okuma noktasında C classified olan bir kullanıcı, bu 101'i göremeyeceği için böyle bir insert de yapamayacak.
+
+436
+01:33:19,079 --> 01:33:29,319
+Yapamadığı için de, yani şöyle bir sistemden şöyle bir primary key violation alırsa, arkada 101 olduğunu görmüş olacak.
+
+437
+01:33:29,319 --> 01:33:36,419
+Yani, bilmem anlatabildim mi? Yani şu esasında 101'i göremiyor ama,
+
+438
+01:33:36,479 --> 01:33:39,679
+101 eklemesi yaptığı zaman 101 olduğunu anlıyor.
+
+439
+01:33:40,299 --> 01:33:41,739
+İnför edebiliyor onu yani.
+
+440
+01:33:42,219 --> 01:33:47,219
+İşte böyle böyle bu inför daha da böyle atlanırsa, burada birkaç örneğimiz daha var.
+
+441
+01:33:47,659 --> 01:33:49,079
+İnför etme ile ilgili.
+
+442
+01:33:49,639 --> 01:34:04,459
+Bu inför etme hadisisi biraz daha böyle artarsa veritabanının bilgi sızması, yetkilendirme, mandatory control dahi olsa, daha kuvvetli olan mandatory bir yetkilendirme dahi olsa, bu veri sızması.
+
+443
+01:34:04,479 --> 01:34:19,979
+daha tehlikeli olabilir. Şimdi burada OLAP, yani istatistikler veritabanları, analytical veritabanları ismi altında, kategoride olan bir örnek var burada. Bu da oldukça ilginç. Son örneğimiz bu. Sonra bitiyor zaten.
+
+444
+01:34:21,363 --> 01:34:48,083
+Burada bir kere OLAP sadece istatistiksel sorgulara izin veriyor. Yani şu şekilde bir sorgu izin vermiyor. Normal konuları için vardır da. Genel manada, how many people bought x mesela. Bizim bu küçük dünyamızda da bu şekilde böyle bir SID, SMA, H, GPA var.
+
+445
+01:34:49,363 --> 01:34:58,223
+öğrencilerin işte departmanları, yaşları ve ortalamaları, NATO ortalamaları var.
+
+446
+01:34:59,303 --> 01:35:02,683
+Biz burada şunu biliyor olduğumuzu düşünelim.
+
+447
+01:35:02,903 --> 01:35:04,423
+Şurada bir senaryadan bahsedeceğim.
+
+448
+01:35:04,543 --> 01:35:07,163
+Ahmet'in en yaşlı kişi olduğunu biliyoruz.
+
+449
+01:35:07,803 --> 01:35:12,903
+Fakat aramak istediğim Ahmet'in yaşı, Ahmet'in GPA'yi.
+
+450
+01:35:13,247 --> 01:35:27,987
+Yani biz bazı bilgileri gerçek hayattan bilebiliriz. Yani Ahmet bu sınıfta veya bu okuldaki en yaşlı öğrenci. Ama GPA'yı görmemem lazım. Yani GPA'yı public değil.
+
+451
+01:35:27,987 --> 01:35:41,107
+İşte GPA'yı görmememe rağmen, yani o yetkilendirmeyle kısıtlanmış olmasına rağmen gerek mandatory olabilir, gerek discretionary olabilir. Yetkilendirmeyle bu kapalı dahi olsa.
+
+452
+01:35:41,247 --> 01:35:54,227
+Bakın şu sorgularla bu şeyin, Ahmet'in, en yaşlı olan Ahmet'in şu bilgi biliniyor. Yani yaşı bilinmiyor olabilir ama en yaşlı olduğu biliniyor.
+
+453
+01:35:54,612 --> 01:36:06,112
+Yaşı bilinmiyor. Sadece bilinen şey şu, Ahmet'in en yaşlı olduğu. İşte şu şekilde şöyle bir sorgu gönderdiğiniz zaman, yani tricky kullanıcı, şöyle bir sorgu gönderdiğiniz zaman,
+
+454
+01:36:07,411 --> 01:36:21,551
+HAMELY STUDENTS, yani bunu, müretif sorguyu yazabilirsiniz. Yani SELECT, işte, COUNT, işte, VER, STUDENT gibi, öyle bir sorgu yazacağız. Fakat önemli olan burada yüklem kısmı.
+
+455
+01:36:22,612 --> 01:36:25,211
+Efendim?
+
+456
+01:36:27,692 --> 01:36:28,411
+Video söyleyeyim.
+
+457
+01:36:30,711 --> 01:36:38,551
+Ses gelmedi.
+
+458
+01:36:53,779 --> 01:36:55,799
+Neyse, ben herkesi sessize aldım.
+
+459
+01:36:56,579 --> 01:37:00,960
+Konuşmak istemi varsa, parmak kaldırabiliriz.
+
+460
+01:37:01,479 --> 01:37:13,460
+Evet, burada bir şekilde yüklem kısmında, büyük eşittir kullanarak, en yaşlı kişiyi bulabiliriz.
+
+461
+01:37:13,880 --> 01:37:16,219
+Yani yaşını, Ahmet'in yaşını öğrenebiliriz.
+
+462
+01:37:19,091 --> 01:37:40,931
+Yaşını bilmiyordum ya, Ahmet'in en yaşta olduğunu biliyorduk ama yaşını bilmiyorduk. Yani bildiğimiz şey bilinebilecek bir şey yani. En yaşta Ahmet. Ama yaşını bilmiyoruz. İşte burada X'in şu şekilde kullanarak, yani H büyüktür, işte 25.
+
+463
+01:37:41,684 --> 01:38:09,684
+H büyüktür, 26, 100 tane kayıt çıkıyor. H büyüktür, 27, 50 tane kayıt çıkıyor. H büyüktür, 8 tane kayıt çıkıyor. En nihayetinde H büyüktür, 35 dediğim zaman bir tane kayıt, 0 kayıt çıkacak. Ama 35 dediğim zaman bir tane kayıt çıkacak. 34 dediğim zaman bir tane kayıt çıkacak. O kayıtta en yaşlı bir kişi varsa Ahmet'i yakalamış olduk. 35 yaşında.
+
+464
+01:38:09,684 --> 01:38:24,884
+İşte bundan sonra, şu şekilde bir sorgu yazarak, Q2 sorgusuyla da, Maximum GPA of students whose age is greater equal x eşittir 35, yani x büyük eşittir 35.
+
+465
+01:38:27,503 --> 01:38:51,423
+Yani bakın hep burada yazdığım sorgular, kumülatif sorgular. Yani how many people tarzında sorgular. Hiç bir şey, yani kumülatif olmayan bir sorgu yok yani. Who, both, x gibi. Yani direkt olarak tek bir, couple'da tek bir değere erişecek bir sorgu yazmıyorum.
+
+466
+01:38:51,743 --> 01:39:05,579
+hep OLAP tarzı, istatiksel tarzı bir sorgu yazıyorum. İşte burada, madem 25 yaşı yakaladım, bu 35 yaşındaki kişi 35'ten daha büyük olan...
+
+467
+01:39:05,587 --> 01:39:20,148
+kişilerin maksimum GPA'yini arasında maksimum GPA'yı bulduğu zaman o zaman işte şeyi bu açıktan kaynaklı GPA'yı 3.7'yi yakalamış olduk.
+
+468
+01:39:21,828 --> 01:39:30,268
+Yani burada çok büyük bir trik yok. Sadece yaşı bulduk ve o yaştan yola çıkarak da
+
+469
+01:39:31,072 --> 01:39:35,351
+O yaştan büyük olanların arasında maksimum GPA'ya eriştik.
+
+470
+01:39:35,492 --> 01:39:37,012
+Erişmemem gereken GPA'yı.
+
+471
+01:39:37,212 --> 01:39:38,872
+Yani böyle sürekli sorgu göndererek.
+
+472
+01:39:39,311 --> 01:39:43,672
+Şimdi burada buna mani olmak için şu şekilde bir adım atılabilir.
+
+473
+01:39:44,172 --> 01:39:46,752
+Yani veya gerçek hayatta da böyle olabilir.
+
+474
+01:39:46,752 --> 01:39:48,692
+Olaf tarzı bir veri tabanında.
+
+475
+01:39:49,712 --> 01:39:57,672
+Burada bu kümenüme fonksiyonunun arkada en az N satır üzerinde, N tane ROW üzerinde çalışması gerekiyor.
+
+476
+01:39:58,260 --> 01:40:10,520
+Oysa burada, hani şurada yaptığım şeyde, x eşittir, x büyük eşittir, 3,5 dediğim zaman, sadece bir kişi kaldı. O bir kişi üzerinde maksimum DPI'yi hesapladım.
+
+477
+01:40:10,520 --> 01:40:25,460
+Yani burada, bu sınırı koyarsam, bu sınırı belki default olarak var, böyle bir sınır. Çünkü, OLAP veritabanında, bir küme üzerinde, kümeni ve fonksiyonu yapmam lazım, seçim üzerinde.
+
+478
+01:40:25,811 --> 01:40:37,452
+İşte böyle bir durumda Q2 fair olacak şurada. Çünkü burada 1 olsa tamam ama demek ki burada 100, 1000 falan yani.
+
+479
+01:40:43,828 --> 01:40:53,908
+N'i de aşmak mümkün. Yani şuradaki Q2 phase, CTRIK is decisive, kararlı, does not give up diyor. Şöyle bir action yapıyor bakın.
+
+480
+01:40:54,648 --> 01:41:04,188
+Burada bu sefer son bir kişiye ilişmeden, yani yaşı 28, 29, 30 olduğu zaman artık o N'i yakaladı.
+
+481
+01:41:05,076 --> 01:41:08,416
+Yani N tuple ortaya çıkartacak bir set buluyorum yani.
+
+482
+01:41:27,091 --> 01:41:39,731
+Elimde artık o üst taba. O üst tabanın içerisinde Ahmet'in artık GPA var. Yani biraz o çalışma uzayını daraltmış oldu yani. Ahmet'in GPA'ine erişmeye başladık. Bir adım attık en azından.
+
+483
+01:41:40,451 --> 01:41:54,571
+İşte daha sonra şu Twitch sorgusunu çalıştırıyoruz. What is the sum of GPA of all students whose age is greater than 28 dediğim zaman buradaki sum GPA'de Ahmet'in GPA'i var.
+
+484
+01:41:55,380 --> 01:42:14,439
+Q3 böyle. Yani yaşı 28'den büyük olan 100 kişi var. O 100 kişinin toplam GP'yini bulduk. Şimdi Q4'te ise Ahmet'in, biliyoruz Ahmet'i arıyordum ben, en yaşlı olan Ahmet. Ahmet'in yaşını çıkartıp, Ahmet'in notunu çıkartalım.
+
+485
+01:42:15,188 --> 01:42:29,188
+ve kendi notumuzu koyalım. Yani Trippkin'in kendi kendisini biliyor. O kendisini koyuyor. Ta ki, elini yine tutturabilirim yani. Ahmet'i çıkardık. Kendimizi koyduk.
+
+486
+01:42:29,587 --> 01:42:56,747
+Buraya. Kendimizi koyduysak gene, en sapılı kısıtını sağladık. Ve ortaya çıkan bir GPA değeri var gene, SAMOF GPA. İşte o SAMOF GPA, yani Q4'teki GPA'yı, benim kendi, yani ben TRIK, ben diyorum TRIK'e, TRIK'e'yi, GP'e'yi çıkartıp, çıkartırsam, Q3'ü de ondan çıkartırsam, Ahmet'in GPA'ine gelişmiş olacağım.
+
+487
+01:42:57,203 --> 01:43:21,483
+Yani tabii tricky bir işlem olduğu için biraz dikkat gerektiriyor. Hemen belki anlamamış olabilirsiniz. Yani şu jurdaki şey oldukça basit zaten. Yani Ahmet'in yaşına eriştikten sonra şöyle bir sorgu ile 3.7'ye eriştim. Çünkü simülatif sorgular kullanabiliyorum sadece. Yani kısıtımız o.
+
+488
+01:43:22,195 --> 01:43:45,436
+Kumulatif sorguları kullanıyorsam, bu adımları attım. Yine kümulatif sorguları kullanıyorum ama, üzerinde kümulatif işlem yapacağım setin belli bir sınırı olması lazım. Böyle bir kısıt koyduk. Yani bu bir güvenlik kısıtı. Fakat bu da fayda etmedi. Bu sefer de şöyle bir trik yaparak, yani şurada belli bir set bulduk, şeyi sağlayan.
+
+489
+01:43:47,539 --> 01:44:04,000
+Bunu bulduktan sonra Ahmet'i çıkardık. Kendimizi koyduk onun yerine. Öyle bir SAM elde ettik. Daha sonra Ahmet'in olduğu SAM'la bunu karşılaştırdık. Aradaki farka göre Ahmet'in CPA'ine elitist olduk.
+
+490
+01:44:05,171 --> 01:44:33,151
+Yani bu örnekler tabii öyle çoğaltılabilir. Covered Channel deniyor bunlara. Yani böyle açık şeyler, sistemin açıkları. Biz ne kadar yetkilendirme kısıtları da koysak, mandatory disk disk disk disk neleri. Bu böyle sürekli sorgularla, akıllıca sorgularla hedefe bulaşmaya imkan sağlayan oldukça ilginç bir konu yani. Bu noktada araştırmalı yapabilirsiniz yani merak edenler. Covered Channel'lar.
+
+491
+01:44:33,171 --> 01:44:35,271
+hangi varyantları olabiliyor.
+
+492
+01:44:37,431 --> 01:44:40,831
+Bunlarla ilgili diğer örneklerine bakabilirsiniz.
+
+493
+01:44:42,003 --> 01:44:58,583
+Evet, sorumuz var mı arkadaşlar? Yani böylece konuyu bitirmiş olduk. Bugünkü düşündüğüm de konuyu. İlk kısmında aktif databazeler vardı, trigger'lar falan. Ondan sonra Discretional Access Control, Mandator Access Control'dan bahsettik.
+
+494
+01:44:58,583 --> 01:45:07,303
+Ve İstatistikler OLAP tarzı veri tabanlarında, Influence esaslı Powered Channel'lardan bahsetmiş olduk.
+
+495
+01:45:09,427 --> 01:45:11,427
+Böylece konularımızı bitirdik.
+
+496
+01:45:15,028 --> 01:45:33,108
+İkinci sınava kadar zaten bütün konular net. İkinci sınavdan sonra da NO ESK veritabanları, indeks yapıları, ana hatlarıyla B-plastili hashing ve bugün işlediğimiz daha kapsamlı güvenlik ve biraz daha kapsamlı trigger konularını işlemiş olduk böylece.
+
+497
+01:45:34,248 --> 01:45:35,488
+Benim anlatacaklarım bu kadar.
+
+498
+01:45:37,108 --> 01:45:40,188
+Herhangi bir sorunuz yoksa dersin gideceğim.
+
+499
+01:45:41,428 --> 01:45:43,508
+Ben ders dışı bir şey sorabilir miyim?
+
+500
+01:45:44,068 --> 01:45:44,388
+Evet.
+
+501
+01:45:45,648 --> 01:45:52,308
+Benim ikinci vize beklediğimden baya düşük geldi ama en azından sınav kağıdımı indireme şansım var mı?
+
+502
+01:45:53,068 --> 01:45:56,388
+Arkadaşlar, gelip bakabilirsiniz sınav kağıdınıza. Sorun yok.
+
+503
+01:45:56,628 --> 01:46:01,888
+Haftaya, mazeret sınavı sırasında gelin bakın veya beni bulabilirsiniz.
+
+504
+01:46:02,148 --> 01:46:04,076
+Ben genelde odam değilim ama...
+
+505
+01:46:04,083 --> 01:46:05,423
+Bakın yani.
+
+506
+01:46:06,383 --> 01:46:06,683
+Bakın.
+
+507
+01:46:06,683 --> 01:46:07,923
+Bir şey yapabilirsiniz.
+
+508
+01:46:09,063 --> 01:46:10,283
+Ama bugün olmasın.
+
+509
+01:46:10,363 --> 01:46:12,543
+Bugün bakacak olan var zaten.
+
+510
+01:46:13,503 --> 01:46:15,283
+Daha rahat bir vakitte gelirseniz.
+
+511
+01:46:17,523 --> 01:46:18,163
+Tamamdır hocam.
+
+512
+01:46:18,883 --> 01:46:19,883
+Metin sen misin?
+
+513
+01:46:20,003 --> 01:46:21,643
+Metin diye bir arkadaş vardı ama.
+
+514
+01:46:22,483 --> 01:46:23,063
+Yok be.
+
+515
+01:46:23,223 --> 01:46:24,063
+İsmail hocam ben.
+
+516
+01:46:24,183 --> 01:46:24,463
+Tamam.
+
+517
+01:46:24,683 --> 01:46:25,803
+[öğrenci] geri bakabilirsin.
+
+518
+01:46:27,263 --> 01:46:28,423
+Teşekkür ederim hocam.
+
+519
+01:46:29,223 --> 01:46:30,343
+Başarı vermiyorum.
+
+520
+01:46:31,444 --> 01:46:33,444
+Başka sorusu olan yoksa bitiriyorum.
+
+521
+01:46:35,704 --> 01:46:37,544
+Görüşmek üzere, iyi çalışmalar.

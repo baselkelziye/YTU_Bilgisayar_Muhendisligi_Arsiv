@@ -1,0 +1,2639 @@
+1
+00:00:42,292 --> 00:01:01,171
+Bu arkadaşlar, bugünkü dersimizde NoSQL veritabanları ve indeksleme üzerini bahsedeceğiz. Haftaya sınavımız var. İşlediğimiz yere kadar muhtemelen olur ya da bakarız bugünkü anlatım performansımıza göre.
+
+2
+00:01:02,591 --> 00:01:09,152
+NoSQL veritabanları hakkında genel olarak neler biliyorsunuz? Genel kültür.
+
+3
+00:01:11,060 --> 00:01:17,060
+Bağlantıyı da paylaştım Classroom'da. Oradan da gelişebilirsiniz.
+
+4
+00:01:19,060 --> 00:01:21,996
+Geçen hafta bir parça başlamıştık.
+
+5
+00:01:25,492 --> 00:01:27,072
+NoSQL veri tabanlarına.
+
+6
+00:01:27,792 --> 00:01:30,772
+Şimdi bu konu tabii distributed database ilk olarak.
+
+7
+00:01:31,272 --> 00:01:42,692
+Yani NoSQL veri tabanı deyince söylenmesi gereken ilk dinlerden bir tanesi bunlar big data, büyük veri sistemleri için saklama ortamları.
+
+8
+00:01:43,992 --> 00:01:49,012
+Tamam mı? İlk olarak bunu belirtmekte fayda var.
+
+9
+00:01:52,019 --> 00:02:04,439
+Bir de genelde geçen kelime mesela buralarda yine dikkat çeken, benim böyle dikkatimi çeken şeyleri söylüyorum. Elbette konu çok kapsamlı. Şu sunuyu da açayım da.
+
+10
+00:02:09,719 --> 00:02:13,519
+Yine dikkat çeken diğer bir sun.
+
+11
+00:02:17,268 --> 00:02:38,147
+Burada mesela database kelimesi de bazen geçmeyebiliyor. Yani mesela key value store, columnar store, mesela document store. Acaba bunun sebebi nedir? Biraz da burada yatıyor olayın manası. O yüzden dikkat çekiyorum. Bunun hakkında bir yoruma olan var mı?
+
+12
+00:02:48,692 --> 00:02:59,812
+Evet, niye öyle diyorlar? Çünkü biraz veritabanının geleneksel kompleks kavramlarının biraz dışına çıkıyoruz. Veya onları gevşetiyoruz.
+
+13
+00:03:00,932 --> 00:03:06,312
+Geleneksel veritabanının böyle zor olan kavramları neler acaba?
+
+14
+00:03:07,532 --> 00:03:09,171
+[öğrenci]. [öğrenci] miydi ismi?
+
+15
+00:03:10,852 --> 00:03:11,492
+Neydi ismi?
+
+16
+00:03:13,212 --> 00:03:13,372
+He?
+
+17
+00:03:14,372 --> 00:03:14,972
+[öğrenci].
+
+18
+00:03:15,231 --> 00:03:16,052
+Evet, sabiz mi?
+
+19
+00:03:17,204 --> 00:03:18,704
+Maşallah, tebrik ederim.
+
+20
+00:03:19,463 --> 00:03:20,463
+Cevap edelim.
+
+21
+00:03:21,164 --> 00:03:31,604
+Acaba SQL sistemlerinde, ilişkisel model sistemlerinde, sistemi zorlayan acaba nedir, nelerdir?
+
+22
+00:03:34,644 --> 00:03:35,644
+[öğrenci]?
+
+23
+00:03:37,444 --> 00:03:40,164
+Doğru söyledim değil mi? [öğrenci] değil misiniz?
+
+24
+00:03:40,164 --> 00:03:41,164
+diye baktık, durduk.
+
+25
+00:03:42,864 --> 00:03:44,944
+Evet, [öğrenci] senin fikrin var mı?
+
+26
+00:03:47,860 --> 00:04:00,080
+SQL sistemlerinde acaba sistemi zorlayan şey nedir? Ki büyük veriyi kaldıramıyor yani. Büyük veri dediğimiz zaman, yani ilk aklımıza gelen büyük veri.
+
+27
+00:04:00,467 --> 00:04:20,396
+Yani bunu teknik olarak ifade etsek, terabyte, petabyte işte onun da bir ötesinde bir kelime daha var. Yani böyle bir binaya bile sığmıyor. İşte data center'lar düşünün yani bütün herkesin yani dünyada yani böyle reklam gibi olmasın zaten hayatın içinde işte Google'ın servislerini kullanmayan biri var mıdır acaba?
+
+28
+00:04:20,819 --> 00:04:28,819
+Çok dağda yaşayanlar falandır herhalde. Kullanmayan yoktur. Çok yaşlı insanlar kullanmıyorlardır.
+
+29
+00:04:28,819 --> 00:04:35,819
+Çok küçük insanlar kullanmıyorlardır. Öyle bir şey ki, dünyadaki herkesin verisinin bir yerde toplanması. Korkunç bir rakam.
+
+30
+00:04:35,819 --> 00:04:45,579
+O yüzden bu ne bir odaya sığar, ne bir binaya sığar, böyle bir data center yani. Fabrika yani, nasıl fabrika, araba fabrikası oluyor. Böyle bir veri fabrikası yani.
+
+31
+00:04:46,579 --> 00:04:52,139
+Şimdi böyle bir veriyi benim PGSK veri tabanında tutmam.
+
+32
+00:04:54,139 --> 00:04:57,339
+Biraz akla sığışmıyor yani.
+
+33
+00:04:57,339 --> 00:05:02,139
+Çünkü PGSK veri tabanı veya Oracle, aynı muadilde yani.
+
+34
+00:05:02,740 --> 00:05:29,060
+Veya işte MS Server, tek bir makinede çalışan, hadi 3 makine olsun, 5 makine olsun. Burada bunu çalışmamız lazım. Çünkü bunlar, yani bu bahsettiğim bu database'ler, database system'lar, geleneksel manada, bunlar çok kompleks. Yani süper. Her şeyi mükemmel yapmaya çalışıyor. İşte bu her şey nedir? Yani et zamanlılık, consistency, yani recovery.
+
+35
+00:05:29,620 --> 00:05:53,300
+Yani, bunlar, çünkü bunlar sistem. Yani sistem ne demek? Çok karmaşık bir şey sistem. Yani işletim sistemi de öyle. İçeride birçok bir tüm proses çalışıyor, birçok insan çalışıyor, bir de böyle bir operating system, sadece yine lokal değil, bir tek ben kullansam, yine multi programming var, birçok proses çalışıyor, çok karmaşık, kaynakların ortak kullanımı falan, kurtarma falan, yani bir sürü şey var.
+
+36
+00:05:57,247 --> 00:06:09,307
+Windows Server olarak mesela veya Linux Server olarak şey yapsak orada birçok kişi kullanıyor. Bir bölüm olabilir, bir fakülte olabilir mesela. O zaman onu birçok kişi kullanıyor. Yine çok karmaşık bir sistem var.
+
+37
+00:06:09,307 --> 00:06:22,447
+O zaman demek ki burada bu karmaşıklıkla beraber kişi sayısının da artmasıyla beraber karmaşıklık artıyor. Sistemin vereceği güvencelere göre de
+
+38
+00:06:23,668 --> 00:06:29,668
+bunu sağlaması, bu güvenceyi sağlaması çok zor oluyor. Güvence ne? Herkesin işini göreceğiz.
+
+39
+00:06:29,668 --> 00:06:40,668
+Ve real time olacak. Ve veri kaybı olmayacak. Yani hem high performance, hem de consistent. Data integrity.
+
+40
+00:06:40,668 --> 00:06:47,668
+Buradaki geçen kelimeler bunlar. Data integrity, high performance. O zaman demek ki netice itibariyle
+
+41
+00:06:47,860 --> 00:06:52,440
+Bu ilk yorumlarımızdan yola çıkarak, database system değil,
+
+42
+00:06:53,043 --> 00:07:03,043
+Data storage system, yani document store, C-value store, Mongo falan da gene geçiyor da tabi yaz olarak da.
+
+43
+00:07:03,283 --> 00:07:09,644
+Yani anladınız, biraz gevşetilmiş yani. Yani kompleks SQL sistemlerinin gevşetilmiş hali.
+
+44
+00:07:09,883 --> 00:07:15,243
+Çünkü başka türlü bu kadar veriyi handle edemeyiz yani. Yani başa çıkamayız.
+
+45
+00:07:15,783 --> 00:07:19,623
+Yani saklayamayız, düzenli saklayamayız ve sorgulayamayız.
+
+46
+00:07:20,180 --> 00:07:47,180
+İşte, burada zaten sunuda da böyle geçiyor, dikkat ederseniz. Şurada ben en baştan şöyle şey yapayım. Bu kitap, Elmasın Navetti'nin kitabı. Bu da oldukça güncel bir kitap. Yani güncellenen bir kitap. 7. 8. eleşimli falan. Buradaki sunular 2016 gerçi. Ama gene de, yani hızlı değişen bir teknoloji elbette ama gene de...
+
+47
+00:07:47,444 --> 00:08:01,664
+Yerine oturmuş bazı şeyler var. En azından bir kategorizasyon oldukça yerine oturmuş. Ama gene de böyle tam cutting edge diyorlar ya, şu andaki hali merak ediyorsanız da gene araştırmaya değer yani şu andaki vaziyet nedir diye.
+
+48
+00:08:02,104 --> 00:08:11,704
+Burada genel kavramlar var. Yani motivasyon denilen, yani bu noktaya sevk eden şey nedir yani? Biraz önce bahsettiğim şeyler. Onlarla başlıyor.
+
+49
+00:08:15,444 --> 00:08:20,904
+Bunu güzel, yani not only SQL. Yani bunlar SQL sistemleri değiller, yani pure.
+
+50
+00:08:21,363 --> 00:08:49,364
+SQL, değiller. Ama, tamamıyla SQL sizde değiller yani. Hatta, ilk böyle yola çıkmalarına rağmen, 2010'lar gibi, öyle. Daha sonradan SQL'e böyle birçok sistem yontulmuş. Bunun sebebi nedir acaba? Yani yontulmuş derken SQL'i de include ediyor. SQL'den de istifade ediyor yani. SQL'in basit formlarını ama. Hani SQL'de iç içe sorgular, correlated sorgular, join'ler falan, onu big data...
+
+51
+00:08:49,364 --> 00:09:14,084
+Bu arada yapacağız. Bu çok kabul edilebilir bir şey değil. Yani bunu çok yapan yok yani. SQL var gene, belki az. Çünkü SQL niye var? Niye yani böyle büyük vaatlerle çıkıp da SQL'i, SQL'den kaçıp da sonradan SQL'e şey yapan birçok sistem var yani. Öyle bir gidişata bakarsanız. Bunun sebebi SQL'in oldukça rektratif olması.
+
+52
+00:09:14,772 --> 00:09:26,772
+Yani bu çok cazip bir şey. Python da öyle mesela değil mi? Gerçi karşılaştırılma. Python programlama dili, birçok kütüphanesi var, birçok network'te, birçok farklı protokollerde kullanabiliyorsunuz.
+
+53
+00:09:26,772 --> 00:09:36,771
+Çok az kodda çok şey yapıyorsunuz. SQL'de de Data Language, o noktada çok elverişli.
+
+54
+00:09:41,875 --> 00:09:45,875
+Yani sadece GET ve PUT gibi mesela.
+
+55
+00:09:45,875 --> 00:09:50,875
+Eee hiç mi JOIN yapmayacağız? Hiç karnızı şeyler yapmıyorlar mı acaba Big Data sistemlerinde?
+
+56
+00:09:50,875 --> 00:09:52,875
+Bunu nasıl yapacağız?
+
+57
+00:09:52,875 --> 00:09:55,875
+Eee bu kadar veri üzerine hiç mi JOIN olmuyor?
+
+58
+00:09:55,875 --> 00:10:01,875
+Bunun cevabı bunu, applikasyon yapıyorsa, buyurun applikasyon yapsın.
+
+59
+00:10:01,875 --> 00:10:04,716
+DATABASE diyor ki ben yapmayacağım, yapamam diyor yani.
+
+60
+00:10:05,172 --> 00:10:17,412
+database, ben sadece put ve get yapabilirim diyor. Bunları yapabilirim diyor. Bu kadar veri üzerine. Yapmak istiyorsanız, application seviyesinde bunu yapabilirsiniz. Çünkü nihayetinde yapılan şey ne JOIN'da?
+
+61
+00:10:17,412 --> 00:10:30,932
+JOIN'ın içini öğrendik. JOIN'da yapılan şey, farklı veri setlerinin eşleşen tuple'larını yakalamak. JOIN bu. Çünkü onlar dağılmış. Niye dağıttık? Onun işte normalizasyon sebebi var.
+
+62
+00:10:31,412 --> 00:10:35,772
+Integrity sebebi var, var, bir sürü sebebi vardı onları şey yaptık. Bunları biz dağıttık.
+
+63
+00:10:35,772 --> 00:10:41,772
+Ben bunu toplamam gerekiyorsa, aradığım veri tek bir yerde olmayabilir yani bu çok normal bir şey.
+
+64
+00:10:41,772 --> 00:10:44,372
+O zaman toplayacaksan, aplikasyon bunu toplasın.
+
+65
+00:10:44,372 --> 00:10:46,372
+Aplikasyon da bunu nasıl topluyor?
+
+66
+00:10:46,372 --> 00:10:49,252
+Yani burada birçok algoritma var.
+
+67
+00:10:49,252 --> 00:10:52,852
+Burada da daha çok burada yapılan algoritmalar ne?
+
+68
+00:10:52,852 --> 00:10:55,812
+Onun hakkında bir genel kültür var mı?
+
+69
+00:10:57,524 --> 00:10:59,524
+Oradaki arkadaşlar sesim geliyor mu?
+
+70
+00:11:00,524 --> 00:11:01,524
+Sizi unuttuk.
+
+71
+00:11:02,524 --> 00:11:03,524
+Evet, görüntüyü açmadım ama.
+
+72
+00:11:06,524 --> 00:11:07,524
+He, ekran paylaşmadık.
+
+73
+00:11:07,524 --> 00:11:08,524
+Kusura okmayın.
+
+74
+00:11:09,395 --> 00:11:12,555
+Ama ekranda daha bir şey yok, o kadar değil zaten.
+
+75
+00:11:12,555 --> 00:11:15,795
+Evet. Acaba bu aplikasyona bunu havale ettik.
+
+76
+00:11:16,096 --> 00:11:17,596
+Eplikasyon bunu nasıl yapıyor?
+
+77
+00:11:17,875 --> 00:11:19,155
+Yani join algoritmaları var.
+
+78
+00:11:19,235 --> 00:11:22,716
+Ve tabağın sistemin içinde kullanılan, onu başka derslerde görüyoruz.
+
+79
+00:11:22,795 --> 00:11:23,915
+Sistem gerçekten öyle mesela.
+
+80
+00:11:24,055 --> 00:11:25,315
+Çok karmaşık algoritmalar.
+
+81
+00:11:25,755 --> 00:11:27,935
+Çok karmaşık algoritmaları yine yapmıyor.
+
+82
+00:11:28,196 --> 00:11:30,336
+Eplikasyon böyle büyük bir üzerinde.
+
+83
+00:11:30,815 --> 00:11:33,076
+Bunları map ediyor.
+
+84
+00:11:33,908 --> 00:11:38,308
+Big Data ders aldıysanız orada Mehmet Hoca anlatıyordu.
+
+85
+00:11:38,308 --> 00:11:44,708
+Ve Prodius gibi paralel algoritmalarla daha çok yapılıyor. Daha çok değil öyle yapılıyor yani.
+
+86
+00:11:46,708 --> 00:11:50,508
+O zaman demek ki hani bu hani fikri olarak...
+
+87
+00:11:50,511 --> 00:12:00,411
+Şimdi olayın tabii teknikle şeyi, birçok terminolojisi kavramı var. Çünkü distributed database, normal centralized database'e göre çok daha karmaşık yani.
+
+88
+00:12:00,631 --> 00:12:08,311
+Çünkü söyleyeceğiz geçen kelimeleri. Yani benim bu dersi, böyle bu konuyu açmam esasında çok kolay değil yani.
+
+89
+00:12:08,711 --> 00:12:11,611
+Bunu ben geçen seneler çok anlatmıyordum. Şimdi biraz anlatayım dedim.
+
+90
+00:12:12,031 --> 00:12:18,411
+Maksadımız tabii bunun böyle detayını, burada işte Big Data platformunda bir database etrikasyonu yapmak.
+
+91
+00:12:18,511 --> 00:12:38,891
+Falan da değil. Bu ayrı bir ders konusu. Onun için de benim hazırlık yapmam lazım. Yani ayrı bir şey var. Ama en azından terminolojiyi bir parça bilmek, motivasyonu bilmek yani. Tamam mı? Ve şu andaki güncel geçen kelimeler, işte buradaki 4 kategori söyleyeceğim. Orada acaba hangi meşhur veri tabanları var? Bunu bilmekte bence fayda var yani.
+
+92
+00:12:39,604 --> 00:12:55,004
+Bu dersi, bu konuyu açmamın maksadı buydu. Burada gene, hem normalizasyon'dan bahsedeceğiz, hem indexing'den bahsedeceğiz. O yüzden hemen akıbinde de, indexing konusunu bir parça anlatayım diye düşünüyorum. Sınavdan sonra birkaç hafta da bundan anlatacağız.
+
+93
+00:12:55,004 --> 00:13:05,404
+Şimdi bu tanımda, dediğimiz gibi, not only SQL var. SQL bir parça var, ama demek ki, basit formda var. Yani ne? Get.
+
+94
+00:13:05,408 --> 00:13:14,408
+key, yani bir key üzerinden bir arama yapıyorum ve o key'deki veliyi çekiyorum yani hızlı bir şekilde. Tamam, arkada da indexler kullanarak.
+
+95
+00:13:17,408 --> 00:13:30,408
+İkinci madde de diyor, noise-carveri tabanları, mostly, daha çok, maksadı zaten o, distributed database'ler. Bu ne demek?
+
+96
+00:13:31,572 --> 00:13:39,572
+Distributed database. Bu kelimenin içinde neler var acaba? İlk aklıma gelmesi gereken şeyler neler? Terminolojik olarak.
+
+97
+00:13:40,572 --> 00:13:52,572
+Distributed data deyince cluster kelimesi aklımıza gelebilir. Bu cluster'da birden çok makine var. Birden çok commodity makine var bir de. Ne demek commodity?
+
+98
+00:13:53,572 --> 00:13:57,572
+Commodity'nin kelimesi. Yani bu makine gibi.
+
+99
+00:13:58,548 --> 00:14:03,227
+Şu makine gibi. Ya böyle piyasada satılan makineler gibi. Böyle süper kompütür değil yani.
+
+100
+00:14:04,307 --> 00:14:13,307
+Yani normal işlemcilerin makinelerinde süper kompütürler var. Onlar eskiden çok meşhurdu. Şimdi biraz işte bu Big Data ile beraber. Yani hiçbir süper kompütür o Big Data'yı
+
+101
+00:14:13,307 --> 00:14:20,668
+Eee, handle edemez yani. Değil mi? İstediği kadar süper kompütür oldu. Yani buradaki kelime
+
+102
+00:14:21,076 --> 00:14:26,316
+Gene horizontal, horizontal bir açılım, horizontal bir ölçekleme.
+
+103
+00:14:27,396 --> 00:14:30,956
+Yani bu makinelardan böyle ihtiyaca göre yeniden ekliyoruz böyle.
+
+104
+00:14:31,096 --> 00:14:34,936
+100 tane işte cluster böyle. Bu makinelardan var 100 tane.
+
+105
+00:14:36,156 --> 00:14:40,656
+İhtiyaca göre 10 tane daha ekleyelim. İhtiyaç olmadan 10 tane daha çıkaralım.
+
+106
+00:14:41,556 --> 00:14:44,816
+Tamam mı? Bu şekilde bir mekanizma işliyor yani.
+
+107
+00:14:45,056 --> 00:14:48,396
+Bunu, sistem bunun üzerine kurgulanmış.
+
+108
+00:14:49,107 --> 00:14:54,507
+Tamam mı? Ekleme çıkartmanın horizontal olması, vertical. Hiçbir makine orada süper kompütür değil yani.
+
+109
+00:14:54,507 --> 00:14:59,707
+Commodity bilgisayarları, yani piyasa bilgisayarları yani. Evet.
+
+110
+00:14:59,707 --> 00:15:12,307
+Anca böyle bir scalability ile, yani ölçeklenebilir scalability kelimesinin içinde bu var. Ne kadar ihtiyaç var? 10 makineye ihtiyaç var. Tamam, Clustrum 10 makine.
+
+111
+00:15:12,532 --> 00:15:26,532
+İhtiyaca göre yeni veriler geldi. Yani şu anda günümüzdeki veriler böyle patlamalı geliyor. Çok hızlı bir şekilde artıyor. O zaman ihtiyaca göre bunları eklemek yani. Tamam mı? Tabii büyük ölçeklerde genelde.
+
+112
+00:15:28,788 --> 00:15:37,788
+İşte böyle distributed database de bu kelimeler aklımıza gelir. Bunlar da işte cluster dedik. Cluster, bir sürü makineler, commodity makineler.
+
+113
+00:15:37,788 --> 00:15:49,740
+Burada bu distributed storage sistemlerdeki saklanan veri bir de structured veri değil.
+
+114
+00:15:50,259 --> 00:16:01,459
+Burada da bir motivasyon da bu zaten. Yani burada saklanan veri acaba bizim üniversite veri tabanındaki veri gibi her şey regular mı?
+
+115
+00:16:02,459 --> 00:16:15,459
+Üniversite veri tabanına baktığımız zaman öğrenciler var, dersler var, derslerin sectionları var, departmanlar var, o var, o var. Hepsi çok düzenli yani. Tanımı çok kolay.
+
+116
+00:16:15,600 --> 00:16:20,679
+Yani gerçek hayatı çok güzel böyle kestik biçtik ve ihtiyacım olan şey de o yani.
+
+117
+00:16:21,100 --> 00:16:24,752
+Çok da böyle büyük bir uzama yapmadım yani çok büyük bir...
+
+118
+00:16:24,751 --> 00:16:32,751
+Bazı şeyleri bulamadım. İhtiyacımız var, bir üniversite kayıt veri tabanında öğrencilere ders alıyorlar, not alıyorlar.
+
+119
+00:16:32,751 --> 00:16:46,751
+Dersi şu departmandan aldı falan filan. Böyle yani. Ama şimdi büyük veri sistemlerinde, sosyal medya platformlarında, Facebook, Google'ın servisleri, web uygulamaları, orada bir linke basmamız falan.
+
+120
+00:16:46,751 --> 00:16:52,751
+Bunların hepsi ortaya bir veri çıkartıyor değil mi? Bunu çok edebiyatını yapmaya gerek yok.
+
+121
+00:16:52,751 --> 00:17:18,692
+tahmin ediyorsunuz yani. Bunlara göre, bu büyük veri üzerinde, bu verinin saklanması, bir kere bu veri nasıl bir veri? Böyle regular bir veri mi? Regular bir veri değil. Biraz önceki üniversite veri tabanında bahsettiğim gibi regular değil yani. Ne kadar böyle, çok dünya oluşturmaya çalışsam dahi, yine çoğu zaman regular değil yani.
+
+122
+00:17:19,188 --> 00:17:46,807
+Yani bir alışveriş sitesi düşünsek, işte cep telefonları satılıyor, tabletler satılıyor. Onların da kendi altında bir sürü kategorizasyonu var. Yani bir cep telefonu tablosu oluştursam, cep telefonunun Android'i var, onun özellikleri farklı, işte iPhone var, onun özellikleri farklı, tabletler de öyle. Yani o kadar varyant var ki, tek bir tablo, işte nitelikler, listelemek, bu çok böyle kolay değil yani. Çünkü veri regular değil yani.
+
+123
+00:17:47,251 --> 00:18:06,251
+Uygulamaya göre demek ki, bu şamanın belirlenmesi mümkün olmayabilir. Uygulamaya göre, ya bu tarz bir uygulama ise, ya tamamıyla unstructured veya semi-structured bir yapı olacak.
+
+124
+00:18:10,483 --> 00:18:31,483
+SQL sistemi klasik, bizim burada gördüğümüz derste mesela. Regular bir yapısı var. Şemamız belli. Gelen kayıtlar o şemaya uygun mu? Uygunsa ekliyoruz, çıkartıyoruz. Ve şema olunca, işte, sorgunun optimizasyonu çok daha zor ama çok daha kolay oluyor. Çünkü biliyorum neyin nerede olduğunu. Çok regular bir şey yani. Düzenli. Ona göre...
+
+125
+00:18:32,096 --> 00:18:34,096
+Her şey deterministik bir parça.
+
+126
+00:18:34,096 --> 00:18:36,096
+Yani tamam mı?
+
+127
+00:18:36,096 --> 00:18:43,096
+Ama şey olunca, semi-structured olunca biraz oldukça flexible bir ortam var.
+
+128
+00:18:43,443 --> 00:19:00,443
+Esnek bir ortam var. Motivasyon kelimelerinden bir tanesi bu. Verimiz regular değil, semisraktör. O yüzden SHAM'a yok veya yarı SHAM'a var. Biraz var SHAM'a bazen. Tamamıyla uç bir noktaya da gitmiyoruz.
+
+129
+00:19:09,172 --> 00:19:22,192
+Bine katlanmış yani. Binlerce, yüzlerce veri tabanı var yani. İşte burada bazılarının isimlerini göreceğiz. Yani bunlar da gerçek hayatta kullanılan, böyle meşhur platformlarda kullanılan veri tabanları.
+
+130
+00:19:24,031 --> 00:19:33,372
+Böyle bir veri tabanında veya böyle bir database distributed storage sistemden beklenen şey, yine high performance.
+
+131
+00:19:34,867 --> 00:19:37,168
+Yani yüksek performansla çalışması lazım.
+
+132
+00:19:38,188 --> 00:19:39,887
+Hızlı bir şekilde dönüş almam lazım.
+
+133
+00:19:41,148 --> 00:19:42,807
+Biraz gevşlettik ya sistemi.
+
+134
+00:19:43,428 --> 00:19:44,847
+Kompleksini azalttık ya.
+
+135
+00:19:45,208 --> 00:19:48,188
+O yüzden bu high performance anca böyle olabilir yani.
+
+136
+00:19:49,028 --> 00:19:50,148
+Ve available olması.
+
+137
+00:19:50,387 --> 00:19:51,708
+Ne demek available olması?
+
+138
+00:19:55,228 --> 00:19:55,948
+Availability.
+
+139
+00:19:57,307 --> 00:20:00,000
+Yani kelimeden biraz intikal et.
+
+140
+00:20:00,000 --> 00:20:08,000
+Sistem always up and running.
+
+141
+00:20:08,000 --> 00:20:12,000
+Sistemin up olması var, bir de running olması var.
+
+142
+00:20:12,000 --> 00:20:14,000
+Sistem çalışıyor ama hizmet vermiyor olabilir.
+
+143
+00:20:14,000 --> 00:20:16,000
+Çalışıyor, arkada bir sürü şeyler yapıyor.
+
+144
+00:20:16,000 --> 00:20:18,000
+Toparlamaya çalışıyor. Bazı şeyler dağılmış.
+
+145
+00:20:18,000 --> 00:20:20,000
+Hemen up and running olması.
+
+146
+00:20:20,000 --> 00:20:24,000
+Bu sistemin available olması demek.
+
+147
+00:20:24,915 --> 00:20:34,155
+Yani arka planda bazı, baş operasyonlar yapıyor olabilir, düzenlemeler yapıyor olabilir ama, sistem her zaman bir hizmet veriyor yani.
+
+148
+00:20:35,859 --> 00:20:46,299
+Hangi sosyal medya platformunda yine kullandığımız, artık burada kullandığımızın böyle arkada bir story sistem olduğunu düşünelim yani değil mi?
+
+149
+00:20:46,299 --> 00:20:54,539
+Yani hiçbir zaman veya çoğu zaman çok nadir yani, out of service, şu anda hizmet veremiyoruz gibi şeyler çok duyulmuyor yani.
+
+150
+00:20:56,019 --> 00:20:59,439
+İşte böyle bir letilden bunları anlayabileceğiz. Her zaman bir hizmet alıyoruz.
+
+151
+00:20:59,979 --> 00:21:00,219
+Peki,
+
+152
+00:21:02,064 --> 00:21:15,064
+Burada geçmiyor ama aldığımız sizler her zaman aynı kalitede mi? Aynı kalitede olmayabilir. Yani veri tam doğru olmayabilir. Tam konsistent veri olmayabilir yani. Evet, olmayabilir gerçekten.
+
+153
+00:21:15,064 --> 00:21:26,060
+Yani çünkü burada hani parasal değerler benim şu andaki mevcut param gibi böyle değerli bilgiler saklanmıyor yani. Onlara ilişmiyorum ki o zaman.
+
+154
+00:21:26,163 --> 00:21:42,163
+İşte benimle paylaşılan bir görüntüyü, videoyu, işte Facebook'ta paylaşılıyor veya bir uygulamalar. Onu görüyorum veya göremiyorum. Yani onu görüp görmemek böyle onu kastediyorum. Değerli, öyle bilgi değil yani.
+
+155
+00:21:42,163 --> 00:21:51,163
+Yani bunu hemen görmek var, 1 saniye sonra görmek var yani öyle çok hassas bir şey yok yani. İşte bundan ödün vererek, available.
+
+156
+00:21:51,571 --> 00:21:56,691
+olabiliyor. Bundan ödün vererek, available olabiliyor yani. Tam consistency.
+
+157
+00:21:56,691 --> 00:22:14,611
+Yine availability sağlayan şey, nasıl olabilir diye düşünsek, availability sağlayan şey, yani her zaman veriye benim, erişmeme imkansı doğru veya yanlış bir veriye erişeceğim. Buna imkan sağlayan şey, replication.
+
+158
+00:22:18,740 --> 00:22:38,419
+Veri birçok böyle o cluster içerisinde birçok düğme dağılmış. Birçok düğme dağılmış. Replike edilmiş. Tamam mı? Böylece bir düğüm çökerse ben o veriyi başka bir düğümden alabiliyorum. İşte bunun koordinasyonu lazım. İşte distributed database bu koordinasyonu yapıyor.
+
+159
+00:22:41,268 --> 00:22:50,868
+Demek ki buradaki kelimeler birbirlerini tamamlıyorlar yani. Birbirleriyle alakalı elbette. Böyle bağımsız değil. Yani o replikasyon sayesinde available oluyor.
+
+160
+00:22:51,668 --> 00:23:00,668
+Scalability'den zaten bir parça bahsettik. Yani ölçeklenmesi, yani bunu kullanan yüzlerce insan olduğu gibi binlerce milyonlarca insan da olabilir.
+
+161
+00:23:01,268 --> 00:23:08,868
+Evet. Bunun hepsinin aynı anda sağlanması farklı derecelerde.
+
+162
+00:23:09,140 --> 00:23:22,340
+sağlanması ortaya bir sürü veritabanı çıkarmış. Yani, işte kimisi bu noktada daha iyi, öteki o noktada daha iyi falan gibi böyle birçok gelpadi çok farklı olmuş yani.
+
+163
+00:23:22,340 --> 00:23:34,740
+Hani structured olmaya yakın olması, semi-structured, tamamıyla structured olması gibi, onların arasındaki o şey, madem böyle bir kapı açıldı, artık her boşluğu dolduruyorlar yani.
+
+164
+00:23:34,740 --> 00:23:37,140
+Tamam mı? O yüzden varyant çok fazla yani.
+
+165
+00:23:37,140 --> 00:23:59,140
+Şimdi, burada işte biraz önce bahsettiğimiz, NoSQL sistemlerinin tek uygulamaları, sosyal medya verisi, unstructured veya semi-structured, yani direkt text, medya mesela bunlar, işte web bağlantıları, kullanıcı profilleri,
+
+166
+00:23:59,700 --> 00:24:06,900
+Yani değil mi bunların hepsi? Saklanıyor, sorgulanıyor. Benim o profilime göre reklam geliyor.
+
+167
+00:24:06,900 --> 00:24:18,700
+İşte bir teklif geliyor, şey geliyor. Gene alışveriş siteleri, bunlar da gene stokları ona göre yapıyorlar yani.
+
+168
+00:24:18,932 --> 00:24:28,531
+Ne kadar çok bir şeye rağbet varsa, bir ürüne mesela, onun tahminini yapmak, ona göre stoklar tedarik ediliyor yani.
+
+169
+00:24:29,172 --> 00:24:36,971
+Yani çok piyasaya, ekonomiye çok baktığı için, son konularıcaya çok baktığı için bir de çok böyle kökler oluyor yani.
+
+170
+00:24:37,715 --> 00:24:47,816
+Böyle kendi içerisinde küçük bir dünyada iş dönmüyor artık. Dünyada döndüğü için, herkes ilgilendiren şey olduğu için, böyle çok popülaritesi yüksek oldu yani.
+
+171
+00:24:48,515 --> 00:24:56,895
+Esasında arka planda SQL sistemlerinin birçok modülü gevşetilerek yapıldı yani esasında.
+
+172
+00:24:58,076 --> 00:25:03,576
+Yoksa onları bir tarafa bıraktık, yeni bir sistem yaptık değil yani anlattıklarından yola çıkarak.
+
+173
+00:25:04,596 --> 00:25:13,995
+Evet, gene tweetler, postlar, gene ulaşımla ilgili birçok hareket var. Bunlar kaydediliyor, bunlarla ilgili sorgulama oluyor bir yerden bir yere giderken.
+
+174
+00:25:14,475 --> 00:25:20,316
+İşte en çok gidilen yerler mesela, bunların hepsi gene ortaya, motivasyon olmuş oluyor.
+
+175
+00:25:20,316 --> 00:25:29,096
+Evet, burada nolajikler veri tabanlarında bilinen veya bilinmesi gereken bu dersleri.
+
+176
+00:25:29,551 --> 00:25:55,192
+Mesela Bigtable, Google'ın NoSQL sistemi. Bu nasıl bir sistem? Şöyle bir kategorizasyonumuz var. Şurada ilk olarak onu söyleyelim. NoSQL sistemlerin şeklinde kategori ediyoruz. Document Base, NoSQL Key Value Storelar, White Column veya Column Base.
+
+177
+00:25:55,923 --> 00:26:07,824
+ve Graph-based olmak üzere. Ben bu derste, document-based'den ve key-value'lerden bahsedeceğim. Diğer ikisiyle ilgili sistemleri de siz biraz, onlara motivasyon olmuş oluyor. Diğer onlara da siz bakarsınız.
+
+178
+00:26:07,824 --> 00:26:15,023
+Oradaki geçen teknolojilere, oradaki isimlere de bakarsınız. Genel olarak hepsinin üzerinden geçeceğim zaten de.
+
+179
+00:26:16,435 --> 00:26:26,975
+İşte, document store, t-value store, columnar, wide column storelar ve graph storelar, graph teyze. Bunların hibritleri de var.
+
+180
+00:26:27,412 --> 00:26:33,412
+Daha geçmiş tarihçileri, XAML database'ler var. Bunlar 2005'lerde çok böyle vaatleri oldu.
+
+181
+00:26:33,412 --> 00:26:39,611
+İşte ilişkisel modelin ilk böyle ondan ayrılmanın ilk şeyleri oldu, XAML database'ler.
+
+182
+00:26:39,611 --> 00:26:47,412
+OVC database'ler de öyle ama 2005'ler onlardan sonra bunlardan hiçbir şey kalmadı yani. Şu anda popülerliği yok.
+
+183
+00:26:47,412 --> 00:26:55,412
+XAML JSON ikisi beraber elbette kullanılıyor böyle semi-structured data'nın sorgulanmasında.
+
+184
+00:26:55,412 --> 00:27:03,892
+JSON, JavaScript, Object Notation, ayrı bildiğimiz web servislerde de haberleşmeleri de çok kullanılan bir yapı.
+
+185
+00:27:03,892 --> 00:27:19,871
+Genel olarak JSON nedir desek? Semi-structured data language, yani yarı yapısal verinin saklanması ve sorgulanması için bir model, bir dil diyebiliriz. Bir sorgulama da yapabiliyoruz.
+
+186
+00:27:20,723 --> 00:27:29,723
+Veritabanlarında da bu büyük veri sistemlerinde yine yaygın olarak kullanılan bir, yarı yapısal veri için kullanılan bir model olmuş oluyor elbette.
+
+187
+00:27:29,723 --> 00:27:37,723
+Evet, demek ki burada mesela, biraz önce öğrendik ki, Columnar Store, Key Veri, Document Store gibi mesela.
+
+188
+00:27:37,723 --> 00:27:43,723
+İşte Bigtable mesela Google'ın kendi kapalı yani Open Source değil, NoSQL sistemi.
+
+189
+00:27:44,435 --> 00:27:50,935
+Kalınırmış mesela. Yine Amazon servislerinin kullandığı DynamoDB var. O KeyValue Store.
+
+190
+00:27:50,935 --> 00:27:52,935
+KeyValue Store.
+
+191
+00:27:52,935 --> 00:28:06,435
+Bunun Open Source versiyonu genelde, işte Apache'nin duymuşsunuzdur. HBase mesela. Apache'nin çok böyle, o organizasyonun birçok böyle Open Source açılımları var.
+
+192
+00:28:06,528 --> 00:28:18,528
+İşte buradaki, Dynamo'nun da open source açılımı, gene Apache'nin, Woldermode diye bir şey. Burada onunla ilgili güzel bir yaklaşım var.
+
+193
+00:28:18,528 --> 00:28:31,500
+Programın çözümüyle ilgili, onu bahsedeceğim, Key Value Datastore'larda. Gene Facebook'un kullandığı Cassandra. Bu, White column bir parça, biraz da Key Value Store, yani biraz karma yani.
+
+194
+00:28:31,731 --> 00:28:51,731
+Gene Graph, MongoDB, Document Store. İlk olarak ondan başlayacağız. Document Store. Bunlar Open Source bildim kadarıyla, emin değilim. Neyse, Couchbase var, MongoDB var. Gene Graph'larda meşhur olan Neo4j var. GraphBase de var.
+
+195
+00:28:52,016 --> 00:29:01,416
+OrientDB'de demek ki böyle AsterixDB var, yine duyduğum. Burada geçmiyor ama. Bunlar ilk hakla gelenler, çok meşhur olanlar yani.
+
+196
+00:29:02,416 --> 00:29:06,716
+Ve karma olan bir model OrientDB.
+
+197
+00:29:08,115 --> 00:29:14,216
+Evet, o zaman bunlarla ilgili mesela, Dokument Store'la ilgili bir örnek verin diye sorarsak.
+
+198
+00:29:14,528 --> 00:29:23,528
+Aklımıza bunlar gelsin yani mesela. Tamam mı? Yani çünkü bu dersi aldık madem. Bu dersinde günümüzdeki böyle distributed database noktasındaki bir şeyi ise,
+
+199
+00:29:24,128 --> 00:29:31,528
+Bunlarla ilgili terminolojik olarak isim söylememiz lazım. Nasıl PCSQR ilişkisel modelde çok meşhur mesela değil mi?
+
+200
+00:29:31,928 --> 00:29:37,548
+Onun gibi bunları da no SQL veri tabanlarında bu isimleri bilelim. Yani.
+
+201
+00:29:40,723 --> 00:30:01,943
+Şimdi bunların tipik karakteristikleri, distribütör sistemlerle. Bunları da artık bir parça anladık değil mi? Scalability. Scalability deyince ne anlıyoruz? Scalability. [öğrenci]. [öğrenci] bulamadık ya. [kişisel bilgi] [öğrenci]. Scalability ne?
+
+202
+00:30:06,483 --> 00:30:07,644
+Scale, evet.
+
+203
+00:30:09,003 --> 00:30:18,223
+Evet, yani artımlı olması, ihtiyaca göre makine, ihtiyaca göre donanım, ihtiyaca göre yazılım, tamam mı?
+
+204
+00:30:18,223 --> 00:30:19,324
+Scalability olması.
+
+205
+00:30:19,963 --> 00:30:23,784
+Ve bunun high performance data access olması.
+
+206
+00:30:24,243 --> 00:30:50,104
+Yine işte birbire high performance olması. Burada aklımıza hızlı bir şekilde olması. Burada aklımıza hemen indeksler gelmesi lazım. High performance anca indekslerle olabilir yani. Başka türlü olması mümkün değil. Bir de high performance olması anca load balance da olabilir. Yani yükün dağılması. Yani clusterdaki makinelere dağıtarak. Yani söylediğim şeyler oldukça intuitive şeyler. Ne demek intuitive?
+
+207
+00:30:51,284 --> 00:30:53,284
+Yani böyle çok kamrıcık şeyler söylemiyorum.
+
+208
+00:30:53,744 --> 00:31:07,223
+Sevgisel, ya burada 10 tane makine varsa, bunun high performance olması için, tamam, indeks biraz teknik kelime ama, burada benim bu yükü dağıtmam lazım makinelere.
+
+209
+00:31:07,804 --> 00:31:11,144
+Load balance yapmam lazım, load balance, bir ayağır yapmam lazım.
+
+210
+00:31:11,524 --> 00:31:15,644
+Yükü tek bir makinede toplarsam, o zaman burası ne olur? Single load failure.
+
+211
+00:31:16,276 --> 00:31:29,276
+Single Point of Failure olur. Yani burada arıza olunca bütün sistem çekiyor. Oysa ben bunu dağıtmam lazım. Replicate etmem lazım. İşte Scalable, High Performance, yani hepsi birbirini böyle çağrıştıran şeyler esasında. Tamam mı?
+
+212
+00:31:30,516 --> 00:31:43,276
+İşte böylece demek ki Availability ile Replication oluyor. Replication neyi doğuruyor? Replication güzel bir şey. Replication olmayan bir NoSQL tabanı yok yani. Replication.
+
+213
+00:31:43,763 --> 00:32:01,463
+Replication'ın sebebi availability, tamam mı? Ve high performance. Replika ettim. O zaman buradaki veriye yakında tekrar var başka makinede. Ben sorguyu buradan çıkardım. Elbette yakındaki makineden alacağım yani. Kısır bir şekilde high performance'a hizmet ediyor.
+
+214
+00:32:02,003 --> 00:32:06,483
+Availability'yi hizmet ediyor. Bu bozulursa başka makineden al, available oldu verim.
+
+215
+00:32:06,963 --> 00:32:13,483
+Hep söylediğim şeyler ne? Bakın yani intuitive şeyler. Başka türlü nasıl olacak? Başka türlü olamaz yani.
+
+216
+00:32:14,363 --> 00:32:18,963
+Peki replikasyonun ortaya çıkardığı problem ne? Bunu düşünelim.
+
+217
+00:32:25,619 --> 00:32:52,819
+Evet, evet. Evet, aynen, çok güzel. Bak, yani, her kelimeyi böyle, çünkü çok kelime var, tabii yani çok kufadan sallam olmaması lazım ama, yani biraz okudukça, terminoloji diye hakim olmadan kastettiğim bu yani. Biraz okudukça yerine oturuyor bazı şeyler. Ama bir çıkarım yapmak lazım. İşte replikasından sonra aklınıza gelmesi gereken şey, write. Update'ler.
+
+218
+00:32:53,248 --> 00:33:21,248
+Yani burada malzeme veri tekrar ediyor, tamam yer kaplıyor falan da o ikinci aşamada bir problem. Yani storage çok biraz ucuz bir şey yani. Yani disk olsun, manyetik ortamlar çok malzemesi ucuz. Tamam SSD'ler biraz daha pahalı ama nihayetinde bundan daha önemli olan writes, update'ler için yeniden yeni veriler geliyor yani. Ben bunları replika edeceğim. Replikada 10 tane cluster da makine olsa 10 yere bunu böyle şipşak...
+
+219
+00:33:21,248 --> 00:33:42,008
+bir anda sihirli değnek gibi aynı anda hepsi güncellenemez yani. Değil mi? İşte distributed database'lerdeki en karmaşık noktalardan bir tanesi. Burada birçok protokol var. Master, Master, Master, Slave mesela bunların alt başlıkları öyle birçok yani bir protokol düzenlemeye göre yapmam lazım. Peki çıktı ne?
+
+220
+00:33:43,251 --> 00:33:50,751
+İlişkisel sistemlerdeki SQL sistemlerindeki gibi, PCSQR'da, Oracle'da mesela geleneksel sistemlerde yanlış yok.
+
+221
+00:33:50,971 --> 00:33:58,071
+Hiçbir zaman, esküman okumulmada, bir sorguda, çünkü hiçbir zaman yanlış bir şey göremeyiz yani.
+
+222
+00:33:59,091 --> 00:34:04,051
+Orada da bazı gevşeklikler var, izolasyon seviyeleri, asit kriterliğinin gevşetilmesi var.
+
+223
+00:34:04,051 --> 00:34:10,572
+Tamam mı? Yok değil yani. Ama istersek, %100'e yakın doğru sistemler var yani.
+
+224
+00:34:10,943 --> 00:34:36,543
+Ama burada, burada öyle değil. Yani consistent beklemiyoruz yani. Öyle bir vaat de yok zaten. Kelime ne burada? Eventually consistent. Yani şu anda consistent olmayabilirim ama, yani bu günlerce sürmeyecek yani. Zaten kullandığım veri semistractifleri, onun da ne olduğunu söyledik yani. Tweet, sosyal medya, weblinkler işte falan o gibi şeyler yani. Gayet makul yani.
+
+225
+00:34:37,204 --> 00:34:44,524
+Niye bekleyelim ki bu sistemden bu kadar milyonlar insanın verisinin aynı anda doğru olmasını kimse bekleme ihtiyaç çok yani.
+
+226
+00:34:46,164 --> 00:35:06,384
+Evet. İşte burada eventually consistency. Bunun da şeyi, CAP dedikleri bir teorem var. CAP teoremi. Consistency Availability ve Partition Tolerance denilen. Bu üç tane şeyin aynı anda yapılmasının mümkün olmayacağına dair bir teorem. Birazdan geçecek zaten.
+
+227
+00:35:08,563 --> 00:35:19,443
+Evet, replikasyonun ortaya çıkardığı problemi de böyle şu modellerle çözüyoruz. Bunlara da merak edip bakabilirsiniz. Yani niye karmaşıklık artıyor falan gibi.
+
+228
+00:35:20,083 --> 00:35:29,263
+Diğer geçen önemli bir kelime, sharding. Tamam bu da böyle dikkat çeken bir kelime. Hem telaffuzu da dikkat çekiyor. Sharding. Nedir bu sharding?
+
+229
+00:35:35,027 --> 00:35:39,087
+Sharding of files, dosyaların shard edilmesi.
+
+230
+00:35:40,347 --> 00:35:41,307
+Kelime manası ne?
+
+231
+00:35:43,387 --> 00:35:48,527
+Kelime manası ben de bilmiyorum da, bildiğim horizontal partitioning.
+
+232
+00:35:49,047 --> 00:35:51,407
+Yani nasıl horizontal scalability?
+
+233
+00:35:52,268 --> 00:35:54,307
+Burada da horizontal partitioning.
+
+234
+00:35:54,612 --> 00:36:13,092
+Gerçi bütün sistemler horizontal partition, yani biraz, tabii, bütün varyantlar olduğu için, genel manada bunlar, yani genel manada. Genel manada sharding horizontal partitioning, yani bir dosyayı böyle belli aralıklarla,
+
+235
+00:36:13,523 --> 00:36:24,923
+ya range esaslı ya da hash esaslı. Ya belli aralıklarla ya da bir hash fonksiyonuyla tamam mı? İki tarzda olabilir. Bunları, bu dosyayı parçalıyorum.
+
+236
+00:36:24,923 --> 00:36:38,123
+cluster'ı hayal ettik değil mi? Biraz önce cluster'ı tanımladık. O cluster'da makineler var. O dosya artık böyle Bigtable ya, Google'ın Bigtable'ı vardı. Oradaki o dosyayı tek bir yerde saklanır mı o dosya?
+
+237
+00:36:39,284 --> 00:36:54,344
+O dosyanın başına bir şey gelirse bütün veri gitti. Yani hiç akıl kârı değil, hiç available değil yani. O dosyayı ne yapıyoruz? Hem replike ediyoruz hem de parçalarını dağıtarak replike ediyoruz. Yani ortada çok karıştı yani.
+
+238
+00:36:54,996 --> 00:37:20,436
+O dosya, 1TB, 1CB, yani teknik konuşmaya gerek yok. O dosya kocaman, o dosyayı parçalara ayırıyorum. Bir parçasını bu makineye, bir parçasını başka makineye, başka makineye böyle dağıttım. Yani yüzlerce, binlerce makineye bıraktım. Tamam mı? Milyonlarca kelimesini belki, belki o da vardır yani. Binlerce makineye dağıttım. Tamam mı? Ve onları replike ettim. Kaç kez replike ettim? En az 3.
+
+239
+00:37:21,268 --> 00:37:40,028
+Tamam mı? AgeBase'de default 3 bildim kadarıyla. Ama bu ne? 3 belki, 10. O availability'den beklenen neyse yani o kadar belki birçok makineye dağıtıyor yani. Tamam mı? Yani arkadaki manzara böyle yani. Biraz hayal edebildiysek. Tamam mı?
+
+240
+00:37:42,291 --> 00:37:56,112
+O zaman demek ki, nasıl horizontal scalability, yani süpercomputer değil, aynı şekilde horizontal partitioning, yani vertical değil. Bunun da alternatifleri vertical yani.
+
+241
+00:37:59,612 --> 00:38:09,552
+Modelleme data, buradaki bunlar biraz daha distributed database, yani fiziksel olarak bunun gerçeklenmesiyle ilgili terminoloji.
+
+242
+00:38:10,420 --> 00:38:16,420
+Fiziksel olarak gerçeklenmesine distributed database bunlar, işte cluster, makinelerde açacağız. Bunlar akla geliyor.
+
+243
+00:38:16,820 --> 00:38:30,720
+Bir de tasarım noktasında, veri modelleme noktasında aklımıza gelmesi gereken kelimeler, şema, semi-structured, buradaki kullanılan modeller, işte sorgular nasıl olacak bunlar.
+
+244
+00:38:30,940 --> 00:38:33,659
+Burada da bunlar, less powerful query language.
+
+245
+00:38:35,027 --> 00:38:42,027
+ve shema not required veya shemalus veya yarı shema gibi şeyler bunlar.
+
+246
+00:38:42,027 --> 00:38:57,803
+Bir de gene bu versioning yani replikasyonun bir şekilde ortaya çıkan yani birçok makineden gelen o replikalardan hangi versiyonu alacağız?
+
+247
+00:38:57,844 --> 00:39:10,064
+Timestamp'i en yakın olanı alacağız. Veya bunu seçmektense o versiyonları uygulamaya göndereceğim. Uygulama artık neyi gerektiriyorsa o versiyonlardan bir tanesini seçecek.
+
+248
+00:39:10,624 --> 00:39:24,463
+Yani versioning de hem birçok veri tabanında, document store'da, kasandırında falan hepsinde geçiyor. Yani yine tipik olarak hepsinde geçen şeyler. Bunların hepsinin kendine göre protokolü var, düzenlemesi var yani.
+
+249
+00:39:26,420 --> 00:39:33,000
+Evet, bu kategoriyi yaptık. İşte bahsettiğim CAP tören böyle. Burada yazan şeyler.
+
+250
+00:39:34,612 --> 00:39:41,711
+Şimdi ki hep teorem şöyle, consistency, availability, partition, tolerance. Tamam mı?
+
+251
+00:39:41,711 --> 00:39:48,452
+Consistency, SQL sistemlerindeki consistency kelimesinden biraz daha farklı bir tanımı var burada.
+
+252
+00:39:49,012 --> 00:39:57,412
+SQL sistemlerindeki consistency yapılan bir işlemin neticesinde veritabanı consistent, tutarlı kalması.
+
+253
+00:39:57,412 --> 00:40:00,711
+Mesela bir işlemle kastettiğimiz transaction esasında.
+
+254
+00:40:01,235 --> 00:40:08,635
+transaction bir program. Yani birden çok SQL işevi içerebilir. Birden çok update işevi içerebilir. Bunu kastediyoruz.
+
+255
+00:40:09,152 --> 00:40:14,311
+Yani bir write var işin içinde. Zaten write yoksa sistem storage, bir arşiv haline gelir.
+
+256
+00:40:14,311 --> 00:40:20,791
+Mesela problemi karmaşıklaştıran yazmalar yani. Sistem de online bir sistem yani. Sürekli veri geliyor falan yani.
+
+257
+00:40:20,791 --> 00:40:32,192
+O yüzden burada write'larla beraber bir transaction, bir update var. Yani mesela bir para transferi düşünelim, bir hesaptan başka bir hesaba.
+
+258
+00:40:32,371 --> 00:40:59,511
+Burada iki tane update var. Bir hesabı azaltacağım, bir hesabı arttıracağım. Bunun bir bütünlük içerisinde olması, yani toplamdaki veri miktarı, toplam o banka şubesindeki veri miktarının aynı şubedeyse veri transferi, toplamda o paranın bir yere uçmaması lazım değil mi? Yani o 100 lirayı ben bir yerden bir yere transfer ettim, toplamda A'nın ve B'nin toplamı aynı olmasa. İşte konsistensiyle bu kastediliyor.
+
+259
+00:41:00,371 --> 00:41:05,371
+O uygulamanın, o küçük dünyanın gerektirdiği bir kısıt yani.
+
+260
+00:41:07,051 --> 00:41:17,271
+Diğer taraftan, ilişkisel olmayan sistemlerden konsistinize kastedilen, belki bu da var ama, bu da var.
+
+261
+00:41:17,651 --> 00:41:22,791
+Daha çok replikasyonların, replikaların tutarlılığı kastediliyor.
+
+262
+00:41:23,476 --> 00:41:28,115
+Ama arada böyle bir ayrım var. Şu küçük nokta o yazıyor zannedersem.
+
+263
+00:41:32,692 --> 00:41:51,372
+Evet, siz okursunuz. Küçük olunca daha dikkat çekiyor. Yani karşıdan böyle büyüklere bakmıyorsunuz, küçük ya böyle biraz daha dikkat edip okuyabiliyorsunuz. O yüzden küçük yazmak iyi oluyor. Daha da küçüksem ama okuyamazsınız. O yüzden bu kadar küçük. Şimdi ben de okuyamıyorum. Evet. Merak ettim bak.
+
+264
+00:42:11,635 --> 00:42:15,996
+Asit'e karşı da hangi kelime haklına gelmesi lazım? Cabir?
+
+265
+00:42:17,936 --> 00:42:22,096
+Base. Base. Yani eventually consistent. Tamam mı?
+
+266
+00:42:22,896 --> 00:42:28,696
+Eventually consistent. İşte beklentim bu yani. Ve soruyorum ya, bu dersteki beklentim o yani.
+
+267
+00:42:29,756 --> 00:42:34,576
+Sordum o sorunu, cevabını şey yapmak yani. Yoksa bunların için ayrı bir ders yani.
+
+268
+00:42:34,635 --> 00:42:37,396
+Ayrı bir konu her biri kendine göre bir kitap.
+
+269
+00:43:54,324 --> 00:43:54,824
+Evet.
+
+270
+00:43:56,583 --> 00:44:03,983
+Bu asit de it refers to the fact that a transaction will not violate the integrity constraint specified on the database şema.
+
+271
+00:44:04,423 --> 00:44:13,083
+Yani o küçük dünyanın gerektirdiği consistency kuralını, biraz önce para transferi dedim ya, onu ihlal etmeyecek yani.
+
+272
+00:44:15,219 --> 00:44:23,519
+However, if you consider that the consistency of the replicated copy is a specified as a constraint, then two uses of the term consistency will be related.
+
+273
+00:44:23,719 --> 00:44:29,299
+Yani consistency'yi ben öyle tanımlasam, biraz önceki gibi, o zaman öyle olacak yani.
+
+274
+00:44:30,099 --> 00:44:30,219
+Evet.
+
+275
+00:44:32,119 --> 00:44:33,259
+Tekrar bir ütelim.
+
+276
+00:44:35,443 --> 00:45:02,363
+İşte CAP teorem diyor ki, şu ikinci madde arkadaşlar, consistency, availability'yi anladık, söylemiştik. Partition tolerance, bu cluster'da böyle bir tane bir grup makina, eğer devre dışı olursa, onlar kendi aralarında anlaşabiliyorlarsa anlatsınlar. Hizmet vermeye devam ediyorlar. Yani birbirlere muhtaç değiller yani. Tamam mı?
+
+277
+00:45:02,963 --> 00:45:14,963
+O makine, diğer makinelere muhtaç değil. Sadece koordine oluyorlar, beraber hareket ediyorlar. Ama bir tanesi devre dışı olursa, yine orada bir hizmeti var.
+
+278
+00:45:15,987 --> 00:45:23,668
+Yani availability'ye bir parçaya yakın, ayrı bir isim takmalarını tam şey yapamıyorum.
+
+279
+00:45:24,108 --> 00:45:28,427
+İşte cluster, distributed olmasından da availability tek başına daha jenerik bir isim yani.
+
+280
+00:45:28,507 --> 00:45:32,967
+Partition tolerance biraz daha distributed, database'a bakan, cluster'a bakan bir kelime yani.
+
+281
+00:45:33,447 --> 00:45:36,148
+Bilimlerini tamamlıyorlar ama consistency biraz daha farklı yani.
+
+282
+00:45:37,148 --> 00:45:42,228
+İşte burada deniyor ki, teori şu, bunun da teori olduğuna göre bir ispatı var olsa gerek.
+
+283
+00:45:43,987 --> 00:46:10,347
+Biliriz. Veya şu an için belki gerek yok. Deniyor ki, burada en fazla iki tanesini sağlayabilirim aynı anda. Üçünü birden sağlamam mümkün değil. Yani boşuna uğraşmayın yani. Öyle bir derdiniz varsa, öyle bir hedefiniz varsa, teori ispatlanmış olması gerekiyor. Hiçbir zaman yani böyle distributed bir sistemde hem mevcut donanım şeylerine göre,
+
+284
+00:46:11,315 --> 00:46:23,076
+Belki, teori onun için de geçerli olabilir. Yani hem doğru olacak, hem böyle partition tolerance olacak, hem de available olacak her zaman. Bu çok mümkün değil.
+
+285
+00:46:23,076 --> 00:46:32,436
+Burada iki tane alt başlık var. SQL sistemleri consistent fakat available ve partition tolerance değiller.
+
+286
+00:46:33,427 --> 00:46:40,507
+NoSQL sistemleri konsistent değil, ama her zaman available ve partition tolerans sistemler.
+
+287
+00:46:41,347 --> 00:46:52,947
+Evet. Bu noktada şunu sorabiliriz, aklımıza gelen. Acaba SQL sistemlerinin böyle distributed varyantları yok mu?
+
+288
+00:46:55,087 --> 00:47:01,067
+Yani SQL karmaşıklığını, SQL'in doğruluk vaadini muhafaza edecek.
+
+289
+00:47:01,427 --> 00:47:12,427
+Bir akım, bir line of research, SQL sistemlerinin vaatleri belli, hedefi belli, motivasyonu belli. Tamam, tam doğru olacak.
+
+290
+00:47:12,427 --> 00:47:18,427
+Ve kompleks SQL'ler olacak. Ve tamam, hızlı çalışacak. Başka çalışmıyor yani.
+
+291
+00:47:18,427 --> 00:47:27,339
+NoSQL sistemleri Big Data. Bunun ikisi arasında hem hızlı çalışacak hem distribütüde de zorlayacağız yani.
+
+292
+00:47:27,507 --> 00:47:54,927
+Böyle bir çalışma sistem grubu var mı? Var. Onlar da NewSQL. Yani SQL var, SQL sistemleri yine ama orada bir açılım yapıyoruz. Bunlarla ilgili gene liste var. Yani buraya dahil edilmiyoruz ama en az 3-4-5 tane benim bildiğim böyle NewSQL sistemleri adı altında bir çalışma grup var. Ona da bakabilirsiniz isterseniz.
+
+293
+00:47:55,699 --> 00:47:59,699
+Şimdi o zaman demek ki
+
+294
+00:47:59,699 --> 00:48:05,699
+Weaker consistency level is often acceptable in NoSQL distributed data store
+
+295
+00:48:05,699 --> 00:48:09,699
+Data store, weaker consistency
+
+296
+00:48:09,699 --> 00:48:13,699
+Guaranteing availability and partition tolerance more important
+
+297
+00:48:13,699 --> 00:48:15,699
+Eventually consistency often adapted
+
+298
+00:48:15,699 --> 00:48:19,692
+Adapted, yani kabul ediliyor, benimseniyor manasında yani
+
+299
+00:48:21,715 --> 00:48:39,115
+Evet, şimdi gelelim birkaç tane, birkaç tane, şey, NoiseCore sistemiyle ilgili, geçen her birinin kendine göre bir terminal önerisi var. Mesela, Document Store, Document Based NoiseCore Store'dan, burada, meşhur olan MongoDB.
+
+300
+00:48:39,115 --> 00:48:44,096
+Hatta DB Ranking sitesinde ilk 10'da falan yani, Cassandra, MongoDB var.
+
+301
+00:48:44,096 --> 00:49:07,596
+SQL sistemi olarak. Diğerleri gene hep SQL sistemleri, işte 5. 6. sırada falan zannedersem. Tabii yani illa o bir ölçü olmayabiliyor ama bir fikir veriyor nihafetine. Yani bağlayıcı değil. Çünkü burada önemli olan hangi uygulamaya göre evvelitabanın seçileceği yani. Yoksa o zaman ilk sırada olan herkes Oracle'ı kullanır yani. Ama o bütün uygulamalara bakmıyor yani.
+
+302
+00:49:08,019 --> 00:49:33,280
+Bütün uygulamalar değil. Orada bir takım benchmark'lar var. Bazı böyle ölçüt kriterleri var. Ona göre listelenmiş. Yani böyle ranking siteleri var yani. Biraz bu noktada uzmanlaşmak istiyorsanız, merak ediyorsanız, en azından terminoloji, teknoloji veya işte genel kültür makamında bakarsınız. Öyle ranking siteleri var. İşte ilk sırada Oracle var. İşte ilk onda MongoDB falan geçiyor. Gene Cassandra falan da var.
+
+303
+00:49:33,811 --> 00:49:43,652
+Document Store'larda Collection kelimesi var. Bu Collection, tabloya karşılık geliyor. Bizim veri tabanı tablosu, ilişkisel model tablo.
+
+304
+00:49:44,652 --> 00:49:52,211
+Onun içerisindeki, tablomun içerisindeki rowlar, satınlar ise, Dokümante karşılık geliyor. Tamam mı?
+
+305
+00:49:52,211 --> 00:49:58,371
+Yani, bunu söylerken, yüzde yüzde doğru, yani kabaca, kabaca. Çünkü,
+
+306
+00:50:00,000 --> 00:50:03,280
+Bir şeyi eşleştirmem lazım ki havada bir şey canlansın yani.
+
+307
+00:50:03,900 --> 00:50:05,880
+Bambaşka bir şeyden bahsetmiyoruz yani.
+
+308
+00:50:06,000 --> 00:50:09,460
+Memlük olan bir şeyi eşleştirmek gerekiyorsa illa bunu söyleyebiliriz.
+
+309
+00:50:09,460 --> 00:50:19,219
+Collection'lar birbirine yakın olan, hani table'da aynı şemaya sahip olan row'lar table oluşturdular ya.
+
+310
+00:50:19,635 --> 00:50:32,436
+Ama aynı. Ama burada doküman birbirine benzer, similar dokümanlar. Birbirine benzer dokümanlar, yani şeması, 3HR, 5HR'e benzer olanlar, bir grup oluşturdular, collection'da.
+
+311
+00:50:33,635 --> 00:50:34,635
+Evet.
+
+312
+00:50:36,036 --> 00:50:40,635
+Bunlar genelde böyle JSON veya XML
+
+313
+00:50:40,800 --> 00:50:53,559
+modeliyle, eczamel diliyle diyelim, o semi-structured formatlarıyla saklanıyorlar ve bunlarla şekillendirilebiliyorlar.
+
+314
+00:50:54,380 --> 00:51:04,759
+Buradaki şeyler, self-describing, zaten JSON'ın dokümanına baktığınız zaman, bir verbos, değil mi? Verbos ne demek?
+
+315
+00:51:06,099 --> 00:51:21,059
+Yani açıp bakabilirim yani, text, böyle. O yüzden biraz fazla yer kaplıyor. Bunun gerçekten sistemde kullanılması için, bunun bazı kompakt versiyonları var. B, son gibi mesela, B, son.
+
+316
+00:51:21,556 --> 00:51:34,496
+Binary formu. O daha kompakt. Yani veritaban sistemlerinde, yani PGSK'daki hiçbir zaman dokümanı, oradaki dizilinlerin içerisindeki dokümanı açıp bakamayız. Hepsi binary formda yani.
+
+317
+00:51:34,496 --> 00:51:46,436
+Gerçek bir sistemde kullanılması için bunların binary formda olması lazım. Çok daha kompakt ve hızlı proses edilebilmesi lazım. Text dosyaları çok kolay, çok yer kaplıyor yani.
+
+318
+00:51:46,963 --> 00:51:54,164
+Çünkü orada bir kodlama var. ASCII koduna göre orada kodluyoruz yani. Binary'de byte dizisi var yani. Çok az yer kaplıyor.
+
+319
+00:51:56,164 --> 00:52:03,244
+O zaman bunların böyle, işte JSON, Bison gibi formatlarda bunları saklayabiliyoruz.
+
+320
+00:52:03,704 --> 00:52:11,324
+Individual document stored in a collection. Buradaki böyle, işte mesela bir collection oluşturdum. Mesela project.
+
+321
+00:52:12,275 --> 00:52:20,536
+Kitabın veritabanı olan Company veritabanında proje var, employee var, normalizasyon konusunda da.
+
+322
+00:52:22,195 --> 00:52:45,056
+Hatırlarsınız. Burada mesela yapılan şey bir collection oluşturmak. Bu collection'ın da bir takım kısıtlarla yani cap kelimesini kullanmışlar. Yani bu şu kadarlık bir yer kaplasın ve 500 tane doküman içerebilsin. Yani sanki bir tablo en fazla 500 satır içeriyormuş gibi. Onu eşleştirebiliriz. Ama her bir dokümanın bir kısıtı yok yani.
+
+323
+00:52:45,460 --> 00:52:50,139
+istediği şemada olabilir. Ama bunlar mana itibariyle birbirine benzerler.
+
+324
+00:52:50,559 --> 00:52:58,460
+Projek makamında dokümanlar bunlar. Ama bir projenin özellikleri, başka projenin özellikleri farklı olabilir.
+
+325
+00:52:58,719 --> 00:53:02,440
+Yani şema çok böyle esnek. Tamam mı?
+
+326
+00:53:03,879 --> 00:53:11,480
+O matchingi hayal edebildiniz değil mi? Tablo, tablonun row satırları, collection'lar, collection'in dokümanları gibi.
+
+327
+00:53:14,835 --> 00:53:17,935
+Her bir collection'daki dokümanın böyle bir ID'si var.
+
+328
+00:53:20,155 --> 00:53:21,415
+Burada collection, işte.
+
+329
+00:53:21,871 --> 00:53:37,251
+Veritabanı kurup şöyle bir komutla bunu oluşturabilirsin. Eğer bir clusterımız varsa, burada genelde tabii bizim bir makine clusterımız olmuyor ama hani çoğu zamanda ücretli veya deneme şeyi olabiliyor, belli bir süre ücretsiz olabiliyor.
+
+330
+00:53:37,251 --> 00:53:49,871
+Bir web servis üzerinden bu clusterı allocate edebiliriz. O clusterı da bir collection üretebiliriz, onu populate edebiliriz. Yani ortamında böyle bir...
+
+331
+00:53:49,871 --> 00:53:53,871
+veritabanı, komutu çalıştırabiliriz.
+
+332
+00:53:55,871 --> 00:53:59,871
+Mesela bununla ilgili bir çalışma yapabilirsiniz.
+
+333
+00:53:59,871 --> 00:54:07,871
+Ücreti de ne kadar bilmiyorum ama ayrı bir laboratuvar çalışması olabilir.
+
+334
+00:54:10,871 --> 00:54:12,871
+Ecolination, DAZNATL, SHEMA
+
+335
+00:54:13,076 --> 00:54:17,956
+Structure of data fields in documents chosen based on how documents will be accessed.
+
+336
+00:54:20,036 --> 00:54:24,115
+Yani burada doküman içerisinde bazı nitelikler var gene.
+
+337
+00:54:25,176 --> 00:54:30,115
+Her doküman için aynı olmak zorunda değil ama doküman içerisinde niteliklerin erişimine göre.
+
+338
+00:54:30,115 --> 00:54:36,476
+Orada bir primary key tanımlayabiliriz. Ben tanımlamıyorsam sistem otomatik olarak bunu tanımlıyor.
+
+339
+00:54:36,884 --> 00:54:45,043
+Şuradaki ID üzerine, object ID üzerine. Object ID de genelde timestamp içeriyor.
+
+340
+00:54:45,440 --> 00:55:12,400
+versioning, versiyonlama içeriyor gibi burada şeyler var. Şimdi buradaki dokümanların içerisindeki o semi-structured data nasıl olacak? Burada bir takım beklentilere göre farklı tasarımlar olabilir. Mesela bir burada gördüğümüz o proje dokümanı görüyoruz bakın. Bir proje dokümanı JSON formatında, tekst olarak tabii.
+
+341
+00:55:13,108 --> 00:55:38,388
+JSON olsa göremeyiz. JSON dokümanında bir tane P1 IDC ile bir proje dokümanı var. Bu dokümanın içerisinde bir de workers array var. Böyle JSON'da nested bir şekilde bir array tanımlayabiliyorum. Şu array manasında. Bu array'in içerisinde de başka itemler var.
+
+342
+00:55:41,012 --> 00:55:57,412
+Şimdi bu esasında bir doküman yani. Böyle böyle dokümanlarla proje koleksiyonu oluşacak. Bu koleksiyonda kısıtımızda 500 tane proje var dedik yukarıda ama 500 milyon tane de olabilir yani.
+
+343
+00:55:57,412 --> 00:56:01,732
+Şimdi böyle bir tasarım yapabiliriz.
+
+344
+00:56:02,099 --> 00:56:27,159
+Bununla beraber, şöyle projenin içerisine, array'ın içerisine, şöyle worker1, worker2 şeklinde bir array ile, daha sonra worker dokümanı içerisinde de, şurada worker dokümanı, şurada worker dokümanı var, o worker collection içerisindeki bu dokümanlar var. Tamam mı? Bu şekilde bu bağlantıyı yapabilirim.
+
+345
+00:56:27,456 --> 00:56:37,456
+Böyle de yapabilirim, böyle de yapabilirim. Bu acaba sizin aklınıza neyi getiriyor? Veya, şimdi o soruyu sormadan hemen, şöyle de yapabiliriz.
+
+346
+00:56:37,456 --> 00:56:54,456
+Bakın burada ne var? Proje dokümanı, proje koleksiyonu var. Şurada workerlar var. Worker dokümanı ve worker dokümanı var burada da. Fakat şurada proje ID geçiyor. Böyle bir tasarım da yapabilirim.
+
+347
+00:56:55,827 --> 00:57:02,427
+Oracle'ların içerisinde proje bilgisi olabilir veya proje içerisinde Oracle'lar bilgisi olabilir.
+
+348
+00:57:02,847 --> 00:57:05,427
+Ama araya şeklinde saklamıyorum bu sefer.
+
+349
+00:57:06,927 --> 00:57:07,988
+Yani burada maksadım ne?
+
+350
+00:57:08,927 --> 00:57:12,307
+Hangi projede hangi işçiler çalışacak? Bunu saklamaya çalışıyorum.
+
+351
+00:57:12,427 --> 00:57:14,008
+Şimdi problemi ilk olarak tanımlayalım.
+
+352
+00:57:14,508 --> 00:57:16,307
+Bunu ben şöyle de yapabilirim.
+
+353
+00:57:16,307 --> 00:57:21,307
+Böyle yaparsam eğer, böyle yaparsam şu bilgiler,
+
+354
+00:57:21,427 --> 00:57:30,467
+Bu kişilerin çalıştığı diğer projelerde bu kişiler orada tekrar edecek bu bilgiler.
+
+355
+00:57:31,327 --> 00:57:34,007
+Değil mi? Bu sizin aklınıza neyi getiriyor?
+
+356
+00:57:34,867 --> 00:57:38,788
+Gene sordum ama tekrar soracağım. Düşünün diye onu tahrik ediyorum.
+
+357
+00:57:39,307 --> 00:57:45,427
+Şurada ne var? Bu projede şu işçiler bu şekilde ifadeyi biraz daha özet, biraz daha...
+
+358
+00:57:46,000 --> 00:57:57,099
+Redundancy'i, geçen program bu Redundancy. O nerede geçiyordu? Normalizasyon da geçiyordu. Bu Redundancy'i biraz azalttık yani. Ama hala 1NF değil.
+
+359
+00:57:57,960 --> 00:58:09,579
+1NF değil. Yani 1NF bile değil. Burada işte V1, V2 falan bunlar falan. Ama yani büyük resmi düşünün. Başka projeler var, o projede çalışanlar var falan. Tamam mı?
+
+360
+00:58:11,791 --> 00:58:21,731
+Burada ise proje var. Workl'ların içerisinde hangi projede çalışıyorsa o bilgiler var ama hiç array yok.
+
+361
+00:58:23,552 --> 00:58:26,552
+Array yok. Yani nest bir şey yok.
+
+362
+00:58:27,987 --> 00:58:54,288
+O zaman buradan, bu tasarımlardan, bu tasarım tamamıyla kullanıcıya havale edilmiş. Yani kullanıcı istediği gibi uygulamadan beklenen fonksiyonlara göre, operasyonlara göre böyle yaparsak ve böyle yaparsak redundancy oldukça fazla. Redundancy ile bir takım anormallikleri ortaya çıkartıyordu. Bunların ikisi de mesela 1NF bile değiller. Yani nested.
+
+363
+00:58:54,672 --> 00:59:22,152
+nested bir yapı var. Şema içerisinde başka şemalar var. Başka tablolar var gibi yani. Ama burada 1NF değil ama 2NF de değil. 2NF, 3NF de değil yani. Niye olmadığını anlayabilirsiniz. Mesela bak şurada ID ve proje ikisi birden primary key, ename, o primary key'in bir alt.
+
+364
+00:59:22,739 --> 00:59:50,339
+niteliğine bağlı, fonksiyonel olarak bağlı. Yani biraz daha teknik konursak, normalizasyon konusunu gördüğümüz için konuşuyorum. Bu 2NF'ye aykırı bir durum idi. Bunu biz kırıyorduk parçalayarak ama şimdi burada parçalamadık. Aynı tabloda tutuyoruz yani. Bunun burada böyle olması neyi ortaya çıkartıyor? Redundancy ilginç. Şu kadar kötü değil ama redundancy. Ama burada da var redundancy yani. Çünkü bu projede, bu işçi,
+
+365
+00:59:50,739 --> 00:59:57,739
+Bu işçi, bir ismi burada geçiyorsa, bir projede çalışırken, başka projede çalışırken de bu isim yine geçecek.
+
+366
+00:59:59,239 --> 01:00:03,919
+Bu isimle beraber bunun adresi, yaşı falan filan varsa, onlar orada da geçecek yani.
+
+367
+01:00:05,780 --> 01:00:14,179
+İşte bu gibi, böyle biraz daha detaylı inceleyebilirsiniz bu noktayı. Yani SQL'den ayrılma noktası, böyle modelleme noktasında.
+
+368
+01:00:14,179 --> 01:00:29,179
+Burada bu örnek güzel olmuş yani, bir motivasyon oluyor. İşte MongoDB'nin dokumentasyona bakarak, burada ne gibi modellerle bu tasarımı yapılabilir? Burada 3 tane farklı versiyonunu şey yapıyor.
+
+369
+01:00:30,675 --> 01:00:47,675
+Evet, distributed database noktasında, yani biraz daha gerçekleme, fiziksel noktada bakıldığı zaman, kullanılan algoritmalar oldukça böyle, şey, böyle tek doküman üzerine güncelleme, tam...
+
+370
+01:00:47,791 --> 01:01:01,311
+Doğru. Ama birden çok doküman üzerine multi-doküman transaction'larda iki fazla commit protokolü kullanılıyormuş. Bu karmaşık bir algoritma.
+
+371
+01:01:02,003 --> 01:01:19,443
+Yani ASIT'teki o commit protokolü zaten onun sağlanması zor. İki fazla commit protokolü oldukça karmaşık. Merak edenler baksınlar. Algoritmi bayağı karmaşık. Yani distributed olarak bu konsistensinin sağlanmasını yapıyor.
+
+372
+01:01:20,644 --> 01:01:27,264
+Replikasyon mutlaka gene var. Burada master-slave yaklaşımı kullanılmış.
+
+373
+01:01:27,775 --> 01:01:35,975
+İşte bu ne demek? Bununla ilgili böyle ufak açıklamalar var kitapta. Bu kadar almış buraya. Ben de daha fazla detayına inmeyeceğim.
+
+374
+01:01:35,975 --> 01:01:51,975
+Ama genel manada mesela ilk olarak bütün yazmalar primili copy yani master copy yapılıyor. Daha sonra bunlar slave diğer copy replikalara gradual bir şekilde yansıtılıyor.
+
+375
+01:01:52,148 --> 01:02:15,307
+Bu Master Slave'ın ana yapısı zaten. Ama işte burada yansıtılmanın içinde de bir takım protokoller var. Yani artık onların farklı sistemlerde farklı gerçeklenmesi var. Burada işte o doğruluk, o uygulamanın beklentisi, doğruluktaki beklentisi ne kadarsa ona göre bir protokol orada ayarlanıyor.
+
+376
+01:02:19,487 --> 01:02:31,507
+Demek ki uygulamada da bir takım başka ayarlarla bu doğrulukta ki beklenilen consistency derecesi de ayarlanabilir. Onlar da konfigüre edilebilir yani.
+
+377
+01:02:32,083 --> 01:02:38,203
+Yine MongoDB'deki sharding horizontal partitioning, yani zaten shard'ın manası oydu.
+
+378
+01:02:38,203 --> 01:02:43,363
+Devised documents into disjoint partitions.
+
+379
+01:02:43,363 --> 01:02:46,403
+Çok parçaya da şey yapıyor.
+
+380
+01:02:46,403 --> 01:02:48,963
+Allow us adding more nodes as needed.
+
+381
+01:02:48,963 --> 01:02:59,363
+Arka bir anda demek ki yeni makineler, böyle başta atıl duruyorlar ama onlar da ihtiyaca göre o sisteme dahil oluyorlar yani.
+
+382
+01:02:59,572 --> 01:03:03,572
+Çünkü daha fazla veri geldi, oraya veri artıracak gibi.
+
+383
+01:03:04,972 --> 01:03:08,092
+Shard stored on different nodes to achieve load balancing.
+
+384
+01:03:08,231 --> 01:03:12,612
+Gene sharding'de hatta gelmesi gereken kelime load balance.
+
+385
+01:03:13,056 --> 01:03:28,876
+Yani kocaman bir dosyayı, bir collection'ı, tek bir makinede değil, onları dağıttım. Böylece yükü dağıttım. Yani load balans oldu. Bu high performance'a da hizmet eden bir şey. Nasıl index hizmet ediyor? Load balancing de high performance'a hizmet eden bir şey.
+
+386
+01:03:34,931 --> 01:03:54,251
+Şimdi, burada işte, sharding ile beraber, key üzerine default olarak bir indeks var. Yani her bir dokümanın ID'si, üzerine bir indeks var. Böylece, o indeksi kullanarak hızlı bir şekilde o dokümana erişebiliyoruz. Yani hızlı erişim, high performance var.
+
+387
+01:03:54,655 --> 01:04:03,355
+Burada horizontal partitioning'de ya range esaslı ya da hash esaslı partitioning yapılabiliyor.
+
+388
+01:04:04,515 --> 01:04:16,795
+Bu şekilde. Yani böyle parçalar, chunk denilen parçalar ya o üzerinde index olan key'e göre parçalar.
+
+389
+01:04:16,795 --> 01:04:21,375
+Eğer sorgular burada, uygulamadaki sorgular, aralık sorguları ise,
+
+390
+01:04:21,807 --> 01:04:35,988
+Range esaslı olması lazım partitioning'in. Eğer hash esaslı yani tek equality tarzında erişimler söz konusuysa hash esaslı olması lazım partitioning'in.
+
+391
+01:04:36,271 --> 01:04:54,611
+Zaten iki esas var yani. Aramada olsun, partitioning'de olsun. Ya aralık esasla dağıtıyoruz. Yani birden, sıfırdan 100 bine kadar olan veriyi değer olarak bir makineye, 100 bin ile 200 bin arasını bir makineye bu şekilde denilir.
+
+392
+01:05:03,603 --> 01:05:09,483
+Değeri hash ediyorsa, o, ııı, oraya gidiyor, o makineye gidiyor yani.
+
+393
+01:05:11,827 --> 01:05:32,327
+İşte bazı key value storelar, o dokümen şeyde, MongoDB'de mesela iki tane partitioning var. Ama birazdan söyleyeceğimiz, o Domino'da mesela veya Voldemort'ta, hash esaslı distribute ediyor. Hash esaslı. Sadece hash esaslı var. Onda nasıl olduğunu birazdan söyleyeceğim.
+
+394
+01:05:34,771 --> 01:05:42,811
+Evet, key value store'lar var sırada. Şimdi bir ara verelim isterseniz, bir 5-10 dakika.
+
+395
+01:17:32,692 --> 01:17:33,692
+Evet, devam ediyorum.
+
+396
+01:17:50,292 --> 01:17:56,771
+İkinci kategori key value storelar. Bu esasında tarihsel olarak tarihçiye bakıldığı zaman
+
+397
+01:17:56,771 --> 01:18:11,072
+daha evvelde ilk geliştirilen şey, çünkü daha da şemalıs bir şey var. Yani daha uzak SQL sistemlerinden.
+
+398
+01:18:14,072 --> 01:18:15,112
+Burada
+
+399
+01:18:17,460 --> 01:18:42,260
+Daha esnek olmasından da anlaşıldığı gibi, yani hem Structure hem Unstructure, SimStructure. Burada key'in belirlediği bir değer, byte dizisi olarak, yani value'da byte dizisi olarak saklanması. Value'un içerisinde ne olursa olsun. Yani hiçbir şema yok. Bir byte dizisi olarak saklanması.
+
+400
+01:18:44,083 --> 01:18:49,083
+Bu çok hızlı bir şekilde işte veri itemine erişmeye imkan sağlıyor.
+
+401
+01:18:49,083 --> 01:18:59,083
+Value ise, can be string of array of bytes, application interpretive structure. Ya bu çok jenerik ifadeler yani.
+
+402
+01:18:59,083 --> 01:19:09,083
+Sadece key ortak olmak üzere key'in match ettiği value değeri herhangi bir şey olabilir yani.
+
+403
+01:19:10,579 --> 01:19:29,079
+İşte burada, demek ki örnek olarak bakıldığı zaman Amazon'un mesela DynamoDB'u hiçbir sorgu şeyi yok. Aynı şekilde Oracle'ın Key Value Store'u, Amazon'un Dynamo Key Value Store'u. Bunlar bu noktada ilk hakta gelen meşhur olanlar.
+
+404
+01:19:30,979 --> 01:19:35,760
+Mesela Dynamo'nun şeyi kapalı, open source değil.
+
+405
+01:19:36,783 --> 01:19:59,783
+Buradaki her bir item, attribute value key'si ile saklanıyor. Attribute is a single or multiple value olabilir. Primary key, sadece tek bir nitelik veya birinden çok nitelik de anahtar olabilir. Key ile string of bytes gene, value da string of bytes.
+
+406
+01:20:00,000 --> 01:20:13,920
+İşte bu eşleşmeyi sağlıyoruz biz S-Azma sistemi. Bunu buradaki o key value'ları artık milyarlarca, milyonlarca, milyarlarca o şeyi cluster'a, makinelere bunu dağıtıyor.
+
+407
+01:20:14,479 --> 01:20:20,880
+Bunun open source alternatifi Voldemort diye bir şey. Bu Apache'nin değil herhalde.
+
+408
+01:20:22,515 --> 01:20:31,515
+Bakılabilir ama, buradaki teknikler, Dynamo'nun kullandığı teknikleri, open source olarak gerçeklenmesi bu esasında.
+
+409
+01:20:31,988 --> 01:20:45,708
+Burada gene SQL'in en basit formları var. Yani get, boot, put ve delete. Yani hiçbir join falan yok yani. Dediğim gibi join yapılacaksa bunu uygulama yapacak yani.
+
+410
+01:20:45,708 --> 01:20:59,268
+Ve bunu da çoğu zaman parallel processing ile yapıyor. Böyle predis gibi mesela. Burada işte varular, high-variated formatı. Burada kilit kelime, consistent hashing.
+
+411
+01:20:59,859 --> 01:21:04,659
+For Distributing Pairs. Burası anlatmak istediğim, burası esasında.
+
+412
+01:21:05,760 --> 01:21:14,159
+Burada şöyle bir algoritma kullanılıyor. Yani algoritma derken bir yöntem, protokol. Böyle biraz farklı, dikkat çekici bir tarafı var.
+
+413
+01:21:16,404 --> 01:21:29,144
+Burada hash-hesaslı bir kere bir distribution var. Yani problem burada, cluster içerisindeki makinelere bu veriyi nasıl dağıtacağız? Ve bu scalable olacak. Yani ihtiyaca göre yeni makine eklenecek.
+
+414
+01:21:29,144 --> 01:21:38,064
+Şimdi yeni makine eklenirken de o makinenin da bir kapasitesi var. O kapasite acaba diğer makinelardan ne kadar yük alacak?
+
+415
+01:21:38,739 --> 01:21:49,699
+Yani bu büyük resmi bir cycle'da, bir circle'da görmek ve böyle modellemek böyle güzel olmuş.
+
+416
+01:21:50,163 --> 01:21:51,903
+fikir böyle dikkat çekici.
+
+417
+01:21:52,564 --> 01:22:17,203
+Şimdi burada keylerin range'ini, sıfırla, buradaki rakam neyse, böyle bir aralıkta, yani yüksek bir rakam tabii, yani ortaya çıkardığı, hash fonksiyonun ortaya çıkardığı değer aralığına, değer aralığına göre makinelerimizi, buradaki her bir harf bir şey, bir makineyi ifade ediyor.
+
+418
+01:22:18,163 --> 01:22:28,003
+DASTER'ın içerisinde işte A, V, C makineleri var. Bunların da dağıtık replikasyonları var.
+
+419
+01:22:29,443 --> 01:22:29,763
+Burada
+
+420
+01:22:35,123 --> 01:22:46,923
+A nodunun replikasyonu işte burada, B'nin replikasyonu burada, C ise burada 3 tane replike edilmiş.
+
+421
+01:22:49,423 --> 01:23:00,923
+Burada C, A doğrusu 3 tane makine var, yanlış söyledim. 3 tane makinemiz var. Bu 3 makine ya,
+
+422
+01:23:01,967 --> 01:23:07,207
+şeyler, değerler nasıl dağıtıldığını burada ifade ediyor.
+
+423
+01:23:08,587 --> 01:23:10,167
+ABC makinelerine
+
+424
+01:23:10,579 --> 01:23:32,780
+3 tane makinemiz var. Bu değerlerin nasıl dağıtıldığını, bir aralık söyledik, mesela o key hash ediliyor, o keyler. O hash aralıklarına göre, aldığı değere göre, o keyin aldığı değere göre hangi aralığa denk geliyorsa, o makineye bunu atıyoruz, o değeri.
+
+425
+01:23:37,268 --> 01:23:46,047
+Şu bölgede ise, range 1 ise mesela, şurada da range 1 aralığındaysa, o zaman A'ya atıyoruz bunu.
+
+426
+01:23:48,167 --> 01:23:55,627
+Yani o hash değeri, alınan hash değeri, belli bir range 1 aralığında ise,
+
+427
+01:23:56,064 --> 01:24:19,684
+Bunu A makinesine attık. Eğer range 2 aralığındaysa, şu aralıktaysa, eşledilen değerler, bunu bu circle içerisinde B ve gene range 2 için B bu makineye attık. Range 3 için range 3 aralığındaysa C'ye attık.
+
+428
+01:24:19,684 --> 01:24:24,064
+Şimdi burada belli bir miktar.
+
+429
+01:24:24,064 --> 01:24:37,064
+veri yığınını bu şekilde aralıklara göre makineleri dağıttık ve yeni veri geldiği zaman burada eğer ABC'ye...
+
+430
+01:24:38,100 --> 01:24:57,100
+ABC dolduysa, yani ben o yeni gelen veriyi hash fonksiyonuna göre dağıttığım zaman, burada gene hangi aralığa denk geliyorsa, o makineye yazacağım. Yani range 1'e denk geliyorsa, A'ya yazacağım. Ama bir zaman sonra, burada...
+
+431
+01:24:57,811 --> 01:25:05,811
+Eğer yer kalmadıysa bu makinelerde yeni gelen veriyi yeni makineye yazmam lazım.
+
+432
+01:25:06,452 --> 01:25:23,252
+Yeni makine buraya dahil etmem lazım. Mesela burada B makinesini şu noktalara tahsis edilmesi, buradaki B'nin yükünü bir parça hafifletettik ve A'nın buradaki yükünü bir parça hafifletettik.
+
+433
+01:25:24,851 --> 01:25:37,072
+Yani böylece load balancing'i ihtiyaca göre load balancing'i hash fonksiyonuyla kontrol etmiş olduk esasında.
+
+434
+01:25:37,871 --> 01:25:45,811
+Tabi yani burada algoritmanın daha detayını örneklendirerek tek iştirmek lazım. Burada sadece ana hatlarıyla verdi.
+
+435
+01:25:45,952 --> 01:25:50,931
+Ama maksat ve motivasyon burada ihtiyaca göre.
+
+436
+01:25:51,412 --> 01:26:01,892
+Makinenin kapasitesine göre bir aralık, bir aralığa bu makineyi tahsis etmek.
+
+437
+01:26:02,271 --> 01:26:28,992
+ve yükü diğer makinelerden almak. Yani burada D'yi acaba niye buralara koydu? Şu aralık, şu aralığa koydu. Bu sayede A'nın ve şuradaki C'nin yükünü aldı. Burada da şuradaki A'nın yükünü aldı. Çünkü clockwise bir şekilde burada yük dağılıyor. Yani şurada range 1A'ya gitti, range 2B'ye gitti.
+
+438
+01:26:30,644 --> 01:26:35,144
+Yani bu şekilde bir açıklama yapabiliriz. Şurada yine bir not var.
+
+439
+01:26:36,464 --> 01:26:46,264
+A new not is added to the distributed system. It can be added in one or more locations on the ring depending on the not capacity.
+
+440
+01:26:47,304 --> 01:26:55,704
+Not kapasitesi daha fazlaysa mesela onu birçok noktaya tahsis edebiliriz. Yani ne demek tahsis etmek?
+
+441
+01:26:56,112 --> 01:27:00,212
+O range'e gelen keyler, o makineye gidecekler.
+
+442
+01:27:01,432 --> 01:27:01,912
+Tamam mı?
+
+443
+01:27:03,612 --> 01:27:16,332
+Yani burada işte o distribution'ın, o sharding'in, yani verinin dağıtılmasının nasıl olacağına dair böyle bir fikir, böyle bir protokol diyelim yani.
+
+444
+01:27:17,352 --> 01:27:23,532
+Tabi bunun detayları vardır ama genel manada bu şekilde olduğunu söyleyebiliriz.
+
+445
+01:27:23,956 --> 01:27:36,456
+Yine, Domino'ya veya Voldemort'a, Voldemort'a alternatif olarak yine bilinen Oracle'ın noSQL veri tabanı var. Key value store olacak şekilde.
+
+446
+01:27:36,456 --> 01:27:44,456
+Yine Redis, in-memory bir database. In-memory'de performans, yüksek performanda çalışan.
+
+447
+01:27:46,292 --> 01:28:02,292
+gene işte arada bir de persistence yani diskede bu veriyi flash ediyor. Gene Apache'nin Cassandra şeyi hem key value hem de column base bir storage'a sahip.
+
+448
+01:28:03,192 --> 01:28:09,392
+Evet, yani bu şunu da böyle temel olarak anlatmak istediklerim esasında bunlar.
+
+449
+01:28:11,220 --> 01:28:27,920
+Yani düşündüğüm gibi, biraz maksat yerine geldi. Merak ettiğiniz noktaları biraz daha bence kurcalayın. Ama yani bir ders için, yani değerlendirme noktasında bunlar yeterli olur. Bundan sonraki sunumları üzerinden geçebilirsiniz. Ben böyle bazı notları aldım.
+
+450
+01:28:28,532 --> 01:28:42,152
+Ama maksat aslında olduğu, en azel makamda şeyler söylüyor. O yüzden çok uzatmayı düşünmüyorum. Burada o collection'a benzer şekilde column store'daki bir model var.
+
+451
+01:28:43,052 --> 01:28:52,752
+İşte bu column store'da da ilk olarak column kümelerini, yani attribute kümelerini bilir. Onları daha sonradan değiştiremiyoruz. O yüzden şöyle bir yorum var.
+
+452
+01:28:56,532 --> 01:29:21,532
+Sistemine en yakın olan BigTable esasında. Yani tamamıyla key value en uzak, key value'lar en uzak. Bu column store'larda en yakın. Tam şemada değil. Çünkü column ailelerini belirliyorum. O columnların içerisine attribute'leri değiştirebilirim yani. Tamam mı? Yani kabaca belirlediğim strict,
+
+453
+01:29:21,779 --> 01:29:30,300
+Kabaca column ailelerini belirlediğim strict, orası regular. Ama columnların içerisindeki attributeleri değiştirebiliriz.
+
+454
+01:29:30,300 --> 01:29:44,020
+Yani burada detayları var. İşte bunun open source'u gene HBase, yani şeyin, BigTable malum şey, propriety, yani Google'ın kendi şeyi kapalı yani.
+
+455
+01:29:44,600 --> 01:29:48,159
+Ama HBase aynı model üzerine kurulmuş.
+
+456
+01:29:48,528 --> 01:29:53,047
+Hadoop'un HDFS'inin üzerine kurulmuş bir şey.
+
+457
+01:29:55,108 --> 01:30:03,847
+Evet, buradaki geçen böyle kelimeler, bunlar Callum, Callum, Polon aileli bir şeklinde.
+
+458
+01:30:07,507 --> 01:30:26,668
+Bunları da böyle şey yapabilirsiniz. Biraz daha detaylı inceleyebilirsiniz istiyorsanız. Son olarak bir de graph database'ler var. Burada da collection of nodes, aids. Buradaki her bir satır o şeyin, graph'ın içerisindeki düğümler.
+
+459
+01:30:27,091 --> 01:30:40,551
+O ROV'ların birbirleri olan bağlantıları, daha çok işte böyle sosyal medya bağlantıları için kullanılan, mesela buna örnek olarak, bu da var mı bir şey?
+
+460
+01:30:43,832 --> 01:30:49,032
+Burada bir, yani gerçek sistemlerden hangisi kullanıyor diye bakıldığı zaman.
+
+461
+01:30:49,488 --> 01:31:15,988
+Neo4j'i popüler olarak kullanan bir, bunun kendine göre şöyle, Scyper diye bir sorgulama dili var. Bu da bayağı popüler oldu. Burada onunla ilgili örnekler var. Bunlara da bakabilirsiniz. Yani oldukça declarative yani. Tabi SQL kadar güçlü değil ama, rekümsif sorgularda falan oldukça başarılı diye duydum. Bununla ilgili bir ara proje yapmıştı geçen senelerde bir arkadaş.
+
+462
+01:31:16,500 --> 01:31:26,800
+Dilinde genel şeyi böyle burada görüldüğü gibi yani aynı s² benzer şekilde burada bir sorgulama yapılıyor.
+
+463
+01:31:29,876 --> 01:31:37,715
+Evet, o zaman neyi detaylı biraz daha detaylı inceledik? Document Store'u ve Key Value Store'u biraz daha detaylı inceledik.
+
+464
+01:31:38,355 --> 01:31:53,815
+Column Store, White Column Store ve Graph Store'ları da oradaki sunlara siz bakarsınız veya kitaptan bir parça okursunuz veya bunlarla ilgili ufak bir araştırma yapıp oradaki şeyleri de pekiştirirsiniz.
+
+465
+01:31:53,815 --> 01:31:55,815
+Aynı mankamda farklı modeller.
+
+466
+01:31:57,876 --> 01:32:07,675
+Burada işte birçok böyle sistemin ortak bu modellerin karma olarak kullandığı yapılarda var yine.
+
+467
+01:32:08,595 --> 01:32:14,675
+Yine işte CAP teorimden bahsettik ve consistency probleminden bahsettik.
+
+468
+01:32:14,675 --> 01:32:19,836
+Evet, böylece sunuyu da üzerinden geçmiş olduk.
+
+469
+01:32:21,155 --> 01:32:23,895
+Şimdi sınavımız buraya kadar.
+
+470
+01:32:24,627 --> 01:32:51,807
+Olsun. Böylece ilişkisel model, SQL, kavramsal tasarım, ER diyagram ve normalizasyon özellikle, yani fonksiyonel bağımlılık temeli üzerine normalizasyonla yaptığımız 2NF, 3NF, BCNF, bunların ortaya çıkardıkları dekompozisyonlar, yani tabloların parçalara bölünmesi.
+
+471
+01:32:52,404 --> 01:32:57,304
+Buradaki tabi ana fikir, yani kurallarını da, baka bilin, 3 tane kural var.
+
+472
+01:32:58,044 --> 01:33:02,824
+Yani gerekirse ezberleyin ama tabi manasında bir parça anlayarak, örnekler çözerek yani.
+
+473
+01:33:02,904 --> 01:33:06,464
+Onların ispatını doğru olduğunu söylemiştik yani. İspatıyla çok işimiz yok.
+
+474
+01:33:07,004 --> 01:33:10,824
+Yani niye öyle parçalıyoruz gibi mesela ama o parçalamalarında bazı...
+
+475
+01:33:10,832 --> 01:33:35,832
+esasları var. Onlara da dikkat ederek, örnek bir sunulara örnekler de koydum ben. İki tane örnek var. Onları da GPT'de şey yapabilirsiniz, teyledebilirsiniz. Yani bir fonksiyonel bağımlılık altında, o şamada, primary key'in belirlenmesi mesela, onun formülüze edilmesi, onu GPT'de bulabiliyor. Tam ona göre bir problem çünkü.
+
+476
+01:33:37,011 --> 01:33:45,171
+O da fonksiyonel bağımlılıkları takip ederek primary keyleri belirleyebiliyoruz.
+
+477
+01:33:45,692 --> 01:33:50,731
+Sonra yine ondan sonra başladığımız noise-car veri tabanları. Çünkü bu ayrı bir model.
+
+478
+01:33:51,152 --> 01:34:04,431
+Bu konuda tam ondan sonra böyle iyi oldu. Biraz önce bahsettiğimiz o normalizasyonla ilgili MongoDB'nin 1NF, 2NF ile ilgili olan örnekleri onlara da bakabilirsiniz.
+
+479
+01:34:04,431 --> 01:34:09,931
+Böylece sınava buraya kadar hazırlık yapmanız gerekiyor.
+
+480
+01:34:10,707 --> 01:34:17,607
+Şimdi konu olarak sınavdan sonra indeks konusunu anlatmayı düşünüyorum.
+
+481
+01:34:17,607 --> 01:34:27,627
+Çünkü sistemin temel modüllerinden bir tanesi. Son kullanıcıya önemli bir çıktı olarak yansıyan performans.
+
+482
+01:34:28,327 --> 01:34:37,607
+Bununla ilgili bu ders kitabında, gene bizim kendi ders kitabımızdaki indeksin konusunu...
+
+483
+01:34:38,163 --> 01:34:40,043
+Bir parça anlatayım diye düşünüyorum.
+
+484
+01:34:41,563 --> 01:34:44,684
+Bunun tabii içerisinde veri yapıları var.
+
+485
+01:34:45,224 --> 01:34:49,443
+Biz bu veri yapılarını sistem gerçekleme dersinde görüyoruz daha detaylı olarak.
+
+486
+01:34:49,855 --> 01:35:10,055
+O dersi alırsanız, bunun evvelinde işte diskin incelenmesi, diskin performansı gibi şeyler var. Bunlardan da, bunlar altyapı oluyor. Ama ana hatlarıyla indexing'in anlaşılması gene oldukça önemli. Yani o dersi almasanız da indexing'i bilmeniz gerekiyor.
+
+487
+01:35:11,735 --> 01:35:15,935
+Şimdi o konuya şöyle bir giriş yapalım. 15-20 dakika.
+
+488
+01:35:16,368 --> 01:35:33,248
+en azından ilk adımı atmış oluruz. Bu sunumlar bayağı uzun, 90'a yakın sunu var. Burada indexing'in manasını bir parça bahsedeyim, temel kavramlar ve index yapıları var. Burada da yine indexlerin işte
+
+489
+01:35:33,876 --> 01:35:45,916
+B plus 3 ve hash esaslı olması. Yani sıralama esaslı, range esaslı. Biraz önce gördük ya, noise kabinetif anlarında da, böyle partition'ı, range esaslı yapması.
+
+490
+01:35:50,228 --> 01:36:11,507
+ve hash esaslı yapması. Yani bütün düzenlemelerde, bütün organizasyonlarda fiziksel olarak böyle verinin dağıtılması olsun, erişimi olsun iki tane esas var. Ya sıralama ya da hash esaslı. İşte indeksler de bu makamda, bu iki tane üzerine gidiyor.
+
+491
+01:36:12,884 --> 01:36:34,764
+Ondan sonraki konu başlığımız, LSM. Bu da bütün NoSQL veri tabanlarının ana storage ünitesi, ana storage yapısı. Yani B-Plus-3'ye bir parça alternatif.
+
+492
+01:36:35,188 --> 01:36:47,068
+veya Bplus3'i ilk kullanan, Family of Bplus3 denilen, yani birden çok Bplus3'nin bir arada olduğu bir şey.
+
+493
+01:36:47,471 --> 01:37:03,631
+Yani burada ki gene motivasyonumuz, büyük veriyi böyle tek bir ağaçta indekslemek yerine böyle bir ağaç ailesinde, birden çok ağaca dağılmış bir şekilde bunu koordinasyonunu, organizasyonunu yapabiliriz.
+
+494
+01:37:03,631 --> 01:37:11,952
+Ve bu DSM'den yani Log Structured Merge Tree'den bahsedebiliriz. Tabi bunlar böyle advanced yapılar.
+
+495
+01:37:12,384 --> 01:37:19,943
+Yani, tabii bir altyapı gerektiriyor. Şimdi o bir parça o altyapıdan bahsedeyim ben.
+
+496
+01:37:21,663 --> 01:37:38,104
+Burada, yani, önemli olan nokta, bir index dosyasında, index dosyası dediğimiz bir dosya. Bu ana dosyanın, yani veri dosyasının yanında bulunan yardımcı bir dosya.
+
+497
+01:37:38,612 --> 01:38:03,612
+Bu dosyada bir düzenleme var. Bir veri organizasyonu var. Bu organizasyon sayesinde veri tablosunda, büyük dosyada bazı noktalara hızlı bir şekilde erişebiliyorum. Aradığım noktalara. Aradığım noktaları SELECT2 ile ifade ediyoruz. Yani arama anahtarı. Hangi anahtar üzerine, hangi nitrik üzerine arama yapıyorsak,
+
+498
+01:38:04,467 --> 01:38:18,587
+İşte o arama, o nitelik arama anahtarı olmuş oluyor, search key olmuş oluyor. Bu search key bir nitelik olabilir veya birden çok nitelik olabilir.
+
+499
+01:38:20,267 --> 01:38:29,007
+İşte bu aramayı böyle optimize edecek, high performance, yüksek hızda olmasını sağlayacak olan yapıya index diyoruz.
+
+500
+01:38:29,296 --> 01:38:52,296
+Çünkü, index'in şeması, daha böyle regular, daha düzenli, ve daha ufak. Sadece SEARCH KEY var, ve POINTER var. Yani her index içerisindeki her bir record, index kaydı, bir SEARCH KEY içeriyor, ve o SEARCH KEY içeren,
+
+501
+01:38:53,076 --> 01:38:58,755
+data tablosundaki, VE tablosundaki kayıtlara pointerlar içeriyor.
+
+502
+01:39:00,515 --> 01:39:13,475
+Bu indeks dosyasının böyle basit olması, basit bir şemaya sahip olması ve özellikle search key'e göre sıralı olmasıyla ordered indexler.
+
+503
+01:39:13,475 --> 01:39:17,315
+Yani search key'e göre sıralı olmasıyla ordered indexler.
+
+504
+01:39:20,787 --> 01:39:45,188
+fonksiyonuna göre dağıtılması da hash indexleri ortaya çıkartıyor. Bu bir düzenleme. Yani organizasyon yapıyoruz yani. Ya sıralama esaslı ya da hash esaslı. Ve bunu şöyle basit bir şema içeren bir tabloda yapıyoruz. Yani bu viri tablosunda ki şemada bir kısıt yok. Bunun şeması işte şemalısı da olabilir.
+
+505
+01:39:47,283 --> 01:39:56,224
+nitelikler işte birisinde 3 tane, birisinde 10 tane falan değil veya ilişkisel bir veri tablosunda da olduğu gibi şeması katı da olabilir yani.
+
+506
+01:39:57,463 --> 01:40:08,583
+Herhalükarda bu sıralı olan dosyada veya hash esaslı dağıtılmış olan böyle bir dosyada buradaki search key'i bulmak çok daha hızlı.
+
+507
+01:40:10,420 --> 01:40:16,439
+Çok daha hızlı. Çünkü mesela, ana dosyanın sıralı olması ve sıralı tutulması çok zor.
+
+508
+01:40:17,960 --> 01:40:25,619
+Hadi sıraladık bir kere tamam ama, sırada tutulması, yani çünkü orada sürekli eklemeler çıkarmalar, güncellemeler var.
+
+509
+01:40:25,979 --> 01:40:28,760
+Bunun sıradadığının sağlanması çok kolay bir şey değil.
+
+510
+01:40:30,599 --> 01:40:32,599
+Güncellemeleri çok yavaşlatır bu sefer.
+
+511
+01:40:33,395 --> 01:40:57,275
+O yüzden buradaki dosyamıza çok dokunmuyoruz. Yani bu indeksin üzerinde indeks olan dosyaya, burada bir dosya hayal edelim yani. Birazdan karşımıza çıkacak yani öyle şeyler. Şöyle mesela bu ana dosyamız tabii temsili yani. Bu kocaman bir dosya yani. Bir disk veya distribütü de olabilir her neyse. Bu da indeks dosyası.
+
+512
+01:40:57,680 --> 01:41:07,360
+Bu index dosyası ile şu ana dosyaya böyle erişim daha hızlı oluyor. Çünkü bu çok regular bir dosya. Sadece search keyler var.
+
+513
+01:41:07,360 --> 01:41:21,600
+Ve onlar da sıralı. Ve pointerlarla o search key içeren kayda direkt olarak gidiyorum. Zaten bakın o eşleşmeleri görüyorsunuz.
+
+514
+01:41:21,663 --> 01:41:36,003
+Şimdi burada sıralanık acaba nasıl bir avantaj sağlar aramada? Evet, binary search burada. İlk aklımıza gelmesi gereken kelime binary search.
+
+515
+01:41:36,003 --> 01:41:43,467
+Şimdi basit olarak düşündüğümüz zaman gerçekten binary search logaritmik olmasından dolayı çok...
+
+516
+01:41:43,859 --> 01:42:08,019
+Daha da ötesi yok zaten. Daha ötesi var da, hash, ama hash'ten ziyade logaritmik arama daha elverişli. Çünkü hash'in böyle mükemmel olarak kayıtları dağıtması çok kolay değil. Yani algoritmik karmaşıklığı, hash index'lerin, O1, order index'inin logaritma,
+
+517
+01:42:08,463 --> 01:42:33,463
+O yüzden, diyebiliriz ki, hash indexler daha iyi. Ama öyle değil. Yani yaygın olarak kullanılan, ordered indexler. Çünkü, bunun en önemli sebebi, ordered indexler, ne kadar logaritmik de olsalar, yani o1 de olmasalar, sıralama sayesinde, aralık sorgularına hizmet veriyorlar. Ama hash olanlar,
+
+518
+01:42:34,228 --> 01:42:44,427
+Range, belli bir aralıktaki kayıtları yerleştirirken, onları yan yana yerleştirmedi, onları dağıttı yani.
+
+519
+01:42:45,248 --> 01:42:51,248
+Şimdi o dağılmış olan aralıktaki kayıtların dağılmasıyla o kayıtlara erişmek,
+
+520
+01:42:51,667 --> 01:42:54,667
+Ayrı bir masraf. Çünkü bu
+
+521
+01:42:54,667 --> 01:42:58,907
+diskte ayrı bir disk IO demek oluyor.
+
+522
+01:42:59,507 --> 01:43:01,447
+Ayrı bir disk gelişimi demek oluyor yani.
+
+523
+01:43:01,447 --> 01:43:05,647
+Ama biz gittiğimiz zaman o aralıktaki kayıtları aynı yerde bulsak,
+
+524
+01:43:06,267 --> 01:43:08,687
+o zaman bir disk IO ortaya çıkmayacak yani.
+
+525
+01:43:09,492 --> 01:43:19,331
+İşte burada, tabi diskin geometrisini, diskin çalışma prensibini, diske erişimi bilmek lazım. Çünkü bir kere diski tanımak lazım yani.
+
+526
+01:43:19,331 --> 01:43:29,091
+Eri tabanlı dosyalarımız bir kere diskte bulunuyorlar. Bu diskte bulunmaları noktasında disk bir darboğaz, bottleneck.
+
+527
+01:43:29,091 --> 01:43:36,931
+O zaman bu disk IEO minimize edecek şekilde veri yapılarının arkada çalışması lazım yani o mekanizmanın.
+
+528
+01:43:36,975 --> 01:43:42,055
+İşte veri yapıları dediğimiz zaman da burada disk esası veri yapıları dediğimiz zaman da index hakları geliyor.
+
+529
+01:43:42,195 --> 01:43:48,435
+Index'in de ana böyle şeması, ana şeyi, SEARCH KEY POINTER'lar.
+
+530
+01:43:49,895 --> 01:43:54,595
+Bu sayede SEARCH KEY'ler mesela sıralıysa binary search yapıyorum.
+
+531
+01:43:55,536 --> 01:43:58,895
+O aralığa direkt olarak gidebildim.
+
+532
+01:43:59,412 --> 01:44:07,731
+Diğer taraftan, eğer, EQUALITY sorgu yapıyorsak, bir hash fonksiyonuyla, SEARCH KEY'i bu tabloda buldum.
+
+533
+01:44:07,731 --> 01:44:14,692
+Yani, bu şamada bir tablo düşünün, orada da bir ton veri var yani. Bir hash fonksiyonuyla direkt olarak o SEARCH KEY'i buldum.
+
+534
+01:44:14,692 --> 01:44:24,652
+O SEARCH KEY neredeyse, neredeyse, o pointer beni oraya götürecek, o tabloya götürecek ve hızlı bir şekilde eriştim. Ama,
+
+535
+01:44:24,819 --> 01:44:42,659
+işin aralık sorgusuna bir hizmeti yok. Çünkü o aralıktaki kayıtları dağıttı yani. Dosyada, ana dosyada birçok yere dağıttı yani. O yüzden orada da benim gitmem, o aralıktaki o kayıtlara gitmem ayrı bir masraf oluyor yani.
+
+536
+01:44:43,252 --> 01:44:57,112
+Burada, tabii, index bir dosyada saklanıyor, index kayıtları. Bir dosyada saklanıyor. Belli bir düzene göre, yazı sıralı saklanıyor falan veya işte sepetleri şeklinde saklanıyor.
+
+537
+01:44:58,112 --> 01:45:08,112
+Herhalükâr da bu index yapısının, bu ölçütlerine göre indexin kalitesi ortaya çıkıyor. Yani, bu indexin erişiminin,
+
+538
+01:45:09,235 --> 01:45:11,456
+Access tipi, yani,
+
+539
+01:45:13,135 --> 01:45:14,715
+Records,
+
+540
+01:45:15,376 --> 01:45:21,555
+mesela eşitlik sorgularına hizmet vermesi, Access type, Supported Efficiency,
+
+541
+01:45:24,235 --> 01:45:33,615
+sıralama esaslı olan yapılar, B-Plastik'i, hem eşitlik sorgusu, hem aralık sorgusuna logaritmik olarak hizmet veriyor.
+
+542
+01:45:34,387 --> 01:45:55,727
+HESAS'ınlar sadece eşitlik sorgusuna O1'de hizmet veriyor. Ama orada bile, yani eşitlik sorgusunda bile pratik hayatta o teorik olan algoritma karmaşıklığı pratikte öyle göründüğü gibi O1 değil yani. Neden? Evet, başka soru soracaksın herhalde.
+
+543
+01:46:00,595 --> 01:46:01,095
+L
+
+544
+01:46:06,163 --> 01:46:08,384
+Evet, ben de şimdi onu anlatmaya çalışıyorum dedim.
+
+545
+01:46:09,304 --> 01:46:15,024
+Yani, algoritmik karmaşıklığı ifadesi, BIPO notasyonu biraz aldatıcı olabiliyor yani.
+
+546
+01:46:15,784 --> 01:46:17,784
+Çünkü bir de bunun pratik gerçeklenmesi var.
+
+547
+01:46:18,423 --> 01:46:20,064
+Ve data dağılımı var.
+
+548
+01:46:20,203 --> 01:46:23,944
+Yani, O1'den, O1 bize bir fikir veriyor sadece.
+
+549
+01:46:24,144 --> 01:46:26,684
+Yöntemin bir hülasası, özeti yani.
+
+550
+01:46:27,744 --> 01:46:28,784
+Diyor ki, hash.
+
+551
+01:46:29,332 --> 01:46:41,952
+Esaslı yöntemler. Ben her bir değeri bir hash fonksiyonuyla bir noktaya, yani bir disk sayfasına veya dosyada bir sayfaya gönderiyorum, hash ediyorum.
+
+552
+01:46:43,092 --> 01:46:54,632
+Bir anahtarı buraya hash ettim, başka anahtarı buraya hash ettim. Böyle böyle dağıttım yani. Daha sonra ararken Search key'e göre dağıttım. Search key'e göre arıyorum. Yani o Search key'e göre bunu bulabileceğim.
+
+553
+01:46:55,252 --> 01:47:13,252
+O zaman burada o SELECT'e göre eşitlik sorgusuysa, bu SELECT'e eşittir, 5, 10 gibi bir şey arıyorsak yani, o zaman o anahtarı içeren kayda direkt olarak eriştirir.
+
+554
+01:47:13,252 --> 01:47:18,060
+Yani, hiç çok cazip o noktada. Ama burada...
+
+555
+01:47:18,323 --> 01:47:23,043
+Aynı noktaya hash eden birçok başka kayıtlar olabilir.
+
+556
+01:47:24,203 --> 01:47:27,943
+Ve burada birçok collision denilen çarpışmalar olacak.
+
+557
+01:47:28,264 --> 01:47:31,604
+Bunu veri yapıları dersinde de görmüşsünüzdür zaten o collision.
+
+558
+01:47:31,604 --> 01:47:42,083
+O collision'ın çözümlenmesi, yani böyle verimli bir şekilde onun çözümlenmesi çok kolay değil.
+
+559
+01:47:44,340 --> 01:48:04,159
+Orada adaptif olarak o indeks dosyasının adaptif olarak veri miktarına göre gradül bir şekilde büyümesi lazım ve ufalması lazım. Burada bir takım adaptif indeks yöntemleri kullanılıyor. Self-organized yöntemleri mesela, Niner, Heş gibi bunlar kullanılıyor.
+
+560
+01:48:04,560 --> 01:48:20,700
+Ama diğer taraftan, böyle eşitlik sorgusu olsun veya aralık sorgusu olsun, bu sorgulara böyle sıralı indeksle daha verimli bir şekilde erişebiliyoruz.
+
+561
+01:48:22,160 --> 01:48:29,780
+Orada bir collision problemi yok yani, böyle bir dengesizlik problemi yok. Logaritmik olmasına rağmen daha verimli olmuş oluyor.
+
+562
+01:48:31,091 --> 01:48:48,011
+O zaman demek ki bu noktada erişim tipini desteklemesi noktasında veya erişim zamanı noktasında o biz ana dosyaya bir kayıt eklediğimiz zaman indekse de o kaydın eklenmesi gerekiyor.
+
+563
+01:48:48,151 --> 01:48:53,891
+Veya ana dosyada bir kayıt sildiğimiz zaman indeksten de kaydın silinmesi gerekiyor.
+
+564
+01:48:53,891 --> 01:48:55,871
+Ve indekste ayrı eden bir yer.
+
+565
+01:48:56,500 --> 01:49:07,500
+kaplıyor. Yani bütün bu ölçütlerle, indeksin veriminin, kıymetinin anlaşılması, yani bir değerlendirilmesi gerekiyor yani.
+
+566
+01:49:07,500 --> 01:49:17,500
+Tabii bu veri yapısı, bu veri yapısının böyle tune edilmesi, ihtiyaca göre şekillenmesi, birçok veri yapılarını ortaya çıkardı.
+
+567
+01:49:17,500 --> 01:49:21,420
+Bunların en başında işte, B plus 3 geliyor.
+
+568
+01:49:21,652 --> 01:49:38,771
+Farklı veri yapılarına göre gene R3 ve gene erişim metotlarına göre hash, onların self-organized varyantları, yani işte lineal hash gibi mesela birçok böyle bu konu tabii başlı başına bir şey.
+
+569
+01:49:39,212 --> 01:49:41,912
+Biz burada ana fikri böyle anlamaya çalışalım.
+
+570
+01:49:42,387 --> 01:50:00,088
+ordered indexlerde şu şekilde böyle geçen, terminolojide geçen kelimeler bunlar. Genelde işte clustered index, secondary index veya primary index, şu ikisi aynı ve index sequential file gibi kelimeler geçiyor.
+
+571
+01:50:00,088 --> 01:50:09,927
+Burada bunların manasını da anlamak çok zor değil. Yani 3-4 tane mana var burada. Clustered index demek,
+
+572
+01:50:10,420 --> 01:50:22,220
+İndeks eğer ordered bir indeks ise, ana dosyamız da 10 iteliğe göre sıralı ise, buna clustered indeks deniyor.
+
+573
+01:50:23,960 --> 01:50:33,140
+Bu aralık sorgularında, o aralığa erişmek için ana dosyaya bir kez gitmem yeterli oluyor.
+
+574
+01:50:37,492 --> 01:50:54,472
+Bu böyle bir clustered index. Biraz önceki yaptığım tanımdan yola çıkarak. Çünkü search key'e göre, burada id üzerinde bir indeximiz var. Search key üzerinde bir indeximiz var. Search key de yine burada gözüküyor ve buradaki araman niteliğine göre bu dosyamız sıralı.
+
+575
+01:50:54,868 --> 01:51:15,188
+O zaman ben burada işte 15.000 ile 20.000 arasındaki ID'lere erişmek için 15.151'i bulduktan sonra burada binary search'e, buraya geçtikten sonra artık burada da sıralı. Yani 15.000 ile 30.000 arasında burada erişebileceğim yani kayıtlara.
+
+576
+01:51:20,340 --> 01:51:39,020
+olmasaydı, cluster it'ın manası yani böyle kümelenmiş yani burada, o aradıktakiler, ana dosyada da kümelenmiş. Eğer böyle olmasaydı, yani şöyle secondary bir şekilde olsaydı, buna secondary index deniyor. Burada mesela maaş üzerinde bir index var.
+
+577
+01:51:39,380 --> 01:52:00,960
+Maaş üzerine, şurada 40.000, 50.000 ve yine ordered bir indeks. Burada aralık sorgusu dediğimiz zaman, mesela 60.000 ile 80.000 arasındaki kişilere erişmek istiyorsan mesela, 60.000 ile 80.000 arasındaki kişilere erişmek için burada farklı noktalara gitmem lazım yani o dosyada.
+
+578
+01:52:03,123 --> 01:52:10,123
+Bunların hepsi ayrı bir disk IO gerektiriyor. Yani burada 60.000'le şuraya gittim, mesela buraya geldim.
+
+579
+01:52:10,123 --> 01:52:19,524
+Bundan sonra 60.000'le olan bir şey eriştim. Ondan sonra 60.000'le 80.000'le olanlar aynı yerde değiller ki işin bitmiş olsun.
+
+580
+01:52:19,524 --> 01:52:24,123
+Değil mi? Buraya tekrar geri dönmem lazım.
+
+581
+01:52:24,287 --> 01:52:29,187
+Bunların hepsi ayrı bir disk, IO yani. Ayrı bir disk gelişimi demek oluyor.
+
+582
+01:52:29,187 --> 01:52:32,687
+65,000 için, 62,000 için gitmem lazım.
+
+583
+01:52:32,687 --> 01:52:34,687
+65,000 için gitmem lazım.
+
+584
+01:52:34,687 --> 01:52:39,687
+İşte demek ki, bu secondary index, yani primel index daha kıymetli.
+
+585
+01:52:39,687 --> 01:52:44,087
+MİKAK'ta gelen secondary index, yine bir kıymeti var ama daha çok
+
+586
+01:52:44,087 --> 01:52:51,087
+eşitlik sorguları veya aralığın dar olduğu sorgularda bir manası var.
+
+587
+01:52:51,283 --> 01:53:03,283
+Veya kullanışlı olabilir. O yüzden bu index tuning veya indeksin seçilmesi sistem içerisinde oldukça hassas veya karmaşık bir şey.
+
+588
+01:53:03,743 --> 01:53:16,643
+Yani deterministik değil yani. Böyle 2x2x4 şeklinde değil. Mesela bu indeksi, soldaki bu indeksi kullanan bir SQL ifadesi söyleyebilir miyiz?
+
+589
+01:53:18,131 --> 01:53:23,831
+SQL ifadesinde bu indeks kullanılabilir.
+
+590
+01:53:26,231 --> 01:53:34,331
+Evet, yani SELECT, FROM, WHERE, bu Instructor tablosu, SALARY, BETWEEN 60.000-80.000.
+
+591
+01:53:34,731 --> 01:53:38,431
+Ve yine SALARY, EŞİTTİR, 80.000, orada da kullanılabilirim.
+
+592
+01:53:39,131 --> 01:53:44,631
+Değil mi, eşitlik sorgusu. Ama bu indeksi mesela, ID, EŞİTTİR, 20.000
+
+593
+01:53:44,756 --> 01:53:47,156
+Bu indeksi kullanamamış bir manası yok yani.
+
+594
+01:53:48,856 --> 01:54:04,216
+Demek ki yani SELECT KEY'e göre üzerinde bir indeks varsa, gene o SELECT FROM, WHERE ifadesinde bu indeksi düşünelim mesela SELECT FROM, WHERE, SOLUARY dedik. SELECT kısmında ise NAME dedik.
+
+595
+01:54:04,659 --> 01:54:23,100
+NAME'i arıyorum. Yani 60.000 ile 80.000 maaşı bu değerler arasında olan kişilerin isimlerini arıyor olalım mesela. Tamam mı? Ve salary indexi yok böyle. Ama NAME üzerine bir index var. Burada NAME üzerine olan bir indexin bir manası var mı?
+
+596
+01:54:27,475 --> 01:54:33,195
+Bir manası yok. Hiçbir manası yok. Çünkü ney müziğini ve arama yapmıyorum yani. Esas arama ne? Verde.
+
+597
+01:54:33,876 --> 01:54:49,315
+VER, yani zaten SQL'in çalışmasında da FROM tabloyu okuyorum, bu tablo, daha sonra VER, şunları şunları yap, şu kısıtları, bu yüklemleri takdik et, ondan sonra SELECT'le neye erişmek istiyorsun, isme erişmek istiyorum.
+
+598
+01:54:49,416 --> 01:55:00,655
+Yani iş bittikten sonra NAME'e erişiyorum, yani çalışma execution'u bu şekilde SQL ifadesinin. Böyle olunca zaten NAME'in üzerinde bir indeksinin bir manası kalmamış oluyor yani.
+
+599
+01:55:02,100 --> 01:55:14,100
+Yine bir sorgu daha düşünelim mesela SELECT, FROM, WHERE, SALARY, 60,000 veya SELECT, FROM, WHERE, SALARY, 60,000, 200,000 mesela.
+
+600
+01:55:15,300 --> 01:55:23,600
+Burada acaba bu salary üzerinde indeksi kullanması noktasında salary eşittir 60,000 de bu indeksi kullanır.
+
+601
+01:55:25,200 --> 01:55:26,200
+Kullanır mı?
+
+602
+01:55:26,739 --> 01:55:53,199
+KULLANIR. Yani, çünkü bakın, niye kullanır? Mutlaka kullanır. Çünkü, şurada 60.000'e, şimdi bu şekil aldatmasın yani, her zaman söylüyorum yani, bu temsili. 60.000'e burada milyonlarca kayıt şansı bulması çok zor yani. Sırayla bakması lazım. Ama, şu indekste bunu bulması çok kolay. Çok kolay. Çünkü, bu sıralı 60.000'e göre. Bu sıralı değil. Bu sıralı olduğu için, logaritmik olarak binary search yaparak bunu bulacak.
+
+603
+01:55:54,355 --> 01:56:04,355
+Bunun bir ötesinde işte Bplus3 ile bunu bulacak. Bunu bulduktan sonra buraya direkt bir tanecik yere zıplayacak yani o kadar.
+
+604
+01:56:05,916 --> 01:56:10,895
+Ama diğer söylediğim sorguda 60.000 ile 200.000 arasındaki fayetlere ölçmek istiyorum.
+
+605
+01:56:12,735 --> 01:56:17,555
+Burada indeks kullanmayabilir. Aralığın miktarına göre.
+
+606
+01:56:18,100 --> 01:56:25,460
+60.000 ile 70.000 arasını kullanabilir, 60.000-80.000 arasını kullanabilir ama 60.000 ile 200.000 arasını muhtemelen kullanmayacaktır.
+
+607
+01:56:25,800 --> 01:56:32,480
+Neden? Çünkü ana tabloda bir oraya gidecek, bir oraya gidecek, bir oraya gidecek, bir oraya gidecek.
+
+608
+01:56:32,640 --> 01:56:36,760
+Yani çünkü 60.000 ile 200.000 arasında bir ton insan var yani.
+
+609
+01:56:37,939 --> 01:56:52,299
+İşte bu analizler acaba nasıl yapıyor sistem? Bunu Optimizer yapıyor. Optimizer, buradaki veri değer aralığına, değer dağılımına göre, bakıyoruz belki maaşlar, işte 50.000 ile 200.000 arasında dağılıyor.
+
+610
+01:56:52,779 --> 01:57:02,319
+Sorgu ne geldi? Sorgu da istiyor ki 60.000 ile 200.000 arasında istiyor. Ya o dominin, o aralığın zaten hemen hemen hepsini istiyor. O zaman niye indeks kullanalım?
+
+611
+01:57:02,707 --> 01:57:30,707
+Ben bunu bütün dosyada ararım zaten. Çünkü birçok çıktı var zaten. Niye indekslerinden gidip de bu dosyaya ulaşayım, random access yapayım? Yani ona random access deniyor. Disk.io dediğimiz şey o. O dosyada bir oraya bir oraya gidecek. O zaman bunun çıktılarına, yani bu sorgu çıktılarının, sorgunun arkasında nasıl işlendiğini X-Brain ile görebiliyoruz. Mesela onu da deneyin isterseniz. SQL ifadesinin başına X-Brain yazdığınız zaman...
+
+612
+01:57:30,707 --> 01:57:45,767
+sorgunun nasıl çalıştığını görecek. Eğer bu sadal üzerine bir indeks tanımladıysanız, indeksi kullanılmadığını görebilirsiniz. Aralığı arttırın, indeks kullanmayacaktır. Aralığı daraltın, indeks kullanılacaktır.
+
+613
+01:57:45,767 --> 01:57:55,847
+Evet, işte bu makamda böyle indeksin ana fikri, indeksin çeşitleri,
+
+614
+01:57:57,011 --> 01:58:01,371
+Yani bu çok böyle oldukça kapsamlı ve önemli bir konu.
+
+615
+01:58:01,371 --> 01:58:12,631
+Tabii bu derste biraz çok detaya inmeden, bunun kullanımı noktasında, şurada B plus 3 falan anlatıyor.
+
+616
+01:58:12,631 --> 01:58:16,471
+Şundan bahsedelim sadece, sonra da bitirelim.
+
+617
+01:58:16,471 --> 01:58:19,471
+Mesela...
+
+618
+01:58:23,283 --> 01:58:49,523
+Burada mesela SQL'de şu komutla mesela TX tablosu üzerinde TX'in şeması böyle TX, primary key, böyle bir index tanımladık. TX, PK, primary index demek istiyor herhalde. Niye PK demiş?
+
+619
+01:58:50,292 --> 01:59:02,612
+Zaten bir isim de, burada mesela text tablosunda böyle bir index tanımladık veya index'i düşür, sildik yani bu şekilde.
+
+620
+01:59:05,352 --> 01:59:16,712
+O zaman demek ki yani bu sistemimizdeki sorguların yoğunluğuna göre hangi tabloda, hangi nitelikte en fazla
+
+621
+01:59:17,167 --> 01:59:22,447
+sorgu oluyorsa, ona göre o tablolarda bir indeks oluşturmak gerekiyor.
+
+622
+01:59:24,287 --> 01:59:34,867
+Yani, uç bir şey düşünsek, madem indeks bize hizmet veriyor, buradaki fark da çok fazla, biraz hızlanıyor falan değil.
+
+623
+01:59:34,867 --> 01:59:40,867
+Bazen o indeksler böyle isabetli kullanılınca, sistemin hızını...
+
+624
+01:59:41,363 --> 02:00:06,143
+Yani binlerce kat daha hızlı oluyor. Çünkü logaritma üstlere yakın, yani subdiner diyelim yani. Tam karesel değil ama, onun arasında bir şey. O yüzden çok hızlı bir şekilde artıyor yani. Yani bunu örneklendirsek, logaritma 2, 1024, 10.
+
+625
+02:00:06,739 --> 02:00:19,899
+Yani bir Diner var, bir 24, bir de Logaritmik var, ona düştü. Yani çok basit bir şey oldu ama karşılaştığım oldu. Logaritma, onun o bir 24'ün Diner olmasının şiddetini ona düştürdü.
+
+626
+02:00:23,091 --> 02:00:31,332
+İşte o zaman demek ki burada indeksler öyle yerli yerinde kullanılınca sistem verimini çok önemli bir şekilde arttırıyor.
+
+627
+02:00:31,332 --> 02:00:39,731
+Madem öyle bütün tabloların bütün nitelikler üzerinde indeks oluşturalım. Öyle dursunlar onlar. İhtiyaca göre kullanılsınlar.
+
+628
+02:00:41,731 --> 02:00:44,612
+Diğer kaplar güzel, ilk haklı gelen o. İkincisi.
+
+629
+02:00:46,579 --> 02:01:06,619
+Bu makamdaki suallerin hemen akabinde ikinci olarak burada bir tekrar var. Redundancy var. Redundancy ne burada? Tekrar eden şey ne? Belki az bir şey tekrar ediyor ama redundancy var. Nerede burada redundancy? Search key. Bu ana tabloda da var. İndekste de var.
+
+630
+02:01:07,123 --> 02:01:32,463
+Yani ana tabloda bu güncelleme yeni bir kayıt geldiği zaman indeks eklemen lazım. Ana tabloda çıkardığın zaman indeksini çıkartman lazım. Ana tabloda o search key update olduysa, indeks onu update etmen lazım. Yani consistency, veri bütünlüğü, data integrity gene, hani biraz önceki konularda gördüğümüzde replik ettim, yer kaplıyor. Çok önemli değil. Esas önemli olan ne orada? Consistency. Nasıl tutacağım onu mesela?
+
+631
+02:01:35,123 --> 02:01:57,423
+Bir redundancy, fazladık, replikasyon, yani onun maintenance'ı, yani güncelliğinin tutulması ayrı bir yük. O yüzden bir şema oluşturduk, bir veritaban oluşturduk. Tablolarımızda niteliklerimiz var. İndeks hızı çalıştırıyor, hızı arttırıyor, çok arttırıyor hem de yani. O zaman bütün tabloları da indeks oluşturduk.
+
+632
+02:01:57,695 --> 02:02:14,155
+Yok yani böyle bir şey, mümkün değil. İhtiyaca göre, yine default olarak sistem tabloların primary key'lerini de default olarak oluşturuyor indeks. Yani kullanıcı oluşturmasa da otomatik oluşturur yani. Neden acaba primary key'i de oluşturur?
+
+633
+02:02:15,935 --> 02:02:23,155
+Yo, onlar da değişebilir. Yani az değişse de veya yeni kayıt gelecek yine, silebilirim o kaydı. O primary key'ler de gene...
+
+634
+02:02:23,488 --> 02:02:36,848
+hem değişebilir hem de eklemeler çıkarmalar olacak. Ama default olarak, otomatik olarak isterseniz deneyin. Yani üniversite veritabanının şamasının kataloglarına bakın mesela.
+
+635
+02:02:37,808 --> 02:02:43,748
+PC SQL'de, PC admin'de kurmuşsunuzdur. Vardır. Kampanyo veritabanı da vardır zannedersem.
+
+636
+02:02:44,148 --> 02:02:49,468
+Bu ders kapsamında bunlar PCNF'inde olduğunu düşünüyorum sizin makinelerinizde.
+
+637
+02:02:49,468 --> 02:03:00,188
+Onların kataloglarına bakın. İsterseniz SQL komutlarıyla, isterseniz o soldaki o drop down menülerde falan o şeylere bakabilirsiniz kataloglarında.
+
+638
+02:03:00,188 --> 02:03:01,868
+Orada renkli renkli şeyler var ya.
+
+639
+02:03:02,131 --> 02:03:21,691
+FijcAdmin'in şeyinde. O kutuların her birinde indeksler var, işte sekvensler var, fonksiyonlar, prosedürler falan öyle kullanımı oldukça şey, arayüz ve elverişli yani. O indekslere baktığınız zaman orada default olarak Bplus3 indeksler göreceksiniz primary key'nin üzerinde. Neden?
+
+640
+02:03:22,707 --> 02:03:31,108
+tüm bu açıklamalarımızdan sonra primary keylerde ne kadar bir yük de olsa, consistency noktasında, default olarak bunu oluşturuyor.
+
+641
+02:03:37,524 --> 02:03:47,524
+Şimdi sadece aramalarda değil, indekslerin kullanılması. Aynı zamanda kısıtların, yani kısıtlar deyince aklımıza gelen primary key kısıtı.
+
+642
+02:03:47,524 --> 02:03:55,524
+Bunun sağlanmasında da indeks kullanmam lazım. Yani düşünün milyonlarca bir kayıt var. Ben oraya bir tane kayıt ekliyorum. Tablomda da primary key var.
+
+643
+02:03:55,524 --> 02:03:59,244
+E nasıl bu diyeceğim ben o kayıt orada var mı yok mu?
+
+644
+02:03:59,604 --> 02:04:19,863
+Bakmam lazım yani, teker teker, var mı var mı var mı diye. Orada, Bplastri ile veya hash ile ama default olan Bplastri, o kaydın olup olmadığını çok hızlı bir şekilde bakabiliyor yani. Var yok yani, lookup sorguları deniyor bunlara. Lookup var mı yok mu bir bak. Yoksa ona ekliyor, yoksa reject ediyor.
+
+645
+02:04:20,340 --> 02:04:36,319
+İşte bu noktadan aynı şekilde join işlemlerinde de gene çoğu zaman yabancı anahtar primary key üzerine join olduğu için o join'ın da böyle indekslerle daha hızlı gerçeklenmesine imkan sağlıyor indeksler.
+
+646
+02:04:37,539 --> 02:04:40,920
+Evet, dersi bitirelim isterseniz.
+
+647
+02:04:42,140 --> 02:04:43,920
+Dediğim gibi sınav...
+
+648
+02:04:44,051 --> 02:04:49,072
+NO SQL ve tabanları dahil olacak şekilde, indeks konusu dahil değil.
+
+649
+02:04:50,731 --> 02:04:58,771
+İslamımızın kapsamı, ana hatlarıyla işte biraz önce söylediğim gibi SQL'de var gene, SQL olur.
+
+650
+02:05:00,051 --> 02:05:05,731
+İlişkisel model kavramları da olur ama daha çok işte kavramsal tasarım, ER diyagramları.
+
+651
+02:05:06,000 --> 02:05:16,440
+ve normalizasyon konusu ve NoSQL'den de gene genel tüntür makamında veya buradaki yaptığımız açıklamalar kapsamında yine sualleri olur.
+
+652
+02:05:17,260 --> 02:05:19,359
+Birinci sınavın formatı şeklinde olur.
+
+653
+02:05:21,119 --> 02:05:27,119
+Yine sınavları hazırladıktan sonra bir format paylaşımı yapalım.
+
+654
+02:05:29,480 --> 02:05:31,659
+Evet, ekran paylaşımını unuttuk herhalde ya.
+
+655
+02:05:31,980 --> 02:05:33,100
+Ya yaptık herhalde değil mi?
+
+656
+02:05:35,539 --> 02:05:36,459
+Her mother thing.
+
+657
+02:05:40,307 --> 02:05:42,007
+Yaptık, hayal, evet, yaptık.
+
+658
+02:05:47,220 --> 02:05:48,920
+Neyse, yapmadıysa haklı.
+
+659
+02:05:51,740 --> 02:05:54,500
+Evet, arkadaşlar, görüşmek üzere, başarısından diliyorum.
+
+660
+02:06:00,948 --> 02:06:06,188
+Sunnulara da erişebilirsiniz. Yani kitabın tüm sunnuları arasında chapter 14 bu.
