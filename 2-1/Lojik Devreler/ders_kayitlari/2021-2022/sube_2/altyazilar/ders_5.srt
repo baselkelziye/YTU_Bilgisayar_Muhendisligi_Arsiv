@@ -1,0 +1,983 @@
+1
+00:03:19,572 --> 00:03:21,812
+Merhaba arkadaşlar. Ses geliyor mu?
+
+2
+00:03:23,852 --> 00:03:24,632
+Merhaba hocam, geliyorum.
+
+3
+00:03:25,951 --> 00:03:28,171
+Evet, merhabalar. Sağol [öğrenci].
+
+4
+00:03:29,652 --> 00:03:35,972
+Belki duydunuz, belki geçen haftalarda, sınav haftasında falan konuşuldu.
+
+5
+00:03:36,711 --> 00:03:39,852
+[kişisel bilgi]
+
+6
+00:03:41,292 --> 00:03:46,072
+[kişisel bilgi]
+
+7
+00:03:46,771 --> 00:04:08,531
+Bizi daha da akumadım zaten. Bu haftada yine online olarak kısa bir ders yapacağız. [kişisel bilgi] Onun için kısa bir ders yapacağız. Önümüzdeki hafta inşallah daha yüz yüze bir şekilde derse devam ederiz.
+
+8
+00:04:11,171 --> 00:04:12,771
+Nasıl herhalde?
+
+9
+00:04:14,099 --> 00:04:19,699
+Evet, en son vize haftasından önce kombinasyonel devrelere bakmıştık.
+
+10
+00:04:20,600 --> 00:04:25,779
+Burada önemli olan nokta şuydu, inputlarımız var ve outputlarımız vardı.
+
+11
+00:04:25,779 --> 00:04:39,659
+Burada inputlar ve outputlar sadece o T zamanı için, yani T anındaki inputlar neyse, o anki outputu oluşturmaya yarayan devre tasarımlarıydı.
+
+12
+00:04:40,755 --> 00:04:50,795
+Yani soruları da çözmüştük bize haftasından önce. Oradan da hatırlayacağınız gibi ABC diye pek çok inputumuz olabilir.
+
+13
+00:04:50,795 --> 00:05:07,855
+Veyahut da X'ye gibi veya Z'ye gibi yani 4 hani output olabilir. Böyle bir yani multi-output olan sistemlerde herhangi bir önce veya sondaki durumdan bahsetmediğimiz
+
+14
+00:05:08,307 --> 00:05:13,528
+O anki ABC değerleriyle ilgisinin belirlendiği devre tasarımlarıydı.
+
+15
+00:05:14,228 --> 00:05:21,168
+Kombinezonsal devreler diye talep ettiğimiz ve kombinezonsal devre diye konuştuğumuz devreler bunlardı.
+
+16
+00:05:22,247 --> 00:05:31,307
+Bu devrelerde süresiz birkaç tane özel devre tasarımlarına bakacaktık.
+
+17
+00:05:33,235 --> 00:05:36,695
+Aptaya da önceki hafta yazmıştık hatırlarsanız.
+
+18
+00:05:40,615 --> 00:05:49,235
+Şöyle aritmatik ve lojik konusyonları yapacağımız, spesifik tanımlayabileceğimiz devrelerden bahsettik. Bunlar...
+
+19
+00:05:49,459 --> 00:06:00,259
+Tam çıkarıcı, tam toplayıcı, tam yarı çıkarıcı, yarı toplayıcı devrelerdi. Bunları zaten derste vizelerden önceki hafta, tahtada anlatmıştık.
+
+20
+00:06:00,259 --> 00:06:11,779
+Doğruluk tablolarını vesaire çıkartıp devre tasarımını yapmıştık. Ve onları, yani şurada da var zaten, örneğin, mesela pull-adder.
+
+21
+00:06:14,644 --> 00:06:33,644
+Tam toplayıcı bir örnek, nasıl doğduk tablosunu oluşturduğumuzu, onun sonrasında da nasıl bu doğduk tablosundan bir lojik diyagram çıkarttığımızı bahsetmiştik ama biz bu kombinezonsal devrelerde burada aslında yaptığımız detaylıca analizi bir...
+
+22
+00:06:34,163 --> 00:06:45,563
+blog diyagramıyla göstereceğiz demiştik ve 4 bitli veya daha fazla bitli anlamında bir toplama çıkarma devresi tasarımı yapmıştık derse.
+
+23
+00:06:46,783 --> 00:06:55,163
+Bu hafta biraz daha veri transferi, verilerin iletimi noktasındaki özel devrelere bakacağız.
+
+24
+00:06:56,124 --> 00:07:00,183
+Multiplexer'lar, demultiplexer'lar, encoder ve decoder diye.
+
+25
+00:07:00,947 --> 00:07:13,707
+belirtileniz kısımlar olacak. Kısa bir ders olacak zaten. Bu dört devreyi entegrenin iç yapısına, doğruluk tablolarını anlatıp, nerede, nasıl kullanacağınıza değineceğiz.
+
+26
+00:07:15,927 --> 00:07:22,967
+Yine hızlıca biz yarı toplayıcı ve tam toplayıcı, yarı çıkarıcı, tam çıkarıcılara bir bakalım isterseniz.
+
+27
+00:07:23,391 --> 00:07:46,471
+Yarı toplayıcı bildiğimiz yapılar aslında bir bitsel. Yani A ve B diye iki tane sayımız olsun. A da bir bit, B de bir bit. A ve B iki tane birer bitlik sayının topladığımızda bir senaryoda eldeimizin oluştuğu ve toplamını da gösterdiğimiz bir yapıydı bununla. Yarı toplayıcı devreleri.
+
+28
+00:07:46,879 --> 00:07:58,720
+Ve bunun doğru tablosu AB2 sayı topladığımızdaki ise sandan gelen toplam ifadesi, C'de Kerry'i gösteren, elde ifadesini veren doğru tablosunu oluşturuyordur.
+
+29
+00:08:10,420 --> 00:08:18,660
+Bunları S ve C'sine göre devresini kurarsak, sağdaki devre lojik diyagramını çıkartmıştık dersi.
+
+30
+00:08:19,800 --> 00:08:25,320
+Yarı toplayıcıları tabii işte normalde biz gösterirken şöyle bir kutu.
+
+31
+00:08:25,779 --> 00:08:33,819
+şeklinde göstereceğiz demiştik. Bunlardan, yani yarı toplayıcılardan aslında tam toplayıcıyı çıkartmayı da anlatmıştık.
+
+32
+00:08:34,460 --> 00:08:42,220
+AB normalde birer bilgisayımız. Bu sefer eldemiz var. Çünkü aslında elde burada şunu gösteriyor bize.
+
+33
+00:08:42,220 --> 00:08:45,220
+Bir sonraki, yani iki bilgisayının...
+
+34
+00:08:45,587 --> 00:09:01,668
+Her biri aslında birer birer bitler alarak topladığımız bir işlem. Ama işte ondalık sayılarda nasıl biriler ve birler basamağını tuttuktan sonra eldeğimiz onlar basamağını aktarma süreci var. Burada da CI'nin bunu kastettiğini bahsetmiştik.
+
+35
+00:09:02,740 --> 00:09:12,379
+A, B, C'ini input olarak alan Cout, yani bir sonraki dişte onlarsa yüzler basamağını, yüzler basamağını dişte ise,
+
+36
+00:09:12,920 --> 00:09:27,799
+işte binler basamağını aktaracağımız Cout'u ve sam'ını gösteren sam'ın ifadesi S'yi dolu tablosunda yerleştirip kurgulamıştık ve bunun da derste zaten lojik diyarlarımı çıkartmıştık.
+
+37
+00:09:28,539 --> 00:09:29,700
+Bunlar da pull-aider'dı.
+
+38
+00:09:30,419 --> 00:09:40,220
+Yarı çıkarıcılarda da aynı yarı koplayıcılarda olduğu gibi x-y'yi ifade eden D girişimiz, yani çıkışımız diyebiliriz.
+
+39
+00:09:40,319 --> 00:09:50,619
+Bir de BORO pinini gösteren B pinimizi zorluk tablosuna ulaştırıp çıkartmıştık. Bunları full substractable de aynı şekilde yapmıştık.
+
+40
+00:09:55,475 --> 00:10:10,475
+İç yapısını izah ettik ama mentalitesini anlatmak için de normalde biz devre çözümlerinde tam çıkarıcı dediğimiz yapıları bir dörtgen bir devre tasarımıymış gibi kullanacağız.
+
+41
+00:10:10,475 --> 00:10:15,307
+A0, B0, A1, B1, burada mesela 4 gibi iki tane sayına.
+
+42
+00:10:15,347 --> 00:10:35,947
+Birbiri içerisinde çıkartımı, elde bitkilerinin de birbirinden birbirine nasıl birler basamağı, onlar basamağını devrediyorsa veya onlar basamağından bir elde aldığımızda birler basamağına iki tabanında bir sayı geçiyorsa bunu ifade etmek için gösterdiğimiz blok diyagramları da çözümü söylüyorduk.
+
+43
+00:10:37,524 --> 00:10:56,524
+Ayrıca hem toplayıcı hem çıkarıcı tam toplayıcı kullanarak yaptığımız bir çözüm vardı. Derslerde de yapmıştık biz ilerden önceki hafta. Burada bir XOR kapısıyla aslında B0'ı biz M bitine bağlı olarak tümleyenini alıyorduk. Sonuçta şunu biliyorum ben.
+
+44
+00:10:58,323 --> 00:11:07,503
+4-bitli bir sayı olabilir, 3-bitli bir sayı fark etmez. İki tane sayının toplama işlemi zaten direkt toplama ifadesi tam toplayıcılarda yapılacak.
+
+45
+00:11:07,503 --> 00:11:19,343
+Ama çıkarma işlemi için aslında ikinci sayının tümlenini alıp A0 yani ilk sayıyla toplayıp elimizde de...
+
+46
+00:11:19,344 --> 00:11:37,884
+ne dediğimiz o pin eldeymiş, yani elde biti olarak topladığımızda artı bir olarak yani, A0-B artı bir ifadesini yapıyoruz. O da aslında çıkartma işlemi yapıyor diye hizah etmiştik. Bundan da bahsettik.
+
+47
+00:11:38,884 --> 00:11:39,784
+Şimdi,
+
+48
+00:11:40,224 --> 00:11:49,064
+Aslında bu tarz entegrelerinde arkadaşlar, yani demin decoder, encoder, multiplexer ve multiplexerlardan da bahsedeceğiz ileride.
+
+49
+00:11:49,683 --> 00:12:00,144
+Hepsinde genelde komünizonsal devrelerde bir enable, yani etkin bir ne denebilir, aktif eden bir pini mevcuttur.
+
+50
+00:12:00,432 --> 00:12:09,031
+O pin, enable pin'i tarafına verdiğimiz değere göre aslında o enteklinin çalışıp çalışmayacağını gösterir bu bize.
+
+51
+00:12:09,851 --> 00:12:15,151
+Bu enable ucuyla biz çok fazla iş yapacağız. O yüzden burayı bir üzerinde vurgulayalım.
+
+52
+00:12:15,771 --> 00:12:21,091
+Misal örnek verelim. Bir V kapımız var. Şu sağ tarafta gözüküyor herhalde.
+
+53
+00:12:21,716 --> 00:12:30,175
+Bu V kapısında bir enable ucumuz olsun, bir de X denen işte ne olduğunu bilmediğimiz bir girişimiz olsun.
+
+54
+00:12:30,836 --> 00:12:36,615
+Şimdi enable'ı bu tarz bir yapıda sıfır verirsek aslında biz neyi yapmış oluyoruz?
+
+55
+00:12:37,495 --> 00:12:41,696
+X'i hiçbir şekilde F'e yani dışarıya çıktı olarak almıyoruz.
+
+56
+00:12:42,315 --> 00:12:44,556
+Enable sıfır demek aslında...
+
+57
+00:12:44,947 --> 00:13:07,187
+F'i 0 yapıyorum. Yani ben bu entegreyi çalıştırmıyorum demek oluyor. Ama Enable'a 1 verdiğimizde F'imiz ne oluyor? X'e eşit oluyor değil mi? X'in 0 ise 1 0'dan 0 çıktığı için X'e eşit. X'in 1 ise 1 1'den 1 çıktığı için gene X'e eşit. Yani aslında Enable şu yapıda, şu A şıkta.
+
+58
+00:13:07,567 --> 00:13:17,567
+gösterilen diyagramda, Enable tamamen benim için sıfırsa maskeleme yaparak çalışmadığımı yönetim edelim.
+
+59
+00:13:17,727 --> 00:13:24,967
+Ama bir ise, enable'a bir verdiğimiz senaryoda ise, X'in değeri ne ise, F'in de O olacağını gösteriyor.
+
+60
+00:13:25,087 --> 00:13:31,627
+Yani enable adı üstünde. Bu entegreye enable eden bir pin yapısında kullanılma sunuyor bize.
+
+61
+00:13:32,167 --> 00:13:37,367
+V kapısıyla kullanımı bu şekilde ama bazı durumlarda V kapısıyla da kullanılabiliriz.
+
+62
+00:13:37,367 --> 00:13:39,907
+Bunu da tam ters düşünmemiz lazım.
+
+63
+00:13:44,019 --> 00:13:53,919
+Bir V'ya kapısında f'in x'e eşit olabilmesi için öteki tarafın 0 gelmesi lazım değil mi? Çünkü 1 geldiği anda f direkt 1 olur.
+
+64
+00:13:54,579 --> 00:14:07,599
+Yani enable bu tarz bir mimari de ben buraya 0 verdiğimde enable'a bunu notladığım için 1 gelecek ve bunu aslında enable 0'da olduğu için
+
+65
+00:14:08,019 --> 00:14:21,539
+çalıştırmayacak. Çünkü ne olursa olsun F'in 1 çıkacak. Burada Enable'ı, yani bu entegreyi aktif etmemiz için bizim buradan 1 vermemiz gerekirken, burada da yine aynı şekilde 1 vermemiz gerekiyor.
+
+66
+00:14:21,539 --> 00:14:29,000
+Ama inaktif olduğu durumlarda V kapılarında 0'ı görürken, biz VA kapılarında 1'i görürüz.
+
+67
+00:14:29,716 --> 00:14:41,895
+Bu diyagramı niye anlatıyoruz özellikle? Çünkü bazı durumlarda Enable sıfırda aktif olacak entegreler. Yani benim için aktif ne demek? Onu da vurgulamamız gerekecek.
+
+68
+00:14:41,895 --> 00:14:53,455
+İşte eğer ki Enable benim için aktifse, yani bir de aktif olan bir Enable'dan bahsediyorsam, Enable'ım sıfırken, V kapısı varsa sıfır üretecek.
+
+69
+00:14:55,091 --> 00:15:08,812
+0 iken, V-ya kapısı varsa 1 üretecek. Ama ne zamanki ben enable'a 1 vereceğim, o zaman gene V-ya kapısında da olduğu gibi, V kapısında da olduğu gibi, X'i eşit olacak.
+
+70
+00:15:09,351 --> 00:15:19,091
+Ama o disable olduğu durumlarda, V'de 0 alırken, V-ya'da ben 1'i alacağım. Çünkü V-ya kapıları için...
+
+71
+00:15:19,200 --> 00:15:33,360
+Enable maskelemesi 1'dir. Çünkü bir tarafın 1 olması, bunu direkt yere götürecek ve X'i çıkışta alamayacağım. Öteki tarafta ise V kafalarında bu değer 0 olacak maskelediği için.
+
+72
+00:15:34,519 --> 00:15:43,940
+Bu tamamen işte ileride farklı aplikasyonlarda, farklı uygulamalarda Enable'ı kullanacağız. Burada farklı çeşitlerde göstermek için koyduk.
+
+73
+00:15:44,371 --> 00:15:49,371
+Yani enable illa şöyle kafalarda kalmaması lazım.
+
+74
+00:15:49,371 --> 00:15:54,371
+İşte bir verince ben kesinlikle işte enable ediyorum gibi değil.
+
+75
+00:15:54,371 --> 00:15:57,371
+Belki bazı noktalarda sıfırda bu enable çalışacak.
+
+76
+00:15:57,371 --> 00:16:02,371
+Bazı noktalarda çalışmak diye tabir gösterdi yani.
+
+77
+00:16:02,371 --> 00:16:05,371
+Çalışmak tabiri enable sıfırken...
+
+78
+00:16:06,548 --> 00:16:12,467
+XF'e eşitlemek olabileceği gibi bazı durumlarda Enable 1 iken XF'e eşitlenir.
+
+79
+00:16:13,167 --> 00:16:14,927
+Bu aradaki farkı olduğu gibi.
+
+80
+00:16:15,927 --> 00:16:20,607
+Bunun gibi Enable'ı biz kullanacağız farklı yerlerde ama hedef, amaç şu.
+
+81
+00:16:20,607 --> 00:16:24,907
+Amaç Entegre'nin neyiydi?
+
+82
+00:16:44,916 --> 00:16:51,116
+Evet, yani enable'dan kastımız bizim o entegrenin çalışıp çalışmadığını gösterecek olan pin olacaktır.
+
+83
+00:16:52,316 --> 00:17:07,256
+Decoding ile başlayacağız. Decoder entegresiyle başlayacağız. Decoder arkadaşlar kod çözücü demek. Decode'dan geliyor.
+
+84
+00:17:07,955 --> 00:17:32,855
+Buradaki hep kod, yani çözülecek olan kod aslında şunu söylüyor bize, girişlerde verilmiş olan bir sayının, ama nasıl bir sayı, binary bir sayının, çıkışlardaki pinlerden, decimal karşılığı olan dijitten bir bilgisi veya sıfır bilgisi almayı söyler.
+
+85
+00:17:32,855 --> 00:17:34,755
+Ve kod işlemi budur.
+
+86
+00:17:34,943 --> 00:17:42,603
+Yani girişlerde örnek 1-0-1 olan, yani 3 girişi olan bir entegremiz olsun, decoderimiz olsun.
+
+87
+00:17:43,603 --> 00:17:53,963
+Girişte 3 girişi varsa çıkışta minimum 2 üzeri 3'den 8 tane, maksimum pardon, 3 üzeri 3'den 8 tane çıkışı olmak zorunda.
+
+88
+00:17:53,963 --> 00:17:58,667
+Çünkü neden? Ben girişlerde 1-1-1-1...
+
+89
+00:17:58,836 --> 00:18:12,615
+Yani üçünü de bir verdiğim bir giriş verdiğimde dekodere çıkışta yedinci pin olan sıfırdan başladığımızda, yani sekizinci pin geliyor tabii, iki üzeri üçüncü pin diyelim.
+
+90
+00:18:18,420 --> 00:18:26,940
+Ters çalışan bir decoder ise, diğerlerinden bir, oradan sıfır birisi almamızı sağlayan entegreler decoderler.
+
+91
+00:18:27,780 --> 00:18:36,060
+Bu decoderlerdeki önemli nokta isimlendirirken şöyle söylüyoruz arkadaşlar, girişten çıkış decoderi.
+
+92
+00:18:36,160 --> 00:18:39,840
+Yani deminki örnekte yapacaksak, 3 giriş vardı.
+
+93
+00:18:40,403 --> 00:18:53,663
+3 giriş, 8 çıkışlı, 3'e 8 decoder diye, 3 çarpı 8 decoder diye söylüyoruz. Bunları konuşurken bu şekilde söylüyoruz.
+
+94
+00:18:54,304 --> 00:18:58,724
+Mesela 1'den 2 veya 1 çarpı 2 decoder diyebiliriz.
+
+95
+00:18:59,188 --> 00:19:02,688
+Amacımız burada şu iç yapısını ilk başta göstermek.
+
+96
+00:19:02,688 --> 00:19:14,788
+Ama biz nihayetinde aynı pull-adder veya halk-adder devrelerinde olduğu gibi bunu bir blok diagramı şeklinde bir kare kutu içerisinde göstereceğiz.
+
+97
+00:19:14,968 --> 00:19:21,347
+Ama iç yapısında nasıl lojik diagramı var onu izah etmek için iç yapısını ilk başta anlatacağız.
+
+98
+00:19:22,188 --> 00:19:24,148
+1x2 decoder.
+
+99
+00:19:24,819 --> 00:19:34,779
+Yani girişte bir tane girişim var ama çıkışta iki tane çıkış ucunun bulunduğu bir decoder, yani bir kod çözücü devre.
+
+100
+00:19:35,500 --> 00:19:44,359
+Bu şunu söyleyecek bize esasında, yanımda tabi tabletim olmadığı için çok da çizemiyorum ama şurada bir alıp denemeye çalışayım.
+
+101
+00:19:44,359 --> 00:19:51,839
+Bu bize şunu söyleyecek esasında, bir kare kapımız var, bir tane girişimiz var.
+
+102
+00:19:52,948 --> 00:20:00,748
+İki tane çıkışımız var. 1x2'lik. Dekoderimiz bu.
+
+103
+00:20:05,203 --> 00:20:20,844
+Amaç burada şu esasında, girişteki I0 dediğimiz bu pinin 0 olduğu durumda, çıkışa biz buna, burada D denmiş, biz de D diyelim, D0 ve D1 çıkışlarımız var.
+
+104
+00:20:22,123 --> 00:20:30,803
+I0'ın 0 olduğu durumda, yani girişim benim 0 ise, buradan 1 almamı, buradan 0 almamı,
+
+105
+00:20:31,859 --> 00:20:44,579
+Şu sıfır durumunda. Ama girişim benim bir ise, D sıfır pininden sıfır, D bir pininden bir almamı sağlayan entegreyi söylüyor aslında.
+
+106
+00:20:44,579 --> 00:20:57,980
+İç yapısına bakacak olursak, aslında o çizmiş olduğum karenin içerisinde bir tane inverter kapısı var. A'ım benim sıfırsa,
+
+107
+00:20:58,675 --> 00:21:21,775
+iki tarafa da 0 gelecek. D1 pinin 0 olacak ama D0 pinin 1 olacak. Neden? Çünkü 0'ın çıkıştaki ondalık indisinde 1 almak gerekiyor. Kod çözücü bunu söylüyor esasında. 1 geldiğinde girişte.
+
+108
+00:21:22,708 --> 00:21:36,408
+D1, yani bir nolu indesinden bir alacağım, sıfır nolu indesten sıfır alacağımı gösteren entegre. Bu 1x2 decoder. 2x4 decodere bakalım.
+
+109
+00:21:37,548 --> 00:21:47,748
+Doğruluk tablosuna bakacağım. İki tane girişim var. İki tane giriş olan bir sistemde 2 üzeri 2'den 4 tane de çıkış dijitim olmak zorunda.
+
+110
+00:21:48,435 --> 00:22:00,115
+Her seferinde, yani 0-0 geldiğinde, B0, yani bu normalde binary bir sayının ondalık bir ciddi karşılığından 1 almayı hedefliyorum bu entegreler için.
+
+111
+00:22:01,076 --> 00:22:11,035
+Tekrardan belirteyim, burada 0-1 yükselenle, dışkışta gösteriyoruz ama bazı decoderler bunun tam tersi çalışır.
+
+112
+00:22:11,476 --> 00:22:23,436
+Ne demek istiyorum? Yani D0, 0'da, D0'dan 0, diğerlerinden 1 veren entegreler de olabilir. Bu ince nüansı diyagram üzerinde anlatacağız.
+
+113
+00:22:23,436 --> 00:22:27,436
+Şimdi 0, 0 durumunda...
+
+114
+00:22:28,147 --> 00:22:39,407
+1 verecek, 0, 1'de D1. pinden 1 verecek, 1, 0'da D2'den 1 verecek, 1, 1'de D3'den 1 verecek olan entegre aslında decoderler.
+
+115
+00:22:39,987 --> 00:22:53,147
+Aslında kod çözücünden kastığımız girişteki binaryyi, decimal anlamdaki dijitten 1 alacağımız veya tam tersi 0 alacağımız, diğerlerinden 1 alacağımız entegreleri kastediyorum.
+
+116
+00:22:54,099 --> 00:23:08,479
+İç yapısına baktığımızda da aslında 2Y4 decoder içerisinde yine A0 ve A1'in bir girişte inverterla beraber kullanımı var.
+
+117
+00:23:08,832 --> 00:23:18,912
+Amaç burada şu aslında, D0'da normalde şu D0'dan 1 olması için ikisinden de 0-0 verisinin geldiği senaryoyu entlememizi istemiş.
+
+118
+00:23:18,912 --> 00:23:27,692
+Yani 0-0'ı invertlersem ben 1 gelir, A1'den de 1 invert alırsam 1-1 ve 1-1'den de 1.
+
+119
+00:23:27,832 --> 00:23:33,852
+Yani D0 pininden ben 1'i alabilirim, diğerlerinden hep 0 alacağım.
+
+120
+00:23:34,259 --> 00:23:38,720
+0, 1'deyken A0'ın invertörünü almam lazım.
+
+121
+00:23:40,840 --> 00:23:44,680
+A1'in, pardon, evet A1'in invertörünü almam lazım.
+
+122
+00:23:44,840 --> 00:23:46,420
+A0'ın kendisini alacağım.
+
+123
+00:23:46,880 --> 00:23:48,319
+A0'ın kendisini aldım.
+
+124
+00:23:48,460 --> 00:23:50,039
+A1'in invertörünü aldım.
+
+125
+00:23:50,620 --> 00:23:53,180
+Sadece bu senaryoda diğerlerinde 0 çıkacak.
+
+126
+00:23:53,880 --> 00:23:59,100
+Ama işte 0, 1 durumunda sadece D1'den ben bir verilisi alıyorum.
+
+127
+00:23:59,100 --> 00:24:00,920
+İç yapısı böyle esasında.
+
+128
+00:24:01,332 --> 00:24:07,951
+İç yapısında AND kapıları ve INVERT kapıları ile bir diğer ramps de sonsuz.
+
+129
+00:24:08,332 --> 00:24:13,672
+Ve burada aslında INVERT kapıları ENABLE ediyor bir nebze, deminki örnekle olduğu gibi.
+
+130
+00:24:17,844 --> 00:24:25,163
+Şimdi bu decoderlerin expansion'ları var. Yani büyütebiliyoruz. Yani şöyle sorular olabilir.
+
+131
+00:24:25,163 --> 00:24:36,403
+2'ye 1, pardon, 1'e 2 decoderler kullanarak 3'e 8'lik decoder üretilebilir mi? Evet üretilebilir.
+
+132
+00:24:36,403 --> 00:24:45,084
+Tek yapmamız gereken, şurada da zaten gördüğünüz gibi 1'e 2'lik decoderi aslında kullanarak biz içerisinde...
+
+133
+00:24:45,104 --> 00:25:01,203
+İki tane, ikiye dörtlük decoder üretmiş olduk. İşte bu A0'ı, A1 yine aynı metodolojiyle, aynı yaklaşımla, tane inverter kapısıyla enable ettiğimiz V'ler var, V kapıları var.
+
+134
+00:25:01,203 --> 00:25:12,543
+İki çapısı bu şekilde çalışıyor decoderler. 3'e çarp, 3'e çarp, 8'lik bir decoder düşünelim. Şurada.
+
+135
+00:25:12,980 --> 00:25:19,740
+Ve biz bunu şöyle üretelim. Bir tane 2'ye 4 decoder kullanalım, bir de 1'e 2 decoder kullanalım.
+
+136
+00:25:21,319 --> 00:25:30,240
+Normalde 3'e 8'lik bir decoderin mantığında 3 tane girişim olacak, 2 üzeri 3'ten 8 tane çıkışım olacak.
+
+137
+00:25:30,899 --> 00:25:34,359
+Örneğin ben girişte 0, 1, 1 verisi verdim.
+
+138
+00:25:35,476 --> 00:25:42,796
+Neyden çıktı almam lazım? Ve 3'ten almam lazım değil mi? Çünkü 0, 1, 1 benim için 3 ne olur?
+
+139
+00:25:43,576 --> 00:25:56,588
+Çıkışlarda 3 ne olur? Pinden 1, diğerlerinden 0 vermesi lazım. Ana mantık böyle. Şimdi bunu aslında iç yapısına baktığımızda...
+
+140
+00:25:57,619 --> 00:26:23,160
+2E4'lük bir decoder mimarimiz var, demin gösterdiğimiz gibi. A1 ve A0, bu 4 tane V kapısını invertlerle beraber enable ederek, 0, 0 geldiğinde bunun çalışacağı, 0, 0, 1 geldiğinde bunun çalışacağı, 1, 0 geldiğinde bu, 1, 1 geldiğinde şuradan çıktı alacağım, yapıyı sokuyor. Şu kısım zaten 2E4'lük bir decoder.
+
+141
+00:26:23,647 --> 00:26:33,208
+Buna ben bir 8 tane VR kapısı ve bir adet inverted ile enable ederek çoğulluyorum. Bu ne demek oluyor?
+
+142
+00:26:34,167 --> 00:26:44,407
+Burası 0 geldiği sürece şuradaki 4'ün aynısı buradaki 4'e gelsin. Ne zaman ki buradan bir verisi geldi, artık üstteki 4 çalışmasın.
+
+143
+00:26:45,044 --> 00:26:51,624
+Aynı mimari, yani sonuçta kendini tekerrür ediyor, şunun aynısını şu alttaki 4'e kaydırayım.
+
+144
+00:26:52,384 --> 00:26:58,844
+Hedef bu. Yani ben 1-0-0 geldiğinde, normalde 0-0 gelen iki taraf çalışacak.
+
+145
+00:26:59,284 --> 00:27:07,344
+Nedir bu konuna? Bu D-0'a da gelecek. Şuraya da gelecek. Ayrıca D-4'ü de gelecek.
+
+146
+00:27:10,291 --> 00:27:17,932
+Bir yazdığım için şu enable yukarıdakini disable edecek, alttaki D4'ü enable etmiş olacak.
+
+147
+00:27:18,591 --> 00:27:24,731
+Öyle olunca da sadece ve sadece benim için D4'ten bir verisi gelecek.
+
+148
+00:27:25,731 --> 00:27:37,672
+1, 0, 0 D4'ü gösterdiği için ve ayrıca yani mesela ben bu enable'ı kaldırsam 0, 0'dan dolayı D0'da da çıkar, D4'te de çıkar.
+
+149
+00:27:38,228 --> 00:28:03,188
+bir verisi. Ama ben bu A2'yi, yani 3'e 8'lik bir decoder üretmek istiyorum. Yüksek anlamlı biti, başka bir invert ile başka bir katman 8'li B kapısını enable için kullanıyorum. Bunun gibi çoğaltma yapılabiliyor arkadaşlar. Dekodörleri böyle çoğaltabiliyor.
+
+150
+00:28:05,395 --> 00:28:13,796
+Şimdi dekoderlerde de bütün entegrelerde de bir tane aslında dekoder kılıfının dışında bir de Eneye bulucumuz daha mevcut.
+
+151
+00:28:13,796 --> 00:28:28,695
+Doğruluk tablosuna bakacak olursak, Eneye bulucu ne zaman sıfırsa, dekoderin o girişlerinde 2'ye 4'lü bir dekoder bu, girişlerindeki veriler ne olursa olsun çıkışlarım benim sıfır oluyor.
+
+152
+00:28:28,695 --> 00:28:31,695
+Tabii bunu şimdi burada belirtmekte fayda var.
+
+153
+00:28:32,723 --> 00:28:38,903
+Şimdi şöyle bir 2x4 bir decoder olsun.
+
+154
+00:28:39,983 --> 00:28:43,043
+Bir işleyin, iki tane çıkıştırın.
+
+155
+00:28:44,863 --> 00:28:45,355
+Dört tane.
+
+156
+00:28:48,596 --> 00:28:59,976
+Şimdi, eğer decoder bu şekilde çizildiyse arkadaşlar, doğruluk tablosu aşağıdaki gibi, enable'ım sıfırdayken çalışmayacağını gösteriyor.
+
+157
+00:28:59,976 --> 00:29:11,096
+Ve girişlerimdeki A1 hastalıklarım, A0, A1.
+
+158
+00:29:14,420 --> 00:29:36,020
+çalışmadığı durumlarda sıfır alacağımızı gösteriyor bu decoder. Şimdi dediğimiz gibi farklı decoder mimarları var. En çok karıştırılabilecek noktalardan biri şu. Şuraya bir bubble koyarsan da, enable yazdım. Yine aynı şekilde yazalım.
+
+159
+00:29:41,875 --> 00:29:49,255
+Bu da 2'ye 4'lü 1'de koyuyor. Ama Enable'ları bu 1'de aktif oluyor demek, bu 0'da aktif oluyor demek.
+
+160
+00:29:49,915 --> 00:30:00,000
+Doğruluk tablosu bununla bu tamamen değişecek. Bu mesela 0'da çalışmadığını gösteriyor. Ama bu entegre sağ...
+
+161
+00:30:00,000 --> 00:30:18,519
+Buradaki decoder için işi tam tersi olacak. 1'de çalışmayacak. Yani şurası 1 iken çalışmadığını göstereceğiz. 0'dayken çalışan bir decoderi bahsediyoruz. Yani buradaki bubble dediğimiz yuvarlaklar çok önemli decoderler için. Bir başka farklı bir gösterim yapalım.
+
+162
+00:30:24,692 --> 00:30:25,731
+Bu bir de aktif.
+
+163
+00:30:33,364 --> 00:30:34,903
+Bu sıfır da aktif.
+
+164
+00:30:41,844 --> 00:30:47,844
+Şimdi yine sıfırda aktif bir enable yapmak istiyorum ama bu sefer bir de şöyle bir şey daha yapacağım.
+
+165
+00:30:50,004 --> 00:30:57,084
+Bu bubblelar o yüzden çok önemli. Yani decoderin nasıl çalıştığını anlayabilmemiz için bu bubbleları görmemiz lazım.
+
+166
+00:30:57,844 --> 00:31:04,764
+Şimdi bu da sıfırda çalışıyor. Yani ben enable'a ne zaman sıfır versem o zaman bu çalışacak.
+
+167
+00:31:05,140 --> 00:31:21,100
+Ama çalışma prensibi tam tersi. Nasıl? Ben mesela buradan 0, 1 verisi gönderdim. Normalde 0, 1 verisine baktığımızda D1'den, pardon, 0, 1'i şöyle A0'ı yukarıya mı demişim?
+
+168
+00:31:21,759 --> 00:31:32,640
+Tamam, yani şu, şu satırı çalıştım. Yani D2'den 1, diğerlerinden 0 almam lazım. 1, 0 verisi gönderdim.
+
+169
+00:31:33,619 --> 00:31:48,119
+Şimdi ama burada bubble olduğu için bunu tam tersine düşüneceğiz. Yani ben D2'den D0, 1, 2, D2'den 0 alacağım, diğerlerinden 1 alacağım. Çünkü bubbly olduğu için.
+
+170
+00:31:49,140 --> 00:31:55,059
+Anlaşıldı mı? Yani bu tarz decoderlerin çizimindeki bubble'lar çok önemli.
+
+171
+00:31:55,240 --> 00:32:01,000
+Çünkü doğruluk tablosunda sıfır mı üretecek, bir mi üretecek, onu gözlemlememizi sağlayacak.
+
+172
+00:32:01,359 --> 00:32:08,440
+Enable'daki bubble ise sıfırda mı bu entegre enable olacak, bir de mi enable olacak, onu gözlemlememizi sağlayacak.
+
+173
+00:32:08,859 --> 00:32:10,920
+Şu an bu bunun için bir doğruluk tablosu.
+
+174
+00:32:10,920 --> 00:32:15,619
+Bunun doğruluk tablosunu yazmak istediğimizde yapacağımız şey buralar sıfır.
+
+175
+00:32:18,932 --> 00:32:22,471
+Diğer her tarafın bir olduğu doğru tablosu.
+
+176
+00:32:23,072 --> 00:32:28,392
+Tabi Enable'ın burada Bubble olduğu için Enable sıfır da olacak.
+
+177
+00:32:31,955 --> 00:32:33,795
+Anlaşıldı mı arkadaşlar?
+
+178
+00:32:35,675 --> 00:32:45,135
+Yani benim için bir decoderden bahsedeceksem, decoder grafiğinin o blok diagramının bubble'larının çok önemi var.
+
+179
+00:32:45,715 --> 00:32:50,715
+Burada da hani iç yapısı direkt bahsedilmiş. Enable bir de aktif oluyor zaten belli.
+
+180
+00:32:51,375 --> 00:32:56,535
+Çünkü V katları bir de anca öteki tarafa ne olduğunu buraya yansıtır.
+
+181
+00:33:03,539 --> 00:33:07,700
+Decoder devresinin tam tersi arkadaşlar, encoder devresi dedi.
+
+182
+00:33:08,420 --> 00:33:15,220
+Şimdi encoder devrelerini derste, hani yüzde eğitimleri daha üstünden geçeceğiz ama kısaca şöyle bir izah edeceğim.
+
+183
+00:33:15,860 --> 00:33:21,640
+Enkoder devreleri arkadaşlar, girişteki herhangi bir şeyi koplamak için kullanılıyor.
+
+184
+00:33:22,064 --> 00:33:31,423
+Bunun içinde farklı örnekler var. Bir tanesi mesela en çok kullanılan örneklerden biri. Desimalden BCD encoder devreleri.
+
+185
+00:33:31,423 --> 00:33:47,064
+Bunun için normalde biliyorsunuz desimal bir sayıyı BCD formatta yazabiliyorduk. Bunun için şöyle 4 bitli bir...
+
+186
+00:33:47,251 --> 00:33:57,912
+BCD formata geçirmeyi, sonuçta 9'a, 0'dan 9'a kadar olan girdileri, decimal sayıları çıkışta BCD kodu ile yazacağız.
+
+187
+00:33:58,951 --> 00:34:07,031
+Bu tarz encoder devrelerinde arkadaşlar, hedef, doğruluk tablosunu çıkartıp aslında normal bir lojik diyagram yapmak.
+
+188
+00:34:07,031 --> 00:34:11,851
+Hani direkt şey yok, bir decoder devresi gibi işte ikiden...
+
+189
+00:34:11,956 --> 00:34:32,916
+1'e 2'ye veya 3'e 8'lik bir decoder entegresi veya encoder entegresi yok. Enkoder entegreleri genelde spesif olarak yine step-by-step yolluk tablozunu çıkarttığımız, işte oradan devreyi kendi içerisinde kurduğumuz bir lojik diyagram encoder devreleri.
+
+190
+00:34:38,612 --> 00:34:50,251
+Normalde o decimal bir sayısı için A0, A1, A2, A3 bunlar BCD çıktıların birinin normalde...
+
+191
+00:34:50,324 --> 00:35:18,264
+0, 0, 0, 1 olması lazım. Burada ön şeyde kullanılıyor. 2 dediğimiz 0, 0, 1, 0'dan geliyor. 3 dediğimiz 0, 0, 1, 1 olması için iki tarafta da var. Böyle aslında bir doğruluk tablosunu çıkarttığımızda nasıl bunları elde edebileceksek, burada her bir bit için, bir silikolumda bir devre, yani kapı diagramı kurulacak.
+
+192
+00:35:18,324 --> 00:35:31,963
+ve encoder devresi olarak çalışacak. Başka bir encoder devresi, öncelikli encoder devresi. Bunlara derste bir daha değiniriz. Şu an gerek yok.
+
+193
+00:35:33,864 --> 00:35:39,324
+Şimdi bir sonraki entegremiz hazır kullanacağımız multiplexer entegreleri arkadaşlar.
+
+194
+00:35:39,923 --> 00:35:46,623
+Ki multiplexer'ların decoderlerle en çok karıştırıldığı noktalar aslında bu iki entegre.
+
+195
+00:35:47,764 --> 00:36:03,644
+Decoderler arkadaşlar, dediğimiz gibi 3'e 8, yani normalde bir binary yapıyı, decimal pin'den 1 verisi veya decoderin bubble'ından dolayı 0 verisi alabilmemizi sağlayacak olan entegreler bunlar.
+
+196
+00:36:04,115 --> 00:36:18,476
+Dekoderler bunlarda. Ama multiplexer'lar arkadaşlar, seçici entegrelerdir. Ne demek bu? Girişte birden fazla, 8 olur, 4 olur, 2 olur giriş var.
+
+197
+00:36:18,476 --> 00:36:30,635
+Ama çıkışımız sadece ve sadece bir adet çıkış olan entegrelerdir. Ve bunları biz konuşurken, 8'e 1 multiplexer diyelim mesela.
+
+198
+00:36:32,115 --> 00:36:36,416
+4'e 1 multiplexer diyeceğiz veya 16'ya 1 multiplexer diyeceğiz.
+
+199
+00:36:37,155 --> 00:36:45,756
+Hedef ne burada? 16 tane veya 8 tane girişten sadece bir tanesini çıkışa aktarmak demek.
+
+200
+00:36:45,756 --> 00:36:53,735
+Bak, decoderde çıkıştan biz decoderin mimarisine göre seçilen pinden 0 veya 1 alıyoruz.
+
+201
+00:36:54,228 --> 00:37:02,228
+Ama burada girişteki 16 tane veya 8 tane girişten seçtiğimiz girişi direkt çıkışa yansıtıyoruz.
+
+202
+00:37:02,228 --> 00:37:07,228
+Yani 0 veya 1 almak demek değil multiplexerlar.
+
+203
+00:37:07,228 --> 00:37:18,228
+Multiplexerlar, girişteki inputtaki seçilen, o input skalası içerisinde seçilen pin'i dışarıya direkt aktarmak demek olacak.
+
+204
+00:37:22,068 --> 00:37:23,868
+Aradaki en büyük fark bu.
+
+205
+00:37:24,468 --> 00:37:33,088
+Dekoderler bizim için bir girişteki binary sayının karşılığı olan indisin, ondalık pininden,
+
+206
+00:37:33,768 --> 00:37:39,048
+dekoderin mimarisine göre, Bubble'lı dekoderse de ne anlatayım gibi sıfır verisi alacağız,
+
+207
+00:37:39,608 --> 00:37:41,347
+Bubble'sı ise bir verisi alacağız.
+
+208
+00:37:41,347 --> 00:37:45,347
+Ama multiplexerlar girişlerdeki sayılık...
+
+209
+00:37:46,420 --> 00:37:59,059
+seçilen pinden pini direkt dışarıya aldığımız entegreler. Bunları söylerken de zaten 2'ye 1, 8'e 1, 4'e 1 multiplexer olarak izah ediliyor.
+
+210
+00:37:59,779 --> 00:38:09,100
+Şimdi multiplexerlarda, mesela 2'ye 1'lik bir multiplexerlarda 2 tane input'um olacak, 1 tane output'um olacak.
+
+211
+00:38:09,100 --> 00:38:12,100
+Bütün multiplexerlarda zaten 1 tane output'um olacak.
+
+212
+00:38:13,972 --> 00:38:17,092
+girişi dışarıya aktaracağımız bir tane altı.
+
+213
+00:38:17,972 --> 00:38:23,712
+Şimdi burada iki giriş diyoruz ama aslında bizim bir de seçme girişimiz olacak.
+
+214
+00:38:23,952 --> 00:38:31,512
+Bu seçme girişi, S girişi yani, benim girişlerdeki o iki taneden hangisini dışarı çıkartacağımı seçeceğim.
+
+215
+00:38:32,352 --> 00:38:37,052
+Aslında bir tık multiplexer'ın içerisinde decoder mimarası var.
+
+216
+00:38:37,907 --> 00:38:50,407
+I0, I1, iki tane girişim ve buradan herhangi bir veri geliyor. Ne geldiğini bilmiyorum. Yani I0, 0 da olabilir, 1 de olabilir. I1, 0 da olabilir, 1 de olabilir. Beni ilgilendirmiyor.
+
+217
+00:39:03,635 --> 00:39:19,235
+I1'deki veri neyse Y'ye çıkartacak. Amaç bu. Dekoder gibi değil. Dekoder'de biz girişteki veri çözünmüyorken, orada girişteki veri çıkışa aktarmayı hedefliyoruz. Neye göre? Seçme ucuna göre.
+
+218
+00:39:19,668 --> 00:39:37,668
+Bunun ekviyasionalına denklemini yazacak olursak da aslında, S'in değiliğiyle I0'ın bir V kapısıyla artı, S'in kendisiyle I1'in başka bir V kapısıyla orlanması ve tek seferde I0 veya I1'in çıkmasını sağlayan bir S kontrolünden bahsediyoruz.
+
+219
+00:39:42,452 --> 00:39:54,452
+Evet, yani aslında içerisinde dediğimiz gibi biri, iki bir line decoder var ve kendisinin en sonunda iki tane ikiye ikilik bir AND OR mimarisinde kapılardan bahsediyoruz.
+
+220
+00:39:54,612 --> 00:40:07,552
+Mesela başka bir multiplexer, bu da dörde birlik bir multiplexer. Yani girişte dört tane girişten seçtiğim S1 ve S0 pinleri, bu da şeye bağlı.
+
+221
+00:40:07,956 --> 00:40:25,635
+Aynı orantı aslında decoder dediği gibi. İkiye dörtlük bir decoder miması. Amaç burada bu dört tane girişten bir tanesini seçmek. Sekiz girişim olsa, sekiz tane girişi kaç binler seçerim? Üç binler seçerim. Yani aslında orada üçe sekizlik bir decoder içerir.
+
+222
+00:40:28,179 --> 00:40:40,379
+Burada da işte S1 ve S0'daki giriş 0-0 verdiğimde ben sadece I0'ın çıkmasını istiyorum demeyi sağlıyorum. Yani bunu hedefliyorum.
+
+223
+00:40:40,379 --> 00:40:49,179
+S0-0 verince bir V kapısıyla bu ikisinin de sadece bu I0'ı aktif eden bir yapı oluşuyor.
+
+224
+00:40:49,300 --> 00:41:04,019
+Çünkü neden? Diğerleri sıfır vereceği için. Bunlar maskelenecek, çıkmayacak. Sadece buradan bir geldiği için de I0'ın verisi neyse, tekrardan belirtiyorum, decoderden farkı şu kısım esasında. Şurası decoder zaten.
+
+225
+00:41:06,159 --> 00:41:11,820
+Multiplexer'ın decoderden bir fazlası I0'ın verisi neyse onu çıkartmak.
+
+226
+00:41:12,851 --> 00:41:20,551
+Dekoder'de öyle değil, dekoder'de bizim çözümlediğimiz veri çıkıyor. Artık fark bu.
+
+227
+00:41:23,987 --> 00:41:33,747
+Arkadaşlar, diğer noktaları derste biraz daha izleyeceğiz. Ama şu an, hani, şunları öğrenelim istiyorum.
+
+228
+00:41:34,327 --> 00:41:44,047
+Decoder, encoder, multiplexer ve demultiplexer yapılarında bu dört yapıdan üçünü anlattık zaten.
+
+229
+00:41:44,607 --> 00:41:50,967
+İkisi üzerinde özellikle duracağız. Decoder ve multiplexer üzerinde daha durmaya devam edeceğiz. Örnek de yapacağız.
+
+230
+00:41:51,507 --> 00:42:02,307
+Enkoderler de aslında mental olarak bizim normalde kominezonsal devrelerde step-by-step yaptığımız işlemler vardı.
+
+231
+00:42:02,307 --> 00:42:11,708
+Bir doğruluk tablosu haline, değişkenleri belirleniyor, bir doğruluk tablosu haline getirilme, sonra F fonksiyonunu çıkartma, Karnaugh yapma ve bunu lojik devreye koyma.
+
+232
+00:42:11,708 --> 00:42:18,507
+Aslında enkoder çözümlerinde de bu şekilde işliyor.
+
+233
+00:42:18,835 --> 00:42:21,715
+Ama decoder ve multiplexer hazır entegre.
+
+234
+00:42:22,275 --> 00:42:34,375
+Decoderler, yani kod çözücüler, girişlerdeki binary sayının ilgili decimal dijitinden decoderin tipine göre 0 veya 1 almamızı sağlıyor.
+
+235
+00:42:35,955 --> 00:42:44,415
+Multiplexer'larda da girişte multi girişlerden bir tanesini dışarıya yansıtmaya yarayan entegreler.
+
+236
+00:42:44,851 --> 00:43:01,791
+Demultiplexer'liler multiplexer'ın tam tersi ama ona da derste bir daha değiniriz. Şu an değinmeye gerek. Genel olarak bu haftalık ufalar işlesek yeterli arkadaşlar. Sorunuz var mı?
+
+237
+00:43:06,195 --> 00:43:11,056
+sorumuz yoksa size dönem başında bir kitap bahsetmiştim.
+
+238
+00:43:14,815 --> 00:43:22,976
+Rufat Çölkesi'nin bir kitabıydı. İnternette bulabilirsiniz PDF'ni. Bu kısmı bir okumanızı tavsiye ediyorum.
+
+239
+00:43:24,215 --> 00:43:30,955
+Multiplexer'lar, decoderler bunları kesinlikle öğrenmeniz gerekiyor.
+
+240
+00:43:31,327 --> 00:43:36,087
+Yine derste tahta da haftaya inşallah daha güzel örnekler yapacağız.
+
+241
+00:43:37,467 --> 00:43:39,327
+Şu anda bu kadar yeterli.
+
+242
+00:43:40,087 --> 00:43:42,007
+Evet, lojik devre tasarlıklarımız.
+
+243
+00:43:43,668 --> 00:43:46,127
+Hocam, teşekkür ederiz. [kişisel bilgi]
+
+244
+00:43:51,567 --> 00:43:56,387
+Sınavlarınızda bilahere okuyacağım arkadaşlar. [kişisel bilgi]
+
+245
+00:43:57,983 --> 00:44:00,844
+Tamam, bu haftalık bu kadar yeterli dersi.
+
+246
+00:44:02,723 --> 00:44:05,923
+Tamam. Hepinize sağlıklı günler, iyi çalışmalar.
