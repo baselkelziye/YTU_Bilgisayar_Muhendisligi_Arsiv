@@ -1,0 +1,2303 @@
+1
+00:09:24,628 --> 00:09:31,448
+Merhaba arkadaşlar. Şu anda katılım 12 ama ben konuları, uygulamaları yetiştirebilmek için başlamak istiyorum.
+
+2
+00:09:32,187 --> 00:09:38,968
+Dün uzayda doğrulara kadar gelmiştik, orada bırakmıştık. Şimdi buradan devam edelim. Bazılarını basit görebiliriz, hızlı geçebiliriz.
+
+3
+00:09:39,948 --> 00:09:46,368
+Uzayda doğrularla ilgili ilk örneğimiz, ikili iki tane nokta verilmiş. Okuyayım ben bir.
+
+4
+00:09:51,988 --> 00:10:07,948
+R-121S5-6-3 noktalardan geçen doğrunun parametrik denklemleri bulunur. Yani hem PQ noktasından geçen hem de RS noktasından geçen ayrı iki doğruyu bulunuruz diyor. Devamında da bu doğruların paragraf olduğunu gösteririz diyor.
+
+5
+00:10:08,115 --> 00:10:13,515
+Doğru kelimetinin geçtiği yerde aklımıza arkadaşlar, doğrunun yönlü vektörü gelecekti, bunu unutmuyoruz.
+
+6
+00:10:13,855 --> 00:10:20,576
+Önce, dizilerin doğrularının parametrik renklemlerini bulalım, sonra yönlü vektörlerini test edip, paralel olup olmadıklarına bakalım.
+
+7
+00:10:21,364 --> 00:10:38,304
+İlk doğruluğu işte de ile göstermişim ben. Doğrunun parametrik renklemlerinin ilk P ve Q noktalarından geçen doğrunun parametrik renklemlerini bulmak için bir yönlü vektörü ihtiyacımız var. Onu PQ vektörü diye yazdığımızı düşünün. Diğer işte RT vektörü diye yazılalım. Dersimde yapabilirsiniz, bir sakıncası yok.
+
+8
+00:10:38,304 --> 00:10:49,304
+Şimdi eğer ilk doğru için yönlü vektörü PQ vektörü olarak alırsak Q'nun bileşenlerine P'nin bileşenlerini çıkararak elde ediyoruz vektörü. 7-4.
+
+9
+00:10:49,364 --> 00:10:58,423
+3, 3-1, 2, 4-3, 1. Dolayısıyla ilk doğru için yönlü vektör bu. Parametrik renklemler ise arkadaşlar, R eşittir.
+
+10
+00:10:59,412 --> 00:11:04,971
+Ben P noktasını kullanmışım. Siz isterseniz Q noktasını kullanarak da yazabilirsiniz. Doğrunun değişik bir şekilde elde edilir.
+
+11
+00:11:05,512 --> 00:11:15,012
+Böyle yazarsam eğer T noktasını bir vektör, yani orijinden OP vektör olarak yazarsam, R'yi bu şekilde elde ederim.
+
+12
+00:11:15,612 --> 00:11:23,032
+Parametrizasyona geçmek için de T ile birleştiriyorum. Bakın 4 artı 3T, 1 artı 2T, 3 artı T. Bu şekilde yazdık.
+
+13
+00:11:23,032 --> 00:11:27,392
+Şimdi parametrizasyon, yani birinci birleşen X, ikinci birleşen Y, 3.
+
+14
+00:11:27,412 --> 00:11:33,352
+Üçüncü birleşen Z olduğu için, X eşittir 4 artı 3'te, Y eşittir 1 artı 2'te, Z eşittir 3 artı T olur.
+
+15
+00:11:34,052 --> 00:11:37,252
+Bunun yönlü vektörü de şurada var, bunu kullanacağım.
+
+16
+00:11:37,732 --> 00:11:47,812
+İkinci doğru içinde tamamıyla aynı mantığı kullandığımız zaman, yani yönlü vektörü, ikinci doğru için yönlü vektörü, RS vektörü aldığımız zaman, onun parametrik denklemelerinde bu şekilde olduğunu görürüz.
+
+17
+00:11:48,179 --> 00:11:53,639
+Dolayısıyla ikinci doğruluğunun yönlü vektörü 6, 4, 2 oluyor.
+
+18
+00:11:54,019 --> 00:12:03,480
+Şimdi 6, 4, 2'yi ya da 3, 2, 1'i göz önüne alarak biri diğerinin katı mı diye, yani küçük B vektörü, büyük B vektörünün bir katı mı ya da tersi bir katı mı diye bakıyorsunuz.
+
+19
+00:12:03,480 --> 00:12:16,159
+Büyük B vektöründen başlamışım. Onun bileşenleri 6, 4, 2. Eğer ortak parantezi alırsam, yani her üçünde de ortak olan sayıyı dışarı çıkarırsam, yani 2'yi dışarı çıkarırsam, iki parantezimi 3, 2, 1 diye yazarım.
+
+20
+00:12:16,179 --> 00:12:31,720
+O da 3, 2, 1 vektörüden ilk doğrunun yönlü vektörü olduğuna göre, demek ki, RT noktasından geçen doğrunun yönlü vektörü, PQ noktasından geçen doğrunun yönlü vektörün 2 katıymış. Dolayısıyla paraleldir. Herhangi bir katı olduğu zaman paraleldir.
+
+21
+00:12:33,139 --> 00:12:46,720
+Bunlar sınavda çıkması muhtemel olan örnekler arkadaşlar. Yani o sınav sorularına yakın soruları seçmeye gayret ettim. Bir sonraki örneğimiz P, 1-2-2 noktasından geçen ve ikiye düzlemine dik olan.
+
+22
+00:12:47,024 --> 00:12:52,283
+Hem bakın P, 1, 1, eksi 2 noktasından geçecekmiş, hem de x, y düzlemine dik olacakmış.
+
+23
+00:12:52,543 --> 00:12:55,124
+Burada çok dikkatli olacağız, bir şeyler söyleyeceğim şimdi.
+
+24
+00:12:55,823 --> 00:13:04,624
+Yönlü vektörünü bilmediğimiz için, iki tane nokta olsaydı, birinden diğerini çıkararak bir vektör oluşturup yazardık onu, bir önceki örnek olduğu gibi.
+
+25
+00:13:04,963 --> 00:13:10,703
+Bir tane nokta verildiği için, genel bir yönlü vektör alıyorum bakın, V vektörü, bileşenleri, V1, V2, V3 olsun.
+
+26
+00:13:10,703 --> 00:13:15,024
+Şimdi, bir soruyu çözmek, bağlaçlar harç verilen her şey.
+
+27
+00:13:15,024 --> 00:13:20,504
+kullanmak anlamına geldiğine göre, diğer bakış, şuradaki veriyle kullanarak soruyu çözebiliriz.
+
+28
+00:13:20,692 --> 00:13:37,272
+Doğru x, y düzlemine dik olacaksa, bakın x vektörü yönündeki birim koordinat vektörü i, y vektörü yönündeki birim koordinat vektörü j olduğuna göre, e doğru x, y düzlemine dik olacaksa, doğrunun yönlü vektörü hem i'ye hem de j'ye dik olmalıdır.
+
+29
+00:13:37,572 --> 00:13:41,591
+Yani onlarla iç çarpımın nokta çarpımı 0 olmalıdır.
+
+30
+00:13:48,692 --> 00:14:11,692
+İkinci bileşeninin ve ikinci bileşeninin 0 olduğunu görüyorsunuz. Basitçe yapabilirsiniz. İ'nin bileşenleri 1, 0, 0, G'nin bileşenleri 0, 1, 0. Dolayısıyla arkadaşlar, V1 ve V2 0 çıktı ama V3 ile ilgili herhangi bir kısıtlama gelmedi. O zaman V vektörü 0, 0, V3 şeklindedir. V3 herhangi, diğerleri gibi herhangi bir sayı. R gibi yazarsanız onu, bu...
+
+31
+00:14:12,303 --> 00:14:20,483
+Vektör gösterimiydi ya, bir doğrun. V ile yazarsanız, P noktasını kullandık vektör gibi, 1, 1, 2, artı T kere V vektör.
+
+32
+00:14:20,604 --> 00:14:26,344
+İşte yönlü vektörün ne buzisi var? Daha da parametrik hale getirirseniz, 1, 1, 2, artı T, V3 olur.
+
+33
+00:14:26,624 --> 00:14:30,463
+V burada tamamen, V3 burada keyfi bir real sayı.
+
+34
+00:14:32,692 --> 00:14:37,451
+Bir sonraki örneğimiz, iki tane doğru verilmiş arkadaşlar, bu doğruların dik olduğunu gösteririz diyor.
+
+35
+00:14:37,731 --> 00:14:43,572
+Bütün mesele, bu doğruların yönlü vektörlerini bulup, nokta çarpımının sıfır olmadığını göstermek.
+
+36
+00:14:43,572 --> 00:14:52,572
+Yani iki vektörün, özür dilerim, iki doğrunun dik olduğunu göstermek demek, yönlü vektörlerinin nokta çarpımının sıfır olduğunu göstermek demek, iki doğrunun...
+
+37
+00:14:53,331 --> 00:14:59,831
+Aynı türden olunca yani, 2 doğrunun paralel olduğunu göstermek demek, yönlü vektörlerin paralel olduğunu göstermek demektir.
+
+38
+00:15:00,192 --> 00:15:03,771
+Önceki örnekte paralelliği gördünüz, şimdi dikliği göreceksiniz.
+
+39
+00:15:04,231 --> 00:15:09,291
+İlk doğrunun, yani küçük reyle gösterdiğim doğrunun yönlü vektörü 3, 2, eksi 1.
+
+40
+00:15:09,471 --> 00:15:10,291
+Bakın buraya yazdık.
+
+41
+00:15:10,851 --> 00:15:16,251
+İkinci doğrunun, yani küçük reyle gösterdiğim doğrunun yönlü vektörü, eksi 1, 2, 1.
+
+42
+00:15:16,511 --> 00:15:17,231
+O da burada yazıyor.
+
+43
+00:15:17,491 --> 00:15:19,112
+Şimdi bunların nokta çarpımına bakacağız.
+
+44
+00:15:19,112 --> 00:15:21,331
+Eğer nokta çarpımları sıfırsa bu doğrular değil.
+
+45
+00:15:21,331 --> 00:15:24,591
+Diktir diyeceğim. Öbür türlü bir şey vardı, biraz sonra geleceğiz, onu söyleyelim.
+
+46
+00:15:24,892 --> 00:15:29,672
+Nokta çarpımlarını aldık. Nokta çarpım demek, karşılıklı bileşenleri çarpıp toplayın demek.
+
+47
+00:15:30,091 --> 00:15:36,531
+Bakın, karşılıklı bileşenleri çarpıyorum ve topluyorum. Sonuç sıfır çıktı. O zaman verilen doğrular, diktir diyoruz.
+
+48
+00:15:38,211 --> 00:15:44,672
+Bir sonraki örneğimiz, gene iki tane doğru verilmiş. Bunların kesiştiği noktayı ve bu noktadaki açıyı bulunuz diyor.
+
+49
+00:15:44,884 --> 00:15:52,723
+Elimizde 2 tane doğru varmış. Bunların kesiştiği arekesit noktasını bulun diyor. Ve bu arekesit noktasındaki açıyı da kesildi.
+
+50
+00:15:53,004 --> 00:16:02,723
+Önce doğrularının arekesit noktasını bulalım varsa. Onun için arkadaşlar küçük R'yi, büyük R'yi eşitliyoruz. Yani küçük R'ye eşitliği büyük R'ye yazıyoruz.
+
+51
+00:16:02,844 --> 00:16:12,884
+Arekesit noktalarını ya da kesiştiği nokta ya da noktaları bulmak için bu işlemi yapıyoruz. Eşit dedik. Karşılıklı bir eşitliği eşitliyoruz yani. Bir tanesini okuyayım. 4 artı 2 T eşit.
+
+52
+00:16:12,884 --> 00:16:40,884
+3 artı s olacak. Bakın, 4 artı 2 t eşittir 3 artı s. Bir tanesini daha söylettik. Eksi 3 artı 5 t eşittir, eksi 1 artı s olacak. Diğeri de bu şekilde. Şimdi bu üçün ortak çözümü olacak. Yani bu üç denklemi birlikte sağlayan, tekrar söylüyorum, bu üç denklemi birlikte sağlayan t ve s sayıları bulmamız gerekiyor. Herhangi birisinde bir sıkıntı yaşanırsa sağlamamalı gibi bir durum söz konusu.
+
+53
+00:16:40,884 --> 00:16:59,203
+olursa, bu doğrular kesişmiyor demektir. Şimdi, ortak çözdüğümüz zaman arkadaşlar, S'nin, S eşitliği 3 bulmuşuz, S eşitliği 1 bulmuşuz. Bu, S yerine 1 ve S yerine 3 koyduğunuz zaman, şu 3 eşitliğinde aynı anda, aynı anda sağlanması gerekiyor. Sağlanılığını kontrol edebiliriz.
+
+54
+00:16:59,423 --> 00:17:19,183
+Sonra arkadaşlar, noktayı tespit etmek için de isterseniz birinci doğruda, yani küçük RFT'de T gördüğünüz yere 1 yazabilirsiniz. İsterseniz diğer doğruda, yani büyük RFT'de T gördüğünüz yere 3 yazabilirsiniz. Her iki durumda da aynı noktaya ulaşmanız gerekir. Doğru yaptıysanız. Yani işlemimiz doğruysa.
+
+55
+00:17:19,635 --> 00:17:33,415
+Şimdi, ara kesip noktasını bulduk. Bu noktadaki soru öyleydi ya, bu noktadaki kesim açısını buldunuz diyor. Ne yapıyoruz arkadaşlar? Kesim açısını bulmak için bu doğrulanı yönlü vektörleri arasındaki açıyı buluyoruz.
+
+56
+00:17:33,415 --> 00:17:40,975
+Yani, kos teta eşittir. Doğrulanın yönlü vektörlerinin nokta çarpımı bölü, doğrulanın yönlü vektörlerinin uzunlukları.
+
+57
+00:17:41,296 --> 00:17:48,476
+Doğruların, yönlü vektörlerinin nokta çarpımı bölü, doğruların, yönlü vektörlerinin uzunlukları.
+
+58
+00:17:49,635 --> 00:17:54,296
+Nokta çarpımı hesaplamışım, 13 çıkmış, uzunluklar hesapladığım zaman birleştirmişimdir herhalde.
+
+59
+00:17:54,996 --> 00:17:56,336
+11, 4, 3 çıkmış.
+
+60
+00:17:56,819 --> 00:18:12,940
+Buradan arkadaşlar, teta'yı bulmanız gerekirse, bakın teta eşittir, arkosiniz, 13 bölü, 11, 43 yazacaksınız. Eğer dereceye, bu şey, radiyan değil mi, dereceye geçmek isterseniz, 180 bölü pi ile dışarı fazlığınız, sonuç 46.98 derece çıkıyor.
+
+61
+00:18:15,571 --> 00:18:19,672
+Diğer başlığımız düzlemler, bu vektörlerle ilgili son başlığımız düzlemler.
+
+62
+00:18:20,351 --> 00:18:23,951
+Şu örneği çözmüş olabilirim ya da çok benzerini çözmüş olabilirim.
+
+63
+00:18:24,011 --> 00:18:26,391
+Çok önemli bir örnek olduğu için tekrar koymuşumdur buraya.
+
+64
+00:18:26,971 --> 00:18:27,692
+Okuyorum soruyu.
+
+65
+00:18:27,791 --> 00:18:37,951
+Öyle bir düzlem denklemi bulunuz ki, öyle bir düzlem denklemi bulunuz ki, hem P2-1 noktasından geçsin ve hem de diyor, şu şekilde verilmiş, doğruya dik olsun.
+
+66
+00:18:38,355 --> 00:18:43,416
+Tekrar söylüyorum, bağlaştan hariç verilen her şeyi kullanacaksın. Soruda bir hata olmadığını düşünelim.
+
+67
+00:18:44,019 --> 00:19:01,900
+Doğrunun vektörrel renklemini yazalım. Doğrunun vektörrel renklemini, yani 1, 1, 3 noktasına ayıracağım. Onu yazarken bakın, Vt eşitli 1, 1, 3 artı t kere 1, 2, eksi 4. Şuradan t'den bağımsız olanlara ayrı bir vektör olarak, t'ye bağlı olanlara ayrı bir vektör olarak yazdığım zaman bu şekilde görüyorum.
+
+68
+00:19:01,900 --> 00:19:11,619
+T'nin önündeki vektör, yani sağ tarafındaki vektör, gönlü vektör oluyor. Onu da tespit etsin bakın burada. V eşitli 1, 2, eksi 4. Şuradan geliyor. Şimdi,
+
+69
+00:19:12,019 --> 00:19:15,340
+Düzlemin reklemi değil mi? Noktasından geçtiğinde doğrusundan dik olsun diyor.
+
+70
+00:19:15,539 --> 00:19:20,779
+Şimdi aranan düzlemin verilen doğruya dik olacağından, vevvet yönünü arkadaşlar, düzlem için normal olarak alabilir.
+
+71
+00:19:21,259 --> 00:19:24,559
+Hatırlarsanız, ben şöyle bir şey demiştim. Hatırlamasanız da ben şimdi söylüyorum.
+
+72
+00:19:25,380 --> 00:19:30,019
+Aynı tarz yapıların diklik ve paralelliği, dikliği...
+
+73
+00:19:30,771 --> 00:19:37,811
+Yapıların, yapı derken, yani mesela doğruysa yönlü vektör, düzlemse normal vektör anlamında söylüyorum.
+
+74
+00:19:38,192 --> 00:19:41,771
+Nokta çarpım, diklik nokta çarpımın sıfır olması paralellik...
+
+75
+00:19:42,400 --> 00:19:59,720
+Birinin diğerinin katı olması. Hem doğrular için geçerli bu, hem düzdenler için geçerli. Ancak farklı yapı olursa, farklı yapıdan kalsın, birisi doğru, diğeri düzden mesela. Birisi doğru, diğeri yüzey mesela. Daha sonra gelecek. Biri doğru, biri yüzey, biri düzden, biri yüzey. Farklı yapılar gelirse,
+
+76
+00:20:00,000 --> 00:20:02,019
+diklik ve paralellik çarptı yer değiştiriyor.
+
+77
+00:20:02,400 --> 00:20:14,079
+İki doğrunun dik olması yönlü vektörlerin nokta çarpımının sıfır olması ama bir doğrunun bir düzleme dik olması doğrunun yönlü vektörü ile düzlemin normal vektörünün paralel olması anlamına geliyor.
+
+78
+00:20:14,079 --> 00:20:25,300
+Bu mantıktan hareket ettiğimiz ya da bu gerçekten hareket ettiğimiz zaman eğer doğru düzleme dik olacaksa doğrunun yönlü vektörünü bakın düzlemin normal vektörü olarak alabilir.
+
+79
+00:20:25,647 --> 00:20:37,867
+Bu en son söylediğimden hareketler. Şimdi düzlemin genel denklemini düşünürseniz, a, x, x, 0, değil mi? a çarpı x, x, 0, artı b çarpı y, y, 0, artı z çarpı z, x, 0'dır.
+
+80
+00:20:38,147 --> 00:20:49,507
+Şimdi, doğrunun yönlü vektörünü, düzlemini normal vektör olarak aldığım için, normal vektörün bileşenleri 1, 2, 4, bakın, 1, 2, 4, noktada 1, 1, 3, görüyor musunuz?
+
+81
+00:20:53,647 --> 00:21:07,728
+2-1. Yani, şu 1 çarpı, x-1, artı, şu 2 çarpı, y-2, artı, x-4, bakın şu, çarpı, z artı, 1. Bu noktadan geçeceği için, eşittir 0 yazıyoruz.
+
+82
+00:21:08,047 --> 00:21:14,987
+Biraz sadeleştirme işlemi yaparsanız, x artı, 2, y-z, x-4 ve eşittir 9 şeklinde olması gerekiyormuş.
+
+83
+00:21:15,708 --> 00:21:20,007
+İstenilen düzlenin denklemi. Noktayı sağladığını kontrol etmeyi unutmayın.
+
+84
+00:21:20,527 --> 00:21:21,647
+Düzlenin denklemini bulduktan sonra.
+
+85
+00:21:21,647 --> 00:21:38,647
+Yani x yerine bir y yerine iki z yerine eklif koyduğunuz zaman, bunun sağlanması gerekiyor. Bir sonraki örneğimiz, öyle bir düzlem denklemi bulmuş ki diyor, P1, 2, 3 noktasından geçsin ve x eksi 3c artı 2c eşitli dört düzlemine paralel olsun.
+
+86
+00:21:38,996 --> 00:22:02,316
+Anlaşılan şu arkadaşlar, bir kere bulacağımız düzlemin denklemi, bulacağımız düzlemin denklemi, eşitliğin sağ taraf hariç aynı olacak. Neden aynı olacağını gördünüz mü? 59. soruda bulacağımız yeni düzlemin denkleminde eşitliğin sağ taraf hariç, yani 4 hariç, sol taraftaki kısım aynı olacak. Neden bu soruya göre?
+
+87
+00:22:06,612 --> 00:22:16,592
+Bakın paralel diyor değil mi? Görüyor musunuz? Paralel diyor. Paralel dediği için biri diğerinin katı olacak ya, aynı alırsınız bir şey değişmez yani katı olacak. Çünkü bölme işlemi yeri aynı sonunda getirir.
+
+88
+00:22:17,364 --> 00:22:30,264
+Evet, dik dik deseydi bambaşka bir şey olurdu. Şimdi, arkadaşlar, istenilen düzlem, düzlemine paralel olacaksa, verilen düzlemin normal vektörünü, istenilen düzlemin normal vektörü olarak alabiliriz.
+
+89
+00:22:30,443 --> 00:22:39,784
+Onun için dedim, sol taraf aynı olacak, sağ taraf değişebiliriz. Aldım bakın, verilen düzlemin normali 1-2, onu bulacağım düzlemin normal olarak aldım.
+
+90
+00:22:39,784 --> 00:22:44,463
+Şimdi noktayı da kullanılmak çarpma işlemi yapıyorum, yani nokta çarpma işlemi yapıyorum.
+
+91
+00:22:45,364 --> 00:22:54,104
+1 çarpı x eksi 1, eksi 3 çarpı y eksi 2, artı 2 çarpı z eksi 3.
+
+92
+00:22:54,864 --> 00:22:58,023
+Sadeleştirdim biraz. x eksi 3c artı 2z eşittir, bir çıktı.
+
+93
+00:22:58,124 --> 00:23:03,864
+Gördüğünüz gibi sol taraf, yani x eksi 3c artı 2z, orada soruda verilen ifadeyle aynı.
+
+94
+00:23:03,864 --> 00:23:07,704
+Sağ taraf sadece eşittir, sağ tarafı noktadan dolayı değişebilir.
+
+95
+00:23:08,531 --> 00:23:14,251
+Değişiyor yani. Paralellikle eşitliğin sağ tarafındaki V sayı dikkate almadığımız için.
+
+96
+00:23:15,672 --> 00:23:20,711
+Diğer bir örneğimiz, bu da sınavda çıkması muhtemel sorulara yakın sorular.
+
+97
+00:23:21,071 --> 00:23:30,271
+Lambda x eksi y artı üstte eşittir 1 ve 2x artı 3y eksi Lambda z eşittir 4 düzlemlerinin dik olması için.
+
+98
+00:23:30,711 --> 00:23:33,652
+Düzlemlerinin dik olması için Lambda ne olmalı?
+
+99
+00:23:33,652 --> 00:23:36,031
+Soru gayet basit, anlaşılabilir bir şekilde.
+
+100
+00:23:36,692 --> 00:23:42,051
+Çözüm için her iki düzlemin normal beklerlerini bulup nokta çarpımını sıra eşitleriz.
+
+101
+00:23:42,836 --> 00:23:53,536
+Aynı tarzda iki yapının dikliği nokta çarpımlarının sıfır olması anlamına geldiği için her iki düzlemin normal vektörlerini bulup onların nokta çarpımını sıfır eşittir.
+
+102
+00:23:54,195 --> 00:23:56,056
+Bulduk normal vektörlerini bunlar.
+
+103
+00:23:56,755 --> 00:23:57,875
+Nokta çarpımını aldık.
+
+104
+00:23:58,240 --> 00:24:06,299
+Bu çıktı. Eşit dedik sıfıra. Buradan lambda eşittir, eksi 3 oldu. Demek ki arkadaşlar, bu iki düzdenin dik olması için lambda eşittir, eksi 3 olmalıymış.
+
+105
+00:24:06,619 --> 00:24:20,539
+Bazen iki tane lambda çıkabilir. Metiler şuralara lambda kare falan koyar. Lambda kare eşittir, atıyorum şimdi. Lambda kare eşittir, 1 çıkar. Oradan lambda eşittir, artı, eksi 1 bulunur falan olabilir. Daha değişik çözümler bulunabilir. Ben anlaşılsın, sade olsun diye böyle bir şey.
+
+106
+00:24:22,804 --> 00:24:31,044
+Bir sonraki örnek, x-y artı 2z eşittir 3 ve 2x artı y artı z eşittir 0 düzlemleri arasındaki açıyı bulmuş.
+
+107
+00:24:31,311 --> 00:24:42,091
+Mesela şu arkadaşlar, verilen iki düzlem arasındaki doğrular içinde geçerli, düzlem arasındaki açıyı bulmak demek, onların normal vektörleri arasındaki açıyı bulmak demektir.
+
+108
+00:24:42,291 --> 00:24:45,011
+Aynı şeyler doğrular için söylediğimiz zaman yönlü vektör demiştik.
+
+109
+00:24:45,251 --> 00:24:52,591
+Genel olarak eğililer olursa, o zaman da onların birinci mertebe türevleri, yani test vektörleri arasındaki açıyı buluyor idik.
+
+110
+00:24:52,591 --> 00:24:59,311
+Eğer farklı türden yapılar olursa, yani biri düzlem, birisi mesela biri doğru, biri düzlem olursa,
+
+111
+00:24:59,311 --> 00:25:05,251
+Doğrunun yönlü vektörüyle düzlemin normal vektörünü kullanıyoruz. Orada tamamı standart aşağı yukarı.
+
+112
+00:25:06,132 --> 00:25:15,411
+Düzlemlerin normal vektörleri bunlar. Birisi ne bir, bir eksi iki, iki, özür dilerim, bir eksi bir iki, diğerinin normal vektörü iki bir bir.
+
+113
+00:25:15,991 --> 00:25:25,911
+Nokta çarpımlarını alıp uzunluklarına böldük. Bakın bir bölü iki çıktı. Buradan cos tt çiftir, bir bölü iki, tt çiftir, art cos tt çiftir, art cos tt çiftir, o da tam değer çiftiriyor musunuz?
+
+114
+00:25:26,895 --> 00:25:35,076
+Her zaman böyle çıkması gerekmiyor. Daha öncekinde bir x'ı katı nokta bilmem kaç derece bulduk ya. Bunda tam orta çıkmış. Pi bölüş radyan.
+
+115
+00:25:36,596 --> 00:25:39,556
+Şu 62. örnek gibi sorulara da hazırlıklı olun arkadaşlar.
+
+116
+00:25:39,996 --> 00:25:46,655
+İki düzlem ve bir nokta verildiğinde yeni bir düzlem denkleminin elde edilmesi olayına düzlem demetinin bir üyesini elde etme diyorduk.
+
+117
+00:25:46,655 --> 00:25:55,956
+Okuyun ben bir soruyu. Denklemler x eksi 2'ye artı z eşittir 3 ve x artı y artı 2'de eşittir 4 olan düzlemlerin ara kesit doğrusundan.
+
+118
+00:25:56,175 --> 00:26:04,596
+Bunu bir defter gibi düşüneceksiniz. Defterin tabanı değil mi? Defterin tabanı doğru. Her bir yaprağda bir düzlem parçası demetin bir.
+
+119
+00:26:04,596 --> 00:26:29,655
+bir üyesi diye düşünüyoruz. Hareketi doğrusundan ve T112 noktasından geçen bir düzlem denkleme bulunuyor diyor. Soru dua elinde çıksın. Gayet basit böyle sorular çözmek. Düzlemlerden herhangi birisi artı lambda çarpı diğeri. Ama tabiti eklemeyi unutmayın. Düzlemlerden herhangi birisi artı lambda çarpı diğeri eşit bir sıfırdan eşit bir sıfır.
+
+120
+00:26:30,355 --> 00:26:34,135
+yazıyorsunuz. Sonra noktayı yerine koyarak lambda yıvılıyorsunuz.
+
+121
+00:26:34,483 --> 00:26:47,183
+Düzlemlerden herhangi birisi, artı, lambda çarpı, diğeri, eşittir sıfır yazıyorsunuz. Sonra noktayı yerine koyarak lambda'yı buluyorsunuz. Sonra da ilk yazdığınız düzenlerden herhangi birisi artı, lambda kere, ikincisi eşittir sıfır dedim ya.
+
+122
+00:26:47,624 --> 00:26:55,124
+Lambda'yı bulduktan sonra getirip orada lambda'yı yerine yazdığımız zaman yeni bir düzlem deklemi ortaya çıkmış oluyor. Yazdık bakın. Herhangi birisi bu olsun.
+
+123
+00:27:02,483 --> 00:27:12,523
+2. eksi 4. Eşittir sıfır yazdık. Şimdi burada arkadaşlar, önce noktayı koyacağız. Yani x gördüğümüz yere 1, y gördüğümüz yere 1, z gördüğümüz yere 2 koyacağız. Oradan lambda'yı bulacağız.
+
+124
+00:27:12,843 --> 00:27:21,323
+Lambda'yı bulduktan sonra getirip buradayı tekrar yerine yazacağız. Lambda'yı bakın buradan buluyorum. Lambda eşittir bir çifti. Sonra bu lambda eşittir bir değerini getirip şurada yerine yazıyoruz.
+
+125
+00:27:24,756 --> 00:27:30,516
+Bir düzenlerden herhangi bir saat lambda kere ikincisiye eşittir sıfır yazdığı bir ifadede lambda yerine bir koyuyorum.
+
+126
+00:27:31,176 --> 00:27:37,756
+Eldedir diyelim demetin bir üyesi, yani defter yapraklarından bir tanesi, 2x-y artı üstte eşittir 7 olarak konuluyor.
+
+127
+00:27:38,096 --> 00:27:40,436
+Burada gene noktayı koyarak sağlama yapmayı unutmayın.
+
+128
+00:27:41,036 --> 00:27:43,836
+Yani bir eksi artı hatası yapsanız bile bambaşka bir sonuç.
+
+129
+00:27:44,615 --> 00:27:48,656
+x yerine bir, y yerine bir, z yerine iki koyduğunuz zaman eşittir 7 çıkması gerekiyor.
+
+130
+00:27:50,900 --> 00:28:10,580
+Vektör değerli fonksiyonlara geldik. Hemen bunları da hızlı hızlı anlatayım. Matematik birden bildiğimiz şeylerin tekrarı sadece vektörel halde. Vektör değerli bir, 3 boyut uzayda yazmışım. Vektör değerli bir fonksiyonun tanım kümesini bulmak demek arkadaşlar, her bir bileşen fonksiyonunun tanımlı olduğu bölgeyi tespit edip birleştirmek.
+
+131
+00:28:10,580 --> 00:28:18,200
+Birleştirmekten kasıntı birleşimini almak değil. Bir araya toparlamak anlamında söylüyorum. İçeride görürsünüz şimdi.
+
+132
+00:28:18,900 --> 00:28:27,160
+birleşen fonksiyonunu göz önüne alacaksınız. Onun tanım kümesini bulacaksınız. Sonra onları toparlayacaksınız. Şimdi t zaten her yerde tanımlı. T ile bir işim yok.
+
+133
+00:28:27,600 --> 00:28:44,319
+Lm1-t sadece pozitif sayıların logaritması tanımlı olduğu için 1-t büyük 0 ya da t küçük 1 iken tanımlıdır.
+
+134
+00:28:44,531 --> 00:28:51,932
+Dolayısıyla, ikinci bileşen fonksiyon için, yani ln bir ekçe t için, tanım tümesi, eksi sonsuz bir açık aralığı değil mi?
+
+135
+00:28:51,932 --> 00:28:57,632
+t küçük bir demek, eksi sonsuz küçük, t küçük bir demek veya eksi sonsuz bir açık aralığı demek.
+
+136
+00:28:57,844 --> 00:29:04,804
+Diğer ise arkadaşlar, 1 bölü kök içinde tkare eksi 1 olduğu için, bir daha söylüyorum, 1 bölü kök içinde tkare eksi 1.
+
+137
+00:29:05,304 --> 00:29:08,324
+Kara köklerin dolayı bir kere, kara kökün 2 negatif olmamalı.
+
+138
+00:29:09,004 --> 00:29:13,044
+Kara kökün faydada olmasından dolayı da eşitliğin ortadan kalkması gerekiyor.
+
+139
+00:29:13,423 --> 00:29:19,723
+Özetle, 1 bölü kök içinde tkare eksi 1'in tanımlı olabilmesi için tkare eksi 1 büyük 0 olmalıdır.
+
+140
+00:29:19,864 --> 00:29:22,384
+Bakın buraya yazdım, tkare eksi 1 büyük 0 olmalıdır.
+
+141
+00:29:22,384 --> 00:29:25,844
+Buradan t'yi çözdüğümüz zaman, yani aralığı bulmaya...
+
+142
+00:29:25,844 --> 00:29:38,344
+ya eğer t küçük eksi 1 ise veya t büyük 1 ise bu ifade tanımlıdır. Tekrar söylüyorum, t küçük eksi 1 veya t büyük 1 ise 1 bölü 4 içinde tekrar eksi 1 tanımlıdır.
+
+143
+00:29:38,344 --> 00:29:41,024
+Şimdi bunları birleştirelim. Birisi t küçük 1.
+
+144
+00:29:41,428 --> 00:29:53,708
+Bakın birisi t küçük 1, diğeri de t küçük 1 ya da t büyük 1. Dolayısıyla ortak olan kıtım arkadaşlar, eksi sonsuz eksi 1 olan. Biraz real eklemizlerini göstermemiz ister misiniz?
+
+145
+00:29:54,028 --> 00:30:00,887
+Şu tanım hükümesini. Yani böyle verilmiş vektör değerli fonksiyonun tanım hükümesi eksi sonsuz eksi 1 oluyor. Real eklemizlerini göstermemiz ister misiniz?
+
+146
+00:30:03,268 --> 00:30:04,827
+Anlaşılmış o zaman devam edelim.
+
+147
+00:30:06,259 --> 00:30:10,299
+Limit de arkadaşlar aynı, tanım tüm metnelerin, türev de aynı.
+
+148
+00:30:11,619 --> 00:30:18,799
+Vektör değerli bir fonksiyonun bir noktadaki limiti demek, her bir birleşen fonksiyonun o noktadaki limitini hesaplayıp sonuçları birleştirmek demek.
+
+149
+00:30:18,899 --> 00:30:20,439
+Yani vektör olarak yazmak demek.
+
+150
+00:30:20,899 --> 00:30:26,379
+Eğer herhangi bir birleşen fonksiyonunun limiti mevcut olmazsa, vektör değerli fonksiyonunun limiti mevcut olmaz.
+
+151
+00:30:26,759 --> 00:30:30,460
+Soru bu. Limit t0'a giderken 1-kos t bölü t.
+
+152
+00:30:31,412 --> 00:30:36,231
+i artı t, e üzeri t eksi birbirleri t, j artı tk.
+
+153
+00:30:37,940 --> 00:31:05,940
+Limitinin mevcutsa hesaplayınız diyor. Vektör değerli bir fonksiyon. T eşit üstü buradaki limiti varsa hesaplayınız diyor. Bir daha tekrar etmiş olayım. Her bir bileşen fonksiyonun T eşit üstü buradaki limitini bulacağız. Eğer her 3 bileşen fonksiyonun limiti T eşit üstü burda mevcut ise onu bir vektör olarak yazacağız. Bakalım. Birincisi, birinci bileşen fonksiyonu. T sıfıra girerken bir eksi kos t bölü t. L'opital kuralını bir kere uyguladım. Pay ve paydanın kendine göre türenini aldım. Eksi kos t'nin t.
+
+154
+00:31:05,940 --> 00:31:28,040
+Türevi sinüs t, sinüs t'ye bölü 1, eşitli 0. Demek ki birinci bileşen fonksiyonunun t eşitli 0'daki limiti 0. İkinci bileşen fonksiyonu, burada da 0 bölü 0 belirsiz olduğu için buna da bir kere kuralı uyguladım. Yani pay ve payların kendine göre türevini aldım. Bakın, limit 1 çıktı. Üçüncü bileşen fonksiyonu zaten t, onun limiti 0. Şimdi bunları birleştiriyoruz. Bak, birleştiriyoruz.
+
+155
+00:31:28,660 --> 00:31:55,759
+Şimdi birinci bileşen fonksiyonun limiti 0 olduğu için arkadaşlar, şunun limiti 0 olduğu için i ortadan kalktı. Üçüncü bileşen fonksiyonun limiti de 0 olduğu için k da ortadan kalktı. Geriye sadece bakın şu 1'den dolayı c kaldı. Yani özetle, aynı tanımcılığında olduğu gibi her bir bileşen fonksiyonunun ayrı ayrı limitlerini hesaplıyorsunuz. Eğer bütün bileşen fonksiyonların limitleri mevcut ise onu bir vektör olarak, yani limit değerlerini koyarak bir vektör olarak yazıyorsunuz.
+
+156
+00:31:55,807 --> 00:32:07,807
+Süreklilikle durum tamamıyla aynı. Gelelim örneğine. Mesela vektör değerli fonksiyon sin t bölü ti, cos tc, t bölü t kare artı bir k ile verilir. Sürekliyle araştırılır diyor.
+
+157
+00:32:08,067 --> 00:32:18,688
+Şimdi bunda da her bir birleşen fonksiyonun sürekliyle araştırıp sonuçları birleştireceğiz. Birinci birleşen fonksiyonu sin t bölü t. Bakın payda var. Dolayısıyla paydayı sıfır yapan değerlerde birinci birleşen fonksiyonu sürekli.
+
+158
+00:32:20,211 --> 00:32:39,311
+Şimdi t bölü t, t eşittir sıfırda sürekli. İkinci bileşen fonksiyon cos theta, o her yerde sürekli bir sıkıntı yok. Üçüncü bileşen fonksiyonu t bölü t kare artı bir, o da her yerde sürekli bir sıkıntı yok. Sonuçları birleştirirsek, bu şekilde verilen vektör değerli fonksiyon sadece t eşittir sıfırda sürekli.
+
+159
+00:32:41,611 --> 00:32:44,511
+Ya da t eşittir sıfır ağrıç her yerde sürekli.
+
+160
+00:32:46,579 --> 00:32:57,039
+Türev de tamamıyla aynı arkadaşlar. Vektör değerli bir fonksiyonun türevini bulmak demek, her bir bileşen fonksiyonunun ayrı ayrı türevlerini bulup, onu bir vektör olarak yazmak demek. Örnek.
+
+161
+00:32:57,639 --> 00:33:05,099
+Bakın, RT eşittir, sin t'nin karesi. Sin kare t değil, sin t kare, cos t.
+
+162
+00:33:05,652 --> 00:33:10,811
+ve bir ile verilmiş değil mi bileşen ile verilen b vektör değerli fonksiyonun bir bilindiği mertebe türevini bulunur.
+
+163
+00:33:10,971 --> 00:33:14,851
+Mesele belli. Her bir bileşen fonksiyonun türevini alacağız, onu bir vektör gibi yazacağız.
+
+164
+00:33:15,311 --> 00:33:23,451
+İşte sin t karenin türevi, 2'nin türevi, t karenin türevi 2t, sinüsün türevi de kosinüs olduğu için sonuç 2t kos t kare.
+
+165
+00:33:24,152 --> 00:33:27,652
+Kosinüs t'nin türevi eksi sinüs t, eksi sin t j.
+
+166
+00:33:28,211 --> 00:33:38,692
+2 cos t kare i, eksi sin t j, artı 0 çarpı k, 0 çarpı k ile almalı, eksi sin t j olarak bulunur.
+
+167
+00:33:39,412 --> 00:33:42,971
+Bir sonraki örnekten bir uzunlukla ilgili uygulama olsun diye yazmışım.
+
+168
+00:33:43,372 --> 00:33:46,912
+Vektör değerli fonksiyonun bileşenleri cos t, sin t ile verilmiş.
+
+169
+00:33:47,432 --> 00:33:49,432
+2. mertebe türevindeki uzunluğunu bulmuş.
+
+170
+00:33:49,531 --> 00:33:54,172
+Mesela anlaşılmış. Önce 2. mertebe türevi bulacağız, sonra onun uzunluğunu hesaplayacağız.
+
+171
+00:33:54,228 --> 00:34:22,228
+Birinci mertebe türevini aldık. Kosin türevi eksisiniz. Yani re üstü t eşittir. Eksi sin t i artı kos t j. T'nin türevi de bir olduğu için artı k. Bir kez daha türevini aldık bunun. Eksi kos t i, eksis sin t j. Şimdi bunun uzunluğunu bulun diyor. Yani her bir bileşenin karesini alıp, her bir bileşenin karelerini alıp toplayın kare çeki uzunluğunu verir diyor. Alalım. Eksi kos t'nin karesi artı eksi.
+
+172
+00:34:22,228 --> 00:34:33,068
+kare kökünü aldığınız zaman, r2, süt t'nin uzunluğunu bulmuş oluyorsunuz. O da kod kare t artı sin kare t eşitli bir yolu için uzunluk 1 olarak bulunuyor. Herhangi bir sayı çıkabilir.
+
+173
+00:34:33,507 --> 00:34:47,507
+İntegralde de tamamıyla aynı arkadaşlar. Gene her bir bileşen fonksiyonun ayrı ayrı integrallerini hesaplıyorsunuz. Ama hepsi mevcut olacak. Her bir bileşen fonksiyonun ayrı ayrı integrallerini hesaplıyorsunuz. Sonuçları birleştiriyorsunuz. Yani bir vektör olarak yazıyorsunuz.
+
+174
+00:34:47,599 --> 00:35:00,659
+Örnek 0'dan 1'e, 2 bölü kök şimdi 1 eksi t kare i, 3 t kare eksi 1 j, t bölü t artı 1 k. İle verilen vektör değerli fonksiyonun bir 0, 1 alanında integre ediniz ya da bu integral bir ek okumuş olabilir.
+
+175
+00:35:01,119 --> 00:35:08,180
+Her bir bileşen fonksiyonunu integre edeceksiniz. Eğer hepsi mevcutsa bu alanlarda 0, 1 alanında mevcutsa sonuçları bir vektör olarak yazacak.
+
+176
+00:35:13,972 --> 00:35:23,112
+Arkadaşlar, [öğrenci] bende ses gidiyor diye, diğerlerinde de öyle bir şey oluyor mu? Benim sesimle ilgili bir sıkıntınız var mı arkadaşlar?
+
+177
+00:35:24,792 --> 00:35:25,792
+Bana geliyor hocam.
+
+178
+00:35:27,872 --> 00:35:33,012
+Tamam, [öğrenci] belki senin internetinle ilgili bir sıkıntı olabilir. Benim sesim normaldir.
+
+179
+00:35:35,752 --> 00:35:39,952
+[öğrenci] da bana da geliyor dedi. [öğrenci] senin internetinle belki bir sıkıntı olabilir.
+
+180
+00:35:41,907 --> 00:35:55,708
+Evet, parametre sana geçtik arkadaşlar. Burada da belki yani çıkma ihtimali çok kuvvetli mi bilmiyorum ama gene ben 3-5 tane örnek koydum buraya her ihtimale karşı. Vakitte şey kullanmak istiyorum, 26 geçiyor.
+
+181
+00:35:56,244 --> 00:36:06,264
+Parametriasyon demek, şu soruyu okuyayım, G diye koymuşum, şöyle önemli değil o. X eksi birin karesi artı, Y eksi ikinin karesi eşittir, dokuz eğrisi için bir parametriasyon bulunur.
+
+182
+00:36:06,264 --> 00:36:15,624
+Şunu söyleyeyim mi, arkadaşlar parametriasyon tek değildir. Verilmiş, dik koordinatlarda verilmiş bir eğriyi yeni bir parametresi, bir T parametresiyle yeniden yazmak.
+
+183
+00:36:15,920 --> 00:36:43,900
+Yeni bir t parametresiyle yeniden yazmak tek değildir. Yani herkes kafasına göre değişik bir parametre koyabilir ortaya. Değişik bir çözüm şekli ortayabilir. Burada akla en yakın olan, makul olanı, burada görüyorsunuz x eksi birin karesi artı y eksi birin karesi eşittir 9 olduğu için merkezi 1, 2, yarı çapı 3 olan bir çember var değil mi? Merkezi 1, 2, yarı çapı 3 olan bir çember var. Şimdi çember ya da daireden bahsediğinde aklımıza kutupsal koordinatlar geliyor ya, x kosinüs için.
+
+184
+00:36:43,920 --> 00:36:49,680
+Y'nin de sinüs cinsine verilmez olayı var ya, o anlamda ben parametreler için başka şeyler söylerim şimdi.
+
+185
+00:36:49,960 --> 00:37:05,640
+Mesela x eksi 1'e, x eksi 1 eşittir, x eksi 1 şu 9'u r kare diye görürseniz, r'nin 3 olduğu gerçeğiyle, x eksi 1 eşittir, 3 kos teta, y eksik eşittir, 3 sin teta parametresini yapabilirsiniz.
+
+186
+00:37:05,840 --> 00:37:21,000
+Tekrar söylüyorum, 9, r kare, yani r eşittir 3 olduğu için, x eksi 1 eşittir, 3 kosteta, r kosteta yani, y eksi 2 eşittir, 3 sinteta, en uygun, elverişli, problemsiz parametrizasyon.
+
+187
+00:37:25,780 --> 00:37:27,920
+Estağfurullah [öğrenci], tamam. Devam ediyoruz.
+
+188
+00:37:28,500 --> 00:37:34,060
+Tamam mı? En uygun parametreson x-1 eşittir 3 cos theta, y-2 eşittir 3 sin theta'dır.
+
+189
+00:37:34,060 --> 00:37:41,240
+En uygun parametreson. Tekrar söylüyorum. Diğerleri uygun değildir anlamında demiyorum. En uygun ve problemsiz olan bu diyoruz.
+
+190
+00:37:41,420 --> 00:37:47,060
+Şimdi cos theta ve sin theta üzerine herhangi bir kısıtlama gelmediği için t...
+
+191
+00:37:47,699 --> 00:38:15,420
+KOS-T ve SİM-T üzerine herhangi bir kısıtlama gelmediği için burada T'de 0-2P aralığında oluyor. Kısmet olursa döneminin sonuna doğru kutupal koordinatlarında integral hesabı var. İki katlı integral hesabı var. Bakın nasıl kısıtlama geliyor, bu aralık nasıl daralıyor, nasıl değişiyor onları orada anlatacağız tamam mı? Kutupal koordinatlarında iki katlı integralde kısıtlamalar nasıl geliyor, bu aralıklar nasıl daralıyor, değişiyor onları anlatacağız. Burada bir sıkıntı yok. Ama arkadaşlar şöyle bir parametre sonu yaptıktan sonra mutlaka
+
+192
+00:38:15,699 --> 00:38:23,859
+doğruluğunu kontrol edin. Yani x yerine 1-3 cos t, özür dilerim, y yerine 2-3 sin t koyup şuradan doğrulayın.
+
+193
+00:38:24,059 --> 00:38:30,179
+Mesela şöyle de yapabilirsiniz. Dersiniz ki, ben x eşittir t alıp devam etmek istiyorum. Elbette yapabiliriz.
+
+194
+00:38:30,619 --> 00:38:37,859
+Ben x eşittir t alarak devam etmek istiyorum diyebilirsiniz. Elbette bunu yapabilirsiniz ama işlem çok zorlaşır.
+
+195
+00:38:38,159 --> 00:38:43,639
+O zaman ne olur mesela? Bakın, y-2'nin karesi eşittir değil mi? 9-t-1'in karesi olur.
+
+196
+00:38:43,699 --> 00:39:11,059
+Bak, x eşit t parametresini yapsamak. y eksi 2'nin karesi eşitliği, 9 eksi, t eksi 2'nin karesi olur. Sonra y eksi 2'yi yalnız bırakacaksınız. Karekürk alacaksınız, sonra karekürkün içini sağlamanız lazım değil mi? Negatif olmayan sayıların karekürkü kanunlu olduğu için, büyük eşit sıfır yazmanız lazım. Oradan bir sürü işlem yaparak, belki bir yarım sayfa uğraşarak, gene bir parametresiyon bulabilirsiniz. Onun için diyorum, en elverişli parametresiyon budur dediğim o.
+
+197
+00:39:12,019 --> 00:39:16,279
+Evet, devam ediyoruz. Düzgün ve kapalı eğitimlerle ilgili bir örnek varmış.
+
+198
+00:39:16,920 --> 00:39:23,139
+RT eşittir, tekrar eksi 2Ti artı J artı cos Ttk. Eğritinin düzgünlüğünü araştırıyoruz diyor.
+
+199
+00:39:23,319 --> 00:39:31,359
+Şimdi arkadaşlar, uç noktalar hariç, aralığı görürsün. Uç noktalar hariç, eğer türev daima sıfırdan farklı oluyorsa, o zaman eğriği düzgündür diyor.
+
+200
+00:39:31,719 --> 00:39:33,500
+Dolayısıyla türevini aldık. Aldık türevini.
+
+201
+00:39:34,300 --> 00:39:35,599
+R üstü t eşittir.
+
+202
+00:39:36,403 --> 00:39:43,444
+Tekrar eksi 2t'nin türevi, 2t eksi 2i, j'nin önünde 1 olduğu için, sağ pürev 0, j ortadan kalktı.
+
+203
+00:39:43,784 --> 00:39:50,064
+Koçunus'un türevi, eksi sinüs, dolayısıyla eksi pi, yani koçunus pi t'nin türevi, eksi pi, sin pi t.
+
+204
+00:39:51,024 --> 00:39:55,503
+2t eksi 2i, eksi pi, sin pi t, k olarak çıkar.
+
+205
+00:39:55,844 --> 00:39:56,903
+Tamam mı? O olarak çıkar.
+
+206
+00:39:56,903 --> 00:40:00,000
+Şimdi sürekli, bu, daha yanaş...
+
+207
+00:40:00,000 --> 00:40:20,560
+2t-2'yi ve simpte t'yi süreksiz kılan herhangi bir t değeri yoktur. Bununla birlikte arkadaşlar, dikkat edin, bununla birlikte hem birinci bileşen, yani 2t-2 hem de ikinci bileşen, yani simpte t eşittir 1'de 0 olmaktadır. Bakın 0 olmaktadır, görüyor musun? Sırem 0 oluyor.
+
+208
+00:40:20,800 --> 00:40:27,519
+t eşittir 1'de 0 oluyor. Dolayısıyla arkadaşlar, r bir sayısını çelen aralıklarda düzgün olmuyor, tamam mı?
+
+209
+00:40:27,807 --> 00:40:40,347
+Bir sayı içeren aralıklarda düzgün olmuyor. Çünkü orada sıfır oluyor. Mesela diyelim ki sıfır iki aralığını düşündünüz değil mi? Sıfır iki aralığını düşündünüz. Sıfır iki aralığının içinde bir var mı? Cevap verin.
+
+210
+00:40:43,123 --> 00:41:03,643
+Hadi vermediniz. Var değil mi? Dolayısıyla düzgün değil. Mesela, eksi üç, artı üç aralığını düşünün. Bakın onun içinde de bir var, orada da düzgün değil, unutmuyoruz. Düzgünlük böyle bir şey. Aralığın uç noktaları hariç, türev daima sıfırdan farklı işe düzgündür. Neyse bu zaten notlarımız olduğu için karşınıza çıkarsa bir kere okuduktan sonra çok zorlanacağını düşünüyorum.
+
+211
+00:41:03,643 --> 00:41:11,043
+Tf vektör dediğimiz şey de arkadaşlar neydi? Tf vektör eğilimin birinci mertebe türevi. Bu noktadaki tf vektörünü istemiş.
+
+212
+00:41:11,123 --> 00:41:28,363
+Soruyu okuyayım. RT eşitliği 2, kök t artı 1, bileşenlerini okuyorum, ln t artı 1 ve 1. Eğrisi ne diyor? Bu bir eğri. t2.01 noktasında t et olan vektörü bulmuş. Mesele gayet anlaşılmış, basit bir şey yani. Türevini alacağız.
+
+213
+00:41:28,851 --> 00:41:35,231
+Türev'ini alacağız. Türev'inden birinci bileşende 2, iki birinci bileşende 0, üçüncü bileşende 1 koyacağız.
+
+214
+00:41:35,692 --> 00:41:46,511
+Veya bu, şu x, y, z ya burası. Her bir bileşen için, yani birinci bileşeni 2'ye, ikinci bileşeni 0'a, üçüncü bileşeni 1'e eşitleme anlamında söylüyorum.
+
+215
+00:41:47,331 --> 00:41:50,811
+İşlemini yaparak t'yi bulacağız. Oradan sonuca gidebiliriz. Önce türev alalım.
+
+216
+00:41:51,152 --> 00:42:01,271
+R'in türevi, kök t artı 1'in türevi, 1 bölü 2 kök t artı 1. İkiler kısaldığı için, yani 1 bölü kök t artı 1 çarpı i.
+
+217
+00:42:01,648 --> 00:42:25,908
+Artı, elen t artı bir türevi, bir bölü t artı bir, çarpı j. Kanununda bir olduğu için, yani sarkıt türevi sıfır, k gelmedi. Bu. Şimdi, bu noktaya, yani p 2, 0, 1 noktasına tekabül eden t değerinde t eşitliği sıfır olduğu için, burada t yine sıfır koyarsanız arkadaşlar, istenilen t vektör, bakın, veviçliği sıfır, i artı j oluyor.
+
+218
+00:42:27,988 --> 00:42:28,188
+Evet.
+
+219
+00:42:30,003 --> 00:42:55,203
+Bu örneği atlayacağım. Soruyu bir okuyayım, açıklama gereken bir şey var mı diye bakayım. Eğrilerin noktasındaki kesim açısını buluruz diyor. Şimdi bu eğrilerin bu noktada kesiştiğini biliyor. Kesiştiğini biliyor. Kesim açısını buluruz diyor. Olayın demin demeli 3-4 tane örnek yaptığım için bunu atlamak istiyorum. Şimdi doğrular arasındaki açıyı bulurken gönlü vektörler arasındaki açıyı buluyoruz. Düzlemler arasındaki açıyı bulurken normal vektörler arasındaki açıyı buluyoruz.
+
+220
+00:42:56,019 --> 00:43:15,140
+Herhangi eğriler arasındaki açıyı bulurken de eğrilerin t-vektörleri arasındaki açıyı buluyoruz. Yani eğrilerin türevlerini alıyoruz. Her iki eğrinin türevlerini alıyoruz. Nokta verilirse noktayla kullanıyoruz tabii. Eğrilerin türevlerini alıyoruz. Nokta verilirse bakın. Türevlerini alıyoruz. Noktadaki değerlerini tespit ediyoruz.
+
+221
+00:43:17,811 --> 00:43:42,511
+P, x'i bir, y'e sıfı, z'i bir olan nokta. Şuradan T'yi bulabiliriz. Buradan da U'yu bulabiliriz. Noktayı koyuyoruz. Sıfı çıkıyormuş. Onların nokta çarpımının uzunluklarına bölümü alıyoruz. Buradan da tefeşti sıfı çıktı. Yani yeni bir şey olmadığı için sadece matematik birden hatta liseden bildiğimiz sürev alıp nokta çarpımları hesaplamak bir de uzunluğu hesaplamak olduğu için gene üzerinde biraz zaman aldık ama bu şekilde yapabiliriz.
+
+222
+00:43:43,315 --> 00:44:10,975
+Hız ve iğne ile biraz hızlı geçeyim. Bir tane ön ekranı zaten. Düzende hareket eden bir cisinin kolum fonksiyonu bu şekilde verilmiş. Birinci bileşen 1'a tü üzeri t, ikinci bileşen t artı, lmt. Düzende verilmiş. Cismin t eşittir bir anındaki hız ve iğne vektörlerini bulur. Yani birinci türevini ve ikinci türevinin t eşittir bir anındaki değerini bulur. Yani vektörü bulur. Bulalım. Önce türevi aldık. Hızı bulmak için. Rev üstü t eşittir. 1'a tü üzeri t'nin türevi.
+
+223
+00:44:11,315 --> 00:44:29,535
+İkleşenleri söylüyorum. E üzeri t, t artı ile t'nin türevi, bir artı bir bölü t. Şimdi burada t yerine bir koyarsak, hız ve, yani şu cismin hız vektörü, t eşittir bir anındaki hız vektörü, t yerine bir koyduğumuz zaman e çıkıyor ya, e'yi artı iki ciymiş.
+
+224
+00:44:30,003 --> 00:44:48,503
+Şu ifadenin, Re üstü, serinin bir kere daha türevini alıp, orada t yerine sıfır koyduğumuz zaman, i vektörünü bulacağız. Aldık türevini, e üzeri serinin türevi, e üzeri t, 1 artı, 1 bölü t'nin türevi, eksi 1 bölü t kare, burada t yerine 1 koyduğumuz zaman da, i vektörü, e çarpı i, eksi j olarak bulmuş.
+
+225
+00:44:48,980 --> 00:45:05,860
+Şimdi yay uzunluğu da arkadaşlar, vektör değerli fonksiyonun türevinin uzunluğunun işlenilen aralıktaki integralı idi. Bir daha tekrar ediyorum. Vektör değerli fonksiyonun türevinin uzunluğunun işlenilen aralıktaki integralı idi. Örnek bir tanesini yapayım, değerlerini yapmayayım.
+
+226
+00:45:06,963 --> 00:45:14,364
+vektör değerli fonksiyonun bileşenleri 1 bölü 2 t eksi birim kareti, kök 3 bölü 2 t kare eksi 2 t verilmiş, yüzden de bu.
+
+227
+00:45:14,884 --> 00:45:22,103
+İle parametrelemiş eğrinin diyor, 0-2 aralığındaki uzunluğunu bulur. Bir sonraki örnek de aynı olduğu için bir tanesini yapmak yeterli.
+
+228
+00:45:22,103 --> 00:45:28,323
+Şimdi arkadaşlar, mesele şu, 74. örnek daha önemli olduğu için, türevini alacağız.
+
+229
+00:45:28,963 --> 00:45:30,864
+Bellen vektör değerli fonksiyonun türevini alacağız.
+
+230
+00:45:31,539 --> 00:45:44,440
+Uzunluğunu hesaplayacağız. Sonra 0-2 aralığında integr edeceğiz. Bu 70'lerin görüntü çok önemli. Dikkatlice dinleyin. Aldım türevini. 1 bölü 2 t-1'in kareçinin türevi. 2'ler gitti. t-1.
+
+231
+00:45:45,076 --> 00:45:52,496
+Kök 3 bölü 2, t kare eksi 2 t'nin türevi, kök 3 bölü 2 çarpı 2 t eksi 2, ikiler gitti, kök 3 t eksi 1.
+
+232
+00:45:52,816 --> 00:45:59,896
+Şimdi uzunluğunu hesaplıyorum. Yani kare kök içinde t eksi 1'in karesi artı 3 t eksi 1'in karesi.
+
+233
+00:46:01,215 --> 00:46:07,695
+Bu rejistü t vektörün uzunluğu, kare kök içinde t eksi 1'in karesi artı 3 çarpı t eksi 1'in karesi.
+
+234
+00:46:07,695 --> 00:46:11,255
+Yani kare kök içinde 4 t eksi 1'in karesi.
+
+235
+00:46:11,699 --> 00:46:23,340
+4'ü kare küt dışına 2 olarak çıkardım. Bakın t x'i benim kare küt dışına nasıl çıkarıyorum arkadaşlar? Nasıl çıkarıyorum? Görüyorsunuz bakın. Mutlak değer olarak çıkarıyorum.
+
+236
+00:46:25,076 --> 00:46:53,076
+Tamam, unutmayın. Bakın, bir şeyi kara kök dışına çıkaracaksanız, onu mutlak değer olarak çıkaracaksınız. Unutmayın. İşinize yarayacaktır. Ya da işlem hatası yapmanızı engelleyecektir. Şimdi, mutlak değer olarak çıkardım, devam ediyorum. Aralık 0, 2 yazdım. 0'dan 2'ye, 2 çarpı, şıra yani, mutlak t-1'in karesi, özür dilerim, mutlak t-1 dt. Şimdi, siz biliyorsunuz ve kesinlikle matematiği ihtiyacınız olduğu süreci unutmayacaksınız ki, mutlak değer...
+
+237
+00:46:53,076 --> 00:47:01,735
+Argümanına, argümanının pozitif ve negatif olmasına göre, iki parça halinde, en az, iki parça da yazabilirsiniz, iki parça halinde tanımlı.
+
+238
+00:47:01,735 --> 00:47:08,695
+Yani mutlak t-1, t büyük bir iken pozitiftir, t küçük eşit bir iken negatiftir.
+
+239
+00:47:08,875 --> 00:47:14,496
+Ya da tersini, eşitliği istediğiniz yere koyabilirsiniz, büyüğe de koyabilirsiniz, küçüğe de koyabilirsiniz ya da ayrıca değerlendirebilirsiniz.
+
+240
+00:47:14,675 --> 00:47:24,475
+Dolayısıyla arkadaşlar, bu 0-2 aralığında mutlak t-1'i incegredebilmek için, bu 0-2 aralığını iki parça halinde yazmanız gerekiyor. 0'dan 1'e ve 1'den 2'ye diye yazmanız gerekiyor.
+
+241
+00:47:24,592 --> 00:47:35,032
+0, 1 arasında mutlak t-1 negatif olduğu için, özür dilerim, t-1'in mutlak değerini negatif olarak almamız gerektiği için 1-t diye yazdık.
+
+242
+00:47:35,412 --> 00:47:43,172
+1 ile 2 arasında t pozitif olduğu için, t-1 pozitif çıkacağı için mutlak değerden pozitif çıkardık, t-1 diye yazdık.
+
+243
+00:47:43,452 --> 00:47:45,912
+Şimdi integral hesapladığımız zaman sonucu bulabiliriz.
+
+244
+00:47:50,164 --> 00:48:04,364
+Şuraya yazayım bir tanesini, görünsün diye. Şu birinciyi yazıyorum. Eksi, bir eksi t'nin karesi burası. Ayrı ayrı da yapabilirsiniz ama şöyle yapmak daha kolay. Yani bunu şey yazabilirsiniz, şunu.
+
+245
+00:48:05,076 --> 00:48:14,916
+2 çarpı t eksi t kare bölü 2 diye yazabilirsiniz ama böyle yazmıyor daha kolay. Önce üst sınır koyacaksınız, sonra alt sınır koyacaksınız. Bunlar aynı. Bu da t eksi 1'in karesi.
+
+246
+00:48:14,916 --> 00:48:26,395
+Burada da önce 2'yi koyacaksınız. Eksi 1, eksi alt sınır 1'i koyacaksınız. Cevap 2 çıkıyormuş. Eğer arkadaşlar dalgınlığımıza gelir de şuradan sonra yani
+
+247
+00:48:28,467 --> 00:48:51,128
+Reus tütenin uzunluğu kara kök içinde 2 t-1'in karesi ya, mutlak değeri almayı unutursanız bu integralın sonucu bambaşka bir şey çıkar. Negatif sayı bile çıkabilir. Bir sonraki örnek de aynı arkadaşlar. Türevini alacaksınız, türevini alıyorsunuz, uzunluğunu hesaplıyorsunuz, 0, 1 arasında integradıyorsunuz. Burada açıklaması gereken herhangi bir şey, sadece işlemler yapış.
+
+248
+00:48:53,268 --> 00:48:56,768
+Evet, böylece vektör değerli fonksiyonları da bitirdik arkadaşlar.
+
+249
+00:48:57,327 --> 00:49:01,788
+Şimdi, çok değişkenli, çok demeyin de, 2 ve 3 değişkenli fonksiyonlar.
+
+250
+00:49:02,128 --> 00:49:04,588
+Buraya ilk geçtiğimizi de hatırlarsanız söylemiştim.
+
+251
+00:49:05,711 --> 00:49:19,132
+4 ya da daha çok değişkenli fonksiyonlarda işlemler yapmak son derece sıkıntılı olmaktadır. Bazı planlar imkansız bile olmaktadır. Onun için somut görünen 2 değişkenli fonksiyonlarda biraz da zorlayarak 3 değişkenli fonksiyonlarda işlemleri yapacağız demiştim.
+
+252
+00:49:19,132 --> 00:49:33,612
+Bazı işlemler genel verilebileceği için, genel N değişkenli verilebileceği için tanımları bazen N değişkenli ifadeler içinde söyleyip geçeceğiz. Ama praktikimiz daha çok 2 değişkenli fonksiyonlar biraz da 3 değişkenli fonksiyonlar üzerine olacak.
+
+253
+00:49:33,711 --> 00:49:36,132
+dedim. Şimdi 76 ve
+
+254
+00:49:36,132 --> 00:49:37,992
+77'de iki tane tanım kümlesi
+
+255
+00:49:37,992 --> 00:49:40,211
+örneği var arkadaşlar. Bakın tanım kümlesi
+
+256
+00:49:40,211 --> 00:49:42,351
+önemlidir. Matematik 1'de de hatırlıyorsunuz
+
+257
+00:49:42,351 --> 00:49:43,871
+tanım kümlesi soruları çıkmıştı.
+
+258
+00:49:43,992 --> 00:49:46,072
+Hatırlıyorsunuz. Çıkmıştı. Gene çıkma
+
+259
+00:49:46,072 --> 00:49:47,891
+ihtimali vardır. Kuvvetlidir
+
+260
+00:49:47,891 --> 00:49:49,831
+hatta. Her sorunun kendine
+
+261
+00:49:49,831 --> 00:49:52,072
+özelliği vardır. Açıklama tarzı vardır.
+
+262
+00:49:52,612 --> 00:49:54,032
+İlk örneğimiz de şu.
+
+263
+00:49:54,931 --> 00:49:56,331
+İki değişkenli bir f fonksiyonu
+
+264
+00:49:56,331 --> 00:49:58,052
+kök içinde x eksi
+
+265
+00:49:58,052 --> 00:49:59,891
+y kare artı y eksi iki kare ile
+
+266
+00:50:00,000 --> 00:50:22,660
+Bu fonksiyonun tanım kümlesini bulun diyor. Yani verilen şu iki ifadeyi anlamlı hale getiririz demek istiyor. Bunları anlamlı hale getirirken biz alışkanlık anlamında y'yi, x'e bağlıyoruz. Ama siz x'i, y'ye de bağlayabilirsiniz. Alışkanlığımız sağ ortaklanan liseden beri y'x'in bir fonksiyonudur ya. Öyle düşünerek devam ediyoruz. O ne göre işlemlerimiz?
+
+267
+00:50:23,027 --> 00:50:31,188
+İstediğiniz gibi yapabilirsiniz. Şimdi ilk formülün, yani kökçilli x-y karenin anlamlı olabilmesi için x-y kare büyük eşit 0 olmalı.
+
+268
+00:50:31,567 --> 00:50:40,807
+Aynı mantık ikincisi için de yeterli. Yani y-x kare büyük eşit 0 olmalı. İlkini düşünün. x-y kare büyük eşit 0 olmalı.
+
+269
+00:50:45,364 --> 00:51:01,884
+Eksi kök x, küçük eşit y, küçük eşit kök x şeklinde olduğunu görüyorsunuz buradan. Yani x büyük eşit y kare ya da y küçük eşit x oluyor ya şuradan. Y kare küçük eşit x olduğu için y'nin aralığının değişkene bağlı olmakla birlikte bu şekilde olduğunu görüyorsunuz.
+
+270
+00:51:02,099 --> 00:51:12,319
+y'yi x'e bağladığım için. İkincisi için, yani y-x'i x kare bir geçit sıfır içinde, buradan arkadaşlar y bir geçit x kare yazarsınız.
+
+271
+00:51:12,599 --> 00:51:19,779
+Ya da x kare küçük eşit y yazarsınız. Eğer x'i çözerseniz, dikkat edin, bakın burada y'yi x'in bir fonksiyonuna kalmışım.
+
+272
+00:51:20,079 --> 00:51:22,199
+Burada da x'i y'nin bir fonksiyonuna kalmışım. Dikkat edin. Eğer burada da x'i y'nin bir fonksiyonuna kalmışım.
+
+273
+00:51:22,199 --> 00:51:30,099
+Dikkat edin. Eğer burada da x'i y'nin bir fonksiyonu diye düşünürseniz, x'in y'ye bağlı değişim aralığı, x'i kök y ile artırır.
+
+274
+00:51:30,099 --> 00:51:49,099
+Şimdi birinciyi çizelim. Yani şunu çizelim. Y-kök x ile artı kök x arasında bir başka ifadeyle y kereşitliği çizgiye düşünün. Burası değil mi? Burası. Ben geriye kalan kısmını çizeyim. Mavi de çizeyim. Şurası.
+
+275
+00:51:53,523 --> 00:52:02,843
+Şey çiziyorum, şu x eşit diye kareyi. Diğer il arkadaşlar, şuradan y eşit x kare ya, y eşit x kare, onun devamında yeşille çizeyim, şu rafı.
+
+276
+00:52:06,228 --> 00:52:20,088
+Tamam mı? Şöyle birazcık daha gireyim. Şurada y eşittir x kare. Bu y eşittir x kare. Ama ne istiyor? Bakın ne istiyor? Şurada y kök x'den, eksi kök x'den büyük olsun diyor. Tamam mı? Kırmızıya geçeyim.
+
+277
+00:52:20,088 --> 00:52:25,088
+Y, eksi kök x dediğim şey neresi arkadaşlar? Y eşittir x kök x neresi?
+
+278
+00:52:29,235 --> 00:52:29,996
+Görünmüyor mu?
+
+279
+00:52:31,735 --> 00:52:32,955
+Yeş direkç kötüdür.
+
+280
+00:52:39,315 --> 00:52:45,235
+Ya da x eşittir y karenin altta kalan kısmı. Görünmüyor mu? Ekrandan göremiyor mu? Renkten söyleyebilirsin.
+
+281
+00:52:46,996 --> 00:52:57,335
+Aşağı mavili kısım değil mi? Mavili kısım. Kök işlem de değil mi? Ekşi kök işlem büyük olacak. Şöyle bakın kırmızıyla gidiyorum. Şöyle gidiyorum.
+
+282
+00:53:01,907 --> 00:53:22,587
+Eksi kök içten y büyük olacak, artı kök içten küçük olacak. Yani böyle. Şimdi kalemi değiştiriyorum. X de eksi kök y, yani eksi kök y şurası değil mi? Eksi kök y şurası. Eksi kök y'den büyük olacak, artı kök y'den küçük olacak. Onu da tarıyorum. Yukarıya da biraz tarayım.
+
+283
+00:53:26,867 --> 00:53:36,067
+Şimdi sarı kırmızı oldu, ben Galatasaraylıyım valla. Bak sarı kırmızı olan yer, istenilen tanımcı mesleği. Neresi?
+
+284
+00:53:41,076 --> 00:53:45,456
+Sarı kırmızı olan yer, istenilen tanım kümesi. Neresi tanım kümesi?
+
+285
+00:53:48,516 --> 00:54:07,655
+Hadi ya, bak burası görüyor musunuz? Çakıştığı yer, burası, işte tanım kümesi bu. Yani x sıfırla bir arasında, şurası bir görüyorsunuz, x sıfırla bir arasında alırsanız, y'nin x kareden büyük olduğu ve kök işten küçük olduğu yer, yani kırmızıyla boyadığımız kısım, tanım kümesi oluyor.
+
+286
+00:54:10,643 --> 00:54:15,323
+Evet, bir sonraki örneğimiz, bilgi verip geçeceğim, bir sonraki örnekte.
+
+287
+00:54:15,823 --> 00:54:23,963
+FxH'dir, art kosinus 1-2 kare-y kare bölü 3 artı art sekant 2 kare artı y kare ile verilen F fonksiyonun tanım tünnesini buldunuz diyor.
+
+288
+00:54:24,303 --> 00:54:27,103
+Burada bilgi verip geçeceğim, üzerinde fazla durmadan.
+
+289
+00:54:27,543 --> 00:54:36,403
+Şimdi arkadaşlar, siz biliyorsunuz ve unutmayacaksınız ki, sinüs ve kosinus fonksiyonlarının alabileceği en büyük değer artı 1'dir, alabileceği en küçük değer eksi 1'dir.
+
+290
+00:54:38,643 --> 00:54:50,063
+1-x²-y² bölü 3'ün tanımlı olabilmesi için argümanı, yani şunun, şunun, eksi 1 ile artı 1 arasında olması gerekiyor.
+
+291
+00:54:50,143 --> 00:54:54,963
+1-x kare-y kare bölü 3'ün, eksi 1 ile artı 1 arasında olması gerekiyor.
+
+292
+00:54:55,283 --> 00:55:06,883
+Diğer iş için ise arkadaşlar, ars tekantın tanımlı olabilmesi için, ars tekantın tanımlı olabilmesi için, argümanının eksi sonsuz eksi 1 ya da bir sonsuz aralığında olması gerekiyor.
+
+293
+00:55:07,103 --> 00:55:17,603
+Eksi 1 ve birden kapalı. Ars tekantın tanımlı olabilmesi için, argümanının eksi sonsuz eksi 1'den kapalı veya bir sonsuz birden kapalı aralıklarında olması gerekiyor.
+
+294
+00:55:18,143 --> 00:55:35,083
+x kare artı y kare kesinlikle pozitif olduğu için o zaman bir sonsuz aralığına tekabül ediyor. Görüyorsunuz bakın, argüman bir sonsuz aralığına tekabül ediyor. Yani x kare artı y kare büyük eşit değilse tanımlı oluyor. Şimdi birinciyi düzenlediğiniz zaman şöyle bir ifade buluyorsunuz.
+
+295
+00:55:36,500 --> 00:55:52,960
+Merkez orijinde bulunan bir çemberin bir tarafında sınırlar, diğer tarafında dört. Diğeri de zaten bizim çemberin birden büyük olan kısmı. Herkesini çizdiğiniz zaman o arada kalan kısım, yani şu kısımlar, sınırlarda dahil olmak üzere bu kısımlar işlenilen tanım çimesi oluyor.
+
+296
+00:55:56,692 --> 00:56:03,991
+Arkadaşlar, şimdi bir ara vermek istiyorum. Şu seviyeye, şu şeyden 78. örneğe kadar geldiğini düşünelim.
+
+297
+00:56:04,531 --> 00:56:12,871
+Müsaade ederseniz ben biraz hükmeneyim. Sağt başına doğru başlar. Yani 12'ye, 2 dakika kala, 5 kala başlar. Olur mu?
+
+298
+01:07:22,228 --> 01:07:24,847
+Arkadaşlar geldim ben kaldığımızda ben devam ediyoruz.
+
+299
+01:07:25,048 --> 01:07:25,387
+Bakit.
+
+300
+01:07:25,876 --> 01:07:32,036
+Birkaç tane daha örnek var burada. Şu seviye eğrisi ve yüzeylerle ilgili. Onları hemen hızlıca geçelim okuyup.
+
+301
+01:07:32,496 --> 01:07:39,036
+Şimdi soruyu bir okuyayım. Fx'e eşitlik yok. Şimdi x kare artı y kare ile verilen f fonksiyonun seviye eğrilerini bulunuyor.
+
+302
+01:07:39,316 --> 01:07:52,735
+Mesele şu arkadaşlar. Verilen ifadeyi, formülü c gibi uygun bir c gibi uygun bir star ile eşitleyip, oradan yapının nasıl oluştuğuna ya da eğrinin nasıl olduğuna karar vermek ya da eğriyi tespit etmek.
+
+303
+01:07:53,876 --> 01:08:06,416
+2 eşitlik kök, şimdi x kare, y kare verdiğine göre, bunun seviye eğileri, c büyük sıfır olmak üzere, yalnız unutmayın arkadaşlar, bu, karakök, şimdi x kare, y kare eşittir, c demek zaten otomatik olarak, c büyük sıfır demek, tamam mı? Otomatik olarak.
+
+304
+01:08:07,556 --> 01:08:08,816
+Asıl takdirde bu olmaz, değil mi?
+
+305
+01:08:09,588 --> 01:08:16,868
+Yani, sol taraf, sağ taraf eşitse, eğer bu bunu eşitse, bu karı kökün tanımlı olabilmesi, pozitif olması gerekiyor. En azından negatif olmaması gerekiyor.
+
+306
+01:08:17,128 --> 01:08:23,128
+Sonra, c böyle. Şimdi, her iki tarafın karesini aldık, biraz daha düzgün yazarsanız, x kare, y kare, c kare dersiniz.
+
+307
+01:08:23,288 --> 01:08:32,148
+Yani, merkezi orjin ve yar çapı c olan, işte pozitifli ondan söylüyorum, merkezi orjin ve yar çapı c olan bir çembere sahiptiniz.
+
+308
+01:08:37,536 --> 01:08:51,015
+Merkezi, orjin ve yarı çapı C olan birçok çember ya da daireden ibaret emiş. Burada C'ye belli başlı değerler vererek değişik daireler elde etmek ya da çemberleri elde etmek mümkün.
+
+309
+01:08:51,015 --> 01:08:54,175
+Bu şu ilk şekil.
+
+310
+01:08:54,644 --> 01:09:04,324
+Şu, fx'e eşittir, x kare altı, ya da z eşittir, fx'in x kare altı, y kare konisinin şekli, konin şekli. Yani bunu çirmek kolaydı, anlatmıştım size.
+
+311
+01:09:04,764 --> 01:09:17,384
+y'ye sıfır verdiğiniz zaman mutlak x oluyordu değil mi? x'e sıfır verdiğiniz zaman mutlak y oluyordu. Şurası mutlak y'nin y-d düzeninde görünen kısmı, şurası da mutlak x'in x-d düzeninde görünen kısmı.
+
+312
+01:09:17,384 --> 01:09:20,184
+Ağzını kapattığınız zaman bunun adına bir konik deniyordu.
+
+313
+01:09:22,644 --> 01:09:33,164
+c'ye 1 verdiğiniz zaman şurada, x karatı y'ye karıştır bir çemberi, bakın. Mesela c'ye 3 bölü 2 vermişim, dolayısıyla x karatı y'ye karıştır 9 bölü 4, bakın.
+
+314
+01:09:34,824 --> 01:09:38,963
+Çemberi ya da dairesi, c'ye 2 verdiğiniz zaman x karatı y'ye karıştır 4.
+
+315
+01:09:39,412 --> 01:09:45,792
+Bakın, çemberi böyle. C'ye belli değerler, pozitif değerler vererek böyle bunları bir geçebilirsiniz. Daha da fazlalaştırabilirsiniz.
+
+316
+01:09:46,212 --> 01:09:51,632
+Seviye eğrileri bu şekilde. Şu 79. soru, biraz değişik arkadaşlar. Bir okuyayım soruyu.
+
+317
+01:09:52,092 --> 01:10:00,852
+F x'ye şiddetli x'e çarpı, arsını C ile verilen F fonksiyonunun diyor, bir bir noktasını içeren seviye eğrisi için bir denklem olur.
+
+318
+01:10:01,344 --> 01:10:09,603
+Bir bir noktasını içeren, seviye eğrisi için bir denklem bulunur. Yani, iç yerine bir, y yerine bir koyup, oradan bir yere varım diyor. Tamam mı? C ile ilgili.
+
+319
+01:10:09,884 --> 01:10:17,564
+Koyalım şimdi, iç yerine bir, y yerine bir koyalım burada. O zaman ne oluyor? Birin karesi çarpı değil mi? Birin karesi çarpı. Arsünüs bir eşittir c.
+
+320
+01:10:17,823 --> 01:10:25,163
+Şimdi, arsünüs bir arkadaşlar, pi bölü 2 olduğuna göre, değil mi? Arsünüs bir pi bölü 2 olduğuna göre, bakın c eşittir, pi bölü 2 çıkıyor.
+
+321
+01:10:29,344 --> 01:10:45,183
+Burada G'ye belli değerler verdi. Burada tam tersini söylüyor. Verdiğim noktaya göre siz G'yi test edelim diyor. Verdiği nokta bu. G'yi test ettiğiniz zaman da P bölük olarak bulduğunuz zaman sorunun cevabı yani Zekten bulduğu sorunun cevabı 2'ler aksinistye eşitli P bölük olarak bulunuyor.
+
+322
+01:10:45,183 --> 01:10:51,984
+Seviye yüzeyinde farklı ya da ilave herhangi bir şey yok arkadaşlar. Farklı ya da ilave herhangi bir şey yok.
+
+323
+01:10:52,372 --> 01:11:12,012
+Bakın örnek, f-z, z, eşittir, x-kara, y-z. Şimdi 3 boyutlu, ya da 3 değişkenli bir fonksiyon verince seviye yüzeyi oluyor. 2 değişkenli bir fonksiyon verdiği için bu seviye yüzeyi oluyor. Gene c'ye eşitliyorsunuz her zaman olduğu gibi. Tabi c'nin konumunu belirleyeceksiniz pozisyonun.
+
+324
+01:11:20,372 --> 01:11:35,772
+C'ye belli değerler vererek, burada C'nin negatif ya da pozitif olmasının bir önemi yok, belli değerleri vererek belli başlığı, adı belli, bazı seviye yüceleri bulabilirsiniz. Mesela C'ye 0 verdiğin zaman, D'ye istiyorsan 6'ya 2'ye 2'ye çıkar. Bu bir koni değil mi? Bir koni.
+
+325
+01:11:38,228 --> 01:11:40,467
+şey konu burada. Paraboloid
+
+326
+01:11:40,467 --> 01:11:42,368
+özür dilerim. Bu paraboloid
+
+327
+01:11:42,368 --> 01:11:44,087
+G'ye eşit
+
+328
+01:11:44,087 --> 01:11:45,807
+ekşi bir koyarsanız mesela Z'ye eşitlik
+
+329
+01:11:45,807 --> 01:11:48,047
+x'e y'kare artı bir şekildeki diğer bir
+
+330
+01:11:48,047 --> 01:11:50,127
+paraboloid çıkar. Grafin çizmek de çok
+
+331
+01:11:50,127 --> 01:11:52,087
+zor değildi. Z'ye eşitlik x'e artı
+
+332
+01:11:52,087 --> 01:11:53,927
+y'kare çizmek için mesela Y'ye sıfır
+
+333
+01:11:53,927 --> 01:11:56,248
+veriyordunuz. Z'ye eşitlik x'e çiziyordunuz.
+
+334
+01:11:56,547 --> 01:11:57,967
+Bakın Z'ye eşitlik x'e dediği şey
+
+335
+01:11:57,967 --> 01:11:59,488
+arkadaşlar şöyle kırmızı şuradan
+
+336
+01:11:59,488 --> 01:12:02,328
+bir anlatım olsun diye söylüyorum.
+
+337
+01:12:02,448 --> 01:12:03,028
+Burası bakın.
+
+338
+01:12:03,699 --> 01:12:27,100
+Z eşittir, x kare burası. Bu tarafta da var. Orayı almıyorum. Y'ye sıfır verdiğiniz zaman. X'e sıfır verirseniz z eşittir y kare. O da c, z düzleminin olacak. O da burası. Ben düzgün birleştirmişim. Tabii düzgün olması gerekmiyor. Şöyle bir şey olabilir ya. Şuradan gelebilir, şuradan gelebilir. Şöyle bir şey olabilir. Şöyle biraz görüntüsü güzel olmaz o zaman. Şöyle yapıyorsunuz ya.
+
+339
+01:12:27,636 --> 01:12:46,536
+Eğrilikten dolayı görüntüsü güzel olmaz. Ben görüntüsü güzel olsun diye böyle ikisini simetrik almışım. Simetrik olmadığını biliyorsunuz. Çünkü X, Z'nin görüntüsüyle değil mi? X, Z'nin görüntüsüyle, Y, Z'nin görüntüsüyle diktik olarak aynı değil. Dikler bunlar ama şematik olarak, resim olarak görünmüyor. Değil mi? Bu görünmüyor.
+
+340
+01:12:47,936 --> 01:12:52,316
+Seviye yüzeyi de bu arkadaşlar. Geldik en önemli konumuza. Limite geldik.
+
+341
+01:12:53,043 --> 01:13:11,183
+Birkaç adım da izleyeceğiz. Mesela problemsiz durumlar. Karşılığa çıkma ihtimali sıfıra yakın. Yani verilen noktada fonksiyonun limitini bulunduruz dediğinizde ama önce öğrencinin aklına noktayı koymak gelmelidir her zaman. Bir fonksiyon verilmiş bir noktadaki limitini hesaplayın dediği zaman önce noktayı koymak gelmelidir.
+
+342
+01:13:21,043 --> 01:13:24,724
+Her iki kişi birden 0 olmazsa, limit zaten otomatik olarak odur.
+
+343
+01:13:25,224 --> 01:13:31,904
+Aşkı durumda, yani noktanın pay ve paydayı birlikte 0 yapması halinde bambaşka işlemler yapılması gerekir.
+
+344
+01:13:32,224 --> 01:13:42,203
+İkincisi, eğer payda pay kısmından bağımsız olarak 0 ise, zaten 0'a bölme tanımlı olmadığı için, limit halinde artış sonsuz ya da eksistonsuz ya da limit yoktur gelmesi gerekiyor.
+
+345
+01:13:42,203 --> 01:13:48,463
+Birinci örnekte, bakın x yerine 1, y yerine 2 koyun. Yani, derler fonksiyonunda bir iki noktası da limitini hesaplayın.
+
+346
+01:13:49,043 --> 01:13:53,543
+Yine bir Y'ye yenilikçi koyduğun zaman herhangi bir problem yoksa limit olur. Koyduk yokmuş. Limit bir.
+
+347
+01:13:54,771 --> 01:13:56,931
+Şu bileşik kuralını daha önce söyledim mi bilmiyorum.
+
+348
+01:13:57,211 --> 01:13:58,211
+Ondan bir bahsedeyim ben.
+
+349
+01:13:58,652 --> 01:14:00,551
+Bakın limit x'ye 0,0'a giderken
+
+350
+01:14:00,551 --> 01:14:03,372
+x'ye x'ye bölü x'ye y'kare.
+
+351
+01:14:03,711 --> 01:14:04,891
+İle verilen f fonksiyonu diyor
+
+352
+01:14:04,891 --> 01:14:06,612
+0,0 noktasındaki limitini hesaplayalım.
+
+353
+01:14:06,811 --> 01:14:09,292
+Demin dedim ya problem çıkmıyorsa noktayı direkt koyabilirsin.
+
+354
+01:14:09,612 --> 01:14:10,751
+Bakın noktayı koyarsanız
+
+355
+01:14:10,751 --> 01:14:13,292
+pay kısmında 0 oluyor, payda kısmında 0 oluyor.
+
+356
+01:14:13,612 --> 01:14:14,652
+Burada işte başka işlemlere
+
+357
+01:14:14,652 --> 01:14:16,912
+yapmak gerekebilir dedim. Burada özel bir durum
+
+358
+01:14:16,912 --> 01:14:18,311
+var arkadaşlar. Bu 82.
+
+359
+01:14:18,631 --> 01:14:21,072
+örnek özelinde bir durum var.
+
+360
+01:14:21,431 --> 01:14:22,771
+Şimdi argümanlar
+
+361
+01:14:22,771 --> 01:14:35,611
+Bu arada hepsinde bakın, x'yi görüyorsunuz bir şekilde. Bakın, x'yi, sinüs x'yi, x'yi'nin karesi. Dolayısıyla şöyle bir bileşik fonksiyon kuralı dediğimiz o. Mantık yürütebilirim. Ben eğer x'yi değiştirirsem,
+
+362
+01:14:36,051 --> 01:14:44,332
+Yani x'yi x çarpı y'yi demek istiyorum. Yeni bir parametreye atar isem olay basitleşebilir, kolayca sonuç alabilirim diye düşünüyorum.
+
+363
+01:14:44,672 --> 01:14:52,011
+Şimdi bakın g x'yi eşittir x kare y'yi kare derseniz x'yi birlikte 0'a giderken g'de otomatik olarak 0'a gidiyor.
+
+364
+01:14:52,211 --> 01:15:00,011
+Değil mi? g 0'a giderken yani x kare çarpı y'yi kare 0'a giderken otomatik olarak x ve y'ye de ayrı ayrı da olsa 0'a gidecektir.
+
+365
+01:15:00,011 --> 01:15:04,051
+Bu bileşik kurallarını kullandığımız zaman arkadaşlar bir başta ifadeyle.
+
+366
+01:15:04,051 --> 01:15:14,531
+x'ye yerine t yazdığımız zaman. Bak, limit x'ye 0,0'a giderken ifade eşittir. Limit t0'a giderken, x'ye yerine t koydum, t eksik, şimdi t bölü tekrar olur.
+
+367
+01:15:15,123 --> 01:15:39,963
+Şimdi burada 0 bölü 0 belirsizliği var. Kuralı kullanabiliriz. Yani pay ve paydanın kendine göre türevini alabiliriz. Payın türevi 1 eksi koste, paydanın türevi 2 t. Şimdi burada da 0 bölü 0 belirsizliği var. Kuralı bir kere daha kullanabiliriz. Yani pay ve paydanın kendine göre türevini alırız. Payın türevi sinüs t, paydanın türevi 2. Şimdi t'ye sıfıra giderken sinüs t'ye sıfıra gittiyiz. Cevap sıfır olarak bulur.
+
+368
+01:15:40,819 --> 01:15:45,260
+Böyle bazı örneklerde kolaylık, işimizi kolaylaştıran yapılar oluyor.
+
+369
+01:15:47,619 --> 01:15:51,619
+Şimdi özel durumlar artık geldi. Bu iki örnekten sonra özel durumlar geldi.
+
+370
+01:15:51,899 --> 01:15:54,420
+Şimdi arkadaşlar, bir sürü özel durum var. Bir sürü özel durum.
+
+371
+01:15:54,519 --> 01:16:01,260
+Mesela bir tanesi, verilen iki değişkenli ifade, x ve y'ye göre ayrı ayrı yazılabilir.
+
+372
+01:16:02,239 --> 01:16:04,680
+Çarpma halinde mesela, tamam mı? Ayrı ayrı yazılabilir.
+
+373
+01:16:05,059 --> 01:16:06,840
+Bu bir özel durum. Bakalım örneğine.
+
+374
+01:16:07,283 --> 01:16:31,123
+f eşittir x kare çarpı 1 eksi kosye bölü y kare. İle verilen f fonksiyonu, bakın sıfırsızlığına satdaki limiti bulmuş. Bakalım şimdi. Bakın birisi x kare, görüyor musunuz? Diğeri 1 eksi kosye bölü y kare. Ayrı ayrı yazılabilir. Ben şimdi 1 eksi kosye bölü y karenin limitini bir hesaplayayım. Bunda da lopital kuralını kullanmadım da çarpanlara ayırma işlemi yaptım burada. İsterseniz lopital kuralıyla devam edebilirsiniz. Yukarıda yaptığım için şurada.
+
+375
+01:16:33,043 --> 01:16:37,243
+Şurada bakın onu bir kere yaptığım için tekrarlamadım. Şurada yaptığım için tekrarlamadım.
+
+376
+01:16:38,763 --> 01:16:44,523
+Burada da payla paydayı bir artı kostiye ile çarptım. Bakın bir artı kostiye ile çarptım. Sonra ayırdım.
+
+377
+01:16:44,979 --> 01:17:07,119
+Ayırdım. Yani pay kısmı 1-kos kareye ya, bu sin kareye, sin kareye y bölü y kare diye yazdım. Yeriye kalan kısmı 1 bölü 1 artı kos y diye yazdım. Şimdi şu limit, matematik ihtiyacınız olduğu sürece unutmayacaksınız. 1, burası da 1 bölü 2, cevap 1 bölü 2. Diğeri de x kareye. Onu da ayrı hesapladım bakın. Şurada, görüyorsunuz. Ayrı hesapladım. Sonucu böyle buldum.
+
+378
+01:17:12,051 --> 01:17:23,652
+Her ikisinin de limitleri mevcut ise mümkün. Bir daha söylüyorum, bu işlemi yapabilmeniz için çarpanların hepsinin ayrı ayrı limitlerinin mevcut olması gerekiyor.
+
+379
+01:17:23,951 --> 01:17:35,251
+Burada iki tane çarpan var. Birisi x², diğeri bir eksi kos diye bölü y². Eğer her iki çarpanın da ayrı ayrı işlemlerin ortada limiti mevcut ise bu işlemi yapıp doğru sonuç bulabilirsiniz.
+
+380
+01:17:35,475 --> 01:17:52,155
+Herhangi birisinde bir sıkıntı çıkarsa bu işlem doğru değildir. Tamam mı? Mesela şunun limitinde ya da bunun limitinde bir sonsuzluk ya da eksik sonsuzluk ya da limitin olmaması gibi bir durum söz konusu olursa o zaman bu işlemin sakıncalıdır, yapılmaması gerekir. Yani yanlı sonuç alınabilecektir.
+
+381
+01:17:53,908 --> 01:18:11,708
+Evet, çarpanları ayırma diye böyle ayırdım tek tek. Bakın bazen limit anlamı fonksiyonun pay ve paydasını çarpanlara ayırarak gerekli daha değişimleri yaptıktan sonra işlem devam edebilir diyor. Ben onu biraz daha özetle şöyle söyleyeyim ya da değişik ifadelerini şöyle söyleyeyim. İşte fonksiyonun 0,1 noktasındaki limitini bulunuz diyor.
+
+382
+01:18:11,708 --> 01:18:21,208
+Şimdi, önce fonksiyonda x gördüğünüz yere 0, y gördüğünüz yere 1 koydunuz. Bakalım ne oluyor? Koyduk. Bakın x gördüğünüz yere 0, y'y'e 1 koyunca pay 0 oldu.
+
+383
+01:18:21,908 --> 01:18:37,388
+0 oldu. Yani bir sıkıntı, sıkıntılı durum var. Bununla birlikte arkadaşlar, yani x yerine 0, y yerine 1 konunca hem payin hem de paydanın 0 olması, en azından rasyonel ifadelerde pay ve paydanın ortak çarpanı vardır anlamına geliyor.
+
+384
+01:18:37,827 --> 01:18:46,188
+Rasyonel ifadelerde pay ve paydanın ortak çarpanı vardır anlamına geliyor. Bakalım var mı? Payı çarpanları ayırdık. Bakın böyle.
+
+385
+01:18:46,963 --> 01:19:14,564
+Zaten x kare yanın olduğu için o duruyor. Eksi y kare artı 2'ye eksi 1'i de eksi parantelinde y eksi 1'in karesi diye yazdım. Bunu sonra devam ettireyim. Aşağıtı x kare artı 2 x diye artı y kare olduğu için şu 3'ü birlikte bir tam kare, eksi 1 var yanında. Bakın yazdım. Şimdi her ikisi de 2 kare farkı, hem pay hem de payda 2 kare farkı. 2 kare farkı şeklinde düzenledim. Hem payda hem de paydayı. Sonra kısalttım. Kiminle kısaltıyorum?
+
+386
+01:19:14,963 --> 01:19:42,344
+x kare artı y kare x'i 1 ile kısaltıyorum. Dolayısıyla x kare artı y kare farklı bir olduğunu kabul etmek durumundayım. Kabul ettim, kısalttım, geriye bu kaldı. Şimdi bunun limitinde bir sıkıntı çıkmayabilir. Tamam mı? Şu çarpanı arayın işlemi ya da sahneleştiğin işlemi yaptıktan sonra limitde bir sıkıntı çıkmayabilir. Bakalım. Şimdi x yerine 0, y yerine 1 koyduk. Bakın. x yerine 0, y yerine 1 koyduğumuz zaman pay 0 oluyor ama pay da 2 oluyor mesela değil mi? 0 böyle ki cevap 0 olarak bulundu.
+
+387
+01:19:42,868 --> 01:19:57,148
+Böyle sorular da sınavda daima sorulmaktadır, hazırlıklı olun. Yani böyle verilen bir fonksiyonun 0-1 noktasındaki limiti bulunuz. Ya da limit x0'a y1'e giderken limitini hesaplayınız diye sorulabilir. 85. örnek olduğu gibi.
+
+388
+01:19:58,148 --> 01:20:00,000
+İşte limit x ve y0...
+
+389
+01:20:00,000 --> 01:20:09,079
+0'a giderken x²-x, x²-4y² bölü x²'ye limitini hesaplayın. Önce noktayı bir koyacaksınız, bakacaksınız bir nol bitkiğine.
+
+390
+01:20:09,440 --> 01:20:18,079
+3'e 0, y'e 0 koyduğunuz zaman 0, 0, 0, 0, 0, görüyorsunuz. Dedim ya demin, rasyonel ifadeler olduğu zaman ortak çarpan var demektir.
+
+391
+01:20:18,079 --> 01:20:27,979
+Bakalım var mı? x²-x, x²-4y²'yi çarpandan ayırdığınız zaman x²-x, x²-x²-1 oluyormuş çarpandan.
+
+392
+01:20:28,000 --> 01:20:52,119
+zanayacağınız zaman öyle oluyormuş. Payda zaten çarpanlara zaten birinci derecede. Onla ilgili bir işlem yapmak gerekmiyor. O zaman x artı 2'ye çarpı x eksi 2'ye eksi 1'i x artı 2'ye böldünüz. Ne zaman bölüyorsunuz? X artı 2'ye farklı sıfır kabul ederek bölüyorsunuz. Bölünce sadece bu kalıyor. Bu kalıyor. Bu ifadeniz de x ve y sıfıra giderken, birlikte sıfıra giderken, cibiti eksi 1 çıkıyor.
+
+393
+01:20:54,323 --> 01:21:01,583
+Evet, devam ediyoruz. Şimdi burada da nispeten, burada da nispeten gene aynı ayırma, iki ifadeye ayırma.
+
+394
+01:21:02,103 --> 01:21:10,163
+Cem'in değişkenleri yani x'li ve y'li ifadeleri ayrı ayrı düşünüp sonuca almayı düşünebilirsiniz, sonuca gidebilirsiniz demiştim.
+
+395
+01:21:10,523 --> 01:21:18,043
+Burada karşı da olsa ifadeleri uygun bir şekilde ayırarak sonuca alma işlemi var. Bu da son derece önemli bir örnek.
+
+396
+01:21:18,403 --> 01:21:22,323
+Mesela x ve y'e sıfıra giderken x kare çarpı e üzeri y'e eksi.
+
+397
+01:21:22,323 --> 01:21:43,423
+Eksi 1 bölü, x'e rahatı yıkar. Limitini hesaplatıyorum. Bakın bunu yapabiliriz. Şimdi buraya gelin. Bakın. Şimdi eğer e üzeri y eksi 1'in, e üzeri y eksi 1'in paydasına y'yi koyarsanız onun limitinin 1 olduğunu biliyorsunuz. Yukarıda da yaptık galiba. Değil mi? Şeyde, vektör değerli fonksiyonları şimdi hesaplamıştım. Bakın e üzeri y, eksi 1'in paydasına y'ye koyarsanız bunun limitinin 1 olduğunu biliyorsunuz.
+
+398
+01:21:43,572 --> 01:22:00,391
+Bir koyma işlemi yapınca, tabi paydaya koyarsanız, bir de pay kısmına koymanız gerekiyor. Onu da bakın burada koyduk. Yani verilen ifadeyi x kare y bölü x kare artı y kare çarpı e üzeri y eksi bir bölü y şeklinde bu ikili ifade şeklinde yazmak mümkün olur.
+
+399
+01:22:02,159 --> 01:22:28,159
+Daha doğrusu, yadından sonra ortaya çıkan sağdaki şu ev üzeri y'li kısmı. Ben bir kere daha üşürmemişim. Yapma şimdi bakın. 0-1-0 belirsizliği var. Y'ye göre bakıyorsunuz. Kuralı bir kere kullandınız. Ev üzeri 0-1 olduğu için limit 1. Şimdi bunun limiti 1. Eğer bunun limiti de arkadaşlar, eksi sonsuz veya artı sonsuz ve yokun dışında bir şeyse, yani bir şunun da limiti mevcut da ki mevcuttur. Size bir ince bilgi vereyim. İnce bilgi vereyim. Eğer rasyonel ifadelerde...
+
+400
+01:22:29,203 --> 01:22:33,623
+Payın derecesi, paydanın derecesinden büyük ise limit 0 oluyor.
+
+401
+01:22:34,064 --> 01:22:42,703
+Orjinde, tamam mı? Orjinde, şurada, şurada, payın derecesi, paydanın derecesinden büyük ise limit 0 oluyor. Otomatik olarak 0 oluyor.
+
+402
+01:22:42,783 --> 01:22:45,324
+Burada öyle görüyorsunuz. Rasyonel ifadeler için söylüyorum.
+
+403
+01:22:45,783 --> 01:22:48,884
+Bu yayınmışım, 7.30'da var diye de her anı kitaba görüldü.
+
+404
+01:22:49,183 --> 01:22:50,283
+Şimdi bunun limiti 0.
+
+405
+01:22:50,804 --> 01:23:12,623
+Bunun limiti 1, cevap 0 olarak bulunuyor. Diğer türlü bu işlemi yapmak çok zor arkadaşlar. Eksemler boyunca yaklaşacaksınız, doğarlar boyunca, evler boyunca imkansıla yakın bir şey. Ya da matematikçilerin yaptığı gibi limitin epsilon delta tanımını kullanacaksınız. Ama bu özel durumlar başlığının içine alınçın bakın. Uygul işlemleri yapmak diye bu şekilde hesaplayabiliyorsunuz.
+
+406
+01:23:13,492 --> 01:23:23,112
+Şimdi karı kökün olduğu yerde benim öğrendiğim aklına eşlenik çarpımı gelecek demiştim. Bu da daha önce defalarca sınavda sorulmuş bir soru. Limitini hesaplayınız demiş olalım. Şu limiti yani.
+
+407
+01:23:23,652 --> 01:23:32,532
+Şimdi sıfır sıfır noktası fonksiyon için verilen limit ifadesi bir problem mi diye baktınız. Bakın pay ve payda aynı anda sıfır oluyor. Şimdi x ve y sıfır olduğunda.
+
+408
+01:23:33,268 --> 01:23:54,688
+Pay ve payda aynı anda sıfır olur. Dolayısıyla sıfır bölü sıfır belirsizliği var. Karı kökte olduğu için arkadaşlar, aynı matematik 1'deki tekli eşeğinin fonksiyonlarının limitini hesaplama kuralını burada gerçekleştirebilirsiniz. Yani pay ve paydayı, karı kökü bulunduran kısmın eşeğini ile çarpıp, ortaya çıkan yeni ifadeyi limitlendirebilirsiniz. Çarptık.
+
+409
+01:23:55,007 --> 01:24:01,807
+Pay kısmında karekek var bakın. Eşkeni, e üzeri yeğenin artı gelecek. Bakın burada yazıyor. Çarptım.
+
+410
+01:24:02,176 --> 01:24:20,756
+Burayı yukarıya çarptığınız zaman ben bir açıkça söyleyeyim. Sadeleştirmişim çünkü. Yukarıda x kare artı e üzeri 2'ye, eksi e üzeri 2'ye kalıyor. Yukarıda pi kısmında x kare artı e üzeri 2'ye, eksi e üzeri 2'ye. Yani pi kısmında x kare var.
+
+411
+01:24:21,036 --> 01:24:24,775
+Pi kısmında da x kare var. Onları kısaldı. Yani bir bölü bu oldu.
+
+412
+01:24:25,332 --> 01:24:43,692
+Şimdi x ve y sıfıra birlikte gittiği zaman herhangi bir sıkıntı yaşanmıyor. Görüyorsunuz. Cevap bir bölüki olarak çıkıyor. Yani şöyle bir şey aklınıza gelmesin tabii. Gelirse de ben cevabını vermiş olayım geldiğince de. Bir kere işleyin çarpımından sonra hemen böyle bir sonuç alınabilir mi sorusunun cevabı her zaman değil.
+
+413
+01:24:46,195 --> 01:25:09,855
+Sonuç alınamayabilir. Bir kere daha belki bu işlemi yapmak gerekebilir. Bir başka şekilde açıklamak gerekirse, karakök hem pay kısmında hem payla kısmında birlikte bulunabilir. Yani iki kere eşleniş çarpma işlemi yapılması gerekebilir. Ya da eşleniş çarpımından sonra bir sonuç alınması mümkün olmayan durumlarda olabilir. Bir sonraki, yani 88. örneğimiz de aynı.
+
+414
+01:25:10,612 --> 01:25:26,872
+0-0 noktasındaki limitini bulunuz diyor. Bakın karı kök var. 0-0 belirsizliği varıyor. Veriyor. Yine eşlenir şartımı yaptınız. Bunu çözdüm diye hatırladım şimdi. Eşlenir şartımı yapıyorsunuz. Gerekli kısaltmaları yaptığınız zaman cevap 0-0. Sanki ben bunu çözdüm diye yaptım. Bunu çözdüm lazım.
+
+415
+01:25:28,252 --> 01:25:36,592
+Şimdi kutupsal koordinatlara dönüştürme var arkadaşlar. Hatırlayın. Kutupsal koordinatlara dönüştürme 2 kare toplam olduğu zaman hemen aklımıza gelecek demiş.
+
+416
+01:25:36,944 --> 01:26:00,804
+x kare artı y kareleri gördüğümüz zaman hemen aklımıza kutupsal koordinatlar gelecek demiştim. Oradan çok hızlı bir şekilde sonuç alabiliriz demiştim. Şimdi yukarıda bir şey yazıyordu arkadaşlar. Şu örnekle bak. 86'da. 7.30'da gösterilmiştir diyor. Aşağıdaymış o. Bak. Şunun limitinin 0 olduğu 7.30'da gösterilmiştir diyor ya. Aşağıdaymış o. Şimdi geliyorum oraya. Şunun limitini hesaplıyormuşum aşağıdan.
+
+417
+01:26:03,028 --> 01:26:15,948
+Buradadır. Bakın. Limitini hesaplayınız demiş olalım. Şimdi aşağıda arkadaşlar x kare artı yi kare var. Bir kere x kare artı yi kareyi bir şekilde bir yerde görürseniz aklınıza kutuplar koordinatlar gelecek. Yani x eşitir r kos teta, y eşitir r sin teta dönüşümü yapacaksınız.
+
+418
+01:26:16,079 --> 01:26:27,539
+Yaptığımız zaman, yani x eşitli r cos theta, x yerine r cos theta, y yerine r sin theta yazdığımız zaman, pay kısım x kare çarpı y, re küp cos kare theta sin theta oluyor.
+
+419
+01:26:28,000 --> 01:26:30,899
+Pay da x kare artı y kare, o da v kareye eşit oluyor.
+
+420
+01:26:30,899 --> 01:26:31,500
+Şimdi,
+
+421
+01:26:33,043 --> 01:26:45,984
+Dolayısıyla arkadaşlar, ifade, ifade, yani tamamı x kare y bölü, x kare artı y karenin tamamı, yazdım bakın buraya, sıfırda koydum. Mutlak değer almayı unutmayın, mutlak değer alıyoruz, tanım böyle gerektiriyor ya.
+
+422
+01:26:46,463 --> 01:27:00,724
+R küp, kos kare teta, çarptık için teta bölü r kare oluyor. Gerekli kısaltmalar yapın, bu çıktı. Siz biliyorsunuz ve matematiğe ihtiyacınız olduğu sürece unutmayacaksınız ki, sinüs ve kosinüs fonksiyonları daima eksi bir ile artı bir arasında değer alır.
+
+423
+01:27:01,043 --> 01:27:18,564
+Bir başka ifadeyle mutlak değerleri daima küçük eşit 1'dir. Hem sinüsün hem de koordinatının mutlak değer olarak küçük eşit 1 olması mutlak R. Şunun mutlak R olmasını verir. R de pozitif olduğu için değil mi? R de pozitif olduğu için mutlak değeri ihtiyacımız yok. Sadece R diye alırsın. Şimdi bu şurada var ya.
+
+424
+01:27:19,252 --> 01:27:32,712
+Şu açıklamalar var da, o normal teori kısımları anlatmıştım. O G dediği şey o. Dolayısıyla arkadaşlar, G'ye hiç dikkat almayın. Bunun limiti, yani şu limit ifadesi ortaya çıkan şu R'nin limitiyle ayrılır.
+
+425
+01:27:32,952 --> 01:27:39,492
+R'nin yani ortaya çıkan şu ifadenin limiti ne ise, sonradaki limit değeri de odur.
+
+426
+01:27:39,775 --> 01:27:48,755
+Tamam mı? Burada sadece R'ye kaldı. R'ye dikkat edin 0'a 6'ıyla gidiyor. Yazmasak yanlış olmaz ama R'ye büyük 0 dediğimiz için R'ye 0'a 6'yla gidiyor demek daha doğru olur.
+
+427
+01:27:49,895 --> 01:27:52,415
+0 olduğu için bakın limitin 0 olduğunu görüyorsunuz.
+
+428
+01:27:52,467 --> 01:28:10,467
+Bir sonraki örnekle tamamıyla buna paralel, biraz değişik işlemler değişebilir. Görüyorsunuz, sinüsün argümanında da x kare, x kare, x kare var. Paydasında da x kare, x kare, x kare var. Kutupsal koordinatlara geçtiniz. Geçtiğiniz kutupsal koordinatlara. Yani x kare, x kare, x kare gördüğünüz yere, z kare yazdınız. Bakın yazdım.
+
+429
+01:28:11,847 --> 01:28:19,327
+Şimdi sıfır göre, bunu direkt bir diye söyleyebilirim ama ben işlem olsun diye bir kere yapayım dedim. Bu bir değil mi? Şunun limiti bir.
+
+430
+01:28:19,695 --> 01:28:23,695
+Eğer işlemle görmek isterseniz, pay yok paylanını kendine göre türev ve katlıyorum.
+
+431
+01:28:23,695 --> 01:28:29,003
+Bakın, sağ değiştirme yaptığımız zaman, posisinin 0-1 olduğu için gene sonuç 1 diye çıkartıyor.
+
+432
+01:28:29,652 --> 01:28:57,652
+Tabi bu genel eşit, basit olan ama. Merkezi orijin ya. X kare artı, y kare yi düşündüğünüz zaman orijindesiniz ya. O zaman x eşitli, r kose de, y eşitli, r sinteta oluyor. Ama merkezin orijin olması gerekmiyor. Eğer merkez orijin olmazsa, yani birisi a'lı, diğer b'li olabilir demek istiyor. Merkez ab olabilir. O zaman ona göre düşünürsünüz diyor. Demin bir örnekle vardı. Parametrisyondaydı galiba. x eşit değil mi? x eksi bir eşittir, 3 kose de, y eksik.
+
+433
+01:28:57,652 --> 01:29:13,291
+3 sin teta dönüşümü yapmıştım ya, onu dikkat edin. Mesela bundaki kutupsal dönüşümünüz arkadaşlar, bakın bunda, aşağıda x eksi 1'in karese artı y kare var ya, siz şimdi burada kutupsal dönüşüm x eksi 1 eşittir r kosit teta, y eşittir r sin teta diye yapacaksınız mecburen.
+
+434
+01:29:13,771 --> 01:29:23,791
+Şurada, x eksi 1, öbür türlü işlem uzun oluyor. Burada x eksi 1'in karese artı y kare olduğu için, x eksi 1 eşittir r kosit teta, y eşittir r sin teta dönüşümü yapacaksınız.
+
+435
+01:29:24,020 --> 01:29:31,720
+Bu dönüşümü yapıp getirip burada yerine yazdığınız zaman, x ve y yerine, r ve theta cinsinin değerlerini yazdığınız zaman, bu çıkıyormuş.
+
+436
+01:29:32,120 --> 01:29:41,000
+Cos theta çarptık sin, r sin theta çıkıyormuş. Mutlak değere geçtiğiniz zaman, siz demin de söyledim, sinüs ve cosinüs mutlak değerce birden küçük kaldığı için,
+
+437
+01:29:41,480 --> 01:29:47,460
+burada sadece içeride görünen şu r dışarı, r mutlak, önce mutlak r, sonra r olarak çıkıyor.
+
+438
+01:29:47,923 --> 01:30:08,224
+R'nin limit de 0 olduğuna göre, bunun limitin 0 olduğunu görüyorsunuz. Gördüğünüz gibi arkadaşlar, inanılmaz derecede kutusal koordinatlar işimizi kolaylaştırıyor. İki katlı integraldeki kutupsal hesaplarda da bu kadar önemli olduğunu göreceksiniz. Yani kutupsal koordinatlar matematikte bulunmuş en büyük, hakikaten matematikteki en büyük buluşlardan birisi.
+
+439
+01:30:09,363 --> 01:30:15,023
+Her yerde imdadımıza yetişir ve inanılmaz bir şekilde hızlı çözümler elde etmemizi sağlar.
+
+440
+01:30:15,303 --> 01:30:16,883
+Katlı integral de dahil olmak üzere.
+
+441
+01:30:17,652 --> 01:30:45,652
+Şimdi limitin mevcut olmadığını göstermek, olduğunu göstermeye göre nispeten daha kolaydır. Ama burada da bazı uzun işlemler yapmak gerekebilir. Yani önce eklemler boyunca yaklaşacaksınız. Eklemler boyunca yaklaştığınız zaman limit değerleri aynı çıkabilir. Bu limitin mevcut olduğunu göstermez. Sonra doğrular boyunca yaklaşacaksınız. Gene aynı limit değerine ulaşabilirsiniz. O da limitin mevcut olduğunu göstermez. Sonra eğiler boyunca vesaire diye gideceksiniz. Yani bir şekilde farklılığı ortaya koyan kadar...
+
+442
+01:30:45,652 --> 01:30:52,171
+Limit hesabı yapmak lazım. Bazen yani çok uzun işlemler yapmak gerekebilir. Gelelim örneğine.
+
+443
+01:30:52,787 --> 01:31:02,187
+Limit x'ye 0, 0'a giderken x kare bölü, x kare artı yıkarı limitli varlığını araştırır. Zaten limit mevcut çıkmayacaksa genelde soruları varlığını araştırır diye soruluyor.
+
+444
+01:31:02,407 --> 01:31:08,007
+Tabii varlığını araştırır sorusundan limit yoktur sonucunu çıkarmamak lazım her zaman. Genelde böyle yapılıyor.
+
+445
+01:31:08,807 --> 01:31:15,807
+Şimdi, eksemler boyunca yaklaştığımızı varsayalım. Ben biraz olay basitleştim diye şöyle açıkladım. Fazla yer kapatmadım.
+
+446
+01:31:16,595 --> 01:31:20,655
+Şimdi x ekseni boyunca yaklaşacaksanız y eşittir 0 alıyorsunuz demek.
+
+447
+01:31:21,176 --> 01:31:21,796
+Bir daha söylüyorum.
+
+448
+01:31:22,176 --> 01:31:25,695
+x ekseni boyunca yaklaşacaksanız y eşittir 0 alıyorsunuz demektir.
+
+449
+01:31:25,935 --> 01:31:33,496
+Şimdi bakın burada y eşittir 0 koyarsanız arkadaşlar x kare bölü, x kare artı y kare de y eşittir 0 koyarsanız f 0 eşittir 1 çıkar.
+
+450
+01:31:34,176 --> 01:31:35,355
+Bu bir kenarda dursun.
+
+451
+01:31:35,735 --> 01:31:39,055
+Eğer y ekseni boyunca yaklaşacaksanız x eşittir 0 alıyorsunuz demek.
+
+452
+01:31:39,699 --> 01:32:06,759
+Alalım, burada x'lerine 0 koyalım. Bakın f 0'ye eşittir 0 çıktı. Artık devam etmeye gerek yok. Devam etmeye gerek yok. fx 0 eşittir 1 ve f 0'ye eşittir 0 çıktığı için 1 0'dan farklı, o zaman limit mevcut değildir. Bunu adım adım da yapabiliriz. Bir sonraki örnekte, yani 94. örnekte göreceğimiz gibi adım adım da yapabiliriz. 93'e bakalım. Bakın limitinin mevcut olmadığını gösteririz diyor. Aynı mantık.
+
+453
+01:32:07,155 --> 01:32:18,456
+x ekseni boyunca yaklaşma adına y yerine 0 koyun, y ekseni boyunca yaklaşma adına x yerine 0 koyun, farklı değerler bulursanız zaten otomatik olarak limit yoktur diyorsunuz.
+
+454
+01:32:18,836 --> 01:32:25,916
+Eğer işlemleri detaylı bir şekilde yapmak istiyorsanız, ki buna ihtiyacınız yok, olmaz yani bir şeyde.
+
+455
+01:32:26,496 --> 01:32:32,135
+Testlerde %50, %50 yakıyorsanız o zaman şunlara gerek olur ama burada olmaz.
+
+456
+01:32:34,355 --> 01:32:52,415
+Bir sonraki örnekte, 94. örnekte dikkat edin arkadaşlar. X2'ye gidiyor, Y1'e gidiyor bakın. O zaman bakın X eşit 2 doğrusu boyunca ve Y eşit 1 doğrusu boyunca yaklaşın. Gerekiyor. Unutmayın. Burada X2'ye, Y1'e gittiği için X eşit 2 doğrusu boyunca ve Y eşit 1 doğrusu boyunca yaklaşmak gerekiyor.
+
+457
+01:32:52,415 --> 01:33:02,295
+Şimdi X eşit 2 doğrusu boyunca yaklaşırsanız, yani X'e 2 koyarsanız, verilen ifade, limite alınan ifade, elen Y bölü 2'ye eksi.
+
+458
+01:33:02,355 --> 01:33:19,955
+2 olur. Bir kere kuralı, yani elen y bölü 2, dışarı arsızlığında 1 bölü 2 diye, faydadakini, elen y bölü y eksi 1, y bire giderken 0 bölü 0 belirsizliği veriyor ya, bir kere kuralı uyguladığınız zaman payın türevi 1 bölü y, faydanın türevi 1, dolayısıyla limiti 1, y bire giderken cevap 1 bölü 2.
+
+459
+01:33:20,948 --> 01:33:22,568
+İlk seçti 2 doğrusu boyunca.
+
+460
+01:33:22,968 --> 01:33:31,688
+Ye eşittir 1 doğrusu boyunca yaklaşırsanız, yani bu yukarıda de ye ye'ni 1 koyarsanız, otomatik olarak payın 0 olması dolayısıyla, otomatik olarak ifade 0 çıkıyor.
+
+461
+01:33:32,108 --> 01:33:36,068
+1 bölük 0'dan farklı olduğuna göre, gene limit yoktur diyorsunuz.
+
+462
+01:33:37,668 --> 01:33:47,328
+Tabii kolaydan zora doğru gidiyor. Önce bakın, patır patır çıkan ifadeler değil mi? İlk 2 örnek. Sonra biraz daha işlem gerekiyor. Sonra daha da uzayacak işlemler.
+
+463
+01:33:48,724 --> 01:33:55,623
+İşte ekranda görüyorsunuz. 2x'e eksiye kare bölü, 2x'e rahat, x'e eksiye kare limitinin mevcudiyetini, varlığını araştırınız diyor.
+
+464
+01:33:56,043 --> 01:34:00,743
+Eksenler boyunca yaklaşalım. Bakın, x ekseni boyunca yaklaştınız. Yani y'ye sıfır koydunuz.
+
+465
+01:34:01,423 --> 01:34:08,003
+X kareleri kısaldığı için limit 1 çıktı. Y ekseni boyunca yaklaştınız. Yani x'e sıfır koydunuz. Bakın, limit yine 1 çıktı.
+
+466
+01:34:08,467 --> 01:34:17,228
+X ekseni boyunca yaklaşıncadan limit 1 çıktı, Y ekseni boyunca yaklaşıncadan limit 1 çıktı. Bu limitin var olduğunu söylemez. Yaklaşmana devam ediyorsunuz.
+
+467
+01:34:17,279 --> 01:34:27,639
+Şimdi doğru boyunca yaklaşalım. Y eşitliği doğrusu boyunca yaklaşalım. Yalnız noktaya sadık kalmayı unutmuyoruz. X ve Y birlikte sıfıra gittiği için Y eşitliği doğrusu boyunca yaklaşabiliriz.
+
+468
+01:34:27,840 --> 01:34:40,500
+Yaklaştık. Yani Y gördüğümüzde X yazdık. Pay 2x kare oldu. Pay da 2x kare oldu. Bakın limit daha hesaplamadan 1 bölü 2 çıktı. 1 bölü 2 birden farklı olduğu için limit yoktu diyecektik.
+
+469
+01:34:44,176 --> 01:34:50,156
+1 çıksaydı, bu kez eğriyle de yaklaşmaya devam edecektik. Yaklaş babam yaklaş işte, neyden isterse bilmiyor.
+
+470
+01:34:52,116 --> 01:34:57,356
+96'da gene aynı arkadaşlar, bakın. Mesela burada y eşit x doğrusu boyunca yaklaşınca gene 0 çıkmış.
+
+471
+01:34:57,676 --> 01:35:06,196
+y x eşit y kare doğrusu boyunca yaklaşınca sayıyı farklı bulmuşum. Yani yaklaşımlara devam ederek farklılığı görüp sonucu söylüyorum.
+
+472
+01:35:08,051 --> 01:35:24,231
+Şöyle ardışık limitler var. Ben onu çok seviyorum ama anlatılıyor diye ben de size söyleyeyim. Yani içeride önce y'ye göre limiti, sonra x'e göre limiti ya da önce x'e göre limiti, sonra y'ye göre limit hesaplayıp sonuçları karşılaştırmak. Ama bu da limitin mevcut olduğunu söylemez ha. Onu söyleyeyim.
+
+473
+01:35:24,231 --> 01:35:36,031
+Yani şöyle yapılan, şu şekildeki limit hesabından bulduğunuz sonucu, bu şekilde yaptığınız limit hesabından bulduğunuz sonuca eşit çıkması, yani sonuçların aynı olması, genel limitin mevcut.
+
+474
+01:35:36,051 --> 01:35:51,351
+olduğu anlamına gelmez. Ardışık limiter dediği, yani önce birini, sonra diğerini kullanır diyor. Ben onu daha genel yapıp, ekseleri boyunca yaklaşma diye elde ettim. Örnek görüyorsunuz bakın, ardışık limiti, önce y'yi sıfıra götürdük, içeride.
+
+475
+01:35:51,891 --> 01:36:15,391
+Kalan x bölüksü oldu. Zaten limiti almadan 1 çıktı. Şimdi önce x'i sıfıra götürelim. Daha limite geçmeden 1 bölüksü çıktı. Bakın, ardıçlık limitler birbirine eşit olmadığı için limit mevcut değildir. Bir kez daha tekrar etmiş olayım. Ardıçlık limitler birbirine eşit olmazsa limit mevcut değil. Ama eşit olursa limit mevcuttur diyemez. Ardıçlık limitlerin birbirine eşit çıkması limiti mevcut kılmaz.
+
+476
+01:36:17,747 --> 01:36:25,607
+Burada mı yazıyor? Burada yazıyor bakın. Limitlerin mevcut ve eşit olması hem limiterin mevcutlıyorsanız garanti edemez. Örnekle burada bakın.
+
+477
+01:36:26,947 --> 01:36:37,447
+X çarpı sinüs y bölü x kare atı y kare. Adışık limiter hesapladık bakın. Önce y'ye, y sıfıra giderken limiter hesapladık. Sonra x sıfıra giderken limiter hesapladık. Sıfır çıktı.
+
+478
+01:36:37,779 --> 01:36:57,719
+Tersi, yani önce 2 sıfıra giderken limit hesapladık, sonra y sıfıra giderken limit hesapladık, yine sıfır çıktı. Bakın ardışık limitler mevcut ve eşittir. Bununla birlikte y eşitlik doğrusu boyunca yaklaştığımız zaman, bakın görüyorsunuz, y eşitlik doğrusu boyunca yaklaştığımız zaman, limit 1 bölü 2 çıkıyor. Dolayısıyla 1 bölü 2 sıfır eşit olmadığı için limit yoktur.
+
+479
+01:36:58,292 --> 01:37:08,392
+Yani, artışık limitlerin eşit olması, limitin mevcudiyetini garanti etmek, ancak eşit olmaması, limitin mevcut olmadığı sonucunu verir.
+
+480
+01:37:14,260 --> 01:37:18,199
+Bir sonraki örnekte gene aynı. Onu atlamış olayım sürekli geçmek için.
+
+481
+01:37:18,840 --> 01:37:36,960
+Şimdi arkadaşlar, eğer bir fonksiyon, iki değişkenli burada, eğer iki fonksiyonun bölümü olarak verilmişse, paydayı sıfır yapan her noktada, iki sıralıkiller anlamında söylüyorum, paydayı sıfır yapan her noktada fonksiyon süreksizdir.
+
+482
+01:37:42,260 --> 01:37:48,500
+Sıfır yapabilir. Onun bir adı var. Süreklilikle ilgili, süreksizlikle ilgili bir adı var. Biraz sonra geldiğimde söylerim.
+
+483
+01:37:49,060 --> 01:37:56,340
+İlk örneğimiz, y kare bölü kök, şimdi x kare artı y kare eksik. İle verilen t fonksiyonunu sürekli araştırır.
+
+484
+01:37:56,340 --> 01:38:05,199
+O zaman mesele şu, paydayı sıfıra eşitleyeceğiz. Oradan nokta ya da noktalar bulup bir yargıya varacağız. Eşitledik paydayı sıfıra.
+
+485
+01:38:05,652 --> 01:38:13,172
+x kare artı yıkare x x eşittir 0 yazdık. Buradan x kare artı yıkare eşittir x kare çıkar. Buradan y eşittir 0. Değil mi?
+
+486
+01:38:15,091 --> 01:38:22,471
+Eğer bunun şu paydayı 0 eşit deseniz y eşittir 0 çıkar. Şimdi y eşittir 0 olunca arkadaşlar payda nasıl oluşuyor bir bakalım.
+
+487
+01:38:28,787 --> 01:38:45,167
+Kök x kare eksi x oluyor. Bak, benim öğrencim bir şeyi karı çekilmişine çıkarmak zorunda ise mutlak değer olarak çıkaracak demiştim. Unutmuyorsunuz. Yani, kök x kare eksi x oluyor. Yani, mutlak x eksi x oluyor payda y sıfır olunca.
+
+488
+01:38:47,444 --> 01:39:01,703
+G sıfır olursa, paydan mutlak x olması, x büyü geçiş sıfır olduğu zaman burayı sıfır yapar değil mi? Mutlak x, x büyü geçiş sıfır olduğu zaman sıfırdır. X küçük sıfır olduğu zaman ama burası sıfırdan farklıdır.
+
+489
+01:39:02,068 --> 01:39:26,387
+Dolayısıyla arkadaşlar, bu fonksiyon, a büyügeç sıfır olmak üzere, a sıfır şeklindeki noktalarda süreksizdir. Bir başka ifadeyle, b küçük sıfır olmak üzere, b sıfır şeklindeki noktalarda süreksizdir. Değil mi? Negatif olunca, yani b negatif olunca sürekli olur. Ama pozitif olunca, şundan dolayı, yani şu bilgiyi unutmayın, süreksizlik meydana gelmiş oluyor.
+
+490
+01:39:29,747 --> 01:39:42,007
+x'ye farklı 0,0 iken, 1-cos çöküşün x'i kare, y'ye kare, tamamının bölümü x'i kare, y'ye kare ve f0,0 eşitliği 1,2 ile tanımlanan bir fonksiyonun sürekliğini araştırıyoruz.
+
+491
+01:39:42,420 --> 01:39:59,460
+Buraya rekaranın sürekli olduğunu gösteririz mi işte? Şimdi arkadaşlar, verilen ifade, gene faydalı ya, iki fonksiyonun bölümü de bakın, fayda sıfır olduğu zaman değil mi? X karatı rekaranın sıfır olması, orijinde sıfır olması anlamına geliyor. Yani sıfır sıfır noktasında sürekli değildir. Bu ifade.
+
+492
+01:40:00,000 --> 01:40:13,899
+0,0 noktasında sürekli değildir. Ama bir şey vermiş. Birinci ifade 0,0 noktasında sürekli değildir. Ama başka bir şey vermiş. Diyor ki, siz 0,0 noktasından bunu dikkate almayın. 0,0 noktasında 1 bölü 2 olduğunu düşünün.
+
+493
+01:40:13,899 --> 01:40:25,500
+Ya da onu kullanın diyor. Dolayısıyla bakın, ifade x ve y orijinden farklı iken, yani 0,0 noktası dışında bu ifade verildiği için bu her yerde süreklidir.
+
+494
+01:40:25,876 --> 01:40:37,416
+Bu hafta eriyedir, sürekli idir. Şimdi 0-0 ile bağlantısı ney? Ona bakalım. Bağlantısını görmek için de bu ifadenin x ve y'ye birlikte 0'a giderken limitini hesaplayacağız. Şununla karşılaştıracağız. Tamam mı?
+
+495
+01:40:40,296 --> 01:40:48,956
+Şu ifadenin x ve y'ye birlikte 0'a giderken limitini hesaplayacağız. Şununla karşılaştıracağız. Oradan bir yorum yapalım. Yapalım. Limitini hesaplayalım demek istiyorum yani.
+
+496
+01:40:49,939 --> 01:40:57,099
+Yazım lümi ifadesini. Eğer bunu basitleştirmek için u kare, x kare, at, y kare dönüşümü yaparsanız basit etsin diye.
+
+497
+01:40:57,460 --> 01:41:02,039
+Kara fiş içinde x kare, at, y kare yerine artık pozitif olduğu için değil mi?
+
+498
+01:41:02,079 --> 01:41:04,699
+x kare, at, y kare pozitif olduğu için mutlak değer koymaya gerek yok.
+
+499
+01:41:05,059 --> 01:41:06,519
+Bir eksi koşu bölü u kare olur.
+
+500
+01:41:06,868 --> 01:41:21,248
+1-kos, kare küt içinde u kareyi u diye mutlak değer almaya gerek yok. Kos u diye, yani kare küt içinde u kareyi u diye çıkardığınızı varsayarsanız, limit u sıfıra indirken 1-kos u u kare olur.
+
+501
+01:41:21,608 --> 01:41:27,168
+İşte bir kere kural uyguladığınız zaman sonuç bir bölük olarak çıkar. Sıfırdaki değer de bir bölük olarak verilmiş. Bakın burada.
+
+502
+01:41:27,699 --> 01:41:40,500
+O zaman verilen fonksiyon her yerde sürekli. Zaten tek sıkıntısı 0,0 noktasıdır. Orada da limit değeri, fonksiyon değerine eşit olduğu için verilen fonksiyon her yerde sürekli. Burada da rekarası sürekli.
+
+503
+01:41:42,899 --> 01:41:54,319
+Şimdi demin söylemiştim, paydayı 0 yapan bir değer şurada var diye. Paydayı 0 yapan değer eğer pay kısmında 0 yapıyorsa onun başka bir adı var. Birazdan gelecek demiştim. İşte burada adı kaldırılabilir süreksizlik.
+
+504
+01:41:55,539 --> 01:42:15,539
+Fonksiyonun iki değişkenli fonksiyon y kare bölü kök içinde, içleri 4 artı y kare artı y kare diye verilmiş. Fonksiyon diyor, 0,0 noktasında sürekliliğini araştırmış, değilse sürekli hale getirmiş. Önce sürekliliğini araştıralım arkadaşlar. Sürekliliğini araştırmak için kare kök olduğunda eşyalar işaretini yapıyorduk, önce onu yapıyorduk.
+
+505
+01:42:23,539 --> 01:42:41,640
+sürekli değildir. Süreksindir diyelim. Verilen fonksiyonun paydasının sıfır olduğu yerde fonksiyon kesinlikle sürekli değildir. Şimdi burada ise başka bir durum var. Bakın paydayı sıfır eşitlediğiniz zaman şöyle oluyor. Bir önceki örnek gibi değil.
+
+506
+01:42:45,971 --> 01:42:47,671
+Hadi bir kere de kare kökü alayım.
+
+507
+01:42:50,072 --> 01:42:53,351
+Bakın şöyle artı x kare eşitli sıfır yazıyorsunuz ya.
+
+508
+01:42:55,311 --> 01:42:57,112
+Şimdi burada özel bir durum var.
+
+509
+01:42:57,851 --> 01:43:04,371
+Hem birinci ifade, hem bu ifade, hem de bu ifade bak büyük eşit sıfır görüyor musunuz?
+
+510
+01:43:04,692 --> 01:43:05,291
+Negatif değil.
+
+511
+01:43:05,747 --> 01:43:21,367
+Her iki ifade de negatif değil. Dolayısıyla arkadaşlar, bu toplamın sıfır olması demek, ikisini birden sıfır yapar. Yani şuradan dolayı, şuradan dolayı, kırmızıyla yazıyorum üzerindeki, bakın, x kare artı, x üzeri 4 artı, y kare eşitli sıfır olmalıdır.
+
+512
+01:43:24,747 --> 01:43:27,427
+Tamam, diğerinden dolayı da x kare sıfır olmalıdır.
+
+513
+01:43:30,676 --> 01:43:50,936
+Şimdi bunu birleştirdiğiniz zaman arkadaşlar, bu ikisini birleştirdiğiniz zaman tek nokta 0-0 çıkıyor zaten. Bakın orjin çıkıyor değil musunuz? Başka yok zaten. 0-0 noktası. Onun için de soruyu soran biliyor yani olayı. Biliyor yani ben biliyormuşum. 0-0 noktasındaki sürekliyle araştırırız diye sorduk. Başka atematik yok zaten. Tamam mı? Evet.
+
+514
+01:43:51,568 --> 01:44:16,448
+Şimdi, bakacağız, sıfır sıfır noktasındaki limit değeri, fonksiyon değerine eşit mi, ona bakacağız. Limite geçerken, yukarıda ben eşleniş şartım işlemini yukarıda yaptım, bakır. Limitte eşleniş şart mı yapacağım ya, onu yukarıda yaptım, sadece eşitim diye. Limitini hesapladığımız zaman, şunun limitini hesaplıyoruz demektir, sıfır bulundur. Şimdi, sıfır sıfır noktasındaki limit sıfır. Siz, şimdi fonksiyonda aynı anda x ve y yerine sıfır koyamazsınız.
+
+515
+01:44:16,500 --> 01:44:30,739
+Bir daha söylüyorum. Şu ifadede x ve y yerine aynı anda sıfır koyamazsınız. Şimdi sürekli değilse sürekli hale geçiriniz diyor ya, o zaman bu f fonksiyonunu yeni bir harf ve yeniden tanımlıyorsunuz.
+
+516
+01:44:31,855 --> 01:44:41,496
+G diyor, fonksiyonu X ve Y sıfırdan farklı iken, yani orijin dışında F'ye eşit alın diyor. Aldım bakın, orijin dışında F'ye eşit alın diyor.
+
+517
+01:44:41,975 --> 01:44:53,815
+Orijinde ise limit değer olarak alın diyor. Orijinde ise limit değer olarak alın. Bu durumda diyor, yeni tanımladığınız G fonksiyonu her yerde sürekli olacaktır diyor.
+
+518
+01:44:54,376 --> 01:44:58,916
+Bu örnekliliği arkasında takla sormak istediğiniz bir şey var mı arkadaşlar? Kaldırılabilir süreklilikle ilgili.
+
+519
+01:45:01,524 --> 01:45:28,764
+Yok. Devam ettik. Bir sonraki örnek, işte art, tanjant, x kare artı y kare bölü, x kare artı y kare ile tanrı f fonksiyonunu sürekli araştırınız ve değişiklik sürekli araya geçtiniz. Tamamıyla aynı. Bir önceki örneğin tamamıyla aynı. Burada da paydayı sıfır yapan değere baktınız. Sadece orjin. Orada limit hesapladınız. Gene kuralı kullanarak kolayca hesaplayabilirsiniz. O zaman limit değerini, fonksiyonu değeri alarak bir önceki örneğin tamamıyla aynısı.
+
+520
+01:45:29,524 --> 01:45:35,663
+Yani fonksiyon değeri alarak, fonksiyonun, yeni elde ettiğiniz fonksiyonun sürekli olduğunu görebilirsiniz.
+
+521
+01:45:39,412 --> 01:45:42,192
+Buraya kadar olan kısmında sormak istediğiniz bir şey var mı arkadaşlar?
+
+522
+01:45:51,475 --> 01:45:53,475
+Yok mu? Sessiz misiniz?
+
+523
+01:45:55,475 --> 01:46:01,075
+Şimdi o zaman, burayı kapatıyorum, ekranımdan kapatıyorum burayı.
+
+524
+01:46:01,075 --> 01:46:03,075
+Bir de açıp düşünüyorum.
+
+525
+01:46:04,275 --> 01:46:14,059
+Şimdi arkadaşlar, birkaç tane de parametrik, özür dilerim, kutupsal koordinatlarla ilgili bir iki bir şey söyleyeyim bari de, bir 10 dakika kadar.
+
+526
+01:46:14,228 --> 01:46:27,047
+Özet geçeyim yani. Olmazsa bunu AVS'de koyarım. Ondan sonra dersi bitirelim. Sınavda başarılar. Şimdi bir kutupsal eğiliğiyle, sınırla alan soruştuk ihtimali çok kuvvetsiz arkadaşlar. Bugüne kadar yapılmış neredeyse bütün sınavlarda.
+
+527
+01:46:27,536 --> 01:46:55,536
+Kutupsal alan sorusu sorulmuştur. Bu daha çok iki eğriyle sınırlanmış bölgenin alanı şeklinde oluyor. Ben olay anlaşılsın diye önce tekeğriyle eğriyle o alanı söyleyeyim. Bir tane de örnek yapayım. İki tane yapmayacağım. Bir tane yapacağım. Şimdi tekeğriyle sınırlı bir bölgenin alanını bulurken arkadaşlar, açılar genelde veriliyor. Değil mi? Daha doğrusu TETA'nın sınırları. Formülümüz 1 bölü 2'yi unutmuyorduk. Şu potansiyel hata demekti. Bakın şu 1 bölü 2'yi her zaman potansiyel hataydı. Bu unutuluyordu. Ben daha başladım.
+
+528
+01:46:55,536 --> 01:47:05,595
+olmak üzere unutulabiliyordu. Onun için ben unutmamak adına daima örnekleri çözerken bile şeri integralinin içine yazdım. Yani sabittir, dışarı yazayım diye düşünmedim. Unutuluyor hiç.
+
+529
+01:47:06,496 --> 01:47:15,496
+Alfa'dan beta'ya 1 bölü ki, f theta'nın karesi dt ile hesaplanıyor. Tek eğilir, sınırlı bölgenin alanı. İşte re'eştir, a eğilisi, bu şey değil mi?
+
+530
+01:47:15,876 --> 01:47:22,435
+A yer çaplı daire, sınırlanmış bölgenin alanını bulmuş diyor. Şimdi burası sıfır arkadaşlar, şurası sıfır.
+
+531
+01:47:22,771 --> 01:47:30,612
+Dönüp bir daha buraya gelirseniz, şöyle ok koyup, şöyle döndünüz, geri buraya geldiğiniz zaman, şurası 2P.
+
+532
+01:47:33,631 --> 01:47:41,612
+Kutupsal koordinatlar da böyle. Burası 0. Bir devir yaptığınız zaman 2P. Şurası neydi? Şurası...
+
+533
+01:47:41,876 --> 01:47:52,036
+Bunu anlatayım ki, diğerlerinde de bir iki örnekler yaparsak, onları da kullanırız. Şurası pi bölü 2, şurası pi, bazen buraya kadar gelebiliriz. Şurası 3 pi bölü 2.
+
+534
+01:47:57,140 --> 01:48:18,880
+Böyle devir yapıyoruz. O zaman birim daire, değil mi? A yer çaplı dairenin alanını bulundur. Biz normal matematiksel, kutupsal koordinat formülü kullandırsak, 0'dan 2 pi'ye 1 bölü 2, re kare, yani f tetanın karesi ya, re kare, d tetan, re görüldüğü de a yazdım, 1 bölü 2, 0'dan 2 pi'ye, a kare, d tetan, o da pi, a kare, birim kare.
+
+535
+01:48:19,539 --> 01:48:23,000
+Biliyorsunuz, A yer çaplı dairenin alanı pi, a kare.
+
+536
+01:48:25,235 --> 01:48:27,336
+Şunu sileyim.
+
+537
+01:48:30,496 --> 01:48:36,975
+Kutupsal alan hesabı yaparken aklınıza bulunması gereken 2 tane formül var arkadaşlar. Onları da şuraya bir kere yazayım, hatırlayayım diye.
+
+538
+01:48:38,435 --> 01:48:41,376
+Şu iki formülü aklınıza tuttunuz. Bir tanesini yazayım da.
+
+539
+01:48:43,444 --> 01:48:55,144
+Diğeri de kosinist olan, aklınıza tutmamız gerekiyor. Çünkü netice itibariyle kare aldığınız için, formül gereği, bakın kare aldığınız için, işlemler sonucunda mutlaka, mesela spin kare keta gelirse,
+
+540
+01:48:55,828 --> 01:49:13,188
+Onun yerine 1-2 cos, 1-2 cos, cos 2teta bölü 2 yazmanız gerekiyor. İşlemlere devam edebilmek için, integralı saplayabilmek için. Eğer cos kare gelirse, yani cos kare çetayı kullanmak zorunda kalırsanız, o zaman da 1 artı cos 2teta bölü 2 ile devam etmek zorunda kalır.
+
+541
+01:49:13,508 --> 01:49:21,108
+Kutupsal işlemlerde daima kare geldiği için bunlara ihtiyacımız olacak. Mesela bir sonraki örnekte bu. Şunu da böyle.
+
+542
+01:49:21,747 --> 01:49:33,387
+Kök 2 çarptı sin teta'nın karesini alacağınız için şey geliyor ya bakın, 2 çarptı sin kare teta, sin kare teta yerine mecburen 1-kosik teta bölü 2 yazarak devam edeceksiniz.
+
+543
+01:49:33,787 --> 01:49:44,247
+Soru gayet, zaten ondan sonra bir şey yok. Yani kutupsal alan bulmadan arkadaşlar, olay 2 ya da daha çok eğri de ince inceleşiyor.
+
+544
+01:49:44,724 --> 01:50:07,323
+İnce anlatılması gereken, vurgulanması gereken noktalar ortaya çıkıyor. İki ya da daha çok eğri olunca. Tek eğri olunca bir şey yok zaten. Pat diye integral hesaplıyorsun. Nereden nereye gidiyorsa pat diye integral hesaplıyorsun. Kardiyot ya da öyle. Onu geçeyim, bakın şeye geleyim. İki eğri olunca ne oluyor? Bakın, şunu daha önce çözdüğümüzde hatırladığım için, bir sonrakine geçeyim. Onu çözdük ya. Şuna gelelim bakın.
+
+545
+01:50:08,051 --> 01:50:16,011
+R'eşit 2 kosteta çemberinin, dairede diyebiliriz, içinde ve R'eşit 2 kök 2 çemberinin dışında kalan bölgenin alanını buluruz diyor.
+
+546
+01:50:16,431 --> 01:50:25,851
+Çemberin içinde, 2 kosteta çemberinin içinde olacak, kök 2 çemberinin dışında olacak. Onları bir sizelim. Bakın şu, kök 2 çemberi.
+
+547
+01:50:26,739 --> 01:50:41,119
+Ortadaki, şu kısımda, şu kısımda, iki kosteta kembeli. Şimdi, iki kosteta kembeli içinde olacak, kök ikinin dışında olacağı için burası. Şimdi burada önemli olan arkadaşlar, zaten burada da tek önemli olan diyelim.
+
+548
+01:50:42,880 --> 01:50:46,480
+Kutuptan bakarak, ben şuradan bakayım bak, şöyle okuyorum.
+
+549
+01:50:47,604 --> 01:50:55,044
+Burası kutup bakın. Şuradan kutuptan bakarak hangi eğrinin üstte, hangi eğrinin altta olduğuna karar verme işi.
+
+550
+01:50:55,572 --> 01:51:07,032
+Eğer iki ya da daha çok eğiline oluşturulmuş bir bölgenin kutuptan koordinatör alanını buluyorsanız, kutuptan bakarak hangi eğilinin, üstte hangi eğilinin altta olduğuna karar vermek zorunda kalıyorsunuz.
+
+551
+01:51:07,292 --> 01:51:20,912
+Bunu ses bir, bu kararı doğru verdiğiniz zaman bundan sonrası zaten şey, normal sin kare gelirse onun yerine 1-kos 2-deta, 1-kos 2-deta bölü 2 yazmak, kos kare gelirse 1-kos 2-deta bölü 2 yazmaktan ibaret. Başka bir şey yok.
+
+552
+01:51:23,572 --> 01:51:44,131
+Bölgeni, ya da içinde dışındayla birlikte alanını bulmak için arkadaşlar, azıcık yukarı gidiyor, soruyu görmek için. Bunları birbirine eşitliyorsunuz. Yani iki kostete eşittir, kök 2 yazıyorsunuz. Oradan ne gelecek ona bakacaksınız. İki kostete eşittir, kök 2 yazdınız. Buradan kostete eşittir, kök 2 bölü 2 oldu. Bu iki yerde,
+
+553
+01:51:46,323 --> 01:51:53,863
+İki tane teta için, kos teta, kök üç bölü ikiye eşit, teta'lardan birisi pi bölü 4, diğeri yedi pi bölü 4.
+
+554
+01:51:54,403 --> 01:52:01,943
+Genellikle kutupsal alanlar ümestiktir arkadaşlar. Yani üstteki alanla alttaki alan, böyle görünmüşsün öyle söyledim.
+
+555
+01:52:02,243 --> 01:52:06,663
+Şuradaki alanla buradaki alan aynı olacak ki, bir tanesini hesaplayıp ikiyle çarpabiliriz.
+
+556
+01:52:07,223 --> 01:52:10,783
+Ayrı ayrı da yapabilirsiniz ama, bir tanesini hesaplayıp ikiyle çarpabiliriz.
+
+557
+01:52:11,347 --> 01:52:33,627
+Şu eşitlemeden ara kesit noktalarını bulurken ya da teta akışını bulurken genellikle 2 tane, 3 tane çıkar. 3 tane çıkarsa 3 cümetli olabilir. Bir tane örnek var galiba aşağıda geliyor. Bir tanesiyle devam edip, mesela burada pi bölüyle 4 ile devam edip, onu 2 ile çarparak sonucu alabilirsiniz. Ama bölgeyi çizdikten sonra buna karar verin. Tamam mı? Şu şekilde çizdikten sonra karar verin.
+
+558
+01:52:33,627 --> 01:52:38,108
+Pi bölü 4 ile yani birincisiyle devam ederseniz, bakın şuradan bakıyorsunuz, unutmayın.
+
+559
+01:52:38,899 --> 01:53:06,419
+Kutuptan baktığınız zaman, şimdi üstte kutuptan baktığınız zaman arkadaşlar, ben şöyle mavili işaretliyim onu bakın. Kutuptan baktığınız zaman, kalemi görüyorum değil mi? Üstte şurayı görüyorsunuz bakın. Üstte mavili işaretliyorum şimdi. Şurayı görüyorsunuz. Kutuptan bakıyorum. Tabii şöyle. Burası üstte, şuradan bakıyorum çünkü. Altta ise yeşil işaretliyorum bakın. Altta ise kutuptan baktığım zaman burayı görüyorum.
+
+560
+01:53:07,507 --> 01:53:31,087
+Orayı da yeşille boyadım şöyle birazcık. Demek ki alttaki eğri, şu yeşille boyadığım, üstteki eğri de maviyle boyadım. O zaman formülüm, r2 kare eksi de bir kare ya, 1 bölü 2 ile koyacağım. Üstteki eğrinin karesi, eksi alttaki eğrinin karesi. Bak, üstteki eğri, 2 kositeta karesi, eksi alttaki eğri yani çök 2'nin karesi.
+
+561
+01:53:34,036 --> 01:53:47,336
+Biraz daha değiştirdiğimiz zaman, yani 4 cos kare teta, eksi 2 diye yazdığımız zaman, ve cos kare teta yerine, 1 artı cos 2 teta bölü 2 koyduğumuzda, formülden gelen bir bölükçeyi unutmayın.
+
+562
+01:53:47,676 --> 01:53:53,136
+Bakın bu 2, şu yarısını hesaplayıp iki katını alıyorum demek. Şu 2, bu bir bölükçü formülden geliyor.
+
+563
+01:53:53,876 --> 01:54:00,815
+İşlemlerinde yaptığımız zaman, bir tane açımız var değil mi? Bakın şurası 0 değil mi? Ya da şurası 0'dan, şuraya kadar geldik.
+
+564
+01:54:01,152 --> 01:54:18,032
+Onu da kırmızıyla bir daha işaretleyeyim. Bakın, şöyle, şöyle işaretleyeyim şurayı. Şöyle. Burası pi bölü 4, burası da 0 değil mi? 0'dan pi bölü 4. Öbür türlü 7 pi bölü 4'ten 0'a diye alırsınız.
+
+565
+01:54:25,268 --> 01:54:32,388
+İntegrali sin 2 theta, theta yerine önce pi bölü 4, eksi 0 koyduğunuz zaman cevap 1 çıkıyormuş.
+
+566
+01:54:33,948 --> 01:54:36,788
+Bu örnekte aklınıza takılan sormak istediğiniz bir şey var mı arkadaşlar?
+
+567
+01:54:37,988 --> 01:54:39,868
+Yoksa bir tane daha örnek gösterip bitiriyorum.
+
+568
+01:54:41,168 --> 01:54:42,788
+Şurada aşağıda bir tane daha örnek olacak.
+
+569
+01:54:43,891 --> 01:55:06,791
+Yani bu çok ağır bir soru ama ben gene söylemiş oluyorum. R eşittir, kos 2 çatay eğrisinin çevredildiği bölgenin alanını bulunuz diyor. Ağır bir soru ama bunu böyle çizmek lazım. Bu arkadaşlar buna şey deniyor. Gül eğrisi mi? Öyle papatayla bir şey deniyordu. Bunu çizdiğiniz zaman böyle bir şekil çıkıyor. Yalnız görüyorsunuz 2, 4, 6, 8 parça görüyor musunuz?
+
+570
+01:55:06,912 --> 01:55:25,732
+Hepsi simetlik. Yani şuradaki alanla buradaki alan aynı, buradaki alanla buradaki alan aynı, hepsi aynı. Dolayısıyla siz bir tane, şuradaki, şöyle birazcık tarayın. İşte şu kısmın alanını bulup, şu alanı bulup, sadece şuradaki alanı bulup, 8 katını alabilirsiniz. Bu alanı bulup, 8 katını alabilirsiniz.
+
+571
+01:55:26,112 --> 01:55:32,892
+İntegrasyon sınırlarımız ise, burası 0, buraya kadar değdiği için, bakın şuraya değdiği için, 0'dan pi bölü 4'e oluyor.
+
+572
+01:55:35,028 --> 01:55:39,008
+Arkadaşlar, benim söyleyeceklerim bu kadar. Sınavda size başarılar diliyorum.
+
+573
+01:55:42,612 --> 01:55:46,971
+Sizin söyleyeceğiniz, soracağınız bir şey yoksa, dersten çıkıyorum.
+
+574
+01:55:51,507 --> 01:55:52,608
+Teşekkürler hocam.
+
+575
+01:55:53,028 --> 01:55:56,967
+Hadi ben teşekkür ederim. Sınavda başarılı olmanızı temenni ediyorum. Hoşçakalın.
+
+576
+01:55:57,247 --> 01:55:57,608
+Sükürlerim.

@@ -1,0 +1,3819 @@
+1
+00:08:23,636 --> 00:08:24,616
+Arkadaşlar, günaydın.
+
+2
+00:08:26,896 --> 00:08:29,716
+Günaydın hocam.
+
+3
+00:08:35,091 --> 00:08:38,951
+Mikrofonu ara ara açıp konuşabilirsiniz, chatten de yazabilirsiniz.
+
+4
+00:08:39,052 --> 00:08:41,211
+Chatten yazan arkadaşlarınızı verin.
+
+5
+00:08:48,820 --> 00:08:49,700
+Tamam bakıyorum.
+
+6
+00:08:57,940 --> 00:09:01,980
+Arkadaşlar, bir aşçılık olmasa dersi bu dönem birlikte yürüteceğiz.
+
+7
+00:09:04,540 --> 00:09:11,580
+Sabah 9'da olduğu için ders uyanamamış olan arkadaşlarınız olabilir. Şu anda 55 katlılım yok.
+
+8
+00:09:13,660 --> 00:09:18,760
+Birkaç dakika bekleyelim, sonra derse başlarız. 9'u 5 kişi gibi başlarız.
+
+9
+00:13:15,412 --> 00:13:18,372
+Şu anda katılımda 82 kişi, 84 kişi çıktın.
+
+10
+00:13:19,752 --> 00:13:20,632
+Hazır mıyız arkadaşlar?
+
+11
+00:13:28,532 --> 00:13:30,372
+Tamam, hazırsınız diye düşünüyorum.
+
+12
+00:13:30,783 --> 00:13:41,504
+Önce ilk sayfaya, alttaki sayfalarında başka şeyle söyleyeceğim. İlk sayfaya da dersin başlıklarını, matematik 2'nin konu başlıklarını yazdım.
+
+13
+00:13:42,083 --> 00:13:51,484
+Birinci başlığımızda sonsuz diziler var. Bu nispeten kısa ama ikinci başlık için önemli. Önce başlıkları bir okuyup geçeyim, ondan sonra detaylarına gideyim.
+
+14
+00:13:51,484 --> 00:13:56,344
+Sonra sonsuz serilerimiz var. Bu en uzun soluklu başlıklardan birisi.
+
+15
+00:13:56,751 --> 00:14:07,211
+Üçüncü başlığımızda parametrik denklemleri var. Dördüncü başlığımızda onun devamı olan kutupsal koordinatlar. Ben ikisini aynı başlığa yazdım. Parametrik denklemleri ve kutupsal koordinatlar diye.
+
+16
+00:14:07,731 --> 00:14:16,991
+Sonraki başlığımız vektörler. Bu vektörleri aşağı yukarı biliyorsunuz. Bunu da çok hızlı geçeceğiz. Belli birkaç tane kavram var. Zaten birçoğunu biliyorsunuz. Hızlı geçeceğiz bunu.
+
+17
+00:14:17,751 --> 00:14:24,751
+Beşinci başlık, dördüncü başlığın genelleştirilmiş diyebiliriz. Vektör değerli fonksiyonlar. Yani vektörler anlıktan sonra onlarımız değerli.
+
+18
+00:14:24,751 --> 00:14:37,851
+Bu da kısa bir başlık. Çok fazla da ihtiyacımız olmayacak. Dönemin sonuna doğru çok değişkenli fonksiyonlarda birazcık ihtiyacımız olacak. O kadar anlatacağım zaten. Bir arkadaşımız bir şey yazmış, ona bakayım.
+
+19
+00:14:41,031 --> 00:14:45,111
+Link geçer, siz ne demedi arkadaşlar? [öğrenci] Bey?
+
+20
+00:14:48,788 --> 00:14:51,248
+WhatsApp kurumu mu? Neyse benimle ilgili durum burada.
+
+21
+00:14:52,019 --> 00:15:14,839
+Altıncı başlığımızda arkadaşlar, kısmi türev veya çok değişkenli fonksiyonlar diyebiliriz. Her ne kadar çok değişkenli fonksiyonlar diyecek olsak da, 2 ve çoğunlukla 2 değişkenli, birazcık da 3 değişkenli fonksiyonlardan bahsedeceğiz. En uzun soluklu başlıklarımızdan birisi de bu. Yedinci ve son başlığımızda 2 katlı integralleri anlatacağız arkadaşlar.
+
+22
+00:15:15,139 --> 00:15:19,720
+Oradan normal 2 katlı integralde, işte 2 katlı integral nasıl hesaplanır?
+
+23
+00:15:20,019 --> 00:15:43,460
+baştan söyleyeyim. İki katlı integralleri anlatacağız. Çok uzun soluklu bir başlık değil ama ben gene bazı fazla detaylar vereceğim. Şimdi birinci başlığa geri dönersek arkadaşlar, birinci başlıkta dizileri oluşturacağız. Ne için? Sonsuz serilere ulaşabilmek için. Eğer dizileri çok iyi anlayamazsak, bugün biter mi bilmiyorum, bugün yarın anlattım, dizileri çok iyi anlayamazsak serilerle ilgili hiçbir işlem yapabiliyor.
+
+24
+00:15:43,892 --> 00:15:49,412
+Bir daha tekrar ediyorum. Eğer dizileri iyi anlayamazsak, serilerle ilgili hiçbir şey yapamayız.
+
+25
+00:15:49,812 --> 00:15:56,332
+İki tane matematik 2'de uzun soluklu başlık var. Birisi sonsuz seriler, diğeri çok değişkenli fonksiyonlar.
+
+26
+00:15:56,872 --> 00:16:02,612
+Sonsuz seriler için dizileri çok iyi anlamamız gerekiyor. Matematik 1'e de oldukça ihtiyacımız olacak.
+
+27
+00:16:03,012 --> 00:16:07,872
+Özellikle limite ve birazcık da türeve çok fazlaca ihtiyacımız olacak.
+
+28
+00:16:07,872 --> 00:16:11,132
+Üçüncü başlıkta parametrik denklemleri anlatacağım.
+
+29
+00:16:11,892 --> 00:16:33,352
+Kutupsal koordinatlar nispeten parametrik denklemlere göre biraz daha detaylı anlatılabilir. Orada grafik dinlendirilminden de bahsettim lazım. Şüphesiz sınavda çıkmaz ama, özür dilerim, sınavda kutupsal koordinatların grafiğini çizdiniz diye bir soru çıkmaz ama.
+
+30
+00:16:33,775 --> 00:16:41,235
+Kutupsal koordinatta alan hesabıyla ilgili soru, bugüne kadar yapılmış matematik ikisine olanın tamamında sormuştur.
+
+31
+00:16:41,815 --> 00:16:43,895
+Kutupsal koordinatta da alan bulma.
+
+32
+00:16:44,340 --> 00:16:52,820
+Bugüne kadar yapılmış matematik sınavların tamamında sorulmuştur. Bundan sonra da beklemek lazım. Onun için üzerinde duracağız. Çok fazlaca örnek çözelim.
+
+33
+00:16:53,060 --> 00:17:08,840
+Vektörler ve vektör değerli fonksiyonları çok hızlı bir şekilde geçeceğim. Vektörleri zaten liseden beri biliyorsunuz. Vektör değerli fonksiyonlar da matematik 1 ile vektörleri bağlayarak, işte limiti nasıl hesaplanıyor, süreçli nasıldı, türev nasıldı diye hızlıca bir geçiş yapacağız.
+
+34
+00:17:12,339 --> 00:17:31,099
+Serileri dolduğu gibi, 6. bölümde de çok detaylı inceleme yapacağız. Birkaç hafta, epey haftalar sürecek. Sınav kabaca seriler, dizilerini içine katarak söylüyorum, seriler ve çok değişkenli fonksiyonlar üzerine kuruluyor. Finalde de katlı integral şüphesiz devam ediyor.
+
+35
+00:17:31,559 --> 00:17:39,039
+Kaynak kitap olarak arkadaşlar, bir yabancı kitap kaynak veriliyor. Ben onu veremem. Şöyle açayım. Ekranda gördünüz mü şu anda?
+
+36
+00:17:40,627 --> 00:17:41,467
+Kaynak kitabı?
+
+37
+00:17:42,567 --> 00:17:43,707
+Hayır hocam, şu an görüyorum.
+
+38
+00:17:44,768 --> 00:17:46,887
+Ben açtım ama siz göremiyor musunuz?
+
+39
+00:17:48,987 --> 00:17:50,627
+Şu sarıyı görüyor musunuz ekran?
+
+40
+00:17:50,987 --> 00:17:52,307
+Şu an görünüyor.
+
+41
+00:17:55,827 --> 00:18:03,728
+Tamam. Kısa teori ve çözümlü problemlerle matematik analiz 2. Bir sene yayınlar 2017. Burada arkadaşlar...
+
+42
+00:18:06,067 --> 00:18:15,548
+Sayısız diyecektim de, vazgeçtim. Çok sayıda çözülmüş örnek var. Dizilerle ilgili, serilerle, param, hepsiyle, yarışı başlıkların hepsiyle ilgili çok sayıda.
+
+43
+00:18:29,203 --> 00:18:30,203
+Hoca düştü mü?
+
+44
+00:18:32,124 --> 00:18:33,203
+Hoca gitti.
+
+45
+00:18:33,663 --> 00:18:36,163
+Yanlışlıkla birisine host attı galiba ya.
+
+46
+00:18:36,963 --> 00:18:38,603
+Tekrar host oldu sanki ama.
+
+47
+00:18:39,503 --> 00:18:40,103
+Yine geldi.
+
+48
+00:18:40,624 --> 00:18:41,743
+Ah geldi.
+
+49
+00:18:45,811 --> 00:18:47,491
+Bilgesi yer kapandı galiba.
+
+50
+00:18:48,271 --> 00:18:48,771
+Valabilir.
+
+51
+00:19:00,115 --> 00:19:05,556
+Birisi bir şey yaptı ama kim ne yaptı bilmiyorum. Orada sürdü mü arkadaşlar, beni duyuyorsunuz.
+
+52
+00:19:07,255 --> 00:19:08,395
+Geldiniz hocam şu an.
+
+53
+00:19:09,355 --> 00:19:10,016
+Duyuyoruz hocam.
+
+54
+00:19:10,016 --> 00:19:11,536
+Ne oldu da bir anda öyle bir şey oldu ya.
+
+55
+00:19:13,735 --> 00:19:14,296
+Neyse, tamam.
+
+56
+00:19:15,516 --> 00:19:20,755
+Kaynak kitabımız, kısa türo ve çözüm problemleriyle matematik analizi 2 dedim.
+
+57
+00:19:21,155 --> 00:19:23,895
+Ekranın sağ tarafında, pdf'sinde görüyorsunuz.
+
+58
+00:19:24,235 --> 00:19:24,735
+Görüyorsunuz değil mi?
+
+59
+00:19:26,259 --> 00:19:32,000
+İhtiyacınız olursa diye ben yazmış olayım kaynak. Şimdi bir sonraki sayfaya geçeyim arkadaşlar.
+
+60
+00:19:34,299 --> 00:19:46,619
+Buradan üstteye aldığım konuların yani ana hatlarıyla 6, 7 diyelim hadi, 7 başlığın ayrıntılı hali var.
+
+61
+00:19:46,963 --> 00:19:57,703
+İşte sonsuz dizilerde, dizilerin yakınsaklılığından bahsedeceğiz. Limit değerinin hesaplamasından bahsedeceğiz. Tıkıştırma kuralı var. Süreklilik nasıl kullanılıyor dizilerde onu göreceğiz.
+
+62
+00:20:00,000 --> 00:20:02,099
+Çok önemli, sıkça tekrarlanan dediği,
+
+63
+00:20:28,000 --> 00:20:33,839
+Sonsuz serilerde. Irak faktik için testimiz var. Bu da çok önemli. Bahsedeceğim geri geldiğinde.
+
+64
+00:20:36,860 --> 00:20:46,960
+Sonsuz serilerin yakınsaklıklar için testler var. İntegral testi var. Karşılaştırma ya da mukayese testi var. Kök ya da oran yazı.
+
+65
+00:21:14,516 --> 00:21:31,056
+Sonraki başlığımız arkadaşlar, parametrik teklifleri ve kutupsal koordinatlar. Gördüğünüz gibi çok uzun bir başlık değil. İşte parametrize nasıl yapılıyor, bir eğriyi nasıl parametri ediyoruz, onu göreceğiz. Onun türevi nasıl hesaplanabiliyor?
+
+66
+00:21:34,483 --> 00:21:44,463
+Parametrik olarak verilmiş bir de eğitimin türevi nasıl yapsanız onu göreceğiz. Bir de uzunluktan bahsediyoruz. Parametrik uzunluk. Ya alan falan da var ben kısaca onlardan da bahsedeceğim.
+
+67
+00:21:44,980 --> 00:21:50,700
+Kutupsal koordinatlar kısa yazılmış oluyor ama ben biraz daha detaylı üzerinde durmak istiyorum.
+
+68
+00:21:51,259 --> 00:21:58,559
+İlişkileri verdikten sonra grafik çizim var. Çünkü alan hesabında lazım. Grafik çizim üzerinde biraz detaylı duracağız.
+
+69
+00:21:58,559 --> 00:22:08,220
+Sonra kutupsal koordinatlarda alan var, uzunluk var. Kutupsal koordinatlarda uzunluk bir eğilimin uzunluğunu bulma problemi var. Onu anlamaya çalışacağız.
+
+70
+00:22:08,759 --> 00:22:12,000
+Vektörler yine buradan kısa anlatacağım ben işte.
+
+71
+00:22:12,980 --> 00:22:30,400
+3 boyutlu koordinat sistemi nasıl oluşuyor, onu söyledikten sonra, vektörlerin nokta ya da skaler çarpımı nasıl yapılıyor, aralarındaki açı nasıl bulunuyor, vektörler ne zaman dik oluyor, vektörler çarpım nedir, dedikten sonra uzayda doğru ve düzlem üzerinde biraz daha detaylı duracağım.
+
+72
+00:22:30,400 --> 00:22:33,420
+Ondan genellikle sınavla buradan soru çıkıyor.
+
+73
+00:22:34,003 --> 00:22:37,143
+vektör değerli fonksiyonlar gördüğünüz gibi çok kısaca yazılmış.
+
+74
+00:22:37,703 --> 00:22:42,703
+Zaten tek değişkenli fonksiyonlar matematik 1 ile direkt bağlantılı olduğu için çok kısaca yazılmış.
+
+75
+00:23:04,756 --> 00:23:25,256
+7. haftadan başlıyor çok değişkenli fonksiyonlar. 7. haftadan başlıyor. 11. hafta dahi çok değişkenli fonksiyonlar var arkadaşlar. Çok uzun soluklu bir başlık dedim zaten. Onların üzerinde detaylı olarak duracağız. Çok değişkenli fonksiyonlar. Ben 2 ve 3 değişkenli fonksiyon değil mi? Bir arkadaşımın bir yazı.
+
+76
+00:23:32,339 --> 00:23:33,339
+size sormuş.
+
+77
+00:23:33,339 --> 00:23:36,339
+Size sormuş cevabınız var mı?
+
+78
+00:23:41,619 --> 00:23:43,099
+Arada beni atıyormuş.
+
+79
+00:23:45,359 --> 00:23:46,960
+Sanişelik bir şey mi oluyor acaba?
+
+80
+00:23:49,460 --> 00:23:50,839
+Arkadaşlar bana da cevap verir misin?
+
+81
+00:23:50,839 --> 00:23:56,920
+Hocam, 2-3 saniyeliğine sizi atıyor sonra geri geliyorsunuz. Görüntünüz, sesiniz gidiyor sonra geri geliyor.
+
+82
+00:23:58,239 --> 00:23:58,839
+Allah Allah.
+
+83
+00:23:59,900 --> 00:24:04,000
+İnternetinizden dolayı olabilir belki hocam. Eğer drop yaşıyorsa vesaire.
+
+84
+00:24:06,000 --> 00:24:08,679
+Bilmem. Tamam, şu anda bir sıkıntı yok değil mi?
+
+85
+00:24:09,395 --> 00:24:10,875
+Yok hocam, şu an sıkıntı yok.
+
+86
+00:24:13,556 --> 00:24:36,335
+2 ve 3 değişkenli fonksiyonlar uzun soluklu bir başlığımız dedim. Bu, matematik 1'deki arkadaşlar, matematik 1'deki limit, süreklilik ve türevin 2 ya da daha çok değişkenli fonksiyonlara uyarlanmış ya da genelleştirilmiş hali. Dolayısıyla matematik 1'e nazaran, bu daha zor.
+
+87
+00:24:36,852 --> 00:24:44,211
+Tamam mı? 2 ve 3 değişikli fonksiyonlardaki kavramlar matematik 1'e nazaran daha zor, bazıları çok daha zor.
+
+88
+00:24:44,723 --> 00:25:07,223
+Dolayısıyla onun üzerinde daha ağır durmamız lazım. Bu noktada şunu tavsiye ederim arkadaşlar, acil tane. Derse düzenli olarak katılırsanız bir sıkıntı yaşamayacağınızı düşünüyorum. Eğer derse düzenli olarak katılırsanız bir sıkıntı yaşamazsınız muhtemelen. Çünkü matematik 1'deki limiti bilmek, matematik 2'deki limiti anlamak için yeterli olmuyor. Türevde de aynı.
+
+89
+00:25:07,615 --> 00:25:14,715
+Türevde de aynı. Burada genelleştirme olduğu için daha fazla bilgiye ihtiyaç var. Çünkü ince ince müansar olacak.
+
+90
+00:25:15,276 --> 00:25:19,855
+Hakikaten göreceksiniz oraya geldiğiniz zaman, metrolursa, ince ince bazı şeyleri söylemem lazım.
+
+91
+00:25:19,956 --> 00:25:25,155
+Bakın şurada şöyle oluyor, burada böyle oluyor demem lazım. Bunu da bir bilen, bir bilen de ben oluyorum herhalde.
+
+92
+00:25:25,476 --> 00:25:31,155
+Bir bilenden dinlemekte hayda var. Önce dinleyip, sonra açık kitaplardan falan çalışılabilir.
+
+93
+00:25:32,660 --> 00:25:40,480
+Son başlığımızda arkadaşlar, buraya çokça yazılmış gibi göründüğüne bakmayın siz, çokça yazılmış gibi göründüğüne bakmayın.
+
+94
+00:25:40,480 --> 00:25:59,000
+Çok uzun değil. İki katlı integralleri anlatacağız sadece zaten. İki katlı integral nasıl oluşturuyor? Matematik 1'de de tek katlı integralin nasıl oluşturulduğunu görmüştünüz. İki katlı integral nasıl oluşturuyor? Ona bakacağız. İki katlı integralin doğuşu hacim.
+
+95
+00:25:59,380 --> 00:26:27,380
+Tek katlı integralin doğuşu alan, iki katlı integralin doğuşu hacim. Böyle olmakla birlikte hacimden iki katlı integral alana da geçmek mümkün olabilecek. Ama tabii ince ince ayrıntıları var. Yani matematik 1'e göre, tek katlı integral'e göre biraz daha zor. İki tane integral hesabı yapılacağı için yer değişimleri falan söz konusu sınavda kesin çıkıyor. En az iki ya da üç tane sorun çıkıyor iki katlı integralde. Özellikle ikinci yüze, finalde bütün...
+
+96
+00:26:27,380 --> 00:26:51,360
+3 başlıkta, yani 3 haftaya bölünmüş ama 3 hafta sürerim, sürmüyor herhalde. Bu çok uzun sürmüyor. Böylece arkadaşlar, ders içeriğini ana başlıklarıyla ve detaylandırarak söylemiş oldum. Bu aşamaya kadar eğer herhangi bir sorunuz varsa aklınıza takılan bir şey, sormak istediğiniz bir şey varsa sorun, yoksa şeye geçeceğim.
+
+97
+00:26:54,932 --> 00:26:56,612
+konumuza dizilere geçeceğim.
+
+98
+00:26:57,592 --> 00:27:00,211
+Hocam, ben bir şey sormak istiyorum izninizle.
+
+99
+00:27:00,492 --> 00:27:00,811
+Buyurun.
+
+100
+00:27:01,172 --> 00:27:08,451
+Orada küçük sınav diye not etmişsiniz, yani yazıyordu orada, o bize mi? Küçük sınav dediğiniz şey yoksa...
+
+101
+00:27:08,451 --> 00:27:18,791
+Arkadaşlar, bu bölümün sayfasında böyleydi, ben özellikle bunu değiştirmedim. Dün mü, evet siz mü? Bölümün sayfasından aldım ben bunu, matematik bölümün sayfasından.
+
+102
+00:27:19,112 --> 00:27:24,831
+Özellikle değiştirmedim. Burada ara sınav yazıyor, küçük sınav nerede yazıyor? Şeyde mi? Ha, şurada 11'de yazıyor.
+
+103
+00:27:29,172 --> 00:27:45,152
+sınav, bir normal sınav yapılmıştı. Yüz yüze eğitim yapılırken. Bu oradan mı kalma, yine mi öyle yapacaklar, onu bilmiyorum. Yani incelendiğini bilmiyorum. Ama geçen dönemden esinlenerek konuşursam, geçen dönem biliyorsunuz iki bize yapıldı. Değil mi?
+
+104
+00:27:45,556 --> 00:27:51,875
+Matematik 1'de 2 vize yapıldı. Bu dönemle ilgili herhangi bir karar olmamakla birlikte öyle olacağını düşünelim.
+
+105
+00:27:52,016 --> 00:28:00,816
+Tamam mı? Yani muhtemelen 8. haftada 1. vize, şu küçük sınav dediğimde de, şurada da 2. vize, normal 2. vize yapılacağını düşünelim.
+
+106
+00:28:01,395 --> 00:28:05,476
+Geçen dönemden, Matematik 1 döneminden esinlenerek söylüyorum bunu.
+
+107
+00:28:06,976 --> 00:28:09,996
+Tamam mı? Herhangi bir bilgi yok. Siz bölümün sayfasını...
+
+108
+00:28:39,124 --> 00:28:40,324
+Eğer herhangi bir...
+
+109
+00:28:40,324 --> 00:28:43,604
+Hocam, yine sesiniz gitti.
+
+110
+00:28:43,604 --> 00:28:46,423
+Tamam, ben şey gitti geldi, evet gördüm ben.
+
+111
+00:28:46,463 --> 00:28:47,204
+Evet hocam.
+
+112
+00:28:47,844 --> 00:28:48,163
+Tamam.
+
+113
+00:28:49,224 --> 00:28:52,244
+Birkaç saniyeliğine kopuyor gidiyor, ne oluyor bilmiyorum.
+
+114
+00:28:53,744 --> 00:28:57,204
+Gölüm bana bilgi verirse, resmi bilgi, ben size bilgi veririm.
+
+115
+00:28:58,836 --> 00:29:14,855
+Arkadaşlar, kendi arkadaşlarınızdan bazı bilgiler ediniyorsunuz, duyumlar alıyorsunuz. Bunu delikodu diye yorumlamakta fayda var. Doğru olmayabilir. Yani birisi, birisi herhangi bir şey söylüyor. Doğru ya da yanlış. O yayılıp gidiyor.
+
+116
+00:29:15,412 --> 00:29:33,412
+Tabii yayılıp gidiyor. Dolayısıyla benim söylemediğim şeyleri mümkün olduğu kadar rağbet etmeyin. Ben zaten avetsiz sayfama gireceksiniz. Ben size bilgi, usüsten toplu mesaj atacağım. Avetsiz sayfamdan bakacaksınız, tamam mı? Duyuru olursa da ben onu size avetsiz sayfamdan duyuru olarak vereceğim. Eğer şey olursa da...
+
+117
+00:29:33,844 --> 00:30:00,000
+Herhangi bir resmi bilgi, sınavlarla ilgili vesaire açıklanırsa, gene onu avuç sayfama koyacağım. Bu birincisi. İkincisiden ara ara avuç sayfama özet notlar koyacağım. Tamam mı? Derslerle ilgili, anlattığım konularla ilgili özet notlar koyacağım avuç sayfama. Size de uç süsten toplu mesaj yazacağım. Avuç sayfamda notlar var, alın diye. Siz avuç sayfama girersiniz, şifreli koyacağım ama size şifreyi atarım, oradan alırsınız. Tamam mı?
+
+118
+00:30:00,000 --> 00:30:02,920
+Bu konularda anlaştık mı? Başka bir sorusu olan falan var mı arkadaşlar?
+
+119
+00:30:09,107 --> 00:30:33,208
+Yok mu? Kimsenin sorusu falan. Bir arkadaşınız geldi, ben ona bir bakayım. Bunu isterseniz yüklerim ama gerek var mı bilmiyorum. Matematik bölümünün sayfasında var bu. Yani şu ekranda gördüğünüz dersi içerikleri matematik bölümünün sayfasında var. Matematik bölümünün sayfasında matematik dersi içeriği girdiğimiz zaman görüyorsunuz orada. İsterseniz koyabilirim. Bunu da koyabilirim isterseniz.
+
+120
+00:30:34,036 --> 00:30:41,695
+Ama konuları burada anlattığım kadarıyla kısa özetlerini, size yetecek kadar olan kısa özetleri koyacağım.
+
+121
+00:30:41,796 --> 00:30:46,115
+Oradan PDF'sini çıktı alıp, eğer isterseniz çıktı alıp oradan çalışabilirsiniz.
+
+122
+00:30:47,135 --> 00:30:50,856
+Arkadaşlar, normal ders edasını da dersi anlatacağız.
+
+123
+00:30:50,856 --> 00:30:53,195
+Şimdi, hele konuşmaları bitmedi.
+
+124
+00:30:56,516 --> 00:30:59,655
+Dersi normal ders edasını da anlatacağımız için.
+
+125
+00:31:00,819 --> 00:31:19,940
+Dersi normal anlatırken örneklerin çok fazla olmadığını, yani biraz daha düz kaldığınızı düşünebilirsiniz. Öyle düşünmeyin. Çok oturaklı, çok güzel örnekleri normal dersin anlattığım için de göreceksiniz. Hakikaten çok güzel örnekler göreceksiniz. Bazıları da literatüre ilk kez giriyor.
+
+126
+00:31:20,339 --> 00:31:26,399
+Ben şimdi yazdım. Literatüre ilk kez giriyor. Benim kitafta da yok. Literatüre ilk kez girerim örnekleri de görecektim.
+
+127
+00:31:26,599 --> 00:31:30,759
+Detaylı bir şekilde anlatacağım. İhtiyacınız olduğu kadarını normal dersi anlatırken anlatacağım.
+
+128
+00:31:31,219 --> 00:31:39,460
+Sonra da arkadaşlar, sınava yakın, geçen dönemde öyle yaptık. Sınava yakın dönemde, yani sınav tarihi falan belli olduktan sonra,
+
+129
+00:31:39,559 --> 00:31:47,779
+onlar bir hafta önce falan, baştan başlayarak, yani dizilerden başlayarak, bir tane örnekle sizi sınava hazırlayacağım.
+
+130
+00:31:48,339 --> 00:32:02,220
+Yani dizilerden 3-5 örnek, serilerden 3-5 örnek, böyle örnekle çözerek sizi sınava hazırlamayı düşünüyorum. Geçen dönemde öyle yaptım. Başka bir fikri olan var mı uygulama konusunda? Daha iyi fikriniz olabilir.
+
+131
+00:32:07,188 --> 00:32:08,628
+Yok mu? Kimse ne fikir?
+
+132
+00:32:11,488 --> 00:32:13,728
+Bir şey deyin ya. Yok deyin, var deyin.
+
+133
+00:32:15,068 --> 00:32:15,868
+Yok hocam.
+
+134
+00:32:17,628 --> 00:32:21,188
+Tamam. O zaman arkadaşlar, şimdilik...
+
+135
+00:32:23,188 --> 00:32:37,188
+Son kısmını bir daha tekrar edeyim. Dersi normal anlatırken, bugün şimdi başlayacak olduğum gibi, normal anlatırken birer ikişer örnekle gideceğiz. Ders tamamladıktan sonra diğer konulara geçeceğim. Yani her dersi tamamlayıp...
+
+136
+00:32:42,708 --> 00:32:56,108
+Neyse beni kendirmiyor bu. Sonra sınava yönelik, sınava yakın zamanlarda her konu başlığı yeterli sayıda örnek çözeceğim. Eğer daha da ihtiyacınız olursa, belirtiniz, daha fazla örnek çözer.
+
+137
+00:32:56,108 --> 00:33:10,108
+Şimdi ben buradan çıkıyorum arkadaşlar. 15. akıdın önlerine sınav. Buradan çıkıyorum. Konu başlıklarından birinci başlığımıza geçiyorum. Bunu da başa alayım. Gördüğünüz real sayı dizileri.
+
+138
+00:33:10,836 --> 00:33:33,196
+Önce RSI dizisi nasıl oluşuyor? Yani arkadaşlar, matematikteki her şey bir ihtiyaçtan boğmuş. Tekrar söylüyorum, matematikteki her şey belli ihtiyaçlardan ortaya çıkmıştır. Yani matematikteki hiçbir kavram durduk yerde ortaya atılmamıştır. Birisi durup dururken limitten ya da süreklilik, türev, şudur, ben böyle düşündüm, böyle uygun gördüm deyip ortaya çıkmamıştır.
+
+139
+00:33:33,364 --> 00:33:45,864
+Mutlak suretle bir sebebi vardır. Mesela türevin somut, günümüz, yaşamımızla ilgili bir yorumunu yapabilir misiniz? Tek değişkenli fonksiyonlarda.
+
+140
+00:34:08,532 --> 00:34:14,072
+Matematik 1 türev ile ilgili bir günümüze uyarlı yorumunu yapabilir misiniz demiştim. Var mı fikri olan?
+
+141
+00:34:23,860 --> 00:34:25,740
+Boyutlar arası geçişimi sağlıyor.
+
+142
+00:34:26,300 --> 00:34:27,000
+Efendim?
+
+143
+00:34:27,720 --> 00:34:30,940
+Boyutlar arası geçişimi sayılıyor. Mesela 3 boyutlar, 2 boyutlar falan.
+
+144
+00:34:31,320 --> 00:34:34,860
+Her şey, her şey. Bakın ben daha...
+
+145
+00:34:34,860 --> 00:34:42,880
+Mesela bir kuyu düşünün. Bir kuyu belli bir derinlikte. Bilmiyorsunuz ama. Bir kuyu düşünün.
+
+146
+00:34:43,240 --> 00:34:50,500
+İçine bir taş atsanız, su olsa içinde de, taşın suya temas ettiğini duymuş olsanız, kuyunun derinliğini de saplayabilirsiniz.
+
+147
+00:34:50,804 --> 00:35:02,264
+Ya da ne kadar sürede düştüğünü hesaplayabilirsin. Bunu kim bulmuş biliyor musunuz? Bunu benim söylediğini, kimin yaptığını biliyor musunuz? Bilmiyorsunuz. Galileo.
+
+148
+00:35:03,104 --> 00:35:13,364
+Biri ihtiyacımız ki, bir olur ki, dünya dönüyor dediği için idam edilmiş. Yani tam doğru mu bilmiyorum ama rivayet öyle.
+
+149
+00:35:19,443 --> 00:35:38,903
+Tamam, [öğrenci] Bey bir şey söyledi. Şöyle dedim, matematikteki her kavram bir ihtiyaçtan kaynaklanmıştır. Günümüzle, yaşamımızla ilgili ihtiyaçlardan kaynaklanmıştır. Hiç kimse matematikteki, matematikçilerden bahsediyorum, bir kavram yatarken, ya ben böyle dedim, böyle oldu demez.
+
+150
+00:35:39,699 --> 00:35:50,479
+Kesinlikle bunun bir sebebi vardır. Mutlaka somut hayatımıza, yaşamımıza uyarlayabileceğimiz sebebi vardır. Mutlak sürette, her kavramı. Arada geldiği zaman gene onlara değiniriz.
+
+151
+00:35:50,479 --> 00:36:05,179
+Mesela bakın, biz ilere geçiyor muyum şimdi? Tek doğal sayıları düşünün, 1, 3, 5, 7 diye girebilir değil mi? 1, 3, 5, 7, 9, 11 diye girebiliriz. Çift doğal sayılar düşünün, 2, 4, 6, 8 diye girebiliriz.
+
+152
+00:36:07,699 --> 00:36:29,699
+Dikkat edin. Böyle gidebilir. Mesela şöyle gidebilir bakın. Şunu ben tek tek okuyorum. 1, 1, 2, 3, 5, 8, 13, 21. Size bir şey hatırlatıyor mu şurası? Bakın buna mesela Fibanyuki diziciler diyor. Fibanyuki dizicisi. O papatyanın yapraklarının hesabından...
+
+153
+00:36:31,476 --> 00:36:39,476
+Salihangol'da kadar her şeyde Fibonacci dizisi var. Çok somut şeyler var. Hakikaten çok somut şeyler var.
+
+154
+00:36:39,556 --> 00:36:45,676
+Belki biz matematiksel bir şey olduğu için, yani daha çok matematikleri indirdiği için Fibonacci dizisi üzerine çok fazla durmayacağız.
+
+155
+00:36:45,775 --> 00:36:49,336
+Belki bir tane örnek yaparım. Mesela faiz hesabı bakın.
+
+156
+00:36:50,536 --> 00:36:56,436
+Görüyor musun? Finans matematiği. İşte şuraya dilim döndüğü kadar biraz yazdım bakın.
+
+157
+00:36:56,851 --> 00:37:06,331
+Mesela %6 faiz oranında 1000 liraya yazsa, işte bir gün de alacağınız faizi. Biraz yuvarlamışım şöyle, dilim döndüğü kadar yazmışım.
+
+158
+00:37:06,652 --> 00:37:15,192
+Şimdi, şu bilgiyle ilgili bir şeyler söyleyeyim, ondan sonra normal başlayalım. Arkadaşlar, iki çeşit olabilir diziler. Sonlu olabilir, sonsuz olabilir.
+
+159
+00:37:15,511 --> 00:37:23,711
+Eğer sonluysa mesele yok. Yani üzerinde çok durulacak bir şey de olmaz. Sonluysa. Sonsuz ise, akla iki soru gelir. En azı iki soru gelir.
+
+160
+00:37:23,983 --> 00:37:41,804
+Birincisi, kısmen zordur. Genel terim için bir, yani şöyle yazdık ya bakın, şöyle, 1, 3, 5, 7, 2, 4, 6, 8 ya da şu şekilde, 1, 1, 2, 3, 5 diye giden şu şekilde yazdık ya. Bunun için bir genel terim ya da bir formül bulunabilir.
+
+161
+00:37:42,771 --> 00:37:45,591
+Bu biraz zordur. Bulmak o kadar kolay olmuyor.
+
+162
+00:37:46,871 --> 00:37:51,532
+İkincisi, nispeten birinciye göre daha kolay olduğunu düşünebiliriz.
+
+163
+00:37:51,851 --> 00:37:56,411
+Matematik 1'deki limit kavramını bildiğimizi varsayarak da bunu söylüyorum.
+
+164
+00:37:58,751 --> 00:38:02,891
+Dizilerdeki sayılar, yani bir sürü sayı olacak, bakın görüyorsunuz, bir sürü sayılar var.
+
+165
+00:38:03,271 --> 00:38:08,152
+Bu genel bir formülasyon varsa belli bir R sayıya yaklaşır mı?
+
+166
+00:38:08,628 --> 00:38:25,088
+Yani onun adına matematik diliyle yakınsak mıdır diyeceğiz. Matematik diliyle yakınsak mıdır diyeceğiz. Bakacağız. Nasıl oluyor, nasıl bitiyor? Onlara bakacağız. Şimdi başlayalım artık arkadaşlar. Bu genel doğuşla ilgili bilgileri verdikten sonra dizinin tanımıyla başladık.
+
+167
+00:38:35,603 --> 00:38:47,483
+Bundan olumsuz etkilenmeyin lütfen. Şüphesiz her şey, tanım ve teoremler teoriktir zaten. Önemli olan tanım ve teoremleri anlamaya çalışmak. Anlamaya çalışmanın tek yolu da onu örneklendirmek.
+
+168
+00:38:47,795 --> 00:39:09,036
+Tekrar ediyorum, anlam ve çalışmanın tek yolu onu örneklendirmek. Ama tanım ve teoremler kesinlik arz ettiği için, tekrar söylüyorum, tanım ve teoremler kesinlik arz ettiği için onun üzerinden yürümemiz gerekiyor. Yani tanım bir şey söylemişse ya da teorem bir şey söylemişse onun üzerinden yürümemiz gerekiyor. Biraz sonra yürüyeceğiz.
+
+169
+00:39:09,036 --> 00:39:15,475
+Şimdi tanımı bir okuyalım. Ben genel yazdım tanımı. Tanımı genel yazdım. Şimdi özelleştireceğim.
+
+170
+00:39:15,795 --> 00:39:40,775
+Tanım kümesi bakın, N eleman Z, Z tam sayılar kümesi değil mi? Z tam sayılar kümesi. Burada negatif doğal sayılar var, pozitif doğal sayılar var ve sıfır var. Ama biz tam sayılar negatif kısmını kullanmayacağız. Sıfırdan başlayarak devam ediyoruz. Şu şekildeki bir küme olan, yani tanım kümesi böyle bir küme olan bir fonksiyon, real değerli bir fonksiyona bir vizi diyoruz.
+
+171
+00:39:41,023 --> 00:39:43,483
+Reel değerli bir fonksiyona bir dizi diyoruz.
+
+172
+00:39:43,724 --> 00:39:47,563
+Şimdi, devamlı kullanacağımız, sizin de hoşunuza gidecek şey de şu.
+
+173
+00:39:48,144 --> 00:39:55,503
+Bakın, eğer f, n'den re'ye bir fonksiyonsa, n burada doğal sayılar üçünesi, r de re'ye sayılar üçünesi.
+
+174
+00:39:55,844 --> 00:40:02,724
+Tekrar söylüyorum, her ne kadar n'den re'ye yazıyorsak, bazen dizinin ilk terimiz sıfırdan başlayabilir.
+
+175
+00:40:03,215 --> 00:40:17,376
+Doğal Sırı Hökümeti'nin içinde sıfır olmadığı için onu ayrıca belirtiriz. Eğer sıfırdan başlarsa ayrıca belirtiriz. Biliyorsunuz müslet dilimlerde sıfır çok tehlikelidir. Müslet dilimlerde en tehlikeli sayı sıfırdır. Niye?
+
+176
+00:40:17,972 --> 00:40:45,592
+sıfır bölme tanımlanmamıştır. Değil mi? Sıfıra bölme tanımlanmadığı için, ki matematikte ve müsvet bilimlerde genelde bölmüş gibi çok fazla yapılır, tehlikelidir. Doğal sayılarda sıfırı varsaymayacağız. Doğal sayılarda sıfır yoktur diye düşüneceğiz. Ama eğer ihtiyacımız olursa dizilerde sıfırı da eklemeyi ihmal etmeyiz. Demek ki doğal sayılardan V sayıları olan bir fonksiyona bir dizi diyoruz. Ama arkadaşlar, dizi başlığında ve seri başlığında, yani
+
+177
+00:40:45,972 --> 00:40:56,472
+İlk iki başlığımızda, f fonksiyonundan ziyade, fn eşittir an'e alarak, bakın burada yazıyor, fn eşittir an'e alarak, diziyi bu şekilde yazacağız.
+
+178
+00:40:57,231 --> 00:41:01,592
+Kıvrık parantezler içinde an, n eşittir m'den sonsuza.
+
+179
+00:41:02,152 --> 00:41:04,572
+N eşittir m'den sonsuza diye deneteyeceğiz.
+
+180
+00:41:07,532 --> 00:41:09,152
+Şunu tanıyor musunuz arkadaşlar?
+
+181
+00:41:11,572 --> 00:41:13,512
+Mavi ile yuvarlak içine aldığımı tanıyor musunuz?
+
+182
+00:41:13,748 --> 00:41:14,427
+Tembolü.
+
+183
+00:41:19,635 --> 00:41:20,536
+Arkadaşlar,
+
+184
+00:41:21,256 --> 00:41:21,756
+Tonsuz.
+
+185
+00:41:23,996 --> 00:41:24,855
+Tanıyorsunuz yani.
+
+186
+00:41:29,331 --> 00:41:36,192
+[öğrenci] Bey, [öğrenci] Bey, [öğrenci] Hanım, [öğrenci] Bey hepsi sonsuz dedi. Tanıyorsunuz. Müsaade ederseniz bir soru sorabilir miyim?
+
+187
+00:41:37,331 --> 00:41:43,891
+[öğrenci] Bey de sonsuz dedi. [öğrenci] Bey de sonsuz dedi. Müsaade ederseniz bir soru sorabilir miyim bununla ilgili? Önemli de.
+
+188
+00:41:45,072 --> 00:41:47,631
+Tanıdığınız söylediğinize göre ben sonsuz nedir desem?
+
+189
+00:41:49,871 --> 00:41:53,371
+[öğrenci] Bey de tanıyor. Sonsuz nedir desem?
+
+190
+00:41:54,692 --> 00:41:55,211
+Tanımsız.
+
+191
+00:41:56,851 --> 00:42:19,811
+Ama tanıyoruz dediniz. Hayır. [öğrenci] Bey'in verdiği cevap çok kaçabak oldu. Sonsuz iletişim. Hayır. Şimdi arkadaşlar iki türlü tanıyabiliriz ya da ifade edebiliriz. Yani bize birisi sonsuz nedir diye sorduğu zaman eğer doğru ama kısa bir cevap vermek isterseniz
+
+192
+00:42:20,976 --> 00:42:47,476
+Yok. Doğru ve kısa bir cevap vermek isterseniz, şöyle diyebilirsiniz. Bir say değildir. Sonlu olmayan değil. [öğrenci] Hanım, sonsuz nedirin cevabı, eğer kısa bir cevap vermek isterseniz, bir say değildir diyeceksiniz. Bu karşı tarafı ikna eder mi bilmiyorum. Ben böyle deyince siz ikna oldunuz mu? Bir say değildir deyince ikna oldunuz mu?
+
+193
+00:42:48,851 --> 00:43:00,331
+Kısa cevap ikna edici olmayabilir. Bakın, bence, benim matematikçi olarak, Haber kadar bir matematikçi olarak, sonsuzdan anladığım şu, sonsuz nedir sorusunun cevabını ben şöyle veririm.
+
+194
+00:43:00,911 --> 00:43:09,291
+Belliğinizde canlandırabildiğiniz en büyük sayıdan daha büyük olan şey, bakın sakın sayı demeyin, bir sayı değildir.
+
+195
+00:43:09,291 --> 00:43:12,291
+Belliğinizde canlandırabildiğiniz en büyük sayıdan...
+
+196
+00:43:34,164 --> 00:43:36,164
+Doğal olarak da arkadaşlar...
+
+197
+00:43:38,164 --> 00:43:42,944
+Hocam, ders gitti, bağlantı gitti, tekrar söyleyebiliyor musunuz?
+
+198
+00:43:43,024 --> 00:43:45,844
+Söylerim. Sonsuz nedir diye sormuştum.
+
+199
+00:43:46,024 --> 00:43:52,844
+Sonsuz nedir diye sormuştum. Genel olarak arkadaşlarımız şey demişti, sonlu değildir demişti vesaire.
+
+200
+00:43:53,304 --> 00:43:56,484
+Ben şöyle diyorum, kısa cevabı duymuştunuz değil mi?
+
+201
+00:43:57,012 --> 00:44:23,192
+Sonsuz ne diyebiliriz size sorarsak, kısa cevap vermek istiyorsanız, bir sayı değildir diyebiliriz. Ama bir sayı değildir cevabı, karşı tarafı ikna eder mi bilmiyorum. Ben olsam, sonsuz ne diyebilir, şöyle cevap verdim. Belliğimizde canlandırabildiğimiz en büyük sayıdan daha büyük olan şey. Sonsuz ne, belliğimizde canlandırabildiğimiz en büyük sayıdan daha büyük olan şey demektir.
+
+202
+00:44:23,380 --> 00:44:31,220
+Eksi sonsuz ise arkadaşlar, belleğimize canlandırabildiğimiz en küçük saydan daha küçük olan şey.
+
+203
+00:44:32,600 --> 00:44:36,720
+Belleğimize canlandırabildiğimiz en küçük saydan daha küçük olan şey.
+
+204
+00:44:37,000 --> 00:44:41,280
+Dolayısıyla arkadaşlar, herkesin belleğinde farklı bir sayı vardır değil mi?
+
+205
+00:44:41,539 --> 00:44:46,500
+Ondan daha büyük olan şeyi ifade etmeye kalktığı zaman doğal olarak farklı farklı şeyler olur.
+
+206
+00:44:46,800 --> 00:44:49,100
+O zaman bakın, şöyle şeyler karşımıza çıkar.
+
+207
+00:44:51,764 --> 00:44:58,844
+Ekranda görüyor musunuz kırmızı cüzeye aldığını? Ekranda gördünüz mü? Nedir bu?
+
+208
+00:45:02,612 --> 00:45:03,771
+Sosuz altı, sonsuz.
+
+209
+00:45:07,315 --> 00:45:08,895
+Yazan arkadaşlarımıza bakayım.
+
+210
+00:45:14,132 --> 00:45:16,612
+Cevabı olan var mı? Sonsuz, sonsuz nedir desem?
+
+211
+00:45:17,431 --> 00:45:18,052
+Sonsuz.
+
+212
+00:45:19,712 --> 00:45:28,072
+Evet, şöyle diye, neden sonsuz olduğunu, teşekkür ederim arkadaşlarımıza, [öğrenci] Bey, [öğrenci] Bey, [öğrenci] Bey hepsi sonsuz dedi.
+
+213
+00:45:28,072 --> 00:45:39,431
+Neden sonsuz olduğunu ben size söyleyeyim. Belliğimizde canlandırabildiğimiz en büyük sayıdan daha büyük olan iki şeyi toplayacak olursanız, işte öyle bir şey olur. Anladınız mı?
+
+214
+00:45:41,811 --> 00:45:45,591
+İşte öyle bir şey olur. Şimdi limite geçirdik, onun için bunları anlatılıyorum.
+
+215
+00:45:46,371 --> 00:45:49,112
+Şimdi, sonsuz ekşi sonsuz nedir arkadaşlar?
+
+216
+00:45:54,547 --> 00:46:15,047
+Teşekkür ederim [öğrenci] Bey'e, [öğrenci] Bey'e, [öğrenci] Bey'e. Teşekkür ediyorum. Hayır, [öğrenci] Bey'e açıklama yapacağım. [öğrenci] Bey'e de açıklama yapacağım. [öğrenci] Bey'e de, [öğrenci] Bey'e teşekkür ediyorum. [öğrenci] Bey'e de açıklama yapacağım. Ben yapayım açıklamayı. Sonsuz ekşi sonsuz belirsizdir arkadaşlar.
+
+217
+00:46:15,583 --> 00:46:18,384
+Sonsuz eksi, sonsuz, belirsizdir.
+
+218
+00:46:18,683 --> 00:46:27,663
+Böyleyse, belliğimizde canlandırabildiğimiz, en büyük saydan daha büyük olan iki şeyi çıkardığımız zaman ne olacağını kimse bilemez.
+
+219
+00:46:28,307 --> 00:46:38,288
+Tekrar söylüyorum, toplarsanız öyle bir şey olur ama çıkarırsanız ne olacağını kimse bilemez. Dolayısıyla bu matematikte bir belirsizlik ifade eder.
+
+220
+00:46:38,627 --> 00:46:46,488
+Matematikte bir belirsizlik ifade eder ama bunu belli işlemler ile belirli hale getirmek mümkün olabilir.
+
+221
+00:46:46,847 --> 00:46:55,587
+Tekrar söylüyorum, bunu belli işlemler yaparak belirli hale getirmek mümkün olabilir. Olmayabilir tabii. Bunları işleyeceğiz.
+
+222
+00:46:56,307 --> 00:46:58,948
+Diğer belirsizliklerimiz de var. Bunları işleyeceğiz.
+
+223
+00:47:00,788 --> 00:47:03,047
+Niye şuna geçmiyor? Şuna geçeyim.
+
+224
+00:47:05,608 --> 00:47:08,807
+Tamam. Bunu da anladığınızı düşünüyorum arkadaşlar.
+
+225
+00:47:09,427 --> 00:47:10,988
+Şimdi önemli, çok önemli bu.
+
+226
+00:47:11,408 --> 00:47:15,467
+Neden sonsuz sembolünü kullanmışız? Göreceksiniz şimdi birazdan.
+
+227
+00:47:15,467 --> 00:47:17,467
+Şimdi arkadaşlar, belki...
+
+228
+00:47:18,931 --> 00:47:36,631
+Sonsuz bir dizi demek, doğal sayılardan, bazen sıfır da dahil olabilir, doğal sayılardan, real sayılara bir fonksiyon demek imiş. Bundan sonra biz serilerin bitimine kadar, seriler de dahil, T fonksiyonunu değil, F'ne eşittir, A'ne alarak diziyi bu şekilde gösterebilir.
+
+229
+00:47:36,943 --> 00:48:01,344
+Tamam mı? Kıvrık parantezleri içinde A'n. Eğer ihtiyacımız olursa, sağ tarafa N eşittir M'den olsa yazacağız. Şu şekilde bakın. Sağ tarafa. Alttan N eşittir M, üstte sonsuz yazacağız. Eğer ihtiyacımız olmazsa, bazen olacak, bazen olmayacak, ihtiyacımız olmazsa bunu yazmayacağız. Sadece kıvrık parantezleri içinde A'n'yi kullanacağız. Bu kıvrık parantezleri içinde A'n şimdilik dizi demek.
+
+230
+00:48:01,780 --> 00:48:13,880
+Daha sonra, yani ikinci başlığımızda, uzun soluklu başlığımızda, bu kırık parantezler içinde AN'yi kullanarak bir seriyi oluşturacağız. Demek ki arkadaşlar, diziler serilerin temeli.
+
+231
+00:48:14,324 --> 00:48:42,304
+Bir daha söylüyorum, diziler serilerin temeli. Yani temel olmadan yürünmez değil mi? Bir bina dikeceksiniz, temelsiz bina mı ya? Değil mi? Önce temel olacak. O zaman, derimin ta ihtiyata başladığımızda söylediğim gibi, dizileri çok iyi anlamamız lazım. Anlayacaksınız. Umarım anlayacaksınız. Tane tane, ağır ağır anlatacağım. Şimdi arkadaşlar, bir daha şuralarda tekrar edeyim. Diziler gelen olarak birden başlar. Bakın, ne eşittir birden başlar. Biz bunu belirtmeyiz.
+
+232
+00:48:42,324 --> 00:48:50,144
+Bakın bu şekilde belirtmeyiz. Bazen de sıfırdan başladığını göreceksiniz. Sıfırdan da başlatacağız ki terileri atıfta bulunalım.
+
+233
+00:48:51,043 --> 00:49:01,583
+Dizinin o kıvrık parantezinin içindeki şu AN'ye arkadaşlar, kıvrık parantezinin içindeki AN'ye, AN sayısına yani, dizinin neyinci terimi şöyle altın sistemi yolu.
+
+234
+00:49:04,583 --> 00:49:06,124
+Dizinin, niye gelmedi?
+
+235
+00:49:17,652 --> 00:49:42,551
+Neyse gelmedi. Bizinin neyinci terimi ya da genel terimi deniyor. Tamam mı? 40 parantezindeki şu aneyi, bizinin neyinci terimi ve genel terimi deniyor. İlk başta söylemiştim, bizinin genel terimini bulmak o kadar kolay olmuyor. Yani genel olarak bir ifade verildiği zaman, bakın şu örnek 2'ye bakın, bir ifade verildiği zaman genel terimi bulmak o kadar kolay olmuyor. Ama limitini hesaplamak müspeten daha kolay.
+
+236
+00:49:42,963 --> 00:49:46,804
+En azından matematik 1'deki limiti bildiğimizi varsayarak söylüyor.
+
+237
+00:49:47,244 --> 00:49:48,864
+Nişbeten limit hesaplamak daha kolay.
+
+238
+00:49:49,324 --> 00:49:58,184
+Birinci örneğimiz, çok kolay olan, şöyle diyor, 40 parantezikli sinüs, n pi bölü 2, dizisinin terimlerini listeleyin.
+
+239
+00:49:58,184 --> 00:50:00,000
+Tabii, dizisinin terimlerini listeleyin.
+
+240
+00:50:00,000 --> 00:50:27,359
+Senden listelerini derken, 200 tane, 300 tane, 500 tane terim yazın demiyor. 3-5 tanesini yazın, bakın ne oluyor bir görün demek istiyor. Tamam mı? Şimdi bunu yazarken arkadaşlar, gene çoğunlukla olduğu gibi, A, N yerine F, N yazıyor. Tamam mı? Aklınıza tutun bunu. Düzilerden başlasak bile fonksiyona dönüştürüp, fonksiyonları çok iyi bildiğimizi düşünerek fonksiyonlara dönüştürüp, oradan hareket etmek her zaman bize fayda sağlayacak. Hep de öyle yapacağız.
+
+241
+00:50:28,052 --> 00:50:36,072
+Kıvırık parantez içinde sinüs n'ye pi bölü 2, sinüs n'ye pi bölü 2, dizinin de terimlerini listeleyin. Birkaç tanesinin listeyi.
+
+242
+00:50:37,052 --> 00:50:51,152
+Şimdi n'ye yerine 1 koyduk bakın, sinüs pi bölü 2 1, n'ye yerine 2 koyduk, sinüs pi 0, n'ye yerine 3 koyduk, sinüs pi bölü 2 eşittir, eksi 1, n'ye yerine 4 koyarsanız, sinüs 2 pi eşittir 0.
+
+243
+00:50:51,152 --> 00:50:55,592
+Dolayısıyla arkadaşlar bakın, dizinin terimleri böyle, şu şekilde.
+
+244
+00:50:56,211 --> 00:51:00,511
+Bunu daha kısa, özet halde yazabiliriz. Fikri olan var mı?
+
+245
+00:51:01,371 --> 00:51:03,112
+Özet halde yazabiliriz. Fikri olan var mı?
+
+246
+00:51:08,244 --> 00:51:09,144
+Diyadınız yok mu?
+
+247
+00:51:14,867 --> 00:51:30,867
+Yokmuş. Şöyle arkadaşlar, bakın aslında ne yerine hangi doğa sayıyı koyarsanız koyun, karşılaştığımız üç tane rakam var. Bakın karşılaştığımız. Eksi bir, sıfır ve bir. Bakın, eksi bir, sıfır ve bir.
+
+248
+00:51:31,860 --> 00:51:53,279
+3 tane rakamla karşılaşıyorsunuz. Dolayısıyla bu 3 rakam tekrar ediyor. Yani 1, 0, 1, 0, 1, 1, böyle bu 3 rakam tekrar ediyor. Burada sonsuz tane terim olmakla birlikte, ifade olmakla birlikte 3 tane rakam var sadece. Bu özel bir dizi ama. Özellikle bunu tercih ettik. Özel bir dizi bu.
+
+249
+00:51:59,860 --> 00:52:27,860
+Değişik örnekler de yapacağım bununla ilgili. Şöyle yazmışım. 1,1 bölü kök 2,1 bölü kök 3 bölü 4,1 bölü 4,1 bölü kök 5 bölü 16,1 bölü nokta nokta diye giriyor. Bu 1,2,3,4,5 tane terimin genel terimi bulmak için yeterli olduğunu düşünerek buradan sonrasına yani kök 5 bölü 16'tan sonrasına nokta nokta koymuşum. Yeterli ol genel terimi bulmak için bu kadar bilginin yeterli olduğunu düşünerek nokta nokta koymuşum.
+
+250
+00:52:27,860 --> 00:52:54,139
+Nokta nokta koymuşum. Bakalım şimdi. Diyor ki, dizilerin genel terimi için bir formül bulun. Bu çok önemli bir ayrıntı. Formülü bulmak çok önemli bir ayrıntı. Şimdi tane tane yapalım arkadaşlar. Önce ilk terimi gözenini alalım. İlk terimi gözenini alalım. Aldık ilk. Şurada ben. Şuna. Ya arkadaşlar buradan kalem çıkıyordu. Çıkmıyor şimdi.
+
+251
+00:53:02,771 --> 00:53:06,551
+Bir bilgi soran var mı? Şuradan kalem çıkıyordu. Şöyle işaretliyordum ben. Gelmiyor şimdi.
+
+252
+00:53:08,151 --> 00:53:12,551
+Ha şuradaymış. Tamam gördüm. Tamam gördüm. Yok gene gelmedi.
+
+253
+00:53:14,591 --> 00:53:15,671
+Şunu kapatıp açayım bakayım.
+
+254
+00:53:20,692 --> 00:53:23,132
+Hocam, galiba sağ üstte.
+
+255
+00:53:23,731 --> 00:53:29,871
+Geldi, geldi. Tamam, geldi. Teşekkür ederim. Geldi. Şurada bir işaretleme yapacağım da. Tamam, geldi.
+
+256
+00:53:30,692 --> 00:53:38,351
+Şimdi arkadaşlar, önce birinci serimle alıyoruz. Bakın bir. Tamam mı? Onu şimdi dikkatli dinleyin arkadaşlar.
+
+257
+00:53:38,831 --> 00:53:42,672
+Diğer serimlere benzeyecek şekilde yazmaya çalışıyorum. Bakın, biri göz önüne aldım.
+
+258
+00:53:43,123 --> 00:54:10,423
+D-terimlerin paydasında kök 2, 4, 16 gibi sayılar var ya, ona benzetmeyi çalışarak yazıyoruz. Dikkatça dinleyin, eğer anlamadığı şey olursa birkaç kez tekrar edelim. O biri kök 1 bölü 2'leri 0 diye yazdım. Çünkü aşağıda hep 2'ler var, görüyor musun? Değil mi? Aşağıda hep 2 var. Kök 2 var, 4 var, 16 var, böyle gidiyor. 2'nin 0. küveti diye yazdım. Ya kök 1 bölü, 2'nin 0. küveti 1.
+
+259
+00:54:10,864 --> 00:54:22,903
+Şimdi ikinci terimi el alıyorum arkadaşlar. Yani 1 bölü kök 2'yi el alıyorum bakın. Bu 1 bölü kök 2 gördünüz. Şimdi bunu da gene diğerlerini de dikkate alarak kök 2 bölü 2 üzeri 1 yazıyorum.
+
+260
+00:54:23,283 --> 00:54:32,163
+Şimdi aşağıdaki arkadaşlar, aşağıdaki bakın 2 üzeri 0 ve şu paydadaki yani 2 üzeri 1 bir an ifade etti değil mi?
+
+261
+00:54:32,788 --> 00:54:59,927
+Bir anlam ifade etti. Bir tane daha yazayım. Sonra pay kısmında değerlendireceğim. Şimdi köküç bölü 4'ü gözenle alıyorum. Bakın köküç bölü 4'ü gözenle aldım. Kötüçle ilgili yapabileceğim bir şey yok. Bakın yazdım. Görüyor musunuz? Kötüçle ilgili yapabileceğim. Döneceğim başa. İki ikisine geri döneceğim. Kötüçle ilgili yapabileceğim bir şey yok. Onu yazdım. Ama aşağıdaki 4'ü bakın 2'nin karesi diye yazdım. Görüyor musunuz? 2'nin karesi diye yazdım. Bir sonraki anlatayım. Sonra baş edelim.
+
+262
+00:55:00,916 --> 00:55:13,916
+Bir sorarak, bir sorarak baş edelim. 1 bölü 4'ü değil de, 45-16'yı anlatayım. 45-16'yı da arkadaşlar, 45 ile ilgili yapabileceğim bir şey yok ama 16'yı 2'nin 4. kuvveti yatar. Şimdi önce paydayı bir kontrol edelim.
+
+263
+00:55:17,300 --> 00:55:28,780
+Teşekkürler. Paydayı bir kontrol edelim. Bakın, birinci serim 2, 2 üzeri 0, ikinci serim paydayı kontrol ediyorum, 2 üzeri 1, üçüncü serim 2 üzeri 2, böyle gidiyor.
+
+264
+00:55:28,780 --> 00:55:38,160
+Mesela beşinci serim 2 üzeri 4. Yani, neden 1 eksik değil mi? M'ye 1 verdiğiniz zaman bir önceki, M'ye 2 verdiğiniz zaman bir önceki böyle böyle gidiyor.
+
+265
+00:55:38,440 --> 00:55:44,160
+Dolayısıyla arkadaşlar, şimdi şu paydaya 2 üzeri M-1 gelmesi gerektiğini anladık mı?
+
+266
+00:55:45,108 --> 00:55:51,387
+Anladıysak onaylayalım lütfen. Genel terimde pay diye, 250 ne-1 gelmesi gerektiğini anladık mı?
+
+267
+00:55:52,128 --> 00:55:52,967
+Anladım hocam.
+
+268
+00:55:54,068 --> 00:56:10,768
+Tamam, şimdi gelelim pay kısmına. Pay kısmına da arkadaşlar, biri kök 1 bölü kök 1 diye yazdım. Diğer terimlerde kökü gördüğüm için, tamam mı? Bakın diğer gelen terimlerde kökü gördüğüm için oradan bir etinlenme olabilir diye kök 1 yazdım.
+
+269
+00:56:22,068 --> 00:56:27,888
+4'ü de, aşağıdaki 4'ü, 2 üzerini, 2'nin 3'ü kuvveti olabilsin diye, kök 4'ü yazdım.
+
+270
+00:56:28,088 --> 00:56:31,848
+4'ü 4'ü 2 diye alabilirsiniz şüphesinde, sakıncası yok. Sonra kök 5 diye geliyor.
+
+271
+00:56:32,148 --> 00:56:37,488
+O zaman anlıyorum ki arkadaşlar, tay kısmında, indisle, paralel hareket ediyor.
+
+272
+00:56:38,568 --> 00:56:40,368
+Bakın, tay kısmı, değil mi?
+
+273
+00:56:41,988 --> 00:56:45,668
+Biliyorsunuz, yani kökün içi, indisle aynı hareket ediyor.
+
+274
+00:56:46,099 --> 00:56:57,399
+A'nın indisi 1 olunca kökün 2, A'nın indisi 2 olunca kökün 2, A'nın indisi 3 olunca kökün 2, 3, böyle gidiyor. O zaman pay kısmına kök ne oluyor?
+
+275
+00:56:59,059 --> 00:57:05,319
+Aşağı iyi kötü anlaşıldı mı arkadaşlar? O kadar kolay değil gördüğünüz gibi. Baş örnekle de yapacağız.
+
+276
+00:57:07,839 --> 00:57:09,900
+Soru, dizisinin...
+
+277
+00:57:10,420 --> 00:57:15,940
+Bu şekilde verilen dizinin genel terim için bir formül bulunmuş idi. Genel terim için bulduğumuz formül bu.
+
+278
+00:57:16,280 --> 00:57:25,400
+Niye önemli? Şunu da görelim. Arkadaşlar, eğer bu dizinin limitini sorarlarsa, biraz sonra gelecek, bunu yazmadan limit hesaplamak nerede imkansızdır?
+
+279
+00:57:25,720 --> 00:57:32,040
+Bu cümleyi bir daha tekrar ediyorum. Eğer bir dizinin limitini hesaplayınız diye sonra gelecek, hesaplayınız diye sorarlarsa,
+
+280
+00:57:32,563 --> 00:57:56,063
+Şunu yazmadan, şurayı yazmadan limit hesaplamak neredeyse imkansızdır? Yani şuradan ancak tahminen bir şey söylenebilir. Şuradan tahminen bir şey söylenebilir. Bence müsbet bilimlerde tahmin çok yanıltıcı bir şeydir. Bu cümleyi bile tekrar ediyorum. Müsbet bilimlerde tahmin yanıltıcı bir şeydir. Sadece tahminden ibarettir. Onun doğru olduğunu kimse söyleyemez, garanti edemez.
+
+281
+00:57:56,692 --> 00:58:24,432
+Matematikte ise, müsvet bilimlerdir şüphesiz böyle, her şey kesinlik az edeceği için, her şey kesinlik az edeceği için, biz şöyle bir ifadeyi, yani taylarla böyle sonsuza giderilmiş şöyle bir bizi terimlerinin genelini şu şekilde yazmak zorundayız ki, sonraki işlemlerimiz, teriler içinde aynen geçerli olacak, sonraki işlemlerimiz çok kolay olsun ya da hesaplanabilir hale geçir.
+
+282
+00:58:24,692 --> 00:58:28,432
+Şimdi dizilerin limitlerini hesaplamayla ilgili devam edeceğiz.
+
+283
+00:58:29,791 --> 00:58:31,432
+Küçüklüğe geliyorum.
+
+284
+00:58:32,092 --> 00:58:35,311
+10 dakika arıyorum arkadaşlar. Saat başı devam edelim.
+
+285
+00:58:36,592 --> 00:58:39,311
+Bir şey söylüyorsanız söyleyin, söylemiyorsanız saat başı devam edelim.
+
+286
+00:58:39,411 --> 00:58:40,072
+Ses kapatacağım.
+
+287
+00:58:44,403 --> 00:58:47,144
+Tamam, 10 dakika ara, saat başı devam ederiz.
+
+288
+00:58:48,864 --> 00:58:54,764
+Hocam, ben hazırlıktan geldim de, ben bu matematik 1'i nasıl öğrenebilirim?
+
+289
+00:58:57,044 --> 00:59:04,784
+Ben matematik 2'de ihtiyacınız olduğu kadarını anlatmaya çalışacağım, şimdi göreceksiniz. Tane tane anlatmaya çalışacağım.
+
+290
+00:59:05,235 --> 00:59:13,395
+Yine de yetersiz kalırsanız, bir matematik bir kitabı alıp çalışmakta fayda var. Benim anlatacağım yeterli olmazsa.
+
+291
+00:59:13,695 --> 00:59:15,855
+Hocam peki, matematik bir kitabı.
+
+292
+00:59:17,976 --> 00:59:20,175
+Tepsi kapatıyorum on dakikada arkadaş.
+
+293
+01:08:05,684 --> 01:08:08,204
+Arkadaşlar ben geldim, hazırsanız devam edebileceğiz.
+
+294
+01:08:21,619 --> 01:08:42,600
+Tamam, devam ediyoruz arkadaşlar. Şimdi yakınsak diziler ne zaman yakınsak? Yani genel terimi şu şekilde verilen bir dizinin limitini nasıl buluyormuşuz? Yakınsak demek arkadaşlar, dizinin limitini hesapladığımız zaman belli bir sayı bulabiliyor olmamız demek. Biliyorsunuz, demin öğrendiniz ki sonsuz bir sayıyı temsil etmez.
+
+295
+01:08:43,155 --> 01:08:45,095
+O çıkınca ne olacağını söyleyeceğim.
+
+296
+01:08:45,095 --> 01:08:49,476
+Tamam mı? Önce matematik dedim ya, tanımlar ve teoremler teoriktir.
+
+297
+01:08:49,775 --> 01:08:52,916
+Biraz size sıkıcı, itici gelebilir ama gelmesin.
+
+298
+01:08:53,175 --> 01:08:56,816
+Her şey tanım ve teoremlere dayandığı için onları anlamamız lazım.
+
+299
+01:08:57,056 --> 01:08:58,655
+Tamam mı? Şimdi tanımını yapalım.
+
+300
+01:08:59,316 --> 01:09:04,416
+Gördüğünüz gibi sadece şeyleri, sembollerle ifade edilmiş teoriktir bir şey.
+
+301
+01:09:04,695 --> 01:09:08,175
+Ben bunu bir okuyayım. Sonra pratik haline dönüşünü göreceksiniz.
+
+302
+01:09:08,935 --> 01:09:09,804
+Elimizde bir...
+
+303
+01:09:27,475 --> 01:09:45,255
+Elimizde böyle bir ANE dizisi varsa arkadaşlar, küçük N, büyük eşit, büyük N, küçük N dizinin alt indisi görüyorsunuz bakın, ANE, A'nın alt indisi. Ondan daha büyük, küçük N, büyük N'den daha büyük olacak şekilde bir N sayısı varken,
+
+304
+01:09:51,315 --> 01:10:11,075
+Mutlak değer, an-l küçük epsilon, şunun da okunuşu epsilon, olacak şekilde bir n doğal sayısı bulabiliyor isek, mutlak değer, an-l küçük epsilon olacak şekilde bir büyük n doğal sayısı bulabiliyor isek, bu an edilisinin limitinin şu küçük l sayısı olduğunu söylüyor.
+
+305
+01:10:11,475 --> 01:10:16,795
+Ve sembolik olarak arkadaşlar, limit neye sonsuza giderken, a neye eşittir, l'ye yatıyoruz.
+
+306
+01:10:17,215 --> 01:10:24,475
+Arkadaşlar, çok değişkenli fonksiyonlar başlığına kadar, yani diziler ve serilerde, diziler ve serilerde,
+
+307
+01:10:24,948 --> 01:10:46,768
+Sadece limiti ne sonsuza giderken alacağız. Bir daha tekrar ediyorum. Diziler ve serilerde limiti sadece ve sadece ne sonsuza giderken alacağız. Ne'nin çok büyümesi anlamına geliyor. Tamam mı? Ne'nin çok büyümesi anlamına geliyor. Ne sonsuza giderken limit alacağız. Bunun dışında bir limitimiz yok. Herkes duydu mu?
+
+308
+01:10:49,300 --> 01:10:49,960
+Evet hocam.
+
+309
+01:10:49,980 --> 01:11:00,140
+Ona verin lütfen. Tamam. Sadece ne sonsuza giderken limit hesabı yapacağız. Diziler ve serilerde. Çok değişkenli fonksiyonlara geldiğimiz zaman orada sayıları da, diğer sayıları da kullanılır.
+
+310
+01:11:00,640 --> 01:11:14,300
+Şimdi arkadaşlar, şurada bir bilgi var. Bakın not diye yazmışım buraya. Notlar son derece önemlidir. Eğer bir dizinin limiti, limit derken ne'nin sonsuza gittiğini artık anlaştık. Tamam mı? Limit dediğimiz zaman...
+
+311
+01:11:33,268 --> 01:11:38,528
+Küsüme yerine ne artı sayı koysak da durum değişmiyor. Genel limit L oluyor.
+
+312
+01:11:42,003 --> 01:11:45,224
+Hocam, fon kısmına düştünüz mü? Tekrar alabilir misiniz?
+
+313
+01:11:45,884 --> 01:11:47,963
+Tamam. Şu kısmı tekrar söylüyorum.
+
+314
+01:11:51,859 --> 01:12:03,340
+Bu not 1 önemli, çok önemli. Notların hepsi çok önemli, çok önemlidir arkadaşlar. Eğer bir dizinin, bir dizinin limiti L ise doğal olarak neye sonsuza gidiyor, burada anlaşmıştır.
+
+315
+01:12:04,260 --> 01:12:19,079
+İndis, şu indis var ya, küçük indis. Şöyle yuvarlak içine alayım onu. Şu. Bakın bu neye yerine diyor arkadaşlar, elim istirildi biraz. Neye yerine herhangi bir başka şey koysanız da,
+
+316
+01:12:19,507 --> 01:12:46,288
+N artı K gibi herhangi başka bir şey koysanız da gene dizinin limiti L'dir diyor. Demin sonsuz nedir üzerinde durduk ya, sonsuz artı sonsuz, dikkat edin değil mi? Sonsuz artı sonsuz evde durmuştuk. Bellenize canlandırabildiğiniz en büyük saygıdan daha büyük olan iki şeyi topladığınız zaman işte öyle bir şey olur demiştim ya. O anlamda bu, tamam mı? Bunu unutmuyoruz. Bunu aklımızın bir fişesine yazalım. Eğer bir dizinin limiti L ise,
+
+317
+01:12:46,771 --> 01:12:57,811
+İndisi değiştirirseniz de limit değişmez. Yine L olur. Şimdi bu yeni bir kavramın, dedik ya matematikte hiçbir şey durduk yerde ortaya atılmamıştır diye, yeni bir kavramın doğmasına sebep olacak.
+
+318
+01:12:58,372 --> 01:13:12,131
+Birazdan göreceksiniz. Şunları sileyim. Devam ediyoruz. Diğer arkadaşlar, diğer dediğim not, eğer A neydi ise belli bir, bakın R sayıya yakınsamıyorsa, görüyor musunuz?
+
+319
+01:13:12,340 --> 01:13:16,540
+Belli bir real sayıya yakınsamıyorsa, o zaman dizinin raksak olduğunu söylüyoruz.
+
+320
+01:13:16,940 --> 01:13:26,420
+Tekrar etmek gerekirse bu tanımı, eğer bir dizinin limiti, belli bir real sayı olursa, dizinin yakınsak olduğunu söylüyoruz.
+
+321
+01:13:45,043 --> 01:14:07,923
+Dizinin genel terimin neye sonsuza giderken belli bir re sayıya yaklaşırsa, dizinin yakınsak olduğunu söylüyoruz. Eğer belli bir re sayıya yaklaşmaz ise, dizinin raksak olduğunu söylüyoruz. Belli bir re sayıya yaklaşmaz iseden kastımız, limit eksi sonsuz çıkabilir, artı sonsuz çıkabilir ya da herhangi bir şey çıkmayabilir.
+
+322
+01:14:09,332 --> 01:14:15,872
+Bu üst durumda da dizinin raksak olduğunu söyleyeceğiz. Nasıl geliyor onlar? Aşağıda görecek.
+
+323
+01:14:16,771 --> 01:14:25,711
+Şimdi birinci örneğimiz arkadaşlar, yani limitle ilgili, yakınsaklıkla ilgili birinci örneğimiz teorik.
+
+324
+01:14:26,612 --> 01:14:31,791
+Bu daha çok matematik ve fizikçiler gibi teorik çalışanları ilgilendiren bir örnek.
+
+325
+01:14:32,112 --> 01:14:34,912
+Ben ama özellikle size de bir kere anlatmak istedim.
+
+326
+01:14:35,123 --> 01:14:53,043
+Anlayamazsanız da bir ziyanı yok, karşınıza böyle bir şey çıkmayacak. Bu örnekle ilgili bir şey karşınıza çıkmaz. Bu teorik. Ben gene kesin ispat nasıl yapılıyor, onu görün diye bir tane, iki tane vardı örnek, birisini atlayacağım, bir tane örneği yazmayı uygun bulduk. Dikkatlice dinleyin arkadaşlar, anlayamazsanız da bir ziyanı yok.
+
+327
+01:14:53,043 --> 01:15:03,123
+Şimdi, limit neye sonsuza giden, n artı 1 bölü 2, n artı 3 eşitli 1 bölü 2 olduğunu gösterin. Bu olduğunu gösterin soruların tek çözüm yolu budur.
+
+328
+01:15:03,123 --> 01:15:22,203
+Tabii siz yüzde sınav olmayacağınız için, yani analitik çözümleri yapmayacaksınız. Sınavlarımız test olduğu için böyle bir şeye ihtiyacınız yok zaten. Böyle bir şeye ihtiyacınız yok. Genelde ben şu tanım nasıl kullanılıyor, şurası, şu gerektirme nasıl elde ediliyor, onu görelim diye bir tane örnek yapmaya uygun bulayım.
+
+329
+01:15:22,203 --> 01:15:29,543
+Şimdi epsilon'ı alacağız, bakın şurada yazıyor ya, epsilon büyük sıfır diye. Epsilon alacağız, sonra epsilon'a bağlayacağız.
+
+330
+01:15:29,684 --> 01:15:41,804
+Epsilon büyük sıfır verilmiş olsun, pozitif. Bu epsilon arkadaşlar, mini minnacık pozitif bir sayı. Mesela sıfır nokta, milli artanası sıfır bir gibi, mini minnacık pozitif bir sayı olacak.
+
+331
+01:15:43,004 --> 01:15:51,224
+Gerektirmeyi yazıyorum, n büyük eşit büyük n iken, mutlak değer ane ekşi bir bölükçü küçük epsilon olacak şekilde, bir büyük n doğal sayısı bulmaya çalışıyoruz.
+
+332
+01:15:51,224 --> 01:15:52,463
+Tamam, bakalım.
+
+333
+01:16:15,699 --> 01:16:28,420
+Bunu işledik. Mutlak değer an-1 bölü 2 işledim. Yani an yerine n artı 1 bölü 2n artı 3 aldım. Taraf tarafa çıkarım işlemi yaptım. Biliyorsunuz ki negatif sayların mutlak değeri de pozitiftir.
+
+334
+01:16:32,851 --> 01:16:57,011
+Pozitifin ağırlarak mutlak değeri kaldırdım. Yani sonuç, mutlak değer anı ekşi 1 bölü 2 eşitti 1 bölü 2, parantez içinde 2 ne? Artı 3. Buraya kadar anlamadığınız bir şey yoktur değil mi? Şurayı anladınız herhalde. Burada bir şey yok. Şimdi bundan sonraki işlem şu arkadaşlar. Bu mutlak değer anı ekşi 1 bölü 2'nin epsilondan küçük kalmasını talep ediyoruz ya. Tanım öyle diyor ya.
+
+335
+01:16:57,011 --> 01:17:00,371
+Sorunun başında yayınımız kesinlikle anlaşılmadı ya.
+
+336
+01:17:01,524 --> 01:17:03,304
+Neresi anlaşılmadı? Şurası mı?
+
+337
+01:17:03,944 --> 01:17:07,724
+Evet, o birinci maddeler itibaren. Çünkü tam o sırada yayınınız kesildi.
+
+338
+01:17:09,344 --> 01:17:14,244
+Tamam, tekrar ediyorum. Şimdi arkadaşlar, 3 adımda yapacağımızı söyleyeyim.
+
+339
+01:17:14,404 --> 01:17:18,004
+3 adımda yapacağımızı söyleyeyim. Şu gerektirmeyi bir yazıyoruz.
+
+340
+01:17:18,224 --> 01:17:23,543
+Şu gerektirmeyi. Küçük neye, büyük eşit, büyük neye iken mutlak ane, eksi l'yi bir yazıyoruz.
+
+341
+01:17:24,264 --> 01:17:25,904
+Epsiyondan küçük almasını talep edeceğiz.
+
+342
+01:17:26,224 --> 01:17:43,084
+Yazdım bakın. Şimdi, AN, biliyorum yazacağım, 1 bölü 2 L değil mi? Şuradaki L'ye bakın, bu L. Mutlak değer AN-1 bölü 2. Eşittir mutlak değer AN yerine, bakın, N artı 1 bölü 2N artı 3 yazdım. Eksi 1 bölü 2 limit değeri.
+
+343
+01:17:43,636 --> 01:18:01,836
+Sadeleştirdim, yani pay değişikliği işlemi yaptım. Negatif bir sayının mutlak değeri pozitif olduğu için mutlak değer, yani eksiği artı yaparak mutlak değeri kaldırdım. Burayı yaptım. Buraya kadar anlaşılmayan bir şey var mı? Kısımda. Normal toplama pay değişikliği, şuradan pay değişikliği toplama işlemi yaptım.
+
+344
+01:18:21,235 --> 01:18:22,976
+Şu kısımda anlaşılmayan bir şey var mı arkadaşlar?
+
+345
+01:18:23,916 --> 01:18:26,255
+Hocam, bir şey sorabilir miyim?
+
+346
+01:18:27,735 --> 01:18:29,416
+Git gel çok oluyor hocam.
+
+347
+01:18:29,735 --> 01:18:35,056
+Az önce hemen bir küçük de olsa sizi attı ama bunun çözümü nasıl olabilir acaba ya?
+
+348
+01:18:35,636 --> 01:18:36,095
+Çok sık.
+
+349
+01:18:36,235 --> 01:18:41,496
+Valla yani Türkiye'nin sorunu diye düşünüyorum ben.
+
+350
+01:18:41,496 --> 01:18:44,576
+Yani okulda da internet aynı, evde de aynı, her yerde aynı.
+
+351
+01:18:45,043 --> 01:19:06,203
+Her zaman olur mu bilmiyorum ama saliselik de olsa gidiyor geliyor. Ben fark ediyorum ama nasıl yapabiliriz ki bunu? Okulda da aynı, burada da aynı. Yani her zaman olmazdı herhalde. Bugün oldu ama belki bugün üniversite yeni açıldığı için yoğunluk mu var bilmiyorum. Her zaman olmaz diye düşünüyorum. İnşallah olmaz diye.
+
+352
+01:19:06,744 --> 01:19:07,764
+Anladım hocam inşallah.
+
+353
+01:19:08,184 --> 01:19:10,804
+Dersi bir tamamen kapatıp açsak acaba düzelir mi hocam?
+
+354
+01:19:36,275 --> 01:19:51,695
+Yani çok minik de olsa bir bağlantı kesikliği olur. Sonra düzeldi ama. Geçen dönemde ilk haftada böyle ufak tefek gidip gelmeler olmuştu. Sonra bir daha olmadı. Umarım bir daha olmaz. İnşallah olmaz. Bu haftadan sonra. Yoğunluk olduğu için mi bilmiyorum.
+
+355
+01:19:53,835 --> 01:19:59,935
+Birinci maddeyi anladık değil mi arkadaşlar? Burada bir şey yok. Şimdi ikinci maddede de anlaşılmayacak bir şey yok. Ben kısaca tekrar ediyorum.
+
+356
+01:20:00,000 --> 01:20:14,719
+Şimdi, mutlak değer an-1 bölü 2 farkını, şu mutlak değerin, epsilon'dan küçük kalmasını talep ediyoruz. Ettik bakın. O zaman, bu mutlak değer içinde an-1 bölü 2 şu çıktığına göre, bunun epsilon'dan küçük kalmasını talep ettik.
+
+357
+01:20:15,220 --> 01:20:27,940
+Sonra işler dışarı çarpımı yaptım. Her şey pozitif değil mi? N büyük eşit 1 olduğu için, epsilon da pozitif zaten burada söylediğimiz için. İşler dışarı çarpımı yaptım. Şimdi buradan arkadaşlar küçük n'yi çekiyorum. Tamam mı? Şuradan.
+
+358
+01:20:55,891 --> 01:21:07,711
+Evet [öğrenci] Bey maalesef. İnşallah bir daha korkmaz. Şuradan küçük neyi çektiğimiz zaman arkadaşlar, ne büyük, şu eşitsizlikten yazdım, ne büyük bir eksi altı epsilo büyük dört epsilo bulur.
+
+359
+01:21:08,471 --> 01:21:14,152
+Şurada anlaşılmayan bir şey var mı maddekide? Aklınıza takılan sormak istediğiniz bir şey maddekide.
+
+360
+01:21:18,836 --> 01:21:38,956
+Yok sanırım. Madde 3'te de arkadaşlar, madde 3'te şu küçük ne'ye gördüğümüz yere, madde 3'te küçük ne'ye gördüğümüz yere, büyük ne alarak tağlama yapıyoruz. Tekrar söylüyorum, madde 3'e geçerken, çözdüğümüz şu eşitsizlikte, küçük ne'ye gördüğümüz yere, büyük ne'ye yazarak tağlama yapıyoruz. Bakın.
+
+361
+01:21:42,036 --> 01:21:48,976
+küçük neye gördüğüm yere büyük neye yazdım. Sağlamasını yapıyoruz. Tek tek yazdım bak.
+
+362
+01:21:49,363 --> 01:21:59,743
+1 bölü 2, şu 1 bölü 2 duruyor. 2 çarpı, büyük neye daha büyük, büyük neye bundan büyük olduğu için, 1x paydaya, 1x 6 epsilon beri, 4 epsilon artı 3 yazdım.
+
+363
+01:22:00,163 --> 01:22:14,323
+Gerekli sadeleştirme işlemi yaptığınız zaman, bakın, epsilon çıktığını görüyorsunuz. Yani bu ispatı oluyor. Şu, limit neye soluna giderek, neye artı 1 bölü, 2 neye artı 3'ün, 1 bölü 2 eşit olmasının, limitinin 1 bölü 2 olmasının ispatı oluyor.
+
+364
+01:22:17,363 --> 01:22:25,683
+Mühendisliği öğrencilerine lazım değil, mühendisliği öğrencilerinin ihtiyacı yok. En azından matematik ile siz böyle sorularla karşılaşmasın.
+
+365
+01:22:26,843 --> 01:22:33,523
+Devam ediyorum arkadaşlar. Bir sonraki örnekte aynı, onu çözmüyorum. Şimdi, demin söylemiştim mi arkadaşlar? Şuradan.
+
+366
+01:22:34,292 --> 01:22:51,592
+Eğer limit n sonsuza giderken belli bir r sayıya ulaşıyorsanız dizi yakılsaktır, eğer belli bir r sayıya ulaşamıyorsanız, yani limit artı sonsuz çıkıyorsa, eksi sonsuz çıkıyorsa veya hiçbir şey olduğunu söyleyemiyorsanız o zaman dizi ıraksaktır demiştim.
+
+367
+01:22:51,592 --> 01:23:00,471
+Onun örneğini şurada somut bir şekilde göstereyim size. Bir dizinin limiti varsa tek bir dedikten sonra teorem bu. Matematik bizden de biliyorsunuz.
+
+368
+01:23:02,292 --> 01:23:13,532
+varsa tektir. Değil mi? Matematik biriden biliyorsunuz ki, eğer bir fonksiyonun limiti varsa tektir. Dizilerde de aynısı. Eğer bir dizinin limiti varsa tektir. Varsa tektir.
+
+369
+01:23:13,743 --> 01:23:21,144
+Ya yoktur ya da varsa bir tane olmazdır. Şimdi bakın, ekranda görüyorsunuz, AN dizisi, eksi bir üzeri M diye verilmiş.
+
+370
+01:23:21,363 --> 01:23:31,083
+Değil mi? AN dizisi, eksi bir üzeri M diye verilmiş. Mesela N'yi, çift doğal sayılar aldığınız zaman artı bir çıkıyor AN, N'yi tek doğal sayılar olarak alırsanız, eksi bir çıkıyor.
+
+371
+01:23:31,503 --> 01:23:38,403
+Bir daha tekrar ediyorum, N'yi, çift doğal sayı diye düşünürseniz, 2, 4, 6, 8 diye düşünürseniz, genel terim artı bir oluyor.
+
+372
+01:23:41,743 --> 01:24:08,623
+Eksi 1 oluyor. O zaman nasıl karar vereceğiz? Limit artı 1 midir? Eksi 1 midir? Karar veremediğimize göre limit yoktur. İşte bu teorende garanti edilmiş oluyor. Görüyor musunuz? Bak şu teorende garanti edilmiş oluyor. Limit varsa tektirin, garanti, limit varsa tektir dediğine göre teorem bir yerde artı 1, bazı yerlerde artı 1, bazı yerlerde eksi 1 olması bu şekilde verilmiş anedisinin limitinin olmadığı anlamına geliyor. Burada bir daha özetlemek gerekirse.
+
+373
+01:24:39,028 --> 01:24:57,507
+Şimdi arkadaşlar, demin söylemiştim. Şurada kırmızı ilişki, şerlik demiştim. Şurada notla bakın. Eğer bir dizinin limiti L ise, indisi değiştirdiğiniz zaman bakın, genel limit L'dir demiştim. Bu da yeni bir kavramın ortaya çıkmasına sebep olacak.
+
+374
+01:24:59,648 --> 01:25:06,007
+Bu da bu durumda yeni bir kavramın ortaya çıkmasına sebep olacak demiştim. Aşağıda oluyor sebep bakın. Alt diziler.
+
+375
+01:25:06,644 --> 01:25:15,644
+Gülüyor musunuz? Bir dizinin artısı. Çok basit bir şey, çok anlaşılabilir bir şey. Tanım gene teorik ama pratikleştireceğim. Elinizde bir amelisi varsa...
+
+376
+01:25:16,500 --> 01:25:40,379
+İndizlerle oynayarak, şöyle bir dizi elde edebilirsiniz. Şu şekilde bir dizi elde edebilirsiniz. Eldettiğiniz bu diziyi arkadaşlar, elinizdeki dizinin alt dizisi deniyor. Şimdi elinizdeki dizinin alt dizisi deniyor. Şüphesiz dizi bir sayıya yakınsıyorsa alt dizisi de o sayıya yakınsıyor. Bakın şurada yazıyor. Tamam mı? Şurada yazıyor. Eğer bunu somutlaştırmak isterseniz şuradaki örnekle somutlaştırabiliriz.
+
+377
+01:25:42,068 --> 01:25:50,948
+Mesela şunun bir at dizisini test edebilir misiniz? Örnek 2'deki dizinin bir at dizisini söyleyebilir misiniz? Hemen hızlıca.
+
+378
+01:25:56,692 --> 01:26:23,992
+Ben söyleyeyim. Dizinin bazı serimlerini atıyorsunuz. Duruma sadık kalarak. Özür dilerim. Mesela 1, 1 bölü kök 2, 1 bölü 4 diye alt serimleri alırsanız bu bir alt dizi. Mesela kök 3 bölü 4, kök 5 bölü 16 vesaire diye alırsanız bu da bir alt dizi. Yani şu dizinin içinden bazı serimleri atarak diğerlerini aldığınız zaman bu bir alt dizi oluyor. Ama limiti etkileyen hiçbir şey yok.
+
+379
+01:26:24,256 --> 01:26:40,736
+Tamam mı? Alt diziler. Olay bu. Şöyle genel terimler verilmiş bir diziden bazı terimleri atarak elde ettiğiniz yeni diziye orijinal dizinin alt dizisi demiyor. Durum değişmiyor tabii. Yapılar hiçbir zaman bozulmuyor. Limiti gene aynı. Taz da oluyor.
+
+380
+01:26:44,692 --> 01:27:07,211
+Şimdi sınır diziler arkadaşlar, bundan zaman zaman karşılaşacağız. Üç madde halinde sınır diziyi tanımlıyorum, sonra birleştireceğim. Şimdi birinci maddemiz, eğer ben genel olarak neyi birden başlatıyorum görüyorsunuz, neyi bir doğa sayıya birden başlatıyorum, sıfırdan da başlayabilir bazen. Onu baştan söyledim, bazen sıfırdan da başlayabilir. Duruma bağlı o.
+
+381
+01:27:08,051 --> 01:27:30,371
+Eğer her neye büyük eşit bir için dizinin genel terimi belli bir sayıdan daima büyük oluyor veya ona eşit oluyorsa, eğer her neye büyük eşit bir için dizinin genel terimi belli bir sayıdan veya sayıdan büyük oluyorsa veya ona eşit oluyorsa, bu takdirde dizinin o sayı ile alttan sınırlı olduğu söyleniyor.
+
+382
+01:27:30,739 --> 01:27:44,739
+Eğer genel terimin altında kalıyorsa, o sayı ile dizinin alttan sınırlı olduğu söyleniyor. Paralel ve ters olarak, eğer her neye büyü geçit bir için, ane genel terimi belli bir sayıdan...
+
+383
+01:27:45,231 --> 01:27:52,951
+Daima küçük kalıyorsa ya da ona eşit oluyorsa bu durumda da dizinin arkadaşlar o sayı ile üstten sınırlı olduğu söyleniyor.
+
+384
+01:27:53,351 --> 01:28:01,291
+Özetle, genel terimden daha küçük olan bir sayı bulursanız dizi o sayı ile alttan sınırlı, genel terimden daha büyük olan eşit de olabilir.
+
+385
+01:28:01,652 --> 01:28:06,752
+Bir sayı bulursanız dizinin o sayı ile üstten sınırlı olduğunu söylüyoruz.
+
+386
+01:28:06,752 --> 01:28:13,152
+Eğer her ikisi birden mevcut ise, yani genel terimden küçük olan ve genel terimden büyük olan
+
+387
+01:28:13,231 --> 01:28:23,311
+İki sayı mevcut ise, bunu bulmak her zaman kolay olmayabilir ama, belli sayıdan da hep büyük, bazen de küçük kalıyor ise, o zaman dizinin sınırlı olduğu söylenir.
+
+388
+01:28:23,612 --> 01:28:32,811
+Tekrar ediyorum, eğer o sayı altta kalıyorsa dizi, alttan sınırlı, o sayı üstte kalıyorsa dizi, o sayı neyse artık, üstte kalıyorsa dizi, üstten sınırlı.
+
+389
+01:28:32,811 --> 01:28:40,652
+Her ikisi birden varsa, dizi sınırlı. Yani hem alttan sınırlı, hem de üstten sınırlı ise diziye sınırlı diyoruz.
+
+390
+01:28:41,231 --> 01:28:46,672
+Bu ikisi de yoksa, yani küçük M ve büyük M sayılarının her ikisi de yoksa, dizi, sınırsız oluyor.
+
+391
+01:28:47,112 --> 01:28:51,011
+Şimdi sınırlılığın bir önemi var. Biraz sonra bir teorem olarak gelecek aşağıda.
+
+392
+01:28:51,871 --> 01:28:52,471
+Bakın şurada.
+
+393
+01:28:53,108 --> 01:29:15,048
+1.7 teorem diye yazmışım, biraz sonra gelecek. Sınırlılığın bir önemi var. Sınırlısı olsa zaten yapacağımız çok fazla bir şey olmayacak. Tamam mı? Eğer altta ve üstte sayı genel terimden büyük ya da küçük sayı bulamıyorsanız, o zaman dizi sınırlıdır. Sadece bir tanesi varsa, ya alttan sınırlıdır ya da üstten sınırlıdır. Şimdi arkadaşlar, teorik bilgiler içinde sınırlılığı şu şekilde ifade ediyor.
+
+394
+01:29:15,288 --> 01:29:20,407
+Her ne için mutlak a ne küçük eşit k olacak şekilde bir pozitif k sayısı arıyor.
+
+395
+01:29:20,851 --> 01:29:47,731
+Ama bu daha çok teorik bilgiler, pratiğe yansıma. Yani örnek çözerken, mesela mutlak ane küçük eşit k yazdığınız zaman, buradan doğal olarak eksi k küçük eşit, ane küçük eşit k yazarsınız. Oradan şöyle bir izlenim çıkar. Ha, elimizde bir k sayısı var, onun negatifiyle dizi alttan sınırlı, pozitifiyle üstten sınırlı gibi bir yorum ortaya çıkar. Bu yorum doğru değil.
+
+396
+01:29:48,851 --> 01:29:51,931
+Bu bilgiyi daha çok teorik olarak kullanıyoruz.
+
+397
+01:29:52,371 --> 01:29:54,811
+Tamam mı? Şu kesinlikle tek k sayısı yok.
+
+398
+01:29:55,112 --> 01:29:57,612
+Küçük m ve büyük m gibi 2 tane sayı bulacağız.
+
+399
+01:29:57,912 --> 01:30:00,952
+Tamam mı? Küçük m ve büyük m gibi 2 tane sayı bulacağız.
+
+400
+01:30:01,311 --> 01:30:05,811
+Simestrik de olabilir. Yani aynı sayının eksilmesi atırı sulu olabilir ama genelde böyle olmayacak.
+
+401
+01:30:06,092 --> 01:30:09,971
+Genelde olmayan bir şeyi kesinlikle böyledir demek doğru değildir zaten.
+
+402
+01:30:10,431 --> 01:30:12,592
+Birinci örneğe bakın arkadaşlar. Çok güzel bir örnek.
+
+403
+01:30:12,592 --> 01:30:16,311
+Yani örnek 6. Hakikaten çok güzel bir örnek. 2 tane var da.
+
+404
+01:30:17,171 --> 01:30:24,631
+Şimdi, dizinin genel terimi kök, ne kadar artı bir ekşimeye diye verilmiş, dizinin sınırlığını araştırınız diyor.
+
+405
+01:30:24,871 --> 01:30:33,631
+Cevabı, yani sorusu şöyle açılabilir, alt sınırı var mı, alttan sınırlı mı, üstten sınırlı mı, ya da her kişi birden var mı diye açılabilir.
+
+406
+01:30:34,071 --> 01:30:40,131
+Sınırlığını araştırdım. Araştıralım. Şimdi arkadaşlar, size bir cümle kuracağım. Tekrar edeceğim o cümleyi.
+
+407
+01:30:40,131 --> 01:30:44,051
+Bunu unutmayacaksınız tamam mı? Benim öğrencim,
+
+408
+01:30:44,115 --> 01:31:08,435
+Karaköp'ün geçtiği yerde eşlenik çarpımı yapmak gerekebileceğini unutmayacak. Bir daha tekrar ediyorum. Benim öğrencim artık Karaköp'ün geçtiği yerde eşlenik çarpımı yapmak gerekebileceğini unutmayacak. Duymayan ve anlamayan var mı? Onaylayın lütfen. Duymayan ve anlamayan var mı?
+
+409
+01:31:09,332 --> 01:31:11,252
+Yok hocam. Anlaşıldı hocam.
+
+410
+01:31:11,332 --> 01:31:24,811
+Tamam. Ben üçüncü kez tekrar ediyorum. Kare kökün geçtiği yerde eşeğiniz çarpım yapmamız gerekebileceğini unutmayacağım. Konu ne olursa olsun. Tamam mı? Konu ne olursa olsun. İlla da şey gerekmiyor.
+
+411
+01:31:25,152 --> 01:31:35,051
+İlla da limit gerekmiyor. Konu ne olursa olsun. Süreklilikte vesaire de lazım olabilir. Karakük'ün geçtiği yerde eşlenir çarpımı yapmak gerekebileceğini unutmayacağız.
+
+412
+01:31:35,412 --> 01:31:49,772
+Şimdi o zaman Karakük'te bir ifade verilmiş. Bakın, eşlenilikten kastımız arkadaşlar, Karakük'ün önündeki ya da, yani solundaki ya da sağındaki, burada sağda kalmış, solundaki ya da sağındaki işareti, artı ya da eksiği değiştirmez.
+
+413
+01:31:50,260 --> 01:32:13,220
+Tamam mı? Karı kökün eşleniminden kastımız bu. Eğer ekşiyse solunda ya da sağında fark etmez, ekşiyse artı, artı ise eksi yapmak. Bakın burada eksi oldu için ben artı yaptım. Eşlenimle çarptım, görüyor musunuz bir çıktı. Ne kadar önemli bir şey değil mi? Çok basit bir şey. Karı kökün geçtiği yerde eşlenim çarptığını yapmayı unutmamak çok basit bir ifade aslında ama çok önemli. Bakın eşlenimle çarptığım zaman bir çıktı.
+
+414
+01:32:13,460 --> 01:32:39,119
+Şimdi, dolayısıyla arkadaşlar, orijinal genel terim bu. Kötüş'ün de ne kare artı bir eksi ne? Orijinal genel terim bu. Karaköy eşleniği bu. Çaktım bir çıktı. Şimdi, eşleniğinden çıkan şu ifadeyi bir işleyeyim, işleyeyim. Anlayacaksınız dikkat dediğini. Şunu bir işleyeyim. Sonra oradan bir yorum yapacağım. Aldım bunu hele. Bakın aldım. Bir bölü diye aldım. Niye bir bölü diye aldığımı biliyor musunuz?
+
+415
+01:32:39,539 --> 01:32:42,139
+Şu ifadeyi, niye bir bölü diye aldın?
+
+416
+01:32:45,039 --> 01:32:48,920
+Karaköç'ünün ne kare artı bir artı neyi niye bir bölü diye yazdın mı? Fark ettiniz mi?
+
+417
+01:32:49,680 --> 01:32:50,960
+Yok hocam, fark etmedik.
+
+418
+01:32:52,020 --> 01:32:59,659
+Tamam, söylüyorum. Söylüyorum. Bakın, şuradan orijinal genel terimimiz şu ya, karaköç'ünün ne kare artı bir eksi neydi mi?
+
+419
+01:32:59,960 --> 01:33:03,880
+Orijinal genel terim. Bunu yalnız bırakırsanız bir bölü diye bu yazılmaz mı?
+
+420
+01:33:04,420 --> 01:33:07,039
+Bir bölü kök için ne kare artı bir artı neydi?
+
+421
+01:33:08,180 --> 01:33:32,659
+Anladık mı şimdi? Evet hocam, anladım. Karşıya attınız. Anladım hocam. Şunu yalnız bırakıyorum. Bizi'nin genel terimini yalnız bırakıyorum, tamam mı? Dolayısıyla bunu bir bölü diye yazdım. Bakın böyle. Buradan devam ediyoruz. Şimdi arkadaşlar, espri şu. Bu da devamlı aklınızda bulursun. Paydayı, bakın bir kesirde paydadan pozitif bir sayıyı atarsanız kesirin değeri büyür.
+
+422
+01:33:32,960 --> 01:33:56,219
+Bir daha tekrar ediyorum. Bir kesir değer, pozitif bir sayıyı atarsanız kesin değeri büyür. Ama dikkat edin. Pozitif bir sayıyı atarsanız, negatif olursa tehlikeli durumlar ortaya çıkabilir. Sakın atma işlemine girmeyin. Tamam mı? Pozitif bir sayıyı atarsanız kesin değeri büyür. Bu atacağınız pozitif sayı da amacınıza uygun olan sayıdır.
+
+423
+01:33:56,564 --> 01:34:01,363
+Bunu da bir daha tekrar ediyorum. Paydadan atacağınız pozitif sayı amacınıza uygun olsun.
+
+424
+01:34:01,703 --> 01:34:09,144
+Şimdi şu yazımı serilerde çok kullanacağız. Onun adına mukayese ya da karşılaştırma testi.
+
+425
+01:34:09,144 --> 01:34:15,943
+O kadar önemli ki arkadaşlar serilerde, neredeyse istisnalar dışında bütün orayı çözer.
+
+426
+01:34:16,664 --> 01:34:22,404
+Mukayese testi, istisnalar dışında ya da %90-95 oranında bütün orayı çözer.
+
+427
+01:34:22,771 --> 01:34:46,771
+O kadar önemli ki, mukayese kriteri. Bu da o zaten. Şimdi, paydadaki pozitif sayıyı amacıma uygun şekilde atayım. Neyi de atabilirim ama işimi görmüyor. Şu biri atıyorum paydadan. Paydadaki şu biri atıyorum. Pozitif sayı ya bu bir. Atıyorum. Orası da kesin değeri büyüyor. Bu oluyor. Amacıma uygun olduğunu fark ettiniz mi arkadaşlar? Biri atmak amacıma uygun mu?
+
+428
+01:34:48,819 --> 01:34:49,840
+Hocam neye göre?
+
+429
+01:34:51,840 --> 01:35:10,879
+Peki onu diyorum, amacıma uygun şekilde diyorum. Bakın, şimdi karaket içinde nekara artı bir yok mu burada? Karaket içinde nekara artı bir. Tamam mıydı burada? Karaket içinde nekara artı bir var. Tamam. Şimdi arkadaşlar, bu biri atarken karaket içinde nekara kalmaz mı burada? Evet.
+
+430
+01:35:12,319 --> 01:35:14,819
+Tamam. Yanında da bir artı ne yok mu?
+
+431
+01:35:15,347 --> 01:35:39,647
+Artı ne yok mu yanında? Ne artı ne? Toplayabileyim diye, amacıma uysun diye. Tamam mı? Genelde de hepsi öyledir. Pozitif sayı, şu hareketi kurtarmak için bu pozitif sayı atarız genelde de. Birinin yerinde 2 olabilir, 3 olabilir, 5 olabilir, bunu atarız. Yani bir sonraki adımda bunun toplanabilir, işlem yapılabilir hale gelmesini hale ediyor.
+
+432
+01:35:41,844 --> 01:35:44,003
+Kalep etmeden de devam edebiliriz ama işlemlerimiz...
+
+433
+01:35:44,003 --> 01:35:48,884
+Hocam, bu genelleme mi? Genelleme mi öyle içindeki pozitif sayı atıyoruz?
+
+434
+01:35:49,463 --> 01:35:55,023
+Evet, evet. Genellikle kare kök içindeki şu pozitif sayıyı atarak amacımıza uygun hale getiriyoruz.
+
+435
+01:35:55,384 --> 01:36:07,663
+Ama bunu yapmadan da devam edebiliriz. Yani şu pozitif sayıyı atmadan devam edersek, o zaman şuradan takdir edersiniz ki, şunu bir sileyim, takdir edersiniz ki, şuradan neyi çözmek çok zor.
+
+436
+01:36:08,819 --> 01:36:10,139
+Çünkü neyi çözeceğiz?
+
+437
+01:36:11,179 --> 01:36:12,139
+Neyi çözeceğiz?
+
+438
+01:36:12,639 --> 01:36:13,359
+Çözmek zor.
+
+439
+01:36:13,619 --> 01:36:17,219
+Ya da işlemini yapmak, oradan bir sonuna ulaşmak kolay değil.
+
+440
+01:36:17,319 --> 01:36:17,679
+Öyle değil.
+
+441
+01:36:17,939 --> 01:36:18,339
+Kolay değil.
+
+442
+01:36:18,559 --> 01:36:21,639
+Onun için genelde şu, karakök olmayabilir.
+
+443
+01:36:21,759 --> 01:36:24,139
+Tabii burada üzeri 3 belirik olabilir, 5 belirik olabilir vs.
+
+444
+01:36:24,559 --> 01:36:29,339
+Buradaki pozitif sayıyı amacımıza uygun şekilde, şu tabii, şu artı neyi de dikkate alalım.
+
+445
+01:36:29,679 --> 01:36:30,719
+Artı neyi de dikkate alıyoruz.
+
+446
+01:36:31,039 --> 01:36:39,039
+Bakın, artı 1'e attığım zaman, burası kök ne kare oluyor? Yani, n oluyor? Toplayabiliyorum. İşim kolay oluyor, anladınız mı? İşim kolay olsun diyor.
+
+447
+01:36:40,099 --> 01:36:54,179
+Bütün amacım bu. Aslında, varmak istediğim nokta, n'den kurtulup, özetle, varmak istediğim nokta, şurada, n'den kurtulup, bir r sayıya ulaşmak. Bu kısmı tekrar etmeni ister misiniz?
+
+448
+01:36:55,828 --> 01:37:05,008
+Ben ne diyeyim? Varmak istediğim nokta, şuradan varmak istediğim nokta, bir şekilde N'den kurtulup, bir sayıya ulaşabilme.
+
+449
+01:37:05,408 --> 01:37:14,708
+Tamam mı? Bir sayıya ulaşabilme. Şimdi, önce artı 1 attım. Ne kadar artı 1 oldu? Onu topladım. 1 bölü 2 N oldu.
+
+450
+01:37:17,300 --> 01:37:33,040
+Evet, sonra da arkadaşlar bakın, 1 bölük 2 neyden, neyi de ortadan kaldırdığım zaman 1 bölük 2 çıkar. Neyi nasıl ortadan kaldırdığını merak ediyor musunuz? Yalnız, şimdi bir arkadaşımız, şimdi arkadaşımız ikine hitap edeyim.
+
+451
+01:37:33,391 --> 01:37:45,111
+[öğrenci] Bey mesela en son neyi imattık derken öyle neyi kaldırmıyorsunuz? Yani bir yer neyi bilmiyorsunuz? Onun bir sebebi var ya da bir atış şekli var.
+
+452
+01:37:52,083 --> 01:37:56,364
+Nasıl yaptığımızı merak etmiyor musunuz? Önemli bir ilgi.
+
+453
+01:37:57,104 --> 01:37:58,184
+Merak ediyoruz hocam.
+
+454
+01:37:59,284 --> 01:38:04,904
+Neyi bir verdik demeyelim de, şöyle düşünelim. Bakın.
+
+455
+01:38:05,524 --> 01:38:10,224
+Ne büyük eşit bir. Tamam, şöyle düşünelim. Ne büyük eşit bir.
+
+456
+01:38:10,663 --> 01:38:15,564
+Şurada bir bölü ne var değil mi? Şuradan neyi bir bölü ne yapın? Şuradan.
+
+457
+01:38:16,564 --> 01:38:18,344
+Bir bölü ne yapın? Şuradan.
+
+458
+01:38:19,315 --> 01:38:46,536
+Söyleyeyim. Bir kişi tekrar etsin. Bir kişi söylesin. Neyi bir bölü ne yapın burada. Şöyle yapın. Ne oldu? Eğer neye bir geçit birse bir bölü neye ne oldu? Hadi ya. Küssünüz mü? Bir mi? Küçük eşit. Evet teşekkür ederim. Küçük eşit bir.
+
+459
+01:38:48,404 --> 01:39:06,644
+Tamam. [öğrenci] Bey'le teşekkür ediyorum. Kışık eşit bir. E şimdi o zaman bunu şöyle yazamaz mıyız? Bakın, işte burası. Yani öyle rastgele almıyoruz arkadaşlar. Matematikteki her şey kesinlik arz eder. Doğaltı, müsvet bilimleri her şey kesinlik arz eder. Kesindir yani.
+
+460
+01:39:10,655 --> 01:39:37,423
+Demin dersin başında söyledim ya, bakın sıfır müsvet bilimler için tehlikeli bir sayıdır. Sıfıra bölme tanımlanmamıştır. Sıfırdan kaçınıyoruz. Dolayısıyla bizim doğal sayılarımız birden başlıyor. Ben de yazarken hep birden başlatacağız. Hiçbir sıkıntı yaşamayacağız demiştim. Görüyorsunuz değil mi? Bakın patır patır yazıyoruz. Eğer sıfırdan başlasaydı bunu yazmak sıkıntı yaratabilirdi. Ona göre neye büyük sıfır olsun ya da neye farklı sıfır olsun demek zorunda kalırdı. Burada bir şey dememiz gerek yok. Dolayısıyla...
+
+461
+01:39:37,423 --> 01:39:43,243
+Bir bölge, iki bulduk. Şimdi şu arkadaşlarımı sileyim. Şu yazdıklarımı.
+
+462
+01:39:44,183 --> 01:39:50,003
+N büyük eşitleri biri daima böyle mi kullanacağız? Yani genelleme mi? Bu soruya.
+
+463
+01:39:50,423 --> 01:39:54,323
+Aksis vermedikçe N büyük eşit birdir. Tamam mı?
+
+464
+01:39:54,723 --> 01:39:54,963
+Tamam.
+
+465
+01:39:55,203 --> 01:40:02,243
+Buraya nereye yazdın? En başa yazdın değil mi? En başa bakın.
+
+466
+01:40:02,243 --> 01:40:03,143
+Bakın.
+
+467
+01:40:03,731 --> 01:40:29,152
+Ne? Doğal sayılar birden başlıyor dedim, tamam mı? Doğal sayılar birden başlıyor. Bazen sıfır da alabileceğiz ama onu serilerde daha çok yapacağız dedim. Birden başlıyor. Bizim neyimiz, küçük neyimiz genel olarak birdir. Ha buraya yazmışım bakın. Neye birden başlıyorsa, anede tembelliyle gösteriyor. Bak hiçbir şey demiyormuş. Tamam mı? Burada yazmışım. Neye birden başlıyor. Bazen ikiden başlayabilir, üçten başlayabilir. Ha onu merak ediyorsanız söyleyeyim, ne zaman ikiden başlar? Merak ediyor musunuz?
+
+468
+01:40:30,579 --> 01:40:31,420
+Evet hocam.
+
+469
+01:40:31,699 --> 01:40:33,699
+Ne zaman ikiden başlar merak ediyorsanız söyleyeyim.
+
+470
+01:40:34,340 --> 01:40:37,659
+Evet hocam, işimize yarayacaksa öğrensek iyi olur hocam.
+
+471
+01:40:37,760 --> 01:40:39,440
+Buyurun, buyurun.
+
+472
+01:40:40,579 --> 01:40:41,300
+Bir bölü.
+
+473
+01:40:43,840 --> 01:40:44,900
+Ne eksi iki.
+
+474
+01:40:45,820 --> 01:40:46,760
+Bunu kim yazarsa,
+
+475
+01:40:47,539 --> 01:40:49,980
+bunu kim yazarsa, şuraya ne yazmak zorunda?
+
+476
+01:40:50,340 --> 01:40:50,640
+Şuraya.
+
+477
+01:40:52,320 --> 01:40:53,260
+Buyurun, söyleyin.
+
+478
+01:40:54,260 --> 01:40:55,640
+Kim yazarsa bunu,
+
+479
+01:40:56,260 --> 01:40:57,539
+neye bir geçir? Buyurun.
+
+480
+01:40:57,872 --> 01:41:05,231
+3 yazmak zorunda. Bakın.
+
+481
+01:41:05,792 --> 01:41:07,231
+Doğru doğru tabi tabi.
+
+482
+01:41:08,572 --> 01:41:14,311
+Anladık mı arkadaşlar? Neden neyenin eğer delirtmek gerekmiyorsa birden başlıyor.
+
+483
+01:41:14,707 --> 01:41:41,827
+Ama belirsemiz gerekir. Bakın, birbirleri neye ekşi olduğu zaman neye mecburen içten başlatacaksınız. Yani, dizilerin bütün terimlerinin tanımlı olması lazım. Kayda geçtiğim diye bir daha tekrar ediyorum. Dizinin bütün terimlerinin tanımlı olması lazım. Neye vereceğiniz her doğal sayının bunun içini tanımlı yapması lazım. Siz şimdi şöyle yazamazsınız Betilem. Şunu şuradan kaldırıp, şunu şuradan kaldırıp böyle yazamazsınız. Bu yanlış. Şu yazım yanlış.
+
+484
+01:41:42,515 --> 01:41:59,555
+O zaman kişi, değil mi? Kişi, neye bir koyar, neye bir koyunca ekse bir bulur. Onun bir takımcası yok. Ama neye iki verince ne olacak burada? Şurada neye iki verince ne olacak? Başı belaya gidecek. Sıfıra bölme tanımlanmamıştır. Onun için arkadaşlar, şuraya neye bir geçit bir yazmak zorundadır.
+
+485
+01:41:59,555 --> 01:42:10,216
+Değil mi? Şuraya neye bir geçit bir, özür dilerim, neye bir geçit bir yazmak zorundadır. Eğer bir şey yazılmamışsa, genel olarak neye birden başlamıştır.
+
+486
+01:42:10,899 --> 01:42:19,879
+Yani, aksi söylenmedikçe, neye birden başlar. Tamam, burada anlattık. Geldik şimdi, arkadaşlarınızla onayları anladık. Şuradan edik.
+
+487
+01:42:22,219 --> 01:42:32,239
+Dolayısıyla arkadaşlar, bakın, şuradan geri geldim. Şuradan geldim, bakın. Her neye büyük eşit 1 için, kök içinde ne kare artı 1 eksi ne, küçük eşit 1 bölük.
+
+488
+01:42:32,724 --> 01:42:56,184
+Bu her zaman eşit çıkmayabilir arkadaşlar. Şiraf her zaman eşit çıkmayabilir. Bazen sadece küçük gelebilir. Sadece küçük. Eşit çıkmayabilir. Neden eşit? Eşit çıkmadığı durumlar ne demek? Onu söyleyeceğim tamam mı? Eşit niye çıkmaz bazen? Onu söyleyeceğim. Küçük eşit bir bölü küçüktü. Dolayısıyla arkadaşlar verilendirici bir bölü iki ile üstten sınırlıdır. Bir bölü iki ile üstten sınırlıdır.
+
+489
+01:42:56,351 --> 01:43:11,831
+Diğer taraftan, neye birleşiklik olduğu için, şurada genel terimde yani, neye yerine hangi sayıyı koyarsanız koyun, pozitistir. Ama gerçek sayıyı bilmiyorsunuz. Değil mi? Mesela neye bir verseniz kaç çıkıyor burası arkadaşlar? Neye bir verseniz?
+
+490
+01:43:13,332 --> 01:43:39,431
+Kök 2'nin yaklaşık 1.42 olduğunu düşünürseniz, n'ye 1 verince 0.42 gibi bir şey değil mi? Yani kök 2'ye eksi 1, n'ye 1 verirseniz. n'ye 2 verirseniz mesela, kök 5 eksi 2, vesaire. n'ye n'ye 1 geçitli olduğu sürece hangi değeri verirseniz verin, sayı kesin bilmemekle birlikte 0'dan büyük olduğunu, bir başka ifadeyle genel terimin pozitif olduğunu görürsünüz.
+
+491
+01:43:39,699 --> 01:44:03,979
+Anlıyorsunuz, biliyorsunuz. Bunun çıkışının da bir anlamı var. Nasıl çıktığını biliyoruz. Şunun nasıl çıktığını biliyoruz. Birazdan göstereceğim. Birazdan göstereceğim. Tamam mı? Şu sıfırın nasıl geldiğini de birazdan göstereceğim. O zaman arkadaşlar, verilen şu dizi, şu dizi, sıfır ile alttan, bir bölü iki ile üstten tırnınızıdır. Eşitlik bazen gelir, bazen gelmez.
+
+492
+01:44:23,220 --> 01:44:27,900
+Bir örnek daha ister misiniz arkadaşlar? Şu örneği de yapayım mı? Örnek edeyim.
+
+493
+01:44:28,600 --> 01:44:30,520
+Olur hocam. Yapalım hocam.
+
+494
+01:44:31,300 --> 01:44:31,560
+Tamam.
+
+495
+01:44:33,300 --> 01:44:37,980
+Tamam, yapıyorum. Gene tane tane anlatıyorum. Aklınıza takılan bir şey olursa anında sorasınız.
+
+496
+01:44:38,619 --> 01:44:45,000
+Düzisinin sınırlığını araştırınız diyor. Şöyle verilmiş. Gene terimini okuyorum.
+
+497
+01:44:47,155 --> 01:45:15,155
+1 bölü n, eksi 1 bölü n artı 1. Bizim genel terimi 1 bölü n, eksi 1 bölü n artı 1. Gene tabii şu kıvrık parantezin, sağdaki kıvrık parantezin altına n eşittir bir şey yazmadığı için, herhangi bir sayı yazmadığı için n'ye birden başlıyor. Yazar yazmaz n'ye birden başlıyor. Burada zaten birden başlamasının bir sakıncası yok. Şimdi sınırını araştınız. Yani alt ve üst sınırları var mı yok mu ona bakınız diyor. Bakalım şimdi arkadaşlar. Bakın dikkatlice matematikteki her yeri...
+
+498
+01:45:15,155 --> 01:45:27,155
+öğrencinin anlayacağı tarzda, özür dilerim, matematikle yazılan her öğrencinin anlayacağı tarzda yazdım. Şimdi, n bir geçit 1 ise, değil mi? Bu ifadenin her iki tarafını pozitif olduğunu bildiğim n sayısıyla çarpayım.
+
+499
+01:45:28,175 --> 01:45:33,235
+n bir geçit 1, eşitsizliğinin her iki tarafını n ile çarpayım.
+
+500
+01:45:33,551 --> 01:45:41,692
+Ne olduğu zaman? Ne kare büyük eşit ne? Değil mi? Bakın, ne büyük eşit değilse, her iki tarafı ne ile çarptığım zaman, ne kare büyük eşit ne?
+
+501
+01:45:42,291 --> 01:45:46,391
+Dizinin genel terimine ulaşmaya çalışıyorum. Dizinin genel terimine ulaşmaya çalışıyorum.
+
+502
+01:45:46,791 --> 01:45:55,391
+Şimdi, ne kare büyük eşit ne'nin, büyük eşit ne'nin, her iki tarafına, yani hem sol tarafa hem de sağ tarafa, artı ne'yi ekleyeyim.
+
+503
+01:45:57,043 --> 01:46:07,659
+Ne kare artı ne? Büyük eşit ne artı ne olur. Yani ne kare artı ne? Büyük eşit 2 ne olur. Şimdi ne büyük eşit 1 olduğuna göre 2 ne de büyük eşit 2 ne olur.
+
+504
+01:46:26,420 --> 01:46:28,399
+Şuraya kadar olan kısma anladık mı arkadaşlar şurayı?
+
+505
+01:46:31,059 --> 01:46:36,719
+N1-geşit 1'den başladım. Dizinin genel terimine ulaşmak için amacıma uygun işlemler yapıyorum.
+
+506
+01:46:37,279 --> 01:46:47,579
+Bir daha tekrar ediyorum. N1-geşit 1'den başladım. Amacıma ulaşmak için, bir başka ifadeyle dizinin genel terimine ulaşmak için belli, şu eşitsizlik üzerinde belli işlemler yapıyorum.
+
+507
+01:46:48,000 --> 01:46:52,539
+Önce eşitsizlik, şu eşitsizlik, her iki tarafını ne kareyle çarptım? Özür dilerim, ne ile çarptım?
+
+508
+01:46:53,140 --> 01:47:06,600
+Sonra elde ettim şu ne kadar büyük eşit, ne eşitsizliğinin her iki tarafına ne ekledim. Sonra da 2 ne'nin büyük eşit 2 olduğu vurgusunda yaparak işler dışarı çarpımı yaptım.
+
+509
+01:47:07,580 --> 01:47:09,800
+Şuradan şuraya geçtikçe anlaşımdan bir şey var mı arkadaşlar?
+
+510
+01:47:10,360 --> 01:47:11,000
+Yok hocam.
+
+511
+01:47:11,040 --> 01:47:12,960
+Şuradan şuraya geçtik anlaşımdan bir şey.
+
+512
+01:47:13,524 --> 01:47:28,283
+Yani şu ikiyi 1 bölü 2 diye yazdığınız için. Yani şeyi ne kadar artı, neye büyük eşitliği, eşitsizliğinden, içerisinde şartımı yaptım sadece. İsterseniz daha açık yazabilirim ama şimdi de buradaki. Anlaşıldı mı? Anlaşıldı hocam.
+
+513
+01:47:28,283 --> 01:47:41,104
+Tamam. Dolayısıyla dizinin genel terimi görüyorsunuz 1 bölü 2'den küçükmüş. Yani değerlendirici 1 bölü 2 ile, özür dilerim, 1 bölü 2 ile üstten sınırmış.
+
+514
+01:47:41,684 --> 01:47:52,344
+Peki, alttan sınırlı mı diye bakarsak, alttan sınırlı mı diye bakarsak, şurada pay değişiklediğimiz zaman, bir bölü ne ekşi, bir bölü ne artı bir de pay değişiklediğimiz zaman, bir bölü ne kara artı ne görüyoruz diye.
+
+515
+01:47:52,783 --> 01:48:00,283
+Genel terim şu ya, B'ye hangi değeri verirseniz verin, pozitif çıktığı için, dizinin sıfır ile de alttan sınırlı olduğunu söyleyebiliriz.
+
+516
+01:48:00,543 --> 01:48:09,064
+Tekrar söylüyorum, bu sıfırı nasıl bulur? Bakın, doğrudan bulunanı yazıyorum. Bir önceki örnekte de görüyor musun? Bulunabilenini yazıyorum, diğerini söylüyorum.
+
+517
+01:48:09,587 --> 01:48:21,847
+Bunu işlemler yaparak görüyorum, şunu yazıyorum. Şunun nasıl geldiğini, bir önceki örnekte de burada da nasıl geldiğini, şu sıfırın nasıl geldiğini göreceksiniz. Şu limitlerin üzerine törenler var ya, onu verdikten sonra.
+
+518
+01:48:22,163 --> 01:48:48,784
+Şimdi arkadaşlar, şurada limit alma kuralları bunlar. Limit alma kuralları. Ben kelimelerle ifade edeyim, sonra matematik gibiyle bir daha söylerim. Eğer elinizde yakınsak 2 dizi varsa, daha çok da olabilecek. Tümelme göre söylüyorum. Bunlar limit alma kuralı. Eğer elinizde AN ve BN gibi yakınsak, yani kıvrık var. Yakınsak 2 dizi varsa, onların toplamında limit içeri dağılır.
+
+519
+01:48:49,779 --> 01:48:53,599
+Onların çarpımında limit içeri dağılır.
+
+520
+01:48:54,239 --> 01:49:02,779
+Eğer faydaya gelecek genel serimin limiti sıfırdan farklıysa, bölüm limit bölüme dağılır.
+
+521
+01:49:03,999 --> 01:49:16,599
+Eğer dizilerin genel serimleri arasında herhangi bir eşitsizlik söz konusu ise, o dizilerin limitleri arasında aynı eşitsizlik söz konusudur.
+
+522
+01:49:17,363 --> 01:49:35,323
+Yani, limit n sonsuza giderken an eşittir a, yani an dizinin limiti mevcut, limit n sonsuza giderken bn eşittir b, yani bn dizinin limiti mevcut iş ediyor, bakın, limit n sonsuza giderken an artı eksi bn eşittir a artı b'dir, ya da eksi b'dir.
+
+523
+01:49:35,483 --> 01:49:43,043
+Yani limit içeri dağılır. Şimdi çok önemli bir vurgu yapacağım, birazdan. Tamam mı? Limit içeri dağılır. Çarpımda da limit içeri dağılır.
+
+524
+01:49:43,667 --> 01:50:03,847
+Bölümde ise arkadaşlar, bakın, faydaya gelecek genel terimin limiti sıfırdan farklı olmak şartıyla, görüyor musunuz? Sıfırdan farklı olmak şartıyla limit bölmeye dağılır. Eşitsizlik varsa, genel terimler arasında eşitsizlik varsa, limit eşitsizliğe dağılır diyor. Limit eşitsizliğe dağılır diyor. Şimdi uyarı.
+
+525
+01:50:10,868 --> 01:50:27,028
+İki dizinin toplamının ya da farkının ya da çarpımının limitinin belli bir R sayı çıkması, belli bir R sayı çıkmış olması, o dizilerin limitlerinin mevcut olacağı anlamına gelmez.
+
+526
+01:50:27,488 --> 01:50:28,467
+Herkes duydu ve anladı mı?
+
+527
+01:50:30,828 --> 01:50:31,408
+Evet hocam.
+
+528
+01:50:31,708 --> 01:50:32,927
+Bir daha tekrar etkiler ister misiniz?
+
+529
+01:50:35,228 --> 01:50:35,988
+Çok güzel.
+
+530
+01:50:35,988 --> 01:50:36,547
+Çok güzel hocam olur.
+
+531
+01:50:37,619 --> 01:50:39,779
+Tamam, bir daha tekrar ediyorum.
+
+532
+01:50:39,779 --> 01:51:00,779
+Şimdi, iki ya da daha çok dizinin toplamının, farkının ya da çarpımının limitinin belli bir real sayı çıkmış olması, belli bir real sayı çıkmış olması, o limitlerin ya dizilerin,
+
+533
+01:51:01,332 --> 01:51:03,632
+Bir tane, iki tane, üç tane, beş tane.
+
+534
+01:51:04,152 --> 01:51:07,872
+Dizilerin limitlerinin mevcut olacağı anlamına gelmez.
+
+535
+01:51:09,932 --> 01:51:11,412
+Şimdi anladık mı, bir daha mı tekrar edeyim?
+
+536
+01:51:15,252 --> 01:51:16,172
+Anladık hocam.
+
+537
+01:51:17,752 --> 01:51:30,852
+Tamam. Bir örnek üzerinden görelim, daha da iyi anlaşılır. Bir örnek üzerinden görelim, daha iyi anlaşılır. Geri dönüş mümkün değildir demek istiyorum, tamam mı? Kısaca geri dönüş mümkün değildir. Tamam mı? Kısaca bu.
+
+538
+01:51:31,192 --> 01:51:39,892
+Şimdi geldik örneğe arkadaşlar hemen, bakın. A neydi ise ne diye veririz? B neydi size ne kare bölü, ne artı bir diye veririz.
+
+539
+01:51:40,500 --> 01:52:05,960
+Şimdi neye sonsuza giderken aynı dizinin limiti ne arkadaşlar? Neye sonsuza giderken aynı dizinin limiti sonsuz. Değil mi? Neye sonsuza giderken BN dizinin limiti ne? O da sonsuz. Bakın. Her iki dizinin de limiti sonsuz. Şimdi onların farkına bakmışım. Bakın. A ne eksi BN farkına bakıyorum. İşte A ne eksi BN farkı. Paydaşıçta işlemi yaptım. Neye sonsuza giderken ne bileyim? E artı bir çifti. Limit bir.
+
+540
+01:52:06,836 --> 01:52:30,096
+Bakın, her iki dizinin de limiti yokken, bakın her iki dizinin de limiti yokken, onların farkının limiti bir çıktı. Onların farkının limitinin bir çıkması, bu dizilerin, bir şeyler hakkında bir şey söylemez. Yani onlar yakınsaktır, limiti vardır falan diyemez. Bunu söylemeye çalıştık ama bu dördüncü tekrar oldu. Herkes anladı mı arkadaşlar bu olayı? Bu olayı herkes anladı mı?
+
+541
+01:52:30,096 --> 01:52:31,155
+Anlaşıldı.
+
+542
+01:52:32,148 --> 01:52:57,367
+Bakın, arkadaşlar, neden tembihine söylüyorum? Sizden de onay bekliyorum. Şimdi, sınav testi olacak ya, mesela diyecek ki sınavda, dedi ki, AN ve BNV'si için, limit neye sonsuza giderken, AN-BN eşitliği 1 olduğu bilin diyor. AN ve BNV'si hakkında ne söylenebilir? Buyurun, cevap benim, sordum şimdi. Ne söylenebilir? Hadi buyurun.
+
+543
+01:52:58,355 --> 01:53:02,796
+Soruyu tekrar edeyim mi? Herhangi bir bilgi vermez. Onlar hakkında bir şey diyemeyiz.
+
+544
+01:53:02,796 --> 01:53:10,336
+Evet, herhangi bir şey söyleyemeyiz değil mi? Diziler yakınsak olabilir, ıraksak olabilir, birisi yakınsak, birisi raksak olabilir diyeceksiniz değil mi?
+
+545
+01:53:10,596 --> 01:53:16,775
+Test oluyor ya sen alınınız, Matematik 1'de gördünüz. Böyle sorularla hazırlıklı olun yani. Tamam mı? Bu çok önemli bir ayrıntı.
+
+546
+01:53:17,115 --> 01:53:23,796
+Yani geri dönüş söz konusu değildir. Bir başka ifadeyle limiti içeri dağıtmak tehlikelidir diyor.
+
+547
+01:53:24,112 --> 01:53:42,091
+Bakın, bir başka ifadeyle limiti içeri dağıtmak çok tehlikelidir diyor. Dağıtırsanız ne çıkar burada? Şuradan limit içeri dağıtırsanız ne çıkar? Şuradan. Ne çıkar? Şuraya dağıtın limiti. Ne buldunuz? Ne söylersiniz ya da?
+
+548
+01:53:43,372 --> 01:53:45,152
+Sonsuz eksi sonsuz.
+
+549
+01:53:45,452 --> 01:53:48,231
+Sonsuz eksi sonsuzluğun ne olduğunu söyledik.
+
+550
+01:53:48,564 --> 01:53:51,484
+Belirsiz.
+
+551
+01:53:51,703 --> 01:53:52,923
+Yani şimdi ayıp değil mi?
+
+552
+01:53:53,224 --> 01:53:56,083
+Bu soru için belirsiz deyip geçmek ayıp değil mi biraz?
+
+553
+01:53:57,024 --> 01:53:57,583
+Olmuyor.
+
+554
+01:53:58,484 --> 01:54:01,224
+Demek ki benim öğrencim artık bir cümle daha kuruyorum şimdi.
+
+555
+01:54:01,564 --> 01:54:04,944
+Benim öğrencim mümkün olduğu kadar limiti dağıtmadan işlemler yapacak.
+
+556
+01:54:05,332 --> 01:54:23,292
+Tekrar söylüyorum, benim öğrencim artık limiti mümkün olduğu kadar içeri dağıtmadan işleyecek. Benim de hep öyle yaptığımı, yani matematik 2 dersi boyunca devamlı öyle yaptığımı görecek. Şu teorem her iki dizinin limiti de mevcutsa geçerli.
+
+557
+01:54:23,667 --> 01:54:44,167
+Biri mevcut, biri mevcut olmayabilir, ikisinden mevcut olmayabilir. Tehlike var yani. Dolayısıyla limit içeri dağıtmadan işlemler yapmak her zaman faydalı. Bunu öğrendik. Şimdi not, ben uyarı kelimesi biraz itici olduğu için not diye yazdım. Bu uyarı arkadaşlar. Uyarı ya da çok önemli bir bilgi.
+
+558
+01:54:44,659 --> 01:55:03,920
+Matematik 1'de tek değişiyor fonksiyonların limiti kavramından da biliyorsunuz. Ben kelimelerle bir ifade edeyim. Negatif olmayan bir dizinin limiti negatif değildir. Cümleyi kesinlik adet edici şekilde bir daha tekrar edeyim. Pozitif terimli bir dizinin limiti daima pozitiftir. Kim duymadı ya da anlamadı?
+
+559
+01:55:08,340 --> 01:55:09,480
+Herkes duydu ve anladı mı?
+
+560
+01:55:11,880 --> 01:55:12,840
+Evet hocam.
+
+561
+01:55:13,600 --> 01:55:18,640
+Tamam. Demek ki pozitif terimli, bilimizin limiti daima pozitif.
+
+562
+01:55:18,960 --> 01:55:21,720
+Şundan dolayı özellikle vurguyorum, defa da tekrar ediyorum.
+
+563
+01:55:22,040 --> 01:55:25,680
+Şimdi üstel fonksiyon pozitif değil mi? Genel üstel fonksiyon pozitif değil mi?
+
+564
+01:55:26,480 --> 01:55:27,660
+Genel üstel fonksiyon.
+
+565
+01:55:31,060 --> 01:55:49,580
+Pozitiftir değil mi? Bu pozitif. Arkadaşlar, söylediği şu, bunun limiti, en küçük pozitif sayı olarak sıfır çıkabilir diyor. Bakın, bunun limiti, en küçük pozitif sayı olarak sıfır çıkabilir diyor. Kesinlikle negatif çıkamaz diyor. Bunun limiti ne? Ejder eksi ne? Limiti ne?
+
+566
+01:55:56,051 --> 01:55:57,051
+Hatılamıyor musunuz?
+
+567
+01:55:58,612 --> 01:56:00,532
+E üzeri eksinin limitini hatırlamıyor musunuz?
+
+568
+01:56:00,971 --> 01:56:01,211
+Efendim?
+
+569
+01:56:01,752 --> 01:56:03,731
+1 bölü E üzeri N değil mi?
+
+570
+01:56:05,011 --> 01:56:07,711
+Yani?
+
+571
+01:56:08,756 --> 01:56:33,976
+Evet, [öğrenci] Bey'e teşekkür ediyorum. Sıfır. Arkadaşlar, bir vurgu daha yapmak için bu aklıma geldi söyledim. Benim öğrencim diye devamlı kullanacağım. Çok önemli görüyorum kendime göre. Şu anda benim öğrencim olduğuna göre. Benim öğrencim integrale kadar üzeri eksi yazmayacak. Duyuyor musun? Benim öğrencim integrale kadar olan bölümde üzeri eksi yazmaktan kaçınacaktır.
+
+572
+01:56:34,484 --> 01:57:00,503
+Eğer üzeri eksi verilmişse ne yapacak benim öğrencim? Bir arkadaşınızın söylediği gibi, üzerine artı yapacak. Yapın üzerine artı. Böyle yazacak. Değil mi? E üzeri eksi neyi, bir bölü e üzerine ne diye yazacak. Şimdi biraz sonra bilgi vereceğim. Neye sonsuza giderken e üzeri neye sonsuza gidiyor. Dolayısıyla bir bölü e üzerine sıfıra gidiyor. Biraz sonra bilgi vereceğim. Tamam mı? Genel bilgi vereceğim biraz.
+
+573
+01:57:03,028 --> 01:57:15,847
+Şimdi bunu da gördük. Uyana iyi bilgiyi verdim. Genel terim negatif olmayan bir dizinin limiti negatif değildir. Yani pozitif terimli bir dizinin limiti daima pozitif.
+
+574
+01:57:15,847 --> 01:57:17,676
+Şimdi arkadaşlar...
+
+575
+01:57:18,068 --> 01:57:22,827
+Bundan sonraki kısımda matematik 1 ile bağlantılı devam edebiliriz.
+
+576
+01:57:23,427 --> 01:57:29,787
+Tamam mı? Şimdi matematik 1'deki tek değişkenin fonksiyonların x-10'sa giderkenin limitiyle ilgili her şeyi biliyoruz ya.
+
+577
+01:57:30,347 --> 01:57:33,967
+En belirgin bildiğimiz şey nedir kural olarak? En belirgin bildiğimiz kural.
+
+578
+01:57:35,427 --> 01:57:37,827
+Limitte, matematik 1'de, limitte.
+
+579
+01:57:39,768 --> 01:57:41,507
+L'hôpital kuralı diye bildiğimiz bir kural.
+
+580
+01:57:41,507 --> 01:57:41,847
+L'hôpital.
+
+581
+01:57:41,847 --> 01:57:42,787
+Yani öyle bir kural da o.
+
+582
+01:57:43,636 --> 01:57:53,735
+Hatırladınız mı? İşte burada da yoğun bir şekilde kullanacağız arkadaşlar. Yoğun bir şekilde hem dizilerde hem de serilerde yoğun bir şekilde kullanacağız.
+
+583
+01:57:54,275 --> 01:58:02,956
+Oraya dönüştürüz, onu kullanmaya şu teorem izin veriyor. Şu teorem sayesinde onu kullanma iznimiz oluyor.
+
+584
+01:58:03,336 --> 01:58:08,376
+Şimdi teoremi ben kısacık bir okuyayım. Dedim ya teorem ve teorik bir pratiğe dönüştürmek kolaydır, anlamak kolaydır.
+
+585
+01:58:09,315 --> 01:58:11,536
+Hiçbir geçiş bir yazmamın sebebini anladınız mı?
+
+586
+01:58:11,636 --> 01:58:21,096
+X1'i geçin. Şuradaki biri anladınız mı? Niye bir? Hadi defalarca konuştuk. Şu biri.
+
+587
+01:58:21,096 --> 01:58:24,216
+Bir sıra bir şey belirtmediği için, belki yapmadığı için.
+
+588
+01:58:24,256 --> 01:58:26,036
+Hayır, bu atayları birden başlattık ya.
+
+589
+01:58:26,336 --> 01:58:26,615
+Evet.
+
+590
+01:58:26,836 --> 01:58:32,615
+Bizim genel terimi, aksini söylemediğimiz zaman, aksini söylemediğimiz sürece birden başlayacak ya, genel terimi.
+
+591
+01:58:32,735 --> 01:58:33,416
+Bu demek istediğim.
+
+592
+01:58:33,416 --> 01:58:38,275
+Onun için, tamam mı? O anlamda. Şimdi, bir arkadaşınız daha bir şey yazdığına vereceğim mi?
+
+593
+01:58:38,640 --> 01:59:05,819
+Tamam, teşekkür ederim arkadaşlar. Onun için birden başlattım ama burada herhangi sayılar var. Sonra diziye dönmesi kolay olacak. Şu teoremin ifadesini söyleyip ara veriyorum. F'nin tanım kümesi, x büyük eşit bir olan aralık. R'ye olmak üzere, bakın x sonsuza giderken eğer fake d oluyorsa, yani f fonksiyonunun limiti mevcut ise, her ne için aynı, ta başta diziyi tanımarken böyle alacağız demiştik ya, f ne için de aynı alacağız demiştik ya.
+
+594
+01:59:06,127 --> 01:59:09,748
+Böyle yazdığımız zaman, arkadaşlar, fonksiyonun limitini hesaplıyoruz.
+
+595
+01:59:10,087 --> 01:59:12,467
+Aslında o dizinin limitini bulmak oluyor.
+
+596
+01:59:12,748 --> 01:59:13,448
+Bir daha tekrar ediyorum.
+
+597
+01:59:13,748 --> 01:59:16,608
+Fonksiyonun limitini bulmak, dizinin limitini bulmak anlamına geliyor.
+
+598
+01:59:16,847 --> 01:59:17,828
+O kadar önemli ki bu dönem.
+
+599
+01:59:18,208 --> 01:59:19,728
+Şimdi ara veriyorum saat başına kadar.
+
+600
+01:59:20,087 --> 01:59:23,948
+Saat başında bu örneği yaparak, şu 8. örneği yaparak yapalım.
+
+601
+01:59:26,228 --> 01:59:29,248
+Hemen sorunuz varsa cevaplandırayım, yoksa sesi kapatacağım, ara veriyorum.
+
+602
+01:59:30,131 --> 01:59:32,911
+Tabii siz kapatmıyorsunuz hiçbir şeyi. Ben sadece sesi kapatıyorum.
+
+603
+01:59:33,131 --> 01:59:33,771
+İçeride aç.
+
+604
+01:59:35,391 --> 01:59:36,811
+Tamam, saat başına kadar.
+
+605
+02:08:06,771 --> 02:08:08,811
+Arkadaşlar, hazırsanız devam ediyoruz.
+
+606
+02:08:09,831 --> 02:08:10,371
+Hazır mıyız?
+
+607
+02:08:16,884 --> 02:08:18,484
+Arkadaşlar, yok musunuz?
+
+608
+02:08:21,876 --> 02:08:23,015
+Buradayız hocam.
+
+609
+02:08:24,336 --> 02:08:25,775
+Tamam, tamam ediyoruz.
+
+610
+02:08:27,296 --> 02:08:32,256
+Şimdi arkadaşlar, teşekkür ederim yazan arkadaşlarıma da. Hepinize çok teşekkürler.
+
+611
+02:08:32,695 --> 02:08:39,935
+Şimdi bu limit defalarca sınavda çıkmıştır biliyor musunuz? O kadar önemli bir limit ki bu. Hakikaten o kadar güzel bir limit.
+
+612
+02:08:42,484 --> 02:08:48,764
+Okuyun ben bir limiti. Limit neye sonsuza giderken ne kare bölü, 2 neye eksi bir çarpı, sinüs bir bölüm ne limitini hesaplayınız diyor.
+
+613
+02:08:49,123 --> 02:09:01,083
+Şimdi arkadaşlar, limit de tek değişkenli fonksiyonların analizinde, yani matematik bizden biliyorsunuz, aklınızda tutmanız ve matematiğe ihtiyacınızda olduğu sürece unutmamanız gereken 4 tane limit var.
+
+614
+02:09:01,864 --> 02:09:07,324
+Aklınızda tutmanız ya da matematiğe ihtiyacınızda olduğu sürece unutmamanız gereken 4 tane limit var.
+
+615
+02:09:09,104 --> 02:09:23,304
+Özellikle işli yazdım buraya. Limit x0'a giderken sinis x bölü x'in 1 olduğu. Birincisi, birincisi, limit x0'a giderken sinis x bölü x'in 1 olduğu. Diğer üçünü hatırlıyor musunuz?
+
+616
+02:09:28,979 --> 02:09:30,259
+Diğer üçünü hatırlayan var mı?
+
+617
+02:09:33,239 --> 02:09:34,399
+Hatırlamıyor musunuz?
+
+618
+02:09:35,819 --> 02:09:38,199
+Tamam, hatırlamadığınızı düşünüyorum.
+
+619
+02:09:40,419 --> 02:09:44,119
+Limit, biraz elim titriyor, mouse'dan dolayı.
+
+620
+02:09:45,919 --> 02:09:47,999
+Bir bakayım, bir arkadaşımız bir şey yazdı.
+
+621
+02:09:50,639 --> 02:09:53,039
+Tamam, ben hatırlatıyorum şimdi arkadaşlar.
+
+622
+02:09:53,919 --> 02:09:54,539
+Diğeri şu.
+
+623
+02:09:55,091 --> 02:10:00,992
+Limit 2 sonsuza giderken, 1 bölü 2'nin limitini, matematik ihtiyacınız olduğu sürece unutmayacaksınız. Nedir?
+
+624
+02:10:03,471 --> 02:10:05,931
+Bu limit nedir? Limit 2 sonsuza giderken, 1 bölük?
+
+625
+02:10:06,511 --> 02:10:06,712
+4.
+
+626
+02:10:07,311 --> 02:10:07,992
+0 hocam.
+
+627
+02:10:09,011 --> 02:10:15,992
+5. Tamam. Bunu da, ikinci hissi bu. Matematik ihtiyacınız olduğu sürece, unutmayacaksınız. Bir diğeri...
+
+628
+02:10:21,171 --> 02:10:45,652
+Limit, harfler karışmasın diye B harfi kullanayım. Yani A'yı daha şey için kullanıyoruz ya. Dizi için kullanıyoruz ya. Şuraya da X yazmış olayım. Güzel yazamadım. Üşenmeyin, sileyim. Ya bu da kalem şey oldu. Tamam. B üzeri X diye yazayım.
+
+629
+02:10:47,444 --> 02:10:49,243
+İki sonsuza giderken
+
+630
+02:10:59,220 --> 02:11:02,899
+Hatırlıyor musunuz?
+
+631
+02:11:08,180 --> 02:11:26,659
+Hayır. Bir arkadaşımız neyse sonsuz dedi. Hayır doğru değil. Yani tam değil. Tam değil. Şöyle cevabımız şu. Hatırlamak istiyorsak. B'nin durumuna bakarız diyeceğiz. Cevabımız B'nin durumuna bakmak. Birincisi, eğer B sıfırla bir arasındaysa.
+
+632
+02:11:30,228 --> 02:11:37,188
+B sıfırla bir arasında ise limit sıfır. Şunu maviyle işaretleyeceğim şimdi. Bu bizi ilgilendiriyor çünkü.
+
+633
+02:11:40,007 --> 02:11:52,940
+Tamam. Eğer B sıfırla bir arasında ise limit sıfır. B eşittir bir ise bir şey olmuyor. Yazmayayım onu. B eşittir bir yazmayayım. Eğer B birden büyükse...
+
+634
+02:11:57,043 --> 02:12:08,224
+Şuraya da B büyük 1 yazayım. B1 işte bir şey olmuyor dedim ama demeyin, dememiş olayım. B 1'den büyük de limit sonsuz.
+
+635
+02:12:08,659 --> 02:12:34,979
+Tamam mı? Bu aklınıza tutmanız gerek yok. Eğer limit x sonsuza gelip, d-d-x gibi üstel bir ifadenin limitini hesaplıyorsanız, serileri bitirene kadar lazım olacak. Çok değişkenli fonksiyonlarda da ihtiyacımız olacak. Eğer b, şu b sayısı 0 ile 1 arasındaysa, limit 0. Eğer b sayısı 1'den büyükse, limit sonsuz. Tamam mı? B sayısı 1'den büyükse, limit sonsuz. Bu üçüncüsü, yani biri bu.
+
+636
+02:12:35,764 --> 02:12:41,144
+Biri bu, bir tane daha var hatırlıyor musunuz? Onu da hatırlamazsınız herhalde. Hatırlayamadım.
+
+637
+02:12:48,372 --> 02:12:52,332
+Bu 4 limit arkadaşlar, matematiğe ihtiyacınız olduğu sürece unutmayacaksınız.
+
+638
+02:12:52,972 --> 02:12:54,412
+Şu dördüncüyü de buraya yazıyorum.
+
+639
+02:13:08,627 --> 02:13:11,608
+Arkadaşlar, sonucunu hatırlıyor musunuz? Sadece sonucunuz.
+
+640
+02:13:17,939 --> 02:13:20,840
+Limit x sonsuza giderken 1'e artı 1 bölük sizler 2.
+
+641
+02:13:21,699 --> 02:13:22,539
+Hocam sonsuz.
+
+642
+02:13:23,859 --> 02:13:24,260
+Hayır.
+
+643
+02:13:25,420 --> 02:13:26,159
+İlk ismi hocam.
+
+644
+02:13:27,300 --> 02:13:28,340
+O günde bilemedi.
+
+645
+02:13:28,699 --> 02:13:28,979
+Efendim?
+
+646
+02:13:29,479 --> 02:13:29,960
+İlk ismi.
+
+647
+02:13:30,960 --> 02:13:31,319
+Hayır.
+
+648
+02:13:32,359 --> 02:13:33,199
+Sonsuz değil mi?
+
+649
+02:13:34,239 --> 02:13:34,619
+Hayır.
+
+650
+02:13:35,720 --> 02:13:36,139
+Sıfır.
+
+651
+02:13:37,019 --> 02:13:37,739
+1 hocam.
+
+652
+02:13:38,159 --> 02:13:38,559
+Hayır.
+
+653
+02:13:39,475 --> 02:13:41,115
+Tamam, burada bırakalım.
+
+654
+02:13:41,115 --> 02:13:43,996
+E üzeri x mi hocam?
+
+655
+02:13:58,100 --> 02:14:13,980
+x0'a giderken çirisi x'in 1 olduğu, x0'a giderken 1 bölü x'in 0 olduğu, x0'a giderken b üzeri x'in eğer 0'a bir arındaysa 0, eğer b 1'den büyükse sonsuz olduğu ve can alıcı bir şey söylüyorum.
+
+656
+02:14:14,260 --> 02:14:21,060
+Dikkatlice dinleyin, bir iki kez tekrar ederim. 1 üzeri sonsuz belirsizliği veren her limitin e rengi eşliği.
+
+657
+02:14:21,492 --> 02:14:39,672
+Tekrar söylüyorum, bir üzeri sonsuz belirsizliği veren her limit E'den geçer. Şimdi bu limit bir üzeri sonsuz belirsizliği veriyor mu? Şu limit. Limit kırmızılık kısma bakın. Bakın, x sonsuza giderken bir bölüksü nereye gidiyor? Bak unutmayacaksınız. Nereye gidiyor?
+
+658
+02:14:40,595 --> 02:14:51,335
+Sıfıra gidiyor. Nasıl bir belirsizlik veriyor o zaman? 1 üzeri sonsuz. 1 üzeri sonsuz belirsizliği veren her limit E'den geçer. E'den geçer demek arkadaşlar, E'nin bir kuvvetidir demek.
+
+659
+02:14:51,764 --> 02:14:59,324
+e üzeri x'i 1 olabilir, e üzeri artı 2 olabilir, yani e kare olabilir, e üzeri 0 olabilir ama mutlak suretle e'den geçecektir.
+
+660
+02:14:59,664 --> 02:15:10,344
+Eğer bir limiti ilk vuruştan, ilk vuruştan kastım, şunu hesaplamaya çalışmak, yani ilk sonsuza giderek birbiri size bakıp sonucu söylemek, sonuç söylemek derken limit olarak ne olduğunu ortaya koymak demek istiyorum.
+
+661
+02:15:10,704 --> 02:15:14,624
+Bir üzeri sonsuz veritsizliği verirse e'den geçecektir. Anlaştık mı?
+
+662
+02:15:15,864 --> 02:15:19,564
+Bu dört limiti matematiği ihtiyacımızda olduğu süreci unutmuyoruz.
+
+663
+02:15:20,724 --> 02:15:24,844
+Bu zaten kayı altına aldığı için istediğiniz zaman bunları tekrar dinleyebilirsiniz.
+
+664
+02:15:26,864 --> 02:15:29,384
+Evet, şimdi gelelim örneğimize arkadaşlar.
+
+665
+02:15:30,104 --> 02:15:31,624
+Limitini hesaplayacağız diyor.
+
+666
+02:15:31,904 --> 02:15:37,544
+Şimdi benim öğrentim, eğer bir limit hesaplarken içinde trigonometrik fonksiyon görüyor ise,
+
+667
+02:15:38,804 --> 02:15:50,384
+Bu kısmı tekrar ediyorum. Benim öğrencim bir limit hesabı yaparken eğer limiti alınan ifadenin içinde trigonometrik fonksiyon ya da ters trigonometrik fonksiyon görüyorsa,
+
+668
+02:15:50,904 --> 02:16:02,644
+sinüs olabilir, kosünüs olabilir, tancağat, kotencağat, sekant vs. ya da onların tersi, arksinüs, arksinüs, arksinüs, arksancağat vs. görüyorsa, limit hesaplanan ifadenin içinde mutlaka aklına bu gelecek.
+
+669
+02:16:03,344 --> 02:16:04,003
+Burada anlaştık mı?
+
+670
+02:16:05,652 --> 02:16:07,811
+Onaylayın sen? Anlaştık hocam.
+
+671
+02:16:09,252 --> 02:16:16,892
+Tamam. Trigonometrik ya da ters trigonometrik ifade görürseniz, limit alan ifademinin içinde, aklınıza önce bu gelecek. Tamam, gelsin aklımıza.
+
+672
+02:16:17,212 --> 02:16:26,872
+Şimdi o zaman genel terimi, yani soruna verilen genel terimi şuna uyarlayalım. Şuna uyarlayalım. Uyarlıyorum şimdi. Kolay anıydı.
+
+673
+02:16:29,619 --> 02:16:52,040
+İkinci ifade de sinüs bir bölü ne var mı? Bak şurada. Sinüs bir bölü ne var. Ben o zaman sinüs bir bölü ne'nin paydasına ne yazmalıyım arkadaşlar? Şunu görsün diye. Ne yazmalıyım? Konuşalım lütfen karşılıklı. Sinüs bir bölü ne'nin paydasına ne yazmalıyım? Şunu görsün diye. Efendim? Bir bölü ne yazmalıyım. Bakın yazdım.
+
+674
+02:16:55,860 --> 02:17:17,620
+Neyse alamam. Anladık mı şunları nasıl yazıldığını? Demek ki benim öğrencim 4 anahtar limiti unutmayacak. Onlardan bir tanesi bu. Limit anlayacak ifadenin içinde trigonometrik fonksiyonu var, gördüm. Şunu yakalamaya çalışıyorum. İş yerine bir bölünmeye gelmiş ya, burada sinüs bir bölünme olduğu için paydaya da bir bölünmeye yazdım. Şu kısmı hallettiğimizi düşünüyorum. Geriye kalan o da olduğu gibi yazıyor.
+
+675
+02:17:18,036 --> 02:17:28,675
+Geriye ne kaldıysa olduğu gibi yazıyor. Bakın, ne kare bölü 2 ne eksi 1 de de, o zaman şu ne karenin neyesinin birini buraya aldığıma göre, ne bölü 2 ne eksi 1 kaldı burada da.
+
+676
+02:17:29,316 --> 02:17:36,136
+İki tane ifade var. Şimdi demin dedim ya, limit teoremlerini, limit kurallarını söylerken, limit mevcut olsa bile benim öğrendim dağıtmayacak.
+
+677
+02:17:36,816 --> 02:17:43,896
+Hatırladınız mı? Öyle dediğimi hatırladınız mı? İçeri dağıtmadan yapacak demiştim, hatırladınız mı?
+
+678
+02:17:45,459 --> 02:17:46,279
+Evet hocam.
+
+679
+02:17:46,359 --> 02:17:47,459
+Evet hocam hatırladık.
+
+680
+02:17:48,019 --> 02:17:49,559
+Tamam.
+
+681
+02:17:50,019 --> 02:17:50,840
+İçeri dağıtmıyoruz.
+
+682
+02:17:50,959 --> 02:17:51,319
+Tamam mı?
+
+683
+02:17:51,739 --> 02:17:52,459
+Tamam [öğrenci] Bey.
+
+684
+02:17:52,519 --> 02:17:53,039
+Teşekkür ederim.
+
+685
+02:17:53,099 --> 02:17:53,859
+İçeri dağıtmıyoruz.
+
+686
+02:17:54,419 --> 02:17:55,519
+Dağıtmadan devam edelim.
+
+687
+02:17:55,799 --> 02:17:58,419
+Şimdi dağıtmadan, yazıyla dağıtmıyorsunuz.
+
+688
+02:17:58,559 --> 02:18:02,139
+Söz uçar, yazı kalır.
+
+689
+02:18:02,539 --> 02:18:03,799
+Sözlü her şey olabilir.
+
+690
+02:18:04,119 --> 02:18:04,539
+Dağıtmıyoruz.
+
+691
+02:18:04,819 --> 02:18:08,399
+Şimdi sadece ses olarak ifade ediyorum.
+
+692
+02:18:09,159 --> 02:18:10,459
+Limit ne sonsuza giderken...
+
+693
+02:18:11,092 --> 02:18:18,352
+N bölü 2'ne eksi 1 nereye gidiyor arkadaşlar? Limit ne sonrası giderken N bölü 2'ne eksi 1? Daha açıkta yazabilirim isterseniz.
+
+694
+02:18:19,352 --> 02:18:19,972
+Tanımsız mı?
+
+695
+02:18:19,992 --> 02:18:20,871
+N bölü 2'ne eksi 1?
+
+696
+02:18:22,972 --> 02:18:24,551
+Hopital yapmaz mıyız hocam orada?
+
+697
+02:18:25,612 --> 02:18:25,972
+Efendim?
+
+698
+02:18:26,672 --> 02:18:27,952
+Hopital mi yapıyoruz orada?
+
+699
+02:18:28,472 --> 02:18:29,551
+Limit'i bulmakta sonrası.
+
+700
+02:18:30,492 --> 02:18:32,051
+1 bölü 2'ye gider hocam.
+
+701
+02:18:32,472 --> 02:18:33,632
+1 bölü 2'ye gider hopital.
+
+702
+02:18:33,747 --> 02:18:58,907
+Evet, teşekkür ederim. 1 bölü 2'ye gider. Şimdi genel bilgi veriyorum. Youtube'ya da teşekkür ederim. Genel bilgi veriyorum. Genel bilgi. Eğer arkadaşlar, limit açan, şuradan bahsediyorum. Pay ile paydanın derecesi, aynı ise, pay ile paydanın derecesi, şuradan bahsediyorum, aynı ise, limit kat sayların bölümüdür. En yüksek derece terimlerin kat saylarının bölümüdür. Bir daha tekrar edeyim mi?
+
+703
+02:19:00,531 --> 02:19:02,131
+Anladık hocam.
+
+704
+02:19:02,791 --> 02:19:06,451
+En yükseklerle ilgili terimlerin kat sayılarının bölümüdür. Yani 1 bölü 2.
+
+705
+02:19:07,671 --> 02:19:13,491
+Tamam mı? Şimdi 1 bölü neye bölü, 1 bölü neye limiti, neye sonsuza gibi bir limiti, bir zaten.
+
+706
+02:19:13,771 --> 02:19:14,671
+Şu da yazıyor, bir.
+
+707
+02:19:15,092 --> 02:19:40,672
+O zaman sonuç bir bölük. Bak hiç dağıtmıyorum, görüyor musun? Sessiz düşünüyorum sadece. Şunun limitini, sessiz düşünüyorum, bunun limitini sessiz düşünüyorum. Dağıtmadan, bakın buraya yazıyorum. Eğer bu limit varsa, bu limit varsa, böyle yazıyorum. Şöyle, şu tehlikeyi önlemek için yapıyorum bunu tabii. Bakın şimdi. Şöyle bir tehlike var ya, mesela şunun limiti diyelim, sonsuz çiftaydı. Bakın.
+
+708
+02:19:41,459 --> 02:19:56,680
+Dağıttığımızı varsayıyorum, dağıttığımızı. Şunun limiti sonsuz çıksaydı, şunun limiti de sıfır çıksaydı. Ne yapacaktım ben o zaman? Bu ne bu şimdi? Ne bu? Bunu tanımıyor musunuz? Ne bu?
+
+709
+02:20:00,020 --> 02:20:16,000
+Tanımsız değil, belirsizlik. Bir belirsizlik, tamam mı? Onun için arkadaşlar bak, gördüğünüz gibi, hayır, belirsizlik. Mümkün olduğu kadar dağıtmadan, sessiz düşünerek yapıyoruz. Sessiz düşünüyoruz sadece. Yani aslında sessiz düşünürken de dağıtıyoruz ama yazmıyoruz.
+
+710
+02:20:17,780 --> 02:20:28,880
+Birinci limit 1 bölü 2, ikinci limit 1 olduğu için cevap 1 bölü 2. Şimdi demin arkadaşlarımız söylemişti ya, Lofs'a kuralları kullandı diye, oraya da geçeyim, anlatıyorum şimdi onu.
+
+711
+02:20:29,380 --> 02:20:42,340
+Şimdi arkadaşlar, genel olarak bir dizi verildiği zaman onun limitini bulurken, dizinin genel terimini fonksiyon gibi yazarak, şöyle, yani n yerine x koyarak.
+
+712
+02:20:42,804 --> 02:20:57,724
+n'ye yerine x koyarak fonksiyonun limitini hesaplarız. Sonuç dizinin limitidir. Bir daha tekrar ediyorum. Genel olarak bir dizinin limitini hesaplarken n'ye yerine x koyarak bir face fonksiyonuna ulaşırız.
+
+713
+02:20:58,283 --> 02:21:05,603
+Fonksiyonun x sonuçta giderken limitini hesaplarız. Bulduğumuz limit değeri aslında dizinin limitidir.
+
+714
+02:21:05,603 --> 02:21:07,504
+Tamam. Şimdi
+
+715
+02:21:09,108 --> 02:21:14,328
+Kurallar dışına çıkan, yani o 4 anahtar limitin dışına çıkan limitler şöyle olabilir.
+
+716
+02:21:15,208 --> 02:21:22,727
+Mesela, AN ve BN gibi 2 tane dizi olabilir, genel terimi AN ve BN olan 2 tane dizi olabilir.
+
+717
+02:21:23,188 --> 02:21:27,448
+Limitleri sonsuz bölü sonsuz ya da sıfır bölü sıfır belirsizliği verebilir.
+
+718
+02:21:27,567 --> 02:21:32,347
+Yani AN bölü BN'nin limiti sonsuz bölü sonsuz olabilir ya da sıfır bölü sıfır olabilir.
+
+719
+02:21:32,691 --> 02:21:59,011
+Her iki durumda da kuralı, L'Opital kuralı diye bildiğiniz kuralı kullanabiliriz. Limit sonsuz bölü sonsuz olsa da, 0 bölü 0 olsa da, L'Opital kuralı diye bildiğiniz kuralı kullanabiliriz. O kural der ki, fonksiyona dönüşüm yaptıktan sonra, pay ve paydanın kendine göre türevini alın. Yani bölümün türevi değil ha. Bak, pay ve paydanın kendine göre türevini alın. Eğer limit belli bir sayı çıkarsa, dizinin limiti olur.
+
+720
+02:21:59,603 --> 02:22:23,144
+Bu kısmı bir daha tekrar ediyorum. Eğer bölümün limiti sonsuz bölü sonsuz ve sıfır bölü sıfır belirsizliği veriyor ise, pay ve paydanın kendine göre türevini alın. Yani payın türevi ayrı, paydanın türevi ayrı, bölümün türevi değil. Kendine göre türevini alın. Eğer bu türev almış yeminden sonraki limit 51'ye sayısı çıkarsa, dizimin limiti de olur der.
+
+721
+02:22:23,636 --> 02:22:43,816
+Eğer belirsizlik devam ederse, yani sonsuz bölü sonsuz ya da sıfır bölü sıfır belirsizlik devam ederse, türev alma işlemi devam eder. Yani ikinci mertebe türevlere geçersiniz. F2'sü X bölü F2'sü X'e bakarsınız. Eğer oradan belli bir sayı bulursanız, limit odur dersiniz. Eğer belirsizlik yine devam ederse,
+
+722
+02:22:46,164 --> 02:23:12,884
+Türev alma işlemini de devam edersiniz. Yani F3 üstü, G3 üstü, içliğin limitine bakarsınız. Oradan belli bir sayı çıkarsa limit odur dersiniz. Ama arkadaşlar, bununla bir sonu olmalıdır değil mi? Yani bu türev alma işleminin de belirsizlikten kurtulmak için bir sonu olmalıdır. Eğer ikinci ve üçüncü adımda da belirsizlik devam ediyorsa, bilin ki dört anahtar limitten en az birine ihtiyacımız vardır. Duymayan var mı?
+
+723
+02:23:13,556 --> 02:23:14,536
+Onaylayın lütfen.
+
+724
+02:23:16,236 --> 02:23:17,175
+Anlaşıldı hocam.
+
+725
+02:23:18,756 --> 02:23:29,876
+Delilsizlik 2 ve 3. adımda da devam ediyorsa, belli ki 4 anahtar limitten bilme veya birkaçına ihtiyacınız var demektir. Onları önce tatbik etmekte fayda var.
+
+726
+02:23:30,435 --> 02:23:30,796
+Tamam mı?
+
+727
+02:23:31,283 --> 02:23:49,664
+Şimdi bunun adına lopital kuralı diye bildiğimiz Benoğlu kuralı deniyor. Eğer limit arkadaşlar bu işlemden sonra sonsuz ya da eksi sonsuz çıkarsa, yani belirsizlikten kurtuldunuz ama limit sonlu çıkmadı, o zaman bizim limit yoktur diyeceksiniz. Ya da diziler ve alaksaktır diyeceksiniz.
+
+728
+02:23:49,780 --> 02:23:55,180
+Sayı çıkarsa, yakınsa, sonsuz ya da x, sonsuz ya da limit yok çıkarsa, o zaman da ıraksaktır diyeceksin.
+
+729
+02:23:55,600 --> 02:23:57,200
+Tamam mı? Kural aynen devam ediyor.
+
+730
+02:23:57,479 --> 02:24:01,680
+Şimdi gezelim mükemmel denebilecek bir, gelelim mükemmel denebilecek bir örneğe.
+
+731
+02:24:01,940 --> 02:24:03,760
+Bu da zaman zaman sınavda sorulmuş bir soru.
+
+732
+02:24:04,220 --> 02:24:05,740
+Ayrıntılı bilgiyle devam edeyim.
+
+733
+02:24:07,040 --> 02:24:08,080
+Okuduktan sonra soruyu.
+
+734
+02:24:08,479 --> 02:24:13,900
+Limit d, sonsuza giderken ne kare çarpı artan jam, d bölü ne kare artı bir limitin hesaplarını yazıyor.
+
+735
+02:24:14,004 --> 02:24:22,164
+Şimdi benim öğrendiğim bir ilk vuruş yapacak. İlk vuruşu yapalım, sonra konuşuruz. Fonksiyonla dönüşümü yapacağım da konuşuruz.
+
+736
+02:24:23,384 --> 02:24:29,603
+Paya bakıyorum. Ne sonsuza giderken ne kare nereye gidiyor arkadaşlar? Karşılıklı konuşalım. Ne sonsuza giderken ne kare nereye gidiyor?
+
+737
+02:24:30,623 --> 02:24:31,204
+Sonsuza.
+
+738
+02:24:31,764 --> 02:24:38,224
+Sonsuza gidiyor. Ne sonsuza giderken artan can neye nereye gidiyor? Ne sonsuza giderken artan can neye?
+
+739
+02:24:38,224 --> 02:24:39,224
+Sonsuza.
+
+740
+02:24:39,924 --> 02:25:07,404
+Hayır, pi bölü 2'ye gidiyor, ben hatırlatmış oluyorum onu size. Ne sonsuza giderken artan can ne, pi bölü 2'ye gidiyor. Tamam, bunu bir kere not ettiniz. Ben bu pay kısmını bir daha tekrar ediyorum. Ne sonsuza giderken ne kare sonsuza gidiyor, ne sonsuza giderken artan can ne, pi bölü 2'ye gidiyor. O zaman pay kısmındaki problemi kim çıkarıyor arkadaşlar? Pay kısmındaki problemi kim çıkarıyor? Artan can ne kare çıkarmıyor? Kim çıkarıyor? Efendim?
+
+741
+02:25:09,459 --> 02:25:10,439
+En 2 çıkarıyor.
+
+742
+02:25:10,439 --> 02:25:12,659
+Taş kısımda problemi ne kare çıkarıyor.
+
+743
+02:25:13,379 --> 02:25:19,360
+Ne kare çıkarıyor. Bu aklımızda dursun, devam edelim. Paydaya geldik. Neye sonsuza giderken paylarının limiti ne arkadaşlar?
+
+744
+02:25:21,159 --> 02:25:21,860
+Paydaya limiti.
+
+745
+02:25:22,899 --> 02:25:24,119
+O da sonsuz.
+
+746
+02:25:24,840 --> 02:25:33,819
+O da sonsuz değil mi? Neye sonsuza giderken paylarının limiti de sonsuz. Peki paydaya da problem çıkarıyor derken sonsuz olmasını sağlayan demek istiyorum. Paydaya da problemi kim çıkarıyor?
+
+747
+02:25:34,379 --> 02:25:35,379
+Yine ne kare çıkarıyor.
+
+748
+02:25:35,459 --> 02:25:36,139
+Ne kare çıkarıyor?
+
+749
+02:25:38,164 --> 02:25:53,024
+Aslında bu limiti hesaplarken pay ve paydayı problem çıkaran terime bölerseniz sonucu alırsınız. Kim anladı? Bu limiti hesaplarken pay ve paydayı problem çıkaran terime bölerseniz sonucu alırsınız. Kim anladı?
+
+750
+02:25:57,364 --> 02:26:00,824
+Yazayım mı? Yazayım mı?
+
+751
+02:26:02,824 --> 02:26:04,103
+Olabilir hocam.
+
+752
+02:26:04,384 --> 02:26:31,144
+İkinci yol olarak düşünün. Bakın, pay ve payda kısmında, arkadaşımız bir şey yazdı, ona da bakayım. Tamam, yazıyorum. Şimdi, yolun birisi burada duruyor, onu söyleyeceğim de. Bir veciz bir söz var, oraya getirmek için böyle. Şimdi pay kısmında problemi ne kare çıkarttı, payda kısmında da problemi ne kare çıkarttı, pay ve paydayı ne kareye böldüm. Şuraya yazıyorum.
+
+753
+02:26:38,036 --> 02:26:45,795
+Ses, beraber yazalım arkadaşlar. Pay kısmında ne kalıyor? Pay kısmında. Siz de yardımcı olun.
+
+754
+02:26:48,795 --> 02:26:49,915
+Pay kısmında.
+
+755
+02:26:50,415 --> 02:26:51,495
+Pay tanjant kalıyor.
+
+756
+02:26:51,495 --> 02:26:55,335
+Payda kısmını yazıyorum.
+
+757
+02:26:58,556 --> 02:27:04,376
+Önce payda kısmını konuşalım, sonra paya geçelim. Peki. İlk vuruşu yaptı benim öğrenciyim.
+
+758
+02:27:04,656 --> 02:27:08,496
+Aç kısmını konuştum. Ne sonsuza giderken bir bölüm ne kare nereye gidiyor arkadaşlar?
+
+759
+02:27:09,695 --> 02:27:11,015
+Ne sonsuza giderken bir bölüm ne kare?
+
+760
+02:27:11,896 --> 02:27:15,456
+Sıfıra gidiyor, teşekkür ederim. Ne sonsuza giderken aklan cevaplıya nereye gidiyor?
+
+761
+02:27:15,936 --> 02:27:16,656
+Pi bölü 2.
+
+762
+02:27:16,736 --> 02:27:19,015
+Benin söyledim. Cevap kaç?
+
+763
+02:27:20,056 --> 02:27:20,716
+Pi bölü 2.
+
+764
+02:27:22,376 --> 02:27:23,536
+Matematiği seviyorum ya.
+
+765
+02:27:25,056 --> 02:27:28,616
+Bu cümleyi ara ara kullanacağım. Matematiği seviyorum. Bakar mısın cevaba?
+
+766
+02:27:29,816 --> 02:27:31,656
+O zaman benim öğrencim...
+
+767
+02:27:31,796 --> 02:27:49,612
+Benim öğrencim şöyle düşünecek. Demek ki limiti bir ilk vuruş yapacak. Çok karşılaştırıyorsunuz. Limitli bir ilk vuruş yapacak. Tay kısmında kim problemi çıkarıyor, onu tespit edecek. Yani sonsuza gideni, yolu kim açıyor demek istiyorum. Tayda kısmında problemi kim çıkarıyor, ona...
+
+768
+02:27:49,683 --> 02:27:51,863
+Onu tespit edecek, sonra böyle yapacak.
+
+769
+02:27:52,103 --> 02:27:54,223
+E yaptı. Bak, t bölü 2'yi buldu.
+
+770
+02:27:54,523 --> 02:27:57,383
+Yok böyle yapmak istemiyorum derseniz, böyle yapmak istemiyorum.
+
+771
+02:27:57,563 --> 02:27:59,763
+Bu dört anahtar limitten bir tanesi, değil mi? Bir bölüm ek.
+
+772
+02:28:00,783 --> 02:28:03,363
+Sonsuza giderken bir bölü sıfıra gider dedim ya, o anahtar limit.
+
+773
+02:28:03,363 --> 02:28:10,863
+Bakın, eğer ben direkt sonsuzluk, ne düşünürsek arkadaşlar, sonsuz bölü, sonsuz verişsizliği var, değil mi?
+
+774
+02:28:11,316 --> 02:28:22,896
+ne sonsuza gidiyor, pay sonsuza gidiyor, payda da sonsuza gidiyor, sonsuz bölü, sonsuz belirsizliği var. O zaman genel terimi fonksiyona dönüştürüp, şu şekilde, genel terimi fonksiyona dönüştürüp, kuralı kullanabiliriz.
+
+775
+02:28:23,376 --> 02:28:29,656
+Kullanıyorum, bakın, genel terimi fonksiyona dönüştürmek demek, neyi gördüğümüz yere, x yazmak demek. Bakın yazdım.
+
+776
+02:28:30,260 --> 02:28:46,979
+Yazdım. Şimdi, sonsuz böyle sonsuz verilsizliği olduğu için pay ve paydanın kendine göre serini alıyorum ama burada dezavantajlı durumlar var. Demin bir arkadaşımızla konuştuk. İyi ki arada. Mesela, Mat 2'den başlayanlar var, Mat 2'yi iyi bilmeyenler var. Mesela, Ahtan Can 2'sinin türevini bilmiyorsanız.
+
+777
+02:28:48,051 --> 02:28:59,231
+Böyle yapamazsınız. Değil mi? Bakın, artan caddik sim türevini bilmiyorsanız böyle yapamazsınız. Ama şu, bence daha pratik. Daha hem pratik, hem estetik, hem de çok seri çözün.
+
+778
+02:29:00,311 --> 02:29:04,132
+Eğer artan caddik sim türevini biliyorsanız, özür dilerim.
+
+779
+02:29:04,788 --> 02:29:19,268
+Çarpımı türevi kuralından, birincinin türevi çarpı ikinci, yani iki çarpı artan çarpı x, artı birinci çarpı ikincinin türevi, yani x kare çarpı artan çarpı x'in türevi bir bölü x kare artı bir.
+
+780
+02:29:19,648 --> 02:29:22,907
+Artan çarpı x'in türevi bir bölü x kare artı bir.
+
+781
+02:29:22,907 --> 02:29:27,468
+Arkadaşlar, benim öğrencim, matematiğe ihtiyacı olduğu sürece,
+
+782
+02:29:28,564 --> 02:29:55,804
+Sinüsün, temel trigonometrik 2 tane fonksiyonumuz var. Biri sinüs, birisi kosünüs. Temel trigonometrik deyince bunları anlayın. Ben ama açık söyleyeyim. Sinüsün, kosünüsün, tanjantın ve onların serinin türevlerini unutmayacak. Bir daha tekrar ediyorum, benim öğrencim matematiğe ihtiyacı olduğu sürece sinüs, kosünüs, tanjant ve onların terslerinin, yani ar sinüsün ve özellikle ar tanjantın türevlerini unutmayacak.
+
+783
+02:29:56,659 --> 02:30:15,799
+Herkes anladı mı? Ben gerekirse belki onu bir dahaki dersi unutmazsam, bir yere belki şey vardır bende, matematik bir de hazırlamış olabilirim, onu size ekrana koyarım ya da varsa adetçede yükleyebilirim. O belli fonksiyonların türevlerini daima aklımıza tutmamız lazım.
+
+784
+02:30:16,691 --> 02:30:35,771
+Evet, eğer ane'ye geçersek, yani fonksiyon gibi, n'ye yenik, fonksiyon gibi düşünüp devam edersek, türevini aldığımız zaman, payın türevi 2x artanca x artı x kare bölü, x kare artı 1. Paydanın türevi, x kare artı 1'in türevi 2. Bölme yaptık.
+
+785
+02:30:36,180 --> 02:30:51,659
+Bakın şöyle üzerini çiziyorum ben. Bunu sadeleştirdik. Burada arttanca x kaldı. Şurada da arkadaşlar, şurada da x bölü 2, değil mi? x bölü 2, x kare artı 1 kaldı. Şurada.
+
+786
+02:30:52,799 --> 02:30:59,239
+x bölü, x kare, onu şuraya yazayım istiyorsanız. x bölü, ikinci ifade, 2.
+
+787
+02:31:04,051 --> 02:31:05,952
+x kare, 6 geçiyor.
+
+788
+02:31:06,551 --> 02:31:07,311
+İkinci ifade.
+
+789
+02:31:09,072 --> 02:31:13,572
+Şimdi, x sonsuza giderken artan cahat, x t bölü 2'ye gidiyor, onu biliyoruz.
+
+790
+02:31:14,011 --> 02:31:17,152
+x sonsuza giderken artan cahat, x t bölü 2'ye gidiyor, onu biliyoruz.
+
+791
+02:31:17,452 --> 02:31:19,292
+x sonsuza giderken, şırası nereye gidiyor arkadaşlar?
+
+792
+02:31:19,752 --> 02:31:21,691
+Şırası, x sonsuza giderken.
+
+793
+02:31:24,211 --> 02:31:48,131
+Demin sinüsle söylediğimi yine tekrar etmiş olayım. Eğer böyle rasyonel ifadeleri gördüğünüz zaman pay ve paydanın derecelerini karşılaştırıyorsunuz. Pay ve paydanın dereceleri aynı ise limit en çok derecelerlerin kat sayıların bölümüdür. Eğer paydanın dereceleri daha büyük ise limit sıfırdır. Bir daha tekrar ediyorum.
+
+794
+02:31:49,311 --> 02:32:07,311
+Evet, teşekkür ederim [öğrenci] Bey'e, [öğrenci] Bey'e. Hayran'ın derecesi daha büyük ise, limit sıfırdır. Dolayısıyla, xonsa giderken, x bölü, x'e artı birinin limiti sıfırdır. Cevap yine pi bölü 2 çıkar. Bu örnek üzerinden sormak istediğiniz bir şey var mı arkadaşlar? Aklımda takılan.
+
+795
+02:32:07,311 --> 02:32:09,891
+Nasıl çıkardınız? Kaçırdım ya.
+
+796
+02:32:10,644 --> 02:32:13,164
+Nereye kaçırdın? Sor ben anlatayım.
+
+797
+02:32:13,484 --> 02:32:14,423
+X bölü 2.
+
+798
+02:32:14,543 --> 02:32:15,083
+Nereye kaçırdın?
+
+799
+02:32:15,603 --> 02:32:19,184
+X bölü 2 parantezinin X kare artı.
+
+800
+02:32:19,203 --> 02:32:19,423
+Sulu mu?
+
+801
+02:32:20,443 --> 02:32:20,724
+Evet.
+
+802
+02:32:20,963 --> 02:32:22,083
+Ha, şu böl, böl şöyle.
+
+803
+02:32:23,384 --> 02:32:24,844
+Anladım. Tamam hocam.
+
+804
+02:32:25,043 --> 02:32:28,943
+Tamam mı? X kare, çarpı X kare artı 1, çarpı 1 bölü 2 iş ya.
+
+805
+02:32:29,324 --> 02:32:29,543
+Tamam.
+
+806
+02:32:29,564 --> 02:32:31,304
+İşleri kısalttım, öyle yani. Tamam mı?
+
+807
+02:32:32,543 --> 02:32:38,004
+Yani şununkisini bölerseniz demek istedim. Şöyle böldüğün zaman, Arancan'dık, böyle böldüğün zaman, o çıkıyor.
+
+808
+02:32:38,420 --> 02:32:47,420
+Bu örnekte anlaşıldı arkadaşlar. Şimdi yerine koyma kuralı diye bir şeyimiz var. Sürekli yani limiti, fonksiyonu, mesela şöyle demek istiyor.
+
+809
+02:32:48,500 --> 02:32:53,100
+Töremi tekrar söyleyeceğim. Şu örnek üzerinden göreyim. Töremi söyleyeyim, öne geri geleyim.
+
+810
+02:32:55,379 --> 02:33:07,759
+Yani, bir anerisinin limiti, belli bir a sayısı ve fonksiyon o, a, limit olan a sayısında sürekli ise diyor, bakın, fonksiyona atama yapabilirsiniz diyor, şu şekilde.
+
+811
+02:33:08,719 --> 02:33:13,279
+Sürekli, matematik analiz 1'den bildiğiniz, matematik 1 dersinden bildiğiniz sürekli kavramı.
+
+812
+02:33:13,540 --> 02:33:19,360
+Şimdi, örnek üzerinden göstereyim onu size. Şu sinüs örneği çok güzel. Şuraya bakın, şöyle yuvarlak için alayım bunu da.
+
+813
+02:33:20,559 --> 02:33:21,959
+Üzerinden konuşmak için.
+
+814
+02:33:23,956 --> 02:33:25,156
+Şuraya bakın arkadaşlar.
+
+815
+02:33:27,816 --> 02:33:29,776
+Sinüs fonksiyonun sürekli olduğunu biliyorsunuz değil mi?
+
+816
+02:33:30,216 --> 02:33:31,956
+Sinüs fonksiyonun sürekli olduğunu biliyorsunuz.
+
+817
+02:33:32,436 --> 02:33:32,956
+Biliyor musunuz?
+
+818
+02:33:34,335 --> 02:33:38,195
+Temetkili görüntü fonksiyonlar, argümanındaki her değerde süreklidir.
+
+819
+02:33:38,936 --> 02:33:39,256
+Tamam mı?
+
+820
+02:33:39,916 --> 02:33:42,276
+Şeyin dediği şu, göremin dediği şu.
+
+821
+02:33:42,636 --> 02:33:47,195
+Şimdi, limit, ne sonsuza giderken,
+
+822
+02:33:48,308 --> 02:34:00,568
+Bir bölüme nereye gidiyor? Matematiğe ihtiyacınız olduğu sürece unutmayacaksınız. Nereye gidiyor? Nereye? Nereye gidiyor? Sıfır.
+
+823
+02:34:01,568 --> 02:34:04,528
+Evet, matematiğe ihtiyacınız olduğu sürece unutmayacaksınız ya.
+
+824
+02:34:05,363 --> 02:34:10,123
+Tamam, [öğrenci] Bey'e teşekkür ediyorum. Şimdi sinüs de sürekli ya, şöyle yazabilirsiniz diyor bunu.
+
+825
+02:34:10,524 --> 02:34:13,623
+Şu limiti. Sadece bu yuvarlak için aldığım mavide yuvarladığım mı diyor.
+
+826
+02:34:14,043 --> 02:34:17,963
+Tamam mı? Şunu sileyim, üşemiyorum. Şöyle yazayım. Şunu.
+
+827
+02:34:20,024 --> 02:34:26,504
+Bu da geri gidiyor. İlaya girmem gerekiyor. Tamam. Şöyle ya bu.
+
+828
+02:34:27,164 --> 02:34:30,603
+Sinüs. Bir bölümde bu.
+
+829
+02:34:32,979 --> 02:34:34,299
+eşittir.
+
+830
+02:34:36,200 --> 02:34:38,680
+Eğer bir fonksiyon sürekliyse,
+
+831
+02:34:39,479 --> 02:34:40,659
+şöyle yapabilirsiniz demek.
+
+832
+02:34:53,043 --> 02:35:16,004
+Şimdi sonuç ne oluyor arkadaşlar? Sonuç. Limit neye sonsuza gidiyorduk? Bir bölü n'ye nereye gidiyordu? Sıfıra gidiyordu. Sinus sıfır ne? Sinus sıfır. Sıfır değil mi? Bak. Dediği bu. Tamam mı? Funksiyon sürekli olursa limiti içeri atıp daha kolay işlemler yapabilirsiniz diyor. Dediği bu.
+
+833
+02:35:23,540 --> 02:35:51,060
+Süt öğrenimi dediği bu, yerine koyma, koyma, koyma, koyma dediği bu. Şimdi arkadaşlar, 10. örnek çok önemli. Bakın, notta da genel hali var bunun. Genel hali var. Bu 10. örnek çok önemli. Karşımıza çıkmama ihtimali neredeyse yok. Yani özellikle serilerde bunu çok sıklıkla kullanacağız. Karşımıza çıkmama ihtimali neredeyse yok. Bu örneği çözelim şimdi. Yani limit ne sonsuza giderken neyinci kuvvetten ne? Yani ne üzeri bir bölü ne?
+
+834
+02:35:51,603 --> 02:36:18,563
+Ne üzeri bir bölüm ne? Limitini hesaplayınız diye ya da bir olduğunu gösteriniz diye ben olduğunu göstereceğim. Şimdi arkadaşlar, benim öğrencim artık, yani bu örnek, görüyorsunuz bir örnekle karşılaşıyoruz, bir bilgi ihtiyacı oluyor. Orada benim öğrendim diye devreye girip bir şey seyiriyoruz. Benim öğrencim değişken üzeri değişken ile işlem yaparken aklına logaritma almak gerektiğini, aklına logaritmanın gelmesi gerektiğini unutmayacak. Bir daha tekrar ediyorum.
+
+835
+02:36:19,603 --> 02:36:30,423
+Serilerin değişken üzeri değişken ile işlem yaparsa, yapıyor ise, yapacak ise, aklına logaritma almak gerektiği gelecek mutlaka.
+
+836
+02:36:30,703 --> 02:36:34,283
+Ya da eğerin üzerine çıkartması gerektiği aklına mutlaka gelecek.
+
+837
+02:36:34,583 --> 02:36:37,963
+Bakın burada enerjilerin değişken üzeri değişken görüyor musun?
+
+838
+02:36:38,388 --> 02:37:02,528
+Genel terim değişken üzeri değişken. Terik tarafını logaritma sonra almak şu anlama geliyor. Logaritma almayı unutmayın dediğim o. Logaritma almak şu anlama geliyor. E'nin üzerine çıkardım, biraz sonra sonucu söyleyeceğim. Gene sürekli yüklem söyleyeceğim. Şimdi bunu arkadaşlar, n üzeri 1 bölü n'yi, e üzeri logaritma n bölü n diye yazabilirsiniz. Şurada anlamadığınız bir şey var mı? Şurada. Şurada. Daha açık yazabilirim. Şurayı.
+
+839
+02:37:03,252 --> 02:37:26,391
+E üzeri 1 bölü ne? E üzeri logaritma n bölü ne? Burada anlaşımdan bir şey varsa daha açık yazabilir. Yok galiba. Tamam. Böyle yazdık. Şimdi e'nin üstüne çıkan arkadaşlar, şu ifadenin limitini hesaplarız. Bakın e'nin üstüne çıkan şu logaritma n bölü n'nin limitini hesaplarız. Sonucu oradan söyleriz. Yazdım. Limit diye sonuçla giderken el n bölü ne?
+
+840
+02:37:26,932 --> 02:37:34,772
+Bir kere kural uyguladım. Yani pay ve paydanın kendine göre türevini aldım. Yok bir kural diyelim hadi. Pay ve paydanın kendine göre türevini aldım.
+
+841
+02:37:37,427 --> 02:37:39,247
+Logaritma n'nin türev bir bölü ne?
+
+842
+02:37:39,747 --> 02:37:42,527
+Türevde de neye var? Türevi bir olduğu için onu yazmadım.
+
+843
+02:37:42,907 --> 02:37:48,367
+Yani, Logaritma n'nin n'nin, pay ve paylanın kendine göre türevini aldığınız zaman birbirine çıkıyor.
+
+844
+02:37:48,628 --> 02:37:51,647
+İşte görüyorsunuz, haklı çıkmayı seviyorum bu anlamda.
+
+845
+02:37:51,968 --> 02:37:54,587
+Bu tercübe de sabit zaten. Yıllardır bu dersleri anlatıyorum.
+
+846
+02:37:54,927 --> 02:37:59,207
+Tercübe de sabit. Bak, bu dört anahtar limit bir şekilde çıkar.
+
+847
+02:37:59,707 --> 02:38:00,768
+Bak, çıktı gene, görüyor musun?
+
+848
+02:38:01,687 --> 02:38:02,387
+Eşittir sıfır.
+
+849
+02:38:03,347 --> 02:38:23,507
+Demek ki arkadaşlar, n sonsuza giderken, Lagrange çarpanın n bölü, n limiti 0. O zaman netice, netice bakın, e üzeri 0. E üzeri 0 da ne? 1. Artık arkadaşlar, bundan sonra, limit n sonsuza giderken, n'inci kuvvetten n'nin 1 olduğunu veya biraz daha genel hali şu, unutmayacağız.
+
+850
+02:38:24,531 --> 02:38:50,991
+Tamam mı? Aklımıza unutacağız. Bir şekilde karşımıza çıkarsa, yani sonsuz öyle sıfır belirsizliği varmış gibi düşünebilirsiniz ama ben öyle demeyin. Genel olarak bunu söyleyeyim. Ne üzeri bir bölü ne gibi daha genel olabilir şöyle. Şu birin yerine başka bir sayı da olabilir. Ben öyle yazdım ama mekila şu 2 artı 3 neye olabilir. Ya da 5 artı 2 neye olabilir. Fark etmez. Genel sonuç değildir. Şu kuraldan geliyor tamam mı? Şu çözümden geliyor.
+
+851
+02:38:52,948 --> 02:39:11,427
+Evet, şimdi arkadaşlar, matematikteki en önemli kurallardan bir tanesi bu. Karşılaşabileceğiniz matematikteki bulunmuş en önemli kural, teorem budur. En önemlilerinden birisi, hakikaten. Adı sıkıştırma kuralı. Matematik 1'de duydunuz mu bunun adını? Matematik 1'de?
+
+852
+02:39:12,368 --> 02:39:12,948
+Evet hocam.
+
+853
+02:39:13,488 --> 02:39:19,188
+Limitle duydunuz mu böyle bir kural? Duymadınız mı?
+
+854
+02:39:21,620 --> 02:39:23,960
+Hocam, sandviç teoremi diye mi geçiyordu acaba?
+
+855
+02:39:25,320 --> 02:39:26,000
+Acıktım mı?
+
+856
+02:39:27,180 --> 02:39:28,240
+Olabilir hocam.
+
+857
+02:39:28,480 --> 02:39:34,280
+Yani, bazıları söylüyor ama ben sandviç teoremi demenin doğru olduğunu düşünmüyorum yani.
+
+858
+02:39:34,720 --> 02:39:36,940
+Bazıları söylüyor ama doğru değil.
+
+859
+02:39:37,980 --> 02:39:41,780
+Yani İngilizcesi, İngilizcesi squeeze ya da pinging.
+
+860
+02:39:42,840 --> 02:39:45,020
+Squeeze diyor ya da pinging diyor.
+
+861
+02:39:45,400 --> 02:39:48,840
+Squeeze de sıkıştırma demek, pinging de sıkıştırma demek.
+
+862
+02:39:49,268 --> 02:40:05,268
+Yani, bu o zaman tost makine tutuyor mu denebilir? Yani, sandviç nedir ya? O zaman sıkıştırdın. Değil mi? Neyse, boş ver. Nasıl biliyorsanız öyle olsun, önemli değil. Sıkıştırma kuralı arkadaşlar. Özeti şu, eğer bir dizi...
+
+863
+02:40:05,940 --> 02:40:26,380
+alttan ve üstten başka iki dizi ile sıkıştırılıyorsa, bakın, eğer bir dizi onu beğen edildiğini, alttan ve üstten başka iki dizi ile sıkıştırılıyor ise ve o başka dizilerin limitleri aynı ise, o zaman diyor, orijinal dizinin limiti de olur.
+
+864
+02:40:27,667 --> 02:40:47,207
+Tamam mı? Eğer bir dizi, BN diye düşünün, başka iki dizi, onlar AN ve CN diye düşünün, alttan ve üstten sıkıştırılıyor ve AN ve CN'nin limiti aynı sayı ise, BN'nin limiti de odur diyor.
+
+865
+02:40:47,827 --> 02:41:00,367
+beğenen limiti de odur diyor. Şu örnek çok oturaklı, çok orijinal bir örnek. Ben size daha basit bir şey yazayım şimdi şuraya. Daha basit olanı yazayım önce. Kolayca anlayacağınız bir şey yazayım.
+
+866
+02:41:04,500 --> 02:41:16,860
+Kolay anlayacağınız bir şey yazayım ben. Bu biraz daha zor çünkü. Ona göre. Matematik 1 ile bağlantı kuruyum. Kolay anlaşılsın diye.
+
+867
+02:41:21,523 --> 02:41:28,863
+Eğer isterseniz arkadaşlar bunları, kağıt kaleminiz yanınızda hep hazır olsun. Bunu yazabilirsiniz. Bunlar isterseniz.
+
+868
+02:41:36,659 --> 02:41:37,619
+Dimity gördünüz.
+
+869
+02:41:43,700 --> 02:41:53,360
+Nasıl bir verişsizlik veriyor arkadaşlar? Hemen hızlıca söyleyelim. Bu dizi için yazabilirim ama ben özellikle fonksiyonlara bağlamak kuruyum diye, yara hatırlayayım diye fonksiyon yazdım.
+
+870
+02:41:54,080 --> 02:42:03,900
+Tay kısmında arkadaşlar, ilk sonsuza giderken, bak şurası ne oluyor? Kırmızı il işaret değil. Şu ne ilk sonsuza giderken? Bu. Hadi karşılıklı konuşalım.
+
+871
+02:42:03,900 --> 02:42:04,600
+Sonsuz.
+
+872
+02:42:05,172 --> 02:42:17,352
+Sonsuz. Kosinist'i söyleyeceğim. Paydaya gelelim. X sonsuza giderken X karede sonsuz. Yani pay kısmında burası sonsuzu veriyor. Payday kısmında da burası sonsuzu veriyor. Peki, X sonsuza giderken kosinist nereye gidiyor arkadaşlar?
+
+873
+02:42:22,963 --> 02:42:30,744
+Evet, çok teşekkür ederim. Arkadaşlar, işinizi alabilir miyim? Çok teşekkür ederim.
+
+874
+02:42:31,844 --> 02:42:32,404
+[öğrenci] Hoca.
+
+875
+02:42:33,664 --> 02:42:45,524
+[öğrenci]'a çok teşekkür ediyorum. X ne olursa olsun arkadaşlar, argüman yani ya da açı, ne olursa olsun, kosinus daima x1 ile artı bir arasında bir sayıdır.
+
+876
+02:42:50,611 --> 02:43:10,491
+Peki, iki yol düşünebiliriz. Birincisi, kuralı kullanalım. Hadi şurada kuralı kullanın, birisi sesli düşünsün. Kuralı kullanın bakalım, bu limiti bulabilecek. Kuralı kullanın. Pay ve paylarının kendine göre türeni alacaksınız yani. Pay kısmında ne kalır?
+
+877
+02:43:10,491 --> 02:43:11,731
+Pay kısmında.
+
+878
+02:43:12,351 --> 02:43:14,572
+Bir artı, yok eksisi.
+
+879
+02:43:15,191 --> 02:43:16,331
+Bir eksisi.
+
+880
+02:43:17,811 --> 02:43:25,272
+Bak, Lopital kuralını kullanıyorum. Bir vurgu yapacağım. Bir söz söyleyeceğim de. Paydanın türevi?
+
+881
+02:43:26,231 --> 02:43:27,492
+X.
+
+882
+02:43:28,292 --> 02:43:30,851
+Evet. Buyurun. Cevap?
+
+883
+02:43:33,092 --> 02:43:33,851
+Sıfır.
+
+884
+02:43:34,531 --> 02:43:34,851
+Cevap?
+
+885
+02:43:35,612 --> 02:43:36,272
+Nereden buldun?
+
+886
+02:43:37,851 --> 02:43:39,511
+Doğru cevap da nereden buldun?
+
+887
+02:43:47,700 --> 02:44:07,220
+Aha buradan buldum, buradan. Şuradan buldum. Şuradan, şuradan doğru. Şimdi oraya geleceğim. Bak şimdi. Normal olarak, normal olarak, x sonsuza giderken bu ne arkadaşlar şıraplı? X sonsuza giderken şıraplı ne? Sinüs x. [öğrenci] Bey bir daha söyleyin. X sonsuza giderken burası?
+
+888
+02:44:08,500 --> 02:44:09,880
+Eksi 1 ile 1'e soracağım.
+
+889
+02:44:09,880 --> 02:44:14,680
+Hadi. Eksi 1 ile 1 arasında bir sayı. Eksi 1 ile 1 arasında kaç tane sayı var?
+
+890
+02:44:16,819 --> 02:44:17,319
+Sonsuz tane.
+
+891
+02:44:18,579 --> 02:44:21,799
+Hayır. Sonsuz bir sayıyı temsil etmez demedim mi demin?
+
+892
+02:44:22,680 --> 02:44:24,659
+Çok fazla sayı var demek istediğim.
+
+893
+02:44:25,239 --> 02:44:38,079
+Evet. Eksi bir ile artı bir aslında kaç tane soy olduğunu Allah'tan başka bilen yok. Kifre bilmiyor. Bir sürü sayı var. O zaman biz neyi biliyoruz? Limit varsa tekli demedik mi? Limit varsa tekli dedik.
+
+894
+02:44:38,079 --> 02:44:42,879
+Burada çok sayı olduğuna göre o zaman biz şöyle mi dememiz lazım. Limit yoktur mu dememiz lazım.
+
+895
+02:44:44,020 --> 02:44:45,520
+Çok olduğuna göre burada sayılır.
+
+896
+02:44:46,680 --> 02:44:50,240
+Değil mi? Bak, çoktur desek, yani limit yoktur desek, yanlış söylemiş oluyor.
+
+897
+02:44:50,720 --> 02:44:55,380
+Demek dediğim şey arkadaşlar, L'Opital kuralı, can simidi değilmiş.
+
+898
+02:44:55,900 --> 02:44:58,100
+Denize düşünce L'Opital kuralına sarılmayacaksın.
+
+899
+02:44:58,520 --> 02:45:00,260
+Duymayan var mı? Onaylayın lütfen.
+
+900
+02:45:02,760 --> 02:45:03,360
+Evet, hocam.
+
+901
+02:45:04,600 --> 02:45:08,840
+L'Opital kuralı can simidi değildir. Denize düşünce L'Opital kuralına sarılmayacaksın.
+
+902
+02:45:09,120 --> 02:45:19,120
+Başka işlemlere ihtiyacımız olabilir. Özellikle o 4 anahtar limit vardı. Unutmayacaktık. 4 anahtar limit. Bir de ona sıkıştırma kuralını ekledim.
+
+903
+02:45:19,440 --> 02:45:32,600
+Bakın, sıkıştırma kuralını ekledim. O değişikliği aklımızda tutarsa yapamayacağımız hiçbir limit yoktur. Yani istisnadır diyelim. Yapamayacağımız limit sayısı istisnadır.
+
+904
+02:45:33,108 --> 02:45:53,927
+Hakikaten öyledir. 4 anahtar limite, bir de sıkıştırma kuralını ilave ettik. Bunun dışında kalan istisna limitleri de özellikle sonsuz bölü, sonsuz, pardon, sonsuz üzeri 0 ve belirsizliği veren ve 0 üzeri 0 belirsizliği veren o iki tür limiti tekrar ediyorum.
+
+905
+02:45:56,788 --> 02:46:18,788
+0 üzeri 0 belirsizliklerini, lofitler kuralını kullanmadan yapamıyoruz. Onun dışından 6 tane daha var galiba. Bütün belirsizlikleri, o 4 anahtar limit ve sıkıştırma kuralıyla bir şekilde halledebilir. Ama lofitler kural da her zaman aklınızda bulunsun yani. İhtiyarınızda olduğu zaman kullanılsın. Şimdi arkadaşlar, o zaman nasıl? Bunun cevabını söyleyin. Söylemiş miydiniz cevabını?
+
+906
+02:46:21,788 --> 02:46:23,108
+Sofır dedik hocam.
+
+907
+02:46:23,540 --> 02:46:26,060
+Sıfır dedik hocam. Sayı bölü sonsuz sıfır.
+
+908
+02:46:27,300 --> 02:46:50,280
+Tamam. Sayı bölü sonsuz anlamına geldiği için limit sıfır dedik. Nereden bildik bunu arkadaşlar? Nereden bildik? Şundan bildik. Şundan bildik. Şuraya yazayım ben. X büyük sıfır dememene gerek yok. Şimdi kosinüs teta, eksi bir lağı tı bir arasında ya, bölüyüm. Bunu anlatayım yani, görün bunu.
+
+909
+02:46:51,123 --> 02:46:53,763
+X'i dikkat almadan yazıyorum. Özür dilerim.
+
+910
+02:46:59,731 --> 02:47:02,231
+Kosinistik kısmı aldım, diğeri çok kolay çünkü.
+
+911
+02:47:07,379 --> 02:47:11,920
+Amacımız sıkıştırma kuralının önemini anlatmak. Onun için üzerinde çekturuyorum. O kadar önemli ki.
+
+912
+02:47:13,399 --> 02:47:20,879
+Şimdi şu maviyle yazdığım kısma baktığınızda arkadaşlar, bakın ortada cos x bölü x kare var. Şurası değil mi? Ortadaki kısım şurası. Şu kısım.
+
+913
+02:47:21,759 --> 02:47:28,279
+Şunu dikkat almamıza gerek yok. Burası bir birlik ya. O zaten sıfır. Tamam mı? Burası bir birlik olduğu için, burası zaten sıfır.
+
+914
+02:47:28,520 --> 02:47:33,979
+Şimdi bakın arkadaşlar, sol tarafa bakalım. Eksi bir birlik x kare. X sonsuza gidip sol taraf ne oluyor?
+
+915
+02:47:34,611 --> 02:47:37,131
+X-10'da giderken sol taraf, sesli konuşun mu?
+
+916
+02:47:37,551 --> 02:47:38,031
+0.
+
+917
+02:47:38,531 --> 02:47:40,651
+X-10'da giderken burası, 0.
+
+918
+02:47:41,271 --> 02:47:42,931
+Sağ taraf, 0.
+
+919
+02:47:43,252 --> 02:47:47,011
+Ortadaki terim, işte sıkıştırma kuralına göre 0'dır diyor bak.
+
+920
+02:47:47,431 --> 02:47:47,951
+Veriyor musunuz?
+
+921
+02:47:48,351 --> 02:47:54,651
+Alttan ve üstten iki genel terimle sıkıştırılıyor ve aynı limite sahiplerse onlar ortadaki de aynı limite sahiptir diyor.
+
+922
+02:47:54,971 --> 02:47:56,851
+O kadar önemli ki sıkıştırma kuralı.
+
+923
+02:47:56,891 --> 02:47:59,092
+Hakikaten denize düşünce buna sağlanacak.
+
+924
+02:47:59,531 --> 02:48:00,391
+O kadar önemli ki.
+
+925
+02:48:00,971 --> 02:48:01,471
+Can simidi.
+
+926
+02:48:02,036 --> 02:48:24,416
+Olduk olmadık yer de sizi kurtarıyor musunuz? Sıkışı kullandığınız zaman çok zor gibi görünen limitler inanılmaz derecede kolay olabilir. Daha sonra da bunu kullanacağız tamam mı? Serilerde de kullanacağız bunu. Sonra çok değişkenli fonksiyonlarda da kullanmaya devam edeceğiz. Orada tabii atıfları başka türlü olacak. Şimdi buradaki atıf şekliyle, yani dizilerdeki şekliyle böyle anlatmış olalım.
+
+927
+02:48:25,747 --> 02:48:46,768
+Şu örnek oldukça zor bir örnek arkadaşlar. Ben tabii kitap oturaklı olsun diye emek emek hazırlıyorum tabii yani insanlara faydalı olsun diye. Şu örneğe bir göz atıp ben de sizinle beraber bakayım. Zor bir örnek. Karşımıza böyle örnekler çıkabilir mi? Şuna test olursa çıkar bence.
+
+928
+02:48:47,443 --> 02:49:14,503
+Yani, sınav test olursa çıkar. Bunu literatürde bulamazsınız. Ben kendi örneğimi, kendim yazdım bunu. Şimdi ilk kez siz görüyorsunuz. Ben okuyayım. Bakın, AN genel terimi, bizim genel terimi, N'den 2N'ye, 1-e üzeri, x, böyle değil. İntegralle verilmiş, biliyor musunuz genel terim? Karşınıza böyle sorular çıkacak, hiç şüpheniz olmaz. Bakın, böyle verilmiş. Serilerde de kullanacağız bunlar. Genel terim böyle verilmiş.
+
+929
+02:49:14,816 --> 02:49:39,816
+Sonuçta bu integralin hesabı yapılabilirse neye bağlı değil mi? O da A ne? O mu? Gene seri böyle verilmiş. Şimdi soru limitini bulmuş. Bakalım şimdi. Şimdi bu integrali hesaplama ihtimalimiz yok arkadaşlar. Yani bu integrali hesaplayacak hiç kimse yok şu anda yeryüzünde. Daha vurgul bir deyim de bu integrali hesaplama ihtimalimiz yok.
+
+930
+02:49:40,948 --> 02:50:00,587
+Belkiyle ben hesaplanır bilmiyorum. Benim ömrüm yetmez ama siz belki görürüz. Bu integral hesaplanamaz bir integral. Ama soruyu soran, yani ben ne diyorum? Limitini buluruz diyorum. O zaman bir şekilde bunu yap diyorum. Siz soruyu sorana saygı duyuyorsanız, limitinin varlığını biliyorsunuz. Bul diyor çünkü sana. Değil mi? Bul dediğine göre bulacağım.
+
+931
+02:50:01,363 --> 02:50:22,463
+Yani hesaplanılması falan diye bırakamazsın. Tamam. O zaman bakalım nasıl yapacağız. Yani tiyatı temizle. Buyurun. Geldik aşağıya. Önce arkadaşlar, şu integrantı, integrant demek, şu integrale alınan ifade demek. Bak, integrantı bir fonksiyon gibi yazayım. Tamam, bir fonksiyon gibi yazayım.
+
+932
+02:50:22,799 --> 02:50:31,119
+Bunun integre edilebilirdiğini sağlamak için, yani şu sorunun doğruluğunu garanti etmek için, bu fonksiyona göre süreklilikten bahsetmem lazım.
+
+933
+02:50:31,459 --> 02:50:37,840
+Sürekli olan her fonksiyon integre edilebilir, tamam mı? Matematik 1'de gördünüz, sürekli olan her fonksiyon integre edilebilir.
+
+934
+02:50:38,239 --> 02:50:44,119
+Dolayısıyla, şimdi f0, 3, 1 alayım ki fonksiyon sürekli olsun. Bunun limitinin 1 olduğunu biliyor musunuz?
+
+935
+02:50:44,119 --> 02:50:47,879
+2, 3, 0 da limitinin 1 olduğunu, şunu, yazayım mı şuraya?
+
+936
+02:50:50,484 --> 02:50:51,783
+Biliyoruz hocam.
+
+937
+02:50:52,423 --> 02:50:52,684
+Efendim?
+
+938
+02:50:53,404 --> 02:50:54,184
+Biliyoruz hocam.
+
+939
+02:50:54,744 --> 02:51:10,644
+Tamam. Dolayısıyla böyle fonksiyonu tanıdılarsam bu fonksiyon sürekli olduğundan integre edilebilir ama edemiyoruz. Bak buraya yazmışım. Yani belirsiz integral elementel bir fonksiyon değildir demek bunun integralini yapamayız. Hesaplayamayız bunun integralini demektir.
+
+940
+02:51:10,644 --> 02:51:13,884
+Şimdi o zaman kare bir sükür mü?
+
+941
+02:51:14,575 --> 02:51:39,255
+Bir de, matematikte arkadaşlar, özellikle limitte, 4 anahtar limit, artık sıkıştırmak kuralımız var. Bunu kabaca rakamla beşleyelim. Bu beşliği aklımıza tuttuğumuz sürece, işin içinden sığdırmak çok zor olmuyor. Genelde çözüyoruz. Şimdi, o zaman sıkıştırmak, anahtar limitlere uymuyoruz zaten değil mi? Dördüne de uymuyoruz zaten. Ortada limit alınacak bir şey görünmüyor. İntekal olsun.
+
+942
+02:51:39,796 --> 02:51:47,456
+O zaman, tıkıştırma kuranına gireyim, yolu açmak için, bakın, şu orijinal bilgi, şunu şuraya tam getireyim, kaleme geçeyim.
+
+943
+02:51:52,819 --> 02:52:18,119
+Mavi biçim, tamam. Şimdi arkadaşlar, şunu biliyorsunuz değil mi? Bu bir doğal eşitsizlik. Bu doğal eşitsizlik cümleciğini çok kullanacağım. Serilerde de kullanacağım. Mukayese yapmamız gerektiği için, karşılaştırma yapmamız gerektiği için serilerde de çok ihtiyacımız olacak. Demin de söyledim ya, mukayese testi en önemli testlerden birisidir. Neredeyse %90-95'ini çözer sorularım.
+
+944
+02:52:18,611 --> 02:52:29,771
+Doğal bir eşitsizlik. e, e'nin 2.72 olduğunu düşünürseniz, u pozitif olduğu sürece, u, neden pozitif aldığımı da birazdan göreceksiniz, u, e üzeri u'dan küsüktür.
+
+945
+02:52:30,072 --> 02:52:38,671
+Burada anlaşılmayan, kafanızda ataklanan bir şey var mı altını çizdiğim kısımda? Var mı arkadaşlar? Bu bir doğal eşitsizlik.
+
+946
+02:52:38,671 --> 02:52:46,491
+e 2.72, u pozitif olunca, pozitif olan her u için u küçük, e üzeri u'dur. Bu bir doğal eşitsizlik.
+
+947
+02:52:46,611 --> 02:52:51,651
+Pozitif almamız sebebini de şurada görüyorsunuz. Negatifleri de yazabilirim de bazı şeyler.
+
+948
+02:52:52,031 --> 02:53:10,211
+Pozitif bölme yapacağım çünkü. Şimdi, o zaman arkadaşlar, bu doğal eşitçilik varsa, x büyük 0 için, işler ve şartımı yaparak, yani e üzeri uyu, sol tarafa e üzeri eksi u, uyu da sağ tarafa u üzeri eksi 1 diye aldığımız varsa yazsanız, u'yu yeri x yaz.
+
+949
+02:53:11,572 --> 02:53:14,051
+Şu geçişler anlaştırılan bir şey varsa sorun.
+
+950
+02:53:14,708 --> 02:53:32,708
+Şu geçişte. Anlaşılmayan bir şey var mı? Arkadaşlar, ya da ben de burada bırakayım isterseniz. Ben iyice sesim gitmeye başladı. Yoruldum da. Siz de yoruldunuz. Yükleme fazla olmasın. Yarın bu örnekten devam edecek olur mu?
+
+951
+02:53:33,567 --> 02:53:35,468
+Olur hocam.
+
+952
+02:53:35,628 --> 02:53:35,808
+Tamam.
+
+953
+02:53:36,348 --> 02:53:42,087
+Orada dersi bırakayım. Yarın bu örnekten devam edelim. Benim de sesim iyice gitti. Yükleme fazla oldu zaten.
+
+954
+02:53:43,092 --> 02:54:07,952
+Yarın buradan kaldığımız yerden devam ederiz arkadaşlar. Evet arkadaşlar, dersimin başında söyledim. Aves'ten kısa özetleri yükleyeceğim. Size bilgi veririm yüklediğim zaman. Oradan Aves'ten alırsınız, oradan çalışırsınız. Beni dinlediğiniz için çok teşekkür ederim arkadaşlar. Yarın görüşünceye kadar sağlıcakla kalın. Kendinize çok dikkat edin, olur mu? İyi günler.
+
+955
+02:54:07,952 --> 02:54:09,592
+Sağ olun hocam. Teşekkür ederiz.
