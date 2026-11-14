@@ -1,0 +1,2071 @@
+1
+00:13:52,436 --> 00:13:55,556
+Good morning folks. Can you hear me?
+
+2
+00:13:57,495 --> 00:13:58,536
+Good morning teacher.
+
+3
+00:14:00,916 --> 00:14:08,376
+In our last week course, we talked about determinant function and its properties.
+
+4
+00:14:08,856 --> 00:14:18,616
+In this week, we will give a special method to compute the determinant of 3x3 matrices, which is called as Sarlu's rule.
+
+5
+00:14:23,600 --> 00:14:29,100
+inverse of a square matrix, by help of adjoint matrices.
+
+6
+00:14:29,100 --> 00:14:31,100
+Let's go on.
+
+7
+00:14:31,100 --> 00:14:35,600
+What is the service rule?
+
+8
+00:14:35,600 --> 00:14:49,600
+Consider a 3x3 matrix, that's A, B, 3x3 matrix, with the given entries A, B, C, A.
+
+9
+00:14:49,600 --> 00:14:55,019
+D, E, F, G, H, and I.
+
+10
+00:14:56,639 --> 00:15:11,420
+The determinant of A, the determinant of A is, by using Laplace expansion along the first row of A, is just A times.
+
+11
+00:15:13,172 --> 00:15:40,532
+We just close up the first row and first column, the determinant of two by two square matrix, AFHI, minus the sign comes from adjoint of the entry B, B times, B times, we close up second column and first row, DF,
+
+12
+00:15:41,011 --> 00:15:54,531
+Gi plus C times, sin of C is positive, so C times D E GH.
+
+13
+00:15:55,311 --> 00:15:55,631
+Okay.
+
+14
+00:15:56,851 --> 00:16:03,631
+By expanding these all terms, these all three terms, we have A times
+
+15
+00:16:04,015 --> 00:16:08,175
+We can compute the determinant of a 3x3 matrix.
+
+16
+00:16:08,175 --> 00:16:27,836
+Ai minus FH minus B times Di minus GF plus C times DH minus Ga.
+
+17
+00:16:31,316 --> 00:16:38,316
+We distribute the constant or the other part of determinant.
+
+18
+00:16:59,028 --> 00:17:06,428
+CDH-CGE.
+
+19
+00:17:09,288 --> 00:17:13,528
+Here we have three positive term and three negative term.
+
+20
+00:17:14,728 --> 00:17:17,928
+Let's separate positive and negative terms.
+
+21
+00:17:20,028 --> 00:17:24,528
+AEI plus...
+
+22
+00:17:27,763 --> 00:17:46,063
+BGF plus CDH minus AFH minus BDI and our last term will be CGA.
+
+23
+00:17:47,583 --> 00:17:52,243
+And this is the determinant of a 3x3 matrix.
+
+24
+00:17:52,980 --> 00:18:10,380
+We will compute this by a special method, which we call as a service rule. We just append the first two columns at the right side of the matrix to compute this determinant.
+
+25
+00:18:17,140 --> 00:18:24,720
+B, C, D, E, F, G, H, I.
+
+26
+00:18:25,300 --> 00:18:31,640
+Just rewrite first two columns at the right side of the determinant.
+
+27
+00:18:37,523 --> 00:18:47,603
+A, D, G, B, E, and H.
+
+28
+00:18:58,771 --> 00:19:15,571
+Here we have A, E, I, the first positive sign term, triple product of the determinant, A, E, I.
+
+29
+00:19:15,571 --> 00:19:25,451
+The second one, B, G, F, here we have B, F, G, B, G, F.
+
+30
+00:19:25,807 --> 00:19:31,528
+And the last one, CDH, here we have CDH, with the positive side.
+
+31
+00:19:31,528 --> 00:19:32,168
+Okay.
+
+32
+00:19:37,748 --> 00:19:42,668
+Antidiagonal will give the terms with negative sign.
+
+33
+00:19:43,567 --> 00:19:48,788
+The first one is, let's just line up this term also.
+
+34
+00:19:53,668 --> 00:19:59,628
+AFH, AFH, here we have AFH.
+
+35
+00:20:00,468 --> 00:20:14,868
+Bdi, Bdi, Bdi, and the last term, Cge, you have Cge, with negative sign.
+
+36
+00:20:15,380 --> 00:20:30,380
+By rewritin first two columns at the right side of the determinant, we can memorize this method to compute determinant of a 3x3 matrix.
+
+37
+00:20:31,100 --> 00:20:38,120
+This method just can be used for computing determinant of 3x3 matrices.
+
+38
+00:20:39,059 --> 00:20:46,359
+A special case, a special method for computing determinant of 3x3 matrices.
+
+39
+00:20:46,899 --> 00:21:06,480
+Here we have our matrix, matrix A, and we just append the first two columns at the right of the matrix, and we compute all the triples, diagonals and anti-diagonals, from left top to the right bottom.
+
+40
+00:21:06,912 --> 00:21:23,211
+Sin-o triples will be positive, and sin-o anti-diagonal terms, triples multiplications, will be negative, from the right top to the left bottom of the matrix.
+
+41
+00:21:24,211 --> 00:21:28,412
+Let's give an example for the Saris rule.
+
+42
+00:21:28,412 --> 00:21:30,412
+Here we have another...
+
+43
+00:21:32,339 --> 00:21:38,339
+...internetini almak için...
+
+44
+00:21:38,339 --> 00:21:42,339
+...savarızlıkla...
+
+45
+00:21:42,339 --> 00:21:46,339
+...gümetrik olarak...
+
+46
+00:21:46,339 --> 00:21:49,035
+...şavarızlık...
+
+47
+00:21:50,548 --> 00:21:56,347
+Linen denetler, ve neklar, denetler, negatif, siny.
+
+48
+00:21:56,347 --> 00:22:04,468
+Sadece tripli, multiplication, tripli, product, ve ekipma, all these terms.
+
+49
+00:22:04,468 --> 00:22:11,748
+We have six terms, six triple products, ekipma, all these six triple products,
+
+50
+00:22:14,355 --> 00:22:20,036
+TAKING INTO CONSIDERATIONS THE SIGN OF EACH PRODUCT.
+
+51
+00:22:20,036 --> 00:22:22,036
+HERE WE HAVE AN EXAMPLE.
+
+52
+00:22:22,036 --> 00:22:35,556
+ALSO YOU CAN WRITE FIRST TWO ROWS, FIRST TWO ROWS AT THE BOTTOM OF THE DETERMINANT TO COMPUTE DETERMINANT OVER THE 3 X 3 MATRIX, SQUARE MATRIX.
+
+53
+00:22:37,107 --> 00:22:42,387
+Let's compute the determinant of this matrix by Sarif's rule.
+
+54
+00:22:44,307 --> 00:22:57,947
+Our first row is just one, two and three, second row, four, five, six, ten.
+
+55
+00:22:59,476 --> 00:23:15,476
+We need to compute all triple multiplication, our first triple multiplication, a plus sign, 7 times 2 times 6 will be...
+
+56
+00:23:21,907 --> 00:23:29,907
+84. Ok. Here we have another positive sine triple product.
+
+57
+00:23:33,875 --> 00:23:41,955
+4 x 8 x 3, 96.
+
+58
+00:23:51,476 --> 00:24:01,476
+The last triple will be 1x5x945.
+
+59
+00:24:01,476 --> 00:24:04,476
+Our negative terms...
+
+60
+00:24:09,811 --> 00:24:34,411
+Here we have the first one, negative, 3x, 5x, 7x, 2nd one is just negative, 6x, 8x, 1x, and the last one is just...
+
+61
+00:24:34,708 --> 00:24:47,500
+9 times 2 times 4. By adding up all these terms we will get the determinant of matrix A.
+
+62
+00:24:51,923 --> 00:25:09,503
+Here we have the determinant, the positive products are 45, 96, 84, and negative ones are 105, 48, and 72.
+
+63
+00:25:09,503 --> 00:25:17,663
+The addition of all these six terms is just zero. The determinant of matrix A is zero.
+
+64
+00:25:19,571 --> 00:25:33,571
+We can also compute determinant by rewriting first two rows at the bottom of the matrix. Let's compute by the second way. This is also called Sarrius rule.
+
+65
+00:25:33,571 --> 00:25:43,307
+1, 4, 7, 2, 5, 8.
+
+66
+00:25:51,220 --> 00:25:57,940
+Again, from left top to right bottom, we will get positive products.
+
+67
+00:25:59,300 --> 00:26:06,420
+Here we have 1 times, 5 times, 9, 45.
+
+68
+00:26:07,860 --> 00:26:15,779
+Here we have 2 times, 6 times, 7.
+
+69
+00:26:18,291 --> 00:26:28,851
+84, and the last positive term will be 3 times, 4 times, 8, 96.
+
+70
+00:26:28,851 --> 00:26:29,692
+Okay.
+
+71
+00:26:31,271 --> 00:26:33,851
+Our negative terms...
+
+72
+00:26:42,420 --> 00:26:52,019
+Minus, 3 times, 5 times, 7, 105.
+
+73
+00:26:54,019 --> 00:26:58,180
+Here we have the second negative triple product.
+
+74
+00:26:58,900 --> 00:27:06,340
+1 times, 6 times, 8, minus 48.
+
+75
+00:27:06,980 --> 00:27:07,700
+Last one.
+
+76
+00:27:08,627 --> 00:27:26,627
+Bu, 2 x 4 x 9, 72, minus 72 also, 45, 96, 84, our positive terms.
+
+77
+00:27:35,791 --> 00:27:38,632
+8 ve 72.
+
+78
+00:27:38,632 --> 00:27:43,511
+The addition of all these six terms also is zero.
+
+79
+00:27:43,511 --> 00:27:48,871
+The determinant of A, so the determinant of A is zero.
+
+80
+00:27:48,871 --> 00:27:54,711
+By using Sarish rule, we find determinant as zero.
+
+81
+00:27:54,711 --> 00:27:59,271
+Any question related to Sarish rule?
+
+82
+00:28:00,948 --> 00:28:22,208
+Bu matrisi, bu matrisi, 3x3 matrisi, 3x3 matrisi, 3x3 matrisi, 4x4 matrisi, 4x4 matrisi matrisi çok çok kullanılır.
+
+83
+00:28:27,508 --> 00:28:29,508
+Ok, I'm ready.
+
+84
+00:28:30,867 --> 00:28:34,268
+Just use service rule for 3x3 matrices.
+
+85
+00:28:34,268 --> 00:28:43,548
+4x4, 5x5 matrices service rule can be defined, but is very very useless.
+
+86
+00:28:48,564 --> 00:29:11,524
+No, we will use, let's give another example for Sargut's rule, let's give another example, let's be a 3x3 matrix, 1, minus 1, 0, 2, 1, 3, 4, minus 2,
+
+87
+00:29:12,115 --> 00:29:17,835
+Also, at this zero here, you have, what is the determinant of B?
+
+88
+00:29:18,955 --> 00:29:23,435
+We can use Laplace expansion to compute the determinant.
+
+89
+00:29:23,795 --> 00:29:33,935
+We can expand determinant along the first, second, third row, also first, second, third columns of B, but
+
+90
+00:29:34,240 --> 00:29:53,160
+Also, we can use row operations in order to get a triangle form of the matrix, a quieten triangle form of the matrix, because the determinant of triangular matrices is just the multiplication of diagonal elements.
+
+91
+00:29:53,440 --> 00:29:57,579
+Also, you can, for 3x3 case, you can use sunrich groove.
+
+92
+00:29:57,980 --> 00:30:00,160
+This is another example to...
+
+93
+00:30:00,915 --> 00:30:02,915
+for the service room.
+
+94
+00:30:04,915 --> 00:30:12,915
+Let's append first two columns at the right side of the matrix B.
+
+95
+00:30:16,276 --> 00:30:26,276
+O ilk kolumn is just 1, 2, 4. O ilk kolumn is minus 1, 1, and minus 2.
+
+96
+00:30:29,715 --> 00:30:36,955
+O pozitiv sign, triple multiplications, will be, here we have, zero.
+
+97
+00:30:38,695 --> 00:30:42,475
+The second one is just minus 12.
+
+98
+00:30:44,355 --> 00:30:46,435
+The last one is also zero.
+
+99
+00:30:50,804 --> 00:30:52,804
+vekizli bir şey.
+
+100
+00:31:02,067 --> 00:31:24,067
+Our negative product, here we have a zero again, four times one times zero is zero, one times three times minus two is just minus six, and the last one, the last triple multiplication is again zero.
+
+101
+00:31:38,132 --> 00:31:56,132
+0 minus 12 plus 0 plus 0 minus 6 plus 0.
+
+102
+00:31:56,132 --> 00:31:59,132
+This is just 18.
+
+103
+00:32:01,811 --> 00:32:05,331
+Determinant of matrix B is just 18.
+
+104
+00:32:14,324 --> 00:32:25,304
+[öğrenci], let's try, for the matris P, let's try again, service rule.
+
+105
+00:32:28,660 --> 00:32:29,800
+A...
+
+106
+00:32:36,819 --> 00:32:49,659
+B is 1, minus 1, 0, 2, 1, 3, 4, minus 2, 0.
+
+107
+00:32:50,480 --> 00:32:59,720
+If we append 2nd and 3rd row, at the top of the matrix, then,
+
+108
+00:33:03,412 --> 00:33:06,912
+Okay. Hocam. Yes?
+
+109
+00:33:06,912 --> 00:33:16,212
+Şey, ortadaki artı, eksi olması gerekmiyor mu? Yani eksi 12, eksi, eksi 6 olması gerekmiyor mu?
+
+110
+00:33:16,212 --> 00:33:23,112
+Ah, you are right, thank you. You have a question sign. Thanks.
+
+111
+00:33:26,324 --> 00:33:34,983
+Sin6 is positive, so the determinant is just minus 6.
+
+112
+00:33:34,983 --> 00:33:36,584
+Okay, thank you.
+
+113
+00:33:40,339 --> 00:33:54,119
+Minus 2 times 3 times 1 is minus 6. We have a negative sign, so the sign of 6 is positive. Here we have a positive 6. Minus 12 plus 6 is minus 6.
+
+114
+00:33:56,659 --> 00:34:07,119
+The second row is 4 minus 2 and 0. So let's compute all three multiplications.
+
+115
+00:34:08,371 --> 00:34:23,811
+products, all three products. Our first product is just zero. This is second product, minus 12, and zero again.
+
+116
+00:34:25,572 --> 00:34:35,891
+Also, our negative terms. This is first triple. Minus six will be plus six.
+
+117
+00:34:36,628 --> 00:34:52,108
+Here we have zero, and again zero. Determinant, OB, is just, plus,
+
+118
+00:34:58,228 --> 00:35:24,327
+0-12, plus 0, plus 6, plus 0, plus 0. This is just negative 6. You can also rewrite second and third row as the first and second.
+
+119
+00:35:25,172 --> 00:35:31,672
+Bu, new matris, ok. Bu, bu, valid for service row, [öğrenci].
+
+120
+00:35:32,371 --> 00:35:42,672
+You can use this way to compute service row. Also, you can append the last two columns at the left side of the determinant.
+
+121
+00:35:48,244 --> 00:36:11,024
+This is a 3x3 matrix, with 3 rows. You can append, first, excuse me, last 2 columns as the first 2 columns. Okay. You can also compute in this way. Also you can compute in this way.
+
+122
+00:36:15,699 --> 00:36:16,800
+Just an a minute.
+
+123
+00:38:49,396 --> 00:38:59,896
+You can also rewrite first and second column as the last two columns of matrix, 3x3 square matrix.
+
+124
+00:38:59,896 --> 00:39:04,696
+Also, this can be done for the rows of the matrix.
+
+125
+00:39:06,756 --> 00:39:12,536
+Just rewrite first and second rows as the last two rows also.
+
+126
+00:39:23,443 --> 00:39:25,443
+2. 3. 4.
+
+127
+00:39:25,443 --> 00:39:27,443
+1.
+
+128
+00:39:27,443 --> 00:39:29,443
+Bir de bu şekilde
+
+129
+00:39:29,443 --> 00:39:31,443
+seçeneği
+
+130
+00:39:31,443 --> 00:39:35,443
+bir de bu şekilde
+
+131
+00:39:35,443 --> 00:39:37,443
+3x3
+
+132
+00:39:37,443 --> 00:39:39,443
+x e
+
+133
+00:39:39,443 --> 00:39:39,755
+Bir de soru var.
+
+134
+00:39:43,443 --> 00:39:54,203
+Now, we will give another method to find the inverse of a square matrix with non-zero determinant.
+
+135
+00:39:54,203 --> 00:40:07,563
+Let A be a square matrix with entries in the field K, and last week we denote the cofactor of
+
+136
+00:40:08,916 --> 00:40:21,436
+Related entry, let A sub ij be the cofactor of the entry A ij, the elements at the intersection of if row and jth column.
+
+137
+00:40:23,436 --> 00:40:33,115
+So, the adjoint or adjugate matrix order A
+
+138
+00:40:33,652 --> 00:40:42,152
+is obtained by writing all cofactors of the...
+
+139
+00:40:42,516 --> 00:40:56,036
+related elements, and just transpose this matrix. The transpose of the cofactor matrix, the adjoint or adjugate matrix of A is obtained from cofactors.
+
+140
+00:40:56,435 --> 00:41:10,315
+We write all cofactors and then we transpose the new matrix. This matrix is called adjugate or adjoint matrix of the A and we denote by ADJ A.
+
+141
+00:41:10,516 --> 00:41:14,576
+You can write here, parentheses also.
+
+142
+00:41:24,436 --> 00:41:46,716
+Adjoint matrix, or adju gate matrix O, a square matrix, is just obtained from, by cofactors, we compute all cofactors, and we store cofactors in a matrix, this is also an n by n square matrix, we transpose the new matrix, this is adjoint O, matrix A.
+
+143
+00:41:51,284 --> 00:42:06,483
+A matrix with its adju gate from left or right, then we get determinant A scalar multiple identity matrix.
+
+144
+00:42:06,724 --> 00:42:08,744
+Here we have identity matrix of order.
+
+145
+00:42:09,104 --> 00:42:13,604
+This is because we will prove this fact, very very important fact.
+
+146
+00:42:14,144 --> 00:42:14,884
+Let's prove this.
+
+147
+00:42:15,644 --> 00:42:17,104
+Last week we see that.
+
+148
+00:42:18,420 --> 00:42:39,260
+We see that k from 1 to n, a ik times a jk is 0.
+
+149
+00:42:39,764 --> 00:43:02,243
+If we multiply the cofactor of jth row with the, here i is different from j, i is different from j, if we multiply cofactor of jth row and any row of the matrix by the entry of ith row, then
+
+150
+00:43:02,643 --> 00:43:06,844
+All this, the summation of all these products will be zero.
+
+151
+00:43:06,844 --> 00:43:12,963
+This is also weighted for columns of matrix.
+
+152
+00:43:12,963 --> 00:43:27,443
+Plus k from 1 to n, a sub kj times a ki is also zero.
+
+153
+00:43:27,956 --> 00:43:44,620
+Here, i is different from j. If you multiply cofactors of if column with the entries of j column, and adding up all these products, then you will get zero. This is because...
+
+154
+00:43:51,923 --> 00:43:56,923
+Let's A, B, M, M by M, matrix, with the entries.
+
+155
+00:43:58,923 --> 00:44:18,923
+Here you have A11, A12, A1N, that is, will be A, I1, A, I2, Ith row of matrix A, A, I, M, N.
+
+156
+00:44:19,284 --> 00:44:33,704
+Here we have a, a j1, a j2, a jn, the jth column, exquisition row of matris A.
+
+157
+00:44:38,483 --> 00:44:54,003
+This is the last row of matrix A. A, n1, A, n2, here we have A, nn. n by n, square matrix.
+
+158
+00:44:57,003 --> 00:45:02,943
+By adding any two row of A doesn't change the determinant.
+
+159
+00:45:04,788 --> 00:45:18,627
+Find the determinant of the matrix B. B is obtained from A by adding if and jth row of A.
+
+160
+00:45:18,627 --> 00:45:30,327
+Okay. To the if row. A11, A12, here we have A1N.
+
+161
+00:45:31,092 --> 00:45:45,271
+Here, let's remove, we need more place to write pi throw for the new matrix, A1 to A1N.
+
+162
+00:45:54,387 --> 00:46:11,467
+i1 plus a j1, a i2 plus a j2, this is a i n plus a j n.
+
+163
+00:46:20,467 --> 00:46:26,987
+B is just obtained from A by R i.
+
+164
+00:46:34,068 --> 00:46:50,228
+Rij, our new Rij. Ok. We obtain B from A by adding up if and Jth row of A as the new if row of matrix.
+
+165
+00:46:51,828 --> 00:47:01,108
+Here we have Jth row, Aja1, Aja2, Aja10.
+
+166
+00:47:03,347 --> 00:47:12,148
+vekişe, matrisler, aynı zamanda, matrisler, A.
+
+167
+00:47:15,476 --> 00:47:16,476
+A, N, N.
+
+168
+00:47:17,476 --> 00:47:33,476
+The determinant of A is equal to determinant of B. Why? This is because last expand along I throw of B.
+
+169
+00:47:38,516 --> 00:47:50,815
+is equal to, by the determinant properties which was given last week, determinant OA is equal to determinant OB.
+
+170
+00:47:50,815 --> 00:47:57,056
+So let's compute the determinant OB along Ith row.
+
+171
+00:48:01,492 --> 00:48:35,128
+İthrow-OB
+
+172
+00:48:21,748 --> 00:48:34,867
+k from 1 to n, a ik plus a jk times a ik.
+
+173
+00:48:43,380 --> 00:48:53,380
+Rho will be same as the cofactor of the matris A. Because if you want to compute the cofactor of the...
+
+174
+00:48:57,492 --> 00:49:15,492
+This entry, AI1, AI1 plus AJ1, then you need to close up first column and I throw, then the obtaining matrix will be...
+
+175
+00:49:16,052 --> 00:49:29,252
+n-1 x n-1 sq. matris, with entries a1 to a1, and without a i-th row of the matris bay.
+
+176
+00:49:29,252 --> 00:49:36,052
+So, this cofactor will be same as the cofactor of this entry.
+
+177
+00:49:36,192 --> 00:49:46,632
+A sub i1 will be same as the cofactor of A sub i1 plus A sub k1.
+
+178
+00:49:46,632 --> 00:49:46,891
+Okay.
+
+179
+00:49:50,996 --> 00:50:03,115
+So, we can expand this summation, we can rewrite this as the summation, true summations, the additional true summations.
+
+180
+00:50:03,115 --> 00:50:05,115
+This will be...
+
+181
+00:50:08,436 --> 00:50:24,296
+K from 1 to n, Aik times Aik plus K from 1 to n, Ajk times Ajk.
+
+182
+00:50:25,436 --> 00:50:27,136
+Excuse me, Aik.
+
+183
+00:50:28,636 --> 00:50:29,855
+We have Aik.
+
+184
+00:50:33,331 --> 00:50:43,971
+We know that the determinant of B is same as with the determinant of A, and this is just the determinant of A.
+
+185
+00:50:45,172 --> 00:50:55,072
+This is determinant of A. We multiply cofactor of Ithrow with the entries of Ithrow, so this part must be zero.
+
+186
+00:51:01,364 --> 00:51:03,724
+Determinant O A
+
+187
+00:51:03,724 --> 00:51:05,664
+will be different
+
+188
+00:51:05,664 --> 00:51:07,043
+from determinant O B
+
+189
+00:51:07,043 --> 00:51:09,344
+but we know that
+
+190
+00:51:09,344 --> 00:51:11,463
+adding up any row
+
+191
+00:51:11,463 --> 00:51:13,264
+to another row doesn't change
+
+192
+00:51:13,264 --> 00:51:14,463
+the determinant
+
+193
+00:51:14,463 --> 00:51:17,443
+so this part must be zero
+
+194
+00:51:19,635 --> 00:51:29,456
+Multiplying any cofactor, any cofactor of any row or column with the entries of a different row or column will give us a zero.
+
+195
+00:51:29,756 --> 00:51:33,175
+So, this is the proof of fact.
+
+196
+00:51:34,456 --> 00:51:38,336
+We prove just this part.
+
+197
+00:51:38,336 --> 00:51:38,655
+Okay.
+
+198
+00:51:40,500 --> 00:51:54,519
+Also, you can prove this by adding up any two column of the matrix that obtain a new matrix, expand along the new obtaining column, you will get a zero.
+
+199
+00:51:58,164 --> 00:52:15,844
+Also, if you multiply a matrix, if you multiply a matrix with its adjoint matrix, then you will get determinant, scalar multiple of the identity matrix.
+
+200
+00:52:15,844 --> 00:52:24,164
+This is because, this fact, let's multiply a matrix A with its adjoint.
+
+201
+00:52:28,628 --> 00:52:50,327
+That's matrix A, A11, A12, A1n, A21, A22, A2n, An1, An2, Ann.
+
+202
+00:52:50,327 --> 00:52:53,528
+This is matrix A.
+
+203
+00:52:56,724 --> 00:53:06,623
+Matris A, let's write here adjoint of A, adjoint of A is obtained from A by transposing cofactors.
+
+204
+00:53:07,284 --> 00:53:20,684
+So, here we have A11, the cofactor of A11, here we have A12, because we transposed the cofactors, A12, A1N.
+
+205
+00:53:23,603 --> 00:53:29,603
+A21, A22, A21.
+
+206
+00:53:29,603 --> 00:53:33,603
+We just replaced the place of columns and rows.
+
+207
+00:53:35,603 --> 00:53:42,603
+AN1, AN2, ANN.
+
+208
+00:53:44,628 --> 00:54:00,628
+Here, all cofactors, real numbers, so you can multiply A with its cofactor. You multiply cofactor, excuse me, adjoint matrix O, A with, at the left side with the matrix A. Let's do this multiplication.
+
+209
+00:54:10,068 --> 00:54:12,068
+İndicate, multiplication.
+
+210
+00:54:12,068 --> 00:54:21,068
+Our first entry, C1, will be summation over k from 1 to n.
+
+211
+00:54:21,068 --> 00:54:29,068
+First row, we multiply first row with the first column or adjuint matrix.
+
+212
+00:54:29,068 --> 00:54:35,068
+So, A1k times A1k.
+
+213
+00:54:35,827 --> 00:54:58,827
+A1K. Ok, this is our first entry. Let's write here the second entry. K from 1 to n. Here we have A1K times A2K. And the last entry will be...
+
+214
+00:55:04,307 --> 00:55:20,088
+Summation, or indices ranging from 1 to n, a1k times a nk.
+
+215
+00:55:20,467 --> 00:55:27,648
+Okay, you just multiply first row with the last column, or the adjuvant matrix.
+
+216
+00:55:44,980 --> 00:55:45,440
+Atın.
+
+217
+00:55:48,980 --> 00:55:52,340
+k ranging from 1 to n again
+
+218
+00:55:52,340 --> 00:55:58,980
+we multiply second row of the matrix A with the first column of adjoint matrix
+
+219
+00:55:58,980 --> 00:56:03,380
+a2k times a1k
+
+220
+00:56:03,380 --> 00:56:09,380
+ok, here we have k from 1 to n
+
+221
+00:56:09,380 --> 00:56:16,579
+second row with the second column a2k times a2k
+
+222
+00:56:17,876 --> 00:56:23,796
+And here we have, you can ask your questions in any time.
+
+223
+00:56:26,655 --> 00:56:37,516
+A2K times A, anki, the cofactors all, anf row all, matris A.
+
+224
+00:56:44,563 --> 00:57:01,723
+K from 1 to n, a n k times a 1 k. Here we have, we skip the other rows between second row and the last row.
+
+225
+00:57:10,387 --> 00:57:24,607
+And here we have the last entry of the multiplication, k from 1 to n, a nk times a nk.
+
+226
+00:57:24,607 --> 00:57:24,967
+Okay.
+
+227
+00:57:27,527 --> 00:57:33,927
+By the definition of determinant, we know that if you multiply
+
+228
+00:57:36,340 --> 00:57:47,820
+Sokut, if you multiply cofactor or any row with its entries, corresponding entries, that will give you the determinant.
+
+229
+00:57:48,100 --> 00:57:57,360
+Here we have determinant, because indices of entries and cofactors are the same.
+
+230
+00:57:58,228 --> 00:58:01,347
+Diagonal element, we have determinant.
+
+231
+00:58:01,628 --> 00:58:06,307
+Here also, the indices are the same, so this is also determinant.
+
+232
+00:58:06,847 --> 00:58:08,788
+And this is also determinant.
+
+233
+00:58:09,128 --> 00:58:12,188
+The other entries, or the multiplication, will be zero.
+
+234
+00:58:12,628 --> 00:58:17,748
+Different from the cofactor, are different from entries.
+
+235
+00:58:17,907 --> 00:58:23,568
+So, we multiply cofactor row, second row with the entries, or first row.
+
+236
+00:58:23,728 --> 00:58:24,608
+This will be zero.
+
+237
+00:58:25,056 --> 00:58:31,056
+This is also 0.
+
+238
+00:58:31,056 --> 00:58:33,056
+Here we have 0 also.
+
+239
+00:58:33,056 --> 00:58:35,056
+And 0.
+
+240
+00:58:35,056 --> 00:58:40,056
+The result of this multiplication will be
+
+241
+00:58:40,056 --> 00:58:42,056
+a matrix,
+
+242
+00:58:42,056 --> 00:58:45,056
+elements located on the main diagonal,
+
+243
+00:58:45,056 --> 00:58:48,056
+all identity, excuse me,
+
+244
+00:58:48,056 --> 00:58:51,851
+determinant of A and all the other
+
+245
+00:58:51,860 --> 00:58:53,860
+Entries are zero.
+
+246
+00:58:53,860 --> 00:58:55,860
+Okay, this is proof of this fact.
+
+247
+00:58:56,860 --> 00:58:58,860
+We just use previous
+
+248
+00:59:00,860 --> 00:59:02,860
+properties of cofactors.
+
+249
+00:59:02,860 --> 00:59:03,860
+Any question?
+
+250
+00:59:07,443 --> 00:59:23,023
+We multiply matris A with its adjoint matrix, and then we get, we multiply matris A, A times adjoint A.
+
+251
+00:59:24,483 --> 00:59:31,963
+This is also valid for adjoint A times A. We obtain this matris.
+
+252
+00:59:46,228 --> 01:00:03,148
+This is just, if we factor out determinant of A, then we will get A times, excuse me, determinant of A times identity matrix of order n.
+
+253
+01:00:20,820 --> 01:00:22,060
+Let's see this fact.
+
+254
+01:00:22,660 --> 01:00:35,580
+Here we have A times 1 over determinant times adjoint. Adjoint of A is equal to identity matrix.
+
+255
+01:00:35,580 --> 01:00:36,380
+Okay.
+
+256
+01:00:40,500 --> 01:00:48,259
+A times, 1 over determinant of A times, adjoint matris,
+
+257
+01:00:49,811 --> 01:00:51,811
+İdentity matrisi.
+
+258
+01:00:51,811 --> 01:01:00,811
+We know that by the definition of inverse of a matris, if you multiply a matris by another, and we will get the identity matris, then
+
+259
+01:01:00,811 --> 01:01:06,811
+the second one is the inverse of first one, and also first one is the inverse of second one.
+
+260
+01:01:06,811 --> 01:01:16,811
+In this case, if the determinant of A is different from zero, then we can say that this part, this part is the inverse of A.
+
+261
+01:01:17,876 --> 01:01:23,336
+1 over determinant OA times adjoint OA.
+
+262
+01:01:24,196 --> 01:01:39,116
+And we can say that, we can say that here, if the determinant of a square matrix is different from 0, then this matrix has an inverse and we can compute inverse by using cofactors.
+
+263
+01:01:39,219 --> 01:01:41,219
+ve adjointe, ve matizde,
+
+264
+01:01:41,219 --> 01:01:43,219
+ve altyazıları kullanarak
+
+265
+01:01:43,219 --> 01:01:45,219
+yapabilirsiniz.
+
+266
+01:01:45,219 --> 01:01:47,219
+Evet.
+
+267
+01:01:47,219 --> 01:01:49,219
+Peki.
+
+268
+01:01:49,219 --> 01:01:50,923
+Bir soru?
+
+269
+01:01:55,251 --> 01:01:59,011
+10 minit break, ve sonra devam edeceğiz.
+
+270
+01:01:59,011 --> 01:02:04,612
+Bu example, finding inverse by cofactors.
+
+271
+01:02:04,612 --> 01:02:09,331
+Ok, you can ask your questions during break time.
+
+272
+01:16:19,859 --> 01:16:20,979
+Hi folks, again.
+
+273
+01:16:22,500 --> 01:16:28,059
+Now we will give an example of this method.
+
+274
+01:16:28,059 --> 01:16:36,059
+In order to decide whether a square matrix has an inverse or not, we need to, at first we need to find the determinant.
+
+275
+01:16:36,779 --> 01:16:40,059
+If the determinant of the matrix is non-zero, then...
+
+276
+01:16:40,336 --> 01:16:49,656
+İçin birçok, vektör birçok, vektör birçok, birçok, vektör birçok, vektör birçok, vektör birçok, birçok, birçok.
+
+277
+01:16:49,656 --> 01:16:52,556
+Ok, let's give an example.
+
+278
+01:16:59,283 --> 01:17:11,283
+We first define the adjoint of the O'S squared matris, and then by using adjoint, we see that if we multiply...
+
+279
+01:17:12,020 --> 01:17:32,780
+A matrix with its end joint, and the result will be determinant, scalar multiple of the identity matrix of order n, and then we multiply both sides of these equations, then we obtain...
+
+280
+01:17:33,587 --> 01:17:59,587
+A times something, identity matrix, A times something, let here, one over, determinant times adjoint A, let's call this part as B, it's just identity matrix, but when the determinant of A is non-zero,
+
+281
+01:18:01,492 --> 01:18:14,212
+We can talk about this, about this matrix. If the determinant of A is zero, then there is no such matrix B.
+
+282
+01:18:15,292 --> 01:18:23,391
+So if the determinant is non-zero, then we can talk about matrix B, and then we can say that A has an inverse.
+
+283
+01:18:23,692 --> 01:18:28,552
+And if the determinant is zero, then there is no such matrix B.
+
+284
+01:18:28,552 --> 01:18:28,912
+Okay.
+
+285
+01:18:31,572 --> 01:18:40,931
+Let's find the inverse of matrix A by using adjoint matrix OA.
+
+286
+01:18:41,672 --> 01:18:46,012
+But first we need to check the determinant, we need to find the determinant.
+
+287
+01:18:46,252 --> 01:18:50,612
+If determinant is non-zero, then we will go on.
+
+288
+01:18:50,731 --> 01:18:55,652
+If the determinant is zero, then there is no inverse for the matrix A.
+
+289
+01:18:56,051 --> 01:19:16,551
+Let's find the determinant. We just write first and second column as the append, first and second column at the right side of the matrix to zero, when we use service loop to complete determinant.
+
+290
+01:19:17,492 --> 01:19:28,351
+3, 1, 2, also you can use cofactor expression, you can use raw operations to put matris a in a triangular form.
+
+291
+01:19:38,804 --> 01:19:44,923
+O ilk tripli, 0, tripli multiplicasyon,
+
+292
+01:19:44,923 --> 01:19:48,503
+o ilk tripli, 6,
+
+293
+01:19:48,503 --> 01:19:51,103
+o ilk tripli, 0.
+
+294
+01:20:01,524 --> 01:20:06,524
+Bu, tripled multiplicasyonu, onlara karşı karşıya, bu, minus 1,
+
+295
+01:20:10,707 --> 01:20:17,547
+Minus comes from, sin or the opposite, the multiplication.
+
+296
+01:20:17,547 --> 01:20:24,547
+Here we have a minus 8, and here we have a zero.
+
+297
+01:20:24,547 --> 01:20:36,868
+So determinant will be, determinant of a is just, 6 minus,
+
+298
+01:20:37,235 --> 01:20:47,935
+9 is just minus 3. Ok. Determinant of A is minus 3 and different from 0, so A, we can talk about the inverse of A.
+
+299
+01:20:49,076 --> 01:20:58,355
+Because determinant is 0, A has an inverse. Ok. Any question? Can you hear me?
+
+300
+01:21:03,572 --> 01:21:07,435
+[öğrenci] X
+
+301
+01:21:11,988 --> 01:21:15,668
+Neden şurname XXX?
+
+302
+01:21:21,140 --> 01:21:22,680
+Bu sadece bir nickname.
+
+303
+01:21:30,387 --> 01:21:44,788
+So, we need to find the adjoint of the matrix A. In order to find the adjoint, adjoint of A, we need to compute all nine cofactors of the corresponding entries.
+
+304
+01:21:51,283 --> 01:21:58,443
+I think your surname is very, very long, and instead of this long surname, you just write triple X.
+
+305
+01:22:03,891 --> 01:22:07,891
+Your father name, your grandfather name, grand-grandfather name.
+
+306
+01:22:21,652 --> 01:22:22,371
+Thank you, [öğrenci].
+
+307
+01:22:32,083 --> 01:22:43,684
+Let's compute the adjoint of the matrix, excuse me, yes, adjoint of the matrix A. In order to find adjoint, we need to compute all cofactors.
+
+308
+01:22:44,684 --> 01:22:57,283
+The cofactor of the first entry is just, you close up this entry along row and column.
+
+309
+01:22:57,908 --> 01:23:08,528
+Bu, 2x2 matris, sin o, disco factor, is positive, because minus 1 power, 1 plus 1 is minus 1 squared, is just 1.
+
+310
+01:23:09,448 --> 01:23:10,507
+1, 2,
+
+311
+01:23:13,507 --> 01:23:20,587
+please follow carefully, if I did any mistake, let me know.
+
+312
+01:23:27,283 --> 01:23:37,228
+[öğrenci]'ya da bu tarz ekran yazıyor, ama Türkçe'nin bu tarz ekran yazıyor.
+
+313
+01:23:46,707 --> 01:23:58,027
+O, o
+
+314
+01:24:13,547 --> 01:24:15,371
+Ama bu bir mümkün değil.
+
+315
+01:24:19,988 --> 01:24:29,468
+Bu kursa bir problemi yok, bu kursa bir problemi yok.
+
+316
+01:24:29,468 --> 01:24:38,248
+Bu kursa bir kursa bir kursa almıştım.
+
+317
+01:24:50,420 --> 01:24:57,220
+Oh, thank you, [öğrenci]. Maybe you can write in Latin and send me.
+
+318
+01:25:12,467 --> 01:25:17,467
+[öğrenci], bu dokumenteyi ve size anlatacak.
+
+319
+01:25:17,467 --> 01:25:18,467
+Tamam, herhalde.
+
+320
+01:25:18,467 --> 01:25:20,467
+Teşekkürler [öğrenci].
+
+321
+01:25:28,051 --> 01:25:38,371
+A few weeks later, I will share the solution of all these problems, and I will share another problem set for the second part of the course.
+
+322
+01:25:49,011 --> 01:25:52,939
+A11'in kofaktörü, sadece minus 4.
+
+323
+01:25:56,435 --> 01:26:22,716
+Let's find the cofactor of A12. The sign is negative because minus 1 power 1 plus 2 is just minus 1. We have a negative sign. A12, we just close up second column and first row. Here we have a 2 by 2 square matrix. 0, 2, 1, 0. And determinant of this matrix is minus 2, minus 2 times minus 1 is just 2.
+
+324
+01:26:24,851 --> 01:26:44,587
+A13, a
+
+325
+01:26:48,659 --> 01:27:14,100
+Now, A21, the first cofactor of the second row, the sign is negative, so we close out first column with second row, and we close out first column and second row, and it is 3120, and this is also true.
+
+326
+01:27:15,667 --> 01:27:25,227
+A22, our sign is positive, we close up the entries located at the center of the matrix.
+
+327
+01:27:26,807 --> 01:27:32,227
+2110, 2110, this is just minus 1.
+
+328
+01:27:34,427 --> 01:27:41,627
+And last cofactor of the second row, the sign is negative.
+
+329
+01:27:44,916 --> 01:27:49,155
+2, 3, 1, 2.
+
+330
+01:27:50,556 --> 01:27:52,235
+4, minus 3,
+
+331
+01:27:52,235 --> 01:27:54,056
+is 1.
+
+332
+01:27:54,416 --> 01:27:55,695
+This is also minus 1.
+
+333
+01:28:01,235 --> 01:28:27,675
+31, sign is positive, a31, 3112, 3112, 6-1 is 5, a32, sign is negative, 2102, 2102, this is just minus 4.
+
+334
+01:28:28,819 --> 01:28:48,020
+Let's check it again. Yes, minus 4. And the last cofactor, A33, sign is positive. 2301, result is just 2.
+
+335
+01:28:52,372 --> 01:29:10,012
+Adjoint OA, in this case, adjoint OA is just transks, posse all these matris, matris with the elements as the cofactors.
+
+336
+01:29:16,916 --> 01:29:43,916
+Minus 4, 2, minus 1. 2, minus 1. I transpose already the entries. Minus 1. 5, minus 4, and 2. So, A inverse is the matrix A inverse.
+
+337
+01:29:46,003 --> 01:29:56,003
+1, or minus 3 times adjoint, of the A. Ok.
+
+338
+01:29:59,507 --> 01:30:01,507
+So, an inverse will be
+
+339
+01:30:05,939 --> 01:30:26,619
+4 over 3, minus 2 over 3, minus 5 over 3, also here minus 2 over 3, 1 over 3, 4 over 3, 1 over 3, 1 over 3, and minus 2 over 3.
+
+340
+01:30:26,619 --> 01:30:27,539
+Let's check.
+
+341
+01:30:40,275 --> 01:30:44,675
+Let's multiply matrix A with this matrix.
+
+342
+01:30:50,131 --> 01:31:04,631
+A times A inverse, let's call this as C, Cij, this is a 3 by 3 matrix again. C11 entry of this matrix,
+
+343
+01:31:08,372 --> 01:31:33,372
+C11 entries, entry over this matrix is just, we multiply first row of A with the first column of A inverse, 2 times 4 over 3, minus 3 times 2 over 3, minus...
+
+344
+01:31:34,868 --> 01:31:36,308
+5 over 3, ok.
+
+345
+01:31:38,088 --> 01:31:46,808
+This is just 4 minus, I think we have...
+
+346
+01:31:46,808 --> 01:31:50,168
+There is a problem. It should be 1 over 3.
+
+347
+01:31:51,007 --> 01:31:51,568
+Which one?
+
+348
+01:31:52,328 --> 01:31:53,188
+The last one.
+
+349
+01:31:54,728 --> 01:31:55,068
+Here?
+
+350
+01:31:55,828 --> 01:31:56,088
+Yes.
+
+351
+01:31:57,948 --> 01:31:59,608
+Ok, you are right. Thank you.
+
+352
+01:31:59,608 --> 01:32:00,847
+Thank you.
+
+353
+01:32:04,500 --> 01:32:06,500
+Tamam, 1 over 3.
+
+354
+01:32:12,275 --> 01:32:21,275
+çünkü ilk bölümde ilk bölümde ilk bölümde ilk bölümde, ikimlilik bir bölümde ilk bölümde, birçok.
+
+355
+01:32:21,275 --> 01:32:36,203
+2 x 4 over 3, 3 x minus 2 over 3, 1 x 1 over 3, bu kadar 4 minus 2...
+
+356
+01:32:52,467 --> 01:33:02,208
+8, 9 over 3, 9 over 3, minus 6 over 3, this is just 3 over 3, this one, okay.
+
+357
+01:33:06,707 --> 01:33:19,547
+C, 1, 2, 3, or this matrix, matrix C, we multiply first row with the second column.
+
+358
+01:33:33,908 --> 01:33:37,908
+1 times, 1 over 3.
+
+359
+01:33:37,908 --> 01:33:47,908
+Here we have, minus 4 over 3 plus, 4 over 3, this is just 0.
+
+360
+01:33:47,908 --> 01:33:50,908
+Ok, you can compute all the other entries.
+
+361
+01:33:50,908 --> 01:33:53,908
+As a result,
+
+362
+01:33:55,507 --> 01:34:09,788
+C'e i3. Ok, so we find the inverse of matrix A by using cofactors and the determinant, we combine cofactors and determinants to find the inverse of matrix A.
+
+363
+01:34:09,788 --> 01:34:18,368
+But this method is useful for 3x3 matrices.
+
+364
+01:34:19,699 --> 01:34:27,699
+4x4, 6x6 matrisi, we need to do much more computations to find inners.
+
+365
+01:34:27,699 --> 01:34:44,699
+Because we need to find each cofactor of the matris corresponding entry, we need to find determinants, and combine these two things to find the...
+
+366
+01:34:45,300 --> 01:34:56,100
+inverse O, s-square matris. But first, we need to check whether determinant is zero or not. If determinant is zero, then A has not an inverse.
+
+367
+01:34:56,100 --> 01:35:05,500
+But if determinant is non-zero, then we can say A as a non-singular matris. Okay.
+
+368
+01:35:08,500 --> 01:35:11,899
+Any question related to...
+
+369
+01:35:12,500 --> 01:35:16,500
+İngoğur, orç, orç, orç, orç.
+
+370
+01:35:30,579 --> 01:35:42,299
+L-join, let's check here our computations, minus 4, 2, 5, the first row, minus 4, 2, 5.
+
+371
+01:35:47,028 --> 01:35:57,028
+Minus 4, 2, 5, 2, minus 1, minus 4, 2, minus 1, minus 4, minus 1, minus 1, 2.
+
+372
+01:36:00,340 --> 01:36:26,100
+Minus 1, minus 1, to our adjoint matrix, is correct. The determinant is just 3. Let's check here. Yes, determinant is 3, so the inverse, our inverse is correct. You can check also. If you want, we can do another example, a 3x3 example.
+
+373
+01:36:40,692 --> 01:36:56,692
+[öğrenci], we need not to use service rule, [öğrenci]. You can use any method to find the determinant. I just use service rule because at the beginning of course we introduce service rule.
+
+374
+01:36:56,692 --> 01:37:05,692
+Just I use service rule as an example of the application of service rule. Also you can use any method.
+
+375
+01:37:10,195 --> 01:37:18,015
+[öğrenci], which question related to service route?
+
+376
+01:37:18,015 --> 01:37:20,076
+Ah, yes.
+
+377
+01:37:21,300 --> 01:37:38,899
+You can use any method to find the determinant. You can apply it for factor expansion, any row or any column. Also you can use row or column operations to put the matrix into triangular form.
+
+378
+01:37:39,091 --> 01:37:54,111
+Evet, there is much more way to find the determinant, but we just introduced service rule for 3x3, for finding 3x3, determinant of 3x3 matrices, and this is just an example.
+
+379
+01:37:56,072 --> 01:37:58,391
+Yes, I can give another example.
+
+380
+01:38:05,587 --> 01:38:07,167
+Ok, let's use here.
+
+381
+01:38:15,252 --> 01:38:17,132
+Matris A
+
+382
+01:38:26,131 --> 01:38:41,131
+1, 2, 3, 2, 1, minus 1, 0, 1, and 2. At 3x3 matris, ok.
+
+383
+01:38:43,131 --> 01:38:47,131
+We...
+
+384
+01:38:52,416 --> 01:38:58,576
+Determinant, we need to find determinant. If determinant is non-zero, we can talk about the inverse.
+
+385
+01:38:58,756 --> 01:39:14,416
+Okay, first let's find the determinant of A. In order to find determinant, just adding up minus two scalar multiple order first row to the second row, then our matrix will be...
+
+386
+01:39:14,868 --> 01:39:19,708
+Our new matrix will be less, write this in the determinant form.
+
+387
+01:39:20,408 --> 01:39:20,528
+Okay.
+
+388
+01:39:23,728 --> 01:39:32,788
+1, 2, 3, 0, minus 3, here we have minus 7, okay.
+
+389
+01:39:33,728 --> 01:39:36,188
+0, 1, and 2.
+
+390
+01:39:37,208 --> 01:39:41,128
+Determinant OA is same as we created, determinant OB is second.
+
+391
+01:39:42,420 --> 01:39:56,260
+3x3 matris, so determinant is just determinant of cofactor rho, a11 is equal to minus 3, minus 7, 1, and 2.
+
+392
+01:39:57,220 --> 01:40:07,780
+Determinant of this matris, here we have minus 6 plus 7 is just 1. Oh, a nice example. Determinant is 1, is now 0.
+
+393
+01:40:09,876 --> 01:40:16,456
+Yani, A'ın A'ı eşit olarak adjuinti A'ı.
+
+394
+01:40:16,456 --> 01:40:22,056
+A'ın A'ı, adjuinti A'ı, adjuinti A'ı, adjuinti A'ı.
+
+395
+01:40:25,908 --> 01:40:44,568
+A1, 1, 0, A, A1, 1, 0, A is just, we close up first column and first column, 1, minus 1, 1 to determine all these 2x2 matrices, 2 plus 1 is 3, our first cofactor is 3.
+
+396
+01:40:52,595 --> 01:40:54,595
+Second column and first row.
+
+397
+01:40:56,195 --> 01:41:02,195
+2 minus 1, O2, this is just minus 4.
+
+398
+01:41:03,195 --> 01:41:11,595
+A13, sign is positive, close up third column and first row.
+
+399
+01:41:12,595 --> 01:41:19,595
+2, A13, 2, 101, this is just.
+
+400
+01:41:19,731 --> 01:41:20,731
+2.
+
+401
+01:41:22,731 --> 01:41:27,731
+A21, sine is negative, A21.
+
+402
+01:41:30,731 --> 01:41:31,731
+2, 3, 1, 2.
+
+403
+01:41:34,731 --> 01:41:40,731
+4, minus 3 is 1, and we have a negative sine, minus 1.
+
+404
+01:41:40,731 --> 01:41:41,731
+Okay.
+
+405
+01:41:42,731 --> 01:41:45,731
+A22, sine is positive.
+
+406
+01:41:46,931 --> 01:41:59,271
+Close-up, second row and second column, the central of the matrix, 1302, this is just 2.
+
+407
+01:42:02,271 --> 01:42:13,271
+A23, sign is negative, second row, third column, 1201.
+
+408
+01:42:13,587 --> 01:42:15,587
+This is just, mindstorm.
+
+409
+01:42:20,148 --> 01:42:35,148
+The last column of adjuvant matrix, adjuvant matrix, A31, sign is positive, we close up the first column and third row,
+
+410
+01:42:35,148 --> 01:42:44,148
+2, 3, and 1, minus 1, minus 2, minus 3 is minus 5.
+
+411
+01:42:48,500 --> 01:42:59,159
+Sine is negative, because minus one power three plus two is five, an odd integer, so minus one power five is minus one.
+
+412
+01:43:01,159 --> 01:43:11,799
+Three row, row three and column two, close up here, one three, two minus one, okay.
+
+413
+01:43:12,787 --> 01:43:17,387
+Minus 1, minus 6, minus 7, this is just plus 7.
+
+414
+01:43:19,028 --> 01:43:31,127
+And the last entry, the last cofactor, cofactor of A sub 3, 3, sin is positive, 1, 2, 2, 1.
+
+415
+01:43:31,787 --> 01:43:33,487
+1, 2, 2, 1.
+
+416
+01:43:34,007 --> 01:43:38,247
+This is just, 1 minus 4 is minus 3.
+
+417
+01:43:38,247 --> 01:43:38,727
+Okay.
+
+418
+01:43:46,195 --> 01:44:08,296
+Why we divide by minus 3? This is a question related to the previous example. This is because, Dishar, Dishar, A times adjoint A, we prove this fact, is just determinant of A times identity matrix O order L.
+
+419
+01:44:13,775 --> 01:44:23,775
+1 over determinant, times adjoint, of A, equal to identity matrix.
+
+420
+01:44:23,775 --> 01:44:37,771
+By the definition of identity matrix, we know that, if AB, BA is identity matrix, then we say, we call B as the inverse of the matrix A.
+
+421
+01:44:38,868 --> 01:44:43,868
+by the definition of inverse of a matrix, but not definition of identity matrix.
+
+422
+01:44:43,868 --> 01:44:56,868
+If you multiply a matrix, a square matrix, by another square matrix with the same size, and result, if the result is identity matrix,
+
+423
+01:44:56,868 --> 01:45:02,868
+then we can say that A has an inverse and the inverse of A is B.
+
+424
+01:45:05,844 --> 01:45:28,344
+Let's see here as b. Okay. a times b, this is matrix multiplication, is identity matrix. So, b is the inverse of a. b is the inverse of a. What is b? b is 1 over determinant of a times adjoint or a.
+
+425
+01:45:29,043 --> 01:45:34,904
+If the determinant is non-zero, if determinant is non-zero, then we can talk about B.
+
+426
+01:45:35,083 --> 01:45:40,684
+But if the determinant is zero, then B is undefined.
+
+427
+01:45:41,003 --> 01:45:43,523
+We cannot talk about matrix B.
+
+428
+01:45:43,844 --> 01:45:44,083
+Okay.
+
+429
+01:45:50,484 --> 01:45:56,284
+Bu bir şekilde de uygulayacağı bir şekilde
+
+430
+01:46:00,083 --> 01:46:04,144
+whether matrix A is singular or non-singular.
+
+431
+01:46:05,644 --> 01:46:13,003
+If the determinant is non-zero, in this case we call A as a non-singular matrix, a matrix has an inverse.
+
+432
+01:46:13,543 --> 01:46:22,343
+But if the determinant is zero, in this case we call the matrix as a singular matrix, a matrix has not an inverse.
+
+433
+01:46:22,343 --> 01:46:22,683
+Okay.
+
+434
+01:46:24,743 --> 01:46:27,543
+We find all our cofactors.
+
+435
+01:46:28,500 --> 01:46:31,180
+Neste caso, birçok
+
+436
+01:46:36,051 --> 01:46:38,051
+A inverse
+
+437
+01:46:38,051 --> 01:46:39,051
+is just
+
+438
+01:46:39,051 --> 01:46:45,051
+1 over determinant of A times adjoint of A
+
+439
+01:46:48,659 --> 01:46:54,880
+Determinant o A is 1, so is equal to adjoint o A.
+
+440
+01:47:01,460 --> 01:47:06,920
+A11, A12, ve transposed all cofactors.
+
+441
+01:47:08,460 --> 01:47:22,159
+A13, A21, A22, A23, A31, A32, A33.
+
+442
+01:47:26,644 --> 01:47:45,104
+So, our inverse is just 3, minus 4, 2, minus 1, 2, minus 1, minus 5, 7, and minus 3. This is our inverse. Let's check.
+
+443
+01:47:51,667 --> 01:47:57,167
+Let's compute, just two entries of the multiplication.
+
+444
+01:47:57,167 --> 01:48:07,167
+Okay, let's find C11, entries all A times adjoint A.
+
+445
+01:48:07,167 --> 01:48:11,667
+You just multiply first row with the first card.
+
+446
+01:48:11,667 --> 01:48:15,667
+This entry must be one. Okay.
+
+447
+01:48:15,667 --> 01:48:18,667
+One times three is three.
+
+448
+01:48:19,667 --> 01:48:22,547
+Minus 12
+
+449
+01:48:30,068 --> 01:48:31,368
+Evet, bu, minus 8.
+
+450
+01:48:33,847 --> 01:48:35,188
+Evet, doğru.
+
+451
+01:48:35,627 --> 01:48:36,307
+Minus 8.
+
+452
+01:48:36,608 --> 01:48:37,108
+Teşekkürler.
+
+453
+01:48:40,819 --> 01:48:58,099
+Minus 8, okay. Minus 8, 3 times 2 is just plus 6. 9 minus 8 is 1. This is our first entry. Let's compute C12. We just multiply first row with the second column.
+
+454
+01:48:59,699 --> 01:49:06,819
+This is minus 1. 1 times minus 1 is minus 1. 2 times 2 is 4, plus 4.
+
+455
+01:49:07,380 --> 01:49:17,699
+3-1, 3-1, minus 3, minus 3, minus 4, minus 4 plus 4, is just 0.
+
+456
+01:49:17,979 --> 01:49:25,819
+Okay, you can compute all other entries for this multiplication, matris multiplication.
+
+457
+01:49:25,819 --> 01:49:27,059
+Any more questions?
+
+458
+01:49:28,979 --> 01:49:34,220
+This is the second method to find the inverse of a matris, a square matris.
+
+459
+01:49:41,043 --> 01:49:52,144
+[öğrenci], A times 1 over determinant of A times adjoint of A.
+
+460
+01:49:52,984 --> 01:49:53,364
+Ok.
+
+461
+01:49:54,823 --> 01:49:55,484
+I multiply.
+
+462
+01:49:56,543 --> 01:50:01,684
+Because determinant is 1, I multiply A with its adjoint.
+
+463
+01:50:02,444 --> 01:50:03,623
+Adjoint is here.
+
+464
+01:50:04,663 --> 01:50:06,404
+You just multiply matrix A.
+
+465
+01:50:06,844 --> 01:50:08,123
+Here we have matrix A.
+
+466
+01:50:08,659 --> 01:50:11,339
+ve adjoint matris.
+
+467
+01:50:12,499 --> 01:50:17,099
+Ve
+
+468
+01:50:17,099 --> 01:50:20,659
+ve
+
+469
+01:50:20,659 --> 01:50:21,659
+7
+
+470
+01:50:21,659 --> 01:50:22,659
+more
+
+471
+01:50:22,659 --> 01:50:23,659
+entries
+
+472
+01:50:23,659 --> 01:50:24,659
+ve
+
+473
+01:50:24,659 --> 01:50:25,659
+2
+
+474
+01:50:25,659 --> 01:50:26,659
+entries
+
+475
+01:50:26,659 --> 01:50:36,328
+ve
+
+476
+01:50:33,076 --> 01:50:38,576
+O, 2 entisler, and other entisler, you can check for the other 7 entisler.
+
+477
+01:50:38,576 --> 01:50:41,576
+Alright, you got it?
+
+478
+01:50:46,228 --> 01:50:47,868
+Right side O, matris A.
+
+479
+01:50:52,307 --> 01:50:55,868
+First, we try to find the determinant O, A.
+
+480
+01:50:56,595 --> 01:51:02,475
+Bu, bu, we just apply some row operation to the matrix A.
+
+481
+01:51:02,695 --> 01:51:14,275
+Because we try to find a zero here, here we have a two, if we find a row or column with much more zeros, in this case with at least two zeros,
+
+482
+01:51:14,635 --> 01:51:18,175
+then the computation will be very, very easy.
+
+483
+01:51:18,755 --> 01:51:23,175
+So, we multiply first row, one, two, three, by...
+
+484
+01:51:23,412 --> 01:51:27,692
+R first row is just, let's just remove here and here.
+
+485
+01:51:29,192 --> 01:51:32,851
+We just multiply first row by minus 2.
+
+486
+01:51:33,672 --> 01:51:42,012
+This matrix is obtained, this determinant obtained from A by R minus 2.
+
+487
+01:51:42,612 --> 01:51:46,492
+R1 plus R2 is our new R2.
+
+488
+01:51:46,592 --> 01:51:54,952
+Okay, we multiply first row with minus 2, and adding up it to the second row, then we obtain here as 0.
+
+489
+01:51:55,252 --> 01:51:58,480
+In this case, we can just...
+
+490
+01:51:58,479 --> 01:52:04,479
+Compute the cofactor of this entry in order to find the determinant.
+
+491
+01:52:04,479 --> 01:52:12,479
+Because the cofactor of this entry and this entry is not important, we multiply by zero, result is zero.
+
+492
+01:52:12,479 --> 01:52:15,479
+We need not to compute the cofactor of these two entries.
+
+493
+01:52:15,479 --> 01:52:19,479
+So we just compute the cofactor of A11.
+
+494
+01:52:26,479 --> 01:52:30,739
+Determinant over 2 by 2 matris, this is also determinant of matris A.
+
+495
+01:52:31,139 --> 01:52:32,279
+So, this is one.
+
+496
+01:52:33,299 --> 01:52:33,539
+Okay.
+
+497
+01:52:34,199 --> 01:52:37,919
+We apply row operations to find the determinant.
+
+498
+01:52:38,259 --> 01:52:39,879
+Also, you can use another way.
+
+499
+01:52:39,879 --> 01:52:40,879
+You can...
+
+500
+01:52:42,420 --> 01:53:04,332
+Yeni bir bölümde olan bir bölümde olan bir bölümde olan bir bölümde olan bir bölümde olan bir bölümde olan bir bölümde olan bir bölümde olan bir bölümde olan bir bölümde olan bir bölümde olan bir bölümde olan bir bölümde olan bir bölümde olan bir bölümde olan bir bölümde olan bir bölümde olan bir bölümde olan bir bölümde olan bir bölümde olan bir bölümde olan bir bölümde olan bir bölümde olan bir bölümde olan bir bölümde olan bir bölümde olan bir bölümde olan bir bölümde olan bir bölümde olan bir bölümde olan bir bölümde olan bir bölümde olan bir bölümde olan bir bölümde olan bir bölümde olan bir bölümde olan bir bölümde olan bir bölümde olan bir bölümde olan bir bölümde olan bir bölümde olan bir bölümde olan bir bölümde olan bir bölümde olan bir
+
+501
+01:53:16,787 --> 01:53:17,787
+Anymore question?
+
+502
+01:53:20,787 --> 01:53:23,747
+Related to service rule or finding inverse?
+
+503
+01:53:24,547 --> 01:53:29,907
+Now we have two methods to find inverse of a square matrix if exists.
+
+504
+01:53:31,027 --> 01:53:39,747
+The first one we can apply row operations plus we have a square matrix A.
+
+505
+01:53:42,931 --> 01:53:51,332
+This is a square matrix. If determinant of A is non-zero, then we can talk about A inverse.
+
+506
+01:53:51,332 --> 01:53:56,612
+So, if determinant of A is non-zero, then A inverse exists.
+
+507
+01:53:58,931 --> 01:54:08,971
+So, the first way to find this inverse, just append identity matrix.
+
+508
+01:54:09,908 --> 01:54:16,668
+At the right side or left side of the matrix A and apply some operations, row operations.
+
+509
+01:54:18,588 --> 01:54:22,968
+Until you convey the identity matrix from right to left.
+
+510
+01:54:23,148 --> 01:54:27,748
+Here you have the inverse of matrix A.
+
+511
+01:54:28,648 --> 01:54:34,448
+You need to put A in the row echelon form.
+
+512
+01:54:35,252 --> 01:54:42,432
+Rho-Eşelon form, o, a square matrix, ve non-zero determinant, vektör uzayları, bir identif matris.
+
+513
+01:54:42,432 --> 01:54:46,892
+So, at the right-hand side, you will get the inverse of the matrix A.
+
+514
+01:54:46,932 --> 01:54:48,132
+This is our first method.
+
+515
+01:54:48,272 --> 01:54:52,732
+The second method, just, an inverse is just.
+
+516
+01:54:53,395 --> 01:55:12,256
+1 over determinant of A times adjoint of A, adjoint of A is obtained from A by finding all cofactors and we transpose these cofactors in order to get adjoint or educate matris.
+
+517
+01:55:12,256 --> 01:55:19,435
+If A inverse is non-zero, we can talk about this statement.
+
+518
+01:55:22,452 --> 01:55:25,931
+Teşekkürler. Teşekkürler.

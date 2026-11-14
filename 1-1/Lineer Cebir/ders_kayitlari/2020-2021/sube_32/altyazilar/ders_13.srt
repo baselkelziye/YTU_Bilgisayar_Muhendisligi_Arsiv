@@ -1,0 +1,1551 @@
+1
+00:13:43,635 --> 00:13:44,836
+Good morning folks.
+
+2
+00:13:47,775 --> 00:13:48,975
+Can you hear me?
+
+3
+00:13:53,556 --> 00:13:55,656
+Ok. How was your examination?
+
+4
+00:14:09,556 --> 00:14:19,556
+Ok, there was some easy, some problems in examination.
+
+5
+00:14:20,836 --> 00:14:33,556
+The examination commission has not yet sent the results to me, so when they post the results to me, I will enter your exam scores in the UCS.
+
+6
+00:14:33,556 --> 00:14:34,556
+Ok.
+
+7
+00:14:34,772 --> 00:14:50,172
+In our today course, I am going to talk about a change of basis and coordinate transformation matrix for basis of a given vector space.
+
+8
+00:14:52,132 --> 00:15:02,052
+Let's recall the coordinate vector. We will talk about the coordinate vector at the end of our last weeks.
+
+9
+00:15:02,515 --> 00:15:12,675
+vektör, let's recall again, because we will use coordinate factor 1, we transform from one base to another one.
+
+10
+00:15:14,555 --> 00:15:25,675
+If you have a vector space of dimension n with given an ordered basis b, then each vector in...
+
+11
+00:15:26,288 --> 00:15:30,447
+We can be written as a linear combination of the base elements.
+
+12
+00:15:30,447 --> 00:15:30,768
+Okay.
+
+13
+00:15:31,988 --> 00:15:44,248
+And the constants x1, x2, xn are unique and can be stored in a vector.
+
+14
+00:15:45,288 --> 00:15:51,888
+We denote this vector by between square brackets w sub b.
+
+15
+00:15:54,451 --> 00:15:58,451
+X1, X2, Xm.
+
+16
+00:15:58,692 --> 00:16:05,991
+This is called coordinate factor of vector W with respect to base B.
+
+17
+00:16:05,991 --> 00:16:06,572
+Okay.
+
+18
+00:16:09,091 --> 00:16:17,951
+If B is the standard base, then coordinate vector is same as with the coordinates of W.
+
+19
+00:16:27,923 --> 00:16:49,043
+Let's repeat the last week's example again. That's Wb, a vector in R3, and that we have ordered standard basis B, with the base vectors linearly independent of three vectors, e1, e2, and e3.
+
+20
+00:16:52,628 --> 00:16:59,348
+The coordinate vector of W with respect to this base is just itself.
+
+21
+00:16:59,348 --> 00:17:04,988
+Okay, we write W as a linear combination of the base vectors.
+
+22
+00:17:05,988 --> 00:17:16,908
+W, x1 times e1 plus x2 times e2 plus x3 times e3.
+
+23
+00:17:27,988 --> 00:17:31,928
+Bu order of Bayez-Elemas'ı önemli.
+
+24
+00:17:31,928 --> 00:17:35,928
+Eğer order değiştirmek için, koordinatörün değiştirmek için,
+
+25
+00:17:40,980 --> 00:17:47,840
+So, here we have a non-homogeneous system with three unknowns and three equations.
+
+26
+00:17:48,500 --> 00:17:57,880
+So, here we have x1 as 3, x2 as 2, and x3 as 1.
+
+27
+00:18:00,180 --> 00:18:11,220
+The coordinate vector of the W with respect to ordered standard basis B is just itself. 3, 2, 1.
+
+28
+00:18:23,316 --> 00:18:50,016
+If we change our base as a non-trivial base, as a non-standard base, let B be the basis with the vectors 1, 2, 0, 2, 0, 1, and 1, 2, 1, 3 linearly independent vectors in RQ.
+
+29
+00:18:52,884 --> 00:18:58,384
+We write W as a linear combination of these vectors.
+
+30
+00:19:00,384 --> 00:19:13,084
+X1 times 1, 2, 0 plus X2 times 2, 0, 1 plus X3 times 1, 2, 1.
+
+31
+00:19:17,140 --> 00:19:24,680
+We have a non-homogeneous system, again, with three unknowns and three equations.
+
+32
+00:19:24,680 --> 00:19:40,960
+X1, 1, 2, 0, plus X2, 2, 0, 1, plus X3, 1, 2, 1, is equal to 1, 2, 3.
+
+33
+00:19:42,291 --> 00:19:54,612
+By expanding this vector equation, we get the equations, linear equations, x1 plus 2x2 plus x3 is 1.
+
+34
+00:19:55,471 --> 00:20:00,371
+This example is the same as with last week's example.
+
+35
+00:20:01,491 --> 00:20:07,951
+2x1 plus 2x3 is 2.
+
+36
+00:20:10,900 --> 00:20:14,900
+x2 plus x3 is just 3.
+
+37
+00:20:32,980 --> 00:20:38,779
+must be 1, 2, 0, 2, 0, 1, and 1, 2, 1.
+
+38
+00:20:39,839 --> 00:20:42,860
+The vector of constants is just 1, 2, 3.
+
+39
+00:20:43,500 --> 00:20:51,500
+So we applied elementary row operations to this system to get x1, x2, x3.
+
+40
+00:20:55,731 --> 00:21:15,951
+İlk olarak, 1-2 ve 2-2 ve 2-2 ve 1-2, 1-2, 1-1, 1, 0,-4, 0, 0, 1, 1, 3.
+
+41
+00:21:21,940 --> 00:21:35,700
+2nd row by 1 over 4, and adding up it to the last row, then we just multiply 2nd row by minus 1 over 4, we apply two operations.
+
+42
+00:21:41,491 --> 00:21:50,291
+1, 2, 1, 1, 0, 3, 0, 1, 0.
+
+43
+00:22:02,451 --> 00:22:09,132
+0, 0, here we have 1 again, and here we have 3, okay.
+
+44
+00:22:15,251 --> 00:22:21,652
+ve, üç ve ikinci birisinin, iki elementi, bu iki elementi,
+
+45
+00:22:29,172 --> 00:22:53,548
+So, by adding negative 3rd row to the 1st row, we have 1, 2, 0, minus 2, 0, 1, 0, 0, 0, 0, 1, 3.
+
+46
+00:22:54,900 --> 00:23:10,000
+Minus 2 times 2nd row plus 1st row is just 1, 0, 0, minus 2, 0, 1, 0, 0, 0, 0, 1, 3.
+
+47
+00:23:11,160 --> 00:23:20,420
+Now we have x1 is minus 2, x2 is just 0, and x3 is 3.
+
+48
+00:23:22,963 --> 00:23:25,384
+W can be written as
+
+49
+00:23:25,384 --> 00:23:31,003
+minus 2 times V1
+
+50
+00:23:31,003 --> 00:23:35,864
+plus 3 times V3.
+
+51
+00:23:35,864 --> 00:23:36,563
+Okay.
+
+52
+00:23:38,624 --> 00:23:42,503
+So, with respect to the given base,
+
+53
+00:23:43,183 --> 00:23:44,703
+the given ordered base,
+
+54
+00:23:45,183 --> 00:23:47,083
+the coordinate vector of
+
+55
+00:23:48,115 --> 00:24:07,564
+W ile B
+
+56
+00:24:08,468 --> 00:24:16,468
+The elements OB are non-unit vectors, both tree vectors are linearly independent to each other.
+
+57
+00:24:19,827 --> 00:24:20,468
+Any question?
+
+58
+00:24:27,923 --> 00:24:29,163
+Tamam, devam edelim.
+
+59
+00:24:31,403 --> 00:24:36,083
+You can solve this system in general form.
+
+60
+00:24:37,023 --> 00:24:38,163
+You can take...
+
+61
+00:24:38,387 --> 00:24:59,347
+As an arbitrary vector, depending on unknowns, x, y, z in R³. So depending on this indetermination, you can solve the system. So depending on these three unknowns, you can solve x1, x2, and x3. This is the general coordinate factor with respect to
+
+62
+00:25:00,564 --> 00:25:17,523
+B, so if you change x, y, z, then your coordinate vector will change. By this way you can find the coordinate vector of any vector in R³, with respect to the given basis.
+
+63
+00:25:21,619 --> 00:25:26,599
+I just sold for W, but you can sold the system in general.
+
+64
+00:25:31,859 --> 00:25:38,400
+Now, we will give the base transition matrix from one basis to another one.
+
+65
+00:25:40,319 --> 00:25:52,579
+This process known as change of basis, that we have a n-dimensional vector space with given two ordered bases, B1 and B2.
+
+66
+00:25:53,811 --> 00:26:13,911
+V1 is a subset of V with n linearly independent vectors V1, V2, Vn, and V2 is also another base for V, a subset of V with given linear independent vectors W1, W2, and W sub n.
+
+67
+00:26:19,763 --> 00:26:45,931
+B1'in base 1'in base 2'in base 1'in base 2'in base 1'in base 1'in base 1'in base 1'in base 1'in base 1'in base 1'in base 1'in base 1'in base 1'in base 1'in base 1'in base 1'in base 1'in base 1'in base 1'in base 1'in base 1'in base 1'in base 1'in base 1'in base 1'in base 1'in base 1'in base 1'in base 1'in base 1'in base 1'in base 1'in base 1'in base 1'in base 1'in base 1'in base 1'in base 1'in base 1'in base 1'in base 1'in base 1'in base 1'in base 1'in base 1'in base 1'in base 1'in base 1'in base 1'in base 1'in base 1'in base 1'in base 1'in base 1'
+
+68
+00:26:46,067 --> 00:27:12,107
+B1'in B2'
+
+69
+00:27:12,115 --> 00:27:22,695
+By solving a non-homogeneous system, we will get A11, A21, An1. This is the first column of the transition matrix.
+
+70
+00:27:22,695 --> 00:27:23,275
+Okay.
+
+71
+00:27:27,347 --> 00:27:40,067
+And by writing the second vector in B1 as a linear combination of elements of B2, we get the second column of the transition matrix.
+
+72
+00:27:40,067 --> 00:27:47,947
+By solving this non-homogeneous system, we obtain second column of transition matrix.
+
+73
+00:27:55,827 --> 00:28:22,528
+İlk bölümün
+
+74
+00:28:22,528 --> 00:28:28,768
+Matris A is called base transition matrix from B1 to B2.
+
+75
+00:28:29,128 --> 00:28:29,427
+Okay.
+
+76
+00:28:30,788 --> 00:28:35,407
+This is the base transition matrix from B1 to base B2.
+
+77
+00:28:36,688 --> 00:28:43,008
+The first column formed by the coefficient of first equation.
+
+78
+00:28:43,988 --> 00:28:48,448
+The second column formed by the coefficient
+
+79
+00:28:49,011 --> 00:29:03,351
+which we obtained from the second non-homogeneous system, and the last column we obtained by solving the last non-homogeneous system.
+
+80
+00:29:15,604 --> 00:29:19,284
+B1, B2.
+
+81
+00:29:20,344 --> 00:29:27,184
+This, the base from B1 to B2, base transition matrix from B1 to B2.
+
+82
+00:29:29,764 --> 00:29:30,624
+Okay.
+
+83
+00:29:34,355 --> 00:29:36,516
+Just write base elements.
+
+84
+00:29:41,332 --> 00:29:55,312
+The elements of first phase as a linear combination of the elements of second phase and solve all these non-hormigeneal systems to get the columns of the transition matrix from B1 to B2.
+
+85
+00:30:01,619 --> 00:30:07,679
+And also, we can give the transition matrix from V2 to V1.
+
+86
+00:30:08,259 --> 00:30:14,019
+In this case, we just write elements of V2 as a linear combination of elements of V1.
+
+87
+00:30:15,259 --> 00:30:19,199
+Write W1 as a linear combination of V1, V2, Vn.
+
+88
+00:30:20,079 --> 00:30:25,980
+So this system to get the first column of the transition matrix from V2 to V1.
+
+89
+00:30:26,420 --> 00:30:41,480
+Write W2 as a linear combination of less W1, B11, B1, B21, B2, and BN1, BN. This is also a non-homogeneous system.
+
+90
+00:30:43,400 --> 00:30:50,420
+By solving this system, we can get B11, B21, BN1. This is the first.
+
+91
+00:30:50,751 --> 00:30:55,471
+Kolumn of the transition matrix from B2 to B1.
+
+92
+00:30:59,700 --> 00:31:21,340
+And write W2 as a linear combination of the first base, and then we get the second column, and by writing F element in the second base as a linear combination of the elements of first base, we get the last column of the transition matrix.
+
+93
+00:31:27,028 --> 00:31:40,748
+B is just B11, B21, BN1, the coefficients which we obtained from the first linear system.
+
+94
+00:31:54,867 --> 00:32:00,567
+B1N, B2N, BNN.
+
+95
+00:32:01,027 --> 00:32:01,307
+Okay.
+
+96
+00:32:01,987 --> 00:32:10,727
+We denote this matrix by between square brackets sub B2, B1.
+
+97
+00:32:12,327 --> 00:32:16,087
+This is base transition matrix from B2 to B1.
+
+98
+00:32:17,467 --> 00:32:21,947
+And the previous one is base transition matrix.
+
+99
+00:32:24,276 --> 00:32:26,096
+B1 to B2.
+
+100
+00:32:26,096 --> 00:32:26,695
+Okay.
+
+101
+00:32:29,695 --> 00:32:30,796
+Any questions?
+
+102
+00:32:49,748 --> 00:33:03,748
+There is a strong connection between base transition matrices from one basis to another one, that we have an n-dimensional vector space v with given two basis to ordered basis.
+
+103
+00:33:03,748 --> 00:33:09,748
+Here ordered is much more important because if you change the order of the elements that...
+
+104
+00:33:11,028 --> 00:33:22,727
+Transition matrix will change. The entries of the transition matrix will change. Depending on this fact, the coordinate vector or any vector will change.
+
+105
+00:33:23,147 --> 00:33:33,147
+Okay. So let me have an n-dimensional vector space, given two ordered bases, B1 and B2.
+
+106
+00:33:37,428 --> 00:33:48,528
+And also let the base transition matrix from B1 to B2 be A, and base transition matrix from B2 to B1 be B.
+
+107
+00:33:53,619 --> 00:34:01,959
+These two matrices, square matrices, are non-singular, and the inverses to each other.
+
+108
+00:34:03,099 --> 00:34:17,359
+AB or BA is just identity matrix of order N, and here B is the inverse of A, and A is the inverse of B, also A is inverse of B.
+
+109
+00:34:21,811 --> 00:34:30,471
+M sub B1 B2 times M sub B2 B1 is just identity matrix of order n.
+
+110
+00:34:32,091 --> 00:34:43,471
+By finding one matrix from B2 B1 or B1 B2, we can compute second one by finding the inverse of this matrix.
+
+111
+00:34:49,300 --> 00:35:09,300
+linear, non-homogeneous system. This is another way to find transition matris. First, we need to find one by solving non-homogeneous system and the reverse direction can be computed by finding the inverse of the
+
+112
+00:35:11,059 --> 00:35:18,460
+transition matrix, which we compute by solving non-homogeneous systems.
+
+113
+00:35:21,659 --> 00:35:37,659
+Also, left we have vectors, arbitrary vectors u and v in v, and the coordinate vector of u with respect to base b1 is just
+
+114
+00:35:39,699 --> 00:35:55,799
+The coordinate vector of u with respect to base B2, we just multiply base transition matrix from B2 to B1 by the coordinate matrix of u with respect to base B2.
+
+115
+00:35:55,799 --> 00:35:56,139
+Okay.
+
+116
+00:35:58,179 --> 00:36:02,079
+Please notice that the bases at the bottom.
+
+117
+00:36:02,447 --> 00:36:11,447
+B1'e aynı. Bu aynı. B1'e aynı. B1'e aynı. B1'e aynı. B1'e aynı.
+
+118
+00:36:27,284 --> 00:36:35,604
+Base transition matrix, from B2 to B1, by the coordinate factor of u, with respect to B2.
+
+119
+00:36:35,604 --> 00:36:36,203
+Okay.
+
+120
+00:36:37,123 --> 00:36:50,903
+In general, elements in v, given, with respect to standard bases, the bases with unique elements, orthogonal elements.
+
+121
+00:36:51,347 --> 00:37:15,820
+Yani, bu bazı
+
+122
+00:37:16,211 --> 00:37:21,412
+Bays-transition matrix, from first base to the second base.
+
+123
+00:37:21,412 --> 00:37:25,811
+Here we just solve the non-homogeneous system.
+
+124
+00:37:25,811 --> 00:37:33,011
+We write elements of B1 as a linear combination of the elements of B2, and we solve all these N systems.
+
+125
+00:37:36,659 --> 00:37:37,739
+Let's give an example.
+
+126
+00:37:40,479 --> 00:37:53,239
+For example, in RQ, two ordered non-standard bases of RQ, we have two ordered non-standard bases of RQ, and a vector u.
+
+127
+00:37:55,795 --> 00:38:01,635
+Vektör 2, 3, 5, ile ilgili standard fases.
+
+128
+00:38:01,635 --> 00:38:20,895
+Vektör, let's write standard fases here, B, E1, 1, 0, 0, E2, 0, 1, 0, E3, 0, 0.
+
+129
+00:38:24,788 --> 00:38:42,411
+Bu bir kere bir kere, u'un coördine ve u'un coördine ve u'un coördine ve u'un coördine ve u'un coördine ve u'un coördine ve u'un coördine ve u'un coördine ve u'un coördine ve u'un coördine ve u'un coördine ve u'un coördine ve u'un coördine ve u'un coördine ve u'un coördine ve u'un coördine ve u'un coördine ve u'un coördine ve u'un coördine ve u'un coördine ve u'un coördine ve u'un coördine ve u'un coördine ve u'un coördine ve u'un coördine ve u'un coördine ve u'un coördine
+
+130
+00:38:45,619 --> 00:38:54,619
+The first question asked to us, find the base transition matrix from base B1 to B2.
+
+131
+00:38:55,759 --> 00:39:02,199
+Okay, the second one, find base transition matrix from B2 to B1.
+
+132
+00:39:05,179 --> 00:39:12,219
+And find the coordinate vector of u with respect to B1.
+
+133
+00:39:13,043 --> 00:39:17,543
+Ve bu koordinatörünün ve o u'ye görebini veren.
+
+134
+00:39:17,543 --> 00:39:21,483
+Ve bu
+
+135
+00:39:21,483 --> 00:39:23,643
+bu
+
+136
+00:39:23,643 --> 00:39:24,543
+ve
+
+137
+00:39:24,543 --> 00:39:45,928
+bu
+
+138
+00:39:29,492 --> 00:39:38,492
+B1-B2'ye bulunduğumuz için,
+
+139
+00:39:38,492 --> 00:39:41,492
+3 non-homogeneous sistemimizin.
+
+140
+00:39:41,492 --> 00:39:43,492
+Örneğin, ilk sistemimizin,
+
+141
+00:39:43,492 --> 00:39:53,492
+bir elementin,
+
+142
+00:39:55,219 --> 00:40:05,179
+So by expanding this vector equation, we just get a non-homogeneous system.
+
+143
+00:40:11,059 --> 00:40:27,439
+Minus A21 plus minus A31 is equal to 1, and 2A11 plus 3A31 is just 2, A11 plus A21 is 0.
+
+144
+00:40:28,340 --> 00:40:37,899
+We just write the augmented matrix of this system, and by applying elementary row operations, we find
+
+145
+00:40:39,603 --> 00:41:00,743
+A11 as 1, A11 is 1, A21 is just minus 1, and A31 is 0. This is the first column of transition matrix M sub E1 top E2.
+
+146
+00:41:06,931 --> 00:41:19,591
+transition matris. Ve write v to the second element of first base as a linear combination of elements of second base.
+
+147
+00:41:20,591 --> 00:41:27,771
+In order to get the second column of a, we just obtain the
+
+148
+00:41:28,224 --> 00:41:43,463
+Augmented matrix of the system, non-homogeneous system, and by applying Coast-Jordan elimination to this system, we get a unique solution for this system.
+
+149
+00:41:54,675 --> 00:42:08,675
+2,2 is minus 4 over 5, and a 3,2 is just minus 6 over 5. This is the second column of our transition matrix.
+
+150
+00:42:09,315 --> 00:42:09,635
+Okay.
+
+151
+00:42:12,036 --> 00:42:21,555
+In the same way, we write V sub 3 as a linear combination of base elements, second base elements.
+
+152
+00:42:22,324 --> 00:42:35,164
+In order to find the third column, we just expand this matrix, excuse me, vector equation, and we obtain a non-homogeneous system.
+
+153
+00:42:35,164 --> 00:42:46,164
+We write the augmented matrix of this system and applying Gauss-Jordan elimination, we just solve A sub 1, 3, 2, 3, and 3, 3.
+
+154
+00:42:50,452 --> 00:43:10,952
+our transition matris. Here, the last column will be a sub 1, 3 is just 8 over 5, a sub 2, 3 is minus 3 over 5, and a sub 3, 3 is just minus 2 over 5.
+
+155
+00:43:15,795 --> 00:43:34,995
+By storing all these entries as a column of the matrix, we get A, matrix A, the base transition matrix from B1, order root basis B1 to the order root basis B2.
+
+156
+00:43:41,588 --> 00:43:48,648
+This is the base transition matrix from B1 to B2.
+
+157
+00:43:48,648 --> 00:44:04,628
+In order to get B, the second item of this example, in order to get B, M sub B2,
+
+158
+00:44:05,204 --> 00:44:20,324
+B1, the base transition matrix from B2 to B1. We can find the inverse of A. This is just inverse of A. Inverse of M sub B1, B2.
+
+159
+00:44:33,172 --> 00:45:00,552
+V1 plus B21 V2, V2 is a constant, plus B31 V3 and W2, B12 V1 plus B22,
+
+160
+00:45:01,684 --> 00:45:28,684
+ve sub 2 plus, ve sub 3 to ve sub 3. And the last system, w, we write, w sub 3 as a linear combination of elements of first base, ve sub 1 plus, ve sub 3, ve sub 3.
+
+161
+00:45:29,043 --> 00:45:34,844
+2 plus B33 v3.
+
+162
+00:45:35,443 --> 00:45:44,143
+By solving all these three non-homogeneous systems, we will get the base transition matrix.
+
+163
+00:45:44,583 --> 00:45:51,923
+This is the second way. We just compute the inverse of the matrix A. Let's find the inverse of A.
+
+164
+00:45:52,863 --> 00:45:55,443
+First, we need to find the determinant of A.
+
+165
+00:45:55,956 --> 00:46:08,096
+Let's compute here, determinant. I'm just adding our first row to the second row in order to get here at zero, and then I will expand along the first column.
+
+166
+00:46:08,096 --> 00:46:22,796
+So, we have one, nine over five, eight over five, here we have zero, here we have five over five.
+
+167
+00:46:23,284 --> 00:46:33,284
+5 over 5, again line, 1, by adding this guy to this.
+
+168
+00:46:33,284 --> 00:46:46,284
+The last row remain unchanged, because we don't apply any operation to the last row.
+
+169
+00:46:51,731 --> 00:47:04,492
+Expanding along first column, we have a determinant as minus 2 over 5 plus...
+
+170
+00:47:10,579 --> 00:47:17,179
+6 over 5. Bu sadece 4 over 5.
+
+171
+00:47:23,860 --> 00:47:29,559
+Let's check our result again.
+
+172
+00:47:30,900 --> 00:47:41,880
+Just adding first row to the second row, here we have 0, 5 over 5, again 5 over 5.
+
+173
+00:47:51,572 --> 00:48:10,771
+3x3² matris, the determinant of 3x3² matris, so here we have minus 2 over 5 plus 6 over 5, this is just 4 over 5. Determinant is non-zero, so we have inverse.
+
+174
+00:48:19,215 --> 00:48:21,935
+Nine cofactors of A
+
+175
+00:48:26,483 --> 00:48:34,043
+Bu konuda da
+
+176
+00:48:34,043 --> 00:48:46,043
+İnvrse O A
+
+177
+00:48:46,043 --> 00:48:50,043
+O A
+
+178
+00:48:50,043 --> 00:48:53,835
+İnvrse O A
+
+179
+00:48:54,036 --> 00:49:10,536
+As a second way, you can put this matrix in the form I sub n, here we have b.
+
+180
+00:49:10,536 --> 00:49:21,336
+Okay, just append an identity matrix of order n at the right of the matrix a and apply sequentially
+
+181
+00:49:22,387 --> 00:49:40,087
+elementarli raw operations to this matrix, to this n by 2 n matrix, and convey the identity matrix from right to left, and the matrix B is just inverse of A.
+
+182
+00:49:40,087 --> 00:49:46,988
+Okay, you have two options to obtain the inverse of matrix A.
+
+183
+00:49:47,699 --> 00:50:01,839
+We just computed determinant OA is non-zero, so A has an inverse, and here we write directly the inverse OA, you can check all operations.
+
+184
+00:50:02,839 --> 00:50:10,059
+So, base transition matrix from B2 to B1 is just this matrix.
+
+185
+00:50:12,467 --> 00:50:28,927
+This is the solution of the first equation, this is the solution of the second non-homogeneous equation, and this is the solution of, you can solve this matrix by solving three systems and complete your results.
+
+186
+00:50:30,407 --> 00:50:31,488
+As an exercise.
+
+187
+00:50:33,007 --> 00:50:33,648
+Any questions?
+
+188
+00:50:50,963 --> 00:51:04,163
+The third part of the example says find the coordinate factor of u with respect to base b1. We need to find constants.
+
+189
+00:51:11,603 --> 00:51:16,103
+We need to find, my, my business work.
+
+190
+00:51:17,843 --> 00:51:18,663
+Okay.
+
+191
+00:51:19,743 --> 00:51:31,043
+We need to find constants y1, y2, and y3, in order to find the coordinate factor of u with respect to basis d1.
+
+192
+00:51:33,523 --> 00:51:58,723
+Çünkü u written as a coordinate vector, with respect to standard phases, we want to let standard phases, e1, 1, 0, 0, e2, 0, 1, 0, e3, 0, 0, 1,
+
+193
+00:51:59,315 --> 00:52:04,655
+Bu, standard basis of R³, is also a subset of R³.
+
+194
+00:52:06,335 --> 00:52:24,695
+Here we just write U, B as, one, excuse me, I need to check the coordinates of U.
+
+195
+00:52:27,092 --> 00:52:30,791
+Ok, 2, 3, 5.
+
+196
+00:52:43,188 --> 00:52:47,967
+U, B is just 2, 3, 5.
+
+197
+00:52:49,588 --> 00:52:55,188
+We want to find the coordinate vector of U with respect to B1.
+
+198
+00:52:55,588 --> 00:53:02,088
+So, we need to solve this non-homigendro system.
+
+199
+00:53:10,579 --> 00:53:29,299
+Y1, 1, 2, 0, plus Y2, 2, 0, 1, plus Y3, 1, 2, 1, is just x2, 2, 3, 5.
+
+200
+00:53:38,003 --> 00:53:57,043
+y3, is just 2, 2y1 plus 2y3 is 3, and y2 plus y3 is 5.
+
+201
+00:54:03,635 --> 00:54:14,835
+Coefficient matrix is the same with the examples which we given in the last course. So we use the same coefficient matrix.
+
+202
+00:54:18,036 --> 00:54:27,215
+2, 0, 1, 1, 2, 1, 2, 3, 5.
+
+203
+00:54:29,523 --> 00:54:41,263
+We just apply elementary row operations to this matrix, automatic matrix, in order to find y1, y2, y3.
+
+204
+00:54:46,739 --> 00:54:48,363
+Bu, bu
+
+205
+00:54:53,588 --> 00:55:19,508
+Y1, Y2, and Y3. Y1 is minus 1 over, excuse me, minus 13 over 4. Y2 is 1 over 4. And Y3 is 19 over 4. This is the coordinate factor u with respect to base B1. Minus 13 over 4.
+
+206
+00:55:20,244 --> 00:55:24,144
+1 over 4 and 19 over 4.
+
+207
+00:55:25,884 --> 00:55:31,584
+The coordinate factor of u with respect to base B1.
+
+208
+00:55:35,092 --> 00:55:39,572
+Just transform from the standard base to the B1.
+
+209
+00:55:39,572 --> 00:55:40,012
+Okay.
+
+210
+00:55:43,411 --> 00:55:46,811
+2, 3, 5.
+
+211
+00:55:48,751 --> 00:55:49,891
+Let's write here B.
+
+212
+00:55:52,132 --> 00:55:58,251
+Minus 13 over 4, 1 over 4, 19 over 4.
+
+213
+00:55:58,351 --> 00:56:02,311
+This is our new coordinate vector.
+
+214
+00:56:07,539 --> 00:56:18,139
+The last part of the example, just find the coordinate factor of u, with respect to base b2.
+
+215
+00:56:18,139 --> 00:56:31,300
+Also, we can, in order to find this coordinate factor, we can multiply m sub b1, b2 by u sub b2.
+
+216
+00:56:32,692 --> 00:56:44,692
+But here we just saw non-homogeneous system. This is another way to find coordinate vector of u with respect to second phase.
+
+217
+00:56:46,692 --> 00:56:56,692
+Let's find with respect to two ways. First, we saw this system.
+
+218
+00:56:57,811 --> 00:57:04,051
+We write u as a linear combination of elements of second base, and we solve nanomogeneous system.
+
+219
+00:57:04,931 --> 00:57:09,051
+Here, our coordinate vector is just...
+
+220
+00:57:13,300 --> 00:57:20,100
+This row, U sub B2,
+
+221
+00:57:24,115 --> 00:57:32,955
+24 over 5, 1 over 5, minus 11 over 5.
+
+222
+00:57:34,515 --> 00:57:37,475
+This is U, B2.
+
+223
+00:57:40,095 --> 00:57:49,295
+Let's compute by multiplying the transition matrix from B1 to B2 and compare our result.
+
+224
+00:57:51,347 --> 00:57:52,488
+We know that
+
+225
+00:57:56,659 --> 00:58:09,519
+The base transition matrix, we just find u sub b1 as, let's check, let me check.
+
+226
+00:58:12,200 --> 00:58:18,280
+Okay, here we have u sub b1.
+
+227
+00:58:23,603 --> 00:58:26,943
+1 over 4, 19 over 4.
+
+228
+00:58:27,244 --> 00:58:33,184
+We just compute these coordinates by solving a non-homogeneous system.
+
+229
+00:58:34,083 --> 00:58:46,923
+We can get this vector by multiplying this matrix, the base transition matrix from B2 to B1, by the coordinate vector of U with respect to second base.
+
+230
+00:58:51,380 --> 00:58:57,559
+O u ile B2'ye kadar bu
+
+231
+00:58:57,559 --> 00:59:03,980
+ve B2'ye kadar bu
+
+232
+00:59:03,980 --> 00:59:05,980
+O A'ye kadar bu
+
+233
+00:59:05,980 --> 00:59:09,880
+ve bu coördünün ve
+
+234
+00:59:09,880 --> 00:59:12,880
+bu coördünün ve
+
+235
+00:59:12,880 --> 00:59:14,980
+O u ile B1'ye kadar
+
+236
+00:59:19,188 --> 00:59:30,608
+ve u sub b2, m sub b1, b2, times u sub b1.
+
+237
+00:59:31,488 --> 00:59:41,288
+We multiply base transition matrix from b1 to b2 by the coordinate factor of u, with respect to first base.
+
+238
+00:59:41,288 --> 00:59:41,688
+Okay.
+
+239
+00:59:44,848 --> 00:59:45,588
+Any question?
+
+240
+00:59:49,139 --> 00:59:58,139
+I think this is the most complicated topic of this course, base transition matrices.
+
+241
+01:00:02,739 --> 01:00:09,619
+10-minutes break, after break, I will give another example and we will complete our today's course.
+
+242
+01:00:09,939 --> 01:00:16,419
+Okay, you can ask your questions during break. See you after 10 minutes.
+
+243
+01:15:02,100 --> 01:15:04,659
+Let's summarize the topic.
+
+244
+01:15:08,948 --> 01:15:30,568
+Let me have a vector space, a vector space, V, o dimension, n, and two ordinate bases of V, V1, V2, Vn, and V2.
+
+245
+01:15:38,260 --> 01:15:47,780
+Another basis of V, with the given vectors, W1, W2, Wn.
+
+246
+01:15:49,659 --> 01:15:57,340
+We want to transform any coordinate vector from B1 to B2.
+
+247
+01:15:57,340 --> 01:16:05,460
+So, in order to do this, we just find a transition matrix.
+
+248
+01:16:06,963 --> 01:16:26,963
+The transition matrix from B1, let's call A, also denoted by M sub B1, B2, is just formed by the solution of all non-homogeneous system B1.
+
+249
+01:16:30,963 --> 01:16:34,963
+First base as a linear combination of elements of second base.
+
+250
+01:16:34,963 --> 01:16:35,963
+OK.
+
+251
+01:16:35,963 --> 01:16:48,963
+A11, W1 plus A21, W2 plus A31, W3.
+
+252
+01:16:48,963 --> 01:16:52,963
+This is the first column of A.
+
+253
+01:16:52,963 --> 01:16:58,699
+V2 is just A1, W1.
+
+254
+01:16:58,804 --> 01:17:22,804
+A22W2 plus A23W3. This is the second column OA. And by solving this non-homogeneous system, A13W1 plus A23W2 plus A23W2 plus A23W2 plus A23W2 plus A23W2.
+
+255
+01:17:23,604 --> 01:17:26,443
+A sub 3, 3, W sub 3.
+
+256
+01:17:27,644 --> 01:17:47,164
+The solution of all these non-homogeneous systems just has unique solution, and solution of each system is a column vector of matrix A, transition matrix from B1 to B2.
+
+257
+01:17:53,908 --> 01:17:58,908
+All these three non homogenous systems,
+
+258
+01:18:02,804 --> 01:18:06,804
+Matris B, bu istersen A.
+
+259
+01:18:11,636 --> 01:18:24,356
+msub, b2, b1, the base transition matrix from b2 to b1. We just write elements of second base as a linear combination of elements of first base.
+
+260
+01:18:24,356 --> 01:18:37,316
+w1 is b11 v1 plus b21 v2 plus b31.
+
+261
+01:18:38,996 --> 01:18:57,355
+V3, W2 is just V1 to V1 plus V2 to V2 plus V3 to V3.
+
+262
+01:18:57,355 --> 01:19:05,935
+The last column of B is the solution of this vector equation or non-homogeneous system.
+
+263
+01:19:07,636 --> 01:19:10,556
+B1, 3, B1, plus
+
+264
+01:19:15,988 --> 01:19:17,347
+I need to...
+
+265
+01:19:22,387 --> 01:19:36,727
+I just write with respect to a vector space of dimension n, excuse me, tree, I need to replace this by, here we have w n.
+
+266
+01:19:37,807 --> 01:19:38,247
+Okay.
+
+267
+01:19:43,699 --> 01:19:46,699
+vekizde, bu da,
+
+268
+01:19:46,699 --> 01:19:47,532
+vekizde,
+
+269
+01:19:59,539 --> 01:20:07,079
+Here we have an1, an3, excuse me.
+
+270
+01:20:10,159 --> 01:20:13,279
+Just let me fix this error.
+
+271
+01:20:21,779 --> 01:20:31,779
+A1N, A1N, A2NN.
+
+272
+01:20:39,891 --> 01:20:55,351
+BN1, VN, here we have BN2, VN, and that write here, WN.
+
+273
+01:21:05,684 --> 01:21:08,684
+Bunu bunu yapalım.
+
+274
+01:21:12,595 --> 01:21:36,363
+Wn, as a linear combination of the factors in the B1, okay. Bn1, V1 plus Bn2, V2, here we have Bnn, Vn, okay. This is...
+
+275
+01:21:36,372 --> 01:21:50,192
+Sözücü, all these systems, is base transition matrix, from B2 to B1. I need to also fix here.
+
+276
+01:22:06,771 --> 01:22:09,692
+B, excuse me, A.
+
+277
+01:22:13,363 --> 01:22:17,623
+An1, Wn.
+
+278
+01:22:18,143 --> 01:22:23,283
+Here we have, here, An2, Wn.
+
+279
+01:22:23,283 --> 01:22:30,443
+And we write Vn as a linear combination of elements of B2.
+
+280
+01:22:31,483 --> 01:22:34,283
+An1, Wn.
+
+281
+01:22:43,891 --> 01:22:49,451
+A1N, sorry, A1, A, N,
+
+282
+01:22:57,460 --> 01:23:20,420
+a1n w1 plus a2n w2 plus an n w n. Okay, this is the last column of a. We have an n-dimensional vector space.
+
+283
+01:23:21,684 --> 01:23:28,684
+B1 ve B2'ye kadar
+
+284
+01:23:28,684 --> 01:23:42,684
+B1'e kadar
+
+285
+01:23:42,684 --> 01:23:46,684
+B2'e kadar
+
+286
+01:23:45,779 --> 01:23:55,539
+Ermans' O, B1, as a linear combination of Ermans' O, B2, and we saw all these n non-homogeneous systems.
+
+287
+01:23:56,420 --> 01:24:03,379
+Each system, the solution of each system, is a column vector in A.
+
+288
+01:24:03,819 --> 01:24:09,859
+The solution of the first system is the first column vector, the solution of the second.
+
+289
+01:24:10,387 --> 01:24:18,208
+A system is the second column vector, and the solution of M system is just the M column vector.
+
+290
+01:24:18,347 --> 01:24:24,487
+This is an M by M square matrix. Matrix A is an M by M square matrix.
+
+291
+01:24:24,827 --> 01:24:34,608
+Also B is an M by M square matrix, non-singular square matrices. A is inverse O, B, B is inverse OA.
+
+292
+01:24:34,608 --> 01:24:36,188
+Okay, any questions?
+
+293
+01:24:39,731 --> 01:24:48,731
+İçerideki, transition matris, nasıl bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte?
+
+294
+01:24:49,731 --> 01:24:56,731
+Eğer A'ı bulabilirsiniz, A'ı bulabilirsiniz, A'ı bulabilirsiniz, B'ı bulabilirsiniz.
+
+295
+01:24:56,731 --> 01:25:00,731
+Ve aynı zamanda, ikinci bir süreçte bir süreçte bir süreçte.
+
+296
+01:25:02,731 --> 01:25:04,731
+Bir örnek vereyim.
+
+297
+01:25:12,532 --> 01:25:31,532
+V is a vector space of dimension 3, because B1 and B2 are bases for V, each contains 3 vectors, so the number of linearly independent elements in a base is called the dimensional vector space, but...
+
+298
+01:25:34,228 --> 01:25:44,987
+V is any vector, real vector space of dimension 3. Needs not to be RQ, Euclidean space of dimension 3.
+
+299
+01:25:48,724 --> 01:25:54,724
+So, there is a relation between elements of v1, v1 and v2.
+
+300
+01:25:54,724 --> 01:26:04,644
+We write v1 as a linear combination of elements of v2 as v1 is equal to w1 plus w2 minus w3.
+
+301
+01:26:06,264 --> 01:26:14,524
+And v2 is just 2 times w1 minus w2 plus w3.
+
+302
+01:26:16,916 --> 01:26:20,876
+V3 is just W1 plus 2 W3.
+
+303
+01:26:22,876 --> 01:26:32,836
+Depending on these equations, vector equations, find the transition matrix from B1 to B2.
+
+304
+01:26:34,275 --> 01:26:34,676
+Okay.
+
+305
+01:26:37,015 --> 01:26:40,396
+And find transition matrix from B2 to B1.
+
+306
+01:26:45,747 --> 01:27:04,555
+U' ve B'1' ve
+
+307
+01:27:05,524 --> 01:27:14,784
+The coordinate vector OV with respect to B2 is just 2 minus 1 minus 2. Find coordinate vector OV with respect to B1.
+
+308
+01:27:21,492 --> 01:27:48,452
+Since we know all the coefficient of these equations here, we have a11, a21, a31, a12, a22, a32, and
+
+309
+01:27:49,108 --> 01:28:07,868
+A13, A33. Ok. By storing all these entries in the matrix A, we can easily find the transition matrix from B1 to B2.
+
+310
+01:28:16,724 --> 01:28:17,724
+B2.
+
+311
+01:28:17,724 --> 01:28:24,724
+The first column just comes from the first equation.
+
+312
+01:28:24,724 --> 01:28:27,724
+1, 1, minus 1.
+
+313
+01:28:27,724 --> 01:28:30,724
+Second column comes from the second equation.
+
+314
+01:28:30,724 --> 01:28:41,724
+We need not to solve any equation because I know the linear combination of V1 with respect to the second base B2.
+
+315
+01:28:44,564 --> 01:28:55,783
+So, the second column is 2, minus 1, 1, and the last column is just 1, 0, 2.
+
+316
+01:28:55,783 --> 01:29:04,864
+This is the base transition, matrix of V from B1 to B2.
+
+317
+01:29:08,851 --> 01:29:09,351
+So,
+
+318
+01:29:12,351 --> 01:29:12,871
+um,
+
+319
+01:29:17,811 --> 01:29:28,391
+B1, B2 is just 1, 1, minus 1, 2, minus 1, 1, 1, 0, 2.
+
+320
+01:29:29,371 --> 01:29:33,692
+And M sub B2, B1 is just inverse of this matrix.
+
+321
+01:29:33,851 --> 01:29:37,231
+Let's find the inverse of this matrix.
+
+322
+01:29:38,092 --> 01:29:40,391
+First, let's compute the determinant.
+
+323
+01:29:42,655 --> 01:29:48,355
+Örneğin, 3rd row to 1st and 2nd in order to get zeros here and here.
+
+324
+01:29:51,235 --> 01:30:09,015
+Determinant O, M sub, B1, B2, is just determinant O, this matrix, here we have 0, 3, again 3, 0.
+
+325
+01:30:10,387 --> 01:30:17,047
+0, 2, minus 1, 1, 2.
+
+326
+01:30:18,108 --> 01:30:24,747
+You can apply Laplace expansion along first column or second row.
+
+327
+01:30:24,747 --> 01:30:26,967
+I just use first column.
+
+328
+01:30:27,948 --> 01:30:29,967
+And here we have minus 1.
+
+329
+01:30:30,487 --> 01:30:34,247
+This is the entries of the matrix A.
+
+330
+01:30:35,380 --> 01:30:43,360
+3,1, the sign is positive, because minus 1 power 3 plus 1 is 4, the sign is positive.
+
+331
+01:30:44,220 --> 01:30:57,200
+So, the determinant is just minus 1, A sub 3,1 times, remaining part of the matrix, 3 times 2.
+
+332
+01:30:57,200 --> 01:30:59,440
+This is just minus 6.
+
+333
+01:30:59,620 --> 01:30:59,760
+Okay.
+
+334
+01:31:00,532 --> 01:31:07,692
+Determinant is non-zero, so we can find the inverse of matrix.
+
+335
+01:31:09,371 --> 01:31:10,231
+Let's write A.
+
+336
+01:31:11,231 --> 01:31:11,572
+Okay.
+
+337
+01:31:13,692 --> 01:31:18,811
+We need to find all coefficient, excuse me, cofactors of A.
+
+338
+01:31:26,676 --> 01:31:35,276
+A11, just close up first row and first column.
+
+339
+01:31:37,276 --> 01:31:38,956
+The sign is positive.
+
+340
+01:31:40,236 --> 01:31:44,195
+Minus 1, 0, 1, 2.
+
+341
+01:31:45,396 --> 01:31:46,716
+This is just minus 2.
+
+342
+01:31:51,091 --> 01:31:53,091
+A21
+
+343
+01:32:11,412 --> 01:32:14,692
+A12, I just transpose cofactors.
+
+344
+01:32:15,152 --> 01:32:18,432
+The sign is negative, here we put a negative sign.
+
+345
+01:32:19,912 --> 01:32:23,131
+1, 0, minus 1, 2.
+
+346
+01:32:23,872 --> 01:32:25,891
+This is also minus 2.
+
+347
+01:32:28,271 --> 01:32:31,551
+A13, sign is positive.
+
+348
+01:32:34,352 --> 01:32:37,932
+1, minus 1, minus 1, 1.
+
+349
+01:32:38,387 --> 01:32:46,887
+A21, sign is negative.
+
+350
+01:32:50,452 --> 01:32:55,252
+2112-3
+
+351
+01:32:55,252 --> 01:32:59,412
+A22-2
+
+352
+01:32:59,412 --> 01:33:03,792
+11-12
+
+353
+01:33:03,792 --> 01:33:06,412
+2-1-3
+
+354
+01:33:06,412 --> 01:33:08,811
+A22-2
+
+355
+01:33:12,851 --> 01:33:29,391
+2, 3. Sine is negative. 1, 2, minus 1, 1. Ok. Here we have 1 plus 2 is just 3, minus 3.
+
+356
+01:33:38,292 --> 01:33:40,292
+Let's compute here.
+
+357
+01:33:40,292 --> 01:33:44,292
+A31, sine is positive.
+
+358
+01:33:44,292 --> 01:33:51,292
+21, minus 10, this is 1.
+
+359
+01:33:51,292 --> 01:33:55,292
+A32, sine is negative.
+
+360
+01:33:55,292 --> 01:34:03,292
+1110, 1110, this is also 1.
+
+361
+01:34:05,779 --> 01:34:14,459
+33, sin is positive, 1, 2, 1, minus 1.
+
+362
+01:34:14,459 --> 01:34:14,819
+Ok.
+
+363
+01:34:16,819 --> 01:34:21,699
+This is minus 1, minus 2, minus 2.
+
+364
+01:34:27,475 --> 01:34:53,155
+M, let's try it here, Mb2b1, the transition matrix from B2 to B1, is just, the determinant is minus 6, so here we have 1 over 3, 1 over 3, here we have 0, 1 over 2, minus 1 over 2,
+
+365
+01:34:53,716 --> 01:35:18,136
+1 over 2, minus 1 over 6, minus 1 over 6, and 1 over 2. This is the base transition matrix from B2 to B1. We know u sub B1 and
+
+366
+01:35:18,868 --> 01:35:36,868
+We want to find u sub b2. u sub b2 is just a q2. u sub b2 is just a q2. m b1 b2.
+
+367
+01:35:42,036 --> 01:35:59,376
+mb1, b2, times u sub b1. Ok, I know u sub b1, and we find m sub b1, b2, top b2, just we need to multiply these two matrices.
+
+368
+01:36:16,435 --> 01:36:30,375
+We just multiply this matrix Mb1, the transition matrix from B1 to B2 by the coordinate vector of u with respect to B1 in order to get the coordinate vector of u with respect to B2.
+
+369
+01:36:30,375 --> 01:36:35,495
+The result of this multiplication is just 415.
+
+370
+01:36:36,095 --> 01:36:42,015
+So u sub B2 is just 415.
+
+371
+01:36:45,235 --> 01:36:52,015
+Ok. Any questions? Can you hear me?
+
+372
+01:37:10,868 --> 01:37:11,852
+Bu güzel.
+
+373
+01:37:19,539 --> 01:37:28,380
+The last part of the example, let's find the coordinate factor of v with respect to base b1.
+
+374
+01:37:28,460 --> 01:37:33,219
+We know coordinate factor of v with respect to base b2.
+
+375
+01:37:33,760 --> 01:37:43,979
+So in order to get v sub b1, we need to multiply transition matrix from b2 to b1 by the coordinate factor of v with respect to b2.
+
+376
+01:37:45,076 --> 01:37:58,556
+We compute the transition matrix from B2 to B1. This is the inverse of transition matrix M sub B1, B2.
+
+377
+01:37:58,556 --> 01:38:05,355
+The inverse of transition matrix from B1 to B2.
+
+378
+01:38:09,076 --> 01:38:21,355
+So, just multiply, by a matrix multiplication, we find the coordinate vector of V with respect to second base, excuse me, first base.
+
+379
+01:38:22,956 --> 01:38:35,355
+V sub V1 is just 1 over 2, 3 over 2, and...
+
+380
+01:38:35,828 --> 01:38:37,028
+Mainstream old.
+
+381
+01:38:37,688 --> 01:38:37,948
+Ok.
+
+382
+01:38:45,363 --> 01:39:08,363
+I think this is our last example. So next week, our last week of this term, we will talk about eigenvalues, eigenvektörs, os2 matrix, and...
+
+383
+01:39:08,847 --> 01:39:18,307
+K.D. Hamilton, characteristic polynomial over square matrix, and K.D. Hamilton, theorem, for the square matrices.
+
+384
+01:39:19,567 --> 01:39:21,967
+And we will close this term.
+
+385
+01:39:21,967 --> 01:39:22,307
+Okay.
+
+386
+01:39:23,768 --> 01:39:24,368
+Any questions?
+
+387
+01:39:37,395 --> 01:39:40,395
+Teşekkürler. Teşekkürler.
+
+388
+01:39:40,395 --> 01:39:41,395
+Teşekkürler.
