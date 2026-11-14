@@ -1,0 +1,1339 @@
+1
+00:06:40,435 --> 00:06:42,675
+Arkadaşlar merhabalar, sesim geliyor mu?
+
+2
+00:06:46,324 --> 00:06:47,304
+Geliyor hocam.
+
+3
+00:06:57,779 --> 00:06:59,339
+Ben sizi duyamadım. Sesim geliyor mu?
+
+4
+00:07:00,119 --> 00:07:00,399
+Alo.
+
+5
+00:07:00,919 --> 00:07:01,559
+Geliyor.
+
+6
+00:07:02,159 --> 00:07:03,559
+Geliyor hocam sizin sesiniz.
+
+7
+00:07:04,159 --> 00:07:04,459
+Tamam.
+
+8
+00:07:06,139 --> 00:07:10,599
+Bugün sunumlara devam edelim. Dört grup kalmıştı.
+
+9
+00:07:12,419 --> 00:07:17,599
+Şimdi burada sunmayan arkadaşımız var mı? Sunmak isteyen arkadaşımız?
+
+10
+00:07:19,120 --> 00:07:22,019
+Ben sunmadım. Sunabilirim hocam.
+
+11
+00:07:22,759 --> 00:07:23,839
+Tamam, sen sun.
+
+12
+00:07:31,411 --> 00:07:38,291
+Gürütüyorsun herhalde. Evet hocam. Tamam. Şimdi sunumunu buraya oturup yaparsınız bilgisayarla uğraşmak istedim. Tahtta bir olur.
+
+13
+00:07:45,524 --> 00:07:47,244
+[öğrenci].
+
+14
+00:07:48,244 --> 00:07:56,843
+[öğrenci] burada beraberiz. [öğrenci] de benim ofisimde. Bir kişi daha var yani şu anda dinleyen. Başlayabilirsiniz.
+
+15
+00:07:56,843 --> 00:08:09,744
+Tamam. Benim incelediğim makale gerçek zamanlı poz tanıma. Ama bunu şeyden yapıyor. Derinlikli imgeden.
+
+16
+00:08:10,579 --> 00:08:23,419
+Bu, 2011 yılında Microsoft'taki araştırmacıların öne sürdüğü bir makale. Genel olarak sunumun analatları bu şekilde.
+
+17
+00:08:26,179 --> 00:08:28,639
+Öncelikle eklemli vücut poz tahmini nedir?
+
+18
+00:08:30,779 --> 00:08:33,639
+İnsan vücudundaki eklemlerin yerini...
+
+19
+00:08:34,100 --> 00:08:55,440
+Tahminleme yöntemiyle bir post tahmini yapmak. Görüntüye dayalı gözlemler yaklaşık 25 yılı aşkın süredir hatta daha fazla süredir zaten devam ediyor. Daha önceki yaklaşımlar bu işlemi birden fazla kamera kullanarak veya kontrollü bir arka plan veya basit bir arka plan kullanarak yapmak.
+
+20
+00:08:58,100 --> 00:09:13,600
+Post tanımanın kullanıldığı alanlar bu şekilde. Aksiyon tanıma, giysilerin sınıflandırılması, oyun alanında veya insanları izleme alanında kullanılıyor. Aynı zamanda CCTV kameralarında da.
+
+21
+00:09:14,548 --> 00:09:38,008
+Bu kullanım alanı olarak yer alıyor. Çin'de 60 milyondan fazla CCTV kamerası var. Londra'da bir kişinin günde ortalama 300 kez izlendiğinden bahsetmiş makalede. Böyle bir durumda bir anomali veya bir suçun tespiti için de kullanılabilir bir alan.
+
+22
+00:09:39,668 --> 00:09:49,347
+Tabi burada poz tanımlar yaparken karşılaşılabilecek zorluklar insanların duruşu kolay şekilde deforme olabiliyor.
+
+23
+00:09:50,467 --> 00:10:03,367
+Farklı insanlara farklı vücut şekilleri, kameraya göre yakınlık uzaklığına göre farklı şekilde ölçeklenmeleri, giydikleri giysilerin ve sergiledikleri pozların çeşitliliği gibi.
+
+24
+00:10:03,967 --> 00:10:19,067
+Tanırken karşılaşabileceğimiz, posttanırken karşılaşabileceğimiz zorluklar var. Bunun yanında da posttanırken vücudun bölümlerinin nasıl tanınlanacağına ve etiketlemenin ne kadar ayrıntılı olacağına karar vermemiz gerekiyor.
+
+25
+00:10:21,627 --> 00:10:31,528
+Her kompüter vision, bilgisayarlık görü de görü projesinin olduğu gibi ışık seviyeleri, gürültü, arka plan gibi diğer faktörlerde.
+
+26
+00:10:31,936 --> 00:10:48,235
+Zorluk yaratıyor. Bu makaldeki ana fikir, şekil, boyut, poz veya kıyafetten bağımsız olacak şekilde son kullanıcının satın alabileceği bir makine kullanılarak gerçek zamanlı bir poz tanıma yapmak.
+
+27
+00:10:49,855 --> 00:10:50,936
+Daha önceki...
+
+28
+00:10:50,964 --> 00:11:10,204
+Yaklaşımlarda geneksel yoğunluk kameralı ile birlikte öncelikle bir başlangıç pozu öğrenip bu pozun varyasyonlarını öğrenme veya gövdenin oluşturulacağı gövde parçalarının konumlarını tahmin etmeye dayalı bir diğer daha önceki yaklaşımda derinlik kameraları kullanmak.
+
+29
+00:11:18,004 --> 00:11:27,624
+İşlemeyi kendi bünyesinde gerçekleştiren derinlik kameraları da çıktı. Intel tarafından öne sürüldü. Ancak bunların da maliyeti epey yüksek.
+
+30
+00:11:29,724 --> 00:11:41,864
+Bu makaledeki yaklaşım öncelikle derinlik imgelerini kullanarak vücut parçalarını bulmak. Sonra da eklem konumlarını hesaplamak.
+
+31
+00:11:42,484 --> 00:11:50,964
+Kullanılan veri seti gerçekten çok büyük bir veri seti kullanmışlar. Hem sentetik hem de motion capture verisi kullanmışlar.
+
+32
+00:11:51,923 --> 00:12:01,304
+Piksel başında bir sınıflandırma yapılmış. Hiçbir şekilde şey kullanılmamış. Temporal veri kullanılmamış.
+
+33
+00:12:01,967 --> 00:12:29,407
+Önceki frame'de sağ kol işte burada, bir sonraki frame'de şurada olma tahminlemesi falan yok. Her frame başına, piksel başına bir sınıflandırma yapılmış. Sınıflandırma yapılırken de rastgele orman, random forest kullanılmış. Derinlikli imgeyi burada şeyden alıyorlar. Tabii Microsoft'un makalesi olduğu için Xbox'ın Kinect kamerasını kullanarak.
+
+34
+00:12:30,035 --> 00:12:46,836
+Bu derinlikli imge renk ve dokuya karşı değişmezlik gösteriyor. Düşük iş seviyesinde iyi performans, scalability iyi, ölçeklemesi iyi ve arka plan çıkarmayı otomatik olarak yapıyor.
+
+35
+00:12:49,107 --> 00:13:06,027
+Gece görüş kamerasında Kinect'in yaydığı kızılötesi ışıklar şu şekilde soldaki gibi gözlemleniyor. Burada her bir ışının bir diğerine olan uzaklığı zaten fixed yani sabit olacak şekilde.
+
+36
+00:13:14,624 --> 00:13:22,203
+Işın arasındaki mesafe değişkenlik göstereceği için orada bir derinlik verisi elde edilmiş oluyor.
+
+37
+00:13:22,884 --> 00:13:35,484
+Çerçevedeki iki farklı insanın ayırt edilmesi içinse, burada kızıl ötesi sensör ve kameranın kamera sistemi üzerindeki mesafesi sabit olduğu için zaten,
+
+38
+00:13:35,484 --> 00:13:39,884
+burada kızıl ötesi sensör böyle bir matriz.
+
+39
+00:13:40,980 --> 00:14:04,660
+Yayınlıyor karşısındaki alana ve şu açıda maddesin birinci indisindeki öğeyi bulduğunu varsayarsak bu aynı hizadaki nesneye maddesin birinci indisindeki verinin hizasındaki öğe bir diğerine de bu.
+
+40
+00:14:05,076 --> 00:14:21,796
+Yapacağı açı, şu çizginin yapacağı açı farklı olacağı için bu şekilde ayırt etmiş oluyor iki farklı nesneyi. Mühendisliğin üzerine yaptığı izdüşüm de diyebiliriz sanırım. O şekilde ayırt etmiş oluyor.
+
+41
+00:14:24,788 --> 00:14:37,388
+Kullanılan veri tipleri şu şekilde. Train ve test için sentetik veriler. Test için gerçek veri kullanılmış. Yani test için hem sentetik hem gerçek veri. Train için sadece sentetik veri kullanılmış.
+
+42
+00:14:37,988 --> 00:14:51,628
+Sentetik veri kullanmadaki ama çeşitlilik yaratmak. Rendering Pipeline kullanarak tamamen etiketlenmiş ve train edilebilecek yeni örnekler üretilmiş.
+
+43
+00:14:52,128 --> 00:15:02,268
+Makine öğrenmesi kullanılmasının amacı burada kamera konumu, poz, vücut ölçüsü, vücut şekli gibi konularda değişmezlik sağlamak.
+
+44
+00:15:02,268 --> 00:15:18,268
+Diğer karşılaşılabilecek varios sonlar da boy, ağırlık, motion capture'ın çerçevesi, kamera noise, kullanılan insanın giydiği giysiler, saç modelleri ve benzeri.
+
+45
+00:15:22,196 --> 00:15:40,396
+Motion Capture verisi kullanılan uygulamaya dayalı olarak çeşitlilik gösterebilir. Burada Kinect'e genellikle oyun alanında bir uygulamalar olduğu için dans etme, koşmama benzeri insan eylemleri kullanılarak oluşturmuş bir veri seti var.
+
+46
+00:15:40,396 --> 00:15:45,336
+Burada sınıflandırıcımızın görülmemiş pozları genelleştirmesi.
+
+47
+00:15:46,100 --> 00:16:06,419
+Bekleniyor. Farklı kombinasyonlarda geniş bir poz ziyerpazesi var. Veri setini, sentetik veri setini birazdan zaten kendi oluşturdukları videoda anlatmışlar, onu da göstereceğim. Burada gereksiz birçok pozda en uzak komşu kümelemeye dayalı olarak veri setinden atılmış.
+
+48
+00:16:08,019 --> 00:16:31,679
+Rendering Pipeline, poz varyasyonunu oluşturmak için gerekli. Öncelikle temel karakter ve pozlarla başlayıp, bunları döndürme, öteleme, farklı saç ve giyim kombinasyonları, ağırlık ve boy değişimleri, kameranın konumu ve yönü ve kamera gürültüsünü kullanarak farklı dönüşümler oluşturup bu dönüşümleri veri setine ekliyor.
+
+49
+00:16:33,107 --> 00:16:48,148
+Aldıkları farklı renderlar şu sağdaki gibi. Üste görülen tamamen çıplak vücut şeklinde bir render. Farklı insan, farklı boyuttaki insanların boyutları.
+
+50
+00:16:48,148 --> 00:16:55,028
+Alttaki ise farklı giysi ve saç kombinasyonları kullanılmış render'da.
+
+51
+00:16:57,268 --> 00:17:08,788
+Genel olarak sistem şu şekilde çalışıyor. Giriş olarak bir Depth Image alıyor. Sonra bu Depth Image'den bir vücut bölüklemesi yapıyor.
+
+52
+00:17:09,228 --> 00:17:19,467
+Belirli oranda bu çalışmada vücut 31 farklı parçaya bölümlenmiş. Burada kafanın 4 ayrı parçaya bölümlendiğini örnek olarak görebiliriz.
+
+53
+00:17:19,467 --> 00:17:25,200
+İşte sol üst, sağ üst, sol alt, sağ alt şeklinde. Daha sonra bunun...
+
+54
+00:17:25,200 --> 00:17:34,900
+3 boyutlu eklem tahminleri yapılıyor. Daha sonrasında 3 boyutlu bir iskelet edilmiş oluyor.
+
+55
+00:17:36,159 --> 00:17:42,240
+Tek girişlerindeki görüntüden piksel başına vücut parçası dağılımı çıkarılıyor şu ikinci aşamada.
+
+56
+00:17:43,460 --> 00:17:50,659
+Daha sonra bu sinyalin yerel modlarıyla bir eklem tahmini yapılıyor.
+
+57
+00:17:53,619 --> 00:18:11,179
+Bu eklem yeri tahmini MinShift algoritmasıyla modlar verimli bir şekilde bulunuyor. Son tahminde piksel ağırlıklarının toplamı, kendi verme modlarına oluşan piksel ağırlıklarının toplamı.
+
+58
+00:18:11,179 --> 00:18:16,139
+Burada makalede Give Mods demiş.
+
+59
+00:18:18,451 --> 00:18:26,992
+Tam olarak çevirisini veya anlamını net elde edemedim. Belki siz biliyorsunuzdur hocam, bir yorum yaparsınız üzerinde.
+
+60
+00:18:26,992 --> 00:18:29,612
+Bir şey değil. Ne diyor?
+
+61
+00:18:30,352 --> 00:18:37,271
+Kendi verme modu yani, give mode'a ulaşan piksel ağırlıkların toplamı demiş burada, nihai eklem tahmini yaparken.
+
+62
+00:18:37,771 --> 00:18:45,052
+Benim anladığım kadarıyla body part, yani vücut parçalarını bölümlerken, bölümledikten sonra
+
+63
+00:18:46,516 --> 00:18:56,556
+Bu bölümlediği sinyallerin bir ortalamasıyla beraber bir eklem yeri tahmini yapmış oluyor şeklinde bir çıkarım yaptım ben.
+
+64
+00:18:58,516 --> 00:19:07,296
+Aynı zamanda aynı alan üzerindeki birden fazla vücut parçasını lokalize bir eklem oluşturmak için birleştirebiliyor sistem.
+
+65
+00:19:08,115 --> 00:19:11,436
+Yani şurada kafayı biz dört farklı parçaya...
+
+66
+00:19:11,443 --> 00:19:33,683
+Bölünledik ama outputumuzda tek farklı eklem olarak görünebiliyor. Birleştirme de yapılabiliyor. Daha önce dediğim gibi 31 farklı vücut parçasına bölünlemişler bir insanı. Sağ-sol ve upper-lower şeklinde parçalara bölünlemişler.
+
+67
+00:19:36,756 --> 00:19:56,655
+Sınıflandırma için Random Forest kullanılmışlar. Her bir pikseli Random Forest belli ağırlıklarla sınıflandırıyor. Ona göre her piksel için bir sınıflandırma yapılmış oluyor. Hangi body part'a ait olduğunu çıkarmak için.
+
+68
+00:19:56,655 --> 00:20:00,655
+Bunu gerçek zamanlı olarak Kinect üzerinden de...
+
+69
+00:20:01,011 --> 00:20:25,991
+Yapmayı başarmışlar. Sistem 5 milisaniye gecikmeyle 200 frame'de çalışıyor. 200 frame per second'da çalışıyor. Yaptıkları deneylerde 5000 tane sentezlenmiş depth image kullanmışlar. 15 tane farklı denekten alınmış 8808 frame'lik gerçek veriyi kullanmışlar bunun yanında.
+
+70
+00:20:27,508 --> 00:20:49,788
+Kullandıkları Random Forest 3 tane 20 derinliğinde ağaç. Her ağaç başına 300.000 adet eğitim imgesi var. Her imge başına 2000 tane eğitim örneği pikseli. 2000 aday özellik. Her özellik başına da 50 aday eşik kullanmışlar.
+
+71
+00:20:51,508 --> 00:21:11,568
+Elde ettikleri sonuç şu şekilde. Ground Truth dediği gerçek elde edilmesi gereken sonuç. Accuracy 6 tane ağaca kadar denenmiş. 6 ağaçta yaklaşık %53 bir başarı elde edilmiş.
+
+72
+00:21:16,980 --> 00:21:42,420
+Training Image arttıkça şu maviyle görünen sentetik veriyi her sınıfın başarısı, Training Image arttıkça epey bir artmış. Burada 1 milyona kadar arttırmışlar. Zaten daha önce söylediğim gibi 900 bin adet test verisi kullanmışlar. Gerçekten çok büyük veri seti var ellerinde.
+
+73
+00:21:43,092 --> 00:21:48,372
+Farklı ağaç derinliklerini denemişler. Burada accuracy'yi karşılaştırmışlar.
+
+74
+00:21:49,572 --> 00:21:52,932
+Sentetik ve gerçek veri üzerinde.
+
+75
+00:21:52,932 --> 00:22:02,452
+Daha sonra da motion capture çerçevesinin büyüklüğünün burada başarıya etkisini gözlemlemişler.
+
+76
+00:22:06,483 --> 00:22:22,983
+Daha sonrasında, burada True Positive Distance Threshold dediği şey şu. Farklı yakın noktalardaki True Pozitiflere bir threshold atıyorlar.
+
+77
+00:22:22,983 --> 00:22:33,932
+Burada 6 cm, şu 5 cm'e kadar, şurada şey yaptığında, %30 bir, bu thresholdu 5 cm'e kadar düşündüğünde %30 bir doğruluk.
+
+78
+00:22:34,003 --> 00:22:46,503
+Fakat bu kabul edilecek thresholdlar arasındaki mesafeyi 20 cm'e kadar çıkardıklarında mean average precision bu şey akürisi değil.
+
+79
+00:22:46,503 --> 00:23:00,143
+Mean average precision skor olarak %80'in üzerinde bir başarı elde etmişler. Genel ağaç yapısı da bu şekilde. İki farklı alt ağacın görünümünü burada.
+
+80
+00:23:00,660 --> 00:23:27,539
+Bu sistem simgelemişler. Sonuç olarak vücut parçalarının yerel tahminlemesini yaptık her piksel için. Bunu gerçek zamanlı yapmış oluyor sistem. Bunu yaparken de sadece derinlikli imge kullanıyor. Bunu rastgele orman kullanarak yapıyor. Ve son kullanıcının alabileceği seviyedeki bir makineyle bunu gerçekleştirmiş oluyor.
+
+81
+00:23:29,428 --> 00:23:44,628
+Şöyle kısa bir video var bunların sistemi anlattıkları. Şurada kullandıkları veri setinin büyüklüğünü göstermişler. Bu sentetik veri seti 900 bin tane veriden oluşuyor.
+
+82
+00:23:56,948 --> 00:23:58,448
+Böyle epey bir beli seti.
+
+83
+00:24:02,228 --> 00:24:08,508
+Böyle her frame başına gerçek zamanlı bir vücut parçası çıkarımı yapılabilmiş.
+
+84
+00:24:10,347 --> 00:24:26,228
+Daha sonraki ileriki bir çalışmalarında da bunu derinlik imgesini body partlara bölmeden, vücut parçalarına bölmeden regresyonla direkt bir tahminleme yapmışlar.
+
+85
+00:24:28,115 --> 00:24:32,755
+Efektif olduğunu söylemişler. Fakat o makaleyi inceleme fırsatım olmadı.
+
+86
+00:24:37,364 --> 00:24:42,184
+Genel olarak sistem bu şekilde. Benim sunumum bu kadardı. Dinlediğiniz için teşekkür ederim.
+
+87
+00:24:43,724 --> 00:24:44,804
+Teşekkür ederiz.
+
+88
+00:24:47,804 --> 00:24:51,788
+Şimdi şu...
+
+89
+00:24:56,980 --> 00:25:01,139
+Notlama olarak ne yapıyorduk?
+
+90
+00:25:03,200 --> 00:25:04,079
+Bunu bir bulayım.
+
+91
+00:25:42,675 --> 00:26:02,895
+Siz hangisiydiniz şimdi sundunuz? [öğrenci]. Bunu ben kendim mi seçtim? Yok sizin paylaştığınızı soracağım. Yıldız'ı zaten. Yok, hoca tercihli demiş de. Bunu neden seçtik biz?
+
+92
+00:26:10,067 --> 00:26:12,428
+Derste eklediğiniz, isteye eklediğiniz bir makaleydi.
+
+93
+00:26:13,128 --> 00:26:20,508
+Tam hatırlamıyorsunuz acaba herhalde neden eklediğimizi ama tamam, hocam tercih edildi.
+
+94
+00:26:20,748 --> 00:26:23,288
+Kod sanırım bir çalıştırdığın kodu yok.
+
+95
+00:26:24,327 --> 00:26:33,048
+Yok hocam, dediğim gibi hazır train edilmiş bir kod bulsaydım bile geride olarak Depth Amage alıyor sistem.
+
+96
+00:26:33,048 --> 00:26:37,188
+Yani Depth Amage elde etmek için bir Xbox kameraya ihtiyaç var.
+
+97
+00:26:37,683 --> 00:26:40,163
+Herhangi bir çalıştığımı yapalım.
+
+98
+00:26:46,003 --> 00:27:09,923
+Sunumunda sanırım 90 diyebiliriz. Raporlara bakamadım henüz. Teşekkür ediyorum [öğrenci]. Ben teşekkür ederim. [öğrenci] sen sunabilecek durumda mısın? Hocam sunarım. Tamam istersen sen sunabilirsin. Tamam hocam.
+
+99
+00:27:17,683 --> 00:27:24,763
+Ona öncelik verdim. Biraz rahatsızdı. Bu nedenle arkadaşlar, tahtama öncelik verdim.
+
+100
+00:27:26,423 --> 00:27:27,763
+Gözüküyor değil mi hocam?
+
+101
+00:27:30,183 --> 00:27:31,623
+Ekran görünüyor.
+
+102
+00:27:32,063 --> 00:27:41,243
+Tamamdır. Ben size videolardan üç boyutlu insan modellerin çıkartılmasını temel almış bir çalışmadan bahsedeceğim.
+
+103
+00:27:44,147 --> 00:28:05,967
+Burada önemli bir sorundan bahsediyorlar. O da şu. Genel olarak 3 boyutlu insan modelleri ya da genel olarak 3 boyutlu herhangi bir gerçek nesnenin 3 boyutlu modelini oluşturup bunu bilgisayara taşımak istediğimizde genelde kullanılan yöntemler maliyetli ve zaman harcıyor.
+
+104
+00:28:06,708 --> 00:28:29,768
+Maliyeti şuradan kaynaklanıyor. Birden fazla açıdan görüntü için genellikle birden fazla tarayıcı kullanılıyor. Bu tarayıcılar kamera veya lazer tarayıcı olabiliyor. Bunun yanında farklı açılardan, farklı pozlarda görüntü almak gerektiği için bu da biraz zaman harcamamıza sebep oluyor. Özellikle insan modellerini oluşturacağımız zaman.
+
+105
+00:28:30,324 --> 00:28:51,983
+İnsanların farklı pozlarda uzun süreler beklemesi çok da istenilen bir şey olmuyor haliyle. İşte buna çözüm olarak seçtiğim makalede yeni bir yöntem getiriliyor. Bu yöntemin özelliği yalnızca bir adet RGB kamera kullanması ve bu nedenle daha ucuz olması.
+
+106
+00:28:57,551 --> 00:29:11,152
+İnsanın o anlık çekilen, belki birkaç saniyelik veya biraz daha uzun bir sürelik bir video kullanarak bunu yapabilmesi, böylelikle daha az zaman harcaması da sağlanmış oluyor.
+
+107
+00:29:13,192 --> 00:29:22,751
+Burada yöntem üç adımdan meydana geliyor. Birincisi, videosu alınan insanlardan bir poz çıkarım yapılması, poz oluşturulması.
+
+108
+00:29:23,604 --> 00:29:35,564
+Bu poz üzerinden bir şekil çıkartılması, ardından da bu çıkartılan şeklin görsel olarak iyileştirilmesi ve doku haritasının oluşturulması şeklinde ilerliyor.
+
+109
+00:29:37,344 --> 00:29:43,844
+Esasen bu yöntem SMP'yle adı verilen daha önceden sunulmuş bir yönteme dayanıyor.
+
+110
+00:29:43,844 --> 00:29:49,844
+Bu SMP'yle adı verilen yöntem, Alman'da bir üniversite çıkarttığı yöntem. Bu yöntemin özelliği...
+
+111
+00:29:50,132 --> 00:29:55,751
+72 adet poza sahip insan görüntülerinden model oluşturabilmesidir.
+
+112
+00:29:56,112 --> 00:30:01,451
+Tabi burada şu önemli, bu modellerdeki insanlar çıplak halde çekilmiş.
+
+113
+00:30:01,591 --> 00:30:06,152
+Yani sadece iç çamaşırıyla çekilmiş ve doku açısından çok başarılı değil.
+
+114
+00:30:06,152 --> 00:30:11,132
+Ayrıca bazı farklı pozlara karşı da dayanıklı değil.
+
+115
+00:30:12,152 --> 00:30:15,152
+Burada 10 adet şekil parametresi kullanılmış ve...
+
+116
+00:30:15,988 --> 00:30:34,248
+Her bir görüntünün içinde de 6890 tane üçgen var. Burada model genel hatlarıyla bakıldığında aslında bir temel şablon diyebileceğimiz esas şeklin kendisi veya pozun kendisi.
+
+117
+00:30:34,248 --> 00:30:41,248
+Bu poz genel olarak bir gürültü ve bu gürültüye eklenen...
+
+118
+00:30:41,779 --> 00:31:03,400
+Bazı deformasyonlardan meydana geliyor. Bu deformasyon veya bozulmalar öncelikle şekle bağlı bozulmalar ve poza bağlı bozulmalar şeklinde verilmiş. Tüm bu bozulmaları katıp bunun yanında ortalama şekli de kattığımızda o anki genel şekli elde edebileceğimizi söyleyen bir model.
+
+119
+00:31:06,516 --> 00:31:13,516
+Bu şekil kullanarak, bu şekil üzerinde uyguladığımız birtakım değişikliklerle yeni bir şekil elde edebiliyoruz.
+
+120
+00:31:13,516 --> 00:31:30,516
+Burada tbtheta dediğimiz parametre, buradan elde ettiğimiz şekil parametresi, j parametresi de o anki 3 boyutlu modelin iskeletine ait eklem noktaları.
+
+121
+00:31:31,443 --> 00:31:41,523
+W'da herhangi bir deformasyon fonksiyonu veya burada belirttiği şekilde deli çıkarma, doku çıkarma fonksiyonu olarak nitelendirilebilir.
+
+122
+00:31:42,523 --> 00:31:57,263
+Bu konvansiyonel yapıya ek olarak farklı bir şekilde bu makaledeki yeni yöntem D adı verilen yeni bir deformasyon veya distorsiyon veya bayes bir parametresi ekleyerek
+
+123
+00:31:58,355 --> 00:32:00,355
+Bu modeli daha da geliştiriyorlar.
+
+124
+00:32:01,955 --> 00:32:06,275
+Burada aslında bu formüllerin nelere denk geldiğinden bahsedebiliriz.
+
+125
+00:32:07,995 --> 00:32:16,635
+Eğer fark ettiyseniz, şu model anamadarken bu modelde biraz vücut değişikliği var.
+
+126
+00:32:16,635 --> 00:32:19,635
+Yani burada tam görünüyor mu bilmiyorum ama...
+
+127
+00:32:20,160 --> 00:32:35,000
+Görüntüye biraz yaklaştığımız zaman görüyoruz ki, evet, biraz daha buradaki model kilo almış gözükmekte. İşte o kilo dediğimiz şey, şekilsel bir bozunum olduğu için biz bunu shape distorsion olarak buraya ekliyoruz.
+
+128
+00:32:35,680 --> 00:32:43,916
+Ardından şurada görüldüğü üzere bir poz deformasyonu var. Çünkü daha önce bu iki nokta...
+
+129
+00:32:44,307 --> 00:32:59,907
+Neredeyse birbirine dik iken burada bir açı değişikliği var. Çünkü modeldeki kişi kafasını biraz sağa oynatmış. Bu da bize poz deformasyonu olarak verildiğinden formülde BP olarak yer almakta.
+
+130
+00:33:01,228 --> 00:33:11,508
+Ardından biz bu parametreleri kullanarak bu modele öyle bir fonksiyon uygulayalım ki bu model burada görülen bu dans şeklini alsın istiyoruz.
+
+131
+00:33:12,115 --> 00:33:13,996
+Modelin amacı genel olarak bu.
+
+132
+00:33:16,296 --> 00:33:25,676
+Burada tabii pose reconstruction yani pose oluşturma kısmında silhouette adı verilen ek ifadelerden faydalanıyoruz.
+
+133
+00:33:25,676 --> 00:33:34,676
+Burada silhouette dediğimiz şey aslında buradaki görüntünün yalnızca belli noktalarını kullanarak...
+
+134
+00:33:35,059 --> 00:33:59,819
+Modeli görmeyip sadece genel hatları ile bir şekilde çıkartmanın adıdır. Yani aslında bir nevi edge detection diyebiliriz bu işleme. Burada distance transform veya mesafe dönüşü moda verilen bir yöntem kullanılıyor. Burada amaç şu, belli noktaların belli noktaları olan mesafesini kullanarak bir derinlik görüntüsü oluşturma.
+
+135
+00:34:00,915 --> 00:34:09,735
+Burada esas girdiğimiz bu görüntüyken, bu mesafe dönüşümünü kullanarak derinlik algısı yaratan bir görüntü oluşturuluyor.
+
+136
+00:34:09,735 --> 00:34:20,895
+Fark ettiyseniz, görüntünün daha orta kısımları daha yüksek şekilde konumlandırılırken, uzaktaki kısımlar bize de daha uzakmış gibi görünüyor.
+
+137
+00:34:22,056 --> 00:34:24,376
+Böylelikle derinlik algısını yaratabiliyoruz.
+
+138
+00:34:27,059 --> 00:34:44,479
+4 adet, 4 seviyeli bir Gauss piramidi kullanılıyor. Derste de hatırlayacağız. Yine benzer bir yöntemle ölçe karşı gürbiz bir yöntem kullanılıyordu. O şekilde de feature çıkarım yapılabiliyordu. Burada da ona benzer şekilde bir Gauss piramidi kullanılmış.
+
+139
+00:34:46,319 --> 00:34:52,859
+Bu şekilde görüntünün silüeti ortaya çıkarılıyor. Aslında silüet dediğimiz şey de bu oluyor.
+
+140
+00:34:53,715 --> 00:35:08,735
+Elimizde bu varken yaklaşık olarak görüntünün silaheti, yani dış hatları oluşturuluyor ve bu pose reconstruction'ın sonunda elimizde her bir video karesine ait pose parametresi elde ediliyor.
+
+141
+00:35:09,735 --> 00:35:17,916
+Tabii elimizdeki görüntü tek bir görüntü olmadığından, bir video sekansı olduğundan her bir kare için ayrı ayrı bunu yapmak durumundayız.
+
+142
+00:35:21,235 --> 00:35:36,015
+Daha sonra cismin şeklinin tahmin edilmesi aşaması var. Burada da yine fark edeceğimiz üzere bir takım bozulmalar olacak. Bu bozulmaların ortadan kaldırılması lazım.
+
+143
+00:35:37,876 --> 00:35:45,396
+Bizim modelimizin belirlenen temel bir ana şekle getirilmesi lazım ki biz bu şeklin üzerine bir doku oturtabilelim.
+
+144
+00:35:45,956 --> 00:35:48,316
+Buna da Consensus Shape Estimation diyorlar.
+
+145
+00:35:48,316 --> 00:35:55,896
+Ve bunun için de bu yazarların Unposing adı verilen, yani herhangi bir pozlamanın ortadan kaldırılıp,
+
+146
+00:35:56,536 --> 00:36:01,876
+video karesindeki kişinin bizim belirlediğimiz temel bir poza getirilmesi işlemi yapılıyor.
+
+147
+00:36:03,668 --> 00:36:16,708
+Burada herhangi bir üçgen yapının veya köşenin uğrayacağı bozulmayı bu formülü ifade etmişler. Burada aslında yine şekil bozulmaları ve poz bozulmalarını kullanmışız.
+
+148
+00:36:17,307 --> 00:36:26,708
+Burada amaç aslında kameradan gönderilen ışınların hareket ederek cisim üzerindeki veya nesne üzerindeki...
+
+149
+00:36:28,340 --> 00:36:38,200
+Köşe noktasına ulaşması ve bu ışınlarında belli bir düzenle şekillendirilerek o şeklin tam olarak kesilmesi amaçlanıyor.
+
+150
+00:36:39,640 --> 00:36:47,460
+Bu formülden gittiğimizde aslında V'i üstü noktasına giden bir ışının izlediği yol bu şekilde ifade ediliyor.
+
+151
+00:36:48,179 --> 00:36:56,659
+Burada amaç parametreleri azaltarak optimizasyon sırasında daha az bellek kullanmak ve işlemleri hızlandırmak.
+
+152
+00:37:01,139 --> 00:37:10,139
+Optimizasyon işlemini de bu formülü ifade etmişler. Burada birtakım EDETA, ELPE var ve ESYM adı verilen parametreler var.
+
+153
+00:37:10,139 --> 00:37:25,139
+Ve bu işlemin amacı aslında burada bir parametreyi ortadan kaldırmak. Böylelikle daha az parametreyle optimizasyon yapmaya çalışıp hem işlemi hızlandırmak hem de harcadığımız bellek miktarını da azaltmak.
+
+154
+00:37:27,380 --> 00:37:49,720
+Burada bir takım parametreler var ve bu parametreleri ayırmışlar. E-Data adı verilen kısım, DataTerm veya veri terimi, veri elemanı diyebileceğimiz kısım. Bunun özelliği bu DataTerm bize herhangi bir köşenin veya vertexin oraya denk gelen bir ışınla arasındaki mesafeyi ölçmesidir.
+
+155
+00:37:51,155 --> 00:37:59,235
+Burada bizim bildiğimiz standart X, Y, Z koordinatları dışında Fluker koordinatları adı verilen farklı bir koordinat sistemi kullanılıyor.
+
+156
+00:37:59,235 --> 00:38:08,235
+Bu şekilde bir köşe noktasının o köşe noktasından geçen ışığın olan arasındaki mesafeyi hesaplayabiliyoruz.
+
+157
+00:38:09,855 --> 00:38:16,235
+Ardından ELF, tahmin edebileceğiniz üzere aslında bir Laplace terimi ve...
+
+158
+00:38:16,628 --> 00:38:29,368
+Bir Laplace hesabı yapıyor. Burada amaç, şekile ait bozulmaların daha yumuşak bir şekilde hesaplanabilmesi. Böylelikle daha gerçekçi bir şekil çıkarımının yapılabilmesidir.
+
+159
+00:38:33,460 --> 00:38:58,639
+Ardından, vücut modeli terimi dediğimiz bir terim hesaba katılıyor. Burada aslında amaç şu, bizim daha önce oluşturduğumuz modellerin yeni oluşturulan modellerle arasındaki farka bakıp, bu farkı bir ceza puanıyla modellemek ve bu ceza puanını en düşük seviyeye getirerek,
+
+160
+00:38:59,219 --> 00:39:20,099
+Birbirine en yakın şekillerin kestirmeni yapabilmek. Aslında bu anlamda burada bir L2 normu hesabı yapıyor diyebiliriz. Çünkü doğrudan önceki karenin şu anki kareden, tabi burada kare derken video karesinden bahsediyoruz. Önceki karenin şu an kareden farkını alıp karesini alarak bir norm hesabı yapıyor.
+
+161
+00:39:21,300 --> 00:39:36,900
+Ve son olarak da simetri terimi adı verilen bir terim var. Burada da amaç şu. Bildiğiniz üzere insan vücudu genel olarak simetrik bir yapıya sahip olduğu için ve bu simetri y ekseni üzerinde olduğu için bunu sağlayacak bir hesap yapmaya çalışılmış.
+
+162
+00:39:38,500 --> 00:39:42,892
+Ve sonunda tüm bu ışınları kullanarak...
+
+163
+00:39:43,284 --> 00:40:00,064
+T-Poz adı verilen bu 3 boyutlu tasarım programlarında veya video uygulamalarında ve oyun tasarımlarında aslında çok kullanılan 3 boyutlu model için en temel poz diyebileceğimiz poz olan T-Poz'u veya T-Poz şekline getirilmiş bir model var.
+
+164
+00:40:00,064 --> 00:40:06,064
+Bunun bu hale getirilmesinin amacı temel bir poz türü olması ve...
+
+165
+00:40:06,260 --> 00:40:10,420
+Genel olarak 3D dünyasında kabul gören bir tasarım olmasıdır.
+
+166
+00:40:10,980 --> 00:40:15,000
+Ve bunun üzerine bir takım doku oturtmalı işlemleri daha kolay yapılabiliyor.
+
+167
+00:40:15,900 --> 00:40:24,800
+Dolayısıyla bu aşamada elimizdeki farklı bir pozu alıp bu T pozu adı verilen poza getiriyoruz.
+
+168
+00:40:25,400 --> 00:40:32,800
+Ve son olarak artık poz elde edildiğine göre amacımız bu pozun üzerine...
+
+169
+00:40:33,108 --> 00:40:48,108
+dokuyu oturtmak ve kişinin tamamen gerçekçi bir üç boyutlu modelini elde etmek. Burada aslında burada kullandığımız şekil optimizasyonu formülüne benzer bir formül var.
+
+170
+00:40:49,108 --> 00:40:59,884
+Burada amaç şu, video görüntülerindeki bir önceki fremlere bakarak, yani bir önceki karelere bakarak oradaki dokuların
+
+171
+00:41:00,019 --> 00:41:02,239
+Bir sonraki dokulara yansıtılması.
+
+172
+00:41:04,140 --> 00:41:07,560
+Burada kısı adı verilen bir parametre kullanılmış.
+
+173
+00:41:07,560 --> 00:41:20,560
+Ve bu parametre kullandığımız çerçevelerin komşu çerçeve mi yoksa daha uzakta bir çerçeve mi olduğunu düşünüp hesaplayıp bunu da kullanarak bir video karesindeki...
+
+174
+00:41:20,884 --> 00:41:37,003
+Görüntüyü, aslında o görüntü bir RGB görüntü. Dolayısıyla orada biz sadece RGB piksel değerlerini alıyoruz ve o piksel değerlerini bu formülü kullanarak bir sonraki video karesinde denk gelen piksellere olabildiğince az hatayla aktarmaya çalışıyoruz.
+
+175
+00:41:46,452 --> 00:41:48,752
+Bu şekilde bir doku haritası çıkarılıyor.
+
+176
+00:41:49,012 --> 00:41:53,612
+Ve biz bu doku haritasını istediğimiz takdirde modellere giydirebiliyoruz.
+
+177
+00:41:55,672 --> 00:42:01,552
+Özellikle başarısı şu, yaklaşık 4.5 mm'ye kadar kesinlikle bunları üretebiliyorlar.
+
+178
+00:42:02,072 --> 00:42:07,952
+Ayrıca 3 boyutlu pozlardaki birtakım gürültülere karşı da baya dayanıklı.
+
+179
+00:42:08,980 --> 00:42:22,159
+Burada gördüğünüz üzere sol taraftaki fotoğraf gerçekken, aslında bu bir video karesiyken, sağ tarafta da bu kişilerin 3 boyutlu modellerini görüyorsunuz. Kendileri aslında bunun bir videosunu da yayınlamışlar.
+
+180
+00:42:35,923 --> 00:42:37,923
+Bu şekilde bir video var giriş olarak.
+
+181
+00:42:39,923 --> 00:42:44,923
+Gördüğünüz üzere bu video 10 saniye video sürmedi aslında. 5-6 saniye bir şey sürdü.
+
+182
+00:42:44,923 --> 00:42:48,923
+Ve bu video sayesinde elde ettiğimiz görüntü bu oluyor.
+
+183
+00:42:49,923 --> 00:42:58,923
+Yine farklı şekilde daha temiz bir ortam, grinskirin olduğu yerde veya dış ortamda gürültü daha fazlayken sonuçlar karşılaştırılmış.
+
+184
+00:42:58,923 --> 00:43:00,619
+Görüldüğü üzere aslında...
+
+185
+00:43:01,331 --> 00:43:17,471
+Yeşil perdeli bir ortamla dışarıda çekilmiş arka plan gürültüsünün olduğu bir ortam sonucu aslında çok da farklı değil. Genel olarak başarısı fazla olan bir yöntem. Burada yine benzer şekilde arka planın olması ve olmaması durumu karşılaştırılmış.
+
+186
+00:43:18,471 --> 00:43:24,551
+Aslında bir diğer önemli özelliği de şu. Yalnızca gerçek insan videoları değil.
+
+187
+00:43:25,172 --> 00:43:35,211
+Başkası tarafından herhangi bir 3D programda render edilmiş yapay bir 3D modeli alıp ondan da yine bu şekil modeller üretebiliyor.
+
+188
+00:43:35,211 --> 00:43:48,192
+Ve gördüğünüz üzere animasyonları algılaması, bu dokuları animasyonlara rağmen düzgün bir şekilde yansıtabiliyor olması açısından bayağı başarılı.
+
+189
+00:43:49,572 --> 00:43:52,052
+Yine bakın, bozulmalara karşı da başarılı.
+
+190
+00:43:56,947 --> 00:44:12,940
+Sonuçlar bu şekilde verilmiş ve bu dataset'leri de kullanıma açmışlar. Dolayısıyla alıp inceleyebiliyoruz, kullanabiliyoruz. Esas önemli nokta ya bu yöntemin zaman ve...
+
+191
+00:44:13,172 --> 00:44:29,212
+Maliyet açısından faydasının yanında aslında en önemli özelliği şu an gündemimizi meşgul eden Metaverse gibi ortamlarda aslında alıp doğrudan kullanabileceğimiz kişisel 3 boyutlu avatarları bize oluşturma imkan sağlaması.
+
+192
+00:44:29,212 --> 00:44:39,148
+Ve bunu yaparken de aslında yalnızca tek bir basit 3 boyutlu görüntü kullanıp ve yalnızca herhangi birimizin telefonuyla çekebileceği bir...
+
+193
+00:44:39,188 --> 00:44:41,288
+Tek kameralı video ile bunu yapabilmesi.
+
+194
+00:44:43,307 --> 00:44:44,028
+Sunumum bu kadar.
+
+195
+00:44:44,248 --> 00:44:45,588
+Avatar oluşturabiliyorsun.
+
+196
+00:44:45,928 --> 00:44:46,188
+Evet.
+
+197
+00:44:49,008 --> 00:44:49,807
+Peki.
+
+198
+00:44:51,628 --> 00:44:55,548
+Bu da güzel bir sunumdu. Teşekkür ederiz [öğrenci].
+
+199
+00:44:55,788 --> 00:44:56,728
+Rica ederim hocam.
+
+200
+00:44:58,327 --> 00:45:01,588
+Bunun notlamasını da hemen yapmaya çalışalım.
+
+201
+00:45:04,588 --> 00:45:05,948
+Neredeydi o şey?
+
+202
+00:45:12,692 --> 00:45:16,111
+Şimdi Share Screen.
+
+203
+00:45:24,111 --> 00:45:25,031
+Evet.
+
+204
+00:45:25,811 --> 00:45:32,911
+Bu da hocam sizin seçtiğiniz bir makaleydi. Bunu da 3D Reconstruction konusu açısından güzel görüp de seçmiştik.
+
+205
+00:45:34,111 --> 00:45:37,991
+Evet. Kod yok galiba. Çalıştırdığım bir kod.
+
+206
+00:45:38,480 --> 00:45:45,799
+Hocam aslında kendileri kodlarını vermişler. Fakat Python sürümünden dolayı ben bir sorun yaşadım, çalıştıramadım.
+
+207
+00:45:45,799 --> 00:45:53,119
+Tamam. Bu da güzel bir çalışmaydı.
+
+208
+00:45:58,036 --> 00:45:59,756
+Buna da 90 vereyim.
+
+209
+00:46:04,596 --> 00:46:06,376
+Teşekkür ediyoruz [öğrenci].
+
+210
+00:46:06,656 --> 00:46:07,136
+Rica ederim.
+
+211
+00:46:07,916 --> 00:46:12,356
+Şimdi kalan arkadaşlardan, hani sunmayan kim var?
+
+212
+00:46:12,616 --> 00:46:14,536
+[öğrenci] sundu galiba, değil mi?
+
+213
+00:46:16,056 --> 00:46:18,896
+[öğrenci] var ve [öğrenci] var.
+
+214
+00:46:20,156 --> 00:46:21,696
+Ben geçen hafta sunmuştum hocam.
+
+215
+00:46:21,916 --> 00:46:23,456
+O zaman bir tek [öğrenci] mi kaldı?
+
+216
+00:46:24,496 --> 00:46:27,176
+O zaman [öğrenci] sen de sun, olayı bitirelim.
+
+217
+00:46:27,616 --> 00:46:31,436
+Bir ara vereyim mi diye düşünmüştüm. Ara vermeye gerek yok anlaşılan.
+
+218
+00:46:32,052 --> 00:46:43,391
+[öğrenci] sen şimdi buraya gel. Senin sunumun burada olması lazım zaten. Ben onu bulayım önce. Şurada.
+
+219
+00:46:48,271 --> 00:46:49,771
+Sunumun şu zaten değil mi?
+
+220
+00:46:49,972 --> 00:46:50,231
+Evet.
+
+221
+00:46:52,371 --> 00:46:53,311
+Bunu paylaşalım.
+
+222
+00:47:01,268 --> 00:47:02,668
+Görüyorsunuz herhalde.
+
+223
+00:47:05,168 --> 00:47:06,567
+Evet hocam.
+
+224
+00:47:07,168 --> 00:47:07,947
+Görünüyor hocam.
+
+225
+00:47:14,771 --> 00:47:15,751
+Merhabalar.
+
+226
+00:47:19,507 --> 00:47:32,108
+Benim seçmiş olduğum paper, hocamızın seçmediği bir paper, benim eklediğim bir paperdı. Bu alana karşı ilgi duyduğum için eklemiştim. Siz de izin vermiştiniz, onaylamıştınız hocam.
+
+227
+00:47:34,108 --> 00:47:40,608
+Şu an ekranda paper'ın ismi var. Aslında ismi iyi tanımlıyor paper'ı.
+
+228
+00:47:40,947 --> 00:48:01,707
+Konuda şu nero netörklerle papilin orta merkez noktasının tespit edilmesine dayalı bir çalışmalı. Dolayısıyla da aslında göğüs takip teknolojisinin içerisinde kullanılmak üzere ortaya çıkartılan göğüs takip teknolojilerin bir parçası olan bir alt işlemdir.
+
+229
+00:48:01,707 --> 00:48:06,947
+Bir şey yaparsan sunum moduna geçir. Maksimize yıldır.
+
+230
+00:48:08,788 --> 00:48:09,788
+Evet.
+
+231
+00:48:14,356 --> 00:48:20,856
+Makalenin detaylarına girmeden önce göz takip teknoloji ile alakalı bir introduction yapmak istiyorum.
+
+232
+00:48:21,300 --> 00:48:49,260
+Bu sistemlerle temel olarak ne ölçülmeye çalışılıyor? Bunlardan bir tanesi bakış noktaları. Kişilerin dış dünyada baktıkları, odaklandıkları noktalar hesaplanmaya, ölçülmeye çalışılır. Göz kırkma frekansları, göz böbeğinin çat bilgileri ve sakat denilen minik titreşimler ölçülmeye çalışılır. Dolayısıyla da aslında ortaya çıkartılması gereken modelin olabildiğince doğal.
+
+233
+00:48:49,300 --> 00:48:58,600
+Doğru ve hızlı çalışması gibi bir gereksinim var. Bunlar, machine learning tarafında biraz trading off'lu konular. Dolayısıyla iyi kazarlanması gerektiğini düşünüyorum.
+
+234
+00:48:59,620 --> 00:49:10,320
+Kullanılan alanlar aslında tıp, kullanılabilirlik, insan bilgisayar etkileşimi, bilgisayar bilim gibi bir takım alanlar var. Genel olarak eye tracker denildiği zaman kullanılabilirlik alanı ilk başta akla gelir.
+
+235
+00:49:11,220 --> 00:49:14,940
+Hitmap'ler vardır, bakış haritaları, ısı haritaları vardır.
+
+236
+00:49:17,652 --> 00:49:34,531
+Bununla alakalı diğer eye tracker'ın önemini belki ifade etmek üzere. Genel olarak ailesi yasalarla birlikte kullanıldığı ya da kullanılabilirlik alındığıyla birlikte kullanıldığına dair genel bir algı bilgi var fakat tıp alanı ile alakalı örneğin yok.
+
+237
+00:49:35,471 --> 00:49:40,251
+Burada bir takım eye tracker'larla teşhis edilebilecek hastalıkları koydum.
+
+238
+00:49:40,592 --> 00:49:51,572
+Bu tip bir model sistem tip alanında da kullanıldığı için özellikle de doğruluğu yüksek çalışması, hızlı çalışması gibi bir takım gereksinler var.
+
+239
+00:49:53,291 --> 00:50:02,431
+Bilgi olarak söylemek istediğim bir nokta var. Bu ekranda görmüş olduğunuz, teşhis edilebilen hastalıkların hepsi kişilerde bir de bir davranış bozuklukları oluşturan hastalıklar.
+
+240
+00:50:04,788 --> 00:50:11,907
+Davranış bozuklukları vücudun diğer uzuvlarına gelene kadar göğüs hareketlerine de bilir patronlara sahip olabiliyorlar.
+
+241
+00:50:15,731 --> 00:50:35,811
+Çalışmanın içerisinde kullanılan bir dataset kullanılmış. Bunu anlayabilmek üzere Gözlaki Teknolojisinin formlarından bahsetmek istiyorum. İki farklı form var. Bunlardan sağda görmüş olduğunuz form sabit bir form. Hemen ekranın altında bulunan bir çubuk görüyorsunuz. Bu bir webcam aslında.
+
+242
+00:50:36,724 --> 00:50:53,864
+Doğrudan insanın yüz bölgesini çeker, çevreyi çeker. Önce yüzün tespit edilmesi gereklidir. Ondan sonra göz bölgesi üzerinden papilin merkez noktasının tespiti yapılabiliyor. Soldaki kısım ise giyilebilir versiyonu.
+
+243
+00:50:56,211 --> 00:51:13,031
+Hemen gözlerinin altında bulunan yer kameralar aslında yüz tespiti gibi ek işlemlerin yapılmaması beraberinde getiriyor. Böyle bir avantajı var. Kameraların yer olması sebebiyle de infrared olması sebebiyle de ışık koşullarından pek etkilenmiyor açıkçası.
+
+244
+00:51:13,291 --> 00:51:18,671
+Makale kısmında şöyle makalenin toplamda iki farklı katkısı var. Bunlardan ilki.
+
+245
+00:51:19,155 --> 00:51:40,575
+Merkez, papilin merkez noktasının tespit edilebilmesi adına hızlı bir model öneriyor olmaları. ResNet 50 tabanında çalışan bir model bu. Aslında diğer birçok makalede çok daha farklı ve kapsamlı modeller anlatıldı. Fakat bu paper'daki kullanılan model daha basit bir model.
+
+246
+00:51:41,556 --> 00:52:02,615
+İkinci katkısı yeni bir dataset oluşturmak istemeleri. Bunlar yüz bölgelerinden oluşan birkaç farklı dataset'in birleşimi aslında. Basitçe papilin merkez noktasını ve gözün korner dediğimiz noktalarını işaretliyorlar ve ondan sonra da oluşturmuş oldukları modeli veriyorlar.
+
+247
+00:52:06,612 --> 00:52:30,592
+Önceki çalışmalar kısmı makalede de bulunan bir kısım. Az önce de bahsettiğim gibi aslında iki farklı temelde literatürün yoğunlaşmış olduğu yön var. Bunlardan bir tanesi olabildiğince hesaplama süresinin düşürülmesi. İkincisi ise doğumluk miktarının arttırılabilmesi. Dolayısıyla da aslında hızlı çalışması için modelin de basit.
+
+248
+00:52:30,960 --> 00:52:35,559
+Olabildiğince basit fakat istenilen doğrultuda da çıktı verebiliyor olması gerekiyor.
+
+249
+00:52:36,599 --> 00:52:39,399
+Kaçıldı mı? DTT ne demektir?
+
+250
+00:52:39,399 --> 00:52:43,399
+Göz takip teknolojisi onu bir kez kısalttım.
+
+251
+00:52:43,399 --> 00:52:44,079
+Tamam.
+
+252
+00:52:48,916 --> 00:53:05,336
+Önceki çalışmalar kısmı iki farklı kategoriye ait oluyor. Bunlardan bir tanesi geleneksel çalışmalar. İlk üstte bulunan kısım şu bölüm oluyor. Aralarını bir boşlukla ayırmaya tercih ettim.
+
+253
+00:53:05,336 --> 00:53:11,456
+Alttaki kısım ise birazcıkdan Bishin Learning tabanında, yapay zeka tabanında olan çözümler.
+
+254
+00:53:11,856 --> 00:53:20,856
+Burada geleneksel çalışmalardan en çok kullanılan, kın-transt değişimlerinin üzerine kurulup birtakım matematiksel modellerdir.
+
+255
+00:53:20,856 --> 00:53:28,856
+Son yıllarda da özellikle CNN gibi algoritmalar kullanılıyor.
+
+256
+00:53:33,780 --> 00:54:00,480
+Yazarlar 1791 tane yüz görüntüsünü alıp bunların göz kısımlarını kroplamışlar ve 6 tane label oluşturmuşlar. Bu 6 tane label X ve Y çiftlerinden oluşuyor aslında. Temelde her iki göz içinde yapılıyor. Burada görüntüde görülen.
+
+257
+00:54:01,139 --> 00:54:09,679
+Kırmızı noktaların piksel koordinat sistemindeki karşılıklarını içermekte. PapilPie ismi vermişler bu yeni dataset'e.
+
+258
+00:54:14,804 --> 00:54:34,423
+Kroplama işleminin içinde özel bir model kullanmışlar. EMTV denilen bir model. Bu basitçe bir yüz görüntüsünün göz bölgelerinin çıkartılması için kullanılan bir model. Bunun hakkında fazla bahsetmemişler. Sadece böyle bir modelin kullanıldığını söylemişler.
+
+259
+00:54:36,628 --> 00:54:50,788
+Uyguladıkları ResNet 50 modelinin yapısı değiştirilmiş. En sondaki Decommodational Layer yerine Global Average Pooling eklemişler.
+
+260
+00:54:50,907 --> 00:54:59,728
+Elo aktivasyon fonksiyonu ile birlikte. Bunun hemen sonrasındaysa 4 tane fully connected layer eklemişler.
+
+261
+00:54:59,728 --> 00:55:03,807
+Ve çıkışta 12 tane çıkışı bulunuyor.
+
+262
+00:55:04,143 --> 00:55:09,143
+X ve Y çiftleriyle birlikte toplamda 6 tane kutaya karşılık geliyor.
+
+263
+00:55:14,804 --> 00:55:34,663
+Eğitim ile ilgili olarak şöyle sınırlara bağlı kalmışlar. Data Augmentation yapılmış. Eksi 25 ile artı 25 derece arasında bu göz görüntülerin döndürülmesiyle elde edilmiş. Ve yeniden boyutlandırma işlemi de yapılmış. 0.75 ile 1.25 arasında.
+
+264
+00:55:35,476 --> 00:55:55,335
+5 sayesinde 64 belirlenmiş. İlk 500 Epo uygulanmış. Bu ağırlıkların ilklendirilmesi amacıyla uygulandığı bahsedilmiş. Bunun sebebini anlayamadım. Diğer 5000 Epo ise ana eğitim Epo olarak belirlemişler.
+
+265
+00:56:01,684 --> 00:56:06,684
+Şuradaki değerler sadece E değeri diğer 5000 Epo için değiştirilmiş.
+
+266
+00:56:06,684 --> 00:56:08,460
+Beyler aynı kalmış.
+
+267
+00:56:13,876 --> 00:56:36,416
+Performans metriği kısmında kullanılan bir modern state of the art metriğini kullanıyoruz biz diyorlar çalışmada. Bu farklı bir çalışmada önerilen bir model. Buradaki A-Max aynı zamanda Low Spunction olarak kullanılıyor.
+
+268
+00:56:37,108 --> 00:57:00,168
+Basitçe şunu yapıyor aslında. Az önceki göz görüntüsünde iki farklı göz var. Bu iki farklı göz üzerinden yapılan bir tahminden orijinal labeldan ne kadar sapıldığını gösteriyor D'ler. Sol göz ve sağ gözle mesafe olarak doğru noktadan ne kadar sapıldığı bilgisinin maksimumu seçiliyor burada.
+
+269
+00:57:01,076 --> 00:57:14,436
+IPD denilen değer ise iki göz merkez noktası arasındaki mesafeye gösteriyor. Bunları birbirleriyle oranlıyor aslında.
+
+270
+00:57:21,043 --> 00:57:37,083
+Bu kısım, önceki yapılan çalışmalar ile bu çalışmanın karşılaştırılması. En üstte 3 farklı header kısmında bölüm var. Bunlar loss'un değerleri aslında.
+
+271
+00:57:45,588 --> 00:57:57,772
+Tahmin edilen merkez noktasından da aslında o kadar az uzaklaşılmış oluyor. Burada kendi datasetleriyle çalışılmış ve...
+
+272
+00:58:00,659 --> 00:58:16,819
+Şu an 0.025'lik bir değer neredeyse tam merkez noktasına çok yakın bir değere tekabül ediyor. 0.05'lik değer birazcık daha artık uzaklaşmaya başlıyor. Bunu tam merkez noktasına yerleştirilmiş bir çember olarak da düşünülebilir.
+
+273
+00:58:22,036 --> 00:58:32,695
+Çalışmadan örnek verirsek kullanılan dataset'teki yüzde kırıklık görüntüler sadece bu çok doğruluğu yüksek olan alanda çıkabilmiş.
+
+274
+00:58:32,695 --> 00:58:42,695
+Diğer kısımlar doğruluğu biraz daha düştük düşük açıkçası. Geliştirilen çalışmadaki...
+
+275
+00:58:43,380 --> 00:59:05,160
+Uygulanan modelle de %96-%97'lik bir kısım aslında tam neredeyse merkez noktasına yakın değerler üretebilmiş. Ondan birazcık daha düşük bir doğruluk değerine sahip değerler değilse zaten o çember içerisinde kaldığı için %100 bir performansa sahip olduğunu söylüyorlar.
+
+276
+00:59:10,228 --> 00:59:29,248
+Sistem üzerinde modelin tesis edilmiş. Bunları A ve B olarak şu an ayırdım. Göz bölgesinin M, T, C, N, N ile bulunması A sisteminde 120 milisaniyelik, B'de de 125 milisaniyelik bir süre gerektiriyor.
+
+277
+00:59:30,195 --> 00:59:41,895
+Modelin tahmin etmesi de A'da 2ms, B'de ise 5ms bir süre gerektiriyor aslında. Bu 2ms ve 5ms süreler oldukça iyiler.
+
+278
+00:59:45,652 --> 01:00:00,652
+200 sırasıyla 500 Hz ve 200 Hz'e karşılık geliyor saniyede. Burada çalışma hakkında kendi yorumlarımdan bahsettim. Tasarlanan model...
+
+279
+01:00:01,215 --> 01:00:09,735
+İlk başta iki farklı eye tracker'ların formu olduğundan bahsetmiştim. Bunlardan bir tanesi giyinebilir formlu, bir tanesi de sabit formlu.
+
+280
+01:00:09,835 --> 01:00:18,155
+Tor'dan yüz görüntülerini toplayıp ve bunlar üzerinden işlem yapan formlu. Geliştirilen çalışma birazcık daha bu sabit forma yönelik işlem yapan bir çalışma.
+
+281
+01:00:18,592 --> 01:00:34,632
+Fakat her iki formunda kullanılabileceğine dair bir ifadeleri var. Fakat ben gelebilir halinde çok fazla düzgün çalışmayacağını düşünüyorum. Bunun için farklı bir DTSP üzerinden belki işlem yapılabileceğini sanıyorum.
+
+282
+01:00:35,632 --> 01:00:43,532
+Onun haricinde 2 ve 5 milisaniye bulmaları çok iyi bir şey. Fakat...
+
+283
+01:00:43,923 --> 01:00:57,483
+Donanım maliyetleri biraz fazla yüksek. IKR'ların birçok farklı yerde farklı amaçlarla kullanılması nedeniyle daha insanların ulaşabileceği sistemler üzerinde ve test yapmalarını beklerdi.
+
+284
+01:01:00,043 --> 01:01:02,043
+Benim sunumum bu kadar hocam.
+
+285
+01:01:02,043 --> 01:01:02,844
+Peki.
+
+286
+01:01:03,644 --> 01:01:05,884
+Bir kod yoksa beni göstereceğim.
+
+287
+01:01:05,884 --> 01:01:07,483
+Yok, hayır. Gelme buraya.
+
+288
+01:01:08,324 --> 01:01:10,364
+Senin mutluluklarının gelin.
+
+289
+01:01:20,403 --> 01:01:23,244
+Teşekkür ediyoruz [öğrenci]. Sana da.
+
+290
+01:01:26,835 --> 01:01:27,235
+Öğledi.
+
+291
+01:01:35,284 --> 01:01:56,503
+Çat açtım ya. Share screen yapacaktım. [öğrenci]. Evet. Buna yıldız koymamışız. Kota yok. Sunumada 90 diyeceğim. Teşekkür ediyoruz.
+
+292
+01:02:00,083 --> 01:02:17,844
+Var mı başka sunacak? Onur Aydemir gelmiş galiba. Sen sunmuş muydun [öğrenci]? Bakalım. O sunmuş zaten. Tamam. Soracağınız bir soru vesaire var mı arkadaşlar? Dersi bitirmeyi düşünüyorum.
+
+293
+01:02:22,547 --> 01:02:27,027
+Bizim ayın 20'sine koymuşlar galiba sınavı, değil mi?
+
+294
+01:02:28,307 --> 01:02:28,907
+Evet hocam.
+
+295
+01:02:29,347 --> 01:02:32,127
+Evet, ayın 20'sinde görüşeceğiz artık.
+
+296
+01:02:34,387 --> 01:02:38,407
+Birinci vizeden ne tür sorduğumu anlamışsınızdır iyi kötü.
+
+297
+01:02:39,627 --> 01:02:41,507
+Projelerden tabii ki sormayacağım.
+
+298
+01:02:42,867 --> 01:02:48,507
+İşlediğimiz kısımlardan, slide'lardan bir şeyler hazırlamaya sormaya çalışacağız.
+
+299
+01:02:50,036 --> 01:03:08,756
+Şeyleri falan raporlarınıza baktıktan sonra bu sayfada raporların notlarını da ekleyip buraya bir ortalama projede notu ekleyeceğim. Buradan görebilirsiniz, takip edebilirsiniz.
+
+300
+01:03:10,376 --> 01:03:11,136
+Hocam.
+
+301
+01:03:11,656 --> 01:03:12,176
+Buyurun.
+
+302
+01:03:15,824 --> 01:03:23,764
+Başka bir sınav mı koymuşlar da? Bunun için size mi konuşayım, öğrenci işlerini mi gideyim bilemedim.
+
+303
+01:03:24,464 --> 01:03:27,044
+Kim, hangi ders?
+
+304
+01:03:27,704 --> 01:03:29,984
+Nesneyli Tasarım ve Modelleme.
+
+305
+01:03:30,884 --> 01:03:32,024
+Hangi bölümde?
+
+306
+01:03:34,764 --> 01:03:37,744
+Ben ne yaptım? Anlıyor ettim galiba.
+
+307
+01:03:38,164 --> 01:03:41,344
+Müt ettim seni. Tekrar ammüt edip konuşur musun?
+
+308
+01:03:41,344 --> 01:03:42,544
+Alo, alo.
+
+309
+01:03:42,744 --> 01:03:43,504
+Evet, duyuyorum.
+
+310
+01:03:44,044 --> 01:03:49,364
+Hocam yine Bilgisayar Mühendisi, Nesne'ye dayalı tasarım ve modelleme Yunus Emre Hoca'nın verdiği ders.
+
+311
+01:03:51,884 --> 01:03:55,124
+O zaman onu bizim bölümün halletmesi lazım.
+
+312
+01:03:56,624 --> 01:04:03,564
+Bölümde şeylere, bölüm başkan yardımcılarına bir mail atabilir misin?
+
+313
+01:04:04,980 --> 01:04:23,960
+Tamam. Onlar bir baksınlar. Onlar belki bir değişikliğe giderler. Tabii değişikliğe gitmek de mesele oluyor. Çünkü şu anda itiraz gelmeyen bir programda değişiklik yaptığınızda pat oradan bir sorun çıkabiliyor falan.
+
+314
+01:04:24,884 --> 01:04:27,963
+Programı uyuduktan sonra değiştirme bayağı mesele olabiliyor.
+
+315
+01:04:28,784 --> 01:04:43,663
+Bize takviminde dersin olduğu gün sınav yapılmıştı. O zaman herhangi bir çakışma aynı gün dersim olmadığı için olmamıştı ama bu dersin sınavını perşembe gününe çekmişler. O yüzden diğeriyle çakışma oldu bu şekilde.
+
+316
+01:04:44,764 --> 01:04:47,063
+Bu dersin derken bilgisayarla göründün mü?
+
+317
+01:04:47,203 --> 01:04:48,364
+Evet, bilgisayarla göründün.
+
+318
+01:04:48,764 --> 01:04:50,203
+Normalde cuma mıydı?
+
+319
+01:04:50,804 --> 01:04:54,083
+Vizede dersin olduğu gün, cuma günüydü.
+
+320
+01:04:54,083 --> 01:05:12,603
+Bu sene çok sıkışık. Cumartesi günü son notlama koymuşlar. Dolayısıyla cuma gününden zaten yapsalar hakikaten benim notlama zamanım olmayacaktı. Herhalde o yüzden perşembeye çekmişler beni.
+
+321
+01:05:13,619 --> 01:05:27,199
+Yani onu bir sor istersen şeye, bölüm bir çözüm getirebilecek mi? Bir şekilde çözülmesi lazım. Sonuçta senin resmi, sınavın tam aynı vakti mi geliyor, nasıl çakışıyor?
+
+322
+01:05:27,199 --> 01:05:36,879
+Hocam aynı saat, aynı gün aynı saate koymuşlar programda. Yani peş peşe olsa yine bir şekilde olur da.
+
+323
+01:05:42,164 --> 01:06:03,864
+Bakıyorum şimdi, evet. Yunus Yembe Hoca ile aynı saatte var bir şey. Bunu, orada aslında orayı nasıl yapmışlar? 10'da başlatmışlar. Aslında onu hani 9'da, 1'in 9'da başlatabilirler. Niye böyle uygulamayı gitmişler acaba?
+
+324
+01:06:07,411 --> 01:06:10,251
+Veya öğleden sonraya doğru alabilirler, değil mi?
+
+325
+01:06:11,152 --> 01:06:11,511
+Evet.
+
+326
+01:06:12,632 --> 01:06:18,711
+Aslında oraya çok büyük bir sıkıntı oluşmadan çözülebilir gibime geliyor.
+
+327
+01:06:20,091 --> 01:06:27,731
+Veya benimkini çarşambaya falan alsalar durumunuz ne olur bilmiyorum ama mesela benimki 9'da başlasa,
+
+328
+01:06:29,851 --> 01:06:34,011
+diğer hocamızınki de 11'de başlasa mesela.
+
+329
+01:06:35,123 --> 01:06:48,483
+Yetişebilir. Yani burası çözülebilir. İstersen sen bir bizim bölüm başkan yardımcıları yapıyor bu programı. Onlara bir mail atarsan onlar çözecektir bunu.
+
+330
+01:06:49,163 --> 01:06:53,043
+Yakan Bilgin Hoca ve da Mehmet Aktaş Hoca bu seni çözer diye düşünüyorum.
+
+331
+01:06:53,883 --> 01:06:55,303
+Tamam, teşekkür ederim hocam.
+
+332
+01:06:55,303 --> 01:06:55,983
+Rica ederim.
+
+333
+01:07:02,036 --> 01:07:09,235
+Şey yok sanırım. Peki, iyi dersler, iyi sınavlar diliyorum. Başarılar diliyorum.
+
+334
+01:07:10,235 --> 01:07:12,635
+Size sınavla görüşmek üzere.
+
+335
+01:07:13,635 --> 01:07:15,096
+Görüşmek üzere hocam, görüşmek üzere.
