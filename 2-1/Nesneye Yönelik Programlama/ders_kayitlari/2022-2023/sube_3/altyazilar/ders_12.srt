@@ -1,0 +1,1347 @@
+1
+00:15:57,556 --> 00:15:59,516
+Evet, merhaba arkadaşlar.
+
+2
+00:16:01,216 --> 00:16:05,475
+Lab'daydınız herhalde, o yüzden biraz geçmiş olduk.
+
+3
+00:16:05,956 --> 00:16:11,115
+Neyse, bugün çok fazla konumuz yok zaten, geçiştiririz diye ümit ediyorum.
+
+4
+00:16:11,731 --> 00:16:39,651
+Şimdi proje vereceğimizi geçen hafta söylemiştik. Diğer gruplar paylaştığını bilmiyorum. Ben de şimdi bu dersten sonra hemen paylaşıyor olacağım. Bir projemiz var. Onları, onu sizden yapmanızı bekliyor olacağız. Detayları orada hani nasıl yapacağız, kaçer kişi yapacağız, ne olur olacak orada hepsini sizlere paylaşıyor olacağız. Siz de kontrol edersiniz. Önce Google Classroom'a koyarım ben ondan sonra OBS'den.
+
+5
+00:16:39,731 --> 00:16:41,991
+Gönderiyor olurum.
+
+6
+00:16:42,271 --> 00:16:43,231
+Kıymetli arkadaşlar.
+
+7
+00:16:43,572 --> 00:16:48,672
+İkinci vizede böylece yapmayacağımızı söylemiş olalım.
+
+8
+00:16:49,351 --> 00:16:55,312
+Buna ek olarak final sınavı gibi bir değerlendirmeniz kalıyor olacak.
+
+9
+00:16:55,911 --> 00:17:01,312
+Onu da final haftasında şu an zannımca program ilan edilmedi.
+
+10
+00:17:02,259 --> 00:17:07,319
+Ama final haftasında yüz yüze bir şekilde gerçekleştiriyor olacağız.
+
+11
+00:17:08,279 --> 00:17:16,400
+Şimdi bugünkü konumuzla beraber bakalım neler anlatıyor olacağız sizlere.
+
+12
+00:17:16,400 --> 00:17:18,019
+Evet.
+
+13
+00:17:20,599 --> 00:17:25,920
+Şimdi ben yutarı nasıl paylaştığımı bilirmiyorum ama bir daha paylaşayım. Daha hızlı olsun.
+
+14
+00:17:27,508 --> 00:17:52,788
+Şöyle, evet. Geçen hafta ders yapamamıştık ama ikinci vizenin olmaması dolayısıyla paralel programlamaya girişi ben yaymıştım. Onu bir haftada anlatırız. Önümüzdeki hafta onu anlatırız. Sonraki hafta grafik user interface'i GUIN'ye bir giriş yaparız. Onu anlatırız. Bu hafta ise jenerik sınıflardan bahsediyor olacağız.
+
+15
+00:17:55,188 --> 00:18:06,448
+Dediğimizde aslında ben belki de ilk haftalarda, birinci, ikinci haftalarda bunların biraz kullanımını gerçekleştirmiştim size. ArrayListler, Linkli Listeler.
+
+16
+00:18:06,628 --> 00:18:23,188
+Çünkü bunu şunun için yapıyorum ben, ilk haftalarda bundan bahsetmeyi. Birçok örnek yapalım, kendimizi geliştirelim, proje yapalım diye siz istiyorsunuz. Daha önceki yıllarda bu dersi hep verdiğimizde öyle oldu yani. Ama hep o standart...
+
+17
+00:18:23,188 --> 00:18:33,028
+Klasik şeyden alıştığımız, alt seviye biraz, orta seviye programlama dillerinden alıştığımız dizilerle yapmak zorunda kalıyoruz.
+
+18
+00:18:33,028 --> 00:18:42,428
+Dolayısıyla denemelerinizin neredeyse tamamını ArrayList, UMLNesne gibi yapılır bilerek yapıyor olmanızı isteriz.
+
+19
+00:18:42,548 --> 00:18:44,868
+Ki onlara dair pratik yapmanızı isteriz.
+
+20
+00:18:45,167 --> 00:18:53,867
+O sebeple bir an önce ben onları anlatmak istiyordum. Bir örnek bakımından bugün biraz daha detaylarına değiniyor olacak.
+
+21
+00:18:54,867 --> 00:18:56,407
+Konumuz temelde o.
+
+22
+00:18:56,407 --> 00:18:57,407
+Şimdi...
+
+23
+00:18:58,420 --> 00:19:16,640
+Buna temelde arkadaşlar jenerik programlama, jenerik sınıflar diyoruz. Bu linkli liste. Linkli liste veri yapısını ekstradan üzerinde durmuyorum. Zaten veri yapıları, algoritmalar, dersi alıyorsunuz.
+
+24
+00:19:16,788 --> 00:19:20,788
+Orada LinkedIn listenin ne olduğunu, veri yapılar kısmında biliyorsunuz.
+
+25
+00:19:21,488 --> 00:19:40,827
+Ama temelde hızlıca özetlemek gerekirse dizide bulunan tüm elemanların belli koşullar gözetilerek büyüklüğü olabilir, alfabetik sırası olabilir, boyutu olabilir, gözetilerek bir sıraya sokulması.
+
+26
+00:19:41,279 --> 00:19:59,799
+İlla herhangi bir kriter de olmak zorunda değil, birbirilerine bir şekilde belirlenen kriterlere göre linklenmesine biz linkli liste diyoruz. Bu veri yapısı da biz de Java'da sunulmuş durumda, jenemek sınıf.
+
+27
+00:20:00,000 --> 00:20:06,099
+Olarak bunu tabii ki kullanarak listeleri oluşturup tutabiliriz.
+
+28
+00:20:07,279 --> 00:20:12,839
+Temelde bunlar kendilerine yani kendi sınıfına referans veren sınıflar.
+
+29
+00:20:13,319 --> 00:20:14,099
+Öyle söyleyelim.
+
+30
+00:20:14,240 --> 00:20:23,640
+Sonuçta bir linkin bağlantısı dizinin diğer bir elemanıyla oluyor aslında.
+
+31
+00:20:23,940 --> 00:20:24,859
+O yüzden bir sert.
+
+32
+00:20:25,587 --> 00:20:27,688
+referans durumu söz konusu.
+
+33
+00:20:27,688 --> 00:20:31,508
+Tabii bir başlangıç, bir bitiş noktası olması gerekir.
+
+34
+00:20:31,587 --> 00:20:35,347
+Başlangıç noktasını bildikten sonra onun referans verdiği bir link vardır.
+
+35
+00:20:35,488 --> 00:20:38,347
+Diğerine referans verdiği bir link, diğerine referans verdiği bir link.
+
+36
+00:20:38,708 --> 00:20:43,028
+En sonunda da herhangi bir referans olmaması durumu söz konusudur.
+
+37
+00:20:43,107 --> 00:20:45,788
+Çünkü bir sonra gidilecek linkli bir eleman yoktur.
+
+38
+00:20:46,228 --> 00:20:48,488
+Buna da tail diyoruz.
+
+39
+00:20:50,488 --> 00:20:53,587
+Pointerlarla tabii ki bu linkleri göstermek.
+
+40
+00:20:53,587 --> 00:20:59,788
+En efektif olanıdır. Memory management kısmında. Burada da benzer bir yapı kullanılıyor.
+
+41
+00:21:00,327 --> 00:21:05,587
+Ve bu tabii ki bir liste, yani bir Array. Her birisi linklerle birbirlerine bağlanmış.
+
+42
+00:21:06,387 --> 00:21:11,407
+Fakat ben bu Array üzerinde bir arama yapmak istiyorum, bir sıralama yapmak istiyorum.
+
+43
+00:21:11,627 --> 00:21:16,268
+Oradan bir elemanı kontrol edip, çekip, düzenlemek istiyorum ben.
+
+44
+00:21:16,268 --> 00:21:21,587
+Doğal olarak gezinmem lazım bu listenin içerisinde. Bunun için de gezinmemizi sağlamak.
+
+45
+00:21:21,587 --> 00:21:29,208
+Aleyicik bir iterator objesi söz konusu. Bunları birazdan örneklerle sizlere gösteriyor olacağım.
+
+46
+00:21:29,728 --> 00:21:33,627
+İşte şöyle, sadece intijre elemanlardan oluşan bir dizimiz olsun.
+
+47
+00:21:33,927 --> 00:21:37,988
+İntijre elemanları olmak zorunda değil. Kompozit sınıflar olabilir.
+
+48
+00:21:37,988 --> 00:21:42,988
+Yani diyelim ki bir...
+
+49
+00:21:43,380 --> 00:21:51,080
+Sınıftan, extentle türetilmiş bir child sınıfın burada yerleştirebiliriz.
+
+50
+00:21:51,240 --> 00:21:52,940
+Yani en nihayetinde.
+
+51
+00:21:53,440 --> 00:21:54,860
+Onları zaten görmüştük.
+
+52
+00:21:54,940 --> 00:21:57,160
+Bugün tekrardan bakıyor olacağız.
+
+53
+00:21:57,380 --> 00:22:00,380
+Head mode, tail mode gibi durumlar söz konusu.
+
+54
+00:22:00,540 --> 00:22:08,320
+Linkler birbirlerine bir sonraki göstereceği elemanı link verecek şekilde ilerlemesi beklenir.
+
+55
+00:22:08,320 --> 00:22:11,380
+Ve en sonuncu elemanın da herhangi birisi.
+
+56
+00:22:11,380 --> 00:22:16,460
+Hangi bir şekilde takdir edersiniz ki linki olmamız lazım, bir noktada durdurmamız lazım.
+
+57
+00:22:16,560 --> 00:22:22,920
+Pekala temeldeki en büyük avantaj olarak listeleyebileceğiniz neler var?
+
+58
+00:22:23,840 --> 00:22:33,300
+Bir listeye yeni bir eleman eklediğimiz durumda, listeyi büyütmemiz gerektiği durumda herhangi bir ekstradan bir maliyeti bize yok.
+
+59
+00:22:39,380 --> 00:22:41,500
+Sıralı bir şekilde linklenmiş olsun.
+
+60
+00:22:42,220 --> 00:22:52,320
+Yani bu linkler dediğim gibi bir integer dizisinin küçükten büyüğe, büyükten küçüğe şekilde sıralanması için de kullanılabilir.
+
+61
+00:22:52,880 --> 00:22:57,080
+Böyle sıralı bir diziye yeni bir eleman eklemeye çalıştığınızı düşünün.
+
+62
+00:22:57,220 --> 00:23:02,660
+Linkli listede yeni bir eleman eklediğinizde sadece iki tane linkin yerini değiştiriyorsunuz.
+
+63
+00:23:02,996 --> 00:23:16,115
+Ama normal bir dizi düşünelim, sıralı bir dizi, yeni bir eleman eklemek istediğimizde tam ortasına bir yere geliyorsa veya başına geliyorsa geri kalan tüm elemanlarının çeşitli durumlarda yerini değiştirmeniz gerekiyor.
+
+64
+00:23:16,196 --> 00:23:29,196
+O yüzden burada listenin büyütülmesi, yeni elemanların eklenilmesi, silinmesi, sadece linklerin iki tane linkin maksimum düzenlenmesiyle gerçekleştirilebilecek işler olduğu için oldukça kolay.
+
+65
+00:23:29,844 --> 00:23:31,703
+Bir şekilde gerçekleşiyor.
+
+66
+00:23:33,003 --> 00:23:38,703
+Yine veri yapılır algoritmalar dersinde bir link liste, linkler kullanılarak nasıl sıraladığını görmüşsünüzdür.
+
+67
+00:23:38,703 --> 00:23:45,364
+Sıralama algoritmaları da bu tarz yapılar üzerinde daha efektif sonuçlar veriyor.
+
+68
+00:23:45,584 --> 00:23:48,884
+O da bir performans diyebiliriz.
+
+69
+00:23:49,875 --> 00:24:04,695
+Evet, yani tabii siz şeyin içerisinde linkli listenin içerisinde istediğiniz gibi ardışıl bir şekilde dolaştığınızda tüm listeyi aslında gezmiş oluyorsunuz.
+
+70
+00:24:04,836 --> 00:24:14,195
+Yani başlangıç konulundan başlayıp linkleri kullanarak ilerlediğinizde dizinin içinde otomatik olarak tüm diziyi dolaşmış oluyorsunuz.
+
+71
+00:24:14,195 --> 00:24:17,435
+Size böyle bir iterative yapısı tanınmış oluyor.
+
+72
+00:24:17,875 --> 00:24:33,916
+Bunun haricinde ilgili indisleri kullanarak, yani sonuçta bu bir liste, listenin çeşitli indislerinde hangi linkli, hangi elemanlar olduğunu biliyorsun, onlar üzerinden de yola çıkıp ilerleyebileceğiniz bir erişim şekli, akses şekli söz konusu.
+
+73
+00:24:34,355 --> 00:24:50,675
+Tabii yine veri yapıları dersinden hatırlıyorsunuzdur. Linkli listeler çift linkli olabilir. Yani ben kendimden bir sonraki elemana link verebildiğim gibi kendimden bir önceki elemana da link verebilirim.
+
+74
+00:24:58,291 --> 00:25:25,731
+Double Linked List diyoruz. Hem ileriye yönde hem geriye yönde hareket edilebiliyor. Yani normalde bakıldığında sadece Single Linked List olsa genelde belki bunu kullanmışsınızdır. Kendisinden sonraki elemanın indisine ne bileyim konumuna referans verecek şekilde bir linki mevcuttur, bir pointerı mevcuttur.
+
+75
+00:25:26,291 --> 00:25:35,471
+Bu pointerı kendisinden sonrakine geldiğinde kendisinden sonrakinin içinde de saklanmasına aslında bir double linked disk diyoruz.
+
+76
+00:25:36,115 --> 00:25:57,036
+E tabii yani bir de circle'ın linked listler söz konusu olabilir. Normalde linked listenin nereden başlayacağını harici bir değişkende tutmanız beklenir. En sonuncu tail'ına geldiğinizde ise artık bu hiçbir yere link vermemesi beklenir. Normal, standart, single veya double linked listlerde.
+
+77
+00:26:04,115 --> 00:26:10,215
+link verir ve böylece bir çember yapısında dolaşmak sağlanıyor olur.
+
+78
+00:26:10,615 --> 00:26:18,155
+Java'da bunu bize sağlayan, bu collection'ı sağlayan Java YouTube'nin altında ArrayList.
+
+79
+00:26:18,448 --> 00:26:36,307
+A'sı ve L'si büyük bir sınıf söz konusu. A single link list yaptığını buradan görüyoruz. Ve işte constructorı da içerisine herhangi bir parametre almadan oluşturup ondan sonra istediğimiz gibi şekillendirebileceğimiz bir yapıda.
+
+80
+00:26:36,307 --> 00:26:46,448
+Şöyle ne tarz metotları var kısaca, hızlıca göz gezdirmek adına bakarsak. Tabii ki bunlardan çok daha fazlası var. Birazdan eklipsi açtığımda size orada da göstereceğim.
+
+81
+00:26:46,448 --> 00:27:14,448
+Ama hızlıca şöyle bir bakarsak, hem LinkedList'ten bahsettik, hem ArrayList'ten bahsettik. İkisi birbirinden temelde farklı veri yapıları. Normalde ben öğrenciyken ArrayList değil de List diye bir veri yapısı vardı. Ondan sonra ArrayList diye yeni yeni bir veri yapısı çıktı ve listeyi kullanmayın artık bunu kullanın diye Java'nın yeni versiyonları.
+
+82
+00:27:14,448 --> 00:27:16,367
+Söyledi.
+
+83
+00:27:16,367 --> 00:27:22,367
+Şu an o yüzden normal bir ArrayList yapısını...
+
+84
+00:27:23,476 --> 00:27:30,716
+Orta seviye C gibi Pascal'ın programlama dillerinde kullandığımız ArrayLer mantığıyla kullanabiliyoruz.
+
+85
+00:27:30,796 --> 00:27:39,796
+Linked List dediğimizde ise olay linklerden oluşuyor. Onu da söyleyelim. İkisi de şu an generic sınıfların altında gördüğümüz şeyler.
+
+86
+00:27:40,436 --> 00:27:43,476
+Her ikisinin de benzer kullanım şekilleri var.
+
+87
+00:27:44,019 --> 00:27:57,680
+Bunlara en sonunda, dersin en sonunda biraz değineceğim. Avantajları, dezavantajları. Bir de vektörler var. Vektörler de temelde ArrayList gibi bir yapı. Ne farkı olduğunu dersin sonunda bahsediyor olacağım.
+
+88
+00:27:58,059 --> 00:28:06,680
+ArrayList'lerin, tabi listeye bir nereye eklemek istiyorsunuz? Yani bu bir liste diyorum ben ama...
+
+89
+00:28:06,963 --> 00:28:18,804
+Primitive dillerdeki o Ereğleri düşünün. Dizi dediğimiz o şeyleri düşünün. 0. İngiliz'den başlayıp N. İngiliz'e kadar giden o dizileri düşünün. Burada onlar Liste diye isimlendirilmiş durumda.
+
+90
+00:28:18,804 --> 00:28:26,571
+Ve bu listeye yeni bir eleman eklemek istiyorsunuz. Herhangi bir İngiliz'in elemanı alıp...
+
+91
+00:28:26,740 --> 00:28:32,579
+Değerini okumak istiyorsunuz. Add-get metodları bunun için var.
+
+92
+00:28:32,980 --> 00:28:37,480
+Veya işte boyutunun, şu anki boyutunun ne olduğunu öğrenmek istiyorsunuz.
+
+93
+00:28:37,559 --> 00:28:44,559
+Siz add-e yaptığınızda dinamik olarak listenin boyutu kendisine göre organize ediliyor olacak.
+
+94
+00:28:44,559 --> 00:28:54,740
+Bazı şeyler, yani memory management ile ilgili bazı şeylerin dersin ilk başlarında Java sanal makinesi, virtual machine tarafından yapıldığını söylüyor.
+
+95
+00:28:54,740 --> 00:28:58,339
+Bunların hepsinin kontrolü o tarafta olduğunu söyleyebiliriz.
+
+96
+00:28:59,139 --> 00:29:06,119
+Veya bakıldığında size'ı belli bir oranda büyütmek istiyorsunuz.
+
+97
+00:29:06,359 --> 00:29:09,719
+Veya size'ı belli bir oranda olarak siz set etmiştiriz.
+
+98
+00:29:09,839 --> 00:29:19,019
+Fakat şu anki hali hazırda mevcut durumda içerisinde kaç tane veri varsa oraya tekrardan size'ı set etmek istiyorsunuz.
+
+99
+00:29:19,183 --> 00:29:25,443
+Veya belli indislerin içerisinde hali hazırda belli veriler vardır.
+
+100
+00:29:25,603 --> 00:29:27,583
+Diyelim ki bir ArrayList oluşturdunuz.
+
+101
+00:29:28,123 --> 00:29:29,644
+Beş elemanlı bir ArrayList.
+
+102
+00:29:29,764 --> 00:29:33,003
+Siz üçüncü elemanını tekrardan set etmek istiyorsunuz.
+
+103
+00:29:33,083 --> 00:29:37,403
+Yani tekrardan set ettiğinizde bir önceki elemanın değerini kaybedersiniz.
+
+104
+00:29:37,523 --> 00:29:38,563
+Takdir edersiniz gibi.
+
+105
+00:29:39,023 --> 00:29:40,083
+Takdir ettiğiniz gibi.
+
+106
+00:29:40,264 --> 00:29:42,203
+Yani A diye bir değişkeniniz olsun.
+
+107
+00:29:42,743 --> 00:29:43,523
+Değeri üçtür.
+
+108
+00:29:43,723 --> 00:29:47,163
+A değişkeninin değerini beş yaparsanız üçü kaybedersiniz.
+
+109
+00:29:47,183 --> 00:29:58,463
+Burada da kaybetmeyi de göze alarak gerekirse korumak istediğinizde bir temp değişkeninin içerisine aldıktan sonra istediğiniz indiste bir set işlemi gerçekleştirebilirsiniz.
+
+110
+00:30:00,000 --> 00:30:04,699
+İndisi vererek, bir objeyi vererek remove işlemi gerçekleştirebilirsiniz.
+
+111
+00:30:04,699 --> 00:30:15,119
+Bu tabi set remove işlemlerinde veya get işlemlerinde en çok karşınıza çıkacak exception türü index out of bound exception'dır.
+
+112
+00:30:15,559 --> 00:30:22,699
+Bu da yani sizin listenizin boyutundan daha fazla bir yere erişmeye çalıştığınızı gösterir.
+
+113
+00:30:23,679 --> 00:30:27,519
+Genellikle son elemana erişirken bu olur.
+
+114
+00:30:28,000 --> 00:30:30,839
+Yani liste 10 eleman mısa sonuncu eleman 9. elemandır.
+
+115
+00:30:31,240 --> 00:30:32,960
+Artık yani buna alışmış sınırlıdır.
+
+116
+00:30:33,319 --> 00:30:34,079
+Burada da öyle.
+
+117
+00:30:34,359 --> 00:30:37,440
+Sıfırdan başlayıp n'e doğru, n-1'e doğru gidiyor.
+
+118
+00:30:37,440 --> 00:30:43,779
+O yüzden indeksten aşma karşılaşabileceğiniz önemli problemlerden birisi de.
+
+119
+00:30:43,859 --> 00:30:45,960
+Bunlara da dikkat etmek gerekir.
+
+120
+00:30:47,316 --> 00:31:09,655
+Bakıldığında aslında bir işte iterable diye bir interface'imiz söz konusu. Neredeyse birçok şey bundan sürüyor. Çeşitli collectionlarımız yine söz konusu. Collection dediğimiz şey toplayıcı yani verileri bir arada tutucu çeşitli yapılar.
+
+121
+00:31:09,655 --> 00:31:15,316
+İşte bunlar listeler. Abstract list dediğimizde ise bakın içerisine bir taraftan linkli...
+
+122
+00:31:15,316 --> 00:31:41,135
+Bir taraftan vektörler, bir taraftan da ArrayListler geliyor. Aslında temelde verileri bir araya da toplayan, farklı yapılarla kullanarak bir arada toplayan jenerik sınıf diyoruz bunlara. Vektörlerle ArrayListler neredeyse birbirinin tam olarak aynı gibi. Şeyleri anlatırken biraz farklılığından bahsediyor olacağız.
+
+123
+00:31:41,584 --> 00:31:52,903
+threadleri anlatırken biraz farklılığından bahsediyoruz. ArrayList'teki her bir eleman, Vector'daki her bir eleman, LinkedIn'deki her bir elemana biz element.
+
+124
+00:31:53,428 --> 00:32:00,168
+Diyoruz. Buradaki E'ler oradan gelen temelde şeyler aslında bakıldığında.
+
+125
+00:32:00,688 --> 00:32:03,327
+Java, utility'in altında hepsi ceryan ediyor.
+
+126
+00:32:03,428 --> 00:32:04,788
+Şimdi bir örneğimiz var.
+
+127
+00:32:05,408 --> 00:32:08,968
+Bir course sınıfımız var.
+
+128
+00:32:09,068 --> 00:32:11,028
+Bir student, bir de UCS sınıfımız var.
+
+129
+00:32:11,028 --> 00:32:13,268
+İşte çeşitli derslerimiz söz konusu.
+
+130
+00:32:13,367 --> 00:32:17,468
+Öğrenciler çeşitli derslere kaydoluyorlar ve UCS de bunu kontrol ediyor.
+
+131
+00:32:17,867 --> 00:32:21,408
+Burada course'u bir ArrayList yapısında.
+
+132
+00:32:21,428 --> 00:32:48,748
+Nasıl oluşturuyoruz? Ona bakalım. Dediğim gibi buna benzer örnekler çeşitli durumlarda yapmıştık. Biraz daha pek isim. Şimdi dersin başından beri Java'ya dair birçok şey öğrenmiş oldunuz. Çeşitli pratikler yaptınız. Ekstradan çalışmalar gerçekleştirdiniz. Bir de bu perspektiften ArrayList'leri incelemenizi değerli buluyorum açıkçası. O yüzden ben şimdi sizinle Eklips'i paylaşıyor olayım.
+
+133
+00:32:49,428 --> 00:32:51,428
+Student ile isterseniz başlayalım.
+
+134
+00:32:51,923 --> 00:33:19,923
+Artık bazı şeyler oturmuştur diye düşünüyorum. Yani bir sınıf var, sınıfın attribütleri var, metotları var. En temel metotlar setrlar, getrlar. Bu metotların üzerine biz istediğimiz şekilde metot yazabiliyoruz. Sınıfları birbirlerine alt sınıfı veya üst sınıfı şeklinde literendirebileceğimiz çeşitli yapılar kurabiliyoruz ve bu yapılar üzerinden işlemlerimizi gerçekleştiriyoruz.
+
+135
+00:33:19,923 --> 00:33:23,044
+Temel olay aslında bakıldığında bu.
+
+136
+00:33:23,923 --> 00:33:30,524
+İşte bizim bir number, öğrenci numarası ve name olarak iki tane attribütümüz var.
+
+137
+00:33:30,624 --> 00:33:32,624
+Private olarak constructor var.
+
+138
+00:33:33,644 --> 00:33:35,064
+Setter, şey getterler var.
+
+139
+00:33:35,183 --> 00:33:40,044
+Setter'ı zaten constructor'ın içinde olduğu için ekstradan setter buraya yerleştirilmemiş.
+
+140
+00:33:40,044 --> 00:33:41,044
+Şimdi.
+
+141
+00:33:42,548 --> 00:33:53,548
+Geçtiğimiz hafta, çeşitli zaman zaman şirketlerle falan da çalışıyorum ben, dalışmanlık yapıyorum. Geçtiğimiz hafta beraber çalıştığım bir şirket...
+
+142
+00:33:54,160 --> 00:34:21,860
+Bir Java kodunu inceliyoruz. Çok sınıf var tabii ki. Onlarca, belki yüzlerce sınıf var yazılmış. Onu biz sadece çalıştırmak istiyoruz. Yani bir derleyelim, çalıştıralım diye istiyoruz. Şirkette çalışanlar, benim danışmanlık yaptığım şirkette çalışanlar bu kodu başka bir şirketten alıyorlar. Şirkette çalışanlar Yılmaz Teknikleri.
+
+143
+00:34:22,159 --> 00:34:47,619
+bölüm mezunu. Kodu yazanlar da yine başka şirkette çalışıyorlar ama onlar da bizim bölümler. Ama yani bir türlü bir tarafta yazılıyor. İşte mavenle falan güzel project management şeyleri falan oluşturulmuş. Bu tarafta kodu bir türlü derleyemiyoruz. Yani en temel hatalarda falan var. Yani derleyemiyorlarmış da beraber bakmıştık.
+
+144
+00:34:50,643 --> 00:34:56,543
+Şimdi en temel problem şuymuş, bütün sınıflar tabii hata veriyor, proje komple hata veriyor.
+
+145
+00:34:56,659 --> 00:35:24,639
+En temel problem şuymuş. Yeni yeni artık böyle güzel editörler, ideler kullandığınızda size çeşitli yapılar sağlıyor. Annotationlar bunlardan birisi. Derste zaten bahsetmiştik annotationların nasıl olduğunu. Siz de biliyorsunuz et harfiyle beraber yazılan çeşitli derleyiciye meramını anlatmak için kullandığımız ifadeler.
+
+146
+00:35:24,659 --> 00:35:52,599
+Aslında, annotation'lar bakıldığında. Mesela, işte, student sınıfının içerisinde, şurada, ben muhtemelen annotation yapabileceğim bir faneye diyemedim ama, mesela, getter virgül, işte, bunun üzerine setter yazmış, böyle annotation'lı. Bir de constructor yazmış, annotation'la neyse, constructor diye uzakmış. Şu getter ve setter'ların hiçbirisini elle, hani,
+
+147
+00:35:52,659 --> 00:36:12,539
+Auto-generate ediyoruz. Yazmıyoruz. Zaten auto-generate ne şekilde edildiği belli. O yüzden böyle annotation'larda tanımlamak güzel olabilir. Fakat sizin derleyicinizin bu annotation'ı tanıyacak o sınıfı, o yapısı, plug-in'i diyelim ona, yoksa hiçbir sitir getirip kullanamaz hale geliriz.
+
+148
+00:36:12,755 --> 00:36:14,536
+Tabii ki takdir edersiniz ki.
+
+149
+00:36:16,355 --> 00:36:23,815
+Bu attribute'lar temelde iki tane olduğunda yani setr, getrı, konstruktor çok yer işgal etmiyor olacaktı.
+
+150
+00:36:24,395 --> 00:36:31,195
+Ama setr, getrıları yani diyelim ki attribute'ları 50 tane attribute'u var.
+
+151
+00:36:31,375 --> 00:36:34,815
+Teker teker o setr, getrı yazmak yerine böyle annotation'dan kullanılıyor.
+
+152
+00:36:34,935 --> 00:36:36,635
+Siz de kullanıyorsunuz muhtemelen de.
+
+153
+00:36:36,956 --> 00:36:38,576
+Bilmeyen arkadaşlar için söyleyin.
+
+154
+00:36:40,755 --> 00:37:08,295
+Yapmanız gereken şey oturup onlara teker teker seter getir eklemek değil. Çünkü adam update edilmiş versiyonunu konunu tekrar gönderdiğinde oturup tekrar ekleyemezsiniz. Böyle bir plugin'i bulup o anete işini anlayıp kodu o şekilde derleyebileceğiniz bir yapı size sunması. Ama yani bu dersimizde temel amaç zaten seterleri getirilir, görün, tanıyın. Constructör nedir, ne şekilde oluşturur, görün, istediğiniz için bunları sürekli kullanıyoruz.
+
+155
+00:37:08,755 --> 00:37:12,496
+Öğrenci sınıfımızda iki tane attribute var ve
+
+156
+00:37:12,916 --> 00:37:16,076
+Yatırı ve constructor bu şekilde oluşturulmuş durumda.
+
+157
+00:37:16,076 --> 00:37:21,796
+Şimdi gelelim bizim force sınıfımıza.
+
+158
+00:37:22,496 --> 00:37:33,996
+Bakın dersin kodu, dersin ismi string olarak kapasitesi, maksimum kaç öğrenci bu dersi alıyor, kapasitesi ve öğrenciler bir ArrayList olarak kullanılmış.
+
+159
+00:37:34,155 --> 00:37:38,076
+ArrayList'in her bir elementi ise bir öğrenci.
+
+160
+00:37:39,076 --> 00:37:40,916
+Normalde liste...
+
+161
+00:37:40,916 --> 00:37:45,155
+Yani şimdiye kadar gördüğünüz işte programlama dili C'yi düşünelim.
+
+162
+00:37:45,635 --> 00:37:51,216
+C'de listelerin içerisinde genellikle primitive veri tipleri, liste değil mi?
+
+163
+00:37:51,235 --> 00:37:53,456
+Array'lerin içerisinde primitive veri tipleri çıkıyor.
+
+164
+00:37:54,456 --> 00:37:58,275
+Belki sıtrakların dizilerini falan yaptınız, pointerlar gösterdiniz.
+
+165
+00:37:58,275 --> 00:38:02,735
+Ama onlar bile kompleks geliyor olabilir size C tarafında.
+
+166
+00:38:02,896 --> 00:38:07,596
+Ama buraya bakıldığında yani bu Java'nın en temel prensiplerinden birisi.
+
+167
+00:38:07,735 --> 00:38:08,916
+Yani buradan itibaren...
+
+168
+00:38:08,916 --> 00:38:36,796
+Java yazmaya başlıyorsun. Burada olayı idrak ediyorsun. Ben bir sınıfın veya yine bir collection'ın dizisini oluşturabilirim. Mesela ArrayListleri LinkliList dizisinde tutabilirsiniz. Yani Students diye bir ArrayListim var. 15 tane ArrayListim olsun. Bu ArrayListlerin hepsini bir LinkliListede de tutabilirim. Bize böyle bir yapı da sağlanıyor. Onları bolca oyuncak gibi.
+
+169
+00:38:36,916 --> 00:38:57,275
+evde deneyi kullanacaksınız. Dikkat edilmesi gereken hususlardan birisi burada ArrayList sınıfını kullandığım için, evet, student elementinin listesi şeklinde oluşturuyorum bunu ama ArrayList bir sınıf. ArrayList bir sınıf olduğu için kullanmadan önce initialize etmem lazım.
+
+170
+00:38:57,615 --> 00:39:21,615
+Bu sınıfı. Initialize etmek yani construct etmem gerekiyor. Constructorını çağırmam gerekiyor. Ondan bir instance üretmem gerekiyor. İşte bunun içinde en güzel yer hangi sınıfın attribute olarak kullanılmak isteniyorsa bu o sınıfın constructorı bunun için biçilmiş kafa. Her durumda böyle olmayabilir. Farklı farklı metotların içerisinde.
+
+171
+00:39:22,643 --> 00:39:32,384
+Ben bunu construct edeceğim diyebilirsiniz. Kendiniz ona göre modifiye edilmiş bir metot yazabilirsiniz. Ama bizim örneğimizde en uygunluğun burası olduğunu söyleyebiliriz.
+
+172
+00:39:32,683 --> 00:39:40,503
+Construct etmeden de bunu sınıf olduğu için bu instance yani students instance'ın içerisinde değer yazamazsınız.
+
+173
+00:39:40,503 --> 00:39:41,543
+Hocam şu code.
+
+174
+00:39:41,844 --> 00:39:59,543
+Bu da string ama new string diye kontrak etmiyorum. O şekilde gerçekleştirilmiş bir sınıf. Direkt değer atay adına biliyor. Yani bir nasıl söyleyeyim primitiv veri tipi gibi değil ama bir veri tipi gibi en nihayetinde.
+
+175
+00:40:00,000 --> 00:40:28,000
+Çalışıyor. Burada işte çeşitli getiriler oluşturulmuş. Bakıyorum. Evet, üç tane getirimiz oluşturulmuş şunlar için. Boyutunu almak için get student count. Kaç tane öğrenci var? Hala hazırda kapasitesi belli. 30 ama bu dersi kaç öğrenci almış? Onun boyutunu öğrenmek için student.size. Yani ArrayList'in size diye bir metodu var. Bu metotla şeyin ne olduğunu...
+
+176
+00:40:28,000 --> 00:40:55,400
+boyutunun ne olduğunu öğrenebiliyoruz. Bazen length olacak bazı veri tiplerinde ama burada size olduğunu görüyoruz. Şimdi bir find student metodumuz var. Onu da yine bizim UMLN diagramı o şekilde tasarlanmıştı. Find student yaparken ne yapıyoruz? Bir bakın öğrenci numarasını almışız burada. Öğrencinin komple kendisini de alabilirdiniz girdi olarak, parametre olarak.
+
+177
+00:40:56,000 --> 00:41:04,860
+Ve öğrenciyi geri döndürüyoruz. Eğer ki öğrenciyi öğrenci numarasından buluyorsam geri döndüreceğim. Bulamıyorsam da tabii ki null değerini döndürüyor olacağım.
+
+178
+00:41:05,000 --> 00:41:09,539
+Null çünkü bir obje olarak kullanılabiliyor.
+
+179
+00:41:10,099 --> 00:41:28,039
+Student listesinin her bir student'ın, student listesi 15 tane öğrenciden oluşan student olsun. For each döngümüz o şekilde çalışıyordu hatırlarsınız. Students listesinin her bir student'ın ile ilgili işlem gerçekleştiriyor olacağım. Burada onu söylüyoruz.
+
+180
+00:41:28,800 --> 00:41:38,099
+Adından for'un altına girdim. Bir öğrencinin numarasını aldım. Bu ilk öğrenci tabii ki. Yani burada 15 tane öğrenci varsa ilk öğrenciyle başlayalım.
+
+181
+00:41:38,099 --> 00:42:05,899
+Başladım listedeki ve bana gelen numarayla karşılaştırdım. Eğer ki eşitse sıfır değeri döndürüyor kompayı. Sıfır sıfıra eşitse o öğrenciyi buldum diye geri dönüyorum. Bulamadıysam bir sonadaki için, bir sonadaki için, bir sonaki için iterated ediyor içerisinde. Ne zamana kadar? Listenin sonuna gelinceye kadar iteratedildi. Listenin içerisinde herhangi bir anda bulduğum durumda bu ritörü çalışıyor olacak.
+
+182
+00:42:06,099 --> 00:42:11,059
+Sorun tamamına dolaşıp bulamadığında ise şu return çalışıyor olacak.
+
+183
+00:42:11,059 --> 00:42:21,739
+Yani öğrenci numarasını verdiğimde ya öğrenciyi bulursam öğrencinin tüm bilgilerini geri döndürüyorum ya da öğrenciyi listede bulamayıp null değerini geri döndürüyorum.
+
+184
+00:42:21,840 --> 00:42:45,060
+Bir öğrenci sistemi eklemek istiyoruz. Öğrenci sınıfından bir içerisine parametre verdik ve ekleyip ekleyemediğime dair bir bulayım değer. Geriye döndürüyorum. İlla bir dönen değerleri kullanıp bir yere atamak zorunda değilsiniz ama metotların öğrenci eklemek bulmak gibi çeşitli metotların tabii ki geriye değer döndürüp ona göre kontrol edilmesi hoş olacaktır.
+
+185
+00:42:49,840 --> 00:43:09,119
+İzmir sınıfa. Siz de bir ders eklemek istediğiniz ekleyemiyor olabilirsiniz. Nedir? Bir, get student count, eşittir, capacity. Dersin kapasitesi de olur. Tamam mı? Veya o öğrenci naldan farklıdır. Yani o öğrenci daha önceden eklenmiştir.
+
+186
+00:43:09,423 --> 00:43:18,283
+Ama bakın, onu da nasıl yapıyor? As Student demiş ya, As Student'un numarasını kullanarak Find Student metodunu kullanıyor. Çünkü numara üzerinden Find Student yapıyorduk.
+
+187
+00:43:19,824 --> 00:43:29,184
+Ya o öğrenci sistemi listeye daha önce eklenmişse veya kapasitemizde olmuşsa Return Hold. Eklemiyoruz yani. Bu demek değil ki.
+
+188
+00:43:29,715 --> 00:43:41,215
+Main metot tarafında oluşturduğum o öğrenci sınıfını bu listeye ekleyemesen bile hala daha o öğrenci sınıfından bir insans üretilmiş durumda. O hıf olup gitmiyor yani.
+
+189
+00:43:41,715 --> 00:43:54,756
+Tamam. Öyle sınavda çünkü çeşitli sorular o tarz cevaplar veren arkadaşlar olmuş. Yanlış olmuş o yaklaşımda. Onu da söylemiş olalım. Daha sonra Students bir ArrayListi. Bunun add diye bir metodu var. Student'e ekliyoruz.
+
+190
+00:43:54,756 --> 00:44:09,715
+Hazır buraya gelmişken Student'ın yani bir ArrayList'in ne tarz metotları olabilir? Beraber bakalım arkadaşlar. Hızlıca şöyle üzerinden geçeceğim. Bakın öğrenci ekleyebiliyorsunuz. İstediğiniz indisi öğrenci ekleyebiliyorsunuz.
+
+191
+00:44:09,715 --> 00:44:31,355
+Başka bir sizin listeniz vardır, birkaç tane ArrayList'iniz vardır, her birisini, stüdyon falan birleştirmek istiyorsunuz. Yani A dersini alan öğrencilerle B dersini alan öğrencileri yeni bir sınıfta birleştirmek istiyorsunuz. Veya B dersini alan öğrencileri A dersini üzerine eklemek istiyorsunuz gibi gibi. Yani tamamını ekleyeceğiniz çeşitli etol yapıları söz konusu.
+
+192
+00:44:37,715 --> 00:44:38,443
+Yönelik
+
+193
+00:44:38,804 --> 00:45:06,804
+Metotları söz konusu. Contain barındırıyor mu? Yani bunun içerisinde şu öğrenci var mı? Şu obje? Yani neyse artık bir student dedik burada ama bir obje sonuçta o listenin her bir elemanı. Onu kontrol edebilirsiniz. Bir listenin içerisinde başka bir liste var mı? Size'ını büyütmekten bahsetmiştik. For each'e dönmesinden bahsetmiştik. Yatırlarından bahsetmiştik zaten. Verdiğimiz bir objenin kaçıncı il liste olduğunu öğreniyoruz.
+
+194
+00:45:06,804 --> 00:45:26,884
+Bu dizinin boş olup, bu listenin boş olup olmadığını öğrenebiliriz. Bir tereyit edebildiğimizden bahsetmiştik. Verdiğimiz objenin kaçıncı, en son kaçıncı indiste olduğunu öğrenebiliriz. Birden fazla indiste yerleştirebilme imkanımız eğer ki bize tanınmışsa.
+
+195
+00:45:28,344 --> 00:45:34,804
+Tretlerle ilgili çeşitli durumlar var, onları o hafta anlatacağız. Silebilirsiniz. Belli bir dizi içerisinden komple...
+
+196
+00:45:34,804 --> 00:45:53,064
+silebilirsiniz. Belli şartları yerine getiriyorsa silebilirsiniz. Bakın. İşte set ve beraber öğrenciye atabilirsiniz. Size'ını öğrenebilirsiniz. Çeşitli karşılaştırma kriterleri göz önünde bulundurarak bunlara comparator sınıfı diyoruz. Compare yapıyor yani.
+
+197
+00:45:53,364 --> 00:46:20,844
+Karşılaştırma. O karşılaştırma sınıfından çeşitli kriterleri göz önünde bulundurarak bir instance oluşturup sorda parametre olarak verirsiniz. O compare yaptığınız kriterlere göre sıralayabilirsiniz. Veya çeşitli kriterlere göre listeyi iki parçaya, üç parçaya neyse ayırabileceğiniz çeşitli yapılar. İşte sublisk gibi söz konusu. Normal bir ereye dönüştürebilirsiniz.
+
+198
+00:46:21,364 --> 00:46:40,483
+Array metodunu kullanarak her birisi obje olan bir primitive Array olacak yani. Buradan onu çıkartabilirsiniz. Spring'e dönüştürebilirsiniz. Tüm diziyi, bazı şeyler Spring'e dönüşmeyebilir belki ama hepsinin en nihayetinde asil karşılığı var. Onları Spring olarak yazacaktır. Spring'e dönüştürebilirsiniz.
+
+199
+00:46:42,068 --> 00:46:55,347
+Bu yani bir kısmı kredlerle ilgili o yüzden onları şu an çok şey yapmıyorum. O zaman değiniyor olacağız. Yani çeşitli böyle metodlarının olduğunu görüyorsunuz. Bunları ihtiyaç dahilinde kullanabilirsiniz.
+
+200
+00:46:56,596 --> 00:47:00,836
+Metotlara ihtiyacınız olduğunda onları kendinizde yazabilirsiniz tabii ki.
+
+201
+00:47:00,836 --> 00:47:05,655
+Ama hali hazırda varsa mümkün olduğunca onları kullanmaya çalışmamız lazım.
+
+202
+00:47:05,775 --> 00:47:10,876
+Nesne yönelik tarafı bir temel amaç zaten bu kıymetli arkadaşlar.
+
+203
+00:47:12,244 --> 00:47:25,284
+uSys, Java diye bir sınıfım var. İşte burası sadece main method barın gibi. Başka da bir şey yok. Bunun hepsine değindi mi? Ben değinmedim. Çok özür dilerim. Şurada biraz daha ilerleyip bazı şeylere değinmem için main method da gördüm.
+
+204
+00:47:25,284 --> 00:47:33,284
+Increase capacity. Yani capacity integer bir değerdi. Increase olması demek ne demek? Eğer ki verdiğimiz...
+
+205
+00:47:34,963 --> 00:47:48,684
+Çok özür diliyorum. Kapasite işte gerekli koşulları sağlıyorsa kapasiteyi büyütürüm. Yani increase kapasitede, kapasiteden daha küçük bir değer girdiğimizde de set etmemesi lazım. Tahmin edersiniz. Değeri hala hazırda 30'dur.
+
+206
+00:47:49,023 --> 00:47:55,264
+20-20'sinizdir. Küçük olduğu için set etmemesi lazım. Onun üstünde set edebilir.
+
+207
+00:47:55,443 --> 00:48:03,144
+Ardından işte bu sınıfa dair çeşitli bilgileri yazdıran bir show class list diye metot var.
+
+208
+00:48:03,283 --> 00:48:05,604
+Onun da nasıl kullanıldığını görüyor olacağız.
+
+209
+00:48:06,043 --> 00:48:08,623
+Şimdi bakın bir course oluşturmuş.
+
+210
+00:48:09,184 --> 00:48:13,623
+Constructor'ında bir, iki tane string ardından bir tane de integer alıyormuş.
+
+211
+00:48:14,835 --> 00:48:40,835
+İki tane string, bir tane integer alıyor. Bakın, constructora çalıştırılmış. Object Oriented Programming, OOP diye bir constructor var. Ardından bir öğrenci oluşturulmuş. Bu öğrenci, addStudent metodu kullanılarak sisteme eklenmek isteniyor. Ama döndüreceği değer false ise şunu yazacak. Ne zaman false döndürüyordu addStudent? Kapasite dolu ise...
+
+212
+00:48:41,427 --> 00:49:02,467
+Veya o öğrenci eklenmişse false döndürüyor. Okey, kapasite 30. Zaten şu an boş. Ve bu öğrenci daha önceden eklenmediği için bu false döndürmeyecektir. Yani problem bir eklene yazdırılmayacak bakın bu çalıştırıldığında. Şurada da true döndürüyor. Bu öğrenciyi sisteme ekleyebilmişsem şu yazacak.
+
+213
+00:49:04,179 --> 00:49:20,800
+Sisteme ekleyemem. Niye? Çünkü bir öncesinde ekledim şurada, add student metodunu çağırarak. Burada ekleyemeyeceğim için bunun false'una düşeceğiz. False'u da olmadığı için. Yani ne ekrana problemdir ne de problem 2 yazılmamış olacak. Çalıştırdığımızda birazdan detaylı inceleriz.
+
+214
+00:49:21,012 --> 00:49:25,231
+Ardından bir öğrenci daha eklenmiş, bir öğrenci daha eklenmiş.
+
+215
+00:49:25,351 --> 00:49:33,252
+Tabii ki yani burada öğrencilerin kesin ekleneceğini bildiği için bu kodu yazan kişi bir iple bunu kontrol etmiyor.
+
+216
+00:49:33,692 --> 00:49:37,412
+Fakat yani ekleyememenizin çeşitli durumları söz konusu olabilir.
+
+217
+00:49:37,412 --> 00:49:49,012
+Yani mesela kapasitenin artımından dolayı ekleyememekle o öğrencinin hala hazırda listede olduğunu bildiğimiz için ekleyememek aynı şekilde.
+
+218
+00:49:49,012 --> 00:50:00,000
+Bu şekilde bir null değeri veya false değeri döndürüyor. Böyle olmaması da gerekebilir. Yani ekleyememek için 10 farklı sebep olabilir. Bu 10 farklı sebebin tamamen...
+
+219
+00:50:00,000 --> 00:50:25,699
+Tamamı tam olarak sebep neyse geri döndürülüp ona göre kişinin uyarılması gerekebilir. Yani bir öğrendiği sisteme eklemek istiyorsunuz, derse eklemek istiyorsunuz. Yani ön koşulumu sağlamamış olabilir dersin. Hala hazırda bu dersi alıp geçmiş olabilir. Tekrar ekleyen bir sürü farklı farklı sebebi olabilir. Bunların hepsini eğer ki bu şekilde tek bir sebeple toplarsanız.
+
+220
+00:50:26,063 --> 00:50:44,463
+Derseniz eklenemedi diye bir uyarı alırsınız. Uyarı verdirirsiniz siz programcı olarak. Ama her birisinin sebebi ayrı ayrı güzel bir şekilde açıklanırsa orada kullanıcı da güzel bir şekilde yönlendirilmiş olur. Yani ben şunu çalıştırdığımda her durumda et stüdyo metodu bu öğrenci eklemez.
+
+221
+00:50:45,108 --> 00:51:05,468
+Çünkü ekleyemeyeceği bir yapı var. Şurada şey yaptık ya, bakın, return fault dönebilmesinin çeşitli durumları söz konusu. O yüzden bunları ekstradan aslında her sırfında şöyle kontrol etmek şık ve güzel olur. Burada edilmemiş örnek olduğu için. Ardından bir öğrenci daha oluşturulmuş. Burada ne diyoruz?
+
+222
+00:51:05,807 --> 00:51:13,288
+Bu öğrenci sisteme eklenemediyse şu problemi ver. Yani sisteme ekleneceği için yine problem 3'te ekranı yazılacak.
+
+223
+00:51:13,728 --> 00:51:28,788
+Ardından bakın, find student objemiz söz konusu. Şu numaralı öğrenciyi bulacağız. Bu numaralı öğrenci var mı? 46 var. Süper. Bakın, bu numaralı öğrenciyi sisteme daha önce eklemişizdir.
+
+224
+00:51:29,152 --> 00:51:40,991
+Bu bize true değerini döndürecek. Pardon, true değil. Bir şey değeri döndürüyordu. Find student, aynen, student objesini döndürüyor. Yani bunun döndüreceği şey şu.
+
+225
+00:51:42,387 --> 00:51:59,167
+Obje, Fatih Objesi, evet. Farklıysa Fatih'ten bunu yaz. Hayır değil. Yani bu öğrenciyi bulacağız ve döndürüldü şey bu obje ile birebir aynı olacak. Problem 4 de yazılacak. Problem 3 de diğer x'in de yazılacak. Şimdiye kadar hiçbirisi yazılacak. Böylece testimiz bitmiş olacak.
+
+226
+00:51:59,167 --> 00:52:08,367
+Bakalım şunları şöyle bir uçrayım da. Buraya kadar bir çalıştıralım. Gördüğünüz gibi şu şeyleri de uçuralım. Şunu da uçrayım.
+
+227
+00:52:08,704 --> 00:52:31,484
+Kafamızı karıştırmasın yani sadece test olsun. End of test. Hiçbirisi yazmadı. Mesela şurası da farklı olsaydı, yazacaktı veya şurası aynı olsaydı bu test sonuçlarının problemlerinin de olduğunu, bakın problem 2'nin de problem 3'in de ceryan ettiğini görüyor olacaktı.
+
+228
+00:52:36,704 --> 00:53:03,004
+hale getirilmiş bir test. Bunun otomatize edilmiş çeşitli versiyonları vardı. Size testlerin nasıl gerçekleştirildiğini anlatmıştık. Bu otomatize edilen versiyonları kullanmanızı sizlere tavsiye ediyoruz. Bunu da çalıştırdığımızda hatırlarsanız JUnit çalışıyordu. Kaç tane test yazmışsınız metodu, o testlerin her birisinin hangisi kaldı, hangisi geçti diye size sonuçlar döndürülüyordu.
+
+229
+00:53:04,704 --> 00:53:16,524
+Bazıları geçebiliyordu. Ona göre çeşitli hatalar alabiliyordunuz. Bu tarz otomatize edilmiş, JUnit gibi bir yapıyı kullanarak testler yapmanızı sizlere tavsiye ederim tabii ki her dair.
+
+230
+00:53:16,864 --> 00:53:27,184
+Burada sizin akışın nasıl gerçekleşiyor, onu göresiniz diye bir örnek temelde bu. Bir tane daha öğrenci oluşturulmuş, bir tane daha öğrenci oluşturulmuş.
+
+231
+00:53:27,795 --> 00:53:55,735
+Şu uyarıyı bir silelim. Ne diyor? Add student nur. Şimdi tabii ki burada bir öğrenci oluşturulmuş. Öğrenci numarası bu. Burada da bir öğrenci var. Ekleyememe sebebimiz bu sefer bu öğrencinin var oluşu. Öğrenci numarasının var oluşu. Yani evet bakıldığında James Bond, STD o instance, STD objesi, hayat nur objesi. Bunlar ikisi birbirinden farklı obje. Hala daha obje olmaya devam.
+
+232
+00:53:55,795 --> 00:54:17,555
+Ama listeye ekleme kriterlerini barındırmıyorlar. Çünkü öğrenci numaraları birbirinin aynısı. Bu listeye ekleyemiyorum demek bu nur objesinin hala daha sistemde olmayacağı manasına gelmez. Var. Nur'u istediğin gibi kullanabilirsin ama sadece listeye ekleyemiyorsun. Bu önemli bir aşama.
+
+233
+00:54:23,795 --> 00:54:32,995
+Öğrenci dönerdi. O öğrencinin listesu dönerdi. Eşit midir Nura? Hayır. Nura ekleyemiyorum. Çünkü o yüzden problem 5 de ekrana yazmaması lazım.
+
+234
+00:54:32,995 --> 00:54:49,315
+Pekala bu öğrenci STD'den yani şundan, student'dan farklı mıdır? Hayır farklı değil mi? Bileki student'a eşittir. Şuna eşittir koyduğumuzda sadece problem 6'nın ceryan ettiğini görüyor olacaksınız.
+
+235
+00:54:51,731 --> 00:54:57,652
+Burada da işte öğrencilerin bilgilerini ekrana yazdırmışız.
+
+236
+00:54:59,612 --> 00:55:01,432
+Buraya kadar soru soran arkadaşımız var mı?
+
+237
+00:55:06,483 --> 00:55:10,583
+Her şey çok mükemmel bir şekilde anlaşıldığının bir göstergesi bu.
+
+238
+00:55:11,503 --> 00:55:18,423
+Şimdi derse geç başladık zaten. Bir de map'i anlatacağım. HashMap'leri anlatacağım. O yüzden derse devam edelim.
+
+239
+00:55:18,843 --> 00:55:23,523
+Belli bir noktaya kadar. Ondan sonra gerekirse uzarmaya devam ederse ara veririz.
+
+240
+00:55:24,244 --> 00:55:45,983
+Şimdi bir diğer collectionımız, jenerik sınıfımız, map tarafı. Map tarafında ise temel olay erişimin muhteşem hızlı bir şekilde gerçekleştirilebiliyor olması. Yine veri yapıları dersinde hash map yapısını görmüşsünüzdür.
+
+241
+00:55:52,244 --> 00:55:55,164
+Bulabilmek için oluşturulan bir yapı.
+
+242
+00:55:55,443 --> 00:55:56,884
+Hash map yapısı.
+
+243
+00:55:57,423 --> 00:56:08,884
+Burada da hash map olarak kullanabileceğiniz hem k anahtar değerleri, anahtarları hem de value'leri değerleri oluşturabileceğiniz bir yapı bize sağlanmış oluyor.
+
+244
+00:56:09,344 --> 00:56:11,324
+Veriye erişim muhteşem hızlıdır.
+
+245
+00:56:11,523 --> 00:56:12,564
+Sıfır komplekste.
+
+246
+00:56:13,043 --> 00:56:14,963
+Aradığım yerde buluyorum.
+
+247
+00:56:15,304 --> 00:56:16,064
+Hash'in olayı o.
+
+248
+00:56:16,064 --> 00:56:19,523
+Bir yerde size hashing denildiği zaman
+
+249
+00:56:20,244 --> 00:56:32,724
+Java olur, başka bir şey olur, hiç önemli değil. Hashing dedildiği zaman veriye hızlı erişim aklınıza gelmesi lazım. Tam olarak aradığım yerde o veriyi bulabileceği manasına geliyor.
+
+250
+00:56:34,900 --> 00:57:02,900
+O veriye bir anahtar atamam lazım. Buna Unique Identifier diyoruz. Unique Identifier olduğu için Unique olabileceğini tahmin ediyorsunuz. Yani benim bir değere atadığım Identifier başka hiçbir değere atanamaması lazım. İnsanların TC, kiminlik numarası, cep telefonu numaraları, mail adresleri gibi düşünebilirsiniz. Ve bir de tabii ki değerim olması lazım. Yani key ile beraber match edeceğim bir de.
+
+251
+00:57:02,900 --> 00:57:05,200
+değerim olması lazım.
+
+252
+00:57:05,380 --> 00:57:12,579
+Temelde map sınıfı key ve value olmak üzere iki tane alt collection içerisinde barındırıyor.
+
+253
+00:57:12,579 --> 00:57:23,440
+Bakın get, put, yani şeyde hatırlarsanız list tarafında ArrayList'te, Vektörlerde ve Linkli Listelerde add vardı.
+
+254
+00:57:23,740 --> 00:57:25,200
+Add metoduyla ekliyorduk.
+
+255
+00:57:25,280 --> 00:57:26,619
+Burada put var baka.
+
+256
+00:57:26,720 --> 00:57:26,920
+Put.
+
+257
+00:57:27,519 --> 00:57:30,900
+Get dediğimizde bir key verip
+
+258
+00:57:30,900 --> 00:57:33,700
+O key'e dair value'ayı üretebiliyoruz.
+
+259
+00:57:33,900 --> 00:57:37,340
+Put dediğimizde hem key'e hem value'ayı değeri veriyoruz.
+
+260
+00:57:37,840 --> 00:57:42,260
+Remove dediğimizde key'le beraber remove oluyor bakın bu interfeiste.
+
+261
+00:57:42,260 --> 00:57:43,940
+Yine
+
+262
+00:57:44,500 --> 00:58:00,940
+içerisindeki değerleri okumak için, tüm koleksiyonu çekmek için value's'i kullanıyoruz. Direkt bunu ArrayList'e otomatik olarak yapıyorduk. Bir ekstradan metoda ihtiyaç yoktu. Instance'ın adını söyleyerek alabiliyorduk. Burada value's diye seçmemiz gerekiyor.
+
+263
+00:58:00,940 --> 00:58:11,940
+For each loopu için özel olarak tasarlanmış bir şey. Boş budur, boyutu nedir, bunları barındırır mı diye de search edebiliyorum. Bakın hem k'ye göre hem de value'ye göre search.
+
+264
+00:58:12,500 --> 00:58:40,500
+gerçekleştirebileceğim bir yapı söz konusu. Temelde mapin arkasında hash map'ler ve hash table'lar var. Birisi senkronizasyonu sağlanıyor, birisi sağlanmıyor. Bunlardan önümüzdeki hafta bahsediyor olacağım. Paralel programlama, threadleri anlatırken senkron bir şekilde çalışıp çalışmaması neyi değiştiriyor? Önümüzdeki haftada anlatıyor olacağım bunları. Her ikisi de anlatıyor.
+
+265
+00:58:40,500 --> 00:58:45,599
+Aynı amaçla kullanılıyor. Hem HashMap'ler hem HashTable'lar aynı amaçla kullanılıyor.
+
+266
+00:58:45,599 --> 00:58:55,460
+Sadece HashTable thread kullandığımız yapıda veri saklama konusunda, erişim konusunda daha güvenli bir olanak sağlıyor.
+
+267
+00:58:55,760 --> 00:58:59,980
+Dediğim gibi önümüzdeki hafta anlatacağım bunu. HashMap için anlatacağım her şey HashTable için.
+
+268
+00:59:00,099 --> 00:59:03,820
+Bunun dışında HashTable için anlatacağım her şey HashMap için geçerli.
+
+269
+00:59:04,240 --> 00:59:08,480
+Burada tabi dikkatinizi çekmek isterim. Tasarlanırken öyle tasarlanmış HashTable.
+
+270
+00:59:08,500 --> 00:59:13,159
+Burada E harfi büyük harfle değil, küçük harfle yazılıyor.
+
+271
+00:59:13,460 --> 00:59:18,720
+Yine Java yurtilin altında tanımlanmış bir yapı.
+
+272
+00:59:19,760 --> 00:59:25,480
+Gelin yine bunun örneğini dilerseniz şeyden, Eclipse'den bakalım.
+
+273
+00:59:25,619 --> 00:59:32,059
+Burada kodları ayrık ayrık anlatmış ama ben her dair bunlara Eclipse'den bakmasını seviyorum.
+
+274
+00:59:32,059 --> 00:59:34,179
+Burada çalıştırıyoruz, bir şey alakıyoruz falan.
+
+275
+00:59:34,739 --> 00:59:44,279
+Şimdi, course'a baktığımızda değişen neler var, onlar üzerinden bir yorum. Student'da değişen bir şey yok, onu bir görün.
+
+276
+00:59:44,279 --> 00:59:55,199
+Spring metodu eklenmiş, yani onun bir önemi yok zaten değişiklik olarak. Bakıldığında burada linkli liste olan yapı bir HashMap'e dönüştürülmüş.
+
+277
+00:59:55,199 --> 01:00:00,000
+HashMap'te bir key değeri vardı, o integer olarak burada saklanacakmış.
+
+278
+01:00:00,000 --> 01:00:03,140
+Bir de student objesi saklanacak.
+
+279
+01:00:03,700 --> 01:00:08,300
+Bunu ArrayList'te tanımlarken sadece student diyorduk hatırlarsanız.
+
+280
+01:00:08,440 --> 01:00:10,140
+Şunu şöyle alayım.
+
+281
+01:00:10,519 --> 01:00:13,100
+Bakın burada tanımlarken sadece student diyorduk.
+
+282
+01:00:13,240 --> 01:00:17,680
+Burada ise her student'ın bir key değeri olacak.
+
+283
+01:00:18,200 --> 01:00:22,000
+O key'i yani anahtarı integer olarak tutacağımızı burada söylemişiz.
+
+284
+01:00:22,920 --> 01:00:28,000
+Yine oluşturduğum şey o attributum ismi student.
+
+285
+01:00:28,000 --> 01:00:44,740
+Yine constructor kısmında bu yine bir sınıf, construct edilmesi lazım. O da kendi etli büyütü olarak bulunan sınıfın içinde construct edilmesi münasip olduğu için burada construct etmiş durumdayız.
+
+286
+01:00:45,280 --> 01:00:50,580
+Getırlar var, bunları geçiyorum. Yine bakın boyutuna erişirken size.
+
+287
+01:00:51,476 --> 01:00:58,456
+Burada da size'dı. Size metodunu kullanarak ne kadar bir boyutta olduğunu öğrenebiliyoruz.
+
+288
+01:00:58,655 --> 01:01:02,655
+Find student dediğimizde öğrencinin numarasını veriyoruz.
+
+289
+01:01:02,876 --> 01:01:09,115
+Öğrencinin numarası o student'ın içerisinden de saklanıyor olabilir tabii ki.
+
+290
+01:01:09,376 --> 01:01:14,815
+Çünkü student'ın içerisinde de bakın şurada altta aynı zamanda numara bilgisi var.
+
+291
+01:01:14,815 --> 01:01:19,195
+Okey saklanıyor olabilir ama bunun numaranın yanında.
+
+292
+01:01:19,476 --> 01:01:29,476
+Sıra bir sürü şeyde saklanıyor olacaktır zaten. Öğrenci numarasını veriyoruz. Hiçbir ben bu bir dizidir. Dizide gezip bunu arayın bulayım yok.
+
+293
+01:01:29,807 --> 01:01:40,228
+Tek attığın noktada, sanki indisini biliyormuşum gibi, tek attığın noktada get metodunu kullanarak çekip alabiliyorum.
+
+294
+01:01:40,367 --> 01:01:45,527
+Öğrenci eklerken de yine karşılaştırma kriterlerini find student ile beraber kullanıyorum.
+
+295
+01:01:45,887 --> 01:01:48,128
+Bakın, bu sefer put diyorum.
+
+296
+01:01:48,568 --> 01:01:49,668
+Nasıl yerleştiriyorum?
+
+297
+01:01:49,967 --> 01:01:55,168
+Öğrencinin numarasını, ondan sonra objeyi koyuyorum.
+
+298
+01:01:55,668 --> 01:01:58,467
+Ondan sonra true değeri döndürülüyor.
+
+299
+01:01:58,788 --> 01:02:01,827
+Increase kapasitede hiçbir değişiklik yoktur.
+
+300
+01:02:01,827 --> 01:02:11,027
+Burada dikkatinizi çekmek istediğim bir diğer nokta bakın for each döngüsünde bir öncesinde instance'ın ismi değerlerini temsil ediyordu.
+
+301
+01:02:11,467 --> 01:02:17,407
+Burada onun value as metodunu çağırmanız, kullanmanız gerekiyor.
+
+302
+01:02:17,507 --> 01:02:20,668
+Değerlerinin temsilini elde edebilmek için.
+
+303
+01:02:21,047 --> 01:02:23,668
+Ondan sonra for each yapısında her bir...
+
+304
+01:02:23,668 --> 01:02:28,668
+student olarak alıp istediğiniz şekilde işleyebilirsiniz.
+
+305
+01:02:29,076 --> 01:02:49,875
+UCS tarafına burada gelecek olursak, ekleme kısmı artık bizden bakın soyutlanmış durumda. Bir önceki UCS tarafıyla aynı. Kullanılan metotlar aynı. Parametreler aynı. Geri döndürdüğü her şey aynı. Değişen şey, course'un içerisinde ceryan eden şeyler.
+
+306
+01:02:49,875 --> 01:02:56,875
+Yoksa adstudent dediğimde oraya bir öğrenci objesi veriyordum ve bana geriye true veya...
+
+307
+01:02:57,076 --> 01:03:02,635
+Of diye bir şey döndürüyordu. Yine aynısını döndürüyor. Veya işte ne bileyim.
+
+308
+01:03:03,443 --> 01:03:09,604
+Find Student dediğimde o öğrencinin objesini döndürüyordu. Yine aynısını döndürüyor.
+
+309
+01:03:09,604 --> 01:03:21,523
+Nerede barındığından bağımsız olarak siz hash map yapısı kullandığınızda erişim konusunda daha hızlı erişebileceğiniz bir yapı sağlanmış oluyor.
+
+310
+01:03:21,824 --> 01:03:30,923
+Ama tabii ki daha fazla ileri tutuyorsunuz. En azından bir tane çiğni daha fazla tutmuş oluyorsunuz. Bu da önemli hususlardan birisi.
+
+311
+01:03:31,635 --> 01:03:40,635
+Varsa listede, bu da önemli tabii ki, yoksa öyle bir ki size olumsuz bir şey dönüyor olacak.
+
+312
+01:03:40,635 --> 01:03:46,016
+Yani diyelim ki 10 elemanlı bir dizide bir tane integer sayıyı aramak istiyorsunuz.
+
+313
+01:03:46,115 --> 01:03:50,036
+Hadi ben binary search yaparım, hızlı bir şekilde bulurum diyorsunuz.
+
+314
+01:03:50,375 --> 01:03:54,955
+Amacı HashMap'in tek atında buluyor ya da bulamıyor.
+
+315
+01:03:55,096 --> 01:03:57,115
+Yani o da var, hep bulmasından bahsettim ya.
+
+316
+01:03:57,496 --> 01:03:59,556
+Bir de bulmamasını söyleyeyim, bulamaya da.
+
+317
+01:03:59,635 --> 01:04:10,155
+Tabii ki bilir. O zaman işte geriye ne döndürüyorsa, false'a dair onunla, null'a dair veya onunla uğraşıyor olacağız.
+
+318
+01:04:10,335 --> 01:04:18,455
+Yine aynı şekilde herhangi bir testten kalmadı ve yazdırdığı değerlerin aynısını ekrana yazdırmış durumda.
+
+319
+01:04:18,935 --> 01:04:25,655
+Bunların her birisini karşılaştırabileceğimiz şöyle bir şeyi de anlatmış olalım size yapıyı.
+
+320
+01:04:25,655 --> 01:04:27,576
+Evet. Neler?
+
+321
+01:04:27,635 --> 01:04:41,315
+Onlara bakalım isterseniz. Şimdi linkli listeden bahsetmiştik. Linkli listede ekleme ve silme hızlı. Linkleri sadece manifle ediyorsunuz. Bakın listeden implement edildiğini de burada görüyorsunuz.
+
+322
+01:04:41,652 --> 01:04:56,951
+Random Access'i linkli listenin yavaş, linkler üzerinden gerçekleşiyor çünkü bulması. Double linkli liste yapılabiliyor. Yani iterate etmek istediğimizde öncesine ve sonrasına iterate edebileceğimiz bir yapı tanımlanmış durumda.
+
+323
+01:04:57,204 --> 01:05:20,063
+ArrayList'e baktığımızda ise linkli listeye göre eklemesi silmesi daha yavaş. Çünkü linkli listede tekrar söylüyorum bir veri eklemek veya silmek istediğinde sadece iki tane linki güncelliyorsunuz. Buradaysa o veriyi nereye eklemek istediğinize göre bir yavaşlık söz konusu olabilir. Ama random access şu indise erişmek istiyorum, şuradaki bir yere erişmek istiyorum. Tabii ki ArrayList'e daha hızlı.
+
+324
+01:05:25,204 --> 01:05:31,804
+elementler, bizim elemanları olarak düşündüğümüzde ArrayList yapısıyla birebir aynı şekilde tutuluyor.
+
+325
+01:05:32,284 --> 01:05:40,543
+Sadece synchronized bir şekilde çalışıyor. Synchronized özel bir keyword. Önümüzdeki hafta threadleri anlatırken size bahsediyor olacağım buradan.
+
+326
+01:05:41,063 --> 01:05:44,663
+Thread safe bir şekilde çalışan ArrayList bu.
+
+327
+01:05:45,300 --> 01:06:04,300
+Özellikle multi-thread kullanacağınız durumda ArrayList değil vektör kullanmanızı bekleriz. Hep vektör kullanayım diye düşünüyorsanız eğer, eğer single-thread çalışıyorsanız yani thread mantığınız yoksa ArrayList'in de daha hızlı olduğunu burada ekstradan vurgulamış olduk.
+
+328
+01:06:04,600 --> 01:06:12,440
+Yine aynı şekilde Java YouTube'nin altında olan MAP'ten implement edilen HashTable ve HashMap söz konusu.
+
+329
+01:06:13,300 --> 01:06:20,160
+K-value üzerinden, indekslenmiş K-value üzerinden çok hızlı bir şekilde search gerçekleştirebiliyorum.
+
+330
+01:06:20,240 --> 01:06:25,560
+Çok hızlı derken tekrar söylüyorum, hash'i dediğimizde attığımızı vuruyoruz. Bu kadar hızlı.
+
+331
+01:06:26,120 --> 01:06:29,940
+Yani nerede, ne veriyi arayacağımı biliyorum ve ona tak diye erişiyorum.
+
+332
+01:06:31,160 --> 01:06:35,400
+Bir de hash table var. İkisi birbiriyle aynı yapıda kullanılıyor.
+
+333
+01:06:41,300 --> 01:07:03,420
+Keyword'ünden dolayı thread save. Bu kavramı önümüzdeki hafta derste anlatıyor olacağız. Tekrar söylüyorum. Ama single thread kullandığınızda daha yavaş olacağı için single thread çalışıyorsanız yani threadler falan kullanmıyorsanız önümüzdeki hafta anlatacağımız hash map yapısını eğer ki paralel programlama yapıyorsanız hash table yapısını kullanmanızı.
+
+334
+01:07:04,480 --> 01:07:17,180
+tavsiye ediyoruz. Böylece HashMap ve HashTable'ın da nasıl hashlediğini ve Java'da ne tarz metodları olur, neler yapabildiğini böylece anlatmış olduk.
+
+335
+01:07:17,280 --> 01:07:20,560
+Jenerik sınıfları ve collection'larımızı bitirmiş olduk.
+
+336
+01:07:20,851 --> 01:07:33,391
+Bugün ben burada dersi noktalandırıyor olacağım. Saat 3'ü geçiyor. Sizin bu noktada sorunuz varsa onları alabilirim. Yoksa dersi noktalandırıyor olacağız.
+
+337
+01:07:36,148 --> 01:08:03,468
+Bugünkü dersimize şimdiye kadar hiç olmadığı kadar az katılım oldu. Niye bilmiyorum. Lablardan biri veya öğrenci arkadaşlarımız dinliyorlar sonrasında. İnşallah bu kayıtları bir ümit ediyoruz. Ama yapılacak bir şey yok. Bundan sonra iki haftamız daha var. Onlardan gideceğiz ve Java'yı da iyice bitirmiş olacağız. Dinlediğiniz için teşekkür ederiz. Önümüzdeki hafta görüşmek üzere. Kendinize iyi bakın. Sağlıcakla kalın.

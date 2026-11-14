@@ -1,0 +1,3563 @@
+1
+00:01:19,635 --> 00:01:20,915
+Evet, merhaba arkadaşlar.
+
+2
+00:01:23,355 --> 00:01:27,555
+Bir başka mesleğe programlama dersiyle beraberiz.
+
+3
+00:01:28,555 --> 00:01:38,375
+Bugün dilerseniz öncelikle geçen hafta gördüklerimiz ve bu hafta göreceklerimizin bir kısmına örnekler yaparak başlayalım istiyorum.
+
+4
+00:01:38,896 --> 00:01:42,156
+Onun içinde kod yazıyor olacağım.
+
+5
+00:01:42,575 --> 00:01:44,676
+Farklı bir ekrandan.
+
+6
+00:01:45,176 --> 00:01:46,275
+Onu takip edersiniz.
+
+7
+00:01:46,936 --> 00:01:49,995
+Çünkü geçen hafta bir arkadaşımız da hani örnekler yapacak mıyız?
+
+8
+00:01:50,075 --> 00:01:52,055
+Daha güzel anlaşılıyor hocam bir şekilde demişti.
+
+9
+00:01:52,176 --> 00:01:52,615
+Yapacağız.
+
+10
+00:01:54,676 --> 00:01:56,495
+Onlarla başlayalım isterseniz.
+
+11
+00:01:56,495 --> 00:02:01,536
+Tabii sizin arada sorularınız olduğu durumda sorabilirsiniz bana.
+
+12
+00:02:02,555 --> 00:02:04,555
+Şimdi neyi paylaşmam lazım?
+
+13
+00:02:05,888 --> 00:02:13,568
+Şöyle paylaşırsam zamlanınca, eklipsi siz de görebilir hale geleceksiniz diye düşünüyorum.
+
+14
+00:02:14,288 --> 00:02:17,087
+Şunu da şöyle şuraya koysam nasıl olacak?
+
+15
+00:02:18,367 --> 00:02:22,147
+O zaman, [öğrenci] nerede acaba?
+
+16
+00:02:25,908 --> 00:02:27,688
+Durduralım, bir daha paylaşalım.
+
+17
+00:02:27,967 --> 00:02:29,228
+Şöyle geçsin, evet.
+
+18
+00:02:31,764 --> 00:02:34,164
+Doğru ekranı sizinle paylaşmaya çalışıyorum da.
+
+19
+00:02:36,364 --> 00:02:37,463
+Evet, tamam.
+
+20
+00:02:38,324 --> 00:02:38,664
+Şimdi,
+
+21
+00:02:39,304 --> 00:02:42,364
+IDE olarak Eclipse kullanıyor olacağım da.
+
+22
+00:02:43,324 --> 00:02:47,403
+Siz istediğiniz, hocamıza giden herhangi bir IDE'yi kullanabilirsiniz.
+
+23
+00:02:48,184 --> 00:02:54,504
+Temelde Java kodu yazacağımız için ve platform bağımsız çalıştığı için Java her platformda çalışıyor olacak.
+
+24
+00:02:54,996 --> 00:03:16,915
+Burada biraz İDE'nin işte o kısa yolları alan veya kullanım alışkanlıkları belki etkiliyor olacaktır. Onun haricinde ekstradan etki eden herhangi bir noktası yok. Bugün böyle bir proje oluşturup o projenin altında bir paket oluşturalım. İşte o paketin içine çeşitli sınıflar ekleyelim, sınıfları birbiriyle kullanalım.
+
+25
+00:03:17,264 --> 00:03:29,144
+Bazı anlatacağım özellikler var, collectionlar falan daha sonraki haftalarda. Fakat ön tanımlarının nasıl olduğumu bu hafta görelim. Ondan sonra onun lojiğini sizlere anlatmış oluruz.
+
+26
+00:03:29,683 --> 00:03:41,004
+Kafamızda güzel bir şekilde canlansın istiyorum açıkçası. O yüzden Java projesi oluşturacağım diye başlıyorum. Projeyi istediğiniz gibi isimlendirebilirsiniz.
+
+27
+00:03:44,723 --> 00:03:54,723
+Diyeyim. Mesela bugün 3. hafta 3 diye isimlendirmiş olayım. Bunun altına yazayım. Geçen yılından kalan bazı şeyler de var. Onları da görüyorsunuz.
+
+28
+00:03:54,723 --> 00:04:09,723
+Şimdi böyle bir proje oluşturduğumuz zaman source kodlarını src klasörünün içerisine koyuyoruz. Tabii projeniz belki son haftalara doğru anlatacağız. GUI de kullanıyor olabilir. Yani graphic user interface kullanıyor olabilir. Threadleri anlatacağız. Threadlerle yapılmış olabilir.
+
+29
+00:04:10,036 --> 00:04:24,016
+Hem packaging mantığına, burada dikkat etmek lazım, nasıl paket dediğimize, hem de işte farklı farklı görseller olabilir programınızda veya işte belki bazı dokümanların açılması gerekiyor olabilir.
+
+30
+00:04:24,216 --> 00:04:34,156
+Onları da ona göre yerleştirmeniz lazım veya ekstradan farklı şükraneler kullanmanız gerekebilir, third party library'ler kullanmanız gerekebilir, jar dosyaları şeklinde oluyor onlar.
+
+31
+00:04:34,156 --> 00:04:38,036
+Onları da böyle örnekler yaptıkça hafta hafta.
+
+32
+00:04:38,036 --> 00:04:39,716
+beraber görüyor olacağız.
+
+33
+00:04:40,396 --> 00:04:42,755
+Öncelikle, özür diliyorum.
+
+34
+00:04:43,184 --> 00:04:53,004
+Öncelikle bir package, en temelde ana bir package'ımızı oluşturarak başlayalım isterseniz bunun üzerinden gidiyor olacağız.
+
+35
+00:04:53,164 --> 00:04:56,724
+Mesela paketimizin ismi hafta 3 olmuş olsun.
+
+36
+00:04:58,064 --> 00:05:08,244
+İstediğiniz gibi isimlendirebilirsiniz ama o paketin içerisine koymak istediğiniz class'larınızın hepsini ortak bir amacı olması lazım.
+
+37
+00:05:08,244 --> 00:05:11,184
+Ve paketle o şekilde isimlendirmeniz tabii ki en iyi.
+
+38
+00:05:11,184 --> 00:05:39,184
+Güzel yöntem olacaktır. Onu da buradan söylemiş oldum. Ardından bir class oluşturacak şekilde başlayalım isterseniz. Benim bir örneğim var. Onun üzerinden gidiyor olacağız. Çeşitli böyle özellikler falan olacak. Onlara bakıyor olacağız. Bir örneği şöyle kısaca anlatmak gerekirse, kütüphanenin içerisinde bir kitaplık var.
+
+39
+00:05:39,184 --> 00:06:04,664
+Diyelim ki o kitaplığın içerisinde bulunan çeşitli raflar var. Rafların üzerinde dizilir çeşitli kitaplar söz konusu. Bunları ben objekt oryantı tarafta nasıl temsil edebilirim? Kitapların, rafların özellikleri nelerdir? Birbirlerini nasıl içerirler? Biraz onlardan bahsediyor olacağız. O yüzden ilk nesnem kitap oluyor, olacak.
+
+40
+00:06:05,120 --> 00:06:33,120
+Burada. Main method falan içermesini istediğimiz durumlarda çeşitli burada şeylere pik falan atıyor olacağız ama şu an herhangi bir şekilde öyle bir şey içersin istemiyorum. Sadece kitap isminde bir sınıfım olmuş olsun. Bir sınıf tanımlamak istiyorsak muhakkak class anahtar sözcüğünü kullanmamız gerekiyor. Aynı şekilde bu class otomatik olarak bakın public oluşturdu. Siz ihtiyacınıza...
+
+41
+00:06:33,120 --> 00:06:55,560
+Package, protected ve private olarak da tanımlayabiliyorsunuz. Hepsine dair örnekler görüyor olacağız. Package mantığının da nasıl çalıştığını burada hemen o kendisi yerleştirdiği için ifadeyi görebiliyorsunuz. Hangi package'in içerisindeyse bu, o package'in ne olduğunu yukarıya yazmamız gerekiyor.
+
+42
+00:06:55,891 --> 00:07:04,672
+Açıkçası çünkü package illa hani default da olsa bir package'in içerisinde olması bekleniyor.
+
+43
+00:07:04,672 --> 00:07:19,292
+Şimdi burada geçen haftadan hatırlayacaksanız UML diagramından her sınıfın birer attribute'u, birer dediğim yani bir attribute alanı, oraya attribute'lerini yazdığımız bir de metotları söz konusuydu.
+
+44
+00:07:19,951 --> 00:07:23,891
+Bugün bu kitap nesnesi üzerine önce kitap nesnesinin ne?
+
+45
+00:07:23,891 --> 00:07:50,232
+Ne tarz attribütleri olabilir? Onlara bakıyor olacağız. Ondan sonra metotlarını yazacağız. Setter, getter denilen metotlar var. Onları yazıyor olacağız. Bir kısmını ben elle yazacağım. Ondan sonra Java'nın sağladığı, özür dilerim, Eclipse'nin sağladığı çeşitli kısa yollar söz konusu. O kısa yolları kullanarak otomatik ben oluşturabilir miyim bunları diye bakıyor olacağız. Dediğim gibi arada sorusu olan arkadaşlarımız varsa sorabilirim.
+
+46
+00:07:52,244 --> 00:08:03,944
+Kitaba dair ne tarz özellikler olabilir? Mesela kitabın adı bir attribute olarak kullanılabilir. Kullanılması da lazım.
+
+47
+00:08:05,232 --> 00:08:19,032
+ismiyle diğerlerinden ayırıyor olacağız çünkü. Buna bir tip belirlememiz gerekiyor. Kitap ismi olduğu için tahmin edebileceğiniz üzere karakter dizisi şeklinde bir tip belirlememiz gerekiyor.
+
+48
+00:08:19,032 --> 00:08:27,032
+Bunun için geçen hafta da anlattığım üzere Java'da string dediğimiz bir tip söz konusu. Bu tip...
+
+49
+00:08:28,947 --> 00:08:46,888
+Karakter dizisi gibi çalışan bir kit, öyle söyleyelim, Katar veya Türkçesi o şekilde isimlendiriliyor, String'in karakter dizisi söz konusu. Bakın hemen üstüne geldiğimde, ekip de bana gösterdi, Java Lang'ın altında, geçen hafta bunu söylemiştik zaten, String sınıfı söz konusu.
+
+50
+00:08:56,947 --> 00:09:24,587
+belirleyebiliyoruz. Genellikle kullanım olarak attribute'ler private olarak tanımlanır. Attribüt'lere başka nesneler üzerinden erişilecekse getter ve satırlar kullanılır. O yüzden burada private olarak bunu isimlendiriyorum. Tabii ki sonuna bir noktalı virgül koymam beklenir ki o satırın bittiğini anlamlandırmış olayım. Şimdi şu dört numaralı satıra baktığımızda
+
+51
+00:09:24,947 --> 00:09:40,107
+Kitap adı isminde bir değişken tanımladık. Burada buna attribute diyoruz. Kitap sınıfının attribute'u. Tipi string olacak şekilde ve o ne denerliğinin gizlilik seviyesi de private olacak şekilde.
+
+52
+00:09:40,107 --> 00:09:48,107
+Bir diğeri yine mesela beraber yazıyor olalım. String işte yazarın adı.
+
+53
+00:09:48,916 --> 00:09:53,056
+Burada yine kitabın belirleyici niteliklerinden olabilir.
+
+54
+00:09:53,656 --> 00:09:59,416
+Yine bir diğeri onun ISBN numarası denilen bir numara var biliyorsunuzdur.
+
+55
+00:10:00,000 --> 00:10:05,219
+T.C. kimlik numarası gibi bir şey diyebiliriz bunun için.
+
+56
+00:10:06,459 --> 00:10:09,819
+Kitabı temel belirleyici özellikleri bunlar olmuş olsun.
+
+57
+00:10:10,000 --> 00:10:14,199
+Yani kitabın T.C. kimlik numarası, kitabın adı ve yazarın adı.
+
+58
+00:10:14,559 --> 00:10:16,679
+Ekstra farklı farklı şeyler ekleyebilirsiniz.
+
+59
+00:10:16,679 --> 00:10:27,679
+Sayfa sayısı, kitabın boyutları yani en boy cinsinden boyutları, kaçıncı hamura basılmış, karton kapak mı yoksa o...
+
+60
+00:10:28,000 --> 00:10:31,079
+Kaliteli kapaklardan, onların adının tam olarak ne olduğunu bilmiyorum.
+
+61
+00:10:31,699 --> 00:10:34,399
+Bir sürü kitaba dahil çeşitli özellikler olabilir.
+
+62
+00:10:34,919 --> 00:10:40,959
+Hatta ve hatta kitabın adı, yazar adı ve ISB'nin aynı olmak koşuluyla kapaklama siteli değişebilir.
+
+63
+00:10:41,344 --> 00:10:58,204
+Bu tarz şeyler var biliyorsunuzdur. Veya hangi yayın evi tarafından basıldı, kaçıncı baskı oldu. Birçok özelliği olabilir. İstediğiniz gibi yerleştirebilirsiniz ama biz örnek, hani nesnelerin nasıl kullanılacağına dair örnek olarak anlatmak istediğimiz için çok detaya girmiyorum ben.
+
+64
+00:10:59,584 --> 00:11:09,264
+ISBN'i de en son yazdım bitirdim. Şimdi ekstradan birkaç özellik daha ekleyeceğim. Çünkü az önce söylediğim gibi bu kitap bir rafın üzerinde.
+
+65
+00:11:09,344 --> 00:11:28,344
+yerleştirilmiş olacak. Raf dediğimiz şey ise bir kitaplığın içerisinde bulunan nesne oluyor olacak. Yani kitaplık en tane raftan oluşması durumu söz konusu olabilir burada. Ve rafın içerisinde de birden fazla kitap söz konusu olabilir. O yüzden...
+
+66
+00:11:28,916 --> 00:11:48,836
+Bakıldığında benim kitabımın içinde, kitap sınavımın içinde tutmak istediğim özelliklerden birisi hangi rafta bulunduğu bu kitabın ve aynı şekilde o raft içerisinde hangi sırada tutulduğu bilgisini de tutmak istiyorum.
+
+67
+00:11:48,836 --> 00:11:51,895
+Bunlar tabii ki değiştirilebilir çeşitli özellikler.
+
+68
+00:11:53,587 --> 00:11:55,987
+Bir raftan alıp diğer rafa yerleştirebilirsiniz.
+
+69
+00:11:56,127 --> 00:11:58,267
+Diğer raft içerisinde sırasını değiştirebilirsiniz.
+
+70
+00:11:58,727 --> 00:12:01,107
+Onların nasıl yapıldığına birazdan bakıyor olacağız.
+
+71
+00:12:01,107 --> 00:12:09,627
+Ama kitaplıkta şu an tam olarak nerede bu diye düşündüğüm anda bir kütüphane sistemini düşünün.
+
+72
+00:12:09,687 --> 00:12:21,587
+Bu bilgileri içerisinde barındırıyor olması hemen bu kitabı bir kütüphaneye gidip 30 günlüğüne almak isteyen, ödünç almak isteyen.
+
+73
+00:12:21,587 --> 00:12:28,927
+Yani o kişiye işte şu rafa gideceksin, şu sırada bulabileceksin diye söylenmesi adına güzel olacaktır.
+
+74
+00:12:29,707 --> 00:12:40,307
+Totalde bakıldığında kitap sınıfımın 3'ü string, 2'si integer olmak üzere 5 tane attribütü söz konusu.
+
+75
+00:12:40,563 --> 00:12:59,983
+Attribütlerin her birisinin gizlilik seviyesini private olarak burada ayarlamış bulunuyoruz. Yani farklı bir sınıf yazdığımızda, başka bir sınıf olsa birazdan yazacağız onları. O sınıf benim kitap sınıfımın içerisinde bulunan attribütlere doğrudan erişim izni yok.
+
+76
+00:13:00,371 --> 00:13:02,971
+Nasıl erişmesi gerekiyor?
+
+77
+00:13:03,931 --> 00:13:10,511
+Erişmesi için kullanacağımız metotlar var. Bunlara getter ve setter metotları diyoruz.
+
+78
+00:13:10,831 --> 00:13:16,211
+Mesela kitap abına dair bir getter yazayım, bir de setter yazayım.
+
+79
+00:13:16,331 --> 00:13:18,791
+Ondan sonra onların nasıl kullanıldığını anlatayım.
+
+80
+00:13:19,271 --> 00:13:20,971
+Genelde bunları böyle elle yazmıyoruz.
+
+81
+00:13:21,071 --> 00:13:23,671
+Automatic generate tool'larıyla üretiyoruz.
+
+82
+00:13:23,671 --> 00:13:24,671
+Ama ilk defa...
+
+83
+00:13:25,203 --> 00:13:53,124
+Yazdığımız için gelin beraber elle yazalım. Bunlara dışarıdan erişilebilmesi zaten temel şey kitabın bilgilerini okuyabilmek için. O yüzden tipi public olacak şekilde yazıyorum ben. Geri dönüş değerini yazıyoruz. Sanki bir fonksiyon tanımlarmış gibi bakın. Nasıl ki int, işte toplama, ardından parantez içinde integer diye bir fonksiyon prototipi belirliyoruz. Burada da aynı şekilde.
+
+84
+00:13:53,203 --> 00:13:57,264
+o fonksiyonun karşılığı olan metodun prototipini belirliyoruz.
+
+85
+00:13:57,264 --> 00:14:00,624
+Geri dönüş tipi string olacak şekilde.
+
+86
+00:14:01,024 --> 00:14:04,343
+Genellikle getir metotları, getir olmasının özelliği olur.
+
+87
+00:14:04,903 --> 00:14:10,524
+Get anahtar sözcüğünden sonra o attribütünüzün adı yazılır.
+
+88
+00:14:10,864 --> 00:14:14,703
+Direkt hatta bunu mesela kopyalayarak şuraya yapıştırayım.
+
+89
+00:14:15,203 --> 00:14:18,343
+Bu şekilde bir getir metodu tanımlamış olursunuz.
+
+90
+00:14:18,563 --> 00:14:21,203
+Lakin hatırlarsanız size...
+
+91
+00:14:21,203 --> 00:14:49,183
+İsimlendirme ile ilgili çeşitli teamillerden bahsetmiştim. Bir kelime yazdıktan sonra bir sonraki kelime büyük harfle başlaması gerekir diye. O yüzden şurada arada bulunan K harfini büyütüyorum. Büyütmesem de lojik olarak aynı şekilde sonuç verecektir. Ama bu anlamlandırmak için bir teamil olduğundan bahsetmiştim. Bir metot olduğunu belirlemek adına köşeli parantre.
+
+92
+00:14:49,203 --> 00:15:16,163
+Normal parantezleri yerleştiriyorum. İçerisine herhangi bir veri almaz getirme kodları. Bazıları alır. Yani o getirme kodunu istediğimiz gibi şekillendirebiliriz tabii ki. O yüzden öyle çok kompleks iş yapan sadece o verinin değerinin okunmasının haricinde başka başka işlerde yaptıracaksınız. Onu başka şekilde isimlendirmeniz daha mantıklı olacaktır. Genellikle getirme kodları herhangi bir şekilde.
+
+93
+00:15:16,851 --> 00:15:18,292
+E...
+
+94
+00:15:18,303 --> 00:15:22,543
+şey yapılmaz, Nezondorona parametre içerisine almaz.
+
+95
+00:15:23,364 --> 00:15:28,124
+Fonksiyon bloğunu bu şekilde Nezondorona başlatmış olalım.
+
+96
+00:15:28,463 --> 00:15:30,783
+Şimdi zaten bize uyarı veriyor, görüyorsunuz.
+
+97
+00:15:30,903 --> 00:15:36,723
+Diyor ki bu fonksiyondan sen geriye dönüş değeri olarak bir string döndüreceğini söyledin.
+
+98
+00:15:37,063 --> 00:15:39,484
+Ama hani burada string, mintring hiçbir şey yok.
+
+99
+00:15:39,624 --> 00:15:42,203
+Yani return anahtar sözcüğünü bekliyor.
+
+100
+00:15:42,203 --> 00:15:45,524
+Burada return anahtar sözcüğüyle beraber
+
+101
+00:15:46,303 --> 00:15:53,303
+Bulunan üye alanlarında hangisini döndürmek istiyorsanız rojik gereği onu bunun içerisine yerleştiriyorsunuz.
+
+102
+00:15:54,196 --> 00:16:22,196
+Şimdi tekrardan olayı bir yorumluyor olalım. Birazdan başka bir sınıf yazacağım. Mesela rough diye bir sınıf yazacağım. Ne bileyim kitaplık diye bir sınıf yazacağım. Dedim ki private olan attribute'lerine erişemiyor. Fakat ben rough'um. Rough'un içerisinde kitaplar var. Ben rough'sa bu kitapların ne olduğunu da bilmem lazım. Onlara bir şekilde erişmem lazım. O yüzden getter metodunu kullanıyoruz demişti. Getter metodu get anahtar sözcüğüyle başlayıp attribute'un ismini aldım.
+
+103
+00:16:22,196 --> 00:16:43,416
+Bu metod, get kitap adı metodu, kitap sınıfının bir metodu olduğu için doğrudan kitap sınıfının attribütleri private olsa bile aynı sınıf içerisinde olduğumuz için direkt erişebiliyoruz ona.
+
+104
+00:16:43,583 --> 00:16:45,503
+Yani normalde şey düşünebilirsiniz.
+
+105
+00:16:45,644 --> 00:16:48,363
+Hocam yani kitap adı dedik de burada yukarıdakine erişebiliyor.
+
+106
+00:16:48,503 --> 00:16:49,603
+Spop nasıl oluyor?
+
+107
+00:16:50,063 --> 00:16:51,603
+Evet, erişebiliyoruz.
+
+108
+00:16:51,644 --> 00:16:54,383
+Aynı sınıf içerisinde olduğumuzdan ötürü.
+
+109
+00:16:54,383 --> 00:16:57,803
+Yani bunu söylemen belki çok doğru değil.
+
+110
+00:16:57,923 --> 00:17:01,343
+Farklı bir kavram ama global değişkenmiş gibi düşünebilirsiniz.
+
+111
+00:17:01,803 --> 00:17:10,804
+Yani aratta ürettiğiniz tüm metotların içerisinde o nesnenin, o sınıfın özür diliyorum, attribütlerini kullanabilirsiniz.
+
+112
+00:17:11,584 --> 00:17:20,524
+Yani get kitap adı diye bir metod çağırdığımda bana o kitabın adı neyse onu döndürüyor olacak.
+
+113
+00:17:21,003 --> 00:17:23,463
+Aynısının bir de setre söz konusu.
+
+114
+00:17:23,903 --> 00:17:29,524
+Diyelim ki biz bir kitap mesnesini üretmeye çalışıyoruz kitap sınıfından.
+
+115
+00:17:30,067 --> 00:17:40,447
+Kitabın adı B olsun. Çok önemli değil. Bu B kitabının adı derken yani mesnesinin adı B olmuş olsun. Kitabın bir adı var.
+
+116
+00:17:41,299 --> 00:18:03,019
+Mesela o kitabın adını biz burada set etmemiz gerekiyor. Nasıl burada get edebiliyoruz, okuyabiliyoruz? Set etmek de yazmak demek. O metodu da tanımlıyor olalım. Public, genellikle setler metotları geriye herhangi bir şey döndürmez. Void o yüzden olduğunu belirtmemiz gerekiyor.
+
+117
+00:18:09,299 --> 00:18:20,019
+Adıyla, metodun adı attribute ismiyle devam ediyor. Ama bunun içerisine set etmek istediğimiz o parametreyi vermemiz lazım.
+
+118
+00:18:20,480 --> 00:18:28,080
+Diyelim ki kitap ismi diyelim, ismi diye bir değişken burada aldık.
+
+119
+00:18:28,420 --> 00:18:35,420
+Yapmak istediğimiz şey şu, ben bu metodu çağırdım. İçine kitap ismi diye, sonuçta bu parametrik bir şey biliyorsunuz.
+
+120
+00:18:37,299 --> 00:18:56,880
+kobun içerisinde kullanılacak bir şey. O yüzden kitap ismini ise ben kitabın adının içerisine atamam lazım. Yazalım. Kitabın adı. Hop yazamadım. Kitap. Biraz böyle hani kısa yolları kullanayım. Belki hızlı yazalım diye şey yaptım. Kitap ismi.
+
+121
+00:19:05,107 --> 00:19:33,107
+Bakalım. Kitabın adını belirlemeye çalışıyoruz. O oluşturduğumuz nesnenin içerisine gömmeye çalışıyoruz. Kitap ismi diye bir parametre aldık. Yani bu fonksiyonu çağırdığımızda içine string olarak bir değer vereceğiz. Onu da geçici olarak kitap ismi diye bir parametrenin içerisinde tutuyorum ben. Bu kitap ismini daha sonra bu nesnenin kitap adı...
+
+122
+00:19:33,107 --> 00:19:58,927
+attribute'unu içerisine yazıyorum. Böylece o nesnenin kitap adı attribute'unu set etmiş oluyorum. Oradan geliyor bu set'i. Güzel anlayasınız diye parametre, aldığımız parametreyi kitap ismi olarak isimlendirdim ve daha sonra kitaba atadım. Fakat genellikle böyle görmezsiniz. Gördüğünüz şey şu olur. Aldığı parametre de yine kitap adı olacak şekilde.
+
+123
+00:20:00,660 --> 00:20:13,180
+Yani direkt otomatik oluşturursanız, kitap adı attribütünü set etmek için genellikle parametre olarak da orada ayarlanılacak şey kitap adı olur.
+
+124
+00:20:13,560 --> 00:20:16,200
+Yani şimdi hangi kitap adını hangi kitap adını atıyorum?
+
+125
+00:20:16,200 --> 00:20:28,200
+En azından görsel olarak bir karmaşa olduğu için biz kullandığımız bu metodun içerisinde bulunduğu sınıfın attribütlerine referans vermek için...
+
+126
+00:20:28,660 --> 00:20:30,980
+Biz anahtar sözcüğünü kullanıyoruz.
+
+127
+00:20:31,155 --> 00:20:46,935
+Yani bakın iki tane kitap adı var aslında. Başına diz gelen şu demek bu sınıfın etribütü olan kitap adı bu. İkisini birbirinden ayırmak için kullandığımız temel sözcük.
+
+128
+00:20:46,935 --> 00:20:58,816
+Bizi farklı farklı belki zamanlarda kullanıyor olacağız ama kullanım alanlarından birisi bu. Onu söyleyebiliriz. Böyle olduğunda hem işte
+
+129
+00:20:59,155 --> 00:21:26,716
+Kitap adı için hem getter hem de setter metodunu yazmış olduk. Yani default olarak beklenen şey o nesnenin hem getterlarının hem setterlarının yazılmasıdır. Fakat bazen constructor'ın özellikleri gereği setter'ını hiç yazmaya ihtiyaç duymayabilirsiniz. Veya işte private tanımlamışsınızdır, public tanımlamışsınızdır, direkt attribute üzerinden erişiyorsunuzdur.
+
+130
+00:21:27,155 --> 00:21:30,016
+Öyle olduğu durumda Getter'ını tanımlamamıza gerek olmayabilir.
+
+131
+00:21:30,395 --> 00:21:36,956
+Ama biz öğrendiğimiz için olayı hem Setter'ını hem Getter'ını bu şekilde yazmış olduk.
+
+132
+00:21:37,756 --> 00:21:39,556
+Eklips de zaten beni uyarıyor.
+
+133
+00:21:40,660 --> 00:21:44,559
+Kitap adı da az önce altı sarıyla çiziliydi. Fark etmişsinizdir.
+
+134
+00:21:44,900 --> 00:21:48,599
+Yani böyle bir attribute oluşturduğumda ama hiç programın içinde kullanmadım.
+
+135
+00:21:48,740 --> 00:21:53,660
+Yani boşu boşuna bunu oluşturma. İstersen slayim diye düzeltiyor bunu.
+
+136
+00:21:54,099 --> 00:21:56,640
+Bakın bu dördün içinde aynı durum söz konusu.
+
+137
+00:21:56,640 --> 00:22:05,619
+Ben şimdi bu diğer dördün içinde otomatik olarak Gtr ve Ctr'ların oluşturulmasını istiyorum.
+
+138
+00:22:08,660 --> 00:22:14,500
+konuşuyor olursak, işte refactor alanına girip, ben de bulabilirsem,
+
+139
+00:22:18,500 --> 00:22:22,940
+burada mı? Source alanına girip, özür diliyorum, peki kimse.
+
+140
+00:22:23,476 --> 00:22:36,236
+Şimdi burada çeşitli nedenuruna modüller mi diyelim, fonksiyonlar mı diyelim o tarz şeyler var. Bunları kullanarak bu sınıfın getir ve setter'larını otomatik olarak oluşturabiliyorsunuz.
+
+141
+00:22:37,276 --> 00:22:45,375
+Generate, getir setter dediğimizde bakın hangilerinin getir ve setter'larını oluşturayım diye burada gördüğünüz attribute'leri buraya sıralamış.
+
+142
+00:22:45,375 --> 00:22:51,256
+Kitap adını görmüyorsunuz çünkü hala hazırda ben onu yazdım. O yüzden kitap adı burada.
+
+143
+00:22:51,476 --> 00:23:18,895
+Yok. İşte seçtiğiniz buradaki attribütlerin getir ve setörlerini otomatik olarak oluşturuyor olacak. Hatta şu okatıkladığınızda yani bunun sadece setörini veya getirini oluştur diye alt kırılımlarda yapabilirsiniz. Benim istediğim şey burada tamamının hem getirinin hem setörinin public bir erişim şekliyle, dizlilik şekliyle oluşturulması.
+
+144
+00:23:19,476 --> 00:23:37,915
+O yüzden generate butonuna tıkladım bakın. Benim yazdığım şu iki getter ve setter'den sonra kendisi diğer attribütler için getter ve setter'ları yazmış oldu. Getter ve setter konsepti bu. Burada sorusu olan arkadaşımız varsa onları cevaplayabiliriz.
+
+145
+00:23:41,428 --> 00:23:42,628
+Yok, çok güzel.
+
+146
+00:23:43,188 --> 00:24:11,188
+İnşallah anlaşıldığı için yoktu. Yani anlaşılmayan yerlerde tekrar söylüyorum bunu çok vurguladım yine söylüyorum sorun lütfen. Önemli çünkü. Şimdi okey getir ve satırları bu şekilde oluşturduk. Yine geçen hafta bahsettiğimiz konulardan birisi hatırlarsanız constructor kavramıydı. Bir sınıftan instance üretmek için bir obje üretmek için onun constructorını kullanmamız gerekiyor.
+
+147
+00:24:11,188 --> 00:24:23,788
+Doğal olarak o sınıfın içinde bu constructor metodu tanımlamamız gerekiyor. Burada farklı farklı constructor tipleri tanımlayabiliyoruz. İsterseniz ona bakalım.
+
+148
+00:24:24,248 --> 00:24:31,327
+Constructor metodun özelliği neydi? Sınıfın ismiyle aynı isimde olan metoda biz constructor.
+
+149
+00:24:31,827 --> 00:24:54,107
+metodu diyorduk. O da temelde bir metot aslında bakıldığında şu şekilde tanımlanıyor. Yine public olsun ki dışarıdan bu construct edilebilsin, private olması biraz garip olurdu. Kitap, direkt ismini aldım. Bakın, tekrar söyleyelim, sınıfın ismi ile
+
+150
+00:24:56,339 --> 00:25:11,819
+Ne denir ona? O constructor metodun ismi aynı olmak zorunda. İçerisine parametre alabilir. Onun örneklerini vereceğiz. Şurada gördüğünüz attribute'ları set edebileceğiniz şekilde buraya parametre koyabilirsiniz.
+
+151
+00:25:12,319 --> 00:25:23,440
+Doğal olarak o set işlemlerini de constructor bloğunun içerisinde yapmanız lazım. Eğer hiç parametre almıyorsa, set etmiyorsanız burada gördüğünüz constructor'a default constructor.
+
+152
+00:25:23,763 --> 00:25:49,003
+deniliyor. Bu bir hocam metot mudur? İçinde hiçbir şey yapmadık. Evet, metottur. Constructor metodu olduğu için kitap sınıfından bu metot çağrıldığı anda bir instance üretilir. İçi boştur. Hiçbir attribute set edilmemiş durumdadır. Ama işte o setter'ları kullanarak daha sonra dilersek set edebiliriz.
+
+153
+00:25:49,940 --> 00:25:59,839
+birden fazla constructor yazabileceğimizden bahsetmiştik. Default olanı bu. Bakın bir tane daha yazalım. Kitap.
+
+154
+00:26:01,619 --> 00:26:29,619
+İsmi olmuş olsun, kitap diye, constructorımız olmuş olsun. Kızıyor tabii bana, ya bu zaten var, aynısını buraya yazdım, olmaz böyle diye kızdığını, kırmızı altını çizmesinden anladım. Ben muhakkak bir kitabın construct edilebilmesi için bu constructorla, şurada gördüğümüz üç değer kitabın adı, yazarın adı ve ISBN'inin girilmesini istediğim senaryoyu düşünüyorum.
+
+155
+00:26:29,619 --> 00:26:40,799
+düşünüyor olayım. O yüzden onları buraya teker teker parametre olarak vereceğim. Biraz işimiz hızlansın diye sizlerin de yüksek müsaadesiyle şurada.
+
+156
+00:26:42,420 --> 00:26:47,500
+Kopyalayıp yapıştırıyor olayım. Böylece prosesimiz hızlanacaktır.
+
+157
+00:26:48,099 --> 00:26:57,920
+Gördüğünüz gibi kitap yine isminde buradaki üç tane metodu, attributu içerisine parametre olarak alan bir constructorimiz var.
+
+158
+00:26:57,920 --> 00:27:03,879
+Bakın, geçen hafta bahsetmiştim. İki tane metot düşünün aynı isimli.
+
+159
+00:27:04,379 --> 00:27:06,779
+Farklı parametrelere sahip olan.
+
+160
+00:27:07,251 --> 00:27:35,192
+Aynı isimde constructorlarımız olabiliyor. Buradan bunu almıyorsunuz. Aldığımız bu kitap adı değerini bizim bu kitap adı olan yere atayacağız tabii ki. İkisi birbiriyle biz en azından ayırt edebilmemiz için bizim sınıfın attribütü olanı this anahtar sözcüğüyle isimlendiriyoruz. Aynı şey yazar adı için de geçerli. Şöyle yapalım. Aynı şey.
+
+161
+00:27:35,251 --> 00:27:39,892
+ISPN değeri için de geçerli durumda.
+
+162
+00:27:40,307 --> 00:28:06,307
+Şimdi iki constructor arasındaki farka bakıyor olalım. Temelde her ikisini de çağırdığımız durumda kitap sınıfından bir instance üretiliyor, bir nesne üretiliyor. Eğer ki default constructor şunu kullanırsak herhangi bir attribute ayarlanmış durumda değil. Bunu da kullanabiliriz.
+
+163
+00:28:08,307 --> 00:28:26,067
+beraber onları ayarlayabiliriz. Kitap için, yani bu sınıf için şu constructor'ı kullandığımızda ise şunu söylemek istiyoruz. Kitap adını, yazar adını ve ISBN'i gir. Ben onları set edeyim. Öyle bir nesne oluşturayım.
+
+164
+00:28:26,900 --> 00:28:36,840
+Raphno ve sıra hala daha bakın set edilmedi. Onları setterlarıyla set edebiliriz. Tamam mı? Böyle bir örnekte.
+
+165
+00:28:37,540 --> 00:28:51,600
+Veya tüm nasıl söyleyelim attributeları parametre olarak alan bir constructor da olabilir. Onu elle yazmayayım. Yine source'dan bunu üretebiliyoruz. Bakın.
+
+166
+00:28:54,900 --> 00:29:03,440
+Constructor'ın içerisinde onları seçiyorsunuz ve Generate dediğimizde sizin adınıza bunu üretmiş oluyor.
+
+167
+00:29:04,380 --> 00:29:11,980
+Şu ISBN'deki iyi falan küçük yazmış. Kısaltma olduğu için ben büyük yazıyorum. Siz anlıyorsunuzdur.
+
+168
+00:29:12,336 --> 00:29:22,796
+Yani normalde dedik ya tüm isimler öncelikle küçük harfle başlar ama o bir kısaltma. O yüzden ben orada düzeltmiş olayım.
+
+169
+00:29:23,536 --> 00:29:32,675
+Süper kısmını da anlatıyor olacağım. Biz eklerken direkt süperle beraber ekledi. Bu anahtar sözcük bir keyword.
+
+170
+00:29:33,336 --> 00:29:38,615
+Farklı farklı metodlar için, attributelar için, sınıflar için, contractorlar için kullandığımız durumlar var.
+
+171
+00:29:40,336 --> 00:30:00,000
+Training konseptinde buna ihtiyaç yok. Dediğim gibi anlattıktan sonra daha güzel oturacak. O yüzden süperi kullanmıyorum şu an. Daha çok süper metodunun içerisine parametreler veriyoruz. O kalıbında gelen şeyleri de kullanıyor gibi. Onları şu an dediğim gibi bu ders kapsamında...
+
+172
+00:30:00,000 --> 00:30:05,000
+Daha sonra üzerinde detaylı bir şekilde durup onun da örneklerini yazıyor olacağız.
+
+173
+00:30:05,139 --> 00:30:09,500
+Bakın, kitap sınıfının 3 farklı constructorı var.
+
+174
+00:30:09,879 --> 00:30:13,980
+İstediğiniz birisini kullanarak bu sınıfı construct edebilirsiniz.
+
+175
+00:30:14,460 --> 00:30:18,940
+Mesela diyelim ki tek bir constructor olsa ve o da şu olsaydı.
+
+176
+00:30:18,940 --> 00:30:19,859
+Bu ne demek?
+
+177
+00:30:20,319 --> 00:30:26,460
+Sen kitap sınıfını construct etmek istiyorsan kitaba dair tüm attribütlerini bilmen lazım.
+
+178
+00:30:26,659 --> 00:30:27,940
+Ancak o şekilde yeni bir...
+
+179
+00:30:28,000 --> 00:30:46,559
+kitap, construct edebilirsin. Veya şu olduğunda kitaba dair hiçbir şey bilmesen bile bir sürü kitap, construct edebilirsin. Kitaba dair bilgilerini öğrendiğinde onları set edersin. Manasında kullanılıyor bu constructor kısmı.
+
+180
+00:30:46,804 --> 00:31:14,263
+Tekrar söyleyelim, şu an bu sınıfta neler gördük? Bir attribute'ler nasıl tanımlanıyor? Onları gördük. Attribüt'lere yazma ve okuma manasında erişim yapmak istediğimiz durumda bunun setter ve getter'ları nasıl tanımlanıyor? Onu gördük. Aynı şekilde bu sınıftan bir obje üretmek istediğimiz durumda construct'ları nasıl tanımlanıyor? Onu görmüş olduk. Buraya kadar sorusu olan var mı?
+
+181
+00:31:16,819 --> 00:31:27,440
+Yok, çok güzel. Yani her şey mükemmel bir şekilde anlaşılıyor demektir bu. İnsanın hoşuna gidiyor tabii ki. Şimdi kitap sınıfım bu kadar.
+
+182
+00:31:27,923 --> 00:31:55,224
+Bitirdim. Hocam ya bunu çalıştırabasıp çalıştırabilir miyiz? Hayır. Yani geçen yine hafta bahsetmiştim hatırlarsanız. Çalıştırılacak nokta main metottu. Burada gördüğümüz kitap sınıfı içerisinde main metot barındırmıyor. Yani bir projenin içerisinde bir tane main metot barındıran sınıf olması lazım. O sınıfın main metodundan başlayacak. Buradaki barındırmadığı için doğrudan çalıştırılabilir bir şey değil.
+
+183
+00:31:55,599 --> 00:31:58,719
+İsterseniz şunları da düzelteyim, daha güzel anlaşılsın.
+
+184
+00:32:00,839 --> 00:32:01,639
+Şurası.
+
+185
+00:32:02,639 --> 00:32:06,019
+Bunda niye disk yok diye düşünmeyin.
+
+186
+00:32:06,519 --> 00:32:10,659
+Ona da size özel disk koyayım.
+
+187
+00:32:12,399 --> 00:32:16,939
+Kendisi oluşturduğu için o da küçük art main kuranını kullandı.
+
+188
+00:32:16,939 --> 00:32:19,699
+Şimdi kitap okey, bir diğeri rough.
+
+189
+00:32:20,564 --> 00:32:48,564
+sınıfım olmuş olsun. Kitabı çünkü rafın içerisine yerleştiriyor olacağım. Raf sınıfı oluşturduk. Yine aynı paketin içinde bakın kitap da var. Hafta 3 paketinin içerisinde. Raf da var. Yine hafta 3 paketinin içerisinde. Bunlar üzerinden gidiyor olacağım. Yani bu hafta böyle örnek kısmını biraz detaylı anlatacağım arkadaşlar. Yani tahmin ediyorsunuz sanki.
+
+190
+00:32:48,564 --> 00:33:12,764
+Belki hiç programlama bilmiyorsunuz gibi anlatıyorum. Kafanızda güzel otursun diye. Bundan sonraki haftalarda örnek yaparken bir tip böyle kopyala yapıştır veya işte hızlı yazma şeklinde olabilir. O yüzden bu hafta güzel dinlerseniz ben de rahat rahat en temel seviyede anlatmaya çalışacağım. Bundan sonra konumuz çok fazla çünkü Java'da hızlı gitmek durumunda olacağız.
+
+191
+00:33:13,152 --> 00:33:25,092
+Şimdi, raf. Raf'ı raf yapan şey nedir? Öncelikle tabii ki bunu düşünmemiz lazım. Raf'ı raf yapan şey neyse onu bir atribüt olarak burada tanımlamamız lazım.
+
+192
+00:33:26,064 --> 00:33:47,864
+Bizim örneğimizde burada rafın olabilmesi için kitapların onun üzerine yerleştirilmesi lazım. Yani her raf bir kitap barındıran nesne olmasını istiyoruz. O yüzden rafın aslında en temel etribütü içerisinde hangi kitapları barındırdığı olacak.
+
+193
+00:33:47,864 --> 00:33:54,004
+Bir dizi şeklinde düşünebilirsiniz bunu. Sİ'de hatırlayın köşeli parantezlerle.
+
+194
+00:33:54,064 --> 00:34:00,423
+eriştiğimiz bir dizi tanımlayıp sıfırdan eninci indisine kadar içerisine değerler yükleyebiliyoruz.
+
+195
+00:34:00,423 --> 00:34:01,423
+Burada...
+
+196
+00:34:01,971 --> 00:34:29,971
+Böyle çeşitli collection artıcı yani o kavramları örnebilir ama çeşitli ön tanımlı diziler kullanabiliyoruz. Bunlardan birisi liste. Ama bunun bu biraz eskide artık onun yerine kullanılan ArrayList diye bir kavramımız var. Şöyle yazıyorum. ArrayList kavramı. Hemen görüyoruz Java Util'in altında.
+
+197
+00:34:29,972 --> 00:34:57,372
+Aslında temelde bir dizi gibi fakat biz dizinin indislerine erişirken işte iyisi, jisini köşeli parantez içinde yazıyorduk. Burada çeşitli kendisinin metotları var. Onların da avantajlarından faydalanmak için böyle bir listeyi kullanayım. Temelde bellek organizasyonu bizim dizilerle çok benzer. Java Util'in altında olduğu için bunu kullanabilmem için yukarıya import.
+
+198
+00:34:57,972 --> 00:35:12,212
+Java.util yazmam lazım. Şöyle ki, import yazamadım. Java.util.arraylist.
+
+199
+00:35:12,659 --> 00:35:40,599
+Bunu yazdıktan sonra artık şunu kullanabilir hale geliyor olacağım. Öyle söyleyeyim. Ya da, ya da bakın bu kendisi bizim adımızda da zannederken onları oluşturacaktır. Hani siz bilmiyorsanız eğer nasıl olacak bakın tıkladığınızda otomatik olarak o şeyi kendisi oluşturuyor. Çünkü ArrayList evet hani ben yıllardır kullanıyorum Java YouTube'nin altında biliyorum ama siz hangi paketin altında olduğunu bilmiyorsanız idelerin.
+
+200
+00:35:40,659 --> 00:35:43,539
+Hani avantajlarından da ise size önerecektir.
+
+201
+00:35:43,859 --> 00:35:44,659
+Şimdi bugün...
+
+202
+00:35:46,612 --> 00:36:00,112
+Dizi şeklinde bir şey dedik. Liste diyelim buna. Tamam bu taraftaki hali liste olmuş olsun bu. İçerisine yazdığımız şurada bir değer olacak. O da bu listenin içerisinde ne tutmak istiyoruz.
+
+203
+00:36:00,112 --> 00:36:14,592
+Mesela int yazarsak bu şu demek. Bu listenin her bir elemanı integer. Bir sayıdır. 3, 5, 7, 9. İşte chart yazarsak her birisi chart'dır. Veya işte.
+
+204
+00:36:14,612 --> 00:36:25,092
+string yazdığımız durumda bu listenin her bir elemanı string olacak şekilde organize edilsin istiyoruz diyoruz.
+
+205
+00:36:25,352 --> 00:36:29,791
+Ama biz rafın içerisinde bulunan her bir eleman ne olacaktı?
+
+206
+00:36:29,872 --> 00:36:32,072
+Az önce bahsettim. Kitap olacaktı.
+
+207
+00:36:32,372 --> 00:36:35,912
+O yüzden burayı kitap olarak isimlendiriyorum.
+
+208
+00:36:35,912 --> 00:36:38,912
+Yani kendi kullandığımız sınıfı da...
+
+209
+00:36:39,168 --> 00:37:07,168
+Burada ArrayList formatında tutabiliyorum. O bize sağlanan çok güzel bir avantajlardan birisi. Şimdi şurada gördüğünüz tanım bir sanki değişken tanım. Yani şöyle bir şey var. Integer demişim sanki veya String demişim sanki. Dediğim şey ne? İçerisindeki her bir elemanı kitap olan bir liste oluşturalım. Doğal olarak bu tip olduğu için nasıl integer dedikten sonra...
+
+210
+00:37:07,168 --> 00:37:23,008
+A diyoruz. String dedikten sonra mesela isim diyoruz. Buradan sonra da bu değişkenin ismini söylememiz lazım. Kitaplar diye bir değişken üretmiş olduk.
+
+211
+00:37:23,248 --> 00:37:40,068
+Yani bir önceki örnekle bakalım. Attribütları, kitap adı, yazar adı, ISBN'di. Bu örnekle baktığımızda ise işte kitaplar, hangi bura, hangi kitapları barındırıyorsun o var ve tipi de ArrayList olacak şekilde.
+
+212
+00:37:40,068 --> 00:37:46,988
+Bunu da tabii private, public olarak istediğiniz gibi nasıl kullanıma elverişliyse o şekilde.
+
+213
+00:37:48,916 --> 00:37:57,596
+Gizlilik seviyesinde ayarlayabilirsiniz. Default değerleri de kullanabilirsiniz. Onları da zaman içerisinde görüyor olacağız.
+
+214
+00:37:57,596 --> 00:38:12,576
+Şimdi bakın kitaplar diye bir bunun içerisinde artık attribute'umuz söz konusu. Normalde beklediğimiz şey ne? Kitaplar nesnesinin setrının ve getrının oluşturulması.
+
+215
+00:38:16,916 --> 00:38:28,076
+Bu attribute, combine bir attribute olduğu için bir ArrayList tipinde içerisinde kitap barındıran bir şey olduğu için bunun ilklendirilmesi lazım.
+
+216
+00:38:28,076 --> 00:38:38,996
+Yani bu da ArrayList bir sınıf. Öyle söyleyelim. ArrayList bir sınıf. Şuradan anlıyorsunuzdur zaten sınıf olduğunu. Java Util Package'inin altında bir sınıf.
+
+217
+00:38:39,088 --> 00:38:50,848
+Bu sınıf içerisinde kitap olan bir sürü sınıf barındırabiliyor. Öyle bir sınıf. Bunu direkt setlerle set edebileceğimiz bir yapı söz konusu.
+
+218
+00:38:51,476 --> 00:39:08,536
+Olmuyor. Nasıl hissedeceğimizi de burada görelim isterseniz. Öncelikle bunun beraber gelip constructorını yazıyor olalım. Constructor kabaca şöyle bir şeydi. Default constructor'dan bahsediyorum.
+
+219
+00:39:18,452 --> 00:39:38,632
+nesnesini oluşturacağız. Oradan bir instance oluşturmamız lazım. Geçen haftadan hatırlarsanız, constructor'ını, ArrayList bir sınıfsa, onun da constructor'ı vardır. Tahmin edin, ArrayList sınıfının constructor'ının adı nedir? ArrayList sınıfının adından oluyordu constructor. Nasıl ki sınıf burada rough.
+
+220
+00:39:38,996 --> 00:39:59,996
+Burada da onun constructorını raf olarak isimlendiriyorsak ArrayList bir sınıfsa bu sınıfı öncelikle kullanmadan önce construct etmemiz lazım. O sınıfın constructor metodunun adı nedir? Kendi adıdır, sınıfın adıdır. O yüzden raf constructorını...
+
+221
+00:40:00,000 --> 00:40:11,879
+Bu sınıfın altında bu sınıfın constructorını öncelikle bir oluşturuyorum. Nasıl oluşturuyorum? Nil ArrayList. Bu.
+
+222
+00:40:13,108 --> 00:40:20,988
+Şuraya da dist dersek, daha güzel anlaşılsın, sizin için gerek yok ama olsun dist diyelim, bunun olduğu anlaşılsın.
+
+223
+00:40:21,368 --> 00:40:27,408
+Şimdi bakın, new anahtar sözcüğünü kullanıyorduk. Birazdan ben rafı construct edeceğim, göreceksiniz.
+
+224
+00:40:27,788 --> 00:40:33,428
+Burada gördüğünüz kitabı construct edeceğim, göreceksiniz. Orada da new anahtar sözcüğünü kullanıyor olacağız.
+
+225
+00:40:33,888 --> 00:40:41,108
+Burada gördüğünüz ArrayDist'i construct etmek istediğimiz durumda da yine new anahtar sözcüğünü kullanıyoruz.
+
+226
+00:40:41,108 --> 00:40:45,828
+Anahtar sözcüğünü kullanmış olduk. Constructor metodu bu şekilde çağrılıyor.
+
+227
+00:40:46,308 --> 00:40:53,508
+Şurada içerisinde daha önce şurada tanımlarken kitap yazdığım için genellikle burada tanım yapılırken ekstradan kitap değeri yazılmaz.
+
+228
+00:40:53,508 --> 00:41:00,208
+Bu bir yine default constructormış. İçerisinde ekstradan herhangi bir şekilde parametre alınıyor.
+
+229
+00:41:00,708 --> 00:41:08,448
+Alan farklı constructorları da varmış. Onu görüyoruz. 1, 2, 3, 4 farklı çeşit yine constructorı söz konusu.
+
+230
+00:41:09,108 --> 00:41:17,548
+Kitap, constructor'ımız nasıl 3 farklı çeşitli? Burada 4 farklı çekip constructor yazılabiliyor. O da IDE'nin bana gösterdiği avantajlardan birisi.
+
+231
+00:41:17,948 --> 00:41:29,068
+CTRL'de Space'e bastığında neleri kullanılıyor? Aslında şu ikisi var temelde. Bu ikisini constructor olarak kullandığımı, kullanabileceğimi görmüş oluyoruz böylece.
+
+232
+00:41:37,108 --> 00:41:45,988
+Objem vardı. Bu objeyi kullanabilmek için muhakkak construct etmem lazım. Nerede construct edeceğim? Bir tane raf.
+
+233
+00:41:46,228 --> 00:41:52,048
+Construct edildiğimde onun içerisine kitap ekleyebileceğim listenin de construct edilmesini istedim.
+
+234
+00:41:52,368 --> 00:41:56,868
+Bakın, constructor'da yaptığımız şey biraz değişmiş oldu.
+
+235
+00:41:57,427 --> 00:42:00,927
+Ama tabii ki yine bu bir constructor'dır.
+
+236
+00:42:01,248 --> 00:42:04,307
+Pekala, artık kitaplar denilen bir attributum var.
+
+237
+00:42:04,447 --> 00:42:10,248
+Bu bir ArrayList tipinde içerisine kitap barındıran nesne olduğunu söylemiştik.
+
+238
+00:42:10,327 --> 00:42:11,807
+Buna nasıl ekleme yapacağız?
+
+239
+00:42:12,188 --> 00:42:17,788
+Yani bu rap'ın içerisine kitap ekleme yapmak istiyorum veya işte kitabı silmek istiyorum.
+
+240
+00:42:18,148 --> 00:42:20,427
+Nasıl yapacağım? Ona bakalım isterseniz.
+
+241
+00:42:20,427 --> 00:42:21,188
+Public.
+
+242
+00:42:21,664 --> 00:42:49,484
+Public. Öncelikle kitap ekleme yapalım. Boyit. Geriye herhangi bir de değer döndürmek zorunda değiliz. Döndüre de biliriz. Ondan da bahsedeceğim. Kitap ekle diye bir metodumuz olsun. İlk harfi küçük ile başlar genellikle. Ondan da zaten bahsetmiştik. Kitap ekle metodumuz var. Bu metodun içerisine alacak şey nedir? Kitap tipinde bir nesne vereceğiz.
+
+243
+00:42:49,664 --> 00:42:58,584
+Daha sonra o bizim şurada construct ettiğimiz kitaplar objesinin içerisine eklenecek.
+
+244
+00:42:58,844 --> 00:43:06,864
+Şimdi kitapların tipi ArrayList. ArrayList'in çeşitli metotları var. Noktaya bastığım anda tak diye geldi bakın.
+
+245
+00:43:07,484 --> 00:43:15,664
+Eklemek istediğimiz şey ne? At anahtar sözcüğünü kullanarak, metodunu kullanarak yani burada bir ekleme yapabiliyoruz.
+
+246
+00:43:15,664 --> 00:43:17,664
+Direkt benim kitabımı da zarar yapabiliriz.
+
+247
+00:43:17,664 --> 00:43:19,604
+Zaten alıp içerisine koydu.
+
+248
+00:43:19,944 --> 00:43:28,324
+Şu gördüğünüz ifadeyi kullanarak kitaplar objesinin içerisine bir tane kitap eklemiş olduk.
+
+249
+00:43:28,704 --> 00:43:30,344
+Farklı farklı versiyonları var.
+
+250
+00:43:30,664 --> 00:43:32,284
+Şuradan görebiliyorsunuz onu.
+
+251
+00:43:33,876 --> 00:43:43,576
+edin. Mesela hangi listenin hangi indisine bunu ekleyeyim diye de söyleyebileceğiniz bir halide varmış.
+
+252
+00:43:43,576 --> 00:43:57,436
+Veya edin haricinde listeyi tamamen temizleyebileceğiniz, şunu barındırıyor mudur içerisinde veya bu liste boş mudur, onun üzerinde bir dönecek iterator oluşturayım veya sileyim.
+
+253
+00:43:57,536 --> 00:44:01,876
+Boyutu nedir bu listenin? Bu listeyi bir şekilde verdiğim kurallara göre sıralayayım.
+
+254
+00:44:01,876 --> 00:44:13,876
+Bu listenin tüm elemanlarını string olarak dökeyim gibi bir sürü yani farklı farklı metot tanımlanmış durumda bu ArrayList'in. ArrayList'in kullanmamızın amacı da bu. Artık nesne yönelimli taraf da...
+
+255
+00:44:14,708 --> 00:44:42,487
+Klasik bizim C'de gördüğümüz gibi bir dizi yapısı kullanayım. Onu da kullanacağız. Onu da örnek yapayım. O da kullanılabiliyor. Görün istiyorum. Onu da kullanacağım. Bir sonraki sınıfta da onu yapalım. Ama burada hani hala hazırda olan nesneleri ben kullanabileyim tanımlanmış. Temel amacımız o zaten. Reusability. Burada bir kitap eklemek istiyorum. Onu da bu şekilde ekledim. Ben Rav nesnesinin kitap ekle.
+
+256
+00:44:42,708 --> 00:44:53,367
+metodunu çağırdığında, rough nesnesinin attribute'i olan kitaplar ArrayList'inin içerisine parametre olarak verdiğim kitap eklenmiş olacak.
+
+257
+00:44:54,208 --> 00:44:57,608
+Tabii şundan da bahsedeyim, bahsetmedim.
+
+258
+00:44:58,427 --> 00:45:04,668
+Bakın, et metodunu şurada yorumlamak gerekirse içerisine kitap nesnesi alıyor.
+
+259
+00:45:05,168 --> 00:45:07,528
+Dışarıya da boolean bir değer döndü.
+
+260
+00:45:07,987 --> 00:45:22,307
+Yani ekleyebildim, ekleyemedim. Çeşitli durumlar ses planısı olup ekleyememe ihtimali olabilir. Öyle olduğu durumda false döndürecektir. Siz de mesela sonucu şöyle yapabilirsiniz. Mesela buraya bir kitap.
+
+261
+00:45:22,708 --> 00:45:50,708
+eklediniz. Geriye bir Boolean değer döndürüyor ya, işte buradaki ifadeyi geri dönüş değerini Boolean olarak set edip return, anahtar sözcüğünü kullandığınızda bu sefer bakış şöyle olacaktır. Yani şunu yorumlayalım. Ne demek istiyoruz burada? Ben kitap ekleme tutunu çağırdım. Bunun içine bir kitap tipinde, KTF isminde işte bir nesne vermiş.
+
+262
+00:45:50,708 --> 00:46:07,128
+Geriye de Boolean tipinde bir değer döndürmek. Boolean'a hala daha ne olduğunu bilmeyen arkadaşlarımız varsa True veya False diye iki tane tipimiz. Bir veya Sıfır diye iki tane döndürebileceği değer olan bir veri tipidir Boolean.
+
+263
+00:46:07,807 --> 00:46:15,708
+Kitap döndürmek gereği sonucu ekleyip ekleyemeyen sonucu döndürmek istiyoruz. Şurada gördüğümüz kısım.
+
+264
+00:46:16,371 --> 00:46:29,251
+Kitabı ekleme kısmı. Bu da geriye bir sonuç döndürüyor. Sonucu da Bully'in. O sonucu döndürüyoruz buradan. Yani şu ifade biraz karmaşık geliyorsa güzel anlamanız cinsinden şunu yapıyorum bakın.
+
+265
+00:46:29,251 --> 00:46:39,311
+Bully'in ne bileyim tmt eşittir kitaplar.et return tmt.
+
+266
+00:46:46,867 --> 00:47:08,167
+Aaa tamam çok önemli değil. Return yapıyoruz bunlara gelinmiyor falan diyor. Yani ilk return yaptıktan sonra bunlar çalıştırmıyor falan diyor da ben size sadece anlatmak için kullanıyorum zaten. Şurada gördüğünüz tek satırda yaptığım işlem ne? Şurada gördüğünüz iki satırda yaptığım işlem aynı. Bu parametrenin sonucunu Boolean tipinde bir tmp'ye atadım sonra onu geri döndürdüm.
+
+267
+00:47:08,307 --> 00:47:24,807
+O olayı tek satırda yazalım, hızlandırılmış yazalım diye bu şekilde yazmış olduğunda. Ama hani şeyimizden şaşmayalım, ilk baş kafa karışımına da çok büyük sebepler vermemek adına kitap eklemek istiyoruz. Evet, kitabı ekledim başarılı bir şekilde.
+
+268
+00:47:24,807 --> 00:47:35,807
+Bir diğeri, kitabı silmek istiyorum. Publik. Mesela burada silip silemediğime dair bir değer döndürmek isteyebilirim.
+
+269
+00:47:36,307 --> 00:47:46,508
+Eğer Bully'in olmuş olsun bu kitabı. Çünkü mesela bir kitabı raftan silmek istiyoruz ama rafta o kitap yoktur. O zaman silemeyiz.
+
+270
+00:47:46,880 --> 00:48:07,320
+Yani o sebeple buraya bullying yine koyalım. Geri döndürmesi çok normal. Kitap sil. Hangi kitabı sileceksek parametre olarak onu söylüyor olacağız. Kitap sil isminde bir metot içerisine kitabı verdik.
+
+271
+00:48:07,559 --> 00:48:14,720
+Kitabı silmek için kullanacağımız şey şöyle bir şey olacak. Farklı farklı yapılar olabilir tabii.
+
+272
+00:48:14,880 --> 00:48:23,400
+Bakın, kitaplar nesnesinin içerisinde remove metodu var. Gelin buna bir bakalım. Remove metodu.
+
+273
+00:48:23,891 --> 00:48:47,331
+Remove metodunun farklı farklı, şunlar remove all, onları geçiyorum. Yani birden fazla nesne verip bunların hepsini simliye edebiliyoruz ama remove, iki tane temelde remove metodu var. Bir, index verebiliyoruz. Yani o kitabın ArrayList'te kaçıncı sırada olduğunu söyleyebiliyoruz. İki, kitabın direkt kendisini verebiliyoruz.
+
+274
+00:48:47,603 --> 00:48:59,163
+Tamam mı? Yani kitabın direkt kendisine verdiğimiz senaryoda bu şekilde silme işlemini gerçekleştirebiliriz.
+
+275
+00:48:59,483 --> 00:49:04,203
+Yani şurada nasıl et diyoruz, burada da bu şekilde silebiliriz.
+
+276
+00:49:04,643 --> 00:49:10,784
+Mesela az önce söylediğim gibi aynı metoddan, aynı isimde metoddan bir tane daha yapabilirim.
+
+277
+00:49:10,784 --> 00:49:13,784
+Yapalım bakın, şu metodun aynısını yapmak istiyorum.
+
+278
+00:49:14,244 --> 00:49:15,603
+Fakat içerisine aldım.
+
+279
+00:49:15,603 --> 00:49:30,603
+değer bir indeks olmuş olsun. Yani sıra numarası olmuş olsun. Burada kullanacağım artık remove metodu da şurada gördüğünüz indeks değeri. Ben kaçıncı sırada o kitabın...
+
+280
+00:49:36,596 --> 00:50:00,000
+Bu da, bak, çok güzel, çok güzel. Diyor ki, hani onları da görmüş olalım burada nasıl olduğunu. Eğer ki ben, ben, remove object kullanırsam geriye boolean değer döndürüyor. Sildim, silemedim diye döndürüyor. Eğer ki index tipinde, yani ArrayList'teki 7. sıradaki...
+
+281
+00:50:00,000 --> 00:50:28,000
+Kitabı sil dediğinde hangi kitabı sildiyse kitap tipinde bir şey döndürüyor. O yüzden bana az önce kızmış. Şurayı Boolean değil de kitap diye değiştir. Geri dönüş değeri burada kitap olması lazım diyor. Kitap sil, kitap sil. İstersek içerisine kitapla verebiliriz ya da kitabın kaçıncı sınadı olduğunu da verebiliriz. Böylece RAF sınıfının da tanımlamak istedikleri.
+
+282
+00:50:28,000 --> 00:50:38,500
+özelliklerini tanımladım. Bir tane attribütü var, bir tane constructor var. Gördüğünüz gibi ikisi silme, birisi ekleme olmalıdır. Üç tane de metodu söz konusu.
+
+283
+00:50:39,980 --> 00:50:42,099
+Buraya kadar sorusu olan arkadaşımız var mı?
+
+284
+00:50:42,940 --> 00:50:44,059
+Ben bir şey sorabilir miyim?
+
+285
+00:50:44,440 --> 00:50:45,139
+Tabii ki, buyurun.
+
+286
+00:50:45,684 --> 00:50:56,844
+Bu son dediğinizde eğer objeyi verirsek kitap tipinde bir şey döndürmüş oluyor ya bunu tam olarak nasıl kullanıyoruz? Ben orayı tam anlamadım. Kitap tipinde bir şey döndürmesine işe yarıyor.
+
+287
+00:50:56,844 --> 00:51:10,844
+Şimdi şöyle, sen diyorsun ki 7. sıradaki kitabı sil. Böyle olduğu mesela çeşitli durumlarda şu olabilir. Sen rap'ın içerisindeki kitapların isimlerini bilmiyorsundur.
+
+288
+00:51:11,603 --> 00:51:27,884
+Ama yedinci sırayı boşaltmak istiyorsun. Diyelim ki oraya başka bir şey koyacaksın. Yedinci sıradaki kitabı oradan sildiğinde orası boşalacak. Ama bu kitap hop gidecek. Yani komple bilgilerini kaybetmiş olacağız sildiğimizde.
+
+289
+00:51:28,192 --> 00:51:46,351
+Eğer ki sildikten sonra bana kitap tipinde bir şey döndürürse geri dönüş değeri o sildiği kitabın nesne bilgileri oluyor olacak. Ben yeni bir sınıf, farklı bir yeni bir obje kitap sınıfından farklı bir rafta üretip o kitabı oraya koyabilirim.
+
+290
+00:51:46,351 --> 00:51:55,931
+Yani aslında temelde insan hayatında bunu nasıl yaparız diye düşünürsek rafın içerisindeki 7. sıradaki kitabı oradan alıp oraya başka bir şey koymak istiyorum diyelim ki.
+
+291
+00:51:56,192 --> 00:52:24,031
+7. sırada kitabı çektim. Ne olduğunu bilmiyorum. Bakın ismini hiçbir şekilde bilmiyorum. Ay yazarının ismini, ISBN'in hiçbir şeyi bilmiyorum. Sadece 7. sırada onu biliyorum. Çektim. Yeni kitabı oraya yerleştirdim. Elimde artık ne var? O çektiğim kitap var. Onu da götürüp başka bir yere koymak isteyebilirsem diye burada kitap tipinde geri dönmüş değeri var. Siz bunu kullanmaya da bilirsiniz. Ya oradan o kitabı çekip yatıp atıp yok etmiş de olabilirsiniz.
+
+292
+00:52:24,192 --> 00:52:34,871
+Ama ola da kullanmak isterseniz diye adamlar index ArrayList'e index tipinde silme yaparsanız o objeyi de size geri döndürüyor.
+
+293
+00:52:36,192 --> 00:52:37,811
+Veriyi kaybetmemiş oluyorum yani.
+
+294
+00:52:37,911 --> 00:52:39,132
+Veriyi kaybetmemiş oluyorsun.
+
+295
+00:52:39,431 --> 00:52:40,411
+Ben teşekkür ederim.
+
+296
+00:52:40,511 --> 00:52:41,931
+Başka soru soran arkadaşımız var mı?
+
+297
+00:52:43,031 --> 00:52:46,132
+Hocam ben ArrayList'in boyutu hakkında bir şey soracaktım.
+
+298
+00:52:46,351 --> 00:52:49,291
+Şimdi bizim burada bir boyut sınırımız var mı hocam?
+
+299
+00:52:49,291 --> 00:52:49,731
+Dinamik.
+
+300
+00:52:50,032 --> 00:53:18,012
+Tamam, sanal makinenin izin verdiği kadar diyeceğim ama sanal makinede bunu denetliyordur. Sanal makinenin izin verdiği kadar. Lakin şu durum da söz konusu. Bakın, benim ArrayListim şu boyutu geçmesin dediğimizde şurada initial capacity, başlangıçta ne kadar olacağını da belirtebileceğiniz şekilde bir ArrayList'i tanımlayabiliyorsunuz. Onu da görüyor olacağız. 17 olsun. Uzatmak istiyorsan, büyütmek istiyorsan sonradan büyütsün.
+
+301
+00:53:18,032 --> 00:53:21,352
+Ama başlangıçta 17 kapasiteli bir ArrayList olsun da diyebilirsiniz.
+
+302
+00:53:22,412 --> 00:53:27,092
+Parametre vermediğiniz durumda dinamik olarak kendisi arka tarafta sanal mutluluğunu zannediyor.
+
+303
+00:53:29,192 --> 00:53:31,312
+Evet, başka soru soran arkadaşımız var mı?
+
+304
+00:53:32,972 --> 00:53:34,012
+Bir ara verelim.
+
+305
+00:53:34,432 --> 00:53:35,532
+Hocam ben bir şey sorabilir miyim?
+
+306
+00:53:35,852 --> 00:53:36,172
+Buyurun.
+
+307
+00:53:36,752 --> 00:53:40,592
+Bir önceki kitap classında hani birden fazla constructor tamlamıştık ya.
+
+308
+00:53:40,943 --> 00:53:51,344
+Bu mesela örnek verebilir misin? Hangi constructor? Şunu burada kullanırız mesela. İlkinde raf ve sıra yok, raf ve sıra yok. Hani ne farkı var? Konstruktör'ın hangi alanda kullanırız?
+
+309
+00:53:52,443 --> 00:54:02,923
+Yani şimdi bir kitabın var. Diyelim ki sana şöyle bir şey yaptılar. Kütüphanesin 300 tane koli kitap gönderdiler.
+
+310
+00:54:03,344 --> 00:54:26,344
+Bu kitapları şeye yerleştir, raflara yerleştir dediler. Senin ilk baş yapacağın şey ne? 300 tane kolye açıp hangi kitapların var? Onları bulmak. Teker teker açık masanın üstüne koyuyorsun veya tekrar başka bir kolyeye yerleştiriyorsun, yere koyuyorsun ne bileyim. O kitapları sisteme giriyorsun. Daha henüz raflara yerleştirmedim. Kolileri açıp bakalım hangi kitaplar gelmiş? İşte bunu kullanıyorsun.
+
+311
+00:54:27,223 --> 00:54:28,503
+Hocam böyle bir durumda.
+
+312
+00:54:28,980 --> 00:54:56,260
+Ondan sonra onun rafa yerleştirdiğin anda raf numarasını set ediyorsun. Doğal olarak sıraya da yerleştirmişsindir. Sıra numarasını set ediyorsun. Ama eğer ki şöyle çalışacaksam, kolinin içinden ben bir kitabı çekeyim. Yeni geldi koliler. Kolinin içinden bir kitabı çekeyim. Çektiğim gibi onun isim bilgileriyle beraber gidelim. Benim kütüphanemde o ilgili rafa onu yerleştireyim. Tek bir kitabı çekim. Gidip bunu yapayım. O zaman...
+
+313
+00:54:56,724 --> 00:55:01,163
+Çok özür diliyorum. Bir şeyler silmiş oluyorum silmişim. O zaman bunu kullanman lazım.
+
+314
+00:55:01,715 --> 00:55:25,155
+Veya sana dediler ki, ya kardeşim biz sana 300 koli kitap göndereceğiz. Bu koliler içinde toplamda her birisinde 100 tane, 30 bin tane kitap var. Bunları hemen senin sisteme girmeni istiyoruz. Dediklerinde sana kitaplar gelmemiş göndereceğiz diyorlar. Onların objelerini oluşturup daha sonradan içerilerini doldurabilirsin.
+
+315
+00:55:27,219 --> 00:55:28,579
+Tamamdır hocam, teşekkür ederim.
+
+316
+00:55:28,900 --> 00:55:30,480
+Ben teşekkür ederim. Yazdan örnek yapacağız.
+
+317
+00:55:30,579 --> 00:55:31,440
+Hocam, bir şey sorabilir miyim?
+
+318
+00:55:31,960 --> 00:55:32,539
+Tabii, buyurun.
+
+319
+00:55:32,799 --> 00:55:33,440
+Sesim geliyor değil mi?
+
+320
+00:55:34,079 --> 00:55:34,679
+Evet, geliyor.
+
+321
+00:55:35,219 --> 00:55:41,199
+Bu constructorlardaki parametrelerin böyle hani bu durumu yaşamamak için default bir değeri verebiliyor muyuz?
+
+322
+00:55:41,199 --> 00:55:51,759
+Mesela intrafuna eşittir işte ya da başlangıç bir değer yani eğer constructorı tanımlarken, çağırırken daha doğrusu, değer vermediysik parametreyi, onun bir başlangıç değerini verebilir miyiz o fonksiyonu yazarken?
+
+323
+00:55:52,779 --> 00:55:53,380
+Verebilirsiniz.
+
+324
+00:55:53,907 --> 00:56:21,807
+Öncelikle bu durumu yaşamamak derken sanki bu durum kötü bir durummuş gibi söylediniz. Kötü bir durum değil. Öncelikle onu söyleyelim burada. Yani farklı farklı kullanım esneklikleri sağlıyor bize. Sizin demek istediğiniz şey şu. Ben default olarak bir constructor tanımladığım durumda onun sıra numarası hiç parametre vermesem bile tüm kitapların sıra numarası başlangıçta bir olsun.
+
+325
+00:56:21,907 --> 00:56:25,807
+demek istiyorsun anladığım kadarıyla sorunlar. Yanlış anlıyorsam bir zaten. Bunu yazabilirsiniz.
+
+326
+00:56:26,088 --> 00:56:37,588
+Ben onu fonksiyonun tanımında şey, o parantez kısmı var ya mesela en sonunda intrafno ya da int sıra yazdığımız constructor'ın o parametreyi verdiğimiz kısımda tanımlayabilir miyiz mesela?
+
+327
+00:56:38,568 --> 00:56:45,148
+Geçen hafta söyledim. Böyle tanımlamak istiyorsanız onu statik anahtar sözcüğüyle tanımlamamız lazım. Onlara da örnekler yapacağız.
+
+328
+00:56:45,583 --> 00:56:52,603
+Tamam mı? Eğer ki her kitap için o özellik aynıysa o zaman statik olması lazım yani.
+
+329
+00:56:53,443 --> 00:56:54,283
+Anladım hocam, sağ olun.
+
+330
+00:56:55,443 --> 00:57:01,983
+Bunu siliyorum şimdilik. Yani bunu sadece örnek olarak göstermek istemiştim. Başka sorusu olan var mı?
+
+331
+00:57:04,788 --> 00:57:25,168
+Tamam, bir ara verelim. Çeyrek geçe, çeyrek geçe burada olalım. Yani şu örnekleri bitireyim, sonra ders kısmına devam edeceğim. Güzel anlaşılsın istiyorum çünkü. Yetişmezse önümüzdeki hafta daha hızlı ders işleriz. O şekilde yetiştiririz. Bu hafta şu örnekleri şöyle içselleştirerek bir yapalım. Çeyrek geçe burada olalım arkadaşlar.
+
+332
+01:13:00,787 --> 01:13:02,307
+Evet, tekrardan merhaba arkadaşlar.
+
+333
+01:13:02,967 --> 01:13:04,127
+Kaldım üzerinden devam edelim.
+
+334
+01:13:06,227 --> 01:13:11,427
+Şimdi, kitap sınıfını oluşturduk, graph sınıfını oluşturduk.
+
+335
+01:13:12,007 --> 01:13:15,287
+Graphları içerisinde barındıracak kitaplık sınıfını oluşturduk.
+
+336
+01:13:17,368 --> 01:13:23,987
+Kitaplık sınıfı, bunun da çeşitli özellikleri, attribülükleri falan filan olacak.
+
+337
+01:13:24,847 --> 01:13:26,787
+Hocam, ekran paylaşmıyorsunuz ama...
+
+338
+01:13:27,283 --> 01:13:28,824
+Tamam, fine, teşekkür ederim.
+
+339
+01:13:36,595 --> 01:13:56,775
+Evet, ben yeni bir sınıf eklemeyi zaten görmüştünüz az önce. Kitaplık sınıfını ekledim. Bunun da çeşitli özellikleri oluyor olacak. Onlar üzerinden gidelim. İlk baş, attribute. Aslında rafta olan attribute'e çok benzer bir şekilde. Kitaplığı da kitaplık yapan şey temelde raf.
+
+340
+01:13:57,119 --> 01:14:08,119
+O yüzden raf dizisi şeklinde, listesi şeklinde veya olacak. Burada da gelin rafı normal, traditional versiyonunda bir dizi mantığıyla tutuyor.
+
+341
+01:14:08,884 --> 01:14:22,043
+C'de hatırlarsanız bir in dizi dediğimizde eğer ki işte dinamik tanınlamak istemiyorsa, statik tanınlamak istiyorsanız köşe partizleri içerisinde boyutunu belirtiyordum. Burada ekstradan boyutunu belirtmeye gerek yok.
+
+342
+01:14:23,043 --> 01:14:36,863
+Rav tipinde her bir elemanı yine raf olacak bir dizi oluşturdum. Temelde bakıldığında şundan bir farkı yok aslında. Bir dizi.
+
+343
+01:14:36,884 --> 01:14:43,363
+oluşturuyoruz. Her bir elemanı integer. Burada da rough diye bir dizi oluşturuyorum.
+
+344
+01:14:43,363 --> 01:14:55,503
+Her birisinin elemanı rough olacak şekilde. Yani normalde dediğim gibi Java tarafında bu yapı çok fazla kullanılmadığını görürsünüz.
+
+345
+01:14:55,603 --> 01:15:00,644
+Ama bunun da kullanılabileceğini o primiteli tarafın görün istiyorum.
+
+346
+01:15:01,140 --> 01:15:09,860
+Şimdi bakın kitaplıkla ilgili bir constructor yazalım. Bakalım neler yazacağız diye şöyle bir şeyim var.
+
+347
+01:15:10,239 --> 01:15:38,239
+Notlarım var. Onlara bakıyorum. Tamam, bayağı bir metod yazıyor olacaktı. Constructor'ımı yazarak isterseniz başlıyor olalım. Bir kitaplığın, Constructor'ın içerisinde bu kitaplığın kaç raftan oluştuğuna dair bir parametre alalım. O şekilde başlayalım. Ona göre bu dizinin boyutunu belirlememiz gerekiyor. Eğer ki ArrayList falan olsaydı belki onlara ekstradan ihtiyaç olacaktı.
+
+348
+01:15:38,239 --> 01:15:55,340
+olmayacaktı. Ama bunu abstract etmek istediğimizde bu tarz diziyi, dizi tipinde olan bir şeyi ne kadar boyutu olduğunu da söylememiz gerekecek. O yüzden ne kadar rap sayısı olduğunu temelde bilmemiz gerekiyor.
+
+349
+01:15:55,340 --> 01:16:05,500
+Construct ederken ne yapıyorduk? Artık alışmışsınızdır buna. O objenin ismi boşluk, new anahtar sözcüğüyle kullanıyorduk. Ardından
+
+350
+01:16:06,484 --> 01:16:24,584
+Bu bir rough sınavının constructor olacak ve boyutu da bu olacak diye söyleyerek, constructorı kitaplık constructorının içerisinde rough dizisinin constructorını kullanabiliyoruz.
+
+351
+01:16:24,584 --> 01:16:33,423
+Şimdi bakın, burada rough diye bir dizi var. Her bir elemanı rough.
+
+352
+01:16:34,036 --> 01:16:36,336
+Onun constructorını oluşturduk.
+
+353
+01:16:36,876 --> 01:16:41,556
+Bu RAP dizisinin içerisinde RAP sayısı kadar eleman var.
+
+354
+01:16:41,816 --> 01:16:46,655
+Onların her birisinin tipi RAP, onların da constructorını oluşturmamız lazım.
+
+355
+01:16:47,416 --> 01:16:49,916
+Onların da constructorını oluşturmamız lazım.
+
+356
+01:16:50,056 --> 01:16:53,216
+Yani 30 tane bu kitaplıkta RAP olmuş olsun.
+
+357
+01:16:53,551 --> 01:17:13,731
+O 30 tane rafın her birisinin konstruktörünü oluşturmamız lazım. Normalde 30'u için veya raf sayısı kadar raf için teker teker yazamayacağınıza göre bir for döngüsü içerisinde bu işi gerçekleştirmemiz temelde beklenen şeydir.
+
+358
+01:17:13,731 --> 01:17:20,871
+O yüzden class, sizin alıştığınız o for döngüsünün sintaksını kullanıyorum.
+
+359
+01:17:21,551 --> 01:17:27,291
+Daha çok kullanacağımız belki For Each döngüsü diye bir döngü var. Onları da görüyor. Olacağız nasıl olur mu?
+
+360
+01:17:27,711 --> 01:17:35,731
+Şimdi yaptığım şeye lütfen dikkat edin. Bu bir diziydi. Yani raf dizisinin iyinci elemanı bir raf'tır.
+
+361
+01:17:36,531 --> 01:17:42,031
+Raflardan oluşan raflar, hadi şu raflar olsun. Karışmasın.
+
+362
+01:17:45,108 --> 01:17:59,108
+Raflar isminde her bir elemanı Raf olan bir dizim var. Bunun iyinci elemanını construct etmek istiyorsam Nil, Raf diyerek Raf'ın...
+
+363
+01:17:59,475 --> 01:18:04,075
+Constructor'ını kullanmam lazım. Bunu tümü için yapmam gerekiyor.
+
+364
+01:18:04,475 --> 01:18:14,595
+Raph'ın Constructor'ına geldiğinde ise o da kitaplar dizisinin Constructor'ını kullanıyor olacak.
+
+365
+01:18:14,595 --> 01:18:18,695
+Yani iç içe geçmiş bir şey var burada.
+
+366
+01:18:19,595 --> 01:18:22,915
+Tekrardan şurayı bir özetleyeyim güzel anlaşılması bakımına.
+
+367
+01:18:23,375 --> 01:18:27,475
+Ben kitaplık sınıfının Constructor'ını oluşturmak istiyorum.
+
+368
+01:18:27,475 --> 01:18:41,536
+Kitaplık sınıfının bir attribütü var. Raflar isminde her bir elemanı raf olan bir dizi. Bu şekilde dizi formatında tutuyorsak bunun boyutunun construct aşamasında ne olduğunu söylememiz gerekiyor.
+
+369
+01:18:41,536 --> 01:18:50,155
+O yüzden o kitaplığın constructörünü oluştururken bu kitaplıkta kaç tane raf olacak diye bir parametrede alıyoruz.
+
+370
+01:18:53,376 --> 01:18:57,236
+New anahtar sözcüğüyle oluştururken parametre olarak veriyorum.
+
+371
+01:18:57,576 --> 01:19:08,516
+Yani hocam bizim standart kullandığımız o dizi yapısında, köşeli parantezlerle erişeceği bir dizi yapısında, constructor nasıl oluyor diye düşünürsek arkadaşlar işte bu şekilde oluyor.
+
+372
+01:19:08,935 --> 01:19:18,256
+Ardından bu constructor, bu raf tipinde, raflar dizisinin içerisinde raf sayısı kadar, diyelim ki raf sayısı 5.
+
+373
+01:19:18,256 --> 01:19:21,336
+Bu raflar dizisinin içinde 5 tane raf var.
+
+374
+01:19:21,376 --> 01:19:21,547
+Arkadaşlar, class, object,
+
+375
+01:19:21,652 --> 01:19:28,172
+Ama bu rafların her birisinin de initialize edilmesi, construct edilmesi gerekiyor.
+
+376
+01:19:28,172 --> 01:19:48,012
+İşte şu döngü içerisinde her bir inci rafın da constructor metodunu çağırarak, zaten bir tane constructor vardı şuradan görebileceğiniz üzere, constructor metodunu çağırarak her bir dizinin elemanını da construct aşamasını gerçekleştirmiş oluyorum.
+
+377
+01:19:48,131 --> 01:19:49,652
+Biraz daha şeyimiz küçüksün.
+
+378
+01:19:49,652 --> 01:20:05,811
+Şimdi şu parantezleri siliyorum. Çünkü çok satır yazacağız bu örnekte. Şimdi constructor okey. Kitaplığın constructorını yazdım. Bu kitaplığın içerisine yine kitap ekleme, kitap silme gibi çeşitli özellikler eklemek istiyoruz diyelim ki.
+
+379
+01:20:14,836 --> 01:20:18,336
+Bir tane kitap almış olsun.
+
+380
+01:20:20,676 --> 01:20:22,596
+Kitap aldı.
+
+381
+01:20:22,876 --> 01:20:24,695
+Ben bu neyin metodu?
+
+382
+01:20:25,056 --> 01:20:28,996
+Kitaplık sınıfının bir metodu kitap ekle diye.
+
+383
+01:20:29,556 --> 01:20:32,636
+Aynı metot rafında var bakın kitap ekle.
+
+384
+01:20:32,716 --> 01:20:34,416
+Bu ikisi birbirine karışmaması lazım.
+
+385
+01:20:34,836 --> 01:20:49,456
+Farklı sınıfların aynı isimde metotları olabilir. Ben hangi sınıftan bir obje üretmişsem o objenin o isimli metodunu çağırdığında hangisinin kodunun çalışacağına o şekilde karar veriyorum.
+
+386
+01:20:49,631 --> 01:21:04,072
+Şimdi kitaplık nesnesinin kitap ekli diye bir metodu var. Bu metodun içerisinde yapacağımız şey ne? Raf dizisinin içerisine bir tane kitap yerleştirmek istiyorum.
+
+387
+01:21:05,291 --> 01:21:13,831
+İşte hangi rafın içerisinde olsun, sıra numarası ne olsun onu burada belirlememiz gerekiyor.
+
+388
+01:21:13,831 --> 01:21:17,631
+Şimdi rafın içerisine bunu yerleştirmek istiyorum. Kaçıncı rafa yerleştirmek istiyorum?
+
+389
+01:21:17,631 --> 01:21:35,471
+Önemli hususlardan birisi bu. İşte kaçıncı rafa yerleştireceğim kısmı kitabın bilgisinin içerisinde olması lazım. Yani yerleştirmeden önce kitabın rafının set edilmesi lazım. Ya sitrla ya da içinde rafı da barındıran constructlı kullanılarak.
+
+390
+01:21:41,199 --> 01:22:02,520
+He get raf no'yu alarak hangi rafın içerisine bunu yerleştirmek istiyorsam onu belirliyorum. Yani şuradan gelen şey bir raf olması, bir indiz. Üç geldi mesela. Raf dizisinin üçüncü elemanına raf olduğu için her birisinin tipi. Çok özür dilerim. Bunlar raflar olacak.
+
+391
+01:22:04,500 --> 01:22:14,600
+Raflar, şurada Raflar diye değiştirilirse bir şekilde. Raflar dizisinin üçüncü elemanına, örnek veriyorum, 5, 7 olabilir, 9 olabilir, kitap ekleyeceğim.
+
+392
+01:22:15,180 --> 01:22:19,500
+Raflar dizisinin üçüncü elemanının tipi nedir? Raf'tır. Raf'ın...
+
+393
+01:22:19,887 --> 01:22:37,867
+Kendisinin bir kitap ekleme metodu var. O zaman noktayla erişerek o kitap ekleme metodunu kullanabilirim. Direkt verdiğim kitabı bu şekilde ekleyebilirim. Şuraya kadar gördüğünüz kısım tek bir rap. Onun doğal olarak bir...
+
+394
+01:22:38,100 --> 01:23:05,140
+Kitap ekle diye metodu var. Onu içerisine bir kitap parametresi alıyor. Bu şekilde rafın içerisine kitap ekleme işlemini gerçekleştirebilirim. Kitaplık tarafında yapıyorum bunu daha bakın. Kitaplık nesnesinin kitap ekle özelliğini kullanarak yapıyorum. Rafın da kitap ekle özelliğini kullanarak da yapabiliriz aynı şekilde. Onu ama böyle iç içe geçerek.
+
+395
+01:23:05,684 --> 01:23:09,604
+Burada kullanmış oldum. Aynı şekilde kitap silelim.
+
+396
+01:23:11,283 --> 01:23:14,404
+Kitap silmede geriye bir değer döndürebilir.
+
+397
+01:23:14,664 --> 01:23:19,724
+Indis'te verdiğimiz durumda hatırlarsanız silme kısmı geriye o fitte bir nesne döndürülüyor.
+
+398
+01:23:19,863 --> 01:23:23,863
+Yine öyle olsun. Sildiğimiz nesneyi biz biliyor olalım.
+
+399
+01:23:25,460 --> 01:23:33,800
+Kitap dedik. Şimdi kitap silmek istiyoruz. Geriye de bir kitap sildiğimiz kitabın hangisi olduğunu döndürmek istiyoruz.
+
+400
+01:23:34,460 --> 01:23:39,940
+Silme kısmına gelelim öncelikle. Şimdi elimde benim kitabın bilgileri var.
+
+401
+01:23:40,880 --> 01:23:46,720
+İsmi, yazarın ismi, ISBN numarası, kaçıncı rafta ve hangi sırada olduğu bilgileri var.
+
+402
+01:23:46,720 --> 01:23:53,460
+O kitabı kitaplık listesinde bir rafın içerisindeki o diziden...
+
+403
+01:23:53,460 --> 01:23:54,659
+silmek istiyorum.
+
+404
+01:23:55,100 --> 01:23:55,560
+Tamam mı?
+
+405
+01:23:55,560 --> 01:23:57,680
+Yani, tekrar söyleyeyim.
+
+406
+01:23:57,800 --> 01:23:59,399
+Kitaplık raflardan oluşuyor.
+
+407
+01:24:00,159 --> 01:24:02,060
+Rafların içerisinde kitaplar var.
+
+408
+01:24:02,060 --> 01:24:07,399
+Ve ben kitaplık nesnesinin silmesini kullanarak rafları silmek istiyorum.
+
+409
+01:24:07,780 --> 01:24:10,319
+Ve hala hangi raftaki kitabı sileceğim?
+
+410
+01:24:10,460 --> 01:24:12,180
+Öncelikle onu belirlemek istiyorum.
+
+411
+01:24:12,659 --> 01:24:15,420
+Raflar nesnesinin içerisinde,
+
+412
+01:24:16,140 --> 01:24:17,700
+hop, aldığım şey,
+
+413
+01:24:18,159 --> 01:24:19,319
+yazı aldım.
+
+414
+01:24:21,492 --> 01:24:22,971
+Şu asla kitabu ugledi tabiki.
+
+415
+01:24:23,539 --> 01:24:51,519
+Hangi raftaki kitabı sileceğim nokta. Bunun kendisinin zaten kitap sil isminde iki tane metodunu hatırlarsanız buraya yazmıştık. İstersek şunu kullanabiliriz. Direkt kitap verip kitabı buradan sildirebiliriz. Bu geri dönüş değeri olarak bize Bully'in bir değer döndürüyordu. Biz kitap döndürsün istiyoruz. Kitap döndürmesi için gereği bunun içerisine
+
+416
+01:24:51,539 --> 01:25:19,479
+kitap silinin içerisine bir indeks vermemiz lazımdı. Yani o kaçıncı sırada bir kitap olduğunu söylememiz gerekiyordu. O kitabın o kaçıncı rafta kaçıncı sırada olduğunu söylememiz gerekiyordu. Kaçıncı rafta olduğunu bulduk. Şimdi o raftaki sırasını belirlememiz lazım. Onu da nasıl çekeceğiz? İşte o raftın sırasından elde ediyor olacağız bu bilgiyi. Yani temelde
+
+417
+01:25:19,539 --> 01:25:22,920
+kitabın içerisinde de belki saklı olabilir.
+
+418
+01:25:23,420 --> 01:25:32,539
+Fakat tam ilişkisini koymadığımız için, yani şuradaki kitap numarası, kitabın sıra bilgisi...
+
+419
+01:25:33,235 --> 01:26:01,235
+ile buradaki kitaplar dizisindeki ArrayList'in indeksi örtüşecek diye bir şey yok. O bir bilgi, buradaki o bir bilgi, sıra numarası kim için anlamlıdır? Programı kullanılacak kişi için anlamlıdır. Biz ise kitaplar ArrayList'in içerisine onu attık. Onun bir indeksi var. Kaçıncı listede, kaçıncı sırada olduğu var. O ise programcı için anlamlıdır. Biz onun...
+
+420
+01:26:01,235 --> 01:26:06,135
+O ArrayList'de kaçıncı sırada olduğunu bulmamız lazım.
+
+421
+01:26:06,135 --> 01:26:13,855
+Yani Rathlar dizisinin, dizisinin, yani şuraya kadar olan kısmı yine alıyorum.
+
+422
+01:26:14,795 --> 01:26:15,815
+Şuraya yapıştırayım.
+
+423
+01:26:16,532 --> 01:26:23,331
+Raflar dizisinin hangi indisindeki Rafla muhatap olduğumu bilmem lazım öncelikle.
+
+424
+01:26:23,331 --> 01:26:35,131
+Şu indisindeki Rafla muhatapın bunun arkadaşlar içerisinde bir kitaplar diye bir dizi söz konusu.
+
+425
+01:26:35,631 --> 01:26:38,331
+Bu kitaplara erişmek için mesela hani...
+
+426
+01:26:40,051 --> 01:27:08,051
+Şurada bakın, erişebileceğim noktalar bize verilmiş durumda. 1, 2, 3, 3 tane metodu var değil mi? En nihayetinde bunun. Ben o kitaplarda bunun kaçıncı indekste olduğunu bulmak istiyorum. Mesela kolay tarafa kaçıyor olalım. Bu kitaplar listesinin şurada gördüğümüz tanımı private olmuştu. Bunu public yaptığımız durumda başka bir sınıftan da buna erişebiliriz.
+
+427
+01:27:08,051 --> 01:27:34,311
+Bildiğimizi görmüş olalım hazır buraya kadar gelmişken. Mesela geldi artık kitaplar o attributuna public olarak tanımladığım için direkt başka bir sınıftan da erişebiliyorum. Az önce private listede çıkmıyordu. Şimdi public olduğu için çıkıyor. Bu kitaplarda şu objenin indeks numarası neyse o kitabı sil.
+
+428
+01:27:34,836 --> 01:27:35,836
+Diyebiliyorum.
+
+429
+01:27:36,776 --> 01:27:38,556
+Mesela gördüğünüz gibi.
+
+430
+01:27:39,496 --> 01:27:45,236
+Ve geriye dönüş değeri olarak da bu indeksli versiyon bize kitap döndürüyordu.
+
+431
+01:27:45,656 --> 01:27:52,276
+Şuraya da bir return anahtar sözcüğünü koyduğumuzda metodumuzu böylece tanımlamış oldu.
+
+432
+01:27:52,456 --> 01:27:53,876
+Kitap silme kısmı.
+
+433
+01:27:54,224 --> 01:27:57,964
+Dediğim gibi, dilerseniz şöyle de yapabilirsiniz.
+
+434
+01:27:58,484 --> 01:27:59,784
+Kısaltalım bunu.
+
+435
+01:28:00,384 --> 01:28:02,184
+Return, kitap, sil de.
+
+436
+01:28:02,684 --> 01:28:05,124
+Direkt kitabın ismini verirsiniz.
+
+437
+01:28:05,644 --> 01:28:10,464
+Bunun size geri döndüreceği değer bir boolean değer olacaktır.
+
+438
+01:28:10,564 --> 01:28:12,784
+Şurayı da boolean olarak değiştirebilirsiniz.
+
+439
+01:28:12,904 --> 01:28:16,144
+O zaman kitab ortadan kaybolur, gider, tekrar erişemezsiniz.
+
+440
+01:28:16,144 --> 01:28:22,224
+Biz kaybolmasını istediğimiz durum için bu şekilde kitabı silmek istedik.
+
+441
+01:28:22,224 --> 01:28:25,144
+Var mı buraya kadar sorusu olan?
+
+442
+01:28:27,084 --> 01:28:28,864
+Bakalım başka ne yazıyor? Bir kitap arayalım.
+
+443
+01:28:29,004 --> 01:28:31,744
+Yani evet kitaplıkta tabii ki şeylerden bahsede.
+
+444
+01:28:31,824 --> 01:28:36,584
+Aradığım kitap hakikaten var mıdır yok mudur onu biliyor olalım.
+
+445
+01:28:36,584 --> 01:28:41,304
+Kitabı buluyorsam o kitabın bana diğer bilgilerini de döndürmüş olsun.
+
+446
+01:28:41,444 --> 01:28:45,364
+Hatta kitabı da kitabın ismini vererek arayalım.
+
+447
+01:28:46,963 --> 01:28:58,724
+Kitap ismini vererek kitabı aramış olalım. Nerede arayacağız? Kitaplık sınıfının içerisinde bu arama gerçekleştirileceği için.
+
+448
+01:28:59,155 --> 01:29:27,096
+Raflar dizisinin içerisinde bulunan her bir eleman kitaplar ArrayListi şeklinde olmuştu. Ben o iç içe geçmiş dizinin içindeki ArrayList'e bir sonuç aramaya çalışacağım. Kitabı bulabilirim, bulmaya da bilirim. Bulamazsam eğer geriye kitap bir obje olduğu için geriye nal döndürebilirim. Tamam mı? Nal döndürdüğümde bulamadım manası.
+
+449
+01:29:27,155 --> 01:29:36,976
+Eğer ki buluyorsam, bulduysam, bulduysam o objeyi döndürmem beklenir benden.
+
+450
+01:29:36,976 --> 01:29:41,976
+Şimdi arayacağımız şey öncelikle şu hangi yani...
+
+451
+01:29:42,863 --> 01:29:59,863
+Hiçbir şey bilmiyorum. Kitap adını biliyorum. Teker teker raflara gireceğim. Birinci indisli rafın içinde arayacağım. Birinci indisli rafın içerisinde bir ArrayList var. O ArrayList'in içinde arayacağım. Yani sanki dizinin içinde...
+
+452
+01:30:00,000 --> 01:30:04,159
+Liste olduğu için bir matrissel bir arama yapacakmışım gibi düşünün.
+
+453
+01:30:04,340 --> 01:30:04,760
+Tamam mı?
+
+454
+01:30:05,159 --> 01:30:07,420
+Dizinin içerisinde liste var.
+
+455
+01:30:07,760 --> 01:30:09,800
+Öncelikle dizinin ilk elemanına geleceğim.
+
+456
+01:30:09,800 --> 01:30:13,440
+O ilk elemanında bulunan listenin içerisinde arayacağım.
+
+457
+01:30:13,619 --> 01:30:14,100
+Bulamadım.
+
+458
+01:30:14,340 --> 01:30:15,400
+İkinci elemana geçeceğim.
+
+459
+01:30:15,539 --> 01:30:16,640
+O listenin içinde arayacağım.
+
+460
+01:30:16,980 --> 01:30:18,720
+Üçüncü elemanına geçeceğim rafların.
+
+461
+01:30:19,119 --> 01:30:20,659
+O listenin içerisinde arayacağım.
+
+462
+01:30:21,039 --> 01:30:28,000
+Yani iç içe iki tane for yapmak istediğimi siz buradan anlamışsınızdır diye tahmin edin.
+
+463
+01:30:28,000 --> 01:30:41,300
+rafın, rafların boyutu var. Leng. Kaç tane raf olduğunu bize buradan söylüyor. I artı artı diye gittik.
+
+464
+01:30:41,631 --> 01:31:09,611
+Şimdi, evet, buraya geldiğim durumda şöyle erişim sağlarsam, raflar nokta iyi dersen bir tane rafın içerisine eriştim. Fakat iç içe iki tane for gibi düşündüğümüzde buraya bir tane daha for gelmesi lazım. Özellikle böyle collection tipindeki listelere göreceğiz. Link listeler, ArrayList, bir sürü liste tipi göreceğiz. Bunlara erişmek için Java tarafında kullanılan bir dönem.
+
+465
+01:31:09,631 --> 01:31:37,631
+Özel bir for döngüsü söz konusu. O da for each diye anılıyor. Farklı bir sintaksi var. Ondan bahsediyor olacağım burada size. Bu standart for döngüsünde nasıl döneceğimizi biliyorsunuz. Başlangıç noktası belli. İstersen sıfırı değiştirip yedi yapabilirim. Bittiği nokta belli. Bunu da istediğim gibi değiştirebilirim. Çift olan elemanları ara diyerek i artı iki de diyelim.
+
+466
+01:31:37,631 --> 01:31:47,583
+Bu standart bildiğimiz for dönüşü. İstediğimiz gibi parametrelerini değiştirebiliyoruz. Ama ben her eleman için bunu yapmak istiyorsam...
+
+467
+01:31:47,583 --> 01:32:13,364
+Bir, nasıl söyleyelim, for each döngüsü kullanabilirim. Şurada bana otomatik olarak bakın, for each yazdığımda kendi sintaksını getirdi. Benim tabii ki aramak istediğim şey for each döngüsünde her bir elemanı kitap olan kitaplar dizisinin içerisinde bir veri.
+
+468
+01:32:13,876 --> 01:32:16,376
+yazamadım. Raflar olacak şurası. Raflar.
+
+469
+01:32:18,556 --> 01:32:21,576
+I'nin içerisinde kitaplar dizisi vardır.
+
+470
+01:32:21,576 --> 01:32:29,336
+Şimdi şu for'a girdiğim anda artık ben raflar I'ye doğal olarak, raflar I üzerinden işlem yapıyorum.
+
+471
+01:32:29,776 --> 01:32:33,116
+Bunun içerisinde ise kitaplar diye bir nesne var.
+
+472
+01:32:33,460 --> 01:32:49,300
+ArrayList tipinde bu nesnenin her bir elemanı neydi? Kitaptı. Her bir elemanı kitaptı. O kitabı şurada hatta KTP, TMF olsun, ben istediğim gibi isimlendirebilirim çünkü.
+
+473
+01:32:49,300 --> 01:33:01,460
+İşte şurada gördüğümüz kitaplar nesnesinin içerisinde, ArrayList'inin içerisinde bulunan her bir kitabı teker teker kitap tipindeki KTP tempin içerisine atar.
+
+474
+01:33:01,460 --> 01:33:07,680
+Şurada aşağıda onun üzerinden benim işlem yapmamı bekleyecek. Nasıl yapıyoruz o işlemi de?
+
+475
+01:33:13,971 --> 01:33:31,631
+KTP Camp'in içerisinde bulunan o kitap ismini alayım ve benim buradaki kitap ismimle karşılaştırayım. Eğer ki sonuç Compare to o şekilde çalışıyor. Şuradan da bakalım. Bakın.
+
+476
+01:33:32,975 --> 01:34:00,975
+Şunu değil de şöyle yazalım. Compare'ın nasıl çalıştığını buradan görebilirsiniz. Ne şekilde sonuçlar döndürdüğünü. Eğer ki değerler birbirlerine eşitse sıfır döndürüyor. Diğer durumlarda farklı farklı şeyler döndürüyor. O yüzden şuraya kitap ismini yazıyoruz. Bu eşittir sıfıra ise aradığım kitabı bulmuşum demektir. Ve return o kitabın bilgisiyle kitap değil de KTFTEM bilgisiyle.
+
+477
+01:34:00,975 --> 01:34:28,975
+Geri dönüyorum. Ancak bulamama durumum var. Şu for'un tamamında dolaştım, bu for'un da tamamında dolaştım. Bulamadıysam geriye return null'la beraber dönmen lazım. Az önceki kırmızıya boyamasının sebebi oydu. Bu olmadığı durumda bulamadığımda hiç return'e girmeyecek, şuraya girmeyecek. E ne döndüreceksin kardeşim sen geriye diye beni uyarıyor. O yüzden ben de şunu sildim. Biraz daha satırlarımız kısalması adına şu üç tane körlü bir...
+
+478
+01:34:28,975 --> 01:34:31,035
+bireyizi silmiş olayım.
+
+479
+01:34:31,795 --> 01:34:45,015
+Böylece kitap ara fonksiyonu, kitaplık sınıfının, kitap ara fonksiyonunu kullandığımızda kitaplık sınıfının içerisinde bulunan raflar dizisinin
+
+480
+01:34:45,408 --> 01:34:54,828
+Her bir rafı için o rafların içerisinde bulunan kitaplı kitaplar ArrayList'inin içerisinde böylece search etmiş oldum.
+
+481
+01:34:55,268 --> 01:34:59,268
+Verilen kitap ismindeki kitabı bulabildiysem geriye o kitabın bilgisini döndürdüm.
+
+482
+01:34:59,548 --> 01:35:02,768
+Bulamadıysam null döndürmüş oldum.
+
+483
+01:35:02,848 --> 01:35:06,588
+Bu şekilde kitabı arayabiliriz.
+
+484
+01:35:07,608 --> 01:35:08,928
+Var mı burada sorusu olan?
+
+485
+01:35:11,828 --> 01:35:13,188
+Yok. Çok güzel.
+
+486
+01:35:13,648 --> 01:35:25,628
+Şimdi devam edelim. Güzel anlaşılmasına çok seviniyorum açıkçası. Hepinizin kristal derraklıkta bu konular kafasında oturmuş olması beni çok mutlu ediyor.
+
+487
+01:35:26,427 --> 01:35:35,387
+Şimdi bir diğer metodumuz da şöyle olsun. Kitaplığın içerisinde raf göster diye bir metot yazalım.
+
+488
+01:35:41,648 --> 01:35:56,048
+Şu şu şu kitaplar var diye ekrana yazmış olsun. Yazalım. Public. Geriye herhangi bir değer döndürmesin. Ekrana, komut satırına sonuç yazsın istiyorum.
+
+489
+01:35:57,876 --> 01:36:03,856
+Bilgileri göster veya raf göstermesi istediğiniz gibi isimlendirebilirsiniz bunu.
+
+490
+01:36:04,516 --> 01:36:14,276
+Buraya tabii ki parametre olarak raf numarasını vermemiz lazım ki hangi rafın içerisindeki verileri görmek istiyorsak onu söylememiz lazım.
+
+491
+01:36:14,276 --> 01:36:25,736
+Böyle bir raf olabilirler, numarası olmaya da bilir. Yoksa hiçbir şey göstermemesini bekliyoruz. Varsa içerisindeki kitapların ne olduğunu göstermesini.
+
+492
+01:36:25,876 --> 01:36:35,876
+Şimdi biraz ekrana nasıl yazı yazılıyor? Yani C tarafında gördüğümüz printf'i burada nasıl yazıyoruz? Onu...
+
+493
+01:36:36,372 --> 01:37:04,332
+Size anlatacağım. Yine temelde print diye bir fonksiyonumuz var. Bu print fonksiyonunun sonuna gelen elenlerle birlikte yeni satıra geçiyorduk hatırlarsanız. O yüzden print elen fonksiyonu içerisine verdiğimiz string ifadeyi ekrana yazdıktan sonra yeni satıra geçmek üzere kurgulanmış bir fonksiyon. Fakat artık Java tarafında fonksiyon değil de metot diyorduk bunlara.
+
+494
+01:37:04,372 --> 01:37:18,172
+Pekala, bu printelen metodu neyin metodu? Başında bir şeyler olması lazım. Yani kafamıza göre kullanabiliyemiz bir şey değil. İşte sistem.alt nesnesinin bir metodu. Nereye gitti?
+
+495
+01:37:19,380 --> 01:37:33,359
+Print de yazabiliriz direkt de. Print, Elen yazalım. Yeni satıra inmiş olsun. Sistem nesnesinin altın altında Print, Elen. Bu içerisine işte o stringsel ifadeyi yazacağız.
+
+496
+01:37:34,019 --> 01:37:47,359
+Java'nın güzel kısımlarından birisi string birlikleştirme işlemi artı operasyonuyla yapılıyor. String, concatenate diyoruz ya, artı operasyonuyla yapılıyor. O yüzden direkt mesela.
+
+497
+01:37:47,380 --> 01:37:57,039
+Raf, no. Şurayı da mesela güzel isimlendirelim. No's ikinci kelime olduğu için N harfi büyük olsun. Biz de anlattığımız kurallara uyalım bir taraftan.
+
+498
+01:37:58,779 --> 01:38:10,699
+Beş şinci rafta bulunan kitaplar aşağıdaki gibidir diyelim mesela.
+
+499
+01:38:12,307 --> 01:38:36,508
+Aşağıdaki gibidir. Hani bir uyarı nasıl yazılıyor ekrana görün diye. Aynı şekilde şunu kullanarak ben yine System Outprint Ellen'le teker teker şey yazayım istiyorum. Yani başlıklarını oluşturayım. O rafta bulunan kitabın kitap adını yazalım. Şöyle kitap adı.
+
+500
+01:38:37,235 --> 01:39:00,216
+İşte iki tane neyse üç tane tab olsun. Ardından neleri yazmışız? Şuradan da bir bakalım. Yazarını ve ISBN'ini yazmışız. Yaza 1, 2, 3 ve ISBN bilgilerini yazmışız. 1, 2, 3 derken bunların arasında T, T, T var. Tab işareti ve X tarafını biliyorsunuz zaten C'de kullandığımız şekliyle.
+
+501
+01:39:05,235 --> 01:39:18,695
+Kullanıcıya bilgi. İkincisi de hangi kitabın adı ne, yazarı ne, birbiriyle karışmasın. Öyle kitaplar vardır ki yazar adıyla karışabilecek isminde olabilirler. Farklı başlıklar eklemiş olduk.
+
+502
+01:39:18,695 --> 01:39:33,235
+Şimdi gördüğünüz bu rafın içerisinde birden fazla kitap olacağı için ona ya gördüğünüz şu for each döngüsünü kullanarak ya da şurada gördüğünüz standart for dön.
+
+503
+01:39:33,235 --> 01:39:59,996
+Döngüsünü kullanarak erişebiliriz. Her iki şekilde de yapabiliriz. Nasıl kullanmak isterseniz ben standart kullanımı yapayım. Onu da görün. Sadece for each ile yapmak zorunda değiliz. Hangi raf olduğunu raf numarasından biliyorum. Bir dizi tabii ki raf değil de raflar dizisinin içerisindeki o raf.
+
+504
+01:40:00,000 --> 01:40:09,600
+numaralı bir rafla bir kitaplar dizisi var. Bunun boyutunu size olarak çekmiş oldu.
+
+505
+01:40:10,036 --> 01:40:19,435
+Şimdi aradaki lütfen arka bakın. Büyüktür, küçüktür, RUN önemini de burada gördük. Yani C'deki gibi değişken isimleri case-sertedir.
+
+506
+01:40:19,435 --> 01:40:31,836
+Şimdi şurada gördüğümüz ifade en son noktadan sonra kitaplar kullandığım için kitaplar bir ArrayList'i. ArrayList'in boyutunu öğrenmek için kullandığım ifade size.
+
+507
+01:40:32,275 --> 01:40:44,576
+Şurada gördüğünüz raflarsa bir dizi, bizim primitif manada bir dizi. Onun boyutunu öğrenmek için kullandığımız o static attribute ise length.
+
+508
+01:40:45,435 --> 01:40:52,036
+Yani bu bir attribute. Bakın rafların attribute size ise bir metot. Metot olduğunu nereden biliyoruz?
+
+509
+01:40:53,876 --> 01:40:57,316
+Parantez açıp kapattığımızdan ötürü anlıyoruz.
+
+510
+01:40:57,436 --> 01:41:00,195
+Şimdi her bir kitabının ismini yazalım.
+
+511
+01:41:00,695 --> 01:41:03,076
+System.out.println ekrana yazdım.
+
+512
+01:41:03,076 --> 01:41:09,456
+Ardından birinci kitabın ismi bu diyeceğiz.
+
+513
+01:41:09,876 --> 01:41:13,155
+Ondan sonra çeşitli özelliklerinden bahsetmiş olacağız.
+
+514
+01:41:13,556 --> 01:41:17,676
+Kitaplar nesnesinin getindeksi isinin
+
+515
+01:41:18,420 --> 01:41:35,640
+Şurada dışında parantezinde yet at adını aldık. Ondan sonra birer şöyle boşluk bırakalım veya ap bırakalım. Ne bırakacağız bilmiyorum ama güzel alignment yapabilir miyi bilmiyorum. Göreceğiz.
+
+516
+01:41:36,100 --> 01:41:45,119
+Kitabın adını aldık. Bir ap koydum. Böyle yeni satıra inip orada da yazabilirsiniz. Onu da destekliyor güzel sistem.
+
+517
+01:41:46,996 --> 01:42:03,716
+Şöyle yapalım, hepsi aynı satırda oluşuyorsun. Get, kitabın adını aldık. Sonra ne vardı? Yazar adı vardı. Bir tab aldık. Yine alt satıra indik. Şurayı yapıştıralım. Get ISBN'i aldık ve bitirdik.
+
+518
+01:42:03,716 --> 01:42:14,996
+Yani bir artık metodumuz var. İsmi raf göster diye. Bunun içerisine bir raf numarası veriyoruz. O rafın içerisinde bulunan kitapları bilgisayar.
+
+519
+01:42:14,996 --> 01:42:35,435
+İçerisinde bize söylüyor. Eğer o rafın içerisinde hiç kitap yoksa sadece şunlar yazılmış olacak ve bırakılacak. Söylenen raf numaralı rafın size eğer ki sıfırsa başlangıçta bir kontrol yapabilirsiniz. Şu an yapmayacağım ama sadece sözel olarak anlatmak amacıyla eşittir sıfırsa.
+
+520
+01:42:35,923 --> 01:42:40,943
+Ekrana, bu raf içerisinde hiç kitap yoktur diye yazabilirsiniz.
+
+521
+01:42:41,283 --> 01:42:42,903
+Ertes kolunda bunu yapabilirsiniz.
+
+522
+01:42:43,224 --> 01:42:46,743
+O daha güzel bir tasarım olur belki.
+
+523
+01:42:46,923 --> 01:42:49,363
+Aklınızı çok fazla o işlerle uğraşmayalım.
+
+524
+01:42:49,903 --> 01:43:02,264
+Böylece belki ekstradan hem kitap sınıfına, hem de rap, hem de kitaplık sınıfına bir alan, attribute, metot falan eklemem gerekebilir.
+
+525
+01:43:02,264 --> 01:43:03,923
+Ama onu main metodu...
+
+526
+01:43:03,923 --> 01:43:12,304
+yazdığım tarafta ihtiyaç doğrultusunda gelip tekrardan bunların üzerinde düzenleme yaparak görüyor olacağım.
+
+527
+01:43:12,623 --> 01:43:14,844
+Buraya kadar sorusu olan arkadaşımız var mı?
+
+528
+01:43:16,963 --> 01:43:19,323
+Hocam bir şey soracağım da.
+
+529
+01:43:23,796 --> 01:43:26,395
+Buyurun dinliyorum sesiniz alamadım ama.
+
+530
+01:43:30,771 --> 01:43:31,292
+Hocam.
+
+531
+01:43:32,152 --> 01:43:35,912
+Evet. Ya benim bağlantımda bir problem var ya sizinkinde var. Sizinize alamadım.
+
+532
+01:43:41,460 --> 01:43:43,920
+Beni duyuyor musunuz? Pekala onu sorayım.
+
+533
+01:43:44,500 --> 01:43:46,460
+Benim bir sorum var hocam başka.
+
+534
+01:43:46,980 --> 01:43:47,960
+Tamam sen sor.
+
+535
+01:43:48,860 --> 01:43:52,500
+Bu strikleri compare ederken direkt eşitleştirdeniyoruz değil mi?
+
+536
+01:43:53,060 --> 01:43:59,460
+Yani eşleştirdiğimiz durumda her daim doğru sonuçlar veremeyebilir. Eşit bir kast ediyorsunuz anlamca.
+
+537
+01:44:00,320 --> 01:44:08,940
+Onun da sebepleri var. Onları da konuşuyor olacağız. Vakti geldiğinde en güzeli compare komutunu kullanarak karşılaştırıyor olmak.
+
+538
+01:44:09,492 --> 01:44:09,972
+string.
+
+539
+01:44:11,172 --> 01:44:13,292
+Alo hocam, sesim nasıl şu an?
+
+540
+01:44:13,292 --> 01:44:13,492
+Alo.
+
+541
+01:44:15,272 --> 01:44:16,312
+Geliyor mu hocam?
+
+542
+01:44:16,492 --> 01:44:17,532
+Evet, şimdi duyuyorum.
+
+543
+01:44:18,812 --> 01:44:24,812
+Hocam şey, ArrayList olarak tanımlamazsak, ForEach loopunu kullanabilir miyiz?
+
+544
+01:44:28,051 --> 01:44:54,751
+Cast ederek kullanılıyor. Yani kullanabilirsin ama daha çok böyle liste tipinde veriler için çok fazla kullanılıyor. Burada gördüğünüz tanım da bugün hani siz o piramitli tarafı görün istediğim için yazdım. Genelde şu tanım çok fazla kullanılmıyor. Listeler üzerinden erişim daha efektif olduğu için o taraf kullanılıyor. Öyle olduğunda aslında her daim sen for each döngüsünü kullanabilecek bir yapıda olacaksın.
+
+545
+01:44:56,051 --> 01:45:00,171
+Bunu da 4G'de kullanabilirsin ama biraz işte testing işlemleri yapmak lazım.
+
+546
+01:45:01,991 --> 01:45:02,451
+Tamamdır.
+
+547
+01:45:03,652 --> 01:45:06,731
+Evet. Başka soru soran arkadaşımız var mı?
+
+548
+01:45:08,831 --> 01:45:12,731
+Devam edelim. Bir tane daha sınıf yazacağım. O sınıfta da main method olsun.
+
+549
+01:45:14,791 --> 01:45:17,311
+Class, ana sınıf diyelim.
+
+550
+01:45:18,644 --> 01:45:37,944
+Sınıf içerisinde main metot barındırsın istiyorum. Başka istediğim bir şey yok. Şunu sileyim. Bakın main metodumuz muhakkak statik oluyor. Geriye herhangi bir değer döndürmüyor. İçerisine string dizisi olarak bir argüman listesi alabiliyor.
+
+551
+01:45:37,944 --> 01:45:46,644
+Bu yazdığınız kodu komut satırından çalıştırdığınız durumda içerisine çeşitli parametreler vererek aldığı o parametre...
+
+552
+01:45:46,644 --> 01:45:55,064
+Metrelere göre farklı farklı sonuçlar üretmesini isteyebilirsiniz. Öyle olduğu durumda bu argüman listesini kullanabilirsiniz.
+
+553
+01:45:55,064 --> 01:46:06,963
+Ama temelde biz burada direkt editör üzerinden çalıştıracağım için böyle bir şey vermeyeceğim. Belki son haftalara doğru yaptığımız örneklerde bunları kullanıyor oluruz.
+
+554
+01:46:07,123 --> 01:46:14,384
+Artık bakın main metodun içerisindeyim. Sınıfımızın adı ana sınıf. Dediğim gibi bir proje. Şurada gördüğünüz.
+
+555
+01:46:14,644 --> 01:46:24,043
+Main metodun olduğu yerden başlar. Buradan başlayacak her şey. Ekranda bir şeyler yazdırmak istiyorsak buradan yazdıracağız. Mesela yazdırarak başlayalım.
+
+556
+01:46:24,043 --> 01:46:35,604
+S-Y-S-O Hello World. İlk örneğimiz her daim bu ya. Hello World yazdırarak başlayalım. Yani o kadar iş yaptık.
+
+557
+01:46:35,956 --> 01:46:55,935
+Burada sadece main metodun içerisinde onların hiçbirisini kullanmadan Hello World yazdırdık. Böyle olduğu durumda ekrana çalıştığında Hello World yazacak sadece. Başka herhangi bir tanınladığımız sınıfları kullanmadığımız için onlarla ilgili bize bir sonuç döndürmüyor olacak.
+
+558
+01:46:56,576 --> 01:47:03,956
+Hello World yazdırması tabii hani sadece bir örnekti. O yüzden bunu siliyorum. Görmeniz adına yapın.
+
+559
+01:47:03,956 --> 01:47:17,536
+Şimdi bir kitaplık tanımlıyor olacağım. Tanımlayalım. Çünkü kitaplığın içerisine rafları, rafların içerisine kitapları ekliyor olacağım. Kitaplık.
+
+560
+01:47:18,420 --> 01:47:27,320
+nesnesinden, kitaplık sınıfından, kitaplık isminde bir nesne üretmek istiyorum.
+
+561
+01:47:27,440 --> 01:47:29,579
+Doğal olarak, constructor'ını kullanmam lazım.
+
+562
+01:47:30,579 --> 01:47:32,800
+Kitaplık ismi, constructor'ını.
+
+563
+01:47:33,180 --> 01:47:36,280
+Burada, tabii, rough sayısını da vermemiz gerekiyor bu constructor'da.
+
+564
+01:47:36,360 --> 01:47:38,039
+Yukarıda bir rough sayısı tanımlayalım.
+
+565
+01:47:38,539 --> 01:47:40,239
+Rough sayısı eşittir.
+
+566
+01:47:40,699 --> 01:47:42,380
+5 olsun, 10 olsun, neyse.
+
+567
+01:47:42,800 --> 01:47:46,079
+Şuraya rough sayısını direkt yazıyorum.
+
+568
+01:47:46,420 --> 01:47:54,420
+İçerisine tabii ki direkt şuraya getirip 5 de yazabilirsiniz. Ama ben hani parametrik olsun diye başka bir değişkenin içine yazdım.
+
+569
+01:47:54,539 --> 01:48:13,980
+Şimdi kitaplık nesnemiz oluşturulmuş durumda. Kitaplık nesnesinin bakın bizim yazdığımız kitap ara, kitap ekle, kitap sil, raf göster gibi çeşitli metotları ve obje olduğu için harici olarak Java'nın sağladığı çeşitli metotları buradan görebiliyoruz.
+
+570
+01:48:14,420 --> 01:48:18,123
+Bir kitaplığımız var. Bu kitaplığın içerisine biz...
+
+571
+01:48:18,131 --> 01:48:23,692
+Kitap ekleyebiliriz. Nasıl? Direkt bakın kitaplığın içerisine kitap ekleyeceğim.
+
+572
+01:48:24,112 --> 01:48:27,731
+Wrap ve kitap benden soyutlanmış olacak.
+
+573
+01:48:27,731 --> 01:48:35,652
+Çünkü kitaplığın içerisindeki bunu kullandığında her bir rafın konstruktör otomatik olarak yapılıyor olacak.
+
+574
+01:48:36,391 --> 01:48:41,712
+Kitaplığın içerisine de biz kitap ekle ve kitap sit, kitap ara diye metod yazdık.
+
+575
+01:48:42,072 --> 01:48:45,692
+Dilerseniz siz evde bunu geliştirmek için örnek olması adına
+
+576
+01:48:46,131 --> 01:49:14,131
+kitap ekle didik, kitap sil didik ya, raf ekle, raf sil metotları da koyabilirsiniz kitaplığın içine. O şekilde belki daha farklı işler de yapılabilir. Birkaç tane kitap tanımlıyor olayı. Kitap 1, kitap 2, kitap 3 diye. Bunlar sadece tanım. Bakın bu şekilde tanımladıktan sonra ya izin verecek mi bilmiyorum ama bunun metotlarını kullanmaya çalışırsanız eğer kitap...
+
+577
+01:49:14,131 --> 01:49:14,231
+Tabii.
+
+578
+01:49:15,028 --> 01:49:42,807
+Kitap 1'in kitabı. Siz bu nesneyi ilklendirmediğiniz için, new anahtar sözcüğünden sonra, constructorını kullanarak çalıştırmadığınız için alacağınız hata null pointer exception. Ona lütfen dikkat edin. Hatta burada kızıyor, bunu oluşturmadım falan filan. Daha da sizi ilerlemenize bile engel olabilir. Yani null pointer exception önemli durumlardan nasıl? Muhakkak onu ilklendirmemiz lazım.
+
+579
+01:49:43,028 --> 01:49:58,768
+Mesela kitap 1'i, new anahtar sözcüğü ile beraber constructor'ı kullanmak istiyorum. Temelde 3 farklı constructor tipimiz vardı. Kitabın ismini, kitabın yazar adını ve ismini alan.
+
+580
+01:50:00,000 --> 01:50:06,340
+altınmanızı ve sıra numarasını alan ve hiçbirisini almayan bir default constructorimiz vardı.
+
+581
+01:50:06,440 --> 01:50:08,400
+Önce tamamını kullanalım. Gelin.
+
+582
+01:50:09,020 --> 01:50:15,140
+Sırayla her bir, üç farklı constructorla, üç farklı kitabı construct ediyor olayım.
+
+583
+01:50:15,539 --> 01:50:16,140
+Siz de görün.
+
+584
+01:50:16,740 --> 01:50:22,539
+Mesela, işte belki Netflix'te çok güzel olmayan olmasa da dizisini izlemiştiniz.
+
+585
+01:50:23,060 --> 01:50:24,619
+Kara Palas'ta.
+
+586
+01:50:25,492 --> 01:50:30,432
+Gece Yarısı diye bir kitap var. Biliyorsunuzdur bence Charles King'in.
+
+587
+01:50:31,123 --> 01:50:51,163
+O kitabı kitaplıma ben eklemek istiyorum. İkinci sırada olan parametre yazar ismiydi Charles King. Bunun tabii ki bir ISBN numarası olacak. O da string olarak burada isteniyordu bizden.
+
+588
+01:50:59,123 --> 01:51:12,543
+Ve direkt onu kopyalayıp aldım. Yani bu kitabın bir ISBN numarası var. Hangi numaralı rafta ve hangi sırada olduğu bilgisini de temelde söylememiz gerekiyor.
+
+589
+01:51:12,543 --> 01:51:26,963
+Bakın artık kitap bir isminde bir kitap konstrakt ettim. Yani kitap bir adında, şurada KTP bir adında bir objem var. Bunun kitabının ismi, yazarı, ISBN'i, hangi rafta olduğu tüm bilgileri.
+
+590
+01:51:27,123 --> 01:51:54,323
+içerisinde var. Gelin kitap 2'yi de farklı bir constructor kullanarak ilklendirelim. Onda da mesela şunu kullanalım. Sadece 3 madde ekliyor olalım. Yine Ali Emri'nin izinde diye bir hatırat var. Belki okumuşsunuzdur. Serhan Kayşin'in kitabı. Oldukça güzel bir kitap.
+
+591
+01:51:54,703 --> 01:52:21,883
+Kavsiye ederim bir taraftan. Yumruğiyet dönemini anlatan bir kitap. Burada yine bir ISBN numarası söz konusu oluyor olacak. Onu şöyle vereyim. ISBN'ini ve bu kitabı da tanımlıyorum. Ama bu kitabı dese eksik arkadaşlar şu an. RAF numarası ve RAF'taki sıra numarası bilgileri eksik. Bunları daha sonra şu şekilde ekleyebiliriz.
+
+592
+01:52:22,228 --> 01:52:25,908
+Set, raf numarası sallıyorum.
+
+593
+01:52:26,448 --> 01:52:28,868
+Bir, kitap iki, set.
+
+594
+01:52:29,395 --> 01:52:45,576
+Sıra numarası o içeride sıfırıncı sırada olmuş olsun. Zaten aynı raftla birinci sırada başka bir kitaplardı. Bu da sıfırıncı sırada olsun. Buradaki diziler, imdiziler sıfırdan başlıyor CDT gibi. Onu da böylece söylemiş olalım.
+
+595
+01:52:45,576 --> 01:52:57,256
+Bir diğer kitap da kitap 3 olmuş olsun. New Anahtar Sözcüğü'nden sonra kitap 3'ün default constructorını kullandım. Kitap 3 diye bir kitap oldu.
+
+596
+01:52:57,395 --> 01:53:00,855
+Ama içerisinde o kitap nesnesinin hiçbir bilgi yok.
+
+597
+01:53:01,336 --> 01:53:07,435
+O bilgiyi teker teker elle seterlarla beraber girmem gerekiyor.
+
+598
+01:53:07,435 --> 01:53:14,355
+Yine İrfan Orga'nın bir Türk ailesinin öyküsü diye Cumhuriyet dönemini anlatan bir.
+
+599
+01:53:14,735 --> 01:53:27,695
+kitap var. Bunu da tavsiye ederim. Onu mesela kitaplığımıza eklemiş olalım. Set, yazar adı, nerede o? Yazar adı. Yırfan Orga.
+
+600
+01:53:29,524 --> 01:53:32,524
+Neydi? Or, graph yazdık.
+
+601
+01:53:32,944 --> 01:53:39,564
+Ve işte sırayla her bir ISBN'ini önce ekleyelim.
+
+602
+01:53:39,984 --> 01:53:46,324
+Ondan sonra set rough no deyip rough numarasını ekleyelim.
+
+603
+01:53:46,824 --> 01:53:53,484
+Ardından set sıra no diyerek sıra numarasını ekliyor olalım.
+
+604
+01:53:53,484 --> 01:53:57,524
+Yani gerçek kitabı şöyle ISBN'ini ben çekip şuradan olalım.
+
+605
+01:53:57,524 --> 01:54:02,764
+Bak şöyle koyarsam daha doğru olur. Bu da ikinci rafın ikinci sırasına eklenmiş olsun. Çok önemli değil.
+
+606
+01:54:03,163 --> 01:54:09,944
+N tane kitabımız olabilir. İstediğiniz gibi o kitapları bu şekilde isimlendirebilirsiniz.
+
+607
+01:54:09,944 --> 01:54:18,364
+Bu kitapların bu constructorları çalışıp setörleri çalıştığı andan itibaren ilgili raflara yerleştirilmiş durumda.
+
+608
+01:54:18,904 --> 01:54:23,724
+Ama daha ilgili raflara yerleştirilmiş durumda ama nasıl yapıyorduk onu yerleştirmeyi?
+
+609
+01:54:25,524 --> 01:54:50,824
+Kitap ekle metodunu kullanıyoruz. Şimdi üç tane evet tıbımız var. Raf numaraları belli. Gidip kitaplık sınıf objesinin kitap ekle metodunu kullanarak yapmamız lazım. Kitaplık nokta yazmışız. Evet. Kitap bir. Tüm her birisini kitaplığa ekleyeyim. Bakın. Kitap iki. Kitap üç.
+
+610
+01:54:51,412 --> 01:54:57,372
+Böylece her birisini kitaplığın içerisine eklemiş oldum.
+
+611
+01:54:59,391 --> 01:55:07,652
+Bu, yani hani temelde bakıldığında sırayla kitapları oluşturdum. Kitaplığın içerisinde ekle metodu vardı. Şurada.
+
+612
+01:55:08,095 --> 01:55:24,235
+ekle metodu vardı. O da rafların içerisindeki kitap ekle metodunu çağırıyordu. O da gördüğümüz gibi gidip kitaplar dizisine, o rafda bulunan kitaplar ArrayList'ine o kitabı ekliyordu, ekledi.
+
+613
+01:55:24,235 --> 01:55:36,095
+Biz mesela o artık kaçıncı raftaki kitapları görmek istiyorsak onun metodunu çağırabiliriz. Raf gösterme göster, raf nasıl bu? Mesela işte bir...
+
+614
+01:55:36,095 --> 01:55:49,755
+Birinci raftaki kitapları bana göster dediğinde ilgili metot çağrılıyor olacak. Birinci rafta bulunan kitaplar aşağıdaki gibidir. Kitabı da yazar, ISBN, Tera Palast'ı Gece Esmine diremeyin.
+
+615
+01:55:51,412 --> 01:55:53,311
+Evet, şurada 1'e eklemişiz.
+
+616
+01:55:53,971 --> 01:55:58,551
+Yazarının ismi ve ISBN numarası.
+
+617
+01:55:59,091 --> 01:56:00,452
+Şurada şey güzel çıkmış.
+
+618
+01:56:00,551 --> 01:56:02,612
+Onu sonra manuel bir T koyayım.
+
+619
+01:56:02,731 --> 01:56:03,471
+Güzel çıksın.
+
+620
+01:56:03,591 --> 01:56:04,831
+Hepsi aynı boyutlu olduğu için.
+
+621
+01:56:04,931 --> 01:56:06,671
+Alignmentlarla hiç uğraşmayalım şu an.
+
+622
+01:56:07,291 --> 01:56:11,671
+Ardından yine birinci rafta olan Ali Emre'nin izinde kitabı var.
+
+623
+01:56:11,831 --> 01:56:12,931
+ISBN numarasıyla.
+
+624
+01:56:13,412 --> 01:56:14,351
+İkinci rafa bakalım.
+
+625
+01:56:20,979 --> 01:56:45,979
+İkinci rafta, şurada bir şey unutmuşuz, kusura bakmayın. İkinci rafta yine bulunan kitapların hangisi olduğunu görebiliyorsunuz. Mesela şöyle şeyler yapalım. Birinci raftaki kitapları görelim. Gördük. İki tane kitaplar. Ondan sonra bu kitaplık sınıfında...
+
+626
+01:56:47,188 --> 01:57:06,887
+Birinci rafta bulunan bir kitabı silelim. Mesela kaç birinci rafta bulunuyor? TTF2. Birinci rafta bulunuyor. Ondan sonra tekrardan bu metodu çağıralım. Tamam. Yani silindiğin o bilgisi de görülmüş oldu. Şöyle baktığınızda birinci rafta bulunan kitaplar aşağıdaki gibi iki tane var.
+
+627
+01:57:07,539 --> 01:57:28,600
+Silindikten sonra bir daha çağırıyorum. Bakın şuradan önce çağırıyorum. Ondan sonra o kitabı siliyorum. Ondan sonra tekrar çağırıyorum. Gördüğünüz gibi o kitap burada olmuş oluyor. Sillerken kitap sil nesnesine bakalım şurada. Kitap sil bana kitabı döndürüyordu. Hatta bakın şöyle bir şeyler yapalım.
+
+628
+01:57:30,739 --> 01:57:51,859
+Dönen şeyi bir kitap tipinde nesnenin içerisine atalım. Hatta şöyle yapsak daha güzel olur. Kitaplık nokta, kitap ekle. Ama onun şeyini değiştirelim. Dur dur şöyle yapalım daha güzel olmuş olsun. Oraftan siliyoruz ya biz. Kitap, tmp.
+
+629
+01:57:52,467 --> 01:58:00,467
+KTP bir tane değişkenin içerisine attın. Artık bunun rafını birinci raftan...
+
+630
+01:58:00,912 --> 01:58:28,692
+İkinci rafa set edeyim. İkinci rafa geçmiş olsun. Sıra numarası yine sıfır olabilir. Yani sildiğim kitabı başka bir rafa aldım. O yüzden öncelikle bunu bir çalıştırayım. Sonra ikinci rafı göstereyim. Ondan sonra tekrardan şunu çalıştayım. Yani sildiğimi başka bir rafa almış oldum. Şurada her bir ifadeyi yazdıktan sonra da
+
+631
+01:58:28,912 --> 01:58:30,592
+Şurada bir satır
+
+632
+01:58:33,939 --> 01:58:39,859
+Boşluk atsın diye şunu yazayım ki güzel okuyabilenin yoksa birbirlerine çok karışıyorlar.
+
+633
+01:58:40,299 --> 01:58:48,719
+Şimdi ürettiği sonuç bu. Bakın birinci rafta bulunan iki tane kitap bu. İlk şeyde ikinci rafta bulunan kitaplarda bunlar.
+
+634
+01:58:49,179 --> 01:58:54,319
+Görüyorsunuz hangi iki satır çalıştı? Şu iki satır çalıştı. Şu ikisini buldum.
+
+635
+01:58:54,719 --> 01:59:01,000
+Ardından kitabı sildim ve onun raft numarasını değiştirdim. Birinci rafta şu kitaplar var.
+
+636
+01:59:01,939 --> 01:59:06,619
+Niye eklenir Java? Tabii sadece raf numarasını eklenir, bir de kitabı rafa eklememiz lazım.
+
+637
+01:59:07,259 --> 01:59:09,579
+Hiç uyarmıyorsunuz. Kitaplık, kitap ekle.
+
+638
+01:59:10,399 --> 01:59:17,339
+Bu kitabı gidip o rafa da eklememiz lazım ki sadece değiştirmemiz yeterli değil.
+
+639
+01:59:17,899 --> 01:59:21,099
+Şimdi tekrardan şu örneği şöyle açtığımız durumda.
+
+640
+01:59:21,099 --> 01:59:24,979
+Hangi kitabı sildik? Kera Palası'da gece yarısı birinci raftaydı.
+
+641
+01:59:26,644 --> 01:59:29,863
+Hala birinci rafda olarak devam etmişiz şurada.
+
+642
+01:59:30,483 --> 01:59:35,483
+Ali Emri'nin İzinli kitabını birinci raftdan silmişiz, ikinci rafa eklemişiz.
+
+643
+01:59:35,583 --> 01:59:37,344
+İlk durumda bakın ikinci rafın içinde değil.
+
+644
+01:59:39,380 --> 01:59:49,180
+Gibi gibi yani inanılmaz burada farklı farklı örnekler gerçekleştirip kafanızda olayın daha güzel canlanmasını sağlayıp şeyler yapabilirsiniz.
+
+645
+01:59:49,659 --> 01:59:57,440
+Dediğiniz gibi kitaplık sınıfının içerisine raf ekle, raf sil gibi şeyler yapıp bunları raflara da ekleyip silebilirsiniz.
+
+646
+01:59:57,440 --> 02:00:05,520
+O tarz farklı farklı şeyler olabilir. Hatta hiç olmayan bir sınıfı bakalım şey yapalım. Şunları komente alalım.
+
+647
+02:00:07,891 --> 02:00:12,152
+Mesela 7 numaralı raft diye bir raft yok uzanlıkça.
+
+648
+02:00:13,092 --> 02:00:13,851
+Tabii 4 yok.
+
+649
+02:00:14,032 --> 02:00:15,192
+4'ün içinde hiçbir şey yok.
+
+650
+02:00:16,572 --> 02:00:18,072
+Öyle olunca sadece bu yazıyor.
+
+651
+02:00:18,192 --> 02:00:28,412
+Ama mesela siz oraya da hani ifatın adını gösterdiğim gibi eğer size 0'sa hiç bu raftta bir kitap yoktu bilgi versin gibi çeşitli şeyleri dinleyebilirsiniz.
+
+652
+02:00:29,311 --> 02:00:31,052
+Evet burada soru soran arkadaşımız var mı?
+
+653
+02:00:32,979 --> 02:00:36,279
+Yani derse başlarken 50 kişi falandır, 30-50 kişiye düşmüşüz.
+
+654
+02:00:36,699 --> 02:00:40,419
+Ben anlattıkça herhalde yıl sıkılan, çıkan arkadaşlar oluyor.
+
+655
+02:00:40,579 --> 02:00:42,379
+İnşallah anlaşılıyorduk.
+
+656
+02:00:42,459 --> 02:00:44,159
+Kötü anlatmıyoruzdur diyelim.
+
+657
+02:00:47,188 --> 02:00:56,967
+Tamam, ara verelim. Benim saatim kaç geçiyor? 3 geçiyor. Arkadaşlar, 15 geçe yine, 4'ü 15 geçe burada olalım.
+
+658
+02:00:57,347 --> 02:01:01,787
+Artık örnek kısmını geçtim, biraz dersin konularından ilerliyor olacağım. Tamam?
+
+659
+02:01:02,507 --> 02:01:03,188
+Çeyrek geçiyor.
+
+660
+02:01:04,087 --> 02:01:05,268
+Buyurun, bir şey sorayım.
+
+661
+02:01:05,568 --> 02:01:07,068
+Bu kodu paylaşsak mısınız?
+
+662
+02:01:07,628 --> 02:01:14,068
+Bu kodu paylaşırız. Zaten ekran kayıtlı. Videoyu siz görüyorsunuz online yıldız editöreye girdiğinizde.
+
+663
+02:01:14,548 --> 02:01:17,608
+Oradan oturup bir yazsanız siz güzel olur. Hemen paylaşmayacağım o yüzden.
+
+664
+02:01:18,328 --> 02:01:22,608
+Trafik yapmak isteyen arkadaşlar kendinizi şöyle bir yazsın. Daha güzel olur. Bir süre sonra paylaşırız.
+
+665
+02:01:26,676 --> 02:01:30,836
+Ağa şeyle geçe görüşürüz. Kendinize iyi bakın. Sağlıcakla kalın.
+
+666
+02:13:36,884 --> 02:13:49,064
+Evet, tekrardan merhaba arkadaşlar. Şimdi normal ders tarafından devam ediyorum. Örnek yaptık, anlaşıldı. Nasıl oldu? Oradan devam ediyor.
+
+667
+02:14:01,587 --> 02:14:21,868
+Biraz kurucu ve çoklu metod anlamlarından bahsettik. Bugün sahiplik ilişkileri üzerinde biraz duruyor olacağız. Sınıfların ve sınıfların objeleri arasında çeşitli ilişkiler var. Bunlar işte association, dependency, aggregation, composition ve inheritance olarak sıralayabiliriz.
+
+668
+02:14:22,207 --> 02:14:31,527
+Bugün vaktimiz yetki ölçüde. Association, independence, neyse ne kadar giderse bunları size aktarmaya çalışıyor olacağım.
+
+669
+02:14:32,148 --> 02:14:48,448
+Şimdi association ilişkisi Türkçe'ye sahiplik diye çeviriyoruz. Bir sınıf bir yerine sahip olabiliyor. Böyle bir durum söz konusu. Az önce bizim yaptığımız örnekte de bunu görebildik aslında.
+
+670
+02:14:49,287 --> 02:14:53,807
+Association kavramını en güzel UML diagramına baktığımızda
+
+671
+02:14:54,127 --> 02:15:03,188
+Bir sınıfın içerisinde başka bir sınıfın attribute olarak kendisi kullanılıyorsa buna association ilişkisi diyoruz.
+
+672
+02:15:03,188 --> 02:15:17,207
+Tekrar söyleyelim. UML diagramı içerisinde attribute'ler yazıyorduk. O attribute'ler içerisinde primitive tip değil de başka bir sınıfın tipi yer alıyorsa bu association ilişkisi oluyor.
+
+673
+02:15:17,876 --> 02:15:21,876
+farklı farklı tarzda olabilir tabiçe bunlar.
+
+674
+02:15:22,355 --> 02:15:30,555
+Mesela işte A sınıfı ile B sınıfı arasında olan bir ilişki ve ilişkiyi isimlendiriyoruz.
+
+675
+02:15:30,555 --> 02:15:35,655
+Okun yenine göre hangi sınıflar birbirlerine sahip onu buradan görüyoruz.
+
+676
+02:15:36,055 --> 02:15:43,456
+Mesela A sınıfından B sınıfına bir association ok ile belirtilmişse A sınıfı B sınıfına sahiptir.
+
+677
+02:15:43,935 --> 02:15:49,555
+Yani A sınıfının bir örneği direkt B sınıfının bir instansına.
+
+678
+02:15:50,355 --> 02:15:54,496
+bilgi gönderebiliyor, mesaj aktarımı yapabiliyor bu o manada.
+
+679
+02:15:55,135 --> 02:15:58,496
+Veya çift yönlü bir association ilişkisi olabilir.
+
+680
+02:15:59,076 --> 02:16:05,835
+Yani A sınıfının B diye bir sahipliği, B sınıfının A'ya bir sahipliği olabilir.
+
+681
+02:16:06,416 --> 02:16:08,775
+Hocam bu karışık değil mi? Birazdan anlatacağım.
+
+682
+02:16:08,775 --> 02:16:17,555
+Evet, karışık bir yapı. Böyle olması her daim problemi zorlaştırmıyor ama bazılarla problemi zorlaştırılması söz konusu.
+
+683
+02:16:18,355 --> 02:16:30,675
+Adam size bahsediyor olacağım. Bir diğeri kardinalite dediğimiz bir şey. Ne kadar? Yani bir sınıfın içerisinde diğerinden ne kadar bulunabilir? O kavramlar. Onlara bakalım isterseniz.
+
+684
+02:16:31,135 --> 02:16:43,396
+Kardinalite yani bu ilişkinin üzerine yazılan bir isim vardır. Şurada mesela yazıyoruz onları. Bir de işte 1'e yıldız, 1'e 1, 0'a 1 gibi çeşitli kardinaliterler söz konusu olabilir.
+
+685
+02:16:44,095 --> 02:16:46,275
+Yıldız işareti gördüğümüzde 0.
+
+686
+02:16:46,355 --> 02:17:02,015
+Veya N tane olabilir manasında. Yani şu örnekten bakıldığında bir müşterinin N tane order'ı, siparişi olabilir. Bu N'in içinde 0'da dahil, 350'de dahil.
+
+687
+02:17:02,775 --> 02:17:11,435
+Gardinat aritenin bu yıldız olarak gösterilen tarafındaki manası bu. Yıldız olarak değil de 1-2 nokta.
+
+688
+02:17:11,891 --> 02:17:38,691
+Yan yana iki tane nokta. Yıldız olarak gösteriliyorsa minimum bir olması lazım. Yani biz müşteriye müşteri dememiz için en az bir tane bizden sipariş vermesi lazım. Ondan sonra bizim müşterimiz olur diye bir senaryonuz varsa ki bazı durumlarda bu tarz olması gerekir. Öyle olduğu durumda gösterimi bu şekilde olması lazım. Bir yazdığımız durumdaysa sadece bir. Yani mesela şuradaki örneğe bakın. Her bir müşterinin
+
+689
+02:17:39,572 --> 02:17:41,191
+N tane orderı var.
+
+690
+02:17:42,471 --> 02:17:47,511
+Bunu bir ile Yıldız'ın yerini değiştirirsek nasıl olur pekala hocam derseniz.
+
+691
+02:17:47,956 --> 02:18:04,236
+Her bir tane ordu en tane müşteri tarafından verilmiş oluyor. Yani tek bir sipariş var. Siparişin ID'si var. Yemek söylemişim mesela. Bir hamburger gelse de yiyeyim demişim. Aynı hamburgeri 30 tane müşteri sahip olabilir gibi bir mantık çıkıyor.
+
+692
+02:18:04,236 --> 02:18:15,855
+Lojik olarak düşünüldüğünde tabii burada uygun değil. Bazı durumlarda uygun olabilir. Ama hani lojiğini güzel kurgulamanız gerekiyor. Veya maksimum ne kadara kadar?
+
+693
+02:18:15,956 --> 02:18:26,916
+Ulaşabileceğini de yine kardinalite değerlerini belirlerken söyleyebiliyorsunuz. Minimum bir, maksimum 11 tane olacak şekilde mesela bu sınıfa sahip olabilsin.
+
+694
+02:18:27,976 --> 02:18:37,355
+Futbol takımını düşünüyor olalım. Futbol takımlarında mesela 11 kişi oynuyor. O oynadığı anda maç belki yedek kulübesinde.
+
+695
+02:18:37,808 --> 02:18:40,087
+Ekstradan daha fazla insan olabilir.
+
+696
+02:18:40,828 --> 02:18:45,608
+Ama hani futbol sahamının içerisinde bir takımdan kaç kişi var?
+
+697
+02:18:45,728 --> 02:18:48,808
+11 kişi bu şekilde sınırlayabiliyorsunuz.
+
+698
+02:18:48,808 --> 02:18:51,587
+O zaman şöyle diyebilirsiniz.
+
+699
+02:18:51,788 --> 02:18:58,148
+Ya hocam işte 1'de 11 olsun o zaman bir takımda en az bir kişi olsa da oynanabiliyor mu?
+
+700
+02:18:58,528 --> 02:19:01,808
+Ben hiç öyle bir senaryoyla karşılaşmadım ama diyelim ki...
+
+701
+02:19:01,840 --> 02:19:09,299
+O bir takımdan 10 kişi kırmızı kart görse, sadece bir kişi kalsa, kaleci kalsa, yine oynanabiliyor mu? Bunları bilmiyorum hiç.
+
+702
+02:19:10,180 --> 02:19:16,580
+Oynanabiliyorsa eğer, 1-11 yazabilirsiniz ama oynanamıyorsunuz. En az 7 kişi olması lazım.
+
+703
+02:19:16,840 --> 02:19:26,900
+7'nin altına düşerse oynanamıyorsa futbol kuralları gereği 7, 2 tane nokta, 11 yazmamız beklenir kardinalite değerlerini gösterirken.
+
+704
+02:19:27,636 --> 02:19:46,175
+Şimdi tabii burada her şey açık açık anlatılıyor. Şu sınıf şuna sahiptir. Bir tane bu sınıftan bir obje aldığımızda en tane şu objenin diye sahip olabilir. Yani sahip olmak, bir dizi şeklinde onun içerisinde barınır aslında o manada.
+
+705
+02:19:55,636 --> 02:20:00,616
+Ne edebiliriz? Yani burada neler var? Görüyorsunuz custom'ı diye bir sınıf var UML diagramında.
+
+706
+02:20:00,691 --> 02:20:28,411
+order diye bir sınıf var. Bunu görüyoruz. Evet, bire, enlik bir ilişki söz konusu burada. Ama o ilişki, attribute de nasıl gerçeklenmiş o bilgi, UMLN diagramında göstermek zorunda değilsiniz. Buna bilgi, saklama, hidden information diyoruz ya da şurada gördüğünüz gibi gösterebiliriz. Yani custom'ın tablosunun attribute diye private tipinde bir dizisi varmış. Her birisi order.
+
+707
+02:20:28,691 --> 02:20:39,563
+Orders'lardan oluşuyormuş. Orders diye birisi varmış. Her birisi order tipinde bir şeylerden oluşuyormuş. Yani az önce söylediğim gibi...
+
+708
+02:20:39,603 --> 02:21:03,603
+Association ilişkisi olduğunu nasıl anlarız? Bir sınıfın, bir sınıfın attribütünün içerisinde başka bir sınıfı görüyorsak o iki sınıf arasında bir association ilişkisi söz konusudur. Ama association bu. Zaten oldukça basit anlaşılması da. Az önce mesela kullandık. Yani RAF dizisinin RAF...
+
+709
+02:21:04,031 --> 02:21:17,092
+Sınıfının içerisinde attribute olarak kitapları mesela kullandığımız durumda, onların dizisini kullandığımız durumda bu iki sınıf arasında bir association ilişkisi kurduğumuzu gösteriyor.
+
+710
+02:21:17,092 --> 02:21:25,711
+Bir diğer ilişki türü dependency. Dependency ilişkisinde bir bağlılık, bağımlılık söz konusu.
+
+711
+02:21:32,031 --> 02:21:44,211
+sahip olduğumuz sınıfın ismini attribute kısmında görüyorsak dependency bağımlılık ilişkisinde ise dependence olduğumuz sınıfın metodunu
+
+712
+02:21:44,592 --> 02:21:51,551
+Veya sınıfın ismini veya metot ismini bizim metotlar kısmında görüyor olacağız.
+
+713
+02:21:52,012 --> 02:21:59,972
+Genelde geçici sahiplik olmadan geçici kullanımlar için parametre aktarımı amacıyla kullanılıyor.
+
+714
+02:22:00,332 --> 02:22:04,891
+Mesela bir örnek verelim. Şu A sınıfı, bu da B sınıfı.
+
+715
+02:22:05,391 --> 02:22:09,492
+A sınıfıyla B sınıfı arasında bir dipendinsi söz konusu.
+
+716
+02:22:09,492 --> 02:22:12,371
+Okun tireliği değişti. Bakın az önce kontinüstü.
+
+717
+02:22:12,592 --> 02:22:29,832
+Şimdi tere tere tere oldu. Bunun da tabii ki bir manası söz konusu. UML diagramında böyle üç parçaya, üç tane dikdörtgene böldüğümüz durumda en üstte sınıfın ismi, altta atribütler, en altta da metotlarını kullanır.
+
+718
+02:22:29,832 --> 02:22:40,592
+Bakın hiçbir atribütü UML diagramında gösterilmiş. O bilgi saklanmış. Ama altta bir private metodu var, e-metot diye. O metoda parametre...
+
+719
+02:22:40,592 --> 02:22:45,992
+Olarak başka bir sınıfın, ki B dediği sınıfı görüyoruz, başka bir sınıf verilmiş.
+
+720
+02:22:46,952 --> 02:23:00,452
+Böyle olduğu durumda, yani attribute olduğu durumda association'da metoda parametre olarak verilmiş veya metoddan parametre olarak alınmış gibi olduğu bir durumda ilişkimizin tipi pendensi oluyor.
+
+721
+02:23:03,731 --> 02:23:21,652
+Association'a, hani dependency association'ı karşılaştırmalı gideceğiz biraz da. Association'ın tek yönlü ve çift yönlü olma durumu söz konusu olabiliyor. İsterseniz birkaç örnek üzerinden bunları UML diagramından inceleyelim kıymetli arkadaşlar.
+
+722
+02:23:21,652 --> 02:23:31,652
+Bir taraftan hem ben de UML diagramlarını okuyor olayım, hani özelliklerini anlatıyor olayım. Siz de kafanızda...
+
+723
+02:23:31,731 --> 02:23:44,311
+Yavaş yavaş bu semboller, bu ifadeler canlanıyor olsun. Bakın bir person sınıfım var. Bu bir sınıf. Bir diğer main program 01 diye bir sınıfım var. Bu da bir sınıf.
+
+724
+02:23:44,691 --> 02:23:52,731
+Bir de CARB isminde bir sınıfım var. Burada gördüğümüz bir, iki, üç tane sınıfımız söz konusu.
+
+725
+02:23:53,412 --> 02:24:00,531
+Bu sınıfların hemen altında bulunan şu alanda attribütleri, şu alanda da neleri var? Metotları var.
+
+726
+02:24:00,931 --> 02:24:05,051
+Mesela main programın hiçbir attribütü yokmuş ama main metodu varmış.
+
+727
+02:24:05,391 --> 02:24:10,271
+Main metodu gördüğümüz anda ne anlıyoruz? Programın akışı bu main metodun içerisinden başlayacak.
+
+728
+02:24:10,271 --> 02:24:12,691
+Şu sınıfın içerisinde bulunan onu anlıyoruz.
+
+729
+02:24:12,691 --> 02:24:38,091
+Şurada gördüğümüz şey neydi? Package ismi. Yani NYP02 diye bir package'in altında bu sınıfların hepsi. Araba sınıfımız söz konusu. Araba sınıfımızın etribütleri var ve yine araba sınıfımızın metotları söz konusu. Şimdi biraz bunları yorumlayalım. İlişkileri yorumluyor olalım.
+
+730
+02:24:38,388 --> 02:25:00,868
+Person sınıfının yani insan sınıfının bir ismi varmış insanın ismi string tipinde bir de bakın arabası varmış car tipinde car başka bir sınıftı şurada gördüğünüz burada kullandığımız anda o ilişkimizin tipine association, association continuous bir okla ifade ediliyor.
+
+731
+02:25:03,476 --> 02:25:06,716
+0 veya 1 tane arabaya sahip olabilir.
+
+732
+02:25:07,835 --> 02:25:09,876
+Buradaki ilişkiden bunu görüyoruz.
+
+733
+02:25:09,876 --> 02:25:11,916
+Yani tabii ülkemizde
+
+734
+02:25:12,211 --> 02:25:34,711
+Çok bu durum geçerli olmayabilir. Yani kimin bir tane arabası olsun, hiç arabası olmayacaktır. Bire sıfırlık bir ilişkisi var ama hani örnek verdiğimizi düşünelim. Paraza bir insanın hiç arabası olmayabilir. Olursa da ama maksimum bir tane arabası olabilir diye bir ne kurulmuş? Association ilişkisi kurulmuş. Şuradan yakalıyoruz.
+
+735
+02:25:35,316 --> 02:25:55,096
+Burada olmaya da bilirdi bu. Burada olmaya da bilirdi. O zaman ne diyoruz? Heiden information. Şu ok'tan anlayacaktır bu sefer. Ok'un yönüne dikkat edelim. Person sınıfı ok bu tarafa doğru gittiği için kar sınıfına sahip. Yani o da bir mana ifade. Ok'un yönü tam tersi olsaydı kar sınıfı person'a sahip olacak.
+
+736
+02:25:55,731 --> 02:26:23,731
+Yine person'ın şu artık birkaç kere vurguladım herhalde alışmışsınızdır. Person sınıfının şurada bir metodu var. İsmi person yani constructor metodu bu. İçerisine o kişinin ismini alıyor. Bakın default constructor değil, constructor person'ın ismini vermeniz lazım bir kişiyi construct edebilmek için. Ardından get name metodu var. Get set name diye bir metodu yok bakın.
+
+737
+02:26:23,731 --> 02:26:24,172
+Arkadaşlar, class, object, constructor, inheritance, polymorphism,
+
+738
+02:26:24,500 --> 02:26:49,760
+Olmamasını şu an neden yoktur diye anlayabiliyor musunuz? Bilmiyorum. O hemen hızlı bir şekilde görülebiliyor mu? Zihninizde canlanabiliyor mu bilmiyorum ama eğer ki person sınıfının default bir constructor olsaydı, yani içine hiç parametre almayan person, aç kapa parantez, kapa parantez şeklinde bir constructor olsaydı, onu kullandığım durumda ismini set edebilmek için set name diye bir setırımın olması beklenir.
+
+739
+02:26:52,500 --> 02:26:54,659
+İklendirebilmek için muhakkak ismini veriyorum.
+
+740
+02:26:55,188 --> 02:26:59,468
+Ve daha sonra bu ismi getmeyimle beraber öğrenebilirim.
+
+741
+02:26:59,768 --> 02:27:03,648
+Pekala, böyle bir senaryoda da hocam hala daha setmeyime ihtiyaç olmaz mı?
+
+742
+02:27:04,067 --> 02:27:05,747
+Kişinin ismi değişiyorsa olabilir.
+
+743
+02:27:06,387 --> 02:27:08,387
+Yani o kişinin ismi mahkemeye gitmiştir.
+
+744
+02:27:08,988 --> 02:27:12,288
+İsmi işte bir A'dır, B'ye değiştirmiştir.
+
+745
+02:27:12,387 --> 02:27:14,048
+Siz de gelip değiştirmek istiyorsunuzdur.
+
+746
+02:27:14,308 --> 02:27:18,148
+O zaman setmeyimi de kullanmanız gerekebilir.
+
+747
+02:27:18,587 --> 02:27:21,128
+Ama bu örneğimizde bakıldığında kullanılmamış.
+
+748
+02:27:21,128 --> 02:27:23,188
+Bu adamın arabası var mıdır diye konuşuyor.
+
+749
+02:27:23,188 --> 02:27:28,148
+Kontrol edildiğinde geriye bir araba objesi dönecek. Yine varsa.
+
+750
+02:27:28,628 --> 02:27:39,668
+Araba bu kişiye set car metoduyla bir araba parametre olarak verip onu nasıl söyleyelim görebiliriz.
+
+751
+02:27:39,868 --> 02:27:45,128
+Ardından bir de introduce set diye bir metodu var. Bu da string geri döndürüyormuş.
+
+752
+02:27:45,128 --> 02:27:55,028
+Yani kendisi o insan benim ismim şudur, şu şekilde bir arabam vardır diye kendisini tanıtıyor olacak.
+
+753
+02:27:55,427 --> 02:27:56,568
+Bir diğeri arkadaşlar.
+
+754
+02:27:56,628 --> 02:28:20,908
+Ne? Car sınıfımız. Car sınıfının private olarak bir plaka numarası varmış. String tipinde. Ardından kendisinin bir constructori söz konusu. Constructörı String alıyormuş. Bakın farklı farklı gösterimler söz konusu. Aldığı parametrenin ismiyle beraber 2.3'te String yazılabileceği gibi direkt String'de yazılmış. Burada plaka ile beraber.
+
+755
+02:28:21,523 --> 02:28:49,523
+Eşleştiğini düşünebiliriz. Bunun tek bir tane attribütü var zaten. Ardından getPlate denilerek onun plaka numarasını öğrenebileceğimiz bir metot da kullanılmış. Bir diğeri main program. Main program'a bakıldığında ise hem person ile hem de car sınıfıyla yani okların şeklinden anladığımız ölçüde bir dependency ilişkisi var. Bu ne demek? Main programın attribütleri içinde değil ama metotlarının içerisinde car ve person sınıflarının
+
+756
+02:28:49,523 --> 02:28:52,683
+parametre olarak aktarıldığını göreceğiz.
+
+757
+02:28:53,103 --> 02:28:54,923
+Hocam yazılmamış yani göremiyorum.
+
+758
+02:28:55,103 --> 02:28:58,644
+O bilgi şu an göstermeye de biliriz.
+
+759
+02:28:58,723 --> 02:29:00,563
+Gösterebiliriz nasıl kullanıldığını.
+
+760
+02:29:01,563 --> 02:29:02,763
+O her ikisi de olabilir.
+
+761
+02:29:02,923 --> 02:29:05,504
+Ama ok yönüne bakarak bunu anlayabiliyoruz.
+
+762
+02:29:05,603 --> 02:29:07,644
+Bu tek yönlü ilişki.
+
+763
+02:29:08,083 --> 02:29:12,004
+Kar sınıfını burada kodunu tanımlayacak olursak.
+
+764
+02:29:12,004 --> 02:29:16,164
+Araba sınıfının bir tane plakası söz konusu.
+
+765
+02:29:17,523 --> 02:29:22,103
+Constructor'ına o plakayı vererek iltendiriyoruz.
+
+766
+02:29:22,443 --> 02:29:25,515
+Ardından Get Plate diye yine bir...
+
+767
+02:29:25,556 --> 02:29:38,276
+getter'ı söz konusu. Person'a geldiğimizde ise bir adamın ismi söz konusu bir de kar tipinden bir kar isminde oluşturulacak attribütü söz konusu.
+
+768
+02:29:38,936 --> 02:29:52,956
+Constructor'a bakıldığında adamın ismini verdiğimizi söylemiştik. Bir getter'ı var get name. Get car diye get başka bir kar getter'ı var. Set car diye bir setter söz konusu. Ardından introduce self metodu var.
+
+769
+02:29:53,556 --> 02:30:00,000
+Şimdi geriye string bir veri döndürüyor. Şuradan da anlayabiliyoruz zaten bunu. O yüzden bir string...
+
+770
+02:30:00,000 --> 02:30:26,000
+Yanımlanmış intro diye. Ondan sonra bunun işi dolduruluyor. Hello, my name is GetMe. İsmim neyse onu alıyorum. Aynı sınıfın içerisinde bu işler cereyan ettiği için this name diyerek şuraya direkt o attributun ismini de yazabilirim. Ama GetMe'nin metotla kullanılması daha güzeldir. Eğer ki kar nesnesini alsa set edilmemiş durumdadır. Şu seter'a girilmemiştir. Bu kişinin arabası yoktur. Arabası yoksa...
+
+771
+02:30:27,443 --> 02:30:29,163
+Pardon, özür diliyorum.
+
+772
+02:30:29,323 --> 02:30:32,603
+Kar nesnesi naldan farklıysa,
+
+773
+02:30:32,755 --> 02:30:44,615
+Yani naldan farklı demek arabası varsa benim ismim şu ve işte şu plakalı arabaya sahibim. En sonunda da plakalı bahsederilmiş. Return intro diyerek bu geri döndürülüyor.
+
+774
+02:30:44,716 --> 02:30:51,655
+Spring olarak ekrana herhangi bir şekilde yazı yazılmıyor. Bakın bir spring bilgi geri tarafa döndürülüyor.
+
+775
+02:30:51,655 --> 02:31:00,396
+Main programa geldiğimizde ise sadece main metod söz konusu bunun içerisinde. Bir tane Oktay diye kişi tanımlanmış.
+
+776
+02:31:00,755 --> 02:31:25,695
+sizin oğlu bir tane araba tanımlanmış. Bir plakası söz konusu. Oktay'a bu araba set edilmiş. Yani Oktay'ın, bakın Oktay şu, set car diye bir metodu var. O person tipinde bir nesne olduğu için set car diye bir arabası var. Ona set edilmiş. Ardından işte Oktay introduce set denirken kendisi tanıtılması istenmiş ve
+
+777
+02:31:27,603 --> 02:31:33,804
+O, az önce gördüğümüz şurada, Octay Introduce-Sert deneyiminde bir Spring veri dönüyordu.
+
+778
+02:31:34,263 --> 02:31:37,463
+Sistem Outprint'in deneminde de bu Spring'in değeri ekrana yazılıyordu.
+
+779
+02:31:37,883 --> 02:31:41,644
+Aynı şekilde, işte Aziz Sancağı diye birisi tanımlanmış.
+
+780
+02:31:41,783 --> 02:31:46,763
+Aziz isminde bir objeyle bu Introduce-Sert deneyiminde sadece kendisini tanıtıyor olacak.
+
+781
+02:31:47,023 --> 02:31:49,523
+Üzerine herhangi bir araba burada set edilmediği için.
+
+782
+02:31:50,004 --> 02:31:51,864
+O arabayı kullanamayacak.
+
+783
+02:31:52,204 --> 02:31:59,744
+Fakat şimdi tabii siz olayı güzel anlayasınız diye lojiğini nasıl söyleyelim biraz basit tuttuk.
+
+784
+02:32:00,084 --> 02:32:02,144
+Fakat şunları düşünmek lazım.
+
+785
+02:32:02,704 --> 02:32:15,604
+Bir tane araba bir kişinin üstüne ruhsatlıysa aynı şu arabayı, rover'a gidip normalde gerçek hayatta ben Aziz'in üstüne set car diyerek tekrardan set edememem lazım.
+
+786
+02:32:15,604 --> 02:32:18,004
+O lojikleri şimdi bir kenara bırak.
+
+787
+02:32:18,004 --> 02:32:26,164
+Onlar üzerinde de konuşuyor olacağız. Hani bu kısım kafanıza garip geliyor olabilir. Sadece anlaşılsın diye basit örnekler kullanıyoruz açıkçası.
+
+788
+02:32:26,644 --> 02:32:29,623
+Association'ın burada da sorusu olan var mı? Buraya kadar.
+
+789
+02:32:33,843 --> 02:33:01,843
+Association'ın akış diagramına gelecek olursak nasıl olduğunu görelim. Bakın bir person vardı, bir de araba vardı. Introduce-self metodu o person'a geldiğinde artık kendisinin yaşam döngüsü başladı. Introduce-self'in içerisinde yine aynı sınıfın metodu olan GetName kullanıldığında kendi içerisinde tekrardan paralel çalışan bir instance ile ismi öğrenildi.
+
+790
+02:33:01,843 --> 02:33:29,363
+Ve daha sonra bir ip kontrolü içerisinde bu kişinin üstüne araba var mı yok mu öğrenilmek için araba sınıfına gitti. Araba sınıfı işte arabanın olup olmadığına dair bir şeyler belki buraya sorabilmek için araba sınıfının içerisinde olması lazım. O geri döndürdü. NAL olup olmamasına göre tabii ki burada yani dönülmesini beklenen şey NAL mıdır değil midir?
+
+791
+02:33:29,843 --> 02:33:57,804
+Null değilse eğer ondan sonra arabanın get plate metodunun kullanılması söz konusu. Null olduğu durumdaysa akış direkt devam edecek. Tekrardan arabaya gidip senin plakanın isminin ne diye tekrardan sorulmuyor olacak. Null olmadığı durumda get plate karın içerisine geldi. Yaşam dönüşü arabanın başladı. Plaka numarası geri geldi ve artık introduce self metoduna bir cevap intro olarak.
+
+792
+02:33:57,843 --> 02:34:00,043
+Geriye üretilebildi.
+
+793
+02:34:00,363 --> 02:34:05,304
+Temel akışa bakıldığımızda bu şekilde ilerlediğini görebiliriz.
+
+794
+02:34:05,623 --> 02:34:10,943
+Olayı biraz daha az önce gösterdiğimiz main metotu olduğu gibi karmaşıklaştırıyor olalım.
+
+795
+02:34:11,563 --> 02:34:14,283
+Bu örneğe bakıldığımızda main program var.
+
+796
+02:34:14,383 --> 02:34:19,063
+O main programın yaşam dönüşü main metotla beraber başladığını söylemiştik.
+
+797
+02:34:21,652 --> 02:34:35,672
+Oktay Sinanoğlu isminde insan üretiliyor. New Anahtar Sözcü ile beraber Thurston'ın constructorı çağrıldığında Thurston o nesnesinin yaşam döngüsü başlamış oluyor.
+
+798
+02:34:36,191 --> 02:34:42,492
+Ve daha sonra işte bu yaşam döngüsü başarılı bir şekilde sonuçlanarak o insanın oluşturulduğunu.
+
+799
+02:34:42,492 --> 02:34:47,551
+Bazı durumlarda constructor da çeşitli parametreler yanmıştır. Oluşturamaya da bilirsiniz.
+
+800
+02:34:49,652 --> 02:34:51,691
+Basit düzeyde ilerliyoruz.
+
+801
+02:34:52,011 --> 02:34:53,551
+Oluşturabildiğimiz senaryo.
+
+802
+02:34:53,891 --> 02:35:05,351
+Ardından aynı main program araba sınıfından işte plaka numarasını vererek Rover isminde bir araba nesnesi üretmesi için mesaj gönderiyor.
+
+803
+02:35:05,351 --> 02:35:17,351
+Bu mesaja da karşılık alınıyor ve artık şu noktaya gelindiğinde main programın yaşam döngüsünde bir tane Oktay Sinanolu isminde kişi...
+
+804
+02:35:17,652 --> 02:35:23,132
+1934OS, 1934 plakalı da bir araç söz konusu.
+
+805
+02:35:23,551 --> 02:35:37,031
+Ardından bu aracı Oktay Sinenoğlu'nun üzerine set etmek için Person sınıfının set car metodu, o araba objesinin objesi parametre olarak verilerek iletiliyor.
+
+806
+02:35:37,031 --> 02:35:45,031
+Person sınıfının yaşam döngüsü başlıyor ve bu işlem gerçekleştirdikten sonra tekrardan yaşam döngüsü bir araya girmiş.
+
+807
+02:35:45,652 --> 02:36:13,652
+Boşta beklemesin diye atamış olduk. Yani Oktay Sinenoğlu kişisinin içerisine bir araba yerleştirmiş olduk Setcar'la. Ardından Introduce Sert metodu yine Oktay nesnesi için çağrılıyor. Bu nesnenin içerisinde az önce de bahsettiğim gibi GetName metodu ekstradan çağrıldığı için böyle bir gösterim var. Yani bir metot çağrıldığında o nesnenin yaşam döngüsü başladı. Aynı nesnenin kendi içerisinde
+
+808
+02:36:13,652 --> 02:36:34,311
+Akışı gereği bir metodu çağırılırsa o şu sembolize edilerek gösteriliyor. Daha sonra arabası var mı yok mu bilgisi kullanılıyor. Eğer varsa plakası alınıyor. İkinci aşamadaysa bakın yeni bir nesne üretildiğinde burada aşağıdan devam etmiyor tekrardan. Artık bunların eti çünkü yaşam.
+
+809
+02:36:36,051 --> 02:36:48,072
+sembolize eden şeyler yeni bir nesne başlıyor. Person Sınıfından Aziz nesnesi başlıyor. Onu New Anahtar Sözcü ve Constructor ismini kullanarak oluşturduk. Ardından onun tanıtılması.
+
+810
+02:36:48,512 --> 02:37:16,352
+İsteniyor. Bakın introduce sert, Aziz'e kadar geliyorsa, Aziz'in tanıtılması, introduce sert, okta'ya kadar geliyorsa, okta'ya kadar geliyorsa, okta'ya tanıtılması istiyor. O da kendisini tanıtarak yaşam döngüsünü burada tamamlıyor. En sonunda main program, main metot içerisinde yapılması istenilen tüm işler gerçekleştirdiğinde o da bir üst tarafa, işletim sistemine ben tüm işlemleri gerçekleştirdim diye bir görev dönüş yapmış.
+
+811
+02:37:16,512 --> 02:37:23,512
+oluyor. Association kısmında Hayden gizli bilgiyi tekrardan düşünecek olursak.
+
+812
+02:37:23,791 --> 02:37:44,011
+Bakıldığında üstteki ilişkilerde hep kapalı bir durum var. Mesela bir tane A nesnesi iki tane B nesnesine sahip olacakmış veya bir tane A nesnesiyle bir tane B nesnesi arasında difendrisi yani bağımlılık ilişkisi olacakmış veya göreceğiz aggregation gibi çeşitli.
+
+813
+02:37:45,108 --> 02:38:12,788
+Bağlılık pipleri görüyoruz. Bu sembol o. Hani şimdilik şey yapmayın lütfen. Ne diye kompozisyon ve ekle geçini gördüğünüzde anlayacaksınız. Bu elmaslarla sembolü. Ama o tarz olduğu durumda bile gördüğünüz gibi bilgi saklanabiliyor. Veya açık bir şekilde de ne şekilde kullanıldığının bilgisine yer verilebiliyor. O yüzden bilgi nasıl saklanılır?
+
+814
+02:38:13,108 --> 02:38:19,907
+Her diğer zaman da denildiğinde işte attributeler içerisinde o sınıf association ilişkisiyle kullanılıyorsa o gösterilmiyor.
+
+815
+02:38:20,347 --> 02:38:24,628
+Veya dependency varsa metot içerisinde nasıl bir dependency olmuş gösterilmiyor.
+
+816
+02:38:25,047 --> 02:38:29,667
+Aggregation ve composition hatta inheritance için de aynı durum geçerli olacak.
+
+817
+02:38:29,667 --> 02:38:33,448
+Bir diğer durumumuz two-way association.
+
+818
+02:38:33,747 --> 02:38:38,768
+Yani az önce bahsettiğimiz şeyi hatırlarsanız bir insan bir arabaya sahipti.
+
+819
+02:38:39,167 --> 02:38:41,108
+Tek yönlü bir ilişki söz konusu.
+
+820
+02:38:41,108 --> 02:39:03,587
+Bu konusuydu. Pekala şöyle soruyu iki farklı şekilde sorabiliriz. Bu kişinin arabası hangisi? Doğal olarak ben bir arabaya sahipsen bunu sorgulayabiliriz. Veya şunu sorgulayabiliriz. Araba nesnesinin içerisinde o araba nesnesinin kime ait olduğu bilgisini de tutabiliriz. Bu araba kimin? Dediğimizde bu soruyu arabaya yönetiyoruz.
+
+821
+02:39:03,860 --> 02:39:07,060
+Bu kişinin arabası hangisi dediğimizde bu soruyu kişiye yönetiyoruz.
+
+822
+02:39:07,500 --> 02:39:10,500
+Aslında her iki cevap da aynı ilişkiyi gösteriyor.
+
+823
+02:39:10,760 --> 02:39:12,040
+Association ilişkisi var.
+
+824
+02:39:12,400 --> 02:39:14,380
+Fakat hangi yönlü olduğu önemli.
+
+825
+02:39:14,979 --> 02:39:15,340
+Gelin.
+
+826
+02:39:15,763 --> 02:39:32,763
+Şöyle olan bizim UML diagramımızı, bir diagramımızı, two-way yani çift yönlü association ilişkisine dönüştürelim. Normalde association ilişkisi nasıl oluyordu? Person sınıfının içerisinde bir tane araba...
+
+827
+02:39:34,131 --> 02:39:59,851
+Araba nesnesinin olduğunu görüyorduk. Şimdi bakın, kar sınıfının içerisinde de owner olarak person var. Yani buradan şu anlaşılıyor. Bir kişinin çift yönlü olduğunu, şu ok işaretlerinin iki taraflı olduğundan da anladık. Eğer bilgiler saklansaydı, bir kişinin hiç arabası olmayabilir veya olacak.
+
+828
+02:40:00,000 --> 02:40:07,560
+maksimum bir tane arabası olabilir veya bir arabanın hiç sahibi olmayabilir.
+
+829
+02:40:08,500 --> 02:40:21,659
+Bayi nedir? Daha sahibi yoktur. Veya olacaksa da bir tane sahibi vardır. Birden fazla kişi onun sahibi olamaz. Şu metotları zaten kabaca biliyoruz. Nasıl olduğunu konuşmuştuk.
+
+830
+02:40:22,059 --> 02:40:36,500
+Kar sınıfına yeni eklenen etli büyütüm insan tipinde bir şey olduğunu söyledik. Metotlarına baktığımızda ise constructor için artık iki farklı constructor söz konusu. Sadece plakayı...
+
+831
+02:40:36,500 --> 02:41:03,340
+vererek bir constructor hala daha devam ediyor. Ama aynı zamanda hem plaka numarası hem de o kara kim sahipse onun bilgisini vererek oluşturduğumuz bir karda karın constructor durumu söz konusu. Get owner, set owner, get plate, set plate, introduce set. Artık bunlar setter, getter'lar ve introduce'ün nasıl olduğu kafanızda canlanıyordur diye düşünüyorum. Buraya kadar sorusu olan arkadaşımız var mı?
+
+832
+02:41:05,427 --> 02:41:09,507
+Tebrik ediyorum.
+
+833
+02:41:09,507 --> 02:41:10,887
+Hocam ben bir şey sorabilir miyim?
+
+834
+02:41:11,108 --> 02:41:11,468
+Buyurun.
+
+835
+02:41:11,987 --> 02:41:21,987
+Kaçırmış olabilirim ama bu sol tarafta olanda neden 0-1'deydi, direkt 1 vardı, sağa dönünce person kısmında 0-1 olabildi?
+
+836
+02:41:22,788 --> 02:41:34,527
+Çünkü şöyle, hiç insanın, yani şimdi ilişkinin yönüne baktığımızda olmayan bir insanın, ortada olmayan bir kişinin arabasının olup olmamasını umursamıyoruz biz.
+
+837
+02:41:34,868 --> 02:42:00,927
+Hiçbir zaman. Yani mesela olmayan bir kişi düşünün. Bir arkadaşınızı düşünün ama hiç yok ortalıkta. O kişinin arabası varmış yokmuş bilmemiyor. O yüzden bir araba birisine ait olabilecekse muhakkak öyle bir kişi olması lazım ya da o kişinin hiç arabası olmaması lazım. Fakat bu tarafa gelindiğinde ise artık o çift yönü ilerliyor. Okurken bakın personal okurken şöyle okuyorum.
+
+838
+02:42:01,396 --> 02:42:26,996
+Person'dan kara olan One Way Association okurken şöyle okuyorum. Bir tane insan sıfır veya bir tane arabaya sahip olabilir. Aynı şekilde şöyle de bir ilişki var. Kardan Person'a okun şurasını görmeyin. Bu tarafa doğru bir association ilişkisi var. One Way. Onu da şu şekilde okuyorum. Bir tane arabanın hiç sahibi olmayabilir veya bir tane sahibi olabilir.
+
+839
+02:42:27,860 --> 02:42:33,400
+Sanki iki tane tek yönlü association varmış ama bunu tek sembolüyle gösteriyormuşum gibi düşünüyorum.
+
+840
+02:42:34,520 --> 02:42:35,260
+Teşekkür ederim.
+
+841
+02:42:36,240 --> 02:42:37,060
+Ben teşekkür ederim.
+
+842
+02:42:38,560 --> 02:42:40,200
+Başka soru soran arkadaşımız var mı?
+
+843
+02:42:42,579 --> 02:42:43,220
+Devam.
+
+844
+02:42:43,860 --> 02:42:44,159
+Buyurun.
+
+845
+02:42:44,860 --> 02:42:47,760
+Burada araba, araba yani set person dedik ya.
+
+846
+02:42:48,700 --> 02:42:51,500
+Person'u da set car dememiz gerekiyor değil mi?
+
+847
+02:42:51,500 --> 02:42:54,316
+Yani onu tam olarak...
+
+848
+02:42:54,579 --> 02:42:58,540
+Nasıl yapacağız? Ya da yapacak mıyız ya da? Oluyor mu direkt otomatik olarak?
+
+849
+02:42:59,879 --> 02:43:01,419
+Evet, demek istediğini anlamadım.
+
+850
+02:43:01,899 --> 02:43:06,200
+Harun içerisinde ne dedik? Set owner dedik. Evet, şurası.
+
+851
+02:43:06,200 --> 02:43:10,200
+Aynen. Person'u eşleştirdik mesela ama person'da...
+
+852
+02:43:15,188 --> 02:43:16,808
+Evet, anlamadım sorunuzu.
+
+853
+02:43:18,308 --> 02:43:20,868
+Aslında tam olarak...
+
+854
+02:43:22,260 --> 02:43:29,459
+Şimdi biz arabayı kişiyle eşleştirdik. Kişi de arabayla eşleşmiş olacak mı hemen öylelikle?
+
+855
+02:43:29,900 --> 02:43:32,979
+Olmayacak tabii ki. Onu göreceğiz nasıl olduğunu.
+
+856
+02:43:33,520 --> 02:43:38,239
+Two Way Association'da ilişkinin nasıl kurulduğuna çok dikkat etmemiz gerekiyor.
+
+857
+02:43:38,340 --> 02:43:41,479
+Şimdi tam olarak size onu anlatıyor olacağım.
+
+858
+02:43:41,479 --> 02:43:48,940
+Şimdi bakın araba sınıfına. Yani burayı güzel, dikkatli bir şekilde izlemek gerekiyor.
+
+859
+02:43:50,260 --> 02:44:09,340
+Bunun içerisinde artık two way association yapıyoruz. Öyle düşünmemiz lazım. Ben arabaya sahibim. Tamam mı? Başka bir tane daha araba öğrettim. O da bana sahip. Mesela şu örnek üzerine gidelim. Oktay Sinanolu var. Bir tane de Rover var. Ben bu Oktay'ın tamam mı?
+
+860
+02:44:09,584 --> 02:44:14,804
+set car diyerek rover'u bunun üzerine set ettim. Hemen şu metodu da kullanmamız lazım.
+
+861
+02:44:15,204 --> 02:44:25,664
+rover'ın o bunların da octay yapmamız lazım. Tamam mı? Bu ikisini ardı ardına çalıştırmamız lazım. Ama bu çok fazla gözden kaçabilme ihtimali olan bir durum.
+
+862
+02:44:25,940 --> 02:44:36,940
+Tamam mı? Bunu ayrıca bizim kontrol edip manipüle ediyor olmamız lazım. Ne demek istiyorum? Mesela Oktay'ın set car metodu çalıştığında...
+
+863
+02:44:37,716 --> 02:44:58,436
+O metodun içerisinde bu arabanın set owner'ı da çalışsın otomatik olarak atansın gibi veya tam tersi rover'ın set owner'ın metodu çalıştığında o metod tutup oktayın arabasını da o rover olarak set etsin gibi bir iş gerçekleştirmemiz lazım.
+
+864
+02:44:58,816 --> 02:45:04,316
+Yoksa olay inanılmaz karmaşık hale gelecektir. Buradaki soru işaretinin temel manası o.
+
+865
+02:45:05,716 --> 02:45:09,416
+Çiftli burada. O yüzden ekstradan işler gerçekleştirilmiş durumda.
+
+866
+02:45:09,896 --> 02:45:13,476
+Person'un set car metodu düşünüyoruz. Diğerini değil.
+
+867
+02:45:13,936 --> 02:45:24,916
+Arabayı, evet, set car yapmışız. Set ettiğimizde eğer ki bu arabanın oven'ları bundan farklıysa oven'larını da set et.
+
+868
+02:45:25,459 --> 02:45:53,019
+Ama başka bir sahibi olabilir. Satış yapıyoruz. Yani ben notere gittim, başka bir sürü üzerine satıyorum. Yani setkarın içerisinde direkt owner'ını da o arabanın bu kişi olarak değiştirip veya tam tersi bu sefer arabanın set owner setarı içerisinde owner'ı set ettikten sonra o owner'ın arabası yoksa onun arabasını da bu yap diye.
+
+869
+02:45:53,459 --> 02:46:00,539
+Çift yönlü ilişkiyi direkt böyle daha seter metotlarının içerisinde temelde kurmamız beklenir.
+
+870
+02:46:00,799 --> 02:46:03,039
+Ve inşallah soruna bir cevap olmuştur bu.
+
+871
+02:46:03,719 --> 02:46:09,639
+Bizim kontrol etmemiz lazım. Biz kontrol etmezsek yani o istediğimiz şeyi yapmayacakmış.
+
+872
+02:46:11,959 --> 02:46:15,639
+Hocam, dis peki tam olarak neye karşılık geliyor? Sadece dis...
+
+873
+02:46:17,108 --> 02:46:30,028
+This, bu objenin kendisi. Bu objenin kendisini söylemiş oluyorum. Güzel sordun, teşekkürler. Ben onu unutmuş olabilirim. Bu objenin kendisi.
+
+874
+02:46:31,507 --> 02:46:44,507
+Yani şurası sonuçta car get owner dediğimizde bu car'ın owner'ı person tipinde bir şeydir. Şu bize bir person döndürecek. This dediğimizde ise bu person'ın
+
+875
+02:46:44,799 --> 02:46:48,180
+Tam üretilen obje dis oluyor yani.
+
+876
+02:46:51,891 --> 02:46:52,992
+Evet, tamamı değil.
+
+877
+02:46:56,755 --> 02:47:04,515
+Tabi burada da nasıl söyleyelim çeşitli karmaşıklıklara sebebiyet verilebilir. Dikkat edilmesi gereken çeşitli durumlar var.
+
+878
+02:47:04,935 --> 02:47:13,015
+Çünkü az önce gördüğünüz gibi evet constructorları bu şekilde setter'larla beraber kullandığımız durumda tanımlıyoruz.
+
+879
+02:47:13,015 --> 02:47:24,595
+Yani setter okey çok güzel bir şekilde setkar yapabiliyoruz. Fakat eğer ki ben constructor'ın içerisine mesela şu constructor'da çok güzel sadece plakası var ardından gideceğim.
+
+880
+02:47:24,755 --> 02:47:42,755
+set owner diyerek burada set owner'ı kullanarak owner'ını set edeceğim. Ama constructor'ı öyle bir yazmışsam, constructor'ın içerisinde daha construct ederken owner'ı da kullanacaksam bu owner'ı set ettikten sonra ben artık...
+
+881
+02:47:43,631 --> 02:47:50,551
+o setOwner yani nasıl söyleyeyim karı construct ettikten sonra owner'ını da set etmem lazım.
+
+882
+02:47:50,931 --> 02:47:57,511
+SetOwner metodunun içerisinde bir önce gördüğümüz örnekte ise şu satırı da zaten eklemiştim.
+
+883
+02:47:57,511 --> 02:48:07,771
+Sadece yapmam gereken şey burada bu constructor'ı bu parametre geldiğinde setOwner'ı da çalıştırıp her ikisini beraber set etmesini sağlamam lazım.
+
+884
+02:48:11,631 --> 02:48:13,551
+Bunlar karmaşık yapılar.
+
+885
+02:48:14,131 --> 02:48:42,131
+Öyle söyleyeyim. Çok fazla şeyi kontrol etmeniz lazım. Şimdi burada gördüğünüz gibi metotlar çok az sayıda veya basit içerikte olmayabilir. Çok komplike yapıda olabilir. O yüzden programcının kafasında bu iş çok güzel bir şekilde canlanması gerekiyor. Böyle kompleks bir yapıda olduğu için genellikle two-way association kullanılmaz. Olayı tek yönlü association ilişkisinde nasıl indirgerim diye UML diagramı...
+
+886
+02:48:42,131 --> 02:48:52,512
+Önce düzeltmeye çalışırsın. Düzelttiğin UML diagramında bulduğun çözümle beraber onu gerçekleştirirsin. Tek yönlü association kurmaya çalışırsın.
+
+887
+02:48:54,432 --> 02:49:09,512
+Evet, buraya kadar sorusu olan arkadaşımız yoksa bugünkü dersi burada noktalamış olalım. Association ve dependency'yi böylece anlatmış olduk. Önümüzdeki hafta biraz aggregation.
+
+888
+02:49:10,004 --> 02:49:19,684
+Composition üzerinde dururuz. Inheritance'a da gireriz. Inheritance uzun bir kavram. Onunla ilgili de çalışırız. Anlatımlar yaparız. Soru sorman yoksa.
+
+889
+02:49:21,103 --> 02:49:26,644
+Evet, çok teşekkür ediyorum. Arkadaşlar, kendinize iyi bakın. Haftaya görüşürüz.
+
+890
+02:49:27,084 --> 02:49:27,884
+Görüşürüz hocam.
+
+891
+02:49:27,884 --> 02:49:28,703
+İyi günler hocam.

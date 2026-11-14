@@ -1,0 +1,999 @@
+1
+00:09:52,211 --> 00:10:13,912
+Merhaba kıymetli arkadaşlar. Bugün Nesne'ye Yönelik Programlama dersimizin son patlasında beraberiz. Normalde tüm sınıfla tüm diğer grupların ortak olarak anlatacağı konuların tamamını bitirdik aslında.
+
+2
+00:10:16,947 --> 00:10:24,508
+Benim müfredatta görünen, belki diğer gruplarda görünmüyle ilgili de bir örnek yapıyor olacağım size.
+
+3
+00:10:25,268 --> 00:10:37,987
+Hem ödevde kullanırsınız hem de yani GUI'siz doğrudan bir komut satırıyla işleyiş çok fazla nesneye yönelik programlama dillerine ellerişli bir yaklaşım değil.
+
+4
+00:10:38,408 --> 00:10:41,067
+O yüzden onun da nasıl olduğunu görün istiyorum.
+
+5
+00:10:41,967 --> 00:10:43,947
+Ekran paylaşarak başlayalım.
+
+6
+00:10:45,460 --> 00:10:49,300
+Şimdi bu tabi şeyi sizinle paylaştım ben.
+
+7
+00:10:51,860 --> 00:10:56,080
+Düşünanları şeyde bulabilirsiniz. Google kılıkları da bulabilirsiniz.
+
+8
+00:10:57,200 --> 00:11:02,740
+JavaFX üzerinden bir GUI uygulaması yapıyor olacağız.
+
+9
+00:11:04,259 --> 00:11:12,656
+JavaFX kütüphanelerini zaten internette search etseniz bulursunuz ama ben onları da size...
+
+10
+00:11:12,655 --> 00:11:19,375
+paylaştım. Bu yıl petinize eklemeniz gerekiyor. İsterseniz ondan bir başlayalım.
+
+11
+00:11:19,375 --> 00:11:29,575
+Şimdi ilk yapacağımız işlerden birisi, benim sizinle paylaştığım, daha kodların içerisine girmiyorum, person.
+
+12
+00:11:30,100 --> 00:11:41,500
+.java ve gui.java dosyalarını gui package'nin altında, src'nin altında eklemek bir proje oluşturduktan sonra.
+
+13
+00:11:42,539 --> 00:11:48,799
+Ardından bizim Java Elfix kütüphanelerini bu yıl fete eklememiz gerekiyor.
+
+14
+00:11:49,299 --> 00:11:53,779
+Onun için projenizin üzerine sağ tıklayıp
+
+15
+00:11:54,131 --> 00:12:06,571
+Java Build Pet'i seçip, şunları ben bir uçurayım, beraber eklediğimizi görelim. Java Build Pet'i seçtiğimizde karşımıza böyle bir sayfa açılıyor olacak.
+
+16
+00:12:06,571 --> 00:12:16,751
+Burada Libraries kısmının altında, Modul Pet'i tıkladığımızda, Add-Exit'in jar seçeneği çıkıyor olacak.
+
+17
+00:12:17,511 --> 00:12:22,111
+Benim size gönderdiğim kütüphaneler neredeyse Download'da, Masa üstünde, hani bilgisayarınızda.
+
+18
+00:12:22,131 --> 00:12:33,811
+Her neredeyse onları bulup ki benim işte C'de, Eclipse'de, Library'de, JavaFX Library'de bu klasörün altında onları buldum.
+
+19
+00:12:35,571 --> 00:12:41,611
+Bunları hatta şu klasörün yolunu da alayım. Birazdan kullanıyor olacağım.
+
+20
+00:12:42,100 --> 00:12:57,580
+Bunların her birisini seçtim ve aç dedim. Ardından apply ve close'a tıkladığımızda o referans kütüphaneleri de burada getirmiş oluyor. Bu JavaFX kütüphaneleri olmadan doğrudan bu birinin.
+
+21
+00:12:58,323 --> 00:13:02,063
+Benim yazdığım koddaki sınıflarını çalıştırabilecek yapıda değilsiniz.
+
+22
+00:13:02,783 --> 00:13:09,703
+Çeşitli Java, Java, JavaFX ile ilgili hatalar alıyor olabilirsiniz.
+
+23
+00:13:10,443 --> 00:13:14,323
+Onun için de bazı 8dipsim ve...
+
+24
+00:13:14,484 --> 00:13:19,464
+İşte bilgisayarının versiyonları farklı olan arkadaşlar bu hafayı alıyor olabilir.
+
+25
+00:13:19,944 --> 00:13:21,923
+Bunun için de şöyle bir düzenleme yapmanız lazım.
+
+26
+00:13:21,923 --> 00:13:24,084
+Yine yavaş gidelim.
+
+27
+00:13:24,504 --> 00:13:26,724
+Properties'e tıkladınız.
+
+28
+00:13:27,304 --> 00:13:30,144
+Ardından Run Debug Setting'e geliyorsunuz.
+
+29
+00:13:30,804 --> 00:13:31,824
+Burada
+
+30
+00:13:32,403 --> 00:13:37,063
+Nasıl çalıştırılacağına dair bir ayarlama yapabiliyorsunuz.
+
+31
+00:13:37,403 --> 00:13:42,364
+Hiç yoksa bir tane oluşturun veya muhtemelen çalıştırmaya çalışıp gelmiş çalıştıysa vardır.
+
+32
+00:13:43,264 --> 00:13:48,063
+Onu farklı isimler de olabilir, önemli değil. Edit seçeneğine tıklıyorsunuz.
+
+33
+00:13:48,063 --> 00:14:00,224
+Şurada argümanlar bölümü var ve işte Java'yı bizim az önce kopyaladığım kütfarenelerin.
+
+34
+00:14:00,403 --> 00:14:05,203
+Yolunu, modül pet olarak da buraya add modülle eklememiz gerekir.
+
+35
+00:14:05,283 --> 00:14:24,903
+Java'nın kontrol arayüzünü veya eğer nerede hata veriyorsa, mesela sallıyorum, Java, fx küçük yazalım, Java, fx, mesela bazılarımıza öyle hata verebilir çünkü benim farklı bilgisayar olarak öyle olmuştu, fxml.
+
+36
+00:14:25,748 --> 00:14:53,488
+Hata veriyor oluyor. Onları buraya virgülle ayırarak söylemeniz gerekiyor. Hangilerinde hata verebilir? Tabii ki düşünecek olursanız o da okey diyoruz, apply diyoruz, block diyoruz. Buradaki kütüphaneler zaten. Kontrolsü ben yazdım. Bakın efekzamel. Diğerlerinde de çalıştırdığınız hata varsa onları gidip oraya model olarak da ekstradan eklemeniz gerekiyor. Bunları böyle ön programı çalıştırabilmek için tanıtıcı birer içerik olarak paylaştım.
+
+37
+00:14:53,748 --> 00:15:07,807
+Şimdi iki tane sınıfımız var. Person sınıfından başlayalım. İçerisinde ne olduğunu bir görelim. Bir tane person sınıfı. İçerisinde isim, soy isim, doğum, tarihi, cinsiyet ve bölüm gibi.
+
+38
+00:15:09,940 --> 00:15:37,280
+attribute'ler var. Cinsiyet, true veya false olarak alınmış. Yani bu tasarlanan sistemde iki farklı cinsiyet olabiliyor. Öyle anlaşılıyor demek ki. Bir tane constructor var. Default constructor var. Hiçbir parametresi olmayan. Bunları detaylı anlatmıyorum. Zaten artık dönem son haftasında olduğumuz için setter ve getter'ları var. Başka bir metodu var mı bakıyorum. Yok. Yani bir person sınıfı oluşturulmuş. Constructor, setter ve getter'ları olan.
+
+39
+00:15:37,940 --> 00:16:05,820
+Arayüzü tarafı. Şimdi burada gördüğünüz gibi JavaFX'in farklı farklı kütüphaneleri, sınıfları eklenmiş durumda. Ben size sadece bir iki örnek oluşturabilecek kısmını ekledim. Fakat masaüstü application bu kadar yapmak istediğiniz durumda yani karşınıza
+
+40
+00:16:05,940 --> 00:16:13,080
+Çok farklı arayüz modülleri çıkabilir veya kullanma ihtiyacınız olabilir.
+
+41
+00:16:13,540 --> 00:16:20,740
+Ne tarz ihtiyaçlarınız varsa onların hepsini karşılayabileceğiniz bir JavaFX'de yapı söz konusu.
+
+42
+00:16:21,400 --> 00:16:33,440
+Burada işte bir text alanları, butonlar veya işte selection box'lar veya bir tarih seçici bir yapı gibi gibi çeşitli böyle şeyleri eklemişim ben.
+
+43
+00:16:33,940 --> 00:16:47,220
+Bunların nasıl olduğundan size bahsediyor olacağım veya mesela pop-up gibi bir yapı çıkartıp uyarı vermek falan istiyorsanız kullanabileceğiniz çeşitli burada sınıflar söz konusu.
+
+44
+00:16:48,680 --> 00:16:54,240
+Çeşitli şeylere uyarılar falan veriyormuş herhalde. Onları ben burada baskılamışım. Çok önemli değil.
+
+45
+00:16:55,155 --> 00:17:16,056
+Şimdi GUI sınıfınızı application sınıfından inheritance yapmanız gerekiyor. Bir hani desktop application olsun, GUI'si olsun istiyorsanız sınıfı istediğiniz gibi isimlendirebilirsiniz. Tahmin edebileceğiniz üzere application sınıfından extend etmeniz gerekiyor.
+
+46
+00:17:16,056 --> 00:17:22,296
+Onun haricinde tek bir tane attribütü var. Görüyorsunuz kişiler isminde bir attribüt bu.
+
+47
+00:17:23,155 --> 00:17:35,556
+ArrayList'in ne olduğunu biliyorsunuz artık. Her birisi person olan bir liste, kişiler listesi. Birazdan yapacağımız örnekte listenin içerisine yeni yeni kişiler oluşturup eklemek.
+
+48
+00:17:36,556 --> 00:17:46,715
+Yani az önce attribute'lerini görmüştünüz, setrget'lerini görmüştünüz, onları kullanarak ekliyor olacağız. Sadece ara yüzden bu işi ekleme işlemlerini yapıyor olacağız.
+
+49
+00:17:51,155 --> 00:17:51,435
+Okun.
+
+50
+00:17:52,051 --> 00:18:19,271
+Overwrite edilmiş, içeriğini kendimizin belirlediği bir metodumuz söz konusu. Bu metodumuz arkadaşlar içerisine bizim o Vee arayüzümüzü çalıştırdığımızda o açılacak, ne açılacaksa, ne işler yapacaksak, ne butonlar olacaksa tüm bu hepsi bu startın içinden. Mesela kapattığımızda, ona gitmek istemiyorum da.
+
+51
+00:18:20,051 --> 00:18:22,591
+Kapatamıyor muyuz? Şuradan kapatamıyormuşuz neyse.
+
+52
+00:18:23,311 --> 00:18:24,411
+Ha, şuradan kapatıyoruz.
+
+53
+00:18:24,411 --> 00:18:28,391
+Evet, kapattığımızda zaten geriye bir de main metot kalıyor. Onu görelim.
+
+54
+00:18:28,891 --> 00:18:34,411
+Main metodumuz zaten hani Java programlarının çalıştığı nokta biliyorsunuz.
+
+55
+00:18:35,271 --> 00:18:45,831
+Burada launch şeyini çalıştırdığımızda, metodunu çalıştırdığımızda bu start'ın altında yazdığımız ifadeler çalışıyor olacak.
+
+56
+00:18:45,971 --> 00:18:48,051
+Şimdi tekrardan onu açalım.
+
+57
+00:18:48,051 --> 00:19:10,851
+Nelere değinmişiz onlara bir bakalım. Sonra bir çalıştıracağım. Nasıl çalıştığını gösteriyor olacağım. Belki şimdiye kadar bunları kullanmışsınızdır, biliyorsunuzdur temel olarak ama hiç kullanmayan arkadaşlarımız da varsa nasıl yapıldığını bir görsünler. Dediğim gibi bir örnek. Yoksa konu deryadeniz. İstediğiniz gibi siz bu işi gerçekleştirebilirsiniz.
+
+58
+00:19:10,851 --> 00:19:16,051
+Şimdi label dediğimiz şey bir açılan pencerenin içerisinde veya bir...
+
+59
+00:19:16,051 --> 00:19:26,451
+Uygulamanın içerisine bir etiket yapıştırmak, bir yazı yazmak, bir boyama işlemi yapmak için kullandığımız sınıf arkadaşlar.
+
+60
+00:19:27,451 --> 00:19:30,051
+Bir label sınıfından tanım isminde bir...
+
+61
+00:19:31,059 --> 00:19:38,539
+Ne oluşturmuşuz? Obje oluşturmuşuz. Bakın ne tarz metotları var? Beraber bakalım.
+
+62
+00:19:39,539 --> 00:19:46,779
+İşte Accessible Help Property. Yani üzerine geldiğimizde zaten detaylı bir şekilde şey yapıyordur.
+
+63
+00:19:46,779 --> 00:19:56,679
+Erişimiyle ilgili sıkıntı şeyler var. Üzerine tıklandığında bir iş yapmasını istiyor muyuz? Nasıl alignment olsun, sağ üstada yaslansın? Otomatik boyutlanmasını istiyor muyuz?
+
+64
+00:19:59,059 --> 00:20:00,000
+Arkadaşlar,
+
+65
+00:20:00,000 --> 00:20:04,799
+İşte çeşitli renklere veya özelliklere boyamak istiyor musunuz?
+
+66
+00:20:05,239 --> 00:20:15,619
+Borderı nasıl olsun? Böyle köşeli border mı olsun? Kalın border mı belirleyelim gibi çeşitli burada metotları söz konusu.
+
+67
+00:20:15,799 --> 00:20:18,920
+Tabii çok fazla inanılmaz metodu varmış. Ben de tahmin etimden fazla.
+
+68
+00:20:20,719 --> 00:20:27,000
+Şöyle bakıyoruz. Font ne olsun? Hem büyüklüğü hem karakter tipi ne olmuş olsun?
+
+69
+00:20:28,000 --> 00:20:35,059
+Bunların ne olduğunu set ettikten sonra get edebileceğiniz çeşitli mesela yapılar da size sunulmuş.
+
+70
+00:20:35,199 --> 00:20:37,420
+Yani get'e dair envaiye çeşitli şey var.
+
+71
+00:20:38,380 --> 00:20:40,000
+Bunun içerisine yazı yazabileceğiniz.
+
+72
+00:20:40,699 --> 00:20:45,480
+Üzerine mesela geldiğinizde bazı uygulamalar da öyledir.
+
+73
+00:20:45,559 --> 00:20:49,039
+Bir kelimenin üstüne geldiğinizde böyle bir fokus olmak deniyor ona.
+
+74
+00:20:49,539 --> 00:20:51,299
+Bir ekstradan açıklama çıkar.
+
+75
+00:20:51,759 --> 00:20:54,019
+Mesela sallıyorum kaydet diye bir kron vardır.
+
+76
+00:20:54,159 --> 00:20:56,000
+Üzerine bastığınızda bir açıklama böyle.
+
+77
+00:20:56,000 --> 00:21:06,079
+Böyle pop-up gibi çıkar. O kaydedilecek işte bir açıklama yazar yani. Bunların hepsini kullanabiliyorsunuz. Envahe çeşit metodu var. Görüyorsunuz burada.
+
+78
+00:21:06,079 --> 00:21:17,019
+Bu örnek için set text metodu kullanılmış. Bu label'ın içerisinde bir text yazılacak. Hoş geldiniz bu bir kayıt ekranıdır diye bir text yazılıyor olacak.
+
+79
+00:21:21,811 --> 00:21:39,152
+Panemiz olacak. Yani bu iğnizin açıldığındaki o ana ekran içerisinde piksel olarak düşünebilirsiniz bunu. YL altında 20'ye, XL altında 180'e yerleşecek.
+
+80
+00:21:39,380 --> 00:21:52,559
+İsterseniz önce tüm bu kodları atlayayım. En altta oluşturduğum bu şeyin sahnenin veya o ekranın boyutuna bir bakıyor olalım kıymetli arkadaşlar.
+
+81
+00:21:52,820 --> 00:21:55,860
+Bakın 500'e 500'lük bir ekran oluşturmuşuz.
+
+82
+00:21:57,539 --> 00:21:58,980
+500 piksellik yani.
+
+83
+00:22:00,051 --> 00:22:19,011
+Tabii bu çok fazla kullanıcıyla etkileşimli bir ekran olmayabilir. Ekranında adamın kaç piksel olduğunu bilmiyorsun. Çözünürlüğü çok yüksek olduğu durumda ki ekranda kaplayacağı boyutla çözünürlük çok düşük olduğu durumda ekranda kaplayacağı boyut çok farklı olacaktır.
+
+84
+00:22:28,051 --> 00:22:38,211
+Bir yer kaplasın gibi oransal değerlerde hesaplanıp yazılması lazım ama takdir edersiniz ki bu benim size sunmak için hazırladığım bir örnek.
+
+85
+00:22:38,871 --> 00:22:41,411
+Hızlıca o sebeple buraya 500 yazdım.
+
+86
+00:22:41,811 --> 00:22:50,771
+Kabaca şimdilik bir sadece bakalım çalıştırdığımda bakın 500'e 500'ü bir ne dönemler panelin içerisine yazacağız.
+
+87
+00:22:50,771 --> 00:22:55,771
+İşte o ilk label kısmı arkadaşlar. Hoş geldiniz. Bu bir kayıt ekranıdır.
+
+88
+00:22:56,051 --> 00:22:57,511
+Yazan label şu.
+
+89
+00:22:58,011 --> 00:23:00,611
+Y tarafında bakıldığında 20'den başlamış.
+
+90
+00:23:00,692 --> 00:23:05,531
+X tarafında bakıldığında ise 180'den başladığını görüyoruz.
+
+91
+00:23:05,731 --> 00:23:06,291
+Bu şey.
+
+92
+00:23:07,231 --> 00:23:07,591
+Buyurun.
+
+93
+00:23:08,231 --> 00:23:11,411
+Kusura bakmayın böldüm ama bizde sadece kod ekranı gözüküyor.
+
+94
+00:23:11,851 --> 00:23:12,692
+Evet, çok güzel.
+
+95
+00:23:12,991 --> 00:23:13,672
+Çalıştırayım.
+
+96
+00:23:14,351 --> 00:23:15,971
+Onu da gösterelim isten.
+
+97
+00:23:17,551 --> 00:23:17,991
+Doğru.
+
+98
+00:23:18,231 --> 00:23:18,871
+Gözükmüyorlar.
+
+99
+00:23:26,771 --> 00:23:29,771
+Şimdi hangisine açılan lazımdı? Düşünüyorum.
+
+100
+00:23:30,771 --> 00:23:32,971
+Eclipse'in ikinci ekran olsun.
+
+101
+00:23:32,971 --> 00:23:36,771
+Şimdi görünüyor zannınca Eclipse'in arkasında.
+
+102
+00:23:38,471 --> 00:23:42,571
+Açılan bir çalıştırdığınızda açılsın onu da görün.
+
+103
+00:23:43,604 --> 00:24:04,064
+Bakın çalıştırdığımda açılan bir ekran. Şu hoş geldin, bu bir kayıt ekranıdır. İşte şuradaki label'dan gelen ifade. Yerleştirdiğimiz yerde Y'de 20 piksel, X'de de 180 pikselden başlayacak şekilde yerleşsin. Değiştirelim şunu. Değiştiğini nasıl etki ettiğini siz de görmüş olun.
+
+104
+00:24:06,740 --> 00:24:34,740
+Bakın, gitti bu sefer. Baş taraftan başladı. Şurası demek ki 20, şurası da 20. Hani şu kayıt ekranına almıyor. Şöyle yapıyor demek ki bunu. 20'ye 20. Yani istediğiniz yerden, gözünüze hoş verilen bir yerden başlatabilirsiniz. Ama tabii az önce söylediğim şeyi lütfen unutmayın. Yani bakın, ben şimdi bunu çalıştırdığımda açıldı. Ben açıldığımda her daim bu boyut yer kaplasını istiyorsam bir adamın çözünürlüğü...
+
+105
+00:24:34,740 --> 00:24:55,960
+Yani şurada şurası kaç? Benim ekranım mesela 1600. 1600 ise 500 demek ne demek oluyor? Yani 500 bu tarafta, 500'da 3 tane bu uygulamadan sığacak gibi bir durum söz konusu. Siz de eğer böyle bir tasarım yapmak istiyorsanız, adamın 4K'lık bir ekranda çalışıyorsa adam bu açıldığında çok küçük bir şey kalacak. Yani şöyle bir şey olacak.
+
+106
+00:24:56,819 --> 00:25:17,000
+Anlatabiliyor muyum? O yüzden siz adamın şu anki çözünürlüğünün ne olduğunu çekip her şeyi yazıların boyutlarını bile gerekirse dilerseniz ona göre ayarlanmamız lazım. Daha kullanılabilirliği arttırmak adına. Ama bunun sadece bir örnek olduğunu söylüyorum.
+
+107
+00:25:19,988 --> 00:25:22,008
+Bunu da vurgulamak istedim sadece.
+
+108
+00:25:22,608 --> 00:25:26,508
+Şimdi bir diğeri, bakın yine bir label tanımlanmış, isim.
+
+109
+00:25:26,948 --> 00:25:30,088
+Konumu şurası olarak, X ve Y olarak tanımlanmış.
+
+110
+00:25:30,088 --> 00:25:33,208
+Hemen ardından şimdi farklı olan şey text field.
+
+111
+00:25:33,588 --> 00:25:42,468
+Text field içerisine bir metin, bir cümle, belki sadece karakter, rakam, yazabileceğiniz bir alan kıymetli arkadaşlar.
+
+112
+00:25:42,628 --> 00:25:43,188
+Text field.
+
+113
+00:25:44,768 --> 00:25:47,908
+İsminizi, mail adresinizi falan sorar.
+
+114
+00:25:47,988 --> 00:26:13,248
+Bu text field'ler kullanılır genellikle. Çalıştırdığımızda işte şu ismin hemen karşısında olan şu alanlar text field olarak isimlendiriliyor. Normalde biz kullanıcıdan scanner sınıflarıyla komut satırından girdi sağlıyoruz biliyorsunuz. Yaptık şimdiye kadar. Veya sağladığımız girdi. En nihayetinde çıktı.
+
+115
+00:26:15,988 --> 00:26:18,428
+Print'de ekrana yazdığımız çıktılar oluyor.
+
+116
+00:26:18,867 --> 00:26:22,367
+Ve burada mesela label ile ekranı bir çıktı yazabilirsiniz.
+
+117
+00:26:22,827 --> 00:26:26,128
+Veya ekrandan bir girdi almak için Text Field'ı kullanabilirsiniz.
+
+118
+00:26:26,648 --> 00:26:29,628
+Text Field'ın envai çeşit versiyonları var.
+
+119
+00:26:30,108 --> 00:26:30,948
+Ne demek istiyorum?
+
+120
+00:26:31,508 --> 00:26:41,488
+Text Field'da sadece sayı girdirebileceğiniz çeşitli değerler, yani sadece rakamsal değerler girdirebileceğiniz bir yapı söz konusu olabilir.
+
+121
+00:26:43,988 --> 00:26:56,908
+Böyle bir yere şikayet yazmak çok zor. Bunun boyutunu da ona göre ayarlayabileceğiniz, mesela onun için text field değil, text area diye değiştirirler. Çeşitli versiyonları söz konusu.
+
+122
+00:26:57,587 --> 00:27:25,587
+Olabilir. Veya adamı strik bir şekilde bir şeyler yazmaya zorlamak istiyorsunuzdur. Bunların özel halleri vardır. Mesela mail adresini almak istiyorsun. Yani et kısmı bir tarafta, etten öncesi sonrası gibi alanları dolduracak şekilde bir yapı kullanmak istiyorsun. Çok farklı farklı versiyonlar var. Düzgün gibi text girebileceğimiz bir yapı kıymetli arkadaşlar. Aynı durum soy isim içinde. Öncelikle label.
+
+123
+00:27:25,587 --> 00:27:38,587
+Ardından text field'ı gerçekleştirilmiş durumda. Sonrasında doğum tarihiyle ilgili bir label gerçekleştirilmiş ve bakın date picker diye yine Javax'ın altında bir...
+
+124
+00:27:40,115 --> 00:28:01,155
+We'de kullanabileceğimiz komponent sözcükü o da şu. Text field gibi duruyor. Gördüğünüz gibi siz buraya bir tekste en nihayetinde yazabilirsiniz. Fakat date ticker olduğu için, yani bunları zaten siz de sürekli kullanıyorsunuzdur. Buradan istediğiniz bir tarihi seçebileceğiniz size bir yapıda sağlanmış oluyor.
+
+125
+00:28:08,115 --> 00:28:16,556
+Yani kişisel bilgileri almak istediğiniz durumda hiç kuşkusuz adamın doğum tarihini çekmeniz gerekecektir.
+
+126
+00:28:17,096 --> 00:28:24,395
+Veya işte uçak bileti rezervasyonu yapmak istediğinizde bir rezervasyon sisteminde hangi tarih için rezervasyon yapacaksınız?
+
+127
+00:28:24,495 --> 00:28:27,776
+Bu tarih date picker kısmı oldukça önem arz ediyor.
+
+128
+00:28:28,435 --> 00:28:35,695
+İnsanlar bazen elleriyle yazdıklarında siz slash da almak istiyorsunuz ama adam nokta koyuyor.
+
+129
+00:28:36,115 --> 00:28:46,096
+Veya yani direkt tarihi elle yazdıracağınız durumda adam noktalı noktalı yazsın istiyorsanız adam açık açık 31 Mayıs 2023 yazıyor.
+
+130
+00:28:46,235 --> 00:28:52,855
+Yani siz istediğiniz formatta alabilmek için date picker gibi bir yapı kullanmayı zaten tercih ediyorsunuzdur.
+
+131
+00:28:57,523 --> 00:29:25,144
+Bakın, bir toggle buton kullanmış durumdayız. Toggle buton da şunlar. Basıldığında, biraz daha böyle arka planı koyulaşarak anlaşılıyor. Tekrar basıldığında geri çıkıyor. Yani negatif veya pozitif. İki seçeneği var. True veya false. Basılmış veya basılmamış. Durumu temelde söz konusu. Toggle buton dediğimiz bu. Yani toggle o.
+
+132
+00:29:25,523 --> 00:29:34,483
+mantık. Yanıyor, sönüyor, yanıyor, sönüyor, yanıyor, sönüyor. Basıldı, bırakıldı, basıldı, bırakıldı. O şekilde düşünebilirsiniz toggle butonu.
+
+133
+00:29:34,923 --> 00:29:48,203
+Şimdi ona özel bir şey daha söyleyeceğim. Toggle butonda 30 tane toggle buton koyabilirsiniz. Yapalım. Mesela şuraya birkaç tane A, B, C diye toggle butonu koyayım.
+
+134
+00:29:49,263 --> 00:29:51,083
+Hepsini baştan yazayım mı?
+
+135
+00:29:53,107 --> 00:29:59,427
+Neyse, şunları bir şey anlatmak istiyorum da şunları sizlere anlatayım, daha güzel olsun. Hızlı anlatayım yani.
+
+136
+00:29:59,427 --> 00:30:01,427
+Ya başlamış ulaşmak istemiyorum.
+
+137
+00:30:02,036 --> 00:30:26,476
+Şimdi bakın, erkek, kadın, her ikisine de basılmış burada. Erkeği bıraktın, kadını bıraktın gibi gibi. İkisine de basıp ikisinden de çekebiliyorsun. Yani bir insanın cinsiyeti hem erkek hem kadın nasıl olabilir? O yüzden bu toggle'ların birbirlerine göre de toggle olmasını istiyorsanız bir toggle grup oluşturup bu toggle grubun içerisine seçtiğiniz o toggle butonları eklemeniz gerekiyor.
+
+138
+00:30:30,036 --> 00:30:58,036
+Hem de kadın olan toggle bitonun instansı eklendiği durumda ben erkeğe seçtim. Kadını seçtiğimde erkek deaktif oluyor. Toggle ediyor yani. Erkeğe seçtiğimde kadın. Yani görüyorsunuz değil mi? Aradaki farkı. O sebeple yani böyle bir şey yapmak istemiyor olabilirsiniz. Sadece toggle'lı yaptırmak istiyor olabilirsiniz. Hala hazırda. Bir veri toplamak istiyorsunuzdur. Adam dört farklı seçeneği de seçebilir. Mesela toggle etmek zorunda değilsinizdir. Öyle.
+
+139
+00:30:58,036 --> 00:31:25,936
+Böyle bir durumda yapacağınız şey bunları gruba bağlamak ama bazen gruba bağlamak istiyor olabilirsiniz diyelim. Bir diğeri hangi bölümde okuduğuna dair bir label yerleştireceğiz. Bakın bir de choice box. Choice box'ın da çok farklı farklı versiyonları söz konusu yine. Bunu selection box olarak da görebilirsiniz. Veya iç içe geçmiş selection box'lar da söz konusu olabilir. Nasıl bir şey bakın.
+
+140
+00:31:26,036 --> 00:31:35,116
+Bölüm açılan bir liste. Görüyorsunuz, bilgisayar mühendisliği, elektrik mühendisliği, siz buraya item olarak eklediğiniz her şeyi burada karşınıza çıkıyor.
+
+141
+00:31:35,496 --> 00:31:42,396
+Neler olabilir? Mesela bu Choice Box'ta bunlardan birisini sizin seçmeniz beklenir.
+
+142
+00:31:42,836 --> 00:31:53,516
+Lakin bu Choice Box'ın çeşitli versiyonları vardır. Mesela 30 tane burada açılan menünün içerisinden sadece 7 tanesini seçebilirsiniz.
+
+143
+00:31:54,036 --> 00:32:05,856
+Veya istediğiniz kadarını seçebilirsiniz. Yanına checkbox yine kullanarak, onları da checkbox deniliyor, tipler atabileceğiniz çeşitli versiyonlar tanımlanmış olabilir.
+
+144
+00:32:05,856 --> 00:32:06,856
+Veya...
+
+145
+00:32:07,488 --> 00:32:23,128
+Yine bu Choice Box'ı açtığınızda en üstte çıkan ayrı bir böyle segme vardır. O Choice Box'ın içerisinde arama yapmanızı sağlayan bir yapıdadır. Onun da ismi farklı şekilde. Bunların hepsi tabii sağlanmış bize.
+
+146
+00:32:25,236 --> 00:32:50,396
+Java, AppX'in altında sağlanmış GUI modülleri olduğunu söyleyebiliriz. Bir tane de bakın burada buton yerleştirilmiş. Yine butonun ismi kaydet butonu. Yani butonun ismi, butonun instansının ismi kaydet. Aynı zamanda kendi ismi de kaydet. L6'da belli bir şekilde yerleştirilmiş durumda. Bir tane daha butonumuz var. Şurada görüyorsunuzdur.
+
+147
+00:32:52,079 --> 00:32:57,859
+Tüm kişiler isminde bir buton. Bu da layout da bir yere yerleştirilmiş.
+
+148
+00:32:57,939 --> 00:33:06,099
+Şimdi kıymetli arkadaşlar, şu butonları, choice box'ları, label'ları, toggle butonları hepsini oluşturdunuz.
+
+149
+00:33:06,539 --> 00:33:14,099
+Fakat bunu bir panel tanımlayıp o panelin içerisine eklemediğiniz sürece havada duruyor.
+
+150
+00:33:14,099 --> 00:33:20,079
+Yani mesela diyelim ki siz bir tane liste oluşturdunuz. ArrayList, insanlar...
+
+151
+00:33:20,079 --> 00:33:46,699
+isminde. Siz bu insanlar isminde ArrayList'te 5 tane insan objesi, person sınıfından insan objesi tanınadınız. Onun içine add metodunu kullanarak eklemediğiniz sürece oluşturduğunuz o personlar gidip o listenin içerisine girmiyor. Yani siz buradaki bu kadar butonu oluşturduğunuz durumda, oluşturduğunuzda layout falan verdiğinizde otomatik olarak gidip o sizin açılan
+
+152
+00:33:47,380 --> 00:33:52,960
+state'inize, state'inize eklenmiyor. Onu ayrıca eklemeniz gerekiyor.
+
+153
+00:33:53,920 --> 00:34:00,160
+Onun için arkadaşlar ekstradan bir tane state diye burada gördüğüm gibi label kanalının.
+
+154
+00:34:00,160 --> 00:34:03,299
+Bunun tam olarak nasıl kullanıldığını bilmiyorum. Belki kullanmamışım.
+
+155
+00:34:04,019 --> 00:34:09,760
+Bakalım bunun içerisinde herhangi bir şey de yazılmamış. Neyse bu kenarda dursun bir yerde.
+
+156
+00:34:10,319 --> 00:34:15,199
+Şimdi pop-up ile ilgili bir şeyler zannımca yapmak istemişim.
+
+157
+00:34:15,380 --> 00:34:18,180
+Bunun içerisine bir şeyler yazdırmış mı bilmiyorum.
+
+158
+00:34:20,699 --> 00:34:27,440
+Popup'ta böyle açılan bir uyarı. Onu da biliyorsunuz. Popup'ta yapılabilecek şeylerden birisi de belki.
+
+159
+00:34:27,880 --> 00:34:31,539
+Şurada popup'u arayayım bakalım bir şeyler yapmışım.
+
+160
+00:34:34,099 --> 00:34:46,659
+İşte pop-up yok ki okey. Yani bir pop-up ben yapamadım, ekleyemedim mi yazacakmış burada mesela pop-up olarak. Bir de pop-up tanınlayabiliriz ekrana bilgi yazması için demek ki.
+
+161
+00:34:46,659 --> 00:35:02,099
+Ardından arkadaşlar bir pain tanımlıyoruz. Bu bizim, nasıl söyleyelim, şu açılan ekranımızın içerisinde modüllerimizi yerleştireceğimiz alan. Tamam mı? Tanımladık. Ve istediğiniz gibi...
+
+162
+00:35:02,099 --> 00:35:13,380
+isimlendirebilirsiniz tabii ki. Bunun içerisine GetChillDur'ın metodunun altında gelen Add metodu ile beraber teker teker bu modellerin her birisini ekliyorsunuz.
+
+163
+00:35:13,523 --> 00:35:41,523
+İşte bunları eklediğimiz anda artık şu yapıyı sağlamış oluyoruz. Rout. Rout'u henüz daha bu yapının içerisine eklemedik ama bir bütünü böyle görmüş oluyoruz. Her birisinin lokasyonları birbirlerine göre nerede? Onların hepsini görmüş oluyoruz. Şu set action'lara gelmeden önce gelin bir şeyi de şurada oluşturalım. Ardından o bizim ana ekranımız işte 500'e 500.
+
+164
+00:35:41,523 --> 00:36:03,203
+Çocuk oluşturduk. Buraya o paneyi verdiğimiz anda, new scene dediğimiz anda artık o bizim oluşturduğumuz her birisinin göreceli olarak konumlarını birbirlerine göre yerleştirdiğimiz o sahnenin içerisinde tüm işte kapanma butonu falan olan bir şeye yerleştirmiş oluyoruz.
+
+165
+00:36:09,523 --> 00:36:33,703
+Pas edilmişti. Hatırlıyorsunuz. Şurada bakın. Stage objesi pas edilmişti. Bu objenin set title'ıyla beraber işte bu şeyin ismi ne olsun? Ne denir ona? Uygulamanın ismi ne olsun? Buraya koyabiliyorsunuz. Ardından bu stage'in içerisinde yine oluşturduğunuz bu sahneyi koyuyorsunuz ve show metodunu çalıştırdığınız anda
+
+166
+00:36:34,228 --> 00:36:42,148
+Burada o pop-up açılmış olacak. Uygulama çalışmış olacak. Bir dakika. Buyurun.
+
+167
+00:36:45,047 --> 00:36:46,488
+Ders anlatıyorum. Buyurun.
+
+168
+00:36:52,340 --> 00:36:53,640
+Bana mı soracaktınız?
+
+169
+00:36:54,019 --> 00:36:55,060
+Kurkan Çakmak.
+
+170
+00:36:55,260 --> 00:36:56,320
+Evet, doğru bir şey.
+
+171
+00:36:57,199 --> 00:36:59,619
+Sizler aslın söylen ismısınız bizim bölümde.
+
+172
+00:37:00,079 --> 00:37:00,840
+Gideceğim de.
+
+173
+00:37:01,920 --> 00:37:06,239
+Tamam, yani ders anlatıyorum şu an ve mailinize gelmedi bu arada.
+
+174
+00:37:06,239 --> 00:37:07,739
+Ne ediyorsunuz?
+
+175
+00:37:08,659 --> 00:37:10,940
+F.C.E.N.O.T.A.M.S.E.
+
+176
+00:37:10,940 --> 00:37:12,560
+İkinizde mail bulunuyor.
+
+177
+00:37:13,039 --> 00:37:14,440
+Öyle bir mailimiz yok zaten.
+
+178
+00:37:17,588 --> 00:37:25,188
+Yani bir, şu an tam dersin ortasındayım. O yüzden ders bitsin. Ve 15-20 dakika sonra tekrar bir gün.
+
+179
+00:37:25,188 --> 00:37:26,188
+Anlatmıyor musun?
+
+180
+00:37:29,988 --> 00:37:37,387
+Bu şovla beraber şeyi, New The Nero'na artık pop-up olarak açılmasını sağlayabilir.
+
+181
+00:37:37,396 --> 00:37:47,695
+Tabii ki her birisinin sizden, ben size kodu o yüzden paylaştım. Şöyle bir girip bu site için ne tarz metotları var, senin ne tarz metotları var bunlara bakmıyoruz.
+
+182
+00:37:47,923 --> 00:38:13,423
+Asıl burada size vurgulamak istediğim noktalardan birisi çeşitli butonlar oluşturmuş durumdayız. Bakın hem kaydet butonumuz var hem de tüm kişiler isminde bir butonumuz var. Bu butonlara basıldığında bir aksiyon gerçekleşmesi lazım. Bir fonksiyonun çalışması lazım. Onu da şu şekilde yapıyoruz. Kaydet set on action metodunu kullanıyoruz.
+
+183
+00:38:13,840 --> 00:38:25,500
+Bunlar, Inners class'ları anlatmıştım size hatırlarsanız. O yapıda kullanılan şeyler görüyorsunuzdur. Bu bir sınıf yani.
+
+184
+00:38:26,619 --> 00:38:38,619
+Butonun içinde, kaydet butonunun sınıfının içerisinde event handler var. Bir eventin olmasını bekliyor. Yani butona basılmadığı sürece
+
+185
+00:38:39,539 --> 00:38:44,920
+Veya her daim basıldığında çalışmaz da basılması bırakıldığında çalışabilir.
+
+186
+00:38:45,331 --> 00:39:13,331
+Yani bir butona basmak vardır bir de bastığınızı bırakmak vardır. İkisi farklı şekilde değerlendirilebilir. Ya bastığınızda ya basılması bırakıldığında bu değerlendirme işlemi gerçekleştirilir. Bakın yapılan şey bunun kendi içerisinde kaydetin kendi içerisinde Handle isminde bir metot var. Buraya kadar hiçbir yere dokunmuyoruz zaten kaydet butonuyla beraber. O Handle metodunu biz kendimiz burada overwrite ediyoruz.
+
+187
+00:39:13,331 --> 00:39:21,751
+Şuraya yazdığımız işlem tamamen bizim o kaydet butonuna tıklandığı anda ne olmasını istiyorsak o.
+
+188
+00:39:21,751 --> 00:39:24,751
+Bakın isim diye bir...
+
+189
+00:39:25,235 --> 00:39:45,595
+Text field'ımız vardı. Oradan get text to string almışız ve boşluk sıfıra eşitmedi. Yani isim kısmı boşluksa veya soy isim kısmı boşluksa ekleyemedim diye pop-up set ediliyor.
+
+190
+00:39:53,235 --> 00:39:59,955
+Yani burada işte çeşitli şeyler yapılmış. Böyle yapmışsa da olurdu da. İşte pop-up ne denir ona?
+
+191
+00:40:00,000 --> 00:40:05,619
+görüntülenmiyorsa görüntülensin, görüntülenmiyorsa hide yapılsın gibi bir yapı kullanılmış.
+
+192
+00:40:06,019 --> 00:40:08,180
+Neyse, bir pop-up çıkarılmaya çalışılmış.
+
+193
+00:40:08,380 --> 00:40:12,119
+Yani ismini ve soy ismini muhakkak girmesi gerekiyor kişinin.
+
+194
+00:40:12,900 --> 00:40:16,760
+Girdiyse else kısmına düşüyor olacak, tahmin edebileceğiniz üzere.
+
+195
+00:40:16,760 --> 00:40:27,380
+Yeni bir kişi oluşturmuş kişinin ismini, isim bizim text field'undan get text metoduyla almış, koymuş, soy ismi koymuş.
+
+196
+00:40:28,000 --> 00:40:29,640
+Doğum...
+
+197
+00:40:29,715 --> 00:40:57,515
+Date Picker'da eğer ki doğum tarihi seçilmişse, naldan farklıysa onu set ediyor. Seçilmemişse lokal, yani şu anki zamanı herhalde onun içerisine yerleştiriyor. Ardından cinsiyet olarak ne seçilmişse o yerleştiriliyor. Kadınsa kadın, erkekse erkek, erkekse true, kadınsa false gibi bir yapı kullanılmış.
+
+198
+00:40:57,715 --> 00:41:13,835
+Burada Bölüm için Bölümde bir choice box'ı hatırlarsanız orada da get value'ye kullanılıyormuş. O seçildiyse eğer bir kişi için hangisi seçildiyse o alınıyor. Seçilme ise bölümsüz olarak oluşturuluyor.
+
+199
+00:41:13,835 --> 00:41:25,715
+Yani the kişi denilen instance, object burada oluşturulmuş durumda. Ardından kişiler isminde bir ArrayList'imiz vardı. Onun içerisine ekleniyor. Bu yaptığı temel şey bu.
+
+200
+00:41:25,715 --> 00:41:34,596
+Hatta şu da çalışsın hadi. Sistema outprint eden kişiler size. Her kişi eklendi. Şu an kişiler listesinin size'ının ne olduğu konsola yazılıyor.
+
+201
+00:41:35,219 --> 00:42:02,519
+Yani arayüze de tabii ki yazabilirsiniz. Burada benim hani bir bakışım kullandığım belki bir şeydi bilmiyorum. Konsola o kişilerin ne dönür ona size'ını yazıyor olacağım. Her iki tarafı da kontrol edeceğiz. Bir diğeri tüm kişiler diye bir tane daha butonumuz vardı. Bakın tüm kişiler belli lokasyonları belli olan. Bu tüm kişilere tıklandığında yine handle'ın içerisine girdildi.
+
+202
+00:42:03,219 --> 00:42:10,559
+Hiçbir şeyle dokunmuyoruz. Inner sınıfların biz bir handle metodunu overwrite ediyoruz.
+
+203
+00:42:11,159 --> 00:42:16,239
+Geldik buraya. Yaptığı işlemle o kişiler listesindeki her şeyi ekrana yazmışız.
+
+204
+00:42:16,239 --> 00:42:22,420
+Şey, konsola yazmışız. Okey. Yani ekliyor muyuz diye kontrol etmek için yapmışımdır muhtemelen ben bunu.
+
+205
+00:42:22,759 --> 00:42:27,000
+Konsola yazıyoruz. Normalde olması gereken şey ne? Mesela siz onunla bir uğraşın.
+
+206
+00:42:27,460 --> 00:42:30,479
+Bir tane table tanımlayabiliyorsunuz yine.
+
+207
+00:42:31,219 --> 00:42:41,300
+Arayüzün içerisinde tüm kişilere tıklandığında farklı bir paging yapısı kullanarak bir table açıldı. Hala hazırda eklenen kişileri oradan görebilirsiniz.
+
+208
+00:42:41,639 --> 00:42:44,119
+Gelin nasıl çalıştığına beraber bakalım. Açıldı.
+
+209
+00:42:47,479 --> 00:42:52,599
+Mesela Furkan, Şakmak, doğum tarihi seçelim.
+
+210
+00:42:54,739 --> 00:43:21,739
+Neyse, lastikeri bir şeyler seçiyorum. Erkek, bilgisayar mühendisliği seçtim. Kaydete tıkladım. Kaydete tıklar tıklamaz. Konsol ekranında bir yazdı. O size'dan geliyordu şuradan. Bir kişiyi şimdilik kaydetmişiz. Mesela Merve Haydari olmuş olsun. Hiçbir şey yazmayayım. Kadın olarak seçeyim. Bölümünü...
+
+211
+00:43:22,356 --> 00:43:29,256
+Hiçbir şey seçmemek ihtimali bu saatten sonra. Elektrik mühendisliği olarak seçeyim. Kaydet dedim. Bakın iki oldu.
+
+212
+00:43:30,856 --> 00:43:37,936
+Veya soyadını veya adını yazmadığımızda bir pop-up gibi bir şey çıkacak hatırlıyorsunuz. Kaydet dedim ama.
+
+213
+00:43:37,936 --> 00:43:40,256
+Mesela konumunu hiç iyi verememişim.
+
+214
+00:43:40,755 --> 00:43:53,875
+Doğru bir yere eklemek lazım. Ekleyemedim diye burada yazılıyor. Onun işte set, layout, size'larını doğru vermek lazım. Tüm kişiler dediğimizde ise ekrana basıyordu bakın. İşte Furkan Çakmak.
+
+215
+00:43:54,867 --> 00:43:56,647
+Bu tarihi seçmiş. Okey.
+
+216
+00:43:57,467 --> 00:44:01,667
+Bilgisayar mühendisliği cinsiyet erkekten fols oluyor demek ki.
+
+217
+00:44:01,727 --> 00:44:07,007
+Merve Haydari şu tarihi şu aynısı gelmiş mesela.
+
+218
+00:44:07,107 --> 00:44:10,907
+Hani değiştirilmediğimde elektrik mühendisliği olduğunu görüyorsunuz.
+
+219
+00:44:10,947 --> 00:44:11,947
+Bir daha başlatayım.
+
+220
+00:44:12,407 --> 00:44:15,247
+Bölümsüz olarak nasıl yazılacak onu merak ediyorum.
+
+221
+00:44:16,687 --> 00:44:17,187
+Mert.
+
+222
+00:44:17,728 --> 00:44:24,508
+Gonca olmuş olsun, erkek, kaydet dediğimde bir tane kaydet.
+
+223
+00:44:24,668 --> 00:44:32,188
+Tüm kişiler dediğimde doğum tarihi bu, bölümü bölümsüz olarak gelirdi ve sonsu olarak işaretlenmiş oldu.
+
+224
+00:44:33,748 --> 00:44:40,428
+Temelde bu. Yani bu ilere dair çeşitli size arayüzler dilim döndüğünce göstermeye çalıştım.
+
+225
+00:44:40,568 --> 00:44:43,388
+Bu noktaya kadar sizin sorularınız varsa onları alabilirim.
+
+226
+00:44:48,052 --> 00:45:01,552
+Yok, tamam. Sizlerle bu dokümanları paylaştım arkadaşlar. Sizler de deneyip onun üzerinden bir şeyler çalıştırabilirsiniz. Benim bu hafta ders olarak anlatacağım konular bu kadar.
+
+227
+00:45:01,967 --> 00:45:29,067
+Önümüzdeki hafta 8'inde final sınavımız oluyor olacak. Şimdiden başarılar diliyorum. Yine ortak yapacağız. Nasıl yapacağımıza karar vermedik. Soran arkadaşlar olmuştu öncesinde. Daha hocalarımızla oturup karar vermedik. Aynı zamanda bir proje teslimmesi söz konusu. Lütfen ona da özen gösterin. Güzel bir şekilde tamamlayın.
+
+228
+00:45:29,967 --> 00:45:33,707
+kontrol edip bize son durumları bildiriyor olacaklar.
+
+229
+00:45:34,487 --> 00:45:36,427
+Tarihi de uzatmış olduk.
+
+230
+00:45:36,567 --> 00:45:38,927
+Daha verimli geçsin sizin adınıza diye.
+
+231
+00:45:40,147 --> 00:45:43,887
+Güzel bir dönem belki çok olamadı online olduğu için.
+
+232
+00:45:44,320 --> 00:45:50,320
+Biraz nedeni bana böyle sönük geçti gibi hissediyorum ben açıkçası.
+
+233
+00:45:51,400 --> 00:45:58,280
+Tekrardan depremde hayatını kaybeden vatandaşlarımıza Allah'tan rahmet kalanlara da başsağlığı diliyoruz.
+
+234
+00:45:58,840 --> 00:46:02,620
+İnşallah ülkemizde bu sıkıntıları bir an önce atlatır.
+
+235
+00:46:03,720 --> 00:46:09,140
+Ve bu bizde tabii ki siz öğrenciler olarak sizin önünüzde atlatmamız gereken bir final.
+
+236
+00:46:09,599 --> 00:46:18,259
+Ve olmaz inşallah ama bütünleme haftaları söz konusu. Siz de onları güzel bir şekilde atlatırsınız diye güzel temennilerde bulunalım.
+
+237
+00:46:18,779 --> 00:46:20,119
+Hocam, bir şey sorabilir miyim?
+
+238
+00:46:20,819 --> 00:46:34,739
+Evet, bitireyim hemen sor. Böylece önümüzdeki yıl yeni derslerinizle yüz yüze bir şekilde eğitme başlarız diye temennide, güzel temennilerde bulunmuş olalım.
+
+239
+00:46:34,739 --> 00:46:36,380
+Evet, buyurun sorabilirsiniz.
+
+240
+00:46:38,132 --> 00:46:43,552
+Dersle alakalı da değildi yani bu şeyde. Bu lablar için bir şey soracaktım.
+
+241
+00:46:44,231 --> 00:46:44,572
+Buyurun.
+
+242
+00:46:44,972 --> 00:46:50,751
+[kişisel bilgi] Neden olduğunu anlamadım.
+
+243
+00:46:51,219 --> 00:46:55,499
+Daha önce lab'ı alınmışsanız muaf olabilirsiniz. Bilmiyorum.
+
+244
+00:46:55,599 --> 00:46:56,919
+Ben ilk defa alıyorum dersin mi?
+
+245
+00:46:57,319 --> 00:47:01,579
+Tamam, aslında arkadaşlarımızla konuşuyor. O kısmı tamamen onlar yönetiyorlar.
+
+246
+00:47:02,239 --> 00:47:05,399
+Şimdi gördüm bakarken. Tamamdır. Ben mail atayım onları.
+
+247
+00:47:05,579 --> 00:47:10,359
+Onlara bir mail atın. Onlar yönetiyorlar. Bir karışıklık olmuş olabilir belki.
+
+248
+00:47:10,799 --> 00:47:12,619
+Tamamdır. Teşekkür ederim hocam. İyi günler.
+
+249
+00:47:12,999 --> 00:47:16,759
+Ben teşekkür ederim. Evet, kendinize iyi bakın. Sağlıcakla kalan görüşürüz.
+
+250
+00:47:19,251 --> 00:47:20,351
+İyi günler, Jim.
