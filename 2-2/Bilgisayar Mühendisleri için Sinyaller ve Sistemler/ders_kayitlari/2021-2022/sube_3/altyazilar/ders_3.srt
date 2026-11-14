@@ -1,0 +1,2803 @@
+1
+00:11:54,803 --> 00:11:56,803
+Arkadaşlar, sesim geliyor mu acaba?
+
+2
+00:11:56,803 --> 00:11:58,803
+Geliyor hocam.
+
+3
+00:11:58,803 --> 00:12:00,803
+Tamamdır, nasılsınız?
+
+4
+00:12:09,139 --> 00:12:11,139
+İyiyiz hocam, siz nasılsınız?
+
+5
+00:12:12,139 --> 00:12:13,139
+Teşekkür ederim.
+
+6
+00:12:18,355 --> 00:12:23,216
+Geçen hafta güncü slide'ın ortalarına kadar gelmiştik.
+
+7
+00:12:24,495 --> 00:12:26,615
+Önce örnek çözmeyi biraz ihmal etmiştik.
+
+8
+00:12:26,615 --> 00:12:33,895
+Ben birkaç örnek önce bir geçen haftanın özetini çıkarıp sonra iki örnek çözmek istiyorum.
+
+9
+00:12:38,451 --> 00:12:45,371
+Önce şunu sorayım, MATLAB veya Python'ı kurup deneyen ne oldu mu acaba geçen haftaki uygulamalarımızı?
+
+10
+00:12:59,283 --> 00:13:23,004
+Herhangi bir cevap alamadığıma göre büyük ihtimalle kurmadınız. Ben en kısa zamanda kurmanızı öneririm. Çünkü ders içerisindeki ödevler onlarla ilişki olacak. Ne kadar önce kurarsanız o kadar iyi olur. Tamam, ufuk kurmuş ama denememiş hepsini. Sorun değil. Bir altyapıyı oluşturun. Ondan sonra zaten kendiniz de zevk almaya başlayacaksınız çalışmaktan.
+
+11
+00:13:25,268 --> 00:13:31,248
+Şimdi hemen geçen haftanın özetini paylaşacağım. Ama ekran geliyor mu önce? Onu teyitle alayım.
+
+12
+00:13:33,488 --> 00:13:34,587
+Geliyor hocam ekran.
+
+13
+00:13:35,128 --> 00:13:35,427
+Tamam.
+
+14
+00:13:41,427 --> 00:13:56,687
+Anladım [öğrenci]. MATLAB veya Python ile uygulama yapıyoruz. Geçen hafta bunun bir kısmını yapmıştık. Bu hafta da yine birkaç uygulamaya devam edeceğiz. Ve sonrasında da ödev olarak muhtemelen buradan bir şeyler vereceğiz. Onlarla ilişkili konuştum.
+
+15
+00:13:57,867 --> 00:14:06,888
+Şimdi geçen hafta gördüğüm şeylere şöyle bakacak olursak bir FT bize veriliyordu. Artık biz bunlara fonksiyon demeyeceğiz de işaret diyecektik.
+
+16
+00:14:07,231 --> 00:14:25,131
+Sürekli zaman işareti veriliyordu. Bunun şekli de verilebilir. Atıyorum şöyle bir şekle sahip olabilir. Zamana göre değişen bir işaret. Adam bize gelip diyordu ki 2 çarpı F3T-4'ü çiziniz diyorum.
+
+17
+00:14:29,235 --> 00:14:33,235
+Böyle bir şey vardı. İkincisi, sinyallerin çeşitlerini görmüştük.
+
+18
+00:14:34,176 --> 00:14:40,956
+İşte bir sinyal dijital mi, analog mu? Ayrık mı, sürekli mi? Periyodik mi, aperiyodik mi?
+
+19
+00:14:41,716 --> 00:14:45,056
+Nedensel nedensel değil. Tek sinyal, çift sinyal.
+
+20
+00:14:45,776 --> 00:14:52,975
+Deterministik veya random, rastgele sinyaller şeklinde çeşitli kısımları ayırmıştık.
+
+21
+00:14:54,580 --> 00:14:57,980
+Bunun özetini tabii ki geçmeyeceğim ama bir örnek çözmek istiyorum.
+
+22
+00:14:59,180 --> 00:15:02,200
+Şurada ekrandaki kısmının hepsinin tamamını bir sileyim.
+
+23
+00:15:06,035 --> 00:15:14,295
+Bir tane işaret verelim. İşaret XT işaret olsun. XT işareti bir parçalı fonksiyon şeklinde tanımlanmış olsun.
+
+24
+00:15:14,435 --> 00:15:24,415
+T sıfırdan küçükken adam sıfır alıyormuş. T sıfıra eşit veya anlam büyükken Y üzeri eksi T alıyormuş.
+
+25
+00:15:25,895 --> 00:15:28,076
+Sol tarafa da istediğim şeyleri yazayım.
+
+26
+00:15:30,135 --> 00:15:31,596
+Gücünü bulunuz diyor.
+
+27
+00:15:32,436 --> 00:15:40,615
+Enerjisini bulunuz diyecek. Sonra bu işaretler dijital mi? Analog mu?
+
+28
+00:15:44,692 --> 00:15:48,072
+Başka ne olabilir? İşte ayrık mı, sürekli mi?
+
+29
+00:15:52,083 --> 00:15:55,843
+Başka tek mi, çift mi veya hiçbiri mi?
+
+30
+00:16:03,475 --> 00:16:05,475
+Nedensel sinyalimi değil mi?
+
+31
+00:16:12,724 --> 00:16:14,724
+Deterministik mi, random mu?
+
+32
+00:16:21,652 --> 00:16:32,772
+Sonuçta biz işaretleri farklı türlere göre sınıflandırabiliyoruz. Bunlar sınıflandırmalarımızın bazıları. Şurada gösterdiklerim.
+
+33
+00:16:34,231 --> 00:16:42,451
+İlk kısımda güç ve enerji hesabıyla ilişkili. Şimdi geçen hafta tabii güç ve enerjiyi anlattık ama çok hızlı bir şekilde anlatmıştık.
+
+34
+00:16:42,532 --> 00:16:47,852
+Bu örnekle işleyisi ona da bir çözüm bulmuş olacağız. Yani açıklamış olacağız.
+
+35
+00:16:52,052 --> 00:17:03,652
+Şimdi böyle bir soruyla karşılaştığımız zaman ilk etapta işareti çizmek çok iyi olacaktır. Yani bizim işareti anlamamız açısından çok daha iyi olacaktır.
+
+36
+00:17:04,692 --> 00:17:18,052
+Alt ve üst ekseni çiziyorum. Sonuçta zamana göre değişmesi lazım. Peki sıfırdan önceki değeri neymiş? Sıfır olarak devam ediyormuş. Yani şurası...
+
+37
+00:17:18,880 --> 00:17:20,880
+sıfır olarak devam edecek.
+
+38
+00:17:21,680 --> 00:17:25,880
+sıfıra eşit ve ondan küçükken, E üzeri eksi t diyor.
+
+39
+00:17:26,180 --> 00:17:28,180
+Bu nasıl bir fonksiyon arkadaşlar?
+
+40
+00:17:29,680 --> 00:17:31,680
+Ne diyebiliriz bununla ilgili?
+
+41
+00:17:35,347 --> 00:17:37,548
+Azalan bir fonksiyon, bunu görebiliyoruz.
+
+42
+00:17:38,407 --> 00:17:41,347
+Aslında yerine değer vererek de yapabilirim.
+
+43
+00:17:41,427 --> 00:17:47,147
+T eşittir sıfır koyarsam, aslında e üzeri eksi sıfırdan bir değeri alacaktır, bunu biliyorum.
+
+44
+00:17:48,627 --> 00:17:50,487
+Birkaç yerde daha değer oturtabilirsiniz.
+
+45
+00:17:50,667 --> 00:17:54,347
+Mesela t eşittir eksi sonsuz versem, pardon, t eşittir sonsuz versem,
+
+46
+00:17:55,467 --> 00:17:59,887
+o zaman e üzeri sonsuzdan bunun sıfır değerine yakınsadığını göreceksiniz.
+
+47
+00:18:00,367 --> 00:18:02,268
+Yani bu adam burada birden başlıyormuş.
+
+48
+00:18:03,059 --> 00:18:09,639
+Sonra giderek azalan bir fonksiyon olduğunu görebiliyorum. Tamam. İşaretimizi çizdik.
+
+49
+00:18:10,460 --> 00:18:16,099
+Şimdi bu işaretten sonra bunun gücü ve enerji ile ilgili önce ilk değerlendirmeyi yapmam gerekiyor.
+
+50
+00:18:18,099 --> 00:18:27,819
+Peki yapalım. Öncelikle enerjisini bulalım. Enerji formülü nedir diye baktığımız zaman çok basit bir şekilde
+
+51
+00:18:31,380 --> 00:18:38,420
+x t'nin mutlak değerinin karelerinin integral oluyor.
+
+52
+00:18:40,220 --> 00:18:48,720
+Peki, burada, bu formül bu arada sunumda da var, aynı oradakinin benzerinden kullanıyorum.
+
+53
+00:18:49,680 --> 00:18:54,920
+Burada bu işaretin inensini ölçmek için integralimin sınırları ne olacak?
+
+54
+00:19:05,011 --> 00:19:16,751
+İşaretime baktığım zaman, eksi sonsuzdan sıfıra kadarki süreçte herhangi bir çıktı yok. Dolayısıyla sıfırdan sonsuza kadar ben bunun alt ve üst sınırlarını değiştirebilirim.
+
+55
+00:19:17,251 --> 00:19:24,291
+XT'yi de yerine koyabilirim. XT'de dolayısıyla eksi T'nin karesi DT olacak.
+
+56
+00:19:25,291 --> 00:19:28,811
+Bunu bir tıkırları götürürsem üstler çarpılır tabii ki biliyoruz.
+
+57
+00:19:33,523 --> 00:19:46,843
+Bunu integraline alacağımız zaman e üzeri eksi 2t'nin 1 bölü eksi 2 çarpı e üzeri eksi t'nin 0 ve sonsuzdaki değerleri olacak.
+
+58
+00:19:47,763 --> 00:19:48,683
+Alt ve üst sınırları.
+
+59
+00:19:51,203 --> 00:19:55,683
+Burada da eksi 1 bölü 2 eksi 05 diye yazayım hadi.
+
+60
+00:19:56,203 --> 00:19:59,883
+Çarpı e üzeri eksi sonsuz.
+
+61
+00:20:00,627 --> 00:20:27,707
+eksi e üzeri sıfır olacak. Şu kısmın sıfıra yakınsıyacağını biliyorum. Şu kısmında bir olacağını biliyorum. Dolayısıyla bu integral sonucunda benim elde ettiğim değer 0,5'miş. Yani sonsuzdan küçük bir değer elde ediyorum. Enerjisi 0,5 olan bir sinyalmiş. Adam enerjiyi bulunduyordu. Ben onun karşılığını da buldum burada.
+
+62
+00:20:28,692 --> 00:20:36,692
+Peki gücü bulalım. Gücün de tanımı şöyle. Aslında enerjiyi önce bulmanın burada avantajı ortaya çıkıyor.
+
+63
+00:20:37,652 --> 00:20:44,311
+T sonsuza giderken enerji bölü 2T şeklinde hesaplanabiliyor.
+
+64
+00:20:46,132 --> 00:20:53,052
+Enerji bizim burada 0,5 olarak hesapladığımızı göre bu limit sonucu ne çıkar arkadaşlar?
+
+65
+00:21:01,107 --> 00:21:09,667
+Evet, sıfır olarak çıkar. Aslında şöyle de düşünebilirsiniz. Sabit bir sayıyı sonsuza yakın büyük bir sayıya böldüğünüz zaman çıkar diye düşünebilirsiniz.
+
+66
+00:21:10,768 --> 00:21:20,447
+O zaman bunun da sıfır çıkacağını görebilirsiniz. Dolayısıyla siz burada enerji ile gücün hesabını yapmış oldunuz.
+
+67
+00:21:20,447 --> 00:21:24,707
+Şimdi bunun haricindeki kısımlara bir bakalım.
+
+68
+00:21:35,476 --> 00:21:39,576
+Bu işaret dijital midir, analog mudur arkadaşlar?
+
+69
+00:21:45,460 --> 00:22:10,900
+Analog. Çok iyi biliyoruz ki zamanın herhangi bir değerinde çıkışta bir değer üretebiliyor. Bakın burada T yerine ne yazarsanız yakın, yazın. Bunun bir karşılığı var. Fonksiyon kümesinde karşılığı var. Dolayısıyla ben burada analog kısmını seçebilirim. Aslında karalamış gibi olmadım. Tamam, şöyle diyorum.
+
+70
+00:22:11,508 --> 00:22:14,807
+Analog olduğunu biliyorum. Peki, ayrık mıdır, sürekli midir?
+
+71
+00:22:19,380 --> 00:22:26,620
+Süreklidir, bunu da görebiliyorum. Çünkü ayrık olsa zamanda böyle ayrık ayrık çizimler şeklinde gösterilecekti.
+
+72
+00:22:27,380 --> 00:22:33,740
+Stem plot diyoruz biz ona. Burada ise normal bir plot var. Dolayısıyla sürekli olduğunu da burada gösterdik.
+
+73
+00:22:35,260 --> 00:22:38,280
+Peki tek sinyal, çift sinyal mi yoksa hiçbiri mi?
+
+74
+00:22:39,940 --> 00:22:46,480
+Hiçbiri. Eğer çift ya da tek simetrik olsa bir kere simetrisi bulunması gerekiyor sıfır eksenine göre.
+
+75
+00:22:47,859 --> 00:22:58,879
+t eşittir sıfıra göre. Burada herhangi bir simetriklikten bahsedemeyiz. Dolayısıyla çift ya da tek olduğunu söylemek doğru olmaz. Peki nedense sinyal mi?
+
+76
+00:23:02,483 --> 00:23:04,523
+Evet, nedenselliğin şartı şuydu.
+
+77
+00:23:06,083 --> 00:23:10,623
+T'nin sıfırdan küçük değerleri için sıfır bir çıktı üretmesi lazım.
+
+78
+00:23:10,743 --> 00:23:15,003
+Bakın, gerçekten sıfırdan küçük değerler için sıfır değeri veriyor.
+
+79
+00:23:15,563 --> 00:23:16,683
+Şöyle de sorabiliriz.
+
+80
+00:23:17,283 --> 00:23:24,243
+T sıfırdan küçük değerler için X'te'nin herhangi bir değeri sıfır mı diye sorabiliriz.
+
+81
+00:23:24,384 --> 00:23:26,743
+Evet, sıfır. O zaman nedenseldir.
+
+82
+00:23:28,019 --> 00:23:38,319
+Yanlış yaptık, karaladık. Şöyle nedenseldir diyebiliriz. Peki, Deterministik mi, Random Sinyal mi?
+
+83
+00:23:43,859 --> 00:23:46,099
+Bunu belki tam hatırlayamamış olabilirsiniz.
+
+84
+00:23:49,491 --> 00:23:59,572
+Ben söyleyeyim. Deterministik bir sinyal. Deterministik sinyallerin herhangi zamandaki değerini çok kolay bulabilirsiniz.
+
+85
+00:24:02,572 --> 00:24:08,892
+Formüllerle çünkü tanımlanmış oluyor. Ama random sinyal sürekli değişebilir. Şöyle düşünün.
+
+86
+00:24:10,372 --> 00:24:15,771
+Siz bir zar atıyorsunuz. Zarın çıktısını da bir fonksiyon olarak düşünün. Yt.
+
+87
+00:24:17,428 --> 00:24:33,028
+İşte her bir zaman dediğinde zar atıyorsunuz. Zar attığınız 6 geldi. Zar attığınız 3 geldi. 3 geldi, belki hep 3 geldi. Sonra 2 gelebilir, belki bir sonrakinde 5 gelebilir. Bilmiyorsunuz bir sonraki değer neyle ilişkisi olacak.
+
+88
+00:24:34,148 --> 00:24:44,348
+Ama burada yukarıya gidecek olursak deterministik sinyalde T yerine istediğin saati zamanı koy, onun karşılığını bu. Bu kadar basit.
+
+89
+00:24:44,819 --> 00:24:48,500
+Dolayısıyla bu sinyalde deterministik bir sinyal olmuş olacak.
+
+90
+00:24:51,955 --> 00:24:54,695
+Burada bir sıkıntı soru var mı arkadaşlar?
+
+91
+00:24:55,455 --> 00:24:56,556
+Hocam bir şey sorabilir miyim?
+
+92
+00:24:56,855 --> 00:24:57,135
+Tabii.
+
+93
+00:24:57,795 --> 00:25:01,515
+Hocam enerjinin birimi olarak Joule diyoruz değil mi? 05 Joule olarak.
+
+94
+00:25:03,475 --> 00:25:11,275
+Burada X-T'nin bir sinyal olduğunu düşünüyoruz değil mi? Ama bu sinyal neyi gösteriyor? Bunu bilmiyoruz.
+
+95
+00:25:12,815 --> 00:25:17,995
+Bu yüzden enerjiye burada bir birim koymak şu açıdan mantıklı değil.
+
+96
+00:25:18,516 --> 00:25:23,376
+Eğer ki akımla ilgili veya işte gerilimle ilgili bir şey konuşuyorsak evet jül olabilir.
+
+97
+00:25:24,336 --> 00:25:26,936
+Ama belki başka bir şeyleri de ölçüyor olabilir yani.
+
+98
+00:25:29,016 --> 00:25:31,356
+Bu yüzden buraya bir birim şu anda koymuyoruz.
+
+99
+00:25:38,579 --> 00:25:50,960
+Şu an sadece bir sinyal var ama sinyalin ne olduğunu bilmiyoruz yani. Onun enerjisini ölçtük ve güdünü ölçtük. Başka sorusu olan var mı?
+
+100
+00:25:56,692 --> 00:25:57,692
+Peki.
+
+101
+00:25:59,692 --> 00:26:01,692
+O zaman bütün hepsini temizleyip,
+
+102
+00:26:03,092 --> 00:26:06,692
+hızlı, madem enerji ile ilgili bir şey daha, bir şey sordunuz,
+
+103
+00:26:06,692 --> 00:26:09,692
+hızlıca onu da başka bir türlü söyleyelim.
+
+104
+00:26:11,692 --> 00:26:15,692
+Ya da şöyle söyleyelim, başka bir örnek verelim.
+
+105
+00:26:16,692 --> 00:26:20,692
+Sürekli bir zaman sinyali olmaz da ayrık zaman sinyali olabilir.
+
+106
+00:26:20,692 --> 00:26:22,692
+Burada gözüktüğü gibi.
+
+107
+00:26:23,859 --> 00:26:46,440
+İşte buradaki bunun aldığı değerler de sıfır anında eksi bir alabilir. Bir anında işte bir alabilir. Şu an sallıyorum yani. İki anında sıfır almış. Üç anında da gitmiş. Eksi iki almış. Adam bizden bunun enerjisini isteyebilir. O zaman nasıl bulacağız? Ne dersiniz?
+
+108
+00:26:58,516 --> 00:27:19,776
+Evet, [öğrenci] söylemiş aslında, tek tek toplayacak mıyız demiş. Şimdi bir önceki şeyde sürekli zaman sinyaliyle çalışıyorduk. Sürekli zaman sinyalinin enerjiyle ilişkili şöyleydi, eksi sonsuzdan artı sonsuza, XT'nin mutlak değerinin karelerinin toplamı gibi oluyordu. Aslında böyle bir şey.
+
+109
+00:27:25,811 --> 00:27:45,011
+Nasıl yapabilirim? Tabii ki toplam sembolü koyabilirim. Toplam sembolünde yine n yerine x sonsuzdan artı sonsuz olacak. Bakın hiçbir şey değişmedi. Burada ise x t yerine x n olacak. x n'in bu kez mutlak değerlerinin toplamı olmuş olacak. Peki buna göre kaç çıkar bizim enerjimiz?
+
+110
+00:28:00,596 --> 00:28:02,096
+10 mu çıkar? Ne dersiniz?
+
+111
+00:28:07,124 --> 00:28:17,284
+Bakalım, şimdi bir kere XN Sinyali böyle verildiyse arkadaşlar, bu aklınızda olsun, bu adam bir şey vermiyorsa buradaki değerleri sıfırdır.
+
+112
+00:28:21,107 --> 00:28:30,248
+Dolayısıyla nasıl integralde alt ve üst sınır değiştiriyoruz? Buradaki alt ve üst sınırı da değiştirmemiz lazım. Sıfırdan 3'e kadar tanımlayacağız bu 3 anında.
+
+113
+00:28:32,527 --> 00:28:36,487
+Xn'in değerlerinin karelerinin toplamı.
+
+114
+00:28:37,971 --> 00:28:49,251
+Bunu açacak olursak, aslında xn'in sıfırıncı noktasındaki değerin, mutlak değerinin karesi. Yani karesini aldığın zaman mutlak değer zaten olmuyor da, hadi onu da yazmış olalım.
+
+115
+00:28:50,112 --> 00:28:59,632
+Birin karesi, ikinin karesi, üçün karesi şeklinde açmış oldum ve bunun sonrasında 6 çıkacağını görebilirim.
+
+116
+00:29:01,951 --> 00:29:02,632
+Dolayısıyla...
+
+117
+00:29:03,923 --> 00:29:07,483
+Buradaki karşılığı da böyle olmuş oldu.
+
+118
+00:29:08,523 --> 00:29:13,723
+İkinci saniye, evet ikinci saniye değeri sıfır olduğu için onu dikkate almamış olduk aslında.
+
+119
+00:29:15,403 --> 00:29:16,864
+Şuradaki kareleri de olacak.
+
+120
+00:29:22,451 --> 00:29:24,531
+Böyle bir tekrar yapmış gibi olduk.
+
+121
+00:29:28,612 --> 00:29:31,152
+Birkaç hatırlatma yapacağım.
+
+122
+00:29:35,988 --> 00:29:39,427
+Şöyle ekranı tam olarak büyüteyim.
+
+123
+00:29:48,051 --> 00:30:02,591
+Evet, analog ve sayısal sinyalleri hep sürekli ve ayrık zamanla karıştırıyoruz. Birkaç arkadaşta buna denk geldim. Bu sebeple ben burada onu hızlıca geçmek istiyorum, göstermek istiyorum davranışım.
+
+124
+00:30:03,871 --> 00:30:10,551
+Şimdi arkadaşlar, analog işaret dediğimiz şey hem zamanda hem de genlikte sürekli değerleri içeriyor.
+
+125
+00:30:10,963 --> 00:30:36,864
+Yani şurada analog işareti hangisi diye sorarsanız sadece tek bir tane analog işaret var. O da bu. Bunun için aslında aklınıza şunu canlandırabilirsiniz. Analogdan sayısala dönüştürmek için ne yapıyorduk? Bir ADC diyorduk. Analog dijital dönüştürücüye giriyor diyorduk. Bunun arka planında koşan 3 tane şey vardı. Aslında alt bileşen vardı.
+
+126
+00:30:37,167 --> 00:30:44,708
+Birincisi örnekleme, ikincisi kuantalama, üçüncüsü de kodlamaydı.
+
+127
+00:30:46,688 --> 00:30:54,288
+Örnekleme zamanda ayrık hale getirirken kuantalama genlik ekseninde ayrık hale getiriyordu.
+
+128
+00:30:54,647 --> 00:30:57,688
+Dolayısıyla sayısal sinyalin tanımını buradan da aslında gidebilirsiniz.
+
+129
+00:30:58,407 --> 00:31:01,027
+Hem genlikte hem de zamanda ayrık değerleri gösteriyor.
+
+130
+00:31:01,027 --> 00:31:02,768
+Bakın buradaki gibi.
+
+131
+00:31:04,243 --> 00:31:30,703
+Zamanda ayrık, belirli zamanlarda bir çıktı üretiyor. Bunu görüyorum. Ama Genlik'te de ayrık seviyeleri var. Bakın, iki almış, bir almış ve sıfır almış. Sadece üç seviye alabiliyor. Çünkü bu kuantalanmış ya da nicemlenmiş bir çıktı. Dolayısıyla şuna sayısal ismini veriyorum. Buna da analog ismini veriyorum.
+
+132
+00:31:36,051 --> 00:32:03,471
+Bunun haricinde hangisi ayrık zamanlıdır, hangisi sürekli zamanlıdır dersek, zamana bakacağım. Zamanın herhangi bir yerinde değer alıyor mu? Bakıyorum. Bunun karşılığında bir değeri var. Şu nokta karşılığında bir değeri var. O yüzden bu zaten sürekli zaman olduğu kesin. Peki buraya bakıyorum. Zamanın herhangi bir zaman noktasında değeri var. Burada da var. Dolayısıyla bu da sürekli. Sürekli zaman işareti ikisi de.
+
+133
+00:32:05,332 --> 00:32:10,492
+Ayrık zaman adı üstünde zamanın belirli noktalarında tanımlı olması lazım.
+
+134
+00:32:11,312 --> 00:32:15,592
+Alt kısma baktığımız zaman her iki işarette ayrık zaman işareti olduğunu görebiliyoruz.
+
+135
+00:32:17,772 --> 00:32:21,732
+Umarım bu anlaşılmıştır, analogla sayısal işaret arasındaki fark.
+
+136
+00:32:31,892 --> 00:32:56,231
+Evet, şimdi bunun dışında bir uygulama, küçük bir uygulama göstermek istiyorum size. Böyle bir kod var. Kod aslında tren sesini yüklüyor dışarıdan. MetaBilinç'in de kendi tanımlı olduğu bir tren sesi var. Sonra tren sesini geçen hafta yaptığımız gibi soundla seslendiriyoruz. Alt kısmında da bunu çizdiriyor.
+
+137
+00:32:56,819 --> 00:33:05,439
+Bakalım tren sesi nasıl bir sese sahip ve çizdirdiğimiz zaman nasıl bir şey elde ediyoruz? Buna bir bakalım.
+
+138
+00:33:10,804 --> 00:33:13,204
+MATLAB fonksiyonumu açmaya çalışıyorum.
+
+139
+00:33:36,211 --> 00:33:41,211
+Ben şu kısımların hepsini kapatayım da arkadaşlar. Şu kısmı da böyle bir...
+
+140
+00:33:45,652 --> 00:33:47,132
+Ne yapıyoruzu göstereyim.
+
+141
+00:33:49,492 --> 00:34:00,312
+Aslında çok basit bir şey. Şunu yüklediğiniz zaman bunun içerisinde Y değişkeniyle bir vektör var. O vektör içerisinde ayrık zaman işaretini tutuyor.
+
+142
+00:34:00,612 --> 00:34:05,412
+Hatta sadece şu kısmı sağ tıklayıp çalıştırarak size gösterebilirim.
+
+143
+00:34:05,412 --> 00:34:09,412
+Bakın Workspace'de Y...
+
+144
+00:34:09,619 --> 00:34:16,380
+Vektörünü görüyorsunuz. Vektörün uzunluğu 12.880'miş. Yani 12.880 tane örnek var.
+
+145
+00:34:18,739 --> 00:34:25,779
+Evet, onun dışında ne geliyor? FS geliyor. Yani örnekleme frekansı geliyor. 800 kHz'de örneklemiş sesin. O gözüküyor.
+
+146
+00:34:25,880 --> 00:34:37,380
+8 yaklaşık 8192 Hz'de örneklemiş. Neyse, bizim için o da önemli değil. Biz burada sesi öncelikle bir...
+
+147
+00:34:38,036 --> 00:35:01,635
+Duymak istiyoruz. Şunları yorum haline getireyim. Sadece sesi duyalım. Ama size gelecek mi emin değilim. O yüzden bir çıktı. Yani bir şey yazarsanız çok sevinirim. Önce bir sesimi ayarlamaya çalışayım. Kulaklık tamam. Çok fazla bağırabilir. Biraz kıstım.
+
+148
+00:35:05,331 --> 00:35:08,112
+Burada Y demem lazım çünkü Y olarak geliyor.
+
+149
+00:35:11,492 --> 00:35:12,351
+Duydunuz mu?
+
+150
+00:35:17,235 --> 00:35:27,095
+Tamam, duyduk. Şimdi buradaki şeyi çizdirelim bakalım. Gerçekten bu tren sesi nasıl bir ayrık zamanlı işaretmiş?
+
+151
+00:35:27,235 --> 00:35:33,055
+Tabii ayrık zamanlı işaretleri çizdirmek için sistem fonksiyonunu kullanıyoruz. Plot dersek çünkü düz çizim yapıyor.
+
+152
+00:35:35,555 --> 00:35:43,315
+Sadece bu kısmı seçip Run diyebilirim, Evoliet Selection diyebilirim. Burada Y'yi çizdirmem lazım.
+
+153
+00:35:44,244 --> 00:35:46,403
+T'ye karşı Y'yi çizdirmem lazım.
+
+154
+00:35:49,203 --> 00:35:51,644
+Evet, çizdirdim. Bakın arkadaşlar.
+
+155
+00:35:55,043 --> 00:36:01,344
+Y'yende çok fazla örnek olduğu için tabii. Biz bu örnekleri sanki böyle taralı bir şey gibi görüyoruz.
+
+156
+00:36:02,983 --> 00:36:11,024
+Sıfır anından yaklaşık 0-5 anına kadar çizim gelmedi mi? O zaman ekranın tamamını paylaşayım.
+
+157
+00:36:12,980 --> 00:36:15,539
+Ekranı tamamını paylaşsın, o zaman çözeceğiz.
+
+158
+00:36:25,076 --> 00:36:45,775
+Tamam. Bakın arkadaşlar, o dıt dıt şeklinde yaptığı şeyin ilk dıtı aslında 0 ile 0.5 saniye arasında. Onu görebiliyorsunuz. İkinci dıtı da daha uzun olduğu için daha böyle 0.6. saniyeden 1.5. saniyeye kadar böyle bir saniyelik yaklaşık bir periyotta çalmış.
+
+159
+00:36:46,076 --> 00:36:51,775
+Şimdi aslında bunların her biri bir örnek. Şurada zoom seçeneğiyle.
+
+160
+00:36:52,307 --> 00:37:18,887
+Örneklere yakınlaşabiliriz. Bakın, ne kadar detaylı örnekleri var. Bizim sesimiz de aynı şekilde bu şekilde çıkıyor. Ve istersek bunları da böyle gösterebiliriz. Dolayısıyla neden ayrık zamanlı ses, şey, ayrık zamanlı sinyaller bilgisayardadır diye söylüyorduk. İşte burada gözüküyor.
+
+161
+00:37:19,443 --> 00:37:31,703
+Çünkü bilgisayarda tuttuğumuz her şey ayrık. Bakın burada Y vektörü dediğimiz bu şey tuttuğumuz şey bir vektör halinde ve ayrık. İşte 12.880 tane örneği var. Bunu görebiliyoruz.
+
+162
+00:37:33,824 --> 00:37:45,743
+Peki mesela ben burada başka şeyler yapsam. Diyelim ki buradaki Y değerini 2 ile çarpsam. Nasıl duyarım acaba?
+
+163
+00:37:46,175 --> 00:37:47,175
+Ne dersiniz?
+
+164
+00:37:57,523 --> 00:38:01,823
+Yani aslında bütün fonksiyonu iki kat arttırmış oluyorum.
+
+165
+00:38:02,724 --> 00:38:09,543
+2 çarpı Y'yi dinlesem, 2 çarpı Y'yi çizdirsem, bakalım nasıl bir çift öğreteceğim.
+
+166
+00:38:12,283 --> 00:38:16,103
+Evet, biraz daha sesin yüksek olduğunu gördük herhalde.
+
+167
+00:38:16,663 --> 00:38:18,543
+Herkes anlamıştır bunu diye düşünüyorum.
+
+168
+00:38:20,543 --> 00:38:23,884
+Bakın genlik seviyesi eksi 2 ile artı 2 arasına çıktı.
+
+169
+00:38:25,427 --> 00:38:33,887
+Çünkü bütün değerleri o 1 ile 2 aralığındaki değerleri eksi 2 ile eksi 1 arasını, eksi 2 ile artı 2 arasını genişletmiş olduk.
+
+170
+00:38:34,507 --> 00:38:36,747
+Şimdi bir de şunu da göstermek istiyorum.
+
+171
+00:38:38,887 --> 00:38:40,527
+Bu kısım aynen kalsın.
+
+172
+00:38:43,487 --> 00:38:46,087
+Bir de kuantalama olayını söylemiştik değil mi?
+
+173
+00:38:46,648 --> 00:38:49,327
+Şunu sadece çizdirelim, bir daha görelim.
+
+174
+00:38:51,027 --> 00:39:15,207
+Bakın burada dikeyde bu adamın aldığı değerler farklı. Biz bunu belli seviyelerde alsak, kuant alasak yani nasıl bir çıkış elde ederiz? Burada 0.8 de alabiliyor adam, 0.6 da alabiliyor, başka türlü değerler de alabiliyor. Yani bu işaret aslında ayrık zamanlı bir işaret ama tam bizim istediğimiz sayısal işaret formunda değil.
+
+175
+00:39:16,403 --> 00:39:19,023
+Sayısal işaret haline dönüştürebilmemiz için bunu.
+
+176
+00:39:20,884 --> 00:39:23,243
+Aynı zamanda nicemlemede uygulamamız lazım.
+
+177
+00:39:23,724 --> 00:39:25,203
+Mesela bir nicemleme uygulayalım.
+
+178
+00:39:26,344 --> 00:39:30,283
+Şurada benim geçen hafta kodunu paylaştığım bir kısım var.
+
+179
+00:39:32,523 --> 00:39:34,023
+Öncelikle şunu sormam lazım.
+
+180
+00:39:35,483 --> 00:39:36,983
+Kuantalama adımları vardı.
+
+181
+00:39:37,663 --> 00:39:40,403
+Yani benim işaretimin maksimum ve minimum aralığı neydi?
+
+182
+00:39:40,403 --> 00:39:42,403
+Maksimum aralığı bir...
+
+183
+00:39:42,931 --> 00:40:06,931
+Bunu şuradan da görebilirim. Max y dersem, y vektörünün maksimum değerini min y dersem, y vektörünün minimum değerini görmüş oldum. Demek ki ben bu aralığı kaça böleceğim? Atıyorum, dörde böleceğim diyelim. Dörde bölersem aslında çok büyük bir hata yapmış olacağım. Çünkü dört seviyeye çekiyorum.
+
+184
+00:40:07,315 --> 00:40:12,076
+Orada adamın alabildiği bir sürü değerler varken ben bunu dört seviyeye çekmiş oluyorum.
+
+185
+00:40:13,315 --> 00:40:16,435
+Şurada onun uygulama kodu var ve sonra bir dinleyelim bakalım.
+
+186
+00:40:17,175 --> 00:40:18,835
+Aynı zamanda göster edebiliriz.
+
+187
+00:40:20,015 --> 00:40:21,975
+Hatta gösterelim dinlemeden ziyade.
+
+188
+00:40:23,295 --> 00:40:24,855
+Sonra dinleyelim.
+
+189
+00:40:29,715 --> 00:40:44,015
+Bakın, sol tarafta işaretin orijinali varken, ben sağ tarafta bunu belirli seviyelere çekmişim. Aslında şuralar hata yapmışız. Bu belirli noktalarda birinin üstüne çıkıyor. Onları dikkate almayın.
+
+190
+00:40:45,475 --> 00:40:54,475
+Onun dışında mesela 0.75'te bir seviye var. 0.25'te, 0.25'te ve 0.75'te dört farklı seviye mevcut.
+
+191
+00:40:55,411 --> 00:41:00,011
+Yani ben sol taraftaki şeyi nicamleyip bu belirli seviyeleri çekmişim.
+
+192
+00:41:00,971 --> 00:41:04,911
+Peki bunun sesine baktığım zaman sizce nasıl bir ses duyarız?
+
+193
+00:41:13,204 --> 00:41:18,384
+Bakalım, aslında dört seviye bize yeterli mi onu bir anlamaya çalışacağız aynı zamanda.
+
+194
+00:41:23,476 --> 00:41:24,615
+Duydunuz mu?
+
+195
+00:41:38,643 --> 00:41:39,884
+Konfaktoydu mu?
+
+196
+00:41:46,356 --> 00:41:49,956
+İki seviyede de istiyorsanız şey yapabiliriz.
+
+197
+00:41:56,980 --> 00:42:21,400
+Burada tabii iki seviyenin de üstüne çıktığı noktalar olmuş ama... Evet, giderek kalitesizleşiyor. Yani buradaki durum şu, kuantalama oranının ne kadar kuantalama seviyesini arttırırsanız, mesela 32 yapsak o zaman çok daha farklı duyacağız. Neredeyse orijinali gibi oldu. Ve seviyeler burada orijinali gibi devam ediyor.
+
+198
+00:42:21,811 --> 00:42:37,532
+Burada da işte kuantalama seviyesinin miktarının ne kadar etki ettiğini görüyoruz. Bizim şu anki telefonlarımızda bu 2 üzeri 12'ler mertebesinde şeyler var. Analog dijital dönüştürücü kuantalama oranlarına ilgili.
+
+199
+00:42:41,139 --> 00:42:43,139
+Burada bir sorunuz var mı?
+
+200
+00:43:01,748 --> 00:43:09,828
+Tamam. Şöyle yapalım. Başka? He bir tane de şunu anlamaya çalışalım.
+
+201
+00:43:29,204 --> 00:43:38,744
+Evet, şimdi burada geçen hafta üstel sinyalleri görmüştük ve üstel sinyaller hakkında şöyle bir şey söylemiştik.
+
+202
+00:43:39,564 --> 00:43:53,403
+Eğer ki buradaki sigma'nın önündeki işaret eksi ise o zaman buradaki gibi giderek azalan, artıysa sağ taraftaki gibi giderek artan bir fonksiyon oluşturacaktı, biliyoruz.
+
+203
+00:43:53,780 --> 00:44:03,300
+Hatta şu fonksiyonu az önce bir örneğine çözdük. İşte enerji ve güç açısından biraz daha farklı haliydi ama genel olarak biliyoruz biz bunları.
+
+204
+00:44:05,199 --> 00:44:09,760
+Bunu üstel sinyaller diyoruz. Bu biraz daha basit bir hal diyebiliriz.
+
+205
+00:44:10,640 --> 00:44:16,560
+Bir de giderek artan ve giderek azalan sinüzoidler şeklinde işaretler var.
+
+206
+00:44:17,000 --> 00:44:19,920
+Bu aslında iki farklı işaretin çarpımı gibi düşünebilirsiniz.
+
+207
+00:44:20,947 --> 00:44:30,287
+İlk kısım üstel işareti, X1T işareti, üstel işareti gösterirken, X2T normal bizim bildiğimiz kosünüs işaretini gösteriyor.
+
+208
+00:44:30,387 --> 00:44:34,728
+Aslında bunun arasında eleman elemana bir çarpım söz konusu.
+
+209
+00:44:36,427 --> 00:44:39,648
+Şöyle aklınızda canlandırabilirsiniz. İşte X1 Sinyalli ne yapıyor?
+
+210
+00:44:40,108 --> 00:44:43,047
+Sigması büyük olduğu için giderek artan bir fonksiyon olacak.
+
+211
+00:44:43,608 --> 00:44:45,587
+E üzeri Sigma T diyorum.
+
+212
+00:44:46,612 --> 00:44:55,612
+x2t sinyalı ne olacak? Bir kosünüs fonksiyonu olacak. Bu x2t. E kosünüs işte şöyle belirli aralıklarla aynı şekilde salınıyor.
+
+213
+00:44:57,192 --> 00:45:09,132
+Tam doğru çizemedim onu. Anladınız herhalde. Bunları eleman eleman çarparsak ne olur? O zaman sinüs giderek artacaktır. Aşağıda görüldüğü gibi.
+
+214
+00:45:10,471 --> 00:45:13,832
+Bunun tam tersini yaparsak, yani şunun önünde bir eksilik varsa.
+
+215
+00:45:15,284 --> 00:45:23,443
+Veya Sigma burada sıfırdan küçükse demek daha doğru. O zaman da giderek küçülen bir fonksiyon olduğunu görebiliriz.
+
+216
+00:45:24,943 --> 00:45:35,784
+Şimdi burada bununla ilgili hemen bir tane MATLAB'da kod yazayım. Onu siz de kendiniz de görmüş olun. Amacımız şu.
+
+217
+00:45:53,652 --> 00:46:19,711
+Amacımız da şu olsun, benim F1T sinyalim var. F1T sinyalim E üzeri eksi 0.02T diyelim. F2T sinyalim var. Bu sinyalinde hadi sinüs 10PT bölü 250 olsun. Ben şunu istiyorum, F1'i çizdir diyor bana. F2T'yi çizdir diyor. Bir de bunların çarpımını çizdir diyor.
+
+218
+00:46:24,884 --> 00:46:32,184
+Tamam, ben bunu çizdirmeyi biliyorum zaten, MATLAB'ta. Bunları teker teker çizdirip, sonra da çarpımlarını çizdirmeye çalışacağım.
+
+219
+00:46:33,644 --> 00:46:35,144
+Hemen gidiyorum MATLAB ekranına.
+
+220
+00:46:40,436 --> 00:46:56,576
+Hepsini kapatayım öncelikle. Ve yeni bir tane fonksiyon için. Bakın yeni fonksiyon açmak için şurada NewScript deyip açabilirsiniz. Buna da bir isim verebiliriz. Ne diyelim? Çizim.m dosyası olmuş olsun.
+
+221
+00:47:06,771 --> 00:47:27,692
+iki küçük adım aralıklarıyla yüze kadar bir zaman dilimi deliledim. Yani benim çizimim, eksi yüz saniyeden artı yüzüncü saniyeye kadar olacak. Peki, X1 Sinyalimi yazacak olursam ne demiştim? E üzeri eksi demiştim. E üzeri eksi 0.02T, 2 çarpı T dedim.
+
+222
+00:47:33,396 --> 00:47:38,836
+Evet, plotla, T'ye bağırıp buradaki X1'i çizdirebilirim.
+
+223
+00:47:41,235 --> 00:47:41,936
+RUN'a basayım.
+
+224
+00:47:45,427 --> 00:47:48,827
+Şu anda yine karşınıza çıkan şeyi görüyor musunuz arkadaşlar?
+
+225
+00:47:49,967 --> 00:47:55,127
+Orada ben belki bir kez daha paylaşabilirim. Çizim yine gelmedi.
+
+226
+00:48:01,139 --> 00:48:01,931
+Tamam.
+
+227
+00:48:07,380 --> 00:48:12,920
+E üzeri eksi T'nin grafiğine çok benzer bir sinyal elde etmiş olduk.
+
+228
+00:48:13,820 --> 00:48:18,280
+Şimdi bu ikinci sinyale hemen yazayım. İkinci sinyal sinüs.
+
+229
+00:48:20,400 --> 00:48:33,039
+100 çarpı pi çarpı T bölü, pardon 10 çarpı pi çarpı T'miş, bölü 250.
+
+230
+00:48:34,099 --> 00:48:39,859
+Bakın hep hemen ikinci sinyali de tanımladım ve bunu ikiye göre çizdir dersem o zaman
+
+231
+00:48:44,275 --> 00:48:53,275
+Buradaki gibi sinüsü çizdirdiğini göreceğiz. Bu sinyalleri böyle ayrı ayrı çizdirebiliyoruz. Peki çarpımlarını çizdirebiliyor muyuz? Evet, çizdirebilirsiniz.
+
+232
+00:48:54,675 --> 00:49:05,735
+X3 sinyali diyelim ki X1 sinyaliyle X2 sinyalinin çarpımı olsun. Burada da X3'ü bulabileceksiniz. Ama burada dikkat edeceğiniz çok önemli bir nokta var.
+
+233
+00:49:12,019 --> 00:49:32,420
+Vektör değerine 10.000 tane değer içeriyormuş. 1 çarpı 10.000. X2 ne? Yine 1 çarpı 10.000. MATLAB adı üstünde Matrix Laboratörü olduğu için burada matriz çarpımı gibi düşünüp bunları çarpmaya çalışacak ama vektör boyut uyumsuzluğundan çarpamayacak.
+
+234
+00:49:32,420 --> 00:49:39,319
+Bu yüzden zaten bizim istediğimiz şey vektörel şeklinde çarpması değil, eleman elemana çarpması.
+
+235
+00:49:39,795 --> 00:49:46,095
+Yani x1'in birinci elemanıyla gidip x2'nin birinci elemanı çarpacak, x3'ün birinci elemanıyla yazık.
+
+236
+00:49:47,475 --> 00:49:51,975
+Bu yüzden bu çarpımda şurada araya bir nokta koyuyoruz. Nokta çarpım şeklinde.
+
+237
+00:49:52,715 --> 00:50:00,695
+Bizim istediğimiz çarpım bu hali oluyor. Ve çalıştıracak olursak, bakın, giderek sinüsün küçüldüğünü görebiliyoruz.
+
+238
+00:50:01,975 --> 00:50:06,955
+Eğer ki şuradaki değer artı olmuş olsaydı,
+
+239
+00:50:07,219 --> 00:50:14,299
+Bu kez de üstel olarak giderek artacak bir fonksiyon oluşturmuş olacaktık.
+
+240
+00:50:15,159 --> 00:50:19,960
+Burada herhangi bir soru var mı arkadaşlar?
+
+241
+00:50:30,643 --> 00:50:31,596
+Evet.
+
+242
+00:50:43,860 --> 00:50:53,760
+Bunu gördük dolayısıyla. Bunun dışında aslında Euler açılımından gelen kompleks üstel sinyaller de var.
+
+243
+00:50:54,420 --> 00:51:04,119
+Euler açılımı ne demiştik? Normalde E üzeri J fi dediğimiz şey cos fi artı J çarpı sinüs fi idi.
+
+244
+00:51:05,180 --> 00:51:07,920
+Bu çok önemli bizim için. Sürekli kullandığımız bir şey çünkü.
+
+245
+00:51:08,724 --> 00:51:12,704
+E peki, şurada verilen işareti ben şöyle yazabilir miyim?
+
+246
+00:51:12,864 --> 00:51:21,224
+E üzeri Sigma T çarpı E üzeri J Omega T çarpı E üzeri J Theta.
+
+247
+00:51:22,904 --> 00:51:24,324
+Evet, yazabilirim.
+
+248
+00:51:25,384 --> 00:51:27,124
+Hatta bunu şöyle de gösterebilirim.
+
+249
+00:51:27,304 --> 00:51:31,104
+J'li kısımları ayrı, T'li kısımları ayrı gibi düşünürsek.
+
+250
+00:51:35,635 --> 00:51:41,195
+parantezinde Omega T artı Teta şeklinde de gösterebilirim.
+
+251
+00:51:42,096 --> 00:51:49,395
+Aslında şuraya yazdığım formülde Teta yerine şu kısım yerine Omega T artı
+
+252
+00:51:49,395 --> 00:51:56,775
+Fi yerine Omega T artı Teta yazacak olursak o zaman işte şu kısmı gösteriyoruz.
+
+253
+00:51:56,775 --> 00:52:01,675
+Yani yukarıdaki E üzeri ile üst tel fonksiyonun E'ler dönüşümü
+
+254
+00:52:03,219 --> 00:52:24,880
+Aşağıdaki kısım oluyor. Buradaki kısım ise burada oluyor. İşin özü şu, bu çok kompleks bir şey gibi gelebilir belki, karışık da gelebilir size. Ama aslında çok sık kullandığımız fonksiyonlardan olacak. Şöyle söyleyelim.
+
+255
+00:52:32,371 --> 00:52:43,171
+Aslında burada iki farklı sinyal var gibi düşünebilirsiniz. Çünkü Airler dönüşümün sonrası karmaşık bir işaret oluşturuyorsunuz. Bakın, real bileşeni bu. Bu da sanal bileşeni.
+
+256
+00:52:45,091 --> 00:52:47,011
+Ya da imajiner bileşeni.
+
+257
+00:52:49,551 --> 00:52:59,051
+Bu yüzden işaretin bir öncekilerde yaptığımız gibi doğrudan çizemiyoruz. Bunun realini ayrı, buradaki gibi sanal kısmını ayrı çiziyoruz.
+
+258
+00:52:59,456 --> 00:53:10,376
+Bakın, kosünüs, real kısmı. Kosünüs nasıl başlar? En yüksek değeri sıfır noktasında olacak şekilde başlar. Sinüs nasıl başlar? Şu noktada sıfır olacak şekilde başlar.
+
+259
+00:53:12,456 --> 00:53:17,696
+Bu aslında sanal kısmını gösteriyor, bu da real kısmını gösteriyor gibi düşünebilirsiniz.
+
+260
+00:53:20,076 --> 00:53:24,816
+Sigma eğer sıfırdan küçükse, bu her iki bileşen de birlikte giderek küçülecektir.
+
+261
+00:53:25,876 --> 00:53:30,436
+Sigma sıfırdan büyükse o zaman da giderek büyüyecektir şeklinde yorumlayabiliriz.
+
+262
+00:53:31,456 --> 00:53:36,496
+Belki biraz karışık olabilir ama gerçekten bizim için çok çok önemli bir işaret.
+
+263
+00:53:36,635 --> 00:53:40,715
+Yani işaret dediğimiz şeyin içerisinde iki farklı birleşen olduğunu görebiliyoruz şu anda.
+
+264
+00:53:42,496 --> 00:53:50,496
+Sigma burada önemli demiştik. Sigma eğer sıfırdan büyükse o zaman giderek artan, sıfırdan küçükse de giderek azalan bir fonksiyon.
+
+265
+00:53:52,335 --> 00:53:53,096
+Gözlemleyeceğiz.
+
+266
+00:53:54,804 --> 00:53:56,556
+Şimdi
+
+267
+00:54:00,244 --> 00:54:07,423
+Bir beş dakika ara verelim. Yani ne diyelim? 15.52'de başlayalım.
+
+268
+00:54:10,304 --> 00:54:20,184
+Arka arka ders yaptığım için biraz ara vermem gerekiyor arkadaşlar. Kusura bakmayın lütfen. Bir beş dakikada en azından toparlarım kendimi.
+
+269
+00:59:10,291 --> 00:59:20,091
+Tekrar merhaba. Kaldığımız yerden devam edebiliriz. Şimdi sinüs fonksiyonunu gördük, üstel fonksiyonu gördük.
+
+270
+00:59:21,371 --> 00:59:30,491
+Üstel azalan, üstel artan şeklinde. Kompleks üstel fonksiyonları gördük. Bunların çizimi nasıl oluyor ve bunlarla ilgili yorumlar yaptık.
+
+271
+00:59:31,271 --> 00:59:34,931
+Artık biraz daha basit temel fonksiyonlar üzerinden gideceğiz.
+
+272
+00:59:35,507 --> 00:59:40,787
+Bu temel fonksiyonlardan ilki birim basamak fonksiyonu olarak düşünüyorum. UnitStackFunction.
+
+273
+00:59:41,987 --> 00:59:48,287
+Tanıma gereği çok basit ve yorumlaması da basit aslında ama yine de burada kritik noktayı söyleyeyim.
+
+274
+00:59:49,087 --> 00:59:51,907
+Bakın sıfıra kadarki kısımlar da sıfır olarak devam ediyor.
+
+275
+00:59:54,307 --> 01:00:00,000
+Burada gözüktüğü gibi sıfır ve sonrasında sıfır ve sonrasında bir olarak devam ediyor.
+
+276
+01:00:00,000 --> 01:00:11,860
+devam ediyor. Zaten unit demesindeki sebep bu, birim. Yoksa basamak fonksiyonu diyebilirdi. Birim basamak, yani bir gelmeyinde bir basamak anlamına geliyor. Bu şekilde devam ediyor.
+
+277
+01:00:13,559 --> 01:00:25,800
+Bunu pek çok yerde kullanacağız. Bundan sonraki gördüğüm şeyle daha sık kullanacağız diyeyim ben size. Peki siz doğrudan şu, şuradaki işarete baktığınız zaman
+
+278
+01:00:26,387 --> 01:00:29,927
+Bu işaret nedensel mi, değil mi? Bunun kararını verebiliyor musunuz?
+
+279
+01:00:39,059 --> 01:00:46,559
+Çok iyi, nedensel olduğunu anladık, süper. Çift ya da tek simetrik değil çünkü simetri yok bir kere işarette.
+
+280
+01:00:47,880 --> 01:00:57,960
+Onun dışında deterministik bir sinyal, rastgele değişmiyor, onu biliyoruz. Sürekli bir işaret ve analog bir işaret.
+
+281
+01:01:01,907 --> 01:01:08,028
+Sürekli işaret demek daha doğru. Analog işaret mi? Soru işareti. Orada daha henüz bir şey söyleyemeyiz.
+
+282
+01:01:10,648 --> 01:01:21,168
+Başka? Tamam, bu kısımda böyle söyleyebiliriz. Tabii ki biz şu anda söyleyeceğimiz şeyleri genelde işaretlerini kaça ayırmıştık?
+
+283
+01:01:21,307 --> 01:01:29,108
+Ayrık zamanlı işaretler ve sürekli zamanlı işaretler de ikiye ayırmıştık. Sürekli zaman işareti olduğu için böyle tanımlanabiliyor.
+
+284
+01:01:29,583 --> 01:01:36,863
+Ama bunun ayrık zamandaki karşılığı da, bakın U köşeli parantez içerisinde N ile tanımlanabiliyor.
+
+285
+01:01:36,963 --> 01:01:40,623
+Bir kere köşeli parantez var, burada ayrık bir sinyal olduğunu görüyoruz.
+
+286
+01:01:41,163 --> 01:01:47,443
+İkincisi de N üzerinden tanımlanmış, buradaki T yazılsa da N'e göre çizdiriyoruz.
+
+287
+01:01:48,683 --> 01:01:53,483
+Bu N, N şeklinde. Dolayısıyla ayrık sinyal olduğu kesin bir şekilde belli.
+
+288
+01:01:57,204 --> 01:02:00,003
+Peki, bir öncekiyle bunun arasında nasıl bir fark var?
+
+289
+01:02:00,284 --> 01:02:04,684
+Tabii ki buradaki değerler ayrık bir şekilde tam sayı değerlerinde mevcut.
+
+290
+01:02:04,824 --> 01:02:10,963
+Yani 0, 1, 2, 3 ve 4 gibi böyle sonsuza kadar devam ediyor.
+
+291
+01:02:11,063 --> 01:02:13,384
+Çünkü fonksiyonun 3 sınırı verilmemiş.
+
+292
+01:02:14,144 --> 01:02:15,644
+Sonsuza kadar böyle devam edebilir.
+
+293
+01:02:16,083 --> 01:02:21,164
+Yazmadığı yerde de burada 0 olarak devam ettiğini biz düşünebiliriz.
+
+294
+01:02:21,304 --> 01:02:24,784
+Veya siz 0'da olarak işaretleyebilirsiniz benim yaptığım gibi.
+
+295
+01:02:26,452 --> 01:02:45,311
+Yani bu tarafta, öncekinde sürekli sinyal olduğunu görüyoruz. T'nin herhangi bir değerinde x'in değeri var, bunu görüyoruz. Ancak birim basamağın aslında ayrık zamandaki karşılığında bu yok ve tam sayı değerlerini de üretiyor.
+
+296
+01:02:47,311 --> 01:02:47,992
+Peki,
+
+297
+01:02:48,692 --> 01:02:54,771
+Şöyle bir şey söylesek, bunu nasıl çizdiririz metlabda? Tabii ki şurada kodu var ama en basit anlamda şöyle yapabilirsiniz.
+
+298
+01:02:54,951 --> 01:03:02,211
+Mesela bir n aralığı tanımlarsınız. n-10 ile artı 10 arası diyelim. n vektörünü tanımladın.
+
+299
+01:03:02,351 --> 01:03:15,411
+Eksi 9, eksi 8, tık tık tık tık yazdın. 8, 9, 10 diye yazdın. Sonra x de ya da u diyelim bu değişkenin ismini.
+
+300
+01:03:16,307 --> 01:03:28,148
+Tüm değerleri sıfır gibi gidiyor gibi olacak. Tam bunun sıfıra denk gelen koordinatında ve ondan sonrasında bir üretecek.
+
+301
+01:03:29,268 --> 01:03:40,968
+Vektör boyutu kadar bir olarak devam edecek. Eğer ki ben burada stem NU dersem, o zaman şuradaki fonksiyonu çizdirmiş oluyor.
+
+302
+01:03:41,807 --> 01:03:43,668
+Çok basit aslında gördüğünüz gibi.
+
+303
+01:03:44,148 --> 01:03:48,807
+Sadece neyin neyin karşılık geleceğini burada güzel bir şekilde ayarlamanız lazım.
+
+304
+01:03:49,527 --> 01:03:56,387
+Bunu burada nokta noktayla böyle uzun uzadıya yazmak yerine sağ taraftaki kodu kullanarak da yapabilirsiniz.
+
+305
+01:03:57,547 --> 01:04:00,628
+Burası size kalmış diyebiliriz.
+
+306
+01:04:03,476 --> 01:04:13,235
+Tabii ki U, eksi 10 ile artı 10 arasında sınırlı değil. Bunu da söylemek lazım. Devam ediyor ama biz sadece görsel üretmek amaçlı böyle bir şey söyledik.
+
+307
+01:04:13,856 --> 01:04:20,735
+Aksi takdirde artı sonuçta kadar zaten çizdiremeyiz. Çünkü o kadar belli kalanımız yok.
+
+308
+01:04:22,735 --> 01:04:30,456
+Peki bunları bildiğimize göre şuradaki iki işareti çizdirebilir miyiz acaba? Ne dersiniz?
+
+309
+01:04:37,780 --> 01:04:40,340
+Mesela A işaretini çizebilir miyiz birlikte?
+
+310
+01:04:48,563 --> 01:04:57,463
+A işaretinde diyor ki, U, N'den yeni bir tane işaret üretmişim.
+
+311
+01:04:57,963 --> 01:05:13,703
+Efendim, şimdi U, N'i hemen aklımda canlandıracak olursam, U, N dediğimiz şeyi, N'e bağlı, sıfır noktasında bir olan ve ondan sonraki bütün değerleri bir olan bir sinyal halinde şey yapıyorduk ve bu sonsuza kadar gider diyorduk.
+
+312
+01:05:14,843 --> 01:05:15,083
+Peki.
+
+313
+01:05:15,668 --> 01:05:28,768
+Bu bilindiğinde, geçen haftaki dersimizle aslında çok pekiştirilen bir bilgi olacak bu. Bu bilindiğinde ben bunu u n-5'i bulabilir miyim? Veya nasıl çizmem lazım?
+
+314
+01:05:32,467 --> 01:05:33,287
+Ne dersiniz?
+
+315
+01:05:34,807 --> 01:05:36,907
+5'e kadar 0, ondan sonrası 1 olacak.
+
+316
+01:05:40,692 --> 01:05:42,411
+[öğrenci] böyle söylemiş.
+
+317
+01:05:47,251 --> 01:05:48,512
+5'te 1 olur demiş.
+
+318
+01:05:51,392 --> 01:05:57,412
+Aslına bakarsanız, evet, hepinizin söylediği doğru.
+
+319
+01:05:58,332 --> 01:06:06,692
+Şuradaki eksi olması, bu işaretin sağa doğru kayacağını gösterirken, yanında ne kadar kayacağını söylüyor.
+
+320
+01:06:07,852 --> 01:06:10,472
+Yani sağa doğru 5 birim kay diyor.
+
+321
+01:06:10,847 --> 01:06:19,288
+Peki, bu zaten düzgün bir sinyaldi. Tam 0'da 1 veriyordu. O zaman artık bu 5. noktada 1 verecek olacak.
+
+322
+01:06:20,827 --> 01:06:29,508
+Ve işareti sağa doğru 5 birim kadar ötelemiş oldum. Dolayısıyla bunun öncesindeki değerler hep 0, 0, 0 kaymış oldu.
+
+323
+01:06:29,508 --> 01:06:33,068
+Bu birinci bakış açısı.
+
+324
+01:06:33,460 --> 01:06:40,500
+Yani şurada bunun önünde eksi olduğunda işte sağa doğru kayacağını, yanındaki durumda da 5 birim kayacağını bilmen lazım.
+
+325
+01:06:41,579 --> 01:06:44,000
+Peki diğer yorum ne olabilir? Çok basit.
+
+326
+01:06:44,700 --> 01:06:49,760
+Bakın, U'nin n değeri 0'dan büyükse 1'dir diyor.
+
+327
+01:06:50,559 --> 01:06:53,420
+O zaman U n-5'te ne yapmam lazım?
+
+328
+01:06:53,760 --> 01:06:55,275
+İçerisindeki değerin...
+
+329
+01:06:55,860 --> 01:07:08,440
+Sıfırdan küçük olduğu noktaya bakmam lazım. Bu da matematiksel olarak inceleme. Dolayısıyla n'in beşten büyük veya eşit olduğu durumda bu bir üretir gibi yorumlayabiliriz.
+
+330
+01:07:09,679 --> 01:07:16,500
+Eğer zorlanıyorsanız içerisini sıfır eşitleyin ve onun başlayacağı noktayı bulabilirsiniz.
+
+331
+01:07:20,467 --> 01:07:26,927
+Peki, bu güzel bir şekilde bulduk. Genliği tabii ki hiç değişmiyor. Çünkü genliği burada 1 olarak devam ediyor.
+
+332
+01:07:27,488 --> 01:07:33,927
+Adam buraya eğer 3 koysaydı, 3 katını alacağımız için genliği de 3 olmuş olacaktı.
+
+333
+01:07:36,008 --> 01:07:39,168
+Bunu herkes rahatça anlayabilir diye düşünüyorum.
+
+334
+01:07:39,688 --> 01:07:46,807
+Peki, gen için ne söyleyebiliriz? Bu biraz daha kompleks bir sinyal. Bunu nasıl çizebiliriz?
+
+335
+01:08:03,891 --> 01:08:10,331
+Aslında burada iki sinyalin toplamı var gibi düşünsek, bunları ayrı ayrı çizip toplasak çok daha güzel olur.
+
+336
+01:08:10,891 --> 01:08:12,371
+Aynen öyle, [öğrenci] da söylemiş.
+
+337
+01:08:13,531 --> 01:08:18,191
+Sanki burada x1n, burada da x2n varmış gibi düşünelim.
+
+338
+01:08:19,252 --> 01:08:22,011
+O zaman ben bunu böyle x1n'i şuraya çizeceğim.
+
+339
+01:08:23,591 --> 01:08:27,252
+x1n dediğimiz şey, aslında şurada çizdiğimizin,
+
+340
+01:08:30,452 --> 01:08:33,532
+1 olarak kalacak, şu da 1 olarak kalacak.
+
+341
+01:08:35,152 --> 01:08:43,692
+Aynısı gibi. Yani en eşittir 5 ve sonrasında 10 olarak devam edecek genliği. Bakın önünde 10 olduğu için öyle söyleyebiliriz.
+
+342
+01:08:45,891 --> 01:08:53,292
+5, 6, 7, 8, bundan sonra hep genliği 10 olarak devam ediyor. Peki x2n'de nasıl bir durum var?
+
+343
+01:08:57,811 --> 01:09:00,211
+Onda da en eşittir eksi 5.
+
+344
+01:09:01,631 --> 01:09:05,711
+Eksi 5'ten sonra bu adam 10 almaya devam ediyor.
+
+345
+01:09:15,123 --> 01:09:22,503
+Peki bunları ben alt alta toplarsam ne elde ederim? Tabii ki G'ni elde ederim. Şuradaki genlik değeri 10 bu arada.
+
+346
+01:09:24,543 --> 01:09:31,724
+G'ni nasıl olur? Bakın bu eksi 5'ten önce hep 0 değerlerini sahip. Yukarıdaki ise 5'ten önce 0 değerlerini sahip.
+
+347
+01:09:33,064 --> 01:09:39,984
+O zaman ne olmuş olacak? Bu adam eksi 5'e gelene kadar 0 olacak. Eksi 5 ile artı 5 aralığında
+
+348
+01:09:40,564 --> 01:09:43,244
+Hep bu, bu şekilde 10 olarak devam edecek.
+
+349
+01:09:46,963 --> 01:10:04,764
+Genliği 10 olarak devam edecek. 5 ve sonrasında genliği 20 olarak devam edecek. Çünkü üstüne toplanmış durumda. Artık bu sonsuza kadar 20 olarak devam edecek. Bunu anlamayan var mı arkadaşlar?
+
+350
+01:10:24,212 --> 01:10:25,292
+Peki, yok sanırım.
+
+351
+01:10:26,272 --> 01:10:31,792
+Burada gt, gendiğinde bunu sürekli zamanda verseydi nasıl olurdu?
+
+352
+01:10:32,372 --> 01:10:40,572
+10 ut eksi 5 artı 10 çarpı ut artı 5 şeklinde verseydi.
+
+353
+01:10:42,152 --> 01:10:45,852
+Tabii ki soldaki fonksiyonun sürekli hali olmuş olacaktı.
+
+354
+01:10:45,852 --> 01:10:50,852
+Yani bu adam buraya kadar gelecekti, 5'ten sonra şöyle bir çıktı üretecekti.
+
+355
+01:10:51,199 --> 01:11:17,659
+x2n'de aynı şekilde, eksi 5'ten sonra bir çift üret çekti. Bunları üst üste eklediğimizde zaten topladığımızda sonucu, eksi 5'te 5'e kadar şöyle kademeli bir fonksiyon halinde görecektik. Bu da sonuç fonksiyonu olacaktı. İkisinin toplamı aslında. Şöyle eşittir diyelim.
+
+356
+01:11:18,292 --> 01:11:23,672
+Buraya da toplama simgesi koyalım. 10-20 haline gelmiş olduk.
+
+357
+01:11:27,699 --> 01:11:30,739
+Bu da bunun sürekli zamandaki karşılığı olacaktı.
+
+358
+01:11:31,979 --> 01:11:33,360
+Anlıyor musunuz arkadaşlar?
+
+359
+01:11:39,604 --> 01:11:47,024
+Tamam. Şimdi yüz yüze olmadığı için ben sizi kestiremiyorum. O yüzden en azından yazarsanız çok iyi olur benim için.
+
+360
+01:11:53,747 --> 01:12:14,307
+Tabii bu şekilde yazabiliyoruz. Bunun dışında fonksiyonları biz parçalı fonksiyon yerine yazmak yerine iki fonksiyonu çarpımı şeklinde yazabiliriz. Bakın aslında bizim dersin en başında çözdüğümüz örnek sinyali adam aşağıdaki şekilde yazmış.
+
+361
+01:12:19,988 --> 01:12:29,387
+T büyük eşit sıfır anında tanımlı. Bu durumda bu adam bir verirken geri kalan anda sıfır veriyor.
+
+362
+01:12:29,968 --> 01:12:35,847
+T küçüktür sıfırda. Dolayısıyla bununla çarpmak aslında yukarıdaki fonksiyonu doğrudan bulmak anlamına geliyor.
+
+363
+01:12:37,648 --> 01:12:45,347
+Bunu buradaki gibi kullanabilirsiniz. Aslında adam şunu yapmış. Yukarıdaki sinyali bir UT sinyaliyle çarpmış.
+
+364
+01:12:45,347 --> 01:12:47,548
+UT sinyali sıfırdan sonra bir.
+
+365
+01:12:48,180 --> 01:12:50,399
+Öncesinde de sıfır olduğunu görüyoruz.
+
+366
+01:12:51,739 --> 01:12:57,639
+Eğer yukarıdaki sinyalle bunu çarparsak o zaman zaten sağ taraftaki sonucu elde ederiz.
+
+367
+01:13:05,811 --> 01:13:20,391
+Başka bir parçalı fonksiyon var burada. Bakın, sadece 0 ve 1 aralığında 1 değerine sahipmiş. Bunu nasıl üretirim diye düşünürseniz, aslında onun cevabı da bu oluyor. Bunu UT'ler cinsinden böyle yazabilirim.
+
+368
+01:13:21,711 --> 01:13:33,332
+Burada da az önce yaptık ya, ayrı ayrı çizip toplamıştık. Burada da ayrı ayrı çizip çıkarmamız gerekecek. UT sinyalini çizecek olursak, bu zaten bildiğimiz bir sinyal. İlk sinyali yazdık.
+
+369
+01:13:34,036 --> 01:13:59,884
+Sonra eksi dedik. İkinci sinyali çizmemiz lazım ama UT'nin kaç birim kayacağına bakmam lazım. Sağa doğru eksilik var, sağa doğru kaymış ve kaç birim kaymış? Bir birim kaymış. Tamam, bir saniye sonra gecikmeli bir şekilde bu adam burada çıktı, üretmiş. Güzel. Bunları eleman eleman çıkardığım zaman, bakın, buradaki gibi bir...
+
+370
+01:13:59,988 --> 01:14:10,568
+Dikdörtgensel darbe oluşturuyor. Bunu şöyle de anlayabilirsiniz. İşte sıfırdan önce bunun da sıfır, bunun da sıfır. Dolayısıyla şu kısımda sıfır gelecek. Zaten biliyorum.
+
+371
+01:14:12,448 --> 01:14:20,688
+Bu sıfırla bir aralığında bir değer üretirken, bu sıfırla bir aralığında sıfır değeri üretmiş. Dolayısıyla bir eksi sıfırdan bir geliyor bu aralıkta.
+
+372
+01:14:21,408 --> 01:14:23,847
+Bir ile iki aralığında bu bir üretirken,
+
+373
+01:14:24,372 --> 01:14:35,372
+Bu da 1'i üretmiş. Dolayısıyla 1-1'den yine 0'a gitmiş oldu. Bu şekilde bir dikdörtgensel darbe oluşturabiliriz.
+
+374
+01:14:36,131 --> 01:14:39,112
+Birim basamak fonksiyonlarını böyle değişik şekilde kullanarak.
+
+375
+01:14:43,311 --> 01:14:49,992
+Bunlara genel bir isim vereceğiz. Nasıl ki birim basamağı Unit Step Function ismini verdik.
+
+376
+01:14:51,220 --> 01:15:09,040
+Bu özel fonksiyonu da birim dikdörtgensel sinyal ismini vereceğiz. Bu dikdörtgensel sinyalin özelliği şu, genişliğinin 1 olması. Bakın burada olduğu gibi genişliği 1, birim zaman eksilinde.
+
+377
+01:15:10,220 --> 01:15:17,040
+Tabii ki simetrik olması için eksi tarafta ve ardı tarafa eşit şekilde bölmüş gibi düşünebilirsiniz. Yine birim olduğu için
+
+378
+01:15:17,811 --> 01:15:21,291
+Genliğinin 1 olduğunu burada söylememiz mümkün.
+
+379
+01:15:23,572 --> 01:15:27,971
+Bunun çift sinyal olduğunu herhalde herkes görebiliyor diye düşünüyorum.
+
+380
+01:15:34,131 --> 01:15:55,911
+Bunun dışında başka ne fonksiyon var derseniz, birim rampa fonksiyonu var. Rampa fonksiyonunun aslında fonksiyonunda şurada birim basamak gibi ama şurada bir yerine T yazıyor. Şu en önemli şey. Bu ne demek? Aslında sıfıra kadar sıfır, sıfırdan sonra X eşittir Y.
+
+381
+01:15:56,627 --> 01:16:01,847
+eğrisi gibi, aslında daha doğrusu doğrusu gibi devam ediyor.
+
+382
+01:16:05,268 --> 01:16:10,948
+Bakın, T yerine herhangi bir değer koyalım. T yerine 2 koyarsak, bunun sonucu da 2 olmuş oluyor otomatikman.
+
+383
+01:16:14,355 --> 01:16:17,055
+Burada çok kritik bir bilgi paylaşacağız.
+
+384
+01:16:17,995 --> 01:16:22,136
+Unit ramp is the integral of the unit step.
+
+385
+01:16:23,755 --> 01:16:27,456
+Yani birim basamakla bir ilişkisi varmış, bunu söylüyor.
+
+386
+01:16:28,296 --> 01:16:30,815
+Neymiş ilişkisi? Bakın burada kurduğu gibi.
+
+387
+01:16:31,695 --> 01:16:38,275
+Aslında birim basamak fonksiyonunu integralini alırsak diyor, birim rampa fonksiyonunu elde ederiz diyor.
+
+388
+01:16:39,155 --> 01:16:40,315
+Bunu bir anlamaya çalışalım.
+
+389
+01:16:41,171 --> 01:16:51,211
+Birim basamak fonksiyonunu yazayım. UT fonksiyonu T'ye bağlı olarak. Hatta çizeyim şuraya. Genliği 1 olacak şekilde devam ediyor.
+
+390
+01:16:54,131 --> 01:17:02,331
+Peki bu böyle sonsuza kadar devam ediyor. Bunun integralini aldığımız zaman sağ taraftaki şeyi elde ediyormuşuz.
+
+391
+01:17:02,931 --> 01:17:23,531
+Bu tarz yapılarda tabii bak T'ye kadar ki integralini alarak bulabiliyoruz. Yani herhangi bir andaki integrali o zamana kadar ki alanları toplama şeklinde düşünebilirsiniz. Çünkü integralı alan gibi yorumluyorduk. Şöyle düşünebilirsiniz bakın size kolaylık olması açısından.
+
+392
+01:17:25,251 --> 01:17:30,391
+Birinci nokta yani T'ye bir noktasındaki değerini bulmaya çalışıyorum RT'nin.
+
+393
+01:17:32,275 --> 01:17:42,456
+O zaman ne yapmam lazım? Bu formüle göre, bire kadarki bu eğrinin altında kalan alanı bulmam lazım. Kaç bunun altında kalan alan?
+
+394
+01:17:50,547 --> 01:18:03,747
+Sonuçta UT'nin integralini alıyoruz. UT'nin eksi sonsuzdan 1'e kadarki integralini aldık, 1. Dolayısıyla T eşittir 1 noktası için RT'de 1'i bulmuş oldum.
+
+395
+01:18:05,028 --> 01:18:13,327
+Bunu mesela 2 için yapacak olursam, 2'de de yine eksi sonsuzdan bu kez T eşittir 2'ye kadar almam lazım. Yani bu artımsal olarak devam ediyor.
+
+396
+01:18:14,131 --> 01:18:21,691
+Bunu da hesaplayacak olursan, bu zaman integral iki birime karşılık gelecek. Yani iki olacak.
+
+397
+01:18:23,091 --> 01:18:31,131
+Bunu böyle çok daha küçük noktalar için, her biri için ayrı ayrı yaptığınız zaman, aslında şuradaki rampa fonksiyonu oluşturduğunu görebilirsiniz.
+
+398
+01:18:31,131 --> 01:18:39,971
+Dolayısıyla birim basamağın alanı üzerinden tanımlanıyor diye söyleyebiliriz.
+
+399
+01:18:40,372 --> 01:18:53,332
+Zaten şurada birim basamak hep aynı seviyede kalıyor. Bu da demek oluyor ki artış miktarı hep aynı seviyede olacak. Bu sebeple zaten bunun eğimi sabit bir şekilde ilerliyor.
+
+400
+01:18:57,811 --> 01:19:09,871
+Evet, birim üçgen sinyali. Birim üçgen sinyali ne buradaki gibi çizebilir? Aslında buradaki en kilit olay şuna benziyor, birim rampaya benziyor ama
+
+401
+01:19:09,871 --> 01:19:24,451
+burada mutlak değer işareti kullanıyor. Bir eksi mutlak değer içinde T ile T burada birden küçük olmak üzere diyelim itlemiş.
+
+402
+01:19:26,355 --> 01:19:29,115
+Bu işareti bu şekilde gösterebiliriz.
+
+403
+01:19:29,376 --> 01:19:33,415
+Tabi bu işaretlerle böyle çok örnekler vesaireler şu anda çözmüyoruz.
+
+404
+01:19:34,015 --> 01:19:39,036
+Bu temel işaretlerin nasıl olduğunu ve nasıl çizilebileceğini anlamaya çalışmamız gerekiyor.
+
+405
+01:19:40,395 --> 01:19:49,155
+Buradan anlamaya çalışırsak işte T'nin mutlak değeri birden küçük demek, T'nin 1 ile eksi 1 aralığında olması demek aslında.
+
+406
+01:19:49,939 --> 01:19:54,840
+Mesela T yerine 0 verdiğim zaman 1 vermesi lazım. Bakın 1 vermiş.
+
+407
+01:19:55,479 --> 01:20:00,879
+T yerine 1 verdiğim zaman mutlak değer dışına 1 olarak çıkar. 1-1'den 0.
+
+408
+01:20:02,379 --> 01:20:07,000
+Eksi 1 verdiğim zaman eksi 1 mutlak değer dışına yine 1 olarak çıkar. Yine 0.
+
+409
+01:20:08,159 --> 01:20:14,039
+Aralarındaki değerleri de verebilirsiniz. Neticede çizeceğiniz grafik bu şekilde olacaktır.
+
+410
+01:20:17,619 --> 01:20:21,300
+Evet, buraya kadar bir sorusu olan var mı? Bunu sorayım.
+
+411
+01:20:38,355 --> 01:20:42,015
+Peki, sorunuz yoksa o zaman vitesi bir tık daha arttıralım.
+
+412
+01:20:44,255 --> 01:20:50,055
+Şu ana kadar gördüğümüz sinyaller aslında temel sinyaller olarak geçiyor.
+
+413
+01:20:50,755 --> 01:20:54,115
+Biz daha da kompleks sinyallerle uğraşabiliriz.
+
+414
+01:20:54,475 --> 01:20:59,635
+Mesela Pulse, Doppler, RF, Waveform denilen bir şey var.
+
+415
+01:20:59,935 --> 01:21:00,975
+Bu şu anda kullanılıyor.
+
+416
+01:21:02,215 --> 01:21:03,555
+Sinyal bu şekildeymiş.
+
+417
+01:21:05,175 --> 01:21:05,475
+Şimdi
+
+418
+01:21:06,484 --> 01:21:22,864
+Ne bu diye soracak olursanız araştırdım. Sağ üst tarafta bir ölçüm platformu gördüm. Bu genellikle uydular üzerine monte edilen bir radar arkadaşlar.
+
+419
+01:21:24,864 --> 01:21:31,963
+Yani RF dediği şey orada radar formu olabilir belki bilmiyorum. Dolayısıyla Pulse Doppler radarı.
+
+420
+01:21:32,304 --> 01:21:58,644
+gibi düşünebilirsiniz. Tıpkı ultrasonik sensördeki gibi mesafe ölçmeyi sağlıyor ama uydu üzerindenmiş sağlıyor. Daha kaliteli bir şekilde çıktı üretiyor. Yani bu sinyal öyle gelişigüzel bir sinyal değil, gerçekten bir amaç için kullanılan bir sinyal. Peki bu sinyali biz nasıl üretiriz? Bu kısımda sizden bir geri besleme bekliyorum.
+
+421
+01:21:59,699 --> 01:22:16,380
+Şu ana kadar ki gördüğümüz sinüs, kosünüs, rampa, diktörkensel darbe ve üstel fonksiyonların hepsini, herhangi birisini ya da ikisini kullanarak bunu elde edebilir miyiz? Ne dersiniz?
+
+422
+01:22:29,619 --> 01:22:32,500
+Nasıl elde ederiz [öğrenci]? Aklına geliyor mu bir şey?
+
+423
+01:22:43,444 --> 01:22:45,444
+Sesini açıp da konuşabilirsin.
+
+424
+01:22:48,204 --> 01:22:51,444
+Ya da görüş olan varsa konuşabilir.
+
+425
+01:23:10,707 --> 01:23:22,667
+Peki, sanırım herhangi bir fikir yok. O yüzden ben size şöyle bir biraz daha basitleştirerek anlatmaya çalışayım.
+
+426
+01:23:23,827 --> 01:23:36,268
+Şimdi şurada belli ki bir sinüs var değil mi? Hatta kosünüs yazmış adam zaten. Kosünüs sinyali var. Kosünüs sinyali ben biliyorum ki sürekli olarak devam ediyor. Kosünüs sinyali sürekli devam ediyor.
+
+427
+01:23:37,108 --> 01:24:03,268
+Tamam, okey. Ben bu kosünüs sinyalini öyle bir şeyle toplayıp çıkarma ya da çarpma yapmam lazım ki aşağıdaki sinyali elde edeyim. Şimdi bir kere şuraların sıfır olması bana hemen aklıma şöyle bir şey getiriyor. Yukarıdaki sinyalin bu kısmını sıfırla çarparsam sıfır elde ederim. Çarpmanın şeyini kullanayım diyorum. Buraya bir çarpma kullanırsam.
+
+428
+01:24:04,564 --> 01:24:13,184
+Şu kısmı değeri sıfır olan bir sinyalle çarparsam, bu kısmı durdurmuş olacağım aslında, kapatmış olacağım.
+
+429
+01:24:15,364 --> 01:24:20,524
+Peki bundan sonra şu aralıkta nasıl bir şey tanımlamam lazım? Ne dersiniz?
+
+430
+01:24:23,384 --> 01:24:27,444
+Değeri bir olan bir şey tanımlayabilirim veya değeri A olan bir şey tanımlayabilirim.
+
+431
+01:24:27,444 --> 01:24:29,824
+Çünkü bu adam demiş ki, şuna kosinüs T demiş.
+
+432
+01:24:32,756 --> 01:24:39,916
+A çıktısı var, o zaman değeri A olabilir. Bunun genliği A olabilir. Nereye kadar? Buraya kadar.
+
+433
+01:24:42,015 --> 01:24:50,396
+Sonra bir sonrakinde yine devam edecek, yine duracak, yine devam edecek. Bu şekilde devam ediyor.
+
+434
+01:24:51,836 --> 01:24:58,476
+Eğer yukarıdaki sinyali, aşağıdaki sinyali çarparsam, gerçekten adamın söylediği o kompleks sinyali elde ediyorum.
+
+435
+01:24:59,444 --> 01:25:20,444
+Peki, buradaki kritik değerler neler? Birincisi şu, bunun gelmeyi, dikdörtgensel darbe dediğimiz şeyin gelmeyi A kadar olması lazım. İkincisi, şunun genişliği, buradaki genişliği T kadar olması lazım. Başka bir sıkıntı var mı? Bakıyorum, bir de...
+
+436
+01:25:21,043 --> 01:25:28,943
+Tek bir darbe işareti yok. Burada bir tane, burada bir tane, şurada, şurada, şurada bir tane darbe işareti var. Toplam 5 tane darbe işareti var.
+
+437
+01:25:32,144 --> 01:25:34,984
+Onlar sayesinde bu forma geldi zaten.
+
+438
+01:25:37,263 --> 01:25:38,843
+Biraz daha ayrıntıya girelim o zaman.
+
+439
+01:25:40,484 --> 01:25:43,463
+Öncelikle bildiğim darbe işaretini getirip ortaya koyuyorum.
+
+440
+01:25:43,463 --> 01:25:45,463
+Bu darbe işareti aslında...
+
+441
+01:25:46,100 --> 01:25:50,860
+Sunumdakinin aynısı, hiçbir şey yapmadık. Aynen buraya kopyaladık ve yapıştırdık.
+
+442
+01:25:52,300 --> 01:25:57,260
+Yalnız bizim sorunumuz neydi? Bu darbenin genliğini bir kez A yapmam lazımdı.
+
+443
+01:25:58,260 --> 01:26:06,240
+Çok kolay. Ben bunu bu da A ile çarparsam, buradaki genliği de A ile halletmiş oluyorum. Bu işi kurtardık.
+
+444
+01:26:07,360 --> 01:26:11,240
+Peki bunun genişliğinin TO olması lazım. Burada genişliği 1 biliyorsunuz.
+
+445
+01:26:14,931 --> 01:26:18,332
+Bunu yapmak için de zamanda ölçeklemeyi kullanıyoruz.
+
+446
+01:26:20,251 --> 01:26:35,531
+XT sinyali normal bir sinyalken, XA çarpı T sinyali varsa, o zaman biz burada A'nın değerine göre zamanda sıkıştırma veya genişletme olayına sahip olduğunu bilebiliyorduk.
+
+447
+01:26:36,671 --> 01:26:42,211
+Tıpkı buradaki A olayında olduğu gibi, bakın burada bir bölü TO ile çarpmış ve dolayısıyla bunun genişliğini
+
+448
+01:26:43,347 --> 01:26:54,327
+TO kadar genişletmiş oldu bu adam. TO'yu bilmiyoruz. Keşke bilsek ona göre daha uygun bir değer yazarız. Ama şimdilik böyle bir çözüm bulduk.
+
+449
+01:26:55,967 --> 01:27:09,567
+Şimdi şu iş tamam, burada sorun yok ama aşağıdaki gibi olması lazım. Yani bu darbe sinyalinin hem eksi 2'de, hem eksi T'de, hem T'de, hem de 2T'de olması lazım.
+
+450
+01:27:10,771 --> 01:27:21,832
+Bu sebeple hemen zamanda kaydırma özelliğini kullanmamız lazım. Yani bu burada değil de diyelim ki bu işaret şurada olsaydı bu işareti nasıl yazardık ne dersiniz?
+
+451
+01:27:35,731 --> 01:27:45,371
+Bir kere genlikle ilişkili bir şey yok çünkü aynı genlikle olacak. İkincisi, Rect fonksiyonu yine aynı olacak çünkü bu da bir dikdörtgensel darbe buraya tanımladık.
+
+452
+01:27:45,871 --> 01:27:57,612
+Aslında şöyle bir şey yapıyoruz. Buradaki bu işareti eksi 2T kadar sola kaydırıyoruz. Dolayısıyla T...
+
+453
+01:27:58,260 --> 01:28:06,039
+Ne kadar kaydırıyoruz? 2T'ye kadar. Nereye kaydırıyoruz? Sağa. O zaman sağa kaydırdığımız için artı, pardon sola kaydırdığımız için artı.
+
+454
+01:28:06,880 --> 01:28:11,760
+Kaç birim kaydırdığımız da burada yazıyoruz. 2T. Böyle TO aynen kalacak.
+
+455
+01:28:12,460 --> 01:28:16,860
+Dolayısıyla sadece şu dikdörtgensel darbe için şunu elde etmiş olduk.
+
+456
+01:28:17,860 --> 01:28:19,579
+Peki buradaki için ne yapmamız lazım?
+
+457
+01:28:21,220 --> 01:28:23,119
+Buradaki için de A çarpı Rex.
+
+458
+01:28:24,851 --> 01:28:49,851
+T artı büyük T bölü to olmuş oldu. Şurada bir tane olsaydı, bunu yazmak için de A çarpı rect T eksi T bölü to olmuş olacaktı. Şuradaki içinde yine T eksi 2 T bölü to olacaktı. Rect A olacak şekilde. Dolayısıyla
+
+459
+01:28:50,452 --> 01:28:55,032
+Burada ne kadar önemli olduğunu görüyorsunuz, zamanda kaydırma özelliğini.
+
+460
+01:28:56,792 --> 01:29:05,672
+Eğer bunların hepsini buradaki beş tane şeyi tek bir fonksiyon gibi yazmak istersek, buradaki gibi daha basitleştirerek yazabiliriz.
+
+461
+01:29:05,672 --> 01:29:10,231
+Ama aslında yukarıda onların toplamı olmuş oluyor.
+
+462
+01:29:11,891 --> 01:29:13,471
+Burada anlamadığınız bir nokta var mı?
+
+463
+01:29:26,387 --> 01:29:27,807
+Karışık mı sizce burası?
+
+464
+01:29:39,060 --> 01:29:58,260
+Hiçbir cevap yok. Bir tık, bir tık karışık, evet. Yeni öğrendiğimiz bir fonksiyon üzerinden genlik ve zaman, hem zaman çarpımı, hem genlik çarpımı, hem de zamanda örnekli ölçekleme, daha doğrusu kaydırma yaptığımız için hepsini aynı anda yaptığımızda biraz şaşırıyoruz.
+
+465
+01:29:58,520 --> 01:30:05,680
+Ama sonuç olarak buradaki kosinüs omega t'yi bir öncekiyle çarptığımızda, şununla çarptığımızda,
+
+466
+01:30:07,028 --> 01:30:31,768
+Doppler dalga formunu elde etmiş oluyoruz. Evet, bu bu şekildeydi. Dolayısıyla kompleks sinyallerden de bir tane örnek en azından göstermiş olduk. Şimdi belki bu ders için en önemli fonksiyon, delta fonksiyonu. Dörtü fonksiyonu da diyoruz biz. Impulse function.
+
+467
+01:30:35,444 --> 01:30:39,244
+Söylememizdeki sebep delta ile gösteriyoruz. Delta T diyoruz mesela.
+
+468
+01:30:41,043 --> 01:30:52,784
+Bu fonksiyonun anlaması biraz zor. Aslında kuralları kolay ama genellikle sabit bir şey olmadığı için aklımızda bunu anlayıp yorumlamakta zorlanıyoruz.
+
+469
+01:30:52,784 --> 01:31:00,924
+Mesela UT'yi çok kolay bir şekilde gözümüzün önünde artık canlandırabiliyoruz. Şöyle bir basamak fonksiyonu, adı üstünde basamak fonksiyonu ama
+
+470
+01:31:01,492 --> 01:31:07,032
+Burada bunu nasıl yorumlamamız lazım? Bakın, çok kilit bir nokta, o yüzden odaklanın buraya.
+
+471
+01:31:08,872 --> 01:31:12,252
+Bu deltaT fonksiyonu ya da dürtü fonksiyonu diyelim.
+
+472
+01:31:13,572 --> 01:31:16,811
+T eşittir sıfır noktasında çok yüksek bir değeri sahipmiş.
+
+473
+01:31:17,992 --> 01:31:23,212
+T sıfırdan uzaklaştıkça giderek küçülüyormuş ya da küçük değerler üretiyormuş.
+
+474
+01:31:23,212 --> 01:31:26,012
+Altında kalan integral, pardon.
+
+475
+01:31:26,804 --> 01:31:48,203
+İntegrali de 1'miş. Yani ne demek bu? Eksi sonsuzdan artı sonsuza deltaT fonksiyonunu yazacak olursam, dt 1 oluyor. Bunun fiziksel karşılığı da aslında altında kalan alanın 1'e eşit olması demek. Bu yüzden tek bir impuls fonksiyon yok.
+
+476
+01:31:49,555 --> 01:31:57,415
+Çünkü çok genel bir tanım var burada. Yani bu kurallara uyacak herhangi bir fonksiyon, delta fonksiyon olabilir. Mesela şuraya bakın.
+
+477
+01:31:58,735 --> 01:32:05,675
+Ne diyor adam? T eşittir sıfır alanında yüksek değere sahip T'den uzaklaştıkça küçük olması lazım diyor.
+
+478
+01:32:06,355 --> 01:32:10,235
+Evet doğru. Altında kalan alanı da bire eşit olması lazım diyor.
+
+479
+01:32:11,475 --> 01:32:16,315
+Doğru. Bunun alanı bire eşit. O zaman bu delta fonksiyonu diyeceğiz.
+
+480
+01:32:16,819 --> 01:32:21,079
+Yine aynı şekilde bunun alanında 1 eşit. Bu da delta function'da diyeceğiz.
+
+481
+01:32:23,420 --> 01:32:29,139
+Genel olarak delta function'ın kavramı önemli ve herhalde anlaşıldı diye düşünüyorum.
+
+482
+01:32:29,680 --> 01:32:35,420
+T eşittir sıfır alanında genelde yüksek değer verip altında kalan integralde 1 olması lazım.
+
+483
+01:32:36,940 --> 01:32:41,079
+Eğer ki buradaki, şuradaki kısmında
+
+484
+01:32:41,524 --> 01:33:02,904
+Epsilon çok küçük olursa o zaman şöyle bir şeye gidiyor. Bakın, çok çok küçük bir aralıkta çok yüksek bir çıktı sağlamaya çalışacak. Neden? Çünkü bunun altında kalan onun 1 olması için şu kısım çok küçük olursa bu kısım da giderek uzayacak.
+
+485
+01:33:06,547 --> 01:33:14,628
+Delta fonksiyonları böyle hem çeşitli fonksiyonlar olduğu için bunları genellemek adına şöyle bir gösterim yapıyorlar.
+
+486
+01:33:15,247 --> 01:33:18,188
+Bakın, şuradaki gibi bir gösterim yapıyorlar.
+
+487
+01:33:19,667 --> 01:33:26,547
+Tıpkı ayrık zamandaki gibi çiziyor gibi yapıyoruz ama bakın burada bir tane şey var.
+
+488
+01:33:28,007 --> 01:33:29,208
+Ok ucu var.
+
+489
+01:33:30,528 --> 01:33:32,467
+Bu işte delta T'yi veriyor bize.
+
+490
+01:33:33,011 --> 01:33:37,331
+Genliği 1 ve 0 noktası yakınında tanımlı.
+
+491
+01:33:37,891 --> 01:33:39,911
+Tamamen görselleştirmek amaçlı.
+
+492
+01:33:41,771 --> 01:33:46,331
+Biz bundan sonra dürtü fonksiyonu dediğimiz zaman bunu algılayacağız.
+
+493
+01:33:46,572 --> 01:33:48,291
+Her zaman bu aklımızda olması lazım.
+
+494
+01:33:50,731 --> 01:33:59,411
+Bakın, dürtü fonksiyonu dediğimiz zaman her zaman bu t eşittir 0 anında bir değer veren buradaki gibi.
+
+495
+01:33:59,923 --> 01:34:08,023
+Diğer durumlarda, T farklı sıfır olduğu durumlarda sıfır değeri veren bir şey gibi düşüneceğiz.
+
+496
+01:34:15,475 --> 01:34:19,716
+Peki, bunu nasıl gösterebiliriz?
+
+497
+01:34:20,475 --> 01:34:25,216
+Bu, daha doğrusu birinci öğretimlerde şöyle bir soru sordu.
+
+498
+01:34:25,315 --> 01:34:28,876
+Hocam, biz şu anda sürekli zamandayız. Neden bunu ayrık gibi gösteriyoruz?
+
+499
+01:34:29,515 --> 01:34:32,095
+Bu işte ayrık gibi değil. Bu fonksiyonun özelliği böyle.
+
+500
+01:34:32,915 --> 01:34:37,775
+Bu fonksiyon, dürtü fonksiyonu, adı üstünde dürtü, bir anda tanımlı bir şey.
+
+501
+01:34:38,515 --> 01:35:01,935
+Daha sonra örnekler vereceğiz. Bu bir anlık şeyi nasıl fiziksel olarak düşünebiliriz? Mesela çekiç ile bir anda demire vurduğunuzda çıkan ses gibi veya bir beyzbol sopasıyla topa vurduğunuzdaki durum gibi. Anlık gelişen bir şey. O anda çok yüksek güçlü, çok yüksek enerjili bir şey tanımlamış gibi oluyorsunuz.
+
+502
+01:35:03,604 --> 01:35:16,804
+Şöyle bir fonksiyon tanımlanırsa, T artı 1'e bakın delta eklenmiş. Direkt ben şurada şunu yapmıyorum, buradaki değere 1 eklemiyorum. Bunu ayrıca gösteriyorum. Bu çok çok önemli bir şey bizim adımıza.
+
+503
+01:35:18,744 --> 01:35:30,224
+Çünkü fonksiyonun şeyi gereği doğrudan 1 değil aslında, bunun altında kalan alan 1'e eşit. Eksi sonsuzdan artı sonsuza delta T, DT aslında 1'e eşit.
+
+504
+01:35:30,496 --> 01:35:32,355
+Bu yüzden bunu temsil ediyor bu burada.
+
+505
+01:35:34,216 --> 01:35:36,015
+Şunu sorabilirsiniz mesela.
+
+506
+01:35:36,636 --> 01:35:39,556
+Hocam, işte eksi bir anında bunun değeri nedir?
+
+507
+01:35:41,356 --> 01:35:44,275
+Eksi bir anında bunun değeri sıfır.
+
+508
+01:35:44,976 --> 01:35:47,496
+Peki hocam, bu fonksiyonun, şuradaki fonksiyonun
+
+509
+01:35:47,496 --> 01:35:52,136
+f eşittir sıfır anındaki değeri nedir?
+
+510
+01:35:52,396 --> 01:35:52,996
+Sizce nedir?
+
+511
+01:36:07,412 --> 01:36:32,932
+T yerine 0 yazacak olursak 0 artı 1 artı delta'nın 0 noktasındaki değeri. Bu da 1 aslında. 1 gibi yorumluyoruz. Dolayısıyla şu noktadaki değer 2 olarak bulunmuş oluyor. Ama bunun hemen bir tık yanında bu gitmiş oluyor. Sadece çünkü bu 0 anında 0'a yakın bir konumda konumlandırılmış bir fonksiyon.
+
+512
+01:36:34,739 --> 01:36:37,899
+Biraz kafanızı karıştırdıysak biraz daha karıştırabiliriz.
+
+513
+01:36:40,800 --> 01:36:47,239
+Dürtü fonksiyonunun nasıl ki sürekli zamanda karşılığı varsa ayrık zamanda da karşılığı var.
+
+514
+01:36:47,899 --> 01:36:51,279
+Aslında ayrık zamandaki karşılığı da çok benzer.
+
+515
+01:36:52,659 --> 01:36:57,319
+Sadece buradaki deltanın yanında köşeli parantez ve en içerisinde sunuluyor.
+
+516
+01:36:57,743 --> 01:37:24,804
+Sadece n eşittir sıfır anla bir olarak tanımlanan ve diğer durumlarda sıfır olarak tanımlanan bir işaret. İkisi de birbirine çok benziyor. Dolayısıyla çizilecek olursanız, çizdirecek olursanız, burada sanırım eşit eşit olması lazım. Niyeyse böyle kalmış. Ama şunu yapabilirsiniz. Mesela yine n'i tanımlarsınız. Eksi 10'dan 10'a kadar.
+
+517
+01:37:26,579 --> 01:37:43,200
+X'si de bunun sıfır olduğu noktada sadece bir yapıp geri kalan yerlerde sıfırla doldurursanız ve daha sonra sistem NX derseniz o zaman bu çizimin aynısını elde etmiş olacaksınız. Yani çizmesi çok kolay aslında.
+
+518
+01:37:52,243 --> 01:37:54,404
+Evet, buraya kadar sorunuz var mı arkadaşlar?
+
+519
+01:37:56,623 --> 01:37:57,804
+Hocam sesim geliyor mu?
+
+520
+01:37:58,384 --> 01:37:59,283
+Evet, sesim geliyor.
+
+521
+01:38:00,224 --> 01:38:02,503
+Ben iki önceki slide'da bir soru mu olacaktı?
+
+522
+01:38:02,804 --> 01:38:04,064
+Tabii, hemen gelelim.
+
+523
+01:38:08,148 --> 01:38:08,648
+Bu mu?
+
+524
+01:38:09,368 --> 01:38:11,608
+Yok, ilk delta'nın bir sonrası.
+
+525
+01:38:12,648 --> 01:38:13,127
+Burası mı?
+
+526
+01:38:14,047 --> 01:38:22,528
+Evet, hocam burada delta T0 iken delta 0 değerinde 1 oluyor dediğiniz ama aslında 1 bölü epsiyon olmuyor mu?
+
+527
+01:38:23,608 --> 01:38:26,328
+İşte bak burada sorman iyi oldu.
+
+528
+01:38:29,248 --> 01:38:34,188
+Burada delta fonksiyonu çeşitlenebiliyor. Yani şu şekilde de tanımlayabiliyorsun.
+
+529
+01:38:34,931 --> 01:38:36,971
+Burada bu şekilde de tanımlayabiliyorsun.
+
+530
+01:38:39,251 --> 01:38:43,912
+O yüzden bunları böyle bir belirli kalıba sokmak mümkün değil.
+
+531
+01:38:44,072 --> 01:38:45,952
+Burada başka bir form da olabilir.
+
+532
+01:38:46,791 --> 01:38:48,971
+Şöyle işte çeşitli bir form da olabilir.
+
+533
+01:38:49,112 --> 01:38:53,412
+Bunun altında kalan alan yine bire eşitse yine baktığın zaman şey olmuş oluyor.
+
+534
+01:38:54,631 --> 01:38:56,631
+Bir delta fonksiyonu olmuş oluyor.
+
+535
+01:38:57,771 --> 01:39:00,532
+O yüzden bunları böyle genel nitelendirmek için...
+
+536
+01:39:00,884 --> 01:39:02,764
+Böyle bir şey söylüyoruz.
+
+537
+01:39:03,743 --> 01:39:17,043
+Ve bunun altında kalan alan bire eşit olduğu için genellikle bu anda sanki sadece sadece bu anda bir anlık tanımlı olduğunu düşünüp bu noktada bir eklemiş gibi varsayacağız.
+
+538
+01:39:18,623 --> 01:39:21,764
+Anlık olarak ama yani bunun kesinlikle altını çizmek lazım.
+
+539
+01:39:23,764 --> 01:39:24,783
+Bilmiyorum anlaşıldı mı?
+
+540
+01:39:25,783 --> 01:39:27,123
+Anlaşıldı hocam, teşekkür ederim.
+
+541
+01:39:27,572 --> 01:39:29,652
+Rica ederim. Başka var mı arkadaşlar?
+
+542
+01:40:10,260 --> 01:40:32,040
+Evet, o zaman biraz daha farklı bakış açıları ile bakmaya çalışalım. Bu birim dürtü fonksiyonunu anlamaya çalışalım. Bizim için çok önemli çünkü. Bundaki mantığı anlarsak bundan sonra işimiz çok çok kolay gidecek. Şimdi burada genel özelliklerine başlayalım yavaş yavaş.
+
+543
+01:40:33,876 --> 01:40:36,316
+Bu arada şurada şunu da söyleyebiliriz.
+
+544
+01:40:37,036 --> 01:40:42,556
+İşte dürtü işareti böyle ise şöyle bir fonksiyon çizecek olursa nasıl çizeriz?
+
+545
+01:40:42,696 --> 01:40:50,276
+3 delta T eksi 3 artı 5 delta T artı 1.
+
+546
+01:40:51,076 --> 01:40:51,956
+Bunu nasıl çizeriz?
+
+547
+01:40:54,696 --> 01:40:56,056
+Delta T burada.
+
+548
+01:40:57,587 --> 01:41:01,967
+Ben aslında zamanda ötelenmiş hallerin toplamı gibi bir şey söylüyorum.
+
+549
+01:41:04,587 --> 01:41:06,927
+Şurada FT'yi çizecek olursam.
+
+550
+01:41:08,927 --> 01:41:10,107
+Ne dersiniz?
+
+551
+01:41:32,020 --> 01:41:44,860
+Evet, şuna baktığımız zaman, ilk birleşene baktığımız zaman, DeltaT burada bu şekildeyken, DeltaT'yi 3 birim kadar sağa doğru öteliymiş.
+
+552
+01:41:46,020 --> 01:41:57,220
+Sıfırdayken bu 3 birim ötelerse ne olur? 3. noktada Genliği 3 olan bir Delta fonksiyonu üretmiş olur. Genliği 3.
+
+553
+01:41:58,660 --> 01:41:58,960
+Peki,
+
+554
+01:41:59,859 --> 01:42:12,019
+Şunun için ne diyecek? Bu da sağa doğru kaydırmış, sola doğru kaydırmış, çok pardon, ve bir birim kaydırmış. Bir birim kaydırması demek sola doğru, eksi birde olması demek.
+
+555
+01:42:13,960 --> 01:42:17,519
+Ve bunun genliği de beş kadar olması demek.
+
+556
+01:42:20,799 --> 01:42:25,899
+Aslında [öğrenci]'ın söylediği şeyle birebir uyuşuyor. Yani doğru söylemiş.
+
+557
+01:42:28,051 --> 01:42:55,692
+Bu yüzden bunların böyle farklı ötelenmiş hallerini de aklınızda yorumlamanız iyi olabilir. Bu birinci yoldu. İkinci yol ne? İçerisini sıfıra eşitlemek. T-3'ü sıfıra eşitlersek ha T eşittir 3'te demek ki bir şey veriyormuş. T artı biri sıfıra eşitlersek ha T eşittir eksi birde bir dürtü veriyormuş gibi yorumlayabilirsiniz. İkisi de kabul. Sonuçta sonucu doğru bir şekilde bulmuş oluyoruz.
+
+558
+01:42:56,659 --> 01:43:22,439
+Peki, o zaman buradaki formal özelliğe başlayalım. Şimdi şöyle bir şey diyor, f'te herhangi bir sürekli fonksiyon veya işaret olmak üzere, sürekli zaman işareti olmak üzere, ben burada f't çarpı sigma t'nin integralini alırsam f'in sıfırdaki değerini elde ederim diyor. Hayda, bu nereden çıktı şimdi?
+
+559
+01:43:24,180 --> 01:43:31,220
+Biraz ilginç geldi, anlamaya çalışayım. FT ne olursa olsun diyor. Bakın, FT sürekli bir fonksiyon sadece.
+
+560
+01:43:34,100 --> 01:43:49,900
+FT'yi o zaman ben kafama göre çizeyim. Madem ne olursa olsun diyor. Şöyle salladım, bir şey çizdim. Tamam. O zaman deltaT'yi de çizeyim altına. DeltaT dediği şey.
+
+561
+01:43:50,420 --> 01:43:59,199
+Herhangi bir kaydırma olmadığı için tam t eşittir sıfır anında birim genliğinde, ir genliğinde olacak.
+
+562
+01:43:59,720 --> 01:44:05,279
+Geri kalan yerlerde sıfır olarak zaten verdiğini söylüyoruz.
+
+563
+01:44:06,319 --> 01:44:09,239
+Şimdi aslında buradaki integral şunu söylüyor.
+
+564
+01:44:10,019 --> 01:44:12,819
+Şu iki fonksiyonunu çarpabilirsin dışarıda.
+
+565
+01:44:13,659 --> 01:44:15,019
+Bunun integralini aldığında
+
+566
+01:44:16,148 --> 01:44:24,328
+F0 elde edersin diyor. Şimdi şu iki fonksiyonu bir çarptığımızı düşünelim. Ne olur bunu çarparsak eleman elemana?
+
+567
+01:44:41,524 --> 01:44:55,524
+F0, aslında deltaT'nin yani dürtü adı üstünde dürtü fonksiyonunun en önemli özelliği sadece bir nokta civarında tanımlı olmuş olması. Bakın sadece sıfır noktası civarında tanımlı.
+
+568
+01:44:56,264 --> 01:45:04,663
+Sıfır dışındaki bölgelerde değeri sıfır olduğu için aslında karşı taraftaki fonksiyon ne olursa olsun
+
+569
+01:45:05,971 --> 01:45:19,851
+Şuraları bastırmış oluyor. Bakın, buralarla hiç ilgilenmemiş oluyoruz. Dolayısıyla bu direkt gidip bu noktayı kısmen örneklemiş gibi oluyor. Sadece o noktadaki değere erişmiş gibi oluyor.
+
+570
+01:45:23,380 --> 01:45:29,500
+Ben öğrenciyken en istediğim şey şu dürtü fonksiyonlu bir şey gelmiş olmasıydı.
+
+571
+01:45:29,900 --> 01:45:33,960
+Çünkü bunun integralini hesaplamak falan burada görüldüğü gibi çok daha kolay oluyor.
+
+572
+01:45:35,300 --> 01:45:43,080
+Buradaki dürtü, directe dediğim şey veya deltaT dediğim şey, T eşittir sıfır anında tanımlı.
+
+573
+01:45:43,700 --> 01:45:49,080
+Dolayısıyla gidip sanki fonksiyonun sıfırıncı değerini ön plana çıkarmış gibi oluyor.
+
+574
+01:45:50,003 --> 01:45:51,503
+Bunu herkes anladı mı?
+
+575
+01:45:56,404 --> 01:46:15,304
+Tamam. Şimdi buna çok ufak bir şey daha ekleyelim. Bakın, aynısı, aynı fonksiyon var. Sadece önüne bir tane skaler eklemişim. Skaler dediğim şey sabit bir değer. Zaten ben biliyorum, integral dışına bu sabit çıkabilir.
+
+576
+01:46:16,163 --> 01:46:23,864
+İntegral dışına çıktığında da delta çarpı F0 haline geleceğini bunu zaten kendim de yorumlayabilirim.
+
+577
+01:46:30,515 --> 01:46:37,735
+Buradaki alfa ne olabilir? Alfa herhangi bir şey olabilir. Genlikle ilişkili 2, 3, 4, buradaki gibi bir şey olabilir.
+
+578
+01:46:39,915 --> 01:46:53,815
+Peki bunu bir tık daha zorlaştıralım o zaman. Ben başka bir fonksiyonla daha çarpmış olsaydım, yani şunu diyorum, FT bir işareti var, FT başka bir işaret daha var.
+
+579
+01:46:55,667 --> 01:47:04,007
+Bunların işaretinin dışına bir daha deltaT'yi de koyarak bu integral hesaplamak istiyorum. O zaman sonuç ne olurdu?
+
+580
+01:47:05,328 --> 01:47:16,667
+Tabii ki o zaman da sonuç şu köşeli parantezi çarpımın değişme özelliğinden dolayı ilk iki bileşenin çarpımı gibi gösterebilirsin.
+
+581
+01:47:17,076 --> 01:47:25,095
+Sanki dışarıda ilk iki birleşimini çarpmışsın da getirip buraya yazmışsın gibi düşünebilirsin. Yine tek fonksiyona dönmüş oldu olay.
+
+582
+01:47:26,475 --> 01:47:32,795
+Ama neticede her ikisinin de sıfırı koordinatındaki şeylerin çarpımına dönmüş oldu.
+
+583
+01:47:32,795 --> 01:47:40,996
+Yani diyelim ki senin işte ft fonksiyonun şöyle bir şey.
+
+584
+01:47:43,764 --> 01:48:08,963
+FiT fonksiyonu bambaşka bir şey. Bir de sen gidip bunların üstüne deltaT'yi çarpmak istiyorsun. Tabii ki deltaT yine sıfır anında tanınma. Fark etmiyor. Sıfır anında çarpmak demek, bunların hepsini çarpmak, şu noktalarındaki değerleri çarpmak anlamına geliyor. Çünkü geri kalan çarpmayla hiç ilgilenmeyeceğiz. DeltaT bu noktalarda sıfır olarak devam ediyor.
+
+585
+01:48:10,195 --> 01:48:12,296
+Bu yüzden bunu da böyle yorumlamamız gerekiyor.
+
+586
+01:48:14,376 --> 01:48:22,115
+Evet, en önemli özelliklerinden birisi. Yine aslında aynı yere geleceğiz ama, Sifting yani eleme özelliği olarak gözüküyor.
+
+587
+01:48:24,195 --> 01:48:31,115
+Biz buradaki, daha önce şunun yerine bir önceki slide'larda deltaT vardı.
+
+588
+01:48:32,155 --> 01:48:35,615
+O durumda biz ne yapıyorduk? F'in sıfırdaki noktasını alıyorduk.
+
+589
+01:48:37,460 --> 01:48:41,380
+F'in herhangi bir noktasındaki değeri alabilmek için ne yapmam lazım?
+
+590
+01:48:42,000 --> 01:48:45,820
+Tabii ki dürtüyü o konuma kaydırmam lazım.
+
+591
+01:48:47,220 --> 01:48:49,539
+Yani şöyle özetlemek gerekirse,
+
+592
+01:48:51,560 --> 01:48:56,860
+Ft sinyalini, deltaT sinyalini yazacak olursak,
+
+593
+01:48:58,500 --> 01:49:02,640
+deltaT sinyali burada deltaT-5 diyelim mesela, 5 konumu.
+
+594
+01:49:03,024 --> 01:49:06,784
+Tam 5 anında bir tane dürtü oluşturduğunu düşün.
+
+595
+01:49:07,984 --> 01:49:12,584
+Yukarıdaki fonksiyonu bu kez ne yapmış oldu? 5 noktasında örneklemiş oldu.
+
+596
+01:49:14,064 --> 01:49:17,304
+5 noktasındaki değeri aslında ön plana çıkarmış oldu.
+
+597
+01:49:18,344 --> 01:49:20,784
+Bu işte en önemli özelliklerden birisi.
+
+598
+01:49:21,644 --> 01:49:23,404
+Buna örnekleme özelliği de diyorlar.
+
+599
+01:49:24,124 --> 01:49:28,404
+Burada seçtiğin dürtünün değerine göre...
+
+600
+01:49:28,948 --> 01:49:32,148
+Sen istediğin konumdaki değeri çekebiliyorsun.
+
+601
+01:49:34,508 --> 01:49:40,208
+Tabii ki integral çok önemli bu integral hesabındaki mantık.
+
+602
+01:49:40,628 --> 01:49:41,908
+Şöyle bir mevzu var burada.
+
+603
+01:49:44,228 --> 01:49:48,548
+Her zaman deltaT'nin sıfırı kapsadığı noktada olması gerekiyor.
+
+604
+01:49:48,888 --> 01:49:52,368
+Çünkü adı üstünde yürütü fonksiyonu sıfır merkezli diyoruz.
+
+605
+01:49:52,884 --> 01:50:01,703
+Dolayısıyla A eğer sıfırdan küçükse, B eğer sıfırdan büyükse zaten bu aralığı kapsıyordur, sıfırı kapsıyordur. Bu yüzden bunun alanı birdir.
+
+606
+01:50:05,395 --> 01:50:25,395
+Ama A burada sıfırdan büyük, B sıfırdan küçükse zaten integral sınırları gereği biraz saçmalık oluyor. Sıfır çıkabilir. Başka opsiyonlar neler olabilir? Bakın sıfırın biraz ötesinden başlasanız, 1'e kadar integral alsanız bu dürtü fonksiyonunda, yine sıfır elde edeceksiniz. Neden? Çünkü sıfır kapsamıyorsunuz.
+
+607
+01:50:31,604 --> 01:50:57,264
+İntegral aldığınızda tabii ki sonuca eleşebiliyorsunuz. Yine burada eksi birden sıfırın sağına kadar alırsak yine erişebiliyoruz. Bunun integrali bir olmuş oluyor. Yani bu kadar anlatım neyi gösteriyor? Hep şu dürtü fonksiyonun gerçekten tam sıfır anında tanımlı bir fonksiyon olduğunu gösteriyor. T eşittir sıfır. Bunu kapsaması lazım. Senin alacağın integral.
+
+608
+01:51:00,435 --> 01:51:09,076
+Peki, şu Sifting özelliğine bir örnek verecek olursak, şuradaki integrali çözmemizi istiyorlardı. Yukarıda yazmış, bunu integrali çözünüz.
+
+609
+01:51:10,036 --> 01:51:19,215
+Şimdi ne yapması lazım? Burada aslında baya karışık gibi gözükse de, bunu böyle farklı integrallerin toplamı şeklinde yazabilirim.
+
+610
+01:51:19,295 --> 01:51:24,295
+Yani işte eksi 2'den 3'e kadar 2FTDT.
+
+611
+01:51:25,203 --> 01:51:32,923
+Bu ilk parçası integral. Sonra eksi 2'den sabit olanları ayırıyoruz aslında, toplam şeklinde yazıyoruz.
+
+612
+01:51:33,923 --> 01:51:44,983
+FT çarpı deltaT artı 1, DT, artı eksi 2'den 3'e kadar FT.
+
+613
+01:51:47,667 --> 01:51:51,347
+Şurada bir genlik var mıydı? Yok. Burada genlik yok. Şurada genlik var.
+
+614
+01:51:51,867 --> 01:51:56,688
+Burada genlik dışarı çıkarabiliriz. 3 şeklinde, eksi 3 şeklinde çıkarabiliriz.
+
+615
+01:51:57,228 --> 01:52:05,568
+FT çarpı delta T eksi 1 yazabiliriz. Şuraya da artı 2 skaler olduğu için dışarı çıkarabiliriz.
+
+616
+01:52:05,568 --> 01:52:12,247
+Eksi 2'den 3'e kadar FT çarpı, şuradaki DT'yi unutmuşuz.
+
+617
+01:52:12,819 --> 01:52:38,139
+Delta T artı 3 DT şeklinde yazdık. Bunları çözmemiz lazım ama şu kısmı zaten FT benim elimde olmadığı için bilemiyorum. Bu böyle kalacak zaten. Sonuca gidecek olursanız bakın bunun aynen kaldığını göreceksiniz. Benim asıl maksadım diğer kısımları çözebilmek. Peki burada ne yapıyor aslında şu kısımda? Bakın.
+
+618
+01:52:38,547 --> 01:53:00,747
+0'a eşitleyecek olursak, t eşittir, eksi bir noktasındaki kısmı örnekliyor. Yani bu adam ne yapmış? Aslında f eksi biri burada bulmuş. Bu özellik, shifting özelliğinden geliyor. Şu, şundan geliyor. Ne yapıyor? F'i direkt şuradaki noktada örneklemiş oluyorsun.
+
+619
+01:53:04,692 --> 01:53:11,331
+Şuradaki kısım ne olur? Burada da artı bir de örneklemiş oluyorsun. F1 olmuş oluyor.
+
+620
+01:53:12,851 --> 01:53:19,211
+Şurada ne yapmış oluyor? Aslında burada da F'i eksi 3'te örneklemiş oluyorsun.
+
+621
+01:53:20,311 --> 01:53:27,851
+Dolayısıyla şunu yazmamış bu arada ama onu ben yazmış olayım. 2F eksi 3 şeklinde yazması gerekirdi.
+
+622
+01:53:29,511 --> 01:53:30,891
+Bunu anlamayan var mı arkadaşlar?
+
+623
+01:53:45,555 --> 01:53:46,855
+Hocam ben bir şey sorabilir miyim?
+
+624
+01:53:47,115 --> 01:53:47,415
+Tabii.
+
+625
+01:53:49,475 --> 01:53:54,395
+İntegral aralığını eksi iki üç olarak tanımladığınız için eksi üç o aralığın dışında kalmıyor.
+
+626
+01:53:57,675 --> 01:54:04,075
+Eksi iki, evet doğru, eksi iki üç aralığı, kesinlikle ondan dolayı onu yazmamış o zaman, doğru.
+
+627
+01:54:09,171 --> 01:54:15,751
+İntegral aralığı dışında olduğu için bu kısım doğrudan sıfır kalmış olacak. Şu kısım olmayacak.
+
+628
+01:54:18,091 --> 01:54:20,992
+O yüzden formül sonucunda böyle bir şey yok.
+
+629
+01:54:21,711 --> 01:54:22,452
+Teşekkür ederim.
+
+630
+01:54:35,220 --> 01:54:41,260
+Evet, bunu genelde yorumlamak gerekirse burada fiziksel olarak neye denk geliyor gibi düşünmüş.
+
+631
+01:54:42,280 --> 01:54:46,720
+Genellikle fiziksel sinyalleri modellemek için bu dürtü yanıtları kullanırız diyor.
+
+632
+01:54:46,720 --> 01:54:54,640
+Küçük bir zaman aralığında gerçekleşen olayları veya sinyalleri anlatmak için.
+
+633
+01:54:55,280 --> 01:55:00,180
+İşte burada çekiç vurma sesi.
+
+634
+01:55:00,724 --> 01:55:24,963
+Bir anlık oluşuyor sonuçta veya teniste veya beyzbol sopasının topa vurduğu andaki durumu göstermek için. Bunlar bir anda böyle çok yüksek bir etki üretiyor. Bunları fiziksel olarak yorumlamak için bu fonksiyonları kullanabiliyoruz.
+
+635
+01:55:27,699 --> 01:55:34,819
+Hızlı şarj kapasitörü, yani biz aslında süper kapasitör olarak da bunu biliyoruz.
+
+636
+01:55:37,779 --> 01:55:40,600
+Yani kapasitör şeklinde yazayım.
+
+637
+01:55:41,960 --> 01:55:48,539
+Siz böyle bir devrede kondansatörü anında şarj etmek istiyorsunuz, anlık bir şekilde, çok hızlı bir şekilde.
+
+638
+01:55:49,220 --> 01:55:52,920
+T-0 anında kapanır kapanmaz şarj olmasını istiyorsunuz.
+
+639
+01:55:53,152 --> 01:55:57,832
+Peki buradan geçecek akımı yapacak olursanız, çizecek olursanız nasıl olur?
+
+640
+01:55:58,291 --> 01:56:01,152
+Tabii ki bu da dürtü fonksiyonu şekline dönüşür.
+
+641
+01:56:01,251 --> 01:56:04,811
+Çünkü akım çok kısa bir sürede, çok hızlı bir şekilde akacak.
+
+642
+01:56:06,011 --> 01:56:12,112
+Bu aslında dürtünün kalıbına ve yorumlamasına daha uygun bir yapı oluyor.
+
+643
+01:56:15,112 --> 01:56:15,884
+Dürtü...
+
+644
+01:56:16,051 --> 01:56:22,271
+Lerin integrali veya türevi nasıl oluyor? Bunlarla ilgili biraz konuşalım ve ondan sonra dersi bitireceğiz zaten.
+
+645
+01:56:23,871 --> 01:56:29,971
+Şimdi şöyle demiş, XTS'in yerini buradaki gibi tanımlamış.
+
+646
+01:56:30,751 --> 01:56:37,391
+Bunu verdiğime göre diyor, YTI'yi şuradaki integral üzerinden tanımlayabilir misin? Soru soruyor.
+
+647
+01:56:38,391 --> 01:56:41,391
+Önce XT'ye bakayım. XT aslında...
+
+648
+01:56:42,131 --> 01:56:49,591
+Tıpkı bir UT fonksiyonu gibi gidiyor. Ama üstüne belirli noktalarda bir şeyler eklenmiş.
+
+649
+01:56:53,011 --> 01:56:56,451
+Tabi burada 1 yazdığı için T ile ilgili bir bilgi yok.
+
+650
+01:56:57,671 --> 01:57:01,231
+Muhtemelen burada şunu yazması gerekirdi. Bence yazması lazımdı.
+
+651
+01:57:01,811 --> 01:57:09,471
+T sıfırdan büyükse bu durum, büyük veya eşitse yukarıdaki fonksiyon tanımı olması gerekiyordu.
+
+652
+01:57:10,071 --> 01:57:12,031
+Çünkü sıfır öncesinde herhangi bir şey vermemiş.
+
+653
+01:57:13,612 --> 01:57:15,571
+Şimdi bir önceki kısma gidelim arkadaşlar.
+
+654
+01:57:15,931 --> 01:57:20,371
+Sanki buralarda şu kısımlarda dürtüler yokmuş gibi düşünüyorum.
+
+655
+01:57:21,716 --> 01:57:25,516
+Birim basamak fonksiyonunda integral alırken ne yapıyorduk?
+
+656
+01:57:27,456 --> 01:57:32,416
+Birim basamak fonksiyonunun integrali nedir demiştik? Rampa fonksiyonudur demiştik.
+
+657
+01:57:33,176 --> 01:57:36,296
+Dolayısıyla burada rampa şeklinde gideceğini ben tahmin ediyorum zaten.
+
+658
+01:57:36,476 --> 01:57:43,616
+Çünkü burada eşit eşit dilimlere ayıracak olursak bu alanın artışı hep belirli seviyede olacaktır.
+
+659
+01:57:43,736 --> 01:57:46,556
+Ve bu sayede de bir rampa fonksiyonu oluşturmuş olacak.
+
+660
+01:57:47,539 --> 01:58:13,479
+Çok güzeldi ama keşke şu dürtüler olmasaydı. Çünkü dürtü olmasaydı böyle olacağını biliyordum. Peki dürtü var, o zaman ne yapmam lazım? O zaman yine alan mantığından devam edebilirim. Bakın tam bire kadar ben bir alan hesapladığımı düşünün. Birin bir tık öncesi gibi de düşünebilirsiniz. Buradaki bunun alanı nedir diye baktığımız zaman, tabii neden alan düşünüyoruz? Şurada çünkü
+
+661
+01:58:14,387 --> 01:58:19,587
+XTO'nun, daha doğrusu XT'nin sıfırdan T'ye kadarki integralini soruyor.
+
+662
+01:58:21,547 --> 01:58:26,987
+Sıfırdan T'ye kadarki, T'yi burada bir seçersek, bire kadarki alanını aslında sormuş oluyor.
+
+663
+01:58:28,827 --> 01:58:36,327
+Dolayısıyla bu bir noktasında, bir noktasının hemen öncesinde, yukarıda bir noktasına yakın bir sonuç elde etmiş olacak.
+
+664
+01:58:37,067 --> 01:58:40,268
+Bu konuda hemfikiriz zaten rampa bu şekilde devam etmesi gerekiyor.
+
+665
+01:58:41,427 --> 01:59:04,207
+Peki bunun bir tık daha sonrasına gidecek olursak, hemen şu dörtünün bittiği noktaya, o zaman ne olacak? Buradaki alanı artı şunun alanı olacak. Peki bunun alanı neydi? Eksi sonsuzdan artı sonsuza deltaT, DT alanı neydi arkadaşlar? 1'di.
+
+666
+01:59:04,543 --> 01:59:22,863
+O zaman ne olacak? Tam o anda onun alanı anlık bir şekilde ikiye çıkacak. Bir sonraki alanlarda hep bir önceki alanları da dahil ettiğim için bu onun üzerine ekleyerek devam ediyor. Nereye kadar? Tabii ki bir sonraki dürtüyü görene kadar.
+
+667
+01:59:24,180 --> 01:59:35,600
+Bir sonraki dürtüde de bu kez bunun ne kadar alanı bir de olsa eksi iki ile çarpılmış genliğin. Dolayısıyla eksi iki düşecek gibi düşünebilirsiniz.
+
+668
+01:59:37,540 --> 01:59:47,280
+Eksi iki düşüyor. Sonra tekrar giderek artacağı için, fonksiyon sürekli sonsuza kadar gideceği için artmaya devam edecek.
+
+669
+01:59:49,939 --> 02:00:03,479
+Farkındayım. Bizim şu ana kadar öğrendiğimiz bilgilerin dışında biraz daha böyle farklı bir fonksiyonla çalışıyoruz. Dürtü fonksiyonu deyince. Ama yorumlamasının en azından çok zor olmadığını aklınızda bulundurun.
+
+670
+02:00:06,000 --> 02:00:14,479
+Peki şöyle bir şey versen, tam tersini sorsak mesela. Birim dürtü yanıtı, pardon, birim...
+
+671
+02:00:16,083 --> 02:00:23,844
+Basamak fonksiyonu veriyorum. Birim basamak fonksiyonu sıfıra kadar böyle gidiyor. Sıfırdan sonra da bir olarak devam ediyor.
+
+672
+02:00:26,384 --> 02:00:39,484
+Ben başka bir sinyal tanımlasam, bu XT sinyali. XT sinyali DUT bölü DT desem, yani türevi üzerinden düşünsem, şuradaki sinyal nasıl olur?
+
+673
+02:00:43,412 --> 02:00:44,912
+Nasıl çizebilirim sizce?
+
+674
+02:00:47,011 --> 02:00:50,891
+Burada size biraz bırakıyorum. Bakalım yorumlar ne olacak?
+
+675
+02:01:13,171 --> 02:01:14,311
+Evet, yorum yok mu?
+
+676
+02:01:16,871 --> 02:01:20,791
+Rampa fonksiyonu diyor [öğrenci]. Başka yorum olan var mı?
+
+677
+02:01:22,991 --> 02:01:30,151
+Sıfır olabilir mi diyor [öğrenci]. Aslında mantıklı gibi geldi bana ama. Başka bakalım yorum var mı?
+
+678
+02:01:37,939 --> 02:01:40,359
+Sıfır anında bir demişsin, [öğrenci].
+
+679
+02:01:43,731 --> 02:01:48,351
+Onun dışında sıfır. Evet, en doğru yorum herhalde ufuktan geldi. Şimdi neden böyle?
+
+680
+02:01:50,052 --> 02:02:02,832
+En basitinden türeve gidecek olursak, türev bilgisine. Ben X'te diye bir fonksiyonum olsun. Bu fonksiyon sabit bir değer alıyor diyelim. 2 alıyor.
+
+681
+02:02:03,612 --> 02:02:08,771
+Bunun türevini nasıl, kaç olarak buluruz? T'ye bağlı.
+
+682
+02:02:12,724 --> 02:02:38,344
+Sıfır olarak bilir. Çünkü, türev demek değişim demektir. Bu fonksiyonunda herhangi bir değişim söz konusu değil. Bütün değerleri sıfır çünkü. Aslında bizim de burada fonksiyonumuz bütün değerleri bir olarak devam etseydi biz de diyecektik ki evet bunun türevi sıfırdır. Ama burada farklı bir durum söz konusu. Şunu söyleyebiliriz ama. Bu adam bir olarak devam ettiği durumda, bak, bakın.
+
+683
+02:02:38,836 --> 02:02:55,336
+Burada 1 olarak devam ettiği durumda hiçbir değişimi yok. Sürekli bir fonksiyon gibi, yani daha doğrusu sabit bir değere sahip fonksiyon gibi gidiyor. Dolayısıyla şuradaki türevi 0 olacak gibi zaten yorumlayabiliriz. Bunun eğimi 0 bir kere. Öyle de yorumlayabiliriz.
+
+684
+02:02:56,796 --> 02:02:59,056
+Ama bakın, tam 0 anında ne olmuş?
+
+685
+02:02:59,764 --> 02:03:26,764
+Tam sıfır anında bir değişim meydana gelmiş. Sıfırdan bir de çıkıyor. İşte bu değişimi bizim buraya aktarabilmemiz için bunu dürtü fonksiyonuyla gösteriyoruz. DeltaT diyoruz. Yani burada şunu da görmüş olduk. UT yani birim basamak fonksiyonunun türevi aslında birim dürtü fonksiyonuymuş.
+
+686
+02:03:28,724 --> 02:03:34,963
+Aynı şekilde birim dürtü fonksiyonun integrali birim basamak fonksiyonu oluyor.
+
+687
+02:03:35,164 --> 02:03:42,524
+Çünkü türevle integralin zaten birbirine benzer olduğunu, tam tersi olduğunu yorumlayabiliriz.
+
+688
+02:03:43,084 --> 02:03:47,744
+Aslında yukarıda çözdüğümüz az önceki örneği çok benzer bir durum söz konusu.
+
+689
+02:03:49,024 --> 02:03:51,963
+Bu sadece bu açıdan da yorumlamış olduk.
+
+690
+02:03:54,836 --> 02:03:56,748
+Burada da aynı şeyi söylüyor.
+
+691
+02:04:02,515 --> 02:04:12,355
+Bunun tam tersini yapacak olursak, o zaman onu da yine en başında elde ettiğimiz şeyi tekrar bulmuş oluruz.
+
+692
+02:04:19,220 --> 02:04:20,500
+Evet, sorunuz var mı?
+
+693
+02:04:47,667 --> 02:05:14,387
+Sorunuz yoksa ben dersi burada bitiriyorum. Burada şunu söyleyelim, mutlaka MATLAB veya Python deyip hangisini tercih edeceksiniz bunu kurun. Burada kendinize uygulamalar geliştirmeye çalışın. Bir kere uygulama mesela az önce tren sesi duyduk ya, siz kendi sesinizle mikrofona erişip kaydedebilirsiniz. MATLAB'da bunun kodları var veya Python'da da var.
+
+694
+02:05:15,539 --> 02:05:33,859
+Yani şunu yapabilirsiniz, işte programı başlattıktan 3 saniye boyunca sesinizi kaydeder, sonra bu sesleri görselleştirirsiniz önce, daha sonra işte bu sesle oynarsınız, artırıp azaltırsınız gibi bazı şeyler yapabilirsiniz.
+
+695
+02:05:38,547 --> 02:05:46,987
+Burada tamamen sizin hayal gücünüzü kalmış. Aynı şekilde nasıl ki mikrofona erişim varsa kameraya da erişim yapabilirsiniz.
+
+696
+02:05:48,107 --> 02:05:58,227
+MATLAB'da bağlanırsınız, kameradan görüntü al dersiniz, alınan görüntülerin değerlerine bakarsınız. Bunlar nasıl değerler, bunları analiz edebilirsiniz.
+
+697
+02:05:59,123 --> 02:06:04,783
+Çok ilerleyen zamanlarda da belki bu dersi aldıktan sonra şunu çok rahatlıkla yapabileceksiniz.
+
+698
+02:06:04,783 --> 02:06:09,644
+İşte bu değerler arasındaki ilişkiyi kurabileceksiniz.
+
+699
+02:06:09,804 --> 02:06:14,703
+Bunun Fourier dönüşümünü aldığınız zaman nasıl bir çıktı üretebilir bunu tahmin edebileceksiniz.
+
+700
+02:06:17,684 --> 02:06:33,423
+Hatta belki Şazam benzeri bir program bile yapabilirsiniz. Sonuçta Şazam'ın yaptığı en temelde şey, ses içerisindeki içeriği daha önceki tanımlanmış kütüphanelerde bulmak. Böyle bir uygulama da olabilir yani.
+
+701
+02:06:42,452 --> 02:06:48,392
+Peki arkadaşlar, teşekkürler katıldığınız için. Haftaya tekrar görüşmek üzere diyelim.
