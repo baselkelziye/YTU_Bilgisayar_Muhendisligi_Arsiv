@@ -1,0 +1,4039 @@
+1
+00:00:09,555 --> 00:00:12,555
+bu konuları da ödü.
+
+2
+00:06:03,091 --> 00:06:04,051
+Günaydın arkadaşlar.
+
+3
+00:06:08,339 --> 00:06:12,079
+Artık derslere başlayabilir.
+
+4
+00:06:12,079 --> 00:06:13,639
+İsteyle düşünüyorum.
+
+5
+00:06:14,439 --> 00:06:15,939
+Dersçe fazla görünmüyorsunuz ama
+
+6
+00:06:15,939 --> 00:06:17,679
+Fakir kişilik şu anda.
+
+7
+00:06:18,979 --> 00:06:19,879
+Böyle görüyorum ben.
+
+8
+00:06:22,159 --> 00:06:22,839
+Günaydın, günaydın.
+
+9
+00:06:23,079 --> 00:06:24,639
+Öncelikle [öğrenci].
+
+10
+00:06:26,139 --> 00:06:28,219
+Şimdi integralden başlıyoruz arkadaşlar.
+
+11
+00:06:29,219 --> 00:06:31,299
+Sınavımız 12. haftaymış.
+
+12
+00:06:32,679 --> 00:06:34,439
+Haftı içinde olacakmış ama günü belli değil.
+
+13
+00:06:34,479 --> 00:06:35,299
+Onun için bir şey diyemiyorum.
+
+14
+00:06:35,879 --> 00:06:37,860
+x kare artı 2x, f'
+
+15
+00:06:35,732 --> 00:06:38,432
+günü belli olduğu zaman onu da söylerim. Tamam mı?
+
+16
+00:06:38,432 --> 00:06:42,932
+Ondan sonra, kaldığımız yerden devam ediyoruz arkadaşlar.
+
+17
+00:06:42,932 --> 00:06:55,732
+İntegradan başlıyoruz. Şimdi başlayalım. İntegre, yani normal bir ters türev vermiştik. Ondan sonra işte toplam noktasında devam edeceğiz arkadaşlar.
+
+18
+00:06:55,732 --> 00:06:59,404
+Şimdi burada...
+
+19
+00:07:03,827 --> 00:07:31,107
+Günaycığım, 12. hafta diyor. Yani biz bu hafta 10. haftadayız. 10, 11, 13. Yani onun gününü bilmiyorum. Gününü bildiğim zaman, yani söylediklerinde, yazdıklarında size söyleyeceğim arkadaşlar. Tamam mı? Gününü bilmiyorum. 12. hafta diye yazdılar bize. Onun için sadece o kadar seviydim. Gününü bilmiyorum. Tamam mı?
+
+20
+00:07:31,507 --> 00:07:33,507
+Şimdi kaldığımız yerden devam ediyoruz.
+
+21
+00:07:35,507 --> 00:07:40,507
+Şimdi toplam gösterimi alan problemi diyor. Önce toplam neymiş ona bakacağız arkadaşlar.
+
+22
+00:07:40,507 --> 00:07:49,507
+İşte integralin ilk oluşu arkadaşlar Riemann toplamından oluşmuş. Dolayısıyla önce toplamı bilineceğiz.
+
+23
+00:07:49,507 --> 00:07:57,507
+Toplamın özelliklerini bilineceğiz. Oradan onu kullanmadan zaten integrali yapamayacaksınız diyoruz. Dolayısıyla sizin için önemli.
+
+24
+00:07:58,004 --> 00:08:05,004
+Burada Riemann'dan falan böyle toplamlı soru sorarlar arkadaşlar. Genel olarak soruyorlar.
+
+25
+00:08:05,108 --> 00:08:07,627
+Şimdi arkadaşlar, birinci tanımım 3'ümüş.
+
+26
+00:08:08,088 --> 00:08:10,627
+A1-2-A-N'ler ne tane sayıysa diyor.
+
+27
+00:08:10,827 --> 00:08:14,148
+Bunları topladığımız zaman, araya artı artı koyduğumuz zaman arkadaşlar,
+
+28
+00:08:14,908 --> 00:08:18,388
+yani A1-2-A-2 diyebittiği zaman ne tane A-N'ye kadar topladık.
+
+29
+00:08:18,867 --> 00:08:22,447
+Ondan sonra bunu temsil etmek için şöyle bir toplam k-çift bir birden neye.
+
+30
+00:08:22,447 --> 00:08:27,447
+Bu aşağıya, aslında alta yazılır ama burada tam yazamıyoruz tabii ki.
+
+31
+00:08:27,827 --> 00:08:31,288
+Şöyle toplam k-çift bir birden aşağıya yazılır aslında.
+
+32
+00:08:31,848 --> 00:08:33,107
+K-çift bir birden işte neye.
+
+33
+00:08:33,107 --> 00:08:38,107
+y'ye kadar a k diye yazılır da biz mecburen burada öyle yazıyoruz arkadaşlar.
+
+34
+00:08:38,107 --> 00:08:44,107
+a k diye yazıyoruz. k indi. k'ya değer verdikçe işte a 1 artı a 2 diye gidiyoruz.
+
+35
+00:08:44,107 --> 00:08:50,107
+Bunu, ha şurada yazmışız zaten. Orada yazdığımız, o yan satırda yazılmışız.
+
+36
+00:08:50,107 --> 00:08:53,107
+aynı satırın içini yazı olarak yazdığımız gibi yazılmışız. Tamam.
+
+37
+00:08:53,107 --> 00:09:00,107
+Şöyle yazıyoruz. k'yı birden y'ye a k'yı böyle ne tanesini topladık işte a 1 artı a 2 artı a n diye yazıyoruz.
+
+38
+00:09:00,947 --> 00:09:21,967
+Burada arkadaşlar, ak yerine bir fonksiyon gelebilir arkadaşlar. O da işte demişiz ki m n'den küçük ve eşit olmak üzere demişiz, f işte m m artı bir nokta nokta n diye. Yani bunlarda fonksiyon tanımlı olacak. Diyor ki tanımlı bir fonksiyon hissediliyor. Bu durumda diyor.
+
+39
+00:09:22,480 --> 00:09:29,100
+Bunları tekrar topladığım zaman, f'de işte m yazdım, n artı 1 yazdım. Yani şöyle bir toplam evde edelim.
+
+40
+00:09:29,620 --> 00:09:33,700
+Buna karşıt bir işte m'den n'ye fk şeklinde gösterebiliriz diye.
+
+41
+00:09:35,140 --> 00:09:36,560
+Buraya kadar anladık.
+
+42
+00:09:37,360 --> 00:09:41,860
+Şimdi arkadaşlar bir diğeri karşıt bir birden n'ye lambda. Lambda ne mis sayı.
+
+43
+00:09:42,400 --> 00:09:44,180
+İşte burada lambda'yı dışarı atabiliriz.
+
+44
+00:09:50,899 --> 00:10:15,240
+n'ye, burada ne var? lambda'yı dışarıya at, 1 geliyor arkadaşlar. lambda 1 sabit olmak üzere. Şöyle 1 atarsınız. Şunun yerine arkadaşlar x kare artı 1'den n'ye, 1'i toplandığınız zaman onun yerine n'ye geliyor arkadaşlar. Çünkü 1 artı 1 artı diye gidiyor. Ne oluyor? Ne oluyor? Şu yan. Ondan sonra dikkat edin. Bunları kullanacağınız ifadelerle karşılaşabilirsiniz.
+
+45
+00:10:16,211 --> 00:10:34,631
+Teorem diyor, teorem ne? Eğer pozitif bir tam sayı veriyor. A1, A2, A, N ile B1, B2, B neler? Elemanları real sayılar isek diyor. Real sayılar olan iki küme isek diyor. Bu durumda diyor, kaçtır bizden neye? AK artı BK'nın toplamı.
+
+46
+00:10:35,631 --> 00:10:42,631
+Toplam AK artı toplam BK şeklinde yazılıyor. Yani iki terimin toplamının
+
+47
+00:10:43,124 --> 00:10:55,124
+toplam sembolü onları dağıtabilirsin diyor. Ondan sonra kaçtır birden, şu yukarıdaki yazdığımız işte Landa'nın yanına ne gelmiş? AK gelmiş. AK...
+
+48
+00:10:55,823 --> 00:11:05,923
+Buradaki sabitçi dışarıya atabilirsin diyor. Ondan sonra bir diğeri arkadaşlar şurada. x kare artı 1x1'den m'ye kadar ak artı kare artı 1x1'den m'ye kadar diyor.
+
+49
+00:11:06,443 --> 00:11:15,943
+Yani o zaman ne oluyor? Arada herhangi bir şey yok. Zaten bunu yazdığı zaman m geliyor. Ondan sonra m artı 1 geliyor. Yine ak devam ediyor. Onu spek toplamda toplayabilirsin diyor.
+
+50
+00:11:16,432 --> 00:11:24,632
+özellik olarak. Bu özellikler var size. Bir diğeri arkadaşlar, bunlar sizin malzemeniz. Eğer diyor ne herhangi bir pozitif santay ise,
+
+51
+00:11:25,092 --> 00:11:32,471
+h'tır birden neye k'yı topladığın zaman bu ne çarpı ne artı bir verici. Bunları biliyorsunuzdur herhalde. Bilmiyorsanız da hatırlarsınız.
+
+52
+00:11:32,471 --> 00:11:34,632
+h'tır birden neye ne kare.
+
+53
+00:11:35,059 --> 00:11:38,059
+k kareyi topladığın zaman ise
+
+54
+00:11:38,059 --> 00:11:41,059
+n çarpı n artı 1 çarpı 2 n artı 1 bölü 6
+
+55
+00:11:41,059 --> 00:11:44,059
+k k k topladığın zaman karşı k birden n'ye
+
+56
+00:11:44,059 --> 00:11:50,059
+n kare çarpı n artı 1'in karesi bölü 4 şeklindedir. Bu da sizin için önemli.
+
+57
+00:11:50,059 --> 00:11:54,059
+Ondan sonra gelelim uykulamaya başlıyoruz.
+
+58
+00:11:54,059 --> 00:11:56,683
+karşı k birden n'ye işte 3 k kare
+
+59
+00:11:56,692 --> 00:12:20,271
+x k artı 2 toplamını ne cinsinden ifade edin diyor. Arkadaşlar, ne yapıyoruz? Burada, o zaman şunu ne gördük? Bak, dağılma özelliği gördük, gördün mü? Dağılma özelliği. Aynı, dağıtabiliyorsun. Birincinin toplamı artı 2 toplamı diye yazabiliyorsun. O zaman ne yapıyorsun? Bu üç taneymiş. Farklı olsa lütfen fark etmez. O zaman ne yapıyoruz? Bunu dağıtıyoruz arkadaşlar. 3'ü sabit dışarıya attı. K'a bizden neye kakarı geçelim.
+
+60
+00:12:22,152 --> 00:12:23,711
+Bir dakika, burada.
+
+61
+00:12:25,395 --> 00:12:41,215
+yalnız 5k yazmışız. Şurada arkadaşlar bir şey gözümüzden kaçmış. Şurası yok burada o zaman. Şunu yazarsak 5k yazmışız. Şurası yok artık. Değil mi? Gözden kaçmış çünkü o. 3k kare demişiz. Şurası yok.
+
+62
+00:12:41,215 --> 00:12:48,635
+Hadi hadi işleyelim. Şurası. Ne olur? 3k kare gelir. Eksi 5k. Şunu almışız.
+
+63
+00:12:49,011 --> 00:13:00,151
+artı 2 toplam. Tamam, şurası yok arkadaşlar. Ona dikkat edin. Burası yok. O zaman ne geliyor? Kakarenin yerine ne yazıyoruz? Top 3, evet.
+
+64
+00:13:00,731 --> 00:13:11,912
+n çarpı n artı 1 artı 2 artı 1 bölü 6 yazdık. Eksi dedik 5. Şunun yerine n çarpı n artı 1 bölü 2 yazdık. Artı 2n dedik ve buradan işte düzenlediğimiz arkadaşlar,
+
+65
+00:13:12,432 --> 00:13:15,311
+gerekli düzenleme yaparsanız şu geliyor. Ne küp eksi ne karek.
+
+66
+00:13:16,820 --> 00:13:19,259
+Bunun ne cizlinden ifadesi buymuş.
+
+67
+00:13:19,940 --> 00:13:21,420
+Şurası gözümüzden kaçmış.
+
+68
+00:13:21,940 --> 00:13:24,360
+Arkadaşlar, şimdi fark ettim.
+
+69
+00:13:24,700 --> 00:13:25,860
+Bak kontrol edemedim.
+
+70
+00:13:27,060 --> 00:13:27,860
+Vaktim olmadı.
+
+71
+00:13:29,360 --> 00:13:31,100
+Ondan sonra devam edelim.
+
+72
+00:13:31,200 --> 00:13:33,820
+Teorem diyor, işte z farklı bir olmak üzere.
+
+73
+00:13:34,100 --> 00:13:36,660
+Karşı 1 sıfırdan n-1'e kadar.
+
+74
+00:13:37,779 --> 00:13:50,460
+R üzeri k eşittir. 1 artı R artı k'ya değer verdim. 0, 1 diye verdim. En son ki serim R üzeri, şurası da bir artı var burada. R üzeri ne eksidir geliyor arkadaşlar.
+
+75
+00:13:51,279 --> 00:13:58,180
+Dolayısıyla bunu topladığın zaman 1 eksi R üzeri ne bölü? 1 eksi R şeklinde yazılabilir arkadaşlar.
+
+76
+00:13:59,819 --> 00:14:04,220
+Ondan sonra buradan aslında niye gideceğiz? Bu halde de sizin için önemli.
+
+77
+00:14:04,851 --> 00:14:14,711
+Bu vize nereye götürüyor arkadaşlar? Geometrik seriyi götüreceğiz. Buradan hemen isteyeceğiz, direğe birden küçükse seriyi atırsak ve bir bölü birektirebileceğiz.
+
+78
+00:14:14,812 --> 00:14:19,872
+Şurada A varsa, A çarptı R üzeri K ise A bölü birektireceği yazacağız biraz sonra.
+
+79
+00:14:20,831 --> 00:14:24,031
+Şimdi gelelim. Şurayı da anladınız, burada arttılar.
+
+80
+00:14:24,572 --> 00:14:31,172
+Teleskobik toplam dediğimiz. Teleskobik toplam da işte nedir arkadaşlar? Şudur. Onu da kullanacağız biraz sonra.
+
+81
+00:14:31,860 --> 00:14:57,860
+kare artı 1x1'den m'ye herhangi bir toplam yani şu. Eğer toplam kare artı 1x1'den m'ye kadar ak verildi ise ak diyelim. ak'yı sen ak'yı fark şeklinde yazabiliyorsan arkadaşlar ak yerine bkx'i bkx'i bir şeklinde yazabiliyorsan
+
+82
+00:14:58,484 --> 00:15:03,464
+Bunu yaz, kare artı 1x, m7x, bk1x, bk1x, bk1x, bk1x şeklinde. Yani bir toplam.
+
+83
+00:15:04,644 --> 00:15:06,903
+Parkların toplamı şeklinde yazılıyorsa.
+
+84
+00:15:07,508 --> 00:15:27,427
+İşte buna bir terörist toplamıyoruz. Burada o zaman ne yapıyoruz arkadaşlar? Bunu açarsın. K-1-1 denliğe kadar açtın. Zaman ne gelir arkadaşlar? Buradan birinci yazdı. Ne geldi? B1-B0 geldi. İkinci yazdım. B2-B1 geldi. Onlar gidiyor arkadaşlar. Burada sadece şu ikisi kalıyor. BN-B0 kalıyor.
+
+85
+00:15:28,692 --> 00:15:52,851
+Tamam mı? O zaman neymiş? İşte bir toplam, farkların toplamı şeklinde yazılabiliyorsa, onlardan gidenleri gönderiyorsa, kalan, bazen iki, bazen üç terim de kalabilir. İşte o zaman buradan, biraz sonra, işte Riemann toplamında orada onu kullanarak, bir toplamın limiti olarak integralini ifade edeceğiz. Orada bunlar size malzemeniz olacak. Şimdi.
+
+86
+00:15:53,491 --> 00:15:55,052
+bir alan problemi diyor.
+
+87
+00:15:55,052 --> 00:15:58,231
+İşte amacımız da bizim AB neymiş?
+
+88
+00:15:58,731 --> 00:16:00,812
+x pozitif bir fonksiyon bu da.
+
+89
+00:16:01,491 --> 00:16:03,351
+Ondan sonra aralığımız A ile B.
+
+90
+00:16:03,951 --> 00:16:05,351
+AB, AB kapalı aralığı.
+
+91
+00:16:06,131 --> 00:16:09,931
+Şimdi, açıksa falan onun integralleri farklı olacak arkadaşlar.
+
+92
+00:16:10,531 --> 00:16:13,691
+Fonksiyonumuz AB kapalı aralığında tabii ki burada sürekli arkadaşlar.
+
+93
+00:16:14,091 --> 00:16:14,871
+Tanımlığı sürekli.
+
+94
+00:16:15,691 --> 00:16:20,351
+Süreksizse onun adına biz bu dönemin en son başlığı intofri integral diyeceğiz.
+
+95
+00:16:20,471 --> 00:16:26,071
+Ya da aralık mesela uç noktalarda tanımsız olabilecek aralığın içinde onun en son ifademiz.
+
+96
+00:16:26,151 --> 00:16:30,871
+Şu anki bizim ifadelerimizde fonksiyon AB kapalı aralığında tanımlı sürekli.
+
+97
+00:16:31,283 --> 00:16:50,683
+x kare artı 2x fonksiyon, o zaman şu bölgenin alanını yapmak istiyoruz. Alan problemi diyoruz. Yani benim d bölgesi deyince ne diyeceğim ben? D bölgesi deyince işte x teşittir a, x teşittir b doğruları, ondan sonra x tekseni var. Bakın x tekseni.
+
+98
+00:16:54,419 --> 00:16:56,419
+Evet.
+
+99
+00:16:56,419 --> 00:16:58,419
+Şimdi kalmak istiyelim.
+
+100
+00:16:58,419 --> 00:16:59,419
+Evet.
+
+101
+00:47:54,996 --> 00:47:57,115
+Arkadaşlar, sesim geliyor mu?
+
+102
+00:48:03,668 --> 00:48:15,608
+Bir problem oldu bilgisayarda. Dolayısıyla yeni bağlandım arkadaşlar. Bağlanabildim daha doğrusu. Tıkra bakmayın. Tamam mı? Şimdi kaldığımız yerden devam edelim. Bugün o zaman 11'e kadar.
+
+103
+00:48:21,012 --> 00:48:24,851
+Yani bakmayın böyle bir şey oldu.
+
+104
+00:48:25,372 --> 00:48:32,912
+Bir alan probleminde kalmıştı arkadaşlar.
+
+105
+00:48:32,912 --> 00:48:35,932
+Şu bölge, bu bölge ne?
+
+106
+00:48:36,052 --> 00:48:40,912
+Üstten P'yi, alttan y'çı sıfır doğrusu diyebilir, iç tekseni diyebilir.
+
+107
+00:48:41,351 --> 00:48:44,872
+Yanlardan da iç teşitleri, alın iç teşitleri, B doğrusu ile sınırlı bölge.
+
+108
+00:48:45,292 --> 00:48:46,452
+İşte bu bölgeyi biz.
+
+109
+00:48:46,688 --> 00:48:50,688
+Ne yapıyoruz? Ne tane parçaya ayırıyoruz?
+
+110
+00:48:50,688 --> 00:48:55,688
+Yani ne yapıyoruz? İşte a eşitlik sıfırdan başlıyoruz bakışıza.
+
+111
+00:48:55,688 --> 00:49:01,688
+A eşitlik sıfır, küçük x'e, küçük y, x'ine eşitir, x'ine eşitir, b olacak şekilde.
+
+112
+00:49:01,688 --> 00:49:05,688
+Yani şuraya, burası a, şurası da b arkadaşlar.
+
+113
+00:49:05,688 --> 00:49:09,688
+Şöyle parçalıyoruz. Bu parçalamadan sonra arkadaşlar,
+
+114
+00:49:09,780 --> 00:49:16,720
+ne yapıyoruz? AV aralığını parçaladık. Bunun için de bir parçanın üzerinde duralım. Oradan genelleme yapalım arkadaşlar.
+
+115
+00:49:17,536 --> 00:49:31,036
+Bu parçada x kare artı 1x kare parçasını alalım arkadaşlar. Yani o parçayı aldığımızda nerede? x kare artı 1x kare parçasını aldık. Aralığın içinde sadece bir parçanın üzerinde işlem yapacağız.
+
+116
+00:49:41,327 --> 00:49:52,627
+Ne oluyor o zaman arkadaşlar? Burada fonksiyon bir maksimum, bir minimum değer alıyor arkadaşlar. Bu fonksiyon burada. Bir maksimum, bir de minimum değer alıyor diye söylediniz.
+
+117
+00:49:52,627 --> 00:50:06,027
+İşte burada bir minimumunu şöyle almışız arkadaşlar. Şurası iftar ettiniz. Bakın şurası. Şöyle iftar ettiniz. Tam karaladığım için bir şey izin olmadı.
+
+118
+00:50:06,431 --> 00:50:14,711
+Şurası x kare artı 1, şurası da x kare. Dolayısıyla burada fonksiyon ne yapıyor? 1 minimum, 1 de maksimum değer alıyor.
+
+119
+00:50:14,711 --> 00:50:24,112
+x kare artı 1 de minimum, ona fifik mk diyoruz. x kare artı 2 ise maksimum.
+
+120
+00:50:24,112 --> 00:50:31,311
+Dolayısıyla fonksiyon 1 maksimum 1 minimum alıyor. Dolayısıyla ne oluyor burada? Biz şunu biliyoruz arkadaşlar.
+
+121
+00:50:31,476 --> 00:50:38,996
+dikdörtgenin alanını biliyoruz. Havana ne bunun? Havana işte delta x kare dediğiniz. Ona delta x kare diye.
+
+122
+00:50:38,996 --> 00:50:41,316
+Nerede yazıyorsunuz? Delta x kare diyor bana.
+
+123
+00:50:41,316 --> 00:50:50,356
+Bana da demek orada yazıyor. Şu aşağıda yazınca. x kare artı 2x kare artı 2 arkadaşlar. Havana bu x kare artı 2x kare artı 2.
+
+124
+00:50:50,356 --> 00:50:54,036
+Yüksekliği ne arkadaşlar? Yüksekliği de minimum.
+
+125
+00:50:54,228 --> 00:51:20,088
+Minimum olan ne? Tavan çarpı yüksekliği. Şu bir dörtgenin alanını veriyor. Yani neresini vermiş oluyor bana? Şu alanı veriyor, bakın. Şu alanı veriyor. Tamam mı? Tavan çarpı yüksekliğini çarptığımız zaman şu bölgenin alanı veriyor. Benzer şekilde başka bir renge geçeyim. Kırmızıya geçeyim mesela. Şu mora geçeyim. Tamam. Morda da şu. O zaman ne oluyor arkadaşlar? Bakın şurada.
+
+126
+00:51:21,844 --> 00:51:43,604
+Yüksek kısmını aldım. Ne oldu arkadaşlar? Bakın burada eksik. Şurası aldığım dikdörtgenli alanında dahil değil. Ondan sonra burası da fazlalık arkadaşlar. Tamam mı? Birisi büyük, birisi eksik, birisi fazla. Ondan sonra şimdi arkadaşlar öyle ki burada şöyle diyebiliriz.
+
+127
+00:51:44,755 --> 00:51:55,255
+Şu bölgeye küçük RK demişiz, buna da büyüğe de büyük RK demişiz arkadaşlar. Şu parçaya da şu alana da omega K demişiz. Şu bölgeye de omega K demişiz.
+
+128
+00:51:55,635 --> 00:52:09,456
+Gerçekten küçük RK'ndan oluşan o bölgenin alanı omega K'nın alanından küçük meşşif. O da büyük RK'nın alanından küçük arkadaşlar. Şuranın alanından küçük onu görüyoruz.
+
+129
+00:52:09,811 --> 00:52:19,811
+Şimdi arkadaşlar, burada ne olur? İşte, fonksiyon tarihse bunu hep de ışık çıkartıyoruz. Burada, tarih olma zorunda ışıklıklar, öyle bir şey yok.
+
+130
+00:52:19,811 --> 00:52:28,811
+x kare artı 2x, şimdi burada ne dedik? Şu alanları söyledik. Şimdi, taban çarpı yükseklik, yazdık bakın. Minimum değer çarpı.
+
+131
+00:52:29,364 --> 00:52:54,264
+aralığın uzunluğu. Diğeri a, o, v, g, k kaldı. Diğeri de maksimum değer çarpı aralığın uzunluğu. Yani onu da şöyle dedik, bakın, delt x k'yı yazdık. x k'i x'i, a'i x'i pozitif olmak üzere ne geliyor arkadaşlar? m, k çarpı delt x k burası da. Diğeri de büyük m, k çarpı delt x k. Arada alanı ne geliyor? m, g, k'nın alanı kalıyor arkadaşlar.
+
+132
+00:52:54,579 --> 00:53:09,579
+Şimdi bir bu ne yaptık? Sadece bir parça için yaptık arkadaşlar. Omega K bölgesinin alanı için yaptık. Onun işte ondan büyük ve küçük diye o bölge üzerinde işlem yaptık. Bunun gibi kaç tane var? Ne tane bölge var arkadaşlar?
+
+133
+00:53:22,579 --> 00:53:48,899
+bölgesinin alanı görür. Dolayısıyla arkadaşlar, benzer işlem, benzer işlem, diğerleri içinde var. Yani o zaman ne olur? Her bir için aynı şeyi yapıp bunları taraf tarafa topladığın zaman işte şu olur arkadaşlar. Her bir bölgenin minimumu çarpı celte içi, minimumu çarpı celte içi diye yazdım. Ne kaldı? Ne eten. Benzer şekilde şunun toplamına yazdık. A, ÖMEG, ÖMEG'nin ne olduğunu yazdık. Şurayı yazdık.
+
+134
+00:53:50,416 --> 00:54:05,556
+o da bu. Ondan sonra diğer taraftan da maksimum olanları yazdık. Dolayısıyla arkadaşlar, burada şunu söylüyorum. Burada ne yapabiliriz? Karşı türü birden neye toplam alabiliriz? Karşı türü birden neye toplam aldığımızda arkadaşlar şöyle.
+
+135
+00:54:06,195 --> 00:54:32,795
+Bunu yapabiliriz. Bunu da benzer şekilde karşı bir denliğe maksimum olan kısımların olan alanları çok da ediyoruz. O zaman ne oluyor bizim için? Omega bölgesinin alanı işte şu iki alan arasında kalıyor arkadaşlar. Dolayısıyla burada işte şuna diyeceğiz ki biraz sonra üst toplam diyeceğiz. Üst toplam LPP, UPP. UPP diyeceğiz arkadaşlar. UPP diyeceğiz buna.
+
+136
+00:54:33,264 --> 00:54:45,744
+Şu kısma, şuna da LPP alt toplam diyeceğiz. LPP diye şöyle yazacağız. Biraz sonra göreceksiniz yazısı. Ben biraz kötü yazıyorum burada ama şöyle bir şey oldu. Biraz sonra göreceksiniz.
+
+137
+00:54:46,404 --> 00:54:59,824
+İşte şu iki alanların arasında kalan alan, normal alan bu. Burada arkadaşlar ne kadar çok parçalarsak A omega'ya o kadar yaklaşır zaten. Anlaşılmayan bir şey var mı?
+
+138
+00:55:01,652 --> 00:55:03,652
+Buraya kadar anlamadığınız bir şey var mı?
+
+139
+00:55:08,403 --> 00:55:35,943
+x kare artı 2x, f'
+
+140
+00:55:28,596 --> 00:55:38,496
+Böldük şöyle, bakın biz böldük. İşte buna bir ad kapalı aralığının parçalanışı diyoruz arkadaşlar ve işte P diye, bakın P dediğimiz kısım var.
+
+141
+00:55:38,615 --> 00:55:53,655
+P parçalanışı, bakın x0, x1 nokta nokta, xn şeklinde parçaladık. İşte o P parçalanışı arkadaşlar. Örneğin, işte demişiz ki burada 0,1 aralığını 0,1 bölü 2,1 diye parçalayabiliriz.
+
+142
+00:55:53,655 --> 00:55:56,596
+0,1 bölü 4,1 bölü 2,3 bölü 1 diye parçalayabiliriz.
+
+143
+00:55:56,596 --> 00:56:02,336
+şöyle parçalayabilirdim ki, bunların her biri parçalanış arkadaşlar. 0 bilim parçalanışı.
+
+144
+00:56:02,695 --> 00:56:06,775
+keyfi olarak parçalayabilirsiniz. Bir daha bize parçalanış verilebilir.
+
+145
+00:56:08,340 --> 00:56:14,440
+O zaman arkadaşlar, t işte, 3x, 3x'in parçalı, AB aralıkların parçalanışı.
+
+146
+00:56:14,780 --> 00:56:18,960
+Onlar tek tek, şöyle üst üste gelmeyecek şekilde aralıklar var arkadaşlar.
+
+147
+00:56:19,640 --> 00:56:21,880
+Orada ne tane parçaya ayırıyor.
+
+148
+00:56:22,000 --> 00:56:26,220
+Yani hani omega 1, omega 2 diye yazdık, omega ne diye, ne tane parça almıştır.
+
+149
+00:56:26,356 --> 00:56:30,536
+Şimdi arkadaşlar, işte onun adı alt ve üst toplam dediğimiz, biraz önceden yazılmıştım.
+
+150
+00:56:31,076 --> 00:56:33,856
+Diyor ki, f, ab, kapalı aralığa sürekli bir fonksiyon olsun.
+
+151
+00:56:33,856 --> 00:56:44,456
+Bu halde, f, her bir x k, x'i bir, bir x k aralığında, bir maksimum ve bir minimum değeri var.
+
+152
+00:56:44,615 --> 00:56:46,796
+Bir maksimum ve bir minimum değeri var.
+
+153
+00:56:46,996 --> 00:56:48,736
+Ve bu durumda diyor, LPP.
+
+154
+00:56:49,235 --> 00:57:07,255
+Yani alt toplam. h1,1'den L'ye mk minimum değerler çarpı delta xk'dır. Ve ufp de diyor, üst toplam bu. h1,1'den L'ye mk çarpı delta xk şeklinde sıra sıra bunlar adıyor. f'nin p alt ve p üç toplamları demir diyor.
+
+155
+00:57:07,255 --> 00:57:16,135
+İşte yastığı üst toplamın sonu bu. Şimdi arkadaşlar bunu bileceğiz. Bir yere hemen basit bir örnek üzerinde durursak arkadaşlar, f'yi seçittiriz.
+
+156
+00:57:16,563 --> 00:57:21,563
+x kare artı 3x aralığının bölüntüsünü t parçalanmışım şöyle vermişler.
+
+157
+00:57:21,563 --> 00:57:27,563
+Şimdi arkadaşlar, o zaman x kare artı 3x isterseniz şöyle kenarda, şöyle sivriyelim.
+
+158
+00:57:27,563 --> 00:57:34,563
+Şöyle yapalım, x kare artı 3x diye aldığım zaman ne geliyor? Bunu da maviye geçeyim.
+
+159
+00:57:34,563 --> 00:57:42,563
+x kare artı 3x aldım. Aralık ne? 0, 1. 1 şurası olsun.
+
+160
+00:57:44,436 --> 00:57:53,436
+1 bölü 2 burası olsun. Burası 1 bölü 2. 1 burası. Ne var? 1 bölü 4 var. 1 bölü 4 var.
+
+161
+00:57:54,436 --> 00:57:57,436
+İşte arkadaşlar, ben buradan size hemen göstereyim.
+
+162
+00:57:58,436 --> 00:58:05,436
+1 bölü 4'ü şöyle. Şimdi parçaladık. Soruyu parçaladık. Arkadaşlar, ne var? Şu var.
+
+163
+00:58:06,003 --> 00:58:16,003
+Her bir parçada, x0x2, x1x2, x2x3 gibi parçalar ayırabilirsiniz.
+
+164
+00:58:16,003 --> 00:58:21,003
+Ayırdık, işte şöyle, aynen ayırmışız. Gördünüz mü şurada?
+
+165
+00:58:22,132 --> 00:58:48,632
+Aynı, şöyle dedim. Bu parçalanmayı burada parçaladık. Parçaladıktan sonra, arkadaşlar, her birinin uzunluğu. Örneğin, şuranın uzunluğu. Ne diyeceğiz? 1 bölü 4 eksi 0. Buranın uzunluğu 1 bölü 2 eksi 1 bölü 4. Buranın uzunluğu ne? 1 eksi 1 bölü 2. Bakın, şurada yazmışız. zelte x'i, zelte x'i, zelte x'i diye uzunlukları yazdık. Her birinde ne var? Fonksiyon bir minimum, bir maksimum değer alıyor arkadaşlar. Her bir parçada. Şöyle yapalım.
+
+166
+00:58:49,396 --> 00:59:10,256
+bunun üzerinde. Örneğin, ne yapalım? Minimumlarını düşünürsek, şu parçada minimum ne? Minimumu şöyle alıyoruz. Bu parçanın minimumu ne? f'nin sıfırda. Şu parçanın minimumu ne? Burada. Fonsiyon minimum değeri burada. Şu parçada minimum ne? Burası. Gördünüz mü? Bu minimum mu? Maviler minimum.
+
+167
+00:59:10,675 --> 00:59:22,355
+Şimdi bakın, f'nin sıfırdasın, m1, f'nin sıfırdaki değeri eşit sıfır. m2, f'nin 1 bölü 4'teki değeri eşittir 1 bölü 4. m3, f'nin 1 bölü 2'deki değeri eşit 1 bölü 2 olarak çıktı. Bakın bunlar.
+
+168
+00:59:22,804 --> 00:59:32,324
+Dolayısıyla LFP dediğim zaman arkadaşlar minimum çarkı uzunluklar diye yazıyorum ve işte karşı bir birden 3'e kadar mk derte 2x diye yazdım.
+
+169
+00:59:32,324 --> 00:59:39,203
+Ve bunları sırasıyla işte m1 derte 2x, m2 derte 2x, m3 derte 2x diye yazdım.
+
+170
+00:59:55,476 --> 01:00:17,556
+Şimdi arkadaşlar burada, işte minimumlarını yazdık bu parçada. Bu örneği anladıktan sonra diğerleri hepsi bunun gibi bir şey yazdık. Tamam mı? Şimdi maksimumlarını her bir parça için onu da kırmızı yapalım arkadaşlar. Ne yapalım? Buradan mor mu? Bunun üzerine ne yapalım? Yeşil yapalım.
+
+171
+01:00:21,460 --> 01:00:41,460
+Bakın, bu parçada maksimum ne? Bakın, maksimum şu parçanın, birinci parçanın maksimum değeri burada. İkinci parçanın maksimum değeri burada. Şöyle büyük yuvarlağın içine alıyorum çünkü aynı noktayı koyamam. Burada da bu artı bakıyor.
+
+172
+01:00:41,460 --> 01:00:48,460
+Gördünüz mü? Yerde üstelik. Minimumlar maviler, maksimumlar yeşil.
+
+173
+01:00:48,659 --> 01:01:08,939
+olduğunu gördünüz. İşte o zaman arkadaşlar yine UFP bakın. UFP. K1, 1'den 3'e kadar mk çarpı delta 3. Yani m1 çarpı delta 2, m2 çarpı delta 2, m3 çarpı delta 3 diye yazıyorsun ve onları sırasıyla yerine yazıyorsun arkadaşlar. İşte burada bakın minimumlarını söyledik. Maksimumları nedir arkadaşlar?
+
+174
+01:01:08,939 --> 01:01:15,339
+f'nin 1 bölü 4'deki değeri, f'nin 1 bölü 2'deki değeri, f'nin 1'deki değeri diyor. Bakın maksimumları aynı.
+
+175
+01:01:16,659 --> 01:01:41,000
+minimumları yazdığı için. Ve topluyoruz. Bu şekilde kare artı topluyoruz. Alt 3 toplamı şöyle bulduk arkadaşlar. Birisi 5 bölü 16, diğeri 11 bölü 16. Gerçekten arkadaşlar, bunu, bunu biz neye bölseydik, arkadaşlar tam bunu çıkartacaktık biliyor musunuz? Biraz bunu, biz kaça böldük? Burada işte 3 bölgeye böldük.
+
+176
+01:01:41,235 --> 01:01:49,475
+3 bölgeye bölünür. Biz bunu ne parçaya bölseydik arkadaşlar, buradan tam alanını bunun net bulacaktır arkadaşlar.
+
+177
+01:01:49,655 --> 01:01:57,036
+İşte burada nedir arkadaşlar? LPP, şurada ne yazayım? Şurayı alta yazayım. LPP diyeyim. LPP'ye.
+
+178
+01:01:59,416 --> 01:02:06,796
+Küçük eşit. O alan. Yani ona biz biraz sonra şey diyeceğiz. I diyeceğiz.
+
+179
+01:02:08,340 --> 01:02:10,579
+o da küse kesip ufp.
+
+180
+01:02:12,480 --> 01:02:16,800
+İşte burada ne kadar çok parçalarsak bu ıya o kadar çok yapılsın.
+
+181
+01:02:16,940 --> 01:02:18,420
+ı dediğimizde biliyor musunuz?
+
+182
+01:02:18,920 --> 01:02:20,659
+ıya biz biraz sonra adını koyacağız.
+
+183
+01:02:21,200 --> 01:02:23,260
+ı dediğimiz a'dan b'ye.
+
+184
+01:02:23,360 --> 01:02:24,680
+Yani a'mız ne dedi? 0.
+
+185
+01:02:25,140 --> 01:02:26,119
+b'miz de 1.
+
+186
+01:02:26,659 --> 01:02:27,300
+x de x.
+
+187
+01:02:28,180 --> 01:02:31,060
+Arkadaşlar, dolayısıyla ne oluyor arkadaşlar burada?
+
+188
+01:02:31,659 --> 01:02:32,240
+x de x.
+
+189
+01:02:32,780 --> 01:02:33,740
+İşte şu.
+
+190
+01:02:34,100 --> 01:02:35,200
+Buradan ne gelir arkadaşlar?
+
+191
+01:02:35,860 --> 01:03:03,119
+Buradan, neyin türevi x? Arkadaşlar, hani biz de geçen ders ters türevi diye bir vermiştik. x kare bölü 2'nin türevi değil mi arkadaşlar? x kare bölü 2'nin türevi diye koymama gereklik belirleriyle ilgili. Buradan ne geliyor? 0,1. Gördünüz mü? Neyi bulduk arkadaşlar? 1 bölü 2'ydi. İşte bu 1 bölü 2. Gerçekten şu ikisinin arasında bir şey. Biraz sonra bunun adını koyacağız. Buna belirli integral.
+
+192
+01:03:03,668 --> 01:03:29,688
+Arkadaşlar, benzer şekilde diğer fx eşitir x kareliğin 0,3 aralığında bir p bölüntüsü şöyle olsun diyor. Ve onu yazıyoruz arkadaşlar. Burada bu örnekte anlamadığımız bir şey var mı fx eşitir x'te? Anlaşılmayan bir şey var mı? Bunu anladıysanız zaten bunun genellemesiyle yaparsınız. Tamam güzel. Aynen, iyi.
+
+193
+01:03:30,195 --> 01:03:40,576
+Güzel gidiyor. Şimdi bunu genellizeceğiz arkadaşlar. Burada parçalanıştan soru kesin gelir. Buralardan benzer soru gelecektir. Genellemesi falan filan gelir yani.
+
+194
+01:03:41,416 --> 01:03:50,576
+x seçisi x kare fonksiyonu var mı? Parçalanışı şuydu. İki tane de böyle yazalım. Ondan sonra genellemeye geçelim. Bunun üzerinde durmam.
+
+195
+01:03:52,148 --> 01:03:58,807
+Şimdi arkadaşlar, benzer şekilde bakın, ne yapacaksın? Aralık 0'ı 3, zaten parçalanışını vermiş.
+
+196
+01:03:58,807 --> 01:04:03,148
+İşte bu P, şuradaki LPP dediğimiz parçalanışı.
+
+197
+01:04:03,148 --> 01:04:13,148
+Tamam mı? Ondan sonra ne yapıyoruz? 0, 1 bölü 2, 1 bölü 2, 1, 3 bölü 2, 3 bölü 2 diye böyle tek tek parçalıyoruz.
+
+198
+01:04:13,148 --> 01:04:19,980
+Parçaladık mı? Parçaladık. Ve her bir parçada fonksiyon ne alıyor? Bir maksimum, bir minimum alıyor arkadaşlar.
+
+199
+01:04:20,244 --> 01:04:46,864
+yine bir maksimum, bir minimum değer alıyorsun. Yani, işte sen x'leşiklik kareyi şöyle düşün, burada aldığın zaman, şu kısmı beni ilgilendiriyor. Neden? Aralığım 0, 3 olduysa diğer tarafta 3im yok. Şöyle düşün. Mesela şurası 3 olsun. Burası, şöyle bir ilan edelim. Şurası 3 olsun. İşte parçalıyorsun burada. Mesela işte 0, 1 bölü 2.
+
+200
+01:04:47,507 --> 01:04:51,827
+3x1, 3x2 demiş.
+
+201
+01:04:51,827 --> 01:04:55,507
+Yani buraya biraz sürücüsü, böyle böyle parçalıyorlar.
+
+202
+01:04:55,507 --> 01:04:58,507
+Tamam mı? Şöyle buraya kadar parçalıyor.
+
+203
+01:04:58,507 --> 01:05:02,507
+İşte her bir parçada 1 minimum 1 maksimum değer alıyor.
+
+204
+01:05:02,507 --> 01:05:05,507
+1 minimum 1 maksimum değer alıyor.
+
+205
+01:05:05,507 --> 01:05:09,507
+Yani nokta nokta yapıyorum orayı tam sığımıza kurdur.
+
+206
+01:05:09,632 --> 01:05:15,391
+Aşağıya alabilirim. Aşağıya alırsam olur. Gerek var mı? Yazayım mı?
+
+207
+01:05:18,192 --> 01:05:24,412
+Arkadaşlar, burada fonksiyonun saygı teşitliği dolayısıyla nedir arkadaşlar?
+
+208
+01:05:25,672 --> 01:05:28,632
+Bir maksimum, bir minimumde yer alıyor. Bir maksimum, bir minimumde yer alıyor.
+
+209
+01:05:29,051 --> 01:05:36,132
+Burada arkadaşlar, şey yazmadınız. Şöyle olacaksam, saygı teşitliği, işte şöyle bir şey diyeceğiz.
+
+210
+01:05:36,132 --> 01:05:37,132
+Burada.
+
+211
+01:05:38,164 --> 01:05:40,484
+Ağrı, şöyle ayırdı.
+
+212
+01:05:40,964 --> 01:05:45,404
+Şurası mesela yarısı 3x2 olsun.
+
+213
+01:05:45,923 --> 01:05:47,284
+Şurası 3x2.
+
+214
+01:05:51,923 --> 01:05:53,224
+çürük, çürük, çürük.
+
+215
+01:05:56,403 --> 01:06:13,643
+5 bölü sorsu, 3x, ondan sonra 3x, ne geliyor? 1 geliyor, bir de yarım geliyor. Şöyle parçalıyorsunuz arkadaşlar. Her biri de 1 minimum, bir de maksimum değer alıyor arkadaşlar. Şöyle şöyle parçalıyorsunuz.
+
+216
+01:06:13,652 --> 01:06:23,652
+İşte arkadaşlar, buradan nedir? Sırasıyla yazıyorsun, parçalara ayırdın bir kere. Ondan sonra o parçaların her birinin uzunluğunu alıyorsun. Sırasıyla karıştırmadan gidiyorsun.
+
+217
+01:06:24,820 --> 01:06:32,820
+karıştırmadan uzunluklarını alıyorsun ve uzunluklarını alırken arkadaşlar ne yapıyorsunuz? Sırasıyla şey yapıyorsun.
+
+218
+01:06:32,820 --> 01:06:42,820
+İşte 0, 1 bölü 2 diye aldın. Mesela 1 bölü 2 eksiği 0 diye alıyorsun. Ona delta x1 diyorsun. Ondan sonra delta x2'yi 1 eksiği 1 bölü 2 diye yazıyorsun.
+
+219
+01:06:42,820 --> 01:06:46,820
+Ve bu uzunlukları sırasıyla oluşturuyorsun. Ondan sonra...
+
+220
+01:06:48,436 --> 01:07:14,615
+Her birinin uzunluğunu alıyorsun. Ne geliyor? Buradan 1 bölü 2, buradan 1 bölü 2, buradan 1 bölü 2, buradan 1 bölü 2 geliyor değil mi? Buradan ne geliyor? 1 bölü 2 mi geliyor? 1 bölü 2. Hepsi 1 bölü 2 galiba. 1 bölü 2. Hepsi 1 bölü 2. Uzunluklar 1 bölü 2 olduğu için bakın parantez almıştık. Hepsi 1 bölü 2. Farklı da verilebilir, aynı da verilebilir. O duruma bağlı. Şimdi arkadaşlar buradan ne yapıyorum? Buradan şunu yapıyorum.
+
+221
+01:07:15,092 --> 01:07:25,092
+Her bir aralıkta maksimum minimum değerleri. Şimdi şu parçada mesela düşündüğüm zaman arkadaşlar minimumu nedir? f'nin sıfırdaki değeri sıfırdır.
+
+222
+01:07:25,092 --> 01:07:35,092
+m1 diyorum sıfır diyorum. Büyük m1 nedir arkadaşlar? f'nin 1 bölü 2'deki değeri yani 1 bölü 4'tür. m1 bakın 1 bölü 4 büyük miyedir?
+
+223
+01:07:35,092 --> 01:07:41,740
+Küçük m1 ne? Sıfır. Sadece m1'lere baktım.
+
+224
+01:07:41,748 --> 01:08:03,448
+Mesela M3, daha doğrusu kaç partiye bölmüşüz? Buradan 6'ya kadar. 6'da, M6 dediğimizde ne gelir arkadaşlar? Şuraya bakacaktım. Büyük M nedir? F'nin 3'teki değeri. F'nin 3'teki değeri ne? 9. F'nin 3'teki değeri ne? 9 gelecek.
+
+225
+01:08:08,467 --> 01:08:18,768
+büyük mü? 9, fosu şurada. Ondan sonra büyük, küçük mü? İşte 5 bölü 2'deki değeri 25 bölü 4. Gördünüz mü? Şu.
+
+226
+01:08:19,220 --> 01:08:21,220
+Yani birinin iki tane değer içine.
+
+227
+01:08:21,940 --> 01:08:24,220
+Hepsi benzerken de oluşturulabilir.
+
+228
+01:08:24,579 --> 01:08:27,220
+O zaman arkadaşlar, işte LTP dediğimiz,
+
+229
+01:08:27,220 --> 01:08:31,420
+k eşit bir birden altıya kadar küçük mk çarpı delta içindedir.
+
+230
+01:08:31,860 --> 01:08:34,900
+Uzunluklarda eşit olduğu için 1 bölü 2 parantezini almışız.
+
+231
+01:08:35,060 --> 01:08:35,659
+Hepsi eşit.
+
+232
+01:08:36,000 --> 01:08:37,000
+Dolayısıyla ne geliyor?
+
+233
+01:08:37,480 --> 01:08:41,300
+m1, m2, m3, m4, m5, m6 diye hepsini yazıyorsun topluyorsun.
+
+234
+01:08:41,659 --> 01:08:42,060
+Bu çıkıyor.
+
+235
+01:08:42,440 --> 01:08:45,100
+Yerine aynı, benzer şekilde yazıyorsun ve şu çıkıyor.
+
+236
+01:08:45,620 --> 01:08:47,159
+Gerçekten arkadaşlar, burada
+
+237
+01:08:47,220 --> 01:09:14,500
+İşte, burada, işte, 5 bölü, 55 bölü, neymiş? 8'miş. Küçük değiliz. I'ı diyeceğiz. O da küçük. Nedir? 91 bölüm. Biz bunu gerçekten biraz daha göstereceğim. Tam neye partiye bölsek, aynı sıfır. I'ı dediğim ne benim? Burada. I'ı dediğim. Şöyle güzel yazamadım ama neyse. Ne geliyor? 0'dan 2 miydi?
+
+238
+01:09:15,060 --> 01:09:33,659
+0'dan 2'e. Aslında bu bölgenin alanı x kare diye x artı 2'e. İşte ben bunu nereden biliyorum? İntegralini? İntegralini diyeceğim. Ben buna biraz sonra integral bakın. İntegralsiz biz bunu bulduk şimdi. Biraz sonra ne integral diyeceğiz. Nereden diyoruz biz buna? x kare ne? Türev x kare x kütürlüsü.
+
+239
+01:09:36,540 --> 01:09:40,340
+3 e sıfırdan 3'e.
+
+240
+01:09:41,395 --> 01:09:59,335
+diye geliyor. 0'dan 2'ye, x küp bölü 3 geliyor. Buradan 3'ün biri gidiyor, 9. 9 bu ikisinin arasında mı? Değil mi? O eşittir 9 çıkıyor. O da eşittir 9'mış. Arkadaşlar. Yani bunu biz daha biraz sonra daha genelleme yapacağız.
+
+241
+01:10:00,000 --> 01:10:03,779
+eğer a-b aralığı diye düşünürsek arkadaşlar, şöyle diyeceğiz.
+
+242
+01:10:03,899 --> 01:10:09,020
+a-b aralığında düşünürsek, a'dan b'ye işte şunu diyeceğiz arkadaşlar.
+
+243
+01:10:09,579 --> 01:10:12,279
+x kare c işte ne diyeceğiz? Şunu diyeceğiz.
+
+244
+01:10:12,420 --> 01:10:14,520
+Biraz sonra kitabımızda görürsünüz.
+
+245
+01:10:15,399 --> 01:10:16,859
+1 bölüş diyeceğiz.
+
+246
+01:10:18,319 --> 01:10:19,779
+İşte b küpeksi aküptüydü.
+
+247
+01:10:21,779 --> 01:10:22,699
+Aküptüydü.
+
+248
+01:10:24,020 --> 01:10:24,739
+Şöyle.
+
+249
+01:10:25,332 --> 01:10:41,971
+Biraz sonra bunu böyle yazarız. Tamam mı? Biraz sonra böyle geneldeceğiz. Şimdi belirli integral diyoruz. İşte tanımını vermişiz. P fark alınmışlığını zaten verdik arkadaşlar. Belirli integralı tanımını. Bakın işte I dediğimize geliyor. Ben daha bunu yazmadan oldum.
+
+250
+01:10:50,003 --> 01:11:09,484
+Bütün P bölüntüleri, P parçalanışları için LPP küçük eşit I, küçük eşit UTP olacak şekilde bir tek I sayısı varsa, bir tek I sayısı varsa, P'nin AB kapalı aralığında integre edilebilir olduğu söylenir.
+
+251
+01:11:10,836 --> 01:11:20,436
+f fonksiyonunun integre edilebilir olgu söylenir ve bu i sayısına f fonksiyonunu a, b kapalı aralığındaki belirli integralizeniz arkadaşlar.
+
+252
+01:11:21,275 --> 01:11:29,216
+Bu i sayısına f fonksiyonunu a, b kapalı aralığındaki belirli integralizeniz ve i eşittir a'dan b'ye fx, bx olarak yazılır.
+
+253
+01:11:29,355 --> 01:11:30,296
+Al sana i.
+
+254
+01:11:30,896 --> 01:11:33,996
+Şu, gördünüz mü? Bu tanım bizim için i.
+
+255
+01:11:34,579 --> 01:11:39,559
+Şimdi o zaman arkadaşlar burada işte. Buradaki fx tabii integrand diyor.
+
+256
+01:11:39,967 --> 01:12:03,987
+Buradaki f ise integrant olduğunu söyleyeceğiz arkadaşlar. Yani integrali alınan fonksiyon. Bu kapalı aralıkta tanımlı ve sürekli olması gerekiyor arkadaşlar. Tanımsızsa onun adını son konuda söyleyeceğiz demiştik. Burada arkadaşlar başka bir değişkenle de geçebiliriz. a'dan b'ye fx'e'yi, a'dan b'ye pudu olabilir. Bakın, ttdt diye de gelebilir. Bunu kullanacağın özellikle karşılaşabileceksin biraz daha.
+
+257
+01:12:04,595 --> 01:12:06,915
+göreceğiz, sonra da karşılaşabilirsiniz.
+
+258
+01:12:07,395 --> 01:12:10,715
+Beyaz her şey arkadaşlar, f' x'e çiftlik x artı 1'den, işte.
+
+259
+01:12:12,775 --> 01:12:18,555
+Aralığı vermişiz, eksi 1'li 3 aralığında bu fonksiyon integre edilebilir olduğunu gösteririz.
+
+260
+01:12:18,695 --> 01:12:22,615
+İntegre edilebilir olduğunu gösteririz ve diyor, integralini hesaplayın.
+
+261
+01:12:23,315 --> 01:12:27,755
+Arkadaşlar burada, ab kapalı aralığı, ab nedir? Eksi 1'li 3 aralığı.
+
+262
+01:12:28,395 --> 01:12:31,175
+K'ş'tir birden ne yapı, şeyi vermemiş, farklı.
+
+263
+01:12:31,507 --> 01:12:43,507
+Herhangi bir parçalanış vermemiz arkadaşlar. Değil mi? Bak burada ne diyoruz? Herhangi bir p parçalanışı istiyoruz. Bakın. Gördünüz mü? Yani sana özel olarak işi vermiyor.
+
+264
+01:12:44,087 --> 01:12:58,007
+Bir genel yazı demek istedi. Genel. Yani n'ye parçaya bölüyor. 0, 2, 1, 2, 2, x ne diyebilirsin. O aralığın içinde işte arkadaşlar bir parça al. Bir parça. x k, 2, 1, 2, 1, 2, 2, 2, 2 parçası.
+
+265
+01:12:58,448 --> 01:13:10,728
+aldın ve burada fonksiyon nedir? 1 maksimum 1 minimum değer olur. Minimumu nedir? fx'e çiftirik, 2x artı 1 diye düşündüğünde, fx'e çiftirik, 2x artı 1, iki yerine 0 koy 1.
+
+266
+01:13:13,548 --> 01:13:22,588
+Şurası, şurası. Yani şöyle giden bir doğru değil mi? Şurası eksi 1. Ondan sonra ne olsun? Şurası da 3 olsun.
+
+267
+01:13:25,140 --> 01:13:50,180
+biraz düzgün olmadı ama şurası 3x, fonksiyon bu. İşte arkadaşlar, burada fonksiyon ne varmış? N tane parçaya böldüm. Şimdi burası ne? x sıfır diye böldüm. Bunun içinde bir tane parça alıyoruz. Bir tane parça alıyoruz. Bütünümüzü geçelim. İşte şurası olsun mesela. Şurası işte. Ve şöyle bir parça alın.
+
+268
+01:13:52,083 --> 01:14:08,083
+Buna ne dedi? Şu x kare 1, şurası bu. Tamam mı? diye aldım. Buraya yazmayı da sığmaz şimdi. Öyle olduğunu kabul ediyorsunuz. Bunun üzerinde değerler var. Şimdi arkadaşlar, fonksiyon bir minimum, bir maksimum değer alıyor.
+
+269
+01:14:08,083 --> 01:14:13,804
+Nedir? Minimum değeri x kare 1'de alıyor, maksimum değeri x k'de alıyor.
+
+270
+01:14:13,939 --> 01:14:25,759
+Dolayısıyla uzunluk ne? delta x'a. O zaman da nedir arkadaşlar? LFP dediğim toplam minimum değeri çarpı delta x'a. Nerede? k-1-1'den n'ye kadar toplamını alıyorsun.
+
+271
+01:14:26,179 --> 01:14:33,979
+UFP dediğimiz k-1-1'den n'ye kadar maksimumlar çarpı delta x'a diye yazabilirsin. Genelliyorsun bunu. K-2-1'den toplam alıyorsun.
+
+272
+01:14:34,339 --> 01:14:41,000
+Sadece bu parçanın üzerinde yapıp toplam alıyorsun. O zaman genelini LFP, UFP yapmış oluyor. Anladık mı?
+
+273
+01:14:45,300 --> 01:14:47,360
+Bir problem var mı? Anladınız mı arkadaşlar?
+
+274
+01:14:49,880 --> 01:14:52,719
+Sesimiz çıkmıyorsa ben anladığı kabul ediyorum arkadaşlar.
+
+275
+01:14:53,399 --> 01:14:56,319
+Şimdi arkadaşlar o zaman işte nedir?
+
+276
+01:14:56,819 --> 01:14:57,760
+Arkadaşlar şudur.
+
+277
+01:14:58,139 --> 01:15:01,340
+Şimdi minimum maksimumdan küçüktür.
+
+278
+01:15:02,159 --> 01:15:05,399
+Minimumla maksimumu topla ikiye ver. O da onun arasındadır.
+
+279
+01:15:05,399 --> 01:15:06,219
+Değil mi arkadaşlar?
+
+280
+01:15:07,619 --> 01:15:09,159
+Bu minimum değil.
+
+281
+01:15:10,300 --> 01:15:12,479
+Şurada bakın şu büyük mevli.
+
+282
+01:15:13,011 --> 01:15:30,931
+x kare artı 2x, f'
+
+283
+01:15:30,931 --> 01:15:34,764
+x kare artı 1x, f'yle çarp.
+
+284
+01:15:37,971 --> 01:15:40,971
+çarptığımız zaman işte LTP'yi yakaladık.
+
+285
+01:15:41,971 --> 01:15:46,971
+Ondan sonra UFP'yi yakaladık arkadaşlar.
+
+286
+01:15:48,971 --> 01:15:58,971
+Ve orada arkadaşlar şu minimum maksimumdan küçük, arasındaki de bakın ikisini topladık diye.
+
+287
+01:15:59,380 --> 01:16:26,399
+bunu yazdık, bu eşitsizliği yazdık. Tamamını, eşitsizliğin her iki tarafını ne yaptık? Delta x k ile çarptık. O zaman burası ne oldu? L, F, P oldu. Burası U, F, P oldu. Burası da nedir? Bununla delta x k'yi çarptık arkadaşlar. Bakın şöyle bir şey oldu. Şu oldu. İşte bu benim neyim arkadaşlar? I. I dediğim bu. Şimdi I eşittir. Aslında şurası ne? I. I'yi yazdım.
+
+288
+01:16:26,815 --> 01:16:28,815
+Bu neymiş arkadaşlar?
+
+289
+01:16:28,815 --> 01:16:30,815
+Bu eşittir. 1 böl 2.
+
+290
+01:16:30,815 --> 01:16:35,815
+Kaçtır birden neye? x k artı x k eksi 1 artı 2 var.
+
+291
+01:16:35,815 --> 01:16:37,815
+Parantezlere dikkat edin bu ifadelerde.
+
+292
+01:16:37,815 --> 01:16:40,815
+Bunu x k eksi x k eksi 1 ile çarptım.
+
+293
+01:16:40,815 --> 01:16:46,815
+Ne olur arkadaşlar? Şununla, şunu çarptığımda fark olur arkadaşlar. Bakın şuna ulaşıyorum.
+
+294
+01:16:46,815 --> 01:16:51,532
+Sonra ne var? Bir de 2 artı diyorsun, 2 ile onu çarptım. Gördünüz mü?
+
+295
+01:16:51,764 --> 01:17:14,543
+O zaman arkadaşlar, şurada, işte o biraz önceki yazdığım teleskobik toplamda ne olur biliyor musunuz? İşte aradaki değerler gider arkadaşlar. Aradaki değerler gider ve ne olur? İşte şuna yakalarım. İsterseniz yazmamı istiyorsanız yazayım. Biraz açayım mı? Şurasını açayım mı? Açmamı ister misiniz?
+
+296
+01:17:19,380 --> 01:17:20,619
+Burayı açayım mı arkadaşlar?
+
+297
+01:17:25,684 --> 01:17:29,684
+gerek yok dedim tamam. O zaman gerek yok. Tamam.
+
+298
+01:17:29,684 --> 01:17:37,684
+Açıyorsunuz ve kalanlar işte orada x0 kalacak. x0'ın yerine eksi 1 yazıyorsunuz.
+
+299
+01:17:37,684 --> 01:17:46,684
+Demek ki ne kalıyormuş? Buradan sonuca göre kalan şuymuş. Gidenler gidiyormuş. 1 bölük değilmiş. Gidenler gidiyormuş kalanlar.
+
+300
+01:17:46,684 --> 01:17:50,684
+Burada xn'nin karesi kalıyormuş. xn'nin karesi.
+
+301
+01:17:52,595 --> 01:18:06,635
+x kare kalıyormuş, x kare kalıyormuş, ondan sonra artıymış, artıymış, 2x x, x kare kalıyormuş.
+
+302
+01:18:07,188 --> 01:18:27,688
+x ne eşit ki? x sıfırdan bire. Oradaki onların yerine de işte ne kabul ediyorsun sen? Buradan işte x sıfır eşittir, eksi bir kabul ediyorsun. x ne yedi, üç kabul ediyorsun. O zaman işte sekizi buluyorsun. Gördünüz mü? Düzelliyorsun, sekiz buluyorsun. Yani buradaki I benim için sekiz.
+
+303
+01:18:28,083 --> 01:18:36,163
+O da neyi veriyor bana? a'dan b'ye. Yani x'i birden 3x artı 1bx integral'i. Belirli integral 8 olduğunu yakalıyor.
+
+304
+01:18:36,783 --> 01:18:47,064
+Benzer şekilde buradan arkadaşlar fx eşitli alfa x artı beta şeklindeyiz. a'dan b'ye fx integral'i o zaman şöyledir diye genelleme yapabiliriz.
+
+305
+01:18:48,340 --> 01:18:56,739
+zaten ne yazdık? x kare dx'i yazdık genel olarak. Buradan da bunu genelleme yapabilirsiniz.
+
+306
+01:18:56,739 --> 01:19:05,940
+x1'den 2'ye 4xx kare diyor. dx eşitir 9 olduğunu gösterdik diyor. Örnek, x1'den 2'ye. Arkadaşlar, o zaman ne var burada?
+
+307
+01:19:05,940 --> 01:19:10,340
+Benzer şekilde ab kapalı aralığını bölüyorsunuz.
+
+308
+01:19:10,384 --> 01:19:37,484
+bölgünümüzde parçalanış. İşte burası ne oluyor? Benim için şurası sıfıra eşit olacak. Şu da x neye eşit olacak? 2 de x neye eşit olacak? Dolayısıyla arkadaşlar, LPP, ne diyeceğim? Yine x k eksi bir virgül x k parçasını alacağım. Fonsiyon ne diye? Bir maksimum, bir minimum değer alacak arkadaşlar. Burada ne diye düşünüyoruz?
+
+309
+01:19:38,100 --> 01:20:00,180
+Burada ise, işte mk demişiz şu, diğerinde mk demişiz şu demişiz, 4xx kare. Fonksiyon nasıl bir şey? x'ye diye al, şurası mı al. x'ye ne 0, 4x4xx kare. 4, 4'ten aşağıya doğru değil mi arkadaşlar?
+
+310
+01:20:01,716 --> 01:20:08,355
+ne geliyor? 2'ye kadar mı? 2'ye kadar? 2'yi verirsem 0 olur. Yani şöyle işe.
+
+311
+01:20:12,355 --> 01:20:21,516
+Burada işte minimum, maksimum diye yazmışız arkadaşlar. Fosyonu bu tarafta artan, şu tarafta artan, bu tarafta azalan artı.
+
+312
+01:20:24,316 --> 01:20:24,916
+Burada
+
+313
+01:20:25,619 --> 01:20:30,859
+Bakın şurada artan olduğu için, buradan böyle başladığımız için şöyle demişiz.
+
+314
+01:20:35,219 --> 01:20:39,859
+Burası artan, burası artan, burası azalan. Şu parçada aldığımızı kabul etmişiz.
+
+315
+01:20:39,859 --> 01:20:47,219
+Bakın maksimum değer, burada şu kısım artan olarak kısmını aldı sanredenir.
+
+316
+01:20:47,699 --> 01:20:50,100
+Burası büyük meta, şurası küçük meta.
+
+317
+01:20:51,220 --> 01:21:00,700
+Böyle bir yavrucu. Ondan sonra LPP küçük eşit, yani LPP ve UPP'yi oluşturuyoruz arkadaşlar. x k-1, x k'dan küçüktür arkadaşlar.
+
+318
+01:21:03,260 --> 01:21:17,700
+x k-1, x k'dan küçüktür. x k-1'in karesi, x k'dan küçüktür o zaman. Ondan sonra, burada da arkadaşlar bakın 1 bölü 3, yani şu.
+
+319
+01:21:18,771 --> 01:21:19,332
+buradan.
+
+320
+01:21:21,332 --> 01:21:24,152
+ab'den küçük, a kare b kareden küçük.
+
+321
+01:21:24,692 --> 01:21:25,152
+Tamam mı?
+
+322
+01:21:25,652 --> 01:21:33,452
+Ondan sonra, a kare küçük eşit, 1 bölük, a kare artı ab artı b kare.
+
+323
+01:21:33,871 --> 01:21:35,992
+O da küçük eşit, b kare arkadaşlar.
+
+324
+01:21:36,291 --> 01:21:37,211
+Y yazabiliriz.
+
+325
+01:21:37,631 --> 01:21:38,871
+Oradan geliyor bu özellik.
+
+326
+01:21:38,971 --> 01:21:40,051
+Şunu yazabiliyorsunuz.
+
+327
+01:21:40,391 --> 01:21:41,971
+Ve arkadaşlar, buradan ne yapıyoruz?
+
+328
+01:21:41,971 --> 01:21:42,612
+Burada.
+
+329
+01:21:43,380 --> 01:21:50,760
+Şurayı düzenlemişiz, şöyle yazalım demişiz. Biraz daha düzenlemişiz. Park olarak ayarlamasını yapmışız arkadaşlar.
+
+330
+01:21:52,199 --> 01:22:01,920
+Daha doğrusu, şu, bir dakika. Şurayı anladınız değil mi şu satırı? Bu satırı anladınız mı?
+
+331
+01:22:08,307 --> 01:22:13,807
+1 bölüş gelecek çünkü, aynen, 1 bölüş gelecek çünkü tüpüne geçeceğim.
+
+332
+01:22:14,807 --> 01:22:24,307
+Sizin öyle bir kuralınız varsa onu bilmiyorum ben, 1 bölüş kuralı değil, 2'yi bilmiyorum da, integralde buna, mesela 3'e bölersen ancak buna yol kalarsın.
+
+333
+01:22:24,307 --> 01:22:28,307
+Diğerinde, diğerinde 2'ye böldük ötelerin, ikisini topladık 2'ye böldük.
+
+334
+01:22:28,307 --> 01:22:35,307
+Değil mi arkadaşlar? Burada da bu şekilde 3'e bölüyorsun. Sizin ÖSS'e şeyinizde vardır böyle bir şeyler, onları bilmem.
+
+335
+01:22:35,636 --> 01:23:00,656
+Arkadaşlar, burası böyle, tamam mı? Şimdi, eşitsizliğimiz bu. Şimdi benim fonksiyonum nasıl? Benim fonksiyonum 4xx kare bakın. 4xx kare olduğu için arkadaşlar, bunu, bunu, ne yapıyorum? Eksi ile, bakın, eksi ile ne yapıyorum? Çarpıyorum. Eksi ile çarpınca iyi, eşitsizlik ne oluyor?
+
+336
+01:23:01,363 --> 01:23:05,403
+yön değiştiriyor. Şu eşitsizliği önce eksiyle çarpıyorum.
+
+337
+01:23:05,403 --> 01:23:06,323
+Sırayı.
+
+338
+01:23:06,323 --> 01:23:07,463
+Ben eksiyeyim.
+
+339
+01:23:11,091 --> 01:23:12,091
+çürükler bir.
+
+340
+01:23:16,595 --> 01:23:18,015
+Şurayı eksiyle çarpıyorum.
+
+341
+01:23:20,015 --> 01:23:21,695
+Eksiyle çarpıyorum burayı.
+
+342
+01:23:22,115 --> 01:23:23,315
+Şurayı eksi çarp.
+
+343
+01:23:24,475 --> 01:23:25,915
+Sonra da 4 etki.
+
+344
+01:23:26,575 --> 01:23:30,136
+Ve 4 eksi.
+
+345
+01:23:31,876 --> 01:23:32,876
+Gördünüz mü?
+
+346
+01:23:32,876 --> 01:23:34,435
+Niye geçiyorum?
+
+347
+01:23:34,815 --> 01:23:40,975
+Fonksiyonun işte x k'daki değeri fonksiyonun x k'da x k'daki değerine geçiyorum.
+
+348
+01:23:41,095 --> 01:23:41,815
+Gördünüz mü arkadaşlar?
+
+349
+01:23:43,796 --> 01:24:04,275
+Burada önemli değil. Şimdi arkadaşlar, burada bu eşitsiz yazdık. Eksiyle çarptık. Çünkü fonksiyon 4x2x2. Fonsiyonun x kardaki değerlerini ve x kardaki değerlerini yakalamak için eksiyle çarptık. Sonra da 4 ekleyin bu hale geldi arkadaşlar.
+
+350
+01:24:04,659 --> 01:24:19,539
+Şimdi delta x k am şöyle bir pozitif bir şey. Bunların tamamını delta x k ile çarpıyorum. Burada da delta x k ile çarpıyorum. Bakın delta x k tamamında delta x k var. Bunu da delta x k ile çarptığım zaman şu oluyor. Bakın şurası.
+
+351
+01:24:20,243 --> 01:24:43,663
+yine çarpmışım. Burada da celte ihtiyaç var. Şimdi arkadaşlar o zaman k eşit bir birden neye kadar da toplam aldığımızda arkadaşlar ne oluyor? Bu taraf LPP, bu taraf UFP oluyor. Şurası da bana, burası da bana I'yı veriyor arkadaşlar. Burası. Şuranın toplamını aldığım zaman yani ne yapıyorum? Bir başka bira girişim.
+
+352
+01:24:45,652 --> 01:24:51,932
+Yani şunu çarptım mı delta x k ile? İşte şurası toplam aldım. Burada toplam alıyorum.
+
+353
+01:24:55,412 --> 01:25:03,992
+Şöyle yazayım. Bir de buradan toplam yazıyorum. Şurası benim için aslında bu kısım neymiş? Iymiş.
+
+354
+01:25:07,012 --> 01:25:14,912
+İşte o da şuyuz. O da şüksür 9. Burada da o teleskobik toplam dediğimi kullanıyorum. K şüksür 1'den N'ye kadar alıyorum.
+
+355
+01:25:15,292 --> 01:25:22,452
+Buraya sığmadığı için onu yazmıyorum ve bu halde buluyorum. Dolayısıyla A'dan B'ye x kare değil, işte 0 diye yazıyorum.
+
+356
+01:25:22,880 --> 01:25:25,479
+Şimdi gelelim. Var mı bir sorunuz?
+
+357
+01:25:31,859 --> 01:25:49,260
+sorusu olan var mı? Yok. Şimdi arkadaşlar Riemann toplamı ve integral demişiz. Riemann toplamı. İşte integral değil de Riemann gelir aslında arkadaşlar. Riemann. Riemann bulmuş çünkü integrali. Bir toplamın limiti olarak bulmuş. Ondan sonra.
+
+358
+01:25:49,939 --> 01:26:02,779
+Yukarıda söylediğimiz x eşit A ve B doğruluğu yazıyla kenarlardan sınırlı, yükseklerin üstünde ve negatif olmayan sürekli f fonksiyonun grafiği altında kalan bölgenin alanı.
+
+359
+01:26:04,459 --> 01:26:08,539
+Küçük minimum ve maksimum değerler şu olmak üzere diyor.
+
+360
+01:26:09,359 --> 01:26:15,399
+Şuydu diyor. Alan bu aradaki diyor. Gördünüz mü? L'Hosp küçük eşit I dedi.
+
+361
+01:26:15,887 --> 01:26:22,887
+o da küçük eşit ufp arkadaşlar. Şurası ufp, ufp yaz diye yazmıştık.
+
+362
+01:26:22,887 --> 01:26:31,887
+Hatta şunun adı ne dedik? Bu ad diye yazmıştık. G bölgesinden alanı. Yani bu ı diye yazmıştık. Diye de söyleyebiliyorduk.
+
+363
+01:26:31,887 --> 01:26:38,887
+Gelirdiğince integralin ı. İntegram diyoruz ya. Şurası da lfp arkadaşlar.
+
+364
+01:26:38,887 --> 01:26:42,887
+lfp küçük eşit ı, küçük eşit ufp. O ı da a'yı.
+
+365
+01:26:43,283 --> 01:27:01,903
+İşte arkadaşlar, burada, burada, şöyleydi, eşitsizliğiniz ağabeyi, buradaki diyor, her iki toplamı, kısika diyor, bakın, kısika, kayıncı alt aralıkta, şu aralığın içinde, keyfi bir nokta olmak üzere.
+
+366
+01:27:03,523 --> 01:27:07,863
+Yani, şöyle bir şey aldık ya, şu bir kısım için.
+
+367
+01:27:10,452 --> 01:27:15,452
+Şöyle, şurası
+
+368
+01:27:15,452 --> 01:27:20,452
+Şöyle bir şey olsun, şurası x kare artı 2x olsun
+
+369
+01:27:23,636 --> 01:27:25,016
+Şurası x kalsın.
+
+370
+01:27:27,716 --> 01:27:28,536
+Şöyle bir şey.
+
+371
+01:27:29,176 --> 01:27:30,936
+Ve bunun için de arkadaşlar,
+
+372
+01:27:31,756 --> 01:27:32,716
+fonksiyon şöyle bir şey.
+
+373
+01:27:34,796 --> 01:27:36,796
+Şurası fonksiyonu renklendirelim.
+
+374
+01:27:40,376 --> 01:27:40,816
+Ne yapalım?
+
+375
+01:27:40,816 --> 01:27:41,636
+Şöyle.
+
+376
+01:27:42,816 --> 01:27:44,115
+Fonksiyon kısmı da şu.
+
+377
+01:27:45,619 --> 01:27:48,300
+fonsiyonumuz burası.
+
+378
+01:27:48,300 --> 01:27:51,940
+İşte diyor ki bunun içinde bir tane 40k var diyor.
+
+379
+01:27:51,940 --> 01:27:56,220
+40k.
+
+380
+01:27:56,220 --> 01:28:01,819
+Aslında bana bu integral için ortalama değer ve gibi diyor arkadaşlar.
+
+381
+01:28:01,819 --> 01:28:04,619
+Burada şunu alıyorsun burada.
+
+382
+01:28:04,619 --> 01:28:06,420
+Yiyse şurada nokta nokta.
+
+383
+01:28:06,420 --> 01:28:09,420
+Aldın. Ondan sonra...
+
+384
+01:28:09,420 --> 01:28:13,420
+Ne yapalım bunu? Görüşümü geçelim.
+
+385
+01:28:13,716 --> 01:28:14,836
+Şuradaki bir de yok.
+
+386
+01:28:16,536 --> 01:28:17,115
+x k.
+
+387
+01:28:17,615 --> 01:28:20,115
+Aldım, ondan sonra x k ile gösterelim.
+
+388
+01:28:20,516 --> 01:28:25,016
+k şıkkı bilden neye, f'nin x k'daki değeri çarpı, z-f-ixtel şeklinde yazarız.
+
+389
+01:28:25,695 --> 01:28:34,636
+Ve burada diyor, f'nin a, b, k, alı aralığı, integralini tanımlamak için bu toplamdan faydalanırız diyor.
+
+390
+01:28:34,636 --> 01:28:36,256
+Ve h ne?
+
+391
+01:28:37,300 --> 01:28:43,300
+x kare artı 1x1, f'nin ksikadaki değeri çarpı delta x k toplamına diyor.
+
+392
+01:28:43,300 --> 01:28:45,300
+Liman toplamı deniyor diyor arkadaşlar.
+
+393
+01:28:45,300 --> 01:28:47,300
+Yani ne yapıyorsun?
+
+394
+01:28:58,260 --> 01:29:01,579
+ve buna ne diyorsun? Riemann toplamı diyorsun.
+
+395
+01:29:01,579 --> 01:29:05,739
+Şimdi, onun limiti de sana integrali verdiler arkadaşlar.
+
+396
+01:29:05,739 --> 01:29:12,180
+Yani ne yapıyorsun? Aslında şurada aldığın zaman, birazını atıyorsun, birazını dahil etmiş oluyorsun.
+
+397
+01:29:12,180 --> 01:29:13,059
+Doğru değil mi?
+
+398
+01:29:13,059 --> 01:29:20,180
+Bunun, bu yapımı, bakın şuradan bir, şurasını atmış oluyor, bu şurada da dahil ettiğin bir kısım var. Bölgenin.
+
+399
+01:29:20,435 --> 01:29:26,956
+içine, değil mi? Burayı atıyorum, şurayı da dahil ediyorum, şurayı da 60 oluyor.
+
+400
+01:29:26,956 --> 01:29:27,835
+Yok sayılıyorum.
+
+401
+01:29:28,835 --> 01:29:31,975
+Taban çarpı yükseklik, yani dikörtgenin alanı şeklinde bakıyoruz.
+
+402
+01:29:33,956 --> 01:29:40,136
+Neymiş? Ktk şeklinde. İşte diyor ki, p bu bölüntüsünün uzunluğu olmak üzere diyor, norm olmak üzere diyor.
+
+403
+01:29:40,636 --> 01:29:44,335
+Onu diyor, k-stirbir derneği maksimum derse x diye yazabilirim diyor.
+
+404
+01:29:45,275 --> 01:29:47,975
+Ondan sonra tanım şu, tanım.
+
+405
+01:29:49,876 --> 01:29:57,716
+f, ab kapalı aralığında tanımlı bir fonksiyon ve t, ab kapalı aralığının keyfi bir bölüntüsü olsun, parçalanışı olsun.
+
+406
+01:29:58,536 --> 01:30:11,336
+f'nin ab kapalı aralığı üzerindeki Riemann integralı, geliri integralı, Riemann toplamının diyor, f sıfıra giderken diyor Riemann toplamının, o tney Riemann toplamı demiştik ya arkadaşlar.
+
+407
+01:30:11,855 --> 01:30:36,036
+hivan toplamı demiştir. p sıfıra giderken diyor, normu sıfıra giderken, eğer limiti mevcut ise diyor, a'dan b'ye px, bx integralini verir diyor. O da eşitse diyor, limit işte p sıfıra giderken kaçtır düzenleye ye, şurası ne? f mı? Şurası f mı? Değil mi? diye yazabiliriz. Şimdi onu da arkadaşlar daha da düzenliyorsan.
+
+408
+01:30:38,003 --> 01:30:43,824
+İşte bilmeniz gereken şu Riemann toplamının limiti olarak belirli integral.
+
+409
+01:30:43,824 --> 01:30:51,783
+Şimdi arkadaşlar, uzunluk şu, uzunluk, delta x k, delta x k ne yapıyoruz?
+
+410
+01:30:52,344 --> 01:30:57,123
+b eksi a, nedir? a'dan b olduğuna göre uzunluğun bakın a, b, a varlığı.
+
+411
+01:30:57,783 --> 01:31:02,384
+a, b olduğuna göre arkadaşlar, a, b kapalı aralığını neye bölüyorum? neye parçaya bölüyorum?
+
+412
+01:31:02,484 --> 01:31:03,463
+Bakın delta x k var.
+
+413
+01:31:05,363 --> 01:31:22,263
+Şurası delta x'de. Yani aslında şurası, şimdi şu formülü bileceğiz. Bir de bunun bir diğer izliği var. Orada da k geldi. Bu solu 3, sol kısım, k sivirli olan sol, bir yere sağ oldu.
+
+414
+01:31:33,043 --> 01:31:59,203
+b-a çarpı toplam kare 1'den nereye? f. Fonksiyonu bakın şu paranteze dikkat edin. Tamamının fonksiyonu bu. Ona dikkat edin. Bir de limiti de tamamının dinlük. Kıvrık parantezi. Ona dikkat edin. Ondan sonra ne varmış? a artı kare 1 bölü n çarpı b-a. Yani ne geliyor? Aslında bir diğer ifadeyle delta x.
+
+415
+01:31:59,572 --> 01:32:17,371
+Burası delta x k, şurası delta x k, a çarpı, a artı k-sivik çarpı delta x k. Burası da delta x k düşer çıkmış. Şurası yani. Bakın, şu delta x k sürüyorsun, şu f x k da şurası oluyor.
+
+416
+01:32:17,371 --> 01:32:23,532
+diye yazabilirsin arkadaşlar. Şimdi gelelim buradan işlem yapmaya. İşte burada arkadaşlar.
+
+417
+01:32:24,020 --> 01:32:33,520
+0'dan bire ikisi x integralini önce diyor n eşittir 1, sonra n eşittir 100, sonra da 2007 olarak diyor. Hesaklayın, yaklaşık olarak bakın.
+
+418
+01:32:37,460 --> 01:33:02,600
+Şimdi arkadaşlar, burada sıfırdan biri x'de x. Ne oluyor arkadaşlar? Sıfırdan biri olduğuna göre şurası bx'e a. bx'e a ne? 1-0. Oradan ne gelir? 1. Kaça bölüyorum? n11. Bakın, n11 yazmışım. k eşittir 1'den 11'e kadar. Evet. Ondan sonra ne gelir? f. a dediğimde 0. k-1.
+
+419
+01:33:05,363 --> 01:33:09,003
+çarpı b-a 1'di. Burada bir b-a var.
+
+420
+01:33:10,423 --> 01:33:10,843
+Değil mi?
+
+421
+01:33:11,543 --> 01:33:14,463
+Bölü ne dediğim 11 diye yazdım.
+
+422
+01:33:14,783 --> 01:33:15,963
+Buradan ne geldi arkadaşlar?
+
+423
+01:33:16,863 --> 01:33:22,023
+f'nin işte şurası 0 bir şey anlamak, etkilemek.
+
+424
+01:33:22,763 --> 01:33:24,623
+kx'i 1 bölü şu.
+
+425
+01:33:25,063 --> 01:33:26,384
+Fonksiyonlar fx'e çiftlik.
+
+426
+01:33:26,623 --> 01:33:28,804
+fx'e çiftlik olduğu için aynen çıkacak.
+
+427
+01:33:29,184 --> 01:33:54,984
+x kare olsaydı mesela buranın karesi gelecek. Buranın karesi, faydanın karesi gelecek. Ondan sonra şimdi ben ne yapıyorum? Toplamım k üzerinden. K üzerinden olduğu için arkadaşlar 11'i çıkarıyorum dışarıya. O zaman 121 oluyor. Toplam k üstü birden neye? K eksi 1 geliyor arkadaşlar. K eksi 1 geliyor. Ve burada k'ya değerler veriyorum. K'ya değer verdiğimde arkadaşlar işte şuna ulaşıyorum.
+
+428
+01:33:55,891 --> 01:34:18,871
+k'ya 1 ver, 1-1, 0 geliyor. k'ya 2 ver, k'ya 3 ver, öyle gidiyor arkadaşlar ve bunu buluyorum. Enzel şekilde, şöyle diyelim, 0'dan 1'e x, x, işte 100'e bölgü, 100'e bölgü, arkadaşlar, b-a, yine orası 1, 1 bölü 100 oluyor.
+
+429
+01:34:23,636 --> 01:34:38,476
+a artı k eksi 1 bölüm n çarpı b eksi 1, oradan da 1 geliyor. Şöyle ifadeye karşılaşıyorum. Yine oradaki yüzde de çalışıyor, k eksi 1 geliyor. Buradan arkadaşlar düzenle 99 bölüm 1 geliyor.
+
+430
+01:34:49,171 --> 01:34:58,751
+buradan ne? Buradan de eğer şekilde şöyle kendiniz yazabilirsiniz. Gelelim, gelelim geneline arkadaşlar. Geneline.
+
+431
+01:34:59,251 --> 01:35:10,591
+Geneline bastığımız zaman arkadaşlar, fonksiyon ne? fx kare. fx. Bakın fx şu. Bunu genel yapmak istiyorum yukarıdaki rimana göre.
+
+432
+01:35:16,212 --> 01:35:43,292
+Yani 1-0 bölü n, k-1'den n'ye, p, a artı k-1 bölü n'ye çarpı b-a'dan da 1 geliyor. Yazdım formülden yerine. Burada ne oldu arkadaşlar? Yine 1 bölü n'si duruyor bakın. Eşit çirgiye bak. Devam ediyorsun. Ondan sonra k-1 bölü n'ye geldi. Bu n'ye oldu, dışarıya çıktı. 1 bölü n'ye kare oldu. Şunun yerine ne yazdım? n çarpı n artı 1 bölü 2 yazdım.
+
+433
+01:35:44,212 --> 01:35:50,912
+Bunun yerine yukarıda ne yazdık? Toplam karşıt bir birden neye, birin toplamı neydi? Burası neye.
+
+434
+01:35:51,572 --> 01:35:57,792
+Bir limitin aldığında bir bölü küçük artı. Gördünüz mü? Burada var mı bir probleminiz?
+
+435
+01:36:07,699 --> 01:36:09,180
+Bir probleminiz var mı arkadaşlar?
+
+436
+01:36:11,180 --> 01:36:11,819
+Yok.
+
+437
+01:36:21,300 --> 01:36:25,480
+En son soru da, bir dakika, ne nereden gelmiştir?
+
+438
+01:36:29,140 --> 01:36:31,380
+Şuradaki mi? [öğrenci]?
+
+439
+01:36:44,083 --> 01:37:02,003
+x kare artı 2x, f'
+
+440
+01:37:02,003 --> 01:37:06,003
+kare artı 2x, f'
+
+441
+01:37:10,292 --> 01:37:19,292
+1 artı 1 artı diye gidiyor. Nokta nokta 1 oluyor. Kaç tane 1 var? N tane. O da eşittir N'ye geliyor.
+
+442
+01:37:21,412 --> 01:37:27,391
+diye yazmıştık. Kaçtır birden N'ye 1'i topladığında, hatta şunu da yazdık ya size biraz önce.
+
+443
+01:37:27,872 --> 01:37:35,272
+Lambda dedik. Kaçtır birden N'ye? N'ye ek dedik. Bu ne dedik? Lambda N'ye dedik değil mi?
+
+444
+01:37:36,884 --> 01:37:38,043
+Şu, aşın.
+
+445
+01:37:39,384 --> 01:37:40,084
+Böyle dönüştü.
+
+446
+01:37:40,783 --> 01:37:44,604
+Dolayısıyla, 1'den n'ye kadar 1'i toplarsa n gelir.
+
+447
+01:37:45,384 --> 01:37:48,644
+Şunun birini atıyorsun, şu n'ye yaptın, n kare geldi.
+
+448
+01:37:48,984 --> 01:37:51,283
+Ondan sonra, şunu şöyle yazıyorsun.
+
+449
+01:37:52,184 --> 01:37:53,123
+Nesi, l yazayım.
+
+450
+01:37:54,244 --> 01:37:54,863
+1 yazayım.
+
+451
+01:37:55,744 --> 01:37:56,703
+Orasını anlarsınız.
+
+452
+01:37:57,943 --> 01:37:59,164
+Bir bölüm n kare geliyor.
+
+453
+01:38:02,043 --> 01:38:02,724
+Duruyor.
+
+454
+01:38:04,948 --> 01:38:12,248
+toplam, k geliyor, eksi toplam 1.
+
+455
+01:38:14,728 --> 01:38:15,808
+Oldu mu [öğrenci]?
+
+456
+01:38:17,028 --> 01:38:18,948
+Güzel yazamadım ama neydi kusura bakma.
+
+457
+01:38:21,507 --> 01:38:25,548
+Bir an, olabilir yani insan hata yapabiliyor, bir an da alabilir.
+
+458
+01:38:25,768 --> 01:38:26,708
+Olsun, önemli değil.
+
+459
+01:38:27,007 --> 01:38:28,788
+Sorun takıldığınız zaman.
+
+460
+01:38:29,208 --> 01:38:29,728
+Tamam mı? Şu.
+
+461
+01:38:30,427 --> 01:38:31,768
+Şimdi arkadaşlar benzer şey.
+
+462
+01:38:32,180 --> 01:38:33,659
+Onu yazdık, bir problem yok.
+
+463
+01:38:34,420 --> 01:38:36,739
+0'dan 2x kare diye x'e bir şudur demiş.
+
+464
+01:38:37,420 --> 01:38:39,760
+Arkadaşlar, 0'dan 2x kare.
+
+465
+01:38:40,120 --> 01:38:42,079
+Şimdi aralığımın uzunluğu ne benim?
+
+466
+01:38:42,579 --> 01:38:43,400
+b x a 2.
+
+467
+01:38:43,980 --> 01:38:47,239
+2 eksi 0.
+
+468
+01:38:47,680 --> 01:38:48,880
+Dolayısıyla 2 bölü ne?
+
+469
+01:38:49,440 --> 01:38:51,120
+b x a bölü ne diye yazılır.
+
+470
+01:38:51,520 --> 01:38:53,420
+Limit neye sosuna giderdim, b x a bölü ne.
+
+471
+01:38:53,520 --> 01:38:54,980
+Toplam kaç bir bildiğin neye?
+
+472
+01:38:54,980 --> 01:38:56,020
+Ne geldi?
+
+473
+01:38:56,140 --> 01:38:57,579
+p, a 0.
+
+474
+01:38:59,188 --> 01:39:13,188
+artı 0 artı b-a bölü n çarpı k-1 diye yazıyoruz arkadaşlar. Tabii ki 0'ın bir etkisi yok. 2 bölü n duruyor dışarıda. Şurası ne oldu arkadaşlar? Benim fonksiyonum ne? fx seçittik.
+
+475
+01:39:15,188 --> 01:39:22,188
+f'nin, fx'nin, işte ne oluyor?
+
+476
+01:39:24,188 --> 01:39:26,188
+k-1 bölü n'deki değeri.
+
+477
+01:39:26,676 --> 01:39:29,516
+Hatta 2, 2 var değil mi orada?
+
+478
+01:39:31,216 --> 01:39:33,536
+Ne? Var, yanında da 2 var.
+
+479
+01:39:34,275 --> 01:39:36,176
+Bir de çarpı 2, değeri.
+
+480
+01:39:36,736 --> 01:39:42,076
+Diye yazdığım zaman, fx seçittir x kare olduğu için arkadaşlar, ne geliyor?
+
+481
+01:39:42,456 --> 01:39:49,796
+4 çarpı, işte, k1'in karesi bölü, ne kare geliyor?
+
+482
+01:39:50,676 --> 01:39:54,296
+Çünkü fonksiyonum ne? Fonksiyonum fx seçittir x kare.
+
+483
+01:39:56,148 --> 01:40:06,148
+x eşittir, x kare olduğu için böyle yazıyorum. Anlaştık mı? Böyle yazıyorum. Onun yerine onu şunu getiriyorum.
+
+484
+01:40:06,148 --> 01:40:16,148
+Burada. Ondan sonra şöyle yazdım. Toplamı duruyor tabii ki. Ve buradan ne gelir? 400 dışarıya atarım. Ne kareyi dışarıya atarım? Bakın 8 bölüm ekip oldu.
+
+485
+01:40:16,148 --> 01:40:22,988
+Ondan sonra ne yapıyorsun arkadaşım? Şurayı açıyorsun. Burayı açtığımda ne geliyor? Şu kısmını açtığımda.
+
+486
+01:40:23,188 --> 01:40:29,688
+Şurayı açtığında ne gelir? k kare gelir, x 2k gelir,
+
+487
+01:40:33,043 --> 01:40:49,884
+artı 1 gelir. Dolayısıyla burada işte onları sıratıyla biraz öncekinde yerine yazıyorsunuz. Tamam mı? İşte toplam k karenin ki neydi arkadaşlar? N çarpı N artı 1 çarpı 2'nin artı 1 bölü 6'ydı.
+
+488
+01:40:50,355 --> 01:41:01,855
+Değil mi? Toplamını vermiştik. Ondan sonra şu 2'yi at dışarıya, k'nın toplamı neydi? K1, 1'den N'ye? N'ye çarpı, N'ye artı 1, 2'yi diye. Birinin toplamı neydi? N'ye de.
+
+489
+01:41:02,456 --> 01:41:08,435
+İşte onları yerine yazıyorsun ve düzenliyorsun. Şöyle bir şey çıkıyormuş. Oradan da 8 bölüsü yakalıyor.
+
+490
+01:41:09,475 --> 01:41:16,415
+Yani tek tek buraya yazmıyorum. Çünkü onu yazdık yukarıda. Şurada bir yerde yazmıştık. Geri dönmeme gerek var mı arkadaşlar?
+
+491
+01:41:17,076 --> 01:41:18,435
+Yukarıda vermiştim.
+
+492
+01:41:20,976 --> 01:41:22,376
+O da kullanıyoruz.
+
+493
+01:41:24,335 --> 01:41:27,195
+Yani o açılımı burada yazıp düzenlenmiş şekli buydu.
+
+494
+01:41:27,695 --> 01:41:31,755
+Şimdi bir diğeri, bir diğeri, sorunuz yoksa.
+
+495
+01:41:32,136 --> 01:41:38,895
+Eğer f-fomusyonu a-b kapalı aralığına integral edilebilirse, f'nin a-b'ye belirli integral ediyor.
+
+496
+01:41:39,976 --> 01:41:44,076
+Yine b-a bölüne, bakın limit ve süreklere giderken b-a bölüne.
+
+497
+01:41:44,576 --> 01:41:49,456
+Şurada yine p, bakın p'ye artı, a artı. Bu defa k geliyor arkadaşlar.
+
+498
+01:41:50,395 --> 01:41:55,496
+k bölü n çarpı b. İkisinin farkı ne? Onu da kırmızın yapalım.
+
+499
+01:41:58,515 --> 01:42:04,835
+Buradaki fark, bakın burada. Burada sadece bu var.
+
+500
+01:42:06,275 --> 01:42:11,915
+Orada ne geldi? Yukarıdaki formülümüzde k-1 geldi. Bakın. Şurada k-1 geldi.
+
+501
+01:42:13,235 --> 01:42:37,495
+Birisinde kx'bir var, diğerinde k var. Anlaştık mı? Birinde k var, birinde kx'bir var. Ama size herhangi bir şey dayatılmadığı sürece, eğer Riemann'la ilgili bir soru sorulduğunda ben bunu tercih ederim. Çünkü ötekinden bir toplam daha geliyor. Gerçi oradaki kısım limitli sıfıra gider. Sonuç aynıdır ama işin uzarı orada.
+
+502
+01:42:38,420 --> 01:42:41,960
+Yani sana tercih hakkı sunarlarsa bunu tercih et.
+
+503
+01:42:42,800 --> 01:42:43,659
+Bunu tercih et.
+
+504
+01:42:44,700 --> 01:42:47,940
+Tercih et.
+
+505
+01:42:51,252 --> 01:42:52,811
+Tercihim bu olsun arkadaşlar.
+
+506
+01:42:54,971 --> 01:42:55,712
+Bunu tercih et.
+
+507
+01:42:56,492 --> 01:42:57,092
+Tamam mı?
+
+508
+01:42:57,512 --> 01:42:59,652
+Tercihe bırakırlarsa bunu tercih et.
+
+509
+01:43:00,212 --> 01:43:02,072
+Çünkü orada biraz daha işin uzuyor.
+
+510
+01:43:02,332 --> 01:43:03,752
+Bu kestirmeden sana gösteriyorum.
+
+511
+01:43:04,212 --> 01:43:07,352
+Şimdi arkadaşlar sıfırdan bire işte demişiz ki
+
+512
+01:43:07,352 --> 01:43:12,391
+x küt işte x 3x artı 2x eşittir şu da bu.
+
+513
+01:43:12,852 --> 01:43:15,612
+Çünkü cevabını sadece size vermez eğer böyle sonuç oluyorsa.
+
+514
+01:43:16,212 --> 01:43:39,692
+Ondan sonra kendimi bulacaksın. Sırasıyla yazıyorsun. Neyi vardı? Limit ne sonsuza giderken bx a, bx a ne? 1. 1-0, 1. bx a bölü ne? f, k toplam kaçtır? Birden ne? f, a ne? 0. Burayı 0 vermezlerse, sayı gelirse buraya mesela 1 gelebilir. O zaman biraz daha işinize.
+
+515
+01:43:40,979 --> 01:44:01,099
+Genelde sıfırdan başlatır ki işin kestirme olsun diye arkadaşlar. Sayı verirse biraz daha işin fazlalaşır. Tamam mı? Normal kare ise karetsin alacaksın. Ona dikkat etceksin mesela. Ondan sonra fonksiyon da bunun yerine koyacaksın tabii ki. fx seçisi şu. Buradan ne geliyor?
+
+516
+01:44:02,163 --> 01:44:29,884
+f'nin a'daki değeri sıfırmış, a sıfırmış artı k çarpı bx a bölü n. bx a 1 olduğu için hiç gelmiyor. Şöyle yazdınız. Ondan sonra arkadaşlar limit n'e sonsuza giderken diye yazdınız. Ne var burada? Şu var. Fonksiyon ne? Şuradan ne geldi arkadaşlar? Şu kısım. f'nin k bölü n'deki değeri geldi.
+
+517
+01:44:32,148 --> 01:44:39,228
+x k bölüne. Arkadaşlar, x k bölüne deyince, şu kısmı k'i de bir görüyordum, olur mu?
+
+518
+01:44:39,228 --> 01:44:42,228
+x k bölüne.
+
+519
+01:44:48,083 --> 01:45:07,343
+k bölün e'deki değeri, 0'a attığın zaman k bölün e'deki değeri, işte, şu anı ne benim? f'yi seçildi şu, x küf eksi 3'e geliyor. İşte k bölün e'nin küpü, eksi 3 çarpı k bölün e geliyor. x gördüğün yere fonksiyon da k bölün e yazıyorsun.
+
+520
+01:45:08,307 --> 01:45:34,667
+fonksiyonu x gördüğün yeri k bölü ne yazıyorsun ve şu hale geliyor. O zaman ne yapıyorsun? Toplamın dağılma özelliğini kullanıyorsun. Dağıtıyorsun. İşte buradan ne geliyor? Bakın ne küpü dışarıya attın. Burada şurası ne? K küp. Arkadaşlar. Ondan sonra burada bir bölü ne? En dışarıda duruyor. Bakın bir bölü ne? En dışarıda duruyor. Şunları tek tek dağıtmışız burada.
+
+521
+01:45:35,152 --> 01:45:56,492
+Ondan sonra şurada 3 bölü n'ye bakın duruyor. k'nın yerine de toplam k'nın yerine de n çarpı n artı 1 bölü 2 yazdım için. Ondan sonra bakın 2 var. 2 kaçtır bizden n'ye 2'yi topladığında 2 n oluyor. Ve buradan işte limitini alıyorsunuz. Şu limiti de şuradaki n'yi içeriye vermeyi unutmayın.
+
+522
+01:45:57,524 --> 01:46:19,744
+Bunu içeriye verin. Verdiğimiz zaman arkadaşlar buradan ne geliyor? Bakın ne kare, ne kare buradan da gelecek? Ne üzeri 4? Aşağısı bunu dağıttığı zaman ne üzeri 4 bu geliyor? Değil mi? Ona dikkat edin. Şurada yazmışız zaten. Gidenle göndererek yazmışız. Onu vermişiz buraya.
+
+523
+01:46:21,171 --> 01:46:34,171
+ve arkadaşlar bakın buraya da vermişiz, 2 olarak yazmışız. Ona dikkat edin, sakın görmezden gelmeyin. Bu bir bölünü dışarıdaki, onu içeriye verin. Ondan sonra limitini alıyorsunuz ve bu çıkıyor.
+
+524
+01:46:35,171 --> 01:46:37,171
+O kısmın üzerinde durmuyor.
+
+525
+01:46:37,171 --> 01:46:48,171
+Şimdi bir diğeri, F fonksiyonu AB, evet, AB kapalı aralığında diyor. İnteklendirilebilir bir fonksiyon ve her x elemanı AB için fx pozitif hissediyor.
+
+526
+01:46:48,500 --> 01:47:07,879
+a'dan b'ye f'x'x integral. Yani o bölgenin alanının integral'i alan pozitif. Bir bölgenin alanı negatif çıkmaz değil mi? Alan pozitif. Teoren, f' a, b'ye kapalı aralığından r'ye fonksiyonu sürekli hissediyor. Sürekli hissediyor.
+
+527
+01:47:07,879 --> 01:47:13,379
+a, b'ye kapalı aralığında integre edilebilir diyor. Sürekli hissediyor.
+
+528
+01:47:14,996 --> 01:47:26,336
+belirli integralinin özelliklerine geldik arkadaşlar. Burada eğer, işte şunu yazdığım için, birincisi, A'dan B'ye AB'den büyük isen.
+
+529
+01:47:27,336 --> 01:47:36,695
+AB'den büyük isen diyor. AB'den büyük isen. Yani şöyle AB'den büyük isen. A'dan B'ye yazıyorsun. Mesela burası 3, şurası 1.
+
+530
+01:47:38,720 --> 01:47:49,820
+fx'e yazdı. a b'den büyükse diye. Burada böyle yazmayacağına gelir. O zaman ne diyeceksin? Eksi işte b'den a'ya. Eksi a b b'den a'ya.
+
+531
+01:47:51,360 --> 01:48:03,980
+Diye yazabilirsin diyor. Onu söylüyor sana. Yani biz a'dan b'ye derken integralini yazıyorduk arkadaşlar. Hep a b ekrafalarında a b'den küçüktür. Değil mi arkadaşlar?
+
+532
+01:48:04,724 --> 01:48:20,523
+tersine bir şey olursa diyorsan buna eksi işareti yazabilir. Ondan sonra, 1 bu. Bir diğeri, f ve g, a, b kapalı aralığında, integrer edilebilen 2 fonksiyon ise,
+
+533
+01:48:20,523 --> 01:48:30,323
+2 fonksiyonsa, ve lambda'da herhangi bir sayı ise, lambda f, f artı g, f eksi g fonksiyonları diyor.
+
+534
+01:48:30,800 --> 01:48:33,800
+bu aralıkta integre edilebilir diyor. Ve
+
+535
+01:48:33,800 --> 01:48:38,800
+a'dan b'ye, lan ile fx, lan ile çarpı, a'dan b'ye fx diyor.
+
+536
+01:48:38,800 --> 01:48:42,800
+a'dan b'ye fx artı eksi, bx, bx diyor.
+
+537
+01:48:42,800 --> 01:48:47,800
+İntegral ile gördük biz yukarıya, bir limit.
+
+538
+01:48:48,051 --> 01:48:59,551
+İki fonksiyon toplamının integrali neydi? Integrali toplamıyca. Farkı neydi? İki fonksiyonun farkının limiti, limitleri fark ediyor. İşte aynı oldu arkadaşlar.
+
+539
+01:48:59,551 --> 01:49:10,751
+D aynen geçerli. Bir diğer arkadaşlar burada ek olarak. Bu tabii ki bir müzik. A, B'yi kapalı aranın içinde bir C. Bakın şurası C. Burası C.
+
+540
+01:49:11,328 --> 01:49:18,808
+a'dan c'ye c diyor, fx, c artı c'den b'ye fx, c diyor, a'dan b'ye fx, c olarak yazabilirim diyor.
+
+541
+01:49:19,608 --> 01:49:21,168
+Bu, gördünüz mü?
+
+542
+01:49:21,948 --> 01:49:24,728
+Şunları, söyle, söyleyebiliriz.
+
+543
+01:49:25,888 --> 01:49:30,328
+Şimdi, biraz daha gidelim, ondan sonra bir ara verelim, arayın hafiflik.
+
+544
+01:49:31,808 --> 01:49:35,588
+Eğer, f fonksiyonu diyor, 0,4 aralığından real sayıları.
+
+545
+01:49:36,528 --> 01:49:37,948
+Fonksiyon şöyle verilmiş.
+
+546
+01:49:38,868 --> 01:49:46,868
+parçalı fonksiyon verilmiş. Size parçalı fonksiyon gelir arkadaşlar yine. Parçalı soru üretiliyor çünkü.
+
+547
+01:49:46,868 --> 01:49:55,868
+ve anlamasında da 1'e şuymuş, 1'den 2'ye 3'müş, ondan sonra 2'den 4'e de şuymuş arkadaşlar.
+
+548
+01:49:55,868 --> 01:50:03,868
+İntegraline bakın diyor. Özellikle ne olmalı arkadaşlar? Parçalı fonksiyon. Fonksiyon bu aralıkta sürekli olmuyor.
+
+549
+01:50:03,868 --> 01:50:05,868
+Fonksiyon sürekli mi?
+
+550
+01:50:06,176 --> 01:50:33,176
+x yerine 1 verdiğinde ne geliyor? Burada 3 oluyor. x yerine 1, bakın zaten bu 3. Ondan sonra tabit, buraya aralıkta tabit miyiz zaten. x'in 2'deki durumunda da 3'miş. Burada 2'yi verdiğimde ne geliyor arkadaşlar? Yine 3'ü yakalıyor. Fonksiyon sürekli bir problem yok. Sürekli olduğundan diyor, bu aralıklarda hepsinin integrali mevcuttur. O zaman işte sıfırdan bire.
+
+551
+01:50:33,600 --> 01:50:46,760
+2x artı 1 integralini alıyorsun. Ondan sonra 1'den 2'ye 3. Yani biraz önceki yazdığımız basit integralleri gördük. Değil mi? O zaman ne gördük biz?
+
+552
+01:50:46,760 --> 01:51:00,440
+İşte 0'dan bire x'in integral, mesela A'dan B'ye x'de x. Ne dedik? A'dan B'ye x'de x'i ne dedik arkadaşlar? İşte 1 bölü 2.
+
+553
+01:51:02,068 --> 01:51:03,307
+b kare eksi a kare x.
+
+554
+01:51:04,268 --> 01:51:06,748
+b kare eksi a kare g kare g kare.
+
+555
+01:51:09,268 --> 01:51:16,628
+Dolayısıyla, şöyle diyebilirsin, a'dan b'ye x'i zerineğinin integralini yazalım istiyorsanız.
+
+556
+01:51:20,340 --> 01:51:25,340
+a'dan b'ye, üst üzerine c.
+
+557
+01:51:27,340 --> 01:51:29,220
+o da eşittir.
+
+558
+01:51:29,840 --> 01:51:30,420
+ne geliyor?
+
+559
+01:51:30,720 --> 01:51:31,900
+1 veya 1
+
+560
+01:51:31,900 --> 01:51:34,900
+tabii ki
+
+561
+01:51:34,900 --> 01:51:37,100
+n
+
+562
+01:51:37,100 --> 01:51:39,400
+artı 1
+
+563
+01:51:39,400 --> 01:51:41,180
+artı 0
+
+564
+01:51:41,180 --> 01:51:43,780
+olmak üzere
+
+565
+01:51:43,780 --> 01:51:45,480
+ne gelecek?
+
+566
+01:51:47,412 --> 01:52:00,412
+Şu gelecek. B üzeri n artı 1. Genelini buraya yazmış olalım. A üzeri n artı 1.
+
+567
+01:52:01,332 --> 01:52:08,332
+Şu güzel yazamadım ama neyse zaten söylüyorum. 1 bölü ne artırır? b üzeri ne artırır? eksi a üzeri ne artırır? geneli bu.
+
+568
+01:52:08,332 --> 01:52:17,332
+O zaman arkadaşlar işte burada onları kullanıyorsun. Mesela 2'den 4'ü x kare eksi 1 diye yazdığın zaman ne gelir? 1 bölü 3 geliyor.
+
+569
+01:52:17,332 --> 01:52:24,972
+İşte 1 bölü 3. O zaman ne geliyor? b'nin küpü eksi a'nın küpü. b yerine 4 o.
+
+570
+01:52:25,108 --> 01:52:27,108
+benzer şekilde diğerini de yazabilirsiniz.
+
+571
+01:52:27,108 --> 01:52:32,108
+tam vermediğimiz iki incengörlük abaca onu kullanarak buradan yazabilirsiniz.
+
+572
+01:52:32,108 --> 01:52:38,108
+sonucu itibariyle burada da toplamını yazmışız arkadaşlar.
+
+573
+01:52:38,108 --> 01:52:42,108
+0'dan 4'e fx, dx. Aman adınız bir şey olsa sorabilirsiniz arkadaşlar.
+
+574
+01:52:42,108 --> 01:52:51,108
+fx, dx, şu diyor 4 bölüş diyor. 0'dan 2'ye diyor eksi 28 bölüş olduğuna bunlar biliniyormuş.
+
+575
+01:52:51,108 --> 01:52:52,108
+Şu kaçtır diyor.
+
+576
+01:52:52,724 --> 01:52:53,963
+Bu eşittir nedir?
+
+577
+01:52:55,823 --> 01:53:02,484
+Şimdi arkadaşlar, o zaman 2'den 4'e fx değil.
+
+578
+01:53:03,524 --> 01:53:04,804
+2'den 4'e fx değil.
+
+579
+01:53:05,904 --> 01:53:09,684
+2'den 0'a 0'dan 4'e diye yazabilirsin.
+
+580
+01:53:10,884 --> 01:53:13,484
+2'den 4'e diye yazmış.
+
+581
+01:53:13,644 --> 01:53:16,543
+2'den 0'a 0'dan 4'e diye yazabilirsin.
+
+582
+01:53:17,076 --> 01:53:32,815
+Ondan sonra 2'den 0'a yazdığın var mı? Yok. Ama 0'dan 2'ye var. Onun yerine ne yapıyorsun o zaman? Bunun yerine eksi birelim yazdığın. 0'dan 4'e o da verilmiş sana ve buradan şöyle buluyorsun.
+
+583
+01:53:35,036 --> 01:53:43,456
+Ondan sonra bir diğeri, işte eğer diyor ab kapalı anındaki x pozitif seziyor, integral de pozitif seziyor.
+
+584
+01:53:44,979 --> 01:54:09,919
+Ondan sonra, eğer bir ad-kabalı aralığında fx, gx'den küçükse diyor, fx'in integralı, gx'in integralinden küçükse diyor. Bunlarla soru sorulabilir arkadaşlar, şuralarda. Mesela öyle bir şey sorar ki sana, işte fx'in integralini bilemezsin ama ondan büyük gx fonksiyonu kendini ifade edebilirsin ve integralini hesaplayabilirsin. Şu sayıdan küçük diyebilirsin. Tamam mı?
+
+585
+01:54:10,484 --> 01:54:12,804
+Onu yazabilirim mesela, onu sorabilirler.
+
+586
+01:54:15,144 --> 01:54:16,444
+Şunu da söyleyelim.
+
+587
+01:54:16,924 --> 01:54:21,124
+0'dan beri x değil, x kare değil, 0'dan beri x değil x olduğunu gösterir misiniz?
+
+588
+01:54:21,544 --> 01:54:22,484
+Bunu göster diyor.
+
+589
+01:54:22,864 --> 01:54:25,264
+Bunu göster sorusu sorulmaz bize tabii ki.
+
+590
+01:54:26,284 --> 01:54:28,264
+Test olduğu için sorulur.
+
+591
+01:54:29,604 --> 01:54:32,764
+Ondan sonra ama bu bu mudur, küçük müdür falan gibi sorulabilir.
+
+592
+01:54:33,504 --> 01:54:34,844
+İşte fx eşittir x.
+
+593
+01:54:35,324 --> 01:54:37,064
+Diğeri ise gx'de x kare.
+
+594
+01:54:37,619 --> 01:54:59,020
+diye söyledik. Nedir? x kare pozitif aralığım zaten bu. 0, 1 aralığında arkadaşlar x kare x'den küçüktür. Değil mi? 0, 1 aralığında x kare x'den küçüktür. 0, 1 aralığında. x kare diye yazdığı zaman şöyle geliyor. Değil mi?
+
+595
+01:55:00,435 --> 01:55:22,315
+benzer şekilde x'i al, fx eşittir x'i al, o da ne? Şöyle geliyor. E, şu x, şurada x kare, bakın altında. 0,1 aralığında şudur. Diğer tarafta tersi, bakın birden büyüğü basar, x, x karenin altında kalır. Ondan sonra o zaman diyor, fx, gx'ten küçüktür.
+
+596
+01:55:26,996 --> 01:55:29,996
+x kare x'ten küçük
+
+597
+01:55:33,844 --> 01:55:54,643
+Şurasını ters yazmışız galiba. x kareye ne dedik? gx dedik. x kareye gx dedik. fx'e x dedik. Tamam. x kare x'den küçük. Ondan sonra şurası x kare fx. Şurası ters arkadaşlar. Şurası gx olacak.
+
+598
+01:55:57,643 --> 01:55:59,083
+Şurası fx olacak.
+
+599
+01:56:05,747 --> 01:56:39,140
+x kare artı 2x, f'
+
+600
+01:56:14,804 --> 01:56:20,664
+Anlaştık mı? x kare x'ten küçük oldunları integralin alması şurası, şurası, şurası, tekrar olmuş.
+
+601
+01:56:22,184 --> 01:56:24,184
+Kontrol etmeye vaktim olmadı benim.
+
+602
+01:56:25,384 --> 01:56:27,264
+Bu kısmını, burası, tekrar.
+
+603
+01:56:34,764 --> 01:56:36,204
+Arkadaşlar, bir ara verelim.
+
+604
+01:56:41,844 --> 01:57:04,291
+x kare artı 2x, f'
+
+605
+01:56:53,363 --> 01:57:02,863
+Evet, bir ara verelim arkadaşlar, bir 10 dakika. Yani ilk başta program oldu ama şu an bir ara verelim, dinlediğimizi salalım, ondan sonra devam edeceğiz.
+
+606
+02:07:44,528 --> 02:07:45,963
+x kare artı 2x, f'
+
+607
+02:07:42,676 --> 02:07:45,516
+Evet arkadaşlar, kaldığımız yerden devam edelim.
+
+608
+02:07:51,795 --> 02:08:03,915
+x kare artı 2x, f'
+
+609
+02:07:49,971 --> 02:07:56,511
+sonuç, sonuca kaldı. f diyor, ab kapalı arasında integre edilebilen bir fonksiyon ve her x eleman ab için diyor.
+
+610
+02:07:58,051 --> 02:08:01,791
+küçük m, büyük m, bakın f fonksiyonun maksimumla minimumu.
+
+611
+02:08:03,152 --> 02:08:12,931
+arasında ise, f fonksiyonu, evet, alttan küçük m, üstten de büyük m, arasında ise alt ve üst sınırlar kalıyor.
+
+612
+02:08:12,931 --> 02:08:15,831
+Bu durumda diye tamamıyla bakın ne yapıyorsunuz aslında?
+
+613
+02:08:16,851 --> 02:08:21,652
+integral uyguluyorsunuz arkadaşlar. O zaman şöyle bir ifadeyle katılıyoruz.
+
+614
+02:08:28,916 --> 02:08:34,376
+Buradan direkt arkadaşlar eşitsizliğin tamamını integral uygularsanız ne gelir?
+
+615
+02:08:56,372 --> 02:09:09,932
+Şöyle bir integral verin. Şu an biz bu integral şeyi çözebiliyor muyuz? Çözemiyoruz. İleride de biraz zor çözebiliyor. x üzeri 4, rüzgün integral. Yanında hiçbir şey olsa çözersin de. O da yok.
+
+616
+02:09:10,972 --> 02:09:20,772
+Yanında herhangi bir şey de yok. Mesela köklü, içinde artılı var. Tanzans dönüşüm yapacaksan ama gördüğün gibi kolay bir şey değil mi? Yatsam bile birazcık zor.
+
+617
+02:09:21,140 --> 02:09:34,340
+Şu an zaten integral çözümünü bilmiyoruz. Şimdi arkadaşlar, diyor ki integralı için alt ve üst sınırları saygı edilmiş. Şimdi arkadaşlar, fonksiyon bu.
+
+618
+02:09:35,560 --> 02:09:48,800
+x'e f'yi, işte şu ifade. Aralık sıfırla bir arasında. Fonsiyonun aldığı değerlere bakıyor. Fonsiyon köprü olduğuna göre nedir? Hiçbir zaman bu nedir? Büyü geçiş sıfırdır. Ve burada, x'e f'yi koyarsan neydi? Burada zaten bir alır.
+
+619
+02:09:49,844 --> 02:10:02,564
+Değil mi arkadaşlar? 1x1. Ondan sonra, bir diğeri, bakın, 1x1.000.000 kabul eder. Sürekli fonksiyonlar kapalı arasında 1x1.000.000 kabul ederdi.
+
+620
+02:10:02,564 --> 02:10:14,884
+Bakın, üstelik diyor, türevini aldık fonksiyonun. Şöyle bir şey bulduk. Türevini aldık, şu. Türev de pozitif. Türev'in pozitif olması neyi söylüyor bana? Fonksiyonun artan olduğunu söylüyor.
+
+621
+02:10:16,532 --> 02:10:20,052
+türev pozitif, f üstü pozitif.
+
+622
+02:10:21,192 --> 02:10:23,152
+O zaman artandır diyor.
+
+623
+02:10:23,632 --> 02:10:32,872
+Artan olduğuna göre, p'nin sıfırdaki değeri 1, p'nin 1'deki değeri 2'ymiş.
+
+624
+02:10:33,892 --> 02:10:37,152
+Dolayısıyla minimum ve maksimumları buradan arkadaşlar.
+
+625
+02:10:37,152 --> 02:10:38,392
+Sonuçların artan.
+
+626
+02:10:38,739 --> 02:11:01,159
+türevine baktınız. Fonksiyonlar, minimumu bu, maksimumu bu. Dolayısıyla arkadaşlar ne yapıyoruz? 1 çarpı minimum çarpı b-a, 0'dan bire integral, 2 maksimum çarpı b-a diye yazıyorsun. O zaman işte 1-2 arasında olduğunu görüyorsun arkadaşlar.
+
+627
+02:11:04,916 --> 02:11:08,016
+Böyle bir programda da 1.20 istiyor.
+
+628
+02:11:09,016 --> 02:11:19,256
+Bir diğer arkadaşlar, sıfırdan bire, pardon, fx fonksiyonu ile ab kapalı aralığında sürekli bir fonksiyon, integral dilir.
+
+629
+02:11:19,936 --> 02:11:22,596
+a'dan b'ye fx, fx'i integral ediyor.
+
+630
+02:11:24,076 --> 02:11:28,696
+a'dan b'ye, fx'in mutlak değerinin integraline küçük ve eşittir.
+
+631
+02:11:29,896 --> 02:11:30,916
+Diyor arkadaşlar.
+
+632
+02:11:31,456 --> 02:11:33,976
+Bir diğeri bu. Önemli özellikler.
+
+633
+02:11:34,916 --> 02:11:39,516
+Belirli integral için neymiş? Ortalama değer teorimi.
+
+634
+02:11:41,696 --> 02:11:45,076
+Arkadaşlar, integral için ortalama değer teorimi.
+
+635
+02:11:45,316 --> 02:11:47,155
+Buradan soru size gelir arkadaşlar.
+
+636
+02:11:48,056 --> 02:11:51,056
+Ortalama değer ya da avaraj değeri de derler arkadaşlar.
+
+637
+02:11:52,516 --> 02:11:55,836
+Buradan neyi sorarlar size? Nasıl sorulur?
+
+638
+02:11:56,556 --> 02:11:58,155
+Fonksiyonun ortalama değeri.
+
+639
+02:11:59,731 --> 02:12:02,492
+Bakın, burada ortalama değer.
+
+640
+02:12:03,391 --> 02:12:07,692
+Şimdi, biz ortalama değer teoremi diye bir şey gördük, değil mi arkadaşlar?
+
+641
+02:12:08,332 --> 02:12:13,912
+Şu, eğer f fonksiyonu AB kapılarında sürekli açıkçası türevlenebilirse,
+
+642
+02:12:14,372 --> 02:12:17,731
+fb-fa bölü b-a eşitsin, füc'e c olacaktır.
+
+643
+02:12:17,731 --> 02:12:19,872
+Böyle bir c sayısı vardır.
+
+644
+02:12:20,511 --> 02:12:22,931
+Bu, türev içindi bakın, şurada türev var.
+
+645
+02:12:26,228 --> 02:12:38,807
+Tamam mı arkadaşlar? Şimdi, ortalama değer dediğimiz ise arkadaşlar, f fonksiyonu, şu tanım sizlerin için çok önemli, buradan soru bank oluyoruz.
+
+646
+02:12:38,807 --> 02:12:49,688
+f fonksiyonu, AB kapalı aralığında sürekli bir fonksiyon ise, senin AB kapalı aralığındaki avaraj değeri ya da ortalama değeri denir buna.
+
+647
+02:12:51,315 --> 02:13:18,055
+Avaraj değeri ile gösterilen ortalama değeri, işte, 1 bölü b-a'dan b'ye fxdx diye söylenir diyor. Tamam mı? Budur diyor. Bu nasıl bir şey arkadaşlar? Aslında fonksiyonun ortalama değeri diye vermiş. Şunu söylüyor bana. İçinde bir şey varmış. Ortalama değeri.
+
+648
+02:13:19,507 --> 02:13:41,507
+Bakın neye benziyor? Şurası integral. Bu integralı açtığın zaman zaten büyük fb-f' diyeceksin bakın. Şurası ne bunun aslında? 1, 2, 2, 2, 3. Şimdi biz size ters krev diye bir şey vermiştik değil mi? Şunu dedik mi? a'dan ds-x dedi.
+
+649
+02:13:46,260 --> 02:13:53,780
+Daha doğrusu fx'i derken buna ne dedik biz? Belirlisini yazmamıştık da. Büyük fx demişti. Değil mi?
+
+650
+02:13:56,280 --> 02:13:57,539
+Artı c diye yazmış.
+
+651
+02:13:59,520 --> 02:14:00,200
+abdi.
+
+652
+02:14:02,619 --> 02:14:05,220
+Bunun yerine ne geliyor? Büyük fb-f'i f.
+
+653
+02:14:10,963 --> 02:14:14,884
+Bakın, fonksiyon ortalama diyelim. Bu fonksiyon başka bir fonksiyon.
+
+654
+02:14:15,923 --> 02:14:24,264
+Büyük f ve x f. Gördünüz mü? Benziyor mu? Şuna benziyor ama buradaki türev, bu o değil.
+
+655
+02:14:26,404 --> 02:14:29,304
+Neyse sileyim, benzemesini, benzettiğini gördüm.
+
+656
+02:14:30,384 --> 02:14:34,703
+Neymiş fonksiyon ortalama diyelim budur diyorsunuz.
+
+657
+02:14:34,703 --> 02:14:36,543
+Bu bana neyi söylüyor? İşte,
+
+658
+02:14:38,771 --> 02:14:42,592
+Burada. Bu aralıkta öyle bir şey varmış.
+
+659
+02:14:46,212 --> 02:14:51,032
+Ortalama değerini de şimdi bulacağız. Nasıl olduğunu göreceğiz.
+
+660
+02:14:51,851 --> 02:14:57,311
+Şöyle diyelim. fx fonksiyonu demişiz. x artı köksünde bir x kare olsun.
+
+661
+02:14:57,731 --> 02:15:00,811
+f fonksiyonu eksi bir ortalama değerini bulur. Şu aralıkta bulur.
+
+662
+02:15:01,632 --> 02:15:04,351
+Bunun orta f avaraj değeri 1 bölü b eksi a.
+
+663
+02:15:05,108 --> 02:15:15,188
+yazdın. x1'den artı 1'e x artı c'ye fonksiyonu yazdın arkadaşlar. Buradan ne geldi? 1 bölü 2. İntegrinin dağılma özelliği vardı.
+
+664
+02:15:15,188 --> 02:15:23,488
+Şurası ne? Burayı yazarsın. x kare bölü 2 yazar. x1'den bire dediği için arkadaşlar burası nedir?
+
+665
+02:15:28,020 --> 02:15:28,520
+Röner.
+
+666
+02:15:36,595 --> 02:15:48,495
+Yani fonksiyon tek, işte sektif biraz sonra özellikleri söyleyeceğiz. Tek olduğu için bu sıfır. Şimdi ondan sonra artı 1 bölü 2 demişiz. x kare artı 1'den bire şu köklü ifade.
+
+667
+02:15:49,055 --> 02:15:51,415
+Köklü ifadenin integralliğine de arkadaşlar.
+
+668
+02:15:57,300 --> 02:15:59,939
+ortalama değeri yani bölüyor.
+
+669
+02:16:01,140 --> 02:16:01,359
+Şu
+
+670
+02:16:10,420 --> 02:16:33,100
+Şöyle düşün. Şurası A, şurası B. Tamam mı? A, B. Şuranın bölgesinin alanını al. Burası ne? Buranın alanı, alan eşittir. A'dan B'ye tekstey.
+
+671
+02:16:38,451 --> 02:16:42,412
+o da eşit. x kare artı 2x, f'
+
+672
+02:16:46,164 --> 02:16:47,764
+Başka bir kaleme geçelim.
+
+673
+02:16:49,664 --> 02:16:50,664
+Ne yapalım?
+
+674
+02:16:51,264 --> 02:16:54,264
+Moral.
+
+675
+02:17:00,308 --> 02:17:02,488
+İşte arkadaşlar, aslında şunu söylüyor sana.
+
+676
+02:17:07,540 --> 02:17:10,660
+diyor ki, ortalama yapıcı oluyor.
+
+677
+02:17:12,100 --> 02:17:13,540
+A'dan da yfx'te x.
+
+678
+02:17:13,700 --> 02:17:15,400
+Bir bölge eğri altındaki alan diyor.
+
+679
+02:17:16,160 --> 02:17:17,240
+Tabanı tarpu diyor.
+
+680
+02:17:17,700 --> 02:17:19,100
+Yüksekliği fd olan.
+
+681
+02:17:20,860 --> 02:17:22,540
+Yüksekliği fd alırsa ne oluyor?
+
+682
+02:17:23,120 --> 02:17:25,000
+İstdörtgenin alanı ya, özel olarak.
+
+683
+02:17:25,160 --> 02:17:25,600
+İstdörtgende.
+
+684
+02:17:26,340 --> 02:17:30,480
+Şuraya, şu alana eşit olacak şekilde bir d eleman abiye vardır diyor.
+
+685
+02:17:31,380 --> 02:17:32,340
+Aslında bunu söylüyor.
+
+686
+02:17:32,959 --> 02:17:49,035
+A'dan B'ye F'ye x'e x
+
+687
+02:17:52,884 --> 02:17:53,724
+Önemli değil.
+
+688
+02:17:55,004 --> 02:17:59,824
+Şuradan dahil ettiğiyle, bakın burada biraz dahil ediyor, burada da atıyor.
+
+689
+02:18:00,304 --> 02:18:05,244
+Dahil ettiğiyle attığı alan birbirine eşit olacak şekilde g eleman AB var.
+
+690
+02:18:05,884 --> 02:18:07,084
+Onu söylüyor sana.
+
+691
+02:18:07,524 --> 02:18:08,644
+Bu g'yi bulabilirsin.
+
+692
+02:18:09,103 --> 02:18:11,884
+G'yi bulma durumunda söz konusu bulabilirsin.
+
+693
+02:18:12,144 --> 02:18:12,864
+Bir problem yok.
+
+694
+02:18:13,783 --> 02:18:15,724
+Şimdi avaraj değeri dedik.
+
+695
+02:18:15,724 --> 02:18:17,844
+Evet, şurası arkadaşlar.
+
+696
+02:18:18,739 --> 02:18:29,139
+e nezir? x 1'den artı 1'e, kökcünde 1 x kare. 1 x x kare dediğine göre, x 1'den, orası ne? Orası şu.
+
+697
+02:18:33,299 --> 02:18:36,139
+1xx kare diyor.
+
+698
+02:18:38,639 --> 02:18:40,959
+Şu bölgenin alanı aslında.
+
+699
+02:18:41,879 --> 02:18:42,579
+Değil mi arkadaşlar?
+
+700
+02:18:42,759 --> 02:18:44,199
+Şurası 1x1, burası 1x1.
+
+701
+02:18:44,739 --> 02:18:46,439
+Dairenin alanı neydi arkadaşlar?
+
+702
+02:18:47,099 --> 02:18:47,759
+Normal alan.
+
+703
+02:18:48,199 --> 02:18:48,819
+Pi r kare.
+
+704
+02:18:50,719 --> 02:18:51,379
+Öyle değil miydi?
+
+705
+02:18:52,259 --> 02:18:53,199
+Pi r kareydi.
+
+706
+02:18:53,719 --> 02:18:55,119
+Bu ne kadar?
+
+707
+02:18:56,020 --> 02:18:56,899
+R'si 1 bunun.
+
+708
+02:18:57,619 --> 02:18:58,000
+Yarısı.
+
+709
+02:18:58,479 --> 02:18:59,759
+Yarısı olduğuna göre pi bölüktü.
+
+710
+02:19:01,747 --> 02:19:21,747
+1'e kare, 1'e kare bölük burası, öyle oluyor, yarısı olduğu için. Pi bölük oluyor arkadaşlar. Dolayısıyla burası 0, eksi 1'den istersen al, ne gelir? x kare bölük 2 gelir, eksi 1 artı 1'den diye verdiği zaman, onlar birbirine götür, 0'ya kalarsın. Burası da pi bölük 2'yi, sonuç 1 bölük 2.
+
+711
+02:19:22,527 --> 02:19:25,367
+İşte avaraj değeri dedi, ortalama değeri pi bölük 2'yi.
+
+712
+02:19:26,648 --> 02:19:27,867
+Evet, burası
+
+713
+02:19:28,852 --> 02:19:46,632
+integral pi bölü 4, pi bölü 2 dedi. Şurada 1 bölü 2 daha var arkadaşlar, onu yemeyeyim. Ben bir an daldım. Bu 2'den dolayı pi bölü 4 oluyor. Tamam mı? Şurası pi bölü 2. Pi 2 ile de çarpıyorsun. Pi bölü 4 oluyor.
+
+714
+02:19:48,092 --> 02:19:50,392
+Evet, işte şu. Ortalama değer.
+
+715
+02:19:51,188 --> 02:19:54,167
+FAB kapalı alanında tanımlanmış bir fonksiyon olsun.
+
+716
+02:19:54,268 --> 02:19:58,768
+A'dan B'ye F'x'e ilişkisi F'c'e çarpıp B'x'e A olacak şekilde
+
+717
+02:19:58,768 --> 02:20:00,768
+C eleman AB vardır diyor.
+
+718
+02:20:00,827 --> 02:20:02,308
+En az önce C eleman AB vardır diyor.
+
+719
+02:20:02,647 --> 02:20:04,268
+İşte bu F'c'yi yalnız bırakıyor.
+
+720
+02:20:04,667 --> 02:20:07,308
+O yalnız bıraktığı D'de avaraj değer oluyor.
+
+721
+02:20:14,708 --> 02:20:18,328
+dairenin alanı, dairenin alanı ne? pi re kare değil mi?
+
+722
+02:20:20,348 --> 02:20:21,708
+şöyle bir daire verildi
+
+723
+02:20:21,708 --> 02:20:25,488
+yarı çapı R
+
+724
+02:20:25,488 --> 02:20:27,868
+bunun alanı
+
+725
+02:20:27,868 --> 02:20:31,888
+pi re kare
+
+726
+02:20:35,667 --> 02:20:38,827
+Bizimkinin yarı çapı 1 ve yarısı.
+
+727
+02:20:41,067 --> 02:20:41,628
+Anladık mı?
+
+728
+02:20:46,772 --> 02:20:57,391
+Neden yarısı diyor. Bak şimdi, ha onu da söyledim sana. Neden yarısı, neden ne söyleyeyim sana? Integralim ne? x1'den artı 1'e. x1 artı 1.
+
+729
+02:20:58,772 --> 02:21:13,772
+Şimdi şöyle, şurada çizdik zaten. Şurası x1, burası artı 1. Yeşil de kökücü de 1x kare bu değil mi? Üstü. Yarısı. Aşağıya söyleseydi sana ne gelecekti aşağıdan? Aşağıdan.
+
+730
+02:21:14,227 --> 02:21:21,907
+x x kare burası. Burası ne olur? Alt kısımdaki eğrisini söyleseydi y x'i eksi kökçü de bir x x kare olur.
+
+731
+02:21:25,207 --> 02:21:32,227
+Orayı söylememiş. Sana demiş ki, x 1'den artı bir sıfırlanmış, fonksiyon diyor, bu diyor. E o zaman tabii ki burası.
+
+732
+02:21:35,827 --> 02:21:37,788
+Önemli değil. Siz de sağ olun.
+
+733
+02:21:40,367 --> 02:21:43,427
+Dairenin ne alalım? İşte yarısı olması ondan, üst kısmı.
+
+734
+02:21:44,927 --> 02:21:52,567
+Yani normalde oradan ne çekiyorsun? y eşittir işte köksüne bir x kare çekiyorsun, y eşittir diyorsun, y eşittir köksüne bir x kare.
+
+735
+02:21:52,567 --> 02:21:56,567
+Eee bu ne? Dairenin üst kısmı. Üst kısmı.
+
+736
+02:21:57,027 --> 02:22:01,187
+Buradan normalde yanılmayın. Bu üst kısmı arkadaşlar.
+
+737
+02:22:02,355 --> 02:22:11,636
+x kare artı 2x1, 1 kemberi çıkıyor deyip tamamını düşünemezsin. Neden? Çünkü bu pozitif, negatif değer almaz, alt kısım olmaz.
+
+738
+02:22:12,636 --> 02:22:26,636
+Şimdi gelelim. Tanım demişim. Kısmi sürekli. F, AB kapalı alanında tanımlı bir fonksiyon olsun. Eğer aşağıdaki 2 şart sağlanırsa F fonksiyonu AB kapalı alanında kısmı sürekli olduğu söylenir.
+
+739
+02:22:27,731 --> 02:22:35,671
+1.sü, ab kapalı aralığında sonlu tane alt aralığa bölünebilir ve f, her bir alt aralıkta süreklidir.
+
+740
+02:22:36,231 --> 02:22:41,572
+2.sü ise, f fonksiyonu, her bir alt aralığın uç noktalarında da limitleri mevcut.
+
+741
+02:22:42,011 --> 02:22:43,772
+O zaman kısmı süreklidir.
+
+742
+02:22:46,891 --> 02:22:52,631
+Eğer not bilgisi, f ab kapalı aralığına kısmı sürekli ise, integre edilebilir.
+
+743
+02:22:53,556 --> 02:23:18,695
+x 1 artı 1 kapalı alınan R'ye bir fonksiyon vermişiz. Diyor ki, şeklini de alalım, bu integral sıfırdır diyor. E ne yapıyorsun? x 1'den sıfıra 2x aldım. Birinci fonksiyonun bu, diğer o. x 1'den sıfıra dedin, 2x dedin. E ne aldın sen o zaman? x 1'den sıfıra 2x dediğin zaman. Şurasını şöyle yazmıyorsun. İkisi duruyor.
+
+744
+02:23:20,244 --> 02:23:24,004
+Aslında şunu diyorsun, x kare bölü 2 yazdık.
+
+745
+02:23:25,524 --> 02:23:29,164
+x kare bölü 2.
+
+746
+02:23:29,564 --> 02:23:34,244
+Yani aslında x kare min türevi 2x, onu direk öyle de yazabilirsin.
+
+747
+02:23:34,324 --> 02:23:36,484
+Min türevi 2x, sağa öyle yazalım.
+
+748
+02:23:37,544 --> 02:23:38,324
+Onu biliyoruz çünkü.
+
+749
+02:23:39,024 --> 02:23:40,324
+2x olduğunu biliyoruz.
+
+750
+02:23:40,804 --> 02:23:41,864
+O zaman direk öyle yazalım.
+
+751
+02:23:46,144 --> 02:23:46,984
+x kare.
+
+752
+02:23:48,308 --> 02:23:52,048
+min türevi 2x, ikisi var burada. x1, 0.
+
+753
+02:23:53,548 --> 02:23:56,488
+Önce 0'ı koydum, sonra x1'i koydum.
+
+754
+02:23:57,028 --> 02:23:59,048
+Oradan ne geldi? Bakın, x1'in kalitesi.
+
+755
+02:24:00,168 --> 02:24:02,748
+Ondan sonra, f2, 1'miş.
+
+756
+02:24:03,228 --> 02:24:04,688
+0'dan bire, dx geliyor.
+
+757
+02:24:05,528 --> 02:24:06,868
+Buradan ne geliyor arkadaşlar?
+
+758
+02:24:07,388 --> 02:24:08,868
+dx, x işte.
+
+759
+02:24:09,668 --> 02:24:11,888
+x gelecek bir, yani bunu ne yapacaksın?
+
+760
+02:24:12,048 --> 02:24:14,528
+x diyorsun, 0'dan biri.
+
+761
+02:24:14,896 --> 02:24:23,156
+Önce 1'i yazıyorsun, sonra 0'ı yazıyorsun, 1'i yazıyorsun. Ya da şu b-sa diye yazdın, 1 geliyor. Ve buradan 0'ı yakalıyor.
+
+762
+02:24:24,536 --> 02:24:27,615
+Ondan sonra, integral hesabını temel görelim.
+
+763
+02:24:30,736 --> 02:24:31,596
+Neyi? [öğrenci]?
+
+764
+02:24:41,108 --> 02:24:42,108
+ve süreklik, yukarıdın bire.
+
+765
+02:24:46,708 --> 02:24:47,087
+çoğumun.
+
+766
+02:24:55,059 --> 02:25:00,680
+1-0'da. Ha şunu söylüyorsun. Şunu diyorsun. Biraz önce şunu söylemiştik ya size.
+
+767
+02:25:04,244 --> 02:25:05,244
+a'dan b'ye.
+
+768
+02:25:07,844 --> 02:25:08,844
+dx
+
+769
+02:25:11,204 --> 02:25:12,564
+fonksiyon ne? 1
+
+770
+02:25:13,724 --> 02:25:14,724
+dx'a
+
+771
+02:25:17,524 --> 02:25:18,364
+sabit
+
+772
+02:25:18,364 --> 02:25:19,484
+yani şuydu
+
+773
+02:25:19,644 --> 02:25:21,244
+şurası lambda ise
+
+774
+02:25:23,604 --> 02:25:25,244
+şuraya lambda çarpanı geliyorum
+
+775
+02:25:26,764 --> 02:25:27,764
+ayy
+
+776
+02:25:27,764 --> 02:25:28,764
+ben yazamadım ne
+
+777
+02:25:37,876 --> 02:25:39,876
+Anladın mı?
+
+778
+02:25:39,876 --> 02:25:42,876
+Yani evet, güzel yazamadım.
+
+779
+02:25:48,915 --> 02:26:00,036
+şöyle diyeyim, lambda, a'dan b'ye, dx, lambdası geliyor, dx yerine x geliyor, onun yerine de b-x'e yazıyor.
+
+780
+02:26:02,735 --> 02:26:08,495
+Şimdi bu teorem çok önemli arkadaşlar, temel teorem.
+
+781
+02:26:09,235 --> 02:26:14,536
+İşte şu, bunu neden burada kullanıyoruz, bakın şu, işte temel teorem.
+
+782
+02:26:16,884 --> 02:26:24,564
+diyor ki, kalkulusun temel teoremi sizlerin için en önemli teoremlardan biri. f, ab kapalı olanında tanımlanmış sürekli bir fonksiyon olsun.
+
+783
+02:26:24,564 --> 02:26:34,703
+Birinci kısım. Eğer diyor, y fonksiyonu her x elemanın ab için, yx eşitsiz, a'dan x'e, pt, dt ise, tanımlanmış ise,
+
+784
+02:26:37,139 --> 02:26:53,939
+a'dan x'e f, t, c, t ile tanımlanmışsa ve bu takdirde g, ab açık aralığında süreylenebilirse, her x eleman ab için, ab açık aralığı için, g üstlük seçik bir f üstlük diyor.
+
+785
+02:26:57,587 --> 02:27:12,968
+f, ab kapalı aralığında kapalı fonksiyon, büyük ama büyük fonksiyon, büyük f, ab kapalı aralığında f'nin bir ters türevi ise, yani ne demek istiyor? Büyük f'nin türevi, küçük fx'ti.
+
+786
+02:27:17,268 --> 02:27:22,087
+ise, a'dan b'ye fx'de x eşittir, büyük fb eşittir f adı.
+
+787
+02:27:23,047 --> 02:27:26,268
+Tamam, bunun her ikisini de siz bileceksiniz.
+
+788
+02:27:26,628 --> 02:27:31,827
+Hatta şu, şunu şöyle de sorarlar, biraz sonra yazayım.
+
+789
+02:27:33,427 --> 02:27:34,067
+Ne böyle değil?
+
+790
+02:27:37,971 --> 02:27:45,492
+a'dan x'e, şöyle de yazılır arkadaşlar, tt dt.
+
+791
+02:27:48,492 --> 02:27:50,791
+O da eşittir, f'nin iki sekil eylesi.
+
+792
+02:27:56,979 --> 02:28:00,979
+Tamam mı? Şunu da göreceksiniz arkadaşlar.
+
+793
+02:28:00,979 --> 02:28:06,979
+Yani bunun düzenlenmiş şekli şudur arkadaşlar. Bu da sizin için önemli bir şey.
+
+794
+02:28:06,979 --> 02:28:13,979
+Yani normalde ne? Bakın şu nedir? Şu integralı almana gerek yok aslında.
+
+795
+02:28:13,979 --> 02:28:16,979
+Türevi lazımsa hiç integralı almıyorsun gördün mü?
+
+796
+02:28:16,979 --> 02:28:18,979
+integral almadan...
+
+797
+02:28:18,979 --> 02:28:20,779
+Bakın...
+
+798
+02:28:22,739 --> 02:28:46,680
+integral almalı, sana bunun türevi lazımsa direkt fonksiyonun x'deki değeri. Bunu daha genelini yazacağız. İşte bak şurada yazmışız. O yazdığını da hemen alta yazmışız. Bunu daha genel olarak şöyle yazabiliriz diyor. Ondan sonra bunu daha da genelleştirebiliriz bunu. Yani demek istiyoruz ki şu, altta ve üstte birer tane başka fonksiyon varsa.
+
+799
+02:28:47,412 --> 02:29:01,011
+alttaki fx, yukarıdaki px olmak üzere. Arkadaşlar, ne yapıyorsunuz? Önce, üstteki fonksiyonu yazıyorsunuz. fx fonksiyonunda.
+
+800
+02:29:01,427 --> 02:29:14,547
+fk olduğu için arkadaşlar, önce üstte t gördüğüm yere fisi x'i yazıyorum. Bunun adı fisi. fisi x'i yazıyorum. Yanına çarpıp finin x'e göre türevini yazıyorum.
+
+801
+02:29:15,227 --> 02:29:27,827
+x'i diyorum, alttaki fonksiyonu yazıyorum ve alttaki fi fonksiyonu yazdım. f yerine ve fi x'i x'e göre türevini alıyorum arkadaşlar. Şu da bunun geneli.
+
+802
+02:29:28,468 --> 02:29:32,468
+Bunlar güzel, buradan çok güzel sorular üretiliyor arkadaşlar.
+
+803
+02:29:32,468 --> 02:29:38,868
+Mesela integral limitli size çok güzel sorular falan üretiliyor.
+
+804
+02:29:38,868 --> 02:29:41,067
+Maksimum minimum soruları gelebilir buradan.
+
+805
+02:29:41,067 --> 02:29:44,868
+Artan azalanlık gelebilir, konkavlık gelebilir.
+
+806
+02:29:44,868 --> 02:29:52,468
+Bunu kullanacağınız, şu an artan azalanlık geldi, maksimum minimum geldi, konkavlık geldi.
+
+807
+02:29:53,556 --> 02:30:19,616
+x kare artı 2x, f'
+
+808
+02:30:20,340 --> 02:30:32,599
+Eğer diyor, x sıfır, pi belirik arasında, büyük x, bakın şu, kosinüs x'den sinüs x'e, kök içinde 1-t kare ds ediyor.
+
+809
+02:30:33,399 --> 02:30:38,340
+Bunun türevini soruyoruz, türevini. Hesaptan önce bakın, türevini.
+
+810
+02:30:38,340 --> 02:30:47,360
+Yardınız mı? Şimdi türevini istediğimiz, ne diyeceğim o zaman? İntegral'in türevini alacağım.
+
+811
+02:30:48,275 --> 02:30:54,075
+Önce, ne yazabilirim ben? Bu integralı parçalayabilirim bakın arkadaşlar.
+
+812
+02:30:55,075 --> 02:30:57,475
+İster böyle parçalayabilirsin.
+
+813
+02:30:58,475 --> 02:31:03,075
+Ya da diğer türlü de yazabilirsin. Bir şey fark etmiyor aslında.
+
+814
+02:31:04,075 --> 02:31:08,275
+Yani kosülüsten sıfıra sıfırdan silüse diye yazabilirsin.
+
+815
+02:31:08,775 --> 02:31:14,075
+Ondan sonra kosülüsten sıfıra sıfırdan silüse diye yazabilirsin arkadaşlar.
+
+816
+02:31:16,115 --> 02:31:17,355
+Şunu da ne yapmışız?
+
+817
+02:31:19,115 --> 02:31:20,195
+Şunu da
+
+818
+02:31:20,195 --> 02:31:25,456
+0'dan kosinüs yükse diye yazdığımdan gittik eksisi koymuşuz arkadaşlar.
+
+819
+02:31:27,015 --> 02:31:28,876
+Tamam mı? Gördünüz mü?
+
+820
+02:31:29,416 --> 02:31:29,956
+Gördünüz.
+
+821
+02:31:30,556 --> 02:31:34,115
+Şimdi şu integrali alıyoruz. Bunun türevini alıyoruz arkadaşlar.
+
+822
+02:31:34,835 --> 02:31:35,796
+Ne yazacağız burada?
+
+823
+02:31:36,195 --> 02:31:37,195
+Bunu yazdığımızda
+
+824
+02:31:37,195 --> 02:31:40,216
+eksisi duruyor.
+
+825
+02:31:41,015 --> 02:31:41,995
+Eksisi duruyor.
+
+826
+02:31:42,384 --> 02:31:44,384
+kökün içine ne yazıyorsun?
+
+827
+02:31:45,824 --> 02:31:48,703
+f gördüğün yere 1x kosinüsü yazıyorsun.
+
+828
+02:31:52,500 --> 02:31:53,259
+yazdım.
+
+829
+02:31:54,680 --> 02:31:56,979
+Karesi geliyor tabii ki orada kare olduğu için.
+
+830
+02:31:58,319 --> 02:32:01,180
+Çarpı, kosülüsün türevine eksisim.
+
+831
+02:32:07,636 --> 02:32:30,175
+şu eksi, bu eksi duruyor. Şu eksi, şu şeyden dolayı arkadaşlar, kosinüsden sıfır verdi ya, onu sıfırdan kosinüsle yazdığım sıfır arkadaşlar. Tamam mı? Yer değiştirebilirsin. Ondan sonra şurada x'i geldi. Yerinde ne yazıyorum? Yerinde, kökün içine, işte, 1 eksi, sin kareksi yazıyoruz.
+
+832
+02:32:35,347 --> 02:32:37,347
+sinüs'ün türev ile kosinüs.
+
+833
+02:32:39,907 --> 02:32:43,907
+E ne geldi burada? 1-kos kare sin kare sinüs x olarak çıkıyor.
+
+834
+02:32:44,188 --> 02:32:46,387
+Eksi sinüs x var sin kare x geldi.
+
+835
+02:32:46,587 --> 02:32:48,587
+Buradan ne geldi? Kos kare x işte 1 oldu.
+
+836
+02:32:49,387 --> 02:32:51,051
+Gördünüz değil mi arkadaşlar?
+
+837
+02:32:57,108 --> 02:33:16,868
+Bunlar önemli arkadaşlar. Ondan sonra bir diğeri problem olan sos. O da eşittir biri yakalıyorsun zaten. Buradan şuraya gidiyor. Sonra da biri yakalıyor. fx eşittir demişiz. 1 bölü x çarpı.
+
+838
+02:33:17,236 --> 02:33:33,015
+1x'e parantez içinde 2t-f üstü tdt ise diyor, f üstü 1 nedir diyor. Yani o zaman büyük f'nin 1'deki değerini soruyor bana arkadaşlar. Sürevinin 1'deki değerini sorulmuş.
+
+839
+02:33:33,376 --> 02:33:43,855
+Birincisi arkadaşlar, birinci yolu direkt diyor, integral hesabını yapabilirsin. fx eşittir, 1 bölük sturuyor, 1 bölük.
+
+840
+02:33:44,180 --> 02:34:03,380
+1x'de kendisini yazdık. 1 bölük duruyor. Yani integral, aynı yazmışız. 1 bölük duruyor. 2t, onun integralı ne? t kare. Şimdi integralinin içinde ne? f üstü var. Neyin türevi? Büyük f'nin türevidir. Kendisidir. f, büyük f, f'dir.
+
+841
+02:34:03,700 --> 02:34:15,560
+O zaman birden x'i yazarsın ve önce x'i yazarsın, sonra 1 yazarsın. Şöyle oluşturduğun fx, bakın böyle bir şey çıktı. fx seçiktir, böyle bir şey çıktı.
+
+842
+02:34:16,240 --> 02:34:25,920
+Buradan arkadaşlarına yaparsın, fx'i çekeceksin. f'nin birdeki değeri nedir? Burada bakın ne var? f1 var. f'nin birdeki değeri nedir arkadaşlar?
+
+843
+02:34:29,683 --> 02:34:33,504
+olduğu için a'dan a'ya integral sıfırdır arkadaşlar.
+
+844
+02:34:35,783 --> 02:34:37,043
+a'dan a'ya
+
+845
+02:34:37,043 --> 02:34:41,283
+f't diyeyim.
+
+846
+02:34:47,028 --> 02:34:48,387
+eşit sıfırdır.
+
+847
+02:34:50,808 --> 02:34:53,448
+Dolayısıyla onun için bu sıfır gerçekten.
+
+848
+02:34:54,808 --> 02:34:56,347
+Sonra fx'i yalnız bırakıyorsun.
+
+849
+02:34:59,407 --> 02:35:00,628
+Burada ne yapmışız?
+
+850
+02:35:01,047 --> 02:35:02,988
+Aynen bırakmışız şöyle.
+
+851
+02:35:04,108 --> 02:35:05,907
+Evet, fx eşittir diye yazmışız.
+
+852
+02:35:05,988 --> 02:35:07,488
+Şunun yerine sıfır yazmışız sadece.
+
+853
+02:35:07,968 --> 02:35:11,528
+İlk başta. Ondan sonra fx'i yalnız bırakmışız.
+
+854
+02:35:11,528 --> 02:35:14,067
+Şurada. Türevini aldık. Ne çıktı? 1 çıktı.
+
+855
+02:35:14,484 --> 02:35:27,744
+O zaman türevin 1'deki değeri 1. Bir diğeri ise, işte direkt türevin alabilirim. Direkt türevin aldığımızda ne geliyor? 1 böl x'in türevi, yani şurayı çarpımın türevi varmış gibi kabul edeceksin.
+
+856
+02:35:28,404 --> 02:35:33,864
+x kare artı 1 böl x duruyor, buranın türevi.
+
+857
+02:35:34,227 --> 02:35:42,187
+diye yazıyorsun. Burada ne yazıyorsun? Fonksiyonda t gördüğün yere x yazıyorsun. x'in türevi 1 geldiği için buraya yanına bir şey gelmiyor arkadaşlar.
+
+858
+02:35:42,787 --> 02:35:55,487
+Burada mesela x kare olsaydı, şurada x kare olsaydı, o zaman burada x gördüğüm yere x kare yazacaktım. Bir de şurada ne gelecekti? x karenin türevi 2x gelecekti.
+
+859
+02:35:56,211 --> 02:36:07,752
+Arkadaşlar, buradan işte f üstü x diye yazdım. Ondan sonra buradan ne gelir? İşte yine biri yazdığı zaman ne gelir? Buradan f üstü 1 eşittir gelir.
+
+860
+02:36:08,331 --> 02:36:18,111
+Buradan 1'den 1 olduğu için şu integral 0 olur arkadaşlar. Şuradan 0 olur. Ondan sonra şuradan 2-f üstü 1 çıkar ve oradan da 1'i elde edelim.
+
+861
+02:36:18,831 --> 02:36:20,171
+Anlaşılmayan bir şey var burada.
+
+862
+02:36:27,860 --> 02:36:52,240
+Arslan kaçanlar var içinizde. [öğrenci] yok, [öğrenci] yok. Tüyaları burada vallahi sorularınız var. Buralar sizin için lazım arkadaşlar. Tamam, teşekkürler. Sorunuz olursa sorun. Burada. Bir kere tekrar edin bunları arkadaşlar. Tamam mı?
+
+863
+02:36:54,291 --> 02:36:58,131
+f'leşik, büyük f'leşik, şöyle t'ye bağlı bir şey vermişiz arkadaşlar.
+
+864
+02:36:59,671 --> 02:37:05,171
+Yani şu, ben şu an bu integrali yap deseler, yapabilir misin?
+
+865
+02:37:06,072 --> 02:37:09,171
+Birincisi kolay, şunu parçalasın, birincisi kolay.
+
+866
+02:37:09,331 --> 02:37:13,651
+Birincisi tkare bölü var, tkare t desen çıkmayacak.
+
+867
+02:37:14,151 --> 02:37:16,271
+Hemen basit integral çıkacak bir integral değil.
+
+868
+02:37:17,271 --> 02:37:20,691
+Şimdi integral çözmeye uğraşırsanız, boşu boşuna uğraşırsın.
+
+869
+02:37:21,615 --> 02:37:34,056
+Arkadaşlar, şimdi fonksiyon verilmiş, integral verilmiş. Maksimum minimum. Minimum dediğine göre arkadaşlar maksimum minimum deyince fonksiyonun neyi lazım bana? Türevi lazım. Direkt türevin alıyor.
+
+870
+02:37:34,275 --> 02:37:42,475
+İşte verdiğimiz o temel teoreme göre p'nin türevi eşittir. Bunun türevi ne oluyor? Fonksiyonun.
+
+871
+02:37:43,379 --> 02:37:58,139
+Burası x olduğu için arkadaşlar, yukarıda x olduğu için, k gördüğüm yere x yazıyorum ve başka da bir şey yazdım. Sadece x olduğu için, x'in x'e göre sürevi 1 geldi. Dolayısıyla şu, sürevi direkt çıktı karşına.
+
+872
+02:37:58,139 --> 02:38:06,739
+E burada ne var? Payda zaten hep pozitif. Yukarısını al, x çarpı, direkt x. Direkt x'i yazın.
+
+873
+02:38:06,739 --> 02:38:10,819
+E buradan tabloyu oluşturdu için, aşağısını aynen denden koyuyor.
+
+874
+02:38:10,995 --> 02:38:20,115
+Buradan, işte, türevin işaretini belirleyebilirsin. Neymiş arkadaşlar? Burada. x şudur diyor.
+
+875
+02:38:20,115 --> 02:38:23,235
+Türev, evet.
+
+876
+02:38:24,147 --> 02:38:51,108
+x'in neye geçiyor olduğu yerde diyor, x'in pozitif oluyor. Bunu tablo odanda görebilirsiniz. Böyle de yazabilirsiniz. Ya da tablo odanda görebilirsiniz. Yani x dersin, işte, şuradan, böyle de yazılabilir. Bir şey yok, bir takılık yok. x, bir eksi x deyip yazabilirsiniz. Daha kolayına bu mu gidiyor? Hangisi kolayınıza gidiyor? Tablo mu gidiyor? Hangisi kolayınıza gidiyor? Böyle üzerinde yazmak mı?
+
+877
+02:38:51,763 --> 02:38:57,563
+Yani x negatifmiş, o zaman eksi x nedir pozitif? 1 ekliyorsun, falan.
+
+878
+02:38:59,563 --> 02:39:01,563
+Tablo daha kolay geliyor değil mi? Evet.
+
+879
+02:39:01,563 --> 02:39:06,164
+Tablo işte bu 0 dedin, öncesine eksi dedin, sonrasına artı dedin.
+
+880
+02:39:06,164 --> 02:39:13,563
+Evet, bu da 1 de 0. Öncesine x'in işareti neymiş? Eksi 3, onun tersini yapıyorsun, artı.
+
+881
+02:39:13,563 --> 02:39:17,963
+Sonrasına eksi koydun. Eee ne oldu benimki işte?
+
+882
+02:39:18,484 --> 02:39:45,804
+Türevinin işaretini belirleyen kısım neresidir? Bunun çarpı mı? Yani burada nedir? Eksidir. Şurada artırır, burada da eksidir. O zaman ne geliyor benim için? Benim için. Türev neymiş? Burada. x'in negatif olduğu yerde türev negatif. Yani fonksiyon azalanmış. Ondan sonra 0 ile 1 arasında neymiş? Pozisyon. Birden büyüğü beni ilgilendiriyor mu burada? Onu da yazarım. Şu.
+
+883
+02:39:46,355 --> 02:39:59,396
+Burada da negatif. Şimdi bana neyi soruyor? Bana minimum soruyor. Minimum. Minimum dediği için arkadaşlar, fonksiyon azalmış, artmış.
+
+884
+02:40:00,000 --> 02:40:14,000
+Burada bakın, sıfırdan önce fonksiyon azalıyor, sonra da artıyor. O zaman benimki burada azalıp, sonra da arttığı için, burası ilgilendiriyor. Yani pn0'daki değeri minimumdur.
+
+885
+02:40:14,000 --> 02:40:22,000
+pn0'daki değerini buraya 0 yazarsam, 0'dan 0 olduğu için o da eşit bir 0'dur. Minimumdur.
+
+886
+02:40:24,948 --> 02:40:26,948
+yapan değerini buluruz diyoruz.
+
+887
+02:40:26,948 --> 02:40:29,448
+Evet, pekala maksimum değeri nedir bunun?
+
+888
+02:40:31,948 --> 02:40:32,948
+Maksimumu ne?
+
+889
+02:40:39,796 --> 02:40:55,956
+1, f'nin 1'deki değeri. 1 diyemeyiz ona. Ne diyeceğiz? f'nin 1'deki değeri diyeceğiz arkadaşlar. f1, f1 diyeceksin. f'nin 1'deki değeri. Eşittir. O da ne? 0'dan bire.
+
+890
+02:41:04,564 --> 02:41:26,904
+Şöyle yazalım. Eşit bir mesele. Ne olsun? A olsun. İşte bunu hesaplasaydık, buradaki değeri bana maksimum verecektik. Yani maksimum değeri nerededir? F'nin 1'deki değeri diyeceğim. Anlaştık mı? F'nin 1'deki değeri maksimum. Aynen. Sıfırdan bire. Aynen.
+
+891
+02:41:27,507 --> 02:41:33,167
+Çünkü, evet, sıfır burası, oradan direkt şuraya 1'e yazıyorum. Sıfırdan direkt şuraya yazmadım.
+
+892
+02:41:34,028 --> 02:41:43,788
+Saatmen ulaşamam. Şimdi anlaştık. Pekala. fx demişiz. Bakın. Şöyle bir fonksiyon vermişiz. Bunun diyor, dönüm noktalarını bulun diyor.
+
+893
+02:41:43,907 --> 02:41:48,367
+Dönüm noktası deyince aklımıza ne geliyor arkadaşlar? İkinci türev geliyor.
+
+894
+02:41:48,979 --> 02:41:54,059
+fonk aldık, dönüm noktası deyince aklımıza ikinci türev geliyor arkadaşlar.
+
+895
+02:41:54,779 --> 02:41:58,700
+O zaman ne yapıyoruz? Önce bir birinci türevini alacağız arkadaşlar.
+
+896
+02:41:59,399 --> 02:42:02,399
+Birinci türev ne? Şurası x olduğu için fonksiyonun x'deki değeri.
+
+897
+02:42:03,219 --> 02:42:06,219
+Yazdık. Ondan sonra ikinci türevini alıyoruz arkadaşlar.
+
+898
+02:42:06,739 --> 02:42:11,243
+Buradan 1 geliyor. Buradan ne geliyor? 3x1 bölü 3, 1-x'in...
+
+899
+02:42:11,283 --> 02:42:20,324
+oradan içinden eksi 1 geliyor. Bir de üzerinde ne var? 1x'in 1 bölüç eksi 1. kuvveti. Yani eksi 2 bölü 3. kuvveti diye geliyor.
+
+900
+02:42:20,963 --> 02:42:35,703
+Buradan düzenle şöyle bir şeyle karşılaşıyorsun. Düzenlediğin zaman türe bu. Türevi nedir arkadaşlar? 1, x yerine 1 yazarsam tanıdık. Bakın x yerine 1, türevi tanıdık.
+
+901
+02:42:36,628 --> 02:42:56,228
+yazdığım zaman paydayı sıfır yapıyor, tanıtsız yapıyor. Ondan sonra x yerine sıfır yazdığımda ve 2'de de veya 2'de diyor, türev sıfır oluyor. 2 yazdığımda da öyle oluyor. Olmaktadır diyor. Dolayısıyla bu değerler dönüm noktası olmak için adaydır diyor.
+
+902
+02:43:04,979 --> 02:43:07,100
+0'dan diye başladın.
+
+903
+02:43:09,020 --> 02:43:14,159
+Ancak diyor, 0 değerini sağında ve solunda işaret değerleri alır.
+
+904
+02:43:15,279 --> 02:43:21,260
+f2 üstü, evet, sadece x eşittir 0'ın sağında ve solunda farklı işaret değerleri alır.
+
+905
+02:43:21,760 --> 02:43:24,420
+Diğer iki değerde ise işaret değişmez.
+
+906
+02:43:25,439 --> 02:43:27,040
+Diğer ikisinde işaret değişmiyormuş.
+
+907
+02:43:27,399 --> 02:43:30,399
+O halde diyor, sadece tek dönüm noktası vardır, o da 0.
+
+908
+02:43:30,868 --> 02:43:41,667
+sıfırın sağında solunda değişiyormuş. İnceleyip görebilirsiniz. Orada değişiyormuş ve o zaman sadece o benim için dönüm noktasıymış.
+
+909
+02:43:42,488 --> 02:43:49,208
+Şimdi bir dakika bir ara veriyorum. Hemen bir dakikada geliyorum arkadaşlar. Devam edeceğim derse.
+
+910
+02:44:48,308 --> 02:44:52,927
+Evet arkadaşlar, şimdi şu örnekte kaldık.
+
+911
+02:44:54,348 --> 02:44:59,408
+Nezel bir şeyini, f diyor, 0-2 aralığında diyor, f'yi vermişiz.
+
+912
+02:45:00,068 --> 02:45:05,908
+Ve f'nin 0'daki değeri diyor, 1 olacak şekilde fonksiyonu tanımlayınca, f fonksiyonu tanımlayınca.
+
+913
+02:45:07,908 --> 02:45:13,648
+Şimdi, 0-2 aralığında diyor, sürevi şu.
+
+914
+02:45:14,144 --> 02:45:16,743
+tn sıfırdaki değeri 1 olacak şekilde diyor.
+
+915
+02:45:17,524 --> 02:45:20,984
+Fonksiyonu tanımlayınca, fx fonksiyonunu soruyor bana.
+
+916
+02:45:21,524 --> 02:45:22,283
+fx'i bilmiyorum.
+
+917
+02:45:23,583 --> 02:45:24,923
+fx eşit soru işareti.
+
+918
+02:45:25,583 --> 02:45:30,324
+Şimdi arkadaşlar, o zaman neyi biliyorum ben?
+
+919
+02:45:30,703 --> 02:45:34,904
+Kökün içinde 1 artı x kare varsa bunun türevinin bu olduğunu biliyorum.
+
+920
+02:45:35,443 --> 02:45:38,583
+Yani şunun neyin türevi olduğunu biliyorum artık, öğrendim.
+
+921
+02:45:39,316 --> 02:45:47,195
+kök içinde 1 artı x karenin türevinin x bölü kök içinde 1 artı x kare olduğunu biliyorum. Buna göre arkadaşlar f' x bu.
+
+922
+02:45:48,136 --> 02:46:03,336
+f' x bu. O zaman sıfırdan x'e, sıfırdan x'e, f' x'i t dt dersem arkadaşlar, f' x'i t dt dersem. Türevi şu, türevi bu alan fonksiyon.
+
+923
+02:46:06,164 --> 02:46:16,224
+Onun da ne olduğunu biliyorum. Şunu normal yazsam, kök içinde f kare artı 1 olarak yapacağız.
+
+924
+02:46:16,224 --> 02:46:20,744
+Şimdi buradan ne geliyor arkadaşlar? Buradan şu geliyor.
+
+925
+02:46:22,344 --> 02:46:29,704
+fx-f'nin sıfırdaki değeri, şu fx-f0 eşittir.
+
+926
+02:46:32,884 --> 02:46:52,463
+fonksiyon, kök cildi x kare artı 1, eksi f'li sıfırdaki değeri 1 dersi. Dolayısıyla f'x eksi f' sıfır eşittir diye yazdım. Ondan sonra burada f'x'i şöyle yazdık f' sıfır buymuş. Çünkü şurası sıfır olduğu için.
+
+927
+02:46:52,896 --> 02:47:00,616
+f' x'e f0, f' x'i yazdık, f0 da 1 değil, oradan ne çıktı, f' x'e f'i çıkartıyoruz.
+
+928
+02:47:01,616 --> 02:47:02,995
+diye yazabilirim.
+
+929
+02:47:03,896 --> 02:47:18,495
+Bunu aslında 0'dan ise f' x'ülü diye yazdım.
+
+930
+02:47:19,092 --> 02:47:20,211
+Öyle yazabilirim.
+
+931
+02:47:20,352 --> 02:47:21,772
+Şurası yazmamın gerekiyor.
+
+932
+02:47:23,412 --> 02:47:24,812
+Şimdi anlaştık mı?
+
+933
+02:47:26,472 --> 02:47:29,292
+Neyiz? Bakın şurası ne? f'yiş olarak çıkıyor değil mi arkadaşlar?
+
+934
+02:47:29,912 --> 02:47:30,852
+Gördünüz mü burayı?
+
+935
+02:47:32,551 --> 02:47:33,972
+Burada bir problemiz var mı?
+
+936
+02:47:37,012 --> 02:47:38,051
+Bu satır anladınız mı?
+
+937
+02:47:42,227 --> 02:47:44,727
+Anlamaya var mı içinizde bu tasarı?
+
+938
+02:47:49,363 --> 02:48:16,463
+Evet, hepiniz anladınız. Çünkü bakın, f'i t olduğu için arkadaşlar, burası f'i t olduğu için ne olacak? fx olacak. fx, f0 olacak. Şu integral. fx, f0, birinci tarafı. İkinci tarafı da arkadaşlar şu. Bunun neyin olduğunu biliyorum. Şu olduğunu biliyorum. fx bu, f0 da bu. fx oradan çıktı.
+
+939
+02:48:16,915 --> 02:48:30,315
+türevi diyor, şu olan, e üzeri x kare olan, f'nin birdeki değeri 2 şartını sağlayan f fonksiyonunu bulunuyor. O zaman ne diyebiliriz? Bize sadece f'nin birdeki değeri verilmiş.
+
+940
+02:48:30,315 --> 02:48:42,315
+f'nin birdeki değeri verildiğine göre, f'yi seçilmişte, c artı birden x'e e üzeri t kare dt şeklinde yazabilirim.
+
+941
+02:48:42,451 --> 02:49:03,252
+Ondan sonra c'yi bilmiyorum. İki yerine 1 yazarsam arkadaşlar burada, iki yerine 1 yazarsam, birden bire burası 0 olur. Pekala f'nin, bakın şurası ne olur? 0 olur. Burası 0 ama c eşittir. f'nin birdeki değerinde 2. O zaman c yerine 2 geçirir.
+
+942
+02:49:06,195 --> 02:49:10,995
+c yerine 2 geldi. Şurada yazmışım zaten. c eşitlik olduğunu görürsünüz.
+
+943
+02:49:12,796 --> 02:49:25,396
+Enzel şekilde arkadaşlar bakın, limit x sıfıra giderken, sıfırdan sinüs ise, e üzeri ifade bölüm parçada da x kare artı sinüs x diye bir fonksiyon veririz.
+
+944
+02:49:25,396 --> 02:49:32,195
+Limitini hesaplayınca gördünüz mü? Hem integral var, limit var, her şey var. İşte burada kurtarırsınız.
+
+945
+02:49:32,404 --> 02:49:37,443
+Arkadaşlar, işte biraz önceki temel türo, integral işareti altında türev.
+
+946
+02:49:38,164 --> 02:49:39,664
+Türev, integral'in türev yani.
+
+947
+02:49:40,524 --> 02:49:46,704
+O zaman arkadaşlar, bunu bazen de şunu, hayradakini yanına çarpan olarak verebilirler arkadaşlar.
+
+948
+02:50:00,000 --> 02:50:02,200
+çarpı integral diye de verebilirlerdi arkadaşlar.
+
+949
+02:50:02,879 --> 02:50:07,579
+0'dan sinüs ise, neyse, şurasını yazarsınız.
+
+950
+02:50:08,319 --> 02:50:09,379
+Burayı da şöyle yazın.
+
+951
+02:50:10,180 --> 02:50:11,979
+diye yazılabilir. Böyle de verilebilir.
+
+952
+02:50:12,500 --> 02:50:16,919
+Bakın, böyle yazılsaydı, x0'a giderken sayı bölü 0.
+
+953
+02:50:18,360 --> 02:50:20,299
+Sonsuz, sonsuz çarpı 0 denir.
+
+954
+02:50:21,059 --> 02:50:24,299
+O zaman da yine aynı üçünü paydaya getiririz arkadaşlar.
+
+955
+02:50:25,759 --> 02:50:27,040
+Demek istediğimi anladınız mı?
+
+956
+02:50:27,636 --> 02:50:29,476
+Böyle de olur, böyle de vermelidir.
+
+957
+02:50:36,755 --> 02:50:52,155
+Anladınız, bir sesimiz çıkmıyor. Tamam. Şimdi arkadaşlar, burada 0 soru verilmiş. O zaman ne var burada? 0 bölü 0 belirsizliği var. Yukarısına bakın, üst sınırda 0. 0'dan 0'a integral 0 oluyor. Aşağı 0'a gidiyor.
+
+958
+02:50:52,155 --> 02:51:00,095
+Sonra 2 ile 0 bölü 0 belirsizliği var. L'Hospital'ı kullanıyorum. Payın türevi bölüp paydanın türevi diyorum. Payın türevi ne arkadaşlar?
+
+959
+02:51:00,788 --> 02:51:08,068
+fonksiyonlar t gördüğüm yere sinüs x yazıyorum ve sinüs'ün türevini de yanına getiriyorum.
+
+960
+02:51:08,068 --> 02:51:16,468
+Kaydanın türevini alıyorum arkadaşlar. 2x artı sinüs x geliyor. x yerine 0 yazdığımda kosinüs 0 1 olduğu için kayda 1 oluyor.
+
+961
+02:51:16,468 --> 02:51:22,468
+Ondan sonra burada da 1, şuradan da e üzeri 0 1, oradan.
+
+962
+02:51:22,932 --> 02:51:32,652
+Bir dakika, üstüne, ha şurası sıfır. E üzeri sıfır gelmiyor. Üstünüsü sıfır sıfır olduğu için buradan E geliyor arkadaşlar. E çarpı 1 bölü 1. Evet.
+
+963
+02:51:33,412 --> 02:51:40,912
+Y'ye geliyor. Yüzler arkadaşlar. İşte senat yoğren. E alp diyor, ab kapalı anla sürekli ver. P.
+
+964
+02:51:41,363 --> 02:51:55,004
+küçük f'nin ters türevi ise, yani büyük f'nin türevi küçük f'se diyor, a'dan b'ye fx değiştir, büyük f'nin a'dan b'ye değeridir. Yani onu da yazdığında fb'x'i f'a olacak.
+
+965
+02:51:57,884 --> 02:52:01,783
+Ondan sonra o temel teorimin içinde vardı, ikisini bizden yazmıştık.
+
+966
+02:52:02,423 --> 02:52:07,824
+Eğer diyor örnekte, fx kosinüs ise diyor, f'nin ters türevi
+
+967
+02:52:08,915 --> 02:52:35,355
+f'nin büyük f'nin büyük f'nin türevi, büyük f'nin türevi, sinüs x olduğundan, sıfırdan pi bölük diye, kosinüs x, bakın, kosinüs min türevi, kosinüs sinüs sin türevi diyorsun. Ondan sonra sıfırdan pi bölük ediyorsun ve pi bölük'i yazıyorsun, sana sıfırı yazıyorsun, biri yok alıyor. Sorununuz mu var arkadaşlar?
+
+968
+02:52:40,051 --> 02:53:04,731
+Evet. Buraya kadar geldik. Ve belli geçiyor. Evet biliyorum bu arada biraz daha zamanı kaybettiğimiz için biraz daha onun için burada bugün böyle oldu arkadaşlar. Bağlantı problemimizi yaşadığımız için Usku. Böyle bir şey yapıyoruz. Şu tablo var.
+
+969
+02:53:09,203 --> 02:53:26,063
+O zaman arkadaşlar, bu integral tablosu, bu tabloyu, türev yardımıyla buluyoruz arkadaşlar. Neymiş? Neyin türevi alfadır? Alfa x artı c'miz. Neyin türevi? 1 bölü x'tir, L'in x'tir. Burada mutlak değer var bakın.
+
+970
+02:53:33,780 --> 02:53:54,400
+artı 1, artı c diye diyorsun. Tabii ki şu farklı. Ondan sonra bakın, n-türev 1 bölüksten şunu yazdım. Bu da eğer fx integralinde, hdk denilinde dd çıkarda hazır olduğu için lnfx ondan çıkıyor. Sinüsün integrali eksi kosinüs x, kosinüsün ki sinüs,
+
+971
+02:53:54,672 --> 02:54:01,872
+sekant kare, min türevi sekant tanjantın, tanjant artı c. Belirsiz integralce sabitli getirmek zorundasındadaklar.
+
+972
+02:54:01,872 --> 02:54:15,172
+Ondan sonra kosekant kare, eksi kotanjant x artı c. Sekant çarpı tanjant, min türevi sekant çarpı tanjantı sekantın, arkadaşlar. Artı c'yi koyuyoruz yine.
+
+973
+02:54:20,308 --> 02:54:22,668
+Şurayı da konuşalım ondan sonra bırakalım.
+
+974
+02:54:23,368 --> 02:54:27,247
+İntegral dx bölü demişiz, kök içinde a kare eksi x kare demişiz.
+
+975
+02:54:27,608 --> 02:54:38,407
+Burada arkadaşlar x eşittir a sinüs t'den gidiyor ve oradaki dönüşüm yaptıktan sonra a'lar gidiyor, art sinüs x bölü a geliyor artı d, a pozitif olmak üzere.
+
+976
+02:54:39,247 --> 02:54:44,228
+dx bölü a kare artı x kare nedir arkadaşlar?
+
+977
+02:54:44,468 --> 02:54:46,728
+1 bölü artı ajant x bölü a'dır arkadaşlar.
+
+978
+02:54:47,443 --> 02:55:13,023
+Ondan sonra, e üzeri a, b, x. Neyin türevi e üzeri a, x'tir derseniz, bir böyle a çarpı e üzeri a, x'tir. A'lar gider. Bunu da yakalarsın. A farklı sıfır olmak üzere. a üzeri x'in, arkadaşlar, a üzeri x'in, normalde bakın bunun türevi nedir? a üzeri x'in türevi, elen a çarpı a üzeri x'tir. Değil mi arkadaşlar? Dolayısıyla,
+
+979
+02:55:13,492 --> 02:55:18,492
+integral'i a üzeri x bölü lna olarak geliyor arkadaşlar.
+
+980
+02:55:18,492 --> 02:55:21,992
+Buradan da bakın, türev'ini aldığımızda ne gelir?
+
+981
+02:55:21,992 --> 02:55:26,992
+Buradan lna gelir, lna'lar gider, bu a üzeri x'i yakalasın şu durumda.
+
+982
+02:55:26,992 --> 02:55:33,492
+Kosinüs hiperbolinin integralisi, sinüs tür, sinüs tür, kosinüs tür arkadaşlar.
+
+983
+02:55:33,492 --> 02:55:40,492
+Tamam mı? Ondan sonra genel bir teknik olarak diyor, verilmiş, f g x
+
+984
+02:55:40,724 --> 02:55:54,804
+çarpı f, gx, bakın f, gx'in fonksiyonu, şöyle parantir, şöyle kıvıralım, tamam mı? Yanında da gx, x, x varsa diyor arkadaşlar, buna değişken dönüşüm uygulayacağız arkadaşlar.
+
+985
+02:55:54,804 --> 02:56:07,844
+İşte gx'e t diyeceğiz, burada, gx eşittir t dersin, gx eşittir t diyeceğiz. Burada, bu sizin için çok önemli bir şey, gx, x, x ne oluyor arkadaşlar?
+
+986
+02:56:08,531 --> 02:56:12,752
+x kare artı 2x, yani x'ini yazmadım ama, şurada x yaz.
+
+987
+02:56:14,491 --> 02:56:23,671
+x kare artı 2x, eşittir dt oluyor arkadaşlar.
+
+988
+02:56:24,671 --> 02:56:29,871
+İşte integral, o zaman, ft dt'yi alıyor.
+
+989
+02:56:30,131 --> 02:56:30,711
+Gördünüz mü?
+
+990
+02:56:31,471 --> 02:56:33,072
+ft dt şeklinde olacak.
+
+991
+02:56:33,072 --> 02:56:34,072
+Bu da,
+
+992
+02:56:35,667 --> 02:56:44,207
+Bu tabloda olanlardan birine belirleyecek arkadaşlar diye söyleyebilirim. Değişken dönüşümünü vereceğiz.
+
+993
+02:56:45,487 --> 02:56:53,847
+Neyin türevi? f't diyecektim. İşte buna da diyecektim ki büyük f't. Neyse o. Büyük f'ta c diyeceğiz değil mi?
+
+994
+02:56:55,768 --> 02:57:01,567
+c diyeceğiz. Hatta böyle bir şey yazmıştık. Ona da f g için. Büyük f g için.
+
+995
+02:57:04,595 --> 02:57:19,315
+artı c diye yazacağız arkadaşlar. Anlaştık mı? Burası böyle. İşte arkadaşlar, bu böyle. Bununla ilgili örneklerde kaldık o zaman. 52 geçiyor. Bırakayım mı? Daha devam edeyim arkadaşlar. Çok mı sıkıldım?
+
+996
+02:57:23,252 --> 02:57:26,971
+C'est komponu yok.
+
+997
+02:57:31,316 --> 02:57:43,156
+[öğrenci] bırakın diyor. Tamam [öğrenci]. [öğrenci] bırakıyorum o zaman. Ne oldu? Değişken dönüşü mü? Aslında bu. Ondan sonra orada kalmış oluyoruz.
+
+998
+02:57:44,996 --> 02:57:57,675
+Orada kalmış oluyoruz grup. Nerede kaldık? Sayfa 17. Örnek 1.
+
+999
+02:58:00,500 --> 02:58:01,840
+Bu hafta 10 ucaktan.
+
+1000
+02:58:04,540 --> 02:58:06,299
+Tamam arkadaşlar, hadi hoşçakalın.
+
+1001
+02:58:07,299 --> 02:58:09,040
+Sağlıcakla kalın, kendinize iyi bakın.
+
+1002
+02:58:09,959 --> 02:58:11,099
+Yarın görüşürüz.
+
+1003
+02:58:12,759 --> 02:58:13,380
+Hoşçakalın.
+
+1004
+02:58:15,739 --> 02:58:18,559
+Sorusu alan varsa sorabiliriz, yoksa kapatıyoruz.
+
+1005
+02:58:21,559 --> 02:58:25,880
+İyi günler [öğrenci], [öğrenci], [öğrenci], [öğrenci]'in.
+
+1006
+02:58:27,956 --> 02:58:31,355
+Valla, yani buradan zaten yazıyoruz.
+
+1007
+02:58:31,355 --> 02:58:37,236
+Sizi tanımak olmadı maalesef.
+
+1008
+02:58:37,236 --> 02:58:38,675
+Sizi tanışamayacağız.
+
+1009
+02:58:38,675 --> 02:58:43,475
+Bu dizi, pandemi dizi tanışmamızı engelledi maalesef.
+
+1010
+02:58:43,475 --> 02:58:45,635
+Hadi hoşçakalın.
