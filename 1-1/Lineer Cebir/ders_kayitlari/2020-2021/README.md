@@ -8,3 +8,4 @@
 | 14 | Güz | Mustafa Sarı | [sube_14/](sube_14/) |
 | 16 | Güz | İsmail Aydoğdu | [sube_16/](sube_16/) |
 | 31 | Güz | İsmail Aydoğdu | [sube_31/](sube_31/) |
+| 32 | Güz | — | [sube_32/](sube_32/) |
