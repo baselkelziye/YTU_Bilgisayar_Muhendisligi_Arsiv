@@ -1,0 +1,2823 @@
+1
+00:10:03,731 --> 00:10:14,131
+Arkadaşlar, merhabalar. Merhabalar hocam. Seste sıkıntı yok değil mi? Net geliyor herhalde. Teşekkür ederim.
+
+2
+00:10:14,131 --> 00:10:23,172
+Merhaba hocam. Evet, sessiz net. 2-3 dakika sonra başlarız. Ben de ufak birikir. Hazırlık edeyim.
+
+3
+00:12:18,100 --> 00:12:38,279
+Şimdi bugün şöyle bir şey yapalım. Ben dönemin genel bir tekrarını yapmış olayım bir iki örnek üzerinde. Bir örneğim var da yetişirse ikinci örneği de yaparız. Yetişmezse ben size paylaşırım onun kodunu. Bir de sınava yönelik sizin sorularınız varsa onlara bakarız.
+
+4
+00:12:45,299 --> 00:12:50,679
+Hepiniz ayrı matematikte gördüğünüz için bunun Cile kodunu yazalım.
+
+5
+00:12:51,259 --> 00:12:54,059
+Bu kodu yazarken bir sıkıntıyla karşılaşacağız.
+
+6
+00:12:54,699 --> 00:12:56,899
+O sıkıntıyı nasıl çözebiliriz?
+
+7
+00:12:57,899 --> 00:13:01,779
+Onu da koda gerçekleştirelim.
+
+8
+00:13:03,159 --> 00:13:09,779
+Biliyorsunuz ki bu algoritma en az kapsama ağacı diyebildiğimiz.
+
+9
+00:13:10,644 --> 00:13:13,964
+problemi çözmek için geliştirilen bir algoritma.
+
+10
+00:13:13,964 --> 00:13:18,844
+Şu ortadaki 10 mu? 18 mi ya? Niye böyle aldı?
+
+11
+00:13:18,844 --> 00:13:23,203
+10'muş. Herhalde resim tam doğru değil.
+
+12
+00:13:23,203 --> 00:13:31,484
+Arka plan siyah olduğu için herhalde. Şu arka planı değiştirelim.
+
+13
+00:13:31,484 --> 00:13:36,364
+Beyaz olunca da sizin gözünüzü alıyormuş.
+
+14
+00:13:37,172 --> 00:13:52,292
+Hani net görünmüyor diyor arkadaşlar. Şöyle yapalım. Gerçi sarı ne kadar iyi olur bilmiyorum de. Normalde bunun kapsama ağacı nedir? Kaç çıkar bunun maliyeti söyleyebilecek olan var mı?
+
+15
+00:14:01,268 --> 00:14:02,307
+Ağacın maniyeti.
+
+16
+00:14:07,700 --> 00:14:33,560
+Şöyle başlarsak, şurayı alacağız. En kısa kenar. Sonraki en kısa kenar buraya alacağız. Yani 1 artı, 2 artı. Sonra şunu alacağız. 3 artı. Sonra 4'ü alacağız. 4 artı. Bütün kenarları. Şimdi 5'i alırsak ne olur? Cycle olur. İşte 5'i almamamız lazım kod içerisinde.
+
+17
+00:14:34,004 --> 00:14:42,004
+7'yi almamamız lazım, 10'u almamamız lazım. Aldığımız zaman, Cyclops'u için bunu çözmemiz gerekiyor.
+
+18
+00:14:42,004 --> 00:14:49,004
+Peki, şimdi algoritmik olarak bir çözüm üretirsek ne oldu? Bunun toplamı 10 mu oldu? Bir çözüm üreterim, ondan sonra bunu kodlayalım.
+
+19
+00:14:49,004 --> 00:14:55,004
+Bu çözümümüz ne olacak? Önce kenarların, edge'lerin sıralanması olacak.
+
+20
+00:14:58,995 --> 00:15:12,975
+Definition yapılması lazım arkadaşlar. Bu grafı ya komşuluk listesiyle ya da komşuluk maddesiyle programda göstermemiz gerekiyor. Biz en basit tarih ile komşuluk maddesini kullanabiliriz.
+
+21
+00:15:13,796 --> 00:15:24,875
+Yani ne oluyor? 3, 5, 5 çarpı 5'lik bir komşuluk maddesi olacak. Bu maddesi oluşturacağız. Sonra Graph Definition'da bir Edge listesi tutacağız.
+
+22
+00:15:26,196 --> 00:15:30,855
+Acaba bu grafinin içerisinde bu maddesin edge listesini nasıl elde edebiliriz?
+
+23
+00:15:30,855 --> 00:15:34,696
+Sonra bu edge listesini sort edeceğiz.
+
+24
+00:15:34,696 --> 00:15:41,036
+Tabi bu edge list dediğimiz şey hangi veri formatında olabilir?
+
+25
+00:15:41,036 --> 00:15:45,396
+Yani biz edge listi nasıl bir değişken türüyle tutabiliriz?
+
+26
+00:15:53,427 --> 00:15:58,408
+[öğrenci] bir şey dedim de anlamadım. Gürültü geliyor.
+
+27
+00:16:02,327 --> 00:16:03,867
+Matris de tutabilir miyiz?
+
+28
+00:16:04,607 --> 00:16:09,028
+Matris olur ama matrisi nasıl tutacağız? Şimdi A'dan B'ye uzunluk 1.
+
+29
+00:16:10,467 --> 00:16:15,427
+Şimdi matris olması için şöyle bir şey diyeceğiz. Yani 3 sütunlu bir matris tutabiliriz.
+
+30
+00:16:17,028 --> 00:16:20,268
+Her bir şey için. İşte bu birinci kenar. İşte A kenarından.
+
+31
+00:16:20,884 --> 00:16:42,884
+B kenarına. Uzunluğu ne? İşte mesela 1. Ama şimdi maddis olması için verilerin aynı türde olması lazım. Yani şu biri karakter olarak saklamak, string olarak saklamak bize ekstra yük çıkardır. Dizi olarak saklayabiliriz. Yani dizi olarak sakladığımızda da 3 tane dizi. O zaman birinci dizimiz kaynağı, ikinci dizimiz...
+
+32
+00:16:43,187 --> 00:17:07,268
+Hedefi, üçüncü dizimizde maliyeti gösteren bir şey olur. İşte en tane nokta, kenarımız varsa en tane şey tutabilir. Sanki bu [öğrenci] söylediği dizi olabilir. Ama bu sefer de kod yazarken işte birinci dizi kaynak, ikinci dizi şey hedef, değişken isimleriyle çok uğraşacağız. [öğrenci] Structure dedi. Structure uygulamak güzel olur. Yani [öğrenci]'un dediğiyle [öğrenci] dediğini birleştirirsek bir Structure dizisi tutacağız aslında.
+
+33
+00:17:07,827 --> 00:17:14,228
+Bu Structur'un içerisinde bir Source düğüm olacak, bir Destination düğüm olacak, bir de Wait gibi bir şey olacak.
+
+34
+00:17:14,228 --> 00:17:22,927
+Sonra bunu Sort edeceğiz. Neye göre Sort edeceğiz? Buy. Wait'e göre Sort edeceğiz bu listeyi. Ondan sonra ne yapacağız?
+
+35
+00:17:22,927 --> 00:17:28,827
+Edge List'in başından itibaren kenarları ekleyeceğiz.
+
+36
+00:17:35,220 --> 00:17:40,220
+Neye dikkat edeceğiz?
+
+37
+00:17:40,220 --> 00:17:50,220
+Without Cycle oluşturmadan bu eklemeyi yapalım. İşte sorun burada.
+
+38
+00:17:50,220 --> 00:17:58,220
+Acaba bunu nasıl yazıyor? Önce bunun teorik temelini anlatayım. Ondan sonra kod yazmaya geçeceğiz. Şu 4-5 adımı detaylandıracağız.
+
+39
+00:18:00,243 --> 00:18:09,603
+Bu iş için birkaç farklı veri yapısı var arkadaşlar. Bunlardan en çok kullanılan Disjoint Set dediğimiz Data Structure.
+
+40
+00:18:13,715 --> 00:18:29,155
+Distroinset matematikten ne biliyoruz? Ayrık kümeler. Ne demek ayrık küme? İşte iki tane kümemiz var. Bunların kesişimi sıfır demek. A kümesi, B kümesi. İşte burada x elemanı olsun, burada y elemanı olsun, burada 1 olsun, burada a olsun gibi.
+
+41
+00:18:41,556 --> 00:18:59,655
+kabul edeceğiz. Bu problemi bunu nasıl uygulayabiliriz? Şimdi DASA Stratger olarak buna baktığımızda sizin n tane elemanınız varsa n element her biri ayrı bir küme. Yani n element varsa n tane set var.
+
+42
+00:19:08,531 --> 00:19:17,891
+kenarları birleştire birleştire bir ağaç oluşturuyoruz. Şimdi iki kenarın birleştirilmesi Union dediğimiz operasyona karşılık gelecek.
+
+43
+00:19:17,891 --> 00:19:29,411
+Union. Yani A kümesi ile B kümesinin birleştirilmesi. Bu iki kenar birleştirince tek bir kenarmış gibi davranacak.
+
+44
+00:19:35,476 --> 00:19:45,916
+Bunları birleştire birleştire n elemanlı n setten bir sete bir kümeye bunu birleştirebilirim.
+
+45
+00:19:45,916 --> 00:19:50,236
+Yapacağımız şey temel anlamda bu olacak. Peki bunu probleme uygulayalım.
+
+46
+00:19:50,236 --> 00:19:53,716
+Bu veri yapısını anladık mı bu arada? Var mı sıkıntımız?
+
+47
+00:19:57,556 --> 00:20:15,816
+Bunu o zaman age problemine uyguluyoruz. Şimdi benim en tane age'im varsa, bunlar mesela ne olabilir? A'dan, zaten sıraladık bunları, B'ye, A'dan C'ye. Bunun maliyeti var, işte bir olsun falan falan böyle gidiyor. Maliyet bizim için önemli değil.
+
+48
+00:20:24,884 --> 00:20:42,884
+Bunlara ID numaralar verdim. İlk başta diyorum ki birinci aşamada N tane Disjoint Set'im var. O zaman birinci kümemiz 0, sonra 1, sonra 2, böyle N diye gidiyor.
+
+49
+00:20:44,384 --> 00:21:10,744
+Bir veri yapısında saklamam gerekiyor. Disjoint set kendisi bir veri yapısı da arka planda ya bunu linkli listeyle ya da diziyle saklarsınız. Şimdi benim en tane elemanım varsa ene elemanlı bir dizi açıyorum. 0.1.2.n. 0.1.2.n. 0.1.2.n.
+
+50
+00:21:12,180 --> 00:21:39,759
+Bu birinci operasyon. Yani kenarları her birini kümede temsil ettik. Sonra diyeceğiz ki Unify, buna mesela şey diyelim, List diyelim. List üzerinde herhangi iki tane kümeyi birleştir. Burada şöyle bir kural vereceğiz. Diyeceğiz ki iki no'lu küme ile üç no'lu kümeyi birleştir. Bu kodu da birazdan yazacağız.
+
+51
+00:21:40,276 --> 00:21:46,276
+2'nin küme id'sini, 3'ün küme id'sini aktarabilirim. Hatta şöyle yapalım şurayı.
+
+52
+00:21:46,276 --> 00:21:56,276
+Veya 3'ün küme id'sini, 2'nin küme id'sini aktarabilirim. Bu kuralı baştan nasıl uyguladıysam devamı da ona göre gelecek. Hep aynı kod o şekilde çalışacak.
+
+53
+00:21:56,276 --> 00:22:03,148
+Diyelim ki biz mesela 2'nin küme id'sini 3'e uyguladığımızda bu dizi nasıl hale gelir? Bu dizi şu hale gelecek.
+
+54
+00:22:07,412 --> 00:22:34,652
+Şurada n-1 kadar var. 0'da herhangi bir değişiklik yok. 1'de herhangi bir değişiklik yok. 2'de herhangi bir değişiklik yok. Ama bundan sonra 3'ün küme id'si 2 oluyor. 0, 1, 2, 3. Şurada n-1. Tamam mı? 2'nin küme id'sini 3'ün küme id'sini hakkında. Bunu tersten de yapalım. Yani 3'ün küme id'sini 2 de yapabilirdim. Hiçbir şey fark etmez. Yine o ikisi birleştirmiş olur. Sonra mesela 8 Unify dediğimizde.
+
+55
+00:22:35,763 --> 00:22:58,523
+List. Sekizin küme id'sini sekize aktarayım. Sekiz burada ilk başta nedir? Sekiz şurada sekizdir. Ben ne yapıyorum? Üçün küme üç ile sekizi unified dediğimde ne olacak? İşte şu gidecek daha sonra. Bunun küme id'si, üçün küme id'si neydi? İkiydi. Burayı da iki yapmış olacağım.
+
+56
+00:23:02,451 --> 00:23:14,172
+Herhangi, ilk başta hepsi ayrık olan kenarlarımı birleştiriyor. Bu birleştirme işlemini, peki, Kurus Kavallı Yurtmasında neye göre yapacağız?
+
+57
+00:23:14,172 --> 00:23:21,851
+Şimdi ben bir kenar ekledim. Bunun bir küme numarası var bu başta. Sonra bir kenar daha ekleyeceğim. Mesela şu ikiyi ekleyeceğim.
+
+58
+00:23:21,851 --> 00:23:28,172
+Eklerken bakacağım. Acaba bu iki daha önceden bir ile aynı kümeye girmiş mi?
+
+59
+00:23:28,564 --> 00:23:35,224
+Aynı kümüneye girmişse, demek ki bunlar cycle oluşturabilme ihtimalleri var. O zaman bunu atmayacağız.
+
+60
+00:23:35,224 --> 00:23:44,443
+Mesela şöyle örnek üzerinde gidelim. Burada bizim beş tane köşemiz var. Kaç tane kenar var?
+
+61
+00:23:44,443 --> 00:23:49,304
+1, 2, 3, 4, 5, 6, 7. Yedi tane kenar için bir dizi oluşturuyorum.
+
+62
+00:23:49,304 --> 00:23:51,604
+3, 6, 7.
+
+63
+00:23:51,955 --> 00:24:17,096
+Sıfır, bir, iki, üç, dört, beş, altı. Önce hepsi kendisine ait kümede. İlk önce hangisini aldık? Şunu aldık, biri aldık. Şimdi biri alınca biri zaten kendisine ait kümedeyli. İlk defa olduğu için kimseyle birleşim durumu yok. Sonra ikiye aldık. Şimdi ikinin, yani şunlara da şöyle isim verelim arkadaşlar.
+
+64
+00:24:17,715 --> 00:24:43,915
+Şu 1 nolu kenar olsun, ağırlıklarının bu 2 nolu kenar olsun, şu 3 nolu kenar, şu 4 nolu kenar, şu 5 nolu kenar, şu 6 nolu kenar, şu da 7 nolu kenar olsun. Şuradaki ID'lere göre. Şimdi ben 1'i ekledim, sonra 2'yi ekleyeceğim. 2'nin küme numarası 2. Bunlar birbiriyle daha önce çapışmıyorlar. Bu da böyle kalacak aynen. Sonra 3'ü eklediğimde, şimdi 3'ün küme numarası.
+
+65
+00:24:44,756 --> 00:24:51,076
+Ne olacak? Pardon, 1 ile 2 şeyi birleştireceğiz arkadaşlar. Şurada ufak bir şey yanlış söyleyeyim.
+
+66
+00:24:51,076 --> 00:24:58,476
+Diyeceğiz ki ben 2'yi kümeye atıyorsam, yani minimum spanictriye atıyorsam, 1 ve 2 artık aynı kümenin elemanları.
+
+67
+00:24:58,476 --> 00:25:05,740
+O zaman ne oluyor? Mesela diyelim ki bunun ID'si de 1 olsun. 2, 2 de yapabiliriz. Sonra 3'ü eklediğimde...
+
+68
+00:25:05,971 --> 00:25:26,211
+Üçün küme numarası ne? Üç. Kümeye atabilir miyim? Atabilirim. Çünkü şu ana kadar hükümeler bir bir. Bunu da bir yapacağız. Bu şekilde devam edeceğiz. En son öyle bir noktaya geldik ki eklemeye gerek kalmayacak. Çünkü saygı oluşturma durumu meydana gelecek ve işlemi tamamlayacağız.
+
+69
+00:25:26,867 --> 00:25:46,547
+Disjoint Set, BV yapısı dizilerle oluşturulabiliyor, bir de ağaçlarla oluşturulabiliyor. Ağaçlarla oluşturmanın mantığını da birazdan söyleriz. Önce bunun kodunu bir yapalım, yazalım. Bu problem şuradaki ağaç üzerinde, grafik üzerinde ağaç oluşturalım. Minimum 10 maliyeti bir görelim. Ona göre hani sorunuz varsa bakarız.
+
+70
+00:25:54,612 --> 00:26:05,132
+Kenarlarını tutmamız için bir veri yapısına ihtiyacımız var. Önce şey yapayım, önce grafı oluşturalım. Şu an devsiyi görüyorsunuz değil mi arkadaşlar?
+
+71
+00:26:06,451 --> 00:26:07,332
+Görüyoruz hocam.
+
+72
+00:26:07,332 --> 00:26:20,332
+Tamam. Grafı şöyle, kodu hızlı yazmak için biraz böyle hani kural dışına çıkacağım. Yani bunu daha genelleştirebilirsiniz. Çünkü...
+
+73
+00:26:20,980 --> 00:26:26,099
+İkişinin mantığını anlayalım. Sonra zaten üzerinde istediğiniz gibi oynama yapabileceksiniz.
+
+74
+00:26:27,640 --> 00:26:32,760
+Diyorum ki şöyle globalde bir değişken tanımlayıp yapmadığımız bir şey biliyorum.
+
+75
+00:26:33,519 --> 00:26:43,260
+Grafım olsun ve bu grafım en fazla max'a max kadar boyuttan olsun diyeceğim. Max'ı da şurada tanımlayalım.
+
+76
+00:26:48,819 --> 00:27:15,239
+Define Max 15 diyelim. Ve şurada mail içerisinde grafın en değişikliğini oluşturayım. Şuradaki örneğimiz kaç tane? 3-5 tane. En eşittir 5. Grafa burada bir yer açalım. Verileri okuyalım.
+
+77
+00:27:17,140 --> 00:27:21,140
+Tabi uzun uzun yazmak gerekcek birazcık fazla şey var.
+
+78
+00:27:21,140 --> 00:27:23,140
+Bugrafın sıfıra sıfırı.
+
+79
+00:27:28,147 --> 00:27:31,227
+Veya Initial Dation'ı yapsak. Neyse, böyle yazalım.
+
+80
+00:27:31,227 --> 00:27:37,187
+Şimdi sıfırıncıyla sıfırıncının kesişimi yok. Maliyet zaten sıfırdır.
+
+81
+00:27:37,187 --> 00:27:40,187
+Grafın sıfıra biri.
+
+82
+00:27:40,187 --> 00:27:44,187
+Ondan sonra...
+
+83
+00:27:44,187 --> 00:27:51,187
+Şimdi biz ABCD dedik ya şunlara. Sıfırdan bire maliyet bir.
+
+84
+00:27:51,187 --> 00:27:55,083
+Şunu şöyle alalım, kontrolcüye.
+
+85
+00:27:58,324 --> 00:28:16,463
+Sıfırdan ikiye maliyet, sıfırdan ikiye doğrudan maliyet var mı? Yani buradan bire var, ikiye yedi birim maliyet var. Harfleri direkt sayı olarak söylediğimi kabul ediyorum. Sonra üçe on birim maliyet var.
+
+86
+00:28:20,819 --> 00:28:34,639
+Dörde maliyet var mı? Dörde de beş birim var. Hepsini yazdık herhalde. Şunu şöyle kopyalıyorum.
+
+87
+00:28:42,483 --> 00:28:47,983
+Şimdi sıfıra sıfır, birebir. Şunları şöyle değiştireceğim.
+
+88
+00:28:52,403 --> 00:28:58,543
+Birinci kenar 1'den 2'ye ne kadar var? 3 birim maliyet var.
+
+89
+00:29:01,104 --> 00:29:12,624
+Tabii şunu yapacağız. 1-0, şimdi bu 1-0 1'dir. 0'a 1-1 ise, bunu simetrik yapmış olalım. 1-1-0 olacak.
+
+90
+00:29:14,423 --> 00:29:18,264
+Şuna 7 birim maliyet değilmiş. Şöyle 3 birim maliyet.
+
+91
+00:29:19,923 --> 00:29:26,143
+3. Birden başkasına maliyet var mı? Yok. Diğerleri de 0.0.
+
+92
+00:29:33,332 --> 00:29:35,332
+İkincisi için bakalım.
+
+93
+00:29:41,044 --> 00:29:56,264
+2'ye 0, 2'ye 1, 2'ye 2, 2'ye 3, 1'e 0, 1'e 1, 1'e 2.
+
+94
+00:29:56,524 --> 00:30:00,983
+Yanlışımda da yazılmadık arkadaşlar. 1'e 2, 1'e 3, 1'e 4.
+
+95
+00:30:00,983 --> 00:30:06,844
+Bir dakika burada bir hatamız var. 2'ye 0, 2'ye 1, 2'ye 2.
+
+96
+00:30:07,667 --> 00:30:26,147
+2'ye 3, 2'ye 4. 2'ye 2, 0 olacak. Şurada bir şey yanlış yazdık. 2'ye 0, 1. 2'ye 2, 0. 2'ye 3, 3. Başka da yok.
+
+97
+00:30:27,747 --> 00:30:29,247
+2'ye 3, 3.
+
+98
+00:30:33,652 --> 00:30:39,812
+Yok bir dakika yanlış yaptım arkadaşlar. Şu slide'ı şöyle alayım da bir bakayım.
+
+99
+00:30:39,812 --> 00:30:58,812
+Şimdi 0'a 0, 0'a 1, 1. 0'a 2, 7 birim. 0'a 3, 10 birim. 0'a 4, 5 birim. Evet bu birinci düğümün komşuları.
+
+100
+00:30:59,604 --> 00:31:12,503
+Sonra 1'e 0, 1'e 1, 1'e 2, 1'e 3, 1'e 4. Bunu kullanıcıdan da alabilirdik de. Örnek üzerinden yapalım diye uzun uzun veri girmesi zor olur. Kontrol etsin aslında.
+
+101
+00:31:12,503 --> 00:31:20,003
+1'e 0, 1 oldu simetrik. 1'e 1, 0. 1'e 2, 3 prim.
+
+102
+00:31:20,180 --> 00:31:44,360
+1'e 3 zaten 0 birim. 1'e 4 0 birim. Şimdi 2'ye 0'a geldik. Yani C'nin komşularına bakıyoruz. Bu 2'ye 0'da 7 birim var. Şöyle zaten şey. 2'ye 1'de 3 birim var. Tamam. 2'ye 2'de 0. 2'ye 3'de 4 birim var. Tamam.
+
+103
+00:31:45,140 --> 00:32:06,539
+2'ye 4'te herhangi bir şey yok. Komşuluk yok. O da 0 oldu. 3'e 0. 3'ün 0'ı olan uzaklığı 10. Çünkü 0'a 3, 10'dur. 3'e 1. 1'e 3 neydi? 0'dı. 3'e 1 zaten ne olacak? 0 olacak.
+
+104
+00:32:10,996 --> 00:32:18,316
+3'e 2, 4 birim. 2'ye 3, 4 birimdi. O zaman bu da 4. 3'e 3, 0.
+
+105
+00:32:22,067 --> 00:32:48,048
+3'e 4. 3'e 4'te ne oluyor? 2 birim. Gelelim son düğümümüze. 4'ün 0'a olan uzaklığı 5. 0'a 4 çünkü 5'ti. 4'ün 1'e olan uzaklığı 1'e 4, 0'dı bu da şey.
+
+106
+00:32:48,531 --> 00:32:54,132
+4'ün 2'ye olan uzaklığı 2'ye 4, 0'da bunu da 0 yapacağız.
+
+107
+00:32:56,132 --> 00:33:00,531
+4'ün 3'e olan uzaklığı 3'e 4, 2'yi de bunu şey yapacağız.
+
+108
+00:33:00,531 --> 00:33:02,132
+Şu da 0 olacak.
+
+109
+00:33:02,132 --> 00:33:04,132
+4'e 4.
+
+110
+00:33:04,132 --> 00:33:09,531
+Tamam. Bundan sonra yapacağımız şey bizim grafı oluşturduk.
+
+111
+00:33:09,531 --> 00:33:13,531
+Kruskal Aligoritması diye bir tane fonksiyon yazalım.
+
+112
+00:33:13,531 --> 00:33:15,531
+My Kruskal diyelim.
+
+113
+00:33:21,172 --> 00:33:27,312
+Matris de zaten global olduğu için parametre olarak göndermeye gerek yok.
+
+114
+00:33:27,312 --> 00:33:32,692
+Tekrar ediyorum, global değişkeni hızlıca kodu yazalım, işin mantığını özellikle anlayalım diyelim.
+
+115
+00:33:32,692 --> 00:33:34,352
+void
+
+116
+00:33:34,352 --> 00:33:36,992
+Microsoft
+
+117
+00:33:36,992 --> 00:33:38,212
+k-y-post
+
+118
+00:33:38,212 --> 00:33:39,092
+değil
+
+119
+00:33:39,092 --> 00:33:41,492
+my-post
+
+120
+00:33:44,627 --> 00:34:09,228
+İlk başta verimiz varken bizim liste oluşturmamız gerekiyor. Kenarlar listesi için de şöyle bir yapı tutacağım arkadaşlar. Benim kenarlarım olsun. Structure Edge diyelim. Bir kenarda ne bilgisini tutarız? Kaynak düğüm vardır. Buna işte U diyelim veya Source diyelim.
+
+121
+00:34:09,780 --> 00:34:21,780
+Ondan sonra Destination düğüm vardır. Bir de bu ikisi arasındaki maliyet bilgisi vardır. Buna mesela Edge diyorum. Şimdi bunların bir listesini tutmam gerekiyor.
+
+122
+00:34:23,780 --> 00:34:35,780
+Type Definition, Structure, Edge List diyorum. Her bir şey bunlardan olacak. Ve burada şöyle bir şey diyebiliriz.
+
+123
+00:34:37,844 --> 00:35:03,744
+Edge türünde bir data tutalım ve bu datanın büyüklüğü de max kadar olsun. Yani bir yerine burada da şey tutabilirdik, dinamik memora albukasyon kullanabiliriz. Ve şurada n diye bir tane şey tutacağım. Yani max kadar en fazla yer olsun ama ben n tanesini kullanacağım diyeceğim. Bu bilgiyi de burada tutuyorum. Şuraya da Edge List diye tutalım.
+
+124
+00:35:04,211 --> 00:35:29,872
+Veya şöyle diyelim, Edge List diyelim şöyle büyük olsun. Tamam. Şimdi burada yine global değişkenle bu problemi çözelim. Bir tane Edge List türünde bir değişkenim olsun. Bu değişkenim mesela önce E Listleri tutayım.
+
+125
+00:35:31,987 --> 00:35:37,987
+Yine aynı türden Edge List'i tutacağım ama, MST List'i tutacağım.
+
+126
+00:35:37,987 --> 00:35:43,987
+Yani şu grafın bütün kenarlarını önce şuraya alacağım, burada yedekleyeceğim.
+
+127
+00:35:43,987 --> 00:35:49,987
+Bunların bazılarını da Minimum Spanik Tree listesine alacağım. O zaman Minimum Spanik Tree'yi oluşturmuş olacağız.
+
+128
+00:35:49,987 --> 00:35:56,619
+Şu global değişkenler dediğim gibi, mühim değil, parametre geçişiyle bunu yapabiliriz. Şimdi geldik, Kuruz Kargo yapması.
+
+129
+00:35:57,300 --> 00:36:10,620
+İlk başta yapacağım şey, grafın şu matrisin içinden edge sistemi oluşturmak. O zaman bütün grafı da oluşturmamız gerekiyor. O zaman integer, iyi bilgisayar diyelim.
+
+130
+00:36:11,900 --> 00:36:15,100
+Burada doğrudan grafı gezeceğiz.
+
+131
+00:36:21,684 --> 00:36:28,344
+Düğümü kendisiyle tekrar kontrol etmeye gerek yok. İyi birden başlatıyorum.
+
+132
+00:36:29,104 --> 00:36:32,184
+Birden başlattım. İ küçüktür, n'e kadar.
+
+133
+00:36:32,684 --> 00:36:35,503
+Burada n bilgisi...
+
+134
+00:36:38,064 --> 00:36:43,704
+Nerede? Ha bir de şurada şey yapalım arkadaşlar. Global'de n olsun da şunu doğrulaştırmayalım.
+
+135
+00:36:43,963 --> 00:36:48,043
+Yani buraya tekrar n'i şöyle gönderebiliriz. Hadi burada böyle yıkalım.
+
+136
+00:36:48,659 --> 00:36:53,039
+N diyorum. İntajer, küçük N diyelim.
+
+137
+00:36:56,099 --> 00:37:01,039
+Birden başladık. Bu N'e gelene kadar E++.
+
+138
+00:37:02,659 --> 00:37:04,500
+Bütün maddesi gezeceğimiz için.
+
+139
+00:37:05,219 --> 00:37:06,219
+For.
+
+140
+00:37:06,619 --> 00:37:09,119
+J'ye eşittir sıfırdan başladım.
+
+141
+00:37:09,699 --> 00:37:11,199
+J küçük.
+
+142
+00:37:11,759 --> 00:37:13,259
+Ne diyebilirim buraya?
+
+143
+00:37:14,804 --> 00:37:39,903
+Neye mi diyeceğim, başka bir şey mi diyeceğim? Bütün maddesi gezmem gerekiyor. Yani şuna bakacağım, şuna, bunlara bakacağım. Bir de şey hatırlayın, maddes simetrik olduğu için her noktayı teker teker gezmeme gerek yok. Örneğin 0'a 4'ü gezdiysem, 4'e 0'ı gezmeyeceğim demektir. O zaman buraya ne yazarız değişken olarak?
+
+144
+00:37:42,452 --> 00:37:43,992
+N bölü 2 olabilir mi?
+
+145
+00:37:44,752 --> 00:37:49,612
+N bölü 2 dersek şöyle olur. Şuraya kadar geliriz mesela.
+
+146
+00:37:50,391 --> 00:37:52,432
+Burada kalır. Şunu da gezmemiz lazım.
+
+147
+00:37:53,212 --> 00:38:00,112
+Yani ben şunu gezeceğim, şunu gezeceğim, şunu gezeceğim, bunu gezeceğim, bunu gezeceğim. Ondan sonrakinde şunu gezmeyeceğim, şu 4'ünü gezeceğim.
+
+148
+00:38:00,112 --> 00:38:03,692
+Sonrasında 3'ünü gezeceğim, sonrasında ikisini gezeceğim, sonrasında 1'ini gezeceğim.
+
+149
+00:38:04,212 --> 00:38:04,972
+Yani buraya
+
+150
+00:38:06,012 --> 00:38:07,032
+iyi dersek
+
+151
+00:38:07,923 --> 00:38:11,503
+Her defasında bir noktayı eksik gelinmiş oluruz.
+
+152
+00:38:12,283 --> 00:38:16,123
+Yani tam dörde dörtlük, pardon beşe beşlik matrisin,
+
+153
+00:38:16,123 --> 00:38:19,184
+diagonalinin üstünü veya altını gezmek bizim için yeterli.
+
+154
+00:38:19,184 --> 00:38:23,543
+Dolayısıyla buraya i diye bir şey söylemek bu amaca uygun bir durumdur.
+
+155
+00:38:24,043 --> 00:38:26,363
+Peki, j küçüktür, i dedik, j art.
+
+156
+00:38:26,363 --> 00:38:32,243
+Hocam, şey yapsak, j eşit diliği yapıp, j küçüktür ne desek, öyle de olur mu?
+
+157
+00:38:33,076 --> 00:38:44,456
+J'yi i'den başlattık. Birisi üst üçgen mantrisi, öbürü alt üçgen mantrisi gezer. İkisi de aynı şey. İkisi de tabu kabul ediyor. Hiçbir şeyi fark ettirmez.
+
+158
+00:38:44,456 --> 00:39:00,115
+Şimdi burada bakacağımız şey ne olacak arkadaşlar? If. Bu grafın, şu grafın, eğer içerisindeki değer sıfırdan farklıysa, sıfırdan farklıysa ne demek? Bir komşuluk var demektir. Grafın i'sinin.
+
+159
+00:39:01,331 --> 00:39:15,072
+C'si farklıysa sıfırdan burada bir komşuluk var. O zaman ben bu komşuluk bilgisini edge list diye ifade ettim. Şuradaki e-list diye ifade ettim. Hatta gelişimine de edge list diyelim.
+
+160
+00:39:15,072 --> 00:39:20,152
+E-list diyelim de orada. Bunun içerisinde bunu yedekleyelim.
+
+161
+00:39:20,152 --> 00:39:21,211
+E-list.
+
+162
+00:39:23,351 --> 00:39:25,311
+Şuraya büyük L gibi.
+
+163
+00:39:26,831 --> 00:39:28,051
+E-listin.
+
+164
+00:39:28,628 --> 00:39:49,387
+İçerisine veri ektireceğiz. Şimdi e-listin içerisinde ne tutuyoruz? Data tutuyoruz. Bu data nelerden oluşuyor? Bu data edge'lerden oluşuyor. Şimdi e-listin datasına bir veri okuyacağız. Şimdi bu bir dizi olduğu için şurada n dediğim şey o dizinin hangi hücresine yazacağımı söyleyecek bana. İlk başta şöyle bir şey yapalım hatta.
+
+165
+00:39:55,123 --> 00:39:59,123
+Ne diyeyim. Bunu ilk başta sıfıra aktarayım arkadaşlar.
+
+166
+00:40:01,123 --> 00:40:15,123
+E-list'in datasının E-list'in inci elemanına git ve bu elemanın source idlesi ne olsun? Benim i düğümüm olsun.
+
+167
+00:40:22,356 --> 00:40:46,736
+Eninci elemanına git. Buradaki Destination düğümüz, Hedef düğümüz. Bu da J olsun. Artık şöyle alabilirim. E-list'in datasının eninci elemanının ağırlığı da şu grafın içindeki i'ye J alanı olsun.
+
+168
+00:40:49,940 --> 00:41:15,940
+Grafta yeni bir kenar bulduğumda şu n değerini güncellemem gerekiyor. O zaman e-liste n değerini arttıracağım. Bu döngü tamamlandığında, şunlar tamamlandığında, grafı tamamen gezdik. Kaç tane kenar varsa bu kenar sayısına göre bu kenarların hedef düğüm, kaynak düğüm ve ağırlık bilgilerini
+
+169
+00:41:16,884 --> 00:41:35,904
+Listeyi aldık. İkinci algoritmada ikinci kısmı ne diyordu? Kurskal algoritmasına diyor ki sırala. Edge listemizi sıralayız. Neye göre? Ağırlığa göre sıralayacağız. Şimdi o zaman bir sıralama kodu yazalım.
+
+170
+00:41:35,904 --> 00:41:44,284
+Bir structure'ı sıralamaktan hiçbir farkı yok. Biz structure sıraladık sizinle. Void, Sort diyeceğim.
+
+171
+00:41:44,639 --> 00:42:10,800
+İntej listem zaten şeyde hani globalde tanımladığım için tekrar parametre aktarmaya gerekir. Şimdi integer iyi bir gücü, basit bir sıralama algoritması yazacağız. Şimdi sıralama yaparken structure üzerinde swap yapmam gerekiyor. Swap'ı ne üzerinden yapacağız? Şu edge'in, işte şuradaki iki tane elemanım var. Bunların swap olması gerekecek. O zaman edge türünde bir temporary şey oluşturayım.
+
+172
+00:42:12,403 --> 00:42:14,403
+düğüm oluşturayım.
+
+173
+00:42:14,403 --> 00:42:18,403
+bir eleman oluşturayım. Ondan sonra sıralama yapacağız.
+
+174
+00:42:18,403 --> 00:42:22,403
+Burada kaç tane şey var? e-list nokta n kadar eleman var.
+
+175
+00:42:22,403 --> 00:42:26,403
+O zaman bubble sort gibi bir algoritma ile bunu sıralamak mümkün.
+
+176
+00:42:26,403 --> 00:42:30,403
+İsterseniz hazırsız quick sort falan da kullanılabilir.
+
+177
+00:42:36,083 --> 00:42:40,344
+Nokta n'e gelene kadar nokta oluyor.
+
+178
+00:42:40,344 --> 00:42:42,344
+Y++.
+
+179
+00:42:42,344 --> 00:42:44,344
+Score.
+
+180
+00:42:44,344 --> 00:42:46,344
+Sonra bunda j eşittir.
+
+181
+00:42:46,344 --> 00:42:47,844
+Buradan başlatılıyor.
+
+182
+00:42:47,844 --> 00:42:49,844
+j küçüktür.
+
+183
+00:42:49,844 --> 00:42:53,344
+Elist nokta n'e gelene kadar.
+
+184
+00:42:53,344 --> 00:42:55,344
+j++.
+
+185
+00:42:55,344 --> 00:42:58,844
+Şimdi if.
+
+186
+00:42:58,844 --> 00:43:01,844
+Elist nokta.
+
+187
+00:43:01,844 --> 00:43:04,043
+Ne yapacağız? Data.
+
+188
+00:43:04,179 --> 00:43:30,439
+Bunun jincisinin weightini alacağız. Bunu neyle kıyaslayacağız? Bunun j artı birincisinin weighti ile kıyaslayacağız. Bu mesela büyükse diyelim j artı birincisinin v'si ile kıyaslıyorum. İki tane kenarı kıyaslayacak. Eğer burada kıyaslama sonucunda böyle bir durum varsa işte temporary.
+
+189
+00:43:31,027 --> 00:43:54,707
+E-listin datasının jincisini alayım. Sonra E-listin datasının jincisine e-list data j artı biri, yani şunu kopyalayayım. Yine buna da eşittir.
+
+190
+00:43:56,947 --> 00:44:16,107
+Bu iş bittikten sonra sıralanmış oluyor. Gelin önce biz şuraya kadar yaptıklarımızı test edelim. Buraya kadar bir arızalı bir şey var mı? Yok mu? Tabii test etmek için görmemiz lazım. Görmek için de bir print yapmamız gerekiyor. O zaman bu print içinde bir print fonksiyonu yazayım.
+
+191
+00:44:17,787 --> 00:44:20,927
+Print kinsin diyelim. Ne alacağız buraya?
+
+192
+00:44:21,492 --> 00:44:29,992
+Mesela bir tane, hiçbir şey almaya da gerek yok da. Çünkü zaten globalde birleşken. Şimdilik bir şey almayalım. Daha sonra gerekirse bir şeyler ekleriz.
+
+193
+00:44:31,992 --> 00:44:44,492
+Bir kere burada bir tane döngüm var. E-listinin içerisinde en tane E-c olduğu için. For, i eşittir. Sıfırdan i küçüktür.
+
+194
+00:44:45,396 --> 00:45:07,636
+E-listin eninci değerine kadar git diyorum. Bas bas. Print app. Bir tane %d yaz. Bir %d daha yaz. Bir %d daha yaz. Şu araya bir nokta linki koyalım. Bir nokta koyalım. İki nokta sonra alt satıra geçelim. Birincisi ne olacak? E-listin.
+
+195
+00:45:09,676 --> 00:45:10,636
+E-incisi.
+
+196
+00:45:12,340 --> 00:45:34,740
+Pardon, A-List'in datasının iyi görmediği, datasının iyincisinin source'unu göster. Sonra virgül destination, sonra ağırlık.
+
+197
+00:45:38,996 --> 00:45:44,496
+Hatta burada şunu da yapalım arkadaşlar. Bir print yaparken bir de maliyet hesabı yapalım. Cost diyelim.
+
+198
+00:45:45,996 --> 00:45:51,496
+Eşittir 0. Zaten hazır geziyoruz. Bu da boşa gitmesin.
+
+199
+00:45:53,496 --> 00:45:57,796
+Diyelim ki Cost artı eşittir.
+
+200
+00:46:06,260 --> 00:46:16,260
+Şimdi tamam. Peki şöyle bir şey yapacağım şimdi ben. MyCruzcal'ı çağırdım. MyCruzcal'ın içerisinde listemi oluşturdum.
+
+201
+00:46:16,260 --> 00:46:29,964
+Dediğim gibi Print List. Sıralamadan önce bir yazdır. Sonra sırala. Sonra bir daha Print List yap.
+
+202
+00:46:31,668 --> 00:46:37,168
+Şimdi birinci vizede hatırlarsanız böyle bir stringin öncesi sonrası bir şey vardı.
+
+203
+00:46:37,168 --> 00:46:41,168
+Before Sorting diyelim.
+
+204
+00:46:41,168 --> 00:46:45,668
+After
+
+205
+00:46:50,996 --> 00:46:53,996
+O zaman şuraya ne yapacağız? Bir karakter pointer alacağız.
+
+206
+00:46:54,695 --> 00:46:56,195
+str olarak.
+
+207
+00:46:56,896 --> 00:46:58,596
+Ve bunu şurada yazalım.
+
+208
+00:46:59,596 --> 00:47:00,896
+Pardon, buraya değil.
+
+209
+00:47:02,796 --> 00:47:05,396
+Bunu print yapacağız çünkü. Şuraya.
+
+210
+00:47:06,796 --> 00:47:08,796
+Ve şurada den printf.
+
+211
+00:47:09,596 --> 00:47:11,796
+Bir tane %s yazacaksın.
+
+212
+00:47:12,996 --> 00:47:16,972
+Sonra alt satıra geçeceksin. Bu %s'de ne olacak? str olacak.
+
+213
+00:47:18,356 --> 00:47:23,976
+Herhalde bir şey yoktur. Bir bakalım, derleyelim buraya kadar ki kodumuzda bir şey var mıymış? Desktop diyelim.
+
+214
+00:47:24,816 --> 00:47:30,536
+Hocam 17. mi? 19. satırda mı? Bir hatamız var. Kaşaya parantezi kapatmayı unutmuşuz.
+
+215
+00:47:30,695 --> 00:47:37,876
+Tamam, söyleriz. Söyleyelim. O ufak tepe katalara. Nerededir? Şurada, evet.
+
+216
+00:47:42,376 --> 00:47:44,896
+Şunlar da şey arkadaşlar, bu uyarılar.
+
+217
+00:47:47,155 --> 00:47:56,876
+Şunları, prototiplerini yazmadığımız için böyle. Bunları şuraya almak için olur. Yapıdaşı tırmayalım.
+
+218
+00:47:59,695 --> 00:48:02,775
+Kurus kalın falan şeyini de yazalım.
+
+219
+00:48:07,539 --> 00:48:09,599
+Bir de sortu, bir de sortu da.
+
+220
+00:48:18,452 --> 00:48:34,512
+Evet. Biri sıfırda sıfır varmış. İkiye sıfırda sıfır varmış. Sıfır dışındakileri niye yazıyor? Bir bakalım acaba burada bir şey mi yaptık?
+
+221
+00:48:37,012 --> 00:48:44,911
+Graf'ın isinin c'si sıfırdan farklıysa dedik. Eclis'in içerisinde bunları aktarmaması gerekiyor.
+
+222
+00:48:50,579 --> 00:48:52,579
+Beş dediğimizde.
+
+223
+00:48:58,195 --> 00:49:08,195
+Şu sıralama algoritmasında, yok sıralama algoritmasında, şurada bir tane fazladan işlem yapıyoruz. Şunu azaltmamız lazım.
+
+224
+00:49:08,195 --> 00:49:24,195
+Ama sıralama algoritmasından önce yazdırırken şurada bir hatamız var. Şimdi sıfırdan n'e, j'den birden n'e, sıfırdan i'ye kadar alacağız.
+
+225
+00:49:24,851 --> 00:49:38,251
+G++ İ'sini C'sini aldık. Şuradaki değerlerde bir sıkıntı olabilir mi? Şurayla karşılaştıralım arkadaşlar.
+
+226
+00:49:47,027 --> 00:49:57,667
+Şimdi A'yı 0 dedik. 0'dan 0'a 0. 0'dan 1'e 1. Ondan sonra 0'dan 2'ye 7. 0'dan 3'e 10. 0'dan 4'e 5. Bu doğru.
+
+227
+00:49:58,387 --> 00:50:06,627
+B'ye 1 dedik. 1'den 0'a 1. 1'den 1'e 0. 1'den 2'ye 3. 1'den 3'e 0. 1'den 4'e 0.
+
+228
+00:50:07,567 --> 00:50:14,587
+Sonra 2'den 0'a C'ye 2 dedik. 2'den 0'a 7. 2'den 1'e 3. 2'den 2'ye 0. 2'den 3'e 4.
+
+229
+00:50:15,251 --> 00:50:41,432
+2'den 4'e 0, sonra 3'den 0'a 10, 3'den 0'a 10 doğru, 3'den 1'e yol yok. 3'den 2'ye 1'im 4, 3'den 3'e 0, 3'den 4'e 2 doğru. 4'den 0'a 5, 4'den 1'e 0, 4'den 2'ye 0, 4'den 3'e 2, 4'den böyle 0. Burada bir problem görünmüyor.
+
+230
+00:50:43,987 --> 00:50:46,587
+Merhaba, başka bir yerde sıkıntımız nerede var?
+
+231
+00:50:49,687 --> 00:50:51,087
+Bir daha çalıştı diyeyim.
+
+232
+00:50:53,387 --> 00:50:57,287
+Şimdi 1'e 0'da 0 gösteriyor. Böyle bir şey yok.
+
+233
+00:51:01,396 --> 00:51:09,896
+Şu listeyi oluştururken, grafın iyisini, iyisini aldık. Şuraya bir breakpoint koyalım bakalım ne varmış.
+
+234
+00:51:15,443 --> 00:51:17,443
+Şöyle alalım değerleri.
+
+235
+00:51:25,556 --> 00:51:34,556
+Evet, Source 1'e 0. 1 ile 0 arasındaki ne olacak ağırlığımız? 1 birim olacak.
+
+236
+00:51:36,556 --> 00:51:37,556
+Şunu da alalım.
+
+237
+00:51:39,556 --> 00:51:40,556
+Evet, Watch.
+
+238
+00:51:45,556 --> 00:51:47,556
+Sonra L'yi bir arttıracağız.
+
+239
+00:51:55,284 --> 00:52:12,284
+Bu da sıfır değil. Sonra 2'ye sıfır aldı. Hocam yazdırma yaparken iki defa destek nasıl mümkün? Bakayım.
+
+240
+00:52:18,931 --> 00:52:25,011
+Şurası, tamam. Teşekkür ederim. Sıkıntımız yokmuş demek.
+
+241
+00:52:27,092 --> 00:52:31,971
+Tamam, 1, 7, 3, 10. Çünkü bunlar hepsi sıfırdan farklı olacak ki onları göreceğiz.
+
+242
+00:52:32,612 --> 00:52:37,072
+Şurada da sıralanmış halini görürüz. Demek ki kabahatimiz yokmuş. Sadece şuradaki ufak bir şeymiş.
+
+243
+00:52:37,951 --> 00:52:44,791
+Peki, sıraladıktan sonra biz joint set gibi artık algoritmanın en önemli kısmı.
+
+244
+00:52:45,492 --> 00:52:57,052
+Kenarları ekleyelim. Şimdi kenarları eklerken önce diyeceğiz ki bütün kenarlar kendilerine ait kümedeler. Ve bu kendilerine ait kümeleri göstermek için bir set tanımlayacağım.
+
+245
+00:52:58,252 --> 00:53:07,172
+Int sets diyelim mesela kümeler. Hangi küme hangi kümeye aittir bunu direkt set üzerinde söyleyebiliriz. Bu küme max kadar uzunluğa sahip olsun diyorum.
+
+246
+00:53:08,532 --> 00:53:11,192
+O zaman önce bu max kümesini bir dolduralım.
+
+247
+00:53:12,403 --> 00:53:21,503
+Nerede doldurabiliriz? Mesela n tane elemanım olacağı için şurada başta doldursak olur.
+
+248
+00:53:24,144 --> 00:53:29,503
+n tane kenarım olduğu için e-listin n bilgisini şurada kullanabilirim.
+
+249
+00:53:29,503 --> 00:53:32,563
+i eşittir sıfır, i küçüktür.
+
+250
+00:53:33,764 --> 00:53:35,583
+e-list nokta n.
+
+251
+00:53:38,195 --> 00:53:44,295
+Pardon burada dolduramam çünkü şurada... Yok, yanlış yere yapıyoruz.
+
+252
+00:53:45,295 --> 00:53:50,395
+Sortta değil, kuruskalda yapacağız. Şuradan sonra yapabiliriz.
+
+253
+00:53:54,003 --> 00:54:00,223
+Şu seti yukarıya alacağım. Yapısal programlama dilindeyiz.
+
+254
+00:54:00,223 --> 00:54:03,123
+E-listim-ni-i-plus-plus
+
+255
+00:54:08,884 --> 00:54:20,884
+Herkes kendine ait kümede olduğu için set'in iyisi eşittir, iyidir diyeceğim. İlk başta yapacağımız şey bu.
+
+256
+00:54:22,884 --> 00:54:29,884
+Sonra artık span liste, e-listten veri aktarıyoruz. Yani mst listinin içerisinde veri aktarıyoruz.
+
+257
+00:54:29,884 --> 00:54:34,884
+Önce gelin şu mst listinin içerisindeki şeyi de bir sıfırlayalım.
+
+258
+00:54:35,507 --> 00:55:00,307
+mstlist.n ilk başta kenar yok burada. Sonra programı şu sıraladığım listeyi gezeceğim. Tabi gezmek için yine orada bir değişkenlikler var. Sıfır bir şeyden geziyorum. Gezerken şuna bakacağız arkadaşlar. Şu kağıt üzerine geri dönelim. Orada bakalım.
+
+259
+00:55:02,739 --> 00:55:20,339
+Kuruz kalı hatırlayın. Kenarları sıralıyorduk. 1 var, 2 var, 3 var, 4 var, 5 var, 7 var, 10 var.
+
+260
+00:55:20,339 --> 00:55:30,339
+Şimdi birinin bağlı olduğu düğümler A'dan B'ye. Şimdi ben biri A'dan B'ye bilgisiyle alacağım.
+
+261
+00:55:30,835 --> 00:55:51,096
+Bunu ağaca ekleyeceğim. Ama eklerken diyeceğim ki acaba A ve B aynı şeyde mi? Kaynak ve hedef, düğümler aynı kümeye dahil edilmiş. O zaman bunun Source ve Destination bilgilerini alacağım. Küme kontrolü yapacağım. Şöyle bir şey yapacağız.
+
+262
+00:55:51,860 --> 00:56:18,159
+Sonra aynısını ikinci eleman için, üçüncü eleman için küme kontrolü yapacağım. Eğer bunlar aynı kümede değillerse ekleyeceğim. Aynı kümedeyse diyeceğim ki bu saykılı oluşturur, bunu eklemeye gerek yok. O zaman şöyle bir şey yapalım. Bizim bir tane bir kere kümemiz var. Set diye küme oluşturduk. Şurada. Diyorum ki bu işe başlarken en başta mesela şöyle en kötü haliyle yazalım sonra bunu iyileştirelim.
+
+263
+00:56:18,708 --> 00:56:37,067
+Mesela bütün listeyi gezeceksem, i eşittir sıfırdan başlayalım. Sonra i küçüktür, e list nokta, n'e kadar, edge listemde kaç tane düğüm varsa oraya kadar. Zaten sıralanmış halde. i++ gezerim.
+
+264
+00:56:37,688 --> 00:56:43,847
+Minimum Spanik Tree oluşturmak için n tane düğüm varsa kaç tane kenar seçmem gerekiyor arkadaşlar?
+
+265
+00:56:49,715 --> 00:56:52,275
+En düğüm için kaç tane kenar seçmemiz gerekiyor?
+
+266
+00:56:58,164 --> 00:57:18,644
+Şöyle bakacak olursak, bunu seçtik, bunu seçtik, şunu seçtik, şunu seçtik. 1, 2, 3, yani en düğüm için en eksi bir tane kenar seçeceğiz. Bizim ama listemiz kaç tane kenardan uçuyor? 3, 6, 7. Şimdi biz bütün kenarları kontrol ediyoruz. Bunu birazdan iyileştireceğiz.
+
+267
+00:57:25,972 --> 00:57:32,112
+Her bir kenarın uç noktalarının, Sourcer ve Destination'ın kümelerine bakacağım.
+
+268
+00:57:32,632 --> 00:57:38,512
+O zaman iki tane küme kontrolü yapacağım. Buna mesela şurada iki değişken oluşurayım.
+
+269
+00:57:39,032 --> 00:57:41,852
+Set1 ve Set2 diyorum.
+
+270
+00:57:43,892 --> 00:57:48,492
+Set1 bana bir bilgi söyleyeleri tutacak.
+
+271
+00:57:48,751 --> 00:57:50,811
+Set2 bir şey söyleyecek. Bu bilgiler nerede?
+
+272
+00:57:51,572 --> 00:57:52,592
+Her bir düğümün
+
+273
+00:57:53,364 --> 00:57:57,724
+Şu bilgi, şuradaki şeyin de. Bunun için bana bir tane yardımcı fonksiyon yazayım.
+
+274
+00:57:58,724 --> 00:58:01,304
+Point Get Set diyelim.
+
+275
+00:58:02,804 --> 00:58:08,004
+Şu listemizi alsın. Set listesini alsın dizi olarak.
+
+276
+00:58:11,004 --> 00:58:13,304
+Bir de buraya düğüm numarası alsın.
+
+277
+00:58:13,304 --> 00:58:14,384
+Yani node diyeyim hadi.
+
+278
+00:58:17,524 --> 00:58:19,304
+Bu düğüm numarasının hangi...
+
+279
+00:58:19,871 --> 00:58:36,871
+kümeye ait olduğumuzu söylüyor. Yani return basit bir fonksiyon. Ne yapacağız? Setin içerisindeki not bilgisine, üçüncü not mu, beşinci not mu, bu bilgi neyse, bunun içindeki sayıyı gönder diyeceğim. Başka da bir şey yok.
+
+280
+00:58:47,059 --> 00:59:13,799
+Datasını, iyi incisinin, source'unun bilgisi. Şimdi bunu ne yapacağım? Fonksiyona göndereceğim. Fonksiyona gönderirken, find a fonksiyonuna set'i gönder ve ikinci olarak source düğümün bilgisini, id'sini gönder. İşte üçüncü düğüm. Üçüncü düğümü şu dizi üzerinden kontrol ediyorum. Ve bu set bir oluyor.
+
+281
+00:59:14,452 --> 00:59:23,452
+Aynısı, Set2 olarak, bu da Destination düğüm için yapılacak bir operasyon.
+
+282
+00:59:23,452 --> 00:59:29,452
+Şimdi bu Set1 ve Set2 burada elde edildikten sonra yapacağım şey ne?
+
+283
+00:59:29,452 --> 00:59:34,924
+If Set1 different from Set2
+
+284
+00:59:36,436 --> 00:59:44,875
+Set1 ve Set2 birbirinden farklıysa, işte bunlar, demek ki bir minimum Spanik Tree'ye eklenebilir düğümler. Aynıysa eklemeyeceğiz.
+
+285
+00:59:45,655 --> 00:59:47,956
+O zaman diyorum ki ben şu mst listime
+
+286
+00:59:50,775 --> 00:59:51,795
+Data olarak
+
+287
+00:59:53,596 --> 00:59:57,675
+bir şey ekleyeceğim. Şimdi mst listinin datasında şu an 0 vardı.
+
+288
+00:59:58,195 --> 00:59:59,476
+Herhangi bir şey yok.
+
+289
+00:59:59,996 --> 01:00:02,795
+Hatta data değil arkadaşlar, şurası n olacak yanlış yarasın.
+
+290
+01:00:03,059 --> 01:00:29,779
+mstlistin datasının mstlist.n'incisine git, yukarıdaki edgelist'imi ekle. Hangisini ekleyeceğiz? Edgelist'in datasının i'incisini ekleyeceğiz. Bakın değer kopyalaması yapmıyorum. Adresini kopyalıyorum aslında. Edgelist'im var. Sıfırıncı düğümden birinci düğümü olan edge.
+
+291
+01:00:30,420 --> 01:00:37,340
+Bu Edge List'in datasındaki verileri alıyorum. Minimum Spanik Tree'i aktarıyorum. Küçükten bir yere zaten sıralamış olduk.
+
+292
+01:00:38,100 --> 01:00:49,620
+Minimum Spanik Tree içerisinde yeni bir tane eleman oldu. Bundan sonra gelecek elemanı almak için mstlis.n++ diyeceğiz.
+
+293
+01:00:50,640 --> 01:00:53,720
+Bir şey yapmam gerekiyor burada. Ne yapacağız?
+
+294
+01:00:56,280 --> 01:00:57,300
+Şimdi ben
+
+295
+01:00:58,195 --> 01:01:20,596
+Kaynak düğüm ile hedef düğümü minimum spanning tree'ye eklediysem, mesela şurada birincisinde kaynak düğümü, hedef düğümü, diyeceğim ki mesela önceden A, B, C'de yani 0, 1, 3, 4, 5, 0, 1, 2, 3, 4, 5, bu 0. küme, bu 1. küme, bu 2. küme, bu 3. küme, bu 4. küme.
+
+296
+01:01:20,976 --> 01:01:38,236
+Artık şu ikisi aynı kümede olacaklar. A ve B. Yani ben A'ya 0 demiştim, B'ye 1 demiştim. Diyeceğim ki union yap. Bu union yaptığımda liste 0 ile 1'in id'leri aynı olsun. Yani artık şunu da 0, 0 yapacağım.
+
+297
+01:01:47,251 --> 01:02:12,152
+kümeye eklemiş olacağız. Yani bir Unilem işleminin kodu kalıyor basitçe. O zaman Unify diyelim. Unify nodes diyelim hatta. Bu Unify yaparken yine bizim şurada kümemiz var. Seti gönder diyorum. Seti gönderdikten sonra ne yapacağız? Hangi ikisini set etmek istiyoruz? Set birin.
+
+298
+01:02:13,940 --> 01:02:24,179
+Bilgisi var elimde. Set 2'nin bilgisi de var. Şu dizi üzerinde Set 1 ve Set 2'yi birleştir. İki tane alt hükümemiz var. Bu alt hükümeyi birleştiriyoruz.
+
+299
+01:02:24,179 --> 01:02:40,059
+O zaman Unify'da da ufak bir kod yazacağız şuraya. Unify Nodes. Ne alıyoruz? Bir tane Set alıyoruz. Bir tane Source alıyoruz.
+
+300
+01:02:40,755 --> 01:02:42,415
+Bir tane de Destination alıyoruz.
+
+301
+01:02:43,055 --> 01:02:46,375
+Veya küme 1, küme 2 diyelim. Hatta set 1, set 2 diyelim. Daha düzgün oldu.
+
+302
+01:02:51,315 --> 01:02:55,475
+Peki, şimdi burada bu birleştirme işini nasıl yapabiliriz?
+
+303
+01:02:57,535 --> 01:03:00,555
+Sıfırla 1'i aynı kümeye aktaracaksam,
+
+304
+01:03:03,155 --> 01:03:07,515
+en basitinden diyebiliriz ki, hocam işte şu gelen bir no'lu adrese giderim.
+
+305
+01:03:08,307 --> 01:03:17,627
+Bu bir nolu adresteki şu değeri alırım. Sonra 0 nolu adrese giderim. Bu değeri buraya kopyalarım. Bu olur mu? Burada bir hata gören var mı?
+
+306
+01:03:17,627 --> 01:03:35,147
+0 buraya kopyalarım. Mesela buraya gelseydi list unify, union diyelim list 0,8 gelseydi 8'in indisine gidecektim. 8'in indisindeki değeri alacaktım.
+
+307
+01:03:35,295 --> 01:03:45,295
+Sonra 0'ın indisindeki değeri, 8'in indisindeki değeri alacağız. Burada bir sıkıntı var mı? Tek seferde bu çalışır mı sizce?
+
+308
+01:03:52,052 --> 01:03:53,211
+Kendim skutular.
+
+309
+01:03:59,059 --> 01:04:01,059
+Şimdi şöyle bir örnek göstereyim.
+
+310
+01:04:03,059 --> 01:04:05,059
+Beş tane elemanımız olsun.
+
+311
+01:04:10,356 --> 01:04:32,576
+Unified Disjoint Set olarak. Şimdi Union yaptım. İlk başta hani L üzerinde 0 ile 3'ü Union yaptım. İlk başta bunlar 0, 1, 2, 3, 4. 0'ın kodunu 3'ün koduna aktarım. Veya 3'ü 0 aktarım. Önemli değil. Kodu nasıl ona göre uyarlarız. Şimdi 0'ı 3'e aktardığımı kabul ediyorum. O zaman bu ne olacak? 0 olacak.
+
+312
+01:04:38,643 --> 01:04:59,183
+Sıfırı, şöyle üçü, pardon, ikiyi üçe aktaralım. Şimdi ikiyi üçe aktarmak ne demek? İkinin kodunu al, ikinin kodu iki. Üçün koduna yapıştır. Üçün koduna yapıştırınca burası iki olacak.
+
+313
+01:04:59,668 --> 01:05:26,688
+Ama buradaki sıfır ne oldu? Daha önceden 3 ve sıfır birleşmişti. Yani 3 ile sıfır aynı kümeye attık. Sonra 2'yi de bu kümeye atmak istiyorum. Ama 2'yi de attığımda ne oluyor? Bu sefer 2 ile 3 aynı kümede sıfır farklı kümede kaldı. Bakın bu tek bir satırda bir şey yapılacak bir şey değil gibi değil mi arkadaşlar? Önce bunu çalıştırdığımda sonra bunu çalıştırdığımda başka bir sıkıntı çıkmıyor. O zaman burada baştan itibaren bir kontrol yapmam gerekiyor.
+
+314
+01:05:27,059 --> 01:05:53,199
+Diyeceğim ki, şunu şuna aktaracaksam, 0, 3'e aktaracaksam, bu küme, yani şu hangi kümede ise, onu diğer kümeye aktarır gibi bir kontrol yapacağız. Dolayısıyla tek seferde, yani O1 zamanda olacak bir şey değil, ON zamanda olacak bir şeyden bahsediyoruz. Buna dikkat etmemiz lazım. Onun için bu ON karmaşıklıktan daha iyi algoritmalarla, ağaçlarla temsil ediyoruz. Birazdan gelirsin.
+
+315
+01:05:53,715 --> 01:06:05,996
+O zaman şu apply union işi, bakın unify node dediğimiz şey birazcık değişir. Bu arada bunu void bir fonksiyon yapalım.
+
+316
+01:06:08,056 --> 01:06:12,916
+Unify ederken bütün bitmeyi kontrol edeceğiz.
+
+317
+01:06:14,956 --> 01:06:19,056
+Yani döngü for i eşittir 0.
+
+318
+01:06:19,443 --> 01:06:25,844
+İyi, küçüktür. Şimdi kaç tane şey var burada? Eleman var. N tane eleman var.
+
+319
+01:06:26,364 --> 01:06:34,284
+Şimdi N tane elemanı biz yukarıda neye göre oluşturduk? Seti yazarken max'a göre. Yani gerçi max değil de.
+
+320
+01:06:35,324 --> 01:06:40,443
+Bir dakika. E listin n değerine kadar. O zaman şöyle bakacağız.
+
+321
+01:06:44,947 --> 01:06:48,268
+e-listin n değerine göre bakıyorum.
+
+322
+01:06:48,788 --> 01:06:50,067
+i++
+
+323
+01:06:51,347 --> 01:06:52,367
+diyorum ki
+
+324
+01:06:53,387 --> 01:06:54,668
+bu setin
+
+325
+01:06:55,188 --> 01:06:57,228
+i'incisinin elemanı. if
+
+326
+01:06:57,748 --> 01:06:58,768
+küme değeri.
+
+327
+01:07:02,547 --> 01:07:10,347
+İsterseniz set 1 ile set 1'den set 2'ye aktarın yapın, isterseniz set 2'den set 1'e aktarın yapın. Ama kuralayıp aynı, ona göre uygulayacağız.
+
+328
+01:07:30,547 --> 01:07:34,547
+Bütün hepsinin tekten değişiyor. Dolayısıyla bak bu şekilde bir şey yaptığımızda...
+
+329
+01:07:34,547 --> 01:07:36,547
+O da şuraya alalım arkadaşlar.
+
+330
+01:07:45,076 --> 01:08:07,196
+Böyle bir şey yapma. İlk başta tekrar geri geliyorum. Tekrar şunları düzeltelim. 0, 1, 2, 3. Şimdi 0 ile 3'ü birleştirecekmişim. Yani buraya 0 geldi, 3 geldi. Diyor ki, eğer setin iyisi, set 2'ye eşitse. Tabii şuraya eşit eşit yazacağız. Eşit mi değil. Eşit olmadığı için geçtik.
+
+331
+01:08:08,275 --> 01:08:35,659
+1'e baktık eşit mi? Değil. 2'ye baktık eşit mi? Değil. 3'e baktık eşit mi? Evet. Eşit. O zaman diyor ki set1'i seti'yi yap. Pardon, set1'i seti'yi atar. Yani burayı 0 yaptık. Sonra devam ediyoruz. Bir daha döngü dönüyor. Bu fonksiyonu bir daha açardık. 2'yi 3'e aktarıyoruz. Şimdi başa döndük. 3'e eşit mi? Değil. Ondan sonra...
+
+332
+01:08:35,667 --> 01:08:55,339
+2, 1, 3'e eşit mi değil? 2, 3'e eşit mi değil? 3, 3'e eşit mi? Pardon. Şöyle bir hatamız var. 2 ile 3'ü birleştireceğiz dedik. 2'nin küme değeri 3'e eşit mi değil? 3'ün küme değeri... Bir dakika arkadaşlar, şurada...
+
+333
+01:08:57,844 --> 01:09:04,244
+2 ile 3'ü birleştireceğiz dedik.
+
+334
+01:09:04,244 --> 01:09:11,404
+Set'in iyisi 0, 3'e eşit mi? Değil. 0, 3'e aktaracağız dedik.
+
+335
+01:09:11,404 --> 01:09:22,924
+1, 3'e eşit mi? Değil. 2, 3'e eşit mi? Bu da değil. Şurada bir hatamız mı var kod içerisinde?
+
+336
+01:09:26,836 --> 01:09:28,836
+Eşittir Eşittir.
+
+337
+01:09:31,476 --> 01:09:33,452
+0,1,2,3,4
+
+338
+01:09:36,948 --> 01:10:01,268
+0, 3. Yani şurada 0 ile biz neyi kontrol edeceğiz? 3'ü kontrol edeceğiz. Set 1, 0 ve 3 diye çağırdık. Set 1, Set 2'ye eşit mi? 3'e eşit mi? Değil. Değilse geçiyoruz. Sonra 1 değil mi? 2 değil mi? 3, 3'e.
+
+339
+01:10:03,604 --> 01:10:28,824
+Yani şu 3, 3'e eşit oluyor. Ha tamam. 2 ile 3'ü birleştirdiğimizde, kodu yanlış trace ediyorum. 2 ile 3'ü birleştir dediğimde 2'nin kodunu 3'e aktaracağım için. Şimdi bu 3'ün kodu ne? 0. Yani 3 diye çağırdık ama kendi içerisinde 0 var. Şimdi bu 0'a eşit mi? Evet. 0'a eşit olduğu için bunu 2 yapacağız.
+
+340
+01:10:29,492 --> 01:10:49,192
+Sıfıra eşit mi değil, sıfıra eşit mi? Evet. O zaman bunu da iki yapacağız. Hepsi 2-2-2 oldu. Tersten yapsaydık da, kurguyu tersten yapsaydık sadece şuradaki yerler değişecekti arkadaşlar. Sıkıntımız yok. Yani direkt ID'ler üzerinden değil, kümeler üzerinden. Çünkü 0-3 diye çağırdığımızda bu şekilde bir durum olacak.
+
+341
+01:10:49,192 --> 01:10:51,352
+Evet.
+
+342
+01:10:52,115 --> 01:11:09,336
+Bu bize en defa gezerek Unification işlemini yapmamızı sağlar. Peki, Union yaptıktan sonra yapacağımız bir şey var mı? Tek bir şey var. Gerçi şurada onu yapıyoruz. Bu döngü dönüyor. Döngü döndükten sonra bütün her şey gidiyor. Artık benim elimde Minimum Spanik Tree listesi oluşmuş oluyor.
+
+343
+01:11:16,692 --> 01:11:20,531
+Bir de Minimum Spanik Tree listeyi yazacak şekilde kodu güncelleyelim.
+
+344
+01:11:21,551 --> 01:11:26,412
+Yani bu Print List sadece Edge List'i yazıyor. O zaman diyorum ki şuraya
+
+345
+01:11:27,192 --> 01:11:30,511
+Farklı bir, biraz daha değiştirelim şu kodu.
+
+346
+01:11:32,051 --> 01:11:35,131
+Ya Minimum Spanik Tree'yi alsın ya da Edge List'i alsın.
+
+347
+01:11:37,431 --> 01:11:43,051
+Edge List ürününde işte bir liste pointerı, ondan liste al diyorum.
+
+348
+01:11:43,731 --> 01:11:48,231
+Bu listeyi de şöyle güncelleyelim.
+
+349
+01:11:55,252 --> 01:11:58,672
+Şurayı da şöyle yapalım. En genel haliyle çağırmış oluruz.
+
+350
+01:12:00,172 --> 01:12:01,712
+Şurada da datayı topluyoruz.
+
+351
+01:12:03,332 --> 01:12:07,092
+Burada bu kodu nereden çağırdıysak çağırdığımız yerleri birer birer düzelteceğiz.
+
+352
+01:12:08,092 --> 01:12:11,312
+Ne var burada? E-list var.
+
+353
+01:12:12,152 --> 01:12:12,992
+Çağıracağımız.
+
+354
+01:12:14,092 --> 01:12:16,932
+Burada E-list var. Bunu çağıracağız.
+
+355
+01:12:18,392 --> 01:12:19,252
+Şurada da
+
+356
+01:12:19,252 --> 01:12:22,512
+Print
+
+357
+01:12:24,532 --> 01:12:33,231
+List, msd list diyelim. Burada da msd listi çağıracağız.
+
+358
+01:12:36,051 --> 01:12:42,452
+Tabi ufak bir şey yapmamız lazım. Şurada da print listi değiştirebiliriz.
+
+359
+01:12:43,212 --> 01:12:50,731
+İşte edge list şeklinde bir parametre aldığımızı söylememiz gerekiyor.
+
+360
+01:12:57,811 --> 01:13:02,172
+Şunlar küçük L olacak. Veya oradan bunu büyük L yapalım.
+
+361
+01:13:06,963 --> 01:13:10,503
+Şunları da aktarmamız gerekiyor.
+
+362
+01:13:17,235 --> 01:13:26,056
+ReturnWithValue. Ha bu return olacağı için şu integer döndürecek. Şunu da yukarıya alalım.
+
+363
+01:13:31,988 --> 01:13:36,988
+Ne vardı? Find'ı bulamıyorum diyor.
+
+364
+01:13:39,568 --> 01:13:43,568
+Buna get set demiştik arkadaşlar. Set numarasını getir.
+
+365
+01:13:44,108 --> 01:13:47,108
+Find bunun genel terminolojik adı.
+
+366
+01:13:47,228 --> 01:13:52,708
+Biz bunu get ve unify nodes diye kendimizi buraya uyarlamış olduk.
+
+367
+01:13:53,488 --> 01:13:56,667
+Terminolojiye bakarsanız find ve union diye temel iki tane operasyon var.
+
+368
+01:13:57,268 --> 01:14:00,347
+Çalıştıralım bakalım.
+
+369
+01:14:01,628 --> 01:14:04,948
+MST liste şu an bir tane var diyor.
+
+370
+01:14:06,228 --> 01:14:07,247
+Diğerde
+
+371
+01:14:08,028 --> 01:14:10,067
+MST listi oluştururken
+
+372
+01:14:10,587 --> 01:14:13,907
+Şimdi yazdırırken şöyle bir durum var arkadaşlar.
+
+373
+01:14:16,467 --> 01:14:19,028
+MST listin düğüm sayısını arttırıyoruz.
+
+374
+01:14:20,827 --> 01:14:24,148
+Listin en değerine göre yazdırıyoruz. Bir tanesini yazdırdı.
+
+375
+01:14:28,243 --> 01:14:30,243
+Şöyle bir debug yapayım tekrardan.
+
+376
+01:14:35,923 --> 01:14:50,623
+MST List'i ekle dedik. Unify Node dedik. Set üzerinde birleştirdik. Sonra MST List'i yazdık. Şurayı bir şöyle alalım. Bir debug yapayım.
+
+377
+01:14:55,699 --> 01:14:58,520
+Bunu Skip Option'la Continue diyelim.
+
+378
+01:15:01,939 --> 01:15:19,939
+Şimdi msdlistin datasının en ilgisi. AdWatch diyorum. Source ve Destination'da bir şey yok. 1'e 0'a 1 aldı. Sonra ikinciyi ekleyecek. Bakın düğümler farklı olduğu için, kümeler farklı olduğu için eklemiyor.
+
+379
+01:15:22,939 --> 01:15:25,931
+Set 1, set 2, aynı olduğu için.
+
+380
+01:15:27,539 --> 01:15:32,139
+Şurada sanki set1 ve set2 değerlerini alırken başka bir sıkıntı mı var?
+
+381
+01:15:32,920 --> 01:15:34,699
+AddWatch diyelim.
+
+382
+01:15:35,479 --> 01:15:39,059
+Aynı değerler geldiği için küme eklemiyor.
+
+383
+01:15:39,579 --> 01:15:40,859
+Peki burada
+
+384
+01:15:42,379 --> 01:15:45,719
+Şurada bir atakımız varmış. Set kümesine AddWatch desek
+
+385
+01:15:48,020 --> 01:15:49,559
+Setin içerisinde
+
+386
+01:15:49,819 --> 01:15:50,840
+değerler
+
+387
+01:15:55,060 --> 01:15:56,940
+E-listin enine kadar gidecek.
+
+388
+01:16:01,460 --> 01:16:02,860
+Ama bir dakika arkadaşlar.
+
+389
+01:16:03,040 --> 01:16:08,579
+E-listin eni kadar dersek, E-list'teki toplam bizim 5 tane düğümümüz vardı ya.
+
+390
+01:16:08,700 --> 01:16:09,600
+Burada şey diyeceğiz.
+
+391
+01:16:10,420 --> 01:16:12,020
+Şunu en olarak söyleyeceğiz.
+
+392
+01:16:12,100 --> 01:16:13,560
+Çünkü bizim en tane düğümümüz var.
+
+393
+01:16:14,640 --> 01:16:17,380
+Şurası şöyle hatalı oldu.
+
+394
+01:16:19,420 --> 01:16:20,440
+Büyük en diyeceğiz buraya.
+
+395
+01:16:21,500 --> 01:16:22,440
+Şuraya bir...
+
+396
+01:16:22,899 --> 01:16:23,899
+Bir şey getireyim.
+
+397
+01:16:25,899 --> 01:16:26,899
+Bir bug koyalım.
+
+398
+01:16:39,764 --> 01:16:42,623
+Şuradaki de bazı kaldırın, şüheye getirin.
+
+399
+01:16:46,676 --> 01:16:54,676
+Setin üzerine geldiğimizde 0, 1, 2, 3, 4, tamam 4 tane düğümümüz var.
+
+400
+01:16:55,676 --> 01:17:02,676
+Şimdi set 1, 0, set 2 bunlar birbirinden farklı şeyler.
+
+401
+01:17:03,676 --> 01:17:09,676
+Source ve Destination'da birisi 0.1.1.1'in kümede. Bu ikisini birleştirdi.
+
+402
+01:17:10,676 --> 01:17:14,636
+Sonra 0'a 0 dedi, birleştirmedi.
+
+403
+01:17:16,372 --> 01:17:18,372
+Sonra yine sıfır ara sıfır geldi.
+
+404
+01:17:20,372 --> 01:17:22,372
+E listata.
+
+405
+01:17:23,872 --> 01:17:26,372
+Sanki i hiç artmıyormuş gibi.
+
+406
+01:17:26,372 --> 01:17:28,372
+Artıyor.
+
+407
+01:17:32,724 --> 01:17:36,324
+Şurada bir hatamız var. Tekki Get Set'te bir hatamız var.
+
+408
+01:17:37,724 --> 01:17:42,123
+Setin içerisindeki Vertex'in değerini döndürecek.
+
+409
+01:17:43,523 --> 01:17:45,123
+Burada da bir sıkıntı yok.
+
+410
+01:17:48,123 --> 01:17:50,523
+Bir problem görebilen var mı arkadaşlar?
+
+411
+01:17:51,523 --> 01:17:54,324
+Ufak bir yerde muhtemelen bir şeyi yanlış yaptık da.
+
+412
+01:17:56,523 --> 01:17:58,123
+Şeyi bulamıyorum.
+
+413
+01:18:02,804 --> 01:18:10,804
+Set 1'in set 2'den farklı olduğu durumu kontrol ediyoruz. Şöyle bir durum varsa...
+
+414
+01:18:18,676 --> 01:18:44,156
+Set1, Set2 hep aynı çıktığı için GetSet fonksiyonundan hep aynı değer dönüyor. Şurada sanki bir şey gönderirken e-listata mesela şunu bir çalıştırıyorum veya şuraya bir Breakpoint koyayım. Diğerlerini kaldıralım. Şunu kaldırayım. Sadece şurada bir Breakpoint olsun.
+
+415
+01:18:47,764 --> 01:18:54,844
+Buraya gelen set, addWatch diyorum. Şöyle addWatch diyelim.
+
+416
+01:18:56,283 --> 01:18:57,484
+Note diyelim.
+
+417
+01:19:01,724 --> 01:19:04,484
+Set'in Note bilgisini gönder.
+
+418
+01:19:05,283 --> 01:19:07,644
+Bu birden şuna geldi.
+
+419
+01:19:08,804 --> 01:19:12,844
+Bu da sıfır, bir ile sıfırı kontrol etti. Farklı olduğu için aldı.
+
+420
+01:19:13,716 --> 01:19:25,716
+Daha sonra Unify node dedi. Unify yaptıktan sonra set kümen 0,0,0 diye gitti. Yani o aynı kümedeler.
+
+421
+01:19:27,716 --> 01:19:40,716
+Sonra buraya geldiğimizde nodumuz 4'müş. Set'in nodu da 0'mış. Tamam. Öbürü 3'müş.
+
+422
+01:19:43,060 --> 01:19:48,060
+Bunun küme bilgisi de sıfır. İşte bu sıfır olmaması gerekiyor.
+
+423
+01:19:49,060 --> 01:20:02,060
+O zaman şu Unify not'ta bir sıkıntı. Hah evet. Bakın burada eşit ettir kullandık ya. Biraz önce de onu değiştirelim. Eşit eşit olacak arkadaşlar. Eşitse güncelle. Tamam şimdi olur.
+
+424
+01:20:15,604 --> 01:20:24,523
+Yardaki eşit propratörünü yanlış kullanmış olmak bize şey yaptı. Şurada da return 0 diyelim. Tekrar çalıştırayım.
+
+425
+01:20:30,036 --> 01:20:34,336
+Evet. Bir dakika niye olmadı?
+
+426
+01:20:37,755 --> 01:20:40,296
+MyCrossCala yazmışız. Pardon.
+
+427
+01:20:41,476 --> 01:20:42,155
+May'le yazacağız.
+
+428
+01:20:46,163 --> 01:20:59,123
+Şimdi yapmamız gereken tek bir iyileştirme kaldı arkadaşlar. Şu an bakın grafımız buysa minimum spanik tırımızda ne olacakmış? İşte 1 ile 0, 4 ile 3, 2 ile 1, 3 ile 2. En son bakın cycle oluşmadan bunu kontrol ediyoruz.
+
+429
+01:20:59,783 --> 01:21:12,783
+Ayrık matematikte hep anlatılır. Yani tamam sırala elle ekle, eklerken de elle bak hani cycle oluşturuyorsa eklemiyor. İşte bunun kodla yapılmasının durumu bu. Maliyetimizde 10. Zaten şu.
+
+430
+01:21:14,228 --> 01:21:16,728
+Fonksiyonun içerisinde cost yazdırmıştık.
+
+431
+01:21:18,327 --> 01:21:20,028
+Tabi ki, def
+
+432
+01:21:22,228 --> 01:21:23,228
+eksi başlı.
+
+433
+01:21:23,728 --> 01:21:25,728
+And cost eşittir.
+
+434
+01:21:27,427 --> 01:21:30,188
+Yüzde diye diyelim, buraya da cost bilgisini yazdıralım.
+
+435
+01:21:35,412 --> 01:21:44,412
+Bir iyileştirme yapmak gerekiyor. Bir yerde bir şey var. Onu nasıl düzeltebiliriz? Ne önersiniz?
+
+436
+01:21:52,115 --> 01:21:59,515
+Bütün burada kenarları gezmek gerekiyor mu arkadaşlar? Bir ağaç oluştururken. Şurada olduğu gibi.
+
+437
+01:22:05,779 --> 01:22:07,779
+Bütün kenarları gezmek zorunda mıyız?
+
+438
+01:22:10,479 --> 01:22:13,279
+Şu algoritma daha erken bitirilemez mi? Şurası.
+
+439
+01:22:19,188 --> 01:22:21,188
+Yok mu fikir olmadı?
+
+440
+01:22:21,188 --> 01:22:29,188
+Az önce bir şey söylemiştim. Bir minimum spanning tree oluşturmak için n tane nodum varsa kaç tane kenarım olması gerekiyor?
+
+441
+01:22:35,956 --> 01:22:37,956
+Sesim geliyor mu arkadaşlar?
+
+442
+01:22:37,956 --> 01:22:48,956
+En eksi bir tane kenar ekleyeceksem o zaman benim bu for döngüsünü bu kadar çevirmeme gerek yok.
+
+443
+01:22:48,956 --> 01:22:55,956
+Diyeceğim ki şunu bir while döngüsü haline getirelim. Şurayı şöyle yorum yapayım.
+
+444
+01:23:00,692 --> 01:23:01,351
+Şu kaybol.
+
+445
+01:23:07,155 --> 01:23:16,476
+Diyicem ki Wild'ın şu şekilde revize edelim. Şimdi Spandist'in içerisinde ne olması gerekiyor?
+
+446
+01:23:16,476 --> 01:23:30,716
+MST list, Spandist demedik buna. MST list'in en değeri bizim şu en değerimizden küçük olması lazım.
+
+447
+01:23:31,699 --> 01:23:36,299
+Ne zaman küçük olur? n-1 olduğunda da küçüktür. n'e eşit olduğunda duracak bu döngü.
+
+448
+01:23:36,819 --> 01:23:39,119
+Bir şey daha yapmamız gerekiyor. Bir de
+
+449
+01:23:40,139 --> 01:23:46,039
+Edge List'teki kaçıncı düğme baktığımızda kontrol edilmemiz gerekiyor. Onu da şöyle kontrol ederiz.
+
+450
+01:23:46,299 --> 01:23:49,100
+Bizim i zaten bu işi yapıyordu. i küçüktür.
+
+451
+01:23:49,880 --> 01:23:53,979
+Çünkü her düğme ekleyerek gidemiyoruz. i küçüktür.
+
+452
+01:23:54,739 --> 01:23:56,539
+e-list
+
+453
+01:23:58,059 --> 01:23:59,340
+nokta n
+
+454
+01:24:00,979 --> 01:24:17,119
+Aynı zamanda mstlist.n, n'den küçükse şu düğüm sayısı olan n, şu da listelerin içerisindeyken. Şunları ayrı ayrı bir blok içerisine alacağız.
+
+455
+01:24:21,716 --> 01:24:23,716
+Şuruna bulup içerisinde alalım.
+
+456
+01:24:31,444 --> 01:24:58,004
+Bakın bu en defa döndürmeden daha önce düğüm sayısına göre bu işi halledebiliyor. Genelde graflarda şöyle bir sorun vardır. Düğüm sayısından çok çok daha fazla kenar sayısı olur. Şimdi en tane düğümümüz varsa kenar sayısı kaç tane olabilir? Mesela şöyle bir düşünün. Komplit bir graf olduğunu düşünelim. Komplit graflar nasıldır? Her yerden her yere yol var.
+
+457
+01:24:58,644 --> 01:25:20,144
+Burada n çarpı n eksi 3 bölü 2 kendileri hariç. Artı n kadar derseniz n çarpı n eksi 1 bölü 2 tane kenar olur. Sizin n tane düğümünüz için bu kadar kenarınız olma olasılığı var en fazla. Yani karesel bir durum, kuadratik gidiyor.
+
+458
+01:25:20,532 --> 01:25:26,971
+Ama bizim minimum spanik tri'imiz en eksi bir tane kenara ihtiyaç duyuyor. Bundan çok çok daha az.
+
+459
+01:25:27,971 --> 01:25:36,492
+Yani 10 tane nod için olabilecek maksimum kenar sayısı 45 tane mi? 45 tane mi? 45 eç.
+
+460
+01:25:36,492 --> 01:25:47,072
+Ama bizim MST'de toplam 9 tane ece ihtiyacımız var. 45 defa gezmek mi kötü? 9 defa gezmek mi kötü? 9 defa gezerek.
+
+461
+01:25:47,444 --> 01:26:00,764
+Çok daha rahat bu işi halledebiliyoruz. Ufacık bir bakın, şuradaki şeyi iyileştirme karesel durumdan neye indiriliyor? Daha böyle lineer bir duruma indirgeyebiliyor şöyle bir kontrol yapmak.
+
+462
+01:26:02,043 --> 01:26:14,324
+Burada anlaşılmayan bir şey var mı? Burada kodu şey olarak yazdık, yani grafı, ondan sonra Edge List ile Minimum Spanical Tree List ile parametre geçişleri ile kod çok uzar veya işte şunlar pek
+
+463
+01:26:14,579 --> 01:26:23,880
+Tercih edilen bir programlama sistemi değil. Ne yapılır? Bu kodlar, şunları ya kullanıcıdan alınır ya dosyadan alınır. İşte dosyada grafın verileri vardır.
+
+464
+01:26:23,880 --> 01:26:33,760
+Mesela dosyada grafın verileri vardır. İşte deriz ki 0 ile 0 arasında düğüm 0 olsun. Ondan sonra böyle 0 ile 1 veya bir structure şeklinde saklarsınız.
+
+465
+01:26:40,564 --> 01:27:06,963
+Anlatmak için şunlar teferruat şeyler. Kurskal algoritmasını bu şekilde saklayabiliriz. Bakın Structure kullandık. Sıralama kullandık. Structure'ları parametre olarak geçirdik. Ondan sonra normal diziler kullandık. Baya baya bir şey var. Kurskal algoritmasının implementasyonu gelecek dönem size şeyde de anlatacaklar. Yani veri yapıları algoritmalar dersinde de anlatacaklar. Çok çok kullanılabilen bir şey. Mesela ayrık matematikleri soru vardı.
+
+466
+01:27:07,539 --> 01:27:19,420
+Aşağıdaki yöntemlerden hangisi grafın bağlantılı birleşen sayısını bulmak için kullanılabilir bir algoritmadır? Yani bir graf verdiğinizde kaç tane connected komponent var? Bunun için kullanılabilir demiştik test olarak.
+
+467
+01:27:20,259 --> 01:27:34,339
+Şimdi bu DFS ile olur. Bu kuruz kal veya prim algoritmasında en son elde ettiğiniz şu küme var ya. Mesela 0, 1, 1, 0, 0. Bu görünümde olmayacak.
+
+468
+01:27:35,123 --> 01:27:59,304
+En son hepsi aynı küme şeyinde sıfır sıfır sıfır olacak. Hepsini tek bir küme yapacaksınız. O zaman ne olur? Bu grafta bir tane bağlantılı birleşen var. Ama grafınız öyle bir şeyse, mesela şöyle bir graf olsun. Bir de şöyle bir graf olsun. İşte bu bir şeyler sıfır sıfır. Yani sayıları önemli değil. Başka şeyler de işte bir bir gibi bir şey olacak. O zaman burada iki farklı veri dağılımını gördüğümüz için.
+
+469
+01:27:59,891 --> 01:28:22,572
+İki tane bağlantılı birleşen vardır sonucuna vardır. Dolayısıyla Pruskal'da ve PIDM'de burada kullanılabilir şeylerdir. Böyle bir problemle çözüme ulaştırabilir. Şuradaki sadece Disjoint Set veri yapısıyla bunu tasarlayabiliriz. DFS'de olur. 4 tane seçenekli doğruydu o soru. Evet, sorunuz var mı?
+
+470
+01:28:26,547 --> 01:28:40,187
+Kısaca bir soruya daha geçeyim. İlerleyebildiğimiz kadar ilerleyelim. Ara vermek istiyorsanız bir ara verelim arkadaşlar. Dinlenin. 10 dakika sonra görüşelim ya. Ara vermedik hiç. 20 geçiyor, 30 geçe görüşürüz.
+
+471
+01:37:14,676 --> 01:37:16,364
+Ses geliyor mu arkadaşlar?
+
+472
+01:37:21,524 --> 01:37:22,184
+Geliyor hocam.
+
+473
+01:37:23,184 --> 01:37:23,444
+Tamam.
+
+474
+01:37:25,404 --> 01:37:27,704
+Sınav programı ilan edildi mi? Bilginiz var mı?
+
+475
+01:37:50,484 --> 01:38:02,704
+Bugün sadece bitirme projeleriyle alakalı görüş istediler benden de. Herhalde hazırlama aşamasındalar. Ben de hazırladılar diye düşünüyorum ben. Neyse bakalım.
+
+476
+01:38:06,355 --> 01:38:11,415
+Yani en geç Perşembe, Cuma'ya kadar veya Çarşamba'ya kadar ilan etmeleri gerekir diye biliyorum.
+
+477
+01:38:13,995 --> 01:38:15,395
+Evet, başlayalım.
+
+478
+01:38:18,035 --> 01:38:27,855
+Şimdi yapacağım şey bir link liste uygulaması ama burada eklemeyi ve silmeyi farklı şekillerde anlatacağım.
+
+479
+01:38:27,995 --> 01:38:32,895
+Bu da gelecek dönem, hani size faydalı olabilecek veri yapıları dersinde faydalı olabilecek bir şey.
+
+480
+01:38:34,068 --> 01:38:49,688
+Şimdi başa ekleme, ortaya ekleme, sona ekleme, bir de silme anlatalım. Yine bu da çok karşılaştığımız bir uygulama. Benim linkler ister. Nodum şu şekilde olsun.
+
+481
+01:38:54,355 --> 01:39:05,755
+İlk başta bir kere linkli liste tutmam için, head diye bir pointer'a ihtiyacım var. Bu head pointer'ın değeri null olacak. Hiçbir şey yok.
+
+482
+01:39:05,755 --> 01:39:15,355
+Sonra işte başa ekle, sona ekle fonksiyonları çağıracağım. Fonksiyonların çağrımını burada main'de yaparız. O ayrı bir şekilde durur.
+
+483
+01:39:16,243 --> 01:39:22,804
+Biz mesela fonksiyonları önce yazalım. Şimdi ekleme yapacaksam önce bir node oluşturmam gerekiyor.
+
+484
+01:39:24,323 --> 01:39:31,844
+Ve node oluşturmak için de bir malloc gibi bir şey kullanmam gerekiyor. Çünkü bu program kapanana kadar yaşaması gereken bir şey.
+
+485
+01:39:31,844 --> 01:39:40,723
+Create node diyorum. Buraya bir integer data alalım çünkü datamız integer. Node türünde bir node oluşturuyorum.
+
+486
+01:39:42,996 --> 01:39:47,996
+Yine bu not türünde pointer olacak. İşte Mamluk ile oluşturacağız.
+
+487
+01:39:53,108 --> 01:40:02,868
+Bu bir tane şey olacağı için size of node kadar diyebiliriz. Size of node pointer denmez arkadaşlar. Size of node kadar.
+
+488
+01:40:02,868 --> 01:40:15,108
+Node'un size kadar bir yer aç. Orayı bize oluştur. Sonra new node'un datası elimizde hazır zaten. Bunu data olarak ayarladık.
+
+489
+01:40:20,051 --> 01:40:24,652
+Nex değeri de otomatik olarak Navajo'ya kalıyor.
+
+490
+01:40:28,787 --> 01:40:44,827
+Sonra bu return new node diyeceğiz. Şimdi bunu başa da ekleme yapacaksam, sona da ekleme yapacaksam, nereye ekleyeceksek her yerde kullanabileceğimiz bir fonksiyonu. Global bir şey. Şunu da şimdiden alalım unutmadan şuraya ekleyelim.
+
+491
+01:40:44,827 --> 01:40:54,867
+Peki. Önce en kolaydan başlayalım. İşte bir başa ekleme, ondan sonra sona ekleme, bir de araya ekleme.
+
+492
+01:40:55,764 --> 01:41:10,404
+Normalde bu üç fonksiyonu ayrı ayrı görürsünüz arkadaşlar. Tek bir fonksiyon yazıp o fonksiyon hem başa ekliyor hem sona ekliyor hem de ortaya ekliyor şeklinde bazı uygulamalar var da o çok doğru değil.
+
+493
+01:41:11,404 --> 01:41:15,484
+Çünkü Stake gibi, Q gibi veriye erişimin önemli olduğu durumlarda.
+
+494
+01:41:16,148 --> 01:41:29,768
+Araya eklemek diye bir şeyden söyledemeyiz. Onun için bunlar hep ayrı ayrı yazılması gereken fonksiyonlardır. En doğrusu tasarım şekli olarak budur. Tamam kod çalışır da kod her durumda çalışmaz hale geliyor. Hepsini bir arada yazdığımız durumda.
+
+495
+01:41:30,768 --> 01:41:39,528
+Void mesela Add Front diyelim. Add Front'u nerede kullanırız? Mesela Q'da kullanabiliriz veya Steak'te kullanabiliriz.
+
+496
+01:41:40,051 --> 01:41:49,771
+Ne yapacağım buraya? Head'i alacağım. Void yazdığım için, Head'i değiştirerek iş yapacağımız için burada arkadaşlar, Head'in pointer'ını almak gerekiyor.
+
+497
+01:41:49,771 --> 01:41:58,491
+Şimdi hep başa ekliyorum düşünün. Dolayısıyla sürekli Head'in değişmesi gerekiyor. Buraya bir data gelecek.
+
+498
+01:41:58,491 --> 01:42:05,371
+Create Note için bunu kullanıyordu ama asıl fonksiyon, ekleme ekleyecek fonksiyon bu.
+
+499
+01:42:05,652 --> 01:42:22,311
+Şimdi şöyle bir şey yapalım. Diyeceğim ki önce bir New Node oluştur. Bu New Node'u da nereden çağıracağız? Create Node'dan çağıracağız. Ve buraya şu datayı gönder. Bu fonksiyon kendi başlı başına çalışıyor. Bana buradan bir Node dönüyor.
+
+500
+01:42:32,532 --> 01:42:53,892
+New Node yeni head olacağı için şöyle bir şey diyeceğim. New Node'un next'i ne olacak? Head'in gösterdiği adresteki değer olacak. Head hala hazırda bir yeri gösteriyor. New Node'un next'i bir şey oluyor.
+
+501
+01:43:02,131 --> 01:43:08,631
+İyi, buna da olacak. Gayet algoritması basit. Şöyle çizelim hatta.
+
+502
+01:43:12,564 --> 01:43:28,944
+Hala hazırda bir tane listem var. N tane noddan oluşuyor. Ve headim var. Head şurayı gösteriyor. Yeni bir tane nod üretiyorum.
+
+503
+01:43:41,395 --> 01:43:50,935
+Şurayı göstersin. Dolayısıyla bu elemanı ne yapmış oldum? Linktik istenin başına eklemiş oldum. Mantığımız bu.
+
+504
+01:43:50,935 --> 01:43:59,135
+Hocam burada head'i çift pointer olarak göndermezsek nasıl yaparız? O zaman burada yeni head'i return edeceğiz.
+
+505
+01:43:59,135 --> 01:44:07,895
+Tek pointer ile alırsak ama biz burada çift pointer alışalım arkadaşlar. Peki bunu nasıl çağıracağız? Hemen gelin çağıralım.
+
+506
+01:44:08,500 --> 01:44:16,500
+Head elimde var mı? Var. Head'in değişmesini istiyor muyum? İstiyorum. O zaman diyelim ki, Head Front diyelim.
+
+507
+01:44:16,500 --> 01:44:28,500
+Burada büyük, head'e doğrudan yazmıyorum. Head Front kısa yol koymuşlar. Head'i gönder ama head'in adresiyle gönder çünkü head değişecek. Başa 10 ekle.
+
+508
+01:44:36,307 --> 01:44:47,947
+Ondan sonra 20 ekle, 30 ekle. Peki biz bir de Traverse List diye fonksiyon yazalım. Çünkü her yerde bunu kullanacağız.
+
+509
+01:44:47,947 --> 01:44:54,307
+Head'i gönder diyeceğim. Listeyi ekrana bastırsın. Bakalım doğru sonuçlar görebilecek miyiz?
+
+510
+01:44:54,307 --> 01:45:01,996
+Baş ekleme bu şekilde. Şimdi Traverse List'i yazdıralım. Yazalım hızlıca. Void Traverse.
+
+511
+01:45:03,604 --> 01:45:05,604
+Altyazı ekleyelim.
+
+512
+01:45:07,604 --> 01:45:11,604
+Buraya düğüm olarak bir head alacağız.
+
+513
+01:45:12,604 --> 01:45:21,604
+Bazı kaynaklarda şey görüyoruz. Burada bir tmp falan oluşturur. Arkadaşlar burada head'i değiştiriyor olmanız yukarıdaki head'i etkilemeyecek.
+
+514
+01:45:21,604 --> 01:45:24,604
+Yani ayrıca bir tmp'le da gerek yok.
+
+515
+01:45:24,604 --> 01:45:28,604
+Yani yazarsanız bir şey olmaz da gereksiz değişken gibi.
+
+516
+01:45:31,188 --> 01:45:32,587
+Naldan farklıysa.
+
+517
+01:45:34,228 --> 01:45:45,127
+Çünkü ne oluyor? Ben bu fonksiyonu çağırınca şu fonksiyonun head değişkeni de veya main'deki head değişkeni iki farklı değişken. Bu ikisi de linked listenin başındaki ilk nodu gösteriyor.
+
+518
+01:45:45,507 --> 01:45:51,268
+İkisi de pointer. Ben burada hedi ilerlettiğim için şuradaki hedi hiçbir şekilde değiştirmiyorum.
+
+519
+01:45:51,788 --> 01:45:56,408
+Açık pointer olarak alsaydım değiştirirdim. Onun için ekstra bir değişken tanımlamaya gerek yok.
+
+520
+01:45:58,484 --> 01:46:17,844
+%d diyeceğim, boşluk diyeceğim. Ad'in datasını yazdır. Sonra ne yapalım? Ad eşittir. Ad next yap. Bu yan yana yazdırsın, yazdırsın. Onda sonra print yap.
+
+521
+01:46:20,584 --> 01:46:25,324
+% backslash end diyelim şöyle diyelim. Bakalım.
+
+522
+01:46:25,844 --> 01:46:27,283
+Şunu Close diyorum.
+
+523
+01:46:27,283 --> 01:46:28,283
+Yes diyorum.
+
+524
+01:46:32,627 --> 01:46:33,087
+Evet.
+
+525
+01:46:40,083 --> 01:46:46,923
+Başa eklendiğini görüyoruz. Şuraya da bir tane stiklomuza ekleyelim. Programın düzgünce kapandı.
+
+526
+01:46:47,523 --> 01:46:53,903
+Burada şöyle bir şey yapmamız lazım. Program kapanırken linkli listeyi boşaltmamız gerekiyor ama çok da mühim değil.
+
+527
+01:46:53,903 --> 01:47:01,452
+Yani onu zaten işletim sistemi sizin adınıza şimdilik temizliyor. Program kapandı için temizliyor. Ama eğer program kapanmayacaksa burada bir...
+
+528
+01:47:01,524 --> 01:47:09,464
+oluşturulan bütün create edilen notları free etmek gerekiyor. Bütün listeyi free etmenin de kodunu yazmak lazım. Aynısı yani
+
+529
+01:47:10,224 --> 01:47:14,844
+add front yapar gibi delete front derseniz her bir nodu silesiyle devam eder gidersiniz.
+
+530
+01:47:15,604 --> 01:47:21,244
+Bu başa eklemenin koduydu. Gayet basit. Çok böyle karmaşık bir tarafı yok.
+
+531
+01:47:22,004 --> 01:47:26,104
+Şimdi bir de sona ekleme yapalım. Ha bu arada şunu söylesem.
+
+532
+01:47:26,323 --> 01:47:52,043
+Traverse List yaptığımızda biz burada döngü kullandık. Bunu Recursive olarak yazabilir miydik? Şuraya mesela projenizde belki yapıyorsunuz. Traverse List 2 diyelim. Buraya Head geliyor. Artık Traverse şey olacak için burada döngü kullanmayacağız. Burada mesela If diyebiliriz. Head Null'dan farklıysa Head'deki datayı yazdır.
+
+533
+01:47:53,427 --> 01:47:58,988
+Sonra, heading next'ini güncellemeden bu fonksiyonu tekrar çağır.
+
+534
+01:47:59,988 --> 01:48:03,467
+Colors Listing'i çağır.
+
+535
+01:48:04,268 --> 01:48:05,868
+Head in next'i de çağır.
+
+536
+01:48:11,923 --> 01:48:20,043
+Eğer bundan sonraki düğüm naldan farklı ise bunu yazdıracak. Böyle devam edip gidecek. Şuradaki fonksiyonu şöyle çağıralım.
+
+537
+01:48:20,043 --> 01:48:23,043
+Şunu da şöyle yapalım.
+
+538
+01:48:27,412 --> 01:48:29,412
+Överir bir olan.
+
+539
+01:48:36,756 --> 01:48:38,756
+Bakalım daha tamımız var mı?
+
+540
+01:48:40,756 --> 01:48:44,756
+Implicit Declaration...
+
+541
+01:48:46,756 --> 01:48:47,756
+Neredeyim?
+
+542
+01:48:48,756 --> 01:48:51,756
+Add Front eklemediğimiz için her şeyi veriyor.
+
+543
+01:48:54,756 --> 01:48:55,596
+Yarı veriyor.
+
+544
+01:49:01,460 --> 01:49:10,159
+Yine 30-20-10 diye, bakın, recursive olarak da veriyi yazdırabiliyoruz. Herkisi de aynı şey.
+
+545
+01:49:11,180 --> 01:49:16,220
+Peki, addFront böyleydi. Şimdi bir de sona ekleme yapalım. Ondan sonra araya eklemeye gelelim.
+
+546
+01:49:16,220 --> 01:49:20,420
+Sona eklemede şu fonksiyon prototipi aynı olacak.
+
+547
+01:49:21,560 --> 01:49:24,560
+addLast diyelim buraya dahil.
+
+548
+01:49:25,524 --> 01:49:32,623
+Ne yapacağız? Sona eklemek için bir kere sona gitmemiz lazım. Sona gitmeden önce bir tane düğüm oluşturuyoruz arkadaşlar.
+
+549
+01:49:33,783 --> 01:49:40,024
+Düğüm oluşturduktan sonra en sona kadar gideceğiz. Aynı bir yazdırma kodu gibi sona kadar gitmemiz gerekiyor.
+
+550
+01:49:40,024 --> 01:49:46,564
+Ama şimdi burada linkli listenin boş olduğu durumu dikkat etmemiz gerekiyor.
+
+551
+01:49:47,363 --> 01:49:50,604
+Çünkü hiçbir düğüm yoksa ve ben at last yapıyorsam,
+
+552
+01:49:50,868 --> 01:50:12,948
+Son diye bir şey yok. Zaten liste boş. O zaman şöyle bir kontrol diyeceğiz. If, head hali hazırda null ise ama head'in gösterdiği yerde ki değer hali hazırda null ise. Herhangi bir şey yoksa. Bu niye böyle? Çünkü biz başta programı head eşittir null ile diziyi boş olarak ifade ettik. Ben fonksiyonu önce add front değil, add last diye çağırsam bu boşa gidecek.
+
+553
+01:50:13,524 --> 01:50:34,644
+Onun için diyorum ki eğer headin gösterdiği yerden alsa, şu new node yapalım. Aslında başa eklemeyle bu kısım aynı. Böyle bir şey yoksa ters. O zaman ne yapacağız? O zaman sona doğru gideceğiz.
+
+554
+01:50:36,595 --> 01:50:46,076
+Sona doğru gitmenin kodunu yazıyor. Sona doğru gitmek için de nasıl ki gezerken sona doğru gidiyorsak, şurada olduğu gibi veya şurada olduğu gibi her ikisini de bu arada yazabiliriz.
+
+555
+01:50:46,576 --> 01:50:56,555
+Ne yapacağız? Sona doğru kayıt edeceğiz. Sona doğru giderken de bakın burada temp note kullanabiliriz. Head'in değişme ihtimali yok.
+
+556
+01:50:57,076 --> 01:51:02,955
+Ekstra pointer ile de kafayı meşgul etmeyen dersi bir tane tmf kullanabilirsiniz.
+
+557
+01:51:03,572 --> 01:51:14,332
+Ve burada şu şeye gelmeden, diyeceğiz ki tmp eşittir, sizin gösterdiği yerde ki değeri olsun. Sürekli yıldız set yıldız set pointerları karıştırmaya sebep olabiliyor.
+
+558
+01:51:14,332 --> 01:51:30,332
+Şimdi ne yapacağız? Sona doğru gezmenin kodu. Why? tmp'nin next'i, naldan fark dolduğu sürece, nald sürekli ilerle. tmp eşittir, tmp'nin next'i.
+
+559
+01:51:31,572 --> 01:51:37,572
+Gittiğimiz en son noktada, artık en son kısmı bulunduğunuz için direkt tmp'nin next'i ne diyeceğiz?
+
+560
+01:51:37,572 --> 01:51:40,572
+Eşitirmeyi noktaya böbür edeceğiz.
+
+561
+01:51:40,572 --> 01:51:44,572
+Hedi değiştirdik mi? Hedi sadece şu durumda değiştirdik.
+
+562
+01:51:44,572 --> 01:51:55,572
+Hed boşken. Diğer durumda hed değişmediği için, bakın hedin üzerinde herhangi bir operasyon Atlas'ta yapmıyor. Tabi şunları sileceğiz bu eski koddan falan şeyler.
+
+563
+01:51:57,395 --> 01:52:05,595
+Herhangi bir müdahalede bulunmuyorsa da. Bu şekilde sona ekliyoruz. Şimdi gelelim kodu şöyle yazacağım.
+
+564
+01:52:05,595 --> 01:52:11,895
+Add last diyorum. Sona 10 ekle. Sonra 20 ekle.
+
+565
+01:52:23,283 --> 01:52:32,843
+Mesela şöyle bir soru, 4 satırlık soru, tam bir ayrık matematik test sorusu. Bunu yaptıktan sonra seçeneklerde dünki risklerinin baştan sona görünümü nasıl olur?
+
+566
+01:52:34,223 --> 01:52:43,423
+Sonra 10'u ekledik, sonra başa 20'yi ekledik, 20-10 var. Sonra 30'u ekledik, 20-10-30 oldu. Sonra başa 40'ı ekledik, en başa geldi.
+
+567
+01:52:43,423 --> 01:52:50,343
+Şöyle bakalım. Bir yerde bir hatamız var. Nerede hatamız var?
+
+568
+01:52:51,155 --> 01:52:56,155
+Yine şu Atlas herhalde daha var. Şöyle bir gelelim.
+
+569
+01:52:58,155 --> 01:53:00,908
+Bluetooth'a bir yardım ediyoruz şimdi acaba.
+
+570
+01:53:05,939 --> 01:53:14,800
+Başka bir yerde sıkıntı oldu. Sonra 10'a ekledik. Front'a 20'e dedik. At last.
+
+571
+01:53:18,355 --> 01:53:25,555
+Düğüm oluşturduk. Düğüm boşta dedik ki şey, neyse TMP buraya gelsin. TMP'nin next'i.
+
+572
+01:53:27,155 --> 01:53:28,155
+Mausa.
+
+573
+01:53:30,956 --> 01:53:38,155
+Şu Traverse List fonksiyonunun kendisini çağırabilir arkadaşlar. Şununla alakalı bir sıkıntı olabilir.
+
+574
+01:53:39,155 --> 01:53:42,155
+Ekrana yazdırma ile alakalı bir problem muhtemelen.
+
+575
+01:53:42,755 --> 01:53:45,355
+Bir yerde şeyin dışını taşıyorduk galiba.
+
+576
+01:53:46,868 --> 01:53:48,868
+Yok, at last.
+
+577
+01:53:53,363 --> 01:54:02,843
+Head geldi, data geldi. Datayı oluşturduk. Head eşittir nalma. Bakın eşit eşittir nal. Eşit dersek hep şurada hata yapıyoruz. Önceki datanın aynısı.
+
+578
+01:54:05,643 --> 01:54:17,423
+40, 20, 10, 30. Şu diğerinde kullanabilirdik. Peki, son ekleme de bu kadar. Şimdi gelelim bir de orta noktaya ekleme. Ondan sonra silmeyi anlatacağım dersi.
+
+579
+01:54:18,703 --> 01:54:20,303
+Prototip yine aynı olacak.
+
+580
+01:54:21,171 --> 01:54:28,171
+Bu ortaya eklemenin terminolojik adı aslında insert.
+
+581
+01:54:28,171 --> 01:54:29,171
+Araya ekleme.
+
+582
+01:54:29,171 --> 01:54:32,171
+Insert node diyelim mesela.
+
+583
+01:54:32,171 --> 01:54:38,171
+Şimdi data gelecek. Yeni bir node oluşturacağız.
+
+584
+01:54:38,171 --> 01:54:48,939
+Bu node oluşturulduktan sonra araya bir yere gideceğiz. Şimdi yine ilk senaryo şu. Yani head hali hazırda boşsa.
+
+585
+01:54:48,948 --> 01:55:12,968
+Bunu ilk başa ekleriz. Boş değilse, boş değilse buna bir yer bulacağız. Şöyle gelelim. Şimdi örneğin yeni bir düğüm geldi ve eklenecek yer şu ikisinin arası olsun. O zaman bir öncekisinin next'i, bunun next'i üzerinde bazı operasyonlar gelmiş. Bunun next'i, bir öncekinin next'i bunu gösterecek.
+
+586
+01:55:13,296 --> 01:55:38,956
+Yeni düğümün next ile bir sonrakini gösterecek. Bir sonrakinin next ile herhangi bir işimiz yok. Bu şekilde araya ekleyeceğiz. Peki araya eklemenin şartı ne? Muhtemelen data'ya göre. Verileri küçükten büyüye, büyükten küçüğe veya içerideki bazı özelliklere göre. Buna business logic diyoruz. Mantık neyse ona göre sıralama yapmak gerekiyor burada. Böyle bir şart sunacağız. Bizim burada sıralamamız tek bir tane datamız olduğu için.
+
+587
+01:55:39,328 --> 01:55:42,328
+Buna bakmamız yeterli. Yine TMP notu kullanıyorum.
+
+588
+01:55:43,728 --> 01:55:54,828
+Burada kullanmasam da olur mu? Olur. Ama sürekli her yerde işte Yıldız Het yazmak bazen işi zorlaştırıyor. Şimdi onu göstereyim. Şurada bir defa Yıldız Het yazıyorum. Bu işten kurtuluyorum.
+
+589
+01:55:55,427 --> 01:56:01,328
+Şimdi araya ekleyeceğim için hiçbir şekilde TMP ya da müdahale etmem söz konusu değil.
+
+590
+01:56:01,927 --> 01:56:06,328
+Bir kere dizinin sonuna gelene kadar araya eklemek demek bizim için bu.
+
+591
+01:56:06,703 --> 01:56:15,703
+Burada aslında add last'ı da bir yandan yapıyoruz. Örneğin verileri sırala ekleyeceksiniz. Ekleyeceğiniz en büyük veri ise bu doğrudan add last oluyor.
+
+592
+01:56:16,703 --> 01:56:27,783
+Şimdi tmp'nin next'i null'dan farklıysa. Önce buna bakın. Yani dizinin sonuna, link listenin sonuna gelmeliysek.
+
+593
+01:56:34,100 --> 01:56:44,220
+İşte burada dataya bakacağım. Mevcut bulunduğum büyümden sonraki datanın datası. Benim şu gönderdiğim datadan büyük olabilir, küçük olabilir, küçüktür diyelim biz.
+
+594
+01:56:45,280 --> 01:56:51,760
+Böyle bir şey varsa olduğum bir şey tmp eşittir. Sürekli tmp'yi gezdirir.
+
+595
+01:56:52,920 --> 01:56:59,260
+tmp'yi eşittir. Şurada büyük eşittir doğru yazdık. Tamam. tmp'nin next'i diyorum.
+
+596
+01:57:01,140 --> 01:57:13,680
+Gidebildiğimiz kadar gidiyoruz. Bulduğumuz yerde bulunduğumuz düğümün, nodunun ve yeni düğümün, nodunun güncellemelerini yapmamız gerekiyor. Burada da sıralama önemli arkadaşlar.
+
+597
+01:57:13,680 --> 01:57:22,380
+Şimdi yeri buldum. Önce bulunduğum düğüm tmp şurası, new node burası.
+
+598
+01:57:23,252 --> 01:57:28,372
+Şimdi tmp'nin next'ini tutmam lazım ama new node'un next'ini de bir sonrakine bağlamam lazım.
+
+599
+01:57:28,372 --> 01:57:31,372
+Çünkü tmp'nin next'i şunları nereye gösteriyor, burayı gösteriyor.
+
+600
+01:57:31,971 --> 01:57:40,351
+O zaman önce new node'un next'ini, tmp'nin next'i yapmam gerekiyor ki şunu kaybetmeyin.
+
+601
+01:57:41,652 --> 01:57:42,712
+Sıralaması mühim bunun.
+
+602
+01:57:43,671 --> 01:57:48,292
+tmp'nin next'ini, new node'un next'ini yaparsam bu da burayı gösteriyor, bu da burayı gösteriyor.
+
+603
+01:57:51,380 --> 01:58:12,800
+Next'ine, tmpnext diyeceğim, mimnode diyeceğim. Sonra ne yapacağım? Şunu şuraya göstereceğim ve aradaki şu bağlantıyı koparmış olacağız. Dolayısıyla sadece tmp'den mimnode'da mimnode'dan bu next'teki sonrası bir mühme geçiş yapmış oluyorum. Bu sıra ona önemli.
+
+604
+01:58:19,891 --> 01:58:22,692
+Next'i eşittir.
+
+605
+01:58:23,692 --> 01:58:28,192
+Mimod'un Next'i. Tmp'nin Next'i olsun.
+
+606
+01:58:29,192 --> 01:58:36,192
+Yine Tmp'nin Next'i. Aslında basit bir Sweep mantığı gibi bir şey var ama sadece iki şeyi. Sweep tam Sweep yapmıyor.
+
+607
+01:58:36,192 --> 01:58:40,891
+Tmp'nin Next'i eşittir. Mimod diyorum. Başka da bir şey yok.
+
+608
+01:58:41,619 --> 01:58:48,019
+Şunu kontrol ekleyerek aslında burada bir de ne yaptım? Sona ekleme ile AdLast'ı da beraberinde yapmış olduk.
+
+609
+01:58:49,039 --> 01:58:50,840
+Şimdi şu prototipi önce bir alalım.
+
+610
+01:58:56,500 --> 01:59:07,500
+Diyelim ki 10 var, 20 var. Insert diyelim. Ed'in gösterdiği yere 15'i insert et.
+
+611
+01:59:09,500 --> 01:59:15,500
+Tabi bunu bir menü yaparsınız. Ondan sonra menüden bu FoxTool'ları ayrı ayrı çağırırsınız.
+
+612
+01:59:15,500 --> 01:59:19,500
+Şuraya mesela 25'e ekleyelim.
+
+613
+01:59:21,500 --> 01:59:22,500
+Şuraya bir de...
+
+614
+01:59:22,899 --> 01:59:24,379
+38'e ekleyelim.
+
+615
+01:59:26,679 --> 01:59:31,999
+Insertlerin hepsi bir kere artık ne mantığıyla çalışıyor? Sıralı bir şekilde ekleme mantığıyla çalışıyor.
+
+616
+01:59:36,115 --> 01:59:41,796
+Neymiş bu? Insert. Yanlış bir şey mi? Insert mı?
+
+617
+01:59:41,796 --> 01:59:42,596
+Altmış ne?
+
+618
+01:59:44,395 --> 01:59:45,395
+Insert.
+
+619
+01:59:55,604 --> 01:59:58,423
+40'ı eklemiştik. Şöyle başladık gelelim.
+
+620
+01:59:59,963 --> 02:00:04,304
+Tabii 10 ekledik, daha sonra 20 ekledik. Bunlar hep hani belki şey...
+
+621
+02:00:05,583 --> 02:00:11,224
+Ne zaman ki biz 15 eklediysek 15 bir şey ile bir şeyin arasına ekleniyor bakın.
+
+622
+02:00:11,984 --> 02:00:16,604
+10 ile 25'in arasına ekleniyor. Çünkü şartı bozmamamız gerekiyor.
+
+623
+02:00:17,104 --> 02:00:20,444
+Ondan sonra 38'i şuradan sonra ekleyecek.
+
+624
+02:00:20,787 --> 02:00:31,787
+İlk baştan çünkü 40 başa geldi oturdu. Sonra ne var? Arada 25 var. 25 de şununla şununla arasında. Böyle devam edip gidecek.
+
+625
+02:00:31,787 --> 02:00:42,787
+Aslında insert node dersek, o zaman hep insert node'u çağırmış olsaydım her şey sıralı eklenecek. Bakın şunları şöyle yapalım. Böyle değiştireyim.
+
+626
+02:00:42,787 --> 02:00:48,587
+Arada da mesela şu Traverse List'i her şeyde çağırın.
+
+627
+02:00:50,323 --> 02:00:54,683
+Fonksiyon çağırısından sonra şurada çağır, burada çağır, burada çağır.
+
+628
+02:00:58,003 --> 02:01:03,643
+Fonksiyonların içerisinde de çağırabilirsiniz. Fonksiyonun içinde çağırmak çok doğru bir şey değil. Ayrıca çağırmak en doğrusu.
+
+629
+02:01:04,923 --> 02:01:09,523
+10-20 sonra araya 15 geldi, sonra ne bileyim sonra 30 geldi.
+
+630
+02:01:10,043 --> 02:01:15,663
+Sonra araya kim geldi? 40 geldi, 25 geldi, 38 geldi böyle devam edip gidiyor.
+
+631
+02:01:17,524 --> 02:01:38,304
+Buradaki olay da bu. Şimdi şu üç tane add kodu var arkadaşlar. Burada gördüğünüz gibi. Add front, add last ve insert. Bunlar ayrı ayrı yazıldığında güzel. Bunları sarmalayan wrapper dediğimiz genel bir kod yazabilirsiniz.
+
+632
+02:01:44,627 --> 02:01:59,028
+Mesela Rapper, Head diyelim. Rapper biliyorsunuz sarmalayıcı demek. Buraya yine siz aynı şekilde Head'imizi gönderirsiniz.
+
+633
+02:02:03,412 --> 02:02:11,612
+Note türünde gönderirsiniz. Integro dasanızı gönderirsiniz. Sonra bir de Function pointer alırsınız.
+
+634
+02:02:11,612 --> 02:02:16,811
+Function pointer şöyle şey diyelim. Function pointer.
+
+635
+02:02:17,460 --> 02:02:23,460
+Add'e göre çalışacaksa, Add'e yönlendirme yaparsınız. Last'a göre çalışacaksa, Last'a yönlendirme yaparsınız.
+
+636
+02:02:23,460 --> 02:02:30,460
+Veya işte Insert diyeceksiniz, Insert'e yönlendirme yaparsınız. Bu daha global hale getirilebiliyor.
+
+637
+02:02:30,460 --> 02:02:34,460
+Böyle bir genel fonksiyon yazıp, içeriden diğer fonksiyonları çağırabilirsiniz.
+
+638
+02:02:34,460 --> 02:02:40,460
+Ha, o zaman da ne olur? Wrapper Add yapacağında şu Create Node'ı hepsini de çağırıyorsun mesela.
+
+639
+02:02:40,460 --> 02:02:44,300
+Burada artık bunların içerisinde Create Node çağırmazsın.
+
+640
+02:02:45,108 --> 02:03:03,208
+Create notları tek bir defa yazarsın. Çünkü not oluşturma hepsinde aynı. Bu kodlar birazcık azalır. Bunlar hep tasarımla alakalı şeyler. Kodun daha efektif bir şekilde yazılmasıyla alakalı farklı tasarım desenleri. Bunu nesne tabanla dersinde daha detaylı anlatırlar gelecekte.
+
+641
+02:03:06,268 --> 02:03:11,148
+Şimdi gelelim son kısma. Silme ile alakalı kısmını anlatayım, bitirelim.
+
+642
+02:03:12,307 --> 02:03:34,367
+Silme yapmak isterken bir kere düğümü bulmamız lazım. Yani bir search işlemi yapacaksınız. Düğüm olmadan bulmak birazcık doğru. Biz önce genel aradığımız düğümü doğrudan bunun içerisinde bulacağımızı inceleyelim. Ondan sonra gerekirse bir search not fonksiyonu yazabilirsiniz.
+
+643
+02:03:34,367 --> 02:03:36,307
+Void Delete.
+
+644
+02:03:38,387 --> 02:03:42,588
+Delete'i neye göre yapacağız? Bir datamız var ona göre.
+
+645
+02:03:42,588 --> 02:03:50,887
+Burada baştan silme yapabiliriz, ortadan veya sondan silme yapabiliyoruz. Dolayısıyla yine head'in değişme ihtimali var.
+
+646
+02:03:50,887 --> 02:03:53,887
+Tabi ararken de dataya göre arama yapacağız.
+
+647
+02:03:57,524 --> 02:04:14,964
+Bir kere, şuna bakmamız gerekiyor. Head'in değişme ihtimali olacağı için, bir, MMP diye bir düğümüm var. Bakacağım ilk şey, aradığım eleman, ilk elemansa hemen bunu baştan kontrol edeyim.
+
+648
+02:04:14,964 --> 02:04:24,584
+Bir, head'in gösterdiği yerdeki data. Şimdi, burada operatör önceliğine dikkat etmek gerekiyor. Yıldız işleminin şuna operatör önceliği vardır.
+
+649
+02:04:25,055 --> 02:04:45,416
+Önce bunu halledersiniz. Pardon, okun yıldız ayı göre inceliği vardır. Yanlış yapmamak için önce head'in gösterdiği yerdeki adresi alırsınız. Bu adresteki data'ya ulaşmak için de şöyle bir şey yaparsınız. Eğer bu data bizim şu gönderdiğimiz data'ya eşitse demek ki nereden sileceğim? Baştan sileceğim demektir.
+
+650
+02:04:45,916 --> 02:04:51,975
+O zaman diyorum ki işte önce mevcut bulunan head'in gösterdiği yerdeki değeri tmf'ye alayım.
+
+651
+02:04:53,108 --> 02:05:02,108
+Bunu kaybetmemem gerekiyor. Çünkü bir sonraki eleman artık yeni head olacak. Bunu aldım. Tabi bunu alırken de, edin gösterdiği adresin datasını alacağım.
+
+652
+02:05:03,108 --> 02:05:09,108
+Bunu aldıktan sonra, head'i güncelleyeceğim. Head eşittir.
+
+653
+02:05:09,108 --> 02:05:19,108
+Head'in yeni değeri, head'in next olacak ama head'in gösterdiği yerdeki değerin next olacak. Onun için şu şekilde yapıyoruz.
+
+654
+02:05:21,524 --> 02:05:34,524
+Dolayısıyla ne oldu? Listenin başındaki eleman değişti. Şimdi ne yapmam gerekiyor? Şu tmp'yi free etmem gerekiyor. Artık o bellekte yer tutmaması gerekiyor. Bunu tmp yapıyorum.
+
+655
+02:05:34,524 --> 02:05:45,324
+Burada da ne? Elimizde data varsa print yapalım. Mesela %d silinli bir yer.
+
+656
+02:05:47,188 --> 02:05:50,188
+Bu baştan silmeyin. Böyle bir durum yoksa, elsin.
+
+657
+02:05:54,195 --> 02:06:05,695
+O zaman ya aradan bir yerden sileceğiz ya da sonu daha sileceğiz. Şimdi burada silinme işlemi yaparken TMP ihtiyacım var ama bir de aradan bir şey sildiğimde şöyle bir şey düşünün arkadaşlar.
+
+658
+02:06:05,695 --> 02:06:14,075
+Girelim. Şöyle devam edelim. Mesela burada düğümler olsun. İşte şunu silmek istiyorum.
+
+659
+02:06:16,916 --> 02:06:43,655
+Mevcut bir tane düğüm var. Bu şunu gösteriyor. Ama bir de bunun daha sonrakine ihtiyacım var. Aradan bunu yok edeceksem, şuradaki düğümü şuna bağlamam gerekiyor. İşte buradaki düğümü buna bağlarken bir geçici oluşturacağım, bir de current diye gezdiğimi söyleyen bir düğme daha, pointer'a daha ihtiyacım var. Yoksa kaybederiz. Şimdi burada başlıyoruz. İlk başta nereden başlayacağız? Bir düğümü oluşturayım.
+
+660
+02:06:46,355 --> 02:07:10,235
+Karın, gezilme düğümü. Karın ne olacak? Hedi de güncelleyemeyecek. Hedi gösterdiği yerdeki değerle başladı. Ve sonra aynı şurada araya eklemede yapar gibi, şurayı hızlı alayım. Şöyle bir şey kullanacak. Diyeceğim ki, tabii TMP değil.
+
+661
+02:07:10,931 --> 02:07:36,532
+Current'ın Next'i null'dan farklıysa, yani dizinin sonuna kadar geldiysek, Current'ın Next'inin datası aradığım veriden de farklıysa, yani ya aradığım veriyi şu sebeple bulamayacağım, ya da bir sonraki datada olabilir ihtimaliyle burayı sürekli Current'ı güncelleyelim. Acaba bulmur, bulmur, bulmur, bulmur, teklik bakacağız. Linear bir search yapıyoruz burada.
+
+662
+02:07:38,003 --> 02:07:41,003
+Linkli listede Binary Search yapabilir miyiz?
+
+663
+02:07:46,387 --> 02:07:47,268
+Mümkün olabilir mi?
+
+664
+02:07:52,979 --> 02:08:16,779
+Hayır. Hayır, çünkü başını ve sonunu, başını biliyoruz ve sonunu genelde bilmiyoruz. Bir de sonunu bilsek bile artı, eksi, toplama gibi bir şey yapacağız. Ortasını hiç bilemeyiz. Hani hem başını bileceksin hem sonunu bileceksin. Ortasını da hesaplayabilir olman lazım. Doğrudan mümkün değil. Ama şu olabilir. Listeye ekledikçe, listenin tam ortasındaki düğümü sürekli güncellersen insert yapınca.
+
+665
+02:08:17,460 --> 02:08:29,779
+Yani listenin nasıl head'ini tutuyorsan, last'ını tutarsın, bir de middle'ını tutarsan ortadan aramaya başlarsın böyle bir durumda. Ama bildiğimiz tam bir şey uygulanamaz. Biraz zor.
+
+666
+02:08:30,659 --> 02:08:41,159
+Peki, burada arayacağımız yeri bulduk. Şimdi bu döngüden iki sebeple çıkabiliriz. Ya aradığımız eleman yoktur ya da aradığımız elemanı bulmuşuzdur.
+
+667
+02:08:44,467 --> 02:09:09,467
+Karınt dediğimiz elemanın next'i şunaldan farklıysa ne demek bu? Aradığım elemanı buldun demektir. O zaman yani ne yaptık? Şurası bizim karıntımız. Karıntın next'i şunaldan farklı. Ben bunu sileceğim. Artık şurayı buldum. O zaman şu karıntı bir yedekliyorum önce. Bunu da tmp'ye yedekleyebilirim.
+
+668
+02:09:12,659 --> 02:09:29,119
+Current olarak, Tabii Current'ın Next'ini yedekleyeceğiz. Yani bunun bir sonrakisinin datasını anlayacağız. Sildiğimizi göstermek için. TMF'de bunu tutuyoruz. Burada diyoruz ki arkadaşlar, Current'ın Next denen gösterdiğimiz duygu.
+
+669
+02:09:39,188 --> 02:09:43,488
+Next'i şu, onun Next'i de şu. Yani Next'inin Next'ini göster diyorum.
+
+670
+02:09:44,488 --> 02:09:47,188
+Current'ın Next'i eşittir.
+
+671
+02:09:49,988 --> 02:09:51,188
+Next'inin
+
+672
+02:09:54,355 --> 02:10:02,195
+Next'e. Bu şekilde bağladık. Ondan sonra free yap, neyi yap? Aradaki o düğümü tmp düğümü.
+
+673
+02:10:03,996 --> 02:10:14,615
+Bakın şunu önce free yapsaydım, current'ın next'inin next'i ifadesi yanlış olurdu. Çünkü free ettiğin bir şeyin next'i olmaz, onun next'i hiç olmaz.
+
+674
+02:10:15,416 --> 02:10:22,027
+Dolayısıyla bu free'nin next'ine ulaşmak gibidir. Bu sıraya dikkat etmemiz gerekir. Ondan sonra...
+
+675
+02:10:22,452 --> 02:10:41,391
+Şurada da diyebiliriz ki, data silindiği. Eğer bu else gelirse arkadaşlar, printf eleman yok. İki tane kodla hemen testini yapalım. Vaktinizi de çok kalmak istemiyorum.
+
+676
+02:10:45,203 --> 02:10:47,203
+Yani şu oh da bir şey aldık.
+
+677
+02:10:52,948 --> 02:11:06,387
+Delete Note diyeceğim. Head'i gönder diyeceğim. Mesela burada Insert Note, Insert Note yaptık. Önce onu silelim. Yani baştan silelim.
+
+678
+02:11:10,707 --> 02:11:34,067
+10'u sildikten sonra, en küçük eleman olduğu için böyle. Sonra 30'u silelim. Ortadan silelim. Ondan sonra da bir de 40'ı silelim. Bir de 50'yi silelim. Olmayan bir şey silelim.
+
+679
+02:11:38,771 --> 02:11:58,351
+Önce 10 silindi, gitti baştan. Sonra 30 silindi, aradan gitti. 40 silindi, sondan gitti. 50 dediğimiz elemanda yok. Yani şu ufak tefek şeyler çok mühim değil aradaki şeyler. Böyle sonucu görebiliriz. Şunlara silindi dedikten sonra bir backslash koyalım.
+
+680
+02:12:00,351 --> 02:12:01,692
+Anlaşılır.
+
+681
+02:12:07,347 --> 02:12:09,188
+Evet arkadaşlar, burada sorumuz var mı?
+
+682
+02:12:13,876 --> 02:12:34,876
+Şimdi kısaca birkaç açıklama yapacağım varsa sizin sorularınızı alacağım. Bekletmeyin. Bugün ve yarın ben normalde izinliyim. Yani resmi izinli oldum çünkü aslında ders yapmaya gerek yok da. Sınav öncesi de olduğu için bir görüş elimde ufak bir tekrar yapmış olalım. Genel birçok konuyu içeren birkaç örnek göstermiş olayım istedim.
+
+683
+02:12:35,220 --> 02:13:00,100
+Yapısal Programlama dersi içeriğiyle hemen hemen bu kadar. En son threadlere kadar geldik. Threadleri de kısmen anlattık. Yetecek kadar bu ders içeriğinde. Bu ders bir araçtır arkadaşlar. Gelecek dönemki derslerde buradaki bilgilerinizden çok istifade edeceksiniz. Amaç değildir. C dilini kısmen burada anlatmaya çalıştım. İnşallah faydalı olmuştur. Sınavda gördüğümüz bütün konulardan işte vizede olduğu gibi klasik bir sınav olur.
+
+684
+02:13:00,692 --> 02:13:15,631
+Program parçaları genellikle sorarız. İşte şu işi yapan fonksiyon parçasını yazın, işte fonksiyonun çağrısını yazın, işte şu fonksiyonları yazın. Genellikle programın tamamını yazdıracaksak da araya işte boşluklar bırakıp işte şu kurala göre bu boşlukları doldurun diye.
+
+685
+02:13:16,095 --> 02:13:28,475
+Vize de olduğu gibi sorabiliriz. Ufak tefek ekran çıktıkları olabilir. Hata bulma çok sormuyorum bu finalde. Çünkü çok böyle sembollerle bilmem neyle uğraştırmak istemiyorum. Dikkatiniz dağılsın isteme.
+
+686
+02:13:33,332 --> 02:13:51,092
+Bu kod nasıl bir sonuç görürüz? LinkedIn listeyse nasıl bir şey görürüz? Bu diziyi gönderirsek nasıl bir sonuç gönderilir? Gibisinden ekranç sorular da olabilir. Yaklaşık 80-90 dakika en fazla olacak şekilde bir sınav düşünüyoruz.
+
+687
+02:13:51,272 --> 02:13:58,092
+Yunus Hoca ile daha henüz üzerinde konuşmadık da bir toplanacağız. Sınav gününü ben de bilmiyorum. Onun için size başta sormuştum.
+
+688
+02:13:59,923 --> 02:14:19,523
+Ödevi yapan, proje ödevini yapan laboratuvarlarda katılım sağlayıp oradaki faaliyetlerde bulunan arkadaşlar için zannediyorum ki final çok kolay oluyor. Geçen senelerde de öyle oldu. Final ortalaması genelde bu derste yüksekti. Çünkü birazcık kod yaramış olan, pratiği olan birisi.
+
+689
+02:14:20,307 --> 02:14:30,387
+Genelde çok az bir hatayla veya hiç hatasız final sorunlarını cevaplayabiliyor. Dediğim gibi ben sınav dışına çok dikkat etmiyorum.
+
+690
+02:14:30,387 --> 02:14:41,688
+İşte noktalı virgülü, on tane noktalı virgülü varsa bir yerde bir şeyi unutmuş veya çok böyle hata yapılacak, hayati bir hata yoksa ufak tefek hataları dikkate almıyoruz.
+
+691
+02:14:42,507 --> 02:14:46,112
+Ama hani şey vardır, işte ne bileyim böyle bir...
+
+692
+02:14:46,112 --> 02:15:11,971
+Fonksiyon verilmiştir. İşte buraya tek pointer gidiyordur. İşte maçı, çift pointer olması gerekiyordur. Bunlar hani gözden kaçmayacak hatalar. Bu tarz şeylere dikkat ediyorum. Dolayısıyla hani buradaki örnekler, yaklaşık 14 haftalık size bir örnek seti paylaşmış oldum. Ders notlarınızda bunlar var. Bunlara yeterince ihtimam gösterirseniz, biraz da ödevlerde, laboratuvarlarda yeterli ödeni gösterdiyseniz sıkıntı olacağını düşünmem.
+
+693
+02:15:12,564 --> 02:15:22,024
+Sizin bir sorunuz varsa alabilirim. Yarın malumunuz dersimiz yok. Varsa lütfen sorun. Aklınıza tıkman her şeyi.
+
+694
+02:15:29,300 --> 02:15:31,300
+Evet, her şey açık mı?
+
+695
+02:15:35,380 --> 02:15:56,400
+Peki. Ben teşekkür ederim. İnşallah dönem boyunca faydalı olmuştur. Birazcık tanıtımını bu dersin yapabilmişsizdir. Gelecek dönemlerde bunları çok çok sıklıkla kullanacaksın. Bununla alakalı, bunun araç olarak kullanıldığı iki üç tane daha dersimiz var en az.
+
+696
+02:15:57,908 --> 02:16:15,467
+Şimdiden, artık muhtemelen dördüncü dönem ve sonrasında pek fazla karşılaşmayız. Belki bir iki tane dersim olursa olur da bu dönemi bu şekilde kapatmış olalım. Hepinize bundan sonraki eğitim hayatınızda başarılar diliyorum. Görüşmek üzere.
+
+697
+02:16:20,051 --> 02:16:26,612
+Teşekkür ederiz hocam her şey için. Ben bu dönem, bir dahaki sene bu dersi tekrar bir daha alacağım. Sizden haberiniz olsun.
+
+698
+02:16:27,291 --> 02:16:30,031
+O yüzden rica ederim.
+
+699
+02:16:33,112 --> 02:16:39,891
+Ya başta 3-4 hafta maalesef baştan güzel başlamayınca devamı gelmiyor hocam. Çok zor.
+
+700
+02:16:40,671 --> 02:16:44,511
+Yemin ederim çok zor. Oturup vakit geçirmek gerekiyor.
+
+701
+02:16:44,927 --> 02:16:45,427
+Evet.
+
+702
+02:16:45,667 --> 02:16:54,147
+Oturmaya vakit yap. Allah'tan teribettaydım da en azından Ahmet Hocamı iki saat güzel bir şekilde dinleyebildim yani. Çok teşekkür ediyorum her şey için.
+
+703
+02:16:54,167 --> 02:16:54,948
+Ben teşekkür ederim.
+
+704
+02:16:54,968 --> 02:16:58,448
+İnşallah en kısa zamanda her zaman görüşmek üzere hocam. Sağ olun.
+
+705
+02:16:58,448 --> 02:16:59,768
+İnşallah. Görüşmek üzere.
+
+706
+02:17:02,987 --> 02:17:06,948
+Kolay gelsin arkadaşlar. Başarılar dilerim. İyi günler. Kapatıyorum ben.
