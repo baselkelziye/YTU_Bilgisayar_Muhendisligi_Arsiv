@@ -4,7 +4,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** İleri Algoritma Analizi ve Tasarımı (BLM5106)
-* **Hoca:** H. İrem Türkmen
+* **Hoca:** Dr. H. İrem Türkmen
 * **Dönem:** Bahar
 * **Akademik Yıl:** 2021-2022
 * **Şube:** BLM5106 - 1
