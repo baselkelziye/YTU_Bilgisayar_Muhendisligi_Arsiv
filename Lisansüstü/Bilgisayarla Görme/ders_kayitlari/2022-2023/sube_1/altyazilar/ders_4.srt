@@ -1,0 +1,1703 @@
+1
+00:07:54,387 --> 00:08:11,048
+Merhaba arkadaşlar, şu an 29 kişi olduk. Bir beş dakika bekledim derse başlamak için. Şimdi başlayabiliriz. Nasılsınız bakalım? Elleri görelim.
+
+2
+00:08:11,048 --> 00:08:11,847
+Nasılsınız?
+
+3
+00:08:12,787 --> 00:08:21,927
+Teşekkür ediyorum, iyiyim ben de. Evet, elleri gördük. 14-15 kişi.
+
+4
+00:08:25,779 --> 00:08:27,019
+Parmak kaldırdı.
+
+5
+00:08:28,639 --> 00:08:30,479
+20 olduk.
+
+6
+00:08:33,019 --> 00:08:33,299
+Evet.
+
+7
+00:08:35,279 --> 00:08:40,379
+Peki. Hepinizin bilgisayar başında kulağınız bende.
+
+8
+00:08:41,379 --> 00:08:41,879
+Sevindim.
+
+9
+00:08:44,379 --> 00:08:46,779
+Bu hafta dördüncü haftaya geldik arkadaşlar.
+
+10
+00:08:47,779 --> 00:08:49,279
+Hızla ilerliyoruz.
+
+11
+00:08:49,279 --> 00:08:50,659
+Zaman geçiyor.
+
+12
+00:08:51,779 --> 00:08:53,067
+Bu hafta...
+
+13
+00:08:54,836 --> 00:08:57,336
+Şöyle yapalım.
+
+14
+00:09:02,419 --> 00:09:12,419
+Bu hafta sizlerle Python kodlarını paylaşmıştım.
+
+15
+00:09:14,419 --> 00:09:22,819
+Sharpening by using special filters konusuyla ilerleyeceğim.
+
+16
+00:09:26,196 --> 00:09:42,676
+Şimdi görüntü keskinleştirme yapmak istiyoruz ve görüntü keskinleştirme işlemini aslında spatial domain'de, yani görüntü uzayında gerçekleştireceğiz.
+
+17
+00:09:50,772 --> 00:10:03,212
+Low Pass Filter, diğer bir adı Averaging Filter dediğimiz filtrenin bulanıklaşma problemi yarattığını belirtmiştik.
+
+18
+00:10:03,672 --> 00:10:07,912
+Dolayısıyla şimdi aslında biraz da bunu ele alıyor olacağız.
+
+19
+00:10:08,399 --> 00:10:26,319
+Şimdi elimizde bulanık bir görüntü var. Bunu nasıl keskinleştirebiliriz? Sharpening dediğimiz şey bu. Daha keskin bir görüntü oluşturmak. Sadece bir ortalama filtresi gibi bir filtreden kaynaklı olmayabilir bu bulanıklaşma problemi.
+
+20
+00:10:36,399 --> 00:10:43,000
+Kullanık bir görüntüye sahip olabiliriz. Bunu daha keskin hale getirmek için ne yapabiliriz? Konuşacağız.
+
+21
+00:10:43,639 --> 00:10:50,259
+Aslında burada kullanacağımız teknikler, bunu ben slideshow yapsam daha iyi olacak.
+
+22
+00:10:51,439 --> 00:10:52,359
+Tam ekran oldu mu?
+
+23
+00:10:55,199 --> 00:10:56,199
+Evet hocam.
+
+24
+00:10:56,379 --> 00:10:57,159
+Evet hocam oldu.
+
+25
+00:10:57,652 --> 00:11:12,392
+Tamam, teşekkürler. Burada sözünü ettiğimiz sharpening işlemini birinci ve ikinci türev operatörünü kullanarak gerçekleştireceğiz.
+
+26
+00:11:12,392 --> 00:11:20,292
+Ve görüntü işlemede bu türev operatörü aslında çok kullandığımız bir araç.
+
+27
+00:11:24,916 --> 00:11:40,156
+İkinci türev bir boyutlu bir işaret üzerinde nasıl gerçekleştiriliyor? Hızlıca ondan bahsedeceğim. Çünkü aslında buradaki temel mantığı anlarsak eğer pek çok yerde farklı amaçla kullanabiliriz.
+
+28
+00:11:41,156 --> 00:11:50,816
+Şimdi türev işlemi aslında bir çıkarma işlemine karşı geliyor. Biliyorsunuz integral ise bir toplama işlemine karşı geliyor.
+
+29
+00:11:52,916 --> 00:12:14,355
+Bu konuda ekran görüntüsünün bir satırının ele alındığını söyleyebilirim. Şöyle yapalım. Yazıp çizmek istiyorum. O yüzden ekran paylaşımını tablete geçireceğim.
+
+30
+00:12:18,868 --> 00:12:21,548
+Evet, şu an tablet ekranındayız.
+
+31
+00:12:22,548 --> 00:12:26,008
+Tablet ekranında, bunu tam ekran yaptığında.
+
+32
+00:12:36,980 --> 00:12:50,100
+Şimdi buradan ilerleyelim. Birinci türevi anlatırken bir görüntünün, bir satırının sken edilmiş.
+
+33
+00:12:50,644 --> 00:13:05,304
+Formu üzerinden ilerleyeceğim. Scanline dediği satırda varsayalım ki bir görüntünün bir satırındaki piksellerin intensity değerleri, parlaklık değerlerini ele almış olalım.
+
+34
+00:13:05,304 --> 00:13:12,423
+Ve böylece bir boyutlu işaret üzerinden ilerleyelim. Çünkü burada yapıyı one dimensional signal üzerinden anlatacağım dedim.
+
+35
+00:13:14,176 --> 00:13:22,176
+Sken edilmiş bu görüntü satırı üzerindeki parlaklık değerlerine baktığımız zaman önce 666 diye...
+
+36
+00:13:22,676 --> 00:13:37,156
+Hiç değişim olmadan ilerliyor. Constant Intensity demiş bu bölgeye. Daha sonra 5, 4, 3, 2, 1 şeklinde yavaş yavaş azalan bir bölge oluşturmuş. Buna rampa diyor.
+
+37
+00:13:37,156 --> 00:13:49,756
+Ve ondan sonra yine sabit bir bölge, Constant Area var ve birden altıya doğru keskin bir çıkış var. Buna da step diyor.
+
+38
+00:13:50,292 --> 00:13:51,532
+Buna da Step diyor.
+
+39
+00:13:52,592 --> 00:14:03,312
+Şimdi bu şekilde bir işareti aslında inceliyoruz ve bunun birinci türevini aldığımız zaman aslında yaptığı işlem şu.
+
+40
+00:14:03,751 --> 00:14:08,711
+Sağdaki pikselin parlaklık değerinden soldakini çıkararak elde ettiği sonucu.
+
+41
+00:14:09,043 --> 00:14:12,963
+Sol taraftaki pikselin altına yazmak şeklinde ilerliyor.
+
+42
+00:14:12,963 --> 00:14:19,963
+Ve burada da görüyorsunuz aslında Constant Intensity dediğimiz bölgede...
+
+43
+00:14:20,884 --> 00:14:42,243
+Birinci türe sabit 0-0-0 diye giderken parlaklık değeri 6-5-4-3-2-1 diye yavaş yavaş değişiyor ise bu değişim bir liner bir ivme ile gerçekleşiyorsa burada da gördüğümüz gibi aralarındaki fark hep eksi 1 çıkmış.
+
+44
+00:14:42,243 --> 00:14:48,864
+Daha sonra yine bir sabit constant intensity de.
+
+45
+00:14:48,884 --> 00:14:52,683
+Dediğimiz bir bölge vardı. O bölgede sıfır çıkmış farklar.
+
+46
+00:14:54,024 --> 00:14:59,943
+Ve step dediğimiz ani değişimin olduğu bölgede ise beş olmuş.
+
+47
+00:15:00,803 --> 00:15:04,884
+Yani parlaklık değeri altı eksi bir, farkı beş.
+
+48
+00:15:05,723 --> 00:15:09,983
+Daha sonra işte altı eksi altı sıfır diye devam ediyor.
+
+49
+00:15:10,203 --> 00:15:13,243
+Burada birinci türevin nasıl alındığını görüyorsunuz.
+
+50
+00:15:14,836 --> 00:15:30,016
+İkinci türevde ise aslında birinci türev sonucu üzerinden gidiyor ve diyor ki birinci türevde elde ettiğim sonuçları bir input olarak alacağım ve bunun üzerinden tekrar bir türev işlemi gerçekleştireceğim.
+
+51
+00:15:41,183 --> 00:15:45,264
+Sıfırdan farklı değerler oluştuğunu görebiliyoruz.
+
+52
+00:15:45,764 --> 00:15:55,384
+Alttaki grafikte ise birinci türev ve ikinci türevin değişimlerini bir grafik olarak göstermiş.
+
+53
+00:15:55,384 --> 00:16:05,683
+Zaten az çok yorumladık. Burada yaptığımız yorumları bir liste halinde verecek olursak.
+
+54
+00:16:05,844 --> 00:16:07,364
+Diyor ki birinci türev için.
+
+55
+00:16:08,436 --> 00:16:25,076
+Must be zero in areas of constant intensity, yani sabit değişmeyen parlaklık değerleri için bakıyorsak, birinci türev için diyor ki türev işlemi sonucu sıfır olmalıdır.
+
+56
+00:16:35,700 --> 00:16:45,000
+Parlaklık değişimi varsa at the onset of an intensity step or ramp demiş.
+
+57
+00:16:45,259 --> 00:16:57,600
+Bu şekilde görüntüde parlaklık değişiminin başladığı noktada ve rampa boyunca num zero, sıfırdan farklı değer almalıdır diyor.
+
+58
+00:17:00,788 --> 00:17:11,788
+Rampa dediğimiz değişimin olduğu bölgede sabit bir ivme ile değişiyor ise burada yine…
+
+59
+00:17:12,915 --> 00:17:15,395
+Pardon, sabit ilmi olmak zorunda değil.
+
+60
+00:17:16,695 --> 00:17:19,855
+Non-zero, sıfırdan farklı bir değer alır diyor.
+
+61
+00:17:20,415 --> 00:17:25,475
+Yani sıfırdan farklı bir değer, az önceki örnekte gördüğümüz gibi ne olabilirdi?
+
+62
+00:17:26,435 --> 00:17:33,455
+Eksi bir, eksi bir, eksi bir olmuş ama buradaki eksi birler sabit değişim olduğu zaman hep eksi bir diye değişiyor.
+
+63
+00:17:33,455 --> 00:17:37,415
+Bu eksi iki, eksi üç, eksi dört gibi değerler de alabilirdi.
+
+64
+00:17:39,355 --> 00:17:40,375
+Ne dedik?
+
+65
+00:17:40,915 --> 00:17:57,096
+İnan Zero, birinci türev için rampa üzerindeki parlaklık değerlerinde sıfırdan farklı değer almalıdır dedik. Sıfır dışında bir değer olmalıdır.
+
+66
+00:18:04,211 --> 00:18:13,532
+Constant Area için intensity değerlerinin değişmediği, sabit olduğu bölgelerde must be zero demiş.
+
+67
+00:18:14,851 --> 00:18:23,311
+Burada ilginç bir nokta. Must be non-zero at onset and end of an intensity step or ramp.
+
+68
+00:18:23,700 --> 00:18:35,980
+Burada bir rampa şeklinde bir değişim varsa parlaklık değerlerinde bunun başladığı ve bittiği noktalarda diyor. Yani şuradaki gibi noktalarda.
+
+69
+00:18:36,660 --> 00:18:55,820
+Must be non-zero onset and end of intensity step or ramp demiş. Bu ayrım burada önemli. Yani ne zaman sıfırdan farklı değer alıyor? Bu değişimin başladığı, bittiği noktalarda. Bu aslında biraz şuna da karşı geliyor.
+
+70
+00:19:04,660 --> 00:19:28,200
+Sonra daha koyu, gitgide koyulaşan bir bölge olsun. Bu şekilde bir görüntü, bir line olabilir, bir kenar geçişi gibi bir bölge olabilir. Bu durumda ikinci türev aslında bize iki yerde işaret üretiyor. Diyor ki bir bunun başladığı yerde, bir de bittiği yerde.
+
+71
+00:19:28,756 --> 00:19:50,596
+Sıfırdan farklı olur. Ama şu aradaki bölgede a long ramp on a constant slope demiş. Must be zero. Sabit bir eğimle artış gösteren rampa boyunca yine must be zero, yine sıfır olması gerektiğini söylüyor ikinci türevin.
+
+72
+00:19:50,596 --> 00:19:56,596
+Aslında bu ikinci türevin bir hassasiyeti. Şöyle yorumlayabiliriz.
+
+73
+00:19:56,756 --> 00:20:06,356
+Aslında bir kenar geçişi, bir parlaklık değişiminin olduğu bölge varsa bunun bir başladığı noktayı bir de bittiği noktayı gösteriyor.
+
+74
+00:20:07,556 --> 00:20:15,115
+Bu daha hassas, daha fazla bir kenar üretiyor anlamına da gelir bu bakış açısıyla.
+
+75
+00:20:22,483 --> 00:20:35,463
+Şimdi burada da aynı konuya değiniyor aslında. Diyor ki ikinci türev için would produce double edge on pixel thick separated by zeros demiş.
+
+76
+00:20:36,384 --> 00:20:42,543
+Yani bir kenar üzerinde ikinci türev aldığımız zaman iki tane kenar bulur diyor.
+
+77
+00:20:42,543 --> 00:20:48,543
+Kenarın başladığı ve bittiği noktaları bulur diyor. Aslında bu bakış açısı bize...
+
+78
+00:20:48,884 --> 00:20:55,884
+Çok ilginç bir şekilde sharpening dediğimiz keskinleştirme işleminde...
+
+79
+00:20:56,596 --> 00:21:12,376
+Faydalı bir araç haline geliyor. Çünkü kenarın başladığı ve bittiği noktaları keskinleştirebilirsek eğer görüntü üzerinde aradığımız netleştirme, keskinleştirme işlemini gerçekleştirebiliriz diyor.
+
+80
+00:21:12,376 --> 00:21:17,936
+Ve bu bakış açısıyla biz bir ikinci türev işlemine odaklanalım diyoruz.
+
+81
+00:21:22,067 --> 00:21:28,248
+Image Sharpening işlemi için ikinci türevden faydalanacağız dedik ama ikinci türevi önce tarif etmemiz lazım.
+
+82
+00:21:28,248 --> 00:21:42,307
+Buradaki ifadeye bakacak olursanız, FX'ye dediğimiz iki boyutlu bir image signal bir görüntümüz var. İki boyutlu bir işaret.
+
+83
+00:21:50,067 --> 00:22:02,447
+Ayrı boyutlarda türev alıp sonra bunları toplayarak bu işlemi yapabiliyoruz. O nedenle bu işleme aslında izotropik filter adı veriliyor.
+
+84
+00:22:07,763 --> 00:22:22,543
+Eksenlerden bağımsız olarak biz bunu her bir değişken için ayrı ayrı gerçekleştirebiliyoruz. Bu özelliğine de bu filtrenin izotropik filter özelliği diyoruz.
+
+85
+00:22:22,543 --> 00:22:32,844
+Ve izotropik filterin bir başka önemli özelliği ise burada izotropik filter için diyor ki rotation invariant demiş.
+
+86
+00:22:33,395 --> 00:22:49,155
+Bu ne demek? Döndürmeden bağımsız, yani döndürme operasyonundan, rotation operationından etkilenmiyor diyor. Biraz daha açık konuşmak gerekirse aslında şunu söylüyor.
+
+87
+00:22:57,203 --> 00:23:01,583
+As applying the filter to the image first and then rotating the result.
+
+88
+00:23:04,003 --> 00:23:21,403
+Elimizde bir giriş görüntüsü var. Ben bu giriş görüntüsünü diyelim ki 45 derece döndürdüm veya 90 derece döndürdüm. Daha sonra filtreyi uyguladım. Bu filtre Laplosion Operator'ı. Bu filtreyi uyguladığımda elde ettiğimiz sonuç.
+
+89
+00:23:21,807 --> 00:23:34,027
+Diyor ki, önce filtreyi uygulayıp sonra döndürmekle aynı sonucu verir. Yani hiçbir fark olmaz. Bu Rotation Invariant dediğimiz özellik aslında bunu gösteriyor.
+
+90
+00:23:34,708 --> 00:23:46,068
+Şimdi bu kadar özelliklerini söyledikten sonra bu Laplacian Operator'ın. Laplacian Operator'ı, burada tekrar söylüyorum, ikinci türevin genel ismidir arkadaşlar.
+
+91
+00:23:46,068 --> 00:23:59,327
+Ve biz bir iki boyutlu işaret üzerinde ikinci dereceden türev işlemini X doğrultusunda ikinci türev artı Y doğrultusunda ikinci türev şeklinde yazabiliyoruz dedik.
+
+92
+00:24:02,708 --> 00:24:09,528
+Öncelikle X doğrultusunda türevi ve Y doğrultusunda türevi nasıl yapıyoruz? Şöyle bir bakalım.
+
+93
+00:24:13,448 --> 00:24:16,347
+Hemen şöyle küçük bir ekran hazırladım size.
+
+94
+00:24:25,652 --> 00:24:51,412
+Scan edilmiş bir line var. Yani bir görüntünün bir satırını sadece aldım. Ve dedim ki ortadaki piksel fx olsun. Bunun solundaki piksele fx-1. Sağındaki piksele x-1 dedim. İşte bu tarafa doğru gittikçe x-2, x-3 diye fx-2, fx-3 diye devam ediyor. Veya sol tarafa gittiğimizde benzer şekilde.
+
+95
+00:24:53,652 --> 00:25:18,892
+Az önce tarif etmiştim birinci türev işlemini. F üstü x dediğim işlem için şunu gerçekleştiriyorum. Sağdaki pikselden soldakini çıkartıyorum demiştim. O zaman şu iki piksel arasında çıkarma işlemini yaptığımda fx-fx-1 yazıyorum. Şurası eksi olacak.
+
+96
+00:25:20,980 --> 00:25:43,720
+Burada sağdaki pikselden soldakini çıkardım ve bu iki piksel için şunu ürettim. Aynı işlemi bir de burada gerçekleştiriyorum. Sağdaki pikselden, x artı bir pikselinden soldakini çıkartıyorum. Yani fx'i çıkartıyorum ve bunu üretiyorum.
+
+97
+00:25:44,115 --> 00:25:52,276
+Bu görmüş olduğumuz işaret birinci dereceden türevi gösteriyor. Çıkarma işlemini kullanarak ben bunu yaptım.
+
+98
+00:25:52,276 --> 00:26:02,556
+Şimdi bu işlemin ikinci dereceden türev olarak nasıl yazarım? Aynı mantıkla işlem yapacağım.
+
+99
+00:26:11,251 --> 00:26:27,251
+Eksi diyorum soldaki fx eksi eksi artı oldu fx eksi 1. Yani aslında şurada iki tane eksi fx var. Dolayısıyla ben bunu sadeleştirip yazacak olursam.
+
+100
+00:26:29,092 --> 00:26:35,352
+Şuraya yazayım. Çünkü yeni satır açabilecek miyim? Bakayım şuradan. Yapamıyor herhalde.
+
+101
+00:26:42,804 --> 00:26:49,424
+Şuradan iki tane eksi 2fx geleceğini belirteyim.
+
+102
+00:26:49,424 --> 00:27:04,924
+Buna göre arkadaşlar ben şimdi tekrar şuraya dönecek olursam aslında işlemi şöyle tarif edebilirim.
+
+103
+00:27:04,924 --> 00:27:05,744
+Bakın burada.
+
+104
+00:27:08,915 --> 00:27:10,556
+Slide Show yapalım.
+
+105
+00:27:13,476 --> 00:27:30,655
+Şurada X'in, Fx'yenin X doğrultusunda ikinci dereceden türevini yazarken elde ettiğimiz ifadede Y'yi sabit tutarak az önce X'ler üzerinde yapmış olduğumuz işlemi göstermiş olduk.
+
+106
+00:27:34,112 --> 00:27:49,791
+Filtre kat sayısı formunda yazmak istersem ortadaki pikselin yani x'ye dediği pikselin kat sayısı 2, soldaki ve sağdaki piksellerin kat sayısı ise artı 1, artı 1 şeklinde olacak.
+
+107
+00:27:50,471 --> 00:27:56,392
+Bu x doğrultusunda ikinci dereceden türev işleminin filtre kat sayılarını gösteriyor.
+
+108
+00:28:02,112 --> 00:28:14,812
+Y doğrultusunda merkezde eksi 2 olan, burada artı 1, burada artı 1 olan şöyle bir Y doğrultusunda bir filtre katsayısı elde ederiz.
+
+109
+00:28:14,812 --> 00:28:29,011
+Diyor ki bu iki filtreyi birleştirip yani toplayıp bakacak olursa aslında elde edeceğimiz filtre burada da gösterildiği gibi üçlük bir maskın içerisine yerleştirilebilir.
+
+110
+00:28:29,940 --> 00:28:41,680
+Şöyle yapalım. Merkez piksellerin toplamı eksi 4 olacak. Kuzey, güney, doğu, batı yönündeki piksellerin katsayıları 1 olacak.
+
+111
+00:28:42,163 --> 00:28:50,504
+Diğer yönler için, işlem yapmadığı için bir boyutlu üzerinden giderken bunların sıfır olması anlamına gelecek diyor.
+
+112
+00:28:50,504 --> 00:29:05,504
+Bu şekilde ben aslına bakarsanız ikinci türev için kullanılan Laplacian Operator dediğim operatörün kat sayılarını burada gördüğümüz şekilde oluşturabiliyorum.
+
+113
+00:29:08,019 --> 00:29:14,659
+Az önce ekranda oluşturmuş olduğum maskı şu anda burada görebiliyorsunuz. Şurada verilmiş.
+
+114
+00:29:16,439 --> 00:29:23,460
+Fakat diyor ki biz bu işlemi gerçekleştirirken ana yönlere baktık sadece.
+
+115
+00:29:24,788 --> 00:29:46,827
+Ve ana yönlerdeki farkları kullandığımız için ara yönler burada yoktu. Aslında ben bu filtreyi biraz daha geliştirip ara yönlerde de çalışacak şekilde işte kuzeydoğu, kuzeybatı, güneydoğu, güneybatı yönlerinde içini alacak şekilde iyileştirerek
+
+116
+00:29:47,347 --> 00:30:09,327
+Sağda gördüğümüz forma dönüştürebilirim. Bu durumda tüm diğer yönleri kullandığım için burası eksi sekiz kat sayısını alıyor. Bu ara yönlere de birer eklemiş oluyorum. Ve iyileştirilmiş bir Laplacian maskı elde ediyorum.
+
+117
+00:30:10,132 --> 00:30:28,132
+Bu maskta iki farklı şekilde yine kullanmak mümkün. Merkez pikseli eksi 8 ile çarpmak yerine merkez pikseli artı 8 deyip diğer yönlerdeki piksel kat sayılarını...
+
+118
+00:30:28,500 --> 00:30:54,379
+İşaretini ters çevirerek de kullanabilirim. Yani bunların hepsi çalışır, hepsi ideal formda sonuç üretir. Ama en iyisi yine ara yönleri de kullandığı için şu mask diyebiliriz. Bu işaretleri tersine dönüştürülmüş olan da bir opsiyon olarak bizim karşımıza çıkabiliyor.
+
+119
+00:30:55,380 --> 00:31:06,940
+Şimdi ben bu kadar işlemi anlattıktan sonra hep amacım neydi? Laplacian Operator'dan faydalanarak aslında bir sharpening işlemi gerçekleştirmekti.
+
+120
+00:31:20,852 --> 00:31:38,491
+Ben bir Laplacian Operator'dan geçirdikten sonra FX'ye orijinal görüntüye eklersem eğer elde edeceğim GX'ye görüntüsü bir Sharpened Image olarak karşıma çıkar.
+
+121
+00:31:41,652 --> 00:31:51,392
+Merkez pikseli, merkez pikseli eksi 8 olanı kullanıyorsanız eğer c'yi eksi 1 alın diyor.
+
+122
+00:31:52,832 --> 00:31:58,912
+Artı olanı kullanıyorsanız artı 1 olarak alın diyor.
+
+123
+00:32:07,279 --> 00:32:18,719
+Keskinleştirilmiş görüntü olduğunu görebilirsiniz. Peki yaptığımız şey ne? İkinci türev aldığımızda lütfen hatırlayalım. İkinci türev işlemi için şunu söylemiştik.
+
+124
+00:32:20,240 --> 00:32:30,339
+Görüntü geçişlerinde kenarın başladığı ve bittiği noktalarda bize bir işaret üretiyordu.
+
+125
+00:32:36,627 --> 00:32:54,847
+Kenarların başladığı ve bittiği noktaları güçlendirerek, gerçek giriş görüntüsünü ekleyerek o kenarların başlama noktalarını daha keskin hale getirebilirim diyor. Mantık buna dayanıyor. Sharpening dediğimiz işlem bu şekilde çalışıyor.
+
+126
+00:32:54,847 --> 00:33:04,607
+Bununla ilgili böyle örnekler vermiş. Nedir örneklere baktığımızda? Bir blurred image diyor. Şu gördüğümüz.
+
+127
+00:33:04,627 --> 00:33:24,827
+Görüntü için ve North Pole of the Moon ayın kuzey kutbunun görüntüsüymüş. B'de bir Laplacian Without Scaling vermiş. Yani giriş görüntüsünün Laplacian Filter çıkışı bu.
+
+128
+00:33:25,652 --> 00:33:44,851
+Bu Laplash'ın çıkışını bir scaling işlemine tabi tutmuş C'de ve ondan sonra Image Sharpened Using Mask figür demiş ve şurada iki tane farklı A ve B.
+
+129
+00:33:44,851 --> 00:33:50,632
+Bunda merkez pikseli eksi dört olanı almış herhalde. Şurası eksi dört olan.
+
+130
+00:33:52,084 --> 00:33:59,884
+Burada da eksi 8 olanı kullanarak bir sharpening işlemi gerçekleştirmiş.
+
+131
+00:33:59,884 --> 00:34:12,943
+Aslında ana görüntüyle en alttaki görüntüyü kıyasladığımızda yani üstteki şu blurred image ile alttakini kıyasladığımızda nasıl bir fark görüyorsunuz?
+
+132
+00:34:13,243 --> 00:34:15,243
+Yorum yapabilir misiniz?
+
+133
+00:34:16,628 --> 00:34:22,387
+Hocam, eksi dört olanı çok fark edilmiyor gibi, eksi sekizdeki daha net gözüküyor.
+
+134
+00:34:22,448 --> 00:34:23,988
+Daha keskin de galiba.
+
+135
+00:34:24,768 --> 00:34:34,168
+Yani hani böyle ayın yüzeyinde çukurlar falan olur ya, o çukurların kenarları çok çok keskin hale gelmiş. Değil mi?
+
+136
+00:34:34,168 --> 00:34:44,628
+Yani ben de onu söyleyebilirim. Mesela şu bölgelerde özellikle baktığımızda görebiliyoruz. Böyle eskiden izohips haritaları falan yapıyorduk.
+
+137
+00:34:44,628 --> 00:34:51,088
+Onlara benzer bir görüntü çıkıyor sanki. Böyle bir keskinleştirme işleminde.
+
+138
+00:34:54,408 --> 00:35:04,628
+Güzel. Ve kadar sorumuz yoksa eğer. Yine enteresan bir konu bence. Buradan ilerleyelim. Diyor ki...
+
+139
+00:35:06,547 --> 00:35:20,347
+Unsharp Masking and High Boost Filtering diye bir konu başlığı var. Bunu yine bir boyutlu bir işaret üzerinden anlatıyor fakat benim çok hoşuma gidiyor. Çünkü kavramı ya da yapılan işi anlamak açısından çok güzel, çok faydalı.
+
+140
+00:35:20,347 --> 00:35:26,347
+Diyor ki elimizde böyle bir orijinal işaret olsun. Orijinal işarette işte...
+
+141
+00:35:28,307 --> 00:35:52,547
+Constant Intensity var. Sonra yine bir ramp var. Yavaş yavaş yükselen, artan bir parlaklık değeri var. Ve sonra yine Constant Intensity var. Diyor ki ben bu işareti blur ettiğimde, yani bulanıklaştırdığımda ne olacak? Aslında şu köşelerdeki keskin geçişler yumuşayacak.
+
+142
+00:35:56,307 --> 00:36:07,188
+Kesikli işaretlerle verilmiş olan orijinali, blur edilmiş ise bakın oradaki köşe geçişlerinin yumuşatılmış hali anlamına geliyor.
+
+143
+00:36:09,043 --> 00:36:15,844
+Ben bir Unsharp Mask işlemi yaptığım zaman, aslında az önce bahsetmiştik işte neydi?
+
+144
+00:36:16,644 --> 00:36:19,483
+Buradaki Unsharp Mask yalnız farklı üretiliyor.
+
+145
+00:36:19,483 --> 00:36:22,644
+Az önce gördüğümüz Laplosion Filter'dan üretmiyor.
+
+146
+00:36:22,804 --> 00:36:25,064
+Bunu da şöyle üretiyor.
+
+147
+00:36:25,844 --> 00:36:28,384
+Buna FX'ye diyelim.
+
+148
+00:36:30,228 --> 00:36:34,188
+Ya da fx diyelim çünkü bir boyutlu bir işaret olarak vermiş.
+
+149
+00:36:35,108 --> 00:36:37,847
+Alttaki ise bunun blur edilmiş hali.
+
+150
+00:36:38,628 --> 00:36:40,467
+F üstü x olsun.
+
+151
+00:36:40,467 --> 00:36:43,528
+Bu ikisi arasında çıkarma işlemi yapıyor.
+
+152
+00:36:43,708 --> 00:36:46,467
+Fx'den f üstü x'i çıkartıyor.
+
+153
+00:36:47,548 --> 00:36:53,988
+Diyor ki bu çıkarma işlemini yaptığım zaman aslında şu ikisinin arasında gördüğümüz şu bölümler kalır sadece elimde.
+
+154
+00:36:54,128 --> 00:36:57,467
+Yani burada unsharp mask operatörü.
+
+155
+00:36:57,780 --> 00:37:07,980
+Bir önceki Laplacian Filter'dan farklı olarak basit bir çıkarma işlemiyle elde ediliyor.
+
+156
+00:37:24,980 --> 00:37:48,199
+Vurgusunu arttırıyor. Sharpened Signal dediği sinyali de bu şekilde elde ediyor. Bu çok güzel bir örnek. Az önce bahsettiğim gibi önce birinci maddede diyor ki, Blur the original image. İkinci madde subtract the blurred image from the original. The resulting difference is called the mask.
+
+157
+00:37:48,559 --> 00:37:54,199
+Buna artık bir mask adı veriyor. Orjinalden Blur edilmiş görüntüyü çıkartıyor.
+
+158
+00:37:55,155 --> 00:38:13,655
+Ve sonra diyor ki bu maskı add the mask to the original image diyor. Aşağıda da görüyorsunuz GX'ye dediğimiz output image, FX'ye input image, G mask dediğimiz bu fark alınmış maskı gösteriyor.
+
+159
+00:38:13,655 --> 00:38:22,615
+Bunu bir K kat sayısıyla çarparak orijinal görüntüyü eklediğimizde aslına bakarsanız blurred bir image elde edersiniz diyor.
+
+160
+00:38:23,923 --> 00:38:38,444
+Burada şey vermiş, işte K birden büyük olursa birden küçük olursa gibi değişik durumlar için farklı etkiler elde edebileceğimizi de belirtiyor.
+
+161
+00:38:38,444 --> 00:38:46,204
+Bu Laplacian Filtre'a alternatif unsharp masking işlemini bize gösteriyor.
+
+162
+00:38:48,784 --> 00:39:00,784
+Artık bu dersi lütfen şöyle düşünün. Biz lisansla görüntü işleme dersi görmüş olabiliriz. Bazı şeyleri burada biraz daha...
+
+163
+00:39:01,876 --> 00:39:29,876
+Matematiksel tarafını inceleyerek, üzerinde düşünerek çalışmamız gerekiyor. O yüzden birinci türev nedir? Al Sobel maskını, birinci türevi elde et diyebilirsiniz. Ama lütfen yapılan işin matematiksel backgroundunu anlamaya çalışın. Bu size çok şey kazandıracaktır. Özellikle artık master seviyesine, doktora seviyesine gelmiş öğrenciler.
+
+164
+00:39:29,876 --> 00:39:31,876
+Şimdi...
+
+165
+00:39:34,036 --> 00:39:52,395
+Başa döndüm. Evet, ikinci türevden bahsettik de birinci türevi biraz daha detaylı ele alalım bakalım. Biz birinci dereceden türev işlemini gerçekleştirmek istiyoruz ve bunu image sharpening işlemi olarak kullanacağız.
+
+166
+00:39:52,395 --> 00:40:00,000
+Burada birinci türev gradient operatörü diye geçiyor. Lütfen kavramları iyi yerleştirelim.
+
+167
+00:40:00,000 --> 00:40:03,539
+İkinci türe ve Laplash'ın operatörü diyoruz.
+
+168
+00:40:05,887 --> 00:40:24,887
+Bir fx'ye görüntüsünde gradient operator'ı aynı ikinci türevde yaptığımız gibi iki boyutlu işaret için izotropik filtre olarak çalışıyor ve her bir değişken için ayrı türev alıyorum.
+
+169
+00:40:24,887 --> 00:40:29,547
+X doğrultusunda ayrı bir türev alıyorum, y doğrultusunda ayrı bir türev alıyorum.
+
+170
+00:40:33,887 --> 00:40:49,427
+X, Y doğrultusundaki türeve G, Y diyecek olursam, bu şeylerin türev çıktılarının iki boyutta yine bakıyorum.
+
+171
+00:40:49,427 --> 00:41:00,427
+Ya da bir vektör olarak düşünecek olursam, X ve G, X ve G, Y dediğim bir vektörün iki bileşeni, bu vektörün magnetüdü.
+
+172
+00:41:01,344 --> 00:41:16,163
+Bana değişimin büyüklüğünü verir. Ve burada mx'ye dediğim bir magnetüt, bir de yani değişimin büyüklüğünü ve bir de direction'ını hesaplayacağım.
+
+173
+00:41:16,163 --> 00:41:23,264
+Gradient vektörünün yönünü hesaplayacağım. Bu da iki boyutlu bir vektörün.
+
+174
+00:41:23,603 --> 00:41:28,163
+Her bir bileşenin karelerinin toplamının kare kökünü alırsam magnetüdü.
+
+175
+00:41:28,163 --> 00:41:38,684
+Eğer arktanjantı G'ye bölü GX yaparsam da bunun, yazmamışız buraya, niye yazmamışız?
+
+176
+00:41:39,203 --> 00:41:42,403
+Bunun direction'ını hesaplamış olurum.
+
+177
+00:41:42,403 --> 00:41:46,123
+Tamam. Magnetüd için, magnetüd için.
+
+178
+00:41:46,547 --> 00:41:58,627
+Gx'in karesi artı Gy'nin karesi. Kareleri toplamının kare kökünü aldığım zaman Mxy'yi buluyorum. Magnetüde hesaplıyorum.
+
+179
+00:42:07,168 --> 00:42:15,967
+GX'den hesaplanıyor. Bu işlemi yani Gradient Operatörünü Edge Dedection'da da kullanacağım.
+
+180
+00:42:15,967 --> 00:42:28,168
+Ve burada aslında kenar tespitinde de kenarın yönelimi ve büyüklüğü konusunda bana fikir verecek.
+
+181
+00:42:30,483 --> 00:42:44,395
+Şimdi gradiyent operatörünü ya da gradiyent maskını biz sağdaki pikselden soldakini çıkararak elde ediyoruz dedik ve bunu...
+
+182
+00:42:44,403 --> 00:42:59,423
+Sağdaki pikselden soldakini çıkarma işlemini iki gözlü bir maskın kat sayıları şeklinde ifade edebilirim. Bu işlemi x doğrultusunda ve y doğrultusunda bu şekilde ifade edebilirim.
+
+183
+00:43:00,192 --> 00:43:15,871
+Siz de biliyorsunuz ki bu işlemleri aslında iki boyut, yani iki gözlü bir mask yerine, üç gözlü bir maskenin içine yerleştirmek ve central dediğimiz formda hesaplamak daha...
+
+184
+00:43:15,871 --> 00:43:37,671
+Doğru bir hareket olacak. O yüzden bu sözünü ettiğimiz iki gözlü maskenin yerine üç gözlü bir maske kullanmak ve centred türev işlemi almak, yani merkezi türev işlemi almak daha doğru görünüyor.
+
+185
+00:43:41,396 --> 00:43:53,876
+Lütfen şöyle düşünün. Bu merkez piksel için işlem yaparken bu merkez pikselin sağındaki pikselden solundaki pikseli çıkartarak ben bir değer elde ediyorum.
+
+186
+00:43:54,016 --> 00:43:59,256
+Ve bu elde ettiğim sonucu merkez pikselin yerine yazıyorum gibi düşünün.
+
+187
+00:44:00,195 --> 00:44:03,756
+Buna Centered Operation deniyor.
+
+188
+00:44:09,396 --> 00:44:25,396
+Bir yapıya genişletmiş oldum. Ve bunu X doğrultusunda ve Y doğrultusunda ayrı ayrı ifade etmek, yine ayrı ayrı ifade ediyorum ama şöyle söyleyeyim.
+
+189
+00:44:30,739 --> 00:44:45,039
+Düzlemde, yani iki boyutta aslında yine gerçekleştirmiş oluyorum. Lütfen şöyle düşünün. Şimdi şuradaki kat sayılar üzerinden gideceğim. Burada yatay doğrultuda bir çizgi olsa.
+
+190
+00:44:47,039 --> 00:44:54,039
+Siz bu çizginin üstündeki bir piksel ile kalemin rengini değiştireyim.
+
+191
+00:44:59,219 --> 00:45:14,479
+Ne yapıyorsun? Ne yapıyorsun? Çizginin üstündeki bir piksel ile çizginin içindeki bir pikselin farkını alarak şu şeyi mask kullandığınızda aslında.
+
+192
+00:45:15,123 --> 00:45:27,063
+Ne yapmış oluyorsunuz? Eksi bir artı bir işlemi dediğimizde şunu artı bir ile çarptık, bunu eksi bir ile çarptık ya da bundan bunu çıkardık gibi düşünebilirsiniz.
+
+193
+00:45:27,063 --> 00:45:36,163
+Ve bu görmüş olduğunuz mask yatay doğrultudaki bir çizginin varlığını tespit etmek için kullanılır.
+
+194
+00:45:42,164 --> 00:45:46,844
+Dikey doğrultuda bir çizgi olduğunu varsayın.
+
+195
+00:45:47,284 --> 00:45:50,164
+Ve bu dikey doğrultudaki çizginin içerisinde...
+
+196
+00:45:57,364 --> 00:46:07,663
+Şöyle ne yaptık? Şunu eksi bir ile çarptık. Bunun içerisindeki bir noktayı ise artı bir ile çarparak ikisi arasındaki farka baktık.
+
+197
+00:46:07,823 --> 00:46:13,423
+Ve dolayısıyla burada bir değişimin olduğunu tespit etmiş oluyoruz.
+
+198
+00:46:13,423 --> 00:46:24,423
+Dikey doğrultudaki çizgileri takip etmek için bunu, yatay doğrultudakileri takip etmek için ise bunu kullanıyorsunuz.
+
+199
+00:46:25,876 --> 00:46:40,136
+Yani bir maska baktığınız zaman hangi yönde doğruyu ya da değişimi algıları bu mantıkla çözümleyebilirsiniz.
+
+200
+00:46:40,136 --> 00:46:52,236
+Bu gördüğümüz Previt Maskı, birinci dereceden türev işlemini gerçekleştiriyor. Bunun altında yer alan Sobel filtresi ise
+
+201
+00:46:53,460 --> 00:47:19,300
+Diyor ki, merkez piksel için işlem yapıyorsam eğer ve yine yatay doğrultudaki çizgileri algılamaksa amacım, benim bu nokta için baktığımda kuzey ve güney doğrultudaki komşularım ara yönlerdeki komşulara göre daha yakınımdadır.
+
+202
+00:47:19,764 --> 00:47:32,704
+Dolayısıyla bunların kat sayılarının daha güçlü olması gerekir düşüncesiyle kat sayıları kuzey güney yönündeki kat sayıları iki katına çıkararak işlem yapıyor.
+
+203
+00:47:35,347 --> 00:47:49,347
+Previt maskıyla Sobel maskının tek farkı bu. Hemen hemen aynı yıllarda aslında bunu ortaya atıyorlar. Aslında bu maske mantığını ilk oturtan Previt ama...
+
+204
+00:47:50,036 --> 00:48:00,996
+Merkez piksele yakınlığından dolayı kat sayıları iki katına çıkaran kişi Sobel ve Sobel'in geliştirdiği filtre tabii daha meşhur oluyor.
+
+205
+00:48:00,996 --> 00:48:14,476
+Previt Mask'ı kullanılmıyor ama Sobel Mask'ı yatay doğrultuda ve dikey doğrultudaki çizgileri ya da değişimleri algılamak için daha çok kullanılan bir mask olmuş oluyor.
+
+206
+00:48:18,612 --> 00:48:41,332
+Bunun dışında tabii sadece şey gibi düşünmeyelim. Burada mesela diagonal değişimleri algılamak için de masklar var. Şurada gördüğümüz gibi. Ama ikiye ikilik maskı biz çok fazla kullanmıyoruz. Robert's Cross Gradient Operator diye tarif edilmiş burada.
+
+207
+00:48:46,387 --> 00:49:01,767
+Bizim yaygın olarak kullandığımız aslında Sobel'in kullandığı mask. Yani şurada tarif ettiğimiz mask. Şu ikisi diyebiliriz.
+
+208
+00:49:08,244 --> 00:49:13,284
+Şimdi bununla ilgili paylaşımı durdurup şeye geçelim.
+
+209
+00:49:14,983 --> 00:49:17,963
+Python koduna geçelim.
+
+210
+00:49:17,963 --> 00:49:19,864
+Ne tür?
+
+211
+00:49:23,635 --> 00:49:24,556
+Evet.
+
+212
+00:49:37,780 --> 00:49:42,668
+Bu anlattığım konuların teorik ifadesinden sonra...
+
+213
+00:49:46,612 --> 00:49:50,012
+Şurada Python'da örnek kodlarını görebilirsiniz.
+
+214
+00:49:50,831 --> 00:49:54,811
+Basit bir, burada building.tif diye bir görüntü var.
+
+215
+00:49:55,311 --> 00:50:02,791
+İlginç olan özelliği şu, bu bina görüntüsünün duvarları böyle ince tuğlalarla örülmüş.
+
+216
+00:50:02,791 --> 00:50:13,592
+Dolayısıyla kenar belirleme algoritmasında hem duvardaki tuğlaların yatay çizgilerini hem de binanın çatısındaki kiramitlerin o çizgilerini.
+
+217
+00:50:14,483 --> 00:50:28,483
+Görmek açısından güzel bir örnek. Burada bir horizontal kernel oluşturup yatay yöndeki değişimleri algılamak için...
+
+218
+00:50:30,452 --> 00:50:41,372
+Oluşturduğumuz ya da okuduğumuz imic ile bu kernel arasında bir konvolüsyon işlemi gerçekleştirip output'unu görebilirsiniz.
+
+219
+00:50:44,179 --> 00:51:01,960
+Hem Horizontal Direction hem de Vertical Direction'da benzer işlemleri yapıp bu binanın yüzeyindeki yatay ve dikey doğrultudaki çizgileri nasıl daha belirgin algılayabildiğini görüntüleyebilirsiniz.
+
+220
+00:51:01,960 --> 00:51:12,099
+Böyle bir kod üzerinden bunu incelemenizi, değişik örnekler yapmanızı sonra bu ikisini magnet ücünü alarak.
+
+221
+00:51:12,179 --> 00:51:17,539
+Birleştirmeyi denemenizi tavsiye ederim. Güzel örnekler bunlar.
+
+222
+00:51:20,539 --> 00:51:28,039
+Evet, kısaca, hızlıca size birinci türev, ikinci türev görüntü üzerinde nedir, nasıl yapılırı anlattım.
+
+223
+00:51:32,039 --> 00:51:34,960
+Şimdi şuradan bakayım.
+
+224
+00:51:35,668 --> 00:51:52,768
+Bir ara vereceğim. Aradan sonra size Lock Filter dediğimiz Laplacian of Gaussian filtresinden bahsedeceğim. Ama yine matematiğine girerek işin anlatmaya çalışacağım. Buraya kadar sorunuz var mı?
+
+225
+00:51:54,428 --> 00:51:54,988
+Yok hocam.
+
+226
+00:51:57,148 --> 00:52:03,028
+Peki o zaman. 10 dakika ara. Aradan sonra yoklama yapacağım.
+
+227
+00:52:04,500 --> 00:52:05,440
+Görüşmek üzere.
+
+228
+00:52:05,539 --> 00:52:06,560
+Tamam hocam, görüşürüz.
+
+229
+01:06:40,916 --> 01:07:04,496
+Evet, merhaba arkadaşlar. Tekrar kaldığımız yerden devam edeceğiz. Kimler bizimle burada? Şu an derste 45 kişi var görünüyor. [öğrenci] merhaba. 24 kişi kaldırdı. 25, 28, 30. Süpersiniz. Çok güzel.
+
+230
+01:07:05,364 --> 01:07:27,444
+Teşekkür ediyorum beni dinlediğiniz için. Şimdi arkadaşlar, log filter diye bir filtreden bahsedeceğim ama neden böyle bir filtreye ihtiyaç duyulmuş? Önce biraz ondan bahsetmem gerekir herhalde. Şöyle yapalım. Ekran paylaşımı. Evet, buradan gidebiliriz.
+
+231
+01:07:30,643 --> 01:07:45,203
+Marhildred Edge Detector diye bir kenar bulma için kullanılan diğer adı bunun Log Filter dediğimiz bir filtre. Laplacian of Gaussian demek bu.
+
+232
+01:07:53,012 --> 01:07:55,231
+Gauss Filtresinin ikinci türevi.
+
+233
+01:07:56,148 --> 01:08:21,768
+Aslında çıkış fikri şu, şöyle tarif edeyim. Bizim amacımız kenar bulmak. H-detektir. Ve kenar bulmak için kullandığımız operatörler, yani Laplacian gibi operatörler, gürültüye karşı çok hassaslar. Yani böyle resim içerisindeki her gürültüyü kenar olarak algılıyorlar.
+
+234
+01:08:24,148 --> 01:08:32,108
+Genelde Edge Detection işleminden önce bir smoothing işlemi yapılır. Yani bu bir input image olsun.
+
+235
+01:08:32,108 --> 01:08:47,347
+Bu giriş görüntüsüne önce bir low pass filter uygulanır.
+
+236
+01:08:51,328 --> 01:09:02,368
+Alçak geçiren filtre uygulanarak yüksek frekansları süzüyorsunuz. Daha sonra bir Edge Detection işlemi yapılır.
+
+237
+01:09:06,899 --> 01:09:18,859
+Bunu iki aşamalı yapmış oluyoruz. Yani giriş görüntüsüne önce bir low pass filter. Mesela bu low pass filter ne olabilirdi? Averaging.
+
+238
+01:09:20,627 --> 01:09:41,587
+Filtre gibi bir filtre veya ortalama filtresinin daha iyileştirilmiş bir formu için ne demiştik? Gaussian filter demiştik ve Gauss fonksiyonundan istediğimiz sigma değerine bağlı olarak büyütüp küçültebildiğimiz bir filtre tasarlayabiliyoruz.
+
+239
+01:09:42,147 --> 01:09:44,287
+Burada Gauss filtresini kullanabilirim.
+
+240
+01:09:48,948 --> 01:09:58,528
+Ve Gauss Filtresi ile smooth ettiğim, gürültüden arındırdığım görüntüye artık Edge Detection işlemi uygulayabilirim.
+
+241
+01:09:58,927 --> 01:10:01,948
+Kenar belirleme işlemi içinde ne kullanacağım?
+
+242
+01:10:02,628 --> 01:10:09,688
+Laplash'ın operatörünü kullanacağım. Yani ikinci dereceden türev kullanacağım.
+
+243
+01:10:10,579 --> 01:10:22,219
+Araştırmacılar diyorlar ki bu iki işlemi giriş görüntüsüne iki defa konvolüsyon uygulamak yerine şu aşamaları birleştirelim.
+
+244
+01:10:22,219 --> 01:10:23,279
+Pardon.
+
+245
+01:10:24,719 --> 01:10:26,699
+Buraya gittik, şuradayız.
+
+246
+01:10:27,699 --> 01:10:30,119
+Bu iki aşamayı birleştirelim.
+
+247
+01:10:35,859 --> 01:10:40,460
+Bunun yerine bir tane filtre tasarlayalım. Bu Gauss filtresinin
+
+248
+01:10:44,051 --> 01:11:08,431
+Gauss filtresinin ikinci dereceden türevini alalım, öyle bir mask üretelim ve bu işlemi bir defa da uygulayalım diyor. Mantık buna dayanıyor. Ve Gauss filtresinin bir Laplace transformunu alıyor. Yani ikinci dereceden türevini alıyor ve böylece tek bir filtreyle bu işi uygulamaya karar veriyor.
+
+249
+01:11:09,395 --> 01:11:13,995
+Peki şimdi gelelim Gauss Filtresine. Gauss Filtresi bu.
+
+250
+01:11:14,515 --> 01:11:19,855
+Önünde bir bölü kare kök içerisinde iki pi sigma var ama onu bir katsayı olarak düşünelim.
+
+251
+01:11:21,275 --> 01:11:30,575
+Boyutlarla ilişkili olan x ve y dimensionlarıyla ilgili olan kısmı e üzeri eksi x kare artı y kare bölü iki sigma kare diye geçiyor.
+
+252
+01:11:30,575 --> 01:11:39,435
+Bu bizim Gauss filtremiz. Burada da yine izotropik yapı var. Yani ben bunu bir separable filtre olarak düşünebilirim.
+
+253
+01:11:42,515 --> 01:11:53,515
+Ve eksiye doğrultusundaki işlemleri ayrı ayrı her bir boyut üzerinde gerçekleştirebilirim.
+
+254
+01:11:53,515 --> 01:11:58,695
+Ve lütfen şöyle düşünün arkadaşlar. Burada e üzeri eksi.
+
+255
+01:11:59,380 --> 01:12:05,600
+x kare artı y kare bölü 2 sigma kare şeklinde bir ifade var. Tamam mı?
+
+256
+01:12:05,600 --> 01:12:13,640
+Bunu ben eğer x doğrultusunda türevini almak istiyorsam eğer, d bölü dx diyelim.
+
+257
+01:12:18,899 --> 01:12:34,579
+X doğrultusunda dfx almak istiyorsam eğer, şuradaki x'e bağlı olarak birinci türevini aldığımda e üzeri eksi diye olan kısım eksi 2x.
+
+258
+01:12:44,307 --> 01:12:58,587
+Çarpı E üzeri eksi aynı şekilde x kare artı y kare bölü 2 sigma karedir bu. İkiler de sadeleşirse x doğrultusunda türevi aldığımda eksi x bölü sigma kare olur bu.
+
+259
+01:12:59,967 --> 01:13:09,327
+Bu tarafta da zaten onu görüyorsunuz. Lütfen dikkat. Şuradaki ifade x doğrultusunda birinci türevi gösteriyor.
+
+260
+01:13:12,051 --> 01:13:20,891
+Sigma kare e üzeri eksi x kare artı y kare bölü 2 sigma kare. Bu da aynı şeyin y doğrultusunda birinci türevi.
+
+261
+01:13:21,279 --> 01:13:48,619
+Şimdi burada bir kere daha türev alacağım. Çünkü Laplash'ın Operator'ı ikinci türev demekti. Bir daha aynı işlemleri yapacağım. Ama bu defa ne oldu? Lütfen dikkat. Çarpan şeklinde iki tane x var. x'li terim var. Dolayısıyla burada birincinin türevi çarpı ikinci, ikincinin türevi çarpı birinci toplamını alarak bu işlemi yapıyordum. Hatırlayın lütfen. Hangi derste?
+
+262
+01:13:49,279 --> 01:14:04,479
+Sonuç, şimdi burada bir defa daha türev almam gerekiyor. Burada ikinci defa türev alırken yaptığım iş şu.
+
+263
+01:14:04,895 --> 01:14:19,515
+Birincinin türevi çarpı ikinci demiştik. Burada ikincinin türevi çarpı birinci var. X kare bölü sigma'nın dördüncü kuvveti olmuş. Bu da birincinin türevi. Yer değiştirerek yazmış onları.
+
+264
+01:14:19,515 --> 01:14:32,895
+Ve böylece şunu da çarpan olarak dışarı almış. Lütfen dikkat. İkinci dereceden Gauss fonksiyonunun türevini X doğrultusunda böylece almış oldu. Aynı işlemi sağ taraftan.
+
+265
+01:14:32,895 --> 01:14:50,416
+Y doğrultusunda yaptı. Ve arkadaşlar, şurada gördüğümüz ifade çıktı karşımıza. X'e ve Y'ye bağlı olarak ben bunu iki boyutlu olarak çizdirecek olursam eğer, bu lock filter dediğim filtreyi çizdirecek olursam eğer,
+
+266
+01:14:51,539 --> 01:15:08,659
+Buradaki şekil çıkıyor ama buradaki şekil aslında tam tersi çıkması gerekiyordu. Yani buna Meksikalı şapkası diyoruz. Diğer bir adı da o. Çünkü Meksikalı şapkası gibi burada kenarlardan aşağıya doğru negatif loblar var.
+
+267
+01:15:09,524 --> 01:15:30,244
+Ve burada gördüğümüz yandan görüntüsü diyelim buna benziyor. Ama iki boyutlu görüntüsü ise şurada gördüğümüz şekil. Ama bu eksi bir ile çarpılmış hali. Yani şunu demek istiyorum. Bunun önüne bir eksi bir çarpanı koyarsanız Meksikalı şapkası böyle düz dönüyor yukarı doğru.
+
+268
+01:15:30,244 --> 01:15:37,084
+Yoksa aslına bakarsanız orijinal fonksiyonu çizdirirseniz şapka aşağı doğru bakıyor.
+
+269
+01:15:37,524 --> 01:15:48,244
+Sonuç aslında bizim tabii şekli bir kenara bırakacak olursak, elde ettiğimiz kat sayılara odaklanacak olursak, merkez pikselde bir 16 görüyorum.
+
+270
+01:15:49,364 --> 01:15:55,564
+Kuzey, güney, doğu ve batı komşularında eksi iki kat sayıları görüyorum.
+
+271
+01:15:55,564 --> 01:16:02,084
+Ve buna baktığımda şuralar aslında negatif lobları gösteriyor.
+
+272
+01:16:05,524 --> 01:16:08,344
+Şu kenarları görüyorum.
+
+273
+01:16:10,131 --> 01:16:29,351
+Böyle bir kat sayı matrisi ya da maskı üretiyor bana Lock Filter. Ve bu filtre ne işe yarıyor? Tekrar konuşacak olursak bu filtre yardımıyla aslında ben Edge Dedection işlemi yapıyorum.
+
+274
+01:16:38,131 --> 01:16:47,551
+Bir konvolüsyon işlemi ile burada bir Edge Redaction işlemi gerçekleştirebiliyorum. Slide'ın sonuymuş burası bu arada.
+
+275
+01:16:47,551 --> 01:16:53,551
+Evet, şimdi bununla ilgili...
+
+276
+01:17:05,395 --> 01:17:28,715
+Python koduna geçip bakacak olursak. Edge Detection başlıyor altında. Bunları bu haftaki paylaşmıştım sizlerle. Evet, burada Edge Detection için paylaştığım Jupyter Notebook dosyasında.
+
+277
+01:17:29,876 --> 01:17:51,576
+Anlatımlar da tekrar ediyor. Gradient Operatörü, bunun Magnitude'u ve Direction'ını nasıl hesaplarız? Bunları az önce anlatmıştım. Daha sonra Vertical ve Horizontal Edge'leri nasıl buluruzu konuşmuştuk.
+
+278
+01:17:53,524 --> 01:18:07,524
+Sobel filtresinin uygulama örneklerini burada görüyorsunuz. Bunları deneyin, lütfen tekrarlayın. Şurada bir...
+
+279
+01:18:09,844 --> 01:18:26,844
+Gauss Filtresi ile Smooth edip daha sonra Smooth edilmiş bir görüntü üzerinde birinci dereceden türevi kullanarak Edge Detection işlemi örneği verilmiş. Ama Lock Filter örneğini sizin yapmanızı istiyorum. Onun kodu yok burada.
+
+280
+01:18:37,844 --> 01:18:43,963
+En yaygın kullanılığını Kenny Edge dedektir. İki aşamalı bir yapısı var.
+
+281
+01:18:43,963 --> 01:18:55,756
+Onun burada sadece nasıl kullanıldığını gösterdim. Aslında belki Kenny...
+
+282
+01:18:55,828 --> 01:19:02,068
+Filtre için şey yapabilirsiniz. Yani kodunu incelemenizi tavsiye ederim.
+
+283
+01:19:03,028 --> 01:19:13,088
+Kenny Filter'da aynı LogFilter yapısına benzer şekilde farklı seviyelerde kenar bulmamızı sağlıyor.
+
+284
+01:19:13,088 --> 01:19:17,748
+Evet, onu söylemeyi unuttum aslında. Atladım az önce.
+
+285
+01:19:23,828 --> 01:19:33,828
+Çünkü standart sapmasına bağlı olarak Gauss filtresinin şeklinin nasıl değiştiğini anlatmıştım size. Sigma büyüdükçe...
+
+286
+01:19:34,336 --> 01:19:59,976
+Maskenin boyutunun da büyümesi gerektiğinden bahsetmiştim. Sigma küçük olduğunda daha fazla detay, daha fazla çizgi görürsünüz. Sigma değeri büyüdükçe gauss filtresiyle smoothing işlemi artar ve şu resimde gördüğümüz bakın bu bir noisy imaj burada. Bu gürültülü görüntünün.
+
+287
+01:20:00,000 --> 01:20:22,739
+Aslında siz belki sadece şurada ortada bir beyaz kare var. Bunun kenarlarını bulmasını bekliyorsunuz ama etrafta gördüğümüz nokta nokta pek çok gürültü bir kenar gibi görünebiliyor. O yüzden smoothing işlemi burada önemli. Sigmayı bir alarak bir smoothing işlemi yaptığımda yeterince temizlenmeyebiliyor bu gürültüler.
+
+288
+01:20:28,000 --> 01:20:49,780
+Sigma'yı büyüterek görüntüdeki course line dediğimiz daha kaba çizgileri elde edebilir hale geliyorsunuz. Sigma'yı küçülttüğümüzde gürültüyü hala içeride tuttuğumuz için küçük değişimler de birer çizgi gibi görünebiliyor. Edge detection işlemi sonunda.
+
+289
+01:20:50,260 --> 01:21:00,899
+Ama ben daha fazla smoothing işlemi yaptığımda, sigmayı büyüterek görüntü içerisindeki gürültüleri büyük ölçüde temizliyorum.
+
+290
+01:21:01,716 --> 01:21:28,336
+Gördüğünüz nesnenin kaba hatlarını görebilir hale geliyorum. Detaylar ve ince bir takım çizgiler, gürültüler görüntü içerisinden silinip atılıyor. Log filterında zaten mantığı buna dayanıyor. Oradaki sigma parametresini değiştirerek log filtresinde bunların sonuçlarını yorumlamanızı isteyeceğim.
+
+291
+01:21:28,336 --> 01:21:29,716
+Bir ödev hazırladık.
+
+292
+01:21:29,716 --> 01:21:49,856
+Şu anda henüz portala yüklemedim. Online Yıldız Edüter üzerinden sizinle paylaşacağım. Orada paylaştığım ödevde bu mesela log filtresini hazır filtreyi sizin kullanmadan kendi kodunuzu kendiniz yazın diyorum.
+
+293
+01:21:56,724 --> 01:22:09,123
+Gauss fonksiyonunun ikinci türevinin nasıl alındığını verdim. Formülü de var elinizde. Aslında o formülü kullanarak filtre kat sayılarını sigmaya bağlı olarak siz üreteceksiniz.
+
+294
+01:22:10,703 --> 01:22:22,164
+Yine görüntü üzerinde en az artı eksi iki buçuk üç sigmaya kadar almanız gerektiğini düşünüyorum.
+
+295
+01:22:22,387 --> 01:22:41,587
+Yani kullanacağınız filtrenin maskı büyüyecektir sigma büyüdüğünde. Bu durumda daha büyük bir alanda ortalama işlemi aldığı için bulanıklık artacak ama gürültü daha fazla bastırılmış olacak.
+
+296
+01:22:50,387 --> 01:23:04,667
+İstiyorum. Şimdi Edge Detection dedik, Image Sharpening dedik. Gelelim Thresholding.
+
+297
+01:23:06,931 --> 01:23:24,252
+Image Morfoloji dediğimiz bölüme biraz hızlandık. Bu bölüm önümüzdeki haftanın konusu ama bunlardan da bahsedeyim. Çünkü ödevde var. Dolayısıyla bu bölümü anlatmam, ödevi tamamlamanız da faydalı olacak.
+
+298
+01:23:26,252 --> 01:23:28,192
+Bu bölüme kadar sorunuz var mıdır?
+
+299
+01:23:33,268 --> 01:23:36,387
+Yoksa şöyle yapalım biz.
+
+300
+01:23:40,595 --> 01:23:42,995
+Şuradan değiştirelim ekranımızı.
+
+301
+01:23:45,995 --> 01:23:49,095
+Binary Image Processing dedik.
+
+302
+01:24:00,948 --> 01:24:05,188
+Buraya geri döneceğim. Önce tabletten biraz konuyu anlatalım.
+
+303
+01:24:21,043 --> 01:24:36,583
+Şimdi, evet, burada bir global thresholding operation'ından bahsedeceğim. Sonra connected component labeling'i hızlıca anlatacağım. Matematical morfoloji işlemine bu hafta girmeyebiliriz ama ilk iki konuyu bitirmeyi planlıyorum.
+
+304
+01:24:39,163 --> 01:24:41,523
+Ekranımı görüyorsunuz değil mi arkadaşlar?
+
+305
+01:24:42,127 --> 01:24:43,667
+Evet hocam, görüntü hocam.
+
+306
+01:24:43,867 --> 01:24:58,127
+Segmentation yazıyor. Evet. Şimdi aslında threshold operation'ını geçen hafta nedir ne değildir konuşmuştuk. Elimizde grayscale bir image var ve bu görüntü üzerinde biz...
+
+307
+01:25:00,532 --> 01:25:08,372
+Gray Level Thresholding işlemiyle en basit şekliyle bir segmentation işlemi yapmış olacağız.
+
+308
+01:25:08,372 --> 01:25:13,152
+Nedir segmentation? Background ve foreground'ı birbirinden ayırt etmek.
+
+309
+01:25:13,612 --> 01:25:23,352
+Yani arka plan ile öndeki object dediğimiz nesneyi birbirinden ayırt edebilme amacıyla kullanılabilir diyoruz.
+
+310
+01:25:23,412 --> 01:25:27,032
+En basit şekliyle buna bir örnek olabilir.
+
+311
+01:25:28,532 --> 01:25:35,592
+Tabii en önemli avantajı computationally inexpensive and fast.
+
+312
+01:25:37,587 --> 01:25:56,448
+Hakikaten işlem karmaşıklığı son derece düşük, hızlı bir işlem. Thresholding can easily be done in real time using specialized hardware. Evet, hardware ile desteklenerek çok daha hızlı gerçek zamanlı uygulamalarda da çalışır.
+
+313
+01:25:58,100 --> 01:26:20,720
+Bir görüntü içerisinde birden fazla region, bölge olabilir. Biz bir thresholding operation ile burada gördüğümüz gibi t eşik değerinden büyük ve eşit olan piksellere bir, küçük olanlara sıfır yani siyah diyerek bir thresholding işlemi yapabiliriz.
+
+314
+01:26:20,720 --> 01:26:25,980
+Bu örneği geçen hafta konuşmuştuk. Bize verilmiş olan bir görüntüde.
+
+315
+01:26:26,100 --> 01:26:34,100
+Mesela 95 ideal threshold değeri olsun. Bu ideal threshold ile bize verilmiş olan nesneleri biz...
+
+316
+01:26:34,963 --> 01:26:54,224
+Arka plandan ayırt edebiliyoruz. Ama burada önemli problem threshold değerini nasıl bulacağımız konusu. Threshold değerini küçük seçersek over segmentation, büyük seçersek under segmentation dediğimiz problemlerle karşı karşıya kalıyoruz dedik.
+
+317
+01:27:02,963 --> 01:27:22,667
+Image Processing kitabında bahsettiği basit bir işlem. Global Thresholding işlemi iteratif bir çözüm. Nasıl çalışıyor? Yani T değerini bulmak için önerilmiş bir...
+
+318
+01:27:23,123 --> 01:27:45,523
+Nasıl çalışıyor? Şöyle tarif edelim. Diyor ki, elimizde bir giriş görüntüsü var ve biz bu giriş görüntüsünün, şöyle yapayım, kalem alalım, histogramını bildiğimizi varsayalım ve bu histograma göre işte şöyle bir değişimi var.
+
+319
+01:27:51,507 --> 01:28:16,627
+Burası bizim histogramımız. Burada resim içerisinde, görüntü içerisinde gördüğümüz en düşük parlaklık değeri, burası da en yüksek parlaklık değeri olsun. Yani bu skalanın minimum ve maksimumu değil, görüntünün o görüntü içerisindeki en küçük parlaklık, en yüksek parlaklık değeri gibi düşünebilirsiniz.
+
+320
+01:28:19,507 --> 01:28:31,868
+Global Thresholding Algorithması. Select an Initial Estimate for T. A Suggested Initial Estimate is the midpoint between the minimum and maximum intensity values in the image.
+
+321
+01:28:34,567 --> 01:28:40,868
+Görüntünün minimum ve maksimum değerinin ortası, midpoint dediği orta noktasını...
+
+322
+01:28:41,779 --> 01:28:50,779
+İnişyal Estimate olarak, başlangıç T değeri olarak alabilirsiniz diyor. Buna İnişyal diyelim.
+
+323
+01:29:01,779 --> 01:29:27,000
+Evet, algoritmanın ikinci adımı. Segment the image using t. This will produce two groups of pixels. Görün t'ye göre ikiye ayırıyor. G1 dediği, consist of all pixels with intensity values greater than t.
+
+324
+01:29:29,332 --> 01:29:53,592
+T değerinden büyük olan şu bölgeye G1 diyelim. Küçük olan bölgeye ise G2 diyelim. Diğer bölgeye de G2 diyelim.
+
+325
+01:29:56,020 --> 01:30:08,020
+Üçüncü adım. Compute the Average Intensity Values Mu1 and Mu2 for the Pixels in the Region G1 and G2. Her iki bölgenin...
+
+326
+01:30:09,587 --> 01:30:32,007
+Kendi ortalama değerlerini hesaplayın diyor. T initial'dan küçük olan bölge ve büyük olan bölgede kalan parlaklık değerlerinin ortalamalarını hesaplayın. Buna mü1 dedim, buna mü2 dedim. İki tane mü değeri hesapladım. Dördüncü adım diyor ki, Compute New Threshold Value T.
+
+327
+01:30:32,884 --> 01:30:40,823
+Bu yeni bulduğum 1 and mu2'nun ortası yeni t değeri olarak hesaplanır diyor.
+
+328
+01:30:40,823 --> 01:30:42,043
+Ve beşinci adım.
+
+329
+01:30:42,523 --> 01:30:54,304
+Repeat step 2 through 4 until the difference in t in successive iteration is smaller than a predefined parameter t0.
+
+330
+01:30:58,068 --> 01:31:17,828
+İkinci adımdan dördüncü adına kadar olan işlemleri tekrarlayacağız. Ta ki bir önceki t değeriyle son bulduğum t değer arasındaki fark belli bir eşik değerin altında kalana kadar bu şeyi diyor, adımı tekrarla diyor. Oldukça basit değil mi? Anlaşıldı mı yapılan işlem?
+
+331
+01:31:26,387 --> 01:31:39,648
+Dersin duvarına basit bir örnek koyacağım. Bunu iki iterasyon çalıştırdığınızda kağıt üzerinde ne çıkıyor hesaplamanızı rica edeceğim. Bu küçük bir egzersiz olsun.
+
+332
+01:31:40,788 --> 01:31:41,627
+Hocam bir şey sorabilir miyim?
+
+333
+01:31:41,627 --> 01:31:42,487
+Buyurun.
+
+334
+01:31:42,987 --> 01:31:52,492
+Tekrarlamaya işe yarar ki zaten birinci aşamada T'yi bulduk. Yani intensity büyüdükçe ikinci tekrarda yine T'yi...
+
+335
+01:31:52,787 --> 01:31:56,007
+Bize ne kadar etki olacağını düşünmüyorum.
+
+336
+01:31:56,547 --> 01:32:10,307
+Değişiyor. Şöyle düşün. Ortadaki T'nin yeri kayıyor ya. Ortada initial T diye işaretlediğim yer kayacak. Ya sağa doğru ya sola doğru kayacak. Anlatabildim mi?
+
+337
+01:32:11,028 --> 01:32:29,048
+Birinci iterasyonun sonunda, müvan ve mütüyü hesapladığımda. Çünkü bölge bazlı bakıyorum. Bir de amaç şu aslında benim vermiş olduğum tabii ki çizimde şöyle söyleyeyim ben bu çizimi yaparken dur sarı alayım renk olarak.
+
+338
+01:32:31,548 --> 01:32:39,028
+Aslında histogramda biz şöyle bir şey görmeyi bekliyoruz. Şöyle bir vadi var aslında dağılımda.
+
+339
+01:32:39,028 --> 01:33:06,907
+Bu vadi dediğim bölge benim, nasıl söyleyeyim, background ve foreground objeleri birbirinden ayırt etmemi sağlıyor. Ve ben başlangıçta bunu orta nokta olarak seçtim. T initial'ı, initial değeri. Ama şöyle düşünün, buradaki dağılımın şekline bağlı olarak, burası şöyle dar bir şey de olabilir de, ne yapar? Sola doğru kayar.
+
+340
+01:33:07,028 --> 01:33:11,088
+Eğer bir sonraki adımda T değeri anlatabiliyor muyum?
+
+341
+01:33:11,667 --> 01:33:12,827
+Evet, anladım.
+
+342
+01:33:12,947 --> 01:33:39,667
+Dağılıma bağlı olarak o bir kayma yapar gibi. Yani aynı kalmayacağı garanti. Ama nedir? İki üç adım sonra ideal T değerini bulacak. Şey o, amaç o. Yani o valay dediğimiz arka planla nesneyi birbirinden ayırt etmemize yardımcı olacak vadi yaptığı bölgeyi bulmayı hedefliyoruz. O tam ortada değil, biraz sağa kaymış olarak.
+
+343
+01:33:39,667 --> 01:33:47,667
+Biraz sola kaymış olabilir. Mesela şey örneğine bakalım. O bloklara bakın. Mesela bu bloklarda...
+
+344
+01:33:49,876 --> 01:34:09,836
+0-255 aralığında benim orta noktam 128'dir. Yani 128'i ben başlangıçta initial threshold point olarak almış olsam ama burada görüyorsunuz 95 ideali. Yani bunu bulana kadar 2-3 iterasyon çalışması lazım.
+
+345
+01:34:10,612 --> 01:34:37,592
+Mesela bunu örnek olarak kullanabilirsiniz. Bu güzel bir örnek. Ve bunun histogramında da şeyi görebilirsiniz. O bahsettiğim vadiyi histogram üzerinde bir bölgede bir dip yapacak yani. Onu görebilirsiniz. Ama tabii burada bazı blokların şöyle şey olması, gri tonda olması, biraz koyu tonlarda olması işi zorlaştırıyor.
+
+346
+01:34:38,100 --> 01:35:01,900
+Zaten. Ama çok belirgin bir vaadi göremiyoruz. Onu en hızlı nasıl bulabiliriz amaçlıyor. Çok primitif bir çözüm aslına bakarsınız. Global Thresholding dediğimiz yöntem. Ama hızlı yakınsadığını söyleyebilirim. Yani çok yavaş değil.
+
+347
+01:35:03,091 --> 01:35:04,391
+Tamam hocam, teşekkür ederim.
+
+348
+01:35:04,811 --> 01:35:07,271
+Rica ederim. Sorunuz var mıdır başka?
+
+349
+01:35:09,731 --> 01:35:18,671
+Bir threshold algoritması verdikten sonra, global threshold algoritması dediğim gibi basit bir yöntem.
+
+350
+01:35:18,671 --> 01:35:25,491
+İdeal demeyeyim aslında. Bir threshold, en çok kullanılan bilinen threshold yöntemi.
+
+351
+01:35:25,631 --> 01:35:27,991
+Kalemim de sarı kalmış, değiştirelim.
+
+352
+01:35:29,140 --> 01:35:35,020
+Şöyle, OTSU Thresholding algoritması var.
+
+353
+01:35:37,844 --> 01:36:04,143
+Tabii OTSU'nun iddiası şu, yani biz bunun kodunu da yazmıştık vaktiyle. OTSU algoritması hızlı yakınsadığı için ideal bir algoritma. Yoksa hani T eşik değerini en doğru ben bulurum tarafında iddiası yok. Tamam iyi çalıştığını söyleyebiliriz. Ama hızlı çalışması avantajı sebebiyle yaygın kullanılıyor.
+
+354
+01:36:05,844 --> 01:36:13,523
+Kütüphaneler içerisinde de, yani hazır kütüphaneler içerisinde de bunu görebilirsiniz zaten.
+
+355
+01:36:15,523 --> 01:36:23,804
+İkinci konumuz bölümde Connected Component Labeling konusu.
+
+356
+01:36:24,663 --> 01:36:27,983
+Bağlantılı bileşenlerin etiketlenmesi.
+
+357
+01:36:30,452 --> 01:36:34,271
+Bir şey kaçırdım ben. OTSU Global Threshold'tan mı sayılır?
+
+358
+01:36:35,692 --> 01:36:52,952
+Hayır, ikisi farklı algoritmalar, farklı çözümler. OTSU'nun iddiası ben çok hızlı yakınsıyorum, çok hızlı hesaplayabiliyorum, daha az işlemle sonuca ulaşıyorum diyor. Öyle bir avantajı var sadece.
+
+359
+01:36:53,391 --> 01:36:55,751
+Global Threshold'in hazır fonksiyonu var mı hocam?
+
+360
+01:36:56,148 --> 01:37:04,707
+Global Thresholding'in yok sanıyorum. Bu Gonzales'in kitabındaki algoritmalardan biri.
+
+361
+01:37:05,347 --> 01:37:08,607
+Tamam hocam. Bunu yazarken manual olarak yazmamız lazım. Her step.
+
+362
+01:37:09,107 --> 01:37:13,707
+Global için evet. Global Thresholding için sizin yazmanız gerekir.
+
+363
+01:37:17,108 --> 01:37:34,728
+Connected Component'de, labeling işleminde bize bir binary image veriliyor ve biz bu binary image üzerinde birbiriyle bağlantılı olan pikselleri bulmayı hedefliyoruz. Ne demek istediğimi bir şekil üzerinden anlatayım.
+
+364
+01:37:36,948 --> 01:38:03,888
+Böyle bir binary image'imiz var. Bu binary image'de sıfırlar arka plan olsun. Yani siyah arka plan, beyaz ise foreground, ön plan olsun. Tamam mı? Lütfen bu kavramlar resme göre değişebilir. Onu aklınızdan çıkarmayın. Ben bu örnek üzerinde bunu bu şekilde anlatıyorum. Ne dedik? Sıfır, pikselleri, background dedik.
+
+365
+01:38:06,547 --> 01:38:09,828
+Ama mesela bir parmak izi görüntüsü var.
+
+366
+01:38:10,159 --> 01:38:29,859
+İnsanların parmak izi nasıl alınıyor arkadaşlar? Bir boyaya parmağınızı basıyorsunuz. Ondan sonra onu bir beyaz kağıdın üzerine parmak izi vuruyorsunuz. O zaman background beyaz, foreground siyah oluyor. Lütfen dikkat. Onu söylemek istedim. Uygulamaya göre değişebilir. Ezbere gitmeyin lütfen.
+
+367
+01:38:38,159 --> 01:38:47,279
+Birbiriyle bağlantılı birleşen olarak etiketlemek. Eğer öyle bakacak olursam, şuradaki birler birbiriyle bağlantılı bir bölge oluşturur.
+
+368
+01:38:48,560 --> 01:38:52,359
+Şurayı atlamışım. Hatta şöyle bir bölge oluşturur. Değil mi?
+
+369
+01:38:53,108 --> 01:39:10,568
+Sonra mesela şuradan baktığımda bu bağlantılı kompleşenler olarak şurası bir bölge oluşturur. Burada iki piksellik böyle bir bölge var. Şurada birbiriyle bağlantılı böyle bir bölge var. Ve şurada dört pikselden oluşan böyle bir bölge var.
+
+370
+01:39:14,195 --> 01:39:27,295
+Saymam ve birbiriyle bağlantılı komponentleri, bileşenleri yani o pikselleri aynı etiketle etiketlemem gerekir. Bu işlemi yaparken etiketlere işte 1, 2, 3, 4 diye numaralar veriliyor.
+
+371
+01:39:27,295 --> 01:39:35,635
+Şimdi lütfen dikkat burada benim işaretlemiş olduğum şu bölgeye burada bir etiketi verilmiş.
+
+372
+01:39:39,923 --> 01:39:49,203
+Şöyle. Ondan sonra şuradaki ikinci bölgeye, burayı karaladığım bölgeye iki etiketi verilmiş.
+
+373
+01:39:52,003 --> 01:39:59,703
+Şu parçaya üç etiketi verilmiş. Buna dört etiketi verilmiş.
+
+374
+01:40:00,000 --> 01:40:27,180
+Buna beş etiketi verilmiş. Bu işlem Connected Component Labeling. Diyeceksiniz ki ne işe yarıyor? Çok işe yarıyor. Şöyle tarif edeyim. Bir objenin bütün piksellerini birbiriyle bağlantılı piksellerini işaretleyip onun üzerinde işlem, orada bir kapalı alan oluşturuyorsunuz. Neyle birbiriyle bağlantılı bunları görebiliyorsunuz. Aslında çok önemli bir görevi var.
+
+375
+01:40:28,000 --> 01:40:36,000
+Şimdi bu işe etiketleme işlemi için etiketlenmiş alanları sonra farklı renklerde...
+
+376
+01:40:36,627 --> 01:40:46,228
+Boyayarak burada grayscale'e dönüştürmüş. Farklı gri tonlamalar vererek o bölgeleri göstermeye çalışmış.
+
+377
+01:40:46,328 --> 01:40:54,528
+Tabi bunu renkli yapsanız, grayscale değil de RGB'de gösterseniz çok daha etkili bir sonuç alabilirsiniz.
+
+378
+01:40:55,807 --> 01:41:00,108
+Burada Recursive Labeling algoritması diye bir algoritmadan bahsedeceğim.
+
+379
+01:41:04,627 --> 01:41:07,688
+İşlem görüyorsunuz. Hem de
+
+380
+01:41:08,051 --> 01:41:25,711
+Kendi içinden aynı fonksiyonu çağırarak belki daha hızlı bu işi yapabiliyorsunuz. Tek bir search de yapabiliyorsunuz. Normalde belki rekürsif bir labeling algoritması kullanmasanız aynı görüntü iki defa taramanız gerekecek.
+
+381
+01:41:25,711 --> 01:41:35,711
+Ama bu mantığı kullandığınızda rekürsif labeling algoritması ile tek bir search, tek bir tarama ile bunu yapabiliyorsunuz.
+
+382
+01:41:36,051 --> 01:41:43,731
+Yalnız burada şey de önemli. Şimdi neyi connected sayacağız, neyi connected saymayacağız konusu var.
+
+383
+01:41:58,368 --> 01:42:16,927
+Ring Pixel diyoruz. Dört komşulu uygulama diyoruz. Alternatifi nedir? Sadece ana yönlere değil, diğer yönlere de bakarsam bu işlemi sekizli yapabiliyorum. O zaman bu şu anlama geliyor aslına bakarsanız.
+
+384
+01:42:18,836 --> 01:42:27,536
+Bir nesne düşünün. Şöyle bir nesne olsun. Şu pikselleri taralı. Bir de burada var.
+
+385
+01:42:27,536 --> 01:42:38,536
+Şimdi eğer ben 8 komşulu bir Connected Component Labeling yapıyorsam bu iki bölge birbiriyle connect'dir, bağlantılıdır.
+
+386
+01:42:39,188 --> 01:42:49,188
+Ama dört komşu, dört yönlü çalışıyorsam şu pikselin sadece dört yönüne bakacağım için şu...
+
+387
+01:42:49,652 --> 01:43:05,331
+Kuzey doğusundaki bu komşusunu kontrol etmediği için bunlar birbiriyle connected çıkmayabilir. Anlatabiliyor muyum? O yüzden dört komşuluk ve sekiz komşuluk örneği bence önemli bir örnek.
+
+388
+01:43:05,331 --> 01:43:13,411
+Mesela benim şey örneğim vardı. Seven Segment Display örneğim vardı. Şöyle bir resim.
+
+389
+01:43:15,572 --> 01:43:32,891
+Eğer sadece ana yönlere bakarsanız bunlar bağlantılı çıkmıyordu da sekiz yönde bakarsanız bağlantılı çıkıyor gibi bir durumu var, durumu olabiliyor.
+
+390
+01:43:34,632 --> 01:43:41,712
+Bu önemli çünkü bu da bir parametre olarak aslında karşımıza çıkıyor.
+
+391
+01:43:42,644 --> 01:43:49,064
+Peki, rekürsif çözüm nasıl bir şeye benziyor? Kodu şöyle gösterelim.
+
+392
+01:43:51,384 --> 01:44:02,024
+Procedür, burada önce şeyden başlayalım. Compute to Connected Components of a Binary Image. B is the Original Image. B dediği orijinal görüntü.
+
+393
+01:44:02,739 --> 01:44:14,019
+LB dediği ise Labeled, Connected Component Image'i gösteriyor olsun. Burada bir prosedürümüz var.
+
+394
+01:44:15,380 --> 01:44:33,800
+Ve diyor ki Recursive Connected Component, inputu ne? B, bir de outputu var LB. B Binary imicinin negatifini alıp LB'ye yazıyor. Negatifini almak ne demek? Zaten elimde bir binary image var. Yani sıfır ve birlerden oluşuyor.
+
+395
+01:44:43,380 --> 01:45:00,319
+Negate işlemi sonucunda şey, eksi bir olacak. LB matrisi içerisinde. Burada find component dediği bir prosedürü çağırıyor. Labella. Labella sıfır vermiş. Şurada.
+
+396
+01:45:08,435 --> 01:45:15,215
+LB'yi ve Label'ı input olarak alıyor. İçeride.
+
+397
+01:45:16,692 --> 01:45:30,372
+Search diye bir şey var, prosedür çağırıyor. Bu search prosedürü de burada ve bu search prosedürü kendi içerisinde şurada search'ü çağırıyor.
+
+398
+01:45:30,372 --> 01:45:36,992
+Dolayısıyla burada sözünü ettiğimiz rekürsif yapı ortaya çıkıyor.
+
+399
+01:45:42,484 --> 01:46:01,463
+Burada neye dikkat ediyoruz? Şimdi Find Komponent'e bakacak olursak, L eşit sıfırdan maksimum row, P eşit sıfırdan maksimum kalma kadar demiş.
+
+400
+01:46:08,399 --> 01:46:27,399
+indeksinde eksi bir olanı bulduğunda label'ı bir arttırıyor ve search dediği prosedürü çağırıyor. Search prosedürüne LB'yi, label'ı ve LP yani mevcut koordinatlarını gönderiyor.
+
+401
+01:46:30,260 --> 01:46:45,119
+LB'nin LP indeksine label'ı yazdı ve bu koordinatın yani bu merkez noktasının komşularını bir enset dediği bir diziye aldı. Lütfen buna dikkat.
+
+402
+01:46:56,500 --> 01:46:58,399
+Yönde mi inceleyeceğim?
+
+403
+01:46:59,636 --> 01:47:11,776
+Yoksa 8 yönde mi inceleyeceğim? Yani buradaki en set dediğimiz diziye aslında 4 tane komşuyu da koyabilirsiniz. 8 tane komşuyu da koyabilirsiniz yazdığınız koda göre.
+
+404
+01:47:12,556 --> 01:47:24,456
+Eğer 4 komşuyu koyduysanız bu 4 tane komşunun içerisindeki piksellerin her birini tek tek kontrol ediyor. Eksi 1 olan var mı diye bakıyor. Eğer eksi 1 varsa.
+
+405
+01:47:25,716 --> 01:47:32,276
+Ve Search'ü tekrar bu L üsü, P üsü dediği indeksler için çağırıyor.
+
+406
+01:47:32,936 --> 01:47:37,136
+Tabii bu rekürsif yapı siteyi çok fazla kullanıyor.
+
+407
+01:47:37,796 --> 01:47:45,456
+Kimi platformlarda Stack Overflow problemiyle karşılaşabilirsiniz görüntünüz eğer çok büyükse.
+
+408
+01:47:45,456 --> 01:47:50,036
+Bunu Matlab'de yazdığımız zaman çokça karşılaştığımız bir sorundu bu.
+
+409
+01:47:50,416 --> 01:47:53,076
+Ama Python'da sanıyorum problem olmayacaktır.
+
+410
+01:47:53,716 --> 01:48:03,096
+Böyle bir algoritma üzerinden giderek bunu Python'da kodlamanızı yine rica edeceğim. Ödev içerisindeki konularımızdan biri bu.
+
+411
+01:48:05,176 --> 01:48:15,836
+Evet, temel mantığı aslında Connected Component Labeling'i bu şekilde anlatabiliriz. Sonraki konu Binary Image Morfoloji. İsterseniz bu konuya girmeyeyim.
+
+412
+01:48:16,212 --> 01:48:31,392
+Biraz fazla yüklenmiş olacağım size. Ödevde var ama. Fakat ödeve 15 gün süre verdim. Morfolojiyi önümüzdeki hafta anlattıktan sonra zaten ödevi tamamlamak için de vaktiniz olacak.
+
+413
+01:48:33,532 --> 01:48:36,412
+Buraya kadar sorunuz var mıdır diye sorsam.
+
+414
+01:48:41,140 --> 01:48:49,311
+Evet, peki. Arkadaşlar, ilk ödev de amacım. Sizi hem...
+
+415
+01:48:49,311 --> 01:48:55,412
+Jupyter Notebook'a ısındırmak, Python platformunu bilmeyen arkadaşlar için faydalı olabilir.
+
+416
+01:48:56,471 --> 01:49:10,492
+Hem de temel işlemleri, yani kütüphane altında yer alan temel bir takım fonksiyonları, görüntü işleme için kullanılan fonksiyonları sizin kodlayarak daha iyi öğrenmenizi sağlamak.
+
+417
+01:49:11,328 --> 01:49:35,088
+Size eziyet etmek değil, yanlış anlaşılmasın. Bunların hepsi var, niye hocam bize yazdırıyorsunuz demeyin. Bunun avantajlı yanı şu, belki mesela bir log filterda sigma parametresini büyüttüğümüzde kaba çizgileri bulur, küçülttüğümüzde küçük çizgileri, ince çizgileri, detayları da bulur demiştim.
+
+418
+01:49:39,328 --> 01:50:00,000
+Bu örneğe bakalım.
+
+419
+01:50:00,467 --> 01:50:17,127
+İşlemlerin nasıl yapıldığını arka planda biliyor olmanız lazım. O yüzden sizden bu çalışmayı istiyorum ilk ödevde. Tekrar söylüyorum amacım size eziyet etmek değil, bir şeyleri daha bilinçli kullanmanızı sağlamak.
+
+420
+01:50:18,100 --> 01:50:41,600
+Bu hafta benim anlatacaklarım bu kadar. 3 saatlik dersi 2 saatte anlatmış oluyorum ama bu biraz da online platformun nimetleri diyelim. Boşa vakit geçirmemiş oluyoruz herhalde. Umarım her şey net anlaşılmıştır. Sorunuz olursa bana e-mail yazabilirsiniz.
+
+421
+01:50:42,515 --> 01:50:53,795
+Hepinize iyi bir hafta diliyorum. Dersten çıkmadan önce bana bir el sallayarak çıkıyorsunuz. Bakayım kimler burada? Yine katılımcıları göreyim.
+
+422
+01:50:56,076 --> 01:50:57,235
+Teşekkürler [öğrenci].
+
+423
+01:51:01,076 --> 01:51:11,976
+32 katılımcı aktifmiş. 33 kişi aktifmiş. Çok teşekkür ediyorum. Haftaya görüşmek üzere arkadaşlar. Hepinize tekrar iyi haftalar diliyorum. Hoşçakalın.
+
+424
+01:51:12,695 --> 01:51:13,216
+Teşekkür ederim.
+
+425
+01:51:14,536 --> 01:51:15,115
+Teşekkürler.
+
+426
+01:51:15,136 --> 01:51:17,056
+İyi günler hocam. Çok sağ olun. Hayırlı günler.
