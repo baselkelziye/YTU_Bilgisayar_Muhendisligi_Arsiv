@@ -1,0 +1,1051 @@
+1
+00:03:33,300 --> 00:03:34,840
+Evet, merhaba arkadaşlar.
+
+2
+00:03:36,620 --> 00:03:42,300
+Şimdi öncelikle katılımın biraz da artması için 5 dakika falan bekleyeceğim.
+
+3
+00:03:43,420 --> 00:03:47,360
+Öncelikle onu bir belirteyim. Ondan sonra daha detaylarını anlatacağım durumlar var.
+
+4
+00:03:50,160 --> 00:03:54,020
+Birazdan görüşürüz yani. 5 geçe başlamış oluruz.
+
+5
+00:03:55,080 --> 00:03:56,220
+Lütfen bir yere ayrılmayın.
+
+6
+00:08:24,980 --> 00:08:32,920
+Şimdi, öncelikle kendimi tanıtırayım. İsmim Cihant Ayşe, Ziyah Cihant Ayşe.
+
+7
+00:08:33,800 --> 00:08:39,600
+Dersle ilgili konularda benle iletişime geçebilirsiniz ama dersin içeriğiyle ilgili konularda geçebilirsiniz.
+
+8
+00:08:39,779 --> 00:08:47,755
+Yoksa dersi diğer teknik tarafıyla ilgili sorunlarda ya kendi program üreticinizle ya da...
+
+9
+00:08:47,892 --> 00:09:04,692
+İşte uzaktan eğitimle ya da OBS ile iletişime geçiyor olmanız lazım. O konularda benim herhangi bir etkim ve yetkim yok. Bunu baştan söyleyeyim. Benle iletişime geçmek için mail adresini [e-posta] oradan iletişime geçebilirsiniz.
+
+10
+00:09:04,692 --> 00:09:14,472
+Şimdi şöyle çok ilginç bir durum yaşıyoruz. Maalesef, yani üniversitede Türkiye'nin bir parçası olduğu için aynı sıkıntıları, aynı problemleri yaşıyoruz.
+
+11
+00:09:15,251 --> 00:09:36,711
+Aynı gün, aynı saatte, aynı ders farklı kodlarla açılmış durumda. Şunu demek istiyorum. Bir tarafta bilgisayar mühendisliğinde BLM 5004 dersi var. Bunun birinci grubu. Bu bizim yüksek lisans programımıza ait olan bir ders.
+
+12
+00:09:37,779 --> 00:10:02,279
+Bir tarafta veri bilimi, büyük veri ve veri bilimi olması lazım. Programının VBL5004 adlı kodlu dersi var. Bu kodlu dersi bana sormadan, herhangi bir şey danışılmadan, haber verilmeden, o programın yürütücüsü mü, ilgilisi mi, artık kimiyse kafasına göre açmış. Bu böyle kafasına göre açıldığı için de...
+
+13
+00:10:03,700 --> 00:10:19,379
+Online Yıldız Etörde iki farklı ders aynı gün aynı saatte oluyor. İkisine farklı iki kaynaktan bağlanıp sunmam falan gibi bir şey söz konusu ama bunu şu anki teknik imkanlarla zaten yapabilmem mümkün değil.
+
+14
+00:10:20,180 --> 00:10:26,639
+Zaten birine bağlanırken diğerinden atabiliyor, bir şeyler olabiliyor falan filan. Yani böyle yürüyemez. Bununla ilgili şu yapılacak.
+
+15
+00:10:27,187 --> 00:10:31,687
+OBS ve Uzen'le konuyla ilgili görüştüm.
+
+16
+00:10:34,248 --> 00:10:45,087
+VBL 5004 dersini alan arkadaşları, BLM 5004'ün birinci grubuna aktaracaklar. Öncelikle bunu söyleyeyim. Şaşırmayın kodunuz değişirse.
+
+17
+00:10:45,728 --> 00:10:53,327
+Yani inşallah aktaracaklar, becerebilecekler mi bilmiyorum. Beceremezlerse zaten artık program yöneteceğiniz başka bir çözüm bulmak için uğraşır.
+
+18
+00:10:55,827 --> 00:11:11,987
+Başkalarının yarattığı problemle ben bir yere kadar uğraşıyorum çünkü. Öyle söyleyeyim. Şimdi bir diğer nokta daha var. Bilgisayar mühendisliği bölümünde BLM 5004 Grup 1 ve Grup 3 olarak iki grup şeklinde açılıyor. Bunlardan Grup 1.
+
+19
+00:11:12,884 --> 00:11:33,484
+Daha doğrusu grup 1, 2 ve 3 olarak açılıyor. Grup 1 ve grup 2 normal yüksek lisans öğrencilerimiz için. Grup 3 ise bilgi teknolojileri programındaki arkadaşlar için. Yalnız ders listesine baktığım zaman şu an bilgi teknolojilerinde olup grup 1'den bu dersi alan arkadaşlar var. Almayın, dersi hızla bırakın, 3. gruba geçin.
+
+20
+00:11:33,871 --> 00:11:46,791
+Çeşitli nedenleri var ama en temel ve basit ve şey yapamayacağımız şey, nasıl diyeyim, inkar edemeyeceğimiz durum, yönetmelikleri dersiniz sayılmaz, boşu boşuna almış olursunuz.
+
+21
+00:11:47,711 --> 00:11:58,791
+Aklınızda olsun. Bunun dışında dersin içeriksel farklılıkları, değerlendirme farklılıkları vs. de ayrı bir konu ama zaten oraya gelmeden yönetmeliksel olarak...
+
+22
+00:11:58,995 --> 00:12:18,995
+dersi alamazsınız. Sistem size izin vermiş değil, sistem hiçbir şeyi kontrol edemediği için kevgire dönmüş durumda. Onu rahatlıkla söyleyebilirim. Her türlü saçmalık yapılabiliyor sistemde şu an. O yüzden bir an önce...
+
+23
+00:12:20,628 --> 00:12:46,827
+Çünkü dersin de bir akışı var, süreci var. O süreçleri kaçırmamanın adına birazdan tarifleyeceğim. Bir an önce kendi grubunuza geri dönün. Yani dilekçeyle mi yaparsınız, sistem şu an hala açık mı değiştirebilir misiniz bilmiyorum. Değiştirin ya da dilekçeyle yapın. Düzeltin, bir an önce düzeltin. Aksi taktirde gene sizin canınız yanacak, kimsenin canı yanmayacak. Öyle söyleyeyim. Maalesef her zaman olduğu gibi.
+
+24
+00:12:47,827 --> 00:12:58,927
+Şimdi, dersimiz araştırma yöntemleri ve Bilimsel Etik. Bu arada kimseden herhangi bir tepki gelmediği için duyulabildiğimi farz ediyorum ama,
+
+25
+00:12:59,927 --> 00:13:05,528
+veri bilimindeki, tamam bilgisayar mühendisliğinden bir geliyor tarafı geldi, teşekkürler.
+
+26
+00:13:06,187 --> 00:13:10,028
+[öğrenci], veri bilimindeki arkadaşlar duyabiliyor mu?
+
+27
+00:13:11,539 --> 00:13:35,379
+Tamam, süper. Size kamera açamıyorum. Yani dediğim gibi Yıldız'dan bir büyük başarı daha oldu. Aynı anda aynı aslında farklı iki noktada olmayı başarmam bekleniyor. Başardığım sayıları ama size görüntü veremiyorum. Öyle söyleyeyim. Dersin başında da şey yaptım, sizi BLM 5004 grubuna alıp bu işi toparlayacağız.
+
+28
+00:13:35,923 --> 00:13:45,703
+Baştan işi düzgün yapması gereken düzgün yapsaydı zaten bunlar da yaşanmayacak. Neyse. Şimdi dersimiz araştırma yöntemleri ve bilimsel etik. Peki ne yapacağız?
+
+29
+00:13:46,707 --> 00:14:10,707
+Bu ders kapsamında. Öncelikle bu hafta çok fazla bir şey yapmayacağımı söyleyebilirim. Bu zaten temel uyarıları bir yapmak istedim. Neyin olup neyin olmayacağını, kimin nereden nasıl alması gerektiğini, veri bilimindeki arkadaşların BRM 5.4'e aktarılacağını ama bizim BT'deki arkadaşların kendi selametleri açısından bir an önce grup 3'e geçmeleri gerektiğini vesaireyi bir söyleyeyim istedim. Bunun dışında...
+
+30
+00:14:11,731 --> 00:14:38,311
+Bir de tanışalım istiyorum. Zaten biliyorsunuz yakın zamanda çok vahim şeyler yaşadık. Herkesin bununla bir etkileşimi olabilir. Lisans mertebesinde biraz daha vakıfız. Hangi öğrencimiz nerede, ne durumda, neye ihtiyacı var biliyoruz ama yüksek lisansı pek takip edemedik. O yüzden de slow start şeklinde gitmeyi tercih ediyorum o anlamda.
+
+31
+00:14:38,932 --> 00:14:45,491
+O yüzden bugün bir tanışma, dersle ilgili ne var ne yok, ne yapacağız bunları konuşalım istedim.
+
+32
+00:14:45,491 --> 00:14:49,832
+Şimdi araştırma yöntemleri bir bilimsel etik dersi kapsamında.
+
+33
+00:14:50,644 --> 00:15:06,724
+Aslında tahmin ettiğiniz şeyleri ve tahmin etmediğiniz birçok şeyi konuşacağız. Nedir o tahmin ettiğiniz şeyler? Hepiniz yüksek lisans ya da doktora seviyesinde öğrencilersiniz. Dolayısıyla ne yapmanız bekleniyor? Bir tez yazmanız gerekiyor. Dolayısıyla bir araştırma yapmanız lazım.
+
+34
+00:15:06,724 --> 00:15:14,443
+Uğraştırma konusunu ortada yapmak, o araştırmada ilerlemek, sonuçları elde etmek, o sonuçları yayınlamak ki artık herkesin yayın şartı var.
+
+35
+00:15:15,796 --> 00:15:32,676
+O yayın sürecine hakim olmak, sonunda bir yerlerde sunum yapmak vs. gerekiyor. Dolayısıyla bunların hepsine dokunacağız bu ders kapsamında. Bu süreç boyunca yapmanız, yapmamanız gereken şeyleri de konuşacağız. Peki bu durumda bu iş nereden başlar? Araştırma nereden başlar?
+
+36
+00:15:40,148 --> 00:15:41,268
+Konusu belli olmalıdır.
+
+37
+00:15:41,288 --> 00:15:42,548
+Problemimiz olması lazım hocam.
+
+38
+00:15:44,187 --> 00:15:52,168
+Bir taraftan konu belli olmalıdır dendi, bir taraftan problem belli olmalıdır dendi. Bilmiyorum, birbirinizi duyabiliyor musunuz? Biraz şey olabilir.
+
+39
+00:15:52,827 --> 00:15:58,788
+Yani bir tarafta notbuk açık, bir tarafta cep telefonu açık, öyle bir tuhaf halde ders yapmak durumundayım bu hafta.
+
+40
+00:15:59,627 --> 00:16:01,048
+Haftayı düzelmiş olacak inşallah.
+
+41
+00:16:03,048 --> 00:16:04,048
+Daha başka...
+
+42
+00:16:08,467 --> 00:16:10,028
+Konu ya da problemden önce.
+
+43
+00:16:14,067 --> 00:16:22,327
+Yani önceliği tartışılır gerçi ama ya da hani şöyle söyleyeyim, konuyu ya da problemi biliyorsunuz, araştırmaya başlayacaksınız. Neye ihtiyacınız var?
+
+44
+00:16:25,875 --> 00:16:39,615
+Nedir o kaynaklar? Arkandan çok gürültü geliyor, o yüzden anlamıyorum. Ya da iki ayrı kişi aynı anda konuşuyor ama da takip edemiyorum. Bir daha bir söyleyebilir misin?
+
+45
+00:16:45,299 --> 00:16:50,779
+Efendim?
+
+46
+00:16:52,200 --> 00:16:54,779
+Çok günlük ne diyorsan yazarak cevap verebilirim.
+
+47
+00:16:54,779 --> 00:17:01,460
+Yok, sen yazma. Sizin grubun yazması daha kötü. Siz cep telefonundasınız şu an. O yüzden daha sıkıntılı.
+
+48
+00:17:02,160 --> 00:17:02,619
+Dersliyim.
+
+49
+00:17:06,660 --> 00:17:12,779
+Şimdi aslında kaynak yani...
+
+50
+00:17:13,268 --> 00:17:35,168
+Nasıl diyeyim? Bir taraftan imleniyorum ama bir taraftan da değişik geliyor. Şöyle ki, evet kaynağa ihtiyacınız var. Kaynağı tanımlı dediğimiz zaman kitap, kütüphane vs. diyorsunuz ama aslında daha önemli bir kaynağa ihtiyacınız var.
+
+51
+00:17:36,884 --> 00:17:42,403
+Daha önemli derken, o daha üstün ya da daha şey değil ama daha elzem bir kaynağa ihtiyacınız var.
+
+52
+00:17:44,463 --> 00:17:45,423
+Nedir o?
+
+53
+00:17:49,268 --> 00:17:56,448
+Ya da şöyle söyleyeyim, hayatta her şeyin ucu döner dolaşır neye bağlanır? Birkaç tane şey var zaten.
+
+54
+00:17:57,128 --> 00:17:58,768
+Doğruluk mu hocam? Doğru olması lazım.
+
+55
+00:18:00,867 --> 00:18:01,668
+Alakiyada.
+
+56
+00:18:02,988 --> 00:18:06,668
+Ya o araştırma yapmak için gerekli şart değil.
+
+57
+00:18:07,087 --> 00:18:17,987
+Yani ahlaksız bir adam da araştırma yapıyor olabilir. Hani öyle söyleyeyim. Önemli bir değer. Araştırmanın doğruluğu ve düzgünlüğü üzerine. Bunu da sonra konuşacağız.
+
+58
+00:18:18,387 --> 00:18:19,188
+Hipotez mi hocam?
+
+59
+00:18:20,407 --> 00:18:30,248
+Demin arkadaşlar konu ya da problem demişti. Konu ya da problem varsa onun çözümüyle ilgili olarak da ortaya bir hipotez atarsın ama hani başka?
+
+60
+00:18:30,248 --> 00:18:33,407
+Başka?
+
+61
+00:18:38,163 --> 00:18:45,284
+Vallahi gençler nasıl bir dünyada yaşıyorsunuz bilmiyorum ama benim yaşadığım dünyada money talks.
+
+62
+00:18:47,124 --> 00:19:05,903
+Yani siz öğrenci de olsanız, üniversitenin bütün imkanlarını, kaynaklarını da kullanıyor olsanız, en azından o araştırmayı yaparken hayatınızı sürdürebilmek için paraya ihtiyacınız vardır. Dolayısıyla bir araştırmanın yapılabilmesi için illa ve illa para gerekir. O para da aslında funding.
+
+63
+00:19:06,592 --> 00:19:16,432
+Destektir bir yerden alırsınız, bir şekilde ya kendiniz oluşturursunuz ya bir yerlerden bulursunuz ki bu ders kapsamında zaten onu konuşacağız bir kısmında.
+
+64
+00:19:17,172 --> 00:19:36,751
+Şimdi ben böyle anlatınca şöyle düşünmeyim. Para, para, para falan. Oraya mı yatırsak, buraya mı yatırsak falan gibi konuşmayacağız. Parayı şöyle konuşacağız. Aslında hiç para bile demeden konuşacağız. Destek programlarını konuşacağız. Yani bir araştırma yapmak istiyorsanız o araştırmayı yapabilmek için paraya ihtiyacınız var. Yani diyorsunuz ya.
+
+65
+00:19:37,748 --> 00:20:02,907
+İşte kitaplara bakacağım, kaynaklara erişeceğim, indekslerle ulaşacağım. Evet tamam ama o neyle yapılıyor? Üniversitenin kaynağı ile yapılıyor, üniversitenin ses aldığı şeyle yapılıyor. Bir araştırmayı illa üniversite çıtısı altında yapmak zorunda değilsiniz. Kendi başınıza da yapılıyor olabilirsiniz. Dolayısıyla o kaynaklara erişmek için bile paraya ihtiyacınız var. Üyelik vesaire falan anlamında. Onu geçtim, kendinizi idame ettirebilmek için paraya ihtiyacınız var.
+
+66
+00:20:03,476 --> 00:20:25,164
+Onu geçtim. Bu araştırma kapsamında birilerini çalıştıracaksanız onlara para ödemek durumunuz var. Yani var da var. Yani parasız hiçbir şey yok. Malzeme almak için paraya ihtiyacınız var. Deney yapmak için paraya ihtiyacınız var. Yani parasız bir şey olmuyor. Dolayısıyla ne yapacağız? Bir araştırma için öncelikle onu...
+
+67
+00:20:25,268 --> 00:20:41,048
+support edecek, onu bir şekilde destekleyecek bir fon bulmamız lazım. Bunları konuşacağız. Başlayacağımız yerlerden bir tanesi bu olacak. Neyi konuşacağız? Üniversite içerisinde mesela Bilimsel Araştırma Proje Koordinatörlüğü var.
+
+68
+00:20:43,059 --> 00:21:06,940
+Dolayısıyla tez yapıyorsanız, yüksek istans ya da doktora tezi, BAP'ın desteklerinden faydalanabiliyorsunuz. Şartı, ne şurtu, ne nedir, ne değildir, bunların bir kısmını konuşacağız. Detaylarına siz bakıyor olacaksınız. Ama basit şart nedir? İkinci döneminizden itibaren başvuru yapıyormamız lazım. Dersliyim. Bir saniye, şu kapıyı bir kapatayım artık.
+
+69
+00:21:13,748 --> 00:21:15,988
+Bitmiyor, gelen giden.
+
+70
+00:21:20,596 --> 00:21:37,875
+Yüksek lisans tezi yapıyorsanız, 3. döneme kadar galiba, yanlış hatırlamıyorsam, şimdi yalan olmasın, kontrol ederiz tekrar zamanı geldiğinde konuşurken, işte doktora tezi yapıyorsanız da 6. dönem öncesine kadar başvuru yapmış olmanız lazım. Niye yapıyorsunuz bu başvuruya?
+
+71
+00:21:38,548 --> 00:21:49,067
+Yani benim hiçbir şeye ihtiyacım yok. Zaten bilgisayarımda çalışacağım, bilmem ne yapacağım vesaire diyebilirsiniz. Zaten BAP projesi size maaş, paraştırmacı, kursiyer bilmem ne parası da vermiyor.
+
+72
+00:21:49,487 --> 00:21:54,228
+Kendin dizini yapıyorsun zaten. Bana ne falan havasında takılıyor daha çok. Ama şunu verebilir.
+
+73
+00:21:54,771 --> 00:22:14,011
+Bir yayın çıkartacaksınız, bir konferansa gideceksiniz. Bugün euronun 20 lira olduğunu düşünürseniz, bir Avrupa ülkesine gidip konferansa kayıt yaptırsanız, bir uçak bileti alsanız, bir döntseniz, bir orada gezseniz, 3 gün otelde kalsanız zaten az bu spora çıkmıyor. En azından bunu karşılayabilirsiniz mesela.
+
+74
+00:22:15,763 --> 00:22:39,703
+Siz şu an teziniz üzerinde çalışıyorsunuz ama bu tezden sonra bu işi geliştirip başka bir boyuta taşıyabilirsiniz. Mesela bir girişimcilik projesi haline getirebilirsiniz. O zaman da ne lazım? Şirket kurmanız lazım. O şirkette çalışan adam bulmanız lazım. Tahminen bu geliştirme süresince bu adamlara maaş veriyor olmanız lazım. Kendinizin geçinebiliyor olması lazım. Lazım da lazım.
+
+75
+00:22:43,763 --> 00:22:53,643
+Üniversitedesiniz, tezinizle ilgili hocanızla beraber daha kapsamlı, daha büyük bir şey yazabilir miyiz, bir bin bir projesi yazabilir miyiz diyebilirsiniz.
+
+76
+00:22:54,384 --> 00:23:02,384
+Ya da daha farklı bir şey olabilir, bir firmada çalışıyorsunuzdur ama bir taraftan da tezinize yapıyorsunuzdur.
+
+77
+00:23:02,384 --> 00:23:07,884
+O zaman ben bu işi niye bir bin beş yüz beş projesi olarak yapmıyorum diyebilirsiniz.
+
+78
+00:23:08,415 --> 00:23:30,996
+Öyle yaptığınız zaman işte şirket sizin tezinizle ilgili masrafları öder, TÜBİTAK %75'ini geri öder gibi gibi gibi yani imkanlarınızı değiştirecek, geliştirecek çok fazla şey var. Şu ana kadar hep üniversitenin yani YETÜ'nün BAP anlamında ve TÜBİTAK'ın desteklerini söyledim ama bunlarla sınırlı mıyız? Değiliz. Sizin yaptığınız işin ne olduğuna bağlı olarak...
+
+79
+00:23:31,316 --> 00:23:53,655
+Farklı noktalara gidebilirsiniz. Mesela bir COST projesi, Avrupa Birliği projesi yapabilirsiniz. Küçük çaplı bir şeyden bahsediyoruz, COST projesi. Ya da bölgesel bir farkındalık gibi bir değişiklik yaratacaksanız şeyler var. Mesela İstanbul Kalkınma Ajansı var, işte Marmara Kalkınma Ajansı var. Neydi?
+
+80
+00:23:54,548 --> 00:24:21,248
+Doğu Karadeniz Kalkınma Ajansı var galiba ve farklı farklı yani coğrafi olarak farklı noktaları konumlanmış olan kalkınma ajansları var. Dertleri tasaları ne bu kalkınma ajanslarının? O coğrafi alanın gelişmesine yardımcı olacak projeleri desteklemek. Nedir o? Mesela işte tematik olarak genelde yıllık fazla değişiyor. Bir ara İstanbul'da
+
+81
+00:24:21,652 --> 00:24:26,552
+Genç nüfusla ilgili bir tema vardı. Sonra teknoloji teması vardı.
+
+82
+00:24:27,552 --> 00:24:33,771
+Yani mesela TTO benzeri oluşumların yaratılması, geliştirilmesi için destek veriyorlardı.
+
+83
+00:24:36,352 --> 00:24:44,211
+Genç nesil kısmında da gençlerin teknolojiyle kaynaşması, eğitimiyle ilgili destekler veriyorlardı.
+
+84
+00:24:46,483 --> 00:25:05,364
+Çağrılı destekleri var, güdümlü destekleri var, vesairesi var. Bunlara da bakacağız. Tüm bu destekleri konuşacağız. Yani nerede, ne bilmediğindir. Bunları konuşurken şunu göreceksiniz. Türkçe'de olsa, İngilizce'de olsa, Üniversite İç'i de olsa, TÜBİTAK'da olsa, Kalkınma Ajansı da olsa. Herkes temel bazı şeylere bakar.
+
+85
+00:25:11,827 --> 00:25:15,507
+Bir projeyi ortaya koyan şeyler nedir?
+
+86
+00:25:21,395 --> 00:25:23,295
+Projenin bir süreç olması lazım hocam.
+
+87
+00:25:23,815 --> 00:25:24,795
+Aynen, doğru.
+
+88
+00:25:24,815 --> 00:25:25,935
+Bir kaynağı olması lazım.
+
+89
+00:25:27,955 --> 00:25:30,056
+Kapsam, kapsam ne gerekiyor hocam?
+
+90
+00:25:32,415 --> 00:25:45,596
+Şimdi süre anahtar kelimelerden bir tanesi. Proje şeyine bakacak olursanız, proje değerlendirme literatürü ne diyeyim, aslında üç kriter var.
+
+91
+00:25:45,896 --> 00:25:48,335
+Ekip var literatür, ekip olmaz. Proje ve ekip.
+
+92
+00:25:49,299 --> 00:25:50,519
+Para deriz.
+
+93
+00:25:51,259 --> 00:25:57,759
+Tamam mı? Yani şöyle kaynak, ekip, bilimsel bunların hepsi paradır. Bütçesi olur yani.
+
+94
+00:25:58,439 --> 00:26:10,679
+Bir bütçesi olması gerekir, bir süresi olması gerekir. Bir de gerçekten bir problemi çözüyor olması gerekir bence.
+
+95
+00:26:11,667 --> 00:26:39,267
+Yok, sencesi de önemli tabii ama hani literatür taraması, üçüncü ayak şu an için aradığımız şey. Yoksa hani dediğin gibi sadece 12 ay boyunca işte 5 milyar dolarla proje yapacağım deyince şey olmuyor, bir yere varmıyor. Her şeyden önce bir başarı kriterinin ortaya konmuş olması lazım.
+
+96
+00:26:39,923 --> 00:27:06,783
+Yani ölçülebilen bir başarı kriterinin, mesela şey daha güzel olacak, ölçülebilir değil, bir kriter de değil aslında. Kime göre, neye göre falan gibi giden bir yapısı var. Dolayısıyla bu bütün destek programlarında aslında bu ve benzeri şeyler üzerinden değerlendirilmiş. Yani nedir? Bir proje varsa ortada.
+
+97
+00:27:07,167 --> 00:27:09,307
+Bunun sınırları bir gün çizilmiş mi?
+
+98
+00:27:10,516 --> 00:27:29,096
+Yani süresi, bütçesi, başarı kütlerle düzgün şekilde tariflenmiş ve anlatılmış. Ama bunun dışında bu projeler genellikle ARGE niteliği arayan projelerdir. Dolayısıyla ARGE niteliği var mı? Ya da ne var, ne yok?
+
+99
+00:27:38,516 --> 00:27:56,915
+Bir firmaya entegre edilmesin. Ama Bilim 1'de doğrudan ARGE beklenir. Ya da 1512'de ARGE özelliği de olsun istenir ve fakat piyasaya çıkıp takır takır para kazandıracak bir proje olması beklenir gibi gibi. Bunun dışında yenilikçi yönsordur yani.
+
+100
+00:27:58,740 --> 00:28:11,519
+Bu projeyi yapsan da olur, yapmasan da olur. Yani ne farkı var ya da yenilik tarafı ne? Hani burada da şunu görmek ya da bilmek ister birileri. Mevcut durum ne? Pazarda durum ne?
+
+101
+00:28:13,619 --> 00:28:28,920
+Kim ne yapabiliyor? Şu anki imkanlar ne? Sen bunlardan farklı ne yapıyorsun? Neyi sunuyorsun? Maliyeti mi düşünüyorsun? Süreci mi hızlandırıyorsun? Bambaşka bir şey mi yapıyorsun? Ne yapıyorsun? gibi. Dolayısıyla bunları konuşacağız.
+
+102
+00:28:37,652 --> 00:28:53,331
+Değerlendirme kriterlerine şöyle kabaca bir bakacağız ve göreceğiz ki hep aynı şeyler üzerinden değerlendirmiyoruz. Aynı demeyeyim de en azından çok yakın benzer şeyler üzerinden değerlendiriyoruz. Bunu konuşacağız. Ondan sonra diyelim ki desteği aldınız. Para cepte.
+
+103
+00:28:55,172 --> 00:29:03,932
+Ne yapacaksınız? Araştırmaya başladınız. Araştırmanızı yapacaksınız. Çok güzel. Araştırma özellikle de ARGE araştırmasının sonucunda bilimsel çıkı gerekir.
+
+104
+00:29:04,403 --> 00:29:11,183
+O zaman da şunu konuşacağız. Bilimsel yazım nedir, nasıl yazılır, ne yapılır, ne edilir?
+
+105
+00:29:13,624 --> 00:29:26,884
+Yani bir introduction, abstract, introduction, related work, methods, materials, results, discussion vs. yani imdat formatını konuşacağız.
+
+106
+00:29:27,584 --> 00:29:29,003
+Nerede ne yazılmalı, ne olmalı?
+
+107
+00:29:32,339 --> 00:29:45,919
+Sonrasında bu yazımı oluşturdunuz, yazırladınız, bir yere gönderdiniz. Bu bir değerlendirme sürecinden geçecek. O süreç nasıl işliyor onu konuşacağız.
+
+108
+00:29:45,919 --> 00:29:58,019
+Yani o zaman bir makale yazdığınız ya da konferans yazdığınız zaman bir yere gönderildiğinde bir hakem değerlendirmesinden geçer. O Blind Review ya da Double Blind Review olabilir.
+
+109
+00:30:00,000 --> 00:30:03,539
+Hangisinin ne işe yaradığı, ne olduğu, ne bittiği vesaireyle konuşacağız.
+
+110
+00:30:07,731 --> 00:30:15,051
+Sonrasında bu süreç içerisinde mesela makale yazdınız ve bir yere gönderdiyseniz bir cover letter yazdığınızı beklenir şu zaman.
+
+111
+00:30:15,051 --> 00:30:27,591
+Yani bu iş nedir, niye yaptınız, daha önce bir yerde yayınlandı mı, yayınlandıysa şimdi ne değişti, detayı, highlight'ı, yani önemli özelliği nedir vs. bunları açıklamanızı beklenir.
+
+112
+00:30:28,331 --> 00:30:34,152
+Bu bitti. Diyelim, yani gönderdiniz. Ne olacak?
+
+113
+00:30:34,932 --> 00:30:50,671
+Bundan sonra tahminen sizin yayınınız hakemlere gönderecek. Hakemler bir inceleme, size geri bildirme olarak görecek. O geri bildirimi nasıl değerlendirmeniz lazım, nasıl incelemeniz lazım, nasıl yola devam etmeniz lazım, bunu konuşacağız.
+
+114
+00:30:53,091 --> 00:30:57,932
+Sonrasında, aslında arada bir yerlerde şeyi de konuşacağız tabii, onu atladım ben, pardon.
+
+115
+00:30:58,640 --> 00:31:14,320
+Veriye erişimle ilgili, bu annenin size sunduğu imkanlar, bu imkanların nasıl yürütüğü, dergi ya da makale aramanın nasıl yapılması gerektiğini, yayının kalitesinin ya da kalitesizliğinin nasıl anlaşılacağı gibi noktaları da konuşacağız.
+
+116
+00:31:15,347 --> 00:31:21,667
+Yani yayını oluşturduğunuz zaman şey gerekecek, bir yere gönderelim, bir dergiye gönderelim ama nereye göndereceğiz?
+
+117
+00:31:22,248 --> 00:31:24,768
+Aklınıza gelebilecek birkaç metot var bunun için.
+
+118
+00:31:24,768 --> 00:31:33,768
+Mesela Journal Finder vesaire gibi hani böyle topic şeklinde başlığı verdiğiniz zaman, işte keywordleri verdiğiniz zaman size ilgili...
+
+119
+00:31:34,516 --> 00:31:46,016
+Görünürleri, öğren yapılar var ama bunun dışında başka yöntemler de var. Yani benzer konuda yayın var mı içerisinde, EYMAN, Scopus Bunları konuşacağız.
+
+120
+00:31:46,016 --> 00:31:58,896
+Sonrasında eğer gönderdiğimiz yer, evet bir makale ise değerlendirme süreci orada bitiyor ama bir şey ise, konferans yayını ise bunun bir de sunum kısmı var.
+
+121
+00:31:59,380 --> 00:32:17,100
+Dolayısıyla sunum teknikleri üzerine konuşacağız. Yani sunum sırasında ne yapmanız lazım, ne yapmamanız lazım. Ne iyidir, ne kötüdür, ne nasıl olmalıdır. Yani slide'larınız nasıl olmalıdır, duruşunuz nasıl olmalıdır, oturuşunuz, kalkınışınız nasıl olmalıdır, eller, kollar, mimikler, yüz ifadesi nasıl olmalıdır bunları konuşacağız.
+
+122
+00:32:23,731 --> 00:32:29,432
+Yönetmeliklerden bahsedeceğiz biraz. Ne anlamda yönetmeliklerden? Etik yönetmeliklerden.
+
+123
+00:32:30,372 --> 00:32:42,051
+Yani akademik hayatınız boyunca başınıza gelebilecek ya da karşılaşabileceğiniz etiğe aykırı durumlardan.
+
+124
+00:32:42,051 --> 00:32:45,332
+En çok mesela duyduğunuz şey intihaldir tahminen.
+
+125
+00:32:46,867 --> 00:32:53,367
+İşte bilmem kimin şu kadar intihal yaptığı, bu kadar böyle olduğu, şöyle olduğu falan ortaya çıktı diye.
+
+126
+00:32:54,067 --> 00:33:04,867
+İşte yönetmenliklerde tanımlı olan bir grup etik dışı davranış var. İntihal bunlardan biri. Hani bir kısım ya da bütünen bir çalışmayı...
+
+127
+00:33:05,263 --> 00:33:13,863
+Ya da işte bir parçasını kendisine ait olmadığı halde kendisinin gibi göstermek bunun bir başlangıcı.
+
+128
+00:33:13,943 --> 00:33:18,003
+Hani bunu nasıl yapabilirsiniz? Çeşitli şekilleri var, onları konuşacağız.
+
+129
+00:33:18,003 --> 00:33:28,863
+Sonra başka çarpıtma var, bölümleme var vs. var. Bunların bir kısmı çok kolay tarif edilen, tasbih edilen şeyler bir kısmı çok da kolay.
+
+130
+00:33:29,440 --> 00:33:34,220
+Tespit edilebilen şeyler değil. Bunlarla ilgili dünyadan ve Türkiye'den örnekleri konuşacağız.
+
+131
+00:33:38,060 --> 00:33:42,080
+Genel olarak 3 aşağı 5 şükür konuşacaklarımız bu kadar olacak.
+
+132
+00:33:43,900 --> 00:33:53,780
+Bu tüm konuştuklarımız aslında anlatınca güzel ama uygulanmadan çok da hayata geçecek ya da çok da benimsenecek şeyler değil.
+
+133
+00:33:55,124 --> 00:33:59,144
+O yüzden de dersin değerlendirmesinde şöyle bir yönteme başvuruyoruz.
+
+134
+00:34:00,744 --> 00:34:04,903
+Yıl içi iki tane değerlendirmemiz var. Bu iki değerlendirme şöyle yürüyecek.
+
+135
+00:34:06,124 --> 00:34:10,604
+Önümüzdeki hafta şeyini ilan edeceğiz. Nedir o?
+
+136
+00:34:11,623 --> 00:34:17,663
+Takvimini net bir şekilde, neyin nasıl yapılacağı ile beraber ilan edeceğiz.
+
+137
+00:34:17,804 --> 00:34:20,623
+Sadece bu hafta bir geçişi tamamlayalım derdindeyiz.
+
+138
+00:34:21,619 --> 00:34:32,639
+Hepinizden dörtlü gruplar halinde ekip oluşturmanızı ve bu ekiplerle bir bin bir başvurusu yapmanızı bekleyeceğiz.
+
+139
+00:34:34,739 --> 00:34:56,739
+Konusu vs. noktasında serbest olacaksınız. Binbir başvurusu yapması derken, bu arada gidip TÜBİT'a binbir başvurusu yapmayacaksınız. Ders kapsamında binbir başvuru formunu indireceksiniz. Konunuz kapsamında onunla ilgili ilgili alanları konuştuğunuz şekilde ve yapıda hazırlayacaksınız ve teslim edeceksiniz.
+
+140
+00:34:57,844 --> 00:35:10,923
+Sadece formu doldurup teslim etmek değil, iki değerlendirme var demiştim. Bunun birinci aşaması başvuru formunuzu teslim etmek. İkinci aşaması ise bununla ilgili sunumunuzu yapmak.
+
+141
+00:35:12,304 --> 00:35:17,304
+Birinci aşama, binbirin değerlendirme kriterlerine göre değerlendirilecek.
+
+142
+00:35:18,132 --> 00:35:25,751
+Yenilikçi yönünden, özgünlüğünden, ıvrından, kıvrından, kaçer puan aldığınıza bağlı olarak bir not alacaksınız.
+
+143
+00:35:27,311 --> 00:35:35,492
+Sunumunuz da konuştuğumuz sunum tekniklerine ne kadar bağlı kaldığınıza ve sunumlarınızı ne kadar düzgün hazırladığınıza bağlı olarak not alacaksınız.
+
+144
+00:35:35,971 --> 00:35:38,051
+Bunlar yılıcı değerlendirmeniz olacak.
+
+145
+00:35:38,771 --> 00:35:41,011
+%30 rapor teslimi, %30 sunum.
+
+146
+00:35:43,764 --> 00:36:09,364
+Aslında birebir destek programlarında uygulanan yöntemi uygulayacağız. Her şey için bir deadline'ımız olacak. Şu an farz misal, grup oluşturmak için işte deadline'ımız şu tarih diyeceğiz. O tarihe kadar bu grubu oluşturduğunuz, oluşturmadınız, zaten projeye devam etmiyorsunuz demektir. Direkt değerlendirme notu sıfır olacak. Şu tarihte sunumunuz var diyeceğiz. O tarihte sunumu yapıyor olmanız lazım.
+
+147
+00:36:10,068 --> 00:36:19,068
+Ya da raporunuzu teslim etmeniz lazım diyeceğiz. Raporunuzu teslim etmedin, sunumunuzu yapmadın, zaten proje devam etmişsiniz. Yılçı değerlendirmeniz sıfır olacak şeklinde gidecek.
+
+148
+00:36:21,887 --> 00:36:29,807
+Rapor tesliminin ağırlığı %30, sunumun ağırlığı %30, bir de final sınavı yapacağız %40.
+
+149
+00:36:33,684 --> 00:36:52,684
+Yapılma şekli ve detayıyla ilgili olarak daha sonra konuşuruz. Bu Nisan ayında üniversite eğitimi ne olacağını, ne bir şey vesaire bazı olarak değişir ama en kötü ihtimal online olarak yapılır diyebilirim.
+
+150
+00:36:57,076 --> 00:37:13,016
+Benim ders kapsamında anlatacaklarım, yani performansa, zamana, nerede olduğunuza, sizin ne kadar katılım gösterdiğiniz vs. bağlı olarak değişmekle beraber herhalde 6 ya da 7 hafta olur.
+
+151
+00:37:14,916 --> 00:37:22,336
+Öğrenci sayısı, grup sayısı vs. bunlar bakıldığında 10. haftadan itibaren tahminen.
+
+152
+00:37:23,188 --> 00:37:41,967
+sunum yapmaya başlarsınız. Son 5-5 hafta gibi diyelim sunumları yapmaya başlarsınız. Benim anlatacağım konular bittiği zaman sunumlar da 10. haftada başlıyorsa aradaki zaman
+
+153
+00:37:42,387 --> 00:38:04,927
+Dersi yapacağız ama şöyle yapacağız. Soru cevap şeklinde. Çünkü hani bir dediğim gibi destek başvurusu hazırlıyorsunuz. Bu destek başvurusunun nasıl hazırlanacağıyla ilgili ders kapsamında zaten konuşacağız ama orada genelde şöyle bir şey var. Ben burada anlatırken işte oraya öyle yazılması lazım, buraya böyle yazılması, şunun şöyle olması lazım dedikten sonra mesela risk.
+
+154
+00:38:06,195 --> 00:38:23,036
+planı yapmış olmanız lazım. İşte risk nedir? Şudur, budur, budur, böyledir, şöyle olabilir, örnek böyle olabilir dedikten sonra siz kafayı sallayacaksınız. Tabii ki olur, evet doğru falan diyeceksiniz. Ama iş bunu yazmaya geldiği zaman tahminen ya şimdi biz buraya ne yazacağız diye kalacaksınız.
+
+155
+00:38:24,175 --> 00:38:25,496
+İşte bu soru cevap haftaları.
+
+156
+00:38:26,291 --> 00:38:33,412
+O kısım için olacak. Yani gene dersin gün mesatinde burada bir araya geleceğiz.
+
+157
+00:38:33,412 --> 00:38:47,412
+İşte siz parzı misal dördüncü haftadan itibaren proje başvurusunu hazırlamaya başlasanız, onuncu hafta teslime kadar bir yerlere gelmiş olacaksınız.
+
+158
+00:38:53,780 --> 00:38:58,940
+Arada kaldığınız, kafanıza yatmayan şeyleri burada gelip soruyor olmanız lazım.
+
+159
+00:38:59,780 --> 00:39:01,640
+Genel olarak dersin işleyişi bu şekilde.
+
+160
+00:39:03,420 --> 00:39:05,460
+Derste konuşacağımız konular da bu şekilde.
+
+161
+00:39:07,440 --> 00:39:11,420
+Başka söyleyeceğim bir şey kaldı mı? Eksik bir şey kaldı mı? Ona bakıyorum.
+
+162
+00:39:17,396 --> 00:39:19,036
+Var mı sizin bir sorunuz arkadaşlar?
+
+163
+00:39:20,336 --> 00:39:22,316
+Hocam var. Müsaadenizle.
+
+164
+00:39:23,136 --> 00:39:24,636
+Sunum online mi olacak hocam?
+
+165
+00:39:25,195 --> 00:39:25,516
+Efendim?
+
+166
+00:39:26,556 --> 00:39:28,516
+Sunum online mi olacak hocam peki?
+
+167
+00:39:28,876 --> 00:39:30,115
+Uzaktan devam edersek?
+
+168
+00:39:31,336 --> 00:39:33,076
+Evet evet sunumlar online olacak.
+
+169
+00:39:33,776 --> 00:39:35,596
+Uzaktan devam edersek online olacak.
+
+170
+00:39:35,596 --> 00:39:40,996
+Yüz yüzeye dönersen, Nisan'da kalkıp, hayır bundan sonra yüz yüzeye olacak derlerse.
+
+171
+00:39:41,780 --> 00:39:54,140
+Yani ben bir şey diyemiyorum. Çünkü bir günde üç kere fikir değiştiriyorlar. Ama görünen durum aynı devam edersek, dersler online devam edecek derlerse zaten online yapacağız.
+
+172
+00:39:54,740 --> 00:40:00,000
+Anladım hocam. Bir ikinci sorum da [kişisel bilgi]
+
+173
+00:40:00,115 --> 00:40:08,555
+[kişisel bilgi]
+
+174
+00:40:09,336 --> 00:40:11,895
+Onu da bir sorun oluşturmuyor.
+
+175
+00:40:13,583 --> 00:40:18,943
+Pardon, [öğrenci] değil mi? Meta'ın kullanıyor.
+
+176
+00:40:19,283 --> 00:40:29,724
+Şimdi normal ve düzgün akışta, yani dersin başında bahsettiğim bazı şeyler anlamsız gelebilir bir grup arkadaşınıza. Şunu anlatmaya çalışıyorum.
+
+177
+00:40:30,264 --> 00:40:36,724
+Şimdi BLM 5004 Bilgisayar Mühendisliği'ndeki Bilimsel Etik ve
+
+178
+00:40:37,023 --> 00:40:42,363
+Fakat aslında bu kontrol otomasyonu da COM5004'tür.
+
+179
+00:40:42,804 --> 00:40:49,863
+X bölümünde XXX5004'tür ve bunların 3 aşağı 5 yukarı birbirine yakındır.
+
+180
+00:40:51,043 --> 00:40:53,884
+Herkesin farklı işleme tarzı var.
+
+181
+00:40:54,523 --> 00:41:03,323
+Dolayısıyla ders alınırken bir bölüm öğrencisi, eğer başka bölümden bunu alacaksa kontenjan isterseniz o dersten.
+
+182
+00:41:03,711 --> 00:41:23,431
+Yükselteli kontenjan, öğrenci de alır. Alınabiliyorsa, sınırlar mafuse. Veri bilimiyle çok saçma bir şey yaşadık. Hiçbir şey sormadan, haber vermeden, bir şey söylemeden kendi kendilerine benim üzerime, benim dersimde aynı gün ve saatte bir ders açtılar. Kendi kodlarıyla.
+
+183
+00:41:26,996 --> 00:41:42,996
+Yani iş bilmezlikten midir, başka bir şeyden midir, vesaire midir onu bilmiyorum, tartışmayacağım da. Benim derdim öğrencilerin mağdur olmaması kısmı. Bir haftadır falan da bu durumu düzeltmek için uğraşıyorum. O yüzden baştaki açıklamayı yaptım.
+
+184
+00:41:51,731 --> 00:42:05,536
+Ders tek bir gruptan verilmek yerine iki farklı gruba bölünüp, daha doğrusu iki farklı ders koduyla açıldığı için online'da benim her seferinde iki bilgisayar açıp...
+
+185
+00:42:05,536 --> 00:42:20,096
+İki tane ayrı sunum başlatıp, iki tane ayrı sunumu aynı anda yapmaya falan çalışmak gibi bir şey var. Şu an çok şanslıyız. Son yarım saattir telefon çalmadık. Ama telefon çaldığı zaman veri bilimindeki arkadaşlar uçup gidecek tahminen.
+
+186
+00:42:20,659 --> 00:42:36,460
+gibi, gibi, gibi. Yani böyle saçma bir şey yapıldı. Benim sistemim ve sıkıntım o. Yoksa şeyde bir sıkıntı yok. Yani tercihen aynı fakülte içerisindeki programlardaki arkadaşların birbirinden almasının da bir sıkıntı yok. Ama ben hani nasıl burada...
+
+187
+00:42:36,884 --> 00:42:57,844
+Bir şey diyorum, nedir o? İşte bin bir başvurusu yapacaksınız vesaire diyorum. Şimdi kimyadan bir arkadaş aldığı zaman, çok daha farklı bir doğrudan bizle ilgisi olmayan bir bölümdeki bir arkadaş aldığı zaman o biraz sıkıntı oluyor ama yani kendi şeyimizde zaten bir problem olmaz aynı fakültemin içerisindeki yerlerde.
+
+188
+00:42:57,844 --> 00:43:04,423
+Yani problemden kalsın da, şeysel değil, uyum sağlamak anlamında.
+
+189
+00:43:04,884 --> 00:43:23,884
+Çünkü böyle şeyler istediğin zaman adamcağız ne yapabileceğini bilmiyor, o nasıl olacak diyor, bu nasıl olacak diyor, olmuyor. Bir de bilgi teknolojileriyle ilgili söylemenin nedeni de şu, bilgi teknolojileri akşam saatte olan, ücretli olan bir program.
+
+190
+00:43:32,467 --> 00:43:55,467
+O yüzden de şeyi söyledim zaten. Zaten yönetmelik olarak almanız okey değil. Yani şu an üniversite maalesef geldiği noktada OBS'de, online yıldızı, editöre de ikisi de havada uçuyor. Yani olmayacak ne kadar şey varsa olmayacak en saçma yöntemlerle yapılıyor. O yüzden de ortalık görüşüyor.
+
+191
+00:43:57,619 --> 00:44:02,300
+Gözümle gördüğüm öğrencinin dönem içerisinde numarası değişti.
+
+192
+00:44:04,720 --> 00:44:09,300
+O yüzden sistem bana almama izin verdi, sıkıntı yok falan diye düşünmeyin.
+
+193
+00:44:11,000 --> 00:44:14,519
+Siz üzülürsünüz, siz sıkıntı yaşarsınız dememin nedeni de o.
+
+194
+00:44:15,220 --> 00:44:20,980
+Sistemde hata vardı, öyle olmuş, ne yapalım, yapacak bir şey yok, bu dersi bir daha alacaksın derler, üstünü çizerler, devam edersiniz.
+
+195
+00:44:22,324 --> 00:44:30,264
+O yüzden bir an önce bilgi teknolojilerindeki arkadaşların bu gruptan çıkıp üçüncü gruba kendilerini alması gerekiyor.
+
+196
+00:44:31,584 --> 00:44:32,724
+Öyle söyleyeyim.
+
+197
+00:44:36,563 --> 00:44:42,643
+Başka sorusu olan var mıydı? [öğrenci], [öğrenci].
+
+198
+00:44:43,683 --> 00:44:45,263
+Hocam merhaba, sesim geliyor mu?
+
+199
+00:44:45,824 --> 00:44:46,423
+Geliyor, diyorum.
+
+200
+00:44:47,344 --> 00:44:54,243
+Şey demiştiniz ya, projeler için, daha doğrusu sunumlar için, grup toplanması, beklentiniz olduğunu.
+
+201
+00:44:56,916 --> 00:45:04,836
+Buradaki herhangi bir arkadaşla herhangi birinin tanışık olduğunu düşünmüyorum da. Acaba bir ortak bir platform var mı iletişim kurabileceğimiz?
+
+202
+00:45:07,472 --> 00:45:27,931
+Şöyle, üniversitenin, yani şöyle ders boyunca hani benim gördüğüm ekranı görüyorsunuz. Konuşanları, şey yapanları biliyorsunuz. Mailler, hani isimler şeklinde organize edilmiş durumda. Yani benim size doğrudan sunabileceğim bir şey yok. Online Yıldız Etikler'de bir topik mopik bir şeyler oluşturuyor galiba ama emin değilim.
+
+203
+00:45:30,068 --> 00:45:38,168
+Yani bir tersi konmazsa Google Form üzerinden bir yer açacağız ve orada bilgilerinizi doldurarak grupları oluşturmanızı bekleyeceğiz.
+
+204
+00:45:38,268 --> 00:45:43,928
+Yani kendileri istediğiniz grubun altına bir diğerleriyle konuşup yazıyor olmanızı bekleyeceğiz.
+
+205
+00:45:43,928 --> 00:45:51,668
+Öyle bir şeydi. Onun dışında doğrudan size sağlayabileceğim bir şey olmayabilir, olup olmayacağına bir bakarım.
+
+206
+00:45:56,563 --> 00:46:18,743
+Maalesef çok fazla yapabileceğim bir şey yok. Hani sizi kaynaştırma anlamında. Eğer şu an bakamıyorum, en son cep telefonundan bağladım. Oradaki zoom açık. Bu taraftan bağlanırsam o taraftaki gidecek. Online Yıldız Etere'de belki mail adreslerinizi görüyorumdur herkesin.
+
+207
+00:46:19,155 --> 00:46:39,155
+Bütün mail adreslerini görüyorsam, onların hepsinin olduğu bir mail başlatırım. Siz de kendi içerisinde, içerinizde, ay konuşamadım. Kendi içerinizde onun üzerinden yürürsünüz. Hani ben şöyle bir şey düşünüyorum, bunu düşünüyorum falan. Bir şekilde bir sosyalleşmeniz olabilir. Bir ihtimal de...
+
+208
+00:46:41,204 --> 00:46:51,824
+Ona bakmam lazım. Gene online yieldedikleri de sizin sosyalleşmeniz için belli zamanlarda dersi açık bırakabilirim.
+
+209
+00:46:52,628 --> 00:47:19,748
+Yani herkes kendi içerisinde, buraya bağlandığı zaman kendi içerisinde konuşuruz. Mesela, barzımsel şöyle örnek vereyim. Bugün diyelim ki dersimiz şeyde bitti, atıyorum, üçte değildi, ikide bitti. İkiden üçe kadar burayı açık bırakırım, siz de kendi aranızda konuşursunuz. Ben şöyle bir şey istiyorum, katılmak isteyen var mı vesaire gibi. İsterseniz de chatten birbirinize şey yaparsınız, baslaşırsınız, konuşursunuz, maillerinizi alırsınız, verirsiniz.
+
+210
+00:47:20,224 --> 00:47:23,244
+Öyle bir şeyler yapabiliriz alternatür. Bakarız yani.
+
+211
+00:47:23,924 --> 00:47:24,504
+Efendim [öğrenci].
+
+212
+00:47:25,876 --> 00:47:49,056
+Hocam, bu konu üzerine ben de bir soru sormak istiyorum da. Bu aynı BLM 5004 koduyla saat yine birde açılan doktor öğretim üyesi Hamza Osman İhhan'ın verdiği yine araştırma yöntemleri dersi görünüyor. Bu grup olma konusunda eğer içerik de aynı olacaksa, benim çoğu arkadaşım aslında oradan seçti.
+
+213
+00:47:49,492 --> 00:47:54,012
+Ben bu taraftan seçtim. Ortak yapabilir miyiz o grup?
+
+214
+00:47:54,771 --> 00:47:59,112
+Onu desteklemeyeceğiz.
+
+215
+00:48:00,092 --> 00:48:15,032
+Çünkü maalesef o şu demek, farklı gruplardan arkadaşlar aynı anda bir yerde olursa bizim değerlendirme ya da yapıyı yapmamız çok karmaşık bir hale geliyor.
+
+216
+00:48:15,572 --> 00:48:25,532
+Onu büyük ihtimalle desteklemeyiz. Ama detayını dediğim gibi önümüzdeki hafta açıklayacağız. O zamana kadar bir şey yapın, sabredin. Biz de altyapısını toparlamaya çalışıyoruz.
+
+217
+00:48:26,291 --> 00:48:37,260
+Çünkü normal şartlarda dediğim gibi bu veri biliminin yaptığı tuhaf hareket olmasaydı, BLM 5004 dersi...
+
+218
+00:48:37,556 --> 00:48:45,655
+Aslında iki grup olarak açıldı ve dengeli şekilde dağılmak üzere şeylerini yaptık. Nedir o? Kapasitelerini belirledik.
+
+219
+00:48:46,255 --> 00:48:59,735
+Fakat bir anda sürpriz şekilde kimseye haber verilmediği, söylenmediği, yazı yazılmadığı, telefon edilmediği, yani aklınıza gelebilecek iletişim, yani ne dumanla haberleşilmeye çalışıldı, ne mail atıldı, ne yazı yazıldı, ne telefon edildi.
+
+220
+00:49:00,375 --> 00:49:02,435
+Tamamen keyifli bir şekilde bir ders açtılar.
+
+221
+00:49:03,891 --> 00:49:26,711
+O yüzden de şu an iki grup arasında da bir dengesizlik var. Onu da nasıl çözeceğimizi vesaireyi düşünüyoruz. Bir netleşsin. Öncelikle bu VBL'nin içerisinde, o grubun içerisinde olan öğrencileri bu gruba bir dahil edelim. Sonrasına bir daha bakarız ama büyük ihtimal, özetini söyleyeyim ben sana, büyük ihtimal olmaz.
+
+222
+00:49:28,115 --> 00:49:30,155
+Bu kadar anlattıktan sonra...
+
+223
+00:49:30,155 --> 00:49:31,755
+Anladım hocam. Teşekkürler.
+
+224
+00:49:32,135 --> 00:49:35,775
+Ama dediğim gibi ya haftaya daha net bir şey olarak ilan yapacağız size.
+
+225
+00:49:35,775 --> 00:49:42,195
+Yani bakın şu zamana kadar şunu şöyle yapmanız lazım, bunu böyle yapmanız lazım vs. süreç olarak sizinle paylaşacağız.
+
+226
+00:49:42,996 --> 00:49:46,155
+Yüzlerinde çalışıyoruz. Bitmedi bir de durumun netleşmesini bekliyoruz.
+
+227
+00:49:47,315 --> 00:49:49,016
+O yani. Var mı başka sorunuz arkadaşlar?
+
+228
+00:49:49,476 --> 00:49:52,935
+Veri bilimindeki arkadaşlar iyi mi? Yaşıyorsunuz mu? Orada mısınız?
+
+229
+00:49:54,804 --> 00:49:56,603
+Konular yapalım, bir şey söyleyeceğiz.
+
+230
+00:49:57,023 --> 00:49:58,663
+Bir de oldu, şeyin diyelim bak.
+
+231
+00:49:59,663 --> 00:50:02,043
+VTB kodumuz değişmiş, BNM, BNM.
+
+232
+00:50:02,043 --> 00:50:02,663
+Evet, evet.
+
+233
+00:50:04,364 --> 00:50:10,543
+Hepiniz de değişti. Bir arkadaş hariç, sizin gruptaki bir arkadaş, ismini şimdi ezberi hatırlamıyorum.
+
+234
+00:50:11,543 --> 00:50:14,103
+Ben, yani şöyle bir saçmalık var gerçekten.
+
+235
+00:50:16,143 --> 00:50:19,384
+Bu iş böyle emrivaki ve saçma bir şekilde yapıldığı için.
+
+236
+00:50:20,052 --> 00:50:38,172
+Online Yıldız Editörü'deki arkadaşlar sizleri, yani aslında sadece Online Yıldız Editörü'de sizleri bir gruptan alıp diğerine koysalar iş çözülecek. Sadece Online Yıldız Editörü'de bunu yapmaları yeterli. Biz böyle yapmayız, OBS'de değiştirmeniz lazım dediler. OBS ile görüştüm.
+
+237
+00:50:39,059 --> 00:50:47,099
+Bir bakalım dediler. Onlar yaptı. Yaptıktan sonra tekrar mail attılar. Tamam biz yaptık, online'da geçirin diye ve bugün hala geçirilmiş değil.
+
+238
+00:50:53,012 --> 00:51:18,351
+Umuyorum önümüzdeki hafta bu sorun çözülmüş olacak. Korkma, pardon ismini göremiyorum ama hepiniz birden BLM 5004'e geçtiniz. Merak etmeyin. Öyle bir şey yok. Yani seni aldık, diğerlerini bıraktık ya da senin başına bir iş gelecek değil. Hepiniz birden oraya geçtiniz. Çünkü online yöntemleri böyle olmazsa kabul etmiyoruz dedi. Yapamıyoruz dedi. Durum bu.
+
+239
+00:51:21,715 --> 00:51:22,876
+Yok, gelemez.
+
+240
+00:51:25,816 --> 00:51:33,755
+Hayır, yok, yok. Şimdi şöyle, en başta söylemiştim, belki duymamışsındır, belki sonra bağlanmışsındır, bilmiyorum.
+
+241
+00:51:33,755 --> 00:51:38,755
+VBL5004, BLM5004.
+
+242
+00:51:39,923 --> 00:51:44,304
+com5004, yani bölümün ismi neyse, 5004'ün önüne bir kod gelir, bu kadar.
+
+243
+00:51:44,563 --> 00:51:49,963
+5004 her yer, yani bu üniversite içerisindeki bütün 5004'lerin aynı olması gerekir.
+
+244
+00:51:51,884 --> 00:51:52,423
+Öyle söyleyeyim.
+
+245
+00:51:54,103 --> 00:51:56,723
+Tamam, dolayısıyla hepsi birbiriyle eşleniktir.
+
+246
+00:51:57,443 --> 00:52:05,983
+Zaten, yanlış hatırlamıyorsam, bu 5004 böyle tepeden yazıyla oluşturulmuş bir, yanlış hatırlamıyorum zaten, öyle oldu, pardon.
+
+247
+00:52:06,452 --> 00:52:17,592
+Niye şey dedim bilmiyorum. Yök'ün yazısıyla oluşturuldu. Ve o yazın içerisinde bütün bölümlerinki eşleniktir, birbirinden alabilir dendi. Üniversite içerisinde.
+
+248
+00:52:18,771 --> 00:52:28,432
+Böylesiyle kimse size o konuda zarz zürp diyemez, rahat olun. Derlerse bana gelirsiniz, ben halledeceğim.
+
+249
+00:52:30,472 --> 00:52:31,692
+Tamamdır, teşekkürler.
+
+250
+00:52:32,751 --> 00:52:33,912
+[öğrenci] miydiyse?
+
+251
+00:52:36,755 --> 00:52:37,516
+Tamam sanki.
+
+252
+00:52:38,556 --> 00:52:39,436
+Aptı cürükliyormuş.
+
+253
+00:52:40,155 --> 00:52:41,856
+Evet, başka sorusu olan var mı?
+
+254
+00:52:49,012 --> 00:53:03,172
+Tamam. O zaman bugünlük bu kadar yeter diyorum gençler. Önümüzdeki hafta şey yaparız. Yeniden başlar kaldığımız yerden devam ederiz.
+
+255
+00:53:07,731 --> 00:53:10,751
+[öğrenci], bu nöntem, yöntem ve açmam da.
+
+256
+00:53:17,331 --> 00:53:31,071
+Bolonya ders kodlarıyla açılan dersler uyuşmuyor diye bir şey yok. Size toplantı yapıp anlatmıştım. Gerçi ikinci dönem giren arkadaşlardansa bilmiyor olabilirsiniz size daha toplantı yapmadım.
+
+257
+00:53:31,071 --> 00:53:43,311
+Siber güvenlikte ders yapısı değişiyor. Derstenin içerikleri, isimleri vesaire her şey değişiyor. Dolayısıyla Bologna'da gördüğünüz ders bu program içerisinde olan katalogdaki derslerden biridir.
+
+258
+00:53:43,764 --> 00:53:59,963
+Fakat her dönem açılacağının garantisi yoktur. Açılmayacaktır da bir kısmı zaten saçma sapan uydurma dersler sağ olsun birileri zamanında iş yapmış olmak için harola gürele bir şeyler yapmış. Şimdi o pisliği temizlemek için uğraşıyoruz.
+
+259
+00:54:00,788 --> 00:54:16,367
+O yüzden de dersleriniz değişti. Bununla ilgili detaylı bir sunum da yapmıştım birinci dönemin sonunda. İkinci dönem katılan arkadaşlar için de bir ara yapacağım. O ara şu an olan bir ton özel durumdan dolayı yapamamıştım. Bir ara bir bilgilendirme toplantısı yapayım. Onda detayını konuşuruz.
+
+260
+00:54:18,327 --> 00:54:27,447
+Okey. O zaman başka soru yoksa gençler, her iki gruba da iyi günler diliyorum.
+
+261
+00:54:28,884 --> 00:54:34,024
+İyi günler hocam.
+
+262
+00:54:34,564 --> 00:54:35,184
+İyi günler.
+
+263
+00:54:35,364 --> 00:54:35,984
+İyi günler hocam.
