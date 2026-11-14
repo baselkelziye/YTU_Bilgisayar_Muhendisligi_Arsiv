@@ -1,0 +1,2679 @@
+1
+00:01:19,444 --> 00:01:23,124
+türev uygulamaları, belirsiz integral son tanımı övettikten sonra değil mi?
+
+2
+00:01:26,772 --> 00:01:37,772
+Özellikle, alanları halinde, durulmak adına değil, alt üst toplam ve ortalıkta kurallarını öğrendik.
+
+3
+00:01:37,772 --> 00:01:40,772
+Bugün biraz daha genel halinde onları göreceğiz.
+
+4
+00:01:40,772 --> 00:01:45,451
+Bu yüzden sikivan otasyonu ve son toplumdan limitleri. Başlığımız o oldu.
+
+5
+00:02:17,843 --> 00:02:24,651
+Evet, kare artı 2x, f'
+
+6
+00:02:58,355 --> 00:03:00,355
+ve son tutanlarla ilgili bir şey.
+
+7
+00:03:47,731 --> 00:03:53,731
+Şimdi arkadaşlar, bir denene kadar diyelim ki, hangi yan arka yüzü ifadelerdir?
+
+8
+00:03:55,731 --> 00:04:00,731
+Diyelim ki, singanotasyonu bu şekilde toplamda yüklü.
+
+9
+00:04:00,731 --> 00:04:06,731
+Toplam otasyonu, K-HTB ile en arka, A-K.
+
+10
+00:04:06,731 --> 00:04:08,731
+Nedir bu?
+
+11
+00:04:12,723 --> 00:04:16,384
+A elemanların toplamını bize belirtmekte.
+
+12
+00:04:16,384 --> 00:04:23,764
+Bu açılamalı A1 artı, A2 artı, toptanımdan da artı.
+
+13
+00:04:24,683 --> 00:04:25,303
+A'ın şeklinde.
+
+14
+00:04:26,923 --> 00:04:34,783
+Bu da ki, k tabi toplamın alt ünlüsü, k eşsiz bir ürün, en de üst ünlüsü bilebilir.
+
+15
+00:04:35,563 --> 00:04:37,103
+A kadar bu da genel tepki.
+
+16
+00:04:39,187 --> 00:05:01,048
+x kare artı 2x, f'
+
+17
+00:05:14,228 --> 00:05:20,128
+Şimdi burada tabii ifade aslında
+
+18
+00:05:25,204 --> 00:05:32,204
+Şöyle basit bir örnek olsak, diyelim ki, bildiğinize kadar etkiler.
+
+19
+00:05:32,204 --> 00:05:34,204
+Tabi, indisaydı mı?
+
+20
+00:05:36,204 --> 00:05:43,204
+Alfa olarak değişebilir. Yani iyi alırız, kalırız, yapıp, bazen hafta el alırız, sen, en güzel, sonuç bakanlarla ilerleyecek.
+
+21
+00:05:44,204 --> 00:05:45,204
+İyi eşitli bildiğin.
+
+22
+00:05:57,651 --> 00:06:01,831
+İHT'nin bir düze kadar.
+
+23
+00:06:03,611 --> 00:06:06,372
+Aslında bu içindeki AK dediğimiz bir fonksyondur.
+
+24
+00:06:07,331 --> 00:06:11,611
+Bu da tabii her bir K'ya karşı derin bir ihadedir.
+
+25
+00:06:13,012 --> 00:06:15,451
+FKHT AK şekli de tanımlanmaktadır.
+
+26
+00:06:15,451 --> 00:06:17,211
+Yani yukarıdaki adı genel ameliyatı.
+
+27
+00:06:21,427 --> 00:06:27,427
+kare artı 2x, f'nin arka. Dolayısıyla k 1 denliğine kadar değerler vererek, tüm ifadeleri aynı şekilde ifade edebilir.
+
+28
+00:06:27,427 --> 00:06:30,427
+1, 2 nokta.
+
+29
+00:06:30,427 --> 00:06:32,427
+Evet, değilmiş.
+
+30
+00:06:32,427 --> 00:06:35,427
+Dolayısıyla yukarıda toplamasını şu şekilde ifade edebilir.
+
+31
+00:06:35,427 --> 00:06:40,427
+k eşit 1 denliğine kadar, f k eşitliğine kadar.
+
+32
+00:06:40,427 --> 00:06:46,427
+Dolayısıyla bunun açılımında f1, f2, f3 bu şekilde edecektir.
+
+33
+00:06:49,843 --> 00:06:51,843
+yorum yapı.
+
+34
+00:06:55,732 --> 00:07:00,892
+Aynı şekilde burada i1'den ele kadar etki edildi sana.
+
+35
+00:07:05,492 --> 00:07:07,772
+Son toplamın genel türevini nasıl? Öyle siktir.
+
+36
+00:07:08,471 --> 00:07:09,572
+Dolayısıyla bu ne demek?
+
+37
+00:07:32,339 --> 00:07:34,500
+E eşit birden 11'e kadar.
+
+38
+00:07:35,799 --> 00:07:36,319
+Ne diyelim?
+
+39
+00:07:36,919 --> 00:07:37,659
+İ kare olsun.
+
+40
+00:07:39,299 --> 00:07:40,239
+Nedir bu?
+
+41
+00:07:40,339 --> 00:07:41,839
+İşte birinin kalesi artı
+
+42
+00:07:41,839 --> 00:07:43,899
+kimin kalesi artı
+
+43
+00:07:43,899 --> 00:07:45,019
+üçün kalesi artı
+
+44
+00:07:45,019 --> 00:07:49,079
+artı 11'in kalesi.
+
+45
+00:07:49,739 --> 00:07:52,419
+Bütün bu karelerin toplamını göz önüne almış olalım.
+
+46
+00:07:53,859 --> 00:07:55,459
+Tabii bu sonuçlar bize ne verecekti?
+
+47
+00:07:55,519 --> 00:07:56,339
+Bir sayı verecektir.
+
+48
+00:07:58,387 --> 00:08:06,387
+Bu öğret terebutu elbette çoğaltabiliyoruz. Daha karmaşık anlamda yine kare artısına dönersek kayı daha çok kullanacağız.
+
+49
+00:08:08,387 --> 00:08:12,387
+K1'den eserde değil.
+
+50
+00:08:15,764 --> 00:08:24,544
+x1 çarpı, daha doğrusu x1 üzeri k çarpı k. Nedir bunun açıklama işte? Bakın biraz ifade değişti değil mi?
+
+51
+00:08:25,504 --> 00:08:41,903
+K1 için x1'in birinci kuvveti, açıklamı yaptığım zaman öyle oldu. x1'in birinci kuvveti, x1 artı x1'in ikinci kuvveti, x2 artı x1'in üçüncü kuvveti, x3.
+
+52
+00:08:42,836 --> 00:08:56,675
+Dolayısıyla tek sayıların kuvvetleri eksi, çift sayıların, daha doğrusu çift kuvvetler artı olacağı için, yani bu işaret belirleme, kas sayıların işaret belirleme durumunun eksiliği gibi bir karsında.
+
+53
+00:08:57,355 --> 00:09:04,635
+Dolayısıyla eksi 1, artı 2, eksi 3 yine değil mi? Ne olur? Eksi 4 artı 2, eksi 2. Doğru?
+
+54
+00:09:05,516 --> 00:09:07,056
+Gibi, toplamın sonucu bu.
+
+55
+00:09:08,788 --> 00:09:14,788
+ya da k eşitli bir de nereye olsun mesela?
+
+56
+00:09:16,788 --> 00:09:18,788
+5 olsun. k kare bölü k eksi.
+
+57
+00:09:21,788 --> 00:09:23,788
+k kare bölü k eksi.
+
+58
+00:09:24,788 --> 00:09:33,355
+Aynı şekilde, bunların hesaplıyacağız değil mi? Birim kareksi, k 1 den dedik, k 1 den başlayacak.
+
+59
+00:09:33,875 --> 00:09:40,651
+kare artı mesela nereden başlasın? 4'ten başlasın, 2'den başlasın, kare artı 1'den başlasın.
+
+60
+00:09:45,524 --> 00:09:51,844
+tanımlı olması lazım. Tabii fonksiyon tanımladığınız için o fonksiyonun tanımlı olması lazım.
+
+61
+00:09:51,844 --> 00:09:54,524
+Mesela k is 4'ten 5 olsun.
+
+62
+00:09:57,524 --> 00:10:04,524
+Mesela 4'ün karesi, bölü 3, artı 5'in karesi, bölü 4.
+
+63
+00:10:06,524 --> 00:10:10,524
+Yani 16 bölü 3, artı 25 bölü 4.
+
+64
+00:10:11,604 --> 00:10:13,604
+Bunlar toplayırsak, sonuçsı var.
+
+65
+00:10:13,604 --> 00:10:15,244
+Yüz o tutuklu, 12 yap.
+
+66
+00:10:31,316 --> 00:10:38,956
+Buradan şunu anlıyoruz aslında. Toplamın ilgisi, ne yapacak kadar silahın ilgisi her zaman 1'de başlanan zorunda değildir.
+
+67
+00:10:39,796 --> 00:10:42,916
+0'da başlar, hatta negatif sayıda başlar. 3 önemli değil.
+
+68
+00:10:45,316 --> 00:10:50,256
+Biz o nasıl kullanmak istiyorsak nereyiz?
+
+69
+00:10:59,508 --> 00:11:01,708
+K1'den 11'e kadar tutulmuştu.
+
+70
+00:11:03,248 --> 00:11:06,848
+Yani 1'den 11'e kadar sayıların kararları toplam.
+
+71
+00:11:07,088 --> 00:11:09,008
+Biraz sonra onun genel formunu da geçmişti.
+
+72
+00:11:09,187 --> 00:11:11,608
+1'den 1'e kadar sayıların kararları toplamı.
+
+73
+00:11:12,208 --> 00:11:14,648
+Öyle bir de ne kadar sayıların toplamı.
+
+74
+00:11:15,028 --> 00:11:15,567
+Dehirleniyor.
+
+75
+00:11:22,451 --> 00:11:30,812
+Mesela K sıfırdan başlamak üzere sıfırdan dörde kadar şöyle bir toplam alalım.
+
+76
+00:11:36,415 --> 00:11:36,875
+x k i 1x'e kadar sayıların kareleri toplamı.
+
+77
+00:11:36,019 --> 00:11:36,740
+örnekti.
+
+78
+00:11:50,067 --> 00:11:51,307
+1, 3,
+
+79
+00:11:55,347 --> 00:11:55,887
+yasak.
+
+80
+00:11:56,887 --> 00:11:58,987
+şey yaparız. 5, 7, 9.
+
+81
+00:12:01,567 --> 00:12:04,187
+birden 9'a kadar tekserler toplaması değil mi?
+
+82
+00:12:04,687 --> 00:12:05,667
+toplamını ne diyelim?
+
+83
+00:12:06,028 --> 00:12:07,707
+sigma notasyonu ile ifade edelim.
+
+84
+00:12:09,387 --> 00:12:09,987
+toplamını.
+
+85
+00:12:13,364 --> 00:12:16,324
+Figma. Oto istemiyorum, ye?
+
+86
+00:12:21,043 --> 00:12:21,903
+isade ediniz.
+
+87
+00:12:23,624 --> 00:12:24,344
+Göstereyim.
+
+88
+00:12:33,620 --> 00:12:34,339
+2 nokta üstü.
+
+89
+00:12:35,420 --> 00:12:39,399
+Mesela k'yı sıfırdan başlatırsak, değil mi? Ne olmasın? 1 ile başlamasın.
+
+90
+00:12:40,120 --> 00:12:41,420
+2k artı 1 olur.
+
+91
+00:12:43,220 --> 00:12:47,720
+k eşittir sıfırdan nereye kadar işte?
+
+92
+00:12:49,200 --> 00:12:52,000
+Atlığımız zaman bir vermesi lazım.
+
+93
+00:12:53,639 --> 00:12:56,180
+Şöyle 2k artı 1.
+
+94
+00:12:58,131 --> 00:13:07,231
+4 için 9 değil mi? k sıfırdan 4'e. Bakın gerçekten aşırı zaman k sıfır için 1. 2 için, 1 için 3.
+
+95
+00:13:10,803 --> 00:13:34,803
+3x için 5, değil mi? Öyle mi? Yok. 2x için 5, 3x için 7, artı 4x için de 9. Dolayısıyla bu sembolü biz ne yapabiliriz? İstediğimiz aynı rakamlar bulmak koşuluyla istediğimiz listeye başlatabiliriz. Mesela k'yı birden başlatabiliriz.
+
+96
+00:13:38,768 --> 00:13:43,188
+Bu defa 1'den olduğu için bu 5'e kadar gidecekti.
+
+97
+00:13:44,348 --> 00:13:46,448
+Bunun anlamı şu aslında burada.
+
+98
+00:13:46,708 --> 00:13:49,768
+k yerine ne yazacağız? kx1'de yazıyoruz arkadaşlar.
+
+99
+00:13:49,768 --> 00:13:55,768
+k yerine kx1 yazıyoruz.
+
+100
+00:13:55,768 --> 00:13:57,768
+Nerede? Bir öncekinde.
+
+101
+00:13:57,768 --> 00:14:02,768
+Çünkü k yerine kx1 yazarsam, kx1'e eşitlikten kx1'den başlayabilir.
+
+102
+00:14:02,768 --> 00:14:06,316
+1'den başlayabiliriz. 1 arttığı için 10'da 4'e kadar gideceğiz.
+
+103
+00:14:06,676 --> 00:14:23,236
+Burası ne olur? k yerine bakıyorum. k-1 yazacağım. 2x k-1, şöyle yukarıda, artı 1. Eşittir. k-1'den 5'e kadar. Burası ne olur? 2k-1 olur.
+
+104
+00:14:26,515 --> 00:14:47,495
+0 ile başlarken 2k artı 1 değil, 1 ile başlarken 2k x'ı bir olur. Ve sonuç gibi aynı şeyleri verecektir. 1'den 9'a kadar tek sayı. 1 artı 3 artı 5 artı 7 artı 9. Kolayca bunu hemen test edebilirsiniz. Mesela k2 ile başlayabilirsiniz ya da negatif bir sayı ile başlayabilirsiniz.
+
+105
+00:14:51,028 --> 00:14:55,147
+k'yı 2 ile başlattığınız zaman k yerine bir defa kx2 yazacaksınız.
+
+106
+00:14:58,067 --> 00:15:00,147
+Nerede? İki toplamda. Şunu başlayalım.
+
+107
+00:15:01,087 --> 00:15:04,867
+Başka kx2 den artacak tabii, 6'ya kadar yapılacak.
+
+108
+00:15:06,048 --> 00:15:09,387
+2 çarpı k-2 artı 1.
+
+109
+00:15:10,087 --> 00:15:11,267
+Toplamı böyle zemleyelim.
+
+110
+00:15:12,668 --> 00:15:16,127
+İçeriye önce yapalım ne olur? 2k yine onunla başlayacak değil mi?
+
+111
+00:15:16,755 --> 00:15:21,255
+x4 artı 1x3. 2k-3 oldu bakın.
+
+112
+00:15:24,255 --> 00:15:29,255
+k eşit 2'den 6 yakında, 2k-3 aynı toplam bir bilgiler.
+
+113
+00:15:30,255 --> 00:15:32,755
+Ve negatif bir sayıda da başlayabilirsiniz.
+
+114
+00:15:32,755 --> 00:15:37,255
+Mesela k yerine, k artı 3 yazarsa,
+
+115
+00:15:39,255 --> 00:15:40,755
+toplam bir defa negatifle başladı.
+
+116
+00:15:40,755 --> 00:15:42,755
+Yani k eşit 3 ile başladı.
+
+117
+00:15:44,467 --> 00:15:48,867
+Ama tabii sıfırdan dördek kadar ya da birden beşe kadar kaç terim katılıyordu? Beş terim.
+
+118
+00:15:49,467 --> 00:15:52,267
+Dolayısıyla eksi üçten başladığı için nelerden sayacağız?
+
+119
+00:15:52,867 --> 00:15:54,167
+Eksi üç, eksi iki, eksi bir.
+
+120
+00:15:55,527 --> 00:15:56,887
+Bir sıfır değil mi?
+
+121
+00:15:59,067 --> 00:16:00,747
+Bir mi? Bir değil mi?
+
+122
+00:16:01,167 --> 00:16:02,427
+Karşı eksi üçten bir yakalık.
+
+123
+00:16:04,827 --> 00:16:06,927
+Bu halde yine yazdığımız zaman.
+
+124
+00:16:09,027 --> 00:16:09,707
+Şu içeride.
+
+125
+00:16:10,259 --> 00:16:12,259
+k yerine k artı 3 yazalım.
+
+126
+00:16:13,259 --> 00:16:17,259
+k artı 3, artı 1, f'kan vardı.
+
+127
+00:16:18,259 --> 00:16:21,259
+aynı şekilde k eşittir, x3'e,
+
+128
+00:16:22,259 --> 00:16:23,259
+bir de,
+
+129
+00:16:24,259 --> 00:16:25,259
+eşit.
+
+130
+00:16:25,259 --> 00:16:27,259
+kocası 2k,
+
+131
+00:16:27,259 --> 00:16:29,259
+6, 7 dedim, 2k artı 1.
+
+132
+00:16:30,259 --> 00:16:33,259
+gerçekten, mesela x3 yerine yazdığımızda,
+
+133
+00:16:33,259 --> 00:16:36,259
+6, x6, artı 7, 1 olur değil mi?
+
+134
+00:16:47,187 --> 00:16:54,687
+1, 3, 5, 7, 1, 6, 3, 5, 6, 7, 6, 9.
+
+135
+00:16:54,687 --> 00:17:01,687
+İki kez daha bulalım. 1, 6, 5, 6, 7, 6, 9.
+
+136
+00:17:01,687 --> 00:17:10,688
+Tabi hangi liste çalışmak bizim kolayımıza gidiyorsa, onu ne yapmak? Göz önüne anlatıyor, onu da çalışmak.
+
+137
+00:17:17,236 --> 00:17:18,188
+x kare artı 2x, f'
+
+138
+00:17:29,332 --> 00:17:36,512
+tabi sigma lineal bir ifadedir. Yani içerideki toplam ifadeleri kaya bağlı olarak istediğimiz şeklinde dağıtılabilir.
+
+139
+00:17:37,052 --> 00:17:40,992
+Dolayısıyla son toplamlar için şu cemistre kurallarını verebiliriz.
+
+140
+00:18:02,516 --> 00:18:06,476
+Toplu toplam
+
+141
+00:18:06,476 --> 00:18:07,635
+Toplu toplamlar için
+
+142
+00:18:07,635 --> 00:18:10,956
+Terbise kurallar
+
+143
+00:18:10,956 --> 00:18:11,836
+Kurallar
+
+144
+00:18:17,907 --> 00:18:33,007
+Nedir o? Bir toplam kurdu. Özellikle eğer içeride iki farklı inçisi varsa, ak artı bire daha doğrusu iki farklı genel terör ifadesi varsa, atıyorum k1'den n'e kadar.
+
+145
+00:18:33,007 --> 00:18:44,327
+Şimdi bu videoyu alalım. Bu eşittir. Bunu biz şöyle yazabiliriz. ak sigma artı bire k. k1'den n'e.
+
+146
+00:18:51,092 --> 00:18:53,492
+2x, f'abitte çarpım kuralı var.
+
+147
+00:18:54,452 --> 00:18:56,952
+Park kuralı var. Yani buraya x koyarsanız, x de aynı şey.
+
+148
+00:18:58,132 --> 00:19:02,912
+Artık öyle demişsin, x de. Artık onun çalıştığını görüyorum. Tekrar yazmamıza gerek.
+
+149
+00:19:04,792 --> 00:19:07,711
+Yine işimize yarayan bir çok durum.
+
+150
+00:19:08,652 --> 00:19:11,612
+Şerde eğer bir f'abitte çarpım varsa, k çarpı değil mi?
+
+151
+00:19:11,612 --> 00:19:12,432
+Başka bir şey değil mi?
+
+152
+00:19:13,432 --> 00:19:16,632
+Bir c çarpı, a k.
+
+153
+00:19:17,844 --> 00:19:19,024
+K-S-T-B'den
+
+154
+00:19:19,024 --> 00:19:21,163
+C burada bizden.
+
+155
+00:19:22,324 --> 00:19:22,844
+Dolayısıyla
+
+156
+00:19:22,844 --> 00:19:25,064
+toplam şöyle çalışıyor.
+
+157
+00:19:25,183 --> 00:19:25,884
+C çarpı
+
+158
+00:19:25,884 --> 00:19:27,084
+dışarı alıyoruz.
+
+159
+00:19:27,963 --> 00:19:29,604
+A-K-B'den
+
+160
+00:19:35,667 --> 00:19:47,487
+3 sabit değerli integral var. Eğer ak'mız 1 ise, bak yukarıdaki parayı göreceğiz. Ne alacaksınız? x bir de ne kadar? Burada 1 var.
+
+161
+00:19:50,187 --> 00:19:52,987
+Dolayısıyla ikinci kuradan dolayı değil, dışarı alabiliyoruz.
+
+162
+00:19:55,167 --> 00:19:57,807
+k is bir de ne kadar? Nedir? İçeride 1 kalsak.
+
+163
+00:19:59,487 --> 00:19:59,768
+Ne var?
+
+164
+00:20:00,000 --> 00:20:10,200
+en tane bir toplamı değil mi? Çünkü burada toplam döngü en defa olacağı için sürekli oynayacaksınız. Orası da burası ne olur? En tane bir, en yapar. Zorası da C ya da en canı.
+
+165
+00:20:10,200 --> 00:20:11,400
+Hangisini yazmanı ister misin?
+
+166
+00:20:13,000 --> 00:20:13,500
+En canı.
+
+167
+00:20:13,500 --> 00:20:15,000
+En tane bir şey var.
+
+168
+00:20:18,451 --> 00:20:22,451
+Tekrar söylüyorum, birinci kısımda bu toplam yerine x de alabilirsiniz.
+
+169
+00:20:23,572 --> 00:20:27,851
+Bak şimdi şöyle, çok korkmasın, x alındığında x olur.
+
+170
+00:20:27,851 --> 00:20:28,692
+Tamam.
+
+171
+00:21:03,508 --> 00:21:07,508
+Şimdi kolayca mesela basit bir örnek kuruyorum.
+
+172
+00:21:11,316 --> 00:21:17,115
+Şimdi k 1'den 5'e kadar 3 k eksi kakalı.
+
+173
+00:21:24,788 --> 00:21:48,968
+Birazdan bunu bulacağız tabii de. Tabii çok kısa olduğu için. 1'den 5'e kadar olduğu için bu sayısal değerini bulabilirsin. Ama bizim için yukarıda kuralar gereken biz bunu 3x k1'den 5'e kadar 3x k kaldı içeride. Sonra eksiye dışarı alırız bakın. k kare diyeceğim buraya. k1'den 5'e kadar. Yani ne oldu? 3x k1'den 5'e kadar.
+
+174
+00:21:49,779 --> 00:21:53,980
+k'ların toplamı, x'i k'ların toplamı.
+
+175
+00:21:53,980 --> 00:21:55,779
+Bir adam bunu ne anlamaya geldi?
+
+176
+00:21:55,779 --> 00:21:56,779
+Söyleyeyim.
+
+177
+00:21:59,955 --> 00:22:03,915
+x kare artı 2x, f'
+
+178
+00:22:03,915 --> 00:22:10,516
+Şimdi, genel olarak, mesela k birden n'e kadar, k'ların toplamı ne dersin? Sorumuz o değil mi?
+
+179
+00:22:10,516 --> 00:22:13,516
+Eğer kendimiz o soru istedik, onu bulalım.
+
+180
+00:22:13,516 --> 00:22:19,915
+Bunlar genel ifadeyle, bunlar için bir formül var mı? Bil, ona bakıyoruz.
+
+181
+00:22:19,915 --> 00:22:26,715
+Birden beşe kadar yazmak kolaydı, birden yüze kadar değil mi? Birden bineye kadar dediğimiz zaman.
+
+182
+00:22:26,771 --> 00:22:32,592
+Bütün terim netlik yapıp, yan yana yazıp, çok zor olacaktır. Onlar için bir genel formül var.
+
+183
+00:22:36,180 --> 00:22:37,440
+Hemen bir tanesini bulalım.
+
+184
+00:22:43,412 --> 00:22:46,552
+k eşit birden e'ye kadar k'ların toplamı.
+
+185
+00:22:49,052 --> 00:22:51,012
+Bir cevap bu toplam eşittir.
+
+186
+00:22:52,292 --> 00:22:58,032
+Şöyle 1 artı 2 artı 3 artı noktanın artı n değil mi?
+
+187
+00:22:58,492 --> 00:23:01,992
+Bir de bunu istedikten tel tasa yazalım.
+
+188
+00:23:03,052 --> 00:23:06,652
+n artı bir önceki neydi? n x1'di böyle edeceğiz.
+
+189
+00:23:10,259 --> 00:23:12,700
+Artı en-2 falan bu şekilde.
+
+190
+00:23:27,923 --> 00:23:38,163
+artı nokta nokta nokta, artı, diyelim ki, 3, artı 2, artı 1. O zaman yukarıda böyle yapalım.
+
+191
+00:23:46,291 --> 00:23:52,531
+1 artı 2 artı 3 artı nokta nokta nokta.
+
+192
+00:23:52,531 --> 00:23:57,011
+Sonraki ifade edilmesen artı engelleyecek ona göre 2 nokta yapar.
+
+193
+00:24:12,948 --> 00:24:15,388
+En artı bir, değil mi? En artı bir.
+
+194
+00:24:15,388 --> 00:24:23,988
+Yani, şu iki tarafı tutuladığında, zaten en artı bir, artı, bununla bunu tutuladığında en artı bir.
+
+195
+00:24:23,988 --> 00:24:28,067
+Artı, bakın dur dikkat edin, en artı bir.
+
+196
+00:24:28,067 --> 00:24:32,148
+Artı notunu da artı, bakın en artı bir.
+
+197
+00:24:32,148 --> 00:24:35,988
+Artı en artı bir, artı en artı bir.
+
+198
+00:24:35,988 --> 00:24:38,508
+Kaç tane notu arkadaşlar?
+
+199
+00:24:40,372 --> 00:24:42,692
+Şimdi bir tane, diyelim biz bunu esen diyelim.
+
+200
+00:24:45,132 --> 00:24:47,011
+Eseni aynı şekilde böyle yaptık.
+
+201
+00:24:48,711 --> 00:24:51,112
+Esen daha harfına serilerek kullanıcılarını yapıyordun.
+
+202
+00:24:52,692 --> 00:24:54,692
+Ve bunları taraftan topladığımda...
+
+203
+00:24:59,251 --> 00:25:00,751
+Bu taraf 2 tane S n h.
+
+204
+00:25:03,331 --> 00:25:05,251
+Sağ tarafa baktığın zaman sağ tarafa
+
+205
+00:25:07,411 --> 00:25:09,251
+n tane n artı 1 var değil mi?
+
+206
+00:25:11,611 --> 00:25:14,251
+Demek ki burada S n h nedir?
+
+207
+00:25:15,531 --> 00:25:17,531
+n çarpı n artı 1 bölü 2.
+
+208
+00:25:17,731 --> 00:25:18,731
+n çarpı
+
+209
+00:25:26,099 --> 00:25:30,099
+Demek ki bu toplağım bu esen iliminde aslında kareye ne kadar?
+
+210
+00:25:30,099 --> 00:25:32,099
+Svk toplamıdır.
+
+211
+00:25:42,579 --> 00:25:44,720
+n-chalfır, n-artı 1x, f'
+
+212
+00:25:47,720 --> 00:25:48,339
+Teşekkürler.
+
+213
+00:26:01,748 --> 00:26:07,548
+tüm benzer komünler arkadaşlar ilk n kare ya da ilk n küp içinde verilebilir.
+
+214
+00:26:07,548 --> 00:26:10,748
+Demek ki bunları şöyle toplanırsak.
+
+215
+00:26:14,740 --> 00:26:15,740
+çöğütümeyken.
+
+216
+00:26:19,347 --> 00:26:20,548
+3'ünü bir arada verelim.
+
+217
+00:26:22,707 --> 00:26:23,627
+Toplam konuları bir.
+
+218
+00:26:25,387 --> 00:26:26,907
+Bunları dinlememiz gerekiyor.
+
+219
+00:26:30,836 --> 00:26:34,836
+ya da ilken toplam family, on teklif ödelesince.
+
+220
+00:26:41,044 --> 00:26:43,044
+Bir tanesini zaten yazdım.
+
+221
+00:27:06,228 --> 00:27:21,847
+teza, birdenine kadar, kareler toplamı, bu da benzer şekilde bulunabilir. n çarpı, n artı 1 çarpı, 2n artı 1 bölü 6.
+
+222
+00:27:25,847 --> 00:27:27,788
+Sonra da k küp.
+
+223
+00:27:29,011 --> 00:27:35,731
+x k1'den n'e kadar, aslında n bölü n artı 1 bölü 2'nin kalitesi o akıl takılması daha kolay.
+
+224
+00:27:36,451 --> 00:27:42,411
+Burada 2n artı 1 2 deniyor ve faydalı 3 geçen oluyor. Bu ise onun kalitesine de bakıyor.
+
+225
+00:27:43,011 --> 00:27:52,291
+n artı 1 bölü 2'nin kalitesi. Tabi akıl da kalması bakımda, ezberlemesi konarlarında bu şekilde düşünüldüğü için.
+
+226
+00:27:53,491 --> 00:27:54,691
+Bu formüller var.
+
+227
+00:27:59,251 --> 00:28:01,251
+Şimdi bunlar nerede kullanacağız?
+
+228
+00:28:03,451 --> 00:28:07,251
+Başlıklar hatırlarsanız sonu toplamların limitleri.
+
+229
+00:28:08,751 --> 00:28:09,751
+Mesela
+
+230
+00:28:11,751 --> 00:28:18,251
+y eşit 1-x karenin grafiğinin aldığımız asıl bir aralığında
+
+231
+00:28:19,251 --> 00:28:20,751
+ve bu aralığın aslında
+
+232
+00:28:27,955 --> 00:28:32,955
+alanın alt toplamı yaklaşımları ile bir limit değeri bulunan çalışacak.
+
+233
+00:28:32,955 --> 00:28:35,955
+Çünkü şey bilayar.
+
+234
+00:28:37,955 --> 00:28:38,955
+İsterseniz...
+
+235
+00:28:40,955 --> 00:28:41,955
+Şöyle...
+
+236
+00:28:55,955 --> 00:28:58,855
+Ekri burayı bir tane örnek yazmamızda fayda var.
+
+237
+00:29:03,700 --> 00:29:07,700
+Mesela, Kabir denece kadar.
+
+238
+00:29:12,051 --> 00:29:12,811
+eşittir.
+
+239
+00:29:14,011 --> 00:29:15,611
+Nedir? 100 çarpı
+
+240
+00:29:15,611 --> 00:29:18,371
+101
+
+241
+00:29:18,371 --> 00:29:21,911
+bölü kaç 2?
+
+242
+00:29:24,491 --> 00:29:26,291
+Yani 50 çarpı 100 dedi mi?
+
+243
+00:29:26,931 --> 00:29:27,711
+Onu da çarparsın.
+
+244
+00:29:38,675 --> 00:29:48,055
+Ya da aynı şekilde k eşliği birden 5'e kadar, hani Cloyce'un sonucu daha iyi görebildiğe, k kare dedi.
+
+245
+00:29:48,895 --> 00:29:52,095
+Birden 5'e kadar sayılalım karelerin toplamı nedir dediğimizde.
+
+246
+00:29:52,595 --> 00:29:55,435
+Ona baktığımız zaman, en nedir?
+
+247
+00:30:01,460 --> 00:30:01,960
+çıç...
+
+248
+00:30:07,571 --> 00:30:16,771
+k miden 5'e kadar k kare artı 2x, eşittir.
+
+249
+00:30:17,771 --> 00:30:22,971
+Teoförü ne diyor? 5x6, oradan zaten görüyorsun.
+
+250
+00:30:23,971 --> 00:30:26,971
+Çarpılar şöyle yazdım, artı şimdilik.
+
+251
+00:30:28,371 --> 00:30:29,371
+11 mi?
+
+252
+00:30:31,171 --> 00:30:32,171
+Böyle 6.
+
+253
+00:30:33,460 --> 00:30:35,060
+Bakın altına gidelim. Sonuçta gidelim.
+
+254
+00:30:39,059 --> 00:30:42,819
+Birden beşe kadar sayıların kayıları toplamı 50'dir.
+
+255
+00:30:44,179 --> 00:30:48,019
+Ve bende şekilde 40'lüğünü de tabii ki bulabilirsiniz.
+
+256
+00:30:57,480 --> 00:31:03,480
+x kare artı 3x, f'ye kadar sayıların kare artı toplamı 50'dir.
+
+257
+00:30:56,819 --> 00:31:01,819
+kb'den 3'e kadar diyelim. k k eşittir.
+
+258
+00:31:01,819 --> 00:31:09,819
+Bir defa 3x4 bölü 2'nin kalitesi de gideceğiz.
+
+259
+00:31:09,819 --> 00:31:13,819
+Burası 2, 6. 6'nın kalitesi 36 mı?
+
+260
+00:31:13,819 --> 00:31:19,819
+2 olur. 3 değil mi? İçerisi 6 kalır.
+
+261
+00:31:19,819 --> 00:31:23,819
+6'nın kalitesi 36. Gerçekten baktığınız zaman
+
+262
+00:31:24,307 --> 00:31:42,307
+Yani şöyle açık yazarsam, bir test ne karşısına? 1 artı 2'nin tüpü, 7, 2'nin tüpü, 1 8'ti. Artı 3'ün tüpü, 3'ün tüpü neydi? 27 değil. 27, 28, 28, 36. Öyle.
+
+263
+00:31:45,307 --> 00:31:49,307
+Yani formüllerin doğruluğunu ne yapmışız? Böylece türev uygulamaları.
+
+264
+00:31:51,508 --> 00:31:55,508
+tamam mısın?
+
+265
+00:32:15,731 --> 00:32:16,531
+Geçtik hemen.
+
+266
+00:32:19,432 --> 00:32:24,331
+Şimdi tonun toplamını limit olarak bulacağız.
+
+267
+00:32:25,652 --> 00:32:26,172
+Örnek.
+
+268
+00:32:38,196 --> 00:32:38,380
+tamam mısın?
+
+269
+00:32:41,619 --> 00:32:51,119
+Bizimki y eşit bir eksi x kare eğilisinin 0-1 aralığında ödülenmiştir.
+
+270
+00:32:52,919 --> 00:33:03,439
+Bu y eşit bir eksi x kare eğilisinin sınırda alanında 0-1 aralığında bu alanın alt toplamını limitinle yapalım.
+
+271
+00:33:05,000 --> 00:33:05,879
+Bulalım.
+
+272
+00:33:07,519 --> 00:33:09,199
+Şöyle bir seslenir.
+
+273
+00:33:15,667 --> 00:33:17,667
+Yani azı maksak bir yolu bu bir şey.
+
+274
+00:33:22,900 --> 00:33:26,360
+ve aralığımızda sivri bir aralık.
+
+275
+00:33:49,203 --> 00:33:53,932
+x kare artı 2x, f'
+
+276
+00:33:59,539 --> 00:34:00,819
+şöyle değil mi hatırlasın?
+
+277
+00:34:01,980 --> 00:34:03,079
+x1x'is kare.
+
+278
+00:34:09,648 --> 00:34:10,648
+x kare artı 2x, f'
+
+279
+00:34:08,755 --> 00:34:09,415
+çözüm.
+
+280
+00:34:26,003 --> 00:34:38,123
+x kare artı 2x, f'
+
+281
+00:34:20,275 --> 00:34:26,275
+Şimdi biz bunu alt toplamın limitini bulmak için, onun için alttan bulmamız lazım.
+
+282
+00:34:26,275 --> 00:34:30,275
+0,1 aralığını en eşit parçaya böldüğümüzü bahsedeceğiz.
+
+283
+00:34:30,275 --> 00:34:34,275
+Yani delta x'imi işte bx a bölü n şeklinde alacağız.
+
+284
+00:34:34,275 --> 00:34:36,275
+Giriş durup kalalım.
+
+285
+00:34:39,275 --> 00:34:47,275
+Delta x eşittir bx a bölü n'den, eşittir aralık uzanımı 1-0 bölü n'den.
+
+286
+00:34:47,764 --> 00:34:48,524
+bir höl'e.
+
+287
+00:34:51,923 --> 00:35:15,632
+x kare artı 2x, f'
+
+288
+00:35:06,900 --> 00:35:14,100
+alın olmak için, yaklaşık alınmak için alt toplam elde ediyoruz. Alt toplam ve taşımlarına limit değerli bulalım.
+
+289
+00:35:28,507 --> 00:35:36,568
+x kare artı 2x, f'
+
+290
+00:35:24,659 --> 00:35:29,659
+limit değeri nedir?
+
+291
+00:35:29,659 --> 00:35:33,659
+Evet, şu an biz böyle olsun.
+
+292
+00:35:33,659 --> 00:35:37,659
+Alt toparının yakışıklar limit değeri nedir? Onu bulabilirsiniz.
+
+293
+00:35:37,659 --> 00:35:40,659
+Dertaksizi böyle aldık. Bu zaten yereşti 1x x kare.
+
+294
+00:35:40,659 --> 00:35:45,659
+En eşit parçaya gördüğümüz zaman işte başlık değerleri vereceğiz.
+
+295
+00:35:45,659 --> 00:35:47,659
+Ona biz partisi ya da bölüm edeceğiz.
+
+296
+00:35:47,659 --> 00:35:50,659
+Bu şekilde.
+
+297
+00:35:53,811 --> 00:35:59,291
+En eşit parçayı bir. Her birinin uzunluğu birbirine en kasit değil mi? En eşitli en olduğundan bir.
+
+298
+00:36:03,539 --> 00:36:05,619
+Dolayısıyla alt aralıklarımız şöyle olacak.
+
+299
+00:36:08,819 --> 00:36:17,039
+0, 1 bölü en, 1 bölü en, 2 bölü en değil mi? Öyle gibi.
+
+300
+00:36:22,387 --> 00:36:29,387
+Sonra n-1 bölü n, f'üggül n bölü n.
+
+301
+00:36:31,387 --> 00:36:34,387
+Arak'tan 3 doktalarını diye en zekli yazdım.
+
+302
+00:36:34,387 --> 00:36:36,387
+Şimdi mesela bir şey çizelim.
+
+303
+00:37:10,739 --> 00:37:11,699
+Böyle devam ettiniz.
+
+304
+00:37:24,275 --> 00:37:36,835
+Burası mesela 1 bölü, burası 2 bölü, burası n-1 bölü, n-1 dediğimiz zaten n bölüğendir.
+
+305
+00:37:37,935 --> 00:37:39,095
+Şöyle dikkatli baktığımız zaman.
+
+306
+00:37:39,795 --> 00:37:48,875
+İşte bu olarak da böyle. 1 bölü, 2 bölü, sonra n-1 bölü, n bölü, n bölü, n bölü, n 3 noktada baktığımız zaman öyle.
+
+307
+00:38:20,884 --> 00:38:28,483
+küçük olunca çok da ilginç. Böyle bakın, alt toplamlar bilir misin? Çiçerideki tükkentler alacağım.
+
+308
+00:38:28,483 --> 00:38:40,483
+Mesela burası için de, şöyle olacak. Akson istiyor. Demek ki çiçekleri bularken neyle başlayacak? İlk dükkan için, hep bir bölümle başlayacak.
+
+309
+00:38:40,483 --> 00:38:47,403
+Yani o zaman şu toplamlar bölümünü alacak. Hepsi daha bir bölümle çarpacak. Alanına toplam.
+
+310
+00:38:48,179 --> 00:39:06,699
+f' 1 bölü m, çarpı 1 de onu en sona yazarım. Artı f' 2 bölü m, artı noktunu artı, baktığımız zaman f' n-1 bölü m, değil mi? Ve en sonunda f'n bölü m.
+
+311
+00:39:11,155 --> 00:39:12,619
+çiçak.
+
+312
+00:39:19,923 --> 00:39:32,123
+Dolayısıyla en diktörkenin toplam alan ifadelerini yazmış olduk. Kaç tane var? N tane olduğu için. O zaman ilişki olarak şöyle yazalım. K1'den N'e kadar.
+
+313
+00:39:32,123 --> 00:39:46,724
+Değil mi artık onu? Çünkü orada N'ler belli artık. Ne çalışacağız? Yukarılaşacağız. 1, 2, 3, 4, N'e kadar. Bu ifade eşit toplam. K eşit bir denene kadar. F k bölü N.
+
+314
+00:39:49,523 --> 00:40:02,027
+x kare artı 1x, f'
+
+315
+00:40:10,708 --> 00:40:16,467
+f k bölüne, k bölüne dediğimiz f değeri yukarıda belli. 1-x kare. Şuraya yazalım.
+
+316
+00:40:17,288 --> 00:40:25,547
+y eşittir fx, eşittir 1-x kare. Dolayısıyla f k bölüne değerini buraya hesap edeceğiz.
+
+317
+00:40:25,547 --> 00:40:30,028
+1-k bölününün karesi değil mi?
+
+318
+00:40:30,547 --> 00:40:31,087
+Böyle düşünüyorum.
+
+319
+00:40:33,327 --> 00:40:35,708
+k bölününün karesi.
+
+320
+00:40:36,007 --> 00:40:37,148
+Panjisi kapatıp bir bölü.
+
+321
+00:40:38,164 --> 00:40:45,164
+Bir defa, 1 bölü n zaten toplağının listesinden bağımsız olduğu için bunu dışarı atabilirsin.
+
+322
+00:40:45,164 --> 00:40:51,164
+Ama içeride de kastımlık bir sıkıntı yaratmıyor aslında.
+
+323
+00:40:51,164 --> 00:40:56,164
+Burayı dağıtıp açırsak, hani iki toplam şeklinde yazıyoruz sonuçta öyle.
+
+324
+00:40:56,164 --> 00:41:01,164
+1 bölü n-k kare bölü n küp şeklinde olur.
+
+325
+00:41:05,876 --> 00:41:17,260
+x kare artı 2x, f'
+
+326
+00:41:23,956 --> 00:41:28,956
+Alt toplamları aldığım için sağ uç noktadan başladım dikkat edin, yat toplam yazmaya.
+
+327
+00:41:28,956 --> 00:41:31,956
+Ama tabi bu eğrimiz azaran olduğu için dikkat edin.
+
+328
+00:41:32,956 --> 00:41:34,956
+Her zaman şekil çizmekte fayda var.
+
+329
+00:41:35,956 --> 00:41:44,956
+Alt toplam, üst toplam bulurken, hangi noktayı sağ uç noktayı, sol uç noktayı ile başlayacağımız, neyle belirli olur?
+
+330
+00:41:44,956 --> 00:41:46,956
+Fonsiyonların artan yata azaran olması ile bağlı.
+
+331
+00:41:46,956 --> 00:41:49,956
+Bu azaran eğrimiz azaran bir eğri olduğu için.
+
+332
+00:41:50,032 --> 00:41:54,811
+savuş noktayla. Ama bu artan olsaydı neydi? Savuş noktayla başlayacak.
+
+333
+00:41:54,811 --> 00:41:55,811
+Dikkat edelim.
+
+334
+00:41:55,811 --> 00:41:57,740
+Alt aralıkları için söylüyorum.
+
+335
+00:42:09,300 --> 00:42:11,380
+Peki, bakın devamında.
+
+336
+00:42:14,020 --> 00:42:15,760
+Bu ifade eşittir.
+
+337
+00:42:19,699 --> 00:42:20,699
+1 bölüne
+
+338
+00:42:20,699 --> 00:42:24,619
+eksi
+
+339
+00:42:24,619 --> 00:42:27,699
+k kare bölü enküt.
+
+340
+00:42:30,579 --> 00:42:33,799
+k bir denene
+
+341
+00:42:33,799 --> 00:42:36,259
+içeride
+
+342
+00:42:36,259 --> 00:42:39,460
+k'lı terimler içeride kalacak, diğerlerini
+
+343
+00:42:39,460 --> 00:42:40,539
+çakır atabiliriz.
+
+344
+00:42:40,639 --> 00:42:41,699
+Tabi olarak birbirlerine
+
+345
+00:42:41,699 --> 00:42:43,699
+burada bir k altı
+
+346
+00:42:43,699 --> 00:42:46,359
+k bir denene
+
+347
+00:42:46,735 --> 00:42:50,335
+x'i, 1 bölü en küpüldüğünü dışarı atalım.
+
+348
+00:42:51,135 --> 00:42:53,335
+1 denene kadar k kare.
+
+349
+00:42:55,335 --> 00:42:56,735
+k k, pardon.
+
+350
+00:42:57,536 --> 00:42:58,735
+yok k kare.
+
+351
+00:43:02,452 --> 00:43:29,311
+Bunları yukarıdan bittim zaten. Eşittir. 1 bölü n, bu neydi? n'di zaten. 1 olduğum için. Eksi 1 bölü n küp. Bunu da biliyoruz. n çarpı n artı 1 çarpı 2n artı 1 bölü 6. Doğru mu? Artık bunu ne yapmak gerekiyor? Bunu düzenlemek gerekiyor.
+
+352
+00:43:30,228 --> 00:43:37,228
+Burası bir zaten, burası kolay. Burada da açık bazı terne belki de bir sadereşebilir. Sadereşebilir, önem değil.
+
+353
+00:43:38,228 --> 00:43:46,228
+2 en küp artı 3xn kare, sonra artı en küp artı böyleymiş.
+
+354
+00:43:46,228 --> 00:43:49,228
+Bir en panze anlamını biliyormuş.
+
+355
+00:43:49,228 --> 00:43:53,228
+Ama şu an çok da işimde yaramıyor elin gitmesini.
+
+356
+00:43:53,228 --> 00:43:56,228
+Bölüm altı en küp.
+
+357
+00:43:57,652 --> 00:44:01,652
+Biz neyi arıyoruz? Bu toplamın limitini arıyoruz değil mi?
+
+358
+00:44:01,652 --> 00:44:22,652
+Halde limit, en son saygı derken, toplam, işte yukarıdaki toplam, f, neydi? k bölü n, çarpı 1'e bölüyormuş çünkü, alt toplamlar için.
+
+359
+00:44:24,659 --> 00:44:27,159
+k eşittir, e deneme kadar.
+
+360
+00:44:29,759 --> 00:44:30,759
+Eşittir.
+
+361
+00:44:32,059 --> 00:44:34,859
+Limit, en son sıra giderken,
+
+362
+00:44:35,460 --> 00:44:43,059
+bulduğumuz ispatı, limit, 1x, 2n³, bunu hemen etkilediğim gibi, ıza bir zadan atıp, limit etmeliyorum.
+
+363
+00:44:43,659 --> 00:44:48,059
+Artı 2x3n² artı m.
+
+364
+00:44:51,059 --> 00:44:59,059
+kaç sayıları aynı olduğu için, daha doğrusu, pardon, dereceleri aynı olduğu için, ayrıca, belirleriyle ilgili konular olarak.
+
+365
+00:44:59,059 --> 00:45:11,052
+Ümit değil de bunların, en yüksek derecenin kaç sayıları olarak. Yani 2 bölü 6 ya da 1 bölü 3. Bu değişiklikte 2 bölü.
+
+366
+00:45:14,260 --> 00:45:22,560
+Aslında daha sonra göreceğiz ki aslında bu limit değeri, toplamda bulduğumuz bu limit değeri, aslında bu bölgenin alanını görecektir.
+
+367
+00:45:23,920 --> 00:45:29,120
+0'dan 1'e kadar 1x x kare 50'si altında kalın alan.
+
+368
+00:45:46,739 --> 00:45:52,239
+Şimdi artık, bunu sürüyebilir kontrol edeyim.
+
+369
+00:45:52,239 --> 00:46:01,739
+Altı tarafı, vman toplamı da tanımlayacağız. vman toplamı da benzer şekilde tanımlayacağız.
+
+370
+00:46:04,239 --> 00:46:08,619
+Arkasından belirli integral tanımını vereceğiz.
+
+371
+00:46:22,771 --> 00:46:24,523
+ve ara veren baklılışlar.
+
+372
+01:03:44,083 --> 01:04:02,844
+Evet, devam edelim arkadaşlar. Şimdi başlığımız Livan toplamları. Bu aslında biraz önce gördüğümüz sonlu toplamlar olarak alt, üst ya da orta nokta koronayla ifade eden toplamların bir arada genel şekli.
+
+373
+01:04:09,364 --> 01:04:12,663
+sınırlı herhangi bir f fonksiyonu ile başlayacağız.
+
+374
+01:04:14,423 --> 01:04:18,003
+f'in pozitif değerleri olduğu gibi negatif değerler de olabilir değil mi?
+
+375
+01:04:19,123 --> 01:04:23,003
+Sıhırlar mutlaka f'in x80'in üstünde olması gerekmiyor.
+
+376
+01:04:24,144 --> 01:04:30,644
+Yani burada AB aralığına eşit genişlikte olması gerekmeyen alt aralıklar da mutlaka olabilir.
+
+377
+01:04:30,923 --> 01:04:31,744
+Onu da ayırabilirsiniz.
+
+378
+01:04:35,695 --> 01:04:39,315
+genişlikleri eşit olan aralıkla seçiyoruz.
+
+379
+01:04:40,956 --> 01:04:48,175
+Öncelikle verilen bir AB kapalı aralık arasındaki bir koşul vereceğiz.
+
+380
+01:04:49,275 --> 01:04:51,135
+O koşulu genel halde tanımlayalım.
+
+381
+01:04:52,335 --> 01:04:54,515
+Şöyle başlık olarak kıyımla toplanmaları verelim.
+
+382
+01:04:56,335 --> 01:04:57,535
+Başlığımız en azından belli olsun.
+
+383
+01:05:40,820 --> 01:05:41,820
+Benimki
+
+384
+01:05:41,820 --> 01:05:46,820
+F
+
+385
+01:05:46,820 --> 01:05:49,820
+bir AB
+
+386
+01:05:49,820 --> 01:05:53,820
+kapalı, analı, üzerinde tırınlı
+
+387
+01:06:04,340 --> 01:06:05,360
+ve sınırlı
+
+388
+01:06:05,360 --> 01:06:09,480
+bir fonksiyon olsun.
+
+389
+01:06:15,476 --> 01:06:17,195
+sınıktan ne anlıyoruz?
+
+390
+01:06:21,556 --> 01:06:30,636
+her biri bu araktaki x değeri için fonksiyonun, değil mi, değerinin sonu değeri aldı. Küçük bir değer.
+
+391
+01:06:32,176 --> 01:06:37,036
+Öyle bir m sayısı var ki diyelim, o m sayısından küçük kaldığı bir
+
+392
+01:06:47,155 --> 01:06:51,155
+Dolayısıyla A-B aralığını böyle bir...
+
+393
+01:06:54,675 --> 01:06:57,375
+en alt aralığa böldüğümüzü bahsedeceğim.
+
+394
+01:07:02,195 --> 01:07:14,976
+a küçük, x1, küçük, x2, küçük, hapta, hapta, xn-1, bu da küçük b.
+
+395
+01:07:16,976 --> 01:07:17,715
+Dolayısıyla,
+
+396
+01:07:22,835 --> 01:07:31,315
+Eğer tabii bir x sıfır bir de x'in ifadesini başlarına korsak, aktörünü genelleyelim hiç. Bir daha ona girmeyelim tekrar.
+
+397
+01:07:36,179 --> 01:07:49,900
+Şurası x sıfır, bu değiştirir a, bu da küçük x n diyelim, bu değiştirir b. Bu şekilde en alt aralığa böldüğümüzü düşürelim.
+
+398
+01:07:49,900 --> 01:08:02,780
+Ve bu noktalar hükümesi aslında p eşittir. Bunu bazen büyük p ile bitiriyoruz. x sıfır, x bir.
+
+399
+01:08:03,295 --> 01:08:05,076
+hepsi x ile göstermiş olsun.
+
+400
+01:08:05,896 --> 01:08:06,615
+x ile
+
+401
+01:08:06,615 --> 01:08:09,056
+noktaların kümesine
+
+402
+01:08:12,788 --> 01:08:15,168
+ABK aralarının bir bölünüş denir.
+
+403
+01:08:32,948 --> 01:08:39,188
+Şimdi, tabii B bölümüşü, AB aralığın en tane kapağı alt aralığına böler değil mi?
+
+404
+01:08:40,708 --> 01:08:40,948
+B
+
+405
+01:08:40,948 --> 01:08:44,548
+AB aralığını
+
+406
+01:08:49,043 --> 01:08:51,724
+tane kapalı
+
+407
+01:08:51,724 --> 01:08:54,304
+alt aralara belir.
+
+408
+01:09:00,435 --> 01:09:04,435
+O yüzden AB aralarının bir bölüm istiyoruz.
+
+409
+01:09:06,835 --> 01:09:08,435
+Şimdi mesela şu,
+
+410
+01:09:09,435 --> 01:09:11,435
+tabii grafik çizmekte biraz
+
+411
+01:09:12,435 --> 01:09:13,435
+sıkıntı ama
+
+412
+01:09:16,435 --> 01:09:21,435
+Arak'tan mesela ilk mesela x0, x1, ikincisi x1, x2'dir ve bu şekilde.
+
+413
+01:09:22,068 --> 01:09:37,128
+k1 ile en arasında bir tamsel olarak olmak üzere p'nin kanıncı aralığı x k-1x k. Yani şöyle onları yazalım isterseniz. x0, x1, x1, x2.
+
+414
+01:09:42,292 --> 01:09:44,532
+x k-1 x kare şeklinde.
+
+415
+01:09:50,868 --> 01:09:52,167
+kanınca ahlılık bu.
+
+416
+01:09:52,167 --> 01:09:54,768
+Tabi bu devam ettiğiniz zaman entah ettiğinize göre
+
+417
+01:10:00,000 --> 01:10:02,100
+n-1, pixel.
+
+418
+01:10:03,539 --> 01:10:06,719
+Tüm alt aralıkları böylece göstermiş olduk.
+
+419
+01:10:07,979 --> 01:10:12,340
+Bu her bir aralığın uzunluğunu işte delta x k ile gösterebiliriz.
+
+420
+01:10:12,440 --> 01:10:16,219
+Mesela karınca aralığın uzunluğu dediğimiz zaman delta x k.
+
+421
+01:10:17,800 --> 01:10:19,000
+Bu aralığın uzunluğu.
+
+422
+01:10:21,159 --> 01:10:22,000
+Eşittir.
+
+423
+01:10:22,860 --> 01:10:23,960
+Karınca aralığın,
+
+424
+01:10:25,500 --> 01:10:26,219
+alt aralığın.
+
+425
+01:10:28,180 --> 01:10:29,036
+uzunlu.
+
+426
+01:10:32,787 --> 01:10:39,167
+Bunlar her zaman eşit seçmek zorunda değiliz ama eşit seçmemiz tabii daha da bizim işimize gelecektir değil mi?
+
+427
+01:10:39,287 --> 01:10:39,827
+Gelacaktır.
+
+428
+01:10:42,127 --> 01:10:45,887
+Şimdi o halde bu bilgiler ışığında.
+
+429
+01:10:47,247 --> 01:10:49,167
+Şöyle bir grafik isteyeyim.
+
+430
+01:10:59,028 --> 01:10:59,788
+x kare artı 2x, f'
+
+431
+01:11:16,659 --> 01:11:17,659
+en şöyle
+
+432
+01:11:30,068 --> 01:11:34,068
+ab aralığımız, işte şuradan başlasın, arıyorum.
+
+433
+01:11:36,308 --> 01:11:42,948
+x sıfır, yani a dediğimiz x sıfır noktası, b de mesela şurada biz.
+
+434
+01:11:45,488 --> 01:11:47,388
+Burası da x'ler.
+
+435
+01:12:07,091 --> 01:12:08,451
+şimdi...
+
+436
+01:12:08,451 --> 01:12:09,652
+biraz sielbire.
+
+437
+01:12:14,547 --> 01:12:18,059
+x kare artı 3x, f'
+
+438
+01:12:38,292 --> 01:12:39,352
+sabıda, bu gelişik.
+
+439
+01:14:43,091 --> 01:14:43,819
+bir kast.
+
+440
+01:15:07,512 --> 01:15:08,012
+x kare artı 3x, f'
+
+441
+01:15:07,220 --> 01:15:08,012
+x kare artı 2x, f'
+
+442
+01:15:21,175 --> 01:15:23,435
+x kare artı 3x, f'
+
+443
+01:15:16,115 --> 01:15:20,115
+birkaç tane göstermemiz yeterli aslında bu kadar. Çok oraylanmamız gerekiyor.
+
+444
+01:15:20,115 --> 01:15:23,115
+Bu şekilde artık mantığı anladınız.
+
+445
+01:16:12,876 --> 01:16:20,935
+x kare artı 3x, f'
+
+446
+01:16:14,384 --> 01:16:24,684
+x kare artı 2x, f'
+
+447
+01:16:11,636 --> 01:16:16,636
+Yani bir neyse ortamakta Kur'an'lı uğramış olduk buraya. Tamam mı?
+
+448
+01:16:17,636 --> 01:16:22,636
+Ayrıca bunu da şuradan alırsak kafi olabilir.
+
+449
+01:16:23,636 --> 01:16:24,636
+İyi olmasak da...
+
+450
+01:16:33,775 --> 01:17:12,460
+x kare artı 2x, f'
+
+451
+01:17:11,507 --> 01:17:12,460
+basılı.
+
+452
+01:17:18,387 --> 01:17:22,087
+ve ota noktaları aldığımızda, göz önüne aldığımızda şöyle işte yaklaşık.
+
+453
+01:17:43,224 --> 01:17:43,340
+x kare artı 2x, f'
+
+454
+01:17:40,115 --> 01:17:42,115
+Dips'inleerler.
+
+455
+01:17:42,115 --> 01:17:43,340
+Şükür, dünkar.
+
+456
+01:18:14,163 --> 01:18:14,956
+çok güzel.
+
+457
+01:18:23,039 --> 01:18:27,799
+x kare artı 2x, f'
+
+458
+01:18:22,707 --> 01:18:23,987
+Şu olanı
+
+459
+01:18:25,528 --> 01:18:26,507
+buradan seyitelim.
+
+460
+01:18:50,931 --> 01:18:51,787
+çınır.
+
+461
+01:18:58,131 --> 01:18:58,347
+x kare artı 2x, f'
+
+462
+01:18:57,555 --> 01:18:58,347
+çeşimdi.
+
+463
+01:19:16,311 --> 01:19:21,311
+x kare artı 2x, f'
+
+464
+01:19:15,028 --> 01:19:20,028
+çok güzel, çok güzel, çok güzel, bu da şirası.
+
+465
+01:19:36,635 --> 01:19:38,615
+x kare artı 2x, f'
+
+466
+01:19:35,091 --> 01:19:49,211
+Şimdi bakın, bazı noktalarda azalan, bazı noktalarda artan fonksiyon. Ama biz orta nokta kuralarını aldığımız için direk nedir? Onları hesaba katacağız.
+
+467
+01:19:49,211 --> 01:19:53,411
+Yani, s eşittir.
+
+468
+01:20:00,627 --> 01:20:04,108
+x kare artı 2x, sp diyelim yukarıdaki sp bölüntümüze göre.
+
+469
+01:20:05,108 --> 01:20:06,547
+K1'ler ne kadar?
+
+470
+01:20:12,340 --> 01:20:14,340
+f ck
+
+471
+01:20:15,940 --> 01:20:18,340
+x delta xk
+
+472
+01:20:21,040 --> 01:20:26,340
+Her bir ck ile burada alınma koşulu. Burası mesela c1, değil mi?
+
+473
+01:20:26,340 --> 01:20:28,340
+1 ile başladı.
+
+474
+01:20:35,123 --> 01:20:37,023
+Şöyle bir karşılığını yapalım.
+
+475
+01:20:50,515 --> 01:20:51,015
+çift.
+
+476
+01:20:55,572 --> 01:20:59,912
+bu c1, bu c2, c3 bu şekilde gidiyor işte.
+
+477
+01:21:02,631 --> 01:21:08,012
+Herhangi bir k'nınca mesela aralık için, şurası ck olsun.
+
+478
+01:21:26,899 --> 01:21:51,619
+Şimdi bu toplama, baktığımızda f, c, k'lar, tabii nasıl oluşur? Baktığınız zaman ilk toplamda var, x0'a bağlı olarak değil mi? O nedir? a. a artı aralığın uzunluğunun, değil mi? işte k neyse ona göre değil mi? Harketecek. Eşittir. f, c, k için.
+
+479
+01:21:52,564 --> 01:21:56,064
+daha sonra ck noktası için bir ifade oluşturduğumuz zaman.
+
+480
+01:21:57,764 --> 01:22:02,863
+Eğer ck noktasını mesela her aralığında 3 noktası olarak seçersek,
+
+481
+01:22:03,363 --> 01:22:08,764
+seslerden şöyle diyelim, bunu bunu işitlersek, tamamlaşılmaz bu orta noktası.
+
+482
+01:22:15,699 --> 01:22:20,699
+bu ortamda, tüka sağıştufada.
+
+483
+01:22:25,747 --> 01:22:28,747
+olarak seçilirse
+
+484
+01:22:31,547 --> 01:22:34,547
+bu yakalanı belli olmaz. Daha kolay olur.
+
+485
+01:22:35,427 --> 01:22:36,747
+Bu durumda
+
+486
+01:22:36,747 --> 01:22:38,427
+sp eşittir.
+
+487
+01:22:39,427 --> 01:22:41,427
+k birden e ne kadar
+
+488
+01:22:42,227 --> 01:22:45,307
+f nedir ise ilk nokta artı
+
+489
+01:22:45,667 --> 01:22:47,827
+işte sağ üst nokta burayı seçip
+
+490
+01:22:47,827 --> 01:22:49,827
+yüksüklerimizden
+
+491
+01:22:50,771 --> 01:22:56,851
+artı, buradaki ifade, k çarpı k neredeyse işte, k'nınca noktası söylüyoruz.
+
+492
+01:22:57,611 --> 01:23:01,912
+b-a bölü ne? Yani delta x kadar.
+
+493
+01:23:02,072 --> 01:23:03,031
+delta x'e kadar yada.
+
+494
+01:23:03,951 --> 01:23:07,652
+k çarpı b-a bölü n.
+
+495
+01:23:09,551 --> 01:23:12,131
+çarpı aynı şekilde aralığın uzunluğu.
+
+496
+01:23:12,231 --> 01:23:13,591
+b-a bölü n.
+
+497
+01:23:15,231 --> 01:23:17,031
+sp toplamımız bu şekilde oluşur.
+
+498
+01:23:17,300 --> 01:23:36,819
+yukarıda aldığımız örneklerimizi kolayca şey yapabilecek. Mesela P'yi 0-2 aradığında 0-2 aradığında farklı farklı aldığı zaman data x1k'lar bazıları değişmiş.
+
+499
+01:23:48,851 --> 01:23:49,851
+çürükler, say.
+
+500
+01:23:54,003 --> 01:24:00,619
+x kare artı 2x, f'
+
+501
+01:24:06,068 --> 01:24:08,068
+bu orta nokta
+
+502
+01:24:12,028 --> 01:25:10,528
+x kare artı 2x, f'
+
+503
+01:24:57,876 --> 01:25:07,256
+Şimdi burada çok kullanmasak da, özellikle teorik olarak ispatlarda olan karşımızda gelen bir kavram var.
+
+504
+01:25:08,456 --> 01:25:11,716
+Tabi limit alacağız, ortaklanmanın limitini alacağız en son sayısın.
+
+505
+01:25:12,476 --> 01:25:19,576
+Orada aslında en son sayı derken aralıkların uzunluğunda daha çok pelin doğrunun sıfıra gitmesi.
+
+506
+01:25:19,576 --> 01:25:23,515
+Bir bakıma aralıkların maksimum uzunluğunun sıfıra gitmesi demek.
+
+507
+01:25:27,539 --> 01:25:32,300
+O maksimum uzun teneyizlik, P'yi şöyle seçelim, atıyorum. 0, 0, 2.
+
+508
+01:25:35,399 --> 01:25:36,920
+Sonra 0, 6.
+
+509
+01:25:38,539 --> 01:25:40,120
+Sonra 1, 1,5.
+
+510
+01:25:44,243 --> 01:25:44,503
+x kare artı 2x, f'
+
+511
+01:25:44,503 --> 01:25:44,884
+ve 2x.
+
+512
+01:25:46,884 --> 01:25:47,843
+Bu nedir?
+
+513
+01:25:48,163 --> 01:25:50,743
+0-2 aslında aralığının bir bölünüştür.
+
+514
+01:26:05,684 --> 01:26:14,203
+değilim. Dolayısıyla P'nin burada baktığımız zaman kaç? 1, 2, 3, 4, 5 tane alt aralığı var değil mi?
+
+515
+01:26:18,387 --> 01:26:18,948
+benim
+
+516
+01:26:18,948 --> 01:26:22,108
+5-6 aralığı var.
+
+517
+01:26:27,091 --> 01:26:45,152
+Daha doğrusu P, 0,2 kapalı aralarını 5 kapalı 6 aralığa göre, değil mi? Bu durumda. Bunlar da 0,02, 0,2, 0,6.
+
+518
+01:26:49,652 --> 01:26:50,652
+06
+
+519
+01:26:50,652 --> 01:26:54,347
+1
+
+520
+01:26:59,444 --> 01:27:01,184
+1, 1.5
+
+521
+01:27:01,184 --> 01:27:05,064
+ve 1.5
+
+522
+01:27:05,064 --> 01:27:07,104
+2
+
+523
+01:27:07,104 --> 01:27:08,844
+bu şekilde
+
+524
+01:27:08,844 --> 01:27:10,804
+bu altarak da bu
+
+525
+01:27:10,804 --> 01:27:15,444
+dolaştıkça delta x kare baktığımız zaman
+
+526
+01:27:15,444 --> 01:27:19,203
+delta x 1'in uzunluğu belli
+
+527
+01:27:19,203 --> 01:27:20,004
+0,2
+
+528
+01:27:20,004 --> 01:27:24,484
+delta x 2 ikinci araların uzunluğu 0,4
+
+529
+01:27:24,484 --> 01:27:24,844
+değil mi?
+
+530
+01:27:26,163 --> 01:27:41,163
+3. aralığınız uzunluğu da aynı. x k x 3 eşit 0, 4. aralığınız uzunluğu 5, 0, 5. aralığınız uzunluğu da yine 0, 5.
+
+531
+01:27:45,652 --> 01:27:59,731
+A taraftan uzunlukları bu. Bunların tabi uzunluğu en büyük olan aralığımız 0.5 uzunluk aralıklı değil mi? Dolayısıyla bu da biz P'nin normu dediğimiz.
+
+532
+01:28:01,731 --> 01:28:02,692
+P'nin normu.
+
+533
+01:28:07,155 --> 01:28:10,435
+onu el ile şöyle götüreceğiz.
+
+534
+01:28:11,395 --> 01:28:13,155
+En geniş, en uzun.
+
+535
+01:28:16,155 --> 01:28:18,347
+Şöyle diyelim, iki defa uzun tutamıyorum.
+
+536
+01:28:26,355 --> 01:28:27,715
+aradığınızı unutursun.
+
+537
+01:28:44,724 --> 01:28:54,283
+Bu halde buradaki penin norm denir insanımız nedir? 0.3. Bizim örneğimiz değil mi? Nasıl bir örneğ?
+
+538
+01:29:06,739 --> 01:29:30,099
+Şimdi bundan sonra artık tabii amacımız, tabii verilen bir aralığın en tane keyif olarak, en noktada bir bölünüşünü gözünden alıp, dolaştık orada ister alt aralıklar, ck noktasını nasıl seçeceğini tabii bize bağlı olarak.
+
+539
+01:29:30,996 --> 01:29:40,755
+görünüşün, doğru taraftan kontrol edilen, alt taraftan genişlikleri sıfıra yaklaşırken, bir tek limit değerini verdiğini göreceğiz.
+
+540
+01:29:43,456 --> 01:29:46,595
+Onun da sen adı artık nedir? Belirli integral.
+
+541
+01:29:54,100 --> 01:29:56,280
+en geniş, tabi alt aralığın uzunudur.
+
+542
+01:30:00,627 --> 01:30:06,627
+Şimdi başlamaz belirli integral arkadaşlar. Artık belirli integral tarımını vermenlik tasındayız.
+
+543
+01:30:07,627 --> 01:30:22,380
+Tabi onun tanımı da teorik olarak, teorik bir tanım var, ilk de tanımlamış ama uygulaması göreceğimiz gibi tahmin, elementler bir duruma geliyor.
+
+544
+01:30:40,627 --> 01:30:43,427
+Evet, yani çok fazla söz yapmamıza gerek yok.
+
+545
+01:30:44,627 --> 01:30:45,827
+Burada bir tanım vereceğim.
+
+546
+01:30:46,827 --> 01:30:50,627
+Belirli integral, bu kadar tabii tasmalarının sonucunu göz önüne aldığımız zaman.
+
+547
+01:30:52,127 --> 01:30:52,927
+fx
+
+548
+01:30:54,728 --> 01:30:57,827
+1-AB kapalı aralığına tanımlı bir fonksiyon olsun.
+
+549
+01:31:04,884 --> 01:31:06,796
+kapalı aralık da.
+
+550
+01:31:11,252 --> 01:31:13,252
+aranı bir fonksiyon olsun.
+
+551
+01:31:21,555 --> 01:31:31,956
+Şimdi, ya duye bağlı kalmaya çalışacağım. Aşağıdaki koşullar sallanıyorsa,
+
+552
+01:31:39,859 --> 01:31:46,139
+orda bir j sayısı var tabi. j sayısı
+
+553
+01:31:46,139 --> 01:31:51,539
+f'nin ab aralığı üzerindeki belirli integrali
+
+554
+01:32:07,988 --> 01:32:09,988
+belirli integral.
+
+555
+01:32:12,548 --> 01:32:13,548
+Ve
+
+556
+01:32:13,788 --> 01:32:14,668
+şu
+
+557
+01:32:14,988 --> 01:32:15,988
+toplamada
+
+558
+01:32:18,668 --> 01:32:20,668
+işte k 1 denene kadar
+
+559
+01:32:22,828 --> 01:32:25,148
+f c k çarpı delta x k
+
+560
+01:32:37,555 --> 01:32:43,915
+ve limitdir ve ne diyelim toplamının limitidir. Öyle diyelim. Riemann toplamının limitidir.
+
+561
+01:32:52,659 --> 01:33:03,379
+Aslında bizden fazla istediğimiz kadar toplam olabiliriz. Hepsinin müteahiyen olur. Zoraytlilin toplamları diyebiliriz. L'Hospital toplamlarının limitidir.
+
+562
+01:33:07,028 --> 01:33:13,907
+2.5x. Aslında ki, c sayısından bahsediyoruz. c sayısı, f'in ab aralar üzerinde belirli integral ortamdan.
+
+563
+01:33:13,907 --> 01:33:17,347
+Ve bu aslında Riemann toplamlarının limitidir.
+
+564
+01:33:17,347 --> 01:33:20,347
+c sayısı.
+
+565
+01:33:20,347 --> 01:33:28,876
+Gerçekten, veriler, her epsilon pozisyon sayısı için,
+
+566
+01:33:37,908 --> 01:33:39,268
+AB kapalı aralarının.
+
+567
+01:33:46,068 --> 01:33:52,068
+İşte, yukarıda tanımladık ya, benim normu küçük değil de. Koşun olsa alaya.
+
+568
+01:34:01,844 --> 01:34:06,844
+Her, burada istediğimiz P'yi alamıyoruz.
+
+569
+01:34:10,244 --> 01:34:13,484
+x sıfır, x bir, x'en.
+
+570
+01:34:15,484 --> 01:34:16,443
+Bölünüşü.
+
+571
+01:34:21,908 --> 01:34:23,568
+ve c k'nın
+
+572
+01:34:30,771 --> 01:34:31,271
+arkadaşlar.
+
+573
+01:34:34,899 --> 01:34:38,299
+x k-1, x k.
+
+574
+01:34:42,355 --> 01:34:43,915
+aralığın her seçim için
+
+575
+01:34:59,220 --> 01:35:02,460
+Bu toplam, kadar Riemann toplamı tanıdık.
+
+576
+01:35:06,163 --> 01:35:11,043
+Bununla c arasındaki farkı sonu toplam kabirlenene kadar.
+
+577
+01:35:13,663 --> 01:35:15,523
+Kimden? y'a küçük kaldık.
+
+578
+01:35:16,884 --> 01:35:17,443
+O şekilde
+
+579
+01:35:25,203 --> 01:35:29,564
+bir gel kapıcılık, sayısı var.
+
+580
+01:35:34,547 --> 01:35:37,608
+Yani tamdaki koşul işte bu. Aşağıya koşula salaya ediyoruz ya.
+
+581
+01:35:38,327 --> 01:35:51,608
+Er-Hel-Epsiol sayısı için ABK aralarının P-Normu küçük delta koşulunu salaya, her P bölünüşü ve CK'nın bu araktaki her seçimi için, her ortamakta, ister sağ uçluğunda, ister sol uçluğunda.
+
+582
+01:35:52,564 --> 01:36:03,363
+Bu toplamla j arasındaki fark, epsilon'ın küçük karşılaştırıcı bir delta sayısı varsa, o zaman ne diyoruz? Bu j sayısına, hep fonksiyonun AB kapalı aralar üzerindeki belirli integral diyoruz.
+
+583
+01:36:03,363 --> 01:36:18,700
+Ve bu aslında gerçekten bu toplamın bedelimizdir. Çünkü epsilon kefis seçildiği için değil mi? Sıfraya, ben düşündüğümüz zaman, işte epsilon sıfraya derken, bu limit değeri en son sakitler dolaşıyla c eşittir. Bu toplamın limitine denk geliyor.
+
+584
+01:36:22,100 --> 01:36:26,739
+yavaş yavaş teorik soru kısımları atlatıyoruz ama bunları tabii vermemiz, tanımlamamız lazım.
+
+585
+01:36:27,380 --> 01:36:32,880
+Vermezsek sonra eksik kalır, teori kalır, ifade biz nerede kaldı, nereye gidiyor falan böyle.
+
+586
+01:36:33,819 --> 01:36:42,000
+Şimdi burada tabii toplam içerisinde aldığımız özellikle K1 denemek kadar F, Ç, K, D, T, X, A toplamı aslında bizim Riemann toplamımızdır.
+
+587
+01:36:42,000 --> 01:36:49,260
+D, T, X, K'ları net seçmek koşuluyla, eşit seçmek koşuluyla,
+
+588
+01:36:49,779 --> 01:36:52,460
+bu Riemann toplamını oluşturabiliriz.
+
+589
+01:36:55,699 --> 01:37:00,840
+daha sembolik artı tanıma yavaş artırıyoruz. Şöyle söyleyeyim.
+
+590
+01:37:03,600 --> 01:37:06,939
+Alt aralıkların hepsi eşitken eşitliği olması durumunda.
+
+591
+01:37:08,239 --> 01:37:14,760
+Yani delta x k'ların hepsi aynı. Delta x k.
+
+592
+01:37:16,340 --> 01:37:19,760
+Bunlar da b eksi a bölü m.
+
+593
+01:37:21,203 --> 01:37:25,903
+Bu durumda ck delta x k alt aralığından seçilmek üzere
+
+594
+01:37:25,903 --> 01:37:35,043
+ck delta x k alt aralığında
+
+595
+01:37:41,427 --> 01:37:42,764
+x kare artı 2x, f'
+
+596
+01:37:49,203 --> 01:37:50,403
+herrugan toplamı,
+
+597
+01:37:59,988 --> 01:38:01,548
+ve mülçte bir şey.
+
+598
+01:38:07,539 --> 01:38:08,479
+şekilde olacaktır.
+
+599
+01:38:15,992 --> 01:38:26,124
+x kare artı 2x, f'
+
+600
+01:38:11,796 --> 01:38:17,416
+f c k çarpı d eta x afik yorumuna, d eta x k da da hepsini söyleyin.
+
+601
+01:38:18,476 --> 01:38:19,156
+Eşittir.
+
+602
+01:38:20,836 --> 01:38:21,976
+f c k
+
+603
+01:38:21,976 --> 01:38:25,916
+b eksi a bölü f
+
+604
+01:38:34,420 --> 01:38:45,420
+Tabi bazen S, E ve alt Riemann toplamı, S, E ve üst Riemann toplamı ya da ortam altı kuralına göre, bir tez bir soru da seçebiliriz.
+
+605
+01:38:45,420 --> 01:38:58,380
+Dolayısıyla burada en sonsuzken Riemann toplamların limiti yukarıda tanıma göre, eğer varsa tabi, B, J'ye eşitse, bu durumda J, F'in AB aralığı üzerindeki belirli integral olarak tanımlayacaktır.
+
+606
+01:39:06,739 --> 01:39:07,459
+O ruh diyor.
+
+607
+01:39:08,959 --> 01:39:10,299
+En sonsuz için
+
+608
+01:39:14,068 --> 01:39:15,427
+bu toplamın limitleri.
+
+609
+01:39:20,724 --> 01:39:21,224
+var.
+
+610
+01:39:22,404 --> 01:39:24,404
+Ve j ise, ona j diyelim işte.
+
+611
+01:39:30,003 --> 01:39:30,963
+yukarıda kanlarında.
+
+612
+01:39:32,283 --> 01:39:33,363
+Bu durumda j'nin
+
+613
+01:39:42,068 --> 01:39:44,788
+j daha doğrusu, f'nin
+
+614
+01:39:48,467 --> 01:39:49,608
+AB üzerindeki
+
+615
+01:39:49,608 --> 01:39:53,587
+belirli integraldır.
+
+616
+01:40:01,332 --> 01:40:24,272
+Yani o zaman j eşittir, limit en sonsuza giderken, k1'den yine kadar f, c, k çarpı delta x, k. Ya da b x, a bölü, n x, x. Herhangi bir şey çekilir. Kıtasen bir delta x, yedim. Bu da delta x, x, x, b x, a bölü.
+
+617
+01:40:29,652 --> 01:40:39,652
+B1 sembolüyle, işte A, B kapalı aralığı üzerindeki f fonksiyonun integralı dediğimizde, bu j ifadesini biz şöyle alacağız.
+
+618
+01:40:40,311 --> 01:40:49,492
+A'dan B'ye efektif sembolü kurarak, çünkü bu limitleri bu şekilde dörtleme, kullanmak ya da işleme yapmak, daha zor.
+
+619
+01:40:50,412 --> 01:40:56,271
+İşte bu aynen belirsiz integral suzoltuğu gibi integral sinirleri A'dan B'den limit dediği.
+
+620
+01:40:56,979 --> 01:41:02,619
+f zaten integral, yani integral alınacak fonksiyon. x de integral değişkeni.
+
+621
+01:41:02,619 --> 01:41:08,619
+Belirli integral, belirsiz integral'da ne yoktu? Sınırlantılı yoktu.
+
+622
+01:41:13,587 --> 01:41:21,587
+F fonksiyon, ABK kapılarları üzerindeki integral dolayısıyla integral var olması koşuyor.
+
+623
+01:41:25,971 --> 01:41:26,971
+Evet.
+
+624
+01:41:27,971 --> 01:41:30,971
+Tabii bu aslında aynı zamanda neye denk gelir?
+
+625
+01:41:30,971 --> 01:41:38,971
+En son rakip meslemek, P'nin normunun 0 rakip meslemek. Yani ağırlıkların maksimum uzunluktan 0 rakip meslemek. Bu aynı anlamda gelir.
+
+626
+01:41:42,899 --> 01:41:46,899
+Bu da bize belirli integral ne yapmışız?
+
+627
+01:41:53,043 --> 01:42:05,863
+Şimdi tabii her fonksiyonun belirli integral var mı, tanınır mıdır? Dediğimiz zaman tabii o iş şey değil, f'in üzerinde konulacak koşullara bağlı.
+
+628
+01:42:05,863 --> 01:42:16,203
+Yani f'in mesela sınırlı, daha doğrusu hatta sürekli olması bu fonksiyonun neyini belirli integral varlığın, yani bölebileceği sayısının varlığını ne yapar? Garanti eder.
+
+629
+01:42:17,203 --> 01:42:18,724
+Onun için teoremi yazalım.
+
+630
+01:42:20,020 --> 01:42:22,319
+sürekli fonksiyonların nitelendirilebilir diye.
+
+631
+01:42:48,051 --> 01:42:53,211
+adresini böyle yazdık. Eğer f fonksiyonu ab aralığı üzerinde sürektiyse,
+
+632
+01:42:56,091 --> 01:42:57,412
+eğer f fonksiyonu,
+
+633
+01:43:01,300 --> 01:43:03,180
+AB kapalı, aralı üzerinde.
+
+634
+01:43:14,260 --> 01:43:19,900
+süreklisi veya efim bu arada bir sonu sayıda sıramanın süreklisi var. O da olabilir.
+
+635
+01:43:19,900 --> 01:43:21,940
+Veya
+
+636
+01:43:21,940 --> 01:43:25,020
+efim bu arada
+
+637
+01:43:30,804 --> 01:43:34,404
+fonksiyonlar, sistem alır.
+
+638
+01:43:46,963 --> 01:43:47,644
+Bu durumda
+
+639
+01:43:53,587 --> 01:44:00,407
+a'dan b'ye fx dx belirli integral mevcuttur.
+
+640
+01:44:12,115 --> 01:44:14,695
+ve FAB arasında integral memcidiyiz.
+
+641
+01:44:18,836 --> 01:44:23,836
+AB arama üzerine AB ilg için integral.
+
+642
+01:44:51,028 --> 01:45:07,668
+Tabi integral birlik olması kavramı aslında yukarıda tanımadığımız tarımdaki koşul sağlandığında EF'in AB aralığı üzerinde bir limon toplamlarının, J, H, C, A'dan B, F, D, X, Belin integral ile yakın sağladığını görüyoruz.
+
+643
+01:45:08,308 --> 01:45:11,587
+Dolayısıyla EF'in AB aralığı üzerinde integral birlik olduğunu düşünüyoruz.
+
+644
+01:45:12,404 --> 01:45:34,624
+yukarıdaki tarım sağlaması zaten bu. Eğer integral varsa bu zaten j bu integralı belirli bir sayıya ne yapar? Yakın sağ. O da bizi f'in integral bir olduğunu söylersin. Rizel not diyeyim bu şunluya. Çünkü integral bir şey söylemedik. Tarımdaki koşul.
+
+645
+01:45:39,859 --> 01:45:41,579
+x kare artı 2x, f'
+
+646
+01:45:47,539 --> 01:45:51,539
+x kare artı 2x, f'nin, ab üzerindeki
+
+647
+01:45:58,131 --> 01:46:00,107
+lima toplamlarını
+
+648
+01:46:10,851 --> 01:46:17,003
+x kare artı 2x, f'
+
+649
+01:46:08,659 --> 01:46:09,779
+j eşittir,
+
+650
+01:46:11,159 --> 01:46:13,219
+a'dan b'ye, fx, tx,
+
+651
+01:46:15,299 --> 01:46:16,579
+beliri integraline,
+
+652
+01:46:24,500 --> 01:46:26,639
+yakınsak, yakınsak olduğunu
+
+653
+01:46:34,355 --> 01:46:35,376
+ve senin
+
+654
+01:46:40,212 --> 01:46:42,852
+bu araç üzerinde integral bir olduğunu söyleriz.
+
+655
+01:47:05,908 --> 01:47:08,620
+ve süreklik, türev uygulamaları, belirsiz ve süreklik,
+
+656
+01:47:11,891 --> 01:47:13,011
+Bu yada diyebiliriz.
+
+657
+01:47:14,011 --> 01:47:15,511
+Söylemede kaçınmış olabiliriz.
+
+658
+01:47:16,072 --> 01:47:16,591
+Bu da bizim
+
+659
+01:47:16,591 --> 01:47:19,811
+teoremin ifadesinin anlamı olmaz.
+
+660
+01:47:20,931 --> 01:47:22,471
+Söylememiz gereken bir
+
+661
+01:47:22,471 --> 01:47:22,891
+durum.
+
+662
+01:47:24,171 --> 01:47:26,051
+Peki, burada
+
+663
+01:47:26,051 --> 01:47:28,131
+kalıyoruz arkadaşlar.
+
+664
+01:47:32,467 --> 01:47:40,868
+Güzel bir noktası, konuştuk, 13 sayfa olmuş. Bundan sonra artık işimiz daha da kolay ve belirgin integral özellikleriyle mesaj etkileyecek daha önemli.
+
+665
+01:47:40,868 --> 01:47:49,967
+Yan vereceğiz. Peki, sorumuz var arkadaşlar. Sorumuz varsa soralım. Sorumuz yoksa haftaya.
+
+666
+01:47:54,420 --> 01:47:55,619
+Görüşmek üzere diyeceğim.
+
+667
+01:47:55,979 --> 01:47:56,319
+Tamam mı?
+
+668
+01:47:59,828 --> 01:48:26,828
+Kendinize iyi bakın. Her zaman söylediğim gibi mutlaka günü gününe çalışmayı unutmayın. İman ettiği zaman dersten düşersiniz. Sınavlar tabii göz açık kapanıncaya kadar sınavlar da geliyor çok yakın. Sınavlar da başlamanın koşuru, işte derse gayretmek ve günü gününe çalışmak. Zaten evdesiniz, çok çıkma şansımızda falan yok. O yüzden en iyi vaktinizi değerlendirmedin. Şansı nedir? Derslerinizi...
+
+669
+01:48:27,072 --> 01:48:29,072
+Çok iyi bir şekilde çalışmak hazırlandı.
+
+670
+01:48:29,072 --> 01:48:31,072
+Peki, kendinize iyi bakın, hoşçakalın.
