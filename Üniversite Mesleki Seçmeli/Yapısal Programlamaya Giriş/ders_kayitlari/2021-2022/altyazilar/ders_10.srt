@@ -1,0 +1,2035 @@
+1
+00:00:12,596 --> 00:00:14,596
+Merhaba, sizler, sizler, giriyor mu?
+
+2
+00:00:21,076 --> 00:00:23,076
+Çocuklar, çıçın ziliyor.
+
+3
+00:00:23,076 --> 00:00:25,076
+Tamam, çıçı çıç.
+
+4
+00:00:46,484 --> 00:00:48,236
+Fiziklerim gözüküyor mu?
+
+5
+00:00:56,628 --> 00:00:58,628
+Gözüküyor hocam.
+
+6
+00:00:58,628 --> 00:00:59,403
+Tamam.
+
+7
+00:01:28,052 --> 00:01:35,052
+Bir saniye, şu kalemle ilgili bir sıkıntı var da, halletmeye çalışıyorum iki dakika.
+
+8
+00:02:05,620 --> 00:02:07,620
+Tamam herhalde değil mi?
+
+9
+00:02:07,620 --> 00:02:12,620
+Peki, 13 kişi olmuşuz. Peki, yavaş yavaş başlayabiliriz.
+
+10
+00:02:12,620 --> 00:02:16,620
+Duyuru geldi mi size arkadaşlar dersin onda başlayacağına dair?
+
+11
+00:02:27,828 --> 00:02:52,828
+Peki. Şimdi arkadaşlar, geçen hafta hatırlıyorsunuz, bizim bu Recursion Triller'den bahsetmiştik. İşte bir, temelde bir t n'imiz vardı. Bu t n eşittir mesela şey oluyordu işte, bir artı t n bölü iki oluyordu mesela.
+
+12
+00:02:54,163 --> 00:03:07,443
+Bunları çözümlüyorduk. Yani buradaki T'nin, T'yi içermeyen bir hale getiriyorduk bunu daha doğrusu. Bunu yaparken de adım adım açıyorduk hatırlarsanız bunu.
+
+13
+00:03:11,536 --> 00:03:22,036
+Yine benzer bir şeyle başlayalım. Bugün biraz bunlara odaklanacağız. Farklı farklı t n'ler için sonuçlar bulmaya çalışacağız.
+
+14
+00:03:22,036 --> 00:03:34,235
+İlk t n'imiz şöyle bir şey olsun mesela, t n eşittir. İki tane t n bölü 4 olsun artı n olsun. Tamam?
+
+15
+00:03:34,235 --> 00:03:37,515
+Şeyimiz bu. Sonucumuz bu.
+
+16
+00:03:38,388 --> 00:03:47,987
+Bunu çözünlemeye çalışacağız. Yani ilk adımını ben yapayım. Şöyle bir şey aslında olacak değil mi? Tn dediğimiz şey.
+
+17
+00:03:47,987 --> 00:03:55,188
+Şimdi bir n var, bir de bundan çıkan iki tane de tn bölü 4 var.
+
+18
+00:03:55,188 --> 00:04:05,187
+Tn bölü 4 var. Tamam. İlk adım bu. İkinci adım peki nasıl olacak? Onu da çizelim.
+
+19
+00:04:05,395 --> 00:04:15,395
+Burası n olarak kaldı. Şimdi burası tn bölü 4'ü açmaya kalktığımızda, tn bölü 4 bir kere kendi içindeki n ifade edecek ki bu anda şu anda n bölü 4 o.
+
+20
+00:04:15,395 --> 00:04:27,395
+n bölü 4 var, şurada n bölü 4 var. Sonra buraların içerisinden de her birin içerisinden de t, bunun ne kadar da biri çıkacak? 4'te biri çıkacak. Yani tn bölü 16.
+
+21
+00:04:27,395 --> 00:04:29,355
+tn bölü 16.
+
+22
+00:04:29,363 --> 00:04:35,683
+Şunlardan da yine tn bölü 16, şunlardan da yine tn bölü 16 çıkacak değil mi?
+
+23
+00:04:37,683 --> 00:04:40,803
+Bunu bir adım daha götürürseniz, bir adım daha götürürseniz vs. vs.
+
+24
+00:04:43,683 --> 00:04:44,884
+Şimdi...
+
+25
+00:04:46,291 --> 00:04:52,291
+Evet, bunu bir çözümle ve siz kendiniz bir kalkışın bakalım neler bulacaksınız.
+
+26
+00:04:52,812 --> 00:05:05,451
+Sonuçta amacımız şu, bu böyle böyle devam ettiğinde en sonunda bunlar, en temelde aşağıdaki şu yapraklar, en sonundaki yapraklar, bire kadar düşecekler belli bir zaman sonra.
+
+27
+00:05:07,124 --> 00:05:17,124
+Azalacaklar, azalacaklar, azalacaklar, en son 1'e kadar düşecekler. Ve en sonunda bir ağacımız oluşacak. Ve bu ağacın içerisindeki toplam eleman sayısını bulmak gibisinden bir derdimiz var bizim. Tamam mı?
+
+28
+00:05:17,124 --> 00:05:27,124
+Bu eleman sayısı bizim T'nin T'nin karşılığı olacak. Tamam mı? Yani elimizde bir recursive argöltme var.
+
+29
+00:05:34,355 --> 00:05:38,675
+t recursive bir yapıda verilmiş gördüğünüz gibi, yani fonksiyon kendisini çağırıyor çünkü.
+
+30
+00:05:39,635 --> 00:05:44,675
+Ve bu algoritmanın karmaşıklığını bulmaya çalışacağız.
+
+31
+00:05:44,675 --> 00:05:45,675
+Tamam mı?
+
+32
+00:05:47,275 --> 00:05:51,235
+Peki evet, biraz bekleyelim sizi, biraz çözün bakalım.
+
+33
+00:05:51,956 --> 00:05:58,675
+Böyle bir şey devam ettirirsek, en sonunda bir ağacımız olacak. Bu ağacın içerisinde kaç tane eleman var?
+
+34
+00:06:01,684 --> 00:06:05,004
+Kaç tane işlem var eleman demeyelim de, kaç tane işlem var?
+
+35
+00:06:05,903 --> 00:06:09,884
+Burakiler her biri birbiri işlemi ifade ediyor, işlem sayısını ifade ediyorlar.
+
+36
+00:06:34,932 --> 00:06:36,747
+Evet, översiniz.
+
+37
+00:06:41,747 --> 00:06:46,747
+Mümküncük, şehir aslında bir alde almak lazım, bu çözümlemeyi yaparken.
+
+38
+00:06:46,747 --> 00:06:59,747
+Tamam mı? Şimdi birinci seviye bu. Burada kaç tane işlem var? Bir tane, bir adet n var değil mi? Ve bu da bir çarpma olayıştır n. Peki ikinci seviyeyi düşünelim.
+
+39
+00:06:59,747 --> 00:07:06,747
+İkinci seviyede nasıl bir şey var? İki tane n bölü dört var değil mi?
+
+40
+00:07:08,596 --> 00:07:19,596
+Ve bu da ne olacak toplama? n bölü 2 olacak. Peki üçüncü seviyede bunları açarsak, n bölü 16'lar olacak değil mi burada? Bunların içerisinde.
+
+41
+00:07:19,596 --> 00:07:32,596
+n bölü, içindeki n bölü 16 buraya gelecek. n bölü 16 yani 4 tane n bölü 16 göreceğiz. O da bize n bölü 4'ü verecek.
+
+42
+00:07:36,339 --> 00:07:42,899
+Bu durumda 8 tane, değil mi? N bölü 32 göreceğiz. N bölü 64 göreceğiz, yalnız söyledim.
+
+43
+00:07:48,052 --> 00:08:14,012
+8 tane n bölü 64 göreceğiz. O da n bölü 8 olsun. Dolayısıyla bu böyle gidiyor değil mi? Gözüken şey şu, her bir satır bir öncekinin yarısı kadar eman. Yani işlem içeriyor değil mi? n, n bölü 2, n bölü 4, n bölü 8. Yani şöyle düşünürsek bunu. n dediğimiz şey şöyle bir şey. n artı n bölü 2 artı n bölü 4 artı n bölü 8 artı böyle gidiyor değil mi?
+
+44
+00:08:19,156 --> 00:08:30,356
+Peki, burada kaç tane aleman var? Yani şu ağacımızı en sonuna kadar büyütürsek, haşımız, ağacın yükseklikliği ne olur arkadaşlar? Onu siz söyleyin.
+
+45
+00:08:37,203 --> 00:08:40,403
+Logaritma dört tabanda n mi hocam? Ya da iki tabanında?
+
+46
+00:08:41,403 --> 00:08:45,203
+Şimdi iki tabanda ya da dört tabanda, niye iki tabanda ya da dört tabanda dedi?
+
+47
+00:08:45,603 --> 00:08:47,803
+Dörtte kafam karıştı da iki olması lazım.
+
+48
+00:08:48,803 --> 00:08:55,603
+Niye? Şimdi burada her seferinde kaça bölünüyor n değeri?
+
+49
+00:08:56,403 --> 00:08:59,203
+Dörde bölünüyor hocam, bence logaritma dört tabanda.
+
+50
+00:08:59,603 --> 00:09:02,803
+Aynen öyle, aynen öyle. Logaritma.
+
+51
+00:09:03,956 --> 00:09:27,676
+Mesela logaritma dört tabanda en adım sonunda, çünkü her seferinde siz burada mesela şu adımdan şu adıma inerken dörtte birine yeniyorsunuz. Burada dörtte birine, dörtte birine her seferinde dörde bölünerek giriyor değil mi? Her seferinde dörde bölünüyorsa en sonunda ne zaman bire erişecek bu? Logaritma dört tabanda en adım sonra bu bire erişecek. Tamam mı? Dolayısıyla haşımız da belli.
+
+52
+00:09:34,163 --> 00:09:39,163
+O zaman biz bunu artık birazcık daha şöyle yazabilir miyiz acaba?
+
+53
+00:09:39,163 --> 00:09:43,163
+Mesela bunu... Bu eşittir ne olacak? Pardon.
+
+54
+00:09:50,932 --> 00:09:52,932
+Hocam, bir şey sorabilir miyim?
+
+55
+00:09:52,932 --> 00:09:53,932
+Evet.
+
+56
+00:09:53,932 --> 00:09:57,932
+Her seferinde ikiye bölünmüyor mu? n bölü ikiye, n bölü dörtye?
+
+57
+00:09:57,932 --> 00:10:07,932
+Hayır, o toplamları bölünüyor. Şimdi adımları düşün yani bak, ilk önce buradaki şu n'den bir sonraki adımda, yani bir sonraki adımda n bölü dörde iniyor değil mi burası?
+
+58
+00:10:07,932 --> 00:10:17,803
+Dörtte birine iniyor, sonra on altıda birine iniyor, sonra altmış dörtte birine iniyor. Yani buradaki değerin biz bir olup olmadığını görmek istiyoruz.
+
+59
+00:10:23,827 --> 00:10:24,747
+Evet.
+
+60
+00:10:38,035 --> 00:10:41,836
+İdek, kala, kala, ştash, ekran neygev, skontu arda.
+
+61
+00:10:56,788 --> 00:10:58,788
+Peki tamam, bunun devamını getirme bakalım.
+
+62
+00:11:01,788 --> 00:11:03,788
+Şimdi burada ne yapmamız lazım?
+
+63
+00:11:03,788 --> 00:11:11,788
+n artı n bölü 2 artı n bölü 4 böyle gidiyor bunlar. Bunların da sayısı kaça kadar gidiyorlar bu?
+
+64
+00:11:11,788 --> 00:11:17,788
+H, n bölü 2 tabanında, pardon 4 tabanında n adete kadar ilerliyorlar.
+
+65
+00:11:17,788 --> 00:11:22,788
+Bu kadar tane eleman olacak burada. Bunların hepsinin toplama kaç olur?
+
+66
+00:11:22,788 --> 00:11:24,524
+Hadi bakalım, top sizde.
+
+67
+00:11:39,508 --> 00:11:43,008
+Geometrik seri hocam, iki an olmaz mı?
+
+68
+00:11:46,964 --> 00:11:52,284
+Onu tanımlayıp çözmek yerine adım adım geçen hafta çözdüğümüz yöntemlerle çözün.
+
+69
+00:11:52,284 --> 00:11:56,564
+Yani çünkü ezberleniş birazcık zor olabilir.
+
+70
+00:11:58,564 --> 00:12:01,124
+Geçen hafta buna çok benzeyen şeyler yaptık.
+
+71
+00:12:18,868 --> 00:12:31,107
+Yani elimize şu var, t n eşittir, n artı n bölü 2 artı n bölü 4 artı n bölü 8 artı böyle gidiyor. Kaç tane var?
+
+72
+00:12:58,868 --> 00:13:01,048
+Siz çözün, ben şu sorunu çözmeye çalışıyorum.
+
+73
+00:15:40,532 --> 00:15:42,532
+Sesim geliyor mu arkadaşlar?
+
+74
+00:15:42,532 --> 00:15:44,524
+Geliyor hocam.
+
+75
+00:16:00,403 --> 00:16:01,163
+Bu da.
+
+76
+00:16:08,083 --> 00:16:20,083
+Şimdi şöyle bir şey almıştık. T n eşittir. n artı n bölü 2 artı n bölü 4 artı böyle gidiyordu.
+
+77
+00:16:20,083 --> 00:16:24,011
+Bunun da sayısı h eşittir. Logaritma dört tabanda n.
+
+78
+00:16:24,340 --> 00:16:34,340
+Şimdi bunu eşittir şöyle yazalım. n parantezini alırsak 1 artı 1 bölü 2 artı 1 bölü 4 artı 1 bölü 8 diye böyle onun gittiğini görebilirsiniz.
+
+79
+00:16:34,340 --> 00:16:46,340
+Dolayısıyla bunu şöyle yazabiliriz. n çarpı toplam sembolü i eşittir sıfırdan başlatabiliriz mesela. Logaritma 4 tabanında n'e kadar gidecek bu.
+
+80
+00:16:46,340 --> 00:16:50,988
+Burasını 1 bölü 2 üzeri i şeklinde yazabiliriz değil mi?
+
+81
+00:16:55,668 --> 00:16:57,668
+Ezebiliriz hocam.
+
+82
+00:16:57,668 --> 00:17:04,668
+Değil mi? Dolayısıyla, şurasını düşünürsek, burası ne olacaktır?
+
+83
+00:17:04,668 --> 00:17:17,668
+1 bölü 2 üzeri geçen hafta gördüklerimizden hatırlarsak, şu üstündeki artı 1'di, aşağıda bölüsü vardı zaten. Logaritman, 4 tamamen n, şurası, artı 1.
+
+84
+00:17:18,451 --> 00:17:25,451
+Sonra şurası eksi bir vardı burada bir tane. Bir de aşağısı da bir bölü iki eksi bir olacak. Tamam.
+
+85
+00:17:25,451 --> 00:17:35,451
+Dolayısıyla bunu aşağısında yukarısında eksi ile çarparsak şöyle bir şey deriz. Bir eksi. Bu sefer.
+
+86
+00:17:35,451 --> 00:17:45,291
+Bir bölü iki üzeri logaritma dört tavanda n artı bir. Tabii şurasında. Bölü.
+
+87
+00:17:45,299 --> 00:17:48,619
+1-1-2'den burası da 1-2 kalacak değil mi?
+
+88
+00:17:54,099 --> 00:18:04,299
+Burası da 1-2 yukarıya 2 olarak gelecek. O zaman şu n'e değişikliğine katarsak, 2n, değil mi? Şunlarda n de vardı aslında.
+
+89
+00:18:12,660 --> 00:18:18,660
+1 bölü 2 üzeri logaritmada 4 tabanda n artı 1 olacak.
+
+90
+00:18:22,163 --> 00:18:48,163
+Bunu açarsak, 2n eşittir, 1 eksi, bu sefer 1 bölü 2 üzeri, 2 üzeri yazarsak, yukarısı 2, yani 2 üzeri eksi logaritman 4 tamamında n eksi 1 olacak. Bunu kapatırsak. Bunu devam ettirirsek, çok kabaca, birazcık daha devam ettirirsek.
+
+91
+00:18:48,723 --> 00:18:59,723
+Herhalde şöyle bir şeye denk düşüyor en sonunda. Şöyle nokta nokta olarak diyelim. 2n-kök n gibisinden bir şeye denk geliyor.
+
+92
+00:18:59,723 --> 00:19:15,723
+Tamam. 2n-kök n de çok kabaca yine n'in üstü en büyük olanın cinsinden ifade edileceği için en temelinde yine o n'lik bir karmaşıklığa sahip olacak. Yani n kare gibisinden bir şey değil.
+
+93
+00:19:15,892 --> 00:19:26,291
+Yani bizim başlangıçta yazdığımız şey neydi? T, n eşittir. İki tane T, n bölü 4, artı, int. Böyle bir şeydi gördüğünüz gibi.
+
+94
+00:19:26,291 --> 00:19:33,492
+Burada karmaşıklı bunun o n civarında, o n seviyesinde olduğunu bulmuş olduk. Tamam.
+
+95
+00:19:33,492 --> 00:19:41,892
+Şimdi biraz daha değiştirelim, başka bir soru verelim.
+
+96
+00:19:42,740 --> 00:19:56,740
+Yeni bir beyaz tahta açalım. Şimdiki sorumuz ise şöyle olsun. T n eşittir. 8 tane t n bölü 2 artı n olsun.
+
+97
+00:19:56,740 --> 00:20:09,740
+n Tamam. 8 tane t n bölü 2 artı n. Bunların ki orucun türesini çizerek analizini yapmaya çalışacağız şimdi.
+
+98
+00:20:10,804 --> 00:20:27,204
+Şimdi burada ilk adımı yazarsak, ilk adımda n var bir tane değil mi? Sonra altından çıkan böyle tn bölü 2 var. Böyle 8 tane bunlar tabii, tn bölü 2 oluyorlar.
+
+99
+00:20:27,204 --> 00:20:38,188
+Bir sonraki adımını yazmaya kalkarsak, şurası n, sonra şurada böyle 8 tane var. Bunların her biri n bölü 2 haline geliyor, n bölü 2 olduğu için.
+
+100
+00:20:38,228 --> 00:20:56,228
+Sonra bunların her birinin altından çıkan böyle 8 tane t n bölü 4 var. Pardon, t n bölü 4 var. Şuradan çıkan t n bölü 4 var. Şuradan çıkan t n bölü 4 var. Tabi şunlar yine 8'er tane.
+
+101
+00:20:56,228 --> 00:21:04,748
+Şimdi bunun böyle devam ettiğini düşünelim. Şimdi birinci adıma bakarsak, burada bir tane n var ki bu n olacak. Şimdi buraya bakarsak
+
+102
+00:21:05,044 --> 00:21:17,044
+8 tane n bölü 2 var değil mi? 8 tane n bölü 2 var. Şuraya bakarsak ne göreceğiz? 64 tane n bölü 4 göreceğiz değil mi?
+
+103
+00:21:20,044 --> 00:21:22,044
+Onun bir altında ne göreceğiz onu siz söyleyin.
+
+104
+00:21:29,652 --> 00:21:30,652
+512
+
+105
+00:21:30,652 --> 00:21:33,652
+512 tane
+
+106
+00:21:36,884 --> 00:21:46,183
+Ne göreceğiz? n bölü 8. n bölü 8'i göreceğiz. Tamam, çok güzel. O zaman bizim şu tn dediğimiz şey şöyle bir şeye karşılık geliyor.
+
+107
+00:21:46,183 --> 00:21:59,384
+En başta n artı, sonra 8 tane n bölü 2, n bölü 4 artı. 64 tane n bölü 4, n bölü 16. Sonra 512 tane n bölü 8, n bölü 64 şeklinde gidiyor değil mi?
+
+108
+00:21:59,384 --> 00:22:02,884
+Peki burada kaç tane eleman var? Haşımız ne yani?
+
+109
+00:22:04,660 --> 00:22:06,660
+Her seferinde n kaça bölünüyor?
+
+110
+00:22:06,660 --> 00:22:08,660
+İkiye bölüne bölüne gidiyor değil mi?
+
+111
+00:22:08,660 --> 00:22:10,660
+Logaritma iki tabanda n.
+
+112
+00:22:10,660 --> 00:22:15,660
+Aynen öyle. Logaritma iki tabanda n.
+
+113
+00:22:15,660 --> 00:22:16,660
+O zaman...
+
+114
+00:22:29,844 --> 00:22:39,844
+Burada, şunları sizce doğru mu yazdık? Şunlar doğru da bunları buraya geçirirken sanki doğru yapmadık değil mi? Görüyor musunuz?
+
+115
+00:22:39,844 --> 00:22:47,844
+Sekiz tane n bölüken şimdi birincisi n tamam, orası doğru. Sekiz tane n bölü iki, n bölü dört mü eder? Etmez değil mi?
+
+116
+00:22:47,844 --> 00:22:55,844
+Dört tane eder hocam. Dört tane eder. O zaman şöyle düzgünlüğü aşağı doğrusunu aşağıya yazalım. n artı, dört n artı.
+
+117
+00:22:56,531 --> 00:23:05,531
+16n artı 64n artı şeklinde gidiyor değil mi? O zaman ben bunu şöyle yazabilirim gibi gözüküyor.
+
+118
+00:23:05,531 --> 00:23:09,531
+Şimdi n parantezini alırsam ben bunu 1 artı 4 artı 64 şeklinde gidiyor.
+
+119
+00:23:09,531 --> 00:23:17,531
+O zaman ben bunu şöyle n parantezini aldığım için o parantezi şimdilik yazmama gerek yok.
+
+120
+00:23:17,531 --> 00:23:24,463
+Şuraya i eşittir 0'dan logaritma iki tabanında n'e kadar.
+
+121
+00:23:24,463 --> 00:23:26,463
+Ne yazacağım buraya şimdi?
+
+122
+00:23:26,463 --> 00:23:29,463
+Dördünün iyinci kuvveti.
+
+123
+00:23:29,463 --> 00:23:31,463
+Dördünün iyinci kuvveti değil mi?
+
+124
+00:23:35,796 --> 00:23:39,195
+Tamam mı? Devam edelim.
+
+125
+00:23:41,836 --> 00:23:50,195
+T n eşittir, n çarpı, i eşittir, 0'dan logaritma 2 tabanında n'e kadar 4'ün inci kuvveti.
+
+126
+00:23:50,195 --> 00:23:53,195
+Şimdi bu neye eşit olacak?
+
+127
+00:23:53,195 --> 00:23:55,195
+n çarpı,
+
+128
+00:23:57,596 --> 00:24:02,796
+4 üzeri logaritma 2 tabanında n artı 1.
+
+129
+00:24:03,347 --> 00:24:05,163
+eksi bir bölü
+
+130
+00:24:16,211 --> 00:24:19,531
+Çarpı aşağısı da 1 eksi, 4 eksi 1 olacak.
+
+131
+00:24:23,604 --> 00:24:38,604
+O zaman n bölü 3, 4 üzeri de görtüme kitabında n, burası çarpı 4'ü de var bunun, eksi 1'i de var.
+
+132
+00:24:41,604 --> 00:24:45,604
+4 çarpı, şu şekilde yazabiliriz mi?
+
+133
+00:24:51,028 --> 00:24:55,508
+Şimdi şu ikisi yer değiştirebilirler biliyorsunuz.
+
+134
+00:24:57,268 --> 00:25:10,228
+Dolayısıyla şurası n bölü 3 parantezinde 4 çarpı n üzeri logaritmaki tabanında 4 eksi 1 haline gelecek.
+
+135
+00:25:10,907 --> 00:25:17,428
+Bu da n bölü 3 çarpı 4 çarpı n kare.
+
+136
+00:25:17,971 --> 00:25:20,791
+eksi bir anlamına gelecek.
+
+137
+00:25:21,551 --> 00:25:23,351
+Bu da
+
+138
+00:25:26,516 --> 00:25:28,516
+Ne olacaktır?
+
+139
+00:25:31,516 --> 00:25:47,516
+4N3 bölü 3, eksi N bölü 3 olacaktır. Bu da Big Ball notasyonuna göre en yüksek dereceli şey neyse, N3 olarak bunu ifade edebileceğiz.
+
+140
+00:25:50,932 --> 00:25:55,331
+Dolayısıyla bizim en baştaki ifademiz tn eşittir.
+
+141
+00:25:56,932 --> 00:26:10,331
+8 tane tn bölü 2 artı n'di. Bunun karmaşıklığının n küp olduğunu bulabildik. Adım adım çözerek.
+
+142
+00:26:15,188 --> 00:26:41,188
+Şimdi bir diğer sorumuz olsun. Deminkinden küçük bir farklılık yapacağım. T n eşittir. Sekiz tane yine t n bölü iki ama bu sefer artı n değil de artı n kare olsun bakalım bu sefer mesela ne olur? n kare olsun.
+
+143
+00:26:44,915 --> 00:26:52,915
+Deminkinden örnek olarak bunu siz çözün bakalım. Bir 5 dakika verelim size. 28 geçiyor, 10-33'e kadar süreniz var.
+
+144
+00:26:53,915 --> 00:26:57,915
+Hocam, bu yine aynı cevabı vermez mi? Çünkü en küplü buluyoruz ya.
+
+145
+00:26:57,915 --> 00:27:05,915
+Bilmiyorum işte, aynı cevabım verecek bir. Bakın bakalım aynı cevabım veriyor, aynısını çıkıyor. Görelim bakalım. Tamam mı?
+
+146
+00:27:05,915 --> 00:27:09,915
+Tamam. Bir analiz edip çözün yani, tamam mı? Ben bekliyorum.
+
+147
+00:32:57,299 --> 00:32:59,299
+Evet arkadaşlar, ne buldunuz?
+
+148
+00:33:00,659 --> 00:33:02,960
+Hocam, o en uzunluğu en üzeri altı mı?
+
+149
+00:33:05,919 --> 00:33:08,259
+Bir daha söyle, anlayamadım.
+
+150
+00:33:08,740 --> 00:33:12,419
+En üzeri altı mı? O en uzunluğu, o uzunluk dediğimiz.
+
+151
+00:33:13,519 --> 00:33:14,579
+Uzunluk dediğimiz?
+
+152
+00:33:14,579 --> 00:33:19,299
+O parantez içinde yazıyorduk ya bir şey.
+
+153
+00:33:19,319 --> 00:33:21,319
+O parantezine aldığımız şey, ne buldun?
+
+154
+00:33:21,319 --> 00:33:22,659
+En üzeri altı.
+
+155
+00:33:23,443 --> 00:33:27,523
+En üzere 6 buldun yani, o n6 diye buldun.
+
+156
+00:33:27,523 --> 00:33:30,644
+Tamam, bakalım. Başka?
+
+157
+00:33:30,644 --> 00:33:33,283
+n3
+
+158
+00:33:33,283 --> 00:33:36,163
+o n3 olan var. Başka?
+
+159
+00:33:40,435 --> 00:33:42,435
+Kaç kişi o en üzeri 6 buldu?
+
+160
+00:33:44,435 --> 00:33:46,435
+Ben de en üzeri 6 olduğunu düşünüyorum hocam.
+
+161
+00:33:48,435 --> 00:33:51,435
+2 kişi. Peki, en küp bulan kaç kişi var?
+
+162
+00:33:52,435 --> 00:33:55,435
+Ben de en küp buldum.
+
+163
+00:33:56,435 --> 00:33:58,435
+2. Başka?
+
+164
+00:33:58,435 --> 00:33:59,435
+Ben de en küp buldum.
+
+165
+00:34:00,435 --> 00:34:02,435
+3. En küp öne geçti.
+
+166
+00:34:03,435 --> 00:34:04,435
+Evet, başka?
+
+167
+00:34:09,364 --> 00:34:20,963
+Peki, tamam şimdi yapalım. Bakalım nasıl bir şey çıkacak. Görelim. Şimdi tn'imiz var değil mi? tn'imiz var. Bunu açacağız.
+
+168
+00:34:20,963 --> 00:34:32,564
+Şimdi n kare buradaki farklılık bu. Zaten deminkinden farkı oydu. Şimdi buralarda ne olacak? tn bölü 2'ler olacak. Bunlar 8 taneler. Tamam.
+
+169
+00:34:32,596 --> 00:34:48,836
+Sonra bunu bir adım daha ileriye götürürsek, şurası yine n kare duruyor. Şimdi buralar ikiye bölecekler. Dolayısıyla n bölü ikinin karesi ve bunların altında da tn bölü dörtleri göreceğiz.
+
+170
+00:34:48,836 --> 00:34:53,836
+Şöyle tn bölü dört, buradan da yine tn bölü dörtler çıkıyor.
+
+171
+00:34:56,724 --> 00:35:23,904
+Şimdi bunu düşünürsek, burada bir tane n kare var ki bu n kare zaten. Buraya bakarsak 8 tane n bölü 2'nin karesi var. Yani n kare var, 8 tane n bölü 2'nin karesi var. Onun altında 64 tane n bölü 4'ün karesi olacak. Onun altında 512 tane n bölü 8'in.
+
+172
+00:35:24,500 --> 00:35:32,500
+O zaman bizim tn'imiz şöyle bir şey olacak.
+
+173
+00:35:32,500 --> 00:35:34,500
+4n² oluyor.
+
+174
+00:35:34,500 --> 00:35:41,500
+Yani şurası n² artı 4n² artı, pardon 4n² mı oluyor? Yok.
+
+175
+00:35:41,500 --> 00:35:44,500
+n² bölü 4, 2n² oluyor pardon.
+
+176
+00:35:48,596 --> 00:35:58,596
+2n², onun bir altında n² bölü 16, o zaman 4n² olacak. 4n² artı şeklinde gidiyor.
+
+177
+00:35:58,596 --> 00:36:07,596
+O zaman tn'imizi biz nasıl yazabiliriz? n² parantezinde 1 artı 2 artı 4 artı şeklinde gidiyor.
+
+178
+00:36:14,099 --> 00:36:32,099
+tn'imiz n kare parantezinde i eşittir sıfırdan kaça kadar gidecek bu? Her seferinde kaça bölünüyor? Yarıya bölünüyor. O zaman logaritma iki tabanda n'e kadar gidecek ve 2 üzeri i diyeceğiz değil mi?
+
+179
+00:36:35,795 --> 00:36:37,795
+Buraya kadar beraber miyiz?
+
+180
+00:36:37,795 --> 00:36:38,795
+Var mı sıkıntı?
+
+181
+00:36:48,916 --> 00:36:50,916
+Yok hocam, programım.
+
+182
+00:36:50,916 --> 00:37:08,916
+Tamam. Peki, o zaman şunu açmaya kalkarsak, n kare var. Şimdi 2 üzeri, burası, logaritma, iki tabanında n artı 1, eksi 1 bölü, 2 eksi 1'den zaten 1 olacak orası.
+
+183
+00:37:08,916 --> 00:37:11,884
+Orası da devam ettirirsek yine.
+
+184
+00:37:15,923 --> 00:37:26,923
+Devam ettirirsek, n kare parantezinde 2 çarpı 2 üzeri logaritma iki tabanında n eksi 1 var.
+
+185
+00:37:26,923 --> 00:37:36,923
+Şöyle, bunu devam ettirirsek n kare, burası 2 üzeri logaritma iki tabanında n zaten n, dolayısıyla orası 2n eksi 1 olacak.
+
+186
+00:37:36,923 --> 00:37:42,476
+Dolayısıyla n kare çarpı 2n eksi 1, dolayısıyla bu da demin gördüğümüz o.
+
+187
+00:37:43,188 --> 00:37:47,188
+n küp karmaşıklara sahip olacak. Tamam.
+
+188
+00:37:48,688 --> 00:37:52,188
+En üzere 6 bulanlar nerede hata yaptıklarını gördüler mi?
+
+189
+00:37:52,188 --> 00:38:03,188
+Hocam, ben gördüm. Ben nerede hata yaptığımı da, şeye soracaktım, hani logaritme 2 tabında n'e kadar götürdük ya, ben onu logaritme 2 tabında n'e kadar götürmüştüm serinin şeyine.
+
+190
+00:38:04,211 --> 00:38:13,711
+n kareye kadar götürmeyeceğiz. Neden? Şimdi bak şöyle bir şey düşünün. Şimdi bir seviyedeyken, n'deyken, onun bir altındaki seviyede ne oluyor? n bölü 2 oluyor değil mi?
+
+191
+00:38:15,711 --> 00:38:16,511
+Rikör hocam.
+
+192
+00:38:16,511 --> 00:38:19,112
+Tamam hocam, anladım. Anladım nerede yanlış yaptı bu?
+
+193
+00:38:19,112 --> 00:38:19,811
+Tamam.
+
+194
+00:38:19,811 --> 00:38:22,011
+Tamamdır.
+
+195
+00:38:22,011 --> 00:38:22,811
+Peki.
+
+196
+00:38:23,811 --> 00:38:25,811
+Şimdi başka bir şey yapalım.
+
+197
+00:38:28,403 --> 00:38:39,604
+Tn eşittir, yine 8 tane Tn bölü 2 artı 1 olsun. Hadi bakalım şimdi bunu yapalım. Ondan sonra bir ara vereceğiz.
+
+198
+00:38:41,003 --> 00:38:49,604
+Yine 3 dakika veriyorum size. 10-43'e kadar diyelim. Tamam. Çözümleyin bakalım bu nasıl bir şey çıkacak.
+
+199
+00:41:51,123 --> 00:41:53,123
+Evet arkadaşlar, neler buldunuz?
+
+200
+00:41:55,123 --> 00:41:57,123
+En küp buldum ben.
+
+201
+00:41:58,123 --> 00:42:00,123
+Bir kişi en küp bulmuş, başka?
+
+202
+00:42:01,123 --> 00:42:02,123
+Benden küp buldum.
+
+203
+00:42:03,123 --> 00:42:04,123
+İki oldu.
+
+204
+00:42:07,123 --> 00:42:07,819
+Başka?
+
+205
+00:42:13,204 --> 00:42:15,204
+Ben de n küp buldum.
+
+206
+00:42:15,204 --> 00:42:17,204
+3. Güzel.
+
+207
+00:42:19,204 --> 00:42:21,204
+Ben de buldum hocam aynı.
+
+208
+00:42:21,204 --> 00:42:23,204
+4.
+
+209
+00:42:23,204 --> 00:42:25,204
+Tamam, beraber yapalım.
+
+210
+00:42:25,204 --> 00:42:29,204
+Şimdi tn eşittir.
+
+211
+00:42:29,204 --> 00:42:33,204
+Bunu çizmeye kalkarsak, 1 olacak bu sefer.
+
+212
+00:42:33,204 --> 00:42:37,204
+Şurası tn bölü 2. Pardon.
+
+213
+00:42:37,204 --> 00:42:40,524
+Yine...
+
+214
+00:42:40,851 --> 00:43:01,851
+T n bölü 2, bu böyle 8 tane gidiyor. Bunu açmaya kalkarsak 1 var, sonra 1 var. Yine burada da 1 var, bunlar böyle 8 tane var. Sonra bu birilerinin her birinden de t n bölü 4'ler çıkıyor değil mi? Yine bunlar da 8 tane. Bunlar da yine böyle t n bölü 4'ler var burada. Tamam.
+
+215
+00:43:01,851 --> 00:43:07,851
+Şimdi birinci seviyeyi düşünürsek, 1, n yok burada gördüğünüz gibi, 1. İkinci seveyenin toplamı ne?
+
+216
+00:43:07,887 --> 00:43:27,500
+İkinci seviyede kaç tane 1 var? 8. 3. Seylede kaç tane 1 var? 64. O zaman t n dediğimiz şey şöyle bir şey değil mi? 1 artı 8 artı 64 artı böyle gidiyor değil mi? Burada n falan hiçbir şey gözükmüyor değil mi?
+
+217
+00:43:28,692 --> 00:43:43,492
+Peki, kaç tane var burada eleman? Her bir adımda yarıya böldüğümüze göre o zaman logaritma iki tabanında n olması lazım. O zaman bunu yazmaya kalkarsak, i eşittir sıfırdan logaritma iki tabanında n'e kadar ne yazacağım buraya?
+
+218
+00:43:49,556 --> 00:44:02,556
+8 üzeri i yazacağım değil mi? Doğru. Şimdi bunu düşünürsek, bu nasıl bir şey olacak? 8 üzeri logaritma iki tabanda n artı 1 eksi 1 bölü, 8 eksi 1, 7.
+
+219
+00:44:02,556 --> 00:44:14,556
+Bunu yazmaya kalkarsak da, 8 çarpı 8 üzeri logaritma iki tabanda n eksi 1 bölü, 7. Bunu yazmaya kalkarsak da,
+
+220
+00:44:16,115 --> 00:44:38,516
+8 çarpı, şimdi 8 üzeri logaritma iki tabanında n neye eşitir arkadaşlar? n üzeri logaritma iki tabanında 8 eşitir, o da 3 eşitir, o zaman burası da n küp olacak değil mi? n küp, eksi 1 bölü 7, bu da dolayısıyla bir konotasyonunda n küpe karşılık gelecek. Tamam mıyız?
+
+221
+00:44:47,795 --> 00:44:59,795
+Peki, o zaman arkadaşlar, şimdi bir ara verelim. 11.00'a kadar olsun aramız, tamam mı? 14 dakika sonra görüşmek üzere diyorum.
+
+222
+00:59:19,956 --> 00:59:21,956
+Evet arkadaşlar, sesim geliyor mu?
+
+223
+00:59:25,619 --> 00:59:26,619
+Geliyor hocam.
+
+224
+00:59:27,619 --> 00:59:32,619
+Tamam. Şimdi devam edelim.
+
+225
+00:59:37,619 --> 00:59:50,619
+Yeni problemimiz şu olsun, T n eşittir. Dört tane T. Bu sefer n bölü üç olsun bakalım. Tamam. Artı bir olsun.
+
+226
+00:59:53,139 --> 01:00:00,819
+Evet, 3 dakikaya yine bekleyelim. Sizin çözümleriniz için 11.04'e kadar.
+
+227
+01:00:05,844 --> 01:00:17,844
+İlk adımını bunun yaparsak 1 var, sonra burada tn bölü 3 var, böyle 4 tane tn bölü 3 var.
+
+228
+01:00:20,844 --> 01:00:22,844
+Böyle devam ettirsek neler olur acaba?
+
+229
+01:00:24,844 --> 01:00:26,844
+Evet, bekliyorum şimdi.
+
+230
+01:00:28,692 --> 01:00:43,192
+Bir arkadaşınız şeyi sormuştu, kağıtları okudunuz mu? Kağıtları okuyorum, hala okuyorum. Çok kolay olmuyor. Neyse, haftaya muhtemelen açıklamış olurum diye tahmin ediyorum. Tamam.
+
+231
+01:02:46,963 --> 01:02:48,963
+Evet, neler buldunuz?
+
+232
+01:02:54,771 --> 01:02:58,532
+[öğrenci] ne yazmış? [öğrenci] sesin çıkmıyor mu?
+
+233
+01:03:03,092 --> 01:03:07,092
+Hocam, en üzeri 3 tabanında buldum ama.
+
+234
+01:03:08,092 --> 01:03:10,592
+Logo 3 tabanında?
+
+235
+01:03:11,092 --> 01:03:12,092
+4.
+
+236
+01:03:12,092 --> 01:03:14,092
+Evet.
+
+237
+01:03:15,092 --> 01:03:16,092
+Başka?
+
+238
+01:03:16,092 --> 01:03:19,092
+Hocam, ben de [öğrenci] gibi buldum. Ben de böyle buldum hocam.
+
+239
+01:03:20,092 --> 01:03:23,884
+Peki, başka? Var mı?
+
+240
+01:03:26,835 --> 01:03:34,155
+Peki, tamam. Devam edelim o zaman. Bakalım aynı şeyi bulacağız mı? Faklı bir şey olacak mı?
+
+241
+01:03:34,155 --> 01:03:41,395
+Şimdi bunu bir adım daha ilerletirsek ne olacak? Bir var, sonra şuralarda da birler olacaklar.
+
+242
+01:03:41,395 --> 01:03:48,675
+Sonra bunların her birinden yine dörder tane çıkacak. Bu sefer tn bölü dokuzlar olacak değil mi?
+
+243
+01:03:48,675 --> 01:03:53,555
+Burada tn bölü dokuzları göreceğiz. Şuralarda tn bölü dokuz.
+
+244
+01:03:53,684 --> 01:04:00,923
+İşte yine tn bölü dotuz olacak. Dolayısıyla şimdi buranın toplamı 1, buranın toplamı kaç olacak?
+
+245
+01:04:00,923 --> 01:04:14,684
+Buranın toplamı? 4. Buranın toplamı? 16. 16 şeklinde gidecek değil mi? O zaman bunu ne şekilde yazabiliriz?
+
+246
+01:04:14,684 --> 01:04:21,084
+tn eşittir, 1 artı 4 artı 16 artı 64 diye gideceğini arsayabiliriz.
+
+247
+01:04:21,523 --> 01:04:42,603
+Peki, h'ın değeri ne burada? Her seferinde 3'e bölünüyor bakın. Yani her adımda 3'e bölünerek gidiyorsa kaç adımda 1'e erişecektir? Logaritma 3 tabanında n değil mi? Dolayısıyla ben bunu tn eşittir, i eşittir sıfırdan logaritma 3 tabanda n'e kadar ne yazabilirim?
+
+248
+01:04:47,315 --> 01:04:49,315
+Ne diyeceğim buraya şimdi?
+
+249
+01:04:49,315 --> 01:04:51,315
+Dört üzeri iyi mi?
+
+250
+01:04:51,315 --> 01:04:59,315
+Dört üzeri iyi değil mi? Sıfır koyduğumda burası da olacak, bir koyduğumda burası olacak, iki koyduğumda burası olacak şeklinde böyle gidiyorum.
+
+251
+01:04:59,315 --> 01:05:10,315
+O zaman bunu yapmaya kalkarsak, dört üzeri logaritma üç tabanda n artı bir eksi bir bölü dört eksi bir üç oluyor değil mi?
+
+252
+01:05:10,315 --> 01:05:14,795
+Bunu yaparsak, dört çarpı logaritma... Pardon.
+
+253
+01:05:18,612 --> 01:05:40,612
+4 çarpı 4 üzeri logaritma 3 tavanda n, eksi 1 bölü 3, o da eşittir. Şunları yer değiştirirlerse, 4 çarpı n üzeri logaritma 3, 4, eksi 1 bölü 3. Dolayısıyla n'in en yüksek mertebeli hali bu. O zaman...
+
+254
+01:05:42,643 --> 01:05:46,643
+Az önce sizin bulduğunuz şey doğru olduğunu görüyoruz. Tamam mı?
+
+255
+01:05:48,643 --> 01:05:57,643
+Şimdi buna çok benzeyen bir şey yapalım. Şöyle bir şey yapalım. T, n eşittir. Bu sefer 4 değil de 9 olsun burası.
+
+256
+01:06:00,643 --> 01:06:01,643
+Tamam.
+
+257
+01:06:03,643 --> 01:06:08,643
+Evet. 17, 11, 10'a kadar. 3 dakika sürerimiz var yine.
+
+258
+01:08:56,948 --> 01:08:58,948
+Evet, neler buldunuz arkadaşlar?
+
+259
+01:08:59,948 --> 01:09:00,948
+Enkare?
+
+260
+01:09:00,948 --> 01:09:01,948
+Enkare.
+
+261
+01:09:01,948 --> 01:09:02,948
+Enkare oldu.
+
+262
+01:09:04,948 --> 01:09:14,948
+Enkare oldu. Yani şuradaki dördü dokuz yaptık. Öyle oldu diyorsunuz. Peki, bakalım başka? Enkare var iki kişi başka?
+
+263
+01:09:16,948 --> 01:09:17,948
+Var mı?
+
+264
+01:09:22,131 --> 01:09:24,131
+İki kişi mi çözdü?
+
+265
+01:09:24,131 --> 01:09:27,131
+Ben de Ankara buldum hocam, söyledim ama.
+
+266
+01:09:27,131 --> 01:09:29,867
+Tamam, üç. Peki.
+
+267
+01:09:30,515 --> 01:09:58,155
+Tamam, bunu çizmeye kalkalım. 1 var, sonra böyle böyle böyle 9 tane TN bölü 3 var, değil mi? TN bölü 3 var. Sonra bunu yine bir adım daha çizmeye kalkarsak böyle 1 var, 9 tane var. Sonra bu birilerin her birinden yine 9'lar tane. TN bölü bu sefer yine 3'te 1'i N bölü 9'lar çıkacak. TN bölü 9'lar çıkacak. Sonuçta her birinden TN bölü 9'lar çıkacaklar.
+
+268
+01:09:58,515 --> 01:10:11,715
+O zaman birinci seviyeyi düşünürsek, bir zaten artı, burası ne olacak? Dokuz olacak. Peki buraya ne yazacağım? Dokuzdan sonra ne gelecek? Bu seviyede kaç tane eleman var toplamda?
+
+269
+01:10:22,612 --> 01:10:41,011
+[öğrenci] 81 dedi, öyle gidiyor. Peki o zaman ben t n'i nasıl yazabilirim? Başta herhangi bir anfen yok. Yeşitir sıfırdan kaça kadar gideceğiz yine? Yine n bölü 3 olduğu için logaritma 3 tabanında n'e kadar gideceğiz. Peki bu içeriye ne yazacağım şimdi?
+
+270
+01:10:42,484 --> 01:11:09,123
+9 üzeri i olacak değil mi? Bunu yapmaya kalkarsak nasıl bir şey olacak? 9 üzeri logaritma 3 tabanda n artı 1 eksi 1, 9 eksi 1, 8 değil mi? Bu da 9 çağır. Bu 9 üzeri logaritma 3 tabanda n eksi 1 bölü 8. O da eşittir. 9 n kare eksi 1 bölü 8. O da bir konotasyonunda.
+
+271
+01:11:09,684 --> 01:11:19,923
+n kare olarak karşımıza çıkacak. Tamam. Peki. Devam edelim.
+
+272
+01:11:27,988 --> 01:11:29,988
+Sayfa açalım.
+
+273
+01:11:31,988 --> 01:11:40,988
+Şimdiki problemimiz Tn eşittir. Yine dört tane.
+
+274
+01:11:48,404 --> 01:11:55,404
+T, n bölü 3 ama bu sefer artı n.
+
+275
+01:11:55,404 --> 01:11:56,404
+Tamam.
+
+276
+01:11:58,404 --> 01:12:02,404
+On bir, on altıya kadar vaktimiz var.
+
+277
+01:15:02,771 --> 01:15:04,771
+Evet, neler buldunuz arkadaşlar?
+
+278
+01:15:08,851 --> 01:15:23,091
+Bir dakika, teker teker. En üzeri dolar itma 3 tabanında 12. Peki, başka?
+
+279
+01:15:27,636 --> 01:15:30,956
+Ben de aynısının logotmi 3 tabanında 4 ile aynı oldum.
+
+280
+01:15:31,956 --> 01:15:34,956
+Tamam, başka?
+
+281
+01:15:35,436 --> 01:15:36,236
+Hocam...
+
+282
+01:15:39,604 --> 01:15:40,604
+Evet.
+
+283
+01:15:42,104 --> 01:15:44,604
+Ben de üç tabanda dörtlü buldum.
+
+284
+01:15:44,604 --> 01:15:47,604
+Şunlar bir tane daha çıktı. Evet, başka?
+
+285
+01:15:55,475 --> 01:16:19,595
+Peki, şimdi bu deminkilerden birazcık daha farklı, farklı şu yani. Bakalım sonuç nasıl bir şey çıkacak. Şimdi bunu çözümlemeye başlayalım. Bu n var, sonra burası 4 tane, değil mi? T n bölü 3 var burada. T n bölü 3 var, bunlar 4 taneler.
+
+286
+01:16:19,923 --> 01:16:31,923
+Sonra bunu yapmaya kalkarsak burası n olacak. Şimdi buralarda neleri göreceğiz? n bölü 3'leri göreceğiz. Bunlar 4 tane. Sonra bunların her birinden de 4'er tane. t n bölü 9'ler çıkacak değil mi?
+
+287
+01:16:39,507 --> 01:16:51,108
+Şimdi, birinci seviyede n var zaten. İkinci seviyenin toplamı ne? 4 tane n bölü 3 olacak değil mi burada?
+
+288
+01:16:53,108 --> 01:16:56,108
+Peki burada ne göreceğiz?
+
+289
+01:17:00,564 --> 01:17:02,564
+16 n bölü 9
+
+290
+01:17:02,564 --> 01:17:04,564
+n bölü 9
+
+291
+01:17:04,564 --> 01:17:06,564
+bir alt satırda
+
+292
+01:17:06,564 --> 01:17:08,564
+64 n bölü 27
+
+293
+01:17:08,564 --> 01:17:10,564
+böyle gidiyor değil mi? Tamam.
+
+294
+01:17:10,564 --> 01:17:12,564
+güzel
+
+295
+01:17:12,564 --> 01:17:14,564
+o zaman t n eşittir
+
+296
+01:17:14,564 --> 01:17:16,564
+işte n artı
+
+297
+01:17:16,564 --> 01:17:18,564
+4 bölü 3 n artı
+
+298
+01:17:18,564 --> 01:17:20,564
+16 bölü 9 n artı
+
+299
+01:17:20,564 --> 01:17:24,564
+64 bölü 27 n şeklinde gidiyor.
+
+300
+01:17:24,564 --> 01:17:26,564
+Peki haşımız ne?
+
+301
+01:17:28,212 --> 01:17:33,212
+Logaritma tarafında n değil mi? Yine. Çünkü her sefinde yine üçe biniyor.
+
+302
+01:17:33,212 --> 01:17:41,212
+Şimdi bunu yazmaya kalkarsak, o zaman bu eşittir n'i parantez içerisine alsak,
+
+303
+01:17:41,212 --> 01:17:48,212
+1 artı 4 bölü 3 artı 16 bölü 9 artı 64 bölü 27 artı böyle giden bir şey.
+
+304
+01:17:54,452 --> 01:17:57,252
+3 tabanda n'e kadar, ne yazacağım buraya şimdi?
+
+305
+01:18:07,572 --> 01:18:19,572
+4 bölü 3 üzeri iyi olacak değil mi? Sıfır olduğunda şurası olacak, bir olduğunda burası olacak, iki olduğunda üç olduğunda şeklinde gidecek.
+
+306
+01:18:20,572 --> 01:18:28,203
+Güzel, peki devam edelim. N çarpı. O zaman bunu açmaya kalkarsak nasıl bir şey elde edeceğiz biz?
+
+307
+01:18:31,315 --> 01:18:33,315
+Envar elimizde.
+
+308
+01:18:39,347 --> 01:19:06,788
+4 bölü 3 üzeri, değil mi? Logaritma 3 tabanda n artı 1 var. Sonra şurada bir eksi 1'imiz var. Bir de 4 bölü 3 eksi 1'imiz var. Değil mi? O zaman bunu yapmaya kalkarsak 4 bölü 3 eksi 1, 1 bölü 3 kalı, 1 bölü 3 yukarıya çarpan 3 olarak gelir. O zaman burası 3 n olacak, değil mi? 3 n parantezinde
+
+309
+01:19:07,412 --> 01:19:18,852
+4 bölü 3 üzeri, logaritma 3 tabanında n artı 1 ve eksi 1'imiz var.
+
+310
+01:19:32,372 --> 01:19:36,692
+Peki devam edelim. Şimdi 3 üzeri n burada var.
+
+311
+01:19:39,252 --> 01:19:47,731
+4 bölü 3 çarpı, 4 bölü 3 üzeri, logaritma kitabında n şeklinde buraya yazabiliriz. Burası eksi 1.
+
+312
+01:19:47,731 --> 01:19:52,131
+O eksi 1 de dağıtılma yani şurası da şey yapalım, şurasında.
+
+313
+01:19:54,252 --> 01:19:55,252
+Pardon.
+
+314
+01:20:14,612 --> 01:20:19,031
+Tamam, şimdi bunlar zaten birbirlerini götürüyorlar.
+
+315
+01:20:20,192 --> 01:20:22,832
+Eff, burası ne oluyor?
+
+316
+01:20:24,451 --> 01:20:26,871
+4n var burada bir, değil mi?
+
+317
+01:20:27,412 --> 01:20:29,112
+4n yok, pardon.
+
+318
+01:20:29,912 --> 01:20:37,731
+Ha, evet, 4n var. Sonra 4 bölü 3 üzeri logaritma 3 tabanında n var.
+
+319
+01:20:37,731 --> 01:20:41,311
+Eksi 3n diye bir şeyimiz var.
+
+320
+01:20:41,619 --> 01:21:01,619
+Şimdi şurada şeyi yazarsak, 4 bölü 3 üzeri logaritma 3 tabanında n dediğimiz şeyi yazmaya kalkarsak, şöyle yazabiliriz herhalde, n üzeri değil mi?
+
+321
+01:21:12,020 --> 01:21:32,020
+Logaritma 3 tabanında, 4 bölü 3 değil mi? Bu Logaritma 3 tabanında, 1 bölü 3 ile 1'in toplamadır değil mi?
+
+322
+01:21:37,939 --> 01:21:51,939
+Bu da en üzeri logaritma 3 tabanda 1-1-3 ile logaritma 3 tabanda 1'in toplam olarak yazılır.
+
+323
+01:21:53,939 --> 01:21:57,899
+Değil mi? Pardon ya, şey yanlış mı yazdım?
+
+324
+01:22:02,131 --> 01:22:06,631
+3 tabağında 4 bölü 3. Yok, tamam.
+
+325
+01:22:13,171 --> 01:22:19,171
+İşte bunda 3 olacak burası. Evet. Doğru, tamam.
+
+326
+01:22:23,171 --> 01:22:34,891
+Dolayısıyla bu da en üzeri, şurası eksi 1 olacak. Artı logaritma... Pardon ya.
+
+327
+01:22:38,387 --> 01:22:43,387
+Bir saniye, şurada bir yanlışlık yaptık ya. Bir dakika. Şurayı bir daha yapalım.
+
+328
+01:22:45,387 --> 01:22:50,387
+Şimdi, şurayı çözümlemeye çalışıyoruz.
+
+329
+01:22:56,148 --> 01:23:02,148
+Şöyle bir şey yapabiliriz aslında, yani detaylı çözümlemeye de girişilebilir ama şöyle bir şey düşünelim.
+
+330
+01:23:02,148 --> 01:23:06,148
+Bunu buraya attığımızda ne göreceğiz biz?
+
+331
+01:23:06,148 --> 01:23:10,148
+En üzeri...
+
+332
+01:23:10,148 --> 01:23:12,148
+Çözümle...
+
+333
+01:23:12,148 --> 01:23:20,148
+Heh, yok. Öyle değil, tamam, çözümlememiz lazım. O zaman o kadar basit gidemeyeceğiz.
+
+334
+01:23:20,148 --> 01:23:23,052
+Şöyle yakalım.
+
+335
+01:23:37,716 --> 01:24:03,716
+Son o zaman şurada şunu şu şekilde yazalım. En parantezinde dursun olay. Yani 4 çarpı 4 bölü 3 üzeri logaritma 3 tabanda n var elimizde. Bir de eksi 3 var. Tamam.
+
+336
+01:24:05,171 --> 01:24:07,171
+Şu anda bu haldeyiz.
+
+337
+01:24:13,171 --> 01:24:15,171
+Hocam, şey yapsak olur mu?
+
+338
+01:24:15,171 --> 01:24:23,171
+En üzeri log 3 tabağına 4 bölü 3 yapacağız ya, 4 çapı 1 bölü 3 olarak ayırsak, onları toplam şeklinde yazsak logaritmanın.
+
+339
+01:24:23,171 --> 01:24:24,687
+O'dan eksi 1 geliyor.
+
+340
+01:24:24,688 --> 01:24:31,368
+Evet, evet. Oradaki eksi bir lede, şuradaki n gidecek zaten. Onu ayarlamaya çalışıyorum. Aynen öyle.
+
+341
+01:24:31,368 --> 01:24:32,128
+Tamam, pardon.
+
+342
+01:24:32,128 --> 01:24:50,688
+Onu yapmaya çalışıyorum zaten. Şimdi burasını yaptık. Bu işittir, n çarpı, 4 üzeri, 4 çarpı pardon, n üzeri.
+
+343
+01:24:51,380 --> 01:24:59,380
+Ne olacak? Logaritma 3 tabağında 4 bölü 3 olacak. Bir de eksi 3'ümüz var. Tamam.
+
+344
+01:25:04,180 --> 01:25:30,579
+Şimdi şuradaki 4 bölü 3'ü şu şekilde yazacağım. Logaritma 3 tabanında 1 bölü 3 çarpı 4 şeklinde yazacağım. Tamam? Eksi 3. Şöyle duruyoruz. Bunu da n çarpı 4 çarpı n üzeri logaritma.
+
+345
+01:25:32,051 --> 01:25:40,451
+3 tabanında 1 bölü 3 artı, lal arıtma 3 tabanında 4 şeklinde yazacağım.
+
+346
+01:25:48,467 --> 01:26:07,268
+Şurası da o zaman n çarplı n 4 üzeri ne olacak? n üzeri logaritma 3 tabanında 4 eksi 1 olacak. Tamam.
+
+347
+01:26:10,579 --> 01:26:34,699
+Eksi bir haline getirdim. Tamam. Şimdi burada dışarıda n var çarpım halinde. Burada da n üzeri eksi bir var. Dolayısıyla bunların ikisini çarptığınız zaman birbirini götürecekler. Dolayısıyla ne olacak kalan? 4 çarpı n üzeri logaritma 3 tabanda 4.
+
+348
+01:26:35,891 --> 01:26:46,291
+eksi 3 n olacak. Tamam. Yani şuradaki n ile şuradaki eksi birbirine götürecekler. Dolayısıyla karmaşıklığımız bu hali indirgeyebildik.
+
+349
+01:26:46,291 --> 01:26:57,572
+n'in en yüksek hali zaten şurada gördüğünüz şu hal. Dolayısıyla yine algoritmanın karmaşıklığı en üzeri logaritma 3 tabanında n olarak bulmuş olacağız. Tamam.
+
+350
+01:26:57,572 --> 01:27:01,332
+Şurada birazcık karıştı işler ama neyse, sonunda toparlayabildik.
+
+351
+01:27:03,412 --> 01:27:06,032
+Peki, şimdi devam edelim.
+
+352
+01:27:13,171 --> 01:27:18,572
+Şimdiki sorumuz biraz daha farklı deminkilerden.
+
+353
+01:27:23,091 --> 01:27:35,471
+n-1, bu sefer burası, artı 1 olsun bakalım. Yine size 3 dakika verelim, 11.31 diyelim. Evet, 3 dakikanız var.
+
+354
+01:29:50,515 --> 01:29:52,515
+Evet arkadaşlar, neler buldunuz?
+
+355
+01:30:02,804 --> 01:30:03,804
+İki üzere
+
+356
+01:30:10,068 --> 01:30:12,068
+Evet, başka?
+
+357
+01:30:12,068 --> 01:30:14,068
+Ben de iki üzeri an buldum.
+
+358
+01:30:14,068 --> 01:30:16,068
+Tamam.
+
+359
+01:30:16,068 --> 01:30:19,068
+Ben de iki üzeri an buldum hocam.
+
+360
+01:30:19,068 --> 01:30:29,068
+Peki, tamam. Yapalım o zaman iki üzeri an. O baya büyük bir şey çıktı o zaman deminkilere göre değil mi? Deminkilerde en üzeri bir şey çıkıyordu, iki üzeri bir şey çıkmış.
+
+361
+01:30:29,068 --> 01:30:37,068
+Şimdi, bunu çizmeye kalkarsak, t, n eşittir, bir var, sonra...
+
+362
+01:30:38,036 --> 01:30:40,036
+İki tane t n-1 var.
+
+363
+01:30:43,036 --> 01:30:47,036
+Bir adım daha oyun çizerse, burası da 1 olacak, burası da 1 olacak, bunlardan yine bir tane çıkacaklar.
+
+364
+01:30:47,036 --> 01:30:49,036
+t n-2, pardon.
+
+365
+01:30:56,275 --> 01:31:04,076
+T, n-2, T, n-2, T, n-2, T, n-2.
+
+366
+01:31:05,675 --> 01:31:10,076
+Bir adım daha götürebiliriz, vesaire vesaire. Burasının toplamı zaten bir, burasının toplamı.
+
+367
+01:31:10,076 --> 01:31:13,275
+İşte iki tane de var zaten. Buranın toplamı ne olacak?
+
+368
+01:31:13,876 --> 01:31:14,827
+4.
+
+369
+01:31:14,996 --> 01:31:25,316
+4, böyle 8 şeklinde gidiyor. O zaman t n dediğimiz şey 1 artı 2 artı 4 artı 8 artı böyle gidiyor. Peki h ne burada?
+
+370
+01:31:25,316 --> 01:31:28,435
+n değil mi?
+
+371
+01:31:28,435 --> 01:31:38,916
+h burada n. Deminkilerde logaritma iki tabanda çünkü ikiye falan bölünüyordu, üçe bölünüyordu. Burada ise birer birer az oldu. Birer birer azaldığına göre n'den 1'e kaç adımda gideriz? n adımda gideriz. Tamam.
+
+372
+01:31:39,380 --> 01:31:47,380
+Dolayısıyla ben burada ne yazacağım? Şimdi i eşittir sıfırdan n'e kadar bu sefer 2 üzeri i yazacağım değil mi?
+
+373
+01:31:47,380 --> 01:31:49,380
+2 üzeri i.
+
+374
+01:31:49,380 --> 01:32:02,380
+Peki, o zaman bu ne olacak? 2 üzeri n artı 1 eksi 1 bölü 1. Bu da zaten ikisi n'e karşılık gelecek.
+
+375
+01:32:02,380 --> 01:32:03,380
+Tamam.
+
+376
+01:32:04,083 --> 01:32:10,083
+Şimdi başka bir şey yazalım. Buna çok benzeyen bir şey ama küçük bir farkı var.
+
+377
+01:32:11,083 --> 01:32:13,083
+T n-1
+
+378
+01:32:16,435 --> 01:32:21,555
+Artı t n-2 artı 1.
+
+379
+01:32:23,855 --> 01:32:28,475
+Şimdi bunu çözümlemeden önce bunun ne olduğunu hatırlayalım.
+
+380
+01:32:29,995 --> 01:32:38,456
+Bu aslında daha önce bizim gördüğümüz bir, muhtemelen görmüşsünüzdür, Fibonacci.
+
+381
+01:32:38,456 --> 01:32:40,755
+Değil mi? Bundan bahsetmiştik daha önce.
+
+382
+01:32:41,652 --> 01:32:56,152
+Yani kendisinden önceki iki elemanın toplamı, yani mesela siz Fibonacci 6 dediğiniz zaman bu Fibonacci 5 ile Fibonacci 4'ün toplamıydı değil mi?
+
+383
+01:32:56,152 --> 01:33:01,652
+Biz bunu böyle bir fonksiyon olarak yazabiliriz. Recursive fonksiyon olarak.
+
+384
+01:33:01,652 --> 01:33:07,152
+Yani Fibonacci n eşittir, Fibonacci n-1 artı Fibonacci n-2.
+
+385
+01:33:07,315 --> 01:33:12,315
+Buradaki artı bir de işte bu ikisinin toplanması, sabit sayıda işlemi ifade ediyor.
+
+386
+01:33:12,315 --> 01:33:20,315
+Dolayısıyla biz rekörsif olarak Fibonacci'yi yazarsak karmaşıklığı şurada gördüğünüz şeye dönüşecek.
+
+387
+01:33:20,315 --> 01:33:27,315
+Peki bu nasıl bir ağaç oluşturur? Bir düşünün bakalım.
+
+388
+01:33:31,507 --> 01:33:45,268
+Yani şöyle bir durum var. Tn eşittir, bir var. Bir tarafta Tn-1 var. Bir tarafta Tn-2 var. Bakın. Görüyor musunuz?
+
+389
+01:33:45,268 --> 01:33:55,268
+Şimdi ben bunu bir adım daha götürmeye kalkarsam, şunlar dizbir olacaklar. Şunun bir tarafında Tn-2 olacak. Şurasında...
+
+390
+01:33:56,564 --> 01:34:05,884
+T n-3 olacak, bunun bir tarafında T n-3 olacak, bir tarafında T n-4 olacak.
+
+391
+01:34:05,884 --> 01:34:07,884
+Tamam.
+
+392
+01:34:07,884 --> 01:34:17,564
+Bir adım daha, bir adım daha falan gelin. Ama burada ne dikkatinizi çekecek? Çekmeli.
+
+393
+01:34:21,652 --> 01:34:31,652
+Ağacın bütün dalları aynı zamanda bire ulaşmıyorlar. Bunu görebiliyor musunuz?
+
+394
+01:34:36,627 --> 01:35:03,347
+Aynı zamanda aynı seviyede. Şimdi mesela yukarıdaki örneği düşünürsek, şuradaki bütün hepsi bakın tn-2, tn-2, tn-2, tn-2, tn-2. Burada ise tn-2, tn-3, tn-4 var. Görüyor musunuz farklı? Yani yukarıda bütün hepsi aynı seviyede bire erişecek derken burada mesela işte n-4 olan daha erken seviyede erişecek. Şu anda çünkü zaten n-4 değilmiş ama burada mesela n-2 var. Bunları görüyorsunuz.
+
+395
+01:35:03,796 --> 01:35:09,796
+Bu çok daha büyüyecek burada ağaç. Buradaysa daha az bir yerlerde kalacak, tamam mı?
+
+396
+01:35:09,796 --> 01:35:15,796
+Şimdi bunun full olduğu durum aslında yani full ağacın olduğu durum, şu yukarıda yazdım.
+
+397
+01:35:15,796 --> 01:35:23,467
+Yani şuradaki ağaç, tamam, full olduğu durum. Yani bu ağacın bir kırpılmış versiyonu aslında şu aşağıdaki, tamam mı?
+
+398
+01:35:25,043 --> 01:35:41,664
+Bazı yerlerin kırıkılmış. Bunun analizine girmeyeceğim ama sonucunu yazacağım. Şöyle bir sonucu var bunun, bunun tn'i. Bunu da isteyenler araştırabilirler. Bunun bir go notasyondaki karşılığı. 2 üzeri n değil ama 2'ye yakın bir rakam.
+
+399
+01:35:45,043 --> 01:36:12,644
+1 artı kök 5 bölü 2, üzeri n. Yani 2 üzeri n değil ama 10 oldukça yakın bir şey. Bu yazdığımız şey şu anda şu gördüğünüz şey, ismi altın oran. Golden ratio diye geçer bu. Tamam mı? Bu da işte 1,618 gibisinden bir değer. Tabii köklü bir şey olduğu için gidiyor böyle.
+
+400
+01:36:13,332 --> 01:36:16,632
+İkiye yakın bir şey ama ikiden küçük bir şey. Tamam.
+
+401
+01:36:18,632 --> 01:36:23,731
+Dolayısıyla yukarıdaki aşan daha küçük bir şey ama karmaşıklık yine yani işte bir buçuktan daha yüksek bir sayı.
+
+402
+01:36:23,731 --> 01:36:30,932
+İki üstü N'den daha küçük ama bir buçuktan daha büyük bir rakamdan bahsediyoruz. O üzeri N'den bahsediyoruz.
+
+403
+01:36:30,932 --> 01:36:38,932
+Şimdi normalde biz Fibonacci sayılarını yani N. Fibonacci sayısını
+
+404
+01:36:40,532 --> 01:36:46,532
+Normal yolla bulmaya kalktık. Bir dizide ya da dizi kullanmadan ve dizi kullanan hallerini yapmıştık hatırlıyorsunuz.
+
+405
+01:36:46,532 --> 01:36:48,532
+Oradaki karmaşıklığımız ne kadardı?
+
+406
+01:36:51,988 --> 01:36:56,988
+Dizi kullanarak bu işi yapsak, energy fiberatçı sayısını bulmanın karmaşıklığına kadardı.
+
+407
+01:37:06,931 --> 01:37:19,851
+Enfaktörel mi? En olmaz mı canım? Enfaktörel olmaz canım, enfaktörel değil mi? En değil mi arkadaşlar? Yani eninci fibonacci sayısını bulmak için oraya kadar işte...
+
+408
+01:37:19,923 --> 01:37:27,543
+Birinci ile ikinci elemanı toplayıp üçüncü elemanı buluyorduk. Sonra ikinci ile üçüncüyü toplayıp dördüncü elemanı buluyorduk. Sonra üçüncü ile dördüncü toplayıp beşinci elemanı buluyorduk.
+
+409
+01:37:27,543 --> 01:37:35,543
+Dolayısıyla n'inci elemanı bulunmak için toplama sayısı burada kaç tane olacaktır? n'e bağlı olarak n tane olacaktır değil mi?
+
+410
+01:37:35,543 --> 01:37:41,943
+Dolayısıyla karmaşıklık orada yani n'inci fibonacci sayısını bulmanın karmaşıklığı o n'di.
+
+411
+01:37:41,943 --> 01:37:46,804
+Siz bunu rekörsü bir halde yazarsanız, şu halde yazarsanız, tamam mı?
+
+412
+01:37:46,996 --> 01:37:58,796
+Bunun karmaşıklığı ne oluyor? Şurada gördüğünüz şey oluyor bakın. Görüyor musunuz? Bir tanesi o n, bir tanesi o 1.6 yaklaşık üzeri n. Hangisi kötü?
+
+413
+01:38:04,435 --> 01:38:16,435
+1.6. O çok çok daha kötü değil mi? Yani bir tanesi en adımda buluyor. Bu ise recursive olarak bunu yazdık. Çok kötü bir şekilde oluyor.
+
+414
+01:38:16,435 --> 01:38:19,435
+Peki, şimdi...
+
+415
+01:38:21,435 --> 01:38:22,435
+Bir saniye...
+
+416
+01:38:32,819 --> 01:38:54,659
+Şimdi sorumuz şu, Fibonacci'yi, yani eninci Fibonacci'yi, o enden az adımda bulabilir miyiz? Şimdi normalde...
+
+417
+01:38:54,688 --> 01:39:01,448
+Fibonacci'nin karmaşıklığı o endi. Biz bunu rekörsif olarak yazdığımızda, o deminki gibi yazdığımızda çok daha kötü bir hale geldi.
+
+418
+01:39:01,448 --> 01:39:08,927
+Peki acaba bu energy Fibonacci sayısını o üzeri enden daha az adımda bulmanın bir yolu var mıdır?
+
+419
+01:39:12,724 --> 01:39:14,724
+Şimdi buna bakacağız.
+
+420
+01:39:16,324 --> 01:39:19,123
+Şimdi bunun için ilk önce bir matris tanımlayacağım.
+
+421
+01:39:19,524 --> 01:39:26,724
+Bu matrisimizin F matrisimiz olsun.
+
+422
+01:39:28,524 --> 01:39:30,123
+2 çarpı 2'lik bir matris bu.
+
+423
+01:39:33,427 --> 01:39:42,427
+Madresimiz bu. Şuralara birbirleri koydum, şurasına 0 koydum. Sonra f üzeri 2 hesaplayalım.
+
+424
+01:39:42,427 --> 01:39:51,427
+f üzeri 2 demek ne demek? 1, 1, 1, 0 ve şu 1, 1, 1, 0'ın çarpımı değil mi? Bunu çarparsam ben de bulurum.
+
+425
+01:39:59,252 --> 01:40:04,252
+Evet, ne olurum? Bu maddeste bu maddeste çarparsak.
+
+426
+01:40:13,908 --> 01:40:15,908
+2-0-1-1
+
+427
+01:40:15,908 --> 01:40:16,908
+Galiba
+
+428
+01:40:17,908 --> 01:40:19,908
+2-1-1-0
+
+429
+01:40:23,667 --> 01:40:24,619
+Evet.
+
+430
+01:40:29,555 --> 01:40:41,555
+Peki, devam edelim. F üzeri 3'ü bulmayayım. F üzeri 3'te şöyle bir şey olacak. F üzeri 2 ile F üzeri 1'in çarpımı. Bu ne yapar acaba?
+
+431
+01:40:58,292 --> 01:41:21,932
+Evet, çarpın arkadaşlar. 3-1-1-0 mı? 3-2-1-1 3-2-1-1 mi? Bir daha bakalım. Hocam ilk kısım yanlışlayayım ya, 2-1-1-1 olması lazım değil mi? Şurası. Şu mu? Evet.
+
+432
+01:41:26,068 --> 01:41:27,068
+Evet.
+
+433
+01:41:35,796 --> 01:41:41,296
+Orası da böyle olacak o zaman değil mi? Tamam mıyız?
+
+434
+01:41:55,636 --> 01:41:56,636
+Evet.
+
+435
+01:41:58,136 --> 01:41:59,136
+Peki.
+
+436
+01:42:03,731 --> 01:42:05,332
+Şimdi de şeyi bulalım.
+
+437
+01:42:10,228 --> 01:42:12,228
+F4'ü bulalım.
+
+438
+01:42:13,728 --> 01:42:21,003
+F4 nasıl bir şey olacak? 3, 2, 2, 1 ile 1, 1, 1, 0'ın çarpımı. Bu nasıl bir şey olacak?
+
+439
+01:42:32,979 --> 01:42:34,619
+5, 3, 3, 2, 3.
+
+440
+01:42:38,036 --> 01:42:40,036
+F5'i de sizin için yazıyorum.
+
+441
+01:42:42,036 --> 01:42:47,036
+8, 5, 5, 3 olacak. Bu rakamlar size bir şey ifade ediyor mu?
+
+442
+01:42:48,036 --> 01:42:51,036
+Çözdüğümüz problemle alakalı olarak tabii.
+
+443
+01:42:52,036 --> 01:42:55,036
+Fibancı sayılarını hatırlayalım. Fibancı sayılar şöyle bir şeydi.
+
+444
+01:42:56,036 --> 01:43:01,036
+1, 1, 2, 3, 5, 8 diye gidiyordu değil mi?
+
+445
+01:43:07,956 --> 01:43:08,956
+Sonuna on it.
+
+446
+01:43:13,908 --> 01:43:27,347
+Madres'in sıfıra sıfırıncı elemanı Cümart-6 yazarsak bu da 13,8,8,5. Aslında şöyle bir şey görüyoruz.
+
+447
+01:43:36,851 --> 01:43:45,851
+Fibonacci n, burası da Fibonacci n-1'i gösteriyor. Değil mi? Doğru mu?
+
+448
+01:43:46,851 --> 01:43:48,851
+Doğru hocam.
+
+449
+01:43:49,851 --> 01:43:53,851
+Şuraya bakarsak, birinci, ikinci, üçüncü, dörüncü, beşinci, altıncı, yedinci.
+
+450
+01:43:53,851 --> 01:44:03,787
+Dolayısıyla f üzeri n'i bulduğumuzda, Fibonacci n üzeri n artı 1'i bulmuş oluyoruz.
+
+451
+01:44:04,083 --> 01:44:13,083
+O zaman, ben f üzeri n'i hesaplayarak da n. fibonacci sayısını bulabilirim, doğru mu? Bu matrisi.
+
+452
+01:44:16,659 --> 01:44:17,659
+Evet hocam.
+
+453
+01:44:17,659 --> 01:44:37,659
+Güzel, tamam. Peki, f üzeri n dediğimiz şey, yani f dediğimiz şey, bunu biz yine lineer bir şekilde hesaplarsak yine, yani f üzeri n'i hesapladığımızda, lineer bir yapıda bu yine n'li karmaşıklığa sahip olur.
+
+454
+01:44:40,148 --> 01:44:43,667
+Ama biz daha önce neyi bulmuştuk hatırlıyor musunuz?
+
+455
+01:44:43,667 --> 01:44:51,988
+Bir sayının n. üstünü logaritma 2 tabanında n karmaşıklıkla bulabilmiştik değil mi?
+
+456
+01:44:52,988 --> 01:44:53,988
+Hatırlıyor musunuz?
+
+457
+01:44:55,188 --> 01:44:56,228
+Hatırlıyoruz.
+
+458
+01:44:56,228 --> 01:44:57,228
+Değil mi?
+
+459
+01:44:57,228 --> 01:45:04,948
+O zaman ben bir matrisin de n. üstünü acaba logaritma 2 tabanında n karmaşıklıkla bulabilir miyim?
+
+460
+01:45:06,003 --> 01:45:18,003
+Şimdi bu herhangi bir matriz için yapılabilecek bir şey değil. Ama elimde 2x2'lik bir matriz olduğunu biliyorum.
+
+461
+01:45:18,003 --> 01:45:20,003
+2x2'lik bir matrizin...
+
+462
+01:45:23,507 --> 01:45:29,507
+Çarpımında sabit sayıda işlem yani n'e bağlı olan bir işlem sayısı yok burada değil mi?
+
+463
+01:45:29,507 --> 01:45:32,507
+Yani nasıl ifade edelim?
+
+464
+01:45:32,507 --> 01:45:38,507
+İşte şunlarla şunları çarpıyoruz. Bunlarla şunları çarpıyoruz, bunlarla bunları çarpıyoruz.
+
+465
+01:45:38,528 --> 01:45:40,028
+Daha sonra bu çarpılıyor.
+
+466
+01:45:40,128 --> 01:45:41,347
+Sonra bununla bunlar çarpılıyor.
+
+467
+01:45:41,408 --> 01:45:42,408
+Bununla bunlar çarpılıyor.
+
+468
+01:45:42,768 --> 01:45:43,948
+Bunlara işlemler yapılıyor.
+
+469
+01:45:44,307 --> 01:45:46,988
+Yani şurada işte iki tane çarpma bir tane toplam.
+
+470
+01:45:47,048 --> 01:45:49,248
+İki tane çarpma bir tane toplam.
+
+471
+01:45:49,307 --> 01:45:50,967
+İki tane çarpma bir tane toplam şeklinde.
+
+472
+01:45:51,688 --> 01:45:53,408
+Yedi sekiz tane işlem var.
+
+473
+01:45:53,628 --> 01:45:55,448
+Tamam sabit sayıda sekiz tane işlem var.
+
+474
+01:45:55,908 --> 01:45:59,228
+Sabit sayıda sekiz tane işlem olduğuna göre.
+
+475
+01:45:59,764 --> 01:46:16,023
+Herhangi bir sayın çarpımda. O zaman ben bir sayının nasıl üstünü logaritma iki tabanında n karmaşıklıkta bulabiliyorsam, bir matrisin de ki yani buradaki elimizdeki f matrisinin de n. üstünü logaritma iki karmaşıklıkta bulabilirim.
+
+476
+01:46:16,595 --> 01:46:20,975
+Dolayısıyla f üzeri n'i ben logaritma 2 karmaşıklıkta bulabilirim.
+
+477
+01:46:20,975 --> 01:46:31,475
+f üzeri n'i logaritma 2 karmaşıklıkta bulabiliyor olmanın anlamı şu, ben n'inci Fibonacci sayısını logaritma 2 tabanında n karmaşıklıkta bulabilirim demek.
+
+478
+01:46:33,315 --> 01:46:34,195
+Anlatabildim mi?
+
+479
+01:46:35,275 --> 01:46:40,775
+Tabii bunu çok daha iyi anlamanız için şunu yapmanızı istiyorum sizlerden mutlaka ama mutlaka.
+
+480
+01:46:41,415 --> 01:46:43,135
+Bu anlattığım şeyin kodunu yazın.
+
+481
+01:46:43,507 --> 01:47:01,420
+Yani şunu demeye çalışıyorum, bir deminki yazdığımız gibi rekörsif olarak Fibonacci kodunu yazın. Daha önce şeyleri yazmıştık, hani dizi kullanan, dizi kullanmayan, karmaşıklığı ON olan şeyi yazmıştık.
+
+482
+01:47:01,587 --> 01:47:12,587
+Şimdi sizden istediğim şey, rekörsif olan, demin bahsettiğimiz, yani Fibonacci n eşittir, Fibonacci n-1 artı Fibonacci n-2'li olan halini bir yazın. Tamam mı?
+
+483
+01:47:12,587 --> 01:47:24,587
+Bunun karmaşıklığı oldukça fazla olacak. İşte 1 üzeri 6, 18 üzeri n olacak. Tamam mı? Bunun karmaşıklığı. Rekörsif haline kalmışlık.
+
+484
+01:47:27,796 --> 01:47:52,096
+F matrisinin eninci üstünü, daha önce bir sayının logaritma iki tabanında en karmaşıklıkta eninci üstünü bulmuştuk ya, onu modifiye ederek bir matrisin, yani şu matrisimizde şu F matrisi, bu F matrisinin eninci üstünü logaritma iki tabanında karmaşıklıkta bulan üst alma, matris üstü alma fonksiyonu da yazın. Tamam.
+
+485
+01:47:52,787 --> 01:48:02,287
+Ve buradan da, dediğim gibi, logaritma iki tabanda n ile n. fibonacci sayısına erişebildiğinizi görün.
+
+486
+01:48:02,287 --> 01:48:15,247
+Şimdi tabii bunu yaptığınızda, aradaki farkları algılamanız, bilgisayarda çalıştırdığınızda, yani karmaşıklığın etkisini görmek için
+
+487
+01:48:15,859 --> 01:48:23,859
+Atıyorum, işte 5. if-if-evanatçı sayısını bulmak istediğinizde aradaki farklılıkları çok fazla göremezsiniz. Tamam mı? Bu sıkıntı.
+
+488
+01:48:23,859 --> 01:48:33,859
+Ama 100. 1000. if-evanatçı sayısını bulmak istediğinizde, o zaman aradaki farkları bariz bir şekilde görmeye başlarsınız.
+
+489
+01:48:33,859 --> 01:48:38,667
+Şimdi bunları söylüyorum, bunu mutlaka yapın diyorum çünkü...
+
+490
+01:48:38,868 --> 01:48:52,868
+Yakında projeniz gelecek. Projenizde de bir algoritmanın karmaşıklığını ölçmek, süresini ölçmek falan gibisinden şeylerle ihtiyacınız olabilecek gibi görünüyor.
+
+491
+01:48:52,868 --> 01:48:58,868
+Dolayısıyla bir algoritmana kadar sürüyor, çalıştırmasına kadar sürüyor.
+
+492
+01:49:01,555 --> 01:49:25,355
+Bulan program, basit komutlar var, yapmanız gereken birkaç tane küçük işlem. Ama bilgisayarlar dediğim gibi çok hızlı oldukları için çok küçük sayılarda neyi göremeyeceksiniz? Süreler arasında çok büyük farklar göremeyeceksiniz. Ya şunu yapacaksınız, o işlemi...
+
+493
+01:49:25,363 --> 01:49:36,644
+Milyon kere tekrar ettirerek iki tane algoritmanın arasındaki karmaşıklığın farkını görebilirsiniz. Biraz işi uzatarak yani milyon kere tekrar ettirmekten kastım o.
+
+494
+01:49:37,363 --> 01:49:47,263
+Yani mesela iki tane sıralama algoritması var diyelim ki bunları bir de karşılaştıracaksınız. İkisi de 0.00 şey saniyelerde çalışıyorlar. Ama gidip şey yaparsınız işte o işi.
+
+495
+01:49:47,699 --> 01:49:54,699
+1000 kere, 10.000 kere tekrar ettirirseniz, o zaman ikisinin arasındaki fark bir tanesi 4 saniyede çalışırken bir tanesi 2 saniyede çalışmaya başlayacak.
+
+496
+01:49:54,699 --> 01:50:01,699
+1000 tekrarı 4 saniyede yaparken, o değil 1000 tekrarı 2 saniyede yapacak. O zaman ölçülebilir farklar görmeye başlayacaksınız.
+
+497
+01:50:01,699 --> 01:50:13,699
+Ya da buradaki gibi mesela 1000 kere ya da 10.000 kere tekrar değil de, buradaki gibi büyük Fibonacci sayılarını bulmak için nasıl bir şeyler oluyor?
+
+498
+01:50:14,543 --> 01:50:31,703
+Recursive halinde mesela bininci fibonacci sayısını bulmaya kalktığınızda steki patlatacaksınız. Mesela patlatın, tamam? Bunları görün neler oluyor, neler bitiyor, nasıl hatalar çıkıyor. Derlenecek programınız. Herhangi bir hata vermeyecek. Çalıştırmaya kalktığınızda patlayacak.
+
+499
+01:50:32,500 --> 01:51:00,500
+Bunlarla birinci elden hep temas edin. Birinci elden temas etmek ne demek? Sizin kendinizin yapması, kendinizin uğraşıp oluşturmanız ve kendi gözlerinizle görmeniz, deneyimlemeniz demek. Birinci elden deneyimin kas anlamı bu. Ve öğrenmenin de en iyi yöntemi o da. Başkalarının anlattıklarıyla bir yere kadar içselleştirirsiniz. Ama en fazla kendiniz deneyimlediğiniz zaman bunları gerçekleştirir.
+
+500
+01:51:00,500 --> 01:51:04,500
+Çok daha iyi içselleştirebilirsiniz. Tamam mı?
+
+501
+01:51:04,500 --> 01:51:18,500
+Peki arkadaşlar, dediğim gibi mutlaka mutlaka bunun kodunu Fibonacci'nin anlattığımız bir sürü versiyonu oldu. Bunların hepsine bir yazın bakalım, bir analizini yapın, çalıştırın.
+
+502
+01:51:18,500 --> 01:51:24,500
+Bana da gönderebilirsiniz yaptıktan sonra, ben de bir incelerim.
+
+503
+01:51:25,524 --> 01:51:29,524
+Peki, bu haftalık bu kadar arkadaşlar. Sorusu olan var mı?
+
+504
+01:51:31,524 --> 01:51:33,524
+Yok hocam, teşekkür ederiz.
+
+505
+01:51:34,524 --> 01:51:35,524
+Ben teşekkür ederim.
+
+506
+01:51:41,300 --> 01:51:42,300
+İyi günler hocam.
+
+507
+01:51:42,300 --> 01:51:45,300
+İyi günler herkese arkadaşlar, kolay gelsin.
+
+508
+01:51:45,300 --> 01:51:46,300
+İyi günler hocam.
+
+509
+01:51:46,300 --> 01:51:48,300
+İyi günler.
