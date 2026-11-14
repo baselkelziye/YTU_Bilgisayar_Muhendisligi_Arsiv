@@ -1,0 +1,2011 @@
+1
+00:01:20,628 --> 00:01:21,128
+Obrigada.
+
+2
+00:01:26,292 --> 00:01:28,311
+Hello to everyone.
+
+3
+00:01:31,311 --> 00:01:35,031
+I hope all of you and your families have been glad.
+
+4
+00:01:41,683 --> 00:01:42,563
+Bu nasıl birçok?
+
+5
+00:01:51,796 --> 00:01:54,764
+We were talking about the determines.
+
+6
+00:01:58,707 --> 00:02:05,668
+Please, please close your microphones. Can you hear me?
+
+7
+00:02:13,812 --> 00:02:15,812
+Evet, seneyi duyabiliyoruz.
+
+8
+00:02:15,812 --> 00:02:16,812
+Tamam.
+
+9
+00:02:16,812 --> 00:02:18,812
+Söyleyebilirsiniz.
+
+10
+00:02:35,604 --> 00:02:39,604
+Sir, you can mute, izeldin. Tamam ben, cekaparlı.
+
+11
+00:02:39,903 --> 00:02:40,556
+Okay.
+
+12
+00:02:49,395 --> 00:02:49,795
+Não.
+
+13
+00:02:55,572 --> 00:03:00,051
+We are going to talk about some properties of determinants.
+
+14
+00:03:00,051 --> 00:03:08,771
+Actually, these properties are very important for computing a determinant of a matrix.
+
+15
+00:03:08,771 --> 00:03:09,771
+So...
+
+16
+00:03:13,716 --> 00:03:14,436
+First,
+
+17
+00:03:26,388 --> 00:03:28,948
+Deuteronaut of the identity matrix is one.
+
+18
+00:03:34,996 --> 00:04:02,348
+Örneğin, birçok birçok, birçok
+
+19
+00:04:03,092 --> 00:04:13,092
+We multiply these main diagonal elements and subtract from this multiplication.
+
+20
+00:04:13,092 --> 00:04:19,091
+So this is 1 times 1 minus 0 times 0 gives 1.
+
+21
+00:04:19,091 --> 00:04:25,091
+So every identity matrix has...
+
+22
+00:04:25,711 --> 00:04:30,711
+Determinant of every identi matris is 1.
+
+23
+00:04:30,711 --> 00:04:31,711
+Ok.
+
+24
+00:04:35,956 --> 00:04:57,756
+ve, if you replace the place of any two rows or columns in a matrix, then the determinant of this matrix changes its sign.
+
+25
+00:05:04,307 --> 00:05:14,408
+After changing the rows or the columns place, then the determinant turns to the negative or inverse.
+
+26
+00:05:14,408 --> 00:05:14,807
+Ok?
+
+27
+00:05:15,807 --> 00:05:16,668
+For example,
+
+28
+00:05:20,884 --> 00:05:36,004
+For the island matrix 1, 0, 0, 1, we know that the determinant of this matrix is 1.
+
+29
+00:05:38,403 --> 00:05:46,403
+If you replace column 1,
+
+30
+00:05:50,387 --> 00:05:53,827
+Y column 2, this gives,
+
+31
+00:05:58,132 --> 00:06:22,612
+matris 0, 1, 1, 0. So, determinant of this matris is 0, minus 1, minus 1. So, the property 2 says, if we replace the place of any two rows or counts of a matris, then determinant change its sign. So,
+
+32
+00:06:23,124 --> 00:06:40,484
+We know the determinant of the identity matrix is 1. We change, we replace the column 1 with column 2. So, the determinant of this matrix will minus 1. Okay.
+
+33
+00:06:44,084 --> 00:06:44,644
+And
+
+34
+00:06:56,115 --> 00:07:05,475
+Actually, this means, this means, if a matrix B,
+
+35
+00:07:10,387 --> 00:07:13,387
+matris A'ı,
+
+36
+00:07:27,283 --> 00:07:31,443
+Baymat Baink
+
+37
+00:07:38,836 --> 00:07:41,236
+Er oğur kalm.
+
+38
+00:07:55,283 --> 00:07:57,683
+Ups, ich
+
+39
+00:08:01,651 --> 00:08:03,435
+Pay a real number.
+
+40
+00:08:06,867 --> 00:08:26,447
+t, then, determinant, b, equals t times, determinant, a. Actually, here, the matrix, a is,
+
+41
+00:08:36,436 --> 00:08:45,436
+Bayram [öğrenci], bu bir n-by-n matrices.
+
+42
+00:08:45,436 --> 00:09:03,436
+Bu n-by-n matrices.
+
+43
+00:09:04,500 --> 00:09:05,799
+Matips A
+
+44
+00:09:09,491 --> 00:09:17,412
+Okay, this is matrix A. Then we multiply the first row by t.
+
+45
+00:09:21,203 --> 00:09:35,203
+ve, bu matrix, bu matrix, bu, B, B, B'ye, t'e, A'ye, ok?
+
+46
+00:09:47,892 --> 00:09:48,932
+Simple example.
+
+47
+00:10:04,307 --> 00:10:30,647
+Also, the determinant behaves like a linear function. It means that, linear function means that, f of say x plus y equals f of x plus f of y. So, you can write this determinant.
+
+48
+00:10:32,371 --> 00:10:39,572
+since determinant is a linear function over the rows of a matrix, like this.
+
+49
+00:10:39,572 --> 00:10:40,572
+OK?
+
+50
+00:10:42,971 --> 00:10:46,971
+You can purchase it into this determinant, like this.
+
+51
+00:10:53,139 --> 00:11:02,139
+Maybe I have to give some examples of these properties.
+
+52
+00:11:08,788 --> 00:11:11,488
+Na, tutan mundt of.
+
+53
+00:11:29,556 --> 00:11:30,175
+Siz,
+
+54
+00:11:35,187 --> 00:11:50,827
+The first rule is the multiple of 2. We can write this determinant as 2 times 1, 3, 1, 12.
+
+55
+00:11:51,888 --> 00:12:01,867
+And also, since the second column of this matrix is the multiple of 3, we can also write this determinant as
+
+56
+00:12:02,292 --> 00:12:09,312
+2 x 3 x determinant, 1, 1, 1, 4.
+
+57
+00:12:10,092 --> 00:12:15,652
+So, what is the determinant of this matrix? 4 minus 1, 3.
+
+58
+00:12:15,912 --> 00:12:21,232
+So, 2 x 3 x 3 gives 80.
+
+59
+00:12:22,512 --> 00:12:27,192
+Okay, this is example for the property 2 or 3.
+
+60
+00:12:31,283 --> 00:12:31,983
+Alt.
+
+61
+00:12:51,443 --> 00:13:00,427
+If two rows or columns of matris are equal, then the determinant is zero. This was a very important property for the determinant.
+
+62
+00:13:06,131 --> 00:13:07,131
+[öğrenci],
+
+63
+00:13:09,331 --> 00:13:10,331
+which one?
+
+64
+00:13:12,331 --> 00:13:21,131
+Since the first row is the multiple of two, so we factor out two from determinant.
+
+65
+00:13:21,131 --> 00:13:22,131
+Okay.
+
+66
+00:13:22,531 --> 00:13:27,131
+So, we have two times one, three.
+
+67
+00:13:29,131 --> 00:13:33,003
+And for this matrix,
+
+68
+00:13:36,371 --> 00:13:59,692
+Since this column is the multiple of three, we factor out three. So we have two times, three times. So this is one. If you divide three by three, one, twelve divided by three gives four.
+
+69
+00:14:03,764 --> 00:14:07,644
+[öğrenci], I didn't understand your question.
+
+70
+00:14:08,683 --> 00:14:08,964
+Okey.
+
+71
+00:14:11,844 --> 00:14:12,803
+Divide
+
+72
+00:14:12,803 --> 00:14:16,403
+By three.
+
+73
+00:14:17,124 --> 00:14:17,584
+Okey.
+
+74
+00:14:24,659 --> 00:14:30,659
+ve, if two rows or columns of a matrix are equal, then its determinant will be zero.
+
+75
+00:14:33,659 --> 00:14:34,659
+For example,
+
+76
+00:14:36,659 --> 00:14:37,659
+for example,
+
+77
+00:14:47,187 --> 00:15:01,387
+Determinant of Matrix, 1, 2, 3, 1, 5, 3, 2, 8.
+
+78
+00:15:04,787 --> 00:15:13,787
+Actually, you can compute the determinant of this matrix by Saru's rule, but now,
+
+79
+00:15:15,187 --> 00:15:27,187
+We want to compute the determinant in an easy way or quickly by using the properties of the determinants.
+
+80
+00:15:27,187 --> 00:15:42,187
+Again, since the column 3 is the multiple of 3, we can write this determinant as 3 times 1, 1, 2,
+
+81
+00:15:43,091 --> 00:15:51,091
+2, 5, 8, 1, 1, 2.
+
+82
+00:15:52,692 --> 00:16:00,132
+Since here the property says that if the two rows or columns of a matrix are equal, then
+
+83
+00:16:05,107 --> 00:16:07,527
+Determinant of the matrix is 0.
+
+84
+00:16:07,767 --> 00:16:17,307
+So, since the column 1 and 3 are equal, the determinant of this matrix will be 0.
+
+85
+00:16:19,147 --> 00:16:19,807
+Okay.
+
+86
+00:16:34,676 --> 00:16:42,235
+If a matrix
+
+87
+00:16:46,548 --> 00:16:47,028
+B
+
+88
+00:16:51,764 --> 00:16:53,304
+Obting from A.
+
+89
+00:17:01,556 --> 00:17:02,655
+Vai, e link.
+
+90
+00:17:11,476 --> 00:17:12,376
+Aya link.
+
+91
+00:17:14,376 --> 00:17:16,376
+Each element of...
+
+92
+00:17:28,084 --> 00:17:28,983
+I'm true.
+
+93
+00:17:38,163 --> 00:17:39,163
+Off,
+
+94
+00:17:41,563 --> 00:17:42,563
+Check, Come.
+
+95
+00:17:53,172 --> 00:17:53,532
+Ok.
+
+96
+00:17:57,364 --> 00:17:58,364
+maybe
+
+97
+00:18:01,124 --> 00:18:02,364
+art row
+
+98
+00:18:03,364 --> 00:18:04,364
+say art
+
+99
+00:18:06,963 --> 00:18:07,963
+column
+
+100
+00:18:11,731 --> 00:18:12,931
+Of A
+
+101
+00:18:16,723 --> 00:18:17,723
+t times
+
+102
+00:18:17,723 --> 00:18:45,824
+t
+
+103
+00:18:37,011 --> 00:18:40,051
+of the est
+
+104
+00:18:43,051 --> 00:18:44,172
+of our color.
+
+105
+00:18:52,500 --> 00:19:04,500
+t
+
+106
+00:18:51,635 --> 00:19:02,755
+where r is not equal to s of a, then the determinant doesn't change.
+
+107
+00:19:08,135 --> 00:19:10,135
+t
+
+108
+00:19:07,251 --> 00:19:13,052
+determinant D, equals determinant A.
+
+109
+00:19:13,951 --> 00:19:31,612
+So, here it says, if you obtain the matrix B, matrix B, by adding a row, by multiplying the k times of a row of A,
+
+110
+00:19:34,836 --> 00:19:35,976
+ve ekip
+
+111
+00:19:35,976 --> 00:20:01,836
+altyazı
+
+112
+00:20:00,596 --> 00:20:02,516
+Obtain from A
+
+113
+00:20:06,163 --> 00:20:06,683
+Bye!
+
+114
+00:20:19,347 --> 00:20:31,228
+Multiplying the ith rule by t and add to its jth rule, then the determinant doesn't change.
+
+115
+00:20:31,228 --> 00:20:32,607
+Okay.
+
+116
+00:20:37,779 --> 00:20:38,740
+For example,
+
+117
+00:20:48,159 --> 00:20:51,139
+altyazı
+
+118
+00:20:47,347 --> 00:21:00,788
+Bu, eğer, if a matrix A has a row or column which are all zero, then the determinant of this matrix is zero.
+
+119
+00:21:09,556 --> 00:21:15,695
+Determinant of a triangular matrix is the product of the elements on the main diagonal.
+
+120
+00:21:42,451 --> 00:21:43,311
+For example.
+
+121
+00:21:47,508 --> 00:22:02,668
+Determinant 1, 2, 3, 2, minus 1, 3, 1, 0, 1.
+
+122
+00:22:15,412 --> 00:22:21,311
+2, minus 1, 3, 1, 0, 1.
+
+123
+00:22:26,675 --> 00:22:31,175
+Bu matrisin, bu matrisin, neden?
+
+124
+00:22:32,175 --> 00:22:35,675
+Çünkü, çünkü,
+
+125
+00:22:36,675 --> 00:22:40,675
+V8,
+
+126
+00:22:45,619 --> 00:22:57,739
+2x, draw 2 of this matrix to the row 1, and get this matrix.
+
+127
+00:23:01,172 --> 00:23:10,380
+Bu, bu
+
+128
+00:23:29,748 --> 00:23:31,748
+ve diğer propiyeler.
+
+129
+00:23:49,844 --> 00:23:55,724
+This is actually a very important property for the matris or the determinant of a matris.
+
+130
+00:23:56,443 --> 00:24:08,764
+The determinant of the multiplication of a and b equals determinant a times determinant b.
+
+131
+00:24:15,251 --> 00:24:29,451
+Actually, this property is very important, because the determinant of the matrix, the inverse of the matrix A, if it has an inverse, equals 1 over determinant A.
+
+132
+00:24:30,652 --> 00:24:34,291
+Note that we called A is singular.
+
+133
+00:24:43,859 --> 00:24:53,859
+Singular if it has no universe.
+
+134
+00:24:57,428 --> 00:25:06,788
+So, if the inverse of A does not exist, then the determinant of this matrix is undefined.
+
+135
+00:25:08,788 --> 00:25:18,788
+Also, also, the determinant of the matrix A2 equals determinant A2.
+
+136
+00:25:22,195 --> 00:25:27,195
+vektör konularını işleyeceğiz.
+
+137
+00:25:27,195 --> 00:25:51,148
+Vektör konularını işleyeceğiz.
+
+138
+00:25:37,140 --> 00:25:45,760
+Determinant of 2 times a equals total power n times determinant a.
+
+139
+00:25:46,720 --> 00:25:50,560
+Actually, this comes from, we can prove it easily.
+
+140
+00:25:57,299 --> 00:25:59,299
+Vektör konularını işleyeceğiz.
+
+141
+00:25:56,915 --> 00:25:59,275
+If A is M by M matrix,
+
+142
+00:26:11,539 --> 00:26:15,539
+Bu, bir sqa matrisi var mı? Evet. Evet. Tamam.
+
+143
+00:26:28,819 --> 00:26:39,699
+Say, A is an n by n scale matris, then we have to compute, or we want to compute to the term of 2 times A.
+
+144
+00:26:40,859 --> 00:26:52,819
+2 times A means, if you multiply a matris by a scalar, it means that you multiply each element by 2.
+
+145
+00:26:57,619 --> 00:26:59,419
+2 times a gives
+
+146
+00:27:19,955 --> 00:27:38,375
+From the properties of the determinant, we know that if you multiply any row or a column of a matrix by a scalar t, here t is 2, then the determinant is t times the determinant of the matrix.
+
+147
+00:27:47,059 --> 00:28:08,079
+Multiply the determinant by n 2's. It means that 2 to the n. Okay. So the determinant of 2 times n means, or we can generalize this as k times a.
+
+148
+00:28:10,079 --> 00:28:13,079
+This is k to the n.
+
+149
+00:28:13,428 --> 00:28:17,428
+ve determinant A.
+
+150
+00:28:17,428 --> 00:28:22,428
+Ve determinant A ve a matrix ve a transpose ı eş.
+
+151
+00:28:24,428 --> 00:28:26,428
+Example is here.
+
+152
+00:28:26,428 --> 00:28:29,428
+This is the matrix A,
+
+153
+00:28:29,428 --> 00:28:32,428
+and this is its transpose.
+
+154
+00:28:32,428 --> 00:28:36,428
+So, the determinant of these two matrices are the same.
+
+155
+00:28:53,844 --> 00:28:54,344
+Now,
+
+156
+00:28:59,571 --> 00:29:00,571
+Not before.
+
+157
+00:29:08,084 --> 00:29:09,703
+Gimik'e ne zaman post.
+
+158
+00:29:40,435 --> 00:29:45,435
+Now we can summarize our conclusions.
+
+159
+00:29:58,259 --> 00:29:59,980
+determinant of
+
+160
+00:30:04,756 --> 00:30:05,756
+matris,
+
+161
+00:30:07,476 --> 00:30:08,156
+which we
+
+162
+00:30:09,476 --> 00:30:13,036
+interchange the i and j-tour of
+
+163
+00:30:14,836 --> 00:30:15,836
+this matris
+
+164
+00:30:17,635 --> 00:30:18,436
+equals
+
+165
+00:30:19,875 --> 00:30:20,635
+minus
+
+166
+00:30:21,875 --> 00:30:24,436
+determinant A, where
+
+167
+00:30:25,076 --> 00:30:26,036
+i is not
+
+168
+00:30:26,796 --> 00:30:28,556
+equal to j.
+
+169
+00:30:33,587 --> 00:31:00,203
+If you multiply any row or column of a matrix A, then each determinant will be k times determinant A, and
+
+170
+00:31:03,604 --> 00:31:22,044
+If you multiply the icrow of A by k and add it to the j-trow, then the determinant of the matrix doesn't change.
+
+171
+00:31:35,188 --> 00:31:35,567
+Ok.
+
+172
+00:31:46,932 --> 00:31:49,372
+No, no.
+
+173
+00:31:53,875 --> 00:32:03,615
+using the properties of determinants, let us compute the determinant of this matrix.
+
+174
+00:32:05,635 --> 00:32:14,695
+Now, we have a matrix with x, y, z, and t, which are unknowns or indeterminants.
+
+175
+00:32:22,259 --> 00:32:26,259
+ve
+
+176
+00:32:26,259 --> 00:32:27,259
+have to
+
+177
+00:32:27,259 --> 00:32:29,259
+use
+
+178
+00:32:29,259 --> 00:32:32,259
+we have to use
+
+179
+00:32:32,259 --> 00:32:34,259
+or
+
+180
+00:32:34,259 --> 00:32:36,259
+we have to get
+
+181
+00:32:36,259 --> 00:32:39,259
+the same elements to factor out
+
+182
+00:32:39,259 --> 00:32:42,259
+this same elements from the terminal. So
+
+183
+00:32:42,259 --> 00:32:44,259
+we have
+
+184
+00:32:44,259 --> 00:32:46,259
+in the first column
+
+185
+00:32:46,259 --> 00:32:48,259
+x plus y
+
+186
+00:32:49,172 --> 00:33:02,471
+Z, Z, and in the second Z, X plus Y, T, and on the third T, T, X plus Y.
+
+187
+00:33:06,003 --> 00:33:08,003
+So if you...
+
+188
+00:33:09,683 --> 00:33:10,683
+If you...
+
+189
+00:33:17,556 --> 00:33:25,635
+Add the second and the third column to the first column.
+
+190
+00:33:29,748 --> 00:33:44,708
+C1 plus C2 plus C3 to C1.
+
+191
+00:33:52,660 --> 00:33:57,700
+x plus y plus z plus t
+
+192
+00:34:01,395 --> 00:34:26,395
+Again, x plus y plus z plus t, and again, x plus y plus z plus t. And the second column is same. And the third column is same.
+
+193
+00:34:31,891 --> 00:34:33,835
+He has since...
+
+194
+00:34:46,931 --> 00:34:56,371
+Since the first column is the multiple of x plus y plus z plus t, we can factor out this.
+
+195
+00:34:59,795 --> 00:35:24,375
+So, this determinant equals x plus y plus z plus t times, we have one, one, one, z, x plus y, t.
+
+196
+00:35:27,123 --> 00:35:27,583
+Çi
+
+197
+00:35:34,260 --> 00:35:37,580
+3, x plus y.
+
+198
+00:35:39,340 --> 00:35:59,280
+Actually, you can use the service rule, or you can directly compute to the determinant of this 3 by 3 matrix, but this is a common use to reduce this matrix into a triangular matrix.
+
+199
+00:36:00,563 --> 00:36:10,563
+We know that if a matrix is a triangular, then its determinant is the product of its main diagonal entries.
+
+200
+00:36:14,547 --> 00:36:26,067
+So, so we have here, one, one, one. So we can make this one and one zero using the first row.
+
+201
+00:36:28,207 --> 00:36:28,707
+So,
+
+202
+00:36:33,235 --> 00:36:33,675
+So.
+
+203
+00:36:38,260 --> 00:36:45,619
+Multiply the first row by minus 1 and add it to the second row.
+
+204
+00:36:48,100 --> 00:36:57,280
+And multiply the first row by minus 1 and add it to the third row.
+
+205
+00:37:01,844 --> 00:37:11,884
+I said before that you can only use, you can only use both row and column operations in determinants.
+
+206
+00:37:11,884 --> 00:37:12,284
+Okay.
+
+207
+00:37:13,423 --> 00:37:19,164
+We only use actually the column operations in determinants.
+
+208
+00:37:19,784 --> 00:37:20,463
+Okay.
+
+209
+00:37:22,064 --> 00:37:28,324
+And from the properties of determinants, we know that adding the K
+
+210
+00:37:28,916 --> 00:37:40,036
+multiple of a row to another row doesn't change the determinant, so these operations do not change the determinant.
+
+211
+00:37:41,655 --> 00:37:43,195
+So this is equal to.
+
+212
+00:37:47,507 --> 00:38:14,907
+Terminant, we have x plus y plus z plus t times, the first row doesn't change, 1 z t, we multiply the first row by minus 1 and add it to the second row, which gives 0, this is
+
+213
+00:38:16,788 --> 00:38:23,827
+x plus y minus z, and this is zero.
+
+214
+00:38:26,827 --> 00:38:43,307
+And for the third row, we multiply the first row by minus one and add it to the third row, gives zero, t minus z.
+
+215
+00:38:50,099 --> 00:38:53,679
+x plus y minus t.
+
+216
+00:39:00,532 --> 00:39:01,516
+Möğün!
+
+217
+00:39:05,844 --> 00:39:25,523
+You can easily find the determinant of this matrix, because using the cofactor expansion, we can use the first column or the second row, because it has two zeros and two zeros.
+
+218
+00:39:34,068 --> 00:39:42,388
+If we use the cofactor expansion direct to the first column, which gives...
+
+219
+00:39:50,771 --> 00:40:11,092
+Let us say, this is R. R times, 1 times, 1 is in the first row and the first column, minus 1 over 1 plus 1.
+
+220
+00:40:12,372 --> 00:40:17,492
+And we delete the first row and the first column.
+
+221
+00:40:24,340 --> 00:40:24,880
+Zero.
+
+222
+00:41:03,987 --> 00:41:20,947
+So, determinant of this matrix will R times which is x plus y plus z plus t times, this is positive.
+
+223
+00:41:20,947 --> 00:41:29,747
+So, the determinant of this matrix is x plus y minus z times.
+
+224
+00:41:31,923 --> 00:41:36,323
+x plus y minus t.
+
+225
+00:41:43,572 --> 00:41:44,072
+Okey?
+
+226
+00:41:55,699 --> 00:41:56,219
+Okey.
+
+227
+00:41:59,219 --> 00:42:00,539
+Does it make sense?
+
+228
+00:42:08,820 --> 00:42:09,420
+Any questions?
+
+229
+00:42:16,340 --> 00:42:16,840
+No question.
+
+230
+00:42:23,284 --> 00:42:27,644
+Tamam, herkes understood, değil mi?
+
+231
+00:42:29,024 --> 00:42:29,804
+Nearly.
+
+232
+00:42:30,604 --> 00:42:31,324
+Tamam.
+
+233
+00:42:31,864 --> 00:42:36,704
+Evet.
+
+234
+00:42:39,444 --> 00:42:45,624
+Again, by using the properties of the determinant, let us find the determinant of this matrix.
+
+235
+00:42:46,684 --> 00:42:50,644
+Actually, you can find the determinant of this matrix.
+
+236
+00:42:51,731 --> 00:42:58,851
+ve sorus rule, or directly from the cofactor expansion.
+
+237
+00:42:58,851 --> 00:43:12,131
+But here, I want to give a method which is called reduction to.
+
+238
+00:43:21,139 --> 00:43:22,439
+Triangular matriks.
+
+239
+00:43:31,699 --> 00:43:58,059
+We, using the elementary row operations, we reduct this matrix, or we put this matrix into a triangular matrix, then we know that if a matrix is in the triangular form, then its determinant is equal to the product of the entries on the main diagonal.
+
+240
+00:43:58,739 --> 00:44:03,739
+Bu, bu matrisi, çeşitli bir noktada bulabiliriz.
+
+241
+00:44:08,148 --> 00:44:22,988
+Determin, of 2, 1, 3, minus 1, 2, 1, minus 2, 2, 3.
+
+242
+00:44:27,987 --> 00:44:29,987
+Make sure that we have two.
+
+243
+00:44:35,411 --> 00:44:39,291
+Minus 2, here. Minus 1, here.
+
+244
+00:44:45,396 --> 00:45:04,356
+If you apply the first row by 1 over 2 and add it to the second row, then we make minus 1, 0.
+
+245
+00:45:04,356 --> 00:45:09,676
+Similarly, if you add the first row to the third row,
+
+246
+00:45:15,668 --> 00:45:17,847
+We can make minus two zero.
+
+247
+00:45:20,547 --> 00:45:22,988
+Since from the properties of determinant,
+
+248
+00:45:25,827 --> 00:45:29,168
+after these operations, the determinant doesn't change.
+
+249
+00:45:29,988 --> 00:45:35,108
+So we have two, one, three.
+
+250
+00:45:36,007 --> 00:45:41,108
+We multiply the first row by one over two and add it to the...
+
+251
+00:45:41,940 --> 00:45:51,940
+İlk row, which gives 0, we multiply this and add to this one.
+
+252
+00:45:55,380 --> 00:45:58,380
+ve
+
+253
+00:45:58,380 --> 00:46:29,551
+bu
+
+254
+00:46:09,235 --> 00:46:34,347
+ve ilk bir
+
+255
+00:46:35,123 --> 00:46:37,283
+The third row is the multiple of
+
+256
+00:46:43,572 --> 00:46:44,032
+3
+
+257
+00:46:53,556 --> 00:47:15,596
+We can write this determinant as 5 over 2 times 3, 2, 1, 3, 0, 1, 1, 0, 1, 2.
+
+258
+00:47:18,596 --> 00:47:19,355
+Now,
+
+259
+00:47:20,692 --> 00:47:33,152
+Now, if you make this entry 0, then this matris will be on the upper triangular matris form.
+
+260
+00:47:33,152 --> 00:47:46,872
+So, multiplying the second row by minus 1 and add it to the third row, we have
+
+261
+00:47:54,228 --> 00:48:18,288
+After applying this operation, the determinant of this matrix doesn't change. So this is equal to the 5 over 2 times 3, 2, 1, 3, 0, 1, 1.
+
+262
+00:48:20,083 --> 00:48:26,183
+0, ve multiply this by minus 1, and add it to this one.
+
+263
+00:48:29,940 --> 00:48:30,539
+Mão!
+
+264
+00:48:43,284 --> 00:48:48,284
+This matrix is upper triangular matrix.
+
+265
+00:48:54,931 --> 00:49:03,811
+And the determinant of a triangular matrix is the multiple or the product of the elements on the main diagonal.
+
+266
+00:49:06,811 --> 00:49:22,251
+So, the determinant of this matrix will 5 over 2 times 3 times 2 times 1 times 1.
+
+267
+00:49:22,963 --> 00:49:27,604
+Gears, 50.
+
+268
+00:49:32,820 --> 00:49:33,320
+Okay.
+
+269
+00:49:35,579 --> 00:49:37,320
+This is another method.
+
+270
+00:49:38,420 --> 00:49:40,579
+Actually, you can use this method
+
+271
+00:49:40,579 --> 00:49:49,860
+in 4x4 matrisis, because you know
+
+272
+00:49:49,860 --> 00:49:56,079
+how to multiply the 3x3 matrisis,
+
+273
+00:49:56,079 --> 00:49:57,539
+so
+
+274
+00:50:00,000 --> 00:50:09,639
+If you have a matrix with a dimension greater than 3, you can use this method.
+
+275
+00:50:11,079 --> 00:50:11,579
+Okay.
+
+276
+00:50:14,760 --> 00:50:15,539
+So,
+
+277
+00:50:17,639 --> 00:50:22,019
+we found the determinant of this matrix is 15.
+
+278
+00:50:23,399 --> 00:50:25,799
+Let us check if it is true or not.
+
+279
+00:50:28,467 --> 00:50:29,007
+Yes.
+
+280
+00:50:37,940 --> 00:50:39,940
+Ette, ette, ette.
+
+281
+00:50:49,684 --> 00:50:59,104
+Now, by using elemental row operations, we put this matrix into the upper triangular form.
+
+282
+00:50:59,104 --> 00:51:00,284
+Yeah, it's alright sir.
+
+283
+00:51:00,284 --> 00:51:15,564
+So, we know that if a matrix is in triangular form, even in upper or lower triangular form, the determinant of this triangular matrix will...
+
+284
+00:51:16,211 --> 00:51:37,867
+B, B
+
+285
+00:51:39,027 --> 00:51:45,987
+Yani, if we use the service rule, even it's upper triangular, we will find the same...
+
+286
+00:51:45,987 --> 00:51:51,987
+Yeah, yeah, yeah. No need to use the service rule. Okay.
+
+287
+00:51:52,347 --> 00:51:52,867
+I understand.
+
+288
+00:51:52,867 --> 00:51:54,867
+If you have a triangular matrix...
+
+289
+00:51:56,532 --> 00:52:03,951
+L1, upper, or lower, then you can only multiply the entries on the main diagram.
+
+290
+00:52:04,371 --> 00:52:04,612
+Okay.
+
+291
+00:52:04,951 --> 00:52:07,032
+I guess I missed it. I'm taking note. Thanks, sir.
+
+292
+00:52:11,219 --> 00:52:11,739
+Ok.
+
+293
+00:52:12,939 --> 00:52:13,439
+Now.
+
+294
+00:52:21,331 --> 00:52:21,791
+No.
+
+295
+00:52:26,931 --> 00:52:28,931
+Tamam, burada geçti.
+
+296
+00:52:35,155 --> 00:52:48,775
+Now, we are, we will give the inverse of a matrix, or we will find the inverse of a matrix by using the determinant.
+
+297
+00:52:50,155 --> 00:52:56,935
+Actually, I have already gave the service rule, maybe we can remind here.
+
+298
+00:53:00,724 --> 00:53:03,264
+Saros' rule, or rule of Saros.
+
+299
+00:53:16,371 --> 00:53:19,371
+The rule of Sarus.
+
+300
+00:53:23,284 --> 00:53:28,923
+Can only use for
+
+301
+00:53:33,043 --> 00:53:35,043
+3x3 matris.
+
+302
+00:53:38,043 --> 00:53:38,683
+Okey.
+
+303
+00:53:42,963 --> 00:53:47,063
+So you can only use this rule for 3x3 matrices.
+
+304
+00:53:47,063 --> 00:54:09,803
+If we have a 3x3 matrix A, then you repeat, you can repeat the first two columns as here, or you can also repeat the first two rows like here.
+
+305
+00:54:40,724 --> 00:54:42,424
+Forms some of the products.
+
+306
+00:54:46,420 --> 00:54:48,619
+Of the entries on the lines,
+
+307
+00:54:51,199 --> 00:54:53,839
+From the left to the right,
+
+308
+00:54:57,715 --> 00:54:58,836
+left to right
+
+309
+00:54:58,836 --> 00:55:02,436
+and
+
+310
+00:55:02,436 --> 00:55:05,296
+subtract from this number
+
+311
+00:55:12,755 --> 00:55:15,135
+The products of the entries on the lines.
+
+312
+00:55:21,492 --> 00:55:26,612
+from right to the left.
+
+313
+00:55:27,892 --> 00:55:30,112
+So, this is the SARS rule.
+
+314
+00:55:30,612 --> 00:55:30,912
+Okay.
+
+315
+00:55:32,112 --> 00:55:38,952
+You can repeat the first two columns also, or you can repeat the first two rows.
+
+316
+00:55:40,672 --> 00:55:41,012
+Okay.
+
+317
+00:55:42,292 --> 00:55:48,912
+For example, let us use the rule of SARS to find the determinant of the matrix.
+
+318
+00:55:50,547 --> 00:55:58,047
+Repeat the first two column on the right.
+
+319
+00:55:58,047 --> 00:56:17,947
+One, two, three, four, five, six, and add to the entries on the lines.
+
+320
+00:56:18,516 --> 00:56:20,516
+left to the right
+
+321
+00:56:49,940 --> 00:56:50,620
+Ya, ya.
+
+322
+00:56:52,620 --> 00:56:53,540
+You have already.
+
+323
+00:56:56,260 --> 00:56:58,019
+Yes, Sarusrud is easier.
+
+324
+00:57:03,507 --> 00:57:10,507
+ve
+
+325
+00:57:41,940 --> 00:57:44,039
+So, atızı da result.
+
+326
+00:57:47,635 --> 00:57:50,935
+Oh, result is zero. Okey.
+
+327
+00:57:56,275 --> 00:58:23,595
+Now, now, we learn how to, or finding the inverse of a matrix by using the termalant, we already know, actually, finding the inverse of a matrix by using,
+
+328
+00:58:24,659 --> 00:58:32,460
+.
+
+329
+00:58:35,987 --> 00:58:51,768
+Eğer matrisi, non-singular matrisi, it means that it has an inverse, then you can find its inverse by using elemental row operations.
+
+330
+00:58:53,447 --> 00:59:03,307
+We write the matris on the left and write the identity matris on the right, and using elemental row operations,
+
+331
+00:59:04,532 --> 00:59:20,132
+If you put matrix A into the identity matrix form, then the identity matrix will turn into the inverse of A.
+
+332
+00:59:21,132 --> 00:59:28,892
+Actually, this is not an easy method for finding the inverse of a matrix.
+
+333
+00:59:31,315 --> 00:59:37,435
+A common use of finding inverse of a matrix is using the determinant of a matrix.
+
+334
+00:59:38,955 --> 00:59:49,435
+First, we will give some notations and definitions to achieve our goal.
+
+335
+00:59:51,435 --> 00:59:57,635
+First, what is the L-joint matrix?
+
+336
+01:00:06,387 --> 01:00:09,387
+Definition of agent matrices like this.
+
+337
+01:00:10,387 --> 01:00:11,387
+Let
+
+338
+01:00:20,115 --> 01:00:22,015
+A, B, A, M, by M, matrips.
+
+339
+01:00:35,635 --> 01:00:37,635
+M x M matriks
+
+340
+01:00:43,956 --> 01:00:52,496
+Adjoint A, called Adjoint of.
+
+341
+01:00:58,324 --> 01:01:02,043
+A is the matrix
+
+342
+01:01:10,771 --> 01:01:11,412
+Uz,
+
+343
+01:01:17,268 --> 01:01:19,007
+IJT Entry
+
+344
+01:01:34,324 --> 01:01:35,864
+is the cofactor of
+
+345
+01:01:52,307 --> 01:01:54,147
+I, J, I.
+
+346
+01:01:56,087 --> 01:01:57,047
+It means that
+
+347
+01:01:57,047 --> 01:02:02,047
+the edge unit of A
+
+348
+01:02:50,195 --> 01:02:56,695
+Actually, this is a transpose of the matrix of the cofactors of A.
+
+349
+01:03:04,019 --> 01:03:08,519
+Bu, a11, a11.
+
+350
+01:03:36,947 --> 01:03:45,707
+So, the adjoint of a matrix A is the transpose of its cofactor matrix.
+
+351
+01:03:47,067 --> 01:03:59,467
+Or, the matrix of the cofactor Aji of the Aji.
+
+352
+01:04:16,596 --> 01:04:17,196
+Let.
+
+353
+01:04:22,099 --> 01:04:24,076
+ABM matrix
+
+354
+01:04:49,427 --> 01:04:54,427
+Compute, Enduring A
+
+355
+01:04:59,251 --> 01:05:06,771
+Öncelikle, we have to find all cofactors of all entries of A.
+
+356
+01:05:09,012 --> 01:05:23,572
+What is A11? A11 is the cofactor of the entry 3, which is in the first row and first column.
+
+357
+01:05:25,780 --> 01:05:30,020
+And delete this row and this column.
+
+358
+01:05:37,715 --> 01:05:45,547
+Bu, bu
+
+359
+01:05:49,588 --> 01:05:50,968
+A12
+
+360
+01:05:56,211 --> 01:05:58,731
+Delete the first row and second column.
+
+361
+01:06:04,659 --> 01:06:23,699
+5, 2, 1, minus 3, minus 15, minus 17. We have negative in front of this determinant, so this is 17.
+
+362
+01:06:35,956 --> 01:06:38,956
+İlk, ilk, ilk, vek, üçüncü kolumn.
+
+363
+01:06:44,371 --> 01:06:49,692
+Bu, bu, 6'a bu, 6'a bu.
+
+364
+01:06:56,371 --> 01:06:57,911
+A2, A2, A1
+
+365
+01:07:03,827 --> 01:07:04,947
+This is negative.
+
+366
+01:07:10,132 --> 01:07:20,731
+Minus 1 to the 3, negative. We have negative in front of the determinant and we delayed the second row at the first column.
+
+367
+01:07:22,731 --> 01:07:24,572
+This is 6.
+
+368
+01:07:27,172 --> 01:07:30,412
+So minus 6.
+
+369
+01:07:32,172 --> 01:07:37,012
+And A2 to, we have positive.
+
+370
+01:07:38,164 --> 01:07:40,963
+in front of the determinant.
+
+371
+01:07:42,244 --> 01:07:45,043
+Today, this row and this column,
+
+372
+01:07:47,684 --> 01:07:51,244
+this row and this column,
+
+373
+01:07:51,244 --> 01:07:53,403
+so minus
+
+374
+01:07:53,403 --> 01:07:55,384
+line
+
+375
+01:07:55,384 --> 01:07:57,264
+minus
+
+376
+01:07:57,264 --> 01:07:58,304
+one
+
+377
+01:07:58,304 --> 01:08:00,503
+minus
+
+378
+01:08:00,503 --> 01:08:01,384
+10
+
+379
+01:08:01,384 --> 01:08:04,483
+and
+
+380
+01:08:08,211 --> 01:08:29,211
+We have negative in front of the determinant, plate the second row and third column. We have zero, positive two, and we have negative, so negative two.
+
+381
+01:08:37,460 --> 01:09:04,979
+A31, we have positive, the sign is positive, late, late, minus 4, minus 6, minus 10, and A23, we have the sign negative, so late, late, 6, minus 5, 1.
+
+382
+01:09:05,684 --> 01:09:06,564
+Minus 1.
+
+383
+01:09:10,484 --> 01:09:11,664
+At the last one.
+
+384
+01:09:21,427 --> 01:09:34,688
+Delay, delay, we have positive, so 18, plus 10, we have 28.
+
+385
+01:09:34,688 --> 01:09:47,728
+Yes, [öğrenci], A23, we delete the second row at the third column.
+
+386
+01:09:51,988 --> 01:10:16,488
+3 x 0, 0, minus, minus 2 x 1, positive 2. Since, this is 2 x minus 1 to the 2 times, 2 plus 5 gives minus 1, it is minus 2. [öğrenci].
+
+387
+01:10:22,420 --> 01:10:33,039
+Okay. So, so, the agent matrix of A
+
+388
+01:10:33,039 --> 01:10:36,420
+will
+
+389
+01:10:43,283 --> 01:11:08,903
+A11 minus A12, A13, A21, A22, A23, A31, A232.
+
+390
+01:11:10,899 --> 01:11:12,011
+vektör
+
+391
+01:11:17,203 --> 01:11:17,543
+Ok.
+
+392
+01:11:25,811 --> 01:11:26,592
+And
+
+393
+01:11:33,747 --> 01:11:41,347
+If A is a square matrix, m by n square matrix, then A times
+
+394
+01:11:46,068 --> 01:11:50,868
+[öğrenci], please, please, compute again.
+
+395
+01:11:53,927 --> 01:11:56,028
+A2, 1.
+
+396
+01:11:58,528 --> 01:12:00,748
+A2, 1 is.
+
+397
+01:12:05,811 --> 01:12:18,192
+Minus 1 to the 2 plus 1, manut. Okay. This is negative. So,
+
+398
+01:12:22,644 --> 01:12:23,144
+Okey?
+
+399
+01:12:37,652 --> 01:12:42,652
+Evet, [öğrenci], we only have one way for finding the joint of the matris.
+
+400
+01:12:42,652 --> 01:12:43,627
+OK.
+
+401
+01:12:52,467 --> 01:13:13,667
+If A is an n by n square matrix, then A times A joint A equals A joint A times A, and this is equal to the, make sure this is determinant A, determinant A times the identity matrix.
+
+402
+01:13:15,487 --> 01:13:16,028
+Okay.
+
+403
+01:13:21,332 --> 01:13:33,072
+For example, for example, for the matrix, for the matrix A,
+
+404
+01:13:40,307 --> 01:13:41,307
+A is
+
+405
+01:13:58,452 --> 01:13:59,467
+Arkadaşlar,
+
+406
+01:14:03,060 --> 01:14:05,060
+bu A
+
+407
+01:14:05,060 --> 01:14:09,804
+ve A'ı
+
+408
+01:14:33,876 --> 01:14:35,195
+This is a drink day.
+
+409
+01:14:38,771 --> 01:14:44,771
+If you multiply these two matris, then you have
+
+410
+01:15:15,220 --> 01:15:23,739
+So, you can conclude that the determinant of A is minus 94.
+
+411
+01:15:27,444 --> 01:15:30,704
+Ok, the theorem says this.
+
+412
+01:15:32,604 --> 01:15:37,884
+And, and, what is the inverse of the matrix A?
+
+413
+01:15:39,544 --> 01:15:50,884
+If A is an n by n matrix, and if the determinant of A is different from 0, then the inverse of the matrix A is...
+
+414
+01:15:55,188 --> 01:16:21,260
+A'ınvursa matriği A'ı 1'e 1
+
+415
+01:16:21,395 --> 01:16:27,595
+Then this will be equal to the determinant A times the identity matrix.
+
+416
+01:16:28,675 --> 01:16:36,576
+Now we have A before example, previous example.
+
+417
+01:16:37,795 --> 01:16:40,595
+We also found a joint of A.
+
+418
+01:16:41,395 --> 01:16:54,235
+If you multiply these two matrices, then you will find this matrix, which is equal to the minus 94 times the identity matrix.
+
+419
+01:16:55,235 --> 01:17:02,415
+So, this is an example for this property.
+
+420
+01:17:03,895 --> 01:17:08,755
+A times a joint A.
+
+421
+01:17:09,395 --> 01:17:13,975
+Ecos, determinant, A times, identimatiç, ok.
+
+422
+01:17:19,252 --> 01:17:26,252
+Ve, çok önemli bir teorimde,
+
+423
+01:17:26,252 --> 01:17:27,252
+bu,
+
+424
+01:17:29,252 --> 01:17:31,252
+birçok bir matrix
+
+425
+01:17:33,252 --> 01:17:36,252
+eşit
+
+426
+01:17:38,252 --> 01:17:40,252
+birçok birçok
+
+427
+01:17:40,252 --> 01:17:46,028
+a'
+
+428
+01:17:51,399 --> 01:17:51,532
+A'ınversiyonu, matris,
+
+429
+01:17:50,036 --> 01:17:50,996
+For example,
+
+430
+01:18:19,636 --> 01:18:21,176
+Let us find
+
+431
+01:18:24,659 --> 01:18:26,760
+Bu ümruğus of the matrix A.
+
+432
+01:18:30,579 --> 01:18:36,420
+Actually, first, look at its determinant.
+
+433
+01:18:39,219 --> 01:18:41,180
+Look at its determinant.
+
+434
+01:18:42,699 --> 01:18:49,479
+If the determinant of A is different from 0, then you can find its inverse.
+
+435
+01:18:49,479 --> 01:18:54,399
+But if the determinant is 0, then the matrix is singular.
+
+436
+01:18:54,940 --> 01:18:57,159
+So it has no inverse.
+
+437
+01:18:58,292 --> 01:18:59,971
+Determinant of A
+
+438
+01:19:04,020 --> 01:19:14,520
+is, I use the search through, 0, 6,
+
+439
+01:19:17,684 --> 01:19:19,943
+Minus 1
+
+440
+01:19:25,460 --> 01:19:52,139
+8 minus 2. Determinant of the matrix A is minus 2, so it has an inverse. The inverse of this matrix is equal to the 1 over determinant A times A joint A.
+
+441
+01:19:52,851 --> 01:19:55,271
+So, let us find the aging matrix.
+
+442
+01:19:58,836 --> 01:20:01,836
+Eduink matrisi, bu şekilde.
+
+443
+01:20:06,131 --> 01:20:25,652
+A11, A12, A13, A21, A22, A23, A31, A32, A33.
+
+444
+01:20:37,011 --> 01:20:46,492
+A11 is minus 1 to the 1 plus 1. I delete the first row and the first column.
+
+445
+01:20:50,963 --> 01:20:56,703
+which gives minus 4.
+
+446
+01:20:59,003 --> 01:21:00,463
+A1 on 2.
+
+447
+01:21:04,307 --> 01:21:06,608
+[öğrenci], birşvan.
+
+448
+01:21:09,547 --> 01:21:10,427
+Dutturmadı.
+
+449
+01:21:17,427 --> 01:21:17,788
+Ok.
+
+450
+01:21:30,515 --> 01:21:33,515
+Evet, teşekkür ederim.
+
+451
+01:21:42,228 --> 01:21:54,567
+What is wrong here? This is 6, ok, and 1 plus, oh ok, this is 9.
+
+452
+01:21:59,507 --> 01:22:00,460
+Teşekkürler.
+
+453
+01:22:06,100 --> 01:22:10,480
+A12, thank you, [öğrenci].
+
+454
+01:22:17,971 --> 01:22:28,971
+We have negative sign in front of the determinant and delete the first row and the second column, 0, minus 2.
+
+455
+01:22:28,971 --> 01:22:33,971
+We have also minus in front of this, so this is 2.
+
+456
+01:22:33,971 --> 01:22:42,507
+And 1, 3, 0, minus 1.
+
+457
+01:22:45,427 --> 01:23:10,220
+A21, A
+
+458
+01:23:14,515 --> 01:23:21,136
+0, 9, 1, 8, 2, 3.
+
+459
+01:23:27,604 --> 01:23:36,003
+4, minus 3, 1, minus 1, and...
+
+460
+01:23:39,988 --> 01:23:40,488
+3
+
+461
+01:23:40,488 --> 01:23:43,768
+1
+
+462
+01:23:43,768 --> 01:23:46,007
+6
+
+463
+01:23:46,007 --> 01:23:47,228
+5
+
+464
+01:23:58,547 --> 01:24:02,747
+For, minus for,
+
+465
+01:24:11,123 --> 01:24:18,123
+Bu 2, 2'ye görebilirsiniz.
+
+466
+01:24:18,123 --> 01:24:24,108
+Bu, bu, ajoin matrix.
+
+467
+01:24:27,283 --> 01:24:41,224
+Minus 4, 2, minus 1, 2, minus 1, minus 1, 5, minus 4, 2.
+
+468
+01:24:46,228 --> 01:24:47,435
+vektör,
+
+469
+01:24:51,283 --> 01:24:52,283
+Okay.
+
+470
+01:24:54,884 --> 01:24:56,283
+Is it true?
+
+471
+01:24:56,283 --> 01:25:00,283
+The agent matris A, as we found here.
+
+472
+01:25:03,783 --> 01:25:05,283
+And the image of A...
+
+473
+01:25:12,787 --> 01:25:19,787
+A' ve
+
+474
+01:25:19,787 --> 01:25:22,787
+A'
+
+475
+01:25:22,787 --> 01:25:24,787
+4'
+
+476
+01:25:24,787 --> 01:25:25,787
+3'
+
+477
+01:25:25,787 --> 01:25:26,787
+2'
+
+478
+01:25:26,787 --> 01:25:27,787
+3'
+
+479
+01:25:27,787 --> 01:25:28,787
+5'
+
+480
+01:25:28,787 --> 01:25:33,787
+3'
+
+481
+01:25:33,787 --> 01:25:35,787
+4'
+
+482
+01:25:35,787 --> 01:25:45,935
+3'
+
+483
+01:25:42,036 --> 01:25:48,336
+1 over 3, 1 over 3, and minus 2 over 3.
+
+484
+01:25:49,416 --> 01:26:03,496
+We can also check this by multiplying the inverse of A and itself, and find the identematics.
+
+485
+01:26:03,496 --> 01:26:03,996
+Okay.
+
+486
+01:26:13,332 --> 01:26:13,692
+Ok?
+
+487
+01:26:17,235 --> 01:26:38,636
+So, we finished our lecture for this week. Do you have any comments or questions about the structures or anything else?
+
+488
+01:26:45,811 --> 01:26:46,572
+Any questions?
+
+489
+01:26:56,884 --> 01:27:09,324
+[öğrenci], you can also use, or you can also find the inverse of a matrix which has size greater than 3.
+
+490
+01:27:09,963 --> 01:27:14,203
+This is not only matrices for 3x3 matrices.
+
+491
+01:27:15,203 --> 01:27:23,104
+You can also find any n by n square matrix.
+
+492
+01:27:23,104 --> 01:27:23,463
+Okay.
+
+493
+01:27:28,372 --> 01:27:53,372
+The same way you can use same way you first you compute the term of the matrix if you have a two four by four matrix you complete its determinant by using a factor expansion or or you can reduce this matrix into the triangular form.
+
+494
+01:27:54,292 --> 01:28:04,292
+then you can easily find its determinant and later you calculate the adjoint matrix
+
+495
+01:28:04,292 --> 01:28:08,292
+then you will find the inverse of this matrix
+
+496
+01:28:08,292 --> 01:28:11,244
+not too complicated I think working
+
+497
+01:28:15,347 --> 01:28:16,467
+Evet, [öğrenci].
+
+498
+01:28:17,788 --> 01:28:28,648
+For 2x2 matris, you can easily find the adjoint matris, because you have two rows and two columns.
+
+499
+01:28:31,087 --> 01:28:35,587
+So, thank you for all of you.
+
+500
+01:28:37,587 --> 01:28:40,307
+Hope to see you next week.
+
+501
+01:28:40,608 --> 01:28:41,868
+Have a good day.
+
+502
+01:28:46,836 --> 01:28:55,775
+I also upload the notes on my analysis page, you can see the notes from that, okay?
+
+503
+01:28:58,775 --> 01:29:00,195
+Have a nice day of all of you.

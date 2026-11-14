@@ -1,0 +1,1995 @@
+1
+00:04:28,500 --> 00:04:30,040
+Good morning to everyone!
+
+2
+00:04:54,420 --> 00:05:01,420
+Örneğin, ilk önce, bir kerekaç yapacağım, de metodları,
+
+3
+00:05:01,420 --> 00:05:05,996
+ve örneğin, altyazı, ile ilgili bir kereçlik kullanmak için,
+
+4
+00:05:13,971 --> 00:05:16,871
+Look at the list here.
+
+5
+00:05:19,132 --> 00:05:38,951
+To solve a linear equation in N equations and in N unknowns, by Gauss-Jordan elimination or by Gauss elimination, we need N cubed over three number of additions.
+
+6
+00:05:41,267 --> 00:06:00,467
+And to find solution of these linear equations, if we use the inverse of matris, which is on the line 4, we need n-cube computations.
+
+7
+00:06:01,747 --> 00:06:04,387
+And the last one is the Kremens rule.
+
+8
+00:06:05,427 --> 00:06:07,187
+If you want to use this,
+
+9
+00:06:08,211 --> 00:06:23,831
+Linear Equations, if you want to solve this linear equation with the Kramas rule, you need 4 over 3 computations.
+
+10
+00:06:23,831 --> 00:06:31,132
+So, from this list, it is clear that the best method is
+
+11
+00:06:31,636 --> 00:06:34,636
+Gauss Jordan elimination, or Gauss elimination.
+
+12
+00:06:34,636 --> 00:06:37,636
+And the worst one is Kramer's rule.
+
+13
+00:06:37,636 --> 00:06:39,436
+Ok.
+
+14
+00:06:43,699 --> 00:06:51,180
+Bu, bu
+
+15
+00:07:13,204 --> 00:07:15,004
+Şimdi, back to our lectures.
+
+16
+00:07:16,624 --> 00:07:19,843
+Today, we are talking about lecture spaces.
+
+17
+00:07:22,144 --> 00:07:26,843
+Did you learn your exam date?
+
+18
+00:07:27,684 --> 00:07:28,963
+Do you know your exam date?
+
+19
+00:07:32,692 --> 00:07:34,792
+Midterm 2? Yes.
+
+20
+00:07:35,992 --> 00:07:39,711
+23.12.
+
+21
+00:07:42,711 --> 00:07:47,112
+The exam included the topics
+
+22
+00:07:47,112 --> 00:07:51,031
+from the beginning.
+
+23
+00:07:55,923 --> 00:07:59,524
+to the week time.
+
+24
+00:08:05,747 --> 00:08:08,347
+Evet, zaten, we have a class next week.
+
+25
+00:08:10,028 --> 00:08:18,268
+So, the lecture notes in this class is included in the exam.
+
+26
+00:08:20,168 --> 00:08:25,888
+But I recommend you to study first week 6 to the week 10.
+
+27
+00:08:26,587 --> 00:08:32,048
+Then later, if you have a time, study the first, the...
+
+28
+00:08:32,048 --> 00:08:36,248
+Evet, evet.
+
+29
+00:08:37,648 --> 00:08:39,408
+Week 10 is included.
+
+30
+00:08:49,748 --> 00:09:11,948
+[öğrenci], I know, but if we make two midterms at the first midterm week, we have no classes, but at midterm two, at this week, we have all classes.
+
+31
+00:09:14,008 --> 00:09:15,307
+Yes, yes, [öğrenci].
+
+32
+00:09:15,711 --> 00:09:17,932
+No, no, no. Six, seven.
+
+33
+00:09:32,724 --> 00:09:43,403
+Öncelikle bu hafta 5 hafta bu hafta ilk hafta.
+
+34
+00:09:49,460 --> 00:09:54,120
+[öğrenci], your lecture notes are on your lesson wall. Do you know your lesson wall?
+
+35
+00:10:01,844 --> 00:10:14,324
+Ok, you can find the lecture notes on your lesson wall. No, [öğrenci], exam will be at 4 pm.
+
+36
+00:10:16,924 --> 00:10:27,524
+You can find the announcement from our department webpage. Ok.
+
+37
+00:10:35,059 --> 00:10:35,559
+Mal.
+
+38
+00:10:45,812 --> 00:10:47,912
+What is the vector space?
+
+39
+00:10:57,812 --> 00:11:03,991
+Actually, we are talking about in this lecture, the real vector space.
+
+40
+00:11:19,443 --> 00:11:24,003
+Actually, linear algebra has a classification scheme,
+
+41
+00:11:27,364 --> 00:11:28,884
+which is very important.
+
+42
+00:11:30,963 --> 00:11:35,323
+The first one is the notation of the vector space.
+
+43
+00:11:36,723 --> 00:11:44,763
+The vector spaces consist of a set of objects and two operations on these objects.
+
+44
+00:11:45,587 --> 00:11:48,587
+vektör uzayları, bu konularını işleyeceğiz.
+
+45
+00:12:08,563 --> 00:12:12,463
+The name, VectorSpace.
+
+46
+00:12:19,764 --> 00:12:24,764
+konjugoruz up the image of the directed line segments from the plane.
+
+47
+00:12:26,163 --> 00:12:27,163
+So,
+
+48
+00:12:28,764 --> 00:12:30,963
+for particle electric spaces,
+
+49
+00:12:31,963 --> 00:12:32,963
+we
+
+50
+00:12:36,764 --> 00:12:37,564
+or,
+
+51
+00:12:37,764 --> 00:12:45,963
+for particle electric spaces, the members of the set of objects and operations on these objects can
+
+52
+00:12:47,635 --> 00:13:14,731
+Bu, bu
+
+53
+00:13:14,964 --> 00:13:21,584
+Vektör space, real vector space is a set.
+
+54
+00:13:23,224 --> 00:13:24,163
+We say V.
+
+55
+00:13:29,107 --> 00:13:43,788
+v of elements on which we have two operations, which is vector addition and vector scalar multiplication.
+
+56
+00:13:45,907 --> 00:13:56,187
+So, for a vector space or real vector space, we have a set v and we have two operations.
+
+57
+00:13:56,724 --> 00:14:03,724
+vektör uzayları, bu konularını işleyeceğiz.
+
+58
+00:14:24,052 --> 00:14:46,251
+Bu, ilk operasyonu, if u and v are any elements in v, then u plus v is also v. Bu, bu property is also called, or we can say that if the set v satisfies this condition,
+
+59
+00:14:46,480 --> 00:14:49,940
+We say that V is closed under this operation.
+
+60
+00:14:50,379 --> 00:14:51,900
+Okay, the first one.
+
+61
+00:14:52,519 --> 00:14:59,700
+If U and V are elements in V, then U plus V is also in V.
+
+62
+00:14:59,700 --> 00:15:05,059
+So V is closed under operation addition.
+
+63
+00:15:08,724 --> 00:15:31,724
+Then, first we check this closed operation or closed property, then the addition operation has to the commutative property.
+
+64
+00:15:39,539 --> 00:15:47,719
+u plus v is equal to v plus u.
+
+65
+00:15:51,220 --> 00:15:56,259
+ve vektörle additionin
+
+66
+00:15:56,860 --> 00:15:59,052
+bu vektörle
+
+67
+00:16:05,716 --> 00:16:12,516
+means u plus v plus w is equal to the u plus v plus w.
+
+68
+00:16:14,716 --> 00:16:25,216
+And three, there exists an element zero in v, such that u plus zero is equal to zero plus u, and this is equal to u.
+
+69
+00:16:30,707 --> 00:16:44,108
+has to be, has include an zero element. Okay. Or you can say this as identity.
+
+70
+00:16:54,388 --> 00:16:55,788
+Editive Identity
+
+71
+00:17:00,820 --> 00:17:01,820
+Ok.
+
+72
+00:17:03,820 --> 00:17:05,820
+So, rektör space
+
+73
+00:17:09,820 --> 00:17:10,820
+has
+
+74
+00:17:11,820 --> 00:17:12,820
+to
+
+75
+00:17:13,820 --> 00:17:16,820
+include the additive identity.
+
+76
+00:17:16,820 --> 00:17:20,820
+And the last one for the first operation is that
+
+77
+00:17:21,820 --> 00:17:23,820
+the rektör space V
+
+78
+00:17:24,820 --> 00:17:26,820
+has to be included
+
+79
+00:17:28,339 --> 00:17:34,339
+has to be included the additive inverse of each element.
+
+80
+00:17:40,403 --> 00:18:00,963
+Bu, if you have element u in v, then there has to be exist an element minus u, which satisfies this condition, u plus minus u is equal to minus u plus u, and this is equal to zero element of v.
+
+81
+00:18:02,244 --> 00:18:03,963
+And the second part,
+
+82
+00:18:09,980 --> 00:18:14,980
+is about the second operation, which is scalar multiplication.
+
+83
+00:18:15,179 --> 00:18:23,579
+If u is an element in v and c is a constant or scalar or any real number,
+
+84
+00:18:23,779 --> 00:18:30,380
+then c times u is also in v.
+
+85
+00:18:30,579 --> 00:18:37,179
+So v has to be closed under the second operation.
+
+86
+00:18:39,892 --> 00:18:43,892
+ve 2.Operation de bu şekilde
+
+87
+00:18:43,892 --> 00:18:45,892
+satisiz.
+
+88
+00:18:45,892 --> 00:18:47,892
+1,2,3,4
+
+89
+00:18:47,892 --> 00:18:49,892
+Kondition.
+
+90
+00:18:49,892 --> 00:18:51,892
+İlk bir
+
+91
+00:18:53,892 --> 00:19:05,892
+bir şekilde
+
+92
+00:19:07,955 --> 00:19:17,395
+c times u plus v is equal to c times u plus c times v, which is distributive law.
+
+93
+00:19:19,195 --> 00:19:35,355
+And also, if you add two scalars, which is the usual addition, has to be a distributive law over
+
+94
+00:19:35,827 --> 00:19:45,827
+Scalar Multiplication. Scalar Multiplication has to be here, associative property.
+
+95
+00:19:45,827 --> 00:19:55,827
+And this is multiplicative identity.
+
+96
+00:20:07,188 --> 00:20:14,307
+So, from now on, the elements of V are called vectors.
+
+97
+00:20:16,588 --> 00:20:22,348
+The elements of the set of real numbers are called scalars.
+
+98
+00:20:24,188 --> 00:20:31,188
+The operation plus or O plus is called vector addition.
+
+99
+00:20:36,051 --> 00:20:41,051
+O-multiplication is called scalar multiplication.
+
+100
+00:20:49,460 --> 00:20:59,460
+Here, the vector 0 in the property 4 is called a 0 vector.
+
+101
+00:21:01,460 --> 00:21:07,460
+The vector minus u is called a negative of u.
+
+102
+00:21:07,460 --> 00:21:15,460
+And also this vector, 0 vector and the negative of any vector are unique.
+
+103
+00:21:16,884 --> 00:21:17,284
+Ok.
+
+104
+00:21:29,236 --> 00:21:30,756
+Ve onni şey.
+
+105
+00:21:35,796 --> 00:21:37,796
+Vector space,
+
+106
+00:21:37,796 --> 00:21:39,796
+not a real vector space
+
+107
+00:21:39,796 --> 00:21:44,796
+because we only talk about real vector spaces.
+
+108
+00:21:44,796 --> 00:21:47,796
+So no need to say a real vector space.
+
+109
+00:21:47,796 --> 00:21:52,796
+It is enough to say a vector space.
+
+110
+00:21:52,796 --> 00:21:56,796
+And examples of vector spaces.
+
+111
+00:21:58,796 --> 00:22:00,716
+Consider R to the n.
+
+112
+00:22:01,460 --> 00:22:07,460
+which is the set of all n by one matrices.
+
+113
+00:22:07,460 --> 00:22:19,460
+So, if you define the O plus, the first operation, as the matrix addition,
+
+114
+00:22:19,460 --> 00:22:27,244
+and if you define the second operation, which is O,
+
+115
+00:22:28,115 --> 00:22:36,115
+dot, or O multiplication, as the multiplication of matrix by a real number, or a skater multiplication.
+
+116
+00:22:38,915 --> 00:22:44,615
+Then this set.
+
+117
+00:22:48,115 --> 00:22:55,956
+Satisfi all the condition that we gave in the definition 172.
+
+118
+00:22:55,956 --> 00:23:04,596
+So, this set is a vector space or real vector space.
+
+119
+00:23:11,731 --> 00:23:19,731
+We define the first operation as matrix addition.
+
+120
+00:23:25,748 --> 00:23:32,748
+We define second operation as scalar multiplication.
+
+121
+00:23:39,412 --> 00:24:02,831
+Let us first, let us first, satisfies all the properties, here, to the, r to the n. So it means that we will show that r to the n is a vector space.
+
+122
+00:24:13,364 --> 00:24:14,364
+İzhan mı?
+
+123
+00:24:18,804 --> 00:24:20,124
+Space, mat.
+
+124
+00:24:56,852 --> 00:24:57,548
+vekiz,
+
+125
+00:25:03,571 --> 00:25:04,831
+O plus is
+
+126
+00:25:08,915 --> 00:25:12,275
+find is matrixedition
+
+127
+00:25:26,355 --> 00:25:44,255
+Efendim, dersin duvarında ders notları var. Nasıl bulamıyorsun yani? [öğrenci], bu benim işe yaptığımı mı diyorsun? Bu farklı. Bunu ben bugün farklı bir yerden aldım. Tamam, bunu da dersten sonra yüklerim. Tamam.
+
+128
+00:25:57,940 --> 00:26:03,100
+O-multiputasyon is defined as scalar-multiputasyon
+
+129
+00:26:17,011 --> 00:26:18,011
+Metrisis.
+
+130
+00:26:19,011 --> 00:26:20,011
+So, first.
+
+131
+00:26:32,531 --> 00:26:59,971
+We have to check first if this set is closed under the first operation, which means if you have two elements which are in R to the N, say U is A1, A2 to the N, and
+
+132
+00:27:00,660 --> 00:27:10,740
+V is P1, B2 to the BN, which are two elements in R to the N.
+
+133
+00:27:11,980 --> 00:27:23,900
+Then UO plus V is defined as the matrix addition, so we know how to add two n by one matrices.
+
+134
+00:27:58,067 --> 00:28:18,867
+So, since the result of u plus u o plus v is an m by one matrix, which is in also r to the n, means that the operation o plus, which is defined as the matrix addition is closed under
+
+135
+00:28:22,420 --> 00:28:29,420
+ve özellikle,
+
+136
+00:28:36,500 --> 00:28:45,859
+plus v is equal to u plus v, which we have a commutative property for the addition, matrix addition.
+
+137
+00:28:50,195 --> 00:28:53,155
+So, the first property is alt.
+
+138
+00:28:54,096 --> 00:29:00,455
+Also, we know that the addition of matrisis has
+
+139
+00:29:07,059 --> 00:29:08,659
+Asusiyeti prokorki.
+
+140
+00:29:19,347 --> 00:29:23,427
+What is the zero of this operation or this set?
+
+141
+00:29:28,884 --> 00:29:37,924
+0 of this set is M by 1, 0 matris.
+
+142
+00:29:41,491 --> 00:29:43,491
+or additive identity.
+
+143
+00:29:44,491 --> 00:29:47,491
+and if you have
+
+144
+00:29:50,491 --> 00:29:52,491
+an element u
+
+145
+00:29:53,491 --> 00:29:55,491
+in r to the n
+
+146
+00:29:56,491 --> 00:29:57,491
+then
+
+147
+00:29:57,491 --> 00:29:59,491
+you can find
+
+148
+00:30:01,491 --> 00:30:04,491
+you can find an element minus u
+
+149
+00:30:07,124 --> 00:30:28,444
+A1 to the minus A n in R to the n, which satisfies u plus minus u is equal to minus u plus u and this is equal to zero of the set.
+
+150
+00:30:32,319 --> 00:30:37,319
+All the conditions for the first operation is satisfied.
+
+151
+00:30:39,319 --> 00:30:46,319
+And for the second operation, this is scalar multiplication of matrices.
+
+152
+00:30:48,319 --> 00:30:54,319
+If we have a lambda,
+
+153
+00:30:59,092 --> 00:31:06,532
+If you have a skater, lambda, and an element in v.
+
+154
+00:31:13,107 --> 00:31:21,107
+Then, it is clear that Lambda...
+
+155
+00:31:24,627 --> 00:31:31,327
+u, which is defined by the scalar multiplication over matrisis,
+
+156
+00:31:40,243 --> 00:31:46,423
+Since this n by one matrix, which is in R to the n, means that.
+
+157
+00:31:50,836 --> 00:31:51,476
+Hoşç.
+
+158
+00:31:56,788 --> 00:32:02,108
+B is closed, under operation.
+
+159
+00:32:07,092 --> 00:32:15,092
+vekutör uzayları, diğerlerden çok kolaylaştırma.
+
+160
+00:32:15,092 --> 00:32:32,092
+Yani, if you want to show that any set vector space, you have to show all these 10 conditions.
+
+161
+00:32:47,955 --> 00:32:57,955
+R to the n is a vector space under the matrix addition and scalar multiplication.
+
+162
+00:32:59,955 --> 00:33:00,955
+Similarly,
+
+163
+00:33:05,172 --> 00:33:20,491
+The set of all m by n matrices, with matrix addition as the first operation, and multiplication of a matrix by a real number as the second operation, is a vector space.
+
+164
+00:33:21,172 --> 00:33:26,852
+We denote this vector space by m, m by n.
+
+165
+00:33:47,923 --> 00:33:51,923
+n by n matrisis
+
+166
+00:33:58,387 --> 00:34:04,607
+And the other example, the set of all real numbers, R.
+
+167
+00:34:07,307 --> 00:34:21,608
+We know that the set of real numbers is R, with the first addition as the usual addition of the real numbers, and the second operation as the usual multiplication of real numbers is a vector space.
+
+168
+00:34:26,356 --> 00:34:32,596
+Bu, bu, real vector space.
+
+169
+00:34:38,643 --> 00:34:44,163
+The real numbers play both the roles of rektörs and scalers.
+
+170
+00:34:45,804 --> 00:35:02,523
+In the set of real numbers, the elements of R are both rektörs and scalers.
+
+171
+00:35:03,668 --> 00:35:30,508
+Bu, bu, n'ı 1'ı
+
+172
+00:35:30,708 --> 00:35:51,659
+Bir tane bir
+
+173
+00:36:14,003 --> 00:36:38,184
+Now, this is a specific example of vektör spaces. Let V be the set of all 2x2 matrices, which has the property that the trace of these matrices is equal to 0.
+
+174
+00:36:41,780 --> 00:37:06,780
+V includes elements which are 2x2 matrices like A, and the trace of A is equal to 0. So what is the trace of a matrix? The trace of a matrix is the addition of the sum of the entries on the main diagonal.
+
+175
+00:37:09,076 --> 00:37:17,655
+So, V is a set which includes
+
+176
+00:37:22,931 --> 00:37:37,411
+matrisi, which are 2 by 2, and has the property that trace A is equal to 0.
+
+177
+00:37:39,572 --> 00:37:49,731
+Now, we will show that the set V is a vector space under the operation,
+
+178
+00:37:52,884 --> 00:37:56,663
+O plus is standard matrix addition.
+
+179
+00:37:58,443 --> 00:38:03,304
+And the second operation is standard scalar multiplication of matrices.
+
+180
+00:38:09,331 --> 00:38:15,331
+We don't show all of the conditions or properties.
+
+181
+00:38:17,331 --> 00:38:31,331
+First, we will show that V is closed under first operation.
+
+182
+00:38:35,795 --> 00:38:50,435
+A and B. A and B are elements of V. So, they are 2 by 2 matrices. And also, the trace of this matrices have to be 0.
+
+183
+00:38:52,435 --> 00:39:00,395
+Means that A plus D is 0 and R plus P is also 0.
+
+184
+00:39:02,652 --> 00:39:17,891
+What is A O plus B? We define O plus as the standard matrix addition means that A plus R, B plus S, C plus T and D plus P.
+
+185
+00:39:18,092 --> 00:39:26,492
+So we have to check that if A plus B is 2 by 2 matrix, yes, it is 2 by 2 matrix.
+
+186
+00:39:30,547 --> 00:39:38,847
+Check that if the trace of a plus b is zero, what is the trace of a plus b?
+
+187
+00:39:41,327 --> 00:39:49,747
+The sum of the elements on the main diagonal, which is a plus r plus d plus p.
+
+188
+00:39:50,787 --> 00:39:56,247
+We know that a plus d is zero and also r plus p is zero.
+
+189
+00:39:58,844 --> 00:40:11,203
+The trace of this matrix is zero, means that AO plus P is in V, so V is closed under the operation, first operation.
+
+190
+00:40:11,403 --> 00:40:13,403
+Okay.
+
+191
+00:40:14,243 --> 00:40:21,884
+Then to verify the property tree, which is the
+
+192
+00:40:22,083 --> 00:40:26,059
+about zero element or additive item.
+
+193
+00:40:26,195 --> 00:40:27,980
+additive identity.
+
+194
+00:40:31,731 --> 00:40:39,731
+We have to find an element C.
+
+195
+00:40:42,731 --> 00:40:47,731
+A plus C is equal to C plus A.
+
+196
+00:40:49,731 --> 00:40:52,731
+And this is equal to A.
+
+197
+00:40:52,731 --> 00:40:56,731
+So C is the, if we can find an element.
+
+198
+00:40:56,851 --> 00:41:04,492
+element C, which satisfies this condition, then C is the zero of this set.
+
+199
+00:41:06,532 --> 00:41:17,931
+We know that from the matrices, the only matrix that satisfies this condition is 2x2, 0 matrix.
+
+200
+00:41:17,931 --> 00:41:21,452
+So, the property tree is also satisfied.
+
+201
+00:41:24,083 --> 00:41:49,384
+What about the property 4? Property 4 says that if you have an element a, then you have to find an element c in v, which satisfies a plus c is equal to c plus a.
+
+202
+00:41:49,824 --> 00:41:54,824
+vektör uzay, 0 elementi, z.
+
+203
+00:41:55,824 --> 00:41:59,824
+So, again, from the matrix addition,
+
+204
+00:42:00,824 --> 00:42:04,824
+we know that the negative of the matrix
+
+205
+00:42:05,824 --> 00:42:10,824
+is the additive inverse or additive identity of the matrix.
+
+206
+00:42:10,824 --> 00:42:12,824
+So, for the matrix A,
+
+207
+00:42:13,824 --> 00:42:14,824
+if you take
+
+208
+00:42:15,860 --> 00:42:25,860
+All entries, then you have the negative of A, which satisfies this condition.
+
+209
+00:42:25,860 --> 00:42:39,860
+But here it is very important also to check that the additive inverse or
+
+210
+00:42:42,612 --> 00:43:05,712
+Also, in V. So, you have to check that if minus A or C is in V or not. So, it means that what is the trace of C?
+
+211
+00:43:06,547 --> 00:43:16,087
+So, the trace of c is minus a plus minus d, which is minus a plus d. We know that a plus d is zero, so this is also zero.
+
+212
+00:43:17,728 --> 00:43:28,688
+Therefore, there is an element minus a or c in v, which satisfies this condition.
+
+213
+00:43:28,688 --> 00:43:29,827
+Okay.
+
+214
+00:43:37,588 --> 00:43:40,948
+ve, proproti B
+
+215
+00:43:44,179 --> 00:43:47,380
+Töneğin, any real number or scalar k,
+
+216
+00:43:49,840 --> 00:43:55,960
+we define the second operation as the scalar multiplication of the matrices by a real number,
+
+217
+00:43:56,219 --> 00:44:00,639
+which is k times a, k times b, k times c, and k times d.
+
+218
+00:44:01,039 --> 00:44:11,000
+So we have to check the trace of this matrix, which is k times a plus d.
+
+219
+00:44:17,588 --> 00:44:21,548
+[öğrenci], sadece bu soruya özel, öyle tanımlamış Veyi.
+
+220
+00:44:23,608 --> 00:44:26,248
+Tresle alakalı bir durum yok vektör uzayında, tamam mı?
+
+221
+00:44:29,652 --> 00:44:53,996
+The trace of this matrix is k times a plus t. We know that a plus t is zero. So the trace of this matrix is also zero. Means that v is closed to under operation of multiplication. And the property seven, which is the
+
+222
+00:44:54,387 --> 00:44:59,988
+Associated property of scalar multiplication is also very easy to show.
+
+223
+00:45:01,327 --> 00:45:14,167
+First, compute this multiplication, which is the scalar multiplication of the matrix A by k times m.
+
+224
+00:45:15,547 --> 00:45:20,967
+And again, later, sorry.
+
+225
+00:45:23,315 --> 00:45:44,515
+Look at the scalar multiplication, this scalar multiplication, so you can easily see that these two are equal, so the property 7 is also satisfied.
+
+226
+00:45:48,947 --> 00:45:49,447
+Ok.
+
+227
+00:45:55,507 --> 00:46:02,307
+Another very very important source of examples are
+
+228
+00:46:08,755 --> 00:46:10,755
+Vıcıya tut, polinomius.
+
+229
+00:46:12,755 --> 00:46:13,755
+So,
+
+230
+00:46:17,331 --> 00:46:30,331
+Now we recall some well-known facts about such functions. These are special types of functions. Polynomials are special functions.
+
+231
+00:46:30,331 --> 00:46:41,331
+A polynomial in t is a function that is expressible as this form.
+
+232
+00:46:46,164 --> 00:47:07,444
+This is a special function, which is expressible as the form, where An to the A0 are real numbers or scalpers, and An is a non-negative integer.
+
+233
+00:47:13,460 --> 00:47:19,260
+Then, the polynomial pt is set to have n degree n.
+
+234
+00:47:20,480 --> 00:47:35,760
+So, from here, the degree of a polynomial, the degree of any polynomial, is the highest power of a term having a non-zero coefficient.
+
+235
+00:47:38,387 --> 00:47:44,988
+Degrees of a polynomial is the highest power of a term, having a nonzero coefficient.
+
+236
+00:47:45,947 --> 00:48:01,988
+So, for example, if we have polynomial 2t plus 1, then the highest power of term, which is t, the highest power of term here is t.
+
+237
+00:48:03,188 --> 00:48:05,587
+So, what is the degree of t?
+
+238
+00:48:06,996 --> 00:48:12,536
+1, means that the degree of this polynomial is 1.
+
+239
+00:48:13,536 --> 00:48:17,796
+And the constant polynomial has the degree 0.
+
+240
+00:48:19,376 --> 00:48:23,876
+The 0 polynomial denoted by 0 has no degree.
+
+241
+00:48:25,256 --> 00:48:25,975
+Ok.
+
+242
+00:48:30,132 --> 00:48:52,971
+Pn, we denote, or we define Pn as the set of all polynomials of degree smaller than n or is equal to the n together with zero polynomials.
+
+243
+00:48:54,835 --> 00:49:10,915
+Pn is the set of all polynomials that include, which include zero polynomial and the polynomials of degree n or less than n.
+
+244
+00:49:11,915 --> 00:49:20,215
+Now, we will show that Pn is a vector space under these two operations.
+
+245
+00:49:21,619 --> 00:49:46,827
+If pt and qt are elements in pn, we can write pt as English form and qt as English form since they are polynomials of degree.
+
+246
+00:49:47,795 --> 00:49:59,955
+n or less than n, and also they can be a zero polynomial. So this is the general case for these polynomials.
+
+247
+00:50:02,675 --> 00:50:07,635
+So we define the first operation or addition as
+
+248
+00:50:11,955 --> 00:50:14,995
+addition of polynomials, which is
+
+249
+00:50:15,731 --> 00:50:30,251
+We add the coefficients of the terms, which have the same degree.
+
+250
+00:50:30,251 --> 00:50:40,952
+So, Pt o plus Qt is equal to a m plus b n times t to the n.
+
+251
+00:50:41,556 --> 00:50:44,556
+ve diğerlerle aynı.
+
+252
+00:50:44,556 --> 00:50:49,556
+Ve bu ilk operasyon.
+
+253
+00:50:52,980 --> 00:51:12,980
+For a scalar c, we also define the second operation as c o dot or c o multiplication p t is equal to multiply all of the coefficients by c. Okay.
+
+254
+00:51:21,012 --> 00:51:25,291
+Now we can show that Pn is a vector space.
+
+255
+00:51:31,315 --> 00:51:31,975
+First.
+
+256
+00:51:35,699 --> 00:51:59,759
+If you add two polynomials, pt and qt, which has a degree less than or equal to n or zero polynomial, then you have another polynomial which has a degree.
+
+257
+00:52:00,532 --> 00:52:11,332
+less than or equal to n or zero polynomial means that P n is closed under addition.
+
+258
+00:52:13,332 --> 00:52:24,108
+And also, and also, if you multiply a polynomial by a scalar, then
+
+259
+00:52:24,148 --> 00:52:33,948
+The degree of this polynomial doesn't change, means that c times pt is also in pn.
+
+260
+00:52:35,228 --> 00:52:43,228
+Therefore, pn is also closed under the second operation.
+
+261
+00:52:47,827 --> 00:53:12,827
+Let us verify property 1, which is quantitative property. We have pt plus qt here. What is qt plus pt? We have qt plus pt like this, which we add.
+
+262
+00:53:13,172 --> 00:53:17,172
+Körnü, the coefficients of the terms which have the same degree.
+
+263
+00:53:17,172 --> 00:53:29,172
+So, since the addition of the ring numbers has the commutative property, this is equal to the a n plus b n.
+
+264
+00:53:29,172 --> 00:53:36,172
+Therefore, p t plus q t is equal to q t plus p t.
+
+265
+00:53:37,715 --> 00:53:42,395
+property for the first operation is satisfied.
+
+266
+00:53:44,195 --> 00:53:48,755
+And similarly, we also verify the property 2,
+
+267
+00:53:49,235 --> 00:53:51,315
+which is the associated property
+
+268
+00:53:55,875 --> 00:53:57,315
+p t plus
+
+269
+00:53:59,235 --> 00:54:01,235
+q t plus
+
+270
+00:54:02,036 --> 00:54:03,795
+st is equal to
+
+271
+00:54:06,739 --> 00:54:18,939
+t plus t plus st. This is the associative property. So this is also very similar to the first property.
+
+272
+00:54:18,939 --> 00:54:31,659
+And what about the zero element of this set? Zero polynomial is the zero element that we need to hold the property tree.
+
+273
+00:54:33,108 --> 00:54:52,108
+And for the property 4, we need an element which satisfies pt plus qt is equal to zero polynomial.
+
+274
+00:54:52,108 --> 00:54:59,884
+So here qt is the negative of the polynomial pt.
+
+275
+00:55:02,612 --> 00:55:28,732
+And what about the property 6? Property 6 is this one. C plus D, which are scalars, times P, T. These are scalars, so we can write this as C times An times T to the N plus
+
+276
+00:55:29,300 --> 00:55:54,180
+d times a n times t to the n. So if you factor out c in this sum and factor out d in this sum, you have this expression. So this is pt and this is qt.
+
+277
+00:55:54,771 --> 00:56:08,972
+Bu, c times pt plus d times pt, means that the property 6 is also satisfied.
+
+278
+00:56:09,972 --> 00:56:10,612
+Ok.
+
+279
+00:56:15,891 --> 00:56:18,891
+So, the set of...
+
+280
+00:56:23,188 --> 00:56:46,668
+All polynomials, which have zero polynomial and the polynomials of degree less than n or is equal to n, is a vector space under the polynomial addition and a scalar multiplication of polynomials.
+
+281
+00:56:52,659 --> 00:56:57,639
+If, another example for the vector spaces,
+
+282
+00:57:01,652 --> 00:57:11,932
+If v is the set of all real valid continuous fudge chains defined on R.
+
+283
+00:57:15,731 --> 00:57:40,451
+ve, if you take two elements, which are functions, real-variate continuous functions, f and g, sorry, in v, we define this first addition as the addition of the functions and define scalar multiplication as the multiplication of a function with a scalar.
+
+284
+00:57:41,043 --> 00:57:53,583
+V is a vector space, ve denote this vector space as C minus infinity, infinity.
+
+285
+00:57:53,583 --> 00:57:56,583
+Okay, this is the vector space of...
+
+286
+00:58:22,164 --> 00:58:32,164
+Maybe you think that if all of the sets are former vector space, no, no.
+
+287
+00:58:35,444 --> 00:58:47,820
+Till here, we only give the examples of the vector space, but in example 180, we will show that or we will see that
+
+288
+00:58:48,596 --> 00:58:53,260
+bu altyazı alty
+
+289
+00:58:56,403 --> 00:59:06,923
+O addition is defined as an ordinary subtraction. Uo plus v is equal to u minus v.
+
+290
+00:59:09,443 --> 00:59:18,003
+And define the second operation as the ordinary multiplication. Is v a vector space?
+
+291
+00:59:19,580 --> 00:59:25,180
+If it is not, which property in the definition of vector space fail to hold?
+
+292
+00:59:26,780 --> 00:59:27,580
+So,
+
+293
+00:59:28,780 --> 00:59:30,980
+we have an ordinary
+
+294
+00:59:34,580 --> 00:59:36,180
+an ordinary
+
+295
+00:59:36,980 --> 00:59:37,780
+method
+
+296
+00:59:39,580 --> 00:59:43,580
+to check if a set is a vector space or not.
+
+297
+00:59:44,580 --> 00:59:45,380
+First,
+
+298
+00:59:47,572 --> 00:59:48,632
+Fölst.
+
+299
+00:59:52,467 --> 00:59:53,467
+Checklist.
+
+300
+00:59:54,967 --> 01:00:13,467
+First, look at the set V is closed under the operation O plus and operation O multiplication.
+
+301
+01:00:14,467 --> 01:00:19,467
+First, we have to check if the set is closed under these operations.
+
+302
+01:00:33,204 --> 01:00:39,603
+And maybe, the top one will be the, uh,
+
+303
+01:00:43,347 --> 01:00:45,007
+Yumur, edit yumur.
+
+304
+01:00:50,547 --> 01:00:54,507
+Çünkü you have 10 properties,
+
+305
+01:00:56,587 --> 01:01:03,227
+if you see the set is not closed under one of these operations,
+
+306
+01:01:03,227 --> 01:01:08,027
+then you say that this is not a vector space.
+
+307
+01:01:08,627 --> 01:01:12,647
+So no need to check the other properties.
+
+308
+01:01:13,367 --> 01:01:17,007
+So for this example,
+
+309
+01:01:19,315 --> 01:01:26,315
+Bu örneğin, bu örneğin,
+
+310
+01:01:26,515 --> 01:01:34,515
+real numbers, u minus v is also a real number,
+
+311
+01:01:34,715 --> 01:01:42,315
+and c times u is also a real number.
+
+312
+01:01:45,556 --> 01:02:04,876
+So, the first item in the checklist is, OK, and what about the zero element of this operation?
+
+313
+01:02:19,764 --> 01:02:20,724
+V is
+
+314
+01:02:31,380 --> 01:02:54,960
+0, so, so, this set has also a 0 element, so, this is okay also. And what about the additive inverse? The additive inverse means,
+
+315
+01:02:55,539 --> 01:03:00,820
+u minus u o plus v is equal to u minus v.
+
+316
+01:03:06,612 --> 01:03:08,912
+is equal to zero.
+
+317
+01:03:12,500 --> 01:03:14,759
+Vatir, sorry, sorry.
+
+318
+01:03:27,059 --> 01:03:37,900
+u plus v is equal to u, and this is equal to v plus u.
+
+319
+01:03:39,480 --> 01:03:52,960
+So, u plus v is equal to u minus v, and v plus u is equal to v minus u.
+
+320
+01:03:54,291 --> 01:04:14,731
+So, you cannot find an element u, sorry, v that satisfies this condition, because if you have, if you take v as 0, then you have u minus v is u, but 0 minus u is equal to minus u.
+
+321
+01:04:14,731 --> 01:04:20,951
+So, there is no 0 element for this set.
+
+322
+01:04:22,036 --> 01:04:27,476
+means that this set is not a vector space.
+
+323
+01:04:27,476 --> 01:04:43,175
+Or, you can easily see from this operation that u minus v is not equal to v minus u.
+
+324
+01:04:47,987 --> 01:05:00,507
+The first operation has no commutative property. Therefore, this set is not a vector space. Okay.
+
+325
+01:05:03,188 --> 01:05:13,148
+So if you have at least one property that doesn't hold, then you say that
+
+326
+01:05:14,132 --> 01:05:17,732
+This set is not a vector space.
+
+327
+01:05:35,699 --> 01:05:41,219
+Let v be the set of all integers
+
+328
+01:05:44,755 --> 01:05:50,435
+So, the set V is a set of integers.
+
+329
+01:05:52,595 --> 01:05:53,235
+Define.
+
+330
+01:05:57,172 --> 01:06:08,331
+O plus is ordinary addition and the second operation is ordinary multiplication.
+
+331
+01:06:10,851 --> 01:06:15,452
+Here, V is not a vector space.
+
+332
+01:06:20,019 --> 01:06:26,900
+Çünkü, çünkü, çünkü, if u is any non-zero vector in v,
+
+333
+01:06:32,115 --> 01:06:53,835
+So, you take an element u in z, which is an integer, then take a scalar c, as square root 3, and we define the second operation as the ordinary or usual multiplication.
+
+334
+01:06:58,804 --> 01:07:22,884
+3 times n n integers is not an integer. It means that the vector space, sorry, the set v is not closed under multiplication. Okay.
+
+335
+01:07:26,739 --> 01:07:27,079
+Ok?
+
+336
+01:07:34,164 --> 01:07:41,224
+We have a node here, or dimark, which says,
+
+337
+01:07:46,452 --> 01:08:11,932
+To verify, for a given set V, V2 operations, is a real vector space or not, we must show that all those conditions that we have gave in the definition 172 satisfied.
+
+338
+01:08:14,739 --> 01:08:37,000
+But, first, check if A and B are satisfied or not. If both A and B hold, it is recommended that 3, the existence of 0 element, be verified next.
+
+339
+01:08:37,939 --> 01:08:59,359
+Make sure that if tree fails, then you do not have a vector space and do not have to check the remaining properties. So check first the closed property of both two operations and second check zero element.
+
+340
+01:09:01,359 --> 01:09:02,000
+Okay.
+
+341
+01:09:07,188 --> 01:09:08,288
+Does it make sense?
+
+342
+01:09:15,731 --> 01:09:16,711
+Can you hear me?
+
+343
+01:09:26,739 --> 01:09:27,279
+Ok.
+
+344
+01:09:37,555 --> 01:09:45,955
+Şimdi, bu bölümde de subspecisi konuşacağız.
+
+345
+01:09:50,612 --> 01:09:58,112
+Please look at the other modes.
+
+346
+01:09:59,112 --> 01:10:16,371
+Today, I will give the lecture using the other lecture modes, because there are some different examples, both of these modes.
+
+347
+01:10:18,163 --> 01:10:44,076
+So, please follow the lecture notes from the other presentation. Yes, the topic is some, not complicated, but this is some abstract mathematics. So, maybe you don't like it, because most of them...
+
+348
+01:10:44,307 --> 01:10:52,307
+Most of you are the engineers, so you like the applications of abstract mathematics.
+
+349
+01:10:52,307 --> 01:11:00,307
+So this lecture includes some, a little bit abstract mathematics.
+
+350
+01:11:00,307 --> 01:11:01,899
+Okay.
+
+351
+01:11:05,203 --> 01:11:18,724
+You can also see more examples of record spaces from the other presentation.
+
+352
+01:11:29,747 --> 01:11:31,387
+A subspace
+
+353
+01:11:38,612 --> 01:11:39,572
+Southspace
+
+354
+01:11:47,699 --> 01:12:01,779
+is a subset of a vector space that is also a subspace under sorry it's also a vector space under the operations
+
+355
+01:12:03,619 --> 01:12:11,459
+that defined for the vector space with so let we
+
+356
+01:12:14,068 --> 01:12:16,068
+v a vector space
+
+357
+01:12:18,068 --> 01:12:20,068
+w
+
+358
+01:12:22,068 --> 01:12:24,068
+v is a vector space
+
+359
+01:12:27,068 --> 01:12:29,068
+w is a subset of v
+
+360
+01:12:35,859 --> 01:12:50,359
+If W is a vector space with respect to the operations in V, then W is called a subspace of V.
+
+361
+01:12:50,359 --> 01:12:55,359
+So, V is a vector space under these operations.
+
+362
+01:12:58,420 --> 01:13:04,220
+Eğer W ise ise vektör konuları, bu operasyonun,
+
+363
+01:13:12,435 --> 01:13:16,315
+Dovli is called the subspace of V.
+
+364
+01:13:18,255 --> 01:13:21,275
+Practically,
+
+365
+01:13:22,456 --> 01:13:27,315
+actually, we don't use this definition of subspace.
+
+366
+01:13:27,815 --> 01:13:28,735
+We have a theorem
+
+367
+01:13:28,735 --> 01:13:31,095
+here.
+
+368
+01:13:34,547 --> 01:13:37,260
+We use this term
+
+369
+01:13:40,787 --> 01:13:41,467
+If
+
+370
+01:13:45,363 --> 01:13:57,363
+A subspace of, if a subset of a vector space is a subspace or not. So this is very, very important theorem.
+
+371
+01:13:59,363 --> 01:14:09,363
+Let V be a vector space with operations O plus and O dot and W be a non-empty subset of V.
+
+372
+01:14:10,676 --> 01:14:22,604
+ve bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile bu v ile
+
+373
+01:14:25,684 --> 01:14:33,443
+If these two conditions are hold, then W is a subspace of V.
+
+374
+01:14:34,043 --> 01:14:50,564
+The first one, if you take two elements in W, then W is closed under the operation, the first operation.
+
+375
+01:14:51,315 --> 01:15:04,575
+u plus v is also in w, and taking any real number or scalar u and any vector, sorry, any scalar c in r,
+
+376
+01:15:06,575 --> 01:15:14,456
+and u is any vector in w, then c times u is also in w.
+
+377
+01:15:15,235 --> 01:15:18,296
+So if two conditions are old,
+
+378
+01:15:18,640 --> 01:15:29,440
+ve say that w is a subspace of vector space v.
+
+379
+01:15:29,440 --> 01:15:45,640
+Actually, in some books, very rarely, actually not often, in some books, there is another condition.
+
+380
+01:15:46,676 --> 01:15:47,996
+Which is
+
+381
+01:15:51,091 --> 01:16:14,652
+0-vektör belong to the u. Actually, no need to check this condition. These two conditions are enough to check if a subset is a subspace or not.
+
+382
+01:16:15,699 --> 01:16:26,719
+But, some sources, you can see also, zero vector also belong to the subset of this vector space.
+
+383
+01:16:26,719 --> 01:16:41,719
+Actually, we use or we check if a subspace belongs to the zero of the vector space to show that
+
+384
+01:16:42,228 --> 01:16:45,028
+This set is not a subspace.
+
+385
+01:16:45,028 --> 01:16:45,728
+Okay.
+
+386
+01:16:49,684 --> 01:16:50,684
+For example,
+
+387
+01:16:56,148 --> 01:17:04,347
+Sınavlarına ne tarz soru çıkar? Alt vektör uzayı mıdır, değil midir diye sorar [öğrenci]. Vektör uzayı mıdır, değil midir diye sorar.
+
+388
+01:17:12,435 --> 01:17:38,835
+Now, maybe [öğrenci], this will be the one question for the exam, because it says that, maybe the question be like this, which of the following, which of the following,
+
+389
+01:17:39,891 --> 01:17:41,891
+Buna baktığınızda
+
+390
+01:17:41,891 --> 01:17:46,891
+bu
+
+391
+01:17:46,891 --> 01:18:07,211
+bir
+
+392
+01:18:08,467 --> 01:18:11,227
+is the subspace of a vector space.
+
+393
+01:18:12,007 --> 01:18:12,207
+Okay.
+
+394
+01:18:13,608 --> 01:18:15,707
+So, what is the example?
+
+395
+01:18:16,007 --> 01:18:21,667
+Example is say that every vector space has at least two subspaces,
+
+396
+01:18:22,868 --> 01:18:28,788
+itself and the subspace 0, which is consisting only the 0 vectors.
+
+397
+01:18:32,147 --> 01:18:32,627
+So,
+
+398
+01:18:35,268 --> 01:18:35,747
+sorry,
+
+399
+01:18:36,712 --> 01:18:37,712
+bir
+
+400
+01:18:36,532 --> 01:19:01,868
+Bu, 0'a, bu, W'e 0'a 0'
+
+401
+01:19:02,868 --> 01:19:10,868
+From the above theorem, W is a vector space of a subspace of a vector space.
+
+402
+01:19:11,868 --> 01:19:20,868
+And this is a spatial subspace called zero subspace of the vector space V.
+
+403
+01:19:24,372 --> 01:19:24,692
+Ok.
+
+404
+01:19:30,707 --> 01:19:33,447
+Let, P2
+
+405
+01:19:37,908 --> 01:19:50,708
+B is set consisting of all polynomials of degree less than 2 or is equal to 2 and 0 polynomial.
+
+406
+01:19:55,188 --> 01:20:07,028
+Now, let P be the vector space of all polynomials, so P2 is a subset of P.
+
+407
+01:20:07,028 --> 01:20:17,408
+Now, we will check that if P2 is a subspace of P or not.
+
+408
+01:20:24,275 --> 01:20:25,735
+We have to check that.
+
+409
+01:20:40,083 --> 01:21:06,484
+If you have two polynomials on P2, which are of degree less than two or is equal to two and zero polynomial, and if you add these two polynomial, then you have a polynomial which has a degree.
+
+410
+01:21:06,868 --> 01:21:13,868
+less than two or two, or if these two polynomials are zero polynomial, then you have a zero polynomial.
+
+411
+01:21:13,868 --> 01:21:23,108
+So Pt plus Qt is also in P2.
+
+412
+01:21:23,108 --> 01:21:26,828
+So the first condition of the theorem is old.
+
+413
+01:21:29,768 --> 01:21:32,368
+And the second condition.
+
+414
+01:21:35,315 --> 01:21:48,755
+c times pt is also in p2, multiplying a polynomial which has degree less than 2 or
+
+415
+01:21:50,003 --> 01:22:03,463
+is equal to two or zero polynomial by a real number or skater, then you have another polynomial, which is zero polynomial or a polynomial of degree less than or equal to two.
+
+416
+01:22:03,463 --> 01:22:09,503
+So, this multiplication is also in P2, means that
+
+417
+01:22:13,876 --> 01:22:20,396
+P2, is a subspace of P.
+
+418
+01:22:21,556 --> 01:22:41,315
+In general, we have already defined this set, which is a set of polynomials, which has Pn, is the set of
+
+419
+01:22:42,068 --> 01:22:49,728
+All polynomials of degree less than n or is equal to n and zero polynomial.
+
+420
+01:22:53,235 --> 01:23:02,195
+P is a subspace of P, also Pn is a subspace of Pn plus 1.
+
+421
+01:23:08,532 --> 01:23:09,092
+Nou,
+
+422
+01:23:17,300 --> 01:23:22,960
+Let V be the set of all polynomials of degree exactly 2.
+
+423
+01:23:22,960 --> 01:23:38,059
+So, V includes or consists of the polynomials that has exactly degree 2.
+
+424
+01:23:39,059 --> 01:23:42,020
+So, V is a subset of P.
+
+425
+01:23:42,931 --> 01:23:46,827
+Bu, her vektör veksin bir yerlerinin veksin bir yerlerinin veksin bir yerlerinin veksin bir yerlerinin veksin bir yerlerinin veksin bir yerlerinin veksin bir yerlerinin veksin bir yerlerinin veksin bir yerlerinin veksin bir yerlerinin veksin bir yerlerinin veksin bir yerlerinin veksin bir yerlerinin veksin bir yerlerinin veksin bir yerlerinin veksin bir yerlerinin veksin bir yerlerinin veksin bir yerlerinin veksin bir yerlerinin veksin bir yerlerinin veksin bir yerlerinin veksin bir yerlerinin veksin bir yerlerinin veksin bir yerlerinin veksin bir yerlerinin veksin bir yerlerinin veksin bir yerlerinin veksin bir yerlerinin veksin bir yerlerinin veksin bir yerlerinin veksin bir yerlerinin
+
+426
+01:23:53,332 --> 01:23:57,192
+V is not a subspace of P.
+
+427
+01:23:58,192 --> 01:23:58,572
+Why?
+
+428
+01:23:59,572 --> 01:24:20,212
+Because the sum of two polynomials in V means that which has degree exactly two, these two polynomials, has
+
+429
+01:24:20,608 --> 01:24:21,608
+Degree 2.
+
+430
+01:24:21,608 --> 01:24:37,948
+But if you add these two polynomials, then you have a polynomial, 40 plus 3, which has degree 1.
+
+431
+01:24:37,948 --> 01:24:42,868
+So, this is not in V.
+
+432
+01:24:42,868 --> 01:24:45,628
+Therefore,
+
+433
+01:24:46,612 --> 01:24:52,612
+We say that the subset to V is not a subspace of P.
+
+434
+01:24:52,612 --> 01:24:54,612
+Okay?
+
+435
+01:25:10,739 --> 01:25:33,460
+Let W be the set of all vectors in R-cube of the form. So W be the set of M by, sorry, 3 by 1 matris that has the form like this. And here A, B are real numbers.
+
+436
+01:25:36,884 --> 01:25:49,036
+So, now, we check that if w is a subspace of...
+
+437
+01:25:54,387 --> 01:26:28,056
+RQ
+
+438
+01:26:03,252 --> 01:26:29,452
+RQ. So, we have to check the conditions of the theorem, taking two elements u and v in w, since the elements in w has the form like this, so taking u a1, b1, and a1 plus b1, and taking v as like this.
+
+439
+01:26:30,484 --> 01:26:41,784
+So, we use the operation in R³, the first operation in R³ is the matrix addition.
+
+440
+01:26:42,524 --> 01:26:54,784
+So, if we add these two matrices, we have A1 plus A2, B1 plus B2, A1 plus B1 plus A2 plus B2.
+
+441
+01:26:55,828 --> 01:27:04,268
+So, it is also on the phone, because if you say this is C1,
+
+442
+01:27:12,180 --> 01:27:17,980
+C1, C2, so this is C1 plus C2.
+
+443
+01:27:20,880 --> 01:27:25,820
+Therefore, this addition is also in W.
+
+444
+01:27:29,939 --> 01:27:42,319
+And for the second operation, c times u, c times a1, c times b1, c times a1 plus b1.
+
+445
+01:27:43,319 --> 01:27:56,459
+Therefore, you say that this is x, this is y, so this is x plus y.
+
+446
+01:27:57,619 --> 01:28:13,219
+Bu, bu, form of the elements on W, which is in W. Therefore, W is a subspace of R cube.
+
+447
+01:28:14,819 --> 01:28:15,340
+Ok.
+
+448
+01:28:25,652 --> 01:28:37,652
+We shall usually denote uO plus v and cO dot u in a vector space as u plus v and c times u respectively.
+
+449
+01:28:38,652 --> 01:28:39,412
+Okay.
+
+450
+01:28:43,252 --> 01:28:49,252
+Maybe there's a different examples here.
+
+451
+01:28:56,724 --> 01:29:12,503
+Let B is a subset of this set, which is the set of all 2x2 matrices.
+
+452
+01:29:23,220 --> 01:29:31,980
+Matrisi, weight, reel, atris.
+
+453
+01:29:40,979 --> 01:29:59,579
+So, we will check if B is a subspace of this set, say this V, or not, taking two elements which are on the form AB0C, and also C is equal to A plus B.
+
+454
+01:30:03,412 --> 01:30:23,412
+This month, this edition gives a plus x, b plus y, zero, and c plus z. Since c is a plus b, write c plus c is equal to a plus b plus x plus y, and write.
+
+455
+01:30:28,787 --> 01:30:30,407
+White
+
+456
+01:30:35,604 --> 01:30:53,923
+Okay, only write C as a plus b plus x plus y, then this is equal to, sorry, this belongs to b since here, look at this one, C is equal to a plus b.
+
+457
+01:31:03,859 --> 01:31:08,479
+Since C is equal to A plus B,
+
+458
+01:31:15,956 --> 01:31:24,395
+And from this set Z is equal to X plus Y.
+
+459
+01:31:30,707 --> 01:31:38,707
+C plus Z is equal to A plus B plus X plus Y.
+
+460
+01:31:38,907 --> 01:31:48,707
+So, C plus Z is equal to A plus B plus X plus Y means that this matrix is in B.
+
+461
+01:31:48,907 --> 01:31:51,707
+So, the first condition of the theorem is old.
+
+462
+01:31:51,907 --> 01:31:54,707
+The other condition R times.
+
+463
+01:31:56,819 --> 01:32:23,340
+Any element in B, this is R i, R a, R p, R c. So, here we also check that if R times C is equal to R times A plus R times B, we know that from here C is equal to A plus B, so
+
+464
+01:32:24,212 --> 01:32:33,152
+Writing C in its place here, we have R times C is equal to R times A plus R times B.
+
+465
+01:32:33,892 --> 01:32:38,392
+Therefore, B is a subspace of V.
+
+466
+01:32:38,392 --> 01:32:38,452
+V.
+
+467
+01:32:39,372 --> 01:32:39,872
+Okay.
+
+468
+01:33:00,659 --> 01:33:19,819
+Let a be a subset of r square on the form. Is a a subspace of r square? So, it's a subset of r square.
+
+469
+01:33:28,659 --> 01:33:30,659
+En, oui.
+
+470
+01:33:42,515 --> 01:33:46,515
+u plus v.
+
+471
+01:33:48,515 --> 01:34:05,515
+We use the usual addition since we say that r2 is a vector space with the operations, usual addition and usual multiplication.
+
+472
+01:34:05,515 --> 01:34:08,203
+So we use the usual.
+
+473
+01:34:08,595 --> 01:34:15,195
+Adition of the entries of R square.
+
+474
+01:34:15,195 --> 01:34:22,595
+So U plus V is equal to X plus Y zero.
+
+475
+01:34:22,595 --> 01:34:26,595
+We can say X plus Y is Z.
+
+476
+01:34:26,595 --> 01:34:33,595
+So this is Z zero, which is the form of the elements of A.
+
+477
+01:34:35,988 --> 01:34:58,708
+since z is in R, therefore u plus v is in A, and for the scalars, c, c times u is equal to c times x zero.
+
+478
+01:35:01,043 --> 01:35:16,443
+c times x is also an another real number, which is also in a, therefore, this is a subspace of r squared.
+
+479
+01:35:16,443 --> 01:35:17,344
+Okay.
+
+480
+01:35:20,948 --> 01:35:23,068
+And last question for you.
+
+481
+01:35:31,731 --> 01:35:47,771
+W, which is defined as like this, where A is 0 or positive real number, is not a subspace of RQ.
+
+482
+01:35:53,332 --> 01:36:04,231
+Why? Why? Why this is not a subspace of R cube?
+
+483
+01:36:11,283 --> 01:36:21,523
+Good, good. Because if you take C as minus 1,
+
+484
+01:36:28,275 --> 01:36:46,275
+if you take c as minus 1 which is a real number then if you take u in w so here a is positive or 0
+
+485
+01:36:48,595 --> 01:36:53,099
+then c times u is
+
+486
+01:36:53,203 --> 01:37:01,523
+Minus A, minus B, minus C, which is not in W.
+
+487
+01:37:03,064 --> 01:37:08,384
+So, this is not closed under scalar multiplication.
+
+488
+01:37:09,503 --> 01:37:20,323
+Therefore, this is not a subspace of R.
+
+489
+01:37:20,851 --> 01:37:21,292
+Q.
+
+490
+01:37:22,372 --> 01:37:22,731
+Ok?
+
+491
+01:37:29,587 --> 01:37:31,587
+Bu kadar bu kadar.
+
+492
+01:37:33,587 --> 01:37:39,587
+Bu gün sonra,
+
+493
+01:37:55,091 --> 01:37:58,091
+O zaman 11.00'da
+
+494
+01:37:58,091 --> 01:38:02,091
+O zaman
+
+495
+01:38:17,876 --> 01:38:26,456
+Tamam, 6 diyorsa 6'dır. Ben 16 diye hatırladım. O yüzden [öğrenci]. Siz ona göre şey yapın, bana göre değil.
+
+496
+01:38:31,539 --> 01:38:33,199
+6 mu diyor, 16 mu diyor?
+
+497
+01:38:38,484 --> 01:38:39,904
+On sekiz, tamam, okay.
+
+498
+01:38:41,324 --> 01:38:48,824
+Okay, your exam is at 6 p.m. on 23rd of December.
+
+499
+01:38:50,404 --> 01:38:55,944
+Hope to see you in next week and have a nice day to all of you.
