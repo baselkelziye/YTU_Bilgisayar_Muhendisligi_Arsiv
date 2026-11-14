@@ -1,0 +1,1391 @@
+1
+00:00:03,028 --> 00:00:05,028
+Evet peki.
+
+2
+00:00:07,028 --> 00:00:09,028
+İnşallah o eskisini flor'dan bulmamışız.
+
+3
+00:00:12,028 --> 00:00:13,028
+Bakalım.
+
+4
+00:00:14,028 --> 00:00:15,980
+Şöyle yapayım bakalım.
+
+5
+00:00:19,155 --> 00:00:20,635
+Şimdiki konum.
+
+6
+00:00:25,332 --> 00:00:29,332
+Birazdan başlayacağız. Bir iki dakikanızı rica ediyorum.
+
+7
+00:00:31,172 --> 00:00:40,652
+Bir yanlış bir yere bir tıkladım. O yüzden acaba inşallah bir şey olmuş. Olmayın diye düşünüyorum.
+
+8
+00:00:41,792 --> 00:00:43,332
+Bir iki dakikanızı rica edeceğim.
+
+9
+00:00:44,792 --> 00:00:47,712
+Biraz. Evet. Şöyle bakalım.
+
+10
+00:01:25,364 --> 00:01:27,424
+Okay, we may begin.
+
+11
+00:01:28,623 --> 00:01:41,424
+As I'm already 10 minutes late, please think about that, about as usual, waiting for better attendance.
+
+12
+00:01:42,623 --> 00:01:47,444
+Now let's begin and finish our lectures, shall we?
+
+13
+00:01:49,283 --> 00:01:49,963
+Okay.
+
+14
+00:01:55,444 --> 00:02:11,444
+Bu konuda son büyük bir şeyimiz karşılıklı. Neydi? Senkronizasyon.
+
+15
+00:02:18,068 --> 00:02:20,908
+Dersi, kürze, tersi, lata, veldem tevedecek.
+
+16
+00:02:55,187 --> 00:03:15,608
+Okay. Last week, about multi-threading, we have learned how to create and run individual threads, as well as using some pool, either a fixed-size pool or a variable-size pool, and have our threads run in that pool.
+
+17
+00:03:15,987 --> 00:03:34,948
+Now, we will study multi-trading with exceptions, how to use some exceptions other than this sleeping, handling the sleeping, unable to awake exception. Other than that, we have to do something else.
+
+18
+00:03:35,379 --> 00:03:37,219
+About exceptions too.
+
+19
+00:03:37,459 --> 00:03:44,939
+And then we will study how to synchronize thread, how to remove waste conditions.
+
+20
+00:03:45,539 --> 00:03:46,819
+First, about threads.
+
+21
+00:03:47,299 --> 00:03:56,199
+Well, what happens if you need to handle an exception within the RAN method?
+
+22
+00:03:56,659 --> 00:04:01,560
+Remember that our multi-threaded code must stay in the RAN method.
+
+23
+00:04:01,855 --> 00:04:08,435
+And the method signature of this run method is defined in the runnable interface.
+
+24
+00:04:08,975 --> 00:04:13,415
+So we are not allowed to change the method signature of our run method.
+
+25
+00:04:17,235 --> 00:04:22,656
+What is the problem with that? Well, actually none, but there is one small thing that we know.
+
+26
+00:04:22,656 --> 00:04:30,675
+If we place some code in a run method, which can throw some checked exceptions,
+
+27
+00:04:33,076 --> 00:04:35,936
+We have to deal with them in that spot.
+
+28
+00:04:36,596 --> 00:04:48,416
+We cannot define that run method, this particular run method that we are about to code to some exception, some check exception.
+
+29
+00:04:48,596 --> 00:04:49,876
+We are not allowed to do that.
+
+30
+00:04:49,936 --> 00:04:52,855
+We cannot change the method signature of the run method.
+
+31
+00:04:52,855 --> 00:04:56,855
+So if you need to...
+
+32
+00:04:58,579 --> 00:05:02,559
+So, a check exception within the run method, what can you do?
+
+33
+00:05:03,500 --> 00:05:19,339
+Well, maybe we can sort the multitread task that can throw that exception in a normal member method and call that member method from the run method.
+
+34
+00:05:19,339 --> 00:05:22,959
+Okay, there is no problems about that.
+
+35
+00:05:23,507 --> 00:05:32,127
+And of course, we will declare that method as throwing some checked exception that we need.
+
+36
+00:05:32,627 --> 00:05:38,947
+And within the run method, we can try and catch as we have learned in the exceptions topic.
+
+37
+00:05:40,528 --> 00:05:42,548
+This is only a hint.
+
+38
+00:05:45,524 --> 00:05:52,024
+Other than that, I will leave how to apply for this by yourself.
+
+39
+00:05:52,963 --> 00:05:57,544
+So let's continue about waste conditions and how to current them.
+
+40
+00:06:01,843 --> 00:06:07,744
+Grace condition is a very important problem that we must handle.
+
+41
+00:06:09,004 --> 00:06:19,004
+In most practical real-world multi-threaded applications, two or more tracks will need to share access to the same data.
+
+42
+00:06:20,044 --> 00:06:25,484
+Let it be a member field or a data structure, whatever you can think about.
+
+43
+00:06:26,387 --> 00:06:37,307
+What happens if two threads have access to the same object and each of these threads call a method that modifies the state of the object?
+
+44
+00:06:38,687 --> 00:06:43,707
+This is similar to dancing in a very crowded room.
+
+45
+00:06:43,707 --> 00:06:47,707
+You can bark to people or you can...
+
+46
+00:06:48,788 --> 00:06:51,788
+Step on the feet of some other people.
+
+47
+00:06:52,408 --> 00:06:56,408
+Well, the threat can also step on each other to us too.
+
+48
+00:06:57,228 --> 00:07:05,128
+Depending on the order in which the data is accessed, we may come up with some corrupted objects.
+
+49
+00:07:05,843 --> 00:07:26,824
+This is called a race condition. This is a race. So access and modify the shared data. And during this race, some inconsistencies can happen. Well, it's quite easy to create some cases. Now let's examine this code.
+
+50
+00:07:28,148 --> 00:07:34,948
+We have the runoff interface as we need to do some multitrading.
+
+51
+00:07:34,948 --> 00:07:40,548
+Let's consider that there is an account. This is a bank account having a balance.
+
+52
+00:07:40,548 --> 00:07:47,348
+Okay? This bank account has a constructor initializing the balance.
+
+53
+00:07:48,019 --> 00:07:53,340
+We have two methods about money in that account.
+
+54
+00:07:53,759 --> 00:08:00,019
+We can withdraw some amount of money and we can deposit some amount of money.
+
+55
+00:08:00,420 --> 00:08:03,680
+We have the getter method for the balance member.
+
+56
+00:08:06,740 --> 00:08:14,439
+I have added a method that can create some possible delay in our task.
+
+57
+00:08:14,439 --> 00:08:30,439
+Why? Because in banking systems, accounts, money transfer operations, and many other tasks that you can imagine may be implemented in some separate...
+
+58
+00:08:30,899 --> 00:08:34,980
+Service and separate subsystems.
+
+59
+00:08:35,620 --> 00:08:55,420
+Therefore, even a simple application that can withdraw some money from an account or deposit some money into the account or any kind of money transfer can and of course they will have some delays.
+
+60
+00:08:56,083 --> 00:09:01,163
+Some networking delays, some communication delays, anything is possible.
+
+61
+00:09:02,363 --> 00:09:12,723
+So, end operation, withdrawing, depositing and getting will not be executed immediately, but with a small delay.
+
+62
+00:09:12,723 --> 00:09:16,763
+This possible delay method is to emulate this fact.
+
+63
+00:09:16,763 --> 00:09:22,723
+Okay? And we have two multi-threaded tasks.
+
+64
+00:09:23,508 --> 00:09:48,008
+One is called with the account withdrawals class. This class is for withdrawing some money from an account. And we have the account depositors class. And the object from that type will be responsible for depositing some money into that bank account.
+
+65
+00:09:51,059 --> 00:09:58,979
+The account, the data, the data class is not multi-traded, but operations are multi-traded.
+
+66
+00:09:59,979 --> 00:10:03,579
+Withdrawing from an account and persisting into an account.
+
+67
+00:10:06,479 --> 00:10:13,259
+Of course, an account retriever must know which account to draw money from.
+
+68
+00:10:13,812 --> 00:10:20,932
+An account depositor must know from which account it is about to deposit some money.
+
+69
+00:10:22,312 --> 00:10:29,951
+And the constructor and how much amount to withdraw or deposit.
+
+70
+00:10:29,951 --> 00:10:40,032
+The constructors initialize those numbers and the actual task is coded in the run method.
+
+71
+00:10:40,916 --> 00:10:50,916
+This is a simple, short method. The run method will simply call the withdraw method of the account object.
+
+72
+00:10:50,916 --> 00:10:58,916
+And the run method of the account depositor class will simply deposit some amount of money into that account.
+
+73
+00:10:58,916 --> 00:11:04,916
+And we will test all of them in the main method of a class called angstimulation.
+
+74
+00:11:07,347 --> 00:11:09,668
+Write the code and execute it.
+
+75
+00:11:11,768 --> 00:11:14,807
+I will examine them from Eclipse.
+
+76
+00:11:15,427 --> 00:11:17,768
+I forgot to open the tab.
+
+77
+00:11:19,128 --> 00:11:20,508
+To open up shortly.
+
+78
+00:11:29,011 --> 00:11:32,011
+Okay. May I have a class?
+
+79
+00:11:33,211 --> 00:11:35,211
+All the things I get there on the other side.
+
+80
+00:11:35,211 --> 00:11:36,011
+But which one?
+
+81
+00:11:37,011 --> 00:11:37,611
+This one?
+
+82
+00:11:37,611 --> 00:11:38,311
+Ah, no.
+
+83
+00:11:38,411 --> 00:11:38,811
+This one.
+
+84
+00:11:39,011 --> 00:11:39,411
+The...
+
+85
+00:11:39,611 --> 00:11:40,111
+Ah, no.
+
+86
+00:11:40,211 --> 00:11:40,811
+The B.
+
+87
+00:11:41,611 --> 00:11:44,611
+May I have a one not there?
+
+88
+00:11:44,611 --> 00:11:45,411
+Yeah, I'm watching.
+
+89
+00:11:45,611 --> 00:11:46,211
+This one.
+
+90
+00:11:47,811 --> 00:11:48,311
+Okay.
+
+91
+00:11:50,411 --> 00:11:51,611
+The count class.
+
+92
+00:11:52,811 --> 00:11:53,611
+Not this one.
+
+93
+00:11:54,211 --> 00:11:54,611
+Yeah.
+
+94
+00:11:58,740 --> 00:12:03,500
+You can write the code of the account class very easily.
+
+95
+00:12:04,379 --> 00:12:10,320
+But let's consider the details about the withdraw, deposit and delay methods.
+
+96
+00:12:10,320 --> 00:12:22,320
+The withdraw method is not just simply withdraw money from that account because...
+
+97
+00:12:22,707 --> 00:12:30,707
+As it is done in a real-world application, first, the balance of that account must be checked.
+
+98
+00:12:32,387 --> 00:12:42,627
+And that information is filled in a double type, temporary object.
+
+99
+00:12:43,627 --> 00:12:46,547
+And there will be some possible delay will happen.
+
+100
+00:12:46,964 --> 00:13:07,124
+And then the balance number field will be calculated as decreasing this amount to be withdrawn, deducted from the current balance temporary object.
+
+101
+00:13:08,584 --> 00:13:14,204
+And the deposit is similar. I am not directly increasing or decreasing the balance.
+
+102
+00:13:15,124 --> 00:13:20,384
+I have added some few methods, including a small possible delay.
+
+103
+00:13:21,303 --> 00:13:26,563
+This is a simulation of a more real-world banking example.
+
+104
+00:13:27,024 --> 00:13:36,024
+And in the possible delay method, I will have that thread to be swept only for 5 milliseconds.
+
+105
+00:13:36,543 --> 00:13:38,004
+It's as small as that.
+
+106
+00:13:38,764 --> 00:13:40,884
+This is the account class.
+
+107
+00:13:41,603 --> 00:13:42,572
+What about...
+
+108
+00:13:43,091 --> 00:13:50,491
+AccountDepositor, yes, it is just like the one in the class diagram and the UMLNode.
+
+109
+00:13:51,131 --> 00:13:57,971
+The run method of the AccountDepositor class will simply deposit some amount of money from the account.
+
+110
+00:13:58,731 --> 00:14:04,791
+And AccountWithdrawer will simply withdraw some amount of money from that account.
+
+111
+00:14:05,871 --> 00:14:07,611
+And let's check the banking simulation.
+
+112
+00:14:11,475 --> 00:14:12,475
+Class.
+
+113
+00:14:12,475 --> 00:14:17,475
+First, I create an account with a balance of zero.
+
+114
+00:14:17,475 --> 00:14:19,475
+That's a new account.
+
+115
+00:14:19,475 --> 00:14:24,475
+Before everything happens, I print out the balance.
+
+116
+00:14:24,475 --> 00:14:37,475
+Then I will be running one hundredth of account depositor instances that will each deposit one lira to the account.
+
+117
+00:14:38,707 --> 00:14:40,707
+I will execute that task.
+
+118
+00:14:40,707 --> 00:14:46,707
+And I will have 50 account withdrawals.
+
+119
+00:14:46,707 --> 00:14:51,707
+Each will withdraw one lira from the account.
+
+120
+00:14:51,707 --> 00:14:57,707
+And I will signal the thread to be cut down.
+
+121
+00:14:57,707 --> 00:15:04,707
+And after everything happens, after all the threads do their tasks, do their jobs,
+
+122
+00:15:06,227 --> 00:15:09,147
+I will print out the final balance.
+
+123
+00:15:09,747 --> 00:15:09,827
+Okay?
+
+124
+00:15:10,367 --> 00:15:14,467
+What do we expect from the outcome of that main method?
+
+125
+00:15:15,227 --> 00:15:23,427
+Well, as we don't know anything related to the race conditions yet, I would expect that.
+
+126
+00:15:23,956 --> 00:15:34,995
+100 Liras will be deposited, 50 Liras will be withdrawn, and finally, there will be 50 Liras in the balance.
+
+127
+00:15:35,676 --> 00:15:42,235
+It is an important order of that withdrawings and depositing.
+
+128
+00:15:42,796 --> 00:15:44,755
+In the end, there should be 50 Liras.
+
+129
+00:15:45,355 --> 00:15:48,235
+Now, let's run this and see what happens.
+
+130
+00:15:52,628 --> 00:16:01,628
+Ok, it is done very quickly, but before it's zero Liras, and after it's again zero Liras.
+
+131
+00:16:01,628 --> 00:16:10,628
+Well, what about that? What has gone wrong? A racing condition had appeared.
+
+132
+00:16:10,628 --> 00:16:14,540
+Ok, let's see what happens.
+
+133
+00:16:19,091 --> 00:16:20,812
+Evet, aynı meşle.
+
+134
+00:16:26,227 --> 00:16:34,347
+Ve bir örneğin bir örneğin, bu kadar çok fazla landa
+
+135
+00:16:34,347 --> 00:16:36,668
+çünkü çok çok zor.
+
+136
+00:16:36,668 --> 00:16:44,227
+Öncelikle bir örneğin bir örneğin bir örneğin bir örneğin.
+
+137
+00:16:47,155 --> 00:16:56,955
+One person is using the withdrawers object to withdraw 100 liras from the account.
+
+138
+00:16:56,955 --> 00:17:09,655
+And Bob will run an account withdrawers, another account withdrawers instance to withdraw 50 liras.
+
+139
+00:17:11,316 --> 00:17:15,255
+Total of 150 liras will be withdrawn.
+
+140
+00:17:15,735 --> 00:17:23,036
+And there will be 850 liras left in the account.
+
+141
+00:17:23,956 --> 00:17:26,355
+Let's see what happens, what actually happens.
+
+142
+00:17:28,215 --> 00:17:32,375
+Those threads are drawn like worms.
+
+143
+00:17:35,135 --> 00:17:36,816
+Let's assume that
+
+144
+00:17:38,516 --> 00:17:40,836
+Both threads are ready to run.
+
+145
+00:17:42,396 --> 00:17:44,396
+Which one runs first, we don't know.
+
+146
+00:17:46,675 --> 00:17:50,036
+But one of them will begin first.
+
+147
+00:17:50,276 --> 00:17:54,596
+Let's assume that this Alice, which begins first.
+
+148
+00:17:55,155 --> 00:17:56,715
+Alice's thread, actually.
+
+149
+00:17:58,516 --> 00:18:01,796
+Now the control flow comes to the withdrawal method.
+
+150
+00:18:02,291 --> 00:18:18,451
+And actually, the other set is now trying to access the method Q. ArrayList continues and obtains the current balance value in it.
+
+151
+00:18:19,831 --> 00:18:26,851
+And now, ArrayList's copy of this current balance temporary object, temporary variable.
+
+152
+00:18:28,372 --> 00:18:31,632
+It shows 1000 plus. Okay, fine.
+
+153
+00:18:33,951 --> 00:18:47,352
+Well, the important thing that you need to know is, in that moment, each thread has its own copy of local variables and parameters, but number of fields are shared between threads.
+
+154
+00:18:48,032 --> 00:18:48,832
+Then,
+
+155
+00:18:49,332 --> 00:18:55,332
+Let's assume that Bok will try to withdraw some more too.
+
+156
+00:18:55,332 --> 00:19:02,332
+Okay. And Bok's copy of this current barrens temporary variable is also 1000.
+
+157
+00:19:03,332 --> 00:19:10,320
+First Alice makes the subscriptures.
+
+158
+00:19:10,319 --> 00:19:27,239
+Subtraction, and then updates the balance member field, and where is now balance is 900 LRs, and then the control flow goes back.
+
+159
+00:19:28,619 --> 00:19:37,199
+Then, at the moment, both local topi of the current balance is again 1000.
+
+160
+00:19:37,907 --> 00:19:41,067
+But actually, it should be 900 now.
+
+161
+00:19:41,067 --> 00:19:46,667
+However, Bob's local copy shows that it's still 10,000, 1,000.
+
+162
+00:19:47,447 --> 00:19:55,827
+And then Bob's thread will subtract 50 from 1,000 and 950 will be left.
+
+163
+00:19:57,407 --> 00:20:00,000
+And then after Bob...
+
+164
+00:20:00,000 --> 00:20:06,879
+Both threads and we have an inconsistency about being 950.
+
+165
+00:20:06,879 --> 00:20:17,079
+If both threads go first, then the balance will be shown as 950.
+
+166
+00:20:17,079 --> 00:20:22,259
+If this thread comes first, the balance will show 900.
+
+167
+00:20:22,259 --> 00:20:27,119
+But the correct value should be 850.
+
+168
+00:20:28,000 --> 00:20:30,099
+Now let's run that simulation.
+
+169
+00:20:33,339 --> 00:20:37,019
+I hope it's there. If it's not, I will.
+
+170
+00:20:37,559 --> 00:20:45,719
+Now this version 2 of the bank simulation is the same example that I have just demonstrated.
+
+171
+00:20:46,439 --> 00:20:51,019
+One task will withdraw 100, the other task will withdraw 50.
+
+172
+00:20:51,019 --> 00:20:53,919
+And what happens at the end? Let's see.
+
+173
+00:20:57,460 --> 00:21:03,460
+It's either 950 or 900.
+
+174
+00:21:03,460 --> 00:21:13,460
+Let's run it a few times. 900, 950, 950, 950, 950, again 900, exact class.
+
+175
+00:21:13,460 --> 00:21:20,460
+However, it should be 850. Why? Because of that basic condition.
+
+176
+00:21:23,859 --> 00:21:30,059
+Let's try some multi-treaded case that this race condition does not happen.
+
+177
+00:21:30,779 --> 00:21:36,859
+Maybe we can actually do it in a local PC, but in a real-world application,
+
+178
+00:21:37,719 --> 00:21:47,019
+there will be inevitably some racing conditions actually happen.
+
+179
+00:21:49,715 --> 00:21:53,475
+We must prevent this condition.
+
+180
+00:21:54,235 --> 00:21:56,715
+Let's try something such as...
+
+181
+00:21:56,715 --> 00:21:58,815
+Bakalım bakalım.
+
+182
+00:22:05,683 --> 00:22:08,124
+Hangisi hangisi olduğunu hatırlamıyorum. Sınavından bir bakalım.
+
+183
+00:22:10,003 --> 00:22:14,564
+14 şeyde nasıl engellediğiniz var. O doğru olanı. Tamam. Onu şey etmeyeceğiz şimdi.
+
+184
+00:22:15,364 --> 00:22:17,324
+Ama 14x de olabilir bakalım.
+
+185
+00:22:22,203 --> 00:22:22,804
+Okey.
+
+186
+00:22:24,147 --> 00:22:26,147
+On the external lines.
+
+187
+00:22:26,147 --> 00:22:27,147
+Okay.
+
+188
+00:22:27,147 --> 00:22:31,147
+First, now this is our final week.
+
+189
+00:22:31,147 --> 00:22:37,147
+So let's finish it and then let's try toying with that.
+
+190
+00:22:37,147 --> 00:22:38,147
+Okay.
+
+191
+00:22:38,147 --> 00:22:40,147
+Then after that, our lecture will end.
+
+192
+00:22:40,147 --> 00:22:43,115
+How can we plan such a race?
+
+193
+00:22:43,188 --> 00:23:00,748
+The simplest, easiest way to command such races is to declare, is to find out which methods access to that shared members.
+
+194
+00:23:00,748 --> 00:23:06,468
+And we should label them with the synchronized keywords.
+
+195
+00:23:07,311 --> 00:23:15,831
+When we examine the entire source code of that example in the 14a package, no, 14b.
+
+196
+00:23:18,531 --> 00:23:29,051
+Yes, in the 14b package, we see that this withdraw and deposit methods face this shared balance.
+
+197
+00:23:30,131 --> 00:23:34,631
+Therefore, we will declare them as synchronized.
+
+198
+00:23:35,039 --> 00:23:37,360
+And there is nothing else to do.
+
+199
+00:23:38,360 --> 00:23:42,720
+This will be sufficient to prevent this racing condition.
+
+200
+00:23:43,539 --> 00:23:45,259
+So, let's compare.
+
+201
+00:23:46,220 --> 00:23:47,940
+First, close everything.
+
+202
+00:23:51,019 --> 00:23:55,160
+And compare the classes in package 14b with 14c.
+
+203
+00:23:56,240 --> 00:23:58,519
+The account classes.
+
+204
+00:24:00,948 --> 00:24:03,208
+Or compare with each other.
+
+205
+00:24:04,768 --> 00:24:14,888
+I see that the only change is the addition of the synchronized keywords to the withdrawal and deposit methods.
+
+206
+00:24:15,988 --> 00:24:22,228
+Other than that, account-depositor source codes will be the same.
+
+207
+00:24:25,523 --> 00:24:27,804
+And the only package names are different.
+
+208
+00:24:27,804 --> 00:24:29,124
+The rest is the same.
+
+209
+00:24:30,243 --> 00:24:35,124
+Account withdrawals are the same.
+
+210
+00:24:35,923 --> 00:24:43,124
+And Bank Simulation, default versions, are the same.
+
+211
+00:24:44,243 --> 00:24:50,884
+And version tools are the same.
+
+212
+00:24:52,435 --> 00:24:54,836
+Now let's run the first simulation.
+
+213
+00:24:55,836 --> 00:24:58,635
+There should be 15 of us in the account.
+
+214
+00:25:04,627 --> 00:25:07,947
+Did you notice something important?
+
+215
+00:25:09,107 --> 00:25:16,307
+The execution time of this second version, correct version, is a little bit longer because of the synchronization.
+
+216
+00:25:17,527 --> 00:25:19,427
+Let's check it again.
+
+217
+00:25:19,967 --> 00:25:23,827
+Let me run this incorrect bank simulation first.
+
+218
+00:25:25,748 --> 00:25:33,468
+It's very quick, you see. You can immediately notice the beginning at the end, the beginning and the end.
+
+219
+00:25:34,468 --> 00:25:43,268
+When I run it again, it takes only some few seconds, some few milliseconds, less seconds.
+
+220
+00:25:43,728 --> 00:25:45,728
+Bir sürüpüle.
+
+221
+00:25:45,728 --> 00:25:48,728
+Bir sürüpüle, bir sürüpüle,
+
+222
+00:25:48,728 --> 00:25:50,728
+ve sonrasında
+
+223
+00:25:50,728 --> 00:25:53,728
+sonrasında
+
+224
+00:25:53,728 --> 00:25:55,728
+ve deküle
+
+225
+00:25:55,728 --> 00:25:57,728
+bir sürüpüle
+
+226
+00:25:57,728 --> 00:25:58,728
+çünkü
+
+227
+00:25:58,728 --> 00:26:00,728
+bir sürüpüle
+
+228
+00:26:03,728 --> 00:26:04,728
+ve
+
+229
+00:26:12,443 --> 00:26:15,443
+Ve
+
+230
+00:26:11,316 --> 00:26:18,596
+You can notice some about half or one-third of the seconds. That's noticeable, easy, noticeable.
+
+231
+00:26:19,976 --> 00:26:22,375
+It's yes, slow, but it's correct.
+
+232
+00:26:24,655 --> 00:26:27,915
+All right. Now we have to announce the race condition.
+
+233
+00:26:28,056 --> 00:26:35,776
+The only thing we need to do is to add the synchronized keyword to all the methods that can lead to a race condition.
+
+234
+00:26:36,339 --> 00:26:48,619
+Other than that, there are some advanced techniques of synchronization and race avoidance, but we will not cover them in this lecture.
+
+235
+00:26:50,079 --> 00:26:56,759
+Now we can try to make it happen somewhat without the synchronization.
+
+236
+00:26:58,879 --> 00:27:00,819
+Let's see what is here.
+
+237
+00:27:02,836 --> 00:27:22,836
+Okay. What happens if we remove this possible delay? Depositors and withdrawals are the same. No problems about them. Let's check again. For example, compare this and this.
+
+238
+00:27:26,003 --> 00:27:27,003
+Evet, aynı.
+
+239
+00:27:27,003 --> 00:27:55,003
+Yeni aynı.
+
+240
+00:27:52,627 --> 00:27:58,988
+Now, this case is correct, this art is correct, but the two of us were incorrect.
+
+241
+00:27:59,807 --> 00:28:08,347
+You see, some few leaders are wrong, or sometimes we get the correct number.
+
+242
+00:28:09,395 --> 00:28:12,795
+Such kind of bugs are really hard to trace.
+
+243
+00:28:13,395 --> 00:28:19,495
+If something works correctly sometimes and incorrectly sometimes,
+
+244
+00:28:19,495 --> 00:28:24,735
+it's spotting the root curve of those arrows are very hard to do.
+
+245
+00:28:25,295 --> 00:28:28,195
+But we know the reason.
+
+246
+00:28:28,895 --> 00:28:30,395
+It's the race condition.
+
+247
+00:28:31,895 --> 00:28:34,495
+And let's try another thing too.
+
+248
+00:28:37,652 --> 00:28:42,771
+14y package, for example, that would cause everything.
+
+249
+00:28:53,332 --> 00:28:58,892
+What if we don't use any temporary wave?
+
+250
+00:28:58,892 --> 00:29:09,232
+I am just telling that balance minus equals amount.
+
+251
+00:29:10,232 --> 00:29:10,312
+Okay.
+
+252
+00:29:11,952 --> 00:29:19,884
+And balance plus equals...
+
+253
+00:29:20,756 --> 00:29:23,776
+amount and without any delay.
+
+254
+00:29:27,175 --> 00:29:31,316
+I'm not changing account depositors or account program.
+
+255
+00:29:32,276 --> 00:29:34,276
+Let's run the first simulation.
+
+256
+00:29:38,675 --> 00:29:41,336
+See, it's still wrong.
+
+257
+00:29:42,195 --> 00:29:54,875
+Although I didn't introduce any local number variable, any local temporary variable, there are no local temporary variables, but the output is wrong.
+
+258
+00:29:57,955 --> 00:29:59,096
+This time is correct.
+
+259
+00:30:00,135 --> 00:30:02,056
+Again, correct, but this time it is not.
+
+260
+00:30:02,775 --> 00:30:03,215
+So, see.
+
+261
+00:30:05,295 --> 00:30:05,795
+So.
+
+262
+00:30:06,228 --> 00:30:12,107
+Even I don't use some local copies, the rest conditions can still occur.
+
+263
+00:30:13,807 --> 00:30:21,407
+Because every Java statement will lead to multiple bytecode operations.
+
+264
+00:30:22,387 --> 00:30:46,008
+And if this was not interpreted language, but compiled language, such as C, some problems can still occur because every code will be translated to the machine code, multiple machine codes, and the scheduler of the operating system can halt any threat, any time.
+
+265
+00:30:46,667 --> 00:30:49,728
+So, race conditions are bound to occur.
+
+266
+00:30:50,612 --> 00:31:07,731
+The introduction of a contemporary local variable and the addition of a few milliseconds of delay are done in order to aggravate, make this condition worse.
+
+267
+00:31:08,692 --> 00:31:16,672
+But even we remove those additional obstacles, we still get errors if we do not synchronize.
+
+268
+00:31:17,268 --> 00:31:24,528
+So, this is a very real and specific requirement of multi-treaded tasks.
+
+269
+00:31:24,528 --> 00:31:32,528
+We need to be able to synchronize the class in order to prevent racing conditions.
+
+270
+00:31:36,723 --> 00:31:41,123
+Now, if you don't have any questions, this is about it.
+
+271
+00:31:42,443 --> 00:31:57,183
+Please ask any questions related to master trading, related to some other object orientation topic, or you can ask questions about the project of this course, about the final exam.
+
+272
+00:31:57,748 --> 00:31:58,748
+Whatever you wish.
+
+273
+00:31:59,407 --> 00:32:06,748
+So, about final exam, it will be online, but we haven't complete...
+
+274
+00:32:06,748 --> 00:32:08,587
+Ha, Yaka. Konuşmuş muyduk?
+
+275
+00:32:09,607 --> 00:32:11,687
+Test olacak diye demiş olabilirsiniz.
+
+276
+00:32:12,087 --> 00:32:14,728
+I'm sorry, I don't remember every detail.
+
+277
+00:32:15,947 --> 00:32:17,807
+So, please check.
+
+278
+00:32:18,268 --> 00:32:22,127
+I don't want to give you some wrong information.
+
+279
+00:32:22,748 --> 00:32:23,847
+Just a moment, please.
+
+280
+00:32:25,748 --> 00:32:30,828
+Hocam bir şey sorabilir miyim?
+
+281
+00:32:31,368 --> 00:32:32,308
+Abi lütfen buyurun.
+
+282
+00:32:32,672 --> 00:32:39,371
+Notlara etkileri ne kadar olacak şimdi ödevin falan projenin tam son durumda?
+
+283
+00:32:39,371 --> 00:32:47,251
+Evet, evet haklısınız. Çok önemli. Zaten şimdi onu da konuşmuştuk. Onu da notlarına bakıyorum.
+
+284
+00:32:47,631 --> 00:32:54,791
+Şimdi şöyle yapacağız arkadaşlar. Vize yüzde 25, proje yüzde 25, lab yüzde 10. Finalde işte 40.
+
+285
+00:32:55,284 --> 00:33:03,944
+Hani biliyorsunuz yönetmeniniz diyor ki dönem içi etkinliği %60 notlandırılacak, dönem içi etkinliği de %40 notlandırılacak.
+
+286
+00:33:04,644 --> 00:33:12,664
+En bu kapsamda final %40, geri kalan %60'ı vize projeye al 25-25-10 şeklinde dağıtılır.
+
+287
+00:33:13,884 --> 00:33:15,304
+Anladım hocam, sağ olun.
+
+288
+00:33:17,684 --> 00:33:18,464
+Bir şey diyelim.
+
+289
+00:33:18,932 --> 00:33:30,351
+Sonra biliyorsunuz projeyi uzattık işte. İnşallah güzel projeler gelir. Ondan sonra jama. Çok az. Aç kapağını çok az.
+
+290
+00:33:34,612 --> 00:33:35,468
+Arkadaşlar, class, object,
+
+291
+00:33:39,700 --> 00:33:45,060
+Tamam, şimdi sinasını tam olarak test yapacağız, yazını yapacağız, onu söylememişiz.
+
+292
+00:33:45,240 --> 00:33:48,900
+Ama test yapabiliriz büyük olasılıkla.
+
+293
+00:33:49,240 --> 00:33:50,480
+Bilmiyorum sizin düşünce henüz nedir?
+
+294
+00:33:50,580 --> 00:33:53,700
+Madem daha sonra zaman ayırdığımız derse kaptırmayı bir söyleyelim bakalım.
+
+295
+00:33:54,200 --> 00:33:56,900
+Klasik usul bir sıra mı tercih edersiniz?
+
+296
+00:33:57,019 --> 00:34:00,360
+Sinasını yoksa test usulü bir sinasını tercih edersiniz?
+
+297
+00:34:00,519 --> 00:34:02,040
+Aynı geçen sefer yaptığımız gibi.
+
+298
+00:34:02,480 --> 00:34:03,120
+Ne düşünüyorsunuz?
+
+299
+00:34:04,860 --> 00:34:06,420
+Sorduğuna göre değişir hocam.
+
+300
+00:34:07,155 --> 00:34:10,456
+Yani şey kolay olmuyor.
+
+301
+00:34:10,775 --> 00:34:11,336
+Tamam mı?
+
+302
+00:34:11,436 --> 00:34:13,556
+Yani yaptığımız şeyler şöyle oluyor işte.
+
+303
+00:34:13,635 --> 00:34:15,596
+Bir tane karmaşık bir sınıf çalışması veriyoruz.
+
+304
+00:34:15,596 --> 00:34:19,655
+Şimdi multi-tradingi de gördüğünüz gibi mutlaka multi-trading de olacak.
+
+305
+00:34:20,096 --> 00:34:20,895
+Ondan sonra acaba.
+
+306
+00:34:25,012 --> 00:34:35,452
+Tamamen şimdi atıyorum kafadan. Şu örneği yaptık ya. Madem bu örneği yaptık, biz de söyleyeceğiz ki işte şöyle bir UMLS'ı şemesi vereceğiz.
+
+307
+00:34:35,452 --> 00:34:47,032
+Bu örneğin işlemesiyle ilgili. Şöyle bir problemimiz var diyeceğiz. Bazı üye alanları saklayacağız, bazı ilişkileri saklayacağız falan filan. Araya kırılmasını da koyacağız, edeceğiz filan. Ondan sonra acaba.
+
+308
+00:34:47,972 --> 00:34:52,231
+Hem, yani ama tabii ki sadece multi-trading olmayacak. Neler gördük?
+
+309
+00:34:53,012 --> 00:35:20,472
+gördük ondan sonra acaba. Stream operasyonları, yani serialization, desterarization gördük ondan sonra acaba. Ne bileyim, şöyle olsun diyelim mesela, bir banka bilgisinin gerçekleştiğini diyeceğiz, hesaptan para çıkacak, para gönderecek, EFT yapılacak, yatırım fonu alacak şeyler olsun. Bir tanesi veya fong sınıfı koyun mesela, yatırım fonu sınıfı koyun falan. Bir tanesi de banking simulation şeyi koyun.
+
+310
+00:35:21,012 --> 00:35:25,952
+Bir şeyin, işte, virtual form alması için olan şu kodunu kodlayın diyeceğiz.
+
+311
+00:35:26,072 --> 00:35:28,132
+Veyahut da account hesabını kodlayın diyeceğiz.
+
+312
+00:35:28,652 --> 00:35:35,552
+Ondan sonra cevap, dildeski mesela, sistemin durumunu komple diske kaydetmeye yarayacak şu metodu koyun.
+
+313
+00:35:35,672 --> 00:35:44,472
+Ama bu metot, önce herhangi bir transaction varsa, para yatırma, para çekme hareketi bekleyen, onların tamamlamasını beklemede diyeceğiz.
+
+314
+00:35:44,472 --> 00:35:48,472
+Bakalım, havuf oluşturup da threadleri, oyu koyup da, şartlarla.
+
+315
+00:35:49,012 --> 00:35:56,092
+çalışmamızı, çalışmamızı, çalışmamızı mı bakacağız. Yani ne kadar kolay sormaya çalışsak bile zor olacaktır.
+
+316
+00:35:56,092 --> 00:36:07,632
+Onu söyleyeyim. Size de zor yapması, bize de okuması zor olacak. Veyahut da test yapacağız ama testte de kendimciler olacak elbette.
+
+317
+00:36:08,212 --> 00:36:15,512
+Kıvamdan da kaçınılmaz yani. Bu durumda yani zor olacak dersen tercihiniz test mekul olacaktır.
+
+318
+00:36:18,835 --> 00:36:19,635
+İnanasınız.
+
+319
+00:36:20,515 --> 00:36:28,435
+Yani hocam, yazılı sınavda hani biraz daha böyle puan vermeye hani eğilimli hani okuma olabiliyor. Hani o şekilde bir okuma olabilirse belki.
+
+320
+00:36:29,536 --> 00:36:29,715
+Evet.
+
+321
+00:36:30,215 --> 00:36:30,956
+Belki yazılı...
+
+322
+00:36:30,956 --> 00:36:41,095
+O oluyor. Kesin. Yani yaptığınız en ufak şeye de puan veriyoruz ama dikkatli de olmanız gerekiyor. Ufak ufak puanlar da kırpılada bilmiyorlar.
+
+323
+00:36:41,836 --> 00:36:45,015
+Yani ona göre artık en iyisini siz bilirsiniz yani.
+
+324
+00:36:45,588 --> 00:36:46,408
+Teşekkürler.
+
+325
+00:36:46,428 --> 00:36:47,188
+Peki, teşekkür ederim.
+
+326
+00:36:47,188 --> 00:36:48,468
+Teşekkürler Gönül'ün için.
+
+327
+00:36:48,848 --> 00:36:49,248
+Bakacağız.
+
+328
+00:36:49,388 --> 00:36:54,308
+Biz de nasıl iş yükümüzü de dengelemeye göre test mi yapalım, şey mi yapalım, bakacağız.
+
+329
+00:36:54,648 --> 00:36:56,648
+Onu size bilgilendiririz, tamam mı arkadaşlar?
+
+330
+00:36:56,888 --> 00:36:59,428
+Şu an daha önce bu proje işi vardı.
+
+331
+00:36:59,668 --> 00:37:01,088
+Onun süresini uzattık da.
+
+332
+00:37:01,408 --> 00:37:03,928
+Onun şeyisi, hengarlısı yeni bitti.
+
+333
+00:37:04,628 --> 00:37:06,088
+Bu yakınlarda konuşuruz.
+
+334
+00:37:06,088 --> 00:37:07,828
+Mevcut projeyle, fukuk projeyle.
+
+335
+00:37:08,168 --> 00:37:09,188
+Siz de bilgilendiririz.
+
+336
+00:37:10,675 --> 00:37:14,335
+Evet, buyurun. Başka sorunuz ya da merak ettiniz bir şey var mı?
+
+337
+00:37:15,015 --> 00:37:19,495
+Hocam, devamsızlığa bakmıyordunuz değil mi?
+
+338
+00:37:20,275 --> 00:37:28,315
+Ben bakmıyorum. Online derslerinde, devamsızlığa bakacağım Allah'a sen boş ver. Dinlersiniz yani.
+
+339
+00:37:29,895 --> 00:37:30,535
+Anladım.
+
+340
+00:37:31,815 --> 00:37:33,035
+Evet, başka?
+
+341
+00:37:39,572 --> 00:37:43,192
+Peki, o zaman geçmiş olsun arkadaşlar.
+
+342
+00:37:44,471 --> 00:37:48,052
+Şimdi de bakacağız nasıl olacak, sizi de ilgilendireceğim.
+
+343
+00:37:49,012 --> 00:37:55,351
+Konu nasıl, biraz da bitti diyerekten bunu hallettik.
+
+344
+00:37:55,860 --> 00:38:12,440
+Şeylerle ilgili pek bir bilgi gelmedi telafi sınavıyla ilgili ama bakacağız onu da. O konuda eğer telafi bir hak etmiş olan bir arkadaşların varsa da onları da bilgilendireceğiz.
+
+345
+00:38:12,440 --> 00:38:18,720
+Peki. O zaman Allah'a sorduk. Selamlar, hepinizi aşağıya radyom. Görüşmek üzere inşallah.
+
+346
+00:38:19,880 --> 00:38:20,920
+Görüşmek üzere hocam.
+
+347
+00:38:21,320 --> 00:38:22,040
+İyi günler hocam.
+
+348
+00:38:22,739 --> 00:38:24,639
+Egon, lan, stop at this one up.

@@ -1,0 +1,1075 @@
+1
+00:11:26,932 --> 00:11:28,032
+Arkadaşlar merhaba.
+
+2
+00:11:31,272 --> 00:11:32,432
+Sesim geliyor mu?
+
+3
+00:11:37,076 --> 00:11:37,596
+Evet.
+
+4
+00:11:52,755 --> 00:11:56,115
+Okey. Bir ekran paylaşımı yaptım arkadaşlar.
+
+5
+00:12:04,628 --> 00:12:25,548
+Okey. Object-Oriented Programming dersinin, bu arada ben kameramı da açayım. Evet, iki hesaptan bağlanıyorum. Şu anda görüntümün ve sesimin geldiği bir hesap var. Bir de ekran paylaşımı yaptığım diğer bir başka hesap var.
+
+6
+00:12:26,419 --> 00:12:37,480
+Beni duymakta sorun yaşıyorsanız ya da görüntü almakta sorun yaşıyorsanız lütfen chatten yazın ya da mikrofonunuzu aktif hale getirip söyleyin.
+
+7
+00:12:38,980 --> 00:12:43,699
+Evet, bu dönem Object Oriented Programming dersinde beraberiz.
+
+8
+00:12:45,524 --> 00:12:51,283
+Dersle ilgili requirementları konuşarak başlamak istiyorum.
+
+9
+00:12:51,443 --> 00:12:54,884
+So, first of all, are there any English speaking students among us?
+
+10
+00:13:03,668 --> 00:13:04,107
+Okay.
+
+11
+00:13:06,508 --> 00:13:12,807
+The whole lecture is going to be in English starting from the first week.
+
+12
+00:13:13,748 --> 00:13:17,728
+So why not start the lecture in English?
+
+13
+00:13:18,207 --> 00:13:30,388
+So I'm going to tell you the requirements of the course right now and then tell you a little bit about what kind of things that you are going to learn in this course.
+
+14
+00:13:30,836 --> 00:13:38,875
+I will tell you what I'm going to expect from you as a student and what you should be expecting from me as an instructor of this course.
+
+15
+00:13:40,216 --> 00:13:40,696
+Okay.
+
+16
+00:13:43,375 --> 00:13:47,135
+In the meantime, let me check if there are any questions in the chat.
+
+17
+00:13:47,276 --> 00:13:47,556
+Okay.
+
+18
+00:13:47,696 --> 00:13:48,336
+No questions.
+
+19
+00:13:50,611 --> 00:14:05,731
+Okay, now in this course, we are teaching programming, obviously, programming, object-oriented programming, and we are teaching this in Java, Java programming language.
+
+20
+00:14:06,651 --> 00:14:14,091
+And in this course, we have two midterms. First of all, this course has three groups.
+
+21
+00:14:14,740 --> 00:14:23,519
+So, you have two additional groups at the same time, at the same date.
+
+22
+00:14:23,940 --> 00:14:28,159
+So, make sure that you are attending the right group.
+
+23
+00:14:28,700 --> 00:14:30,700
+That's the first thing that I should tell you.
+
+24
+00:14:31,412 --> 00:14:37,852
+And I suppose my group is the first group, if I'm not mistaking.
+
+25
+00:14:38,432 --> 00:14:45,591
+And Yunus Emre Hoca and Furkan Hoca, they are giving the lectures for the other two groups.
+
+26
+00:14:47,012 --> 00:14:51,072
+Now, in this course, we are going to have two midterms.
+
+27
+00:14:51,612 --> 00:14:54,852
+The first one is going to be on the eighth week.
+
+28
+00:14:55,231 --> 00:14:58,752
+The second one is going to be in the 13th week.
+
+29
+00:14:59,508 --> 00:15:04,208
+You can see the dates on the slide.
+
+30
+00:15:05,208 --> 00:15:07,688
+And there will be a make-up exam.
+
+31
+00:15:07,868 --> 00:15:12,288
+If you miss one of the midterms, either the first one or the second one,
+
+32
+00:15:12,288 --> 00:15:18,888
+you will be allowed to attend the make-up midterm exam, which is the last week of the semester.
+
+33
+00:15:20,768 --> 00:15:26,168
+And there will be a midterm exam.
+
+34
+00:15:28,211 --> 00:15:30,771
+There will be a final exam, sorry.
+
+35
+00:15:31,491 --> 00:15:38,611
+And there will be a lab, programming lab for this course.
+
+36
+00:15:38,611 --> 00:15:43,291
+And there will be a term project for this course as well.
+
+37
+00:15:44,371 --> 00:15:53,812
+Now, for the software labs, we are thinking of doing eight different lab lectures.
+
+38
+00:15:54,484 --> 00:15:59,244
+Four of them will be programming assignment-based lab assignments.
+
+39
+00:15:59,464 --> 00:16:13,184
+The other four will be based on doing assignments given by the instructors, teaching assistants of this course.
+
+40
+00:16:13,544 --> 00:16:21,183
+But we will tell you more about the lab assignments and the lab lectures maybe.
+
+41
+00:16:46,707 --> 00:16:52,707
+You should follow the announcements coming from the instructors of this course.
+
+42
+00:16:55,347 --> 00:17:02,627
+As for the books, there are different books and tutorials for Java programming language.
+
+43
+00:17:03,091 --> 00:17:10,692
+And the ones that we are following is the DITEL and DITEL Java, How to Program.
+
+44
+00:17:11,471 --> 00:17:18,291
+And obviously, there is another reference book, Core Java.
+
+45
+00:17:18,932 --> 00:17:23,052
+So you can also take a look at that book as well.
+
+46
+00:17:23,052 --> 00:17:27,271
+You can find the PDF versions of these books online.
+
+47
+00:17:27,955 --> 00:17:34,915
+If you cannot find them, you can always go to the library and check out these books. These books are available there.
+
+48
+00:17:36,035 --> 00:17:37,915
+And there is also...
+
+49
+00:17:38,900 --> 00:17:46,700
+UML language, and which we are going to use in order to design object-oriented programs.
+
+50
+00:17:47,640 --> 00:17:51,620
+And so there's a book called UML Distilled.
+
+51
+00:17:52,039 --> 00:17:54,820
+So you can also find PDF version of this book.
+
+52
+00:17:56,260 --> 00:18:00,860
+You can also go to the library and check out the book as well.
+
+53
+00:18:11,763 --> 00:18:28,563
+Okay, there are three different instructors and each instructor is giving a group and all instructors are using the same slide set and the exams are the same for all the groups.
+
+54
+00:18:29,683 --> 00:18:36,163
+So, you need to pay attention to which lecture and which group that you are attending.
+
+55
+00:18:36,803 --> 00:18:38,864
+So, that's the most important thing.
+
+56
+00:18:40,980 --> 00:18:58,420
+And the lectures are given by the instructors and the lab lectures are given by the teaching assistants and the names and email addresses for the teaching assistants for this course will be announced later.
+
+57
+00:19:00,039 --> 00:19:00,720
+Okay.
+
+58
+00:19:02,340 --> 00:19:07,079
+The lecture will start at 2 o'clock in the afternoon.
+
+59
+00:19:08,788 --> 00:19:16,387
+So in online Yıldız Editere, so right now the lecture seems like it's going to start at 12.
+
+60
+00:19:16,387 --> 00:19:25,268
+But so the reason for that is that the lab lectures.
+
+61
+00:19:35,096 --> 00:19:44,576
+But we are going to start the lecture, the theory portion of this lecture at 2 o'clock in the afternoon.
+
+62
+00:19:46,804 --> 00:20:06,684
+Okay. Now, if you are a student who took this course before and who failed this course, who's taking this course the second time, you don't have to attend the lab assignments.
+
+63
+00:20:07,796 --> 00:20:16,736
+And so in that case, what we are going to do, the 10% of the lab assignments that's going to be affecting your grade.
+
+64
+00:20:17,076 --> 00:20:23,655
+So we are going to distribute that into other grading criteria.
+
+65
+00:20:24,115 --> 00:20:28,796
+So you won't be responsible for the lab lectures.
+
+66
+00:20:31,284 --> 00:20:44,784
+As I said, so there will be teaching assistants for this course and all the names and the email addresses and on the websites for the teaching assistants will be announced as well.
+
+67
+00:20:58,932 --> 00:21:11,032
+A grade for the activities for the semester is less than 40, then you will fail in the course.
+
+68
+00:21:14,032 --> 00:21:14,992
+Hold on.
+
+69
+00:21:20,564 --> 00:21:36,744
+So, which means that the inner activities, the activities like the midterms and the term project and the lab assignments all together.
+
+70
+00:21:37,284 --> 00:21:45,064
+So, if your grade is less than 40, so then you will fail in the course.
+
+71
+00:22:04,723 --> 00:22:06,884
+Hocam, mikrofon kapalı galiba.
+
+72
+00:22:08,683 --> 00:22:09,123
+Okay.
+
+73
+00:22:13,163 --> 00:22:29,063
+Now, as I was showing to you, so these are the contents that we are going to cover in this course, but before I go into details of this,
+
+74
+00:22:30,324 --> 00:22:33,943
+So I want to show you the website to this course.
+
+75
+00:22:34,983 --> 00:22:40,903
+So this is a Google site where you can find all the announcements.
+
+76
+00:22:41,104 --> 00:22:48,963
+I'm going to share the link to the website on the chat so that you can record it.
+
+77
+00:22:51,784 --> 00:22:53,003
+Okay, yeah.
+
+78
+00:22:58,483 --> 00:23:06,323
+Okay, now, so, [öğrenci], I'm going to explain to you the grading policy, so, in a minute.
+
+79
+00:23:07,563 --> 00:23:10,063
+Now, so, this is the website to the course.
+
+80
+00:23:11,183 --> 00:23:20,583
+You can see all the documents related to the course, so you can download them, and there are also some zip files.
+
+81
+00:23:21,460 --> 00:23:42,079
+That I'm going to ask you to download and open them and use an editor in order to import these projects to your editor and start.
+
+82
+00:23:42,867 --> 00:23:44,647
+Experiment on the codes.
+
+83
+00:23:45,147 --> 00:23:45,307
+Okay.
+
+84
+00:23:45,728 --> 00:23:48,527
+Today is the first day of the class.
+
+85
+00:23:48,527 --> 00:23:53,687
+And so I'm asking you to do it right now and this week.
+
+86
+00:23:53,788 --> 00:23:54,047
+Okay.
+
+87
+00:23:54,067 --> 00:24:05,107
+Because every week we are going to talk about different concepts and then we are going to show you different code pieces.
+
+88
+00:24:05,748 --> 00:24:24,128
+And after each lecture, you are expected to write all these codes by yourself, or you are expected to run these codes by using the examples that we have given to you.
+
+89
+00:24:24,128 --> 00:24:24,648
+Okay.
+
+90
+00:24:26,008 --> 00:24:26,728
+Now.
+
+91
+00:24:27,923 --> 00:24:31,624
+So here is the contact information so you can contact me.
+
+92
+00:24:31,624 --> 00:24:35,304
+So if you have any questions.
+
+93
+00:24:36,403 --> 00:24:36,744
+Okay.
+
+94
+00:24:37,963 --> 00:24:43,443
+So let's go back to the slides.
+
+95
+00:24:43,844 --> 00:24:44,124
+Okay.
+
+96
+00:24:44,344 --> 00:24:46,884
+Going back to the grading policy.
+
+97
+00:24:47,443 --> 00:24:50,104
+So here is the deal.
+
+98
+00:24:50,764 --> 00:24:55,344
+So as you see, the lab assignments are affecting the 10%.
+
+99
+00:24:56,147 --> 00:24:59,147
+Of your total grade.
+
+100
+00:24:59,731 --> 00:25:15,071
+So, for those who are taking this class for the second time, so what we are going to do, so we are going to, so you have one, two, three, four different other criteria.
+
+101
+00:25:15,251 --> 00:25:24,291
+So, which means that 10% will be divided into four and it will be distributed to the other grading criteria.
+
+102
+00:25:24,991 --> 00:25:25,152
+Okay.
+
+103
+00:25:25,511 --> 00:25:27,731
+If you are taking this course for the second time.
+
+104
+00:25:27,731 --> 00:25:34,192
+But if this is the first time that you are taking, you will be responsible for the lab assignment on this.
+
+105
+00:25:34,971 --> 00:25:38,652
+So there is another announcement.
+
+106
+00:25:38,891 --> 00:25:49,831
+But for now, all students who are taking this for the first time will have to attend the lab lectures and you will get great.
+
+107
+00:25:56,403 --> 00:26:02,723
+Okay, now what kind of things that you are going to learn in this course?
+
+108
+00:26:03,859 --> 00:26:31,359
+Arkadaşlar, first of all, so we are going to use Java programming language, so therefore we are going to give you an outline of the, you know, this language, and then we will go into details of the objects because in object programming world, so we use objects in order to write the codes and so on.
+
+109
+00:26:32,339 --> 00:26:39,239
+So, and also the objects are created based on the classes.
+
+110
+00:26:39,419 --> 00:26:44,960
+We will talk about the classes as well, talk about the differences between the classes and objects.
+
+111
+00:26:44,960 --> 00:26:50,579
+We will use a design language based on UML.
+
+112
+00:26:51,539 --> 00:27:00,740
+And we will talk about how you can use this UML language in order to design programs.
+
+113
+00:27:01,715 --> 00:27:05,615
+We will talk about the object state, behavior, and methods.
+
+114
+00:27:06,315 --> 00:27:11,435
+So we will conduct programming everything by utilizing the objects.
+
+115
+00:27:11,435 --> 00:27:21,475
+So object has state, it says behavior, and so the behavior of each object is implemented as methods.
+
+116
+00:27:21,615 --> 00:27:23,175
+We will talk about that.
+
+117
+00:27:24,243 --> 00:27:32,723
+And we will talk about data types, primitive data types, wrapper data types in Java programming languages.
+
+118
+00:27:33,811 --> 00:27:49,771
+And by the time we finished all this, so you will have an idea regarding the Java programming language and how to use the Java programming language when you are writing the code.
+
+119
+00:27:49,771 --> 00:27:55,011
+And then we will start talking about the object relations.
+
+120
+00:27:55,851 --> 00:27:59,971
+And there are different object relations that we utilize in order to write code.
+
+121
+00:28:00,915 --> 00:28:07,195
+And in designing the object relations, we are using obviously UML.
+
+122
+00:28:07,596 --> 00:28:12,795
+So this means that we are also going to teach you UML interaction diagrams.
+
+123
+00:28:14,612 --> 00:28:24,192
+We'll talk about inheritance concept, we'll talk about interface concept, we will talk about polymorphism, method overriding and overloading.
+
+124
+00:28:24,192 --> 00:28:29,172
+And all these are the important concepts of the object-oriented programming.
+
+125
+00:28:30,259 --> 00:28:45,300
+And then we will also talk about Enum classes, which are special types of classes that allows us to utilize Java programming utility libraries in order to write the code.
+
+126
+00:28:46,779 --> 00:28:52,300
+And so this will be the first segment of the course.
+
+127
+00:28:52,980 --> 00:29:00,840
+And I am thinking that, you know, by midterm, so we will be able to cover all these concepts.
+
+128
+00:29:02,039 --> 00:29:06,639
+And after that, we will go into details of the data structures.
+
+129
+00:29:07,460 --> 00:29:14,159
+We will utilize the Java libraries in order to implement the data structures.
+
+130
+00:29:15,159 --> 00:29:18,360
+So you will learn different types of data structures.
+
+131
+00:29:19,155 --> 00:29:24,255
+Arrays, list, maps, etc.
+
+132
+00:29:25,255 --> 00:29:38,695
+And then we will talk about exception handling, which is basically whenever your program produces an error, so you will learn how to handle such an error.
+
+133
+00:29:39,536 --> 00:29:41,375
+We will talk about typecasting.
+
+134
+00:29:41,375 --> 00:29:44,995
+You will be able to type one object to another.
+
+135
+00:29:46,003 --> 00:29:53,144
+We will learn about how to handle with files that are sitting on the file system.
+
+136
+00:29:54,403 --> 00:30:02,623
+We will learn the inner classes, how you can create cascade classes in Java programming language.
+
+137
+00:30:02,623 --> 00:30:11,223
+And finally, we will talk about multitracking and we will write codes using Java for multitracking.
+
+138
+00:30:12,243 --> 00:30:18,183
+Now, I will be teaching all of that by utilizing the Java programming language.
+
+139
+00:30:19,084 --> 00:30:27,963
+But so if you want to expand your, obviously in the exams, you will be responsible for Java programming language.
+
+140
+00:30:27,963 --> 00:30:30,763
+But if you want to expand your knowledge.
+
+141
+00:30:31,188 --> 00:30:45,528
+For C Sharp or Python, what you can do is we are going through the concepts, okay, starting from objects and UML and relations all the way to the end of the class.
+
+142
+00:30:46,288 --> 00:30:53,451
+Anytime I show you a Java code for related with a concept, what you can do, you can also...
+
+143
+00:30:53,460 --> 00:31:00,420
+And go find the C-sharp or Python version of the same concept and experiment with it.
+
+144
+00:31:00,620 --> 00:31:10,980
+So that way, as you are learning the object-oriented programming language, you can also learn that by utilizing the other programming languages.
+
+145
+00:31:11,420 --> 00:31:17,799
+But in this course, we are utilizing the Java programming language in order to write object-oriented programming.
+
+146
+00:31:20,531 --> 00:31:21,991
+Okay, there is a question.
+
+147
+00:31:23,152 --> 00:31:28,511
+Could we join the lab sections even though we have been taking this class before as an option?
+
+148
+00:31:28,951 --> 00:31:34,211
+Of course, you are allowed to take the lab sections.
+
+149
+00:31:36,211 --> 00:31:37,211
+But...
+
+150
+00:31:37,279 --> 00:31:48,160
+For those who are in this situation, who wants to attend the lab lectures, please send me an email so that I can let the teaching assistants know.
+
+151
+00:31:48,160 --> 00:31:58,460
+Otherwise, they are going to design the lab classes based on the first-time takers.
+
+152
+00:31:58,980 --> 00:32:03,039
+Okay. Second-time takers, please send me an email.
+
+153
+00:32:03,571 --> 00:32:07,071
+So my email address is in the website.
+
+154
+00:32:24,307 --> 00:32:50,968
+Okay. For today, I'm going to do an introductory course. So it is an introductory to the course. It is an introductory to the object-oriented programming. And it is the lecture that you should know about what kind of expectations that you should have from this lecture and what kind of expectations that I have from you as the students of this course.
+
+155
+00:32:51,763 --> 00:33:01,343
+So, starting from next week, we will go into details starting from the first lecture in great detail.
+
+156
+00:33:01,343 --> 00:33:06,423
+As for the lectures, I will do two sessions.
+
+157
+00:33:06,996 --> 00:33:11,796
+Each session will last 45 minutes or 50 minutes.
+
+158
+00:33:11,956 --> 00:33:18,676
+And then I will give a small break, 10 minutes break, and then I will continue to the next lecture.
+
+159
+00:33:18,676 --> 00:33:34,836
+Okay. And if you have any questions, if there are things that you didn't understand, what you can do, you can write it on the chat or you can just turn on your camera and also your microphone.
+
+160
+00:33:34,996 --> 00:33:39,616
+And you can ask your question by speaking.
+
+161
+00:33:42,676 --> 00:33:43,276
+Okay.
+
+162
+00:33:43,536 --> 00:33:49,156
+Now, in this course, as I said, we are going to be using Java programming language.
+
+163
+00:33:49,316 --> 00:33:51,616
+Java programming language has different editions.
+
+164
+00:33:52,564 --> 00:33:58,704
+So, there is a standard edition, there is a micro edition, and there is an enterprise edition.
+
+165
+00:33:58,704 --> 00:33:59,304
+Okay.
+
+166
+00:34:00,104 --> 00:34:12,344
+Now, so each of these editions have the basic libraries that we are going to be using as we write programs.
+
+167
+00:34:12,704 --> 00:34:19,204
+But at this point, the libraries that you need for this course is available in the standard edition.
+
+168
+00:34:20,563 --> 00:34:40,003
+Any editor that you will be using, so by default, when you download the editor, by default, it might have the Java execution environment installed with it.
+
+169
+00:34:40,003 --> 00:34:40,724
+Okay.
+
+170
+00:34:41,623 --> 00:34:47,003
+And I recommend Eclipse as the...
+
+171
+00:34:47,760 --> 00:34:56,119
+editor that you can utilize, which helps you with
+
+172
+00:34:57,588 --> 00:35:04,228
+With the names of the classes and also the methods that are available in the classes.
+
+173
+00:35:04,347 --> 00:35:14,488
+But if you don't want to use an editor, if you want to write it in a text editors like textpad, that's perfectly fine.
+
+174
+00:35:14,608 --> 00:35:17,628
+So you can also do that after you write your code.
+
+175
+00:35:18,088 --> 00:35:25,488
+Then you can go into the command line and you can run your code by utilizing.
+
+176
+00:35:25,588 --> 00:35:35,828
+You can first compile your code, then you can run your code by utilizing the Java Standard Edition commands.
+
+177
+00:35:46,260 --> 00:36:09,280
+Now, Java is an interpreted language, which means that as you are writing, as you are running your Java, compiled Java code, it is being executed on the CPU at the same time.
+
+178
+00:36:10,291 --> 00:36:30,492
+If it's interpreted languages, so what happens is that when you write your source code and then you have a compiler which takes the source code and turns into an intermediary file, okay, which we call compiled code.
+
+179
+00:36:30,911 --> 00:36:31,391
+Okay.
+
+180
+00:36:31,692 --> 00:36:40,331
+And then you have another interpreter that belongs to the programming language.
+
+181
+00:36:40,731 --> 00:36:44,911
+The interpreter takes the compiled code as an input.
+
+182
+00:36:45,612 --> 00:36:45,951
+Okay.
+
+183
+00:36:45,951 --> 00:36:54,411
+And then it transforms that compiled code into an executable code that can run on the CPU.
+
+184
+00:36:54,867 --> 00:37:03,087
+Okay, so which means that in any interpreted language, so we have an intermediary file, which is a compiled file.
+
+185
+00:37:03,087 --> 00:37:08,708
+In Java, this intermediary file ends with dot class.
+
+186
+00:37:09,448 --> 00:37:09,587
+Okay.
+
+187
+00:37:10,132 --> 00:37:15,091
+So the source code that we are going to write ends with .java.
+
+188
+00:37:15,632 --> 00:37:26,152
+And then you use the compiler of the programming language and turns this file .java into another file, another intermediary file called .class.
+
+189
+00:37:26,963 --> 00:37:27,443
+Okay.
+
+190
+00:37:27,923 --> 00:37:30,344
+And then you use an interpreter.
+
+191
+00:37:30,523 --> 00:37:33,724
+Again, that belongs to the same language, Java programming language.
+
+192
+00:37:33,864 --> 00:37:45,604
+The interpreter takes this intermediary file, this dot class file, and it converts into a format, okay, which can be run on the CPU.
+
+193
+00:37:46,900 --> 00:37:55,699
+And for Java programming language, the compiler is javac.exe. As you see, it's an executable file.
+
+194
+00:37:57,119 --> 00:38:04,159
+And for interpreter, it is javac.exe. And this is the interpreter.
+
+195
+00:38:05,100 --> 00:38:09,180
+And so the Java calls this interpreter as Java Virtual Machine.
+
+196
+00:38:09,180 --> 00:38:09,940
+Okay.
+
+197
+00:38:10,547 --> 00:38:18,247
+So the other programming, other interpreted programming languages have also names for this interpreter.
+
+198
+00:38:18,247 --> 00:38:35,247
+But its main job is that it takes this intermediary file and it converts it into executable code, which then can be run on the CPU.
+
+199
+00:38:36,387 --> 00:38:36,527
+Okay.
+
+200
+00:38:41,396 --> 00:38:50,896
+So you can use javac.axe or javac.exe if you want to run your codes on the command line.
+
+201
+00:38:50,896 --> 00:39:03,615
+Otherwise, you can utilize editors. Editors are really helpful in compiling your code and running your code on the CPU.
+
+202
+00:39:10,867 --> 00:39:16,728
+Okay, so Java has a number of editions ever since it was introduced.
+
+203
+00:39:16,728 --> 00:39:18,728
+And so...
+
+204
+00:39:19,188 --> 00:39:30,967
+This slide is from the past year, so I need to check whether this is the 1.15 is the latest version.
+
+205
+00:39:31,507 --> 00:39:36,948
+So I'm assuming that there is another version after that, maybe two.
+
+206
+00:39:37,728 --> 00:39:46,148
+But this version has almost every libraries that you are going to be using in this course.
+
+207
+00:39:46,643 --> 00:40:05,823
+So in every edition, they add new libraries or sometimes they update the syntax of the programming language so that you can write less code in order to do the same job.
+
+208
+00:40:05,823 --> 00:40:13,123
+So they try to make the syntax as easy as possible for the programmers.
+
+209
+00:40:26,547 --> 00:40:36,787
+Okay, so this is some additional information about the versions and the details.
+
+210
+00:40:36,787 --> 00:40:39,787
+So you can access the...
+
+211
+00:40:48,635 --> 00:41:01,556
+But if you download an editor like Eclipse, it will also ask you to download Java as you download the editor itself.
+
+212
+00:41:01,796 --> 00:41:09,515
+So you will basically have both editor and programming language libraries in your computer when you download.
+
+213
+00:41:09,556 --> 00:41:10,076
+The Editor.
+
+214
+00:41:20,563 --> 00:41:39,523
+Okay. As I said, so the editors like Integrated Development Environment IDE, so they are commonly used as the software engineers, engineers and computer engineers.
+
+215
+00:41:39,523 --> 00:41:47,283
+So we want to write codes effectively and as soon as possible.
+
+216
+00:41:48,563 --> 00:42:07,143
+Editors are helpful in order for us to remember some of the methods of the libraries or and also so they have nice user interfaces for us to manage codes and for us to write codes.
+
+217
+00:42:07,143 --> 00:42:15,183
+So therefore, I recommend using these editors. Eclipse is the one that I recommend. And there is another one called NetBeans.
+
+218
+00:42:16,211 --> 00:42:24,412
+And so there is another editor, IntelliJ, and all these are editors that you can utilize as you write your code.
+
+219
+00:42:25,572 --> 00:42:31,051
+And for UML diagrams, there is also a tool called VioletUML.
+
+220
+00:42:31,711 --> 00:42:35,711
+It's also a nice tool for designing UML diagrams.
+
+221
+00:42:36,751 --> 00:42:40,971
+So I also recommend using one of these UML.
+
+222
+00:42:41,748 --> 00:42:47,307
+Tools in order to design your object-oriented programming.
+
+223
+00:42:53,364 --> 00:43:18,684
+Okay. Now, so here, so I don't want to go into details as, so this is the first week. There are students who are deciding whether or not, so they should take this course in the semester. It's a mandatory course. They have to take it anyways, but
+
+224
+00:43:19,023 --> 00:43:30,083
+So, I want to make sure that we have almost all the students who enrolled in this class attending to this class.
+
+225
+00:43:30,083 --> 00:43:37,863
+So, I'm going to start covering the lecture starting from next week.
+
+226
+00:43:38,192 --> 00:43:42,851
+Hoping that majority of the class will be attending to that lecture.
+
+227
+00:43:43,552 --> 00:43:55,211
+Now, as for the attendance to this course, now, I will take, my expectation is for you to attend at least 60% of this course.
+
+228
+00:43:55,891 --> 00:44:12,231
+So, I will take a look at the attendance. Normally, the university expects 75% of the whole course, but what I'm going to do, I'm going to say 60%. So, you will be expected to attend the lectures.
+
+229
+00:44:12,652 --> 00:44:23,891
+If you did not attend the lectures, I don't think that you will be able to pass this course. And also, if you did not do the lab assignments and also the...
+
+230
+00:44:23,891 --> 00:44:27,431
+I don't think you will be able to pass the course.
+
+231
+00:44:27,431 --> 00:44:33,791
+So I highly recommend you to attend each lecture and listen to the lectures carefully.
+
+232
+00:44:33,791 --> 00:44:43,431
+If you can study the lectures before each class and...
+
+233
+00:44:44,047 --> 00:44:48,768
+Experiment with the codes that I provide you in the website.
+
+234
+00:44:49,407 --> 00:44:54,527
+And if you have any questions, ask those questions in the lecture.
+
+235
+00:44:54,967 --> 00:44:55,127
+Okay.
+
+236
+00:44:55,867 --> 00:45:00,107
+And of course, you will be able to send me emails.
+
+237
+00:45:00,527 --> 00:45:06,547
+Or if you are in Istanbul, you can always come and ask questions during my office hour.
+
+238
+00:45:06,648 --> 00:45:07,188
+That's fine.
+
+239
+00:45:07,668 --> 00:45:16,007
+But the best way to learn the material is to ask the instructor questions during the lecture.
+
+240
+00:45:16,748 --> 00:45:24,148
+But in order to do that, you need to first study beforehand and prepare your questions.
+
+241
+00:45:27,059 --> 00:45:37,500
+Okay, so do you have any questions related to regulations of the course or the way that I'm going to move forward in this course?
+
+242
+00:45:38,360 --> 00:45:42,360
+Anything confusing related with this course?
+
+243
+00:45:42,600 --> 00:45:44,760
+So if you have any questions, you can ask me.
+
+244
+00:45:52,019 --> 00:45:52,500
+Okay.
+
+245
+00:45:55,640 --> 00:45:59,900
+So I think since there's a silence, there is no questions.
+
+246
+00:46:00,840 --> 00:46:06,119
+And I also recommend for you to create a WhatsApp group among yourself.
+
+247
+00:46:06,119 --> 00:46:14,059
+Don't include me, but it will be beneficial if there is an announcement related with the course.
+
+248
+00:46:14,720 --> 00:46:18,119
+And if I do announce it on the website, if some of you...
+
+249
+00:46:18,416 --> 00:46:27,516
+You know, realize that announcement, you can share it with the class. That's also useful. So that's also what I recommend.
+
+250
+00:46:28,236 --> 00:46:40,516
+Yes, the lectures will begin at 2 o'clock in the afternoon every Thursday, but that's the theory lecture. But as for the lab lectures...
+
+251
+00:46:41,248 --> 00:46:51,507
+So, in the program, the lab lecture starts at 12 o'clock, but there will be an announcement.
+
+252
+00:46:53,007 --> 00:46:59,408
+No, you don't have to ask your questions in English. If you do ask your question in English, that would be nice.
+
+253
+00:47:00,108 --> 00:47:03,668
+But otherwise, you can always ask your questions in Turkish.
+
+254
+00:47:05,547 --> 00:47:08,507
+You can write your questions in the chat. You can...
+
+255
+00:47:08,672 --> 00:47:15,692
+Just turn on your camera and turn on your microphone and ask your questions either in Turkish or English.
+
+256
+00:47:20,340 --> 00:47:26,680
+Okay, it seems like, so you have your answers for the first lecture.
+
+257
+00:47:27,900 --> 00:47:34,820
+Mr. Akhtas, I think these labs sections will start after the third week, isn't it?
+
+258
+00:47:36,079 --> 00:47:39,180
+Yes, so we will...
+
+259
+00:47:39,180 --> 00:47:42,640
+The next three weeks, we don't have to join the online class.
+
+260
+00:47:43,056 --> 00:47:47,556
+At the starting time, just we are waiting for the lectures.
+
+261
+00:47:47,796 --> 00:47:48,176
+Exactly.
+
+262
+00:47:48,176 --> 00:47:49,096
+Yeah, yeah.
+
+263
+00:47:49,636 --> 00:48:01,256
+Just wait, just attend the lectures at two o'clock in the afternoon until we publish an announcement related with the lab lectures.
+
+264
+00:48:01,635 --> 00:48:06,735
+And in that announcement, you will know which lab class that you belong.
+
+265
+00:48:07,152 --> 00:48:13,912
+And also, what dates are the dates for the lab lectures.
+
+266
+00:48:13,912 --> 00:48:21,912
+But until that announcement, just attend the lectures at 2 o'clock in the afternoon on Thursdays.
+
+267
+00:48:23,112 --> 00:48:23,952
+Thank you.
+
+268
+00:48:27,827 --> 00:48:46,868
+Okay. Thank you. And so I'll see you next week at two o'clock in the afternoon. Did I say Thursday? It's not Thursday. It's Wednesday. Every Wednesday, two o'clock in the afternoon. Okay.
+
+269
+00:48:49,628 --> 00:48:54,028
+Okay. I'll see you next week during the class. Thank you.

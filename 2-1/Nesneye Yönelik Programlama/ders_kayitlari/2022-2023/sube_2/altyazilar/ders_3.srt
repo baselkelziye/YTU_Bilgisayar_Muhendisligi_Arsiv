@@ -1,0 +1,4731 @@
+1
+00:00:10,227 --> 00:00:12,227
+Açacağız birazdan.
+
+2
+00:00:12,227 --> 00:00:14,227
+Tekrar paylaşımı yapalım.
+
+3
+00:00:16,228 --> 00:00:17,228
+Açalım.
+
+4
+00:00:17,228 --> 00:00:19,228
+Şu an ay ağlasımızı açalım.
+
+5
+00:00:21,228 --> 00:00:28,228
+Uygulak olarak kadar katılımcı sayısının altısını bekliyorum diye.
+
+6
+00:12:17,556 --> 00:12:20,676
+Ok, class, it's about time to begin the lesson.
+
+7
+00:12:21,556 --> 00:12:28,355
+We have no attendance, but we have to cover the topic, so I need to begin.
+
+8
+00:12:29,876 --> 00:12:30,735
+Let's begin.
+
+9
+00:12:36,532 --> 00:12:37,532
+Okay.
+
+10
+00:12:39,331 --> 00:12:48,532
+While having left in the control floor, we have left, we will begin with the details of conflict now.
+
+11
+00:12:48,947 --> 00:13:04,288
+Well, you know that from the very beginning of your first course, Kantor's law is the series of command structures. It is the old law for execution.
+
+12
+00:13:06,788 --> 00:13:10,288
+So, regularly...
+
+13
+00:13:10,868 --> 00:13:25,988
+In object-oriented programming, control flow consists of messages passed between objects, which means an object calling the method of another object.
+
+14
+00:13:28,288 --> 00:13:36,248
+And in order to be able to execute some code, we need a fixed starting point.
+
+15
+00:13:36,659 --> 00:13:38,659
+Bu konfalt law.
+
+16
+00:13:38,659 --> 00:13:42,659
+And the beginning of this point is the main method.
+
+17
+00:13:42,659 --> 00:13:50,659
+In the first lectures, in the first week, we have made a small demonstration painting Heller-Watt-Bekonfla.
+
+18
+00:13:50,659 --> 00:13:55,659
+So we have mentioned a few details about that main method.
+
+19
+00:13:55,659 --> 00:14:00,363
+And now we can talk about it in more detail.
+
+20
+00:14:00,403 --> 00:14:08,764
+First of all, this method is a public method. Therefore, it can be executed freely by any instance.
+
+21
+00:14:08,764 --> 00:14:15,524
+This method is static. This is the main topic of this main method.
+
+22
+00:14:17,011 --> 00:14:25,151
+As I have told that a code program means method course between objects.
+
+23
+00:14:25,571 --> 00:14:30,851
+But at the beginning of the code, we don't have any objects created.
+
+24
+00:14:31,551 --> 00:14:36,131
+No objects are available at this time.
+
+25
+00:14:36,511 --> 00:14:38,551
+So what can we do?
+
+26
+00:14:38,551 --> 00:14:40,551
+This is like a question.
+
+27
+00:14:42,131 --> 00:14:45,011
+Does a...
+
+28
+00:14:45,011 --> 00:14:48,411
+Neck come from the chicken or the chicken comes from the egg.
+
+29
+00:14:48,791 --> 00:14:50,791
+We need a solid starting point.
+
+30
+00:14:50,791 --> 00:15:03,831
+Remember that static methods can be used as a common method among all instances of a class.
+
+31
+00:15:04,351 --> 00:15:12,751
+Therefore, we don't especially need an object difference in order to be able to call a static method.
+
+32
+00:15:13,011 --> 00:15:21,891
+Therefore, as the main method is a static one, we can call it without creating any objects at the beginning.
+
+33
+00:15:22,411 --> 00:15:26,351
+So, it's very crucial for the main method to be static.
+
+34
+00:15:26,964 --> 00:15:54,944
+This is a void method. On the contrary of its sibling in the Siri language, we don't have any return codes mentioning different details about how the program has been handled. We have other measures for that. We can create exceptions if something goes wrong. We will study exceptions much later in this.
+
+35
+00:15:54,964 --> 00:15:59,324
+We can make an error block.
+
+36
+00:15:59,324 --> 00:16:02,524
+We can do such other things as well.
+
+37
+00:16:02,524 --> 00:16:07,124
+Therefore, we don't need to return any value from a main method.
+
+38
+00:16:07,124 --> 00:16:09,004
+Therefore, it's boring.
+
+39
+00:16:09,004 --> 00:16:15,004
+It's same as main, according to the tradition that comes with the C programming language.
+
+40
+00:16:15,004 --> 00:16:17,604
+And the method parameters are...
+
+41
+00:16:17,663 --> 00:16:26,783
+The initial parameters that are being transferred to that main method by the command line.
+
+42
+00:16:27,663 --> 00:16:35,783
+For example, in order to test, for example, the setup of the JDK, we have...
+
+43
+00:16:36,500 --> 00:16:45,500
+We had run commands form and called the Java executable with the parameter version.
+
+44
+00:16:46,644 --> 00:16:59,443
+Therefore, it didn't compile anything, but it first saw the version parameter, and according to this, it has given some details about the installation.
+
+45
+00:17:00,723 --> 00:17:11,564
+These parameters, string parameters, is for doing that trick, in code, but we will not rely on those parameters.
+
+46
+00:17:12,084 --> 00:17:14,463
+Therefore, we will skip these details.
+
+47
+00:17:14,644 --> 00:17:29,644
+But we will take input from the user and later in the course we will take input from class files, object files, etc. during our lectures.
+
+48
+00:17:29,644 --> 00:17:40,644
+What else? You know what does a block of body means? Everything between classes, what having multiple instructions in it?
+
+49
+00:17:42,067 --> 00:18:08,127
+How can we print something? We use the system ART, print, or print ALARM methods. As you can understand from the capital case, system is a class. It has a static member named ART. Therefore, this member is being accessed in a static way, directly from a class reference.
+
+50
+00:18:08,692 --> 00:18:12,531
+And it has a method named print so that we can call it.
+
+51
+00:18:13,875 --> 00:18:18,775
+It takes any kind of parameter and prints it out to conform.
+
+52
+00:18:19,355 --> 00:18:23,435
+And we can use the plus operator for string concatenation.
+
+53
+00:18:24,796 --> 00:18:27,875
+This is an overloaded operator.
+
+54
+00:18:28,516 --> 00:18:34,536
+If both of its operands are numerical, then it makes numerical addition.
+
+55
+00:18:34,536 --> 00:18:41,816
+But if any of its parameters is a string, then it acts.
+
+56
+00:18:41,875 --> 00:18:45,695
+As a string concatenation operation.
+
+57
+00:18:46,855 --> 00:18:56,296
+And the difference between print and print around is that the letter also adds a new line character at the end of parameters.
+
+58
+00:18:58,775 --> 00:18:59,415
+Okay.
+
+59
+00:18:59,903 --> 00:19:18,443
+Now, we can design our first class with all its details and code it and test it by creating an instance of that type and calling its introduction method, for example.
+
+60
+00:19:20,943 --> 00:19:22,563
+Let's do it together now.
+
+61
+00:19:24,115 --> 00:19:27,435
+We will be writing the code from scratch.
+
+62
+00:19:27,435 --> 00:19:32,275
+Therefore, please let me do this.
+
+63
+00:19:32,275 --> 00:19:40,316
+Such as, of course, zoom in to the diagram.
+
+64
+00:19:40,316 --> 00:19:50,115
+And let me execute the Eclipse IDE and begin a new project and write that code.
+
+65
+00:19:56,723 --> 00:20:04,144
+Meanwhile, okay, just like, let me do this.
+
+66
+00:20:09,332 --> 00:20:11,852
+Ops.
+
+67
+00:20:13,992 --> 00:20:15,452
+No, I don't like to donate.
+
+68
+00:20:15,652 --> 00:20:16,012
+Thank you.
+
+69
+00:20:18,352 --> 00:20:20,392
+There's something on the chat, meanwhile.
+
+70
+00:20:21,832 --> 00:20:24,532
+Do we have to write it as well or just logical?
+
+71
+00:20:24,792 --> 00:20:32,132
+Well, if you wish, you can do it in parallel to me as you wish.
+
+72
+00:20:32,511 --> 00:20:41,652
+You can go ahead if you are getting a little bit bored or you can come slow and ask questions as you like.
+
+73
+00:20:41,652 --> 00:20:42,172
+Okay.
+
+74
+00:20:43,592 --> 00:20:51,391
+Now, let me take this outline window out of sight by taking it and adding it into that part.
+
+75
+00:20:51,971 --> 00:20:55,652
+I don't want this part as a split one, but...
+
+76
+00:20:57,268 --> 00:20:58,708
+Hanyu, two tabs on it.
+
+77
+00:20:58,708 --> 00:21:03,447
+So I need to drop down exactly to that point.
+
+78
+00:21:03,447 --> 00:21:08,887
+Otherwise, it became two windows on top of each other.
+
+79
+00:21:09,567 --> 00:21:11,807
+Now this will be enough for me.
+
+80
+00:21:12,288 --> 00:21:21,768
+And this is the project, the testing project that we are being used, that we have been using.
+
+81
+00:21:25,652 --> 00:21:27,771
+WeakTree package.
+
+82
+00:21:33,299 --> 00:21:35,759
+And let me create my car class.
+
+83
+00:21:43,443 --> 00:21:59,043
+class. And let's design two. It's not a big deal, but first we have to decide. Then let's run the YGMA tool.
+
+84
+00:22:05,203 --> 00:22:25,443
+OK. And create a new class diagram. Let's select a class and put it into the canvas. And we'll break it so that we can enter its name, number fields and number methods. This one will be representing a car.
+
+85
+00:22:25,652 --> 00:22:28,971
+Therefore, our class name is car.
+
+86
+00:22:28,971 --> 00:22:34,971
+Now, every class at least should have a unique identified member.
+
+87
+00:22:34,971 --> 00:22:43,971
+And member fields need to be private in order to comply with its data-heighting principle.
+
+88
+00:22:43,971 --> 00:22:46,291
+And minus means private.
+
+89
+00:22:46,291 --> 00:22:52,771
+The member field name is plate.
+
+90
+00:22:53,364 --> 00:22:57,124
+Two dots and its type is a string.
+
+91
+00:22:58,124 --> 00:23:01,483
+License plate is a string member and it's unique identify.
+
+92
+00:23:02,364 --> 00:23:06,124
+I don't need any additional member fields.
+
+93
+00:23:06,403 --> 00:23:08,204
+Now let's go on to the methods.
+
+94
+00:23:09,204 --> 00:23:13,164
+We had to add a constructor method to that class.
+
+95
+00:23:13,536 --> 00:23:20,456
+Because it has a unique identifier number here, therefore, every car must come with a license plate.
+
+96
+00:23:20,976 --> 00:23:30,256
+The correct way to enforce this is to have a non-default constructor, having that unique identifier as a parameter.
+
+97
+00:23:31,396 --> 00:23:33,836
+Constructor names are the same as the class name.
+
+98
+00:23:35,576 --> 00:23:37,836
+And it has just one parameter.
+
+99
+00:23:39,316 --> 00:23:43,316
+Platenumber, the new Platenumber, for example, of that kavram.
+
+100
+00:23:45,816 --> 00:23:47,316
+What else do we need?
+
+101
+00:23:47,816 --> 00:23:52,316
+We may need to obtain that Platenumber.
+
+102
+00:23:53,316 --> 00:23:57,316
+In order to learn its value, we need a getter method.
+
+103
+00:23:57,748 --> 00:24:00,668
+It will be named as GET plate.
+
+104
+00:24:00,668 --> 00:24:02,668
+This is our naming convention.
+
+105
+00:24:02,668 --> 00:24:12,548
+The GET word and number name, beginning with a capitalization of each distinct word.
+
+106
+00:24:14,668 --> 00:24:21,788
+A GET method does not need any parameters because every cut object will know about its plate.
+
+107
+00:24:21,788 --> 00:24:24,988
+But this member field will be...
+
+108
+00:24:25,344 --> 00:24:33,844
+So this method returns a string value, which is the plate.
+
+109
+00:24:34,324 --> 00:24:35,943
+Therefore, we need to put it like this.
+
+110
+00:24:36,364 --> 00:24:43,423
+After the method parenthesis goes to us, we write the type of that number.
+
+111
+00:24:44,324 --> 00:24:49,943
+And sometime, we may need to change that plate number.
+
+112
+00:24:51,220 --> 00:25:01,420
+When we sell a car to another owner, for example, that new owner may opt to change the plate number of a car.
+
+113
+00:25:01,900 --> 00:25:09,920
+Therefore, this method, this set method will need the new value of that plate.
+
+114
+00:25:10,659 --> 00:25:14,940
+Therefore, maybe we can write something such as this.
+
+115
+00:25:15,940 --> 00:25:17,880
+We give a string parameter.
+
+116
+00:25:19,284 --> 00:25:32,724
+What else can we do? We will be testing this class. So let's add an introductory method which will print out some information about that object.
+
+117
+00:25:33,152 --> 00:25:41,952
+So, we are making methods, these methods, all public because we want to be able to use them.
+
+118
+00:25:41,952 --> 00:25:48,152
+They are not related with the inner details of that object, of that car type.
+
+119
+00:25:48,152 --> 00:25:53,152
+So, we do, we mark them as public with the plus sign.
+
+120
+00:25:56,564 --> 00:25:58,764
+That's named as introduced as.
+
+121
+00:25:59,244 --> 00:26:04,644
+It will not take any parameters and it will not return anything.
+
+122
+00:26:05,304 --> 00:26:09,224
+So that's enough for our design.
+
+123
+00:26:09,884 --> 00:26:14,144
+Let's compare it with the one in the lecture mode.
+
+124
+00:26:16,784 --> 00:26:17,724
+This one.
+
+125
+00:26:18,903 --> 00:26:21,524
+Of course, we will be needing a main method too.
+
+126
+00:26:22,064 --> 00:26:23,624
+I have forgotten to add that.
+
+127
+00:26:31,443 --> 00:26:33,067
+Well, in that case...
+
+128
+00:26:34,003 --> 00:26:39,864
+I don't need to write the parameter name, making a shortcut here, shorthand.
+
+129
+00:26:40,223 --> 00:26:45,923
+I'm just writing string and stair braces, which denotes the array.
+
+130
+00:26:47,103 --> 00:26:53,803
+That's enough for now because I don't have to name this as args, for example.
+
+131
+00:26:53,943 --> 00:27:01,183
+I can write anything there as long as I supply a string array type as a parameter.
+
+132
+00:27:02,132 --> 00:27:15,612
+This is the required thing to do. I can use these short hands in other methods as well, as long as I do not introduce any ambiguities.
+
+133
+00:27:17,140 --> 00:27:37,920
+For example, I could just delete this parameter name from the setplate method because we know that this is the setter method of the plate number and this method parameter will be used for carrying the new plate information so I can delete them without any ambiguity.
+
+134
+00:27:38,708 --> 00:28:00,652
+However, I should mention it in the constructors. Yes, I know that it has only one parameter and probably this parameter will be used to enclise, used for enclising that membership, but we need to be more clear in that case. So I will not remove the...
+
+135
+00:28:01,140 --> 00:28:08,280
+Name here from the constructor, but I can easily remove the parameter name from the settlement.
+
+136
+00:28:09,203 --> 00:28:10,423
+So, that's it.
+
+137
+00:28:11,923 --> 00:28:16,483
+Unfortunately, Vyldiana does not have a zoom option.
+
+138
+00:28:17,483 --> 00:28:29,864
+So, I will be using that PowerPoint slides for my code because I can zoom it as much as I wish so that you can see on your screen.
+
+139
+00:28:31,523 --> 00:28:31,764
+Okay.
+
+140
+00:28:32,503 --> 00:28:32,804
+Now,
+
+141
+00:28:33,652 --> 00:28:37,892
+Let's begin implementing this design.
+
+142
+00:28:40,291 --> 00:28:48,271
+We began by using public class car keywords and now let's add the member field.
+
+143
+00:28:49,271 --> 00:28:56,032
+Private string plate.
+
+144
+00:28:56,531 --> 00:29:03,991
+The ordering is this, first the access rule, then member type, then member name.
+
+145
+00:29:03,991 --> 00:29:12,991
+In UMLN, this is somewhat different in different order, first access rule, then member name, then member type.
+
+146
+00:29:13,431 --> 00:29:18,192
+This is similar to Pascal notation, if you are semi-alike.
+
+147
+00:29:20,403 --> 00:29:30,403
+This is the choice, this had been the choice many years before when standardizing the UML notations.
+
+148
+00:29:30,403 --> 00:29:37,463
+So we need to make this ordering in UML diagrams and that ordering in code.
+
+149
+00:29:38,763 --> 00:29:39,044
+Okay.
+
+150
+00:29:39,784 --> 00:29:42,384
+I don't have any more member fields.
+
+151
+00:29:42,683 --> 00:29:45,483
+Let's begin according to member methods.
+
+152
+00:29:47,827 --> 00:29:55,187
+Publish car string plate numbers.
+
+153
+00:29:56,527 --> 00:29:57,647
+That's the beginning of the body.
+
+154
+00:29:59,527 --> 00:30:03,127
+Now I will just simply make an assignment.
+
+155
+00:30:04,227 --> 00:30:07,687
+Plate equal to plate number.
+
+156
+00:30:07,687 --> 00:30:10,687
+This means that take this...
+
+157
+00:30:11,539 --> 00:30:15,259
+Kala metrass and assign it to the number field.
+
+158
+00:30:15,619 --> 00:30:18,519
+You can see which is which.
+
+159
+00:30:19,219 --> 00:30:26,579
+Also, by the highlighting feature and the coloring.
+
+160
+00:30:27,179 --> 00:30:29,319
+Let me select some other thing.
+
+161
+00:30:32,115 --> 00:30:45,316
+Let's just turn off highlighting. Number field is painted in blue color and polymeters are plain black. Let's turn on highlighting again.
+
+162
+00:30:46,515 --> 00:30:51,316
+Okay, I have the constructor. Now let's write this little bit.
+
+163
+00:30:51,923 --> 00:31:07,923
+Remember that constructor methods do not have any return type, even void. Therefore, we just write public car, for example. But as for the get method, this method will return the...
+
+164
+00:31:09,811 --> 00:31:21,011
+Paid number field, its type is string, therefore this method will be returning a string value, and return type needs to be written in depth order in code.
+
+165
+00:31:21,011 --> 00:31:33,652
+Public string gets played, no method parameters, but we will simply return the plate number field.
+
+166
+00:31:35,220 --> 00:31:37,720
+At the end of this getter method.
+
+167
+00:31:38,259 --> 00:31:40,600
+And now to the setter method.
+
+168
+00:31:41,844 --> 00:32:05,104
+Public void, a certain method does not need to return anything. It will not return anything. So we need to mark it as void. Void means nothing there. We do not write void in the constructors, but we write void in other methods that does not return anywhere.
+
+169
+00:32:07,284 --> 00:32:08,424
+Public void.
+
+170
+00:32:09,395 --> 00:32:15,615
+set, wait, sync.
+
+171
+00:32:16,395 --> 00:32:20,735
+Now, in my design, I don't have a polymorphism name.
+
+172
+00:32:21,195 --> 00:32:27,635
+Let me just write plate here and try to make the assignment.
+
+173
+00:32:28,755 --> 00:32:31,235
+Plate equal to plate.
+
+174
+00:32:32,615 --> 00:32:34,775
+Now, there is something wrong here.
+
+175
+00:32:36,596 --> 00:32:38,115
+We have a warning there.
+
+176
+00:32:38,455 --> 00:32:39,175
+What does it say?
+
+177
+00:32:39,515 --> 00:32:39,955
+It says,
+
+178
+00:32:40,955 --> 00:32:44,895
+this assignment to variable plate has more effect.
+
+179
+00:32:45,935 --> 00:32:46,535
+Why?
+
+180
+00:32:47,796 --> 00:32:49,596
+I think about it.
+
+181
+00:32:49,596 --> 00:32:50,816
+Think on it for a minute.
+
+182
+00:32:51,731 --> 00:32:58,932
+As you should know, the computers do not have any intelligence.
+
+183
+00:32:58,932 --> 00:33:03,891
+It's our code that gives intelligence to computer software.
+
+184
+00:33:05,051 --> 00:33:15,011
+And the computer software is forgetful if we don't explicitly store something in the memory abstract.
+
+185
+00:33:15,011 --> 00:33:15,831
+So.
+
+186
+00:33:17,140 --> 00:33:23,379
+The Mandelfield name is plate, which is the same as the method parametronik.
+
+187
+00:33:24,084 --> 00:33:33,384
+And the compiler saw this parameter name the most recently.
+
+188
+00:33:34,324 --> 00:33:39,903
+So it thinks that whenever I write plate, I mean that parameter.
+
+189
+00:33:40,484 --> 00:33:49,663
+Therefore, this assignment indeed does not have any effect because it assigns the value of the parameter into that parameter again.
+
+190
+00:33:50,031 --> 00:33:55,371
+So, the member field is not being modified in any manner.
+
+191
+00:33:56,471 --> 00:34:08,671
+Therefore, I need to be distinguishing that the plate on the left-hand side of the assignment is the member field,
+
+192
+00:34:09,491 --> 00:34:15,051
+and the plate on the right-hand side of the assignment operator is the parameter.
+
+193
+00:34:15,795 --> 00:34:30,815
+I don't need to do anything extra for the parameter, but in order to mention that, this one on the left is the members here, I will use a special pointer, a reserved keyword known this.
+
+194
+00:34:31,576 --> 00:34:37,576
+This.plate. Remember the notation, object reference.member.
+
+195
+00:34:38,576 --> 00:34:39,695
+And this.
+
+196
+00:34:40,115 --> 00:34:43,115
+This is a special pointer.
+
+197
+00:34:43,115 --> 00:35:01,115
+This means, this that I'm highlighting one, this means the object of which, let me say who, the object whose method is being thought is only represented by this keyword.
+
+198
+00:35:01,972 --> 00:35:17,992
+Whenever you hide this anywhere in an object code, in a method, it means that this pointer shows the object of whose method is being called.
+
+199
+00:35:19,860 --> 00:35:30,000
+This black plate, I'm sorry, this black plate means the membership of this object and black plate means the metal parameter.
+
+200
+00:35:31,000 --> 00:35:40,800
+As you can see, this keyword is, what is it, purple and dark purple and in bold form.
+
+201
+00:35:41,204 --> 00:35:49,764
+Just like other reserved keylogs such as package, public, class, private, return and void.
+
+202
+00:35:50,644 --> 00:35:58,264
+And now this is not plate. The plate part is blue just like the numbers field.
+
+203
+00:35:58,684 --> 00:36:02,724
+And when I click on any of them, they are being highlighted.
+
+204
+00:36:03,539 --> 00:36:08,579
+ve bu parameder, sadece parameder
+
+205
+00:36:08,579 --> 00:36:11,860
+parameder var.
+
+206
+00:36:11,860 --> 00:36:15,860
+Bu, bu parameder arasında,
+
+207
+00:36:15,860 --> 00:36:31,460
+bu parameder arasında,
+
+208
+00:36:31,891 --> 00:36:42,112
+Hocam tam bunu anlayamıyorum demiş. O zaman şöyle bir Türkçeye geçeyim madem öyle. Sonra İngilizce sorduğumuz zaman aynı şeye İngilizce tekrar baktansa mesela ben Türkçe anlatayım. Şimdi.
+
+209
+00:36:44,351 --> 00:36:45,532
+İngilizce sildiğimde ne oldu?
+
+210
+00:36:46,547 --> 00:37:12,647
+Warning vardı ve herhangi bir atama yapamıyorum aslında dedi. Neden? Bakın, Heigert özelliği de bana bu anlamda yardımcı oluyor. Plate'in tıkladığında eşitlerin solundaki plate ile aynı plate, parametre olarak gelen plate, sandaki plate ile aynı plate, parametre olarak gelen plate. Halbuki ben bu neslinin üye alanı olan plate'e, yani şuna metot parametresi olarak gelen değer atamak istiyorum.
+
+211
+00:37:14,547 --> 00:37:32,167
+Benzer şeyi, constructor'daki gibi yapamaz mıydım? Şu parametre plate number derdim, buraya plate number derdim, çözerdim. Evet, bunu yapabilirdim. Ama size, biz işaretçisini öğretmek istiyorum. Öğretmenim gerek. O nedenle, kasten parametre ismini, büyü alan adıyla, aynı koydum.
+
+212
+00:37:32,947 --> 00:37:41,287
+Bu durumda bu yazdığım plateleri birbirinden ayırt edebilmek için yani işçiliğin son tarafında üye alan olan plate demek istiyorum.
+
+213
+00:37:41,707 --> 00:37:44,547
+Sağ tarafında metot parametrisi olan plate demek istiyorum.
+
+214
+00:37:44,947 --> 00:37:53,387
+Bunu vericiye net olarak anlatabilmek için son taraftaki üye alan olmasını istediğim plate'i this.plate diyorum.
+
+215
+00:37:53,907 --> 00:38:11,907
+Biz özel bir işaretçidir. Metodu çağrılan nesne anlamına gelmektedir. Yani hangi nesnen set plate metodu çağrılmışsa o nesnenin plate üye alanını bir atama yapıyorum. Ne atıyorum? Karametre olarak gelen plate değerini atıyorum. Umarım şimdi anlaşılmıştır.
+
+216
+00:38:17,012 --> 00:38:25,252
+Evet, tamam. İyi. Al aşıları memnun oldum. Arkadaşlar bu konular önemli. Çok temel en önemli dolar. Lütfen en ufak bir çekimciniz varsa sunun.
+
+217
+00:38:29,172 --> 00:38:35,672
+Madem zamanla zahmet edip dersine katılıyoruz, o zaman en büyük artıcımız sıra size sorun salabilmek ve yeni alabilmek.
+
+218
+00:38:36,811 --> 00:38:37,051
+Okey.
+
+219
+00:38:38,643 --> 00:38:52,783
+If I had wished so, I could simply rename that parameter name something other than the member name, just like I did in the code of the constructor.
+
+220
+00:38:52,783 --> 00:39:06,103
+But I have slowly sold these parameters the same name as the member name in order to show you these pointers.
+
+221
+00:39:06,643 --> 00:39:10,884
+I had to do that, so why I chose to do that.
+
+222
+00:39:11,303 --> 00:39:11,563
+Okay.
+
+223
+00:39:12,283 --> 00:39:16,863
+If we are clear, then let's add the introduce self method.
+
+224
+00:39:18,303 --> 00:39:19,943
+Public and want it.
+
+225
+00:39:21,344 --> 00:39:22,983
+Introduce self.
+
+226
+00:39:26,103 --> 00:39:32,723
+Now we will just write the license plate of the car by using
+
+227
+00:39:33,268 --> 00:39:37,268
+SystemArtPrintera method.
+
+228
+00:39:39,268 --> 00:39:44,268
+My license rate years.
+
+229
+00:39:46,268 --> 00:39:48,268
+And plus string concatenation.
+
+230
+00:39:50,268 --> 00:39:51,268
+Late maps.
+
+231
+00:39:52,268 --> 00:39:53,268
+That's it.
+
+232
+00:39:55,268 --> 00:39:56,268
+I am sorry.
+
+233
+00:39:56,268 --> 00:39:59,268
+I just clicked the number of your name.
+
+234
+00:40:01,043 --> 00:40:18,764
+Okay, now let's test this. We cannot test this now directly. So in order to be able to test that, let's add the main method. And in that main method, we'll define and create a car object and call its introduced self method.
+
+235
+00:40:29,619 --> 00:40:46,159
+When we mention arrays, Java allows us to include these square braces either before the array name or after the array name.
+
+236
+00:40:46,547 --> 00:40:54,047
+This is the regular notation, just like we did in the C language.
+
+237
+00:40:55,047 --> 00:41:00,467
+But Java also supports this notation too.
+
+238
+00:41:00,467 --> 00:41:05,367
+Well, let's write this this way just for now.
+
+239
+00:41:06,367 --> 00:41:09,567
+Now, let's define a class object.
+
+240
+00:41:10,747 --> 00:41:12,627
+Class, a class.
+
+241
+00:41:13,588 --> 00:41:41,568
+And now we cannot directly use that ekar object. For example, let's try to call its introduced self method. We have an error here. It says that the local variable ekar, it's not a variable, it's an object, but it says that this may not have been initialized. Yes, it's not being initialized. Now we have to initialize it by for
+
+242
+00:41:41,588 --> 00:42:08,927
+So, it's constructed. Therefore, before using the object, let's initialize this object. Take cars, take a continue car, and let's give a license plate to that by manually handwriting it in code. And let's run the introduce self method of this object, save it, and run it.
+
+243
+00:42:11,795 --> 00:42:15,235
+Ok, we have the output. My last is this.
+
+244
+00:42:17,235 --> 00:42:18,916
+Ok, it works fine.
+
+245
+00:42:19,795 --> 00:42:22,635
+But you may have some questions.
+
+246
+00:42:23,235 --> 00:42:24,916
+Please go ahead and ask.
+
+247
+00:42:39,059 --> 00:42:48,239
+You need to be able to map a UML class diagram to code and map the code to UML class diagram.
+
+248
+00:42:48,880 --> 00:42:51,679
+You need to be able to make two-way conversions.
+
+249
+00:42:53,079 --> 00:42:55,059
+So let's mark them.
+
+250
+00:42:58,996 --> 00:43:07,916
+This is the Kalk class, so those are the matching.
+
+251
+00:43:07,916 --> 00:43:19,395
+As a tradition, we rewrite the member fields first and member methods next.
+
+252
+00:43:19,891 --> 00:43:27,591
+If you wish, you can swap this ordering, but it's usually done this way in Korea-American class diagrams.
+
+253
+00:43:28,091 --> 00:43:36,851
+Moreover, in Java code, you can change the ordering of method, member field definitions and member method definitions.
+
+254
+00:43:37,492 --> 00:43:40,751
+It isn't as strict as the C language.
+
+255
+00:43:41,551 --> 00:43:44,011
+You can use those in any order.
+
+256
+00:43:44,011 --> 00:43:47,751
+If you wish, you can code the member field name.
+
+257
+00:43:47,891 --> 00:43:54,072
+As a last line of the class body, you can do that.
+
+258
+00:43:56,128 --> 00:44:03,568
+Traditionally, as we pay special importance, we give special importance to member fields.
+
+259
+00:44:04,068 --> 00:44:16,048
+First, we write the member fields because they are closely related with the inner workings of that class and therefore they are being written as private.
+
+260
+00:44:16,048 --> 00:44:22,448
+So first, we write member fields names, then the member parameters.
+
+261
+00:44:23,347 --> 00:44:29,167
+Ok. Minus means private.
+
+262
+00:44:38,036 --> 00:44:46,996
+Okay. The number field name is plate.
+
+263
+00:44:48,996 --> 00:44:49,956
+Like this one.
+
+264
+00:44:54,996 --> 00:44:58,296
+And its type is string.
+
+265
+00:44:59,856 --> 00:45:05,076
+Let's make it this way.
+
+266
+00:45:07,155 --> 00:45:07,756
+Okay.
+
+267
+00:45:08,076 --> 00:45:11,756
+We have nothing to do with that two dots here in Java.
+
+268
+00:45:12,655 --> 00:45:13,296
+Okay.
+
+269
+00:45:13,436 --> 00:45:15,536
+Then we have the constructor.
+
+270
+00:45:17,676 --> 00:45:19,536
+Constructor is public.
+
+271
+00:45:21,155 --> 00:45:22,136
+Plasma is public.
+
+272
+00:45:23,923 --> 00:45:25,523
+How can I write this?
+
+273
+00:45:30,523 --> 00:45:34,523
+Construct name would be the same as the class name.
+
+274
+00:45:34,523 --> 00:45:35,523
+This rule.
+
+275
+00:45:35,923 --> 00:45:39,324
+So hence the name kav.
+
+276
+00:45:41,324 --> 00:45:43,923
+And it has that parameters.
+
+277
+00:45:46,824 --> 00:45:48,724
+Plate numbers string.
+
+278
+00:45:49,396 --> 00:45:52,276
+Number as Stink.
+
+279
+00:45:56,340 --> 00:46:01,340
+I don't have a clear line of sight, but please bear with me.
+
+280
+00:46:02,460 --> 00:46:03,880
+And you know the rest.
+
+281
+00:46:04,500 --> 00:46:07,400
+I don't have to map a keyword.
+
+282
+00:46:08,060 --> 00:46:18,500
+I have done those and these will be replicated between the method definitions and the actual code of those methods.
+
+283
+00:46:19,120 --> 00:46:19,620
+That's it.
+
+284
+00:46:20,380 --> 00:46:23,700
+If you have any questions, please feel free to ask.
+
+285
+00:46:25,427 --> 00:46:26,047
+ULISK.
+
+286
+00:46:29,460 --> 00:46:32,199
+Ok da, let me clear the top door.
+
+287
+00:46:39,764 --> 00:46:43,764
+Evet, teşekkür ederim.
+
+288
+00:46:44,384 --> 00:46:50,484
+Please pay attention to print printing and camel casing.
+
+289
+00:46:50,484 --> 00:46:57,284
+When I use the IDE, IDE helps me with those tasks automatically.
+
+290
+00:46:57,284 --> 00:47:09,184
+For example, when I press enter at the beginning of the body, it automatically adds a second top character.
+
+291
+00:47:09,184 --> 00:47:12,184
+Therefore, the body...
+
+292
+00:47:12,384 --> 00:47:16,644
+A code body will be in one straight line.
+
+293
+00:47:17,904 --> 00:47:26,384
+You know, this is the man, you should be, remember this from the very beginning BBG1 classes.
+
+294
+00:47:27,844 --> 00:47:40,344
+By using this indentation, we can easily understand which fork, which block, which statements belong to which block.
+
+295
+00:47:40,384 --> 00:47:45,063
+So, we have both alignments.
+
+296
+00:47:45,463 --> 00:47:45,583
+Okay.
+
+297
+00:47:46,763 --> 00:47:51,603
+Please do it when you are writing code in the exams.
+
+298
+00:47:53,563 --> 00:47:54,804
+What else?
+
+299
+00:47:55,423 --> 00:48:03,784
+Let's remember that other than class names, we always begin with the small case letters.
+
+300
+00:48:04,208 --> 00:48:16,367
+We always begin with a small case letter and beginning from the second word and the other extra words, we use a capital case at the beginning of each word.
+
+301
+00:48:16,367 --> 00:48:23,768
+For example, set play p is uppercase, introduce that s is uppercase, etc.
+
+302
+00:48:26,447 --> 00:48:29,427
+Let me clear my drawings and continue.
+
+303
+00:48:30,900 --> 00:48:33,780
+Let's zoom out.
+
+304
+00:48:35,220 --> 00:48:36,019
+Okay, that's it.
+
+305
+00:48:36,480 --> 00:48:37,840
+That's pretty much it.
+
+306
+00:48:38,460 --> 00:48:43,740
+I can make some other small changes on that code.
+
+307
+00:48:43,740 --> 00:48:53,120
+For example, let me define and initialize that object in just one line, like this.
+
+308
+00:48:54,460 --> 00:48:58,380
+Car, a car equals two new cars and its trade routes.
+
+309
+00:48:59,092 --> 00:49:01,072
+This is also possible.
+
+310
+00:49:02,192 --> 00:49:08,711
+And in the introduce self method, I have to be able to access that plate member.
+
+311
+00:49:08,711 --> 00:49:20,311
+I can do it by just writing plate, or I can write this dot plate to the same effect, or I can write get plate.
+
+312
+00:49:21,780 --> 00:49:25,700
+Of course, but of course with the method parameters.
+
+313
+00:49:26,320 --> 00:49:29,660
+Or I can write this dot gate plate.
+
+314
+00:49:30,580 --> 00:49:34,620
+All gives the same effect.
+
+315
+00:49:35,300 --> 00:49:38,120
+For example, let's say let's save and run this one.
+
+316
+00:49:40,240 --> 00:49:43,920
+Okay, it again gives the license plate properly.
+
+317
+00:49:44,580 --> 00:49:46,892
+So those are the...
+
+318
+00:49:46,996 --> 00:49:50,996
+Different variations on that code that I can do.
+
+319
+00:49:52,996 --> 00:49:57,496
+I can define other objects from the same type too.
+
+320
+00:49:57,496 --> 00:50:07,996
+For example, car, another, equal to a new car, for example, a superartor.
+
+321
+00:50:09,996 --> 00:50:11,996
+Such as this.
+
+322
+00:50:11,996 --> 00:50:12,996
+And...
+
+323
+00:50:13,300 --> 00:50:15,700
+Let's run this tool.
+
+324
+00:50:16,700 --> 00:50:18,580
+Now that's introduceSouth.
+
+325
+00:50:20,700 --> 00:50:22,220
+Let's run the code.
+
+326
+00:50:24,620 --> 00:50:28,860
+And we have the first object's introduceSouth method.
+
+327
+00:50:29,360 --> 00:50:36,180
+And we have the second object's introduceSouth method executed with a proper option.
+
+328
+00:50:36,180 --> 00:50:37,020
+That's it.
+
+329
+00:50:38,708 --> 00:50:49,307
+For example, we can change the plate of the, for example, the second car by using, for example, another dot set plate.
+
+330
+00:50:49,307 --> 00:50:56,827
+And let's give another plate numbers of that car.
+
+331
+00:50:58,347 --> 00:51:04,867
+And after the change, let's have it introduced.
+
+332
+00:51:08,563 --> 00:51:18,403
+As we have been expecting, the second car displays its output with the updated LARX plate lamps.
+
+333
+00:51:19,344 --> 00:51:19,824
+That's it.
+
+334
+00:51:22,344 --> 00:51:23,623
+Any questions?
+
+335
+00:51:29,748 --> 00:51:32,447
+If not, then we are continuing.
+
+336
+00:51:35,007 --> 00:51:42,807
+Okay, now let's write the golden secret diagram of the main method.
+
+337
+00:51:44,967 --> 00:51:50,687
+Okay, we will be doing it by hand without looking at the answer.
+
+338
+00:51:51,184 --> 00:51:55,604
+We only need to source code for this purpose.
+
+339
+00:51:55,964 --> 00:52:01,024
+Now, let's learn how to draw the sequence diagram of that main method.
+
+340
+00:52:01,704 --> 00:52:04,884
+Let's do it like this.
+
+341
+00:52:06,504 --> 00:52:14,504
+Let me just add a new line here so I can narrow this.
+
+342
+00:52:15,027 --> 00:52:19,527
+Code window and enlarge the going area.
+
+343
+00:52:20,527 --> 00:52:22,827
+Let's create a new sequence diagram.
+
+344
+00:52:30,099 --> 00:52:37,739
+As you can see, the palette options, palette controls, change according to the diagram type.
+
+345
+00:52:39,619 --> 00:52:48,860
+We will be writing the main method of the, we will be drawing the main method of the car class.
+
+346
+00:52:49,619 --> 00:52:55,740
+Any car instance will act the same because this is a static method.
+
+347
+00:52:55,960 --> 00:52:58,840
+Therefore, any object name is irrelevant.
+
+348
+00:52:59,780 --> 00:53:03,420
+I will just write car here.
+
+349
+00:53:06,860 --> 00:53:10,159
+As I will not be needing any object reference.
+
+350
+00:53:11,159 --> 00:53:13,500
+Therefore, let's do it this way.
+
+351
+00:53:13,903 --> 00:53:21,644
+Add an activation bar and write the method code, load method code and mark it as made.
+
+352
+00:53:23,572 --> 00:53:28,332
+Unfortunately, I cannot begin my error out of nothing.
+
+353
+00:53:29,332 --> 00:53:35,832
+All errors must begin from a component and add in another component.
+
+354
+00:53:36,432 --> 00:53:39,992
+Therefore, I cannot draw any line in that moment.
+
+355
+00:53:40,452 --> 00:53:46,492
+So I am putting a dummy object here and a dummy activation bar here.
+
+356
+00:53:46,492 --> 00:53:51,572
+And I click the full message error and begin.
+
+357
+00:53:51,572 --> 00:53:57,012
+In my error from this activation bar and it in that activation bar.
+
+358
+00:53:57,251 --> 00:53:57,392
+Okay.
+
+359
+00:53:57,672 --> 00:54:02,472
+This is the only way that I can draw the beginning of the main method.
+
+360
+00:54:02,612 --> 00:54:10,032
+And I select, I use the select tool and click on the arrow and write main here.
+
+361
+00:54:10,672 --> 00:54:17,452
+I will not be using any parameters, but it requires a string array, but I will not be, I will not.
+
+362
+00:54:18,036 --> 00:54:22,695
+I am not using it, so I just write it like this.
+
+363
+00:54:23,096 --> 00:54:24,556
+The main method begins.
+
+364
+00:54:25,096 --> 00:54:25,295
+Okay.
+
+365
+00:54:26,036 --> 00:54:28,655
+What is being done in the main method?
+
+366
+00:54:29,076 --> 00:54:37,855
+The first line defines an object of type k and a name k and calls its constructor method.
+
+367
+00:54:37,855 --> 00:54:45,295
+Therefore, I am selecting another object here and name it as
+
+368
+00:54:45,844 --> 00:54:49,844
+The class to that class.
+
+369
+00:54:49,844 --> 00:54:55,244
+This is the most concise notation for this object reference.
+
+370
+00:54:55,244 --> 00:54:59,403
+And let me have an activation mark added to it.
+
+371
+00:54:59,403 --> 00:55:03,963
+And the constructor method is being formed.
+
+372
+00:55:03,963 --> 00:55:10,084
+When we're going to construct the course, we just write new.
+
+373
+00:55:10,195 --> 00:55:13,976
+We know that the constructor method name is the same as the class.
+
+374
+00:55:14,096 --> 00:55:16,036
+Therefore, we just write new.
+
+375
+00:55:16,576 --> 00:55:19,835
+And there is also a parameter being supplied.
+
+376
+00:55:19,835 --> 00:55:23,195
+And let me write that too with a quote.
+
+377
+00:55:28,436 --> 00:55:46,576
+Okay. The constructor just makes the assignment and returns. And now for the purpose of this diagram, let me remove those other statements. I don't want this diagram to be too long.
+
+378
+00:55:48,980 --> 00:55:54,719
+Okay, now constructor has been called and the control flow has returned to the main method.
+
+379
+00:55:55,159 --> 00:55:59,920
+And now we call introduce self method of this object, same object.
+
+380
+00:55:59,920 --> 00:56:09,599
+So I take another call message, arrow, and begin from the activation bar and end in echo.
+
+381
+00:56:10,996 --> 00:56:15,576
+In that case, YLT UML will automatically add the lifeline.
+
+382
+00:56:15,916 --> 00:56:20,956
+If I wish, I could add the main activation bar manually.
+
+383
+00:56:21,356 --> 00:56:27,796
+But usually, YLT UML adds it automatically and correctly.
+
+384
+00:56:28,735 --> 00:56:32,316
+Now, this is the introduce self method.
+
+385
+00:56:32,316 --> 00:56:33,956
+So let me write it.
+
+386
+00:56:38,739 --> 00:56:40,119
+This is the method name.
+
+387
+00:56:41,979 --> 00:56:45,359
+And now let's check the introduce self method.
+
+388
+00:56:45,559 --> 00:56:47,239
+Look at that introduce self method.
+
+389
+00:56:47,659 --> 00:56:50,279
+In that method, we have another method call.
+
+390
+00:56:50,779 --> 00:56:55,539
+It is the call of the getPlate get method of this same object.
+
+391
+00:56:55,956 --> 00:57:02,476
+How can I draw a method call from the same object to the same object?
+
+392
+00:57:02,476 --> 00:57:04,576
+I can do it like this.
+
+393
+00:57:05,195 --> 00:57:15,976
+I take the error and begin the error and end the error in the same activation bar, which mentions that the introduce self method.
+
+394
+00:57:16,635 --> 00:57:23,456
+And now when I release my key, this extra activation bar is automatically being added.
+
+395
+00:57:23,956 --> 00:57:26,635
+And the arrow points to itself.
+
+396
+00:57:27,275 --> 00:57:38,856
+In that case, in similar fashion to method, method, method calls, this is how we draw it in Myanmar class diagrams.
+
+397
+00:57:39,516 --> 00:57:42,215
+And this method is the getplate method.
+
+398
+00:57:46,324 --> 00:58:10,044
+GetClate method does not make any sort of method close. I just draw the returning arrow. But as this is a method itself, I don't need to draw a returning arrow. This ending line, let me have the drawing tool. This ending line,
+
+399
+00:58:10,547 --> 00:58:18,627
+Of the additional activation bar denotes the ending of that extra method.
+
+400
+00:58:19,047 --> 00:58:19,168
+Okay.
+
+401
+00:58:19,487 --> 00:58:25,708
+So I don't draw any extra return message at all for this purpose.
+
+402
+00:58:27,387 --> 00:58:35,807
+But I need to show the return message, the ending point of the introduce self method.
+
+403
+00:58:35,807 --> 00:58:38,527
+So I begin a return message from.
+
+404
+00:58:38,547 --> 00:58:40,807
+Here, and end it here.
+
+405
+00:58:42,007 --> 00:58:56,768
+And after this, after the introduced last method, I don't have any other statements left, and the main method, and therefore, I again draw a return message from here, and it appears.
+
+406
+00:58:57,307 --> 00:59:03,327
+Okay, this is the URN sequence diagram of the main method that we have just coded.
+
+407
+00:59:07,219 --> 00:59:10,119
+In lecture notes, you will see that
+
+408
+00:59:11,699 --> 00:59:28,699
+It begins like this. Notice that this main error and return error are different from the rest of the diagram because this is the diagram and those are PowerPoint errors and texts.
+
+409
+00:59:29,699 --> 00:59:38,699
+Either I have to do it this way, not show the main in the Vahayla 3ML and edit with PowerPoint.
+
+410
+00:59:39,699 --> 00:59:42,019
+Or, another image editor.
+
+411
+00:59:42,800 --> 00:59:45,579
+Or, I can make this diagram.
+
+412
+00:59:46,119 --> 00:59:47,360
+I can save it.
+
+413
+00:59:51,635 --> 00:59:52,635
+Etc.
+
+414
+00:59:57,204 --> 00:59:59,724
+Here, my device, for example.
+
+415
+01:00:05,403 --> 01:00:06,564
+Here, for example.
+
+416
+01:00:08,524 --> 01:00:11,124
+That's the first one.
+
+417
+01:00:13,364 --> 01:00:14,364
+First one, for example.
+
+418
+01:00:15,324 --> 01:00:19,923
+And I can export it to an image file.
+
+419
+01:00:22,771 --> 01:00:25,771
+And after that, I can open it.
+
+420
+01:00:30,592 --> 01:00:31,831
+Where is it?
+
+421
+01:00:33,012 --> 01:00:33,851
+Dur bakayım.
+
+422
+01:00:34,771 --> 01:00:36,711
+Şey, harray ismler değil de.
+
+423
+01:00:37,711 --> 01:00:39,271
+Ismler kaydık şimdi.
+
+424
+01:00:40,032 --> 01:00:40,692
+Neye kaydık şimdi?
+
+425
+01:00:41,331 --> 01:00:42,092
+Kitaplık.
+
+426
+01:00:42,092 --> 01:00:44,092
+Şşşş.
+
+427
+01:00:50,324 --> 01:00:52,324
+Şurada olacak.
+
+428
+01:00:52,324 --> 01:00:54,324
+Krufta olacak.
+
+429
+01:00:54,324 --> 01:00:58,324
+Bildiğim bir yere kaydedeyim.
+
+430
+01:00:58,324 --> 01:01:00,324
+Pardon.
+
+431
+01:01:00,324 --> 01:01:02,324
+Ayrıca
+
+432
+01:01:02,324 --> 01:01:04,324
+kaydet.
+
+433
+01:01:04,324 --> 01:01:06,324
+Şuraya kaydet.
+
+434
+01:01:06,324 --> 01:01:10,324
+Aksın içerisine kaydet.
+
+435
+01:01:10,324 --> 01:01:12,324
+Ondan sonra
+
+436
+01:01:12,324 --> 01:01:14,324
+aç.
+
+437
+01:01:19,411 --> 01:01:20,651
+Şöbren'u kadir, misli.
+
+438
+01:01:24,467 --> 01:01:26,367
+Evet, Akademi İkişasını, evet.
+
+439
+01:01:28,647 --> 01:01:30,027
+Evet, şurada, bakın.
+
+440
+01:01:30,587 --> 01:01:31,407
+Dosya burada.
+
+441
+01:01:32,187 --> 01:01:34,567
+Şimdi onu resim dosyası haline getirelim.
+
+442
+01:01:35,327 --> 01:01:37,067
+File, export, image file.
+
+443
+01:01:38,987 --> 01:01:39,847
+It's here.
+
+444
+01:01:40,248 --> 01:01:42,447
+I can open it with an image editor.
+
+445
+01:01:44,967 --> 01:01:47,447
+For example, that's paint.net.
+
+446
+01:01:48,768 --> 01:01:50,467
+And if I wish,
+
+447
+01:01:51,251 --> 01:01:56,251
+I can select and get rid of this part.
+
+448
+01:01:59,092 --> 01:02:05,112
+Or maybe I could just select the part that I want.
+
+449
+01:02:09,460 --> 01:02:11,460
+ve bu kocka bir image.
+
+450
+01:02:12,460 --> 01:02:13,460
+Böylece.
+
+451
+01:02:28,416 --> 01:02:37,416
+ve
+
+452
+01:02:27,956 --> 01:02:40,536
+But if you need to be drawing a diagram in an online exam, you don't have to remove this by going from this arduous process.
+
+453
+01:02:40,976 --> 01:02:48,356
+Just go ahead and use this as you see in the wide GML tool.
+
+454
+01:02:48,775 --> 01:02:50,235
+That will be enough for me.
+
+455
+01:02:52,179 --> 01:02:56,839
+Okay, that's it for the class diagram.
+
+456
+01:02:56,839 --> 01:03:07,499
+And I want to pay attention, take your attention to some important details about that sequence diagrams.
+
+457
+01:03:08,979 --> 01:03:11,679
+Let me remove all my drawings.
+
+458
+01:03:12,192 --> 01:03:15,192
+For example, how was it? It was like...
+
+459
+01:03:15,192 --> 01:03:16,271
+Yeah, okay.
+
+460
+01:03:16,271 --> 01:03:26,811
+Now, I'll just use the PowerPoint diagram so that I can zoom it better.
+
+461
+01:03:33,811 --> 01:03:34,351
+Alixir.
+
+462
+01:03:39,380 --> 01:03:53,680
+Now, that's nice. Now, in this diagram, you can clearly read which method is being called within another method. That's all. Let me have my pencil.
+
+463
+01:03:56,820 --> 01:04:07,420
+First of all, when you go down in a class, in a sequence diagram, the time advances, okay?
+
+464
+01:04:08,559 --> 01:04:17,079
+The time begins here and it continues, okay?
+
+465
+01:04:17,700 --> 01:04:20,840
+And this is the infinity, for example.
+
+466
+01:04:21,427 --> 01:04:22,788
+This is the timeline.
+
+467
+01:04:23,447 --> 01:04:30,387
+So, as you go down in the sequence diagram, you go forward in time.
+
+468
+01:04:30,907 --> 01:04:36,487
+Therefore, first, you execute the, you call the main method.
+
+469
+01:04:39,251 --> 01:04:45,391
+Within this, this is the beginning of the main method and this is the end of the main method.
+
+470
+01:04:45,891 --> 01:04:54,032
+Between the beginning and the end, which means within the main method, we make two method calls.
+
+471
+01:04:54,032 --> 01:04:56,911
+First, the constructor method call.
+
+472
+01:04:57,871 --> 01:05:06,231
+After it ends, then we call this introduce self.
+
+473
+01:05:06,835 --> 01:05:16,835
+This is the beginning of the IntroduceSath method and this is the end of the IntroduceSath method.
+
+474
+01:05:16,835 --> 01:05:30,835
+And within this IntroduceSath method, we have called that GetPlate method inside the IntroduceSath method.
+
+475
+01:05:31,264 --> 01:05:39,224
+Those are nested. Introduce self and get plate are nested. Get plate is nested within introduce self.
+
+476
+01:05:39,684 --> 01:05:44,724
+And constructor call and introduce self methods are sequential.
+
+477
+01:05:45,663 --> 01:05:50,384
+The first one begins and ends, and the second one begins and ends.
+
+478
+01:05:51,572 --> 01:06:02,352
+And these two, the constructor and inter-di-south method course, together with the get-click method, are nested, are within the main method.
+
+479
+01:06:03,432 --> 01:06:03,532
+Okay?
+
+480
+01:06:05,612 --> 01:06:10,692
+When you are drawing sequence diagrams by hand,
+
+481
+01:06:11,891 --> 01:06:34,891
+Please pay attention to keep a noticeable distance between method calls, okay? The areas that I'm marking as with green and here as well. Sometimes...
+
+482
+01:06:35,572 --> 01:06:40,556
+Students begin the second arrow from the...
+
+483
+01:06:40,563 --> 01:06:57,103
+Same elevation, like as the previous arrow, or worse, they begin their arrow before the previous method call.
+
+484
+01:06:57,423 --> 01:07:01,523
+This means going backward in time, it's impossible.
+
+485
+01:07:02,003 --> 01:07:07,583
+So please keep a noticeable distance between method calls, okay?
+
+486
+01:07:08,063 --> 01:07:10,223
+Buna lütfen dikkat arkadaşlar.
+
+487
+01:07:12,803 --> 01:07:15,643
+Çünkü düşe eksendeki hizalanı önemli.
+
+488
+01:07:15,923 --> 01:07:19,163
+Zamanında ileri doğru gitmeye gösteriyor düşe eksende ileri gittikçe.
+
+489
+01:07:19,523 --> 01:07:27,243
+O yüzden mi metodun içinde mesela bu new'un çalıştırıldığını göstermek için lütfen düşeğini biraz boş bırakıp ondan sonra çizginizi çizin.
+
+490
+01:07:27,623 --> 01:07:28,723
+Aynı hizaya çizmeyin.
+
+491
+01:07:28,983 --> 01:07:30,483
+Hele daha yukarıdan hiç başlamayın.
+
+492
+01:07:31,783 --> 01:07:32,583
+Bunlara dikkat ediyoruz.
+
+493
+01:07:33,583 --> 01:07:34,303
+Okey.
+
+494
+01:07:34,683 --> 01:07:35,283
+Many questions?
+
+495
+01:07:45,364 --> 01:08:12,023
+Anything else? No. Okay. Okay now. Then we devote our 10 minute break. First, clear doors. Ondan sonra çama. Şunu eski haline getirelim. Eski düzenine getirelim. Ve onda kara diyelim. Yani.
+
+496
+01:08:12,628 --> 01:08:16,988
+15, 05 ile
+
+497
+01:08:16,988 --> 01:08:22,188
+16, 15, 15
+
+498
+01:08:22,188 --> 01:08:26,048
+15, 15 arasında 10 dakika.
+
+499
+01:20:17,844 --> 01:20:38,923
+Evet arkadaşlar, ödüyorum. Ana vaktini biraz kaçırdım. Dersi devam edebiliriz. Ama tabii öncesinde sorumuz varsa buyurun. Konuşalım. Özellikle C-Planus diyaklarımızda ya da başka de olabiliriz daha önce konuştuklarımızda. Soru varsa buyurun. Yoksa derse devam edelim.
+
+500
+01:20:44,724 --> 01:20:55,764
+Tabi oklarının yönüne de dikkat. Yani metot çağrısını yapan taraftan başlıyor. Metodu çağıran nesnede okunuşu bitiyor. Ona da ayrıca dikkat edelim.
+
+501
+01:20:58,703 --> 01:21:06,423
+Peki, class sınıfının diğer bir versiyonuyla devam edelim. İkinci üye alanı ekleyelim.
+
+502
+01:21:06,931 --> 01:21:10,672
+main metodunu da illa bu sınıfa eklemek zorunda değiliz.
+
+503
+01:21:11,112 --> 01:21:17,152
+Projemizdeki başka bir sınıfa da bir main metodu ekleyip çalışmaya oradan da başlayabiliriz.
+
+504
+01:21:18,231 --> 01:21:23,711
+Now let's continue with another version of the car class.
+
+505
+01:21:24,148 --> 01:21:30,688
+The first one in the lecture notes are in the 01A package.
+
+506
+01:21:31,108 --> 01:21:36,068
+Now, this class has the same name but a different design.
+
+507
+01:21:36,188 --> 01:21:39,587
+Therefore, it should reside in another package.
+
+508
+01:21:40,347 --> 01:21:48,548
+So let's call it 2 by only looking at the class diagram.
+
+509
+01:21:51,380 --> 01:22:00,139
+Let's go a little bit and fold it here.
+
+510
+01:22:02,340 --> 01:22:03,579
+Okay, let's see this one.
+
+511
+01:22:04,579 --> 01:22:12,619
+So I need to be painting a new package such as after submission here.
+
+512
+01:22:14,739 --> 01:22:17,539
+And let's have the class car here too.
+
+513
+01:22:23,988 --> 01:22:24,988
+Okay.
+
+514
+01:22:26,788 --> 01:22:29,188
+Now, this has two member fields.
+
+515
+01:22:30,587 --> 01:22:37,788
+Private, string, plate, and just this lump.
+
+516
+01:22:37,788 --> 01:22:38,788
+Okay.
+
+517
+01:22:39,587 --> 01:22:44,988
+Those two member fields are from the same type. Both are string.
+
+518
+01:22:44,988 --> 01:22:51,388
+So, I can code them like here in just one line.
+
+519
+01:22:51,828 --> 01:23:00,228
+If I wish, I can draw them in one line too in UMLN diagram, such as this.
+
+520
+01:23:01,388 --> 01:23:05,408
+Let's create, let's create the class too.
+
+521
+01:23:05,408 --> 01:23:10,648
+I don't need to create a second class diagram, just use this one here.
+
+522
+01:23:12,948 --> 01:23:18,788
+Car, this is the class, and private, plates, comma.
+
+523
+01:23:19,956 --> 01:23:35,956
+I can draw that in one line too, because both have the same features in this string.
+
+524
+01:23:40,659 --> 01:23:42,739
+And now to the constructor method.
+
+525
+01:23:44,399 --> 01:23:54,119
+Now, actually, the shorthand in the class diagram here, denoting constructor, is ambiguous.
+
+526
+01:23:55,412 --> 01:24:15,412
+It says that we have two string parameters and yes we have two string number fields but which string parameter is which number? We don't know this portion. Therefore I should be writing this as openly as possible like this.
+
+527
+01:24:18,412 --> 01:24:20,412
+The constructor method, car.
+
+528
+01:24:21,300 --> 01:24:24,760
+I can like write something such as
+
+529
+01:24:24,760 --> 01:24:28,300
+Come on.
+
+530
+01:24:29,640 --> 01:24:31,220
+Just this in my words.
+
+531
+01:24:34,260 --> 01:24:41,600
+It's better to write it as openly as possible like this.
+
+532
+01:24:42,380 --> 01:24:47,300
+Maybe I could use this notation too.
+
+533
+01:24:47,764 --> 01:24:52,523
+Sorry. Let's select this. Okay, I'll paste.
+
+534
+01:24:57,623 --> 01:25:03,804
+I could like something similar to the NandoField declaration too.
+
+535
+01:25:03,804 --> 01:25:09,244
+But this one is better. Okay. This one is better.
+
+536
+01:25:14,963 --> 01:25:17,963
+This is the UMLNOT component.
+
+537
+01:25:17,963 --> 01:25:27,963
+You can relate a NOT component with any object, any UML diagram element.
+
+538
+01:25:28,307 --> 01:25:40,247
+Well, when you move this, Wild UML handles this part of the edge correctly, but not this part, for example.
+
+539
+01:25:40,948 --> 01:25:48,567
+Gördünüz mü? Yani bunu uzaklaştırabildim. Bunu buradan uzaklaştıracaksam şu nokta bunun eliyle ilgili bunu buraya tekrar koymam gerekiyor.
+
+540
+01:25:48,567 --> 01:25:56,087
+Ama halbuki not bileşeğinin bir hak ettiğinde öyle bir sıkıntım yoktu da ufak bir kusurum Wild UML'in.
+
+541
+01:25:56,307 --> 01:26:03,307
+Bu neyek, başka neyeklerde seçebilirsiniz. İsterseniz işte beyaz, beyaz, beyaz, yakın, beyaz filan da seçebilirsiniz.
+
+542
+01:26:03,307 --> 01:26:04,307
+Ve siz derseniz.
+
+543
+01:26:04,307 --> 01:26:07,307
+Okay, this one, this notation is better.
+
+544
+01:26:10,260 --> 01:26:13,180
+Now let's first call the constructor.
+
+545
+01:26:13,180 --> 01:26:21,060
+Chassis number is a number that is being etched into the chassis and you cannot change it in any way.
+
+546
+01:26:21,060 --> 01:26:24,340
+So, but last play can be changed.
+
+547
+01:26:24,659 --> 01:26:30,719
+But both member fields are very important for that class.
+
+548
+01:26:30,719 --> 01:26:35,479
+So let's create a constructor that initializes both members.
+
+549
+01:26:35,960 --> 01:26:39,420
+Now I will show you a shorthand feature of the IDE.
+
+550
+01:26:40,619 --> 01:26:50,600
+When I click one member field, I will right click and click source and generate constructor using fields.
+
+551
+01:26:51,188 --> 01:26:53,987
+This item.
+
+552
+01:26:54,887 --> 01:27:06,608
+And when I click all member fields and add this construct as the last member in the code, and this is automatically being added to my code.
+
+553
+01:27:07,448 --> 01:27:10,148
+This super call is related to inheritance.
+
+554
+01:27:10,847 --> 01:27:15,887
+It doesn't do anything meaningful at the moment, so I will just erase, okay?
+
+555
+01:27:16,435 --> 01:27:27,075
+Instead of writing a lot of keystrokes, I can easily and fastly create a constructor in this way.
+
+556
+01:27:27,975 --> 01:27:31,735
+Similarly, I can create getter and center methods as well.
+
+557
+01:27:32,435 --> 01:27:38,415
+Select one member field, right click, source, generate getters and centers.
+
+558
+01:27:39,188 --> 01:27:41,948
+We just, you can see every member here.
+
+559
+01:27:42,487 --> 01:27:48,148
+Plate can be get and set, but chasis should not be changed.
+
+560
+01:27:48,608 --> 01:27:54,148
+So let's only add this get chasis number method, but not the set method.
+
+561
+01:27:54,807 --> 01:28:00,628
+And when I click generate, I'm sorry, I want them to be added as the last number.
+
+562
+01:28:00,628 --> 01:28:05,167
+I could cut, but let me show this one to you too.
+
+563
+01:28:06,676 --> 01:28:11,736
+Source, generate, get the setters, plate is okay, and this one.
+
+564
+01:28:12,916 --> 01:28:20,096
+We have to insert as last member, this is my latest edition, so I want to see it at the end of the classbook.
+
+565
+01:28:20,956 --> 01:28:32,216
+Okay, this is very fast, but I don't have enough vertical lines in my screen, therefore, I will squeeze those methods like this.
+
+566
+01:28:32,819 --> 01:28:36,359
+Make them cover only one line.
+
+567
+01:28:37,899 --> 01:28:39,799
+Normally, we don't code like that.
+
+568
+01:28:40,420 --> 01:28:58,539
+But when I give you some exercise solutions, et cetera, in order to be able to show as much code as possible in one slide or one screen, I make such compact compaction operations.
+
+569
+01:29:01,747 --> 01:29:25,948
+Ok, I have added the get-rack setters method. Now, do we have introduction method here? Not yet, ok. We can do something later in a different class code or in the same class code with the main method. But before that, I need to discuss another thing.
+
+570
+01:29:33,363 --> 01:29:34,603
+That's what comes from.
+
+571
+01:29:40,756 --> 01:29:48,676
+Now, we can code multiple constructors in a class.
+
+572
+01:29:49,355 --> 01:29:52,996
+And in that case, for example, we have two member fields.
+
+573
+01:29:53,396 --> 01:30:00,016
+Therefore, we may want to code different constructors, just like shown here.
+
+574
+01:30:00,016 --> 01:30:06,896
+First, let me walk through, give a walkthrough from the slide.
+
+575
+01:30:08,115 --> 01:30:21,195
+Now, this is the constructor that we wrote here, the left-hand side. This is the normal constructor we have just quoted. Sorry. Let's make it green.
+
+576
+01:30:26,228 --> 01:30:26,608
+Okay.
+
+577
+01:30:27,788 --> 01:30:30,728
+This is the correct usage of the constructor.
+
+578
+01:30:31,807 --> 01:30:41,288
+What about if there will be a car which will be actually a chassis number but its license plate will be decided later, for example.
+
+579
+01:30:41,948 --> 01:30:53,388
+In that case, you want to be able to call a constructor such as this one on the left and below.
+
+580
+01:30:54,452 --> 01:31:03,772
+In addition, for example, let's assume that you allow a car without a Chaffee's number but with a plate.
+
+581
+01:31:04,572 --> 01:31:08,811
+And in that case, you write a constructor such as this one too.
+
+582
+01:31:13,395 --> 01:31:18,215
+The left-hand side code is wrong for two reasons.
+
+583
+01:31:18,755 --> 01:31:26,555
+The first reason is it doesn't comply with the business rules or the domain logic.
+
+584
+01:31:26,695 --> 01:31:32,175
+We cannot have a car with a license plate but without chassis number.
+
+585
+01:31:33,715 --> 01:31:40,775
+We need to have a car with a plate and chassis number or chassis number only.
+
+586
+01:31:41,844 --> 01:31:50,744
+This is what is needed to be done according to the law, okay? Rules, kavramını iklarlar.
+
+587
+01:31:53,744 --> 01:32:03,344
+Moreover, writing two constructors such as this will give us an error, a compile error too, because
+
+588
+01:32:04,020 --> 01:32:20,700
+This first constructor and the second constructor are actually the same for the compiler because they are the constructor methods having only one string parameter.
+
+589
+01:32:21,587 --> 01:32:23,227
+Method names are the same.
+
+590
+01:32:24,427 --> 01:32:26,188
+Parameter types are the same.
+
+591
+01:32:26,487 --> 01:32:30,727
+Parameter names are different, but names doesn't matter.
+
+592
+01:32:31,108 --> 01:32:32,987
+I can write anything here.
+
+593
+01:32:33,307 --> 01:32:36,247
+State number, P, C, whatever I wish.
+
+594
+01:32:37,108 --> 01:32:45,108
+Therefore, the compiler cannot distinguish between the first construct and the second construct.
+
+595
+01:32:45,108 --> 01:32:54,108
+Therefore, this will be a duplicate definition of the same construct and our code will not compile.
+
+596
+01:32:54,108 --> 01:32:55,108
+Okay.
+
+597
+01:32:55,108 --> 01:33:04,108
+Then, let's assume that Chattr's numbers are not strings but they are integers, for example.
+
+598
+01:33:05,876 --> 01:33:15,996
+Let's have this or this, no, not pink one, brown one, for example.
+
+599
+01:33:17,655 --> 01:33:23,155
+Let's have our Chassis numbers not strings, but ints.
+
+600
+01:33:25,855 --> 01:33:32,336
+In that case, the Chassis numbers parameter which will also be integers.
+
+601
+01:33:34,131 --> 01:33:40,451
+And now these two constructors will become different signatures.
+
+602
+01:33:41,011 --> 01:33:47,811
+First one is a constructor with a string parameter and the second one is a constructor with int parameter.
+
+603
+01:33:48,691 --> 01:33:55,691
+In that case, we will not encounter a compile error, but we will introduce a bug.
+
+604
+01:33:58,420 --> 01:33:59,979
+Okay, which I mentioned before.
+
+605
+01:34:00,319 --> 01:34:04,579
+This is not, this breaks the rules, the application logic.
+
+606
+01:34:04,579 --> 01:34:14,920
+It is applicable, permissible for the compiler, but it breaks the requirements of our business logic.
+
+607
+01:34:15,440 --> 01:34:18,360
+Okay, that's what it is.
+
+608
+01:34:18,752 --> 01:34:27,231
+And moreover, you cannot use two different constructors to initialize the same object.
+
+609
+01:34:27,452 --> 01:34:33,731
+Now let's turn back and assume that we have this scenario.
+
+610
+01:34:35,492 --> 01:34:38,992
+Both constructors have string parameters.
+
+611
+01:34:39,252 --> 01:34:41,891
+First one is plate and second one is chassis number.
+
+612
+01:34:42,515 --> 01:34:58,335
+No, vazgeçim. Özür dilerim. Öbür duruma geri dönüyorum. Bir int ve string olmaya devam etsin. Yani şöyle bir şey yapamayız. In that case, we cannot do like something such as this. Let's text, for example.
+
+613
+01:35:07,475 --> 01:35:10,756
+Cars, for example, this is the plates.
+
+614
+01:35:14,076 --> 01:35:30,716
+And then, I want to be able to assign the chassis number of my same car, such as my car equal to new car.
+
+615
+01:35:30,716 --> 01:35:32,796
+And this time, this is the chassis number.
+
+616
+01:35:33,844 --> 01:35:54,844
+This is the Schleswig's number, for example. I cannot do such a thing because when you create a new, when you call a constructor, then the previous contents of that object is being completely removed. Actually not removed, but it's marked for deletion.
+
+617
+01:35:55,220 --> 01:36:05,080
+And now, this my car is a completely new object, completely other object than the previous my car object.
+
+618
+01:36:05,520 --> 01:36:05,600
+Okay.
+
+619
+01:36:06,900 --> 01:36:11,020
+Let me demonstrate this for you.
+
+620
+01:36:11,880 --> 01:36:18,680
+First, delete everything, every drawings, and then alter Eclipse.
+
+621
+01:36:22,323 --> 01:36:46,663
+Okay. Now this is a correct code, but let me copy the package. This will be an error on the one, just for demonstration. String plate and private int chasis number, for example.
+
+622
+01:36:47,636 --> 01:36:53,876
+And let's have this first constructor for initializing the plate.
+
+623
+01:36:56,236 --> 01:37:02,876
+And have a second constructor to initialize the Chesis numbers.
+
+624
+01:37:05,196 --> 01:37:09,516
+Generic constructor is in here, Chesis number, okay.
+
+625
+01:37:11,156 --> 01:37:13,876
+Let's remove that supers.
+
+626
+01:37:15,315 --> 01:37:22,015
+Now, there is nothing wrong with those two constructors for the IDE, for the compilers.
+
+627
+01:37:22,675 --> 01:37:32,055
+But, also let's correct this, the getter method should be int because we have changed the type.
+
+628
+01:37:33,055 --> 01:37:35,155
+Now, let's add the main method.
+
+629
+01:37:44,948 --> 01:37:49,988
+And, create my cast.
+
+630
+01:37:49,988 --> 01:37:54,708
+Cast equal to 1.0.0.0.
+
+631
+01:37:54,708 --> 01:37:56,628
+So it's the license plate.
+
+632
+01:38:00,659 --> 01:38:08,760
+And then, ekar, ekonimium, class, for example, the chess numbers.
+
+633
+01:38:14,771 --> 01:38:27,872
+Let's demonstrate these objects in a way such as grid plus a car dot get plate.
+
+634
+01:38:30,372 --> 01:38:35,412
+And again, smart click on.
+
+635
+01:38:36,612 --> 01:38:40,271
+Just this should be.
+
+636
+01:38:41,140 --> 01:38:44,840
+Vaz, ekka, vaz, yetşe, sust, namaz.
+
+637
+01:38:46,500 --> 01:38:47,240
+What will happen?
+
+638
+01:38:48,140 --> 01:38:48,840
+That's what I mean.
+
+639
+01:38:53,811 --> 01:38:57,112
+As you can see, the plate has become null.
+
+640
+01:38:57,912 --> 01:39:03,692
+Null is a special value, which means an object that hasn't been utilized yet.
+
+641
+01:39:04,771 --> 01:39:05,931
+Why is this the case?
+
+642
+01:39:05,931 --> 01:39:07,091
+Because
+
+643
+01:39:07,471 --> 01:39:25,971
+After calling the second construct in line 20, the previous Ekar object instance is lost, is being marked as to be deleted, and it becomes a completely new object.
+
+644
+01:39:26,836 --> 01:39:31,276
+Of which the plate number field is unassigned.
+
+645
+01:39:31,276 --> 01:39:36,516
+Only its chess number is being assigned with this construct.
+
+646
+01:39:36,516 --> 01:39:41,276
+Therefore, the plate becomes null.
+
+647
+01:39:41,276 --> 01:39:42,276
+Okay?
+
+648
+01:39:44,836 --> 01:39:52,796
+If you wish, multiple fields to be initialized when creating a new object.
+
+649
+01:39:53,011 --> 01:39:56,011
+Please code each of those.
+
+650
+01:39:59,092 --> 01:40:09,011
+Please code the constructor with as many parameters as required for initializing every important number.
+
+651
+01:40:09,752 --> 01:40:13,152
+Do not code separate constructors in that fashion.
+
+652
+01:40:14,372 --> 01:40:17,051
+But we can do something such as this.
+
+653
+01:40:17,747 --> 01:40:26,127
+A car with a plate and chassis number can be created and a car with only a chassis number can be also created.
+
+654
+01:40:26,127 --> 01:40:35,167
+So let's code another constructor here. Let's use copy and paste in order to be fastest.
+
+655
+01:40:40,083 --> 01:40:42,003
+Now, this is okay for us.
+
+656
+01:40:42,943 --> 01:40:52,163
+The car can be either created with only a chassis number, or it can be created with a chassis number and a plate.
+
+657
+01:40:52,724 --> 01:40:55,724
+In that case, let's add a main method.
+
+658
+01:40:56,724 --> 01:40:59,643
+Let's use the previous one similarly.
+
+659
+01:41:03,731 --> 01:41:04,731
+Here at least.
+
+660
+01:41:06,452 --> 01:41:07,452
+For example,
+
+661
+01:41:09,572 --> 01:41:10,572
+the first car,
+
+662
+01:41:11,692 --> 01:41:13,971
+it only has the chassis number,
+
+663
+01:41:13,971 --> 01:41:17,931
+but now it is a chassis number for something such as
+
+664
+01:41:22,484 --> 01:41:37,364
+Such as this. This is a car with only chassis numbers. And let me have another car with both chassis number and license plate.
+
+665
+01:41:47,572 --> 01:41:50,764
+And let's use that in other color.
+
+666
+01:42:03,123 --> 01:42:05,283
+And let's change this one too.
+
+667
+01:42:11,380 --> 01:42:13,380
+Such as this.
+
+668
+01:42:13,380 --> 01:42:15,380
+And let's run the code.
+
+669
+01:42:17,380 --> 01:42:19,380
+Ah, not this one, sorry.
+
+670
+01:42:19,380 --> 01:42:23,380
+This one, but why is the compile error?
+
+671
+01:42:23,380 --> 01:42:27,380
+Another, another, another.
+
+672
+01:42:27,380 --> 01:42:29,228
+Why is it error?
+
+673
+01:42:35,475 --> 01:43:03,475
+Bu şeyin hatası arkadaşlar, etisinin hatası. Boş fazladan bir tane import koydu. Öbür projeden kopyalayıp bu projeye yapıştırdığım için öbür projeyi de bir import etti. Böyle yapmaması gerekiyordu. İçinlerle çıkarsanız var. Şimdi bu etisinin import silince güzeldi. Ben dedim aslında bir hata yapmadım ama etisinden karnağa kalan ufak bir problemdi bu. Okey. Şimdi şuna bir bakalım isterseniz artık. Çalıştıralım.
+
+674
+01:43:06,931 --> 01:43:10,271
+Şurada görelim şöyle. Başka bir şey de yok.
+
+675
+01:43:15,271 --> 01:43:16,572
+Çalışalım bakalım.
+
+676
+01:43:24,971 --> 01:43:30,911
+Ama şey, hafta üçtekindeki tabii ki hafta, şey C'deki değil, B'deki özgürlerim şu.
+
+677
+01:43:34,676 --> 01:43:35,676
+Ok, bakar, şimdi.
+
+678
+01:43:36,816 --> 01:43:43,276
+As for the first car, it only has a chassis number, but it doesn't have a plate.
+
+679
+01:43:43,496 --> 01:43:47,996
+So, the plate is now, but the chassis number is correct, ABC.
+
+680
+01:43:48,596 --> 01:43:55,416
+And as for the other car, it is created with both a plate and a chassis number.
+
+681
+01:43:55,416 --> 01:44:00,016
+So, its plate and chassis numbers are written correctly.
+
+682
+01:44:00,787 --> 01:44:09,728
+If we wish for the first car, after creating it, we can set its license plate as we wish.
+
+683
+01:44:09,728 --> 01:44:20,887
+For example, car.setplate, let's do it such as, like this one, and run it out.
+
+684
+01:44:21,524 --> 01:44:30,764
+We will see that that first car having an acoplated plate as well, as you can see from the app.
+
+685
+01:44:32,204 --> 01:44:33,684
+Durumlar bunlar arkadaşlar.
+
+686
+01:44:34,368 --> 01:44:46,448
+And moreover, instead of introducing an object by which from the main method, this is more troublesome.
+
+687
+01:44:47,108 --> 01:44:51,967
+I am repeating the same similar things very often.
+
+688
+01:44:52,448 --> 01:44:54,408
+This is not a good way of coding.
+
+689
+01:44:54,863 --> 01:45:07,783
+The initial version, this version of the car, having a separate introduced self method, this one is much more convenient for us for testing.
+
+690
+01:45:08,903 --> 01:45:18,403
+Therefore, the best should be having an introduced self method as well for this version of the car class too.
+
+691
+01:45:19,903 --> 01:45:20,583
+Good, now do not.
+
+692
+01:45:22,452 --> 01:45:23,672
+Fırsızın arkaçlarımız var.
+
+693
+01:45:41,684 --> 01:45:45,083
+Bakıyorum da başka bir şey,
+
+694
+01:45:45,083 --> 01:45:48,484
+Ani diye bununla ilgili yok ama şunu bir şey demiştiniz.
+
+695
+01:45:50,484 --> 01:45:52,083
+Final Fills.
+
+696
+01:45:54,684 --> 01:45:59,684
+Eee, şu, şu, şu, şu, bir, şu, bir, şu, çok iyi demiştiniz ama şey yani,
+
+697
+01:45:59,684 --> 01:46:00,684
+eee,
+
+698
+01:46:02,684 --> 01:46:06,884
+şey mi değişebilir mi? Sanırım değişebilir mi? Ondan mı bu cümle kaldı anlamadım.
+
+699
+01:46:11,891 --> 01:46:17,891
+Tamam, bu da final veren adam basle bismi, ikan nemen okusumşun nemen, da srekt, nejen okusumşun.
+
+700
+01:46:17,891 --> 01:46:34,891
+Okay, another thing about this second and third version of those classes, let's close them all to other versions with each other.
+
+701
+01:46:34,891 --> 01:46:37,891
+What do we use, which one we use?
+
+702
+01:46:39,283 --> 01:46:40,503
+This one, for example.
+
+703
+01:46:40,983 --> 01:46:41,103
+Okay.
+
+704
+01:46:42,563 --> 01:46:54,663
+By coding our class in a way that we didn't add a setter method for Schatz's number, therefore, the Schatz's number of Eka cannot be changed.
+
+705
+01:46:55,323 --> 01:46:55,463
+Okay.
+
+706
+01:46:58,523 --> 01:47:04,143
+In theory, in practice, let's try something such as this.
+
+707
+01:47:07,923 --> 01:47:14,844
+In here, I will write an order that class's number equal to
+
+708
+01:47:18,868 --> 01:47:20,108
+Such as this.
+
+709
+01:47:21,247 --> 01:47:25,427
+This should not be happening.
+
+710
+01:47:26,228 --> 01:47:32,868
+In the main method, I am directly accessing a number field and assigning a new value.
+
+711
+01:47:33,988 --> 01:47:37,108
+This is a problem.
+
+712
+01:47:37,507 --> 01:47:38,247
+This is a topic.
+
+713
+01:47:40,387 --> 01:47:40,927
+How about?
+
+714
+01:47:41,684 --> 01:47:58,563
+We can eliminate this problem by mentioning, remember, this chassis number field as a final number. Final number means you can assign a value once and you cannot change the value later.
+
+715
+01:48:02,563 --> 01:48:03,563
+Therefore,
+
+716
+01:48:05,268 --> 01:48:14,427
+Now, the plate will be a regular private member, but the choice number will be a private and final member.
+
+717
+01:48:14,427 --> 01:48:18,568
+Therefore, I need to code them in separate lines.
+
+718
+01:48:21,347 --> 01:48:25,887
+Private, final string, choice number.
+
+719
+01:48:27,087 --> 01:48:27,587
+Now,
+
+720
+01:48:28,884 --> 01:48:31,804
+This line gives us a compile error.
+
+721
+01:48:32,123 --> 01:48:34,523
+The final field cannot be assigned.
+
+722
+01:48:35,003 --> 01:48:36,123
+This is what we wish.
+
+723
+01:48:36,963 --> 01:48:45,223
+If you want a member field not to be changed, then please mention it as final.
+
+724
+01:48:46,387 --> 01:49:08,827
+Usually, not adding a set method will suffice, but in order to write a better code and more easily understand the code, mark such fields as final. Okay? That's it about the final number of fields.
+
+725
+01:49:14,131 --> 01:49:15,491
+Ok, any questions?
+
+726
+01:49:18,211 --> 01:49:20,191
+So, I'm commenting this out.
+
+727
+01:49:23,699 --> 01:49:24,840
+Now let's continue.
+
+728
+01:49:29,524 --> 01:49:32,764
+with the 7-8 data types.
+
+729
+01:49:34,724 --> 01:49:35,384
+Okay.
+
+730
+01:49:38,996 --> 01:50:05,416
+In Java, we named non-class structures as primitives. A primitive type represents only one minute of information. And there is also another term, a wrapper. A wrapper means a class which has only one primitive member field.
+
+731
+01:50:06,036 --> 01:50:09,936
+From this corresponding primitive type.
+
+732
+01:50:10,456 --> 01:50:16,556
+And it also has some useful methods related to that number.
+
+733
+01:50:17,396 --> 01:50:25,776
+For example, the nature of the number data types in Java are int, long, short, and byte.
+
+734
+01:50:26,716 --> 01:50:31,936
+Int primitive means the primitive type int means integers.
+
+735
+01:50:32,884 --> 01:50:44,603
+And they are represented with four bytes, which gives it a range of minus and plus 2.1 million.
+
+736
+01:50:44,603 --> 01:50:57,283
+If you are not interested in which negative values, then you can add a word unsigned before the type name int.
+
+737
+01:50:57,939 --> 01:51:11,159
+Then the value becomes from 0 to up to 4,28,000 something.
+
+738
+01:51:11,159 --> 01:51:11,659
+Okay.
+
+739
+01:51:12,199 --> 01:51:18,380
+Just the double of that last range element.
+
+740
+01:51:19,315 --> 01:51:24,235
+And its corresponding wrapper is the type integer.
+
+741
+01:51:24,235 --> 01:51:24,615
+Okay.
+
+742
+01:51:25,076 --> 01:51:28,635
+The class integer has a member field of type int.
+
+743
+01:51:29,115 --> 01:51:35,855
+And it has many useful methods that we will cover some of them.
+
+744
+01:51:37,108 --> 01:51:57,108
+But first mention the other types. Long means big integers. They are presented with 8 bytes, which means minus and plus 9.22 multiplied by 10 over 18, which means...
+
+745
+01:51:57,619 --> 01:52:10,000
+After two digits to the right, 922, 10 üzeri 16 gibi. Yani 922'nin sonuna 16'ların sıfı koyduk. Yani iki sıfır şu virgülü en sağa getirmek için harcan.
+
+746
+01:52:20,979 --> 01:52:28,819
+Because our nation idegrams are much longer, have much more digits than this integer value.
+
+747
+01:52:29,500 --> 01:52:34,720
+But we can define them with types long, if you wish.
+
+748
+01:52:35,380 --> 01:52:42,800
+When we use a long value, at the end of the number, we use the uppercase L.
+
+749
+01:52:43,231 --> 01:52:47,412
+In order to not confuse this number with a regular integer.
+
+750
+01:52:48,271 --> 01:52:51,591
+Therefore, this capital case L stands for long.
+
+751
+01:52:52,971 --> 01:52:56,931
+And its corresponding wrapper is the type long.
+
+752
+01:52:58,652 --> 01:53:04,332
+If you go back to our national ID numbers, if you wish, you can model them as strings too.
+
+753
+01:53:04,724 --> 01:53:10,563
+I can either model them with a string or with a long number, whichever you wish.
+
+754
+01:53:11,123 --> 01:53:18,663
+I usually prefer using it as a string number for doing this lecture.
+
+755
+01:53:19,663 --> 01:53:25,863
+If you don't need such a large value range, then you can use the short type.
+
+756
+01:53:26,703 --> 01:53:30,043
+This means a small integer which is represented by two bytes.
+
+757
+01:53:30,479 --> 01:53:38,859
+And the rate range becomes minus 32,000 to plus 32,000 something.
+
+758
+01:53:39,799 --> 01:53:52,079
+Again, if we can add an unsigned word on top of it, then it becomes from 0 to 65,000 something.
+
+759
+01:53:52,079 --> 01:53:52,719
+Okay.
+
+760
+01:53:53,539 --> 01:53:56,299
+And its corresponding wrapper type is short.
+
+761
+01:53:57,140 --> 01:54:01,400
+If you wish, you can use just 1 byte 2 as a numerical value.
+
+762
+01:54:02,020 --> 01:54:12,020
+And 1 byte means if it is signed, then it begins from minus 128 up to positive 129.
+
+763
+01:54:12,020 --> 01:54:16,240
+If you add corresponding type byte.
+
+764
+01:54:16,640 --> 01:54:25,000
+If you wish, you can use an unsigned byte, then which becomes, it begins from 0 and 2, 200.
+
+765
+01:54:25,140 --> 01:54:27,780
+Then, 55 it becomes.
+
+766
+01:54:27,780 --> 01:54:28,300
+Okay?
+
+767
+01:54:29,580 --> 01:54:44,580
+And for example, if I want to draw the class diagram of an integer, of the rep integer, for example, I will just use this class name, integers.
+
+768
+01:54:46,160 --> 01:54:51,620
+And its value for member field is an int.
+
+769
+01:54:52,032 --> 01:55:01,592
+And it has many useful methods. What are they? Let's examine the Java documentation for this purpose.
+
+770
+01:55:18,804 --> 01:55:20,404
+Java base.
+
+771
+01:55:21,444 --> 01:55:25,844
+It is in the, all the wrappers are in the Java line package.
+
+772
+01:55:26,984 --> 01:55:28,224
+Let's go here.
+
+773
+01:55:28,384 --> 01:55:30,464
+Okay, you can see that integer class here.
+
+774
+01:55:31,544 --> 01:55:37,924
+It says the integer class wraps, it's a wrapper, a value of the primitive time int.
+
+775
+01:55:38,287 --> 01:55:48,887
+An object of type integer contains a single field whose type is int, just as I had wrote it in the cluster.
+
+776
+01:55:51,927 --> 01:55:58,247
+And it has been in the Java language since the very first version of the Java language.
+
+777
+01:56:00,027 --> 01:56:04,427
+What are its methods, for example?
+
+778
+01:56:05,027 --> 01:56:06,027
+We have the...
+
+779
+01:56:06,095 --> 01:56:09,255
+Compared and compare to networks.
+
+780
+01:56:10,175 --> 01:56:17,615
+We can change its value to different types with, for example, converted to float, such as a float value.
+
+781
+01:56:17,835 --> 01:56:24,536
+But we do not actually convert, but it's a converted value for assigning to another primitive.
+
+782
+01:56:24,536 --> 01:56:31,675
+We will cover this in later with the string type, not with the integer type.
+
+783
+01:56:31,955 --> 01:56:33,036
+But if you wish, we can.
+
+784
+01:56:34,095 --> 01:56:38,595
+A bit dark with such types too.
+
+785
+01:56:40,635 --> 01:56:46,536
+It has some static methods, such as finding the maximum or minimum of two values.
+
+786
+01:56:47,283 --> 01:57:02,444
+We can parse an integer value from a string, for example, and not only in the decimal system, but in any system, binary, octal, hexadecimal, etc., if you wish.
+
+787
+01:57:05,108 --> 01:57:15,268
+Revers it, put it from positive to negative, or negative to positive, obtains two complement tools, complement versions, remember it from BBG.
+
+788
+01:57:18,508 --> 01:57:24,108
+We can convert the value to different string representations in different phases.
+
+789
+01:57:26,108 --> 01:57:31,108
+Those are the things that we can do with the wrapper.
+
+790
+01:57:37,747 --> 01:57:43,108
+Okay, and in a minute, I can, I talk about the outside world.
+
+791
+01:57:46,547 --> 01:57:48,547
+Okay, what about real numbers?
+
+792
+01:57:49,268 --> 01:57:51,747
+We have two different types of real numbers.
+
+793
+01:57:52,707 --> 01:57:54,707
+First type is the double type.
+
+794
+01:57:55,747 --> 01:58:02,148
+Those are for large and precise real numbers.
+
+795
+01:58:03,108 --> 01:58:08,387
+And the ranges from minus to plus, 1.7 to 9.
+
+796
+01:58:09,587 --> 01:58:13,967
+Over, 10 over 308.
+
+797
+01:58:14,487 --> 01:58:14,687
+Okay.
+
+798
+01:58:15,287 --> 01:58:21,487
+Let's remove 2 from 308 for...
+
+799
+01:58:21,619 --> 01:58:26,720
+Bunun şartı için İngilizce söyleyemeyeceğim arkadaşlar. Matematiğim, İngilizce matematiğim o kadar değil.
+
+800
+01:58:27,099 --> 01:58:32,680
+1,79'u, o birbürü sağ 2 basamak kaydımak için 105 yapmak demek. 10 üzeri 2 demek.
+
+801
+01:58:32,859 --> 01:58:37,140
+O 2'ye 386'nden düştüğünüzde geri yakalıyor. 306 tane sıfır.
+
+802
+01:58:37,380 --> 01:58:40,239
+179'uz. Sonra 306 tane sıfır koyun.
+
+803
+01:58:41,519 --> 01:58:48,800
+You can access four of a large range by using double member.
+
+804
+01:58:49,619 --> 01:59:05,460
+But, and the calculations done by using double numbers are very precise, scientifically precise, but this comes with a cost.
+
+805
+01:59:06,579 --> 01:59:16,819
+Double numbers eat up ball memory and operation with double elements are slower.
+
+806
+01:59:18,579 --> 01:59:35,239
+At the other hand, we have the float type. Those are for small real numbers. Not that much small because the range is from minus to plus 3.4 multiplied by 10 over 38.
+
+807
+01:59:35,239 --> 01:59:46,119
+Which means after 34, add 37 zeros at the end. O kadar, o bile adını söyleyeceğim için kadar geniş bir rakam.
+
+808
+01:59:46,479 --> 01:59:59,079
+The advantages are symmetrical, inversely symmetrical with the double curve. Float values take up less memory.
+
+809
+02:00:00,199 --> 02:00:07,059
+And operations with float elements are faster according to the ones with the double.
+
+810
+02:00:07,551 --> 02:00:17,752
+But on the other hand, the disadvantages are these operations are not as precise as with the double values.
+
+811
+02:00:17,752 --> 02:00:23,752
+And the range is not that big as the double.
+
+812
+02:00:25,051 --> 02:00:29,011
+In any given problem, choose whatever you wish.
+
+813
+02:00:29,395 --> 02:00:35,796
+If you don't need to make any scientific calculations, then it's better to use the float type.
+
+814
+02:00:36,095 --> 02:00:38,755
+But if you want to be more precise, then you can use double.
+
+815
+02:00:39,496 --> 02:00:41,715
+During this lecture, you can use both.
+
+816
+02:00:42,115 --> 02:00:43,015
+You can use idus.
+
+817
+02:00:43,376 --> 02:00:58,916
+I usually use double, but that's not important. You can use any of it you wish. The wrapper of the double is double with the capital D, and the wrapper for the float primitive is the float type with the capital F.
+
+818
+02:00:59,731 --> 02:01:27,131
+And then we have the other parameters such as char. This means just one character. It's from A to Z small case or A to Z upper case, etc. It uses the UTF-16 encoding. Java by default uses this encoding. It supports many diacritics in many languages, including languages with different alphabets.
+
+819
+02:01:27,667 --> 02:01:33,988
+And its corresponding wrapper is character, which see uppercase.
+
+820
+02:01:35,568 --> 02:01:41,448
+But mostly we will not be dealing with characters, but we will be dealing with strings, mostly.
+
+821
+02:01:41,988 --> 02:01:45,068
+And also we have the Boolean type as a primitive.
+
+822
+02:01:45,608 --> 02:01:50,747
+This has the logical reasoning and its value can be either false or true.
+
+823
+02:01:51,347 --> 02:01:55,207
+And its wrapper is Boolean with a capital case B.
+
+824
+02:01:58,707 --> 02:02:02,868
+We will talk about the card string soon, very soon.
+
+825
+02:02:04,547 --> 02:02:07,188
+What can we do with both primitives?
+
+826
+02:02:11,028 --> 02:02:14,387
+Okay, what can we do with these primitives?
+
+827
+02:02:14,387 --> 02:02:21,667
+We can make arithmetic operations, plus minus multiplication, division, and modulus operator.
+
+828
+02:02:21,667 --> 02:02:24,228
+This is the modulus operator, the percentage one.
+
+829
+02:02:24,560 --> 02:02:34,539
+Remember, operator precedence, multiplication, division, and modulation has more precedence over plus and minus.
+
+830
+02:02:34,539 --> 02:02:52,560
+So, if you write A plus B multiplied by C, first B multiplied by C is calculated, then A is added, not first A and B added, then multiplied by C.
+
+831
+02:02:52,560 --> 02:02:53,560
+This is incorrect.
+
+832
+02:02:53,859 --> 02:02:55,560
+We have operator precedence.
+
+833
+02:02:56,340 --> 02:03:01,800
+And by using parentheses, we can override this precedence, as you remember.
+
+834
+02:03:02,319 --> 02:03:06,600
+We have the plus, plus and minus, minus operators.
+
+835
+02:03:06,840 --> 02:03:12,399
+We have prefix and post-fix rotations, everything such as this.
+
+836
+02:03:12,399 --> 02:03:16,560
+And we can merge it with regular operators.
+
+837
+02:03:16,800 --> 02:03:20,399
+For example, Y marted by plus, plus, plus, and...
+
+838
+02:03:20,560 --> 02:03:33,480
+Y multiplied by Z++, which means in prefix, first the value of Z is increased and Y is multiplied by using this increased value.
+
+839
+02:03:33,859 --> 02:03:44,480
+In the other operation, first we multiply Y by Z, then we increase the value of Z.
+
+840
+02:03:44,880 --> 02:03:47,180
+Remember this from your previous lectures.
+
+841
+02:03:48,560 --> 02:03:52,680
+I'm not mentioning them again in this course.
+
+842
+02:03:53,239 --> 02:03:57,960
+And there are also very useful static methods of the math class.
+
+843
+02:03:58,380 --> 02:04:07,980
+For example, if you want to find the absolutory value of any expression, you can use the ABS method.
+
+844
+02:04:07,980 --> 02:04:15,819
+You can round this real number to an integer number by using the round.
+
+845
+02:04:16,560 --> 02:04:24,279
+You have the power method, üst alma, beautiful, signing the power of any numbers such as this.
+
+846
+02:04:24,560 --> 02:04:34,159
+We have such static methods so that they can be used directly by reference to the math class without any object creation.
+
+847
+02:04:36,020 --> 02:04:56,020
+And we have bitwise operators as well. And operator is ampersand. Or operator is pipe. Not operator is disk tilda. And exo operator is disk tilda.
+
+848
+02:04:56,851 --> 02:04:59,011
+Whatever you call it, I don't remember.
+
+849
+02:04:59,771 --> 02:05:04,072
+But the Boolean NAT operator is exclamation mark, okay?
+
+850
+02:05:04,971 --> 02:05:06,872
+We have the shift operators.
+
+851
+02:05:07,572 --> 02:05:11,731
+As well, remember it from C language.
+
+852
+02:05:11,731 --> 02:05:12,792
+It's the same.
+
+853
+02:05:35,572 --> 02:05:37,511
+Çek-daya çıkıyor işte.
+
+854
+02:05:38,011 --> 02:05:45,731
+Or instead of division, you can use shifting operations as well because 8 is the third power of 2.
+
+855
+02:05:45,731 --> 02:05:51,311
+You can do things such as this, but I will not go into detail of such operations.
+
+856
+02:05:51,711 --> 02:05:59,811
+We have seen and done much of it already in previous courses, so that's enough for the moment.
+
+857
+02:06:02,515 --> 02:06:08,435
+And let's have some examples with the printers and wrappers.
+
+858
+02:06:08,635 --> 02:06:13,455
+But I guess we should take a short break.
+
+859
+02:06:14,035 --> 02:06:22,495
+We can take a short break or we can continue and finish it up early at about half past four.
+
+860
+02:06:22,495 --> 02:06:23,695
+Which we prefer?
+
+861
+02:06:25,747 --> 02:06:30,467
+Biraz daha ulaşıp bitirelim mi? Yoksa aramıyorum nedersiniz?
+
+862
+02:06:35,988 --> 02:06:38,988
+Orda şapitöremi, aram ve, nedazas.
+
+863
+02:06:42,707 --> 02:06:45,307
+Peki, daha da bakıyorsunuz galiba.
+
+864
+02:06:45,307 --> 02:06:47,307
+Bir dakika, sohbete bakma.
+
+865
+02:06:47,307 --> 02:06:50,908
+Bitlerim hocam diyenler, continue diyenler.
+
+866
+02:06:50,908 --> 02:06:57,307
+Erken bitirim demek istiyorsunuz herhalde [öğrenci], şu anda bitirim demek istemiyorsunuz.
+
+867
+02:06:57,307 --> 02:07:00,108
+Yok hocam, devam edelim yani.
+
+868
+02:07:00,467 --> 02:07:23,827
+Tamam. Şimdi arkadaşlar, gördünüz mü? Sağ olun, çete yazmışsınız. Ama siz yazınca, ben ekran paylaşımındayken bir şey çıkıp da dikkatimi çekmedi çete yazı geldi diye. O yüzden hani böyle size tepki vermezsem falan, lütfen açın mikrofon sesini. Söyleyin edin yani, tamam mı arkadaşlar? O yüzden alay bu.
+
+869
+02:07:24,243 --> 02:07:47,823
+Peki, mesela 15, oradan 20 dakikadan önce ilk yazdığınız pet yerine chassis olmasını yazsa, ne hocam demişim ama işte ben tabii arkadaşımın yazdığını görmemişim. Ondan sonra önce ben. Hani tek inputu girdiniz. Şimdi tam o anı hatırlayamıyorum ama hani eğer mikrofon falan varsa açıp sözlerimi sorunu söyleyeyim.
+
+870
+02:07:49,076 --> 02:07:52,076
+Limit bir öğlektrin yapmadan önce, şuraya geri dönelim.
+
+871
+02:07:53,716 --> 02:07:56,775
+İlk yazdığınızın, plate yerine şaşırsız olmasını sağlayan ne?
+
+872
+02:07:57,115 --> 02:07:58,256
+Şu herhalde.
+
+873
+02:07:58,963 --> 02:08:06,963
+Şu iki constructor olan versiyon da şurada mesela. İki parametre alıyor. Biri plate, ötekin sonuç asıl number.
+
+874
+02:08:07,303 --> 02:08:12,683
+İşte aslında bunu sağlayan hiçbir şey yok. Bunu sağlayan benim kendi ataması sıra.
+
+875
+02:08:13,143 --> 02:08:18,863
+İlk parametreyi late üyesine atamışım, ikinci parametreyi class'is parametresine atamışım.
+
+876
+02:08:19,263 --> 02:08:22,223
+Ben hani kazayla şöyle bir şey de yapabilirdim yani.
+
+877
+02:08:22,899 --> 02:08:36,099
+Ya da mesela şurada mesela. Bu chess islamdı. Hani, play to atıyabilirdin. Yani hiçbir şey olmazdı ki. Şurada gel şu an bir hata vereyim hadi hata söylüyor.
+
+878
+02:08:36,884 --> 02:08:56,204
+şey final dedim ya, final dediğim için final üye alıma mutlaka bir şey atamak lazım. Final'ı da kestim. Bakın şuradaki hata kalktı. Yani hiçbir şey sağlamıyor. Bunu ben dikkatli bir şekilde yazıp doğru parametreyi doğru sırada atamalıyım. Tamam mı? Olay bu.
+
+879
+02:08:58,515 --> 02:09:13,595
+Mesela tamam, bu sıfı alalım diyor. Demek ki doğru yere dokunabilmişim. Ya da tam tersi mesela. Ben önce plate parametresini yazmak zorunda değilim ki, önce string parametresini veririm bu constructra. Sonra plate'i veririm.
+
+880
+02:09:14,355 --> 02:09:20,435
+Atamayı böyle yaptığım zaman doğru şekilde play to play to, şaside, şasiye atamış olurum.
+
+881
+02:09:20,435 --> 02:09:31,796
+İşte biraz da bu yüzden eğer bir metotta aynı türden iki parametre varsa, bir iki UMLN yazılımında isimlerini yazmadan geçmeyelim.
+
+882
+02:09:32,036 --> 02:09:32,935
+Sırayla yazılalım.
+
+883
+02:09:33,155 --> 02:09:38,895
+Ve UMLN'deki sırayı da koda aynı sırada aktarmaya dikkat edelim.
+
+884
+02:09:39,216 --> 02:09:41,476
+Öbür türü bu arada en ufak bir dikkatsiz daha olsak.
+
+885
+02:09:42,355 --> 02:09:44,376
+Başına mis gibi bug yani.
+
+886
+02:09:44,976 --> 02:09:46,815
+Filat gibi bir bug çıkıyor karşımıza.
+
+887
+02:09:47,056 --> 02:09:48,536
+Atamalar yanlış oluyor falan filan.
+
+888
+02:09:48,536 --> 02:09:53,536
+Ondan sonra tutup onu ayıklayıp bombamız, düzeltmemiz gerekecekti.
+
+889
+02:09:53,836 --> 02:09:54,195
+Durumu bu.
+
+890
+02:09:56,016 --> 02:09:57,136
+Evet, pekala.
+
+891
+02:09:59,376 --> 02:10:01,016
+Şimdi gelelim biraz daha.
+
+892
+02:10:01,996 --> 02:10:04,056
+Primitif içermelerine.
+
+893
+02:10:04,775 --> 02:10:05,836
+Şunu yapalım.
+
+894
+02:10:05,976 --> 02:10:07,855
+Ondan sonra şu iki ön.
+
+895
+02:10:08,271 --> 02:10:17,652
+Şimdi, şu üç yansı, dört yansı yapmamız gerekiyor. Yaptakız çok zor değil. İta vaktimizi erkende bırakmaya.
+
+896
+02:10:17,652 --> 02:10:20,752
+Şimdi,
+
+897
+02:10:23,315 --> 02:10:31,855
+Is there anyone at the moment who cannot follow Turkish? Maybe there are... Okay, let's continue in English.
+
+898
+02:10:32,576 --> 02:10:44,056
+Okay, we have learned what primitives are in wrapers. We use wrappers for their useful methods in cases where primitives cannot be used.
+
+899
+02:10:44,056 --> 02:10:51,115
+We will learn such two cases later in the later weeks. We will cover serialization.
+
+900
+02:10:51,315 --> 02:11:04,796
+And map data structures. In those cases, we will have to use wrappers, not simple primitives, but we will cover them later.
+
+901
+02:11:06,076 --> 02:11:12,315
+For example, let's examine the useful methods, some of the user methods of the integer class.
+
+902
+02:11:12,979 --> 02:11:30,559
+The first one is compared to integer and other integer. What does this mean? First of all, this is a regular method, not a static method. Therefore, we are calling the compared to method of an integer object.
+
+903
+02:11:38,804 --> 02:11:46,984
+This object will compare the value of each size with the value of the other integers.
+
+904
+02:11:47,923 --> 02:12:02,224
+And if the value of this object, the object's full method is being called, has a smaller value than the parameter it receives, then it will return a negative value.
+
+905
+02:12:03,731 --> 02:12:14,252
+If the two values are the same, then it will return zero. Otherwise, it will return a positive value.
+
+906
+02:12:15,052 --> 02:12:21,992
+For example, first let's read those methods, then make a demonstration.
+
+907
+02:12:23,432 --> 02:12:26,212
+The second method, int-value method,
+
+908
+02:12:26,576 --> 02:12:34,576
+Returns the value of its increment field directly.
+
+909
+02:12:35,576 --> 02:12:41,576
+The toString method returns a string representation of that integer.
+
+910
+02:12:43,576 --> 02:12:52,576
+And the other three methods are static, which means they are called directly by using the class name.
+
+911
+02:12:53,555 --> 02:12:57,275
+And they work with only one value.
+
+912
+02:12:58,135 --> 02:13:05,315
+This static method is named called halfInt, and it takes a string as a parameter.
+
+913
+02:13:06,135 --> 02:13:14,615
+This method scans that string and extracts an integer value from that string and returns it back.
+
+914
+02:13:15,155 --> 02:13:18,195
+What can you do with this returned int value?
+
+915
+02:13:18,195 --> 02:13:31,036
+Well, you can assign it to a primitive variable or you can use that value to create an integer object, whatever you wish.
+
+916
+02:13:32,948 --> 02:13:45,108
+The second static method is similar to the previous to string method, but this is a static one, so directly being called from the class name.
+
+917
+02:13:45,108 --> 02:13:54,387
+You give an integer primitive as a parameter and it returns its string representation back.
+
+918
+02:13:56,083 --> 02:13:59,863
+And there is the value of method, which is also a specific method.
+
+919
+02:13:59,863 --> 02:14:02,804
+It takes a string as a parameter.
+
+920
+02:14:03,943 --> 02:14:13,764
+It takes this string and converts it to an integer value, integer option.
+
+921
+02:14:14,024 --> 02:14:19,003
+If you have non-numerical string here, it will create an exception.
+
+922
+02:14:19,663 --> 02:14:21,344
+We will demonstrate this soon.
+
+923
+02:14:22,899 --> 02:14:36,279
+And how can we define and initialize wrappers, such as you can see in here, we define an integer object, which is named sarma.
+
+924
+02:14:37,059 --> 02:14:44,460
+When you translate wrapping to Turkish, you can say sarmalamak, or the sarma.
+
+925
+02:14:44,979 --> 02:14:49,019
+But it also reminds me a food.
+
+926
+02:14:49,019 --> 02:14:52,059
+Dolma salla.
+
+927
+02:14:52,959 --> 02:14:53,719
+Söneriste.
+
+928
+02:14:54,179 --> 02:14:54,499
+Neyse.
+
+929
+02:14:55,959 --> 02:14:57,119
+Neyse, iyi.
+
+930
+02:14:57,399 --> 02:14:58,379
+Devam edelim.
+
+931
+02:15:00,079 --> 02:15:04,459
+We can elaborate this example in ite.
+
+932
+02:15:04,863 --> 02:15:10,023
+But let's first, if there are others, there are no other methods.
+
+933
+02:15:10,023 --> 02:15:12,903
+Okay, let's demonstrate this in the IDE.
+
+934
+02:15:14,123 --> 02:15:18,483
+And then we will, I guess we will cover that class, let's see.
+
+935
+02:15:19,663 --> 02:15:26,723
+In that way, let's create a class having named Primitives.
+
+936
+02:15:28,803 --> 02:15:30,363
+No, no, letters.
+
+937
+02:15:32,659 --> 02:15:35,659
+Let's have a main method.
+
+938
+02:15:35,659 --> 02:15:39,659
+Okay, we'll just use this main method in our code.
+
+939
+02:15:39,659 --> 02:15:42,659
+For example, integers.
+
+940
+02:15:46,131 --> 02:15:51,112
+Sanmabir, 2, for example.
+
+941
+02:15:51,912 --> 02:15:57,131
+Now I can say Sanmabir, for example, 7.
+
+942
+02:15:58,332 --> 02:16:04,891
+And I can call something such as Sanmabir, 2, for example, 7.
+
+943
+02:16:05,671 --> 02:16:06,872
+Such as this.
+
+944
+02:16:07,292 --> 02:16:12,391
+Well, actually, those are objects, not primitives.
+
+945
+02:16:12,927 --> 02:16:19,307
+Therefore, you may expect that we should initialize those objects such as this.
+
+946
+02:16:20,467 --> 02:16:27,287
+Samaral, which is UMLN, integers, 8, for example.
+
+947
+02:16:29,007 --> 02:16:29,207
+Okay.
+
+948
+02:16:31,207 --> 02:16:39,608
+Now, this one, with mere warning, and the constructor is, how can I say this, over?
+
+949
+02:16:40,531 --> 02:16:42,971
+Dron, üstü çizmişliyar.
+
+950
+02:16:43,451 --> 02:16:54,991
+This means, while you examine this warning, it says that this constructor has been dedicated since version 9 and marked for removal.
+
+951
+02:16:55,443 --> 02:17:18,963
+This constructor is duplicated, which means it is now being supported for the sake of backwards compatibility, but in a feature release, feature version of the Java development kit, this constructor can be completely removed from the language.
+
+952
+02:17:19,623 --> 02:17:22,383
+It says use it at your own risk.
+
+953
+02:17:23,156 --> 02:17:50,576
+Why some methods are deprecated? Because they sometimes, in some cases, they don't work as they are supposed to do. And resolving such bugs related to those deprecated methods will require too much of an effort so that it doesn't work it.
+
+954
+02:17:51,667 --> 02:18:00,747
+Or, okay, when you duplicate this method, you must bring something new.
+
+955
+02:18:00,747 --> 02:18:06,747
+And that something new is usually more...
+
+956
+02:18:08,595 --> 02:18:09,595
+Şimdi nasıl dasa?
+
+957
+02:18:10,795 --> 02:18:18,915
+That something new covers much more features than the replicated ones.
+
+958
+02:18:19,915 --> 02:18:27,396
+So, in fact, in this case at line 7, we are actually creating a new object.
+
+959
+02:18:27,396 --> 02:18:32,835
+But Java lets us to use this simplified notation.
+
+960
+02:18:33,971 --> 02:18:37,031
+Do not think this is a primitive.
+
+961
+02:18:37,891 --> 02:18:40,031
+It is actually an object.
+
+962
+02:18:40,572 --> 02:18:44,932
+For example, if you wish, you can write some about that.
+
+963
+02:18:45,831 --> 02:18:49,711
+You see, there are many methods of that object.
+
+964
+02:18:49,711 --> 02:18:53,631
+If this was a primitive, such as int.
+
+965
+02:18:54,067 --> 02:18:57,128
+E is equal to 7, for example.
+
+966
+02:18:57,567 --> 02:19:02,487
+Now, we cannot write anything such as E dot something because it's a primitive.
+
+967
+02:19:03,227 --> 02:19:04,867
+It doesn't have any methods.
+
+968
+02:19:05,507 --> 02:19:08,007
+Only objects have their methods.
+
+969
+02:19:08,608 --> 02:19:14,987
+So, those are actual objects.
+
+970
+02:19:14,987 --> 02:19:18,247
+It has methods that we can call.
+
+971
+02:19:29,876 --> 02:19:39,796
+I guess I will not do any further demonstration because the real purpose is to show you that replication mechanism.
+
+972
+02:19:40,936 --> 02:19:42,056
+Now let's continue.
+
+973
+02:19:45,683 --> 02:19:48,144
+Ok, let's make a few demonstrations.
+
+974
+02:19:49,103 --> 02:19:49,703
+For example,
+
+975
+02:19:52,644 --> 02:19:57,144
+let's compare those two wrappers.
+
+976
+02:20:01,012 --> 02:20:11,852
+System.art.println, summer one, that's compared to that second function. And let's see the result.
+
+977
+02:20:12,512 --> 02:20:24,212
+Well, we are calling the compared method of the first one, which has values seven, and we give it the second one as a parameter.
+
+978
+02:20:25,139 --> 02:20:31,479
+The field value of the parameter is greater than the method recipient.
+
+979
+02:20:32,119 --> 02:20:37,299
+Therefore, the method recipient will return me a negative mouse.
+
+980
+02:20:37,759 --> 02:20:38,439
+That's it.
+
+981
+02:20:45,747 --> 02:20:48,007
+Ok, it has determined minus 1.
+
+982
+02:20:48,867 --> 02:20:52,027
+Because this one is smaller than the other one.
+
+983
+02:20:53,327 --> 02:20:55,987
+Let's change them.
+
+984
+02:20:55,987 --> 02:21:03,667
+Let's ask the second object about its comparison with the first object.
+
+985
+02:21:08,979 --> 02:21:11,379
+Now it's a positive one.
+
+986
+02:21:13,579 --> 02:21:17,500
+It doesn't matter if we enlarge both values.
+
+987
+02:21:18,459 --> 02:21:21,180
+At the end, the result will be the same.
+
+988
+02:21:22,860 --> 02:21:30,819
+However, if the values are equal, then we have zero returns.
+
+989
+02:21:31,419 --> 02:21:32,139
+And cancel.
+
+990
+02:21:33,971 --> 02:21:37,111
+This is how the compel to metal works.
+
+991
+02:21:43,283 --> 02:21:47,523
+Anything else? Okay, not for that integers.
+
+992
+02:21:50,403 --> 02:21:56,963
+Let's examine the string class 2, then we will be ending the lectures.
+
+993
+02:22:00,724 --> 02:22:01,724
+Okay.
+
+994
+02:22:02,844 --> 02:22:06,244
+We have the string class representing strings.
+
+995
+02:22:06,804 --> 02:22:08,203
+What are their methods?
+
+996
+02:22:08,203 --> 02:22:10,203
+For example, the length method.
+
+997
+02:22:10,203 --> 02:22:15,324
+Those are not static, so they are being sent to an object.
+
+998
+02:22:15,324 --> 02:22:20,724
+The length method returns the length of the string that this object presents.
+
+999
+02:22:20,724 --> 02:22:22,724
+It's an ancient integer number.
+
+1000
+02:22:23,347 --> 02:22:29,028
+It also has a compared to method too, similar to the integer version.
+
+1001
+02:22:29,868 --> 02:22:37,247
+But it's a little bit different and it takes the uppercase and lowercase into consideration too.
+
+1002
+02:22:37,811 --> 02:22:44,731
+Now, in that case, the comparison will be according to the dictionary ordering.
+
+1003
+02:22:45,332 --> 02:22:45,472
+Okay?
+
+1004
+02:22:46,132 --> 02:22:57,412
+If a word appears in the dictionary before that other string parameter, then the result will be a negative one.
+
+1005
+02:22:58,351 --> 02:23:04,492
+If those two strings are completely equal, including the case variation,
+
+1006
+02:23:04,979 --> 02:23:07,299
+This result will be zero.
+
+1007
+02:23:07,299 --> 02:23:12,659
+And otherwise, the result will be a positive number.
+
+1008
+02:23:13,363 --> 02:23:27,984
+If you want to compare those strings without taking case information into consideration, then we can use the compare to ignore case version of that method.
+
+1009
+02:23:27,984 --> 02:23:32,903
+For example, let's execute this example.
+
+1010
+02:23:38,131 --> 02:23:44,891
+Let's copy and paste it.
+
+1011
+02:23:46,891 --> 02:23:49,011
+Just copy the class name first.
+
+1012
+02:23:50,011 --> 02:23:55,211
+And then create the class with the copied name.
+
+1013
+02:23:57,492 --> 02:24:03,891
+Then don't copy the rest, just copy the body of the class.
+
+1014
+02:24:04,691 --> 02:24:05,851
+Copy from here.
+
+1015
+02:24:06,324 --> 02:24:08,584
+And paste from here.
+
+1016
+02:24:09,204 --> 02:24:14,283
+Now this indentation is off, but I don't have to correct it manually.
+
+1017
+02:24:15,044 --> 02:24:22,684
+I just select all code, Ctrl A, right click, source, correct indentation.
+
+1018
+02:24:22,684 --> 02:24:29,864
+And voila, you can see a good, better, correctly indented version of the code.
+
+1019
+02:24:31,123 --> 02:24:36,123
+Biliyorsunuz PowerPoint'te boşluklar, sekmeler, hizalama çalışma o kadar saçma ki.
+
+1020
+02:24:36,504 --> 02:24:38,963
+Tabii ki PowerPoint'e kod yazılmaz çünkü.
+
+1021
+02:24:39,404 --> 02:24:44,384
+Ama yazdığım kodu PowerPoint'te gösterirken de hizalar göstermem gerekiyor.
+
+1022
+02:24:44,664 --> 02:24:46,024
+O yüzden işte böyle durumlar var.
+
+1023
+02:24:46,283 --> 02:24:51,404
+Ama çok kolaylıkla yürütlemeyi ileri düzeltebiliyorsunuz.
+
+1024
+02:24:52,484 --> 02:24:53,783
+Now let's examine this one.
+
+1025
+02:24:54,384 --> 02:24:57,083
+We have two strings, A and B.
+
+1026
+02:24:58,324 --> 02:25:03,283
+I assign this string to the first one.
+
+1027
+02:25:04,004 --> 02:25:08,804
+Also, the other constructors duplicate as well.
+
+1028
+02:25:08,864 --> 02:25:10,344
+For example, I could write.
+
+1029
+02:25:18,100 --> 02:25:38,180
+Ah, okay, this is actually not duplicates, okay? Okay, I remember it wrong. This version of initialization of a string is still supported both by using constructors and a valid assignment. Those both mean the same.
+
+1030
+02:25:40,084 --> 02:25:43,304
+Ok, and the B is another one.
+
+1031
+02:25:43,644 --> 02:25:47,963
+And let's see what will happen when we write the result of this operation.
+
+1032
+02:25:48,435 --> 02:26:04,576
+First of all, it will begin comparing the first letters. Both are uppercase. So let's check which one comes first. A comes before T in the alphabet, in the dictionary.
+
+1033
+02:26:04,576 --> 02:26:16,435
+So the result will be a negative number because we are asking A to compare itself with B and A is before in the...
+
+1034
+02:26:16,435 --> 02:26:19,396
+Dictionary, so we will see a negative value.
+
+1035
+02:26:19,835 --> 02:26:20,495
+What's this?
+
+1036
+02:26:20,775 --> 02:26:22,396
+Let's run.
+
+1037
+02:26:24,355 --> 02:26:29,216
+This time, this is not minus 1, but minus 19.
+
+1038
+02:26:31,396 --> 02:26:34,376
+Let's check this one.
+
+1039
+02:26:39,891 --> 02:26:56,971
+I'll just, for example, what do we have? We have minus B. A is one letter before B. Maybe this is the case, for example. Come on.
+
+1040
+02:26:59,671 --> 02:27:06,011
+What's wrong? Aha, şey, tane, tümak as. Okay. Let's compare those.
+
+1041
+02:27:07,731 --> 02:27:09,572
+Ok, we have minus two.
+
+1042
+02:27:10,471 --> 02:27:15,211
+But what happens when I write the church characters?
+
+1043
+02:27:25,556 --> 02:27:29,936
+Now the offset is very large, minus 134.
+
+1044
+02:27:30,936 --> 02:27:37,556
+If I write, for example, the degmias, I will have minus 3.
+
+1045
+02:27:38,963 --> 02:27:41,283
+Çünkü A, B, C, D.
+
+1046
+02:27:41,523 --> 02:27:43,903
+According to English alphabet, it calculates.
+
+1047
+02:27:44,344 --> 02:27:53,224
+When I take Turkish or diacritic letters, special case letters, then the offset margin will be large.
+
+1048
+02:27:53,603 --> 02:27:57,984
+Therefore, please do not count on the value of that number.
+
+1049
+02:27:59,043 --> 02:28:01,684
+Just count on its signatures.
+
+1050
+02:28:02,403 --> 02:28:05,664
+A minus number, a positive number, or a zero.
+
+1051
+02:28:06,688 --> 02:28:09,968
+This is what I want to show you with this.
+
+1052
+02:28:11,948 --> 02:28:13,768
+Or, let's check this one.
+
+1053
+02:28:15,308 --> 02:28:19,608
+Let's write or in uppercases and or in lower cases.
+
+1054
+02:28:24,051 --> 02:28:37,991
+This time, I have a positive number because uppercase letters come before in the computer dictionary than the smallcase ones.
+
+1055
+02:28:37,991 --> 02:28:38,391
+Okay.
+
+1056
+02:28:39,592 --> 02:28:44,611
+And all of the extrudes go back to the ASCII sets.
+
+1057
+02:28:45,459 --> 02:29:05,840
+Aski'de bu var arkadaşlar. Önce büyük harf karakterler geçiyor Aski kümesinde. Sonra küçük harflar geçiyor. Ondan sonra geçerken de ABCD diye İngiliz harf ürüne geçiyor. Ve kritik harfleri Aski'de kümesinin çok daha ötelerine diğerleri açıyorlar. Ondan sonra onun üst kümeleri olan UTFE şunda bunda da öyle kalıyor.
+
+1058
+02:29:08,275 --> 02:29:12,695
+Sadece İngilizce kelimeleri düşündüğünüzde, İngilizce hafifleri düşündüğünüzde.
+
+1059
+02:29:12,995 --> 02:29:16,815
+Aslında BBGB'de C'de örnekler yaparken filan gördük.
+
+1060
+02:29:17,155 --> 02:29:23,495
+Aslıyoruz, karakterin değerine o fizik ekleyerek veya çıkartarak, büyük harf veya küçük harf ile çevirebiyorduk filan falan.
+
+1061
+02:29:23,815 --> 02:29:29,455
+Hani cevap da öyle bir şey yok ama onu da hani to upper case, to lower case metotları var.
+
+1062
+02:29:29,655 --> 02:29:30,835
+Onları kullanarak yapacağız.
+
+1063
+02:29:31,876 --> 02:29:33,975
+Bu bir zayıflık değildir bence.
+
+1064
+02:29:33,975 --> 02:29:35,755
+Bu bir metot kullanarak yapmak.
+
+1065
+02:29:36,275 --> 02:29:39,295
+mantıklı anlaşıldız diye demek istiyorum.
+
+1066
+02:29:41,755 --> 02:29:43,195
+We have a few more minutes.
+
+1067
+02:29:43,576 --> 02:29:44,255
+Let's continue.
+
+1068
+02:29:46,115 --> 02:29:48,396
+Some other methods of the class.
+
+1069
+02:29:51,396 --> 02:29:52,495
+Equals method.
+
+1070
+02:29:53,536 --> 02:29:59,695
+Well, if you are not interested in the relative comparism,
+
+1071
+02:30:00,000 --> 02:30:03,340
+Which one is greater than or smaller than?
+
+1072
+02:30:03,639 --> 02:30:10,000
+If you're only interested in equals or not equals information, then you can use the equals method.
+
+1073
+02:30:10,939 --> 02:30:18,159
+You can call the equals method of a string and give it another string as a parameter.
+
+1074
+02:30:18,688 --> 02:30:38,527
+If the string, the object whose method is being called is equal to that other string, then it will return true. Otherwise, it will return false. But it will again take case sensitivity in the account.
+
+1075
+02:30:39,028 --> 02:30:46,488
+If you want to make this comparison without case sensitivity, then you can use the equals-igmore-case method.
+
+1076
+02:30:47,488 --> 02:30:49,427
+Otherwise, it will work the same.
+
+1077
+02:30:50,847 --> 02:31:01,148
+The third method is if you want to search, if you want to determine whether a specific string resides within another string,
+
+1078
+02:31:01,504 --> 02:31:07,104
+Then you can ask that another string and call its contains method.
+
+1079
+02:31:07,564 --> 02:31:09,924
+Give it a parameter as another string.
+
+1080
+02:31:10,224 --> 02:31:15,264
+Then it will check itself and search for that parameter string.
+
+1081
+02:31:15,844 --> 02:31:20,123
+If it finds that parameter string within itself, it will return true.
+
+1082
+02:31:20,764 --> 02:31:23,064
+Other case, it will return false.
+
+1083
+02:31:23,584 --> 02:31:26,224
+And again, this is also case sensitive.
+
+1084
+02:31:28,979 --> 02:31:41,079
+I guess it doesn't have its in-case insensitive version. Let's check it. JavaLang package. The string class.
+
+1085
+02:31:45,079 --> 02:31:54,099
+Neither contains. We have contains, but we don't have contains in our case version. Okay.
+
+1086
+02:31:56,659 --> 02:31:58,500
+Ok, let's continue.
+
+1087
+02:31:59,940 --> 02:32:04,659
+We have the two uppercase and the two lowercase methods.
+
+1088
+02:32:05,440 --> 02:32:11,440
+However, they don't actually change the value of a string.
+
+1089
+02:32:12,020 --> 02:32:25,500
+They only return a string uppercase or lowercase representation back without changing the value of the object, which is the recipient of the method.
+
+1090
+02:32:26,560 --> 02:32:35,619
+Therefore, the state of a string object is not changed after following those methods.
+
+1091
+02:32:36,180 --> 02:32:40,880
+Only its appropriate versions are returned back.
+
+1092
+02:32:42,000 --> 02:32:45,800
+The state of that object is not perfect.
+
+1093
+02:32:46,680 --> 02:32:54,800
+Considering this information, let's try to examine the output of the code in the next slide.
+
+1094
+02:32:57,200 --> 02:33:01,920
+Okay, we don't have answers here. Let's do it together.
+
+1095
+02:33:04,755 --> 02:33:09,036
+Sonuçları şuraya yazalım.
+
+1096
+02:33:09,975 --> 02:33:10,255
+Okay.
+
+1097
+02:33:11,495 --> 02:33:16,056
+We have string A, İstanbul, and string B, UMLNs.
+
+1098
+02:33:16,135 --> 02:33:16,455
+Okay.
+
+1099
+02:33:17,255 --> 02:33:20,115
+Let's check whether A contains B.
+
+1100
+02:33:20,695 --> 02:33:21,015
+Okay.
+
+1101
+02:33:21,175 --> 02:33:24,675
+There is no UMLNs in a string, in a string.
+
+1102
+02:33:24,675 --> 02:33:30,775
+Therefore, the first output will be false.
+
+1103
+02:33:32,115 --> 02:33:33,995
+Let's just write, okay.
+
+1104
+02:33:34,596 --> 02:33:38,015
+Use the text and write here.
+
+1105
+02:33:40,376 --> 02:33:44,115
+For the first output and the false.
+
+1106
+02:33:44,655 --> 02:33:49,195
+How can I set the font size?
+
+1107
+02:33:49,815 --> 02:33:50,456
+I don't know.
+
+1108
+02:33:51,175 --> 02:33:52,615
+Okay, not much important.
+
+1109
+02:33:53,459 --> 02:33:55,099
+First one should be false.
+
+1110
+02:33:55,539 --> 02:33:55,739
+Okay.
+
+1111
+02:33:56,520 --> 02:34:01,200
+Then I assign turn to second string or small case.
+
+1112
+02:34:01,200 --> 02:34:05,439
+And now let's check again if A contains B.
+
+1113
+02:34:05,939 --> 02:34:06,879
+V is turn.
+
+1114
+02:34:07,259 --> 02:34:07,459
+Okay.
+
+1115
+02:34:07,559 --> 02:34:08,979
+Istanbul has turn in it.
+
+1116
+02:34:09,279 --> 02:34:13,279
+So the second output should be true.
+
+1117
+02:34:18,227 --> 02:34:22,807
+And then we issue the statement b to uppercase.
+
+1118
+02:34:23,347 --> 02:34:25,647
+Now, the state will not be changed.
+
+1119
+02:34:26,087 --> 02:34:33,288
+For, in that case, the value of strb is still smaller case time.
+
+1120
+02:34:33,727 --> 02:34:33,807
+Okay?
+
+1121
+02:34:34,427 --> 02:34:40,627
+Therefore, the next print run output will be small case time.
+
+1122
+02:34:42,147 --> 02:34:42,307
+Okay.
+
+1123
+02:34:42,867 --> 02:34:44,027
+Small case.
+
+1124
+02:34:44,448 --> 02:34:44,608
+Okay?
+
+1125
+02:34:45,075 --> 02:34:57,175
+And in that case, when we ask A if it contains B, then it is still small case. Therefore, it will write true.
+
+1126
+02:34:58,815 --> 02:35:10,235
+However, after using that statement, strb to uppercase and assign the returned value to strb, now strb is uppercase time.
+
+1127
+02:35:12,435 --> 02:35:19,315
+Therefore, when we ask A if it contains B, then the result will be false.
+
+1128
+02:35:21,115 --> 02:35:21,275
+Okay.
+
+1129
+02:35:22,835 --> 02:35:23,595
+I should...
+
+1130
+02:35:23,595 --> 02:35:24,335
+I'm sorry.
+
+1131
+02:35:24,948 --> 02:35:27,348
+ArrayList, by the way, I have a question.
+
+1132
+02:35:27,727 --> 02:35:30,028
+Highlight the world within, then you can change font.
+
+1133
+02:35:30,208 --> 02:35:30,368
+Okay.
+
+1134
+02:35:30,988 --> 02:35:32,608
+But this is unconvenient.
+
+1135
+02:35:33,028 --> 02:35:39,208
+First, I want to change my font to 8, for example, then continue with it.
+
+1136
+02:35:39,208 --> 02:35:41,608
+For example, let me see.
+
+1137
+02:35:44,819 --> 02:35:45,720
+Etkin'i de sordum.
+
+1138
+02:35:48,860 --> 02:35:52,720
+Yazdım. Ondan sonra, ondan sonra,
+
+1139
+02:35:52,720 --> 02:35:56,159
+ah, şimdi boş izleyim dediğim,
+
+1140
+02:35:56,239 --> 02:35:57,739
+etkin ekledim, etkin ekledim.
+
+1141
+02:35:57,739 --> 02:35:59,239
+Neyse.
+
+1142
+02:36:00,404 --> 02:36:21,904
+Tamam. Okey. Sonra ders kapatınca sizin önlerinizle bakalım. Okey. Şimdi bir çalıştıralım bakalım şimdi. Şunu kapa. Gel. Eklitçisi kopyalayalım. Stilbox 02. Class. Ondan sonra şimdi PowerPoint'ten sınıf adımı al.
+
+1143
+02:36:22,708 --> 02:36:26,708
+Bu kokuyalığa, bundan sonra şuraya yapıştı.
+
+1144
+02:36:26,708 --> 02:36:31,708
+Ondan sonra, boşlukta yapıştırdı tabii, boşluk kaldı.
+
+1145
+02:36:31,708 --> 02:36:35,708
+Ondan sonra, yine PowerPoint'te dön.
+
+1146
+02:36:35,708 --> 02:36:41,708
+Ondan sonra, gövdeyi, sınıf gövdesini al. Sadece mainleti var orada.
+
+1147
+02:36:41,708 --> 02:36:45,708
+Ondan sonra bunu PowerPoint'te yapıştırız.
+
+1148
+02:36:45,708 --> 02:36:48,708
+Ondan sonra, source, collect, inheritance.
+
+1149
+02:36:49,940 --> 02:36:54,299
+Son acıramada çalıştıralım bakalım, bir seyrede mi çalıştıralım?
+
+1150
+02:36:56,860 --> 02:36:58,619
+Ok, ben lükket daha tut.
+
+1151
+02:36:58,979 --> 02:37:01,000
+False, true, tongue.
+
+1152
+02:37:01,459 --> 02:37:03,459
+True, tongue.
+
+1153
+02:37:03,920 --> 02:37:05,020
+What is the rest?
+
+1154
+02:37:05,716 --> 02:37:08,175
+I have forgotten to mention this.
+
+1155
+02:37:08,456 --> 02:37:15,655
+Now it's capital case town and Istanbul is a small case except the first letter.
+
+1156
+02:37:15,876 --> 02:37:19,515
+So capital case town is not within Istanbul.
+
+1157
+02:37:19,716 --> 02:37:22,335
+So the final output is false.
+
+1158
+02:37:23,335 --> 02:37:24,876
+Bununla yubareti arkadaşlar.
+
+1159
+02:37:26,804 --> 02:37:35,804
+Bugünlükte bu kadar diyeceğim. Fakat sorularımız varsa elbette ki yanıtlarım. Asla çekilmem. Laktımız var.
+
+1160
+02:37:36,804 --> 02:37:45,804
+Şimdi şu çizimleri alalım. Çizimleri temizleyelim. Sonra şunu kapatalım. Sorularımız varsa yanıtlarım.
+
+1161
+02:37:54,739 --> 02:37:58,340
+Burada soru düşünürken, ben de kaldığım yeri işaretliyorum.
+
+1162
+02:38:00,139 --> 02:38:03,340
+44 dahil yaptık, 45'e yaptık peki.
+
+1163
+02:38:05,039 --> 02:38:06,039
+9.
+
+1164
+02:38:08,939 --> 02:38:10,039
+10.
+
+1165
+02:38:10,039 --> 02:38:11,139
+Yeniden son açımlar.
+
+1166
+02:38:12,039 --> 02:38:12,840
+Şimdi,
+
+1167
+02:38:12,840 --> 02:38:13,539
+eee...
+
+1168
+02:38:13,711 --> 02:38:20,331
+Uygun olmaları ne yapacağız, ne edeceğiz? Bu konuda lütfen OBS hesabınıza girin, bakın, meylinizi de kontrol edin.
+
+1169
+02:38:20,691 --> 02:38:28,051
+Hoca olarak bir araya gelelim. Hani temel düşündüğünüz ilk haftalarda uygulama yapmak, sonraki haftalarda lab yapmak şeklindeydi.
+
+1170
+02:38:28,531 --> 02:38:35,592
+Bakın nereye kadar geldik, ne yapabileceğiz, ne edeceğiz? Bunları alamızda tartışacağız. Ondan sonra sizlere bilgilendireceğiz arkadaşlar.
+
+1171
+02:38:41,711 --> 02:38:54,631
+lab sessions, we will be first as the teachers will come up, instructors will come up together and we will inform you about the details.
+
+1172
+02:38:54,631 --> 02:38:56,971
+This is the way the environment has.
+
+1173
+02:38:58,111 --> 02:38:58,371
+Right.
+
+1174
+02:39:00,871 --> 02:39:04,471
+Buyrun, sorusen arkadaşım varsa sorabilderim.
+
+1175
+02:39:07,331 --> 02:39:08,671
+Çekhte bir şey gör.
+
+1176
+02:39:14,484 --> 02:39:29,204
+Peki. Yani kolay gelebilir belki ama önemli konular bu noktada bir nesnenin kendisi başka parametreye karşılaştırılması, yani bunlar object, inheritance, mekanizmanın işleyişiyle ilgili iyi örnekler.
+
+1177
+02:39:29,204 --> 02:39:39,044
+Bu tip olaylarda ne, sistemi nasıl davranacağını öngörebilmek nesne yönelimi iyi anlamayı gerektiriyor.
+
+1178
+02:39:39,364 --> 02:39:42,424
+Çünkü bir nesneye soruyorsunuz bir soruyu müdürlük.
+
+1179
+02:39:42,484 --> 02:39:59,024
+Başka bir nesne veriyorsunuz. O nesne karşılaştı diyorsunuz. Ne, ne, ne karşılaştıracak? Birisi belli parametro olarak vermişiz. O ikisini kendisiyle karşılaştıracak tabii ki. Çünkü bir nesne aksi birisi medya süreci kendi verisiyle çalışıyor dedik. Kendi verisini yapacak.
+
+1180
+02:40:00,000 --> 02:40:10,119
+Kabinesine verilmiş. Onun da public üyelerine ama kendisiyle aynı sınıftansa hem public hem de public üyelerine bakabilecek ve onunla da işlem yapabilecek hale geliyor.
+
+1181
+02:40:10,119 --> 02:40:20,779
+Yani bu hata açıkçalarımızın aslında uygulandılarını da bir bakıma görmüş oluyoruz. Bunları görürken Atleta Köpleden bu birazdan.
+
+1182
+02:40:22,004 --> 02:40:30,984
+Evet, peki. Teşekkür ederim arkadaşlar. Hafta kaldığımız yerden görüşmek üzere. Sağlıcakla kalın. Şehrinlik arasında.
+
+1183
+02:40:31,764 --> 02:40:34,684
+Aynı şey. Duydularım. O zaman kalın.

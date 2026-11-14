@@ -1,0 +1,3063 @@
+1
+00:00:09,683 --> 00:00:17,623
+Evet, başlarımız yavaş yavaş. Önce ortamı hazırlayalım. Ondan sonra başlarız.
+
+2
+00:00:41,460 --> 00:00:42,700
+Şimdi bu neşt.
+
+3
+00:00:43,420 --> 00:00:45,835
+Neşt.
+
+4
+00:00:50,899 --> 00:00:54,060
+166 unit testing. Oradan devam edeceğiz.
+
+5
+00:00:54,159 --> 00:00:55,420
+Şimdi testinde yapmışız.
+
+6
+00:01:15,828 --> 00:01:20,528
+Dettus takşı olarak V yapılarını, Jenelik sınıflarda V yapılarını kullanıyoruz.
+
+7
+00:01:21,668 --> 00:01:23,448
+Uyumudayız. Buradan başlayacağız.
+
+8
+00:01:28,448 --> 00:01:29,927
+Yandan şunu açalım.
+
+9
+00:01:46,036 --> 00:01:46,731
+Evet.
+
+10
+00:01:53,364 --> 00:01:59,224
+Evet, işe başlayacağız dedik. Bugün toplantısı vardı. Oraya gitmek, yermek derken.
+
+11
+00:02:02,963 --> 00:02:09,623
+Normalden bir saat geç başladığınız için çok da beklemeye gerek yok diyeceğim ama bari beş geçir diyelim.
+
+12
+00:02:10,824 --> 00:02:13,384
+Bir dakika bir daha bekleyelim ondan sonra başlayalım.
+
+13
+00:02:15,944 --> 00:02:18,243
+Ben de sizden bir de şahit güzel diyorum.
+
+14
+00:03:57,204 --> 00:03:59,204
+Ok, I guess we may begin.
+
+15
+00:04:00,963 --> 00:04:04,084
+There is no need to wait for much more.
+
+16
+00:04:08,852 --> 00:04:21,651
+Okay. This topic is not too hot but you need to keep few details in your mind. Otherwise, this is not a hard topic.
+
+17
+00:04:23,451 --> 00:04:28,252
+Introduction to generic classes and data structures in Java.
+
+18
+00:04:29,451 --> 00:04:34,252
+Okay. First of all, what does generic programming mean?
+
+19
+00:04:34,771 --> 00:04:43,491
+Generic Programming gives us a way to write code that can be used for objects of different types.
+
+20
+00:04:45,231 --> 00:04:52,371
+Java supports that, C-Shart supports that. Many of the recent languages support that.
+
+21
+00:04:52,755 --> 00:04:55,415
+Either objection-oriented or not.
+
+22
+00:04:55,875 --> 00:05:09,175
+Because generic classes or in non-object orientation, generic structs, for example, are really useful and they are a real need.
+
+23
+00:05:10,555 --> 00:05:12,495
+What will we do in this chapter?
+
+24
+00:05:12,995 --> 00:05:18,775
+We will make you familiar with the usage of generic classes in this topic.
+
+25
+00:05:19,216 --> 00:05:44,836
+If you wish, you can write your own generic classes. However, in this lecture, we will be learning how to use, define and use readily available generic classes. And data structures are very fine examples of both.
+
+26
+00:05:45,427 --> 00:05:52,307
+Demonstration of the need and usage of generic classes.
+
+27
+00:05:54,307 --> 00:06:04,788
+Or we will study the most basic data structures such as linked disks and H-tables.
+
+28
+00:06:05,587 --> 00:06:11,028
+There are different classes that model these data structures.
+
+29
+00:06:11,124 --> 00:06:21,783
+They all have their specific flows and codes, their specific application areas, we will cover them each.
+
+30
+00:06:23,903 --> 00:06:34,304
+You know the details of these data structures from the namesake codes, the data structures codes.
+
+31
+00:06:34,704 --> 00:06:37,704
+We will not rewrite those data structures.
+
+32
+00:06:37,704 --> 00:06:48,704
+We will be using them by importing the relevant classes in the Java YouTube library.
+
+33
+00:06:48,704 --> 00:06:58,704
+After this lecture, if you wish, you can refer to any Java book in order to learn how to write your own generic classes.
+
+34
+00:07:00,019 --> 00:07:02,959
+Doing this is not the topic of this course.
+
+35
+00:07:03,379 --> 00:07:07,039
+And of course, we will not teach you about data structures.
+
+36
+00:07:07,679 --> 00:07:10,919
+This is the duty of the namesake codes.
+
+37
+00:07:20,148 --> 00:07:28,208
+But in order to give a brief summary, a data structure is a scheme for organizing data in the memory.
+
+38
+00:07:29,508 --> 00:07:44,008
+Well, actually, the correct representation, a correct organization of data, according to the needs of the problem to be solved, can either make your day or break it.
+
+39
+00:07:46,004 --> 00:07:51,804
+Different data structures are optimized for different tasks.
+
+40
+00:07:52,424 --> 00:08:01,324
+And you will consider what the majority of your requirements are in a program.
+
+41
+00:08:02,044 --> 00:08:08,403
+And then you need to choose the appropriate data structures considering this information.
+
+42
+00:08:09,363 --> 00:08:36,604
+In fact, any data representation is a data structure. Take an integer, for example. It's four bytes wide, but you can use these four bytes in different ways. For example, where to hide the most significant bytes and where to hide the least significant bytes.
+
+43
+00:08:37,203 --> 00:08:42,663
+You can make any order for the four bytes of integers.
+
+44
+00:08:43,343 --> 00:08:52,163
+Either most significant byte first at the leftmost and least significant byte rightmost.
+
+45
+00:08:52,163 --> 00:08:54,543
+Or the exact opposite.
+
+46
+00:08:55,663 --> 00:09:01,083
+Or half of two bytes, two most significant bytes.
+
+47
+00:09:02,224 --> 00:09:07,304
+On the right end to list significant bytes on the left.
+
+48
+00:09:07,524 --> 00:09:09,684
+If you wish you can also do that.
+
+49
+00:09:10,384 --> 00:09:14,044
+Of course, that will depend on your computer architecture.
+
+50
+00:09:15,444 --> 00:09:15,704
+Okay.
+
+51
+00:09:17,084 --> 00:09:19,663
+Let's focus on our topic now.
+
+52
+00:09:21,268 --> 00:09:38,528
+An actual data structure that we need to use is an organization for a collection of data items, not just one information, but for a collection of data, multiple data items.
+
+53
+00:09:41,427 --> 00:09:49,347
+You have not data structures such as arrays, lists, stacks, queues, peeps, trees, graphs.
+
+54
+00:09:50,087 --> 00:10:01,768
+You can find there and multiple implementations of any of those data structures and ones that you don't know yet.
+
+55
+00:10:02,807 --> 00:10:05,344
+For example, there are different...
+
+56
+00:10:05,344 --> 00:10:12,104
+Kinds of tree structures in order to construct an index of a database table, for example.
+
+57
+00:10:12,104 --> 00:10:15,784
+Utkodia knows their details very well.
+
+58
+00:10:15,784 --> 00:10:20,264
+If you wish, you can search for them too.
+
+59
+00:10:23,264 --> 00:10:30,384
+But during this course, we will study linked lists and hash tables.
+
+60
+00:10:30,384 --> 00:10:32,703
+First, linked lists.
+
+61
+00:10:33,172 --> 00:10:44,572
+An Ingrid List is a collection, and actually a linear collection, of self-referential class objects, and each of them are called a node.
+
+62
+00:10:46,451 --> 00:10:56,572
+These nodes are connected to each other by point of mix, just like as a...
+
+63
+00:10:56,591 --> 00:11:01,711
+Fair bit, not Tespi, fair bit, Gua, Bonjour, Tespi.
+
+64
+00:11:05,031 --> 00:11:11,591
+The first note is specifically given a name, this is the head note.
+
+65
+00:11:12,591 --> 00:11:16,591
+And the last note is given the name, the tail note.
+
+66
+00:11:17,524 --> 00:11:24,744
+At least you must keep a reference to the head node in all times.
+
+67
+00:11:25,624 --> 00:11:32,943
+You don't need to keep hold of the last node because the last node will not refer to any other node.
+
+68
+00:11:33,384 --> 00:11:37,203
+For that you can understand that there are no data there.
+
+69
+00:11:38,264 --> 00:11:41,803
+But if you, how can I say?
+
+70
+00:11:42,292 --> 00:11:55,072
+If you lose the head note, you cannot ever go back if that link list is linked one way only.
+
+71
+00:11:55,923 --> 00:12:05,584
+If it's linked two ways, then you can, of course, reach to the head, but mostly in order to spare memory.
+
+72
+00:12:06,903 --> 00:12:14,564
+And if we don't meet such an explicit requirement, we must use one-way linked list.
+
+73
+00:12:18,995 --> 00:12:25,155
+You can obtain iterators to a collection, to a data structure.
+
+74
+00:12:28,735 --> 00:12:39,075
+Instead of using the head pointer, we will use that iterator pointer in order to traverse in the data structure.
+
+75
+00:12:41,652 --> 00:13:04,892
+It's not that much hard. In fact, after version 1.5, JDK gives you the for-each loop and you can put any data structure as an input to a for-each loop and you can traverse the elements very easily.
+
+76
+00:13:05,812 --> 00:13:11,692
+But if the data structure supports multiple kinds of traversal,
+
+77
+00:13:12,980 --> 00:13:30,260
+Then, in order to make use of these different kinds of addresses, you need to dive deeper in the class library, in the data structure library of the Java programming language.
+
+78
+00:13:30,880 --> 00:13:35,200
+Actually, there is an entire book devoted to that topic.
+
+79
+00:13:35,583 --> 00:13:40,803
+Only to master the details of the data structures defined in Java.
+
+80
+00:13:41,643 --> 00:13:44,983
+That already come readily available to Java.
+
+81
+00:13:45,803 --> 00:13:47,363
+Java Collections Framework.
+
+82
+00:13:49,343 --> 00:13:52,943
+And I know such a book which is in Turkish.
+
+83
+00:13:53,563 --> 00:13:56,863
+I don't remember the exact name yet, but if you wish you can find it.
+
+84
+00:13:57,343 --> 00:14:00,483
+And there should be many more in English language.
+
+85
+00:14:06,740 --> 00:14:10,939
+This is an example of a linked list holding integer objects.
+
+86
+00:14:12,179 --> 00:14:18,600
+You see there are integer numbers here, but please keep in mind that these are not primitives.
+
+87
+00:14:18,600 --> 00:14:25,659
+They are integer objects, wrappers of the primitive type int integer.
+
+88
+00:14:27,339 --> 00:14:32,600
+The items you see, the nodes you see, the...
+
+89
+00:14:33,844 --> 00:14:50,564
+The first part of a node is an integer object, an element, and the second part of a node is a pointer to the next node.
+
+90
+00:14:51,344 --> 00:14:59,903
+This one is the head node, and every node shows one other node, and finally we have the third node here.
+
+91
+00:15:00,659 --> 00:15:06,480
+The Therian North's next pointer leads to nowhere, which means it is null.
+
+92
+00:15:07,419 --> 00:15:09,120
+Therefore, this is the end of the list.
+
+93
+00:15:13,940 --> 00:15:18,560
+There are many advantages of UMLNesne Yönelik over Alex.
+
+94
+00:15:23,091 --> 00:15:28,512
+First of it, enlarging the list is very easy.
+
+95
+00:15:29,172 --> 00:15:30,912
+It doesn't cost anything to us.
+
+96
+00:15:32,131 --> 00:15:38,032
+We only need to allocate another node,
+
+97
+00:15:40,152 --> 00:15:44,491
+enter some information to that node,
+
+98
+00:15:44,491 --> 00:15:45,491
+and...
+
+99
+00:15:46,227 --> 00:15:52,627
+Point, the next pointer of the tail node to that new node.
+
+100
+00:15:53,267 --> 00:16:01,027
+And now our tail node will be our readily created node.
+
+101
+00:16:02,187 --> 00:16:03,327
+See, that's very easy.
+
+102
+00:16:03,947 --> 00:16:11,627
+But if you want to enlarge an array, first you need to create a new larger array.
+
+103
+00:16:12,563 --> 00:16:18,124
+Then you should manually copy every value in the old array to the new array.
+
+104
+00:16:19,203 --> 00:16:26,124
+And then make a pointer change of the old pointer to the new array.
+
+105
+00:16:28,223 --> 00:16:33,923
+And this is a lot of work.
+
+106
+00:16:36,103 --> 00:16:39,223
+Every time you need to enlarge an array, you have to do this.
+
+107
+00:16:40,019 --> 00:16:48,200
+However, enlarging a link at least is extremely easy.
+
+108
+00:16:54,644 --> 00:17:01,304
+Also, it's very easy to insert an element or remove an element to any position.
+
+109
+00:17:01,804 --> 00:17:05,684
+It's very, very easy in the linked list.
+
+110
+00:17:06,224 --> 00:17:07,963
+Let's turn back to the example.
+
+111
+00:17:08,624 --> 00:17:13,744
+For example, we want to remove this node, for example.
+
+112
+00:17:15,043 --> 00:17:15,983
+What should we do?
+
+113
+00:17:20,544 --> 00:17:25,184
+The previous node to be, of the node to be deleted.
+
+114
+00:17:26,144 --> 00:17:28,704
+In this example, this.
+
+115
+00:17:29,504 --> 00:17:38,804
+Then, let's modify the next pointer of the node before to the next pointer of the node to be deleted.
+
+116
+00:17:41,564 --> 00:17:42,204
+And.
+
+117
+00:17:42,644 --> 00:17:57,503
+After we do this, the garbage collector of the Java Ritchie machine marks this node, this entire node, as available for donation.
+
+118
+00:17:58,824 --> 00:17:59,744
+That's just it.
+
+119
+00:18:00,163 --> 00:18:00,683
+Very easy.
+
+120
+00:18:01,983 --> 00:18:07,744
+Or if you want to insert a node, for example,
+
+121
+00:18:08,243 --> 00:18:11,003
+So here, for example.
+
+122
+00:18:14,740 --> 00:18:40,179
+You just find the node where this new one is to be inserted after. Break this connection. Let's do existing node to show our new node. And the next point of the new node will show the next node of its previous one. So that's just it.
+
+123
+00:18:41,011 --> 00:18:46,911
+But those operations are very, very hard in arrays.
+
+124
+00:18:47,612 --> 00:18:55,031
+In order to remove an element, you must shift all the other elements to the right, one position left.
+
+125
+00:18:56,172 --> 00:19:01,091
+And you shouldn't forget to increase the element size as well.
+
+126
+00:19:01,091 --> 00:19:02,091
+Or...
+
+127
+00:19:03,827 --> 00:19:11,007
+Insertion pedagogues also enlarging the array, which is already hard that we have already talked about.
+
+128
+00:19:11,007 --> 00:19:17,927
+So these are very important advantages of linkability.
+
+129
+00:19:19,107 --> 00:19:25,728
+Also, there are some sorting algorithms which work much faster on linkability.
+
+130
+00:19:26,900 --> 00:19:31,280
+There is only one disadvantage of an inkubus.
+
+131
+00:19:31,860 --> 00:19:37,960
+When you consider arrays, the only advantage of an array is direct access.
+
+132
+00:19:38,320 --> 00:19:44,960
+You can access any index position in an array directly.
+
+133
+00:19:45,683 --> 00:20:01,403
+However, in order to reach, for example, the fourth element in that list, you must begin from the head and follow four next pointers.
+
+134
+00:20:01,403 --> 00:20:04,923
+You cannot access this fault node directly.
+
+135
+00:20:07,683 --> 00:20:11,283
+The arrays only have this advantage.
+
+136
+00:20:17,683 --> 00:20:21,003
+There are different types of linked lists.
+
+137
+00:20:23,003 --> 00:20:31,643
+The one that we have given as an example is a single linked list.
+
+138
+00:20:33,244 --> 00:20:38,284
+If you wish, you can also keep the backwards pointers too.
+
+139
+00:20:38,884 --> 00:20:42,643
+Then of course every node must have another...
+
+140
+00:20:46,099 --> 00:20:48,419
+Pointers, the previous pointers.
+
+141
+00:20:48,419 --> 00:20:54,099
+This one will point to here.
+
+142
+00:20:54,680 --> 00:20:59,619
+But this, the head node, the previous pointer of the head node should be null.
+
+143
+00:21:02,019 --> 00:21:03,740
+I will not draw all the arrows.
+
+144
+00:21:04,619 --> 00:21:06,720
+This is W, at least.
+
+145
+00:21:07,579 --> 00:21:10,720
+If you wish, a list can be circular too.
+
+146
+00:21:11,440 --> 00:21:12,200
+In that case,
+
+147
+00:21:12,852 --> 00:21:34,712
+Arkadaşlar, this part here will not be null, but it will show, for example, the head node previous pointer will show us the tail node, and the next node of the tail node will show us the head node.
+
+148
+00:21:34,712 --> 00:21:38,532
+In this case, this is double circular link.
+
+149
+00:21:43,892 --> 00:21:51,471
+In our course, we will stretch one-way linked non-circular linkages.
+
+150
+00:21:55,923 --> 00:22:02,224
+How can you define and use such generic data structures?
+
+151
+00:22:06,612 --> 00:22:16,932
+Arkadaşlar, previously, in the previous versions of Java, we didn't have any generic classes.
+
+152
+00:22:18,292 --> 00:22:24,372
+Arkadaşlar, the only type we had for an list implementations ArrayList.
+
+153
+00:22:25,932 --> 00:22:31,772
+Arkadaşlar, that ArrayList kept object instances.
+
+154
+00:22:32,064 --> 00:22:38,244
+Remember the cosmic superclass of Java, it's the class object, the type object.
+
+155
+00:22:39,224 --> 00:22:48,444
+As this is a cosmic superclass, every class that you write is in fact, it extends this object class.
+
+156
+00:22:49,204 --> 00:22:55,284
+Therefore, in a data structure which is supposed to hold object instances,
+
+157
+00:22:56,084 --> 00:23:00,604
+You can put any type of instances in that data structure.
+
+158
+00:23:01,604 --> 00:23:13,084
+However, you should do typecasting in order to access the specific methods of those types.
+
+159
+00:23:13,864 --> 00:23:19,324
+We will cover typecasting soon, not now, soon.
+
+160
+00:23:19,796 --> 00:23:23,976
+But it's not a pretty thing to do.
+
+161
+00:23:26,916 --> 00:23:31,316
+Therefore, generic programming has been proposed.
+
+162
+00:23:34,656 --> 00:23:40,136
+It's not specifically created with Java.
+
+163
+00:23:40,276 --> 00:23:42,336
+It's much more older than that.
+
+164
+00:23:42,771 --> 00:23:48,471
+For example, the C++ language had template classes.
+
+165
+00:23:49,131 --> 00:23:54,451
+Those are pretty much analogous to the generic classes of Java and C++.
+
+166
+00:23:55,211 --> 00:23:57,631
+Why do we need a generic class?
+
+167
+00:23:59,331 --> 00:24:04,711
+Remember the data structure course that you have taken.
+
+168
+00:24:05,491 --> 00:24:21,832
+In order to define a data structure for a specific type, for example, let's assume that you have written some linked list or obtained containing int, for example, integers.
+
+169
+00:24:22,491 --> 00:24:28,791
+What should you do if you need to work with not integer values but real values?
+
+170
+00:24:29,572 --> 00:24:32,832
+You should use copy and paste programming.
+
+171
+00:24:33,428 --> 00:24:59,508
+The data structure logic is the same. Only the type of the data node will be different. However, you need to code the entire structures and functions again. And consider object orientation where you can code many different types of classes.
+
+172
+00:25:00,019 --> 00:25:14,220
+Should you need to code that many number of different data structures, it's very, how do you say, cumbersome, unlawy, it's a headache, nightmare.
+
+173
+00:25:16,799 --> 00:25:26,879
+However, if you have a way to define the application logic independent of the type of the data node,
+
+174
+00:25:27,827 --> 00:25:32,207
+Then this will lead us to generic programming.
+
+175
+00:25:35,867 --> 00:25:47,647
+For example, let's assume that we need to create an ArrayList where some person objects, person instances will be saved.
+
+176
+00:25:49,027 --> 00:25:54,647
+We use the less than and greater than bracket signs.
+
+177
+00:25:56,115 --> 00:26:06,976
+First, we use the data structure name and between those records or hex if you wish, we write the class name.
+
+178
+00:26:08,316 --> 00:26:18,436
+This type of representation shows us this type is an ArrayList where some person objects will be kept in.
+
+179
+00:26:19,436 --> 00:26:22,395
+And I named this as ListedList.
+
+180
+00:26:23,124 --> 00:26:25,044
+This is just the definition.
+
+181
+00:26:25,923 --> 00:26:30,943
+We need to initialize every data structure.
+
+182
+00:26:31,544 --> 00:26:37,364
+Just as we initialize an array, we need to initialize a data structure.
+
+183
+00:26:38,403 --> 00:26:41,864
+The default constructor will suffice for that method.
+
+184
+00:26:42,324 --> 00:26:48,124
+We still use the new keyword and write the constructor name.
+
+185
+00:26:48,544 --> 00:26:52,163
+Remember that constructor name is the same as the class name.
+
+186
+00:26:53,003 --> 00:27:05,844
+When considering generic classes, both the structure name and the element name, which is person, those two together become the class name.
+
+187
+00:27:06,259 --> 00:27:12,200
+Therefore, the constructor name is the class name, same as class name.
+
+188
+00:27:12,559 --> 00:27:16,940
+Therefore, we should use such initialization.
+
+189
+00:27:16,940 --> 00:27:21,480
+And the default constructor call will be sufficient.
+
+190
+00:27:29,299 --> 00:27:36,879
+Okay, we have defined a generic data structure. What can we do with it? What useful methods does it have?
+
+191
+00:27:41,395 --> 00:27:54,195
+First of all, most obviously, we need to be able to put an element into that data structure. The method named for this corpus is add.
+
+192
+00:27:55,796 --> 00:28:00,496
+It accepts an object of type.
+
+193
+00:28:01,135 --> 00:28:01,716
+Which type?
+
+194
+00:28:02,256 --> 00:28:14,316
+This means the T between those signs define whatever object type that generic class has been defined.
+
+195
+00:28:14,316 --> 00:28:19,596
+In our previous example, in the previous slide, this was person.
+
+196
+00:28:20,456 --> 00:28:23,096
+So for that list,
+
+197
+00:28:23,827 --> 00:28:31,748
+Liste. T means person because we have defined that this list will hold person options.
+
+198
+00:28:34,208 --> 00:28:46,867
+This is the notation. This means that T between these signs is the specific type of that generic class.
+
+199
+00:28:48,115 --> 00:28:54,316
+This will add an element, an object of type T, to the end of the list.
+
+200
+00:28:54,956 --> 00:28:59,916
+Every new addition is inserted to the end.
+
+201
+00:29:02,375 --> 00:29:06,256
+If you wish, you can access the each element.
+
+202
+00:29:08,756 --> 00:29:11,596
+However, this is a sequence.
+
+203
+00:29:11,716 --> 00:29:13,596
+This is done in a sequential fashion.
+
+204
+00:29:14,003 --> 00:29:27,123
+If you use the get method of an ArrayList and give an integer as a parameter, let's assume five, this will begin from the head node and go next for five times.
+
+205
+00:29:30,083 --> 00:29:37,203
+And, no, go next for four times and give you the fifth element to return you the fifth element.
+
+206
+00:29:38,263 --> 00:29:41,503
+It's done in a sequential fashion.
+
+207
+00:29:43,380 --> 00:29:45,380
+There is the size method.
+
+208
+00:29:45,380 --> 00:29:53,380
+It returns the number of elements in this list, not its capacity because the capacity is infinite.
+
+209
+00:29:53,380 --> 00:30:00,380
+But how many actual elements there are in that collection?
+
+210
+00:30:00,380 --> 00:30:08,380
+And you can use the for each loop in order to traverse, visit every node of that collection.
+
+211
+00:30:08,380 --> 00:30:10,060
+We will see how.
+
+212
+00:30:11,059 --> 00:30:15,559
+But first, I need to give you more introduction about that.
+
+213
+00:30:19,279 --> 00:30:22,979
+I will give you a few more of these methods.
+
+214
+00:30:23,979 --> 00:30:33,939
+They have much more methods in addition to this, but the most basic ones are the add method, get method, and size method.
+
+215
+00:30:34,419 --> 00:30:36,099
+Other than that, if you wish.
+
+216
+00:30:36,432 --> 00:30:51,352
+You can use those methods to ensure capacity method makes sure that the capacity of that ArrayList will be at least of this size.
+
+217
+00:30:51,352 --> 00:31:02,052
+There should be available memory in order to keep that number of type T elements.
+
+218
+00:31:10,099 --> 00:31:10,559
+Sorry.
+
+219
+00:31:14,804 --> 00:31:24,404
+If you are about to, if you know that you are about to go low on memory, you have the turn to size method.
+
+220
+00:31:25,184 --> 00:31:29,444
+This changes the capacity of that ArrayList correlation instance.
+
+221
+00:31:29,887 --> 00:31:57,887
+Bu, bu
+
+222
+00:31:57,887 --> 00:32:03,887
+You didn't receive that many number of elements.
+
+223
+00:32:03,887 --> 00:32:11,887
+Then you can use synthesize method in order to save some memory.
+
+224
+00:32:13,887 --> 00:32:20,875
+If you wish, you can insert an element to any position, not just to the end.
+
+225
+00:32:21,172 --> 00:32:38,251
+For this purpose, we have the set method. It accepts two parameters. First one is the position where that element is to be inserted in. And the second parameter is the actual element to be inserted.
+
+226
+00:32:42,867 --> 00:33:08,407
+A similar method, we have the remove method. It accepts an integer parameter. And this one removes the element of each element on this list. If that i, if that parameters, position parameter, is greater than the actual size,
+
+227
+00:33:09,779 --> 00:33:18,440
+Or in other terms, if the curving size is less than R, you come up with an index out of bar selection.
+
+228
+00:33:19,060 --> 00:33:20,100
+There is no such element.
+
+229
+00:33:21,680 --> 00:33:30,279
+But this is unchecked, so you don't need to use try and catch with these methods, set and remove methods.
+
+230
+00:33:30,900 --> 00:33:39,480
+They can throw an index out of Baum's exception, but this exception is unchecked, so you don't need to use strike catch.
+
+231
+00:33:42,299 --> 00:33:49,160
+Now, this is only a small part of the inheritance tree of leaf structures.
+
+232
+00:33:49,748 --> 00:34:11,488
+As we will study lists and maps, I will give you the most general and focused inheritance tree of those collections to you so that you can know what methods available in which data structures.
+
+233
+00:34:17,427 --> 00:34:18,367
+Let's begin.
+
+234
+00:34:24,244 --> 00:34:41,088
+By the way, sizden de özür diliyorum. [kişisel bilgi] O konuda bu nedenle…
+
+235
+00:34:41,088 --> 00:35:00,427
+[kişisel bilgi] Teşekkür ederim.
+
+236
+00:35:00,427 --> 00:35:08,048
+Öyle ama mecbur olacak işte. Buna da şükür en azından şifamız var. Olacak öyle diyelim.
+
+237
+00:35:12,115 --> 00:35:37,796
+Okay. At the root of that inheritance tree, we have the iterable interface. It is in the java-lang package. And you see that this iterable interface is also a generic interface. It can be defined of a particular element type e. Any data structure...
+
+238
+00:35:37,876 --> 00:35:46,836
+which implements this interface can be reversed by using the forage loop.
+
+239
+00:35:48,056 --> 00:35:55,856
+So when you see any data structure that implements this interface, you can use the forage loop.
+
+240
+00:35:57,556 --> 00:36:00,536
+We have the abstract collection class.
+
+241
+00:36:02,536 --> 00:36:04,492
+This implements...
+
+242
+00:36:04,500 --> 00:36:06,500
+That iterable interface.
+
+243
+00:36:08,500 --> 00:36:10,500
+We don't use it directly.
+
+244
+00:36:10,500 --> 00:36:12,500
+We use its subclasses.
+
+245
+00:36:13,500 --> 00:36:17,500
+But this class implements the collection interface.
+
+246
+00:36:18,500 --> 00:36:20,500
+That's again a generic one.
+
+247
+00:36:21,500 --> 00:36:29,500
+The methods defined in this interface are the add method that we have just known.
+
+248
+00:36:31,284 --> 00:36:37,304
+An element of type E is to be added to that collection.
+
+249
+00:36:37,304 --> 00:36:40,564
+If the operation is successful, then true is returned.
+
+250
+00:36:40,884 --> 00:36:43,364
+Otherwise, the false value is returned.
+
+251
+00:36:44,984 --> 00:36:51,564
+We have the clear method, which removes every element in that instruction, in that collection.
+
+252
+00:36:52,503 --> 00:36:56,324
+We have a contains method, which accepts an object.
+
+253
+00:36:57,076 --> 00:36:59,715
+So you can give any type of objects.
+
+254
+00:37:00,376 --> 00:37:05,435
+If that object is actually in that collection, this method will return true.
+
+255
+00:37:06,155 --> 00:37:08,336
+Otherwise, it will return false.
+
+256
+00:37:09,096 --> 00:37:17,895
+So you can search any data structure for a particular element by using the contains method.
+
+257
+00:37:18,836 --> 00:37:23,795
+Therefore, we will also be using this contains method.
+
+258
+00:37:24,340 --> 00:37:26,720
+We talked about this add method.
+
+259
+00:37:27,579 --> 00:37:29,440
+We have an isempty method.
+
+260
+00:37:29,440 --> 00:37:32,880
+If there are no elements correctly in that collection,
+
+261
+00:37:32,880 --> 00:37:37,180
+then this method will return true, otherwise it will return false.
+
+262
+00:37:39,680 --> 00:37:45,220
+That iterator method returns us an iterator,
+
+263
+00:37:45,220 --> 00:37:50,900
+which will contain the element types of that collection.
+
+264
+00:37:51,443 --> 00:37:55,663
+If you wish, you can still use that for each loop.
+
+265
+00:37:56,983 --> 00:38:11,503
+But in order, if you wish to be able to make different travel through runs in that data structure, you can have an iterator element.
+
+266
+00:38:13,184 --> 00:38:15,503
+In that case, you can use...
+
+267
+00:38:15,956 --> 00:38:21,516
+Whatever methods, whatever available methods are there, that iterator.
+
+268
+00:38:23,275 --> 00:38:26,715
+Actually, it should be class as far as I remember.
+
+269
+00:38:26,715 --> 00:38:32,875
+But we don't need to express this because we have this for each loop.
+
+270
+00:38:35,355 --> 00:38:39,275
+Also, we will be using the remove method too.
+
+271
+00:38:39,603 --> 00:38:54,803
+The remove method will take an object as a parameter and if that object is actually available, exists in that data structure, this method will remove that object and return true.
+
+272
+00:38:55,683 --> 00:39:02,243
+If that object is not in the data structure, it will not remove anything, so it will return false.
+
+273
+00:39:03,423 --> 00:39:06,643
+And we have studied the size method as well.
+
+274
+00:39:14,804 --> 00:39:40,804
+We have the abstract list class. This is a subclass of abstract collection. Therefore, any subclass of that class will be implementing this collection interface and iterable interface. Therefore, they implement those methods that we have talked about. And we have some additional methods.
+
+275
+00:39:41,331 --> 00:39:47,871
+In that abstract list class, first of it is the index of method.
+
+276
+00:39:47,871 --> 00:40:02,552
+That method will take an object of that generic type in this example and will return us the position of that element.
+
+277
+00:40:03,711 --> 00:40:08,512
+For example, if that element is in the head mode, it will return zero.
+
+278
+00:40:09,460 --> 00:40:20,099
+But if that element isn't currently in the data structure, it will turn us a negative value. I guess it should be minus one.
+
+279
+00:40:23,340 --> 00:40:25,900
+We have the get and set methods.
+
+280
+00:40:27,500 --> 00:40:29,099
+Get method will...
+
+281
+00:40:29,492 --> 00:40:31,492
+Taken index parameter.
+
+282
+00:40:31,492 --> 00:40:39,492
+Therefore, you can be, you can direct access to the element in that index position.
+
+283
+00:40:39,492 --> 00:40:49,492
+Well, actually, the list will sequentially traverse itself and will return the element at that position.
+
+284
+00:40:49,492 --> 00:40:53,492
+But at least you don't have to do it yourself.
+
+285
+00:40:54,096 --> 00:40:58,335
+Just you can use the available method if you wish.
+
+286
+00:40:59,335 --> 00:41:07,335
+In order to add an element to any position in the list, we have the set method.
+
+287
+00:41:08,335 --> 00:41:18,295
+We give the first parameter as the index parameter, position where the element to be inserted, and the second parameter is the actual element.
+
+288
+00:41:18,963 --> 00:41:27,824
+This method puts that element with small e to that index position in the list.
+
+289
+00:41:29,903 --> 00:41:34,123
+And what was the return?
+
+290
+00:41:36,864 --> 00:41:41,463
+Bakayım da ona göre söyleyeyim.
+
+291
+00:41:42,003 --> 00:41:44,523
+Yazmış olmam lazım diye düşünüyorum.
+
+292
+00:41:46,420 --> 00:41:50,000
+Yok, yazmamışım. Bakmak lazım. Hadi hemen bakalım.
+
+293
+00:41:51,860 --> 00:41:53,640
+Şey nasıl olsa indirmiştik.
+
+294
+00:41:54,320 --> 00:41:56,920
+We have already downloaded the documentation.
+
+295
+00:41:56,920 --> 00:41:59,420
+So, yeah, look at it.
+
+296
+00:42:05,684 --> 00:42:14,804
+index, base, where is it? In the YouTube package, of course.
+
+297
+00:42:18,804 --> 00:42:45,963
+Here. And it is the abstract list class. Here. Abstract list class. And what was it? The method name? Set. Okay. Set. This one. Hmm.
+
+298
+00:42:46,068 --> 00:42:50,208
+It replaces the element at the specified position.
+
+299
+00:42:50,528 --> 00:42:52,248
+It doesn't actually insert.
+
+300
+00:42:52,988 --> 00:42:54,528
+It replaces the element.
+
+301
+00:42:54,528 --> 00:43:04,948
+And the returned element, the returned value, is the element that is to be removed from the collection.
+
+302
+00:43:05,780 --> 00:43:18,460
+This method will put that element to the specific position, overwriting the already available object in that position.
+
+303
+00:43:21,340 --> 00:43:27,340
+Yes, it will overwrite this object, but it gives you a second chance.
+
+304
+00:43:27,764 --> 00:43:34,403
+If you wish, you can put that remote object to another place.
+
+305
+00:43:35,204 --> 00:43:45,764
+Therefore, this method returns us that element that has been overwritten on it.
+
+306
+00:43:48,500 --> 00:44:07,739
+And remove method, we remove the element at that specific index from the collection and it will return that element, that deleted, that removed element to us so that we can put it to another place or we can discard it.
+
+307
+00:44:17,492 --> 00:44:27,012
+We can directly use two subclasses of that abstract list class.
+
+308
+00:44:27,012 --> 00:44:35,172
+First one is the ArrayList class that we will demonstrate.
+
+309
+00:44:37,172 --> 00:44:41,132
+And we can also use the Vector class.
+
+310
+00:44:41,972 --> 00:44:45,012
+Vector class is thread safe.
+
+311
+00:44:45,376 --> 00:44:51,056
+Which means we will study multi-threading as our last topic.
+
+312
+00:44:51,716 --> 00:45:03,696
+But when you are running multi-thread for, and if you have some shared data between those parallel learning tasks,
+
+313
+00:45:04,179 --> 00:45:14,259
+There can be some race conditions and inconsistencies with the data. We will learn them later.
+
+314
+00:45:15,219 --> 00:45:28,719
+In order for that such corruptions, such conflicts not to arise, we will use some object logs and we will use threat safe data structures.
+
+315
+00:45:29,204 --> 00:45:33,804
+Vector is a thread-safe list implementation.
+
+316
+00:45:36,424 --> 00:45:44,764
+And in addition to being thread-safe, it has some additional useful methods too.
+
+317
+00:45:45,804 --> 00:45:48,084
+For example, we have the element at method.
+
+318
+00:45:48,659 --> 00:45:54,500
+You give an index to that method and it returns element at the given position.
+
+319
+00:45:54,500 --> 00:46:02,199
+However, we already have a similar method, which is that get method here.
+
+320
+00:46:03,259 --> 00:46:13,400
+The element at method and the get method are pretty much the same.
+
+321
+00:46:14,547 --> 00:46:19,667
+So you don't have to use the vector for direct access.
+
+322
+00:46:20,847 --> 00:46:28,887
+Actually, not direct access, but you can access that element with only one root segment.
+
+323
+00:46:31,288 --> 00:46:35,768
+And you can learn the first element and the last element of a vector.
+
+324
+00:46:36,407 --> 00:46:40,507
+However, you can also code this such as
+
+325
+00:46:41,043 --> 00:46:47,823
+You can get the element at position 0 instead of first element.
+
+326
+00:46:47,823 --> 00:46:55,243
+And you can get the element in position size minus 1.
+
+327
+00:46:57,383 --> 00:47:01,423
+Size minus 1.
+
+328
+00:47:02,099 --> 00:47:07,079
+Just like in the arrays, the position zero is the head element.
+
+329
+00:47:07,559 --> 00:47:11,480
+Therefore, the last element is the position size minus one.
+
+330
+00:47:12,120 --> 00:47:21,140
+So instead of last element, you can run get element size minus one.
+
+331
+00:47:22,280 --> 00:47:24,720
+Therefore, it's not much a big deal.
+
+332
+00:47:29,876 --> 00:47:38,276
+Also, we have an additional intermediate class, which is abstract sequential list.
+
+333
+00:47:39,236 --> 00:47:41,636
+This extends to abstract list class.
+
+334
+00:47:42,516 --> 00:47:49,476
+And also, if you wish, a subclass of that linked list class as well.
+
+335
+00:47:50,916 --> 00:47:53,076
+This is also thread unsafe.
+
+336
+00:47:53,652 --> 00:48:02,431
+But it has some useful additional methods, at first, at last, get first, and get last.
+
+337
+00:48:03,451 --> 00:48:19,931
+But if you wish, you can also, similar to the vector classes, additional methods, you can always use, make some appropriate use of the methods of the collection interface instead of using those.
+
+338
+00:48:20,288 --> 00:48:24,688
+Specific methods. If you wish, they are already here.
+
+339
+00:48:29,567 --> 00:48:37,728
+If I were you, I would try to memorize as less things as possible. So instead of
+
+340
+00:48:39,248 --> 00:48:46,367
+try to memorize the linkless list and vector classes and methods, additional methods,
+
+341
+00:48:46,900 --> 00:48:51,280
+Just keep the methods of the collection interface.
+
+342
+00:48:54,060 --> 00:48:58,640
+And abstract list interface.
+
+343
+00:49:00,400 --> 00:49:03,280
+And one of those, I'll skip that one.
+
+344
+00:49:04,540 --> 00:49:06,840
+There is a list interface too.
+
+345
+00:49:08,480 --> 00:49:11,960
+This extends from the collection interface.
+
+346
+00:49:12,543 --> 00:49:21,623
+We have done such demonstration and interface can extend another interface, such as the one in the vehicles in the previous weeks.
+
+347
+00:49:23,243 --> 00:49:28,423
+It has an additional method, get index and index of get.
+
+348
+00:49:28,423 --> 00:49:36,263
+Actually, those methods I have talked about in the abstract list class are defined in that list interface.
+
+349
+00:49:38,443 --> 00:49:39,783
+So no big deal there.
+
+350
+00:49:40,532 --> 00:50:08,268
+Hmm. What else? Well, but although you don't have to memorize the additional methods of the LinkedList class, also, I suggest, I recommend you using the LinkedList class because at the back end, the ArrayList type
+
+351
+00:50:08,340 --> 00:50:13,140
+Hides its actual elements in an array structure.
+
+352
+00:50:14,100 --> 00:50:25,180
+Therefore, that ArrayList is not a pure linked list, but those linked lists and vector classes are pure linked lists.
+
+353
+00:50:26,600 --> 00:50:34,020
+Therefore, the actual runtime performance of the get method and set method
+
+354
+00:50:34,675 --> 00:50:44,135
+Arkadaşlar, class, are higher, better in the ArrayList class because it actually uses an array.
+
+355
+00:50:48,135 --> 00:51:01,016
+But this also means that adding an element and resizing the data structures, the advantages related to native linked lists.
+
+356
+00:51:01,360 --> 00:51:06,360
+Are not pretty much available in that ArrayList class.
+
+357
+00:51:07,360 --> 00:51:28,360
+Of course, the Java language creators have optimized those calls and they still should be efficient enough, but of course, they shouldn't be as fast as the Lipidist implementation.
+
+358
+00:51:28,884 --> 00:51:34,584
+When the advantages of linked lists are considered.
+
+359
+00:51:35,664 --> 00:51:36,724
+That's it.
+
+360
+00:51:38,724 --> 00:51:40,463
+Ya, sonunuz var, son.
+
+361
+00:51:49,427 --> 00:51:51,208
+Yoksa sonuna kine geçenir.
+
+362
+00:51:55,123 --> 00:52:05,284
+Okay. Now, we will make a demonstration of how to use generic objects in a collection.
+
+363
+00:52:06,483 --> 00:52:11,244
+But if you wish, we can do it after the break.
+
+364
+00:52:11,244 --> 00:52:13,244
+Or...
+
+365
+00:52:16,659 --> 00:52:44,335
+Bu, bu
+
+366
+00:52:44,335 --> 00:52:52,935
+İki blok şeklinde yapardık. Bir yarıda hem bu hinsleri teorik gördük, uygulamasını yapardık. Ama neyse, o aşağıya bir hayal var.
+
+367
+00:52:53,335 --> 00:53:03,175
+Şimdi o zaman bir on dakikada verelim. Ondan sonra, on dakikadan sonra bu teorik bilimimizi pratiğe dökmeye başlayalım.
+
+368
+00:53:03,795 --> 00:53:05,295
+Hocam, bir şey sorabilir miyim?
+
+369
+00:53:05,679 --> 00:53:06,799
+Tabii, buyur [öğrenci].
+
+370
+00:53:07,139 --> 00:53:14,119
+Sınav sorularıyla ilgili şöyle bir gözden geçirme yapabilir miyiz? Sona doğru ya da sınav sorularına.
+
+371
+00:53:15,459 --> 00:53:16,839
+Sona doğru yapalım, olur mu?
+
+372
+00:53:17,539 --> 00:53:19,859
+Tamam, bir soru soracaktım da onun için yani.
+
+373
+00:53:20,799 --> 00:53:21,799
+Tamam, tabii ki tabii ki.
+
+374
+00:53:23,079 --> 00:53:23,719
+Teşekkürler.
+
+375
+00:53:26,779 --> 00:53:29,699
+Şimdi bir 10 dakika ara. Demek oluyor ki.
+
+376
+00:53:31,199 --> 00:53:32,279
+15-55.
+
+377
+00:53:34,835 --> 00:53:42,655
+15, 55, 16, 0, 5 arasında olmak daha.
+
+378
+01:06:40,659 --> 01:06:48,360
+Ok, we may begin. I am too real estate. I am sorry. I am just able, being able to manage.
+
+379
+01:06:54,643 --> 01:07:03,143
+But, primarily, we will be demonstrating the practical usage of a generic labor structure.
+
+380
+01:07:04,523 --> 01:07:13,603
+First, we will use the ArrayList, but we will not use any methods specific to the Just ArrayList.
+
+381
+01:07:13,603 --> 01:07:16,603
+So, you can change it to the...
+
+382
+01:07:18,036 --> 01:07:22,496
+Link with this class too. No problem about that.
+
+383
+01:07:23,235 --> 01:07:29,335
+Let's implement a one-to-mini association by using an ArrayList.
+
+384
+01:07:29,815 --> 01:07:35,436
+We have a course and we will have students enrolled to that course.
+
+385
+01:07:36,275 --> 01:07:40,875
+Therefore, a one-to-mini association is required.
+
+386
+01:07:41,875 --> 01:07:43,815
+The student class is very straightforward.
+
+387
+01:07:46,356 --> 01:07:53,235
+Every student has a number and name. Constructor takes those parameters and get the methods are available.
+
+388
+01:07:54,356 --> 01:08:01,556
+Let's consider the course class. We have a course code and name. Those are strings.
+
+389
+01:08:03,235 --> 01:08:12,675
+The students will be kept in an ArrayList of types student. And we have a capacity element here.
+
+390
+01:08:13,427 --> 01:08:18,067
+This is not required. This is not actually required for that ArrayList.
+
+391
+01:08:19,288 --> 01:08:22,728
+It is there only for the business logic.
+
+392
+01:08:23,587 --> 01:08:28,247
+Because you know that every course has a maximum capacity.
+
+393
+01:08:29,188 --> 01:08:33,128
+And this capacity should not be exceeded.
+
+394
+01:08:34,448 --> 01:08:39,051
+This is nothing to do with the memory requirements or...
+
+395
+01:08:39,891 --> 01:08:44,691
+A fixed size, there is nothing to do with those.
+
+396
+01:08:45,091 --> 01:08:49,871
+This capacity only stands for the actual business logic.
+
+397
+01:08:49,871 --> 01:08:50,531
+Okay.
+
+398
+01:08:53,131 --> 01:08:56,311
+So we have the constructors here.
+
+399
+01:08:58,304 --> 01:09:01,164
+Taken de code and the name of class.
+
+400
+01:09:01,164 --> 01:09:06,164
+And initial capacity has been assigned.
+
+401
+01:09:06,164 --> 01:09:11,164
+And this is not for, again, this is not for storage.
+
+402
+01:09:11,164 --> 01:09:14,003
+This is only for business logic.
+
+403
+01:09:14,003 --> 01:09:25,104
+What we really do when opening a course, when we foresee that course will have a lot of demand,
+
+404
+01:09:25,460 --> 01:09:34,739
+We don't want everyone to make a congestion on and run into that course.
+
+405
+01:09:35,540 --> 01:09:38,979
+In Turkish, we may say UMLNs, haxenus, stimulus.
+
+406
+01:09:40,404 --> 01:10:02,412
+ve bu şekilde bir kursa alınan bir kursa alınan bir kursa alınan bir kursa alınan bir kursa alınan bir kursa alınan bir kursa alınan bir kursa alınan bir kursa alınan bir kursa alınan bir kursa alınan bir kursa alınan bir kursa alınan bir kursa alınan bir kursa alınan bir kursa alınan bir kursa alınan bir kursa alınan bir kursa alınan bir kursa alınan bir kursa alınan bir kursa alınan bir kursa alınan bir kursa alınan bir kursa alınan bir kursa alınan bir kursa alınan bir kursa alınan bir kursa alınan bir kursa alınan bir kursa alınan bir kurs
+
+407
+01:10:04,319 --> 01:10:10,319
+Ve
+
+408
+01:10:03,828 --> 01:10:11,828
+So that capacity is used for that purpose, not for the capacity of the data structure.
+
+409
+01:10:11,828 --> 01:10:30,828
+We have the getter methods for every number and we have a getstudentcount method which will return how many students are there actually enrolled in that course.
+
+410
+01:10:33,043 --> 01:10:41,984
+We have an add student method. It will add a student to that course. But of course, we should make some consistency checks.
+
+411
+01:10:42,743 --> 01:10:59,923
+First of all, the capacity of that course should not be reached. Again, this is only for business logic. If we wish, we can increase the capacity very easily. It costs nothing in list implementations.
+
+412
+01:11:02,228 --> 01:11:09,688
+And a student, a same student, should not be enrolled, added twice.
+
+413
+01:11:10,688 --> 01:11:21,167
+Therefore, if there is nothing wrong with those rules, the student will be added to the ArrayList and the method will return true.
+
+414
+01:11:21,827 --> 01:11:24,768
+Otherwise, the method will return false.
+
+415
+01:11:25,768 --> 01:11:28,047
+We have the increased capacity method.
+
+416
+01:11:28,756 --> 01:11:33,236
+This will be as simple as a setter method.
+
+417
+01:11:33,595 --> 01:11:33,836
+Okay?
+
+418
+01:11:34,976 --> 01:11:40,476
+Because we don't need to do anything extra to enlarge and ArrayList.
+
+419
+01:11:41,175 --> 01:11:48,236
+But if this was an array, regular array, then we should do a lot of things.
+
+420
+01:11:48,716 --> 01:11:54,236
+But actually, I will compare this implementation with the ArrayList.
+
+421
+01:11:57,524 --> 01:12:02,104
+Next to, with an implementation, we turn regular array.
+
+422
+01:12:02,744 --> 01:12:12,304
+So, you will notice the advantages, many advantages of the linked list.
+
+423
+01:12:15,764 --> 01:12:20,024
+We have the five student method. It accepts a student number as a parameter.
+
+424
+01:12:20,564 --> 01:12:29,684
+And if that student is actually enrolled in this course, then this method will return that student object.
+
+425
+01:12:30,123 --> 01:12:31,764
+Otherwise, it will return now.
+
+426
+01:12:33,084 --> 01:12:39,744
+And we have a show classes method, which will list every student enrolled in that course.
+
+427
+01:12:40,344 --> 01:12:43,004
+And in order to make some demonstrations,
+
+428
+01:12:43,859 --> 01:12:52,139
+We will use this class with a class with a main method and make some demonstrations.
+
+429
+01:12:53,279 --> 01:12:55,959
+Those demonstrations will be small.
+
+430
+01:12:57,439 --> 01:13:02,119
+We will be doing tests more.
+
+431
+01:13:03,439 --> 01:13:06,599
+Therefore, but first we need to write the code.
+
+432
+01:13:07,099 --> 01:13:07,639
+Let's begin.
+
+433
+01:13:11,155 --> 01:13:14,376
+Let me open the PDF lecture notes here too.
+
+434
+01:13:37,235 --> 01:13:37,735
+Stık.
+
+435
+01:13:41,939 --> 01:13:53,699
+Şöyle sonra, yes, we are getting close. Ah, evet, this one. Şöyle yapalım, şöyle yapalım.
+
+436
+01:14:00,787 --> 01:14:24,987
+Şu yeter. Eclipse'i de şuraya koydum. Pardon. Bunu nasıl yaptık? Hah, şurada. Evet. Bu sefer de tam bu mucar çubuğunun yerine saklanmıştı büyük bir şey. Ama aslında büyük bir değil de. Şöyle ilan etmeyeceğiz. Evet, peki.
+
+437
+01:14:26,387 --> 01:14:31,387
+Kaçıncı haftaydık? Onuncu hafta mı? Onuncu hafta.
+
+438
+01:14:31,387 --> 01:14:42,387
+Choice, come on. Let's create the week 10 package after all.
+
+439
+01:14:47,444 --> 01:14:52,104
+Arturo class is very easy, so let's just copy and paste it.
+
+440
+01:14:52,884 --> 01:14:55,184
+But where was it? Let me remember.
+
+441
+01:14:58,931 --> 01:14:59,291
+Peace.
+
+442
+01:15:07,188 --> 01:15:10,507
+Evet, let's look at this one.
+
+443
+01:15:10,507 --> 01:15:12,507
+I'm finished with you.
+
+444
+01:15:18,163 --> 01:15:25,783
+Anyway, just as you see in the Java class diagram, we have two memberships, constructor for insurance and demand, et al.
+
+445
+01:15:25,783 --> 01:15:28,484
+They are easy.
+
+446
+01:15:28,484 --> 01:15:32,404
+Now that's called the cost class.
+
+447
+01:15:39,347 --> 01:15:47,847
+Okay, let's import char to that class.
+
+448
+01:15:47,847 --> 01:15:52,347
+And begin with the number fields.
+
+449
+01:15:52,347 --> 01:16:00,347
+We have a biot, zinc, cold, and main.
+
+450
+01:16:06,260 --> 01:16:27,260
+private array list, children's, children's, here is the section 5, and we have private int, capacity.
+
+451
+01:16:32,692 --> 01:16:37,131
+The constructor requires the code name and capacity.
+
+452
+01:16:37,131 --> 01:16:39,891
+Let's do it fast.
+
+453
+01:16:39,891 --> 01:16:43,252
+Generate constructor using...
+
+454
+01:16:43,252 --> 01:16:47,891
+I generate constructor using fields.
+
+455
+01:16:47,891 --> 01:16:52,291
+Kremadon, yeah.
+
+456
+01:16:52,291 --> 01:16:54,291
+Construct using fields.
+
+457
+01:16:54,291 --> 01:16:58,291
+Ah, code name and capacity.
+
+458
+01:16:58,291 --> 01:17:00,291
+Okay.
+
+459
+01:17:01,235 --> 01:17:07,836
+But we shouldn't forget the initialization of the data structures.
+
+460
+01:17:07,836 --> 01:17:11,836
+Therefore, I will do it manually here.
+
+461
+01:17:11,836 --> 01:17:19,836
+Students equal new arrays.
+
+462
+01:17:19,836 --> 01:17:23,235
+We will use the default constructor.
+
+463
+01:17:23,235 --> 01:17:24,235
+That's enough.
+
+464
+01:17:28,979 --> 01:17:56,819
+Okay. Please do not forget to initialize the data structure. This is important. Okay. Get the methods are quite easy. Let's create the... select getters, not close to, of course, capacity, code and name.
+
+465
+01:17:58,131 --> 01:17:58,763
+Arkadaşlar, class, object,
+
+466
+01:18:02,612 --> 01:18:08,112
+Let me make both methods one line only.
+
+467
+01:18:26,420 --> 01:18:31,539
+We have the getStudentCount method.
+
+468
+01:18:33,619 --> 01:18:43,619
+Let's call it publicNet getStudentCount.
+
+469
+01:18:47,412 --> 01:18:54,932
+Well, this will actually be the number of contained elements in the ArrayList.
+
+470
+01:18:54,932 --> 01:19:01,612
+Therefore, return to the length.size.
+
+471
+01:19:03,452 --> 01:19:04,372
+That's it.
+
+472
+01:19:04,971 --> 01:19:10,172
+It also explains us the number of elements in that is not the capacity.
+
+473
+01:19:11,692 --> 01:19:13,212
+It's theoretically infinite.
+
+474
+01:19:13,716 --> 01:19:17,856
+But the actual number of saved element.
+
+475
+01:19:19,016 --> 01:19:20,016
+That's it.
+
+476
+01:19:25,555 --> 01:19:49,555
+Now let's code the x-student method. Remember that we have to not to add the same student twice. Therefore, I also need to have a method which will search for a student by using its student numbers. Therefore...
+
+477
+01:19:50,260 --> 01:19:55,739
+And it's actually here, the find student method, all of them.
+
+478
+01:19:56,700 --> 01:20:01,000
+In the add student method, I will make use of the find student method.
+
+479
+01:20:01,680 --> 01:20:03,280
+Therefore, let's call it first.
+
+480
+01:20:04,659 --> 01:20:07,720
+Burada hani aslında şeyden, pdf'den bakacağız.
+
+481
+01:20:07,720 --> 01:20:10,560
+İşte PowerPoint'ta kalktık.
+
+482
+01:20:10,640 --> 01:20:13,680
+Sabahtan, burada böyle gözüküyor.
+
+483
+01:20:13,860 --> 01:20:15,079
+Hatta istersen şöyle.
+
+484
+01:20:16,200 --> 01:20:17,239
+Asla bulutayım da.
+
+485
+01:20:19,188 --> 01:20:28,728
+ve hatta şöyle bir olasıl kodu daha çok yakasına ve daha rahat rahat bakmak varken bir video PowerPoint'te kalmışım.
+
+486
+01:20:28,728 --> 01:20:32,728
+Okay, findStudent method.
+
+487
+01:20:32,728 --> 01:20:46,188
+public student find student string
+
+488
+01:20:46,771 --> 01:21:12,771
+This is a much required method. Let's try to find this. We can use the for each loop for this purpose. Let me call this for you just once while turning.
+
+489
+01:21:13,939 --> 01:21:21,059
+SQ-Gönch without two dunks.
+
+490
+01:21:21,059 --> 01:21:26,979
+This is similar to the array notation.
+
+491
+01:21:26,979 --> 01:21:34,180
+Those are in fact all collections, therefore they are the same.
+
+492
+01:21:34,547 --> 01:21:39,547
+I define a temporary student object named a student.
+
+493
+01:21:39,547 --> 01:21:49,547
+And this object reference will show every element of the students list in each iteration.
+
+494
+01:21:49,547 --> 01:21:56,547
+Therefore, if that is student to...
+
+495
+01:21:56,547 --> 01:21:59,547
+I'm sorry.
+
+496
+01:22:03,252 --> 01:22:15,432
+That students get numbers equals the given number.
+
+497
+01:22:15,432 --> 01:22:21,432
+Then we have found the student, return a student.
+
+498
+01:22:24,152 --> 01:22:29,952
+But if there is no such student, the four loop will end.
+
+499
+01:22:30,420 --> 01:22:32,420
+without returning int.
+
+500
+01:22:33,420 --> 01:22:37,420
+Therefore, at that point, we will just return now.
+
+501
+01:22:39,420 --> 01:22:42,420
+That's it for the five student methods.
+
+502
+01:22:45,420 --> 01:22:49,420
+And next, we can code the edge student method now.
+
+503
+01:22:52,916 --> 01:23:03,515
+Publish, volume, et students, et students, et students, et students, et students, et students.
+
+504
+01:23:08,020 --> 01:23:16,620
+Well, I prefer first recording the consistency check methods.
+
+505
+01:23:20,800 --> 01:23:29,500
+If five students, now this method is extracting a number,
+
+506
+01:23:30,515 --> 01:23:38,515
+A student who given parameter objects gets numbers by using this method we can take the number.
+
+507
+01:23:38,515 --> 01:23:42,515
+Not equals null.
+
+508
+01:23:42,515 --> 01:23:52,515
+This means that student is already registered to that course with that student number.
+
+509
+01:23:58,931 --> 01:24:11,471
+Oh, and get capacity or get student count or I could just write students that size however you wish.
+
+510
+01:24:11,471 --> 01:24:12,731
+Oh, okay.
+
+511
+01:24:16,011 --> 01:24:19,551
+Which one should be chosen?
+
+512
+01:24:20,752 --> 01:24:25,871
+Well, I would prefer get student count but all the same.
+
+513
+01:24:29,011 --> 01:24:36,332
+Capacity has been reached to the student count.
+
+514
+01:24:37,431 --> 01:24:42,111
+In that case, return false.
+
+515
+01:24:45,031 --> 01:24:48,351
+Otherwise, it's true.
+
+516
+01:24:50,192 --> 01:24:51,031
+Start add.
+
+517
+01:24:51,111 --> 01:24:52,211
+We have the add method.
+
+518
+01:24:53,572 --> 01:24:54,572
+And that's...
+
+519
+01:24:55,220 --> 01:24:59,560
+Give that parameters to that add method.
+
+520
+01:25:00,840 --> 01:25:03,220
+And return true.
+
+521
+01:25:03,440 --> 01:25:10,900
+Well, really, there can be a problem while actually adding to the stupid piece.
+
+522
+01:25:11,380 --> 01:25:20,880
+Therefore, and the add method, remember that it returns a Boolean value, depending on whether the operation is successful or not.
+
+523
+01:25:22,676 --> 01:25:27,036
+I will write return students.ed student.
+
+524
+01:25:27,816 --> 01:25:33,716
+Well, I don't, I am not expecting anything wrong to happen.
+
+525
+01:25:33,716 --> 01:25:42,376
+So maybe I could just write this and then write something such as this.
+
+526
+01:25:42,716 --> 01:25:46,136
+But the previous version is much better.
+
+527
+01:25:47,220 --> 01:25:49,220
+Then maybe something gone wrong.
+
+528
+01:25:49,220 --> 01:25:56,819
+So, therefore, please, let me undo my latest edit.
+
+529
+01:25:59,380 --> 01:26:01,059
+Okay, that's it.
+
+530
+01:26:01,659 --> 01:26:03,819
+Attitude method is finished.
+
+531
+01:26:04,460 --> 01:26:07,180
+Let's code the increase capacity method.
+
+532
+01:26:07,760 --> 01:26:09,860
+But actually, this is a simple method.
+
+533
+01:26:13,139 --> 01:26:14,020
+Public.
+
+534
+01:26:14,579 --> 01:26:15,579
+Evet.
+
+535
+01:26:15,579 --> 01:26:24,579
+Increase Capacity.
+
+536
+01:26:24,579 --> 01:26:30,579
+But actually, I will not just make the assignment because…
+
+537
+01:26:30,960 --> 01:26:42,539
+Maybe someone can give that method a parameter which is actually smaller than the actually registered student count.
+
+538
+01:26:44,200 --> 01:26:51,079
+For example, there are currently 17 students enlisted to that course.
+
+539
+01:26:51,640 --> 01:26:53,880
+You cannot change the capacity to time.
+
+540
+01:26:55,380 --> 01:26:57,979
+This shouldn't be possible.
+
+541
+01:26:58,452 --> 01:27:10,612
+Therefore, I will just write if a new capacity is greater than get capacity.
+
+542
+01:27:14,547 --> 01:27:20,247
+Or maybe in order to make some practices like students that size, if you wish.
+
+543
+01:27:28,692 --> 01:27:48,692
+On in this case, not caps to other object in which, in that case, capacity, new capacity.
+
+544
+01:27:48,692 --> 01:27:50,692
+Otherwise, we will not do anything.
+
+545
+01:27:53,140 --> 01:27:58,240
+Okey, hazırda yapmışken mademleri şurada da öyle değiştirelim.
+
+546
+01:27:58,240 --> 01:28:06,140
+String size değilim. Yani aynı kapıya çıkacak ama tekrar pratik yaparak daha iyi öğreniriz ya.
+
+547
+01:28:06,140 --> 01:28:13,140
+O yüzden buraya elvan sayısını nasıl öğrendiğimizi hatırlamıştık daha iyi atılırsa size değilim.
+
+548
+01:28:13,140 --> 01:28:18,140
+Tabii ki öğrendikten sonra farklı meramide ses verseniz yapın. Çok dert değilim.
+
+549
+01:28:20,020 --> 01:28:21,020
+Ok, that's it.
+
+550
+01:28:22,760 --> 01:28:23,680
+Nothing else.
+
+551
+01:28:24,199 --> 01:28:30,140
+I don't need to ensure the capacity of that ArrayList.
+
+552
+01:28:30,600 --> 01:28:32,220
+If I wish, I can.
+
+553
+01:28:33,100 --> 01:28:35,060
+There is nothing wrong with that.
+
+554
+01:28:36,360 --> 01:28:36,880
+Maybe.
+
+555
+01:28:40,400 --> 01:28:41,699
+If you wish, do it.
+
+556
+01:28:41,960 --> 01:28:43,140
+If you don't wish, do not.
+
+557
+01:28:43,400 --> 01:28:44,020
+No problem.
+
+558
+01:28:45,220 --> 01:28:47,280
+In that case, let's do this.
+
+559
+01:28:50,612 --> 01:28:59,652
+Students that ensure capacity, link capacity.
+
+560
+01:28:59,652 --> 01:29:10,372
+This one is complete optional because it's not hard to enlarge a linked list.
+
+561
+01:29:11,604 --> 01:29:24,184
+However, actually, this is an ArrayList, therefore, maybe this method could be a little more useful for the runtime of the entire code.
+
+562
+01:29:24,184 --> 01:29:24,484
+Okay.
+
+563
+01:29:26,804 --> 01:29:27,844
+Optional, but
+
+564
+01:29:27,844 --> 01:29:30,844
+Wiser.
+
+565
+01:29:31,264 --> 01:29:33,384
+You can, I can say Wiser.
+
+566
+01:29:33,384 --> 01:29:35,024
+It's a Wiser thing to do.
+
+567
+01:29:42,676 --> 01:29:50,380
+And we have already quoted the five-student method. And now let's quote the show class exist method.
+
+568
+01:29:54,068 --> 01:29:55,068
+On a public void.
+
+569
+01:29:56,288 --> 01:29:58,007
+Oh, class, yes.
+
+570
+01:30:03,859 --> 01:30:07,019
+Click on.
+
+571
+01:30:11,019 --> 01:30:14,299
+Lift off.
+
+572
+01:30:18,779 --> 01:30:22,139
+Class lift off.
+
+573
+01:30:24,259 --> 01:30:25,699
+Class fort.
+
+574
+01:30:28,379 --> 01:30:30,979
+Class name.
+
+575
+01:30:32,724 --> 01:30:34,104
+Ok, that's enough, I guess.
+
+576
+01:30:43,104 --> 01:30:46,844
+Now, let's list every student.
+
+577
+01:30:47,544 --> 01:30:51,044
+We can again use the Polish loop for that.
+
+578
+01:30:54,836 --> 01:30:56,376
+I can copy a paste.
+
+579
+01:30:58,536 --> 01:31:02,235
+For students, students.
+
+580
+01:31:03,235 --> 01:31:03,895
+Now, okay.
+
+581
+01:31:04,436 --> 01:31:21,615
+If you want, you can just do such thing as a student, a student, that.
+
+582
+01:31:22,515 --> 01:31:32,915
+Maybe I can overwrite the method of the student class so it would be easier to call this show classes but
+
+583
+01:31:32,915 --> 01:31:48,755
+get number plus one space and plus student that get name.
+
+584
+01:31:50,931 --> 01:31:52,471
+Okay, that's the time, yes.
+
+585
+01:31:58,644 --> 01:32:03,604
+Okay. I think that's all.
+
+586
+01:32:06,964 --> 01:32:11,524
+Let's compare this code with the lecture mode.
+
+587
+01:32:14,724 --> 01:32:17,604
+Can I have some power points? Should be better.
+
+588
+01:32:19,764 --> 01:32:23,284
+Well, no, not actually better. We can continue.
+
+589
+01:32:24,372 --> 01:32:27,872
+Sonda, PDF, yorucu.
+
+590
+01:32:29,872 --> 01:32:31,872
+Class, o, ya.
+
+591
+01:32:31,872 --> 01:32:36,372
+3x'e tıkındayken %1'e tıklanmaz mıyım ya Allah aşkına?
+
+592
+01:32:37,372 --> 01:32:38,372
+Neyse.
+
+593
+01:32:41,872 --> 01:32:42,872
+Sos gibi söyleyelim.
+
+594
+01:32:46,931 --> 01:32:48,931
+Okay.
+
+595
+01:32:53,811 --> 01:32:57,491
+Please don't forget how to define a generic data structure.
+
+596
+01:32:58,771 --> 01:33:04,051
+That structure name and the element type between those text students.
+
+597
+01:33:04,051 --> 01:33:08,771
+And after defining it, we have to initialize the data structure.
+
+598
+01:33:08,771 --> 01:33:10,051
+It's important.
+
+599
+01:33:10,707 --> 01:33:17,767
+Getter methods are easier. Get student count because students are size. Do not forget the size method.
+
+600
+01:33:18,827 --> 01:33:27,527
+And about the add student method, size students will count later. Add student method if get student count.
+
+601
+01:33:28,887 --> 01:33:36,707
+In here, I did it in the opposite order, no problem. First, I'll check the capacity and then I check the...
+
+602
+01:33:40,115 --> 01:33:43,515
+Students' existence with the fine student method.
+
+603
+01:33:44,076 --> 01:33:47,635
+If this is not null, then student actually exists.
+
+604
+01:33:47,836 --> 01:33:49,235
+We shouldn't edit twice.
+
+605
+01:33:50,395 --> 01:33:54,996
+Therefore, for student address, students don't add to student.
+
+606
+01:33:55,435 --> 01:34:00,095
+And this is how you add something, some element to a data structure.
+
+607
+01:34:00,615 --> 01:34:01,675
+And then return to.
+
+608
+01:34:05,524 --> 01:34:13,644
+Or, instead of those two last lines, I can also write this line to art zero.
+
+609
+01:34:14,384 --> 01:34:15,264
+Umta artışmıştık.
+
+610
+01:34:16,163 --> 01:34:17,043
+Let's continue.
+
+611
+01:34:20,595 --> 01:34:24,195
+This is the find-strand method, just like...
+
+612
+01:34:24,195 --> 01:34:27,995
+I have used equals method of string.
+
+613
+01:34:27,995 --> 01:34:34,995
+I guess it's a better way to do so, but if you wish, you can compare to and check for equivalence to zero.
+
+614
+01:34:35,995 --> 01:34:42,195
+If this is found, it's returned, otherwise it's not returned.
+
+615
+01:34:42,195 --> 01:34:45,195
+Let's check the increase capacity.
+
+616
+01:34:45,492 --> 01:34:47,252
+İngilizce kapasite.
+
+617
+01:34:47,252 --> 01:34:55,652
+Here again, this is the, this is very similar.
+
+618
+01:34:56,852 --> 01:35:04,332
+Şimdi ben aslında hani kapasite derken hani dersin kapasitesini diye düşünmüşüm ders notunu hazırlarken.
+
+619
+01:35:04,332 --> 01:35:07,132
+O yüzden yeni kapasite şey.
+
+620
+01:35:07,412 --> 01:35:08,812
+Ha bu da önce bir yine.
+
+621
+01:35:10,868 --> 01:35:25,808
+Burada ters mantık düşünüyorum. Eğer problem varsa işlem yapmaya geri dön. Aksi taktirde kapasiteyi atar işlemlemiştim. O da olur, fark etmez. Ama şu ikisinin arasındaki fark var. Kapasiteyi kullanarak da gitmişim.
+
+622
+01:35:30,068 --> 01:35:32,028
+Yani siz bilirsiniz, hepsi olur.
+
+623
+01:35:33,488 --> 01:35:40,627
+Şimdisiyle birlikte yazdığımız versiyonu nesne sayısından daha az yapılmasın diyor.
+
+624
+01:35:40,627 --> 01:35:49,627
+Ders notumdaki metot ise bir dersin kapasitesi, yani increase kapasitesi, decrease edilememeli diyor.
+
+625
+01:35:52,368 --> 01:35:54,587
+Aslında daha mantıklı.
+
+626
+01:35:55,731 --> 01:36:22,692
+Diyelim ki dersler 17 öğrenci var. Ben set capacity 10 dersen, yani bir öğrenci ne olacak? Yani saçma olacak. Ama yani çok da fark etmez. O da Google demek istiyorum. Classes'de biraz daha caf caflı yapmışım ders notunda. Ama yapacağım for dönüşü içerisinde, for iş dönüşü içerisinde.
+
+627
+01:36:23,119 --> 01:36:26,520
+Bütün elemanlarımız, yazmak.
+
+628
+01:36:27,740 --> 01:36:33,240
+Tabi burada şimdi şey, birinci öğrenci, ikinci öğrenci de yazmadım size dikkat ederseniz.
+
+629
+01:36:34,880 --> 01:36:38,240
+İsterseniz ona da ekleyebiliriz.
+
+630
+01:36:39,300 --> 01:36:43,460
+Şöyle diyelim, show classes version 2, we can create another one.
+
+631
+01:36:44,920 --> 01:36:46,100
+If you wish.
+
+632
+01:36:51,123 --> 01:36:51,543
+Şöyle.
+
+633
+01:36:55,444 --> 01:37:01,444
+I will use the regular for loop 4.
+
+634
+01:37:01,444 --> 01:37:11,444
+Ne demiştik? Capacity or student size.
+
+635
+01:37:18,068 --> 01:37:19,627
+Şimdi yukarı varmıştak.
+
+636
+01:37:29,716 --> 01:37:32,536
+Ha, şimdi başlık satın alır, satın alır, yazalım.
+
+637
+01:37:32,536 --> 01:37:33,096
+Pardon.
+
+638
+01:37:38,579 --> 01:37:56,059
+Let's just write, instead of a student, I will just write students that get I, but get NUMBS.
+
+639
+01:37:56,059 --> 01:37:56,559
+Okay.
+
+640
+01:37:58,939 --> 01:38:01,119
+Again, the same thing.
+
+641
+01:38:01,359 --> 01:38:01,659
+Yes.
+
+642
+01:38:05,332 --> 01:38:07,212
+Şu büyüteyim artık arkadaşlar.
+
+643
+01:38:11,212 --> 01:38:14,852
+Tam o büyüteyim yerine zoom şeyin oraya geliyor.
+
+644
+01:38:16,852 --> 01:38:18,432
+Şöyle yapalım.
+
+645
+01:38:20,272 --> 01:38:27,372
+And in addition here I can also write I plus one.
+
+646
+01:38:27,372 --> 01:38:32,792
+Plus, plus, plus.
+
+647
+01:38:33,619 --> 01:38:36,880
+Ah, şarkıda şuna bakma boşver bakayım.
+
+648
+01:38:37,339 --> 01:38:37,880
+Şuraya olsun.
+
+649
+01:38:38,699 --> 01:38:41,799
+Okay, this is the Arteratus version.
+
+650
+01:38:42,519 --> 01:38:47,439
+I can demonstrate both in text.
+
+651
+01:38:53,844 --> 01:39:13,923
+Buraya kadar sorunuz varsa, son arkadaşlar. Çünkü course sınıfının kodunu bitirdim. Şimdi bir de birkaç önemli yolcu tutup, prensi ekleyip final falan bir döküm görelim. En temel sınama işleri. Ona bakalım nasıl almış? Şunu artık büyütebilirim.
+
+652
+01:39:22,195 --> 01:39:29,195
+Ha, bu da şeyle olan versiyonu, müziğin olan versiyonu, onu yaparız karşılaştığımızda.
+
+653
+01:39:29,875 --> 01:39:32,235
+Şu, Menü Test Evaluation, şuna bakalım.
+
+654
+01:39:32,375 --> 01:39:35,576
+N-P-10-A, Menü Test Evaluation.
+
+655
+01:39:36,235 --> 01:39:37,435
+Onu bakalım şimdi.
+
+656
+01:39:40,076 --> 01:39:40,315
+Şu.
+
+657
+01:39:40,996 --> 01:39:46,355
+Ders notumda yüksek yaşıyor, biraz eski ama hani, Menü Test Evaluation oldu diyelim.
+
+658
+01:39:46,996 --> 01:39:51,015
+Ondan sonra şimdi tabii ötük şeylerimiz de var.
+
+659
+01:39:59,507 --> 01:40:00,387
+Saat işe analı.
+
+660
+01:40:08,787 --> 01:40:19,647
+Evet, şunu bir kaydet. Ondan sonra kopyalar ve şu haf ton yapıştır. Oradan gidelim bakalım.
+
+661
+01:40:21,867 --> 01:40:29,607
+Evet, şimdi şu kodlu bir ders. Şu adlı ders. Şimdi kapasitesini 3 yapalım demişiz.
+
+662
+01:40:29,607 --> 01:40:35,427
+Birinci öğrenciyi tanımladık. Bu derse bu öğrenciyi ekleyebilmemiz lazım.
+
+663
+01:40:36,435 --> 01:40:43,076
+Ondan sonra, ekmelikten sonra, bunun bize true döndürmesi lazım.
+
+664
+01:40:43,176 --> 01:40:45,195
+Yani false dönmüşse problem değil diyecek.
+
+665
+01:40:45,636 --> 01:40:48,176
+Şimdi, bu arada her şey kırkçı ekran yazalım demişim.
+
+666
+01:40:48,416 --> 01:40:52,096
+Yoksa test completed diyeceğim şu problem.
+
+667
+01:40:52,096 --> 01:40:53,096
+Yoksa.
+
+668
+01:40:54,096 --> 01:40:54,376
+Sonra.
+
+669
+01:40:54,899 --> 01:41:05,579
+Aynı öğrenciyi iklimatikleri ekleyememem lazım. Bunları da aynı öğrenciyi tekrar eklemeye çalışıyorum ve bu durumda eğer oturduğu yerleşse problem ikiye ekliyorum.
+
+670
+01:41:06,931 --> 01:41:25,851
+İkinci öğrenciyi ekliyorum. Ekleyebilmeyim bir problem olmamalı. Hani en son sınıf listesinde de göreceğim. Ama hani gördükle işte aslında böyle liste değerlendirme türünden test etmek çok da verilmediği. O yüzden zaten JVT falan dedik. Öylesini de yapacağız. Ama haftaya kalır artık. O kadar istiştirebileceğim.
+
+671
+01:41:27,028 --> 01:41:51,207
+Bu öğrenciyi de ekledim. Ondan sonra cevap. Şimdi üç kişi demiştim. Yaşar cevabı Fatih. Üç öğrenci. Eklendi. Dördüncü öğrencinin eklenememesi lazım. Eklemeye çalıştım. Bu eklemeye çalıştığında dönen return bar true ise problemik diyecek. Ondan sonra şu öğrencilerden birini arayalım. Orta boğaz bir tanesini. Numarasını verdim.
+
+672
+01:41:51,604 --> 01:41:59,663
+Bu metodun geri döndürdüğü sorucu öğrenci nesnesi hatiyle aynı nesne değilse, o zaman problemde değil.
+
+673
+01:42:00,864 --> 01:42:03,663
+Ondan sonra cıma...
+
+674
+01:42:03,663 --> 01:42:10,184
+Şimdi bakın burada 21. ve 23 yıl satırdaki testler aynı bir görüntüse de tam olarak aynı değil.
+
+675
+01:42:10,184 --> 01:42:12,184
+Bakın 21. satırda...
+
+676
+01:42:12,979 --> 01:42:21,099
+Object Equivalence yapıyorum. Yani şu metodun döndürdüğü nesne ile şuradaki nesne aynı nesneler mi diye bakıyorum.
+
+677
+01:42:22,399 --> 01:42:30,859
+Şimdi neyse aslında Fatih'in numarasıyla bir öğrenci aradığında numar gelmemesi lazım. Bir nesne gelmesi lazım. Burada ona bakıyorum.
+
+678
+01:42:30,859 --> 01:42:36,843
+Tabii ki aslında o numarayla o nesne gelecek aslında. Fakat olur da...
+
+679
+01:42:36,851 --> 01:42:50,912
+Onun numarasıyla başka bir öğrenci de kalitli olmuş olabilir. Yani aynı numaraların olacağı iki öğrenci oluşturulmaz ama bir tasdik olmuş olmuş. Bir kullanıcı yanlış kontrol yapmadan bir girmiştir. Bir şeyler olmuştur.
+
+680
+01:42:50,912 --> 01:42:59,511
+Ve o yüzden aslında 23'ün şeklinde test yapmaktansa 21. yıl sırtındaki bir test yapmak daha anlamlıdır.
+
+681
+01:43:00,083 --> 01:43:18,923
+21. sırada object equivalence'a bakıyorum. Aynı nesnelerde bu dönemde bu. Burada ise bu numaraları bu nesne dönüyor mu? Herhangi nesne diye dönüyor mu diye bakıyorum. Çünkü null olmayan bir nesne olması tekstil geçmeye yetiyor. Ama null olan bir nesne dönmek için de problem 5 geçiyor.
+
+682
+01:43:19,279 --> 01:43:22,999
+Sonra ders kapasitesini dördü çıkarttığımda artık üniversite ekleyebilmeli.
+
+683
+01:43:23,239 --> 01:43:25,139
+Ekleyememişsen, total tam 6 diyecek.
+
+684
+01:43:25,579 --> 01:43:26,719
+End of test diyecek.
+
+685
+01:43:26,939 --> 01:43:30,539
+Ondan sonra şu sınıf listesinde bir yazdığım ki versiyonda.
+
+686
+01:43:31,179 --> 01:43:31,739
+Onu da yapalım.
+
+687
+01:43:50,612 --> 01:43:56,532
+Bakalım neler varmışım bana. Evet, hiçbir problem demeden end of test kitap problem yok.
+
+688
+01:43:57,752 --> 01:44:01,632
+Class list koddan sonra, evet boşluklar üzerim şimdi olmuş, neyse.
+
+689
+01:44:02,472 --> 01:44:08,912
+1, 2, 3, 4 öğrenci de gösterdi. Evet, şurada da 1, 2, 3, 4 numaralı öğrenci gösterdi.
+
+690
+01:44:09,271 --> 01:44:15,692
+Şimdi burada şunlara bir dikkat etmemiz veya hatırlamamız lazım diyeyim.
+
+691
+01:44:19,155 --> 01:44:26,815
+Şimdi bu kodu diziyle yazdığımızda, for each dönüşünü kullanırken problem yaşıyoruz, hatırlayın.
+
+692
+01:44:27,956 --> 01:44:42,536
+When we coded the one to many associationship by using arrays, such as in the example of gallery and car, we couldn't directly use the for each group.
+
+693
+01:44:43,028 --> 01:44:50,888
+We use the regular for loop and we have iterated until the car count value.
+
+694
+01:44:52,008 --> 01:45:01,728
+But in data structures, you could use, et cetera, we can safely use the forage loop.
+
+695
+01:45:03,608 --> 01:45:05,347
+Nothing wrong happens.
+
+696
+01:45:06,068 --> 01:45:16,148
+Ah, maybe something go wrong, something wrong can go, something can happen because we have used every element in the prints.
+
+697
+01:45:16,747 --> 01:45:26,947
+Just let me increase capacity to 6, for example, and we shouldn't get any null pointer exceptions.
+
+698
+01:45:26,947 --> 01:45:28,807
+Let's have this too.
+
+699
+01:45:33,939 --> 01:45:45,059
+Herküvastion, Lera, but look, in both versions, both with the 4-inch loop and the regular 4-look, we didn't encounter with any problems.
+
+700
+01:45:45,059 --> 01:45:59,659
+But if this was a regular array, we should obtain, we should get null pointless exceptions in the first version of the show classes.
+
+701
+01:46:01,108 --> 01:46:02,707
+And maybe in the second two.
+
+702
+01:46:05,908 --> 01:46:06,587
+That's it.
+
+703
+01:46:10,452 --> 01:46:12,532
+Okay. Any questions?
+
+704
+01:46:13,632 --> 01:46:14,572
+Daha sağ olun arkadaşlar.
+
+705
+01:46:16,172 --> 01:46:23,052
+Yoksa da şu söz verdiğim üzere bir iki sıra söz üstüne tartışacağız.
+
+706
+01:46:27,828 --> 01:46:28,307
+Evet.
+
+707
+01:46:32,115 --> 01:46:34,456
+Soru yok galiba. Bakalım o zaman.
+
+708
+01:46:37,076 --> 01:46:41,836
+Şeyde birisi. Hangi soruyu merak ediyorsunuz arkadaşlar? Hangi soru kafanıza takıldı?
+
+709
+01:46:42,456 --> 01:46:51,336
+Hocam şu çoğunluk sorusu vardı. One to many sembolü vardı. O sembolü birden fazla yer şekilde gösterilebiliyor gibi hani gördük yani.
+
+710
+01:46:51,336 --> 01:46:55,155
+Yani nokta nokta star şeklinde de gösterilebiliyor sanki.
+
+711
+01:46:56,256 --> 01:46:57,416
+Sıfır nokta nokta.
+
+712
+01:46:57,895 --> 01:46:58,895
+Ona bir bakalım işte.
+
+713
+01:46:59,764 --> 01:47:06,764
+Tamam. Bir kısaca paylaşımı kapatıyorum. Bakıyorum sonra yaşayalım. Ondan sonra şeyleri bir alayım.
+
+714
+01:47:06,764 --> 01:47:18,764
+Şimdi sorunlarımda daha yakından bakmayacak.
+
+715
+01:47:27,475 --> 01:47:30,055
+Ara, ara, ara.
+
+716
+01:47:34,195 --> 01:47:36,515
+Bir dakika, nasıl yapmıştık ya?
+
+717
+01:47:36,916 --> 01:47:38,115
+Yümdüm ne yapmıştık?
+
+718
+01:47:42,916 --> 01:47:46,155
+Hadi, ayırsın bir dönemim bizimle.
+
+719
+01:47:50,739 --> 01:47:56,876
+Arkadaşlar, class, object,
+
+720
+01:48:15,859 --> 01:48:16,319
+Tamam.
+
+721
+01:48:20,083 --> 01:48:21,083
+Şimdiye
+
+722
+01:48:21,083 --> 01:48:21,836
+PYM JBZ
+
+723
+01:48:32,851 --> 01:48:38,692
+Bu, ki, yöntem, son, yöntem, nemekstu, skaalba,
+
+724
+01:48:40,251 --> 01:48:41,211
+nem,
+
+725
+01:48:43,011 --> 01:48:44,551
+şu, nemekstu, skaalba,
+
+726
+01:48:44,551 --> 01:48:46,251
+bu, ki, işin, konfanya,
+
+727
+01:48:46,251 --> 01:48:48,891
+nem, tamam, şu, ya, son,
+
+728
+01:49:00,431 --> 01:49:21,271
+Şunu mu diyordunuz [öğrenci]? Hangisi sıfır ya da daha fazla matikisti anlamına gelmektedir? Şimdi bu da doğru cevap E şıkkı. Tabii şimdi şey, dört kamu düşünmüştük, ne yapmıştık hatırlamıyorum ama nihayetinde şöyle bir şey yaptık bu arada.
+
+729
+01:49:22,612 --> 01:49:28,731
+Mesela şu sorunun aynı soru. Birkaç versiyonunu hazırladık.
+
+730
+01:49:29,108 --> 01:49:31,128
+Mesela bu beş yıkkı dörde indirdik.
+
+731
+01:49:31,328 --> 01:49:38,508
+Tabii her birinde doğru yıkkı korumak kaydıyla ama farklı ışıkları eriyerekten veya bağırış birileri uydurarak da diyelim ki,
+
+732
+01:49:38,788 --> 01:49:46,428
+hani böylece herkesin aynı sorunla değil, aynı sorunun sadece biraz farklı türebleriyle karşılaşmasını,
+
+733
+01:49:46,588 --> 01:49:52,788
+böylece herkesin kendi katkılarıyla bu sınavlara girmesini sağlamaya çalıştık biz de hocalar olarak.
+
+734
+01:49:52,788 --> 01:49:57,108
+Ama hani more or less, yani üç aşağı beş yıkkı sorun.
+
+735
+01:49:57,108 --> 01:50:17,348
+Bu, şimdi yıldız kendi adıyla sıfır ya da daha fazla anlamına gelmektedir. O yüzden eğer sıfır olabilecekse zaten yıldız koyup geçiyoruz. Ama bir ya da daha fazla, iki ya da daha fazla gibi bir şey söyleyeceksek o zaman mesela bir iki noktaya yana yıldız dememiz lazım.
+
+736
+01:50:17,728 --> 01:50:27,588
+Tamam mı? Burada bu ayrıntıyı söylüyorduk, konuşuyorduk hep derslerde. O yüzden bu sorunun tek bir doğru ışıkı var. O da Salih Yönes.
+
+737
+01:50:28,248 --> 01:50:31,288
+Yani sıfırda yıldız olunca ne anlama geliyor?
+
+738
+01:50:32,968 --> 01:50:40,148
+Anlamsız oluyor. Bir şey gibi. Yani ne diyeyim? Nasıl bir örnek vereyim?
+
+739
+01:50:43,091 --> 01:50:48,951
+Benim ismim, adım, soyadım Yunus Emre Selçuk demeye benziyor.
+
+740
+01:50:49,311 --> 01:50:51,631
+Yani ismim, adım aynı şey.
+
+741
+01:50:51,871 --> 01:50:57,031
+Ya da isim, soyad, yani isim derken soyadı ekliyor musunuz, eklemiyor musunuz?
+
+742
+01:50:57,031 --> 01:50:57,571
+Şu an gibi.
+
+743
+01:50:57,991 --> 01:51:04,791
+Hani burada biraz zidandım, duplike benim ismim, adım, soyadım, Yunus Emre Selçuk demek gibi oluyor.
+
+744
+01:51:05,211 --> 01:51:06,951
+Adım Yunus Emre Selçuk bu kadar gibi.
+
+745
+01:51:06,951 --> 01:51:08,871
+Ya da ne bileyim.
+
+746
+01:51:09,619 --> 01:51:11,579
+Başka şu an çok bir şey aklıma gelmedi.
+
+747
+01:51:12,148 --> 01:51:17,388
+Çünkü internetten baktığımızda hani o şekilde de bazı yerlerde gösterim yapılmış da hani.
+
+748
+01:51:18,048 --> 01:51:33,788
+Yanlış kullanım. Yanlış kullanım. Hani şey derken özellikle vurguluyoruz. Yıldız veya işte yıldız sıfırı geçeriz ama bir alt limit olacaksa o mutlaka sıfırdan üç bir alt limit o zaman işte bir noktaya yıldız.
+
+749
+01:51:40,148 --> 01:51:49,608
+3 sayı kırmızı kağıttan fazla göremez. O ne demek oluyor? 9.10 diyelim. 9.2 noktaya yerine 11 gibi bir alt limiti var o anlamda.
+
+750
+01:51:49,888 --> 01:51:51,808
+Yani yıldız sıfırda kapsıyor diyorsunuz.
+
+751
+01:51:52,208 --> 01:51:52,988
+Evet, evet.
+
+752
+01:51:53,568 --> 01:51:54,708
+Tamam o zaman teşekkür ederim.
+
+753
+01:51:55,448 --> 01:51:56,068
+Hoş atıyorsunuz.
+
+754
+01:51:57,068 --> 01:52:02,228
+Evet, başka eğer ana hatlarıyla soruyu hatırlıyorsanız da şimdi bütün soruları aksanını paylaşırsam,
+
+755
+01:52:02,228 --> 01:52:07,228
+bu tür bir, böyle bir soru vardı hocam, deriniz varsa onları bulup açıp tartışırız.
+
+756
+01:52:07,988 --> 01:52:09,807
+Benim başka sorum yok. Teşekkür ederim.
+
+757
+01:52:10,548 --> 01:52:13,648
+Tamam. Ne demek? Diğer arkadaşlarım da varsa kalın.
+
+758
+01:52:17,492 --> 01:52:19,972
+Yoksa ben kaldım diyelim, not edeyim bu arada.
+
+759
+01:52:21,312 --> 01:52:23,612
+Şimdi bugün 3 Mayıs,
+
+760
+01:52:26,272 --> 01:52:31,412
+167'den nereye kadar geldik?
+
+761
+01:52:31,412 --> 01:52:33,572
+Şeye kadar geldik.
+
+762
+01:52:35,652 --> 01:52:39,112
+Şey, 177'ye kadar geldik diyelim.
+
+763
+01:52:39,232 --> 01:52:42,212
+178 diyeyim ama
+
+764
+01:52:44,340 --> 01:53:04,340
+Ama bizi ile karşılaştığında ve J-Unit şeklinde şey yapmadık. Sadece numarız testi yaptık.
+
+765
+01:53:10,336 --> 01:53:13,836
+Siz görmüyorsunuz ama ben egzardosyamı kaydettim.
+
+766
+01:53:15,735 --> 01:53:21,756
+Evet, peki arkadaşlar. O zaman haftaya saat 2'dir. İnşallah görüşmek üzere. Şimdi koştuk.
