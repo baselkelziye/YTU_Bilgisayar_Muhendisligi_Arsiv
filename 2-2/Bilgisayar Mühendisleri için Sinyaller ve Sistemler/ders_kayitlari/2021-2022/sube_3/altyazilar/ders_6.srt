@@ -1,0 +1,3195 @@
+1
+00:02:28,147 --> 00:02:29,740
+Arkadaşlar sesim geliyor mu?
+
+2
+00:02:34,003 --> 00:02:36,223
+Geliyor hocam ama biraz uzaktan geliyor.
+
+3
+00:02:36,864 --> 00:02:39,283
+Uzaktan geliyor, tamam. Kırk ağrı bakayım.
+
+4
+00:02:43,635 --> 00:02:45,436
+Şu andaki önler mi?
+
+5
+00:02:46,436 --> 00:02:47,436
+Hala aynı.
+
+6
+00:03:05,108 --> 00:03:06,108
+Sesli birçok.
+
+7
+00:03:39,795 --> 00:03:53,075
+Maalesef çözemedim sorunu. Biraz daha sesi artırma imkanı olabilir. Ben de ekstradan sesimi artıracağım. Hala ayakım var mı arkadaşlar?
+
+8
+00:04:46,740 --> 00:04:51,240
+Ben de başka bir kuraklıkla konuşuyorum. Bu nasıl acaba?
+
+9
+00:05:04,403 --> 00:05:06,091
+Doğan'ın güzel bir konu yoksa.
+
+10
+00:05:23,444 --> 00:05:30,244
+Aynı gibi geldi. Şöyle diğer kulaklık çıkartıp komple yeni bir kulaklık taktın aslında.
+
+11
+00:05:31,843 --> 00:05:34,156
+Ondan dolayı öyle olmuş olabilir.
+
+12
+00:05:46,067 --> 00:05:48,347
+Ama bir iki dakika daha bekleteyim sizi ben.
+
+13
+00:05:49,347 --> 00:05:50,867
+Kulaklık ayarlarına bakayım.
+
+14
+00:07:03,315 --> 00:07:14,596
+Şu ana kadar en iyi opsiyon şu arkadaşlar. Şu anki hazırladığı konfigürasyon. Bundan sonra da set gelmiyorsa şu anda yapacak pek bir şeyim yok maalesef.
+
+15
+00:07:16,195 --> 00:07:20,115
+Umuyorum. Yine en azından anlaşılıyordur diye.
+
+16
+00:07:29,716 --> 00:07:34,516
+Eğer bir de ses yüküleşirse mutlaka onu söyleyin, ben onu çözmeye çalışayım.
+
+17
+00:07:46,196 --> 00:08:08,940
+Şimdi, aslında bugünün konusu doğrudan yine konvolüsyona devam edeceğiz. Konvolüsyonla ilgili örnekler çözeceğiz. En sonunda dersin sonunda bir diferanser denklemlerin kullanılması ile ilgili bilgilendirme yapıp dersi bitireceğiz. Bu sırada ödev ile ilgili...
+
+18
+00:08:09,043 --> 00:08:15,283
+Yine açıklamamızı yapacağız. 30 Kasım'a kadar ödev vereceğiz. Bugün paylaştık ödevi.
+
+19
+00:08:15,283 --> 00:08:21,443
+Ama bunları anlatmadan önce bir geçtiğimiz haftanın tek haline yapalım.
+
+20
+00:08:21,443 --> 00:08:31,843
+Şimdi öncelikle biz her şeyi neden bu şekilde otomatik düzeltiyor? İlgisayarda her şey değişmiş güncelerden sonrasında.
+
+21
+00:08:40,755 --> 00:08:57,995
+Sistemleri hep bu şekilde modarlıyorduk. Bir giriş XT girişi, bir de YT çıkışı olacak şekilde. Bu sistemin ne yaptığı tabii ki her durumda değişebiliyordu. Kendi yapısını gösterecek şekilde.
+
+22
+00:08:57,995 --> 00:09:08,635
+Şimdi bu şekilde bir sistem verildiğinde sistemin çıkışını sistemin kendi dürtü yanıtı üzerinden bulabiliyorduk.
+
+23
+00:09:09,364 --> 00:09:11,684
+Dürt yanıtını bulmak kolaydır biliyorsunuz.
+
+24
+00:09:12,224 --> 00:09:15,704
+Veya adamlar da bize XT'yi ve YT'yi verebilirdi.
+
+25
+00:09:15,704 --> 00:09:17,544
+Pardon, HT'yi verebilirdi.
+
+26
+00:09:18,084 --> 00:09:22,204
+Bunları verdiği durumda YT'nin kaç olduğunu sorabilir.
+
+27
+00:09:23,364 --> 00:09:26,544
+Bunun kaç değerinde olduğunu adam bize sorabilir.
+
+28
+00:09:34,676 --> 00:09:53,676
+Bu durumda bunun çıkışını tabii ki şu şekilde yaptığımızı düşünmeniz gerekiyor. Konvolüsyonla hesapladığımızı mutlaka aklımızda bulundurmamız lazım. Konvolüsyon simgesi olarak şu çarplı simgesini kullanıyorduk. Bu aslında xt konvolüsyon hd'yi gösteriyor.
+
+29
+00:10:04,532 --> 00:10:07,092
+Şöyle Tav şeklinde yazayım.
+
+30
+00:10:07,092 --> 00:10:10,092
+Neden ise her seferinde benim yazdığımı düzeltiyor.
+
+31
+00:10:10,092 --> 00:10:12,940
+Buna henüz bir çözüm bulamadım.
+
+32
+00:10:19,764 --> 00:10:21,764
+PKD özelliklere gitmeye çalışıyorum.
+
+33
+00:10:34,964 --> 00:10:40,724
+Neyse. X-tau çarpı, H.
+
+34
+00:10:45,299 --> 00:10:50,299
+T-TAU, B-TAU şeklinde hesaplarını yürüdü.
+
+35
+00:10:53,716 --> 00:10:56,216
+Tabii ki konvolüsyon özelliklerinden ben şunu biliyorum.
+
+36
+00:10:56,716 --> 00:11:04,115
+Aslında XT ile HT'yi konvolüsyonu sokmakla, HT ile XT'yi konvolüsyonu sokmak aynı şeydi.
+
+37
+00:11:04,456 --> 00:11:08,456
+Dolayısıyla bu özellik üzerinden şunu da yapabiliyordun.
+
+38
+00:11:08,456 --> 00:11:19,176
+Eksi sonsuzdan artı sonsuza H tau XT eksi tau D tau şeklinde bunu da hesaplayabilirim.
+
+39
+00:11:19,892 --> 00:11:28,612
+İkisi de aynı, kesinlikle ikisi de aynı işi görüyor ve çıktılar hiçbir şekilde değişmiyor bu durumda bunu söylemiş olalım.
+
+40
+00:11:28,612 --> 00:11:39,612
+Peki bunu grafiksel olarak çözerken neye dikkat ediyorduk? Şurada belirttiğimiz gibi, adam bize aslında XT ve HT'yi veriyordu.
+
+41
+00:11:39,612 --> 00:11:46,052
+Şimdi bu XT ve HT'yi veriyor ama YT'yi hesaplamak için şöyle bir formül koşturmam lazım.
+
+42
+00:11:46,100 --> 00:11:48,100
+Şurada belirttiğim formüldeki gibi.
+
+43
+00:11:48,100 --> 00:11:57,100
+Dolayısıyla bu formülde ilk yapacağım şey, öbürü ki x tau ile h tau'yu çizmek.
+
+44
+00:11:59,100 --> 00:12:06,700
+Bunu çizdikten sonra formülde bakıyorum, tau'nun önünde eksi var. Demek ki benim 2 de h'ı...
+
+45
+00:12:07,187 --> 00:12:15,748
+eksi ile çarpmam ya da zaman eksenine göre aynalamam gerekecek. TAO eksenine göre denliyorsunuz. Aynalamam gerekecek.
+
+46
+00:12:16,708 --> 00:12:29,028
+Daha sonra ne var? 3, HT-TAO'yu bulmam lazım. Eğer ben bunu bulursam, bakın burada HT-TAO'yu zaten bulmaya çalışıyorum.
+
+47
+00:12:34,292 --> 00:12:44,292
+Şu fonksiyonu bulabilirim. Bu fonksiyon bana ne söyleyecek? Bu fonksiyon aslında altında kalan alanı hesaplayacağı bir fonksiyon olacak.
+
+48
+00:12:44,292 --> 00:12:56,292
+Birinci fonksiyonla ikinci fonksiyonu çarpıyorum. Bakın. Bu durumda bu çarpım sonrasında elde ettiğim şeyin altında kalan alan yt ile ilgili bir bilgi verecek bize.
+
+49
+00:13:01,011 --> 00:13:04,231
+Farklı bir el direnide göstermek daha iyi olur.
+
+50
+00:13:04,771 --> 00:13:15,451
+Moi ile belirttiğim kısım, aslında X de, şey X tau, yani T'ye bağlı olarak değişmeyen bir işaret.
+
+51
+00:13:15,451 --> 00:13:20,331
+Bu yüzden bu işaret, birinci işaret, sabit olarak belirleyeceğim.
+
+52
+00:13:21,111 --> 00:13:24,651
+Bunları neden bu şekilde gösteriyor ya? Baya kötü oldu.
+
+53
+00:13:27,028 --> 00:13:40,028
+Şurada OK seçilmiş, ondan dolayıymış. Tamam. Şu anda iş çözdük. Dolayısıyla şu kısmı silebilirim. Güzel oldu. Şimdi orayı daha iyi bir şekilde gösterebilirim.
+
+54
+00:13:42,028 --> 00:13:54,604
+Burada sabit kalacak ikinci kısım aslında gezecek gibi düşünebiliriz. Gezeci kısım bu kısım olacak.
+
+55
+00:13:54,995 --> 00:14:09,395
+Ben aynı formülü aşağıdaki formüldeki gibi de hesaplayabileceğini söylemiştim. Aynı hesabı bu şekilde de yapabilecektim. Bu hesapta ise istiyorsan birinci yani h olarak yönettiğim sabit kalabilir x gezelim.
+
+56
+00:14:15,700 --> 00:14:26,180
+Dediğim gibi yolumuz şuydu, ilk önce bunu hesaplayalım, sonra t-tau'yu bulalım, sonra kaydırıp çarparak y-t'yi elde etmeye çalışacağız.
+
+57
+00:14:26,900 --> 00:14:31,100
+Şimdi geçtiğimiz haftaki örneği tekrar geri döneceğiz, bunu daha iyi bir şekilde anlamak için.
+
+58
+00:14:34,180 --> 00:14:41,340
+Ama bunu dönmeden önce çok basit bir şekilde h-t'den tau'yu nasıl geçiriyor, bunu hemen gösterelim.
+
+59
+00:14:42,420 --> 00:14:43,160
+Şunu sileyim.
+
+60
+00:14:43,796 --> 00:14:46,596
+Şöyle mavi bir kalem alayım, biraz daha farklı olsun.
+
+61
+00:14:49,016 --> 00:15:02,736
+Diyelim ki adam bize Hp olarak böyle bir fonksiyon veriyor. Bu fonksiyon aslında çok basit bir fonksiyon ve sıfırdan bile kadar bir çıktısı üretiyor.
+
+62
+00:15:03,895 --> 00:15:08,096
+Şimdi buradan H dağıya nasıl geçeriz arkadaşlar? Söyleyebilecek olan var mı?
+
+63
+00:15:14,611 --> 00:15:16,611
+İlk kısımdakini yapıyoruz.
+
+64
+00:15:18,611 --> 00:15:19,611
+Ne dersiniz?
+
+65
+00:15:29,268 --> 00:15:38,548
+Her yerine TAV yazarız. Doğru. Aslında fonksiyon hiç değişmeyecek. Şurası HTAV şeklinde gözükecek.
+
+66
+00:15:40,128 --> 00:15:50,327
+Bakın, peki bunu biliyorsam, ikinci adımdaki H-TAV'yı nasıl yazabilirim? Bunu nasıl yazabilirim?
+
+67
+00:15:56,320 --> 00:15:58,320
+Şöyle bir şey yazabilirim.
+
+68
+00:16:02,740 --> 00:16:29,879
+Bakın aslında burada şöyle bir durum var. H-tau aslında H0-tau gibi de düşünebilirsiniz. Burada sıkki sıfır, T'yi tençil edecek gibi düşündüğünüz zaman aslında T değerinin şuradan sıfır olduğunu düşünebilirsiniz. Bu yüzden üçüncüye geçecek olurken Ht-tau genelleştirmek amacıyla
+
+69
+00:16:38,899 --> 00:16:55,519
+Şu kısmı genelleştirmek amacıyla H, T-Tav yazdığımız şeyde, aslında burada T'nin negatif değeri için sol tarafa doğru, pozitif değeri için sağa doğru ötelenmiş bir, şu işaretin ötelenmiş halini göreceğiz.
+
+70
+00:16:56,179 --> 00:17:03,620
+Şunun ötelenmiş halini göreceğiz. Peki, şurada aslında T eşittir sıfır, yani T noktası burası gibi düşünebilirsiniz.
+
+71
+00:17:05,203 --> 00:17:30,603
+Bu durumda şöyle kaydırdığında, bu sinyal buraya kaydırdığında şu nokta yine T'yi gösterecektir. Bu noktanın bir önceki değilsi tabii ki T-1'i gösterecektir. Bu sorunları çözerken çok önemli bir yapı. Eğer ki şunu belirle ederseniz bundan sonra sizin açınızdan her şey çok daha kolay olur. Çünkü birinci sinyal burada hep sabit kalacak. İkinci sinyal ise
+
+72
+00:17:30,996 --> 00:17:40,996
+Sondan sağa doğru gezerek karşılıklı çarpımlarına bakacağız. Çünkü bize şuradaki konvolüsyon formülü bunu söylüyor.
+
+73
+00:17:40,996 --> 00:17:44,908
+Burada soru işareti var mı? Aklınıza takılan bir şey var mı?
+
+74
+00:18:05,011 --> 00:18:10,011
+Peki o zaman, bunu geçen haftaki örnek üzerinden tekrar bir bakalım.
+
+75
+00:18:20,339 --> 00:18:26,339
+Şu anda ekran gelmedi mi arkadaşlar? Ekran değiştiğince size yine bir soruyorum her seferinde.
+
+76
+00:18:27,339 --> 00:18:30,124
+Değişmedi, o zaman hemen değiştiriyorum.
+
+77
+00:18:39,092 --> 00:18:40,092
+Şimdi gelme
+
+78
+00:18:46,451 --> 00:18:51,132
+Burada da aslında benim belirttiğim az önceki adımları tekrar etmiş.
+
+79
+00:18:51,731 --> 00:18:54,531
+Bir kere her zaman formüle uydurmaya çalışıyoruz bakın.
+
+80
+00:18:54,851 --> 00:19:06,291
+Bize ht ile xt'yi vermişse, yukarıdaki hesabı yapabilmek için mutlaka burada xt'yi, xtau'ya, ht'yi de aslında ht-tau'ya dönüştürmem lazım.
+
+81
+00:19:07,891 --> 00:19:11,331
+Bunun için de en başta şunları yeniden yazıyorum.
+
+82
+00:19:11,923 --> 00:19:25,003
+Burada önemli olan şey kısa olanı aslında terslemek. Yani hep H'ı tersleyecek gibi düşünüyoruz ya ama dedik ki bu aslında şu şekilde de yazılabilir.
+
+83
+00:19:35,092 --> 00:20:00,000
+ters çevirmiş oluyorsunuz. Peki hangisini kullanacağız? Tabii ki hangisi daha küçükse onu gezici sinyal olarak kullanmak çok daha mantıklı. Daha sonra bu 3 ve 4'te bunun alt kısmının t artı 1 veya t eksi 1 şeklinde gösterilebileceği ile ilgili bir şey var. Bir sonraki örnekte daha iyi göreceğiz. Sonra bölgeleri bulacağız. Bu bölgeleri...
+
+84
+00:20:00,000 --> 00:20:26,220
+İntegral hesabını yapacağız. Geçen hafta gördük ama hızlıca bu hafta da tekrar yapmış olalım. Şimdi diyelim ki bize iki sinyal verilmiş. İlk olarak yapmamız gereken neydi? Buradaki sinyalini T'nin fonksiyonu değil de T'nin fonksiyonu şeklinde yapmak. Dolayısıyla şunu, şuralara T yazarsak çok kolay bir şekilde ilk kısmı hallederiz. İkinci kısmı neydi?
+
+85
+00:20:27,124 --> 00:20:36,624
+Kısa olan sinyali flip etme ya da aynalama işidir. Peki kısa olan sinyal hangisi? Ne dersiniz?
+
+86
+00:20:44,500 --> 00:21:04,800
+H, evet. Çünkü bir saniye kadar bir süre geçirmiş, sürmüş. Dolayısıyla benim burada H'ı flip etmem gerekiyor. Aslında denklem olarak şuradaki ikinci denklemi kullanacağımı da belirtiyorum. Dolayısıyla. Yukarıdakini kullansaydım, X'i flip ettiğimi anlayacaktım.
+
+87
+00:21:07,124 --> 00:21:12,324
+Bu durumda, bakın, T yerine TA yazdık, bunu zaten çok kolay bulabiliyorduk.
+
+88
+00:21:12,324 --> 00:21:18,724
+Aşı T TA eksimine göre aynaladık, aynaladığımız zaman bunu elde ettik.
+
+89
+00:21:19,763 --> 00:21:45,403
+İkincisinde buradaki sınırlara ne yazacağımızı aslında merak ediyor. Bunu da çok kolay bir şekilde buradaki eksi tau'yu şöyle yorumlamamız lazım. 0 eksi tau gibi düşünmemiz lazım. Aslında T'nin yerine 0 verilmiş hali gibi düşünmemiz lazım. Dolayısıyla tam bu noktası aslında T'yi gösterip bir sonraki noktası da T-1'i gösteriyor gibi yorumlayabiliriz. Buradan bu sinyali
+
+90
+00:21:45,971 --> 00:22:11,831
+Eğer ki t-t'yi çizmemiz istenirse, ki mecburen çizmemiz lazım, bunun sol kısmının t, pardon t-1, sağ kısmının t olduğunu mutlaka buradan çıkarmamız gerekiyor. Bu da basit bir şey. Bu kısımlar onlarla ilgiliydi. O yüzden hızlıca geçiyorum. Şimdi en önemli, en kilit noktaya gelmiş olduk.
+
+91
+00:22:12,435 --> 00:22:18,435
+Aslında örtüşen bölgeleri ve örtüşmeyen bölgeleri belirlememiz lazım.
+
+92
+00:22:18,435 --> 00:22:23,435
+Ne dedik? X de hep sabit kalacak çünkü formül onu söylüyor.
+
+93
+00:22:23,435 --> 00:22:26,435
+Eksi sonuçsuzdan artı sonuçsıza diyor.
+
+94
+00:22:26,435 --> 00:22:31,435
+X tau, h t eksi tau deli tau diyor.
+
+95
+00:22:31,435 --> 00:22:36,435
+Bu ne için? Bunun sonucunda ne hesaplayacağım? y t'yi hesaplayacağım.
+
+96
+00:22:36,819 --> 00:22:50,819
+İlgili bir YT değeri için, bakın şu hesabı yapmam gerekiyor. Dolayısıyla şuradaki ilk bileşenin zaten T'ye göre değişmediğini net bir şekilde görebiliyorsunuz. Bu yüzden bu sabit kalıyor.
+
+97
+00:22:51,819 --> 00:23:04,364
+İlk sinyal sabit kalıyor. İkinci sinyali dolaştıracağız. Nasıl dolaştıracağız? Eksi sonsuzdan artı sonsuza kadar kaydırıp, tüm Y'ler için sonucu hesaplamaya çalışacağız.
+
+98
+00:23:05,683 --> 00:23:20,683
+Peki, şimdi şunun alt sınırına T, buna da T-1 dersek, yukarıdaki birinci sinyalle ya da sabit sinyalle, yazıcı sinyal belirli bir yere kadar çakışmıyor.
+
+99
+00:23:20,683 --> 00:23:27,483
+Yani şu darbe buradayken de çakışmıyor, darbe buradayken de çakışmıyor, kaldırdık bunları hep kaydırıyoruz.
+
+100
+00:23:28,364 --> 00:23:31,683
+Ama yukarıdaki bu adamın değerleri sıfır olduğu için...
+
+101
+00:23:32,000 --> 00:23:57,000
+Çarpımları hep yutuyor. Bu yüzden aslında şunun sağ sınırı, şuradaki sıfır noktasına gelene kadar herhangi bir kesişme söz konusu değil. Buna no overlap diyoruz aslında. Bu da T'nin sıfırdan küçük olduğu durumu gösteriyor. Peki, bu durumda peki çıkış ne olur? Ne dersiniz? Bu durumdaki...
+
+102
+00:23:57,296 --> 00:24:00,296
+H değerleri için YKK'ın ne söyleriz?
+
+103
+00:24:07,796 --> 00:24:10,036
+Çok basit bir şekilde bunu söyleyebiliriz.
+
+104
+00:24:11,036 --> 00:24:12,036
+Neydi?
+
+105
+00:24:12,036 --> 00:24:13,796
+Eksi integral
+
+106
+00:24:14,436 --> 00:24:15,796
+x ta
+
+107
+00:24:16,036 --> 00:24:17,395
+ht eksi
+
+108
+00:24:17,395 --> 00:24:18,996
+a d ta
+
+109
+00:24:18,996 --> 00:24:21,395
+Bu hesabı bu arada da yapacak olursak
+
+110
+00:24:21,956 --> 00:24:25,556
+Şimdi buradaki sınırları tabi buna göre belirlememiz lazım.
+
+111
+00:24:25,556 --> 00:24:28,596
+Buradaki alt sınır yine eksi sonuçlu olacak ama
+
+112
+00:24:28,596 --> 00:24:30,596
+üst sınır t için
+
+113
+00:24:30,996 --> 00:24:34,596
+pardon pardon şey için sıfır olmuş olacak.
+
+114
+00:24:39,188 --> 00:24:54,188
+Bu integral aralığında, tabii ki h'ın belirli bir değer aralığı var ama x'in buradaki değerleri hepsi 0. Dolayısıyla bu integral sonrasından 0 çıkacağını gösterir zaten.
+
+115
+00:24:54,188 --> 00:25:04,076
+Veya grafiksel olarak bakacağımız zaman, karşılıklı kesişen bölgeler olmadığı için bunun zaten 0 olduğunu bizim de belirtmemiz gerekiyor.
+
+116
+00:25:04,627 --> 00:25:13,748
+Peki, bu birinci bölge. İkinci bölge, onların kısmen kesiştiği bölge. Bu durumda, aslında bunu yorumlamak için
+
+117
+00:25:15,955 --> 00:25:42,827
+Sabit olan kısım zaten aynen kalıyordu. Diğer kısmı, yarısı içeride, yarısı dışarıda olacak şekilde düşünmemiz lazım. Dolayısıyla şu T bir kere her türlü sıfırın daha ötesinde, daha büyük olacak şekilde, T-1 de sıfırın altında olacak şekilde bir çizim yapıyoruz. Bunların örtüşme durumunda kesiştiği noktalar şurası olacak, aralığı. Aslında
+
+118
+00:25:43,092 --> 00:25:54,492
+Yukarıdaki ile ikisinin de aşağıdakinin de ikisinin de aynı anda olduğu noktalar, sıfırdan T'ye kadarki noktalar. Bakın şu noktayla şu nokta olarak düşünebilirsiniz.
+
+119
+00:25:55,852 --> 00:26:01,872
+Diğer kısımlar da birisi sıfır, diğeri değer taşıyor, dolayısıyla götürüyor o kısmı diye düşünebilirsiniz.
+
+120
+00:26:02,579 --> 00:26:09,819
+Buradaki iki fonksiyonun çarpımlarının alanına baktığımız zaman, o zaman karşımıza şöyle bir şey çıkacak.
+
+121
+00:26:10,419 --> 00:26:17,499
+Genliği 6 olan ve genişliği 0'dan t'ye kadar olan bir şeyin alanını hesaplamamız gerekecek.
+
+122
+00:26:18,199 --> 00:26:22,579
+Çünkü biz biliyoruz ki integral aslında alan anlamına geliyor.
+
+123
+00:26:24,884 --> 00:26:39,124
+Biz burada basit fonksiyonlar verdiği için kendimiz alan hesabı yapabiliriz veya integral üzerinden de bunun hesabını yapabilmemiz mümkün. İkisi de bizim için doğru sonuçlara götürecektir.
+
+124
+00:26:41,523 --> 00:26:47,523
+Bu ikinci alanda. Üçüncü alanda aslında tamamen kesişme var.
+
+125
+00:26:47,604 --> 00:27:14,004
+Sonra 4. alanda tekrar kısmen kesilmeye, 5. alanda da tamamen yine ortadan çıkmış oluyor. Aslında bunu çok basit bir şekilde düşünürsünüz. Şunu değerlendirmeniz gerekecek. Şurada en başta bize verilen sinyaller eğer belirli bir zamanda başlayıp belirli bir zamanda bitiyorsa, gürtü fonksiyonu da aynı şekilde başlayıp bitiyorsa muhtemelen bunlar sonucunda toplam 5 bölge olacağını söyleyebiliriz.
+
+126
+00:27:14,963 --> 00:27:26,963
+Bu sinyaller farklı olabilir ama muhtemelen bunların iki tane çakışmayan, iki tane kısmına çakışan, bir tane de tam çakışan bölgesi olacak gibi aklınıza bunu kodlayabilirsiniz.
+
+127
+00:27:26,963 --> 00:27:36,491
+Bu yüzden her işarete ya ben tekrar bölgeyi yorumlamaya mı uğraşacağım gibi bir sorun ortadan kalmış oluyor.
+
+128
+00:27:37,907 --> 00:28:01,347
+Tam kesişmede aslında balanı bulmak kolay. Yukarıdaki ile aşağıdaki kısmın tam kesişmesi demek aslında şu kısımla bu kısımın değerlerinin çarpımlarının altında kalan alanı gösterecek. Yani bununla yukarıdakini çarparsak burası 6 olmuş olacak.
+
+129
+00:28:02,259 --> 00:28:17,620
+Şu aralığa da 1 saniye olduğu için aslında bunun alanı 6 olarak hesaplanmış olacak. Dolayısıyla bu aralıkta T1 ile 2 aralığındayken bu adam bize YT6 çıktısını verecek.
+
+130
+00:28:19,960 --> 00:28:27,259
+Bunun dışında 2 ile 3 arasında olma durumu var ve 3'ten büyük olma durumu var. Bakın bu bölgeleri her zaman
+
+131
+00:28:27,763 --> 00:28:53,707
+Aslında işaretin sınırlarına göre tercih ediyoruz. Ne dedik? Burada ilk çakışmanın başladığı nokta, T'nin sıfıra eşit olduğu noktadır. Dolayısıyla bunun kısma çakışmaları zaten isimlerdedik. Nereye kadar kısma çakışıyor? Eğer ki şuradaki T-1 sıfıra gelirse, o zaman tam çakışma başlayacak. Dolayısıyla bunun altında olması lazım.
+
+132
+00:28:53,779 --> 00:29:03,779
+t-1 eşittir 0, t eşittir 1'den küçük olduğu durumlarda kısmen çakışma oluyor. Peki tamamen çakışma ne zamana kadar devam edecek?
+
+133
+00:29:03,779 --> 00:29:14,779
+Tabii ki şu t, şuradaki 2'ye eşit olduğu duruma kadar devam edecek. T daha büyük olursa o zaman kısmen çakışmaya tekrar gitmiş olacak.
+
+134
+00:29:22,036 --> 00:29:24,036
+Bu işlem sonucunda,
+
+135
+00:29:26,036 --> 00:29:35,036
+her birini tabiki altında kalan alanı bu şekilde göstermenin sizin açınızdan daha olumlu olur.
+
+136
+00:29:36,036 --> 00:29:40,036
+Çünkü burada çok daha net görebiliyorsunuz. Mesela 0 ve 1 aralığında,
+
+137
+00:29:40,036 --> 00:29:48,844
+x-tay ile ht-tay'ı çizip alt alta gelen kısımları, yani iki sinirle karşılıklı çarpacak olursanız,
+
+138
+00:29:49,395 --> 00:29:52,395
+Bunun bu kısmı yukarıdaki sıfır olduğu için gidecek.
+
+139
+00:29:52,895 --> 00:29:59,395
+P'den sonraki kısmı aşağıdaki sıfır olduğu için gidecek. Böylelikle şunu elde etmiş olacağız.
+
+140
+00:30:00,395 --> 00:30:11,395
+Aslında bunun sonrasında şöyle bir hesap olduğu için de bu elde ettiğimiz fonksiyonun altında kalan olanı hesaplamamıza denk geliyor.
+
+141
+00:30:13,895 --> 00:30:16,395
+Nihai durumda bunları ayrı ayrı bulabiliriz.
+
+142
+00:30:17,556 --> 00:30:27,236
+Bunları birleştirebilerek YTE'nin gerçek çıkışını bu şekilde gösterebiliriz. Bu kısmı anlamayan var mı acaba?
+
+143
+00:30:41,364 --> 00:30:42,844
+Hocam bir şey sorabilir miyim?
+
+144
+00:30:42,844 --> 00:30:43,844
+Hadi.
+
+145
+00:30:44,403 --> 00:30:51,163
+Hocam, biz bu sinyalin simetriyini aldığımız zaman genel bir isimlendirme için T ve T eksi bir demiştik ya.
+
+146
+00:30:56,948 --> 00:30:58,948
+Evet, burasını söylüyorsun.
+
+147
+00:30:58,948 --> 00:31:08,948
+Evet hocam, bu sağ tarafının T olmaması durumu olabilir mi? Yoksa oraya hep mi T edeceğiz? Veya sinyalin genişliğine göre solu mu değişecek? Yani sağa hep T mi gelecek onu mu merak etme?
+
+148
+00:31:09,948 --> 00:31:19,948
+Bu aslında senin sinyaline göre değişir. Sorun için teşekkür ederim. Anladım demek istediğini. Senin öncelikle sinyalin burada nasıl, nereden başlıyor?
+
+149
+00:31:19,948 --> 00:31:23,948
+H de diyelim ki T eşittir sıfırdan başladı.
+
+150
+00:31:24,723 --> 00:31:48,364
+0'dan başladıysa, tam bu nokta T olarak isimlendirecek bu aynalanmış olsa da. Ama biraz daha farklı bir şey çizelim artık onu daha iyi anlamak için. Mesela HD, şu şekilde gösteriyorum. 1 ile 2 aralığında bir değerine sahip. Şimdi burada hızlıca şey yapıyorum, T yerine tau yazıyorum.
+
+151
+00:31:48,403 --> 00:31:52,903
+Dolayısıyla şu kısmı TA yapmış oldum, bu kısmı da TA'ya çekmiş oldum.
+
+152
+00:31:54,163 --> 00:31:55,364
+Şu kısımdan
+
+153
+00:31:57,283 --> 00:31:58,903
+eksi TA'ya üstlerim.
+
+154
+00:31:58,903 --> 00:32:02,203
+Kaç eksi TA'ya nereye olacak? Söyler misin?
+
+155
+00:32:03,783 --> 00:32:05,523
+Eksi 1'den eksi 2'ye.
+
+156
+00:32:08,124 --> 00:32:11,124
+Eksi 1'den eksi 2'ye olmuş olacak.
+
+157
+00:32:11,124 --> 00:32:13,099
+Ve gelme yine 1 olmuş olacak.
+
+158
+00:32:14,195 --> 00:32:23,556
+Şimdi bu durumda, bakın buradaki h eşittir sıfır durumunda bu adamın çizimi bu şekildeymiş. Bu yüzden şuraya ne yazacağız?
+
+159
+00:32:23,556 --> 00:32:25,548
+Sizce?
+
+160
+00:32:29,011 --> 00:32:30,211
+Ne dersiniz?
+
+161
+00:32:44,756 --> 00:32:54,556
+Bunu harflendirmek istersen, eğer şurada başlasaydı, o zaman sıfır alanında başladığı için T'ye sıfır yazacaktı. Yani T yazacaktı.
+
+162
+00:32:54,556 --> 00:33:01,355
+Ama bu kısım birden başlıyor. Dolayısıyla T-1, şuraya da T-2 den alınmaz.
+
+163
+00:33:01,355 --> 00:33:09,292
+Diğer türlü bu sinyali güzel bir şekilde özetleyemem. Sinyaldeki gecikmeyi bu şekilde gösteremem.
+
+164
+00:33:09,523 --> 00:33:18,523
+Benim ama buradaki şey T dememin sebebi, H, T'nin çok güzel bir şekilde tam sıfırdan başlayıp 1'e kadar devam etmesi.
+
+165
+00:33:18,523 --> 00:33:26,523
+Bu yüzden bunu terslesem de yine sıfır noktasında değer ödeteceği için T anını o şekilde belirtmiş oluyoruz.
+
+166
+00:33:29,779 --> 00:33:31,779
+Bu kısmı anlayabildim mi?
+
+167
+00:33:31,779 --> 00:33:33,779
+Evet hocam, teşekkür ederim.
+
+168
+00:33:33,779 --> 00:33:35,779
+Rica ederim.
+
+169
+00:33:35,779 --> 00:33:40,683
+Dolayısıyla burada aslında en son çizdiğimiz şey T-Town'un çizimini yapmış oldu.
+
+170
+00:33:44,819 --> 00:33:46,259
+Başka sorusu olan var mı?
+
+171
+00:33:55,892 --> 00:34:01,355
+Peki, şimdi biz burada, tabii ki şunu kapatalım.
+
+172
+00:34:18,164 --> 00:34:24,564
+Burada normalde YTI konvolüsyonunu şu yolda hesaplayacağımızı söylemiştik. Ekran geliyor değil mi bu arada?
+
+173
+00:34:31,188 --> 00:34:38,547
+Dördüncü bölgeyi tekrar açıklayabilir misiniz? Yazmışsın, ufuk görmedim, kusura bakma, tekrar döneyim.
+
+174
+00:34:38,547 --> 00:34:39,532
+Tamam.
+
+175
+00:34:42,771 --> 00:34:43,659
+Amen.
+
+176
+00:34:49,907 --> 00:35:12,387
+Şimdi normal tek arşına bakalım. Birinci bölge t'nin sıfırdan küçük olma durumu, hiç çakışmama durumu. İkinci bölge kısmen çakışma durumu. Üçüncü bölge tamamen çakışma durumuyken, dörtte tekrar buradaki arkadaş dışarı çıkmaya başlıyor. Yarısı içeride, yarısı dışarıda oluyor durumda.
+
+177
+00:35:13,139 --> 00:35:19,139
+Şimdi bu yarısı içeride yarısı dışarıdaysa kesişen alan yine kısmen bulunması gerekiyor.
+
+178
+00:35:20,139 --> 00:35:31,139
+Bunun aslında alanı yukarıdaki sabitle aşağıdaki kaymış kısmın alanların daha doğrusu fonksiyonların çarpımına eşit oluyor.
+
+179
+00:35:31,139 --> 00:35:37,139
+Şu fonksiyon çarpımı, bu fonksiyon çarpımı sonrasında bunun altında kalan alan üzerinden bir işlem yapacağız.
+
+180
+00:35:37,427 --> 00:35:58,927
+Bunun alanı biz integral ile hesaplamıyoruz, isterse de integral ile hesaplıyoruz. Öyle daha formülize bir yapıyız dedim. Bunun altında kalan alan aslında integral alt sınırı t-1, üst sınırı t-2 olmak üzere sabit altı fonksiyonunun integral şeklinde.
+
+181
+00:35:58,992 --> 00:36:04,391
+Bunu da hesaplayacak olursak, eksi 6T artı 18 şeklinde hesaplayabiliriz.
+
+182
+00:36:04,391 --> 00:36:09,192
+Veya bunu doğrudan bizim bildiğimiz diktörken alanından çözebiliriz.
+
+183
+00:36:09,192 --> 00:36:18,592
+Yükseklik çarpı genişlik 2 eksi t eksi 1 şeklinde hesaplayabiliriz.
+
+184
+00:36:18,592 --> 00:36:24,592
+Bunu da 6 çarpı 2 artı 1 eksi t.
+
+185
+00:36:24,623 --> 00:36:38,623
+Yani aslında eksi 6T artı 18 şeklinde hesaplamamız mümkün. Bakın, bu da integral yöreyle yaptık. Burada da bizim kendi geometriyi kullanarak alan hesabı yaptık.
+
+186
+00:36:40,623 --> 00:36:41,623
+Ben de teşekkür ettim.
+
+187
+00:37:07,795 --> 00:37:09,795
+Ekranı paylaşmaya çalışıyorum şu anda.
+
+188
+00:37:26,867 --> 00:37:34,867
+Evet şimdi, YT arkadaşlar nasıl hesaplanıyordu? Sürekli zaman Continuous Time için konuşuyoruz.
+
+189
+00:37:34,867 --> 00:37:42,867
+X'i sonsuzdan artı sonsuzdan X tau, HT x tau, D tau şeklinde hesaplanıyordu.
+
+190
+00:37:42,867 --> 00:37:50,764
+Şimdi bunun aynısı, aylık zamanda ya da Discreet Time olarak kısaltacak olursak, DT'de nasıl hesaplanıyordur?
+
+191
+00:37:52,403 --> 00:38:00,403
+Bir kere ayrık zamanda bir işlem yaparken çıkış mutlaka YN olacak şekilde bu köşeli parantez de gösteriyor.
+
+192
+00:38:00,403 --> 00:38:10,403
+Ufu'nun söylediği gibi, burada sürekli zamanda bir alan söz konusu iken, ayrık zamanda birbirinden ayrık değerler olduğu için
+
+193
+00:38:10,867 --> 00:38:20,867
+Bunu bir seri olarak görebiliriz veya bir dizi olarak görebiliriz. Bunun toplamı içinde tabii ki eksi sonsuzdan artı sonsuzda bir toplam sembolüyle ifade etmem gerekiyor.
+
+194
+00:38:21,867 --> 00:38:28,867
+Benim buradaki x yerine x tau diye bir şey söylemiş, ben de bunun yerine x'i koyabilirim buraya.
+
+195
+00:38:29,867 --> 00:38:31,867
+Çarpı h
+
+196
+00:38:32,340 --> 00:38:59,340
+M-Eksi iyi şekilde yazabilir. Bakın şunların ikisi aslında birbirinden çok farklı iki yapı değil. Buna convolution integral ismi veriliyor. Aşağıdakine de convolution sum, yani konvolüsyon toplama ismi veriliyor. İkisi de konvolüsyon olup, birisi sürekli zaman, diğeri de ayrık zaman için geçerli formülür. E tabi ki izlediğimiz yol yine aynı olacak.
+
+197
+00:38:59,443 --> 00:39:09,443
+Yine buradaki x'i önce çizeceğiz, sonra h'i'yi bulup i'ye göre paylanayacağız. Sonra karşılıklı gelen elemanlığını çarpacağız.
+
+198
+00:39:09,443 --> 00:39:20,443
+Yani izleyeceğimiz yol konvolüsyonda öğrendiğimizin aynısı neredeyse. Sadece yukarıda alan hesabı yaparken, bakın burada bir integralden dolayı alan hesabı var.
+
+199
+00:39:20,443 --> 00:39:27,211
+Burada ise toplam sembolüyle çok az yorularak sonuca ulaşmış olacağız.
+
+200
+00:39:28,275 --> 00:39:41,956
+Gelin birlikte bunu anlamaya çalışalım. Daha iyi bir şekilde bakalım görebilecek miyiz? Şuradaki kısmı açtırayım.
+
+201
+00:39:48,403 --> 00:40:02,403
+Ödev bu konudan olacak, evet. Konvolüsyonla ilişkili olacak. O yüzden özellikle bu kısmı dikkatli takip ederseniz sevinirim. Sizin açınızdan iyi olacak. Ödevi de birazdan göstereceğim zaten bu kısmı anlattıktan sonra.
+
+202
+00:40:02,403 --> 00:40:14,403
+Bakın, x'en ve h'en verildiyse öncelikle x'i ve h'i şeklinde bunu yazmam gerekiyor. Daha sonra kısa olan şeyi
+
+203
+00:40:14,931 --> 00:40:38,931
+Terslemem lazım, aynalamam lazım. Sonra karşılıklı gelen değerleri kaydı çarparak sonuca ulaştır. Aynı yolu olduğunu görmüş olduk. Şimdi gelelim grafiksel konvolüsyonu bunun bulunmasına. Adam bize burada X'anlı Haşe'nin konvolüsyonuna söylemiş. Ne yapalım arkadaşlar? Hangisini?
+
+204
+00:40:40,659 --> 00:40:43,659
+Sizce kaydıralım hangisi sabit kalsın?
+
+205
+00:40:50,579 --> 00:40:53,699
+[öğrenci] kendi görüşümü yazdı, başka fikri olan var mı?
+
+206
+00:41:01,492 --> 00:41:28,032
+x olsun. Evet, x biraz daha kısa olduğu için 3 tane değer taşıyor. Onu o şekilde yazabilmemiz mümkün. Peki o zaman, o zaman işleme geçiyoruz. 1. Şurada verilen fonksiyonları bir kere y'nin fonksiyonu olacak şekilde daha doğrusu, alt eksen y olacak şekilde düzeltiyorum. Neden? Çünkü ben y'yi bulmak için benim formülüm şu şekilde.
+
+207
+00:41:28,692 --> 00:41:34,931
+x i çarpı h n-i şeklinde.
+
+208
+00:41:35,811 --> 00:41:41,391
+Buradaki kısım aslında x n ile haşenin konvolüsyonuna denk geliyor.
+
+209
+00:41:43,512 --> 00:41:48,012
+İstersen bunu haşen ile eksinin konvolüsyonu şeklinde de yazabilirim.
+
+210
+00:41:48,112 --> 00:41:50,971
+Konvolüsyon özelliklerinin yer değiştirmesinden dolayı.
+
+211
+00:41:50,971 --> 00:41:54,592
+Yani aynı formülü şöyle de yazabilmem mümkün.
+
+212
+00:41:56,436 --> 00:42:07,836
+Çarpı x, ben eksi i şeklinde de yazabilirim. Yerlerini değiştirebilirim dolayısıyla. Bunlar her türlü eksi sonsuzdan artı sonsuza gidiyor. Onu da yazayım buraya.
+
+213
+00:42:07,836 --> 00:42:23,235
+Şimdi bu durumda hangisini kullanacaksam ona göre gitmem lazım. Eğer x hareketli olsun diyorsam x'i aynalamam lazım. Dolayısıyla burada x'in aynalanmış halinin formülü bu. O zaman benim bu formülü kullanmam gerekecek.
+
+214
+00:42:23,264 --> 00:42:28,264
+H sabit kalacak, x'i aynalayıp gezdireceğim.
+
+215
+00:42:28,264 --> 00:42:30,264
+Gibi düşünmem gerekiyor.
+
+216
+00:42:30,264 --> 00:42:38,264
+Peki, şimdi öncelikle ilk yapmam gereken buradaki n yerine i yazmak olacak.
+
+217
+00:42:38,264 --> 00:42:44,264
+Birinci adımda her iki fonksiyonu da x'i ve h'i olarak buraya yazdım.
+
+218
+00:42:44,264 --> 00:42:47,948
+Aslında fonksiyonların şekilleri farklı değil.
+
+219
+00:42:48,179 --> 00:42:53,579
+Sadece ismi değişti. Yiye bağlı bir fonksiyon gibi düşünebilirsiniz.
+
+220
+00:42:54,679 --> 00:43:08,579
+İkincisi de, burada kısa olan x olduğu için, aşı gittim, yukarıya yazdım, sabit sinyal olarak, hareketli sinyali de aşağıya yazdım ve terslenmiş haline koydum.
+
+221
+00:43:08,980 --> 00:43:19,779
+Ters demek aynı sürekli zamandaki gibi aslında i eksenine göre simetriyini almak anlamına geliyor. i eşittir sıfıra göre simetriyini almak anlamına geliyor.
+
+222
+00:43:21,579 --> 00:43:28,579
+Buraya kadar herhangi bir sorun var mı? Bakın yine konvolüsyon yolundan gidiyoruz.
+
+223
+00:43:31,987 --> 00:43:37,987
+Peki, sanıyorum, yok. Olan kişi mutlaka yazsın ki bunu çözmeye çalışalım.
+
+224
+00:43:39,987 --> 00:43:53,487
+Şimdi mesela, buradaki bu durum aslında en eşittir sıfırkenki öteleme durumu gibi düşünülebilir. İsterseniz bunu şöyle de düşünebilirsiniz.
+
+225
+00:43:54,487 --> 00:43:57,587
+Ben burada Y'yi hesaplamaya çalışıyorum.
+
+226
+00:43:58,228 --> 00:44:02,228
+YL formülünü genel olarak ezeyim. Toplam sembolü
+
+227
+00:44:04,628 --> 00:44:14,059
+H i çarkı x n-i şeklinde, eksi sonuçundan artı sonuçluysa formüle sahipti.
+
+228
+00:44:14,195 --> 00:44:23,195
+Şimdi ben burada, G'nin sıfırıncı değeri için bir sonuç üretmek istiyorsam ki bu, E'nin burada sıfır olduğunu gösterir.
+
+229
+00:44:23,195 --> 00:44:34,195
+Dolayısıyla bu toplam sembolünde, eksi sonsuzundan artı sonsuza, H, I, çarpı ne olacak? X en yanına sıfır yazdığım için eksi I olmuş olacak.
+
+230
+00:44:39,027 --> 00:44:44,027
+Aslında bu, bunu açacak olursak şöyle bir şeye denk gelmiş oluyor.
+
+231
+00:44:45,027 --> 00:44:49,027
+Burada eksi sonuçdan artı sonuçta kadar tabii ki büyük değerler vermeyeceğim.
+
+232
+00:44:49,027 --> 00:44:52,027
+Küçük değerlerle başlayacağım.
+
+233
+00:44:53,027 --> 00:44:56,027
+Aslında nokta nokta nokta diye gidiyor.
+
+234
+00:44:56,027 --> 00:45:02,923
+Mesela eksi üçten başlayıp, h'ın eksi üçüncü değeri çarpı x'in üçüncü değeri.
+
+235
+00:45:03,764 --> 00:45:11,824
+Artı, aşın eksi ikinci değeri çarpı x'in ikinci değeri olmuş oluyor. Şu toplam sembolünü şu an açıyorum.
+
+236
+00:45:12,564 --> 00:45:22,044
+Aşın eksi birinci değeri çarpı x'in birinci değeri. Artı, aşın sıfırıncı değeri çarpı x'in sıfırıncı değeri.
+
+237
+00:45:23,084 --> 00:45:29,824
+Artı, aşın birinci değeri çarpı x'in eksi birinci değeri.
+
+238
+00:45:30,356 --> 00:45:51,856
+Bu böyle gidiyor. Neden? Eksi sonucudan artı sonucuna kadar bir yerine değerler verip, aslında aşağıda bu açılımı matematiksel olarak göstermeye çalıştım. Peki buna göre, mesela şurada gösterdiğiniz yapının aşın eksi 3'teki değeri ne? İddisi gibi görürseniz ne dersiniz?
+
+239
+00:46:01,492 --> 00:46:10,112
+Sıfır. Bakıyorum, haşın eksi üçteki değeri, eksi üçteki değeri burası sıfır. O zaman bu sıfır olduğu için bunun tamamı sıfır olmuş olur.
+
+240
+00:46:10,851 --> 00:46:25,592
+Haşın eksi ikideki değeri ne? Sıfır. Çünkü burası sıfır. O zaman burası da gitti. Eksi birdeki değeri sıfır. Bunun her gibi kısmının sıfır olması, tamamının sıfır olması anlamına gelir.
+
+241
+00:46:28,340 --> 00:46:45,340
+Şu noktayla x'in sıfırının çarpımı, x'in sıfırının çarpımı burası. Demek ki bunun çarpımı zaten 6 olacak. Buradan bir şey geliyor. Peki h'in birinci değeri neydi? h'in birinci değeri 3, tamam. x'in eksi birinci değerini...
+
+242
+00:47:10,547 --> 00:47:24,788
+x'in eksi birinci değeri diyor. Biz burada eksi i'ye bakmayalım. Aslında şunu soruyor. x dediğimiz şeyin eksi birinci değerine bunu soruyor. Şuradaki değeri soruyor anımızı. O oyunu uygulayabilir.
+
+243
+00:47:30,612 --> 00:47:42,052
+Dolayısıyla bu kısmı sıfır olduğu için bu da küpte sıfıra gitti. Bunun sonucunun, tamamen sonucunun altı olduğunu bunu analitik yolda göstermiş olduk.
+
+244
+00:47:42,852 --> 00:47:52,612
+Yani istiyorsanız çizmeden analitik yolda bu gösterdiğim gibi de yapabilmeniz mümkün. Ama biz analitik yolda yapmayacağız diyorsanız,
+
+245
+00:47:52,755 --> 00:48:07,755
+O zaman buradaki grafiksel yolu, daha önce gösterdiğimiz yolu devam ettirebilmeniz mümkün. Bakın burada isterseniz analitik yoluna devam edelim. En yerine 1 yazarsanız buna göre şu işleri devam ettirebilmeniz mümkün.
+
+246
+00:48:09,755 --> 00:48:14,755
+Dolayısıyla en yerine farklı değerler yazıp, farklı çiftler üretmek durumundayız.
+
+247
+00:48:15,059 --> 00:48:23,059
+Eğer burada n eşittir 0 için düşünüyorsak, aslında hiç kaybolmamış durumu göstermiş oluyoruz.
+
+248
+00:48:23,059 --> 00:48:31,059
+Ve buradaki çıkış aslında n eşittir 0'daki çıkışı göstermiş oluyor.
+
+249
+00:48:31,635 --> 00:48:43,135
+Ben sadece bir değeri bulmak için böyle bir şey yapıyorsam, diğer değerleri bulmak için ne yapmamızın, tabii ki konvolüsyonun mantığından dolayı kaydırıp karşılıklı elemanların çarpmam gerekiyor.
+
+250
+00:48:44,135 --> 00:48:54,135
+Şimdi bu hızlı göçlerin işareti. Şimdi bir tık yavaş gidelim. Bakın yine bölge bölge analiz etmemiz mümkün.
+
+251
+00:48:58,356 --> 00:49:01,356
+Şöyle T'nin fonksiyonu şeklinde yazarsak,
+
+252
+00:49:03,556 --> 00:49:13,356
+Aslında eksi bir eksi i şeklinde yazarsak yani eksi bir kaydırmış oluyoruz. Yani sola doğru bir kaydırmış oluyoruz.
+
+253
+00:49:13,356 --> 00:49:18,356
+Bakın buradaki karşılıklı elemanların değerlerinin hep sıfır olduğunu görürsünüz.
+
+254
+00:49:19,795 --> 00:49:39,795
+Bu durumda çakışan bir eleman olmadığı için, en küçük sıfırda her türlü tüm değerler, Y'nin tüm değerlerinin sıfır olduğunu söyleyebiliriz. Tabii ki Y'nin sıfırdan küçük olduğu durumlar için. Çakışma yok. Karşılıklı elemanlar sıfır olduğu için birbirini yutuyor.
+
+255
+00:49:46,452 --> 00:50:03,452
+Bu bir tık sağa gitmiş olacak. Bir tık sağa giderse hop buraya gelmiş oldu. Burada çakışma durumunda iki tane değer var ve bunların çarpımı sonrasında Yelinin sıfırıncı değeri 6 olmuş oldu.
+
+256
+00:50:05,452 --> 00:50:14,380
+Peki, ben size sormuş olsam Yelinin birinci değerini kaç buluruz? Ne dersiniz?
+
+257
+00:50:20,115 --> 00:50:24,215
+Yayının birinci değerini [öğrenci] buluruz dedi, başka fikir var mı?
+
+258
+00:50:38,291 --> 00:50:53,412
+Şöyle düşünebilirsiniz, Y'nin birinci değini bulmak için aslında H'ın İ'siyle X'in 1-İ'sini konvolüsyona, karşılıklı çarpımların toplamına elde etmemiz gerekiyor.
+
+259
+00:50:53,992 --> 00:51:04,831
+H'ı zaten var. 1-İ'yi de yukarıdan elde edebiliriz. Bunu 1-İ yapmak demek, aslında bu fonksiyonu bir tık daha sağa kaydırmak demek oluyor.
+
+260
+00:51:05,492 --> 00:51:17,492
+Yani buradaki sıfırdaki 1'e kalacak, eksi 1'deki sıfıra kalacak, eksi 2'deki de şuraya kalmış olacak. Dolayısıyla şu kısımları falan dikkate almazsanız bu 1 eksi iyi göstermiş olacak.
+
+261
+00:51:17,492 --> 00:51:26,492
+Bu durumda bunların karşılıklı elemanların çarpıma ne olmuş oluyor? Şu 2 ile bu 3'ü çarpacağız. Artı 2 çarpı 3 artı...
+
+262
+00:51:26,623 --> 00:51:34,623
+Buradaki 2 ile buradaki 3'ü çarpacağız. Dolayısıyla bunların çarpımların toplamı sonucunda 12 değerini elde edeceğimizi söyleyebiliriz.
+
+263
+00:51:34,623 --> 00:51:40,623
+Bir kaydırdığımız zaman, bir daha kaydırırsak yanına, bu y1'i gösteriyordu.
+
+264
+00:51:41,623 --> 00:51:46,347
+Bir tık daha sağa kaydırırsak, y2'de sonucu ne alırız?
+
+265
+00:52:00,148 --> 00:52:02,148
+Ne dersiniz arkadaşlar?
+
+266
+00:52:04,548 --> 00:52:08,548
+15 olayız. Çünkü tamamı kesişmiş oluyor aslında o günümden.
+
+267
+00:52:08,548 --> 00:52:12,548
+Şimdi bu kısımları çok hızlı bir şekilde gösteriyoruz. Bakın.
+
+268
+00:52:15,548 --> 00:52:20,948
+En küçük 0 iken hiçbir çapışma yok. Dolayısıyla çapışan elan olmadığı için çıkış 0.
+
+269
+00:52:21,748 --> 00:52:24,940
+En eşittir 0 da sadece bunlar çapıştı.
+
+270
+00:52:25,076 --> 00:52:29,476
+Bunların çakışmaların sonucunda geldiği sıfırıncı elemanı 6'a elde ettik.
+
+271
+00:52:30,276 --> 00:52:32,676
+Aşağıdakini bir tık daha kaydıracağım.
+
+272
+00:52:34,676 --> 00:52:38,276
+Bir tık daha kaydırdım, bakın. Şu anda ne olmuş oldu?
+
+273
+00:52:38,276 --> 00:52:44,876
+İki tane eleman çakışmaya başladı. Bu iki elemanın çarpımların toplamı 12 olmuş oldu.
+
+274
+00:52:45,276 --> 00:52:46,860
+Bir daha kaydıracağım.
+
+275
+00:52:46,931 --> 00:52:57,931
+Bu durumda artık 3 eleman da çakışıyor. Dolayısıyla 2x3 artı, 2x3 artı, 1x3. Dolayısıyla bunların toplamı 15'i bize veriyor.
+
+276
+00:53:00,931 --> 00:53:08,931
+En eşittir 3'te bunu 1 daha kaydırıyorsunuz. Bakın buradaki kısımla buradaki kısım arasında çakışmalarda bir farklılık olmuyor.
+
+277
+00:53:09,588 --> 00:53:16,948
+Çünkü ikisi de tam çakışma moduna girmiş oldu ve kaydırma bizim sonucumuzu etkilemedi.
+
+278
+00:53:16,948 --> 00:53:26,628
+Yine buradaki sonucun aynısı 3'te de geçerli olacak, 4'te de geçerli olacak çünkü hala tam çakışma sürüyor.
+
+279
+00:53:26,628 --> 00:53:36,148
+4'ten sonra ise giderek bunlar düşmeye başlıyor. Çünkü artık şuradaki kısımlarla onlara denk gelen
+
+280
+00:53:36,500 --> 00:53:45,380
+Değer iki tane çakışma var. En son bir çakışma oluyor ve en son ondan sonra da anadan tüm değerler sıfır olmuş oluyor.
+
+281
+00:53:46,380 --> 00:53:56,059
+Buradaki değerleri hepsini gösterecek olursak, sıfırıncı anda 6 veriyordu, sonra 12 verdi, sonra 15 verdi tam çakışma olarak devam etti.
+
+282
+00:53:56,059 --> 00:54:01,180
+En sonunda 9 ve 3 olarak bitmiş oldu.
+
+283
+00:54:05,300 --> 00:54:09,300
+Evet, sürekli ayrık zamanlı konvolüsyon bu şekilde.
+
+284
+00:54:11,600 --> 00:54:13,196
+Konusu olan var mı?
+
+285
+00:54:24,980 --> 00:54:26,980
+Ne dersiniz? Soru var mı arkadaşlar?
+
+286
+00:54:31,219 --> 00:54:45,835
+Çok az katılım olduğu için, tam olarak sorun olup olmadığını anlayamıyorum. Yüz yüze derste onu çok net görebiliyorum ama sizde şu anda hala sorun var mı bilmiyorum yani.
+
+287
+00:54:51,603 --> 00:55:12,103
+Peki, şimdi bir de şu tarafından bakalım. Biraz daha kolay bir yapı olsaydı, o zaman onu nasıl bulmamız gerekecekti? İki tane döntünün konvolüsyonunun sonucu ne olacak? Bunu birlikte bir yorumlayalım.
+
+288
+00:55:27,539 --> 00:55:48,539
+Şimdi diyelim ki, çok basit bir sinyal var önümüzde. Xen sinyali deltaR şeklinde, hatta Hen sinyali diyelim. Hen 4 yanıtının deltaN olduğunu söyleyelim. Xeninden deltaN-4 olduğunu söyleyelim.
+
+289
+00:55:53,811 --> 00:56:03,251
+Bunların konvolüsyonu, konvolüsyon sonucu ne olur? Sorumuz bu. Bunun konvolüsyonu sonucu ne olur?
+
+290
+00:56:03,371 --> 00:56:11,051
+Şimdi biz sanki hiç bu deltaN'leri bilmiyormuşuz veya bunların özelliklerini bilmiyormuşuz gibi gidelim.
+
+291
+00:56:11,791 --> 00:56:18,991
+Öncelikle burada x, i ve h, eksi i'yi bulalım. x, i'yi şöyle bulabiliriz.
+
+292
+00:56:22,547 --> 00:56:28,947
+Öncelikle X'eni çizelim, i'ye geçmeden önce. Nasıl bir şey çizmem lazım arkadaşlar?
+
+293
+00:56:36,115 --> 00:56:55,115
+En eşittir 4'te, 1 genliğinde bir dürtü olacak. Peki güzel. Bunun altına hemen, baş iğne çizeyim. Aşağı zaten bizim bildiğimiz dürtü ve tam sıfır anında bir gelmeğine sahip bir çıkışı olur.
+
+294
+00:57:03,539 --> 00:57:15,539
+I'ye geçeceğim. Şuradaki kısmı silip, aslında bu kısmı artık I yazabilirim. Şu kısmı silip, şunları silip, hop fazla silindik.
+
+295
+00:57:17,539 --> 00:57:24,539
+Bu kısımların ekserlerini I yazıp, I'ye dönüştürme işini hızlandırabilir. Bir daha çizmemek gerek, elini öyle bir şey yap.
+
+296
+00:57:25,539 --> 00:57:26,860
+Şimdi buradaki...
+
+297
+00:57:28,019 --> 00:57:31,420
+x, i'yi sabit tutup h'ı gezdirmek istiyorum.
+
+298
+00:57:32,119 --> 00:57:35,619
+x, i aslında 4'te sabit.
+
+299
+00:57:37,179 --> 00:57:41,019
+h'ı gezdirmek için önce aynalıyım dedim.
+
+300
+00:57:41,019 --> 00:57:43,420
+Peki aynalanmış hali nasıl olacak?
+
+301
+00:57:43,420 --> 00:57:45,420
+eksi, i dediğimiz şey.
+
+302
+00:57:47,480 --> 00:57:51,420
+Kendisi olacak çünkü çok basit bir fonksiyon zaten.
+
+303
+00:57:51,699 --> 00:58:13,699
+Tam sıfır anında olduğu için bunun ayrılanmış hali de yine sıfırda olacak gibi düşünebilirsiniz. Bunun genliğinin 1 olduğunu söylüyoruz. Bakın şu anda konvolüsyona hazırız. Fakat bu konvolüsyon sonrasında bunun, bu iki dürtünün konvolüsyonu ne olarak çıkacak bunu gözlemlemeye çalışıyoruz.
+
+304
+00:58:18,003 --> 00:58:33,003
+Buradaki eni sıfır aldığı anı gösterir. Çünkü h eksi demek aslında h sıfır eksi i'yi gösterir gibi düşünebilirsiniz.
+
+305
+00:58:33,003 --> 00:58:43,003
+Konvolüsyon formülünü tekrar edecek olursam, aslında h'ı gezdirdiğime göre şöyle yazabilirim. x i çarpı h
+
+306
+00:58:43,347 --> 00:58:46,347
+n-i şeklinde yazabilirim.
+
+307
+00:58:47,547 --> 00:58:53,347
+Yani y'nin n. elemanını bulmak için benim şu toplamı hesaplamam gerekiyor.
+
+308
+00:58:53,847 --> 00:58:56,347
+Tamam, x'i zaten yukarıda var.
+
+309
+00:58:56,547 --> 00:59:07,347
+Ben y'nin 0. elemanını bulmak için x-i ile h-i'nin karşılıklı çarpımların toplamını bulabilirim.
+
+310
+00:59:07,647 --> 00:59:09,647
+Burada y'nin 0. elemanı
+
+311
+00:59:10,132 --> 00:59:12,132
+Sonucu ne olacak arkadaşlar?
+
+312
+00:59:20,052 --> 00:59:36,052
+Sonuçta x, i ile h eksi, i dediğimiz şeyi buraya çizdik. Bunların çarpımları ne olacak? Evet, dürtünün özelliği zaten sadece 4 noktasında burada bir genlik üretiyor. Bu da sadece 0 noktasında bir genlik üretiyor.
+
+313
+00:59:36,052 --> 00:59:42,052
+i eşittir 0'da. Dolayısıyla bunların çarpımları sonucunda 0 gelecek. Bunu söyleyebiliriz.
+
+314
+00:59:42,052 --> 00:59:46,052
+Peki, şimdi bir tık daha gidelim.
+
+315
+00:59:46,675 --> 00:59:59,675
+Y'nin bilimcisini hesaplamak istiyorsan, o zaman y'nin toplam sembolünde x i çarpı h 1-i'yi bulmam gerekiyor.
+
+316
+00:59:59,675 --> 01:00:10,675
+h 1-i demek, aslında buradaki sinyali, burada farklı bir kalemi yazayım, h 1-i demek,
+
+317
+01:00:12,403 --> 01:00:17,603
+Aslında buradaki sinyeli şu kısmı bir kaydırmak anlamında gelir.
+
+318
+01:00:20,603 --> 01:00:31,204
+Buradaki mavi ile çizdiğim fonksiyonla x i'yi, karşılıklı çarpımların toplamı şeklinde yazacak olursam ne elde ederim?
+
+319
+01:00:35,476 --> 01:00:37,324
+Ne dersiniz arkadaşlar?
+
+320
+01:00:42,516 --> 01:00:49,315
+Yine bu değerler çakışmadığı için, üst üste gelmediği için sıfır olduğunu söyleyebilirim.
+
+321
+01:00:50,815 --> 01:01:07,715
+Peki, buradan ben bir şey anlıyorum. Bunların tek sayı üretebilmesi için ikisinin de değerinin üst üste gelmesi lazım. Bakın bu 1'deyken, 20. çıkışı elde etmek için 1'deki
+
+322
+01:01:07,775 --> 01:01:23,775
+4'ü kullandım. O zaman bunun 4. çıkışını elden etmek için neyi kullanırım? Bakın, Y4 formünde yerine yazacak olursam, XI çarpı H4-I üzerinden hesap yapabilirim.
+
+323
+01:01:23,775 --> 01:01:34,347
+H4-I hiç değilim, H4-I demek, aslında H-I'yi 4 kez sağa kaldırmak demek. Yani adam buraya gelmiş oldu.
+
+324
+01:01:34,483 --> 01:01:38,483
+Tam 4 noktasında bir genliği olan işe hep gelmiş olur.
+
+325
+01:01:39,483 --> 01:01:44,483
+Bu durumda h 4-i ile x-i'yi çarparsam ne elde ederim?
+
+326
+01:01:54,387 --> 01:02:19,887
+Biri elde edelim. Dolayısıyla, burada şunu da söyleyebiliriz. Bu adamın dördüncü değeri 1'miş. Çizecek olursak, y'yi çizecek olursak, n'e göre tam dördüncü değerinde 1 genliğe sahip bir şey üretecekmiş. Çıkış bu olacakmış. Peki ben bu çıkışı matematiksel olarak nasıl yazabilirim?
+
+327
+01:02:31,603 --> 01:02:36,103
+Şöyle yazamam mı? Delta n-4 şeklinde yazamam mı?
+
+328
+01:02:46,739 --> 01:03:09,239
+Yazabilirim. Burada çok ilginç bir durum karşımıza çıkıyor. Bir kere şunu her zaman düşünmemiz lazım. Bir dürtüyle başka bir dürtüyü konvolüsyona sokuyorsan, bunları kaydırıp çarptığım için aklımda canlandırabilirim ki bunlar mutlaka tek bir noktada kesişecekler. Başka bir kesişme durumları söz konusu değil.
+
+329
+01:03:09,300 --> 01:03:20,800
+Dolayısıyla iki dürtünün konvolüsyonu sonucunda yine tek bir dürtü ortaya çıkmış oldu. Bunu mutlaka aklımızdan şu anki yaptığımız şey üzerinden canlandırmanızı istiyorum.
+
+330
+01:03:21,800 --> 01:03:27,800
+Bu birinci özellik. İkincisi de aslında dürtünün bir kaydırma özelliği var.
+
+331
+01:03:30,300 --> 01:03:32,300
+Şimdi bunu şöyle açıklayalım.
+
+332
+01:03:33,000 --> 01:03:34,300
+Buraya başka bir...
+
+333
+01:03:36,788 --> 01:03:38,327
+Ahta oluştururum.
+
+334
+01:03:50,356 --> 01:03:52,356
+Şimdi bakın!
+
+335
+01:03:56,467 --> 01:04:21,347
+DeltaN-4 ile DeltaN'i konvolüsyona sokmakla aslında DeltaN'i DeltaN-4'ü konvolüsyona sokmak aynı. Çünkü bunu şeyden biliyorduk, Xen konvolüsyon Hen'i aslında Hen konvolüsyon Xen aynı işe yarıyor. Bunu aklınıza tutun.
+
+336
+01:04:21,940 --> 01:04:25,940
+Burada aslında şöyle bir durum oluşuyor dürtülerde.
+
+337
+01:04:26,940 --> 01:04:35,940
+Daha yalan olan şeyin içerisine n yerine n-4 yazmış gibi bir durum oluşmuş oluyor. Bir önceki örnekten bunu gördük.
+
+338
+01:04:35,940 --> 01:04:44,940
+Aslında dürtü fonksiyonu o tarafa doğru ötelemiş oluyor. Öteleme fonksiyonu çalışmış oluyor.
+
+339
+01:04:44,940 --> 01:04:49,612
+Daha basit gidelim peki. Daha basit gidebilmek için şöyle bir...
+
+340
+01:04:49,907 --> 01:05:15,907
+Örnek göstereyim. Bakın bir tane sistem gösteriyorum. Bu sistem aslında şöyle bir sistem yanıtına sahip. Y'ye eşittir x'e. Yani çok basit bir şekilde girdisi neyse çıktısı da o. Bunun dürtü fonksiyonu nedir? Dürtü yanıtı nedir pardon? Dürtü yanıtını bulmak için
+
+341
+01:05:16,244 --> 01:05:26,563
+Xen yerine deltaN yazıyorduk. DeltaN yazarsak, bu sistemin, ürtü yanıtının, Haşen eşittir, deltaN olduğunu söyleyebiliriz.
+
+342
+01:05:26,563 --> 01:05:38,884
+Bu durumda bunun eğer Haşen'in konfusunu deltaN ise, aslında deltaN neyi sağlıyor burada? Herhangi bir geliş verirsen, Xen mesela,
+
+343
+01:05:39,027 --> 01:05:45,367
+Çıkışta da bunun konvolüsyonu sonrasında x'ler çıkmasını sağlayacak. Çünkü sistem bana onu söylüyor.
+
+344
+01:05:45,367 --> 01:05:53,367
+Girişine verirsem çıkışta odur diyor. Bu belki biraz karışmış olabilir. Buradan şuraya gideceğiz.
+
+345
+01:05:53,367 --> 01:06:05,323
+Birinci özellik, aslında x'ler ne? Herhangi bir delta'yini konvolüsyona sokarsam, bunun sonucunda x'lerin aynısını elde edelim.
+
+346
+01:06:05,523 --> 01:06:17,523
+Aslında bu deltaN, sistemin deltaN bürtü yanıtına sahip olması, sistemin hiçbir şey yapmadan girişi çıkışa vermesi anlamına gelir. Bu birincisi.
+
+347
+01:06:17,523 --> 01:06:31,467
+İkincisi, az önce gösterdiğiniz gibi, herhangi bir deltaN ile deltaN-2'yi konvolüsyona sokarsak, bunun sonucunda
+
+348
+01:06:32,884 --> 01:06:41,884
+n-2 yazmış gibi oluyoruz diğer fonksiyonuna ve bu sayede n-2 değerini elde etmiş oluyoruz.
+
+349
+01:06:41,884 --> 01:06:51,884
+Bunu şöyle de canlandırabilirsiniz, n-2 ile atıyorum, n-4'ü konvolüsyona soksak ne olduğunuz zaman hocam diyebilirsiniz.
+
+350
+01:06:57,684 --> 01:07:24,083
+n-4 veya n-2 yazabilirsiniz. Bu durumda da bunun konvolüsyonu sonrasında n-6 olacağını düşünmeniz ve yorumlamanız gerekiyor. Artık bu saatten sonra bunu otomatikleştirmemiz gerekiyor. Çünkü bir öncekindeki gibi sistemi tersle, ötele, kaydır falan bunlarla uğraşmak yerine daha hızlı bir çözüm yoluna gitmeye çalışıyoruz.
+
+351
+01:07:25,172 --> 01:07:35,851
+Üçüncüsü, içselde eğer deltaL-5 konvolüsyona girerse sonuç ne olur? Ne dersiniz?
+
+352
+01:07:51,315 --> 01:08:14,595
+X'e eksi 5, [öğrenci]'in de söylediği gibi, aslında çok doğru, öyle bir şey olacak. İyi de hocam, bu nasıl oluyor? Şöyle düşünelim, buradaki X'e dediğimiz adamın da içinde sonuçta dürtüler var. Nasıl bir X'e hayal edersiniz dedim. X'e dediğin sonuçta elbet dürtülerden oluşacak. Şöyle rastgele bir olsa.
+
+353
+01:08:15,699 --> 01:08:19,219
+fonksiyonun değerlerinin içerisinde dürtülerden oluşuyor.
+
+354
+01:08:19,219 --> 01:08:30,739
+Dolayısıyla her dürtünün aslında 5 birim kadar kayması demek, x'in kendi fonksiyonunun 5 birim ilgilim değer kadar kayması anlamına gelir.
+
+355
+01:08:30,739 --> 01:08:39,699
+Bunlar bizim için çok çok hayati özetler oldu. Mutlaka bu kısmı değerlendirin diye söyleyeyim size.
+
+356
+01:08:39,699 --> 01:08:41,699
+Şimdi...
+
+357
+01:08:42,003 --> 01:08:48,003
+Burada soru işareti olan varsa sorabilir. Yoksa devam edeceğim.
+
+358
+01:09:06,644 --> 01:09:15,443
+Bir tane zaten bununla ilgili bir örnek daha var. O kısmı da daha sonra göstereyim. Şimdilik bu kısmı göstermeme gerek yok.
+
+359
+01:09:26,484 --> 01:09:34,884
+Şimdi ödeve gelin. Ödeve ne istiyoruz? Ödevi paylaşayım öncelikle.
+
+360
+01:09:43,923 --> 01:09:51,363
+Şurada 29 Kasım Salı denmiş ama aslında 30 Kasım Salı olacak. Hatta şunu şimdiden değiştirebiliyor.
+
+361
+01:09:51,923 --> 01:09:57,043
+Yani şimdi paylaştığınız ödeme 30 Kasım'a kadar vaktiniz olacak. O konuda sorun yok.
+
+362
+01:09:57,603 --> 01:10:06,884
+Şimdi biraz aslında aşamalı bir ödeme olacak. Lütfen anlamadığınız yeri sorun ki daha iyi bir şekilde pekiştirelim.
+
+363
+01:10:07,603 --> 01:10:09,603
+İlk yapacağımız şey şu olacak.
+
+364
+01:10:09,747 --> 01:10:36,187
+Kullanıcı Metlove ve Parket, farketmez. Bunlardan birinde bunu deneyeceksiniz. İki tane ayrık zamanlı işaret girecek adam. Mesela bir tanesini böyle girdi. Bir vektör gidecek gibi de düşünebilirsiniz. 1, 2, 3. 1, 2, 3 şeklinde iki işaret girdi. Kullanıcıdan bunları alacaksınız. Daha sonra...
+
+365
+01:10:37,043 --> 01:10:56,043
+Bunun konvolüsyon toplamını kendimiz hesaplatacak bir kod istiyoruz. Bu fonksiyon atıyorum mycon ismiyle olabilir. İşte girdileri bu şekilde olacak. Ve sonunda bu konvolüsyonun çıkışını bana doğrudan verdik. 35 puanlık kısım burası.
+
+366
+01:11:04,655 --> 01:11:13,655
+Şey göstereyim, Hoca burada Ahmet Hoca'yı hazırlarken şöyle bir şey istemiş aslında.
+
+367
+01:11:15,655 --> 01:11:17,644
+Göstermeye çalışmış.
+
+368
+01:11:25,652 --> 01:11:37,811
+Şimdi normalde X'en dediğimiz sinyal, 1, 2, 3 olsun. Tamam, 1, 2, 3 şeklinde vektör halde verdi ama, bunu çizerken ben nasıl çizeceğim?
+
+369
+01:11:37,811 --> 01:11:50,372
+Bunu çizebilmek için, bunun sıfır noktasının nerede olduğunu göstermem lazım. Bu yüzden bu kısmı ben eğer Bolt yazarsam, Ahmet Hoca bu şekilde vurgulanmış, aslında bu şu anlama geliyor.
+
+370
+01:11:50,384 --> 01:11:59,743
+Tam sıfır noktasında bunun değerinin iki olduğunu, merkezinin burası olduğunu, geri kalan yerlerin de buna göre devam ettiğini gösteriyor.
+
+371
+01:11:59,743 --> 01:12:13,183
+Aslında N-XN sinyalı dediğimiz şey bu şekilde göstermiş olacak. Dolayısıyla hocanın orada söylemek istediği şey de merkezinin nerede olduğunu bol bir şekilde göstermiş olur.
+
+372
+01:12:13,183 --> 01:12:17,984
+Peki, bir tekrar ödeme gidelim.
+
+373
+01:12:18,547 --> 01:12:32,347
+Ödev temel olarak ne yapıyordu? İki tane hizi alacak. Bunların merkezine de dikkat ederek, bakın birisinin merkezi 2D'ymiş. Bunun nasıl olduğunu çizdik. Diğerin merkezi de 1D'ymiş. Yer ne demek?
+
+374
+01:12:32,347 --> 01:12:40,148
+Sıfır, öncü eleman, birinci eleman ve ikinci eleman gibi düşündüğümüz zaman. Bunları konvolüsyona soktuğumuzda böyle bir şey çıktı alacağız.
+
+375
+01:12:40,148 --> 01:12:45,291
+Bunun sizin kendi yazdığınız fonksiyonun hesaplaması lazım. Bu bir.
+
+376
+01:12:45,363 --> 01:12:53,863
+İkincisi, hazır bir kütüphane kullanabilirsiniz. Bunu MATLAB'ta, chat'e yazdığım, opsiyon yapıyor.
+
+377
+01:12:53,863 --> 01:13:08,863
+COM komutu. Direkt X ve Y'yi verip hızlı bir şekilde çıktığı alabilirsiniz. Bakalım sizin yaptığınızda MATLAB'ın yaptığı ya da Python'ın yaptığı konvolüsyon aynı şey mühendis. Burada onu karşılaştırıyorsunuz.
+
+378
+01:13:08,863 --> 01:13:12,863
+Grafiksel olarak çizdiriyorsunuz. Bakalım aynı değerler mi var.
+
+379
+01:13:12,979 --> 01:13:35,979
+Vektörel olarak da yukarıdaki gibi, benim bulduğum buydu, MATLAB'ın bulduğu da başka bir değer olacak diye bunu karşılaştıracaksınız. Bu da 10 puanlık kısmı. Şimdi bu kısma kadar geldiğiniz zaman, burada şunu anlamış olacaksınız. Benim yazdığım kodla MATLAB'ın yazdığı hazır kod aynı çalışıyor ve aynı ciddiye veriyor. Güzel.
+
+380
+01:13:40,144 --> 01:13:44,744
+Konvolüsyon kodu gerçekten efektif çalışır diyebiliriz.
+
+381
+01:13:47,144 --> 01:13:53,943
+Üçte ise MATLAB'da, biz burada verdik ama siz Python halini de görebilirsiniz, yapabilirsiniz.
+
+382
+01:13:53,943 --> 01:14:03,543
+5 saniyelik ses kaydetme fonksiyonu var. Şurada 5 yazdığınız zaman 5 saniye, isterseniz bunu 10 saniye yapabilirsiniz.
+
+383
+01:14:03,543 --> 01:14:07,543
+Bu aslında sesinizi kaydedip bir dizi haline getiriyor.
+
+384
+01:14:07,796 --> 01:14:21,796
+Yani bir işaret üretiyor aslında. Bu laptopu alanlar veya bilgisayarına mikrofonu bağlananlar için doğrudan çalışacaktır. Hiçbir ayar yapmanıza gerek kalmayacak. Dolayısıyla bu işi bir şekilde yapacaksınız.
+
+385
+01:14:21,796 --> 01:14:31,796
+Kaydettiğiniz sesi, sorun yok. Bu da 10 Pound. Zaten hazır kod aslında yani bunun için ekstra uğraşmanıza gerek kalmayacak ama. Sonra bakın.
+
+386
+01:14:32,819 --> 01:14:43,819
+Sizin ses dosyalarınızı şuradaki sisteme göre konvolüsyon yapmanızı istiyoruz. Nasıl konvolüsyon yapacaksınız? Aldığınız ses giriş olacak zaten.
+
+387
+01:14:43,819 --> 01:14:57,819
+Buradaki yapı üzerinden dürtü yanıtını satlayacaksınız ve dürtü fonksiyonunu diziye dökeceksiniz. Bunu konvolüsyona soktuğunuz zaman seste bir değişim oluşacak.
+
+388
+01:14:59,539 --> 01:15:26,539
+Seslerinde değişimi oluşacağını siz burada Sound X diyerek yani elde ettiğiniz şeyi ve daha öncesindeki sesi dinleyerek arasındaki farkı yorumlamanız gerekiyor. Şurada nasıl bir işlem uyguladığını yorumlamanız gerekiyor. Bu sesin üstüne başka bir ses eklemiş de olabiliriz. İşte bunun sayesinde ne bileyim erkek sesini kadın sesine de dönüştürmüş olabilir. Burada bir...
+
+389
+01:15:26,931 --> 01:15:28,931
+Farklılık var yani.
+
+390
+01:15:28,931 --> 01:15:31,931
+Neticede bunu görmemizi bekliyoruz.
+
+391
+01:15:32,931 --> 01:15:34,931
+Ödev ile ilgili sorunuz var mı?
+
+392
+01:15:34,931 --> 01:15:43,931
+Birkaç aşamalı, evet sizi biraz yorabilir ama kesinlikle bu size çok büyük katkı sağlayacak, onu söyleyebilirim.
+
+393
+01:15:53,171 --> 01:15:55,171
+Peki, yok galiba.
+
+394
+01:15:55,171 --> 01:16:01,171
+Hocam, X fonksiyonun başlangıcı hep orta nokta mı oluyor demişsin?
+
+395
+01:16:01,171 --> 01:16:03,171
+Tekrar, yediyin.
+
+396
+01:16:07,604 --> 01:16:13,203
+Orta nokta olmuyor. Burada Bolt olarak ne ile işaretlerse o olmuş oluyor. Bakın.
+
+397
+01:16:15,363 --> 01:16:22,804
+Burada Bolt olarak ikiyi işaretlenmiş, burada Bolt olarak biri vermiş. Bu durumda aslında
+
+398
+01:16:23,564 --> 01:16:31,003
+başlangıç noktasını bu şekilde adam belirtmiş oluyor. Sıfır noktasını bu şekilde belirtmiş oluyor.
+
+399
+01:16:42,452 --> 01:16:44,072
+zaman böyle mi olacak inputlar? Evet.
+
+400
+01:16:44,212 --> 01:16:46,212
+Buna uyması lazım. Şuradaki
+
+401
+01:16:46,212 --> 01:16:47,851
+koşula uyması gerekiyor.
+
+402
+01:16:49,811 --> 01:16:50,192
+Bakın
+
+403
+01:16:50,192 --> 01:16:52,271
+X hem burada
+
+404
+01:16:52,271 --> 01:16:54,252
+hem ve hem
+
+405
+01:16:54,252 --> 01:16:56,112
+boyutları
+
+406
+01:16:56,112 --> 01:16:57,752
+gösterecek şekildeymiş.
+
+407
+01:16:58,592 --> 01:17:00,231
+Şurada bolt olarak vermiş ama
+
+408
+01:17:00,231 --> 01:17:02,351
+ne demiş? Başka bir şey
+
+409
+01:17:02,351 --> 01:17:02,972
+söylemiş mi?
+
+410
+01:17:05,372 --> 01:17:06,452
+Söylememiş. Siz yine
+
+411
+01:17:06,452 --> 01:17:08,212
+bunu kendinize göre de uyarlayabilirsiniz.
+
+412
+01:17:09,619 --> 01:17:18,020
+Önemli olan şey, burada yazdığınız konvolüsyon kısmının sizin hazır kodla aynı, benzer çıktıkları üretmesi.
+
+413
+01:17:34,644 --> 01:17:40,043
+5 değerli olursa bu sefer 3. değer mi olacak en eşitli 0 noktası? İşte onu söylemeye çalışıyorum.
+
+414
+01:17:40,043 --> 01:17:44,844
+Normal koşulda hiçbir şey yazmazsa 0 noktası en baş nokta olur.
+
+415
+01:17:44,844 --> 01:17:53,043
+İlk yazdığın değer olur yani. Atıyorum x'e 1, 2, 3, 4 diye gidiyorsak en eşitli 0 noktası normal koşulda 1 olur.
+
+416
+01:17:53,043 --> 01:17:58,927
+İlk gösterdiği değer. Ama adam onu bold ile yani kalın yazılı...
+
+417
+01:17:58,927 --> 01:18:09,427
+Bir kısımda belirtiyorsa, o n eşittir 0 gösteriyor. Bak burada mesela n eşittir 0 ikinci eleman, burada ise n eşittir 0 birinci eleman.
+
+418
+01:18:12,692 --> 01:18:19,012
+Çünkü adam onu kalın, şeyle bot, kalın değerlerle göstermiş olur.
+
+419
+01:18:20,291 --> 01:18:27,891
+Buna çok takılmayın arkadaşlar. Önemli olan sizin konvolüsyon çıktığınızın sonucu. Buna odaklanmaya çalışın daha ziyade.
+
+420
+01:18:41,363 --> 01:18:45,363
+Hocam, dördüncü soruda konvolüsyon fonksiyonu hangisi?
+
+421
+01:18:46,363 --> 01:18:55,363
+Konvolüsyon fonksiyonu, bir kere dördüncü sorudaki şey, tekrar açalım, çok zaman kaybediyoruz ama, hadi son bir bakmış olayım oraya.
+
+422
+01:18:58,363 --> 01:19:03,363
+Şimdi bakın arkadaşlar, burada sizin öğrendiğiniz bilgileri kullanmanızı bekliyoruz.
+
+423
+01:19:03,363 --> 01:19:08,203
+X dediğim şey, benim sesim olacak, kaydettiğim ses olacak.
+
+424
+01:19:10,355 --> 01:19:23,355
+Sesle neyi konvolüsyona çok sokarsak çıktığı buluyorduk. Dürtü fonksiyonunu, dürtü yanıtını daha doğrusu, haşeni. O zaman bu sistem bilgisi üzerinden siz haşeni bulacaksınız.
+
+425
+01:19:23,355 --> 01:19:37,355
+Haşeni gidip kendi kodunuzla kullanacaksınız. Dolayısıyla kendi sesinizle haşeni konvolüsyona sokacaksınız. Haşen nasıl bulunuyor? İşte burada gösterdiğim yapı üzerinden bulacaksınız. Dersi takip edenler buradan.
+
+426
+01:19:37,775 --> 01:19:40,775
+nasıl bulunacağını bilir diyelim.
+
+427
+01:19:43,175 --> 01:19:45,575
+Ve burayı artık hızlı bir şekilde geçelim.
+
+428
+01:19:51,475 --> 01:20:09,876
+Şimdi biz ayrık zamanlı konvolüsyonu nasıl yapıyorsak, aynı şekilde iki boyutlu yapılarda da bu konvolüsyon yapılabilir. Yani bizim sesimiz veya oda sıcaklığının zamana göre değişimi hep tek boyutlu sinyaller.
+
+429
+01:20:09,876 --> 01:20:18,219
+Ama görüntü gibi iki farklı eksene göre değişebilen değerler de olabilir. Bu durumda da aslında konvolüsyon yine benzer şekilde ilerliyor.
+
+430
+01:20:19,123 --> 01:20:27,363
+Bakın, kaydırıp, çarpıp, değerlerini karşısına yazarak ilan etmiş oluyoruz. Veya şurada daha iyi gösteriyor.
+
+431
+01:20:29,283 --> 01:20:38,324
+Aslında şu gösterdiğim üçe üçlük şey, aşı temsil ettiğini, şu kısmında x'i temsil ettiğini düşünebilirsiniz.
+
+432
+01:20:38,324 --> 01:20:45,123
+Tabii evet, bunlar iki boyutlu ama sonuçta konvolüsyon şuradaki gibi gerçekleşiyor. Bakın.
+
+433
+01:20:45,235 --> 01:21:11,675
+Soldan sağa doğru kayıyor. Tabii ki bu görüntü iki eksenli olduğu için aşağı inip tekrar soldan sağa kaydırıyor, aşağı inip tekrar soldan sağa kaydırıyor gibi düşünebilirsiniz. Bu görüntü işleme kısmında daha tabii hiçbir şey görmediğiniz için bu alanda hani direkt olarak aklınızda canlandıramazsınız ama gördüğünüz şeyin bununla da ilişkili olduğunu mutlaka bilin. Hatta ve hatta
+
+434
+01:21:12,148 --> 01:21:37,427
+CNN denilen bir yapı var, derin öğrenmede kullanılıyor. Convolüsyon'un nöral network olarak geçiyor. Bakın, aslında içerisinde konvolüsyon kullanıyor, bir işlem yapıyor, tekrar konvolüsyon kullanıyor, bir işlem yapıyor, tekrar konvolüsyon kullanıyor. Bu şekilde derin öğrenme denilen şey bu zaten. Derin ya da çoklu konvolüsyon yapısına sahip olmasından geliyor.
+
+435
+01:21:37,747 --> 01:21:46,147
+Elle yazdığımız iki harfini böylelikle biz bunu iki olarak sınıflandırmamızı sağlayacak bir yapı oluşmuş oluyor.
+
+436
+01:21:46,147 --> 01:21:56,147
+Tabii ki daha fazlası, daha detaylı bilgisi için sizin yapay zeka ile ilişkili dersler almanız ve bu kısmı biraz güçlendirmeniz gerekecek.
+
+437
+01:21:56,147 --> 01:22:04,547
+Ama konvolüsyonun gerçek hayatta ne kadar önemli olduğunu biraz da bilin diye ben bunu açıklıyorum.
+
+438
+01:22:06,068 --> 01:22:13,427
+Burada ekstra sorusu olan, bana ders dışı sorabilir. Burada daha fazla zaman harcamıyor.
+
+439
+01:22:18,100 --> 01:22:27,320
+Şimdi bir 5 dakika ara verelim. 16.25'de tekrar devam edelim. Uygun mudur arkadaşlar?
+
+440
+01:22:35,475 --> 01:22:36,171
+Tamam.
+
+441
+01:27:42,195 --> 01:27:50,195
+Tekrar herkese merhaba. Sanırım sesim geliyor. Şimdi konvolüsyonla ilgili çok önemli olduğu için
+
+442
+01:27:51,195 --> 01:27:58,195
+Ekstradan iki tane daha örneği hızlıca geçeceğim ve size tüf noktalarını göstereceğim.
+
+443
+01:27:58,695 --> 01:28:07,195
+Aslında yaptığımız şey hep aynı olacak, değişen bir şey yok. Sadece belki buradaki, çok pardon, buradaki gibi fonksiyonlar değişebilir.
+
+444
+01:28:09,844 --> 01:28:15,844
+Gördüğü gibi ya da işareti görüldüğü gibi, HD işareti de yine burada biraz daha farklı vermişler.
+
+445
+01:28:18,043 --> 01:28:19,443
+Ne diyor soruda?
+
+446
+01:28:20,043 --> 01:28:25,844
+XTV, dürtü yanıtı verildiğine göre, giriş ve dürtü yanıtı verildiğine göre çift bir şey hesaplayın.
+
+447
+01:28:25,844 --> 01:28:30,844
+Aslında hep sorularımız bu ayarda oluyor, buna göre hesaplarımızı yapıyoruz.
+
+448
+01:28:31,243 --> 01:28:36,431
+Şimdi, daha soruya başlamadım. Size sorsam...
+
+449
+01:28:36,431 --> 01:28:45,323
+Burada kaç farklı bölge olabilir? Bu konvolüsyon sürecinde tanımlayacağımız kaç farklı bölge olabilir? Ne dersiniz?
+
+450
+01:28:49,747 --> 01:28:53,427
+[öğrenci] 5 dedi, aşka ki programlarımdı.
+
+451
+01:29:06,100 --> 01:29:16,100
+Eğer ki bir sinyal, iki sinyal içinde, iki sinyalde, belirli bir zaman arasında başlayıp, belirli bir zamanda bitiyorsa, X teore yapmış, eksi birde başlamış birde bitmiş.
+
+452
+01:29:16,100 --> 01:29:26,100
+HD'deydi, sıfırda başlamış birde bitmiş. Eğer böyle bir durum söz konusuysa, burada muhakkak 5 bölgeden bahsetmek mümkün oluyor.
+
+453
+01:29:26,100 --> 01:29:31,596
+Bundan neler oluyor? İki tane hiç çakışmayan bölgesinin olduğu durum var.
+
+454
+01:29:32,404 --> 01:29:59,104
+İki tane kısmen çakışma var, bir tanesi tam çakışma var. Yani şimdiye kadar ki gördüğümüz örnekler üzerinde devam ettiğiniz şekilde devam ediyor. Yani devam ediyor diyebiliriz. Bu burada sol tarafta kalsın. Ben de sağ tarafa whiteboardu açıp buradan göstermeye çalışayım. Şunu da şöyle yukarıya ışılam. Peki. Şimdi buradaki HT için
+
+455
+01:30:00,051 --> 01:30:06,051
+Şu anda bu arada ekranın tamamı paylaşılmıyor. Şöyle ekranı paylaşmaya çalışayım bakalım.
+
+456
+01:30:06,051 --> 01:30:12,051
+Olacak mı? Ekranı tamamı şu an paylaştı. Sanırım şu anda geliyor.
+
+457
+01:30:23,315 --> 01:30:45,876
+Evet, şimdi buradaki hd'ni, hd'yi çok basit bir şekilde yazabilirim. Aslında t, eksi 1 ile 1 aralığındayken t'yi 2 alıyormuş. Peki, hd'yi nasıl yazabiliriz? hd'yi deyelim, t aslında 0 ile 1 aralığındayken
+
+458
+01:30:48,948 --> 01:30:56,448
+eksi 2T artı 2 şeklinde yazabilirim. T yerine 0 versem, h'ın 0'daki değerin 2 olacağını görebiliyorum.
+
+459
+01:30:57,347 --> 01:31:05,847
+Aslında iki noktası bilinen doğrunun denkleminden de siz kendiniz üretebilirsiniz. Bunları ayrıntılı bir şekilde açıklamama gerekiyor.
+
+460
+01:31:06,648 --> 01:31:13,847
+Böyle bir şey olduğu değil. Şimdi konvolüsyon yapacaksam eğer, bunların x öncelikle
+
+461
+01:31:14,899 --> 01:31:30,299
+X tau ve H tau'ya dönüştürmem lazım. Hemen dönüştüreyim. Şurada T yazılan yerlere tau yazarsam hemen bu dönüşümü yapmış olacağım. Bu yüzden bu kısmı doğrudan yazmıyorum. Hatta X tau'yu yazayım.
+
+462
+01:31:30,299 --> 01:31:38,619
+Hadi. Alt eksenim artık T değil tau oldu. Dolayısıyla X tau olmuş oldu.
+
+463
+01:31:40,115 --> 01:31:49,416
+Bu nasıl bir şeye sahip? Şurası 1, burası eksi 1, bu kısım bu şekilde olmuş oldu.
+
+464
+01:31:50,916 --> 01:31:56,115
+H, H eksi tau'yu nasıl çizeriz? Ne dersiniz?
+
+465
+01:31:57,815 --> 01:32:07,715
+H eksi tau'yu çizmek için de buradakinin aynalanmış halini çizeceğim. Yani şurası aslında eksi 1, burası 0, bunun da
+
+466
+01:32:07,859 --> 01:32:18,859
+2 olduğunu düşünebilirim. Bu aslında t eşittir sıfır noktasındaki kısmını gösteriyordu. Dolayısıyla ben ht-taoyu şöyle çizebilirim.
+
+467
+01:32:21,359 --> 01:32:32,619
+ht-taoyu bakın nasıl çizdiğime dikkat edin. Bu kısım şöyle olacak. Bunun tam bitiş noktası t iken burası da t-1 olmuş olacak.
+
+468
+01:32:34,420 --> 01:32:41,699
+Bunun genliği 2 olmuş olacak, şuradakinin genliği de 2 olmuş olacak. Dolayısıyla artık şu anda konvolüsyonu hazırız.
+
+469
+01:32:43,220 --> 01:32:54,420
+Çünkü konvolüsyon formülü ne diyordu? Eksi sonsuzdan artı sonsuza x tau çarpı h t eksi tau delta şeklinde hesaplanıyordu.
+
+470
+01:32:54,420 --> 01:33:02,019
+Bakın bu elimde var grafik olarak. Bunu da kaydırıp kullanacağım. Şu anda onun şablonunu burada oluşturmuş olduk.
+
+471
+01:33:02,931 --> 01:33:09,171
+Şimdi burada bunları belirttikten sonra aslında regionları yani bölgeleri belirtmem lazım.
+
+472
+01:33:09,171 --> 01:33:16,931
+Ben bir şeyler yapacağım ve bu bir şeyler sonucunda bir kere hiç kesişmeyen bölgeler olacak.
+
+473
+01:33:16,931 --> 01:33:24,291
+Hiç kesişmeyen bölgeler. Kısmen kesişen bölgeler olacak. Bunlardan eminim.
+
+474
+01:33:24,291 --> 01:33:28,291
+İncelerken daha da iyi olacak. Bir de tam...
+
+475
+01:33:28,404 --> 01:33:36,404
+Kesişmenin olduğu, çapışmanın olduğu noktalar olacak. Şimdi bunların bölgelerini hadi gelin birlikte düşünmeye çalışalım.
+
+476
+01:33:36,404 --> 01:33:42,404
+Hangi durumda hiç kesişmeme durumu olacak ilk etapta? Ne dersiniz?
+
+477
+01:33:42,404 --> 01:33:48,404
+Şu ve bunun üzerinden yorum yapabilmeniz mümkün.
+
+478
+01:33:53,779 --> 01:34:11,459
+T'nin aslında eksi birden küçük olduğu değerler. Mesela T'ye eksi bir verilseniz, bakın burası eksi bir olmuş olur. Bu da zaten eksi birden başlıyor. Dolayısıyla bundan küçük derseniz bu konuda hiç kesişme olmadığını zaten düşünmeniz gerekir.
+
+479
+01:34:12,899 --> 01:34:19,939
+Kısmen kesişme hangi aralıkta olacak? Bir kere alt sınırın eksi birden itibaren başlayacağını biliyorum.
+
+480
+01:34:21,619 --> 01:34:24,619
+Üç sınır ne olacak acaba? Ne dersiniz?
+
+481
+01:34:28,884 --> 01:34:30,324
+0 olacaktır.
+
+482
+01:34:31,284 --> 01:34:32,804
+Aslında 0 diyor.
+
+483
+01:34:32,804 --> 01:34:34,644
+Başka pikli olanlar mı?
+
+484
+01:34:39,699 --> 01:35:02,199
+Şöyle yapabiliriz, bu kısmı sileyim. Sıfır verdiğimdeki şeyi çizelim. H sıfır eksi tam çizelim. H sıfır eksi tam demek, aslında T yerine sıfır vermek demek. Yani şöyle bir çiftlının oluşması demek.
+
+485
+01:35:07,604 --> 01:35:34,083
+2 olmuş dedim. Şimdi bununla bunu karşılıklı çarptığınız zaman aslında sıfır noktasından sonra sanki tamamen bunun içerisine giriyormuş gibi bir durum oluşuyor. Neden? Bunun üstüne çizelim. Şuradaki yapıyı hadi gelin üstüne çizelim. Şöyle bir şey oluşmuş oldu bakın. Dolayısıyla burada tam kesişmeye başladığını gösteriyor.
+
+486
+01:35:34,515 --> 01:35:43,515
+Yani t eşittir sıfır anı, çok kilit bir an, bunun öncesinde olması lazım. Sıfıra kadarki kısımda olması lazım.
+
+487
+01:35:43,515 --> 01:35:54,515
+Tam çakışma nereye kadar devam edecek? Mutlaka sıfırdan başlayacak, az önce görmüştük sıfırdan başlayacağını. Ve nereye kadar devam edecek?
+
+488
+01:36:01,524 --> 01:36:08,844
+1'e kadar diyor. Bakalım. Gerçekten 1'e kadar mı? Bunu görmek için hemen şunu çizebilirim.
+
+489
+01:36:09,644 --> 01:36:23,764
+Burada h1-ta'yı çizebilirim. h1-ta demek t'ye yerine 1 vermek demek. t'ye yerine 1 verdiğinde şuradaki yükselen şey 1'de olacak.
+
+490
+01:36:23,764 --> 01:36:26,860
+Şu fonksiyon da t'ye yerine 1 veriyorum.
+
+491
+01:36:27,636 --> 01:36:32,316
+Eğilere bir verdiğimde sıfıra gelmiş olacak. Dolayısıyla şöyle bir şey olmuş oldu.
+
+492
+01:36:33,396 --> 01:36:38,556
+Bu adam burada birde, şurada sıfırdan, bunun genişliği iki olmuş oldu.
+
+493
+01:36:38,836 --> 01:36:46,476
+Evet, gerçekten de bu fonksiyon şöyle kayarsa şuraya kadar, şuraya gelene kadar tam tezşitmesi alınıyor.
+
+494
+01:36:46,707 --> 01:37:12,327
+Birden sonra artık yine kısmen kesişmeye girmiş oluyor. Yani T aradığı burada bir ve iki arasında olursa, kısmen kesişmeye girmiş oluyor. Eğer ki ikiden büyükse, yine hiç kesişmeme durumları söz konusu. Eğer böyle bir şey hesapladıysanız, bu bölgelere belirlediyseniz, şu hiç kesişmeme durumları için boşuna uğraşmamıza gerek yok.
+
+495
+01:37:12,623 --> 01:37:15,623
+Ne yapalım? İç yazan yerleri silelim.
+
+496
+01:37:17,123 --> 01:37:21,123
+Burada zaten çıkış sıfır olacağı için sıfır yazıp geçelim.
+
+497
+01:37:21,123 --> 01:37:23,623
+Demek ki benim ne yapmam lazım?
+
+498
+01:37:23,623 --> 01:37:29,623
+Sadece şu üç koşulu hesaplasam benim işim çözülecek aslında.
+
+499
+01:37:29,623 --> 01:37:35,123
+Ama o zaman bu üç durumun hesaplamaya başlayalım.
+
+500
+01:37:35,123 --> 01:37:37,623
+Bölgelerin neticede bölememiş olduk.
+
+501
+01:37:37,623 --> 01:37:40,300
+Şimdi burada
+
+502
+01:37:40,819 --> 01:37:47,819
+Bir tanesi için konumuz yoksa Sinyaller ve bir tanesi için hesabı birlikte yapalım.
+
+503
+01:37:47,819 --> 01:37:52,683
+Bakıyorum soru var mı diye.
+
+504
+01:37:57,587 --> 01:38:22,587
+Evet, şu anda soru yok. Peki. Ben şunun tamamını siliyorum. Ve ilk durum için, ilk durum zaten çakışma olmama durumuydu. Onun yanındaki durum için, kısmen çakışma durumu için veya t'nin eksi bir ile sıfır arasında olma durumu için bunu analiz edeceğim.
+
+505
+01:38:25,524 --> 01:38:52,324
+Aslında bunu çizerken şöyle çizmemiz çok çok daha iyi olur. Öncelikle şurayı TA olarak görüyorduk. Şu kısmı geniş bir şekilde çiziyorum. Daha iyi görebilmek için. Öncelikle X TA'yı çizeceğim buraya. X TA eksi birden bire kadar genliği iki olarak gözüküyordu. Şimdi farklı bir renkle çizeyim.
+
+506
+01:38:53,043 --> 01:39:09,283
+Diğerinde, HT-TAU'yu çizeceğiz. Normalde HT-TAU'yu şurada gösteriyorduk ama, yani orada şöyle gösteriyorduk ama, bu zaman aralığında bakalım nasıl bir çıkış verecek, onu göreceğiz.
+
+507
+01:39:11,283 --> 01:39:15,923
+Bu zaman aralığında olması demek, kısmen kesişimiz demek. Yani ne demek bu?
+
+508
+01:39:16,340 --> 01:39:28,780
+Aslında şurada fonksiyonun bir kısmının içeride bir kısmının dışarıda olması anlamlıdır. Bunun sağ tarafına ne demiştik? T demiştik. Sol tarafına ne demiştik? T-1 demiştik.
+
+509
+01:39:30,240 --> 01:39:40,300
+Dolayısıyla bizim burada integral aldığımızda integral alt ve üst sınırı nereden nereye olmuş olacak? Ne dersiniz?
+
+510
+01:39:44,595 --> 01:39:47,595
+Bunların kesiştiği bölgeler üzerinden olacak tabi ki.
+
+511
+01:39:48,195 --> 01:39:54,095
+Dolayısıyla eksi birden T'ye kadar bir integral almam gerekiyor. Bu aralık için.
+
+512
+01:39:55,595 --> 01:40:00,595
+Bunun hesabında YT çıkışı aslında eksi birden T'ye kadar
+
+513
+01:40:01,995 --> 01:40:08,095
+X tau çarpı h, T eksi tau üzerinden hesaplanması gerekiyor.
+
+514
+01:40:08,095 --> 01:40:10,571
+Peki, X tau dediğimiz şey ne?
+
+515
+01:40:11,028 --> 01:40:12,648
+Onu görevliyor musunuz?
+
+516
+01:40:20,851 --> 01:40:32,851
+x daha dediğimiz şey, x fonksiyonun aslında bu aralıkta sürekli sabit ve iki değerini veriyor. Dolayısıyla bunun yerine hop, iki yazabilirim. Çok basit çünkü fonksiyonun basit yani.
+
+517
+01:40:34,252 --> 01:40:42,252
+Peki, HD'yi ne demiştim? HD'yi çok basit bir şekilde eksi iki t artı iki fonksiyonuyla göstereceğimi söylemiştim.
+
+518
+01:40:42,252 --> 01:40:46,452
+HD'yi bunu dersen, h t eksi ta yugası derim.
+
+519
+01:40:46,528 --> 01:40:56,528
+Bunu da yine T yerine T-ta koyarak yapabiliriz. Yani 2T-2ta artı 2 şeklinde yazabiliriz.
+
+520
+01:40:56,528 --> 01:41:06,528
+Veya bunu 2 parantezinde de alabiliriz. 2 parantezinde 1-T-ta şeklinde bunu gözetlebilmek mümkün.
+
+521
+01:41:06,528 --> 01:41:09,528
+Dolayısıyla bu fonksiyonu getireceğiz, buraya yazacağız.
+
+522
+01:41:11,475 --> 01:41:15,836
+1-T-T şeklinde, D-T şeklinde yazmış olduk.
+
+523
+01:41:17,615 --> 01:41:23,515
+Bunu buradan yazarak, şuradaki sabitleri dışarı çıkarabilmemiz mümkün.
+
+524
+01:41:23,515 --> 01:41:34,515
+4 integral, eksi 1'den T'ye kadar, aslında 1-T-T, D-T şeklinde yapabiliriz.
+
+525
+01:41:34,515 --> 01:41:38,115
+Bu integral'i hesaplayacak olursak,
+
+526
+01:41:38,323 --> 01:42:01,703
+Hesatlamak çok zor değil ama aşamalı bir tık uzun olduğu için aslında burada iki parantezinde bir eksi t kare sonucunu buluyoruz. Bu hangi aralıktaki sonucumuz oldu? t'nin sıfırla ikisi bir aralığındaki sonucu olmuş oldu. Buraya kadar soru işareti var mı?
+
+527
+01:42:14,771 --> 01:42:22,771
+Hocam şimdiye kadar alanları ne güzel geometriden buluyorduk. Şimdi nereden çıktı bu integral işi diyebilirsiniz.
+
+528
+01:42:22,771 --> 01:42:39,627
+Buradakini de aslında alandan kısmen bulabilirsiniz. Şöyle bu alanı aklınızda canlandıracak olursanız, aslında şöyle bir şey oluyor. Şöyle bir alan olmuş oluyor. Şunun maksimum noktası bunda da 2, bunda da 2 olduğu için 4 olacak.
+
+529
+01:42:41,652 --> 01:43:08,531
+Ve aslında bir yamuğun alanı gibi durum söz konusu. Şunun arasındaki uzaklık t-1 olduğunu görebilirsiniz. Yukarıya doğru olanki kısmın 4 olduğunu görebilirsiniz. Yani şurası 4. Şu kısmı da belki üçgenle benzerlikten bulabilmeniz mümkün. Dolayısıyla yamuğun alanını işte üst artı 6,
+
+530
+01:43:08,627 --> 01:43:18,627
+Çarpı yükseklik bölü 2'den de bulabilmeniz mümkün. Yine benzer sonuç çıkacaktır. Bu konuda ekstra uğraşmanıza gerek yok.
+
+531
+01:43:18,627 --> 01:43:30,627
+Yani iki körü de yapabilirsiniz ama integral üzerinden yapmayı öğrenirseniz, burada fonksiyon ne olursa olsun bunun sonucuna gitmesini öğrenmiş olacaksınız.
+
+532
+01:43:30,627 --> 01:43:36,268
+Bakın bu neydi? Eksisi 1 ile sıfır alanında geçerliydi.
+
+533
+01:43:36,307 --> 01:43:43,667
+Peki, tam kesişme durumunu düşünecek olursak nasıl bir şey yapmamız gerekecek?
+
+534
+01:43:43,667 --> 01:43:46,787
+Hemen onu da kısker gösterelim.
+
+535
+01:43:46,787 --> 01:43:55,507
+Aslında tam kesişmesi demek, ben X-Ti'yi her zamanki gibi çizeyim X bir şekilde.
+
+536
+01:43:55,507 --> 01:44:02,148
+Düzgün çizemeyim ama eksi birden bire kadar olacak gibi düşünebilirsiniz.
+
+537
+01:44:03,220 --> 01:44:27,980
+Eğer ki benim zaman aralığım sıfırla bir aralığımdaysa, şuraya da h t eksi t' onun genel ağrını yazayım. Şöyle çiziyordum, şu kısma t, bu kısma t eksi bir isimli veriyordum ve iki demiştim. Eğer ki t değerim bu aralıktaysa,
+
+538
+01:44:27,988 --> 01:44:37,507
+Şuradan böyle, evet, güzeldi. Bu aralıkta ise, T'nin bir kere sıfırdan büyük olduğunu söylüyorum.
+
+539
+01:44:37,507 --> 01:44:48,307
+Burada doğru mu yaptık aralığı, bakalım. Evet, doğru olması lazım. Tam kesişimi durumda bununla ilişki çünkü. T'yi burada sıfır alsam mesela,
+
+540
+01:44:49,427 --> 01:45:05,028
+Şöyle bir şey yapmışım. Bakın tam kesişmede şu kısım benim HT-TAM'ı gösterirken, yukarıdaki de X TAM'ı gösterdi. Zaten bunun tamamı kesişmiş oldu. Bu durumda benim alanım ne olur arkadaşlar?
+
+541
+01:45:12,115 --> 01:45:22,355
+Aslında X-TAU ile H-T-TAU'nun çarpımının altında kalan alana bakmamız gerekiyor.
+
+542
+01:45:41,876 --> 01:45:48,756
+Tam kesişme durumu olduğu için, Üçgenin alanıyla, aslında Üçgenin alanıyla ilişkili bir şey olacak.
+
+543
+01:45:49,376 --> 01:45:55,756
+Tabi ki burada düzgün çizemediğim için, ben düzgün bir çıkış gösteremedim.
+
+544
+01:45:56,756 --> 01:45:58,699
+Ama şurada daha güzel...
+
+545
+01:45:58,804 --> 01:46:18,484
+Bir formatı var, biz bunun üzerinden bakalım. Bakın burada aslında tam kesişme durumu söz konusu. Normalde üçgenin alanı 1, evet. Ama burada çarpımda bakın X tau ile de çarpıyor. X tau'nın geldiği burada 2 olduğu için alanı 2 olarak bulmuş olacak.
+
+546
+01:46:18,804 --> 01:46:34,804
+Bunu istiyorsanız buradaki integralden de çözebilirsiniz veya benim yaptığım gibi tam kesişme var. Bu üçgenin alanı ile ilgili olması lazım. Ama buradaki X-Di'nin değerinin extended edilmesi, yani çarpılması gerekiyor gibi düşünmeniz gerekiyor.
+
+547
+01:46:36,804 --> 01:46:38,804
+Şimdi buralarda bayağı zaman kaybettik.
+
+548
+01:46:39,859 --> 01:46:53,419
+Ama genel olarak nasıl yapıldığını anladık diye düşünüyorum. Hepsini teker teker anlatmaya kalkırsak çok zaman alacak. Bu yüzden sizin başka örneklerden mağmur bırakmamak için bu kısmı hızlıca geçeyim.
+
+549
+01:46:53,419 --> 01:46:58,939
+En son elde ettiğiniz durumda şöyle bir şey yapmanızı isteyeceğiz.
+
+550
+01:47:00,851 --> 01:47:16,531
+Eğer ki son olarak karşınıza gelirse, bakın, T-1'den küçük için 0, bu aralıkta bu değeri almış, 0 ile 1 aralığında 2 değeri almış ve çıkış olarak çizdirdiğimizde aşağıdaki çıkışı elde ediyor, uz diyeceğiz.
+
+551
+01:47:17,731 --> 01:47:22,931
+Bu soruyla ilgili aklınıza takılan bir şey var mı? Anlaşıldı mı arkadaşlar bu soru?
+
+552
+01:47:51,412 --> 01:47:55,172
+0-1 arasını tekrar alabilirsiniz. Peki, alalım.
+
+553
+01:48:01,108 --> 01:48:15,347
+Sıfırla bir arasında arkadaşlar, tam çakışmanın olduğunu söylüyoruz. Hem fikiriz burada. Burada normalde eğer ki integral şöyle yazsaydı, bakalım.
+
+554
+01:48:19,923 --> 01:48:43,324
+Şöyle bir şey yazsaydı, ht- hd-t'ın eksi sonsuzdan artı sonsuz artı, integürenli sorsaydı, bu durumda senin söylediği şey doğru olacaktı. Çünkü bu neyle ilişkili? Bu üçgen ne gösteriyor? O zaman üçgenin alanını bulmuş olacaktı.
+
+555
+01:48:47,252 --> 01:49:15,212
+1 çarpı 2 bölü 2'den, aslında 1 olarak çıkmasını bekliyor. Ama benim konvolüsyon şeyin o değil. Konvolüsyon formülünün aslında x-tağ ile ht-tağının integralı. Dolayısıyla bu iki fonksiyonu aslında çarpacaksın, bu fonksiyon çarpımları sonrasında oluşan fonksiyonun alanını hesaplayacaksın bir yandan.
+
+556
+01:49:16,115 --> 01:49:43,395
+Şurada çizik olursak, bakın normalde şöyle bir şey var. X daha dediğimiz şey bu. Ve geldiğin ki, eksi 1 ile 1 aralığında. Sen bir de getirdin. Tam çakışma durumunu göstermek için buraya, eksi 1'den 0'a kadar mesela, şu t eksi 1'den t'ye kadar dersek daha doğru olabilir.
+
+557
+01:49:44,020 --> 01:49:48,020
+Getirdim buraya HT-Tau'yu koydum.
+
+558
+01:49:49,020 --> 01:49:56,020
+Şimdi istiyorsun ki bunların karşılıklı çarpımlarıyla oluşan fonksiyonun altında kalan arına bakayım diyorsun.
+
+559
+01:49:56,020 --> 01:49:58,020
+Şurası normalde 2.
+
+560
+01:49:58,020 --> 01:50:05,708
+Ama sen burada X-Tau ile HT-Tau'yu çarparsan eleman elemanı o zaman şöyle bir şey oluşacak.
+
+561
+01:50:06,707 --> 01:50:13,707
+Yine bu şekilde olacak ama, bunun gelmeyi burada 4 olmuş olacak. Çünkü 2 buradan geliyor, 2 ile buradan çarpıyoruz.
+
+562
+01:50:13,707 --> 01:50:31,707
+Yani T-1'den, T'ye kadar oluyor. Dolayısıyla bu oluşan üçgenin alanı nedir diye bakarsak, yükseklik çarpı tavan bölü 2'den, 2 olarak olman gerekiyor. Anlaşıldı mı?
+
+563
+01:50:42,996 --> 01:50:54,764
+Şimdi bir tane de hızlıca bir konvolüsyon sorusu çözelim. Sürekli zaman değil, ayrık zaman için çözelim.
+
+564
+01:50:57,939 --> 01:51:01,939
+Yine bütün ekranı paylaşsam daha güzel olacak gösterimi.
+
+565
+01:51:12,627 --> 01:51:16,068
+Bunu sizle birlikte aslında devam ettirmek istiyorum.
+
+566
+01:51:16,068 --> 01:51:19,188
+Bu yüzden derse bu açıdan katılırsanız iyi olur.
+
+567
+01:51:19,188 --> 01:51:23,988
+Bakın soru burada verilmiş, daha aşağıya kaydırmıyorum çünkü orada cevaplar var.
+
+568
+01:51:23,988 --> 01:51:27,028
+Cevaplardan etkilenmeyin diye istedim.
+
+569
+01:51:27,028 --> 01:51:31,828
+X'en verilmiş, Haşen verilmiş, hayırlı zamanlı olduğu belli.
+
+570
+01:51:31,828 --> 01:51:33,627
+Bunun konvolüsyonunu soruyor.
+
+571
+01:51:33,627 --> 01:51:37,627
+X'eni bana yazdırabilir misiniz? Dörtlülerin toplamı şeklinde.
+
+572
+01:51:37,627 --> 01:51:39,028
+Nasıl yazarız?
+
+573
+01:51:56,180 --> 01:52:06,840
+Bu şekilde bir şeyleri sanırım. Delta n deriz. Artı. Delta n çünkü 1. En eşittir 0 noktasındaki kısmı gösteriyor. Evet ufukta yazmış.
+
+574
+01:52:08,500 --> 01:52:20,220
+Her bir dürtü için bir tane fonksiyon yazmam lazım. Tabii ki biri değerin ötelenmiş hali olduğu için ötelenme miktarı ile birlikte burada belirtmem lazım. Burada bunu net bir şekilde görüyorum.
+
+575
+01:52:21,332 --> 01:52:31,832
+haşeni de benzer şekilde yazabilirim. Zaten haşen ve xen arasında bir tane dürtü eksik değer var. O yüzden bunları da hızlıca bu şekilde yazabilirim.
+
+576
+01:52:33,332 --> 01:52:34,668
+Bunu görüyorum.
+
+577
+01:52:38,771 --> 01:52:49,771
+Şimdi diyor ki adam, A analitik teknikle, B grafiksel metotla bulunuruz diyor. Şimdi bir kere analitik yöntem denilen yöntemi biz kısmından gördük.
+
+578
+01:52:49,771 --> 01:53:00,771
+Bize matematiksel olarak bizim burada x'n ile h'n'i konvolüsyona sokmamız lazım. Bunun nasıl hesaplandığını hızlıca giriyorum.
+
+579
+01:53:05,684 --> 01:53:28,963
+Dolayısıyla şu çıkış dediğim şey aslında şuna eşit oluyor. İksel konvolüsyon, delta n artı delta n-1 yani haşan yerine kendi fonksiyonunu yazmış oldum, eksi 2, şu 3 değil, eksi 2. Olmuş olduk.
+
+580
+01:53:34,739 --> 01:53:53,739
+Bu da aslında x'n ile deltaN'in konvolüsyonu anlamına gelir. Yine artı x'n ile deltaN-1'in konvolüsyonu anlamına gelir. Yine artı x'n ile deltaN-2'nin konvolüsyonu anlamına gelir.
+
+581
+01:53:53,739 --> 01:53:59,739
+Daha önceki koyduğumuz kurallarda ne diyorduk? Bakın, x'n eğer bir...
+
+582
+01:54:00,020 --> 01:54:09,620
+dürtü fonksiyonuna konvolüsyona girerse, bilim dürtüyle konvolüsyona girerse kendisinin aynısını ortaya çıkartır diyorduk.
+
+583
+01:54:09,620 --> 01:54:25,620
+Bu bizim az önce derste gördüğümüz kurallardan birisiydi. İkinci kural neydi? Eğer birisini bir dürtü işaretiyle, kaydırılmış bir dürtü işaretiyle konvolüsyona sokarsa o zaman
+
+584
+01:54:25,844 --> 01:54:36,844
+O kadar x'in işaretini öteler diyorduk. Yani bunun sonucunda ne olacak biliyor musunuz? x n-1 ve bütün değerleri ötelemiş olacağız.
+
+585
+01:54:36,844 --> 01:54:49,707
+Artı, aynı şey burada da geçerli, x'i aslında iki kadar ötelemiş olmuş oldu. Buradaki işlem sonrasında bunu evlenmiş oldu.
+
+586
+01:54:50,739 --> 01:55:01,239
+Bakın konvolüsyon çok hızlı ilerliyor. Bir grafiksel bir şey yapmadık. O yüzden dürtüklerle çalışmak çok kolay ve bu kuralları biliyorsanız uygulamak da kolay oluyor.
+
+587
+01:55:01,239 --> 01:55:07,739
+Peki o yüzden ne yapalım? X'nin yerine yazalım. X'n dediğimiz şey burada vermiştik.
+
+588
+01:55:15,923 --> 01:55:34,164
+ve artı deltaN-3 şeklinde. Bu X'eni gösteriyor. Artı ne var? xN-1. Bunu nasıl hesaplarız? Tabii ki X'en yerine n-1 yazarak, yani deltaN-1 yazmış olduk.
+
+589
+01:55:34,164 --> 01:55:43,764
+deltaN-2 yazmış olduk. Artı deltaN-3 artı deltaN-4 yazmış olduk.
+
+590
+01:55:44,020 --> 01:55:55,420
+Bu bileşen aslında şunun bileşenidir. Yani burada yeşil ile altın çizdiğim kısım bunun karşılığı iken, kırmızı ile çizdiğim kısım bunun karşılığı.
+
+591
+01:55:55,420 --> 01:56:02,380
+Şimdi başka bir renkle madden göstereyim. Morla çizdiğimde yeni yazacağımın karşılığı olacak.
+
+592
+01:56:12,212 --> 01:56:19,712
+Altı deltaNX'ı 5. Biraz uğraşlı oldu belki ama, neticede tıkını bu şekilde yazmış oldum.
+
+593
+01:56:21,452 --> 01:56:24,932
+Peki bunun sonrasında, şu kısımları sileyim.
+
+594
+01:56:26,772 --> 01:56:31,652
+Elde ettiğim, gm fonksiyonunu çizecek olursam nasıl çizelim?
+
+595
+01:56:39,828 --> 01:57:05,148
+Konvolüsyon soruyordu. Evet, konvolüsyon zaten çıktı demetti. E çıktı ne olur? Şimdi bu fonksiyon aslında şunun tamamını içeriyor. Burada benzer olanları gruplayıp sayı olarak sayabilirim. Mesela deltaN'den kaç tane var? Bir tane var. O zaman buraya gelip bir yazabilirim. Sıfır noktasında bir gelmeye sahipmiş. DeltaN-1'den kaç tane var?
+
+596
+01:57:07,475 --> 01:57:15,475
+İki tanemiz. O zaman n-1'i işaret eden nokta 1 olduğu için gidip burayı 2 ile göstermem gerekecek.
+
+597
+01:57:15,475 --> 01:57:21,931
+n-3'ten, n-4'ten 3'er tane olduğunu görüyorum.
+
+598
+01:57:25,524 --> 01:57:31,524
+3, 3, 2 ve 3, hatta 4'te de aynı şeyi geçerli.
+
+599
+01:57:31,524 --> 01:57:35,468
+Yok, 4'te iki tane düşmüş.
+
+600
+01:57:38,739 --> 01:57:49,939
+Sonra 5'te tekrar 1'e düşmüş. Bakın aslında konvolüsyonu konvolüsyon yapmadan hesaplamış yolduk. Bu analitik yöntem olarak geçiyor.
+
+601
+01:57:51,140 --> 01:57:57,300
+Matematiksel olarak biz dörtünün özelliklerini kullanarak bunu bu şekilde çözebiliriz.
+
+602
+01:57:58,180 --> 01:58:04,579
+Veya bir başka yolu da bizim bunu kaydılıp çarparak elde ettiririz.
+
+603
+01:58:06,163 --> 01:58:13,163
+Onu da kaydırıp çarpma işinde şöyle gösterebiliriz. Bakalım başka bir şey açalım.
+
+604
+01:58:18,131 --> 01:58:43,731
+Başka bir sayfa açıyorum, hazırlanıyor şu anda. Evet. Şimdi burada XLM'yi HRM verilmiş. Ben bu XL'den X, I'yi çizecek olursam, X, I'yi grafiksel konvolüsyon yoluyla çözmeye çalışıyorum şu anda. X, I'yi çizecek olursam yine aynı şekilde bu böyle 1, 1, 1 şeklinde olmuş olacak.
+
+605
+01:58:44,595 --> 01:58:48,595
+0, 1, 2 ve 3 numaralı noktalar çektim.
+
+606
+01:58:48,595 --> 01:58:55,595
+Şimdi bunun altına h-i'yi, h-i'yi çizeyim.
+
+607
+01:58:55,595 --> 01:59:02,595
+h-i dediğim şey aslında şuraya göre simetrik olacak. Şöyle, şöyle ve şöyle.
+
+608
+01:59:02,595 --> 01:59:05,595
+Bunların değerlerinde hepsi 1.
+
+609
+01:59:07,595 --> 01:59:09,595
+Nedense o...
+
+610
+01:59:13,171 --> 01:59:15,171
+I olduğunu söyleyelim şöyle.
+
+611
+01:59:16,771 --> 01:59:19,171
+Bir yazsam da en az 2'ye çeviriyor.
+
+612
+01:59:19,571 --> 01:59:22,071
+Eksi 2, eksi 1, sıfır.
+
+613
+01:59:23,171 --> 01:59:26,771
+Şu anki kısmı aslında h eksi i gösteriyor.
+
+614
+01:59:26,771 --> 01:59:34,171
+h eksi i'yi ben biliyorum ki h sıfır eksi i olduğunu söylüyor ve n'in burada sıfır olduğunu gösteriyor.
+
+615
+01:59:34,171 --> 01:59:39,083
+Dolayısıyla bu konvolüsyon sonucunda ben y sıfırın değerini elde etmiş olacağım.
+
+616
+01:59:39,572 --> 01:59:50,072
+Bu konvolüsyon sonucunda karşılıklı elemanların çarpımını toplamak. Sadece bir eleman çapıştığı için 1x1'den sonucum benim burada 1 olacak. Bakın y0'ı bulduk bile.
+
+617
+01:59:51,572 --> 02:00:06,047
+O zaman bunu bulduysam ben bunu bir sağa kaydırıyorum. Sağa kaydırmam demek aslında 1-i'yi çizdirmem demek. Bu durumda 1-i'de ben eşittir 1 iken bir iş yapıyorum ve
+
+618
+02:00:06,047 --> 02:00:08,967
+Aslında Y1'in sonucunu bulmuş olacağım.
+
+619
+02:00:10,087 --> 02:00:14,567
+Bir kardırdırdımda bakın, bu böyle, bu böyle ve şu nokta olmuş olur.
+
+620
+02:00:14,567 --> 02:00:17,087
+O eksi bir, sıfır ve bir olmuş olur.
+
+621
+02:00:17,447 --> 02:00:22,447
+Yani bir dakika, burada bir yanlışlık yok.
+
+622
+02:00:22,447 --> 02:00:25,967
+Şu kısım büyük olması lazım, yanlışlık. Evet.
+
+623
+02:00:26,687 --> 02:00:30,207
+Bu durumda arkadaşlar, Y1'in sonucu ne olur?
+
+624
+02:00:39,060 --> 02:00:52,260
+İki tane çapıştığı için değeri iki olmuş olur. Çünkü bununla şuradaki birim çarpımından bir geliyor, artı bununla yukarıdaki birim çarpımından bir geliyor. Dolayısıyla toplamı iki olmuş olur.
+
+625
+02:00:53,260 --> 02:00:59,660
+Bunu bir kaydırırsak, şu kısımda artık tam çapışma moduna girmiş oluyor.
+
+626
+02:01:00,627 --> 02:01:07,127
+Yani aslında karşısında da 1 olduğunu düşünürsek, Y'nin 2 değerinin 3 olduğunu söyleyebiliriz.
+
+627
+02:01:07,648 --> 02:01:12,087
+Bu şekilde kaydırıp çarparak da bunların sonuçlarını elde edilmemiz mümkün.
+
+628
+02:01:12,587 --> 02:01:16,207
+Buna da biz grafiksel çözüm yolu ismini veriyoruz.
+
+629
+02:01:18,247 --> 02:01:20,627
+Bunları zaten sizle paylaşacağız.
+
+630
+02:01:21,847 --> 02:01:23,988
+Burada takip edebilirsiniz.
+
+631
+02:01:24,819 --> 02:01:34,699
+Ve adamın da bu iş sonucunda elde ettiği şeyi bizim daha önceki bulduğumuz şeyle aynı olduğunu mutlaka göreceksiniz.
+
+632
+02:01:40,372 --> 02:01:45,324
+Anladık mı arkadaşlar grafiksel ve analitik çözünün yolunu?
+
+633
+02:02:09,747 --> 02:02:15,247
+Evet, ufum anladığı zaten benim de diğer arkadaşları ben biraz daha sormak istedim.
+
+634
+02:02:18,868 --> 02:02:19,868
+Sağ olun.
+
+635
+02:02:19,868 --> 02:02:27,868
+Şimdi son olarak diğer hafta, 6. haftanın slide'ına başlayabiliriz.
+
+636
+02:02:27,868 --> 02:02:36,868
+Bugün ders biraz uzun oldu ama daha detaylı bir şekilde konvolüsyonu açık bir şekilde göstermeye çalıştık.
+
+637
+02:02:36,868 --> 02:02:38,868
+Bir sürü örnek çözdük.
+
+638
+02:02:38,868 --> 02:02:44,868
+Şimdi 6. hafta slide'ı çok uzun değil, hızlı bir şekilde bunu geçebiliriz.
+
+639
+02:02:45,811 --> 02:02:55,811
+Bizim için de bir bakış açısı katacak açıkçası. Konvolüsyondan artık sıyrıldık ve birazdan sistemlerin genel yapısını anlamaya çalışıyoruz.
+
+640
+02:02:55,811 --> 02:02:57,811
+Gibi düşünüyorum.
+
+641
+02:02:57,811 --> 02:03:01,811
+Şimdi, şimdiye kadarki kısımda biz...
+
+642
+02:03:05,619 --> 02:03:22,619
+Sistemlerin modellenmesi, LTI yani zamanla değişmez sistem, nedensel sistem gibi değişik sistemleri gördük ve aslında hem sürekli hem de ayrık zamanlı sinyallerin modelleri hakkında ya da sinyaller hakkında bilgi sahibi olduk.
+
+643
+02:03:23,619 --> 02:03:29,619
+Bunun dışında konvolüsyonu hem sürekli zamanda hem de ayrık zamanlarının ses atlanacağını görmüş olduk.
+
+644
+02:03:32,115 --> 02:03:59,516
+Şimdi artık konvolüsyonu daha kolay hesaplama yollarına doğru geçeceğiz. Bunu Fourier dönüşümleriyle veya işte Z dönüşümü, Laplace dönüşümü gibi dönüşümlerle sağlayacağız. Gördüğünüz gibi herhangi bir konvolüsyonu yapmak biraz uğraştırıyor. Bu uğraşmadan biraz kaçmaya çalışıyoruz. Bu sebeple şu anda bir defanser denklemlerle ilgili slidemiz mevcut.
+
+645
+02:04:01,235 --> 02:04:28,235
+Aslında bu dersin sonunda şunu anlayacağız ki, her şey, şu an gerçek günlük hayattaki her şey, dünya ile ilgili pek çok şey, difensel denklemlerle gözlemleniyor veya modelleniyor şeklinde düşünebiliriz. Bu difensel denklemleri sadece bilgisayarcılar, elektrikçiler değil, mekanikçiler ve sistem kurgulayan herkes bu şekilde bunu modelliyor.
+
+646
+02:04:29,108 --> 02:04:33,108
+Şimdi size basit bir uygulama örneği göstereceğim.
+
+647
+02:04:33,108 --> 02:04:43,108
+Bu dersi dinlerken arkadaşlar, buradan dersten soru gelir gibi değil de, biraz daha böyle arka planı anlamaya çalışarak lütfen dinleyin.
+
+648
+02:04:44,108 --> 02:04:48,108
+Şimdi iki bilgisayar arasında bir haberleşme yapmak istiyoruz.
+
+649
+02:04:48,108 --> 02:04:52,108
+İşte ben size bilgisayarımdan iki kablo uzatıyorum.
+
+650
+02:04:52,655 --> 02:04:58,336
+Burada baya uzun bir mesafeden söz etmek mümkün. İşte birkaç kilometre diyelim.
+
+651
+02:04:58,336 --> 02:05:15,695
+Sonuçta bu kablonun aslında normal bir direnç oluşturduğunu zaten söylememiz gerekiyor. Ama onun dışında aslında aynı kablo kilometre başına 50 nF'lık bir kapasite etkisi de yaratıyor.
+
+652
+02:05:15,695 --> 02:05:20,096
+Burada çok basit bir ilişki var.
+
+653
+02:05:20,819 --> 02:05:32,819
+Benim girişteki bilgisayarım, giriş dediğim sistem olarak düşünürsem, ben burada girişi vereceğim, karşı tarafta adamın çıkışı gözleyebilecek mi? Asıl amacım bu.
+
+654
+02:05:32,819 --> 02:05:48,363
+Bunu yaparken de sistemi etkileyen faktörleri anlamaya çalışıyorum. Şuradaki kablonun kilometre başına 110 ve kilometre başına 50 nf'lık bir kablo kullandığımı düşünüyorum.
+
+655
+02:05:48,979 --> 02:06:09,220
+Yani demek ki o zaman kablo ile temsil ettiğim şey temelde bir direnç ve bir kapasite ile kombinansı törle belirlenebilir. Benim burada girişte verdiğim şey de işaretlerde bir aslında sinyal kaynağı ile gösterilmiş durumda.
+
+656
+02:06:09,811 --> 02:06:18,811
+Sonuçta biz bilgisayarlar sayısal sistemler ve karşı tarafa bilgi iletmek için 1-0 yaparak karşı tarafa bilgileri gönderiyoruz.
+
+657
+02:06:18,811 --> 02:06:25,811
+Diyelim ki şöyle bir şey giriş olarak verdim. Çıkışımda adam bunu gözleyebilecek mi diye merak ediyorum.
+
+658
+02:06:25,811 --> 02:06:33,804
+Ama tabiki bu kablo çok uzun olduğu için hem direnç hem de kapasitik bir etki yaratıyor. Bakalım bu sistem...
+
+659
+02:06:34,131 --> 02:06:37,811
+Çıkışını nasıl etkileyecek? Bunu spol vuruyor.
+
+660
+02:06:41,524 --> 02:06:49,524
+Bunu çok basit bir şekilde bu devrede XT gerilimi buradayken YT gerilimi ne olacak gibi düşünebilirsiniz.
+
+661
+02:06:51,524 --> 02:07:00,524
+Sinyal kaynağının gücü, gerilimi, aslında direncin gerilimi ile kondansatörün geriliminin toplamına eşit olacak.
+
+662
+02:07:01,524 --> 02:07:09,195
+Bunu aslında denkleme dökecek olursak, yani çok fazla detaya girmeden, şuradaki diferansel denklemle modellenebileceğini
+
+663
+02:07:09,811 --> 02:07:31,811
+söyleyebiliriz. Böylelikle aslında şurada X, T'yi vermiş olsan Y, T'yi defensa denklemlerin çözüm yorum temleriyle çözebilmen mümkün. Böylelikle herhangi bir giriş için, istediğim bir giriş için çıkışı bu denklem üzerinden hesaplayabilirim.
+
+664
+02:07:38,707 --> 02:07:42,067
+Bakın burada defensa denemezsak karşımıza çıkmış olur.
+
+665
+02:07:45,667 --> 02:07:49,187
+Normalde siz, evet çok parlu.
+
+666
+02:07:54,228 --> 02:08:15,228
+Normalde siz, BEV dersinde aslında süperpozisyon diye bir ilti gördünüz. Bu birden fazla devreye sinyal kaynağı bağlanırsa, bunların ayrı ayrı toplamları şeklinde incelenebileceğini söylüyordu. Aslında süperpozisyon ülkesi de bir inerliğin karşılığı olarak düşünülebilir.
+
+667
+02:08:15,507 --> 02:08:22,507
+Aynı şekilde buradaki bu güç kaynağının, birden fazla güç kaynağının toplamı şeklinde de düşünürüz.
+
+668
+02:08:22,507 --> 02:08:30,507
+Yani her sistem bize bunu sağlıyor çünkü. Bunları alt alta toplayacak olursanız, buna elde ettiğini, bizi göreceksiniz.
+
+669
+02:08:30,507 --> 02:08:41,507
+Yani ben sisteme bunu vermekle, aslında bunları verip sistem sonrasındaki çıktıkları toplamam benim için aynı durum olmuş olacak.
+
+670
+02:08:41,507 --> 02:08:43,371
+Peki.
+
+671
+02:08:44,627 --> 02:08:50,347
+Basit, aslında çok basit sinyallere dönüştürmüş oldum benim kendi karmaşık girişimi.
+
+672
+02:08:50,988 --> 02:08:56,307
+Ben girişte kırmızı gibi bir giriş verirsem, çıkışta bakın nasıl bir şey alıyormuş?
+
+673
+02:08:57,627 --> 02:09:07,747
+Sistemin girişine böyle bir darbe ya da input verirsem, çıkışında maviyle gösterdiğim bir çıkış alıyormuş.
+
+674
+02:09:08,507 --> 02:09:11,867
+Böyle bir şey verirsem, çıkışında böyle bir şey alıyormuş.
+
+675
+02:09:12,435 --> 02:09:16,435
+Bunun genel yapısı bizi fiziksel olarak neyi anlatıyor?
+
+676
+02:09:17,435 --> 02:09:27,435
+Buna odaklanacak olursak, ben girişte benim bilgisayarımdan bir kara dalga gönderdiğimde karşı taraf bunu yumuşatılmış halde görüyor.
+
+677
+02:09:27,435 --> 02:09:36,435
+Neden görüyor böyle? Çünkü kablom burada hem birer çeride kapasitif etki yaratıyor.
+
+678
+02:09:40,115 --> 02:09:53,315
+Lojik bir verdiğinde direnç üzerinden bu kapasitede olacak ve kandansatör doğma eğrisine göre çıkışıp, o eğriye göre, gelirli bir yerden sonra değere oturmuş olacak.
+
+679
+02:09:53,315 --> 02:10:04,916
+Bunu istiyor muyum, istemiyor muyum? Eğer istemiyorsan, o zaman ya kendime daha kaliteli bir kablo alırım, ya da bununla ilgili başka bir çözümleme yoluna giderim.
+
+680
+02:10:04,916 --> 02:10:07,916
+Sistemdeki parametrelerimi değiştirmeyi giderim.
+
+681
+02:10:10,484 --> 02:10:19,484
+Sonuç olarak bunları ayrı ayrı uyguladığındaki toplamlar bu olmuş oldu. Ben aslında girişte adama şöyle bir şey gönderiyorum.
+
+682
+02:10:19,484 --> 02:10:31,484
+0011, 00101 şeklinde. Ama adam bunu böyle alıyor bakın. Neden böyle alıyor? İşte kablonun etkisinden dolayı.
+
+683
+02:10:31,484 --> 02:10:35,404
+Buradaki sıkıntıyı dolayısıyla görmüş oluyoruz.
+
+684
+02:10:37,747 --> 02:10:58,635
+Neticede bir mühendis aslında, önce fiziksel bir sistemi düşünüp bu sistemin bileşenlerini modelliyor. Bakın buradaki yapıda biz devre ile modelledik ve bu devrenin matematiksel denklemini bir şekilde elde etmeyi zorlaşıyor.
+
+685
+02:10:59,060 --> 02:11:07,060
+En son yaptığı şeyde bunun çözümüyle aslında çıkışın nasıl olabileceğini tahmin etmek, teorik olarak bunu hesaplamak oldu.
+
+686
+02:11:07,060 --> 02:11:20,060
+Bu adam burada bunun çıkışı boşuna gitmezse o zaman geri dönüp şuradaki RC değerleriyle değerlerini değiştirecek şekilde bir kablo seçmesi gerekecek.
+
+687
+02:11:20,060 --> 02:11:22,476
+Eğer ki Drams değeri ve
+
+688
+02:11:23,796 --> 02:11:41,395
+A dediğimiz bir sabit vardı diyorsunuz, R-C ile ilişkiliydi. Bu kondansatörün doğma süresini etkileyen bir yapıydı. Eğer ki hem burada direnci düşürebilsem hem de kondansatörü düşürebilsem, o zaman benim çıkışım daha böyle kar dalga gibi olabilir.
+
+689
+02:11:44,948 --> 02:11:51,548
+Diğer taraftan sadece biz ilgilenmiyoruz bu işlerle, otomobil süspansiyon sisteminde de benzer durumlar var.
+
+690
+02:11:51,548 --> 02:11:59,448
+İşte burada pek çok farklı şey söyleyebiliriz. Her birini açıklamamıza gerek yok.
+
+691
+02:11:59,448 --> 02:12:06,448
+Ama sonuçta o adamların yaptığı modelleme sonrasındaki denklemde, dördüncü dereceden bir denklem olmuş oldu.
+
+692
+02:12:06,448 --> 02:12:08,448
+Defensel denklem olmuş oldu.
+
+693
+02:12:09,811 --> 02:12:24,811
+Buradan yola çıkarak şunu söyleyeceğiz, ifansel denklemler gerçekten bizim için hayati yönemi sahip ve elinize aldığımız fiziksel bir olayın karşılığında hep karşımıza çıkabilecek bir yapı olmuş oluyor.
+
+694
+02:12:26,811 --> 02:12:30,811
+Bu yüddendir ki biz konvolüsyon öncesinde ne demiştik?
+
+695
+02:12:35,828 --> 02:12:42,328
+Her şeyi modelleyeceğiz demiştik. Burada da aslında onun genel halinin tekrar yazılmış haline mevcut.
+
+696
+02:12:46,739 --> 02:13:06,739
+Böyle bir diferansel denklem gördüğünüzde, bunun derecesi ne diye sorduklarında en yüksek dereceyi size söylemeniz lazım. İşte bu diferansel denklem için üçüncü dereceden bir diferansel denklemdir dememiz gerekecek. Bunu bilmiyorsak da bu saatten sonra hani söyleyeyim. Tıpkı polinom derecesi gibi düşünebilirsiniz.
+
+697
+02:13:08,739 --> 02:13:12,235
+Diğer taraftan bu gördüğümüz diferansel denklemler...
+
+698
+02:13:12,404 --> 02:13:30,204
+Farklı şekilde olabilir, linear, non-linear, homojen, homojen olmayanlar gibi. Ama bizim gösterdiğimiz veya düşündüğümüz yapılar hep linear ve homojen, linear homojen, ifeansal denklemler şeklinde olacak.
+
+699
+02:13:30,204 --> 02:13:37,204
+Linear olması ne demek? Bakın buradaki gibi sabit katsayılarla çarpımlarının toplamı şeklinde olması demek.
+
+700
+02:13:38,068 --> 02:13:40,068
+Peki homojen olması ne demek?
+
+701
+02:13:40,068 --> 02:13:44,068
+Homojen olması sağ tarafındaki değerin sıfır olması anlamına geliyor.
+
+702
+02:13:44,068 --> 02:13:51,068
+Tıpkı Linerce 1'deki homojenlik, homojenlik denklem sistemleri gibi.
+
+703
+02:13:53,068 --> 02:14:01,068
+Buraya kadar aklınıza takılan bir şey var mı? Hızlı geçiyorum çünkü biraz böyle size bir altyapı oluşturmak istiyoruz.
+
+704
+02:14:01,068 --> 02:14:05,068
+Differmsel denklemlerin genel anlamını anlamaya çalışıyoruz.
+
+705
+02:14:07,604 --> 02:14:18,604
+Gösterim olarak şöyle bir gösterim de mümkün. Bakın YT'nin K'ıncı dereceden türevi aslında DK YT şeklinde de gösterilidir.
+
+706
+02:14:18,604 --> 02:14:24,604
+Böyle bir şey de gösterim olarak kullanılıyor, aklınızda kalsın.
+
+707
+02:14:24,604 --> 02:14:28,204
+Aslında benim...
+
+708
+02:14:28,435 --> 02:14:40,435
+Sistemin yanıtı ya da genel yanıtı bulmak için, şurada Zero Input Response denilen bir yaklaşım var. Bunların nasıl hesaplandığına çok ayrıntılı bir şekilde girmeyeceğiz.
+
+709
+02:14:41,435 --> 02:14:49,435
+Sadece çok basit bir şekilde nasıl hesaplandığını üstünden anlatmaya çalışacağız.
+
+710
+02:14:51,891 --> 02:15:03,891
+Zero input solution'lar, aslında bir difeyansal denklemin sonuç çözümleri, şu şekilde sabit kat sayılarla üstel fonksiyonların toplamı şeklinde normalde hesaplanıyor.
+
+711
+02:15:03,891 --> 02:15:12,891
+Kaçıncı derecen varsa ona kadar gidiyor. Eğer ikinci dereceden ise, o zaman sadece ilk iki tanesinin olduğunu düşünüyoruz.
+
+712
+02:15:13,891 --> 02:15:17,291
+Peki, bu kısımlara geçiyoruz.
+
+713
+02:15:18,612 --> 02:15:44,051
+Eğer birbirini tekrar eden difensel denklemler varsa, kök açısından birbirini tekrar eden aynı yerde katlı kökü bulunan difensel denklemler varsa, o zaman da burada C11 artı C11 çartı T, C12 çartı T² şeklinde bunlar birbirini tekrar ediyor. Şimdi bir örnekte bunları hızlıca gösterelim.
+
+714
+02:15:44,884 --> 02:15:47,764
+Bakın, bir diferansel denklem verilmiş burada.
+
+715
+02:15:47,764 --> 02:15:57,923
+G'nin ikinci türevi artı 3xG'nin birinci türevi artı 2YT eşittir DFT bölü DT.
+
+716
+02:15:57,923 --> 02:16:03,923
+Initial Condition'lar verilmiş burada. Yani başlangıç koşulları.
+
+717
+02:16:03,923 --> 02:16:08,804
+Peki bu tarz bir diferansel denklem nasıl çözüm adımlarına sahip? Bunu anlamaya çalışalım.
+
+718
+02:16:11,604 --> 02:16:20,924
+Bölüm DTY, Lambda olacak gözüyle bakarsanız buradan hemen şuraya bir geçiş yapmaya çalışıyorum.
+
+719
+02:16:23,404 --> 02:16:29,924
+Bakın aslında denkletmeyi sol tarafını alıp sağ tarafını sıfıra eşitlememiz lazım. Neden?
+
+720
+02:16:29,924 --> 02:16:35,204
+Homojen çözümüne bakmaya çalışıyoruz. Homojen çözümünde sağ tarafın sıfır olduğunu düşünebiliriz.
+
+721
+02:16:38,644 --> 02:16:53,404
+D²Y bölü DT² dediğimiz şey bunun ikinci türevi olacağı için bunu da Lambda² ile gösterdiğiz. Bu karakteristik denklem bulmada kullandığımız bir yol arkadaşlar.
+
+722
+02:16:57,203 --> 02:17:02,984
+Bu da lambda kare artı 3 lambda artı 2'nin aslında sıfıra eşit olması demek.
+
+723
+02:17:03,183 --> 02:17:06,423
+Sadece şu denklemi alıp bu hale dönüştürdüğünüzü düşünün.
+
+724
+02:17:07,304 --> 02:17:15,103
+Burada bunun kökleri aslında bu karakteristik denklemin, sistemin karakteristik denkleminin kökleri olmuş oluyor.
+
+725
+02:17:15,603 --> 02:17:17,304
+Burada lambda birim.
+
+726
+02:17:17,811 --> 02:17:34,211
+eksi 1, Lambda 2'nin de eksi 2 olduğunu görebilirsiniz. Benim çözümüm nasıldı? Benim çözümüm C1 çarpı E üzeri Lambda 1T artı C2 çarpı E üzeri Lambda 2T ile bulunabiliyordu.
+
+727
+02:17:45,747 --> 02:17:49,747
+Dolayısıyla sistemin çözümünü, çıkışını daha doğrusu bu şekilde görebiliriz.
+
+728
+02:17:50,507 --> 02:17:52,487
+Peki, English Unconditionları niye varmış?
+
+729
+02:17:53,227 --> 02:17:57,187
+İşte buradaki C'leri bulabilmemiz için adam bize bunları paylaşmış.
+
+730
+02:17:58,288 --> 02:18:03,808
+Mesela Y yerine, T yerine 0 yazdığımızda sonucun da 0 olması lazım.
+
+731
+02:18:05,227 --> 02:18:12,347
+Burada T yerine 0 yazıp sonucun 0 olması için aslında C1 ve C2'nin toplamının 0 olması anlamına gelir.
+
+732
+02:18:12,595 --> 02:18:39,595
+Bu birinci denklem. İkinci denklemde de G'nin türeminin 0 olması, t eşitir 0'daki eksi 5 vermesi şu şekilde yazılır. Buradan da başka bir denklem çıkar. Bu denklemde Recolonert 2 bilinmen 2 denklem üzerinden C bilinmeni de bularak Zero Input soluşunu elde etmiş oluyoruz.
+
+733
+02:18:40,884 --> 02:18:50,884
+Şimdi burada, tabii ki şimdiye kadar ki yaptığımız adımları hızlıca geçtik ama, asıl burada çıkışı sorgulamamız gerekiyor.
+
+734
+02:18:50,884 --> 02:18:55,884
+Çıkışın, osylasyon yapıp yapmadığı mesela bizim için çok önemli bir etki.
+
+735
+02:18:55,884 --> 02:19:04,884
+Buradaki ilk kısmı T'ye göre çizdirip, ikinci kısmı T'ye göre çizdirip, bunların tamamını toplarsak alt alta, aslında genel çıkışı yorumlamış olacağız.
+
+736
+02:19:04,884 --> 02:19:05,884
+Bakın.
+
+737
+02:19:06,963 --> 02:19:21,603
+First note denilen şey aslında ilki, second note denilen şey ikincisi şurada söylediği şey. Bunları toplayarak zero input responsu adam almış.
+
+738
+02:19:21,603 --> 02:19:31,204
+Bunun sonrasında sistem nasıl bir cevap vermiş? Sıfırdan böyle bir eksi bir buçağa doğru inmiş. Sonra altıncı...
+
+739
+02:19:31,540 --> 02:19:40,260
+Saniyeden sonra, stabil olarak sıfırı da devam etmiş. Yani aslında bunun bir kararlı yapıya sahip olduğunu söyleyebiliriz.
+
+740
+02:19:41,940 --> 02:19:48,740
+Başka bir Difference Endeklem var. Bunun çözümü yine benzer gidiyor ama çok ayrıntısına girmeyeceğim.
+
+741
+02:19:49,299 --> 02:19:54,100
+Yine çıkışlara baktığımızda iki tane çıkış konuşmak mümkün.
+
+742
+02:19:54,100 --> 02:19:59,220
+Birisi First Mode, yine Second Mode. Bunları ayrı ayrı çizip toplayacak olursak,
+
+743
+02:19:59,412 --> 02:20:01,412
+Böyle bir şey veriyoruz.
+
+744
+02:20:01,412 --> 02:20:19,412
+3'ten 0'a doğru giderek azalan, sönülenen bir çıkış olduğunu söylüyoruz. Dolayısıyla burada da without oscillation, yani herhangi bir osilasyon olmadan kararlı bir şekilde şu saniyeden sonra bir çıkış üretmiyor.
+
+745
+02:20:19,412 --> 02:20:21,324
+Bunu düşünebilirsiniz.
+
+746
+02:20:23,891 --> 02:20:50,531
+Başka bir sistem var. Bu sistemde de aslında en başta osilasyon yapıyor. Ama sonra bu osilasyon, helirli bir yüzeye girdikten sonra, yine ikinci saniyeden sonra neredeyse hiçbir çıkış elde etmemiş oluyor. Bunlar aslında hep osilasyonların, yani daha doğrusu sistemin stabilizasyonuyla ilgili parametreler olduğunu belirtmemiz gerekir.
+
+747
+02:20:51,443 --> 02:21:00,164
+Eğer stabilse, sistem sonsuza kadar sürekli osylasyon edecek bir yapı olmaması lazım diyebiliriz.
+
+748
+02:21:01,763 --> 02:21:04,563
+Buraya kadar aklımıza takılın bir şey var mı?
+
+749
+02:21:22,708 --> 02:21:26,708
+Peki, şimdi burada şöyle bir şey söyleyelim.
+
+750
+02:21:26,708 --> 02:21:30,708
+Osilasyon osilasyon dedik, bunun karşılığı ne olacak peki?
+
+751
+02:21:30,708 --> 02:21:37,708
+Yani nasıl bir karşılığı olabilir? Bakın size bir video göstereyim. Bu meşhur bir videodur.
+
+752
+02:21:37,708 --> 02:21:40,708
+Burada daha iyi bir şekilde görebiliyoruz.
+
+753
+02:21:40,708 --> 02:21:45,484
+Yani sistemleri neden bu kadar iyi inceliyoruz?
+
+754
+02:21:45,523 --> 02:21:53,043
+Neden uğraşıyoruz bununla diye soruyorsanız, bunun cevabı birazdan sizin karşınızda...
+
+755
+02:22:06,804 --> 02:22:22,123
+Tacoma Bridge Collapse diye bir şey var. Plan var mı bunun? Bu olayı. Hatırlayan var mı? Hatırlayan değil de daha doğrusu bu çok geçmişte olan bir şey. Belki bir yerlerden duymuşsunuzdur. O açıdan sordum.
+
+756
+02:22:25,811 --> 02:22:29,492
+Peki 1940'da gerçekleşen bu olaya bir bakalım o zaman.
+
+757
+02:23:08,628 --> 02:23:10,628
+Ve sonunda yıkılıyor arkadaşlar.
+
+758
+02:23:11,427 --> 02:23:16,524
+Bunu yorumlayabilecek olan var mı? Bizim kendi açımızdan bunu yorumlayabilecek.
+
+759
+02:23:23,188 --> 02:23:25,427
+Rezonansla ilgili bir durum bu sorun hocam.
+
+760
+02:23:26,867 --> 02:23:28,667
+Evet, rezonansla ilgili bir durum.
+
+761
+02:23:29,108 --> 02:23:34,028
+Ama bu rezonansın da aslında sistemsel karşılığını düşünebiliriz.
+
+762
+02:23:34,827 --> 02:23:37,907
+Şöyle yorum yapabilirsiniz arkadaşlar.
+
+763
+02:23:39,028 --> 02:23:43,347
+Aslında bir giriş var.
+
+764
+02:23:43,867 --> 02:23:46,587
+Her sistemin böyle model görüyoruz. Bir de çıkış var.
+
+765
+02:23:48,468 --> 02:23:50,468
+Buradaki giriş ne olabilir?
+
+766
+02:23:52,852 --> 02:23:58,531
+Burada köprü sistemini modelleyecek olursak, buna köprü sistemi diyelim.
+
+767
+02:24:01,811 --> 02:24:04,311
+Rüzgar, evet rüzgar olabilir.
+
+768
+02:24:04,711 --> 02:24:17,511
+Şimdi burada rüzgar dediğimiz şey, belirli bir hızda esiyor. Bunun da bir karşılığı var gibi düşünürüz. Böyle bir belirli süre aralığında bu rüzgar esiyor. Çok kuvvetli bir rüzgar olmasına gerek yok.
+
+769
+02:24:17,811 --> 02:24:25,811
+Sistemi etkilemesi için. Bakın buna karşılık, Y-T ya da salınım dediğimiz değer
+
+770
+02:24:28,500 --> 02:24:30,500
+Giderek büyümüş oluyor.
+
+771
+02:24:31,299 --> 02:24:36,500
+Bu köprü üzerinde söylemiyorum, başka sistemler üzerinde de söylemiyorum.
+
+772
+02:24:37,100 --> 02:24:42,500
+Bu durumda aslında sistem stabilizasyonu gittikçe kaybolmuş oluyor.
+
+773
+02:24:43,500 --> 02:24:52,500
+Her bir salınımda, her bir osilasyonda köprü daha da fazla deforme oluyor ve bu sayede en son yıkılmaya kadar gidebiliyor.
+
+774
+02:24:53,652 --> 02:24:59,652
+Bu kesinlikle Rezonans ile ilgili. Rezonans ama bu köprü sisteminin bir içsel parametresi.
+
+775
+02:25:01,152 --> 02:25:08,652
+Biz genel olarak sisteme baktığımız zaman, bunu bir işaret sistemler gözüyle şöyle bakabiliriz.
+
+776
+02:25:09,152 --> 02:25:16,152
+Köprülü modellerken matematiksel olarak bu adamlar güzel bir şekilde modellememişler demek.
+
+777
+02:25:18,159 --> 02:25:28,659
+Herhangi bir girişe karşı çıkışı elde etmek için çıkışın neyine bakacaktık? İşte mesela, Baybok Stability diye bir şey gördük.
+
+778
+02:25:31,159 --> 02:25:35,159
+Sınırlı giriş, sınırlı çıkış anlamında kararlılık diyorduk biz buna.
+
+779
+02:25:35,159 --> 02:25:44,940
+Ben burada sınırlı bir giriş versem, yani sıfırdan başlayıp 5 saniye kadar bu rüzgar etse ve rüzgarın geldiği de sonlu bir değer olsa,
+
+780
+02:25:45,043 --> 02:26:02,484
+Çıkışın mutlaka belirli bir savunumdan sonra geriye oturmasını bekleriz. Çok büyük bir rüzgar olduysa daha sonra bu köprünün sallanmaması bekleriz. Bu, stabil bir sistemi aslında işaret eder.
+
+781
+02:26:02,484 --> 02:26:11,283
+Korkunun, osilasyonun sonsuza kadar devam etmesi veya giderek güçlenmesi aslında bunun stabil olmadığını gösteren bir...
+
+782
+02:26:11,360 --> 02:26:25,360
+Yapı olmuş oluyor. Bu yüzden bizim günlük hayatımızda kullandığımız hep kararlılık durumu, mühendislik sisteminin çok önemli olan şeyler gibi düşünebiliriz.
+
+783
+02:26:27,360 --> 02:26:38,284
+Yine merak eden varsa, Takomoblid diye bunun geçmişini ve mühendislik geçmişini araştırabilir.
+
+784
+02:26:40,564 --> 02:26:51,364
+Bugün baya yoğun ders yaptık. Biraz az da ara verdik. Gerekirse tekrar tekrar açık izleme imkanınız var sizin böyle bir avantajınız mümkür.
+
+785
+02:26:53,364 --> 02:26:56,364
+Sorunuz var mı? Bunu soralım.
+
+786
+02:27:06,644 --> 02:27:12,644
+Sınava hesap makinesi ile gelebilirsiniz. Gelebilmeniz lazım daha doğrusu.
+
+787
+02:27:14,644 --> 02:27:21,644
+Bunu bir şey yaparız arkadaşlar, sorarız. Asıl sınav hesap makinesi ile gelmeniz lazım gibi düşünüyorum.
+
+788
+02:27:21,644 --> 02:27:25,644
+Çünkü karşılıklı değerleri çarpıp bir hesap yapmanız gerekecek.
+
+789
+02:27:30,548 --> 02:27:55,768
+Dolayısıyla, şimdi bugün konvolüsyon örnekleri bayağı çözdük. Sizin de oturup bir konvolüsyon örnekleriyle haşır neşir olmanızı istiyorum. Bu ilk istediğim şey. Bununla ilgili size çözümünü problemlerle paylaştığım Drive adımla. Şimdi hatta örnek sorunu, soru çözümünü de paylaşacağım. Bugün yaptığımız çözümleri. Sınav ilgilice olmayacak. Dersin dili Türkçe olduğu için Türkçe olarak.
+
+790
+02:27:56,275 --> 02:28:09,275
+Sınav olacak. Yani burada herhangi bir şey oldu. Sunumlarda İngilizce anlatıyoruz ama bundan önceki dönemlerde İngilizce hazırladığı için İngilizce anlatıyoruz. Yani İngilizce sunum paylaşıyoruz, varoluz.
+
+791
+02:28:12,275 --> 02:28:16,275
+Bir de ödevi mutlaka aksatmayın arkadaşlar. Ödevin gerçekten sizin...
+
+792
+02:28:16,500 --> 02:28:32,500
+Bakış açınıza bir etkisinin olacağını düşünüyorum. Güzel sesle ilgili güzel bir uygulama geliştireceksiniz. Belki buradan yola çıkıp kendiniz için başka opsiyonlar geliştirebilirsiniz, başka uygulamalar yapabilirsiniz.
+
+793
+02:28:34,500 --> 02:28:39,500
+Öyle bir de zaten OBS üzerinden sizinle paylaşacağız.
+
+794
+02:28:40,884 --> 02:28:46,083
+İsterseniz Drive altından da görebileceksiniz. Drive'da da paylaşacağız. Bilgimiz olsun.
+
+795
+02:28:47,283 --> 02:28:51,083
+Evet, sizi bayağı yordum. Katılımınız için teşekkür ederim.
+
+796
+02:28:51,684 --> 02:28:54,283
+Umarım ders faydalı olmuştur.
+
+797
+02:28:55,184 --> 02:28:59,884
+Sorusu olan varsa istediği zaman mail atabilir. Bu şekilde buna ulaşabilir.
+
+798
+02:28:59,884 --> 02:29:04,884
+Ama evet, tamam teşekkür ederim ben de.
+
+799
+02:29:06,684 --> 02:29:08,083
+Görüşürüz arkadaşlar.
