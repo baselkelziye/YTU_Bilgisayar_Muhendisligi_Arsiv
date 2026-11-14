@@ -9,3 +9,4 @@
 | 11 | Güz | Arzuhan Kocabaş | [sube_11/](sube_11/) |
 | 12 | Güz | Hilal Tufan | [sube_12/](sube_12/) |
 | 24 | Güz | Metin Işıkoğlu | [sube_24/](sube_24/) |
+| 25 | Güz | Metin Işıkoğlu | [sube_25/](sube_25/) |
