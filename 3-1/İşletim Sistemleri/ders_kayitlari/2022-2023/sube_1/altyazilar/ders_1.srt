@@ -1,0 +1,1999 @@
+1
+00:00:01,524 --> 00:00:02,524
+Continu.
+
+2
+00:02:56,723 --> 00:03:22,863
+Evet, merhaba arkadaşlar. Şimdi bir üç beş dakika bekleyelim. OBS'de, pardon OBS'de, online yıldız etkileri de yüksek lisansı da bu dersi alan arkadaşlar dersi kayıtlı değil gözüküyorlar. O yüzden oluşan linki onlara OBS üzerinden atmam gerekiyor. Ama onun da mail gönderme hızı.
+
+3
+00:03:23,731 --> 00:03:41,271
+Kaplumbağa'dan biraz yavaş. O yüzden daha, yani şimdi gönderdim. Sırayla tek tek gönderdiği için biraz uzun sürüyor. Birazdan bittir. O sırada zaten bizim kendi katılım sayımız biraz artmış olur. Top topu. Ben hariç 17 kişi var sadece çünkü.
+
+4
+00:03:42,171 --> 00:03:49,932
+Geçen hafta sizinle sanırım buralarda bir yerde kaldıydık. %100 emin olmamakla beraber.
+
+5
+00:04:02,388 --> 00:04:07,528
+Geldi mi? Tamam. Güzel. En azından.
+
+6
+00:04:14,611 --> 00:04:29,151
+Güzel. Bundan sonra ki normal şartlarda online olması için bir şeyimiz yok, sebebimiz yok ama en azından olur da mümkün ki bir problem, sağlık problemi olursa şey yaparız, hızlı recover edebiliriz.
+
+7
+00:04:29,151 --> 00:04:29,771
+Şimdi.
+
+8
+00:04:34,387 --> 00:04:36,387
+Sizin ve nerede kalktığınızı?
+
+9
+00:04:44,307 --> 00:04:49,247
+Hatırlıyorum. Interactive kısmını da konuştuk. Oralarda bir yerdeydi galiba.
+
+10
+00:04:57,235 --> 00:05:03,956
+Doğal modu da konuştuk sizinle. Sesli konu da konuştuk.
+
+11
+00:05:12,435 --> 00:05:18,075
+Sizinle hangi slide'da kaldıydık? 38 miydi? 34 falan mıydı?
+
+12
+00:05:23,156 --> 00:05:24,276
+Ne mi nolamadım.
+
+13
+00:05:25,556 --> 00:05:26,596
+Ok, o tuz.
+
+14
+00:05:27,375 --> 00:05:28,115
+XSV.
+
+15
+00:05:36,531 --> 00:05:38,411
+Siz zaten hiç emin değilsiniz galiba.
+
+16
+00:05:38,591 --> 00:05:41,512
+Kimse cevap vermediği için ben kendi kendime konuşuyor gibi oluyorum.
+
+17
+00:05:44,432 --> 00:05:46,072
+Yakından, uzaktan fark etmiyor.
+
+18
+00:06:29,779 --> 00:06:34,500
+Tamam, neyse o zaman. Herhalde burasıdır o zaman diyeyim. Bundan devam ediyoruz. Sıkıntı yok.
+
+19
+00:06:39,444 --> 00:06:45,963
+Geçiyor. 5 dakika daha beklemiş olalım. Biraz daha gelelim. Bir daha olur belki. Ondan sonra başlayalım.
+
+20
+00:11:30,004 --> 00:11:34,584
+Evet, tekrar merhaba gençlikler. Şimdi kaldığımız yerden devam edelim.
+
+21
+00:11:36,964 --> 00:11:48,964
+Geçen hafta işletme, ne diyeyim, yapması gerekenler nelerdir diye konuşurken önce process management'tan başlamıştık.
+
+22
+00:11:49,884 --> 00:11:52,964
+Process management içerisinde...
+
+23
+00:11:54,580 --> 00:11:56,860
+neler yapılması gerektiğinden bahsetmiştik.
+
+24
+00:11:56,920 --> 00:12:04,700
+Procesinin yaratılması, ortadan kaldırılması, bunun hem kullanıcı hem sistem için yerine getirilmesi.
+
+25
+00:12:04,860 --> 00:12:06,860
+Sonra memur menajımından bahsetmiştik.
+
+26
+00:12:07,120 --> 00:12:18,460
+Memur menajımında ne sorunlar, daha doğrusu çözmemiz gereken sorunlar vardı.
+
+27
+00:12:19,251 --> 00:12:41,251
+Her şeyden önce memori kısık gibi alan çalıştırmamız gereken uygulamalar var. Uygulamalar memori'den daha büyük olabilir. Aynı anda birbirinden fazla programı çalıştırıp, proses oluşturursak o proseslerin memori'de ne yapmaları lazım? Birbirinin ayaklarına bazmadan çalışabilmeleri lazım. Dolayısıyla...
+
+28
+00:12:43,635 --> 00:12:48,775
+Bunlarla uğraşıyor olmamız lazım. Bunları çözen yapıları oluşturmamız lazım.
+
+29
+00:12:49,316 --> 00:12:50,375
+Onun dışında ne var?
+
+30
+00:12:54,772 --> 00:13:00,772
+Özellikle baktığınız zaman, multi-programming bir environment'tasınız.
+
+31
+00:13:00,772 --> 00:13:04,772
+İşte yeni çalıştırılan bir proses var, çalıştırmaya başlanan bir proses var.
+
+32
+00:13:04,772 --> 00:13:08,772
+Memoriniz dolu. Ne yapacaksınız? Memoriden birilerini çıkartacaksınız.
+
+33
+00:13:08,772 --> 00:13:12,772
+Yeni geleneğe ekleyeceksiniz. Kimi çıkartacaksınız? Nasıl çıkartacaksınız?
+
+34
+00:13:12,772 --> 00:13:19,772
+Neler yapabilirsiniz? Bunlar memory management'ın işi. Sonra neyi konuştuk? Storage management'ı konuştuk.
+
+35
+00:13:19,772 --> 00:13:21,708
+Storage management için...
+
+36
+00:13:21,940 --> 00:13:30,780
+Nasıl şeylerden bahsettik ya da neyin çözülmesi lazım dedik.
+
+37
+00:13:32,240 --> 00:13:38,019
+Bir kere her şeyden önce depolama alanı ile ilgili olarak işletim istemiyorum.
+
+38
+00:13:38,120 --> 00:13:44,040
+Bize uniform bir yapı sağlaması lazım. Neden?
+
+39
+00:13:44,680 --> 00:13:47,780
+Çünkü baktığımız zaman storage management'da...
+
+40
+00:13:48,148 --> 00:13:56,988
+Farklı türde depolama alanları var. Şeyde de konuşmuştuk. Memory yararçısında da konuşmuştuk.
+
+41
+00:13:56,988 --> 00:14:00,948
+Yani registerdan başlayarak register, cache, memory.
+
+42
+00:14:01,875 --> 00:14:15,816
+Secondary Storage yani, solicited diskler sonrasında, hard diskler sonra, optical diskler, magnetic takeler vesaire şeklinde giden bir silsiz ile var.
+
+43
+00:14:15,915 --> 00:14:23,655
+Bu depolama ortamlarının hepsinin aslında iç yapısı, çalışma mantığı birbirinden farklı.
+
+44
+00:14:29,775 --> 00:14:45,515
+Ortamlardan bahsettiğimizde bile mesela işte diyelim ki artist ya da solistik, bunlardan birden fazlası yan yana olduğunda bile aslında ne farklılıkları olabilir?
+
+45
+00:14:46,195 --> 00:14:51,215
+İşte sektör ve track sayısı birbirinden farklı olabilir, çalışma yapısı birbirinden.
+
+46
+00:14:51,615 --> 00:15:00,135
+İlk çalışma yapısı, yani bilgiyi yazma şekli, yazmaya nereden başlıyor vesairesi gibi şeyler farklı olabilir.
+
+47
+00:15:00,755 --> 00:15:08,875
+Dolayısıyla bunların hepsiyle uygulama geliştiricinin baş etmesinin bir tanesi neydi? İşletim sisteminin özelliklerinden bir tanesi.
+
+48
+00:15:09,015 --> 00:15:14,415
+Bize uniform bir yapı sağlaması, işi kolaylaştırması, kaynak birleşimini rahatlatmasıydı.
+
+49
+00:15:31,860 --> 00:15:42,339
+File sistem dediğimiz bir yapı sunar. Bu file sistem ile aslında siz tamamen mantıksal seviyede bir organizasyon, yani fiziksel bir organizasyon değil.
+
+50
+00:15:42,339 --> 00:15:48,339
+Ne yapıyorsunuz? Bilgilerinizi dosya adı verdiğimiz yapılar içerisinde, file'lar içerisinde tutuyorsunuz.
+
+51
+00:15:49,319 --> 00:15:57,519
+Hatta böyle gündüz milyonlarca dosya olmaması için ne yapıyoruz? Bunları aslında klasörler içerisinde oldur.
+
+52
+00:15:58,644 --> 00:16:03,644
+ya da director dediğimiz klasörler içerisinde tutuyoruz.
+
+53
+00:16:05,604 --> 00:16:12,423
+Bir klasörün ya da şeyin içerisinde, director ya da folder neyse işte,
+
+54
+00:16:12,423 --> 00:16:15,724
+bunun içerisinde bundan bir başka tane daha olabiliyor.
+
+55
+00:16:15,963 --> 00:16:18,804
+Yani hiyerarşık bir organizasyon içerisinde ilerliyoruz falan.
+
+56
+00:16:19,104 --> 00:16:20,644
+Flat gitmiyoruz genelde.
+
+57
+00:16:21,331 --> 00:16:38,432
+Bu sayede de aslında alttaki depolama alanının fiziksel özelliklerinden bağımsız olarak bilginin saklanması, okunması vesaireyle ilgili her türlü işlemi yapabilir hale geliyoruz.
+
+58
+00:16:39,892 --> 00:16:42,432
+Şimdi bunun dışında...
+
+59
+00:16:50,196 --> 00:17:15,195
+Şöyle bir şey daha var. İşletim sisteminin bize sağlaması gereken. O da nedir? Memoryde zaten sınırlı bir kaynak üzerinde çalışıyoruz. Dolayısıyla memory yazılmayan her şeyi disk üzerinde tutuyoruz. Okey. Yani bu bir bakış açısı. Disk üzerindeki yapıda birkaç tane...
+
+60
+00:17:16,723 --> 00:17:38,003
+Çözülmesi gereken yine karşılaşabileceğimiz sıkıntı, problem var. Daha doğrusu bunlarla karşılaşmamak için alınması gereken önlemler. Bir tanesi şu. Bu diskteki boş alanın yönetilmesi. Ne yapıyoruz? Diske bir yerden başlayıp yazıyoruz. Sonrasında gerektiği zaman siliyoruz. Gerektiği zaman tekrar yazıyoruz.
+
+61
+00:17:38,480 --> 00:17:46,759
+Şimdi bu noktada yazmaya nereden devam edeceğiz? Nasıl devam edeceğiz? Ne olacaktır? Yazma ve silme işlemlerinin doğası gereği.
+
+62
+00:17:46,759 --> 00:17:55,340
+Yani bugün elinize bir liste alın. Mesela bakkaldan, marketten alınacaklar listesi yapmaya başlayın.
+
+63
+00:17:55,700 --> 00:18:04,539
+İşte 0, 1, 2, 3, 4, 5. adım diye yazın. Ev arkadaşınız eve geldiği zaman ben bunları aldım desin. Listeden iki tanesi desin.
+
+64
+00:18:05,107 --> 00:18:08,547
+Ne oluyor? Hani işler birbirine girmeye başlıyor.
+
+65
+00:18:08,867 --> 00:18:10,587
+Yani arada boşluklar oluşmaya başlıyor.
+
+66
+00:18:11,248 --> 00:18:14,147
+Listeye aşağıdan mı devam edeceksiniz?
+
+67
+00:18:14,708 --> 00:18:17,047
+Yoksa araya mı koyacaksınız?
+
+68
+00:18:17,607 --> 00:18:19,748
+Ya da nasıl yürüyeceksiniz?
+
+69
+00:18:19,748 --> 00:18:21,007
+Bu bir problem.
+
+70
+00:18:21,407 --> 00:18:22,748
+Bu problemle ilgili olan.
+
+71
+00:18:22,867 --> 00:18:24,147
+Yani şundan dolayı bir problem.
+
+72
+00:18:24,627 --> 00:18:29,347
+Risk ayosu yaptığınız zaman oradaki bilgiyi aslında toplu şekilde almayı tercih ediyorsunuz.
+
+73
+00:18:29,971 --> 00:18:42,391
+Çünkü baktığınız zaman yavaş bir işlem. Yani sadece gidip diske bir byte okumuyorsunuz. Okuduğunuz zaman bir blog okuyorsunuz. O da işte ne bileyim 4K, 64K vesaire gibi bir yapı oluyor.
+
+74
+00:18:43,511 --> 00:18:50,751
+O zaman da hani mümkünse eğer ben oradan bir bilgi okuyorsam tahminen daha sonrasında ne yapacağım? Devamında da okuma yapacağım.
+
+75
+00:18:58,099 --> 00:19:09,359
+Herhangi bir dosya ait bilgiler ne kadar kesintisiz şekilde storage'da durursa aslında o kadar az sayıda okumayla işlemi tamamlayabilir.
+
+76
+00:19:09,579 --> 00:19:15,460
+Birazı bir yerde, birazı bir yerde, birazı bambaşka bir yerde. Geri kalan hepsi tek bir yerde olursa ne olacaktır?
+
+77
+00:19:16,084 --> 00:19:29,224
+Özellikle hard disk gibi bir yapıdan bahsediyorsak, rotatif bir diskten bahsediyorsak, buraya gel, buradan oku, öbür tarafa git, oradan oku, öbür tarafa git, oradan oku, en son öbür tarafa git, geri kalanını oku.
+
+78
+00:19:33,140 --> 00:19:48,019
+Bir zaman koyuyorsunuz, bir şey oluşuyor, delay oluşuyor. Bunları engellemek için mesela bu boş alanın yönetimi önemli bir konu üzerine çalışılması gereken şeylerden biri.
+
+79
+00:19:49,019 --> 00:19:56,579
+Bunun dışında dediğimiz gibi daha önce çok farklı tipte depolama alanı mevcut.
+
+80
+00:20:01,619 --> 00:20:25,779
+Bu işin içerisine şey de koyabilirsiniz, ne diyor o? Tape'leri de koyabilirsiniz. Çok daha yavaş olan tape medyasını da koyabilirsiniz. Ya da tek kez yani yazılan ama çok kez okunan write once, read many, warm yapıları da şey yapabilirsiniz, düşünebilirsiniz.
+
+81
+00:20:26,548 --> 00:20:36,067
+Aslında eskiden oldukça fazla kullanılan bir teknolojiydi ama zaman içerisinde biraz unutuldu.
+
+82
+00:20:36,427 --> 00:20:38,548
+Şimdi ise tekrar yeniden popüler bir halde.
+
+83
+00:20:38,628 --> 00:20:39,728
+Bunun da temel bir konuşu.
+
+84
+00:20:40,327 --> 00:20:42,708
+Bu ransom ataklarda ne oluyor?
+
+85
+00:20:42,927 --> 00:20:50,447
+Adam geliyor sisteminize, giriyor, bir yerleri şifreliyor, kenara atıyor, parayı gönder, al anahtarı diyor.
+
+86
+00:20:50,847 --> 00:20:51,768
+Yapı bu.
+
+87
+00:20:55,220 --> 00:21:12,000
+Yedeğinizi write once read many bir yere yaparsanız bu salgırıda hayır arkadaş benim de kapım var ben oradan dönürüm deyip hayatınıza kaldığınız yerden devam etme şansınız oluyor.
+
+88
+00:21:14,963 --> 00:21:21,603
+Baktığımız zaman bu soruşların her birinin aslında farklı kapasiteleri ve farklı hızları var.
+
+89
+00:21:21,603 --> 00:21:35,364
+Buradaki hızlar, kapasiteler yani evet slide'ın hazırladığı, hazırlandığı an güncel oluyor ama bundan farzı misal bir yıl sonra, iki yıl sonra, bazen de altı ay sonra artık o kadar da güncel olmuyor.
+
+90
+00:21:37,920 --> 00:21:45,019
+3 aşağı 5 yukarı fikir öğrenmesi aradığına aradaki oranlar genellikle doğru.
+
+91
+00:21:45,019 --> 00:21:56,940
+Yani eğer siz rejistra nanosaniyenin altında mertebelerde erişiyorsanız ki, evet erişiyoruz, bir keşede nanosaniyeler mertebesinde erişirsiniz.
+
+92
+00:21:57,119 --> 00:22:04,220
+İşte mail memoriye erişmeniz de yine nanosaniyeler mertebesinde olur ama keşe göre çok daha yavaş olur.
+
+93
+00:22:05,615 --> 00:22:09,056
+Bu tabii dediğim gibi zaman içerisinde değişen şeyler.
+
+94
+00:22:09,215 --> 00:22:16,956
+Solid state riskleri ise mikrosaniyeleri konuşmaya başlıyoruz aslında.
+
+95
+00:22:17,976 --> 00:22:21,155
+Magnetik risklerde ise milisaniyeleri konuşmaya başlıyoruz.
+
+96
+00:22:21,155 --> 00:22:26,896
+Yani bir anda 10 üzeri 3 ile çarpa çarpa gitmeye başladık.
+
+97
+00:22:34,132 --> 00:22:42,612
+O memory hiyerarşisinde en efektif olduğumuz yer, register cache ve main memory'nin olduğu kısım.
+
+98
+00:22:43,072 --> 00:22:49,352
+Fakat bunların kontrolünü sadece main memory işletim sisteminin kontrolünde, diğerleri değil.
+
+99
+00:22:49,472 --> 00:22:57,632
+Dolayısıyla bu noktada solicited disk ya da magnetik disk gibi secondary storage unit de ayrıca önem kazanıyor.
+
+100
+00:23:04,692 --> 00:23:11,331
+Bunu daha önce de konuşmuştuk. Hatırlarsanız aslında ne yapıyoruz? Her şeyi keşliyoruz.
+
+101
+00:23:11,331 --> 00:23:26,692
+Yani fiziksel bir, mesela işlemci içerisindeki fiziksel keş mekanizması da benzer şekilde çalışıyor ama işletim sistemi de ne yapıyor zaman zaman?
+
+102
+00:23:27,859 --> 00:23:43,679
+yazılımsal olarak bir cache mekanizması oluşturuyor. Ne demek istiyorum? Şunu demek istiyorum. Örneğin, bir çıktı alacaksınız. Daha doğrusu, yani çıktı ama demek istedim. Ekrana yazdırmak. Nedir o? C'den başlayalım. Printed ediyoruz.
+
+103
+00:23:44,180 --> 00:24:11,180
+Print app dediğimiz zaman aslında sizin C programınızın çalışmak için ihtiyaç duyduğu bir Lid C var. Yani bir runtime library var. O runtime library içerisinde sizin ekran outputu yapmanız için gerekli olan fonksiyonlar var. O fonksiyonlar ise arkada işletim sisteminin API üzerinden...
+
+104
+00:24:13,236 --> 00:24:35,116
+sistem çağrıları üzerinden gerekli işi gerçekleştiriyor. Gerekli işi gerçekleştiriyor ama buradaki size sağlanan API yani Limp C Runtime Kütüphanesi aslında baktığımızda kendi içinde de bazı optimizasyonlar yapıyor. Nedir? Şimdi IO...
+
+105
+00:24:35,155 --> 00:25:01,275
+Pahalı bir iş. Ne anlamda? Zaman anlamında. O zaman siz her ekrana yazdır dediğinde onun gidip yazdırması yerine ben orayı bir bufferlayayım diyor. Biraz bekleteyim, toparlayayım, öyle göndereyim. Bu sadece ekrana yazdırmak için değil, dosyaya yazdırmak için de böyle. Dolayısıyla dosyaya yazdığınız şeyin bir an önce yazılmasını istiyorsanız o zaman flash demeniz gerekir yani.
+
+106
+00:25:02,099 --> 00:25:16,919
+Sifonu çek, ne yazdıysak gitsin durumu. F-flash. Ya da en azından o açtığınız dosyanın üzerinde, file descriptörü ya da file pointer üzerinden şeyi belirtmeniz lazım.
+
+107
+00:25:17,119 --> 00:25:27,099
+Buraya yapılacak IO işlemi buffered olmayacak. Doğrudan yapılacak. Bu ne demek? Bu ve benzeri mekanizmalar aslında...
+
+108
+00:25:28,307 --> 00:25:36,847
+Bir kaynağın ya da bir bilginin birden fazla kopyasının oluşturulması nedeni var.
+
+109
+00:25:36,907 --> 00:25:38,188
+Şurada bakın mesela en basit.
+
+110
+00:25:38,748 --> 00:25:45,128
+A değerinin, şeylerde, A değeri, Harknisk'teymiş, main memory gelmiş.
+
+111
+00:25:45,467 --> 00:25:50,148
+O sırada erişim olmuş, keşi alınmış, rejisterde işlem geliyor.
+
+112
+00:25:56,500 --> 00:26:08,599
+Bir başka, özellikle çok bu işlemcili bir ortamda, bir başka işlemcide çalışan bir prosesin ihtiyaç duyması durumunda ne olacak?
+
+113
+00:26:08,719 --> 00:26:16,920
+Eğer şunlardan herhangi bir işlem gerçekleşti ve anın bir değiştiyse sıkıntı çıkacak.
+
+114
+00:26:17,239 --> 00:26:20,000
+Çünkü inconsistent bir yapı olacak.
+
+115
+00:26:20,960 --> 00:26:33,880
+O yüzden de, mesela multiprocessor bir yapımda, cache coherence'nin sağlanması, yani hepsinin uyumlu olduğunun, herkesin aynı veriye eriştiğini garanti edilmesi lazım.
+
+116
+00:26:33,880 --> 00:26:48,079
+Bunun dışında, iOS hub sistemi de, yani bütün hardware device'ların, yani depolama için kullandığımız bütün...
+
+117
+00:26:48,692 --> 00:26:58,692
+Input, Output Devicelerin yönetiminin de ne yapılması lazım? Bir şekilde...
+
+118
+00:26:59,635 --> 00:27:18,756
+Kullanıcına saklanması, gizlenmesi lazım. Kötü anlamda değil. Ama adam hani ben bu dosyayı şuraya koyuyorum, onun geometrisi böyle, o zaman da böyle yapmalıyım demek durumunda değil. Doğrudan bizim işletim sisteminin sağladığı servisler üzerinden kolayca bu işlemi yapabilmeli. O yüzden de ne yapıyoruz?
+
+119
+00:27:23,347 --> 00:27:35,687
+Yani buffering, caching, spooling ve benzeri her şeyin ile ilgili memory management'ını yapmaktan bir tepsi. Bir diğer şey, genel bir device driver interface sağlamak zorundayız.
+
+120
+00:27:38,127 --> 00:27:47,267
+Artı, her donanım içinde bir sürücü sağlamak zorundayız ki bir driver sağlamak zorundayız ki o kullanılabilsin.
+
+121
+00:27:47,635 --> 00:27:59,956
+Bunun dışında ne var sağlanması gereken? Protection var, security var. Protection ve security aslında aynı şey değil.
+
+122
+00:28:02,416 --> 00:28:09,756
+Bunun detayına hatta ikinci bölümde de gireceğiz ama asıl daha ilerleyen şeylerde.
+
+123
+00:28:10,708 --> 00:28:15,888
+Haftalarda gireceğiz. Şimdi kaçıncı haftaya denk gelir? Kapadan emin değilim.
+
+124
+00:28:17,648 --> 00:28:28,028
+Protection, hani en azından şu demek, thread işletim sistemi için bir kaynak kontrol yazılımı dedik.
+
+125
+00:28:28,688 --> 00:28:34,928
+Dolayısıyla işletim sistemi bütün kaynakların kontrollü şekilde kullanıldığından emin olmak durumunda.
+
+126
+00:28:44,084 --> 00:28:45,644
+Şey dediğimiz zaman ise
+
+127
+00:28:51,955 --> 00:29:07,475
+Security dediğimiz zaman ise aslında özellikle dışarıdan gelen tehditlerden korunmaktan bahsediyoruz.
+
+128
+00:29:07,475 --> 00:29:12,536
+Bir, içeride ise yetkisiz yarışımlardan bahsediyoruz.
+
+129
+00:29:20,019 --> 00:29:45,019
+Security kapsamanında en başta ne olması lazım? Sizin bu sisteme erişmek için bir otantikasyondan geçiyor olması lazım. Yani bir sisteme erişmek için en basit adıyla, kullanıcı adı şifre teyörüyle ya da başka bir benzeri mekanizmayla bu parmak izi olabilir.
+
+130
+00:29:46,228 --> 00:29:49,828
+Bu lüretiğin atarıması olabilir vesaire olabilir. Bir şekilde öyle giriyor olabilir.
+
+131
+00:30:00,000 --> 00:30:07,000
+Protection'da ise bahsettiğimiz şey daha çok sistem içerisinde...
+
+132
+00:30:07,316 --> 00:30:14,276
+Özellikle de aynı anda çalışan, yani aynı anda burada concurrent de olabilir, paralel de olabilir.
+
+133
+00:30:14,415 --> 00:30:18,516
+Concurrent ve paralelinin de detayını daha sonra konuşacağız. İlk ders konuşmadık galiba sanırım.
+
+134
+00:30:19,316 --> 00:30:23,195
+Ama hani mesela tek bir işlemciniz var, multi-programming yapıyorsunuz.
+
+135
+00:30:23,276 --> 00:30:29,316
+Yani birden fazla program memöride duruyor. Bunlara sanki aynı anda çalışıyormuş gibi nasıl...
+
+136
+00:30:29,536 --> 00:30:37,855
+Olmasınıza aynı anda çalışıyordunuz izlenimini nasıl görüyorsunuz? Time sharing ile yani CPU zamanında parçaları biliyorsunuz.
+
+137
+00:30:37,855 --> 00:30:45,296
+Bir A prosesini, bir B prosesini, bir C prosesini, bir D prosesini çalıştırıyorsunuz. Bunlar arasında hızlı hızlı geçiş yapıyorsunuz.
+
+138
+00:30:45,355 --> 00:30:52,596
+Concurent oluyor. Bunları birbirinden farklı işlemcilerde aynı anda çalıştırıyorsunuz. O zaman paralel oluyor.
+
+139
+00:30:52,875 --> 00:30:53,255
+Fark bu.
+
+140
+00:30:53,903 --> 00:31:11,163
+Her iki durumda da bu proseslerin birbirinden izole olması lazım. Yani bir şekilde birbirini bozmuyor, dağıtmıyor olması lazım. Protection o aslında.
+
+141
+00:31:16,372 --> 00:31:23,511
+Detayını aslında reddetle ilgili kurslara başladığınız zaman daha net ve temiz göreceksiniz.
+
+142
+00:31:23,692 --> 00:31:29,892
+Ama kabaca, genelde security kısmında şöyle şeyler, mekanizmalar oluşur.
+
+143
+00:31:31,271 --> 00:31:34,432
+Bir kere her kullanıcı bir kullanıcı adı vardır, bir şifresi vardır.
+
+144
+00:31:34,572 --> 00:31:38,491
+Fakat arka tarafta ona karşılık gelen bir de aile yolu.
+
+145
+00:31:38,491 --> 00:31:41,852
+Bu Linux, Unix sistemler de user ID'dir.
+
+146
+00:31:44,500 --> 00:31:53,779
+Windows'da ise Security ID diye geçer. O yüzden şurada Security ID diye ayrıca bir açıklama görüyorsunuz.
+
+147
+00:31:56,500 --> 00:32:23,339
+Bu ID bilgisi üzerinden, ID identifier üzerinden aslında sizin ne yapıp ne yapmayacağınız tanıdır. Yani hangi dosyalara erişiminiz oldu, hangi dosyalara erişemeyeceğinizi, hangi dosyaya sadece okuma, sadece yazdığı ya da işte execute anlamında erişebildiğinizi belirleyen bir sistematik kurulu.
+
+148
+00:32:24,500 --> 00:32:37,039
+Windows'da, Windows'da farklı şekillerde kurulur. Onların detaylarını zannımca bir sonraki, yani ikinci chapter'ın içerisinde konuşuyoruz bir yerlerde.
+
+149
+00:32:38,708 --> 00:32:58,468
+Bunun dışında birçok sistemde grup mekanizmasını görüyorsunuz. Yani tek tek bütün herkesin hangi dosya, nasıl, nerede, ne şekil üpteşeceğini söylemek yine aslında kullanıcıları gruplara vermek, bu gruplara bir ID vermek ve hem kullanıcı özelinde hem grup özelinde yetkilendirme yapmak şeklinde çalışır.
+
+150
+00:33:03,859 --> 00:33:15,279
+Bunun dışında kalanları tanımlamak için de others grubu var. Dediğim gibi RETET şeyinde, system administration adımında bunu göreceksiniz.
+
+151
+00:33:15,279 --> 00:33:17,279
+Burada...
+
+152
+00:33:22,324 --> 00:33:29,864
+Her zaman için, yani şöyle şeyler de yaşanacak.
+
+153
+00:33:30,864 --> 00:33:38,064
+Zaman zaman bir kullanıcının bir uygulamayı çalıştırmak için hakkı olduğundan daha fazlasına ihtiyacı olacak.
+
+154
+00:33:38,264 --> 00:33:39,544
+O zaman da ne yapmamız gerekiyor?
+
+155
+00:33:39,544 --> 00:33:43,824
+Bunu daha yetkili bir seviyeye taşımamız gerekecek.
+
+156
+00:33:45,140 --> 00:33:59,740
+Her canını isteyene, her canını istediği anda yapmıyoruz. Belli kurallar üzerinden yapıyoruz. Mesela bir kullanıcı bir servisi durdurmak, yeniden başlatmak ya da işte ne bileyim daha basit bir örnek.
+
+157
+00:33:59,740 --> 00:34:08,739
+Kendi yazdığı uygulama işte well-known portlardan birini kullanacaksa, 0 ile 1024 arasındaki portlardan birini kullanacaksa.
+
+158
+00:34:09,427 --> 00:34:17,987
+O zaman bu adamın haklarının yükseltilmesi gerekiyor. Ama yükseltilmek derken çalıştıracak diye yükseltmiyorsunuz.
+
+159
+00:34:18,507 --> 00:34:28,807
+Çalıştırabilmesi için yükseltmeye ihtiyacı var. Adama neyi soruyorsunuz? Daha yüksek yetkiye sahip bir kullanıcının bilgilerini soruyorsunuz.
+
+160
+00:34:28,907 --> 00:34:32,688
+Doğru cevap ne edilse o zaman escalation'ı yapıyorsunuz.
+
+161
+00:34:34,099 --> 00:34:51,019
+Şimdi konuşacağımız bir diğer şey, çok böyle uzun uzun uzadıya detaylarına girmeyeceğim ama en azından hatırlamanız bir şey yapmanız adına faydalı olacaktır.
+
+162
+00:34:53,099 --> 00:35:01,019
+O da şu, kendim içerisinde aslında bu miktarda veri yapısı kullanıyoruz.
+
+163
+00:35:01,556 --> 00:35:09,836
+Dolayısıyla şey konusunda, veri yapıları ve algoritmalar konusunda bir sıkıntınız yoktur umarım.
+
+164
+00:35:10,676 --> 00:35:18,456
+Yer yer bununla ilgili yapacağımız uygulamalar da vesaire kullanıyor da olacağız, şeyde inceliyor da olacağız.
+
+165
+00:35:25,748 --> 00:35:51,408
+Önemli ya da yaygın diyeyim, yaygın daha mantıklı, yapı linkli liste. Neden? Çünkü yapı, yani işletim sisteminin kendi içerisinde aslında devamlı listeler tutmamız lazım. Misal, o kaynağı kimlere ilişki var? Misal, bekleme kuyruğunda kimler var? Bunların hepsi doğası gereği liste yapısına çok uygun.
+
+166
+00:35:51,795 --> 00:36:00,815
+Fakat listeyi nasıl oluşturabilirsiniz? Bir dizi olarak oluşturabiliriz. 0, 1, 2, 3, 4, 5 diye giden gözleri olur. Çok güzel.
+
+167
+00:36:00,815 --> 00:36:11,795
+Ama bu liste, yani dizi şeklinde bir liste oluşturduğunuz zaman sıkıntı ne? Yeni bir eleman eklemeniz gerektiğinde ya da aradan birini çıkartmanız gerektiğinde
+
+168
+00:36:13,043 --> 00:36:34,043
+Ya boşluklar olacak ya da sizin bütün dizi üzerinde oynamalar yaptığınız gerekecek. Bunlar bütün dizi üzerinde oynamalar yaptığınız gerekecek. Bunlar boş hareketler değil, tasvip edilen hareketler değil. Neden? Çünkü işletim sisteminin aslında yaptığı iş, sistemin geri kalan çalışmasını sağlamak. Bunu yaparken de kendi böyle huvar bir sistemi kullanmıyor olması lazım. Yani...
+
+169
+00:36:34,452 --> 00:36:40,772
+Diyelim ki on bin tane prosesiniz var sistemde. Bunların tamamına ait bilgileri bir dizi halinde tutuyorsunuz.
+
+170
+00:36:40,772 --> 00:36:50,832
+On bin birinci işlem geldi ve sizin onu hangi seçim sebeplerden bilmiyorum ama bir şekilde araya yerleştirmeniz lazım.
+
+171
+00:36:52,492 --> 00:36:54,052
+Ne yapacaksınız?
+
+172
+00:36:55,027 --> 00:37:18,907
+Yeni bir dizi aldık, eğit edeceksiniz. İşte arası neresiyse oradan öncesini koptalayacaksınız. Bu yeni bilgiyi koyacaksınız. Sonrasına da geri kalanını koptalayacaksınız. Mesela. Ya da araya yerleştirmeyeceksiniz de sona ekleyeceksiniz. Ne olacak? Elinizde on binlik bir dizi var. On bin birlik bir dizi oluşturacaksınız. Hepsini koptalayıp devam edeceksiniz. Vaya çok şey, uzun işler.
+
+173
+00:37:20,083 --> 00:37:41,083
+Zaman alıcı ister istemeliyiz. Onun yerine o yüzden ne yapıyoruz? Bize daha esne tutulan linkli liste yapısını kullanıyoruz. Linkli listeye baktığımız zaman şuradaki gibi aslında verinizin yanında bir de adres bilginiz var. O adres bir sonraki verinin nerede olduğunu söylüyor. Bu şekilde birbirine bağlı. Aradan birinin çıkması gerektiği zaman ne yapıyorsunuz? Eğer bu çıkacaksa...
+
+174
+00:37:41,780 --> 00:37:45,700
+Bu adresi burayı gösterecek şekilde güncelliyorsunuz.
+
+175
+00:37:46,220 --> 00:37:49,160
+Buna referans eden bir şey kalmadığı için bunu uçuruyorsunuz.
+
+176
+00:37:49,240 --> 00:37:50,780
+Hayatınıza devam ediyorsunuz.
+
+177
+00:37:52,660 --> 00:37:58,220
+Benzer şekilde bir şey eklemek istediğiniz zaman, araya da olsa, sona da olsa çok fark etmiyor.
+
+178
+00:37:58,220 --> 00:38:00,220
+Bir eleman oluşturuyorsunuz.
+
+179
+00:38:00,700 --> 00:38:02,300
+Nereye ekleyeceksiniz? Buraya mı?
+
+180
+00:38:02,980 --> 00:38:05,840
+Bu adamın adresi buraya değil, burayı göstersin diyorsunuz.
+
+181
+00:38:06,360 --> 00:38:08,580
+Buradaki adresi de yeni eklediğiniz elemanın.
+
+182
+00:38:08,947 --> 00:38:33,467
+Adres kısmını ediyorsunuz. O da buraya gösteriyor. Zincir, tık tık tık. Gene oluştu. Linklist de tek yönle de çalışabilir. Çift yönle de çalışabilir. Yani herkes kendinden sonrakini gösterdiği gibi. Herkes hem kendisinden sonrakini hem de kendisinden öncekini gösteriyor olabilir. Listenin sonunda olduğunuzu anlamak için adres kısmına nal yazıyorsunuz. Yani tekli de, çiftli de.
+
+183
+00:38:34,384 --> 00:38:50,543
+Zaman zaman ise hani circular buffer mantığıyla bir şey oluşturmak adına bu linkli liste böyle aslında tek tarafa ama sonu da başa gelecek şekilde oluşturulur.
+
+184
+00:38:51,543 --> 00:38:59,484
+Bilinir. Bunun dışında sıkça görüleceğiniz, duyacağınız, konuşacağınız şeylerden bir tanesi.
+
+185
+00:39:00,916 --> 00:39:03,916
+Aslında ağaçlar...
+
+186
+00:39:14,708 --> 00:39:41,708
+Ne yapıyoruz genellikle? Ortada bir değer var. O değerin işte, var bizimsel küçükse sola, o değerden küçükse sola, büyük eşitse sağa koyarak ilerleyebiliyoruz. Yani bu kuralı nasıl oluşturacağınız değişir yani. İlla orası küçük burası büyük eşit falan olması gerekmiyor. Güzel bir tarafı şu, eğer ağacı güzel bir yerde oluşturabilirsiniz. Çok dengeli olur.
+
+187
+00:39:42,063 --> 00:39:48,983
+Hem arama noktasında çok hızlanırsınız hem de organizasyon anlamında rahatlarsınız.
+
+188
+00:39:49,264 --> 00:39:56,703
+Fakat sıkıntı şu, bu artık organizasyonu neye göre yaptıysanız zaman içerisinde burada bir değişiklik olabilir.
+
+189
+00:39:56,703 --> 00:40:07,543
+Sağa ya da sola doğru dağılan bir yapı oluşabilir. O yüzden de maintenance anlamında ciddi iş gerektirir.
+
+190
+00:40:08,307 --> 00:40:35,052
+Dikkat ediyor olmak lazım. Bir diğer şey, hashed kullanacağımız, hash function. Ne yapıyoruz? Aslında elimizde bir değer var. O değeri bir yerde indekslememiz lazım. O indeksleme işini bir hash fonksiyonuyla gerçekleştiriyoruz. Hash fonksiyonunun işi şu, verdiğimiz değere karşılık unique olması beklenen bir...
+
+191
+00:40:35,188 --> 00:41:02,028
+İndeks oluşturmak. Dolayısıyla ne yapıyor? Burada olduğu gibi en elemanlı bir mapiniz var. Değerinizi veriyorsunuz. Function size bir indeks üretiyor. O indeksi değerinizi yazıyorsunuz. Sonrasında onun üzerinden her seferinde erişiyorsunuz. Rahat oluyor. Yani herhangi bir arama yapmanız vesaire yapmanız gerekmiyor.
+
+192
+00:41:02,516 --> 00:41:25,636
+Ve fakat, yani key value ikincisi var burada. Sıkıntı şu, sonuçta hash fonksiyonu çok büyük bir uzaydan, yani çok büyük olasılıklar denizinden sadece sıfırdan öne kadar olan bir yere mapping yapıyor. Dolayısıyla illa ve illa ne olacaktır? Bir overlap durumu olacaktır.
+
+193
+00:41:26,239 --> 00:41:36,839
+Normalde bunun unique olmasını bekliyoruz ve fakat hani iki farklı anahtar diğeri için aynı indeks yerini üretebilir hash fonksiyonu. O zaman da ne yapıyoruz?
+
+194
+00:41:37,460 --> 00:41:41,859
+Genellikle bu dizinin gözlerine tek eleman gibi değil.
+
+195
+00:41:41,980 --> 00:41:46,840
+Öyle linkli bir liste ya da bir dizi şeklinde oluşturuyoruz ki devamlılığı olabilirsin.
+
+196
+00:41:46,940 --> 00:41:50,279
+Bunun dışında bolca göreceğiniz şeylerden bir tanesi bir bitmap.
+
+197
+00:41:51,019 --> 00:41:55,279
+Yani en tane elemandan oluşan her biri bir şeyi...
+
+198
+00:41:57,300 --> 00:42:06,220
+Durum bilgisini içeren yapı, yani şey gibi de düşünebilirsiniz, bir mikro kontrol içerisindeki statüs register gibi de düşünebilirsiniz.
+
+199
+00:42:07,800 --> 00:42:22,940
+Ne için kullanıyoruz bunu? Mesela kendi şeyimizden öndük yönü, işletim sistemini değil de bir üst seviyede uygulamadan öndük yönü, en tane şeyiniz var, thread'iniz var, gelen bir isteği bunlardan birine yönlendireceksiniz.
+
+200
+00:42:24,335 --> 00:42:29,135
+Tredin şu an çalışmakta hangisinin boşta olduğunu gösterme katına ne yapabilirsiniz?
+
+201
+00:42:29,855 --> 00:42:35,576
+İşte 100 tane threadiniz varsa, 100 elemanlı bir dizi, her gözünde de 0 ya da 1 yazıyor.
+
+202
+00:42:35,675 --> 00:42:41,115
+0 ise uygun, 1 ise değil gibi bir yönetim olabilir.
+
+203
+00:42:41,235 --> 00:42:45,915
+İşletim Sistemi tarafında da benzer bir yönetim için zaten bitmekleri kullanıyoruz.
+
+204
+00:42:47,603 --> 00:43:12,783
+Şimdi baktığımız zaman ne var? Yani işletim sisteminin üzerinde çalışmasını beklediğimiz yapılar, sistemler ve böyle hani geleneksel yapılar var. Nedir? Yani benim notebook'um, sizin desktop'ınız vesaire gibi yapılar var.
+
+205
+00:43:14,324 --> 00:43:37,324
+Ya da ne bileyim, tablet gibi, cep telefonu gibi yapılar var. Hem mobiller hem de wireless bir network ile de konvensiyonel ortama bağlanıyorlar. Bu bir şey. Nedir o? İşletim sisteminin üzerinde çalışmasını beklediğimiz...
+
+206
+00:43:39,987 --> 00:44:06,347
+Yapılardan bir tanesi. Burada mobil tarafına baktığımız zaman ne görüyoruz? Aslında desktopları bir tarafa atacak olursak, desktoplar sadece ve sadece bu noktada mobiliteyi sağlıyor ama cep telefonu ya da tablet gibi yapılara baktığımız zaman bir anda şey değişiyor.
+
+207
+00:44:06,804 --> 00:44:09,983
+Kapsamı değişiyor. Kapsamı değişmekten kastım ne?
+
+208
+00:44:13,184 --> 00:44:23,764
+Üzerinde farklı donanımlar var. Yani bir çelioskop, aksoları metralya da notebook'un ya da desktop'un üzerinde olması beklenen bir şey değil.
+
+209
+00:44:23,903 --> 00:44:27,744
+Ama burada böyle bir yapı var.
+
+210
+00:44:28,307 --> 00:44:50,168
+Niye var? Bu hani GPS ya da gyroscope hareketinizi yaptığınız işleri anlayabilmek adına da var. Bu işletim sistemi içerisinde niye, neden, nasıl kullanılıyor? En basit, ekranı çevirdiğiniz zaman ekranın şeylerin değişmesini bekliyorsunuz. Geometrisinin de değişmesini bekliyorsunuz.
+
+211
+00:44:53,652 --> 00:45:03,612
+Aslında şöyle bir şey de doğuruyor. Desktoplara ya da notebooklara baktığınız zaman üzerlerindeki interfej sayısı daha sınırlı.
+
+212
+00:45:04,032 --> 00:45:10,652
+Yani ya bir tane var, ya iki tane var. Ama cep telefonuna baktığınız zaman bu sefer iş o anlamda da değişiyor.
+
+213
+00:45:11,552 --> 00:45:21,291
+Networking interfejlerinin sayısı ve yapısı artıyor. Dolayısıyla o da yönetilmesi gereken ekstra bir...
+
+214
+00:45:21,364 --> 00:45:45,803
+şey, yani geneliksel yapıda bunlar var. Bunun dışında daha farklı olan ne var? Distributed environment'lar var. Distributed environment'da nedir derdimiz? Farklı özelliklerde ya da yapılardaki cihazları bir aradayım kullanabilmek.
+
+215
+00:45:46,547 --> 00:45:48,547
+beraber çalışmalarını sağlayabilir.
+
+216
+00:45:48,788 --> 00:45:52,667
+Baktığımız zaman bunlar homojen değil, heterojen.
+
+217
+00:45:53,247 --> 00:46:08,947
+Yani bu dağıtık yapı içerisinde işte farzümsel, del, HP ya da IBM neyse gidip 20 tane sunucu alıp bunları birbirine bağlayıp gene distributed şekilde çalışıyor olabilirsiniz.
+
+218
+00:46:13,460 --> 00:46:37,179
+Losely coupled olmayacaktır. Ama bir diğer uçta şunu da düşünebilirsiniz. Bir tanesi, şu an Yıldız Tekniği'nin içerisinde bir sistem odasında olan bir cihaz. Bir diğeri, XYZ kurum ya da kurulmuşun içerisinde olan bir cihaz. Bunları, işte Local Area Network, Wide Area Network, Metropolitan Area Network vs. üzerinden bağlayıp,
+
+219
+00:46:37,440 --> 00:46:46,960
+Burada çoğu zaman zaten yaygınlığından da kullanım kolaylığından dolayı TCP IP'yi kullanıyoruz. Bunlar üzerinden bağlayıp bir arada çalışmalarını sağlayabilirsiniz.
+
+220
+00:46:49,719 --> 00:46:58,679
+Bunu sağlayabilmek adına da tabii ki işletim sisteminin ilgili destekleri verebiliyor olması lazım.
+
+221
+00:47:07,603 --> 00:47:30,284
+Yerlerde durmamız gerekiyor. Birbirine geçmemiz lazım ki ilerleyebilelim. Şimdi baktığımız zaman farklı sistematikte çalışan, özellikle araya haberleşme soktuğumuz zaman yapılar farklı noktaya gelebilir. Misal, Client Server'ın en yaygın mimarilerden bir tanesi. Ne yapıyoruz?
+
+222
+00:47:38,036 --> 00:47:51,735
+Bir web sunucumuz var. Bağlanıyoruz istenci olarak ve o sunucunun yaptıklarını ya da kendi yaptığımız etkiye karşı ürettiği tepkiyi izleyebiliyoruz, takip edebiliyoruz.
+
+223
+00:47:51,735 --> 00:48:00,675
+Ya da bunu daha uç noktaya da götürebilirsiniz. Şöyle ki daha dump yani.
+
+224
+00:48:01,427 --> 00:48:17,867
+Özellik anlamında, yetenek anlamında, kabiliyet anlamında sınırlı olan, özellikle maliyet ve düşünme kadına kullanılan bir yakı, terminal PC'ler oluşturmak, içerisindeki işlemcinin düşük, remin az.
+
+225
+00:48:18,288 --> 00:48:38,168
+Ya da en azından genele göre az, işte storage'ın olmadığı vesaire sadece networking özelliklerinin olduğu bir cihazı alıp bunlardan bir tane değil tabii binlerce alıp bir kurum içerisinde güçlü bir sunucuya bağlanıp çalışmalarını sağlıyor olabilirsiniz.
+
+226
+00:48:38,168 --> 00:48:39,967
+Bu da bir client server mümersi.
+
+227
+00:48:46,099 --> 00:48:56,960
+Uzaktaki bir sunucuya erişip oradaki dosyaları aldığınız ya da oradaki dosyaları oraya dosya koyduğunuz bir yapı da aslında bir client server buyum maalesef.
+
+228
+00:48:56,960 --> 00:49:08,720
+Yani asimetrik bir haberleşme var çoğunlukla. O asimetrik haberleşme içerisinde serverda güçlü olan taraf, clientda istekleri olan buna karşı cevaplar bekleyen taraf.
+
+229
+00:49:09,360 --> 00:49:13,059
+Bunun alternatifine var. Hepinizin bildiği bir araç bir net olarak var.
+
+230
+00:49:14,099 --> 00:49:22,599
+Aslında bu yapı içerisinde herkes pure, yani herkes eşlenik olarak gözüküyor.
+
+231
+00:49:27,599 --> 00:49:37,920
+Tabii ki burada şöyle bir şey var, yani şu an kullandığımız Torant ya da benzeri yapılar da aslında pure tipidir.
+
+232
+00:49:39,487 --> 00:49:54,907
+O kadar dağıtık bir yapının ilklendirilebilmesi ya da işte en basitinden herhangi bir bilgisayarın ya da sunucunun ya da cihazın oraya girebilmesi için öncelikle şey yapması lazım.
+
+233
+00:49:56,647 --> 00:49:59,487
+Günlük app servisinden bir nereden başlayacağını...
+
+234
+00:50:00,000 --> 00:50:11,119
+Yani yine orada bir aslında şeyle başlıyoruz. Central bir noktayla başlıyoruz. Sonrasında dağıtık olarak devam ediyoruz.
+
+235
+00:50:12,639 --> 00:50:23,019
+Bunun dışında aslında şu an konuşabileceğimiz, işletim sistemi anlamında konuşabileceğimiz şeylerden bir tanesi de sanallaştırma.
+
+236
+00:50:30,900 --> 00:50:37,760
+Aslında hangi seviyede yapacağınıza bağlı olarak işletim sisteminin sağlaması gereken destekler de değişiyor.
+
+237
+00:50:39,960 --> 00:50:43,360
+Şöyle ki, sanallaştırmayı nereden başlatabilirsiniz?
+
+238
+00:50:49,012 --> 00:50:51,452
+Ben kendi kendime konuşmuyorum değil mi ya? Herkes orada.
+
+239
+00:50:58,835 --> 00:51:01,976
+Sanallaştırmayı en alt seviyeden başlatabilirsiniz.
+
+240
+00:51:01,976 --> 00:51:07,976
+Yani işletim sistemimize gelmeden önce de...
+
+241
+00:51:13,523 --> 00:51:18,983
+İşledim Sisteminize gelmeden önce donanım seviyesinde bile sanallaştırma yapıya olabilirsiniz.
+
+242
+00:51:19,163 --> 00:51:24,003
+Ya da donanım seviyesinde sanallaştırma işlemleri için ekstra destek sağlayabilirsiniz.
+
+243
+00:51:24,163 --> 00:51:26,864
+En basit konuştuğumuz şeylerden bir tanesi vardı. Hatırlayın.
+
+244
+00:51:27,543 --> 00:51:34,864
+Neydi o? Sanallaştırma için, daha doğrusu işledim sisteminin düzgün çalışması için user mode, kernel mode diye iki ayrı mode var dedik.
+
+245
+00:51:34,963 --> 00:51:35,903
+Mode biti var dedik.
+
+246
+00:51:36,384 --> 00:51:40,723
+Ve fakat sanallaştırma değişeceğine girdik ama buradaki bit sayısı artabilir dedik.
+
+247
+00:51:41,172 --> 00:51:51,271
+Dolayısıyla bunun süresinde sanallaştırma için bir destek varsa, bunun işletim sistemi tarafından sanallaştırma yazılımı sunuluyor olması da lazım.
+
+248
+00:51:52,152 --> 00:52:00,091
+Bir. İki, işletim sisteminin kendi içerisinde sanallaştırma için gerekli olan şeyleri yapıyor olması lazım.
+
+249
+00:52:12,692 --> 00:52:23,271
+Dolayısıyla her seviyede ne yapıyor olmanız lazım? Sanallaştırma için gerekli desteği işletim sistem tarafında veriyor olmanız lazım.
+
+250
+00:52:23,851 --> 00:52:31,871
+Bunun detaylarına daha fazla girmeyeceğim. Şu an biraz karışık olabilir. Burada bırakacağım.
+
+251
+00:52:32,532 --> 00:52:58,412
+Ben burada bırakacağım bu bölümü ama siz kalanından da sorumlusunuz. Yani burası neyim? 50'dir, 58 slide varmış. O son 7 slide'dan da sorumlusunuz. Sakın şey yapmayın. Hani hoca buraya kadar anlattı, bundan sonrası yok herhalde falan demeyin. Üstüne baza baza söylüyorum. Ara ara slide'larda bunu yapacağız. Bir saniye.
+
+252
+00:53:00,884 --> 00:53:11,264
+İnternetten de ulaşabilirsiniz slide'lara. Yani hani bunun için özellikle bir şey koymamıza gerek olduğunu düşünmüyorum. Çünkü aratınca çıkıyor.
+
+253
+00:53:11,264 --> 00:53:22,684
+Daha önce sınıfta da konuşmuştuk. Sanki hem dersin kitabını hem slide'ları internette bulmanız mümkün. Dolayısıyla doğrudan kendiniz alıp bakabilirsiniz.
+
+254
+00:53:31,699 --> 00:53:41,920
+Şimdi şeye baktığımız zaman ikinci bölüme başlayalım. İkinci bölümde konuşacağımız şeyler ne? Ona bakalım.
+
+255
+00:53:54,867 --> 00:54:17,987
+Bu bölümde aslında işletim sisteminin bize sağladığı servisler ne? Bu servislere erişmek için bize sağladığı arayüz ne? Burada temel kritik olan şeylerden biri sistem çağrısı nedir, ne değildir? Nasıl oluşur, ne tipleri vardır?
+
+256
+00:54:18,771 --> 00:54:28,771
+Bu sonrasında sistem programı nedir? Onu biraz daha detaylayacağız, değişeceğiz. Sonrasında işlediğiniz sistemini...
+
+257
+00:54:29,108 --> 00:54:35,988
+tasarımı ve gerçeklenmesiyle ilgili yapılara bakacağız. Yani örnek yapılara da bakacağız.
+
+258
+00:54:36,188 --> 00:54:42,508
+Farklı işletim, günümüzde şu an aktif olarak kullanılmakta olan ya da daha öncesinde kullanılmış olan Çiftim Sistemleri.
+
+259
+00:54:43,188 --> 00:54:49,327
+Ve özellikle çekirdeklerindeki mimariye bakacağız. Yani ne yapmışlar, nasıl yapmışlar, ne farkı var vesaire gibi.
+
+260
+00:54:52,659 --> 00:55:03,639
+Bir dakika, bir ara verelim 10 dakika. Ben de şey yapayım, sesi bir dinlendireyim, zorlamanın da esprisi yok. 10 dakika ara verelim, 10 dakika sonra başlıyoruz arkadaşlar.
+
+261
+01:05:47,476 --> 01:06:00,316
+Evet, şimdi, öncelikle işletim sistemi servisi nedir, ne değildir? Oradan başlamamız lazım. Neler var işletim sistemi servisinin içerisinde?
+
+262
+01:06:02,255 --> 01:06:08,276
+Aslında bununla ilgili ilerleyen slidelarda bir grafik olması lazım.
+
+263
+01:06:09,844 --> 01:06:16,083
+Bu grafik belli açılardan daha iyi anlatıyor bazı şeyleri ama neyse önce bunu konuşalım.
+
+264
+01:06:16,603 --> 01:06:18,284
+Sonra onun üzerinde bir daha konuşuruz olmadı.
+
+265
+01:06:20,123 --> 01:06:31,824
+Şimdi işletim sisteminin sağladığı servisleri aslında böyle kendi içerisinde farklı gruplara da ayırabilirsiniz.
+
+266
+01:06:31,824 --> 01:06:33,163
+Misal.
+
+267
+01:06:33,619 --> 01:06:49,740
+İşletim Sisteminin var olabilmesi için çok gerekli olan servisler var. Bir taraftan da buna yardımcı olan ya da ek özellik diyebileceğimiz servisler var.
+
+268
+01:06:49,740 --> 01:07:00,360
+Şimdi her şeyden önce işletim sisteminin bize şey sağlıyor olması lazım.
+
+269
+01:07:00,751 --> 01:07:03,452
+User Interface sağlıyor olması lazım.
+
+270
+01:07:05,072 --> 01:07:19,472
+Yani bu konuştuğumuz şeyler aslında işletim sistemin olmazsa olmazı ve fakat hani o sağladığı servis içerisinde biraz daha böyle nasıl diyeyim, şimdi grafikte olduğunda daha rahat göreceksiniz.
+
+271
+01:07:24,179 --> 01:07:43,980
+Ölümcül olan kısmı değil ya da çok must olan kısmı değil. Bir, bize bir user interface alması lazım. Bu user interface ne olabilir? Bir command line interface de olabilir. Bir shell gibi, bir komut satırı gibi vesaire gibi. Graphical user interface de olabilir.
+
+272
+01:07:45,523 --> 01:07:57,003
+Graphical User Interface'in kastımız ne? Bugün işte kullandığımız, desktopta kullandığımız ortam gibi bize hani görsel bir şekilde etkileşime girebildiğimiz sistemle bir yapı.
+
+273
+01:07:57,003 --> 01:08:05,771
+Komut satırı ya da command line interface'in aslında işletim sisteminin yerine getirebileceği komutları...
+
+274
+01:08:05,780 --> 01:08:23,880
+yazarak girdiğimiz bir yapı. Bunun dışında bazı sistemlerde bu arayüz aslında batch yapıda da olabilir. Yani toplu halde değil, bazı işlerin bırakıldığı, konduğu sisteme devredildiği gibi. Bununla beraber ne yapıyor olması lazım işletme sisteminin?
+
+275
+01:08:29,300 --> 01:08:50,940
+Sistem içerisindeki bir uygulamanın çalıştırılabilmesi için programın memoriye alınması, o programın çalıştırılması, çalıştırılmasının tamamlanması, tamamlanırken de doğru, düzgün ya da yamuk yumuk tamamlandırmanın kontrol edilmesi, devam ettirmesi lazım.
+
+276
+01:08:52,319 --> 01:08:56,239
+Bunun dışında çalışan programın bütün IO isteklerinin
+
+277
+01:08:56,948 --> 01:09:06,247
+karşılanıyor olması lazım. Yani aslında ne olacak? IOS isteği derken tahminen o uygulama bir dosyaya yaşmak isteyecek.
+
+278
+01:09:06,427 --> 01:09:19,388
+O dosya erişimini yakalaması, o dosya erişimini gerçekleştirmek için altta IOS Hub Sistem'de yapması gereken her şeyi yapması da lazım. Bunları bize bir sağlamalı.
+
+279
+01:09:23,507 --> 01:09:26,587
+Bunun içerisinde başka ne var?
+
+280
+01:09:28,288 --> 01:09:33,847
+Yani demin bahsettiğimiz şeyin devamı olarak düşünebilirsiniz.
+
+281
+01:09:33,847 --> 01:09:36,047
+Pilesistman manipulation var.
+
+282
+01:09:36,288 --> 01:09:38,167
+Haberleşme kısmı var.
+
+283
+01:09:38,768 --> 01:09:40,288
+Haberleşmeden kastımız ne?
+
+284
+01:09:40,507 --> 01:09:41,847
+İlla bu...
+
+285
+01:09:46,003 --> 01:09:53,684
+Günümüzde baktığınızda bu bilgisayar sistemi illa başka bilgisayar sistemleriyle de bağlanmasından bir internet bağlantısı var ya da bir intranet bağlantısı var.
+
+286
+01:09:53,783 --> 01:09:58,904
+Dolayısıyla diğer sistemlerle haberleşmesi için gerekli olan yapıyı sağlamak zorunda.
+
+287
+01:10:01,164 --> 01:10:09,224
+Kendi içerisinde, yani kendi içine kapanmış bir bilgisayar sistemi ise bile, yani hiçbir yere bağlanması olmayan bir bilgisayar sistemi ise bile
+
+288
+01:10:09,920 --> 01:10:36,800
+İlerleyen haftalarda konuşacağız. Nedir? Bu sistem üzerinde birbirinden fazla proses çalışmasını gerekiyoruz. Bu proseslerin birbirinden protected olmasını gerekiyoruz. Ama multiprogramming bir yan var. Bu arkadaşların kolaboratif olmasını da isteyeceğiz. Yani birbirlerinin de fazlalaşmalarını isteyeceğiz. O zaman da yine communication'dan bahsediyoruz. Yani birden fazla prosesin kendi içerisinde, pardon kendi içerisinde birbirleriyle
+
+289
+01:10:37,619 --> 01:10:41,399
+Haberleşmesini sağlayacak mekanizmaları da sağlıyor olması lazım.
+
+290
+01:10:43,079 --> 01:10:48,780
+Bunun dışında ne yapması lazım? Hataları kontrol ediyor olması lazım.
+
+291
+01:10:51,020 --> 01:10:54,720
+Hata ne zaman olur? Farklı farklı yerlerde olabilir.
+
+292
+01:10:56,180 --> 01:11:21,000
+Misal, fiziksel bir hatandan bahsediyor olabiliriz. Diyelim ki memurimizin bir noktasında bir sıkıntı var. Memurdaki hatalar aslında çok farklı. Ya da yapılarda olabilir. Yazma yanında olabilir, okuma yanında olabilir. Dağılımına göre tek bit ya da birden fazla bit bit grubu içerisinde olabilir. Dolayısıyla bunları fark edebiliyor olması lazım.
+
+293
+01:11:22,612 --> 01:11:40,072
+Bunun dışında IO cihazlarında olabilir ya da doğrudan uygulamanın kendisi içerisinde olabilir. Uygulama art netiyle ya da başka bir yanlışlıktan dolayı farklı bir yerlere erişmek istiyor olabilir. Dolayısıyla ne yapması lazım?
+
+294
+01:11:41,371 --> 01:11:46,912
+Bir, hata almıştığı zaman yapılması gereken neyse onu yapması lazım hatanın tipine bağlı olarak.
+
+295
+01:11:48,051 --> 01:12:02,987
+Hatanın neden oluştuğunun çözülebilmesi lazım. Bu da ne ister? Debugging ister. Dolayısıyla debugging için gerekli olan yapıyı size sağlıyor olması lazım. Bunun dışında servis olarak baktığınızda...
+
+296
+01:12:09,363 --> 01:12:14,363
+Ne var? Önemli olan, yani...
+
+297
+01:12:19,315 --> 01:12:32,095
+Sistemin efektif ve düzgün çalıştığını ya da daha doğrusu çalışmasını sağlamak adına sunduğu servisler var. Bunlardan bir tanesi hep söylediğimiz şey resource allocation.
+
+298
+01:12:32,956 --> 01:12:44,975
+Yani farklı tipike çok fazla kaynak var. Bu kaynaklara erişimin denetlenmesi, kontrollü şekilde yapılması lazım.
+
+299
+01:12:45,460 --> 01:12:58,340
+Bunu da işletim sisteminin amacına bağlı olarak değişmekle beraber, genelde share ya da makul olmasını bekleriz.
+
+300
+01:12:58,780 --> 01:13:06,800
+Bunun dışında özellikle multi-user enviomotu, yani nedir o bir sunucunuz var, bu sunucu yer.
+
+301
+01:13:07,444 --> 01:13:10,844
+bağlanan o sunucunun kaynaklarını kullanan kullanıcılar var.
+
+302
+01:13:11,384 --> 01:13:15,824
+Şeyde gerçi atmadık konuşmadık ama Cloud Compute'in gününü düşünün.
+
+303
+01:13:16,344 --> 01:13:23,064
+Ne yapıyorsunuz? Bir tane Cloud Provider'den biliyorsunuz, düşünücü alakayat ediyorsunuz.
+
+304
+01:13:23,584 --> 01:13:30,124
+O sunucudaki kaynağın ne kadar çalıştırıldığının ve ne kadarlık kaynağın çalıştırıldığının takip edilmesi lazım.
+
+305
+01:13:30,124 --> 01:13:32,748
+Fakat o alakayat edilen şey...
+
+306
+01:13:33,747 --> 01:13:38,407
+in arka tarafta bir şekilde account ilginin tutulması lazım.
+
+307
+01:13:38,587 --> 01:13:42,688
+Bu zaman zaman sanallaştırma yazılımı tarafından yapılır.
+
+308
+01:13:42,787 --> 01:13:44,847
+Zaman zaman işletim sistem tarafından yapılabilir.
+
+309
+01:13:45,448 --> 01:13:47,507
+Daha mini boyutlu düşünce konuşsanız.
+
+310
+01:13:51,007 --> 01:13:57,747
+En azından benim şeyi takip ediyor olabilmem lazım işletim sistem olarak.
+
+311
+01:14:00,724 --> 01:14:09,504
+kullanacağın ya da hangi prosesin ya da hangi kullanıcıya ait hangi proseslerin hangi kaynağı ne kadar kullanılır?
+
+312
+01:14:09,984 --> 01:14:26,404
+Bunları takip etmiş için de oluşturduğumuz mekanizmaların bütününe accounting diyoruz. Bunun dışında ne var? Protection ve security var. Daha demin konuştuk aslında. İlk saatlikmişti bu şey. Ne yapmamız lazım? Protection aslında
+
+313
+01:14:26,963 --> 01:14:43,144
+Sistem içerisindeki proseslerin birbirinden korunması. Yani aslında herkesin kaynağına kontrolün bir şekilde erişildiğinin şey yapılması, temin edilmesi, o şeyin tahsis edilmesi.
+
+314
+01:14:44,804 --> 01:14:46,963
+Security tarafı ise...
+
+315
+01:14:50,323 --> 01:14:54,823
+Arkada hiç bitmiyor bugün. Her yerden bir şey bitiyor. Bir saniye arkadaşlar.
+
+316
+01:15:48,724 --> 01:16:12,724
+Bir saniye. Hakikaten bazen yapılan iş, yapılma saati, yapılma şekli çok ilginç geliyor. Yani ders saatinde dersi dinlemesi gereken adam, derste olması gereken adam, dersi dinlemek yerine...
+
+317
+01:16:12,815 --> 01:16:36,635
+Bambaşka bir şeyle ilgili hata alıyor ve onun mailini atıyor. Demek ki dersi dinlemiyor. Çok güzel. Yani çok ilginç. Neyse, konumuza denk gelecek olursak, security tarafındaysa aslında dışarıdaki tehditlerle uğraşıyorsunuz. Şimdi bunun genel bir şeyini çizecek olursak,
+
+318
+01:16:37,268 --> 01:16:46,868
+Şamatiğini çezecek olursak aslında şöyle bir şeyden bahsediyoruz. Bir tonalama üzerinde işletim sistemi var. O mavri kalanın tamamı. Bu işletim sisteminin servisleri var.
+
+319
+01:16:46,868 --> 01:16:57,468
+Sağlıklı servisler. Yani IO operation için, file sistem için, haberleşme için, uygulamanın çalıştırılması için vesaire için, hata denetimi için.
+
+320
+01:16:57,468 --> 01:17:03,372
+Bir tarafta da kullanıcı adı yüzlerimiz var. Bu GUI olabilir, batch olabilir, commentline olabilir.
+
+321
+01:17:03,859 --> 01:17:29,799
+En üstte de hem kullanıcı hem de diğer programlar var. Bir şekilde kullanıcıların ya da dolaylı olarak kullanıcıların ya da uygulamaların bu servislerden faydalanabilmesi için System Call dediğimiz yapıyı kurmuş durumdayız. Bunun üzerinden ilerliyoruz. Onun da detaylarına.
+
+322
+01:17:32,307 --> 01:17:55,167
+Geleceğiz. Nasıl geleceğiz? Şeyden sonra geleceğiz. User interface'den sonra geleceğiz. User interface dediğiniz yapıya baktığınız zaman aslında çok böyle ahım şahım bir şeyden bahsetmiyoruz. Şundan bahsediyoruz. Bir tane command interface'da var. Yani işte herhangi bir file sistem üzerindeki bir şeyleri listelemek istediğiniz zaman ls ediyorsunuz.
+
+323
+01:17:56,627 --> 01:18:03,907
+O an içinde bulunduğunuz klasörün içerisindeki dosyaları ve klasörleri bir sistemler. İşte o an nerede olduğunuzu bilmiyorsanız,
+
+324
+01:18:06,167 --> 01:18:13,727
+pwd diyorsunuz komut olarak, o anki petinizin ne olduğunu söylüyor, faizm üzerinde hangi noktada olduğunuzu gösteren bilgiyi veriyor.
+
+325
+01:18:14,527 --> 01:18:16,907
+Process Management'la ilgili bir şey yapmak istiyorsanız,
+
+326
+01:18:20,399 --> 01:18:26,959
+türe EF diyorsunuz. Hem sizin hem sistemdeki diğer eğer yetkiniz varsa kullanıcıların
+
+327
+01:18:27,359 --> 01:18:34,579
+Proseslerini görüyorsunuz. Hangisinin ne kadar CPU time aldığını, ne kadar memoresi olduğunu vesaireyi şey yapabilirsiniz, takip edebiliyorsanız.
+
+328
+01:18:34,699 --> 01:18:48,699
+Ya da netstat dire, NALP dediğiniz zaman bu sistemde şu an aktif olan haberleşme kanallarının ne olduğunu görebiliyorsunuz.
+
+329
+01:18:53,716 --> 01:19:00,716
+Kullanabileceğiniz komutlar var, parametre de var. Bunları kullanarak bilgi almak ya da o iş sisteme bir şeyler yaptırmak mümkün.
+
+330
+01:19:00,716 --> 01:19:09,096
+Sadece listelemek zorunda değilsiniz. Oradaki bir dosyayı silebilirsiniz. Sadece bağlantıları şey yapmak zorunda değilsiniz.
+
+331
+01:19:09,275 --> 01:19:17,136
+Daha farklı komutlarda oraya yeni bir bağlantı oluşturulması, bir servisin çalıştırılması, bir uygulamanın çalıştırılması gibi işler ne yapar bilirsiniz.
+
+332
+01:19:18,096 --> 01:19:20,756
+Sistematik baktığınız zaman 3 aşağı 5 yukarı böyle.
+
+333
+01:19:23,060 --> 01:19:25,420
+Bunun dışında ne var?
+
+334
+01:19:27,920 --> 01:19:30,420
+Arayüz olarak graphical user interface var.
+
+335
+01:19:30,520 --> 01:19:35,640
+Graphical user interface içerisinde aslında farklı sistemlerde farklı yapılar.
+
+336
+01:19:36,372 --> 01:20:00,000
+Görüyorsunuz ve fakat genelde aslında karşılaştığımız şey aynı. Bir desktop metaforu var. Yani hani bir masa üstüne benzetiyoruz. İşte neden? Çünkü masa üstünde bir organizasyon vardı. Yapını, oraya, yapını, buraya, şunu, şuraya falan koyarsınız. Burada da görsel bir arayüz var. Zaten kullanıyorsunuz ve biliyorsunuz. Nedir? O görsel arayüz ya da yapı içerisinde de ikonları kullanır. Bir ikona tıkladığınız...
+
+337
+01:20:00,000 --> 01:20:12,639
+Eğer bu mouse'la da olabilir, mouse klavye üzerinden de olabilir, parmak hareketleriyle de olabilir, parmak mimikleriyle de olabilir.
+
+338
+01:20:14,239 --> 01:20:18,440
+Her sistemde farklı bir arı yüz görüyorsunuz.
+
+339
+01:20:22,804 --> 01:20:27,264
+Windows'da gördüğünüz şey, zaten ismi Windows, oradan geliyor, Windows yıkısı.
+
+340
+01:20:27,863 --> 01:20:31,764
+Baktığımız zaman aslında size hem command line veriyor hem UI veriyor.
+
+341
+01:20:31,764 --> 01:20:40,963
+Apple'a baktığımız zaman yine Akua isimli bir arayüzünüz var ama alt tarafta yine shell var.
+
+342
+01:20:41,084 --> 01:20:47,244
+Linux'larda interface, bol miktarda nom var, KDE var.
+
+343
+01:20:47,764 --> 01:21:03,203
+Yani Enlightenment bile kullanabilirsiniz. En son bir versiyonun çıkmasını beş yıl bekledikten sonra ben kullanmayı bıraktım ama hani şu an ne durumda bilmiyorum. Eksane yanar dönerli bir graphical user interface'de ama arka tarafta her zaman için komut satırı da var.
+
+344
+01:21:03,828 --> 01:21:09,788
+İlla bu klavye, mouse üzerinden olmak zorunda değil, touchscreen üzerinden de olurdu. Bunları geçebiliriz.
+
+345
+01:21:10,348 --> 01:21:15,748
+Önemli olan zırnlarının zırt dediği yerlerden bir tanesi bizim için sistem çağrıları.
+
+346
+01:21:17,508 --> 01:21:24,188
+Sistem çağrısına baktığımız zaman derdimiz ya da şeyimiz ne?
+
+347
+01:21:31,475 --> 01:21:32,735
+Boğaz'a gıcık yapıştı.
+
+348
+01:21:46,195 --> 01:21:53,036
+Bizim işletim sisteminin sağladığı servislere erişimde bulunmamız lazım.
+
+349
+01:21:55,855 --> 01:21:58,036
+Bunun için de...
+
+350
+01:22:11,859 --> 01:22:29,779
+Bize sunulan arayüzün ismi aslında sistem çağrısı. Sistem çağrısı baktığınız zaman bizim için bir application programming interface.
+
+351
+01:22:32,724 --> 01:22:39,404
+Ne yapılması lazım? Basit bir uygulama üzerinden düşünelim aslında. Oradan gidersek daha iyi olabilir bazı şeyler.
+
+352
+01:22:40,244 --> 01:22:50,004
+Yani mesela bir dosya kopyalayacaksınız. Nedir o? İşte ekrandan bir tane dosya ismi alacaksınız. Ekrana bilgi yazacaksınız.
+
+353
+01:22:50,448 --> 01:23:00,448
+Aldığınız input'u değerlendireceksiniz. Bu dosyanın nereye kopyalacağını bilgisini almak isteyeceksiniz.
+
+354
+01:23:02,768 --> 01:23:10,448
+Bunun için ekrana bir bilgi yazacaksınız. Dışarıdan gelen bilgiyi alacaksınız. Onu inceleyip OK diyeceksiniz. Ondan sonra...
+
+355
+01:23:11,475 --> 01:23:31,555
+Kaynak dosya bakalım yerinde mi diye kontrol edeceksiniz. Yerinde ise açmaya çalışacaksınız. Açılabiliyor mu açılamıyor mu? Belki açmaya yetkiniz yok mesela. Ondan sonra hedef karaktaki dosyayı oluşturmaya deneyeceksiniz. Orada belki hakkınız yok, yetkiniz yok vesaireniz yok ya da zaten orada bir dosya var.
+
+356
+01:23:34,355 --> 01:23:40,456
+Gittikten sonra kaynak dosyadan devamlı okuyacaksınız, hedef dosyayı yazacaksınız.
+
+357
+01:23:40,536 --> 01:23:48,268
+Şimdi bu işi yapmaya kalktığınız zaman aslında devamlı olarak...
+
+358
+01:23:54,804 --> 01:23:55,724
+Evet.
+
+359
+01:24:00,148 --> 01:24:20,148
+Nasıl diyeyim? İşletim sisteminin araya girmesini gerektiren bir yapı. Yani bu adımların her birinde aslında ne yapıyorsunuz? İşletim sistemi tarafında bir sistem çağrısı oluşturuyorsunuz. İşletim sistemi tarafında sistem çağrısı oluşturmak korkunç bir şey değil.
+
+360
+01:24:24,591 --> 01:24:39,471
+Rahat ya da hızlı ya da esnek olduğumuz bir yapı değil. Bunun yerine genellikle bize hangi programlama dilindeyse o programlama dili için bir runtime environment sağlanır işletim sistemi tarafından.
+
+361
+01:24:51,891 --> 01:25:13,551
+operasyonu vardır. İşte açacaksanız open vardır. Write vardır yazmak için, close vardır kapamak için vesaire. Bunlar aslında bize bir nasıl diyeyim sistem çağrısının önünü arkasını rap edilmiş yani rapper function gibi fonksiyonlar sağlar. Şurada bir ileride şey olması lazım. Ha, o da var işte.
+
+362
+01:25:15,699 --> 01:25:35,139
+Aslında read fonksiyonunu yaptığı şey teknik olarak bir sistem çağrısını kullanmak. O bir sistem çağrısını kullanmak için daha human readable seviyede olan parametreleri alıyor. Bunları organize ediyor. Sonra da sistem çağrısı üzerinden işletim sistemine paslıyor. Olaya böyle bakabilirsiniz.
+
+363
+01:25:43,060 --> 01:26:05,940
+Peki, buradaki sıkıntılardan bir tanesi, yani konuşulması gereken şeylerden, işlerden bir tanesi, sistem çağrısının işletim sistemi tarafından nasıl handle edileceği. Bununla ilgili şurada güzel bir şey var. Slip var, bunun üzerinden konuşmak dair.
+
+364
+01:26:07,155 --> 01:26:14,155
+Ne yapıyorsunuz? Kullanıcı tarafında, demin işte read'i gördük ama read'ten önce bir open'da kullanıyor olabilirsiniz.
+
+365
+01:26:15,315 --> 01:26:27,396
+Open function'ı çağırdığınız zaman aslında System Call Interface üzerinden, yani o API üzerinden, yani lead.jv üzerinden sizin kullanıcı modundan kernel moduna geçmeniz lazım.
+
+366
+01:26:27,515 --> 01:26:32,416
+Bir sistem çağrısı oldu. Dolayısıyla o sistem çağrısına karşılık olarak yapılması gerekenler var.
+
+367
+01:26:32,800 --> 01:26:56,779
+Yapılması gerekenlerin ne olduğunu nereden biliyorum. Her sistem çağrısının bir numarası var. O numaraya bağlı olarak da şuradaki i'yi o yüzden görüyorsunuz. Bu fonksiyon o çağrıyı yapmadan önce hangi çağrıyı yapacağını da bilgiyi yazıp öyle çağırıyor. Dolayısıyla karşı taraf da işletim sistemi tarafında o indekste ilgili yer edip o sistem çağrısını çalıştırıyor.
+
+368
+01:26:57,427 --> 01:27:07,427
+Teknik olarak baktığımızda dönen hadi kabı tabirle söyleyeyim tezgah bu. Ama burada birkaç tane sıkıntı var.
+
+369
+01:27:11,427 --> 01:27:14,087
+Şimdi bir.
+
+370
+01:27:14,931 --> 01:27:33,912
+Bu interfezi kullanmanın getirdiği bir güzellik var. Zaten işletim sistemi bize bu interfezi sağlıyor. Böylece ben neyle uğraşmak zorunda kalmıyorum. Kendi uygulamamda bu işletim sistemi şöyle mi implement edilmiş, böyle mi implement edilmiş, şuraya şunu buraya bunu yazacağım vesaireyle uğraşmam. Onu bu interfezi hallediyor.
+
+371
+01:27:34,707 --> 01:27:57,647
+Bir diğer nokta, şimdi en basit, dimming, read üzerinde bir örnek üzerinden gitmiştik. Şimdi open üzerinde. Her ikisinde de ne var? Parametreler var. Yani ben read edeceğim ama nereden, hangi dosya var, nereye, ne kadar vesaire gibi parametre var. Bir dosyayı açacağım ama bu dosyanın ismini ne şekilde açacağım, ne yapacağım vesaire gibi.
+
+372
+01:27:58,836 --> 01:28:03,195
+Sorular var. Bu soruları cevaplamak için ne kullanıyoruz? Parametralar kullanıyoruz.
+
+373
+01:28:04,076 --> 01:28:12,496
+Fakat sistem çağrısına yani kendilerine geçerken bu parametreler nasıl aktarılacağı da bir soru işareti.
+
+374
+01:28:13,615 --> 01:28:16,476
+Bunun için birkaç tane yöntem var.
+
+375
+01:28:18,236 --> 01:28:24,136
+Yani en basit haliyle söyleyecek olursak bir tanesi rejistör üzerinden.
+
+376
+01:28:24,880 --> 01:28:31,280
+Bir tanesi ise, register üzerinden in direct çekerinde. Burada onu görüyorsunuz.
+
+377
+01:28:31,280 --> 01:28:44,280
+Yani doğrudan kendilerini moda geçerken, register üzerine değeri yazmak yerine, register yerine, memory de parametrelerin olduğu yerine adresini yazıyorsunuz.
+
+378
+01:28:44,280 --> 01:28:47,079
+Böylece işletim sistemi...
+
+379
+01:28:47,380 --> 01:28:54,460
+Çağrısı gerçekleştiği sefer, registrardan değeri okuyor, memordaki bölgeden de olması gereken bütün parametreleri alıyor.
+
+380
+01:28:54,899 --> 01:28:59,860
+Bir diğer yöntem ise bir stack yapısı kullanmak.
+
+381
+01:28:59,860 --> 01:29:12,300
+Yani sistem çağrısını yapmadan önce sisteğe push etmek, sistem çağrısı yapıldığı zaman da karşı tarafı gençlerinde kendi tarafından kop edilmesi.
+
+382
+01:29:24,212 --> 01:29:28,112
+Buna baktığınız zaman, hani, register üzerinden aktarmak en hızlısı.
+
+383
+01:29:28,792 --> 01:29:36,032
+Fakat hani, register sayısı belli olduğu için her zaman bütün parametre de register üzerinden aktarmamız çok mümkün değil.
+
+384
+01:29:36,452 --> 01:29:40,512
+O yüzden tablo, memori üzerinden aktarılıyor genellikle.
+
+385
+01:29:42,752 --> 01:29:45,212
+Bunu hem Linuxİşle, hem Solaris'te görürsünüz.
+
+386
+01:29:45,212 --> 01:29:46,212
+Onun dışında...
+
+387
+01:29:48,372 --> 01:30:00,412
+Stake üzerinden de aktarmak mümkün. Stake ve şey, nedir o? Table üzerinden yapmak. Zaten bize şey limitini de ortadan kaldırıyor.
+
+388
+01:30:00,412 --> 01:30:11,592
+Nedir o? Parametre sayısı, boyutu vesaire limitleri de ortadan kaldırıyor. Şimdi sistem çağrımlarının tipine baktığımız zaman aslında bol miktarda tip var.
+
+389
+01:30:14,131 --> 01:30:33,131
+Doğrudan aklınıza gelecek olan şey, process control. Bunun dışında ne var? File management var. Bunun dışında ne olması lazım? Device management olması lazım. Yani illa ve illa device'lerle ilgili bir şeyler de yapıyoruz. Bunun dışında...
+
+390
+01:30:34,195 --> 01:30:44,235
+Communication main şeyden olması lazım. Yani hem iç haberleşme, yani şirket memori bir ortam varsa o işlerle ilgili de haberleşmende olması lazım.
+
+391
+01:30:44,376 --> 01:30:52,015
+Senkronizasyon vesaire işlerinde olması lazım. Networking anlamında bir haberleşmeden bahsediyor. Onun da olması lazım.
+
+392
+01:30:52,015 --> 01:30:57,855
+Bunun dışında information maintenance var. Yani mesela sistemin tarihinin set edilmesi.
+
+393
+01:30:59,604 --> 01:31:21,804
+Yani tarih derken tarih ve saati bir arada set edilmesi, alınması, bunun dışında herhangi bir dosyaya, işleme ya da benzeri ya da kullanıcıya ait bilginin alınması ve değiştirilmesi gibi şeyler de var. Bunlara baktığınız zaman bunlar hep genel metodoloji.
+
+394
+01:31:22,868 --> 01:31:32,488
+Bunlarla ilgili bir şeylerin olması lazım diyoruz. Yani process control ile ilgili, işte create process olması, terminate process olması, and abort load, execute olması lazım diyoruz.
+
+395
+01:31:32,588 --> 01:31:36,308
+İşte parla ilgili create, collect, open, close olması lazım diyoruz.
+
+396
+01:31:37,168 --> 01:31:43,968
+Baktığınız zaman information maintenance ve şeyle ilgili, communications ile ilgili de benzer şeylerden bahsedebiliriz.
+
+397
+01:31:44,768 --> 01:31:47,988
+Son olarak tabii ki protection ile ilgili de çağrılar olması lazım.
+
+398
+01:31:47,988 --> 01:31:50,868
+Yani birilerinin allow, deny, edit.
+
+399
+01:31:50,868 --> 01:32:09,808
+İşte permission'ların alındığı, bir kayna erişimin verildiği. Fakat bunların hepsi farklı sistemlerde, farklı sistem çağrılarıyla ve o sistem çağrılarında farklı parametreleri olduğu şekillerde implement ediliyor.
+
+400
+01:32:09,808 --> 01:32:15,308
+Mesela Windows'u bir proses yapmak istiyorduk. Create process diyorsunuz. Unix'te fork diyorsunuz.
+
+401
+01:32:16,051 --> 01:32:20,651
+Benzer şekilde bir dosya açmak için birini create file diyorsanız diğerini de open diyorsanız.
+
+402
+01:32:20,651 --> 01:32:33,451
+Open ve create file parametreleri de birbirinden farklı ama ana tepsi ya da ana mantığı, açacağınız dosyanın petini veriyorsunuz, modunu veriyorsunuz vs.
+
+403
+01:32:33,451 --> 01:32:42,251
+Bunu verme sıralıcınız ya da verme şekliniz ya da verirken kullandığınız metodoloji zaman zaman değişiklik gösteriyor.
+
+404
+01:32:46,515 --> 01:32:47,035
+Şimdi
+
+405
+01:32:59,828 --> 01:33:03,268
+Bu sistem çağrısının nasıl çalıştığına dahil bir örnek.
+
+406
+01:33:04,007 --> 01:33:09,427
+En basit bir şey. Zaten programda hiçbir şey yapıyoruz. Ekrana bir mesaj yazıyor, çıkıyor, gidiyor.
+
+407
+01:33:17,876 --> 01:33:30,876
+Böyle bir durumda ne olacak? Sprintefi dediğiniz anda aslında bu hani lipcae tarafından fark edilecek bir şey. Çünkü aslında zaten o lipcaeye bir call yapıyorsunuz.
+
+408
+01:33:31,876 --> 01:33:35,876
+Bu call yaptığınız an...
+
+409
+01:33:36,500 --> 01:33:59,699
+LIPC'e gidecek. Standart C-Library'si zaten bu. Arka tarafta bununla ilgili sistem çağrısı neyse onu çalıştıracak. Sistem çağrısı çalıştıktan sonra elde edilen sonucu alacak ve onu tekrar ne yapacak? Yani kullanıcı programına geri döndürecek.
+
+410
+01:34:17,235 --> 01:34:17,595
+Şunda.
+
+411
+01:34:21,235 --> 01:34:27,836
+Baktığınız zaman farklı işletim sistemleri farklı yapılar şeklinde organize edilmiş olabilir.
+
+412
+01:34:30,376 --> 01:34:37,416
+Şimdi sistem çağrısı vs. falan dedik ama hani biraz bu slide de biraz ani geçiş oluyor ama
+
+413
+01:34:37,416 --> 01:34:42,735
+şunu anlatmak adına iyi.
+
+414
+01:34:43,576 --> 01:34:44,836
+İşletim sistemi...
+
+415
+01:34:47,796 --> 01:34:57,715
+Tarihine bakacak olursak, en primitif örneklerinden bir yerden başlayarak, şu an geldiğimiz yeri karşılaştırabilmek adına.
+
+416
+01:34:58,576 --> 01:35:06,435
+Şimdi MS2'a baktığınız zaman, Linuxİşletim Disk Operating Sistemine baktığınız zaman, aslında şöyle bir yapı var orijinalde.
+
+417
+01:35:06,435 --> 01:35:14,435
+Bir tane kernel var, command interpreter var, üzerinde de boş bir alan var.
+
+418
+01:35:14,963 --> 01:35:27,243
+Zaten single task'e çalışıyor. Yani bir processiniz olduğu zaman, bir uygulama çalıştıracağınız zaman, bu boş alana ilgili prosesi kopyalıyorsunuz.
+
+419
+01:35:27,243 --> 01:35:38,243
+Şimdi burada bir şey dikkatinizi çekebilir. O da şu. Olmalı en azından. Mavi alanın boyut farkı.
+
+420
+01:35:38,868 --> 01:35:46,388
+Command Interpreter burada daha büyük, burada daha küçük. Bu bir şey, hata değil. Özellikle yapılmış bir şey. O da şu.
+
+421
+01:35:48,088 --> 01:35:54,908
+Aslında işletim sisteminin kendinin üzerinde yalanlar Command Interpreter iki parçadan oluşuyor MS-DOS'ta.
+
+422
+01:35:55,708 --> 01:35:59,408
+Bunun bir kısmı sabit, bir kısmı ise dinamik.
+
+423
+01:36:00,208 --> 01:36:04,868
+Yani şimdi burada zaten MS-DOS günlerini hatırlayabilen...
+
+424
+01:36:05,203 --> 01:36:14,283
+Aranızda teknik olarak yoktur ama düşününce saçma geldi çünkü. Hatırlar belki falan diyecektim ama hatırlayamaz teknik olarak.
+
+425
+01:36:15,444 --> 01:36:35,364
+Sınırlı bir memoryniz var. Burada Command Interpreter'ın ve kernel'in olduğunu da biliyoruz. Üstte kalan yer daha da sınırlı bir alan. Dolayısıyla bir programı çalıştırmak için eğer bundan daha fazla yere ihtiyacınız varsa bu rahatlığı sağlayabilmek adına Command Interpreter'ı iki kısma bölmüşler zamanında.
+
+426
+01:36:36,532 --> 01:36:58,712
+Bu iki kısımdan bir tanesi sabit bir şekilde bellekte duruyor. Diğer kısmı çıkartıyoruz. Çıkarttığımız zaman ne yapmışız? Farklı bir boyut daha kazanmış oluyoruz. Boyutu büyütmüş oluyoruz. Böylece burada çalıştırabileceğimiz uygulamanın boyutunu da arttırıyoruz. Neden böyle bir şeye ihtiyaç duyuyoruz? Çünkü zaten virtual memory diye bir şey yok burada şu an.
+
+427
+01:37:00,479 --> 01:37:18,439
+Ne oluyor? Uygulamayı kopyaladık. Uygulama çalıştı. İşi bitti. Memory'den çıktı. Bu kalan kısım, şuradaki eksik kısmı geri kopyalıyor. Böylece çalışmaya aynen devam edebiliyorsunuz. Böyle bir şey yapmışlar zamanlarda mesela. Bunu da şey yapacağız.
+
+428
+01:37:19,060 --> 01:37:23,160
+Daha sonra daha detaylı şekilde MS-DOS'a geldiğimiz zaman yine konuşacağız.
+
+429
+01:37:23,880 --> 01:37:31,940
+Şimdi bir öbür tarafa bakalım. Yani bu basit halinde, single task'in vesaire bir yapı.
+
+430
+01:37:34,860 --> 01:37:42,140
+Proses aslında böyle ekstra proses oluşturulan bir şey yok vesaire yok. Single memory space var.
+
+431
+01:37:43,796 --> 01:37:58,736
+bir memori alanımız var. En fazla yaptığınız koment interpretin, resilient olan kısmını kaldırmak, burayı genişletmek, prosesi çalıştırmak, bittiği zaman da tekrar geri yüklemek.
+
+432
+01:37:58,736 --> 01:38:06,556
+Burada ise, VBS dizi ise, baktığımız zaman multi-task gibi bir yapı var.
+
+433
+01:38:15,091 --> 01:38:26,551
+Bir kerneliniz var, bir de interpreteriniz var. Yani komut satırınız, kişilerin komut girebildiği, işlediğimizde ne işler yapmalısını söyleyebildiği yer.
+
+434
+01:38:27,131 --> 01:38:35,371
+Bunun dışında da boş bir memoriniz var. Burada hani her memorinin her bir tarafına bir proses yerleşmiş. B, C, D şeklinde. Arada bir boş.
+
+435
+01:38:37,043 --> 01:38:45,503
+Şimdi bu bize ne getiriyor, ne getiriyor? Bir, gördüğünüz üzere böyle memory'nin tek bir bütün halinde olmasını değil, parça parça hale gelmesini sağlıyor.
+
+436
+01:38:46,904 --> 01:38:49,984
+Çözülmesi gereken bir program bununla ilgili memory management diye konuşmuştuk.
+
+437
+01:38:51,963 --> 01:38:57,984
+Güzelliğine birden fazla proses aynı zamanda, aynı anda memory'nin üzerinde. O da güzel.
+
+438
+01:38:59,123 --> 01:39:10,683
+Interpreter peki ne yapıyor? Interpreter şöyle çalışıyor. Yani kendisinden aslında ne bekliyoruz? Farklı prosesler oluşturmasını bekliyoruz.
+
+439
+01:39:11,603 --> 01:39:19,643
+MS-DOS versiyonunda yapılacak olan şey de programın memoriye kopyalanması ve oradan itibaren çalıştırılmaya başlanması.
+
+440
+01:39:19,643 --> 01:39:25,420
+Zaten bitince tekrar Interpreter'e geri dönüyorsunuz gibi. Oldukça basit. Burada ise...
+
+441
+01:39:25,652 --> 01:39:39,092
+Bu arkadaşların tamamının yani B, C ve D'nin ayrı ayrı çalıştırılabilmesi lazım. Dolayısıyla burada bir program çalıştırılması için komuta giriyorsunuz. Interpreter kendisinden bir kopya oluşturuyor.
+
+442
+01:39:39,092 --> 01:39:44,412
+Fork ile. Daha sonra ne oluyor? İki tane interpreter oluyor. Yaptığımız şey şu.
+
+443
+01:39:45,619 --> 01:39:53,039
+Oluşturduğumuz yeni interpreter'ın içerisine ilgili komut neyse hangi programa aitsi o programın bilgisini yıkıyoruz.
+
+444
+01:39:53,039 --> 01:40:01,940
+Onu da exec ile yapıyoruz. Böylece aslında Matrix'teki gibi, Ajansimit gibi bir şey. Adam kopya çıkartıyor, değiştiriyor kendisini.
+
+445
+01:40:02,780 --> 01:40:11,100
+Bu şekilde birden fazla proses oluşturuyoruz. Burada sıkıntı ne? Diyelim ki B, C, D oluşturduğunuz. Zaten şu boşluk tahminin öyle olmuşmuş.
+
+446
+01:40:11,539 --> 01:40:34,100
+Buradan C gidiyor, sonra E geliyor. E geldiği zaman buraya kadar yerleşmiyor da işte şuraya kadar yerleşiyor, burada bir boşluk kalıyor. Sonra D gidiyor, başka bir proses geliyor, buraya yerleştiriyorsunuz, bu sefer burada bir boşluk kalıyor. Ya da B gidiyor, o gelen prosesi buraya yerleştiriyorsunuz, burada boşluk kalıyor. Dolayısıyla aslında Naltı Taskin güzel.
+
+447
+01:40:35,155 --> 01:40:41,235
+Çok efektif aynı anda çok daha fazla işi çalıştırmamızı sağlayıp artıları var.
+
+448
+01:40:41,376 --> 01:40:51,235
+Ama beraberinde getirdiği, çözülmesi, dikkat edilmesi gereken sorunlar, sıkıntılar var.
+
+449
+01:40:51,475 --> 01:40:56,836
+Dolayısıyla bunlara bakıyor olacağız ders kapsamında konuştuğumuz zamanla.
+
+450
+01:41:03,891 --> 01:41:09,431
+Sistem programına baktığınız zaman aslında bol miktarda böyle şey yapabiliriz.
+
+451
+01:41:09,552 --> 01:41:15,311
+Yani kitapta da o şeyden gidiyor, kafadan gidiyor.
+
+452
+01:41:17,412 --> 01:41:22,372
+Yani isimlendirmenin, kategorize etmenin hiçbir sonu ve sınırı yok.
+
+453
+01:41:22,372 --> 01:41:25,452
+Yani nedir?
+
+454
+01:41:27,891 --> 01:41:29,192
+İşte haberleşme içinde.
+
+455
+01:41:30,644 --> 01:41:34,144
+kullandığınız temel uygulamalara sistem programı diyebilirsiniz.
+
+456
+01:41:34,484 --> 01:41:40,004
+Dosya işlemleri için kullandığınız programla da sistem programı diyebilirsiniz.
+
+457
+01:41:40,244 --> 01:41:47,084
+Yani en basitinden şeye ihtiyacımız var.
+
+458
+01:41:47,084 --> 01:41:51,084
+Bir kişiden sistemi içerisinde temel...
+
+459
+01:41:52,212 --> 01:41:59,852
+Dosya oluşturma, silme, kopyalama, ismini değiştirme vesaire gibi işlere ihtiyacınız var.
+
+460
+01:41:59,972 --> 01:42:02,692
+Ama bunun önünde en önemlisi şeye ihtiyacınız var.
+
+461
+01:42:02,692 --> 01:42:04,032
+Hem başta da konuşmuştuk.
+
+462
+01:42:04,435 --> 01:42:11,355
+Bir dosyanın edit edilebilmesini, yani içerisinde değişiklik yapılabilmesini sağlayacak bir editöre ihtiyacımız var.
+
+463
+01:42:11,796 --> 01:42:14,556
+Ki Unix sistemlerde bu VI'dır genellikle.
+
+464
+01:42:15,556 --> 01:42:28,268
+Yani komut satırında çalışan ve fakat sizin şu an Word ya da benzeri bir tool'dan alabileceğiniz esnekliği ya da yapıyı çok daha fazlasıyla verebilecek olan bir...
+
+465
+01:42:29,011 --> 01:42:50,431
+Editördür. Kullanmanızı tavsiye ederim. Günümüzde böyle modifiye edilmiş hali VI değil de Vim olarak geçer. Vim, Vim Plus vesaire gibi versiyonlar da var ama hepsi temelde aynıdır. Yani eğer VI Editörünü kullanabiliyorsanız dünya üzerindeki bütün sunucuları kontrol edersiniz rahat rahat hangisinin oturursanız oturun.
+
+466
+01:42:53,844 --> 01:42:59,844
+Mesela communication ile ilgili de sistem programı var. En basitinden ne yapıyorsunuz?
+
+467
+01:43:03,844 --> 01:43:12,844
+Bilgisayar sisteminize bağlı olan ağ bağdaştırıcıları ya da ağ kartları ile ilgili olarak durumu görmek istiyorsunuz.
+
+468
+01:43:15,572 --> 01:43:41,552
+İşte bu eğer bir Linux sistemse, ifconfig diyorsunuz, hatta ifconfig'lere a diyorsunuz, bütün interfaceleri görüyorsunuz. İşte MAC adresi neymiş, IP adresi neymiş, ne zaman apmış, ne zaman downmış, kaç tane error varmış vesaire. Öbüründe IP konfig diyorsunuz. Öyle görüyorsunuz. Windows'da da IP konfig'li görüyorsunuz. Ya da bunun içerisinde şey de olabilir.
+
+469
+01:43:42,707 --> 01:43:54,787
+Tamamen sistemin bağlantı problemini kontrol etmek adına kullandığınız eğer varsa ya da yoksa ya da sıkıntıyı tespit etmek adına kullandığınız ping, trace vesaire gibi uygulamaları da katabilirsiniz.
+
+470
+01:43:55,447 --> 01:44:00,767
+O yüzden oldukça geniş bir çerçeve. Her şey girer çıkar.
+
+471
+01:44:05,627 --> 01:44:09,827
+Her biri üzerine böyle uzun uzun tek tek konuşmaya.
+
+472
+01:44:12,979 --> 01:44:23,979
+Gerek yok. Burası önemli. İşletim sisteminin tasarımı ve gerçeklenmesiyle ilgili konuşacağız biraz.
+
+473
+01:44:24,719 --> 01:44:31,519
+Konuşacağız biraz derken burada aslında mevcut yapılar ve yaklaşımları konuşacağız.
+
+474
+01:44:31,519 --> 01:44:33,519
+Ama bunları konuşurken şunu...
+
+475
+01:44:39,539 --> 01:45:03,559
+Bazı kavramları netleştirmemiz ya da ayırt etmemiz lazım. Şimdi şöyle ki bir işletim sisteminin tasarımı böyle hani çözülebilir bir şey değil, problem değil. Şöyle bir problem. Yakınsıyorsunuz bir yerde.
+
+476
+01:45:04,051 --> 01:45:30,951
+Yani bir, öncelikle şeyi belirtiyor olmanız lazım. Yani bizim amacımız ne? Ne bekliyoruz? Yani evet, gerçek zamanlı sistem. Okey, ama o zaman da gerçek zamanlı sistemin nasıl olmasını bekliyoruz? Hard real time mı, soft real time mı? Ne açıdan hard, ne açıdan soft vesaire gibi. Dolayısıyla bu önemli bir nokta.
+
+477
+01:45:32,243 --> 01:45:53,043
+Bir de her şey, üzerinde çalışacağı donanım. Yani siz herhangi bir timer olmadan bir işletim sisteminden söz edemezsiniz. Ama bu noktada timer'ın çözünürlüğü işletim sisteminin hedefleriyle çakışmıyor olabilir, çakışmıyor olabilir. Dolayısıyla buna bakıyor olmak lazım.
+
+478
+01:45:54,003 --> 01:46:00,543
+Hedefler sistem açısından ve kullanıcı açısından değişiklik gösterebilir. Bunu değerlendirmek lazım.
+
+479
+01:46:00,543 --> 01:46:10,083
+Yani kullanıcı olarak ne isterseniz işletim sisteminizi, zırt pırt çıkılan mavi ekran denen bir işletim sistemini isterseniz istemezsiniz.
+
+480
+01:46:10,923 --> 01:46:14,543
+Sadece komut satırından kullanabildiğiniz böyle...
+
+481
+01:46:15,220 --> 01:46:21,560
+En ufak programı çalıştırmak için 40 tane parametre vermemiz gereken bir işletim sistemini istemezsiniz.
+
+482
+01:46:21,680 --> 01:46:31,380
+Dolayısıyla kullanımının basit olmasını, kolay öğrenilebilir olmasını, güvenilir olmasını, hızlı olmasını,
+
+483
+01:46:31,380 --> 01:46:38,380
+yani gidip 64 GB bilginiz olan bilgisayarda devamlı böyle...
+
+484
+01:46:39,060 --> 01:46:44,900
+Her tıkladıktan sonra iki saniye bekliyor olmayı kaldıramazsınız, kabul edemezsiniz.
+
+485
+01:46:46,240 --> 01:46:55,380
+Dolayısıyla kullanıcının beklentilerinin ne olduğu işletim sisteminin tasarımının nasıl olmasını gerektiğini belirleyecek şeylerden bir tanesi.
+
+486
+01:46:56,724 --> 01:47:15,564
+Bir diğeri de hani sistem tarafında amaç ne? Yani bunu şey yapıyoruz ama tasarlıyoruz ama nasıl tasarlıyoruz? Neyi düşünerek tasarlıyoruz? Sadece şeyi öne alıyorsak ne kadar esnek olursa o kadar iyi öne alıyoruz?
+
+487
+01:47:17,984 --> 01:47:27,584
+Ne olursa olsun, reliable olsun, hata yapmasın, herhangi bir şekilde sistemde bir problem olmasına engel olsun kafasıyla mı yaklaşıyoruz?
+
+488
+01:47:27,684 --> 01:47:29,344
+Bunu birçok yerde göreceksiniz mesela.
+
+489
+01:47:30,264 --> 01:47:32,344
+Geçen ders de örnek olarak vermişimdir kesin.
+
+490
+01:47:32,444 --> 01:47:37,284
+Deadlock dediğimiz şey bir chapter boyunca anlatılır.
+
+491
+01:47:37,684 --> 01:47:39,244
+Sayfalarca hikayesi var.
+
+492
+01:47:40,404 --> 01:47:44,084
+Fakat geldiğimiz noktada deadlock olursa kullanıcı halleder.
+
+493
+01:47:44,851 --> 01:47:48,851
+Birini yok eder, o olay çözülür diye okuyoruz. Bunun dışında...
+
+494
+01:47:56,275 --> 01:48:05,176
+İki tane kavram var. Yani tasarımla ilgili konuşurken şey yapacağız. Çokça geçecek. Bunları birbirinden ayırmamız lazım. Biri mekanizm, biri policy.
+
+495
+01:48:05,836 --> 01:48:15,556
+Mekanizm bir şey yapmanızın yolu. Policy ise neyin ne zaman nasıl yapılacağını belirlediğimiz şey.
+
+496
+01:48:27,699 --> 01:48:39,339
+Şimdi, tüm bu bilgilerden sonra, işlediğimiz sistemleri nasıl implement ediyor, ne kullanmak implement ediyor vesaire oraya gireceğiz ama şimdi bakıyorum saat 3'e gelmek üzere.
+
+497
+01:48:39,339 --> 01:48:46,039
+Buradan sonrası uzun bir kısım. 3. slide'dayız. 34'dan şunu not edin.
+
+498
+01:48:50,479 --> 01:48:54,219
+Haftaya buradan devam edeceğiz. Umuyorum ki yüz yüze.
+
+499
+01:48:54,931 --> 01:49:00,131
+Şimdilik hepinize iyi haftalar arkadaşlar. Görüşmek üzere.
+
+500
+01:49:04,180 --> 01:49:07,120
+Zaten kimseden ses çıkmıyor galiba.
