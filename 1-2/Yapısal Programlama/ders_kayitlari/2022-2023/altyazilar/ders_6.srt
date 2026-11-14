@@ -1,0 +1,1955 @@
+1
+00:04:58,803 --> 00:04:59,763
+Günaydın arkadaşlar.
+
+2
+00:05:03,283 --> 00:05:06,703
+Teşekkür ederim [öğrenci]. Ses geliyor herhalde.
+
+3
+00:05:24,915 --> 00:05:26,995
+Bir iki dakika daha bekleyelim, öyle başlarız.
+
+4
+00:08:34,388 --> 00:09:01,868
+Evet arkadaşlar, siz tekrardan hepinize günaydın. Ben bugün normalde thread konusunu anlatacaktım. Geçen hafta biz random access failleri bitirmiştik, örneklerini yapmıştık. Fakat Yunus Hoca'nın müdekil ile alakalı bir görevi varmış. Kendisi bugün ders yapamayacağını söyledi. Ders yapamayacağı için de gelecek uygulama ve gelecek haftaki laboratuvar.
+
+5
+00:09:02,707 --> 00:09:29,087
+Biraz noksan kalacaktı. Böyle bir çözüm ürettik. Ben kısaca random access faalileri hızlıca bitireceğim. Ondan sonra birkaç örnek yapacağız. Dolayısıyla threadler haftaya kalmış olur. Bir de başka örnekler yapacaktım. O haftaya yapacağım LinkedIn liste örneği, Binary Tree örneği falan vardı. Onu bu haftaya çektim. Sıralaması mühim değil zaten.
+
+6
+00:09:29,971 --> 00:09:39,312
+Dolayısıyla hem diğer grubun konu eksiği kalmamış olacak hem de çözeceğimiz örnekleri bu haftadan çözmüş oluruz. Şöyle ekranımızı paylaşalım.
+
+7
+00:09:44,755 --> 00:09:46,596
+Slide görünüyor değil mi arkadaşlar?
+
+8
+00:09:50,868 --> 00:09:51,948
+Bir de şey sorayım.
+
+9
+00:09:52,228 --> 00:09:52,908
+Görünüyor hocam.
+
+10
+00:09:54,048 --> 00:09:56,528
+Bugün lojik sınavınız saat kaçta?
+
+11
+00:10:01,587 --> 00:10:28,927
+Bir de hocam. Tam bir de anladım. O zaman şöyle bir şey yaparız. Saat 11'e kadar falan bitirmeye çalışırım. Belki 11 çeyrek geçe falan yeter. Bundaki sebep de şu, uzaktan okula gelme gereği bir an olabilir. Herkes yani okulun yakınında olmayabilir. Gelmek isteyenlere de sınava yetişmek adına fırsat vermek gerekiyor.
+
+12
+00:10:29,524 --> 00:10:34,224
+11.25 en geç bitiririm. Ben uzatırsam da haber verin lütfen.
+
+13
+00:10:34,963 --> 00:10:39,683
+Şimdi, Random Access Pay'leri hızlıca bir şöyle izah edeyim.
+
+14
+00:10:39,683 --> 00:10:42,683
+Bir dakika, şu şeyi de ayarlayalım.
+
+15
+00:10:46,259 --> 00:10:54,259
+Normalde arkadaşlar bir dosyaya erişim sağladığımızda File Position Indicator'ımız vardı.
+
+16
+00:10:54,259 --> 00:10:56,259
+Biz fprintf
+
+17
+00:10:59,572 --> 00:11:11,011
+Ondan sonra fscanf, fgetc, fputc, ondan sonra getc, getc, ondan sonra fgetc.
+
+18
+00:11:11,831 --> 00:11:17,632
+Bir karakter okuyup, bir satır okuyup veri çekebiliyoruz veya veri yazabiliyoruz.
+
+19
+00:11:17,632 --> 00:11:26,032
+Fakat bu işi yaparken file position indicator, eğer şunu dosya olarak kabul edersek, ilk başta dosyanın başına konumlanıyor.
+
+20
+00:11:26,515 --> 00:11:37,995
+Daha sonra bir satır okuduğumuzda o satırın sonuna giriyor. Veya bir String okuduğumuzda o String'in uzunluğu kadar gidiyor. Ve bunu geri alamıyorsunuz.
+
+21
+00:11:37,995 --> 00:11:46,715
+Bir sonraki yapacağınız okuma ve yazma nereden kalıyor? File Position Indicator en son neredeyse oradan devam edecek.
+
+22
+00:11:46,715 --> 00:11:53,995
+Şimdi bu çok dezavantajlı bir problem. İlk başta belki kolay gibi geliyor da.
+
+23
+00:11:54,292 --> 00:12:02,932
+Verilerimizin değiştirilmesi, güncellenmesi, silinmesi, yani veri tabanaki tarzı uygulamalarda işi zorlaştıran bir şey.
+
+24
+00:12:03,992 --> 00:12:08,512
+Bir de verilerin ayırt edilmesi zaman zaman güçleşebiliyor.
+
+25
+00:12:08,512 --> 00:12:11,951
+Diyoruz ki verileri virgüllerle ayıralım, noktalı virgüllerle ayıralım.
+
+26
+00:12:13,831 --> 00:12:18,512
+İlk başlarda deneysel veriler gibi durumlarda işe yaramış ama...
+
+27
+00:12:18,803 --> 00:12:36,483
+Veri tavanı tarzı uygulamalara baktığımızda çok verimli olmadığı anlaşılıyor. Bunun yerine random access ile istediğimiz yerden bir veri yere ulaşıp, o ulaştığımız yerden okuma veya yazma yapma daha kolay hale geliyor ve birçok uygulamayı rahat yapabiliriz.
+
+28
+00:12:36,483 --> 00:12:43,923
+Yine aynı fonksiyonları kullanacağız. Yani yine F-Ray'de kullanacağız veya F-Ray'de kullanacağız. Dünkü laboratuvarda zaten bunun bir örneğini göstermiştim.
+
+29
+00:12:44,148 --> 00:12:48,508
+Ama burada File Position Indicator'ı istediğimiz yere konumlandırabiliyoruz.
+
+30
+00:12:49,388 --> 00:12:52,128
+Bunun da temelde tek bir fonksiyonu var. Aslında F-seek.
+
+31
+00:12:53,048 --> 00:12:57,388
+Yardımcı fonksiyon bir F-ter var, bir de Rewind var. Birazdan örneklerini göstereceğiz.
+
+32
+00:12:58,067 --> 00:13:03,148
+İstediğimiz yere bu File Position Indicator'ı yönlendirebiliyoruz.
+
+33
+00:13:03,635 --> 00:13:23,755
+Sıralı erişim nasıldı? Bir dosyanın başına geldiysek, ilk başta dışarıdayız. Önce birinci kayıt, sonra ikinci kayıt. Bu şekilde sıralı erişim devam edip gidiyordu. Random Aksis'te ise nereye gidelim? Önce ikinci kayıda gidelim. İkinci kayıttan beşe gidelim. Beşten başka bir yere, dokuza gidelim. Oradan geriye gelirim. Bu hareketi çok rahat yapabilmek mümkün.
+
+34
+00:13:25,755 --> 00:13:31,135
+Burada sıralı erişim yaparken kullandığımız dosya formatı genellikle text formatlar oluyor.
+
+35
+00:13:31,567 --> 00:13:52,788
+Ve belli ayraçlar kullanmamız gerekiyor. İşte virgül gibi. Çünkü mantıksal olarak sıralı bir erişim yaparken o sıraları karıştırmamak adına virgül, herhangi bir işaret, noktalı virgül falan kullanıyoruz. Fakat burada böyle bir şeye gerek yok. Hangi türden veriniz olursa olsun. Genellikle burada structure'ları ve karakter dizilerini falan kullanacağız.
+
+36
+00:13:53,491 --> 00:14:11,331
+Bunlar belli bir düzenle zaten yerleşmiş oluyor. Dolayısıyla araya bir ayrak koymanın mantığı yok. Çünkü SIDOS dediğimiz şey, C tarafında bize bir veri yapısının boyutunu veriyordu. İşte bu boyuta göre bütün kayıtlar yerli yerine yerleşecek.
+
+37
+00:14:12,551 --> 00:14:17,412
+Bu fonksiyonlar, dedik ki işte temelde 3 tane. Birincisi F-C fonksiyonu.
+
+38
+00:14:18,067 --> 00:14:45,468
+File Position Indicator'nızı dosyanın üzerinde istediğiniz yere nereyi belirtiyorsunuz oraya yönlendiriyor. Oradan istediğiniz okuma veya yazma işlemini yapıyorsunuz. Şimdi bunun üç tane parametresi var. Birincisi hangi dosya üzerinde işlem yapıyorsanız bunun ilgili File Point'ını buraya yazıyoruz. Sonra bir Offset dediğimiz bir şey var. Bu Offset ne kadarlık veri okunacağını söylüyor. İşte 10 tane byte oku, 20 tane byte oku gibi.
+
+39
+00:14:46,611 --> 00:14:49,011
+Bu şeye gelecek.
+
+40
+00:14:49,971 --> 00:14:54,091
+Ve Vance dediğimiz nereden itibaren şey olacak?
+
+41
+00:14:54,091 --> 00:14:59,511
+Pardon, şu Oxide dediğim şey hangi pilot oluşun indikator bulunan yerden nereye gidecek?
+
+42
+00:14:59,932 --> 00:15:02,731
+Biraz önce bit sayısı, byte sayısı olarak söyledim. Yanlış dedim.
+
+43
+00:15:03,631 --> 00:15:04,351
+Nereye gidecek?
+
+44
+00:15:05,172 --> 00:15:08,791
+Ve nereden nereye gideceğini de şu değerle veriyoruz.
+
+45
+00:15:08,991 --> 00:15:11,791
+Örneğin, birazdan birkaç örnek de var şeydi tablo olarak.
+
+46
+00:15:12,628 --> 00:15:30,448
+Şurası artı olabilir, eksi olabilir. Artı beş birim ileriye git, eksi beş birim geriye git diyebilirsiniz. Ve bu bulunduğunuz konumu şurada ayarlıyorsunuz. Şunu söyledik, bir file pointer olduğunu ifade ettik. Bu arkadaşlar işte karakter cinsinden negatif de olabilen bir offset diyebilir.
+
+47
+00:15:31,908 --> 00:15:35,927
+Binary dosyalarda number of byte'a karşılık geliyor. Text dosyalarda.
+
+48
+00:15:36,403 --> 00:15:46,344
+Sıfır veya bir eftel tarafından dönülen bir değere karşılık gerçek. Örneğin, artı beş birim ileriye git veya sekiz birim geriye git gibi şeyler söyleyeceğiz.
+
+49
+00:15:47,244 --> 00:15:53,004
+Vence dediğimiz şey de arkadaşlar, başlangıç pozisyonunu ifade ediyor. Nereden ifadesi zaten bununla ilgili.
+
+50
+00:15:53,004 --> 00:16:01,844
+From which dediğimiz şey. Bulunduğumuz yerden itibaren yapmak istiyorsak, seek karıntı kullanacağız.
+
+51
+00:16:02,644 --> 00:16:08,744
+Dosyanın başından itibaren konumlandırmak istiyorsak, yani en başa dön, oradan konumlandır.
+
+52
+00:16:09,264 --> 00:16:13,584
+Tabi burada en başa dönünce negatif bir şey kullanamayız. Mesela x5'e izin vermek.
+
+53
+00:16:13,584 --> 00:16:19,564
+Çünkü file position indicator zaten dosyanın başında. Bunun öncesi diye bir şey yok. O zaman hata alırız.
+
+54
+00:16:20,484 --> 00:16:22,524
+Burada pozitif değerler kullanılıyor.
+
+55
+00:16:24,423 --> 00:16:27,004
+Seek current dediğimiz bulunduğumuz yer.
+
+56
+00:16:27,443 --> 00:16:41,104
+Şu da dosyanın sonuna git. Tabi burada da negatif değerler kullanacağız. İşte artı üç gibi bir şey kullanamayız. En sonuna gittiysek oradan geriye doğru veracağız. Bu sayede istediğimiz noktaya erişmek mümkün olacak.
+
+57
+00:16:42,104 --> 00:16:51,604
+Şimdi bazı örnekler var bakalım. İşte diyor ki şu dosya üzerinde dosyanın başına git. Dosyanın başından itibaren on karakter ileriye git.
+
+58
+00:16:52,275 --> 00:17:05,775
+Şimdi burada stream dediğimiz şeyler, fc fonksiyonu da diziler gibi sıfırıncı pozisyondan başlıyor. Siz ona gittiğinizde aslında on birinci karaktere erişim sağlıyorsunuz. Bu bilgiyi, bu detayı unutmamak gerekiyor.
+
+59
+00:17:07,175 --> 00:17:12,675
+Dosyanın başından itibaren onuncu indisteki noktaya bizi yönlendiriyor bu şey.
+
+60
+00:17:13,491 --> 00:17:32,632
+Tabi burada şunlara dikkat etmek gerekiyor. Biraz önce de söyledik. Yani dosyanın dışına taşmamak adına eğer seek end kullanıyorsak böyle bir şey yapamayız. Dışına taşı. Veya seek start dersek, beginning dersek bu negatif bir değerle birlikte kullanılmayacak.
+
+61
+00:17:33,875 --> 00:17:59,016
+Burada bazı şeyleri kolaylaştırmak adına işte mesela Seek Current için F-Tel fonksiyonunu da kullanabilirsiniz. Bu size File Position Indicator'ın dosyanın neresinde olduğunu söyleyen bir kolaylık. Sadece size bir değer döndürüyor. İşte buraya bir File Position şeyi kullanacağız. Şimdi örnekleri de var, kod örnekleri. Oradan da bakarız. F-Tel ile birlikte kullanılabilir bir fonksiyondur arkadaşlar.
+
+62
+00:18:00,403 --> 00:18:19,824
+Şimdi şurada bazı kod örneklerini hızlıca inceleyelim. Ayrıca kodların içerisine de gireceğiz. İlk başta eftel ile başlayalım. Sizin nerede bulunduğunuzu söylüyor. Buraya bir file pointer veriyorsunuz. Ve o size bir integer türünde position direi ver. Şu konu inceleyelim. Herhalde daha rahat anlaşılır.
+
+63
+00:18:20,692 --> 00:18:31,451
+Ve buradaki veri yapılarımızın hepsi ya bir structure ya bir karakter dizisi olacağı için bakın hiç şeylerle uğraşmayacağız. İşte noktalı virgül mü varmış, başka bir şey mi varmış, onlarla uğraşmayacağız.
+
+64
+00:18:32,211 --> 00:18:36,811
+Bir kısmı geçen haftaki kodlar olduğu için, şimdi örneğin şöyle bir text dosyam var arkadaşlar.
+
+65
+00:18:37,072 --> 00:18:42,192
+Buraya şey diyelim, bu bir text dosyasıdır diyelim.
+
+66
+00:18:42,971 --> 00:18:44,491
+Bunu böyle kaydediyorum.
+
+67
+00:18:47,311 --> 00:18:48,331
+Eftel.
+
+68
+00:18:48,531 --> 00:18:50,531
+Geçen haftaki şuna açalım.
+
+69
+00:18:52,031 --> 00:18:54,031
+Dosyayı okumak için açıyoruz.
+
+70
+00:18:54,031 --> 00:18:56,031
+Yoksa dosya açılamadı diyoruz.
+
+71
+00:18:56,031 --> 00:19:03,531
+Şimdi ftel file pointer'ımı gönderdim de, şu an bana 0 değerini gönderecek.
+
+72
+00:19:04,031 --> 00:19:06,031
+Sonra diyorum ki bir fread yap.
+
+73
+00:19:06,031 --> 00:19:10,531
+Bu fread bir karakter var şurada.
+
+74
+00:19:10,531 --> 00:19:13,031
+Bu karakterin bulunduğu yerden itibaren...
+
+75
+00:19:13,587 --> 00:19:25,587
+Bir tane karakter okuyacak, size of car kadar. Bir defa okuyacak. Bu işlem sürekli devam edecek. Okunan karakter ve bunun pozisyonu şurada ekrana yazdırılıyor.
+
+76
+00:19:26,587 --> 00:19:33,587
+Daha sonra ne yapıyoruz? Okumanın sonrasında Position Pointer'ımız nereye gelmiş? Buna bakıyoruz.
+
+77
+00:19:35,359 --> 00:20:01,539
+Side of file, dosyanın acaba kaç tane şeyi var? Şimdi bu aynı değeri vereceği için aslında dosyada kaç tane karakter olduğunu ifade edebiliyorsunuz. Çalıştıralım. Bu işte ilk başta sıfırıncı karakterdeymiş. İşte beşe geldiğinde bu bir dedi. İşte şuradaki şeyi okudu. Sonra bir beş daha ileri gitti. R işte test dedi. Tabii şunlarda bozulmalarlar çünkü oradaki verilerimiz.
+
+78
+00:20:01,940 --> 00:20:10,620
+Normal bir tekst dosyası değil artık. Bu binary formatta geliyor. Onlar normal bir şekilde bu karakter bozulması olacak. Bunu da yapacak bir şey yok.
+
+79
+00:20:11,340 --> 00:20:20,200
+Dosyanın okunması sonrasında 24. karaktere kadar geldiğini söylüyor. Bunu bir yardımcı fonksiyon gibi düşünün.
+
+80
+00:20:21,200 --> 00:20:27,039
+Karakter File Position Indicator'ın nerede olduğunu öğrenmek istediğimizde kullanacağımız basit bir fonksiyon.
+
+81
+00:20:27,760 --> 00:20:28,960
+Yok bir şey yok.
+
+82
+00:20:29,619 --> 00:20:30,619
+Devam edelim.
+
+83
+00:20:32,299 --> 00:20:39,619
+Şimdi bunu da kolaylaştıran, bunun da özelleştirilmiş, pardon F-seek'in daha özelleştirilmiş hali, rewind fonksiyonu.
+
+84
+00:20:40,219 --> 00:20:48,619
+Sizin File Position Indicator'nızı, dosyanın neresinde olursanız alıyor, en başa konumlandırıyor.
+
+85
+00:20:49,019 --> 00:20:57,019
+Yani yaptığı şey bu. Bazen en başa tekrardan geri dönmek için F-seek falan kullanmaya gerek yok. Doğrudan bunu yazarsınız, çalışır.
+
+86
+00:20:57,523 --> 00:20:58,723
+Onu da şuradan bakalım.
+
+87
+00:21:03,604 --> 00:21:09,064
+Yine aynı test dosyam var. İlk başta ilk konumunu söyledim ve karakterleri okudum.
+
+88
+00:21:09,664 --> 00:21:16,903
+Şimdi karakterleri okuduktan sonra işte burada birer karakter birer karakter okuyorum bakın ve ekrana yazdırıyorum.
+
+89
+00:21:16,903 --> 00:21:21,423
+Bu belli bir noktaya konumlanıyor. Sonra rewind dediğimde dosyanın başına geliyor.
+
+90
+00:21:21,604 --> 00:21:26,264
+Tekrar oku dediğimde tabii burada yine bir karakter okuyacak ve okunan karakter yazacak.
+
+91
+00:21:26,963 --> 00:21:28,564
+Sonra size biz şöyle bir şey göreceğiz.
+
+92
+00:21:29,556 --> 00:21:55,755
+İlk başta 0. konumdayız. Şu aradaki I'lar Türkçe karakter sorunundan dolayı bu şekilde yazılıyor. Sonra son pointer'ımız 24. karaktere kadar geldik. Sonra dosyanın başına geldiğimizde o başındaki ilk karakteri şurada B olarak okuyoruz bakın. Ve B'yi okuduktan sonra bir ilerliyor. Daha sonra karakter bilgisini yazdırıyor. Bu şekilde.
+
+93
+00:21:56,307 --> 00:22:03,628
+0. karakterden 1. karaktere geçiş yapmış oluyoruz. Bu da yine kolaylaştırıcı bir şey.
+
+94
+00:22:03,628 --> 00:22:11,867
+Aslında F-ZEK ile biz çoğu işimizi yapacağız. Buna dikkat edelim.
+
+95
+00:22:15,867 --> 00:22:21,068
+Şu kullanımda da, F-ZEK fonksiyonu kullanımda da az önce de söylediğimiz gibi.
+
+96
+00:22:21,299 --> 00:22:37,740
+Bir orijin noktamız var. Buna biraz önce Vance demiştik. Orijinden ne kadar ileriye veya geriye gideceğimizi şurada ifade ediyoruz ve hangi dosya üzerinde gideceğimizi söylüyoruz. Ondan sonra iş f-read'e, f-ride, f-scan-epe, f-print-epe artık hangi fonksiyonu kullanmak isterseniz kullanabilirsiniz.
+
+97
+00:22:37,740 --> 00:22:46,639
+Dünkü laboratuvar örneğinde biz hatırlarsanız resmi f-get-z ile okuduk.
+
+98
+00:22:46,771 --> 00:22:59,751
+Dedik ki bu şeydir, f right ile yazmıştık. Çok bir şey fark etmiyor. Burada da aynı şeyi yapabiliriz. Şu örneği de inceleyelim. Daha kapsamlı örnek birazdan gelecek.
+
+99
+00:23:03,923 --> 00:23:24,104
+Fseek. Anlaşılmayan bir şey varsa sorun arkadaşlar. Şimdi Fseek fonksiyonunu ben Text dosyası üzerinde şöyle bir Structure oluşturdum. İşte kişinin adı var, ID'si var. Bakın burada artık blok bir şekilde okuma yazma yapabilir duruma geliyor.
+
+100
+00:23:27,059 --> 00:23:47,059
+Bu blokun size'ını elde edebileceğimiz için, işte bu 5 tane karakter 5 byte, integer da 4 byte, yani şunun kendisi 9 byte. Biz 9 byte, 9 byte dosyada yer ayırarak, herhangi bir virgül gibi ayrıca gerek duymayarak çok rahat verilerimizi organize edebileceğiz. Okuma yapacağız, yazma yapacağız falan.
+
+101
+00:23:47,059 --> 00:23:49,059
+Şimdi test dosyam var.
+
+102
+00:23:50,099 --> 00:24:17,500
+Diyorum ki ilk başta bu dosyan dosyanın başına konumlandırsın. Bunun yerine biz rewind file position indicator yazabilirdik. Sonra diyorum ki buradan bir şey oku. Okuyacağım şey OGR isminde bir tane OGR türünde bir tane temp değişkenim var. Bu T'nin içerisine bir tane size of OGR kadar
+
+103
+00:24:17,971 --> 00:24:44,471
+Byte dizisi al ve bunu bir defa yap ve dosyadan al. Şimdi bu bir test dosyasıdır. Dediğimiz şey vardı ya şurada. Şuraya gelelim teste. Hatta şurayı Türkçe karakter yapalım da. Dosyası bir diyelim. Ne yapacak? Dokuz tane karakter size of'u kadar. Şeyin size of'u kadar. Buradan okuyacak.
+
+104
+00:24:44,980 --> 00:25:07,639
+Bunun ilk 5 byte'ını şuradaki değeri alacak. Kalan 9 tane byte'dan kalan 4 byte'da bu ID değerini alacak. Hocam yani bu mantıklı bir şey mi? Mantıklı bir şey olsun diye değil. Dosyanız ne olursa olsun siz buradaki kullandığınız veri yapısına göre veri okuyabilirsiniz. Bunun için söylüyorum. Yazarken de aynı şey olacak.
+
+105
+00:25:08,115 --> 00:25:31,096
+Burada bir şey okuduk ve bunun name alanına, id alanına ekrana yazıyoruz. Bakın bu bir byte dizisi. 9 byte'i istesem ben integer'a da çevirebilirdim. O 0 ve 1'lerin sayısal karşılığı. Neyse ona karşılık girelim. Ama yaptığım şey sadece veriyi okumak. Hiçbir yerde virgül kontrolü yapmadım. İşte okuduğum yer acaba virgül müdür, nokta mıdır ona bakmadım.
+
+106
+00:25:31,700 --> 00:25:58,299
+Dün mesela bu ki hocanız örnek yapmıştı. Verileri okurken string'i tokenize yapıyordunuz işte projede olduğu gibi. Onlara bir şey gerek duymadık. Daha sonra gidiyorum bir tane daha okuyorum. Şimdi bir tane daha okuyunca ne yapacak? İlk dokuzu şurada okuduk ve şu an File Position Indicator'mı dokuzuncu noktada, dokuzuncu konumda. Sonra buradan itibaren bir dokuz daha okuyacak. Ve burada yine aynı şeyleri aynı noktaya, aynı veri yapısına alıyoruz. Tekrar bakacağız.
+
+107
+00:25:58,771 --> 00:26:24,291
+Şimdi şunu bir çalıştıralım önce. Bakın bu bir test dedi. Sonra geri kalan kısımları bir işte araya ben tıra tıra koymuştum şurada olduğu gibi. Onu bir integra çevirdi ve bu çevirdiği integrenin sayısal karşılığı bunu getirdi. Sonra bir daha okuduk. Hatta şunu arada bir şey yapalım arkadaşlar. Ayrı olsun.
+
+108
+00:26:27,667 --> 00:26:46,967
+Dosyasıdır deyip kalan şeyleri okudu. Mesela orada kalan nokta vardı. Onu mesela bir t'ye çevirdi. Orada çünkü bir karakter var, boşluk olarak da. Bunlar normal şeyler. Sonra kalan kısmı da bir integer'a çevirdi. Bu şekilde okumuş oldum.
+
+109
+00:26:47,635 --> 00:27:11,135
+Tabii bu örnek üzerinde yani şuradaki veriler çok anlamlı gelmeyebilir. Bunda sıkıntı yok ama bunu birazdan daha anlamlı hale getireceğiz. Ve herhangi bir böyle işte virgül gibi ne bileyim slash gibi bir şey kullanmayacağız. Aynı şeyi şuradaki kodu açalım. Bakın şu şekilde de yapabiliriz. Ben ilk başta dosyanın başına gideyim.
+
+110
+00:27:12,135 --> 00:27:13,236
+Rewind diyeyim.
+
+111
+00:27:15,796 --> 00:27:28,556
+İstersem şunu da kullanabilirdim. Hiçbir şey fark edin. Burada dosyanın başına gittim. Burada bir karakter okuyorum. Dosyanın sonuna gelip gelmediğimizi burada kontrol ediyoruz. Okuduğum karakteri ekrana yazdırıyorum.
+
+112
+00:27:28,556 --> 00:27:39,836
+Tabi bu GetSea'den çok farkı olan bir şeydir ama ne yaptık? Şuraya ff yazacağız. Random Access File kullandık.
+
+113
+00:27:40,180 --> 00:27:48,480
+Şurada bir değişiklik yapacağım. Bakın bu bir test dosyası dedi. Mesela gelelim şuraya. Şunun öncesinde bir panikrafik diyelim.
+
+114
+00:27:52,788 --> 00:28:00,627
+Bir tane değişken tanımlıyorum. İntajer değişken. X eşittir, sıfır olsun.
+
+115
+00:28:02,487 --> 00:28:13,407
+Şimdi şu dosya okuma işlemini şurada şöyle biraz değiştireceğim. İlk karakteri okutun. F seek diyorum. File Position Indicator'ımı vereyim.
+
+116
+00:28:15,288 --> 00:28:19,087
+Şurada da X artı eşittir 2 diyorum.
+
+117
+00:28:22,771 --> 00:28:35,651
+X'i burada yazacağım arkadaşlar. Ve bulunduğum konumdan itibaren yazacağım. Yani şuraya F'den diyebiliriz. Veya C karıntı söyleyebiliriz. Mesela File Pointer diyelim.
+
+118
+00:28:37,351 --> 00:28:50,331
+Bulunduğum şeyde bir okudum, sıfırıncı karakteri okudum. Sonra iki ileri gidiyorum. Ondan sonra iki ileri gideceğim. Ve burada ne olacak? Birer birer birer mi atlayacağız? Bir bakalım.
+
+119
+00:28:50,836 --> 00:28:54,036
+İşte bir dakika.
+
+120
+00:28:56,036 --> 00:28:57,996
+Backslash Enderic.
+
+121
+00:29:01,299 --> 00:29:02,251
+Ayrıca.
+
+122
+00:29:05,491 --> 00:29:06,491
+İki, iki, iki.
+
+123
+00:29:09,491 --> 00:29:10,991
+Şurada bir hatamız mı var?
+
+124
+00:29:36,019 --> 00:29:43,019
+Evet, bu bey. Niye bey? İkişer ikişer fazla madde var.
+
+125
+00:29:46,771 --> 00:30:11,711
+Bulunan konumdan iki şeye gittiği için, birer birer fazla gittiği için tabi bu şekilde alması normal. Bakın ne yapıyor? İşte B'yi aldı. Ondan sonra bulunan konumdan bir nokta ileriye gittik. Sonra diğerine attı. O U'yu almadı. Sonra diğerine geçti. Sonra gitti bir daha okudu. Bu şekilde atlayatlayan konumlandırma yapabilirsiniz.
+
+126
+00:30:12,079 --> 00:30:17,319
+Tabi bu önce bir atlıyor, sonra iki atlıyor, sonra üç atlıyor. Daha az sayıda şey görüyoruz.
+
+127
+00:30:17,319 --> 00:30:30,199
+Böyle bir şey düşünelim. Mesela şurada artı bir desek hep veya artı iki diyelim. O zaman istediğimiz şey olabilir. Birer birer atlaya atlaya şu şekilde gösterebiliriz.
+
+128
+00:30:31,339 --> 00:30:35,499
+Bu bize bir kolaylık sağlayacak.
+
+129
+00:30:36,211 --> 00:30:47,611
+Üç tane temel fonksiyon var ama hepsi aslında şunun üzerinden yürüyecek arkadaşlar. Siz ne yapmak istiyorsanız yapacağınız her şeyi bunu kullanarak yapacaksınız. Diğer iki tanesi yardımcı fonksiyonlar.
+
+130
+00:30:47,611 --> 00:30:58,811
+Bizim asıl örneğimiz, bunu daha anlamlı hale getirmek için, bir bizim şey örneğimiz var, şurada Random Access Example örneğimiz var. Ona gelmeden ben ekstra bir örnek yapıyorum.
+
+131
+00:30:59,059 --> 00:31:23,740
+Daha anlaşılır. Şimdi şurada bazı örnekler var. Buna da bakalım. Mesela bu dosyanın en başına git. Şu sonundan itibaren yapacaksın diyoruz. Şu sıfırıncı olduğunda yani sıfır baştaki demek. En iki sondaki demek. Dosyanın başına git. Ama başından itibaren en bay ileriye git. Yani en artı birinci bayta götürüyoruz.
+
+132
+00:31:24,243 --> 00:31:38,403
+Bulunduğum konumdan en bayt ileriye git demek. Bulunduğum konumdan en bayt geriye git. Gerideki noktaya konumdan. Dosyanın sonundan en bayt geriye git demektir. Bu örnekler herhalde anlaşılır olur.
+
+133
+00:31:38,403 --> 00:31:43,324
+Şimdi gelelim şu örneğe girmeden önce biz başka bir örnek göstereyim.
+
+134
+00:31:53,140 --> 00:32:05,120
+Diğer grup ders notlarını benim paylaştığım şeye erişebiliyor musunuz arkadaşlar? Diğer gruptan arkadaşlarım. Bir Google Drive linki var. Oradan erişiminiz var mı?
+
+135
+00:32:11,539 --> 00:32:13,539
+diğer gruptan birileri buradan pek.
+
+136
+00:32:22,771 --> 00:32:25,192
+Evet. Yok mu kimse diğer modda?
+
+137
+00:32:27,771 --> 00:32:28,531
+Peki.
+
+138
+00:32:29,872 --> 00:32:41,172
+Orada daha fazladan örnekler var. İşte bir kütüphane tarzı eklesi güncellenin olduğu. Burada biz kısmen yapacağız bir örnek. Daha detaylı isterseniz oradaki örneklere de bakabilirsiniz.
+
+139
+00:32:41,172 --> 00:32:46,091
+Zeytel'in örneklerini kullanmıştım. Şimdi yine bir dosyamız var.
+
+140
+00:32:46,708 --> 00:32:51,067
+Bu dosyamızın ismi Kayıtlar Dosyası. Şöyle dosyanın içerisinde bakalım.
+
+141
+00:32:52,147 --> 00:32:55,147
+Bu dosyanın içerisinde bakın şöyle anlamsız şeyler görüyoruz.
+
+142
+00:32:56,107 --> 00:32:57,688
+Halbuki bunların hepsinin bir anlamı var.
+
+143
+00:32:59,748 --> 00:33:05,508
+Bir şeyin öğrencinin adı, öğrendiğiniz soyadı ve ID bilgilerinin tam bir structure'ın var.
+
+144
+00:33:05,627 --> 00:33:11,847
+Ve ben bu structure üzerinde işte veri okuma, yazma, güncellemeyi dosya kullanarak yapmak istiyorum.
+
+145
+00:33:12,531 --> 00:33:24,651
+Önce fonksiyona girmeden, şunlara girmeden şöyle bir bakalım. Bir tane TMP içi boş olan, bir de boş olan bir tane daha değişkenim var. Bunlar yardımcı değişkenlerim.
+
+146
+00:33:25,932 --> 00:33:36,331
+Görün ki en tane öğrencinin verilerini tutacağım. Bunun için bellek de en tane öğrencinin, eni de şurada 10 almışım. Kullanıcıdan alabilirdim ama gerek yok. Bellek de yer açıyorum.
+
+147
+00:33:37,332 --> 00:34:01,451
+Ve burada record.txt dosyamı yazmak ve okumak için açmış oluyor. Şişiden işte bir isim, soy isim ve ID bilgilerini kullanıcından alıyorum. Fakat bu 10 tane kayıt uzun olduğu için ben burada rastgele karakterlerden oluşan isim, soy isim değişkenleri tutacağım. Onun için şurada bir TMP karakter dizim var 10 karaktere kadar.
+
+148
+00:34:02,099 --> 00:34:11,399
+ve bunları kişinin ad bilgisine ve soyad bilgisine bakın bir structure olarak kaydettim. Şimdi structure'ın her birisinde işte tmp dedik burada.
+
+149
+00:34:11,399 --> 00:34:21,559
+ad, id ve soy isim bilgileri var. Daha sonra diyorum ki bunu dosyaya yazdır. Şimdi dosyaya yazdırınca ne olacak? Şöyle bir şey açayım.
+
+150
+00:34:21,559 --> 00:34:29,819
+Yani şuraya yazmayı açayım. İşte bizim structure'ımızın boyutu nedir? Koddan da bakalım.
+
+151
+00:34:31,443 --> 00:34:44,064
+10 karakter burada var, 10 karakter burada var, 24 de buradan 24. Yani dosyaya siz 24 tane byte yazıyorsunuz. Sonra onun peşine bir 24 tane byte.
+
+152
+00:34:45,284 --> 00:34:58,903
+24 byte. 24 byte. Bu şekilde karakter kasarlarını yazıyoruz. Ve bunların her birisini ilk 10 byte'ına at, ikinci 10 byte'ına soyat.
+
+153
+00:34:59,231 --> 00:35:17,231
+Kalan dört bayrağında id olarak. Yani art, soyart, aynı. Niye böyle? Çünkü biliyoruz ki biz Structure değişkenlerinde değişkenler peş peşe gelecek. Anlamlanması o şekilde olacak. Aynen burada da oradakine uygun bir yapı gerçekleştiriliyor.
+
+154
+00:35:24,947 --> 00:35:36,847
+Ve dosyaya bütün veriler kaydedilmiş olacak. Sonra diyorum ki dosyayı, içerisindeki verileri ekrana yazdırmak için açmak istiyorum. Şu fonksiyona gideceğiz.
+
+155
+00:35:37,248 --> 00:35:48,207
+State 0 diye, birinci durum, 0. durum diye fonksiyona gitmişiz. Sonra dosyanın başına gitmişiz. Dosyayı okumaya başlamışız. Şuradan itibaren bir kapatalım önce.
+
+156
+00:35:49,207 --> 00:35:51,207
+Buralar biliyorsunuz.
+
+157
+00:35:52,788 --> 00:35:59,128
+Write ne yapıyor? Bir tane string alıyor, bir tane file pointer alıyor, açık olan bir file pointer ve bir end değeri alıyor arkadaşlar.
+
+158
+00:36:00,128 --> 00:36:05,668
+Şimdi dosyayı okumak için açacağız. Şimdi nasıl yazdık dosyaya? Nasıl yazdıysak ona göre okuyacağız.
+
+159
+00:36:05,668 --> 00:36:13,868
+Çünkü şu mantıkla dosyayı yazdık. Yani her biri de sizeof ogr olan en tane kaydı dosyaya kaydetmiş olduk.
+
+160
+00:36:14,208 --> 00:36:16,668
+Aslında dosyaya kaydedince şurada şeyleri görürsünüz.
+
+161
+00:36:20,019 --> 00:36:47,480
+Bakın şuradan şuraya bir structure var. Ondan sonra buradan itibaren şu karaktere kadar bir structure. Bir yerde bazı şeylerin anlamsız olmasından var. Çünkü bu binary file gibi çalışıyor. Sonra şunlar bir structure değişkeni. Bunlar bir structure değişkeni. Bundan 10 tane var bunun. Hatta bunun içerisine baktığımızda 24 tane, gerçi bir taneden fazla şey olmuş da, 24 tane 10, 240 tane byte olacaktır.
+
+162
+00:36:48,115 --> 00:36:55,855
+İçerisini önce bir temizleyelim bunu. Hatta dosyayı tamamen bir silelim. Daha bir gün olsun.
+
+163
+00:36:58,076 --> 00:37:05,275
+Şimdi çalıştırdığımda, Write List dediğimde dosyanın içerisini önce yazdık, daha sonra okuyoruz.
+
+164
+00:37:05,895 --> 00:37:12,956
+Okurken de diyorum ki File Position Indicator'ımı önce başa getir. Çünkü biz yazdık, yazdık, yazdık en sondayız.
+
+165
+00:37:13,588 --> 00:37:29,408
+Sonra baştan itibaren bir tane Structure kadar veri okuyorum. TMP dediğim şey burada oluşturduğum bir Structure değişken. Okuduğum bu şeyin ID'si 0'dan büyükse, mesela bunu yazmak zorunda değilim. Şimdi ID'si 0 olabilir. Bütün kayıtları oku diyelim şöyle.
+
+166
+00:37:41,427 --> 00:37:58,127
+Structure'ın tanımıyla birebir aynı. Bunu dünkü görüntü işleme örneğinde daha iyi anlamışsınız diye tahmin ediyorum. Normalde biz RGB diye bildiğimiz düzen, BMP'de BGR diye ifade ediyoruz. O zaman bizim Structure'ımız da BGR diye oluşturmamız gerekiyor.
+
+167
+00:37:59,867 --> 00:38:07,627
+Dolgu şu an için buna gerek yok. Yani bu tarz durumlarda zaten o dolguyu da buraya dahil ettiği için.
+
+168
+00:38:08,148 --> 00:38:34,568
+Herhangi bir sıkıntı olmuyor. Çünkü okunan veriler ilgili yerlere doğrudan kopyalanıyor. Onu şu an için kafaya takmaya gerek yok. Ne olacak? Burada okuduğumuz bir şeyi şu TMP'nin içerisinde kaydettik. Ben artık burada TMP'nin name alanına, surname alanına ve ID alanına erişip bunları istersen ekrana yazdırırım, istersen değiştiririm, üzerinde hesaplama yapabilirim gibi birçok şey yapabilir. Şimdi çalıştıralım.
+
+169
+00:38:35,411 --> 00:38:41,171
+Bakın önce dosyaya şunları rastgele karakterler olarak yazdırdım.
+
+170
+00:38:41,631 --> 00:38:46,192
+Ve dosyanın içerisinde okuduğumuzda ad, soyad ve id alanlarını bu şekilde elde ettik.
+
+171
+00:38:47,192 --> 00:38:50,411
+Elde ettikten sonra mesela ne yapabiliriz? Burada isme göre sıralama yapabiliriz.
+
+172
+00:38:50,451 --> 00:38:53,931
+Soyisme göre sıralama yapabiliriz gibi gibi birçok şey yapılabilir.
+
+173
+00:38:56,331 --> 00:39:00,231
+Şöyle dosyanın içerisine de şimdi bakalım. Dosyayı silmiştik biraz önce.
+
+174
+00:39:00,768 --> 00:39:21,708
+Record.txt'e bakın ne oldu? Burada bu veriler bu düzenle saklanmış oldu. Aslında dosya dediğim şey burada, biz bu notepad ekranda iki boyutlu bir şeymiş gibi görüyorsunuz. Görülebilir. Yani notepad++ açtığınızda. Ama bu mühim değil arkadaşlar. Dosya bir byte dizisi şeklinde düşüneceksiniz. Sıfırıncı byte şuradan itibaren başlıyor.
+
+175
+00:39:22,228 --> 00:39:29,908
+İşin sonunda da ne var? Endofile Deskriptörü var. Bunu bir dizi gibi düşünmek en doğru olalım.
+
+176
+00:39:29,908 --> 00:39:46,108
+Gelelim şuradaki kodun devamına. Diyorum ki dosyanın başına git ve bu sefer dosyadan yani şu dosya ptr dediğimiz şey şu alana.
+
+177
+00:39:46,420 --> 00:39:55,800
+Veri okuyacağız. Ama veriyi okurken n çarpı size of OGR kadar bir defa okur. Bu ne demek? Bu ne anlama geliyor?
+
+178
+00:40:01,619 --> 00:40:04,259
+O bu şekilde en tane okuyacağız.
+
+179
+00:40:04,359 --> 00:40:09,079
+Evet, tek bir seferde bütün bir dosyanın okunabileceğini burada görüyoruz.
+
+180
+00:40:09,319 --> 00:40:17,539
+Bakın güzel bir şey. Yani dosyaya en defa gidip gelmek gidip gelmek yerine aslında bir defa da alabilmek lazım.
+
+181
+00:40:17,539 --> 00:40:26,619
+Aynı şeyi şurada da yapabiliriz. Ben burada en elemanlı bir mallokta oluşturduğum diziyi doldursaydım.
+
+182
+00:40:26,771 --> 00:40:48,391
+Ve tek seferde, burada her defasında döngü içinde değil de, o doldurduğum diziyi tek seferde yazdıysaydım yine aynı şeydi. Burada ayrı ayrı yazdırdık ama burada tek seferde veriyi okuyacağız. Veriyi okuyunca nereye gidecek? PTR içerisine gidip. Daha sonra bu PTR'yi ekrana yazdıran bir fonksiyonum var. İşte bildiğimiz Structure içerisindeki verileri ekrana yazdırmayla alakalı.
+
+183
+00:40:49,568 --> 00:41:08,748
+Buraya gelmeden önce şunu da biraz önceki koddaki şeyi de göstereyim. Temp.id 0'dan büyükse, mesela diyelim ki 0'dan 1'de 4'den büyükse, ne yapıyoruz? Burada basit bir operasyonla id 4'den büyük olanlar.
+
+184
+00:41:09,043 --> 00:41:20,264
+Hani sizin örnek şeyde de var ya, projede kitap durum bilgisi rafta olanları listele, rafta olmayanları listele diyebilirsiniz. Burada böyle bir kontrol ile listelemede değiştirebilirsiniz.
+
+185
+00:41:21,184 --> 00:41:33,963
+Gelelim, şunu açalım tekrardan. Aynı kayıtları burada tekrar göreceğiz. Yaz fonksiyonuna geldiğimizde Structure verileri diye şöyle bakalım ve çalıştıralım.
+
+186
+00:41:34,900 --> 00:42:01,159
+Structure verileri buradaki şeyler doğrudan kopyalanır. Ve bu tek seferde erişimle yapılabilen güzel bir özellik. Bunu şu şekilde de alabilirdik. Bunu bir çarpı size of deyip n tane erişim yap dediğimizde bu da aynı sonucuya gelecek arkadaşlar. Gidecek n tane okuyup elde ettiği bütün verileri ptr içerisinde kaydedecek. Ama birincisini uygulamak.
+
+187
+00:42:01,503 --> 00:42:27,224
+Tek seferde bir işlem yapmak adına daha mantıklı ve makul olanı ikisini de kullanabilirsiniz. Ama şu hali bence daha güzel. Sonra diyorum ki bir kayıt güncellemesi yapalım. Örneğin kişinin id'sini alalım ve bu id'ye göre kişinin adını AAA diye değiştirelim. Şuradaki şeyi açayım. Kayıt silmeye ayrıca geleceğim.
+
+188
+00:42:27,731 --> 00:42:52,731
+Kayıt güncellemek için önce kaydı bulmamız gerekiyor arkadaşlar. Kaydı bulmak için de arama yaparken şuna bakacaksınız. Neye göre arama yapabilirsiniz? Burada ID'ye göre arama yapmak mantıklı bir şey. Hani kolaylaştırıcı. Niye? ID'ler bizde şurada 0, 1, 2, 3, 4 diye gidiyor. Biz burada işte üçüncü ID'ye, üçüncü kişiye git dediğimizde doğrudan...
+
+189
+00:42:53,364 --> 00:43:16,264
+File Position Indicator'ımızı fc ile çok rahat o kayda aktarabiliriz. Yani byte byte karakter işlem yapmaya gerek yok. Doğrudan en defa ilerle dediğimizde bunu yapacağız. Şimdi id bilgisine gireceğim. Bu id bilgisinin bir eksiği bizde 0, 1, 2, 3, 4 diye başlıyordu ya. Buna göre diyorum ki File Position Indicator'ımı güncelleyelim.
+
+190
+00:43:16,820 --> 00:43:41,520
+Dosyanın başına git. Dosyanın başından itibaren id-1x sizeofogere kadar byte ileriye git. Bu beni o id'ye sahip olan kaydın başına götürüyor. Daha sonra diyorum ki oradan kayıt oku. Yani şurada şöyle söyleyecek olursak işte şu arada bir kaydımız var. Bunun önünde ve sonunda bir sürü şeyler var.
+
+191
+00:43:42,132 --> 00:43:51,632
+Buraya geldim. Burada bir kayıt okuduğumuzda, bu File Position Indicator nereye gelecek? Artık şuraya gelecek.
+
+192
+00:43:51,632 --> 00:44:01,032
+Ama kaydı okuduk, bütün veriler elimizde. Tamam, güzel. Güncelleme yapmak için elimizde güzel bir fırsat var.
+
+193
+00:44:01,032 --> 00:44:07,832
+Okuduğumuz kaydı ekrana yazdırıyoruz. Diyorum ki mesela bu kişinin adını şu şekilde değiştir. Aa diyelim, şöyle yapalım.
+
+194
+00:44:08,179 --> 00:44:16,019
+Bu şekilde değiştir. Başka şeyler de yapabilirim. Sonra onu tekrar oraya yazmam lazım. İstersem diğer alanlarını da değiştirebilirdim. Mesela şunu alalım.
+
+195
+00:44:19,635 --> 00:44:20,635
+Örneğin diyelim.
+
+196
+00:44:23,635 --> 00:44:25,135
+Bu biraz fazla olur.
+
+197
+00:44:26,452 --> 00:44:46,432
+Şu şeylere, sınırlara dikkat etmek gerekiyor bunda. Onun için mesela veri tabanlarında veya bu tarz uygulamalarda isim alanı olabilecek en fazla nedir? 100 karakterse fazladan yazılır. Eğer siz az kullandısınız onu sistem ne yapıyor? Bir şekilde kompanze ediyor, optimize ediyor. Kullandığınız kadarını sisteme yansıtıyor.
+
+198
+00:44:54,036 --> 00:45:14,876
+10 diyelim yeterli olur şimdilik. Sonra diyorum ki şimdi ben bunları güncelleyeceksem, şimdi aynı kaydı güncelleyeceğim için ne yapmam lazım? Bulunduğum yerden geri gelmem lazım. O zaman File Position Indicator'ımı tekrar geri getiriyorum. Geri getirmek için de yani şuradaki kaydı, şurada yazdığım şeyi aynen tekrar yazacağım.
+
+199
+00:45:15,411 --> 00:45:41,551
+Bir şey bulunduğum yere tekrar geri gelin. Veya bulunduğum Seek Current diyebilirim. Yani şuraya şöyle de diyebilirim. Bulunduğun noktadan ne kadar geriye gel? Size of OGR'nin bir eksisi kadar, negatifi kadar geriye gel. Bir nokta geriye bizi getirecek. Sonra olduğun yere bir tane şu TMP isimli şeyi yaz. TMP'nin içerisinde ne var?
+
+200
+00:45:42,036 --> 00:46:06,816
+Name alanında aa var, öbüründe surname var. ID zaten değişmedi. Şunu kapatalım arkadaşlar. Daha sonra diyorum ki state1 dosyanın içerisinde tekrar yazdır. Artık burada neyi göreceğiz? Güncellenmiş kaydı görüyoruz. Şimdi şu write listin içerisindeki şu şartı kapatalım. Güncellemenin doğru yapıldığını görelim. Bir de şunu da kapatayım arkadaşlar.
+
+201
+00:46:09,588 --> 00:46:36,588
+Şunu da kapatalım. Aradaki güncellemenin doğru yapıldığını görelim. İşte bu bilgiler varmış. Kaçıncı kaydı güncellemek istiyorum? İşte sekizinci kaydı güncelleyelim. Sekizinci kayda geldiğimde ne oldu? A, A, A, B, B, B. Tabii biraz karakter taşma sorunları var. Şimdi onları düzeltiriz. Ne oldu? Oradaki kaydı güncellemek, güncellemiş olduk. Şunları mesela birer tane azaltırsak herhalde bununla alakalıydı.
+
+202
+00:46:37,043 --> 00:46:54,483
+tmp'nin id'si. Ha, burada şunu yapacağız. ID değeri duruyor. Tmp alanı boş olduğu için tmp.id diyelim. Şimdi oraya tmp'yi yazacağız. Yine aynı id değeri olacak. Şunu da güncelleyelim.
+
+203
+00:46:56,275 --> 00:47:11,795
+Yoksa 0 değerini verecektir. İşte 8. kayda git. 8. kaydın adı A, A, A oldu. B oldu. Aydı ise aynen kaldı. Mesela bunu başka bir şey yapabilir miydik? Yapabiliriz. Engel yüklemi 888 diyelim.
+
+204
+00:47:14,068 --> 00:47:30,688
+6. kayda git. 6. kayda bu şekilde ID ile değiştirebilirsin. Ama ID genellikle çok değiştirilmesi tavsiye edilmeyen, unik bir değer olduğu için ve genellikle autoincrement kitli için ID'ye çok müdahale etmezsiniz. Müdahale etmek istemediğiniz için de bunu ne yaparsınız? Burada ID olarak saklarsınız.
+
+205
+00:47:32,128 --> 00:47:36,108
+Peki, kayıt güncelleme de bu şekilde. Buraya kadar bir sorumuz var mı?
+
+206
+00:47:40,596 --> 00:48:03,476
+Kaydın silinmesini de hızlıca anlatalım. Şimdi kayıt silmek demek ne demek arkadaşlar? Bulunduğunuz dosyada, nerede olursanız olun, oradaki kaydın verilerini sileceksiniz. Şimdi bu veriler silince önceki kayıtlar, sonraki kayıtlar gelip bunları buraya kaydırmanıza gerek yok. Burada mesela boş bir idc-1 olan bir tane kayıt açmış olursunuz.
+
+207
+00:48:03,903 --> 00:48:27,364
+Belki bu dosyanın boyutunu size fazlaca gösterecektir ama bu kaydırma çok maliyetli bir şey olduğu için hesaplama açısından. Bellek bu kadar şey olmuş problem değil. Yani bunu bu şekilde düşünebilirsiniz. Bir kaydı silindiğinizde buradaki bütün kayıtlar gider. İşte IDC-1 olan, X2 olan veya belki başka bir karakter olan. Orada boş bir kayıt tutarsınız. Okuma yaparken de o kaydı dikkate almazsınız.
+
+208
+00:48:27,827 --> 00:48:52,367
+Mesela biraz önce bir if tane if şartı koymuştuk. Idsi 4'ten büyükse. İşte idsi eksi 1'e eşitse demek ki o boş bir kayıttır. Orada bir kayıt yoktur. Kayıt silindi gibi bir şey yapabiliriz. Yine ne yapıyorum? Diyorum ki önce id bilgisini kullanıcından aldım. Sonra diyorum ki onun bulunduğu kayda beni gönder. Bu kayda gittikten sonra oraya boş bir structure elemanı yazıyorum.
+
+209
+00:48:52,820 --> 00:49:14,160
+Bakın boş struktürü şurada tanımlamıştır empty olarak. Gelin bunun id'sine eksi bir verelim biz. Boş olduğunu göstermek için. Oraya id ise eksi bir olan ad ve soy ad alanı boş olan bir kayıt ekliyor. Dolayısıyla eski kayıt oradakiler silinmiş oldu. Şöyle bir şey de olmuyor. Bu da aklınıza gelmesin. İşte burada bir kayıt vardı hocam.
+
+210
+00:49:14,675 --> 00:49:40,476
+Ahmet Mehmet bir şey yazıyordu. Ben buraya geldim, eksi bir olan bir kayıt yazınca bu Ahmet Mehmet buraya falan shift ediliyor mu? Hayır, böyle bir şey yok. Bulunduğunuz yerdeki eski verilerin üzerine yazılıyor. Bunu bilmeniz yeterli. Dolayısıyla oradaki veriyi bir anlamda silmiş oluyorsunuz. Gayet açık burada. Daha sonra diyorum ki tekrar state 2 olarak şu right list fonksiyonunu çağırıyorum. Şu right list fonksiyonu artık şu şekilde değerlendirebiliriz.
+
+211
+00:49:40,916 --> 00:50:00,000
+İlk TMP'nin ID'si Different From, Eksi 1 ise bunları yazdır. Şimdi Eksi 1 ise ne yapacak? Artık onu yazmayacak. Çalıştır diyorum. İşte önce bir kayıt güncelleyelim. Yedinci kaydı güncelle. Yedinci kaydı işte şu şekilde.
+
+212
+00:50:00,000 --> 00:50:17,719
+Bu şekilde güncelledi. Güncelledikten sonra yedinci kayıt bu hale geldi. Silmek istediğimiz kayıtta ne olsun? Sekizinci kayıt olsun. Sekizinci kayıt yazdıktan sonra o kayıt da silinmiş oluyor. Bakın ekranda yazılmamış olması silinmemiş gibi düşünmeyin. Orada boş bir kayıt var ama biz ne yaptık? Onu yazdırırken.
+
+213
+00:50:18,112 --> 00:50:41,552
+Dikkate almadık. Program bu şekilde bitiyor. Program bitmeden dosyamı kapatıyorum. Bakın buraya gönderdiğim file pointerları burada kalmış vaziyette. Bunlara dikkat ederim. Şunlar mesela hala açık dosyalar. Bunlarda bir engel yok. İşim bittiğinde dosyayı kapatıyorum.
+
+214
+00:50:42,772 --> 00:50:44,612
+Buraya kadar bir sorumuz var mı?
+
+215
+00:50:56,244 --> 00:51:04,684
+Şimdi, Slide'ımızdaki örnek var. O da farklı bir yaklaşım kullanarak bir örnek oluşturuyor. Şimdi iki tane program göstereceğim.
+
+216
+00:51:05,384 --> 00:51:07,824
+Şimdi diyor ki, şu şekilde elinizde verilerimiz var.
+
+217
+00:51:10,064 --> 00:51:12,864
+Ve biz bu verileri işte ada göre sıralamak istiyoruz.
+
+218
+00:51:12,864 --> 00:51:17,344
+Bu verileri sıralamak demek, dosya içerisindeki verileri sıralamak demek, maliyetli bir şey.
+
+219
+00:51:17,464 --> 00:51:18,864
+Çünkü sıralamanın kendisi...
+
+220
+00:51:19,088 --> 00:51:36,668
+O en kare dersek bir maliyet. Bir de işte buradaki kaydı al, buraya gönder, oradakini al, başka bir yere gönder. Bu işi çok böyle zorlaştıran bir şey. Çünkü biz RAM üzerinde işlem yaparken belki biraz hızlıyız da hard disk üzerinde bu swap işlemleri çok çok daha yavaş bir işlemdir.
+
+221
+00:51:38,771 --> 00:51:53,592
+Buna farklı bir çözüm üreteceğiz. Diyoruz ki bir indeksleme yapalım. Bu indeksleme aslında veri tabanında anlatılan bir konu. Sıralamanın bir çeşidi gibi düşünebilirsiniz. Sıralama daha genel bir kavram. İndeksleme bunun bir özel versiyonu.
+
+222
+00:52:05,396 --> 00:52:09,756
+Şuradaki verilere ayrıca bir sütun ekleyelim ama bunu başka bir dosyada ekleyeceğiz.
+
+223
+00:52:09,756 --> 00:52:18,456
+Şu 0 no-lo indisde, bu 1 no-lo indisde. Sonra ben burada isme göre daha küçük bir dosyayı sıralayacağım.
+
+224
+00:52:18,456 --> 00:52:28,956
+Örneğin bunu isme göre sıraladığımda bu indisler yerde isteyecek. Bird başa gelecek. Bird'ün indis değeri şurada 1 olduğu için bu 1 burada olacak.
+
+225
+00:52:28,992 --> 00:52:45,412
+Ve bunu bir Structure üzerinde yapacağım. Yani dosyayı şey yapmayacağım ne derler. Birebir değiştirmeyeceğim. Structure'ı sıraladığımda şunlar otomatik olarak değişmiş olacak. Artık ben bunları dosyaya yazdırırken önce IDC1 olan kayda git.
+
+226
+00:52:57,076 --> 00:53:17,016
+İçerisindeki indis numaraları, benim biraz önceki örnekte nasıl fc ile id'ye göre konumlandırma yapıyordum. Bu da aynı şeyi yapacak. Başka bir şey yok. Şimdi structure'ı şurada hani göstermiş. Bundan sonraki kodlar bunu açıklamasam ama ben bunu doğrudan kod üzerinden çalıştıracağım.
+
+227
+00:53:17,472 --> 00:53:23,612
+Son olarak da burada File Management fonksiyonları var. Bunu da söyleyeyim. Ondan sonra slide'ı kapatalım.
+
+228
+00:53:23,612 --> 00:53:29,752
+Bir dosyayı isterseniz silebilirsiniz. Dosyaya yeni isim verebilirsiniz. Geçici bir dosya oluşturabilirsiniz.
+
+229
+00:53:29,940 --> 00:53:54,619
+Veya işte Temporary Name gibi bir Temporary Dosya oluşturabilirsiniz. Bunlar dosya yönetim fonksiyonları. İşletim sisteminden işletim sisteminde değişebilir. Çok fazla mühim şeyler değil. Yani bunlar basit uygulamalar. Ama bazı yerlerde şöyle kullanılıyor. İşte bir klasör altında bin tane dosyanız var. İsimleri çok karmakarışık. Siz bunlara belli bir sisteme göre isim vermek istiyorsunuz. İşte ne bileyim dosya, dosya sıfır, dosya bir.
+
+230
+00:53:55,507 --> 00:54:22,788
+Bu tarz şeylerde dosyanın mesela bir programla isimlendirmesini yapabilirsiniz. Eski dosyanın adını veriyorsunuz, yeni dosyanın adını alıyorsunuz. Eski dosyalarda mesela adını rahat bir şekilde alıp bir dizide saklama imkanınız var. O bin tane dosyanın adını bir şekilde bir diziye kaydedersiniz. Bunun da hazır fonksiyonları var. O fonksiyonda eski dosyanın adını, yenisini şu şekilde 0, 1, 2, 3, 4 değiştir. Bu tarz imkanlar mümkün.
+
+231
+00:54:23,507 --> 00:54:41,487
+Bunlara ayrıca bakarsınız. Şimdi şu makefile falan anlattım da zaman kalırsa dersin sonunda kısaca makefile'den bahsederim. Ama olmadı. Bunları gelecek hafta. Ben zaten kendi grubumda anlatmıştım. Çok mühim değil. Basit şeyler. Biz şu dosyaya bakalım. Ondan sonra ara vereceğim.
+
+232
+00:54:41,487 --> 00:54:46,487
+Şimdi burada iki tane program var. Bunları ayrı ayrı da düşünebiliriz.
+
+233
+00:54:47,280 --> 00:55:06,420
+Birincisi dosyayı oluşturma, daha sonra rastgele erişip sıralama fonksiyonu. Önce şuna bakalım. Yapacağınız şey arkadaşlar, önce bir structure tanıdımı. Kişinin adını, kimlik numarasını ve doğum tarihi bilgisini şurada saklıyoruz.
+
+234
+00:55:14,324 --> 00:55:19,704
+Şuradaki bitbitlara göre oluşuyor. Burayı da hesaplarsanız bir tane bunun size var.
+
+235
+00:55:21,403 --> 00:55:27,724
+Bu basit bir örnek. Dört tane kayıt gir. Farklı isimler girdik.
+
+236
+00:55:30,224 --> 00:55:37,344
+Bu bilgiler girildikten sonra bu kayıtları dosyaya yazıyoruz ve programı kapatıyoruz.
+
+237
+00:55:37,344 --> 00:55:39,684
+Dosyamızın adı recourse.dat.
+
+238
+00:55:40,307 --> 00:55:43,307
+Şöyle bakalım, içerisine şu an bir veri var mıymış?
+
+239
+00:55:46,307 --> 00:55:47,307
+Şuradan alalım.
+
+240
+00:55:48,307 --> 00:55:54,307
+İşte Ali diye bir şey varmış önceden girilen. Daha sonra Nal karakterleri var. Bakın bunları biz anlamıyoruz, anlamamız da gerekmiyor.
+
+241
+00:55:55,307 --> 00:56:00,307
+Program içerisinde doğru bir şekilde erişelim, verileri güncelleyelim, ekleyelim, silir, silelim. O bizim için yeterli.
+
+242
+00:56:01,307 --> 00:56:04,307
+Tamam. Ben bunu şimdi sileyim.
+
+243
+00:56:08,467 --> 00:56:11,588
+Ve bu programın yapacağı şey bu kadar. Şimdi tekrardan bir çalıştıralım.
+
+244
+00:56:14,708 --> 00:56:17,327
+İşte birinci kişinin adı Ayşe olsun.
+
+245
+00:56:18,867 --> 00:56:20,628
+Tc'si 1.2.3.4 olsun.
+
+246
+00:56:22,387 --> 00:56:24,467
+İşte birthday'si nasıl girecek?
+
+247
+00:56:24,588 --> 00:56:25,487
+Ha day günü olarak.
+
+248
+00:56:26,288 --> 00:56:26,867
+Bir olsun.
+
+249
+00:56:28,208 --> 00:56:29,248
+Montu bir olsun.
+
+250
+00:56:30,387 --> 00:56:30,967
+İki bin olsun.
+
+251
+00:56:32,188 --> 00:56:33,827
+İkinci kişinin adı Ali olsun.
+
+252
+00:56:34,675 --> 00:56:40,275
+4, 3, 2, 1 diyelim. 2'ye 2, 2002 diyelim.
+
+253
+00:56:45,396 --> 00:56:51,155
+4, 5, 6, 7. 3, 4. 3 diyelim.
+
+254
+00:56:52,115 --> 00:56:54,195
+3 diyelim. 2003.
+
+255
+00:57:04,403 --> 00:57:18,103
+5, 2, 2007. Bu kadar bilgiyi girdikten sonra dosyaya kaydettik. Şuraya geldiğimde şunu refresh diyelim. Bakın recourse.dot dosyamız tekrar geri geldi.
+
+256
+00:57:19,663 --> 00:57:29,923
+Bunun içerisine baktığımı da güncel verileri görebilirsiniz. Şöyle göstereyim. İşte Ayşe var. Daha sonra işte 1, 2, 3, 4 bir şeyler var. Aradaki, bakın Ayşe'den sonra boşlukların gelmesinin sebebi şu.
+
+257
+00:57:30,483 --> 00:57:52,183
+Ayşe 4 karakter ama biz burada isim alanına işte 11 karakter mi 19 karakter mi ne vermiştik. Bu aradaki şeyler bu şekilde dolduruluyor. Peki, bu program bu kadar yazdırdık. Asıl olan şey bundan sonra. Yani bir sıralama isme göre sıralama yapacaksak. Şimdi random access file olarak bunu aynı programda da yazabildik ama biraz daha böyle kod uzadığı için daha anlaşılır olsun diye.
+
+258
+00:57:52,724 --> 00:58:07,963
+Yani bunu split edebiliriz. Ne yapıyorum? Bir tane structure'ım aynen vardı. Onu buraya aldım. Şimdi bir tane isim uzunluğuna göre bir index ve key tutan bir başka index structure tutuyorum.
+
+259
+00:58:07,963 --> 00:58:19,503
+Şimdi buna key value dediğimiz bir yapıdır bu arkadaşlar. HashMap'lar falan da bununla kullanıyor. İleride Java'da falan bunları daha detaylı görürsünüz.
+
+260
+00:58:20,148 --> 00:58:46,768
+Böyle bir yapı tasarladım. Önce kayıtları programın main'inden başlayalım. Burada maksimum record number'a göre bir tane dizim var. Bunu statik yapmak mühim değil. Önce dosyayı okuyacağım. Records.dat dosyasını okuyacağım. Daha sonra bu dosyanın içerisindeki kayıtları şu şeye alacağım ve burada kaç tane kayıt var bu bilgiyi elde edeceğim.
+
+261
+00:58:47,152 --> 00:59:13,032
+GetRecords bana bunu yapacak. İşte data file dediğim hangi dosyayı okuduğumu söylüyor. Index file dediğim bir tane index file mi olacak burada? Şimdi ona ayrıca geleceğiz. Çünkü verileri bir yerde index demek de gerekecek dedik ya. Onu ayrıca dosya olarak da tutuyoruz. Buradan verileri okuduk ve kaç tane kayıt okuyacağımızı burada hani maksimum olabilecek kayıt bilgisini aldık ve okunan kayıt sayısını ekrana yazdırıyoruz.
+
+262
+00:59:13,556 --> 00:59:21,115
+Sonra bunları sort diyeceğiz. İndeks şeyimiz var şurada. Bir dizimiz var. Bunu sort edeceğiz.
+
+263
+00:59:21,115 --> 00:59:26,355
+Ve bunun içerisinde kaç tane karakter varsa aslında bir structure'ı sıralamaktan hiçbir farkı yok.
+
+264
+00:59:26,355 --> 00:59:34,955
+Daha sonra bunları indexed kayıtları print yaptırıyoruz. Bu fonksiyonu çalıştıracağız ve dostayı kapatacağız.
+
+265
+00:59:34,955 --> 00:59:38,355
+Şimdi önce kayıtları okumaya bir gelirim. Bakalım ne yapıyoruz.
+
+266
+00:59:40,275 --> 01:00:00,895
+Kayıt okumada bir tane dosya aldık. Burada bir tane isimlerin, indekslerimi tutacağımız bir yer var. Çünkü isme göre sıralama yapacağız. Öbür alanlara göre sıralama yapmıyoruz. Bir tane de olabilecek maksimum kayıt sayısını gönderiyoruz. Maksimum kayıt sayısı da şurada şey olarak atanmıştı. İşte en fazla bin kayıt alır denmiş. O buraya aslında bir yerde kopyaladık.
+
+267
+01:00:05,556 --> 01:00:17,556
+Namelan dediğimiz isim uzunluğuydu. Bir kayıt okuduk. Okuduğumuz bu kaydı bir yere kaydediyoruz.
+
+268
+01:00:17,556 --> 01:00:27,556
+İşte şurada olduğu gibi. Sonra şu alana NameE isminde bir key verdik. Bu ikisini birleştirdik.
+
+269
+01:00:27,556 --> 01:00:32,556
+Burada aslında bir tane structure var demiştik.
+
+270
+01:00:32,851 --> 01:00:47,391
+Buna bir tane key yaptık. Sonra bir ilerliyoruz, bir kayıt ilerliyoruz, bir kayıt daha okuyoruz. Okuduğumuz bilgiyi de burada bir geçici değişkenini aldık ve bütün kayıtların bir indeks dosyasına şuradaki dizi içerisinde yazılmasını sağladık.
+
+271
+01:00:47,931 --> 01:00:56,811
+Ve burada kaç tane kayıt okuduğumuzun bilgisini de return ediyoruz. Burada anlaşılmayan bir şey var mı? Kodda hocam şurayı anlamadım dediğiniz bir şey varsa söyleyin.
+
+272
+01:01:02,068 --> 01:01:08,988
+Şu şekilde bütün kayıtları, birer kayıt, birer kayıt aldık ve isim alanlarına burada özellikle dikkat edelim.
+
+273
+01:01:09,868 --> 01:01:18,908
+Şimdi burada bunu okuduktan sonra getRecourse bitti. SortIndex'e gidiyoruz. Şimdi SortIndex ne yapacak?
+
+274
+01:01:20,688 --> 01:01:28,488
+İndex'e göre bakın bir sıralama gerçekleşecek ama bu sıralama dosya üzerinde yapılan bir şey değil. Artık Structure'ın
+
+275
+01:01:28,532 --> 01:01:55,792
+İçerisindeki elemanların sıralanmasıyla. Şimdi burada bir detay var. Ben kişilerin isimlerini şurada 0, 1, 2, 3, 4 diye indeks bilgisi atıyorum döngüde. Çünkü burada sadece şu an isimler var. Sonra diyorum ki, QuickSort algoritmasını bilirseniz bu C'nin içerisinde, stdlib.h içerisinde tanımlı bir şey. Ama jenerik tanımlı.
+
+276
+01:01:56,788 --> 01:02:07,788
+Nasıl jenerik tanımlı? Siz Quick Sort'u normalde veri sıralarken, integer'a göre sıralama yapabilirsiniz. Ama burada sıralama fonksiyonunuzu kendi kriterinize göre yaptırabiliyorsunuz.
+
+277
+01:02:07,788 --> 01:02:23,627
+Diyorum ki name index dizisini sıralayacaksın. İçerisinde index count tane şey var. Ve bunun size'ı index kadar verilerden oluşacak. Ve şu compare fonksiyonuna göre sıralayacaksın. Compare fonksiyonunu şurada tanımlamışız.
+
+278
+01:02:24,244 --> 01:02:49,144
+Diyor ki, kişinin p. kayının key değeriyle q. kayının key değerini kıyasla. Yani isimleri kıyaslıyoruz. İndeks dediğimiz 0, 1, 3, 4. Öbürü şeyler. Bunları kıyasla. Eğer büyükse ona göre swap yap. Değilse ona göre swap yap. Bakın hızlı sıralama quicksort algoritmasını, c'nin içerisinde hazır olan algoritmayı bu şekilde kullanmış olduk.
+
+279
+01:02:49,652 --> 01:03:01,891
+Ve burada indeksler sıralandıktan sonra artık verilerin orijinaline dokunmadan, yani şuradaki az önce açtığım, şöyle alalım.
+
+280
+01:03:02,891 --> 01:03:08,251
+Şunları değiştirmeden bir başka yerde ne yaptık? ID'leri yer değiştirdik.
+
+281
+01:03:08,251 --> 01:03:17,228
+Slide'da da şurada söylediğimiz gibi. Şuradaki ilk baştaki senaryoyu hatırlayalım. İlk başta ben...
+
+282
+01:03:17,331 --> 01:03:23,331
+Bu şekilde 01234 diye id atarsam daha sonra bu idleri yer değiştirmiş olacak.
+
+283
+01:03:24,331 --> 01:03:30,931
+idleri sıraladığında aslında elde ettiğim düzen şu şekilde ama orijinal datada herhangi bir değişiklik yok.
+
+284
+01:03:32,631 --> 01:03:33,692
+Devam edelim.
+
+285
+01:03:35,431 --> 01:03:36,211
+Sıralama da bitti.
+
+286
+01:03:37,371 --> 01:03:41,391
+Sıralama bittikten sonra indexed keykortları yazdır diyorum.
+
+287
+01:03:41,391 --> 01:03:43,591
+Şimdi benim bir orijinal data file'im vardı.
+
+288
+01:03:44,307 --> 01:04:04,827
+Bir indeksim vardı, bir de kaç tane kaydım vardı. Bakın bu data file, bir tane dosya. İndeksim var. İndeks bakın, nerede? Bir dizi. Herhangi bir şey dosyası yok. İçerisinde en tane kayıt olan bir structure dizisi.
+
+289
+01:04:05,295 --> 01:04:24,576
+Bir de kaç tane kaydı modu. Şimdi indexed kayıtları yazarken dosyayı açacağız. İki dosya açık şu an. Bir index dizim var. Diyorum ki önce j. kayıt indexin j'sindeki index değerine git ve bunu size of'la çar. O kaydın bulunduğu noktaya git diyorum.
+
+290
+01:04:24,895 --> 01:04:31,956
+İlk kayıt mesela burada 2 ise önce ikinci kayıda gidecek şu indexin j'sindeki değer. 8 ise 8'e gidecek.
+
+291
+01:04:32,307 --> 01:04:52,868
+Orijinal dosyayı bakın değiştirmeden o noktaya gittik. Eğer burada bir sıkıntı olursa, bir exception olursa, exit yap diyorum, bir hata kuran. Eğer bir exception yoksa, o kaydın bulunduğu yerdeki veriyi oku ve okuduğun veriyi şurada ekrana yazdır. Olay bu. Çalıştıralım.
+
+292
+01:04:59,476 --> 01:05:23,916
+Must Enter Records.dat. Evet, Records.dat'ı girdik. Yani şu şey mühim değil. Zaten önceden girmiş bir durumda. Sonra sıralama sonrasında bakın Ali, Ayşe, Hasan, Nerve diye bunları isme göre sıralanmış hallediyle yazdı. Şurada da işte indeks numaralarını yazdı ama indeks numaralarını yazmak zorunda değiliz.
+
+293
+01:05:24,239 --> 01:05:32,579
+Bu şekilde orijinal verileri bozmadık. Şimdi bakın orijinal verileri bozmadığında şuradan tekrar görelim. Recourse.dot'ı tekrar açayım.
+
+294
+01:05:36,371 --> 01:05:58,551
+Bakın burada aynı veriler. Önce Ayşe var, daha sonra öbürü var. Ali var. Ondan sonra Hasan var. Ondan sonra Merve var. Bu sırayla olduğu gibi kalıyor. Ve bu şekilde daha maliyetsiz bir mantıkla sıralama işlemini gerçekleştiriyoruz. Buraya kadar anlaşılmayan bir şey var mı?
+
+295
+01:06:04,307 --> 01:06:15,807
+Saatimiz 10 olmuş. Bir 10 dakika ara verelim. Geldiğimizde başka örneklerle, yani konuyu bitirdik ama farklı örneklerle devam edeceğiz. Saat 10.10 geçe görüşmek üzere.
+
+296
+01:18:47,667 --> 01:18:51,847
+Evet arkadaşlar. Ses geliyor herhalde.
+
+297
+01:18:53,007 --> 01:18:53,567
+Geliyor hocam.
+
+298
+01:18:55,188 --> 01:18:58,768
+Tamam. Şimdi bu da bittikten sonra...
+
+299
+01:19:06,100 --> 01:19:13,500
+Sinyalleri şimdi birlikte geçebiliriz. Kısaca şurada Makefire'ı anlatayım.
+
+300
+01:19:21,043 --> 01:19:34,904
+Programlar büyüdükçe, örneğin biraz önceki örneğimiz fena değildi. Şimdi şurada da aynı structure tanım var. Programın parçalara bir aynı kodu tekrar tekrar yazmama imkanımız var.
+
+301
+01:19:35,824 --> 01:19:45,855
+Bu modüleri tarafından adına önemli bir şey. Fakat bir tane main fonksiyonun olduğu program, işte 10 tane de...
+
+302
+01:19:45,855 --> 01:20:06,435
+Başka başka C dosyaları, bunların header'ların olduğu düşünün, devasa bir program olur. Bunun derlenmesi birazcık zor. Çünkü her birini ayrı ayrı derleyip şeyler yazmak gerekiyor. Bu derlemeyi daha böyle kısa hale getirmenin yolu var. Şimdi şu split programı zaten size daha önce yapılan bir örnek. İlk uygulamada bu yapıldım. Oraya geçiyorum.
+
+303
+01:20:07,315 --> 01:20:15,315
+Şimdi benim normal derleme aşama, işte bir file.se'yi derlemek istersem şu şekilde yazıp derleyebilirim. Bu tek bir program kolay.
+
+304
+01:20:15,315 --> 01:20:29,315
+İşte ne oluyor? Önce compiler bunu assembler hale getiriyor. Bunu ilk hafta yaptık. O uzantılı dosya oluyor. Daha sonra linker executable hale getiriyor. Linker ne yapıyor? Mesela örneğin bir printf kullandınız. O printf'in derlenmiş halini getirip link yapıyor.
+
+305
+01:20:33,908 --> 01:20:46,328
+Artık bu bir proje gibi. Önce bizim Green Sea'miz, Common.h'ımız, Blue.se'imiz var. Bunlar işte ortak dosyalar kullanılır. Burada derlemeyi daha kolay hale getirmenin yolu var. İşte meykbal bu işe yarayacak.
+
+306
+01:20:46,804 --> 01:21:04,644
+Normalde biz bunu önce Green Sea'yi derle, daha sonra Blue Sea'yi derleyeceğiz. Zaten ortakta derlenmiş bir şey var. Bunları birbirine bağlayacağız, link edeceğiz. Her birinin asemleri olacak. Bu iş böyle uzun uzun kod yazarak, şu kodları tek tek yazarak yönetilir bir olmaktan çıkıyor.
+
+307
+01:21:05,427 --> 01:21:29,147
+Burada tabi işte green.c'nin bir derlenmiş dosyası var, blue.c'nin derlenmiş dosyası var, o dosyaları. Bunları birbirine bind etmek gerekiyor. İşte bind ettikten sonra şöyle bir dosya oluşuyor. Yani burada aşamalar göstermiş. Bu işi daha böyle yönetilebilir hale getirmek için make command'ini kullanıyoruz. Ve bu iş için yazacağımız bir make file olacak.
+
+308
+01:21:33,427 --> 01:22:00,827
+Bundan sonraki durumlarda sadece o yazdığımız makefile'i çağırarak arkadaki kodları tekrar tekrar yazmakla uğraşmayacağız. Makefile aslında bir makro dosyası gibi, bir emir dosyası gibi düşünebilirsiniz. Doğru olan C ile alakalı değil, bu build etme ile alakalı bir şey. Diyoruz ki bu bir proje. Projenin altında şu dosyalarımız var. Bunlar derlenecekler, o dosyalar olacak. Daha sonra bunlar birleştirip projenin executable hali oluşacak. Güzel.
+
+309
+01:22:01,684 --> 01:22:14,744
+Biz burada Makefile'i şu şekilde top tuşlarıyla yazıyoruz. Diyoruz ki proje 2.data.o'dan oluşacak, main.o'dan oluşacak ve io.o'dan oluşacak. Çünkü şunlar temel C dosyalarımız.
+
+310
+01:22:15,744 --> 01:22:25,739
+Ve bunlar daha önceki bulunan dosyalar bir araya getirilip data.o, main.o, io.o bir araya getirilip.
+
+311
+01:22:25,779 --> 01:22:50,659
+Projek 1.alk dosyasını meydan ediyor. Şunlar gcc veya cc diyebiliriz, compile c compiler diyebiliriz. Bakın, şu dosyaların oluşturulup, ondan sonra bunun projenin oluşturulması aşamasından söylüyoruz. Halbuki bu dosyaların oluşturulması için data.o nasıl oluşturuluyordu? İşte şurada bakarsak, green.c, gcc yap, o data.o oluşturulun gibi şeyler söylüyor.
+
+312
+01:22:53,939 --> 01:23:07,939
+Projek 1 şu alt satıra geçmeden önce şurada verilen emirleri yerine getirmesi gerekiyor. Projek 1 diyeceğiz ki bunlar bunlar bunlar olacak. Şimdi data.o nasıl oluşuyormuş? Data.c ve data.h'dan meydana gelecek.
+
+313
+01:23:08,467 --> 01:23:16,467
+O zaman bunu da şu şekilde GCC derleyicisine gönderiyoruz. Burada GCC diyebiliriz. Hani kolaylık olsun diye yazıyorum. Anlaşılması kolay olsun diye.
+
+314
+01:23:16,467 --> 01:23:28,467
+Data.se'yi derle. Elde ettiğim şey Data.o dosyası olsun. Ondan sonra Main.o dosyası Data.h ile Ion.h ve Main.se'yi bir araya getiriyor.
+
+315
+01:23:28,467 --> 01:23:32,467
+Burada Main.se'yi derlediğimizde Main.o dosyası.
+
+316
+01:23:33,076 --> 01:23:37,515
+I.O dosyası da I.O.C'nin derlenmiş haliyle oluşacak şeyler.
+
+317
+01:23:38,056 --> 01:23:46,615
+Artık önce şunlar teker teker yerine getiriliyor. Daha sonra buradaki bu bağlama işlemiyle projemiz build edilmiş, inşa edilmiş hale geliyor.
+
+318
+01:23:46,615 --> 01:23:58,136
+Ve biz sadece bu makefile, işte mymakefile diyelim. Buradaki kodları tekrar tekrar yazmak istediğimizde sadece yazmak yerine
+
+319
+01:23:58,528 --> 01:24:13,268
+İşte make programını çağıracağız ve makefile dosyasını bunun bir play vardı. Bununla beraber çağırdım da arkadaki kodları tekrar yazmaya gerek duymuşacağız. Bu açıdan gayet güzel bir şeydir.
+
+320
+01:24:14,368 --> 01:24:23,108
+Örneğin bunun daha güzel bir tarafı siz sadece şu kodu değiştirdiniz. Bu kodu değiştirdiğimizde buradaki şeyleri tekrar tekrar yazmaya gerek yok. Bunu tekrar çağırırız.
+
+321
+01:24:26,228 --> 01:24:51,288
+O dosyası oluşur. Şunlar hali hazırda oluşturulduğu için diğerlerinde bir değişiklik yapılmaz. Bunu söylüyoruz. Burada tabi Dependency Graph dediğimiz hani bir proje nelerden oluşuyor? Şunlardan oluşuyor. Bunun Dependency buna bağlı. Bunların Dependency şunlara bağlı. Böyle birbirini etkileyen bir süreçle proje build etme gerçekleşebiliyor. Bunların tabi farklı şeyleri var.
+
+322
+01:24:53,503 --> 01:25:02,463
+Plagg'leri var, değişkenleri var. Mesela kullandığımız şeyi Makebuy'ı şu şekilde çalıştırıp, projemizi build edip, işte runable hale getirebiliyoruz.
+
+323
+01:25:03,023 --> 01:25:10,844
+Burada ekstra makrolar da tanımlamak mümkün. Şurada mesela uzun uzun project bir, uzun uzun böyle bir şey yazmak yerine diyoruz ki büyük harflerle objects dedik.
+
+324
+01:25:11,404 --> 01:25:19,783
+Makro'nun başladığını söylemek için işte şu dolar işareti ve işte parantez içerisinde diyoruz ki şu objects yerine yukarıda tanımlanan şey neyse buraya bu gelsin.
+
+325
+01:25:20,115 --> 01:25:33,816
+Daha sonra bunlar bir araya getirilecekler. Çünkü aynı şeyi tekrar tekrar yazmak anlamlı değil. Bunlar bir araya gelecekler. Tire o deyip proje dosyası oluşacak. Daha sonra aşağıdaki şeyler aynı gibi. Daha böyle kompakt ve sumut hale getirebiliyoruz.
+
+326
+01:25:35,435 --> 01:25:43,816
+Tabii bunun farklı versiyonları var. Şuradaki kaynaklardan inceleyebilirsiniz. Bu güncel şu anki durumda.
+
+327
+01:25:44,192 --> 01:26:08,231
+Farklı programlama dilleri için CMake diye genelleştirildi. Her bir programlama dilinin build etmesini bununla sağlayabiliyorsunuz. Hocam biz zaten ideleri kullanıyoruz. İşte DVC var, Visual Studio var, Eclipse var diyebilirsiniz. İşte PyCharm var her şey için. Ama bazen öyle bir şey olur ki ide kullanamayacağınız ortamlar olur. Sadece siz kodu yazarsınız.
+
+328
+01:26:08,591 --> 01:26:34,731
+elle kod değerleme gerekliliği olabilir. İşte gömücü sistemlerde bunlar zaman zaman yapılıyor. Onun için böyle bir durumda sizin yapacağınız şey böyle bir cmake gibi veya işte make file gibi build etme ortamını önceden tasarlamanız gerek. Bunu da burada hızlıca söylemiş olalım. Multi-threat Programming'e şu an bilmiyorum. Ben bazı örnekler yapacağım. Saatimiz yettiği kadar, el verdiği kadar.
+
+329
+01:26:35,347 --> 01:26:52,028
+Örneklerle birazcık vakit geçiriyoruz. Sizin sorunuz olursa onlara bakmaya çalışırız. Örneklerimizin 12. hafta artık bu örnekleri. Şimdi binary trilleri şeyde gördük. Acaba C'de bunu nasıl yapabiliriz?
+
+330
+01:26:54,847 --> 01:27:00,827
+Ayrık matematikte gördük. İşte orada in order falan dedik. Ne bileyim post order, pro order.
+
+331
+01:27:01,328 --> 01:27:05,427
+Biz bir ağaç oluşturup, bu ağaç üzerinde gezinme işlemleri yapalım.
+
+332
+01:27:05,927 --> 01:27:10,548
+Ve bunu temel operasyonu hem de burada rekürsif işlemleri de anlatmış olalım.
+
+333
+01:27:10,808 --> 01:27:16,427
+Böyle bir örnek uygulama olsun. Herhalde bu bir yarım saat sürer zaten.
+
+334
+01:27:16,948 --> 01:27:18,228
+Ona göre ilerleriz.
+
+335
+01:27:18,728 --> 01:27:21,288
+Şimdi normal programımı başlatıyorum.
+
+336
+01:27:23,087 --> 01:27:25,128
+sd.h
+
+337
+01:27:27,988 --> 01:27:35,528
+Şimdi bizim bir binary tree'yi oluşturmamız iki tane yöntem var. Bunlar nedir? Nasıl binary tree oluşturulabilir?
+
+338
+01:27:39,252 --> 01:28:04,952
+Link listeyle. Bir link listeyle, bir de diziyle. Diziyle oluşturmak demek ki en tane düğümünüz varsa ağacın seviyesine göre iki üzere ene kadar yer açmanız gerekiyor. Şimdi diziyle oluşturmak eğer dengeli bir ağaç yapacaksanız mantıklı. Ama ağaç dengesizse çok fazla boşluklar olacağı için dizi birazcık fazla şey olmuyor, verimli olmuyor. Özellikle arama işlemlerinde zorlanıyoruz.
+
+339
+01:28:05,652 --> 01:28:16,872
+Çünkü dengesiz ağaçlarda söz konusu binary tree'lerde. Biz normal binary search tree ve dengeli olmayacağını düşünerek normal structure'larla bunu yapacağız.
+
+340
+01:28:17,172 --> 01:28:28,872
+Şimdi bir binary search tree nodelardan oluşur. Onun için diyor ki type definition structure tree node diyelim.
+
+341
+01:28:29,971 --> 01:28:47,391
+Bu nodların içerisinde bir kere data saklarsınız. Biz şu an için sadece integer data olduğunu kalırız. Ama bu data daha başka verilerden olabilir. Örneğin kişilerin adı, soyadı gibi şeyler olabilir. Onun için ayrı bir struktur oluşturup o datayı burada pointer ile tutmanız mantıklı. Şu an sadece tek bir tane membro.
+
+342
+01:28:52,851 --> 01:29:08,752
+Structure 3Node ile pointer'larını aynı link listelerde olduğu gibi tutmamız lazım. Bu işte Left Node. Bir de bunun Right Node olacak. Bunların daha detaylarını gelecek dönem veri yapıları dersinde konuşacaksınız.
+
+343
+01:29:08,752 --> 01:29:15,591
+Şimdi burada 3Node'da TNode olarak söyleyelim, Ağaç Nodu bu şekilde ifade edelim.
+
+344
+01:29:16,564 --> 01:29:34,744
+Ağacın en tepedeki düğümüne binary tree'lerde root diyorduk. Hatırlarsın. Root'u biliyorsak bütün düğümlere erişmemiz mümkün. Bu bu kadar. Şimdi bizim bir düğümü oluşturup içerisine data aktarmamız gerekiyor. Önce main fonksiyonunu yazalım.
+
+345
+01:29:39,572 --> 01:29:55,032
+Diyorum ki, önce ağacın root'unu oluştur ve root'a bir tane değer aktar. Burada farklı döngülerle bir sürü eleman girebilirsiniz. Ben önce şunu yapacağım. TNode diyelim. Bir tane bir root değişkenim olsun.
+
+346
+01:30:03,060 --> 01:30:07,560
+Ağacın yapısını şöyle hatırlayabilirsiniz. Dur şöyle önce bir yerde çizeyim.
+
+347
+01:30:17,811 --> 01:30:42,871
+Mesela dizimiz olsun. 4, 7, 6, 8, 15. Böyle veriler geliyor. Şimdi 4 gelir gelmez. Root olacak. Bunun bir istisnası yok. Sonra 7 bundan büyük olduğu için buraya geldik. Sonra 6 buraya gelecek. Sonra işte 8 buraya gelecek. Sonra 15 buraya gelecek. Sonra ne bileyim 2 gelsin. 2 buraya gelecek. Bu şekilde. Ama 4 ilk eleman root olarak geldi.
+
+348
+01:30:43,796 --> 01:31:06,095
+O zaman ben şöyle bir şey yapayım. Önce RUTA bir eleman aktarmak adına bir tane fonksiyon olsun. CreateNode diyelim. Ve buraya mesela bir tane sayı girelim. Şimdilik 10 girelim. Dedim ki bunu bir döngüyle kullanıcıdan elemanlar alıp yapabilirsiniz. O size kalmış. Ben şimdi deneme amaçlı böyle bir şey yapıyorum.
+
+349
+01:31:06,431 --> 01:31:15,971
+CreateNode fonksiyonu çalışacak ve root'a bir şey aktaracak. O zaman bu Create fonksiyonunu yazalım. Nasıl bir fonksiyon plot'u yazacağız burada? Şuradan yola çıkarak.
+
+350
+01:31:18,931 --> 01:31:19,832
+TNode cinsinden.
+
+351
+01:31:20,612 --> 01:31:23,112
+TNode cinsinden. Yeterli mi bu?
+
+352
+01:31:24,112 --> 01:31:25,011
+Bir de pointer'ı.
+
+353
+01:31:25,551 --> 01:31:30,332
+TNode'un pointer'ını döndürecek. Çünkü bu root zaten bir pointer türlü. Hatta şöyle yazarsak.
+
+354
+01:31:31,091 --> 01:31:54,431
+O zaman bunun da böyle bir şey döndürmesi lazım. Create node adı olacak. Bir de bir tajer bir data alıyor. D diyelim. Data diyebiliriz de karışmasın diye D diyor. Şimdi burada ne yapmamız lazım? Burada oluşturulan bir node'un bu fonksiyon bittikten sonra yaşaması gerekiyor. Öyle değil mi? O zaman ne kullanacağız burada?
+
+355
+01:31:57,235 --> 01:32:15,216
+Return kullansak da yaşaması garanti değil. Evet, malloc gibi bir şey kullanacağız ki, yani return zaten kullanmamız gerekiyor. Şurada bir pointer döndürüyoruz. İllaki bir düğüm oluşturup bu düğümü program kapanına kadar yaşatmak istiyorsak o zaman malloc kullanmak zorundayız.
+
+356
+01:32:15,216 --> 01:32:23,996
+Tino, bir tane pointer. İşte burada bir tane mesela temp diye bir pointer açıyorum. Malloc.
+
+357
+01:32:24,564 --> 01:32:38,124
+Bir tane olacağı için Side of TNode diyebilirim. Bunu bir test edelim. Void pointer döndürür. TNode türüne test et diyorum.
+
+358
+01:32:38,904 --> 01:32:49,404
+Burada yeri açtık. Bu yeri açtıktan sonra buraya gelen datayı bu tempin içerisine yazmamız lazım. Tempin datası eşiktir.
+
+359
+01:32:49,460 --> 01:33:15,559
+D olsun. Şimdi bunun sol çocuğu da, sağ çocuğu da mallocla oluşturduğumuz için biraz şey var. İsterse callocla da yapabiliriz sınıf değil. Tempin left'i aynı zamanda tempin right'ı ikisi de birlikte ne olacak? İlk başta mall olacak arkadaşlar. Ve ben burada return temp diyorum. Ve buradan dönen diye ilk başta root olarak sakladım.
+
+360
+01:33:16,243 --> 01:33:31,883
+Bu fonksiyonu başka başka şeyler içinde çağırabilirim. Artık bu create node oluştu. İlk başta root'u atadık. İleride ağaca yeni düğüm ekleme işinde veya başka şeylerde bunu devamını getireceğiz.
+
+361
+01:33:31,883 --> 01:33:42,163
+Şimdi mesela şöyle diyelim, root'un ben left'ine bir data eklemek istiyorum. Örneğin 5 eklemek istiyorum.
+
+362
+01:33:42,804 --> 01:34:09,224
+Rout'un left'ine 5'e tekmek istiyorsan yine createNode fonksiyonunu çağıracağım. CreateNode fonksiyonuna diyelim ki işte şurada 5'i gönderdik. Başka bir şey yapmam gerekmiyor. Çünkü bu gelecek, bu yeniden bir düğüm oluşturacak. Bu düğümün datasına bunu aktaracak. Left'in right'ını null yapacak ve bunu döndürecek. Artık şu, önceden şu satırda null olan değer şurada yeni bir düğüm tutar durumda olacak.
+
+363
+01:34:09,619 --> 01:34:11,619
+Mesela şunu da şöyle yapalım.
+
+364
+01:34:12,819 --> 01:34:14,667
+Rootun rightına
+
+365
+01:34:19,604 --> 01:34:41,744
+Create Notem, burada mesela 15 diyelim. Şuradan al olan şey veya buradan al olan Write düğüm artık burada ne oldu? 15 haline geldi. Bir veri tutar duruma getirdi. Burası bu kadar. Şimdi bunun devamında şunu yapabiliriz. Ağaçlarda gezinme vardı. Öyle değil mi?
+
+366
+01:34:42,387 --> 01:34:51,527
+İlk başta buradan başladın, kolayından başladın, daha ilerleye ilerleye gideceğiz. Önce ağaçta gezinmenin kaç farklı şekilde yapılacağını bilmemiz lazım. Kaç şekilde yapılıyordu?
+
+367
+01:35:00,979 --> 01:35:05,020
+Hocam, şey, biliyorsunuz değil mi? Traverse, palavra, gezme falan.
+
+368
+01:35:05,020 --> 01:35:06,979
+Evet. Three traversals.
+
+369
+01:35:08,319 --> 01:35:09,460
+Üç tane mündel.
+
+370
+01:35:10,239 --> 01:35:18,140
+Üç tane, yani bilinen, en çok bilinen, aslında dört tane de diyebiliriz. Pre-order gezme, in-order gezme ve post-order gezme.
+
+371
+01:35:18,220 --> 01:35:23,659
+Çünkü ağacın düğümlerini gezmek istiyorsak, bir şekilde buluttan başlayıp ya sağa gideceğiz ya sola gideceğiz.
+
+372
+01:35:23,659 --> 01:35:27,220
+Önce sağa gitmenin mantığı var veya önce sola gitmenin bir mantığı var.
+
+373
+01:35:27,604 --> 01:35:52,283
+Bunları test edelim. Daha sonra genel bir fonksiyon yazacağım. Şunu bypass edeceğiz. Bir insert fonksiyonumuz olacak. Bir liste oluşturacağız. Ona ayrıca geliriz. Önce Pre-Order. Bir şeyin Pre-Order olması demek ağaç var elimizde. Pre-Order nasıl çalışıyor? Ayrı bir matematikte de anlatıyoruz. Mesela A artı B gibi şey in order'dır.
+
+374
+01:35:53,876 --> 01:36:11,595
+Artı yukarıda olduğu için A burada, B burada. Ama preorder'da artı AB gibi bir şey var. Yine ağaç aynı. Önce root'u yazacağız. Sonra sola gideceğiz. Sonra sağa gideceğiz. Yani root, left ve right şeklinde gidecek.
+
+375
+01:36:11,595 --> 01:36:18,435
+Ve önce root'taki düğüm yazılacak. Ondan sonra left'e gidecek. O yeni bir alt ağaç gibi olacak.
+
+376
+01:36:18,868 --> 01:36:23,868
+Ondan sonra gidebildiğimiz kadar lefte gidiyoruz ve oradaki alt ağacın Rout'unu yazıyoruz.
+
+377
+01:36:24,868 --> 01:36:31,868
+Sonra gidebildiğimiz kadar sağa gidiyoruz. Ondan sonra en sağdakinin Rout'unu yazıyoruz. Bu mantıkla ilerleyeceğiz.
+
+378
+01:36:32,868 --> 01:36:39,868
+Peki, benim bu pre-order yapmak için neye ihtiyacım var? Bütün ağacı gezmek için?
+
+379
+01:36:40,868 --> 01:36:41,868
+Rout'a.
+
+380
+01:36:41,868 --> 01:36:45,868
+Rout'a ihtiyacım var. O zaman T-Note.
+
+381
+01:36:46,547 --> 01:37:11,007
+Buraya ROOT'u al diyorum. Parametri olarak. Ve burada gezdim. Şimdi bu tarz algoritmalarda RECURGIN kullanmak daha işi kolaylaştırıyor. Çünkü normalde şöyle düşünün. Bir while döngüsüyle ağacı gezebilmek mümkün. İşte ROOT'un kendisindeyiz. Kendisindeki değeri yazdırdık. Sonra LEFT'ine gireceğiz.
+
+382
+01:37:11,444 --> 01:37:31,784
+Bunun da left'i olabilir, bunun da left'i olabilir veya onun right'i olabilir. Şimdi left'ine gittiysek bir şekilde geri gelmemiz gerekiyor. O zaman gerideki düğümü tutmamız lazım. Dolayısıyla bunu iteratif klasik while dönüşü ile for dönüşü ile yazmak bayağı işi zorlaştırır. Mesela bir saniye şurada şöyle aratayım.
+
+383
+01:37:36,051 --> 01:37:42,551
+İteratif Pre-Ordal Traverse Unc.
+
+384
+01:37:48,884 --> 01:38:00,863
+Önce Rout'a bakıyor. Daha sonra diyor ki, bulunduğun Rout'u tabi bu C++'mış. Bunun C'sine bakalım. C'si yok muymuş? C++ biraz daha. Neyse burada yok. Başka bir yerden bakalım.
+
+385
+01:38:06,195 --> 01:38:13,555
+Çünkü bulunduğumuz durumu saklayıp daha sonra o duruma geri gelir. Yani ileri al geri al. Aslında bir stack kullanmamız gerekiyor.
+
+386
+01:38:18,555 --> 01:38:26,055
+Bulunduğun durumu al diyor. Bir tane diyor stack olsun diyor. Yani en son durumu saklayacağız ya. Stack düğümüne ihtiyacımız var.
+
+387
+01:38:28,996 --> 01:38:30,596
+[öğrenci]'ü açıklayacağım şimdi.
+
+388
+01:38:31,315 --> 01:38:57,716
+Bulunduğumuz durumu stekte saklamamız lazım. Diyor ki önce olduğun yerdeki datayı yaz, olduğun yeri stekte ekle, daha sonra sola git. Niye? Bulunduğumuz yerden sola gitmemiz gerekiyor pre-order'de. Sonra eğer bulunduğumuz yer boşsa bunu pop et, oradan sağa git. Bir sol, bir sağ, bir sol, bir sağ bu döngü bütün ağacı gezene kadar devam edecektir.
+
+389
+01:38:57,971 --> 01:39:11,751
+Tabi push ve pop'u da yazmamız gerekiyor. Çünkü bu bir stack. Düğümleri kaybetmememiz gerekiyor. Bu birazcık doğru bir şey. Halbuki biz recursive algoritmalarda zaten arka planda recursive fonksiyon çağırırız. Stack kullandığı için şu kadar uzun kod yazmamıza gerek yok.
+
+390
+01:39:11,751 --> 01:39:21,511
+Şimdi create modu neden kullandık? Bu fonksiyon içerisinde hangi değişkenler tanımlı [öğrenci]? Söyle bakalım.
+
+391
+01:39:23,796 --> 01:39:36,356
+Niye orada mallıklandın? Hangi değişkenler tanımlı? Hangi değişkenler tanımlı derken hocam? Şu işaretlediğim yerde tanımlı olan değişkenlerin isimleri ne? Temp var. Başka?
+
+392
+01:39:37,811 --> 01:40:05,271
+Sonra temp left var, temp right var. Onlar değişken değil. Onlar değişkenlerin üyeleri. Bir tane d var. Evet, temp var sadece. Bu fonksiyon bittikten sonra d'ye erişmen mümkün mü? Başka bir yer şuradan. Yaşayacak mı d? Zaten return temp yapıyoruz ya, d'ye erişemez miyiz? Hayır, d'ye nasıl erişeceksin? Temp dediğin şey buna erişir.
+
+393
+01:40:06,323 --> 01:40:10,523
+D isimli değişkene, şu integer değişkene şuradan erişmem mümkün mü?
+
+394
+01:40:10,523 --> 01:40:13,523
+Main içerisinde veya başka bir fonksiyon içerisinde.
+
+395
+01:40:13,523 --> 01:40:17,123
+O fonksiyon bitti, o değişken öldü gitti.
+
+396
+01:40:17,123 --> 01:40:22,323
+Bu bir kere lokal bir değişken. Değişkenlerin skoplarıyla alakalı sen birinci gruptan mısın?
+
+397
+01:40:22,323 --> 01:40:24,323
+Yok ikincisideyim hocam.
+
+398
+01:40:24,323 --> 01:40:28,323
+Yani bu değişken, bu fonksiyon bittikten sonra özellikle bunu anlattım ben.
+
+399
+01:40:28,323 --> 01:40:31,323
+Fonksiyon bittikten sonra bu değişken yaşamayacak.
+
+400
+01:40:31,828 --> 01:40:53,848
+Artık hiçbir şekilde erişemezsin. Uçtu gitti o. Normal bir değişken tanımlamış olsaydık, hatta değişken tanımladık burada. Şu temp değişkeni fonksiyon bittikten sonra hiçbir şekilde erişemez, yaşamaz. Uçurdu bir değişken. Ama biz şurada oluşturulan, şu mallokta oluşturulan verinin yaşaması gerekiyor. Bunu garanti etmemiz lazım.
+
+401
+01:40:58,739 --> 01:41:12,139
+O fonksiyon biter, artık yaşamaz. Hiçbir şekilde erişemezsin. Dolayısıyla ne yapman gerekiyor? Sen bunu return de yapsan, normal mesela şöyle bir şey olsa, burada mesela bir lokal bir değişken oluştur. Hatta bunu şöyle yap.
+
+402
+01:41:13,159 --> 01:41:25,819
+Lokal bir değişken, lokal değişken. Tempin datasında D var. Left, right'ın al. Ama bu fonksiyon tamamlandıktan sonra artık şu yerel değişken silinecektir. Hiçbir şekilde yaşamaz. Bunu garanti etmenin yolu
+
+403
+01:41:26,131 --> 01:41:35,611
+Scope ve Duration kurallarını tekrar bir incele. Bunu ya mallocla ya da statikle yapacaksın. Tabi burada statik kullanmak mümkün değil. Mecburen bunu mallocla yapacağız.
+
+404
+01:41:35,611 --> 01:41:45,951
+Stake bölgesinde değil, heap bölgesinde yaraşacağız. Bu duration önemli. Aynı linkli listelerde veya diğer structure elemanlarında yapmış olduğumuz.
+
+405
+01:41:46,611 --> 01:41:49,611
+Tamam, pre-order'a geri döndük. Şimdi bu...
+
+406
+01:41:50,612 --> 01:42:17,252
+Önce Rout'u yazıyoruz, sonra Sol'u yazıyoruz, sonra Sağ'a yazıyoruz. Bakın buradaki kod, while dönemlüsüyle bunu yapabilmek mümkün ama ekstra fonksiyonlara ihtiyaç duyuyor. Bu da Stake kullanmak demek. Bulunduğun düğme tekrar geri geleceksin. Ne demek istediğimi şöyle anlatayım arkadaşlar. Şurada A şöyle devam etsin mesela. Burada bir şeyler olsun, burada başka şeyler olsun. Örneğin şuraya kadar geldik, buradan buraya geldik, buradan buraya geldik. Şuradaki değeri yazdık. A diyelim bunu.
+
+407
+01:42:17,716 --> 01:42:28,776
+A'yı yazdıktan sonra, işte şurada da artı olsun mesela, artı yazdık, A'yı yazdık, sonra buraya geri gelip şuraya geri gelmemiz lazım. Şimdi buraya geri gelmek için burayı unutmamamız gerekiyor. Bu bir sıkıntı.
+
+408
+01:42:29,555 --> 01:42:52,615
+Burada onu stekle yapabiliriz. Yani en son kaldığın adımı. Mesela buradan da buraya geri geleceksin. O zaman şunu da saklamamız gerekiyor. Yani öyle bir şey var ki, işte 4'ü stekle tutuyoruz. Sonra 2'yi stekle tutuyoruz. Sonra artıyı stekle tutuyoruz. Şunu yazdıktan sonra buraya geri gelmenin bir şekilde yolunu burada saklamış olduk. Ama bu işi daha kolay yapmanın yolu aynı mantıkla.
+
+409
+01:42:53,108 --> 01:43:18,508
+Recursive kullanmak. Çünkü Recursive çağrılar, fonksiyon çağrılar zaten arka planda stack kullanmak zorunda. Bundan kaçış yok. Şimdi gelelim preorder yazalım. Şimdi bir kere root null olmayacak. Eğer root null ise ağaç boş demektir. If root is not null. Yani root null değilse buradan yap. Ve root null ise doğrudan çık diyebiliriz.
+
+410
+01:43:19,572 --> 01:43:25,072
+root null değilse ne yapacağız? Önce rootdaki datayı yazacağız. Çünkü bu preorder.
+
+411
+01:43:25,072 --> 01:43:34,072
+bir tane yüzde de diyorum. root'un datasını yazdır.
+
+412
+01:43:34,072 --> 01:43:42,072
+şimdi root'un datasını yazdırdıktan sonra bu fonksiyonu yeni bir ağaçmış gibi sol ağaç için çağıracağım.
+
+413
+01:43:46,420 --> 01:44:07,099
+Pre-order'a neyi göndereceğim? Route'un left'ini göndereceğim. Bu fonksiyon soldaki alt açı için yeniden çağıracak. Orada eğer bir Route, yani onun yaprakları yoksa ne olacaktır? Orası boş olacaktır. Ama yaprakları varsa önce oradaki datayı yazacak. Sonra o kendi içinden kendi çocuğunu çağıracak.
+
+414
+01:44:07,488 --> 01:44:14,648
+Ve daha sonra bu soldaki işlemler bittikten sonra en tepeye geri geleceğiz. Bu sefer aynı şeyi sağdaki şeyler için yapacağız.
+
+415
+01:44:14,648 --> 01:44:28,228
+Wood write. Şöyle write. E şurada olacak. Bakın basit bir preorder fonksiyonu. Şimdi ben ağacı bu şekilde oluşturdum. Basit bir şeyimiz var. Preorder'ı çağırayım.
+
+416
+01:44:28,228 --> 01:44:31,808
+Wood'u gönder diyorum.
+
+417
+01:44:33,652 --> 01:44:35,652
+Return 0 diyelim.
+
+418
+01:44:37,652 --> 01:44:41,652
+Ve giderleyelim şurada.
+
+419
+01:44:43,652 --> 01:44:45,652
+BST diyorum.
+
+420
+01:44:50,739 --> 01:45:04,840
+Şurada ne diyor? Create node da eklememiz lazım. Preorder'ın da prototikine ekleyelim.
+
+421
+01:45:14,036 --> 01:45:17,036
+Şuradaki biraz önce yaptığımız değişiklikler.
+
+422
+01:45:20,176 --> 01:45:22,615
+Incompatible Type.
+
+423
+01:45:24,716 --> 01:45:27,036
+Şu da şeyden kaynaklı arkadaşlar.
+
+424
+01:45:29,655 --> 01:45:32,976
+STD.Lik.h'ı mallottan almadığı için.
+
+425
+01:45:35,836 --> 01:45:37,195
+Ondan gelen bir varım. Tamam.
+
+426
+01:45:38,195 --> 01:45:59,115
+Şimdi biz önce onu göreceğiz. Sonra soldaki çocuk 5 olacak. A şimdi solunda 5 var sonra 15 var. Peki bunu şöyle yapalım. Pre-order ve in-order'ı genelleştirelim. Öbürlerine de uyarlayalım. Bizim bir post-order'ımız vardı. Post-order'ı nasıl yazacağız o zaman?
+
+427
+01:46:02,931 --> 01:46:11,811
+Post Order nasıl örülüyor? A artı B ise A B artı şeklindeydi. O zaman önce gidebildiğim kadar sola gitmem gerekiyor.
+
+428
+01:46:16,532 --> 01:46:19,912
+Kola gittikten sonra gidebildiğim kadar sağa gideceğim.
+
+429
+01:46:23,636 --> 01:46:49,556
+Öyle mi? Ondan sonra oradaki datayı yazıyorum. Önce gidebildiğim kadar sola. Sonra hiçbir şeye gidemeyeceğim. Yani şöyle düşünün. Şuradan alalım. Dörtteyim. Sola gittim iki. Sola gittim artı. Sola gittim a diye bir şey var. Artık bunun solu yok. Bunun sağı da yok. Dikkat edersin. Eğer sağ olsaydı sağından da bir yol bakacaktık. Buradaki veriyi yazacağız.
+
+430
+01:46:50,771 --> 01:46:54,811
+A'yı yazacak. Postordur bu şekilde. Mesela Postordur da çağıralım.
+
+431
+01:47:01,076 --> 01:47:03,020
+Şu yanıt polimleki,
+
+432
+01:47:18,355 --> 01:47:19,435
+No, şu da in order.
+
+433
+01:47:31,828 --> 01:47:42,828
+Post Order'u nasıl yazacak? Root'ta on var. Önce sola gitti, sonra sağa gitti, sonra root yazdı. Bu da Post Order sırası. In Order'u da çağıralım.
+
+434
+01:47:51,347 --> 01:48:08,767
+Şurayı da şunu alalım. Bu nasıl yazacak? Önce root'u yazdı, sonra solu yazdı, sonra... Pardon önce solu yazdı. Bir dakika. Doğru mu yaptık? Pardon şey kodun içerisini değiştirmedik in order.
+
+435
+01:48:08,767 --> 01:48:15,247
+Şimdi in order'da sıramız nasıl olacak? Önce sola gideceğiz.
+
+436
+01:48:16,083 --> 01:48:36,003
+O zaman, bir dakika, yalnız şunları değiştireceğiz arkadaşlar. Post Order olacak. Bunlar kendi içinde. Yani önce sola git, sonra sağa git, sonra bootu yazdır. Burada da in Order. Bunları in Order yapalım. Önce gidebildiğin kadar sola git. Sola gideceğin için önce bunu yazacaksın.
+
+437
+01:48:37,908 --> 01:48:53,328
+Sonra ulaştığın en son noktada şeyi yaz, datayı yazdır. Sonra sağa git. Yine oldu da bu şekilde. Post oldu da önce sola gittik. Sonra gidebiliyorsak sağa gideceğiz. Ondan sonra roottaki datayı yazdıracağız.
+
+438
+01:48:56,508 --> 01:49:02,028
+Şimdi 10, 5, 15, şu 5, 15, 10, şu da 5, 10, 15 bu şekilde yazdırabiliriz.
+
+439
+01:49:03,128 --> 01:49:04,308
+Buraya kadar bir sorumuz var mı?
+
+440
+01:49:06,771 --> 01:49:32,692
+Şimdi bizim şöyle bir sıkıntımız var. Ağaç böyle elle sağa ekle, sola ekle çok mantıklı değil. Binary Storage Term'in mantığına uygun olarak bir ağaç oluşturmamız gerekiyor. Şimdi buna bakalım. Ben mesela bir BST, şuraya kadar vurdum. Create BST diye bir fonksiyon yazayım.
+
+441
+01:49:33,363 --> 01:49:46,663
+Bu böyle çalışsın. Mesela buna void diyelim. Crate. Bsp. Yukarıdaki ağaçtan farklı bir ağaç oluşturacağım. Bu test ağabeyi.
+
+442
+01:49:47,723 --> 01:49:59,503
+Hocam, özür diliyorum. Lafınızı balla kesiyorum. Çıkmam gerekiyor. Mümkün müdür acaba? Çok teşekkür ediyorum. Kolay gelsin. Ağzınıza sağlık, emeğinize sağlık. Çok sağ olun.
+
+443
+01:50:01,363 --> 01:50:28,783
+Crate BST, burada yeniden bir root, yukarıdaki ağacı unuttuk. Burada yeniden root, ilk başta null diye bir ağacım oldu. Herhangi bir şey olmuyor. Mesela bir data girelim. Bu datayı ilk başta root olarak ekleyeceğiz. İlk girilen data. Ondan sonraki veriler, girilen veriler, sola, sağa artık ağacın içerisinde ilgili doğru olması gereken yere erişecek.
+
+444
+01:50:29,203 --> 01:50:36,963
+Ve bunu mesela bir do while lengüsüyle eksi bir girene kadar yapalım. Şimdi şurada bir data tutalım önce.
+
+445
+01:50:38,963 --> 01:50:46,443
+Tabii datayı tutunca ne yapacağız? İlk girdiğiniz şeyin eksi bir olmayacağını kabul etmemiz lazım.
+
+446
+01:50:47,363 --> 01:50:50,524
+Onu nasıl yapabiliriz? Şöyle diyelim.
+
+447
+01:50:56,435 --> 01:51:16,635
+İlk defa, if data different from x'idirse, while data different from x'idir.
+
+448
+01:51:16,635 --> 01:51:19,195
+Şöyle bir şey diyebiliriz.
+
+449
+01:51:24,916 --> 01:51:41,416
+InsertNode diye bir tane fonksiyonum olsun. Bu InsertNode fonksiyonu ilk girilen veriyi root'a aktarsın. Diğer girilen verileri ikinci, üçüncü, dördüncü, onları da ilgili yere aktarsın. Benim buraya root'u göndermem gerekiyor ve bir de datayı göndermem gerekiyor.
+
+450
+01:51:42,416 --> 01:51:47,795
+Ve ilk başta kolay yoldan giderim. Bunu daha sonra değiştirebilirsiniz.
+
+451
+01:51:48,819 --> 01:52:13,420
+Şimdi burada root'un değişme ihtimali var mı? Var. Bir defaya mahsus root değişecek. İlk girdiğimiz data şu anımız. İlk girdiğimiz veri root değiştirir. Onun için burada ben root'u tekrardan bir turn edeyim. Yani pointer göndermeye gerek yok. İsterse bunu da yaparız. Bu şekilde sürekli eklesin. Ta ki eksi bir girene kadar. O zaman şimdi şurada insert node fonksiyonumu yazıyorum.
+
+452
+01:52:14,228 --> 01:52:19,228
+InsertNode fonksiyonu TNode türünde bir tane pointer döndürüyor.
+
+453
+01:52:19,228 --> 01:52:22,228
+InsertNode diyelim veya Insert de diyebiliriz ama mühendiyiz.
+
+454
+01:52:22,228 --> 01:52:30,228
+Buraya TNode türünde, TNode türünde root'u alıyoruz. Bir tane integer root'u alıyoruz.
+
+455
+01:52:34,996 --> 01:52:48,775
+Bunu yaparken önce şeyi kontrol edeceğiz. Acaba root'umuz null mı değil? Root null ise bir defaya mahsus null düğme oluşacak. Root null değilse sağına mı gideceğiz, soluna mı gideceğiz?
+
+456
+01:52:49,815 --> 01:52:56,355
+Şimdi sağına gittiğimizde de bir alt ağaç olabilir. Sola gittiğimizde de alt ağaç olabilir. Dolayısıyla alt ağaçlar null olabilir.
+
+457
+01:52:57,684 --> 01:53:08,844
+Recursive veya iteratif bir algoritma tasarlamamız gerekiyor. Bunun da iteratif yolu çok çok karmaşık. Yani kodlarına bakabilirsiniz. Biz recursive düşünelim.
+
+458
+01:53:10,863 --> 01:53:23,344
+Diyoruz ilk, root eşittir Nasa. Bakın bu root dediğim şey bizim ana ağacın root olarak düşünülmemesi gereken bir şey. Alt ağaçların root'ların da aynı mantıkla burada halledileceğiz.
+
+459
+01:53:24,819 --> 01:53:51,799
+Recursive düşünün burada. Her şey, her alt ağaç kendisi bir root olabilir. Root olacak, illaki olacak. Ve bu bir yerde null olacak. O zaman diyorum ki bu fonksiyonu şu şeyde tekrar çalıştır. Root ne olsun? Benim şurada create node fonksiyonum var ya. Create node'u çağır. Buraya benim bu datanı gönder. Oradan oluşturulan düğüm benim root'um olsun. Ve buradan return root yap diyorum.
+
+460
+01:53:52,192 --> 01:54:18,592
+Eğer bu root null değilse, binary search tree neye göre çalışıyor? Çalışma mantığı nasıldı? Girilen veri, roottaki veriden büyükse sağ tarafa gideceğiz. Değilse sol tarafa gideceğiz. O zaman diyorum ki şu gelen data büyükse, root'un datasından
+
+461
+01:54:21,908 --> 01:54:23,708
+Bir şey yap.
+
+462
+01:54:28,020 --> 01:54:52,320
+Eğer büyük değilse küçüktür. Yani ya null olacak ya da root'un datası daha küçük olacak. Yani o zaman burada başka bir şeydir. Else. Üçüncü durum. Bu fonksiyonu ben artık elimde root null olmayan bir durum var. Herhangi bir düğümdeyim. O düğümün ya sağına gideceğim ya soluna gideceğim. Bunu elde ettim.
+
+463
+01:54:55,123 --> 01:55:19,523
+Datası normal root'taki datadan büyükse, root'un right'ına git diyeceğim. Peki root'un right'ı ne olacak? Yeni bir düğüm oluşacak. Gerektiğinde o yeni düğüm buraya geri beklenecek. Ama o yeni bir düğümü alt ağaçlarda oluşturabilirim. Onun için bu fonksiyonu tekrar çağırıyorum. Insert, node diyorum. Root'un right'ına git. Ve giderken de şu datayı götür.
+
+464
+01:55:21,652 --> 01:55:34,192
+İşin bittiğinde de burada return root gönder diyorum. Aynı şekilde aşağıda da root'un left'ine gideceğiz.
+
+465
+01:55:34,192 --> 01:55:40,851
+insert root dediğimiz left'ten ilerleyeceğiz ve datayı gönderiyoruz.
+
+466
+01:55:40,851 --> 01:55:48,531
+Artık ben bu fonksiyon içerisinde nerede insert yani eksi bir girene kadar yaptığım bütün insert'leri ne yapabileceğim?
+
+467
+01:55:50,003 --> 01:55:52,944
+Sağa sola ağacı doldura doldura ilerleyelim.
+
+468
+01:55:52,944 --> 01:55:59,484
+Peki bunun etkisini de şöyle görelim. Biz ağacı in order sırayla yazsak.
+
+469
+01:55:59,484 --> 01:56:05,024
+İn order neydi? Önce sol, sonra kök, sonra sonra. Yani a artı b gibi.
+
+470
+01:56:05,024 --> 01:56:09,783
+O zaman ben şu her bir not girişimde in order'ı çağırayım.
+
+471
+01:56:09,783 --> 01:56:12,524
+İn order bir de sıralı yazdırıyordu ya.
+
+472
+01:56:12,524 --> 01:56:14,804
+Vult'u gönder diye.
+
+473
+01:56:16,979 --> 01:56:21,259
+Hatta şurada ne diyelim, in order nasıl çalışıyor, yan yana yazdırıyordum.
+
+474
+01:56:22,299 --> 01:56:26,899
+Bu zaman şurada print text boşluk koymamız yeterli.
+
+475
+01:56:28,979 --> 01:56:38,899
+Her işlemin sonunda, yani her bir düğüm eklediğinde ağacın neresine hangi veriler eklenecek, bunları görelim.
+
+476
+01:56:40,099 --> 01:56:41,819
+Derlemeden önce şunu yapayım.
+
+477
+01:56:42,899 --> 01:56:43,599
+Insert node.
+
+478
+01:56:44,659 --> 01:56:45,499
+Uliye alalım.
+
+479
+01:56:49,747 --> 01:56:55,407
+Bir de Crate BST vardı, onu da alalım.
+
+480
+01:57:01,108 --> 01:57:08,307
+Bakın şurada ilk main'de yaptığım şeyler demo arkadaşlar. Bu create.bset ile ayrı başlı başlı çalışan bir fonksiyon.
+
+481
+01:57:09,507 --> 01:57:11,307
+Ne oldu çalıştım arkadan.
+
+482
+01:57:14,739 --> 01:57:41,099
+Enter data. Mesela ne girelim? 8 gireyim. Sadece 8 var. Buraya 4 gireyim. 4 solda 8 ortada. 18 gireyim. 4 solda 8 ortada. 18. 7 mi girsek? 6 girelim. 4, 6, 8. Bakın sıralı bir şekilde yazdıracak hep. 2 girelim. Ondan sonra 10 girelim.
+
+483
+01:57:42,452 --> 01:58:08,312
+Bu şekilde devam edip gidiyor. 15 girdiğimizde araya geldik. 28-29 girdiğimizde böyle bir girelim. Her eklediğimde pre-order, in order üzerine göre yazacağız. Eksi bir girdiğimizde de işi bitirip çıkacağız. Eksi bir girdiğimizde şunu yapmamız lazım. Create BST fonksiyonu baya baya bir şeyler yaptı.
+
+484
+01:58:08,399 --> 01:58:31,295
+Ağacı temizlemek gerekiyor. Ağacı temizlemek de şuradaki insert'un tam tersi. En uçtaki node'a kadar gideceksiniz. Yani burada free, root demek hiçbir işe yaramaz. Çünkü root bir şeyi gösteriyor. O başka bir şeyi gösteriyor. Aynı şurada olduğu gibi en uca kadar gidip, nal görmeyene kadar her bir node'u...
+
+485
+01:58:31,296 --> 01:58:56,396
+Ayrı ayrı free etmek gerekiyor. Ona da bu mantıkla bakabilirsiniz veya delete etmekle aynı mantıkla olabilir. O da ayrıca düşünülür. Bu şekilde bakın, Binary Search Tree en basit haliyle böyle oluşturulabilir. Structure'lar, ondan sonra recursive fonksiyonlar kullanarak. Size tavsiyem bu kodu geliştirin. Mesela biz burada insert node'u böyle çağırdık ama istersek bunu şöyle çağırabilirdik.
+
+486
+01:58:56,787 --> 01:59:13,827
+Şurada herhangi bir return yapmadan, bunu void hale getirerek, işte bu adresiyle gidiyorsa o zaman burada çift pointer alacaksınız. Çift pointer ise şurada başka başka şeyler değiştireceksiniz. Bunu değiştirin, pratik yapın. Güzel olur. Burada anlaşılmayan bir şey var mı arkadaşlar?
+
+487
+01:59:16,567 --> 01:59:20,747
+Bir örneğim daha var da, sınava yetişmeniz için...
+
+488
+01:59:20,787 --> 01:59:41,767
+Burada bırakalım. Link listelerle alakalı farklı birkaç örnek hazırlamıştım. Örneğin link listenin başını ekleyelim, ortasını ekleyelim, sonunu ekleyelim, işte başından sizlerin falan böyle biraz daha kompleks bir örnekti. Bunu haftaya bırakayım. Burada bu kadar yeterli olsun. Siz de rahat rahat sanırım da yerleştirirsiniz. Sorsu olan var mı arkadaşlar?
+
+489
+01:59:47,091 --> 01:59:54,911
+Hepinize sınavda başarılar. Haftaya derste görüşmek üzere. Yarın sinyal dersini yüz yüze yapacağız. Orada bir sıkıntı yok. Onun da haberini vermiş olalım.

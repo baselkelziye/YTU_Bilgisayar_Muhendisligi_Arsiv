@@ -1,0 +1,1587 @@
+1
+00:01:03,316 --> 00:01:03,856
+Yeni onajda.
+
+2
+00:01:18,451 --> 00:01:19,691
+Cam sesiniz geliyor.
+
+3
+00:01:48,563 --> 00:01:49,483
+Dövbe an kapalı mı?
+
+4
+00:05:21,267 --> 00:05:34,387
+Arkadaşlar, sağlıyorsanız dışarıdan özellikle benim burada başlıyorsanız. Lütfen isminizi adını ve soyadını da olacak şekilde değiştirin.
+
+5
+00:06:08,052 --> 00:06:15,872
+Hocam, sesiniz bayağı kısık geliyor şu an. Ben anlamakta zorluk çekiyorum ama öğrenciler de galiba duyamadı sesinizi.
+
+6
+00:06:15,872 --> 00:06:17,132
+Şu an daha iyi mi?
+
+7
+00:06:18,652 --> 00:06:20,292
+Şu an yine kısık hocam.
+
+8
+00:06:36,403 --> 00:06:51,403
+Hocam ben söyleyeyim isterseniz. Arkadaşlar, katılırken derse isminizi ve soy isminizi doğru bir şekilde yazın. Bugün yoklamayı farklı bir şekilde almayı düşünüyoruz. O yüzden herhangi bir sıkıntı çıkmasın. Söyleyeyim şimdiden sizlere.
+
+9
+00:07:21,235 --> 00:07:47,276
+Arkadaşlar, yoklama şu an alınmıyor. Fakat şu oturma gir katıldığınızda uygulamaya kaç dakika kaldığınızı biz görebiliyoruz. Daha sonra da dersin herhangi bir zaman, herhangi bir zamanda da chat kısmına numaralarınızı yazmanızı isteyeceğiz. Ama şimdi almıyoruz yoklamayı. Daha ziden katılmayan birçok arkadaşınız var. Daha uygulama başlamadı.
+
+10
+00:07:49,492 --> 00:07:50,211
+Şu an sesin nasıl?
+
+11
+00:07:51,632 --> 00:07:53,711
+Şu an biraz daha iyi hocam.
+
+12
+00:07:54,711 --> 00:07:56,792
+Neden? Tabii bir problem var da anlayamadım.
+
+13
+00:07:57,252 --> 00:08:03,451
+Şimdi hocamızın da ifade ettiği gibi birincisi sistemdeki kayıtlarımıza bakacağız.
+
+14
+00:08:04,192 --> 00:08:11,312
+İkincisi de dersin belli bir kısmında bir dakika alık zaman içerisinde hoca işte süre verecek.
+
+15
+00:08:11,312 --> 00:08:17,112
+Örneğin 11.48'den 11.49'a kadar herkes numarasını çet ekranına yazdım diyeceğiz.
+
+16
+00:08:17,651 --> 00:08:27,132
+Gerçek anlamda burada olup olmadığınızda, kalan durumda buradaki seçimlerinde bilirsiniz de, test kısmından, check kısmından kontrol edeceğiz.
+
+17
+00:08:29,692 --> 00:08:31,831
+Nedansı benim mikrofonda bir problem var.
+
+18
+00:09:42,196 --> 00:09:48,996
+Arkadaşlar, biraz daha bekleyelim. Katılıncı sayısına göre 12-5 geçe başlatabilirim uygulamayı.
+
+19
+00:09:50,216 --> 00:09:51,956
+Şu an sesim daha iyiyim hocam.
+
+20
+00:09:53,016 --> 00:09:54,635
+Evet hocam, şu an sesiniz daha iyi.
+
+21
+00:09:54,736 --> 00:10:06,436
+Tamam, teşekkür ederim. Şimdi gençler, ben birazdan ayrılacağım. Diğer arkadaşlarınızla söylersiniz. Herkes bir kere buraya ismiyle katılsın.
+
+22
+00:10:06,927 --> 00:10:33,748
+Ahmet sağolsun bizim anlatmak istediklerimizi sözel olarak yazmış oraya. Şimdi ben projeyle alakalı bir şey söylemek istiyorum. Hepinizin bilgisi olsun. Zaten kayıtları da giriyor. Çarşamba günü bir toplantı yapacağız. Bu toplantıya kadar proje metninde dün gece bir güncelleme yaptım. Okuyun, anlamaya çalışın. Anlamadıklarınızı bir kenara not edin, sorularınızı hazırlayın.
+
+23
+00:10:34,419 --> 00:10:48,399
+Size projenin sonuna kadar nasıl sorularınızı sorabileceğinizle alakalı ve projenin arka planında ilişkisel veri tabanıyla alakalı bazı şeyler anlatacağım bugün. Katılmanız önemli. Bir dakika.
+
+24
+00:11:02,964 --> 00:11:18,124
+Olur da katılamazsanız, tabii herkesin kendine göre mazeret olabilir ama, yani aynı soruları tekrar tekrar etmemek adına bu dönem farklı bir platform üzerinden sorularınıza cevap verecek hocalarınız.
+
+25
+00:11:19,564 --> 00:11:27,384
+Özellikle ilişkisel veri tabanının mantığını, dosyalarla ve side nasıl kullanırız onu anlatacağım için oraya katılmanız mühim.
+
+26
+00:11:28,052 --> 00:11:54,132
+Öniversitesi, gruptan bağımsız olarak bütün grubun katılmasını istedik. O zamana kadar da ödevin birazcık şeyine bakın, içeriğine bakın, anlamaya çalışın. Zaten derste de bir üzerinden geçeriz. Yunus Hocam da ben de ödeve dair bir tanıtım yapacağız. Erken paylaşalım istedik. Daha bir ay kadar bir süre var. Bu süre iyi değerlendirin. Rahatlıkla bitecek proje. Belki çok fazla detay var ama o kadar detay olması sizin aslında iyiliğinize.
+
+27
+00:11:54,964 --> 00:12:00,324
+Yani siz sadece parçaları bir araya getirmeyi yaparsanız ödev ortaya çıkmış olur.
+
+28
+00:12:03,144 --> 00:12:08,944
+Sorunuz var mı? Ben birazdan ayrılacağım. Bugünkü konu da projenin temelleriyle alakalı önemli bir konu.
+
+29
+00:12:09,944 --> 00:12:18,923
+Linkli listeler ve linkli listelerin fonksiyon pointerları ile veya başka swap mekanizmalarıyla kullanılması üzerine olacak.
+
+30
+00:12:21,491 --> 00:12:33,511
+Ödev tesliminde, şu an ödevle alakalı bir şey konuşmuyoruz. Sadece ödevin tanıtımıyla alakalı çarşamba gününe dair bir açıklama yaptım. O sorularınızı burada değil, çarşamba günü sorarsınız.
+
+31
+00:12:37,683 --> 00:12:49,324
+Bugünkü konuyu da iyi anlamaya çalışın. Sorularınıza gayet detaylı bir tane örnek yapılacak. Hocanızda anlamadığınız yerleri sorun, iyi öğrenin arkadaşlar.
+
+32
+00:12:50,580 --> 00:12:53,620
+Hatice Hocam, söz sizde. Bir isteyeniz var mı benimle?
+
+33
+00:12:54,080 --> 00:13:00,660
+Yok şu an için hocam. Ben zaten arkadaşlar link listleri bir hatırlatmak için küçük küçük hatırlatmalar yaptım.
+
+34
+00:13:00,660 --> 00:13:07,940
+Hani uygulamada direkt yazmak yerine kafalarında biraz daha şekillensin diye küçük hatırlatma yaptım.
+
+35
+00:13:08,980 --> 00:13:09,440
+Tamamdır.
+
+36
+00:13:09,875 --> 00:13:18,576
+Birazdan başlarım hocam ben de. Elinize eliniz ağzınızda sağ olun. Teşekkür ediyorum. Ben de teşekkür ederim hocam. Herkese iyi günler arkadaşlar. Görüşmek üzere yarın derste.
+
+37
+00:13:39,283 --> 00:13:59,283
+Arkadaşlar, ben uygulamaya başlıyorum. Şimdi bu uygulama 4'te biz bir şirkete yeni bir eleman ekleyeceğiz. Elemanlara eleman çıkartacağız. Daha sonra bu elemanları numaralarına, adlarına ve soyadlarına göre bir sıralama yapacağız. Yani biz buradaki her çalışana...
+
+38
+00:13:59,700 --> 00:14:12,120
+Bir isim, soy isim ve bir id atacağız. Bunu aslında bir öğrenci kaydetme veya silme olarak da düşünebilirsiniz. Sadece biz bu örnekte bir şirkete eleman ekleme ve çıkarma yaptığımızı düşündük.
+
+39
+00:14:13,539 --> 00:14:20,940
+Bu elemanları biz bir link list üzerinde tutacağız. Bakalım. Link listleri kısaca bir hatırlatmak istedim size.
+
+40
+00:14:21,460 --> 00:14:26,960
+Belki bilen arkadaşlar vardır, bilmeyenler vardır. Birazcık kafanızda şekillensin diye.
+
+41
+00:14:26,960 --> 00:14:35,960
+Normalde link listlerde bir tane bizim verimiz var. Ben geliyorum, ilk eklediğim elemanı D1'e kaydediyorum.
+
+42
+00:14:35,960 --> 00:14:43,960
+Daha sonra bu D1'de de pointer kısmında bu adres olarak D2'yi gösteriyor.
+
+43
+00:14:43,960 --> 00:14:47,820
+D2'de D2'ye geliyorum, verilerimi kaydediyorum.
+
+44
+00:14:47,956 --> 00:15:00,736
+Daha sonra D2 de adres olarak D3'ü gösteriyor. Bunlara bağlı listeler diyoruz biz arkadaşlar. Mesela D1'in Next'i D2, D2'nin Next'i de D3 oluyor.
+
+45
+00:15:01,491 --> 00:15:11,291
+Ama bizim mesela D1, D2, D3'te her yeni eklenen not düğüm diye bahsediyor veri yapılarında bunlardan.
+
+46
+00:15:11,912 --> 00:15:18,251
+Sola kaydediliyor. Bizim yazdığımız kodda da her yeni kaydedilen sağa kaydediliyor.
+
+47
+00:15:18,672 --> 00:15:22,751
+Ve bu head olarak kabul ediliyor bizim tasarımımızda.
+
+48
+00:15:22,751 --> 00:15:29,491
+Bu link listlerle ilgili sormak istediğiniz bir soru var mı? Çünkü bugün uygulamamız direkt link listler üzerinde oldu.
+
+49
+00:15:29,491 --> 00:15:40,351
+Daha sonra bu yaptığımız uygulamayı siz de kendiniz yaparsanız ve evdeki bu yaptığımız atamaları şimdi bu linklerin bağlantılarını sağlayacağız.
+
+50
+00:15:41,351 --> 00:15:47,692
+Teker teker deftere bir kağıda çizerek çalışırsanız kafanızda daha net bir şekilde oturacağını düşünüyorum.
+
+51
+00:15:49,132 --> 00:15:53,251
+Dersin ilerleyen kısa kısımlarında yine size küçük küçük hatırlatmalar yapacağım.
+
+52
+00:15:53,632 --> 00:15:56,912
+Kafanızda daha iyi oturması için, daha iyi anlayabilmeniz için.
+
+53
+00:15:57,875 --> 00:15:59,915
+Hocam, burada biz niye tersten gidiyoruz?
+
+54
+00:16:01,195 --> 00:16:21,955
+Bizim uygulamamızda bu şekilde bir tasarım var. Fark etmiyor. Yukarıdaki gibi de tasarlayabilirdik. Ama bizim şu an yazdığımız kodda tam tersine. Sağ ekleme yapıyoruz. Ödevde de herhangi bir değişiklik olacağını düşünmüyorum. Yine bizim bu kodda yaptığımız gibi ekleme yapabilirsiniz.
+
+55
+00:16:23,604 --> 00:16:30,064
+Yine ödevde de sorularınız olursa yine bir toplantı yapacağız. Orada da sorabilirsiniz.
+
+56
+00:16:32,744 --> 00:16:38,864
+Ben uygulamaya başlıyorum. Herhangi bir sorunuz yoksa. Bu arada chat'i sürekli kontrol edemiyorum arkadaşlar.
+
+57
+00:16:41,444 --> 00:16:44,044
+Sorularınızı sözler olarak da söyleyebilirsiniz.
+
+58
+00:16:46,164 --> 00:16:47,724
+Başlıyorum uygulamaya.
+
+59
+00:16:51,155 --> 00:16:55,436
+Şimdi bizim uygulamamızda iki tane strak yapısı olacak.
+
+60
+00:17:02,548 --> 00:17:08,947
+Bir tanesi data. Bu data, şirket çalışanlarımızın bilgilerini tutacak.
+
+61
+00:17:28,948 --> 00:17:36,508
+Hocam bu neyime direkt gir mi verdiniz ya, bunu dinamik olarak yapmanın bir yolun var mı? Yoksa projelerde falan sadece böyle mi kullandınız?
+
+62
+00:17:36,688 --> 00:17:38,108
+A, bir tanımlayabilirsiniz.
+
+63
+00:17:51,700 --> 00:18:08,539
+Bir tane data structure tanımladık arkadaşlar. Bu data da ne yapıyoruz? Biz şirket çalışanlarımızın ismini, soy ismini ve id'lerini tutuyoruz. Daha sonra employee diye bir tane daha structure tanımlayacağız. Buradaki tasarımımızda structure içerisinde bir structure olacak.
+
+64
+00:18:49,523 --> 00:19:14,463
+Ben daha sonra Employee tipinde bir Structure tanımladım. Bu Structure'ın içerisine de DAVT tipinde tanımladığım Structure'ı verdim. Daha sonra da tekrar Employee tipinde bir Structure'ın da Next'ini oluşturdum. Yani biz burada ne yapıyorduk? Bizim link listlerimizde benim bir tane verim olacak. Daha sonra da ben diğer nodu göstermek için de bir tane Next'im olması gerekiyor.
+
+65
+00:19:16,723 --> 00:19:25,543
+Onu da bu şekilde tanımladım. Bir tane verimi tutuyorum. Daha sonra ben diğer modumu gösterecek Next'i tanımladım.
+
+66
+00:19:25,543 --> 00:19:32,284
+Yani bu yaptığımız yapıda, Struck içerisinde bir tane daha Struckçır'ımız var.
+
+67
+00:19:33,344 --> 00:19:40,384
+Neden kullandım diye, neden bu şekilde yaptığımızı da sıralama kısmında size anlatacağım tekrardan.
+
+68
+00:19:41,875 --> 00:19:49,175
+Şimdi biz burada yapacağımız fonksiyonları tanımlayalım. Kayıt yapacağız.
+
+69
+00:19:57,491 --> 00:19:59,468
+Bu işlemini de hilde alacağız.
+
+70
+00:20:20,531 --> 00:20:29,571
+Daha sonra yazdırma işlemini yapacağız. Ekleme ve silme işlemi için fonksiyonu tanımladık. Daha sonra print işlemi için tanımlayalım.
+
+71
+00:20:48,084 --> 00:20:51,164
+Bu fonksiyonumuz içerisinde bir fonksiyon pointer alıyor.
+
+72
+00:20:52,943 --> 00:21:00,443
+Daha sonra mesela ben print records çağırdığımda bunun içerisine ilk önce öncelikli olarak ID'yi mi yazdırması gerekiyor,
+
+73
+00:21:00,443 --> 00:21:05,244
+DM'yi mi yazdırması gerekiyor, Söyleyimi mi yazdırması gerekiyor? Bunu ben belirleyeceğim.
+
+74
+00:21:05,483 --> 00:21:07,284
+Bu fonksiyon pointer'a göndereceğim.
+
+75
+00:21:14,003 --> 00:21:35,603
+Bu uygulamayı arkadaşlar kendiniz daha sonra yazmaya çalışın. Çünkü biraz karışık demeyeyim de. Yani biraz anlaması zor. Anlaması da zor. Yeni belki öğrendiğiniz için size farklı gelebilir. Tekrar kendiniz ben uygulamadan sonra kendiniz yazmaya çalışın.
+
+76
+00:21:50,195 --> 00:22:03,115
+Ara vermeyi düşünmüyorum ama mesela sıkılırsınız ya da artık hocam biz daha fazla anlayamıyoruz. Biraz ara verelim. Bir mola verin derseniz ara verebilirim.
+
+77
+00:22:26,836 --> 00:22:29,155
+En son ID kaldı.
+
+78
+00:22:41,971 --> 00:22:45,552
+Bunlar yazdırma işlemimiz için tanımladığımız fonksiyonlardı.
+
+79
+00:22:45,552 --> 00:22:51,311
+Şimdi sıralama işlemi için iki tane fonksiyon tanımlayacağız.
+
+80
+00:22:55,188 --> 00:23:02,588
+Annesi Enloy tipinde, Swap işlemini gerçekleştirecek. Sıralamayı Bubble Sword ile yapacağız.
+
+81
+00:23:40,468 --> 00:23:47,468
+Quant'ı yapacağız. Quant'ta da bizim eklediğimiz eleman sayısını kullanacağız. Eleman sayısını ifade ediyor şuradaki Quant.
+
+82
+00:23:47,468 --> 00:23:59,748
+Feature'da da işte id'ye göre mi sıralamak istiyoruz, name'e göre mi sıralamak istiyoruz, sur name'e göre sıralamak istiyoruz. Onu göndereceğiz buraya.
+
+83
+00:24:01,427 --> 00:24:07,468
+Daha sonra yine bir fonksiyon pointer'ımız var. Bu fonksiyon pointer'ında da
+
+84
+00:24:09,395 --> 00:24:15,695
+Azalan sıralamamı yapmak istiyoruz. Artan bir sıralamamı yapmak istiyoruz. Onu söyleyeceğiz.
+
+85
+00:24:31,539 --> 00:24:41,519
+Şimdi artan sıralamayı ve azalan sıralamayı nasıl gerçekleşeceğiz? Onlara da fonksiyonlarını yazalım onların. Herhangi bir ekleme işlemi yapmadan önce.
+
+86
+00:25:23,380 --> 00:25:37,380
+Buradaki feature, daha önceki Babasort'ta da belirttiğim gibi, yani şey, id, name ve örneğime göre olan sıralamayı belirlememizi sağlıyordu.
+
+87
+00:25:39,300 --> 00:25:44,660
+Bir ascending yapıyoruz burada, azalan ama artan bir sıralama yapacağız.
+
+88
+00:25:51,059 --> 00:25:56,019
+Feature eşittir sıfırsa, ID'ye göre bir sıralama yapmak istiyoruz.
+
+89
+00:26:00,788 --> 00:26:04,788
+string compare nasıl çalıştığını bilen var mı bu fonksiyonun?
+
+90
+00:26:05,788 --> 00:26:06,307
+C'de.
+
+91
+00:26:08,407 --> 00:26:10,708
+Söz hakkı alabilirsiniz arkadaşlar.
+
+92
+00:26:11,807 --> 00:26:15,508
+Hocam, aynı stringlerse sıfır döndürüyor.
+
+93
+00:26:15,927 --> 00:26:16,327
+Evet.
+
+94
+00:26:16,608 --> 00:26:23,347
+Bir büyükse bir, birinci büyükse bir, küçükse eksi bir gibi bir şey döndürüyor galiba.
+
+95
+00:26:23,588 --> 00:26:24,988
+Veya eksi bir diğer.
+
+96
+00:26:26,048 --> 00:26:26,488
+Evet.
+
+97
+00:26:26,928 --> 00:26:36,208
+Arkadaşlar, onu da hatırlatmaya koymuştum. Ne hatırlamayan arkadaşlar varsa gösterebilirim yine örneğini de. Doğru mu yazdık bakalım.
+
+98
+00:26:47,892 --> 00:26:50,972
+1 olduğunda neyime göre sıralama yapacağız?
+
+99
+00:27:28,115 --> 00:27:32,175
+Bunlardan hiçbiri değilse örneğime göre bir sıralama yapacağız.
+
+100
+00:28:11,284 --> 00:28:14,284
+Artan sıralamamız bu şekilde arkadaşlar.
+
+101
+00:28:18,867 --> 00:28:21,167
+Şimdi azalan sıralamayı yapalım.
+
+102
+00:28:21,167 --> 00:28:22,967
+Hemen.
+
+103
+00:28:54,740 --> 00:29:00,400
+Aynı şekilde buradan kopyalayacağım. Sadece yerlerini değiştireceğim. Bu azalan olduğu için descending.
+
+104
+00:29:02,559 --> 00:29:05,099
+Buraları bu sefer iki olacak. Tam tersi.
+
+105
+00:29:07,640 --> 00:29:12,320
+Değiştirirken bir yanlış yaparsam söyleyebilirsiniz arkadaşlar. Uyarabilirsiniz beni.
+
+106
+00:29:12,880 --> 00:29:16,160
+Daha sonra herhangi bir hatamızın nerede olduğunu aramayalım.
+
+107
+00:29:18,612 --> 00:29:23,711
+Yazarak anlatmak biraz zor oluyor. Hem kodu takip edip hem de bir şeyler açıklamak.
+
+108
+00:29:25,932 --> 00:29:32,612
+Şimdi bir tane beyin fonksiyonumuzu tanımlayalım. Arkadaşlar, fonksiyonlarımızı tanımlamıştık.
+
+109
+00:29:33,952 --> 00:29:37,432
+Ekleme işleminde dolduracağım ekleme fonksiyonunun içerisini.
+
+110
+00:29:41,428 --> 00:29:55,168
+Bu fonksiyon pointer'larımı tanımlıyorum. Şimdi benim fonksiyon pointer'ım vardı. Esenlik ve disenlik işlemlerini yapmak için bunları pointer tipinde tanımladığım bir diziye atıyorum. Oradan çağıracağım.
+
+111
+00:30:00,276 --> 00:30:05,416
+Yaptığımda daha iyi anlayabilirsiniz. Çalıştırdığımızda da şimdi biraz kafanız karışıyor olabilir.
+
+112
+00:30:54,900 --> 00:30:56,700
+Hocam, bu türden artık ben anlamadım.
+
+113
+00:30:57,000 --> 00:30:57,580
+Efendim?
+
+114
+00:30:58,540 --> 00:31:02,440
+Bu ilk satırda ne yaptık? 8. satırda tam anlamadım. Aratır mısınız?
+
+115
+00:31:03,380 --> 00:31:12,440
+Bir tane pointer tipinde bir tane dizi oluşturduk. Bu dizide de şimdi bizim fonksiyonlarımız vardı. Ascending ve descending olarak.
+
+116
+00:31:12,440 --> 00:31:21,620
+Bu fonksiyonları çağırabilmek için yaptım bunu. Şimdi biz... Şöyle göstereyim tekrardan.
+
+117
+00:31:23,188 --> 00:31:32,188
+Sıralama işlemi içerisinde, yani bubble sort içerisinde bu fonksiyon pointer ile biz o fonksiyonlarımızı çağırmak istiyoruz.
+
+118
+00:31:35,796 --> 00:31:41,036
+Ben Bubble Sort'ta Ascending ve Descending olarak bunları çağırmak istiyorum.
+
+119
+00:31:41,036 --> 00:31:45,596
+Bunları da birazdan şimdi Main Fonksyon içerisinde nasıl çağırdığımı göreceksiniz.
+
+120
+00:31:45,596 --> 00:31:49,596
+Belki o zaman daha iyi oturur kafanızda.
+
+121
+00:31:50,396 --> 00:31:54,155
+O zaman daha iyi anlatırım. Siz de daha iyi anlamış olursunuz.
+
+122
+00:31:55,356 --> 00:31:57,236
+Şu an yazmadığımız için daha.
+
+123
+00:32:09,172 --> 00:32:13,391
+Bu sort type ile belirleyeceğiz. Ascending mi descending mi yapacağımızı.
+
+124
+00:32:22,195 --> 00:32:27,695
+Count'la dizimizin, link listeki eleman sayısını tutacağız.
+
+125
+00:32:29,695 --> 00:32:36,195
+Bu da eleman, eklendi mi eklendilmedi mi de bu interest ile kontrol edeceğiz ya da silindi mi silinmedi mi.
+
+126
+00:32:36,195 --> 00:32:38,195
+Count'ı ona göre arttıracağız.
+
+127
+00:32:55,476 --> 00:33:01,016
+Burada şeyi buradan kopyalayayım. Yazmak yerine zaman kaybetmeyelim.
+
+128
+00:33:03,856 --> 00:33:09,096
+Bizim ne vardı arkadaşlar? Ed işlemimiz vardı. Yeni bir çalışan ekleyecektik.
+
+129
+00:33:09,176 --> 00:33:17,436
+Cimo, silme işlemi. Daha sonra ID'ye göre, name'e göre ve örneğime göre sıralama işlemlerimiz olacak.
+
+130
+00:33:28,180 --> 00:33:31,440
+Key 1'de biz ekleme işlemi yapıyorduk.
+
+131
+00:33:38,675 --> 00:33:47,056
+Add Record. Buraya ne yapacağız? Head'in adresini göndereceğiz.
+
+132
+00:33:53,844 --> 00:34:00,824
+Ekleme işlemi doğru bir şekilde gerçekleştiyse counter'ı arttıracağım.
+
+133
+00:34:04,884 --> 00:34:07,984
+Daha sonra da bunu print edeceğim.
+
+134
+00:34:11,572 --> 00:34:14,372
+Bu yazdığımız fonksiyonların içini dolduracağız birazdan.
+
+135
+00:34:31,123 --> 00:34:37,863
+Arkadaşlar, bakın fonksiyon pointerları nasıl kullanıyoruz? Onu da söyleyeyim şimdi bu örnekle birlikte.
+
+136
+00:34:38,483 --> 00:35:04,143
+Şimdi ben ne yaptım? Print record dedim. Print ID first dedim. Yani ID'ye göre sırala. İlk önce ID'leri sırala. ID'ye göre bir sıralama yapmak istediğimi söyledim. Ben ne yapıyordum? Print record'da bir tane fonksiyon pointer alıyordum. Bu fonksiyonun benim tipini belirtiriyorum. Void tipinde olacak. İçerisine de bir employ objesi alacak diyorum.
+
+137
+00:35:06,483 --> 00:35:27,023
+Print ID first'ü çağıracağım. Çünkü bu fonksiyonun adını yazdım buraya. Bu fonksiyonumuzun da alacağı neydi? Employee objesi alacaktı. Bunu da bu fonksiyon pointer'ında belirtiyorum. Yani benim burada çağıracağım fonksiyon void tipinde olacak.
+
+138
+00:35:27,552 --> 00:35:45,632
+Ve bu Employee objesi alacak diye belirtmiş oluyorum. Şimdi burada tanımladığım Print Recourse, Print Name, Print Surneam işlemlerini yapacağız. İlk önce ekleme işleminden sonra. İlk önce nasıl ekleme işlemi yapıyoruz ona bakalım. Daha sonra yazdırma işlemlerini gerçekleştirelim.
+
+139
+00:36:13,172 --> 00:36:15,492
+Bir tane Employee tipinde.
+
+140
+00:36:19,764 --> 00:36:30,344
+Amp objeniz olsun. Ben ne yapacağım? Bu Amp objesi için bellekli bir yer ayırmam gerekiyor. Bunu dinamik olarak yapacağım.
+
+141
+00:36:34,579 --> 00:36:39,779
+Yeni bir ekleme yapacağım için, buna hafızada yer açmam gerekiyor arkadaşlar.
+
+142
+00:36:52,115 --> 00:37:00,355
+Daha sonra, data tipinde yine bide objesi için hafızada yer açacağım.
+
+143
+00:37:00,596 --> 00:37:22,315
+Çünkü benim Employee Structure'ımın içerisinde ne vardı? Data tipinde tekrardan bir tane structure vardı. Yani Structure içerisinde Structure kullanıyorduk biz bu yapımızda. O yüzden her bir obje oluştururken, Employee tipinde bir tane obje oluştururken benim hem Employee için hem de Data için hafızada bir yer ayırmam gerekiyor.
+
+144
+00:37:25,315 --> 00:37:26,315
+Hemen oluşturalım.
+
+145
+00:37:38,771 --> 00:37:41,492
+Bunların bir kontrollerini gerçekleştirelim hemen.
+
+146
+00:38:04,884 --> 00:38:24,364
+örneksi birden. Ben bunları eğer hafızada doğru bir şekilde yer ayırdıysam şimdi diyeceğim ki benim employee yani amp objemin D'si burada tanımladığım
+
+147
+00:38:24,916 --> 00:38:49,235
+D'ye eşit adı tipinde bir tane D Structure oluşturmuştum ben. Buna da hafızada yer ayırmıştım. Bu oluşturduğum Employee tipindeki M adındaki Employee objemin D'sine burada oluşturduğu D'yi atıyorum. Daha sonra kullanıcıdan girdi alacağım.
+
+148
+00:38:52,115 --> 00:38:55,096
+Hocam, orada yazan TMP, NOL, MEP mi olacak?
+
+149
+00:38:57,456 --> 00:39:00,275
+Ay evet, teşekkür ederim uyardığın için.
+
+150
+00:39:02,836 --> 00:39:05,675
+Arkadaşlar, herhangi bir yanlışımı görürseniz uyarabilirsiniz.
+
+151
+00:39:07,135 --> 00:39:09,576
+Hocam, 48. satırda da vardı sağolun.
+
+152
+00:39:10,796 --> 00:39:11,715
+Bakıyorum hemen.
+
+153
+00:39:18,099 --> 00:39:19,139
+Uğdu nâle davar.
+
+154
+00:39:27,987 --> 00:39:35,967
+Hocam, PPTR mi, PTPR mi? Fonksiyonlar, şey tanımlarken farklı, buraya farklı yazdık da biraz.
+
+155
+00:39:36,167 --> 00:39:42,167
+Yok, burada fark etmiyor arkadaşlar. Oradaki tanımladığım Pointr ismi.
+
+156
+00:39:50,356 --> 00:40:05,695
+Tamam, biz ekleme işlemine devam edelim. Ekleme işleminden sonra diyorum ki, employ, ben employ, aslında bu employ timde bir MP diyorum, yine bir employ deyip kafanızı karıştırmayayım.
+
+157
+00:40:17,556 --> 00:40:29,155
+Artık EMP objesi olacak. Daha sonra da doğru bir şekilde ekleme yaptığımda return 0'ı döndürecek.
+
+158
+00:40:29,155 --> 00:40:33,235
+Şimdi ben bunu şurada hazırladığım şey üzerinde göstereyim.
+
+159
+00:40:33,940 --> 00:40:47,079
+Şimdi biz arkadaşlar ne attık? Benim şu an sadece D1'i eklediğimi düşünün. D2 ve D3 yok. Yani benim hem yiğidim hem head'im hem de next'i burayı gösterecek.
+
+160
+00:40:58,996 --> 00:41:16,996
+Hem de head EMP olacak. Yani şu an benim tek bir tane değerim olduğu için herhangi bir yazdığım structure'da, herhangi bir yani yaptığım link liste, herhangi bir değer eklemediğim için benim ekleyeceğim değer ilk olduğunda bu işlemi yapıyor. Hem head'im hem de...
+
+161
+00:41:17,556 --> 00:41:42,016
+mhp benim aynı employee objesini göstermiş oluyor. Ama şimdi bizim d1'imiz var. Biz d2'yi eklemek istiyoruz. Ne yapacağız? Benim ne yapıyordu? d1'di head'im. Diyorum ki ben amp objesini ekliyorum. Ampin next head olsun. Yani bu bağlantıyı sağlıyorum.
+
+162
+00:41:42,452 --> 00:41:52,452
+Bu benim amp-ogjem. Yeni eklerken D2'yi. Next'i diyorum. Head olsun. Daha sonra ben head'e gelip...
+
+163
+00:41:53,811 --> 00:42:11,811
+Yeni eklediğim objeyi atıyorum. Artık benim head'im D2 olmuş oluyor. D1 olmamış oluyor. Bu şekilde bağlantıları sağlıyorum birbiriyle arasındaki. Bunu dediğim gibi uygulamadan sonra kendiniz de çizerek yaparsanız o bağlantıları daha iyi anlamış olursunuz.
+
+164
+00:42:12,532 --> 00:42:37,372
+Ben bu şekilde anlatabilmek için şimdilik şekil üzerinde gösterdim. Çünkü biraz direkt kod üzerinde yaptığınız şeyleri anlamak bazen zor oluyor. Özellikle veri yapılarında da ekleme, çıkarma işlemlerinde anlamakta sıkıntı yaşayabilirsiniz. Bu çok normal. İlk öğrenirken biraz direkt oturmuyor yapısı. Biraz sizin çaba sarf etmeniz gerekiyor anlamak için.
+
+165
+00:42:41,876 --> 00:42:49,476
+Şimdi de Print işlemlerini yapalım arkadaşlar. Daha sonra bu ekleme işlemi deneyelim bakalım ekleyebiliyor muyuz?
+
+166
+00:42:52,980 --> 00:42:56,300
+Yine sorunuz olduğunda beni bölebilirsiniz. Hiçbir sıkıntı yok.
+
+167
+00:43:47,123 --> 00:43:56,823
+Ben burada bir tane fonksiyon pointer tanımladım. Daha sonra burada işte yukarıda da anlattığım gibi id'ye göre, name'e göre, surname'e göre çağıracağım.
+
+168
+00:43:56,823 --> 00:44:00,663
+Fonksiyonları çağıracağım orada fonksiyon pointer'da.
+
+169
+00:44:55,699 --> 00:45:07,699
+Şimdi arkadaşlar, ben geleceğim. Benim ne yapıyor? Print Recourse dediğimde bir tane hedi alıyor. Daha sonra da Employee tipinde bir...
+
+170
+00:45:08,788 --> 00:45:36,387
+Veri alan, bir tane void tipinde, içerisinde employee tipinde bir sırak alan bir fonksiyon pointer'ım var. Birazdan yazdırırken ne yapıyordum da bu fonksiyon pointer'ıma ben main içerisinde print id first, yani ilk önce id'ye göre sıralı fonksiyonunu gönderiyordum. Daha sonra bu fonksiyonu gönderdikten sonra ne yapacak? Temp diyecek. Temp'in next'ine eşit.
+
+171
+00:45:36,788 --> 00:45:44,288
+Yani benim link listimde dolaşacak. Ta ki tempim nala eşit olana kadar. Nala eşit olduğunda işlemi durduracak.
+
+172
+00:45:46,427 --> 00:45:54,547
+Şimdi bu yazma işlemlerini şuradan kopyalayacağım arkadaşlar. Çünkü bizi oyalayacak baya. Ne yaptığımızı da burada söyleyeceğim tekrardan.
+
+173
+00:45:59,315 --> 00:46:14,895
+Ne yapıyorum? Ben bu name first dediğimde, ilk önce name'i yaz dediğimde, ilk önce burada ne yapıyorum? Buraya gönderdiğim employee tipindeki E'nin datasından name'i yazdırıyorum.
+
+174
+00:46:14,895 --> 00:46:27,315
+Sörneğimini yazdırıyorum, ID'sini yazdırıyorum. Sörneğime göre sırala dediğimde, yani sıralama değil de yazdırma işlemi bu. Sörneğime göre yazdırıyor. E'nin datasından ilk önce sörneğime yazdırıyorum.
+
+175
+00:46:27,315 --> 00:46:29,395
+Daha sonra name'in id'sini alıyor.
+
+176
+00:46:30,036 --> 00:46:34,655
+ID'ye göre bir sıralama işlemi yaptığımda da ilk önce id'yi alıyor.
+
+177
+00:46:35,175 --> 00:46:37,496
+Daha sonrası örneğimi, daha sonra da name'i alıyor.
+
+178
+00:46:37,996 --> 00:46:42,215
+Bunlar bizim zamanımızı almasın diye hızlı bir şekilde yazdım.
+
+179
+00:46:47,188 --> 00:46:49,188
+Bunu şeyin amayağı bu şiddet var.
+
+180
+00:46:53,108 --> 00:47:03,188
+Gelelim şimdi main içerisine. Main'de ne yapıyorduk? Biz birinci opisyonu seçtik. Bizim kullanıcımız bir işlemini seçtiğinde geliyordun.
+
+181
+00:47:03,699 --> 00:47:31,179
+Ben buraya hidden adresini gönderiyordum ve ekleme işlemi yapıyordum. Ekleme işlemi de biz kullanıcıdan name, surname ve id istiyorduk. Benim ekleme işlemi başarılı bir şekilde sonlandığında benim fonksiyonum sıfır döndürüyordu. Sıfır döndüğünde de ben ne yapıyorum? Count'u arttırıyorum. Yani başarılı bir şekilde link listime eleman eklemiş oluyorum. Daha sonra ben bu eklediğim elemanları da yazdırmak istiyordum.
+
+182
+00:47:31,699 --> 00:47:58,619
+yazdırmak istiyorum. Print record metodu ne yapıyor? Fonksiyonu. İçerisinde head alıyor ve print id first yani bir tane fonksiyon alıyor. Bunları nasıl yapıyoruz? Bir fonksiyon içerisine parametre olarak bir fonksiyon alıyor. Bunu da fonksiyon pointer olarak sağlıyoruz arkadaşlar. Şimdi çalıştıralım. Umarım bir hatamız yoktur. Evet var. Bakalım.
+
+183
+00:48:02,516 --> 00:48:05,556
+P'yi yazmamışsınız hocam. Employee yazarken o tamammış.
+
+184
+00:48:09,096 --> 00:48:12,315
+Göremedim ama. Evet tamam P'yi yazmamışım şuraya.
+
+185
+00:48:20,275 --> 00:48:29,275
+Print record'da bir sıkıntı var. Onun galiba sesini yazmamışım, unutmuşum şurada.
+
+186
+00:48:42,483 --> 00:49:07,563
+Tekrar Compile Run diyorum. Evet arkadaşlar, şu an çalıştı. Bir ince ekleme yapalım. Ne diyeyim buraya? Ahmet Yılmaz diyeyim, sallıyorum. ID'si 15.00 olsun. Tekrar bir ekleme işlemi yapmak istiyorum. Bu da Mehmet Yılmaz olsun.
+
+187
+00:49:09,460 --> 00:49:14,028
+Bu da 15.001 olsun.
+
+188
+00:49:14,483 --> 00:49:32,463
+Bu şekilde arkadaşlar. Benim demek istedim, yapıda mesela ne yapıyor? Ahmet Yılmaz'ı biz ID'ye göre bir sıralama yapmıştık. ID first demiştim çağırırken fonksiyonu. Mesela ben ne yaptım? Ahmet'i ilk önce sıraladım. Ama Ahmet'in önüne ekliyor Mehmet Yılmaz'ı.
+
+189
+00:49:32,463 --> 00:49:41,784
+Ahmet tam tersi dediğim gibi, burada size göstermiştim şeyde. Biz tam tersi, yeni eklediğini head olarak tanımlıyor.
+
+190
+00:49:46,739 --> 00:49:47,759
+Kapatayım burayı.
+
+191
+00:49:50,199 --> 00:49:52,719
+Burada bir sorunuz var mı sormak istediğiniz?
+
+192
+00:49:53,299 --> 00:49:57,619
+Ben buraya Print Name First dediğimde de isimleri başa getirecekti.
+
+193
+00:49:57,699 --> 00:50:02,839
+Ben ID dediğim için ID'leri yazıp daha sonra soy ismini, sonra name'ini yazdık.
+
+194
+00:50:02,839 --> 00:50:06,219
+Tamamen bunun üzerinde değişiklik yapabilirsiniz zaten.
+
+195
+00:50:06,359 --> 00:50:07,199
+Size kalmış.
+
+196
+00:50:07,939 --> 00:50:10,219
+Şimdi silme işlemini gerçekleştirelim.
+
+197
+00:50:12,979 --> 00:50:13,659
+Gelelim.
+
+198
+00:50:18,387 --> 00:50:28,108
+Bilme işleminde biz ne yapacağız? Kullanıcıdan bir ID almamız gerekiyor. Onu fonksiyon içerisinde çağıracağız.
+
+199
+00:50:28,108 --> 00:50:30,427
+İsteyeceğiz, pardon.
+
+200
+00:50:38,068 --> 00:50:40,368
+Yine adresini gönderiyorum.
+
+201
+00:50:43,923 --> 00:50:50,583
+Burada yine silme işlemi doğru bir şekilde gerçekleşti mi, gerçekleştirme mi, onu kontrol etmem ediyorum.
+
+202
+00:50:51,604 --> 00:50:58,524
+Yine sıfır dönüyorsa fonksiyonum, silme işlemini başarılı bir şekilde gerçekleştirmiş oluyorum.
+
+203
+00:51:04,563 --> 00:51:29,304
+Daha sonra yine print record dediğimde iti çağırayım. Daha sonra da mesela bunu da print name first diyelim. Yani isme göre sıralama değil, ismi öne alarak bir sıralama gerçekleştirsin.
+
+204
+00:51:30,643 --> 00:51:38,043
+Daha sonra da bir ekleyelim. Şimdi görelim, silme işlemini gerçekleştirelim. Nasıl gerçekleştiriyoruz ona bakalım.
+
+205
+00:52:06,835 --> 00:52:12,536
+Bizim bir tane ID'ye ihtiyacımız var. ID'yi eşleştirerek simpeşlemi gerçekleştirecek.
+
+206
+00:52:20,115 --> 00:52:26,155
+Orada da silmek istediğimiz elemanı bulup bulmadığımızı kontrol etmek için yapıyoruz.
+
+207
+00:52:35,572 --> 00:52:39,652
+Enter ID diyelim. Kullanıcıdan ID'yi alalım, silmek istedi.
+
+208
+00:53:08,563 --> 00:53:14,943
+Yine bir tane TMP isminde bir employee tipini de değişken oluşturuyorum.
+
+209
+00:53:17,023 --> 00:53:18,183
+HID'i buna atıyorum.
+
+210
+00:53:24,148 --> 00:53:51,967
+Bir de ayrıyetten bunu Previews adında, yine Employee tipinde bir değişken oluşturuyorum. Buna da Null diyorum. Benim silme işlemlerinde bu Preview'i tutmam gerekiyor. Çünkü birbirlerine bağlamak için, mesela ortadaki bir elemanı sildiğimde o elemandan önce gelen, elemandan sonra gelen elemanları birbirine bağlanmam gerekiyor. Bunun içinde de Preview'i tutmam gerekiyor. İlk başta bizim Preview'imiz ne oluyor? Null oluyor.
+
+211
+00:53:52,148 --> 00:54:00,847
+Çünkü ben her zaman headden başlıyorum kontrol etmeye. Burada da baktığımız gibi headin previews'u nal oluyor. Bunun nalı gösteriyor.
+
+212
+00:54:05,364 --> 00:54:10,064
+Geldim. Kontrol etme işlemleri başlayalım.
+
+213
+00:54:26,579 --> 00:54:28,159
+Bunların alınılmadığı sürece.
+
+214
+00:54:29,844 --> 00:54:38,684
+Hocam, siz şey demiş midiniz, biz sondakini head alıyoruz bu programda diye. O yüzden headin preview'u ondan önceki eleman olmaz mı?
+
+215
+00:54:38,684 --> 00:54:57,804
+Son olarak almıyoruz. Yine eklediğimiz eleman head oluyor. Her zaman da headin preview'su null oluyor. Yani şöyle bir şey, normalde farklı yapılarda tasarlayabilirsiniz link list, yani şu iki yapıdaki gibi. Her zaman sizin ilk eklediğiniz eleman head olabilir.
+
+216
+00:54:57,844 --> 00:55:10,923
+Ama bizim tasarladığımız sistemde ilk eklediğimiz eleman head olmuyor. Her zaman yeni eklemiş olduğumuz eleman head oluyor. Ve her zaman da headin previews'u null olmuş oluyor. Yani null gösteriyor.
+
+217
+00:55:12,443 --> 00:55:13,184
+Anladım hocam.
+
+218
+00:55:18,547 --> 00:55:37,367
+Farklı şekilde, önceki gösterdiğim gibi de bir tasarım görürseniz ama şey yapmayın diye. Kafanız karışmasın diye gösterdim onu da. İki türlü de olabilir. O sizin tasarımınıza kalmış artık. Link listeki önemli şey, o linklerin birbirlerinin adreslerini göstermeleri.
+
+219
+00:55:40,107 --> 00:55:45,547
+Kontrol edeceğim şimdi. Kullanıcıdan girdiğim değer benim.
+
+220
+00:55:46,963 --> 00:55:51,264
+Notlarım arasındaki datadaki ID'ye eşit mi diye.
+
+221
+00:56:05,139 --> 00:56:10,339
+Burada kontrol ediyor. Eğer diyorum bunlar birbirine eşitse gelecek.
+
+222
+00:56:13,139 --> 00:56:16,339
+Found bir olarak değişecek artık ben buldum.
+
+223
+00:56:19,139 --> 00:56:22,539
+Bir de benim bu head'im mi, head mi diye kontrol ediyorum.
+
+224
+00:56:23,139 --> 00:56:30,339
+Eğer prev eşit eşittir nalsa, bu benim head'im oluyor.
+
+225
+00:56:31,507 --> 00:56:49,507
+Ben burada hedi silme işlemi gerçekleştiriyorum. Artık diyorum ki benim hedi tempin next'i. Yani benim oluşturduğum temp objem, gezerken tmp objem aslında hedi-miş.
+
+226
+00:56:49,507 --> 00:56:58,507
+Diyorum ki artık ben bu temp'i siliyorum. Benim de artık hedi tempin next'i hedi göstersin diyorum.
+
+227
+00:56:58,643 --> 00:57:00,883
+Burada bu işlemi gerçekleştirdim arkadaşlar.
+
+228
+00:57:03,923 --> 00:57:10,403
+Eğer head değilse benim silmek istediğim obje, diyorum ki prev.
+
+229
+00:57:12,903 --> 00:57:14,663
+Prev'in next'i.
+
+230
+00:57:19,476 --> 00:57:45,316
+Tempin Next'ini gösterecek. Yani şurada da şu işlemi yaptım. Tekrar bunun üzerinde göstereyim. D2'yi siliyorum. D2'nin Prev'i D3'tü. Prev'in Next'i artık Tempin Next'ini gösterecek. Yani D3 ile D1 arasına bir bağlantı ekliyorum. Burayı anladınız mı arkadaşlar?
+
+231
+00:57:51,284 --> 00:57:53,724
+Arkadaşlar, anladınız mı? Hiç kimseden ses yok.
+
+232
+00:57:55,444 --> 00:57:57,104
+Hocam, tekrar edebilir misiniz?
+
+233
+00:57:58,484 --> 00:58:06,304
+Tamam, ediyorum. Arkadaşlar, şimdi benim link listimin bu şekilde olduğunu düşünün. Benim D1, D2, D3 objem var.
+
+234
+00:58:06,672 --> 00:58:25,472
+Ben buradan gelip aradaki bir elemanı silmek istiyorum. Yani benim D2'yi buradan silmek istiyorum ben. Bu şekilde yapıyorum. Şimdi D2'nin pirevi neyi benim? D3'ü objem. Yani pirevi bunun D3'ü gösteriyor. Next'i de D1. Yani TMP objemi next'i de D1.
+
+235
+00:58:31,987 --> 00:58:53,007
+Previn'in Next'i benim TMP'nin Next'ini gösteriyor. TMP'nin yani D2'nin Next'i neydi? D1. Artık Previn Next'i D1'i gösterecek. Yani ben bunlar arasında bir bağlantı oluşturuyorum. D3 ile D1 arasında. Bunu ortadan kaldırdım.
+
+236
+00:58:55,687 --> 00:58:59,427
+Biraz yavaş gidiyorum arkadaşlar. Hani şey olsun diye siz de.
+
+237
+00:59:00,403 --> 00:59:03,483
+Daha iyi anlayın diye. Anlatarak.
+
+238
+00:59:03,763 --> 00:59:07,183
+Hocam, Prev'i nalt tanımladık. Her zaman nalt çıkmayacak mısın?
+
+239
+00:59:08,763 --> 00:59:16,523
+Hayır, şöyle bir şey var. Prev her zaman nalt tanımla çıkmayacak. Birazdan Prev'i değiştireceğim arkadaşlar. Şu alt tarafta.
+
+240
+00:59:18,223 --> 00:59:23,443
+Bulamadığımda, yani herhangi eşit çıkmadığımda Prev de değişecek, Tent de değişecek.
+
+241
+00:59:25,023 --> 00:59:27,303
+Burada değiştirme işlemini yapıyorum hatta.
+
+242
+00:59:54,483 --> 01:00:00,483
+Nasıl yaptım? Arkadaşlar, şimdi geldiğimden arkadaşlar, normalde neydi? Benim TMP'm hedi gösteriyordu.
+
+243
+01:00:00,483 --> 01:00:16,483
+Geldim, burada TMP için kontrol ediyorum. TMP'nin ID'si benim girdiğim ID'ye eşit mi? Eşitse bunun şeyine bakıyorum. Benim Previ bunun nal mı? Yani benim buradaki TMP objem...
+
+244
+01:00:16,755 --> 01:00:36,235
+Head mi? İlk başta ben ne yapmıştım? Prev'i nal olarak tanımlamıştım. Eğer benim head'ime uymuyorsa, benim head değilse bu, bu aşağıdaki işlemi yapıyor. Daha önceki sunum üzerinden de anlattığım şeyi yapıyor. Prev'in next'ine temp'in next'ine atıyor.
+
+245
+01:00:45,652 --> 01:00:52,412
+Temp'i Prev'e atıyorum. Temp de eşittir.
+
+246
+01:00:52,412 --> 01:01:05,292
+Diyorum ki artık benim Prev'im Temp'i Prev'e atıyorum. Temp'im de artık TMP'nin Next'i oluyor. Artık benim Prev'im TMP oluyor.
+
+247
+01:01:06,003 --> 01:01:20,743
+TMP'de TMP'nin next oluyor. Yani bir bir bir kayıyor bunlar. Tek tek tek kontrol et işlemini yapıyor. En sona geldiğinde de ne oluyor? TMP nala eşit oluyor. Nala eşit olduğunda da benim val döngümden çıkıyor.
+
+248
+01:01:23,987 --> 01:01:36,127
+Burada herhangi bir sorunuz var mı arkadaşlar? Burada birazcık aklınızın karışması çok normal. Çok basit konular değil bunlar. Zaten veri yapıları, daha veri yapılarını da görmediniz.
+
+249
+01:01:40,179 --> 01:01:41,959
+Tekrardan eğer uygulamayın.
+
+250
+01:01:41,959 --> 01:01:45,559
+Hocam orayı Tire ve Çiftli TMFK'sin arası için almanız gerekiyor.
+
+251
+01:01:46,719 --> 01:01:51,919
+Burayı her seferinde almanız gerekiyor. Evet. Bu vali döngüsünde ilerleyebilmek için.
+
+252
+01:01:56,884 --> 01:02:04,244
+İterrail ediyorsunuz aslında. Her seferinde diğer değişkene geçiyorsunuz.
+
+253
+01:02:08,179 --> 01:02:14,299
+Şimdi çalıştıralım. Bir eksiğimiz var mı? Remove'da elini gönderdik.
+
+254
+01:02:16,299 --> 01:02:21,499
+Re yaptık. Çalıştırıyorum artık. Hatamız olursa da kontrol ederiz.
+
+255
+01:02:22,459 --> 01:02:28,659
+İlk önce bir Compile edelim. Run diyorum.
+
+256
+01:02:29,939 --> 01:02:31,739
+Yine ekleme işlemini yapalım.
+
+257
+01:02:32,179 --> 01:02:35,899
+Burada kısa olsun diye hemen bu şekilde bir işlemi ekleyeceğim.
+
+258
+01:02:44,275 --> 01:02:47,895
+Şimdi remove diyorum. Remove işlemini seçtim.
+
+259
+01:02:48,516 --> 01:02:53,576
+ID'yi iki olarak giriyorum. Benim ikinci girdiğim değeri silmiş oluyor.
+
+260
+01:02:53,576 --> 01:02:58,195
+ID'ye göre bir eşleşme yaptı. Daha sonra da silme işlemini gerçekleştirdi.
+
+261
+01:03:00,635 --> 01:03:06,016
+Arkadaşlar, bu silmeye kadar sorusu olan var mı? Bittikten sonra da sorabilirsiniz uygulama.
+
+262
+01:03:06,155 --> 01:03:11,475
+Şimdi de sorabilirsiniz. Hiç fark etmiyor. Çünkü burada siz öğrenin diye anlatıyorum.
+
+263
+01:03:12,115 --> 01:03:15,835
+Hiç önemli değil. Uzaya da bilir. Benim için bir sıkıntı yok.
+
+264
+01:03:20,563 --> 01:03:43,283
+Şimdi ne yapacağız? Burada da bir sıralama işlemi gerçekleştireceğiz notlar arasında. Bunu Ascending ve Descending'in göre kullanıcıya bir seçme hakkı tanıyacağız. Kullanıcıya soracağız diyeceğiz ki azalan bir sıralama mı istiyorsunuz, artan mı? Peki bunu ID'ye göre mi yapmak istiyorsunuz? Name'e göre mi? Sur Name'e göre mi diye bunu kullanıcıya soracağız.
+
+265
+01:03:45,108 --> 01:03:51,507
+İlk önce bu case içerisini yazalım. Daha sonra bubble sort fonksiyonu içerisini dolduralım.
+
+266
+01:04:26,291 --> 01:04:30,291
+Sonucudan aldığımızı Store Type'in içerisine göndereceğiz.
+
+267
+01:04:47,572 --> 01:04:50,172
+Sort type böyle mi tanımlamıştık? Evet.
+
+268
+01:04:54,739 --> 01:04:58,635
+Daha sonra içerisinde Bubble Sort'u çağıracağız.
+
+269
+01:05:05,588 --> 01:05:17,868
+Bunun içerisinde de head'i gönderiyorduk. Count'u gönderiyoruz. Kaç tane elemanımız var elimizde? 0 dediğimde id'ye göre bir sıralama yapacak.
+
+270
+01:05:49,076 --> 01:06:13,996
+ID'ye göre bir sıralama yaptım. Arkadaşlar, ben burada ne yaptım? Şimdi kullanıcıdan 1 ve 2 olarak girdiyiz dedim. Dedim ki, send link yapmak istiyorsan 1'e gir, send link yapmak istiyorsan da 2'ye gir dedim. Burada bunu ne yaptım? Sort type'ı atadım. Daha sonra kullanıcım 1 girdiğinde, sort type'ın 1 olduğunda
+
+271
+01:06:14,547 --> 01:06:42,547
+Burası ne olacak? Sort type x1'den 0 olacak. Ben ne yapmıştım? Burada ftpr diye fonksiyon pointer'ım vardı benim. Buraya geldim. Bunları da ben bu şekilde bir dizi içerisinde tanımlamıştım. Eğer iki tane elemanım olacaktı benim, 0 girdiğinde, 1 girdiğinde 1-1'den 0 gelecek. Diyecek ki bunun sıfırıncısı indisindeki fonksiyon çağıracak. Bu şekilde de snd...
+
+272
+01:06:42,547 --> 01:07:06,687
+Bu da descending işlemi yapacak. Eğer iki girseydi de iki eksi birden birinci indisindeki fonksiyonu çağıracaktı. Bu da descending işlemi olacaktı. Bu şekilde çağırıyor burada. Bu girdiğim feature da benim id'ye göre, name'e göre ve surname'e göre sıralama yaptığımı söylüyor. Şuraya bir yorum satır ekleyeyim size çalışırken.
+
+273
+01:07:07,155 --> 01:07:10,835
+Neye göre bir sıralama yaptığınızı daha rahat anlamış oluyorsunuz?
+
+274
+01:07:20,340 --> 01:07:35,320
+Bu şekilde geliyoruz şimdi. Bubble Sort'umuzun işlemlerine ekleyeceğiz. Benim Bubble Sort'ta kullandığım bir swap işlemin vardı. Bubble Sort'u hatırlıyor musunuz arkadaşlar ya da biliyor musunuz?
+
+275
+01:07:39,476 --> 01:07:42,916
+Bilmeyen varsa küçük bir hatırlatma yapacağım. Ondan sonra devam edeceğim.
+
+276
+01:08:02,867 --> 01:08:08,827
+Arkadaşlar, herkes biliyor olarak kabul ediyorum o zaman. Anlamadığınız yeri tekrardan durdurabilirsiniz beni.
+
+277
+01:08:17,140 --> 01:08:22,060
+Mesela biz ne yapıyorduk? Bubble Sort içerisinde hep bir swap işlemi yapıyorduk.
+
+278
+01:08:22,060 --> 01:08:29,320
+Swap işleminde şu an bizim için kolaylık olsun diye diyeceğiz ki biz bu notlarımızın yerini değiştirmeyelim.
+
+279
+01:08:29,880 --> 01:08:33,820
+Sadece notlar içerisindeki dataları değiştirelim.
+
+280
+01:08:33,820 --> 01:08:37,240
+Yani burada... Bir dakika.
+
+281
+01:08:38,420 --> 01:09:00,380
+Ben mesela D2 ile D3'ü değiştirmek yerine D2 içerisindeki veriyi D3'e yazıyorum. D3 içerisindekini de D2'ye yazıyorum. Yani ben burada notların yerini değiştirmek bizim için daha fazla işlem gerektiriyor. O linkleri bağlamak falan biraz daha karışık işlemler.
+
+282
+01:09:00,979 --> 01:09:17,099
+Daha basit olsun diye, daha basit bir şekilde SWEP işlemi yapabilelim diye biz sadece bunlar içerisindeki dataları değiştireceğiz. O yüzden de mesela baktığımızda buraya datatipinde bir sırak oluşturdum. D isminde datatipinde bir sırak oluşturdum.
+
+283
+01:09:30,963 --> 01:09:35,984
+TTR2'nin içerisindeki D'yi buraya atadım. Şimdi burada değiştirmeyi sebep işleme yapıyorum.
+
+284
+01:09:38,484 --> 01:09:41,023
+Hocam oradaki TMP fazla değil mi?
+
+285
+01:09:42,064 --> 01:09:43,043
+Ay evet fazla.
+
+286
+01:09:45,183 --> 01:09:50,023
+Buraya direkt TMP diyecektim. Data tipinde ya D yazdım direkt buraya.
+
+287
+01:09:52,003 --> 01:09:53,503
+Teşekkür ederim uyardığın için.
+
+288
+01:10:11,347 --> 01:10:26,307
+Daha sonra PTR1'in datasına da tempi atıyorum. Benim tempi içerisinde PTR2'nin içerisindeki data vardı. Bu şekilde içerisindeki dataları değiştirmiş oldum arkadaşlar.
+
+289
+01:10:27,699 --> 01:10:45,680
+Burada neden data içerisinde, neden data tipinde bir sırak oluşturup, TMP adında bir sırak oluşturup değişiklik yaptığınızı anladınız mı? Yani bizim o linkler arasında yani o direkt notları yer değiştirmek bizim için daha büyük bahaliyetli olacaktı.
+
+290
+01:10:46,064 --> 01:11:12,004
+Daha rahat bir sebeb işlemi yapabilmek için sadece biz içerisindeki datayı değiştirdik. Bu yüzden zaten yukarıda bizim iki tane strak tanımlamamızın sebebi de buydu. Yani strak içerisinde bir tane daha strak tanımladık. Aslında employee strak içerisinde bir tane daha strak alıyordu. Bunu yapmamızın amacı buradaki sıralama işlemini daha rahat yapabilmekti.
+
+291
+01:11:12,692 --> 01:11:16,811
+Neden böyle yaptınız? Şimdi daha kafanıza net bir şekilde oturdu mu arkadaşlar?
+
+292
+01:11:20,787 --> 01:11:22,787
+Şimdi Bubble Sort yapalım.
+
+293
+01:11:29,363 --> 01:11:30,484
+İçer sınır.
+
+294
+01:11:47,667 --> 01:11:53,807
+Buradaki fonksiyon pointerda da ascending ve descending yapacağımıza karar veriyorduk.
+
+295
+01:11:53,807 --> 01:11:56,867
+İçerisinde fonksiyon pointer alıyor yine aynı şekilde.
+
+296
+01:12:38,003 --> 01:12:40,264
+Tüm bu atımda oluşturalım.
+
+297
+01:12:41,564 --> 01:12:42,783
+Döngülerimiz için
+
+298
+01:12:42,783 --> 01:12:44,403
+Tüm bu atımda oluşturalım.
+
+299
+01:12:44,403 --> 01:12:45,403
+Tüm bu atımda
+
+300
+01:12:45,403 --> 01:12:48,463
+ve sıvet değişkenlerini oluşturalım.
+
+301
+01:13:01,863 --> 01:13:17,863
+Bu örneğe bakalım.
+
+302
+01:13:01,171 --> 01:13:22,791
+Mesela Bubble Sword. Bubble Sword aslında bizim büyük karmaşıklığa saygı. Kötü bir arama algoritmalarından direkt brute force sıralama algoritmalarından direkt teker teker bütün elemanları kontrol ediyor. Bu da fazla maliyet getiriyor.
+
+303
+01:13:47,220 --> 01:13:48,880
+Durdum. H değişkenini.
+
+304
+01:13:49,960 --> 01:13:50,780
+Ede atıyorum.
+
+305
+01:13:55,123 --> 01:14:03,203
+Swept işlemine de sıfır atadım. Şu an herhangi bir swap işlemi gerçekleştirmedik.
+
+306
+01:14:28,851 --> 01:14:30,072
+Arttırıyorum.
+
+307
+01:14:37,395 --> 01:14:41,956
+Burada Employee tipinde iki tane P1, P2 değiştirmiş duracağım.
+
+308
+01:14:49,747 --> 01:14:51,747
+Bir hale yeşil olacak.
+
+309
+01:15:00,275 --> 01:15:01,275
+İyi ki de
+
+310
+01:15:01,275 --> 01:15:03,895
+P1'in nextine
+
+311
+01:15:09,300 --> 01:15:11,840
+Şöyle gelip söyleyeyim bunu neden böyle yaptığımı da.
+
+312
+01:15:13,971 --> 01:15:41,911
+Babu sortta hep bir yanındakiyle kontrol ediyor. İşte 2 ile 45'i kontrol ediyor. Daha sonra bunların bir sebep işlemi gerektiriyorsa, sebep işlemini gerçekleştiriyor. Daha sonra 45 ile yanındaki yani 0'ı kontrol ediyor gibi gibi. Bu şekilde bütün mesela adım 0'daki bütün iterasyonları göstermiş. Yanındakiyle kontrol edeceği için bunun şeyini, yani bir P1'i aldım. P2'ye de P1'in next'ini atadım.
+
+313
+01:15:41,971 --> 01:15:44,191
+Kontrol edebilmek için.
+
+314
+01:15:49,268 --> 01:16:03,728
+Bunları kontrol edeceğim. Burada fonksiyon pointer çağıyorum artık. Burada kontrol işlemini Ascend Link ve Descend Link algoritmalarına göre yapacak.
+
+315
+01:16:27,252 --> 01:16:33,792
+Büyüktür, sıfır çıkıyorsa bu işlemin, bu fonksiyon sıfır döndürüyorsa kaldığımız.
+
+316
+01:16:34,432 --> 01:16:36,372
+Sıfır işlemini gerçekleştireceğiz şimdi.
+
+317
+01:16:45,684 --> 01:16:47,684
+Sıvı işlemi gerçekleştiğinde...
+
+318
+01:16:52,020 --> 01:16:53,100
+Evet, biri olacak.
+
+319
+01:17:04,083 --> 01:17:07,203
+Burada eşittir.
+
+320
+01:17:08,804 --> 01:17:11,323
+Next olacak. İlerletiyoruz burada.
+
+321
+01:17:19,572 --> 01:17:21,547
+Daha sonra diyoruz ki, if...
+
+322
+01:17:23,667 --> 01:17:46,887
+Swap eşit eşittir sıfırsa. Yani ilk stepte, ilk adımda herhangi bir swap işlemi olmadıysa demek ki bizim link listimiz sıralı bir şekilde verilmiş. O yüzden diyorum ki çıktan fazla diğer adımlara geçip arama işlemi yani karşılaştırma işlemi yapma. Burada da bu return'de bir maliyetten kurtulmuş oluyoruz.
+
+323
+01:17:46,887 --> 01:17:51,608
+Yani benim ilk adımımda sıralıysa herhangi bir swap işlemi gerçekleştirmedi.
+
+324
+01:17:51,667 --> 01:18:02,967
+İkinci adıma geçmiyor. Giderek çıkıyor. Bakalım burada herhangi bir şeyimiz var mı? Komodör edelim.
+
+325
+01:18:09,203 --> 01:18:11,363
+Sizin gördüğünüz bir hata var mı arkadaşlar?
+
+326
+01:18:17,555 --> 01:18:28,355
+Burada ne yapmıştık biz? Function pointer çağırmıştık. Biz bu kullanıcıdan aldığımız Ascending'de Ascending algoritmalarına göre sıralama yapmak istiyorduk.
+
+327
+01:18:28,355 --> 01:18:36,355
+Buraya da geldiğimizde, geliyoruz şimdi main içerisine. Mesela sort type'ı 1 girdiğinde...
+
+328
+01:18:36,979 --> 01:18:52,599
+Ascending, Sort Type 2'ye girdiğinde Descending algoritmasını çağırıyorduk. Yani şurada Bubble Sort'un içerisine biz ya Ascending Compare gönderiyoruz ya da Descending Compare gönderiyoruz. Bu gönderme işlemini de fonksiyon pointer ile yapmıştık arkadaşlar.
+
+329
+01:18:53,439 --> 01:18:57,180
+Buraya bir ek koyalım. Şimdi deneyelim bakalım. İnşallah bir hata olmayız.
+
+330
+01:19:04,595 --> 01:19:07,155
+Burada şey açık kaldığı için bir hata verdi.
+
+331
+01:19:11,956 --> 01:19:21,236
+Şu an bizim şeyin fonksiyonumuz tabii hata yok. Çalıştıralım, deneyelim. Ne yapmıştık? Biz ilk önce ID'ye göre bir sıralama yapmıştık.
+
+332
+01:19:25,300 --> 01:19:30,600
+Ben basit olması için şöyle bir sıralama kısa bir girdisi yapayım.
+
+333
+01:19:33,600 --> 01:19:36,020
+Bir tane daha girdisi yapayım.
+
+334
+01:19:41,427 --> 01:20:08,268
+Bunlar benim, yazdırma işlemi 4ccc, 3bb, 2aa dedi. Bunlar benim ekleme sıraları. Daha sonra ben bunun sıralama işlemini gerçekleştireceğim. Bana soruyor, esenlik mi, desenlik mi yapmamı istiyor. İlk önce giriş yapalım, artan bir sıralama gerçekleştirelim. 2, 3, 4 diye ID'ye göre sıralama işlemini gerçekleştirdi.
+
+335
+01:20:08,851 --> 01:20:15,731
+Yine deneyelim. İstenlik işlemini yapalım. İki dediğimde de azalan bir sıralama gerçekleştirdi arkadaşlar.
+
+336
+01:20:17,971 --> 01:20:24,851
+Kapatıyorum. Bunları hemen hızlıca diğer sıralama işlemlerini de gerçekleştirelim.
+
+337
+01:20:27,592 --> 01:20:28,811
+Kopyalıyorum.
+
+338
+01:20:35,796 --> 01:20:56,595
+Teknik Diyelim. Ben dörde ne demiştim? Name'e göre sıralama işlemi gerçekleşti demiştim. Name içinde biz bir demiştik. Şurada arkadaşlar. Demiştik ki feature bir eşit olduğunda name'e göre bir sıralama yapsın. Name'i kontrol ediyor yani.
+
+339
+01:20:57,108 --> 01:21:04,108
+Bunları da ASCE değerlerine göre bir değerlendirme yapıp sıralama işlemini gerçekleştiriyor. Çar karakterler için.
+
+340
+01:21:04,108 --> 01:21:12,108
+Sonra Case 5 diyelim. Bunu da kopyalayalım.
+
+341
+01:21:15,891 --> 01:21:27,291
+Burası da iki olduğunda da surname'e göre yapacak. Buraya surname diyelim. Buraya da name diyelim.
+
+342
+01:21:33,555 --> 01:21:40,995
+Herhangi değiştirmediğimiz bir yer kaldı mı? İkiyi değiştirdik. Tamam. Çalıştırıyorum tekrardan.
+
+343
+01:21:46,547 --> 01:21:53,807
+Yine bir ekleme işlemi yapalım. Yine Ahmet, Mehmet olarak ekleyelim. Ahmet Yılmaz.
+
+344
+01:21:53,807 --> 01:21:58,647
+15 00 00
+
+345
+01:22:07,155 --> 01:22:10,515
+Metin Yılmaz 15 00 01
+
+346
+01:22:16,180 --> 01:22:39,720
+Bir kişi daha idem Ahmet Mehmet. Ayşe olsun. Ayşe Yılmaz. On beş sıfır. Sıfır sıfır iki olsun. Şimdi bunları biz ne yaptık? Daha önce ID'ye göre sıralama yapmıştık. Dört diyelim. Name'e göre bir sıralama yapalım. Name'e göre artan bir sıralama yapalım.
+
+347
+01:22:43,956 --> 01:22:48,796
+Ayşe, Ayşe, Mehmet dedi. İlk harfleri aynı olduğunda ikinci harflere göre bir sıralama yapıyor.
+
+348
+01:22:49,576 --> 01:22:54,456
+Artan bir sıralama da Y'nin ascii değeri H harfine göre daha büyük.
+
+349
+01:22:55,095 --> 01:23:00,416
+Daha sonra burada da direkt M'ye bakmış. İlk önce A'ları bir kendi içerisinde karşılaştırıyor.
+
+350
+01:23:00,416 --> 01:23:06,496
+İlk değerleri aynı olduğu için daha sonra Ahmet ve Ayşe arasında H'lere bakıyor bir sıralama yapıyor.
+
+351
+01:23:07,056 --> 01:23:11,195
+Bu şekilde. Daha sonra da örneğime göre şimdi bir sıralama yapalım.
+
+352
+01:23:12,467 --> 01:23:35,487
+Sermlem'de de azalan bir sıralama yapalım. Gerçi bunların soyadları hepsi aynı oldu. Neyse dur bir dakika kapatıyorum. Tekrar. Bir an diyeyim. Soyadları farklı olan. Mesela hepsinin adı aynı. Soyadlarını B, C olarak değiştireyim.
+
+353
+01:23:52,340 --> 01:24:13,639
+Geçliyorum. Descending azalandı. Mesela D'nin ASCİ değeri daha büyük olduğu için C'den, D, C, B'nin de en küçük ASCİ değeri sahip B. Bu şekilde ASCİ değerlerine göre bir sıralama gerçekleştiriyor arkadaşlar.
+
+354
+01:24:14,260 --> 01:24:22,860
+Uygulama bu kadardı. Buraları yani şu case 4 ve case 5'i kopyalak yapıştırdım ama yaptığımız işlemler aynıydı zaten.
+
+355
+01:24:22,860 --> 01:24:28,979
+Sending ve descending işlemlerini yapıyorduk burada. Burada da feature'a göre karar veriyorduk.
+
+356
+01:24:29,380 --> 01:24:33,819
+İşte name'e, id'ye ve surname'e göre sıralama yapıp yapmayacağını.
+
+357
+01:24:34,720 --> 01:24:40,659
+Burada hepsini karşılaştırma işlemleri geçtim. Tek değişen şeye karşılaştırma da id, name, surname oldu.
+
+358
+01:24:41,203 --> 01:25:09,203
+Bu şekilde bir sıralama işlemi gerçekleştirdik arkadaşlar. Uygulama bu kadardı. Benden size tavsiye, öğrenmek amacıyla bu uygulamadan sonra bu konu kendiniz yazın. Ayrıca ben kendim bu şekilde daha iyi öğrenmiştim veri yapılarını. Çizerek gerçekleştirdim. İşte bu bağlantılar nasıl sağlanıyor? Hedi neye atıyor? TMP daha sonra neye aktarılıyor? Bunu çizerek yaptığınızda size...
+
+359
+01:25:09,203 --> 01:25:32,463
+Daha kolay anlayacağınızı düşünüyorum. Tabii sizin herkes öğrenme şekli farklıdır ama benden size bir tavsiye, daha rahat anlayacağınızı düşünüyorum. Uygulama bu kadardı. Herhangi bir sorunuz varsa alabilirim. Ödevle ilgili bir sorunuz varsa da çarşamba günü bir toplantı yapacağız. Bunu klasör üzerinden de duyuracağız zaten. Ödevle ilgili size bir bilgilendirme gerçekleştireceğiz.
+
+360
+01:25:33,268 --> 01:25:51,807
+Bu şekilde arkadaşlar. Ödevi de ilk önce okursunuz, anladığınız ve anlamadığınız yerleri çıkartırsınız. O toplantıda bize sorabilirsiniz. Bütün cevaplarınızı biz vereceğiz. Daha sonra da farklı bir şekilde de sizinle soru cevap yapacağız ödevle ilgili. O zaman da bütün sorularınızı yanıtlamaya çalışacağız.
+
+361
+01:25:52,307 --> 01:25:54,188
+Ben dinlediğiniz için teşekkür ederim.
+
+362
+01:25:54,188 --> 01:26:11,807
+Ben şeyi soracağım. Şimdi burada kodları yazdık ya. Şimdi projede bu kodların çoğunu aslında kullanacağız ufak tefek değişiklerle ama projede kopya kontrolü yapılacağı söylenmiş. Bu kopya kontrolünde bu kodlar devre açımı bırakılacak. Orada sistem nasıl işleyecek?
+
+363
+01:26:12,659 --> 01:26:22,559
+Onu bilmiyorum. Ahmet Hoca'yla daha konuşmadık bu kopyeyi. Bunu çarşamba günü sorarsın. Ahmet Hoca daha net bir cevap verir. Bilmiyorum, daha konuşmamıştık bunu.
+
+364
+01:26:23,283 --> 01:26:43,423
+Çarşamba günü toplantıda daha detaylı bir şekilde konuşuruz. Arkadaşlar, şimdi size iki dakikalık bir süre veriyorum. 13.19'da bitecek. Herkesin numarasını çete yazmasını bekliyorum. O çetteki şeye göre bir yoklama alacağız da. İki dakikada herkes çete numarasını yazıp gönderirse sevinirim.
+
+365
+01:26:48,051 --> 01:27:08,711
+Duymayanlar için de ödev için tekrardan çarşamba günü bir toplantı yapacağız. Bütün sorularınızı orada sorabilirsiniz. Daha sonra ödevle ilgili sorularınızı sormanız için de daha farklı bir şekilde bir uygulama yapacağız. Siz bize sorularınızı sorabileceksiniz. Biz o sorunuza cevap vereceğiz. Hoca verdiğiniz cevapları da hepiniz görebileceksiniz.
+
+366
+01:27:10,291 --> 01:27:12,311
+Ahmet Hoca böyle söyledi bize de.
+
+367
+01:27:12,311 --> 01:27:14,311
+Hocam, ben de...
+
+368
+01:27:14,671 --> 01:27:16,871
+Kahve çocuğunun önünde teknik oturdum da.
+
+369
+01:27:17,908 --> 01:27:21,228
+Ödev mi verilecek, proje mi? Ben orayı tam duyamadım çünkü.
+
+370
+01:27:21,568 --> 01:27:31,568
+Ödev aslında proje. Ahmet Hoca size göndermiş ödev metnini. Şimdi siz çarşambaya kadar bu ödevi anlamaya çalışıyorsunuz.
+
+371
+01:27:31,728 --> 01:27:40,988
+Yani eğer takıldığınız bir nokta varsa ödevle ilgili çarşamba günü bir toplantı gerçekleştirecek. Bu toplantıyı da size klasör üzerinden doyuracağız.
+
+372
+01:27:40,988 --> 01:27:44,868
+Bu ödevle ilgili sorularınızı sorabilirsiniz. Biz cevaplayacağız.
+
+373
+01:27:52,908 --> 01:27:58,908
+Sizin ödevle ilgili sorularınızı biz yine alacağız. Yine cevaplamaya devam edeceğiz.
+
+374
+01:27:58,908 --> 01:28:05,908
+Herhangi toplantıdan sonra da ödevle ilgili takıldığınız bir yer olursa yine size yardımcı olmaya çalışacağız arkadaşlar.
+
+375
+01:28:05,908 --> 01:28:10,908
+Hocam, telefonun Mimax 3...
+
+376
+01:28:11,667 --> 01:28:26,667
+Çok tarihi bir eser, büyük bir ekran. Ama ekranım kırık olduğu için klavya hiç çalışmıyor ama online'ın başından beri buradaydım. Şu anda da duydum, yazmaya çalıştım, yazamadım. Kayıt olsun diye [öğrenci].
+
+377
+01:28:26,667 --> 01:28:29,667
+Tamam, mutluyorum zaten biz...
+
+378
+01:28:30,387 --> 01:28:41,608
+Evet, aynen öyle. Girişçilik saatleri de belli. Anlatılan her şey de belli. [öğrenci] tekrardan kayıt hakkını aldın.
+
+379
+01:28:41,608 --> 01:28:50,387
+Hoşçakalın. Teşekkür ederiz. Ben de teşekkür ederim. İsminizi not aldım. Arkadaşlar, herkes numarasını yazdıysa...
+
+380
+01:28:51,188 --> 01:28:54,667
+Ben chat'i kaydediyorum. Sohbeti kaydettim.
+
+381
+01:28:55,188 --> 01:28:58,208
+Hocam bir de kodu yazan paylaşma şansınız var mı?
+
+382
+01:28:59,467 --> 01:28:59,987
+Neyi?
+
+383
+01:29:01,247 --> 01:29:03,167
+Yazdığımız kodu hemen paylaşma şansınız var mı?
+
+384
+01:29:03,167 --> 01:29:04,907
+Tabii tabii hemen paylaşacağım şimdi.
+
+385
+01:29:05,407 --> 01:29:05,788
+Tamamdır.
+
+386
+01:29:05,788 --> 01:29:06,427
+Klasurumda.
+
+387
+01:29:08,307 --> 01:29:12,528
+Arkadaşlar, numaralarınızı yazmanız bittiyse kaydediyorum.
+
+388
+01:29:12,807 --> 01:29:18,707
+Hocam, ben diğer gruptanımda, normalde ikinci gruptanımda burada derse girdim. O sıkıntı olur mu?
+
+389
+01:29:18,868 --> 01:29:21,207
+Arkadaşlar, zaten iki grupta burada derse giriyor.
+
+390
+01:29:21,727 --> 01:29:22,227
+Ha, tamam.
+
+391
+01:29:22,707 --> 01:29:28,547
+Yani iki grubu da tek bir derse giriyorsunuz. İki tane ders yok.
+
+392
+01:29:30,847 --> 01:29:33,247
+Bekliyorum, hala numarasını yazanlar var.
+
+393
+01:29:38,131 --> 01:29:39,671
+Yazanlar çıkabilir mi hocam?
+
+394
+01:29:40,191 --> 01:29:41,752
+Yazanlar çıkabilir arkadaşlar.
+
+395
+01:29:58,579 --> 01:30:01,960
+Arkadaşlar, hızlı bir şekilde yazarsanız birazdan kapatacağım.
+
+396
+01:30:08,692 --> 01:30:14,231
+Şu an kaydediyorum. 13.20'den sonra çete numarasını yazanları kabul etmiyorum artık.
+
+397
+01:30:40,692 --> 01:30:42,871
+Sonlandırıyorum uygulamayı arkadaşlar.
