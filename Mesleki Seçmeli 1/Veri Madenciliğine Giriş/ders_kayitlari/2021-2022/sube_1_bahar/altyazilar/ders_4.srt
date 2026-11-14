@@ -1,0 +1,3939 @@
+1
+00:00:08,884 --> 00:00:10,844
+Merhaba arkadaşlar, geliyor mu sesin?
+
+2
+00:00:13,664 --> 00:00:14,824
+Merhaba hocam, geliyor.
+
+3
+00:00:16,643 --> 00:00:18,103
+Teşekkürler, hoş geldiniz.
+
+4
+00:00:19,823 --> 00:00:23,684
+Şimdi biraz bekleyelim, başka katmanlar da olur, sonra başlayacağız.
+
+5
+00:00:24,103 --> 00:00:25,783
+1-2 dakika içinde başlayacağız arkadaşlar.
+
+6
+00:01:19,859 --> 00:01:22,620
+Şimdi ekranım geldi mi size? Görebiliyor musunuz ekranımı?
+
+7
+00:01:27,347 --> 00:01:28,608
+Evet, görüyorsunuz.
+
+8
+00:01:29,108 --> 00:01:30,367
+Süper, teşekkürler.
+
+9
+00:01:32,147 --> 00:01:42,787
+Şimdi, hatırlarsanız geçen hafta sınavımız vardı, ondan önceki hafta, sınıflandırma yöntemleri üzerine konuşmaya devam ediyorduk.
+
+10
+00:01:42,787 --> 00:01:49,707
+Ve bunların için de, hatırlarsanız, önce yakın komşu algoritmasını konuştuk.
+
+11
+00:01:52,563 --> 00:01:59,183
+Karar ağacı modellerini inceledik ve karar ağaçlarının sınıflandırmadaki etkisini konuştuk.
+
+12
+00:01:59,503 --> 00:02:03,843
+Ve son olarak da olasılık temelli yöntemleri konuşmaya başlamıştık.
+
+13
+00:02:03,943 --> 00:02:09,963
+Burada naive Bayes yaklaşımını özellikle inceledik.
+
+14
+00:02:10,803 --> 00:02:16,264
+Naive Bayes'le ilgili nasıl çalışıyordu hatırlayanınız var mı? Ne yapıyordu? Neyi kullanıyordu?
+
+15
+00:02:17,324 --> 00:02:20,144
+İsterseniz bir hatırlayalım sonra yeni konumuza geçeceğiz.
+
+16
+00:02:23,123 --> 00:02:30,884
+Bayes teorimini kullanıyordu aslında hocam. Oradan da şeylerin, etropiklerin bağımsız olduğunu varsayarak çalışıyordu.
+
+17
+00:02:32,564 --> 00:02:34,123
+Çok güzel. Aslında...
+
+18
+00:02:34,771 --> 00:02:52,971
+Bu konuda koşullu olasılığı kullanıyor değil mi? Bayes teoremi aslında koşullu olasılığa dayanıyor. Dolayısıyla sınıflandırma yaparken bütün attribütlerin bağımsız olduğu varsayımından yola çıkarak koşullu olasılıklarını hesaplıyordu.
+
+19
+00:02:52,971 --> 00:03:02,091
+Her bir attribütün o sınıf içinde olma olasılıklarını hesaplıyordu ve bunların çarpımı sonrasında sınıflandırmaya göre karar veriyordu.
+
+20
+00:03:02,771 --> 00:03:08,292
+Öncelikle her bir attribütün gelme olasılığını hesaplıyorduk, koşullu olasılıklarını hesaplıyorduk.
+
+21
+00:03:08,891 --> 00:03:14,572
+Nive Bayes'in varsayımı da bunların birbirinden bağımsız olması varsayımı.
+
+22
+00:03:14,651 --> 00:03:22,951
+Dolayısıyla eğer iki tane olay birbirinden bağımsızsa bunların olasılıklar çarpımı bizim toplam olasılığımıza işleliyor.
+
+23
+00:03:23,455 --> 00:03:31,876
+Haliyle naive Bayes'de koşullu olasılıkların çarpımı şeklinde bir işlem yapıyordu ve bunun sonucunda da sınıflandırmaya karar veriyordu.
+
+24
+00:03:32,695 --> 00:03:36,695
+Güzel. Şimdi bugün yine sınıflandırma işlemi yapacağız.
+
+25
+00:03:37,656 --> 00:03:43,216
+Bugün özellikle Support Vector Machine ve yapay sinir ağları modellerini
+
+26
+00:03:43,668 --> 00:03:54,068
+ve bunları detaylıca konuşacağız. Bagging ve boosting yöntemlerini muhtemelen dönem sonunda zamanımız kalırsa inceleyeceğiz.
+
+27
+00:03:54,707 --> 00:04:01,728
+Muhtemelen haftaya şeye geçeriz. Kümeleme yöntemlerini konuşuruz ama bugün olasılık temelleri bitirdik.
+
+28
+00:04:02,647 --> 00:04:07,807
+Support Vector Machine'i konuşacağız ve sonrasında da yapay sınıf ağlarını inceleyeceğiz.
+
+29
+00:04:08,532 --> 00:04:17,271
+O zaman sınıflandırma yöntemlerinden şimdi Support Vector Machine nasıl çalışıyor? Bunun farkı nedir? Yaklaşımı nedir? Biraz bunları konuşalım.
+
+30
+00:04:18,432 --> 00:04:25,032
+Support Vector Machine bugün konuştuğumuz, az önce saydığım algoritmalar içinde en yeni olanı.
+
+31
+00:04:28,244 --> 00:04:37,844
+Karar ağaçlarından da yakın komşu algoritmaları veya yapay sinir ağlarından da daha yeni üretilmiş bir algoritma.
+
+32
+00:04:37,844 --> 00:04:42,644
+Yeni dediğine bakmayın, 1990'larda aslında ortaya çıkan bir algoritma.
+
+33
+00:04:43,283 --> 00:04:48,844
+Yapay sinir ağları karmaşıklığı ve işlemci kapasitesi problemleri nedeniyle çok...
+
+34
+00:04:49,391 --> 00:05:04,331
+yaygın kullanılamazken en yaygın, en başarılı algoritmaların başına geliyordu. Günümüzde de hala kullanılmaya devam eder ve birçok çalışmada, birçok problemde oldukça iyi sonuçlar da veriyor.
+
+35
+00:05:05,632 --> 00:05:15,331
+Temel fikri ise aslında oldukça kolay. Şöyle, support vector machine şunu diyor, sınıflandırma yaparken bir...
+
+36
+00:05:15,956 --> 00:05:24,796
+Doğrusal ayraç olsaydı bunu kullanarak sınıflandırma yapabilir miydik?
+
+37
+00:05:24,796 --> 00:05:39,436
+Yani şöyle söyleyeyim. Şimdi elimizde iki boyutlu bir düzlem varsa, iki boyutlu bir uzay varsa. Bu iki boyutlu uzayı biz bölmek istersek neye ihtiyacımız var?
+
+38
+00:05:39,860 --> 00:06:00,939
+Neyle bölebiliriz? Yani belli bir aralıkla, belli bir şeyle nasıl bölebiliriz? Bir doğruyla bölmemiz mümkün değil mi? Yani iki boyutlu düzemi belli bir noktadan bölmeye kalksaydık, bir tarafı işte bir sınıf diyelim başka, bir sınıf diye bölmek isteseydik, bunun için bir tane doğru kullanabilirdik.
+
+39
+00:06:06,447 --> 00:06:19,507
+Uzayı bölmüş olsaydık, yani uzayın bir kısmı bir sınıfa ait, diğer kısmı başka bir sınıfa ait gibi bölmek isteseydik, bunun için de bir düzleme ihtiyacımız olacaktı.
+
+40
+00:06:20,427 --> 00:06:27,747
+Evet, hyperplane kullanacaktı [öğrenci]. Yani aslında Support Vector Machine'in mantığı bu.
+
+41
+00:06:27,747 --> 00:06:34,007
+Bizim elimizde bir, şöyle göstereyim.
+
+42
+00:06:34,675 --> 00:06:37,595
+Aslında bunu çizerek anlatmak belki biraz daha kolay olacak.
+
+43
+00:06:39,155 --> 00:06:41,915
+Şimdi elimizde iki tane sınıf olsun.
+
+44
+00:06:43,155 --> 00:06:45,275
+Şu an whiteboard ekranım gözüküyor mu arkadaşlar?
+
+45
+00:06:48,375 --> 00:06:48,895
+Teşekkür ederim.
+
+46
+00:06:49,395 --> 00:06:50,335
+Teşekkürler [öğrenci].
+
+47
+00:06:50,335 --> 00:06:54,335
+Şimdi şöyle bir basit bir...
+
+48
+00:06:55,060 --> 00:07:03,599
+Örnek üzerinden gidelim. Elimizde x1, x2 diye iki tane değişken var ve bunların içinde farklı farklı sınıflara ait.
+
+49
+00:07:10,228 --> 00:07:16,067
+Farklı sınıflara ait noktalarımız olsun. Bunları da hadi daha kolay olsun diye artı eksik diye sınıflandırma.
+
+50
+00:07:18,048 --> 00:07:32,608
+Şimdi burada bir tane iki boyutlu düzlemden bahsediyoruz. Normalde bu iki boyutlu düzlemi bölmek istesem, yani bir tarafında artılar kalacak, bir tarafında eksiler kalacak.
+
+51
+00:07:32,944 --> 00:07:38,423
+deseydim, bunu bir doğru ile, yani bir hyperplane ile yapmamız mümkün değil mi? Nereden geçerdi bu?
+
+52
+00:07:43,124 --> 00:07:44,524
+45'ten geçebilirler mi?
+
+53
+00:07:45,163 --> 00:07:51,704
+Evet, yani bu ikisinin arasından kalacak bir noktadan bir hyperplane geçseydi, şöyle bir hyperplane olsaydı.
+
+54
+00:07:52,444 --> 00:08:02,903
+Şimdi model bu veri setine göre bu hyperplane'i çizdikten sonra artık diyelim ki sınıflarını bilmediğim bir şey var.
+
+55
+00:08:02,903 --> 00:08:06,343
+X diye bir tane nokta geldi.
+
+56
+00:08:07,411 --> 00:08:16,252
+Bu X noktasının hangi sınıfa ait olduğunu tahmin etmek için bir daha şu noktalara ihtiyacın var mı?
+
+57
+00:08:17,632 --> 00:08:18,531
+O yüzden noktalara.
+
+58
+00:08:20,971 --> 00:08:21,551
+Yok hocam.
+
+59
+00:08:22,132 --> 00:08:23,692
+Yok değil mi? Neye ihtiyacımız var sadece?
+
+60
+00:08:25,411 --> 00:08:28,371
+Sadece aslında doğruyu biliyor olsak.
+
+61
+00:08:29,871 --> 00:08:32,412
+Kesinlikle. Sadece doğruya ihtiyacımız var değil mi?
+
+62
+00:08:34,707 --> 00:08:57,327
+Kesinlikle, [öğrenci]'ın da senin de söylediğin gibi aslında bizim Hyperplane'e bakmamız yeterli. Yani bu doğrunun neresinde kalıyor? Sağ tarafında mı kalıyor, sol tarafında mı kalıyor? Buna göre sınıflandırma yapabiliriz. Yani buradaysa sınıfından eksi diyebilirim. Burada herhangi bir noktaya kabul ediyorsa bu x noktası.
+
+63
+00:08:57,844 --> 00:09:03,084
+X'in artık sınıfını tamam etmek için tek ihtiyaçma olan şey bu doğru.
+
+64
+00:09:03,264 --> 00:09:08,584
+Yani aslında bizim doğrumuzun kendisi öğrendiğimiz model olmuş olacak.
+
+65
+00:09:09,484 --> 00:09:13,704
+Yani aslında bizim veri madenciliği ya da makine öğrenimi ne derseniz deyin,
+
+66
+00:09:14,144 --> 00:09:20,984
+burada öğrenme işlemi bu doğrunun kendisinin tespit edilmesiyle ortaya çıkıyor.
+
+67
+00:09:21,044 --> 00:09:24,704
+Yani modeli öğrendiğimiz zaman aslında bu doğruyu öğrenmiş oluyoruz.
+
+68
+00:09:25,427 --> 00:09:38,727
+Bu da şöyle bir avantajı var. Bunu çok hızlıca yapabiliriz. Yani herhangi bir X noktası canlı sistemde siz modeli çalıştırdığınız zaman kolayca sınıflandırılabilir.
+
+69
+00:09:39,867 --> 00:09:48,968
+Hemen doğruya bakarak, doğrun konumuna bakarak pozisyonu artıya mı yoksa eksi sınıfına mı daha uygun bunu sınıflandırmak çok kolay.
+
+70
+00:09:49,364 --> 00:09:56,624
+O açıdan çok başarılı ve hızlıca çalışan bir model ama peki bu doğruyu nasıl test edeceğiz?
+
+71
+00:09:56,624 --> 00:10:11,224
+Yani bu doğru nereden geçmeli? Yani bu iki tane grup var burada. İki tane grup var. Bunların içinde kaç tane farklı bu aradan yani şu aralıktan geçirdiğimizi varsayıyorum.
+
+72
+00:10:11,764 --> 00:10:14,604
+Bu aralıktan kaç tane farklı hyperplane geçirebiliriz?
+
+73
+00:10:19,475 --> 00:10:21,196
+Kaç tane farklı Hyperplane'in geçebilir?
+
+74
+00:10:26,004 --> 00:10:27,144
+Sonsuz değil mi hocam?
+
+75
+00:10:27,603 --> 00:10:32,963
+Evet, sonsuz. Hepinizin de doğru tahamm ettiği gibi sonsuz sayıda doğru geçebilir.
+
+76
+00:10:33,884 --> 00:10:39,063
+Bu da işimizi zorlaştırıyor. Şimdi elimizde veri var ve bunlar içinden bir doğru seçeceğiz.
+
+77
+00:10:39,264 --> 00:10:42,583
+Ama bu doğru sonsuz sayıda olabilir. O zaman nasıl seçeceğiz?
+
+78
+00:10:43,423 --> 00:10:50,004
+Peki hangisi optimum olmalı? Yani bu doğrulardan seçmemiz gereken doğru hangisi?
+
+79
+00:10:50,004 --> 00:10:52,043
+Veya bunu nasıl test edebiliriz?
+
+80
+00:10:54,419 --> 00:10:58,819
+Bunu etkileyen şeyler aslında bu veri noktaları değil mi?
+
+81
+00:11:00,679 --> 00:11:04,379
+Bir şekilde buradaki noktalar bunun üzerinde bir etki sağlaması lazım.
+
+82
+00:11:04,379 --> 00:11:09,999
+Yani sınıfların dağılımı, bu doğrunun nereden geçeceğine dair bir fikir vermesi lazım.
+
+83
+00:11:10,459 --> 00:11:13,059
+Ama bunu nasıl yapabiliriz? Siz ne önerirsiniz?
+
+84
+00:11:15,316 --> 00:11:20,916
+Hocam, en başarılı doğruyu bulmamız gerekiyor. Bunun için de tabii başarıyı ölçmemiz gerekiyor bir şekilde.
+
+85
+00:11:20,916 --> 00:11:32,196
+Mesela iki boyutta düzlemde mesafe, distance alarak noktayla doğru arasında, işte kareler toplamının en küçük olacağı bir yöntem olabilir.
+
+86
+00:11:32,816 --> 00:11:37,596
+Doğru, evet. Mantıklı. Yani aslında bizim burada neyi ölçmemiz lazım?
+
+87
+00:11:38,772 --> 00:11:59,892
+Bir optimizasyon problemi bu değil mi? Yani bir şeyi minimize ya da maksimiz etmemiz lazım. Edeceğimiz minimizasyon problemi de bir şekilde tanımlanması lazım ve bunun da bir uzaklıkla ilişkisi olmasını bekleriz. Çünkü noktalar arasında bir uzaklığı ölçerek bunlara göre bir minimizasyon veya maksimizasyon yapacağız.
+
+88
+00:12:00,500 --> 00:12:09,379
+Bu zamanda konuştuğumuz yöntemlerde nasıl çalışıyordu? Bunların hatalar toplamını bir fonksiyon şeklinde alıyorduk.
+
+89
+00:12:09,379 --> 00:12:20,440
+Yani her bir noktanın bu doğruya uzaklığını hata diye kabul edersek bunların toplamı bizim cos fonksiyonumuzu oluşturdu.
+
+90
+00:12:21,159 --> 00:12:26,700
+Peki burada da aynı yaklaşımı izleyebilir miyiz veya izlersek uygun olur mu?
+
+91
+00:12:33,139 --> 00:12:45,500
+Şimdi [öğrenci]'ın cevabını da okumaya çalışıyorum bir yandan mesajdan. Artı 1, eksi 1 olarak iki noktaya sabitleyebiliriz. Alt ve üst doğru üzerinde olacak gibi noktalar için.
+
+92
+00:12:45,639 --> 00:12:57,500
+Biraz daha detaylıca anlatabilir misin [öğrenci]? Mesela birçok nokta seçebiliriz bu şekilde. İki nokta, herhangi iki noktadan bir doğru geçebilir. Bunları nasıl tespit edeceğiz?
+
+93
+00:12:59,892 --> 00:13:10,132
+Şöyle örnek vereyim. Şimdi sizce bu doğrunun nerede geçeceğine, nereden geçeceğine ortalamaya göre baksaydık.
+
+94
+00:13:10,252 --> 00:13:13,832
+Yani şöyle bir doğruların merkez noktasını bulsaydık.
+
+95
+00:13:16,812 --> 00:13:24,872
+Sonrasında bunların merkez noktalarının ortasından geçirseydik. Bu mantıklı olur muydu?
+
+96
+00:13:33,971 --> 00:13:34,831
+Beyan edin ne olmaız.
+
+97
+00:13:46,131 --> 00:13:51,672
+Hocam o zaman şey olmaz mıydı? Yani altlarlar falan mı acaba etkilerde?
+
+98
+00:13:52,491 --> 00:14:03,631
+Evet. Yani o zaman şöyle olsaydı, datanın dağılım şekli, yani sınıfların dağılımı bunun üzerine çok büyük bir belirleyici etki oluşturdu değil mi?
+
+99
+00:14:03,631 --> 00:14:12,271
+Mesela altlayırlar falan olsaydı yani şuralarda bir yerde altlayırlar var. Ne olacaktı orta nokta? Şuraya falan denk gelecek muhtemelen.
+
+100
+00:14:13,043 --> 00:14:20,524
+Bunun yakınındakiler buraya denk geliyor, bunun ise buraya. İşte bu ikisinin orta noktası böyle bir yerden geçecek.
+
+101
+00:14:22,043 --> 00:14:26,844
+Bu da gördüğünüz gibi bazı noktalarda hatalar yapmamıza sebebiyet verildi.
+
+102
+00:14:28,064 --> 00:14:36,104
+Demek ki bu çok mantıklı gelmeyebilir. Yani özellikle şuralarda daha az, bu mesela şuralarda olmasaydı bunun orta noktası iyice buraya yaklaşacaktı.
+
+103
+00:14:36,184 --> 00:14:38,004
+Belki de buradan geçmesi gerekecekti.
+
+104
+00:14:40,368 --> 00:14:45,968
+etkisini bu yaklaşım çözemiyor.
+
+105
+00:14:47,848 --> 00:14:52,827
+Evet, veya [öğrenci] söylediği gibi medyanlarına göre de bu işlem yapabiliriz.
+
+106
+00:14:53,468 --> 00:14:56,327
+Medyanlar da benzer problem doğurabilir ama değil mi?
+
+107
+00:14:56,447 --> 00:14:58,408
+Çünkü şöyle bunları tekrar sileyim.
+
+108
+00:15:07,283 --> 00:15:11,004
+Şimdi medyanların düşünseldik ne olacaktı? Bakalım o zaman ne oluyor?
+
+109
+00:15:16,244 --> 00:15:18,724
+Yine altta ayarlarımız olsun.
+
+110
+00:15:23,244 --> 00:15:25,764
+Bunlar daha çok artılar buralarda.
+
+111
+00:15:28,364 --> 00:15:31,884
+Ama mesela şurada şurada bazı eksiler var.
+
+112
+00:15:33,924 --> 00:15:38,184
+Ve şuralarda eksiler daha da var.
+
+113
+00:15:42,100 --> 00:15:46,340
+Hatta şunu bile eklebiliriz. Buralardan biraz daha silebiliriz.
+
+114
+00:15:51,923 --> 00:16:01,783
+Bunların medyanına baksaydık, muhtemelen medyan şuralarda bir yerde olabilir belki, veya şuralarda olabilir, bunlardan bir tanesi.
+
+115
+00:16:03,283 --> 00:16:09,923
+Bu taraftaki medyan ise daha çok şu olabilir ya da şuralarda bir yerde lokasyon olarak olacaktır.
+
+116
+00:16:11,683 --> 00:16:16,464
+Peki, şimdi yine doğru çizecek olsak, diyelim ki şurası medyan olsun, bu da bunun medyanı.
+
+117
+00:16:17,043 --> 00:16:22,543
+Şunlar arasından bir uzaklık seçmiş olsaydık, böyle bir şey çıkabilirdi belki de.
+
+118
+00:16:23,683 --> 00:16:26,323
+Veya hatta biraz daha şöyle değişebilirim.
+
+119
+00:16:28,303 --> 00:16:34,264
+Yine benzer problemi yaşıyoruz değil mi? Yine buradakiler hatalı bir şekilde sınıflandırılmış oldu.
+
+120
+00:16:36,504 --> 00:16:43,403
+Peki, başka bir şey aklımıza geliyor mu? Nasıl bir seçenek düşünürsek daha mantıklı olur.
+
+121
+00:16:44,371 --> 00:16:56,371
+Hocam, iki medyanı belirledikten sonra o doğru üzerinde noktaların dağılımını, yani varyansını hesaplayabilecek bir yol bulabilirsek, o varyansa göre doğrunun nereden geçişini seçebiliriz.
+
+122
+00:16:56,991 --> 00:17:06,152
+Yani iki noktayı belirledikten sonra aradaki doğruya dağılımı hesaplayabilirsek, ona göre belki bir seçişeği, doğrunun geçişeği yeri seçebiliriz.
+
+123
+00:17:07,152 --> 00:17:10,592
+Yani tekrar ifade etmek gerekirse.
+
+124
+00:17:11,104 --> 00:17:25,003
+Medyanları bulduk. Sonrasında varyansı nasıl hesaplayacağız? Yani diğer sınıf içi varyansımı hesaplayacağız yoksa medyanların arasındaki varyansımı? Onu belki biraz açabilir misin?
+
+125
+00:17:26,483 --> 00:17:32,543
+Sınıf içi ancak doğrunun üzerine izdüşümleri alındığında gibi düşündüm.
+
+126
+00:17:33,043 --> 00:17:37,384
+Anladım. Yani aslında burada sınıfların ağırlıklarını da önünde bulundurmak istiyoruz.
+
+127
+00:17:38,804 --> 00:17:43,324
+Değil mi? Yani bu taraftakiler de varyans daha çoksa o zaman oraya doğru kayacaktır.
+
+128
+00:17:44,064 --> 00:17:44,324
+Evet.
+
+129
+00:17:46,483 --> 00:17:50,224
+Bu da olabilir ama burada da şöyle bir problem yine var.
+
+130
+00:17:51,044 --> 00:17:58,664
+İşte verin dağılmasından kaynaklı olarak varyansı çok büyük olan biraz Bayes ekleyecektir.
+
+131
+00:17:59,316 --> 00:18:11,635
+Değil mi? Bu defa da öyle bir riskimiz olacaktır. Çünkü bir sınıf daha yoğunluğu da almış olabilir, bir yere daha yüksek de almış olabilir. Varyansı büyük olan ona doğru çekecektir. Böyle de bir riskimiz oluşabilir.
+
+132
+00:18:14,175 --> 00:18:15,775
+Başka var mı seçeneğimiz?
+
+133
+00:18:19,375 --> 00:18:24,615
+[öğrenci]'ın da bir önerisi var. Aslında AX artı B, Y, Y, Y, A'lardaki gibi.
+
+134
+00:18:25,140 --> 00:18:44,000
+Teknoloji çekersek, veri kullanarak eğimi öğrenebiliriz. Evet, eğimi öğrenebiliriz aslında [öğrenci] ama hani eğimi belirleyen şeyler ne olacak? Hangi noktalar? Çünkü burada iki tane sınıf var. Tek bir sınıf olsa dediğin doğru, tam ortadan minimize edecek doğruyu bu şekilde belirleyebiliriz.
+
+135
+00:18:47,955 --> 00:18:55,135
+Aslında problem gördüğünüz gibi biraz basit olmakla birlikte hesaplaması biraz karışıkmış gibi geliyor.
+
+136
+00:18:55,815 --> 00:19:00,775
+Peki şöyle bir şey söyleyeyim size. O zaman şu noktaları tekrar hatırlayalım.
+
+137
+00:19:07,443 --> 00:19:12,384
+Tekrar süzelim. Artılar var.
+
+138
+00:19:19,380 --> 00:19:21,100
+Bir de eksilerimiz olsun.
+
+139
+00:19:27,443 --> 00:19:28,983
+Böyle bir veri setimiz var.
+
+140
+00:19:31,244 --> 00:19:33,804
+Hatta şunu da sileyim biraz daha net gözüksün diye.
+
+141
+00:19:34,603 --> 00:19:39,543
+Şimdi bu doğruda, buradan geçirecek doğru, yani sonsuz sayıda doğru olabilir.
+
+142
+00:19:39,543 --> 00:19:50,764
+Ama bu doğrun konumuyla ilgili sizce şuradaki noktaların mı yoksa şuradaki noktaların mı daha çok etkisi olması lazım?
+
+143
+00:19:52,980 --> 00:20:00,259
+Doğruya yakın noktaların mı yoksa doğruya uzak noktaların mı etkisi olması daha mantıklı?
+
+144
+00:20:01,879 --> 00:20:03,279
+Yakın noktaların değil mi?
+
+145
+00:20:03,279 --> 00:20:03,859
+Yakın nokta.
+
+146
+00:20:04,399 --> 00:20:13,279
+Yakın noktaların. Çünkü aslında sınıfı belirleyen noktalar, sınıfın diğer sınıfa geçişlerini...
+
+147
+00:20:15,251 --> 00:20:23,151
+Buğulaklık oluşturan noktalar biraz daha o yakın noktalar değil mi? Çünkü doğrunun öbür tarafı başka bir sınıf. Doğrunun bu tarafta öyle bir risk söz konusu değil.
+
+148
+00:20:24,651 --> 00:20:31,191
+Aslında sınıfı belirleyen sınıf, ayrıcını belirleyen şey, bu doğruyu belirleyen şey daha çok bu yakın noktalar değil mi?
+
+149
+00:20:34,132 --> 00:20:40,932
+Yani buradaki bir noktanın veya buradaki bir noktanın bu doğrun geçme konumuna bir etkisi yok.
+
+150
+00:20:41,412 --> 00:20:49,491
+Yani bunların nerede olacağı, şuradaki noktaların, diğer noktaların bunun doğrun geçme konumuna pek bir etkisi yok.
+
+151
+00:20:49,491 --> 00:20:57,211
+Çünkü aslında sınıfı belirleyen şey bu uç noktalar. Yani bu doğrun olması gereken yerdeki uç noktalar.
+
+152
+00:20:57,912 --> 00:20:59,692
+Şunlara uç nokta.
+
+153
+00:21:01,172 --> 00:21:15,812
+diyebiliriz. Çünkü buradaki herhangi bir noktanın aslında bu doğruya şekli ve katkısı çok. Aslında algoritmanın mantığı da biraz buradan geliyor. Bu doğrulara, bu noktalara biz support vektörler diyoruz.
+
+154
+00:21:19,700 --> 00:21:21,160
+Support Vektörleri
+
+155
+00:21:25,491 --> 00:21:34,551
+Tam olarak diğer sınıfın kenarındaki, yani bu doğrunun geçmesi muhtemel noktaya yakın olan destek noktaları olmuş oluyor.
+
+156
+00:21:35,592 --> 00:21:39,251
+Ve sonrasında, diyelim ki böyle bir hattımız olduğunu varsayalım.
+
+157
+00:21:39,632 --> 00:21:43,132
+Buradan geçen bir doğru, bu sınıfın kendisinin konumunu belirliyor.
+
+158
+00:21:43,592 --> 00:21:46,432
+Şurası da şuradaki sınıfı belirliyor.
+
+159
+00:21:52,084 --> 00:22:01,104
+Nereden geçmesi gerekiyor tespit edeceğimiz modelin kendisini bu belirleyecek. Yani bu support vektör noktaları belirleyecek.
+
+160
+00:22:01,104 --> 00:22:13,924
+Öyle ki bu doğru iki sınıf arasındaki uzaklığı da maksimize edecek. Yani şu aralığın maks olması lazım.
+
+161
+00:22:16,500 --> 00:22:34,379
+sınıf bölgesinden ya da support vektörlerinden uzaklığı maksimum olacak. Doğruyu seçmemiz lazım. Bu bizim modelimiz ya da bunun ismi de support vektörlerden geliyor. Vector Machine.
+
+162
+00:22:35,659 --> 00:22:43,500
+Yani aslında support vektör machine dediğimiz şey bu modelin kendisi, bu support vektörlerinin uç noktaların
+
+163
+00:22:43,988 --> 00:23:09,928
+arasındaki mesafeyi maksimum yapacak, sınıflar arası mesafeyi maksimum yapacak doğrunun geçtiği yer. Bu da sadece bir tane olabilir. Yani iki tarafta da maksimum yapacak bir tane olabilir. Bu arada hani bu şu an biz iki taraftaki support ve körleri linear gösterdik ama hani bu doğru şöyle kayabilir yani. Şuralardan da artı eksiler. Şurası böyle linear olmak zorundayız yani.
+
+164
+00:23:11,155 --> 00:23:17,375
+Şöyle farklı kavisler olabilir ama buradan mesafeyi maksimum yapacak. Yine de bir tane doğru geçebilir.
+
+165
+00:23:17,375 --> 00:23:27,076
+Aslında algoritmanın temel mantığı bu. Bu köşedeki veya bu sınıf içindeki noktaların değil, sınıfların kesiştiği, yaklaştığı yerdeki.
+
+166
+00:23:27,519 --> 00:23:36,700
+ayrımı yapan noktaları tespit edip, bunlardan geçecek, bunların arasındaki mesafeyi maksimum edecek bir doğru çizmek.
+
+167
+00:23:37,119 --> 00:23:47,960
+Maksimum etmesinin amacı da şu, şimdi eğer bu doğru, support vector machine, şuraya doğru kaygınmış olsaydı, yani şuraya daha yakın olsaydı artılara, bu durumda ne olacaktı?
+
+168
+00:23:48,660 --> 00:23:54,240
+Aslında şuralarda bazı artılar olabilirdi.
+
+169
+00:23:55,347 --> 00:24:07,407
+Orta noktanın yakınında. Bu durumda burası artıya doğru kaydığı için bunları eksi diye sınıflandıracaktı değil mi? Eksi diye sınıflandıracaktı. Yani sınıflandırma hatasını arttırmış olacaktı aslında.
+
+170
+00:24:09,167 --> 00:24:20,948
+Diğer bir bakış açısıyla da, şimdi bu doğru bu tarafa yakın olmuş olsaydı, aynı şekilde ortaya çok yakın eksileri de doğru bu tarafta kalacağı için
+
+171
+00:24:22,420 --> 00:24:32,420
+Artı diye sınıflandıracaktı. Çünkü doğruya bakarak bir sınıflandırma yapıyoruz. Test anında gelecek buralara yakın eksileri de artı diye yanlışlıkla yapabiliyordu.
+
+172
+00:24:32,960 --> 00:24:46,520
+Bunu en az ayınlayacak nokta iki tarafa da maksimum uzaklıkta olacak. Yani iki tarafa da maksimum uzaklıkta olacak. Bir yerden doğru çizersek bu da hatayı minimize etmiş oluyor aslında.
+
+173
+00:24:47,667 --> 00:24:50,227
+ve tekil bir tane doğru elde etmiş oluyoruz.
+
+174
+00:24:51,507 --> 00:24:54,567
+Support vektör meşilinin temel fikri bu aslında.
+
+175
+00:24:55,007 --> 00:24:59,067
+Yani bu iki tane sınıfı ayıracak sonsuz sayıda doğru var.
+
+176
+00:24:59,627 --> 00:25:08,887
+Bizim bunu optimize edecek yaklaşımımız bu support vektörleri tespit ettikten sonra aradaki mesafeyi maksimum edecek.
+
+177
+00:25:09,523 --> 00:25:18,203
+Maksimum edecek bir doğru çiziyoruz. Bu en geniş doğrusal ayırma yapacak doğrunun kendisi olmuş oluyor.
+
+178
+00:25:19,423 --> 00:25:26,363
+Bu algoritma bir Rus bilme adamı WebMig tarafından 1990'lar civarında ortaya atıldı.
+
+179
+00:25:26,703 --> 00:25:35,703
+Ve özellikle yapay sinir ağları yaygın bir şekilde, derin öğrenme şekilde kullanına kadar en başarılı görüntü işleme.
+
+180
+00:25:36,692 --> 00:25:42,672
+Çeşitli problemlerde en başarı çalışan algoritmalardandı.
+
+181
+00:25:47,011 --> 00:25:54,491
+Güzel bir soru, [öğrenci]. Aslında şöyle ifade edelim. Her zaman paralel olmuyor ama şöyle paralel oluyor.
+
+182
+00:25:54,632 --> 00:25:58,031
+Yani en uçtaki noktalar aslında tespit ediliyor buradaki gibi.
+
+183
+00:25:59,316 --> 00:26:26,696
+En üstteki noktalar arasında bir paralellik söz konusu. Ama bu non-linear verilerimiz olabilir. Yani buradaki gibi böyle mükemmel ayrılmıyor. Şöyle olabilir. Bu aralarda girip çıkışlar olabiliyor. Biraz non-linearse de eklenebilir. Bunlar arasında yine de maksimum edecek bir yaklaşım var. Biraz sonra aslında şeyde konuşacağız. Bunun softmax versiyonu da söz konusu.
+
+184
+00:26:27,316 --> 00:26:33,296
+Çiftlere de hata izin verecek şekilde bu paralel şeyleri çizme imkanımız da var.
+
+185
+00:26:33,296 --> 00:26:45,316
+Yani şunu kastediyorum, şuradaki mesela bu değil de bu tarafta bir iki tane daha olsaydı bu durumda daha net bir şekilde çizemezdik bunu.
+
+186
+00:26:46,296 --> 00:26:53,736
+Haliyle burada birkaç tanesini görmezden gelip maksimum hale getirecek.
+
+187
+00:26:54,324 --> 00:27:19,224
+alanı çizebiliyor. Bir de bu doğru her zaman aslında böyle paralel bir şekilde olmak zorunda değil. Girip çıkışlar da yapabilir. Model bunları da öğreniyor. Ama temel mantığı bu. Yani sınıflar arasındaki boşluğu maksimize edecek, iki tarafa da maksimize edecek. Bu uç noktaları tespit edip sonrasında ortadan geçecek bir doğru çizmek şeklinde ifade edebiliriz.
+
+188
+00:27:21,743 --> 00:27:23,364
+bir Hyper-Brain yani.
+
+189
+00:27:23,583 --> 00:27:25,243
+O orası kesin.
+
+190
+00:27:26,144 --> 00:27:27,283
+Hocam bir şey sorabilir miyim?
+
+191
+00:27:27,384 --> 00:27:31,223
+Bu üç noktalar var ya, mesela iki tane mavi var, ötekinde bir tane kırmızı var.
+
+192
+00:27:31,963 --> 00:27:37,703
+Biz support vector dediğimiz şey, bu mavi doğru noktaların kendisi mi?
+
+193
+00:27:38,104 --> 00:27:38,503
+Evet, evet.
+
+194
+00:27:38,663 --> 00:27:40,364
+Yoksa onların oluşturduğu vektör mü?
+
+195
+00:27:41,063 --> 00:27:44,023
+Support vektörleri [öğrenci] bu noktaların kendisi.
+
+196
+00:27:44,104 --> 00:27:45,903
+Aslında nokta bir vektörel form ya.
+
+197
+00:27:46,516 --> 00:27:54,276
+vektör dediğimiz şey aslında bu support noktaları. Yani şu mavi çemberli, kırmızı çember. Bunun gibi çok sayıda olabilir.
+
+198
+00:27:55,395 --> 00:27:56,596
+Anladım, da anladım.
+
+199
+00:28:03,508 --> 00:28:06,528
+Evet, birazdan konuşacağız.
+
+200
+00:28:08,727 --> 00:28:09,487
+Teşekkürler.
+
+201
+00:28:10,487 --> 00:28:13,407
+Yani aslında support vektörleri bunlar oluyor, bu noktalar oluyor.
+
+202
+00:28:13,727 --> 00:28:17,307
+Bu doğrunun kendisi support vektörünün işini oluyor, o şekilde adlandırıyor.
+
+203
+00:28:17,548 --> 00:28:21,727
+Yani bunlar arasındaki ayrımı yapan model olmuş oluyor.
+
+204
+00:28:22,548 --> 00:28:41,767
+Temel 3 tane fikri var. Aslında bunları detaylıca konuşacağız. Zaten bahsettiğimiz gibi optimizasyon kullanarak hatayı en aza indiren bir tane hyperplane buluyoruz. Sonra en geniş marjini sağlayacak şekilde bunu maksimize ediyoruz. Bir de kernel yöntemi var. Bunu da detaylıca konuşacağız.
+
+205
+00:28:41,767 --> 00:28:50,548
+Kernel yöntemi şunu yapıyor. Verimiz her zaman linear dağılmamış olabilir. Yani verimin dağılımından kaynaklanmıyor.
+
+206
+00:28:50,548 --> 00:29:00,507
+Farklar özellikle lineer olmaması durumunda doğrusu olarak bölünemeyecektir. Ama bu durumda support vektör meşhini kullanamayacak mıyız?
+
+207
+00:29:01,647 --> 00:29:07,807
+Niye sorabilirsiniz? Kullanılabiliyor. Bunu da sağlayan yöntem, kural yöntemi. Bunu da detaylıca konuşacağız.
+
+208
+00:29:09,268 --> 00:29:26,067
+Şimdi aslında soft margin yöntemi bu. Şöyle hesap ettiğimiz şey, aslında minimize ettiğimiz şey buradaki doğru arasındaki mesafelerden kaynaklı olacak hataları minimize ediyoruz.
+
+209
+00:29:26,168 --> 00:29:35,668
+Bunu da nasıl minimize ediyoruz? Aslında buradaki mesafeyi iki taraftaki support vektörleri, mesafeyi maksimize ederek bunu gerçekleştikiyoruz.
+
+210
+00:29:36,435 --> 00:29:44,495
+Ama bazen şöyle sıkıntılar olabilir. Mesela şimdi buradan gördüğünüz gibi artılar var, burada da eksiler var.
+
+211
+00:29:44,495 --> 00:29:51,815
+Ama bazı artıların konumu eksilere daha yakın olabilir. Eksilerin de biraz artıların içine girmiş olabilir.
+
+212
+00:29:52,595 --> 00:29:58,535
+Burada bir linearlık söz konusu değil. Yani lineer bir şey çizmiş olsaydınız bu mümkün olmayacaktı.
+
+213
+00:29:58,595 --> 00:30:02,695
+Yani şöyle bir ayrım var aslında sınıflar içinde. Ama bu non-lineer bir şekilde.
+
+214
+00:30:03,763 --> 00:30:15,683
+Peki bunu nasıl sağlayabiliriz? Bunun için bir esneklik fonksiyonu var. Buna da soft margin versiyonu denir.
+
+215
+00:30:15,943 --> 00:30:26,623
+Soft margin SVM şunu yapıyor. Diyoruz ki, slack variable dediğimiz epsilon kadar bir hata payına izin verecek şekilde minimizasyon uygula.
+
+216
+00:30:27,059 --> 00:30:43,699
+Yani burada yeni bir problem var. Aslında bir doğrusu programlama yapılıyor. Burada belli sayıda eksinin sağa gitmesi veya sola gitmesi bu bir hata ama bu kadarını göze alabileceğimizi varsayalım.
+
+217
+00:30:50,163 --> 00:31:13,663
+Bunları görmezden gelerek veya bunları kabul edebildikten sonra support vektörleri çiziyoruz. Yani bunlar support vektörleri dahil olmuyor. Bu diğer tarafa geçmiş olanlar. Geri kalan üzerinden bu işlemleri yapma imkanı olmuş oluyor. Bu şekilde de bunu esnetebiliyorsunuz. Yani esnetemeseydik burada SBM'i şu anki versiyonunda kullanmak pek mümkün olunacak.
+
+218
+00:31:16,500 --> 00:31:28,319
+Yani bu alanı maksimize edecek, hatada fark çıkaracak noktaları atarak ya da görmezden gelerek belli sayıda olanla bu işlemi yapmamız mümkün oluyor.
+
+219
+00:31:29,079 --> 00:31:37,500
+Ama bu problem hala çözülemeyebilir. Yani örnek verelim. Şimdi yukarıdaki örneklere bakın. Bu veriler...
+
+220
+00:31:38,291 --> 00:31:58,931
+Gördüğünüz gibi doğrusu olarak ayrılabiliyor. Yani sol taraftakiler başka bir sınıf, sağ taraftakiler başka bir sınıf. Bunu tespit edebiliyoruz. Şuradan bir tane doğru çizmemiz mümkün. Şuradan da doğru çizerek kırmızılar ve maviler şeklinde ayırmak söz konusu olabiliyor.
+
+221
+00:32:05,491 --> 00:32:12,031
+Doğrusu olarak bölemeyiz. Ama burada yine soft margin ile işi kurtarmamız mümkün. Yani şuradan bir doğru çizilir.
+
+222
+00:32:13,152 --> 00:32:25,991
+Mouse'umu gösterdiğim yerden. Şurada bir üçgen sol tarafa geçmiş. Bu slack variable olarak kabul edilip görmezden gelinerek bunu yapmak mümkün.
+
+223
+00:32:26,852 --> 00:32:29,392
+Peki sağdaki için bunu yapmak mümkün mü?
+
+224
+00:32:33,299 --> 00:32:36,319
+Nereden geçerse doğru, hata en az olur.
+
+225
+00:32:40,819 --> 00:32:42,439
+Veya böyle bir doğru çizebilir miyiz?
+
+226
+00:32:44,079 --> 00:32:45,379
+Doğru çizemeyiz hocam.
+
+227
+00:32:45,839 --> 00:32:48,659
+Bunu çizemeyiz değil mi? Yani çizersek ne olur?
+
+228
+00:32:52,119 --> 00:33:01,039
+Evet, boyut artırmak gerekir demiş Torhkar. Peki boyut artırmak nasıl bir fayda sağlayacak? Düzlem çizeceğiz. Doğru.
+
+229
+00:33:05,076 --> 00:33:18,576
+Bunu nasıl çözmemiz mümkün? Şu haliyle çözemiyoruz ama hepimiz buna hemfikiriz değil mi? Yani şuradan bir doğru çizmiş olsaydım, bu defa bu soldaki mavileri kurtarmış olacağım.
+
+230
+00:33:18,576 --> 00:33:25,655
+Sağda da bir kısım kırmızı olacak ama buradakilerin tamamı, bu kırmızıların tamamı yalnızlıklar da bir şey olacak. Çok büyük bir hata.
+
+231
+00:33:31,763 --> 00:33:33,163
+Tabii, buyur [öğrenci].
+
+232
+00:33:34,003 --> 00:33:44,663
+Doğru değil de bir eğri çizmemiz gerekiyor sanırım. Ya da bu eğri de aslında birden fazla doğru çizerek de yapılabilir belki. O şekilde bir şeyle çözülebilir gibi.
+
+233
+00:33:45,324 --> 00:33:54,763
+Doğru, evet yani şu halde doğruyla çözemiyoruz. Aslında [öğrenci]'ın söylediği çok mantıklı bir öneri olabilir. Yani diyor ki bunu acaba biz...
+
+234
+00:33:55,347 --> 00:34:07,228
+Bir boyut artırarak başka bir boyuta çıkarsak, yani iki boyutlu, üç boyutlu çıkarsak, burada bir düzlemle aslında artık üç boyutlu olduğu için artık doğru değil de düzlemle kesebiliriz.
+
+235
+00:34:07,888 --> 00:34:12,448
+Bunu bir düzlemle keserek yapmamız mümkün mü? Evet, aslında mümkün.
+
+236
+00:34:13,788 --> 00:34:21,427
+Tam olarak da hani kernel dediğimiz şey de aslında bu oluyor. Yani diner olarak, doğrusu olarak bölünemeyen bir şey.
+
+237
+00:34:21,940 --> 00:34:37,079
+Böyle bir dönüşüm yaparak, yani senin de dediğin gibi başka bir çemberle veya bölmek gibi düşünebilirsiniz veya düzdanla bölmek gibi başka bir forma dönüştürüp sonrasında bu bölme işlemini gerçekleştirmek mümkün oluyor.
+
+238
+00:34:37,423 --> 00:34:55,103
+Aslında kuralı yodemi tam olarak da bunu yapıyor. Burada verinin dağılımına göre gördüğünüz gibi ne yapıyor aslında? Burada bir çember olsaydı çözebilirdik değil mi? Yani şuradaki gibi şekilimiz olsaydı, linear olarak bu iki veriyi bölemiyorum ama buradan bir çember çizseydim, şimdi bölebilirdim.
+
+239
+00:34:56,483 --> 00:35:02,163
+Ama bu da doğrusu olmayacaktı. Demek ki buna bir başka çözüm bulmak gerekiyor.
+
+240
+00:35:03,360 --> 00:35:22,300
+kernel yöntemi içine giriyor. Diner olarak bölemediğiniz bir veriyi verinin şekline göre bir kernel kullanarak başka bir boyutta çözüyormuş gibi hale getirmemiz lazım. İsterseniz bunu detaylıca konuşalım. Şimdi bunu çizersem daha mantıklı olacaktır.
+
+241
+00:35:27,039 --> 00:35:29,500
+Şeklini hatırlayalım isterseniz bunu.
+
+242
+00:35:31,795 --> 00:35:33,095
+O veri, se tem bir spor.
+
+243
+00:35:34,595 --> 00:35:36,655
+Ataşın bir şey, birkaçı kürtü.
+
+244
+00:35:41,139 --> 00:35:53,299
+Yukarıda bir şeklimiz var. Burada ortada kırmızı noktalar olsun. Etrafında da çok sayıda mavi nokta var.
+
+245
+00:36:06,036 --> 00:36:07,735
+Burada da bir sürü mavi nokta var.
+
+246
+00:36:08,956 --> 00:36:13,296
+Gördüğünüz gibi bunu biz linear olarak bölemeyiz, hiçbir şekilde bölemeyiz.
+
+247
+00:36:13,296 --> 00:36:19,435
+Çünkü aslında şöyle bir çemberle bölmemiz mümkün olacaktır.
+
+248
+00:36:19,496 --> 00:36:25,235
+İçeride kalanlar, işte kırmızılar buna artı diyelim, buradakiler eksi gibi iki tane farklı sınıf olacak.
+
+249
+00:36:25,336 --> 00:36:28,836
+Ama bunu linear bir şekilde bölmemiz söz konusu değil.
+
+250
+00:36:29,135 --> 00:36:31,655
+Hiçbirisi bunu bölmeyecektir.
+
+251
+00:36:31,967 --> 00:36:37,527
+Burada acaba başka bir çözüm kullanmamız mümkün mü?
+
+252
+00:36:42,963 --> 00:36:46,943
+Şu veriyi bir dönüşüm yapmış olsaydım.
+
+253
+00:36:48,884 --> 00:36:52,564
+Ve şurada bir tane merkez nokta seçelim.
+
+254
+00:36:52,663 --> 00:36:56,583
+Buna da landmark diyelim.
+
+255
+00:36:59,184 --> 00:37:02,024
+Landmark nasıl olsun? Yani diğer sınıfın merkezinde.
+
+256
+00:37:02,384 --> 00:37:06,284
+Merkez noktası. İşte bu da L gibi bir tane vektör aslında.
+
+257
+00:37:07,524 --> 00:37:08,903
+Nokta, L gibi bir nokta diyelim.
+
+258
+00:37:10,036 --> 00:37:24,336
+Burada şunu yapacağız. Bizim bir tane dönüşüm yapmamız lazım. Burada asla yaptığımız dönüşüm, şuradaki bir kernel kullanarak bunu yapacağız.
+
+259
+00:37:41,684 --> 00:37:45,224
+Bu eksiliğinin karesi bölü.
+
+260
+00:37:50,195 --> 00:38:16,235
+1, 2, sigma kare. Bu Gauss-Inkurnal. Gauss-Inkurnal ya da Radial Base'e denir buna. Gauss-Inkurnal şunu yapıyor. Her bir noktayı, her bir noktayı dönüştürüyor. Aslında bunu biz her bir noktayı bu Landmark'a uzaktığına göre bir forma dönüştürmüş oluyoruz.
+
+261
+00:38:17,012 --> 00:38:30,871
+Şöyle örnek vereyim. Şimdi bizim bu landmark noktamız burası. Bunun çok yakınında bir nokta olsaydı, şu nokta ile bunun arasındaki mesafe ne olacak? Çok küçük olacak değil mi?
+
+262
+00:38:32,152 --> 00:38:35,871
+Yani buna çok yakın bir nokta seçtiğimizi varsayalım. Bu bizim...
+
+263
+00:38:37,619 --> 00:38:46,240
+Seçtiğimiz nokta, V noktamız. Bu landmark noktası, tespit ettiğimiz merkezi nokta. Yani şu kırmızıların merkezi noktası.
+
+264
+00:38:47,820 --> 00:39:02,179
+Bu V ile L arasındaki fark çok küçükse, yani sıfıraya yaklaşıyorsa, bu formülde ne olacaktır? E üzeri kaç olacak? 1 bölü E üzeri 0. Bunun değeri kaç oluyor?
+
+265
+00:39:05,523 --> 00:39:05,963
+Bir.
+
+266
+00:39:06,623 --> 00:39:08,303
+Bir değilim. Çünkü burası bir olacak.
+
+267
+00:39:09,043 --> 00:39:09,783
+Bir olacak.
+
+268
+00:39:11,384 --> 00:39:18,283
+Yani, şöyle göstereyim. Bunların iz düşümünü alsaydık, burası bir olsun, burası sıfır olsun.
+
+269
+00:39:20,043 --> 00:39:26,063
+Bu landmark noktasını, bütün noktaları, kernel ile çarptığımı varsayalım, kernel ile dönüştürüyorum.
+
+270
+00:39:32,019 --> 00:39:40,380
+karşılığını tespit ediyorum. Kaçak karşılıklı diyor. Onu ölçmeye çalışıyoruz. Landmark noktasının orijinal noktası burası.
+
+271
+00:39:41,079 --> 00:39:52,599
+Buna yakın bütün noktalar bu civarlarda olacak değil mi? Bir civarlarda olacak. Bu kırmızı noktalar hepsi bir civarlarda olacak.
+
+272
+00:39:52,599 --> 00:39:57,380
+Tam bir olmayacak ama bire yakın. Şuralarda tekrar edecek.
+
+273
+00:40:00,000 --> 00:40:08,800
+Sabe noktalara bakalım. Aradaki mesafe arttığını varsayalım. Şu noktayla, şurasının arasındaki bakalım. Mesela diyebilirim, bu bir beş birim olsun.
+
+274
+00:40:10,579 --> 00:40:27,599
+Şimdi bir bölü E üzeri, işte burada B-L dediğimiz B-L'nin karesi bölü iki sigma kare. Sigma da standart satma.
+
+275
+00:40:28,947 --> 00:40:44,607
+Şimdi burası 5. 5'in karesi. Oldukça büyük bir sayı değil mi? Standart satması muhtemelen düşük bir şey olacaktır. İşte E üzeri 20 gibi bir sayı. E üzeri 20 nasıl bir sayı? Büyük bir sayı değil mi?
+
+276
+00:40:46,047 --> 00:40:48,148
+O yüzden giderek sıfıra yaklaşacak.
+
+277
+00:40:48,148 --> 00:40:56,067
+Aynen öyle. Yani bu mesafe arttıkça ne olacaktır? Bu nereye yakasayacaktır? Sıfıra yakasayacaktır.
+
+278
+00:40:57,396 --> 00:41:04,876
+Değil mi? Yani mesafe uzadıkça, mesafe hafif uzadıkça hızlıca sıfıra yakınlayacak.
+
+279
+00:41:05,196 --> 00:41:11,396
+Yani mavi noktalar bu landmark'dan uzak olduğu için bunlar hızlıca sıfıra yakınlıyor.
+
+280
+00:41:13,036 --> 00:41:14,456
+Uzaklaştıkça sıfır oluyor.
+
+281
+00:41:16,496 --> 00:41:19,016
+Yani şuradaki noktalar hepsi sıfıra doğru gelecek.
+
+282
+00:41:21,108 --> 00:41:25,867
+Hocam, sonunda aslında bizim verimizi gazetinin de alımına map etmiş oluyor.
+
+283
+00:41:26,248 --> 00:41:26,928
+Aynen öyle.
+
+284
+00:41:27,648 --> 00:41:31,688
+Tepe noktası en üstte kalıyor. Burada kırmızı en üstte kalıyor. Yatay olarak da kesiyoruz değil mi?
+
+285
+00:41:31,928 --> 00:41:37,288
+Kesinlikle, kesinlikle. Tam olarak bunu yapıyoruz. Yani buradan artık doğrusal bir düzlemle kesebiliriz değil mi?
+
+286
+00:41:37,288 --> 00:41:44,948
+Yani üst taraftakiler kırmızı artılar, alt taraftakiler eksiler şeklinde.
+
+287
+00:41:45,407 --> 00:42:01,827
+Şimdi [öğrenci]'ı attık. Bir Gaussian mapping yaparak veriyi böyle tutup çekmiş gibi yaptık. Yani şuradaki şeye bakarsanız [öğrenci]'ın da söylediği gibi bir dönüşüm olmuş oldu. Ortadaki noktalar.
+
+288
+00:42:02,483 --> 00:42:30,315
+Bizim landmark noktalarımız. Şimdi buranın yakındakiler ona yakın sıcak. Yani bireye yakın sıcak. Ama dışarıda, hafif dışarıda olanlar böyle çekilmiş gibi olacak. Yani direkt dışarı doğru ne yapmış oluyoruz? Böyle çekmiş gibi oluyoruz. Ortadan bir düzlemle bölebiliriz. Veya bunu bir iki boyduysa doğru ile bölebiliriz. Yani ne yapıyoruz? Bir üst boyuta taşımış gibi oluyoruz. Bir üst boyuta taşımış gibi oluyoruz ama bunun için maliyet...
+
+289
+00:42:30,963 --> 00:42:48,003
+üretmiyoruz. Çünkü boyut artırmak aslında ciddi bir hesaplama maliyeti de oluşturur. Ama bir Gaussian kernel ile aslında bu mapping işlemini yaptığımız zaman boyut artırmadığımız halde boyut artırmış gibi bir etki üretmiş oluyoruz.
+
+290
+00:42:49,003 --> 00:42:52,003
+Bu da kernel yönteminin çok...
+
+291
+00:42:52,692 --> 00:43:09,311
+Başarılı bir şey, uygulayınışı. Yani kernel yönteminde biz orijinal noktaları doğrusu olarak bölemezken, belli dönüşümleri uyguladıktan sonra, mappingleri uyguladıktan sonra doğrusu olarak bölebilir hale geliyoruz.
+
+292
+00:43:09,311 --> 00:43:16,692
+Ve ne olacak? Şimdi yeni bir nokta geldiği zaman, yeni bir x noktası geldiği zaman,
+
+293
+00:43:18,195 --> 00:43:22,996
+Şuradaki x noktası geldi. Bunun artımı, eksimi olacağını tespit etmek için ne yapacağız?
+
+294
+00:43:23,556 --> 00:43:29,576
+Kernel ile map ettiğiniz zaman bu direkt sıfıra doğru yakınsıyor. Şuralarda bir x noktası olsaydı biri yakınsıyacak.
+
+295
+00:43:30,235 --> 00:43:33,655
+Ve hızlıca bunun tespitini yapmak mümkün oluyor.
+
+296
+00:43:38,739 --> 00:43:57,679
+Kernel üretim böyle çalışıyor ve bunun gibi birçok aslında kernel yaklaşımı var. Yani tek bir kerneldan bahsetmiyoruz. Bizim veri setimiz böyle yuvarlak Gaussian bir dağılım sağlıyorsa burada Gaussian kernel kullanmakta uygun olacaktır.
+
+297
+00:43:58,199 --> 00:44:06,039
+Sigmoid kerneldan olabilir veya polinomik kerneldan olabilir yani verimizin dağılımına göre.
+
+298
+00:44:08,148 --> 00:44:24,188
+veri nasıl dağılıyor ona göre farklı farklı. Mesela polinomik bir şekil olabilir veya farklı farklı sinüs-kozünüs gibi dağılımlar söz konusu olabilir. Bunlara göre farklı körnüler uygulamak mümkün.
+
+299
+00:44:25,208 --> 00:44:36,148
+Şekle göre aslında buna terap veriliyor ama tabii ki bunun şeklini iki boyutluyken çizmek mümkün ama üç boyutlu, dört boyutlu, beş boyutlu, farklı boyutlarda bunu çizmek biraz...
+
+300
+00:44:36,148 --> 00:45:00,947
+Bu konuda daha zor olacak. Burada tabii ki şekli, hakkında bir öngörünüz varsa kurnolu buna göre seçebilirsiniz ya da deneyebilirsiniz. Farklı alternatifleri deneyerek. Bu mesela bir polinomik kurnol. Farklı derecede kurnolar kullanabilirsiniz. Galatiyon, sigmoid, sinus, kosinus gibi çeşitli kurnolar bulmak mümkün.
+
+301
+00:45:03,539 --> 00:45:12,980
+Yani şöyle göstermek gerekirse, bu bizim linear kernel'ımız, bu polinomik kernel'ımız. Gördüğünüz gibi burada bir polinomik şekil var.
+
+302
+00:45:13,519 --> 00:45:22,239
+Ve RBF de denilir, radial basis function ya da Gauss function. Aslında bizim şu an yaptığımız Gauss'in kernel olmuş.
+
+303
+00:45:22,940 --> 00:45:29,219
+Peki, buradaki gibi Gauss'in kernel'ı birden çok kullanmak mümkün mü? Burada aslına bakarsanız bir tane.
+
+304
+00:45:30,068 --> 00:45:38,408
+Örneğimiz var Gaussian ama burada biraz farklı farklı noktalar var değil mi? Yani tam olarak bir noktada bunu söyleyemeyiz.
+
+305
+00:45:39,968 --> 00:45:43,068
+Yani diğer bir ifadeyle, kurnalar birleştirilerek kullanılabilir mi?
+
+306
+00:45:49,844 --> 00:45:57,244
+Aslında kullanılabilir. İsterseniz örneğim üzerinden tekrar bunu konuşalım. Şuradaki örneğe bakalım.
+
+307
+00:46:04,532 --> 00:46:13,532
+Veriyi biraz daha uzatacağım. Şuradaki noktaya bakalım. Verimiz şöyle dağılmış olsun.
+
+308
+00:46:15,532 --> 00:46:28,268
+Şurada tekrar sıfırlanıyor. Buradan yine bir mavi noktalar olsun. Şurada...
+
+309
+00:46:30,867 --> 00:46:52,567
+Yine bir kırmızı noktalar var. Aslında hani şöyle çizmek gerekirse, tek bir öbekten bahsetmiyoruz. Yani şu aslında, şöyle devam ettiğini varsayalım. Şurası böyle iki tane kırmızı noktalar söz konusu. Bu durumda da çalışır mı? Veya ne yapabiliriz bu yaklaşım için?
+
+310
+00:47:01,268 --> 00:47:04,308
+Hocam, birden fazla mı landmarks edeceğiz acaba bir şekilde?
+
+311
+00:47:04,928 --> 00:47:09,308
+Aynen öyle. Aslında burada birden fazla landmark kullanmamız gerekebilir değil mi?
+
+312
+00:47:09,348 --> 00:47:15,128
+Çünkü buradaki landmark buradaki noktaları test ediyor ama biz aynı zamanda şuradakileri de test etmek istiyoruz.
+
+313
+00:47:15,268 --> 00:47:17,088
+Demek ki burada bir tane daha landmarks edeceğiz.
+
+314
+00:47:17,308 --> 00:47:19,868
+Buna da L2 diyeyim. Burası da L1 oldu.
+
+315
+00:47:21,608 --> 00:47:27,228
+Şimdi ikinci landmark da, buna da K1 diyelim, bu da K2 olacak.
+
+316
+00:47:28,052 --> 00:47:36,252
+k2 ne olacak? 1 bölü e üzeri. Şimdi fonksiyonumuz u noktası eksi l2'ye göre.
+
+317
+00:47:37,711 --> 00:47:45,992
+Karesi bölü 2 kare diyelim. Şimdi aslında yaklaşımda değişen bir şey olmuyor.
+
+318
+00:47:46,692 --> 00:47:51,252
+Şimdi buradaki noktalarda halin ne olacaktır? Buranın buraya uzaklığı.
+
+319
+00:47:52,788 --> 00:47:58,387
+Buranın buraya uzaklığı sıfıra yakın. Buranın buraya uzaklığı giderek sıfıra yakın sıyacak.
+
+320
+00:48:02,047 --> 00:48:10,867
+Buranın buraya uzaklığı daha da uzak. Yine sıfır. Yani aslında biz tek bir k değil de, şimdi kernelumuz k1 artı k2 olmuş olacak.
+
+321
+00:48:12,087 --> 00:48:19,027
+Sınıflandırıcı çizeceğimiz model. Svm'yi buna göre yapacağız. Bakacağı şey k1 artı k2.
+
+322
+00:48:19,572 --> 00:48:35,992
+Şimdi bu noktanın buraya uzaklığı sıfıra çok yakın. Diyelim ki sıfır nokta sıfır sıfır bir. Ama buradaki landmark uzaklığı daha da uzak olduğu için artı k-bir artı k-iki dediğimiz zaman buradan da sıfır gelecek. Buradan sıfıra çok yakın bir şey gelecek. Yani bu her halde yine sıfıra dönecek.
+
+323
+00:48:36,912 --> 00:48:37,711
+Şunu zaten çekin.
+
+324
+00:48:41,052 --> 00:48:42,352
+Gördüğünüz gibi bu şekilde oluyor.
+
+325
+00:48:42,688 --> 00:48:45,588
+Şimdi şu noktalara bakalım, buradaki kırmızı noktalara bakalım.
+
+326
+00:48:46,228 --> 00:48:56,847
+Bu kırmızı noktanın L1'e uzaklığını, mesela bu U noktasına bakacak olsaydık, L2'ye uzaklığına ne gelecek bize?
+
+327
+00:48:56,847 --> 00:49:00,088
+G1 artı G2 diyelim.
+
+328
+00:49:02,588 --> 00:49:06,608
+Şöyle yapayım, U noktasının kendisinin kör olduğunu hesaplıyorum.
+
+329
+00:49:08,528 --> 00:49:10,108
+Bir U noktası olsun şurada.
+
+330
+00:49:10,931 --> 00:49:27,952
+kendisinin toplam etkisi ne olacak? K1 artı K2'nin katsayısı. K1'den bize herhangi bir nokta değer gelecek mi? Şu noktanın buradaki Lenmar Kozaklığı oldukça yüksek değil mi? Yani şu mesafe çok yüksek.
+
+331
+00:49:28,271 --> 00:49:38,092
+Halinde bu e üzeri bir iki işte 250. Çok çok yüksek bir sayı. Halinde bu ne olacak? Bir bölü e üzeri 250.
+
+332
+00:49:39,155 --> 00:49:51,836
+0'a yapmasınca. Yani k-1'den gelen katkısı 0. Artı k-2'ye bakacağım. k-2'nin tam dibinde. Yani şu nokta len marka çok yüksek.
+
+333
+00:49:52,296 --> 00:50:00,000
+Burada yaklaşık olarak 1 olsun. Yaklaşık olarak 1 olsun. Toplam da yine 1 oldu değil mi? Yani aslında toplamda da 1 oldu.
+
+334
+00:50:00,000 --> 00:50:20,039
+Yani şuradaki noktalar buraya yakın olduğu için buradan bir katkı alıyor. Buradaki noktalar buraya yakın, buraya uzak olduğu için sadece buradan katkı alıyor. Yani aslında birden çok kullansanız da toplamları da aynı mantığa tekrar verecek. Yani yine şuradan bir çizgi çektiğimiz zaman yukarıdakiler.
+
+335
+00:50:20,820 --> 00:50:25,300
+artı aşağıdakiler eksi şeklinde işlemi yapmamız olacak.
+
+336
+00:50:25,599 --> 00:50:31,920
+Yani birden çok kuralı kullanarak, birleştirerek de uyguladığınız zaman aynı sonucu elde etmiş olacağız.
+
+337
+00:50:37,172 --> 00:50:38,951
+Burası açık mı? Sorusu olan var mı?
+
+338
+00:50:43,155 --> 00:50:51,096
+Farklı, o zaman kernel tipleri de birlikte kullanılabilir değil mi? Hepsinin garajin olmasına gerek yok.
+
+339
+00:50:51,996 --> 00:50:59,316
+Evet, farklı kernellar da kullanılabilir ama genelde verin dağılımına göre tek bir kernel seçiyoruz.
+
+340
+00:50:59,316 --> 00:51:04,816
+Yani o dağılım tek bir kernel oluyor ama o kernelun birden çok komponenti olabilir.
+
+341
+00:51:05,331 --> 00:51:05,951
+Anladım.
+
+342
+00:51:06,391 --> 00:51:09,111
+Mesela şuradaki gibi aslında birden çok komponente var.
+
+343
+00:51:09,111 --> 00:51:10,111
+Yani birden çok.
+
+344
+00:51:10,691 --> 00:51:14,431
+Bu mesela burada da bir polinomik olabilir, başka bir polinomik de olabilir.
+
+345
+00:51:15,671 --> 00:51:21,771
+Bunun gibi birden çok kernel birlikte kullanması söz konusu olabiliyor.
+
+346
+00:51:22,591 --> 00:51:25,671
+Ama tek bir yaklaşımla tabii ki bunlar kullanıyor.
+
+347
+00:51:27,131 --> 00:51:29,951
+Hocam kernel sayısı, kernel tipi gibi parametreler.
+
+348
+00:51:30,331 --> 00:51:30,551
+Var.
+
+349
+00:51:31,827 --> 00:51:45,007
+Aynen, aynen [öğrenci]. Bunlar hiperparametre. Yani biz kernel'ların tipini, işte diğer parametrelerini, modeli optimize ederken hiperparametre olarak beliriyoruz.
+
+350
+00:51:45,447 --> 00:51:50,748
+Şimdi bunun dışında da birkaç tane hiperparametre var. Bunları da aslında şimdi onu konuşacaktım.
+
+351
+00:51:52,115 --> 00:51:59,576
+SBM'i regularize etmek. Yani ne yapıyoruz? Aslında normal işliyoruz veya optimize ediyoruz.
+
+352
+00:52:00,076 --> 00:52:08,695
+Regülizasyonla. Bunu da sağlayacak iki tane daha parametre var. Cost ve diğer parametremiz de gamma parametresi.
+
+353
+00:52:08,695 --> 00:52:15,436
+Şimdi cost fonksiyonu şunu yapıyor. Yanlış sınıflandırmayı temsil eden...
+
+354
+00:52:15,443 --> 00:52:18,144
+Şimdi ceza parametresi olarak uyguluyoruz.
+
+355
+00:52:18,624 --> 00:52:25,284
+Recurize etmezseniz ne yapıyor? Aslında bu uç noktalar arasındaki şeyi çok sıkı alıyor.
+
+356
+00:52:26,784 --> 00:52:35,983
+Haliyle ne yapıyor? Buralarda pay olarak şeyleri sıkıştırmış oluyoruz.
+
+357
+00:52:39,311 --> 00:52:52,412
+Aradaki boşluğu nasıl genişleteceğimizle alakalı. Çok sıkıştırırsanız bu defa model test aşamasında çok başarılı çalışmayabilir. Bunun gibi riskler ortaya çıkıyor.
+
+358
+00:52:54,003 --> 00:53:10,503
+Bu cost değeri bu ceza parametresiyle alakalı. Yani modelimizi şey yaparken, optimiz ederken çok fazla güvenimiz yoksa, modelimizin dağılımına çok fazla güvenimiz yoksa o zaman daha büyük C değeri seçilir.
+
+359
+00:53:11,243 --> 00:53:17,563
+Bu da ne yapacak? Cost değeri yüksek olduğu için ayrım çizgisine yakın olanları sadece dikkate alacak.
+
+360
+00:53:18,579 --> 00:53:24,859
+Yani cost değeri çok yüksekse, yanlış eğitim aşamasında yanlış sınıflandırmanın maliyeti yüksek olacak.
+
+361
+00:53:25,500 --> 00:53:33,299
+Maliyeti yüksek olduğu için, oradaki hata payını azaltmak için iyice uçtaki vektörleri seçecek.
+
+362
+00:53:34,019 --> 00:53:35,699
+Yani aradaki boşluk azalmış olacak.
+
+363
+00:53:37,300 --> 00:53:44,960
+Şimdi, cost değeri de çok küçük seçildiği zaman, bu durumda da, işte, kenar boşluklarındaki şeyleri de hesabın içine katacak.
+
+364
+00:53:45,080 --> 00:53:56,200
+Yani, biraz daha, böyle, hani, şuradaki gibi, mesela hataları da, hatanın mahalleti çok yüksek olmadığı için, hataya biraz göz yumacak, biraz daha genişletecek.
+
+365
+00:53:56,900 --> 00:54:01,620
+Bunun gibi, cost fonksiyonu da belirleyerek parametreize edebilirsiniz.
+
+366
+00:54:01,620 --> 00:54:04,160
+Yani, testle training arasında boşluklar.
+
+367
+00:54:04,543 --> 00:54:12,963
+Başarı farkı oluşmaması için ve bunları daha optimize etmek için çeşitli cost değerlerini test ederek belirleyebiliyorsunuz.
+
+368
+00:54:13,003 --> 00:54:20,983
+Bu cost değerleri tabii ki standart değil, hiperparametre olarak bir grid search veya random search ile test edebileceğiniz bir değer.
+
+369
+00:54:23,083 --> 00:54:28,103
+Diğer bir önemli parametre de özellikle RBF için yani Gaussian.
+
+370
+00:54:28,512 --> 00:54:39,112
+kernel kullanıyorken kullanabileceğimiz bir parametre de şey oluyor. Gamma parametresi. Gamma parametresi şunu yapıyor.
+
+371
+00:54:40,552 --> 00:54:47,572
+Aslında biraz da overfitting iflanı engellemek için yapıyoruz. Gamma parametresi bir sabit. Gamma diyelim.
+
+372
+00:54:47,572 --> 00:54:54,292
+Yani şurada aslında bir de gamma diye bir parametre var. Bir katsayı, sabit katsayı. Gamma olsun.
+
+373
+00:54:54,672 --> 00:55:15,891
+Gama şunu beliriyor. Bu çemberden aradaki boşluğu ne kadar esnetebiliriz? Eğer gama parametresini çok büyük tutarsanız bu çember çok sıkı olmuş oluyor. Yani buradan geçişler biraz daha şuradaki mesafenin.
+
+374
+00:55:17,715 --> 00:55:24,235
+Sınıf mesafesinin dar mı yoksa daha genç olacağını belirliyor diye ifade edebiliriz.
+
+375
+00:55:25,056 --> 00:55:30,096
+Gama parametresi bir sabit kat sayısı olarak öngörüyoruz.
+
+376
+00:55:30,096 --> 00:55:35,884
+Şimdi gama parametri çok büyükse bu etki alanın yarı çapı sadece...
+
+377
+00:55:35,923 --> 00:55:47,603
+destek vektörlerinin kendisini içeriyor. Bu yüzden de COST ile birlikte düzenleme miktarı overfitting'i tam olarak önleyemez.
+
+378
+00:55:47,603 --> 00:56:02,563
+Yani şunu yapıyor, çok daraltmış oluyor şeyi. Sınıflandırmada geçişleri daraltmış oluyor. Bu da çeşitli dezavantajlar ortaya çıkarabilir.
+
+379
+00:56:02,739 --> 00:56:23,480
+Gamma da çok küçükse model bu defa çok sınırlı oluyor. Çeşitli karmaşıklıkları yakalayamama gibi problemler ortaya çıkabilir. Aslında bu durumda da etki bölgesi bütün veri setine çelebilir. Yani çok daha genişletmeye başlıyor şeyi.
+
+380
+00:56:23,987 --> 00:56:42,067
+çemberi. Bunun çember etkisi de tabii ki çeşitli problemler ortaya çıkarabilir. Yani gama parametresi ama şeyle alakalı, birebir RBF için geçerli. Cost ise bütün yönelik için kullanabileceğimiz bir parametre. Hiper parametre.
+
+381
+00:56:42,963 --> 00:56:53,963
+Bu ikisi de farklı farklı kombinasyonlarla deneyerek overfitting'i engelleyici şekilde düzenleme yapma imkanı söz konusu oluyor.
+
+382
+00:56:58,675 --> 00:57:00,195
+Bunlarla ilgili sorsa olan var mı?
+
+383
+00:57:01,596 --> 00:57:04,456
+Hocam ben Gamma ile Post'un tam olarak farkını anlamadım.
+
+384
+00:57:05,315 --> 00:57:08,536
+Yani sanki ikisi de aynı şeyi ifade ediyormuş gibi geldi ama.
+
+385
+00:57:10,536 --> 00:57:16,536
+RBF için oluyor ama şöyle, Gamma sadece RBF yani Gaussian için geçerli.
+
+386
+00:57:17,748 --> 00:57:27,847
+Şimdi gama şurada bir katsayısı olarak, altta bir katsayı olarak ekleniyor. Bu durumda bizim sınıflandırmada şeyimizi azaltıyor.
+
+387
+00:57:28,755 --> 00:57:43,595
+Bu çemberin hızlı geçişlerini, ne kadar dar mı olacak? Sadece dar bir alandaki değerlerimi içteki sınıflandırmaya dahil edeceğiz, dıştakini mi dahil edeceğiz şeklinde. Burada bir çarpım katsayısını düşünüyoruz.
+
+388
+00:57:43,955 --> 00:57:47,755
+Yani dağılımın üst kısmının yassılığını ifade ediyor diyebilir miyiz?
+
+389
+00:57:48,075 --> 00:57:48,915
+Evet, aynen öyle.
+
+390
+00:57:49,095 --> 00:57:52,395
+Sivriyiz yoksa daha yassı bir geçiş. Anladın, tamamdır hocam. Teşekkür ederim.
+
+391
+00:57:52,395 --> 00:57:54,235
+Evet, aynen öyle. Teşekkürler.
+
+392
+00:57:54,996 --> 00:58:21,335
+Kost ise her şey için geçerli. Hem RBF hem de diğer linear içinde veya diğer kernellar içinde kullanılabilecek bir parametre. O esnekliği sağlıyor aslında Kost. Yani biz yanlış sınıflandırdığımız zaman maliyetimiz çok yüksekse ne yaparız? O zaman garanti uç noktalar seçeriz. Anlatabiliyor muyum? Eğer maliyet çok şey değilse o garanti esnekliği biraz genişleyebilir.
+
+393
+00:58:22,483 --> 00:58:30,784
+Bu da ne yapacaktır? Aslında test aşamasında overfitting'e biraz azaltıcı etki sağlayabilir. Ama çok çok da büyütürseniz bu defa çok genişleyecek.
+
+394
+00:58:32,684 --> 00:58:34,084
+Ne yaptık da bayağı teşekkür ederim.
+
+395
+00:58:34,084 --> 00:58:35,544
+Bayağı teşekkür ederim.
+
+396
+00:58:37,244 --> 00:58:46,584
+İsterseniz bir ara verelim ya da bir beş dakika altında şunu da anlatayım sonrasında ara verelim. Sonra yeni konuyla da alabilirsin.
+
+397
+00:58:47,184 --> 00:58:49,024
+Şimdi burada şunu sorabilirsiniz.
+
+398
+00:58:49,715 --> 00:59:00,155
+Peki, SVM sadece iki sınıflarda mı geçerli? İki tane sınıfımız varsa bunu yapabiliriz. Peki, üç ya da çok sınıflı durumlarda çalışmıyor mu SVM?
+
+399
+00:59:00,884 --> 00:59:23,344
+Çalışıyor, onlar için de çalışıyor. Bu durumda aslında böyle one versus all yaklaşımı şeklinde düşünebilirsiniz. Şunu yapabilirsiniz. Şöyle öngörelim. Şimdi birden çok doğru var. Burada üç tane sınıf olduğu zaman üç tane doğru çizmemiz gerekecektir değil mi? Tek bir doğru ile bunları sınıflandırmamız mümkün değil.
+
+400
+00:59:25,004 --> 00:59:27,224
+Burada şunu yapabiliriz.
+
+401
+00:59:27,572 --> 00:59:31,992
+Bir tanesini sabit tuttuğumuzu varsayalım. Mesela öncelikle şunu yapıyoruz.
+
+402
+00:59:32,872 --> 00:59:39,592
+Şu, diyelim ki bu kırmızı bir doğru ve yeşillerle artılar, yuvarlakla artılar.
+
+403
+00:59:40,052 --> 00:59:44,272
+Başka bir sınıf. İkisi bir sınıf, diğer ikisi başka bir sınıf.
+
+404
+00:59:45,672 --> 00:59:49,092
+Sonrasında buradan bir doğru çiziyorsunuz. Bunu optimize edecek doğru çizdiniz.
+
+405
+00:59:49,652 --> 00:59:53,092
+Sonra yeşiller içerisine yapıyorsunuz. Yeşiller tek bir sınıf.
+
+406
+00:59:53,748 --> 01:00:19,347
+Diğer geri kalanı da ikinci bir sınıf. Haliyle oradan da şuradaki doğru süzülmüş oluyor. Sonra maviler için hizmet ediyorsunuz. Bu maviler tek bir sınıf, geri kalanı başka bir sınıf. Buradan da bunu süzülmüş oluyorsunuz. Sonra bu üçünün konumuna göre, dağılımlarına göre, tek bir doğruyu değil de birden çok doğruya göre bunun sınıf tahammini yapılmış oluyor. Yani aslında SVM birden çok sınıf içinde kullanılabilir.
+
+407
+01:00:23,315 --> 01:00:32,255
+SVM'in birçok uygulaması var. Genel bir uygulamada faydalı, başarılı sonuçlar elde edebiliyorsunuz.
+
+408
+01:00:34,260 --> 01:00:41,059
+Özellikle çok büyük kapasiteli derin öğrenme imkanlarınız yoksa iyi bir alternatif olabilir.
+
+409
+01:00:41,559 --> 01:00:44,740
+Karmaşık problemleri de çözebiliyor. Hem de hızlıdır.
+
+410
+01:00:45,420 --> 01:00:49,180
+Modeli eğittikten sonra gördüğünüz gibi sadece doğru ya, düzleme, neyse.
+
+411
+01:00:50,019 --> 01:00:55,280
+Kernel ile birlikte bakarak buna hızlıca karar verebiliyor. O yüzden hızlıdır.
+
+412
+01:00:59,860 --> 01:01:14,559
+Yani başarı olarak da fena değildir. Tabii naive Bayes ile karşılaştırınca eğitim süresi daha fazla. Büyük verilerde o yüzden biraz zaman alabilir. Ama onun dışında genel olarak fena bir yöntem değildir.
+
+413
+01:01:15,188 --> 01:01:26,168
+Evet, aynen [öğrenci]. Yüksek sürüyor. Özellikle veri boyutu artınca, rol sayısı artınca ciddi bir zaman alabilir.
+
+414
+01:01:27,048 --> 01:01:32,068
+Yani eğitim tarafı yavaş ama hani modelin kendisinin uygulaması hızlı.
+
+415
+01:01:32,748 --> 01:01:38,807
+Ama hani bunu şeyle karşılaştırmak lazım tabii ki. Naive Bayes'de ya da işte Decision Tree'le falan değil de.
+
+416
+01:01:39,219 --> 01:01:44,799
+Neural Network ile karşılaştırıcıya onlardan daha azıdır, eğitim aşamasıdır.
+
+417
+01:01:47,539 --> 01:01:54,119
+Evet, yani SVM biraz boyut sayısı arttıkça daha sıkıntı yaşıyor özellikle.
+
+418
+01:01:54,119 --> 01:01:58,659
+Yani diğer bir ifadeyle aslında embeddingler arttıkça senin probleminde.
+
+419
+01:02:02,835 --> 01:02:07,115
+Evet, aslında o yüzden problemler oluşabiliyor.
+
+420
+01:02:07,895 --> 01:02:11,395
+SVM'de Black Box, şey de derin öğrenmede biraz Black Box.
+
+421
+01:02:11,395 --> 01:02:15,475
+İkisinde de takip etmek çok mümkün değil aslında.
+
+422
+01:02:15,695 --> 01:02:20,535
+İkisinde de model parametresi çok sayıda söz konusu.
+
+423
+01:02:21,475 --> 01:02:23,875
+Milyonlarca parametreyi eğitmesi gerekiyor.
+
+424
+01:02:24,015 --> 01:02:26,655
+Aslında biraz Black Box olmuş oluyor ikisi de.
+
+425
+01:02:30,260 --> 01:02:41,679
+Validation kullanabilir miyiz? Svm eğitiminde custom mı yazmak lazım? Validation'dan custom tam olarak anlayamadım. Hiperparametreleri denemek için mi? Validation.
+
+426
+01:02:44,360 --> 01:02:55,679
+Evet, validation set uygun. Aslında zaten öyle yapmak lazım. Şimdi elinizde 3 tane şöyle göstereyim. Eğer hiperparametre tuning yapacaksanız.
+
+427
+01:02:56,340 --> 01:03:21,660
+Veriyi zaten otomatik olarak o şekilde yapmak lazım. Yani sizin orijinal verimiz bu olsun. Birincisi, train edeceksiniz. Sonrasında ne yapmanız lazım? Farklı farklı hiperparametreleri test edeceksiniz. Değil mi? Yani bunları test etmeniz lazım.
+
+428
+01:03:24,148 --> 01:03:31,448
+Bu durumda hangi hiperparametre, hangi durumda en iyi çalışıyor bunu test etmek için ne yapmanız lazım?
+
+429
+01:03:31,448 --> 01:03:37,208
+Aslında kendi içinde bunu mesela cross-balli değişik şeklinde yapabilirsiniz.
+
+430
+01:03:37,748 --> 01:03:47,728
+Diyelim ki toplam veriniz %100'lü, bunun %80'ini, %20'sini test yaptınız.
+
+431
+01:03:50,304 --> 01:04:04,424
+%20'sini de validation için kullandınız. Aslında training için %60 kısmı kalmış olacak. Yani bunun %60'ı train etmek için kullanacaksınız.
+
+432
+01:04:04,424 --> 01:04:14,904
+%20'sini validate etmek için, şurası ayrı olarak yani diyorum, burası test olsun. Bu %20'de test.
+
+433
+01:04:18,420 --> 01:04:28,420
+Buradaki kısımda siz, aslında bunu cross-vale işlemini yapmak lazım. Ayırmıyorum. O yüzden %60'ı aslında bütün tarafı tarıyor.
+
+434
+01:04:28,420 --> 01:04:41,068
+Keyfold cross-vale işlemini ama buradaki %60 toplam orijinal veri %60'ı hiper parametreleri test edecek. Yani kodlu test edeceksin. 10, 100 gibi.
+
+435
+01:04:41,172 --> 01:04:50,192
+İşte onun için de gamaları test edeceksiniz. 0.1, 0.1, 10 gibi farklı. Bunların için de her birisini test edecek bu yüzde 20.
+
+436
+01:04:50,792 --> 01:04:56,432
+Burada bunun karşılığında hangisinin başarılı olduğunu buradaki validation ile kullanacaksınız.
+
+437
+01:04:57,532 --> 01:05:03,912
+Sonrasında işte bu validation'a göre şunu buldunuz. Hiper parametrelerimiz, en uygun hiper parametrelerimiz.
+
+438
+01:05:09,204 --> 01:05:27,044
+0, 1 olan, gaması, şöyle söyleyeyim, bu da diyelim ki, gaması 10 oldu, bir de kernel'ımızla RBS kernel oldu.
+
+439
+01:05:28,124 --> 01:05:33,604
+Bu HIPM paralelseler en uygun çalışıyor ama bu gerçekten bu model iyi mi? Onu da ölçmek için.
+
+440
+01:05:35,668 --> 01:05:51,588
+Test ile test etmeniz lazım. Seçtiğiniz optimum hiperparametrenin nasıl çalışacağını da test etmek için modelin eğitim aşamasında yani hiperparametre optimizasyon yaparken görmemiş olduğu veri de test etmeniz lazım. O yüzden aslında üçe bölmek gerekiyor.
+
+441
+01:05:52,808 --> 01:05:56,608
+Yani hiperparametre optimizasyon için de validasyon seti kullanmanız gerekiyor.
+
+442
+01:06:01,396 --> 01:06:02,755
+Burası açık mı?
+
+443
+01:06:06,900 --> 01:06:18,660
+Yani hiperparametre optimizasyonu yaparken, böyle yapmazsanız, şöyle yapsaydınız, testing kullansaydınız, sadece training testing ve bunun üzerinde hiperparametreleri optimiz etseydiniz ne olurdu?
+
+444
+01:06:28,307 --> 01:06:30,067
+Bunun ismi Data League.
+
+445
+01:06:31,867 --> 01:06:34,248
+Data League problemi ortaya çıkardı.
+
+446
+01:06:34,367 --> 01:06:41,107
+Çünkü siz aslında hiperparametreleri optimize ederken aynı zamanda datayı görüyorsunuz, test datasını görüyorsunuz.
+
+447
+01:06:42,387 --> 01:06:50,107
+Test datasını gördüğünüz için burada üreteceğiniz test başarısı gerçekçi bir...
+
+448
+01:06:51,956 --> 01:07:10,896
+Hiç durum olmayacaktır. Gerçekçi bir test olmamış olacak. Çünkü aslında veriyi siz her parametreleri optimiz ederken görüyorsunuz. Model görmüş oluyor. Model de gördüğü için aslında onları öğreniyor. Aslında test datası treninge sızmış oluyor.
+
+449
+01:07:14,547 --> 01:07:16,287
+Burası ile ilgili soruş olan var mı?
+
+450
+01:07:19,795 --> 01:07:21,996
+S&M'le ilgili soru soracaktım ama.
+
+451
+01:07:22,275 --> 01:07:23,096
+Tabii tabii, buyur.
+
+452
+01:07:23,976 --> 01:07:29,496
+Bu Malta'a tutmakmıştık ya farklılıkla. Klas sayısı arttıkça bu faktörü olarak artmıyor mu?
+
+453
+01:07:29,576 --> 01:07:37,155
+Yani her bir klasın diğer klaslarla olan bir şeyini çıkarmak gerekiyor. Ondan sonra her birçok birçok tekrarlamamız gerekiyor.
+
+454
+01:07:37,155 --> 01:07:39,596
+Yoksa her bir klas için bir model mi eğitiyoruz?
+
+455
+01:07:41,836 --> 01:07:46,695
+Toplamda bir model eğitilmiş oluyor. Farklı modeller eğitilmiyor. Sadece doğru sayısı artıyor.
+
+456
+01:07:47,603 --> 01:07:49,523
+Kontrol ettiğimiz doğrusu example.
+
+457
+01:07:50,003 --> 01:07:57,064
+Her bir klas için tek bir doğru mu kullanıyoruz? Yoksa her bir klas için diğer klaslarla ilişkisini belirleyen bir doğru mu kullanıyoruz?
+
+458
+01:07:57,463 --> 01:08:01,084
+Yok. Her klas için bir tane doğru çizmiş olacağız aslında.
+
+459
+01:08:01,544 --> 01:08:02,704
+Anladım. Teşekkür ederim.
+
+460
+01:08:03,124 --> 01:08:03,884
+Ben teşekkür ederim.
+
+461
+01:08:04,224 --> 01:08:09,304
+Yani toplamda klas arttıkça doğru sayısı artıyor ama aslında her birisi için birer tane artmış oluyor.
+
+462
+01:08:09,304 --> 01:08:16,503
+İki tane olduğu zaman zaten sadece bir tane doğru kullanmamız yeterli ama üç ve sonrası için her birisi için ayrı ayrı.
+
+463
+01:08:16,560 --> 01:08:18,180
+Doğru, ben de bir insansım.
+
+464
+01:08:19,040 --> 01:08:26,360
+Aslında her bir klası diğer, bütün klaslardan ayıran bir doğrusu oluyor. Onların kesişimleriyle de hangisi olduğunu almıyoruz.
+
+465
+01:08:26,620 --> 01:08:33,960
+Kesinlikle, aynen öyle oluyor. Yani aslında her birisinin diğerlerinden ayırdığımız zaman onların kesişimi de belirlenmiş oluyor.
+
+466
+01:08:36,520 --> 01:08:38,700
+Doğru mantıklı hocam. Teşekkürler.
+
+467
+01:08:39,091 --> 01:08:44,192
+O zaman ara verelim arkadaşlar. Var mı başka sorunuz aradan önce?
+
+468
+01:08:48,180 --> 01:09:03,900
+Tamam, o zaman şimdi bir ara verelim. Bir 15 dakika ara verelim, sonra Neuron Network'e başlayacağız. Kaç diyelim? 3, 25 gibi falan buluşalım. Görüşürüz.
+
+469
+01:23:24,916 --> 01:23:26,615
+Arkadaşlar, tekrar hoş geldiniz.
+
+470
+01:23:28,876 --> 01:23:30,655
+Şimdi başlayalım.
+
+471
+01:23:31,456 --> 01:23:32,515
+Ekranı paylaşıyorum.
+
+472
+01:23:35,155 --> 01:23:36,536
+Görüntü geldi mi size?
+
+473
+01:23:38,595 --> 01:23:39,175
+Evet hocam.
+
+474
+01:23:39,836 --> 01:23:40,775
+Tamamdır, sağ olun.
+
+475
+01:23:41,996 --> 01:23:42,956
+O zaman devam edelim.
+
+476
+01:23:43,115 --> 01:23:47,155
+Şimdi SVM'den sonra bir de yapay sınır ağlarımı konuşalım.
+
+477
+01:23:48,056 --> 01:23:52,155
+Yapay sınır ağları da SVM'de aslında diğer...
+
+478
+01:23:52,307 --> 01:23:55,987
+Saydığımız yöntemlerde hem regresyonda hem sınıflandırmada kullanılabilir.
+
+479
+01:23:56,467 --> 01:24:02,587
+Ama biz şu an regresyondaydı sınıflandırma olarak bunları konuşmuş olmamız bir şey değiştirmiyor.
+
+480
+01:24:03,288 --> 01:24:13,148
+İsterseniz detaylarını konuşalım. Yapay sıraları nedir? Nasıl çalışıyor? Nerelerde kullanıyoruz? Bu detayları konuşmuş olalım.
+
+481
+01:24:16,372 --> 01:24:29,032
+Yapay sınıflandır ya da Artificial Neural Network ile derin öğrenme ya da Deep Learning çok karıştırılabiliyor ama aslında farklı şeylerden bahsetmiyoruz.
+
+482
+01:24:29,032 --> 01:24:40,712
+Yani temel olarak Deep Learning ile Artificial Neural Network dediğimiz şey nitelik olarak kullanılacağı yine bir yapay sınıflandır.
+
+483
+01:24:41,427 --> 01:24:55,667
+Ne kadar derin kullandığınız ve özellik çıkarımını otomatik gerçekleştirip gerçekleştirmediğinize göre bu derin öğrenme ya da standart yapay sınıflar şeklinde isimlendiriliyor.
+
+484
+01:24:56,167 --> 01:25:02,087
+Yani az sayıda gizli katman ve özellik seçimini sizin yaptığınız versiyonla.
+
+485
+01:25:02,868 --> 01:25:20,468
+Multi-Layer Perceptron ya da yapay sınıf ağları denirken, bunu otomatik olarak Featured River seçen ve çok sayıda katmana sahip bir yapay sınıf ağa yapımız varsa, buna Deep Learning deniyor temel olarak. Aslında çok büyük bir...
+
+486
+01:25:20,564 --> 01:25:32,884
+Farktan bahsetmiyoruz. Neural Network'ler de kendi içinde 3'e ayrılır, 3 tür şeklinde ifade edebileceğimiz yapısı var. Bunlar da verinin tipine göre aslında belirleniyor.
+
+487
+01:25:32,884 --> 01:25:39,884
+Eğer verimiz klasik şekilde ifade edebileceğimiz...
+
+488
+01:25:43,188 --> 01:25:55,847
+Yapısal verilerden oluşuyorsa, nümerik değerlerden, sürekli değerlerden oluşuyorsa, bu çok sayıda nörondan oluşan yapısından multilayer perceptron diyoruz.
+
+489
+01:25:55,907 --> 01:26:01,807
+Yani birden çok katman bulunan versiyonla MLP ya da multilayer perceptron da diyoruz.
+
+490
+01:26:03,028 --> 01:26:06,188
+Ama problem yapısı...
+
+491
+01:26:06,868 --> 01:26:14,628
+Tekrar eden sıralı veri ise, şöyle göstereyim aslında, bunu çizerek anlatırsak, biraz daha sayda olur.
+
+492
+01:26:15,408 --> 01:26:19,488
+Şimdi, basit bir veri setimiz oldu.
+
+493
+01:26:20,648 --> 01:26:27,468
+x1, x2, x3, x3, x, n gibi ve işte y'yi tahmin ediyoruz.
+
+494
+01:26:31,699 --> 01:26:48,719
+1.3, 5, 10, 12. Burası işte tahmin ettiğim şey, yes, no gibi bir şey olabilir. Bir ise yes, de ise no gibi. Bunu tahmin ediyoruz. Bunun gibi verilerimiz var. Bir sürü verilerimiz var.
+
+495
+01:26:53,716 --> 01:27:00,456
+Birbirinden bağımsız feature'larımız ve tahmin ettiğimiz şey bu bizim prediklettiğimiz bağımlı değişkenimiz.
+
+496
+01:27:00,656 --> 01:27:06,836
+Bu bağımlı değişken bunlar bir sürü bağımsız değişkenlerden oluşuyor.
+
+497
+01:27:06,836 --> 01:27:19,876
+Bu durumda biz aslında bir bağımlılık olmadığı için, yani daha doğrusu feature'lar arasında bağımsızlık olduğunu varsaydığımız için
+
+498
+01:27:20,500 --> 01:27:43,500
+Klasik MLP yöntemi, yani Motor Layer Persephone yöntemini kullanıyoruz. Yani standart bir, bu X1, X2, X3, XN'e kadar farklı farklı inputlarımız olsun ve bunların her birisinin etkisi birbirinden farklı. Dolayısıyla her birisinin etkisini ayrı ayrı...
+
+499
+01:27:44,148 --> 01:27:53,608
+Göz önünde buldurarak, işte bu basik bir yapay sinir ağa yapısı üretiyoruz. İşte burada da sıfır ya da bir gibi bir tahmin yapıyor.
+
+500
+01:27:54,688 --> 01:28:06,667
+Bu her zaman geçerli değil. Mesela özellikle bir zaman serisi verimiz varsa veya gramer işin içine gireceği için bir metin verisi varsa,
+
+501
+01:28:10,355 --> 01:28:25,795
+Bu artık bu yöntemle çözmek çok uygun olmuyor. Mesela zaman serisi bu hisse fiyatı olsun. Bu da zaman. Zamana göre hissenin değişimini ölçüyoruz. Fiyatlar arttı, azaltı, arttı, azaltı gibi gidiyor.
+
+502
+01:28:27,915 --> 01:28:37,735
+Acaba bir sonraki T artı bir noktasında hissenin fiyatı ne olacak? Veya bu ciro olabilir veya kar olabilir hiç fark edemez.
+
+503
+01:28:38,515 --> 01:28:41,515
+Buradan sonra gideceği nokta...
+
+504
+01:28:45,971 --> 01:28:52,851
+Herhangi bir dil mi alabilir? Ama bu bir sonraki nokta öncesindeki hareketle bağıntılı değil mi?
+
+505
+01:28:52,951 --> 01:28:58,851
+Buna göre değişiyor. Buradaki hareketin şekline göre. Böyle giden bir hareket birden şuraya noktalanmaz değil mi?
+
+506
+01:28:58,851 --> 01:29:01,651
+Yani şurada bir noktaya gitmesi çok daha zor.
+
+507
+01:29:02,003 --> 01:29:22,463
+[öğrenci] de bunun belli bir projektörü, yani bir düşme olmasını bekleriz. Yani böyle olabilir veya biraz artabilir, biraz az olabilir. Sonuç olarak aslında öncesindeki verimin şeklinde göre buralardaki patenler bir sonraki noktada ne olacağını tahmin etmemizde faydalı ve etkisi var.
+
+508
+01:29:23,252 --> 01:29:31,092
+Yani buradaki her bir veri noktası, şu her birinin veri noktası bir sonrakinden, bir öncekinden bağımsız değil.
+
+509
+01:29:32,532 --> 01:29:33,812
+Yani bir sıralı verimiz var.
+
+510
+01:29:36,612 --> 01:29:41,852
+Bu aynı şey, metin verileri de için geçerli değil mi?
+
+511
+01:29:49,652 --> 01:29:50,931
+data mining diyorum.
+
+512
+01:29:53,492 --> 01:29:56,032
+Şimdi aynı kelimeleri kullanarak
+
+513
+01:30:04,724 --> 01:30:07,783
+Yerlerini değiştirdiniz. Şimdi sizce bu iki cümle aynı şey mi?
+
+514
+01:30:11,796 --> 01:30:13,236
+Aynı anlamda çıkarıyorsunuz.
+
+515
+01:30:18,612 --> 01:30:19,311
+Hayır hocam.
+
+516
+01:30:20,391 --> 01:30:29,051
+Birbirinden tamamen farklı şeyler değil mi? Çünkü aslında kelimelerin kendileri, yani X1, X2, X3 aynı, değişen bir şey yok.
+
+517
+01:30:29,051 --> 01:30:34,452
+Yani feature'larımızın tipleri aynı ama bunların konuları değiştiği için anlam değişiyor.
+
+518
+01:30:35,311 --> 01:30:41,771
+Çünkü gramer dediğimiz yani doğal dillerde pozisyonlar önemli.
+
+519
+01:30:42,152 --> 01:30:45,051
+Yani hangi kelimelerde kullanıldığı aslında böyle bir...
+
+520
+01:30:46,068 --> 01:30:46,928
+Sıralı veriyor.
+
+521
+01:30:51,091 --> 01:30:58,091
+Yani hangi kelimeden sonra hangi kelimenin geleceği belli bir mantığa, belli bir mamlağla.
+
+522
+01:30:59,051 --> 01:31:05,511
+Haliyle burada işte klasik yapay sınıralarını kullanmamız mümkün değil.
+
+523
+01:31:05,671 --> 01:31:15,251
+Bunlar için sıralı verilerdeki yaklaşım içinde RNN dediğimiz modeller uygulanıyor yapay sınıralarında.
+
+524
+01:31:22,739 --> 01:31:23,799
+Yapay Sıraları.
+
+525
+01:31:29,011 --> 01:31:34,571
+Şu an konumuz çok olmadığı için detaylıca girebilecek zamanımız yok.
+
+526
+01:31:34,571 --> 01:31:39,571
+Ama nasıl mantığı olduğunu öğrenmek açısından, RNN'ler...
+
+527
+01:31:45,619 --> 01:31:46,260
+[öğrenci],
+
+528
+01:31:51,412 --> 01:32:18,711
+Hem öyle, bir de şöyle bir etki var. Mesela şunu da diyebilirsiniz. Mesela Türkçe'de bu olabiliyor. Mesela ben diyorsunuz, işte evden okula yürümeyi çok seviyorum.
+
+529
+01:32:21,716 --> 01:32:31,736
+Buradaki M harfi aslında benimle alakalı bir şey değil mi? Yani aslında bu sen olsaydın seviyorsun olacaktı. O olsaydı seviyor gibi.
+
+530
+01:32:32,595 --> 01:32:50,496
+Yani şuradaki kelime, şuradaki kelime aslında baştaki başka bir şeye bağımlı. Burada ben değil de sen olsaydı, şimdi burada bu kelimeleri kullanamaz. Aslında bir bağımlılık da söz konusu. Bağımlılık illa sondaki şeylere bağımlı olmak zorunda değil, cümlenin başında da olabilir.
+
+531
+01:33:00,083 --> 01:33:06,384
+Noktalar arasındaki bağımlılık önemli ve bu bağımlılığı yakalaması gerekiyor, yakalamak öğrenmemiz gerekiyor.
+
+532
+01:33:06,483 --> 01:33:12,764
+Yani aslında şunu yapmamız lazım. Önceki data noktalarının etkilerini hafızamızda tutmamız lazım.
+
+533
+01:33:14,003 --> 01:33:19,423
+Yani buradaki kelimenin ne olduğu, sonraki kelimelerin gelişini etki ediyor.
+
+534
+01:33:19,423 --> 01:33:25,423
+[öğrenci] öyle bir hafıza mekanizması ya da bunun da bir etkisini hesapladığımız bir...
+
+535
+01:33:26,292 --> 01:33:51,892
+parametre bir yaklaşım olması gerekiyor. Recurring Neural Networkler aslında bunu yapıyor. Önceki noktaların da etki etmesini öğreniyor. Bunun da çeşitli yaklaşımları var. Kendi içinde RNA'lerin şöyle bir problemi var. Çok detaylıca girip şey yapmak istemiyorum. Vanishing Gradient dediğimiz. Evet. Aynen öyle.
+
+536
+01:33:52,404 --> 01:33:56,824
+Aslında ben de onu söyleyeceğim. Toylar da şimdi bahsetmiş.
+
+537
+01:33:56,824 --> 01:34:02,004
+Şimdi mesafe uzadıkça hafızadan çıkma ihtimali azalıyor.
+
+538
+01:34:02,204 --> 01:34:03,004
+Yani şöyle oluyor.
+
+539
+01:34:03,924 --> 01:34:08,924
+Yakınındaki kelimeler, bir sonraki kelimeyi tam ederken yakındaki kelimelerin etkisi önemli.
+
+540
+01:34:09,424 --> 01:34:17,364
+Ama uzaklaştıkça, cümle uzadıkça veya uzun bir cümle oldukça bunların etkisi, baştakilerin etkisi giderek azalmaya başlayacak.
+
+541
+01:34:17,811 --> 01:34:27,112
+Bu problem, RNA'lerde çok sıklıkla karşılaşan bir problem. Buna da Vanishing Gradient Problem denir.
+
+542
+01:34:31,923 --> 01:34:38,884
+Çünkü mesafe arttıkça bu problemler ortaya çıkabiliyor.
+
+543
+01:34:39,963 --> 01:34:47,923
+Evet, bu problem, RNN'lerdeki problemler ciddi bir problemdi ve uzun yıllar sıkıntılar çıkarıyordu.
+
+544
+01:34:48,543 --> 01:34:57,583
+Bu problemi çözmek için de aslında LSTM dediğimiz, LSTM ve Ciaro, aslında Ciaro da çözüyor.
+
+545
+01:34:58,131 --> 01:35:08,351
+Gated Recurrent Unit dediğimiz iki versiyonu var ARN'lerin. Bunlar da sıralı belerde çalışıyor ama mimari biraz daha karmaşık.
+
+546
+01:35:08,691 --> 01:35:14,951
+Memori tutuyorlar. Memori de tuttukları için hani o baştaki kelimenin etkisini sona kadar taşıyor.
+
+547
+01:35:15,711 --> 01:35:19,611
+Cümle değişikliklerinde etkileri tekrar hesaplanıyor.
+
+548
+01:35:23,988 --> 01:35:46,908
+Çift yönlü ile çalışabilir. Yani cümlenin başındakini sonuna etkettiği gibi, sondaki bir kelimenin de başlığı daha etkiledi. Yani çift yönlü bunu inceleyebildikleri için, bunları çift yönlü versiyonlarla da bi-directional denir. Yani aslında LSTM sadece çift yönlü bakıyor. Bi-directional, Geo ya da bi-directional LSTM de denir. Bunlar bu verişin gradin problemini çözüyor.
+
+549
+01:35:47,380 --> 01:35:54,719
+Ama bizim için şu an bilmemiz gereken şey şu, sıralı verilerde standart API'sine alır kullanılmaz.
+
+550
+01:35:55,739 --> 01:35:59,939
+Çünkü kelimeler arasında veya veri noktalar, feature'lar arasında bağımlılık söz konusu.
+
+551
+01:36:00,559 --> 01:36:07,719
+Sıralı verilerde RNN modelleri uygun oluyor. LSDM, CRU gibi çözümler uygun oluyor.
+
+552
+01:36:08,207 --> 01:36:16,527
+Bir ve görüntü verileri var. Görüntü verisi de aslına bakarsanız nitelik olarak farklı.
+
+553
+01:36:16,527 --> 01:36:22,127
+Görüntüye, bir esne baktığınız zaman ne görüyorsunuz?
+
+554
+01:36:22,127 --> 01:36:29,967
+Şöyle büyütelim bunu. Aslında pikseller görüyoruz değil mi? Tam olarak pikseller görüyoruz.
+
+555
+01:36:29,967 --> 01:36:35,567
+Bu biz, işte insan, çöp adam.
+
+556
+01:36:35,828 --> 01:37:01,828
+Burada 3 var, burada 8 var, burada 4 var. Her birisinin şekli farklı. Bunu kendisini yapan şekil birbirinden farklı. Ama biz bunu görsel olarak, insan olarak bu tespit etmekle çok başarılı, hızlıca bakarak görüyorsunuz. Çünkü geçmişte birçok veri görmüşsünüz ve bunlar arasındaki nitelikleri…
+
+557
+01:37:02,420 --> 01:37:17,699
+Görsel hafızada öğrenmek kolay. Ama bilgisayarlar için bu çok kolay bir şey değil. Yani bilgisayarlar için aslında baktığımız zaman şurada şöyle bir şey varsa, burada bir 3 var mı? Bunu görmeye çalışıyorum.
+
+558
+01:37:18,839 --> 01:37:24,699
+Aslında bu bir pikseller birleşimi değil mi? Yani şurada bir sürü piksel var. Her bir pikselin...
+
+559
+01:37:28,692 --> 01:37:33,152
+Bir değeri var. Her birisi bir piksel. Şöyle düşünün. Bir sürü piksel.
+
+560
+01:37:36,351 --> 01:37:45,112
+Piksellerden alışıyor ve her bir pikselinde aslında red, green, blue dediğimiz 3 tane kombinasyonla alışan değerler.
+
+561
+01:37:45,112 --> 01:37:53,251
+İşte 0, 0, 1, 0, 9 gibi farklı değerler olabilir. Buradaki başka bir şekil, buradaki başka bir şekil.
+
+562
+01:37:54,484 --> 01:38:03,744
+Yani aslında bir görüntü aldığımız zaman görüntünün kendisi binlerce pikselden oluşmuş sayı noktaları.
+
+563
+01:38:05,064 --> 01:38:13,304
+Bu sayı noktaları, bu piksellerin kendisinin kombinasyonu bize bu sayıyı, bu resmi ortaya çıkarıyor.
+
+564
+01:38:13,304 --> 01:38:15,304
+Yani şuradaki...
+
+565
+01:38:16,115 --> 01:38:34,115
+Şuradaki noktada, mesela bunu daha basitleştirmek gerekiyorsa, diyelim ki buradaki nokta 0.1, şurada tam ucuna değiyorsa 0.4 çıktı, sonra gidiyor 0.6, sonra 0.5, şurada...
+
+566
+01:38:34,207 --> 01:38:46,007
+0.3'e düşüyor, boşluk geldiği için. Sonra devam ediyor, 0'a geliyor. Sonra bir daha taradığımız zaman, şöyle taradığımız zaman, şurada 0,0,0,0,0,0,0,0,0,0 gibi gidiyor.
+
+567
+01:38:46,527 --> 01:38:51,987
+Ama bir noktada tekrar 0.6 gibi bir şey oldu, tekrar azaldı, 0.9'a çıktı gibi.
+
+568
+01:38:51,987 --> 01:39:01,047
+Yani aslına bakarsanız, bunu biz görüntü olarak düşündüğümüz zaman, bütün uçtan uca, bütün noktaları düşündüğümüz zaman,
+
+569
+01:39:04,148 --> 01:39:17,507
+Feature sayımız, her bir feature, her bir piksel, her bir değer olmuş oluyor değil mi? 0.0, 0.1 gibi düşünelim.
+
+570
+01:39:18,707 --> 01:39:26,807
+Çok sayıda pikselden oluşan bir şekil, bir yapı. Buna flattening deniyor. Yani bir convolution.
+
+571
+01:39:28,564 --> 01:39:32,564
+İsmi convolutional neural network olarak adlandırıyoruz.
+
+572
+01:39:32,923 --> 01:39:39,304
+Bu da şu oluyor, çeşitli filtreler, çeşitli frameworkler oluşturarak burada temel özellikleri çıkarıyoruz.
+
+573
+01:39:40,503 --> 01:39:48,783
+Görüldüğü işlemede sonrasında bu özellikler çıkarıldıktan sonra yine bu özelliklerden yola çıkarak bir sınıflandırma yapacağız.
+
+574
+01:39:49,003 --> 01:39:54,043
+Aslında her birisinden gelen veriler tekrar bir yapay sıra alıyor.
+
+575
+01:39:54,123 --> 01:39:55,863
+Çarpımın sonrasında sınıflandırma yapıyoruz.
+
+576
+01:39:57,619 --> 01:40:11,159
+Diyelim ki, 1-0, bu kedi, bunlar köpek gibi sınıflandıracağız. Bu görüntü veya bu aslında 3'ü gösteriyor, bu 8 olabilir gibi tahmin ettiğimiz rakam olsun.
+
+577
+01:40:12,059 --> 01:40:20,739
+Burada şöyle bir problem var. Aslında mesela buradaki resim kendi içinde farklı tarif taşıyabilir. Mesela bu da bir 3.
+
+578
+01:40:22,019 --> 01:40:24,420
+Veya şöyle de yapabilirsiniz.
+
+579
+01:40:25,108 --> 01:40:35,627
+Veya yazıma göre 3 şöyle bir olaymış. Hatta şöyle de yapabiliriz. Gibi farklılıklar taşıyor. Mesela bir sürü 3 var. Bunlar arasında nasıl bir örtüşmü oluşacak?
+
+580
+01:40:37,207 --> 01:40:47,207
+Her birisinin hafif hafif farklılıkları olabilir. Dolayısıyla aslında convolutional neural network şunu yapıyor. Buradaki piksellere döktüğünüz zaman
+
+581
+01:40:47,583 --> 01:40:54,463
+Belli noktalarda özellikler var. Bu özellikleri yakalıyor. Mesela 3 olması için burada bazı sayıların olması lazım.
+
+582
+01:40:54,903 --> 01:40:57,983
+Ve burada şuralardaki kavisli şekiller var.
+
+583
+01:40:58,484 --> 01:41:07,984
+Bazı feature'larının özelliklerini kendi kendine şuradaki belli sayıda feature'ın birbirine yakınlaması.
+
+584
+01:41:08,084 --> 01:41:14,644
+Mesela şunlar düşük sayılar sonra artıyor, şurada tekrar azalıyor, tekrar bir yerde artıyor gibi düşünebilirsiniz.
+
+585
+01:41:15,184 --> 01:41:20,064
+Model bunları öğreniyor. Kendilerini öğrenmede aslında bunu yapıyoruz.
+
+586
+01:41:23,155 --> 01:41:47,435
+Temel çıkarımları, özellikleri çıkarıyor. Kendisi öğreniyor. Ama bunu sağlayabilmek için çok sayıda örnek vermeniz lazım. Mesela farklı farklı. Mesela bu da büyük. Ama bütün bunlarda örtüşen belli kısımlar var. Belli kısımları belli sayısını arttırdıkça öğrenmeye başlıyor moda. Mesela 8 de bana benziyor.
+
+587
+01:41:48,756 --> 01:41:57,696
+Aslında şu kısmı 3'e benziyor değil mi? Ama 8'de mesela şuraların dolu olduğu, şunun da başka bir çiftler olduğunu öğreniyor mu der.
+
+588
+01:41:58,156 --> 01:42:03,596
+Veya işte 5'de, belki biraz benziyor gibi ama 5'de şu tarafta bazı bir çiftler var, bu tarafta yok.
+
+589
+01:42:07,123 --> 01:42:17,844
+Görüntü verisini piksele dönüştürüp, sonra bu pikseller arasında belli özellikleri çıkarıp ve bu çıkarılan modeller üzerinden de sınıflandırmayı yapması gerekiyor.
+
+590
+01:42:18,224 --> 01:42:28,443
+Bunun için yani modelin şu kısmı aslında şu kısmı normal MLP, modulari perceptron. Ama bu kısmı önemli zaten modelde. Burası convolutional kısmı.
+
+591
+01:42:30,484 --> 01:42:52,784
+Bunun için, işte bu dönüşümleri yapan otomatik öğrenme işlemini yapmak için de, görüntü verilerinde de diğer bir yaklaşımda, Convolutional Dönletme, yani aslında R&M ve son olarak CNN diye 3 tane başlıkta işleyebiliyoruz yapay zanabında.
+
+592
+01:42:54,260 --> 01:43:19,940
+Bunların tabii ki çok çok daha detayları var. Convolution nasıl gerçekleşiyor, farklı farklı parametreler, max pooling, dropout gibi çeşitli şeyler var ama bunlar oldukça detaylı. O yüzden bunlar ayrı bir ders olarak.
+
+593
+01:43:20,532 --> 01:43:26,912
+Genellikle daha detaylı işlenilir. Ama bizim şu anki temel konumuz bu değil. En azından bir farkındalık oluşturması için.
+
+594
+01:43:28,192 --> 01:43:30,812
+Evet, text için de kullanabilirsiniz aynı şekilde.
+
+595
+01:43:32,192 --> 01:43:33,231
+[öğrenci]'ın da söylediği gibi.
+
+596
+01:43:33,652 --> 01:43:37,532
+Yani text'te de aslında conversion işlemi...
+
+597
+01:43:37,600 --> 01:43:48,940
+Çok sayıda feature'dan, çok sayıda özellikten önemli olan özellikleri, az sayıda özellikleri sıkıştırıcı bir etki. Yani karmaşık çok sayıda feature'dan daha az sayıda önemli feature'dan.
+
+598
+01:43:49,420 --> 01:43:55,000
+Hocam, selection olarak mı oluyor yoksa extraction mi oluyor? Bu şekilde bir genel kullanma.
+
+599
+01:43:55,283 --> 01:44:05,283
+Extraction oluyor. Çünkü aslında convolution yaparken de dönüştürme yapıyorsunuz. Orada bir fonksiyon, filtre uyguluyorsunuz.
+
+600
+01:44:05,283 --> 01:44:18,283
+Yani aslında şunu yapıyoruz. Belki biraz daha detaycı incelemek lazım. Resmimiz neredeydi? Şurada olsun. Şurada bir resminiz olsun.
+
+601
+01:44:19,444 --> 01:44:24,604
+Aslında convolutionlar şöyle çalışıyor [öğrenci]. Burada bir sürü biten var.
+
+602
+01:44:30,260 --> 01:44:39,100
+Şurada bir üçümüz olsun. Aslında şimdi böyle pikselleri böldükten sonra böyle bir kutucukla, bu bizim convolutional.
+
+603
+01:44:42,996 --> 01:45:06,996
+Framelerimiz oluyor. Mesela bu frame'i dörde dört gibi almışalım. Aslında dört tane değeri alıyor. Bunlar mesela sıfır, burası sıfır nokta beş olsun, üç olsun, sıfır nokta üç olsun, sıfır nokta yedi olsun. Mesela bir, bunların içinde maksimum olanını tek bir filtreye indiriyor. Veya işte başka bir fonksiyon uygulayabilirsiniz.
+
+604
+01:45:08,595 --> 01:45:20,755
+Bunun verinin tamamını bir değer olarak ifade ediyor. Bunun gibi böyle iç içe, filtreli, filtreli, çok sayıda framework yaparak, frame'ler uygulayarak veriyi küçültüyorsunuz, sıkıştırıyorsunuz.
+
+605
+01:45:20,895 --> 01:45:31,515
+Ama en önemli özellikleri anlıyor. Mesela şuradaki bazı anlayarak buraların sayılarını artacak şekilde dönüşüm yapıyor. Aslında bir featuring extraction işlemi olmuş oluyor.
+
+606
+01:45:32,375 --> 01:45:33,315
+Teşekkür ederim.
+
+607
+01:45:33,795 --> 01:45:34,535
+Rica ederim.
+
+608
+01:45:35,699 --> 01:45:45,619
+Convolutional Learn Network'ta görüntü verisini bu şekilde ekstrakşın yaparak modeli düzelteyiyor.
+
+609
+01:45:45,839 --> 01:45:52,199
+Ama en sonunda bunların sonunda ürettiğimiz yine bir matriz gibi düşünebilirsiniz.
+
+610
+01:45:52,319 --> 01:45:55,599
+Bu matrizi de platen ediyoruz. Tek bir boyuta indirmiş oluyoruz.
+
+611
+01:45:55,599 --> 01:45:59,219
+Yani bir matriz üretiyoruz ama ondan sonra her birisi X, 1, X, 2, 3.
+
+612
+01:45:59,639 --> 01:46:00,599
+Ama burada mesela...
+
+613
+01:46:01,043 --> 01:46:09,324
+100.000 tane piksel varken burada belki 5.000 tane feature olmuş oluyor diye düşünelim.
+
+614
+01:46:10,203 --> 01:46:17,684
+Bunu çok daha küçük boyutta indirgemiş oluyoruz. Sonrasında MLP çalıştırıyoruz ve MLP'yi sınıflandırma yapıyoruz.
+
+615
+01:46:19,423 --> 01:46:24,284
+İsterseniz biz daha çok MLP kısmını konuşacağız. Onu biraz daha detaylıca izleyelim.
+
+616
+01:46:25,524 --> 01:46:40,724
+Birçok uygulamada yaygın kullanılır. Yani RNN'ler görüntü, işleme, doğal dil işleme, klasik, derin öğrenme, yani MLP kullanarak da yapabilirsiniz. Birçok regresyonda sınıflandırmada da kullanılabilir. Uygulama alanları çok geniş.
+
+617
+01:46:40,724 --> 01:46:48,624
+Şimdi aslında bu nereden çıkmış derseniz, ilk çıkış anı 1950'lerden itibaren aslında yapay sınır aldığı.
+
+618
+01:46:49,007 --> 01:47:03,727
+ortaya çıkıyor. Daha çok nöron şeklinde düşünülüyor. Yani mantığı da biyolojik beyinde, işte hani nöronların kendisi, mesela bu sinir veriler nasıl aktarılıyor beyinde?
+
+619
+01:47:04,916 --> 01:47:10,275
+Nöronlar birbirine sinyal aktararak aslında bir düşünce gerçekleşiyor.
+
+620
+01:47:10,376 --> 01:47:17,076
+Acaba bunu mimikleyebilir miyiz diye düşünerek böyle bir yapay versiyonu üretmeye çalışmışlar.
+
+621
+01:47:17,076 --> 01:47:22,615
+Ama bu biyolojik tarihini bizi çok ilgilendirmiyor. Çok önemli de değil aslında.
+
+622
+01:47:23,235 --> 01:47:29,136
+Yapı olarak sadece benzeştiğini söylemek belki yeterli.
+
+623
+01:47:29,587 --> 01:47:36,847
+Mantık şu, nöronlar birbirini besleyerek, besleyerek, besleyerek öğrenme gerçekleşiyor.
+
+624
+01:47:36,847 --> 01:47:48,948
+Aslında öğrenme işlemi bu iletim aşamasında kendisini ayarlayarak bu geçişteki sinyalleri dönüştürerek aktararak öğreniyor.
+
+625
+01:47:49,028 --> 01:47:50,948
+Aslında insan beyin de gerçekten böyle çalışıyor.
+
+626
+01:47:52,307 --> 01:47:58,427
+Biraz daha detaylıca biz yapay sınıra nedir diye bunu konuşacak olursak, şöyle özetleyebiliriz.
+
+627
+01:47:58,948 --> 01:48:06,568
+Bir tane yapı olduğu zaman nörona perceptron deniyor. Perseptron ya da nöron aynı şey.
+
+628
+01:48:06,788 --> 01:48:11,708
+Yani bunun çok terminolojik olarak kafa karışıklığı yaratabilir, problem değil.
+
+629
+01:48:12,587 --> 01:48:17,448
+Bir tane düğüm olarak düşünün ve bu düğümün önünde birçok input.
+
+630
+01:48:17,920 --> 01:48:40,400
+Olabilir. Yani bir sürü input var. Farklı farklı sinyaller geliyor. Bizim feature'larımız. Ve her bir feature'ın da aslında bir özelliği, bir ağırlığı söz konusu. Biz bunları linear olarak kombinasyon yapıyoruz. Bir dönüşüm uyguluyor. Sonra bir sonraki nöron olarak görüyoruz. Yani aslında bir nöronun yaptığı işlem bu. Yani şöyle gösterecek olursak.
+
+631
+01:48:45,043 --> 01:48:51,484
+Her midisi
+
+632
+01:48:55,188 --> 01:49:05,467
+Bir feature'ımız, burada bir aktivasyon fonksiyonu diyoruz buna. Bu nöron içinde bir aktivasyon.
+
+633
+01:49:11,028 --> 01:49:25,887
+Aktivasyon fonksiyonu oluyor. Bir de Bayes, bir sabit kat sayı var. Sonrasında bunların her birisinin bir ağırlığı var. V1, V2, V4.
+
+634
+01:49:27,728 --> 01:49:36,587
+Şimdi aslında fonksiyon bir nöron, tek bir nöron kullandığımız zaman şunu yapmış oluyoruz.
+
+635
+01:49:37,460 --> 01:49:50,420
+V1 çarpı X1 artı V2 çarpı X2 artı V3 çarpı X3 artı artı VN.
+
+636
+01:49:54,420 --> 01:50:07,479
+çarpı xN, ağaç da bares diye bir sabit kat sayımız olsun. Bunu bir F fonksiyonuna sokuyoruz. Aktivasyon fonksiyonu bu oluyor. Bu bir çıktı üretiyor.
+
+637
+01:50:08,819 --> 01:50:17,460
+Çıktısı, uyguladığınız fonksiyona göre değişiklik gösterebilir. 0.59 diye bir değer ürettik mesela.
+
+638
+01:50:18,100 --> 01:50:40,920
+Bu aralığı siz seçtiğiniz fonksiyona göre sıkıştırabiliyorsunuz. Mesela aktivasyon fonksiyonumuz sigmoid ise, sigmoid olduğu zaman, bu f fonksiyonumuz sigmoid olduğu zaman, aslında bu tek bir nöron logistik regresyon olmuş oluyor. Bunun ismi logistik regression.
+
+639
+01:50:42,484 --> 01:50:46,224
+Rojistik Regresyon da ağaçları sınıflandırma modeli olarak kullanabilir.
+
+640
+01:50:46,784 --> 01:50:48,484
+Sigmoid fonksiyonu şu fonksiyon.
+
+641
+01:50:51,484 --> 01:50:53,324
+S gibi yazdı şöyle göstereyim ben.
+
+642
+01:50:58,355 --> 01:51:16,996
+Burası 0, burası da 1. Burası 0.5. Şu oluyor aslında yaptığımız şey, eğer bunun yukarısındaysa 1, sınıfı 1, aşağısındaysa 0 gibi düşünebilirsiniz. Sınıflandırmayı bu şekilde yapıyor.
+
+643
+01:51:18,456 --> 01:51:24,175
+Lojistik regresyon neyi öğreniyor diye soracak olursanız aslında bu ağırlıkların etkisi.
+
+644
+01:51:24,372 --> 01:51:34,891
+Mesela bu kise yaş olsun, bu maaş olsun, bu evlilik durumu olsun, tahmin ettiğimiz şeylerde sahtekarlık.
+
+645
+01:51:38,515 --> 01:51:56,795
+Şimdi bunların katkılarımı ölçerek bu fonksiyon karar veriyor. Buradaki ağırlık 0.2 olsun, 0.3, 0.01, 0.9, bu 1.1 gibi. Aslında ağırlık değerlerinden oluşacağız biz.
+
+646
+01:52:06,387 --> 01:52:11,327
+Bu bizim modelimiz olmuş oluyor. Aslında model en sonunda şunları öğreniyor.
+
+647
+01:52:14,068 --> 01:52:25,207
+Sonrasında gelecek herhangi bir yeni veride, x1, x2, x3'ten oluşan kombinasyonlar olan herhangi bir veride y prime'ı tahmin edebiliyoruz.
+
+648
+01:52:26,847 --> 01:52:33,207
+Olay bundan ibaret aslında. Yani sigmoid fonksiyonu da bir bölü, bir artı e üzeri.
+
+649
+01:52:34,228 --> 01:52:45,628
+z gibi dediğimiz bir değer. Aslında z de şu. Sigmoid değerinde sıfırla bir arasında bir değer. Sigmoid akvasyon fonksiyonunu bulasaydınız sıfırla bir arasında bir değer ötecekti.
+
+650
+01:52:46,148 --> 01:52:53,388
+z de bu fonksiyonları çarpımak. Yani x1, v1 çarpı, x1, v2 çarpı, x2 artı artı gibi düşünebiliriz.
+
+651
+01:53:01,844 --> 01:53:05,844
+ve i çarpı x'i değerleriz.
+
+652
+01:53:06,444 --> 01:53:07,404
+Diner kombinasyon.
+
+653
+01:53:08,184 --> 01:53:09,424
+Yapay sınırağı da bu.
+
+654
+01:53:09,684 --> 01:53:13,504
+Eğer bu nörondan bir tane değil de çok sayıda varsa,
+
+655
+01:53:15,984 --> 01:53:20,564
+yani x1, x2, x3, xn gibi,
+
+656
+01:53:23,064 --> 01:53:24,084
+çok sayıda.
+
+657
+01:53:31,412 --> 01:53:33,412
+Mesela şunlara katman deniyor.
+
+658
+01:53:36,412 --> 01:53:37,412
+Hidden layer gibi.
+
+659
+01:53:37,412 --> 01:53:38,412
+Gizli katman.
+
+660
+01:53:41,412 --> 01:53:43,412
+En sonunda da output layer.
+
+661
+01:53:46,412 --> 01:53:48,412
+Burası da bizim input layer.
+
+662
+01:53:49,412 --> 01:53:55,412
+Biz input ve output'u görebiliyoruz ama bu aradaki katman sayısı kaç tane, kaç tane nöron var, bunları göremiyoruz.
+
+663
+01:54:03,731 --> 01:54:05,991
+Arviz, ne arviz, ne bir ağırlık gidiyorsunuz.
+
+664
+01:54:18,707 --> 01:54:20,747
+arasında ses konutu öyle düşünüyoruz.
+
+665
+01:54:21,307 --> 01:54:22,247
+Şimdi aslında
+
+666
+01:54:22,247 --> 01:54:24,087
+her birisinde
+
+667
+01:54:24,087 --> 01:54:25,087
+V1, 1,
+
+668
+01:54:25,467 --> 01:54:27,268
+V1, 2, V1, 3,
+
+669
+01:54:27,527 --> 01:54:30,147
+V1, V1, V1,
+
+670
+01:54:45,844 --> 01:55:10,163
+Buradan çok sayıda katman olabilir. Katman sayısı, nöron sayısı başına ağırlıklar sayısı artıyor. Bu ağırlıkların hepsini öğrenerek en optimum noktada yine bir tahmin yapıyoruz. 0-1 gibi bir tahmin olacak aslında. Veya farklı sınıflar da olabilir. Bir daha çok sınıf olabilir. Fark etmez. Bir tahmin işlemi yapacağız. Aslında öğrenme işlemi bu.
+
+671
+01:55:14,452 --> 01:55:25,211
+Backprobagation'dan bahsedeceğiz. Öğrenme anlatırken onu konuşacağım ama hesaplamasına detaylıca girmeyeceğiz. Genel mantığını konuşacağız.
+
+672
+01:55:26,211 --> 01:55:32,652
+Şimdi öğrenme işlemi nasıl gerçekleşiyor peki Neuraletwork'ta? Şöyle gerçekleşiyor arkadaşlar.
+
+673
+01:55:32,652 --> 01:55:38,311
+Şimdi öncelikle yine doğru besleme ya da feed forward.
+
+674
+01:55:42,228 --> 01:55:56,928
+işleme oluyor. O da şu oluyor. Şimdi herhangi bir iş değerleri için, yaş, maaş gibi kombinasyonları dahilinde bu V değerlerini çarparak burada bir tahmin işlemi gerçekleşiyoruz.
+
+675
+01:55:57,028 --> 01:56:01,068
+Ama bu V değerleri nasıl öğrenecek? Şimdi orijinal veri setimize ekleyelim.
+
+676
+01:56:05,652 --> 01:56:18,652
+x1, x2, x3, xN, en sonunda da y değerimiz var. 0, 1 gibi değerler olsun. Bunların her birisi de...
+
+677
+01:56:21,844 --> 01:56:28,024
+0, 10, 5, 100, 9, 10. Değerler de o olsun.
+
+678
+01:56:29,484 --> 01:56:32,284
+Şimdi öğrenme işlemini nasıl gerçekleştiriyoruz?
+
+679
+01:56:32,504 --> 01:56:40,764
+Öğrenme işlemi de geriye besleme ya da backpropagation dediğimiz bir yöntem öğreniyor.
+
+680
+01:56:41,764 --> 01:56:43,504
+Bu nasıl gerçekleşiyor?
+
+681
+01:56:44,032 --> 01:56:59,612
+Şimdi başlangıç durumunda bizim herhangi bir ağırlıklarımız yok. Bilmiyoruz çünkü ağırlıkları. Bu ağırlıkların her birisine, hadi basit olduğunu varsayalım, her birisini rastgele atalım ya da hepsini bir bir yatalım. Her birisine bir ağırlık var. Bir bir yatalım.
+
+682
+01:57:01,939 --> 01:57:05,920
+Peki, sonuç olarak bu öğrenme işlemi nasıl gerçekleşecek?
+
+683
+01:57:06,220 --> 01:57:11,479
+Yani şimdi ağırlıkları başta rastgele atadım, inputları biliyorum, sonra da tahmin edeceğim.
+
+684
+01:57:11,819 --> 01:57:14,159
+Onu da training verisiyetine göre yapıyoruz.
+
+685
+01:57:14,699 --> 01:57:15,500
+Ne yapıyoruz burada?
+
+686
+01:57:15,967 --> 01:57:35,608
+Şimdi bütün bu input'u aldığım zaman sonucunun bu olması lazım. Bunları burada çarpıyorum, ağırlıklara çarptım, çarptım. Burada bulduğum değeri bir sonrakine aktarıyor, bir sonrakine, bir sonrakine, bir sonrakine. En sonunda bir tahmin yaptık. Diyelim ki 0.1 bulduk. Ama bizim normalde gir olmasını bekliyorduk.
+
+687
+01:57:36,587 --> 01:57:41,007
+Şimdi ne oldu? Aslında bir hata yaptı değil mi? Yani arada bir fark oluşmuş oldu.
+
+688
+01:57:42,547 --> 01:57:46,187
+Hata payımız gerçekleşti. Şöyle çizeyim.
+
+689
+01:57:50,260 --> 01:57:52,260
+Bir hata gerçekleşti.
+
+690
+01:57:54,560 --> 01:58:01,160
+Buradaki farklı farklı x'leri deneyince, bu bizim kostumuz olsun.
+
+691
+01:58:03,160 --> 01:58:05,200
+Bir hata gerçekleşti.
+
+692
+01:58:05,760 --> 01:58:12,600
+Bizim şöyle, gerçekte, bu y1 diyelim.
+
+693
+01:58:13,108 --> 01:58:18,007
+Olan değer buydu. Bizim tahmin ettiğim diye bir prime ise bu oldu.
+
+694
+01:58:18,787 --> 01:58:21,807
+Şimdi hata ne? Şu aradaki boşluk. Değil mi?
+
+695
+01:58:23,347 --> 01:58:29,287
+Sonrasında ne yapmamız lazım? Bu hatayı azaltıcılık bir etki oluşturmak gerekiyor.
+
+696
+01:58:29,367 --> 01:58:34,648
+Yani hatayı minimize edecek şekilde bu V'leri, W'ları düzeltmemiz lazım.
+
+697
+01:58:35,127 --> 01:58:38,427
+Bu işleme de backprobe geçtiği gibi. Yani geri beslenme.
+
+698
+01:58:45,300 --> 01:58:58,680
+Geri beslemede şunu yapıyoruz. Geriye doğru ağırlıkları hafif hafif oynata oynata, değiştire değiştire en optimum V değerlerini bulmaya çalışıyoruz.
+
+699
+01:58:58,800 --> 01:59:05,079
+Şimdi V değerlerini değiştirdik. Tekrar bu işlemi deniyorum. Şimdi başka bir tahmin yapıyorum.
+
+700
+01:59:06,199 --> 01:59:12,199
+Y2 için gerçek değeri bu. Bizim tahmin ettiğimiz değer Y2 bu.
+
+701
+01:59:13,076 --> 01:59:36,576
+Demek ki hata biraz azaldı. Tekrar deniyorum. Başka bir parametre de denildi. Y3 olsun. Bu defa geçti. Y3 k-me gibi. Bunun gibi farklı farklı değerler için bunları teker teker deniyoruz. Aslında bu tek bir değer için değil de böyle bütün hepsi için denediğimiz zaman.
+
+702
+01:59:39,475 --> 01:59:57,355
+Bu toplam maliyet diyelim, toplam hata, toplam cost. O da şuna eşit. Aslında 1 bölü 2 toplamda her birisinin hatasının kareler toplamı diyelim.
+
+703
+02:00:05,332 --> 02:00:29,164
+i' karesi. Toplam hataların, hatalar toplamını. Bizim amacımız bunu minimize edecek, minimize edecek, yani toplam hatayı minimize edecek ağırlıkları, W, i, j'leri bulmamız. Yani her birisindeki...
+
+704
+02:00:29,460 --> 02:00:43,340
+hatayı minimize edecek. Bazı V'ler artacak, bazıları azalacak ve sonuç olarak elde edeceğimiz hata minimize olmuş olacak.
+
+705
+02:00:43,920 --> 02:00:49,680
+Bunun için de aslında bu bir optimizasyon problemi bir türev.
+
+706
+02:00:53,332 --> 02:01:08,792
+işlemi yapıyoruz değil mi? Aslında backprobe geçiş işlemi, geri besleme işlemi tam olarak türev yapıyor. Yani zincir kuralıyla türev yapıyor. Geriye doğru hem bir veriyi aktardıkça türevini alarak burada ve optimiz ediyoruz.
+
+707
+02:01:11,672 --> 02:01:19,512
+Bias değerini güncellemiyoruz. Bias değerini anlatacağım. Ama Bias değerinin kat sayısı güncelleniyor.
+
+708
+02:01:20,627 --> 02:01:37,408
+Bayes değerinin önemli bir anem var. Ona da şimdi konuşacağız. Ama Bayes'ın da bir anem var. Ama o güncelleniyor. VB güncelleniyor ama Bayes törmünün katsayısının kendisi gerçekten güncellenmiyor.
+
+709
+02:01:37,408 --> 02:01:47,467
+Şimdi bu geriye doğru bunları zincir kuralıyla güncelliğe güncelliğe optimum V değerlerini öğreniyoruz.
+
+710
+02:01:48,115 --> 02:01:53,195
+Sonrasında biz aslında öğrenme işlemini gerçekleştirmiş oluyoruz.
+
+711
+02:01:53,576 --> 02:01:58,756
+Şöyle kast edeyim, şimdi bizim hatamız, hatayı bir fonksiyon olarak çizseydik.
+
+712
+02:02:00,336 --> 02:02:01,716
+Bu bizim cost fonksiyonumuz.
+
+713
+02:02:02,115 --> 02:02:04,436
+Backpropagation nasıl çalışıyor? Şimdi onu anlatayım.
+
+714
+02:02:06,176 --> 02:02:08,376
+İlk başta denedik hatamız burada.
+
+715
+02:02:09,096 --> 02:02:12,655
+Şunu denedik birincisinde hatamız burada. İkincisinde burada.
+
+716
+02:02:13,087 --> 02:02:21,127
+Sonra burada, burada farklı farklı x değerlerinde hata fonksiyonunu görebiliyoruz.
+
+717
+02:02:22,107 --> 02:02:29,187
+Şimdi bütün kombinasyonlarını, bütün W, iyi işleleri denememiz mümkün mü?
+
+718
+02:02:30,907 --> 02:02:34,027
+Çok mümkün değil değil mi? Çünkü bu sonsuz sayıda seçenek aslında.
+
+719
+02:02:34,027 --> 02:02:38,827
+Yani sıfır, bir de şeyde bahsedeyim, learning rate denilen örneği.
+
+720
+02:02:39,891 --> 02:03:06,672
+RATE denilen bir parametre var. O dediğinizde 0.01 gibi bir değer. Şu demek learning RATE. Bu türevler alındıktan sonra kat sayıları, her bir kat sayı yücelerken çok büyük büyük hareketler yapabilirsiniz. Bunun da bir sıkıntısı var veya çok küçük hareketler de yapabilirsiniz ama bunun da sıkıntısı var. Biz genellikle bir learning RATE diye bir parametre beliriyoruz. Bu parametre
+
+721
+02:03:07,220 --> 02:03:27,400
+Her bir güncellemede, mesela baktım bunu biraz minimiz etmem lazım. Bunun için W'ları her birisine, mesela vt artı bir eşittir ve vt artı buradaki learning rate kadar artırıp azaltabiliriz.
+
+722
+02:03:28,260 --> 02:03:32,659
+Bunu azalttık, tekrar deniyor. Artırıp tekrar deniyoruz gibi düşünebilirsiniz.
+
+723
+02:03:34,452 --> 02:03:41,771
+Buyur [öğrenci]. Sesin gelmiyor bize, mikrofonun açık diye galiba.
+
+724
+02:03:45,844 --> 02:03:48,984
+Ben bir şey mi yapmışım hocam? Herkut yanlışlıkla kaldırmış.
+
+725
+02:03:49,344 --> 02:03:52,123
+Tamam, yanlışlıkla mı kaldırdı tamam. Problem yok.
+
+726
+02:03:53,743 --> 02:03:57,764
+Şimdi learning rate kadar bunları güncelleyeceğiz. Öyle düşünelim.
+
+727
+02:03:57,963 --> 02:04:01,604
+Yani ağırlıkları aşağı yukarı artırıp azaltabiliriz.
+
+728
+02:04:03,604 --> 02:04:04,076
+Bu...
+
+729
+02:04:04,404 --> 02:04:26,984
+Bize şey yapacak, bunları deneyeceğiz. Ama şimdi bunları sonsuz sayıda seçenekle arttırıp azaltabilirsiniz. Bütün bu kombinasyonları yapmak mümkün değil. Demek ki biraz da akıllıca bir şey yapabiliriz. İşte burada tren işin içine giriyor. Şunu yapalım. Şimdi böyle bir şekilde, böyle bir yapımız olsaydı. İlk başta hatam burada, yüksek bir hata var.
+
+730
+02:04:30,131 --> 02:04:37,611
+Belli parametreleri güncelledim, sonra adam buraya indi. Sizce doğru yolla mı gidiyorum, yanlış yolla mı gidiyoruz?
+
+731
+02:04:40,151 --> 02:04:53,771
+Yani tekrar gidip diğer yönde mi parametreleri yükseltmem lazım? Yoksa parametreleri değiştirdiğim, şu an en son öncelikliğine yaptığım gibi mi devam etmem gerek?
+
+732
+02:04:59,956 --> 02:05:17,956
+maliyet yüksek olması doğru tahmin etmemek demek. Maliyetin düşük olması doğru tahmin etmek demek. Aslında bizim amacımız ne? Şuralara doğru gelmek değil mi? Yani maliyeti sıfıra edinmek. Yani Y1 ile mesela Y1 ile Y...
+
+733
+02:05:26,003 --> 02:05:36,024
+Kariber toplamının sıfıra yakınlamasını istiyoruz. Yani bunun küçülmesini istiyoruz. Demek ki bu tarafa doğru gelmez.
+
+734
+02:05:37,224 --> 02:05:51,564
+Bunu da şöyle ölçüyoruz. İşte burada aslında Gradient Descent diyor. Gradient Descent algoritması deniyor buna. Gradient Descent aslında Trevi kullanarak düşün hesabı diyor.
+
+735
+02:05:52,912 --> 02:06:00,731
+eğimi aslında ölçüyor. Bir sonraki adımda eğimi ölçüyor. Başlangıçtan belli bir learning rate gittikten sonra eğim artıyor mu, azalıyor mu?
+
+736
+02:06:01,412 --> 02:06:11,152
+Şimdi eğim buraya gittiğim zaman azalıyor. Demek ki eğimin artış yönü ters yönünde inmem lazım hatayı azaltmam için. Değil mi?
+
+737
+02:06:12,672 --> 02:06:19,351
+Yukarı doğru gitsem ne yapacak? Eğim artacak. Haliyle hata da almış olacak. Demek ki doğru yönde gitmiyorum. Ters yönde gitmem lazım.
+
+738
+02:06:19,796 --> 02:06:35,636
+Şimdi buraya geldim, bir daha hesap ettim, baktım buraya doğru geliyorum. Demek ki bu yönde gitmem daha uygun. Tekrar güncelledim. Bir daha güncelledim, baktım artmaya başladı. Demek ki yanlış yönde gidiyoruz. Demek ki yönümüzün diğer yöne inmesi lazım.
+
+739
+02:06:35,636 --> 02:06:44,655
+Öyle ki bu işlemi tekrar ede ede, öğrenme işlemi ede ede, küşüle küşüle belli bir noktada sıfır oluyor.
+
+740
+02:06:46,163 --> 02:06:49,783
+Sıfır olduktan sonra artık bu tarafa devam etmeye gerek var mı?
+
+741
+02:06:52,884 --> 02:06:58,323
+Lokal minimuma takılmış olabilir, yapabiliriz ama normalde duruyoruz orada.
+
+742
+02:06:58,564 --> 02:06:59,823
+Onun üstünde çalışıyoruz.
+
+743
+02:07:00,467 --> 02:07:15,687
+Aynen öyle. Yani aslında bu lokal bir minimum olabilir ama aslında burada duruyoruz. Çünkü lokal minimum değil de global minimumsa yanlışlıkla çıkıp gidebiliriz. Hatayı büyütebiliriz. Demek ki artık çok fazla da gitmemize gerek yok.
+
+744
+02:07:16,267 --> 02:07:22,007
+Tabii ki neural networklerin lokal minimuma yakın sama gibi bir riski var.
+
+745
+02:07:22,452 --> 02:07:31,352
+Bu bir potansiyel risk. Ama genel olarak bu da çok büyük bir problem olmayabilir.
+
+746
+02:07:31,492 --> 02:07:35,932
+Yani lokal minimum olsaydı, şeklimiz şöyle olsaydı, problem olurdu.
+
+747
+02:07:36,372 --> 02:07:46,192
+Verimiz şöyle. Şimdi biz buradan, buraya yakasamış olsaydık, bu durumda bir problemimiz olurdu.
+
+748
+02:07:46,672 --> 02:07:48,412
+Aslında bizim global minimumuz burası.
+
+749
+02:07:50,100 --> 02:08:08,600
+Buraya gelmek istiyoruz. Ama lokal minimumda yanlışlıkla ulaşmış olabiliriz. Şimdi gradient descent'in bütün veriyi bir kere de alıp batch gradient descent diyoruz.
+
+750
+02:08:12,595 --> 02:08:36,855
+Benç gradyan hesap şu oluyor. Bütün veriyi, training verisini tamamını alıyor. Tamamını W'ları güncellemek için kullanıyor. Yani o W'ları bulmak için tamamını alıyor. Bunların ortalama gradyanlarını buluyor. Ortalama gradyanın yönüne göre ilerliyor. Bu haliyle şöyle bir avantajı var ama dezavantajı var.
+
+751
+02:08:40,627 --> 02:08:55,627
+Batch normal, Batch kredi in descent'te hatalar, başlangıçlar, Epox sayısı arttıkça bunu biliyoruz. Gittikçe loss düşüyor, düşmeye devam ediyor. Yani bunun lokal minimum da olabilir ama...
+
+752
+02:08:57,971 --> 02:09:09,631
+Belli bir ilmeyle azalacağının garantisini verebiliyoruz. Çünkü learning rate, bütün tamamını öğrendik ilk başta çok hataya, biraz sonra bütün verdiği aynı anda ortalamalarını aldığı için hata var.
+
+753
+02:09:09,711 --> 02:09:20,171
+Azala, azala, azala. Epoch sayısı arttıkça, bu böyle giderek benim yoksa da konverge ediyor. Daha da azalmıyor, sabitleşiyor.
+
+754
+02:09:21,511 --> 02:09:24,372
+Ama batch, kredi indisende şöyle bir problemi var.
+
+755
+02:09:25,203 --> 02:09:32,583
+En küçük bir ağırlık güncellemesi için bütün veriyi gradiyanlarına hesaplamamız lazım.
+
+756
+02:09:33,463 --> 02:09:39,043
+Bunun şöyle bir maliyeti var. Büyük veriler yapıyorsanız bu çok ciddi bir maliyet tutacaktır.
+
+757
+02:09:39,264 --> 02:09:47,144
+Büyük verilerde bunları analiz etmek eğitim inanılmaz yavaş hale gelir. Dolayısıyla bu böyle bir risk taşıyor.
+
+758
+02:09:49,203 --> 02:09:51,423
+Bunun diğer bir yaklaşımı da şu.
+
+759
+02:09:52,148 --> 02:10:13,528
+Stochastic gradient design dediğimiz diğer bir algoritma. Stochastic gradient design aslında rastgele her bir noktayı rastgele seçerek.
+
+760
+02:10:13,971 --> 02:10:20,452
+rastgele bir noktası seçerek ona göre gradyanlarını hesaplıyor, sonra bir sonraki hesaplıyor, sonra bir sonraki.
+
+761
+02:10:20,731 --> 02:10:29,891
+Yani her bir ağırlık güncellemesi için rastgele seçilen bir tane input kayıdını inceleyerek yapıyor.
+
+762
+02:10:30,152 --> 02:10:33,231
+Bütün beş şey incelemiyor, bir tanesini rastgele seçiyor.
+
+763
+02:10:34,372 --> 02:10:39,452
+Bu da tabii şöyle bir problem oluşturabiliyor.
+
+764
+02:10:40,595 --> 02:11:01,095
+Stochastic Gradient Lisette. Şimdi buradaki gibi smooth bir şey beklemek pek mümkün olmuyor. İlk başta düşebilir, sonra tekrar düşüyor, düşüyor, sonra artıyor, artıyor, düşüyor, artıyor, artıyor. Böyle loss fonksiyonunuz belli bir lokal minima konverj etmeyebilir. Tabii ki bu böyle aşırı flat generation yapabilir.
+
+765
+02:11:02,292 --> 02:11:15,692
+Ama yine de fena değil. Belli bir noktada tabii ki daha da inmesiyle azalıyor. Ama yani şurada mı keseceksiniz, şurada mı keseceksiniz epokları? Bu önemli. Yani kendi içine de farklılık taşıyabilir. Bir tutarsızlık oluşturabiliyor.
+
+766
+02:11:15,692 --> 02:11:28,692
+Ama şunun böyle bir avantajı var ki seçtiğiniz başlangıç noktası, rastgele seçtiğiniz için stokastik kredi insanda, buradan başlamış olsaydınız,
+
+767
+02:11:29,007 --> 02:11:46,408
+Şuradaki lokal minimuma kesinlikle denk gelecek bize. Ama rastgele seçtiğiniz noktadaki W'lar belki buraya denk gelecek. Dolayısıyla konverj ettiğiniz zaman aslında global minimuma yaklaşma ihtimaliniz artıyor. Bu rastgelelikten kaynaklanan bir şey.
+
+768
+02:11:47,539 --> 02:11:57,579
+5 minimumda ise bu hep olmak durumunda değil. Yani lokal minimuma yakınsama ihtimali daha da fazla oluyor.
+
+769
+02:11:57,939 --> 02:12:07,739
+5 normalizasyonda. Ama 5 kredi intisende de daha böyle öngörülebilir bir epok azalması var.
+
+770
+02:12:07,739 --> 02:12:13,292
+Burada ise böyle biraz farklılıklar olabiliyor. Şimdi buradaki farklılıkları...
+
+771
+02:12:13,332 --> 02:12:16,632
+biraz daha azaltacak, yani öngörülebilirliği artıracak.
+
+772
+02:12:17,132 --> 02:12:22,532
+Ama aynı zamanda bu kadar yüksek maliyetle ödemeyeceğimiz bir yaklaşım var mı?
+
+773
+02:12:23,192 --> 02:12:25,752
+Aslında var. Stokastik krali indisendi.
+
+774
+02:12:30,836 --> 02:12:56,016
+şeklinde yapmamız mümkün. Yani bütün veri mesela 100 bin tane verimiz varsa, 100 bin değil de böyle 60 tanesini veya 30 tanesini sadece incelerek hesaplarsanız, W'ları, bu durumda aslında ikisinin de bir avantajlı taraflarını elde etmiş oluyorsunuz. Hem tek bir değere göre olmadığı için şuradaki flakşöyüşler biraz daha az oluyor, küçülüyor.
+
+775
+02:12:56,467 --> 02:13:04,528
+Hem o mini 5'te seçtiğiniz rast geriliklerden dolayı biraz global minimum yakınlama ihtimali artıyor.
+
+776
+02:13:04,668 --> 02:13:09,608
+Hem de 5'teki kadar yüksek bir maliyet ödemiyorsunuz.
+
+777
+02:13:09,807 --> 02:13:15,368
+Yani biraz maliyeti artırıyorsunuz stokastiğe göre ama çok da fazla değil.
+
+778
+02:13:15,467 --> 02:13:17,708
+Çünkü 60'lar, 100'lar bir kat sayı sonuçta.
+
+779
+02:13:18,927 --> 02:13:22,628
+Bu üçü de aslında kullanılabilir çeşitli.
+
+780
+02:13:23,444 --> 02:13:35,684
+Farklılık ihtiyaca göre denenebilir. Ama genellikle mini-batch, stokastik tercih ediliyor özellikle büyük veriler için. Çok daha avantajlı bir seçeneği var.
+
+781
+02:13:35,684 --> 02:13:50,464
+Yani, şeye gelmek gerekirse, forward pass şeyde, G-Pay sinir al.
+
+782
+02:13:51,028 --> 02:13:58,728
+inputları ağırlıkları çarparak bunları bir aktivasyon fonksiyonuna sokuyoruz.
+
+783
+02:13:59,148 --> 02:14:01,748
+Sonrasında da bir sonraki nöronu aktarıyoruz.
+
+784
+02:14:02,428 --> 02:14:05,688
+Bu işlem output nöronuna kadar devam ediyor.
+
+785
+02:14:05,948 --> 02:14:08,168
+En sonunda da bir tahmin işlemi gerçekleşti.
+
+786
+02:14:09,708 --> 02:14:13,868
+Örnek vermek gerekirse, işte bu tek bir nöron olacaktı.
+
+787
+02:14:14,428 --> 02:14:15,208
+Regresyon olacaktı.
+
+788
+02:14:15,208 --> 02:14:18,208
+Aslında burada logistik regresyonu fonksiyonu, sigmoid fonksiyonu.
+
+789
+02:14:18,836 --> 02:14:34,055
+1 artı evzirex, z. Burası da WT transpozunu alıyoruz çünkü matris çarpımı olduğu için. Bir de inputlar. Bunun kendisi bizim z'nin değeri oluyor aslında. Ve bunu tahmini yapılıyor.
+
+790
+02:14:35,055 --> 02:14:38,175
+Şurada örnek vermek gerekirse input nodlarımız.
+
+791
+02:14:38,739 --> 02:14:43,219
+Buradaki değerlerimiz ve bizim buradaki W çarpımlarımız.
+
+792
+02:14:43,759 --> 02:14:45,579
+Bu çok sayıda katmanlar oluşuyor.
+
+793
+02:14:45,579 --> 02:14:47,179
+Biraz kara kutu gibi olmuş oluyor.
+
+794
+02:14:48,039 --> 02:14:50,939
+Ama en sonunda biz output'u görebiliyoruz.
+
+795
+02:14:52,779 --> 02:14:57,239
+Bu içerideki katmanları otomatik olarak kendisi hesap ediyor.
+
+796
+02:15:00,307 --> 02:15:05,307
+Şeyi de anlatayım, Bayes dediğimiz, mesela burada bir örnekle bunu belki konuşabiliriz.
+
+797
+02:15:05,407 --> 02:15:11,188
+İşte training datamız, işte bir öğrenci kaç saat çalışıyor, IQ değeri, işte eğitim durumu, cinsiyeti.
+
+798
+02:15:11,287 --> 02:15:16,567
+Buna göre bu kişi bu dersten geçerli mi geçmezse, onu tahmin edeceğimizi varsayalım. Bunlar bizim prediksörlerimiz.
+
+799
+02:15:19,567 --> 02:15:20,167
+Inputları.
+
+800
+02:15:20,560 --> 02:15:29,060
+nöronlara, yapay sınır alanına gönderdikten sonra, öncelikle bu W değerlerini hesap ettiğimizi varsayıyoruz.
+
+801
+02:15:30,460 --> 02:15:39,340
+Öğrendiğimiz kat sayılarla çarparak, feedforward yaparak en sonunda alt tutulursa, eğer buradaki örneğe göre 0.31.
+
+802
+02:15:43,828 --> 02:15:48,788
+Dolayısıyla bu öğrenci kalır diye tahmin yapmış oluyoruz en son.
+
+803
+02:15:52,028 --> 02:15:59,188
+Bayes işleminin gerektiğini konuşalım isterseniz. Bu Bayes törümü neden önemli veya neden buna ihtiyaç duyuyoruz?
+
+804
+02:15:59,948 --> 02:16:01,248
+Şundan ihtiyaç duyuyoruz.
+
+805
+02:16:02,728 --> 02:16:07,788
+Bayes olmazsa aslında sadece X1 ve...
+
+806
+02:16:09,043 --> 02:16:11,943
+W1 gibi değerlerin toplamlarına oluşacak.
+
+807
+02:16:13,423 --> 02:16:17,503
+Bu da şöyle bir, mesela sigmoid fonksiyonumuz olsun.
+
+808
+02:16:19,003 --> 02:16:20,923
+Şöyle bir sigmoid fonksiyonumuz var.
+
+809
+02:16:31,539 --> 02:16:37,159
+Bayes aslında shift etme. Yani bunu sağa kaydırıp sola kaydırmak gibi bir etkisi var.
+
+810
+02:16:37,479 --> 02:16:46,100
+Fonksiyonun kendisine bir etkisi yok ama sağdan mı geçecek, soldan mı geçecek bunu belirlemede faydası oluyor ve bu bazen gerekli.
+
+811
+02:16:46,700 --> 02:16:51,540
+Şöyle göstereyim. Mesela en basit anlamak için şunu şöyle yapabiliriz.
+
+812
+02:16:53,860 --> 02:16:57,459
+Regresyondan bahsedelim. Normal linear regression. Linear regression.
+
+813
+02:16:59,956 --> 02:17:10,695
+Fonksiyonumuz ne aslında? y eşittir mx artı b gibi bir fonksiyon değil mi? Mesela şöyle bir doğrumuz var. Verinin dağılımına göre böyle bir doğru çiziyoruz.
+
+814
+02:17:13,556 --> 02:17:23,956
+Buradaki m bizim w'larımız gibi düşünün. x'lerde inputlarımız. x1, x2, x3, xm. Bir de b diye bir değerimiz var.
+
+815
+02:17:25,796 --> 02:17:27,015
+b ne olmuş oluyor?
+
+816
+02:17:27,924 --> 02:17:29,224
+B'nin değeri nedir?
+
+817
+02:17:33,907 --> 02:17:39,108
+Bu intercept değerimiz, yani bu B değeri aslında bunun nereden geçeceğini belirliyor.
+
+818
+02:17:39,527 --> 02:17:45,367
+Bias değer, yani buradaki bir kat sayı olmasa bütün regresyonlar nereden geçecekti?
+
+819
+02:17:46,407 --> 02:17:47,468
+Orijinden geçmesi lazım.
+
+820
+02:17:49,747 --> 02:17:51,147
+Hepsi orijinden geçmesi lazım.
+
+821
+02:17:53,027 --> 02:17:54,987
+Şuradan da olabilir, şöyle da olabilir.
+
+822
+02:17:54,987 --> 02:17:56,887
+Ama hepsinin orijinden geçmesi gerekiyor.
+
+823
+02:17:57,216 --> 02:18:04,056
+Şimdi bu Bayes katıysı şeyde, regresyonda aslında doğrunun nereden geçeceğini kalabilir.
+
+824
+02:18:04,136 --> 02:18:08,136
+Aşağıdan da geçebilir. Pardon. Şöyle kaldı.
+
+825
+02:18:10,616 --> 02:18:16,195
+Doğru aşağıdan da geçebilir, yukarıdan da geçebilir ama sıfırdan da geçebilir.
+
+826
+02:18:16,296 --> 02:18:19,076
+Bu 5'tir sıfırsa orijinden de geçebilir.
+
+827
+02:18:19,436 --> 02:18:23,335
+Ama bu terim olmasa her zaman orijinden geçmek zorunda.
+
+828
+02:18:24,788 --> 02:18:52,368
+Aynı şey bu nöronlar içinde geçerli. Eğer Bayes-Törn eklenmezse aktivasyon fonksiyonu aslında orijinal geçecek gibi fonksiyonu çiziyor. Ama bu bazen böyle sağa sola kayması gerekebilir. Sağa sola doğru küçük kaymaları gerekebilir. Bu da aslında bizim modelin esnekliğini sağlıyor. Overfitting olmasında da aslında önleyici bazı katkıları var.
+
+829
+02:18:53,299 --> 02:18:58,159
+Bayes'in katsayı sınırı. Sabiliyoruz ama Bayes bir sabit değer.
+
+830
+02:19:00,299 --> 02:19:06,919
+Bizim için önemli olan aslında modelin bu weight'leri, ağırlıkları doğru şekilde öğrenmesi.
+
+831
+02:19:07,619 --> 02:19:13,779
+Peki şunu da sorabilirsiniz. Nasıl öğreniyor? Neden bu kadar çok sayıda nörona ihtiyacımız var?
+
+832
+02:19:16,259 --> 02:19:17,279
+Şundan da ihtiyacımız var.
+
+833
+02:19:18,939 --> 02:19:20,700
+Şimdi verimize tekrar gidersek.
+
+834
+02:19:23,188 --> 02:19:48,087
+Şimdi burada sahtekarlık yapan insanlar vardı değil mi? Şöyle düşünelim, şimdi her türlü sahtekar birbirinin aynısı değil. Mesela bazı sahtekarlar fakir sahtekar. Mesela işte diyelim ki, şuradaki nöron bunu daha çok kodluyor. Mesela adam çok cibri olduğu için sahtekarlık yapıyor, para vermek istemediği için sahtekarlık yapıyor. Mesela başka bir tane sahtekar.
+
+835
+02:19:48,564 --> 02:19:57,083
+Bu da çok lükse düşkün olduğu için sahtekar. Dolayısıyla bunların inputları farklı değil, birbirinden farklı yetenekler taşıyorlar.
+
+836
+02:19:57,923 --> 02:20:03,324
+Veya başka bir sahtekarda şu olabilir, kumar oynayan, alışkanlığı olan birisi sahtekarlı.
+
+837
+02:20:03,583 --> 02:20:09,524
+Başka bir sahtekarda ne bileyim, başka özelliklere sahip olabilir, bilemiyorum.
+
+838
+02:20:09,524 --> 02:20:14,524
+Yani her birisine farklı farklı nöronlar aslında...
+
+839
+02:20:15,987 --> 02:20:26,608
+kodluyor diye düşünebiliriz. Yani bu şeylerin veri içerisindeki farklı özellikleri bazı nöronlar daha iyi öğreniyor.
+
+840
+02:20:27,587 --> 02:20:38,648
+Dolayısıyla nöron sayısı arttıkça aslında model içindeki karmaşıklıkları daha iyi öğrenme gibi bir potansiyelimiz oluşuyor.
+
+841
+02:20:38,648 --> 02:20:42,648
+Ama bunun da bir dezavantajı var. Hani modeliniz o kadar çok...
+
+842
+02:20:42,736 --> 02:20:49,776
+karmaşıklaşırsa, yani olması gerek eden çok karmaşıklaşırsa, hangi problemle karşılaşıyorduk?
+
+843
+02:20:50,216 --> 02:20:51,576
+Overfitting oluyoruz tamamen.
+
+844
+02:20:51,576 --> 02:21:10,296
+Overfitting oluyoruz. Bu defa da overfitting olma riskiniz var. Yani datanız basit. Aslında datayı çözmek istediğiniz şey basit ama çok derin, çok katmanlı model kullanıyorsanız bu defa da tam tersi bir problemle, overfitting problemiyle karşılaşabilirsiniz. Bu da aslında diğer bir risk.
+
+845
+02:21:11,731 --> 02:21:19,731
+Yani, feedforward işlemi aslında şurada gösterdiğimiz gibi inputları ağırlıklara çarpıyoruz.
+
+846
+02:21:20,171 --> 02:21:22,971
+Sonra bulduğumuz değeri bir aktivasyon fonksiyonuna gönderiyoruz.
+
+847
+02:21:23,131 --> 02:21:26,371
+Aktivasyon fonksiyonunun sonucunu da bir sonrakine gönderiyoruz.
+
+848
+02:21:26,612 --> 02:21:30,231
+Bir sonrakine bu şekilde bu devam ederek de işlemleri yapmış oluyor.
+
+849
+02:21:31,671 --> 02:21:35,231
+Aktivasyon fonksiyonları da çeşitli fonksiyonlar...
+
+850
+02:21:35,924 --> 02:21:42,524
+Farklı farklı fonksiyonlar var. Sigmoid fonksiyonu buradaki gördüğünüz gibi formülasyon uyguluyor.
+
+851
+02:21:44,304 --> 02:21:53,064
+TaneH fonksiyonu kullanabilirsiniz. Bu da yine 1 ile negatif 1 arasındaki bir değer. Sigmoid'e benziyor ama daha çarp bir geçişler var.
+
+852
+02:21:53,684 --> 02:22:00,364
+Maksimuma 1, minimuma 1. Reli fonksiyonu şu şekilde çalışıyor.
+
+853
+02:22:00,832 --> 02:22:09,932
+0, bu negatif olmayan bir değer, 0 ile maksimum. Burası linear bir değer ama negatif bir değer geliyorsa da 0 eşit diyor.
+
+854
+02:22:10,472 --> 02:22:19,632
+Relium bunu yapıyor, maksimum değer herhangi bir linear değer olabilir. Yani input, ürettiğiniz output, maksimum bunu alıyor.
+
+855
+02:22:20,352 --> 02:22:23,152
+Ya linear bir değer ya da 0 gibi düşünemişsiniz.
+
+856
+02:22:24,435 --> 02:22:29,355
+Likirelu da şunu yapıyor, aslında negatif de olabiliyor.
+
+857
+02:22:30,076 --> 02:22:39,435
+Ama negatif kısımda olduğu zaman bu tabii ki daha minimize, daha küçük bir kat sayıyla negatif olabilir.
+
+858
+02:22:40,536 --> 02:22:45,416
+Onun dışında ELU, Maxout gibi çeşitli varyantları da var.
+
+859
+02:22:46,136 --> 02:22:51,216
+Bunların hangisi en iyidir diye bir şey söylememiz söz konusundayız. Biraz dataya göre.
+
+860
+02:22:51,667 --> 02:23:00,167
+şekilleniyor bunlar, aktivasyon fonksiyonları. Bazen sigmoid, bazen tan-age, bazen relu daha iyi çalışabilir.
+
+861
+02:23:01,427 --> 02:23:08,987
+Biraz verimli teline göre oluyor ama relu biraz daha ön plana çıkabiliyor. Birçok problemde daha genellenebilir çözümler üretebiliyor.
+
+862
+02:23:08,987 --> 02:23:14,987
+Ama dediğim gibi bunun tek bir çözümü yok. Sizin kullandığınız modeli veriye göre değişebiliyor.
+
+863
+02:23:18,036 --> 02:23:27,896
+Multi-layer Perceptron denmesi nisbide çok katman olması, çok katmanlı, Perceptron çok katmanlı nöron yapısı demek aslında.
+
+864
+02:23:28,115 --> 02:23:34,015
+Yani standart yapay sinir ağları Multi-layer Perceptron şeklinde isimlendirilir.
+
+865
+02:23:34,772 --> 02:24:01,092
+Bunun deep learning olmasının sebebi çok çok sayıda. Mesela binlerce katman olabilir, çok daha derin ağlar ortaya çıkıyorsa buna deep learning yani DNN diyoruz asla. Mantık olarak yeni bir şey değil bu. Yine bir yapay sayıda ağ kullanıyoruz. Kullandığımız katman sayısı derinleşiyor. Derin öğrenme, çok karmaşık problemler de çok avantajlı. Mesela görüntü işlemi, doğal dil işlemi.
+
+866
+02:24:01,456 --> 02:24:11,435
+Zaman serisi tahminle. Bunlar karmaşık problemlerdir. Bunlarda derin olmasının bir katkısı var ama overfitting olma gibi riskleri de barındırıyor.
+
+867
+02:24:13,295 --> 02:24:25,175
+Bunları konuştuk. O yüzden hani geçiyorum burada. Loss fonksiyonunu siz çeşitli çeşitli metriklerle tanımlayabilirsiniz ama genellikle mean square error fonksiyonu, loss fonksiyonu olarak tanımlanır.
+
+868
+02:24:25,551 --> 02:24:38,351
+Backpropagation'la da az önce anlattığım gibi geriye doğru bu W ağırlık değerleri güncellenerek en optimize edecek W'lar tespit ediliyor.
+
+869
+02:24:38,351 --> 02:24:48,652
+Eğitim aşamasında aslında bizim gradyanlarımız bu W'ları sağlayacak şekilde güncellenme yapan bir TREF fonksiyonu.
+
+870
+02:24:49,139 --> 02:24:52,079
+Bu bizim orijinal fonksiyonumuz, loss fonksiyonumuz.
+
+871
+02:24:52,079 --> 02:24:54,860
+Az önceki musical error mesela.
+
+872
+02:24:55,500 --> 02:24:58,500
+Bu bizim test aşamasında gerçek değerlerimiz.
+
+873
+02:24:59,219 --> 02:25:00,119
+Ya da train aşamasında.
+
+874
+02:25:00,259 --> 02:25:03,939
+Bunlar da modelin aktivasyon fonksiyonunun sonuçunda ürettiği değerler.
+
+875
+02:25:04,939 --> 02:25:07,079
+Tabii ki modelleri...
+
+876
+02:25:08,404 --> 02:25:19,244
+Overfit olmasını engellemek için bazı yaklaşımlar kullanılabiliyor. Dropout dediğimiz bir yöntemde aslında modelleri düzenleme, regürizet meşif kullanılan bir yaklaşım.
+
+877
+02:25:19,783 --> 02:25:26,584
+Bazı nöronları penaltı uygulayarak çıkarıyoruz aslında. Rastgele seçip azalttığımız düşlerim.
+
+878
+02:25:36,084 --> 02:26:01,084
+düşürüyor, ihtimalini düşürüyor. Bunun gibi bir... Tabii cross-entropy de aynı şekilde çok yaygın kullanılır. Yani daha çok cross-entropy kullanılıyor ama mean square error da kullanılıyor. Hani burada başka yaklaşımlar da seçilebilir. Ama hani...
+
+879
+02:26:02,579 --> 02:26:10,380
+Tek bir loss fonksiyonu yok. Yani çeşitli loss fonksiyonları var. Siz bunları teyrede ediyorsunuz. Buyurun.
+
+880
+02:26:10,380 --> 02:26:17,860
+Çok özür diliyorum. Bu cross-entropy ile mid-square arasında tercih etmek gerekirse neye göre?
+
+881
+02:26:21,079 --> 02:26:24,380
+Aslında hani yani...
+
+882
+02:26:25,108 --> 02:26:43,788
+Çok da şey yok yani, bunun standart bir cevabı yok aslında. Biraz deneme yanılma, yani softmax kullanabilirsiniz, cross-entropy ya da loss fonksiyon olarak min square. Bütün bunların üşü de aslında hepsi de türevlenebilir. Türevlenebilir olmasına ihtiyacımız var.
+
+883
+02:26:45,008 --> 02:26:47,948
+Verinin içeriğinin bir etkisi var mı?
+
+884
+02:26:48,819 --> 02:27:09,479
+Tabii ki vardır ama bariz bir neden olarak şundan kaynaklanan ödül diyebileceğim bir şey yok aslında. Bunlar sadece farklı bir fonksiyonu minimize ediyor. Yani matematiksel bir minimizasyon var ama şu veride bu daha iyi olur diyebileceğim bir şey yok aslında bakarsanız.
+
+885
+02:27:10,260 --> 02:27:17,940
+Teşekkür ederim. Rica ederim, ben teşekkür ederim. Ama aslında hepsi türevlenebilir, yani bir fonksiyon olması yeterli.
+
+886
+02:27:17,940 --> 02:27:20,920
+Çünkü minimizasyon ediyoruz.
+
+887
+02:27:24,948 --> 02:27:50,668
+Gradient Descent'den bahsettik. Yani Gradient Descent'de tabii ki şöyle bir dezavantajı var. Bu da modelimiz konveks olmak zorunda. Yani konveks olduğu durumlarda minimizasyon yapabiliyoruz. Konkav şekillerde, dış büçel şekillerde bu tabii ki çözüm sağlayamıyor. Ama büyük oranda doğru çalışıyor. Yani bu konkav şekillerin olma ihtimali düşük.
+
+888
+02:27:51,059 --> 02:28:07,359
+Haliyle siz çoğu kez global minimumu bulamayabilirsiniz ama bu ihtimal olarak karşılaştırdığım zaman büyük çoğunluğunda zaten aslında lokal minimum da işinizi görebiliyor ya da direkt global minimuma da konverge edebilir.
+
+889
+02:28:07,859 --> 02:28:11,319
+Etmediği zaman da olabilir ama bunun ihtimali çok çok yüksek değil.
+
+890
+02:28:11,924 --> 02:28:19,104
+Büyük oranda, ortalamada baktığınız zaman aslında çoğu kez en başarılı yöntem olarak ortaya çıkabiliyor.
+
+891
+02:28:22,404 --> 02:28:26,484
+Geriye doğru besleme, zincir kuralıyla Türev'de hatırlarsanız.
+
+892
+02:28:27,956 --> 02:28:35,236
+Geriye doğru bir önceki, bir önceki zincir kuralı uygulayarak, türev alarak bu W'ları bu şekilde güncellemiyorsunuz.
+
+893
+02:28:35,256 --> 02:28:44,876
+Yani zincir kuralıyla minimize edecek, hatayı minimize edecek zincir kuralıyla türev ala ala önceki ağırlıkları backpropagation ile güncellemiyorsunuz.
+
+894
+02:28:44,935 --> 02:28:47,576
+Aslında W'ların güncellemesi bu şekilde olur.
+
+895
+02:28:49,139 --> 02:29:02,459
+Şeyi de konuştuk, burada mini-batch olduğu zaman, diyelim ki tek bir row değil de 8 row olarak bunların ortalamasını da minimize edecek şekilde W'ları güncelliyoruz.
+
+896
+02:29:02,459 --> 02:29:09,259
+Eğer stokastik olsaydı sadece bir tane rowdaki değere göre W'ları her defasında güncellyecektik.
+
+897
+02:29:09,876 --> 02:29:24,056
+5 kredi indisiyatı olsaydı her bütün veri, yani 100 bin, 500 bin, 1 milyon veri de olabilir. Tamamına göre bunu birer birer WLAT'ı gücüllüyor. Bu çok maliyetli oluyor. Yavaş oluyor o yüzden.
+
+898
+02:29:26,932 --> 02:29:35,652
+Bunu da konuştuk. Yani aslında bakarsanız, training aşamasında nasıl gerçekleşiyor, loss fonksiyonu, tepede başladığını varsayalım.
+
+899
+02:29:35,652 --> 02:29:45,871
+Gradient descent, minimize edecek. Mesela burada loss fonksiyonu, burası global minimum, burası lokal minimum. Şuradan buraya da kayabilir.
+
+900
+02:29:46,451 --> 02:30:02,412
+Şurada başladıysa buraya kayacaktır, %100 ihtimalle. Şurada başladıysa buraya da kayabilir, buraya da kayabilir. Biraz stokastik rastgeleliğin şansı da o. Yani bu global minimuma yakınlama ihtimalini biraz o rastgelelikten dolayı artırıyoruz.
+
+901
+02:30:04,291 --> 02:30:07,340
+Stokastik krediyen desen, burada başladıysa...
+
+902
+02:30:07,860 --> 02:30:14,040
+İne, ine, ine, hatayı azaltı azala şuraya kadar gelecektir. Buradaki şansımız global minima denk gelmiş olması.
+
+903
+02:30:18,227 --> 02:30:34,227
+Bunları da konuştuk. Aslında hani Epoch sayısı arttıkça tabii ki bu stokastik kredi indisende, öngörülebilirlik, 5 normalizasyon, 5 kredi indisende kadar olmamakla birlikte...
+
+904
+02:30:36,884 --> 02:30:57,564
+5'e göre de daha büyük bir ihtimalle globale yakınlama ihtimali var. Hem daha hızlı hem global olma ihtimali avantajlı. Bir de şimdi bu mini 5 olduğu zaman aslında siz farklı farklı 5'leri paralel olarak da hesap edebiliyorsunuz krevlerini.
+
+905
+02:30:57,920 --> 02:31:22,939
+Bunun avantajı da şu oluyor, paralel bir şekilde bunları aslında eğitebiliyoruz. Yani GPU kullanmasının avantajı da o. Çünkü paralelleştirdikçe bu bir sürü parametre aslında hesap ediyoruz, gradyen hesaplıyoruz. Bunları paralel olarak yaptığımız zaman GPU'larla, farklı prosesörlerle çok hızlıca trainingi gerçekleştirme ihtimalimiz oluyor. CPU'da mesela bu paralellik sayısı azaldığı için
+
+906
+02:31:23,280 --> 02:31:36,900
+Yine eğitebilirsiniz. Yani derin öğrenmeyi de eğitebilirsiniz CPU bilgisayarlarda. Ama eğitim performansı çok yavaş olacak. Çünkü paralellik yapmanıza daha az imkan verecektir CPU'lar.
+
+907
+02:31:40,420 --> 02:31:48,840
+Bir genel değerlendirme yapmak gerekirse, neural networkler ya da yapay sinir ağlarının avantajları, dezavantajları nedir?
+
+908
+02:31:49,620 --> 02:32:01,840
+Zayıf olduğu noktalar var tabii ki. Çünkü çok fazla parametre öğrenmesi gerekiyor. W'lar özellikle veri arttıkça ve A yapısı arttıkça dramatik bir şekilde artıyor.
+
+909
+02:32:02,659 --> 02:32:10,200
+Ve her bir parametre öğrenme aslında deneysel gerçekleştiği için ciddi bir maliyet var. Ve eğitim süresi artıyor.
+
+910
+02:32:10,200 --> 02:32:15,659
+Ve yapay sınıf ağları aslında verinin büyüdüğü arttıkça anlamlı hale geliyor.
+
+911
+02:32:16,180 --> 02:32:20,380
+Çok ciddi bir veri açlığı duyuyor.
+
+912
+02:32:21,747 --> 02:32:49,747
+Çünkü parametrelerin sayısı arttıkça bunları iyi öğrenebilmek için çok verininizin olması lazım. Aksi halde overfitting gibi problemler olabilir. O yüzden böyle bir dezavantajı var. Diğer bir önemli dezavantajı da aslında açıklanabilirliği, yani yorumlanabilirliği biraz sıkıntı. Çünkü bu model kendi kendine öğreniyor ve doğru çalışıyor olabilir. Ama bunları ifade ediyoruz.
+
+913
+02:32:49,747 --> 02:33:10,207
+İrade etmek, anlamlandırmak çok kolay değil. Yani mesela karar ağacında bakıyorsunuz, işte en üstteki feature en önemli feature'dır. Şuradan şuraya geldiği zaman ikinci özelliği de şu olanlar, hem evli olanlar, hem işte ne bileyim geri iade, vergi iadesi olanlar sahtekarlık yapmaz diye yorum yapabiliyorsunuz. Kurallar türetebiliyorsunuz.
+
+914
+02:33:10,548 --> 02:33:19,028
+Ama burada bu söz konusu değil. Çünkü sadece W'larla bahsediyoruz. SVM için de bu geçerli. İkisi için de yorumlanabilirlik sayısı.
+
+915
+02:33:19,808 --> 02:33:32,188
+İyi tarafları ne diye sayacak olursak aslında en büyük başarısı çok yüksek başarıyla karmaşık problemleri çözebiliyor olması. Bu en önemli özelliği.
+
+916
+02:33:33,268 --> 02:33:59,247
+Noizelara göre toleransı yüksek. Onun dışında mesela böyle görülmemiş kalıpları, görülmemiş karmaşıklıdaki patenleri yakalama ihtimali var. Bir de yapay sinir ağlarını özellikle derin öğrenmeyle kullandığınız zaman feature'ları da kendisi öğrenebilir veriyle birlikte. O açıdan gayet uygun. Tabii ki sürekli verileri kullanmak gerekiyor, uygun şey yapabilirsiniz.
+
+917
+02:33:59,796 --> 02:34:07,936
+Hani, ad koding yapma, bana ad koding gibi kategorik değerleri dönüştürmeniz gerekiyor ama sürekli değerlerden daha iyi çalışır.
+
+918
+02:34:09,556 --> 02:34:19,315
+Bir de genellenebilir bir şey yani. Dünyada farklı farklı problemlerde kullanabileceğimiz bir şey. Hem görüntü, hem ses, hem metin verilerinde oldukça başarılı çalışır.
+
+919
+02:34:19,716 --> 02:34:23,976
+Bir de hani bu paralel işlem yapmaya oldukça müsait.
+
+920
+02:34:24,915 --> 02:34:35,115
+Beşler üzerinde eğitim işlemi yapabilirsiniz. Paralar bir şekilde, çok hızlı bir şekilde eğitim yapma imkan sağlıyor.
+
+921
+02:34:36,755 --> 02:34:41,975
+Yani yeni yeni kurallar çıkarılıyor tabii ki. Bunu acaba daha az veriyle eğitebilir miyiz?
+
+922
+02:34:42,475 --> 02:34:50,495
+Mesela kapsül networkler gibi yeni algoritma yaklaşımları var. Daha az veriden öğrenmeyi gerçekleştirebilir miyiz gibi çeşitli.
+
+923
+02:34:50,963 --> 02:35:06,623
+gelişmeler de var. Bunlar da zamanla artacaktır diye düşünüyorum. Açıklanabilirliği artıracak da bazı teknikler sürekli gelişiyor. Ama önemli bir sınıflandırıcı algoritma olarak söyleyebiliriz.
+
+924
+02:35:07,923 --> 02:35:13,623
+Son olarak da şeyden bahsedeyim. Derin öğrenme mi yoksa normal machine learning mi gibi?
+
+925
+02:35:14,644 --> 02:35:16,484
+Arada kaldığımız durumlar olabilir.
+
+926
+02:35:17,084 --> 02:35:19,364
+Burada şöyle bir kural söyleyebiliriz.
+
+927
+02:35:19,943 --> 02:35:24,484
+Yani sorunun yapısı basitse, yani çözmeye çalıştığınız problem basitse,
+
+928
+02:35:25,864 --> 02:35:30,504
+burada özellikle gerek yok yani.
+
+929
+02:35:30,504 --> 02:35:34,844
+Yani çok daha basit modellerle işinizi çözebilirsiniz.
+
+930
+02:35:35,084 --> 02:35:38,344
+Karar ağaçları ya da işte SPM'ler olabilir.
+
+931
+02:35:38,896 --> 02:35:44,855
+logistik regresyon gibi ya da naive Bayes gibi daha basit algoritmalar bu işi çözebilir.
+
+932
+02:35:45,615 --> 02:35:52,936
+Ama sorunuzun yapısı çok karmaşıksa ve noise de çok fazla yoksa bu durumlarda deep learning çok daha gerekli olabilir.
+
+933
+02:35:52,936 --> 02:36:03,896
+Yani problem karmaşıklaştıkça diğer modellerin çözme başarısı düşebilir. Bu durumlarda deep learning gerçekten ön birbirine çıkıyor.
+
+934
+02:36:05,459 --> 02:36:33,459
+Ama genel bir kuralları söylemek gerekirse, bence öncelikle daha basit şeylerle başlayın. Yani iyi bildiğiniz modellerle başlayın. Bunlarla belli bir düzeye ulaşamıyorsanız daha karmaşık modelleri denemek gerekir. Ve çoğu kez logistik regresyon, SVM ya da Random Forest gibi karar ağacı yapıları belki de en iyi çalışan yöntem olabiliyor. Hem de az maliyetle eğitiyorsunuz, hem de daha iyi bir yorumlanabilirlikle sağlayan.
+
+935
+02:36:33,459 --> 02:36:50,399
+Dolayısıyla aslında biraz problemin niteliğine göre bunu karar vermek lazım. Deep Learning'in ciddi bir de aslında eğitim maliyeti var. Hem süre uzun hem çok fazla. GPU'nız yoksa da CPU kullanarak çok uzun süredir eğitiyorsunuz. GPU kullanıyorsanız da ciddi bir maliyeti var.
+
+936
+02:36:51,092 --> 02:37:07,192
+Hem ekonomik hem de elektrik harcaması gibi bir maliyeti de var. Bazı durumlar değmiyor yani. Hatta çok daha karmaşık yaptığınız zaman overfitting oluşturup daha kötü sonuçlar da elde edebilirsiniz. Yani deep learning her şeyi çözmüyor. Onu da söylemiş o değil.
+
+937
+02:37:09,512 --> 02:37:14,551
+Benim söyleyeceklerim bu konuyla ilgili bu kadar arkadaşlar. Var mı sorusu olan veya eklemek istediğiniz yorum olan?
+
+938
+02:37:15,443 --> 02:37:17,903
+Hocam, learning rate diye bir soru soracaktım.
+
+939
+02:37:18,083 --> 02:37:18,763
+Tabii, tabii, [öğrenci].
+
+940
+02:37:19,203 --> 02:37:23,003
+Normallere learning rate model içinde değiştirilebiliyor adaptif olarak.
+
+941
+02:37:23,383 --> 02:37:26,223
+Normallerim benim beklentim veya mantıken şey diye düşünüyordum.
+
+942
+02:37:26,343 --> 02:37:32,063
+Eğer eğim yüksekse, daha büyük learning ratelerle eğiterek hızlı bir şekilde minimuma yaklaşır.
+
+943
+02:37:32,363 --> 02:37:37,183
+Minimuma yaklaştıkça da learning rate küçülerek, adım adım ilerleyerek tam olarak o noktayı bulmaya çalışır.
+
+944
+02:37:37,183 --> 02:37:37,503
+Doğru.
+
+945
+02:37:40,755 --> 02:37:43,795
+Optimizer'larla ilgili tam persononun dair bir yazı okuduk.
+
+946
+02:37:44,235 --> 02:37:51,716
+Mantık olarak eğer ki eğim yüksekse küçük, eğim artık düzleştiyse o zaman yüksek learning rate'leri geçtiğine dair.
+
+947
+02:37:51,835 --> 02:37:56,075
+Yani ben mi yanlış anladım yoksa böyle bir şey var mı? Bunun sebebi ne diye soracak.
+
+948
+02:37:56,275 --> 02:38:01,195
+Güzel bir soru. Aslında Optimizer'lar bunu yapıyor [öğrenci] tam olarak.
+
+949
+02:38:01,916 --> 02:38:08,036
+Şöyle ki aslında lokasyona göre hani şeyde belki gösterirsek şurada.
+
+950
+02:38:08,340 --> 02:38:29,659
+Learning Rate'ler şurada aslında kullandığınız kütüphanelerde otomatik olarak, adaptif olarak yapılıyor. Artıyor ya da azalıyor. Çoğu kez azalıyor. Siz mesela eğim olarak aşağı doğru gidiyorsanız, ilk başta Learning Rate yüksek, hızlı hızlı gidiyorsunuz. Sonra yavaş yavaş yakınsıyor.
+
+951
+02:38:30,164 --> 02:38:32,484
+Bunu adaptif olarak yapıyor algoritmalar.
+
+952
+02:38:33,463 --> 02:38:41,363
+Ama problem şu, şimdi eğer artmaya başladı ve şuradaki gibi mesela farklı tepelere ulaştıysanız,
+
+953
+02:38:42,144 --> 02:38:48,103
+şimdi buradan inmesi için, doğru bir yere inmesi için learning rate'in çok yavaş olması iyi bir şey değil.
+
+954
+02:38:48,904 --> 02:38:50,584
+Artması lazım ki bu tepeye geçsin.
+
+955
+02:38:51,404 --> 02:38:54,564
+Yani eğimin azaldığını hissedebilmesi için önce bir artması lazım.
+
+956
+02:38:56,275 --> 02:39:11,955
+haliyle, yani algoritma bunu artırarak, azaltarak eğitim aşamasında yakınlama yapabiliyor. Learning rate'i siz belirliyorsunuz ama o aslında azalarak, adaptif olarak azalıyor.
+
+957
+02:39:12,755 --> 02:39:21,635
+Bunun belli bir kural veya matematiksel yolu mu var? Yol da bunu rastgele yaparak o tepeye mesela atlatacağını veya yere indiğini nasıl almıyor?
+
+958
+02:39:22,195 --> 02:39:27,316
+İşte bu şey azalarak, açı azalarak, açıyla belli oluyor.
+
+959
+02:39:28,896 --> 02:39:32,595
+Gradient aslında açıyı hesap ediyoruz ya, bu eğimi hesap ediyoruz.
+
+960
+02:39:33,275 --> 02:39:37,855
+Eğim azalıyor. Hata bir önceki hatadan artıyor mu, azalıyor mu?
+
+961
+02:39:38,076 --> 02:39:41,796
+Eğim artıyorsa ne oluyor? Aslında hata artıyor. Yanlış yönde gidiyoruz.
+
+962
+02:39:43,136 --> 02:39:44,855
+O zaman örneketi arttırıyor mu?
+
+963
+02:39:45,355 --> 02:39:45,656
+Evet.
+
+964
+02:39:48,020 --> 02:40:03,280
+Ama ters yöne, evet artıyor learning rate, sonra ters yöne iniyoruz. Sonrasında tekrar geliyorum. Sonra doğru yöne gidiyorsam o zaman learning rate azalıyor. Azalarak azalarak azalarak. Çünkü kaçırabilirim yoksa. Learning rate çok artı olursa kaçırabilirim.
+
+965
+02:40:05,379 --> 02:40:06,219
+Teşekkür ederim.
+
+966
+02:40:07,180 --> 02:40:09,000
+Ben teşekkür ederim. Var mı başka sorusu olan?
+
+967
+02:40:09,559 --> 02:40:11,739
+Ben de bir şey soracaktım hocam. Sesime geliyor mu?
+
+968
+02:40:12,079 --> 02:40:12,559
+Geliyor.
+
+969
+02:40:13,172 --> 02:40:26,311
+Hocam, ben Relu ile Leaky Relu arasında bir şey soracaktım. Şimdi Relu 0 ile 1'e indirgi, yani 0 olduğunda ama mesela Gradient Descent'te, Backpropt'ta vesaire ölü nöronlar zaten çalışamıyor.
+
+970
+02:40:26,951 --> 02:40:30,851
+Ama mesela Leaky'de biraz negatife düşebildiği için yine çalışabilir halde olacak.
+
+971
+02:40:31,412 --> 02:40:31,992
+Doğru, aynen.
+
+972
+02:40:32,131 --> 02:40:38,031
+Şimdi daha az nöron gideceği için aslında daha iyi çalışması beklenmez mi? Niye Relu'yu default kullanıyorlar her zaman?
+
+973
+02:40:38,739 --> 02:40:57,619
+Şöyle, aslında negatif, Liki Reli'de şöyle bir problem var. Aslında o nöronun ölmesi lazım ama ölmüyor. Bazıları gerçekten anlamsız. Bazı nöron hiçbir şey öğrenmiyor ama noise üretiyor negatif olan. Böyle durumları önlemesi için aslında Reli kullanılıyor.
+
+974
+02:40:59,443 --> 02:41:03,363
+Biz zaten, aslında biraz regulasyonu engellediği için.
+
+975
+02:41:03,623 --> 02:41:15,224
+Aynen öyle, aynen öyle. Yani regulasyon yapıyoruz aslında, relüyle. Çünkü sıfır olduğu zaman o nöronu aslında gerçekten bir şey öğrenmemiş, noise ile etkilemiyor. Sadece onun etkisi azalmış oluyor. Regülasyon yapmış oluyoruz aslında.
+
+976
+02:41:16,144 --> 02:41:17,163
+Bana da hocam teşekkür ederim.
+
+977
+02:41:17,703 --> 02:41:18,623
+Ben teşekkür ederim.
+
+978
+02:41:20,003 --> 02:41:21,343
+Başka sorusu olan var mı?
+
+979
+02:41:25,332 --> 02:41:34,232
+Sanırım yok. O zaman sonlandırabiliriz arkadaşlar. Şimdiden hepinize iyi bayramlar diliyorum. Umarım güzel bir şekilde bayram geçirsiniz.
+
+980
+02:41:34,512 --> 02:41:39,472
+Hani yolculuk yapanlar da dikkatli gitsin gelsin lütfen. Kendinize iyi bakın.
+
+981
+02:41:40,292 --> 02:41:40,952
+Size de iyi bayramlar.
+
+982
+02:41:40,952 --> 02:41:44,372
+İyi bayramlar hocam. Teşekkürler. Hoşçakalın. Görüşmek üzere.
+
+983
+02:41:45,172 --> 02:41:48,052
+Hocam iyi bayramlar. Çok teşekkür ediyoruz. Sağ olun.
+
+984
+02:41:48,052 --> 02:41:52,092
+Ben teşekkür ederim. Önümüzdeki hafta da online olacak. Sonraki hafta yüzde görüşmek üzere.
+
+985
+02:41:53,459 --> 02:41:54,259
+Hoşçakalın.

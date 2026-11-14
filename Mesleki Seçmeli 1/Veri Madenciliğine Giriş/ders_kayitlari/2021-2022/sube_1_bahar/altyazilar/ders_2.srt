@@ -1,0 +1,3039 @@
+1
+00:00:13,715 --> 00:00:15,475
+Merhaba arkadaşlar, hoş geldiniz.
+
+2
+00:00:17,515 --> 00:00:18,475
+Merhaba hocam.
+
+3
+00:00:18,896 --> 00:00:19,675
+Sesim geliyor mu?
+
+4
+00:00:21,315 --> 00:00:22,195
+Geliyor hocam.
+
+5
+00:00:22,756 --> 00:00:23,275
+Geliyor zaten.
+
+6
+00:00:23,875 --> 00:00:24,295
+Çok güzel.
+
+7
+00:00:25,615 --> 00:00:28,955
+İsterseniz bir iki dakika bekleyelim diye arkadaşlarla kalırsın bu arada.
+
+8
+00:00:47,411 --> 00:00:49,171
+Şu an yansıdı mı ekranım?
+
+9
+00:00:50,451 --> 00:00:51,051
+Evet hocam.
+
+10
+00:00:51,531 --> 00:00:52,792
+Süper, teşekkürler.
+
+11
+00:00:54,351 --> 00:00:57,171
+İsterseniz derse başlamadan şeyden bahsedeyim.
+
+12
+00:00:57,331 --> 00:00:59,991
+Az önce size bir e-mail attım şeyden.
+
+13
+00:01:00,951 --> 00:01:03,152
+Online'dan, online ya da Zed'dan.
+
+14
+00:01:03,531 --> 00:01:05,171
+Bilmiyorum geldi mi? DataCamp ile ilgili.
+
+15
+00:01:05,431 --> 00:01:06,231
+Geldi evet hocam.
+
+16
+00:01:06,591 --> 00:01:07,292
+Süper, tamam.
+
+17
+00:01:07,292 --> 00:01:09,991
+Şimdi isterseniz onu biraz söyleyeyim.
+
+18
+00:01:10,995 --> 00:01:25,816
+Bilmiyorum, belki kullananlarımız veya rast gelmiş olanlarımız vardır. Böyle Udemy benzeri bir eğitim platformu. Burada özellikle böyle uygulamalı eğitimler var.
+
+19
+00:01:28,915 --> 00:01:31,275
+Grup da oluşturdum. Buradan da bakabilirsiniz.
+
+20
+00:01:32,036 --> 00:01:38,816
+Şeye girerseniz sisteme, davet linkinden, gönderdiğim linkten kabul ederseniz hesap oluşturabilirsiniz.
+
+21
+00:01:38,816 --> 00:01:45,816
+Ama std.yıldız.edu.tr olan e-mail adresinizde kayıt yapmanız gerekiyor.
+
+22
+00:01:47,096 --> 00:01:54,216
+Sonrasında burada bir sürü eğitim var. Araştırma yaparsanız burada search tarafından mesela işte diyelim ki
+
+23
+00:01:54,304 --> 00:02:19,223
+Bir sürü eğitim var. Özellikle Data Science ile ilgili. Birçok eğitim var. Yani diyelim işte Python'a giriş veya SQL, R, modelleme, makine öğrenimi. Birçok güzel eğitim var. Bunları müsait olduğunuzda bakabilirsiniz.
+
+24
+00:02:20,180 --> 00:02:28,240
+Hem çalışıp uygulamalar üzerinden belli datasetleri, kodlar üzerinden gösteriyor. Mesela örnek vereyim.
+
+25
+00:02:31,620 --> 00:02:42,360
+Önce bir kısa tanıtım yapıyor. Video ile anlatıyor konuyla ilgili. Sonrasında size görevler veriyor ve kod yazıyorsunuz. Testlerinizi de kodlarla yapıyorsunuz.
+
+26
+00:02:43,379 --> 00:03:02,379
+Bu açıdan güzel bir eğitim platformu. Akademik olarak 6 ay ücretsiz erişim veriyor. Yani bu dönem sonuna kadar kullanabilirsiniz. Onu da paylaşmış olayım dedim. Derste ilgili uygulamaları buradan yapmayacağız ama.
+
+27
+00:03:02,867 --> 00:03:10,328
+ekstra kendiniz uygulama proje için veya bu dersteki öğrendiğiniz şeyleri uygulamak için kullanabilirsiniz.
+
+28
+00:03:10,448 --> 00:03:12,287
+Yani buradan sınav yapmayacağım, onu söylemek istiyorum.
+
+29
+00:03:14,867 --> 00:03:18,347
+Daha çok kişisel öğrenme platformu olarak düşünebilirsiniz.
+
+30
+00:03:19,247 --> 00:03:20,507
+Çok teşekkür ederim hocam.
+
+31
+00:03:20,967 --> 00:03:24,207
+Rica ederim, ben teşekkür ederim. Aslında [öğrenci] hatırlattı, sağ olsun.
+
+32
+00:03:24,656 --> 00:03:40,376
+Öyle başvurduk. Baya hızlı bir geri dönüş yaptılar. Çünkü daha önce ben başka bir yüksek lisans dersi içinde oluşturmuştum. Sizin için de fayda olabileceğini görünce buradan da oluşturmuş olduk. Onu söyleyeyim.
+
+33
+00:03:40,475 --> 00:03:45,256
+Onun dışında başka sorusu olan var mı burası ile ilgili? Derse başlamadan önce.
+
+34
+00:03:49,364 --> 00:04:16,324
+Tamam. O zaman isterseniz dersimize başlayalım yavaş yavaş. Bugün yine bir kar durumu söz konusu. O yüzden online olarak devam ediyoruz. Ama bundan sonra tabii ki umarım kar ağaçı olmasa yüzde devam edeceğiz. Ama öncesinde söyleyeyim haftaya benim bir seyahat durumum söz konusu. Başka bir etkinliğe katılmam gerekiyor. Ders saatiyle çakışıyor. Büyük bir ihtimalle haftaya ders işleyemeyeceğiz.
+
+35
+00:04:16,735 --> 00:04:35,315
+Saat olarak kaydırmamız da biraz zor olabilir. Ama sonrasında bu derse ilerleyen haftalarda telafi ederiz ekstra bir ders koyarak. Ama haftaya ders saatinde dersimiz olmayacak. Onun duyurusunu ne yaparım? Şimdi de aklıma gelmişken de söyleyeyim dedim.
+
+36
+00:04:37,216 --> 00:04:39,295
+Hocam, sınıfları paylaştık mısınız?
+
+37
+00:04:40,096 --> 00:04:43,555
+Paylaştım aslında. Bilmiyorum görmediniz mi [öğrenci]?
+
+38
+00:04:44,244 --> 00:04:57,664
+Şeyde var. Öncesinde Yıldız Eduteri'ye paylaştım dersin içine girerseniz canlı ders duvarına. Şurada var.
+
+39
+00:04:58,164 --> 00:04:59,344
+Tamam hocam, teşekkür ederim.
+
+40
+00:04:59,684 --> 00:05:05,924
+Her hafta ekliyorum aslında. Dersten önce bakarsanız burada bir pdf olarak görebilirsiniz.
+
+41
+00:05:08,211 --> 00:05:28,311
+Tamam, o zaman devam edelim. Şimdi bugün biraz daha data preprocessing konusunu konuşmak istiyorum sizinle. Aslında veri biliminin çok önemli bir aşaması bu. Yani %60-70 zamanımızın geçtiği kısım data preprocessing, yani veriyi ön işleme dediğimiz aşama.
+
+42
+00:05:29,331 --> 00:05:40,072
+Burada veri biliminin ön koştu olarak veri setimizin düzgün, tutarlı ve istenilen formatta olması gerekiyor.
+
+43
+00:05:40,072 --> 00:05:48,692
+Bunu sağlamak için de belli adımlar var, belli uygulamalar ve metodolojiler takip edilmesi gerekiyor.
+
+44
+00:05:49,152 --> 00:05:53,532
+Bugün biraz onları konuşalım. Yani data preprocessing, yani veri ön işleme nedir?
+
+45
+00:05:53,912 --> 00:05:56,572
+Burada hangi adımlardan bahsediyoruz? Neden önemli?
+
+46
+00:05:57,331 --> 00:06:24,951
+Bunları biraz daha detaylı konuşalım. Çünkü modelleme aslında bu işin önemli kısmı değil bence. Yani modelleme 3 aşağı 5 yukarı hangi algoritmaları kullanabileceğinizi biliyorsanız, alternatif yöntemler nelerdir, buradaki parametreler, hiperparametreler nelerdir, bunlar üzerinde çok fazla kazanacağınız bir şey de olmuyor. Yani 3 aşağı 5 yukarı benzer performanslar elde edebilirsiniz.
+
+47
+00:06:25,331 --> 00:06:30,052
+modelleri geliştirerek biraz daha başarı sağlayabilirsiniz.
+
+48
+00:06:30,912 --> 00:06:37,192
+Ama hiçbir zaman bu ön işleme kadar ve veri büyüklüğü kadar etkili olmayacaktır.
+
+49
+00:06:37,192 --> 00:06:42,331
+O açıdan buraları hassas bir süreç olarak düşünmek gerekiyor.
+
+50
+00:06:43,192 --> 00:06:48,172
+Biraz sıkıcı da gelebilir ama bu sonuç olarak çok önemli bir şey veri ön işleme.
+
+51
+00:06:48,596 --> 00:06:53,576
+Burada nelerden bahsedeceğiz? Öncelikle veriyi nasıl tanıyoruz? Veriyi anlamlandırmak gerekiyor.
+
+52
+00:06:53,576 --> 00:07:00,576
+Buradaki descriptive dediğimiz yani betimleyici özellikleri ne bu verinin? Bunu anlamak.
+
+53
+00:07:01,156 --> 00:07:16,276
+Sonrasında veri temizliği dediğimiz aşama, sonrasında veri entegrasyonu ve dönüşümleri, sonrasında veri azaltımı ve diskriptleştirme dediğimiz adımlar genellikle buranın parçası olarak.
+
+54
+00:07:16,596 --> 00:07:17,276
+İfade edilebilir.
+
+55
+00:07:18,915 --> 00:07:24,935
+Peki neden ön işlemeye ihtiyaç var? Yani veri olduğu gibi neden kullanamıyoruz?
+
+56
+00:07:26,156 --> 00:07:35,576
+Aramızda şu an ilk yaptığı işlerden dolayı modellemede çalışan arkadaşlar varsa bunu zaten yaşamıştır ve farkına bağırmışsınızdır.
+
+57
+00:07:36,235 --> 00:07:38,016
+Gerçek dünyada veriler temiz değil.
+
+58
+00:07:38,463 --> 00:07:52,204
+Ve hiçbir zaman size böyle modellemeye hazır veri setleri verilmez. Yani sentetik örneklerde bunlar böyle hali hazırda veri olabilir ama gerçek dünyada böyle değil. Gerçek dünyada veriler kirli.
+
+59
+00:08:03,668 --> 00:08:12,468
+problemli ve düzeltilmesi gereken veri setleri de paylaşılıyor. Bundan da belki bazı gözlemler yapabilirsiniz kendi çalışmalarınızda.
+
+60
+00:08:13,651 --> 00:08:41,652
+Bunun birçok sebebi var. Veri birincisi incomplete. Yani tamamlanmış olmayabilir. Yani şöyle bir sürü feature var. Bunları topluyorsunuz ama bazı feature'larla ilgili veri toplanmamış olabilir. Bu çok normal. Çünkü nereden topladığınıza bağlı olarak mesela kullanıcılardan veriler topluyorsanız bazı bilgiler hassas ve kimse paylaşmak istemiyor olabilir. Mesela kişisel bilgilerden...
+
+61
+00:08:41,652 --> 00:08:44,112
+çalışma alanı, iş bilgisi.
+
+62
+00:08:45,235 --> 00:09:13,235
+Veya ne kadar maaş kazandığını söylemek istemeyebilir insanlar. Yani o diyelim ki bir bankasınız ve bankada işte müşterilerinizle ilgili bilgiler topluyorsunuz. İşte yaşıdır, demografik bilgileridir, işte bunun gibi şeyler. İşini de sorabilirsiniz ama herkes bunu söylemek zorunda değil. Siz bir banka hesabı açacaksanız belki regulasyon olarak zorunlu ise o bilgi verebilirler ama onun dışında...
+
+63
+00:09:13,235 --> 00:09:31,235
+bazı kişisel bilgiler verilmiyor, paylaşılmak istenmeyem. Dolayısıyla burada elde ettiğiniz verinin kendisi tamamen her bir kayıt için dolu olmayacaktır. Bir kısmı dolu olabilir, bir kısmı boş dolu olabilir. Size mesela birisi...
+
+64
+00:09:31,860 --> 00:09:36,820
+Bir anket gönderdiği zaman bütün istedikleri bilgileri veriyor musunuz?
+
+65
+00:09:37,419 --> 00:09:44,740
+Eğer o anketi doldurmak zorundaysanız minimum bilgiyle doldurmaya çalışabiliyorsunuz gibi örnek verebiliriz.
+
+66
+00:09:45,460 --> 00:09:48,220
+Bu durumlarda birçok kolonda boşluk göreceksiniz.
+
+67
+00:09:48,220 --> 00:09:54,480
+Bu da aslında modelleme yaparken o kolonun çok sağlıklı olmamasına sebebiyet verecek.
+
+68
+00:09:55,475 --> 00:10:12,716
+Diğer bir nokta da veriyi vermeniz, oranın dolu olması o verinin doğru olduğu anlamına da gelmiyor. Yani diyelim ki bir kolon var, buradaki işte maaş bilgisi eksi 10, eksi 100 gibi şeyler içerebiliyor.
+
+69
+00:10:14,100 --> 00:10:29,620
+Bu da çok sıklıkla karşılaşılabilen bir problem. Yani siz o verinin tutarlığına emin olmanız gerekecek. Bunun için de bu olmasını beklemediğimiz değerlerden temizlemek gerekiyor.
+
+70
+00:10:30,196 --> 00:10:40,136
+Noise ile Outlier arasında şöyle bir fark var. Noise dediğimiz şey aslında sizin normalde olmamasını beklediğiniz şey.
+
+71
+00:10:40,136 --> 00:10:53,196
+Yani şöyle örnek vereyim. Ortalamada bizim sınıftaki insanların boyu 1.70 metre.
+
+72
+00:10:55,283 --> 00:11:09,744
+Şimdi aramızda basketbolcular olabilir. Mesela diyelim ki 1.95, 2.000 metre boyunda basketbolcu arkadaşlar var. Bunlar normalden farklı değil mi? Bunlar hani ortalama boydan satması yüksek.
+
+73
+00:11:11,724 --> 00:11:18,744
+Dolayısıyla buradaki kişiler outlier diyebiliriz. Ama bu bir noise değil. Bu bir...
+
+74
+00:11:18,927 --> 00:11:43,228
+Yani gürültü olarak kabul edemeyeceğimiz bir şey. Çünkü aslında bu gerçek bir şey. Sadece ayrık bir değer. Ama şimdi bir kişinin boyu negatif 5 metre olamaz veya 5 metre de olamaz veya 3 metre de olamaz. Bu değerler bir outlier değil. Bunlar hata, error. Yani bunlar aslında var olan bir değer değil. Bunlar olmaması gereken bir değer.
+
+75
+00:11:44,307 --> 00:12:06,908
+Haliyle az önceki örnekte 2.5 santim boy olan birisinin veriden çıkarılmaması lazım. Çünkü bu gerçek bir veri. Ama negatif 3 metre veya pozitif 5 metre gibi boylar bunlar gerçek değil. Gerçekleşmesi mümkün olmayan şeyler. Dolayısıyla bunların çıkarılması lazım. Çünkü bunlar doğru veri değil.
+
+76
+00:12:07,316 --> 00:12:22,036
+Veya işte ne bileyim maaşının negatif olması. Bu da doğru bir şey değil. Kimse köle değilse borç vererek çalışmaz. Veya yaşının eksi 10 olması, yaşının eksi 800 olması veya artı 500 olması. Bunlar da gerçek şeyler değil.
+
+77
+00:12:22,876 --> 00:12:31,916
+Dolayısıyla outlier yani ayrık değerlerle error ya da noise dediğimiz olmaması gereken değerleri birbirinden ayrıştırmak lazım.
+
+78
+00:12:32,563 --> 00:12:36,563
+Birisi fizik olarak gerçekleşebilir, birisi...
+
+79
+00:12:41,323 --> 00:12:45,683
+Evet, mesela Röntgen'in de örneği. Mesela başka karakterler de olabiliyor değil mi?
+
+80
+00:12:46,303 --> 00:12:50,644
+Sizin sadece burada Saleri, siz şeyi bekliyorsunuz.
+
+81
+00:12:51,028 --> 00:13:04,548
+numara bekliyorsunuz, bir sayı bekliyorsunuz. Ama salari olarak diyelim ki işte A yazmış, B yazmış, maaşı 5. 500, 5 bin gibi bir şey beklerken maaşım A, B, C.
+
+82
+00:13:05,011 --> 00:13:27,711
+Bu da noise. Ya da [öğrenci]'in örneğindeki gibi siz normal bir karakter beklerken, UTF dışındaki böyle garip garip semboller geliyorsa veya işte başka dildeki karakterler, semboller, bunlar da gürültü oluyor. Bunların da temizlenmesi, ayıklanması gerekiyor.
+
+83
+00:13:27,711 --> 00:13:31,792
+Yani öncelikle veri setleri böyle şeylerle dolu.
+
+84
+00:13:32,467 --> 00:13:39,487
+Yani bunu gerçek sistemlerde neden oluyor, olmasını beklemezsiniz diyorsunuz ama oluyor.
+
+85
+00:13:39,487 --> 00:13:45,767
+Yani bu neredeyse bütün gerçek sistemlerde var. Hatta makinelerin ürettiği sistemlerde bile var.
+
+86
+00:13:45,927 --> 00:13:56,187
+Yani makine generated, data'nın içinde bile hatadan olabilir, makine hatası veya orada bir sensör hatası veya başka bir şeyden olabilir, veri bozulabiliyor.
+
+87
+00:13:57,011 --> 00:14:02,671
+Haliyle bunlar gerçekleşebilecek problemler. Öncelikle veriyi bunlardan ayıplamak lazım.
+
+88
+00:14:03,956 --> 00:14:13,956
+Mesela bir örnek vermek gerekirse, user entry kısmında da yanlış gelinmiş olabilir. Normalde işte doktora gittiğiniz boyunuzu ölçtü, şey yazmasını beklersiniz.
+
+89
+00:14:13,956 --> 00:14:31,475
+Yani oraya santimetre olarak boyunuzu girmesi gerekiyor. Doktor o alana şey yazıyor mesela, işte hastanın boyu ayakkabıyla birlikte 1.70. Normalde o ayakkabıyla birlikte yazmaması lazım. Sadece sayı olarak girmesi lazım. Ama oraya bir metin yazıyor.
+
+90
+00:14:31,956 --> 00:14:44,135
+Haliyle orada olmaması gereken bir şey var. Bunun gibi problemler çok sıklıkla karşılaşılır. Diğer bir nokta da mesela veri arasında bir tutarlılık problemi var.
+
+91
+00:14:44,628 --> 00:14:51,368
+Yani işte bir insanın yaşına, yaş diye bir kolon var, bir de işte doğum tarihi gibi bir kolonumuz var.
+
+92
+00:14:51,908 --> 00:15:01,128
+Şimdi yaş kolonu hesap edince mesela bir insanın yaşı 42 çıkıyor ama doğum tarihine göre baktığımız zaman belki 45 olması lazım.
+
+93
+00:15:01,687 --> 00:15:05,827
+Şimdi o yaş kolonu statik bir değer. Dolayısıyla onun güncellenmesi lazım.
+
+94
+00:15:07,148 --> 00:15:11,408
+Haliyle güncellememişse yanlış değer verecek. Böyle problemler de olabilir.
+
+95
+00:15:12,019 --> 00:15:23,099
+Bunun için tabii ki böyle doğum gününden hesaplamak lazım aslında dinamik şekilde ama verinin içinde yaş olarak eski değerlerle kalmış olabilir.
+
+96
+00:15:23,839 --> 00:15:31,939
+Veya işte rating veriyorsanız 1-2-3 gibi bazı uygulamalar ratingleri kodlamış, bir kısmı ABC gibi kodlamış.
+
+97
+00:15:32,599 --> 00:15:37,059
+Bunun gibi birçok problemlerle karşılaşırsınız ve bunlar hayatın bir parçası.
+
+98
+00:15:38,772 --> 00:15:42,851
+Aslında bunlardan nasıl kurtulacağız biraz bu önemli bizim için.
+
+99
+00:15:43,632 --> 00:15:46,611
+Burada işte birçok problem oluyor.
+
+100
+00:15:46,731 --> 00:15:51,872
+Mesela bazı yerlerde toplanmayan verileri direkt not applicable ya da naive gibi şeyler yazılabiliyor.
+
+101
+00:15:51,872 --> 00:15:59,372
+Ya da işte bir yazılım problemi, bir hardware problemi ya da kullanıcı operatör problemleri gerçekleşmiş olabilir.
+
+102
+00:15:59,831 --> 00:16:05,932
+Burada olması gerekenin dışında veriler database'e yazılmıştır.
+
+103
+00:16:06,451 --> 00:16:12,912
+Bunun yanında veriyi aktarırken de bu problemler gerçekleşmiş olabilir.
+
+104
+00:16:12,912 --> 00:16:18,032
+Yani veri transferi, makineden makineye transferlerde bozulmuş olabilir.
+
+105
+00:16:18,631 --> 00:16:30,611
+Ya da sensörler mesela veri topluyorsa, sensör hatası yerine oraya alakasız bir veri setini de yanlışlıkla populate ediyor olabilir.
+
+106
+00:16:31,860 --> 00:16:50,799
+Bunun gibi birçok problemlerle karşılaşacaksınız ve bunları öncelikle modellemeden önce çözmek lazım. Çünkü modellere böyle alakasız veriyi verirseniz saçma sapan sonuçlar verirsiniz. Bu da doğru kararlar almayı, o modelin kullanılabilir olmasını engelleyecek problemlerdir.
+
+107
+00:16:52,340 --> 00:17:15,460
+Bunun yanında bir de birçok veri setinde aslında duplicate data oluşuyor. Yani bu da neden kaynaklanabiliyor? Veri setini çekerken sorgulamada problemlerden kaynaklanabilir. Diğer bir problem şu olabilir, aynı kolonu birden çok defa farklı isimlerle kodlamış olabiliyor insanlar.
+
+108
+00:17:20,339 --> 00:17:27,559
+Başka bir kolon ismiyle yine aynı veriyi kodlamış olabiliyorlar. Bunun gibi problemler var.
+
+109
+00:17:27,699 --> 00:17:40,579
+Ya da veriyi toplarken aynı kaynak, bir tek kaynak oluştururken birden çok kaynaktan veri çekerek birleştirilince diğer kaynaklarda da aynı kolon geliyor olabilir.
+
+110
+00:17:41,500 --> 00:17:47,500
+Dolayısıyla duplicate değerlerden, yani tekrar eden şeylerden de kurtulmak gerekiyor.
+
+111
+00:17:50,067 --> 00:18:03,567
+Ama işin özeti şu, eğer doğru bir veri temizliği aşaması uygulamıyorsanız, sonuç olarak elde edeceğiniz modeller de doğru olmayacaktır, yanlış yönlendirecektir.
+
+112
+00:18:04,008 --> 00:18:13,327
+Bu da aslında modellemenin, veri madenciliğinin yanlış çıkarımlar, yanlış sonuçlar üretmesine sebebiyet verecektir.
+
+113
+00:18:18,067 --> 00:18:22,587
+çok kritik süreçler olarak ifade edebileceğimiz şeyler.
+
+114
+00:18:24,852 --> 00:18:42,832
+Veri kalitesinden neyi kastediyoruz? Tabii ki bunun tek bir standart tanımı yok. Veri kalitesinden asla bahsederken, onun tutarlı olmasından, bütüncülü olmasından, gerçeği yansıtmasından ve olması gereken değerleri içermesinden bahsediyoruz.
+
+115
+00:18:42,832 --> 00:18:52,852
+Yani alakasız değerleri içermemesi ve noise gibi şeylerden arındırılmış olması gibi ifade edebileceğimiz özellikleri tabii ki.
+
+116
+00:18:52,852 --> 00:18:53,852
+Bu olmalı.
+
+117
+00:18:53,852 --> 00:19:15,451
+Bu söylediğim özellikler daha çok subjektif değerler. Bunları bir ölçüm anlamında bir metriksel olarak ifade etmiyoruz. Daha genel bir yaklaşım olarak kaliteli veri, temizlenmiş veri, modellemeye hazır veri gibi ifade edebileceğimiz veri çeşitleri.
+
+118
+00:19:17,460 --> 00:19:32,880
+Hangi aşamalardan oluşuyor veri ön işleme? Bunu 5 parçada ifade edebiliriz. Veri temizliği, veri entegrasyonu, veri dönüşümü, veri boyut azaltımı ya da feature selection diye ifade edebiliriz.
+
+119
+00:19:32,880 --> 00:19:38,920
+Son olarak da veri discretization yani aslında burası da encoding, label encoding gibi de düşünebilirsiniz.
+
+120
+00:19:40,276 --> 00:20:00,000
+Bu aşamaları biraz daha tekrar tekrar detaylıca inceleyelim. Yani görsel olarak da ifade etmek gerekirse kirli veriyi temizlemek, çok sayıda kaynaktan veriyi birleştirip bir merkezi yapı hale dönüştürmek, veri dönüşümüyle kendi içine...
+
+121
+00:20:00,000 --> 00:20:08,480
+İçindeki tutarlığı sağlamak ve veri boyutu azaltmak gibi daha küçük gösterimlerle veriyi ifade etmek şeklinde özetleyebiliriz.
+
+122
+00:20:11,000 --> 00:20:16,460
+İsterseniz öncelikle başlangıç noktasında ne yapıyoruz? Ona başlayalım, onu konuşalım.
+
+123
+00:20:16,579 --> 00:20:18,000
+Öncelikle veri geldiği zaman...
+
+124
+00:20:18,804 --> 00:20:41,844
+Bu verinin betimleyici özelliklerine bakarız. Yani o veriyi anlamak için bunun genel dağılımlarını, yani central tendency diyoruz, varyasyonu, spreadi, bu tarz şeylerini görmek gerekiyor. Yani bu veri neyi ifade ediyor? Hangi tür özellikler var? Bu özelliklerin aralıkları neler? Dağılımları neler? Bunları incelemek dediğimiz aşama.
+
+125
+00:20:42,324 --> 00:20:59,923
+Burada da bir veri, central tendency, aslında mean, mode, median gibi ortalama dağılımların ortalamaları neler? Nasıl bir dağılım gösteriyor? Bunları incelemek.
+
+126
+00:21:04,243 --> 00:21:11,564
+outlier'ları neler, sonrasında standard deviation ne bu gibi istatistiksel ölçülere bakıyoruz.
+
+127
+00:21:13,491 --> 00:21:18,531
+Burada da birçok araç var aslında. Geçen haftada biraz detaylıca görüştük ve konuştuk bunları.
+
+128
+00:21:19,031 --> 00:21:27,971
+Veri görselleştirme burada kritik önemli. Yani veri görselleştirmesi yaparak verinin dağılımlarını görsel olarak anlamak daha kolay.
+
+129
+00:21:27,971 --> 00:21:37,391
+Yani sayısı olarak sadece incelemek yeterli değil. Bunları görsel olarak da o paternleri, o dağılımları inceleyerek daha kolay şekilde anlayabiliyoruz.
+
+130
+00:21:37,471 --> 00:21:41,491
+Burada işte bugspotlardır, histogramlardır, bütün bu yapıları...
+
+131
+00:21:41,491 --> 00:21:45,151
+kullanarak daha anlamlı sonuçlar elde edebiliyoruz.
+
+132
+00:21:47,811 --> 00:21:54,831
+Kısaca hatırlamak gerekirse istatistiksel bir yaklaşımla verinin dağılımı nasıl ölçebiliriz?
+
+133
+00:21:54,931 --> 00:21:56,651
+Yani ortalamalardan sapmaları bile.
+
+134
+00:21:57,651 --> 00:21:58,451
+Burada
+
+135
+00:21:59,188 --> 00:22:18,367
+Ortalamalar bakabiliriz. Yani bütün veriyi incelemek belki zor olabiliyor özellikle. Çok büyük veri setlerinden bahsediyorsak. Bunlar üzerinden örneklemler alarak örneklerin dağılımını inceleyebiliriz. Ya da bütün veri seti üzerinde de yapılabilir. Bu eğer mümkünse.
+
+136
+00:22:19,059 --> 00:22:37,039
+Veri setleri arasında da işte bir ortalama dediğimiz, mid dediğimiz average değeri söz konusu. Bu aslında çok basit olarak ifade etmek gerekirse bütün değerlerin toplamının toplam sayı oranı şeklinde ifade edebiliriz.
+
+137
+00:22:44,372 --> 00:22:56,652
+ortalamayı hesap edeceksek, yani sayısal olarak da bunların ağırlıkları birbirine eşit değilse ağırlıklarıyla da çarparak ona göre toplam bir ağırlıklı ortalama da alınabilir.
+
+138
+00:22:56,852 --> 00:23:07,372
+Yani ya raiyik bir ortalama ya da ağırlıklı ortalama eğer ağırlıklar söz konusunda oluşturmak.
+
+139
+00:23:07,759 --> 00:23:18,600
+Gerekiyor. Ama ortalamanın, özellikle MİN'in bazı problemleri var. Nedir mesela? MİN hangi durumlarda sorun veya yanlış yönlendirebilir bizi?
+
+140
+00:23:21,800 --> 00:23:29,120
+Veri iki uçta yer alınca ortalaması aslında ortada bir yerlerde gözüküyor fakat ortalama çevresinde hiçbir verimiz yok.
+
+141
+00:23:29,844 --> 00:23:38,763
+Aslında güzel bir örnek. Yani veride outlier varsa outlier değerleri bu veri seti üzerinde min,
+
+142
+00:23:40,288 --> 00:24:05,728
+hassas oluyor. Yani oradaki aylık değerlere hassas yaklaşıyor. Yani şöyle ifade edelim. Ortalama boy hesap ediyoruz. Normalde herkes 3 aşağı 5 yukarı aynı boylarda ama 3-5 tane basketbolcu var. Dolayısıyla ne yapacaklar onlar? Ortalamayı yükseğe olması gerekenden daha yükseğe taşıyacaktır. Aslında genel ortalama o civarda değil.
+
+143
+00:24:06,096 --> 00:24:23,215
+Ama birkaç tane outlier aşağıda olabilir, yukarıda da olabilir. Bu ortalamayı kaydırabilir. Bunun gibi problemler ortaya çıkabilir. Bir de dediğiniz gibi iki tarafta da çok uç örnekler var ama ortalama ikisinin de olmadığı noktalarda birleşebiliyor.
+
+144
+00:24:24,403 --> 00:24:35,364
+Bunlar için aslında bu outlier'dan kaynaklı problemleri, potansiyel problemleri azaltmak için median daha uygun bir metrik.
+
+145
+00:24:35,483 --> 00:24:40,323
+Çünkü median da outlier'lara karşı daha dirençli bir metrik.
+
+146
+00:24:40,943 --> 00:24:49,203
+Çünkü median şu oluyor, bütün verileri o ölçtüğümüz değere göre sıralarsak ortada kalan ortanca değerin
+
+147
+00:24:49,683 --> 00:25:02,683
+ortanca değeri kaç oluyor? Ortanca item'ın değeri kaç oluyor? Bu bizim daha doğru bir ölçüm sağlamamızı kolaylaştırır.
+
+148
+00:25:04,596 --> 00:25:26,196
+Bir de mod var. Mod aslında en sık gerçekleşen eleman. Bu tabii ki şey yapabiliyor, yanıltıcı olabiliyor. Çünkü en sık frekansa göre baktığı için belki altla ayırlara doğru kayan bir değer de en sık olabilir. Bu her zaman ortalamada denk gelecek diye bir şey yok. Ama bu da sıklık açısından fikir veriyor bize.
+
+149
+00:25:29,844 --> 00:25:51,823
+Bunun yanında bir de veri setini özellikle görselleştirince belli bir yana kaymalar var mı? Bunları görmekte bize kolaylık sağlıyor. Mesela eğer veriniz normal bir dağılım sağlıyorsa, outlier oranı azsa normal bir dağılım gördüğünüz gibi bu şekil bir dağılımdan bahsediyoruz.
+
+150
+00:25:53,652 --> 00:26:01,252
+Bunlar uç değerler. Uç değerlerin sayısı az ama ortalamada iki değerlerin sayısı daha fazla, frekansı daha fazla.
+
+151
+00:26:02,420 --> 00:26:27,660
+Normalde alımlarda medyanda, mean'de, modda aslında aynı noktaya yakın şekilde neticelenir. Buradaki örnekle olduğu gibi. Ama veri bir tarafa doğru skewed bir özellik taşıyorsa, yani sağa doğru skewed veya sola doğru skewed ise bu durumda medyanla mean kayar. Bu üçü aynı noktada bulunmaz.
+
+152
+00:26:29,715 --> 00:26:47,715
+Bu uzun tarafın baktığı yöne göre skew diyoruz. Yani eğer bu uzun taraf, uzun bacak sağa doğru gidiyorsa, bura right skew. Eğer sola doğru gidiyorsa, left skew diyoruz. Yani gerçek hayattaki verilerde de bu eğimler...
+
+153
+00:26:48,096 --> 00:26:54,556
+sıklıkla görülebiliyor. Yani right skew ya da left skew de olabilir data. Bunlara da bakmak lazım.
+
+154
+00:26:54,976 --> 00:27:01,695
+Şimdi right skew olduğu zaman mod tabii ki yine şuralarda en sıklıkla gözüken taraflarda oluyor.
+
+155
+00:27:02,435 --> 00:27:10,675
+Median daha bu ikisi arasında. Meme ise tabii ki buradaki outlier değerleri daha fazla olduğu için daha ileri çekecektir.
+
+156
+00:27:10,756 --> 00:27:12,556
+Kendine doğru çekecektir ortalamayı.
+
+157
+00:27:13,428 --> 00:27:18,088
+Normalde şuralarda bir yerde olmasını beklersiniz. Ama bu tarafa doğru çıkıyor.
+
+158
+00:27:18,908 --> 00:27:26,428
+Burada da ters yönlü. Sola doğru eğimli olduğu için burada mean outlier'a doğru en yakın oluyor.
+
+159
+00:27:26,988 --> 00:27:32,588
+Mode en sıklıkla gözüken değerler median ise daha tutarlı bir sonuç üretir.
+
+160
+00:27:38,099 --> 00:27:58,799
+Bunun yanında aslında geçen haftada konuştuk. Boxplotlar oldukça faydalı. Boxplot ne yapıyordu? Bize şunları gösteriyor. O dağılımları gösteriyor. Veri setinde ne tür dağılımlar görmüşüz? Yani şöyle gösterelim. Bu bizim bir boxplotumuz olsun.
+
+161
+00:28:10,291 --> 00:28:15,171
+Şu aralık neydi bu? IQR diyorduk hatırlarsanız.
+
+162
+00:28:16,371 --> 00:28:19,991
+Ne eşitti? Q3-Q1'in değeri.
+
+163
+00:28:21,051 --> 00:28:24,031
+Şurada bir yerde median çizgisi var.
+
+164
+00:28:29,619 --> 00:28:44,119
+İşte bu tek bir kolon üzerinden tabii ki oluyor. Mesela height kolon üzerinden bakıyoruz. Buna bakarak, IQR değerine bakarak genel sapmalar hangi yönde, verimiz nasıl dağılmış bunları incelemek mümkün oluyor.
+
+165
+00:28:45,076 --> 00:28:58,135
+Buradan o veri setinde dağılımlar nasıl, varyans yüksek mi, Alpayrlar, hangi kolonlarda daha fazla bunları ölçmek mümkün.
+
+166
+00:28:58,775 --> 00:29:09,135
+Dediğimiz gibi hani genel bir kanı olarak da 1.5 IQR yukarı aşağı bizim Alpayr çizgimiz gibi onun üstündeki de genel olarak Alpayr diyebiliyoruz.
+
+167
+00:29:11,667 --> 00:29:15,627
+Arada kalanlarsa daha çok normal değerler şeklinde ifade edilebilir.
+
+168
+00:29:16,847 --> 00:29:22,707
+Bunun yanında veri setinin varyanslı standart dağılımı nasıl bunları da hesap etmekte fayda var.
+
+169
+00:29:23,647 --> 00:29:26,268
+Normalde varyans dediğimiz şey nedir?
+
+170
+00:29:26,507 --> 00:29:30,667
+Aslında her bir data noktasının ortalamadan, farkının, kareler toplamının...
+
+171
+00:29:32,500 --> 00:29:46,319
+eleman sayısına bölmesi. Bunu bu şekilde ifade edebiliriz. Ama şunu unutmayın, şimdi Variance Sample ile Population arasında farklı dış. Yani şöyle, bu bizim popülasyonumuz.
+
+172
+00:29:50,867 --> 00:30:04,227
+Popülasyon şu olsun, bütün İstanbul'daki insanların ortalama boyu. Bunu ölçmek istiyorum, bütün şehirde. Şimdi bunu bütün popülasyon üzerinde yapmamız mümkün mü?
+
+173
+00:30:08,307 --> 00:30:12,947
+Diyelim ki 20 milyon insan var. Yaklaşık.
+
+174
+00:30:14,927 --> 00:30:16,028
+Mümkün değil hocam, çok zor.
+
+175
+00:30:16,728 --> 00:30:23,307
+Mümkün değil, değil mi? Yani yaklaşık 20 milyon. Neden mümkün değil? Nasıl sorunlarla karşılaşırsınız?
+
+176
+00:30:29,779 --> 00:30:42,740
+Evet, mümkün değil değil mi? Çünkü siz mesela diyelim ki 20 milyon insan var. Teker teker ölçmeye kalktınız. Şunu ölçtün. Sonra kapı kapı geziyorsunuz. Bütün herkesi gezdiniz. Ne kadar sürer bu? Bütün herkesi 20 milyon ölçseydik.
+
+177
+00:30:45,640 --> 00:30:49,440
+Fiziksel olarak çok mümkün değil. Günlerce sürer de değil mi?
+
+178
+00:30:49,855 --> 00:31:11,692
+Diğer bir problem ne? Siz şimdi insanların boylarını ölçmeye başladınız. İşte şehre yeni birileri taşındı. Bazıları ayrıldı, bazıları öldü, yeni çocuklar doğdu. Yani bunu tamamen ölçmeniz pek mümkün değil. Hatta hiç mümkün değil. Peki ne yapabiliriz? Bunu hani ben, neden bu benim için önemli? Şunun için önemli. Diyorum ki...
+
+179
+00:31:12,468 --> 00:31:29,668
+İstanbul'da otobüslerin kapılarının boyu ne kadar olmalı? Çünkü ortalama boyu bilirsem oradan biraz daha yukarı, biraz daha aşağı, standart satmayı göz önünde bulunarak kapıların boylarını standartlaştıracağım. Bunun için bilmem gerekiyor bu şehirde insanların ortalama boyu ne kadar?
+
+180
+00:31:30,668 --> 00:31:34,807
+Şimdi böyle bir şeye karar vermek için bütün herkesin boyunu ölçmeme gerek var mı?
+
+181
+00:31:38,420 --> 00:31:40,420
+ve da nasil yapabilizasyonu etfilelerine.
+
+182
+00:31:44,627 --> 00:31:53,567
+Aslında beklediğimiz, kabul ettiğimiz hataya göre belli bir sample seçip aradan onları ölçsek o hata içerisinde kalırız.
+
+183
+00:31:53,567 --> 00:32:08,395
+Aynen. Yani aslında belli bir yeterince bu sayıyı bütün şehirdeki insanları örnekleyebileceğimiz büyüklükte bir sample alırsak, örneklem alırsak, bunun ortalaması...
+
+184
+00:32:08,435 --> 00:32:18,016
+Bütün popülasyona yakın sıcakları değil mi? Yani rastgele bazı örneklemler alıyorum. Diyelim ki burası da bir örnek olabilir, burası da bir örnek olabilir, şunlar da bir örnek olabilir.
+
+185
+00:32:19,036 --> 00:32:29,756
+Burada birkaç tane şartımız var. Birincisi ne? Number of sample yüksek olacak. İkincisi ne? Diğer şartımız ne?
+
+186
+00:32:30,740 --> 00:32:32,479
+Random bir şekilde seçilmesi gerekiyor.
+
+187
+00:32:32,500 --> 00:32:36,379
+Random olması lazım. Yani bu neden önemli? Örnek verir misin [öğrenci]?
+
+188
+00:32:38,259 --> 00:32:46,679
+Hocam eğer örnekler hep belli bir kitleden alınırsa, mesela hep çocuklardan örnekler alınırsa, bu sefer buna uygun bir şekilde bir boy seçemezsin.
+
+189
+00:32:46,740 --> 00:32:49,679
+Düşük çıkar ortalaması ve o popülasyonu terpis edemez veri.
+
+190
+00:32:49,679 --> 00:32:55,819
+Aynen öyle. Yani siz eğer bu örneklemde herkesin seçilme ihtimali eşit değilse,
+
+191
+00:32:56,211 --> 00:33:22,432
+Bir anaokuluna gidersiniz, oradaki sample değil mi sonuçta 20 tane kişi ölçeceksiniz, 20'si de bebek, çocuk. Ortalama boyumuz ne çıkacak? İşte diyelim ki 90 cm. Acaba gerçekte böyle mi? Tabii ki değil. Demek ki orada seçilmelerin rastgele yapılıyor olması lazım. Yani farklı bölgelerden insanlar rastgele seçilerek yapılması lazım. Başka ne olabilir?
+
+192
+00:33:24,468 --> 00:33:30,408
+Bir de örneklemlerin independent olması lazım. Yani birbirinden bağımsız olması lazım.
+
+193
+00:33:33,668 --> 00:33:41,268
+Şöyle örnek verelim. Rastgele seçiyorsunuz ama şimdi rastgele aynı kişiyi tekrar tekrar seçiyorsunuz. Öyle şeyler de olabilir.
+
+194
+00:33:42,003 --> 00:33:47,023
+Her kezin birbirinden farklı, bağımsız olarak seçilme ihtimali var.
+
+195
+00:33:47,144 --> 00:33:58,483
+Veya rastgele seçiyorsunuz ama seçtiğiniz yer, gittiniz ne bileyim şey, bir tane mahalleden rastgele seçiyorsunuz ama herkes aynı aileden gibi olabilir.
+
+196
+00:33:59,203 --> 00:34:03,543
+Dolayısıyla rastgele de olması yeterli değil, aynı zamanda independent olması lazım.
+
+197
+00:34:03,543 --> 00:34:07,864
+Bunun gibi özelliklerden bahsedelim ama sample S diye bir tane.
+
+198
+00:34:10,260 --> 00:34:32,760
+Bu özelliklerin hepsini taşıyor. Şimdi bunun varyansını aldığınız zaman veya standart sapmasını aldığınız zaman eğer bu özellikleri taşıyorsa yakın olması lazım. Neye yakın olması lazım? Popülasyonun. Bu popülasyonun standart sapması ve varyansı.
+
+199
+00:34:36,596 --> 00:34:50,836
+Bu bizim varyans dediğimiz için buna gerek yok. Yani şöyle olması lazım. Bu popülasyonun varyansı, bu da popülasyonun standart satması, buna diyelim S diyelim, bu da S kare olsun.
+
+200
+00:34:52,255 --> 00:34:57,596
+Bu sample'ın, bu popülasyonun, bunların birbirine yakın olması lazım. Bu özelliklerle yaklaşınca bunu...
+
+201
+00:34:58,291 --> 00:35:15,172
+Çok sayıda sample alırsanız bu %100 buna yakın olur. Yani aslında şöyle örnek verelim. Her bir sample arasında da farkları olabilir. Yani sample 1 ile sample 2 arasındaki şeyler birebir olmayabilir. Bu biraz daha büyük ya da küçük olabilir.
+
+202
+00:35:15,172 --> 00:35:25,171
+Ama central limit teoremi diye bir kavram var. Central limit teoremi. Bu örnekleri...
+
+203
+00:35:26,036 --> 00:35:35,016
+örnek sayısını artırdığınız zaman, seçme sayısını artırdığınız zaman bu sonuç olarak buna converge eder.
+
+204
+00:35:35,155 --> 00:35:41,775
+Yani eninde sonunda gerçekteki popülasyona converge eder. Sayıyı ve örneklem sayısını artırırsınız.
+
+205
+00:35:42,771 --> 00:36:03,724
+Ama bizim için buradaki örnekte çok ciddi bir problem yok. Bunun birebir aynası olması gerekmiyor. Yeterince yakın olması yeterli. Yani buradan bir sample seçtim. Bunun örneklemini aldım ve buradan diyelim ki ortalama boy 1.69 çıktı. Gerçekteki boy ise popülasyondaki 1.69.
+
+206
+00:36:03,827 --> 00:36:17,387
+71.93.49 bilmem ne. Buradaki küçük hata payı benim için çok önemli değil. Zaten buradaki kararı alabilmek için bu hata payı yeterince küçük.
+
+207
+00:36:18,483 --> 00:36:24,163
+Gerçek verilerde de böyle oluyor. Dolayısıyla aslında örneklem alarak bazı şeyleri ölçmek gerekiyor.
+
+208
+00:36:24,163 --> 00:36:32,804
+Şimdi örneklemlerle popülasyon arasındaki varyans ve standart satma ölçümü biraz farklı da o yüzden aslında bunu söylemek istedim.
+
+209
+00:36:33,183 --> 00:36:36,163
+Şimdi varyansı popülasyon üzerinden alıyorsanız...
+
+210
+00:36:37,460 --> 00:36:42,019
+Bu varyansın popülasyon üzerindeki, yani 1 bölü n'e bölüyorsunuz, her birisinin farkını.
+
+211
+00:36:42,400 --> 00:36:47,519
+Ama sample üzerinden alıyorsanız, bunu sample üzerindeki değerler oluyor.
+
+212
+00:36:47,599 --> 00:36:54,519
+Bu sample ortalaması, mu değil, mu popülasyonun ortalaması, x bar sample'ın ortalaması, x i'de sample'ın elemanları.
+
+213
+00:36:55,300 --> 00:36:59,740
+Bunu n-1'e bölüyorsunuz, sample sayısından 1 eksiyle bölüyorsunuz.
+
+214
+00:36:59,780 --> 00:37:02,220
+Çünkü degree of freedom n-1 oluyor burada.
+
+215
+00:37:02,612 --> 00:37:05,172
+Böyle küçük bir nüansı var, o yüzden söylemek istedim.
+
+216
+00:37:05,172 --> 00:37:10,791
+Yani eğer bir örneklem, bütün data sete sahipseniz, o zaman varyans da bir bölü n olur.
+
+217
+00:37:11,432 --> 00:37:15,932
+Eğer onun içinden bir örneklem alıyorsanız, bir bölü n-1 oluyor. Böyle küçük bir fark var.
+
+218
+00:37:16,412 --> 00:37:20,371
+Standard deviation ise aynı. Yani bunun kare köküyle, bunun kare köküyle oluyor.
+
+219
+00:37:20,912 --> 00:37:27,092
+Sample'da standart hesapmayı alıyorsanız, önce s hesab edip bunun kare kökünü alıyorsunuz.
+
+220
+00:37:27,092 --> 00:37:29,092
+Eğer popülasyondaysa...
+
+221
+00:37:29,364 --> 00:37:33,364
+Bunun önce varyansını popülasyonda bulup karaköpünü alıyorsunuz.
+
+222
+00:37:35,423 --> 00:37:42,704
+Bu istatistik tarafı çok bizim şeyimiz değil, çok endişe edeceğimiz kısım değil. Bunlar otomatik olarak hesaplanış uygulamalarda.
+
+223
+00:37:42,704 --> 00:37:49,704
+Ama dağılımın özellikleri bize bazı fikirler verebiliyor. Eğer dağılımımız normal dağılımsa...
+
+224
+00:37:50,496 --> 00:37:54,896
+Bunu siz dağıttığınız zaman aslında böyle bir yapı ortaya çıkıyor.
+
+225
+00:37:55,696 --> 00:38:05,716
+Ve burası işte bizim sıfır noktamız, ortalama noktası olursa buradan bir standart satma sağa, bir sola gittiğiniz zaman bu taralı alan toplam alanın %68'ine tekabül ediyor.
+
+226
+00:38:06,476 --> 00:38:11,896
+İki standart satma sağa sola gittiğiniz zaman da %95'lik alana tekabül ediyor.
+
+227
+00:38:12,316 --> 00:38:16,736
+Üç standart satma gittiğiniz zaman da %99.7 gibi bir değer.
+
+228
+00:38:17,588 --> 00:38:25,668
+Bu %95 önemli, neden önemli? Aslında bizim istatistikte confidence interval dediğimiz alana tekabül ediyor.
+
+229
+00:38:25,668 --> 00:38:35,128
+Yani rastgele bir şey seçiyor olsaydım, örneklem seçiyor olsaydım %95 ihtimalle şu aralıkta olmasını bekleriz.
+
+230
+00:38:35,487 --> 00:38:54,167
+Buralardaysa bu aslında bizim altla ayrıladığımız değerler. Yani normalde olmasını beklemediğimiz şeyler. Normalde sapmadan daha yüksek. Bunların gerçekleşme ihtimali düşük. Ama bu şekilde bunları altla ayrı olarak da isimlendirebiliriz. Bu açıdan normalde ağızın önemli.
+
+231
+00:38:55,956 --> 00:39:18,236
+Diğer bir nokta da şu, korrelasyonlara da bakmak gerekiyor. Yani kolonlar arasında nasıl bir ilişki var? Birisi artarken diğeri artıyor mu? Birisi azalıyorken diğeri artıyor mu? Veya bunlar arasında direkt bir ilişki yok mu? Bunların tespiti de çok önemli. Veri görselleştirme aşamasında da incelediğimiz bir metrik.
+
+232
+00:39:18,900 --> 00:39:26,039
+Şimdi bu iki veri, burası x, burası y olsaydı, bunlar arasında nasıl bir ilişki var? Pozitif, negatif, sıfır.
+
+233
+00:39:28,500 --> 00:39:34,680
+Pozitif ilişki değil mi? Çünkü x'de bir birimi arttırdığım zaman y'de de y birimi arttırıyorum.
+
+234
+00:39:35,720 --> 00:39:40,920
+Yani birisi artarken diğeri de artıyor. Dolayısıyla burada bir pozitif korelasyon ya da ilişki var.
+
+235
+00:39:41,876 --> 00:39:57,356
+Burada ise negatif var. Değil mi? Onu tam tersi. Çünkü ikisi de bir birim artırınca y birim kadar azalıyor. Gördüğünüz gibi azalıyor. Dolayısıyla bu ikisi yine bunlar correlated ama negative correlation var.
+
+236
+00:40:07,315 --> 00:40:19,536
+hesap ediyor. Mesela y kolonumuz bizim tahmin ettiğimiz bağımlı değişken, x kolonu da bizim independent ya da bağımsız değişkenimizse. Yani x'ler bizim feature'larımız, y ise bizim tahmin ettiğimiz değerse.
+
+237
+00:40:20,536 --> 00:40:24,036
+Şimdi buradaki x'i kullanarak ben y'yi tahmin edebilir miyim?
+
+238
+00:40:27,987 --> 00:40:42,167
+Edebilirim. Yani birebir neredeyse. Otomatik olarak edebilirim. Yani tamamen aslında bunun bir lineer fonksiyonu. Bir regresyon gibi hemen tahmin edilebilir. Buralarda da aynı. Negatif olması bir şey değiştirmez. Yine korrelasyon var.
+
+239
+00:40:42,643 --> 00:40:57,743
+Buna bir etkisi var diyen bir ifadeyle. Yani bu sayıların hepsinde gördüğünüz gibi bir korrelasyon var. Ama sıfıra yaklaştı, sıfıra çok yakın. Şimdi buradaki X'deki değişim, Y'deki değişimi tamir etmeme faydalı mı?
+
+240
+00:41:00,340 --> 00:41:01,180
+Değil hocam.
+
+241
+00:41:01,540 --> 00:41:06,100
+Hiçbir faydası yok değil mi? Bu x'in artması azalmasıyla y'nin direkt bir bağlantısı yok.
+
+242
+00:41:06,700 --> 00:41:11,880
+Diğer bir ifadeyle sizce bunu bir feature olarak y'yi tahmin etmek için kullanmak anlamlı mı?
+
+243
+00:41:16,244 --> 00:41:22,784
+Değil. Çünkü çok düşük korelasyon varsa bunu bir feature olarak kullanmanın hiçbir katkısı olmayacaktır.
+
+244
+00:41:22,864 --> 00:41:30,144
+Çünkü bizim amacımız ne? Aslında X dediğimiz X1, X2, X3 gibi featureları kullanarak Y dediğimiz bağımlı değişikliğini tahmin edeceğiz.
+
+245
+00:41:30,584 --> 00:41:35,724
+Şimdi bundaki etki buraya bir yansıma yapmıyorsa bu ikisinin herhangi bir etkisi yok.
+
+246
+00:41:35,724 --> 00:41:44,144
+Yani örnek vereyim. Siz bir kredi tahmin skoru yapacaksınız modeli. İşte hangi kişiler kredisini öder, borcunu öder, hangileri ödemez?
+
+247
+00:41:44,244 --> 00:42:07,704
+Şimdi burada modelleme için neye bakabilirsiniz? İşte maaşla krediyi ödemek arasında bir ilişki var mı? Veya işte cinsiyetle veya eğitim durumuyla, işinin niteliğiyle bunlarla ilişkisi var mı? Olabilir. Olması beklenir. Dolayısıyla buradaki x'lere göre ben buradaki y'yi tahmin edebilirim. Bir fonksiyon dahiline tahmin edebilirim.
+
+248
+00:42:08,148 --> 00:42:17,248
+Şimdi tuttuğu takım veya işte ne bileyim annesinin kızlık soy isminin baş harfi gibi bir feature'ımız olsaydı muhtemelen böyle bir şey olacaktı.
+
+249
+00:42:17,248 --> 00:42:24,448
+Şimdi bunu kullanarak burada y'yi tamir etmemin bir anlamı var mı? Yok. O zaman bunu kullanmamak lazım.
+
+250
+00:42:24,608 --> 00:42:33,708
+Yani aslında correlation taşımayan feature'ların model setinden de çıkarılması açısından da correlasyonun tespiti önemli.
+
+251
+00:42:34,452 --> 00:42:42,512
+Çok düşük korelasyon ya da hiç korelasyon yoksa bunların feature olarak kullanılması çok doğru bir yaklaşım değil.
+
+252
+00:42:45,272 --> 00:42:48,872
+Peki çok yüksek korelasyon olması doğru mu?
+
+253
+00:42:51,872 --> 00:42:52,592
+Şunlar.
+
+254
+00:42:59,923 --> 00:43:16,144
+Hocam, doğruluğundan ziyade genelde bu şeylerde problem oluyor. Bunlar data leak olarak geçiyor sanırım ya da böyle bir ihtimal var. Bunlar aslında bizim elimizde olmayan ama veri setinde sonuca ipucu verebilecek örnekler oluyor. Bunlardan kopya çekerek öğreniyor ama gerçek hayatta böyle veri alamıyoruz.
+
+255
+00:43:16,943 --> 00:43:27,903
+Aynen öyle. Aslında bunlar çok doğru feature'lar değil, yanlış yönlendiren bir feature. Evet. [öğrenci] da aslında aynı söylemiş. Bunlar aslında ne yapıyor?
+
+256
+00:43:27,923 --> 00:43:43,644
+biliyor musunuz? Şunu yapıyor, modeli yanlış yönlendiriyor. Az önce bahsettiğiniz gibi. Buradaki feature aslında X feature'ın dependent variable ile aynı şey.
+
+257
+00:43:44,532 --> 00:43:55,652
+Havi ile kullandığın diğer feature'ların hiçbir önemi yok. Yani diyelim ki x1, x2, x3, xn tane feature'nız var, y var. y ile x5 aynı şey.
+
+258
+00:43:56,083 --> 00:44:18,543
+Haliyle burada bir data linki oluyor gerçekten. Yani yeni bir şey öğrenmiyor. Sadece bir feature'ı kullanarak tahmin ediyor. Bu da yanlış bir şey. Aslında tahmin gerçekleşmiyor. Çünkü siz tahmin ettiğiniz şeyi data input olarak veriyorsunuz. Bu o demek. Çok yüksek korelasyon varsa tahmin ettiğiniz şeyi aslında input olarak alıyorsunuz demek. Yani bir tahmin gerçekleşmiyor aslında.
+
+259
+00:44:19,476 --> 00:44:36,376
+Bu bir problem. Gerçek veri setlerinde bu anlamsız. Böyle bir şey zaten biliyorsanız niye tahmin ediyorsunuz? Bu da olmaması gereken bir nokta. Ona da dikkat etmek lazım. O açıdan da korrelasyonu incelemek önemli bir katkı sağlar. Korrelasyon hesabı çok basit yani.
+
+260
+00:44:38,132 --> 00:44:50,632
+bir fonksiyon olarak hesap edersek aslında koalasyon ne yapıyor? Ortalamadan farklarını alıp bunun standart sapmasından bölümü gibi.
+
+261
+00:44:50,632 --> 00:44:52,632
+Koalasyon...
+
+262
+00:44:53,619 --> 00:45:01,759
+Hesap olarak, iki vektör olarak düşündüğümüz zaman bunların dot productları bölü birim uzunlukları olmuş oluyor.
+
+263
+00:45:01,759 --> 00:45:09,359
+Dot productları vektör karşılıklı çarpımları bölü her bir vektörün birim uzunluğu şeklinde hesap ediliyor.
+
+264
+00:45:09,659 --> 00:45:15,039
+Bu da koalasyon değerini negatif ve pozitif bir arasındaki bir değer olarak bize sağlıyor.
+
+265
+00:45:17,396 --> 00:45:31,436
+Şimdi buradaki örnekte de gördüğünüz gibi bunlar correlated değil. Yani buradaki X ile Y arasında herhangi bir ilişki yok. Bunların tahminlemede de bir katkısı olacaktır. Kısaca bunu söyleyebiliriz.
+
+266
+00:45:31,896 --> 00:45:33,356
+Buraya kadar sorusu olan var mı?
+
+267
+00:45:35,836 --> 00:45:40,136
+Bu şey hakkında soracaktım. Bir tane slide'da şey vardı ya.
+
+268
+00:45:41,331 --> 00:45:46,631
+Distribution'un şeylerine bakıyorduk, standart satma mesafelerine bakıyorduk hani.
+
+269
+00:45:48,431 --> 00:45:56,551
+Orada bu, yani söylediğiniz ama tam şey anlamadım. Bu standart satma mesafeleri bize ne anlatıyor tam olarak?
+
+270
+00:45:57,451 --> 00:45:58,311
+Burada mı?
+
+271
+00:45:58,991 --> 00:45:59,591
+Evet, burada.
+
+272
+00:46:00,659 --> 00:46:23,379
+Burada bunlar standart sapmayı gösteriyor. Bu sıfır noktası yani ortalama değeri. Buradan bir uzak, iki, bir sağ, bir sola uzaklaşınca şu alan, bütün alanın 168. Yani şu demek oluyor. Benim ortalama boyum 150, sınıfımızın ortalama boyu 165 olsun, standart sapmamız da 10 olsun.
+
+273
+00:46:23,795 --> 00:46:39,395
+165 artı 10, 165 eksi 10. Yani 155 ile 175 arasında. Şu demek oluyor, rastgele bu sınıftan birisini seçersem, bunun ortalamasının 155 ile 175 arasında olma ihtimali 168.
+
+274
+00:46:41,108 --> 00:46:59,268
+İki tane standart satmaya gittik. 145 ile 185 oldu. Herhangi bir kişiyi seçersen bunun bu aralığında olma ihtimali %95. Bunun dışındaysa aslında bu çok olmasını beklemediğimiz bir şey. Bu aslında bir outlier değeri.
+
+275
+00:47:02,420 --> 00:47:10,800
+Yani aslında datamızın, yani Outlayer'a denk gelme şeyin nadirliğini anlıyoruz buradan.
+
+276
+00:47:11,260 --> 00:47:23,300
+Aynen, nadirliğini de anlıyoruz. Yani bunun dışında kalıyorsa, bu iki aralığın dışında, yani ortalama artı iki standart satma sağa sola gittikten sonranın dışında kalıyorsa, bu aslında çok nadir gözüken bir şey.
+
+277
+00:47:23,300 --> 00:47:26,039
+Yani gerçekleşme ihtimali, %5'in altında bir ihtimal.
+
+278
+00:47:26,612 --> 00:47:31,612
+Bunlara genellikle outlier diyebiliriz. Bunların gerçekleşme ihtimali çok düşük.
+
+279
+00:47:33,791 --> 00:47:35,211
+Anladım hocam, teşekkür ederim.
+
+280
+00:47:35,331 --> 00:47:36,211
+Ben teşekkür ederim.
+
+281
+00:47:37,791 --> 00:47:39,672
+Başka sorusu falan var mı arkadaşlar?
+
+282
+00:47:44,052 --> 00:47:51,972
+Tamam, o zaman bir ara verelim. Bir 15 dakika ara verelim. 3'ü 5 geçe kaldığımız yerden devam edeceğiz. Görüşürüz.
+
+283
+01:03:00,340 --> 01:03:01,440
+Hoş geldiniz arkadaşlar.
+
+284
+01:03:06,260 --> 01:03:07,380
+Ekranım yansıdı mı?
+
+285
+01:03:09,500 --> 01:03:10,500
+Evet hocam.
+
+286
+01:03:10,900 --> 01:03:13,980
+Tamam süper, teşekkürler. O zaman devam edelim.
+
+287
+01:03:15,740 --> 01:03:17,380
+Korrelasyon'dan bahsettik.
+
+288
+01:03:18,195 --> 01:03:37,715
+Bir de benzerlik de önemli bir hesaplama aslında. Yani özellikle noktasal anlamda değerlerin benzerliğini hesaplamak, objelerin birbirine, satırların birbirine benzerliğini anlamak önemli bir, correlation'a benzer bir şekilde önemli bir metrek.
+
+289
+01:03:38,995 --> 01:03:45,475
+Benzerlik genellikle sıfırla bir arasındaki değerler içerir. Farklılıklı simüleler de tam tersine içerir.
+
+290
+01:03:46,675 --> 01:04:08,115
+Şimdi benzerlikten neyi kast ediyoruz? Nasıl hesaplanıyor? Bunu da tabii niteliklere göre değişiklik ifade etmesi normal. Eğer bir attribütümüz nominal bir değerse bunlar birbirine eşitse sadece benzerlik bir olur. Diğer durumlarda benzerlik sıfır.
+
+291
+01:04:08,755 --> 01:04:22,795
+Ordinallik ise, bu ordinallik, yani kategorik demek ama bir yer arşi bir hastalığımız var demek. Bu ordinallik ise ne kadar uzak olduğuna göre hesaplanabilir benzerlik.
+
+292
+01:04:22,795 --> 01:04:34,795
+Yani bir eksi şu anki değer, eksi minimum değer, bölü en eksi bir. Yani şunu ifade edmeye çalışayım. Eğer kategorik değerleri bir indeks gibi düşünürseniz,
+
+293
+01:04:35,251 --> 01:04:47,751
+İlkokul 1, ortaokul 2, lise 3, üniversite 4, yüksek lisans 5 gibi kodlarsanız, şimdi üniversite ile ortaokul arasındaki fark ne olacaktır?
+
+294
+01:04:48,371 --> 01:04:57,211
+İşte 4-2 bölü, toplam aralık 5, bunun 1-4, 4'e böldüğünüz zaman bunu birden çıkarınca benzerliği bu şekilde.
+
+295
+01:04:57,791 --> 01:05:16,351
+Hesap etmek mümkün. Ya da aralıklarsa bu aralıklara göre de tabii ki aralığın boyun nasıl oluyor ona göre oransal bir şeyse veya aralık başlangıç bitiş noktalarının tamamına minimum maksimum oranları şeklinde bulunabilir.
+
+296
+01:05:16,820 --> 01:05:21,940
+Bunlar bazı farklı özellik, attribute türüne göre bahsettiğimiz şey.
+
+297
+01:05:22,440 --> 01:05:27,660
+Eğer bir vektordan bahsediyorsak, vektoral formdan bahsediyorsak, şöyle çizeyim isterseniz.
+
+298
+01:05:30,099 --> 01:05:33,740
+Aslında her bir data noktası bir data frame gibi düşünür bunları.
+
+299
+01:05:34,960 --> 01:05:36,160
+Bir tablo gibi ya da.
+
+300
+01:05:37,480 --> 01:05:41,619
+Her bir değerimiz x1, x2, x3.
+
+301
+01:05:42,963 --> 01:05:46,603
+x4 gibi böyle çok sayıda değerlerden oluşturuyoruz.
+
+302
+01:05:47,583 --> 01:05:49,303
+Şimdi burada bizim xN'imiz olsun.
+
+303
+01:05:50,163 --> 01:05:59,823
+Bunları şey gibi düşünebilirsiniz, yaş, maaş, evlilik durumu gibi böyle attribüt gibi düşünebilirsiniz her bir x.
+
+304
+01:06:00,603 --> 01:06:05,743
+Her bir nokta, buna p1 diyelim, aslında bir vektör değil mi?
+
+305
+01:06:05,843 --> 01:06:08,423
+p1, bir vektör.
+
+306
+01:06:09,331 --> 01:06:18,552
+e1 vektörü x1, x2, x3 gibi değerleri içeren bir vektör.
+
+307
+01:06:19,592 --> 01:06:26,032
+Bunu n boyutlu görselleştirmek mümkün değil ama 3 boyutlu ya da 2 boyutlu göstermek gerekirse
+
+308
+01:06:26,032 --> 01:06:36,251
+aslında şöyle bir e1, yani bunu 2 boyutlu gösterelim, x1, x2 gibi bir vektöre tekabül ediyor.
+
+309
+01:06:39,956 --> 01:06:47,396
+Şimdi bu neden önemli? Vektoral formda gösterdikten sonra aslında benzerliği ve bunun gibi birçok ölçümü yapmamız mümkün.
+
+310
+01:06:47,536 --> 01:06:50,416
+Mesela şunu hesap edelim. Bu da P2 noktası olsun.
+
+311
+01:06:51,936 --> 01:06:55,396
+Aslında bunları daha kolay göstermek için buna X1, buna da Y1 diyeyim.
+
+312
+01:06:56,195 --> 01:06:58,536
+Buna da X2, Y2.
+
+313
+01:07:00,615 --> 01:07:03,195
+Başka bir nokta daha olsun. Bu da P3 olsun.
+
+314
+01:07:03,195 --> 01:07:04,115
+Bu da Vektor.
+
+315
+01:07:05,108 --> 01:07:12,148
+x3, y3. Görselleştirmek için sadece iki boyutlu sayıçtım. Çok boyutlu olabilir.
+
+316
+01:07:13,608 --> 01:07:18,208
+Bu vektoral formda artık bunlar arası bir benzerlik hesabı yapabilir miyiz?
+
+317
+01:07:18,307 --> 01:07:24,268
+Yani şöyle ifade edeyim. Sizce p1, p2'ye mi daha çok benzer yoksa p3'e mi daha çok benzer?
+
+318
+01:07:25,708 --> 01:07:28,788
+Bunu bir sayısal nitelik olarak hesap edebilir miyiz?
+
+319
+01:07:33,460 --> 01:07:39,900
+Evet hocam, mesafelerin alırsak, öpüksüz uzaklığıyla, P2'ye P1'in daha yakın olduğunu buluruz.
+
+320
+01:07:39,900 --> 01:07:51,520
+Evet, doğru. Aynen söylediğim gibi. Ne yapmamız lazım? Aslında bunlar bir vektör olduğu için, bunlar arasındaki uzaklığı hesap edebilirim.
+
+321
+01:07:52,120 --> 01:07:56,640
+Uzaklık ne kadar artıyorsa, buna distance diyelim, işte D1 diyelim.
+
+322
+01:08:01,907 --> 01:08:03,788
+P2
+
+323
+01:08:03,788 --> 01:08:09,668
+Bu neye eşit olacağı? Dik uzak daha değil mi? Yani aslında
+
+324
+01:08:09,668 --> 01:08:12,268
+x1 eksi
+
+325
+01:08:12,268 --> 01:08:16,788
+x2'nin karesi
+
+326
+01:08:16,788 --> 01:08:20,487
+artı
+
+327
+01:08:20,487 --> 01:08:23,987
+y1 eksi y2'nin karesi
+
+328
+01:08:23,987 --> 01:08:26,967
+artı artı artı gider. Artık çok boyutluyuz.
+
+329
+01:08:28,275 --> 01:08:37,335
+Diğer taraftan, diğer uzunlamalarda D2 dersek, P1 ile P3'ü karşılaştırıyoruz.
+
+330
+01:08:38,595 --> 01:08:39,636
+Nasıl hesaplanacak?
+
+331
+01:08:41,636 --> 01:08:53,255
+X1-X3 karesi artı Y1-Y3'ün karesi artı artı giderdim başka boyutları varsa.
+
+332
+01:08:53,779 --> 01:08:58,340
+Sonra ne yapacağız? Bunları karşılaştıracağız. Hangisi daha büyük? D1 mi büyük? D2 mi büyük?
+
+333
+01:09:00,159 --> 01:09:03,920
+D2, D1'den daha büyük. Bunu bu şekilde ölçmemiz mümkün.
+
+334
+01:09:03,920 --> 01:09:06,639
+Peki benzerlikle uzaklık arasında nasıl bir ilişki var?
+
+335
+01:09:07,819 --> 01:09:09,020
+Buna da similarity diyelim.
+
+336
+01:09:09,199 --> 01:09:14,299
+Similarity, P1, D2.
+
+337
+01:09:18,836 --> 01:09:24,796
+T1, T3. Bunlar arasında nasıl bir ilişki var uzaklıkla?
+
+338
+01:09:26,756 --> 01:09:28,496
+Direksi diye ifade edebilmiyor.
+
+339
+01:09:29,011 --> 01:09:46,752
+Evet, aslında ters orantılı ilişki var değil mi? Uzunluk ne kadar artarsa benzerlik o kadar düşer. Yani bunu belki şöyle ifade edelim. 1 bölü D gibi bir şey aslında. 1 bölü D1, bunu da 1 bölü D2 gibi bir metrikle ifade edebiliriz.
+
+340
+01:09:52,756 --> 01:10:09,136
+Benzerlik o kadar düşük. Yani burası artıyorsa burası azalıyor. Veya burası artıyorsa burası azalıyor demek. Dolayısıyla birbiriyle ters orantılı bir ilişki var. Bunu da ökletle mesela bulabiliriz vektoral fonda.
+
+341
+01:10:09,423 --> 01:10:18,823
+Ama öpük bazı sorunlar da yaşıyor. Mesela öpük uzaklığıyla, mesela noktasal gösterdiğimiz zaman ne yaparız?
+
+342
+01:10:18,923 --> 01:10:24,884
+Bu P1, P2, P3, P4 noktalarının uzaklığını hesap edeceğiz. Bir matris gibi hesap edecek.
+
+343
+01:10:25,023 --> 01:10:30,763
+Aynı noktadan kendisine uzaklık sıfır. Diğer noktalar uzaklığı da gördüğünüz gibi hesaplayabiliriz.
+
+344
+01:10:30,843 --> 01:10:36,683
+Direkt uzaklıkları, değerleri ikili noktalar arasındaki uzaklıklara göre hesap edebiliriz.
+
+345
+01:10:38,036 --> 01:10:48,476
+Öklü tuzaklının genellenmiş versiyonları tabii ki iki boyutlu da yaparsak öklü tuzaklı oluyor, bir boyutlu da yaparsak Minkowski tuzaklı oluyor.
+
+346
+01:10:49,136 --> 01:10:59,796
+Minkowski de aslında şu oluyor, her bir noktanın absürt değerini yani birbiri arasındaki mutlak değerlerinin toplamları şeklinde ifade edilir Minkowski.
+
+347
+01:11:06,036 --> 01:11:13,536
+Eğer bir ise, Minkowski aslında bunun genel ismi oluyor. Bir re eşitir, bir ise Manhattan uzaklığı oluyor.
+
+348
+01:11:13,655 --> 01:11:15,615
+Ya da Manhattan uzaklığı şu demek.
+
+349
+01:11:23,315 --> 01:11:35,835
+Manhattan uzaklığı, köşesel uzaklık gibi düşünebilirsiniz. Yani iki nokta arasındaki uzaklık, burada bir blok gidiyorsunuz, şuradan şuraya iki blok gidiyorsunuz.
+
+350
+01:11:35,935 --> 01:11:45,315
+İki blok, blok sayısı yani, köşegenlerin toplamı demek. Sadece mutlak değer farklı. Diğer özellik...
+
+351
+01:11:46,804 --> 01:11:57,543
+Eğer R2 ise öklü uzaklığı oluyor. R sonsuzsa bu da bizim süprem şeklinde ifade ettiğimiz değeri yani distance hesap ediyor.
+
+352
+01:11:58,244 --> 01:12:06,304
+Bu da vektörlerin değerler arasındaki maksimum farkı ifade ediyor. Yani birçok atribüt üzerindeki farkların maksimumunu.
+
+353
+01:12:07,220 --> 01:12:20,460
+Bu da Mincovski uzaklığının farklı farklı boyutlarda karşılaştırılması söz konusu. Bunlar aslında aynı uzaklığın birbirinden boyutuna göre değerlerinin farkları.
+
+354
+01:12:25,395 --> 01:12:35,716
+İkisi arasındaki direkt uzaklığa bakıyoruz. Mesela buradan P1 ile P2'ye bakalım. P1 ile P2 arasındaki uzaklık. Buradan 2, buradan 2 toplamda 4 tane uzaklık. 4-1 uzaklık.
+
+355
+01:12:36,395 --> 01:12:45,635
+Karelerini aldığınız zaman L2 bu bizim ne oluyor? Bizim öklet uzaklığımız oluyor.
+
+356
+01:12:46,100 --> 01:12:52,340
+L sonsuz da şu oluyor, ikisinin arasındaki birimsel uzaklıkları maksimum.
+
+357
+01:12:52,600 --> 01:12:57,000
+Buradan buraya fark 2, buradan buraya 2, maksimum da 2. Yani bu şekilde ifade ediyoruz.
+
+358
+01:12:58,079 --> 01:13:01,739
+Bu da bir uzaklık matrisi ile hesap edilir.
+
+359
+01:13:03,475 --> 01:13:08,095
+Uzaklık metriklerinin temel birkaç özelliği var.
+
+360
+01:13:08,695 --> 01:13:15,855
+Uzaklık bir ölçümün bir metrik olarak uzaklık metriği olabilmesi için 3 tane özelliği var.
+
+361
+01:13:15,935 --> 01:13:21,995
+Birincisi, uzaklık negatif olamaz, pozitif olması lazım.
+
+362
+01:13:21,995 --> 01:13:27,075
+Sıfır eşliği olabilir aynı noktadayız ama onun dışında sıfır ya da büyük bir değer olması gerekiyor.
+
+363
+01:13:27,536 --> 01:13:28,876
+Simetri olması gerekir.
+
+364
+01:13:29,619 --> 01:13:35,239
+A noktasından B noktasına gitme uzaklığının B noktasından A noktasına gitme uzaklığı eşit olması gerekir.
+
+365
+01:13:35,619 --> 01:13:40,319
+Son olarak da Triangle Inequalty'den evi. Triangle Inequalty'den evi. O da şu demek.
+
+366
+01:13:41,000 --> 01:13:48,379
+Şimdi ben A noktasından başlayıp B noktasına gidiyorsam, B noktasından C noktasına gidiyorsam,
+
+367
+01:13:48,920 --> 01:13:52,779
+A'dan C'ye gitmek her zaman bu aralığa eşit.
+
+368
+01:13:53,652 --> 01:14:18,631
+Şuraya işte D1, burası da D2 diyelim, burası da D3 olsun. Yani D3 her zaman küçük eşittir. D1 artı D2 olması lazım. Yani burası, bu ikisinin toplamı buradan küçük olamaz. Burada üçgen eşitsizliği ya da triangle inekuazlığını. Bu metriklerin özelliklerini hepsine sağlıyorsa bir metrik ancak uzaklık metriği olabilir.
+
+369
+01:14:19,283 --> 01:14:21,064
+Bu da temel bir özellik.
+
+370
+01:14:21,443 --> 01:14:24,323
+Şimdi burada farklı metrikler de var.
+
+371
+01:14:24,323 --> 01:14:26,583
+Sadece bu ikisinden bahsetmiyoruz.
+
+372
+01:14:27,023 --> 01:14:33,183
+Jacquard ya da Simple Matching ya da Cosinus gibi benzerlikler de kullanılabilir vektörler açısından.
+
+373
+01:14:34,355 --> 01:14:41,575
+Bunların her birisinin bazı dezavantajları, avantajları var. Çok kısaca belirtmek gerekirse, simple matching şunu yapıyor.
+
+374
+01:14:41,975 --> 01:14:48,775
+Yani sadece match olanlar. Eğer mesela birisi metrikler şöyle olsun vektörümüz.
+
+375
+01:14:52,404 --> 01:14:54,024
+İki tane vektörümüz var.
+
+376
+01:14:54,984 --> 01:14:58,664
+İşte A vektörü, B vektörü olsun.
+
+377
+01:14:58,904 --> 01:15:01,164
+1, 0, 0, 1, 0, 1.
+
+378
+01:15:01,164 --> 01:15:09,004
+Bu da işte 1, 1, 0, 0, 1, 0 gibi özellikler olduğunu varsayalım.
+
+379
+01:15:09,724 --> 01:15:13,524
+Bunlar arasındaki benzerliği nasıl hesap ediyoruz?
+
+380
+01:15:13,684 --> 01:15:14,364
+Öyle düşünelim.
+
+381
+01:15:15,104 --> 01:15:19,224
+Şimdi şurada bakacak olursak, simple matching.
+
+382
+01:15:19,631 --> 01:15:28,811
+Birleri aynı olan, sıfırları aynı olanların toplam sayısına bölüyor. Yani bütün match eden, attribute'leri bölü toplam attribute sayısı.
+
+383
+01:15:30,791 --> 01:15:40,591
+Jakart'ın özelliği sadece eşit olan birleri, match alan birleri hesap ediyor. Bunun toplam sayı oranını hesap ediyor.
+
+384
+01:15:40,591 --> 01:15:46,311
+Mesela Jakart'ta sıfırları eşit olsa bile kabul etmiyor gibi düşünebilirsiniz.
+
+385
+01:15:47,152 --> 01:15:53,131
+Mesela Jackart'la şu örneğe bakalım, bu iki örneğe. Mesela burada Simple Matching neyi bulacak?
+
+386
+01:15:54,291 --> 01:16:01,512
+Birlerin eşit olma sayısı, sıfırların eşit olma sayısı artı toplama oranı. Burada bir ikisi örtüşmüyor.
+
+387
+01:16:02,231 --> 01:16:09,131
+Meç eden kaç tane şey var? Sıfır var, yedi tane var. Meç eden bir sayısı, eşleşen bir sayısı yok.
+
+388
+01:16:09,492 --> 01:16:13,791
+Yedi bölü, bunları teker teker toplarsanız on çıkar.
+
+389
+01:16:14,260 --> 01:16:35,420
+Boyu 10 çünkü. 7 bölü 10, %70 benzerlik diyor. Aynısını Cakart'da yaparsanız 0 çıkıyor. Çünkü burada gördüğünüz gibi hiçbir ölçüen 1 yok. Tamamın oranı 0 şeklinde. Bunun gibi aslında metriklerin de farkları olabiliyor. Bunun yanında kosünüs de bir önemli benzerliktir.
+
+390
+01:16:42,195 --> 01:16:46,595
+Bazı problemleri var. Öklük uzaklığın problemini de şöyle göstereyim size.
+
+391
+01:16:47,415 --> 01:16:52,155
+Şimdi P1, P2 diye 2 metremiz var.
+
+392
+01:16:54,195 --> 01:16:56,515
+Şimdi normalde bir de P3, P4 yapalım.
+
+393
+01:16:58,895 --> 01:16:59,915
+P3, P4.
+
+394
+01:17:01,796 --> 01:17:07,815
+Şu böyle olsun. 1, 0, 0, 0, 0, 0, 0.
+
+395
+01:17:08,340 --> 01:17:24,600
+Kaç tane oldu? Bir tanesinin sayısını uzaltalım. 6 olsun. 0, 1, 1, yok. Şöyle olsun. 0, 0, 0, 0, 1. Bu ikisi bir vektör. Bir de şöyle bir vektör mesela.
+
+396
+01:17:33,363 --> 01:17:45,403
+0, 1, 1, 1, 1, 1. Şimdi öklü tuzaklığına baktığınız zaman, buranın öklü tuzaklığı ne çıkar? D1 diyeyim buna.
+
+397
+01:17:50,355 --> 01:18:02,975
+1'in karesi artı, 0'ın karesi artı, 0'ın karesi artı, artı, artı, en sonunda da 1'in karesi değil mi? Yani kök 2. Burası ne çıkar?
+
+398
+01:18:06,676 --> 01:18:24,436
+Birin karesi artı sıfırın karesi artı artı artı. En sonunda da birin karesi. Yani bu da kök çıkar. Uzunlukları aynı çıkıyor. Belki bunlar aynı olmalı mı sizce? Bu ikisinin uzaklığı sizce aynı mı? Şununla şunun benzerliği ile bunun benzerliği sizce aynı mı?
+
+399
+01:18:26,856 --> 01:18:29,136
+Eri Hocam, sağdaki bayağı daha benzer.
+
+400
+01:18:29,136 --> 01:18:31,496
+Aynen. Sağdaki çok benzer.
+
+401
+01:18:31,967 --> 01:18:51,148
+Soldaki hiç benzerliği, sıfır benzerlik, hiçbir örtüşen şey yok aslında. Ama bunun benzerliği oldukça yüksek. Sadece örtüşmeyen iki atribüt var, burada da iki atribüt var. Toplamda iki atribüt örtüşmüyor ama dört tane atribüt örtüşüyor. Bunun aslında benzerliği oldukça yüksek. Ama ök tüzaklığının vektörel formda problemi böyle.
+
+402
+01:18:51,796 --> 01:18:57,156
+Bu noktada şunu yapabilir miyiz? Daha anlamlı bir metrik kullanabilir miyiz?
+
+403
+01:18:57,536 --> 01:19:01,156
+Mesela şöyle göstereyim. Bu vektörleri göstermiş olsaydınız.
+
+404
+01:19:01,756 --> 01:19:05,275
+İşte bu P1, bu da P2 vektörer fonda.
+
+405
+01:19:06,996 --> 01:19:09,336
+Bunlar arasındaki açıyı acaba kullanabilir miyiz?
+
+406
+01:19:09,336 --> 01:19:19,536
+Şimdi bu açı değeri eğer yüksekse açı buna teta diyeyim.
+
+407
+01:19:19,764 --> 01:19:26,963
+TETA yüksekse, yüksek bir açı olursa bunların benzerliği çok mu olur az mı olur?
+
+408
+01:19:33,011 --> 01:19:35,051
+Benzerlik azalır açı arttıkça.
+
+409
+01:19:35,111 --> 01:19:48,371
+Azalır. Benzerlik açıyla birlikte ters orantılı. Açı çok artarsa o zaman benzerlik düşer. Peki açı 90 derece ise, dikse birbirine bu ikisi, bu vektörlerin benzerliği nedir sizce?
+
+410
+01:19:50,291 --> 01:19:51,191
+Sıfır mı?
+
+411
+01:19:52,191 --> 01:19:58,851
+Sıfır. Değil mi? Çünkü bunlar birbirine dik. Birbirine dikse, 90 derece ise benzerlik sıfır olması lazım.
+
+412
+01:20:00,000 --> 01:20:27,260
+Örtüşen nokta yok. Bunlar birbirine dik. Hiçbir noktada overlap etmiyor. Peki, açı sıfırsa, sıfırsa, ikisi birbirinin üstünde. Bu durumda benzerlik ne olması lazım? Bir. Bir olması lazım. Aynen. Çünkü ikisi de aynı nokta demek. Benzerlik %100. Aynı noktada demek ki bunların benzerliği %100.
+
+413
+01:20:27,764 --> 01:20:39,324
+İşte bu size bir şey hatırlattı mı? Mesela bu açının kosünüsü neye eşit? Kosünüs 90 neye eşit?
+
+414
+01:20:40,503 --> 01:20:40,904
+Sıfır.
+
+415
+01:20:40,904 --> 01:20:44,324
+Sıfır eşit. Kosünüs 0 neye eşit?
+
+416
+01:20:47,572 --> 01:20:57,572
+O da 1'e eşit. Aslında demek ki biz benzerlik yerine kosynüsü kullanabiliriz. Bu iki vektör arasındaki açlığın kosynüsünü bulsak...
+
+417
+01:20:58,515 --> 01:21:02,515
+Bunu benzerlik olarak, metrik olarak kullanabiliriz.
+
+418
+01:21:02,855 --> 01:21:04,835
+Ve gerçekten de kullanılabiliyor.
+
+419
+01:21:05,355 --> 01:21:07,376
+Şimdi nasıl işimize yarayacak?
+
+420
+01:21:07,475 --> 01:21:10,575
+Kosinus hesaplamak daha zor değil mi derseniz, değil.
+
+421
+01:21:10,715 --> 01:21:13,095
+Aslında kosinus hesaplamak oldukça pratik.
+
+422
+01:21:13,595 --> 01:21:18,775
+Yani kosinus 2 vektör diyelim bunları, P1, P2.
+
+423
+01:21:19,735 --> 01:21:25,595
+Bunlar arasındaki, 2 vektör arasındaki açının kosinusu şuna eşit.
+
+424
+01:21:26,100 --> 01:21:35,739
+P1 dot product P2 bölü P1'in birim uzunluğu çarpı P2'nin birim uzunluğu.
+
+425
+01:21:36,640 --> 01:21:38,239
+Peki bunları nasıl buluyoruz?
+
+426
+01:21:38,979 --> 01:21:49,600
+Oldukça pratik. Yani X1 çarpı X2 artı Y1 çarpı Y2 artı işte kaç boyut varsa.
+
+427
+01:21:52,212 --> 01:21:54,752
+Buna da xN çarpı yN diyelim.
+
+428
+01:21:56,772 --> 01:21:59,272
+Uzunluğu nasıl buluyoruz peki? Vektörün uzunluğu.
+
+429
+01:21:59,272 --> 01:22:07,592
+O da x1'in karesi artı y1'in karesi artı buna da işte zN diyelim.
+
+430
+01:22:10,311 --> 01:22:13,272
+İşte z1'in karesi.
+
+431
+01:22:14,332 --> 01:22:15,272
+Çarpı...
+
+432
+01:22:16,595 --> 01:22:24,935
+Burada x2'nin karesi artı y2'nin karesi artı artı artı z2'nin karesi.
+
+433
+01:22:26,615 --> 01:22:33,115
+Gördüğünüz gibi oldukça basit. Yani bir kez bu vektörel formda gösterdikten sonra bunları dot product'la hesap etmek çok kolay.
+
+434
+01:22:33,795 --> 01:22:37,475
+Uzunluklarını da hesap etmek çok kolay. Bunu hemen yapabiliriz.
+
+435
+01:22:37,555 --> 01:22:43,536
+Az önceki örneğe göre bakalım. Açılı şeylerimiz neydi? Şuna bakalım.
+
+436
+01:22:44,756 --> 01:22:59,855
+1, 5, 0, yani P1, P2, 1, 5 tane 0, şu da 0, 0, 0, 0, 1.
+
+437
+01:22:59,855 --> 01:23:02,676
+Şimdi bunun kosünüsünü bulalım.
+
+438
+01:23:07,572 --> 01:23:26,391
+dot product'ları ne çıkacak? Karşılıklı çarpımları 0. 1 çarpı 0 artı 0 çarpı 0 artı 0 çarpı 0. En sonunda da 0 çarpı 1. Bölü kare köklerini aldığımız zaman ne olacak?
+
+439
+01:23:27,220 --> 01:23:40,619
+Bu sıfırlardan sıfır gelecek. Yani birin karesi artı sıfırın karesi artı artı sıfırın karesi. Kare kök içinde. Yine sıfırın karesi artı sıfırın karesi artı birin karesi.
+
+440
+01:23:41,479 --> 01:23:50,780
+Bu da neye eşit olacak? Burası sıfır bölü kök. Sıfır bölü bir çarpı bir sıfır. Gördüğünüz gibi bunun benzerliği sıfır çıktı.
+
+441
+01:23:56,051 --> 01:23:57,672
+Bunlar nasıl vektörlerdi?
+
+442
+01:24:00,131 --> 01:24:01,811
+5 tane 1, sonra 0.
+
+443
+01:24:06,676 --> 01:24:08,156
+Bu da 0, 1.
+
+444
+01:24:10,036 --> 01:24:15,096
+Bunların aynısını hesap ettiğimiz zaman, kosinusunu seçelim.
+
+445
+01:24:15,756 --> 01:24:25,056
+1 çarpı 0 artı 1 çarpı 1 artı 1 çarpı 1 artı 0 çarpı 1.
+
+446
+01:24:25,636 --> 01:24:26,236
+Bölüm.
+
+447
+01:24:27,756 --> 01:24:30,596
+Kare kök içinde kaç tane 5? 1 var burada 5 tane.
+
+448
+01:24:30,596 --> 01:24:30,976
+Yani.
+
+449
+01:24:32,372 --> 01:24:37,772
+5 olacak. 1'in karesi artı, 2'nin karesi artı. Bu tarafta 5 tane var.
+
+450
+01:24:40,772 --> 01:24:44,672
+Plane eşit oldu. Burada kaç tane 1 vardı o örtüşen? 4 tane.
+
+451
+01:24:45,672 --> 01:24:54,012
+4 bölü, bunlar gitti, 5. Yani %80, 0.8. Benzerlik. Oldukça yüksek.
+
+452
+01:24:54,868 --> 01:25:12,968
+Aslında az önceki sezgimiz doğru çıktı değil mi? Bunların arasındaki benzerlik sıfır olması lazım, bunun arasındaki benzerliğin de yüksek olması lazım. Yani %80 benzerlik gibi. Öklüde baksaydık, öklü yanlış yönlendiriyordu bizi. Öklüde göre ne yapıyorduk? İkisi de kökü çıkıyordu. Ki bunlar doğru değil.
+
+453
+01:25:13,971 --> 01:25:29,391
+Yani vektoral formda kosinüs benzerliği oldukça mantıklı sonuçlar, benzerlik sonucu üretebiliyor. Bunu da belirtmiş olalım. Yani kosinüsü bir benzerlik metri olarak kullanabilirsiniz.
+
+454
+01:25:32,275 --> 01:25:39,815
+Buraya kadar bu vektörler, bunların benzerlikleri, korelasyonları, bunları konuştuk.
+
+455
+01:25:39,815 --> 01:25:46,595
+Şimdi biraz da veri temizlemeden konuşalım. Veri temizlemede neler yapıyoruz, hangi tür işlemler gerçekleşiyor.
+
+456
+01:25:47,456 --> 01:25:53,815
+Burada da bazı metodlar kullanabilirsiniz. Özellikle veri eğer...
+
+457
+01:25:54,163 --> 01:26:01,903
+Temizlikle ilgili bazı sıkıntılar taşıyorsa bunları populate etmek, düzeltmek faydalı sonuçlar üretecektir.
+
+458
+01:26:02,003 --> 01:26:08,423
+Mesela eğer boşluklarınız varsa bunları missing value'ları doldurmanız gerekir.
+
+459
+01:26:08,884 --> 01:26:10,703
+Boşluklarla modelleri sokamazsınız.
+
+460
+01:26:11,363 --> 01:26:14,443
+Veya bunları elimine de edebilirsiniz ihtiyaca göre.
+
+461
+01:26:14,443 --> 01:26:16,903
+Eğer o veri çok tutarsızsa.
+
+462
+01:26:17,619 --> 01:26:41,579
+Bu da yapılabilir. Outlier'ları tespit edip bunları ya smooth edersiniz ya işte normalde outlier çok çıkarılmaz eğer gerçek veriyse ama noise ya da gürültü ise, error ise bunlar veris etmeler çıkarılır. Outlier'ların da etkisini azaltmak için bazı smoothing yöntemleri falan kullanabilir. Yani etkisini azaltmak açısından bazı şeyler kullanabilir.
+
+463
+01:26:45,619 --> 01:26:48,420
+Bunları düzeltmek gerekir. Bunları biraz daha detaylı konuşalım.
+
+464
+01:26:50,355 --> 01:27:04,055
+Missing Value'da eksik bilgi, eksik veri çok sıklıkla karşılaşacak problemlerin başına geliyor. Yani çoğu kez bazı alanlardaki veriler ya eneğilerle ya da boşluklarla doldurulmuş olabilir.
+
+465
+01:27:04,796 --> 01:27:18,076
+Şimdi siz veri setinde boşluk varken bunları modellemeye uygulayamıyorsunuz. Ne yapmanız lazım? Bunları düzeltmeniz gerekiyor. Bunların da birçok sebebiyetle, birçok sebeple ortaya çıkması söz konusu.
+
+466
+01:27:18,355 --> 01:27:24,475
+Yani ya ekipman bozulmuştur, sensör yanlış veriler üretmiş de olabilir ya da hiç veri üretmemiş olabilir.
+
+467
+01:27:24,475 --> 01:27:28,255
+Ya da yanlış olduğu ortaya çıkmış silinmiş olabilir.
+
+468
+01:27:29,296 --> 01:27:35,243
+Onun yerine yanlış verileri bilmeyerek kullanıcılar...
+
+469
+01:27:35,315 --> 01:27:49,315
+Şey yapmış olabilir. Ya da mesela legacy bir yöntem, bir uygulamanız vardı. Eskiden bu kolonu toplamıyordunuz uygulamanızda. Şimdi yeni bir kolon eklediniz. Sadece belli bir tarihten sonra bu kolonun dolu. Öncesi de boş.
+
+470
+01:27:50,655 --> 01:27:59,136
+Gibi problemler ortaya çıkıyor. Bunlardan sonra nasıl bunları düzelteceğiz? Nasıl yöntemlerle bunlar düzeltilebilir?
+
+471
+01:28:00,083 --> 01:28:13,843
+Birkaç tane yaklaşım var. Birinci yaklaşım, belki de naif yaklaşım, bu kolonları boş geçmek. Eğer boşsa onları dataset'ten çıkarmak. Ama bu çok her zaman uygulanabilecek bir şey değil.
+
+472
+01:28:22,355 --> 01:28:39,955
+Çok düşük yüzdelerde gerçekleşiyorsa, düşünülebilecek bir şey. Ama diyelim ki veri setinin yüzde 40'ı, yüzde 30'u, yüzde 20'si veya yüzde 50'si boşlukları çeliyorsa, bunları silemezsiniz. Yani göz ardı edemezsiniz. Bu çok yüksek bir oran.
+
+473
+01:28:41,535 --> 01:28:49,475
+Şimdi bu silme olayı birinci yöntem olarak. Az sayıda şeyler için uygulanabilir. Diğer bir nokta şu olabilir.
+
+474
+01:28:50,195 --> 01:29:17,176
+Yine az sayısa ve bunlar biliniyorsa manuel yapılabilir ama bu çok mümkün değil. Gerçek dünyada manuel olarak düzeltmek pek mümkün değil. Bir şekilde otomatik olarak bunu yapmamız lazım. Peki otomatik olarak nasıl bunları düzelteceğiz? Birkaç seçenek olabilir. Ya böyle genel bir class olarak, unknown, innate, not applicable gibi bir değerle doldurabilirsiniz.
+
+475
+01:29:18,387 --> 01:29:29,188
+Bu da kolonun niteliğine göre aslında oransız olarak yüksekse yanlış çıkarımlar sağlayabilir. Bunu da göz ardı etmemek lazım.
+
+476
+01:29:29,907 --> 01:29:40,087
+Bazen attribute'ün mean değeri, yani ortalama değeri ile doldurulabiliyor. Ama burada da tabii ki oran çok yüksekse anlamsız olabiliyor.
+
+477
+01:29:40,467 --> 01:29:45,087
+Bunun yerine şu da yapılabiliyor. Yani diyelim ki...
+
+478
+01:29:45,087 --> 01:29:47,167
+Şimdi siz şuna baktınız.
+
+479
+01:29:49,867 --> 01:29:57,927
+X1, X2, X3 gibi gidiyor. En sonunda Y değerimiz var. Bir sınıflandırma olduğunu varsayalım.
+
+480
+01:30:02,003 --> 01:30:03,783
+Bunlar farklı farklı kolonlar.
+
+481
+01:30:04,663 --> 01:30:06,923
+Şimdi burada 3 tane sınıfımız var.
+
+482
+01:30:07,163 --> 01:30:08,283
+Mesela şu olsun.
+
+483
+01:30:12,043 --> 01:30:15,763
+Good, bad, ugly, nice.
+
+484
+01:30:15,923 --> 01:30:17,103
+İşte 3 tane kolonumuz.
+
+485
+01:30:17,163 --> 01:30:20,243
+Ya da A, B, C gibi sınıflarımız var.
+
+486
+01:30:22,612 --> 01:30:33,911
+Şurada diyelim ki bu x3'te bazı kolonlarda nal değerlerimiz var. Burada da nal var, şurada da nal var ama bunlar dolu. Burada bir sürü dollar var.
+
+487
+01:30:33,911 --> 01:30:42,911
+Şimdi bütün nal değerlerini bütün klasların ortalama y'ye göre...
+
+488
+01:30:43,859 --> 01:30:47,880
+ortalama değerle bölmek doğru olmayabilir.
+
+489
+01:30:48,100 --> 01:30:54,800
+Yani bütün yerlere göre x3'ün ortalaması, dolların ortalamasıyla buraları doldurmak çok doğru olmayabilir.
+
+490
+01:30:54,800 --> 01:31:03,659
+Belki işte ağlara göre min x3'ün min'i farklıdır.
+
+491
+01:31:11,091 --> 01:31:27,931
+A'lar için, A sınıfının ortalaması, eğer burası, diyelim ki sınıfı A, işte B sınıfındaysa, buranın ortalaması, bütün X3'ün ortalaması değil de, sınıfı B olanların ortalamasını uygulamak daha uygun olabilir.
+
+492
+01:31:28,071 --> 01:31:34,151
+Veya, işte hangi sınıfa aitse, oranın ortalaması ya da medyan değeriyle.
+
+493
+01:31:35,220 --> 01:31:46,340
+mean de yanlış olabilir. Median biraz daha uygun bu araççıdan. Mesela median değeriyle x3 ile burayı doldurabilirsiniz.
+
+494
+01:31:46,340 --> 01:32:00,340
+Bu nasıl fayda sağlar? Buradaki modellemenin daha ortalama değerlere yakınsamasını, yani bu x3'ün diğer atribütleri en azından domine etmesini veya yanlış yönlendirmesini...
+
+495
+01:32:01,108 --> 01:32:14,108
+düşürür, ihtimal olarak düşürür. Bu da diğer bir yaklaşım olabilir. Yani ortalama yapabilirsiniz ama ya da sınıflara göre ortalaması yapılabilir. Bunlardan daha iyi bir yöntem de şu.
+
+496
+01:32:18,420 --> 01:32:42,780
+Muhtemelen olacağı değeri tahmin etmek. Burada da mesela bir Bayesian ya da mesela Decision Tree gibi yöntemler uygulayarak öncelikle bir karar ağacı yapısı ya da bir Bayesian olasılık modeli geliştirilerek sonrasında bu boşluk olan kısmın tahmin edilmesi şeklinde yapılabilir.
+
+497
+01:32:44,895 --> 01:32:53,695
+Hangi potansiyel değerlere tekabül ettiğinin ihtimalinin yüksek olması değerlerini seçilerek yapılabilir.
+
+498
+01:32:54,255 --> 01:33:01,835
+Bir şekilde doldurmak daha uygun. Yani otomatik olarak dolduruyorsunuz ama teker teker işte diyelim ki, şöyle örnek vereyim.
+
+499
+01:33:06,100 --> 01:33:22,519
+İşte x1'i 5 olan, x2'si 20 olan, x4'ünün 32 olan değerler için x3'ünün olma değeri nedir?
+
+500
+01:33:26,515 --> 01:33:33,735
+İşte diyelim ki muhtemelen buranın 2.7 olma ihtimali yüksektir gibi bir değer çıkarabilirsiniz gibi.
+
+501
+01:33:34,275 --> 01:33:36,255
+Veya Bayes yöntemiyle de bunlar yapılabilir.
+
+502
+01:33:36,615 --> 01:33:39,875
+Ama bunlar şu an çok teknik detaylarını konuşmadık henüz.
+
+503
+01:33:40,155 --> 01:33:41,995
+Karar ağaçlarını falan da sonra konuşacağız.
+
+504
+01:33:42,835 --> 01:33:45,415
+Bayesian koşullu vasılıkları da konuşacağız.
+
+505
+01:33:45,515 --> 01:33:47,955
+O yüzden böyle bir şey mümkün.
+
+506
+01:33:48,627 --> 01:34:14,547
+diyebilin. Sonra daha yine bunları inceleyeceğiz. Hatta bu şeylerde de mesela uçaklar düşüyor. Diyelim ki işte bu bir ülke. Burası bir okyanus. Şöyle bir okyanus. Diyelim ki şurada başka bir ülke var. A uçak A şehrinden B şehrine gitmeye çalışıyor. Uçak A attı. Burada bir yerde
+
+507
+01:34:15,988 --> 01:34:32,328
+Sinyal kayboldu. Acaba bu uçak nereye düşmüştür? Yani işte en son sinyali buradan aldınız. Diyelim ki aldığınız nokta 9'u 15 geçiyordu. Sinyali aldınız. Sonra nerede aramalıyız? Yani bu uçağı nerede aramalıyız aslında?
+
+508
+01:34:32,884 --> 01:34:50,543
+Bu da aslında Bayes yöntemiyle bulunuyor. Acaba hangi rotada gitmiş olabilir? Şurada mı yoksa bu alanda mı, bu alanı küçültmenin olasılıksal yaklaşımları var? Yani burada aramak çok mantıklı değil. Şurada aramak da çok mantıklı değil. Bu alanı daraltmak için de böyle Bayes yöntemleri kullanılıyor olasılıksal olarak.
+
+509
+01:34:50,996 --> 01:35:02,756
+Patikaya göre. Bu veri doldurma işleminde de böyle Bayes yöntemleri, yani olasılıksal, koştu olasılıksal yöntemler kullanılabiliyor ya da DesiJintry'de kullanılabilir. Bunu da söyleyeyim.
+
+510
+01:35:04,716 --> 01:35:12,976
+Peki, noise durumunda ne yapıyoruz? Hani verimizde bilinen olmaması gereken değerler varsa bu durumda ne yapacağız?
+
+511
+01:35:12,976 --> 01:35:13,976
+Pardon.
+
+512
+01:35:20,180 --> 01:35:38,739
+Yine burada bahsettiğim gibi bu noise değerleri operatör hatası olabiliyor, veri taşırken, transform ederken problemler olabiliyor teknolojiyle ilgili ya da işte bir enstrüman hatası gibi problemlerle ortaya çıkabilir.
+
+513
+01:35:46,420 --> 01:35:49,680
+etkisini azaltabiliriz ya da bunları çıkartabiliriz.
+
+514
+01:35:51,180 --> 01:35:53,500
+Noise için birkaç yöntem kullanılıyor.
+
+515
+01:35:53,600 --> 01:35:54,760
+Noise'leri düzeltmek için.
+
+516
+01:35:56,359 --> 01:36:03,739
+Bining yöntemi, regression, clustering ya da böyle manuel human inspection gibi yöntemler kullanılabilir.
+
+517
+01:36:04,692 --> 01:36:09,412
+Yani, billing yöntemi nasıl çalışıyor? İsterseniz onu gösterelim kısaca.
+
+518
+01:36:09,952 --> 01:36:15,511
+Billing'i şuna göre yapabilirsiniz. Belli bir aralığa bölüp sayıları belli bir aralığa bölüyorsunuz.
+
+519
+01:36:16,051 --> 01:36:25,391
+Sonra noise olacak değeri o aralıktaki değerlere göre populate edebiliyorsunuz. İsterseniz şöyle örnek vereyim.
+
+520
+01:36:25,391 --> 01:36:28,391
+Şimdi bazı değerler...
+
+521
+01:36:30,996 --> 01:36:39,796
+Şimdi şurada bizim normal datamız olsun, sort-up datamız işte 4, 8, 9, 15, 10 gibi sayıları olan değerler.
+
+522
+01:36:42,036 --> 01:36:49,936
+Ya equal frekansa göre, aynı sayıda değerlere göre, eşit büyüklüğe göre yapabilirsiniz.
+
+523
+01:36:50,156 --> 01:36:56,636
+Ya da şeylerin mean'ine göre ya da bounderlerine göre smooth etmek söz konusu olabiliyor.
+
+524
+01:36:57,496 --> 01:37:00,696
+Şöyle örnek vereceğim. Şimdi her birisini dört tane kutuya bölüyorsunuz.
+
+525
+01:37:01,096 --> 01:37:08,336
+Birinci kutuda ilk dört sıralı değer geliyor. İkinci kutuda sonraki dört, üçüncü kutuda sonraki dört sayılar.
+
+526
+01:37:09,268 --> 01:37:12,527
+Bu bizim binlerimizin, her bir kutucuğun içindeki sayılar.
+
+527
+01:37:13,307 --> 01:37:16,167
+İşte bunlardan herhangi bir tanesi noise olabilir.
+
+528
+01:37:16,367 --> 01:37:18,367
+Yani noise olduğu zaman şöyle sayalım.
+
+529
+01:37:18,887 --> 01:37:20,427
+İşte negatif 120.
+
+530
+01:37:20,967 --> 01:37:23,607
+Buradaki şeylerden farklı bir değer gelecek.
+
+531
+01:37:23,607 --> 01:37:27,228
+Bunu nasıl biz sadeleştiririz ya da normalleştiririz?
+
+532
+01:37:28,372 --> 01:37:44,152
+Şöyle oluyor, ya bu küme ortalamalarına göre bütün hepsini sadeleştirebilirsiniz ve dolayısıyla burada teker teker her birisinin farkı ortadan çıkmış olacak ve bir noise değerini bu kümenin ortalamasına yaklaştırmış oluyorsunuz.
+
+533
+01:37:44,152 --> 01:37:46,812
+Her birisinin ortalamasına, her birisinin ortalamasına şeklinde.
+
+534
+01:37:48,576 --> 01:37:53,215
+Ya da bin boundarylerine göre yapılabilir.
+
+535
+01:37:53,576 --> 01:37:59,956
+Mesela şöyle, bu kutunun başlangıç noktası ve bitiş noktası gibi değerlerimiz var.
+
+536
+01:38:00,715 --> 01:38:05,055
+Bu aralarda bir noise varsa hangisine daha yakınsa oraya yakınlaştırıyoruz.
+
+537
+01:38:05,055 --> 01:38:11,395
+Mesela şimdi 4, 8, 9, 15 gibi diyor. 8, 4'e mi daha yakın, 15'e mi daha yakın?
+
+538
+01:38:12,948 --> 01:38:26,587
+4'e yakın, dolayısıyla bu 8'i 4'e eşitliyoruz. 9'u aynı şekilde yapıyorum. 9, 4'e mi yakın, 15'e mi yakın, 4'e yakın, dolayısıyla bu da 4 oluyor. 15, kendisine daha yakın, 15 kalıyor.
+
+539
+01:38:27,688 --> 01:38:38,868
+Burada da 21 mesela, bin boundaries. 21'de 25, 21 kendisine eşit, 25, 21 kendisine eşit, 24, 25'e yakın, 25'le işaretlendiriyor. Diğeri de bunun gibi.
+
+540
+01:38:40,115 --> 01:38:57,155
+Şimdi bu nasıl fayda sağlıyor? Şöyle, eğer bu aralarda bazı böyle olmamasını beklediğimiz noise değerlerimiz varsa, bunun kendi değeri değil de o kutunun genel neteliğine göre smooth etmiş ya da yaklaştırmış oluyoruz.
+
+541
+01:38:57,155 --> 01:39:06,115
+Onun etkisini azaltmış oluyoruz. Bu şekilde bazı otomatik yöntemler uygulanabilir. Bu data smoothing şeklinde de ifade edilir.
+
+542
+01:39:06,899 --> 01:39:16,899
+Diğer bir nokta, diğer bir yöntem ne olabilir? Bir regresyon doğru çözebiliriz. Mesela şimdi bizim orijinal verimiz şu olsun. Şöyle göstereyim.
+
+543
+01:39:20,627 --> 01:39:25,688
+Bizim orijinal verimiz şöyle bir dağılım sağlamış olsun.
+
+544
+01:39:26,148 --> 01:39:32,367
+Bunlar arasında bazı tabii ki farklı farklı sapmalar söz konusu.
+
+545
+01:39:33,127 --> 01:39:40,867
+Şimdi normalde bunu bir regresyonla çizerseniz, g eşittir, mx artı b gibi bir doğru çizecek olsaydınız,
+
+546
+01:39:41,608 --> 01:39:46,287
+şöyle bir en optimum şuradan geçen bir doğru gibi bir şey olurdu.
+
+547
+01:39:47,828 --> 01:40:03,448
+Benim bazı noise değerleri mesela şuradaysa, şurada bir x-N değerimiz şuraya tekabül ediyorsa, x-N veya şurada, işte x-I değeri, x-I, y-I değeri de buraya denk geliyor.
+
+548
+01:40:05,248 --> 01:40:13,292
+Normalde bu bizim beklemediğimiz bir değerse, beklemediğimiz bir noktaysa, bu bizim bir noise olarak...
+
+549
+01:40:13,363 --> 01:40:23,103
+tespit ettiğimiz bir noktaysa bunu nasıl normalleştirebiliriz, nasıl düzeltebiliriz? Şunu yapabiliriz.
+
+550
+01:40:23,363 --> 01:40:36,183
+Bu noktanın aslında eğer datanın kendi dağılımına yakın bir şey olmasını bekleseydik, bu noktanın yaklaşık olarak şurada bir şeye tekabül etmesini beklerdik.
+
+551
+01:40:37,011 --> 01:40:50,691
+Yani bu y-n-x-n, yani şu değerle şunu değiştirerek bunu replace edip şu noise değerlerini
+
+552
+01:40:51,283 --> 01:40:59,963
+Regresyondaki karşı noktasal karşılığıyla değiştirdiğimiz zaman aslında bu noise'ları da veri setimizden çıkarmış olabiliriz.
+
+553
+01:41:00,003 --> 01:41:02,943
+Önce bir data setin kendisinin regresyonu çizdir.
+
+554
+01:41:03,163 --> 01:41:15,563
+Sonrası da regresyona projekt ederek, izdüşüm yapılarak o noise değerlerinin kendi karşılık değerlerini hesabedebiliriz.
+
+555
+01:41:17,427 --> 01:41:27,387
+Yani bu aslında şöyle, şuradaki bir noktayla, ikisinin, y'sinin karşılığı burada bir şey olması lazım.
+
+556
+01:41:27,587 --> 01:41:32,667
+Yani y'n'priması burada bir değer olması gerekirken şurada çıkmış gibi.
+
+557
+01:41:33,667 --> 01:41:38,047
+Bu şekilde de normalleştirilebilir bu noise etkileri.
+
+558
+01:41:41,747 --> 01:41:46,387
+Diğer bir nokta da kümeleme yaparak aslında noizeleri tespit edebilirsiniz.
+
+559
+01:41:46,627 --> 01:41:59,667
+Yani normalde sizin veriniz böyle genel dağılımları bu şekilde kümeleyebildiğiniz zaman işte 3-4 kaç tane küme ise verilen buralarda bir şekilde çıkması gerekirken, böyle bir şekilde çıkması gerekirken,
+
+560
+01:42:00,147 --> 01:42:03,907
+buralar potansiyel olarak noiz olma ihtimali yüksek noktalar.
+
+561
+01:42:03,907 --> 01:42:09,747
+Her zaman noiz diyemeyiz, buna ayrık değer de olabilir ama noiz olma ihtimali...
+
+562
+01:42:09,747 --> 01:42:14,027
+yüksek olan noktalar diye bakacak olsak bunlar çıkardı, bunlar çıkmazdı.
+
+563
+01:42:15,847 --> 01:42:23,547
+Önce kümeleme yapıp sonra bunlar için de ayrı uç değerlerin tespiti yapılarak da noise'lar tespit edilebilir.
+
+564
+01:42:27,028 --> 01:42:28,807
+Buraya kadar soru soran var mı?
+
+565
+01:42:35,507 --> 01:42:36,807
+Hocam, bir şey sorabilir miyim?
+
+566
+01:42:36,887 --> 01:42:37,108
+Tabii.
+
+567
+01:42:38,048 --> 01:42:44,568
+Clustering yaptığımız zaman ayrık değerler sonuç olarak bir kümeye dahil olmuyor mu? Onları görsel olarak mı analiz etmemiz gerekiyor?
+
+568
+01:42:44,568 --> 01:42:53,988
+Veya sonuç olarak her biri bir merkez belirleniyor ve o merkezin belirlenmesine de etki ediyor her biri. Ona göre bir merkez belirleniyor. Bunlar ayrık olduğunu orada nasıl tespit ediyoruz?
+
+569
+01:42:55,268 --> 01:43:00,608
+Aslında orada küme sayısıyla tabii ki bunlar yapılabilir. Yani şöyle.
+
+570
+01:43:01,104 --> 01:43:05,224
+Bizim veri setimiz, şöyle göstereyim.
+
+571
+01:43:09,939 --> 01:43:15,939
+Diyelim ki k sayımızı 5 dedik. Bizim orijinal veri setimiz de böyle dağılmış olsun.
+
+572
+01:43:16,460 --> 01:43:17,379
+Şu an ekran paylaşmış.
+
+573
+01:43:18,000 --> 01:43:19,119
+Gelmiyor mu? Pardon.
+
+574
+01:43:21,319 --> 01:43:22,420
+Neden gitti o?
+
+575
+01:43:26,452 --> 01:43:27,532
+Şimdi geldi sanırım.
+
+576
+01:43:29,431 --> 01:43:31,811
+Şimdi k sayısını 5 seçtiniz.
+
+577
+01:43:38,579 --> 01:43:49,279
+Şimdi kümeleme yaparsanız aslında bunlar bir küme gibi çıkacak. Şu bir küme çıkacak, şu bir küme çıkacak, bu bir küme çıkacak, bu da bir küme çıkacak.
+
+578
+01:43:51,219 --> 01:43:59,779
+Bu da diğerlerine benzemiyor. Aslında buradaki elemanın kendisi noise olma ihtimali çok yüksek.
+
+579
+01:44:00,307 --> 01:44:04,188
+Kümede az eleman varsa onun olguları düşünmemiz gerekiyor.
+
+580
+01:44:04,188 --> 01:44:05,427
+Aynen öyle düşünüyoruz.
+
+581
+01:44:05,948 --> 01:44:11,688
+Yani o kümeler içinde, bu iki tane de olabilirdi. Belki bir tanesi de burada çıkacaktı.
+
+582
+01:44:12,867 --> 01:44:17,028
+Veya bir tane şurada da çıkabilirdi, üç olabilirdi, beş gibi düşünülebilirsiniz.
+
+583
+01:44:17,568 --> 01:44:19,967
+Şu üç tane olsun. Normal bunlar bir sürü eleman.
+
+584
+01:44:20,707 --> 01:44:27,587
+Bu üçü böyle garip çıkmış. Veya işte k değeri altı demiş olsaydık, şu da olabilirdi.
+
+585
+01:44:30,612 --> 01:44:35,752
+Şurada bir tane, k-değeri 6, şurada da bir tane nokta olsaydı bu da küme olacaktı.
+
+586
+01:44:36,932 --> 01:44:38,612
+Aslında bu ikisi potansiyel olarak noise.
+
+587
+01:44:39,072 --> 01:44:44,532
+Yani eleman sayısı çok azsa diğerlerine oranla bunları noise olma ihtimali yüksek gibi düşünebiliriz.
+
+588
+01:44:45,452 --> 01:44:46,152
+Teşekkür ederim.
+
+589
+01:44:46,572 --> 01:44:47,312
+Ben teşekkür ederim.
+
+590
+01:44:49,452 --> 01:44:52,231
+Şimdi burada, evet.
+
+591
+01:44:53,932 --> 01:44:57,312
+Diğer bir nokta da veri transformasyonu.
+
+592
+01:44:57,876 --> 01:45:11,876
+İsterseniz bunu bitirebiliriz ders biraz şey yaparak ya da arada verebiliriz. Nasıl tercih edersiniz? Devam edip bitirelim mi? Bir 15-20 dakika sürer muhtemelen. Yoksa ara mı verelim?
+
+593
+01:45:16,083 --> 01:45:18,104
+Bence bitirmek daha iyi hocam ama.
+
+594
+01:45:18,583 --> 01:45:22,963
+Tamam. Aksini isteyen arkadaş var mı? Ara verelim diyenler var mı?
+
+595
+01:45:26,931 --> 01:45:37,251
+Devam edelim. Bence de o zaman genel tercih de o yönde. Ara vermeyelim. Bitirip biraz sizi erken bırakmış oluruz.
+
+596
+01:45:38,131 --> 01:46:03,631
+Şimdi diğer bir nokta da şu. Neye geldik? Data integration ve data transformasyonu. Data integration şu demek oluyor. Genellikle veri analizi yaptığımız zaman veri noktalarımız nereden oluşuyor? Çok sayıda kaynaktan veri çekebiliriz. Bu veri kaynakları, farklı farklı uygulamalardan gelen veriler bir data warehouse üzerinde birleştirilerek sonrasında veri analizi yapıyorsunuz.
+
+597
+01:46:06,131 --> 01:46:13,451
+Demek ki bu duplication, yani veri tekrarı ortaya çıkarabilir. Bu hem kolon bazlı olabiliyor.
+
+598
+01:46:13,671 --> 01:46:16,911
+Yani metriklerden dolayı işte diyelim ki bir veri tabanında.
+
+599
+01:46:17,811 --> 01:46:35,631
+boy oranı metre olarak diğer tarafta santimetre, diğer tarafta feet veya başka bir birimle toplanmış olabilir. Siz bunların farklı farklı olduğunu fark etmeyebilirsiniz. Toplarken sıkıntılar çıkabiliyor ya da farklı değer olarak.
+
+600
+01:46:36,020 --> 01:46:39,040
+iki defa veri setinde geçebilir.
+
+601
+01:46:40,240 --> 01:46:48,300
+Onun dışında bazı veri setinde mesela diyelim ki aslında data noktaları, role'lar duplikit olabilir.
+
+602
+01:46:49,108 --> 01:47:02,047
+Mesela bir tarafta William Clinton geçiyor, diğer tarafta Bill Clinton diye geçiyor. Aslında bu ikisi aynı kişi ve aynı obje ama farklı bir role olarak, farklı bir satır olarak bulunabilir.
+
+603
+01:47:02,347 --> 01:47:11,827
+Ya da bir veritabanında cast id diye geçiyordur kolon, diğer tarafta cast dash, pound işaretiyle geçiyordur. Bunlar aslında aynı şey.
+
+604
+01:47:12,180 --> 01:47:29,340
+Veri entegre ederken bunları çözmek lazım. Bazen böyle örtüşen problemler oluyor. Kolon bazıysa bunları nasıl test edebilirsiniz? İki kolon farklı isimlendirilmiş ama bunlar aynıysa mesela nasıl test edersiniz otomatik olarak?
+
+605
+01:47:34,579 --> 01:47:36,020
+Metrikleri de farklı olabilir.
+
+606
+01:47:40,275 --> 01:47:45,595
+Korrelasyon çok, pozitif bir korrelasyon varsa, hiç şaşmıyorsa mesela olabilir belki.
+
+607
+01:47:46,296 --> 01:47:55,395
+Aynen öyle. Yani çok basit bir şekilde bunu görebilirsiniz. Ya bir scatter plot yaparsınız, veri tam olarak örtüşüyordur, görsel olarak tehdit edebilirsiniz.
+
+608
+01:47:55,515 --> 01:48:04,275
+Ya da korrelasyonuna bakarsınız. Çok basit bir şekilde. Korrelasyonun neredeyse aynıysa, yani metrikleri birisi fit ya da birisi metre ise...
+
+609
+01:48:04,560 --> 01:48:29,980
+Sizce korrelasyon değişecek mi? Değişmeyecek. Korrelasyon, metrik, bağımlı bir şey değil. Dolayısıyla aynı veri ise bu, otomatik olarak korrelasyonu bir ya da bire çok yakın olacak. Dolayısıyla bunları da çözebilirsiniz. Yani veri tekrar, doplikasyonu korrelasyonla ve scatter plotlara, yani görselleştirme yaparak tespit etmek mümkün. Bunları bu şekilde çıkarabilirsiniz. Kolon bazda.
+
+610
+01:48:30,387 --> 01:48:45,948
+Rol bazlı da belki şey yapılabilir, rolların kendisi arasındaki benzerliklere bakılarak vektörel benzerlikler incelenerek birebir aynı ise bütün attributeleri.
+
+611
+01:48:47,412 --> 01:49:05,712
+Yanlışlıkla duplikit olarak girilmiş olabilir. Bunun dışında metinsel benzerlikler işin içine giriyorsa, name, entity, recognition gibi bazı yöntemler var, algoritmalar. Bunları deneyerek isimsel benzerlikler oluşuyor mu gibi şeyler de ölçülebilir.
+
+612
+01:49:05,712 --> 01:49:15,412
+Ama çoğu kez bunlar kolon bazlı benzerliklerden ortaya çıkıyor. Bunlar birçok kaynaktan çekerken kolon...
+
+613
+01:49:15,412 --> 01:49:24,112
+Bunlar farklı isimlendirerek duplication oluyor. Bunları da yine bahsettiğimiz gibi attribute'leri, correlation'lara bakarak ya da görsellerine bakarak çözebiliriz.
+
+614
+01:49:26,252 --> 01:49:30,532
+Bunun yanında bir de veri transformasyonu da önemli. Veriyi dönüştürmek da önemli.
+
+615
+01:49:31,892 --> 01:49:42,792
+Çünkü günümüzde konuştuğumuz veri madenciliği ya da makine öğrenimi modelleri ne derseniz deyin, temel olarak aslında bunlar bir matematiksel fonksiyon.
+
+616
+01:49:43,572 --> 01:49:55,771
+Matematiksel fonksiyon oldukları için veri noktaları arasında ölçek farkı olunca bunlar fonksiyonun çıktılarını yanıltıcı etkiler çıkarabilir.
+
+617
+01:49:55,952 --> 01:49:59,952
+Yani şöyle bir örnekle bunu göstereyim.
+
+618
+01:50:02,532 --> 01:50:11,092
+İşte diyelim ki şurada x1, x2, x3 gibi parametrelerimiz var.
+
+619
+01:50:16,627 --> 01:50:35,728
+Diyelim ki bu işte maaş, yaş, cinsiyet, en sonundaki de maaş olsun. Şu işte yaşı 19, bunun yaşı 20, bunun yaşı 40, evliyse 1, değilse 0, işte bekar gibi kodlayalım, 1-1-0 gibi şeyler.
+
+620
+01:50:36,188 --> 01:50:41,728
+Maaşlar da işte bu işte 5000 TL alıyor, bu 3000 TL alsın.
+
+621
+01:50:42,644 --> 01:50:44,684
+Bu da 50.000 TL alıyor.
+
+622
+01:50:47,564 --> 01:50:52,444
+Şimdi bu nesneler arasında benzerliğini hesap ettiğinizi varsayalım.
+
+623
+01:50:52,963 --> 01:50:56,564
+En basiti benzerliği öklüt uzaklığından hesap ediyorsunuz.
+
+624
+01:50:59,364 --> 01:51:06,604
+Sizce şunun buna uzaklığıyla, bunun bunun uzaklığını hesap ederken nasıl bir benzerlik olayı bulacaksınız?
+
+625
+01:51:08,583 --> 01:51:10,163
+Bizim yanıltıcı bir şey çıkabilir mi?
+
+626
+01:51:12,115 --> 01:51:23,235
+Ne yapıyoruz? x1-x2'nin karesi artı y1-y2'nin karesi gibi gidiyor değil mi benzer? Ökürt uzaklığında kullandığımızı varsayalım.
+
+627
+01:51:24,055 --> 01:51:38,416
+Bunun bunun farkı ne? 19-20'nin karesi artı 1-0'ın karesi gibi gidiyor. Artı 5000-3000'in karesi.
+
+628
+01:51:40,916 --> 01:51:50,735
+Bu birinci benzerlik, uzaklığı bulduk. Benzerliği oluşturacağız bir bölge şeklinde. Bir de diğerine bakalım. D2 diyelim buna. Şununla şunun.
+
+629
+01:51:52,775 --> 01:52:06,515
+19-20'nin karesi, yok pardon, 41'in karesi, artı işte 1-2'nin karesi, artı artı gidiyor. 5000-50.000'in karesi.
+
+630
+01:52:09,971 --> 01:52:13,191
+Bu benzer uzaklıkla arasındaki fark nasıl çıkacak?
+
+631
+01:52:14,671 --> 01:52:17,691
+Hocam maaş domine edecek aslında bu mesafe.
+
+632
+01:52:18,071 --> 01:52:21,971
+Aynen öyle. Maaş domine edecek değil mi? Yani buradaki diğer feature'ların...
+
+633
+01:52:22,676 --> 01:52:38,916
+Hiçbir etkisi yok. Yani bu ikisinin farkı 45.000. 45.000'in bir de karesini aldığınız zaman devasa bir sayı. Yani buradaki farklara bakar mısınız? 14, 0, 1. Bunların karesini alsanız nasıl etkilebilir ki? Hiçbir şekilde etkilemeyecek. Yani bu kolon domin edecek.
+
+634
+01:52:41,096 --> 01:52:47,976
+Gerçekten bunun ağırlık etkisi böyle olamaz. Çünkü öylesi sadece buna göre bakarak tahmin ederiz.
+
+635
+01:52:48,404 --> 01:53:03,904
+Bu da bizim yanıltıcı bir etki doğuracaktır. Yani aslında bir değişkeni sırf ölçekten kaynaklı olarak dominasyon sağlıyorsunuz. Bu da yanıltıcı bir etki doğuracaktır. Bu bütün makine öğrenim modelleri için risk.
+
+636
+01:53:04,564 --> 01:53:15,004
+Yapay sinir ağları olsun, SVM olsun, K-NN olsun fark etmiyor. Yani bütün hepsinde bir problem ortaya çıkarabiliyor.
+
+637
+01:53:15,364 --> 01:53:22,064
+İşte bunu çözmek için aslında başlangıçta, veri ön işleme aşamasında veri dönüşümü yapıyoruz.
+
+638
+01:53:22,064 --> 01:53:28,744
+Buna normalizasyon ya da standartizasyon da denir.
+
+639
+01:53:29,087 --> 01:53:54,207
+Standartizasyon da denir. Bu süreci yaptığımız zaman ne yapıyoruz aslında? Bütün hepsini aynı ölçeğe döküyorum. Yani sıfırla yaş, işte 150 arasındaysa bunu da bir ölçeğe döküyorum. Sıfırla bir arasına. Maaşla sıfırla ne olsun? İşte bir milyon arasında maaş olsun. En fazla alan. Bunu da aynı arada iz düşümü yapıyoruz.
+
+640
+01:53:56,404 --> 01:54:09,463
+Dolayısıyla artık bu veriler her birisi 5000-10000 değil de bu 0.01 olsun, diğeri 0.005 olacak, diğeri 0.2 olacak gibi.
+
+641
+01:54:10,204 --> 01:54:19,124
+Aynı aralıkta, aynı ölçekte bahsettiğimiz için artık her değişkenin katkısı kendi ölçeğine göre benzer olacak. Yani bir tanesi domin etmeyecek.
+
+642
+01:54:20,275 --> 01:54:26,935
+Bu da aslında veri normalizasyonun ne kadar önemli bir şey olduğunu gösteriyor. Modelleri yanlış yönlendirir.
+
+643
+01:54:27,475 --> 01:54:32,755
+Mesela min-max normalizasyonu nasıl yapılır? Bu aralığa nasıl sıkıştırırız?
+
+644
+01:54:33,795 --> 01:54:41,036
+İlla 0 ile 1 arasında olmak zorunda değil, herhangi bir aralığında da olabilir. Yeterli koşul şu, aynı ölçekte olması.
+
+645
+01:54:42,163 --> 01:55:00,104
+Min-max normalizasyonu şu oluyor. Şimdi bizim şu anki ölçekteki değerimiz eksi, o ölçekteki minimum değerimiz bölü, maksimum değerimiz o ölçekte eksi, yani eski metrik diyelim, eksi eski metrikle minimum değer.
+
+646
+01:55:00,979 --> 01:55:24,619
+Çarpı, bu genel formül şeklinde ifade edebiliriz, genelleştirilmiş formül. Yeni ölçekteki maksimum değer eksi, yeni ölçekteki minimum değer, bir de artı var. Bunun olma sebebi de şu. Çünkü bu her zaman sıfırla başlamak zorunda değil. Bunu eklemezsek sıfırdan başlar. Bunu birden iki arasına da sıkıştırabilirsiniz. Beş ile yüz arasına da sıkıştırabilirsiniz. Size kalmışım.
+
+647
+01:55:25,492 --> 01:55:26,731
+Hocam bir şey sorabilir miyim?
+
+648
+01:55:26,831 --> 01:55:27,032
+Tabii.
+
+649
+01:55:27,572 --> 01:55:35,112
+Sıfırla bir arasında yapmakla sıfırla mesela bin arasında yapmak arasında bir fark var mı? Daha hassas olur mu veya sonuca bir etki eder mi?
+
+650
+01:55:36,851 --> 01:55:40,112
+Çok büyük bir etkisi olmaz. Yani o ölçeğin büyümüş olması...
+
+651
+01:55:40,851 --> 01:56:00,032
+Çok bir şey değiştirmez ama daha küçük aralıklara sıkıştırmak daha uygun. Çünkü bu defa büyük aralığa döktüğünüz zaman mesela küçük sayıları da çok büyütmüş de oluyor. Sonuç hesaplama açısından da kaydırma da yapabiliyor. Hassasiyetini de kaybedebilir.
+
+652
+01:56:00,627 --> 01:56:10,707
+Ama temel olarak büyük bir fark olmaz. Yani 1 ile 10 arasında yapmakla, 1 ile 50 arasında yapmak aslında yine ölçek tutarlı önemli.
+
+653
+01:56:12,467 --> 01:56:25,707
+Genel yaklaşım, ben teşekkür ederim. Genel yaklaşım 0 ile 1 arası ya da standartizasyon Z skoruna göre. Bu da negatif 4, pozitif 4 arasındaki bir değere tekabül ediyor gibi düşünebiliriz.
+
+654
+01:56:26,931 --> 01:56:40,471
+Daha küçük sayılarla ifade ediyoruz. Çok büyük sayılarla biraz, çünkü bunların değerlerinin bazıları düşük değer olacaktır. Bunları projektedip yükseltmiş oluyor. O açıdan daha küçüğe döndürmek genellikle daha tercih edilen yaklaşık.
+
+655
+01:56:42,323 --> 01:57:03,703
+Şimdi bir örnekle görelim. İşte normalde 73 bin kişi, 73 bin dolar kazanan bir kişi, yok pardon, diyelim ki maaşlar 12 bin ile 98 bin arasında. En fazla alan 98 binmiş, en az alan 12 binmiş. Ve bu aralığı 0 ile 1 arasında sıkıştıracağız. Normalde 73 bin alan kişi nereye gelecek bu ölçüye göre?
+
+656
+01:57:04,243 --> 01:57:13,943
+73.000-12.000 eski minimum, 98.000-12.000 de eski minimum oluyor.
+
+657
+01:57:14,292 --> 01:57:32,292
+Bundan farkı, normalde 0 ile 1 arasına böldüğümüz için 1-0, dolayısıyla 1 ile çarpmış gibi oluyor. Bir de minimum değerimiz 0 olduğu için bu aslında buranın çok bir etkisi kalmamış oluyor. Yani bunun minimumdan farkı, böyle toplamın minimumdan farkı gibi. Ama aslında bunlar da...
+
+658
+01:57:32,724 --> 01:57:46,923
+Başka bir ölçeye taşımış olsaydık önemli olacaktı. Bu da 0.709. Yani 73.000 yazmak yerine 0.709 yazmak bunu ölçek olarak sınırlandırılmış hale getirecek.
+
+659
+01:57:47,264 --> 01:57:56,084
+Diğer bir özellik de z-score normalizasyonu. Standartizasyon dediğimiz bu oluyor. Standartizasyon şu oluyor. Yine bir normal dağılım yapıyoruz.
+
+660
+01:58:01,235 --> 01:58:09,836
+Bu bizim sıfır noktamız ya da örneklememizin orta noktası standart sapması.
+
+661
+01:58:10,336 --> 01:58:16,655
+İşte bir standart sapma, sağa iki standart sapma, sola sağa gibi gidiyor.
+
+662
+01:58:16,755 --> 01:58:24,615
+Bu eksi bir standart sapma, eksi iki gibi gidiyor.
+
+663
+01:58:24,615 --> 01:58:25,956
+Eksi üç gibi gidiyor.
+
+664
+01:58:29,395 --> 01:58:54,055
+uzaklığı, orta noktaya uzaklığı kaç standart sapma ölçeğinde onu bulmuş oluyoruz. Yani Z-Skor dediğimiz şey aslında bizim standartizasyon noktamız bu oluyor. Z-Skor şu, her bir V noktasının ortalamadan çıkarıp standart sapmaya böldüğünüz zaman çıkan değer oluyor.
+
+665
+01:58:56,275 --> 01:59:02,195
+Yani negatif 4 ile pozitif 4 arasında bir değere tekabül ediyor.
+
+666
+01:59:02,355 --> 01:59:03,416
+Böyle yaklaşık olarak.
+
+667
+01:59:03,876 --> 01:59:06,996
+Ne kadar uzağa gidiyorsunuz, onları ölçmüş oluyoruz.
+
+668
+01:59:08,115 --> 01:59:14,795
+Bu değerde hesabını yapmak gerekirse, aynı şeye göre yapmış olsaydık, ortadan olmanızı hesap ediyoruz önce.
+
+669
+01:59:14,895 --> 01:59:17,496
+54, standart satmanız 16 binmiş.
+
+670
+01:59:17,939 --> 01:59:26,879
+73.000'in karşılığı 73.000-54.000 bölü 16.000. Bu da yaklaşık 1.188.000. Yani aslında bu ne oluyormuş?
+
+671
+01:59:29,679 --> 01:59:40,419
+Eğer 73.000 alsaydı bu kişi standart sapmadan 1.18 kadar uzaktaymış. Yani bir standart sapmanın hafif dışarısındaymış.
+
+672
+01:59:41,419 --> 01:59:42,659
+Bir düşünebiliriz.
+
+673
+01:59:43,444 --> 01:59:53,284
+Bu da negatif olabilir ama problem değil. Yine ölçek aynı. Aslında ölçek bu aralıkta bir değer. Haliyle yine bir normalizasyon işlemi yapmış oluyoruz.
+
+674
+01:59:55,804 --> 02:00:06,864
+Bunların ikisini de kullanabilirsiniz. Performans olarak büyük bir değişiklik görmezsiniz. O açıdan min, max ya da z-score yapabilirsiniz. Hiç problem değil.
+
+675
+02:00:09,747 --> 02:00:15,247
+Öncelikle dönüşümü yapıp sonrasında modelleme aşamasına geçmeniz gerekir.
+
+676
+02:00:18,387 --> 02:00:29,247
+Bu ikisi sadece yok. Bunun dışında başka decimal sayısına göre normalizasyon gibi şeyler de var ama en sıklıklı plan min-max ile z-score normalizasyon.
+
+677
+02:00:34,547 --> 02:00:43,768
+Bunun dışında bir de discretization'dan bahsedeceğim. Aslında discretization biraz da data reduction stratejileri var. Veriyi nasıl küçültebiliriz?
+
+678
+02:00:43,847 --> 02:00:48,367
+Feature selection. Bunu haftaya konuşacağız arkadaşlar. Bunu daha derinlemesini konuşacağımız için bugün.
+
+679
+02:00:48,768 --> 02:00:56,247
+Çok detaylı gitmeyeceğim. Genel olarak veri küçültme yöntemlerini özetlemek gerekirse farklı yaklaşımlar var.
+
+680
+02:00:56,347 --> 02:01:03,007
+Ya veriyi kübe aggregasyonu yaparsanız, dimensional reduction, burada feature selection dediğimiz şeyler oluyor.
+
+681
+02:01:03,547 --> 02:01:10,327
+Data compression, numerous reduction gibi yöntemler var. Bunları haftaya çok daha detaylı konuşacağız.
+
+682
+02:01:10,327 --> 02:01:16,768
+Ama data reduction'da yani feature selection'da veri ön işlemenin en önemli parçalarının başında geliyor.
+
+683
+02:01:16,768 --> 02:01:21,167
+Bunu biraz daha detaylı farklı yöntemleri konuşarak inceleyeceğiz.
+
+684
+02:01:22,307 --> 02:01:25,447
+Son olarak bir de şeyden bahsetmek istiyorum, discretization.
+
+685
+02:01:26,247 --> 02:01:37,707
+Data discretization aslında bir veriyi, belli kategorik veriyi, belli nümerik değerlerle ifade etme, sıkıştırma daha aralıklarla ifade etmek gibi.
+
+686
+02:01:37,707 --> 02:01:39,667
+Yani şöyle göstereyim.
+
+687
+02:01:42,127 --> 02:01:43,827
+Şimdi bir veri setimiz.
+
+688
+02:01:44,851 --> 02:01:48,271
+Mesela yaştan bahsediyoruz.
+
+689
+02:01:49,612 --> 02:01:50,051
+Yaş.
+
+690
+02:01:51,971 --> 02:01:58,811
+İşte 0, 1, 2, 3, 18, 29, 30 gibi gidiyor 65.
+
+691
+02:02:00,211 --> 02:02:04,351
+Bütün bu veriyi şu şekilde kategorileştirebiliriz.
+
+692
+02:02:04,351 --> 02:02:10,411
+Yani teker teker bir değerle tutmak yerine bir kategori haline dönüştürürüz.
+
+693
+02:02:13,332 --> 02:02:26,591
+İşte çocuk, genç, yaşlı gibi olsun, 3 tane olsun. Daha da arttırabiliriz ama 3 olsun.
+
+694
+02:02:26,591 --> 02:02:31,851
+İşte 0 ile 18 arası bir değeri.
+
+695
+02:02:32,652 --> 02:02:36,271
+Çocuk, işte 18.
+
+696
+02:02:39,636 --> 02:02:42,115
+55 arası genç olsun.
+
+697
+02:02:43,775 --> 02:02:46,540
+55 üstü de...
+
+698
+02:02:47,731 --> 02:03:10,112
+İşte olsun gibi kategori hale getirmiş olsaydık bu da discretization oluyor. Yani veriyi discret hale getirmiş oluyorduk. Bunun yanında bir de label encoding dediğimiz şey de söz konusu. Yani bunları aslında kategorik değerleri numerik olarak da ifade etmek söz konusu.
+
+699
+02:03:19,060 --> 02:03:23,859
+Genç, yaşlı diye kategorimiz var.
+
+700
+02:03:25,699 --> 02:03:27,640
+Datasette bunlar bu şekilde gözüküyor.
+
+701
+02:03:28,199 --> 02:03:31,579
+Bunları da şu şekilde yapılabilir.
+
+702
+02:03:31,720 --> 02:03:35,699
+0, 1, 2 gibi kodlama yapılabilir.
+
+703
+02:03:36,920 --> 02:03:37,859
+Bunlar...
+
+704
+02:03:40,212 --> 02:04:03,052
+Numerik bir değerle ifade etmek istedim. Çünkü genellikle istatistiksel modellerde, yani makine öğrenimi, veri madenciliği modellerinde kategorik değerler kullanamazsınız. Bunların numerik bir matematiksel fonksiyon olduğu için sayılara dönüştürmesi lazım. Kategorileri de kodlayarak böyle şey haline getirebiliriz.
+
+705
+02:04:03,923 --> 02:04:10,983
+nümerik indeks hale getirebiliriz. Bu bir yaklaşım. Bunun yanında bir de bunları feature olarak da eklemek mümkün.
+
+706
+02:04:10,983 --> 02:04:22,823
+Yani diyelim ki işte bu A feature'ıydı, işte yaş feature'ıydı. Yaş feature'ıydı. Bunu iki feature, üç feature olarak da gösterebiliriz.
+
+707
+02:04:22,903 --> 02:04:27,884
+Mesela bir çocuğu nasıl kodlarsınız? Sıfırla bir olarak binary encoding yapmış olsaydınız.
+
+708
+02:04:29,203 --> 02:04:38,963
+Kaç tane kolona ihtiyacımız vardı? Yaş yerine, işte diyelim ki C, çocuğu C olarak gösterelim, genci G, yaşlıyı da Y.
+
+709
+02:04:40,063 --> 02:04:45,063
+Yani eğer çocuksa bu 1, diğerleri 0 olacak değil mi bu kol için?
+
+710
+02:04:46,163 --> 02:04:51,923
+İşte genç ise 1, burası 0, burası 0, yaşlı ise da 0, 0, 1.
+
+711
+02:04:52,692 --> 02:04:59,971
+Bunu tabii ki 3 tane kolonla yapmamız mümkün ama aslında 3 kolona ihtiyacımız var mı binary coding yapmamış olsaydık.
+
+712
+02:05:07,155 --> 02:05:12,955
+Kategori sayısı eksi bir taneyle de yapabiliriz bu binary coding'i. Yani şunu silmiş olsaydım.
+
+713
+02:05:23,283 --> 02:05:32,903
+Bu da yaşlı olsun. Eğer çocuk olsaydı, çocuk olması durumunda ne olur? Bu 1, bu 0 değil mi?
+
+714
+02:05:34,384 --> 02:05:45,163
+Genç olma durumunda bu 0, bu 1. Yaşlı olma durumunda bu x de 0 ise bu da yaşlı durumu. Yani aslında iki tane kolona ihtiyacı var, kolon sayısı.
+
+715
+02:05:46,323 --> 02:05:53,783
+3 tane değişkeni göstermek için, 3 tane kategoriyi göstermek için binary coding yapıyorsam 2 tane değişkine ihtiyacım var.
+
+716
+02:05:54,283 --> 02:06:01,103
+Eğer 5 tane kategori olsaydı kaç tane değişkine ihtiyacımız olurdu?
+
+717
+02:06:08,307 --> 02:06:17,228
+O zaman da 4 tane ihtiyacımız olurdu. Yani n-1 tane değişken oluşturarak binary olarak 0-1 gibi kodlamak da mümkün.
+
+718
+02:06:17,228 --> 02:06:30,467
+Yani label encoding dediğimiz aşama da aslında ön işlemin bir parçası. Kategorik değerleri nümerik indekslere dönüştürme işlemi de yapılır.
+
+719
+02:06:30,547 --> 02:06:32,247
+Diskretleştirme bu oluyor.
+
+720
+02:06:32,948 --> 02:06:47,428
+Sayıları birleştirerek kategori haline getirmek, label encoding de kategorik değerleri indeks olarak matematiksel çarpımlarda kullanabilmek için sayısal hale dönüştürmek dediğimiz aşama oluyor.
+
+721
+02:06:50,963 --> 02:06:55,563
+Benim bugün için söyleyeceklerim bu kadar. Sizin var mı sorularınız?
+
+722
+02:06:56,764 --> 02:06:59,203
+Eklemek istediğiniz, merak ettiğiniz bir nokta.
+
+723
+02:07:00,543 --> 02:07:05,543
+Hocam ben şeyi soracaktım. Yukarıda şeyi konuştuk ya, standardization.
+
+724
+02:07:05,863 --> 02:07:07,063
+Z-4 normalization.
+
+725
+02:07:07,443 --> 02:07:07,724
+Aynen.
+
+726
+02:07:08,224 --> 02:07:30,844
+Aslında sorun şu, şimdi min-max normalization ile z-score normalization arasında, yani böyle içgüdüsel bir fark var mı? Hani mesela atıyorum, min-max yaparsak şunu kaybederiz ama z-score da şu kalır gibi. Çünkü teknik olarak ne yaptığını anlıyorum. Hani mini sıfırı çekiyor, sanat devresyonu bir yapıyor da. Ama içgüdüsel olarak ne yapıyor aslında?
+
+727
+02:07:36,467 --> 02:07:43,447
+Aslında her bir noktayı, mesela bu normalizasyon olarak düşünelim.
+
+728
+02:07:44,787 --> 02:07:47,107
+Şimdi yaş kolonu var.
+
+729
+02:07:52,148 --> 02:08:11,368
+Bu 19, 28, 32, 50 gibi değerler var. Bu tabii çok sayıda olabilir. Şimdi bunu aslında şuna dönüştürüyor. Bu bir normal dağılım olduğunu varsayalım. Orta noktası 42 olsun.
+
+730
+02:08:13,007 --> 02:08:18,347
+Orta noktası 42. Yani aslında x bar değerimiz 42'ye tekabül ediyor.
+
+731
+02:08:21,171 --> 02:08:22,371
+Şuradaki bir nokta.
+
+732
+02:08:24,471 --> 02:08:26,971
+Standart satmamız da 8 olsun.
+
+733
+02:08:27,971 --> 02:08:28,891
+Şu olmuş oluyor.
+
+734
+02:08:29,211 --> 02:08:33,992
+X, şu değeri aslında 50'ye tekabül ediyor.
+
+735
+02:08:35,831 --> 02:08:38,711
+Çünkü 42 artı 8, 50.
+
+736
+02:08:39,211 --> 02:08:42,112
+İşte 2 standart satma gidersek burası 58.
+
+737
+02:08:43,391 --> 02:08:46,032
+3 standart satma gidersek 60.
+
+738
+02:08:48,148 --> 02:09:02,728
+66 oluyor. Sola doğru gittiğimiz zaman 42, 34, bir tane daha gidersek 20, kaç oluyor? 26, bir tane daha gidersek 18 gibi oluyor.
+
+739
+02:09:03,923 --> 02:09:16,983
+Bunun kendisinin bir normal dağılım olduğunu varsayıyoruz. Standart satma ve ortalamasını hesap ediyoruz. Bunun ortalamasını bulabiliriz. Standart satmasını var, yansına göre buluyoruz.
+
+740
+02:09:16,983 --> 02:09:30,863
+Şimdi artık bu değerleri 18-26 gibi göstermek yerine 34'ün karşılığı aslında bizde neye tekabül ediyor? Eksi 1'e tekabül ediyor.
+
+741
+02:09:31,796 --> 02:09:52,116
+26'nın karşılığı eksi 2'ye tekabül ediyor. İşte bu da eksi 3'e tekabül ediyor. Bunu ölçek olarak düşürmüş olduk. Standartizasyon bunu yapıyor. Yani aslında Z-Score dediğimiz şey bizim ortalamadan kaç standart sapma. Sayısal olarak bu bizim yaşın orijinal bir versiyonu. Bunlar da Z-Score'ları.
+
+742
+02:09:55,252 --> 02:10:05,292
+Haliyle aslında şeye benziyor. Genel yapı olarak baktığınız zaman bir min-max normalizasyonuna benziyor.
+
+743
+02:10:06,112 --> 02:10:19,051
+Şöyle bir problem olabilir. Verimiz normal dağılım göstermiyorsa, burada normal dağılım göstermiyorsa, buradaki standart satma ve şeyler çok doğru bir dönüşüm yapmayabilir.
+
+744
+02:10:19,311 --> 02:10:21,992
+Ama bu çok ciddi bir problem olur mu derseniz, olmaz aslında.
+
+745
+02:10:23,347 --> 02:10:38,547
+Linear bir dönüşüm yapmak için min-max kullanmak gerekiyor. Bu linear bir dönüşüm. Sadece ne yapıyor? Ölçeğin min-max'ına oranlıyor. İşte bu aradaki farkın max-min'e oranlıyor.
+
+746
+02:10:39,347 --> 02:10:45,487
+Bu sayı çoğalırsa, normal nümerik değerlerde sayı artarsa aslında normal dağılma çok yakın sar.
+
+747
+02:10:45,987 --> 02:10:49,667
+Ama buradaki row sayımız azsa normal dağılım olmayabilir.
+
+748
+02:10:49,667 --> 02:10:52,247
+Yani böyle küçük müanslar çıkabiliyor bilgisayarasında.
+
+749
+02:10:53,307 --> 02:10:55,688
+Toplamda sonucu çok değiştirecek şeyler çıkarmaz ama.
+
+750
+02:10:59,188 --> 02:11:07,307
+Anladım hocam. Yani aslında biraz da belki deneme yanılmayla mı hangi normalizasyonu seçeceğimize karar vereceğiz o zaman?
+
+751
+02:11:07,728 --> 02:11:11,627
+Evet, yani onları deneyebilirsiniz. Performans olarak fark ediyor mu görebilirsiniz.
+
+752
+02:11:11,788 --> 02:11:18,368
+Ama çoğu kez bir şey fark etmez. Yani çok yakın değerler çıkar. Küçük farklar, nüanslar çıkabilir tabii ki.
+
+753
+02:11:18,368 --> 02:11:26,248
+Bu çok normal. Çünkü dönüşüm yapıyorsunuz aslında. Dönüşümden kaynaklanan veri de bir mitebik farklı ortaya çıkabilir.
+
+754
+02:11:27,060 --> 02:11:42,480
+Standartizasyon özellikle çok sayıda rol varsa normal dağılıma yakın ser. Dolayısıyla lineer dönüşümler de çok büyük bir fark etmez. Ama küçük nüanslar olabilir. Bu çok kabul edilebilir bir düzeydeki bir şey.
+
+755
+02:11:43,940 --> 02:11:45,319
+Anladın hocam. Teşekkür ederim.
+
+756
+02:11:45,720 --> 02:11:49,539
+Ben teşekkür ederim. Başka sorusu olan var mı arkadaşlar?
+
+757
+02:11:52,787 --> 02:11:54,787
+Teşekkür ederiz hocam. İyi günler.
+
+758
+02:11:54,907 --> 02:12:20,787
+Ben teşekkür ederim. Çok sağ olun. Sanırım başka sorusu olan yok. O zaman isterseniz bitirelim. Sizinle daha fazla zamanı almamış olurum. Haftaya görüşemiyoruz arkadaşlar. Benim haftaya bir etkinlik nedeniyle şey dışında olmam lazım. Ama bir sonraki hafta 100'e dersi devam edeceğiz. Sonrasında da yine o boş...
+
+759
+02:12:20,787 --> 02:12:48,728
+Boşluktaki kısmı doldururuz. Ondan sonra konuştuk semestrin gidişatına göre. Şimdiden kendinize iyi bakın. Haftaya online değil [öğrenci]. Haftaya iptal edeceğim. Çünkü aynı saatte başka bir yerde etkinliğim var. Katılmam gereken. Ama hani haftaya olan dersi daha sonra irene haftalarda telafi haftası koyacağım. Onu online veya işte yüzde bir şekilde planlarız. Ama şimdilik iptal diye düşünün haftaya dersinizi.
+
+760
+02:12:48,787 --> 02:12:53,787
+Görüşmek üzere, iyi hafta sonları, hoşçakalın. İyi akşamlar.
