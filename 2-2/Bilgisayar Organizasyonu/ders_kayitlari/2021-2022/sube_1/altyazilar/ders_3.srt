@@ -1,0 +1,2583 @@
+1
+00:01:53,171 --> 00:02:00,512
+Arkadaşlar, merhabalar. Bu hafta, geçen hafta kaldığımız yerden, Merkezi İşlem Birimi tasarımından devam ediyor olacağız.
+
+2
+00:02:01,991 --> 00:02:05,671
+Geçen hafta hatırlayacak olursanız, şöyle ekran paylaşımıyla açayım.
+
+3
+00:02:13,012 --> 00:02:37,891
+Geçen hafta hatırlayacak olursanız şöyle bir genel resmimiz vardı. Bu genel resim içerisindeki blokları incelemiştik. Burada mavi ile işaretli register file dediğimiz kısım aslında sistemin senkron ardışlı devre kısımını yani burada durum değişimi kurup şartının kenar tetiklemesiyle gerçekleşti.
+
+4
+00:02:41,012 --> 00:02:53,891
+Çeşitli kombinasyonel devre bloklarımız vardı. Çeşitli MOOCs'lar kullanıyorduk. Farklı kaynaklardan gelen girişleri ilgili uçlara yönlendirebilmek amacıyla.
+
+5
+00:02:55,072 --> 00:03:04,352
+Burada mesela register file dediğimiz şey içerisinde örneğin 4 tane veya 8 tane artık kaç tane ise yaz maç barındıran bir yapı.
+
+6
+00:03:08,692 --> 00:03:13,012
+Şunu bir blok diagram gibi düşünelim, black box gibi düşünelim geçen haftanın konusu yine.
+
+7
+00:03:14,112 --> 00:03:22,412
+Buradan istediğim bir yazmacı bunun A çıkış kanalına ve istediğim bir yazmacı yine B çıkış kanalına aktarabilmem gerekiyordu.
+
+8
+00:03:22,731 --> 00:03:30,731
+Ve daha sonrasındaki kombinasyonel blokun nihai çıkışını da herhangi bir yazmacı aktarabilmeliydim.
+
+9
+00:03:33,780 --> 00:03:44,620
+İki yüzleri M adet yazmaç kullanıyorsak, bu içerideki yazmaçları A çıkış kanalına aktarabilmek için A adres seçimi adına M adet iki ihtiyaçları vardı.
+
+10
+00:03:45,379 --> 00:03:54,000
+İçerideki iki yüzleri M adet yazmaçtan herhangi birisini B çıkış kanalına aktarabilmek için M bitlik.
+
+11
+00:03:54,675 --> 00:04:03,156
+B adres seçim uçlarına ihtiyacımız vardı. Buradan elde ettiğimiz çıkışların A çıkışı ve B çıkışı her birisi en bitlik tanımlıyorduk.
+
+12
+00:04:03,276 --> 00:04:10,576
+Çünkü içerideki yazmaçlarımız toplamda iki üzeri M adet olmakla birlikte her birisi en bitlik yazmaça karşılık geliyordu.
+
+13
+00:04:12,396 --> 00:04:18,475
+Yine bu kombinasyonel bloğun nihai çıktısı olan en bitlik veriyi de
+
+14
+00:04:18,995 --> 00:04:32,735
+İçerideki iki üzeri M adet yazmaçtan herhangi birisine aktarabilmek bizim temel amacımızdı. Bunu sağlamak için de yine M data, M bitlik, M adet bit içeren destination select bitlerimiz vardı.
+
+15
+00:04:33,735 --> 00:04:41,915
+Yine dikkat edecek olursak sistem sadece register file ve ilgili kombinasyonel bloklardan değil.
+
+16
+00:04:42,836 --> 00:05:07,316
+Burada görmediğimiz başka bir takım bloklardan daha ibaretti. Bir daha genel resme şöyle inip bakalım. Hemen açıyorum şimdi. Nihai olan durum ise şöyle bir senaryoydu. Bu senaryoya baktığımızda ise arkadaşlar bakın burada bizim ilgilendiğimiz gördüğümüz data pack yapısı haricinde bir data memory olduğunu
+
+17
+00:05:08,372 --> 00:05:16,692
+Aynı zamanda bir instruction, decoder ve control bloğu olarak isimlendirebileceğimiz aslında bir bloğun olduğunu görüyoruz.
+
+18
+00:05:17,312 --> 00:05:23,492
+Dolayısıyla biz her zaman için işlem sonucumuzu, kombinasyonel bloktan elde edilen işlem sonucunu
+
+19
+00:05:24,211 --> 00:05:37,491
+Yazmaçlara yazıyor olmayacağız. Bazı durumlarda elde ettiğimiz sonucu veya bir yazmaçtaki durumu bir data memory adresine yazmak isteyebiliriz veya bir data memory değerini okuyup bunu yazmacıya aktarmak isteyebiliriz.
+
+20
+00:05:38,812 --> 00:05:50,812
+Veya bir başka senaryoda şurada görmüş olduğunuz kontrol biriminde yani instrakşınlara gömülü olarak sabit değerler sisteme bir eleman olarak dahil edilebiliyor.
+
+21
+00:05:51,636 --> 00:06:08,416
+Dolayısıyla tekrar yukarı çıkıp kaldığımız yerden devam edecek olursak, register file tarafında elde ettiğimiz nihai sonuç yazmaç dosyasında herhangi bir adrese yazılsın mı yazılmasın mı ya karşın bir tane daha kontrol ucumuz var. Read write ucumuz.
+
+22
+00:06:08,416 --> 00:06:10,995
+Yani write ucu da diyebiliriz buna.
+
+23
+00:06:11,764 --> 00:06:38,164
+Neticede kombinasyonel devrede biz hangi işlemi yürütüyorsak yürütelim bir çıkış üretilecek. Dolayısıyla şurada D data uçlarında bir değer var. Bu register file'ın data girişine kadar gelecek. Eğer ki biz bunun içeri yazılmasını istemiyorsak write ucuna sıfır değerini vereceğiz. Belki bizim ilgilendiğimiz şey şurada görmüş olduğunuz gibi data memoriye ilişkin adres ve data değerleri. Yani biz yazma açıdan memoriye bir şey yazmak istiyoruz.
+
+24
+00:06:38,591 --> 00:06:49,591
+Fakat biz function select tuşlarına don't care olarak herhangi bir şey versek bile neticede function unit A kanalında, B kanalında veya MOOCs'lardan neler seçilmişse onları data kanalından aktarıyor.
+
+25
+00:06:50,371 --> 00:06:56,451
+Ama bunu içeriye aktarmak istemiyoruz. Nereye yazacağız? Memory'ye yazacağız. O zaman memory'nin ilgili bir kontrol biti var.
+
+26
+00:06:57,051 --> 00:07:02,091
+Yazma kontrolü. Onu aktif edeceğiz. Register file'ın yazma bitini aktif etmeyeceğiz gibi bir senaryo vardı.
+
+27
+00:07:02,867 --> 00:07:23,947
+Register file'ı kabaca bu şekilde hatırlayabiliriz. Onun haricinde buradaki tasarım dışarıdan gelen veya dışarıdan dediğimiz komutun kendi içerisine gömülü olarak gelen sabit değerleri sadece Register file'ın B çıkış kanalıyla birlikte seçen bir MUX üzerinden Function Unit'in B kanalı inputuna aktarıldığını görüyoruz.
+
+28
+00:07:24,627 --> 00:07:47,087
+Ödevde mesela ikinci soruyu hatırlayacak olursanız orada A yazmacına B yazmacına dışarıdan sabit değer atayabilme şeklinde bir kısıt vardı. Ödevi yapan arkadaşların bir kısmı bunu hem MUX B hem de bir MUX A kullanarak A ve B kanallarına istediğimiz sabit değeri aktarabileceğimiz bir datapath yapısı tasarlamışlar.
+
+29
+00:07:47,699 --> 00:07:59,000
+Baktığımız zaman işlem sonucunu gerçekleyen bir durum ama iki adet MUX kullanmak burada ekstra bir maliyet oluşturuyor gibi de düşünebiliriz bunu.
+
+30
+00:07:59,000 --> 00:08:09,620
+Yani biz yapabileceğimiz tüm işlemleri, sabit içeren tüm işlemleri B kanalı üzerinden seçerek function unit'e aktarıp aslında bütün bu işlemleri yapabilir durumdayız.
+
+31
+00:08:13,408 --> 00:08:27,728
+Fonksiyon veya işlem kaybı olmuyor bu şekilde kısıtlamakla. Ama ödevde yapmış olduğunuz şekliyle de ABB kanallarından sabit değeri MUPS üzerinden seçmeyle ilgili tasarım. Onları da doğru kabul ettik tabii ki.
+
+32
+00:08:28,660 --> 00:08:41,440
+Dolayısıyla burada MUXB ile gördüğümüz şey register file'ın B çıkış kanalından gelen değer ile dışarıdan yani instruction'dan gelen sabit bir immediate değerin seçilmesini sağlayan bir kontrol ucu.
+
+33
+00:08:41,440 --> 00:08:46,240
+En bitik değerler sadece bir bitle seçilebiliyor çünkü iki tane alternatifimiz var.
+
+34
+00:08:47,316 --> 00:09:12,615
+Az önce bahsettiğimiz gibi burada bir memori birimi bulunabilir. Memori birimi bulunduğu vakit, tekrar aşağı iniyorum. Memori birimi bulunduğu vakit aslında biz buradaki tasarım gereği şöyle bir durumla karşılaşıyoruz. Yazmaçların A kanalından gelen şeyi, değeri, data memorinin adres değeri olarak kabul ediyoruz. Yani en bittik bir adrese sahip bir data memorimiz var burada.
+
+35
+00:09:13,331 --> 00:09:35,851
+Eğer içeri veri yazacaksak bu da yine en bitlik bir B kanalı üzerinden aktarılabilir. Dolayısıyla aslında bizim burada kullanabileceğimiz data memory'nin kapasitesine bakacak olursak en adet adres ucu var yani 2 üzeri en adet adres gözü var her birisi de en bit yani 2 üzeri en çarpı en kapasitesinde bir data memory'den bahsedebiliyoruz.
+
+36
+00:09:36,692 --> 00:09:44,092
+Tasarım gereği adres sadece A kanalından gelebilir, data sadece B kanalından gelebilir. Böyle bir kısıtımız var.
+
+37
+00:09:45,052 --> 00:09:56,692
+Elde ettiğimiz register file'lardan elde ettiğimiz adrese yine A kanalından B kanalından gelen datayı yazmak istiyorsak, şurada memory write bir bitik kontrol bitinin de aktif olması gerekir.
+
+38
+00:09:56,692 --> 00:10:02,491
+Memory write işlemi, data memoriye bir şey yazmamızı sağlayan bir uç. Bunun haricinde,
+
+39
+00:10:02,912 --> 00:10:24,711
+Biz memory write ucunu aktif etmezsek bile A kanalından gelen değer, belki A artı B işlemini yapacağım ama yine de her halükarda A kanalından gelen değer data memory'de bir adres değeri olarak karşılıklı. Bu karşılığa göre de ilgili adres gözünün içeriği data out üzerinden burada MUX D'ye kadar aktarılıyor.
+
+40
+00:10:30,611 --> 00:10:57,552
+Bilerek işlem yapmamış olsak bile hasber kadar data in üzerinden yani ilgili data memory'nin seçmiş olduğumuz adres gözünden dolayı buraya kadar bir veri aktarılmış olabilir. Dolayısıyla data memory'den gelen değer ile function unitten gelen değer üzerinde bizim bilinçli olarak hangi işlemi yapmak istiyorsak o işlem sonucunu MOOC stay üzerinden seçtirmemiz ve register file'a kadar iletmemiz gerekiyor. Dolayısıyla buradaki MOOC stay'nin anlamı da.
+
+41
+00:10:57,971 --> 00:11:23,991
+Buydu. Yine tekrar geri dönecek olursak, asıl önemli birim olarak Function Unit'ten bahsedebiliriz. Function Unit'i arkadaşlar nasıl tasarlamıştık? Yukarı çıkarak tekrar hatırlayalım. Function Unit'i içeride arkadaşlar bir Shifter birimi ve aritmetik lojik birim olarak tasarlamıştık. İki ayrı blok olarak tasarlamıştık.
+
+42
+00:11:24,403 --> 00:11:49,243
+Burada yapacağımız toplam işlem sayısına göre kaç adet control biti kullanmamız gerektiği burada function select güçleri ile belirleniyordu. Function select güçlerini de şöyle blok diagram üzerinden görelim. Şurada görmüş olduğunuz function select güçleri içeride total kaç tane işlem tanımlanabilir onu belirliyor. Dolayısıyla 2 üzeri 16 bizim maksimum limitimiz eğer böyle bir seçim yaptıysak.
+
+43
+00:11:50,163 --> 00:12:06,504
+İçeride kullanacağımız iki bloğa ilişkin olarak tasarımlarımızı daha önce konuştuğumuz mantıklar çerçevesinde yapmıştık. Eğer ki içerideki kullanacağımız shifter birimi olarak kullanacaksak yani burada öteleme birimi olarak kullanacaksak bu döndürme birimini.
+
+44
+00:12:07,028 --> 00:12:20,928
+Burada sağa sola öteleme veya doğrudan aktarma gibi fonksiyonlar olabilir demiştik. Dolayısıyla bunu yapabilmek için bir yazmaç, yazmaçlarımızda bizim registerlar, arkasında da bir MUX ile seçtirme yapabiliriz demiştik.
+
+45
+00:12:21,668 --> 00:12:31,848
+Daha önceki, geçen haftaki derste de konuşmuştuk bunu. Normalde biz kendimiz bir yazmaç tasarlamak istediğimiz zaman, yani ödevdeki birinci soru gibi düşünelim.
+
+46
+00:12:32,403 --> 00:12:40,804
+Bir flip-flop dizisi var. Flip-flop dizisinin arkasında da bir MUX üzerinden fonksiyona göre seçim yaptırıyor.
+
+47
+00:12:40,964 --> 00:12:48,903
+Dolayısıyla bizim tasarımlarımızda hem MUX hem de bir flip-flop dahil oluyordu. Her bir slice için, her bir bit katmanı için.
+
+48
+00:12:48,903 --> 00:12:56,587
+Fakat buraya baktığımız zaman burada shifter biriminin bir kombinasyonel devre olduğunu görüyoruz. Neden? Çünkü burada...
+
+49
+00:12:56,851 --> 00:13:22,731
+Şimdi kullanacağımız yani ödevdeki mantığı düşünelim. Bir yazmaç tasarım için, ötelemeli ve paralel yüklemeli bir yazmaç için. Genel mantıkta bir de bizim memory birimlerine ihtiyacımız var. Flipfloplara ihtiyacımız var. O flipfloplar nerede arkadaşlar? O flipfloplar register file içerisindeki yazmaçlardan zaten sağlanıyor. Dolayısıyla bizim shifter birimiyle kastettiğimiz şey aslında sadece bu tasarımın MOOC katına karşılık gelmiş oluyor.
+
+50
+00:13:23,283 --> 00:13:34,384
+Dolayısıyla eğer biz shifter birimi tasarlayacaksak burada dediğim gibi MUPS üzerinden bunu yapabiliriz. Veyahut da burada bir rotasyon işlemi yapacaksak rotasyon işlemini de yine MUPS üzerinden tasarlayabiliriz.
+
+51
+00:13:34,803 --> 00:13:47,983
+Shift'i dediğim gibi sağ bir birim öteleme, sola bir birim öteleme, paralel yükleme şeklinde tanımlayabileceğimiz gibi rotasyon işlemini bir birim, sağ rotasyon iki birim, sağ rotasyon üç birim, sağ rotasyon veya ters yönde rotasyonlar şeklinde.
+
+52
+00:13:48,563 --> 00:14:04,503
+Tanımlayabiliriz. Donanımsal olarak bunları yapmak mümkün. MUPS üzerinden zaten görmüştük geçen haftada. Dolayısıyla burada rotasyonla shift arasındaki farkı tekrar hatırlatalım. Shift işleminde sağa doğru öteleme yapıyorsak en düşük anlamlı biti yitiriyoruz.
+
+53
+00:14:05,427 --> 00:14:15,748
+Elimizdeki yazmaç üzerinde birikecek değer soldan sıfır ile beslenecek şekilde geliyor. Bakın burada gördüğünüz gibi sağ ötelemede sıfır ile beslendiğini görüyoruz.
+
+54
+00:14:15,748 --> 00:14:29,868
+Benzer şekilde eğer sola öteleme varsa, sola ötelemede de en yüksek anlamlı bitimiz bizim yazmaçta saklamayı planladığımız veya fonksiyonel input olarak girdiğimiz değeri en yüksek anlamlı biti getiriliyor.
+
+55
+00:14:32,884 --> 00:14:58,124
+En düşük anlamlı bitimden sıfırla besleniyor. Onu da şurada öyle sıfır input left sıfır olarak görebiliyoruz. Dolayısıyla shift işlemlerinde bit yitirme var. Yitirilen bit yerine kaydırıldıktan sonra boşta kalan yer sıfırla doldu. Yani dolayısıyla shift işlemini düşündüğümüz zaman shift işlemi aslında aritmetik olarak ikiyle çarpma, ikiyle bölmeye denk gelen bir senaryo oluşturdu.
+
+56
+00:15:00,467 --> 00:15:11,367
+Mesela sağa doğru rotasyondan bahsediyorsak, sağa doğru rotasyonda en düşük anlamlı bit yerinden çıktı, tekrar en yüksek anlamlı bitten sistemi besliyor.
+
+57
+00:15:11,367 --> 00:15:17,367
+Veya sola öteleme varsa, soldan çıkan en yüksek anlamlı bitimiz, sistemi tekrar sağdan...
+
+58
+00:15:17,587 --> 00:15:36,187
+Besliyor. Dolayısıyla rotasyon dediğimiz durumda herhangi bir bit kaybı yok. Bitler sadece birer bit kaydırılıp yine ters tarafta beslenmiş oluyor. Aradaki fark bu. Dolayısıyla biz burada ister shifter birimi tasarlayalım, ister rotasyon birimi tasarlayalım. Benzer bir mantık çerçevesinde hareket edebiliyoruz.
+
+59
+00:15:36,187 --> 00:15:45,587
+Bunun ALU'dan farklı olması ise temelde bu kendi başına modüller olarak bir MUX yapısıyla tasarlanabilir durumda. Rotasyon birimi de olsa öteleme birimi de olsa.
+
+60
+00:15:45,587 --> 00:16:12,128
+Bu şekilde olsa kendine has bir MUPS yapısıyla tasarlanabilir durumda. Ama aritmetik, lojik birime baktığımız zaman, hani lojik birim biraz da benziyor. Ama daha modüler olması açısından bunları ayrı bloklar olarak tasarlamak daha anlamlı olmuyor. Şimdi shifter birimini bu şekilde hatırladık. Aritmetik, lojik biriminde ise ne vardı? Aritmetik birim ve lojik birim vardı. İki ayrı birim olarak bunları düşünüyorduk. Onun grafiğini nerede görebiliriz? Aritmetik, lojik birim bu şekilde.
+
+61
+00:16:13,139 --> 00:16:27,620
+Ve lojik birim dediğimiz şey aslında lojik işlemleri yaptığımız bir durum. Dolayısıyla elimizde her bir bit slice için işte AND, OR, X, OR, NOT gibi işlemleri yaptığımız birer MOOC katı üzerinden çıkış elde ediyoruz. Seçim uçları da burada bizim kontrol işaretlerimizi belirliyordu.
+
+62
+00:16:27,620 --> 00:16:35,620
+Yani lojik birimi bu şekilde tasarlıyorduk. Aritmetik birim için ise çok genel bir yapıdan bahsetmiştik. Bu genel yapıda...
+
+63
+00:16:35,668 --> 00:17:03,447
+Aslında burada gördüğümüzden daha farklı bir senaryoyla karşılaşabiliriz demiştik. O da şuydu arkadaşlar, hatırlayacak olursanız. En genel durumdan bahsettiğimiz senaryoda aslında biz aritmetik birim içerisinde bir toplayıcı kullanıyoruz. En bitik toplayıcı kullanıyoruz. Zaten yerine getirmek istediğimiz işlemler basit. İnkrement, dikrement, toplama, çıkartma, doğrudan transfer gibi işlemler ve benzeri işlemler. Dolayısıyla burada toplayıcı kullanmamız yeterli.
+
+64
+00:17:03,668 --> 00:17:29,607
+Toplayıcıyı burada en genel bir aritmetik birim olarak genişletmek istediğimizde ise elimizde çeşitli kontrol işaretleri var. Bir de inputlarımız var. A katmanı ve B katmanı açısından inputlarımız var. Bu A ve B inputlarını tom toplayıcının X ve Y girişlerine aktarmadan önce belirli bir lojikten geçirmemiz gerekir. En genel senaryo buydu. Dolayısıyla burada en genel senaryoda
+
+65
+00:17:30,644 --> 00:17:37,043
+A katmanını da yine bir A input logic olarak burada şey nerede oluyordu?
+
+66
+00:17:38,043 --> 00:17:40,244
+Küçültelim, koment diyelim.
+
+67
+00:17:43,731 --> 00:17:45,851
+Bunun beyaz olmasında hiç güzel olmadı.
+
+68
+00:18:01,044 --> 00:18:08,064
+Dolayısıyla bizim burada yine bir A input lojiyumuz olacak. Yine burada da bir B input lojiyumuz olacak.
+
+69
+00:18:08,064 --> 00:18:24,304
+Cary input lojiyumuz olacak. Ve buraya giren değerlerimiz, şöyle yapacak olursak, buraya yine S kontrolleri girecek ve buraya da yine S kontrolleri girecek.
+
+70
+00:18:25,164 --> 00:18:28,324
+Yani burada yazıyla da yazalım.
+
+71
+00:18:29,779 --> 00:18:38,879
+S kontrollerimiz artık kaç bitlikse yine burada da S bitlik kontrollerimiz giriyor olacak. Dolayısıyla en genel durum buna karşılık geliyor.
+
+72
+00:18:40,879 --> 00:18:47,500
+En genel durum buna karşılık geliyor. Geçen hafta gördüğümüz senaryo bunun basitleştirilmiş bir örneği idi.
+
+73
+00:18:48,599 --> 00:18:54,819
+Fonksiyonlar ve kontrol işaretleri öyle bir verilmişti ki, carry yine en yüksek anlamlı kontrol bitini bağlamak.
+
+74
+00:18:55,380 --> 00:19:04,820
+A'yı, A input lojiyi sadece tel olarak, transfer olarak düşünmek ve input lojikte de bir fonksiyon tanımlamak yeterli olmuştu.
+
+75
+00:19:04,820 --> 00:19:11,079
+Geçen hafta yaptığımız örnekte, yani o geçen hafta yaptığımız örnekte şuradaki fonksiyon tablosuna göre çalışan bir durumdu.
+
+76
+00:19:11,180 --> 00:19:19,080
+Burada öyle ayarlanmış ki, carry in'in bir olduğu durumlarla kontrol işaretimizin bir olduğu durumlar aynıydı.
+
+77
+00:19:19,440 --> 00:19:22,900
+S2 kontrol işaretimiz, dolayısıyla benzer fonksiyonlar yerine getiriyordu.
+
+78
+00:19:23,316 --> 00:19:41,096
+Bir kere burada bu basitleştirilmiş bir yapı ama genelden konuşmak gerekirse toplamda 1, 2, 3, 4, 5, 6, 7, 8. 8 tane fonksiyonumuz var. 8 tane fonksiyonu yerine getirebilmek için aslında bizim 3 tane kontrol işaretine ihtiyacımız var. Bu kontrol işaretlerine baktığımız zaman S0 ve S1 burada.
+
+79
+00:19:41,619 --> 00:20:00,000
+Bu kontrol işaretleri burada indirgenmiş oluyordu bu tabloya göre. Buraya da S2'nin bağlanması yeterli oluyordu. Yani 3 tane kontrol işaretimiz bu şekilde ortaya çıkmış oluyordu. Bunu carry in olarak düşünmeyin. Carry in'i içeriden fonksiyon olarak düşünün. Yani bu ucun yerine getirdiği fonksiyon olarak düşünelim. Bu tam toplayıcı ne yapıyor?
+
+80
+00:20:00,000 --> 00:20:10,559
+X girişindeki 2 bitlik pardon, n bitlik sayıyla binary, y girişindeki n bitlik binary sayıyı topluyor. Bunlara carry in'i bir bitlik carry in'i de ekleyip çıktı elde ediyor.
+
+81
+00:20:10,639 --> 00:20:20,479
+Toplayıcı bu şekilde. Eğer ki bir taşma varsa taşmayı da carry out'tan bir olarak çıkartıyor. Dolayısıyla en genel anlamda aritmetik birimi de bu şekilde tasarlayıp örneklemiştik.
+
+82
+00:20:20,479 --> 00:20:24,979
+Zaten bu örneği yapmıştık. Tahtada da bu örneği yapmıştık.
+
+83
+00:20:25,587 --> 00:20:40,528
+Yine üzerinde durduğumuz bir önemli konu da şuydu arkadaşlar hatırlayacak olursanız. Bizim sistemimizde biz bir tam toplayıcı kullanıyoruz dedik. En bitlik paralel toplayıcı kullanıyoruz dedik. Ve bunun carry in girişine dışarıdan bir kontrol işaretini bağlıyorduk.
+
+84
+00:20:40,528 --> 00:20:50,188
+Fakat bunun iç yapısını hatırlayacak olursanız full header'lardan oluşan, arda arda bağlı full header'lardan oluşan, kaskat bağlı full header'lardan oluşan bir yapısı vardı. Yani şöyle bir yapı vardı.
+
+85
+00:20:50,548 --> 00:21:10,428
+Dolayısıyla aslında bizim dışarıdan vermiş olduğumuz carry in kontrol işi veya S2 kontrol işareti en düşük anlamlı full header'ın carry in girişine bağlı. Peki diğer full header'ların carry in girişlerine bağlı? Onlara ise arkadaşlar bir önceki katın carry out'u bağlı. Dolayısıyla eldeği aktararak toplam işleminizi gerçekleştiriyoruz.
+
+86
+00:21:18,548 --> 00:21:29,647
+İlimlere bağlanarak hatalı bir yaklaşım sergilenebiliyor. Ona dikkat edin diye de söylemiştim. Dolayısıyla şimdi geçen haftadan yaptığımız işlemleri hatırlayarak arkadaşlar.
+
+87
+00:21:30,516 --> 00:21:49,796
+Bu haftanın konusuna doğru ilerleyelim. Burada aritmetik ve lojik birimlerin nasıl birleştirilebileceği üzerine de konuşmuştuk. Burada toplamda dört tane kontrol işareti üzerinden işlem sağlanıyordu. Burada shifter birimi ve sonrasında rotasyon biriminin nasıl olduğunu görüp genel resme bu şekilde ulaşmıştık.
+
+88
+00:21:52,703 --> 00:22:01,803
+Bizim bu noktaya vardığımızda elimizdeki kontrol işaretlerini bir listeleyelim arkadaşlar. Şöyle kontrol işaretlerimiz var. Neler var bakalım.
+
+89
+00:22:03,123 --> 00:22:09,083
+Typewriter alalım. Birincisi, register file write.
+
+90
+00:22:15,155 --> 00:22:30,775
+Register file write işareti. Bu işaret şurada görmüş olduğunuz uca ilişkin kontrol işareti. Başka ne var? D adres. A ile yazalım. Destination adres dediğimiz kontrol ucu var.
+
+91
+00:22:33,011 --> 00:22:47,971
+Bu ne işe yarıyordu? Destination address. Bu memory'den veya function unitten gelen değeri seçtikten sonra register file'a yazma yapacaksak bu datayı, hangi register'a yazacağımızın adresini belirtiyoruz. Başka ne var? A adres var.
+
+92
+00:22:49,811 --> 00:23:06,611
+A adres kontrol işareti. A adres kontrol işareti ne işe yarıyor? Register file'dan herhangi bir yazmacın A çıkış uçlarına aktarılmasını sağlıyor. Veya bir başka deyişle register file'ın A data çıkışına hangi yazmacın aktarılacağını şuradaki görmüş olduğunuz A adres ucu beliriyor.
+
+93
+00:23:06,971 --> 00:23:13,471
+Bununla birlikte benzer bir şekilde BA dediğimiz bir kontrol ucumuz daha var. O da B adres diye ifade edelim burada.
+
+94
+00:23:16,307 --> 00:23:35,647
+Bu ne işe yarıyor? B adres şuradaki ucumuz. B adres ise arkadaşlar, register file'ın B data çıkış kanalına hangi yazmacın aktarılacağını belirleyen bir adres ucu. Eğer içeride 2 üzeri M adet yazmaç varsa M bitlik olması gerekiyor. Daha sonraki kontrol ucumuz MB.
+
+95
+00:23:36,468 --> 00:23:59,848
+MB'yi şurada görüyorsunuz, MB ucumuz. Bu MuxBSelect olarak isimlendireceğimiz bir uç. Ne işe yarıyor peki MBSelect? Bakın, Function Unit'in B kanalına, B input kanalına instruction'dan gelen sabit değer mi gelsin yoksa register file'dan gelen B data çıkışı mı gelsin onu seçen bir Mux.
+
+96
+00:24:00,468 --> 00:24:24,048
+Sonrasında ne var? Function select kontrollerimiz var. Function select kontrollerimiz ne işe yarıyor? Function select dediğimiz bitler. Bu ise function unitin yerine getireceği fonksiyonlar. Neler vardı function unitte yerine getirilebilecek işlemler? Bir aritmetik birim vardı. Toplamda 8 tane görevi yerine getirebiliyordu. İşte aktar.
+
+97
+00:24:24,660 --> 00:24:35,839
+Arttırma, toplama, A artı B artı 1, A artı B üstü, A eksi B, A eksi 1, increment, dikrement, doğrudan transfer gibi işlemleri yerine getirebiliyor.
+
+98
+00:24:35,839 --> 00:24:47,339
+Dört tane lojik fonksiyon var. A ent B, bitwise olarak, bitwise olarak A or B, bitwise olarak A x or B şekli. Bir de A kanalının natını aktarabiliyormuş.
+
+99
+00:24:47,728 --> 00:24:52,768
+Function unit içerisindeki shifter işlemine baktığımızda da onun da 3 tane fonksiyonu var.
+
+100
+00:24:53,104 --> 00:25:21,104
+Şimdi buradaya kadar gelen bütün işlemlerde transfer sadece A kanalının transferi vardı. Bazı zoomlarda B'yi de transfer etmek isteyebiliriz. O yüzden B transferi shifter içinde gömülmüş olarak görüyoruz. Bunun haricinde shift right B, shift left B işlemlerini yerine getirebilir. Yani toplamda 8, 12, 13, 14, 15 tane işlem var. 15 tane işlem olduğuna göre 4 bitlik bir control biti olduğunu söyleyebiliriz. Function Select. Son olarak buraya kadar gördüğümüz...
+
+101
+00:25:21,104 --> 00:25:32,624
+Ünsaliyle MD işlemimiz var. MD işlemi de MOOC's D Select olarak tanımlayabileceğiniz bir kontrolücü. Şurada görüyorsunuz kendisini. Ne yapıyor?
+
+102
+00:25:33,236 --> 00:25:58,736
+Function unit'in çıktısını mı yoksa data memory'den gelen değeri mi aktaracağız destination data olarak onu belirleyen bir uç. Bunun haricinde başka kontrollerimiz var mı? Bunun haricinde şurada göremediğimiz memory aktarımı var. Memory ile ilgili olarak. Orada da memory write kontrolümüz var. Memory write kontrolümüz var. Memory write ne işe yarıyordu?
+
+103
+00:25:59,200 --> 00:26:13,660
+A kanalından gelen adrese B kanalından gelen datayı aktarıp yazmayacağımızı belirleyen o adrese değer yazılmasını kontrol eden bir kontrol ucu idi. Onu da şöyle hatırlayalım daha genel resminden.
+
+104
+00:26:16,160 --> 00:26:23,160
+Bunu biraz sonra tekrar döneceğiz. Şurada bir ekstradan kontrol işaretimiz daha var. Bunu da belirttikten sonra
+
+105
+00:26:26,867 --> 00:26:53,747
+Sadece bu kısımla ilgileniyor olduğumuz senaryo için. Yani daha kontrol birimine girmedik. Onunla ilişkin bir takım kontroller daha var. Bu yazmış olduğumuz değerler arkadaşlar sadece kısmi bir takım kontrol bitlerimiz. Yani şu ana kadar gördüğümüz halini kapsayan sınırlı sayıdaki kontrol bitlerimiz. Bu kontrol bitlerinin kaçer bitlik olduğunu da söyleyelim. Eğer içeride 8 adet yazmacımız var ise.
+
+106
+00:26:54,836 --> 00:27:11,756
+Register file write bir bitlik, destination adres üç bitlik, A adres üç bitlik, B adres üç bitlik, MUXP bir bitlik, function select az önce saymıştık 15 fonksiyon vardı 4 bitlik, MD bir bitlik, MW bir bitlik değerler kontrol bitlerimiz olarak ortaya çıkıyor.
+
+107
+00:27:14,836 --> 00:27:18,996
+MD ve MB aynı işlemi yapmıyor mu diye bir soru var.
+
+108
+00:27:19,571 --> 00:27:32,091
+Şöyle düşünelim. Şimdi biz şu D ucuna, D ucuna instruction'daki sabit değeri aktarmak istiyoruz. Tamam mı? O zaman sorumuz şu olsun. D data. Şöyle yapalım.
+
+109
+00:27:34,831 --> 00:27:41,151
+D data'ya biz şunu aktarmak istiyoruz. Bunu yapabilmek için.
+
+110
+00:27:41,556 --> 00:28:05,195
+Bunu yapabilmek için MB ne olmalı ve MD ne olmalı diyelim. Sonrasında biz D data'ya, şunu sileyin, gerek yok. Daha sonrasında D data'ya memoriden bir değer aktarmak istiyoruz. Bunun için MB ne olmalı, MD ne olmalı ona bakalım. Bir de biz D data'ya.
+
+111
+00:28:07,155 --> 00:28:33,195
+R1 yazmacını aktarmak istiyor olalım. Bunun için MB ne olmalı? MD ne olmalı? Buna göre bakacak olursak aslında MB ve MD'nin aynı işlemi yapmadığını görmüş olacağız. Şöyle ki şimdi şunu düşünelim. En alttakinden başlayalım. D data dediğimiz şey şuradaki bir değer. Dolayısıyla biz function select açısından transfer işlemlerinden birisini seçmiş olalım.
+
+112
+00:28:33,632 --> 00:28:45,811
+Dolayısıyla biz register adresi olarak R1'i A kanalından getirip daha sonrasında function select olarak A transferi seçersek şu MUX'un sıfır ucuna kadar ne gelmiş olacak?
+
+113
+00:28:46,951 --> 00:28:58,311
+R1 değeri gelmiş olacak. Dolayısıyla biz burada eğer A kanalı üzerinden aktarım yapmak istiyorsak yani şöyle açıklama yapacak olursak A kanalından R1 getirirsek
+
+114
+00:28:59,988 --> 00:29:16,728
+Bu durumda MB'ye ne verirsek verelim, hiç önemli değil. MD'ye 0 verip, function select içinde A transfer kullanırsak, A kanalından R1'i tekrar destination data'ya getirmiş oluyoruz.
+
+115
+00:29:17,648 --> 00:29:21,608
+Eğer ki biz memorideki bir değeri, yani şuradaki memorideki bir değeri,
+
+116
+00:29:22,228 --> 00:29:40,548
+Şimdi şuraya aktarmak istersek, yani şuradaki data uçlarını aktarmak istersek, burada yine MB ne olursa olsun önemli değil, MD'ye bir vermemiz lazım değil mi? MD'ye bir vereceğiz ki gelen adrese karşılık memori'den çıkan değeri, yani şuradaki değeri destination data'ya aktarabilirim.
+
+117
+00:29:50,420 --> 00:29:58,980
+Mecburen B kanalını kullanmamız lazım. Mecburen B kanalı kullanılmalı.
+
+118
+00:30:00,115 --> 00:30:11,696
+Çünkü sabit değer sadece B kanalından gelebiliyor. Bu durumda B kanalından sabiti BXB'den aktarabilmek için MB ucunun mutlaka 1 olması gerekiyor.
+
+119
+00:30:12,096 --> 00:30:21,099
+Ve bununla birlikte MD ucunun ise yine B kanalı buraya kadar geldi. Function unit'te neyi kullanacağız? Function unit'te...
+
+120
+00:30:21,268 --> 00:30:38,367
+FSE için şunu kullanmamız lazım. B transfer işlemini kullanmamız lazım. B transfer işlemini kullandığımız zaman burada sabit değer MUX B'den geldi. B'yi de buradan çıkışa aktardım. Dolayısıyla F çıkışında B var. MD'de de yine sıfırı vermem lazım.
+
+121
+00:30:42,319 --> 00:30:55,799
+İnceleyelim. Bu örnekte R1'i aktarmak istiyoruz ama bunu bu sefer B kanalı üzerinden yapalım. B kanalı üzerinden R1'i getirmek istersek ne yapmalıyız? Şunu şimdilik silelim.
+
+122
+00:30:59,188 --> 00:31:20,208
+Şuraya R1'i aktarmak istiyoruz. Bunun için de B kanalını kullanacağız. B kanalını kullanacaksak bu durumda MUXB'ye hangi seçimi yaptırmamız lazım? Şimdi register file'dan ben B adres olarak R1'i verdim. B kanalına çıktı, şuraya çıktı. MUX'un çıkışına R1'i aktarabilmek için MUXB'ye 0 vermem gerekiyor.
+
+123
+00:31:23,635 --> 00:31:39,615
+Şuraya kadar R1 değeri geldi. R1'i çıkışa aktarmak istiyorum. O zaman Function Select'de B Transfer fonksiyonunu kullanacağım. Şuraya da geldi artık R1 değeri. MUX D'den bunu seçtirmek istersem de M, D'ye de yine 0 vermem.
+
+124
+00:31:40,339 --> 00:32:00,479
+Dolayısıyla burada gördüğünüz üzere MUPSB ve MUPSB fonksiyonları veri hangi kanaldan aktarılıyor ise ve hangi işlemi yapmak istiyorsak bunlara göre farklılık gösteriyor. Dolayısıyla MUPSB ve MUPSB aynı işlemleri yapmıyor. Bu şekilde bir farklılık var arada.
+
+125
+00:32:01,683 --> 00:32:25,784
+Bu şimdiye kadar görmüş olduğumuz kontrol işlemlerini, kontrol uçlarını incelemiş olduk. Ama dediğim gibi bizim sistemimiz sadece burada görmüş olduğumuz datapath'ten ibaret değil. Bunun yanında datamemory var. Onun memory write kontrolünü aldık ama bir de kontrol birimimiz var. O kontrol birimini incelerken işler biraz daha farklı.
+
+126
+00:32:29,395 --> 00:32:35,476
+Geçen haftalarda hatırlayacak olursanız arkadaşlar, biz bir de Instruction Set Architecture konusuna bakmıştık.
+
+127
+00:32:35,576 --> 00:32:39,016
+ISA konusuna bakmıştık. Instruction Set Architecture konusuna.
+
+128
+00:32:39,655 --> 00:32:48,436
+Orada şunu söylemiştik. Instruction Set aslında belirli bir işlemi, operandı, pardon operasyonu, belirli bir op kodu.
+
+129
+00:32:49,299 --> 00:33:04,740
+Hangi parametrelerle, hangi girdilerle yürüteceğimizi kodlayan bir yapıydı ve aslında bu biraz daha sıkıştırılmış bir gösterimdi. Yani biz burada sıkıştırılmış bir gösterim elde ediyorduk. Bunu şöyle düşünebiliriz.
+
+130
+00:33:05,076 --> 00:33:10,736
+Örneğin elimizdeki instruction'a karşılık yani opcode ve hangi operantlar işleme dahil olacak.
+
+131
+00:33:10,875 --> 00:33:17,355
+Bunun sıkıştırılmış bir kod versiyonu instruction olarak karşınıza gelmişken bunların kontrol işareti karşılıkları.
+
+132
+00:33:17,435 --> 00:33:21,215
+Yani biz bir işlem yapmak istiyorsak bunlara karşılık kontrol işaretleri üretilmesi lazım.
+
+133
+00:33:21,756 --> 00:33:25,435
+Bu kontrol işaretlerinin genişliği ile instruction'ın genişliği birbirinden farklıdır.
+
+134
+00:33:25,435 --> 00:33:30,576
+Örnek vermek gerekirse instruction'ımız 10 bitlik bir instruction olabilir.
+
+135
+00:33:33,076 --> 00:34:00,395
+15 bitik olabilir. Dolayısıyla biz instruction'larımızı biraz daha paketlenmiş bir şekilde kullanıyoruz ki yazmış olduğumuz kodlar daha az yer kaplasın diye. Burada da yavaş yavaş aslında instruction'dan kontrol işaretine nasıl dönüşüm yaparız onu göreceğiz. Ona ilişkin olarak da bir toparlama olması açısından bizim function select işlemlerimize karşılık bunları nasıl kodladık, neye karşılık geliyor bunları bir tanımlayıp ona göre hareket edelim.
+
+136
+00:34:00,884 --> 00:34:20,304
+Şimdi bu sadece Function Unit kısmı. Mesela ne işlemi yapıyormuş? Function Unit'in A kanalına gelen değeri doğrudan aktarabiliyormuş. A kanalına gelen değeri bir ekleyip dışarı aktarabiliyormuş. A kanalıyla B kanalındaki değerleri toplayabiliyormuş. Buna ilişkin tasarımı yapmıştık hatırlayacak olursanız. Şöyle bir tasarımla karşılaşmıştık nihai olarak.
+
+137
+00:34:23,043 --> 00:34:24,304
+Geliyorum tekrar aşağıya.
+
+138
+00:34:25,844 --> 00:34:43,524
+A kanalındaki değerle B kanalındaki değerin üzerine bir ekleyip sonuç elde edebiliyormuşuz. A ile B'nin değillerini toplayabiliyormuşuz. A'dan B'yi çıkartabiliyormuşuz. A'yı dikrement yapabiliyormuşuz. A'yı doğrudan yine aktırabiliyormuşuz. Burada bir serbestlik var. A'yı doğrudan aktarmaya ilişkin iki tane ayrı fonksiyonumuz var.
+
+139
+00:34:46,132 --> 00:34:56,591
+AND işlemine Bitwise AND, Bitwise OR, Bitwise XOR, A kanalından gelen veriyi NAT, Bire tümleyen alıp gönderebiliyormuşuz. B kanalından gelen değeri doğrudan transfer edebiliyoruz.
+
+140
+00:34:56,916 --> 00:35:19,456
+B kanalından gelen değeri function unit olarak düşündüğümüzde sağ öteleyip çıkartabiliyoruz veya sola öteleyip çıkartabiliyoruz. Bunlara ilişkin kodlarımız da burada mevcut. Toplamda 15 mi saymıştır? 8, 12, 13, 14, 15 tane fonksiyon var. Bir tane 1, 1, 1, 1, 1 şeklindeki function select durumu da kullanmadığımız bir senaryo olarak ortaya çıkmış.
+
+141
+00:35:19,923 --> 00:35:40,923
+İşte bizim az önce yapmış olduğumuz gibi buradaki bit genişliklerinin analizi yapılmış durumda. Ve bizim için burada bir kontrol kelimesi üretilmiş durumda. Bu kontrol kelimesi sadece datapath'e ilişkin kısım. Burada görmüş olduğunuz datapath'e ilişkin kısım. Bizim amacımız ne? Bu 16 bitlik veriyi biz...
+
+142
+00:35:41,940 --> 00:35:56,380
+Instruction'dan üretmek istiyoruz. Verdiğimiz, yürütmek istediğimiz Instruction'a göre buradaki kontrol işaretlerini belirlemek istiyoruz. Şimdi burada çeşitli işlemlere ilişkin olarak bu kontrol word değerleri neler oluyor onlara bakalım.
+
+143
+00:36:06,420 --> 00:36:26,060
+bitlerine, her birisi 3'er bitlikti. Neden? Çünkü içeride 8 tane yazmacımız olduğunu varsayalım demiştik. Bunlara karşılık DA, AA ve BA'nın alabileceği değerleri, yani elimizde böyle bir control word yapısı varken bunların alabileceği değerleri inceleyelim. Ne oluyor bunlar? Mesela register numarasına göre kod verebiliriz.
+
+144
+00:36:34,420 --> 00:36:40,740
+MBA'daki değerlere göre hangi rejistere biz aktarmışız veya hangi rejistere aktarım yapmak istiyoruz bu şekilde kodlanabilir.
+
+145
+00:36:41,600 --> 00:36:51,720
+MB'deki değer nasıl çalışıyormuş? Tekrar az önce bizim yaptığımız analizin aynısı aslında. MB ne yapıyor? Yazmaçtan gelen değeri veya sabit değeri seçimini yapıyor.
+
+146
+00:36:51,840 --> 00:36:57,080
+Dolayısıyla register kullanacaksak sıfır değerini almalı, sabit değer kullanacaksak bir değerini almalı.
+
+147
+00:36:57,523 --> 00:37:17,884
+Burada function select'e vereceğimiz değerler aslında burada function select tablosundaki değerlerle aynısı olması gerekiyor. Dolayısıyla function select işlemlerine karşılık satırlarımız burada. Bunlara karşılık kodlar veya karşılık kontrol kodları da burada mevcut. Her birisi az önce incelediğimiz tabloya bağımlı.
+
+148
+00:37:22,900 --> 00:37:36,460
+Function unitten gelen değerimi seçeceğim, memoryden gelen değerimi seçeceğim. Bunu belirleyen bir kontrol işareti. Dolayısıyla eğer MD ucunda 0 varsa Function unit çıktısını aktarıyor. 1 varsa memoryden gelen data değeri de aktarıyor.
+
+149
+00:37:36,911 --> 00:37:58,031
+Register, file, write işlemine baktığımızda, register, file, write, control bir bir kitle değer. Hasbelkader, destination data'ya çıkmış olan değeri, yazmaca aktaracağız mı aktarmayacağız onu belirleyen bir işlem. Yani aktarmayacaksak ne yapıyor olabiliriz? Aktarmayacaksak da belki bir önceki adımda yürüttüğümüz işlemle,
+
+150
+00:37:58,452 --> 00:38:09,352
+Aoutput kanalına çıktığımız değer ile aslında bir memory adresini hedefleyip buradan B kanalından çıktığımız deneyeri de bir data out olarak planlayıp bu adrese bu veriyi yazmak istiyorduk.
+
+151
+00:38:09,932 --> 00:38:16,771
+Ama öyle bir takım kontrol işaretleri denk geldi ki buna karşılık. Mesela biz buraya 0.0.0 vermiş olsak ki de bu bir tane fonksiyona karşılık.
+
+152
+00:38:17,204 --> 00:38:45,204
+Dolayısıyla buradaki kombinasyonel devre burada bir çıkış üretir. Bu çıkış bizim istemediğimiz bir çıkış, hatalı bir çıkış ama biz bunu istersek, istemezsek yazmayabiliyoruz. Onu da register, file, write, control ucu ile gerçeklemiş oluyoruz arkadaşlar. Dolayısıyla reg, file, write'ın anlamı da bu. İşlem sonucunu yazacaksak bir, yazmayacaksak sıfır olarak vermemiz gerekiyor. Dolayısıyla burada biz datapath'e ilişkin olarak bir control word mantığı oluşuyoruz.
+
+153
+00:38:45,204 --> 00:38:55,144
+Konuşturduk. Bunların her bir biti hangi anlama geliyor onları tanımladık ve verdiğimiz değerlere göre hangi işlemler datapath üzerinde gerçekleşiyor bunu tanımlamış olduk.
+
+154
+00:38:55,144 --> 00:39:00,824
+Şimdi buradan hareketle daha hani şeyi bilmiyor olalım nedir onun adı.
+
+155
+00:39:00,916 --> 00:39:13,916
+İşlemleri bilmiyor olalım veya instakşınları bilmiyor olalım. Fakat bir takım işlemleri yerine getirmek istersek, bunu Register Transfer Language RTL mantığında yaptığımızı varsayalım.
+
+156
+00:39:14,016 --> 00:39:25,616
+Yani gösterim olarak, notasyon olarak veriyor olalım bu işlemleri. Bu işlemleri yerine getirebilmek için datapath'deki kontrol bitlerin ne olması gerektiğini bulmaya çalışalım.
+
+157
+00:39:26,771 --> 00:39:38,011
+Şimdi birinci yapmak istediğimiz işlem, yani bu arada şunu söyleyelim, elimizde bu kadar bir function çeşitliliği varken bizim instructionımız sadece 15 farklı instruction'dan oluşmayacak.
+
+158
+00:39:38,731 --> 00:39:51,511
+Mesela şöyle düşünelim, biraz sonra da göreceğiz. Bir yazmaca sıfır değeri atamak için farklı yaklaşımlar var. Bunlardan bir tanesi de değeri kendisiyle XOR'a sokmak.
+
+159
+00:39:53,460 --> 00:40:10,000
+XOR fonksiyonumuz hem şurada görmüş olduğunuz Function Unit'teki XOR işlemi hem Instruction Set'te register'ı sıfırlamakla ilgili bir karşılık bulacak hem de iki tane operandum bitwise XOR'una karşılık bir Instruction olarak karşımıza çıkacak.
+
+160
+00:40:11,987 --> 00:40:23,467
+Elimizde her ne kadar ki 15 tane function olsa bile, function unit'in 15 tane işlemi olsa bile instruction tarafında bunların çok daha çeşitli olduğunu görebiliyor olacağız arkadaşlar.
+
+161
+00:40:24,588 --> 00:40:27,327
+Şimdi gelelim şurada işlemlere bakalım.
+
+162
+00:40:30,487 --> 00:40:32,027
+Aynı işlemler bunlar.
+
+163
+00:40:33,788 --> 00:40:34,547
+Şöyle.
+
+164
+00:40:35,315 --> 00:40:43,195
+R2'den R3'ü çıkartıp işlem sonucunu R1'e aktarmak istiyoruz. Böyle bir işlem sonucumuz var. Bunu alalım.
+
+165
+00:40:47,380 --> 00:40:52,900
+Yan yana görebiliyor muyuz bunları? Çok güzel oldu. İşlemimiz şuydu.
+
+166
+00:40:56,851 --> 00:41:22,672
+Eksi işlemi göründü mü? Eksi diyelim. R1'e R2-R3'ü aktarmak istiyorum. Şimdi burada kontrol uçlarına hangi değerleri vermemiz gerekiyor? Yani şu anda manuel olarak bu datapathik kontrol ettiğimizi düşünelim. Bir sonraki aşamada kontrol birimini de tanıtacağız. Kontrol birimiyle yapmak istediğimiz işlem arka tarafta otomatik olarak gerçekleşecek.
+
+167
+00:41:23,092 --> 00:41:28,992
+Kontrol birimi de aslında yazmış olduğumuz koda karşılık instrakşınları peş peşe dizecek.
+
+168
+00:41:29,172 --> 00:41:34,371
+İşte koşullu kontroller, koşullu dallanmalar falan varsa onları uygun şekilde dizecek.
+
+169
+00:41:34,451 --> 00:41:41,271
+Ona göre sırasıyla hangi satırdaki komut yürütülecekse ona ilerleyeceği için aslında bir program çalıştırabiliyor olacak.
+
+170
+00:41:41,811 --> 00:41:50,371
+Çalıştırdığımız program arka tarafta ilgili instrakşını dekod ettikten sonra dekod ettiğimiz değerlere göre datapette kontrol işaretlerini veriyor olacak.
+
+171
+00:41:51,188 --> 00:41:58,128
+Dolayısıyla bizim burada datapath'e şu anda manuel olarak kontrol işaretleri verdiğimizi düşünelim.
+
+172
+00:41:58,708 --> 00:42:02,648
+Yapmak istediğimiz işlem, şunu biraz bitmek mümkün mü bakalım.
+
+173
+00:42:06,675 --> 00:42:08,175
+Teknik film gibi görünüyor.
+
+174
+00:42:20,596 --> 00:42:21,336
+Ah, ya da.
+
+175
+00:42:25,715 --> 00:42:27,375
+24 yapalım, daha net verelim.
+
+176
+00:42:28,576 --> 00:42:29,915
+Bu işlemi yapmak istiyoruz.
+
+177
+00:42:30,275 --> 00:42:30,995
+İşlemimiz ne?
+
+178
+00:42:31,735 --> 00:42:34,135
+R2-R3 ve R1'e aktarmak istiyoruz.
+
+179
+00:42:36,995 --> 00:42:42,155
+Şimdi, bir bakalım.
+
+180
+00:42:42,675 --> 00:42:44,475
+Öncelikli olarak şuna bakmamız lazım.
+
+181
+00:42:44,916 --> 00:42:57,016
+R2-R3 işlemini yapabiliyor muyuz burada? Yani bir çıkartma işlemi yapabiliyor muyuz? Bakalım burada aslında fonksiyon tablosuna bakıyorum. Çıkartma işlemi göremiyorum. Göremiyor muyuz? Ne dersiniz?
+
+182
+00:43:00,083 --> 00:43:27,463
+Bu şundan dolayı önemli. Önce buraya bakmanın önemi şu. Ben R2'yi A kanalına mı vereceğim yoksa B kanalına mı vereceğim? Benzer şekilde R3'ü A kanalına mı vermeliyim yoksa B kanalına mı vermeliyim? Ona karar vereceğim. Çünkü elimizde sonsuz alternatifli bir fonksiyon tablosu yok. Sadece kısıtlı bir fonksiyon tablosu var. Buna göre hareket edecek olursak da R2-R3 yani bir çıkartma işlemi yapabiliyor muyuz? Öncelikli olarak ona bakıyoruz. Çıkartma işlemimiz nerede arkadaşlar?
+
+183
+00:43:31,284 --> 00:43:41,044
+Evet, yani A artı B üstü artı bir işlemi. Yani [öğrenci]'in de verdiği cevaba bakacak olursak 0, 1, 0, 1 function select işlemi. Güzel.
+
+184
+00:43:41,904 --> 00:43:48,784
+Dikkat edecek olursanız A eksi B yapabiliyoruz. O zaman eksi vereceğimiz değerin B kanalından gelmesi gerekiyor.
+
+185
+00:43:48,784 --> 00:43:56,704
+Yani ben şunu anlıyorum. Şuraya geldiğimiz zaman. R2 yazmacı A kanalında olmalı.
+
+186
+00:43:57,652 --> 00:44:12,892
+R3 yazmacı B kanalında olmalı. Ve yapacağımız işlem function select'te 0-1-0-1 değerine sahip olmalı. Güzel. Şimdi bunu bu kararı verdikten sonra şunları söyleyebiliriz.
+
+187
+00:44:13,552 --> 00:44:25,152
+A adresi için vereceğimiz değer ne oluyor bu durumda? R2'yi A kanalına aktaracağımız için 0-1-0 oluyor. Burada sanırım yine [öğrenci]'in verdiği cevap da bu şekildeydi. Evet tamam.
+
+188
+00:44:26,324 --> 00:44:49,403
+Sonrasında B adrese bakalım. B adres için. Ne dedik? B kanalında R3 olacak. Yani 0, 1, 1 olacak. Güzel. Şimdi ne yaptık? Şuraya kadar R2'yi aktardık. R3'ü şuraya kadar aktardık. R3'ü Function Unit'in B girişine aktarabilmek için bir MUXB'den geçmemiz lazım. MUXB'ye ne vereceğiz bu durumda?
+
+189
+00:44:52,083 --> 00:45:18,463
+0 değeri vereceğiz değil mi? MUXB'ye 0 değeri vereceğiz ki sabiti değil de register'dan gelen değeri aktarsın. Daha sonrasında function select'i belirlemiştik. Function select çıkartma işlemini yapıyor. Son olarak da function unit'in çıkışını destination data'ya aktaracağız. Bunun için de MD bitlerimiz ne olması lazım? Yine 0 olması lazım. İşlem sonucunu nereye yazacağız? Destination adres olarak.
+
+190
+00:45:18,911 --> 00:45:39,591
+Bu belirlenmiş oluyor. Destination R1'i kullanacakmışız. 001. Son olarak Register File Write işareti içinde bir değerini vermemiz gerekiyor. Dolayısıyla bu kontrol işlem değerlerini manuel olarak verirsek bu durumda R2-R3-R1'e aktarılmış oluyor arkadaşlar.
+
+191
+00:45:40,467 --> 00:45:47,327
+Şimdi bir sonraki işlemimizi alalım şuradan. Bir sonraki işlemimiz R4, Shift-Write, R6 gibi bir işlem.
+
+192
+00:45:54,003 --> 00:46:13,003
+Şimdi benzer bir mantığı burada da yürütmeye çalışacağız. Şimdi elimizdeki fonksiyon tablosunda sola öteleme var mı? Önce ona bakmalıyız. Bir sola öteleme var. Fakat bu sola öteleme sadece B kanalından yapılabilir. Bu önemli bir nokta. O zaman biz şunu söylemeliyiz. B kanalında...
+
+193
+00:46:14,547 --> 00:46:29,767
+Ne olması lazım? R6 olması lazım. R6'nın B kanalında olması lazım. İşlem olarak da, function select olarak da şurada görmüş olduğumuz shift left işlemi olan 1110'ı kullanmamız gerekiyor. Peki A kanalında ne var?
+
+194
+00:46:32,187 --> 00:46:34,127
+A kanalındaki değer bizim için önemli mi?
+
+195
+00:46:36,867 --> 00:46:40,967
+A kanalı evet bizim için önemli değil. O zaman şöyle düzenleyerek gelelim.
+
+196
+00:46:41,460 --> 00:46:43,820
+Şuraya tekrar koyalım.
+
+197
+00:46:44,680 --> 00:46:49,840
+A adres için don't care diyebiliriz. 3 bitmikti. 3 tane X koydum.
+
+198
+00:46:49,840 --> 00:47:05,660
+B adres için bunun R6 olması gerektiğini gördük. 1, 1, 0 olacak. İşlem sonucu R4'e saklanacak. Dolayısıyla destination adres olarak 1, 0, 0 vermemiz lazım. Onu gördük. İşlem sonucunu yazacağız.
+
+199
+00:47:06,063 --> 00:47:18,643
+Register file write için bir değerini vermemiz lazım. Gelelim şimdi MOOCsB'ye. MOOCsB'ye ne vereceğiz arkadaşlar? MOOCsB'ye yine register'ı function unit'e aktarması gerekiyor. Dolayısıyla sıfır seçimini yaptıracağız.
+
+200
+00:47:20,063 --> 00:47:25,323
+Function select olarak değerimizi belirlemiştik. Bunu shift left işlemini yerine getirmemiz lazım.
+
+201
+00:47:26,387 --> 00:47:32,507
+Dolayısıyla A kanalında ne olursa olsun B kanalından gelen değeri bir kere sola ödeleyip çıkışına aktarıyoruz.
+
+202
+00:47:32,967 --> 00:47:41,547
+Sonrasında MUX D seçimi için de yine memoriden değil de funk unitten gelen değeri kullanacağımız için sıfır değerini vermemiz gerekiyor.
+
+203
+00:47:41,628 --> 00:47:44,907
+Bakın burada arkadaşlar gördüğünüz gibi A kanalını kullanamadık.
+
+204
+00:47:45,027 --> 00:47:48,967
+Çünkü shift işlemi sadece B kanalından gelen değerlerde var.
+
+205
+00:47:50,288 --> 00:47:54,927
+Yazmaç değerimizi B kanalına aktarmamız gerekiyor bu örnek üzerinde.
+
+206
+00:48:02,195 --> 00:48:27,195
+Herhangi bir sorumuz şu, A kanalına, A adresine gelen değerde de 4 varsa veya 6 varsa ne oluyor? Şöyle birazcık yukarı çıkmamız lazım bunun için. Şöyle gelelim. 6 varsa burada kontrol işaretinde burada da bir değer üretiliyor. Burada da bir değer üretiliyor. Şurada da bir üretilen değer var. Fakat içteki MUX'umuz sadece...
+
+207
+00:48:27,284 --> 00:48:31,704
+Shifter birimini seçiyor. Shifter bölümümüz neredeydi? Belki bir tık daha yukarıdaydı o.
+
+208
+00:48:32,563 --> 00:48:58,204
+Şöyle, aritmetik lojik birimden değer üretildi, buraya kadar geldi. Ama shifter biriminden de bir değer geldi. Fakat burada function select'e vermiş olduğumuz bitlerden bir tanesi içerideki shifter birimi mi yoksa aritmetik lojik birimi mi seçilecek onu belirliyor. İçeriden, içten bunu belirliyor ve dışarı sadece shifter biriminin gelen değeri aktarılıyor. Öyle olduğu için buradaki kombinasyonel devrede bir değer üretilse bile biz onu kullanmıyoruz.
+
+209
+00:49:00,244 --> 00:49:06,432
+BA ile aynı olmasına karşılık cevap da aynı şekilde olacak. BA ile AA aynı olsa bile...
+
+210
+00:49:06,431 --> 00:49:19,251
+Fark etmiyor. Bunu fark etmemesini sağlayan da bizim register failimizin A ve B kanal çıkışlarının birbirinden bağımsız bir şekilde istersek aynı, istersek farklı değerler üretebiliyor olması.
+
+211
+00:49:19,612 --> 00:49:30,791
+Veyahut da şöyle diyelim, herhangi bir yazmacı ben buradaki yapı ile birlikte A çıkışına veya B çıkışına aktarabiliyorum. Bunlar birbirini etkilemiyor. Birbirinden bağımsız bir şekilde gerçekleşebiliyor buradaki işlemler.
+
+212
+00:49:33,300 --> 00:49:46,800
+İçerideki karışmamasının sebebi de dediğimiz gibi içerideki seçim uçları vasıtasıyla şuradaki yapı dolayısıyla burada kombinasyonel devrede istenmeyen çıkış oluşmuş olsa bile onu zaten kullanırız.
+
+213
+00:49:48,880 --> 00:49:56,300
+Devam edecek olursak en son neyi yapmışız? Shift-Left işlemini yapmışız. Bir başka işlemimiz R7'nin inkrementi.
+
+214
+00:50:03,603 --> 00:50:11,403
+R7, increment de o yüzden artı koydum. Şimdi bakalım, increment'e ilişkin olarak nerede increment işlemimiz var?
+
+215
+00:50:12,243 --> 00:50:20,263
+İnkrement işlemine baktığımızda arkadaşlar, increment işlemi sadece şurada var. Yani girdiğimiz değerin bir fazlasını alan işlem sadece şurada var.
+
+216
+00:50:20,263 --> 00:50:29,263
+Ve bu baktığımız zaman sadece A kanalından olabilir. O zaman şuna karar verdik. Burada R7'yi...
+
+217
+00:50:29,844 --> 00:50:32,943
+R7'yi A kanalına aktaracağız.
+
+218
+00:50:34,304 --> 00:50:41,963
+Ki arttırma sadece orada var. Function select olarak da burada görmüş olduğunuz 0, 0, 0 bir işlemini kullanmamız gerekiyor.
+
+219
+00:50:42,063 --> 00:50:44,963
+Arttırma, A'yı arttır. İnkrement A işlemi.
+
+220
+00:50:45,643 --> 00:50:47,463
+Diğer bitlerde var mı böyle bir şey?
+
+221
+00:50:47,983 --> 00:50:51,824
+Yani diğer bitlerde de benzerleri var. Mesela A artı B artı B.
+
+222
+00:50:52,340 --> 00:51:11,840
+Ama bu işlemi yürütebilmek için öncesinde B'ye bir değer atamamız lazım. B'ye sıfır değer atamak lazım. Yani eğer ben bunu A kanalından yaparsam bir seferde bir cycle'da işlemi bitiyorum ama şunu kullanmaya zorlarsam işlem iki cycle'da bitiyor. Yani dolayısıyla optimum bir durum değil. O yüzden A artı bir işlemini yapmaya karar verdim.
+
+223
+00:51:12,059 --> 00:51:19,800
+Şimdi buna göre A adres için vereceğimiz değer 7 olacak. 1, 1, 1, R7'yi seçtim.
+
+224
+00:51:20,112 --> 00:51:36,692
+Daha sonra B adrese vereceğimiz değer artık don't care. Çünkü B'den gelen değeri kullanmayacağız. Sonrasında destination adres için yine işlem R7'ye aktarılacağı için 1-1-1 diyebiliriz. Register file write işlem sonucunu yazacağız. Dolayısıyla bir değerini almalı.
+
+225
+00:51:40,500 --> 00:51:56,699
+MUX B'ye verdiğimiz değer önemli mi? MUX B'ye verdiğimiz değer çünkü gelecek değer A kanalından gelecek Function Unit'e. Function Unit'in B kanalına nereden gelirse gelirse hiç B kanalını dışarı aktarmayacağı için. Dolayısıyla MUX B de bizim için don't care durumuna gelmiş oluyor.
+
+226
+00:51:58,119 --> 00:52:08,139
+A kanalını 7'yi gönderdik. Sonra Function Select için de ne vermemiz lazımmış? Şuradaki değer A kanal increment değerini vermemiz lazım. Onu da verdik.
+
+227
+00:52:08,596 --> 00:52:12,735
+Artık A artı bir değeri yani R7 artı bir değeri buraya kadar geldi.
+
+228
+00:52:12,735 --> 00:52:15,976
+Bu stede de bunu seçtirmeliyiz yani fank şimdini seçtirmeliyiz.
+
+229
+00:52:16,516 --> 00:52:20,415
+MD değerimiz de burada sıfır olarak verilmek durumunda.
+
+230
+00:52:21,056 --> 00:52:25,775
+Hepsini yazdık. 1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 4, 5, 6, 7.
+
+231
+00:52:25,855 --> 00:52:30,115
+7 tane kontrol işaretimizin her bir bitini belirleyerek yazmış olduk.
+
+232
+00:52:30,400 --> 00:52:42,239
+Dediğim gibi bu aynı işlemi başka bir fonksiyonla da, function unit'in farklı bir tablo değeriyle de yapabiliriz ama onları yapmak biraz vakit alıyor veyahut da XCYCLE'da falan ancak bitebiliyor.
+
+233
+00:52:43,219 --> 00:52:49,099
+Dolayısıyla onları biraz daha optimum olması açısından A kanalını kullanmaya karar verdik.
+
+234
+00:52:50,699 --> 00:52:54,920
+Bir başka işlemimiz, evet şimdi bu işlem nasıl yapacağız bakalım.
+
+235
+00:52:59,411 --> 00:53:01,871
+Aldık, artırma işlemi var.
+
+236
+00:53:09,523 --> 00:53:36,144
+Kalibettik ama neyse. Evet, R1'e R0 artı 2'yi aktaracağız. Şimdi burada bir toplama işlemi var ve bu toplama işlemi inkrement değil. Bu toplama işlemi inkrement değil. Bu toplama işlemi nasıl yapabiliriz? Bu sabit bir değer değil mi? Sabit değer olduğunu görüyoruz. İnkrement de değil yani 1 değil. Dolayısıyla bunu nasıl yapabiliriz arkadaşlar? İşlem bir toplama işlemi.
+
+237
+00:53:36,659 --> 00:53:40,920
+Fonksiyon olarak neyi kullanacağız? İki değeri nereden gelecek? Bununla ilgili ne dersiniz?
+
+238
+00:53:46,195 --> 00:53:46,596
+Almayacağım.
+
+239
+00:53:52,019 --> 00:53:53,840
+B'ye bir atıp
+
+240
+00:53:58,387 --> 00:54:25,807
+Tamam, şimdi burada gelen alternatifleri değerlendirmeye çalışalım. Alternatiflerden birisi B'ye bir atıp daha sonra da şuradaki işlemi yapmak. A artı B artı bir işlemini yapmak. Bunun için A'ya bir sabit şey B'ye bir sabit değer atamak lazım. İkinci öneride iki kere inkrement yapmak. Fakat bunların her birisi iki cycle. Peki sorumuz şu, bir cycle da yapabilir miyiz bu işle?
+
+241
+00:54:26,228 --> 00:54:34,288
+2 değerini, artı 2'yi nereden getirebiliriz? Başka bir yerden getirme imkanımız var mı acaba? Ne dersiniz?
+
+242
+00:54:42,099 --> 00:54:43,780
+Ne dersiniz sabit değerle ilgili?
+
+243
+00:54:45,740 --> 00:54:47,460
+Bunu aslında şöyle de kompoz edelim.
+
+244
+00:54:47,579 --> 00:54:48,599
+Yani şöyle ayrıştıralım.
+
+245
+00:54:49,119 --> 00:54:50,559
+Bu bir toplama işlemi diyelim.
+
+246
+00:54:50,760 --> 00:54:54,059
+Toplama işlemi R0 ile 2 sabit değerinin toplaması.
+
+247
+00:54:54,300 --> 00:54:57,539
+Toplama işlemi olduğuna göre işlemimiz şu olsun.
+
+248
+00:54:57,680 --> 00:54:58,579
+0, 0, 1, 0.
+
+249
+00:54:58,700 --> 00:54:59,820
+Toplama işlemi bu çünkü.
+
+250
+00:55:00,440 --> 00:55:02,260
+Dolayısıyla bu bir toplama işlemi dedik.
+
+251
+00:55:05,860 --> 00:55:07,860
+Toplamaya girenler için ne diyoruz?
+
+252
+00:55:08,275 --> 00:55:13,735
+Sabitten 2 getirip, sabitten 2 getirmek bizim aradığımız yani. Evet, kesinlikle doğru.
+
+253
+00:55:14,296 --> 00:55:24,476
+Toplama işlemi. Toplamaya giren parametreler ise şunlar olacak. Bir tanesi V0, diğeri ise sabit değer olarak 2 değerini kullanacak.
+
+254
+00:55:24,476 --> 00:55:32,476
+Dolayısıyla sabit 2 değerini biz nasıl oluşturacağız? Sabit 2 değerini nasıl oluşturacağız? Bir fikrimiz var. Burası biraz...
+
+255
+00:55:33,235 --> 00:55:57,295
+Önemli mi diyeyim? Veyahut da bununla ilgili fikriniz nedir? Sabit iki değerini nasıl oluşacak? Şurada iki değeri burada oluşacak. İki değerinin burada oluşmasını kastediyoruz. Sabit, constant in derken bunu kastediyoruz ama fiziki olarak veya gerçekte biz bu ikiyi nereye yazacağız? Nasıl bir şey yazacağız? 8086'daki bilgilerinizi kullanarak bir şey söyleyebilirsiniz belki. Yok, o şekilde değil.
+
+256
+00:55:59,188 --> 00:56:01,548
+Maskeleme şeklinde bir cevap gelmiş ama o değil.
+
+257
+00:56:08,436 --> 00:56:28,156
+Tekrar söyleyeyim. Bunun bu işlemin bir toplama işlemi olmasına karar verdik. Operantlar R0 register file'dan gelecek ve iki değeri de şuradaki constant in inputlarından gelecek. Peki biz bu sabit değer input uçlarına 2'yi nasıl aktarabiliriz? Veya 2'yi buraya yazma işlemini nasıl sağlayabiliriz?
+
+258
+00:56:34,452 --> 00:56:36,331
+Söyleyebilirsiniz diye düşünüyorum.
+
+259
+00:56:39,672 --> 00:56:43,831
+Yani bu sabit ikinin görünmesini sağlayacak bir instruction.
+
+260
+00:56:44,432 --> 00:56:45,932
+Komut istiyorum aslında.
+
+261
+00:56:47,552 --> 00:56:48,932
+Biraz daha ipucu vermiş olalım.
+
+262
+00:56:50,012 --> 00:56:54,751
+Öncelikli olarak burada bunu bir instruction, komut ile sağlayacağız demenizi bekliyordum.
+
+263
+00:56:55,751 --> 00:56:56,831
+Onu söylemiş olduk.
+
+264
+00:56:57,204 --> 00:57:02,324
+Peki, bunu komutta nasıl vereceğiz? Şöyle vereceğiz arkadaşlar. 8086'da ne yapıyorduk?
+
+265
+00:57:03,124 --> 00:57:10,704
+Add mesela AL, 2 diyorduk değil mi? Burada bu instruction içerisine gömül olarak geliyor.
+
+266
+00:57:10,704 --> 00:57:16,724
+Biz bunun binary haline baktığımız zaman add işlemine karşılık bir opcode var.
+
+267
+00:57:17,907 --> 00:57:44,987
+Eğer 8 bitlik bir işlemse ve yazmaç olarak AL'ye kullanıyorsak AL için bir bit genişliği var. Daha sonra da sabit alanı için 8 bitlik bir boş yer bize ayrılıyor. O boş alana da iki değerini yazıyoruz. Yani bu instruction içerisinde gömülü. Instruction'ın bitleri içerisinde iki değeri var. Instruction'ı dekod ederken o ilgili sabit immediate değer kısmındaki bitleri alıp burada constant in değeri bağlayan bir arkada lojik yapı var, devre var.
+
+268
+00:57:45,907 --> 00:58:12,007
+gelmiş oluyor. Dolayısıyla biz böyle bir komut yürüttüğümüz için sabit inputlara iki değeri geldi. Öyle düşünelim. Tamam mı? Şimdi bu örnek olarak bu gözümüzün önünde kalsın. Şimdi ne dedik? A toplama işlemi yapacağız. Sabit iki değerini vereceğiz. Sabit değeri B kanalından gelmeli. Function unit de B kanalından gelmeli. Dolayısıyla B kanalı sabit değer
+
+269
+00:58:12,820 --> 00:58:21,699
+B kanalını kullanmalı. Bununla birlikte R0 için ise A kanalını kullanmamız gerekiyor. Bu ortaya çıktı.
+
+270
+00:58:23,840 --> 00:58:32,300
+O zaman bizim A adres için vereceğimiz değer 0.0.0. B adres için vereceğimiz değer nedir?
+
+271
+00:58:34,800 --> 00:58:36,980
+B adres için hangi değeri vereceğiz?
+
+272
+00:58:43,891 --> 00:59:11,451
+B adres, register file'ın B çıkış kanalına hangi register'ı aktaracağımızı veriyor. Biz B kanalını sabitle kullanmaya karar verdik. Sabit nereden geliyor? Instruction içerisinde gömülü bir bit dizisi vardı. Onu doğrudan burada constant in girişlerine bağladık. Buraya kadar geldi. Dolayısıyla register file'dan B kanalına çıkacak değer bizim için don't care'di. Daha sonrasında destination adres için R1'e aktarılacakmış 001. Yazma işlemi yapıyoruz 1.
+
+273
+00:59:12,467 --> 00:59:25,907
+Sonrasında MUXB'ye bakalım. MUXB için instruction'dan dekod ettiğimiz sabit değer, constant in B kanalına, function unit'in B input'una aktarılmalı. O yüzden MB'ye bir değerini vereceğiz.
+
+274
+00:59:26,687 --> 00:59:31,747
+Function select işlemi için toplam olmasına karar vermiştik. 00, 1, 0 işlemini yapacağız.
+
+275
+00:59:32,175 --> 00:59:47,055
+Daha sonrasında da Function Unit çıkışını Destination Data'ya aktarmak için MD'ye sıfır değerini vermemiz gerekiyor. Dolayısıyla buradaki işlem için karşılaştığımız senaryo böyle bir durum olmuş oluyor arkadaşlar. Anlaşıldı mı bu?
+
+276
+00:59:52,244 --> 00:59:53,604
+Net mi arkadaşlar biraz?
+
+277
+00:59:55,504 --> 00:59:56,244
+Tepki alayım.
+
+278
+00:59:58,544 --> 00:59:59,104
+Tamam, pek.
+
+279
+00:59:59,824 --> 01:00:01,244
+Bir sonraki örneğimize bakalım.
+
+280
+01:00:02,644 --> 01:00:03,403
+Seçelim.
+
+281
+01:00:05,544 --> 01:00:06,724
+Yukarı geldik.
+
+282
+01:00:13,556 --> 01:00:27,695
+Şimdi R3'ü Data Out'a aktarmamız gerekiyor. Yani burada aslında şöyle de diyebiliriz. Data Out'a aktarmak bunu şöyle de özetleyelim.
+
+283
+01:00:43,668 --> 01:01:10,447
+R3'ü aktarmak istedim. Çünkü şey yaptığımız zaman farklı bir durum olacak. Aslında bu data out'u bu şekilde biraz daha spesifikleştirelim. Buradan kastettiğimiz şey R3'ü data out'u aktarmayı biraz daha genişletelim. R3 yazmacındaki veriyi R1 yazmacındaki memory adresine aktarmaya çalışalım. Daha geniş bir hali. Peki burada ne yapacağız?
+
+284
+01:01:11,188 --> 01:01:30,007
+Burada aslında hangi uçları kullanıyoruz fiziki olarak onlara bakalım. Bir kere şurada bir memory birimimiz vardı. Bu memory birimini kullanacağız. Bu memory birimini kullanmamız lazım. Bu memory birimini kullanabilmek için memory biriminin kendi memory write kontrolücü vardı. Onu hatırlıyoruz.
+
+285
+01:01:38,612 --> 01:02:04,431
+Function Unity kullanıyor muyuz? Function Unity kullanmıyoruz değil mi? Yani şu iki ucu kullanıyoruz. Bu iki uç bir de memory write kontrolü bizim için yeterli. Function selector falan kullanmıyoruz. Değeri tekrar geri alıp register file'a yazmıyoruz. Destination adres bizim için anlamlı değil. Yazma işlemi yapmıyoruz. Reg file write onu kullanmayacağız. Ama A adresi kullanıyoruz ki bu memory için adres çıkışı oluştursun.
+
+286
+01:02:04,768 --> 01:02:16,248
+ve B adresi de kullanıyoruz ki bu da yazacağımız veriyi oluştursun. Dolayısıyla burada yaptığımız işlemler kısıtlı. Datapath'in çok kısıtlı bir kısmını kullanmak demek.
+
+287
+01:02:16,867 --> 01:02:22,539
+A adres aslında memorinin adres değerini oluşturacaktır. Bu R1'de var. Dolayısıyla R1'i...
+
+288
+01:02:23,380 --> 01:02:41,140
+Adres değeri, R1'in değerini adres olarak dışarı çıkmam gerekiyor. BA'daki değer, yazacağım data. Yazacağım data, R3'de var. 3 numaralı yazmaçta var. Onu koydum. Destination adres, değeri geri yazmayacağım. Don't care. Register, file, write bizim için don't care. Yazmayacağız.
+
+289
+01:02:42,291 --> 01:03:08,411
+MUXB'yi nasıl kullanacağız? MUXB'yi dışarıdan gelen bir sabit değer değildi. Şurada benim R3'ü dışarı aktarmıştım. R3'ü tekrar buradan memori değeri olarak aktarmam lazım memoriye. Öyleyse bunu 0 ile seçtirmem gerekiyor. Sabiti değil de register 3'ü aktaracağım. Daha sonrasında function select'te vereceğimiz 4 bitki değer don't care.
+
+290
+01:03:08,884 --> 01:03:23,463
+MOOCs D'ye vereceğimiz değer don't care. Çünkü kullanmıyoruz bunları. Bizim amacımız sadece buradaki register file'dan register 1'i adres değeri olarak çıkmak. Register 3'ü de şuraya kadar getirip datapath olarak çıkartmak.
+
+291
+01:03:23,775 --> 01:03:50,775
+Son olarak burada görmediğimiz memory write kontrolü vardı. Hatırlayacak olursanız o da memory biriminin uçlarına, şurada görelim güzelce, memory biriminin uçlarına data ve adres geldi. Bu gelen değerleri yazalım mı içeri yoksa gelen adrese karşılık bir data out üretilsin, MUX diye seçilsin buna ilişkin bir durum. Dolayısıyla biz gelen değeri yazacağımız için memory write kontrolüne de şimdilik görmemiştik.
+
+292
+01:03:51,775 --> 01:04:07,575
+Bir değerini veriyor olacağız. Burası net mi arkadaşlar? Bu yapı. Bakın, datapathin büyük bir kısmını kullanmadık. Sadece şu iki uca değer çıktık. Bir de memory write'a bir vermemiz gerekenler. Diğerleri herhangi bir değeri alabilir. Onları kullanmıyoruz. Burası net midir?
+
+293
+01:04:11,572 --> 01:04:12,451
+Tepki alalım.
+
+294
+01:04:14,451 --> 01:04:15,411
+Tamam.
+
+295
+01:04:17,411 --> 01:04:23,051
+Bir başka şey, Z4 yazmacına memorideki bir değeri aktarma.
+
+296
+01:04:24,051 --> 01:04:25,951
+Şöyle onu da bir düzenleyeceğim şimdi.
+
+297
+01:04:28,092 --> 01:04:29,172
+Kopturuldum ya.
+
+298
+01:04:41,556 --> 01:04:50,736
+Şimdi bu data in'i R4'e aktarmak şeklinde ama yani memoriden gelen bir değeri içeri aktaracağız ama bunu da genişletelim. Şöyle diyelim.
+
+299
+01:04:57,076 --> 01:05:10,416
+R7 numaralı adres içeriğini aktaram. Yani burada bir dolaylı adresleme yapıyoruz. Ne yapıyoruz? Adres değeri R7 yazmacımızda. R7 yazmacındaki adres değerine erişip oradaki içeriği R4 yazmacına aktarmak istiyoruz.
+
+300
+01:05:10,931 --> 01:05:25,612
+Şimdi burada yine bu aktarımı yapabilmek için aslında işlem nasıl yürüyor? Buradan bir takım değerler çıktı. Bunlar memoriye gitti. Memoriden değerler üretildi. Data in MOOC'de üzerinden geri aktarılıyor. Yani burada Function Unity yine bypass ettiğimiz bir senaryo söz konusu.
+
+301
+01:05:26,371 --> 01:05:35,612
+Burada benzer şekilde adres değerimiz R7'de. Bu kanal A'da olmalı. Dolayısıyla A adresi açısından 1.1.1 değerini vermeliyiz.
+
+302
+01:05:36,628 --> 01:05:49,548
+Şuradaki data değeri olarak vereceğimiz değerin bir anlamı var mı? Ne dersiniz? BA için ne dersiniz? Data out için. Data out için ne vereceğiz?
+
+303
+01:05:57,972 --> 01:06:13,872
+Data out'a ne getirmemiz lazım? Amacımız ne? Memorinin R7 numaralı adresinin verisini şu uçlara çıkartabilmek. Amacımız bu. Buradan da aktarıp D data, destination data'dan R4'e kopyalayacağız.
+
+304
+01:06:16,232 --> 01:06:25,092
+Don't care olacak. Evet. B kanalından gelen data out. Yani memoriye bir şey yazmayacağımız için bunlar don't care olacak. Evet, kesinlikle aradığımız cevap buydu.
+
+305
+01:06:25,876 --> 01:06:38,216
+destination adrese ne vereceğiz? Buradan destination dataya getirdiğimiz veri R4'e yazılmıyor. O yüzden R4 yaptık. Yazma işlemi var mı register file'a? Evet, R4'e yazma yapacağımız için var.
+
+306
+01:06:38,736 --> 01:06:53,876
+Sonrasında functions select'e gelelim. Hatta muxb'ye gelelim. Muxb'ye ne yapacağız? Şimdi buradan B kanalını kullanmadığımız için, muxb'de bizim için don't get. Yani ister şunu aktarsın, ister B'den ne seçtiyse onu aktarsın. Biz bunu kullanmayacağız.
+
+307
+01:06:53,876 --> 01:07:02,276
+Buraya yazı, memoriye yazma yapmayacağız. Memoriye yazma yapmayacağımıza göre, memori write'ı da 0 olarak görelim. Şurada görmediğimiz için.
+
+308
+01:07:02,276 --> 01:07:08,676
+Sonrasında function select'e gelelim. Function select için vereceğimiz işlem, function unit'i bypass ediyorduk.
+
+309
+01:07:08,676 --> 01:07:13,876
+Memori'de bir adres gönderiyorduk, o adres içerisinde data in üzerinden destination data yaklaşırıyoruz.
+
+310
+01:07:13,876 --> 01:07:20,276
+Dolayısıyla function select de 4 bit don't care olarak karşımıza çıkıyor. Son olarak muxd'ye ne vermeliyiz?
+
+311
+01:07:23,795 --> 01:07:34,735
+MUXD'ye de olsa olsa 1 vermemiz gerekiyor. Evet, buraya da 1 değeri vermiş oluyoruz arkadaşlar. Ve bu sayede bu veri aktarımına sağlamış oluyoruz. Şimdi bir son örneğimiz var. Ona bakalım.
+
+312
+01:07:41,556 --> 01:08:06,416
+Şimdi R5'e sıfır değerini atamak. Enteresan bir şey. Function tablomuza bakıyoruz. Function unit içerisinde sıfır atama diye bir fonksiyon yok. R5'teki değer 1'de olabilir, 2'de olabilir, 4'lik, n'lik herhangi bir değer olabilir. Nasıl sıfırlayacağız? Ne dersiniz? Buradaki fonksiyonlardan hangisini kullanırsak bu sıfır olalım? Single cycle bir işlem arıyoruz.
+
+313
+01:08:09,780 --> 01:08:32,659
+XOR işlemiyle, evet. XOR işlemini nasıl yürütüyorduk peki? 8086 SMD dersinden hatırlıyoruz sanırım. Şöyle bir ek şey açalım. XOR, yazamamışım. Hala yazamıyorum. XOR, AL, AL işlemi sonucunda, 8086'da böyle bir işlem vardı. AL'ye atanan değer ne oluyordu arkadaşlar?
+
+314
+01:08:49,844 --> 01:08:51,084
+Sayısal bir değer işliyor.
+
+315
+01:08:52,884 --> 01:08:54,043
+Sıfır oluyor değil mi?
+
+316
+01:08:54,543 --> 01:08:57,524
+Bunun sıfır olmasının sebebi de şu.
+
+317
+01:08:58,524 --> 01:08:59,984
+Sıfır olmasının sebebi de şu.
+
+318
+01:09:02,043 --> 01:09:04,824
+Sıfır, XOR, sıfır.
+
+319
+01:09:05,203 --> 01:09:05,783
+Neye eşit?
+
+320
+01:09:07,203 --> 01:09:07,863
+Sıfıra eşit.
+
+321
+01:09:08,684 --> 01:09:11,064
+Bir, XOR, bir neye eşit?
+
+322
+01:09:11,604 --> 01:09:34,604
+O da 0'a işte. XOR zaten böyle çalışıyor. XOR'da eğer bitler aynıysa işlem sonucu 0 çıkıyor. Biz AL yazmacının her bir bitini kendi sırasındaki bitiyle XOR'a bitwise olarak XOR'a sokarsak her bir bitwise işlemde girecek değerler XOR'a girecek değerler aynı olur. Dolayısıyla biz aslında yazmacı kendisiyle XOR'a sokarsak
+
+323
+01:09:35,155 --> 01:09:46,476
+Aynı bitleri, aynı değerli bitleri XOR'a sokmuş oluyoruz. Dolayısıyla her bir biti sıfırlamış oluyoruz. İşlem sonucu AL'yı sıfır yapmak. O zaman bizim burada kullanacağımız işlem aslında XOR işlemi oluyor.
+
+324
+01:09:49,195 --> 01:09:59,775
+R5'e sıfır değeri atacağımız için XOR işlemini nerede yapıyor? A ve B kanallarında yapıyor. A ve B kanallarında o zaman biz R5 XOR R5'i yapmalıyız.
+
+325
+01:10:00,000 --> 01:10:06,899
+Aslında bizim burada R5'e 0 atamaktan kastımız R5 atama işlemi.
+
+326
+01:10:10,547 --> 01:10:36,087
+R5, XOR, R5 yapmamız gerekiyormuş. Bu durumda XOR işleminde A kanalıyla B kanalının XOR'a sokuyormuş. A kanalından da 5 çıkacak, B kanalından da 5 çıkacak, destination da 5 olacak. O zaman başlayalım. A adres 5 olacak. 1.0.1. B adresimiz ne olacak? 1.0.1. Destination adres ne olacak? O da 1.0 olacak. Yazma yapıyor muyuz? Yapacağız.
+
+327
+01:10:36,979 --> 01:10:45,340
+FUNCTION UNIT'in B kanalına register file'dan gelen R5'i aktarmamız lazım. O yüzden MB'ye vereceğimiz değer 0 olmalı.
+
+328
+01:10:46,228 --> 01:11:06,827
+Function select'te ne vereceğiz? XOR işleminin karşılığı 1.0, 1.0 olacakmış. 1.0, 1.0 işlemi. MOOC's D seçimi için ne vereceğiz? MOOC's D seçimi için de Function unit'in çıktısını Destination Data'ya aktarabilmemiz için 0 vermemiz gerekiyor. Dolayısıyla 2, 4, 6, 7, 7 tane datapath kontrolünü buraya yazmış olduk.
+
+329
+01:11:07,184 --> 01:11:23,024
+Burada yine belki memory write işlemini de bir şekilde hatırlamamız gerekiyor. Çıkan hasbelkader burada data ve adres değerleri çıkıyor. Bunların yazılmasını istemiyoruz. O yüzden memory write'a da 0 vermemiz gerektiğini hatırlamamız uygun olur sanki bu aşamada.
+
+330
+01:11:23,731 --> 01:11:41,752
+Dolayısıyla burada biz şuradaki tasarlanadığımız datapath yapısı üzerinde Registered Transfer Language kullanarak yani daha instrakşınlara girmeden bir adım geriden takip ederek farklı işlemlere karşılık kontrol uçlarına vermemiz gereken değerler bunların karşılıkları nedir onları bulmuş olduk.
+
+331
+01:11:46,479 --> 01:11:58,419
+elde etmiş olduk arkadaşlar. Şimdi bu noktada buraya kadar olanlar neyse bir kısa ara vereceğiz. Aradan sonra da bunu kontrol birimiyle birlikte birleştirdiğimiz bir senaryoyu incelemeye çalışacağız. Buraya kadar olanlar neyse.
+
+332
+01:12:02,515 --> 01:12:19,555
+Sadece datapath yapısını kullandık. Bu datapath yapısı üzerinde kontrol işaretlerini elde etmeye çalıştık. Tamam. Tepki de aldık. Şimdi arkadaşlar şöyle yapalım. Bir 15 dakika kadar ara verelim. Yani 15.30'da devam edeceğiz.
+
+333
+01:12:21,995 --> 01:12:28,635
+15.30'da devam edeceğiz. 15.30'da hangi noktadan devam edeceğiz? Orada da kontrol birimini.
+
+334
+01:12:29,108 --> 01:12:42,308
+Devreye nasıl alıyoruz? Kontrol birimine ilişkin ekstradan bir takım kontrol işaretleri çıkacak. Artık şurada yapmış olduğumuz Registered Transfer Language üzerinden yaptığımız işlemleri Instruction'lar üzerinden yapacağız.
+
+335
+01:12:42,308 --> 01:12:53,307
+Instruction'ları da hatırlayacak olursanız iki hafta önceki dersimizde Instruction Set Architecture üzerinden görmüştük. Dolayısıyla şunu da hatırlamamız gerekiyor.
+
+336
+01:12:54,100 --> 01:13:00,840
+Bizim buradaki fonksiyon tablomuzdan çok daha geniş bir instruction set architecture'ımız olacak.
+
+337
+01:13:01,460 --> 01:13:06,020
+Ama aslında oradaki her bir komutluk buradaki fonksiyonlardan bir tanesini kullanacak.
+
+338
+01:13:06,659 --> 01:13:13,240
+Mesela aynı yazmaçları XOR'da kullanarak sıfır atamasını yapabiliyor olduk gördüğünüz örnek üzere.
+
+339
+01:13:13,240 --> 01:13:19,800
+Yani buradaki fonksiyon tablosundan çok daha geniş bir instruction set architecture'ımız olmuş olacak.
+
+340
+01:13:19,900 --> 01:13:21,560
+Onları konuşuyor olacağız aradan sonra.
+
+341
+01:13:22,036 --> 01:13:24,496
+Şimdi ara verelim. 30 geçe devam edeceğiz.
+
+342
+01:32:43,828 --> 01:32:47,728
+Arkadaşlar, merhaba tekrardan. Kaldığımız yerden devam edelim.
+
+343
+01:32:50,427 --> 01:33:00,028
+Şimdi en son sadece datapath kısmıyla ilgili olarak, register transfer ili çerçevesinde bir takım işlemleri yerine getirebiliyor muyuz diye bakmıştık.
+
+344
+01:33:01,028 --> 01:33:03,648
+Şimdi oradan devam ederek ilerleyecek olursak.
+
+345
+01:33:09,395 --> 01:33:21,095
+Sistemi tamamlayan diğer unsurlardan da bahsetmemiz uygun olur. Yani daha önce görmüş olduğumuz şu yapıyı oluşturan fonksiyon birimlerinden, modüllerden bahsetmemiz gerekir.
+
+346
+01:33:22,228 --> 01:33:44,127
+Sistemimizde kullanılan bütün hafıza birimlerine bakacak olursak bu hafıza birimlerine biz aslında register file kısmını gördük. Register file kısmı neye karşılık geliyordu? Bizim datapath yapımızdaki şurada maviyle işaretlenmiş olan senkron artışı devre kısmına yani durum değişimleri, veri yazma işlemlerini senkron olarak gerçekleştiği kısma karşılık geliyordu.
+
+347
+01:33:45,011 --> 01:33:58,071
+Bu register file'ımızda. Bunun haricinde bir program counter'dan, bir instruction memory'den, bir de data memory'den daha bahsedebiliriz. Data memory'e aslında değindik. Data memory burada neye karşılık geliyor arkadaşlar?
+
+348
+01:34:00,751 --> 01:34:06,591
+Data memory bizim şuraya yerleştireceğimiz bir memory birimine karşılık.
+
+349
+01:34:07,423 --> 01:34:18,003
+işlemlerimiz için RAM anlamında kullanabileceğimiz bir bloğa karşılık geliyor. Adres değerleri A kanalından geliyor, yazılacak data değeri B kanalından geliyor.
+
+350
+01:34:18,003 --> 01:34:33,763
+Eğer buraya yazma yapacaksak memory write kontrolü ile kontrol edilebiliyor. Eğer yazma yapmayıp sadece okuma yapacaksak memory write ucuna 0 verip gelen adres ucuna karşılık içerik data in uçlarına çıkartılabiliyor. Böyle bir blok yapısından bahsediyoruz.
+
+351
+01:34:34,707 --> 01:34:53,287
+Data memory buna karşılık giriyor. Bir de instruction memory'miz ve program counter var. Instruction memory ve program counter'ı birlikte düşünelim. Program counter aslında instruction memory'nin adres göstergesi. Yani biz instruction memory'nin hangi satırıyla ilgili işlem yapıyoruz?
+
+352
+01:34:54,003 --> 01:35:19,884
+Bu adres değeri program counter içerisinde tutuluyor. Yani sistemimizin resetlendiğini yahut da sıfırdan başlatıldığını düşünelim. Bizim reset vektörümüz hangi adreste ise program counter'a bu değer yükleniyor. Program counter'a yüklenen değer, işte instruction memori'de belirli bir adrese karşılık veriyor. Bu adreste örneğin güncel bilgisayarlarda ne var? BIOS ROM'u var. BIOS ROM'u ne yapıyor? BIOS ROM'u sistemdeki
+
+353
+01:35:20,692 --> 01:35:43,152
+Çeşitli kontrollerin yerine getiriyor. İşte RAM, ana main memory birimleri yerinde mi, var mı? İlgili birimlerin kontrolleri gerçekleşiyor. Bunlar yerinde mi? Tamam mı? Sistem bootu hazır mı? Bunları kontrol ediyor. Bunlar gerçekleştikten sonra da sistem bootunu işletim sistemine devredildi. Dolayısıyla buradaki mimariyi şöyle düşünebiliriz.
+
+354
+01:35:43,859 --> 01:35:49,439
+Program Counter Instruction Memorinin adresine ilişkin değer tutuyor.
+
+355
+01:35:49,908 --> 01:36:00,507
+Sistemimiz açıldı. Biz kendimiz bir program çalıştırıyoruz. Burada ne gerçekleşiyor? Yine program counter bizim yürüteceğimiz programın ilk giriş adresini gösteriyor.
+
+356
+01:36:01,168 --> 01:36:10,068
+Sırasıyla çalıştıracağımız yapısal komutlar varsa her komut boyutu kadar program counter instruction boyutu kadar artıyor.
+
+357
+01:36:10,068 --> 01:36:17,908
+Mesela her bir komutumuz iki başsa program counter ikişer ikişer artıyor. Öyle bir noktaya geliyoruz ki burada bir koşulu daha...
+
+358
+01:36:17,908 --> 01:36:19,908
+Bu koşulu davranmaya göre
+
+359
+01:36:20,304 --> 01:36:33,324
+Ya hemen bir satır alttaki komutu yürüteceğiz veyahut da eğer koşul doğruysa 100 adres ötedeki bir komutu yürüteceğiz. Buna göre de artık program counter ya 2 artacak veya 100 değer artacak.
+
+360
+01:36:33,463 --> 01:36:44,524
+Buna ilişkin işlemi gerçekleştirmek için de burada program counter'a ilişkin olarak bir dallanma var mı? Bu koşuldu dallanma mı? Bunları belirleyecek ek kontrollere ihtiyacımız var.
+
+361
+01:36:47,967 --> 01:37:09,568
+Bu bloklar ile birlikte, memory blokları, bizim single cycle CPU dediğimiz yapıyı tamamlamış oluyorlar. Tekrar etmek gerekirse register file bizim yazmaç dosyamız, program counter o sırada yürütülecek komutu tutuyor. Bizim yürüteceğimiz bütün komutlar bir instruction memory'de saklı.
+
+362
+01:37:10,163 --> 01:37:17,923
+Biz yürüteceğimiz komutlara ilişkin olarak geçici bir hafıza alanına ihtiyacımız varsa bunun için data memory kullanıyoruz diye ifade edebiliriz.
+
+363
+01:37:19,104 --> 01:37:24,024
+Peki instruction memory'de neler saklı demiştik. Instruction memory'de bizim komutlarımız saklı.
+
+364
+01:37:24,104 --> 01:37:30,384
+Örneğin bir 8086 SM'li kodu yazdık. Bunu makine koduna çevirdik ve bunu ROM'a attık.
+
+365
+01:37:30,384 --> 01:37:35,384
+İşte ROM'da gördüğümüz şeyler bu instructionlarımız. Binary karşılıklar instructionlarımız.
+
+366
+01:37:35,859 --> 01:37:58,859
+Daha önceki haftalarda şeyi de görmüştük, Instruction Set Architecture'da da görmüştük. Bizim karşılaşabileceğimiz komut tipleri 3 farklı yapıda verilebilir. Bu datapath yapısıyla ilişkili olarak bunu düşünelim. Bunlardan birincisi register işlemlerine ilişkin bir takım komutlar olabilir. Bu komutları nasıl örnekleyebiliriz? Örneğin, bir register işlemi gerçekleştireceksek...
+
+367
+01:38:02,355 --> 01:38:14,355
+Yani şöyle bir işlem olabilir. 80-86'dan örnek veriyorum. Fakat burada 3 kaynaklı durum var. MIPS örneği gibi de düşünebilirsiniz bunu. 3 yazmaçlı bir örnek.
+
+368
+01:38:14,355 --> 01:38:21,456
+Evet, R1, R2, R3 diyelim. Örneğin burada kast edilen işlem.
+
+369
+01:38:22,355 --> 01:38:46,235
+R3 bir kaynak, R2 ikinci kaynak. Dolayısıyla R2 ve R3'ü ne yapacağız? Toplayacağız. İşlem sonucunu nereye yazacağız? Destination R1'e yazacağız. Dolayısıyla buradaki birinci karşılaşabileceğimiz tip komutlarımız bunlar olabilir. Bu tür komutlar olabilir. Yani yazmaç işlemleri temel olarak özetlemek gerekirse yazmaç işlemleri olabilir.
+
+370
+01:38:47,444 --> 01:39:03,024
+İkinci bir komut grubu ise immediate komutlar. Yani sabit değer içeren komutlar olabilir. Bunu da yine add komutu üzerinden verelim. Add R7, R6, 3 diyebiliriz. Mesela buradan kast edilen ne?
+
+371
+01:39:04,024 --> 01:39:13,864
+3 bir operant, sabit, immediate bir operant. R6 da bir operant. Bu da bir kaynak operant. Dolayısıyla aslında amacımız R6 ile 3 sabit değerini ne yapacakmışız?
+
+372
+01:39:15,252 --> 01:39:37,872
+İşlem sonucunu tekrar R7'ye yazmamız gerekiyor. Burada sabit değer için bize ayrılan alan kaç bitkik arkadaşlar? Bakalım burada operant ifade edilmiş 0, 1, 2 yani 3 bitkik bir alan. Bu mimaride, bu tasarımda sabit değer olarak yazabileceğimiz şey aslında 0 ile 7 arasında sabit bir değer arkadaşlar. Dikkat edeceğimiz nokta bu.
+
+373
+01:39:42,931 --> 01:39:54,071
+Sabit değer verebiliyoruz. Çünkü bizim OP kodumuz, immediate işlem kullandığında, immediate değer için sadece 3 bitlik yer ayırmış. Tasarım gereği bu şekilde.
+
+374
+01:39:55,951 --> 01:40:01,971
+Üçüncü tip komutlarımız ise arkadaşlar, dallanma, koşullu ve koşulsuz dallanma komutları.
+
+375
+01:40:02,891 --> 01:40:04,791
+Bunu da şöyle düşünebiliriz.
+
+376
+01:40:06,971 --> 01:40:08,671
+Branch if zero.
+
+377
+01:40:11,091 --> 01:40:23,031
+R1, virgül, mesela burada da altı bitli bir değere ihtiyacımız var, 60 diyelim.
+
+378
+01:40:25,051 --> 01:40:28,691
+Veya bir label diyelim, label. Daha anlamlı olur.
+
+379
+01:40:30,151 --> 01:40:34,131
+Bu komut grubundaki ise, inceleyecek olursak, şuradaki opcode,
+
+380
+01:40:34,579 --> 01:40:41,380
+Branch, IFS-Züro'ya ilişkin OP-COT. Buradaki OP-COT neydi? Toplama ilişkin. Burayı da yine örnek toplama için vermiştim.
+
+381
+01:40:42,323 --> 01:41:05,243
+Burada neye bakıyor? Bir koşullu dallanma durum var. Neyin koşullu dallanması? R1 yazmacının içeriği sıvır ise dallanıyor. Nereye dallanıyor? Label etiketine. Bu bir adres değeri. Bu adresi nasıl saklıyoruz? Bakın. Adres değerini şurada ve şurada ikiye bölerek saklıyoruz. Yani 3 biti burada, 3 biti burada. O zaman bizim adres olarak kullanabileceğimiz alan ne kadarlık bir kısmı oluyor? Şöyle alacak olursak.
+
+382
+01:41:08,435 --> 01:41:31,735
+Toplamda burada işaretlemiş olduğum alan itibariyle 3 bit yüksek anlamlı, 3 bit düşük anlamlı 6 bitlik bir göreceli adres değeri verebiliriz. Yani mevcut program counter'ımız buraya ulaşacak kadar değişebiliyor. Dolayısıyla bu da 3. tip bizim karşılaşabileceğimiz instruction tiplerine karşılık geliyor arkadaşlar.
+
+383
+01:41:35,604 --> 01:41:56,904
+Benzer bir durumu, datapath için görmüştük ya, belirli komutları yürütmek için neler yapmamız gerekiyor. Benzer bir durumu tamamlanmış single cycle kompütür mimarisi için de bakalım. Yani bu ne demek? Burada öyle bir mimarimiz var ki bu mimaride her bir işlem bir clock cycle'da gerçekleşebiliyor.
+
+384
+01:41:58,100 --> 01:42:09,300
+Biz sadece bunun datapath kısmını görmüştük. Ama ek olarak bir de instruction memory ve bunun çeşitli kontrollerine ihtiyacımız var. Bir de onlara bakmamız lazım. Dolayısıyla şunu büyütelim.
+
+385
+01:42:10,452 --> 01:42:26,152
+Karşılaştığımız mimari genişletilmiş haliyle bu arkadaşlar. Biz şu gri ile işaretlenmiş olan kısmı gördük. Aynı zamanda bu data memory kısmını da tanımlayarak kullandık. Şu kısmı, kontrol kısmını detaylı bir şekilde anlatmak. Şimdi oraya ilişkin duruma bakalım.
+
+386
+01:42:27,507 --> 01:42:44,268
+Data memory'nin kullanımı neydi? Biz bir adres ve data değeri oluşturup bunu memoriye, data memory'e yazabiliyorduk veya bir adres değeri oluşturup memoriye yazma işlemi yapmadan o adres içeriğini çıkartıp register'lara aktarabiliyorduk. Böyle bir imkanımız data memory eklemekle mümkün olmuştu.
+
+387
+01:42:44,268 --> 01:42:54,251
+Bunu yapabilmek için ilgili data out, address out, memory, write, control işareti ve data in, control uçlarını bağlayarak bu bağlantıyı tamamlayabiliyoruz.
+
+388
+01:42:54,547 --> 01:43:07,547
+Şimdi kontrol tarafına gelelim. Kontrol tarafı aslında bizim yürüteceğimiz, hani az önce el ile manuel olarak takım kontrol işaretleri hesaplıyoruz demiştik ya, bu manuel olarak hesapladığımız kontrol işaretlerini otomatik olarak üreten yapı.
+
+389
+01:43:08,447 --> 01:43:21,487
+Biz kontrol işaretleri olarak DA, BA, AA, MB, FS, MD, register write, memory write işlemlerini gördük. Görmediklerimiz PL, JB ve BC. Bu kontroller var.
+
+390
+01:43:23,667 --> 01:43:48,648
+Şimdi onların ne olduğuna da biraz sonra bakıyor olacağız. Kontrol tarafı aslında neyi içeriyor? Temelde şunu söylemiştik. Bizim yazmış olduğumuz bir program var. İster assembly koduyla yazalım, ister yüksek seviye bildiğinle yazalım. Bunu aldık, derledik. Daha sonra assembly'den geçirdik ve bir makine kodu oluştur. Elimizde bir binary kod var veya bir hex kod var. Bu hex kodu alıp bir instruction memory'e yükledik.
+
+391
+01:43:49,300 --> 01:44:01,800
+Bu örneğin bizim için BIOS ROM'u olabilir veya derlediğimiz bir programın ikinci HALF, ikinci DISC birimlerinden main memoriye yüklenmesi ve bizim yazdığımız kodun çalıştırılıyor olmasına karşılık gelebilir.
+
+392
+01:44:03,100 --> 01:44:07,180
+Herhangi bir tanesini elimizde bir tane instruction memoriye aktarılmış binary kodlar var.
+
+393
+01:44:07,731 --> 01:44:19,311
+Bu kodlar içerisinde PC ile işaret edilen yazma, yani bizim program kantorumuz yürütülecek kodun başlangıç adresini gösteriyor veya o andaki yürütülecek kodun adresini tutuyor.
+
+394
+01:44:20,051 --> 01:44:29,471
+Eğer ki bizim yazdığımız bütün kodlar herhangi bir şekilde dallanma içermiyorsa, fonksiyon çağırmaları içermiyorsa bu durumda aslında tasarım yapmak kolay.
+
+395
+01:44:30,836 --> 01:44:52,976
+Program Counter her seferinde yürüttüğü komut kadar, boyutu kadar artacak. Ve kodumuz sıralı bir şekilde çalıştığı için herhangi bir dallanma durumuyla karşılaşacağız. Hangi senaryoydu? Yazdığımız kod, structural bir kod, yapısal bir kod, herhangi bir dallanma içermiyor. Peş peşe işlemlerimizi yürütüp programımız çalıştırılıyor.
+
+396
+01:44:53,524 --> 01:45:08,144
+Ama bu durum genellikle karşılaşabileceğimiz bir senaryo değil. Böyle bir durum çok nadiren karşılaşıyor ve büyük ihtimalle de çok doğru karşılaşacağız. Fakat buna yönelik olarak da branchless programming diye bir yaklaşım var.
+
+397
+01:45:18,448 --> 01:45:37,168
+Return'ı şöyle yapabiliriz. A küçük B bir lojik işlem. Çarpı büyük olanı döndürmek istiyorduk. Eğer B büyükse çarpı B artı A büyük eşit B çarpı A şeklinde bir return fonksiyonu yaptığımız vakit. Yani şunu söylemek istiyorum.
+
+398
+01:45:45,844 --> 01:45:47,503
+Şöyle bir fonksiyonumuz olsun.
+
+399
+01:45:51,347 --> 01:45:53,768
+İşte biz bu fonksiyonu şöyle de yazabiliriz.
+
+400
+01:46:12,851 --> 01:46:14,412
+Büyük olayına dönmemek istiyoruz.
+
+401
+01:46:42,195 --> 01:47:08,976
+göstereyim. Böyle bir komut yazdığımız zaman burada bir koşulu dallanma var gördüğünüz gibi. AB'den büyükse başka bir satıra gitmemiz lazım. Bunun yerine şunu yapabiliyoruz. Bu branchless programming mantığında. Return deyip şöyle aşağıya yazacağım. Burada bir lojik işlem. A büyüktür. B. Bu bir lojik işlem.
+
+402
+01:47:09,555 --> 01:47:29,835
+Doğruysa 1, yanlış ise 0 dönüyor. Dolayısıyla çarpı A artı A küçük eşit B, küçük eşitle de B'yi dönsün önemli değil. Çarpı B şeklinde bir şey yazarsak burada aslında bir lojik ve aritmetik işlem bütünü var.
+
+403
+01:47:29,835 --> 01:47:34,775
+Ve dolayısıyla herhangi bir koşulunda Allah'a yok. Dolayısıyla bunları da karşılaştıracak olursak arkadaşlar.
+
+404
+01:47:35,315 --> 01:47:57,655
+Çok sayıda aynı işlemi yaparsanız arada bir zaman farkı oluşuyor. Neticede şunu söyleyecektik. Bizim geleneksel anlamda koşullu dallanma içermeyen bir programla karşılaşma imkanımız yok denince kadar az. Dolayısıyla bizim bu koşullu dallanma durumlarını kontrol eden ve buna göre program counter'ı uygun şekilde değiştiren kontrol uçlarına da ihtiyacımız var.
+
+405
+01:48:03,188 --> 01:48:08,488
+Jump Branch ve Branch Control isimini verdiğimiz 3 adet kontrolle gerçekleşiyor.
+
+406
+01:48:08,908 --> 01:48:12,547
+Koşulu ve koşulsuz dallanmaları içeren 3 tane kontrolcumuz daha var.
+
+407
+01:48:12,627 --> 01:48:13,988
+Bu kontrol uçları ne işe yarıyor?
+
+408
+01:48:14,507 --> 01:48:21,347
+Bu kontrol uçları eğer bir bayrağa göre dallanma yapacaksak bu bayrakları da girdi olarak kabul eden bir branch kontrole bağlı.
+
+409
+01:48:24,851 --> 01:48:47,692
+Program Counter'ın belirli bir görece offset kadar artmasını, eğer koşul sağlanmamışsa bir sonraki instrakşını gösterecek şekilde artmasını sağlayan bir yaklaşım. Bununla birlikte bir başka yapı da şu olabilir demiştik. Göreci olarak belirli bir label'a dallanması gerekebilir. Bu belirli label'ı da biz komut içerisinde veriyorduk. Komutun neresindeydi hatta hatırlayacak olursanız.
+
+410
+01:48:48,340 --> 01:49:11,399
+Şurada bakın, 3 bit, 3 bit bölünmüş halde bir koşuldu dallanma durumu söz konusu olabilirdi. İşte onu da instruction içerisindeki ilgili bitlerden alıp 6 bitlik değerimizi program counter boyutuna genişletip extend derken onu kast ediyor. Sonrasında da bunu program counter'a ekleyen bir yapı aslında bu branş kontrolüyle elde ettiğimiz durum buna karşılık geliyor.
+
+411
+01:49:14,996 --> 01:49:26,836
+Şu şekildeki sabit değerleri içeren işlemleri için, instruction'ın içerisindeki en düşük anlamlı 3 bit bazı durumlarda eğer immediate işlemse sabite karşılık geliyordu.
+
+412
+01:49:27,416 --> 01:49:35,936
+Doğrudan instruction'ın düşük anlamlı 3 bitini 0 fil ile doldurup yani verebileceğimiz değerler 0 ile 7 arasında değerler olmuş oluyor bu durumda.
+
+413
+01:49:36,692 --> 01:49:59,672
+Bunları alıp ilgili MUX'a aktarmış oluyoruz. Burada şunu dolaylı adresleme değil de koşullu dallanmalar için buradaki extend videonu sign extend olarak düşünebiliriz. Ne demek bu? Ben bulunduğum program counter değerinden programın gerisindeki bir adrese veya ilerisindeki bir adrese koşullu dallanmayla gitmem gerekiyor olabilir.
+
+414
+01:50:00,000 --> 01:50:09,760
+Dolayısıyla buradaki extend, bu 6 biti sign olarak extendleniyor. Yani işaretli sayı olarak genişletip program counter'a ekliyor. Geri veya ileri gidebilmek adına.
+
+415
+01:50:10,144 --> 01:50:34,684
+Dolayısıyla burada ek olarak karşılaştığımız memory write buna değinmiştik. Bunun dışında PL, JB ve BC kontrolleri de karşımıza çıkmış oluyor. Bunlar ne işe yarıyordu? Program counter'ın bir sonraki komutu gösterecek şekilde değil de eğer koşul sağlanmışsa bir koşulda veya koşulsüz dallanma için uzak bir adrese görece olarak dallanmasını sağlamak adına ilgili kontrolü içeren durumlar. Bayraklar niye giriyordu?
+
+416
+01:50:35,091 --> 01:51:00,152
+Temel karşılaştırma, koşulu dallanma koşullarımız, durumlarımız, komutlarımız bayraklara bağlıydı. Büyüklük, küçüklük için overflow, carry gibi bayraklara ihtiyacımız var. Daha önce görmüştüm bunları atlayacak olursanız. Instruction seti incelerken. Veya işlem sonucu sıfır mı, negatif mi gibi basit işlemlere ihtiyacımız varsa bu bayraklara ihtiyacımız var. Bayraklar nerede üretiliyor? Bayraklar da aritmetik bilim içerisinde veya function bilim içerisinde.
+
+417
+01:51:00,608 --> 01:51:27,688
+Aritmetik işlemlere bağlı olarak üretilen durumlar. Yani lojik işlemlerden dolayı sadece aritmetik lojik işlem olabilir mi? Onu düşünelim. Mesela shift işlemleri için olabilir. Eğer aritmetik shift işlemleri tanımlanmışsa onlar için de bayraklar üretilebilir. Ama aritmetik bir shift işlemi veya lojik işlemler içerisinde aritmetik bir anlam aramayacağımız için bayrakların temelde sadece aritmetik işlemler sonucunda anlamlı değer üreteceğini
+
+418
+01:51:28,047 --> 01:51:48,167
+Söylememiz mümkün. Dolayısıyla bizim single cycle CPU tasarımımız hardwired olarak geçiyor aynı zamanda. Hardwired single cycle computer mimarimiz temel olarak buna benziyor. Burada özellik neydi? Her bir komutumuz bir clock cycle'da gerçekleşiyor. Basit işlemlerimiz var.
+
+419
+01:51:50,095 --> 01:52:17,256
+Temel olarak böyle bir yapı. Bunun alternatifi ne? Bunun alternatifi multicycle computer mimarisi. Multicycle computer mimarisinin özelliği ne? Burada şunu yapabiliriz. Her bir işlemi alt block cycle'lara bölebiliriz. Alt block cycle'lara bölebilmek demek, bu tasarım içerisindeki farklı blokları farklı zamanlarda aktive edebilmek demek. Bunun bize getirdiği şey ne? Bunun bize getirdiği işlem de arkadaşlar.
+
+420
+01:52:18,095 --> 01:52:21,695
+Burada temel olarak büyüteceğimiz işlemler nelerdir? Şöyle bir aşağı gelelim.
+
+421
+01:52:22,484 --> 01:52:47,604
+Program Counter'dan bir değer okuduk. Bu değer program counter'ı güncelledik. Bu gitti Instruction Memory'de belirli bir adres işaret etti. Oradan gelen komuta göre biz yazmaçlardan belirli bir takım değerleri okuduk. A kanalına, B kanalına seçtik. Oradan MUXB register'ı aktardı veya sabit değeri Function Unit'e aktardı. Function Unit bir takım işlemleri yerine getirdi veya Data Memory'den bir şeyler okuduk komuta göre.
+
+422
+01:52:48,083 --> 01:53:13,223
+MOOC siteye seçim yaptı ve işlem sonucunu tekrar yazdık. Aslında burada bizim görmüş olduğumuz bu single cycle computer mimarisinde pek çok işlemimiz var. Bu işlemleri daha önce de konuşmuştuk hatırlayacak olursanız. Instruction fetch, instruction decode, ondan sonra operant fetch, execute ve writeback olarak 5 adımlı bir block olarak tanımlamıştık daha önceki derslerimizde. Burada bunu biraz daha geniş bir şekilde yazılmış halde buluyoruz.
+
+423
+01:53:13,652 --> 01:53:27,572
+Buraya baktığımızda arkadaşlar, her bir işlem bloğunun ne kadar süre kat ettiğini, ne kadar süreye ihtiyaç duyduğunu görebiliyoruz. Bu yine single cycle kompütür mimarisi için geçerli bir durum.
+
+424
+01:53:29,555 --> 01:53:41,455
+Mimari için ne olabilir? Multicycle mimari de şöyle bir fark olabilir. Bu single cycle mimari de biz bu bloklardan sadece bir tane instruction'a ilişkin olarak veriyi akıtıyoruz.
+
+425
+01:53:42,415 --> 01:53:55,475
+Yani mesela ilgili işlem o sırada function unitte ise yani function unit vermiş olduğumuz komuta ilişkin işlemi yürütüyor iken diğerleri boşta bekliyor. Single cycle mimari de böyle bir durum sözcüğü. Diğerleri boşta bekliyor.
+
+426
+01:53:56,275 --> 01:54:15,555
+Multi-cycle'da ise şunu yapabiliriz. Mesela function unit belirli bir komutu yürütürken instruction memory'den değer okuduğumuz değer farklı bir sonraki komuta ilişkin olabilir. Yani burada demek istediğimiz her bir blok sıradaki komutun ilgili parçasını yürütüyor olabilir.
+
+427
+01:54:16,212 --> 01:54:32,612
+Dolayısıyla buradaki single cycle mimariden multi cycle mimariye geçebilmek için burada görmüş olduğunuz blokların her birisi arasına bir tane register koymak ve bu alt block cycle'larla bunları tetiklemek aslında multi cycle mimariye geçiş için bir avantaj sağlayacak.
+
+428
+01:54:32,612 --> 01:54:39,992
+Multi cycle mimariye geçtiğim zaman, onu ders kapsamında incelemeyeceğiz bu arada. Ders kapsamında incelemeyeceğiz onu.
+
+429
+01:54:40,384 --> 01:54:56,684
+Multi-cycle mimariye geçtiğimizde ise şunu isteyeceğiz. Buradaki her bir bloğun aynı senkron saatte çalışmasını isteyeceğiz. O zaman her bir blok için bloklar arasındaki en yüksek zaman ne? 4 nanosaniye. 4 nanosaniyede bunları tetikleyen bir mimari düşünmemiz gerekiyor.
+
+430
+01:55:07,380 --> 01:55:20,840
+Her bir bloğun farklı bir komutun belirli bir parçasını yürüttüğü ve her bir bloğun farklı instrakşınlarla aktif olduğu başka bir mimariyi ifade ediyor. Avantajı ne? Trueput'u daha yüksek.
+
+431
+01:55:22,100 --> 01:55:40,860
+Onu nasıl ifade edeceğiz? Örneğin mesela şöyle bir yapımı düşünelim. Burada bir instrakşının yürütülmesi 0.4.2, 4.8, 5, 9, 9.2, 9.8 nanosaniye sürüyor. 9.8 nanosaniye sürüyor. Şöyle yazalım.
+
+432
+01:55:49,216 --> 01:56:09,436
+Akışında. Ne demiştik? 9.8 mi demiştik? 9.8 nanosaniye bir komut. Kabaca ortalama bu kadar südürüyor. Peki bu durumda 1000 komut ne kadar zaman alacak? 1000 komutta dolayısıyla 9800 nanosaniye kadar vakit alacak.
+
+433
+01:56:10,036 --> 01:56:34,615
+Peki, pipeline kullandığımızda, yani işlemleri parallelleştirdiğimizde ne olacak? Birinci kısıtımız, her bir bloğu bir kere senkron bir şekilde çalıştırmak istiyor. Dolayısıyla her bir blok için bu bloklardan en fazla süreye ihtiyacı olanı kullanmamız lazım. Dolayısıyla 4 nanosaniye olduğunu görüyoruz. Şunu diyeceğiz. Blok senkron süresi 4 nanosaniye. Bunu bir kere belirleyelim.
+
+434
+01:56:35,155 --> 01:57:01,076
+Fakat bloklar her seferinde pasif bir şekilde beklemeyecek. Her bir blok sıradaki işlemin bir sonraki instrakşının ilgili bloğunu yürütecek. Yani şöyle düşünelim. Mesela ilk komutumuzun function çözümlemesi gerçekleşirken ikinci komutumuz register okumasını gerçekleştiriyor. Üçüncü komutumuzun instrakşından çekilmesi, dördüncü komutumuzun adresinin gösterilmesi sağlamıyor. Yani buna baktığımız zaman.
+
+435
+01:57:02,452 --> 01:57:29,372
+Şöyle bir yapı kurabiliriz. Birinci komut buradayken, mesela birinci komutu işlemeye başladık. Birinci komut önce PC'ye geldi. 4 nanosaniye burada geçildi. Daha sonra birinci komutun instruction memoriden çekilmesiyle ilgili işlem yürürken, ikinci komutun PC değeri yüklendi. Bir sonraki adımda birinci komut register okumasına geçerken, ikinci komutun instruction memorisi geldi, üçüncü komut PC'ye yüklendi gibi gibi gibi.
+
+436
+01:57:29,811 --> 01:57:37,971
+İşlemler gerçekleştirdik. Bunu bir tablo olarak koyacak olursak arkadaşlar, şöyle koyalım. Belki buraya yazabiliriz.
+
+437
+01:57:42,484 --> 01:57:58,144
+Tabii kesinlikle bu önemli bir konu. Eğer birbirine bağlı instrakşınlar varsa o durumda bloklar birbirini beklemesi lazım. Şu anki senaryomuz komutlar birbirine bağımlı değil, komutlar birbirini beklemiyor, komutlar arasında herhangi bir bağımlılık yok. Bu senaryo üzerine konuşuyoruz.
+
+438
+01:57:58,144 --> 01:58:07,923
+Şimdi pipeline'ı tanımladıktan sonra pipeline üzerindeki bu tür hazardları, bu tür problemleri de konuşacağız. Ama şimdilik öyle bir bağımlılık olmadığını varsayalım.
+
+439
+01:58:08,372 --> 01:58:34,992
+Şimdi şöyle bir tablo yapalım bu durumda. Bizim birinci blok, ikinci blok kalınlığımızı birazcık değiştirelim. Şu bizim birinci blokumuz, ikinci blokumuz, üçüncü, dördüncü, beşinci, altıncı ve yedinci blokumuz olsun. Şimdi burada şöyle bir tablo yapalım.
+
+440
+01:58:39,283 --> 01:58:47,863
+O sırada birinci bloğumuzda. 2, 3, 4, 5. Çok kalın onunla ya.
+
+441
+01:58:54,292 --> 01:59:10,072
+9 tane bloğumuz var değil mi? 7 tane bloğumuz var. Şimdi burada biz birinci komutumuzu, burada T süreleri olsun, birinci anda T eşittir 2'de, T eşittir 3'de böyle devam ettirelim.
+
+442
+01:59:10,072 --> 01:59:20,692
+T eşittir 1'de birinci komutumuz birinci bloğa girdi. T eşittir 2'de birinci komutumuzu ikinci bloğa girdiğini ve ikinci bir komutu yürütmeye başladığımızı düşünelim.
+
+443
+01:59:21,076 --> 01:59:28,695
+T eşittir 3 anda birinci komutumuz 3. bloğa girdi. İkinci komutumuz 2. bloğa girdi. Biz 3. komutumuzu işletmeye başladık.
+
+444
+01:59:29,295 --> 01:59:48,855
+Nokta nokta nokta nokta. T eşittir 7'de. T eşittir 7'de. Birinci komutumuz 7. bloğa ulaştı. İkinci komutumuz 6. blokta. Üçüncü komutumuz 5. blokta. Dördüncü komutumuz 4. blokta. Beşinci komutumuz 3. blokta. Altıncı komutumuz 2. blokta. Yedinci komutumuz 1. blokta.
+
+445
+01:59:49,300 --> 02:00:05,920
+Dolayısıyla T eşittir 8'de birinci komutumuzu bitirmiş olduk. Ama bu sırada T eşittir 7'de birinci komutu bitirmekle birlikte pek çok komut yani 6 tane farklı komutuda baya bir bloklar boyunca yürütmüş olduk.
+
+446
+02:00:05,920 --> 02:00:15,500
+Bundan sonrasında eğer ki biz 1000 adet komut yürütecek isek arkadaşlar şurada toplamda kaç bloğumuz var? Burada 7 bloğumuz var.
+
+447
+02:00:15,796 --> 02:00:32,515
+Şöyle yapalım hatta oraya kadar değil de şuraya kadar değil de. Burada 6 blokumuz var. Bu 6 bloktan sonra T eşittir 8'de 2 buraya gelecek. T eşittir 9'da 3 buraya gelecek. Yani toplamda 1000 tane komut yürütmek istiyorsak şurada da 1000 tane adım var demek.
+
+448
+02:00:41,171 --> 02:00:54,771
+Bizim bin numaralı komutumuz yedinci blokta işleniyor, işlenmiş olacak. Dolayısıyla bizim toplam bin altı alt blokta işlemimiz sonucunda bin adet komutu yüzükmüş olacak.
+
+449
+02:00:55,871 --> 02:01:07,692
+Dolayısıyla pipeline mantığını kullandığımızda her ne kadar ki her bir blok içerisiz dört nanosaniye ayırmış olmamız gerekiyor olsa bile toplamda bin komutu
+
+450
+02:01:09,171 --> 02:01:25,211
+Ne kadar cycle'da bitirmiş olacağız? 1006 pardon 1006 cycle'da bitirmiş olacağız. Döngüde bitirmiş olacağız. E peki bunun için ne kadar süre harcamış olacağız? 1006 çarpı 4 nanosaniye kadar. Yani bu da ne yapmış olacak? Hemen çarpalım.
+
+451
+02:01:27,711 --> 02:01:35,551
+Neydi? 1006 çarpı 4. 4024 nanosaniye yapacağız. 4024 nanosaniye.
+
+452
+02:01:35,988 --> 02:01:58,700
+Yukarıki ne çıkmış? 9800 nanosayne. Gördüğünüz gibi eğer bir pipeline mantığı kullanıyorsak ve bu pipeline mantığında herhangi bir komutlar arasında koşullu dallanma yok ise, umutlar arası bir bağımlılık yok ise neredeyse yarı yarıya bir throughput kazancımız oldu. Bunu nasıl yaptık? Her bir blok bağımsız olarak...
+
+453
+02:01:58,739 --> 02:02:09,659
+Komut işleyebilir hale geldi. Bunu yapabilmek için de aralara registerlar koyup bu registerlar üzerinden işlemleri kontrol edebiliyor hale gelmiş olduğumuz bir senaryoydu bu.
+
+454
+02:02:10,820 --> 02:02:17,659
+Dolayısıyla pipeline mantığı kullandığımızda komutların bloklara giriş mantığı bir zaman tablosu olarak verilebilir.
+
+455
+02:02:18,440 --> 02:02:26,020
+Komutların tamamının kaç tane komut yürüteceksek pipeline bloklarından çıkış süresini, cycle süresini hesaplayabiliriz.
+
+456
+02:02:26,368 --> 02:02:47,188
+Her bir senkron cycle için ne kadar süre vermemiz gerektiğini, aslında buradaki blokları senkron olarak kullanmamız gerekeceği için veya öyle bir tasarım kısıtımız varsa bu blokların en yüksek süreli olanıyla aslında limitliyiz. Onu da düşünerek senkron saati belirleyip belirli bir sayıdaki komutun yürütülme süresini bulabiliriz.
+
+457
+02:02:47,247 --> 02:03:01,727
+Bu pipeline kullanmazsak, komutları seri bir şekilde bütün bloklar içerisinde tek tek gezdirip, bir komutun blokları tamamlaması bittikten sonra ikinci komut yürütebiliyorsak, seri veri akışında, bu durumda her bir blok için ayrı saatler söz konusu olabilir.
+
+458
+02:03:01,847 --> 02:03:09,747
+Çünkü bunlar birbirini peş peşe takip ediyor. Bir sonraki clock cycle'a kadar zaten çok kısa bir süre, 9.8 nanosaniye.
+
+459
+02:03:10,267 --> 02:03:15,247
+Buradaki ilgili kombinasyonel devrelerden geçip sonuç elde edebiliriz. Dolayısıyla her birinin gerçek...
+
+460
+02:03:15,247 --> 02:03:42,447
+süresini kullanmak mümkün. Bunları topladık. 9.80 nanosaniye çıktı. Buradaki sıkıntı ne? Burada bir işleme, bir komutu verdikten sonra bu komut bu bloklardan çıkmadan yeni bir komutu yürütmeye başlayamıyor. Dolayısıyla bir komutun yürütülmesi 9.80 nanosaniye süre. Bin tane komut yürüteceksek de 9.000 nanosaniyelik bir süreyle karşılaşmış oluyoruz. Bu işlem arkadaşlar bizim throughput'u arttırabilmek için kullanabileceğimiz önemli özelliklerden birisi.
+
+461
+02:03:42,963 --> 02:04:08,503
+Pipeline mantığı. Pipeline demek ki neymiş? Bizim işlem bloklarımız. Yani CPU içerisindeki fonksiyonel işlem bloklarını araya birer yazmaç atarak her bir bloğun çıktısına birer yazmaç ile destekleyerek bir sonraki cycle'da bu yazmaç değerini bozmadan, içerideki kombinasyonel devre değeri değişeceği için bozmadan bir sonraki bloğa aktırabileceğimiz bir donanımla destekleyip
+
+462
+02:04:09,076 --> 02:04:18,076
+throughput'ı arttırabileceğimiz bir senaryoyla karşılaşmış oluyoruz. Burada bakın, pipeline örneğinde neyi varsaymıştık? Komutları peş peşe yürütebildiğimizi varsaymıştık.
+
+463
+02:04:18,175 --> 02:04:30,795
+Yani biz mesela instruction memory'e erişirken, birinci komutu instruction memory'sine erişirken, ikinci komutu adres değeri olarak program counter'a yüklemiştik.
+
+464
+02:04:33,971 --> 02:04:55,551
+Bizim program counter'a yükleyeceğimiz ikinci komut adresi bizim birinci komutumuzdan hemen sonra gelen bir komut olmayabilir. Hangi senaryo? Arada koşullu koşulsuz dallanma varsa. Yani biz program akışımızda yapısal olarak peş peşe komutları yürütmek durumunda değil isek o zaman bu pipeline mantığı bozuluyor. Ne gibi senaryolardan bozuluyor? Eğer koşullu dallanmalar varsa.
+
+465
+02:04:55,967 --> 02:05:06,067
+Bizim sırada yürüteceğimiz komut daha belli olmadı demek. Dolayısıyla sırada yürüteceğimiz komut belli olana kadar stall yani boşta beklememiz lazım. Blokların boşta beklemesi gerekli bir.
+
+466
+02:05:06,515 --> 02:05:28,575
+Bir başka senaryo ise buradaki verilerin birbirine göre bağımlılığı olabilir. Az önce örnek verdi arkadaşımız. Biz A değerini güncelliyoruz. Fakat ikinci bir komutta A değerini kullanacağız. A değeri yazılmadan, güncel A değeri yazılmadan yeni A değerini kullanamayız. İşte bunu da dikkate aldığımız zaman data hazard gibi durumlar var.
+
+467
+02:05:29,011 --> 02:05:42,351
+Pipeline'ın bazı durumlarda stall'a düşmesi yani bir sonucun gerçekleşmesini beklemesi gerekiyor. Bu gibi senaryolarda blokların yine boşta bekleme durumuyla karşılaşmış olabiliyoruz.
+
+468
+02:05:43,211 --> 02:05:53,331
+Bu anlatmış olduğumuz yapı bizim single cycle mimariden yani şurada görmüş olduğumuz mimariden her bir komutun bir cycle'da yürüttüğü bir mimariden farklı bir mimari.
+
+469
+02:05:55,828 --> 02:06:11,868
+Bunun genişletilmiş bir hali. Onun genişletilmiş hali yani pipeline kullanacağımız mimari şu yapının bir devamı olarak ortaya çıkıyor ama biz dersimiz kapsamında multi-cycle computer architecture'ı görmeyeceğiz arkadaşlar. Ondan dolayı bu kısmı atlıyorum.
+
+470
+02:06:12,239 --> 02:06:19,439
+Ama tekrar geri dönüp Single Cycle Computer mimarisindeki bu kontrol bloğunu biraz daha detaylı bir şekilde inceleyeceğiz.
+
+471
+02:06:19,539 --> 02:06:29,279
+Ama buraya kadar olan kısımla ilgili olarak arada pipeline'a girmiş olduk. Pipeline kısmıyla ilgili olarak genel bir fikir oluşturabildik herhalde değil mi?
+
+472
+02:06:29,811 --> 02:06:43,431
+Pipeline kısmıyla ilgili olarak. Pipeline neden bize throughput sağlıyor, daha yüksek throughput sağlıyor ve pipeline'de karşılaşabileceğimiz problemler neler olabilir? Kabaca bunlara ilişkin bir fikir sağlamış olmalıyız. Tamam, okey.
+
+473
+02:06:44,991 --> 02:06:54,411
+Şimdi dönelim tekrar bu single cycle hardware computer architecture yapısından, bu yapıdan instruction kısmını biraz incelemeye çalışalım.
+
+474
+02:06:55,155 --> 02:07:21,516
+Öncelikli olarak şunu hatırlayalım. Bizim instructionlarımız kaç bitlik? 16 bitlik instructionlarmış. Bakın burada instructionlarımız 16 bitlik instructionlar. Yukarıda dönecek olursak instruction memoriye baktığımızda word büyüklüğü 16 bit. Dolayısıyla instructionlarımız 16 bitlik. 2 üzeri 15 adet gözden oluştuğunu görüyoruz instruction memori. Bunun anlamı nedir? 15 bitlik olan şey neymiş?
+
+475
+02:07:23,731 --> 02:07:47,672
+15 bitik olan şey neymiş? 2 üzeri 15 adet göz var ya demek ki bunun adres ucu sayısı 15. Bunun adres ucunu sağlayan şey ne? Program counter'ımız değil mi? Program counter. Dolayısıyla bizim program counter'ımızın 15 bitik olduğunu varsayabiliriz. Bu adres değeri olarak Instruction Memory'nin adres uçlarına gidiyor. Buradan çıkan değer, data değerimiz. Şurada görelim.
+
+476
+02:07:49,652 --> 02:07:54,851
+Buradan gelen instruction'la instruction dekodere giriyor. Yani 16 bitlik bir dekoder çıkışımız var.
+
+477
+02:07:56,551 --> 02:08:06,431
+Şey pardon, memori çıkışımız var. Bu 16 bitlik komuta karşılık kaç bitlik değer üretiyoruz? 20 bitlik bir değer üretiyoruz. Bakın kontrollerimiz 20 bite ulaşmış durumda.
+
+478
+02:08:07,060 --> 02:08:35,060
+Burada sıkıştırılmış bir şekilde, paketlenmiş bir şekilde komut bitlerimiz var. Bunlara karşılık 20 bitlik kontrol işaretleri üretti. Bu kontrol işaretlerin 3 biti destination adres, 3 biti A adres, 3 biti B adres, 1 biti MUXB, 4 biti function select, 1 biti MUXD, 1 biti register write, 1 biti memory write, 1 biti PL, 1 biti JB, 1 biti de BC. Bunlar dediğim gibi koşulu koşulsuz dallanmalara ilişkin bizim komut bitlerimiz var.
+
+479
+02:08:35,060 --> 02:08:49,199
+Komutlarımız. Onlara biraz sonra detaylı bir şekilde bakacağız. Dolayısıyla bizim kontrol birimi içerisinde instruction decoder dediğimiz yapı aslında ve gelen komuta karşılık bu kontrol işaretlerini üreten basit bir lojik yapı.
+
+480
+02:08:50,560 --> 02:08:58,279
+Burada instruction'ın yapısıyla, instruction'ın yapısına bakalım. Instruction'ın yapısı şu üçünden birisi olabiliyordu.
+
+481
+02:08:58,720 --> 02:09:18,180
+Bizim komutlarımız bu çerçevede tanımlanmış. Bunlara karşılık control word'ümüz ise bu yapıda tasarlanmış, bu sırada tasarlanmış. Dolayısıyla buradaki instruksiyonların ilgili gözlerine karşılık control word'u üreten basit bir lojik devre bizim instruction decoder'i. Ne yapıyormuş demek ki instruction decoder?
+
+482
+02:09:24,148 --> 02:09:29,008
+Kontrol kelimesine çeviren lojik yapı. Bunu sağlayalım.
+
+483
+02:09:32,688 --> 02:09:51,388
+Genişletilmiş yapıyı yine konuşmuştuk. Tekrar üzerinde durmayalım. Şimdi buna ilişkin olarak yürütmek istediğimiz işlem tiplerine göre burada karşımıza çıkacak kontrol wordler nelerdir onları bir görmeye çalışalım. Bunların yanına gelmişti ne güzel oldu.
+
+484
+02:09:54,420 --> 02:10:01,819
+Neredeydi? Ha, şurada bir şeyi atladık ama şöyle aşağı gelelim.
+
+485
+02:10:05,427 --> 02:10:06,667
+Ya, burada.
+
+486
+02:10:11,859 --> 02:10:34,179
+Şunu konuşmadık. Önce bunu konuşalım. Daha önceki haftalarda Instruction Set Architekci'ye girmiştik. Kontrol kelimesiyle Instruction'ların farklı olduğunu tanımladık. Şimdi Function Unit'in fonksiyonlarıyla kontrol kelimeleri farklı şeyler, kontrol kelimeleriyle de Instruction'lar, komutlar farklı şeyler. Bunları tanımladık.
+
+487
+02:10:34,528 --> 02:11:02,088
+Şöyle durumlarla karşılaşabiliriz demiştik. Function select işlemlerine karşılık aynı function'ı yürüten fakat farklı instruction'lar söz konusu olabilir demiştik. Örneğin gid yazmaca sıfır atama arka tarafta function select'te XOR işlemini kullanıyor olabilir. Ama instruction olarak baktığımızda register sıfırlama diye bir komutumuz olabilir veya iki tane register'ın XOR şeklinde bir komutumuz olabilir. Daha geniş bir uzayı kapsıyor demiştik.
+
+488
+02:11:02,420 --> 02:11:07,839
+Şimdi burada bizim karşılaşabileceğimiz bu mimari destekleyen temel komutlara bir bakalım öncelikli olarak.
+
+489
+02:11:09,239 --> 02:11:16,920
+Bu komutları verirken de bu komutları işte şurada görmüş olduğunuz 3 farklı komut tipinden birisine dahil ederek dinleyeceğiz.
+
+490
+02:11:17,739 --> 02:11:20,920
+Örneğin MOVE A komutu. Ne yapıyor MOVE A komutu?
+
+491
+02:11:24,420 --> 02:11:27,759
+Şurada göstermiş olduğumuz SOURCE A yazmacına.
+
+492
+02:11:28,404 --> 02:11:54,964
+Bu artık farklı bir alan. Source A isimli yazmaca. Bunu register transfer dizine çevirdiğimizde şöyle bir şeyle karşılaşıyoruz. SA ile verilen yazmacı, DR ile verilen yazmaç adresini atıyor. Yani yazmaçlar arası atama yapıyoruz. Bunun function unit'teki karşılığı ne? Function unit'teki karşılığına bakalım. A transfer veya B transfer diyebileceğimiz bir işlem. Artık hangi kanaldan geliyorsa onlarla karşılayabileceğimiz bir işlem.
+
+493
+02:11:55,667 --> 02:12:07,467
+Başka ne var? İnkrement var. İnkrement, opcode karşılığı buymuş. Minemoni, INC harfleri, register işlemi. Dolayısıyla iki tane operant alıyor. RD ve VA.
+
+494
+02:12:07,920 --> 02:12:24,380
+Dolayısıyla RB burada don't care olarak düşünebiliriz. Tek bir operant aldığı için bir de destination var. RB don't care. RB'ye de karşılık bir değer vermiyor. Nasıl çalışıyor? Vermiş olduğumuz source register A değerini bir arttırıp daha sonra tekrar değeri destination'a aktarıyor.
+
+495
+02:12:24,380 --> 02:12:31,760
+Burada görmüş olduğunuz yazma işaretli olan komutlarda program counter bir olarak arttırılıyor.
+
+496
+02:12:32,307 --> 02:12:41,988
+Bir sonraki cycle için program counter 1 olarak arttırıyor. Demek ki her bir komut bir word'lık yer kaplıyor. Ondan dolayı her bir sonraki adresi gösteriyor.
+
+497
+02:12:42,688 --> 02:12:49,847
+Add işlemine baktığımızda add işlemi 3 tane yazmaç, bu bir yazmaç tıklı komut, 3 tane register adresini de kullanıyor.
+
+498
+02:12:50,108 --> 02:12:55,328
+Minemoni add, A ve B kaynaklarını kullanıyor. İşlem sonucunu D'ye yazıyor.
+
+499
+02:12:55,604 --> 02:13:00,543
+A yazmacıyla B, source yazmacını toplayıp destination yazmacını aktarıyoruz.
+
+500
+02:13:01,543 --> 02:13:11,844
+Şimdi burada bir virgül koyalım. Instruction decoder'e bakalım. Bizim source A, source B ve destination register olarak verdiğimiz yazmaç adresleri,
+
+501
+02:13:12,404 --> 02:13:15,184
+kontrol kelimesi olarak nelere karşılık geliyor diye bakalım.
+
+502
+02:13:15,764 --> 02:13:38,524
+Burada birebir eşleştirme yapabiliriz aslında. Şu mimariyi düşündüğümüz zaman bizim instruction'dan gelen source A, source B ve destination register adreslerimiz doğrudan doğruya A adres yani register file'daki A adres, B adres ve data adrese karşılık gelebilir. Bakın burada da zaten onu sağlamış. Kalın çizgiyle gösterilen 3 bitlik bas.
+
+503
+02:13:38,996 --> 02:13:48,935
+Destination Register, komuttaki Destination Register alanına karşılık Destination Adres Kontrolü'nün, yani Register File'da sonucun saklanacağı adresi karşılıkları üretiliyor.
+
+504
+02:13:49,416 --> 02:14:00,315
+SA'ya karşılık BAA adresi kullanılıyor. Yani Source A'ya karşılık AA adresi. Source B alanına karşılık da BA adresi. Direkt birebir karşılık düşürülmüş durumda.
+
+505
+02:14:03,887 --> 02:14:09,908
+Control Word'deki karşılıkları birebir olarak bunlar olarak karşımıza çıkıyor. Şimdi devam edelim bu noktadan.
+
+506
+02:14:10,627 --> 02:14:20,828
+Subtract çıkartma işlemi yine 3 tane parametre alabilir. Bir yazmaç tıklı bir komut. Source B, Source A ve Destination 3 yazmaç alanında kullanıyor. 3 adresinde kullanıyor.
+
+507
+02:14:21,488 --> 02:14:25,688
+Yaptığı işlem Source A'dan Source B'yi çıkartıp sonucu Destination Register'a yazma.
+
+508
+02:14:28,180 --> 02:14:49,860
+İki tane operant alıyor. B operandını kullanmıyor. Source B'yi kullanmıyor. A yazmaç adresini bir azaltıp A yazmacındaki değeri bir azaltıp register A diyelim ona. Register A'yı bir azaltıp işlem sonucunu register D'ye yazıyor. Destination register'ı yazıyor. End işlemi bitwise işlem. Dolayısıyla üç tane parametresi var.
+
+509
+02:14:50,355 --> 02:15:09,376
+A kaynağı, B kaynağı ve destination olmak üzere. Bitwise end işlemi yapıp sonucu sattıyor. Or da benzer şekilde. 3 operanda var. Source A, Source B. Bitwise or yapıp destination aktarıyor. Exclusive or yine XOR da benzer şekilde bitwise olarak Source A, Source B ve destination register kullanıyor.
+
+510
+02:15:09,796 --> 02:15:15,895
+Not A işlemi için. Şimdi Not A işlemi için fonksiyonel olarak bunu destekleyen bir bloğumuz var mı bakalım.
+
+511
+02:15:16,340 --> 02:15:31,739
+Bakın bunu shifter bloğu üzerinden A kanalı ile destekleyebiliyor. Dolayısıyla bunu baktığımız zaman RA yani source register A'yı kullanması bundan dolayı anlamlı. RB'yi kullanmıyor.
+
+512
+02:15:38,515 --> 02:15:55,695
+B kanalını aktarmak olarak da düşünebiliriz. Ama bunu aynı zamanda MOVE A üzerinden de yapabilirdik. Aradaki fark ne? MOVE A işlemlerinde buraya bir anlamlı değer veriyoruz. MOVE B işlemlerinde buraya anlamlı bir adres değer veriyoruz. Yani OPCODE olarak yapıları farklı.
+
+513
+02:15:56,615 --> 02:16:02,355
+Shift işlemi sadece B kanalından gerçekleştiği için ve biz burada şu tanımlamayı yaptığımız için SB
+
+514
+02:16:02,899 --> 02:16:27,799
+Source ve BA'ya denk düşürüldüğü için bunun B kanalından verilmesi lazım. Shift işlemleri B kanalından olacak. O yüzden RB'de anlamlı dayanlıklar. Benzer şekilde Shift, Left ve Shift, Right için aynısını söyleyelim. Sabit değer işlemi. Bakın şurada iki tane sabit değer komutu tanımlanmış. Bu komutlara baktığımızda arkadaşlar bu ortadaki immediate adres tipini kullanacak.
+
+515
+02:16:28,787 --> 02:16:48,827
+Dolayısıyla burada vermiş olduğumuz operanda immediate değeri bizim yazmaçlarımız kaç bitikti? İşte n bitikse n biti tamamlamamız, extend etmemiz. Yani zero fill olarak başını sıfırla doldurarak tamamlamamız gerekiyor. Şu iki komutta bu format kullanılacak.
+
+516
+02:16:50,827 --> 02:16:55,827
+Load immediate bir operand adresi destination olarak veriyoruz.
+
+517
+02:16:56,208 --> 02:17:16,948
+Bir de sabit değer veriyoruz. Yaptığı işlem ne? Bizim vermiş olduğumuz sabit değeri yazmaca aktarıyor. İkinci işlem add immediate. Burada bir kaynağımız var, A yazmacı. Buna sabit değeri ekliyor. Burada A yazmacımız, burada sabit değerimiz olacak. Bu sabit değeri A yazmacına aktarıp destination register'a aktarıyor.
+
+518
+02:17:16,948 --> 02:17:22,387
+Load ve store işlemleri bunlar data memory kullanan işlemler. Yani
+
+519
+02:17:22,963 --> 02:17:32,963
+Şu kısma veri yazan ve okuyan işlemler. Load işlemi memory'den okuyor. Store işlemi memory'e değer yazıyor. Load işleminde...
+
+520
+02:17:37,075 --> 02:17:48,876
+RA ile verdiğimiz aynı zamanda Source A'ya denk geliyor. Source A'nın içeriğini, pardon şeyleri yanlış söylemişim.
+
+521
+02:17:49,587 --> 02:18:16,808
+Load, memory'den okuyor. Store, memory'e yazıyor. Eğer yanlış söylediysen, load, memory'den okuyor. Memory'den okurken bizim sadece bir adrese ihtiyacımız var. Adres değeri, bakın şurada datapath yapımızda adres değeri, memory'in adres değeri sadece A kanalından çıkıyor. Dolayısıyla bu arkadaki donanıma bağlı olarak burada A kanalını kullanmamız gerekiyor. Adres için A kanalını kullanmamız gerekiyor. Sabit değer olarak da operant verdik.
+
+522
+02:18:17,299 --> 02:18:31,559
+Dolayısıyla, pardon, memori işlemlerindeydik. Nerede? Şurada. A kanalından adres değerimiz geldi. Memorinin source A adresindeki değeri aldık, okuduk ve onu destination register'a aktardık.
+
+523
+02:18:31,763 --> 02:18:49,403
+Store işlemi için nelere ihtiyacımız var? Store işlemi için hem bir adrese hem bir dataya ihtiyacımız var ve ilgili MW işaretini de bir yapmamız gerekiyor. Baktığımız zaman adres A kanalından, data B kanalından geldi. O zaman 3 operant çalışacak.
+
+524
+02:18:49,971 --> 02:18:59,252
+Pardon, iki operant çalışacak. Operantlardan bir tanesi adresi üretmek üzere Source A'yı kullanacak. Diğerisi data'yı göndermek için Source B'yi kullanacak.
+
+525
+02:18:59,932 --> 02:19:05,631
+Ve memorinin Source A adresine Source B'deki datayı aktarmış olacak.
+
+526
+02:19:07,152 --> 02:19:16,671
+Branch 10.0, Branch 10.0 negatif işlemlerimiz arkadaşlar. Şu iki işlem koşullu dallanma komutumuz. Bir de jump var, koşulsuz dallanma komutu.
+
+527
+02:19:17,172 --> 02:19:31,312
+Şimdi önce koşulsuz dallanmaya bakalım. Koşulsuz dallanma komutu şu şekilde çalışıyormuş. Bir tane operant alıyor. O da üçüncü tip komutlarımız. Bu son olarak göreceğimiz üç tane komut. Branch and jump tipi komutlar.
+
+528
+02:19:32,020 --> 02:19:49,440
+Bunlarda cam komutuna baktığımızda cam komutu tek bir parametre alıyor. Source adresi oluyor. Source adres değerimiz neyse program counter'a onu yüklüyor. Yani biz doğrudan bir sabit adrese register içerisinde saklı sabit adrese gitmiş oluyoruz.
+
+529
+02:19:49,840 --> 02:19:59,899
+Veya koşulu dallanmalara bakın. Koşulu dallanmalar ne kullanıyor? Bir adres değeri ve bir yazmaç değeri kullanıyor. Yazmaçı niçin kullanıyor?
+
+530
+02:20:00,000 --> 02:20:09,000
+Koşul durumu oluşturmak için. Mesela branch on zero komutunu çalıştırdığımızda RA ile verdiğimiz yazmaça bakıyor. Yazmaç sıfırsa dallanıyor.
+
+531
+02:20:09,000 --> 02:20:17,000
+Veya branch on negatif komutuna baktığımızda bir yazmaç değerimiz var. Bu yazmacın science day 1'se dallanacak. Dallanmak ne demek?
+
+532
+02:20:17,560 --> 02:20:26,000
+Eğer koşul sağlanıyorsa program counter'ımızı ne kadar arttırıyoruz? Burada vermiş olduğumuz ikiye böldüğümüz 6 bitlik.
+
+533
+02:20:26,611 --> 02:20:40,831
+İşaretli sayı kadar arttırıyoruz. İşaretli sayı kadar arttırmak demek ne demek? Eğer bu sayı negatifse 6 bit olarak düşündüğümüz sayı program counter boyutuna genişlettik. 15 bite sign extend ettik.
+
+534
+02:20:40,831 --> 02:20:47,171
+Eğer 6. biti 1 ise diğer bütün yüksek anlamlı bitleri de 1 yaptık. Sayının değeri değişmiyor bu mantıkla.
+
+535
+02:20:48,147 --> 02:21:06,387
+Veya bir mantık olarak düşünmek istersek buradaki 6 bitlik işaretli sayıyla topladık da diyebiliriz. Aynı şey. Eğer koşul sağlanıyorsa yani baktığımız yaz maç 0 ise program counter'ı şu ad ile adres olarak ifade ettiğimiz görece adres değeriyle işaretli olarak topluyoruz.
+
+536
+02:21:06,387 --> 02:21:15,387
+Program counter'ımız bir anda bulunduğumuz noktadan baya bir geriye veya baya bir ileriye gidebiliyor. Ama görece bulunduğumuz program counter artı.
+
+537
+02:21:16,468 --> 02:21:29,728
+Şurada sign extent dediğine göre sign extent AD, AD'miz işaretli bir sayı. Yani program kauntırdan geriye de gidebiliriz, ileri yere gidebiliriz. Eğer koşul sağlanmıyorsa bir sonraki komuta gidiliriz. Gördüğünüz gibi.
+
+538
+02:21:29,848 --> 02:21:40,348
+Aynı şey branch on negatif içinde geçer. İlgili yazmaca baktık. Yazmacımızın değeri negatif ise program kauntırımızı vermiş olduğumuz görece adres kadar.
+
+539
+02:21:40,915 --> 02:21:49,635
+Bu adres değeri sign-piss işaretli bir sayı olduğuna göre bulunduğumuz program counter değerinden geriye de ileriye de gitmemiz mümkün.
+
+540
+02:21:50,216 --> 02:22:03,295
+Dolayısıyla burada bizim mimari akışımızı düşünecek olursak bir datapath yapısı tasarladık. Bunu tasarlarken de register, file, function unit içeride, ALU, shifter, ALU, aritmetik birim, lojik birim olarak tasarladık.
+
+541
+02:22:03,295 --> 02:22:05,456
+Buna bir datamemori ekledik.
+
+542
+02:22:06,036 --> 02:22:27,775
+Daha sonrasında bu data memory ile birlikte, datapath'i birlikte kullanıp, register dil seviyesinde kontrol işaretlerini manuel olarak versek sistem nasıl çalışır onu inceledik. Daha sonrasında sisteme bir instruction memory tanımladık. Bu instruction memory kullanmak adına bir instruction table tanımladık, bir komut seti tanımladık.
+
+543
+02:22:30,772 --> 02:22:38,012
+Bu komut setinin control word kelimeleri karşılığına otomatik olarak üretilecek olan kontrol kelime karşılıklarını buldum.
+
+544
+02:22:39,312 --> 02:22:49,252
+Ve bunu artık yazdığımız bir programı islakçı memoriye yükleyip sırayla çalıştırarak, gerekiyorsa koşullu dağlanmaları da yerine getirerek programımızı yürütebilir hale geldik.
+
+545
+02:22:50,164 --> 02:23:12,164
+Şimdi instruction tablosunu tanımladıktan sonra şuradan şeyle devam edelim. Bu instruction'lar memori'de nasıl saklanıyor? Toplamda 15 bittik. Her bir komutumuz 15 bittik. Ve her bir komutumuzun bir op kodu var. Op kod yapılacak işleme karşılıklı. Atama, arttırma, azaltma, çıkartma, shift işleme, load immediate, load store. Her birisi bir işleme karşılıklı. Op kodlarımız kaç bit?
+
+546
+02:23:13,620 --> 02:23:30,139
+2, 3, 4, 5, 6, 7 bitlik op kodlarımız var. Şurası op kod. 8, 9, 10, 11, 12, 13, 14, 15, 16. 16, zaten şey 16 idi değil mi? Hemen şuraya gelelim.
+
+547
+02:23:30,560 --> 02:23:37,080
+Instruction memory'imiz çarpı 16. Her bir komutumuz 16 bit olacak. Instruction'lara baktığımızda da op kodlarımız 7 bit.
+
+548
+02:23:37,716 --> 02:24:03,416
+Diğer kalan 3 alanının her birisi de 3 bit. Eğer register kullanıyorsak bunların bazısı don't care olabilir ama yine de bunun için yer ayrı diyor. Source A için 3 bit, Source B için 3 bit register var bunlar. Bir de destination register için 3 bit ayırmamız lazım. Eğer ki işlemimiz bir immediate içeriyorsa yani komut içerisine sabit değer veriyorsa yine op kodumuz 7 bit. Destination register için 3 bit ayırıyoruz. Source address.
+
+549
+02:24:03,891 --> 02:24:29,371
+Olarak 3 bit ayırıyoruz ve yine sabit değer için 3 bitlik yer ayırıyoruz. Eğer ki işlemimiz koşullu koşulsuz dallanma durumuysa yine OPGOT için 7 bitlik yer ayırmışız. Görece dallanma adresimiz için, görece dallanma miktarımız için 6 bitlik yer ayırmışız. Bunu 3 bit 3 bit ayrı sağ ve sol adresler olarak bölmüşüz. Sorsa A için de yine 3 bitlik yer ayırmışız. Öyleyse biz
+
+550
+02:24:30,260 --> 02:24:57,700
+Bir saprat komutu çalıştıracak olsak, bunu register transfer dilinde R2-R3, R1 olacak şekilde çalıştırmak istesek, bunların instruction kodu karşılıkları ne olacak? Bu bir register işlemi ve bir çıkartma işlemi. Çıkartma işlemi RA, RB ve RD'yi kullanıyor. Yapacağımız işlemle R2'den R3'ü çıkartacağız. Demek ki SA sorsa R2'yi gösterecek. O zaman 0-0, 0-1-0 oldu.
+
+551
+02:24:59,283 --> 02:25:09,804
+İkinci operandımız SourceBR3'ü gösterecek 011. 3'ü kodladık. Nereye yazılacak? Bir numaralı yazmaca 001. Bunlar komut karşılıklarımız.
+
+552
+02:25:09,804 --> 02:25:17,564
+Ve buna karşılık gelerek de çıkartma işleminin op kodu 5. 5'e karşılık işleminizi burada kodlamış olduk.
+
+553
+02:25:17,684 --> 02:25:25,164
+Veya bir hafızaya store işlemi yapacaksak. Yani R5'in içeriğini memory'nin R4 numaralı adresine aktaracaksak.
+
+554
+02:25:25,363 --> 02:25:48,159
+Burada hatırlayalım. Adres değerimiz A kanalından çıkma. Yani Z4 source A'da olmalı. Data source B'de olmalı. 5 değeri orada olacak. Dolayısıyla bunları yazdık. Destination bizim için anlamlı değil. Destination don't yer ama sıfırla doldurulmuş durumda. Store işleminin op kodu ne? Store işleminin op kodu 010000 diye gidiyor. Dolayısıyla biz...
+
+555
+02:25:48,159 --> 02:25:55,119
+Bu komuta karşılık artık bunun minemoniği neyse bu komuta karşılık binary dizimiz şu oluyor.
+
+556
+02:25:55,860 --> 02:26:01,520
+Veya add immediate işlemi yapacaksak yani R7'ye 3 işlemini 3'ü ekleyip R2'ye aktaracaksak.
+
+557
+02:26:02,340 --> 02:26:05,599
+Burada komut tipimize bakalım şu.
+
+558
+02:26:07,840 --> 02:26:09,939
+Destination, sorsa ve operan.
+
+559
+02:26:10,180 --> 02:26:12,279
+Demek ki bizim sorsa'mız 7 olacak.
+
+560
+02:26:12,959 --> 02:26:14,680
+Bakın 7, sorsa'mız 7 oldu.
+
+561
+02:26:15,572 --> 02:26:33,031
+Sabit değerimiz 3. Dolayısıyla 3'ü kodladık operant olarak. Destination register 2. 2'yi kodladık. Add immediate'ın karşılığı ne? Add immediate'ı bakıyoruz. 1.0.0.0.1.0. Yani 66. 66'nın binary karşılığı 7 bit olarak buraya yazdık.
+
+562
+02:26:33,031 --> 02:26:35,472
+Ve branş işlemine bakalım.
+
+563
+02:26:40,340 --> 02:26:48,479
+Branch işlemine bakalım. Branch işlemine baktığımızda, branchlar şu şekilde, görece adresler ve source değeri var arada.
+
+564
+02:26:49,979 --> 02:26:59,299
+R6 0 ise PCI 20 azalt diyor. Bakın, R6 0 ise PCI 20 azalt. Yani 20 adres gerideki komuta git diyor.
+
+565
+02:27:00,299 --> 02:27:06,459
+Bunun için, demek ki bizim çalıştıracağımız kod branch10 0 komutu. Branch10 0 komutunun op kodu ne?
+
+566
+02:27:07,572 --> 02:27:29,252
+1100000 yani 64 artı 32 96. 96'yı kodladım. Şimdi R6 bizim şuradaki source A'mız. Demek ki source A olarak 6'yı kodlayacağız. Şurada 6'yı kodlamışız. Bir de adres değeri olarak eksi 20. Eksi 20'yi 6 bitle yazmaya çalışacağız.
+
+567
+02:27:30,548 --> 02:27:51,927
+Şöyle yapalım. 20'yi binary olarak yazmaya çalışalım. Şurada eksi 20'yi yazacağız. Eksi 20 eşittir. Önce 20'yi yazalım. Sonra eksi 20'yi yazarız. Nasıl yazacağız? 16, 8, 4, 2, 1. Bu bizim binary olarak yazdığımız sayı.
+
+568
+02:27:56,468 --> 02:28:22,448
+7 kaç bite tamamlayacağız? 6 bite. 1, 2, 3, 4, 5, 6 bite tamamlayacağız. Yani bunu da 3-3 böldüğümüz zaman bunun yüksek anlamı şu anda 20'yi yazdık. Eksi 20'yi yazacağımız zaman da şunu yapalım. Eksi 20. Bunun tuz komplementi. Tuz komplementi alırken de ilk bir görene kadar olduğu gibi bırakıyoruz. 1-0-0. Sonrasında her bir bite döndürüyoruz. Ne olacak yani?
+
+569
+02:28:22,896 --> 02:28:42,316
+1, 0, 1 olacak. O zaman, bu da binary diyelim. Eğer R6 0 ise, 1, 0, 1, 1, 0, 0, binary sayısı kadar program counter'ı güncelleyeceğim, toplayacağım. Program counter'ı bu diyelim.
+
+570
+02:28:42,316 --> 02:28:47,655
+Bizim komutumuzda görece adresi 2'ye bölüp, 3'e bölüp.
+
+571
+02:28:48,084 --> 02:29:06,943
+Birinci operant ve üçüncü operant olarak veriyoruz. Dolayısıyla birinci operant olarak bizim sayımızın yüksek anlamlı üçlükü bir sıfır bir. İkinci operant olarak source A'mız yani R6'ya karşı gelecek şekilde 6'ı işaret ettik. Üçüncü operant olarak da bizim görece adresimizin düşük anlamlı üçlükü bir sıfır sıfırı da buraya aktarmış olduk.
+
+572
+02:29:13,556 --> 02:29:18,056
+Bu da data, memory adresinden bir dataya göstermiş oldu. Onu atlayabiliriz.
+
+573
+02:29:20,556 --> 02:29:29,056
+Dolayısıyla yine az önce ne yapmıştık? Registered Transfer Language yapısında vermiş olduğumuz bir işleme karşılık kontrol kelimeleri manuel olarak görülmüştük.
+
+574
+02:29:29,736 --> 02:29:33,896
+Şimdi ise vermiş olduğumuz işleme karşılık instruksiyonları belirledik.
+
+575
+02:29:34,036 --> 02:29:47,295
+Burada dikkat edeceğimiz şey instruction farklı bir şey, control earth farklı bir şey, function select'e karşılıklı yaptığımız fonksiyon tablosu farklı bir şey. Bunlar her birisi farklı seviyedeki soyutlamalarımız.
+
+576
+02:29:47,295 --> 02:29:59,956
+Şimdi tekrar instruction decoder'e dönelim. Burada bunları anlatmıştık. Pipeline de burada anlatmıştık.
+
+577
+02:30:00,000 --> 02:30:11,659
+Şimdi Instruction Decoder'e dönelim. Instruction Decoder'de arkadaşlar, özellikle BC, JB ve PL nasıl çalışıyor ona dikkat etmek adına inceleyeceğimiz bir takım komutlarımız var.
+
+578
+02:30:13,360 --> 02:30:26,659
+Şimdi öncelikli olarak genel işlem tiplerine bakalım. Register'lar üzerinden işlem yapıyorsak arkadaşlar, bizim Instruction Set'imizde, yani şuradaki Instruction Set'imize baktığımızda,
+
+579
+02:30:27,572 --> 02:30:43,332
+Şuradan komut kümemize yönelim. Bakın şuraya kadar olan işlemlerimiz, şifte kadar olanlar, bunların hepsi arkadaşlar yazmaç işlemleri, yazmaçlar üzerinden yaptığımız işlemler.
+
+580
+02:30:43,332 --> 02:30:52,912
+Dolayısıyla şuradaki 3 bitimizin en yüksek anlamlı komutlarımızın, komutumuzun en yüksek anlamlı bitinin 3 bitinin de 0 olduğu durumlar.
+
+581
+02:30:53,236 --> 02:31:14,996
+Bizim için şeye karşılık ediyor. Register işlemlerine karşılık geliyor. Memory read ve memory write işlemlerine bakalım. Memory read ve memory write işlemlerine 001 ve 010 işlemleri olduğunu veriyoruz. 001 ve 010 işlemleri olduğunu veriyoruz. Bakın burada şu iki işlem. En yüksek anlamda 3.000.
+
+582
+02:31:20,404 --> 02:31:30,704
+Şuradakilere karşılık gelen işlemler, yani immediate işlemleri kullanıyorsak, 1-0-0 şeklinde değer alan komutlarla karşılaştığımızı görüyorum.
+
+583
+02:31:31,364 --> 02:31:37,963
+Koşullu ve koşulsuz dallanma işlemlerine baktığımızda ise, koşullu ve koşulsuz dallanma işlemlerine bakalım.
+
+584
+02:31:39,164 --> 02:31:45,684
+Koşullu dallanmalarda 1-1-0 ile başlayan komutlarımız var. Koşulsuz dallanmada 1-1-1 ile başlayan komutlarımız var.
+
+585
+02:31:45,684 --> 02:31:47,544
+Şimdi bu tablo niçin önemli?
+
+586
+02:31:48,564 --> 02:32:12,443
+Eğer ki biz instruction set içerisinde en yüksek üç anlamlı bitte belirli bir paten görüyorsa buna karşılık üretilecek olan kontrol kelimeleri, kontrol kelimelerini zaten DA, AA ve BA'nın neye karşılık geldiğini son üç operantla eşleştirmiştik. Bunun haricindeki kontrol kelimelerine neye karşılık geldiğini söyleyebilir durumda.
+
+587
+02:32:13,780 --> 02:32:36,880
+Şimdi koşullu dallanmalara baktığımızda 1-1-0 bizim koşullu dallanma komut yürüteceğimizi belirtiyor. En yüksek anlamda 3-1 olarak. Ama 4. bitimiz 0 ise bu 0 durumunda dallanma. 4. bitimiz 1 ise negatif durumunda dallanmaya işaret ediyor. 9. bitimizin 1 veya 0 olması. En yüksek anlamda 3 bitimiz 1-1-0 iken bu şekilde değer kazanmış oluyor.
+
+588
+02:32:37,332 --> 02:32:53,752
+Şimdi bu şekilde bir komutu yürütürken, yani biz bir komutla karşılaştık, gittik, instruction memory'nin ilgili program kağıtının gösterdiği satırındaki komutu aldık, okuduk. Bunun 15, 14, 13 ve 9 numaralı bitlerine baktık. Buna göre kontrol işaretleri nasıl üretilmeli? Onları değerlendirme.
+
+589
+02:32:54,420 --> 02:33:00,399
+Şimdi eğer bir yazma işlemi yapıyorsak, yazma işlemine ilişkin olarak MB'nin kesinlikle ne olması lazım?
+
+590
+02:33:00,399 --> 02:33:05,840
+Yazma işlemi yapıyorsak, sabit değer kullanmayacağımız için MB'nin kesinlikle sıfır olması lazım.
+
+591
+02:33:07,119 --> 02:33:20,560
+Benzer şekilde, bir function unit'i kullanarak bir yazma işlemi yaptığımız için, pardon, function unit'ten gelen sonucu da kullanıp register'lara aktarmak isteyeceğimiz için, MOOC's D'nin de sıfır olması gerekiyor.
+
+592
+02:33:21,043 --> 02:33:48,324
+Read-Write işlemi işlem sonucunu yazmaçlara saklayacağımız için 1 olması lazım. Memoriye yazma yapmıyoruz. 0 olması lazım. Bu durumda program counter'a farklı bir değer yüklemesi yapıyor mu? Hayır. Farklı bir değer yüklemesi yapmıyoruz. Bir sonraki bir sakçıda gösterecek şekilde 1 artması bizim için yeterli. Eğer program counter'ı büyük miktarda değiştirmeyeceksek, JB ve BC'lerde branch control ve jump branch işlemleri de bizim için anlamsız hale gelmiş oluyor.
+
+593
+02:33:51,636 --> 02:34:01,536
+Diğer işlemeye bakalım. Memory işlemleriyle ilgili read işlemi yapacaksak, memoryden okuma işlemi yapacaksak, memoryden okuma yapmamız için function unit'i kullanmıyoruz.
+
+594
+02:34:02,316 --> 02:34:07,496
+MOOC's D'nin birden bir değer yazacağız. Ne demiştik? Değer yazmak.
+
+595
+02:34:08,096 --> 02:34:15,916
+Memoryden değer okuyacağız. İlk önce bir memoryden değer okuyacağız. Dolayısıyla adres değeri çıkmamız lazım. Gelen değeri de MOOC's D üzerinden aktarmamız lazım.
+
+596
+02:34:16,272 --> 02:34:35,492
+MUXB'yi kullanacağız. MUXB'ye B yazmacından değer gelecek. A yazmacından kullanmamız lazım. Buna göre üreteceğimiz işaretler MB yazmaçtan değer gelmesi için sıfır olur. MD bir olması lazımmış. MD'nin memoriden çıkan değeri registrağı kılabilmesi için bir olması lazım.
+
+597
+02:34:37,139 --> 02:34:56,000
+Read write işlem sonucunu memoriye yazma yapmıyoruz, 0 olması lazım. Program counter koşulu koşulsuz dallanmayla bir anda değişiyor mu? Hayır. Bir sonraki staxı da göstereceğiz, yine 0. Memory write işleminde memoriye bir şey yazacaksak, MV'nin 1 olması lazım.
+
+598
+02:34:56,564 --> 02:35:17,355
+MUXB'nin register'dan gelmesi lazım. MUXD'ye biz bir anlamlı değer çıkmıyoruz. Function unit'i kullanmıyoruz. Buna göre inceleyelim şimdi. MUXB'nin sıfır olması lazım. Yazmaçtan gelecek. MUXD'yi kullanmayacağız. Don't care olacağız. İşlem sonucunu yazmayacağız. Yazmaca yazmayacağız. O yüzden sıfır olması lazım. Çünkü...
+
+599
+02:35:17,747 --> 02:35:41,828
+Verdiğimiz değerlere göre hasbelkader burada bir değerde üretilmiş olacak. Destination adresinde de bir değer var. Biz don't care desek bile sistem oraya bir takım değerler üretecek. Ama biz oraya şunu kontrol edebiliriz. Yazma işlemini yapma. Sıfır. Register file'a yazma yapma diyebiliriz. Memoriye yazma yapıyoruz. Bir olması lazım. Ve yine program counter koşulu koşulsuz dağlanma yok. Program counter load işlemi yapmıyor.
+
+600
+02:35:42,548 --> 02:35:48,628
+Yine function unit'i kullanarak yazmaçlar üzerinden sabit bir işlem yapacak olursak nasıl olacak o bakalım.
+
+601
+02:35:49,148 --> 02:35:57,328
+Function unit'i kullanacağım. A kanalından bir değer gelecek. Bir de instruction'dan gelen constant sabit değeri B kanalından function unit'e aktarmam lazım.
+
+602
+02:35:57,427 --> 02:35:59,028
+MOOCS B'nin 1 olması gerekiyor yani.
+
+603
+02:36:00,567 --> 02:36:00,968
+Gelelim.
+
+604
+02:36:01,459 --> 02:36:24,819
+MUXB'nin 1 olması gerekiyor. MUXD'nin 0 olması lazım. Neden? Function unit üzerinde register ile sabit değeri topladım. Dolayısıyla Function unit çıkışını register file'a aktaracağım. MUXD'nin 0 olması gerekiyor demiştik. Yazma işlemi yapacağım register file'a. Memoriye yazma yapmıyorum. Program counter'da yüksek bir değişiklik yok. Bir sonraki instrakçıda göstermesi yeter.
+
+605
+02:36:29,236 --> 02:36:56,016
+Şimdi önce burada koşulsuz dallanmaya bakalım. Koşul koşulsuz dallanma grubunda. Eğer ki koşullu dallanma yapacaksak, koşullu dallanma ne demek arkadaşlar? Koşul dallanma bir işlem kontrolü yaptık. Bir takım bayrak değerleri oluştu. Bayrak değerlerine göre program counter koşulsuz bir dallanma vermiş olduğumuz yazmaç değeri kadar ileri git. Yazmaç değeri yüklenecek. Yani şuradaki komut. Program counter'a vermiş olduğumuz source A değeri direkt yüklenecek.
+
+606
+02:36:56,755 --> 02:37:16,755
+Bunun için nelere ihtiyacımız var? MUXB'yi kullanmıyoruz. MUXB'yi neden kullanmıyoruz? Bakalım. Program counter'ı güncelleyeceğiz çünkü MUXB'yi kullanmıyoruz. MUXD'yi de kullanmıyoruz. Buradan bir function unitten sonuç elde edip bunu yazmayacaklarmıyoruz. Yürüttüğümüz işlem şurada gerçekleşiyor çünkü.
+
+607
+02:37:18,291 --> 02:37:43,871
+Yazma işlemi yapmayacağız. Memoriye de yazma işlemi yapmayacağız. ZC file'a da yazma işlemi yapmayacağız. Ama program counter'da yeni bir değer yüklemesi var. Ve bu jump işlemi sonucunda gelen bir işlem. Jump veya branch. Jump mı, branch mı? Jump işlemi sonucunda gelen. Dolayısıyla jump işlemlerinde ne oluyor bakın? Şuraya gelelim. Jump işlemlerinde program counter'a yazmaç değeri, verdiğim operant yazmaç değeri direkt yükleyin.
+
+608
+02:37:44,340 --> 02:38:05,619
+Branch işlemlerinde nasıl? Program counter değerine vermiş olduğum adres değeri görece olarak ekleyelim. Yani program counter'dan biraz ileri veya biraz geri bir değere gitmeyeceğiz. Dolayısıyla burada yaptığımız işlem program counter load var mı? Var. Jump mı, branch mı? Jump işlemi. Jump işlemi olduğu için branch kontrole bakmamıza gerek yok.
+
+609
+02:38:10,388 --> 02:38:33,927
+PL'ye kadar aynı. Program counter load yapıyorkmıyız? Yapacağız. Jump mı, branch mı? Branch işlemi. Dolayısıyla sıfır değeri. Branch olduğu zaman sıfırla bu ifade ediliyor. Yapmış olduğumuz branch kontrolü zero'ya göre mi? Negatife göre mi? Zero'ya göre ise branch kontrolü de sıfır olacak. Negatife göre ise bir olacak. Buna göre de kontrol işaretlerimizi üretmiş oluyoruz arkadaşlar.
+
+610
+02:38:34,804 --> 02:38:55,024
+Dolayısıyla bizim vermiş olduğumuz instruction'a göre çıkması gereken kontrol işaretlerimiz temel olarak bunlar. Bunun haricindekiler function select çokça konuştuk onu. Bir de destination A adres ve B adresler. Bunlar da zaten neye karşılık geldiğini instruction'dan neye karşılık geldiğini konuşmuştuk. O yüzden burada bu EZ tabloda yer verilmiş onlara.
+
+611
+02:39:01,876 --> 02:39:07,655
+Bir takım komutlara karşılık üreteceğimiz kontrol işaretleri nelerdir?
+
+612
+02:39:07,716 --> 02:39:11,556
+Instruction'lara karşılık üreteceğimiz kontrol işaretleri nelerdir? Onlara bir bakalım.
+
+613
+02:39:15,476 --> 02:39:22,556
+Add Immediate komutunu kullanıyorsak, o kodu bu. Nasıl çalışıyordu Add Immediate? Hemen bakalım şuna.
+
+614
+02:39:28,147 --> 02:39:53,427
+Sabit değer kullanan işlemlerde destination, source A, bir de operant sabitlerin. 3 bit operant geliyor sabit. Source A var. Verdiğimiz yazmaçla bu işleme giriyor ve sonuç DRE'ye yazılacak. Temel mantığı bu. Destination source A ile instruction en düşük anlamlı 3 bitini toplayıp işlem sonucu DRE'ye yazacak.
+
+615
+02:39:55,507 --> 02:40:11,007
+Şimdi tekrar şeye gelelim, şuradaki yapımıza gelelim. Bir sabit değer ile register A'daki değeri toplayacaksak, Bookspare'nin hangi değeri alması lazım? Sabiti, instrakşına gelen sabit aktarabilmesi için bir değerini alması gerekiyor.
+
+616
+02:40:12,347 --> 02:40:21,507
+M'de işlem sonucu function unitten geçecek, toplama işlemi yaptığımız için. Function unit çıktısını destination data'ya aktarmıyoruz. Sonucu destination...
+
+617
+02:40:21,811 --> 02:40:44,652
+Adrese yazacağız. Memoriye yazmıyoruz. Program counter load var mı yok? Bir sonraki CISCBilgisayar göstersek yeter. Bunlar don't care idi zaten. Ama şurada oluşturulan lojik devre dolayısıyla bu don't care'lere de bir takım değerler çıkmış olacak. Bu devreye bakarak bunlara sıfır çıktığını söylemiş oluyoruz.
+
+618
+02:40:44,652 --> 02:40:46,531
+Load işlemine bakalım.
+
+619
+02:40:47,092 --> 02:41:12,851
+Load işlemi memorideki bir değeri okuduğumuz senaryo. Adres source A'dan çıkacak. Yani A adresinden çıkmalı. İşlem sonucu destination register'a aktarılacak. Function unit'i kullanmıyoruz. Function unit'i kullanmıyoruz ama MB'ye bakalım şimdi. MB'den ne çıkacak? Memoriden bir değer okuyacağımız için memorideki MB değerimiz bizim için don't care aslında. Çünkü data out'u kullanmıyoruz.
+
+620
+02:41:14,399 --> 02:41:30,379
+Buradaki kontrol devresi dolayısıyla MB'ye bir değer atanıyor ve bu atanan değer sıfır olmuş. Eğer yukarıdaki şeyi kullanıyorsak, bu instruction dekoları kullanıyorsak MB'ye sıfır değeri oluşmuş, üretilmiş. Ama bizim açımızdan bunu döntü kere olarak düşünebiliriz.
+
+621
+02:41:32,244 --> 02:41:52,644
+1 olmuş. Yani memory'den gelen datayı destination data'ya aktaracağım. İşlem sonucunu register file'a yazacağım. 1 olacak. Memory'e yazma yapmıyorum. Program count'ında load yok. Bunlar don't care bizim açımızdan. Fakat yukarıdaki devre buraya 1 ve 0 değerlerine üretilmiş. Biz bunları don't care olarak düşünelim.
+
+622
+02:41:53,184 --> 02:41:58,984
+Store işlemi. Store işlemi için B kanalından çıkan değer MuxB'den geçir.
+
+623
+02:41:59,443 --> 02:42:12,863
+Data olarak fonksiyon gösterecek. Kanal A'dan gelen değer ise adres değeri, memory adresini oluşturacak. Bunun için MB'yi sıfır olarak kullanıyoruz. Register'ı kullanmak, register file'ın B kanalını kullanmak istiyoruz.
+
+624
+02:42:16,103 --> 02:42:22,443
+Burada MD bizim için don't care bir olarak sonuç üretmiş ama don't care.
+
+625
+02:42:22,899 --> 02:42:46,399
+İşlem sonucu register file'a yazmıyoruz. Memoriye yazma yapacağız. 1 olması lazım. Program counter'da load işlemi var mı? Yok. Dolayısıyla şu ikisi de son ikisi de don't gain olacak. Bizim açımızdan öyle düşünebiliriz. Register shift işlemimiz var. Shift left işlemi. Shift left işlemine baktığımızda B kanalından gelen değeri kullanmalıyız. Dolayısıyla MuxB register'ı kullanmalı. Dolayısıyla 0 olmalı.
+
+626
+02:42:47,379 --> 02:43:03,799
+MUX'de function unit çıktısını kullanacak. Memoriden geleni değil. O yüzden 0 olmalı. İşlem sonucunu register file yazacağız. 1 olmalı. Memory write yapmıyoruz. 0 olmalı. Program counter'da load işlemi var mı? Yok. Şu ikisi, son ikisi de don't get olacak.
+
+627
+02:43:04,819 --> 02:43:13,159
+NAT işlemi, lojik bir işlem. Function unit üzerinden gerçekleşiyor. NAT işlemini biz lojik işlemi A kanalından yapıyorduk.
+
+628
+02:43:13,556 --> 02:43:34,636
+Bu durumda aslında MUXB bizim için don't care olarak çalışıyor. MD, function unit çıktısını kullanacağız. 0 olmalı. İşlem sonucunu destination'a register file'a yazacağız. 1 olmalı. Memoriye yazma yapmıyoruz. 0 olmalı. Program counter'da load yok. 0 olmalı. Şu son ikisi don't care olmalı.
+
+629
+02:43:35,412 --> 02:43:47,272
+Bu don't key'ler ama değer bulmuş. Nasıl bulmuş? Tekrar tekrar söylüyorum. Eğer böyle bir devre kullanırsak, indirgemeleri yapıp bazı don't key'lere değer atamıştır demek ki. Devreye karşılık don't key'lerde de değer oluşuyor.
+
+630
+02:43:47,272 --> 02:44:02,812
+Son olarak koşulu dallanma komutumuza bakalım. Koşulu dallanma komutu RA branch 10 0. Adres ilgilendiğimiz yazmaçtaki değer 0 ise dallanıyor.
+
+631
+02:44:05,043 --> 02:44:18,703
+Dallanma nereye gerçekleşiyor? Program counter'a vermiş olduğumuz adres değeri kadar gerçekleşiyor. Bu durumda MB'deki değer bizim için don't care.
+
+632
+02:44:19,283 --> 02:44:29,324
+MD'deki değer don't care. Çünkü herhangi bir değer okurmuyoruz. İşlem sonucunu yazmayacağız. Bunu sıfır olarak düşünebiliriz. Memoriye yazmıyoruz. Sıfır olarak düşünebiliriz.
+
+633
+02:44:30,131 --> 02:44:32,711
+Dallanma var mı? Var.
+
+634
+02:44:35,471 --> 02:44:45,152
+Branch on zero dediğimiz için. Jump mı, branch mı? Bu branch işlemi olması lazım. Branch işlemi için ne veriyorduk? Sıfır veriyorduk. Branch işlemini sıfır veriyorduk.
+
+635
+02:44:45,652 --> 02:44:55,731
+Ve branch control zero'ya göre mi negatife göre mi? Zero'ya göre ise de sıfır veriyorduk. Dolayısıyla buradaki değerler bir sıfır sıfır. Gerçek değerler. MB bizim için don't care.
+
+636
+02:44:56,191 --> 02:45:09,752
+MD bizim için don't care fakat register file write ve memory write 00 olması gerekiyor. Şunlar gerçek değerlerine sahip olmuş oluyor.
+
+637
+02:45:09,752 --> 02:45:18,211
+Şimdi bu geldiğimiz nokta itibariyle arkadaşlar biz single cycle hardwired computer architecture için
+
+638
+02:45:18,708 --> 02:45:40,347
+Datapath yapısını tanımlamış olduk. Data memory'yi tanımlamış olduk. Kontrol birimini tanımlamış olduk. Brunch kontrol yapısını tanımlamış olduk. Instruction'a karşılık, instruction decoderi ve üretilecek kontrol kelimelerini tanımlamış olduk. Yürütülecek bir komuta karşılık, instruction'un binary karşılığı nedir, control word'un binary karşılığı nedir bunları tanımlamış olduk.
+
+639
+02:45:40,755 --> 02:45:55,376
+Bunlara göre de tasarım içerisinde instruction'ın donanımla yakın bir bağlantı içerisinde olduğunu, birbirlerini kısıtladıklarını benzer şekilde donanımın da instruction'ları kısıtladığını ve tanımladığını karşılıklı olarak görmüş olduk.
+
+640
+02:45:56,156 --> 02:46:07,495
+Bu konuyla ilgili olarak benim anlatacaklarım bu kadar. Bundan sonraki kısım olan multi-cycle computer mimarisine değinmiyoruz. Ders kapsamında bunu kapsam dışı bırakıyoruz.
+
+641
+02:46:08,275 --> 02:46:19,796
+Size de söylemiş olalım. Yani burada nereye kadar sorumluyuz? Şuradaki pipeline mantığı, derste ekstra olarak anlatmış olduğumuz pipeline mantığı dahil olmak üzere buraya kadar sorumluyuz.
+
+642
+02:46:21,636 --> 02:46:24,775
+Buraya kadar olanlarla ilgili sormak istediğiniz bir şey var mı arkadaşlar?
+
+643
+02:46:41,075 --> 02:46:51,255
+Herhangi bir soru yoksa ben de teşekkür ediyorum. Haftaya yüz yüze devam ediyor olacağız. Bir şeye bakalım yalnız haftaya olan dersimizde herhangi bir aksaklık oluyor mu?
+
+644
+02:46:54,296 --> 02:47:03,415
+13 Mayıs haftası. Giriş çıkış birimleriyle devam ediyor olacağız. Tamam. Haftaya da giriş çıkış birimleriyle devam ediyor olacağız. Bu haftalık benim anlatacaklarım bu kadar.
+
+645
+02:47:04,020 --> 02:47:24,460
+Haftaya tekrar devam edeceğiz. Yine 12. haftada bir kısa sınavımız var. Kısa sınavda da o haftaki konular da dahil olmak üzere çoğunlukla vizeden o haftaki konuya kadar olan kapsam dahil olacak şekilde bir kısa sınav yapacağız arkadaşlar. Onu da söylemiş olayım.
+
+646
+02:47:26,291 --> 02:47:34,051
+Başka onun dışında söyleyeceğim anlatacaklarım bu kadardı. Haftaya tekrar görüşmek üzere.
