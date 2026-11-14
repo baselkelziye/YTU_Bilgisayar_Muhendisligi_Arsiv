@@ -1,0 +1,3167 @@
+1
+00:14:40,755 --> 00:14:45,576
+Arkadaşlar, merhabalar. Sesim geliyor mu?
+
+2
+00:14:48,456 --> 00:14:49,775
+Geliyor hocam.
+
+3
+00:14:50,535 --> 00:14:51,235
+Peki, sağ olun.
+
+4
+00:14:56,179 --> 00:15:02,339
+Şimdi, geçen hafta context-free grammarlara başlanılmıştı.
+
+5
+00:15:07,339 --> 00:15:17,299
+Bu hafta context-free grammarların basitleştirmelerinden devam edeceğiz.
+
+6
+00:15:29,587 --> 00:15:31,687
+Ekran paylaşımı yapıyorum.
+
+7
+00:16:06,515 --> 00:16:15,055
+Okay, so last week we talked about context-free grammars.
+
+8
+00:16:16,055 --> 00:16:21,035
+And this week we will see how we can simplify these grammars.
+
+9
+00:16:29,076 --> 00:16:34,995
+To simplify these grammars, we will use substitutions.
+
+10
+00:16:42,067 --> 00:16:49,908
+For example, here in the left side, we have this grammar.
+
+11
+00:16:51,367 --> 00:16:56,807
+And remember that the top left is the initial rule.
+
+12
+00:16:58,927 --> 00:17:07,327
+And so the S variable produces a, b.
+
+13
+00:17:07,988 --> 00:17:18,688
+A produces AAAA, A also produces ABBC, B produces AA, and B produces B.
+
+14
+00:17:19,888 --> 00:17:33,228
+Now, let's say we want to get rid of this rule, but we want the grammar.
+
+15
+00:17:34,387 --> 00:17:48,395
+...
+
+16
+00:17:52,948 --> 00:18:19,788
+We scan the right side for B's because this is what B. So here we have a B. And now we know that this B produces lowercase b.
+
+17
+00:18:21,364 --> 00:18:32,963
+Now, we do not directly replace capital B with lowercase b because we have another b here.
+
+18
+00:18:36,024 --> 00:18:41,708
+So what we do is we add...
+
+19
+00:18:50,003 --> 00:18:57,083
+Lowercase B to ABBC and put there as an OR.
+
+20
+00:19:00,692 --> 00:19:05,832
+Similarly, here we have another B.
+
+21
+00:19:06,832 --> 00:19:08,432
+We do the same there.
+
+22
+00:19:11,311 --> 00:19:22,612
+With this, we have substituted capital B with lowercase b.
+
+23
+00:19:22,751 --> 00:19:24,751
+So we got rid of this rule now.
+
+24
+00:19:26,152 --> 00:19:27,432
+Here we don't have...
+
+25
+00:19:27,807 --> 00:19:29,048
+This is alyam wash.
+
+26
+00:19:57,779 --> 00:19:59,539
+Now, we can continue.
+
+27
+00:19:59,759 --> 00:20:00,440
+For example,
+
+28
+00:20:06,036 --> 00:20:29,576
+We can substitute B goes to AA. So B produces AA. Now, this time, we will look for B's again. And we have one here.
+
+29
+00:20:35,463 --> 00:20:47,463
+...
+
+30
+00:20:33,971 --> 00:20:37,971
+ve bir yer
+
+31
+00:20:57,587 --> 00:21:06,048
+And so we obtain this grammar, which is equivalent.
+
+32
+00:21:19,923 --> 00:21:22,663
+So, in general, we do this.
+
+33
+00:21:23,784 --> 00:21:44,903
+When we want to substitute something like this, we search for this B variable and we replace it with Y1 and add that to the rule.
+
+34
+00:21:56,884 --> 00:22:02,884
+Sometimes we have these nullable variables.
+
+35
+00:22:05,304 --> 00:22:07,884
+X is called a nullable variable.
+
+36
+00:22:10,584 --> 00:22:16,244
+And null, this kind of production is called a null production.
+
+37
+00:22:18,384 --> 00:22:22,224
+Epsilon is sometimes read as null.
+
+38
+00:22:23,476 --> 00:22:25,476
+This is annullable production.
+
+39
+00:22:27,956 --> 00:22:35,376
+And annullable variable is somehow when attempt produces a null.
+
+40
+00:22:38,996 --> 00:22:50,776
+Here we see that m is a nullable variable and this is a null production.
+
+41
+00:23:02,355 --> 00:23:06,355
+So, sometimes we want to remove these null productions.
+
+42
+00:23:14,804 --> 00:23:20,064
+It's not really different from the first example we learned.
+
+43
+00:23:20,384 --> 00:23:22,224
+We will again scan M.
+
+44
+00:23:23,764 --> 00:23:27,844
+And we will replace M with null.
+
+45
+00:23:29,304 --> 00:23:34,824
+And here we have S produces A, M, B.
+
+46
+00:23:35,104 --> 00:23:38,544
+So we can add A, null, B.
+
+47
+00:23:40,852 --> 00:23:42,392
+So, it would be AB.
+
+48
+00:23:45,352 --> 00:23:49,152
+Similarly, M produces AB.
+
+49
+00:23:54,963 --> 00:24:07,824
+Now, we can remove all nullable variables except for the start variable.
+
+50
+00:24:21,395 --> 00:24:28,056
+Another kind of production we don't really like is unit productions.
+
+51
+00:24:30,615 --> 00:24:38,235
+A unit production starts with a variable and produces just some other variable.
+
+52
+00:24:38,415 --> 00:24:40,076
+So X produces Y.
+
+53
+00:24:41,836 --> 00:24:45,315
+And here we have these examples.
+
+54
+00:24:45,795 --> 00:24:47,096
+A produces B.
+
+55
+00:24:47,415 --> 00:24:48,915
+B produces A.
+
+56
+00:24:50,291 --> 00:24:52,291
+These are unit productions.
+
+57
+00:25:00,243 --> 00:25:07,303
+And we may want to remove these by substitutions.
+
+58
+00:25:07,563 --> 00:25:13,043
+For example, A produces B.
+
+59
+00:25:13,043 --> 00:25:22,563
+So we find A's and write A, B, for example.
+
+60
+00:25:29,460 --> 00:25:36,000
+Is there another? Ah, we have an A here. So we can add that here too.
+
+61
+00:26:05,236 --> 00:26:11,576
+With this, now, we got rid of one unit production.
+
+62
+00:26:11,816 --> 00:26:15,556
+And do we still have any unit productions here?
+
+63
+00:26:15,956 --> 00:26:16,816
+We do, right?
+
+64
+00:26:17,316 --> 00:26:19,115
+This is a unit production.
+
+65
+00:26:21,136 --> 00:26:28,076
+And B produces B is B anyway.
+
+66
+00:26:28,076 --> 00:26:30,376
+So this is also unnecessary.
+
+67
+00:26:37,395 --> 00:26:45,115
+So, if you have things like X produces X, you can just get rid of them. You don't need to do anything.
+
+68
+00:26:47,996 --> 00:26:54,215
+It's obvious that B is B.
+
+69
+00:27:00,435 --> 00:27:05,435
+And after that, we easily see that there is a unit production here.
+
+70
+00:27:06,255 --> 00:27:07,515
+B produces A.
+
+71
+00:27:08,155 --> 00:27:10,175
+So we can do the same thing.
+
+72
+00:27:11,815 --> 00:27:14,435
+We can search for Bs.
+
+73
+00:27:14,435 --> 00:27:15,895
+Here we have a B.
+
+74
+00:27:17,035 --> 00:27:20,175
+And no other Bs.
+
+75
+00:27:20,555 --> 00:27:26,355
+So we can replace that B with capital A.
+
+76
+00:27:28,435 --> 00:27:32,496
+And add rule, add that rule there.
+
+77
+00:27:36,372 --> 00:27:38,156
+ve bu.
+
+78
+00:27:47,124 --> 00:28:00,163
+If we have same production, for example, lowercase a, capital A, lowercase a, capital A, capital A, one of them is unnecessary.
+
+79
+00:28:01,443 --> 00:28:03,943
+This gives the same information.
+
+80
+00:28:04,943 --> 00:28:06,923
+So we can get rid of that.
+
+81
+00:28:07,923 --> 00:28:10,884
+At the end, our final grammar is this.
+
+82
+00:28:20,468 --> 00:28:23,927
+Sometimes some productions are useless.
+
+83
+00:28:34,483 --> 00:28:40,083
+And why, for example, in this example, what might be useless?
+
+84
+00:28:44,884 --> 00:28:47,523
+A never terminates.
+
+85
+00:28:48,063 --> 00:28:53,603
+So in this example, S produces A.
+
+86
+00:28:56,243 --> 00:28:58,963
+Now A produces AA.
+
+87
+00:29:01,907 --> 00:29:05,847
+Now, that A produces another AA.
+
+88
+00:29:06,127 --> 00:29:07,987
+And if you think about this,
+
+89
+00:29:11,547 --> 00:29:12,107
+you can,
+
+90
+00:29:14,768 --> 00:29:18,687
+this production goes to infinity and never terminates.
+
+91
+00:29:21,687 --> 00:29:26,248
+This, there will always be a variable AA there.
+
+92
+00:29:28,211 --> 00:29:34,052
+And that means these two productions are actually useless.
+
+93
+00:29:46,324 --> 00:29:48,268
+...
+
+94
+00:29:53,940 --> 00:30:09,599
+Y is this here, S produces A, A produces AA. Now, in this case, A terminates, right? But look at this B.
+
+95
+00:30:13,599 --> 00:30:18,680
+Remember that the top left is our initial variable.
+
+96
+00:30:19,476 --> 00:30:22,496
+So, we always start with S.
+
+97
+00:30:24,876 --> 00:30:25,356
+Now,
+
+98
+00:30:28,216 --> 00:30:31,576
+S can produce A,
+
+99
+00:30:32,476 --> 00:30:37,596
+and A can produce AA or null.
+
+100
+00:30:38,256 --> 00:30:43,036
+So, there is nothing that can produce B here.
+
+101
+00:30:45,907 --> 00:30:58,107
+Bu konuda, bu konuda, bu konuda, hiç çalışmıyor. Biz hiç kullanmıyoruz. Bu konuda, bir konuda, bir konuda, bir konuda.
+
+102
+00:31:10,355 --> 00:31:35,436
+So, in general, if we can start with the initial variable and somehow we can create a string in the language of the grammar, then that variable is A.
+
+103
+00:31:37,011 --> 00:31:47,551
+A is useful because it's part of producing a string. Otherwise, A is useless.
+
+104
+00:31:57,395 --> 00:32:07,635
+And if a production is, sorry, a production is useless if any of its variables is useless.
+
+105
+00:32:08,355 --> 00:32:21,875
+So let's try to see in this example, S produces A, S, B, S produces Null, S produces A.
+
+106
+00:32:23,923 --> 00:32:25,703
+A produces AA.
+
+107
+00:32:28,943 --> 00:32:44,743
+Now, there is no other A's, so these two are useless because we cannot reach a terminal string with this.
+
+108
+00:32:45,003 --> 00:32:48,143
+There will always be a variable at the end.
+
+109
+00:32:50,291 --> 00:32:52,771
+B, C, C, D.
+
+110
+00:32:53,451 --> 00:32:57,331
+So, these two are unreachable.
+
+111
+00:32:58,271 --> 00:33:04,071
+When we start from S, we can never reach to B or C.
+
+112
+00:33:05,291 --> 00:33:09,551
+So, that means these four are useless.
+
+113
+00:33:19,155 --> 00:33:22,335
+So, let's look at this example.
+
+114
+00:33:25,155 --> 00:33:29,195
+We have A, S, sorry.
+
+115
+00:33:31,635 --> 00:33:34,255
+S produces A, S.
+
+116
+00:33:35,295 --> 00:33:42,556
+And there is no, S also produces A, and C too.
+
+117
+00:33:44,556 --> 00:33:46,056
+So, A.
+
+118
+00:33:47,092 --> 00:33:48,812
+A, goes to a terminal.
+
+119
+00:33:49,711 --> 00:33:52,012
+So definitely this is useful.
+
+120
+00:33:53,852 --> 00:33:57,812
+C goes to ACB.
+
+121
+00:33:58,652 --> 00:34:00,092
+Now C here is...
+
+122
+00:34:09,780 --> 00:34:12,420
+We can never get rid of C.
+
+123
+00:34:13,539 --> 00:34:16,200
+So again, this part will be useless.
+
+124
+00:34:17,820 --> 00:34:22,420
+Again, this will be useless because we can never reach to B.
+
+125
+00:34:24,720 --> 00:34:27,100
+We have to start from S.
+
+126
+00:34:27,780 --> 00:34:28,840
+That's our initial.
+
+127
+00:34:36,340 --> 00:34:36,780
+So,
+
+128
+00:34:42,068 --> 00:34:59,648
+Of course, we can see these things like visually, but if we have a larger grammar, maybe it's better if we can develop a methodology or an algorithm.
+
+129
+00:35:03,068 --> 00:35:06,648
+And in that algorithm first,
+
+130
+00:35:07,764 --> 00:35:14,984
+We find all variables that can produce strings with only terminals or null.
+
+131
+00:35:16,084 --> 00:35:19,043
+So these are possible useful variables.
+
+132
+00:35:20,324 --> 00:35:24,124
+Here, A produces a terminal.
+
+133
+00:35:26,124 --> 00:35:28,844
+B produces terminal.
+
+134
+00:35:29,844 --> 00:35:33,764
+So AA has two terminals.
+
+135
+00:35:34,675 --> 00:35:40,976
+So it produces only terminals.
+
+136
+00:35:43,195 --> 00:35:53,496
+So A and B are more possibly useful variables.
+
+137
+00:36:01,396 --> 00:36:09,115
+Then, we can get rid of productions that use other variables.
+
+138
+00:36:10,216 --> 00:36:13,516
+Remember, A and B were useful.
+
+139
+00:36:14,596 --> 00:36:19,136
+S is our initial variable, so by default, we need it.
+
+140
+00:36:20,136 --> 00:36:25,436
+So other than A, B, S, we can just get rid of the remaining.
+
+141
+00:36:27,347 --> 00:36:30,967
+Productions that use other variables.
+
+142
+00:36:31,188 --> 00:36:33,288
+So, S produces C.
+
+143
+00:36:34,288 --> 00:36:36,387
+We can get rid of that rule.
+
+144
+00:36:37,407 --> 00:36:39,367
+C produces AC.
+
+145
+00:36:39,547 --> 00:36:42,028
+We can get rid of that rule.
+
+146
+00:36:50,195 --> 00:37:01,536
+Now, in addition, in the second step, we need to find variables that are reachable from S.
+
+147
+00:37:05,615 --> 00:37:12,036
+And one way of finding that is to using a dependency graph.
+
+148
+00:37:13,780 --> 00:37:40,020
+Where nodes are variables. So for example, S is a node, A is a node, B is a node. And now S produces AS. That means S depends on S. S produces A. So A depends on S.
+
+149
+00:37:41,108 --> 00:37:46,208
+Or you can think of there is an arrow from S to A.
+
+150
+00:37:48,307 --> 00:37:53,347
+And A does not depend on another variable.
+
+151
+00:37:53,768 --> 00:37:56,448
+B does not depend on another variable.
+
+152
+00:37:57,248 --> 00:38:06,988
+So if you look at this graph, obviously B was unreachable.
+
+153
+00:38:13,811 --> 00:38:16,711
+This is my rest break reminder.
+
+154
+00:38:19,152 --> 00:38:26,771
+It blocks my screen one minute and a half minute, one and a half minute.
+
+155
+00:38:31,476 --> 00:38:34,416
+Let's wait for one minute and then we will continue.
+
+156
+00:39:43,987 --> 00:39:51,187
+Ok, let me close that down.
+
+157
+00:39:58,771 --> 00:39:59,091
+Ok.
+
+158
+00:40:18,195 --> 00:40:28,195
+And so, our final grammar is this. And this contains only useful variables.
+
+159
+00:40:33,940 --> 00:40:51,539
+Now, in general, you want to do all of these. You want to first remove nullable variables. You want to remove unit productions. And then remove useless variables.
+
+160
+00:41:02,483 --> 00:41:08,983
+some work on these grammars, and we want them to be cleaner.
+
+161
+00:41:09,983 --> 00:41:14,823
+We don't want unwanted variables and productions there.
+
+162
+00:41:22,356 --> 00:41:31,235
+Now we will see some forms. We call them normal forms for context-free grammars.
+
+163
+00:41:36,596 --> 00:41:44,536
+One of these forms is called Chomsky normal form or CNF.
+
+164
+00:41:46,076 --> 00:41:48,695
+In the Chomsky normal form,
+
+165
+00:41:50,996 --> 00:41:53,695
+We only have two kinds of production.
+
+166
+00:41:55,355 --> 00:42:01,435
+A single, a variable produces two variables, but just two.
+
+167
+00:42:02,435 --> 00:42:07,195
+Not three, not one, just two variables.
+
+168
+00:42:07,456 --> 00:42:12,496
+Or a variable produces a single terminal.
+
+169
+00:42:24,371 --> 00:42:30,551
+As an example, we have a grammar in Chomsky normal form here.
+
+170
+00:42:31,771 --> 00:42:36,671
+And this is not in Chomsky normal form because of what?
+
+171
+00:42:37,951 --> 00:42:43,591
+This rule, we have three variables there.
+
+172
+00:42:44,211 --> 00:42:47,871
+And this one, we have two terminals here.
+
+173
+00:42:57,043 --> 00:43:03,623
+Now, we want to be able to convert to Chomsky normal form.
+
+174
+00:43:06,384 --> 00:43:08,563
+How can we do that?
+
+175
+00:43:10,764 --> 00:43:19,403
+The way we do that is, we introduce these new variables for the terminals.
+
+176
+00:43:19,643 --> 00:43:22,483
+For example, for A, we have TA.
+
+177
+00:43:23,347 --> 00:43:26,587
+This is a variable for A.
+
+178
+00:43:27,587 --> 00:43:31,007
+Similarly, we have variables for B and C.
+
+179
+00:43:32,467 --> 00:43:41,807
+And we add those, we add rules from these variables to these terminals.
+
+180
+00:43:41,807 --> 00:43:46,207
+So TA produces A, et cetera.
+
+181
+00:43:48,068 --> 00:43:48,407
+Now,
+
+182
+00:43:49,492 --> 00:43:59,052
+We also replace these terminals now with these variables here.
+
+183
+00:44:00,112 --> 00:44:02,891
+Instead of A, we have TA, etc.
+
+184
+00:44:05,452 --> 00:44:08,432
+So that was step one.
+
+185
+00:44:10,292 --> 00:44:12,332
+In the next step,
+
+186
+00:44:12,768 --> 00:44:17,088
+We want to break this down.
+
+187
+00:44:17,448 --> 00:44:18,868
+And how can we do that?
+
+188
+00:44:19,608 --> 00:44:22,948
+We introduce again new variables.
+
+189
+00:44:23,847 --> 00:44:26,068
+Let's say v1.
+
+190
+00:44:27,448 --> 00:44:29,528
+And v1.
+
+191
+00:44:36,052 --> 00:44:38,472
+will be these two.
+
+192
+00:44:44,019 --> 00:44:45,199
+B and TA.
+
+193
+00:44:45,900 --> 00:44:55,159
+So then, now, we can say S produces AV1, AV1.
+
+194
+00:44:55,619 --> 00:44:58,680
+So we have two variables there.
+
+195
+00:44:59,360 --> 00:45:05,980
+And the remaining is V1 produces BTA, again, only two variables.
+
+196
+00:45:06,980 --> 00:45:09,420
+And now here we have this guy.
+
+197
+00:45:10,387 --> 00:45:18,807
+Right? Again, we will introduce a new intermediate variable, and we will call that V2.
+
+198
+00:45:21,827 --> 00:45:25,728
+And V2 will be this part.
+
+199
+00:45:27,947 --> 00:45:37,528
+So we have, again, we will have two new rules, but each will have two variables.
+
+200
+00:45:39,923 --> 00:45:46,023
+I think this should be our final Chomsky-Normal Reform Grunge.
+
+201
+00:45:48,864 --> 00:45:57,724
+As you see, number of rules increased, but they are in a much simpler form, right?
+
+202
+00:45:57,724 --> 00:46:03,003
+Only two variables or a single terminal.
+
+203
+00:46:10,867 --> 00:46:15,867
+So, what does it say from...
+
+204
+00:46:21,811 --> 00:46:33,592
+If your context-free grammar does not produce null, you can convert it into Chomsky normal form.
+
+205
+00:46:35,431 --> 00:46:43,912
+If your grammar includes null, you may or may not, maybe you can get rid of null productions.
+
+206
+00:46:46,612 --> 00:46:51,072
+In that case, you can convert it to Chomsky normal form.
+
+207
+00:46:52,351 --> 00:46:56,752
+But if your initial S produces now,
+
+208
+00:47:02,387 --> 00:47:05,847
+Then you cannot convert it into Chomsky normal form.
+
+209
+00:47:12,019 --> 00:47:26,059
+And so the procedure would be first get rid of nullable variables, get rid of unit productions, possibly get rid of useless variables.
+
+210
+00:47:26,920 --> 00:47:28,159
+I'd say definitely.
+
+211
+00:47:36,275 --> 00:47:50,456
+Then for every symbol A, terminal A, you introduce a new variable TA and add a production. TA produces A.
+
+212
+00:48:10,164 --> 00:48:13,963
+Then you replace A's with T'A's there.
+
+213
+00:48:15,864 --> 00:48:20,584
+If you have something like this, A produces a single terminal.
+
+214
+00:48:20,584 --> 00:48:24,084
+This is already in Chomsky normal form.
+
+215
+00:48:24,884 --> 00:48:30,484
+This conforms to Chomsky normal form, so these don't need to change.
+
+216
+00:48:40,275 --> 00:48:54,415
+Now, if you have long variable list like this, what you can do is you can introduce these intermediate variables.
+
+217
+00:48:56,415 --> 00:49:02,415
+So, you can say this part is V1.
+
+218
+00:49:07,219 --> 00:49:16,679
+And later, you can say that this part is V2, et cetera.
+
+219
+00:49:16,679 --> 00:49:26,819
+So, by this procedure, you can obtain rules that ends with two variables.
+
+220
+00:49:35,635 --> 00:49:42,295
+Why do we use Chomsky normal forms? Why do we convert into them?
+
+221
+00:49:43,235 --> 00:49:48,376
+Well, these are good for parsing and proving theorems.
+
+222
+00:49:49,515 --> 00:49:51,355
+So we may need them.
+
+223
+00:49:53,916 --> 00:49:59,275
+And as you see, it's easy to find Chomsky normal form.
+
+224
+00:50:02,195 --> 00:50:11,475
+If the normal, if the grammar does not have unit, does not have null productions.
+
+225
+00:50:18,867 --> 00:50:23,407
+Another normal form is called Greenberg normal form.
+
+226
+00:50:25,387 --> 00:50:38,547
+And in this, we want that all productions start with a single terminal and following variables.
+
+227
+00:50:40,547 --> 00:50:45,768
+And number of these variables can be zero or more.
+
+228
+00:50:46,420 --> 00:50:50,600
+Terminals are okay.
+
+229
+00:50:53,240 --> 00:50:54,280
+Let's see.
+
+230
+00:51:00,403 --> 00:51:22,403
+Is this in Greinbach normal form? Let's see. Terminal followed by two variables, fine. Terminal followed by some variables, these are all fine. Here, only terminal and zero variables, that's fine too.
+
+231
+00:51:26,132 --> 00:51:49,372
+On the right side here, these two rules do not conform Greinbach-Normal form because we have this variable, sorry, terminal followed by terminal.
+
+232
+00:51:53,748 --> 00:51:58,948
+This part, terminal followed by more than one thing.
+
+233
+00:51:59,927 --> 00:52:02,828
+And there are other terminals there.
+
+234
+00:52:02,927 --> 00:52:10,328
+So what we want is except the first symbol, the rest should be variables.
+
+235
+00:52:12,028 --> 00:52:18,508
+And you might guess how we can convert this into a Greenbach form.
+
+236
+00:52:20,980 --> 00:52:27,519
+Again, we will introduce these new variables for each terminal.
+
+237
+00:52:28,659 --> 00:52:31,500
+For A, we introduce TA.
+
+238
+00:52:32,039 --> 00:52:35,559
+For B, we introduce B.
+
+239
+00:52:35,559 --> 00:52:46,760
+And then, wherever we see these terminals, except the first symbols,
+
+240
+00:52:47,411 --> 00:52:53,051
+Whenever we see them, we replace them with these new variables.
+
+241
+00:53:08,019 --> 00:53:17,380
+What happens if something like that, something like this is there, like S produces A, B?
+
+242
+00:53:23,572 --> 00:53:28,972
+And let's say A produces AA.
+
+243
+00:53:33,780 --> 00:53:38,476
+B'nin A'nın A
+
+244
+00:53:45,427 --> 00:53:51,547
+So, what would we do here in Grimbach to convert this to Grimbach normal form?
+
+245
+00:53:53,167 --> 00:53:56,407
+Again, we will introduce TA.
+
+246
+00:53:57,547 --> 00:54:02,167
+So, we will have TA produces A.
+
+247
+00:54:09,331 --> 00:54:22,032
+Now, instead of A here, A here, we can write AAB.
+
+248
+00:54:33,364 --> 00:54:35,684
+And get rid of this rule first.
+
+249
+00:54:38,043 --> 00:54:43,844
+And since we get rid of this, this rule is not needed.
+
+250
+00:54:45,403 --> 00:54:48,684
+And now this can be easily converted to Greenbach.
+
+251
+00:54:49,123 --> 00:54:52,244
+We can write TA here.
+
+252
+00:54:53,244 --> 00:54:57,244
+Okay, so using these...
+
+253
+00:54:58,643 --> 00:55:05,739
+ve öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi öğrenciyi
+
+254
+00:55:10,579 --> 00:55:14,720
+These are, so why do we need them?
+
+255
+00:55:16,539 --> 00:55:24,420
+Well, these are good for parsing strings, even better than Chomsky-normally formed grammars.
+
+256
+00:55:26,119 --> 00:55:33,819
+However, it says it is difficult to find the Greenbach-normally form of a grammar.
+
+257
+00:55:35,795 --> 00:55:38,795
+I don't see why it is difficult, but...
+
+258
+00:55:44,947 --> 00:55:45,447
+Okay.
+
+259
+00:55:48,447 --> 00:55:59,827
+With this, we finished working on these context-free grammars.
+
+260
+00:56:00,768 --> 00:56:02,107
+Let's give a break.
+
+261
+00:56:02,228 --> 00:56:03,907
+Let's give a 10-minute break.
+
+262
+00:56:05,715 --> 00:56:10,715
+ve sonra başlayalımız, başlayalımız, başlayalım.
+
+263
+00:56:10,715 --> 00:56:13,715
+Başlayalımız, yeni bir soru.
+
+264
+00:56:13,715 --> 00:56:17,715
+Bu soru?
+
+265
+00:56:23,380 --> 00:56:31,820
+Okay, let's give it 10 minutes or 13 minutes break.
+
+266
+00:56:33,880 --> 00:56:35,460
+13 minutes break.
+
+267
+01:02:43,155 --> 01:02:44,876
+Evet, sesim geliyor mu arkadaşlar?
+
+268
+01:02:48,015 --> 01:02:48,815
+Geliyor hocam.
+
+269
+01:02:49,735 --> 01:02:50,916
+Peki, tamam, sağ olun.
+
+270
+01:03:06,324 --> 01:03:08,384
+Evet, son kapatayım.
+
+271
+01:03:44,307 --> 01:03:58,587
+Okay, so we will learn a new type of automata, which is called pushdown automata or PDAs.
+
+272
+01:04:12,307 --> 01:04:26,827
+Pushdown automata, in addition to input string and states, in addition to these, it is a stack. That's the new thing in pushdown automata.
+
+273
+01:04:33,827 --> 01:04:36,748
+And this stack...
+
+274
+01:04:37,619 --> 01:04:41,099
+In the stack head, so there is a stack head.
+
+275
+01:04:44,916 --> 01:04:51,636
+The stack head shows the topmost symbol in the stack.
+
+276
+01:04:53,096 --> 01:05:00,936
+And usually we have some initial symbol in the stack.
+
+277
+01:05:04,516 --> 01:05:09,636
+And we assume that this special symbol...
+
+278
+01:05:10,900 --> 01:05:15,079
+This symbol will not be in the alphabet, in the stack alphabet.
+
+279
+01:05:16,079 --> 01:05:20,340
+So this special symbol will appear at time zero.
+
+280
+01:05:29,619 --> 01:05:29,960
+And
+
+281
+01:05:35,668 --> 01:05:41,828
+The transitions will be in this form.
+
+282
+01:05:42,168 --> 01:05:44,668
+There will be three things in the transition.
+
+283
+01:05:45,668 --> 01:05:54,268
+First, the input symbol we need to read for this transition to happen.
+
+284
+01:05:55,467 --> 01:06:02,188
+Second, the symbol we need to pop from the stack.
+
+285
+01:06:03,411 --> 01:06:08,711
+And finally, the symbol V will push back to the stack.
+
+286
+01:06:09,931 --> 01:06:15,671
+And obviously, from Q1 to Q2, the state will change.
+
+287
+01:06:23,668 --> 01:06:51,228
+So, let's see an example. Let's say we have this situation here. Dollar is the special symbol in the stack. Then we have E, H, E. And input is, we are just before A.
+
+288
+01:06:51,648 --> 01:07:11,407
+Right? Read, write, head is on this symbol, whatever it is. It's just before A. Now, this transition needs to read A. And it also needs to poke B.
+
+289
+01:07:13,972 --> 01:07:21,231
+If B is not at the top of the stack, this transition cannot happen.
+
+290
+01:07:22,331 --> 01:07:25,432
+These two conditions are met.
+
+291
+01:07:28,052 --> 01:07:32,711
+So, we read A.
+
+292
+01:07:34,552 --> 01:07:37,231
+We just read A and...
+
+293
+01:07:38,996 --> 01:07:45,996
+We pop B and push C, so the stack becomes like this.
+
+294
+01:07:53,715 --> 01:08:01,095
+We might use null in this part.
+
+295
+01:08:01,295 --> 01:08:03,975
+So that means we will not pop anything.
+
+296
+01:08:05,535 --> 01:08:07,515
+So B will stay there.
+
+297
+01:08:08,175 --> 01:08:13,755
+In addition, on top of B, we will push C.
+
+298
+01:08:18,292 --> 01:08:23,772
+Or, we may have now in the push.
+
+299
+01:08:24,731 --> 01:08:27,731
+So, we are not pushing anything, right?
+
+300
+01:08:28,212 --> 01:08:32,112
+We are popping bee, but we are not pushing anything.
+
+301
+01:08:37,716 --> 01:08:45,896
+Or, both of these can happen. You don't push or pop anything. So, the stock remains same.
+
+302
+01:08:51,347 --> 01:08:52,728
+So, this can happen.
+
+303
+01:08:54,427 --> 01:08:59,608
+Now, pushdown automata are non-deterministic.
+
+304
+01:09:01,408 --> 01:09:02,768
+And why?
+
+305
+01:09:02,768 --> 01:09:05,188
+Because of two reasons.
+
+306
+01:09:05,587 --> 01:09:17,708
+First, for the same signature, translation signature, meaning scan A, pop B, push C.
+
+307
+01:09:20,500 --> 01:09:26,540
+We can have two transitions, more than one transition, actually.
+
+308
+01:09:26,540 --> 01:09:30,479
+So that's non-deterministic.
+
+309
+01:09:31,260 --> 01:09:41,260
+Also, we might have null transitions, meaning we can transition without reading the input.
+
+310
+01:09:42,560 --> 01:09:46,280
+And again, this is non-deterministic behavior.
+
+311
+01:09:52,916 --> 01:09:54,576
+Let's look at an example.
+
+312
+01:09:56,916 --> 01:10:00,596
+Here, we have the pushdown automata M.
+
+313
+01:10:01,695 --> 01:10:06,916
+And the language of M is A to the N, B to the N,
+
+314
+01:10:08,096 --> 01:10:13,435
+such that N is larger than or equal to 0.
+
+315
+01:10:15,536 --> 01:10:19,096
+Remember that we cannot, we couldn't,
+
+316
+01:10:19,539 --> 01:10:32,819
+DFA ve NFA, deterministik finite automata, or non-deterministik finite automata, automaton, that can accept this.
+
+317
+01:10:33,139 --> 01:10:36,260
+But pushdown automata are able to accept this.
+
+318
+01:10:38,519 --> 01:10:45,899
+And let's look at what this does on the graph.
+
+319
+01:10:54,100 --> 01:11:10,539
+We can kind of see that, for example, here in this loop, we are pushing A's, right, to the stack as we read A's, right?
+
+320
+01:11:13,159 --> 01:11:16,819
+So as we read these initial A's,
+
+321
+01:11:18,260 --> 01:11:22,159
+For each A, we will push an A to the stack.
+
+322
+01:11:22,420 --> 01:11:23,559
+And similarly here,
+
+323
+01:11:27,060 --> 01:11:35,460
+As we read B's, we pop those A's, we just pushed.
+
+324
+01:11:36,500 --> 01:11:40,739
+So for each B, we are popping an A.
+
+325
+01:11:41,940 --> 01:11:46,460
+So in a way, we are matching number of B's and A's.
+
+326
+01:11:47,840 --> 01:11:53,560
+And to get to this accepting state, at the end,
+
+327
+01:11:55,091 --> 01:12:01,871
+After we read everything, all of the input,
+
+328
+01:12:08,340 --> 01:12:11,819
+The contents of the stack must be empty.
+
+329
+01:12:12,760 --> 01:12:19,540
+Or we must have the special symbol, only the special symbol on the stack.
+
+330
+01:12:21,840 --> 01:12:28,140
+If we see the special symbol on the stack, we pop it and then push it back.
+
+331
+01:12:29,420 --> 01:12:32,900
+And we transition to an accepting state.
+
+332
+01:12:38,644 --> 01:12:42,484
+At the beginning, we are on an accepting state.
+
+333
+01:12:42,924 --> 01:12:45,804
+So remember, n can be 0.
+
+334
+01:12:46,904 --> 01:12:49,004
+So null string is accepted.
+
+335
+01:12:50,764 --> 01:12:57,924
+Without reading anything and doing anything to the stack, we also move to Q1.
+
+336
+01:13:00,444 --> 01:13:05,484
+And then we start for weighting a's in a way.
+
+337
+01:13:11,123 --> 01:13:30,984
+Let's look at an example. At the beginning, read-write-head is in front of the input. That's or time zero. And the stack only has the special symbol dollar.
+
+338
+01:13:34,452 --> 01:13:38,792
+And without reading anything, we transition to Q1.
+
+339
+01:13:40,592 --> 01:13:42,652
+And we read the first A.
+
+340
+01:13:44,152 --> 01:13:46,912
+We push an A to stack.
+
+341
+01:13:48,112 --> 01:13:48,672
+Here.
+
+342
+01:13:50,012 --> 01:13:53,092
+And we do the same thing for the other A's.
+
+343
+01:14:02,484 --> 01:14:06,704
+We are just about to read this B, but we didn't read.
+
+344
+01:14:07,224 --> 01:14:09,324
+When we read that B, what happens?
+
+345
+01:14:10,463 --> 01:14:12,604
+This transition works.
+
+346
+01:14:13,644 --> 01:14:23,904
+And it reads that A, and it pops an A from the stack and doesn't push anything back.
+
+347
+01:14:25,284 --> 01:14:28,084
+So now we got rid of this first A.
+
+348
+01:14:29,395 --> 01:14:31,755
+Then we got rid of the second A.
+
+349
+01:14:32,515 --> 01:14:35,575
+Then we got rid of this last A.
+
+350
+01:14:35,795 --> 01:14:38,835
+And we only have $ on the stack.
+
+351
+01:14:39,815 --> 01:14:47,295
+And this transition does not read anything from the input.
+
+352
+01:14:47,895 --> 01:14:50,995
+It just looks to the stack.
+
+353
+01:14:51,715 --> 01:14:54,115
+And if there is only a $, it works.
+
+354
+01:14:55,699 --> 01:14:59,579
+And so we reach to an accept state.
+
+355
+01:14:59,920 --> 01:15:02,639
+So we accept this string.
+
+356
+01:15:04,539 --> 01:15:07,819
+This AABBBB string is accepted.
+
+357
+01:15:14,931 --> 01:15:21,291
+So, when is the string accepted?
+
+358
+01:15:23,711 --> 01:15:27,152
+First, we need to consume all of the inputs.
+
+359
+01:15:28,431 --> 01:15:33,951
+And in addition to that, we must end up in an accepting state.
+
+360
+01:15:35,271 --> 01:15:38,371
+Notice that we don't care about the stack contents.
+
+361
+01:15:39,891 --> 01:15:42,188
+It doesn't necessarily...
+
+362
+01:15:42,260 --> 01:15:48,480
+B only special symbol, there can be some other symbols there.
+
+363
+01:15:54,963 --> 01:15:57,184
+Let's look at a rejection example.
+
+364
+01:15:57,824 --> 01:16:01,724
+Again, at time 0, accept.
+
+365
+01:16:03,203 --> 01:16:08,904
+Time 1, at time 1, we are on Q1.
+
+366
+01:16:09,783 --> 01:16:14,184
+We read two A's, so we have two A's in the stack.
+
+367
+01:16:15,003 --> 01:16:18,123
+Now we will read a B and go to Q2.
+
+368
+01:16:18,984 --> 01:16:20,523
+We get rid of this A.
+
+369
+01:16:22,931 --> 01:16:25,412
+At this point, we are on Q2.
+
+370
+01:16:27,332 --> 01:16:27,691
+Right?
+
+371
+01:16:31,051 --> 01:16:34,431
+We consumed all of the inputs.
+
+372
+01:16:36,231 --> 01:16:40,652
+But can we go to Q3?
+
+373
+01:16:40,652 --> 01:16:47,511
+We cannot because here for this transition to happen,
+
+374
+01:16:48,467 --> 01:16:50,667
+The top of the stock must be dollar.
+
+375
+01:16:51,948 --> 01:16:54,847
+Here, the top of the stock is A.
+
+376
+01:17:03,699 --> 01:17:07,479
+So we end up on a reject state and we reject.
+
+377
+01:17:11,923 --> 01:17:14,023
+Let's look at another example.
+
+378
+01:17:16,584 --> 01:17:23,984
+PDA M, language of M is V, and then reverse of V.
+
+379
+01:17:25,123 --> 01:17:27,184
+V is in the alphabet.
+
+380
+01:17:28,644 --> 01:17:36,264
+V is in the clean star of AB, set AB, set of AB.
+
+381
+01:17:36,264 --> 01:17:37,543
+So,
+
+382
+01:17:38,431 --> 01:18:05,791
+Let's see what happens here. First of all, null string is not accepted. So we see we stop in a rejecting state. Now what do we do? As we read A or B, we push those into stack, right? So if we read an A, we push an A to the stack.
+
+383
+01:18:06,100 --> 01:18:09,360
+If we read a B, we push a B to stack.
+
+384
+01:18:10,460 --> 01:18:12,800
+So we have this loop here.
+
+385
+01:18:14,000 --> 01:18:17,300
+And correspondingly, we have this other loop.
+
+386
+01:18:18,600 --> 01:18:22,920
+As it reads A, it pops an A.
+
+387
+01:18:24,079 --> 01:18:27,940
+And as it reads a B, it pops that B.
+
+388
+01:18:38,547 --> 01:18:48,387
+So, this all null transition kind of guesses the middle of input.
+
+389
+01:18:48,907 --> 01:18:55,127
+It kind of asks the question, is this middle of input, is this middle of input?
+
+390
+01:18:56,567 --> 01:19:05,547
+And at the end, if we end up with a stock symbol dollar, that means a match is found.
+
+391
+01:19:11,155 --> 01:19:14,076
+So we have an execution example here.
+
+392
+01:19:17,056 --> 01:19:20,956
+We read NA, push that to stack.
+
+393
+01:19:21,496 --> 01:19:24,496
+We read AB, push that to stack.
+
+394
+01:19:25,615 --> 01:19:29,996
+Now, guess the middle of string.
+
+395
+01:19:31,396 --> 01:19:37,095
+And when we read AB, now we get rid of the B on the stack.
+
+396
+01:19:38,068 --> 01:19:40,688
+We get rid of this A on the stack.
+
+397
+01:19:41,048 --> 01:19:42,288
+We only have a dollar.
+
+398
+01:19:43,228 --> 01:19:49,528
+So we can use this transition and go to Q2, which is accepting.
+
+399
+01:19:58,996 --> 01:20:01,576
+Let's look at this rejection example.
+
+400
+01:20:03,236 --> 01:20:05,935
+We read an A, stack has A.
+
+401
+01:20:07,496 --> 01:20:10,775
+We read B, stack has B.
+
+402
+01:20:12,115 --> 01:20:13,956
+We guess the middle of the string.
+
+403
+01:20:15,896 --> 01:20:18,275
+When we read another B,
+
+404
+01:20:20,275 --> 01:20:22,876
+we get rid of the stack B.
+
+405
+01:20:24,095 --> 01:20:25,435
+Now, when we read A,
+
+406
+01:20:29,524 --> 01:20:36,384
+For this bee, reed right head comes onto the bee symbol.
+
+407
+01:20:38,384 --> 01:20:39,963
+And...
+
+408
+01:20:44,051 --> 01:20:50,491
+To read a B, we must see a B on the stack, on the top of the stack.
+
+409
+01:20:51,691 --> 01:20:55,291
+And we notice that we don't have a B here, we have an A.
+
+410
+01:20:55,951 --> 01:20:59,491
+That means this rule does not work.
+
+411
+01:21:01,171 --> 01:21:07,711
+And so we stay here, and the computation stops too.
+
+412
+01:21:07,711 --> 01:21:09,391
+Computation halts.
+
+413
+01:21:10,420 --> 01:21:12,979
+And we cannot consume this P.
+
+414
+01:21:15,079 --> 01:21:26,520
+So, since input is not consumed here, we see that, we say that this string is not accepted.
+
+415
+01:21:35,347 --> 01:21:38,028
+What is this? Isn't this the same thing?
+
+416
+01:21:44,467 --> 01:22:08,247
+Okay. So notice that this is a non-deterministic machine. So there are other possible computations actually on the same string. For example, another computation might be that we read an A.
+
+417
+01:22:09,427 --> 01:22:12,427
+ve A'ı taktik.
+
+418
+01:22:12,427 --> 01:22:18,427
+Ve B'ı taktik.
+
+419
+01:22:24,307 --> 01:22:28,487
+And we continue putting these to stacks.
+
+420
+01:22:31,128 --> 01:22:37,868
+We don't use this middle guesser, let's say.
+
+421
+01:22:40,067 --> 01:22:45,807
+And we reached to the end of the input.
+
+422
+01:22:48,340 --> 01:23:14,764
+Ve bu konuda bu konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda
+
+423
+01:23:15,123 --> 01:23:17,703
+More than one computations, actually.
+
+424
+01:23:19,224 --> 01:23:23,943
+But none of those computations accepts this string.
+
+425
+01:23:24,623 --> 01:23:28,523
+So we say that the string is not in the language of the machine.
+
+426
+01:23:28,523 --> 01:23:40,844
+If there was only one, at least one computation, if there was at least one computation that accepts the string, we would say that
+
+427
+01:23:41,876 --> 01:23:50,515
+The machine accepts or the string is in the language, but no computation accepts string.
+
+428
+01:23:57,332 --> 01:24:15,152
+One way of seeing what computations we have for a string is drawing this tree.
+
+429
+01:24:15,152 --> 01:24:21,512
+For example, at the beginning, we are on Q0.
+
+430
+01:24:25,043 --> 01:24:31,144
+And the stack is A and dollars.
+
+431
+01:24:44,627 --> 01:24:49,887
+Now, when we read an A, what happens?
+
+432
+01:24:59,475 --> 01:25:02,515
+Well, this rule works.
+
+433
+01:25:04,395 --> 01:25:06,675
+And we stay on Q0.
+
+434
+01:25:09,155 --> 01:25:09,895
+Sorry.
+
+435
+01:25:10,835 --> 01:25:13,395
+Let's start from at the beginning.
+
+436
+01:25:14,495 --> 01:25:15,735
+Let me clear this part.
+
+437
+01:25:17,135 --> 01:25:21,015
+So at the beginning, we are on Q0.
+
+438
+01:25:28,307 --> 01:25:30,567
+And the stack has just the dollar.
+
+439
+01:25:42,260 --> 01:25:44,899
+Now, we read an A.
+
+440
+01:25:47,899 --> 01:25:49,739
+When we read an A,
+
+441
+01:25:54,836 --> 01:25:56,275
+This rule works.
+
+442
+01:25:57,996 --> 01:26:00,396
+And we are still on Q0.
+
+443
+01:26:09,524 --> 01:26:12,744
+And we add that A to stack.
+
+444
+01:26:13,744 --> 01:26:18,043
+So we have dollar here and A.
+
+445
+01:26:22,579 --> 01:26:36,180
+And is there any other branch that can work with that A? No. Actually, there is. I have forgotten. Sorry. I have forgotten. Okay.
+
+446
+01:26:38,319 --> 01:26:48,760
+At the beginning, at time zero, Q zero, we are on Q zero, but look at this.
+
+447
+01:26:52,020 --> 01:26:55,280
+There is an all null transition there.
+
+448
+01:26:57,579 --> 01:27:10,720
+So that means at time 0, in addition to Q0, Q1 is also active.
+
+449
+01:27:27,347 --> 01:27:28,907
+P1 is also active.
+
+450
+01:27:41,171 --> 01:27:52,751
+And now, when we read A, Q0 goes to this, and Q1 gets that A2.
+
+451
+01:27:53,891 --> 01:27:57,751
+And can Q1 read an A?
+
+452
+01:27:58,531 --> 01:28:03,631
+It can read an A, but there must be A on its stack.
+
+453
+01:28:05,427 --> 01:28:08,167
+And there is no room.
+
+454
+01:28:08,847 --> 01:28:14,587
+So Q1, in a way, dies.
+
+455
+01:28:15,868 --> 01:28:16,188
+Okay.
+
+456
+01:28:17,288 --> 01:28:18,507
+It helps.
+
+457
+01:28:18,507 --> 01:28:28,228
+So now when we reach an A, we have this situation.
+
+458
+01:28:29,948 --> 01:28:30,507
+So...
+
+459
+01:28:30,739 --> 01:28:34,000
+We start with Q0, come back to Q0.
+
+460
+01:28:35,699 --> 01:28:43,639
+That's one thing, but then again, this old null transition works again.
+
+461
+01:28:44,760 --> 01:28:52,639
+So in addition to Q0, a dollar, now we have this other machine.
+
+462
+01:28:55,399 --> 01:28:57,219
+It's on Q1.
+
+463
+01:28:59,539 --> 01:29:01,840
+And the stack is the same.
+
+464
+01:29:03,840 --> 01:29:05,739
+So this is...
+
+465
+01:29:08,787 --> 01:29:19,927
+Like machine, the machine that works here replicates itself because of this transition.
+
+466
+01:29:20,787 --> 01:29:24,188
+So again, we have Q0 and Q1 active.
+
+467
+01:29:30,228 --> 01:29:31,788
+That's on time one.
+
+468
+01:29:32,788 --> 01:29:35,087
+And then we read B.
+
+469
+01:29:36,507 --> 01:29:41,868
+So both of these machines read or get B, let's say.
+
+470
+01:29:43,708 --> 01:29:49,007
+Q0 can get a B because of this transition.
+
+471
+01:29:49,007 --> 01:29:56,779
+So Q0 moves to...
+
+472
+01:29:58,707 --> 01:29:59,947
+İtsel again.
+
+473
+01:30:06,228 --> 01:30:07,987
+And what is this stack now?
+
+474
+01:30:10,188 --> 01:30:14,487
+It lets be, so $AB, right?
+
+475
+01:30:15,288 --> 01:30:18,608
+$A.
+
+476
+01:30:22,996 --> 01:30:23,476
+D.
+
+477
+01:30:25,236 --> 01:30:37,476
+And immediately, again, because of this null transition, all null transition, Q0 replicates itself.
+
+478
+01:30:38,675 --> 01:30:40,456
+So we have Q1.
+
+479
+01:30:41,716 --> 01:30:47,976
+And when the machine replicates itself, it replicates its stack too.
+
+480
+01:30:49,684 --> 01:30:52,684
+So, we have $AB.
+
+481
+01:30:59,636 --> 01:31:05,556
+And what happens, so what happens this upper Q1 beats?
+
+482
+01:31:08,736 --> 01:31:09,996
+That B.
+
+483
+01:31:12,136 --> 01:31:19,836
+Well, there is no rule that can work there.
+
+484
+01:31:20,056 --> 01:31:25,236
+So this Q1 dies or stops.
+
+485
+01:31:29,555 --> 01:31:32,975
+Now, what happens with the next B?
+
+486
+01:31:34,495 --> 01:31:45,275
+Again, we have two active machines, or computations, if you will.
+
+487
+01:31:45,915 --> 01:31:49,775
+I am trying to draw all computation branches here.
+
+488
+01:31:49,855 --> 01:31:55,615
+As you see, we have this tree, computation tree.
+
+489
+01:31:57,235 --> 01:32:06,435
+Now, when we read this B, what happens to Q0?
+
+490
+01:32:08,515 --> 01:32:15,555
+It can read this B and it can directly push that to its stack.
+
+491
+01:32:15,555 --> 01:32:20,695
+So we have here Q0.
+
+492
+01:32:27,539 --> 01:32:28,779
+And it's stuck.
+
+493
+01:32:29,920 --> 01:32:41,100
+So we have dollars, A, B, and another B.
+
+494
+01:32:44,916 --> 01:32:54,376
+And remember, again, because of this old now transition, this also immediately replicates itself.
+
+495
+01:32:54,376 --> 01:32:56,376
+So we have Q1.
+
+496
+01:33:01,684 --> 01:33:09,084
+DOLAR, A, B,
+
+497
+01:33:16,692 --> 01:33:20,051
+So, that's what happens on Q0 branch.
+
+498
+01:33:20,291 --> 01:33:21,952
+And what happens to Q1?
+
+499
+01:33:22,952 --> 01:33:27,032
+Well, Q1, when it reads this B,
+
+500
+01:33:33,492 --> 01:33:45,152
+Now, it can actually consume this B because this rule says read B from input, pop B, and it has a B at the top so it can pop.
+
+501
+01:33:46,272 --> 01:33:51,912
+So Q1, let's draw it here.
+
+502
+01:33:54,432 --> 01:33:55,072
+Sorry.
+
+503
+01:33:57,731 --> 01:33:58,372
+Q1.
+
+504
+01:34:02,579 --> 01:34:12,539
+Reads that B and pops a B. So it is only $ and A on its stack.
+
+505
+01:34:20,627 --> 01:34:31,827
+So now at this point, we have three machines, three active machines, one Q0 and two Q1s.
+
+506
+01:34:35,636 --> 01:34:49,376
+Now, we read the last input. That's again a B. So we must need to know, we need to check one by one all three machines, what happens to each of them.
+
+507
+01:34:49,376 --> 01:34:59,695
+So for the first one, we have Q1. And this Q1, there is no rule.
+
+508
+01:35:01,268 --> 01:35:05,747
+To work here, transition, there is no transition here.
+
+509
+01:35:06,347 --> 01:35:12,648
+It can read a B, but for that it must pop a B, and we don't have a B here.
+
+510
+01:35:12,648 --> 01:35:21,968
+So this dies, this computation halts on Q1.
+
+511
+01:35:24,228 --> 01:35:27,648
+And this disk...
+
+512
+01:35:28,020 --> 01:35:42,620
+This later Q1 here, it reads a B and it wants to pop a B and that's doable, right?
+
+513
+01:35:43,280 --> 01:35:44,579
+So this works.
+
+514
+01:35:46,280 --> 01:35:47,680
+So this is Q1.
+
+515
+01:35:50,380 --> 01:35:53,200
+So we have a dollar at the bottom.
+
+516
+01:35:55,699 --> 01:35:59,199
+We have an A on top of that.
+
+517
+01:36:00,340 --> 01:36:02,079
+We have this B.
+
+518
+01:36:04,479 --> 01:36:08,380
+And the other B is gone.
+
+519
+01:36:11,340 --> 01:36:14,619
+And now we have this Q0.
+
+520
+01:36:16,139 --> 01:36:22,180
+This Q0 can read B and it directly pushes it.
+
+521
+01:36:22,644 --> 01:36:24,684
+Pushes a B to its stack.
+
+522
+01:36:25,824 --> 01:36:27,984
+So we have another Q0.
+
+523
+01:36:36,948 --> 01:36:45,368
+And now, this has a dollar at the bottom, and three b's.
+
+524
+01:36:45,368 --> 01:36:55,747
+So we have an A, a b, another b, another b.
+
+525
+01:36:58,307 --> 01:37:00,148
+A, B, B, B.
+
+526
+01:37:00,728 --> 01:37:01,587
+That's Q0.
+
+527
+01:37:02,931 --> 01:37:11,091
+And because of, again, all-null transitions, this immediately replicates itself to Q1.
+
+528
+01:37:14,471 --> 01:37:17,072
+And the stack is the same.
+
+529
+01:37:17,791 --> 01:37:22,351
+Now, at this point, we consumed all of the input.
+
+530
+01:37:24,471 --> 01:37:27,971
+We have three active computations.
+
+531
+01:37:29,460 --> 01:37:34,799
+But none of them is on an accepting state.
+
+532
+01:37:34,920 --> 01:37:36,520
+We couldn't reach Q2.
+
+533
+01:37:38,520 --> 01:37:44,319
+So none of these computations give us an...
+
+534
+01:37:47,028 --> 01:37:48,648
+An accepting state.
+
+535
+01:37:48,847 --> 01:37:55,007
+So we say that this string is not in the language of this machine.
+
+536
+01:37:55,228 --> 01:37:56,548
+It is not accepted.
+
+537
+01:37:56,768 --> 01:37:57,908
+It is rejected.
+
+538
+01:38:06,260 --> 01:38:17,260
+So, in effect, we have this three of computations. We have how many branches here, like...
+
+539
+01:38:21,332 --> 01:38:41,100
+Bu, bu
+
+540
+01:38:42,003 --> 01:38:57,603
+So we have this tree of computations, and any of them can accept, and if any of them accepts, end up in an accepting state, we would say accepted.
+
+541
+01:38:59,283 --> 01:39:03,863
+String is accepted, but we don't say that.
+
+542
+01:39:04,783 --> 01:39:08,443
+Okay, so that was a computation tree.
+
+543
+01:39:10,739 --> 01:39:12,819
+Now, let's continue.
+
+544
+01:39:25,140 --> 01:39:30,739
+We can kind of speed up our writing a bit.
+
+545
+01:39:33,060 --> 01:39:46,340
+We can say instead of just copying a single symbol or pushing a single symbol, we can cope and push strings.
+
+546
+01:39:50,195 --> 01:40:01,515
+As an example, we can push EB and, sorry, we can pop EB and push CDF.
+
+547
+01:40:01,515 --> 01:40:10,015
+So we have EB on top of the stack, we push CDF to the stack.
+
+548
+01:40:17,043 --> 01:40:17,523
+Sorry.
+
+549
+01:40:22,131 --> 01:40:25,931
+So, this is a short notation.
+
+550
+01:40:27,072 --> 01:40:43,131
+When we write this, actually, you should understand that there is somehow a sequence of these pushes and pops that results in this situation.
+
+551
+01:40:43,131 --> 01:40:46,051
+So, maybe you started with A.
+
+552
+01:40:46,868 --> 01:40:57,588
+And then you first pop E, then you first pop B, and then you push F, then push D, then push C.
+
+553
+01:40:57,588 --> 01:41:08,148
+So there are these steps here, multiple steps for these strings. So they are just a short notation.
+
+554
+01:41:12,275 --> 01:41:15,175
+Let's look at another example.
+
+555
+01:41:16,336 --> 01:41:31,695
+So PDA M, language of M is W's such that number of A's and number of B's are the same.
+
+556
+01:41:32,695 --> 01:41:37,775
+So we want A and B's to be the same.
+
+557
+01:41:41,747 --> 01:41:42,923
+DFA
+
+558
+01:41:46,804 --> 01:41:50,283
+W is in the clean star, right?
+
+559
+01:41:51,423 --> 01:41:55,743
+And that means null string needs to be accepted.
+
+560
+01:41:56,623 --> 01:42:08,183
+So what happens is, when we are on Q1, because of this null transition, we are on an accepting state.
+
+561
+01:42:12,340 --> 01:42:17,059
+At the beginning, both Q1 and Q2 are active.
+
+562
+01:42:18,699 --> 01:42:24,800
+Then, we have these six rules, six transitions.
+
+563
+01:42:26,979 --> 01:42:32,000
+And let's see what happens here.
+
+564
+01:42:35,380 --> 01:42:43,039
+One thing you should notice that stack symbols does not need to be the same as the input symbols.
+
+565
+01:42:43,780 --> 01:42:46,840
+So input symbols are A and B here.
+
+566
+01:42:47,899 --> 01:42:55,460
+And here instead of A and B on the stack, we are using zeros and ones, right?
+
+567
+01:42:56,500 --> 01:42:59,200
+It doesn't have to be the same thing.
+
+568
+01:43:04,083 --> 01:43:07,783
+Reading NA, this one works.
+
+569
+01:43:09,163 --> 01:43:10,724
+Then we have this zero.
+
+570
+01:43:12,443 --> 01:43:17,203
+Reading B, that zero is dilated.
+
+571
+01:43:18,484 --> 01:43:20,023
+So it works like this.
+
+572
+01:43:20,344 --> 01:43:25,863
+For each A read, it adds a zero.
+
+573
+01:43:25,863 --> 01:43:29,863
+For each B zero,
+
+574
+01:43:30,319 --> 01:43:41,739
+It pops that and if there is no zero there, so it's kind of like this algorithm, right?
+
+575
+01:43:50,771 --> 01:43:51,551
+There's this.
+
+576
+01:43:53,291 --> 01:44:01,811
+When you read an A, if stack is empty, do this.
+
+577
+01:44:02,731 --> 01:44:06,631
+If the top of the stack is zero, do this.
+
+578
+01:44:07,252 --> 01:44:11,511
+If the top of the stack is one, do this.
+
+579
+01:44:11,771 --> 01:44:12,011
+Right?
+
+580
+01:44:12,011 --> 01:44:15,092
+So it's like this algorithm.
+
+581
+01:44:16,884 --> 01:44:32,084
+If you read a B, if the stack is empty, do this. If you have 1 at the top, do this. If you have 0 at the top, do this. It kind of implements this algorithm.
+
+582
+01:44:38,644 --> 01:44:45,504
+So, how do we write pushdown automata?
+
+583
+01:44:46,004 --> 01:44:48,504
+In math, right?
+
+584
+01:44:48,984 --> 01:44:52,043
+We want to be able to write it using math.
+
+585
+01:44:53,384 --> 01:45:04,224
+And we notice that the transition function is a set because it's non-deterministic, right?
+
+586
+01:45:04,224 --> 01:45:06,224
+And...
+
+587
+01:45:07,060 --> 01:45:25,340
+If, when we are on Q1, state Q1, if we read symbol A, we pop W, and then we may have different things to do. We can go to Q2 and push W2, for example.
+
+588
+01:45:32,243 --> 01:45:37,163
+And actually, we can do more things.
+
+589
+01:45:37,644 --> 01:45:46,783
+In addition to that, we can also go to Q2, Q3, sorry, and push W3.
+
+590
+01:45:47,703 --> 01:45:50,144
+This is a non-deterministic machine.
+
+591
+01:45:54,443 --> 01:45:58,783
+The rest is very similar to what we have seen previously.
+
+592
+01:45:59,956 --> 01:46:05,155
+We have a set of the states, all states.
+
+593
+01:46:07,476 --> 01:46:11,476
+Input alphabet, sigma.
+
+594
+01:46:13,416 --> 01:46:14,416
+Stuck alphabet.
+
+595
+01:46:16,335 --> 01:46:17,876
+The transition function.
+
+596
+01:46:19,556 --> 01:46:20,796
+Initial state.
+
+597
+01:46:22,615 --> 01:46:24,376
+We must write the
+
+598
+01:46:24,376 --> 01:46:27,416
+stack start symbol.
+
+599
+01:46:29,043 --> 01:46:33,583
+And finally, the accept states, set of accept states.
+
+600
+01:46:34,244 --> 01:46:46,463
+All of these in a tuple gives us the mathematical object, the mathematical pushdown automaton object.
+
+601
+01:46:52,756 --> 01:46:57,436
+You can also see this thing called instantaneous description.
+
+602
+01:46:59,516 --> 01:47:02,775
+This describes an instant.
+
+603
+01:47:05,456 --> 01:47:11,655
+In a way, it draws a picture for us.
+
+604
+01:47:11,655 --> 01:47:16,676
+And it says that state is this.
+
+605
+01:47:17,876 --> 01:47:24,215
+Stuck, sorry, input have these and stuck have these.
+
+606
+01:47:25,615 --> 01:47:25,796
+Okay.
+
+607
+01:47:28,255 --> 01:47:30,015
+Let's get this example.
+
+608
+01:47:31,355 --> 01:47:32,695
+For example, here,
+
+609
+01:47:33,916 --> 01:47:40,536
+we have read this part.
+
+610
+01:47:41,175 --> 01:47:45,095
+We didn't read these three Bs yet.
+
+611
+01:47:47,028 --> 01:47:54,488
+So, the input, unread input is BBB.
+
+612
+01:47:56,008 --> 01:47:58,448
+We are on Q1.
+
+613
+01:48:00,588 --> 01:48:08,328
+And the input, the contents of the stack is AAA$.
+
+614
+01:48:12,819 --> 01:48:17,639
+So in a way, this gives us this image.
+
+615
+01:48:20,880 --> 01:48:21,639
+Somewhat.
+
+616
+01:48:22,519 --> 01:48:38,179
+In a short notation, instead of drawing everything, all situations would be kind of hard to draw for each instant, everything.
+
+617
+01:48:40,372 --> 01:48:43,572
+We have this notation, short notation.
+
+618
+01:48:50,387 --> 01:48:57,887
+And then, now we read this B, so input, unread input is BB.
+
+619
+01:48:59,547 --> 01:49:01,047
+This A was popped.
+
+620
+01:49:03,887 --> 01:49:15,707
+Now, from time 4, this time 4, at time 4 we have this description.
+
+621
+01:49:16,243 --> 01:49:20,023
+At time 5, we have this new description.
+
+622
+01:49:20,023 --> 01:49:35,863
+So we can say that from time 4 to time 5, we have this movement, right?
+
+623
+01:49:36,644 --> 01:49:39,163
+We transition to this instant.
+
+624
+01:49:45,108 --> 01:49:56,087
+And actually, if you think about it now, we can describe a whole computation path using these instants.
+
+625
+01:50:01,747 --> 01:50:11,807
+And instead of writing this whole thing, we use this implies star.
+
+626
+01:50:14,387 --> 01:50:27,527
+So we say that if we are on this instant, we can end up in this instant by some computation.
+
+627
+01:50:34,484 --> 01:51:00,144
+So, one way of describing this, describing this pushdown automaton M, would be saying that its language, language of M is these strings W, such that we start with the first initial state.
+
+628
+01:51:00,144 --> 01:51:01,824
+What is that?
+
+629
+01:51:02,868 --> 01:51:05,448
+We are on initial state Q0.
+
+630
+01:51:06,588 --> 01:51:09,887
+We didn't read anything from the input.
+
+631
+01:51:11,288 --> 01:51:15,268
+So W is the whole input now.
+
+632
+01:51:16,688 --> 01:51:21,188
+And stack content is only the special symbol.
+
+633
+01:51:22,548 --> 01:51:23,728
+Stack special symbol.
+
+634
+01:51:24,828 --> 01:51:25,868
+And if...
+
+635
+01:51:26,271 --> 01:51:42,452
+We start from there, and after some computation, we end up in this situation where we are on an accept state, we are on some accept state.
+
+636
+01:51:43,231 --> 01:51:46,492
+There is no more unread input.
+
+637
+01:51:49,460 --> 01:51:53,960
+Remember, stack contents are not important, whatever.
+
+638
+01:51:55,019 --> 01:51:56,819
+We don't really care.
+
+639
+01:51:58,439 --> 01:52:05,659
+If we end up in this situation, in this instantaneous description,
+
+640
+01:52:06,880 --> 01:52:11,279
+that means W is accepted.
+
+641
+01:52:14,260 --> 01:52:21,140
+So we have these W's in the set, right? In the language of the M.
+
+642
+01:52:22,279 --> 01:52:26,359
+This is one way of describing the language of pushdown automata.
+
+643
+01:52:30,515 --> 01:52:37,715
+As an example, here, we can start with this.
+
+644
+01:52:39,175 --> 01:52:45,855
+And after the computation, we can end up on Q3, an accepting state.
+
+645
+01:52:46,775 --> 01:52:54,715
+So we say that AAABBB is in the language of machine.
+
+646
+01:53:04,851 --> 01:53:05,311
+So,
+
+647
+01:53:10,323 --> 01:53:12,844
+A to the N, B to the N.
+
+648
+01:53:13,243 --> 01:53:15,403
+So we can also write this way.
+
+649
+01:53:19,623 --> 01:53:27,823
+If the input has the pattern or format of A to the N, B to the N,
+
+650
+01:53:28,823 --> 01:53:33,083
+we end up in this accepting situation.
+
+651
+01:53:36,500 --> 01:53:38,559
+So, it would be in the language.
+
+652
+01:53:45,140 --> 01:53:54,820
+Therefore, A to the N, B to the N, such that N is larger than 0 is in the language.
+
+653
+01:53:57,600 --> 01:54:01,460
+Okay, this was an introduction to pushdown automata.
+
+654
+01:54:04,300 --> 01:54:06,980
+And this ends this slide.
+
+655
+01:54:08,980 --> 01:54:11,200
+How are we doing?
+
+656
+01:54:12,372 --> 01:54:22,731
+With respect to time, let's move a bit more.
+
+657
+01:54:28,311 --> 01:54:32,072
+Let's not give a new break.
+
+658
+01:54:33,711 --> 01:54:38,532
+We will work a bit 20 minutes or so, or half an hour or so.
+
+659
+01:54:38,895 --> 01:54:44,076
+ve bu
+
+660
+01:54:48,435 --> 01:54:50,535
+Move on to the next slide.
+
+661
+01:55:05,587 --> 01:55:06,699
+D
+
+662
+01:55:13,108 --> 01:55:22,007
+We will see that pushdown automata and context-free grammars are equivalent.
+
+663
+01:55:29,076 --> 01:55:40,536
+Set of context-free languages is equivalent to the set of languages accepted by pushdown automata.
+
+664
+01:55:43,756 --> 01:55:47,916
+And remember that to prove that, we have to prove two things.
+
+665
+01:55:49,036 --> 01:55:51,315
+First, we need to prove that
+
+666
+01:55:52,180 --> 01:56:01,600
+Context-free languages, set of context-free languages is a subset of set of languages accepted by pushdown automata.
+
+667
+01:56:02,699 --> 01:56:12,880
+For that, we should be able to take any context-free grammar and convert it to a pushdown automata.
+
+668
+01:56:17,492 --> 01:56:31,391
+And in the second step, we should be able to show that set of languages accepted by pushdown automata is a subset of set of context-free languages.
+
+669
+01:56:31,391 --> 01:56:43,751
+And what would that mean? That means that we should be able to take any machine, any PDA, and convert to an equivalent grammar.
+
+670
+01:56:47,859 --> 01:56:54,779
+And in these conversions, what is the common thing?
+
+671
+01:56:55,920 --> 01:56:58,960
+Their languages must be the same.
+
+672
+01:57:01,039 --> 01:57:12,720
+So, language generated by the grammar should be equal to the language accepted by machine in both cases.
+
+673
+01:57:15,283 --> 01:57:18,143
+Go through these languages.
+
+674
+01:57:22,131 --> 01:57:24,651
+So, we will start with the first step.
+
+675
+01:57:27,071 --> 01:57:31,192
+We want to convert a grammar to a machine.
+
+676
+01:57:37,587 --> 01:57:38,987
+How will we do that?
+
+677
+01:57:41,227 --> 01:57:52,307
+Now, for each production in G, let's say you have A produces some W, and W is a streak.
+
+678
+01:57:56,307 --> 01:58:04,327
+From the symbols, you add that as a transition to this middle loop.
+
+679
+01:58:06,988 --> 01:58:09,068
+And all machine is very simple.
+
+680
+01:58:09,427 --> 01:58:12,807
+It will only have three, only three states.
+
+681
+01:58:14,087 --> 01:58:23,007
+And you have this starting state without reading or popping anything.
+
+682
+01:58:24,212 --> 01:58:30,452
+It will push S, or initial variable, to the stack.
+
+683
+01:58:31,852 --> 01:58:44,792
+And at the end, after everything, all these computations done, we want the stack to be empty, or there must only be the special symbol.
+
+684
+01:58:46,932 --> 01:58:50,732
+If that's the case, we are accepting.
+
+685
+01:58:52,979 --> 01:59:03,260
+So, in this middle loop, in this middle state, we have this loop, and we have two types of rules.
+
+686
+01:59:03,260 --> 01:59:10,439
+For each production, we have a corresponding rule.
+
+687
+01:59:13,876 --> 01:59:16,256
+What are we doing for each production?
+
+688
+01:59:17,616 --> 01:59:22,116
+We are pushing the variable.
+
+689
+01:59:23,916 --> 01:59:24,676
+Sorry.
+
+690
+01:59:25,596 --> 01:59:32,176
+We are popping the variable and pushing the right-hand side.
+
+691
+01:59:33,636 --> 01:59:39,116
+And for each terminal, we are just writing this, meaning...
+
+692
+01:59:39,859 --> 01:59:47,919
+When we get that terminal, we pop that and push nothing because it's a terminal, right?
+
+693
+01:59:49,619 --> 02:00:04,919
+So, in a way, these transitions that corresponds to these rules do the substitution.
+
+694
+02:00:07,731 --> 02:00:16,152
+What does this rule mean in a grammar? It means that if you see variable a instead of a, you can write w.
+
+695
+02:00:18,731 --> 02:00:35,292
+And this rule does that change, right? It pops a in our stack and writes w to our stack. It does this substitution in the stack.
+
+696
+02:00:38,355 --> 02:00:46,036
+And terminals are, again, if you see a terminal, you can just pop it.
+
+697
+02:00:49,195 --> 02:00:50,735
+Because they are terminals.
+
+698
+02:00:52,275 --> 02:00:54,676
+And then at the end, what do we want?
+
+699
+02:00:55,676 --> 02:00:59,115
+We want everything to be popped, right?
+
+700
+02:01:00,036 --> 02:01:03,756
+We want to see only a dollar in the stack.
+
+701
+02:01:04,948 --> 02:01:08,328
+And if that's the case, we accept the string.
+
+702
+02:01:15,060 --> 02:01:28,240
+Let's look at this example. We have the grammar, this four rules grammar. A, S, T, B, S produces B. We have T, A, and Null.
+
+703
+02:01:28,900 --> 02:01:37,540
+Now, for all of these four rules, we add four transitions.
+
+704
+02:01:41,395 --> 02:01:44,475
+They don't need to read anything, right?
+
+705
+02:01:47,235 --> 02:01:50,895
+And how many terminals we have here?
+
+706
+02:01:51,115 --> 02:01:54,295
+We have the terminal A, we have the terminal B.
+
+707
+02:01:54,295 --> 02:01:57,375
+So we add rules for them.
+
+708
+02:01:58,355 --> 02:02:00,595
+We only have three states.
+
+709
+02:02:01,875 --> 02:02:03,335
+And that's our PDA.
+
+710
+02:02:04,595 --> 02:02:05,495
+Very simple.
+
+711
+02:02:08,564 --> 02:02:10,564
+So, how does this work?
+
+712
+02:02:10,564 --> 02:02:12,764
+If you think about it,
+
+713
+02:02:18,676 --> 02:02:20,416
+We need to correspond.
+
+714
+02:02:25,203 --> 02:02:29,823
+We need to see the correspondence in the symbols.
+
+715
+02:02:34,183 --> 02:02:50,163
+We can divide any instantaneous description into two in the grammar, or anything that's produced, let's say, into two.
+
+716
+02:02:51,123 --> 02:02:56,463
+First part will be the scanned symbols in the machine.
+
+717
+02:02:57,463 --> 02:03:01,543
+Second part will be the stuck contents.
+
+718
+02:03:02,583 --> 02:03:02,764
+Right?
+
+719
+02:03:03,764 --> 02:03:12,784
+So the stuck contents are in a way un-scanned part.
+
+720
+02:03:12,784 --> 02:03:13,824
+Right?
+
+721
+02:03:22,836 --> 02:03:27,436
+ve
+
+722
+02:03:32,724 --> 02:03:38,703
+So, we can think about any grammar in this way.
+
+723
+02:03:39,083 --> 02:03:41,543
+So, there is a starting terminal.
+
+724
+02:03:42,384 --> 02:03:44,703
+There is this leftmost variable.
+
+725
+02:03:45,984 --> 02:03:48,703
+And the remaining variables or terminals.
+
+726
+02:03:56,435 --> 02:04:04,195
+And to get to next string, let's say we have the same X.
+
+727
+02:04:04,735 --> 02:04:11,775
+This part is already, we are doing a leftmost production here.
+
+728
+02:04:13,295 --> 02:04:16,775
+So the left part is already produced.
+
+729
+02:04:16,775 --> 02:04:21,515
+There are no variables here.
+
+730
+02:04:25,140 --> 02:04:29,360
+We have this leftmost variable.
+
+731
+02:04:31,680 --> 02:04:36,900
+That leftmost variable produces this sigma i to j,
+
+732
+02:04:38,460 --> 02:04:43,940
+and possibly another variable, and possibly some other terminals,
+
+733
+02:04:43,940 --> 02:04:48,020
+or some other variables and terminals.
+
+734
+02:04:48,600 --> 02:04:49,940
+And then we have the...
+
+735
+02:04:50,355 --> 02:04:53,676
+Y'e de remaining, Y'e de, right?
+
+736
+02:04:54,155 --> 02:04:59,536
+So you can think of a production with this, in this way.
+
+737
+02:05:05,108 --> 02:05:07,887
+So, you have applied this production.
+
+738
+02:05:16,372 --> 02:05:34,012
+Now, this part corresponds to this PDA instantaneous description change, right?
+
+739
+02:05:36,152 --> 02:05:41,612
+You have your Q1. We are always on Q1 here.
+
+740
+02:05:43,472 --> 02:05:44,012
+And...
+
+741
+02:05:49,011 --> 02:05:53,011
+Bu değişiklik, bu değişiklik,
+
+742
+02:05:53,011 --> 02:06:02,011
+bu değişiklik,
+
+743
+02:06:02,011 --> 02:06:08,011
+ve bu değişiklik,
+
+744
+02:06:08,011 --> 02:06:12,011
+bu değişiklik,
+
+745
+02:06:12,011 --> 02:06:13,131
+bu değişiklik.
+
+746
+02:06:14,899 --> 02:06:17,139
+We push these instead of A.
+
+747
+02:06:21,460 --> 02:06:26,659
+So, each production corresponds to this transition.
+
+748
+02:06:28,020 --> 02:06:32,659
+Each production applied corresponds to a transition applied.
+
+749
+02:06:51,380 --> 02:06:51,880
+Now,
+
+750
+02:06:55,796 --> 02:07:10,756
+If you have terminals, sigma i, remember, if you read a terminal, you just get rid of it from the stack.
+
+751
+02:07:15,828 --> 02:07:18,428
+In the next, let's see.
+
+752
+02:07:25,235 --> 02:07:26,955
+Until this B, right?
+
+753
+02:07:39,891 --> 02:07:48,791
+And after we remove all these terminals from the stack,
+
+754
+02:07:56,083 --> 02:07:59,083
+Now we do the next variable.
+
+755
+02:08:03,188 --> 02:08:10,188
+ve bu
+
+756
+02:08:10,188 --> 02:08:30,444
+bu
+
+757
+02:08:31,604 --> 02:08:37,924
+We push, so we will do this parallel grammar derivation here.
+
+758
+02:08:38,624 --> 02:08:43,264
+Also, we will do, we will see that machine accepts this.
+
+759
+02:08:45,484 --> 02:08:51,104
+So, we first use this rule in the grammar.
+
+760
+02:08:52,104 --> 02:08:56,204
+So, we, S produces ASTB.
+
+761
+02:08:57,011 --> 02:09:02,031
+Now, we push ASTB, also in the stack.
+
+762
+02:09:03,331 --> 02:09:05,471
+We read a terminal.
+
+763
+02:09:06,791 --> 02:09:10,671
+On the derivation part, we don't need to do anything.
+
+764
+02:09:11,791 --> 02:09:16,491
+But on the pushdown automata part, we get rid of that A.
+
+765
+02:09:17,311 --> 02:09:20,571
+Now we have this S here in the stack.
+
+766
+02:09:22,387 --> 02:09:27,208
+And we have the corresponding variable in the derivation.
+
+767
+02:09:28,968 --> 02:09:32,828
+Now, we are doing a leftmost derivation.
+
+768
+02:09:33,608 --> 02:09:37,628
+So we are working on the leftmost variables first.
+
+769
+02:09:38,568 --> 02:09:41,128
+So we will work on this S.
+
+770
+02:09:42,828 --> 02:09:49,708
+And we convert it to a B in the derivation.
+
+771
+02:09:51,731 --> 02:09:55,091
+ve aynı zamanda,
+
+772
+02:09:55,091 --> 02:09:59,292
+ve bu şekilde,
+
+773
+02:09:59,292 --> 02:10:01,292
+ve bu terminal,
+
+774
+02:10:01,292 --> 02:10:06,851
+ve bu,
+
+775
+02:10:06,851 --> 02:10:22,231
+bu,
+
+776
+02:10:18,644 --> 02:10:20,864
+We substitute T with TN.
+
+777
+02:10:21,864 --> 02:10:22,904
+We do that.
+
+778
+02:10:33,619 --> 02:10:37,760
+And finally, we get rid of T.
+
+779
+02:10:37,900 --> 02:10:46,480
+So, I might have jumped over some steps here, skipped some steps maybe.
+
+780
+02:10:46,940 --> 02:10:49,100
+But you see that there is this correspondence.
+
+781
+02:10:57,684 --> 02:11:05,244
+So, each derivation somehow corresponds to a part of the computation, right?
+
+782
+02:11:06,123 --> 02:11:07,484
+For each, we did something.
+
+783
+02:11:14,579 --> 02:11:32,800
+So in general, it can be shown that grammar G, if grammar G generates a string W, if and only if the machine accepts that W.
+
+784
+02:11:35,300 --> 02:11:37,300
+We have, we have so-
+
+785
+02:11:39,347 --> 02:11:42,268
+We have seen that, how they correspond.
+
+786
+02:11:46,467 --> 02:11:50,488
+So that's all proof here.
+
+787
+02:12:00,020 --> 02:12:05,340
+We can also convert pushdown automata to context-free grammars.
+
+788
+02:12:07,500 --> 02:12:10,159
+How many pages is that? Let me check.
+
+789
+02:12:26,836 --> 02:12:39,456
+Let's finish here. Next week, we will see how we can convert a pushdown automaton to a context-free grammar. Do we have any questions?
+
+790
+02:12:44,340 --> 02:12:46,460
+Okey, then. See you next week.
+
+791
+02:12:49,260 --> 02:12:50,100
+İyi günler hocam.
+
+792
+02:12:50,640 --> 02:12:51,240
+İyi günler.
