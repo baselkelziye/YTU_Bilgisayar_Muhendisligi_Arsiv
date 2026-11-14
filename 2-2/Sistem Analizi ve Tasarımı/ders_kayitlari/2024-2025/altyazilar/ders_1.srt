@@ -1,0 +1,2151 @@
+1
+00:00:50,420 --> 00:00:51,940
+Teşekkür ederim arkadaşlar.
+
+2
+00:00:53,780 --> 00:00:58,260
+Sabah da katılanlar gördüm işte.
+
+3
+00:00:59,600 --> 00:01:00,660
+[kişisel bilgi]
+
+4
+00:01:04,915 --> 00:01:09,876
+[kişisel bilgi]
+
+5
+00:01:12,676 --> 00:01:14,275
+Ekranımızı paylaşalım.
+
+6
+00:01:29,012 --> 00:01:31,371
+Akışın ne durumunda? Yavaş yavaş ağrı tüyü.
+
+7
+00:01:36,052 --> 00:01:41,552
+Biraz bekliyorum ki katılım artsın diye. 5 dakika içinde başlarız.
+
+8
+00:04:30,548 --> 00:04:39,408
+Evet arkadaşlar, sanırım daha atmayacak. Nasıl olsa kayıttan izleme şansınız olduğu için biz de başlayabiliriz.
+
+9
+00:04:39,827 --> 00:04:45,707
+Evet, sabah da söylediğim gibi bugün 18 Mart. Sabahki dersi olanlar hatırlayacak.
+
+10
+00:04:46,387 --> 00:04:51,668
+Çanakta yorduğumuz savaşları, saflarının bir dönüncü yılı bu nedenle.
+
+11
+00:04:53,968 --> 00:04:57,108
+Başta Atatürk olmak üzere buluyor önderimiz.
+
+12
+00:04:58,004 --> 00:05:01,224
+Bütün şehitlerimizi, bahçelerimizi minnetle anıyoruz.
+
+13
+00:05:02,604 --> 00:05:06,584
+110. yıl dönümünde dersimiz bugüne denk geldi.
+
+14
+00:05:07,463 --> 00:05:09,444
+Bunu hatırlatmadan başlamayayım dedim.
+
+15
+00:05:11,364 --> 00:05:13,444
+Bu derste ne yapacağız?
+
+16
+00:05:13,764 --> 00:05:16,144
+Şimdi geçen hafta işleyemedik.
+
+17
+00:05:16,344 --> 00:05:18,084
+Malum Yahya hocamızı kaybetmiştik.
+
+18
+00:05:18,944 --> 00:05:24,604
+[kişisel bilgi]
+
+19
+00:05:25,524 --> 00:05:44,524
+Şimdi ön inceleme ve fizibilite safalarını tamamladık. Bir bilgi sistemi geliştirme sürecinde. Şimdi sırada gereksinim analizi var. Gereksinim analizi genellikle iki aşamadan oluşuyor. Öncesi bir...
+
+20
+00:05:44,980 --> 00:05:57,259
+Business Requirements dediğimiz iş analizi tarafı. Bunun modellemesi için kullanılabilecek yöntemlerden en yaygın olanı kullanım senaryosu modellemesi. Buna bakacağız.
+
+21
+00:05:57,879 --> 00:06:05,840
+Bununla birlikte iş analizi yapmak için bilgiyi nasıl toplarız? Özellikle bir işletmede var olan bir sistem nasıl incelenir?
+
+22
+00:06:05,840 --> 00:06:12,840
+Ya da bir sistemin gerçekleştirilmesi için gerekli bilgi çalışma ortamından nasıl elde edilir?
+
+23
+00:06:12,980 --> 00:06:19,639
+Bunlara bakmak, bunların yöntemleri ne olduğunu öğrenmek için de son başlığımız var.
+
+24
+00:06:20,439 --> 00:06:29,200
+Bunlardan sonra da ikinci aşaması olan gereksinim analizinin işlevsel çözümleme tarafına geçeceğiz.
+
+25
+00:06:29,340 --> 00:06:34,600
+Orada da functional specification dediğimiz kısmı gerçekleştirmiş olacağız.
+
+26
+00:06:34,600 --> 00:06:38,220
+Şimdi bugün bu ilk üç başlığa bakacağız.
+
+27
+00:06:42,803 --> 00:06:51,183
+Öncesinde, gereksinim analizi safasında genel olarak ne oluyor, ne bitiyor, onları bir hızlıca üstünden geçelim.
+
+28
+00:06:55,411 --> 00:07:00,211
+Gereksinim analizinin tanımı, böyle yapılabilir.
+
+29
+00:07:01,552 --> 00:07:06,031
+Bilgi sistemi geliştirme sürecinde, fizibiliteden sonra gelen faz.
+
+30
+00:07:06,951 --> 00:07:13,091
+Burada biz problem nedir? Bu problemin çözümleri nelerdir? Yani nasıl çözebiliriz?
+
+31
+00:07:13,911 --> 00:07:16,731
+Ve oluşturacağımız sistem nasıl çalışacak?
+
+32
+00:07:18,100 --> 00:07:22,440
+Bu gibi soruları cevaplamak için çeşitli çalışmalar yapıyoruz.
+
+33
+00:07:23,120 --> 00:07:28,320
+Önce problemin ne olduğunu anlamaya çalışıyoruz. İşte iş analizi tam olarak da bu safayı oluşturuyor.
+
+34
+00:07:29,220 --> 00:07:32,040
+Sonrasında işlevsel çözümleme dediğim.
+
+35
+00:07:32,723 --> 00:07:48,563
+İkinci aşaması, gereksinim analizinin nasıl çözebileceğimizi, hani daha önceden derste de söylediğim gibi teknik tarafa, iş tarafındaki dilin ya da yapılması gerekenlerin teknik tarafa nasıl tercüme edilmesi gerekir.
+
+36
+00:07:49,083 --> 00:07:57,384
+Bu geçiş çözümleri oluşturacak. Bu gibi çalışmaların tamamı gereksinim analizi aşamasında yapılıyor.
+
+37
+00:07:58,579 --> 00:08:19,799
+Problemimizi çözmek üzere bilgi sistemimizi en uygun şekilde çözen ve çalışan bilgi sistemini oluşturmak için ana öğeler neler olması lazım ve öğelerin ne gibi işlevleri olması lazım bunları ayrıntılarıyla tanımlıyoruz gereksinim analizi safhasında.
+
+38
+00:08:23,315 --> 00:08:31,211
+Bilgi kaynakları, yani ben nerelerden beslenabilirim, nerelerden bilgi toplamam gerekiyor bunlar ve...
+
+39
+00:08:33,139 --> 00:08:38,680
+Bilgi sisteminin ihtiyaçları da yine gereksinim analizi safhasında belirleniyor.
+
+40
+00:08:39,839 --> 00:08:43,420
+Bu fazın sonunda ne çıkıyor? Çıktığı olarak neler üretiyoruz?
+
+41
+00:08:43,420 --> 00:08:46,399
+Bir, bir kere gereksinimleri zaten adı üstünde.
+
+42
+00:08:47,100 --> 00:08:52,980
+Kullanıcının bir sistemdeki bütün ihtiyaçları burada çıktığı olarak oluşuyor.
+
+43
+00:08:53,652 --> 00:09:02,512
+Bununla beraber varsa eğer mevcut sistem ne durumda? Mevcut sisteminde bir analizinin yapıldığı safa burası.
+
+44
+00:09:04,532 --> 00:09:16,312
+Bir çözüm önerisi taslığı oluşturuluyor. İkinci aşamasında özellikle. Burada da en uygun çözüm nedir? Bunun değerlendirmesi de yapılıyor.
+
+45
+00:09:20,403 --> 00:09:32,783
+Yeni bir sistem geliştirmeye ihtiyaç olmadığı görülürse, var olan sistem nasıl iyileştirilebilir? Bunlarla ilgili öneriler de bulunuyor.
+
+46
+00:09:33,003 --> 00:09:38,403
+Yani illaki yepyeni bir sistem geliştirmek zorunda olmadığımızı da görebiliriz.
+
+47
+00:09:38,683 --> 00:09:43,903
+Mevcut sistemi bir modifiye ile birkaç modifikasyonla iyileştirilebiliriz.
+
+48
+00:09:43,903 --> 00:09:47,763
+İşte bu da bir gereksinim analizi çıktısı olabilir.
+
+49
+00:09:54,355 --> 00:10:03,415
+Sık sık böyle kesiliyor ders. Buruna aktığı için malum. Birleşti terliyoruz falan. O yüzden bir iğnet çıkartıyoruz.
+
+50
+00:10:03,915 --> 00:10:10,596
+Gereksinim analizi ders öncelikle fizibilite raporlarını gözden geçirmemiz gerekiyor.
+
+51
+00:10:10,735 --> 00:10:14,756
+Fizibilite raporlarını geçtiğimiz derste, geçtiğimiz hafta.
+
+52
+00:10:15,700 --> 00:10:38,140
+Oluşturmuştuk hatırlarsanız. Alternatifleriyle birlikte çözüm olabilecek, çözüme katkı sağlayabilecek potansiyeli yüksek olan çözüm önlerindeki bileşke, küme yani hem teknik olarak hem sosyal olarak hem yasal olarak hem zaman hem ekonomik olarak biliyorsunuz bütün fizibiliteler bir araya geliyordu.
+
+53
+00:10:38,300 --> 00:10:41,220
+Buradaki raporlar mutlaka gözden geçirilmesi gerekiyor.
+
+54
+00:10:42,803 --> 00:10:52,323
+Teknik terimlerinin incelenmesi gerekiyor. Bununla beraber özellikle yönetim açısından bir ayrıntılı inceleme planının yapılması gerekiyor.
+
+55
+00:10:53,567 --> 00:10:57,807
+Proje grubunun görev dağılımının güncellenmesi gerekebiliyor.
+
+56
+00:10:58,208 --> 00:11:03,988
+Bunu özellikle şöyle söyleyeyim, biz fizibilitede, zaman fizibilitesinde hatırlarsanız bunu yapmıştık.
+
+57
+00:11:03,988 --> 00:11:17,687
+Ama özellikle analiz sonrasında, analizle birlikte bütün gereksinimler ortaya çıktığında belki de buradaki Gant diyagramında yer alan iş kırılımları, iş kırılım yapısı değişecek.
+
+58
+00:11:20,596 --> 00:11:25,596
+Değiştiğinde, o zaman benim Gant diyagramım da güncellenmesi gerekir.
+
+59
+00:11:26,036 --> 00:11:31,995
+İşte bu nedenle, görev dağılımında gerekiyorsa, güncellemelerin de yapılması gerekiyor.
+
+60
+00:11:32,855 --> 00:11:40,475
+Ve her zaman için, geri besleme açısından da, denetleme mekanizmasının kurulması lazım, gereksinim analizi safhasında.
+
+61
+00:11:41,587 --> 00:11:52,387
+Yani bir iş yapıldı, bir çıktı, üretildi. Bunun doğruluğunu nasıl ispatlayacağız? Bununla ilgili denetleme mekanizmalarında kurulması gerekiyor.
+
+62
+00:12:01,076 --> 00:12:07,176
+Dediğim gibi bugün böyle sık sık derste ufak aradan vermek zorunda kalıyorum.
+
+63
+00:12:10,580 --> 00:12:19,960
+Evet, dedik ki eğer varsa gereksinim analizi safhasında var olan, mevcut olan sisteminde analizini gerçekleştirmemiz gerekir.
+
+64
+00:12:20,640 --> 00:12:26,140
+Bunun için de sistem nasıl çalışıyor ve bu çalışma neye mal oluyor bunların anlaşılması gerekiyor.
+
+65
+00:12:26,140 --> 00:12:31,480
+İşte bu nedenle hatırlarsanız sistem analistinin pek çok özelliği olması gerekiyor demiştik.
+
+66
+00:12:31,920 --> 00:12:33,004
+İşte burada da...
+
+67
+00:12:33,011 --> 00:12:40,011
+Bir sistem analisti yaptığı mevcut sistemin, var olan sistemin analizi neticesinde hangi bilgi kaynakları var?
+
+68
+00:12:41,491 --> 00:12:43,331
+Ne gibi donanım yazılımlar kullanılıyor?
+
+69
+00:12:44,251 --> 00:12:48,451
+Buradaki bilgi sistemindeki işlemlerde hangi bilgiler kullanılıyor?
+
+70
+00:12:48,891 --> 00:12:51,971
+Ve bunların hacimleri, miktarları, boyutları ne kadar?
+
+71
+00:12:52,971 --> 00:12:56,231
+Sistemin içiyle ve dışıyla olan bilgi etkileşimleri neler?
+
+72
+00:12:56,692 --> 00:13:05,451
+Sistemin döngüsü, yani bir iş mesela baştan sona döndürebilmesi, OBS'den örnek verelim, bizim için önemli olan dönemler biliyorsunuz.
+
+73
+00:13:05,451 --> 00:13:14,812
+İşte bahar dönemi, güz dönemi, yaz dönemi gibi. Bunların döngü süreleri nelerdir ve bunların süreleri nelerdir?
+
+74
+00:13:15,988 --> 00:13:43,188
+Mevcut sistemde arşiv için ne kullanılıyor? Yani arşivleme için. Bunlar nelerdir? Araçları nelerdir? Mevcut sistemde ne gibi raporlar oluşturuluyor? Bunların formatları nelerdir? Mevcut sistemdeki çalışan personel, yani bilgi sisteminin tarafları kimlerdir? Ve bir de son olarak maliyetler, bilgi sistemindeki mevcut sistemin maliyetleri nelerdir? Bunların tamamen hakim olarak ortaya çıkartılması gerekiyor.
+
+75
+00:13:44,179 --> 00:14:00,059
+Yani mevcut sistemin durumunu da mutlaka analizin başında, eğer varsa tabii ki mevcut sistem, mutlaka özetlenmesi gerekiyor ki, geliştirilecek sistemin farkları neler olacak ya da ilave neler olacak bunlar açık bir şekilde ortaya çıksın.
+
+76
+00:14:00,059 --> 00:14:08,539
+Ya da yeni bir sistem geliştirmeden çok bir modifikasyonla bazı birkaç modifikasyonla güncellemeyle mevcut sistem.
+
+77
+00:14:09,203 --> 00:14:21,483
+işlemeye devam ettiriz. Şimdi sistem analizi safhasında genellikle iki tane yöntem kullanılıyor. Ya akış diyagramları gösterip kullanabiliriz ya da prototip oluşturabiliriz. Aradaki fark ne?
+
+78
+00:14:22,292 --> 00:14:50,272
+Eğer gereksinimler önceden belliyse, müşteriyle birlikte saptanmışsa o zaman zaten ne alanda çalıştığımız, bilgi sisteminin neye hizmet ettiği, bilişim alanı diyoruz buna, işlevleri, fonksiyonların neler olduğu, ara birimlerinin farklı sistemlerle etkileşim noktalarının ve insanla etkileşim noktalarının neler olduğu ve bu işin doğru yapıldığını nasıl kabul edilip edilmeyeceği ile ilgili kriter.
+
+79
+00:14:50,292 --> 00:14:59,211
+değerler belirlenmiştir. Bunlar diagramları halinde hatta akış diagramları halinde gösterilebilir. Yani iş akışı şeklinde gösterilebilir.
+
+80
+00:15:00,052 --> 00:15:12,491
+Eğer önceden biz gereksinimleri saptamamışsak ya da müşteri gereksinimlerini doğru şekilde veremiyorsa o zaman bizim otorup da böyle bir iş akışı gibi bir çıktı üretmemiz beklenemez.
+
+81
+00:15:15,072 --> 00:15:16,912
+Bu durumda da
+
+82
+00:15:17,524 --> 00:15:38,024
+Bu durumda eğer gereksinimler belli değilse ve proje ilerledikçe yavaş yavaş ortaya çıkacaksa o zaman da prototip oluşturmak ve bir prototipi güncelleyerek, büyüterek, ilerlemek daha doğru bir sistem analizi yöntemi olacaktır.
+
+83
+00:15:38,644 --> 00:15:44,163
+Yani iki tane yol var. Biliniyorsa iş yakış diyagramları yaparsınız, bilinmiyorsa prototip oluşturursunuz.
+
+84
+00:15:54,100 --> 00:16:13,300
+Ereksinim analizinin sonucunda biz bir çıktı, tabii ki birkaç çıktı üretiyoruz. Ama ürettiğimiz çıktıların bir tanesi temel. SRS dediğimiz döküman. SRS ne demek? System Requirement Specification.
+
+85
+00:16:16,436 --> 00:16:32,096
+Türkçe'de sistem gereksinimleri spesifikasyonu. Bu aslında tabii varlık analisti olmak üzere müşteriyle birlikte ortak çalışarak bütün sistemdeki gereksinimlerin ortaya konulduğu bir döküm, bir belge.
+
+86
+00:16:33,139 --> 00:16:37,580
+Yani buna aynı zamanda sistemin prototipi de diyebiliriz.
+
+87
+00:16:38,279 --> 00:16:45,899
+Bununla birlikte bir sistem geliştirme planı da oluşturulur ve bu yine spesifikasyonla birlikte planda gözden geçirilir.
+
+88
+00:16:46,659 --> 00:16:54,779
+Yani yine Gantt diagramına doğru geri gideceğiz ama işlerde güncellenmesi gereken şeyler varsa takvimde bunlar da gözden geçirilir.
+
+89
+00:16:55,508 --> 00:17:01,668
+Yani biz aslında sistem geliştirme planını ve sistem analizini birlikte iç içe gerçekleştiriyoruz.
+
+90
+00:17:01,788 --> 00:17:07,288
+Ve bu aşamaya da tam olarak tanımlama aşaması adını veriyoruz. Neyi tanımlıyoruz?
+
+91
+00:17:08,243 --> 00:17:24,623
+Bilgi sistemimiz ne gibi işlevselliklere sahip olacak? Hangi gereksinimleri karşılayacak ve o gereksinimler için çözüm üretecek? Bunları tanımlıyoruz. Bu nedenle de buna tanımlama aşaması adını veriyoruz.
+
+92
+00:17:28,203 --> 00:17:30,483
+Bizim kitapta da yer alan bir akış.
+
+93
+00:17:32,723 --> 00:17:40,384
+Şimdi, aslına bakarsanız, ilk olarak, hani, fizibiliteden geliyoruz. İşte konu, kaynaklar, yapılabilirlik, zamanlama, tespiti.
+
+94
+00:17:40,923 --> 00:17:44,663
+Fizibilitenin sonucunda aslında bizim bir planımız, bir yol haritamız ortaya çıkıyor.
+
+95
+00:17:45,403 --> 00:17:50,223
+Bunun sonucunda, idari inceleme, yönetim incelemesi sonucunda ya revize edilir ya da kabul edilir.
+
+96
+00:17:50,223 --> 00:17:53,304
+Revize edilmeli diyelim, kabul edildiği tarafa geri gelelim.
+
+97
+00:18:00,660 --> 00:18:14,460
+iş akışları şeklinde gösteririz ve şuradaki yazılım gereksinimler çıktısını besleriz. Eğer bilinmiyorsa da prototip bir model oluştururuz. Ondan sonra bu modelle gereksinimleri ortaya çıkartmaya çalışırız.
+
+98
+00:18:15,731 --> 00:18:31,152
+Gereksinimler teknik incelemeden geçer. Eğer gerekiyorsa revize edilir ve bilinen gereksinim haline geldikçe, şuradaki yazılım gereksinimleri spesifikasyonuna, SRS dökümanına çıktı üretmeye devam eder.
+
+99
+00:18:31,152 --> 00:18:39,092
+Ne zamanki bu kitap tamamlanır, yani kitap diyorum belgemiz tamamlanır, o zaman teknik incelemeden kabul tarafına geçeriz.
+
+100
+00:18:39,692 --> 00:18:43,731
+Sonrasında işte buradaki yazılım planı ile karşılaştırılır yazılım gereksinimleri.
+
+101
+00:18:43,731 --> 00:19:03,711
+Eğer kabul edilirse, gereksinimler bulunmuş ve tanımlanmış demektir. Tasarım aşamasına geçilebilir. Eğer uyuşma yoksa bir arıza varsa o zaman revize edilir. Tekrar ya burası ya burası revize edilerek doğru analiz modelinin, doğru çıkılarının tasarıma girdi olarak verilmesi sağlanır.
+
+102
+00:19:03,711 --> 00:19:08,451
+Bir önceki şurada ne dedik? Burada idari inceleme var dedik.
+
+103
+00:19:10,420 --> 00:19:18,099
+İdari incelemelerde genel olarak önemli. Yani aslında idare açısından bilgi sisteminin şu sorulara cevap verebiliyor olması lazım.
+
+104
+00:19:19,180 --> 00:19:26,740
+Şimdi siz gereksinimleri belirlediniz, bunlara ihtiyaç diyoruz. İhtiyaçlar acaba benim işletmemin genel stratejileriyle uyumlu mu değil mi?
+
+105
+00:19:26,980 --> 00:19:31,900
+Yani başka yöne doğru mu gidiyor yoksa benim beklentilerim çerçevesinde mi geliştiriliyor?
+
+106
+00:19:38,420 --> 00:19:55,480
+Deneyim ve foresight dediğimiz öngörü yani ileriye yönelik projeksiyon birlikte kullanıldı mı yoksa sadece günümü kurtarıyoruz. Daha ileriyi de düşünen çözümler olması gerekir bilgi sisteminin yaşam süresini yaşam ömründe düşündüğünüzde.
+
+107
+00:20:00,000 --> 00:20:16,960
+Çakışan gereksinimler olabilir. O zaman burada bir seçim yapmak gerekecek. Hangisi daha faydalı, hangisi benim için daha yararlı şeklinde? İdare açısından, hani kar hangisinden daha çok gelir, verim hangisinde, hangi gereksinimin karşılanmasıyla daha çok artar gibi.
+
+108
+00:20:18,079 --> 00:20:28,000
+Ve şurası zaten tamamen ekonomik taraf. Yeni bir çözüm geliştiriyorum. Bu bana somut mali olarak ne fayda getirecek? Ekonomik fizibilitede zaten...
+
+109
+00:20:28,000 --> 00:20:38,440
+Bunlar tartışılmıştı hatırlarsınız. Oradan da beslenerek buradaki gereksinimlerin karşılanmasıyla birlikte oluşacak somut mali fayda da tartışılır.
+
+110
+00:20:39,880 --> 00:20:44,700
+Yapılan çözümün organizasyonunda ne kadar değişiklik yaratma olasılığı var?
+
+111
+00:20:46,619 --> 00:20:52,960
+Bu negatif yönde de olabilir, pozitif yönde de olabilir. Yani bunu zaman, hız,
+
+112
+00:20:53,395 --> 00:20:58,215
+Sistem ya da kaynak gereksinimi ve insan gücü olarak her türlü düşünebilirsiniz.
+
+113
+00:21:00,468 --> 00:21:05,428
+Bilgi sistemi, atıyorum, çok işleri hızlandırıyordur, verimi arttırıyordur.
+
+114
+00:21:06,347 --> 00:21:12,688
+Ama işte çok daha fazla personel istihdamı gerekiyordur ya da personel istihdamını azaltıyordur.
+
+115
+00:21:12,827 --> 00:21:15,748
+Yani bu artı eksileri mutlaka değerlendirmesi gerekir.
+
+116
+00:21:16,668 --> 00:21:19,468
+Raporlamalar her zaman için, yönetim için önemlidir.
+
+117
+00:21:20,108 --> 00:21:23,468
+Hızlı raporlama ve ayrıntılı raporlama yapabiliyor mu bu sistem?
+
+118
+00:21:23,468 --> 00:21:28,448
+Yani rapor çıktılarını çalıştınız mı ihtiyaç olarak? Bunlar önemlidir.
+
+119
+00:21:28,468 --> 00:21:41,428
+Bilgi akışları ve bilginin güncellenmesi için doğru planlar yapıldı mı? Özellikle derste hani fizibilite de çok durduk üstünde. Yasal fizibilite tarafında da KVKK falan dedik.
+
+120
+00:21:42,099 --> 00:22:02,039
+İşte orada veri güncellemeleri, biliyorsunuz işte müşteri isterse direkt verisinin silinmesini talep edebiliyor gibi bunlar planlandı mı? Yeni çözüm, yeni yapıyoruz ya, mevcut bir şey varsa eğer çalışan, bundan somut biçimde yani hakikaten diyebileceğimiz şekilde daha iyi ve daha hızlı çalışıyor mu?
+
+121
+00:22:02,367 --> 00:22:13,247
+Teknoloji, seçilen teknoloji, yapılan fizibilite çalışmasının sonucunda yürünen yol, bilginin hacmiyle ve artma potansiyeliyle uyumlu mu?
+
+122
+00:22:14,167 --> 00:22:22,467
+Ve kullanıcı etkileşimi nasıl? Yani kullanıcılar bu sistemi kabul eder mi? Düzgün şekilde kullanır ve fayda sağlar mı?
+
+123
+00:22:22,467 --> 00:22:30,367
+Ve bununla birlikte yine kullanıcı tarafının dışında, arka tarafta veri katmanımız da var. Veri organizasyonları da düzgün.
+
+124
+00:22:30,367 --> 00:22:43,867
+Bunlar idarenin gereksinim analizinde toarttığı noktalar. Yani bunları iyi şekilde karşılıyorsa, bu analiz modeli yönetim ve üst yönetim açısından iyi bir analiz demektir.
+
+125
+00:22:44,587 --> 00:22:47,207
+Buralarda eksikler varsa revizyon isteyecektir.
+
+126
+00:22:48,647 --> 00:22:55,067
+Evet, şimdi gereksinim analizi nasıl, yöntemi nedir, idare süreci nasıl akar?
+
+127
+00:22:56,084 --> 00:23:16,084
+Yazılım gereksinim spesifikasyonu ne demektir? Yazılım inceleme planı ne demektir? Bunların arasındaki bağlantı, idari inceleme ile birlikte nasıl kabul edilir, nelere bakılarak kabul edilir? Bunların üzerinden geçtik. Genel olarak gereksinim analizinin ana çerçevesi bu şekildeydi.
+
+128
+00:23:17,652 --> 00:23:20,951
+Şimdi ne yapacağız? Önce problem nedir? Bunu anlamaya çalışıyoruz.
+
+129
+00:23:21,772 --> 00:23:26,912
+Ve bu problemi çözmek için ne gibi faaliyetler yerine getirmeliyiz?
+
+130
+00:23:27,052 --> 00:23:29,172
+Ne gibi işlevlerimiz olması gerekiyor?
+
+131
+00:23:29,731 --> 00:23:36,772
+Ne gibi, burada senaryoyu gördüğünüz için, ne gibi senaryolar işletmemiz, okutmamız, koşturmamız gerekiyor?
+
+132
+00:23:37,332 --> 00:23:38,832
+Bunları ortaya çıkarmamız lazım.
+
+133
+00:23:39,312 --> 00:23:44,812
+Şimdi artık gereksinim analizinin ilk safhası olan iş analizi tarafına geçmiş olduk.
+
+134
+00:23:45,652 --> 00:24:00,192
+İş analizi ile problemin ne olduğu ve dediğim gibi bu problemi çözmek için neler gerektiği, ne gibi işlevler, ne gibi senaryolar, ne gibi roller gerekli, bunların ortaya çıkartılması gerekiyor.
+
+135
+00:24:00,723 --> 00:24:28,483
+Şimdi, tabii ki çevik süreçlerle birlikte use case yerine user story'ler falan da kullanılıyor. Fakat hem bu dersin temel olması açısından o tarafına girmeyeceğiz. Ama isteyen varsa, bu dönem ilk defa açtığımız 4. sınıflara çevik yazılım geliştirme yöntemleri diye bir ders var. Çevik yaklaşımlar. Oradan devam edebilirsiniz.
+
+136
+00:24:28,723 --> 00:24:33,223
+Bu gibi iş analizi çevik süreçlerde nasıl gerçekleştiriliyor konusuna.
+
+137
+00:24:33,223 --> 00:24:37,743
+Ama biz şu anda temel süreçte nasıl yapılıyor bunu görmek istediğimiz için.
+
+138
+00:24:38,323 --> 00:24:46,803
+İş analizi, iş modellemesi, problemin ne olduğunu anladığımız ve parçalarının ne olduğunu ifade ettiğimiz kısmı use case'ler.
+
+139
+00:24:46,963 --> 00:24:53,183
+Yani kullanım senaryoları kullanarak ya da bunları üzerinden gerçekleştireceğiz.
+
+140
+00:24:53,864 --> 00:24:56,723
+O zaman ara başlığımız kullanım senaryosu modelleme.
+
+141
+00:24:56,723 --> 00:25:20,183
+Şimdi bu bir modelleme. Neyi modelliyoruz? Tekrar tekrar söylemiş oluyorum ama özellikle söylüyorum. Problem nedir? Benim bu problemi çözmek için ne gibi akışlara, ne gibi parçalara, ne gibi işlevlere, yani ne gibi senaryolara ihtiyacım var? Bunları bulup ortaya çıkarttığım modellemeye kullanım senaryosu modellemesi adını veriyoruz.
+
+142
+00:25:21,172 --> 00:25:33,211
+Bu modellemenin sonucunda şunlar çıkıyor. Bir, temel olarak bir ya da daha fazla ama genellikle çok aşırı büyük olmayan sistemlerde bir tane diagram üretiyoruz.
+
+143
+00:25:33,211 --> 00:25:38,211
+Use case diagram, çok basit bir diagram göreceksiniz. Yani amacı da...
+
+144
+00:25:38,867 --> 00:25:53,428
+Tamamen iş tarafıyla yani business tarafla gereksinim analistinin konuşmasını, daha rahat konuşmasını ve iki tarafında birbirini daha iyi anlamasını, daha iyi bir karşı tarafı kendini ifade edebilmesini sağlamak.
+
+145
+00:25:53,428 --> 00:25:55,228
+Burada
+
+146
+00:25:56,084 --> 00:26:05,124
+Bu diagramda, tabi bu diagramla beraber, diagramda her bir gösterdiğimiz senaryo içinde bir use case dokümanı oluşturacağız.
+
+147
+00:26:05,264 --> 00:26:07,004
+Yani use case formu oluşturacağız.
+
+148
+00:26:07,604 --> 00:26:16,663
+Ve bu sayede de işte iş nedir, yani parçası nedir, işin senaryoları nelerdir ve bu senaryolar nasıl çalışıyor?
+
+149
+00:26:17,332 --> 00:26:31,592
+ve sonuç üretiyor. Yani iş nasıl yapılıyor? Bunları ifade edeceğiz. Yani bir diagram ve o diagrama bağlı n tane senaryo için n tane çıktı. Yani rapor çıktısı.
+
+150
+00:26:32,211 --> 00:26:38,192
+Bunlar birer form şeklinde. O kadar gözünüz korkmasın. Ama oturup bir şeyler yazmak gerekecek.
+
+151
+00:26:39,372 --> 00:26:51,312
+Burada tamamen sistem kapalı kutu gibi düşünerek, kullanıcının bakış açısıyla, yani ben karşımda bir bilgi sistemi var ve bu bilgi sistemi çalışacak ben ondan hizmet alacağım.
+
+152
+00:26:52,435 --> 00:26:59,796
+İşte burada hangi hizmetleri alacağım? Bu sistemin fonksiyonları ne olacak? Bu fonksiyonel çözümlemeyi tanımlamak için yapıyoruz.
+
+153
+00:26:59,796 --> 00:27:02,135
+Kullanım senaryosu modellemesini.
+
+154
+00:27:04,695 --> 00:27:15,455
+Gereksinimleri, ihtiyaçları sistemin yerine getirmesi için neler yapması gerekiyor? Ne gibi davranışlar sergilemesi gerekiyor? Bunları ifade etmeye çalışıyoruz.
+
+155
+00:27:17,268 --> 00:27:40,628
+Use case'lerde, az sonra göreceğiz, iki tane temel bileşen var. Biri senaryolar, zaten senaryo modellemesi diyoruz, adı da üstünde. Bir diğeri de aktörler. Senaryo varsa, senaryo biliyorsunuz, görsel, sinema, tiyatro gibi sanatların metnidir.
+
+156
+00:27:44,692 --> 00:28:09,432
+repliklerinin külliyatıdır. Buna olay akışıdır. Buna senaryo adını veririz. E senaryo varsa, işte için içinde bir film, bir tiyatro varsa o zaman senaryoda mutlaka oynayacak aktörlere, yani senaryoyu işletecek aktörlere de ihtiyaç vardır. Burada da use case modellemesinde aynen bu terimler alınıp kullanılmış. Senaryo varsa aktörü var şeklinde.
+
+157
+00:28:25,236 --> 00:28:38,556
+Senaryo, bir akış şeklinde, bir olay akışı, bir iş akışı şeklinde sistemin sağladığı işlevleri, fonksiyonelliğin ifade edilmesi.
+
+158
+00:28:39,456 --> 00:28:47,496
+Burada bir senaryonun ön koşulları olabilir. Yani şunlar şunlar olmazsa bu senaryo olmaz. İşlemez. Son koşulları olabilir.
+
+159
+00:28:48,416 --> 00:28:52,036
+Bu senaryo çalışıp bittiğinde şunların olması garanti edilir gibi.
+
+160
+00:28:53,491 --> 00:29:04,671
+Ana senaryon, işte akış nedir, onlar olması lazım. Mutlaka senaryonun bir aktörünün olması lazım. En az bir, birinci aktör, hani başrol oyuncusunun olması lazım.
+
+161
+00:29:05,711 --> 00:29:12,031
+Ve çoğunlukla bu başrol oyuncusuna destek olan ilgili aktörler, destek aktörleri de yer almalıdır.
+
+162
+00:29:13,451 --> 00:29:18,471
+Peki bir senaryonun aktörü ne olabilir? Bunlar bizim bilgi sisteminin kullanıcıları olabilir.
+
+163
+00:29:18,996 --> 00:29:22,936
+Bilgi sistemi ile etkileşime geçen farklı dış sistemler olabilir.
+
+164
+00:29:23,796 --> 00:29:27,716
+Ya da fiziksel çevredeki çeşitli etmenler olabilir.
+
+165
+00:29:28,076 --> 00:29:30,976
+Yani illaki insan olacak diye bir şey söz konusu değil.
+
+166
+00:29:32,056 --> 00:29:38,236
+Aktörler, cansız varlıklar, sistemler hatta fiziksel varlıklar olabilirler.
+
+167
+00:29:40,019 --> 00:29:50,039
+Bu şekilde bir sembol setimiz var. Use case modellemesinde, use case diagramı için. Gördüğünüz gibi toplamda 4 tane şekil var.
+
+168
+00:29:52,019 --> 00:30:00,000
+Birincisi aktör. Aktörleri çok yaratıcı bir şekilde çöp adamla gösteriyoruz. Çizmesi kolay olduğu için kağıdı çizerken
+
+169
+00:30:00,000 --> 00:30:10,319
+Ben bunu müşteriyle birlikte, müşterinin yanında sistem analistimiz yaparken hızlı bir şekilde göstermemek adına bir tane çöp adam çizer. Bu aktör demektir.
+
+170
+00:30:11,539 --> 00:30:17,139
+Senaryoları da şöyle elipslerle gösteririz. Bunun için ne senaryonun adı yazılır, ne senaryosu olduğu.
+
+171
+00:30:18,228 --> 00:30:37,368
+Aktörlerle senaryoları birbirine bağlamamız gerekir. Bu senaryonun aktörü var, bu senaryoda destek aktörleri şunlar gibi. Bunun için de çizgileri kullanacağız ya da yön vereceğiz, oklu çizgiler kullanacağız. Onun dışında bir de kesikli oklarımız olacak. Onları da çeşitli bağlantı tipleri için ifade edeceğiz, kullanacağız.
+
+172
+00:30:38,644 --> 00:30:47,224
+İsterseniz, hani sistemimizin sınırları var demiştik ya, ilk dersteki terlikse hayvanın ortalığı gibi, çerçevesi gibi.
+
+173
+00:30:47,704 --> 00:30:56,124
+İsterseniz modellemenin sınırlarını, yani sistemin tamamının ne olduğunu da bir dikdörtgen içine alarak gösterebilirsiniz.
+
+174
+00:30:57,004 --> 00:31:01,224
+Şimdi burada hemen örnek, en basit, temel bir tane şeye bakalım.
+
+175
+00:31:04,819 --> 00:31:08,099
+şöyle bakalım, pardon, use case modellemesine bakalım.
+
+176
+00:31:09,660 --> 00:31:10,519
+Ne görüyoruz?
+
+177
+00:31:11,079 --> 00:31:11,940
+Şimdi, burada
+
+178
+00:31:11,940 --> 00:31:14,819
+ııı
+
+179
+00:31:19,251 --> 00:31:44,251
+Bir kutu görüyoruz. Bu kutu neydi? Benim sistemim. Bu benim sistemim. Sistemin içinde 3 tane elips görüyorum. Demek ki benim bu sistemin 3 tane senaryosu var. 3 senaryoyu işlevsellik olarak yerine getiriyor benim sistemin. Ve sistemle beraber 2 tane de aktör görüyorum. Biri GPS sistemi, biri de operatör.
+
+180
+00:31:45,172 --> 00:31:56,552
+Operatör insan, değil mi? İnsan. Ekranlardan ne yapabilirmiş? Ekran üzerinden mesela varış zamanını bulabileceği bir senaryo işletebilirmiş.
+
+181
+00:31:57,211 --> 00:32:08,932
+Ya da hatayı raporlayacağı bir senaryo işletebilirmiş. Nereden anlıyoruz? Çünkü bu operatör aktörünün bir çizgiyle bu use case'e bağlandığını görüyor.
+
+182
+00:32:09,779 --> 00:32:15,279
+Aynı şekilde başka bir çizgiyle de buradaki 3. use case'e bağlandığını görüyorum.
+
+183
+00:32:16,119 --> 00:32:20,059
+Bunun yanında GPS sistemi de şuraya bağlı. Report Location'a da.
+
+184
+00:32:20,859 --> 00:32:26,480
+Yani şöyle, sizin bir tane servis takip uygulamanız olsun. Öğrenci servisi.
+
+185
+00:32:27,319 --> 00:32:36,740
+Bunun için, GPS araçlarınıza GPS vericisi, alıcısı sistemi var.
+
+186
+00:32:38,451 --> 00:32:48,231
+GPS sistemi sürekli olarak, periyolik olarak kendi lokasyonu, ben buradayım, ben buradayım, ben buradayım diye coğrafi koordinatlarını yolluyor.
+
+187
+00:32:48,771 --> 00:32:51,852
+Ve bunu aslında sistemimize veriyor.
+
+188
+00:32:52,511 --> 00:32:55,432
+Onun için ben bir şeyler yapmam gerekiyor.
+
+189
+00:32:56,251 --> 00:32:57,892
+Bazı işler yapmam gerekiyor.
+
+190
+00:32:57,892 --> 00:33:04,892
+Onun için de report location şeklinde isimlendirilmiş, lokasyonun bildirildiği, raporlandığı bir use case tanımlamışım.
+
+191
+00:33:05,615 --> 00:33:15,336
+Ve demişim ki, bu use case aktörü GPS sistemidir. Yani bu işi bu yapacak anlamına geliyor. Ana veri buradan geliyor.
+
+192
+00:33:17,076 --> 00:33:21,336
+Operatörde ne yapabilirmiş? Mesela işte benim araçlarım var. Ama araçların...
+
+193
+00:33:22,240 --> 00:33:38,140
+Benim kampüsüme tahmini geliş zamanlarını hesaplayabilmem mi sağlayacak bir işlevselliği varmış. Yani bir senaryo. Nasıl düşünebiliriz bunu? İşte büyük bir ihtimalle buradaki lokasyon bilgileri bir yerde depolanacak, onları alacak.
+
+194
+00:33:38,140 --> 00:33:50,240
+Benim zaten kendi kampüsümün lokasyonu da belli. Bu ikisini belki arasından çıkartıp kilometreye göre, saatte ortalama bilmem kaç kilometre saate hıza göre.
+
+195
+00:33:50,240 --> 00:33:54,980
+Bir tahmini geliş zamanı, estimated time of arrival yapacak ETA.
+
+196
+00:33:56,080 --> 00:34:04,860
+Ve eğer herhangi bir şekilde hata varsa bunların raporlanmasını sağlayan ayrı bir işlevsellikte çalıştırabilir operatör demişiz.
+
+197
+00:34:05,640 --> 00:34:15,819
+Diyelim ki benim buradaki arrival time'ı bulmak için aynı zamanda harita üzerinde diyelim kendi kampüsüm ve
+
+198
+00:34:17,268 --> 00:34:27,588
+Nedir? Aracın lokasyonun olduğu. Şöyle çizelim. Yani diyelim ki benim kampüsüm şurada. Şuraya ytv yazdım.
+
+199
+00:34:30,368 --> 00:34:42,887
+Ondan sonra diyelim ki bir tane servis arabası burada. Şöyle. Bunun bir işte xy koordinatı var. X1, y1 diyelim. Başka bir servis arabası burada.
+
+200
+00:34:44,467 --> 00:34:47,268
+X2, Y2 diyelim.
+
+201
+00:34:49,028 --> 00:34:49,788
+Tamam.
+
+202
+00:34:50,507 --> 00:34:52,947
+Ve biliyorum ki işte burada böyle yollar var.
+
+203
+00:34:56,820 --> 00:34:58,100
+Harita. Değil mi?
+
+204
+00:35:00,579 --> 00:35:01,900
+Şöyle bir şey olsun.
+
+205
+00:35:02,539 --> 00:35:04,460
+A kapısı, B kapısı falan gibi olsun.
+
+206
+00:35:05,000 --> 00:35:16,480
+Şimdi, ben burada, bu sistemde tamamen analize bağlı olarak, eğer operatör şu koordinatı bilerek, bu koordinatı biliyor.
+
+207
+00:35:17,340 --> 00:35:21,300
+Ondan sonra bunun rotasının şöyle olması gerektiğini biliyor diyelim.
+
+208
+00:35:21,300 --> 00:35:22,659
+Yani bu en kısa şeydi bu.
+
+209
+00:35:25,139 --> 00:35:52,039
+Buranın uzunluğunu da bildiği için işte ortalama hıza göre bir ne bileyim işte 12 dakika diyebilir. Ama bunun için gördüğünüz gibi fazla işlemler yapması gerekecek. Bu konumu alacak, yolu, mesafesini bilecek, işte ortalama hıza bölecek bilmem ne yapacak ve hani bu yol tabii şöyle gittiydi, şöyle uzadığını düşünün. Bunun da başka yolları olabilir. Değil mi?
+
+210
+00:35:52,563 --> 00:36:05,483
+Bu araç burada, bu araç burada şu an. Ama bunu da aynı şekilde şu protadan geliyor deyip ortalama işte 18 dakikada gelecek diyebilir. Ama
+
+211
+00:36:06,099 --> 00:36:33,399
+Diyelim ki sizin sisteminiz böyle çalışmıyor da bunu harita apisi üzerinden yani bir harita servisinden alıyor. Diyor ki bak benim bu koordinatım var, bu koordinatım var, bir de şu var. Bu iki aracın bana tahmini geliş süreleri söylüyor. Google Maps gibi düşünün. Ve o zaman mesela bunu bu yoldan getirmiyor da şurada kaza olmuş. Şöyle araba çarpışmış, burada böyle çarpılmış. Belki bu yoldan getirecek.
+
+212
+00:36:36,563 --> 00:36:52,403
+Ve diyecek ki, işte ne bileyim, 11 dakika. Ondan sonra bunun içinde başka bir rota çizecek. Diyelim ki bunun içinde 18 değil de 25 dakika. Yol kapalıymış hep. Yani kısa 25 dakikada gelebilecekmiş.
+
+213
+00:36:53,743 --> 00:37:02,363
+Şimdi ne oldu? Benim bu arrival time için yeni bir aktöre daha ihtiyacım oldu. Nedir bu da? İşte mesela
+
+214
+00:37:03,092 --> 00:37:04,731
+Google Maps API.
+
+215
+00:37:06,012 --> 00:37:06,731
+Google Maps.
+
+216
+00:37:09,052 --> 00:37:15,231
+Hemen o zaman benim analiz modelimde bunu da aktör olarak koyarım ve buraya bağlarım.
+
+217
+00:37:16,952 --> 00:37:19,992
+Bu sayede ben müşteriye şunu gösterebilir hale geliyorum.
+
+218
+00:37:20,112 --> 00:37:21,891
+Bakın evet, şu iş var.
+
+219
+00:37:24,148 --> 00:37:43,847
+Araçların geliş zamanlarının bulunması gerekecek. Bunu operatör yapacak. Operatör ekrandan zaten bu işi şey yapacak, takip edecek. Ama benim bu işi yapmam için Google Map üzerinden dakika süre ve rota almam gerekiyor. O zaman hemen buraya Google Map aktörünü de koymuş olurum.
+
+220
+00:37:47,347 --> 00:38:08,407
+Özetle bu bir fiziksel sistem olabilir. Böyle hani GPS cihazı. Tamamen bambaşka bir servis olabilir. Tamamen bambaşka bir bilgi sisteminin çıktısı olabilir. Veya gördüğünüz gibi düz insan olabilir. Hepsi olabilir. Bunların hepsi aktör.
+
+221
+00:38:12,371 --> 00:38:38,631
+Evet, use case modellemesini bu şekilde. Yani her bir yapmamız gereken bir yumurta, bir elips sistemde bunlardan kaç tane varsa olması gerekiyor. Ve bunların aktörleri, bunu bu yapacak, bunu bu yapacak, bunu bununla ilgilenecek gibi. Peki, şimdi geldik elipslere, yani şunlara. Find arrival time diyorduk ya, find arrival time.
+
+222
+00:38:42,291 --> 00:38:49,451
+Bu her birinin de ne olduğunun açık bir şekilde tanımlanması gerekir. Senaryoların ne olduklarını.
+
+223
+00:38:50,003 --> 00:38:53,724
+İşte buna da use case modellemesi, use case modeli adını veriyoruz.
+
+224
+00:38:54,743 --> 00:39:00,884
+Tamamen gereksinimlerin, isteklerin anlaşılmasını ve ifade edilmelerini sağlayan bir yöntem.
+
+225
+00:39:01,243 --> 00:39:06,264
+Peki, senaryolarda ne var? Aktörlerin olduğunu söyledik. Bunlar sistemin kullanıcıları.
+
+226
+00:39:06,264 --> 00:39:14,764
+Dediğim gibi insan, sistem, cihaz olabilir. Bunlar hizmet alabilir, hizmet verebilir. İkisi de olabilir. Yani iki yönlü.
+
+227
+00:39:16,148 --> 00:39:35,907
+Aktörleri ikiye ayırırız. Biri birinci aktör, primary aktör, başrol oyuncusu. O senaryodan asıl faydayı sağlayan ve hatta o işlemleri başlatan kullanıcıya verilen isim. Birinci aktör. Mesela find arrival time için birinci aktör kim? Operatör.
+
+228
+00:39:37,508 --> 00:39:38,468
+Operatör.
+
+229
+00:39:44,500 --> 00:39:57,500
+Bu senaryonun çalışması için destek veren, bilgi sunan diğer aktörler. İşte benim buradaki Google Maps mesela. Bu da destek aktörü olarak yer aldı.
+
+230
+00:39:59,119 --> 00:40:03,799
+Peki, senaryo ne? Yani bunun gövdesinde ne var?
+
+231
+00:40:04,208 --> 00:40:18,547
+Senaryo burası. Anlamlı bir sonucu otlaşmak için, yani işlemin yerine getirilmesi için aktör ve sistem arasında gerçekleşen etkileşimler, olaylar zincirine de senaryo adını veriyoruz.
+
+232
+00:40:20,148 --> 00:40:28,447
+Peki ben bu senaryoları nasıl yazacağım? Bunlar böyle şu lazım, şu özellikler var gibi böyle bir liste halinde değil.
+
+233
+00:40:29,076 --> 00:40:40,896
+Burada sistem kapalı bir kutu, kara kutu. Biz sistemin nasıl davranacağını, kullanacağını nasıl hizmet vereceğini ifade etmek çalışırız ve sorumlulukları ifade etmek isteriz.
+
+234
+00:40:42,096 --> 00:40:51,776
+Hep etkileşimin üzerinden gittik. Aktör ve sistem etkileşimlerinden bahsettik. Bunların hepsinin aktif yani etken cümleler olması gerekir.
+
+235
+00:40:52,076 --> 00:40:56,976
+Neden pasif voice kullanmıyoruz? Yani neden el ilgen cümle koymuyoruz?
+
+236
+00:40:57,076 --> 00:41:02,976
+Çünkü o zaman bir etkileşimin sorumlusunun kim olduğunu ortaya çıkaramayız.
+
+237
+00:41:04,056 --> 00:41:06,436
+Yani işte rapor hazırlanır.
+
+238
+00:41:07,916 --> 00:41:09,016
+Kim hazırlayacak raporu?
+
+239
+00:41:10,016 --> 00:41:11,876
+Bunu net olarak söylememiz lazım.
+
+240
+00:41:12,916 --> 00:41:18,616
+Şu bilgi girilir, şu hesap yapılır. Bunları yazarsanız kimin yapacağı belli olmaz.
+
+241
+00:41:19,516 --> 00:41:24,636
+Yani özne, nesne, yüklem şeklinde aktif cümleler olması gerekir.
+
+242
+00:41:26,516 --> 00:41:41,896
+Ne sorusunu cevaplarız. Yani ne yapıyoruz biz? Problem nedir? Hep nedir üzerinden gidiyoruz. Bunu cevaplamaya çalışıyoruz. Ben bunu şöyle çözerim demiyorum. O tasarımda yapacağıymış çünkü. Onu yazılım tasarımında gerçekleştireceğim.
+
+243
+00:41:45,204 --> 00:41:53,463
+Ve para kutu olarak ele aldığım sistemin tamamen bittiğini ve çalıştığını varsayarak bunları oluşturuyorum.
+
+244
+00:41:53,624 --> 00:41:56,344
+Ve buradaki oluşabilecek senaryoları yazıyorum.
+
+245
+00:41:57,324 --> 00:42:03,584
+Tabii ki sistemin, bunun için sistemin sınırlarını doğru bir şekilde, net bir şekilde belirlenmeleri gerekiyor.
+
+246
+00:42:04,244 --> 00:42:06,704
+Neler sistemin içinde, neler sistemin dışında.
+
+247
+00:42:07,483 --> 00:42:09,284
+Neler benim sorumluluğum, neler değil.
+
+248
+00:42:09,284 --> 00:42:10,284
+Bunlar da...
+
+249
+00:42:10,739 --> 00:42:17,719
+mutlaka senaryoların düzgün şekilde yazılması için gerekli belirlenmesi gereken hususlar.
+
+250
+00:42:19,719 --> 00:42:24,599
+Peki, geldik bir senaryoya. Senaryo şöyle bir döküman.
+
+251
+00:42:24,860 --> 00:42:27,739
+A4 sayfası çizelim şuraya tamam mı?
+
+252
+00:42:27,840 --> 00:42:30,219
+Şuraya da kullanım senaryosu yazalım.
+
+253
+00:42:31,599 --> 00:42:33,579
+Kullanım senaryosu 1 diyelim.
+
+254
+00:42:34,960 --> 00:42:36,880
+2.üstüste neydi?
+
+255
+00:42:36,880 --> 00:42:38,340
+Find arrival time.
+
+256
+00:42:39,155 --> 00:42:41,195
+Mind, Arrive, Time.
+
+257
+00:42:42,395 --> 00:42:43,735
+Böyle yazdık.
+
+258
+00:42:44,275 --> 00:42:49,155
+Önce, şuradaki bir ön söz dediğimiz giriş kısmı oldu.
+
+259
+00:42:50,115 --> 00:42:51,096
+Burası da şurası.
+
+260
+00:42:52,735 --> 00:42:53,435
+Şuraya gelir.
+
+261
+00:42:54,036 --> 00:42:54,835
+Burada ne var?
+
+262
+00:42:54,956 --> 00:42:55,935
+Birinci aktör.
+
+263
+00:42:57,415 --> 00:42:58,536
+İki nokta üst üste.
+
+264
+00:42:59,056 --> 00:42:59,755
+Operatör.
+
+265
+00:43:01,375 --> 00:43:02,976
+İlgililer ve beklentileri.
+
+266
+00:43:02,976 --> 00:43:06,175
+Bunlar destek aktörleri ve ne kattıkları.
+
+267
+00:43:06,835 --> 00:43:12,595
+İlgili, iki nokta üst üste, Google Maps, apisi.
+
+268
+00:43:13,555 --> 00:43:19,955
+Ne katıyor? İşte haritada verilen koordinatların arasındaki mesafenin dakika cinsinden ifadesi.
+
+269
+00:43:21,155 --> 00:43:22,115
+Ön koşullar.
+
+270
+00:43:23,075 --> 00:43:25,055
+Burada yer kalmadı ama ön koşullar.
+
+271
+00:43:26,015 --> 00:43:26,835
+Precondition.
+
+272
+00:43:27,715 --> 00:43:31,735
+Bunun çalışması için, atıyorum işte GPS bilmem nesinin çalışıyor olması lazım.
+
+273
+00:43:31,735 --> 00:43:34,435
+O olmazsa zaten çalışmıyor gibi.
+
+274
+00:43:35,476 --> 00:43:48,936
+Son koşullar. Ben bu senaryoyu bitirdiğimde sistem hangi duruma geçecek? Yani ilgilerin beklentileri nasıl karşılanacak? Mesela hesaplı şeylerin hesaplanması.
+
+275
+00:43:49,556 --> 00:44:04,716
+Servis araçlarının, rotalarının, güzergahlarının, dakikalarının, güzergaha bağlı dakikalarının şu kadar zamanda gelecek diye hesaplanmış olması çıktısı böyle bir senaryonun son koşullarını oluşturur.
+
+276
+00:44:05,456 --> 00:44:08,336
+Sonrasında ana başarılı senaryo.
+
+277
+00:44:08,336 --> 00:44:09,896
+Buraya geliriz.
+
+278
+00:44:10,516 --> 00:44:13,675
+1. Blah blah blah etken cümle.
+
+279
+00:44:13,856 --> 00:44:15,776
+2. Dıdıdıdıdıdıdıdı.
+
+280
+00:44:16,135 --> 00:44:16,496
+3.
+
+281
+00:44:17,460 --> 00:44:38,679
+Üçüncü şey, burada hep aktör sistem etkileşimleri yer alır. Sistem nasıl çalışıyor? Bunun en doğal çalışma şekli adım adım ifade edilir. Burada herhangi bir koşul ya da herhangi bir dallanma olmaz. Direkt olarak ana başarılı akış gibi düşünebilirsiniz bunu.
+
+282
+00:44:47,380 --> 00:44:56,659
+Ana başarılı akışta bu cümlelerde etken tipte kim ne yapıyorsa bunları açıkça belirtirsiniz.
+
+283
+00:44:56,900 --> 00:45:11,159
+Genel olarak kullanıcı sistem etkileşimi, sistemin kullanıcı davranı tetiklenmesi ya da bir onay verilmesi veya bir durum değişikliği veya bir bilgi kaydı gibi işler burada yer alır.
+
+284
+00:45:12,440 --> 00:45:13,679
+Alternatif akış.
+
+285
+00:45:14,079 --> 00:45:19,659
+Bunun altında, şurayı biraz daha uzatmamız gerekecek. Şöyle, alternatif akış.
+
+286
+00:45:21,920 --> 00:45:30,960
+Burada da ana senaryo, baştan sona hiçbir hata olmadan başarıya giden senaryoydu. Sonucun üretilmesini sağlayan senaryoydu.
+
+287
+00:45:32,039 --> 00:45:38,440
+Acaba burada dallanmalar varsa ne olacak? İşte onlar alternatif akışta ele alınacak. Mesela ikinci durumda 2A.
+
+288
+00:45:39,476 --> 00:45:54,576
+Bilmem ne olduğunda bilmem ne yapılır. 2B, bilmem ne durumunda bilmem ne girdisiyle bilmem ne yapılır gibi alternatifler burada verilir. Hatta böyle 2A1, 2A2, 2B olabilir.
+
+289
+00:46:05,876 --> 00:46:07,236
+Sıra dışı durumlar.
+
+290
+00:46:07,996 --> 00:46:09,876
+Exception durumunda neler olacak bunları?
+
+291
+00:46:10,116 --> 00:46:14,596
+Nasıl ele alınması gerektiği ile ilgili özel detay vermeniz gerekiyorsa verirsiniz.
+
+292
+00:46:15,736 --> 00:46:19,076
+Sonra eğer varsa teknolojik özel istekler.
+
+293
+00:46:19,836 --> 00:46:21,936
+Mesela kaliteye yönelik.
+
+294
+00:46:22,516 --> 00:46:36,356
+Güvenlik için bilmem ne seviyesi olmalıdır. ŞA256 bilmem ne kullanılmalıdır. Bu rapor 10 milisaniyede üretilmelidir gibi özel istekler.
+
+295
+00:46:37,916 --> 00:46:47,916
+Ve belli bir özel beklenti varsa değildir, platformdur, illa şu kütüphane kullanılacaktır gibi bunlar da en altta teknolojik beklentiler kısmında yer alır.
+
+296
+00:46:48,275 --> 00:47:01,036
+Böyle bir doküman oluşturduğumuzda, şöyle bir use case için, find arrival time dediklerinden beri, bunun için böyle bir doküman.
+
+297
+00:47:02,096 --> 00:47:10,596
+Başka ne vardı? Report error vardı. O zaman bunun için de yine böyle bir use case dokümanı.
+
+298
+00:47:10,596 --> 00:47:14,775
+Kullanım senavisi 2.2.3 blablabla.
+
+299
+00:47:15,476 --> 00:47:24,796
+Bunların oluşturması gerekecek. Yani sizin diagramınızda yer alan bütün elipsler için birer tane senaryo yazmanız da gerekecek.
+
+300
+00:47:25,336 --> 00:47:35,036
+Ama içerik burada. En önemli kısım bu. Ve buna bağlı olarak alternatif akışlar varsa dallanmalar. Bunları da vermeniz gerekiyor.
+
+301
+00:47:39,923 --> 00:48:06,683
+Peki, şimdi her şey bu kadar böyle ayrık olmaz bir sistemde. Yani hani 3 tane senaryo var, 2 tane aktör var, bir aktör ikisine bakıyor, bir aktör biriyle ilgili. Aralarında ilişki yok. Bu genellikle böyle olmaz. Tabi ki senaryolar arasında ilişkiler olması gerekir. Bu senaryoların arasındaki use case modellemesindeki ilişki çeşitleri şunlardır.
+
+302
+00:48:07,764 --> 00:48:29,344
+Birincisi içerme. Şey gibi düşünebilirsiniz. Yani ortak yapılan işler var. Login gibi falan. Otentikasyon gibi. Bu şekilde alt programa çağrı yapıp bir prosedür çağırıp ondan sonra geri dönmek gibi düşünebilirsiniz.
+
+303
+00:48:31,539 --> 00:48:35,380
+Bir diğeri Extend genişletmeye, Include Extend.
+
+304
+00:48:36,779 --> 00:48:50,559
+Burada da belli bir koşulda senaryonuz çalışıyor normal olarak ama belli bir koşula şarta bağlı olarak ilave bir senaryo daha çalışabiliyor.
+
+305
+00:48:50,679 --> 00:48:52,779
+Yani normal senaryoyu genişletiyor.
+
+306
+00:48:53,331 --> 00:49:17,151
+Bu da olabilir. Bir de özelleştirme ilişkisi var. Genel senaryolardan daha özel senaryolar üretmek şeklinde. Buna da özelleştirme diyoruz. Mesela ödeme senaryonuz var. Bununla birlikte nakit ödeme, kartla ödeme, çekle ödeme, konla ödeme gibi özelleştirilmiş senaryolarınız olabilir. Bunlara da özelleştirme ilişkisi adını veriyoruz.
+
+307
+00:49:21,331 --> 00:49:37,171
+Zaten ilki şey, aktör, bağlıyoruz senaryo. İlki association tabii ki. Bağıntı, association relation. Bunlar senaryolar ve aktörlerin birbiriyle ilişkilendirmesi.
+
+308
+00:49:37,711 --> 00:49:48,411
+Sizin use case modellerinizde bir aktör varsa mutlaka en azından bir senaryoyla ilişkili olması gerekir. Tersi zaten mantıksız değil mi?
+
+309
+00:49:48,788 --> 00:50:06,188
+Bir aktör var, hiçbir şeyle, hiçbir senaryoyla ilişkili değil. Filmdeki rolü ne bunun? Senaryodaki nereye okuyacak? Hiçbir yere o zaman en az bir senaryoyla mutlaka ilişkili olması gerekiyor. Ama bir senaryo birden fazla aktörle bantılı olabilir. Bunu gördük zaten.
+
+310
+00:50:07,635 --> 00:50:12,376
+Mesela burada bakın, hasta laboratuvar, tahil verme use case'inde ikisi de bağlı.
+
+311
+00:50:13,536 --> 00:50:19,956
+Şöyle bir şey görebilirsiniz, bakın burada, önceki şeylerde, şurada neredeydi o?
+
+312
+00:50:20,776 --> 00:50:23,956
+Şey yapmıştım, şurada şöyle bir ok görebilirsiniz.
+
+313
+00:50:24,736 --> 00:50:30,316
+Eğer bu oku görüyorsanız, o zaman bu şu demektir, primary reaktör.
+
+314
+00:50:31,027 --> 00:50:43,007
+Yani birinci aktörü gösterir. Eğer böyle ok görürseniz. Tahlil vermenin birinci aktörü kimmiş? Hastaymış. Laboratuvar destek aktörüymüş burada.
+
+315
+00:51:00,659 --> 00:51:02,139
+X'den de gelelim.
+
+316
+00:51:05,940 --> 00:51:33,159
+Bir senaryo, ne dedik, başka senaryolarla extend şeklinde ilişkilendirildiyse, o senaryoya aslında yeni işlevler de kazandırmış oluyoruz. Bunlara extension use case adını veriyoruz. Bakın şimdi, deminki şuradaki modellemeye bakalım. Bir hastane bilgi sistemimiz varmış. İki tane senaryo tanımlamışız, tahlil vermek ve tahlil sonucu almak.
+
+317
+00:51:35,284 --> 00:51:41,123
+Bir tane de aktör tanımlamışız. Hasta, primary aktörmüş ve laboratuvarda tahlil vermeyle ilgili.
+
+318
+00:51:41,583 --> 00:51:45,563
+Tahlil sonucu almak laboratuvarın şeyi yok, sadece hastayla ilişkili.
+
+319
+00:51:47,864 --> 00:51:58,163
+Şimdi ben yaptığım analiz neticesinde, iş analizim sonucunda aslında bunun tam olarak böyle olmadığını, farklı işlevlerin de olduğunu fark etmeye başlıyorum.
+
+320
+00:52:03,155 --> 00:52:30,032
+Böyle bir kısa mesaj atma işleri varmış. Ama bu her zaman çalışmıyor. Normalde tahlil ver, tek başına çalışan anlamlı bir iş benim için. Ama şöyle eklenmiş versiyonu da var. O zaman ben buraya kısa mesaj at senaryosunu şuraya extend ediyorum. Yani buraya bağlıyorum. Gördünüz mü? Ve tahlil verme...
+
+321
+00:52:30,032 --> 00:52:41,052
+Artık gerekirse bununla gelişleyebiliyor demektir. Bu da olabilir içinde. Olmak zorunda değil. Sadece bu çalışır, sonuç üretir ama bununla birlikte de olabilir anlamına gelir.
+
+322
+00:52:42,292 --> 00:52:53,532
+Aynı şey burada da varmış. Mesela hatta bir koşula bağlıymış. Sonuçlar çıktıysa. E-posta ile sonuçları göster. Bunu da genişletiyorum. Normalde hasta gidip tahlil sonucunu alabiliyormuş.
+
+323
+00:52:54,675 --> 00:53:11,255
+Ya da bir sisteme girip ekranında görebiliyormuş. Artık senaryoyu nasıl yazdıysanız, analiz neyi gerektirdiyse o. Ama istenirse e-postayla da sonuçlar gönderilebiliyormuş. Her durumda değil, istenirse. İstendiğini de o zaman genişletelim.
+
+324
+00:53:11,255 --> 00:53:12,335
+Bu şekilde.
+
+325
+00:53:14,775 --> 00:53:21,735
+Include ilişkisi, ekleme. Bu dediğim gibi işte mesela ortak bir iş var. Sıra numarası almak.
+
+326
+00:53:22,356 --> 00:53:43,476
+Ya da işte kan vermek, neyse. Bunlar sıra numarası almak bir sürü yerde çalışıyor. Mesela orada direkt include ediliyor. Şurayı ekledim. Bu ne demektir? Yani benim tahlil verme işlemi senaryosu için sıra numarası almam da gerekiyor. Bunu mutlaka bu senaryo çalışırken bunun da çalışması gerekiyor demiş oluyorum.
+
+327
+00:53:49,108 --> 00:54:05,108
+Bir diğer ilişkimiz de kalıtım, genelleştirme ilişkisi. Bu nesne yöneki aslında yaklaşımdaki genelleştirmeyle tamamen aynı. Aktörlerde bunu kullanırız. Bir aktörün...
+
+328
+00:54:05,619 --> 00:54:11,480
+Kendisiyle aynı işlevleri meydana getiren aktörlerle olan ilişkisini ifade ediyor. Ne yapıyoruz aslında?
+
+329
+00:54:12,140 --> 00:54:20,780
+Biz aynı işlevleri kullanan aktörler için bir soyut aktör, abstrakt aktör tanımlıyoruz.
+
+330
+00:54:21,640 --> 00:54:29,480
+Bu ne demektir? İşte use case de birden fazla aktöre ait olabilecek ortak özellikleri taşıyan temel aktörümüz.
+
+331
+00:54:29,480 --> 00:54:31,860
+Şurayı zaten görüyorsunuz. Şuradaki.
+
+332
+00:54:32,255 --> 00:54:56,075
+Şöyle, şey görüyorsunuz. Laborant, doktor. Şimdi doktor muayene yapabiliyormuş. Ama doktor aynı zamanda laborantın özel bir şeyiymiş. Yani laborant onu genelleştirmiş. Laborantın tahlil sonucu alabilmesi ilişkisi varmış.
+
+333
+00:54:58,963 --> 00:55:06,503
+Şimdi burada gözükmüyor ama doktor zaten bir laborant olduğu için aynı zamanda doktor da isterse tahlil sonucunu alabilir demektir.
+
+334
+00:55:07,023 --> 00:55:13,963
+Yani doktor da burada bu use case'e birinci laktör olmuş olur laborant kimliği üzerinden.
+
+335
+00:55:15,063 --> 00:55:18,844
+Hatta daha da bir adım öteye gitmişiz. Bakın hastalar da laborantmış.
+
+336
+00:55:19,844 --> 00:55:23,503
+Yani bu neyi getiriyor? Hastalar kayıt olabiliyor evet.
+
+337
+00:55:23,503 --> 00:55:26,704
+Bunu şöyle de çizebilirdim.
+
+338
+00:55:26,931 --> 00:55:39,811
+Ama belki bu roller, laborantın ana şablon, soyu takdurun, belki başka use caselerde de hasta olarak yapabileceği şeyler vardır. O yüzden böyle modellemişiz.
+
+339
+00:55:41,523 --> 00:55:47,784
+Yani hastalı bir laboranttır şeklinde bir soyutlamada gerçekleştirmişiz.
+
+340
+00:55:48,764 --> 00:55:54,124
+Bu yine tamamen sizin nasıl sistemi çözümlediğinize bağlı olarak değişiyor.
+
+341
+00:55:54,244 --> 00:56:00,164
+Yani analiz modeliniz tamamen sizin işi nasıl anladığınız ve nasıl modellediğinize göre değişiyor.
+
+342
+00:56:01,284 --> 00:56:07,364
+Farklı farklı aynı problemi çözen farklı modeller geliştirebilirsiniz.
+
+343
+00:56:07,543 --> 00:56:09,063
+Bunların hepsi doğal, hepsi normal.
+
+344
+00:56:09,523 --> 00:56:12,543
+Yani bir işi yapan tek doğru use case olmak zorunda değil.
+
+345
+00:56:13,244 --> 00:56:15,264
+Farklı farklı modellemeler olabilir.
+
+346
+00:56:16,844 --> 00:56:20,204
+Burada örnek bir use case diyagramı görüyorsunuz.
+
+347
+00:56:20,204 --> 00:56:21,704
+Şimdi bunu biraz inceleyelim.
+
+348
+00:56:23,251 --> 00:56:29,231
+3 tane aktörümüz var ve toplamda 6 tane de use case tanımlanmış.
+
+349
+00:56:30,291 --> 00:56:33,871
+Evet, bakalım önce şeyden başlayalım, aktörlerden.
+
+350
+00:56:34,171 --> 00:56:35,291
+Banka çalışanı var.
+
+351
+00:56:35,991 --> 00:56:38,911
+Banka çalışanı sadece tek bir şeyle ilişkili görüyorsunuz.
+
+352
+00:56:39,051 --> 00:56:41,191
+Open account, hesap açma.
+
+353
+00:56:42,091 --> 00:56:44,551
+Hesap açma aynı zamanda tabii ki müşteriyle de ilişkili.
+
+354
+00:56:45,631 --> 00:56:49,731
+Şey yapma, para yatırma, para çekme.
+
+355
+00:56:50,675 --> 00:57:02,615
+Bir de özel olarak işte yabancı uyruklü müşteri ise convert currency. Yani yabancı parayla işlem yapmaya, yabancı parayı çevirme gibi bir senaryo.
+
+356
+00:57:03,255 --> 00:57:16,996
+Ama bakın NRFC customer aynı zamanda bir customer. Bu ne demektir? NRFC customer da aynı zamanda open account, deposit fund ve withdraw fund yapabilir, hesap açabilir, para çekebilir, para yatırabilir, bu senaryoları işletebilir.
+
+357
+00:57:17,652 --> 00:57:22,771
+Şuradaki yerleştirme ilişkisiyle birlikte bunu yapabilir hale geliyor.
+
+358
+00:57:24,071 --> 00:57:26,811
+Şurada bir extend görüyorsunuz. Bu ne demektir?
+
+359
+00:57:27,271 --> 00:57:33,331
+Şimdi mesela ben para yatırabiliyorum. Normal. Para yatırma senaryosu tek başına çalışabilir.
+
+360
+00:57:33,811 --> 00:57:42,011
+Ama şuraya bir not düşünmüş. 10 bin işte doların üzerinde veya yaşı 55'in üzerindeyse calculate bonus diyor.
+
+361
+00:57:42,516 --> 00:57:50,615
+Demek ki bankanın böyle bir şeyi varmış, politikası. İşte ne bileyim, binde bir bir şey, para veriyor diyelim.
+
+362
+00:57:51,436 --> 00:57:56,956
+İşte 10.000 lira yatırdığınızda işte 10 dolar, o da 10 dolar fazladan veriyor falan gibi.
+
+363
+00:57:57,588 --> 00:58:02,367
+Bu bunu ekstend ediyor. Yapmak zorunda değil ama şöyle bir şey olduğunda bu da çalışacak demişiz.
+
+364
+00:58:03,168 --> 00:58:09,128
+Hem para yatırma hem para çekmenin başka bir senaryoyu mutlaka çalıştırması için de dahil etmesi gerekiyormuş.
+
+365
+00:58:09,128 --> 00:58:14,307
+Neymiş o da hesabın güncellenmesi.
+
+366
+00:58:14,931 --> 00:58:26,151
+hesaptaki tutarın güncellenmesi. Demek ki onun için de bir şeyler yapmak gerekiyor. Böyle bir akışı var. Bu nedenle ayrı bir senaryo olarak modellenmiş burada.
+
+367
+00:58:30,387 --> 00:58:30,947
+Ahem!
+
+368
+00:58:37,652 --> 00:58:50,632
+Şimdi, use case örneği dersi kapsamında burada fazla da uzatmak için paylaşmayacağım ama siz mutlaka internetten örnek use case'lere bakın.
+
+369
+00:58:51,391 --> 00:59:04,072
+Çok var, yani çok fazla da zaten kaynak bulabilirsiniz. Mutlaka inceleyin, yani böyle bir problemi nasıl use case'de modellemişler, bunun mutlaka şöyle bir çalışmasını gerçekleştirin.
+
+370
+00:59:05,684 --> 00:59:15,943
+Genellikle çok karmaşık olmayan sistemlerde senaryolar, gereksinimlerin, işin nasıl yapıldığını, problemin parçalarının neler olduğunu,
+
+371
+00:59:16,692 --> 00:59:22,392
+ortaya çıkartılması için yeterli oluyor. Temel olarak yeterli oluyor use case modeling.
+
+372
+00:59:23,392 --> 00:59:30,412
+Ama bazı noktalarda karmaşık işlemler varsa bu noktalarda yetersiz kaldığı durumlarda olabilir.
+
+373
+00:59:30,612 --> 00:59:32,472
+Yani bir senaryonun içinde öyle bir şey var ki
+
+374
+00:59:35,539 --> 00:59:45,819
+Son koşulu daha iyi anlatmanız gerekiyor. Daha detaylı yani. O son koşulun oluşması için bazı ilave işlerin yapıldığını, nasıl yapıldığını da söylemeniz gerekiyor.
+
+375
+00:59:46,440 --> 00:59:51,859
+İlave derken isteğe bağlı değil, mutlaka yapılacak ama senaryonun içinde yer almıyor.
+
+376
+00:59:52,519 --> 00:59:58,980
+Ya da ön koşullar sağlandığında sistem hangi son durumu alacak bunu daha iyi açıklamak isteyebiliyoruz.
+
+377
+01:00:00,000 --> 01:00:17,139
+Ya da işte sadece aktör sistem etkileşimleri değil, bunun dışında sistemin içindeki olapsız değişimleri de mutlaka belirtmemiz gerekiyorsa, teknik tarafa, bakın bu da böyle olmalı, bunu yapmak şuna da mal oluyor, şunların da değişmesi gerekiyor gibi.
+
+378
+01:00:18,420 --> 01:00:24,380
+Bunlar için de biz sözleşme yani kontrak dediğimiz yapıyı oluşturabiliriz.
+
+379
+01:00:25,440 --> 01:00:33,960
+Normalde senaryoları belirledik, işlemleri belirledik ve bazı senaryolarda bazı karmaşık işlemler için sözleşme yazmak zorunda kalabiliriz.
+
+380
+01:00:34,920 --> 01:00:38,039
+Sözleşmenin içinde de ne varsa aslında önemli olan son koşullar.
+
+381
+01:00:38,160 --> 01:00:40,980
+Yani ne yaptığımızı, ne hale geldiğimizi doğru ifade etmek.
+
+382
+01:00:41,600 --> 01:00:44,900
+Bu da bir nesne yaratma olabilir, bir nesneyi yok etme olabilir.
+
+383
+01:00:45,940 --> 01:00:53,760
+Bir özelliğin güncellenmesi olabilir ya da bir yeni bağlantı oluşturmak, bir bağlantıyı koparmak gibi farklı davranışlar olabilir.
+
+384
+01:00:59,251 --> 01:01:07,152
+Kontraklarla modele eklenti yapılması, bazı yeni öz nitelikler gibi yapılması sonucu da ortaya çıkabilir.
+
+385
+01:01:07,751 --> 01:01:12,951
+Dedim ki biz burada yine işin nasıl yapıldığını söylemiyoruz. O zaten tasarımda yapılacak.
+
+386
+01:01:12,951 --> 01:01:19,831
+Bakın şöyle örnek bir sözleşme bakalım. Kontrakt sözleşme bir çalışan çıkartma.
+
+387
+01:01:23,411 --> 01:01:34,411
+Çalışan çıkartma senaryosu aslında. Mesela çalışan çıkartma işlemi, pardon özür dilerim, nasıl yapıldı. Bunun için de çalışan şeklinde bir parametre ihtiyaç duyacak.
+
+388
+01:01:35,491 --> 01:01:41,871
+Ne ile ilgili bu? Benim işte üçüncü senaryomla ilgiliymiş. Bölüm kapama. Bölüm kapama diye bir senaryo varmış.
+
+389
+01:01:42,871 --> 01:01:48,151
+Bu sözleşmenin çalışması için ön koşu neymiş? Bölüm kapama senaryosunun çalışması.
+
+390
+01:01:51,231 --> 01:02:15,832
+Tamam mı? Bölüm kapama ne demektir? Bölümde çalışanlar var. Çalışanları uygun bölümlere dağıtırsın. Değil mi? Ama şöyle bir şey olabilir. Bir çalışanınız kalmıştır. Uygun bir bölüme atanmamış. Yani o bölümde kalmış. Başka bölüme atayamadığınız bir çalışanınız var. Ne yapacaksınız? İşte burada sonrası için tasarıma yol göstermek açısından not düşüyorsunuz. Bir sözleşmek, bir kontrakt.
+
+391
+01:02:18,739 --> 01:02:36,799
+Bütün çalışanların tazminatını hesaplamış olması gerekir. Demek ki benim tazminat hesapları yapmam lazım bölüm kapama senaryosunda. Ve uygun bölüme atamayanlar iş yeriyle bağlantısı kesilir diyor. İşten çıkarma yapacağız.
+
+392
+01:02:37,460 --> 01:03:03,460
+Hani bir nesnesini yok etme falan dedik ya, böyle bir şeyin yapılması gerektiğini söylüyorum. Burada işin nasıl yapılacağını anlatmıyorum. Sadece diyorum ki, eğer çalışanları, pardon bölümü kapıyorsan ve bölüm kapama senaryosu çalıştığı halde ortada çalışan kaldıysa, o zaman sen bunu çıkartacaksın kardeşim. Çıkartmak için de tazminatını hesaplayıp bağlantısını keseceksin.
+
+393
+01:03:03,987 --> 01:03:09,247
+İşlem böyle atacaksın şeklinde bir kontrat yazmış olabiliriz.
+
+394
+01:03:09,827 --> 01:03:12,207
+Dediğim gibi bu çok ihtiyaç duyabileceğiniz bir şey değil.
+
+395
+01:03:12,327 --> 01:03:15,527
+Mesela ders projesinde büyük bir ihtimalle ihtiyaç duymayacaksınız.
+
+396
+01:03:16,647 --> 01:03:29,567
+Ama daha büyük, daha karmaşık projelerde senaryoların tek başına yetmediği noktalarda ilave açıklayıcı, ilave son koşul açıklayıcıları olarak kullanılabilirler.
+
+397
+01:03:38,612 --> 01:03:39,912
+Doldu, 2-5 geçiyor.
+
+398
+01:03:41,412 --> 01:03:41,692
+Şimdi
+
+399
+01:03:41,692 --> 01:03:51,512
+sonrasında labınızda olduğu için para vermeden mümkün olduğunca hızlı devam edeceğim.
+
+400
+01:03:52,467 --> 01:04:10,307
+Bilgi toplama yöntemleri nelerdir? Şimdiki ara başlığımız. Şimdiye kadar neden bahsettik? Use case modellemesi, kullanım senaryosu modellemesinden bahsettik. Bunu iş analizinde problem ne, nasıl, nelerden oluşuyor, nasıl ifade ederim? Bunun için kullandığımı söyledim.
+
+401
+01:04:10,307 --> 01:04:19,768
+Şimdi ben senaryolar oluşturmak için gerekli bilgiye nasıl erişeceğim? Bunun yolu yordamı nedir? Buna bakalım. Bilgi toplama yöntemleri.
+
+402
+01:04:20,851 --> 01:04:30,851
+Bu daha genel bir konu aslında tabii. Araştırma ve bilgi toplama yöntemleri ama biz tamamına değil, bizim bilgi sistemi ve analizlerin yapılması açısından yeterli kısmına bakacağız.
+
+403
+01:04:30,851 --> 01:04:47,492
+Şimdi, bir, ilk yöntem, bunun adını ben koydum. Gözleme yaklaşımı. Gözleme deyince şey değil, gözlem yapma anlamında.
+
+404
+01:04:47,956 --> 01:04:53,996
+İkincisi kişisel görüşme ve son bilgi toplama yöntemimizde anket.
+
+405
+01:04:55,496 --> 01:05:01,956
+Şimdi gözleme yaklaşımı için bir kere iş ortamını gözlemlemeniz gerekecek.
+
+406
+01:05:02,695 --> 01:05:10,195
+Yani gideceksiniz, işin yapıldığı yere gireceksiniz ve oturup seyredeceksiniz insanları, gözleyeceksiniz.
+
+407
+01:05:11,411 --> 01:05:18,531
+Hangi belgeler kullanılıyor, hangi formlar, hangi dosyalar? Bunlar fiziksel de olabilir, bilgisayarda da olabilir.
+
+408
+01:05:19,443 --> 01:05:31,043
+İş ortamını gözleyerek aslında işin nasıl yapıldığını, hangi gereksinimlerin olduğunu, hangi senaryoların olması gerektiğini daha iyi ortaya çıkartabilirsiniz.
+
+409
+01:05:31,703 --> 01:05:36,963
+Sonrasında kişisel görüştüğümüz, aslında kişisel görüşme dediğimizde toplantı gibi yöntemler, mülakat.
+
+410
+01:05:37,543 --> 01:05:43,623
+Eğer daha büyük boyutta olacaksa ortak gereksinin planlaması gibi çalıştığı aylar bile olabilir.
+
+411
+01:05:44,543 --> 01:05:47,403
+Burada da yapılandırılmamış ve yapılandırılmış görüşmeler var.
+
+412
+01:05:47,443 --> 01:05:53,884
+Onların farklarına bakacağız. Son olarak da anket yöntemi var. Anket yöntemi özellikle
+
+413
+01:05:54,739 --> 01:06:19,919
+Son kullanıcıya, pazara açılacak, App Store'a koyulacak gibi bir bilgi sistemi geliştiriyorsanız, son kullanıcıdan aslında işlevsellik ihtiyaç taleplerini almak adına daha sıklıkla kullanılan ya da çok büyük Enterprise seviyedeki şeylerde bir bilgi sistemi geliştirilecekse, holdinglerde falan orada kullanılabilecek bir yöntem.
+
+414
+01:06:19,919 --> 01:06:22,519
+Burada da açık ve kapalı uçlu soruları tartışacağız.
+
+415
+01:06:22,739 --> 01:06:42,519
+Evet, şimdi, dediğim gibi gözleme için iş ortamını gözlemlemeniz gerekecek. Tabii kişisel görüşmede de öncesinde gözlemeyi tekrar üzerinden geçeyim. Dediğim gibi gidiyorsunuz, sessiz bir şekilde ortamı gözlüyorsunuz.
+
+416
+01:06:43,219 --> 01:06:56,859
+Kim ne yapıyor, kimin ne rolü var, bir işin yapılması için hangi süreçlerden geçilmesi gerekiyor, kim onaylıyor, kim mühür vuruyor, kim bir şeyleri sayıyor, oraya bir şey yazıyor, bu iş nasıl yapılıyor bunları gözleyerek aktardım.
+
+417
+01:06:57,235 --> 01:07:04,055
+Kişisel görüşmede de bunları görüşerek, konuşarak yani sessiz kalmayarak alabilirsiniz.
+
+418
+01:07:04,855 --> 01:07:11,395
+Analistimiz kullanıcıyla iş yerine gidiyor, orada karşılıklı olarak görüşüyor ve sorular soruyor.
+
+419
+01:07:12,355 --> 01:07:21,895
+Bunun için tabii ki ben geldim demeniz yeterli değil. Mutlaka randevu almalısınız, hazırlıklı olmalısınız, kişisel görüşme öncesinde hazırlanmalısınız.
+
+420
+01:07:22,547 --> 01:07:28,547
+Bir açılış konuşması, başlangıç konuşmasının olması gerekir ve konularında belirlenmiş olması gerekir.
+
+421
+01:07:28,547 --> 01:07:29,547
+Yani hani...
+
+422
+01:07:30,260 --> 01:07:42,340
+Bu toplantının amacı şu, hedefimiz şu şu şu gereksinimleri ortaya çıkartmak, şu işin nasıl yapıldığını ve bu süreçte hangi onayların alındığını belirlemek gibi bir açılış konuşması yönlendirici.
+
+423
+01:07:43,059 --> 01:07:52,260
+Bütün görüşme süresince not almak önemli. Ayrıca hitap biçimi ve duruşta yine saygı açısından dikkat edilmesi gereken noktalar.
+
+424
+01:07:54,143 --> 01:08:07,323
+Kişisel görüşme sonucunda, yani toplantının sonucunda başlıca noktalar neler, neler sonra konuşulacak, neler hiç konuşulmadı ve sonraki görüşme planı nasıl olacak bunların da planlanması gerekir.
+
+425
+01:08:13,331 --> 01:08:32,871
+Şimdi toplantılarımız ve görüşmelerimiz, bunu bir kişiyle yapabilirsiniz, bir ekiple yapabilirsiniz. İllaşil olmak zorunda değil, tekil olmak zorunda değil. Ama hangi ölçekte olursa olsun sonuçta bunlar grup dolaşıp iki çeşit görüşmeye bağlanıyor. İki çeşidi var.
+
+426
+01:08:34,387 --> 01:08:41,887
+Genel olarak, birisi yapılandırılmış görüşmeler, bir diğeri de yapılandırılmamış görüşmeler.
+
+427
+01:08:44,728 --> 01:08:52,228
+Yapılandırılmış görüşme demek, aslında bütün toplantı biraz önce söylediğim şeylerle planlanmış demek.
+
+428
+01:08:52,728 --> 01:08:58,188
+Amacı belli, katılım taraflar belli, zamanı yeri belli.
+
+429
+01:08:58,963 --> 01:09:09,703
+Taraflara önceden amacı, süresi ve varsa ilgili gerekli dokümanların bildirilmiş olduğu, hangi soruların sorulacağının tespit edilmiş olduğu,
+
+430
+01:09:10,292 --> 01:09:19,352
+Görüşmeden sonra da sonuçların değerlenip yorumlandığı ve bu sonuçların da formal olarak bütün ilgililere yazılıp dağıtıldığı bir görüşme şekli.
+
+431
+01:09:20,532 --> 01:09:34,391
+Yapılandırılmamış görüşme ise bunun daha esnek hali, biraz daha amaçsız, biraz daha genel, biraz daha böyle sen konuş ben dinleyeyim diye böyle simultane deniyor ona bir anda ortaya çıkan.
+
+432
+01:09:34,996 --> 01:09:59,976
+Görüşme şekilleri. Kiminle görüşeceğiniz değişebilir. Bir anda, aa bilmem kimde varmış, hadi o da gelsin. Olabilir. Ondan sonra zamanı ve yeri belki dinamik olarak belirlenebilir. Sorular da belli değildir. Çünkü burada daha böyle genel ya da müşterinin yani kullanıcının tam anlatamadığı, kendini daha rahat ifade etmesi gereken.
+
+433
+01:10:00,000 --> 01:10:23,659
+şeyler konuşulur. Yapılandırılmamış görüşmede. Yapılandırılmış görüşmedeyse hani böyle bir soru seti var. O soru seti üzerinden mutabık kalarak netleştirmek şeklinde sonuçlar üretilmeye çalışılıyor. Bu nedenle yapılandırılma, aynı işte bu söylediğim sebep farklarla ilgiliyle
+
+434
+01:10:25,460 --> 01:10:35,319
+Yapılandırılmış bir görüştürmeyi değerlendirmek daha kolaydır. Çünkü her şey belli. O yapılandırmamış da daha zordur.
+
+435
+01:10:35,859 --> 01:10:48,559
+Harcanan zaman daha azdır. Çünkü konuşulacaklar belli, maddeler paylaşılmış, herkes önceden hazır. Ama yapılandırmamış görüşmede daha çok zaman harcanır ama daha farklı yerlerden bilgi toplanabilir.
+
+436
+01:10:49,459 --> 01:10:55,219
+Eğitim ihtiyacı burada sınırlıdır ama burada sınırsızdır. Çünkü ne olduğu belli değil, ne konuşacağı belli değil.
+
+437
+01:10:56,039 --> 01:11:03,659
+Kendiliğinden ortaya çıkma durumu azdır hatta yoktur. Çünkü her şey bellidir. Ama yapılandırmamış görüşmenin fazladır.
+
+438
+01:11:03,859 --> 01:11:25,680
+Azlamış. Cevapların kendi görüşünü ortaya koyması yapılandırılmış da azdır. Çünkü sorup bu mudur bu mudur diye ilerliyoruz. Ama yapılandırmamış görüşmede taraflar kendine daha rahat, tamamen kendi görüşlerini içecek şekilde ifade edebilir.
+
+439
+01:11:26,144 --> 01:11:31,564
+Aynı bu nedenle daha az esnektir. Her şey belli, stabil. Burası daha çok esnek.
+
+440
+01:11:33,108 --> 01:11:54,788
+Anketör diyoruz ama bizim analist mesela burada bunu düzenliyordur büyük bir ihtimalle. Kontrolü yüksektir, kontrolü yapılandırılmamış üzerinde azdır. Doğruluğu fazladır, doğruluğu azdır. Güvenirliği fazladır, her şey belli olduğu için güvenirliği daha azdır ama hem daha geniştir hem de daha derindir yapılandırılmamış görüşmeler.
+
+441
+01:12:01,108 --> 01:12:03,728
+Bir yerden konu daha derinlere doğru da gidebilir.
+
+442
+01:12:11,380 --> 01:12:15,500
+Toplantıdaki sorularda da tümden gelirim.
+
+443
+01:12:15,680 --> 01:12:19,380
+Ya kul bilir. Ayrıntılı kapalı sorulardan açık sorulara geçiş.
+
+444
+01:12:20,079 --> 01:12:21,079
+Burada mülakat veren.
+
+445
+01:12:22,355 --> 01:12:41,056
+Konuya gitgide ısınır diyebiliriz. Yani kapalı sorular, şu mudur, bu mudur, şu kadar süre mi iyidir falan gibi. Oradan siz ne düşünüyorsunuzlara doğru gitmek. Kapalı uçlu, açık uçlu. Kapalı uçlu demek hani şıklı, çoktan seçmeli gibi açık uçlu kullanıcının kendi cevap verdiği, yorum yazdığı soru çeşitleri.
+
+446
+01:12:50,355 --> 01:12:54,495
+şunlar şunlar ne olmalıdır diye daha böyle kapalı uçlu sorularla bitirebilirsiniz.
+
+447
+01:12:55,376 --> 01:13:02,155
+Eğer konuyla istekliyse ve fikirlerini serbestçe ifade ediyorsa konuştuğunuz taraf, o zaman tümden gelin.
+
+448
+01:13:02,255 --> 01:13:06,355
+Yani açık uçludan kapalı uçluya doğru dizmek daha mantıklı olacaktır.
+
+449
+01:13:07,923 --> 01:13:24,564
+Bunların yanında dediğim gibi özellikle son kullanıcıya hitap eden bilgi sistemleri varsa ve oradan bir işlevsellik almak, bir şeyler toplamak istiyorsanız son kullanıcıdan ya da çok büyük kitlelerin kullanacağı bilgi sistemlerinden.
+
+450
+01:13:25,939 --> 01:13:41,599
+Anket yöntemini de kullanabilirsiniz. Anket yönteminde de soru ve cevap alanları var. Doğal olarak. Anketi bir yöntemim ki hepiniz yapmışsınızdır. Hatta bugün bile bir hızlı veri yapılır dersinde hepimiz.
+
+451
+01:13:42,323 --> 01:14:03,583
+3.41'den bir anket gerçekleştirdik. Burada soruların tam ve açık olmaları, eksik olmamaları önemlidir. Bir, soruların hatırlatma yapması gerekir. Mesela bir bilgi istiyorsunuz. O bilgi istediğiniz olay üzerinden zaman geçmiş. Bunun için bir hatırlatma yapmanız gerekir.
+
+452
+01:14:03,583 --> 01:14:09,984
+Ve hatta cevaplayan için o sorunun ya da o olayın ne kadar önemli olduğunu da dikkate almanız gerekir.
+
+453
+01:14:10,323 --> 01:14:25,923
+Özel yaşamla ilgili soru sormamanız gerekir. Cevaplaması kolay sorular olması gerekir. Ve ilgi çekici, yani evet, ben katkı sağlıyorum şeklinde ilgi çekici anketler oluşturulması gerekir. Yani anket cevap arzusu oluşturmalıdır.
+
+454
+01:14:33,235 --> 01:14:53,796
+Hataya engel olmaya gayret etmelidir, anket yönlendirici olmalıdır. Bunun için de genellikle anket tekniği olarak eleme soruları veya çoktan seçmeli cevaplamalar tercih edilebilir. Kontrol soruları da konulabilir.
+
+455
+01:14:54,739 --> 01:15:19,960
+Gerçekten sallıyor mu anketi dolduran yoksa doğru bir şekilde okuyarak mantıklı tutarlı cevaplar veriyor mu? Bu da anket düzenleyenin yine aşma gereken bir anket. Bir diğer ifade kolaylığı. İsterseniz görsel üyeler kullanabilirsiniz. Bu sayede cevapları destekleyebilirsiniz. Cevap vermeyi.
+
+456
+01:15:22,195 --> 01:15:26,135
+Ve mümkün olduğunca cevaplayıcıyı şartlandırmamanız esastır.
+
+457
+01:15:27,036 --> 01:15:41,135
+Hani sizce de böyle olmaması gerekmiyor değil mi falan gibi böyle ya da zaten en iyi işi olduğu bilinenler içinden hangisini seçersiniz gibi şartlandırıcı ifadelerin olmaması gerekir.
+
+458
+01:15:41,635 --> 01:15:46,195
+Kullanıcının tamamen şıklar arasında seçim özgürlüğünün olması gerekir.
+
+459
+01:15:47,380 --> 01:15:56,180
+Anket yöntemiyle eğer veri topluyorsanız, bilgi topluyorsanız, bunun da kendine göre avantajları ve dezavantajları var tabii ki.
+
+460
+01:15:56,840 --> 01:16:05,280
+Çok kişiden veri toplamanız olası, zaten amacımız da o. Mümkün olduğunda çok kişiden veri almak, veri toplamak.
+
+461
+01:16:06,460 --> 01:16:09,420
+Hızlı cevaplanabilir anketler, düzgün hazırlandılarsa.
+
+462
+01:16:10,195 --> 01:16:15,096
+Büyük bir popülasyonla çok düşük maliyetle ya da maliyet olmadan veri toplayabilirsiniz.
+
+463
+01:16:16,155 --> 01:16:22,256
+Kimlik verisi alınmaması gerekir. Kimlik gizli kaldığında katılanlar düşüncelerini rahat bir şekilde aktarır.
+
+464
+01:16:22,256 --> 01:16:27,636
+Ve analizi de hızlı yapabilirsiniz. Ama dezavantajları da var.
+
+465
+01:16:28,756 --> 01:16:34,556
+Anketi özellikle e-postayla falan yolluyorsanız kimse cevaplamaz. Kimse ilgilenmez.
+
+466
+01:16:35,283 --> 01:16:54,903
+Özellikle yüksek istans doktora çalışmalarında tezim için şu şu bilgileri toplayacağım, anket çalışmasına katılmanızı rica ediyorum diye onlarca mail geliyor. Çoğunu siliyoruz. Çünkü hepsi çok uzun anketler yapıyorlar. 1, 2, 3 yardım edeyim diyorsunuz ama bir yerden sonra yok olmuyor deyip bırakıyorsunuz.
+
+467
+01:16:55,823 --> 01:17:02,663
+Herkes tüm soruları cevaplamayabilir, yanlış cevaplayabilir, 1, 1, 1, 1, 1 verip geçebilir ya da 5, 5, 5 neyse.
+
+468
+01:17:03,859 --> 01:17:14,399
+Gönüllü olarak bilgi edinme kısmı biraz kısıtlıdır, esnekliği azdır. Bunun için ne yapabilirsiniz? Açık uçlu sorular eklersiniz. Yorum ve düşüncelerinizi aktarın gibi.
+
+469
+01:17:14,399 --> 01:17:21,899
+Ama kimse de oraya oturup da bir paragraf, bir şey yazmak istemez. Kolay gelsin falan yazarlar genellikle.
+
+470
+01:17:22,644 --> 01:17:38,784
+Kullanıcının ya da karşınızda kişisel görüşme yaparkenki ekip ya da kişinin vücut dilini analiz edebilirken doğru mu söylüyor, sallıyor mu, ilgileniyor mu, yoksa başından mı sarıyor gibi anket yapanın vücut dilini görmediğiniz için analiz edemezsiniz.
+
+471
+01:17:38,784 --> 01:17:50,204
+Bir de soruların yine düzgün olması gerekir. Bulanık soru varsa cevap da bulanık olacaktır. Hiçbir şeyi, hiçbir veriyi, hiçbir bilgiyi düzgün ve doğru bir şekilde alamamış olursunuz.
+
+472
+01:17:52,020 --> 01:18:13,539
+Yani şu kimliğin gizli kalma olayı özellikle önemli. Mesela bizim de üniversitede şey yapılıyor, işte bir sürü daire başkanlığı falan filan var ya, birimler var. Onların hepsi memnuniyet anketi yapıyor. Anket şöyle başlıyor, çalıştığınız birim.
+
+473
+01:18:14,515 --> 01:18:25,335
+Fakültenizi yazıyorsunuz. Çalıştığınız bölüm, bölümünüzü yazıyorsunuz. Seçiyorsunuz. Ondan sonra akademik misiniz, idare misiniz? Akademiyi seçiyorsun.
+
+474
+01:18:26,495 --> 01:18:40,095
+Ünvanınız seçiyorsun. Cinsiyetiniz seçiyorsun. Kaç yıldır çalışıyorsun? İşte üçlü beşli aralıkları var. Seçiyorsun. Kaç kişi kaldı sizce o sapsette?
+
+475
+01:18:40,576 --> 01:19:00,436
+2-3 kişi kaldı. Belki 1 kişi kaldı. Yani sizin kimliğiniz aslında zaten o anket düzenleyene ifşa olmuş oldu. O yüzden de düşünceler rahat aktarılamayabiliyor. En önemli kısmı biraz da budur. Anket düzenlemek zor tabi ama sonuçta büyük bir kitleden veri alacaksınız. En iyi yöntem bu.
+
+476
+01:19:03,283 --> 01:19:24,163
+Açık uçlu anket sorularında cevaplayıcı kendi ifadelerini yazıyor. Burada tabi ki esneklik var. Daha önceden hazır olmayan cevaplarla çeşitli farklı bilgiler alabilirsiniz. Cevaplayıcı kendi bakış açısını yansıtıyor. O yüzden görüştüğünü daha iyi anlayabilirsiniz.
+
+477
+01:19:30,448 --> 01:19:34,208
+Tehlikeli olduğunu buradaki cevaplardan anlayabilirsiniz.
+
+478
+01:19:35,155 --> 01:19:59,536
+Yine kullanıcılar duygularını ifade edebilir ve aktarabilir. Ama tabi dezavantajları da yine fazla. Bir kere zahmetli, zaman alıyor, yorucu. Çünkü oturup klavyede bir şeyleri yazmanız gerekiyor. Aman ne yazacağım o kadar diyerek eksik yanıtlar verebilir, kısa yanıtlar verebilir, gerçek hissiyatını yazmayabilir kullanıcı.
+
+479
+01:20:01,363 --> 01:20:11,483
+Bunun yanında tabii ki bu veriler okunması ve değerlendirmesi, tek tek değerlendirmesi gereken veriler analizi oldukça zor ve çaba zaman gerektiriyor.
+
+480
+01:20:13,343 --> 01:20:20,503
+Cevaplayanın eğitim seviyesi, kendini ifade etme düzeyi cevabının kalitesinde ve kapsamında etkiliyor.
+
+481
+01:20:22,323 --> 01:20:35,083
+Bunun yanında sayısal bilgi almak istiyorsanız o zaman belki şey diyebilirsiniz, açıkmış sorularda. En iyi en kötü 3 madde bunları sıralayın falan gibi ifadeler daha doğru olur.
+
+482
+01:20:36,595 --> 01:20:59,615
+Kapalı uçlu sorularda da aslında sabit bir seçenek kümesi var. Oradan seçmek isteniyor. Çoktan seçmeli olabilir, iki cevap olabilir, sıralama olabilir. Farklı farklı şeyleri var biliyorsunuz. Bunun avantajı cevap çok kolay, hızlı bir şekilde işaretlenir, hızlı bulunur. Bunu kodlamak da kolaydır, bunun sonucunu işlemek de kolaydır, hızlıdır, sorunsuzdur.
+
+483
+01:21:01,108 --> 01:21:04,347
+Ama cevabınızın olasılıklarını düzgün hazırlamanız gerekir.
+
+484
+01:21:05,427 --> 01:21:09,948
+Anketin amacına uygun olacak şekilde cevap olasılıkları oluşturmanız gerekir.
+
+485
+01:21:10,667 --> 01:21:13,387
+Herkese aynı kefeye koyar, aynı bakış açısı.
+
+486
+01:21:13,507 --> 01:21:16,307
+Yani şu, şu, şu bunlardan birini seç dediğimiz için.
+
+487
+01:21:17,347 --> 01:21:20,427
+Cevaplayıcı taraf herhangi bir şekilde yorumlama yapamaz.
+
+488
+01:21:20,728 --> 01:21:23,188
+Böyle bir şeyi dışarıda bırakmış oluruz.
+
+489
+01:21:23,636 --> 01:21:44,636
+Bir de hatırlamayı da kolaylaştırır. Yani şimdi hangi eğitimleri aldınız diye sorsak çoğu kişi bazı şeyleri unutur. Hani sertifikalarını falan yazmayı aklına getirmez ama şıkları koyduğunuzda hani şu eğitim, bu eğitim, bu eğitim, bilmem ne eğitimleri gibi blok blok o zaman insan bunları aa evet ben bunu almıştım, almıştım diye daha kolay hatırlayabilir.
+
+490
+01:21:49,587 --> 01:22:01,368
+Konuyla ilgili gerçek duyguyu yansıtmayan seçenekler görebilir. Yani 4 tane seçenek var ama ben hiçbiri bana tam yakın değil. Ben aslında şöyle düşünüyorum ve hiçbirini işaretleyemiyorum.
+
+491
+01:22:02,427 --> 01:22:09,988
+Buna en yakın şıkkı işaretliyoruz bu durumda ama tabi burada bir fark varsa ince bir fark ve bu önemli bir fark ise bu ortadan kalkmış olur.
+
+492
+01:22:10,452 --> 01:22:23,471
+Kişinin belki verecek cevabı yok ama yine de kapalı uçlu soru işaretlemen lazım. Soruyu anlamadım olsun. Sen cevaplayacaksın. Buraya mutlaka bir cevap yazsın. Genelde onun için fikrim yok işaretlenir ve ilave edilir.
+
+493
+01:22:24,731 --> 01:22:27,631
+Tabi anket dolduran da her şeye fikrim yok diyebilir.
+
+494
+01:22:29,427 --> 01:22:40,487
+Bütün soruları kapalı uçlu yaparsanız da o zaman cevaplayan, kardeşimiz de kendi görüşümüzü ifade edemiyoruz şeklinde engellenmiş hissedebilir.
+
+495
+01:22:40,487 --> 01:22:48,667
+Orada bir denge oluşturmanız gerekecek. Yani böyle hem kapalı hem açık uçlu soruların da ankette yer alması gerekir.
+
+496
+01:22:49,011 --> 01:23:07,851
+Bunları da karşılaştırdığımızda açık ve kapalı uçlu soruları ankette. Kapalı uçlu sorular hızlı tamamlanıyor. Açık uçlu, yavaş yazmamız lazım. Araştırma kapalı uçlu da alçak kalıyor. Çünkü şey yapamıyoruz, aynı şekilde genişlik ve derinlikte olanlardan sadece okuyabiliyoruz.
+
+497
+01:23:17,011 --> 01:23:23,031
+Açık uçlu sorularda daha geniş araştırmalar yapabiliyoruz. Kullanıcının kendi fikrini özgür şekilde verebildiği için.
+
+498
+01:23:24,851 --> 01:23:32,711
+Yine bununla bağlantılı, geniş ve derin. Aynı şeyde olduğu gibi bir önceki karşılaştırma yapılandırılmış, yapılandırılmamış görüşme farkında.
+
+499
+01:23:33,511 --> 01:23:37,291
+Daha geniş ve daha derin olduğu açık uçlu soruların rahatlıkla söylenebilir.
+
+500
+01:23:37,811 --> 01:23:48,692
+Kapalı uçlu soruları hazırlamak zordur ama okuması analizi kolaydır. Tam tersi açık uçlu soruları da hazırlaması kolaydır, analizi zordur.
+
+501
+01:23:48,692 --> 01:23:59,351
+Test sınavını hazırlamak zor, okuması hızlı ama klasik sınavı hazırlaması kolay ama okuması uzun zaman alıyor gibi düşünebiliriz.
+
+502
+01:24:00,884 --> 01:24:09,783
+Ankette de yine toplantı düzeninde olduğu gibi tümden gelip tümü varım kullanabilirsiniz. Genelden özel, özelden gene sıralayabilirsiniz.
+
+503
+01:24:10,743 --> 01:24:20,463
+Genellikle direnç olmasın diye genelden özele doğru bir akış tercih edilir. Soruları da direkt en zor sorudan başlamayın. Basitten başlayıp zorlaştırarak gidin.
+
+504
+01:24:20,983 --> 01:24:28,863
+Önceki soru, sonraki soruya mutlaka hazırlayıcı olması gerekir. Daldan dala atlamamanız gerekir. Bu sayede cevaplayıcılar.
+
+505
+01:24:28,884 --> 01:24:32,403
+ilgisini ve işbirliğini sağlayabilirsiniz.
+
+506
+01:24:34,103 --> 01:24:37,863
+Sorular arasında mutlaka dediğim gibi bağlantı olması gerekir.
+
+507
+01:24:38,003 --> 01:24:40,863
+Ani konu değişikliklerinden kaçınmanız lazım.
+
+508
+01:24:41,003 --> 01:24:43,303
+Ani konu değişiklikleri yapmayın.
+
+509
+01:24:44,023 --> 01:24:46,303
+Çünkü o zaman kafa gidiyor, kafa dağılıyor.
+
+510
+01:24:46,443 --> 01:24:50,884
+Cevaplayıcı da anketin özenli hazırlanmadığını düşünüyor.
+
+511
+01:24:54,996 --> 01:25:06,076
+Bu nedenle, cevaplamada isteksizlik ve esas alınması hedeflenen verilere ulaşamama problemleri ortaya çıkıyor.
+
+512
+01:25:08,216 --> 01:25:11,156
+Peki, şimdi...
+
+513
+01:25:11,539 --> 01:25:17,079
+İş analizi yapmamız gerekiyor dedik. Bunun için use case modellemesini kullanabiliriz dedik.
+
+514
+01:25:17,699 --> 01:25:21,619
+Sonrasında da benim bu bilgileri açmam için bir şeyleri, bilgileri toplamam lazım.
+
+515
+01:25:22,359 --> 01:25:26,579
+Use case'leri oluşturabilmem için yani en azından.
+
+516
+01:25:27,579 --> 01:25:33,220
+Bunun için de ortamı gözleyebilirsiniz, kendiniz çıkarımlarınızı yaratabilirsiniz dedik.
+
+517
+01:25:33,699 --> 01:25:38,760
+Ya da görüşmeler yapabilirsiniz, bireysel ve toplu görüşmeler, toplantılar yapabilirsiniz dedik.
+
+518
+01:25:39,539 --> 01:25:46,460
+Ve eğer geniş kitleyse ve son kullanıcı gibiyse o zaman da anketler üzerinden bilgi toplayabilirsiniz dedik.
+
+519
+01:25:47,159 --> 01:25:52,199
+Bu bilgileri topladık ne yapacağız? Hani oh iyi topladık hadi yolumuza devam edelim mi diyeceğiz? Hayır.
+
+520
+01:25:53,140 --> 01:25:54,539
+Bunların hepsi...
+
+521
+01:25:54,899 --> 01:26:20,159
+Bir iş gereksinimleri dokümanı ile rapor haline getirilir. Yani gereksinim analizinin birinci aşamasının çıktısı, birinci aşamanın çıktısı, BRD, Business Requirements Document, iş gereksinimleri dokümanı. Burada bir rapor haline getirilir.
+
+522
+01:26:20,884 --> 01:26:46,503
+Bu bir teknik rapor. O nedenle de bir özetle başlar. Raporun amacı ve hedim, yani iş gereksinimlerinin ne olduğu, ama niye amaçladığımızı, niye hedeflediğimizi yazarız. İhtiyacın ne olduğunu belirtiriz. Yani aslında sistem neden lazım? Sistemin kapsamı nedir? Yani sistemin sınırları nelerdir? Bunu ortaya çıkartırız. Bir mali analizi, yine fizibiliteden gelen işe eklenir.
+
+523
+01:26:47,347 --> 01:26:53,608
+İşlevsel gereksinimler üst seviyeli olarak yani bir use case modellemesi gibi burada yer alır.
+
+524
+01:26:54,108 --> 01:26:56,068
+Kaynak ihtiyaçları yazılır.
+
+525
+01:26:56,648 --> 01:27:05,427
+Gant diagramı güncellenir ve gerekiyorsa maliyet fayda analizi yani ekonomik fizibilite de güncellemeler gerekiyorsa bunlar da burada yer alır.
+
+526
+01:27:06,108 --> 01:27:08,188
+Tabii ki en önemli kısım şurası.
+
+527
+01:27:09,971 --> 01:27:18,631
+Bunları bir döküman haline getirebilirsiniz. Alternatifine bir yerde yazmak istemiyorum. Araştırma raporu yazabilirsiniz. Bu bir teknik raporu olur yine.
+
+528
+01:27:19,211 --> 01:27:28,611
+İşte başlık içindekiler amaç, metodoloji, sonuç ve ekler. Bunun içinde bir de yönetici için bir özet raporu yazılır. Amaç, yöntem, sonuçlar şeklinde.
+
+529
+01:27:28,611 --> 01:27:36,551
+Ama bizim için doğru olan buradaki iş gereksinimleri dökümanını oluşturmak.
+
+530
+01:27:38,484 --> 01:27:48,543
+Business Requirements Document diye yine Google'da bir ararsanız çok güzel örnekler görebilirsiniz. Ne demek istediğimi kapsamının ne olduğunu daha iyi anlarsınız.
+
+531
+01:27:50,404 --> 01:27:51,984
+Peki, saatimiz.
+
+532
+01:27:52,756 --> 01:28:06,275
+Bu neredeyse 1.5 olmuş. E tamam yani neredeyse bir tam ara vermeli ders kadar ders yapmışız. Yani arayı saymazsak hiç ara vermediğimiz için 1.5 saatte toparlamışız. Gayet iyi.
+
+533
+01:28:07,155 --> 01:28:16,956
+Önümüzdeki haftada inşallah canlı yüz yüze sistem analizinin ikinci aşamasına geçeceğiz. Fonksiyonel çözümleme.
+
+534
+01:28:17,524 --> 01:28:30,783
+Biraz önce bahsettiğim dersin başına daha yakın zamanlarda Software Requirement Specification, ikinci dökümanımız, esas dökümanımız ya da analiz çıktığımız ve bununla beraber
+
+535
+01:28:31,412 --> 01:28:42,832
+Şimdi biz iş analizi yaptık, use case modellemesi yaptık ya, o use case modellemesinden yola çıkarak ben acaba nesne yönelik bir kavramsal model nasıl oluşturabilirim?
+
+536
+01:28:43,231 --> 01:28:55,092
+Yani geleneksel yaklaşım ve nesne yönelik yaklaşım ile neler yapabilirim? Nasıl analiz modellemeleri ortaya çıkarabilirim? Bunlarla haftaya devam edeceğiz.
+
+537
+01:28:56,592 --> 01:28:57,712
+Sorunuz var mı?
+
+538
+01:29:07,444 --> 01:29:20,644
+Peki, o zaman saat 4'te veri yapıları labı var, unutmayın. Bugünlük bu haftalık dersi sonlandırıyorum. Katılmanız için teşekkür ederim. Görüşmek üzere.
