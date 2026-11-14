@@ -1,0 +1,3207 @@
+1
+00:07:05,588 --> 00:07:16,668
+Arkadaşlar, merhabalar. Sesim geliyor mu? Merhaba hocam, geliyor. Teşekkürler.
+
+2
+00:07:23,124 --> 00:07:39,764
+Şimdi bu derste ufak bir geçen ilk haftadan sonra ders yaptık mı hatırlamıyorum. İlk haftayı tekrar edeyim.
+
+3
+00:07:41,884 --> 00:07:48,684
+Stanford Üniversitesi'nin GS231N var. Deep Learning for Computer Vision.
+
+4
+00:07:50,387 --> 00:07:58,387
+Onun kaynaklarını kullanacağız.
+
+5
+00:08:35,700 --> 00:08:46,700
+Burada üç tane ödev var. Bu üç ödevi yapacaksınız. Bir proje var. Projeyi de yapacaksınız.
+
+6
+00:08:53,700 --> 00:08:59,700
+Bir tane de projeyi yapmak için biraz literatür taraması yapmanızı istiyorum.
+
+7
+00:09:00,436 --> 00:09:04,536
+Yaptığınız literatür taramayı anlatacaksınız.
+
+8
+00:09:05,396 --> 00:09:07,036
+Özetleyeceksiniz bize.
+
+9
+00:09:15,283 --> 00:09:23,484
+Oradan da bir not alacaksınız. Proje final yerine geçecek. Bir paper hazırlayacaksınız.
+
+10
+00:09:25,484 --> 00:09:38,484
+Bu paper direkt başka bir hocayla, başka bir derste, başka bir proje ile olamaz.
+
+11
+00:09:39,796 --> 00:09:48,936
+Tamamen bu derste benimle yapacağınız bir paper olacak. Güzel bir şey olursa bir yerlere göndeririz.
+
+12
+00:10:00,692 --> 00:10:20,351
+Bu dersin videoları var. Şu anki güncel videoları şu anda internette yok. Artık güncel videolarını kendi öğrencilerine ayarlıyorlar. Fakat YouTube'da eski videoları var.
+
+13
+00:10:26,899 --> 00:10:33,779
+Takip etmenizi tavsiye ederim. Ben baştan sona iki kere dinlemiştim yani.
+
+14
+00:10:36,679 --> 00:10:46,259
+Tabi dersin slide'ları zaman içinde değişiyor. Birebir aynı değil ama sanırım şu anda da yine %70 aynıdır.
+
+15
+00:10:48,720 --> 00:10:50,679
+Biz de zaten burada yapacağız.
+
+16
+00:10:52,620 --> 00:10:53,899
+Buradaki Schedule...
+
+17
+00:10:59,988 --> 00:11:16,548
+Bu kısmı. Burada zaten slide'lar var. Schedule'da. Slide'ların yanında çeşitli materyaller var. İşte okuyabileceğiniz.
+
+18
+00:11:21,427 --> 00:11:34,627
+Şurada bir Useful Notes dediği yerde sanırım şey olması lazım. Çeşitli yazılar var.
+
+19
+00:11:43,316 --> 00:11:48,596
+Şu şekilde gayet güzel anlatıyorlar.
+
+20
+00:11:50,916 --> 00:11:53,495
+Yani muhteşem bir kaynak.
+
+21
+00:11:56,776 --> 00:12:01,936
+Bizim de tabii böyle bir kaynağı hazırlamak inanılmaz bir iş gücü istiyor.
+
+22
+00:12:06,899 --> 00:12:15,740
+Yani o insan listesine bakarsanız burada bir yerde var herhalde.
+
+23
+00:12:24,851 --> 00:12:27,511
+Yani bu dersi hazırlayan böyle bir liste.
+
+24
+00:12:38,964 --> 00:12:51,604
+Yani dört tane hoca gözüküyor. Bu hocalar zaman içinde değişiyor. Yani yıllardır olan bir slide bu. Bir yılda da.
+
+25
+00:12:55,379 --> 00:13:22,079
+Andrew Carpati ile falan başlıyorlar herhalde. Ciddi bir iş var yani böyle bir şeyin hazırlanmasında. Biz de bunların işlerinin üzerine konmaya çalışıyoruz açıkçası. Ben öyle yapmaya çalışıyorum. Çok güzel slide'lar yıldan yıla değiştiriyorlar, takip ediyorlar.
+
+26
+00:13:23,796 --> 00:13:26,475
+Biz de bunları kullanmaya çalışalım diyorum.
+
+27
+00:13:28,956 --> 00:13:34,836
+Şimdi geçen ilk hafta bu Introduction'ı yapmıştık.
+
+28
+00:13:36,135 --> 00:13:41,596
+Buraya artık geçelim. Biraz derse başlayalım. Zaten bir hafta da yapmadık.
+
+29
+00:13:42,655 --> 00:13:48,676
+Şu Lecture 2 Image Classification with Linear Classifiers slide'larına bakalım.
+
+30
+00:14:35,508 --> 00:14:40,128
+Neyi download edemeyeceğim. Save link edesem.
+
+31
+00:15:19,379 --> 00:15:26,379
+Böyle daha iyi. Evet şimdi bunu paylaşmam lazım.
+
+32
+00:17:30,420 --> 00:17:39,420
+Şimdi burada linear sınıflayıcılarla imge sınıflamaya bakılacak. Bunları geçiyoruz. Bize uymuyor.
+
+33
+00:17:44,420 --> 00:17:52,420
+Image, imge sınıflama amaç şu. Bir resminiz var.
+
+34
+00:17:55,955 --> 00:18:00,435
+Olası etiketler var. Labellar.
+
+35
+00:18:00,955 --> 00:18:04,395
+İşte köpek, kedi, truck, plane gibi.
+
+36
+00:18:07,215 --> 00:18:11,395
+Resmi vereceksiniz. Size bu label'lardan birini döndürecek.
+
+37
+00:18:14,644 --> 00:18:32,764
+Tabi bu aslında zor bir şey. Neden? Resim dediğiniz şey aslında bir matriz, sayı matrizi. Dolayısıyla bilgisayar böyle bir sayılar görüyor esasen. Bu sayılardan kediye nasıl geçecek?
+
+38
+00:18:38,740 --> 00:18:53,119
+Sayılar en küçük bir değişimde inanılmaz değişiyor. Yani kamera açısıyla tüm piksel değerleri değişiyor. Aynı resim bile olsa, aynı kediye bile baksanız.
+
+39
+00:18:55,619 --> 00:18:59,619
+Işıklandırmayla inanılmaz şekilde tüm pikseller değişiyor.
+
+40
+00:19:06,067 --> 00:19:30,728
+Nesne ile karışıyor. Birçok resimde nesne örtülü oluyor. Önünde başka bir şeyler oluyor. Nesnenin sadece küçük bir kısmı görünebiliyor. Birçok nesne deforme olabiliyor.
+
+41
+00:19:37,203 --> 00:19:42,364
+Bu deformasyonlara rağmen nasıl bulunabilir, sınıflanabilir?
+
+42
+00:19:47,163 --> 00:19:54,403
+Aynı sınıfın kendi içerisinde değişiklikler olabiliyor.
+
+43
+00:20:04,756 --> 00:20:23,556
+Resme, sadece nesnenin kendisini tanımak isterseniz bazen yanıltıcı oluyor. Yani nesnenin çevresindeki o konteksi de almanız gerekiyor.
+
+44
+00:20:25,556 --> 00:20:29,596
+Yani sadece nesneyi tanımanız yetmeyebiliyor.
+
+45
+00:20:33,332 --> 00:20:45,332
+Tabi modern bilgisayar yani Computer Vision algoritmaları bunları başarıyor.
+
+46
+00:20:54,036 --> 00:21:16,076
+Dolayısıyla bir sınıflayıcı yazacaksınız. Python'da Classify Image imgeyi vereceksiniz. Size bir Class Label döndürecek. Bu arası nasıl olacak? Bir kod yazmanız lazım. Bunu başarması lazım. Böyle hardcoded algoritmalar çok başarılı değil.
+
+47
+00:21:20,692 --> 00:21:37,092
+Derin öğrenme öncesinde birçok farklı şey denendi. Mesela işte imgedeki kenarları bulalım, köşeleri bulalım vs. vs. Ama çok başarılı olmuyor onlar.
+
+48
+00:21:43,092 --> 00:21:47,092
+Onun yerine data-driven bir yaklaşım.
+
+49
+00:21:48,531 --> 00:22:02,652
+ile makinenin kendisinin öğrenmesini sağlamaya çalışacağız. Bunun için Data Driven Approach'ta ne yapıyoruz? Bir veri seti topluyoruz.
+
+50
+00:22:04,632 --> 00:22:14,211
+Sınıflamak istediğimiz imgeler ve onların etiketleri olacak. Sonra bir sınıflayıcıyı bu veri seti ile eğitiyoruz.
+
+51
+00:22:15,635 --> 00:22:27,215
+Makine öğrenmesi algoritmalarıyla. Sonra sınıflayıcıyı yeni imgelerde değerlendiriyoruz, test ediyoruz ne kadar başarılı gibi.
+
+52
+00:22:30,735 --> 00:22:34,195
+Artık böyle gidiyor. Yani başarılı olan yöntem bu.
+
+53
+00:22:36,756 --> 00:22:47,215
+Şimdi bu sınıflayıcılar içerisinde, makine öğrenmesi sınıflayıcılar içerisinde en basit bir sınıflayıcı, en yakın komşu sınıflayıcısı.
+
+54
+00:22:49,336 --> 00:22:59,476
+Bu sınıflayıcı ne yapıyor? Eğitim aşamasında her şeyi hafızasına alıyor, ezberliyor.
+
+55
+00:23:03,443 --> 00:23:22,423
+Hafızasındaki bu nesnelere en yakın öklüt uzaklığı olabilir. Bir uzaklığı siz seçiyorsunuz. En yakın uzaklığı sahip nesneyi, nearest neighbor'ı döndürüyor.
+
+56
+00:23:31,827 --> 00:23:35,148
+Burada tabi farklı Distance Metrikleri olabilir.
+
+57
+00:23:37,467 --> 00:23:38,988
+Mesela
+
+58
+00:23:41,307 --> 00:23:44,108
+Burada ne yapmış? Test ile
+
+59
+00:23:44,628 --> 00:23:47,947
+Training İmajını birbirinden çıkarmış.
+
+60
+00:23:48,467 --> 00:23:51,788
+Sonra Absolute Value'ları ne alıyor? Pixel, Pixel
+
+61
+00:23:55,387 --> 00:23:58,708
+Öyle bir şarkı mı vardı ya? Pixel, Pixel
+
+62
+00:23:59,796 --> 00:24:08,296
+Sonra bunları topluyor. Mesela buna L1 Distance deniliyor. L1 uzaklığı.
+
+63
+00:24:16,051 --> 00:24:17,871
+Yazması da çok da zor değil.
+
+64
+00:24:22,871 --> 00:24:27,051
+Şimdi Nearest Neighbor Classifier'da
+
+65
+00:24:28,672 --> 00:24:33,151
+en tane örneğiniz olsun.
+
+66
+00:24:35,291 --> 00:24:37,311
+Eğitim aşaması inanılmaz basit.
+
+67
+00:24:38,692 --> 00:24:40,571
+Her şeyi hafızasına alıyor yani.
+
+68
+00:24:42,411 --> 00:24:43,911
+Dolayısıyla eğitim
+
+69
+00:24:44,243 --> 00:24:47,523
+O bir, eğitim yok esasen.
+
+70
+00:24:49,663 --> 00:24:55,323
+Yani imgelerinizi bir dosyaya eğer koyduysanız eğitimi yapmışsınız.
+
+71
+00:25:01,076 --> 00:25:05,536
+Eğitim imgeleriniz bir dizinde duruyorsa al sana eğitim.
+
+72
+00:25:06,836 --> 00:25:09,175
+Ama şey aşaması ne?
+
+73
+00:25:10,396 --> 00:25:11,615
+Tahmin aşaması.
+
+74
+00:25:12,516 --> 00:25:19,316
+Her bir imge ile test imgenizi karşılaştırmanız gerekiyor.
+
+75
+00:25:20,596 --> 00:25:21,896
+Dolayısıyla ON.
+
+76
+00:25:24,376 --> 00:25:26,076
+Bu da...
+
+77
+00:25:27,251 --> 00:25:35,392
+Tahmin edersiniz ki sıkıntılı. Yani diyelim ki 1 milyon tane imge ile eğitmek istiyorsunuz.
+
+78
+00:25:37,172 --> 00:25:43,672
+1 milyon tane imge ile karşılaştırıp bir cevap verebilecek. Son derece yavaş cevap verecek.
+
+79
+00:25:44,451 --> 00:25:48,711
+Bunun tam tersini istiyoruz. Yani eğitim yavaş olsun, okeyiz bununla.
+
+80
+00:25:49,811 --> 00:26:11,031
+Ama test zamanında hızlı çalışmasını istiyoruz. Çünkü production sistemlere bunları koyduğumuz zaman, bir resim geldiği zaman hemen cevap verebilmesini istiyoruz. Eğitemi yavaş yavaş önceden bir yerde yapabiliriz. Dolayısıyla nearest neighbor sınıflayıcılar bu bakımdan sıkıntılı.
+
+81
+00:26:17,844 --> 00:26:35,864
+Nearest Neighbor sınıflayıcıların da iyileştirilmeleri mevcut. Yaklaşık Nearest Neighborlar oldukça hızlı bir şekilde alınabiliyor.
+
+82
+00:26:42,932 --> 00:26:51,132
+Böyle bir algoritması var, sanırım kodlanmış hali de var.
+
+83
+00:26:51,132 --> 00:26:59,132
+Şu sıralarda da çok popüler bu LLM'ler için vektörlerin birbirine uzaklığını bulmak gerekiyor.
+
+84
+00:26:59,132 --> 00:27:07,132
+O da bir nevi ne-near-is-near araması.
+
+85
+00:27:07,132 --> 00:27:09,932
+Gayet hızlı yapılıyor.
+
+86
+00:27:12,211 --> 00:27:14,092
+Ama...
+
+87
+00:27:23,796 --> 00:27:24,816
+İdeal değil.
+
+88
+00:27:28,916 --> 00:27:33,816
+One Nearest Neighbor, bir tane en yakın komşuya bakıyorsunuz.
+
+89
+00:27:37,956 --> 00:27:43,736
+Three Nearest Neighbor'da, K'nearest Neighbor diye geçiyor bu.
+
+90
+00:27:44,576 --> 00:27:47,816
+Three Nearest Neighbor'da, üç tane en yakın komşuya bakıp,
+
+91
+00:27:48,819 --> 00:28:04,819
+Onların majority vote'uyla yani 3 tanesini oylama yaptırıyorsunuz. 5 tanesinin oylamasını yaptırıyorsunuz.
+
+92
+00:28:15,667 --> 00:28:27,687
+Sınıflarsanız, diyelim ki k eşittir 1 ile bu sınıflama uzayı, diyelim ki bu nesneler iki boyutlu.
+
+93
+00:28:28,907 --> 00:28:38,187
+İki boyutlu nesneler var burada. Yani bir nesnenin iki tane bileşeni var. Her nesneyi bir vektörle göstermişsiniz.
+
+94
+00:28:46,516 --> 00:28:50,456
+Böyle kenarları oluşuyor. Sınıflama sınırları.
+
+95
+00:28:54,355 --> 00:29:10,675
+O sınıflama sınırlarını belirlediğiniz zaman ne olmuş oluyor? Sınıflayıcınız hazır olmuş oluyor. Yani aslında K.N.E.R.S. Neighbor'ın yaptığı da bu olmuş oluyor.
+
+96
+00:29:23,988 --> 00:29:32,728
+Farklı metrikler kullanılabiliyor demiştim. L1 Distance'ı az önce gördük. L2 bizim bildiğimiz Öklit uzaklığı.
+
+97
+00:29:32,728 --> 00:29:44,288
+İşte birbirinden bileşen bileşen çıkarıyorsunuz. Her bileşenin karesini alıyorsunuz. Sonra onların hepsini topluyorsunuz. Kare kökünü alıyorsunuz. Öklit uzaklığı.
+
+98
+00:29:45,827 --> 00:29:47,728
+Az önceki Manhattan Distance'dı.
+
+99
+00:29:53,619 --> 00:30:14,279
+Şimdi geçen yıllarda her şeye bakıyordum. Çok ayrıntılı olarak ne yazmışlar ne etmişler. Bu yıl biraz hızlıca geçeceğim. Ayrıntıları öğrenmeyi size bırakacağım. Siz kendiniz tekrar bir üzerinden gidersiniz. Anlamadığınız terimler ne şeyler olursa araştırmanızı yaparsınız.
+
+100
+00:30:23,859 --> 00:30:30,859
+Burada farklı metriklerin sınıflamaya olan etkisini karşılaştırmış.
+
+101
+00:30:30,859 --> 00:30:37,859
+Mesela Manhattan Distance ile yaptığında uzak sınıflamayı...
+
+102
+00:30:37,859 --> 00:30:40,859
+Şu ekranı biraz büyüteyim ben de tam göreyim.
+
+103
+00:30:45,299 --> 00:31:05,940
+Mesela Manhattan Distance'da sınıflama boundaryleri sadece 8 farklı boundary var dikkat ederseniz. Dik, yatay ya da çapraz. Yani 45 derecelik açıyla çapraz. Hep böyle.
+
+104
+00:31:13,332 --> 00:31:17,312
+Nüanslı şeylere izin vermiyor.
+
+105
+00:31:19,892 --> 00:31:22,032
+Sınırlara izin vermiyor.
+
+106
+00:31:23,112 --> 00:31:27,852
+Euclid Distance'da biraz daha böyle farklı açılarla distanslar oluşuyor.
+
+107
+00:31:29,811 --> 00:31:42,131
+Yani Distance önemli. Hangi Distance metreyi kullanacağınız önemli. Aslında bu gerek Euclid Distance'ı gerek Manhattan Distance'ı aslında çok kullanılmıyor yeni yöntemlerde. Bakacağız onlara.
+
+108
+00:31:45,844 --> 00:31:54,164
+Burada demolar falan yapmışlar. Kendiniz bakabiliyorsunuz. Bu linkten bakabilirsiniz siz de.
+
+109
+00:31:58,228 --> 00:32:19,728
+Şimdi, tabii bu işlerde çalışırken hiperparametreler var. Hiperparametreleri seçmek gerekiyor. Mesela, k-nearest neighborhood kullanacaksınız. K en yakın komşuyu.
+
+110
+00:32:23,092 --> 00:32:38,832
+K'yı ne almanız lazım? 1 mi, 3 mi, 5 mi, 7 mi? Veya işte distance metrik olarak ne kullanacaksınız? Manhattan distance mı? Oakley distance mı? Bu tür şeylere hiperparametre deniliyor.
+
+111
+00:32:50,259 --> 00:33:00,259
+problemi veri setine bağlı oluyor. Bazı problemlerde bazıları iyi çalışıyor. Bazı verilerde bazıları.
+
+112
+00:33:00,259 --> 00:33:12,599
+Dolayısıyla eğer spesifik bir problemle çalışıyorsanız bunları bir deneyip görmek lazım. Hangisi daha iyi çalışıyor.
+
+113
+00:33:16,627 --> 00:33:18,627
+Denemeyi nasıl yapacağız?
+
+114
+00:33:25,076 --> 00:33:35,395
+Bir fikir, eğitim setindeki en iyi sonucu veren parametreleri bulmak.
+
+115
+00:33:35,395 --> 00:33:39,395
+Burada tabii...
+
+116
+00:33:45,364 --> 00:33:52,443
+Bu iyi bir fikir değil. Çünkü K eşittir bir direkt süper çalışacaktır.
+
+117
+00:33:54,403 --> 00:34:05,364
+Train ve teste sadece bölürseniz, bölerseniz, bölürseniz, bölerseniz sanırım, bölerseniz...
+
+118
+00:34:10,260 --> 00:34:26,699
+Yeni bir veride nasıl başarı gösterecek göremiyorsunuz. Tavsiye edilen standart şu. Verinizi 3'e bölüyorsunuz. Eğitim seti, test seti ve validation seti.
+
+119
+00:34:30,699 --> 00:34:35,820
+Validation setini hiperparametreler için kullanıyorsunuz.
+
+120
+00:34:55,251 --> 00:35:09,851
+Validation setini değiştirip eğitim yapıyorsunuz. Sonuçla bakıyorsunuz. En son elde ettiğiniz sonucu test setinde karşılaştırıyorsunuz.
+
+121
+00:35:15,443 --> 00:35:16,235
+Ö
+
+122
+00:35:20,851 --> 00:35:25,531
+Tabi burada bir de Cross Validation işin içine giriyor.
+
+123
+00:35:26,411 --> 00:35:35,631
+Şimdi özellikle veriniz çok da fazla değilse, yani küçük veri setlerinde kullanılıyor bu.
+
+124
+00:35:36,451 --> 00:35:41,591
+Deep Learning'de artık çok fazla veri kullanıldığı için pek kullanılmıyor.
+
+125
+00:35:42,231 --> 00:35:44,072
+Çünkü zamanı artırıyor.
+
+126
+00:35:44,351 --> 00:35:47,711
+Burada fikir şu, veriyi böyle mesela
+
+127
+00:35:47,987 --> 00:36:14,207
+K-Fold Cross Validation diye geçiyor bu. 5-Fold Cross Validation yaparsanız 5'e böleceksiniz. Test setiniz ayrı olacak. Bunların her fold'tan bir tanesini Validation seti yapıp geri kalanı training set yapıyorsunuz.
+
+128
+00:36:15,764 --> 00:36:33,724
+Her bir defasında. Diyelim ki 5 kere deneyi tekrar ediyorsunuz. Deney sonucunu da ortalamayla, minimumla vs. ile yani bu 5'in istatistikleriyle söylüyorsunuz.
+
+129
+00:36:39,284 --> 00:36:54,864
+Cifar 10 çok bilinen, bu işlere başlayamak için kullanabileceğiniz bir veri seti. İçinde 10 tane sınıf var. 50.000 eğitim, 10.000 tanesi de test için ayrılmış.
+
+130
+00:36:55,443 --> 00:37:03,443
+10 sınıf işte burada gördüğünüz sınıflar. Uçak, otomobil, kuş.
+
+131
+00:37:04,244 --> 00:37:06,804
+Kedi vs. vs.
+
+132
+00:37:11,507 --> 00:37:12,683
+Öö
+
+133
+00:37:21,588 --> 00:37:28,588
+Mesela bunun için hiperparametre nasıl seçeriz? Cifar 10'da onunla ilgili bir bakmışlar.
+
+134
+00:37:29,588 --> 00:37:37,588
+K üzerinde Cross Validation yapmışlar. Cross Validation Accuracy'yi çizmişler.
+
+135
+00:37:38,588 --> 00:37:46,588
+K ne olur gibi. K'nın 7 gibi iyi sonuçlar elde ettiklerini görmüşler.
+
+136
+00:38:00,467 --> 00:38:01,324
+Ö
+
+137
+00:38:23,251 --> 00:38:39,251
+Şimdi, K-Nearest Neighbor'da veya başka sınıflayıcılarda direkt piksel uzaklıkları kullanılmıyor. Neden? Bunlar çok hızlı değişiyor. Diyelim ki bu orijinal görüntü.
+
+138
+00:38:48,947 --> 00:38:52,527
+En soldakine aynı piksel uzaklığına sahip.
+
+139
+00:38:54,327 --> 00:39:02,507
+Şimdi, mesela Shifted One Pixel, neredeyse hiçbir şey değişmemiş demek bu. Sadece bir piksel kaymış.
+
+140
+00:39:03,547 --> 00:39:09,167
+Tinted'de üzerine bir şey atmışlar sanırım.
+
+141
+00:39:11,987 --> 00:39:16,087
+Bir katman koymuşlar, renk katmanı.
+
+142
+00:39:16,980 --> 00:39:35,579
+Öklü yudutta da belirli yerlerini bu şekilde ağzını gözünü kapatmışlar. Hepsi de aynı uzaklık gibi gözüküyor ama algı olarak baktığımızda mesela şu çok farklı geliyor bana değil mi?
+
+143
+00:39:37,720 --> 00:39:43,579
+Yani algı o piksel uzaklığına yansımıyor.
+
+144
+00:39:48,436 --> 00:39:49,155
+Evet.
+
+145
+00:39:54,612 --> 00:40:02,811
+Burada genel bir özet vermiş, k-nearest-nebers üzerinden. Bu genel yaklaşım aslında geçerli bir yaklaşım.
+
+146
+00:40:06,652 --> 00:40:19,931
+Validation set ile hiperparametreleri bulun. Sonra da hiperparametreleri de en iyi sonuç veren
+
+147
+00:40:21,268 --> 00:40:37,367
+Eğitim sonucu veren modeliniz üzerinde test setinizi en son bir kere çalıştırıp başarıyı söyleyin.
+
+148
+00:40:45,396 --> 00:40:51,536
+Şimdi devam edelim. Linear sınıflayıcılara bakacağız.
+
+149
+00:40:55,123 --> 00:41:11,863
+Yani Kani Rissneber çok da kullanılmıyor dediğimiz gibi. Linear sınıflayıcılarla başlayacağız. Linear sınıflayıcıların üzerine bina ede ede derin modellere kadar gideceğiz.
+
+150
+00:41:11,863 --> 00:41:14,663
+Burada
+
+151
+00:41:18,804 --> 00:41:26,804
+Şöyle bir yaklaşım istiyoruz. Girdiğim gemizi bir fonksiyona verelim. Girdiğim gemiz x olsun.
+
+152
+00:41:26,804 --> 00:41:33,064
+Ve bir kısım parametreler olsun elimizde. Bu parametreler fonksiyonun parametreleri.
+
+153
+00:41:34,743 --> 00:41:40,804
+Bu fonksiyon bize bu sınıfların hangisi olduğunu söylesin.
+
+154
+00:41:44,115 --> 00:42:06,315
+Linear Sınıflayıcılarda, fonksiyon direk parametre bir matris, parametre matrisi ile girdi imgesinin matris çarpımına sokuyorsunuz. Matris çarpımları biliyorsunuz lineardir. Dolayısıyla buna Linear Sınıflayıcı diyor.
+
+155
+00:42:15,219 --> 00:42:25,459
+Burada tabi hızlı ama hızlı bir işlem. Yani prosesörler bu matiz çarpımlarını çok hızlı yapabiliyorlar.
+
+156
+00:42:25,459 --> 00:42:33,219
+Boyutları güzelce ayarlamanız lazım. Mesela imgeniz 32'ye 32'ye 3 olsun.
+
+157
+00:42:33,219 --> 00:42:41,067
+Renkli bir imge olduğu için burası 3. Toplamda 3072 sayı eder.
+
+158
+00:42:41,876 --> 00:42:47,436
+Onu buraya koyduk.
+
+159
+00:42:47,716 --> 00:42:52,456
+3072'ye birlik bir kolon matrisi.
+
+160
+00:42:52,456 --> 00:42:57,896
+Yani 3072 neyi var?
+
+161
+00:42:59,716 --> 00:43:02,235
+Satırı var. Tek bir sütunu var.
+
+162
+00:43:05,619 --> 00:43:18,659
+Matrisin tabii matris çarpımı olabilmesi için onunla uyumlu olması lazım. Dolayısıyla matrisin 3072 neyi olması lazım? Sütunu olması lazım.
+
+163
+00:43:22,179 --> 00:43:28,880
+Sonuçta sınıf skorları verecek bize. Yani 10 tane sayı istiyoruz.
+
+164
+00:43:29,423 --> 00:43:33,224
+Her bir sarıyı, her bir sınıfla ilgili bize bir skor verecek.
+
+165
+00:43:34,083 --> 00:43:39,764
+Yani o sınıfın işte olasılığı olabilir veya benzer.
+
+166
+00:43:39,764 --> 00:43:48,884
+Direkt olasılığı hemen vermeyecek ama o sınıfın gücünü gösteren bir skor vermesi lazım.
+
+167
+00:43:49,063 --> 00:43:51,103
+Dolayısıyla 10 tane sayı istiyoruz.
+
+168
+00:43:53,184 --> 00:43:55,423
+10 sayı istiyoruz. O zaman
+
+169
+00:43:56,275 --> 00:44:09,695
+Matrisimizin 10 tane neyi olması gerekiyor? Satır olması gerekiyor. Dolayısıyla matris boyutları girdi ve çıktı boyutlarıyla belirleniyor sizin için.
+
+170
+00:44:15,476 --> 00:44:16,956
+Pardon.
+
+171
+00:44:18,396 --> 00:44:21,816
+Bir de beyaz ekleniyor.
+
+172
+00:44:23,296 --> 00:44:27,496
+Bunun boyutu da yine çıktığa bağlı olarak belirlenmek zorunda.
+
+173
+00:44:27,496 --> 00:44:36,596
+Ona birlik bir çıktığı ekliyorsanız, bekliyorsanız, istiyorsanız, beyazın da yine 10.
+
+174
+00:44:37,172 --> 00:44:48,391
+Çarpı 1 olması gerekiyor. Toplama var çünkü burada. Toplama yapacaksınız. Matisleri bileşen bileşen toplarken ona 1 olması gerekiyor.
+
+175
+00:44:50,371 --> 00:45:02,172
+Beyaz nereden devreye giriyor? Şu anda bilmiyorum. Burada göstermeyecek mi herhalde veya gösterecek mi bilmiyorum ama beyazı koymazsanız bu bir...
+
+176
+00:45:03,092 --> 00:45:22,291
+Doğru olarak düşünün. Lineer bir doğrusal sınıflayıcı, lineer sınıflayıcı doğrusal. Eğer bir yaz koymazsanız tüm doğrular merkezden geçer. Merkez dışında da doğru olabilsin istiyorsanız bir yaz koymanız lazım.
+
+177
+00:45:29,844 --> 00:45:36,243
+Linear sınıflayıcıları böyle katman katman koyarak nöral networkler elde ediliyor.
+
+178
+00:45:40,243 --> 00:45:48,224
+Bu linear sınıflayıcılar büyük networklerin en sonlarında falan hala kullanılıyor.
+
+179
+00:45:52,179 --> 00:46:14,359
+Cifar onu hatırlatmış. Şimdi nasıl yapacağız? Biraz daha ayrıntılı göreceğiz. Bir imkut imgemiz var. Giriş imgemiz var. Basit olsun diye bunu 4 pikselden oluşuyor varsayalım. Görselleştirmek istiyoruz yani.
+
+180
+00:46:15,027 --> 00:46:25,148
+Şimdi bunu bir vektöre çevireceğiz bir kere. Dediğimiz gibi tek sütunlu demiştik. Bu ne demek? Vektör demek.
+
+181
+00:46:25,148 --> 00:46:41,148
+Burada işte 56231 en üstteki ikisini buraya yerleştirmiş gibi platin yapıyoruz. Sonra ne demiştik?
+
+182
+00:46:41,652 --> 00:46:57,871
+Bir matrislerimiz olacak. Matrisimiz W matrisimiz olacak. Boyutları burada üç tane çıktı istemiş. Yani basitleştirmiş. Kedi, köpek, gemi. Bunların skorlarını istiyoruz.
+
+183
+00:46:57,871 --> 00:47:04,251
+Bir weight matrisimiz olacak. Bu istediğimiz boyuta göre.
+
+184
+00:47:05,172 --> 00:47:17,791
+Ne olması lazım? 3 tane istiyorsak 3 satır olacak. Girişimiz 4. 4 sütun. Bir de biraz ekledik. Ne oldu? Bize skorları verdi.
+
+185
+00:47:19,931 --> 00:47:23,692
+Yani linear fonksiyon bu.
+
+186
+00:47:27,123 --> 00:47:35,724
+Bu linear sınıflayıcıyı farklı şekilde yorumlayabiliriz.
+
+187
+00:47:35,724 --> 00:47:49,724
+Mesela bir yorum şu olabilir. Matrisin her satırını bir küçük matrisi ayırsak.
+
+188
+00:47:52,371 --> 00:48:04,251
+Ve bir yazı da böyle ayırsak, yani üç sınıfa bölüyorduk ya, üç sınıfın her biri için bir matriz, bir de bir yaz var gibi düşünebiliriz.
+
+189
+00:48:05,551 --> 00:48:15,231
+Matrizle input image ne yapılıyor? Bileşen bileşen çarpılıyor. Sonra bir yaz toplanılıyor, bir skor elde ediliyor.
+
+190
+00:48:19,987 --> 00:48:23,907
+İlgili satır diyelim.
+
+191
+00:48:25,427 --> 00:48:32,027
+Köpeğin satırı, yani matristeki köpeğin satırı, kuşun satırı neyse çarpılıyor.
+
+192
+00:48:33,447 --> 00:48:37,667
+Köpeğin bir yazı, kuşun bir yazı, ayrı ayrı bir yazları var.
+
+193
+00:48:37,807 --> 00:48:38,927
+Onunla toplanılıyor.
+
+194
+00:48:39,967 --> 00:48:41,327
+Onun skoru elde ediliyor.
+
+195
+00:48:43,427 --> 00:48:44,427
+Bu
+
+196
+00:48:45,811 --> 00:48:54,692
+Bu satırları CIFAR 10 üzerinde en iyi sonuç veren ağırlıkları bulmuşlar ve görselleştirmişler.
+
+197
+00:48:55,871 --> 00:48:56,991
+Güzel bir çalışma.
+
+198
+00:48:57,771 --> 00:49:00,631
+Mesela şunu fark etmişler.
+
+199
+00:49:01,211 --> 00:49:10,631
+En iyi sonucu veren matris, ağırlık matrisi giriş imgelerine benziyor.
+
+200
+00:49:12,307 --> 00:49:39,448
+Mesela şu arabaya bakın. Şöyle bir araba silüeti görünüyor orada değil mi? Mesela bu şeye bakın. Ata bir at var gibi. Ama atın kafası iki kafalı bir at gibi yani. Çünkü resimlerin bir kısmında at kafası bu yönde, bir kısmında at kafası bu yönde gibi. Muhtemelen.
+
+201
+00:49:40,371 --> 00:50:00,551
+Dolayısıyla şu W'nun en iyi sonuç veren versiyonu giriş inge sınıfına en yakın sayılar gibi duruyor. Bu bir yorum.
+
+202
+00:50:01,076 --> 00:50:23,335
+Görsel Viewpoint demiş, Visual Viewpoint bir yorumlamış oldu. Yani Linear Sınıflayıcı ne yapıyor aslında? Elimizdeki matrisle giriş imgesinin benzerliğini göz önünde bulunduruyor. Buna göre skorlar veriyor.
+
+203
+00:50:28,724 --> 00:50:32,184
+Bir başka yorum olarak da Geometric Viewpoint demiş.
+
+204
+00:50:33,444 --> 00:50:39,804
+Bu lineer sınıflayıcılar hiperdüzlemler oluşturuyor.
+
+205
+00:50:39,804 --> 00:50:50,004
+Yani hiperdüzlemler, uzayı ikiye bölen doğrular gibi ama çok boyutlu doğrular bunlar.
+
+206
+00:50:50,804 --> 00:50:52,324
+Dolayısıyla düzlem diyorum.
+
+207
+00:50:54,579 --> 00:51:13,019
+Araba sınıflayıcını en iyi böyle, arabaları en iyi sınıflayan matrisi bulmuşlar. O matris uzayı bir nevi ne yapıyor? O matris ve B bir doğru tanımlıyor. O doğru uzayı ikiye bölüyor.
+
+208
+00:51:20,851 --> 00:51:35,372
+Uçak sınıflayıcısı ikiye bölüyor. İşte geyik sınıflayıcısı ikiye bölüyor. Dolayısıyla böyle lineer sınıflayıcılar uzayı bu şekilde ikiye bölen boundary'ler, çizgiler veriyorlar bize.
+
+209
+00:51:38,132 --> 00:51:44,291
+Uzayın bir tarafındakilere araba diyor, diğer tarafındakilere araba değil diyor.
+
+210
+00:51:49,427 --> 00:52:03,407
+Linear sınıflayıcılar, böyle geometrik açıdan baktığınızda, geometrik açıdan bazı sınıfların linear sınıflayıcılar ile sınıflanamayacağını anlıyorsunuz.
+
+211
+00:52:05,548 --> 00:52:16,028
+Mesela diyelim ki şöyle bir sınıf var. Burada kırmızılar ayrı bir sınıf, maviler ayrı bir sınıf.
+
+212
+00:52:16,692 --> 00:52:19,012
+Sınıf dağılımı bu şekilde diyelim ki.
+
+213
+00:52:20,012 --> 00:52:24,271
+Şimdi burada nasıl bir çizgi çizerseniz çizin.
+
+214
+00:52:33,748 --> 00:52:53,748
+Böyle çizgi çizdiniz. Mavilerin bir kısmı burada kaldı, bir kısmı burada kaldı. Şöyle bir çizgi çizdiniz. Yine kırmızıların bir kısmı orada kaldı, bir kısmı burada kaldı. Yani sınıflamayı yapan tek bir doğru çizemiyorsunuz.
+
+215
+00:52:57,684 --> 00:53:16,384
+Bu yine bir simit gibi bir şey. Yine böyle çizmeye çalıştınız. Yani uzay öyle olmuş ki lineer sınıflamaya uygun değil. Burada farklı modlar var.
+
+216
+00:53:24,563 --> 00:53:33,243
+Yani kırmızılar ve maviler böyle çeşitli bölgelere, birden fazla bölgede dağılmış durumda maviler.
+
+217
+00:53:34,023 --> 00:53:43,643
+Dolayısıyla tek bir bölmeyle, aslında şuna biraz benziyor, bölemiyorsunuz uzayı.
+
+218
+00:53:51,699 --> 00:54:06,799
+Şimdi, hep iyi bir W'yu bulursak, yani iyi W'nun resmini çizmişlerdi vs. Buradaki trik, o iyi W'yu bulmak. İyi ağırlığı bulmak.
+
+219
+00:54:13,652 --> 00:54:17,452
+İyi ağırlığı nasıl bulacağız?
+
+220
+00:54:21,452 --> 00:54:25,771
+Şöyle bir yaklaşım, bir kayıp fonksiyonu tanımlayalım.
+
+221
+00:54:27,912 --> 00:54:33,112
+Bu elde edilen skorların ne kadar kötü olduğunu bize versin.
+
+222
+00:54:34,791 --> 00:54:37,711
+Ve optimizasyon yapalım.
+
+223
+00:54:38,900 --> 00:54:42,900
+bu loss fonksiyonunu minimize edecek şekilde
+
+224
+00:54:42,900 --> 00:54:46,900
+w'nun içeriğini değiştireceğiz.
+
+225
+00:54:46,900 --> 00:54:51,900
+En son loss fonksiyonunu minimize etmeye çalışacağız.
+
+226
+00:54:51,900 --> 00:54:54,900
+Bu şekilde bir optimizasyon problemine çevirelim.
+
+227
+00:54:54,900 --> 00:54:58,900
+Bu şekilde en iyi w'yu bulabiliriz.
+
+228
+00:55:00,900 --> 00:55:04,588
+Yine basit olsun diye 3 sınıfımız var.
+
+229
+00:55:09,492 --> 00:55:18,351
+Şimdi, optimizasyon için dediğimiz gibi bir loss fonksiyonuna ihtiyacımız var. O loss fonksiyonunu optimize ediyoruz.
+
+230
+00:55:24,820 --> 00:55:27,500
+Sanırım burada loss fonksiyonlarını anlatacak.
+
+231
+00:55:31,155 --> 00:55:37,195
+Şimdi, loss fonksiyonlarını, farklı loss fonksiyonları olabilir.
+
+232
+00:55:38,155 --> 00:55:44,335
+Bir veri seti üzerinden ortalamasını alıp, veri setinin loss'unu bulacağız.
+
+233
+00:55:46,036 --> 00:55:51,416
+Notasyona biraz bakalım. Veri setindeki örnekleri şu şekilde gösteriyoruz.
+
+234
+00:55:52,596 --> 00:55:58,376
+Küme içerisinde X, Y, Y, Y. X, Y giriş imgesi Y, Y.
+
+235
+00:55:58,804 --> 00:56:18,644
+Etiket. Etiket olarak bir tam sayı kullanalım. Matematik yapabilmek için. İ'yi de birden n'e kadar. Bunlar elimizdeki veri setindeki, eğitim setindeki imgelerin numaraları.
+
+236
+00:56:24,307 --> 00:56:28,188
+Sadece üç sınıf var ve her sınıftan bir tane örnek var.
+
+237
+00:56:35,148 --> 00:56:39,528
+Veri setinin losunu nasıl buluyoruz?
+
+238
+00:56:41,668 --> 00:56:46,628
+Her bir örneğin losunu alıyoruz, topluyoruz, ortalamasını alıyoruz.
+
+239
+00:56:53,972 --> 00:57:04,332
+Şimdi softmax sınıflayıcısı dediğimiz ve multinomial logistik regresyon da demişler.
+
+240
+00:57:09,372 --> 00:57:13,892
+Sınıflayıcı bir kısım skorlar veriyordu hatırlarsanız bize.
+
+241
+00:57:18,483 --> 00:57:33,123
+Yorumlamak istiyoruz. Elimizde bir şekilde olasılıklar olsun. Neden? Çünkü olasılık teorisi, kocaman bir teori var orada.
+
+242
+00:57:37,844 --> 00:57:45,564
+Matematiği çok iyi biliniyor, araştırılmış, çeşitli şekilde işe yaradığı görülmüş.
+
+243
+00:57:48,284 --> 00:57:55,864
+Dolayısıyla bu skorları olasılık olarak yorumlayabilirsek önümüzde birçok yol açılıyor.
+
+244
+00:57:59,824 --> 00:58:02,844
+Dolayısıyla olasılık olsa iyi olur.
+
+245
+00:58:03,476 --> 00:58:05,476
+Madem skorlar elde ediyoruz.
+
+246
+00:58:06,776 --> 00:58:09,816
+Ve bunları olasılığa çevirmek de çok da zor değil.
+
+247
+00:58:10,176 --> 00:58:13,856
+Diyelim ki bir giriş imgemiz var.
+
+248
+00:58:13,856 --> 00:58:18,876
+Bu giriş imgesi için sınıflayıcı 3 tane skor verdi.
+
+249
+00:58:21,396 --> 00:58:25,916
+Araba 5.1 skorlu araba dedi.
+
+250
+00:58:26,056 --> 00:58:27,656
+3.2 skorlu kedi.
+
+251
+00:58:28,307 --> 00:58:53,307
+1.7, eksi 1.7 skorla da bu bir ne dedi? Kurbağa dedi. Bu sayılar güzel ama olasılık değil. Ne yapıyoruz? Öncelikle bir kere olasılığa çevirmek istiyorsak bunları pozitif yapmamız lazım.
+
+252
+00:58:53,972 --> 00:59:18,552
+Çünkü olasılıklar her zaman sıfır ya da pozitiftir. Negatif olasılık olmaz. Burada negatif bir sayı var. Dolayısıyla bunları bir eksponensyalin üzerine alıyoruz. Hepsi ne oluyor? Pozitif hale geliyor. 3.2 bu. Eksponensyal 5.1 bu.
+
+253
+00:59:18,960 --> 00:59:44,320
+Frock, işte bilmem ne bu. Eksponansiyelin güzel özellikleri var. Türevini alması kolay. Bir sayı büyükse eksponansiyeli de büyük oluyor. Yani monoton bir fonksiyon. Dolayısıyla eksponansiyeli aldığınızda sıralama bozulmuyor. Büyük olan hala büyük kalıyor.
+
+254
+00:59:46,132 --> 01:00:13,331
+Başka bir sürü özelliği de var. Yani eksponensiyel fonksiyonunun bir sürü güzel özelliği var. İkinci dönem Generative AI dersim var. Orada bu aileyle ilgili biraz daha tartışmalar var o derste. Eksponensiyel o bakımdan rastgele bir tercih değil yani burada.
+
+255
+01:00:14,900 --> 01:00:19,380
+Şimdi hepsi pozitif olduktan sonra artık olasılığa çevirmek çok kolay.
+
+256
+01:00:20,079 --> 01:00:23,240
+Ne yapıyoruz? Normalize ediyoruz.
+
+257
+01:00:24,400 --> 01:00:29,579
+Topluyoruz. Hepsini o toplama böldüğümüz zaman ne oluyor?
+
+258
+01:00:29,579 --> 01:00:37,960
+Toplam 1 olduğu için ve hepsi de pozitif olduğu için artık bunlar olasılıktır diyebiliriz.
+
+259
+01:00:41,043 --> 01:01:00,623
+Bu işleme softmax fonksiyonu deniliyor. Burada anlatılmış. Notasyona biraz bakmaya çalışalım. Önce skorları fonksiyonumuz bize veriyor bir şekilde. S diyoruz skorlarımıza.
+
+260
+01:01:07,507 --> 01:01:14,507
+3 elemanlı bir, 3 elemanlı tek kolonlu bir matriz. Yani bir vektör.
+
+261
+01:01:14,507 --> 01:01:16,507
+S bir vektör.
+
+262
+01:01:16,507 --> 01:01:22,507
+Şimdi, o zaman şurayı okumaya çalışalım.
+
+263
+01:01:22,507 --> 01:01:29,387
+X, X, İ ise yani X, İ bu kedi resmi.
+
+264
+01:01:31,635 --> 01:01:39,795
+Şimdi, label'ın K olma olasılığı, K burada 1, 2, 3. Yani 3 sınıfımız var.
+
+265
+01:01:41,235 --> 01:01:47,076
+Yani, label değerlerimizden herhangi biri.
+
+266
+01:01:49,576 --> 01:01:58,815
+Giriş imgesi, eğer bu giriş imgesiyse, label'ın K olma olasılığı, sınıfın K olma olasılığı nedir?
+
+267
+01:01:59,923 --> 01:02:11,364
+E üzeri K'nın skoru S, K bölü tüm E üzeri S, J'lerin toplamı.
+
+268
+01:02:11,943 --> 01:02:16,244
+J, tüm J'ler için E üzeri S, J'lerin toplamı.
+
+269
+01:02:17,164 --> 01:02:21,724
+Umarım anlamışsınızdır. Yani bu formül şu işlemi anlatıyor.
+
+270
+01:02:24,692 --> 01:02:51,332
+Dolayısıyla, kedinin olasılığını nasıl buluyoruz? Kedinin skorunu, SK 3.2, 3.2'yi E üzerine alıyoruz, 24.5. 24.5'i neye bölüyoruz? Tüm bu eksponansiyellerin hepsini toplayıp,
+
+271
+01:02:51,827 --> 01:02:56,028
+Bölüyoruz ki toplam 1 olsun.
+
+272
+01:02:57,608 --> 01:03:01,388
+Buna softmax fonksiyonu diyoruz. Önemli bir fonksiyon.
+
+273
+01:03:01,388 --> 01:03:11,388
+Yani genel bir fikir. Elinizde bir şey varsa, vektör varsa, bu vektörleri...
+
+274
+01:03:12,052 --> 01:03:19,512
+Bu vektörü bir olasılık dağılımına çevirmek istiyorsanız Softmax kullanabilirsiniz. Genel olarak kullanılıyor.
+
+275
+01:03:33,811 --> 01:03:41,131
+Bunların isimleri var. Mesela şu skorlara Logit denilebiliyor.
+
+276
+01:03:41,131 --> 01:03:50,331
+Unnormalized Log Probabilities. Bunlara Unnormalized Probabilities denilebiliyor.
+
+277
+01:03:53,684 --> 01:03:58,943
+Burada neyi anlatmış?
+
+278
+01:04:01,023 --> 01:04:05,384
+Şimdi bir loss fonksiyonu tanımlayacaktık hatırlarsanız.
+
+279
+01:04:08,663 --> 01:04:19,384
+Yani maliyet fonksiyonu. Maliyet fonksiyonu olarak bu olasılığın negatifini tanımlayalım. Neden?
+
+280
+01:04:20,244 --> 01:04:30,103
+Olasılık, maliyet, kötülük ya, olasılık da iyilik aslında negatifini alıyoruz.
+
+281
+01:04:36,179 --> 01:04:55,559
+Buradan tabi eksi log'un entropide falan kullanımı var. Öyle yani yine bunlar hiçbiri. Bu seçimler rastgele değil. İleride işe yaradığımızı görüyoruz. Farklı şeylerde, formülde, şurada, burada.
+
+282
+01:05:01,492 --> 01:05:11,472
+Lego parçaları birbiriyle uyar ya, o şekilde uyacak şekilde ayarlanmış şeyler.
+
+283
+01:05:15,731 --> 01:05:25,112
+Buradan hani mesela Maximum Likelihood Estimation yapabilirsiniz falan. Böyle bir yöntem var.
+
+284
+01:05:30,099 --> 01:05:32,099
+Şimdi
+
+285
+01:05:38,099 --> 01:05:56,760
+Gerçek değeri de şu şekilde verebilirsiniz. Yani bunun gerçeğinin ne olduğunu biliyoruz eğitim sırasında. Dolayısıyla gerçek bunun sınıfını nasıl vermemiz lazım? Kediye 1, diğerlerini 0 dememiz lazım.
+
+286
+01:06:04,820 --> 01:06:30,480
+İfade etmemiz lazım ki karşılaştırabilelim. Dolayısıyla 3 sınıflı bir probleminiz varsa, her birinin label'ı aslında bir vektör. Buna one hat encoding de derler. One hat encoding de sadece bir değer birdir. Gerisi sıfırdır.
+
+287
+01:06:30,963 --> 01:06:33,263
+O bir değer ne olduğunu gösterir.
+
+288
+01:06:34,263 --> 01:06:40,884
+One-Hot Encoding'de çok kullanılan yine bir kodlama yöntemi sınıflayıcılar için.
+
+289
+01:06:42,203 --> 01:06:46,923
+Şimdi neden böyle bir şey var? One-Hot Encoding neden yapıyoruz?
+
+290
+01:06:48,303 --> 01:06:53,723
+Vektörleri artık bu şekilde kolaylıkla karşılaştırabiliriz.
+
+291
+01:06:53,823 --> 01:06:57,563
+Buradan bir loss fonksiyonu elde edebiliriz.
+
+292
+01:07:00,755 --> 01:07:06,455
+İki vektörü birbiriyle karşılaştırmanın birçok yöntemi var. Distance metrikleri var.
+
+293
+01:07:10,455 --> 01:07:16,895
+Öklüt uzaklığı alabiliriz. Manhattan uzaklığı alabiliriz veya daha güzel şeyler var.
+
+294
+01:07:20,135 --> 01:07:22,135
+Onları alabiliriz.
+
+295
+01:07:27,659 --> 01:07:28,659
+Burada...
+
+296
+01:07:27,251 --> 01:07:47,211
+İki vektörü, bu iki vektör olasılık dağılımları ya, mesela, olasılık dağılımı olduğu için bunlar, iki olasılık dağılımını karşılaştıran bir yöntem var.
+
+297
+01:07:47,211 --> 01:07:52,671
+Kulbeck-Labler-Divergence diye geçiyor.
+
+298
+01:07:54,036 --> 01:08:12,355
+D-K-L Divergence D'de K-L Coolback Diver. Çok ünlü, çok kullanılıyor. Yine Generative AI dersini alırsanız orada da çok fazla bunun üzerinde duruyoruz.
+
+299
+01:08:13,815 --> 01:08:20,395
+D-K-L 2 olasılık dağılımını karşılaştırmak için kullanılıyor.
+
+300
+01:08:21,779 --> 01:08:24,180
+Dolayısıyla DKL kullanılabilir.
+
+301
+01:08:25,139 --> 01:08:27,579
+DKL'den başlıyorsunuz.
+
+302
+01:08:27,579 --> 01:08:32,979
+İşte crossing entropy'ye geçiyorsunuz.
+
+303
+01:08:32,979 --> 01:08:39,479
+Biraz o DKL'yi masajlıyorsunuz.
+
+304
+01:08:39,619 --> 01:08:42,979
+Böyle eğiyorsunuz, büküyorsunuz.
+
+305
+01:08:43,459 --> 01:08:47,180
+Biraz şekil veriyorsunuz.
+
+306
+01:08:51,539 --> 01:08:53,539
+Daha basit
+
+307
+01:08:57,539 --> 01:08:59,539
+karşılaştırma
+
+308
+01:09:01,539 --> 01:09:07,539
+şuna ulaşıyorsunuz. Yani şunun ideal olduğuna ulaşıyorsunuz. Yanlış hatırlamıyorsam.
+
+309
+01:09:09,539 --> 01:09:13,539
+Eksi log'a ulaşıyorsunuz.
+
+310
+01:09:14,539 --> 01:09:17,452
+Yani buraya bir log giriyor.
+
+311
+01:09:18,163 --> 01:09:21,344
+Az önce eksi P vardı hatırlarsanız.
+
+312
+01:09:26,323 --> 01:09:27,123
+Hmm.
+
+313
+01:09:33,492 --> 01:09:35,492
+Log'u ben fark etmemişim.
+
+314
+01:09:38,291 --> 01:09:40,791
+Log hep bu slide'da varmış.
+
+315
+01:09:42,192 --> 01:09:46,791
+İşte o eksi log dkl'den geliyor esasen.
+
+316
+01:09:50,771 --> 01:09:52,231
+Yanlış hatırlamıyorsam.
+
+317
+01:09:59,060 --> 01:10:05,200
+Bu eksi log kullanıma krosentropi maliyet fonksiyonu da deniliyor.
+
+318
+01:10:08,280 --> 01:10:11,100
+Dolayısıyla her bir
+
+319
+01:10:17,076 --> 01:10:31,195
+Her bir örneğin, her bir ne diyeceğiz burada? Sınıfın diyeceğiz sanırım. Burada iyi, hem orada hem orada kullanılmış. Evet.
+
+320
+01:10:36,884 --> 01:10:41,203
+Sanki bu slide'ı biraz karıştırmışlar. Şu daha güzel.
+
+321
+01:10:45,863 --> 01:10:57,663
+Yani bunların logaritmasını alıyorsunuz. Eksisini alıyorsunuz. Her bir sınıf için size, her bir giriş için, her bir sınıf için bir loss vermiş oluyor.
+
+322
+01:11:04,532 --> 01:11:10,932
+Her bir giriş için olan lossları da topluyorsunuz. Ortalama loss veriyor size.
+
+323
+01:11:14,252 --> 01:11:23,992
+Bir kısım sorular vermiş. Minimum, Maximum, Soft, Max loss ne olabilir?
+
+324
+01:11:32,819 --> 01:11:49,679
+Diyelim ki başlangıçta SC'ler hemen hemen aynı. O zaman los ne olur falan gibi düşünmeniz gereken, analiz etmeniz gereken sorular var. Bunları siz de düşünün.
+
+325
+01:12:01,587 --> 01:12:14,567
+Bu şekilde kağıt kalemi alıp, biraz düşünüp bunları elde etmeye çalışın sınava hazırlık olarak. Bu tarz şeyleri soruyorum sınavda.
+
+326
+01:12:21,140 --> 01:12:23,280
+Evet.
+
+327
+01:12:27,120 --> 01:12:28,239
+Neymiş?
+
+328
+01:12:28,720 --> 01:12:31,819
+SVM Loss'u okuyun demiş.
+
+329
+01:12:33,720 --> 01:12:36,300
+Yani Softmax Loss'u gösterdi.
+
+330
+01:12:36,420 --> 01:12:39,120
+SVM Loss'u ödev olarak verdi.
+
+331
+01:12:39,920 --> 01:12:41,860
+Ben ilk videolarını izlerken
+
+332
+01:12:41,860 --> 01:12:44,399
+SVM Loss'u da anlatıyorlardı.
+
+333
+01:12:46,387 --> 01:13:10,108
+Burada da yine slide'larda da anlatıyorlar ama artık ödev olarak vermişler yani. Çünkü artık sığmıyor. 104 slide. Biz de geçelim. Böylece bunu yapmış olduk. Bu sizin için de assignment'lar biliyorsunuz. Direkt ödevler ödev.
+
+334
+01:13:11,380 --> 01:13:14,399
+Siz de Svm'de olsa artık kendiniz çalışın.
+
+335
+01:13:17,739 --> 01:13:19,600
+Bir ara verelim.
+
+336
+01:13:21,600 --> 01:13:23,280
+Bir sonraki lektire bakarız.
+
+337
+01:13:25,559 --> 01:13:28,139
+Şu anda 10'u 10 geçiyor.
+
+338
+01:13:28,500 --> 01:13:31,380
+10'u 25 geçeye kadar ara verelim arkadaşlar.
+
+339
+01:13:32,579 --> 01:13:33,659
+Bir sorunuz var mı?
+
+340
+01:13:33,979 --> 01:13:37,239
+Araya girmeden önce konuşmanız gereken bir şey var mı?
+
+341
+01:13:38,707 --> 01:13:45,768
+İlk derste yoktum, ikinci derste olmadı. O yüzden esayimutlar zaten ödev kısmını falan tam anlamadım.
+
+342
+01:13:47,287 --> 01:14:05,608
+Evet, bir daha bakalım onlara. Bu arada muhtemelen buraya geldiyseniz haberiniz vardır ama OBS'den iletişim kurmayacağım artık. Bir WhatsApp grubu kurdum.
+
+343
+01:14:06,996 --> 01:14:18,996
+Bazı öğrenciler oluyor, şeyle falan geliyor. Siz söyleyin ona. Erasmus'la falan gelen. Hatta İngilizce söyleyeyim.
+
+344
+01:14:21,496 --> 01:14:32,656
+So if you are an Erasmus student and you don't have access to the OBS system,
+
+345
+01:14:34,452 --> 01:14:44,532
+We just created a WhatsApp group for this group. Yanlışlıkla video gönderdim. Kusura bakmayın.
+
+346
+01:14:55,028 --> 01:14:57,028
+So, if you are a...
+
+347
+01:14:59,028 --> 01:15:05,028
+If you don't have access to OBS, you can use...
+
+348
+01:15:05,028 --> 01:15:11,028
+Don't worry, we will be communicating through WhatsApp.
+
+349
+01:15:14,028 --> 01:15:18,028
+And I will add WhatsApp link here.
+
+350
+01:15:43,539 --> 01:15:51,319
+WhatsApp linkini eklemeye çalışıyorum. Gerçi gereksiz bir iş muhtemelen ama.
+
+351
+01:16:08,627 --> 01:16:09,487
+Bu bir link.
+
+352
+01:16:17,460 --> 01:16:22,460
+Çet nerede? Çet burada.
+
+353
+01:16:26,452 --> 01:16:33,152
+Bu, WhatsApp grup linki vermiştim.
+
+354
+01:16:34,452 --> 01:16:39,152
+Eğer siz de bir grup yok, siz de bir grup yok.
+
+355
+01:16:40,051 --> 01:16:42,752
+Bu grup grup hakkında konuşacağız.
+
+356
+01:16:43,952 --> 01:16:46,952
+Şimdi sizin sorunuza gelince,
+
+357
+01:16:47,551 --> 01:16:49,452
+ilk...
+
+358
+01:16:55,123 --> 01:16:56,123
+Şimdi bu,
+
+359
+01:16:59,003 --> 01:17:00,644
+tekrar paylaşım yapayım.
+
+360
+01:18:49,395 --> 01:18:51,796
+Hocam şu an konuşuyor musunuz? Ses yok da.
+
+361
+01:18:55,076 --> 01:18:55,876
+Pardon.
+
+362
+01:18:59,595 --> 01:19:05,235
+Evet, yani ödevleri direkt bu web sayfasından alıyoruz.
+
+363
+01:19:09,587 --> 01:19:17,028
+Assignment'ı satıklarsanız geliyor. 3 assignment var. Her bir assignment'ın yüzdeleri var. %12, %18, %15.
+
+364
+01:19:19,268 --> 01:19:28,587
+Ve bu ödevleri, ödevlerin deadline'larını belirlemem gerekiyor benim. Onu belirleyip size yollayacağım.
+
+365
+01:19:30,195 --> 01:19:37,195
+Bugün mesela bu birinci ödev için bir kısım şeyleri öğrendik. Hemen yapmaya başlayın çünkü ödevler uzun.
+
+366
+01:19:43,195 --> 01:19:56,195
+Bugün mesela K-Nearest Neighbor ve Softmax sınıflayıcıyı öğrendik. Dolayısıyla artık bugün bunu yapmaya başlayabilirsiniz.
+
+367
+01:19:57,043 --> 01:19:59,443
+Her bir ödev ayrıntıyla açıklanmış.
+
+368
+01:20:01,224 --> 01:20:02,743
+Burada bir
+
+369
+01:20:02,743 --> 01:20:04,863
+IPython notbukuna
+
+370
+01:20:04,863 --> 01:20:05,703
+şey var.
+
+371
+01:20:07,923 --> 01:20:09,283
+Eyvah, link yok mu burada?
+
+372
+01:20:12,583 --> 01:20:13,583
+Eskiden link vardı.
+
+373
+01:20:19,507 --> 01:20:24,827
+Hocam, ödevleri Colab'dan yapmak zorunlu mu yoksa normal Python dosyasında da yapabilir miyiz?
+
+374
+01:20:29,268 --> 01:20:43,108
+Notbuk üzerinden yapın ya. Diğer türlü okuması çok zor oluyor. Tamamdır hocam, teşekkürler. Yani başka bir şekilde yapıp, notbuka copy paste yapıp orada da çalıştırabilirsiniz.
+
+375
+01:20:43,108 --> 01:20:45,308
+Deh.
+
+376
+01:20:50,579 --> 01:20:52,020
+Ödevler gitmiş sanki.
+
+377
+01:20:53,739 --> 01:20:56,100
+Hocam, en başta bir link vardı.
+
+378
+01:20:57,260 --> 01:21:02,800
+Sesinizi çok yavaş alıyorum bu bilgisayarda. Bir dakika, bir yerden sesi artırabiliyor muyum ben?
+
+379
+01:21:05,460 --> 01:21:06,960
+Bunun sesi var mı?
+
+380
+01:21:12,148 --> 01:21:16,148
+Biraz yüksek sesle söyleyebilir misiniz? Sesinizi duyamıyorum.
+
+381
+01:21:16,908 --> 01:21:19,488
+Sayfanın başında link vardı da.
+
+382
+01:21:20,007 --> 01:21:21,948
+Download here var diyor değil mi?
+
+383
+01:21:22,528 --> 01:21:22,908
+Evet.
+
+384
+01:21:23,228 --> 01:21:24,908
+Tamam, buradaymış ödevler.
+
+385
+01:21:27,908 --> 01:21:32,288
+Download here demiş. Beraber bir açıp bakalım.
+
+386
+01:21:46,452 --> 01:21:51,131
+Zoom ekranı biraz bozuyor sanki bazı şeyleri.
+
+387
+01:21:55,988 --> 01:22:00,148
+Hocam, onun dışında burada yazan coursework kısmı da olduğu gibi uygulanacak değil mi?
+
+388
+01:22:00,148 --> 01:22:01,628
+Deliğinizi duyamıyorum ya.
+
+389
+01:22:02,628 --> 01:22:06,988
+Bu sitede yazan coursework kısmı da olduğu gibi uygulanacak değil mi?
+
+390
+01:22:07,068 --> 01:22:11,188
+İşte %45 assignment, 20 mid-turn final projesi 35'li gibi.
+
+391
+01:22:14,228 --> 01:22:17,528
+Bir daha söyler misiniz? İyice yaklaştırdım bilgisayarı.
+
+392
+01:22:18,468 --> 01:22:23,167
+Corswork kısmı var. Açıklıyor puanları da sitede sizin gösterdiğiniz.
+
+393
+01:22:23,608 --> 01:22:30,388
+Assignment'a 45 demiş, final projesine 35 demiş. Bunu da olduğu gibi varsayalım mı?
+
+394
+01:22:32,327 --> 01:22:37,208
+Bir açayım da şimdi ne diyorsun anlamaya çalışayım. Zipi ben de açıyorum burada.
+
+395
+01:22:49,716 --> 01:22:50,796
+Öğ...
+
+396
+01:22:56,148 --> 01:23:16,507
+Evet, Collect Submission, Collect Submission SH var. Features IPMB, Fully Connected Nets IPMB, KNN IPMB, Softmax IPMB, Toolware Net IPMB. Buyurun.
+
+397
+01:23:17,228 --> 01:23:21,188
+Ekran gitti bende ama arkadaşlar görüyor mu bilmiyorum. Şu anda ekran paylaşımı yapmıyorum.
+
+398
+01:23:21,188 --> 01:23:22,188
+Öyle mi? Tamam.
+
+399
+01:23:23,252 --> 01:23:25,972
+Sadece şeye bakıyorum da.
+
+400
+01:23:30,852 --> 01:23:34,912
+Yani açtım Assignment Zip'i, içeriğine bakıyorum.
+
+401
+01:23:49,844 --> 01:23:52,023
+Tam ekran paylaşayım.
+
+402
+01:24:08,564 --> 01:24:13,644
+Evet, yani şunları mı soruyordunuz? Collect Submission falan.
+
+403
+01:24:20,340 --> 01:24:23,860
+Yok, direkt dersin işleşiğiyle alakalı sormuştum. Şeyden bağımsız.
+
+404
+01:24:25,180 --> 01:24:27,880
+Ya isterseniz çete yazın dediğinizi duyamıyorum.
+
+405
+01:24:30,380 --> 01:24:39,880
+Yani benim bu tarafta mikrofon hopörlerin ses ayarlarında bir sorum var. Yakın zamanda kurmuştum bu işletim sistemini.
+
+406
+01:24:42,452 --> 01:24:48,272
+Ses yüksekliğini yükseltmem lazım. Bir şekilde çok yüksek ses gelmiyor. Neden sezondan falan.
+
+407
+01:24:49,752 --> 01:24:52,152
+Çete yazabilirseniz, çetten okumaya çalışayım.
+
+408
+01:24:53,952 --> 01:24:54,552
+Sorunuzu.
+
+409
+01:25:03,347 --> 01:25:10,407
+Dersin vize final dağılımı nasıl olacak demiş öğrencinin bir tanesi sanırım.
+
+410
+01:25:13,007 --> 01:25:18,108
+Vize final yok. Her şey ödev ve proje ve sunumlar üzerinden.
+
+411
+01:25:26,996 --> 01:25:34,896
+Bu ödevlerin ağırlığı %45 falan oluyor galiba toplarsanız.
+
+412
+01:25:38,596 --> 01:25:43,136
+%40 final yerine geçen makale yazımı var.
+
+413
+01:25:45,136 --> 01:25:49,496
+Bir makale yazacaksınız. Bir proje yapıp makalesini yazacaksınız yani.
+
+414
+01:25:51,796 --> 01:25:52,896
+%15'te
+
+415
+01:25:54,292 --> 01:26:15,272
+O makaleyi yazmak için paper okuyacaksınız ya, o paperlardan bize bir sunum yapın. Yani enteresan bir paper anlatabilirsiniz veya enteresan birkaç paper özetleyebilirsiniz. Yani literatür taramanızı bize anlatacaksınız. Böyle bir sunum yapacaksınız. %15 de oradan gelecek.
+
+416
+01:26:22,195 --> 01:26:23,083
+Tamam.
+
+417
+01:26:26,355 --> 01:26:28,043
+Şimdi...
+
+418
+01:26:32,692 --> 01:26:38,231
+Şu Assignment 1'i unzip ettim. İçeriğine bakıyorum.
+
+419
+01:26:40,792 --> 01:26:46,372
+Burada Make PDF falan var. Onları kullanır mıyız, kullanmaz mıyız?
+
+420
+01:26:46,372 --> 01:26:51,592
+Bu bana yardımcı olacak bir asistan var. Onunla bir konuşayım da.
+
+421
+01:26:52,612 --> 01:26:59,432
+Yani ödevlerin tam olarak nasıl isteriz? Henüz söylemiş olmayayım.
+
+422
+01:27:00,020 --> 01:27:07,120
+Fakat kesin olan bir şey var. Bakın burada ödevler güzelce IPyMb'lere ayrılmış.
+
+423
+01:27:09,360 --> 01:27:13,159
+IPyMb nasıl kullanılıyor bilmeyen var mı?
+
+424
+01:27:19,475 --> 01:27:39,475
+Jupyter'i kurmuş olmanız gerekiyor. Sanırım Colab'da da kullanabilirsiniz. Bunları Colab'a yükleyip, bu IPIMB'leri. Colab'da şu anda ben de Jupyter Notebook kurulu olmadığı için üzerine gelince...
+
+425
+01:27:44,307 --> 01:27:53,688
+Direk içeriğini tekst olarak açıyor da. IPMB'ler Python'da Jupyter Notebook diye bir sistem var.
+
+426
+01:27:57,652 --> 01:28:06,051
+Onunla açılıyor lokalde. Ya da Google Colab'a yükleyip oradan çalışabilirsiniz.
+
+427
+01:28:07,932 --> 01:28:21,731
+Soru direkt IPMB olarak verilmiş. Mesela bugün KNN'i öğrendik. KNN IPMB var.
+
+428
+01:28:26,420 --> 01:28:31,020
+Mesela ben buraya bir şey yapmaya çalışsam nasıl olacak?
+
+429
+01:28:33,920 --> 01:28:37,420
+Python 3
+
+430
+01:28:38,700 --> 01:28:43,319
+Bir Virtual Enmire Unmunt yapmaya çalışayım.
+
+431
+01:28:44,860 --> 01:28:49,979
+Aslında bu tür şeylerde kon da kullanmak daha iyi ama şimdilik pip ile bir deneyeyim.
+
+432
+01:28:57,203 --> 01:28:59,703
+Yazdıklarımı görüyor musunuz? Komut satırını.
+
+433
+01:29:01,144 --> 01:29:01,963
+Gözüküyor hocam.
+
+434
+01:29:02,843 --> 01:29:03,123
+Evet.
+
+435
+01:29:04,023 --> 01:29:07,103
+Şimdi bir Virtual Environment kurdu.
+
+436
+01:29:07,103 --> 01:29:12,323
+O Virtual Environment'ı aktife edeyim.
+
+437
+01:29:13,984 --> 01:29:14,663
+Bu Linux.
+
+438
+01:29:15,663 --> 01:29:17,623
+Windows'da biraz farklı olabilir.
+
+439
+01:29:26,963 --> 01:29:35,163
+Aktive ettim. Buraya Virtual Environment'ın şeyi geldi. İsmi mi desem.
+
+440
+01:29:37,463 --> 01:29:49,564
+Şimdi pip3 ile Jupyter Notebook'u install etmeye çalışayım.
+
+441
+01:29:51,028 --> 01:29:54,648
+Şöyle yapayım. Önce bir Requirements Text yazayım.
+
+442
+01:29:56,648 --> 01:29:59,148
+Vim Requirements
+
+443
+01:30:08,275 --> 01:30:23,796
+Buraya Juppayter. Juppayter. Bu çalışır mı acaba bilmiyorum. Tahminle gidiyorum şu anda da.
+
+444
+01:30:27,475 --> 01:30:28,475
+Mmh.
+
+445
+01:30:32,692 --> 01:30:52,992
+Şimdi Requirements Text'te istediğimiz paketleri yazdık. Pip3 şimdi onları kuracak. Pip3 Install Re Requirements Text'i oku demek. Evet. İndiriyor şu anda Pip3.
+
+446
+01:31:01,203 --> 01:31:16,943
+Aslında Konda, bunu not alın. Konda kullansanız daha iyi. Yani böyle makine öğrenmesiyle vesaire ile ilgili paketler Konda ile daha iyi yönetiliyor. Konda'da daha çok.
+
+447
+01:31:17,983 --> 01:31:23,143
+Konda'nın biraz yavaş olma durumu var. Şimdilerde Pixi diye bir şey çıkmış.
+
+448
+01:31:27,539 --> 01:31:52,159
+Bu sorun biraz biraz yok oluyor gibi. Önemli paketler PIP3'e de geliyor artık. Dolayısıyla ben şimdi direkt PIP3'ü denedim. Konda biraz yavaş. Ama PIP3 işinizi görmezse Konda'yı kullanın. Konda'da her şeyi bulursunuz makine öğrenmesiyle ilgili.
+
+449
+01:31:53,619 --> 01:32:01,720
+Konda biraz yavaş olduğu için de şimdilerde Pixi diye bir şey çıkmış. Çok deneyemedim ama Pixi Konda'nın yerine de geçiyor.
+
+450
+01:32:03,000 --> 01:32:06,760
+Ama Pip3 de gördüğünüz gibi kurdu. Bir sorun yaşamadı.
+
+451
+01:32:08,819 --> 01:32:12,239
+Şimdi kurduysa artık çalıştırabilmem lazım.
+
+452
+01:32:12,239 --> 01:32:17,300
+Juhay Juhayter Notebook diyeyim.
+
+453
+01:32:20,083 --> 01:32:23,003
+KNN IPM 1
+
+454
+01:32:24,263 --> 01:32:25,903
+Böyle olmaz dedi.
+
+455
+01:32:29,363 --> 01:32:31,363
+Nasıl olacakmış?
+
+456
+01:32:38,420 --> 01:32:40,420
+Notebuka gerek yok mu acaba?
+
+457
+01:32:54,836 --> 01:32:55,836
+Bilen var mı bunu?
+
+458
+01:32:59,136 --> 01:33:03,576
+Direkt Jupyter'ı başlatıp oradan da açabiliyoruz yanılmıyorsam. Öyle yapalım.
+
+459
+01:33:18,163 --> 01:33:19,703
+SubCommand ne?
+
+460
+01:33:24,212 --> 01:33:28,312
+Bir yere artık biraz soralım bakalım.
+
+461
+01:33:37,203 --> 01:33:42,243
+Eya'ya sormaya utandığım için yaptırıyorum.
+
+462
+01:33:43,783 --> 01:33:45,103
+Yüz uç.
+
+463
+01:33:48,692 --> 01:33:49,771
+Öğ...
+
+464
+01:33:54,644 --> 01:34:04,644
+Şimdi installing Jupyter. Pip install'da zaten Jupyter lapı mı kuracaktık?
+
+465
+01:34:12,595 --> 01:34:14,595
+Jupiter'in lafı kuralım öyleyse.
+
+466
+01:34:17,135 --> 01:34:18,875
+Değiştirmişler sanki bunları.
+
+467
+01:34:22,015 --> 01:34:24,235
+Yukarıdımız tekstimiz vardı.
+
+468
+01:34:31,891 --> 01:34:38,891
+Juhpoy-Teslop
+
+469
+01:34:42,100 --> 01:35:04,300
+Ben de epeydir uğraşmadım bu işlerle. O yüzden biraz şeyim. Şimdi tekrar kuralım. Hepsini kurdum ben zaten diyor. Peki. Juppayterlab diye mi başlatacağız? Juppayterlab.
+
+470
+01:35:11,604 --> 01:35:13,604
+Evet, başlıyor.
+
+471
+01:35:15,604 --> 01:35:21,604
+Evet, Jupayter başladı. Bu, yani lokalinizde bulunan bir şey gibi.
+
+472
+01:35:25,332 --> 01:35:32,872
+Evet, Assignment'ların Colab'a nasıl yüklenip çalıştırılacağı ile ilgili bir video çekilmiş demiş. Peki, teşekkür ediyorum [öğrenci].
+
+473
+01:35:34,432 --> 01:35:44,332
+Yani ona da tabii bakabilirsiniz. Ben de burada lokalde nasıl çalıştırabilirsiniz? Belki Colab'da çalışmak istemezsiniz. Onu göstermiş oluyorum şu anda.
+
+474
+01:35:47,012 --> 01:35:52,532
+Lab'ı açtıktan sonra sanırım buraya tıklamamız yeterli olacaktır. Evet.
+
+475
+01:35:58,228 --> 01:36:09,427
+Burada, yani güzelce var, açıklamalar var, kodlar var. Kodlarda boşluklar var. Kodları doldurmanız gerekiyor.
+
+476
+01:36:13,427 --> 01:36:16,228
+Şuraya mesela, your answer fill in demiş.
+
+477
+01:36:17,828 --> 01:36:19,020
+Fill this in.
+
+478
+01:36:23,220 --> 01:36:31,220
+Mesela işte, What in the data is the cause behind the distinct bright rows? What causes the columns?
+
+479
+01:36:31,220 --> 01:36:35,220
+Burayı altına ekleyebilirsiniz. Yani işte,
+
+480
+01:36:43,539 --> 01:36:58,764
+...
+
+481
+01:37:05,171 --> 01:37:10,171
+Evet. Ne yaptım ben. Direkti.
+
+482
+01:37:15,731 --> 01:37:21,952
+Bu Editör modu, şey modunu da görmek istiyorum da şuna mı basmam lazım?
+
+483
+01:37:25,939 --> 01:37:26,859
+Şuraya geldi.
+
+484
+01:37:30,420 --> 01:37:36,300
+Veya bazı yerlerde kodları eksik oluyor.
+
+485
+01:37:39,119 --> 01:37:48,340
+Bu şekilde IPyMb üzerinden yapıp, IPyMb'yi zipleyip göndermenizi isteyeceğim ben.
+
+486
+01:37:48,340 --> 01:37:51,920
+Yani Collab'da da yapsanız Collab'da bırakmayın.
+
+487
+01:37:52,340 --> 01:38:16,500
+Kolaptakini tekrar download edip IPMB olarak IPMB'yi göndermenizi isterim. Ama bununla ilgili tam noktayı da koymayayım. Şimdi siz bunları yapa durun. Nasıl toplanacağı konusunu bir asistan olması lazım bu dersle ilgili. Kimmiş onu öğreneyim. Onu da bir konuşalım.
+
+488
+01:38:16,927 --> 01:38:20,247
+Asistan toplayıp değerlendirecek.
+
+489
+01:38:27,636 --> 01:38:28,935
+Başka sorumuz var mı?
+
+490
+01:38:34,739 --> 01:38:37,739
+Çete yazsanız daha iyi olur. Dediklerinizi duyamıyorum.
+
+491
+01:38:48,340 --> 01:39:04,680
+Tamam, başka soru yok gibi. Tabii arayı verememiş olduk. Şu anda 10.35 diyelim. 10.40, 10.50. 10.50'ye kadar 15 dakika bir ara verelim arkadaşlar.
+
+492
+01:56:53,427 --> 01:56:55,268
+Tekrar merhabalar arkadaşlar.
+
+493
+01:57:15,731 --> 01:57:17,771
+Çeti açtım.
+
+494
+01:57:23,859 --> 01:57:26,859
+Bir şey söyleyecek olursanız chatten yazın.
+
+495
+01:57:27,859 --> 01:57:29,859
+Şimdi,
+
+496
+01:57:29,859 --> 01:57:31,859
+şunu yapmış olduk.
+
+497
+01:57:33,859 --> 01:57:39,859
+Lecture 2. image classification with linear classifiers. Bunu yapmış olduk.
+
+498
+01:57:42,859 --> 01:57:46,859
+Sonra bir Python NumPy review session demiş.
+
+499
+01:57:48,859 --> 01:57:50,764
+Bakalım bu ne olacak.
+
+500
+01:58:13,811 --> 01:58:14,971
+Şimdi...
+
+501
+01:58:19,444 --> 01:58:33,743
+Python'u biliyorsunuzdur da NumPy'ı biliyor musunuz? Buraya herkes çete yazabilir mi? NumPy biliyorsanız artı bir, bilmiyorsanız eksi bir yazın. NumPy.
+
+502
+01:59:05,492 --> 01:59:29,352
+Peki, yani yazanlar arasında iki tane eksi gördüm numpa ile ilgili. Gerisi hep biliyor. Bilmiyorsanız acilen lampayı öğrenin. O zaman bu kısımları geçiyorum. Zaten bilindiği söyleniliyor. Siz kendiniz de bakabilirsiniz. Muhtemelen iyidir. Çok güzel şeyler hazırlıyorlar.
+
+503
+01:59:30,515 --> 01:59:46,315
+Gayet güzel bir tutorial'a benziyor. Colab da koymuşlar. Diğeri de tutorial demiş. Ayrıca bir de tutorial diye bir şey koymuş.
+
+504
+01:59:48,815 --> 01:59:56,595
+Burada da güzelce. Yani sanırım bilmiyorsanız da, burayı bir okursanız, hatta biliyorsanız bile şöyle bir bakın bence.
+
+505
+01:59:57,363 --> 02:00:09,123
+Matplotlib'i göstermişler. Yani şekil grafik çizdirmeyi göstermişler. Resimleri çizdirmeyi göstermişler. Bunlar tabi çok önemli şeyler.
+
+506
+02:00:10,943 --> 02:00:18,363
+Buralara bakın. Şimdi çoğunuz lampayı biliyoruz dediği için buraları geçiyorum.
+
+507
+02:00:20,923 --> 02:00:22,643
+Lecture 3'e geçelim.
+
+508
+02:00:30,676 --> 02:00:31,275
+Öğle.
+
+509
+02:00:34,644 --> 02:00:36,484
+Lecture...
+
+510
+02:00:40,659 --> 02:00:47,159
+Bunu ayrıca download etmek istiyorum. Sağa tıklayıp Save Link izleyeyim.
+
+511
+02:01:45,140 --> 02:01:49,140
+View'u Continuous'dan çıkarmam lazım.
+
+512
+02:01:52,243 --> 02:01:54,059
+Fit Page diyeceğim.
+
+513
+02:02:48,020 --> 02:02:51,400
+Evet, ortalığı da biraz toparladım. Sanırım hazırız.
+
+514
+02:02:52,440 --> 02:02:56,360
+Şimdi Regularization and Optimization demişler. Bir bakalım.
+
+515
+02:03:06,163 --> 02:03:11,543
+Geçen haftanın tekrarını geçiyoruz.
+
+516
+02:03:12,123 --> 02:03:13,524
+Regularization'a gelelim.
+
+517
+02:03:16,083 --> 02:03:17,503
+Ama şuraya yine bir bakalım.
+
+518
+02:03:18,423 --> 02:03:23,463
+Yani 3 tane giriş var, 3 tane sınıf var.
+
+519
+02:03:25,963 --> 02:03:30,963
+Bir loss fonksiyonu belirlememiz gerekiyor.
+
+520
+02:03:31,507 --> 02:03:50,447
+Los fonksiyonu her bir veri setindeki her bir nesne i için bize bir değer verecek. L i diyoruz ona. Sonra bütün bu los fonksiyonlarını toplayıp ortalamasını alınca da veri seti üzerindeki losu bulacağız.
+
+521
+02:03:57,844 --> 02:04:06,223
+Data Loss dediği, işte o veri seti üzerindeki loss. Bunu böyle bir terim olarak gösterebiliriz.
+
+522
+02:04:07,323 --> 02:04:22,163
+Şimdi bazen model veri seti üzerinde aşırı iyi yapıyor. Aşırı iyi sonuçlar veriyor. Sonra ama test setinde iyi genelleyemiyor.
+
+523
+02:04:25,684 --> 02:04:40,583
+Bu genel loss fonksiyonuna regularization terimleri ekleniliyor. Burada da görüyoruz. Lambda çarpı R W gibi bir regularization terimi eklenmiş.
+
+524
+02:04:45,235 --> 02:04:50,876
+Regularization'ı bize biraz anlatmaya çalışacak. Basit bir eğitim seti.
+
+525
+02:04:57,876 --> 02:05:02,876
+Normalde hangisi daha iyi? Burada iki tane fit görüyorsunuz.
+
+526
+02:05:02,876 --> 02:05:06,675
+Eğitilmiş iki tane fit. Bir tanesi F1, bir tanesi F2.
+
+527
+02:05:07,576 --> 02:05:08,095
+F1.
+
+528
+02:05:08,756 --> 02:05:13,036
+Eğitim setine aşırı iyi uyum sağlıyor.
+
+529
+02:05:14,796 --> 02:05:27,296
+Ve aslında şöyle bir bakarsanız, sanki düz çizginin daha iyi uyduğunu göreceksiniz.
+
+530
+02:05:27,296 --> 02:05:33,936
+Yani burada düz çizgi bu noktalara daha iyi bir fit aslında.
+
+531
+02:05:34,515 --> 02:05:48,395
+Eğitim setini, her bir noktaya fit etmeye çalıştığı için elde edilen fit fonksiyonu kötü olmuş.
+
+532
+02:05:49,735 --> 02:05:53,595
+Regularization biraz da bunu engellemeye çalışıyor.
+
+533
+02:05:53,595 --> 02:05:55,595
+Daha basit modeller.
+
+534
+02:05:56,692 --> 02:06:10,891
+Elde etmeye çalışıyor. Daha basit modeller genelde daha iyi sonuç veriyor. Daha iyi genelliyor. Sadece eğitim seti üzerinde değil, test seti üzerinde de daha iyi sonuçlar veriyor.
+
+535
+02:06:17,300 --> 02:06:33,500
+Çünkü eğitim setine çoğu zaman noise oluyor. Yani ölçümler her zaman hatalıdır biliyorsunuz. Bir de burada digitization yazıyor.
+
+536
+02:06:33,500 --> 02:06:43,500
+Yani sayısallaştırılıyor resim çekerken. Resimler...
+
+537
+02:06:43,923 --> 02:07:05,144
+Sayısal ortamlara aktarılırken. Bu sırada kuantalama yapılıyor, sıkıştırma yapılıyor, JPEG sıkıştırmadır vs. Veri aslında ideal o veriden biraz farklılaşıyor. Gürültülü bir hal alıyor, biraz bozuluyor.
+
+538
+02:07:09,971 --> 02:07:31,971
+Veya bir kediyi düşünün. Kedi resmi biraz sağdan çekilmiş, soldan çekilmiş. Görüntülerde işte çeşitli ışıklar, ışık çeşitlilikleri var. Bütün bu şeyler aşırı, yani bunlara tam olarak öğrenmeye çalışırsa veri.
+
+539
+02:07:32,916 --> 02:07:50,255
+Öğrenmesi gereken o özeti, özü kaçırabiliyor. Bu nedenle daha basit modeller aslında daha iyi sonuçlar veriyor bize. Bunu da regularization ile başarmaya çalışıyoruz.
+
+540
+02:07:52,395 --> 02:07:58,215
+Burada Occam's Razor diye genel bir prensip var.
+
+541
+02:07:59,252 --> 02:08:12,092
+Diyor ki, birden fazla hipotez varsa elinizde, bunlardan birini seçecekseniz, en basit olanı seçin.
+
+542
+02:08:13,532 --> 02:08:19,992
+Bu, Ockham'ın, William of Ockham bunu söylemiş.
+
+543
+02:08:21,452 --> 02:08:26,852
+Ockham's Razor olarak da hala kullanılıyor. Yani, basit gidin.
+
+544
+02:08:27,572 --> 02:08:29,036
+Basit düşünün.
+
+545
+02:08:32,115 --> 02:08:40,115
+Buradaki lambda bir ağırlıklayıcı. Yani ne kadar büyük regularization istiyorsunuz onu ayarlayabilirsiniz.
+
+546
+02:08:42,676 --> 02:08:56,515
+Rw için farklı şeyler var. Mesela çok kullanılan L2 Regularization dediği, burada bir matris var. Matrisi alıyor biliyorsunuz ağırlık matrisimiz vardı.
+
+547
+02:09:00,083 --> 02:09:16,243
+Bileşen bileşen karesini alıyor. Sonra hepsini topluyor. Bir nevi öklüt uzaklığı gibi bir şey oluyor. Kare kökü alınmamış. Öklüt uzaklığının karesi aslında bu. O yüzden de L2 diyor.
+
+548
+02:09:17,724 --> 02:09:26,623
+L1 de yine Manhattan uzaklığının karesi gibi mi? Yok. Direkt Manhattan uzaklığı sanırım.
+
+549
+02:09:27,956 --> 02:09:34,956
+Yani bileşenlerin absolute value'ları alıyor. Negatifler pozitif yapılıyor, toplanıyor.
+
+550
+02:09:38,356 --> 02:09:49,756
+Loss fonksiyonu minimize edilmeye çalışıldığı için bileşen değerleri bu şekilde loss fonksiyonuna katılırsa ne olacak?
+
+551
+02:09:52,659 --> 02:09:56,179
+Matrisin içindeki sayısal değerler daha küçük olacak.
+
+552
+02:10:02,163 --> 02:10:09,663
+Matrisin içindeki sayıları küçültüyor yani bu regularizasyon yaklaşımları.
+
+553
+02:10:12,423 --> 02:10:18,003
+Bu ikisi. Elastik net bu ikisini bir şekilde ağırlıklandırıp birleştirmişler.
+
+554
+02:10:21,555 --> 02:10:29,895
+Tabii bu regularization olayı ders sırasında bir tema gibi ara ara ortaya çıkacak.
+
+555
+02:10:29,895 --> 02:10:37,376
+Basit böyle loss fonksiyonuna koyduğunuz regularizasyon haricinde başka regularizasyonlar da göreceğiz.
+
+556
+02:10:38,855 --> 02:10:42,695
+Onlara sırası geldikçe görürüz.
+
+557
+02:10:50,931 --> 02:10:51,431
+Evet.
+
+558
+02:10:54,271 --> 02:10:55,811
+Şimdi mesela
+
+559
+02:10:55,811 --> 02:11:02,731
+burada bir örnek verilmiş. Bir W1 var, bir W2 var.
+
+560
+02:11:04,612 --> 02:11:09,192
+L2 regularizasyonu yapıyoruz. Hangisini tercih eder acaba?
+
+561
+02:11:10,872 --> 02:11:12,052
+Şeyler aynı.
+
+562
+02:11:15,492 --> 02:11:16,412
+Fonksiyon
+
+563
+02:11:17,011 --> 02:11:37,952
+Orjinal skorlar aynı. İkisimiz bu. Her ikisiyle o skor elde etmeye çalışsak aynı skoru elde ediyoruz. Ama regularizasyon bir tanesini bize tercih ettirecek. Hangisini tercih eder sizce arkadaşlar?
+
+564
+02:11:40,952 --> 02:11:43,032
+Çete bir yazın göreyim.
+
+565
+02:11:46,068 --> 02:11:47,908
+L1 ya da L2 yazın.
+
+566
+02:11:48,928 --> 02:11:51,908
+Ya da 1 ya da 2 L1, L2. Şey, pardon.
+
+567
+02:11:52,488 --> 02:11:54,368
+W1 ya da W2 yazın.
+
+568
+02:11:57,428 --> 02:12:02,608
+L2 regularizasyonu hangisini tercih ettirir bize?
+
+569
+02:12:09,395 --> 02:12:10,615
+[öğrenci] V2 demiş.
+
+570
+02:12:12,935 --> 02:12:14,555
+[öğrenci] V1 diyor.
+
+571
+02:12:18,100 --> 02:12:44,600
+Şimdi şu hesaplamada hangisi için daha büyük bakalım. Birin karesi bir, değerleri sıfır zaten. W1 için R direkt bir. W2 için ne? 1 bölü 4 bu. Karesini alacağız. 1 bölü 16 olacak. 4 tane 1 bölü 16. 4 bölü 16. Yine 1 bölü 4 ediyor.
+
+572
+02:12:45,363 --> 02:12:52,983
+Yani, regularizasyon terimi olarak V1, V2'den daha büyük olacak.
+
+573
+02:12:54,963 --> 02:12:57,563
+Ve biz minimizasyon yapıyoruz.
+
+574
+02:12:58,483 --> 02:13:04,603
+Dolayısıyla, V2 mi, V1 mi tercih edecek? Bence V1, V2'yi tercih edecek.
+
+575
+02:13:04,684 --> 02:13:09,203
+Çünkü V2 daha minimal, daha küçük bir değer veriyor.
+
+576
+02:13:10,963 --> 02:13:31,684
+Dolayısıyla şunu görüyoruz. Veğitlerin biraz yayılmasına yardımcı oluyor. Yani veğitleri küçük almak, veğitlerin küçük olması veğitlerin yayılmasına yol açıyor.
+
+577
+02:13:39,155 --> 02:13:54,815
+L1 hangisini tercih eder diye baktığımızda onun cevabını vermemiş. Onu size bırakıyorum. Oradan bir düşünün.
+
+578
+02:13:59,076 --> 02:14:06,136
+Şimdi ne dedik? Skorlarımızı elde edeceğiz. Matris var, giriş var, çarpıyoruz. Skor elde ediyoruz.
+
+579
+02:14:07,283 --> 02:14:13,823
+Eksponansi ile alıyoruz. Negatiflikten kurtarıyoruz. Normalize ediyoruz. Olasılık yapıyoruz.
+
+580
+02:14:15,344 --> 02:14:23,203
+Eksi logunu alarak da softmax loss fonksiyonunu elde ediyoruz. Bu tek bir girdiği için.
+
+581
+02:14:24,483 --> 02:14:30,604
+Tüm girdilerin ortalamasını aldığımızda da data loss'u elde ediyoruz.
+
+582
+02:14:30,604 --> 02:14:33,003
+Tabi burada artık bir dene var.
+
+583
+02:14:34,515 --> 02:14:37,935
+Datalose'a bir Regulization terimi ekledik.
+
+584
+02:14:43,923 --> 02:14:50,923
+Şimdi en iyi W'yu nasıl bulacağız? Optimizasyonla bulacağız.
+
+585
+02:14:50,923 --> 02:14:59,923
+Optimizasyon, burada bir örnek vermiş. Bir dağın tepesindesiniz.
+
+586
+02:14:59,923 --> 02:15:02,923
+Bu...
+
+587
+02:15:04,307 --> 02:15:22,387
+Dağdan inmek istiyorsunuz. Yani inebileceğiniz en çukur yere, en dip seviyeye inmek istiyorsunuz. Ama optimizasyonda şöyle bir şey var. Böyle insan gözüyle görür gibi göremiyorsunuz.
+
+588
+02:15:30,899 --> 02:15:47,220
+Ayaklarınızla yoklayabiliyorsunuz. Bir ayağınız bulunduğunuz yerde, diğer ayağınızla şöyle bir yokluyorsanız, diğer ayağınız daha çukur bir yere geliyorsa oraya ilerliyorsunuz. İteratif optimizasyon bu.
+
+589
+02:15:52,819 --> 02:15:59,819
+Şimdi bunu nasıl yapabilirsiniz? Optimizasyon stratejileri benim dediğim değil bu.
+
+590
+02:15:59,819 --> 02:16:08,819
+Rastgele Search. Random Search'te arama uzayında tamamen rastgele noktalar belirliyorsunuz.
+
+591
+02:16:08,819 --> 02:16:20,683
+Orada fonksiyonunuzun değerini hesaplıyorsunuz. En uygun yere gidiyorsunuz. Bu şey gibi yine körsünüz.
+
+592
+02:16:20,979 --> 02:16:30,079
+Yine gözleriniz bağlı fakat bir elinizde sizi teleport edebilecek bir şeyiniz var.
+
+593
+02:16:32,699 --> 02:16:42,259
+Makineniz var. Tak istediğiniz nokta, rastgele noktaları seçiyorsunuz arama uzayında. Tak oraya teleport ediyorsunuz.
+
+594
+02:16:42,675 --> 02:16:55,536
+Yükseklik ölçüyorsunuz. Tak oraya teleport oluyorsunuz, yükseklik ölçüyorsunuz. Yani arada böyle yavaş yavaş benim tarif ettiğim gibi adım adım gitme değil de tak tak tak gidip ölçüyorsunuz.
+
+595
+02:16:55,536 --> 02:17:08,396
+Buna random search deniliyor. Çok da iyi bir fikir değil. Arama uzayı çok büyük olduğunda çok iyi sonuç.
+
+596
+02:17:09,523 --> 02:17:37,123
+Vermiyor. Hatta böyle bir test yapmışlar. %16 civarı bir başarı göstermiş. Sota %99.97. Sota State of the Art yani en iyi. Bu konudaki en iyi yöntemler %99 %100'e yaklaşırken Random Search %16'da kalıyor.
+
+597
+02:17:39,731 --> 02:18:03,511
+Diğer strateji, benim bahsettiğim strateji, eğimi takip et. Yani aşağı doğru şöyle ayağınla yokla, gözlerin kapalı ya, bir ayağın bir yerde duruyor, diğer ayağınla şöyle sağı solu, yukarıya sağı solu, öne arkayı, ayağınla yokla.
+
+598
+02:18:04,819 --> 02:18:12,319
+Yokuş aşağı olan yere doğru, eğimin gösterdiği yere doğru hareket et.
+
+599
+02:18:15,319 --> 02:18:25,279
+Bu bir boyutta eğim sayısal olarak bulunabiliyor.
+
+600
+02:18:25,919 --> 02:18:30,419
+Hatırlarsanız bir fonksiyonun türevini bu şekilde tanımlıyoruz.
+
+601
+02:18:31,252 --> 02:18:36,891
+Limit h0'a giderken fx artı h'tan f'i çıkarıyoruz.
+
+602
+02:18:37,152 --> 02:18:42,272
+h'a bölüyoruz. h0'a giderken bu bize türevi veriyor.
+
+603
+02:18:46,531 --> 02:18:52,832
+Çok boyutluysa, bu tek boyutlu dahi de çok boyutluysa her boyut için bunu yapıyoruz.
+
+604
+02:18:53,780 --> 02:18:59,319
+Buna gradiyant vektörü diyoruz. Elimizde bir vektör olmuş oluyor çok boyut olduğu için.
+
+605
+02:19:02,920 --> 02:19:17,420
+Şimdi herhangi bir yöndeki eğimi bulmak istiyorsak, bu gradiyanla bu yönün dot product'ını alıyoruz.
+
+606
+02:19:17,420 --> 02:19:19,300
+Yani yönde bir vektör.
+
+607
+02:19:19,987 --> 02:19:21,567
+Direction'da bir vektör.
+
+608
+02:19:24,687 --> 02:19:32,788
+Ne yaparsınız? Vektörü birim boyuta getirirsiniz. Size yönü gösterir sadece. Normalize edersiniz.
+
+609
+02:19:38,579 --> 02:19:48,479
+O yönle, gradiyantı dot product'a sokarsanız, size o yöndeki eğimi veriyor.
+
+610
+02:19:53,268 --> 02:19:59,668
+Ve bu eğimlerden tabii en dikini istiyorsunuz.
+
+611
+02:20:02,488 --> 02:20:11,268
+Yalnız eğim yokuş yukarıyı gösteriyor. Siz yokuş aşağı inmek istediğiniz için negatif gradyantı kullanmalısınız.
+
+612
+02:20:12,528 --> 02:20:19,768
+Negatif gradyant çarpı yön, minimum ne ise o yöne gideceksiniz.
+
+613
+02:20:23,219 --> 02:20:26,939
+Bunu nasıl yapabiliriz? Bir kısım fikirler vermiş.
+
+614
+02:20:26,939 --> 02:20:35,899
+İşte diyelim ki elimizde şu anda matris, bu matrisi flatten yaptık. Şöyle bakıyoruz.
+
+615
+02:20:39,099 --> 02:20:42,819
+Direkt şey gibi yapalım, böyle küçük bir haş ekleyelim.
+
+616
+02:20:44,000 --> 02:20:46,199
+Birinci, ikinci, üçüncü, dördüncü.
+
+617
+02:20:47,099 --> 02:20:49,059
+Loss ne kadar değişiyor bakalım.
+
+618
+02:20:50,868 --> 02:21:10,688
+Los işte bir nokta bilmem 347'den bir nokta da 322'ye. Biraz düştü Los. Bu iyi gibi falan gibi. Bütün bunları hesap edip buradan gradiyana ulaşmaya çalışsak. Mesela buradan hesap etti.
+
+619
+02:21:13,620 --> 02:21:40,159
+H0, 0, 0, 1'di. Losları çıkarttı. Eksi 2,5 buldu. Sadece bir boyutu değiştirirsek, eksi 2,5'luk bir gradiyan var gibi. Bir değeri için 0,6'lık bir gradiyan, bir değeri için yani bu şekilde gradiyan tabii ki çok yavaş.
+
+620
+02:21:43,379 --> 02:21:48,899
+Daha hızlı yöntemlere ihtiyacımız var.
+
+621
+02:21:55,891 --> 02:22:00,932
+Biz gradyanı istiyorsak zaten loss'u da bir fonksiyon olarak tanımladık.
+
+622
+02:22:02,072 --> 02:22:08,851
+Niye böyle tek tek uğraşıyoruz? Direkt loss'un gradyanını bulalım.
+
+623
+02:22:10,471 --> 02:22:17,772
+Loss'un gradyanını bulalım. Şu gradyan ters üçgen W. Ne demek?
+
+624
+02:22:18,932 --> 02:22:42,192
+W'ye göre loss'un gradyanı demek. Yani W'yi değiştireceksiniz. Loss nasıl değişiyor? Yani loss'un W'ye göre türevini alacaksınız. Çok boyutlu türevi. Dolayısıyla direkt onu kullanabiliriz.
+
+625
+02:22:43,252 --> 02:22:50,371
+Bu yönteme analitik gradyant deniliyor. Bu beyefendiler kim bilmiyorum.
+
+626
+02:22:54,112 --> 02:23:09,412
+Tabi numerik gradyant son derece yavaş ama şey olarak tavsiye ediyorum. Yani analitik gradyantı programınızda kullanın ama numerik gradyantı da
+
+627
+02:23:10,548 --> 02:23:21,988
+Kendiniz bir hesap edip yazdığınız program doğru çalışıyor mu bunu görmek için kullanın diyor.
+
+628
+02:23:25,843 --> 02:23:49,843
+Şimdi bu Gradient Fikri Gradient Descent denilen algoritmayı veriyor bize. Yokuş inişi ya da eğim inişi Gradient Descent. Ne yapıyoruz? Fonksiyonumuz var, loss fonksiyonu. Gradiantını buluyoruz. O noktada mevcut elimizdeki...
+
+629
+02:23:50,579 --> 02:23:55,340
+Veri weightler üzerinden, weightleri değiştireceğiz çünkü.
+
+630
+02:23:56,299 --> 02:23:59,380
+Mevcut weightlerle gradiyanta hesap ediyoruz.
+
+631
+02:24:00,639 --> 02:24:02,920
+Los fonksiyonun gradiyantını o noktada.
+
+632
+02:24:04,920 --> 02:24:10,380
+O gradiyanı mevcut weightlerden çıkarıyoruz.
+
+633
+02:24:11,959 --> 02:24:14,439
+Böylece weightleri biraz değiştiriyoruz.
+
+634
+02:24:14,439 --> 02:24:16,779
+Buradaki step size işte bir ağırlık.
+
+635
+02:24:17,172 --> 02:24:21,192
+Ne kadar değiştirmek istediğimizi ayarlayabiliyoruz.
+
+636
+02:24:21,192 --> 02:24:31,192
+Bu şekilde weightlerden çıkararak weightlerin...
+
+637
+02:24:37,427 --> 02:24:40,087
+Değişmesini sağlıyoruz doğru yönde.
+
+638
+02:24:44,852 --> 02:25:10,072
+Gradient Descent algoritması en basit haliyle bu. Bu çok önemli bir algoritma. Son derece basit gördüğünüz gibi ama şu anda prensip olarak Neural Network eğitiminde herkes bunun boyanmış, cilalanmış, takla attırılmış, masajlanarak
+
+639
+02:25:10,484 --> 02:25:16,283
+Biraz daha şekil verilmiş hallerini kullanıyor. Olay bu esasen yani.
+
+640
+02:25:22,579 --> 02:25:25,388
+Burada bir kısım...
+
+641
+02:25:28,819 --> 02:25:32,079
+Videolar var. Onları tabii gösteremiyorum.
+
+642
+02:25:34,600 --> 02:25:55,700
+Şimdi gradient descent'ten stokastik gradient desente geçiyoruz. Normalde gerçek gradient descent yapmak için her adımda tüm veriyi bir sokup tüm veri üzerinden bir loss hesaplamanız gerekiyor.
+
+643
+02:25:56,275 --> 02:26:05,695
+Şurada iyi iştir birden ene kadar gidiyor diyor ya. Sonra onun dosunu alacaksınız. Fakat bu çok yavaş çalışıyor.
+
+644
+02:26:05,695 --> 02:26:21,695
+Yani elinizde diyelim ki günümüzdeki eğitim setlerinde milyarlarca veri var. Milyarlarca imge var. Milyarlarca imgeyi...
+
+645
+02:26:22,772 --> 02:26:33,592
+Eğitime sokup, sonra küçük bir loss değişimi yaptırırsanız, ağırlık değişimi yaptırırsanız, bu eğitim çok çok çok yavaş gidiyor.
+
+646
+02:26:33,592 --> 02:26:47,752
+O yüzden şöyle bir şey düşünmüşler. Biz tüm eğitim seti içinden rastgele bir batch seçelim. Rastgele K tane imge seçelim.
+
+647
+02:26:48,852 --> 02:27:07,852
+O rastgele K üzerinden bir los hesaplayalım. O los ile ağırlıkları bir güncelleyelim. Yani beklemeyelim. Sonra bir başka rastgele, sonra bir başka rastgele böyle rastgele beşler seçip...
+
+648
+02:27:15,827 --> 02:27:40,887
+Weight güncellemesini bu batchler üzerinden yapalım. Buna stokastik deniliyor. Stokastik nereden giriyor? İşte biraz burada rastgele seçiyoruz ya. Stokastik oluyor. Bunlara mini batch deniliyor bu batchlere. 32, 64, 128'lik mini batchler kullanılıyor, sıkça deniliyor.
+
+649
+02:27:45,203 --> 02:28:00,943
+Şimdi burada enteresan bir olayı var gradient descent'in. Gradient descent eğimin negatifi yönüne gidiyor ya.
+
+650
+02:28:02,563 --> 02:28:11,103
+Eğer arama uzayınız küresel değil de yani dairesel değil de şöyle bir eliptikse.
+
+651
+02:28:13,139 --> 02:28:27,059
+Yani ince uzun bir vadi gibi bir şeyse, o zaman şöyle kenarda başladığınızda, en düşük eğim,
+
+652
+02:28:46,324 --> 02:29:12,204
+En düşük eğim, direkt şöyle çapraz hedefi göstermiyor. Şu çizgilere dikkat ederseniz, en düşük eğim bu eş yükseklik çizgileri bunlar. Eş yükseklik eğrilerine dik oluyor.
+
+653
+02:29:14,644 --> 02:29:33,224
+O da doğru yönü göstermiyor aslında. Lönk vadinin diğer tarafına atlıyor. Sonra bu tarafa, sonra bu tarafa. Yani hedefe gidiyor ama bir sürü gereksiz zikzak yaparak gidiyor. Jitter demiş buna.
+
+654
+02:29:42,611 --> 02:29:43,111
+Bu.
+
+655
+02:30:10,675 --> 02:30:11,659
+Evet.
+
+656
+02:30:18,772 --> 02:30:24,492
+Bu teorik olarak da ispatlanan şeyler.
+
+657
+02:30:26,252 --> 02:30:36,371
+Optimizasyon dersi aldıysanız, orada gradient descent çok iyi analiz ediliyor, öğretiliyor.
+
+658
+02:30:36,371 --> 02:30:39,632
+İşte özellikleri gösteriliyor falan.
+
+659
+02:30:42,036 --> 02:30:46,635
+Gradient Descent'in bu özelliği teorik olarak açıklanıyor.
+
+660
+02:30:57,876 --> 02:31:01,876
+Bir başka problemi de...
+
+661
+02:31:09,075 --> 02:31:12,216
+Gradient Descent, Gradiyana bağlı olarak çalışıyor.
+
+662
+02:31:18,131 --> 02:31:19,891
+Bir...
+
+663
+02:31:24,819 --> 02:31:47,819
+Bir lokal minima varsa, bu lokal minimada takılıp kalır. Çünkü, burada lokal minimada gradient 0. Şu tarafa geçmez. Yani şuradan başladıysa bu tarafa geçmez. Çünkü buradaki gradient...
+
+664
+02:31:49,716 --> 02:31:59,195
+Yine bu aşağı gösteriyor. Şuradan da başlasanız ters gradiyan buraya gösteriyor. Buradan da başlasanız ters gradiyan buraya gösteriyor.
+
+665
+02:31:59,195 --> 02:32:08,716
+Dolayısıyla o lokal minima da takılıp kalıyor. Yine Saddle Point'ler var.
+
+666
+02:32:20,915 --> 02:32:40,915
+Dolayısıyla Gradiyan çok küçük, sıfıra yakın. Dolayısıyla eğitiminiz ilerlemeyecektir. Yani size eğitim yapmaya çalışacaksınız. Bilgisayar çalışacak, GPU çalışacak ama olduğu yerde kalacak ve eğitiler çok değişmeyecek.
+
+667
+02:32:44,819 --> 02:32:58,819
+Burada yüksek boyutlu uzaylarda şunu fark etmişler. Saddle Point'ler çok fazla.
+
+668
+02:33:02,611 --> 02:33:06,031
+Biz de zaten genelde yüksek boyutlu uzaylarla çalışıyoruz.
+
+669
+02:33:09,031 --> 02:33:12,951
+Yüksek derken milyarlarca boyuttan bahsediyorum.
+
+670
+02:33:17,951 --> 02:33:21,611
+İki boyutta saddle point'in bir gösterimi var burada.
+
+671
+02:33:23,491 --> 02:33:28,751
+Bir boyutta bir minimum var, diğer boyutta bir maksimum var.
+
+672
+02:33:29,459 --> 02:33:55,699
+İkisinin birleştiği yer bir saddle point haline geliyor. Ayrıntılara bakarsınız. Üçüncü problem olarak şeyi demiş, mini-batch kullanıyoruz. Bu mini-batch dediğimiz gibi bir stokastik olmuş oluyor, rastgelelik olmuş oluyor. Dolayısıyla gradiyan değerleri mükemmel değil esasen.
+
+673
+02:33:56,435 --> 02:34:00,095
+Gradiyan tahminleri ile çalışıyoruz SGD'de.
+
+674
+02:34:01,835 --> 02:34:09,815
+Şimdi bu problemler, bu üç problem için farklı çözümler getirmeye çalışıyorlar.
+
+675
+02:34:10,835 --> 02:34:18,396
+Bunlar da işte bahsettiğim gradiyan desentim bu masajlanmış halleri oluyor.
+
+676
+02:34:31,188 --> 02:34:57,288
+Bir fikir momentum ekleme SGD'ye. Momentum eklediğiniz zaman nesnenin sanki bir hızı olmuş oluyor yukarıdan aşağı inerken. Dolayısıyla o hızla şurada küçük bir minima varsa, şurada çıkması gereken küçük bir yokuş varsa o yokuşu çıkıveriyor.
+
+677
+02:34:58,420 --> 02:35:06,420
+Buraya takılıp kalmamış oluyor. Yine saddle pointlerde kendi hızı olduğu için bir miktar
+
+678
+02:35:14,484 --> 02:35:19,104
+O Saddle Point'lerden kurtulabiliyor. O hızla geçiyor yani orayı.
+
+679
+02:35:20,184 --> 02:35:28,484
+Poor Conditioning, yani az önce bahsettiğim Conditioning, matrisin Condition'ı,
+
+680
+02:35:30,564 --> 02:35:35,804
+eş yükselti çizgilerinin dairsel değil de böyle bir elips şeklinde olması.
+
+681
+02:35:40,500 --> 02:35:43,200
+Momentum buna nasıl yardımcı olur bilemedim.
+
+682
+02:36:05,363 --> 02:36:14,063
+Sanırım şey olacak yani şimdi buraya zıpladı, buraya zıpladı, buraya zıpladı. Sonuçta bu vektör ya.
+
+683
+02:36:15,603 --> 02:36:17,644
+Hız dediğin şey bir vektör.
+
+684
+02:36:18,423 --> 02:36:22,263
+Hızın x ve y ise ha bire değişiyor ama
+
+685
+02:36:33,108 --> 02:36:41,548
+hep bu yönde. Bu X yönündeki bileşeni birleşerek güçleniyor mu acaba?
+
+686
+02:36:47,731 --> 02:36:51,331
+Onu artık size bırakıyorum. Araştırmayı.
+
+687
+02:36:53,612 --> 02:36:59,772
+Burada işte orijinal şeyde videoda animasyonlar var. Her birini gösteriyorlar.
+
+688
+02:37:00,272 --> 02:37:02,831
+Bulabilirsiniz onları internetten.
+
+689
+02:37:06,824 --> 02:37:17,824
+...
+
+690
+02:37:06,548 --> 02:37:07,588
+ııı
+
+691
+02:37:10,899 --> 02:37:21,079
+Şimdi SGD'yi bir formül olarak baktığında aslında şu oluyor. Yani x, buradaki x bizim ağırlıklarımız, weightlerimiz.
+
+692
+02:37:34,963 --> 02:37:43,243
+Bir alfa kat sayısı ile çarpıp çıkarıyoruz. Bu alfaya learning rate deniliyor. Ne kadar çıkartmak istediğimizi belirleyen bir ağırlık.
+
+693
+02:37:45,703 --> 02:37:55,984
+Momentum eklemek istersek hızı biraz eklememiz gerekiyor. Yani mevcut hızı eklemek istiyoruz. Bunu nasıl başarabiliriz?
+
+694
+02:38:01,363 --> 02:38:13,984
+Önce bir hız tanımlayacağız. Vt diyelim. Momentumda aynı anda sadece yer değil bir de hızı olmuş olacak. Bir hızı da maintain edeceğiz. Hız değişkenini.
+
+695
+02:38:13,984 --> 02:38:28,484
+T anındaki hızı artı gradiyan. Burada ağırlık var. Bir tane rho ile ağırlamışlar. Toplayıp bir sonraki hızı verecek.
+
+696
+02:38:29,523 --> 02:38:43,163
+Sonra yeni hızla alfayı çarpıp mevcut konumdan çıkarıp yeni konut, yeni yeri elde ediyorlar.
+
+697
+02:38:56,788 --> 02:39:22,448
+Dolayısıyla zaman içinde elimizde bir hız da oluyor. Dolayısıyla az önce mesela şu Conditioning probleminde tahmin ettiğim gibi Y'deki hız birbirini ha bire söndürürken X'deki hız söndürmeyecek. Dolayısıyla bu zıplama olayına bir çözüm olmuş oluyor.
+
+698
+02:39:26,388 --> 02:39:46,448
+Kodu da çok kolay esasen. Burada Python kodlarını da veriyorlar gördüğünüz gibi. Şurada bir vx sıfırla başlatıyor. Sonra önce vx'i elde ediyor. Şuradaki formüle göre. Sonra x'i vx'le çarpıp elde ediyor.
+
+699
+02:39:53,236 --> 02:40:10,056
+Başka bir Alternatif Formulation da var demiş. Ne yapmış burada? Farkı ne? Şu az önce gösterdiydi sanırım. Bu alfayı bu sefer yukarıya almış.
+
+700
+02:40:12,884 --> 02:40:24,283
+Alfa ağırlığı çarpılınca aynı şeye denk geliyor herhalde. Alfa Rho ile çarpılıyor. Alfa şununla da çarpılıyor. Alfa ile Rho'nun çarpımına yeni Rho demiş.
+
+701
+02:40:26,804 --> 02:40:37,283
+Negatif alfa bu. Dolayısıyla bu negatif alfa olmuş. Negatif alfa ile Rho'nun çarpımına Rho demiş. Aynı formülü.
+
+702
+02:40:39,572 --> 02:40:45,211
+Yani farklı paperlarda farklı şekilde görebilirsiniz diyor buna.
+
+703
+02:40:47,092 --> 02:40:54,452
+Şimdi Momentum'dan biraz daha ileriye gidince RMS Probe'a geliyoruz.
+
+704
+02:41:00,595 --> 02:41:10,075
+Burada fikir ne? Gradiyantın her boyutta...
+
+705
+02:41:15,092 --> 02:41:17,391
+Tarihi
+
+706
+02:41:20,435 --> 02:41:26,916
+Karelerinin toplamı ile, Gradyantı her element için ölçekliyor.
+
+707
+02:41:30,451 --> 02:41:40,451
+Formülünü yine şurada vermiş. Gradiyantı hesap ediyoruz normal. Sonra...
+
+708
+02:41:45,811 --> 02:41:50,351
+x'in türevlerine, kendi x'in türevinin karesini aldı.
+
+709
+02:41:53,072 --> 02:41:56,092
+Bir parametresi var. Decay Rate diyor.
+
+710
+02:41:58,112 --> 02:42:00,351
+Decay Rate çarpı gradiyanın karesi.
+
+711
+02:42:03,231 --> 02:42:05,891
+Artı bir eksi, dx çarpı dx demiş.
+
+712
+02:42:07,912 --> 02:42:12,912
+Grad squared şöyle bir kenarda takip ettiği bir değişken bu arada.
+
+713
+02:42:13,556 --> 02:42:35,995
+Grad Square'ı önce bir update ediyor. Sonra Learning Rate çarpı Grad Square'ın kare kökü. Burada bir Epsilon'la toplamış Grad Square'ın kare kökü sıfıra dönerse hesaplama sırasında.
+
+714
+02:42:40,275 --> 02:42:43,596
+Sıfırla bölme olmasın diye çok küçük bir değer eklemiş ona.
+
+715
+02:42:47,015 --> 02:42:48,695
+Buna RMS Prop diyor.
+
+716
+02:42:51,636 --> 02:43:04,556
+Buradaki fikir yani her bir bileşen için, VEIT'teki her bir bileşen için ayrı bir learning rate tutalım düşüncesiymiş.
+
+717
+02:43:15,156 --> 02:43:35,296
+Bunun neden işe yaradığını tartışmış. O zigzaga neden olan dik yönler azalıyor. Daha düz yönler hızlanıyor diyor. Bunu tabi videoda göstermişti. Geçiyoruz.
+
+718
+02:43:37,587 --> 02:43:47,867
+Adam çok kullanılan bir şey. Adam'a ulaşmak istiyoruz. Adam'a yaklaşacağız. Bu sefer iki Moment kullanmış.
+
+719
+02:43:52,187 --> 02:44:03,007
+Birincisi Momentum, ikincisi RMS Probe. Full Form'da bir de BIOS Correction var. Adam çok kullanılan bir şey.
+
+720
+02:44:04,659 --> 02:44:16,059
+Momentum, Bias Correction ve RMS Probe içeriyor. Bu şekilde gördüğünüz gibi Stochastic Gradient Descent ile böyle oynamalar bunlar.
+
+721
+02:44:21,332 --> 02:44:24,652
+Ama hep böyle bir mantıkla gidiyor. Yani
+
+722
+02:44:28,492 --> 02:44:30,283
+böyle grafiklerle
+
+723
+02:44:34,131 --> 02:44:56,871
+Mesela Adam, işte şurada beta 0.9, beta 2 0.96, 0.999, learning rate e-3 ya da 5e-4 birçok model için iyi bir başlangıç noktası diyor. Yani bunları da şey yapacaksınız ya, bunlar hiperparametreler.
+
+724
+02:44:57,652 --> 02:45:02,432
+Validation Set ile bunları da optimize edeceksiniz. En iyi değerlerini bulacaksınız.
+
+725
+02:45:07,188 --> 02:45:09,407
+Bu değerler ile başlayabilirsiniz.
+
+726
+02:45:11,688 --> 02:45:17,168
+Şimdi, Adam'ın da yeni versiyonu çıktı. Adam W gibi.
+
+727
+02:45:17,808 --> 02:45:20,247
+Adam W diye bir şey.
+
+728
+02:45:23,948 --> 02:45:26,128
+Bunu size ödev olarak bırakıyorum.
+
+729
+02:45:26,648 --> 02:45:27,927
+Geçiyorum.
+
+730
+02:45:28,567 --> 02:45:30,488
+Yani şu sıralar.
+
+731
+02:45:32,244 --> 02:45:49,443
+Bir şey ile başlayacaksanız, Adam W ile başlayabilirsiniz ya da Adam ile başlayabilirsiniz gibi şu anda en böyle, en popüler, en çok kullanılan Gradient Descent versiyonları.
+
+732
+02:45:59,860 --> 02:46:24,920
+Bu Learning Rate'lerin de bir Step Size vardı. Onların da Schedule'ları var. Bunları çok incelemişler. Bu Learning Rate parametresi düzgün olması çok önemli. İyi bir Learning Rate verirseniz şu kırmızıdaki gibi bir Loss eğrisi bekliyorsunuz.
+
+733
+02:46:27,123 --> 02:46:47,504
+Ne oluyor? Sanırım veri seti üzerinden bir kere geçmek oluyor. Yani veri seti üzerinden birden fazla geçiliyor burada. Yanlış bilmiyorsam. Onun araştırmasını da size bırakıyorum. Notal'ın araştırın.
+
+734
+02:46:51,763 --> 02:47:02,144
+Learning Rate'i çok yüksek tutarsanız çok hızlı bir iyileşme oluyor. Sonra ama erken bir sabitlenme ne deniliyor buna?
+
+735
+02:47:08,884 --> 02:47:27,463
+Approximation diyeceğim değil. Yani iyileşmemeye başlıyor. Convergence mıydı? Sanırım Convergence'tı. Erken Convergence oluyor. Yani optimizasyon artık duruyor.
+
+736
+02:47:29,324 --> 02:47:35,224
+Çok düşük bir Learning Rate'de, Learning Rate çok yavaş gidiyor.
+
+737
+02:47:36,564 --> 02:47:47,564
+Çok yüksek bir Learning Rate'de önce bir azalıyor, sonra yukarıya fırlıyor. Daha beter olmaya başlıyor. Dolayısıyla ideal güzel bir Learning Rate kullanmak gerekiyor.
+
+738
+02:47:51,924 --> 02:48:03,963
+Onun için bir kısım böyle fikirler geliştirmişler. Mesela, belirli bir yüksek Learning Rate ile başlayıp,
+
+739
+02:48:05,747 --> 02:48:15,608
+Belirli aşamalarda Learning Rate'i azaltıyorlar. Mesela ResNet çok popüler, çok başarılı bir model.
+
+740
+02:48:17,527 --> 02:48:22,128
+30 Epoch'da bir Learning Rate'i 0.1 ile çarpıyor.
+
+741
+02:48:25,716 --> 02:48:36,115
+Bunun yerine daha böyle 30 Epoch'da bir değil de belirli bir mantığa göre indirelim bu Learning Rate'i gibi yaklaşımlar var.
+
+742
+02:48:37,435 --> 02:48:42,615
+Mesela burada bir şu fonksiyona göre Learning Rate'i indirelim demişler.
+
+743
+02:48:42,615 --> 02:48:47,556
+Bunun da grafiğini görüyorsunuz. Learning Rate bu şekilde iniyor.
+
+744
+02:48:50,736 --> 02:48:52,615
+Burada T Epoch.
+
+745
+02:48:55,731 --> 02:48:59,731
+Alfa 0 başlangıç learning ratei.
+
+746
+02:49:08,084 --> 02:49:16,764
+Alfa T'de, O T'deki, O Anki, O Epoch'daki kullanacağınız Learning Crate olmuş oluyor.
+
+747
+02:49:22,764 --> 02:49:29,764
+Direkt böyle uğraşmayayım, böyle bildiğin Linear İndireyim gibi yaklaşımlar da var Learning Crate'i.
+
+748
+02:49:30,064 --> 02:49:34,064
+Mesela Bert çok popüler bir LLM.
+
+749
+02:49:36,948 --> 02:49:38,948
+Berth'te bu kullanılmış.
+
+750
+02:49:41,948 --> 02:49:47,948
+Şu şekilde kare kök yardımıyla eksponensiyel gibi indirme var.
+
+751
+02:49:47,948 --> 02:49:52,948
+Bu da yine çok popüler bir attention paperı.
+
+752
+02:49:52,948 --> 02:49:57,948
+Attention is all you need. Onu kullanmışlar.
+
+753
+02:50:03,123 --> 02:50:17,583
+Linear Warm-Up şöyle bir şeyi de görmüşler. Önce Learning Rate'i çok küçük başlatıp belli bir değere kadar yükseltip oradan indirirsek daha iyi sonuçlar veriliyor gibi analizler de olmuş.
+
+754
+02:50:21,543 --> 02:50:26,923
+ImageNet üzerinde büyük bir veri seti bir saatte eğitim yaptık falan demişler.
+
+755
+02:50:31,860 --> 02:50:54,000
+Şimdi Gradient Descent First Order diye geçiyor. Yani birinci dereceden gradiyan kullanılıyor. Ama böyle sorunları var. İşte böyle versiyonlarla çözmeye çalıştığımız ama teorik olarak altyapısında var olan bazı sorunlar var.
+
+756
+02:51:02,004 --> 02:51:17,324
+Ne yapıyor aslına bakarsanız? Belirli bir noktada bir düzlem, o noktadaki düzleme bir düzlem uyduruyor. O noktada fonksiyona.
+
+757
+02:51:17,324 --> 02:51:28,943
+Ve o düzlemin üzerinde daha iyi bir noktaya gidiyor. Yani bir gradient descent aslında first order olduğu için.
+
+758
+02:51:29,907 --> 02:51:36,768
+O noktada bir doğru fit etme ya da çok boyutlu da bir hiperdüzlem fit etme durumu var.
+
+759
+02:51:42,707 --> 02:51:54,967
+Bunun yerine mesela ikinci derece türev kullanırsanız, bu sefer ikinci derece türev size şöyle bir kuadratik eğri veriyor.
+
+760
+02:51:56,595 --> 02:52:12,595
+Ve bu kuadratik eğri, eğriyi fit ederseniz o noktada ve o kuadratik eğrinin minimumuna doğru giderseniz aslında daha iyi, teorik olarak daha iyi en azından sonuçlar elde ediyorsunuz.
+
+761
+02:52:17,995 --> 02:52:20,935
+Buna Second Order Optimization deniliyor.
+
+762
+02:52:21,407 --> 02:52:45,387
+İkinci derece vektör türevine Hesian deniliyor. Hesian ikinci derece vektör türevi. Dolayısıyla iki kere türev alıyorsunuz. Bu bir matrice dönüşüyor. Hatırlarsanız elimizde vektörler var. Birinci derece vektör, birinci derece türev size bir vektör veriyor. Gradiyan diyoruz.
+
+763
+02:52:47,188 --> 02:52:58,927
+Her bir vektör bileşenini, her bir gradyan bileşeninin bir daha vektör türevini alacaksınız. Dolayısıyla neye dönüşüyor bu? Bir matrise dönüşüyor.
+
+764
+02:53:01,067 --> 02:53:03,948
+Bu matrise de Hesian matrisi deniliyor.
+
+765
+02:53:10,932 --> 02:53:32,792
+Hatta bununla ilgili Tyler Expansion var. İkinci derece Tyler Expansion'ı yapalım. Optimizasyon derslerinde anlatılır bunlar. Bu şekilde Hesiyan temelli optimizasyon yapalım.
+
+766
+02:53:36,371 --> 02:54:00,631
+Optimizasyon da şu noktaya geliyor. Başlangıç noktasından Hesiyan'ın Hesiyan maddesinin tersini bulacaksınız. Onunla ne yapıyorsunuz? Şurada Gradiyan demiş, Jacobian demiş.
+
+767
+02:54:04,531 --> 02:54:25,791
+J sanırım burada fonksiyon. Jacobian değil, pardon karıştırdım. Yani yine gradiyan var. Ama gradiyanın birinde, yani birinci türev var. Bir de ama ikinci türev var. İkinci türev matrisinin matris tersi var.
+
+768
+02:54:30,899 --> 02:54:35,880
+Bunu çıkarırsanız daha hızlı optimizasyon oluyor.
+
+769
+02:54:38,040 --> 02:54:39,540
+Teorik olarak da.
+
+770
+02:54:40,239 --> 02:54:41,399
+Fakat şöyle bir sorun var.
+
+771
+02:54:43,819 --> 02:54:46,100
+Şimdi boyut sayısı çok büyük.
+
+772
+02:54:46,380 --> 02:54:50,520
+Milyarlarca boyuttan bahsediyoruz derin öğrenmede.
+
+773
+02:54:51,799 --> 02:54:54,180
+Bunun matrisi korkunç büyük oluyor.
+
+774
+02:54:54,180 --> 02:54:58,540
+Yani milyarlarca en kare ya.
+
+775
+02:55:00,371 --> 02:55:22,891
+Milyar çarpı milyar. Sonra onun bir de tersini almanız gerekiyor. Yani hafıza çok fazla istiyor. Tersini almanız gerekiyor. Matris tersi çok hızlı bir işlem değil. Yavaş bir işlem. Dolayısıyla teorik olarak güzel ama böyle çok boyutlu olduğu zaman uygulanması sorun olan bir durum var burada.
+
+776
+02:55:30,195 --> 02:55:34,195
+Bitirmiş mi burada? Bitirmiş galiba.
+
+777
+02:55:38,195 --> 02:55:42,195
+Pratikte Adam ya da Adam'da biliyor.
+
+778
+02:55:43,195 --> 02:55:45,195
+Tavsiye ediliyor.
+
+779
+02:55:48,195 --> 02:55:52,195
+SGD ve momentum bazen Adam'dan iyi olabiliyor.
+
+780
+02:55:56,084 --> 02:56:10,004
+Eğer acayip güçlü bir bilgisayarınız varsa ya da probleminiz küçükse o zaman ikinci derece HESİAN'lı yöntemleri kullanabilirsiniz.
+
+781
+02:56:10,264 --> 02:56:13,224
+Özet, bir deneyebilirsiniz yani.
+
+782
+02:56:18,548 --> 02:56:25,268
+Daha mor, daha kompleks şeyleri nasıl yapacağız? Bunlara ileride bakacağız. Burada dersi bitiriyoruz.
+
+783
+02:56:27,048 --> 02:56:29,208
+Lecture 3'ü bitirmiş olduk.
+
+784
+02:56:33,043 --> 02:56:36,664
+Siz gerisine bakabilirsiniz. Burası appendix.
+
+785
+02:56:44,147 --> 02:56:45,628
+Şeye bakıp kapatacağım.
+
+786
+02:56:50,739 --> 02:56:55,799
+Ödev 1'den ne kadar yapabilirsiniz ona bir göz atıp bırakacağım.
+
+787
+02:57:19,507 --> 02:57:26,227
+Şimdi, burada da otomatik tıklama var, hemen açıyor.
+
+788
+02:57:31,028 --> 02:57:37,148
+Şimdi, K-NN'i gördük. K-NN'i kesinlikle gördük.
+
+789
+02:57:38,587 --> 02:57:42,788
+Soft Max'ı kesinlikle gördük. Bu ikisini yapabilirsiniz.
+
+790
+02:57:48,340 --> 02:57:57,819
+Two-Layer Networkleri görmedik. Blue Connected Networkleri görmedik. Features neymiş?
+
+791
+02:58:01,427 --> 02:58:03,427
+Ona bakmaya çalışayım.
+
+792
+02:58:09,747 --> 02:58:11,500
+Elap neredeydi?
+
+793
+02:58:43,572 --> 02:58:49,292
+Softmax'ı yapabilirsiniz. Knn'i yapabilirsiniz. Features'a bakalım.
+
+794
+02:59:00,564 --> 02:59:02,564
+Bunu da yapalım.
+
+795
+02:59:10,835 --> 02:59:20,095
+Yani bu zaten kısa bir şeymiş. Load datayı falan yaparsınız da şurada Neural Network'lerden falan bahsediyor. Daha oraya girmedik.
+
+796
+02:59:20,095 --> 02:59:37,955
+Yani şu anda KNN IPMB'yi ve Softmax IPMB'yi yapabilirsiniz. Bunun da yarısını yapabilirsiniz. Dolayısıyla onları yapmaya başlayın diyorum arkadaşlar.
+
+797
+02:59:39,347 --> 02:59:42,927
+Bir sorumuz var mı? Bir şey var mı? Dersi bitireceğim.
+
+798
+02:59:47,827 --> 02:59:50,608
+Chatten yazabilirsiniz sesinizi duymadığım için.
+
+799
+02:59:57,075 --> 03:00:02,015
+Peki, o zaman haftaya görüşürüz. Başarılar diliyorum arkadaşlar.
+
+800
+03:00:06,451 --> 03:00:14,431
+Bir soru sorulmuş. Ödevler için data verecek misiniz? Datalar falan her şey var ödevin kendisinde.
+
+801
+03:00:17,940 --> 03:00:28,880
+Hocam, internet sayfasındaki KNN, IPMB, Softbox, IPMB notbookları açılmıyor. Sayfanın en başında hepsi birden bizim içinde veriliyor.
+
+802
+03:00:39,987 --> 03:00:43,407
+İyi günler arkadaşlar. Başarılar diliyorum.

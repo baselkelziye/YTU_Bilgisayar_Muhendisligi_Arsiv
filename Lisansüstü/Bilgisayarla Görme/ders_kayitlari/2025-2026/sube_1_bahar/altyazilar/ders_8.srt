@@ -1,0 +1,1891 @@
+1
+00:01:16,308 --> 00:01:27,928
+Merhaba arkadaşlar. Bugün sunum yapacak olanlar lütfen ders duvarına simlerini yazsınlar. Ben chatten de yazıyorum.
+
+2
+00:02:38,451 --> 00:02:40,451
+Evet, bunu örneğe tamamlı.
+
+3
+00:02:44,372 --> 00:02:46,612
+Merhaba hocam. Merhaba.
+
+4
+00:02:48,392 --> 00:02:49,712
+İzlice başlayalım.
+
+5
+00:03:05,427 --> 00:03:07,228
+Görmeyişlerimi açarım.
+
+6
+00:03:16,116 --> 00:03:17,116
+Ne diyeceğim.
+
+7
+00:03:21,268 --> 00:03:25,048
+Evet, ekranınızı gördüm. Sizi de görebiliyorum.
+
+8
+00:03:26,127 --> 00:03:35,888
+Evet, merhabalar hocam. Bugün Darkier Robust Low Light Image Restorasyon çalışmasını ve bu çalışmayı yeniden üretim sürecimi anlatacağım.
+
+9
+00:03:36,372 --> 00:03:52,932
+Bu çalışmadaki temel amaç düşük ışıklı görüntülerde oluşan bozulmaların giderilmesi. Ben bu proje kapsamında Darker M modelini yeniden kodladım. Ardından modeli LOL Blur Veri Seti üzerinde eğittim. Elde ettiğim sonuçları bildiride verilen sonuçlarla karşılaştırdım.
+
+10
+00:03:52,932 --> 00:04:00,852
+Sunumda önce problemi ve Darker genel yaklaşımını anlatacağım. Daha sonra mimari yapıya, eğitim kurulumuna, sonuçlara değineceğim.
+
+11
+00:04:01,364 --> 00:04:05,243
+Neden bu konuyu seçtiğimizi de kısaca açıklarsanız sevindim.
+
+12
+00:04:05,243 --> 00:04:17,484
+Bu konuyu seçmem aslında hem ilgimi çekti hem de daha kolay bir iyileştirme sağlayabileceğimi düşündüm. Ondan dolayı bu makaleyi seçtim aslında.
+
+13
+00:04:21,124 --> 00:04:28,884
+Problema geçelim. Problem, düşük ışıklı görüntü restorasyonu ilk bakışta sadece parlaklığı arttırma problemi gibi görünebilir.
+
+14
+00:04:30,036 --> 00:04:56,036
+Ama aslında bu problem bundan daha karmaşık. Çünkü düşük ışıkta yalnızca karanlık bir görüntü oluşmuyor. Aslında aynı anda birkaç farklı bozulma ortaya çıkabiliyor. Buna bir örnek verirsek, örneğin kamera yeterli ışık alamadığında pozlama süresi uzayabiliyor. Pozlama süresi uzadığında da özellikle tripod kullanılmayan elle görüntü çekimlerinde hareket bulanıklığı da oluşabiliyor bu görsellerde.
+
+15
+00:04:56,627 --> 00:05:14,367
+Buna ek olarak sensör az ışık aldığı için görüntüdeki gürültü miktarı da artıyor. Yani düşük ışıklı bir görüntü genellikle 3 bozulma birlikte bulunuyor. Düşük aydınlatma, gürültü ve bulanıklık. Bu problemi zorlaştıran asıl unsur ise şu.
+
+16
+00:05:15,699 --> 00:05:37,919
+Bu bozulmalar birbirinden tamamen bağımsız değil. Mesela görüntünün parlaklığını arttırdığımızda gürültü daha görünür hale gelebiliyor. Benzer şekilde bulanıklığı gidermeye çalışırken doğal olmayan kenarlar ve yapay detaylar üretilebiliyor. Bu yüzden başarılı bir modelin görevi sadece görüntüyü aydınlatmak değil, aynı zamanda yapıları, detayları ve görsel kaliteyi koruması da gerekmekte.
+
+17
+00:05:40,299 --> 00:05:42,919
+Darker'de bu probleme bu açıdan akıyor.
+
+18
+00:05:43,028 --> 00:06:09,388
+Yaklaşıyor aslında. Temel fikrimiz aslında düşük ışık iyileştirme problemi olarak ele alınmaması. Daha genel bir görüntü restorasyonu problemi olarak makale bu veya paper blue çalışmayı yapıyor. Modelden beklediğimiz şey yalnızca parlak bir çıktı üretmesi değil. Aynı zamanda daha temiz, daha keskin ve hedef görüntüye yapısal olarak daha yakın bir.
+
+19
+00:06:10,196 --> 00:06:27,256
+Bu görüntü çıktısı üretmez modeli. Bu yüzden Darker'de iki temel ihtiyaç öneri çıkıyor açıkçası. Birincisi karanlık görüntüden daha anlamlı bir temsil çıkarmak. İkincisi ise bu temsil kullanarak görüntüyü yeniden oluştururken detayları mümkün olduğunca korumak.
+
+20
+00:06:28,236 --> 00:06:32,076
+Modelin enkoder-dekoder yapısı bu mantıkla kuruldu aslında.
+
+21
+00:06:34,132 --> 00:06:48,111
+Encoder tarafında daha çok temsil çıkarma ve dış ışık bilgisini iyileştirmeye odaklanılıyor. Decoder tarafında ise bu temsili görüntüye dönüştürerek detayları kazanmaya odaklanıyor.
+
+22
+00:06:49,012 --> 00:06:59,951
+Önemli bir şey soracağım. Bu modellerde modeli eğitirken bunun aydınlı, keskin görüntü çiftinin de olması gerekiyor mu?
+
+23
+00:07:01,531 --> 00:07:02,672
+Evet hocam.
+
+24
+00:07:03,131 --> 00:07:04,891
+Yöntemler o anlamda ikiye ayrılıyor ya.
+
+25
+00:07:05,351 --> 00:07:09,812
+Grand truth'umuz var bu çalışmada. Onu soruyorsanız sanırım.
+
+26
+00:07:10,312 --> 00:07:10,672
+Evet.
+
+27
+00:07:11,192 --> 00:07:11,951
+Evet, var.
+
+28
+00:07:12,111 --> 00:07:14,391
+Treyi derken de kullanıyorsunuz onu değil mi?
+
+29
+00:07:14,451 --> 00:07:15,491
+Aynen.
+
+30
+00:07:18,291 --> 00:07:30,451
+Genel mimariye bakalım. Genel mimariye baktığımızda Darker, UNet benzeri bir enkoder, dekoder yapısına sahip. Girişte düşük kaliteli bir RGB görüntü var.
+
+31
+00:07:33,151 --> 00:07:42,251
+Şöyle de görebiliriz şurada inputu. Bu görüntü uzayı enkoderdan geçerek özellik uzayına taşınıyor.
+
+32
+00:07:42,803 --> 00:07:51,683
+Çözünürlüğü enkoder azaltırken kanal sayısını arttırarak özellikleri geliştiriyor, iyileştiriyor.
+
+33
+00:07:52,463 --> 00:08:01,183
+Buradaki amaç modeli sadece küçük piksel bölgelerine değil, görüntünün daha geniş bir kısmına bakarak karar vermesine odaklanmak istiyor.
+
+34
+00:08:01,183 --> 00:08:10,183
+Daha sonra dekoder tarafında bu temsil tekrar yüksek çözünürlüklü görüntüye dönüştürülerek hem aydınlık hem bulanıklığı giderilmiş bir...
+
+35
+00:08:11,444 --> 00:08:16,824
+Görüntü elde edilmesini sağlıyor. Burada aslında önemli bir nokta da şu, burada atlama
+
+36
+00:08:18,103 --> 00:08:21,884
+şurada atlama bağlantıları kullanıyor. Bu da bize
+
+37
+00:08:21,884 --> 00:08:26,804
+Dekoder'ın aslında görüntünün yapısal özelliklerinden de haberdar olmasını sağlıyor.
+
+38
+00:08:46,515 --> 00:08:59,375
+Yani şimdi şeyde de mimaride de aslında enkoder tarafında ebblok, dekoder tarafında da dbblok adı verilen aslında isimlendirme olarak sadece böyle koymuş. Şimdi bunlara bakalım.
+
+39
+00:09:08,052 --> 00:09:11,352
+eBblock Encoder tarafındaki aslında temel yapımız.
+
+40
+00:09:14,899 --> 00:09:38,480
+Burada Spam ve Free MLP gibi iki tane ana bileşeni var aslında. Spam Spatial Attention Module. Free MLP ise Frequency Multilayer Perseptron. Spam'dan başlarsam uzamsal bilgiyi işleyen yapı aslında burada.
+
+41
+00:09:39,059 --> 00:09:46,159
+Model detayları, piksel komşuluklarını ve görüntü içerisindeki yapısal ilişkileri öğrenmeye çalışıyor.
+
+42
+00:09:46,879 --> 00:09:53,000
+Spom içinde Simple Gate ve Simplified Channel Attention gibi birleşenler var.
+
+43
+00:09:53,460 --> 00:09:58,059
+Simple Gate aslında kanal sayısını yarıya düşürüyor.
+
+44
+00:09:58,059 --> 00:10:03,200
+Yani kanalı aslında iki parçaya bölüyor. Kanalları kendi içinde iç çarpım yapıyor.
+
+45
+00:10:06,515 --> 00:10:15,076
+Yarıya düşüyor. Bu aslında klasik aktivasyon fonksiyonu gibi çalışıyor ama daha hafif bir kapılama mekanizması kullanıyor.
+
+46
+00:10:16,576 --> 00:10:26,096
+Simplified Channel Attention'a gelirsem, kanal bazında hangi bilgilerin daha önemli olduğunu öğrenilmesini sağlıyor. Böylece her kanal eşit kullanılmıyor.
+
+47
+00:10:26,635 --> 00:10:33,675
+Hangi kanal mesela aydınlıkla ilişkili, hangisi yapısal özellikle ilişkili gibi.
+
+48
+00:10:34,515 --> 00:10:53,056
+Bir şeyi sağlıyor bize. Aslında EB blokun en önemli bölümlerinden birisi de Frequency Multilayer Perceptron bölümü. Çünkü bu bölümde aslında aydınlatma işlemiyle alakalı özelliklerimiz var.
+
+49
+00:10:53,908 --> 00:11:02,728
+Çalışmada aydınlatma bilgisinin genlik bileşeniyle ilişkili olduğu, yani Fourier uzayına dönüştürüldükten sonra iki tane bileşen elde ediyoruz, genlik ve faz.
+
+50
+00:11:03,468 --> 00:11:16,208
+Aydınlatma bileşinin daha çok genlik bilgisiyle ilişkili olduğunu varsayarak burada işlem yapıyor ama faz bilgisini aynen koruyarak iletiyor diğer katmana.
+
+51
+00:11:21,011 --> 00:11:35,631
+Bu nedenle enkoder'un çözünürlüğü azaltan klasik bir bölüm gibi düşünmememiz gerekiyor aslında. Aynı zamanda düşük ışık koşullarında daha anlamlı ve kullanılabilir bir temsil öğretmeye çalışan bir yapı oluşturuyoruz. Şimdi denk dekoder tarafına geçeyim.
+
+52
+00:11:40,532 --> 00:11:54,852
+Dekoder tarafında ise aslında db blok kullanılıyor. Bu bölümde enkoder'dan gelen temsil tekrar görüntü uzayına taşınmaya çalışılıyor.
+
+53
+00:11:54,852 --> 00:12:02,852
+Yani görüntünün aslında ilk enkoder blok tarafında aydınlatma problemini çözüyoruz.
+
+54
+00:12:04,820 --> 00:12:12,180
+Dekoder tarafında ise bunun tekrar yüksek çözünürlüklü bir hale getirerek bulanıklığın azaltılmasını sağlamaya çalışıyoruz.
+
+55
+00:12:14,299 --> 00:12:24,380
+Ama sadece çözünürlüğü arttırmamız da yeterli. Dil görüntünün detaylarının, kenarlarının ve yapısal özelliklerinde geri kazanılıp korunması da gerekiyor aynı zamanda.
+
+56
+00:12:26,799 --> 00:12:50,759
+Dekodur blok içinde Dispam yapısı bulunuyor. Dispam farklı Dilation oranlarına sahip Depth-Wise Convolution dalları kullanıyor. Burada amaç olan, yani bunu neden yaptığı modellerin farklı ölçeklerde çevre bilgisi toplayabilmesi. Küçük Dilation oranları daha yerel detayları yakalarken büyük Dilation oranları ise daha geniş ölçekteki ilişkileri yakalama hedefliyor.
+
+57
+00:12:51,475 --> 00:13:04,836
+Restorasyon probleminde bu önemli çünkü bazı bozulmalara yanlışca yakın komşuluk bilgisiyle çözülemeyebiliyor. Modelin hem küçük ölçekli detaylara hem de geniş sahne yapısına bakması gerekebiliyor.
+
+58
+00:13:05,491 --> 00:13:20,191
+Dekodur'da ayrıca Gated FFN yapısı kullanılıyor. Bu yapı daha önce kanal boyutunu genişletiyor. Ardından Simple Gate ile seçici bir dönüşüm uyguluyor. Sonrasında kanal boyutu tekrar azaltılıyor.
+
+59
+00:13:21,571 --> 00:13:27,811
+Dekodur gelen temsili doğrudan büyütmek yerine aslında daha kontrollü ve seçici bir şekilde görüntüye dönüştürüyor.
+
+60
+00:13:30,803 --> 00:13:34,123
+Teknik Üniversitesi Oluşturdukları loss fonksiyonuna bakalım.
+
+61
+00:13:37,264 --> 00:13:44,823
+Tek bir kayıp fonksiyonu yerine aslında birden fazla kayıp bileşeni içeren bir kayıp fonksiyonu kullanıyoruz.
+
+62
+00:13:45,843 --> 00:13:53,703
+Bunun nedeni aslında görüntü restorasyonunda tek bir kayıp fonksiyonunun görüntü kalitesini tamamen temsil edememesi oldu.
+
+63
+00:13:54,484 --> 00:14:07,684
+Yani sadece piksel farkını azaltmak görsek olarak iyi bir çıktı üretmeyi garanti etmiyor. Burada çünkü hani piksel farkı aslında görüntünün rengi ve parlaklığı ile alakalı ancak yapısal özellikleri korun.
+
+64
+00:14:09,064 --> 00:14:11,604
+Kayıp dileşenlerine gelelim.
+
+65
+00:14:12,596 --> 00:14:29,956
+İlk kayıp bileşini Labrylos olarak kullanmışlar. Bu kayıp çıktı görüntüyle hedef görüntü arasındaki piksel düzeyindeki farkı azaltmayı hedefliyor. Yani işte renk, parlaklık, yoğunluk değerlerinin hedef görüntü, çıktı görüntüsünün hedef görüntüye yakınsamasını sağlamaya çalışıyor.
+
+66
+00:14:30,580 --> 00:14:58,460
+İkinci birleşenimiz Algısal Kayıp, Perception Loss. Bu kayıp işte görüntülerin üst seviye özellikleri bakımından birbirine benzemesini hedefliyor. Yani sadece piksel değerlerine değil, algısal benzerliğe de katkı sağlıyor. Üçüncü birleşenimiz Edge Loss, kenar kaybı. Bu kayıp kenar bilgisinin ve ince detayların korunmasına yardımcı oluyor. Son birleşenimizde Lol Loss. Bu kayıp Enkoder'ın ara çıktısını denetliyor.
+
+67
+00:14:58,580 --> 00:15:07,940
+Aslında. Böylece Enkoder, yalnızca soyut özellikleri üretmiyor. Aynı zamanda restorasyon açısından anlamlı bir ara temsil üretmesini de sağlıyor.
+
+68
+00:15:09,800 --> 00:15:22,000
+Özetle bu kayıplar birlikte kullanılarak modelin piksel doğruluğu, yapısal kalite ve algısal görünüm açısından daha dengeli bir şekilde öğrenmesini hedefliyor.
+
+69
+00:15:22,000 --> 00:15:24,200
+Şimdi veri setine geçelim.
+
+70
+00:15:26,259 --> 00:15:48,460
+Veri Seti, LOL Blur Veri Seti kullanıldı. Bu veri setinde giriş görüntüleri düşük ışıklı, gürültülü ve bulanık görüntülerden oluşuyor. Hedef görüntüleri ise daha aydınlık ve keskin referans görüntüler. Veri setinde 10.200 eğitim verisi ve 1800 test verisi var. Bunları ayrı ayrı veriyorlar. Zip klasörü halinde.
+
+71
+00:15:52,755 --> 00:15:57,056
+Yani validation için eğitim verisinden bir kısmı ayırdım. Test verisi zaten hazır.
+
+72
+00:15:59,316 --> 00:16:04,176
+Verinin önemli tarafı aslında bizim çalışmadaki problemle uygun olması.
+
+73
+00:16:05,115 --> 00:16:09,276
+Yani karanlık görüntüyü aydınlatmayı hedefleyen bir veri seti değil.
+
+74
+00:16:09,375 --> 00:16:14,755
+Aynı zamanda bulanıklılıklar bulunuyor veri setinde. Bunun da giderilmesini sağlayır.
+
+75
+00:16:18,076 --> 00:16:20,076
+Deney kurulumuna geçeyim.
+
+76
+00:16:20,916 --> 00:16:26,355
+Deney kurulumunda yeniden üretim sürecinde Google Colab ortamını kullandım.
+
+77
+00:16:27,156 --> 00:16:36,936
+A100 ve zaman zaman G4 GPU. G4 diye geçiyor ancak sanırım içinde RTX Pro 6000 serisi kullanıyorlar.
+
+78
+00:16:37,936 --> 00:16:46,756
+Bildirideki M, Dark Air M modeline yani Medium modeline mümkün olduğunca yakın bir eğitim kurulumu oluşturmayı hedefledim.
+
+79
+00:16:47,251 --> 00:17:00,611
+Veri tarafında görüntülerden rastgele 384 ve 384 kesmeler aldım, kırpmalar aldım. Bunun yanında işte döndürme gibi temel augmentasyon yöntemlerini kullandım.
+
+80
+00:17:00,611 --> 00:17:06,612
+Böylece döndürülmeye de model daha...
+
+81
+00:17:07,667 --> 00:17:35,207
+Dayanıklı oluyor yani. Bir veri döndürülünce bu sefer algılayamamı problemlerini ortadan kaldırmaya çalışıyoruz. Optimizasyon için bildiride olduğu gibi Adam W algıdır ekmesini kullandım. Öğrenme oranı tarafında Cosine Scheduler kullandım. Böylece eğitim ya iterasyon arttıkça kademeli olarak bir düşüş yaşadık. Düşüş gerçekleşti öğrenme oranında.
+
+82
+00:17:36,307 --> 00:17:59,947
+Bu süreçte bir problemle de karşılaştık. Bundan da bahsedeyim. Şimdi AMP kullanarak aslında FP32 işlemleri FP16 olarak çalıştırabiliyoruz. Ancak bizim Frequency Multilayer Perceptron modülündeki Fourier işlemlerinde taşma gerçekleşti.
+
+83
+00:18:03,220 --> 00:18:18,779
+Bu bileşeni FP32 ile hesaplayıp, diğer kalan işlemleri FP16 ile yapıp, hem hızdan kazanarak hem de Nata Nambur ve taşma sorunlarını ortadan kaldırmayı başardım.
+
+84
+00:18:21,491 --> 00:18:45,951
+Eğitim metriklerine gelelim aslında. Eğitim metrikleri, eğitim boyunca doğrulama kümesi üzerinde PSNR ve SSIM metriklerini takip ettim. PSNR çıktı görüntüsünün hedef görüntüye piksel düzeyinde ne kadar yakın olduğunu ölçüyor. Daha yüksek PSNR piksel hatasının daha düşük olduğunu gösteriyor. SSIM ise yapısal benzerliği ölçüyor aslında.
+
+85
+00:18:46,644 --> 00:18:52,063
+Yani görüntülerin parlaklık, kontrast ve yapı açısından ne kadar benzer olduğunu bir değerlendiriyor.
+
+86
+00:18:52,063 --> 00:18:59,244
+Eğitim süresince SSIM, şuradaki gördüğünüz altta SSIM, üstteki bir PSNR grafikleri.
+
+87
+00:19:00,083 --> 00:19:02,543
+SSIM daha düzenli bir artış gösterdi.
+
+88
+00:19:03,183 --> 00:19:09,124
+Ancak PSNR ise bir dalgalı bir seyir izledi.
+
+89
+00:19:09,224 --> 00:19:14,163
+Zaman zaman yükseldi, zaman zaman arttı.
+
+90
+00:19:15,220 --> 00:19:27,539
+PSNR'daki aslında bu fark biraz daha, yani bu dalgalı seyir aslında biraz daha beklenebilir. Çünkü küçük parlaklık ve renk farkları aslında PSNR değerlerini değiştirebiliyor.
+
+91
+00:19:29,539 --> 00:19:38,539
+Şimdi ana test sonuçlarımıza gelelim. Ana test sonuçlarında yine ürettiğim model yaklaşık 3.3 milyon parametreye sahip oldu. Bildirideki...
+
+92
+00:19:39,700 --> 00:20:06,920
+3.31 milyon parametreydi. Yani aslında parametre olarak birbirine yakın ama yine de bir fark var. Performans tarafında 90K iterasyon izleyebildim. Çünkü şöyle bir problem var burada hocam. 24 saati geçen bir eğitim süresi var aslında. Bu yüzden o biraz zorladı yani 200K iterasyonu tamamlamanın açısından.
+
+93
+00:20:08,307 --> 00:20:31,128
+Sonuçlarımıza bakarsak, ben yeniden ürettiğim modeli 26.58 PSNR ve 0.868 SSIM değerleri elde ettim. Bu makaledeki değerlerden biraz daha düşük kalıyor. Makalede 27.0 ve 0.885 değerleri elde ettik.
+
+94
+00:20:33,107 --> 00:20:39,427
+Buradaki farkın aslında belki yüksek ihtimalle iterasyon sayısından kaynaklandığını düşünüyorum.
+
+95
+00:20:40,488 --> 00:20:47,667
+[öğrenci] burada kendi uygulamanda 90 bin iterasyon demişsin. Bildiride ne kadar yapmış?
+
+96
+00:20:48,207 --> 00:20:50,847
+Bildiride 200 bin iterasyon.
+
+97
+00:20:50,847 --> 00:20:53,647
+Yani sevdiğin iki katından fazla.
+
+98
+00:20:54,248 --> 00:20:54,567
+Aynen.
+
+99
+00:20:55,127 --> 00:20:55,847
+Peki.
+
+100
+00:20:59,380 --> 00:21:10,000
+Burada görsel sonuçları aslında gösterelim. Şimdi soldaki girdi görüntümüz, ortadaki çıktı, sağdaki de Ground Route. Yani işte hedef görüntümüz.
+
+101
+00:21:12,980 --> 00:21:24,380
+Aslında sonuçlarla benzer olarak iyileşme var. Ancak şu ortadaki görselde gördüğümüz gibi birazcık bulanıklık kalmış maalesef.
+
+102
+00:21:26,099 --> 00:21:31,599
+Yüksek ihtimalle makaleden eksiğimiz olan kısım olarak söyleyebilirim.
+
+103
+00:21:32,199 --> 00:21:37,079
+Hangi modellerin çıktısı bunlar? Üç satırda farklı modelin çıktısı herhalde.
+
+104
+00:21:37,079 --> 00:21:47,419
+Hocam, kare test verilerinde bunlar aslında. Üçü de. Bunlar hepsi benim çıktılarım. Ortadakiler benim çıktılarım. Sağdakiler Ground Truth.
+
+105
+00:21:53,268 --> 00:21:58,028
+Şimdi bir video görüntüsünden alınmış. Frame Frame. Aslında Frame'ler bunlar.
+
+106
+00:21:58,588 --> 00:22:00,388
+Çok birbirine benzeyen kareler.
+
+107
+00:22:00,388 --> 00:22:11,108
+Aynen. Mesela şurada hafif dönmüş gibi. Hafif sola dönermiş gibi bir çekmiş sanırım. Burada biraz aşağı dönmüş mesela. O şekil.
+
+108
+00:22:15,068 --> 00:22:19,244
+Ablasyonlarımdan bahsedelim. Ablasyonlarımda aslında...
+
+109
+00:22:28,051 --> 00:22:49,811
+Şimdi bizim zaten modelde şey kullanılıyordu. Frequency Bileşen'i kullanılıyordu. Yani işte Poirier'i dönüştürdükten sonra. Ben de burada şeyi düşündüm aslında. Buraya bir Lost Bileşen'i eklersek hani o tarafı daha iyi öğrenip daha iyi bir çıktı sağlar mı bize gibi.
+
+110
+00:22:55,124 --> 00:23:15,844
+Faydadan çok zarar getirdiğini gördüm burada. Oluşturduğum baseline modene göre PSNR, SSL ve LPI PS değerinde kötü sonuç elde ettim. Yani hipotez burada maalesef başarılı olmadığı bir tane daha var aslında. Charbonnier yaklaşımı bu.
+
+111
+00:23:23,056 --> 00:23:50,596
+Bazı bölümlerde daha smooth azalmasını sağlıyor. Burada PSNR değerleri daha yakın oldu baseline modelime göre. Ancak burada da son kısımlar olduğu için sürelerin 30K iterasyon kadar yapabildim. Belki yine 90K iterasyona çıksam bu değerleri baseline modeli geçeceğini düşünüyorum açıkçası.
+
+112
+00:23:52,884 --> 00:23:56,024
+Neler yaptık?
+
+113
+00:23:57,964 --> 00:24:01,144
+Darkram modelini geliştirdim.
+
+114
+00:24:01,504 --> 00:24:04,264
+LOL Bulur veri seti üzerinden aslında bunu eğittim.
+
+115
+00:24:05,204 --> 00:24:10,183
+Bahsettiğim taşma sorunlarını çözdüm.
+
+116
+00:24:10,964 --> 00:24:14,683
+İki tane de loss fonksiyonlarına ablasyon testi uyguladım.
+
+117
+00:24:15,864 --> 00:24:17,304
+Teşekkürler beni dinlediğiniz için.
+
+118
+00:24:19,539 --> 00:24:39,500
+Teşekkür ederiz sunumun için. Size alkışlıyoruz. Soru var mı? Evet, sonuçlar çok kötü değil aslında. Hani şeyde de SSI'de ikinci sırada falansın galiba.
+
+119
+00:24:47,155 --> 00:25:09,835
+Şey, orada şey var mıydı hatırlamıyorum da bir saniye bakayım. Parametre sayıları var şimdi şu slide'da. 3 milyon parametreyle aslında bu sonuçlara yaklaşmak gayet iyi çünkü şurada 16 milyon parametreyle SSIM'de daha üstün, o PSNR'de daha düş. Yani bu şekilde bir çalışma.
+
+120
+00:25:11,923 --> 00:25:17,644
+Peki. Yani en üstteki de 7 milyon parametreli seninkinin iki katı gene.
+
+121
+00:25:20,283 --> 00:25:22,503
+Aynen. Ondan daha iyi derler o.
+
+122
+00:25:23,603 --> 00:25:27,923
+Güzel. Teşekkür ediyoruz çalışma için ve sunumum için.
+
+123
+00:25:28,563 --> 00:25:29,883
+Ben teşekkür ediyorum hocam.
+
+124
+00:25:30,343 --> 00:25:35,243
+Evet. Şimdi ikinci sırada [öğrenci]. Hazır mıyız?
+
+125
+00:25:36,043 --> 00:25:36,763
+Hazırım hocam.
+
+126
+00:25:37,299 --> 00:25:39,720
+Bir paylaşımı sonlandıralım Ereğ.
+
+127
+00:25:44,500 --> 00:25:46,539
+İstek yolladım ama paylaşım için.
+
+128
+00:25:46,960 --> 00:25:50,200
+Şey, not cool için. Tamam, şimdi derdim izin.
+
+129
+00:25:53,500 --> 00:25:54,860
+Bir saniye.
+
+130
+00:25:56,799 --> 00:25:58,660
+Ekran paylaştım hocam, geldi mi şimdi?
+
+131
+00:25:59,220 --> 00:26:01,500
+Evet. Tam ekran yaparsak.
+
+132
+00:26:01,500 --> 00:26:02,640
+Tam ekran yapıp başlıyor.
+
+133
+00:26:05,523 --> 00:26:33,243
+Bu konum MS-EDS Dekoder oluşturulmuş bir çalışmada. Bir dekoder tipi. Bunun bildirisini inceledim. Tıbbi segmentasyon modelleri için kullanılmış bir dekoder. Kaisli Üniversitesi'nde yapılmış Güney Kore'de. Bu konuyu seçmek için aslında çok özel bir nedenim yok. Görüntü işlemede de çok tecrübem yoktu. Bu derste beraber biraz öğrenmeye çalışıyorum. Tıbbi tarafta bir şey seçmek istedim.
+
+134
+00:26:33,523 --> 00:26:38,523
+Biraz daha ilgimi çekiyordu. Konu olarak bunu listeden bulabilirim. O yüzden bunu seçtim.
+
+135
+00:26:40,963 --> 00:26:49,963
+Sonu genel olarak 3 ana parçada anlatacağım. Önce seçtiğim makaleyi, sonra kendi yaptığım deneyi ve sonuçların karşılaştırması olarak aktarmaya çalışacağım.
+
+136
+00:26:52,468 --> 00:27:02,548
+Öncelikle tıbbi tarafta ne tür problemler var? Veri azlığı problemi var. Kullandığım veri setlerinde de hem TSM train datasında çok az veriler vardı.
+
+137
+00:27:02,548 --> 00:27:14,668
+Çünkü okuduğum ve anladığım kadarıyla piksel düzeyinde maske oluşturmak masraflı oluyor. Bu yüzden veri setleri biraz az sayıda data içerebiliyor.
+
+138
+00:27:16,819 --> 00:27:24,879
+Bazı datalarda sınırlar birbirine çok yakın olduğu için her örnekte çok net olmayabiliyor. Belirsiz sınırlar olabiliyor.
+
+139
+00:27:25,839 --> 00:27:34,359
+Sınıf dengesizliği oluyor. Özellikle kullandığım ve makalede kullanılan bir data sette, EM data setinde,
+
+140
+00:27:36,240 --> 00:27:43,240
+mitochondria maskı oluşturulmuş. Ancak arkada birçok hücre içerisinde element var. Bu yüzden arka plana kayabiliyor.
+
+141
+00:27:45,236 --> 00:28:07,816
+Enkoder ve decoder. Ve domen farkı var. Histopoloji görüntüleriyle elektron mikroskopu görüntüleri benzer gibi ama hep yapısı da farklı olabiliyor. Görüntü karakteristikleri de farklı olabiliyor ki bu çalışmada da zaten birazdan benim sonuçlarda farklı domenlerde ne kadar kötü sonuçlar verdiğini göreceğiz.
+
+142
+00:28:08,627 --> 00:28:27,627
+Bildirinin tam adı Rating Decoder Design. Hepsini okumama gerek yok herhalde. Temel olarak şunu anlatmak istemişler. Decoder yapısına farklı bir bakış açısı getirmek istemişler. Decoder'ı sadece enkoder'dan aldığı bilgilerle görüntüyü büyüten bir katman olarak değil. Bilgileri...
+
+143
+00:28:28,180 --> 00:28:48,019
+seçip bilgileri öneme sırasına göre filtreleyip sonuçlara katkı sunabilecek bir katman olarak düşünmüşler ve bu konuda bir çalışma yapmışlar. Özellikle sınır detayların konusunda bilgiyi daha iyi geri kazanabilecekleri ve sınır detaylarının daha iyi gösterebileceklerini düşünmüşler bu sayede.
+
+144
+00:28:49,556 --> 00:29:05,056
+Az önce anlattığım gibi bu decoder neyi değiştiriyor? Önemli özellikleri seçiyor. Enkoder'dan gelen bilgiyi buna göre düzenliyor ve çözünürlüğü geri kazandırıyor. Temel decoder'da daha çok çözünürlüğü geri kazandırma katmanı bulunuyor.
+
+145
+00:29:08,196 --> 00:29:15,256
+Genel mimarisi de bu şekilde. Burada bahsettiğim işi yapan katmanlar masum görünüyor mu bilmiyorum ama.
+
+146
+00:29:16,468 --> 00:29:33,468
+Burada Arlab ve Ksb katmanları kendi oluşturdukları. Enkoder'dan gelen bilgi Arlab katmanında, Dekoder'daki hali hazırda daha önceki...
+
+147
+00:29:34,355 --> 00:29:53,615
+Skiplerden gelen bilgilerle daha uyumlu hale getiriyorlar. Sonrasında ksf katmanında da özellikle sınır bilgileri için kendi filtreleriyle daha önemli olanları daha öne çıkarıyorlar gibi özetleyebilirim.
+
+148
+00:29:53,615 --> 00:29:59,175
+Bu sayede decoder'da da aslında sadece bir yükseltme değil.
+
+149
+00:30:00,531 --> 00:30:04,112
+Bilgileri Önem Sırası ve Filtreleme yapılıyor.
+
+150
+00:30:06,172 --> 00:30:08,211
+Bu da bahsettiğimin özeti zaten.
+
+151
+00:30:11,284 --> 00:30:28,564
+Enkoder tarafında da UI 2.NET tabanlı bir enkoder kullanmışlar. Kendi dekoder tarafıyla uyumlu olması için ufak tefek değişiklikler yaptıklarını söylüyorlar ama zaten makalede de çok değinmemişler enkoder tarafına. Daha çok makaleyi kendi yaptıkları dekoder tarafından anlatmışlar.
+
+152
+00:30:30,771 --> 00:30:54,271
+Makayede kullanılan 4 tane dataset var. Bu datasetlerden 3 tanesini hem test hem de hem eğitim hem de test için kullanmışlar. Bir tane dataset, TNBC datasetini sadece test için kullanmışlar. Diğer datasetlerde oluşturdukları modelleri sadece TNBC'de de test etmişler.
+
+153
+00:30:58,228 --> 00:31:10,428
+Bundaki dataların hepsi, yanlış söylemezsem HNA boyalı datalar ve hedef yapısı oluşturan mask hücre çekirdeği.
+
+154
+00:31:10,428 --> 00:31:16,868
+Bunlar patoloji görüntüsü galiba, hematoksinozin boyalı patoloji görüntüleri değil mi?
+
+155
+00:31:16,888 --> 00:31:18,848
+Evet, boyalı patoloji görüntüleri.
+
+156
+00:31:20,068 --> 00:31:23,628
+DCB 2018'de boyalı görüntüler de var.
+
+157
+00:31:24,756 --> 00:31:37,436
+Yani bu konuda çok şey değilim ama yanlış da söylüyor olabilirim. Elektron mikroskobuna benzeyen boyasız yine gri görüntüler de var ama burada da hedef yapı oluşturulanmaz çekirdek, hücre çekirdeği.
+
+158
+00:31:37,876 --> 00:31:47,456
+EM datasetinde sadece elektron mikroskobu görüntüleri var, boyalı görüntü yok ve diğerlerinden farklı olarak hedef yapısı da burada mitogondri sadece.
+
+159
+00:31:48,692 --> 00:32:01,892
+Bu dataset'ler üzerinden hem eğitim hem test yapmışlar. Bunlardan oluşturan modellerle TMBC'de test yapmışlar. TMBC'de yine Monosec gibi boyalı ve hedef yapısı çekirdek olan bir dataset.
+
+160
+00:32:01,892 --> 00:32:07,092
+Şöyle sonuçlarını da göstereyim.
+
+161
+00:32:08,019 --> 00:32:29,440
+Hemen hemen her metrikte zaten kendi test ettikleri dekoderlarla bu çalışmada hem kendi dekoderunu kullanmışlar hem de UNET, Diplab benim şurada da kullandığım UNET++ gibi dekoderlarla da kullanmışlar hepiyi ve sota sonuçlarla da karşılaştırmışlar datasetler için.
+
+162
+00:32:29,940 --> 00:32:41,940
+Her metrikte yüksek çıkmış. Yani başarılı bir sonuç vermiş. Özellikle makalede bahsedilen, tam olarak nasıl telaffuz bile bilmiyorum ama...
+
+163
+00:32:41,940 --> 00:32:43,779
+House of Distance.
+
+164
+00:32:43,779 --> 00:32:55,920
+House of Distance, evet. Bu metrikte de hepsine düşük çıkmış. Bu metrikte bildiğim kadarıyla daha çok sınır hassasiyeti için kullanılıyor.
+
+165
+00:32:56,468 --> 00:33:14,468
+Bunun da üstünde durmuşlar. Çünkü zaten makalenin başlarında da sadece alanları bulmak değil, sınır hassasiyetini koruyabilmek, o bilgiyi Dikordu tarafında koruyabilmekten bahsediyorlar. Asıl amaçları da aslında buradaki yükseliş. Ben burada artı eksiyle hani ne kadar...
+
+166
+00:33:15,059 --> 00:33:24,779
+En iyisinden ne kadar farklı olduğunu gösterdim ama, burada ben her metrik için her metriğin en iyisiyle karşılaştırdım.
+
+167
+00:33:24,779 --> 00:33:30,939
+Bir metrikte farklı bir dekodur daha yüksek olabilir, hağızın da diğeri daha düşük olabilir.
+
+168
+00:33:30,939 --> 00:33:37,099
+Ama her metrikte o metriğin en iyisiyle daha iyi sonuçlar vermişler.
+
+169
+00:33:38,099 --> 00:33:41,819
+Hağızdor Distance ne kadar küçüksü o kadar?
+
+170
+00:33:41,940 --> 00:33:42,680
+Evet hocam.
+
+171
+00:33:42,680 --> 00:33:55,340
+Dyson ve Intersection Büyük'ün ne kadar iyiyse o kadar iyiydi. O yüzden oradaki pozitif değerler aslında bu modelin diğer modellere göre ne kadar başarılı olduğunu, ne kadar fazla.
+
+172
+00:33:55,840 --> 00:33:57,620
+Evet hocam tam olarak o şekilde.
+
+173
+00:33:58,580 --> 00:34:04,520
+Sağdaki Poussop'ta da yine distance üzerinden de başarılı olduğunu söylüyorsun. Öyle mi?
+
+174
+00:34:04,960 --> 00:34:05,580
+Evet hocam.
+
+175
+00:34:09,460 --> 00:34:16,880
+Ben ResNet 18 Encoder kullandım. 3 tane farklı decoder kullandım. Bu datasetleri test etmek için.
+
+176
+00:34:16,880 --> 00:34:23,019
+Ben de şey denemek istedim. Belki biraz basic de kalmış olabilir benimki.
+
+177
+00:34:23,019 --> 00:34:28,659
+Farklı test ve train protokollerinde nasıl sonuçlar değişebilir bunu test etmek istedim.
+
+178
+00:34:28,659 --> 00:34:31,980
+Bu protokoller şöyle.
+
+179
+00:34:32,307 --> 00:34:42,307
+Öncelikle ekran kartıma sığmayacaktı. 1024, 1024 görüntüler bazılarında 1024, 1068 tren sırasında sorun olacaktı.
+
+180
+00:34:42,307 --> 00:34:57,307
+İlk olarak Resize denedim. Görüntüleri 256'e 256 değil tam büyük kenarı 256 olacak şekilde çünkü hepsi 1024 değildi. Resize ettim. Bu şekilde modele ettim.
+
+181
+00:34:57,556 --> 00:35:22,556
+Bu modelin sonuçlarını paylaşacağım. Bu modeli de test tarafında iki şekilde kullandım. İlkinde modeli direkt olarak 256'e 256 olarak ettim. Örnek veriyorum. Ama train datası 1024. Modeli direkt o 1024'e 1024 imajın üzerinde çalıştırdım ve sonucunu gördüm. Daha sonrasında...
+
+182
+00:35:23,603 --> 00:35:43,603
+Şöyle bir yapı kurdum. Test tarafında da yine imajı resize edip, 256'e 256 boyutuna getirdim. Sonrasında çıkan sonucu ters bir şekilde aynı değerlerle resize ederek, olması gerekli boyuta çıkarak o şekilde mask ile karşılaştırdım.
+
+183
+00:35:44,403 --> 00:35:52,604
+Tabi Resize tarafında augmentation da kullandım. Rotate vesaire yaptım verileri çoğaltmak için.
+
+184
+00:35:52,604 --> 00:36:02,604
+Bunu daha da iyileştirmek için patch kullandım daha sonrasında. Orada da 256-256 bir kare oluşturdum.
+
+185
+00:36:02,604 --> 00:36:09,203
+Bu kareyi kaydırarak farklı görüntüler elde ettim ve bu şekilde eğitim. Sonra
+
+186
+00:36:09,780 --> 00:36:14,900
+İmajı test tarafında olduğu gibi vererek çıktılar almaya çalıştım.
+
+187
+00:36:17,460 --> 00:36:20,780
+Şimdi ilk olarak Resize tarafındaki sonuçlarım.
+
+188
+00:36:22,579 --> 00:36:32,300
+Resize tarafında sonuçlarımda direkt kullandığımda işte mesela Monosec'de 43-28 verirken o Resize Restore ikinci anlattığım,
+
+189
+00:36:36,496 --> 00:36:59,496
+Resize edip büyüttüğümde sonuçların arttığını gördüm. Yani modeli oluşturduktan sonra modeli nasıl kullandığınızın da aslında ne kadar önemli olduğunu burada görmüş oldum. Burada en çok dikkatimi çeken, Resize tarafında, EM veri setindeki değişim oldu. Çünkü burada...
+
+190
+00:37:00,211 --> 00:37:16,211
+Burada metri yazmıştım ama, ha şurada yazmışım. IOLIDICE, onu da belirtmiş olayım. Bu netlikler ne? EM tarafında 14.77'de yönetle oluşturdum. 62'ye çıkıyor.
+
+191
+00:37:16,211 --> 00:37:27,980
+IOLIDICE değeri. Neden bu kadar değişim var? Ben şöyle yordum. Şurada göstereyim üzerinde. Bu örnekli EM veri setinden.
+
+192
+00:37:28,916 --> 00:37:45,115
+Görüntü. Bu görüntü içerisinde işte mitochondri'ler mask olarak işaretlenmiş. Ama arka planda gördüğünüz gibi hani birçok element var. Arkası temiz değil veya diğer görüntüleri şöyle bir gösterirsem. Mesela Manusek'te.
+
+193
+00:37:45,715 --> 00:37:56,916
+Patıncı görüntüsünde hücre çekirdekleri işaretlenmiş ama görüntünün büyük bir kısmını kaplıyor zaten. Arka planında bu mor hücre çekirdekleri dışında pek bir şey yok denebilir.
+
+194
+00:37:57,775 --> 00:38:10,956
+Tabi illaki başka şeyler de var ama IM'deki gibi yoğun değil. Veya DCB'de de yine bir mikroskop görüntüsü var. Hücre çekirdekleri seçilebiliyor ama arka plan zaten farklı bir şekilde gözüküyor.
+
+195
+00:38:11,699 --> 00:38:14,859
+Burada arka bir şey var.
+
+196
+00:38:15,439 --> 00:38:21,899
+Bulmaya çalıştığımız bu çekirdekleri zaten küçük nesne diyelim.
+
+197
+00:38:22,659 --> 00:38:28,159
+Ama sen yörüntüde 1024'e 1024 yörüntüyü 4 kat küçültüyorsun.
+
+198
+00:38:28,439 --> 00:38:30,979
+Dolayısıyla alan da çok küçülüyor.
+
+199
+00:38:31,599 --> 00:38:33,859
+Tanıma başarısı onun için azalıyor olabilir.
+
+200
+00:38:34,199 --> 00:38:38,379
+Yani patchleyip vermek daha doğru gibi görünüyor.
+
+201
+00:38:38,379 --> 00:38:39,699
+Evet, patch tarafında zaten...
+
+202
+00:38:39,699 --> 00:38:58,639
+Yükseliş yaşandı da hocam, ilk denediğimde şuradaki verilere baktığımda EM tarafında kullanımlı çok düşük geldi. Özellikle Resize Store yaptıktan sonra baya bir yükseliş yaşandı. Peş tarafında zaten yükseliş yaşandı. En iyi sonuçları peş tarafında aldım.
+
+203
+00:39:07,699 --> 00:39:22,699
+Bu örneğe neler yapmış. Neredeyse doğru işaretlediği nokta ve bulabildiği bir yapı yoktu. Ama Resize Restore yaptığımda, maska yakın bir şekilde en azından çoğu mitochondritinin alanını bulabildiğini gördüm.
+
+204
+00:39:22,699 --> 00:39:34,123
+Yani burada da en azından modelin nasıl kullanıldığının önemli bir yeri olduğunu görmüş olduğum diye düşünüyorum. Patch sonuçlarımda da
+
+205
+00:39:34,452 --> 00:39:59,052
+Patch'te sonuçlarım daha iyiydi. MonSec'de IOE'de %70'e kadar varabildim. DCB'de %85. EM'de az önce işte şurada 14.77 IOE'yi bulmama rağmen burada işte 86'ya kadar çıkabildi patch yapısı kullanılınca.
+
+206
+00:40:00,980 --> 00:40:13,260
+Patch yapısında da örnek birkaç sonuç göstermek istedim. İşte Monosec'deki data, maskı ve unit... Pardon yanlışlıkla kaydı.
+
+207
+00:40:15,411 --> 00:40:34,311
+Burada Resize tarafında kullandığımda çıktılar. Burada da Page tarafında kullandığım çıktılar. Zaten burada yanlış işaretlemeler göze batıyor. Özellikle DeepLab V3'teki. Ama Page tarafında başarılı sonuçlar elde ettim. Yani yüzdesel olarak.
+
+208
+00:40:37,972 --> 00:40:57,791
+Bir de TNBC datasetinde ZiraShot vardı çalışmada, onu da yaptım. Orada Monosec tarafında en yüksek değerleri aldım. Çünkü ikisi de boyalı verilerdi. Birbirine çok benziyordu dataset olarak.
+
+209
+00:40:58,579 --> 00:41:23,619
+Ama EM tarafında zaten çok kötü sonuçlar aldım. Çünkü hedef yapıda, hedef çekirdeği ve mitokondri birbirinden farklıydı. Görüntü, datasetleri de birbirinden farklı. Bir elektromikroskobu, diğeri histopatoloji miydi? Yanlış söylemiyorsam. Evet, boyalı. Birbirinden çok farklı olduğu için zaten neredeyse hiçbir şey bulamadı. Yani şurada da örneği olması lazım.
+
+210
+00:41:26,579 --> 00:41:37,699
+Hangi şey olursa olsun, eğitilmiş model olursa olsun, doğru sonuç yok gibi bir şey. Monisek'te yine başarılı sonuç, diğerlerine göre başarılı sonuç elde ettim.
+
+211
+00:41:38,452 --> 00:41:51,172
+Genel olarak benim bulduğum sonuçlarla makaledekileri karşılaştırırsam burada artı yani makale benimkinden 380 daha yükseldi gibi düşünebiliriz.
+
+212
+00:41:51,692 --> 00:41:58,232
+Eksiler için de makale işte eksi 799 daha düşük yani daha başarılı bitometrikler için.
+
+213
+00:41:58,352 --> 00:42:04,912
+Makalenin sonuçlarına net olarak yakalayamadığımı söyleyebilirim zaten. Benimki daha base bir çalışma oldu.
+
+214
+00:42:05,715 --> 00:42:20,096
+Ama bu çalışmada işte test protokollerinin, modelin eğitimdeki protokollerin ne kadar fark yaratabildiğini dekoderdan bağımsız bir şekilde görmüş olduğumu düşünüyorum.
+
+215
+00:42:23,215 --> 00:42:25,675
+Genel olarak aslında anlatacaklarım bu kadardı.
+
+216
+00:42:26,164 --> 00:42:39,384
+Yapılabilecekler açısından belki onların oluşturduğu MCET mimarisiyle tekrar üretip test edilebilir ve deney bu şekilde tekrar yapılabilir karşılaştırma için.
+
+217
+00:42:40,044 --> 00:42:47,504
+Farklı dikodurlarla birlikte. Onun dışında kendi lokal ortamında yapabileceğim deneyleri yapmaya çalıştım.
+
+218
+00:42:50,387 --> 00:43:18,387
+Genel sonuçlara bakarsak da MCATS gerçekten özellikle sınır hassasiyeti, şuradaki tabloyla dönersem benim bulduğum sonuçlara göre benden çok daha başarılı sonuçlar verdi. Çok daha düşük sonuçlar vermiş makale. Benim IOU DICES değerleri onlara biraz yakın olsa da burada sınır hassasiyetinde ne kadar fark oldu aslında gözüküyor.
+
+219
+00:43:18,387 --> 00:43:28,648
+Zaten onların ana düşüncesi bu çalışmayı yapmaktaki sınır hassasiyetindeki bilgileri korumaktı.
+
+220
+00:43:30,468 --> 00:43:38,867
+ZeroShot'da mimari ve mimariden önce hedefe kaynağın ne kadar önemli olduğunu gördük.
+
+221
+00:43:43,956 --> 00:43:51,536
+Hedef yapıdan geldiğimizde mimari fark etmek istediniz. Zaten hemen hemen sıfıra yakın sonuçları aldık.
+
+222
+00:43:52,136 --> 00:43:57,616
+Muhteşem bir segmentosyonda domeninin ne kadar önemli olduğunu da orada görmüş olduk diye düşünüyorum.
+
+223
+00:43:58,556 --> 00:44:02,316
+Anlatacaklarım bu kadardı hocam. Nedeniz için teşekkür ederim. Sorunuz varsa alabilirim.
+
+224
+00:44:02,316 --> 00:44:05,036
+Teşekkür ederiz.
+
+225
+00:44:06,036 --> 00:44:10,116
+Sonun için bize de alkışlıyoruz.
+
+226
+00:44:10,739 --> 00:44:12,739
+Teşekkür ederim.
+
+227
+00:44:12,739 --> 00:44:17,739
+Yani çalışmayı denemiş olmanız sizin gibi uygulamış olmanız güzel.
+
+228
+00:44:17,739 --> 00:44:23,739
+İyileştirmek için base modeller denedim dediniz. Daha ne yapılabilirdi sizce?
+
+229
+00:44:24,739 --> 00:44:28,739
+Yani hocam dediğim gibi aslında onların dekodörü ile deneme yapılabilirdi.
+
+230
+00:44:28,739 --> 00:44:34,739
+Onların enkodörü ve dekodörü ile deneme yapılıp belki üstüne bir şeyler yapılabilirdi.
+
+231
+00:44:36,019 --> 00:44:59,019
+Bu konuda da yeni olduğum için siz de veri setleriyle geliştirmeler yapabilirsiniz dediğiniz için benimki biraz fazla base kalmış olabilir. Belki bu konuda tecrübesi olan arkadaşlar biraz daha derinlemesine yapmışlar.
+
+232
+00:44:59,539 --> 00:45:07,539
+Ben de bu şekilde ilk görüntü işleme, projemi bu şekilde yapabildim diyebilirim.
+
+233
+00:45:08,639 --> 00:45:21,039
+Radarist yol fena bitmişlerdi. Yani hepsini denemişsiniz. ZeroShot'ı hangi modelle train ettiğin şeyi kullandı?
+
+234
+00:45:22,079 --> 00:45:25,280
+Hepsi için sonuçları gösterdim aslında. Tekrar göstereyim mi hocam?
+
+235
+00:45:25,615 --> 00:45:37,956
+Yok, yani şunu sormak istedim. Ağı bir başka veriyle eğitmeden hazır aldığın framework'ün bütün parametrelerini doğrudan kullandın, öyle mi?
+
+236
+00:45:39,036 --> 00:45:48,115
+Yok, kendi eğitim modellerini test ettim sadece. Yani 3 dataset içinde oluşturduğum modellerin.
+
+237
+00:45:48,996 --> 00:45:50,456
+ZeroShot için söylüyorum.
+
+238
+00:45:51,603 --> 00:45:55,963
+Evet hocam. Diğer dataset'lerle oluşturduğum modelleri test ettim.
+
+239
+00:45:55,963 --> 00:46:02,203
+Onu soruyorum. Diğer derken neyle train edip neyle test ediyorsun mu?
+
+240
+00:46:02,203 --> 00:46:06,203
+Bunu sen birazcık incele, ne dediğimi anlayamadınız.
+
+241
+00:46:06,203 --> 00:46:14,003
+Yok hocam anladım da ben bütün dataset'le, hepsi için, bütün oluşturduğum modeller için denedim TMEs'i, ziraç atı.
+
+242
+00:46:14,003 --> 00:46:19,403
+Bütün hepsinde değdiğin şeyle denedim. Hepsinde kötü verdim.
+
+243
+00:46:19,668 --> 00:46:28,708
+Yok, bir saniye gösterebilir miyim hocam? Orası biraz karışmış sanırım. Hemen sunuma geri döneyim. Şurada.
+
+244
+00:46:34,483 --> 00:46:56,483
+Şurada evet. Mesela işte burada en iyi sonuçları vermeye çalıştım ilk ikisinde. MoniSek için en iyi sonuç, Patch kullandığım, Unit Decoder kullandığım modeldi. Bu modelde işte 64.08 UI oluş buldum.
+
+245
+00:46:56,512 --> 00:47:05,912
+DCB dataset'inde oluşturdum. Patch Unet++'la oluşturduğum Decoder'da en iyi sonuç verdi.
+
+246
+00:47:05,912 --> 00:47:06,912
+Bunların tek...
+
+247
+00:47:06,912 --> 00:47:13,112
+Bunu soracağım [öğrenci], bunu anladım. TNBC dediğin ayrı bir veri seti değil miydi?
+
+248
+00:47:13,112 --> 00:47:13,912
+Evet hocam.
+
+249
+00:47:13,912 --> 00:47:20,312
+TNBC veri setini hiç göstermeden başka veri ile...
+
+250
+00:47:20,312 --> 00:47:24,112
+Yani mesela birinci sırada bulsun ki Monosec ile train ettim.
+
+251
+00:47:24,532 --> 00:47:35,032
+Patchwork yapısını kullandım. Eğitilmiş modeli aldım. TNBC'de test ettim.
+
+252
+00:47:35,032 --> 00:47:36,032
+Evet hocam.
+
+253
+00:47:36,032 --> 00:47:39,032
+Tamam, bana sormak istemiştim.
+
+254
+00:47:39,032 --> 00:47:46,032
+Örneklerde, şurada hangi datasette oluşturulan model?
+
+255
+00:47:46,132 --> 00:47:49,692
+Şurada sorçları var.
+
+256
+00:47:49,692 --> 00:48:06,251
+Tablo da başarı ama en düşük, mesela elektronik özgürlüğünün alınan bir üniversitelerle eğitilen modeller, TNBC datasyonunda iyice feyletmiş görünü.
+
+257
+00:48:06,251 --> 00:48:09,051
+Evet, bunun nedeni de hem...
+
+258
+00:48:09,051 --> 00:48:09,911
+Yapı sağlamak.
+
+259
+00:48:10,356 --> 00:48:25,696
+Hem yapısal fark, hem de hedef-yapı farkı. Biri çekirdek bulmaya çalışıyor, biri mitogonacı bulmaya çalışıyor ve biri elektron mikroskobu, diğeri H&M boyalı bir veri. O yüzden neredeyse hiçbir şey bulamadı yani.
+
+260
+00:48:27,251 --> 00:48:32,251
+TNBC, Dataset'i, Manuset'e biraz daha benziyor hocam.
+
+261
+00:48:32,251 --> 00:48:45,251
+Evet hocam, genel olarak şu TNBC'den bir örnek mesela bu ve buna benzer datalar var. Manuset'te de mesela şu tarz renkli datalar var.
+
+262
+00:48:45,251 --> 00:48:48,251
+Hem de çok uzun boyalım.
+
+263
+00:48:48,692 --> 00:48:50,692
+Tamamdır. Teşekkür ediyoruz.
+
+264
+00:48:50,692 --> 00:48:59,692
+Çalışmada da TNBC tarafında açıkçası sonuç vermişler. Ziroşat yapmışlar yine.
+
+265
+00:48:59,692 --> 00:49:02,692
+Ama hangi modelin sonucu olduğunu onlar belirtmemiş.
+
+266
+00:49:02,692 --> 00:49:06,692
+Ama benim tahminim yine MoniSack'te buldukları sonuçtur.
+
+267
+00:49:06,692 --> 00:49:11,692
+Çünkü en yüksek yine onlarda da o çıkacaktır. En yakın dataset olduğu için diye düşünüyorum.
+
+268
+00:49:13,235 --> 00:49:38,055
+Tamam. Teşekkür ediyoruz tekrar sunumunuz için. Rica ederim hocam. Evet. Sırada kim var? [öğrenci]. Nasılsınız? Merhaba hocam. Merhaba. Ekranım geldi mi acaba? Evet. Görebiliyoruz. Tam ekran yapalım. Şu an tam ekran olması lazım. Değil. Şöyle şu şekilde demek istedin. Tamam. Şimdi oldu.
+
+269
+00:49:38,771 --> 00:50:02,351
+Merhaba hocam. Ben NNWnet mimarisinin önerildiği Bio-Amerikal Görüntü Bölüleme, Transport Okullarının yeniden düştüğümesi adlı makaleleri incelemek istedim. Bunun sebebi de sağlık verileriyle daha çok çalışıyorlar. Ben de sağlık verisi içeren bir çalışmayı incelemek istiyordum. Dolayısıyla buna karar verdim.
+
+270
+00:50:04,211 --> 00:50:32,192
+Sunum bakışının önce giriş ve bağlamdan bahsedeceğiz. Biyomodikal bölüklemenin ne olduğundan, öneminden bahsedeceğiz. Daha sonra makalede açıklanan bazı problem tanımlarını yapacağız. Benzer literatürleri karşılaştıracağız, modelleri veya çerçeveleri karşılaştıracağız. Daha sonra çalışmada önerilen çözüm olan W-net mimarisini inceleyeceğiz. Kullanılan virüs etlerini inceleyip, makalenin sonuçlarını inceleyip yorumlayacağız.
+
+271
+00:50:32,211 --> 00:50:45,271
+En sonunda da yeniden öte üretim kısmını inceleyip, karşılaştırıp yorumlayacağız. İki parçadan oluşuyor sunumun. İlk başta makalenin incelenmesi, daha sonra yeniden üretim kısmının açıklanması olacak şekilde.
+
+272
+00:50:47,092 --> 00:50:52,331
+Öncelikle, biyomedikal görüntü büyütleme nedir çok kısaca bir bahsedelim.
+
+273
+00:50:52,331 --> 00:51:03,572
+En basit şekliyle bir görüntüdeki her pikselin organ tünör, damar veya hücre zarı gibi piksel düzeyinde otomatik olarak sınıflandırılmasına deniyor.
+
+274
+00:51:04,491 --> 00:51:15,092
+Ve neden önemli olarak konuşacak olursak da, normalde bir radyoloğun bu işlemi yapması saatlerce süreliyorken otomatik bir programın yapması oldukça...
+
+275
+00:51:15,092 --> 00:51:27,931
+Bir zaman kazandırıyor bize. Ayrıca otomatik olarak doğrudan segmentasyon maskelerinin kullanarak yapılması insan hatasını minimize edecek şekilde olacağından dolayı ölçüm doğruluğu sağlıyor.
+
+276
+00:51:28,532 --> 00:51:39,952
+Aynı zamanda bu makalede önerilen modelin boyutu 7 milyon parametre bir model olduğu için rakiplerine kıyasla oldukça küçük bir model. Dolayısıyla daha uyarlanabilir olduğunu söyleyebiliriz.
+
+277
+00:51:40,492 --> 00:51:54,952
+Mimari evruna bakacak olursak önce daha çok sapsiyenen mimariler denenmiş, daha sonra seri hibrit melezler denenmiş. Daha sonra mesela şu anki makalede belirtildiği gibi paralel hibrit modeller çalışılmış.
+
+278
+00:51:56,692 --> 00:52:22,031
+Mataryada bahsedilen sorunlardan birisi aktarım çelişkisi. Bu seri hibrit modellerde konvolüsyon katmanlarından, transformer katmanlarına, tekrardan transformer katmanlarından, konvolüsyon katmanlarına aktarımın aslında çok doğru bulunmadığını, konvolüsyon katmanlarının bir önceki konvolüsyon çıktısını almak istediğinin, transformer katmanlarına ise ham veriye ilgili olarak almayı beklediğini söylüyor.
+
+279
+00:52:24,692 --> 00:52:47,911
+Global öz niteliklerin yakalanması sırasında konvülüsyondan transforma, transformadan konvülüsyona geçiş yapıldığında bir akış olduğunu söylüyor. Yerel niteliklerin veya global niteliklerin elde edilmesi sürecinde. Bir ikinci sorun olarak hem WNET mimarisini önermenin yanında genel olarak karşılaştırma yapıyor makale. Analiz ve karşılaştırma diyebiliriz.
+
+280
+00:52:48,563 --> 00:53:03,264
+Burada farklı makale çalışmalarda kullanılan farklı yama boyutları, farklı veri bölünmeleri, farklı veri çoğaltma veya farklı tekniklerin kullanılmasının çok güvenilir ve sağlıklı bir karşılaştırma olmayacağını belirtiyor.
+
+281
+00:53:03,884 --> 00:53:11,264
+Dolayısıyla kendi çalışmasında da benzer spermatometreler veya teknikleri kullanaraktan bir karşılaştırma yapıyor.
+
+282
+00:53:12,148 --> 00:53:22,488
+Mevcut literatürde özellikle örnek aldığı mimari ya da çerçeve UNET çerçevesi olarak söyleyebiliriz.
+
+283
+00:53:22,488 --> 00:53:35,307
+UNET'in en litri yanı otomatik yapılandırmaya sahip olması. Bu işte batch size, resampling, loss function gibi hiperparametrelerin otomatik olarak belirleniyor olması.
+
+284
+00:53:40,148 --> 00:53:53,708
+Aslında ki bir modelin her küçük bloğun içerisinde daha küçük yapıda bir UNET içerdiğini söylemiş. Bu farklı ölçeklerdeki öz nitelikleri yakalamakta faydalı olduğunu belirtmiş.
+
+285
+00:53:54,367 --> 00:54:03,148
+BC UNET'te de ikili kanal varmış. Burada yanlış hatırlamıyorsam Encoder olarak farklı bir yapı kullanıyorlardı. Daha büyük bir kernel size.
+
+286
+00:54:03,599 --> 00:54:16,819
+Zerlu yerine gel kullanmak gibi farklı değişiklikler yapılmış. 102 milyon parametreyle oldukça büyük bir model. CMU nette ise çok ölçekli evlişim kullanılmış.
+
+287
+00:54:16,819 --> 00:54:24,319
+Yani mesela 3x3 boyutlu filtreler kullanırken 11x11 boyutlu filtreler de kullanılmış. Böylece hem daha küçük hem daha büyük.
+
+288
+00:54:26,324 --> 00:54:45,584
+Ölçeklerde öz nitelikler yakalanabilmiş. Sağ tarafa geçtiğimizde Transformer veya Hidrit modellerden bahsediliyor. Sibin Unet'te saf Transformer tabanlı bir model. Dolayısıyla hiç konvolüsyon yok. Yine dolayısıyla yerel öz niteliklerin yakalanmasında biraz zorluk çekilmiş.
+
+289
+00:54:48,659 --> 00:54:59,079
+Hiyerarşik bir Transformer. Az önce bahsettiğimiz problem bunun için. Sırayla konvolüsyon, Transformer, Transformer, Konvolüsyon diye bir akışı var.
+
+290
+00:54:59,503 --> 00:55:09,544
+Convolution Former'da Transformer modelleri Self-Attention mekanizmalarını konvolüsyon tabanlı bir şekilde oluşturmaya çalışmışlar.
+
+291
+00:55:10,943 --> 00:55:20,764
+Duat'ta da iki tane toplama Transformer yapısı vardı. Bunlardan birisi yatay şekilde Self-Attention mekanizması kullanıyordu.
+
+292
+00:55:27,503 --> 00:55:39,523
+Global Scope Bridge'ler kullanılmış. W yapısında görsel olarak da göreceğiz ve her ölçekte paralel şekilde hem lokal hem global blok yapıları çalışıyor.
+
+293
+00:55:40,064 --> 00:55:47,403
+Dolayısıyla özelliklikler sürekli aktarılıyor ve paralel şekilde aktarıldığı için bu akış kesintisi veya çelişki ortadan kalkıyor.
+
+294
+00:55:47,864 --> 00:55:54,483
+Yine bahsettiğimiz gibi 7 milyon parametreyle oldukça küçük bir model rakiplerine göre ve daha uygulanabilir oluyor.
+
+295
+00:55:55,603 --> 00:56:18,403
+Şimdi makalede bahsindirilmeyen bir örnek gösterecek olursak M2Snet var. Burada temel fark fizyonda toplama yerine çıkarma yapılmış. Sol aşağıda basit bir yapısını görebiliyoruz. Kullanılan veri setlerinden sadece en üstteki Classary Segmentation makaledekilerle aynı. Sağ tarafta da sonuçları inceleyebiliriz.
+
+296
+00:56:21,076 --> 00:56:39,296
+Bir başka çalışma da Hybrid CNN Transformer çalışması. Burada da farklı olaraktan CNN kolu ile sivilik transformer kolu paralel olarak çalışıyor. Sediye olarak çalıştırmamışlar. O yüzden eklemek istedim. Ancak veri setlerinde ortak bir veri seti bulunmuyor. Sağ tarafta da sonuçlar var.
+
+297
+00:56:43,123 --> 00:56:52,463
+Şöyle bir genel literatürle karşılaştırma yapıldığında kullanılan veri setlerini ve elde edilen en iyi sonuçları görebiliyoruz Dice Metri ile.
+
+298
+00:56:53,244 --> 00:57:00,304
+Burada makalenin kendi içerisinde en iyi sonucu çok ufak farklı da olsa WNET almış.
+
+299
+00:57:00,304 --> 00:57:08,083
+Ama makalede bahsedilmeyen M2SNET biraz daha iyi olmuş ama veri seti farklı bir veri seti.
+
+300
+00:57:10,516 --> 00:57:21,876
+Burada da önerilen çözüm WNET mimarisi var. Gördüğünüz üzere W şeklinde bir yapıda. Aslında iki tane UNET birleştirilmiş gibi de söylenebilir belki de.
+
+301
+00:57:22,136 --> 00:57:32,876
+Burada önce Downsampling yapılan Overlap to Patch Embedding kısmı var. En aşağı kısımda da bu gri, mavi, yeşil yapıların açılmış hallerini görebiliyoruz.
+
+302
+00:57:38,516 --> 00:57:50,716
+Blocu kullanılıyor. Downsampling'den sonra ise blokalskop bloklar tekrar dendiriyor. Bu turunik kısımlarda da füzyon yapılıyor. Füzyon kanal birleştirme yöntemiyle yapılmış.
+
+303
+00:57:50,716 --> 00:58:00,616
+Onun dışında bu şekilde mimariye. Overlap patch embeddingler 3x3 evlişimli.
+
+304
+00:58:01,780 --> 00:58:17,000
+Ovolisyonlardan yapılıp, dump sample edilmiş. Girdiği çok ölçekli öz nitelikleri haritasına dönüştürüp, daha sonra tekrardan LocalScope Bridge'i veya GlobalScope Bridge'lere aktarıyor.
+
+305
+00:58:17,560 --> 00:58:27,660
+LocalScope Bridge'i de OPER gibi yine 3-3 konvolisyon maddesi kullanılıyor. Yerel öz nitelikleri yakalamakta daha çok işe yarıyor.
+
+306
+00:58:29,780 --> 00:58:54,160
+11.11 Self-Attention mekanizması kullanılmışlar. Çünkü global öz nitelikler yakalanmaya çalışıyor. Uzak piksellerin ilişkisi yakalanmaya çalışıyor. Sonra her ölçekte hem Localscope bloktan hem de Globalscope biriciden gelen çıktılar. Bu Information Exchange Fusion yapısını da birleştiriyor. Üç farklı şey denenmiş burada.
+
+307
+00:58:55,668 --> 00:59:04,008
+Element Vice Çarpı, Toplam ve Kanal Birleştirimi. Kanal birleştirimi daha iyi sonuç verdiği için en son ona karar verilmiş.
+
+308
+00:59:05,331 --> 00:59:19,132
+Genel bir bakış yaparsak, yine bahsettiğimiz gibi düşük parametre sayısıyla daha uygulanabilir ve kısa eğitim süresi veya çıkarım süresi daha kısa olacaktır.
+
+309
+00:59:19,132 --> 00:59:30,092
+LocalScope, Block ve GlobalScope birçelerin her ölçekte paralel çalışıp her ölçekte birleştirilmesinden ötürü hem daha zengin ve daha sürekli öz nitelik çıkarım sağlanıyor.
+
+310
+00:59:31,539 --> 00:59:49,139
+Daha küçük öz nitelikler, Localscope Bridges'ler ve daha geniş uzak piksellerin arasındaki öz nitelikler, Globalscope Bridges'lerle yakalan arttan tamamlayıcı bir Effective Receptive Field oluşturulmuş.
+
+311
+00:59:50,228 --> 01:00:01,428
+Tüm modeller NNUNET çerçevesinde 5K-fold prosodiyation yöntemiyle gerçekleştirilmiş ve sonuçlar da buna göre gösterilmiş.
+
+312
+01:00:02,771 --> 01:00:20,471
+Kullanılan veri setlerine geldiğimizde 4 tane 2 boyutlu, 4 tane 3 boyutlu veri seti kullanılmış. 2 boyutlu veri setlerin ilkin dry veri seti. Burada renkli fundus fotoğrafları kullanılmış göz için. Az görüntü sayısı var. Bu veri seti...
+
+313
+01:00:20,800 --> 01:00:36,660
+Public değildi yanlış hatırlamıyorsam. Dolayısıyla yeniden çıkarıma eklenmedi. Damarların 1-3 piksel genişliğinde olmasından ötürü bir zorluğu var. O yerel değişkenleri yakalaması daha zor oluyor. WNX'ın sonuçları da sağda gösteriliyor.
+
+314
+01:00:40,532 --> 01:01:04,331
+ISET veri setinde dermoskopi bir veri seti, deri lezyonun maske bölüklemesi hedefleniyor. Burada insan ya da örnekten örneğe büyüklük çeşitlileri, renk tutarsızlığı olabileceği için bir sorun yaşanabiliyor. Çözünürlük 700-900 ancak 256-256 olacak şekilde resize ediliyor. Sağ tarafta da WN sonuçlarını görebiliyoruz.
+
+315
+01:01:05,460 --> 01:01:08,780
+En son karşılaştırmalı olarak da göstereceğim diğer modellerle.
+
+316
+01:01:10,739 --> 01:01:13,460
+Kıvasir Segmentation veri seti.
+
+317
+01:01:14,340 --> 01:01:16,500
+Çözünürlük değişken yapıda.
+
+318
+01:01:16,699 --> 01:01:22,219
+Dolayısıyla bütün örnekler 256'ye 256 olacak şekilde tekrardan boyutlandırılıyor.
+
+319
+01:01:23,900 --> 01:01:28,980
+Burada zorluk olarak küçük büyük poliparkının ve düşük kontrasttan bahsedilmiş.
+
+320
+01:01:29,780 --> 01:01:34,740
+Sağ tarafta yine WNET mimarısının sonuçlarını görebiliyoruz.
+
+321
+01:01:35,820 --> 01:01:46,960
+Burada şu bölümlemeleri genel olarak resmi şekilde nasıl belirttilerse makalede genel olarak o şekilde yapılmaya çalışmış.
+
+322
+01:01:48,119 --> 01:01:51,500
+Son iki boyutlu bir setimiz kremi. Burada da...
+
+323
+01:01:51,891 --> 01:02:15,211
+Sinaptik nöron membranının segmentasyonu yapılmaya çalışıyor. Yine benzer şekilde, drive'a benzer şekilde 1-2 piksellik genişliğinde olan yapılar yakalanması zor olduğu için böyle bir zorluk belirtilmiş. Yüksek çözünürlüğe sahip tekrardan 256-256 olacak şekilde yeniden boyutlandırılmış. Sağ tarafta da görebiliyoruz şeyleri, sonuçları.
+
+324
+01:02:16,532 --> 01:02:36,211
+Üç boyutlu veri setlerine geçtik. Pars veri seti bilgisayarlı tomografi verilerini içeriyor. 100 tane bilgisayarlı tomografi verisi var. Pulmoner arteriyel damar sisteminin segmentasyonunu yapmaya çalışıyor. Üç boyutlu olduğu için ve damarların ince ve karmaşık yapısı olduğu için bir zorluk var.
+
+325
+01:02:36,672 --> 01:02:49,192
+Sağ tarafta hem sonuçları görebiliyoruz hem de UNET'e karşı bir karşılaştırmasının T-testinin sonucunu görebiliyoruz. WUNET'in daha anlamlı olduğunu söylüyor istediksel olarak.
+
+326
+01:02:51,032 --> 01:02:56,351
+AMOS veri seti hem bilgisayar taraması hem de MR verilerini içeriyor.
+
+327
+01:02:56,851 --> 01:03:12,092
+Bu hedef olarak 15 abdominal organın eş zamanlı segmentasyonunu yapmaya çalıştığını belirtiyor. Sağ tarafta yine sonuçlarımız var. Bir de aynı zamanda hem yükseğe hem ağrısını da domain değişimini zorluk olarak bahsetmiş.
+
+328
+01:03:13,012 --> 01:03:16,652
+Yine T testinde UNET'ten daha anlamlı olduğunu söylüyor.
+
+329
+01:03:17,832 --> 01:03:24,272
+BTC veri testi, bilgisayarla tomografi veri testi, organ segmentasyonu yapılmaya çalışıyor.
+
+330
+01:03:24,852 --> 01:03:32,852
+512'ye 512 aksiyel, aksiyel yanlış hatırlamıyorsam üst perspektiften bakılan bölüklemeye deniyordu.
+
+331
+01:03:33,952 --> 01:03:40,452
+Sağ tarafta sonuçlarımız var. Yine T testinde UNET'ten daha anlamlı olduğunu söylemiş istatiksel olarak.
+
+332
+01:03:41,427 --> 01:03:50,687
+Son veri setimiz olması lazım. Emekşikas, koronar arterlerin tam vasküler ağ segmentasyonunu yapmaya çalışıyor.
+
+333
+01:03:51,267 --> 01:03:58,907
+Yine damarları incelediğimiz için çok küçük yapıda damarların yakalanmasında zorluk çekildiğinden bahsediyor.
+
+334
+01:03:58,907 --> 01:04:00,767
+Sağ tarafta da sonuçlarımız var.
+
+335
+01:04:02,835 --> 01:04:19,016
+Makalenin uygulama ortamında çerçevede kullanılan birçok model var. GPO olarak NDR-TXA6'ın kullanılmış. 200 İPOP veya 500 İPOP kullanılmış, Sulu veya TV olmasına göre 5 katlı çaprazlı olumamız var.
+
+336
+01:04:20,340 --> 01:04:33,360
+Ön eğitim yok demişler. Viri çoğaltma, hem UNET'in otomatik olarak yaptığı bazı yöntemler var, hem de işte döndürme, ölçeklendirme, yansıma alma, gaz yöngörültüsü vesaire gibi çoğaltma işlemleri yapılmış.
+
+337
+01:04:33,360 --> 01:04:41,360
+DICE-TAYB'ı optimiz edilmeye çalışmış çatla dentrofik ayıp fonksiyonuyla ve Jacquard DICE, Hustot ve...
+
+338
+01:04:42,452 --> 01:04:51,311
+ACD, Average Surface Distance olması lazım yanlış atamıyorsam. İle 4 metrik incelenmiş.
+
+339
+01:04:53,684 --> 01:05:06,244
+Burada da makalenin sonuçları var. Yeşil renkler, UNET'ten daha iyi performans gösterenler. Kırmızı renkler ise eğitim başarısızlığını veya önemli olucuda performans düşüşlüğünü gösteriyor.
+
+340
+01:05:06,903 --> 01:05:16,204
+Turuncu renkler, UNET'ten daha kötü performans gösterenleri söylüyor. WNET'lerde şu kalın siyah olarak işaretlenmiş olanlar.
+
+341
+01:05:16,916 --> 01:05:29,416
+Genel olarak unit daha iyi performans gösteriyor çoğu şeyde. Ancak mesela bazı örneklerde farklı modeller daha iyi sonuçlar üretmiş olabiliyor.
+
+342
+01:05:30,556 --> 01:05:33,175
+Siyahlar en iyi performansı verenlerdi.
+
+343
+01:05:37,268 --> 01:05:45,947
+Makalenin sonuçlarını inceleyip yorumladığımızda en küçük model olduğu için WNET'e başarılı buluyoruz.
+
+344
+01:05:48,115 --> 01:05:55,155
+Ablasyon çalışmasında makalenin incelediği, seri bağlantıların sonucu negatif ettiğini söylüyor.
+
+345
+01:05:56,516 --> 01:06:04,596
+Sivinunet, Kvesir ve Kremi de başarısız olduğunu söylüyor. Neden? Çünkü full transformer, sub transformer yapılıydı.
+
+346
+01:06:05,476 --> 01:06:11,895
+Lokal öz netelikleri yakalamakta zorlanıyordu. Everisetlerimizde de bir üç piksellik yapılar vardı.
+
+347
+01:06:11,895 --> 01:06:15,895
+Dolayısıyla bu da ya emin olmamakla birlikte...
+
+348
+01:06:16,115 --> 01:06:22,576
+İstenilen süreç içerisinde eğitimi tamamlayamıyor ya da istenilen oranda başarı sergileyemiyor.
+
+349
+01:06:23,615 --> 01:06:31,195
+İstatiksel anlamlılık da, Dry Kremi ve İstik'te UNET'ten daha anlamlı görünüyor.
+
+350
+01:06:31,195 --> 01:06:36,455
+Sadece klasiv segment testasyonunda sınırda kalıyor diyebiliriz.
+
+351
+01:06:38,132 --> 01:06:46,411
+Yeniden üretim kısmında da benim yeniden ürettiğim kısımda kullanılan parametreler veya hiperparametreler.
+
+352
+01:06:47,011 --> 01:06:52,112
+Burada en temel fark bir GPU farkı, bir de epoch sayısı.
+
+353
+01:06:52,112 --> 01:06:56,891
+Ben 60 epoch'ta yapmışım ancak 200-300 epoch'taydı.
+
+354
+01:06:57,391 --> 01:06:58,811
+Donanım farkından ötülü.
+
+355
+01:06:59,471 --> 01:07:05,031
+Onun dışında olabildiğince genel olarak aynı tutmaya çalıştım ama ufak tefek farklılıklar var.
+
+356
+01:07:06,931 --> 01:07:21,451
+Burada yeniden üretimin çıktıkları var. Sıfırdan bir işleme ya da transfer learning olmadan daha sonra da Imaginate transfer learning'i kullanarak elde edilen sonuçlar var ve bunların yönetme, Wnet'le karşılaştırmaları var.
+
+357
+01:07:22,851 --> 01:07:26,991
+Üç boyutlu veri setlerini kullanmadım çünkü eğitim çok uzun sürüyor.
+
+358
+01:07:27,456 --> 01:07:39,156
+Ve çok başarılı olabileceğine de inanmadım. Yani yarıda kesilebilir, çok uzun durar, çok uzun süreceği için, süremeyeceği için başarısız olabilir diye düşündüm.
+
+359
+01:07:39,716 --> 01:07:43,916
+Public olarak erişebildiğim iki boyutlu veri setleri üzerinde çalıştım.
+
+360
+01:07:44,916 --> 01:07:51,516
+Burada QVS segmentation ile ESIC veri setlerinde aslında neredeyse yakın sonuçlar elde edilmiş.
+
+361
+01:07:51,516 --> 01:07:55,456
+Sadece kremi veri setinde büyük bir fark var.
+
+362
+01:07:55,456 --> 01:08:21,256
+Bu da oradaki yine aynı şekilde tık boyutlu damar yapılarını yakalamaya çalışıyordu. Ya rastgele ağırlıklardan kaynaklı olabilir diye düşündüm. Çok olası olmayaraktan. Veya donanım farkından ve o ipok sayısından underfitting yapıp yeterince öğrenemediğini tahmin ediyorum. Kaynakçım bu şekilde hocam.
+
+363
+01:08:25,555 --> 01:08:41,335
+Teşekkür ederiz [öğrenci]. Bu sunumumuz için sizi de alkışlıyoruz. Yani sonuçları baya yakın bulmuşsun. İki boyutlu veri setleri için çalıştın dediğin sadece. Fena değil sonuçları.
+
+364
+01:08:41,811 --> 01:09:06,391
+Son gazette baya bir fark vardı galiba değil mi? Evet hocam. Onda da işte dediğim gibi belki de hani underfitting yaptığı için yeterince öğrenememiş olabilir. Peki teşekkür ediyoruz sunumumu. Ben teşekkür ederim hocam. Evet sırada [öğrenci] sunumu yapmak istiyorum diye eklemiş olduğunda. Hazır mısınız [öğrenci]? Evet hazırım hocam.
+
+365
+01:09:06,739 --> 01:09:10,059
+Evet, biz o zaman ikan kaydaşmayı unutalım.
+
+366
+01:09:18,452 --> 01:09:20,112
+Ekranım görünüyor mu şu anda?
+
+367
+01:09:21,532 --> 01:09:22,311
+Bekliyoruz.
+
+368
+01:09:26,868 --> 01:09:31,768
+Geldi. Güzel, gayet güzel. Tam ekran görebiliyoruz. Buyurun.
+
+369
+01:09:35,731 --> 01:09:46,931
+Merhabalar, ben Shenzhen Üniversitesi ve Sejian Üniversitesi araştırmacıları tarafından yapılan Golden Cajal Network for Real-Time Segmentation çalışmasını anlatacağım.
+
+370
+01:09:47,672 --> 01:09:58,891
+Bu çalışmayı seçmemin sebebi, otonom sürüş sistemlerine ilgi duymam ve real-time segmentation'ın da bu sistemlerde oldukça önemli olması.
+
+371
+01:10:00,212 --> 01:10:16,731
+Güncel çalışmaları nasıl olduğunu araştırmak istedim. İlk olarak Semantic Segmentation'ın ne olduğundan bahsetmek istiyorum. Semantic Segmentation bir resimdeki her piksel için bir kategori atılma problemidir aslında.
+
+372
+01:10:28,435 --> 01:10:40,435
+Her piksele doğru bir şekilde label'lamamız gerekiyor. Aynı zamanda da bunu çok hızlı yapmamız gerekiyor. Bu yüzden real-time olması önem arz ediyor. Buradaki problem de...
+
+373
+01:10:41,043 --> 01:10:56,844
+Her piksel için hesaplamalar yapmak oldukça büyük kompütasyonlu bir kosta sahip. Bunun yanında hızı da yüksek tutmak gerekiyor. Bu accuracy speed dengesini sağlamak için de GCNet mimarisini öneriyor araştırmacılar.
+
+374
+01:10:57,644 --> 01:11:03,404
+GCNet mimarisinden önce literatürdeki yaklaşımlara özetledim bu tabloda.
+
+375
+01:11:04,532 --> 01:11:22,152
+Real-time optimize olmayan ama accuracy açısından oldukça yüksek olan modeller var. Bu modeller transformer tabanda güçlü backbone'lar kullanıyorlar. Bu yüzden accuracy'leri oldukça yüksek ama dediğim gibi real-time için optimize değiller. Yavaş çalışıyorlar.
+
+376
+01:11:22,992 --> 01:11:32,532
+Real-time için single branch modeller öneriliyor. Bunlar oldukça hızlı bir şekilde tahmin yapıyorlar. Tek bir branch üzerinde konvolüsyonel yapılan.
+
+377
+01:11:32,532 --> 01:11:45,652
+Bu yüzden multi-branch real-time modeller öneriliyor.
+
+378
+01:11:46,420 --> 01:12:04,619
+Bunda modeller birden fazla brençe ayrılıyorlar ve bazı modeller daha genel kontekste öğrenmeye çalışırken bazıları da detayları öğrenmeye çalışıyor. Bu sayede accuracy'yi artırıyorlar ama daha karmaşık yapılar olduğu için de hız azalabiliyor.
+
+379
+01:12:12,564 --> 01:12:30,644
+Bilgileri aktarıyorlar, pretrain ile yapılmış modelleri kullanıyorlar. Ama inference aşamasında bu modelleri kullanmadıkları için hızları yüksek oluyor. Bunun limitation da farklı bir modele ihtiyaç duydukları için bağımlılığı ve maliyeti yüksek olabiliyor.
+
+380
+01:12:32,024 --> 01:12:36,683
+GCNet de buradaki problemlere çözüm olarak bir mimari öneriyor.
+
+381
+01:12:37,471 --> 01:12:59,271
+Tekrardan özetlemem gerekirse buradaki problemler yavaş inferences'ı ve dışa bağımlılık, farklı modellere bağımlılık. GCNet bunun için training aşamasında kendi kendine büyüyen, genişleyen, karmaşıklaşan, inference aşamasında da kendini tekrar küçülterek tek bir 3x3 konvolüsyon haline getiren bir yapı öneriyor.
+
+382
+01:13:05,471 --> 01:13:23,152
+Daha hızlı, daha iyi bir accuracy speed dengesi sunuyor. Modelin ismi de aslında Çin Mütolojisinden, burada Giffin'i koyduğum gibi, maymun kralının silahından geliyor. Kendi kendi büyüyüp küçülebilen bir silah. Bunu örnek alarak yapmışlar.
+
+383
+01:13:24,020 --> 01:13:32,500
+Burada genel mimariyi görebiliyoruz. Üst tarafta karmaşık training yapısı, alt tarafta da inference yapısı var.
+
+384
+01:13:33,520 --> 01:13:40,400
+Training'de başlarda basit feature extraction'lar yaparken daha sonrasında iki ayrı branche ayrılıyor.
+
+385
+01:13:41,320 --> 01:13:48,700
+Üst branche, semantik branche olarak düşünebiliriz. Daha genel kontekste, daha büyük yapıları öğrenmeye çalışıyor.
+
+386
+01:13:48,700 --> 01:13:51,900
+Daha düşük, üzünürlüklü input alıyor ve output.
+
+387
+01:13:52,020 --> 01:13:54,420
+üretiyor. Alt taraf ise
+
+388
+01:13:54,420 --> 01:13:55,180
+daha
+
+389
+01:13:55,180 --> 01:13:57,840
+detayları öğrenmeye çalışıyor.
+
+390
+01:13:58,000 --> 01:14:00,060
+İnce yapıları, sınırları,
+
+391
+01:14:00,660 --> 01:14:02,420
+küçük objeleri öğrenmeye çalışıyor.
+
+392
+01:14:02,920 --> 01:14:04,260
+Bu iki branş arasında da
+
+393
+01:14:04,260 --> 01:14:05,780
+bilateral fusion kullanılıyor.
+
+394
+01:14:05,920 --> 01:14:08,100
+Yine burada da çok karmaşık yapılar yerine
+
+395
+01:14:08,100 --> 01:14:09,940
+basit konvolüsyonel yapılar
+
+396
+01:14:09,940 --> 01:14:11,240
+kullanmaya çalışmışlar.
+
+397
+01:14:13,975 --> 01:14:19,975
+Bu örneğe bakalım.
+
+398
+01:14:12,115 --> 01:14:20,996
+Daha sonrasında bu iki branştan alınan çıktığı segmentation headden geçirerek loss function'a koyuyorlar.
+
+399
+01:14:20,996 --> 01:14:24,595
+Loss function olarak OHM Cross-Ontropy kullanılmış.
+
+400
+01:14:24,595 --> 01:14:30,115
+Ayrıca training aşamasında yardımcı bir segmentation head de kullanılıyor.
+
+401
+01:14:30,115 --> 01:14:40,115
+Burada da aradaki önemli bilgileri atlamamak için burada arada da bir öğrenilen featureleri yine loss function'a ekliyorlar.
+
+402
+01:14:40,115 --> 01:14:55,595
+İnference aşamasında yine bu segmentation headde kaldırılıyor. Tek bir head kullanılıyor. Ve tüm DC bloklarda üstte gördüğümüz karmaşık yapılar tek bir 3'e 3'lük konvolüsyon haline getirilerek küçültülüyor.
+
+403
+01:14:58,931 --> 01:15:04,431
+Şimdi bir de buradaki yapının nasıl 3'e 3'lük konvolüsyon haline getirildiğini anlatacağım.
+
+404
+01:15:04,431 --> 01:15:17,431
+Bu yapıda farklı çeşitte PET'ler kullanılıyor. 3'e 3 ve ardından 1'e 1'lik konvolüsyonel yapılar, 1'e 1 ve ardından 1'e 1'lik konvolüsyonel yapılar ve residual PET'ler kullanılıyor.
+
+405
+01:15:17,431 --> 01:15:26,931
+Bu konvolüsyonların arasında hiçbir non-linear aktivasyon function'ları kullanılmıyor. Bunu önemli görüyorlar.
+
+406
+01:15:26,931 --> 01:15:32,771
+Çünkü arada bir naniner işlem olsaydı bunu tek bir linear işleme indirgeyemezlerdi.
+
+407
+01:15:33,351 --> 01:15:39,331
+Bu yüzden aktivasyon fonksiyonu bloğun sonunda tek bir tane kullanıyorlar.
+
+408
+01:15:40,971 --> 01:15:50,871
+3x3 ve ardından birebirlik konvolüsyon yapılarını tek bir 3x3'lü konvolüsyon yapısına ağırlıklarını dot product ile çarparak getiriyorlar.
+
+409
+01:15:51,572 --> 01:16:03,012
+Birebir ve ardından birebirlik konvülüsyon yapılarında ilk birebirlik konvülüsyonu zero padding yaparak üçe üçlü konvülüsyonu haline getiriyorlar. Daha sonra üstteki işlemi uygulayabiliyorlar.
+
+410
+01:16:04,212 --> 01:16:20,292
+Residual petleri Identity Convolution olarak yazabiliyorlar. Çünkü Residual petlerde Input direkt Output'a giriyor. Aslında Identity Convolution uygulanabiliyor. Bunu da yine Zero Padding yaparak 3x3'lük konvolüsyon haline getirebiliyorlar.
+
+411
+01:16:20,532 --> 01:16:31,092
+Tüm petleri 3x3'lük konvolüsyon haline getirdikten sonra da ağırlıklarını ve bayaslarını toplayarak tek bir 3x3 konvolüsyon yapısına erişmiş oluyorlar.
+
+412
+01:16:32,659 --> 01:16:56,899
+Orijinal makalede 3 ayrı dataset kullanılıyor. CitySpace ana dataset olarak kullanılıyor. Sıfırdan train ediliyor. Herhangi bir external modelle pretrain yapılmıyor. Daha sonrasında buradaki en iyi sonuçlardan alınan ağırlıkları CanVid ve Pascal Vios'te fine tuning için kullanıyorlar. Bu yüzden bu datasetler sıfırdan train edilmemiş.
+
+413
+01:16:59,539 --> 01:17:03,900
+Daha önce train edilen ayrılıklar kullanılarak fine-tune edilmiş.
+
+414
+01:17:03,900 --> 01:17:10,940
+Burada CitySpace ve Canvas datasetleri oldukça benzer. İkisi de Urban Class'lar kullanılıyor.
+
+415
+01:17:10,940 --> 01:17:13,940
+Otonom sürüşler için de daha uygun.
+
+416
+01:17:13,940 --> 01:17:25,140
+Pascal VOC biraz daha jenerik bir dataset. Urban Class'ların yanında kedi, köpek, sandalye, koltuk gibi daha jenerik class'lar da var.
+
+417
+01:17:25,939 --> 01:17:42,519
+Bunlar üzerinde de sonuçlarını iletmişler. Üç ayrı model öneriyorlar. GCNet S, M ve L modelleri. Burada gittikçe karmaşıklık artıyor, ekürüsü artıyor. Farklı senaryolar için farklı kullanılabilecek modeller üretmişler.
+
+418
+01:17:43,891 --> 01:17:59,831
+Burada bu modellerin sonuçlarını görebiliyoruz. Diğer Real-Time Segmentation modellerinde FPS'lerini doğru karşılaştırabilmek amacıyla yeniden train edip burada sonuçlarını göstermişler.
+
+419
+01:18:00,724 --> 01:18:18,564
+GCNet S'in FPS açısından diğer modellerden çoğundan daha hızlı olurken, Eccuris'in de diğer modellerden yine yüksek sonuç alması göze çarpıyor. Oldukça iyi bir başarı gösteriyor Eccuris'i.
+
+420
+01:18:19,024 --> 01:18:30,543
+dengesi açısından. GCNet-L ise FPS'i düşük olmasına rağmen en yüksek accuracy'ye sahip model olduğu için bu da farklı senaryolarda kullanılabileceğini gösteriyor.
+
+421
+01:18:31,543 --> 01:18:37,224
+Yine burada da accuracy speed dengesinde GCNet-S'in ön planda olduğunu görebiliyoruz.
+
+422
+01:18:38,844 --> 01:18:43,224
+Burada da bahsettikleri kendi kendine büyüp küçülebilme...
+
+423
+01:18:43,828 --> 01:18:56,828
+Bu olayının katkısını görebiliyoruz aslında. Training aşamasında G-floplar ve parametreler yüksekken, inference aşamasında yarıya ve daha fazla da indiğini görebiliyoruz.
+
+424
+01:18:56,828 --> 01:19:02,828
+FPS'in ise 4-5 kat daha arttığını görebiliyoruz, inference aşamasında.
+
+425
+01:19:03,956 --> 01:19:23,036
+Burada da Visual sonuçlar var. Grand Truth ve 3 farklı benzer parametrelere sahip modellerin karşılaştırması var. GCNet S yine bu belirtilen bölgelerde Grand Truth'a oldukça yaklaşırken diğer modellerde tutarsızlıklar görebiliyoruz.
+
+426
+01:19:25,176 --> 01:19:29,036
+Bu da bahsettiğim diğer iki dataset'in sonuçları.
+
+427
+01:19:31,167 --> 01:19:40,767
+Yine aynı şekilde GCNET S'in accuracy speed dengesinde iyi sonuçlar verdiğini görebiliyoruz diğer modellere bakarak.
+
+428
+01:19:40,767 --> 01:19:48,767
+GCNET L'de iki dataset'de de en yüksek XSAP model olduğunu gösteriyor.
+
+429
+01:19:50,323 --> 01:20:08,363
+Ben kendi Reproduction deneylerimde orijinal repoda belirttikleri kodu kullandım. Cagle'da çalıştırdım kodu. City Space'i sıfırdan train edemedim. Kendileri çok yüksek GPU'larla bile dört saatte train ettiklerini söylüyorlardı.
+
+430
+01:20:11,028 --> 01:20:19,228
+Diğer dataset'leri 4 saatten daha fazla sürede train edebildim. O yüzden CitySpace'i train etmem oldukça zor olacaktı.
+
+431
+01:20:19,228 --> 01:20:23,628
+Bu yüzden deneylerimi CamVet ve Pascal Biosya üzerinde yaptım.
+
+432
+01:20:23,628 --> 01:20:35,028
+Aynı şekilde GCNET 50 eğitmek de uzun zaman alacağı için GCNET S ve GCNET M üzerinden deneylerimi ve karşılaştırmalarımı yaptım.
+
+433
+01:20:35,507 --> 01:20:50,867
+Burada yine Space'de orijinal repoda checkpointleri bulunuyordu. Oradaki ayrılıkları kullandım. Sıfırdan train etmeyi de denedim aslında ama orada güzel sonuçlar alamadığım için checkpointleri kullandım daha sonradan.
+
+434
+01:20:52,372 --> 01:21:20,372
+GCNET S için yine repository'de konfigürasyonlar bulunuyordu. Hazır konfigürasyonları, Paper'da kullanılan konfigürasyonları kullandım. GCNET M için orijinal konfigürasyonları koymamışlardı. Bu yüzden ben GCNET S'in bu dataset'ler için konfigürasyonları ve GCNET M'in CitySpace için konfigürasyonları birleştirerek kendim konfigürasyonları koydum.
+
+435
+01:21:20,372 --> 01:21:32,212
+Konfigürasyonlarını oluşturmaya çalıştım. Burada da sonuçlarım var. Pascal VOC'de iki modelde de sonuçlarım Paper'daki sonuca fazla yaklaşamadı aslında.
+
+436
+01:21:33,432 --> 01:21:43,812
+Burada konfigürasyonlarda değişiklikler yapmam gerekti ve trainingler oldukça uzun sürdüğü için ve Kaggle ortamında hataları aldığım için değişiklik yapmam gerekti.
+
+437
+01:21:44,463 --> 01:21:54,363
+Değişikliklerden kaynaklı olabilir diye düşünüyorum. İterasyonda daha fazla olduğu için CanVit'den daha zor oldu bunları reproduce etmek.
+
+438
+01:21:55,203 --> 01:22:00,023
+CanVit'de ise orijinal paper ile aynı sonuçları alabildim diyebilirim.
+
+439
+01:22:02,452 --> 01:22:15,652
+Burada da class size sonuçları görebiliriz. Pascal Veos'u da dediğim gibi urban class'lar bulunurken araba, otobüs, ağaç gibi bir daha jenerik class'lar da bulunuyor.
+
+440
+01:22:16,652 --> 01:22:28,032
+Burada daha geniş piksellere sahip class'larda iyi sonuçlar alırken daha ufak ve öğrenmesi zor class'larda kötü sonuçlar aldım.
+
+441
+01:22:30,452 --> 01:22:38,452
+Dolayısıyla örneğe öğrenilmiş ağırlıklarında bu daha önce karşılaşılmadığı için burada kötü sonuç alması normal aslında.
+
+442
+01:22:38,452 --> 01:22:47,452
+GC.NET M'de S'den de kötü sonuç aldım. Bunun sebebini bahsettiğim gibi bilmiyorum açıkçası.
+
+443
+01:22:47,452 --> 01:22:54,452
+Farklı şekillerde denemeye çalıştım ama en yüksek alabildiğim MIO'yu değeri 47.3'tü.
+
+444
+01:22:56,979 --> 01:23:12,139
+Canbit'te daha az klas var ve klasları Space ile daha uyumluydu. Bu sebeple daha yüksek sonuçları alabildim. Dediğim gibi Paper'daki ile neredeyse birebir aynı sonuçları aldım.
+
+445
+01:23:24,979 --> 01:23:31,299
+Trafik işaretleri, kenardaki çitler gibi klaslarda daha düşük sonuçlar aldım.
+
+446
+01:23:32,756 --> 01:23:48,776
+Sonuç olarak GCNAT gerçekten de önerdiği mimaride accuracy speed dengesini sağlayabildiğini göstermiş. Ben de reproduction deneylerimde bunu gözlemledim. CamVid'de oldukça iyi sonuçlar aldım.
+
+447
+01:23:49,436 --> 01:24:00,756
+FPS'leri karşılaştıramadım. Aslında hedeflerim arasında farklı modeller de deneyip FPS karşılaştırmak da vardı. Ama bu kadarını bile yapmak aldığım hatalı.
+
+448
+01:24:00,756 --> 01:24:05,452
+Bu konular sebebiyle uzun sürdüğü için farklı modeller deneyimleyemedim.
+
+449
+01:24:06,452 --> 01:24:28,192
+GC-Net'te ise parametre sayısı ve computational cost training aşamasında oldukça yüksek olduğu için yine deneysel olarak çok iyi sonuç olmasına rağmen kaynakların kısıtlı olduğu, depolama alanlarının kısıtlı olduğu cihazlarda halen kullanılamayacağını düşünüyorum.
+
+450
+01:24:28,192 --> 01:24:33,052
+Daha da iyileştirmesi gerektiğini paperda da söylüyorlar.
+
+451
+01:24:34,452 --> 01:24:36,212
+oldum. Trening
+
+452
+01:24:36,212 --> 01:24:38,592
+süreçleri benim bilgisayarım
+
+453
+01:24:38,592 --> 01:24:39,332
+gibi daha
+
+454
+01:24:39,332 --> 01:24:41,931
+düşük kaynaklı bilgisayarlarda
+
+455
+01:24:41,931 --> 01:24:43,532
+oldukça uzun sürüyor.
+
+456
+01:24:45,372 --> 01:24:46,592
+Kaynaklarım bu şekilde.
+
+457
+01:24:46,912 --> 01:24:48,512
+Beni dinlediğiniz için teşekkür ederim.
+
+458
+01:24:50,832 --> 01:24:52,192
+Teşekkür ediyoruz.
+
+459
+01:24:52,311 --> 01:24:53,652
+[öğrenci] sunumun için
+
+460
+01:24:53,652 --> 01:24:56,132
+ve sizi de alkışlıyoruz.
+
+461
+01:24:56,132 --> 01:24:56,532
+Evet.
+
+462
+01:24:59,507 --> 01:25:23,927
+Yapmak isteyenler bu kadar sanıyorum. Derski bölümde başka kimsenin adını görmedim. Evet, beni kapatıyoruz sevgili arkadaşlar. Proje filmlerimizi tamamladık. 22 Haziran, Pazar fesiliği final sınavımız var. Saat 13'de program açıklanmış web sitesinde.
+
+463
+01:25:24,448 --> 01:25:36,627
+Final haftasının, yani iki haftalık final sürecinin ikinci haftası, ilk pazartesi sınavımız olacak. İlçi sınavına benzer bir sınav olacak. Hepinize şimdiden başarılar diliyorum.
+
+464
+01:25:37,207 --> 01:25:40,408
+Hocam, haftaya sunumlar olacak mı? Bu son hafta mı?
+
+465
+01:25:40,747 --> 01:25:41,827
+Bu son hafta bitti.
+
+466
+01:25:42,427 --> 01:25:44,967
+O zaman ben de bir sunum yapabilir miyim?
+
+467
+01:25:45,811 --> 01:25:56,652
+Hayır, şöyle yapacağım. Bir günü koyacağım. 10 Haziran, Çarşamba gününe kadar video çekip ders kumarında paylaşıyorsunuz. Bununla konuyen arkadaşlar için.
+
+468
+01:25:56,711 --> 01:26:00,391
+Dur hocam, [kişisel bilgi]
+
+469
+01:26:00,951 --> 01:26:07,631
+Dediğim gibi 10 Haziran'a kadar tamamlama imkanı vereceğim. Ders kumarında duyuru koyacağım bununla ilgili.
+
+470
+01:26:08,224 --> 01:26:31,344
+Sunum yapmayan [öğrenci], Anlık [öğrenci], [öğrenci], [öğrenci] sunum yapmamış gözüküyor. Arkadaşlarımız da birbence ders uvarında sunum videolarını paylaşabilir. Linkini paylaşacaksınız mükemmel. Bu oradan bilgiler vereceksiniz diye tahmin ediyorum.
+
+471
+01:26:31,344 --> 01:26:34,923
+Evet, hepimize başarılar arkadaşlar.
+
+472
+01:26:35,952 --> 01:26:41,712
+Bir şey sorabilir miyim? Önceki sınav gibi olacak dediniz ya, o zaman hesap makinesi yine kulu getirebiliriz.
+
+473
+01:26:41,712 --> 01:26:45,092
+Tabii ki, mutla ta olsun hesap makinesi.
