@@ -10,4 +10,5 @@
 | 20 | Güz | — | [sube_20/](sube_20/) |
 | 22 | Güz | — | [sube_22/](sube_22/) |
 | 24 | Güz | — | [sube_24/](sube_24/) |
+| 25 | Güz | Fatma Çeliker | [sube_25/](sube_25/) |
 | 58 | Güz | Muttalip Özavşar | [sube_58/](sube_58/) |
