@@ -1,0 +1,5879 @@
+1
+00:03:02,259 --> 00:03:07,860
+Günaydın kıymetli arkadaşlar, iyisinizdir inşallah.
+
+2
+00:03:07,860 --> 00:03:13,860
+Bu hafta sayımız biraz az ama herhalde sınav haftası falan filan diye olabilir.
+
+3
+00:03:13,860 --> 00:03:18,060
+Ama biz yine de dersimizi yapalım.
+
+4
+00:03:18,060 --> 00:03:23,060
+Şimdi bu haftadan sonra iki hafta kalıyor değil mi?
+
+5
+00:03:23,060 --> 00:03:30,289
+Konuları şöyle bir şey yapalım.
+
+6
+00:03:30,289 --> 00:03:37,889
+Ne denir ona göstereyim size iki haftanın yerini değiştirmiş olacağım ama sizi doğrudan etkileyecek bir şey değil bu.
+
+7
+00:03:37,889 --> 00:03:39,889
+Tekstopu paylaşmak istemiyordum.
+
+8
+00:03:39,889 --> 00:03:44,479
+Niye öyle oldu?
+
+9
+00:03:44,479 --> 00:03:50,590
+Hmm, enteresan. Bir daha deneyelim.
+
+10
+00:03:50,590 --> 00:03:55,590
+Bu arada sizin söylemek istediğiniz şeyler varsa alabiliriz.
+
+11
+00:03:55,590 --> 00:04:00,590
+Ödevle ilgili bir şeyler sormak istediğinizi biliyorum. Bu hafta vereceğiz yani vermemiz lazım.
+
+12
+00:04:01,189 --> 00:04:05,189
+Evet, bir türlü odaklanamadık ama vereceğiz yani.
+
+13
+00:04:05,189 --> 00:04:09,189
+Başka sorularınız varsa onları alabiliriz.
+
+14
+00:04:09,189 --> 00:04:16,680
+Güzel. Sabah sabah zaten kim soru sorsun?
+
+15
+00:04:16,680 --> 00:04:25,680
+Şimdi şöyle 12 ile 13. haftanın yerlerini değiştirmiş oldum.
+
+16
+00:04:25,680 --> 00:04:28,680
+Bu hafta böyle kesme vektör tablosunu anlatalım.
+
+17
+00:04:29,279 --> 00:04:38,279
+Önümüzdeki hafta ortak veri kullanımı, veri alanı kullanımı ve ortak segment kullanımı ona bakıyor olalım.
+
+18
+00:04:38,279 --> 00:04:42,279
+Ortak veri kullanımını zaten şey yapmıştık.
+
+19
+00:04:42,279 --> 00:04:48,279
+Ne denir ona geçen hafta yapmıştık ama ortak kesim kullanımında daha farklı yapılması gereken işler var.
+
+20
+00:04:48,279 --> 00:04:52,279
+Onlara önümüzdeki hafta bakıyor olalım arkadaşlar.
+
+21
+00:04:52,279 --> 00:04:55,279
+Şu ikisinin yerini değiştirmiş olacağım.
+
+22
+00:04:55,279 --> 00:04:57,279
+Müsaadenizle.
+
+23
+00:04:57,879 --> 00:05:03,279
+Evet, şimdi inter-up kesme nedir?
+
+24
+00:05:03,279 --> 00:05:09,279
+Belki şimdiye kadar farklı derslerde veya bizim SM1 dersinde duymuşsunuzdur.
+
+25
+00:05:09,279 --> 00:05:13,279
+Inter-up'larla ilgili çeşitli komutlar da vardı.
+
+26
+00:05:13,279 --> 00:05:25,279
+Ama bu ders de böyle 2-3 saat boyunca işte ne kadar sürerse hep inter-up'da konuştuğumuzda kafanıza daha güzel canlanacaktır diye açıkçası düşünüyorum.
+
+27
+00:05:25,879 --> 00:05:30,879
+Şimdi öncelikle şunu söyleyelim.
+
+28
+00:05:30,879 --> 00:05:33,879
+Diyelim ki bizim tek çekirdekli bir işlemcimiz var.
+
+29
+00:05:33,879 --> 00:05:40,879
+Şu an tabii işlemciler genelde birden fazla çekirdekli ama yani 80-86 tek çekirdek şekilde çalışıyor mesela.
+
+30
+00:05:40,879 --> 00:05:44,879
+Şu anda tek çekirdekli bir işlemcimiz olduğunu düşünelim.
+
+31
+00:05:44,879 --> 00:05:49,879
+Bu işlemci ile aynı anda sadece tek bir işlem yapabiliriz.
+
+32
+00:05:49,879 --> 00:05:54,879
+Yani siz müzik dinliyorsanız aynı anda internete de giremezsiniz.
+
+33
+00:05:55,480 --> 00:06:01,480
+Veya işte YouTube'dan bir video izliyorsanız aynı anda masunuzu hareket ettiremezsiniz.
+
+34
+00:06:01,480 --> 00:06:08,480
+Diyelim ki 8 çekirdekli olsun işlemciniz, fiziksel olarak 8 farklı işlemciden oluşuyor olsun.
+
+35
+00:06:08,480 --> 00:06:14,480
+Böyle bir durumda da aslında maksimum 8 tane aynı anda işlem yapabilirsiniz.
+
+36
+00:06:14,480 --> 00:06:18,480
+Hocam 8 tane işlem zaten maksimum aynı anda çok fazla yapmıyoruz.
+
+37
+00:06:18,480 --> 00:06:23,480
+O yüzden yeterli değil mi diye soracak olursanız bir görev yöneticinizi açın isterseniz.
+
+38
+00:06:24,079 --> 00:06:28,079
+Bilgisayarınızda şu an hangi işlemler yapılıyor bir bakın isterseniz.
+
+39
+00:06:28,079 --> 00:06:34,079
+Ya en az 100 tane işlem sadece işletim sisteminin yürütülebilmesi için yapılıyordur.
+
+40
+00:06:34,079 --> 00:06:38,079
+Sizin hiç haberiniz yok. Networkten veri paketleri geliyor gidiyor.
+
+41
+00:06:38,079 --> 00:06:41,079
+Siz bu videoyu izleyebiliyorsunuz.
+
+42
+00:06:41,079 --> 00:06:52,079
+Sesi duyabiliyorsunuz adam senin mikrofonunu hoparlörünü neyse kulaklığına falan veri göndermek için ayrıca bir driver çalıştırıyor.
+
+43
+00:06:52,680 --> 00:06:57,680
+Veya ekranın sürekli yenilenmesi için ayrı bir program çalışıyor.
+
+44
+00:06:57,680 --> 00:07:01,680
+O ara tabi beni dinlerken büyük bir kısmınız internette surf yapıyorsunuz.
+
+45
+00:07:01,680 --> 00:07:09,680
+Gerçi sabah saat şu an kahvaltı yapıyorsunuz muhtemelen ama kahvaltıyı kendi başınıza yaptığınız için işlemcinin çekirdekleriyle doğrudan bir alakası yok.
+
+46
+00:07:09,680 --> 00:07:15,680
+Şimdi böyle durumlarda tek bir işlemci aynı anda bir tane işlem yapıyor.
+
+47
+00:07:15,680 --> 00:07:24,279
+Bu hala nasıl olacak? Biz hem müzik dinlerken hem de arka tarafta Word belgesindeki raporu nasıl dolduracağız?
+
+48
+00:07:24,279 --> 00:07:28,279
+İşte bunun için kurgulanmış çeşitli mekanizmalar var.
+
+49
+00:07:28,279 --> 00:07:35,279
+Tamam mı? Tekrar söyleyeyim şu an bilgisayarınız sizin 8 çekirdek olsa dahi.
+
+50
+00:07:35,279 --> 00:07:41,279
+Bu demektir ki aynı anda sizin bilgisayarınız maksimum 8 tane işlem yapabilir.
+
+51
+00:07:41,879 --> 00:07:48,879
+Ama bu böyle değil. Görev yöneticinizi tekrar söylüyorum. Açtığınızda işlemleri gördüğünüzde 100 tane işlem zaten görüyorsun.
+
+52
+00:07:48,879 --> 00:07:53,879
+Peki hala nasıl yapabiliyor 8 çekirdekte? İşte bunun için kurgulanmış çeşitli mekanizmalar var.
+
+53
+00:07:53,879 --> 00:07:57,879
+Interop mekanizması ne oldu? Allah Allah.
+
+54
+00:07:57,879 --> 00:08:01,879
+Interop mekanizması bunlardan birisi.
+
+55
+00:08:01,879 --> 00:08:13,879
+Temel amacı ne? Yavaş birimlerle hızlı birimlerin senkron bir şekilde veya hızdan tasarruf edecek şekilde çalışması.
+
+56
+00:08:13,879 --> 00:08:18,879
+Ne demek istiyorum? Şimdi bakın siz yazıcınızı düşünün.
+
+57
+00:08:18,879 --> 00:08:23,879
+Bilgisayardan bir kağıt, bir A4 kağıdı gönderiyorsunuz yazıcınıza.
+
+58
+00:08:23,879 --> 00:08:25,879
+Basması 4 saniye sürüyor.
+
+59
+00:08:25,879 --> 00:08:32,879
+Düşünsene 4 saniye boyunca o basılıncaya kadar bilgisayarınızın onu beklediğini düşünün.
+
+60
+00:08:32,879 --> 00:08:37,879
+Hiçbir iş yapmıyor, mouse hareket ettirmiyor, basılsın diye bekliyor.
+
+61
+00:08:37,879 --> 00:08:46,879
+Yani daha uzun da sürebilir. Hatta tek bir A4 değil de 100 sayfa bastığınızı düşünün 300 saniye sürsün 5 dakika.
+
+62
+00:08:46,879 --> 00:08:53,879
+Veya işte mouse hareket ettirdiğinizi düşünün veya klavyeden bir tuşa basmak istediğinizi düşünün.
+
+63
+00:08:53,879 --> 00:08:54,879
+Tamam.
+
+64
+00:08:54,879 --> 00:08:57,879
+Siz mesela Word'de bir döküman yazacaksınız.
+
+65
+00:08:57,879 --> 00:09:00,879
+O işlemci sizin klavyeden tuşa basmamızı bekliyor.
+
+66
+00:09:00,879 --> 00:09:06,879
+Yani 1 dakikada maksimum kaç tuşa basabilirsin ki veya 1 saniyede maksimum kaç tuşa basabilirsin?
+
+67
+00:09:06,879 --> 00:09:09,879
+Hepsine 1 saniyede bastığını düşün.
+
+68
+00:09:09,879 --> 00:09:11,879
+Hepsine 1 saniyede 10 kere bastığını düşün.
+
+69
+00:09:11,879 --> 00:09:18,879
+İşlemciler gigal seviyesinde yani milyarlarca aynı anda aynı saniyede bu işi kontrol edebilecek seviyede.
+
+70
+00:09:18,879 --> 00:09:19,879
+Sen çok yavaşsın.
+
+71
+00:09:20,879 --> 00:09:23,879
+Veya işte monitör alıyorsun.
+
+72
+00:09:23,879 --> 00:09:25,879
+İşte benim monitörüm 60 Hz.
+
+73
+00:09:25,879 --> 00:09:29,879
+Her saniye 60 kez benim ekranım yeniliyor.
+
+74
+00:09:29,879 --> 00:09:32,879
+İşte FPS oyunu oynuyorsun.
+
+75
+00:09:32,879 --> 00:09:34,879
+Ya o Hz çok önemli.
+
+76
+00:09:34,879 --> 00:09:36,879
+İşte bak 500 Hz yeniliyor.
+
+77
+00:09:36,879 --> 00:09:41,879
+700 Hz'lere çıkıyor falan yani FPS'ye çıkıyor.
+
+78
+00:09:41,879 --> 00:09:47,879
+Yani 700 kere ekranı yenilemek adam milyarlarca kez yapabilecek kapasitede zaten buna.
+
+79
+00:09:47,879 --> 00:09:48,879
+Tamam mı?
+
+80
+00:09:48,879 --> 00:10:00,879
+O yüzden genellikle ve genellikle çevre birimleri işlemcinin haricindeki diğer donanım birimleri diyelim veya işlemceden yavaş çalışır.
+
+81
+00:10:00,879 --> 00:10:03,879
+İşlemci enist çalışan donanım birimi.
+
+82
+00:10:03,879 --> 00:10:06,879
+Diske veri yazmak dahil.
+
+83
+00:10:06,879 --> 00:10:08,879
+Ne demek istiyorum?
+
+84
+00:10:08,879 --> 00:10:11,879
+Yani sizin bilgisayarınızda hard disk olmuş olsun.
+
+85
+00:10:11,879 --> 00:10:20,879
+O hard disk'e veri yazacağınız zaman sadece işlemcinizi kullansanız bile hard disk'in kapasitesi %100 çalışırken,
+
+86
+00:10:20,879 --> 00:10:29,879
+yani daha fazla ona yüklenemeyecek durumdayken işlemcinizi hala da %3-5-10'larda seyreder.
+
+87
+00:10:29,879 --> 00:10:36,879
+SSD yazarken bir tık daha artar ama yine işlemciniz SSD yazma kabiliyetinden de çok daha hızlı çalışır.
+
+88
+00:10:37,879 --> 00:10:46,879
+O yüzden işte biz işlemcinin zamanını farklı donanım birimleri arasında bölmemiz gerekiyor.
+
+89
+00:10:46,879 --> 00:10:48,879
+Yani ne demek istiyoruz?
+
+90
+00:10:48,879 --> 00:10:51,879
+İşlemci şu şekilde davranıyor.
+
+91
+00:10:51,879 --> 00:10:59,879
+Bir saniyeyi, diyelim ki hani örnek vermek adına söylüyorum, bir saniyeyi bir milyar parçaya böldüğümüzü düşünün.
+
+92
+00:10:59,879 --> 00:11:04,879
+Bir saniyeyi bir milyar parçaya böldüğümüzü düşünün.
+
+93
+00:11:04,879 --> 00:11:15,879
+Ve bu bir milyar parçanın her birisine diyor ki ben bu bir milyar parçanın, onların hepsine time slot diyelim tamam mı ufak parçalara,
+
+94
+00:11:15,879 --> 00:11:21,879
+ben bu slotta işte YouTube'a hizmet vereceğim.
+
+95
+00:11:21,879 --> 00:11:26,879
+YouTube'dan gidip veriyi alıp işte videoysa oynatacağım.
+
+96
+00:11:26,879 --> 00:11:30,879
+Bu slotta, diğer slotta mouse'u hareket ettireceğim.
+
+97
+00:11:30,879 --> 00:11:35,879
+Diğer slotta işte Word belgesinde bir klavye yazı yazılmışsa onu kullanacağım.
+
+98
+00:11:35,879 --> 00:11:37,879
+Diğer slotta şunu yapacağım.
+
+99
+00:11:37,879 --> 00:11:42,879
+Ondan sonra yeni bir iş geliyor, bunu 4 slot boyunca yapacağım diyor mesela adam.
+
+100
+00:11:42,879 --> 00:11:45,879
+Bu şekilde işlemci kendi zamanını bölüyor.
+
+101
+00:11:45,879 --> 00:11:47,879
+Ama da tabii bunun bir esprisi de var.
+
+102
+00:11:47,879 --> 00:11:50,879
+Yani kafasına göre her daim bölmemesi lazım.
+
+103
+00:11:50,879 --> 00:11:53,879
+Çünkü ben Word'te yazı yazıyorum ama yazmadım.
+
+104
+00:11:53,879 --> 00:11:55,879
+Bana mesela 4 tane slot ayırdı.
+
+105
+00:11:55,879 --> 00:11:57,879
+Klavye'den bir şey yazmamı bekliyor.
+
+106
+00:11:57,879 --> 00:12:01,879
+Yazmıyorum abi düşünüyorum mesela ne olacak?
+
+107
+00:12:01,879 --> 00:12:02,879
+Değil mi?
+
+108
+00:12:02,879 --> 00:12:08,879
+Bana o yüzden mantıklı bir şekilde bu slotlarına ayırması lazım işlemcinin.
+
+109
+00:12:08,879 --> 00:12:11,879
+İşte bunun için temelde interrupt mekanizması var.
+
+110
+00:12:11,879 --> 00:12:17,879
+Tabii işlemcinin haricinde çalışan en hızlı donanım birimlerinden birisi RAM biliyorsunuz.
+
+111
+00:12:17,879 --> 00:12:18,879
+En hızlısı.
+
+112
+00:12:18,879 --> 00:12:24,879
+RAM'lerde neredeyse frekans bakımının işlemcilerle yarışır hale geldi şimdilerde.
+
+113
+00:12:24,879 --> 00:12:31,879
+Yani o aslında RAM teknolojisindeki gelişme işlemci teknolojisindeki gelişememeden kaynaklı.
+
+114
+00:12:31,879 --> 00:12:43,879
+Ama yine de RAM'e dahi yazıyor olsa işlemcinin aynı anda farklı işler yapmak için interrupt mekanizmasını kullanmaya ihtiyacı var.
+
+115
+00:12:43,879 --> 00:12:47,879
+Pekala işlemci ile yavaş birimler arasındaki ilişki nasıl olabilir?
+
+116
+00:12:47,879 --> 00:12:52,879
+Temelde üç şekilde ilişkiden bahsediyoruz arkadaşlar.
+
+117
+00:12:52,879 --> 00:12:55,879
+Bunlardan birisi busy waiting.
+
+118
+00:12:55,879 --> 00:12:58,879
+Yani ne demek istiyoruz?
+
+119
+00:12:58,879 --> 00:13:04,879
+Örnek vererek kafanıza daha güzel canlandığı için örnek vererek anlatmak istiyorum.
+
+120
+00:13:04,879 --> 00:13:10,879
+Şimdi diyelim ki bizim bir butonumuz olmuş olsun.
+
+121
+00:13:10,879 --> 00:13:14,879
+Bu klavyedeki herhangi bir tuş olarak da düşünebilirsiniz bunu.
+
+122
+00:13:14,879 --> 00:13:17,879
+Ve işlemci o tuşa basılsın diye bekliyor.
+
+123
+00:13:17,879 --> 00:13:19,879
+Başka hiçbir işi yok.
+
+124
+00:13:19,879 --> 00:13:21,879
+Tamam basılsın diye bekliyor.
+
+125
+00:13:21,879 --> 00:13:26,879
+O tuşa basıldığında bir aksiyon gerçekleştirecek onu bekliyor.
+
+126
+00:13:26,879 --> 00:13:32,879
+Başka herhangi bir işlem de yapayım diye ekstradan uğraşmıyor.
+
+127
+00:13:32,879 --> 00:13:34,879
+Bizi waiting tam olarak bu.
+
+128
+00:13:34,879 --> 00:13:36,879
+Tekrardan mesela özetleyeyim.
+
+129
+00:13:36,879 --> 00:13:39,879
+Yani adamın yaptığı tek bir iş olsun.
+
+130
+00:13:39,879 --> 00:13:40,879
+İş şu.
+
+131
+00:13:40,879 --> 00:13:46,879
+Klavyeden okunan tuşları, klavyede basılan yani tuşları okuyup ekrana yazdırmak.
+
+132
+00:13:46,879 --> 00:13:54,879
+Sen tuşa basmıyorsan klavyede hiçbir şekilde adam boş boş bekliyor basasın diye.
+
+133
+00:13:54,879 --> 00:13:56,879
+Boş boş bekliyor.
+
+134
+00:13:56,879 --> 00:14:00,879
+Veya tam tersi eğer ki sen yazıcıyı kullanmak istiyorsan,
+
+135
+00:14:00,879 --> 00:14:05,879
+yazıcıya bir veri gönderip oradan yazdırılmasını sağlayan bir program varsa
+
+136
+00:14:05,879 --> 00:14:07,879
+işlemci sadece bu programı çalıştırıyor.
+
+137
+00:14:07,879 --> 00:14:08,879
+Bekliyor.
+
+138
+00:14:08,879 --> 00:14:09,879
+Yazıcıya bir şey göndersin diye.
+
+139
+00:14:09,879 --> 00:14:11,879
+Ben son 6 aydır yazıcıyı kullanmadım.
+
+140
+00:14:11,879 --> 00:14:12,879
+Düşünün yani.
+
+141
+00:14:12,879 --> 00:14:13,879
+Böyle bir işlemci düşünün.
+
+142
+00:14:13,879 --> 00:14:16,879
+Buna busy waiting deniliyor.
+
+143
+00:14:16,879 --> 00:14:17,879
+Adam bekliyor.
+
+144
+00:14:17,879 --> 00:14:19,879
+İlk mimariler genelde bu şekilde.
+
+145
+00:14:19,879 --> 00:14:26,879
+Yani çok fazla işiniz varsa çok fazla işlemciye ihtiyacınız var.
+
+146
+00:14:26,879 --> 00:14:30,879
+Aynı anda tek proses, tek thread gerçekleştirebiliyor.
+
+147
+00:14:30,879 --> 00:14:33,879
+Threading mekanizması zaten yok o dönemlerde.
+
+148
+00:14:33,879 --> 00:14:35,879
+Ama tek proses yapabiliyor.
+
+149
+00:14:35,879 --> 00:14:36,879
+Aynı anda.
+
+150
+00:14:36,879 --> 00:14:45,879
+Sizin eğer ki 400 tane işiniz varsa kendi işletim sisteminizde 400 tane busy waiting yapabilecek
+
+151
+00:14:45,879 --> 00:14:47,879
+işlemciye ihtiyacınız var.
+
+152
+00:14:47,879 --> 00:14:57,879
+Hocam busy waiting yapabilmek yani hani ilk böyle bir mekanizma çıkmış.
+
+153
+00:14:57,879 --> 00:15:00,879
+Bu mekanizma hala daha kullanılıyor mu?
+
+154
+00:15:00,879 --> 00:15:01,879
+Tabii kullanılıyor.
+
+155
+00:15:01,879 --> 00:15:04,879
+Mesela real time işletim sistemi yazıyorsunuz.
+
+156
+00:15:04,879 --> 00:15:07,879
+Real time işletim sistemlerinde bunlara ihtiyaç var.
+
+157
+00:15:07,879 --> 00:15:09,879
+Real time işletim sistemi ne demek?
+
+158
+00:15:09,879 --> 00:15:13,879
+Pekala hocam bizim kullandığımız işletim sistemleri real time değil mi?
+
+159
+00:15:13,879 --> 00:15:14,879
+Değil.
+
+160
+00:15:14,879 --> 00:15:18,879
+Yani sen işletim sistemine bir emir veriyorsun.
+
+161
+00:15:18,879 --> 00:15:23,879
+Diyelim ki sana bir tane kum saati çıkartıyor.
+
+162
+00:15:23,879 --> 00:15:27,879
+Aşağı yukarı hareket ediyor veya yuvarlak bir şey şöyle.
+
+163
+00:15:27,879 --> 00:15:29,879
+Bazen yavaş dönüyor bazen hızlı dönüyor.
+
+164
+00:15:29,879 --> 00:15:31,879
+Arkasından üç nokta geliyor.
+
+165
+00:15:31,879 --> 00:15:34,879
+Bekliyorsun yani adam işini halletsin diye.
+
+166
+00:15:34,879 --> 00:15:39,879
+Yani düşünün mouse hareket ettiriyorsun.
+
+167
+00:15:39,879 --> 00:15:41,879
+Mouse simileci bazen görünmüyor.
+
+168
+00:15:41,879 --> 00:15:48,879
+Real time işletim sistemlerinde verdiğiniz tüm komutlara anında karşılık bulursunuz.
+
+169
+00:15:48,879 --> 00:15:50,879
+Sizi bekletmez.
+
+170
+00:15:50,879 --> 00:15:52,879
+O bekletmesinin sebebini birazdan göreceğiz.
+
+171
+00:15:52,879 --> 00:15:54,879
+İşte interrupt mekanizması.
+
+172
+00:15:54,879 --> 00:15:56,879
+300 tane işlemin var.
+
+173
+00:15:56,879 --> 00:15:58,879
+8 tane işlemcinin var.
+
+174
+00:15:58,879 --> 00:16:00,879
+Bizi waiting yapamıyorsun doğal olarak.
+
+175
+00:16:00,879 --> 00:16:03,879
+Ama bizi waiting ne tarz durumlarda yapılıyor?
+
+176
+00:16:03,879 --> 00:16:06,879
+Mesela savaş uçağı kullanıyorsun.
+
+177
+00:16:06,879 --> 00:16:08,879
+Düşman uçağını gördün abi.
+
+178
+00:16:08,879 --> 00:16:10,879
+Butona bastın füze atılacak.
+
+179
+00:16:10,879 --> 00:16:11,879
+Düşünsene pilotu.
+
+180
+00:16:11,879 --> 00:16:13,879
+Butona bastı.
+
+181
+00:16:13,879 --> 00:16:16,879
+Ekranında bir kum saati dolaşıyor öyle.
+
+182
+00:16:19,879 --> 00:16:22,879
+Yani böyle bir şey olabilmesi mümkün mü sizce?
+
+183
+00:16:22,879 --> 00:16:29,879
+O butona basılsın diye bizi waiting yapan bir işlemci vardır.
+
+184
+00:16:29,879 --> 00:16:31,879
+Olmak zorunda.
+
+185
+00:16:31,879 --> 00:16:34,879
+Sadece o butona basılmasını kontrol eden.
+
+186
+00:16:34,879 --> 00:16:37,879
+Yoksa lütfen bekleyiniz yazacak.
+
+187
+00:16:37,879 --> 00:16:39,879
+Ekranda.
+
+188
+00:16:39,879 --> 00:16:43,879
+O yüzden bunlar hala günümüzde de kullanılan teknolojiler.
+
+189
+00:16:43,879 --> 00:16:49,879
+Nerede, neye, ne şekilde ihtiyacınız olduğunu bilmek lazım.
+
+190
+00:16:50,879 --> 00:16:52,879
+Bir diğeri polling.
+
+191
+00:16:52,879 --> 00:16:54,879
+Polling nasıl bir şey?
+
+192
+00:16:55,879 --> 00:16:57,879
+Polling de şöyle.
+
+193
+00:16:57,879 --> 00:17:02,879
+İşlemcinin zamanını diyelim ki bir saniyeyi 10 parçaya böldünüz.
+
+194
+00:17:02,879 --> 00:17:07,880
+Ve bu polling yaparken şu şekilde yapıyor.
+
+195
+00:17:07,880 --> 00:17:12,880
+Mesela diyelim ki şöyle örnek verelim.
+
+196
+00:17:12,880 --> 00:17:14,880
+Bizi waiting için verelim.
+
+197
+00:17:14,880 --> 00:17:19,880
+Bunu her birisi için açalım ki kafanızda aynı örneğin farklı versiyonları nasıl oluyor görünsün.
+
+198
+00:17:19,880 --> 00:17:23,880
+Mesela diyelim ki bugün bana bir misafir gelecek.
+
+199
+00:17:23,880 --> 00:17:25,880
+Bizi waiting yapmam demek ne demek?
+
+200
+00:17:25,880 --> 00:17:29,880
+Gidiyorum kapıyı açıyorum kapıda öyle bekliyorum adam gelsin diye.
+
+201
+00:17:29,880 --> 00:17:32,880
+Tamam mı? Kapıyı açıyorum kapıda öyle bekliyorum.
+
+202
+00:17:32,880 --> 00:17:34,880
+Adam gelsin diye.
+
+203
+00:17:34,880 --> 00:17:36,880
+Bizi waiting tam olarak bu.
+
+204
+00:17:36,880 --> 00:17:37,880
+Ama nedir?
+
+205
+00:17:37,880 --> 00:17:42,880
+Adam geldiği anda sıfır bekleme direkt içeri alabilirim misafirimi.
+
+206
+00:17:42,880 --> 00:17:44,880
+Sıfır bekleme bakın.
+
+207
+00:17:44,880 --> 00:17:47,880
+Böyle bir şeye ihtiyacınız varsa ki olabilir.
+
+208
+00:17:47,880 --> 00:17:50,880
+Nasıl bir şey programlıyorsunuz bilemem yani.
+
+209
+00:17:50,880 --> 00:17:51,880
+Olabilir.
+
+210
+00:17:51,880 --> 00:17:54,880
+Böyle bir şeye ihtiyacınız varsa böyle bir şey kullanın.
+
+211
+00:17:54,880 --> 00:17:56,880
+Tamam mı? Bizi waiting.
+
+212
+00:17:56,880 --> 00:17:57,880
+Boş boş bekliyorsun yani.
+
+213
+00:17:57,880 --> 00:17:59,880
+Polling ise şöyle bir şey.
+
+214
+00:17:59,880 --> 00:18:01,880
+Adam diyor ki,
+
+215
+00:18:01,880 --> 00:18:05,880
+Ya ben her 5 dakikada gidip bir bakayım birisi gelmiş mi kapıya?
+
+216
+00:18:05,880 --> 00:18:07,880
+Tamam mı?
+
+217
+00:18:07,880 --> 00:18:09,880
+Zamanlı bu şekilde bölüyor.
+
+218
+00:18:09,880 --> 00:18:13,880
+Gidiyor mesela 5 dakikada oldu gidiyor bakıyor aaa kimse gelmemiş.
+
+219
+00:18:13,880 --> 00:18:14,880
+Tamam mı?
+
+220
+00:18:14,880 --> 00:18:18,880
+Ondan sonra geliyor başka işlerle uğraşıyor bakın o an.
+
+221
+00:18:18,880 --> 00:18:22,880
+Başka işlere de vakit ayırıyor ya en nihayetinde.
+
+222
+00:18:22,880 --> 00:18:27,880
+Gidiyor 5 dakika sonra tekrardan bakıyor aaa kimse gelmemiş.
+
+223
+00:18:27,880 --> 00:18:29,880
+Ondan sonra yine başka işlerle uğraşıyor.
+
+224
+00:18:29,880 --> 00:18:30,880
+Gidiyor tekrardan bakıyor.
+
+225
+00:18:30,880 --> 00:18:32,880
+Ha birisi gelmiş buyurun.
+
+226
+00:18:32,880 --> 00:18:34,880
+Polling böyle bir şey.
+
+227
+00:18:34,880 --> 00:18:44,880
+Siz zaman zaman o işle ilgili sizden bir talep olup olmadığını gidip kontrol etmeniz gerekiyor polling de.
+
+228
+00:18:44,880 --> 00:18:46,880
+Bu da kullanılıyor.
+
+229
+00:18:46,880 --> 00:18:47,880
+Yapılabiliyor.
+
+230
+00:18:47,880 --> 00:18:51,880
+Hala daha mesela network trafiği polling ile çalışır.
+
+231
+00:18:51,880 --> 00:18:52,880
+Tamam mı?
+
+232
+00:18:52,880 --> 00:18:55,880
+Ben size buradan mesajları gönderiyorum.
+
+233
+00:18:55,880 --> 00:19:00,880
+Yani bu benim ekranı görüntümü alıyorsunuz, kameramı alıyorsunuz, sesimi alıyorsunuz.
+
+234
+00:19:00,880 --> 00:19:02,880
+Bunlar bir topolojide çalışıyorlar.
+
+235
+00:19:02,880 --> 00:19:07,880
+O topolojiyi yöneten bir reis var, primary cihaz var.
+
+236
+00:19:07,880 --> 00:19:14,880
+O cihaz mesela sizin cihazlarınıza polling yaparak tamam sana da göndereyim bana da gönder falan filan diyor.
+
+237
+00:19:14,880 --> 00:19:17,880
+Hala daha kullanılan bir şey yani.
+
+238
+00:19:17,880 --> 00:19:23,880
+Ama tekrar söyleyelim kafanızda bu üçünün çok güzel canlanmasını istiyorum çünkü.
+
+239
+00:19:23,880 --> 00:19:25,880
+Polling nedir?
+
+240
+00:19:25,880 --> 00:19:29,880
+Kapıya her beş dakikada bir gidip bakmaktır.
+
+241
+00:19:29,880 --> 00:19:30,880
+Tamam mı?
+
+242
+00:19:30,880 --> 00:19:33,880
+Ama her beş dakikada gidip bir bakarsın yani.
+
+243
+00:19:33,880 --> 00:19:36,880
+Her beş dakikada gidip bir bakarsın.
+
+244
+00:19:36,880 --> 00:19:38,880
+Böyle bir şeydir polling.
+
+245
+00:19:38,880 --> 00:19:39,880
+İstislansız.
+
+246
+00:19:39,880 --> 00:19:43,880
+Zamanla on parçaya böyle değilsen on tane işlem yapabilirsin.
+
+247
+00:19:43,880 --> 00:19:45,880
+Bir zaman diliminde yani.
+
+248
+00:19:45,880 --> 00:19:51,880
+Ama her zaman diliminde her saniye ona vakit ayırırsın demektir bu.
+
+249
+00:19:51,880 --> 00:19:53,880
+Her saniye polling yaparken.
+
+250
+00:19:53,880 --> 00:19:56,880
+Şimdi polling kapıya gidip açmak.
+
+251
+00:19:56,880 --> 00:20:00,880
+Pekala ya niye böyle beyaza boyanıyor anlamıyorum.
+
+252
+00:20:00,880 --> 00:20:02,880
+Bir diğeri de interrupt.
+
+253
+00:20:02,880 --> 00:20:04,880
+Interrupt mekanizması da şunu söylüyor.
+
+254
+00:20:04,880 --> 00:20:07,880
+Ya kardeşim gidip kapıda ne diye bekliyorsun?
+
+255
+00:20:07,880 --> 00:20:09,880
+Zaman zaman gidip kapıya ne diye bakıyorsun?
+
+256
+00:20:09,880 --> 00:20:10,880
+Zili icat etmişler işte.
+
+257
+00:20:10,880 --> 00:20:12,880
+Gelen zile bastın açayım.
+
+258
+00:20:12,880 --> 00:20:13,880
+Tamam mı?
+
+259
+00:20:13,880 --> 00:20:15,880
+Interrupt mekanizması bunu söyler.
+
+260
+00:20:15,880 --> 00:20:18,880
+Gelen zile bassın ben de açayım.
+
+261
+00:20:18,880 --> 00:20:21,880
+Kimse zile basmıyorsa kimse gelmemiş demektir.
+
+262
+00:20:21,880 --> 00:20:25,880
+Boşu boşuna gidip sürekli kapıya bakmam veya kapıda beklemem.
+
+263
+00:20:25,880 --> 00:20:27,880
+Interrupt kesmek.
+
+264
+00:20:27,880 --> 00:20:29,880
+Bölmek demek.
+
+265
+00:20:29,880 --> 00:20:30,880
+Neyi kesiyor?
+
+266
+00:20:30,880 --> 00:20:32,880
+Ben hali hazırda bir işle uğraşıyorum.
+
+267
+00:20:32,880 --> 00:20:34,880
+Mesela kitap okuyorum.
+
+268
+00:20:34,880 --> 00:20:35,880
+Tamam mı?
+
+269
+00:20:35,880 --> 00:20:37,880
+Evdeyim oturdum kitap okuyorum.
+
+270
+00:20:37,880 --> 00:20:39,880
+Kitap okuyorum.
+
+271
+00:20:39,880 --> 00:20:41,880
+Zil çaldı.
+
+272
+00:20:41,880 --> 00:20:45,880
+Benim kitap okumamı interupt etti adam.
+
+273
+00:20:45,880 --> 00:20:48,880
+Kesti yani böldü zil çalındığında.
+
+274
+00:20:48,880 --> 00:20:54,880
+Pekala normal insanlar olarak biz kitap okurken nasıl bir şey yaparız?
+
+275
+00:20:54,880 --> 00:20:57,880
+Zil çaldığında bir ayrıcımız vardır.
+
+276
+00:20:57,880 --> 00:21:01,880
+Tam kaldığımız yere koyarız veya sayfanın ucunu kıvırırız.
+
+277
+00:21:01,880 --> 00:21:05,880
+Veya sayfanın numarasını hafızamızı alırız.
+
+278
+00:21:05,880 --> 00:21:06,880
+Yani bir işaret koyarız.
+
+279
+00:21:06,880 --> 00:21:08,880
+Ayrıca oraya koyuyorsun.
+
+280
+00:21:08,880 --> 00:21:09,880
+Bakın bu kısım önemli.
+
+281
+00:21:09,880 --> 00:21:11,880
+Ayrıca oraya koyuyorsun.
+
+282
+00:21:11,880 --> 00:21:12,880
+Niye?
+
+283
+00:21:12,880 --> 00:21:13,880
+Zil çaldı.
+
+284
+00:21:13,880 --> 00:21:15,880
+Gideceksin kapıya.
+
+285
+00:21:15,880 --> 00:21:18,880
+O adamın işi neyse onunla ilgileneceksin.
+
+286
+00:21:18,880 --> 00:21:23,880
+Ondan sonra döndüğünde tekrardan aynı kitabı kaldığın yerden okuyabilmek isteyeceksin.
+
+287
+00:21:23,880 --> 00:21:24,880
+Tamam mı?
+
+288
+00:21:24,880 --> 00:21:25,880
+Olay bu.
+
+289
+00:21:25,880 --> 00:21:29,880
+Aynı yerden okuyabilmek isteyeceksin.
+
+290
+00:21:29,880 --> 00:21:35,880
+O sebeple interupt mekanizması diğerlerine göre biraz daha high level.
+
+291
+00:21:35,880 --> 00:21:38,880
+Ama neyi garantilemez?
+
+292
+00:21:38,880 --> 00:21:40,880
+Neyi garantilemez?
+
+293
+00:21:40,880 --> 00:21:45,880
+O adam hizmet almak istediğinde zile basıyor.
+
+294
+00:21:45,880 --> 00:21:47,880
+Diğeri de zile basıyor.
+
+295
+00:21:47,880 --> 00:21:48,880
+Diğeri de zile basıyor.
+
+296
+00:21:48,880 --> 00:21:50,880
+Hepsi bir kuyruğa girer.
+
+297
+00:21:50,880 --> 00:21:54,579
+Hepsi bir kuyruğa girer.
+
+298
+00:21:54,579 --> 00:21:57,579
+Ve siz o kuyruğu işlersiniz.
+
+299
+00:21:57,579 --> 00:21:59,579
+O kuyruğu tüketmeye çalışırsınız.
+
+300
+00:21:59,579 --> 00:22:01,579
+Bazen yetişemezsiniz.
+
+301
+00:22:01,579 --> 00:22:04,579
+İşte o zaman o kum saati dönmeye başlar abi.
+
+302
+00:22:04,579 --> 00:22:05,579
+Yetişemediğin zaman.
+
+303
+00:22:05,579 --> 00:22:07,579
+Bazen yetişebilirsin.
+
+304
+00:22:07,579 --> 00:22:09,579
+Her şey akıcı bir şekilde gerçekleşir.
+
+305
+00:22:09,579 --> 00:22:11,579
+Bazen lütfen bekleyiniz der.
+
+306
+00:22:11,579 --> 00:22:14,579
+Kum saati hala devam ediyorsa yani.
+
+307
+00:22:14,579 --> 00:22:20,579
+Kuyrukta, interupt kuyruğunda hala da yapılması gereken işler varsa.
+
+308
+00:22:20,579 --> 00:22:22,579
+Biz temelde interuptları ikiye.
+
+309
+00:22:22,579 --> 00:22:26,579
+Hatta birkaç parça ayıracağız ama öncelikle burada ikiye ayıralım.
+
+310
+00:22:26,579 --> 00:22:28,579
+Bir zaman kesmesi.
+
+311
+00:22:28,579 --> 00:22:31,579
+Diğeri de grafik kesmesi olarak ikiye.
+
+312
+00:22:35,579 --> 00:22:37,579
+İlk etapta ayırıyor olalım.
+
+313
+00:22:37,579 --> 00:22:40,579
+Mesela çok daha farklı kategoriler ayıracağız.
+
+314
+00:22:40,579 --> 00:22:42,579
+Göreceksiniz birazdan bunu.
+
+315
+00:22:42,579 --> 00:22:45,579
+Maskelenebilir, maskelenmez, donundum, yazdım falan filan diye.
+
+316
+00:22:45,579 --> 00:22:49,579
+Şöyle bir kafanızda güzel canlansın diye.
+
+317
+00:22:49,579 --> 00:22:51,579
+Mesela grafik kesmesi.
+
+318
+00:22:51,579 --> 00:22:55,579
+Yani sizin bilgisayarınızın ekranı 60 Hz.
+
+319
+00:22:55,579 --> 00:23:05,180
+Saniyede 60 kere ekranı yenilemek için bir interupt gelip sizin işlemcinizi dürtüyor.
+
+320
+00:23:06,180 --> 00:23:07,180
+Tamam mı?
+
+321
+00:23:07,180 --> 00:23:10,180
+Ya ekranı yenile bak, yeni bir şey olmuş olabilir.
+
+322
+00:23:10,180 --> 00:23:13,180
+Diye size, işlemcinizi ekranı yeniletiyor.
+
+323
+00:23:13,180 --> 00:23:15,180
+Adam bunu nasıl engelleyecek?
+
+324
+00:23:15,180 --> 00:23:20,180
+Ya hani mesela bazı, birazdan göreceğiz, bazılarına dur kardeşim ya.
+
+325
+00:23:20,180 --> 00:23:27,180
+Tamam zili çaldın, alacağım, seninle ilgileneceğim diyebilirken bazılarına ise direkt zili çalar çalmaz.
+
+326
+00:23:27,180 --> 00:23:31,180
+O kitabı hemen bırakıp kapıyı açman gerekebilir.
+
+327
+00:23:31,180 --> 00:23:35,180
+Başka işte uğraşman çok zor olabilir yani.
+
+328
+00:23:35,180 --> 00:23:37,180
+Mesela zaman kesmesi.
+
+329
+00:23:37,180 --> 00:23:39,180
+Zaman kesmesi ne demek?
+
+330
+00:23:39,180 --> 00:23:45,180
+Her bir milisaniye sonra bilgisayarının zamanını bir arttır.
+
+331
+00:23:45,180 --> 00:23:49,740
+Şimdi yani bir kafanızda düşünün.
+
+332
+00:23:49,740 --> 00:23:53,740
+Adam diyor ki zamanı bir arttırmak için bir kesme üretiliyor.
+
+333
+00:23:53,740 --> 00:23:55,740
+Bir milisaniye arttıracak.
+
+334
+00:23:55,740 --> 00:23:59,740
+Sen bunu 5 milisaniye gecikmeni yaptığını düşün.
+
+335
+00:23:59,740 --> 00:24:03,059
+Gecikemezsin abi.
+
+336
+00:24:03,059 --> 00:24:07,059
+Bazı intraplar vardır ki önceliklidir.
+
+337
+00:24:07,059 --> 00:24:09,059
+Gecikemezsin.
+
+338
+00:24:09,059 --> 00:24:11,059
+Bu önemli hususlardan birisi.
+
+339
+00:24:11,059 --> 00:24:13,059
+Pekala ne çeşit kesmelerimiz var?
+
+340
+00:24:13,059 --> 00:24:15,059
+Birisi donanım kesmesi.
+
+341
+00:24:15,059 --> 00:24:18,059
+İşte klavyeden tuşa basıyoruz falan.
+
+342
+00:24:18,059 --> 00:24:21,059
+Veya işte mouse'a basıyorsun.
+
+343
+00:24:21,059 --> 00:24:24,059
+Ekranın yenilenmesi gibi çeşitli donanım kesmeleri var.
+
+344
+00:24:24,059 --> 00:24:26,059
+Bir de yazılım kesmeleri var.
+
+345
+00:24:26,059 --> 00:24:34,059
+Program akışının içerisinde de kullanılabilecek yazılım komutları var.
+
+346
+00:24:34,059 --> 00:24:37,059
+İşte Asembil'de şimdiye kadar hep görmüşsünüzdür.
+
+347
+00:24:37,059 --> 00:24:40,059
+INT diye bir komut var.
+
+348
+00:24:40,059 --> 00:24:42,059
+Interop komutudur.
+
+349
+00:24:42,059 --> 00:24:46,059
+Interop komutunun kullanımı için bir interop tablosu da var.
+
+350
+00:24:46,059 --> 00:24:48,059
+Onları da görüyor olacağız.
+
+351
+00:24:48,059 --> 00:24:52,059
+Şimdi yazılım kesmesi de siz kendiniz de üretebilirsiniz.
+
+352
+00:24:52,059 --> 00:24:54,059
+Yazılım kesmesi ne işe yarar?
+
+353
+00:24:54,059 --> 00:24:55,059
+Ne işe yarar?
+
+354
+00:24:55,059 --> 00:25:00,059
+Mesela siz programınızın içerisinde ekrana bir şey yazdırmak istiyorsunuz.
+
+355
+00:25:00,059 --> 00:25:03,059
+Ekrana bir şey yazdırmak istiyorsunuz.
+
+356
+00:25:03,059 --> 00:25:05,059
+Böyle bir durumda ne yapacaksınız?
+
+357
+00:25:05,059 --> 00:25:07,059
+Bir kesme üreteceksiniz.
+
+358
+00:25:07,059 --> 00:25:08,059
+Bir kesme.
+
+359
+00:25:08,059 --> 00:25:12,059
+Ekranı kullanma kesmesi üreteceksiniz.
+
+360
+00:25:12,059 --> 00:25:16,059
+Veya klavyeden bir şeyler okumak istiyorsunuz.
+
+361
+00:25:16,059 --> 00:25:19,059
+O yüzden işte Asembil'de daha 12. haftaya geldik.
+
+362
+00:25:19,059 --> 00:25:23,059
+Hala daha hellovert yazdıramadınız ekranı.
+
+363
+00:25:23,059 --> 00:25:25,059
+Yani 13. haftada belki.
+
+364
+00:25:25,059 --> 00:25:30,059
+Yani bundan sonra bu dersten sonra belki hellovert yazdırabilirsiniz.
+
+365
+00:25:30,059 --> 00:25:34,059
+Yani düşünün bir programlama dilinde ilk yapılan işlemdir.
+
+366
+00:25:34,059 --> 00:25:36,059
+Hellovert yazdırmak.
+
+367
+00:25:36,059 --> 00:25:37,059
+12. haftadayız.
+
+368
+00:25:37,059 --> 00:25:40,059
+13. hani olacak 11. hafta hala daha yapamadım.
+
+369
+00:25:40,059 --> 00:25:43,059
+Çünkü bunlar interoplarla oluyor.
+
+370
+00:25:43,059 --> 00:25:45,059
+Onların nasıl olduğunu göstereceğiz.
+
+371
+00:25:45,059 --> 00:25:48,059
+Yazılım kesmelerinde nasıl olduğunu göstereceğiz.
+
+372
+00:25:48,059 --> 00:25:50,059
+Yazılımda şunu da söyleyebilirsiniz.
+
+373
+00:25:50,059 --> 00:25:55,059
+Interopların enable veya disable olmasını sağlayan bir interop fleyimiz var.
+
+374
+00:25:55,059 --> 00:25:58,059
+Mesela bunu hiç şimdiye kadar kullanmadık.
+
+375
+00:25:58,059 --> 00:26:04,059
+Ya benim programım öyle bir programdır ki bunu programı hiç kimse yarıda kesemez.
+
+376
+00:26:04,059 --> 00:26:15,059
+Yani o adamın kitabı okunuyorsa 3000 tane de zil çalsa o kitap okumak bitirilmeden hiçbir zille ilgilenmez.
+
+377
+00:26:15,059 --> 00:26:19,059
+Gibi bir program da yazmak istiyor olabilirsiniz.
+
+378
+00:26:19,059 --> 00:26:22,059
+Hakikaten programınız böyle bir şey de olabilir.
+
+379
+00:26:22,059 --> 00:26:23,059
+Tamam.
+
+380
+00:26:23,059 --> 00:26:27,059
+Böyle olunca interopların disable etmeniz lazım.
+
+381
+00:26:27,059 --> 00:26:30,059
+Interop fleyini kontrol ederek.
+
+382
+00:26:30,059 --> 00:26:35,059
+Set, interop flek, clear, interop flek diye iki tane komutumuz vardı.
+
+383
+00:26:35,059 --> 00:26:37,059
+Yine hatırlarsanız.
+
+384
+00:26:37,059 --> 00:26:41,059
+Tabii işitim sistemlerinin interop handler'ı var.
+
+385
+00:26:41,059 --> 00:26:42,059
+Interop handler'ı ne demek?
+
+386
+00:26:42,059 --> 00:26:44,059
+Interoplarla ilgilenen.
+
+387
+00:26:44,059 --> 00:26:48,059
+Yani sadece tek bir tane kapı çalınmıyor.
+
+388
+00:26:48,059 --> 00:26:50,059
+Kapıyı port diyelim hadi biz burada tamam mı?
+
+389
+00:26:50,059 --> 00:26:52,059
+Tek bir tane kapı çalınmıyor.
+
+390
+00:26:52,059 --> 00:26:55,059
+Adam mesela networkten paketlerin geldi abi diyor.
+
+391
+00:26:55,059 --> 00:26:56,059
+Kapı çalıyor.
+
+392
+00:26:56,059 --> 00:26:59,059
+Diğeri diyor ki hadi ekranı yenile, yenile, yenile falan.
+
+393
+00:26:59,059 --> 00:27:00,059
+Yenilemiyorsun.
+
+394
+00:27:00,059 --> 00:27:03,059
+Lan bir an yenilemiyorsun.
+
+395
+00:27:03,059 --> 00:27:05,059
+Adam diyor ki ooo FPS'm düştü.
+
+396
+00:27:05,059 --> 00:27:07,059
+Ben kontrol oynuyordum şu an.
+
+397
+00:27:07,059 --> 00:27:10,059
+500 FPS'nin üstünde oynamak istiyorum.
+
+398
+00:27:10,059 --> 00:27:12,059
+350'ye düştü.
+
+399
+00:27:12,059 --> 00:27:13,059
+Aman çok iyi.
+
+400
+00:27:13,059 --> 00:27:15,059
+Saniyede 350 kere görebiliyorsun ekranı zaten.
+
+401
+00:27:15,059 --> 00:27:17,059
+Adam da sana bunu sağlıyor.
+
+402
+00:27:17,059 --> 00:27:26,059
+İşte bütün bu istekleri bilgisayarda o donanım isteklerini, yazılım isteklerini biriktiren,
+
+403
+00:27:26,059 --> 00:27:37,059
+gerekirse bir kuyruğa alan, hatta bazılarına öncelik mekanizması kullandırtabilen bir interop handler'ları var işitim sistemlerinin.
+
+404
+00:27:37,059 --> 00:27:40,059
+Bu bir yazılım öyle söyleyeyim.
+
+405
+00:27:40,059 --> 00:27:41,059
+Bu bir yazılım.
+
+406
+00:27:41,059 --> 00:27:46,059
+Tabii yazılım ama bu yazılımın bağlı olduğu donanım birimleri de var.
+
+407
+00:27:46,059 --> 00:27:50,059
+İşlemcinin, bizim işlemcimizin 40 tane bacağı var 8086'nın.
+
+408
+00:27:50,059 --> 00:27:53,059
+2 tane interop ile ilgili bacağı var.
+
+409
+00:27:53,059 --> 00:27:58,059
+Sadece 2 bacağı interop ile ilgili bu işlemcinin.
+
+410
+00:27:58,059 --> 00:28:03,059
+Mesela bir diğer grup dahili kesmeler.
+
+411
+00:28:03,059 --> 00:28:07,059
+Mesela sıfıra bölme.
+
+412
+00:28:07,059 --> 00:28:09,059
+Division by zero.
+
+413
+00:28:09,059 --> 00:28:11,059
+Hiç böyle bir hata aldınız mı bilmiyorum.
+
+414
+00:28:11,059 --> 00:28:13,059
+Division by zero.
+
+415
+00:28:13,059 --> 00:28:19,059
+Sıfıra böldüğünüzde otomatik olarak bir kesme üretilir.
+
+416
+00:28:19,059 --> 00:28:21,059
+Sıfıra bölme kesmesi.
+
+417
+00:28:21,059 --> 00:28:23,059
+Çünkü niye?
+
+418
+00:28:23,059 --> 00:28:28,059
+Sıfıra bölme bir unsafe state'dir.
+
+419
+00:28:28,059 --> 00:28:31,059
+Yani hem işlemci hem işitim sistemi için.
+
+420
+00:28:31,059 --> 00:28:32,059
+Unsafe state'dir.
+
+421
+00:28:32,059 --> 00:28:33,059
+Sıfıra böldü.
+
+422
+00:28:33,059 --> 00:28:34,059
+Ne olacak abi?
+
+423
+00:28:34,059 --> 00:28:35,059
+Bir şeyi sıfıra nasıl böleceksin?
+
+424
+00:28:35,059 --> 00:28:37,059
+İşlemcinin kafası karışıyor.
+
+425
+00:28:37,059 --> 00:28:39,059
+Ya ne yapmamı istiyor benden?
+
+426
+00:28:39,059 --> 00:28:41,059
+Sıfıra nasıl bölebilirim ki?
+
+427
+00:28:41,059 --> 00:28:51,059
+İşlemciler sıfıra bölmek için dizayn edilmediğinden ötürü sıfıra bölme işlemi olursa diye hemen bir kesme üretirler.
+
+428
+00:28:51,059 --> 00:28:54,059
+Divide by zero kesmesi.
+
+429
+00:28:54,059 --> 00:28:58,059
+Veya işte mantıksal ne denir ona?
+
+430
+00:28:58,059 --> 00:29:00,059
+Interoplar.
+
+431
+00:29:00,059 --> 00:29:06,059
+Bu mantıksal interopların bir kısmı yazdığım bir kısmı donanımla alakalı da olabilir.
+
+432
+00:29:06,059 --> 00:29:16,059
+Yaptığınız çeşitli lojik işlemler veya programın akışındaki doğursal yazılım işlemleri neticesinde üretilmiş kesmeler olabilir.
+
+433
+00:29:16,059 --> 00:29:18,059
+Birazdan bunları göreceğiz.
+
+434
+00:29:18,059 --> 00:29:23,059
+Veya sizin programınız interop alarak çalışıyor istiyor olabilirsiniz.
+
+435
+00:29:23,059 --> 00:29:24,059
+Nasıl yani hocam?
+
+436
+00:29:24,059 --> 00:29:27,059
+Mesela kodunuzu dibak ediyorsunuz.
+
+437
+00:29:27,059 --> 00:29:29,059
+Dibak ederken ne yapıyorsunuz?
+
+438
+00:29:29,059 --> 00:29:30,059
+Adım adım çalıştırıyorsunuz.
+
+439
+00:29:30,059 --> 00:29:32,059
+Trace de çalıştırıyorsunuz.
+
+440
+00:29:32,059 --> 00:29:33,059
+Tamam mı?
+
+441
+00:29:33,059 --> 00:29:36,059
+Adım adım çalıştırma da bir çeşit interoptur.
+
+442
+00:29:36,059 --> 00:29:37,059
+Adım adım.
+
+443
+00:29:37,059 --> 00:29:39,059
+Step by step diyorlar ya.
+
+444
+00:29:39,059 --> 00:29:46,059
+Step by step çalıştırmak da dibak ederken Trace'le veya işte F1 falan yukarıdan basıyorsun ya.
+
+445
+00:29:46,059 --> 00:29:48,059
+Bu da bir interop çeşitli.
+
+446
+00:29:48,059 --> 00:29:50,059
+Programınızı bölüyorsunuz.
+
+447
+00:29:50,059 --> 00:29:55,329
+Tabii bir de hariciyi kesmeler var.
+
+448
+00:29:55,329 --> 00:29:57,329
+Hariciyi kesmeler temelde ikiye ayrılıyor.
+
+449
+00:29:57,329 --> 00:30:01,329
+Bir maskelenebilir, iki maskelenemez kesmeler.
+
+450
+00:30:01,329 --> 00:30:13,329
+Eğer ki bir kesme maskelenemez kesmeyse o kesme olduğu anda muhakkak senin kitabın içerisinde ayrıcını koyacaksın.
+
+451
+00:30:13,329 --> 00:30:15,329
+Ayranç koymak çok önemli bakın.
+
+452
+00:30:15,329 --> 00:30:18,329
+Ayrıcını koyacaksın gidip o işlemi yapacaksın.
+
+453
+00:30:18,329 --> 00:30:20,329
+Maskelenemez kesmeyse.
+
+454
+00:30:20,329 --> 00:30:23,329
+Zaman kesmesi maskelenemez abi.
+
+455
+00:30:23,329 --> 00:30:24,329
+Tamam mı?
+
+456
+00:30:24,329 --> 00:30:26,329
+Zaman kesmesini maskelenemezsin.
+
+457
+00:30:26,329 --> 00:30:28,329
+Yani adam geldi saniyeyi arttır diyor.
+
+458
+00:30:28,329 --> 00:30:29,329
+Nasıl arttırmayacaksın?
+
+459
+00:30:29,329 --> 00:30:31,329
+Biraz birkaç saniye bekle mi diyeceksin?
+
+460
+00:30:31,329 --> 00:30:33,329
+Adama mesela.
+
+461
+00:30:33,329 --> 00:30:36,329
+O geldiği anda o işi yapman lazım.
+
+462
+00:30:36,329 --> 00:30:38,329
+Bir de maskelenebilir.
+
+463
+00:30:38,329 --> 00:30:41,329
+Yani o program nasıl söyleyeyim?
+
+464
+00:30:41,329 --> 00:30:44,329
+Adam mouse'u veya klavyeden bir tuşa basıyor.
+
+465
+00:30:44,329 --> 00:30:46,329
+Yani saniyede taş çatlasın.
+
+466
+00:30:46,329 --> 00:30:48,329
+30 tane tuşa bas hadi.
+
+467
+00:30:48,329 --> 00:30:52,329
+İşlemci için ne ki saniyede 30 tuşu kontrol etmek.
+
+468
+00:30:52,329 --> 00:30:58,329
+O yüzden adam mesela sen tuşa da bassan veya o tuşa bastığını adam ekranı yazdıracak mesela.
+
+469
+00:30:58,329 --> 00:31:00,329
+Bazen basarsın geriden geriden gelir.
+
+470
+00:31:00,329 --> 00:31:02,329
+Sen yazdıktan sonra yazar ekranı.
+
+471
+00:31:02,329 --> 00:31:04,329
+Bekle yani diyor.
+
+472
+00:31:04,329 --> 00:31:07,329
+Maskelenebiliyor çünkü senin klavyeden bir şey yazma.
+
+473
+00:31:07,329 --> 00:31:09,329
+Veya mouse hareket ettiriyorsun.
+
+474
+00:31:09,329 --> 00:31:11,329
+Bazen donuyor mesela.
+
+475
+00:31:11,329 --> 00:31:14,329
+O görüyorsun mouse hareket ettirirken azıcık donuyor.
+
+476
+00:31:14,329 --> 00:31:15,329
+Sonra kendine geliyor.
+
+477
+00:31:15,329 --> 00:31:18,329
+İşte o mouse'un ekranda gösterilmesi.
+
+478
+00:31:18,329 --> 00:31:22,329
+Yani demek ki maskelenebiliyor.
+
+479
+00:31:22,329 --> 00:31:25,329
+Daha farklı işler varsa onları önceliklendiriyor adam.
+
+480
+00:31:25,329 --> 00:31:27,329
+Deadlock'a düşmediyse.
+
+481
+00:31:27,329 --> 00:31:32,799
+Deadlock'ı önümüzdeki yıl işletim sistemleri dersi alırken görürsünüz.
+
+482
+00:31:32,799 --> 00:31:34,799
+Tabii burada ne önemli?
+
+483
+00:31:34,799 --> 00:31:37,799
+Interrupt flay'ın, if'nin durumu önemli.
+
+484
+00:31:37,799 --> 00:31:42,799
+Yani bir kesmi maskelenebilir olup olmaması interrupt flay'la alakalı.
+
+485
+00:31:42,799 --> 00:31:50,799
+Siz eğer ki interrupt flay'ı öyle bir istese diyorsanız ve programınız kesinlikle ve kesinlikle interrupt alsın istemiyorsanız
+
+486
+00:31:50,799 --> 00:31:54,799
+maskelenebilir olmasına rağmen interrupt almaz yani.
+
+487
+00:31:54,799 --> 00:31:56,799
+Alamaz.
+
+488
+00:31:56,799 --> 00:31:57,799
+Tamam.
+
+489
+00:31:57,799 --> 00:32:04,799
+Eğer ki interrupt flay'ı öyle bir set ediyorsanız ve interrupt alabilir benim programım.
+
+490
+00:32:04,799 --> 00:32:06,799
+Çok önemli şeyler de yapmıyorum.
+
+491
+00:32:06,799 --> 00:32:07,799
+Interrupt alsa da olur.
+
+492
+00:32:07,799 --> 00:32:11,799
+Diyorsanız interrupt flay'ın durumunu ona göre set etmeniz lazım.
+
+493
+00:32:11,799 --> 00:32:16,799
+Böylece kesmeniz yani programınız şey yapılabilir.
+
+494
+00:32:16,799 --> 00:32:17,799
+Kesilebilir.
+
+495
+00:32:17,799 --> 00:32:21,799
+Yarıda bölünebilir ki beni şu an dinliyorsunuz.
+
+496
+00:32:21,799 --> 00:32:23,799
+Zoom diye bir uygulama yapıyor bunu.
+
+497
+00:32:23,799 --> 00:32:28,799
+Sizin zoom uygulamanız saniyede yüzlerce kez kesme oluyor arkadaşlar.
+
+498
+00:32:28,799 --> 00:32:29,799
+Yüzlerce kez.
+
+499
+00:32:29,799 --> 00:32:30,799
+Hiç farkında değilsin.
+
+500
+00:32:30,799 --> 00:32:32,799
+İnsan fark edemiyor ki.
+
+501
+00:32:32,799 --> 00:32:41,799
+Yani bizim bilgisayarımızın ekranının yenilenmesini anlayabilmemiz için saniyede 25 kereden daha fazla yenileniyorsa okey bize.
+
+502
+00:32:41,799 --> 00:32:44,799
+500 kere yenilenmiş, 1000 kere yenilenmiş.
+
+503
+00:32:44,799 --> 00:32:46,799
+Bir şey fark etmiyor yani.
+
+504
+00:32:46,799 --> 00:32:49,799
+Dışarıya bakıyorsun, gözünden görüyorsun dünyayı.
+
+505
+00:32:49,799 --> 00:32:51,799
+Analog zaten her şey.
+
+506
+00:32:51,799 --> 00:32:53,799
+Kontinyos bir şekilde yenileniyor.
+
+507
+00:32:53,799 --> 00:32:57,799
+Bilgisayarda yani düşün 1000 Hz'lik bir monitör.
+
+508
+00:32:57,799 --> 00:33:02,799
+Tabii şimdi oyuncu arkadaşlar bana kızar ama insan gözü acısından söylüyorum.
+
+509
+00:33:02,799 --> 00:33:05,799
+1000 Hz monitörünü değiştirdin.
+
+510
+00:33:05,799 --> 00:33:07,799
+2000 Hz monitör aldın.
+
+511
+00:33:07,799 --> 00:33:11,799
+Yani o da video sonuçta.
+
+512
+00:33:11,799 --> 00:33:13,799
+Bu da video, o da video.
+
+513
+00:33:13,799 --> 00:33:17,799
+Akıyor 25 Hz'en daha fazla ise sen onu çünkü şey olarak görüyorsun.
+
+514
+00:33:17,799 --> 00:33:19,799
+Bir video akışı olarak görüyorsun.
+
+515
+00:33:20,799 --> 00:33:22,799
+Veya müzik dinliyorsun.
+
+516
+00:33:22,799 --> 00:33:26,799
+Yani kaç Hz olması lazım ki onun sana ses olarak gelmesi lazım.
+
+517
+00:33:26,799 --> 00:33:28,799
+Kaç Hz?
+
+518
+00:33:28,799 --> 00:33:32,799
+Adam sana zaten onun ses olarak sunabiliyor ama sürekli kesimi alıyor.
+
+519
+00:33:32,799 --> 00:33:35,799
+Yani Spotify'ını açmışsın, telefondan müzik dinliyorsun.
+
+520
+00:33:35,799 --> 00:33:39,799
+Zannediyorsun ki benim telefonum sadece müzik için ayrılmış bir işlemcisi var.
+
+521
+00:33:39,799 --> 00:33:40,799
+Yok.
+
+522
+00:33:40,799 --> 00:33:41,799
+Yok.
+
+523
+00:33:41,799 --> 00:33:43,799
+Bir sürü işlemin yanında müziği de yapıyor.
+
+524
+00:33:43,799 --> 00:33:45,799
+Kesip kesip dinletiyor sana.
+
+525
+00:33:45,799 --> 00:33:47,799
+Kesip kesip dinletiyor.
+
+526
+00:33:47,799 --> 00:33:50,799
+İşte dijital olmasının kötü yanlarından birisi bu.
+
+527
+00:33:50,799 --> 00:33:53,799
+Kesip kesip sana müziği dinletiyor.
+
+528
+00:33:53,799 --> 00:34:04,799
+O yüzden hiçbiriniz ya en azından müzik zevki olan arkadaşlarımız bir gramofondan bir plaktan dinlediğiniz müzikten aldığınız zevk gibi zevk alamazsınız yani.
+
+529
+00:34:04,799 --> 00:34:06,799
+Bu hayatın.
+
+530
+00:34:06,799 --> 00:34:07,799
+Fakti.
+
+531
+00:34:07,799 --> 00:34:08,800
+Dijital çünkü.
+
+532
+00:34:08,800 --> 00:34:09,800
+Kesik kesik.
+
+533
+00:34:09,800 --> 00:34:10,800
+Tamam mı?
+
+534
+00:34:10,800 --> 00:34:11,800
+Kesiyor adam.
+
+535
+00:34:12,800 --> 00:34:18,800
+Saniye'nin belli zamanları için hiçbir müzik notası yok hoparlörüne verdiği.
+
+536
+00:34:18,800 --> 00:34:25,800
+Ama biz insanoğlu olarak onu algılayamadığımız için var gibi düşünüyoruz.
+
+537
+00:34:25,800 --> 00:34:27,800
+Sanki var gibi geliyor.
+
+538
+00:34:27,800 --> 00:34:29,800
+Kulaklığı takıyorsun, kopuyorsun.
+
+539
+00:34:29,800 --> 00:34:30,800
+Lan kopacak bir şey yok.
+
+540
+00:34:30,800 --> 00:34:31,800
+Müzik kopuyor zaten.
+
+541
+00:34:31,800 --> 00:34:33,800
+Onu plakta yap yani.
+
+542
+00:34:33,800 --> 00:34:34,800
+Kop.
+
+543
+00:34:34,800 --> 00:34:36,800
+Anlatabiliyor muyum?
+
+544
+00:34:36,800 --> 00:34:38,800
+İki tane bacak var dedik.
+
+545
+00:34:38,800 --> 00:34:51,800
+Bir nemö bir de interap re bacağı işlemcinin içerisinde 40 tane bacaktan iki tanesi bizim bakın harici kesmeler için olan bacaklar bunlar fiziksel olarak bacak yani.
+
+546
+00:34:51,800 --> 00:34:53,800
+Bacak dediğim gidip elinle dokunabilirsin.
+
+547
+00:34:53,800 --> 00:34:55,800
+Bunlar iki tane bacağı var.
+
+548
+00:34:55,800 --> 00:34:57,800
+Entegrenin iki tane bacağını düşün.
+
+549
+00:34:57,800 --> 00:35:00,800
+Ve bütün bu işlemler maske elinebilir.
+
+550
+00:35:01,800 --> 00:35:05,800
+Özellikle 82 59 a bütünleşik entegresi üzerinden sürdürülüyor.
+
+551
+00:35:05,800 --> 00:35:14,800
+Bu bacaktan gelen veriler bu entegre üzerinde işte işlenerek gerekirse interap hem de beraber kontrol ediliyor.
+
+552
+00:35:14,800 --> 00:35:16,800
+Buraya kadar sorusu olan var mı arkadaşlar?
+
+553
+00:35:16,800 --> 00:35:21,800
+Biz anlatıyoruz ama siz de neler oluşuyor?
+
+554
+00:35:21,800 --> 00:35:22,800
+Hangi duygular oluşuyor?
+
+555
+00:35:22,800 --> 00:35:23,800
+Onu merak ediyoruz.
+
+556
+00:35:23,800 --> 00:35:24,800
+Sorusu olan var mı?
+
+557
+00:35:24,800 --> 00:35:29,110
+Hikaye anlatıyor gibi mi geliyorum yoksa size?
+
+558
+00:35:29,110 --> 00:35:34,440
+Yok hocam dinliyoruz.
+
+559
+00:35:34,440 --> 00:35:39,440
+Yani diğer dersler gibi kod falan olmadığı için dinliyoruz sadece.
+
+560
+00:35:39,440 --> 00:35:41,440
+Çok güzel.
+
+561
+00:35:41,440 --> 00:35:42,440
+Evet bu ders biraz süzel.
+
+562
+00:35:42,440 --> 00:35:45,440
+İnterapları kafanızda canlansın.
+
+563
+00:35:45,440 --> 00:35:48,440
+İnterapların kodunu da nedendrona yazabilirsiniz.
+
+564
+00:35:48,440 --> 00:35:50,440
+Daha sonra onunla ilgili ödev de vereceğiz.
+
+565
+00:35:50,440 --> 00:35:55,440
+Zaten başka söylemek istediği bir şey olan var mı?
+
+566
+00:35:55,440 --> 00:35:56,440
+Soru.
+
+567
+00:35:56,440 --> 00:35:58,440
+İnteraplar kafanızda canlanıyordur inşallah.
+
+568
+00:35:58,440 --> 00:36:02,440
+İnteraplar polling ve bizi ve itin karısındaki farkı kesin bilmeniz lazım.
+
+569
+00:36:02,440 --> 00:36:05,440
+Bundan sonra bu derse katılan 49 kişi var.
+
+570
+00:36:05,440 --> 00:36:08,440
+Şu an 49 kişi de bilmesi lazım.
+
+571
+00:36:08,440 --> 00:36:12,869
+O yüzden sorunuz varsa alayım.
+
+572
+00:36:12,869 --> 00:36:24,030
+Yok güzel devam ediyoruz o zaman.
+
+573
+00:36:24,030 --> 00:36:26,030
+Tabi bu chatten bir şeyler yazanlar var.
+
+574
+00:36:26,030 --> 00:36:28,030
+Hocam benim bir sorum var.
+
+575
+00:36:28,030 --> 00:36:29,030
+Tabi ki sor.
+
+576
+00:36:29,030 --> 00:36:30,030
+Evet [öğrenci].
+
+577
+00:36:30,030 --> 00:36:36,739
+Dinliyorum [öğrenci].
+
+578
+00:36:36,739 --> 00:36:39,739
+Sen soruyu sormak istemiyorsun.
+
+579
+00:36:39,739 --> 00:36:43,739
+Sadece bir sorun olduğunu belirtmek istiyorsun o zaman anladım.
+
+580
+00:36:43,739 --> 00:36:46,739
+Tamam o da olur yani illa tabi sorunun sorulmasına gerek yok.
+
+581
+00:36:46,739 --> 00:36:48,739
+Benim bir sorum vardı diyebilirsin.
+
+582
+00:36:48,739 --> 00:36:50,739
+Şimdi kesme öncelikleri.
+
+583
+00:36:50,739 --> 00:36:55,739
+Pekala bu kesmelerin bir öncelik mekanizması var.
+
+584
+00:36:55,739 --> 00:36:58,739
+Nasıl önceliklendiriliyor?
+
+585
+00:36:58,739 --> 00:37:00,739
+Yani bunların dediği gibi bir kuyruğu var.
+
+586
+00:37:00,739 --> 00:37:01,739
+Sıraya giriyorlar.
+
+587
+00:37:01,739 --> 00:37:03,739
+Bir öncelik kurguluyorlar.
+
+588
+00:37:03,739 --> 00:37:08,739
+En öncelikli kesme arkadaşlar divide by zero.
+
+589
+00:37:08,739 --> 00:37:14,739
+Yani bu işlemciyi unsafe state'e düşüreceği için.
+
+590
+00:37:15,739 --> 00:37:21,739
+Ki işlediğim sistemlere dersinde unsafe state'i güzel bir şekilde açıklarlar anlatırlar.
+
+591
+00:37:21,739 --> 00:37:27,739
+Ama hani isminle anlaşılıyor zaten nasıl bir state olduğu.
+
+592
+00:37:27,739 --> 00:37:30,739
+Yani unsafe state deyken ekranı yenilemişsin.
+
+593
+00:37:30,739 --> 00:37:34,739
+Yok saati arttırmışsın falan bunların bir önemi yok.
+
+594
+00:37:34,739 --> 00:37:36,739
+Çok acayip bir şeyler yaşamışsın.
+
+595
+00:37:36,739 --> 00:37:38,739
+Divide by zero böyle bir şey.
+
+596
+00:37:38,739 --> 00:37:42,739
+O yüzden divide by zero olduğu anda adama göstermen lazım.
+
+597
+00:37:42,739 --> 00:37:46,739
+Hemen, anında gösterebileceğin ilk fırsatta diyelim.
+
+598
+00:37:46,739 --> 00:37:54,739
+O yüzden kesme öncelik tablosunda en yüksek önceliğe sahip olan şey budur.
+
+599
+00:37:54,739 --> 00:37:56,739
+Ne denir ona?
+
+600
+00:37:56,739 --> 00:37:58,739
+Kesme akışı budur.
+
+601
+00:37:58,739 --> 00:38:03,739
+Kesme çünkü programın içerisinde divide by zero olduğu zaman zart diye kesilmesi lazım.
+
+602
+00:38:03,739 --> 00:38:04,739
+Sıfıra böldük.
+
+603
+00:38:04,739 --> 00:38:07,739
+Tamam bakalım programın geri kalanını da bir yapalım.
+
+604
+00:38:07,739 --> 00:38:11,739
+Diyemezsin yani sıfıra böldükten sonra.
+
+605
+00:38:11,739 --> 00:38:16,739
+İkinci öncelikli ise interrupt komutuyla beraber başlayan.
+
+606
+00:38:16,739 --> 00:38:26,739
+Bizim şeyin içerisinde mesela kitabın içerisinde de o interruptlar var.
+
+607
+00:38:26,739 --> 00:38:30,739
+Interrupt mesela 21 ekranı bir şey yazdırma.
+
+608
+00:38:30,739 --> 00:38:33,739
+Interrupt 19, 18, 3, 7 neyse.
+
+609
+00:38:33,739 --> 00:38:36,739
+Şu DS number anlamına geliyor.
+
+610
+00:38:36,739 --> 00:38:39,739
+Siz çok farklı farklı interruptlar var tabi.
+
+611
+00:38:39,739 --> 00:38:41,739
+Mesela mouse'a hareket ettiren interrupt.
+
+612
+00:38:41,739 --> 00:38:43,739
+Klaveden veri okuyan interrupt.
+
+613
+00:38:43,739 --> 00:38:45,739
+Ekrana bir şey yazan interrupt.
+
+614
+00:38:45,739 --> 00:38:48,739
+Yeni satıra geçilmesini sağlayan interrupt.
+
+615
+00:38:48,739 --> 00:38:50,739
+Bir sürü farklı interrupt var.
+
+616
+00:38:50,739 --> 00:38:53,739
+Interrupt'ların kitabı 8086 için bu kadar.
+
+617
+00:38:53,739 --> 00:38:56,739
+Çünkü birazdan göreceğiz.
+
+618
+00:38:56,739 --> 00:39:00,739
+Ya hocam bir byte da interruptları ifade ediyorum diyeceksiniz.
+
+619
+00:39:00,739 --> 00:39:02,739
+Elime cebime atsam.
+
+620
+00:39:02,739 --> 00:39:05,739
+Nedir yani bir byte 255 tane.
+
+621
+00:39:05,739 --> 00:39:08,739
+Elimi cebime atsam bir tane interrupt çıkartırım.
+
+622
+00:39:08,739 --> 00:39:12,739
+Ne diyorsun sen falan diyebilirsiniz ama işte çok kalın bir kitap.
+
+623
+00:39:12,739 --> 00:39:14,739
+Yani interrupt kitabı 8086 için.
+
+624
+00:39:14,739 --> 00:39:16,739
+Günümüzdeki interruptları düşünün.
+
+625
+00:39:16,739 --> 00:39:18,739
+Yani farklı farklı interruptlar var.
+
+626
+00:39:18,739 --> 00:39:20,739
+Bunlar ikinci öncelikli.
+
+627
+00:39:20,739 --> 00:39:26,739
+O bizim kullanabileceğimiz dosun içerisinde kodları tanımlı olan interruptlar.
+
+628
+00:39:26,739 --> 00:39:28,739
+İkinci öncelikli interruptlar.
+
+629
+00:39:28,739 --> 00:39:32,739
+Bir diğeri int o ile olan interruptlar.
+
+630
+00:39:32,739 --> 00:39:37,739
+Eğer ki aritmatik işlemler sonucunda tamam mı?
+
+631
+00:39:37,739 --> 00:39:42,739
+Bir overflow gibi bir şey oluşmuşsa bu da üçüncü interrupt.
+
+632
+00:39:42,739 --> 00:39:49,739
+Çünkü overflow oluşmuşsa ona göre jump ile ilgili çeşitli kurumutlar kullanmak gibi bir durum söz konusu olabilir.
+
+633
+00:39:49,739 --> 00:39:50,739
+Taşıyor.
+
+634
+00:39:50,739 --> 00:39:57,739
+Taşmada aslında neredeyse unsafe state'e yakın bir state ama handle edilebilir bir unsafe state.
+
+635
+00:39:57,739 --> 00:39:58,739
+Tamam.
+
+636
+00:39:58,739 --> 00:40:03,739
+Handler edilebilir bir unsafe state diyelim.
+
+637
+00:40:03,739 --> 00:40:07,739
+O yüzden üçüncü sırada da 8086 için konuşuyoruz.
+
+638
+00:40:07,739 --> 00:40:09,739
+Int overflow var.
+
+639
+00:40:09,739 --> 00:40:14,739
+Ardından işte NME ucu vardı.
+
+640
+00:40:14,739 --> 00:40:20,739
+Hatırlarsanız maskelenemez interruptların kontrol edildiği.
+
+641
+00:40:20,739 --> 00:40:25,739
+İşte bellek üzerinde oluşan krikatik hatalar varsa bu hatalarda kullanıyormuş.
+
+642
+00:40:25,739 --> 00:40:31,739
+802 hex de aynı nedendrona işlevi görüyormuş.
+
+643
+00:40:31,739 --> 00:40:36,739
+Aynı zaman zaman demek ki öncelik mekanizmasına sahipmiş.
+
+644
+00:40:36,739 --> 00:40:40,739
+Ondan sonra interrupt re şeyi var.
+
+645
+00:40:40,739 --> 00:40:43,739
+Maskelenebilir interruptlar.
+
+646
+00:40:43,739 --> 00:40:52,739
+Maskelenebilir interruptlardaysa 82.59a entegresi kullanılarak oluşturulan çeşitli donanım segmelere, donanım kesmelere,
+
+647
+00:40:52,739 --> 00:40:55,739
+masum hareket ettirilmesi, ekranın yenilenmesi gibi bir şey.
+
+648
+00:40:55,739 --> 00:41:03,739
+Bazen mesela ekranınız donar yenilenmeyebilir veya network de işte network trafiğinde.
+
+649
+00:41:03,739 --> 00:41:07,739
+Eğer ki işlemciniz yoğunsa illa mesela networking yavaşlığından kaynaklanmaz.
+
+650
+00:41:07,739 --> 00:41:12,739
+İşlemciniz çok iş yapıyorsa network kartından gelen verileri de okuyamaz.
+
+651
+00:41:12,739 --> 00:41:17,739
+Ne diyorlar Twitch izlerken ona ya drop olursun drop drop mu diyorlardı.
+
+652
+00:41:17,739 --> 00:41:21,739
+Neyse siz daha iyi biliyorsunuz işte öyle şeyler oluyor.
+
+653
+00:41:21,739 --> 00:41:27,739
+Yani network paketleri drop oluyor hatta kesik kesik izliyorsun donarak izliyorsun öyle olunca.
+
+654
+00:41:27,739 --> 00:41:33,739
+En son en az öncelikli ihtiyaçsa single step.
+
+655
+00:41:33,739 --> 00:41:37,739
+Interrupt 01 de kullanıyorsun bunda. Single step ne demek?
+
+656
+00:41:37,739 --> 00:41:42,739
+Adım adım çalıştırmak yani adım adım çalıştıran kişi bir insan olduğu için.
+
+657
+00:41:42,739 --> 00:41:48,739
+Tabii çeşitli maymunlar falan da bilgisayar kullanabiliyorlar ama biz insan olduğunu düşünelim.
+
+658
+00:41:49,739 --> 00:41:54,739
+Adım adım çalıştıran kişi bir insan olduğu için ne kadar hızlı iş bekleyebilir?
+
+659
+00:41:54,739 --> 00:41:58,739
+Ne kadar hızlı hizmet bekleyebilir ki yani programı adım adım çalıştır.
+
+660
+00:41:58,739 --> 00:42:01,739
+Saniyede kaç kere basabilirsin bir tuşağı?
+
+661
+00:42:01,739 --> 00:42:06,739
+Adam bir milyar kez bakmış mısın diye kontrol edebiliyor.
+
+662
+00:42:06,739 --> 00:42:08,739
+Sen kaç kere basabilirsin?
+
+663
+00:42:08,739 --> 00:42:15,739
+O yüzden öncelik mekanizması olarak da en düşük öncelikli interrupt mekanizması
+
+664
+00:42:15,739 --> 00:42:21,400
+Single step olduğunu söyleyebiliriz.
+
+665
+00:42:21,400 --> 00:42:24,400
+Şimdi 41 geçiyor bir mola verelim.
+
+666
+00:42:24,400 --> 00:42:28,400
+Arkadaş çünkü bu kesme oluşunda yapılan işlemleri anlatmak biraz uzun.
+
+667
+00:42:28,400 --> 00:42:31,400
+Yarıda bölünsün istemiyorum açıkçası.
+
+668
+00:42:31,400 --> 00:42:33,400
+O yüzden bir mola vermek istiyorum.
+
+669
+00:42:33,400 --> 00:42:35,400
+Sorusu olan varsa alabiliriz tabii.
+
+670
+00:42:35,400 --> 00:42:37,400
+[öğrenci]'in sorusu vardı o hala daha...
+
+671
+00:42:37,400 --> 00:42:42,400
+Hocam ben chatten yazmıştım da siz de o sırada chat'e bakmadınız herhalde.
+
+672
+00:42:43,400 --> 00:42:47,400
+Siz Spotify dediniz saniyede 20 kere interupt alıyor.
+
+673
+00:42:47,400 --> 00:42:50,400
+Ben onu tam olarak anlayamadım.
+
+674
+00:42:50,400 --> 00:42:53,400
+Tam olarak oluşturamadım kafamda hayal ederken de.
+
+675
+00:42:53,400 --> 00:42:55,400
+Bir daha anlatabilir misiniz hocam?
+
+676
+00:42:55,400 --> 00:42:58,400
+Tabii saniyede 20 kere interupt alıyor.
+
+677
+00:42:58,400 --> 00:43:01,400
+Sen şimdi müzik dinliyorsun tamam mı?
+
+678
+00:43:01,400 --> 00:43:06,400
+Müzik dinlerken aynı zamanda işlemcinin farklı programları çalıştırabilmesi de lazım.
+
+679
+00:43:06,400 --> 00:43:10,400
+Çünkü aynı anda work belgesinde bir şeyler yazıyorsun.
+
+680
+00:43:10,400 --> 00:43:13,400
+Torentten arkadan bir şey indiriyorsun.
+
+681
+00:43:13,400 --> 00:43:23,400
+Senin hiç haberin olmayan işletim sisteminin işleyişini sağlayan arka tarafta bir sürü programlar, işlemler çalışıyor.
+
+682
+00:43:23,400 --> 00:43:25,400
+Senin ise 8 çekirdeğin var.
+
+683
+00:43:25,400 --> 00:43:29,400
+Diyelim ki daha güzel anlaşılsın diye bir çekirdeğin olmuş olsun.
+
+684
+00:43:29,400 --> 00:43:31,400
+Tam bir tane çekirdeğin olmuş olsun.
+
+685
+00:43:31,400 --> 00:43:35,400
+Doğal olarak aynı anda tek bir programa hizmet verebilirsin.
+
+686
+00:43:36,400 --> 00:43:41,400
+Mesela o çekirdek de diyelim ki 2.4 GHz'lik bir çekirdek olsun.
+
+687
+00:43:41,400 --> 00:43:43,400
+Bu ne demek?
+
+688
+00:43:43,400 --> 00:43:49,400
+Saniyeyi, bir saniyeyi 2.4 milyar slota bölebiliyor.
+
+689
+00:43:49,400 --> 00:43:53,400
+Tamam mı? 2.4 milyar slota bölebiliyor.
+
+690
+00:43:53,400 --> 00:43:55,400
+Büyük bir rakam yani.
+
+691
+00:43:55,400 --> 00:43:56,400
+Öyle düşünün.
+
+692
+00:43:56,400 --> 00:43:58,400
+Şimdi senin müziğini çalıyor.
+
+693
+00:43:58,400 --> 00:44:01,400
+Müziğini nasıl çaldırıyor?
+
+694
+00:44:01,400 --> 00:44:12,400
+Adam diyor ki bu 2.4 milyar slottan 150 artışıl slotla Spotify'dan gelen o müzik verisini okuyayım ve haperlere vereyim.
+
+695
+00:44:12,400 --> 00:44:17,400
+150 slotta bunu yapıyor.
+
+696
+00:44:17,400 --> 00:44:23,400
+Ondan sonra gidiyor Torent'le ilgileniyor.
+
+697
+00:44:23,400 --> 00:44:28,400
+İnternetten 150 slotluk bir şeyler indiriyor.
+
+698
+00:44:28,400 --> 00:44:32,400
+Ondan sonra gidiyor 10 slotluk saniyeni yeniliyor.
+
+699
+00:44:32,400 --> 00:44:34,400
+Senin bilgisayarın zamanını yeniliyor.
+
+700
+00:44:34,400 --> 00:44:37,400
+5 slotluk ekranı yeniliyor.
+
+701
+00:44:37,400 --> 00:44:42,400
+250 slotluk Word'daki o belgeyi kaydediyor.
+
+702
+00:44:42,400 --> 00:44:44,400
+Ondan sonra tekrardan Spotify'ya dönüyor.
+
+703
+00:44:44,400 --> 00:44:48,400
+150 slotluk Spotify'dan sana müziği açıyor.
+
+704
+00:44:48,400 --> 00:44:50,400
+Ama sen anlayamıyorsun.
+
+705
+00:44:50,400 --> 00:44:54,400
+Yani o arada o kadar hızlı işlem yapılıyor ki
+
+706
+00:44:54,400 --> 00:44:58,400
+Sonuçta senin haperlerine o ses verildi.
+
+707
+00:44:58,400 --> 00:45:00,400
+Fiziksel bir şey sonuçta o.
+
+708
+00:45:00,400 --> 00:45:03,400
+Analog bir ses duyuyorsun en nihayetinde.
+
+709
+00:45:03,400 --> 00:45:05,400
+Haperlerine o ses verildi.
+
+710
+00:45:05,400 --> 00:45:15,400
+Saniyede o kadar hızlı bu işlem gerçekleştiriliyor ki sen o haperlerden ses çıkmadığı versiyonu hiç düşünemiyorsun bile.
+
+711
+00:45:15,400 --> 00:45:17,400
+Ne demek istiyorum?
+
+712
+00:45:17,400 --> 00:45:21,400
+Şimdi benim evimde şu an ampul yanıyor.
+
+713
+00:45:21,400 --> 00:45:22,400
+Tamam mı?
+
+714
+00:45:23,400 --> 00:45:28,400
+Evimiz biliyorsunuz yani liseden fizik bilgileri olarak düşünelim.
+
+715
+00:45:28,400 --> 00:45:33,400
+Doğru akım var yani evde.
+
+716
+00:45:33,400 --> 00:45:35,400
+Tamam mı? Doğru akım demek ne demek?
+
+717
+00:45:35,400 --> 00:45:38,400
+Benim evimde pardon alternatif akım var.
+
+718
+00:45:38,400 --> 00:45:39,400
+Doğru akım nereden çıktı?
+
+719
+00:45:39,400 --> 00:45:40,400
+Alternatif akım var.
+
+720
+00:45:40,400 --> 00:45:45,400
+Benim evime gelen elektrik sinyali sinusodiyel bir sinyal.
+
+721
+00:45:45,400 --> 00:45:46,400
+Değil mi?
+
+722
+00:45:46,400 --> 00:45:47,400
+Alternatif akım şöyle.
+
+723
+00:45:47,400 --> 00:45:49,400
+Sinusodiyel bir sistem.
+
+724
+00:45:49,400 --> 00:45:51,400
+Bu ne demektir?
+
+725
+00:45:51,400 --> 00:46:00,400
+Benim şu işte lambam her periyoda iki üç kere sıfır değerini görüyor.
+
+726
+00:46:00,400 --> 00:46:01,400
+Sönüyor yani.
+
+727
+00:46:01,400 --> 00:46:03,400
+Sıfır değerini görüyor.
+
+728
+00:46:03,400 --> 00:46:06,400
+Siz bunu hissediyor musunuz?
+
+729
+00:46:06,400 --> 00:46:09,400
+Lambanıza şöyle baktığınızda ya bu sönüyormuş gibi hissediyor musunuz?
+
+730
+00:46:09,400 --> 00:46:12,400
+Ama sönüyor abi.
+
+731
+00:46:12,400 --> 00:46:13,400
+Sönüyor.
+
+732
+00:46:13,400 --> 00:46:19,400
+Lambanın gücü düştüğünde bu sönmeyi görebilirsiniz.
+
+733
+00:46:19,400 --> 00:46:21,400
+Bunun içinde ne yapmanız lazım?
+
+734
+00:46:21,400 --> 00:46:24,400
+Işık kaynağından uzaklaşmanız lazım.
+
+735
+00:46:24,400 --> 00:46:27,400
+Mesela gittiniz Çamlıca Tepesi'ne abi.
+
+736
+00:46:27,400 --> 00:46:30,400
+Şöyle Avrupa yakasına bakıyorsunuz.
+
+737
+00:46:30,400 --> 00:46:32,400
+Parıl parıl yaz akşamı.
+
+738
+00:46:32,400 --> 00:46:34,400
+On numara ışıklar yanıyor.
+
+739
+00:46:34,400 --> 00:46:36,400
+Işıklar böyle parıldar.
+
+740
+00:46:36,400 --> 00:46:38,400
+Sanki yanıp sönüyormuş gibi.
+
+741
+00:46:38,400 --> 00:46:40,400
+Onu illa yaşamışsınızdır.
+
+742
+00:46:40,400 --> 00:46:43,400
+Yani şu an 20'li yaşlara geldiniz.
+
+743
+00:46:43,400 --> 00:46:46,400
+İlla hayatınızda bunu bir yaşamışsınızdır.
+
+744
+00:46:47,400 --> 00:46:50,400
+Işıklar, o şehrin ışıkları böyle parıldar.
+
+745
+00:46:50,400 --> 00:46:52,400
+Yanıp sönüyor, yanıp sönüyor gibi.
+
+746
+00:46:52,400 --> 00:46:54,400
+Ulan o evde oturuyorum işte yanıp sönmüyor.
+
+747
+00:46:54,400 --> 00:46:56,400
+Uzaktan bakınca niye sönüyor?
+
+748
+00:46:56,400 --> 00:47:00,400
+Zayıflıyor ve sen o söndüğü anı görüyorsun.
+
+749
+00:47:00,400 --> 00:47:01,400
+Tamam mı?
+
+750
+00:47:01,400 --> 00:47:10,400
+Yani biz insan olarak saniyede bir şeylerin 25-30 kere gerçekleşmesini real time olarak algılıyoruz.
+
+751
+00:47:10,400 --> 00:47:13,400
+Bundan daha fazla gerçekleştiği anda bizim için hiç önemi yok.
+
+752
+00:47:13,400 --> 00:47:22,400
+Sonuçta Spotify'a her bin, bak her bin slotta 150 slot ayırdı ama milyarı bine böl.
+
+753
+00:47:22,400 --> 00:47:30,400
+Diyelim ki bin kez zaten sana müziği dinleme hissiyatı veriyor adam yani.
+
+754
+00:47:30,400 --> 00:47:34,400
+Saniyede bin kez senin o müziğini çalıyor.
+
+755
+00:47:34,400 --> 00:47:36,400
+Sen hissedemiyorsun ki olayı.
+
+756
+00:47:36,400 --> 00:47:39,400
+Tamam sen olayı hiçbir şekilde hissedemiyorsun.
+
+757
+00:47:39,400 --> 00:47:45,400
+Ama bilmek, ignorance is bliss diye bir laf var ya bilmek kötü bir şey.
+
+758
+00:47:45,400 --> 00:47:47,400
+Sen şu an neyi biliyorsun?
+
+759
+00:47:47,400 --> 00:47:50,400
+Ulan dijital müzik dinlerken adamlar beni kandırıyor.
+
+760
+00:47:50,400 --> 00:47:52,400
+YouTube'dan müzik dinliyorum.
+
+761
+00:47:52,400 --> 00:47:55,400
+Yani kısmen dinliyorum, kısmen dinlemiyorum.
+
+762
+00:47:55,400 --> 00:48:05,400
+Beynim analog çalıştığı için saniyede 25-30 kereden daha fazlaysa bir şey onu kontinyos bir şekilde algıladığı için ben bunu müzik zannediyorum.
+
+763
+00:48:05,400 --> 00:48:22,400
+Oysa ki hakikaten kontinyos bir müzik dinlesem, analog bir müzik dinlesem şu an sizin belki de takip ettiğiniz yerli, yabancı, kaliteli şarkıcıların tamamı hala da plaklarını çıkartır arkadaşlar.
+
+764
+00:48:22,400 --> 00:48:30,400
+Türkiye'de belki gidip kimse plak almıyor, şey yapılmıyor ama Avrupa'da ne zaman gitsem biz arkadaşlarla mesela onlar plak falan alırlar.
+
+765
+00:48:31,400 --> 00:48:36,400
+Hala da bugün en popüler şarkıcılar plaklarını çıkartıyor.
+
+766
+00:48:36,400 --> 00:48:38,400
+Niye? Analog.
+
+767
+00:48:38,400 --> 00:48:40,400
+Analog.
+
+768
+00:48:40,400 --> 00:48:50,400
+Onu duyduğun sesle, o zevk ile senin Spotify'dan, YouTube müzikten, Deezer'dan neyse dinlediğin şey aynı değil.
+
+769
+00:48:50,400 --> 00:48:52,400
+Hiçbir şekilde aynı değil.
+
+770
+00:48:52,400 --> 00:49:02,400
+Ya hocam aynı gibi, işte artık bir çoğu insan için aynı gibi olabilir ama bu dersi dinleyen 49 kişi için aynı gibi değil.
+
+771
+00:49:02,400 --> 00:49:06,400
+Çünkü arkadaki nasıl bir mantık yattığını biliyorsun.
+
+772
+00:49:06,400 --> 00:49:13,400
+Senin duyularının hassasiyetini kullanarak seni kandırdıklarını biliyorsun.
+
+773
+00:49:13,400 --> 00:49:18,099
+Bundan sonra sana nasıl aynı gibi gelebilir ki [öğrenci]?
+
+774
+00:49:18,099 --> 00:49:20,099
+İnşallah anlatabilmişizdir.
+
+775
+00:49:20,099 --> 00:49:23,099
+Anladım hocam çok teşekkür ederim.
+
+776
+00:49:23,099 --> 00:49:24,099
+Ben teşekkür ederim.
+
+777
+00:49:24,099 --> 00:49:27,099
+Evet Furkan, [öğrenci]'nin bir sorusu var onu alalım.
+
+778
+00:49:28,099 --> 00:49:35,099
+Hocam ben şeyi merak ettim şimdi 30 saniyede 30 defadan fazla yaptıkları her bir şey için, ekleme için.
+
+779
+00:49:35,099 --> 00:49:39,099
+Kalitede herhangi bir değişim oluyor mu yoksa bizim aklımız her seferinde aynı mı kalıyor?
+
+780
+00:49:39,099 --> 00:49:41,099
+Kalitede tabii değişim olur.
+
+781
+00:49:41,099 --> 00:49:44,099
+Yani mesela Spotify falan kullanıyor musun bilmiyorum.
+
+782
+00:49:44,099 --> 00:49:47,099
+Ne kadar örnekleme frekansı olduğunu sorar sana.
+
+783
+00:49:47,099 --> 00:49:56,099
+Mesela daha yüksek kalitede bir aynı müziği daha yüksek kalitede dinleyebiliyorsun veya ben öyle hatırlıyorum.
+
+784
+00:49:56,099 --> 00:50:01,099
+Spotify kullanmadım hiç ama mesela bu müziği daha yüksek ses kalitesinde dinle.
+
+785
+00:50:01,099 --> 00:50:03,099
+Böyle olunca ne yapıyor?
+
+786
+00:50:03,099 --> 00:50:09,099
+Zamanı bine değil de mesela bir milyona bölüyor.
+
+787
+00:50:10,099 --> 00:50:18,099
+Doğal olarak sana verdiği o ses hissiyatı, dijital ses hissiyatı analoğa daha fazla yaklaşmış oluyor.
+
+788
+00:50:18,099 --> 00:50:20,099
+Daha fazla yaklaşmış oluyor.
+
+789
+00:50:20,099 --> 00:50:22,099
+Hiçbir zaman analog olamaz.
+
+790
+00:50:22,099 --> 00:50:23,099
+Öyle bir şey yok.
+
+791
+00:50:23,099 --> 00:50:25,099
+Ama analoğa daha fazla yaklaşmış oluyor.
+
+792
+00:50:25,099 --> 00:50:28,099
+Sen zaman zaman yüksek kaliteli dinlemek istiyorsun.
+
+793
+00:50:28,099 --> 00:50:32,099
+İşte internetin varsa evden kullanıyorsan falan.
+
+794
+00:50:32,099 --> 00:50:35,099
+Ama mobil hattından kullanıyorsan düşük kalite dinliyorsun.
+
+795
+00:50:36,099 --> 00:50:41,099
+Yani daha örnekleme frekansı az olmuş oluyor her sesi.
+
+796
+00:50:41,099 --> 00:50:46,099
+Ve daha dijitale yakın böyle kesik kesik gelmiyor tabi size.
+
+797
+00:50:46,099 --> 00:50:49,099
+Sonrasında bin kere örneklemek de insan olduğu için çok yüksek bir şey.
+
+798
+00:50:49,099 --> 00:50:53,099
+Ama 20 ile örneklendirse mesela çok kesik kesik gelecekti.
+
+799
+00:50:53,099 --> 00:50:57,099
+Bir gün onu mesela işte digital signal processing dersi alırsanız.
+
+800
+00:50:57,099 --> 00:51:01,099
+Hoca'ya sorun hatta böyle kod falan yazıyorlar mı o derste bilmiyorum.
+
+801
+00:51:01,099 --> 00:51:04,099
+Bizim zamanımızda yapıyorlardı herhalde ama bir görün yani.
+
+802
+00:51:04,099 --> 00:51:06,099
+Dijital sinyal işleme nasıl oluyor.
+
+803
+00:51:06,099 --> 00:51:11,099
+Gelen bir müziği frekansı örnekleme frekansını 20'ye 30'a düşürün.
+
+804
+00:51:11,099 --> 00:51:13,099
+Metlap'ta falan böyle şeyler yapabilirsiniz.
+
+805
+00:51:13,099 --> 00:51:15,099
+Mesela siz kendiniz de yapabilirsiniz.
+
+806
+00:51:15,099 --> 00:51:18,099
+Nasıl ses çıkıyor onu görebilirsiniz yani.
+
+807
+00:51:20,099 --> 00:51:26,099
+O sebeple yüksek yani bir müziğin bütün müziklerin frekansı aynı olmak zorunda değil.
+
+808
+00:51:26,099 --> 00:51:28,099
+Örnekleme frekansları farklı olabilir.
+
+809
+00:51:28,099 --> 00:51:31,099
+Ama şu çok önemli.
+
+810
+00:51:31,099 --> 00:51:36,099
+O örnekleme frekansı analog'tan örneklenmiş olması lazım.
+
+811
+00:51:36,099 --> 00:51:38,099
+Ne demek istiyorum.
+
+812
+00:51:38,099 --> 00:51:41,099
+Sizin mesela bir müziğiniz var.
+
+813
+00:51:41,099 --> 00:51:44,099
+MP3 uzantılı örnekleme frekansı 22K.
+
+814
+00:51:44,099 --> 00:51:51,099
+Siz bu 22K'lık örnekleme frekansı olan müziğinizi bir uygulamadan geçiriyorsunuz.
+
+815
+00:51:51,099 --> 00:51:53,099
+O 1500K'ye çıktı.
+
+816
+00:51:53,099 --> 00:51:58,099
+Abi 22K'yi 1500K'ye kopyala yapıştır çıkartır adam.
+
+817
+00:51:59,099 --> 00:52:02,099
+Analog'tan her daim örneklenmesi lazım.
+
+818
+00:52:02,099 --> 00:52:03,099
+Tamam.
+
+819
+00:52:03,099 --> 00:52:06,099
+O PLAP'tan örneklenecek yani bu.
+
+820
+00:52:06,099 --> 00:52:09,099
+O zaman hocam şey diyemez miyiz?
+
+821
+00:52:09,099 --> 00:52:18,099
+Madem kalite de fark oluyorsa demek ki insan beyninde 30'dan fazla şey algılayabiliyor gibi bir şey çıkıyor ortaya.
+
+822
+00:52:18,099 --> 00:52:20,099
+Ya algılıyor.
+
+823
+00:52:20,099 --> 00:52:22,099
+Evet algılıyor.
+
+824
+00:52:22,099 --> 00:52:24,099
+O müzik kulağı mı diyelim.
+
+825
+00:52:24,099 --> 00:52:26,099
+Nasıl bir şey dememiz lazım bilmiyorum.
+
+826
+00:52:26,099 --> 00:52:29,099
+O tarz insanlar kesin fark ediyor bunu.
+
+827
+00:52:29,099 --> 00:52:33,099
+Ama yani çok yakın sayan bir şeyler.
+
+828
+00:52:33,099 --> 00:52:39,099
+Sonuçta bu işi yapan da hani ben dijital iş yapanları gömüyorum ama bu işi yapanlar biziz.
+
+829
+00:52:39,099 --> 00:52:40,099
+Biz bu işten para kazanıyoruz yani.
+
+830
+00:52:40,099 --> 00:52:44,099
+Bir şey dijital olsun ki bilgisayar mühendisleri bu işten para kazansın yani.
+
+831
+00:52:44,099 --> 00:52:47,099
+Orası ayrı mesele yani kesinlikle.
+
+832
+00:52:47,099 --> 00:52:54,099
+Ama sana o hissiyata yakın bir hissiyat veriyor fakat o hissiyat değil.
+
+833
+00:52:54,099 --> 00:52:55,099
+Anlayabiliyorsun.
+
+834
+00:52:55,099 --> 00:52:57,099
+Evet kesinlikle anlayabiliyorsun.
+
+835
+00:52:57,099 --> 00:53:00,099
+Yani hatta en güzel ne zaman anlıyorsun biliyor musun?
+
+836
+00:53:00,099 --> 00:53:03,099
+Açıyorsun abi Netflix'i video izliyorsun.
+
+837
+00:53:03,099 --> 00:53:07,099
+Lan gerçek hayatı gibi herkes hareket ediyor gidiyor gidiyor falan filan.
+
+838
+00:53:07,099 --> 00:53:10,099
+Ondan sonra internet bir yavaşlıyor donuyor.
+
+839
+00:53:10,099 --> 00:53:11,099
+Anlamadın mı?
+
+840
+00:53:11,099 --> 00:53:12,099
+Anladın.
+
+841
+00:53:12,099 --> 00:53:18,099
+İşte o plakta oynuyor olsaydı o film o dizi donmayacaktı abi.
+
+842
+00:53:18,099 --> 00:53:20,099
+Tamam donmayacaktı.
+
+843
+00:53:20,099 --> 00:53:24,099
+O yüzden analog şeylerin kıymetini bilin.
+
+844
+00:53:24,099 --> 00:53:27,099
+Genel olarak söylemeye çalıştığım şey bu.
+
+845
+00:53:27,099 --> 00:53:30,099
+Analog olan şeylerin kıymetini bilin.
+
+846
+00:53:30,099 --> 00:53:36,099
+Size kattığı has artık bunları da bildikten sonra daha fazla olacaktır.
+
+847
+00:53:36,099 --> 00:53:41,099
+Bak bilmeyen adam için igno'nu siz bilisliyoruz ya bilmeyen adam ondan mutlu yani.
+
+848
+00:53:41,099 --> 00:53:45,099
+Spotify'da yüksek kalitede yüksek örnekleme frekansını açıyorum.
+
+849
+00:53:45,099 --> 00:53:47,099
+Çok şahane geliyor ses falan diyebilir.
+
+850
+00:53:48,099 --> 00:53:54,099
+Ama siz hayatınız boyunca ya bir plan olsa bir gramofonum olsa.
+
+851
+00:53:54,099 --> 00:53:57,099
+Pick up diyorlar ya o yeni şeylerine.
+
+852
+00:53:57,099 --> 00:54:01,099
+Pick up'um olsa da analog müzik dinlesem be abi diye isteyeceksiniz.
+
+853
+00:54:01,099 --> 00:54:04,099
+Biliyorsunuz çünkü arka tarafta bu işin nasıl olduğunu.
+
+854
+00:54:04,099 --> 00:54:10,099
+Ve bilgisayar mühendisleri ne zaman evine gitsem arkadaşlarım falan da hep pick up'u vardır yani.
+
+855
+00:54:10,099 --> 00:54:11,099
+Tamam.
+
+856
+00:54:11,099 --> 00:54:13,099
+Onu teşekkür ederim.
+
+857
+00:54:13,099 --> 00:54:14,099
+Ben teşekkür ederim.
+
+858
+00:54:14,099 --> 00:54:16,099
+Başka sorusu olan var mı?
+
+859
+00:54:16,099 --> 00:54:26,849
+Hocam 8086'da sıfır numaralı interrupt divided by zero interrupt'ı mı?
+
+860
+00:54:26,849 --> 00:54:27,849
+Bilmiyorum.
+
+861
+00:54:27,849 --> 00:54:29,849
+Kitapta var tamam mı?
+
+862
+00:54:29,849 --> 00:54:31,849
+Instruction set'i bulamazsınız.
+
+863
+00:54:31,849 --> 00:54:36,849
+Kitapta var bakalım ona şeyi getireyim şimdi mola verdiğimizde kitabı getireyim.
+
+864
+00:54:36,849 --> 00:54:39,849
+Sıfır numaralı interrupt'ın ne interrupt'a olduğuna bakalım.
+
+865
+00:54:39,849 --> 00:54:40,849
+Kitapta yazıyor.
+
+866
+00:54:40,849 --> 00:54:43,849
+En arkasındaki ekler de var yani.
+
+867
+00:54:43,849 --> 00:54:44,849
+Bilmiyorum.
+
+868
+00:54:44,849 --> 00:54:49,570
+Evet başka sorusu olan var mı?
+
+869
+00:54:49,570 --> 00:54:55,739
+Evet şu an saat 55 geçiyor.
+
+870
+00:54:55,739 --> 00:54:58,739
+Çeyrek geçe burada olalım arkadaşlar tamam.
+
+871
+00:54:58,739 --> 01:16:19,329
+Çeyrek geçe burada olalım.
+
+872
+01:16:19,329 --> 01:16:22,329
+Evet arkadaşlar merhaba tekrardan.
+
+873
+01:16:22,329 --> 01:16:26,329
+İkinci parçayla beraber devam edelim.
+
+874
+01:16:26,329 --> 01:16:29,329
+Şimdi mola dönünce bir arkadaşımız soru sormuştu.
+
+875
+01:16:29,329 --> 01:16:31,329
+Hocam sıfırıncı interrupt ne?
+
+876
+01:16:31,329 --> 01:16:34,329
+Sıfırıncı interrupt divided by zeroymuş arkadaşlar.
+
+877
+01:16:34,329 --> 01:16:37,329
+Bir işte single step non-maskable interrupt.
+
+878
+01:16:37,329 --> 01:16:41,329
+3 break point 4 arithmetic flow diye gidiyor.
+
+879
+01:16:41,329 --> 01:16:45,329
+Böyle 256 tane sıfırla 255 arasında interrupt var.
+
+880
+01:16:45,329 --> 01:16:48,329
+Tabii her bir interrupt'ın alt fonksiyonları var.
+
+881
+01:16:48,329 --> 01:16:50,329
+Yine 255 tane alt fonksiyonu var.
+
+882
+01:16:50,329 --> 01:16:52,329
+Mesela interrupt 21'e bakalım.
+
+883
+01:16:52,329 --> 01:16:55,329
+Interrupt 21'in çok fazla alt fonksiyonu vardır.
+
+884
+01:16:55,329 --> 01:16:58,329
+Kaç tane alt fonksiyonu var?
+
+885
+01:16:58,329 --> 01:17:03,329
+Altı altı hexadecimal.
+
+886
+01:17:03,329 --> 01:17:09,329
+89 x 16 tane alt fonksiyonu var arkadaşlar.
+
+887
+01:17:09,329 --> 01:17:11,329
+Interrupt 21'in sadece.
+
+888
+01:17:11,329 --> 01:17:14,329
+Interrupt 21'in tamam mı?
+
+889
+01:17:14,329 --> 01:17:16,329
+Terminate program.
+
+890
+01:17:16,329 --> 01:17:19,329
+Interrupt 21 ama nasıl terminate olacak?
+
+891
+01:17:19,329 --> 01:17:22,329
+Alt fonksiyonları ile beraber kullanıyor.
+
+892
+01:17:22,329 --> 01:17:24,329
+Birazdan onları görüyor olacağız.
+
+893
+01:17:24,329 --> 01:17:26,329
+Aynı zamanda DOS kesmesi.
+
+894
+01:17:26,329 --> 01:17:29,329
+Yani sizin DOS şeyiniz var ya.
+
+895
+01:17:29,329 --> 01:17:34,329
+İşletim sisteminin yüklenmeden önce bilgisayarınızda DOS.
+
+896
+01:17:34,329 --> 01:17:42,329
+İşletim sistemlerinin önceki versiyonlarında DOS diye bir işletim sistemi vardı.
+
+897
+01:17:42,329 --> 01:17:43,329
+DOSbox'ı kullanıyoruz.
+
+898
+01:17:43,329 --> 01:17:45,329
+Onun kendi kesmeleri.
+
+899
+01:17:45,329 --> 01:17:48,329
+Sizin de program içerisinde kullanabileceğiniz kesmeler.
+
+900
+01:17:48,329 --> 01:17:50,329
+Bir de IOS kesmeleri var.
+
+901
+01:17:50,329 --> 01:17:51,329
+Onları göreceğiz zaten.
+
+902
+01:17:51,329 --> 01:17:53,329
+Şimdi dersin bu kısmında.
+
+903
+01:17:55,329 --> 01:17:57,329
+Şimdi pekala kesme oluştuğunda.
+
+904
+01:17:57,329 --> 01:18:03,329
+Bunun da nasıl bir aksiyon gerçekleştiriyor bizim program.
+
+905
+01:18:03,329 --> 01:18:04,329
+Ona bakalım.
+
+906
+01:18:04,329 --> 01:18:11,329
+Öncelikle biz programın akışında sayıları büyüten kişiye doğru sıralamaya çalışıyoruz.
+
+907
+01:18:11,329 --> 01:18:14,329
+Bir anında yani sayıların yarısını sıralamışız.
+
+908
+01:18:14,329 --> 01:18:16,329
+O an kesme geldi.
+
+909
+01:18:16,329 --> 01:18:17,329
+Bizim programımız yarıda kesildi.
+
+910
+01:18:17,329 --> 01:18:18,329
+Ne oluyor?
+
+911
+01:18:18,329 --> 01:18:20,329
+Öncelikle bayraklar yığında saklanıyor.
+
+912
+01:18:20,329 --> 01:18:22,739
+Pushef.
+
+913
+01:18:22,739 --> 01:18:23,739
+Bunu biz yapmıyoruz arkadaşlar.
+
+914
+01:18:23,739 --> 01:18:28,739
+Bunu anlatırken yani bunu kesme geldiğini anladığımızda biz mi sarkıyoruz falan değil.
+
+915
+01:18:28,739 --> 01:18:32,739
+Bu otomatik olarak arka tarafta işte yapılan şeyler.
+
+916
+01:18:32,739 --> 01:18:35,739
+Boşu boşuna XZP programın başında bir süre header yok.
+
+917
+01:18:35,739 --> 01:18:37,739
+Veya işte orijin 100 diyoruz.
+
+918
+01:18:37,739 --> 01:18:41,739
+O başında bir şeyler var ya onlar biliyor yani bunu nasıl yapacağını.
+
+919
+01:18:41,739 --> 01:18:47,739
+Ardından TrapFleck tf 0 değerine kavuşuyor.
+
+920
+01:18:47,739 --> 01:18:50,739
+Inter-Up Fleck sıfır olmuş oluyor.
+
+921
+01:18:50,739 --> 01:18:53,739
+Clear Inter-Up Fleck ile birlikte.
+
+922
+01:18:53,739 --> 01:18:55,739
+Bunlar otomatik olan arka tarafta şeyler.
+
+923
+01:18:55,739 --> 01:19:03,739
+Kod segment yazmaçının değeri kod segment register'ın değeri isteğin içerisine atılıyor.
+
+924
+01:19:03,739 --> 01:19:07,739
+Ardından o kod segmentte hangi instruction pointer'dayız.
+
+925
+01:19:07,739 --> 01:19:08,739
+Yani hangi offset'deyiz.
+
+926
+01:19:08,739 --> 01:19:11,739
+Bunun değeri de isteğin içerisine atılıyor.
+
+927
+01:19:11,739 --> 01:19:15,739
+Ardından Inter-Up bilmem ne çalıştırılıyor.
+
+928
+01:19:15,739 --> 01:19:17,739
+Mesela 21 numaralı Inter-Up diyelim.
+
+929
+01:19:17,739 --> 01:19:18,739
+Tamam mı?
+
+930
+01:19:18,739 --> 01:19:19,739
+Burada bir number olacak.
+
+931
+01:19:19,739 --> 01:19:21,739
+Inter-Up 21 çalıştırıyor.
+
+932
+01:19:21,739 --> 01:19:24,739
+Çalıştırmadan önce ama şu 5 işlemi yaptı.
+
+933
+01:19:24,739 --> 01:19:27,739
+Inter-Up mesela şu iki işlemi niye yapıyor?
+
+934
+01:19:27,739 --> 01:19:30,739
+Inter-Up bittiğinde dönebilelim.
+
+935
+01:19:30,739 --> 01:19:34,739
+Bayraklar bozulmuş olabilir bayrakları koruyabilelim.
+
+936
+01:19:34,739 --> 01:19:35,739
+Mesela tamam mı?
+
+937
+01:19:35,739 --> 01:19:38,739
+O yüzden bu işlemleri gerçekleştiriyor.
+
+938
+01:19:38,739 --> 01:19:40,739
+Register'lar.
+
+939
+01:19:40,739 --> 01:19:43,739
+Register'ların değerini ne yapıyor o zaman?
+
+940
+01:19:43,739 --> 01:19:44,739
+Değil mi?
+
+941
+01:19:44,739 --> 01:19:45,739
+Baksana.
+
+942
+01:19:45,739 --> 01:19:47,739
+Bayrakları koruyacağız.
+
+943
+01:19:47,739 --> 01:19:51,739
+Ama Register'lar bu konuda fikri olan var mı?
+
+944
+01:19:51,739 --> 01:19:54,739
+Register'ların da korunması gerekmez miydi?
+
+945
+01:19:54,739 --> 01:20:02,819
+Kim ne söyleyebilir bu konuda?
+
+946
+01:20:02,819 --> 01:20:06,289
+Birisi bir şey söylesin ya.
+
+947
+01:20:06,289 --> 01:20:08,289
+Hiç kimsenin fikri yok mu?
+
+948
+01:20:08,289 --> 01:20:10,289
+Arkadaşlar 12 haftadır ders anlatıyoruz.
+
+949
+01:20:10,289 --> 01:20:18,770
+Ne oldu dün bir manyetik alana falan maruz kalıp da bizden her şeyi unuttunuz mu?
+
+950
+01:20:18,770 --> 01:20:19,770
+Evet.
+
+951
+01:20:19,770 --> 01:20:21,770
+Bunu söyledim daha önce size.
+
+952
+01:20:21,770 --> 01:20:25,770
+Inter-Up çağrıldığında bir program, ayrı bir program çalışır.
+
+953
+01:20:25,770 --> 01:20:27,770
+O da bir yordamdır.
+
+954
+01:20:27,770 --> 01:20:30,770
+Ve eğer ki siz harici yordamsanız,
+
+955
+01:20:30,770 --> 01:20:32,770
+Inter-Up dahi olsanız,
+
+956
+01:20:32,770 --> 01:20:40,770
+harici yordamsanız o harici yordamın içerisinde Register'ların değerleri korunur.
+
+957
+01:20:40,770 --> 01:20:42,770
+Programınızı yazmadan önce,
+
+958
+01:20:42,770 --> 01:20:48,770
+o Inter-Up kodunu yazmadan önce hangi Register'ları kullanacaksan onları siteye atarsın.
+
+959
+01:20:48,770 --> 01:20:53,770
+Programından Inter-Up'ını bitirmeden önce de o siteye attıklarını sitekten geri çekersin.
+
+960
+01:20:53,770 --> 01:20:55,770
+Biz de bunu yaptık.
+
+961
+01:20:55,770 --> 01:20:57,770
+Tamam mı? Biz de bunu yaptık arkadaşlar.
+
+962
+01:20:57,770 --> 01:21:01,770
+O sebeple burada Register'ların değerleri korunmuyor hocam.
+
+963
+01:21:01,770 --> 01:21:04,770
+Bunu sınavda soruyoruz çünkü şu beş maddeyi biliyor öğrenci.
+
+964
+01:21:04,770 --> 01:21:06,770
+Aa evet Register'ların değerleri korunmuyor.
+
+965
+01:21:06,770 --> 01:21:08,770
+Ben Inter-Up'u bir çağırıyorum.
+
+966
+01:21:08,770 --> 01:21:10,770
+Register'ları istediğim gibi bulamıyorum.
+
+967
+01:21:10,770 --> 01:21:11,770
+Değil.
+
+968
+01:21:11,770 --> 01:21:13,770
+O Inter-Up yordamı,
+
+969
+01:21:13,770 --> 01:21:16,770
+Register'ların değerlerini hangi Register'ları kullanacaksa
+
+970
+01:21:16,770 --> 01:21:18,770
+kendi site'nin içerisine atıp,
+
+971
+01:21:18,770 --> 01:21:21,770
+ondan sonra tekrardan sitekten geri çeker arkadaşlar.
+
+972
+01:21:21,770 --> 01:21:22,770
+Tamam mı?
+
+973
+01:21:22,770 --> 01:21:24,770
+Bu Inter-Up yordamının sorumluluğundadır.
+
+974
+01:21:24,770 --> 01:21:29,770
+Harici yordamımızın, nasıl bizi harici yordam yazdığımızda onun sorumluluğunda oluyor.
+
+975
+01:21:29,770 --> 01:21:30,770
+Burada da öyle.
+
+976
+01:21:30,770 --> 01:21:32,770
+Şimdi Inter-Up çalıştırılıyor.
+
+977
+01:21:32,770 --> 01:21:35,770
+Çalıştırında mesela Inter-Up 21 çalıştırıldı diyelim.
+
+978
+01:21:35,770 --> 01:21:38,770
+Bunu vektör tablosuna nasıl erişiyoruz?
+
+979
+01:21:38,770 --> 01:21:41,770
+Inter-Up 21 çarpı 4. Bir vektör tablomuz var.
+
+980
+01:21:41,770 --> 01:21:44,770
+Bu vektör tablosu bir lookup table gibi bir şey.
+
+981
+01:21:45,770 --> 01:21:47,770
+Bakın vektör tablosu ne tutuyor?
+
+982
+01:21:47,770 --> 01:21:49,770
+Onu söylemeye çalışıyorum.
+
+983
+01:21:49,770 --> 01:21:57,770
+Hangi Inter-Up'ın kodu bellekte hangi adreste?
+
+984
+01:21:57,770 --> 01:22:00,770
+Dedi ki 256 tane Inter-Up'ımız var.
+
+985
+01:22:00,770 --> 01:22:02,770
+Bunların alt fonksiyonları var.
+
+986
+01:22:02,770 --> 01:22:04,770
+Hangi Inter-Up'ımız?
+
+987
+01:22:04,770 --> 01:22:06,770
+Mesela 17.0'lu Inter-Up.
+
+988
+01:22:06,770 --> 01:22:08,770
+Bellekte nerede?
+
+989
+01:22:08,770 --> 01:22:12,770
+İşitim sistemi çalışmaya başladığı anda bunu gidip belleye yüklüyor hemen.
+
+990
+01:22:12,770 --> 01:22:15,770
+İşitim sistemleri ders aldığınızda onları detaylı görürsünüz orada.
+
+991
+01:22:15,770 --> 01:22:18,770
+İşitim sistemi gidip belleye yüklendi bunları.
+
+992
+01:22:18,770 --> 01:22:21,770
+DOS zaten açıldığında direkt bellekte yani o.
+
+993
+01:22:21,770 --> 01:22:23,770
+Fiziksel olarak kazınmış bir yere.
+
+994
+01:22:23,770 --> 01:22:26,770
+Yani update falan ettiğinizde tabii güncelleyebilirsiniz onu da.
+
+995
+01:22:26,770 --> 01:22:30,770
+Genelde DOS'u çok fazla update etmenizi tavsiye edinler.
+
+996
+01:22:30,770 --> 01:22:33,770
+Gerçi yeni DOS'lar çok rahat kullanıcı arayüzünden update falan edilebiliyor ama.
+
+997
+01:22:35,770 --> 01:22:40,770
+Benim aradığım Inter-Up bellekte hangi adreste?
+
+998
+01:22:40,770 --> 01:22:42,770
+Hangi adreste derken nasıl olabilir?
+
+999
+01:22:42,770 --> 01:22:44,770
+1. Hangi kod segmentte?
+
+1000
+01:22:44,770 --> 01:22:48,770
+2. O kod segmentin hangi offsetinde?
+
+1001
+01:22:48,770 --> 01:22:50,770
+Tamam mı?
+
+1002
+01:22:50,770 --> 01:22:52,770
+Bizim adreslerimiz neydi?
+
+1003
+01:22:52,770 --> 01:22:54,770
+Kod segmentlerimiz 2 tane hexadecimal değerden oluşuyordu.
+
+1004
+01:22:54,770 --> 01:22:56,770
+Değil mi?
+
+1005
+01:22:56,770 --> 01:23:00,770
+2 tane hexadecimal değerden oluşuyorsa kaç byte'dir?
+
+1006
+01:23:00,770 --> 01:23:02,770
+2 byte mı?
+
+1007
+01:23:02,770 --> 01:23:12,689
+Kaç tane hexadecimal değerden oluşuyordu kod segmenti?
+
+1008
+01:23:12,689 --> 01:23:14,689
+Bağlantımın koptuğunu var sayıyorum.
+
+1009
+01:23:14,689 --> 01:23:17,689
+Yoksa siz bu sorunun cevabını kesinlikle biliyorsunuzdur.
+
+1010
+01:23:17,689 --> 01:23:21,689
+O yüzden sesimin size gelmediğini var sayıyorum ve devam ediyorum dersem.
+
+1011
+01:23:21,689 --> 01:23:25,689
+Evet bir kod segment 4 hexadecimal değerden oluşuyordu.
+
+1012
+01:23:25,689 --> 01:23:33,689
+Ve toplam 2 byte boyutunda yer kaplıyordu arkadaşlar.
+
+1013
+01:23:33,689 --> 01:23:34,689
+Tamam mı?
+
+1014
+01:23:34,689 --> 01:23:37,689
+2 byte'da offset değeri ettiğimizde 4 byte.
+
+1015
+01:23:37,689 --> 01:23:42,689
+Yani hangi kod segmentin hangi offsetinde olduğunu söylemek için.
+
+1016
+01:23:42,689 --> 01:23:49,689
+4 byte'lük vektör tablosunda her bir interrupt için yer ayrılıyor.
+
+1017
+01:23:49,689 --> 01:23:53,689
+Yani vektör tablosunun boyutu kaç byte'dir?
+
+1018
+01:23:53,689 --> 01:24:02,909
+Hocam 4 interrupt.
+
+1019
+01:24:02,909 --> 01:24:10,430
+Tamam yani interrupt sayısını söyledik ya arkadaşlar.
+
+1020
+01:24:10,430 --> 01:24:12,430
+Kaç tane interrupt'ımız vardı?
+
+1021
+01:24:12,430 --> 01:24:15,430
+1024 mı hocam?
+
+1022
+01:24:15,430 --> 01:24:16,430
+Evet.
+
+1023
+01:24:16,430 --> 01:24:17,430
+Teşekkür ederiz.
+
+1024
+01:24:17,430 --> 01:24:22,430
+1024 byte'lük bir alan vektör tablosu.
+
+1025
+01:24:22,430 --> 01:24:24,430
+256 tane interrupt'ımız var.
+
+1026
+01:24:24,430 --> 01:24:31,430
+Her bir interrupt için o interrupt'ın bellekte hangi adresde olduğunu tutmak için 4 byte'lük yer kullanıyoruz.
+
+1027
+01:24:31,430 --> 01:24:38,430
+Yani vektör tablomuzun boyutu 256 çarpı 4'den 1024 byte'dir.
+
+1028
+01:24:38,430 --> 01:24:40,430
+1024 byte'dir.
+
+1029
+01:24:40,430 --> 01:24:51,430
+Şimdi biz o interrupt'ı çalıştırmadan önce diyelim ki 17 numaralı interrupt'ı çalıştırmak istiyoruz.
+
+1030
+01:24:51,430 --> 01:24:53,430
+Bunu 17'yi 4'de şarpıyorsun.
+
+1031
+01:24:53,430 --> 01:24:55,430
+68 oldu.
+
+1032
+01:24:55,430 --> 01:25:01,430
+İşte vektör tablosundaki decimal olarak 68. byte'e gidiyorsun.
+
+1033
+01:25:01,430 --> 01:25:08,430
+Orada bulduğun ilk word değerini instruction pointer değerine set ediyorsun.
+
+1034
+01:25:08,430 --> 01:25:11,430
+İkinci word değerini 4 byte'lük yer kaplıyor dedik ya.
+
+1035
+01:25:11,430 --> 01:25:14,430
+Yani ilk word değeri 2 byte'lük yer kaplar.
+
+1036
+01:25:14,430 --> 01:25:16,430
+Onu aldın instruction pointer'a koydun.
+
+1037
+01:25:16,430 --> 01:25:19,430
+İkinci word değeri ise kod segmentte yazıyorsun.
+
+1038
+01:25:19,430 --> 01:25:30,430
+Böyle olunca senin kod segment ve instruction pointer yazmaçlarının içerisinde şu an gideceğin kesmenin kodu var.
+
+1039
+01:25:30,430 --> 01:25:31,430
+Tamam mı? Kodu var.
+
+1040
+01:25:31,430 --> 01:25:36,430
+Ondan sonra onu iteratif bir şekilde çalıştırmaya başlıyorsun.
+
+1041
+01:25:37,430 --> 01:25:42,739
+Mesela siz kendi kesmenizi yazmak istiyorsunuz.
+
+1042
+01:25:42,739 --> 01:25:49,739
+Ya hocam sadece bios ve dos kesmeleri mi var? Hayır.
+
+1043
+01:25:49,739 --> 01:25:52,739
+Siz kendi kesmenizi de yazabilirsiniz.
+
+1044
+01:25:52,739 --> 01:26:03,739
+Kendi kesmenizi yazmak istediğinizde yazmaçlarla ilgili durumları nasıl ki dos ve bios kesmeleri kendi içerisinde yazmaçları,
+
+1045
+01:26:03,739 --> 01:26:07,739
+yazmaçları kullandığı yazmaçları siteye atıp bitmeden önce stekten alıyorsa,
+
+1046
+01:26:07,739 --> 01:26:18,739
+aynı şekilde sizin de yazdığınız kesmeler içerisinde muhakkak ve muhakkak yazmaçlarla ilgili durumları handle etmeniz lazım.
+
+1047
+01:26:18,739 --> 01:26:21,739
+Bakın bayrakları kendisi handle ediyor ama yazmaçları size bırakıyor.
+
+1048
+01:26:21,739 --> 01:26:23,739
+Tamam mı? Buna lütfen dikkat edin.
+
+1049
+01:26:23,739 --> 01:26:32,739
+Ve dönerken interrupt return komutuyla dönmeniz lazım.
+
+1050
+01:26:32,739 --> 01:26:34,739
+Şimdiye kadar nasıl dönmüştük?
+
+1051
+01:26:34,739 --> 01:26:36,739
+Red f veya red.
+
+1052
+01:26:36,739 --> 01:26:40,739
+Bu üçü arasında temelde nasıl bir fark olabilir?
+
+1053
+01:26:40,739 --> 01:26:45,739
+Yani ikisi diyelim return f ile return arasında nasıl bir fark vardı?
+
+1054
+01:26:45,739 --> 01:26:46,739
+Kim söyleyebilir?
+
+1055
+01:26:48,739 --> 01:26:50,739
+Flaklarla ilgili hocam.
+
+1056
+01:26:50,739 --> 01:26:51,739
+Efendim?
+
+1057
+01:26:51,739 --> 01:26:53,739
+Flaklarla ilgili.
+
+1058
+01:26:53,739 --> 01:27:01,890
+Interrupt, return f ve return arasında.
+
+1059
+01:27:01,890 --> 01:27:04,890
+Return near tipi değil miydi hocam?
+
+1060
+01:27:04,890 --> 01:27:09,890
+Return near tipiydi, return f ise return f idi.
+
+1061
+01:27:09,890 --> 01:27:17,939
+İkisi arasında nasıl bir fark vardı?
+
+1062
+01:27:17,939 --> 01:27:20,859
+İkisi arasında bir fark var.
+
+1063
+01:27:20,859 --> 01:27:23,859
+Return far ve return near arasında.
+
+1064
+01:27:23,859 --> 01:27:30,350
+Hocam gs tutulmuyordu.
+
+1065
+01:27:30,350 --> 01:27:32,350
+Sesini alamadım bir daha söyle.
+
+1066
+01:27:32,350 --> 01:27:36,350
+Gs tutulmuyordu galiba.
+
+1067
+01:27:36,350 --> 01:27:39,350
+Gs tutulmuyordu galiba. Galatasaray.
+
+1068
+01:27:39,350 --> 01:27:40,350
+Anlayamıyorum ya.
+
+1069
+01:27:40,350 --> 01:27:43,350
+Gs hocam, code segment.
+
+1070
+01:27:43,350 --> 01:27:45,350
+Code segment evet.
+
+1071
+01:27:45,350 --> 01:27:47,350
+Return'de tutulmuyor.
+
+1072
+01:27:47,350 --> 01:27:49,350
+Return'de tutulmuyor.
+
+1073
+01:27:49,350 --> 01:27:51,350
+Return far'da tutuluyor.
+
+1074
+01:27:51,350 --> 01:27:55,350
+Şöyle [öğrenci]'nın söylediği şeyi teşekkür ederek bir güncelleyelim.
+
+1075
+01:27:55,350 --> 01:27:56,350
+Bir update edelim.
+
+1076
+01:27:56,350 --> 01:27:58,350
+[öğrenci] şunu söylemek istiyor.
+
+1077
+01:27:58,350 --> 01:28:01,350
+Hocam near dallanıyorsak return ile beraber dönüyorduk.
+
+1078
+01:28:01,350 --> 01:28:06,350
+Near dallandığımız için ekstradan code segmentin değerini sitein içerisine atmıyorduk.
+
+1079
+01:28:06,350 --> 01:28:11,350
+Yani böyle olduğu için sadece offset değeri sitein içerisine giriyordu near'da.
+
+1080
+01:28:11,350 --> 01:28:19,350
+Return ile beraber dönerken, dönerken iki byte'lik bir virü çekiyorduk sadece sitekten.
+
+1081
+01:28:19,350 --> 01:28:22,350
+Return far ile beraber dönerken,
+
+1082
+01:28:22,350 --> 01:28:27,350
+harici bir segmentten döndüğümüz için o segmente gitmeden önce
+
+1083
+01:28:27,350 --> 01:28:30,350
+code segmentin değerini de sitein içerisine attığımızdan ötürü
+
+1084
+01:28:30,350 --> 01:28:34,350
+return far ile dönerken 4 byte'lik bir değer site'den çekiyoruz.
+
+1085
+01:28:34,350 --> 01:28:35,350
+Sitekten çekiyoruz.
+
+1086
+01:28:35,350 --> 01:28:40,350
+E return ile, interrupt return ile dönerken bakın neyi atmışız?
+
+1087
+01:28:40,350 --> 01:28:42,350
+Instruction point'ı atmışız.
+
+1088
+01:28:42,350 --> 01:28:43,350
+Neyi atmışız?
+
+1089
+01:28:43,350 --> 01:28:44,350
+Code segmenti atmışız.
+
+1090
+01:28:44,350 --> 01:28:45,350
+Neyi atmışız?
+
+1091
+01:28:45,350 --> 01:28:47,350
+Bayrakları atmışız.
+
+1092
+01:28:47,350 --> 01:28:55,350
+Interrupt return ile beraber dönerkense 6 byte'lik bir değer çekiliyor sitein içerisinde.
+
+1093
+01:28:55,350 --> 01:28:56,350
+Tamam.
+
+1094
+01:28:56,350 --> 01:29:00,350
+6 byte'lik bir değer çekiyor sitein içerisinde.
+
+1095
+01:29:00,350 --> 01:29:04,350
+Yani siz mesela şöyle hatalar yapıyorsunuz arkadaşlar.
+
+1096
+01:29:04,350 --> 01:29:06,350
+Ve mesela bununla ilgili sorular geliyor.
+
+1097
+01:29:06,350 --> 01:29:07,350
+Bu yıl hiç gelmedi.
+
+1098
+01:29:07,350 --> 01:29:09,350
+Demek ki bu yıl çok fazla oturup evde kod yazmadınız.
+
+1099
+01:29:09,350 --> 01:29:11,350
+Her yıl gelirdi böyle şeyler.
+
+1100
+01:29:11,350 --> 01:29:12,350
+Sorular.
+
+1101
+01:29:12,350 --> 01:29:13,350
+Hocam bu niye oluyor diye.
+
+1102
+01:29:13,350 --> 01:29:17,350
+Öğrenci arkadaş siteyi idareli kullanmaya çalışıyor.
+
+1103
+01:29:17,350 --> 01:29:19,350
+Hocam programımı hesapladım.
+
+1104
+01:29:19,350 --> 01:29:25,350
+Programımda en çok kullandığım durumda 10 vörtlük değer kullanıyorum.
+
+1105
+01:29:25,350 --> 01:29:27,350
+Siteimi 10 yaptım.
+
+1106
+01:29:27,350 --> 01:29:29,350
+Hatta bir tane daha hadi benden olsun dedim.
+
+1107
+01:29:29,350 --> 01:29:30,350
+11 yaptım.
+
+1108
+01:29:30,350 --> 01:29:33,350
+Ama Site Overflow'a vatasa alıyorum.
+
+1109
+01:29:33,350 --> 01:29:36,350
+İşte bakın sizin programınız interrupt da alabilir.
+
+1110
+01:29:36,350 --> 01:29:41,350
+Interrupt aldığında şu 3 tane değeri sizin kendi siteinizin içerisinde yazıyor.
+
+1111
+01:29:41,350 --> 01:29:43,350
+Kendi siteinizin içerisinde yazıyor.
+
+1112
+01:29:43,350 --> 01:29:53,350
+Bu 3 tane değeri de yani siteinizi organize ederken interrupt alır ya benim programım diye organize edeceksiniz.
+
+1113
+01:29:53,350 --> 01:29:56,350
+3 tane vört buradan kesin geliyor.
+
+1114
+01:29:56,350 --> 01:29:57,350
+Tamam mı?
+
+1115
+01:29:57,350 --> 01:29:58,350
+Tam ihtiyacınız.
+
+1116
+01:29:58,350 --> 01:30:00,350
+Mesela böyle bir soru sorduğumuzu düşünelim.
+
+1117
+01:30:00,350 --> 01:30:02,949
+Sınavda.
+
+1118
+01:30:02,949 --> 01:30:04,949
+Dedik ki bir tane kod verdik.
+
+1119
+01:30:04,949 --> 01:30:06,949
+Bir sürü push yapıyor pop yapıyor.
+
+1120
+01:30:06,949 --> 01:30:09,949
+Bu siteyin minimum değeri ne olması lazım?
+
+1121
+01:30:09,949 --> 01:30:12,949
+Hesapladığınız 8 vört atılıyor.
+
+1122
+01:30:12,949 --> 01:30:14,949
+3 vört de buradan 11 diyeceksiniz.
+
+1123
+01:30:14,949 --> 01:30:16,949
+Anlatabildim mi?
+
+1124
+01:30:16,949 --> 01:30:17,949
+11 diyeceksiniz.
+
+1125
+01:30:17,949 --> 01:30:19,949
+Veya bir soru sorduk.
+
+1126
+01:30:19,949 --> 01:30:20,949
+Interrupt return.
+
+1127
+01:30:20,949 --> 01:30:22,949
+Ama bu 3'ünü burada görmüyorsunuz tabi.
+
+1128
+01:30:22,949 --> 01:30:24,949
+Onu kafada bileceksin yani.
+
+1129
+01:30:24,949 --> 01:30:26,949
+3'ünü görmüyorsun.
+
+1130
+01:30:26,949 --> 01:30:30,949
+Ama interrupt alırsa diye onu boş bırakman lazım yani.
+
+1131
+01:30:30,949 --> 01:30:31,949
+Almaya da bilir.
+
+1132
+01:30:31,949 --> 01:30:32,949
+Hocam interrupt almaya bilir.
+
+1133
+01:30:32,949 --> 01:30:33,949
+Boş bırak.
+
+1134
+01:30:33,949 --> 01:30:35,949
+Boş bırak.
+
+1135
+01:30:35,949 --> 01:30:36,949
+Oraya yani.
+
+1136
+01:30:36,949 --> 01:30:38,949
+Olsun yine ama sitenin içerisinde o boyut.
+
+1137
+01:30:38,949 --> 01:30:40,949
+Veya interrupt return.
+
+1138
+01:30:40,949 --> 01:30:44,949
+Sitekten kaç byte veri çeker?
+
+1139
+01:30:44,949 --> 01:30:46,949
+Mesela interrupt return.
+
+1140
+01:30:46,949 --> 01:30:49,949
+Sitekten kaç byte veri çeker?
+
+1141
+01:30:49,949 --> 01:30:55,949
+Cevaplar 1, 2, 3, 4, 5, 6.
+
+1142
+01:30:55,949 --> 01:30:59,710
+Kaç byte çeker?
+
+1143
+01:30:59,710 --> 01:31:01,710
+Şıklar 1, 2, 3, 4, 5, 6.
+
+1144
+01:31:01,710 --> 01:31:05,750
+Allah Allah.
+
+1145
+01:31:05,750 --> 01:31:06,750
+Kime anlatıyorum?
+
+1146
+01:31:06,750 --> 01:31:08,750
+Hakikaten sesi mi kesildi ya?
+
+1147
+01:31:12,140 --> 01:31:13,140
+Tamam.
+
+1148
+01:31:13,140 --> 01:31:14,140
+6 değil mi hocam?
+
+1149
+01:31:14,140 --> 01:31:15,140
+6.
+
+1150
+01:31:15,140 --> 01:31:16,140
+Evet.
+
+1151
+01:31:16,140 --> 01:31:17,140
+[öğrenci].
+
+1152
+01:31:17,140 --> 01:31:18,140
+Teşekkür ederiz.
+
+1153
+01:31:18,140 --> 01:31:19,140
+6.
+
+1154
+01:31:19,140 --> 01:31:20,140
+3 değil.
+
+1155
+01:31:20,140 --> 01:31:21,140
+3 vört çekiyor.
+
+1156
+01:31:21,140 --> 01:31:22,140
+Biz bunu anlatıyoruz derste.
+
+1157
+01:31:22,140 --> 01:31:23,140
+Adam diyor ki 3.
+
+1158
+01:31:23,140 --> 01:31:24,140
+3 değil.
+
+1159
+01:31:24,140 --> 01:31:26,140
+3 nedenle ona vört çekiyor.
+
+1160
+01:31:26,140 --> 01:31:28,140
+6 byte çeker.
+
+1161
+01:31:28,140 --> 01:31:29,140
+Tamam.
+
+1162
+01:31:29,140 --> 01:31:31,140
+6 byte çeker.
+
+1163
+01:31:31,140 --> 01:31:34,140
+O yüzden lütfen dikkat edin kıymetli arkadaşlar.
+
+1164
+01:31:34,140 --> 01:31:38,140
+Yani bir kesme oluştuğumuzda başımıza bunlar geliyor.
+
+1165
+01:31:38,140 --> 01:31:40,140
+Kendi kesmelerinizi de yazabilirsiniz.
+
+1166
+01:31:40,140 --> 01:31:44,140
+Mesela kesme tablosunda reserve şeyler var.
+
+1167
+01:31:44,140 --> 01:31:45,140
+Kesmeler var.
+
+1168
+01:31:45,140 --> 01:31:46,140
+Boş yani.
+
+1169
+01:31:46,140 --> 01:31:48,140
+Oraya gitsen kendi kesmeni yaz.
+
+1170
+01:31:48,140 --> 01:31:49,140
+Yazabilirsin.
+
+1171
+01:31:49,140 --> 01:31:54,140
+Veya birazdan göreceğiz hali hazırda olan bir kesmeyi sen değiştirebilirsin.
+
+1172
+01:31:54,140 --> 01:31:56,140
+Kodunu değiştirebilirsin.
+
+1173
+01:31:57,579 --> 01:32:03,579
+Yani hocam ya hali hazırda olan işletim sisteminin kesmesinin kodunu değiştirmemdeki amaç ne
+
+1174
+01:32:03,579 --> 01:32:04,579
+ola ki?
+
+1175
+01:32:04,579 --> 01:32:05,579
+İşte virüs abi.
+
+1176
+01:32:05,579 --> 01:32:06,579
+Virüs.
+
+1177
+01:32:06,579 --> 01:32:08,579
+Yani adamı gıcık etmek istiyorsun.
+
+1178
+01:32:08,579 --> 01:32:10,579
+Mesela ne yaptın?
+
+1179
+01:32:10,579 --> 01:32:14,579
+Mouse'un sol tuşuna bastığında oluşan kesme ile sağ tuşuna bastığında oluşan
+
+1180
+01:32:14,579 --> 01:32:15,579
+kesmeler farklıdır.
+
+1181
+01:32:15,579 --> 01:32:16,579
+Tamam.
+
+1182
+01:32:16,579 --> 01:32:18,579
+Bizim kesme tablosundan da bunu görebilirsiniz.
+
+1183
+01:32:18,579 --> 01:32:19,579
+Farklıdır.
+
+1184
+01:32:19,579 --> 01:32:21,579
+Sen bu ikisinin kodunu karıştır.
+
+1185
+01:32:21,579 --> 01:32:23,579
+Sola bastığında sağ gibi çalışsın.
+
+1186
+01:32:23,579 --> 01:32:25,579
+Sağa bastığında sol gibi çalışsın.
+
+1187
+01:32:26,579 --> 01:32:27,579
+Virüs yani.
+
+1188
+01:32:27,579 --> 01:32:28,579
+Adam uğraşıp dursun.
+
+1189
+01:32:28,579 --> 01:32:36,579
+Veya tam tersi mouse hareket ettiğinde imleç hareket ettiğinde open in file olmuş olsun.
+
+1190
+01:32:36,579 --> 01:32:39,579
+Adam mouse hareket ettirdikçe bir sürü ekrana böyle bir şey çıksın.
+
+1191
+01:32:39,579 --> 01:32:41,579
+Pop up çıksın yani.
+
+1192
+01:32:41,579 --> 01:32:42,579
+Window açılsın.
+
+1193
+01:32:42,579 --> 01:32:43,579
+Çıldırsın.
+
+1194
+01:32:43,579 --> 01:32:47,579
+Kapatmaya çalışırken mouse'u sağa sola götürsün daha fazla çıksın.
+
+1195
+01:32:47,579 --> 01:32:49,579
+Tabii böyle şeyler yap yani yapmayın.
+
+1196
+01:32:49,579 --> 01:32:50,579
+Yapın belki bilmiyorum.
+
+1197
+01:32:50,579 --> 01:32:52,579
+İşiniz buysa sonuçta bilgisayar mühendisiniz.
+
+1198
+01:32:52,579 --> 01:32:54,579
+Çalıştığınız şirkette virüs yazmanız gerekiyor olabilir.
+
+1199
+01:32:54,579 --> 01:32:56,579
+Yazın yapın yani.
+
+1200
+01:32:56,579 --> 01:33:03,579
+Ama bu tarz şeyler yapmak istiyorsanız nereye müdahale etmeniz gerektiğini bilin diye anlatıyoruz.
+
+1201
+01:33:06,579 --> 01:33:09,579
+Şimdi tabii vektör tablosunun görevi nedir?
+
+1202
+01:33:09,579 --> 01:33:13,579
+Ondan biraz bahsediyor olalım ve bu vektör tablosu nerede?
+
+1203
+01:33:13,579 --> 01:33:16,579
+Böyle vektör tablosu bir look up table gibi bir tablo var.
+
+1204
+01:33:16,579 --> 01:33:17,579
+Ama nerede bu?
+
+1205
+01:33:17,579 --> 01:33:25,579
+Bu kesme servis programları gerek BIOS gereksiz işletim sitemi tarafından sallanan değişik kod uzunluklarına sahip.
+
+1206
+01:33:25,579 --> 01:33:34,579
+Mesela 17 numaralı kesme interop komutu kodu o bir yordam ya kodu 30 byte'dır.
+
+1207
+01:33:34,579 --> 01:33:36,579
+18 350 byte'dır.
+
+1208
+01:33:36,579 --> 01:33:39,579
+Yani olabilir farklı uzunlukta olabilir.
+
+1209
+01:33:39,579 --> 01:33:41,579
+Ama nesi aynı?
+
+1210
+01:33:41,579 --> 01:33:44,579
+Her birisine erişmek için kullandığımız adres aynı.
+
+1211
+01:33:44,579 --> 01:33:45,579
+Kaç byte?
+
+1212
+01:33:45,579 --> 01:33:46,579
+4 byte.
+
+1213
+01:33:46,579 --> 01:33:52,579
+İkisi kod segmenti, ikisi de o kod segmentdeki offset için kullanılıyor.
+
+1214
+01:33:52,579 --> 01:33:57,579
+Bilgisayarın tuşuna bastığınız anda ilk vektör tablosu gidiyor.
+
+1215
+01:33:57,579 --> 01:34:00,579
+Belleyin içerisine yerleştiriliyor.
+
+1216
+01:34:00,579 --> 01:34:05,119
+Bizim belleyin içerisine yerleştirdik.
+
+1217
+01:34:05,119 --> 01:34:09,119
+Diyelim ki 256 tane bizim interruptımız var.
+
+1218
+01:34:09,119 --> 01:34:16,119
+Her 256 tane interruptun da 256 tane alt fonksiyonu olmuş olsun.
+
+1219
+01:34:16,119 --> 01:34:21,119
+Diyelim ki böyle bir durumda bunların her birisi belleyin farklı yerlerinde.
+
+1220
+01:34:21,119 --> 01:34:22,119
+Kim bilir nereden başlıyor?
+
+1221
+01:34:22,119 --> 01:34:34,119
+Bilmiyorsun işte bellek'teki bu şeye erişmek için hangi adreste olduğunu bilmek için sanki bir indeks gibi veya kitabın içindekiler sayfası gibi vektör tablosu tamam mı?
+
+1222
+01:34:34,119 --> 01:34:39,119
+Gidiyorsun bakıyorsun vektör tablosundan bellek'te şurada bu interrupt oradan erişiyorsun.
+
+1223
+01:34:39,119 --> 01:34:42,119
+O şekilde bir amacı var.
+
+1224
+01:34:42,119 --> 01:34:46,119
+Tek görevi kesmelerin başlangıç adreslerini tutmak.
+
+1225
+01:34:46,119 --> 01:34:52,119
+Bakın bellekte bellekte fiziksel olarak tutulabilen bir şey bellek.
+
+1226
+01:34:52,119 --> 01:34:54,119
+Rem elinizde tutmuşsunuzdur.
+
+1227
+01:34:54,119 --> 01:34:56,119
+Tutmayan varsa ikinci sınıf öğrencisiniz.
+
+1228
+01:34:56,119 --> 01:34:58,119
+Lütfen şöyle bir rem elinizi alın.
+
+1229
+01:34:58,119 --> 01:34:59,119
+Tutun yani.
+
+1230
+01:34:59,119 --> 01:35:05,119
+Fiziksel adresimiz 20 Byte'dan oluşuyordu.
+
+1231
+01:35:05,119 --> 01:35:08,119
+Biliyorsunuz 80 86'da maksimum 1 Megabyte adres diye biliyorduk.
+
+1232
+01:35:08,119 --> 01:35:38,119
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+
+1233
+01:35:38,119 --> 01:35:44,119
+Her servis adresi, her interuptun adresi iki word ile ifade ediliyor.
+
+1234
+01:35:44,119 --> 01:35:47,119
+Bunu da söyledik. Offset ve kesim adresi olmak üzere.
+
+1235
+01:35:47,119 --> 01:35:50,119
+Yani iki word demek ne demektir?
+
+1236
+01:35:50,119 --> 01:35:54,119
+4 byte demektir. 1024x4 az önce tam tersini yapmıştık.
+
+1237
+01:35:54,119 --> 01:35:59,119
+4x256-1024 bulmuştuk. Burada da işte o işlemin şeyini söylüyor.
+
+1238
+01:35:59,119 --> 01:36:02,119
+1024x4 256 tane kesme var.
+
+1239
+01:36:02,119 --> 01:36:07,119
+Siz kesme yazacağınız zaman, mesela dediniz ki hocam ben kesme yazmaya karar verdim.
+
+1240
+01:36:07,119 --> 01:36:12,119
+Yani neymiş bu iş? Bir görelim ömrü hayatımızda bir kesmemiz olsun.
+
+1241
+01:36:12,119 --> 01:36:16,119
+Şu dünyaya böyle bir hayrat bırakalım, bir kesme yazmış olalım.
+
+1242
+01:36:16,119 --> 01:36:19,119
+İşte yazacağınız kesmeler sizin için ayrılmış.
+
+1243
+01:36:19,119 --> 01:36:26,119
+60 hexde 67 hex arası içerisinde ayrılmış kesmelere siz kendi kodunuzu yazabilirsiniz.
+
+1244
+01:36:26,119 --> 01:36:28,119
+Kendi kesmenizi yazabilirsiniz.
+
+1245
+01:36:29,119 --> 01:36:38,119
+Ya da az önce söylediğim gibi mevcut olan bir servisin yani kesme yordamının yerine bir kesme yazabilirsiniz.
+
+1246
+01:36:38,119 --> 01:36:42,119
+Tamam. Bir kesme yazabilirsiniz.
+
+1247
+01:36:42,119 --> 01:36:45,119
+Ama sıkıntılı şeyler bunlar. Ne demek sıkıntılı şeyler?
+
+1248
+01:36:45,119 --> 01:36:49,119
+Mesela sizin kesme yordamınız bellekte 100 byte yer kaplıyordur.
+
+1249
+01:36:49,119 --> 01:36:53,119
+Yerine koymak istediğiniz 80 byte yer kaplıyordur.
+
+1250
+01:36:53,119 --> 01:36:56,119
+Nasıl sığdıracaksınız? Soru işareti.
+
+1251
+01:36:56,119 --> 01:37:02,119
+Sizin gibi adamlar sığdırır. Artık SMB'li de çok ciddi hakimiyetler elde etmiş durumdasınız.
+
+1252
+01:37:02,119 --> 01:37:04,119
+Nasıl sığdırırsınız?
+
+1253
+01:37:04,119 --> 01:37:09,119
+Kardeşim, komut, jump bilmem ne olur. Gidersin başka bir segmentte.
+
+1254
+01:37:09,119 --> 01:37:12,119
+İstersen 1 milyon byte yaz.
+
+1255
+01:37:12,119 --> 01:37:18,119
+Tekrardan, return ile buraya döndüğünde 80 byte olmasının orijinal komutun bir espersiyonu.
+
+1256
+01:37:18,119 --> 01:37:20,119
+Jump ile zıplayabiliyorsun çünkü.
+
+1257
+01:37:20,119 --> 01:37:24,119
+Siz de zaten ben bu soruyu sorduğumda hemen cevap kafanızda canlanmıştı.
+
+1258
+01:37:24,119 --> 01:37:26,119
+O yüzden tebrik ediyoruz.
+
+1259
+01:37:26,119 --> 01:37:28,119
+Pekala vektör tablosunda nasıl değişiklik yapacağız?
+
+1260
+01:37:28,119 --> 01:37:32,119
+Vektör tablosunda niye değişiklik yapmamız lazım? Başka bir soru.
+
+1261
+01:37:32,119 --> 01:37:34,119
+Pekala değişiklik yapmaya karar verdik.
+
+1262
+01:37:34,119 --> 01:37:36,119
+Nasıl değişiklik yapacağız?
+
+1263
+01:37:36,119 --> 01:37:38,119
+Programcı kendi segmesini yazabiliyor.
+
+1264
+01:37:38,119 --> 01:37:52,119
+Doğal olarak biz kendi segmemizi yazdığımızda gidip tabiki vektör tablosuna o segmentin hangi bellek alanında olduğunu ve o bellek alanında hangi offsette olduğunu ya hangi kod segmentte ve hangi offsette olduğunu söylememiz lazım.
+
+1265
+01:37:52,119 --> 01:38:02,119
+Ama bakın bunlar eğer ki bir nasıl söyleyelim yani bellek denilen şey ramp volatile bir şey.
+
+1266
+01:38:02,119 --> 01:38:04,119
+Ne demek volatile?
+
+1267
+01:38:04,119 --> 01:38:05,119
+Uçucu.
+
+1268
+01:38:05,119 --> 01:38:08,119
+Bilgisayarı kapattığınız anda içerisindeki bütün değerler uçup gider.
+
+1269
+01:38:08,119 --> 01:38:10,119
+Kaybolur.
+
+1270
+01:38:10,119 --> 01:38:16,119
+Ama siz kesme yazmak istiyorsunuz bilgisayarı kapatıp açtığınızda da bu kesmenin hep çalışıyor olması lazım yani.
+
+1271
+01:38:16,119 --> 01:38:21,590
+Bu kesmenin hep kodunu saklanıyor olması lazım.
+
+1272
+01:38:21,590 --> 01:38:22,590
+Nasıl olacak?
+
+1273
+01:38:22,590 --> 01:38:23,590
+Tamam mı?
+
+1274
+01:38:23,590 --> 01:38:24,590
+Önemli hususlardan birisi o.
+
+1275
+01:38:24,590 --> 01:38:29,590
+Var olan bir kesmeden hemen önce devreye girebilecek şekilde bir kesme yazabilirsiniz.
+
+1276
+01:38:29,590 --> 01:38:31,590
+Yani var olan kesmenin koduna gittiniz.
+
+1277
+01:38:31,590 --> 01:38:34,590
+Mesela mouse'u sağa sola hareket ettirmek.
+
+1278
+01:38:34,590 --> 01:38:36,590
+Tamam mı?
+
+1279
+01:38:36,590 --> 01:38:48,590
+Onun hemen önüne hemen önüne siz jump ile beraber zıpladığınız kendi kod segmentini zıpladığınız bir iş yaptınız.
+
+1280
+01:38:49,590 --> 01:38:51,590
+Herhangi bir iş yapabilirsiniz.
+
+1281
+01:38:51,590 --> 01:38:54,590
+Adamın kredi kartı bilgilerinin hepsini bana gönder dediniz.
+
+1282
+01:38:54,590 --> 01:38:58,590
+Adam mouse'u hareket ettirdikçe sürekli kredi kartı bilgilerini gönderir size yani.
+
+1283
+01:38:58,590 --> 01:38:59,590
+Yazdınız.
+
+1284
+01:38:59,590 --> 01:39:04,590
+Ondan sonra tekrardan jump ile beraber adamın kod segmenti kesimine geri döndünüz.
+
+1285
+01:39:04,590 --> 01:39:07,590
+Böyle olunca mouse'u adam hareket ettirdiğinde de hareket eder yani.
+
+1286
+01:39:07,590 --> 01:39:09,590
+Şimdi mesela yeni virüsler artık böyle.
+
+1287
+01:39:09,590 --> 01:39:10,590
+Sen hiç virüsün bulaştığını bilmiyorsun.
+
+1288
+01:39:10,590 --> 01:39:12,590
+Önceden muziplikti.
+
+1289
+01:39:12,590 --> 01:39:14,590
+Mouse'u hareket ettiriyorsun pop-up'lar çıkıyordu.
+
+1290
+01:39:14,590 --> 01:39:18,590
+Veya işte bir şeye tıklıyorsun, tıklanmıyor başka bir şey.
+
+1291
+01:39:18,590 --> 01:39:19,590
+Virüsler böyleydi.
+
+1292
+01:39:19,590 --> 01:39:20,590
+Şimdi adamlar artık akıllandı.
+
+1293
+01:39:20,590 --> 01:39:25,590
+Yani mesela senin bilgisayarını bitcoin madenciliği için kullanıyor adam.
+
+1294
+01:39:25,590 --> 01:39:27,590
+Sen hiç farkında değilsin yani.
+
+1295
+01:39:27,590 --> 01:39:29,590
+Böyle virüs yazmak daha güzel.
+
+1296
+01:39:29,590 --> 01:39:30,590
+Daha iyi yani.
+
+1297
+01:39:30,590 --> 01:39:31,590
+Hiç farkında değilsin.
+
+1298
+01:39:31,590 --> 01:39:35,590
+Sen her entra bastığında bir kod çalışıyor mesela.
+
+1299
+01:39:35,590 --> 01:39:38,590
+İşte adam senin vektör tablomuna girip müdahale etmiş.
+
+1300
+01:39:38,590 --> 01:39:40,590
+Bir kod çalışıyor.
+
+1301
+01:39:41,590 --> 01:39:43,590
+Gel ki gün gelip bu tarz şeyler yapacaksınız.
+
+1302
+01:39:43,590 --> 01:39:48,590
+Veya bir virüs, antivirüs programı geliştiren bir şirkette çalışacaksınız.
+
+1303
+01:39:48,590 --> 01:39:50,590
+Nasıl hani kabaca olduğunu kafanızda canlansın.
+
+1304
+01:39:50,590 --> 01:39:52,590
+Onun için anlatıyorum bunları.
+
+1305
+01:39:52,590 --> 01:39:54,590
+Virüs de yazabilirsiniz yani.
+
+1306
+01:39:54,590 --> 01:39:55,590
+O manada da bir problem yok.
+
+1307
+01:39:55,590 --> 01:39:59,590
+Yani öyle bir arkadaşımız olsa şöyle bilgisayarlar kitlense gurur duysak.
+
+1308
+01:39:59,590 --> 01:40:00,590
+Bizim mezunumuz bu diye.
+
+1309
+01:40:00,590 --> 01:40:02,590
+Bakın bütün ülkeyi felç etti.
+
+1310
+01:40:02,590 --> 01:40:05,590
+Bizim mezunumuz falan diye gurur duysak fena olmaz yani.
+
+1311
+01:40:05,590 --> 01:40:10,590
+Her iki durumda da tabi yani ister kendi kesmenizi yazın.
+
+1312
+01:40:10,590 --> 01:40:16,590
+İsterse var olan bir kesmeyi değiştirecek bir kod parçacı yazın.
+
+1313
+01:40:16,590 --> 01:40:26,590
+Böyle olunca her iki durumda da muhakkak kesme vektör tablosuna yazdığınız şeyi yerleştirmeniz lazım.
+
+1314
+01:40:26,590 --> 01:40:28,590
+Bunun için pekala nasıl bir şey yapıyorsunuz?
+
+1315
+01:40:28,590 --> 01:40:34,590
+Öncelikle kesmenin TSR ile belleye yerleştirilmiş olması gerekir.
+
+1316
+01:40:34,590 --> 01:40:40,590
+Terminate and stay resident.
+
+1317
+01:40:40,590 --> 01:40:41,590
+Tamam mı?
+
+1318
+01:40:41,590 --> 01:40:43,590
+Bununla belleye yerleştiriyorsun.
+
+1319
+01:40:43,590 --> 01:40:44,590
+Niye?
+
+1320
+01:40:44,590 --> 01:40:46,590
+Stay resident olması lazım.
+
+1321
+01:40:46,590 --> 01:40:50,590
+Yoksa açıp kapattığın anda volatile.
+
+1322
+01:40:50,590 --> 01:40:51,590
+Uçuyor yani gidiyor.
+
+1323
+01:40:51,590 --> 01:40:58,590
+O yüzden TSR ile muhakkak yazdığınız kesmenin belleye yerleştirilmiş olması lazım.
+
+1324
+01:40:58,590 --> 01:41:03,590
+Yine yazılan kodun yazdığınız kesme bellekte TSR ile yerleştirilmiş.
+
+1325
+01:41:03,590 --> 01:41:05,590
+Yani hangi adresine yerleştirdin?
+
+1326
+01:41:05,590 --> 01:41:14,590
+Offset ve kesim adreslerini vektör tablosunda ilgili kesimlere ilgili alanlara yazman gerekiyor.
+
+1327
+01:41:14,590 --> 01:41:23,590
+Bu 60'la 67'ci şeyler bize ayrıldığına göre o alanlardan birine gidip vektör tablosunda yazman gerekiyor.
+
+1328
+01:41:23,590 --> 01:41:28,590
+Tabi kesmeler disabled da nedenler ona edilebiliyor.
+
+1329
+01:41:28,590 --> 01:41:33,590
+Mesela siz bir kesme yazdınız.
+
+1330
+01:41:33,590 --> 01:41:37,590
+Yazdığınız kesmeyi şu iki numaralı kesme olarak yazdınız.
+
+1331
+01:41:37,590 --> 01:41:39,590
+Ne demek?
+
+1332
+01:41:39,590 --> 01:41:44,590
+Hali hazırda olan bir kesmenin yerine siz başka bir şey yaptınız yani başka bir şey yazdınız.
+
+1333
+01:41:44,590 --> 01:41:49,590
+Yazdıktan sonra bu orijinal kesmeyi tekrar jump ile zıplayıp çalıştırabilirsiniz.
+
+1334
+01:41:49,590 --> 01:41:51,590
+Ya da çalıştırmayabilirsiniz.
+
+1335
+01:41:51,590 --> 01:41:52,590
+Tamam.
+
+1336
+01:41:52,590 --> 01:41:57,590
+Çalıştırmazsanız yani o işlev doğru bir şekilde yerine getirilemez.
+
+1337
+01:41:57,590 --> 01:42:00,590
+Sadece sizin işleriniz yerine getirilebilir.
+
+1338
+01:42:00,590 --> 01:42:03,590
+Hakikaten böyle olsun da istiyor olabilirsiniz bakın.
+
+1339
+01:42:03,590 --> 01:42:09,590
+Yani mouse'un sol tuşuna bastığında Spotify açılsın.
+
+1340
+01:42:09,590 --> 01:42:11,590
+İstiyor olabilirsin yani böyle bir şey.
+
+1341
+01:42:11,590 --> 01:42:16,590
+İstiyorsan o kodu oraya yerleştiriyorsun ve şey yapmıyorsun.
+
+1342
+01:42:16,590 --> 01:42:19,590
+O nedenler ona eski kodu kullanmıyorsun.
+
+1343
+01:42:19,590 --> 01:42:20,590
+Disable ediyorsun.
+
+1344
+01:42:20,590 --> 01:42:28,590
+Etmezsen mouse'un sol tuşuna bastığında hem Spotify açılır hem de mouse'un sol tuşunun işlevi neyse o yerine getirilir.
+
+1345
+01:42:28,590 --> 01:42:31,590
+Değiştirilecek kesmenin adresini saklaman gerekiyor.
+
+1346
+01:42:31,590 --> 01:42:32,590
+Ne demek istiyoruz?
+
+1347
+01:42:32,590 --> 01:42:42,590
+Mesela mouse'un sol tuşuna basma kesmesinin adresini vektör tablosundaki o 4 byte'lık adresi gidip bir yerde saklıyorsun.
+
+1348
+01:42:42,590 --> 01:42:44,590
+Kaybetmek istemiyorsun çünkü onu.
+
+1349
+01:42:44,590 --> 01:42:45,590
+Tamam mı?
+
+1350
+01:42:45,590 --> 01:42:46,590
+Gidip bir yerde saklıyorsun.
+
+1351
+01:42:46,590 --> 01:42:49,590
+Kaybetmek isteye de bilirsin ama bak bu ikisi farklı şeyler.
+
+1352
+01:42:49,590 --> 01:42:56,590
+Kaybetmek istemediğin durumda gidip onu bir yerde saklamam gerekiyor.
+
+1353
+01:42:56,590 --> 01:42:59,590
+Ardından mesela şöyle bir interrupt çağırdın.
+
+1354
+01:42:59,590 --> 01:43:02,590
+Interrupt 21 fonksiyon 15 diyelim ki.
+
+1355
+01:43:02,590 --> 01:43:03,590
+Çağırmış oldun.
+
+1356
+01:43:03,590 --> 01:43:09,590
+Bu interrupt vektörünün set edilmesiyle alakalı nedenler onun bir durum.
+
+1357
+01:43:09,590 --> 01:43:15,590
+Kesme kodunun adresini vektör tablosuna yazmak için kullandığın bir interrupt da var bak.
+
+1358
+01:43:16,590 --> 01:43:32,590
+21 numaralı interrupt'ın 15 numaralı fonksiyonunu çağırarak senin interrupt'ın kod segment ve instruction pointer değerini gidip kesme vektör tablosuna yazabiliyorsun.
+
+1359
+01:43:32,590 --> 01:43:47,590
+Ardından tabi başlangıçta kesmelere bu işlemi gerçekleştirirken bu bir transaction şeklinde yani bölünmez bir işlem şeklinde olsun istediğinden ötürü kesmelere disable ederek olaya başlıyorsun.
+
+1360
+01:43:47,590 --> 01:43:55,590
+Sonradan da tabi bu işlem sonlandıktan sonra bu işlem gerçekleştirirken hiç kesme almasın programı istiyorsun.
+
+1361
+01:43:55,590 --> 01:44:00,590
+Bu işlem sonlandıktan sonraysa kesmelere izin verebiliyorsun tabi.
+
+1362
+01:44:00,590 --> 01:44:05,590
+Kendi kesmemizi yazmışsak evet e-return ile dönüyoruz bunu söylemiştik.
+
+1363
+01:44:05,590 --> 01:44:17,590
+Orijinal kesmeden önce çalışmışsak yani biz halihazada var olan bir kesmeden hemen önce çalışacak şekilde organize etmişsek jump komutlarıyla işte sağa sola zıplayabiliyoruz.
+
+1364
+01:44:17,590 --> 01:44:20,590
+Akışı o şekilde devam ettirebiliyoruz.
+
+1365
+01:44:22,590 --> 01:44:27,590
+Evet biz mesela şöyle bir şey diyelim bir nasıl söyleyelim.
+
+1366
+01:44:27,590 --> 01:44:39,590
+Bir kesme yazıyoruz ve sadece bir kere çalışsın o çalıştıktan sonra tekrardan her şey eskisi gibi olmaya devam etsin istiyoruz.
+
+1367
+01:44:39,590 --> 01:44:45,590
+Ne demek istiyorum mesela mouse'un sol tuşuna basılma kesmesi yerine kendi kesmemizi yerleştiriyoruz.
+
+1368
+01:44:45,590 --> 01:44:53,590
+Ne o sistemde kayıtlı bütün kredi kartı bilgilerini gönder tamam mı kesmenin adı bu sistemde kayıtlı bütün kredi kartı bilgilerini gönder.
+
+1369
+01:44:53,590 --> 01:45:00,590
+Adam bir kere sol tuşa basıyor bütün bilgiler sana geldi ulan sol tuş çalışmıyor diyor bir kere daha bastığında artık çalışmaya başlıyor.
+
+1370
+01:45:00,590 --> 01:45:23,289
+Ondan sonra hep çalışıyor böyle bir kere çalışsın istiyorsanız pardon ve orijinal bir kesmenin yerine yazmışsanız eğer bunu kullanım tamamlandıktan sonra orijinal kesmenin adreslerinin vekter tablosunda yine doğru yere yerleştirmeniz lazım kıymetli arkadaşlar.
+
+1371
+01:45:23,289 --> 01:45:31,109
+Sorusu olan var mı burada?
+
+1372
+01:45:32,109 --> 01:45:34,109
+Yok devam ediyoruz.
+
+1373
+01:45:34,109 --> 01:45:37,579
+Hocam sesim geliyor mu?
+
+1374
+01:45:37,579 --> 01:45:39,579
+Evet geliyor [öğrenci] sor.
+
+1375
+01:45:39,579 --> 01:45:45,579
+Hocam ben nerede kaydettiğimizi anlamadım nasıl kaybetmiyoruz o kaydettiğimiz değerleri.
+
+1376
+01:45:45,579 --> 01:45:50,579
+TSR'la yazıyorsun işte bunun için bir ekstradan devre elemanı var yani donanım var.
+
+1377
+01:45:50,579 --> 01:45:54,579
+TSR'la yazdığında state resident oluyor.
+
+1378
+01:45:54,579 --> 01:45:55,579
+Tamam bir geri dönelim.
+
+1379
+01:45:55,579 --> 01:46:03,579
+Mesela sıfırlanmıyor mu direkt bilgisayarı kapattığımızda zaten ya orada tutulan.
+
+1380
+01:46:03,579 --> 01:46:12,909
+Sıfırlanmıyor bununla yazarsan sıfırlanmıyor arkadaşlar bununla yazarsan sıfırlanmıyor.
+
+1381
+01:46:12,909 --> 01:46:14,909
+Belli'ye o şekilde yazabiliyorsun.
+
+1382
+01:46:14,909 --> 01:46:18,539
+Anladım hocam teşekkür ediyorum.
+
+1383
+01:46:18,539 --> 01:46:20,539
+Evet ben teşekkür ediyorum.
+
+1384
+01:46:20,539 --> 01:46:28,069
+Şimdi pekala interop servis programı yazarken nelere dikkat etmemiz lazım.
+
+1385
+01:46:29,069 --> 01:46:34,069
+Öncelikle kesme kodunun içerisine girildiğinde kesmelere izin vermemiz güzel olur.
+
+1386
+01:46:34,069 --> 01:46:41,069
+Yani bu ne demek bizim yazdığımız kesme de başka kesmelere olanak tanıyabilir.
+
+1387
+01:46:41,069 --> 01:46:47,069
+Bir kesme kodu çalışırken bile o da interop da maruz kalabilir kesilebilir yani.
+
+1388
+01:46:47,069 --> 01:46:50,069
+Ama kesilmesini istemiyorsanız izin vermemeniz de lazım.
+
+1389
+01:46:50,069 --> 01:46:54,069
+Burada sadece hani böyle yapsanız daha güzel olur şeklinde bir uyarı bu.
+
+1390
+01:46:54,069 --> 01:46:58,069
+Kesme içerisinde yazmaçların bir önceki değerlerinin korunması gerekiyor.
+
+1391
+01:46:58,069 --> 01:47:00,069
+Bakın bunu tekrar tekrar vurguluyorum.
+
+1392
+01:47:00,069 --> 01:47:02,069
+Tekrar tekrar vurguladığımız şeyleri genelde sınavda sorarım.
+
+1393
+01:47:02,069 --> 01:47:04,069
+Onu da söylemek istiyorum.
+
+1394
+01:47:04,069 --> 01:47:10,069
+Muhakkak ve muhakkak kesmenin içerisine girdiğinizde yazmaçların değerini sitenin içerisine atıyorsunuz.
+
+1395
+01:47:10,069 --> 01:47:18,069
+Kullandığınız yazmaçların değerini sadece en son kesmeden çıkmadan önce de o yazmaçların değerlerini siteden geri çekiyorsunuz.
+
+1396
+01:47:18,069 --> 01:47:21,069
+Kesme programı birden fazla kesim kullanacak ise
+
+1397
+01:47:21,069 --> 01:47:25,069
+değerler kesmeye gitmeden önce ilgili yazmaçlara yazılması gerekiyor.
+
+1398
+01:47:25,069 --> 01:47:33,069
+Birden fazla kesme mesela kesim kullanacak işte data segment ve ekstra segment falan kullanıyorsanız
+
+1399
+01:47:33,069 --> 01:47:44,069
+zıplamadan önce o interopta gitmeden önce o interop çağrılmadan önce ilgili kesim değerlerini set etmeniz gerekiyor arkadaşlar.
+
+1400
+01:47:44,069 --> 01:47:49,069
+Eğer donanım kesmesi yerine BIOS geçecek kesme yazılacaksa
+
+1401
+01:47:49,069 --> 01:47:55,069
+işletim sistemine ait DOS fonksiyonlarından, kesmelerinden hiçbirisini kullanamıyorsunuz.
+
+1402
+01:47:55,069 --> 01:47:58,069
+Kesmelerin içerisinde de kesme çağırabiliyorsunuz.
+
+1403
+01:47:58,069 --> 01:48:01,069
+Yani bir interop fonksiyonu olduğunu düşünün.
+
+1404
+01:48:01,069 --> 01:48:05,069
+O interop fonksiyonu içerisinde başka bir interop fonksiyonu çağırabiliyorsunuz.
+
+1405
+01:48:05,069 --> 01:48:13,069
+Ama BIOS donanım kesmesi olduğu için BIOS'un üzerine DOS değil başka işletim sisteminde yüklenebilir.
+
+1406
+01:48:13,069 --> 01:48:16,069
+O yüzden BIOS DOS kesmelerini tanımaz.
+
+1407
+01:48:16,069 --> 01:48:21,069
+Tam tersi olur DOS BIOS kesmelerini tanır ama BIOS DOS kesmelerini tanımaz.
+
+1408
+01:48:21,069 --> 01:48:29,069
+O yüzden siz BIOS kesmelerinde bir değişiklik yapacaksanız DOS kesmelerini kullanmamalısınız.
+
+1409
+01:48:29,069 --> 01:48:35,069
+Kesme programı, kesmenin kodu bakın vektor tablosuna yerleştirilmesini kastetmiyorum.
+
+1410
+01:48:35,069 --> 01:48:40,069
+Kesmenin programı TSR ile belleye yerleştirilmesi gerekiyor.
+
+1411
+01:48:40,069 --> 01:48:42,069
+Onu da söylemiş olduk zaten.
+
+1412
+01:48:42,069 --> 01:48:53,069
+Tabii bu 8086 için artık yeni yeni çeşitli işlemcilerde farklı farklı varyasyonlar o TSR benzeri şeyler vardır yani.
+
+1413
+01:48:53,069 --> 01:48:59,069
+Yığına veri göndermişsek yığının içerisinde çeşitli veriler olabilir.
+
+1414
+01:48:59,069 --> 01:49:02,069
+Yığını bulduğumuz gibi bırakmamız lazım muhakkak.
+
+1415
+01:49:02,069 --> 01:49:18,069
+O yüzden yığına veri koyduysak dönmeden önce muhakkak ve muhakkak yığından o verileri temizleyerek temiz bir program, stek alanı bırakıyoruz arka tarafta.
+
+1416
+01:49:18,069 --> 01:49:22,069
+Pekala kesmeleri kullanırken neleri bilmemiz lazım.
+
+1417
+01:49:22,069 --> 01:49:30,069
+Sıfır sıfır hex ile bir F hex arasındaki kesmeler bios kesmeler arkadaşlar.
+
+1418
+01:49:30,069 --> 01:49:34,069
+İki sıfır hex ile iki F hex arasındakiler de DOS kesmeler.
+
+1419
+01:49:34,069 --> 01:49:45,069
+Bizim kendi numaralı yani şuradan şuraya kadar numaralı olanlar bios, şuradan şuraya kadar olanlar da DOS.
+
+1420
+01:49:45,069 --> 01:49:49,069
+Kesme çağırırken pekala ya hocam bu kesmeler anlatıyoruz da nasıl çağıracağız?
+
+1421
+01:49:49,069 --> 01:49:59,069
+Bakın şu şekilde çağırıyorsunuz her bir kesmenin ayrıca bir fonksiyonu olabilir dedik ya fonksiyonun numarasını AH'a yazıyorsunuz.
+
+1422
+01:49:59,069 --> 01:50:08,069
+Move AH virgül 17 hex dediğinizde 17 hexade simallik o fonksiyonu AH'ın içerisinde yazdınız.
+
+1423
+01:50:08,069 --> 01:50:14,069
+Ama hocam yani interrupt'ın numarası kaç? Tamam fonksiyonunu yazdık da interrupt'ın numarası kaç?
+
+1424
+01:50:14,069 --> 01:50:20,069
+İşte eğer varsa bir de her bir fonksiyonun alt fonksiyonu da olabiliyor.
+
+1425
+01:50:20,069 --> 01:50:25,069
+Her bir fonksiyonun alt fonksiyonu da oluyor. Kitapta onu incelerseniz görürsünüz.
+
+1426
+01:50:25,069 --> 01:50:27,069
+Onu da alenin içine koyuyorsunuz.
+
+1427
+01:50:27,069 --> 01:50:32,069
+Onu da alenin içine koyuyorsunuz ve interrupt komutunu çağırıyorsunuz.
+
+1428
+01:50:32,069 --> 01:50:37,069
+Interrupt 21. İşte interrupt'tan sonra o 21 yazıyorsunuz ya o da interrupt'ın kodu.
+
+1429
+01:50:37,069 --> 01:50:40,069
+Şu aradaki o kod değeri 21.
+
+1430
+01:50:41,069 --> 01:50:46,069
+Interrupt 21. Alt fonksiyonunu bu komutu çağırmadan önce move'la AH'e koydunuz.
+
+1431
+01:50:46,069 --> 01:50:51,069
+Fonksiyonunu ve o fonksiyonunda alt fonksiyonu varsa onu da AL'ye koydunuz.
+
+1432
+01:50:51,069 --> 01:50:54,069
+Move'a koyuyorsunuz yani. Tamam?
+
+1433
+01:50:54,069 --> 01:50:57,069
+AH ve AL burada bizim için önem arz ediyor.
+
+1434
+01:50:57,069 --> 01:51:01,069
+Mesela move AH virgül 1 interrupt 21.
+
+1435
+01:51:01,069 --> 01:51:08,069
+21 numaralı interrupt'ın 1 numaralı fonksiyonunu bu şekilde çağırabilirsiniz.
+
+1436
+01:51:08,069 --> 01:51:13,069
+O fonksiyon ne işlem yapıyorsa o işlemi elde etmiş oluyorsunuz böylece.
+
+1437
+01:51:13,069 --> 01:51:17,380
+Evet. Sorusu olan var mı?
+
+1438
+01:51:17,380 --> 01:51:26,609
+Buraya kadar. Bununla ilgili bir ödeviniz olacak muhtemelen interrupt'larla ilgili.
+
+1439
+01:51:26,609 --> 01:51:28,609
+Aklınızda bulunsun. Şimdiden söylemiş olalım.
+
+1440
+01:51:28,609 --> 01:51:31,609
+İkinci ödev bununla ilgili olabilir.
+
+1441
+01:51:31,609 --> 01:51:37,609
+Evet. Sorusu olan yoksa bugünkü dersimiz bu kadar arkadaşlar.
+
+1442
+01:51:37,609 --> 01:51:40,609
+Katılımlarınız için teşekkür ediyoruz.
+
+1443
+01:51:40,609 --> 01:51:44,609
+Önümüzdeki hafta görüşmek ümidiyle diyoruz.
+
+1444
+01:51:44,609 --> 01:51:48,609
+Hocam hasta mısınız? Geçmiş olsun bu arada.
+
+1445
+01:51:48,609 --> 01:51:50,609
+Çok öksürüyoruz ya.
+
+1446
+01:51:50,609 --> 01:51:52,609
+Çok teşekkürler [öğrenci].
+
+1447
+01:51:52,609 --> 01:51:55,609
+Ya evet ben kışın böyle oluyor ya. Bir öksürük bir şey.
+
+1448
+01:51:55,609 --> 01:51:58,609
+Her kış birkaç ay devam ediyor böyle.
+
+1449
+01:51:58,609 --> 01:52:00,609
+Öksürüyorum yani.
+
+1450
+01:52:00,609 --> 01:52:03,609
+COVID değil ama yani COVID olmadan da öksürülebiliyor.
+
+1451
+01:52:03,609 --> 01:52:05,609
+Fark etmişsinizdir. Yıllardır.
+
+1452
+01:52:05,609 --> 01:52:06,609
+Evet hocam.
+
+1453
+01:52:06,609 --> 01:52:08,609
+Teşekkür ederim.
+
+1454
+01:52:09,609 --> 01:52:11,609
+Sağ olun.
+
+1455
+01:52:11,609 --> 01:52:14,609
+Teşekkürler. Bir soru vardı sanki.
+
+1456
+01:52:14,609 --> 01:52:18,109
+Başka bir arkadaş müzik.
+
+1457
+01:52:18,109 --> 01:52:20,109
+[öğrenci] sor.
+
+1458
+01:52:20,109 --> 01:52:23,109
+21 numaranın birinci fonksiyonuydu değil mi hocam?
+
+1459
+01:52:23,109 --> 01:52:26,109
+Evet. 21 numaranın birinci fonksiyonu.
+
+1460
+01:52:26,109 --> 01:52:28,109
+Gösteriyim bir daha. Slide açayım mı?
+
+1461
+01:52:28,109 --> 01:52:30,109
+Tamam.
+
+1462
+01:52:30,109 --> 01:52:38,739
+21 numaranın birinci fonksiyonunu bu şekilde çağırıyoruz.
+
+1463
+01:52:38,739 --> 01:52:40,739
+İkinci fonksiyon. Mesela şöyle de olabilir.
+
+1464
+01:52:40,739 --> 01:52:46,739
+21 numaralı kesmenin 17 numaralı fonksiyonunun
+
+1465
+01:52:46,739 --> 01:52:49,739
+2 numaralı alt fonksiyonunu çağırmak istediğinde
+
+1466
+01:52:49,739 --> 01:52:55,739
+o zaman move al,2 move ah,17 int rap 21 hex demen gerekiyor.
+
+1467
+01:52:55,739 --> 01:53:02,310
+Tamam.
+
+1468
+01:53:02,310 --> 01:53:04,310
+Evet.
+
+1469
+01:53:04,310 --> 01:53:06,310
+Ben de teşekkür ediyorum arkadaşlar.
+
+1470
+01:53:06,310 --> 01:53:09,310
+Haftaya görüşürüz. Kendinize iyi bakın. Sağlıcakla kalın diyorum.

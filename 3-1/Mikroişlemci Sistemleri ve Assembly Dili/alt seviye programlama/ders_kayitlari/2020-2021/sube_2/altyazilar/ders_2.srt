@@ -1,0 +1,1868 @@
+1
+00:09:19,659 --> 00:09:22,659
+Evet, günaydın arkadaşlar.
+
+2
+00:09:22,659 --> 00:09:27,659
+Bir taraftan diğer arkadaşlarımız da katıda dursunlar.
+
+3
+00:09:27,659 --> 00:09:29,659
+Biz başlayalım.
+
+4
+00:09:29,659 --> 00:09:36,659
+Şimdi geçen hafta en son fiziksel adresleri falan anlatmıştık diye hatırlıyorum.
+
+5
+00:09:36,659 --> 00:09:39,659
+Evet, fiziksel adresleri anlatmıştık.
+
+6
+00:09:39,659 --> 00:09:49,659
+Bu hafta bu segmentlerle göreli konumların birbirlerine eşlenmesiyle başlayalım.
+
+7
+00:09:49,659 --> 00:09:55,629
+Share screen.
+
+8
+00:09:55,629 --> 00:09:58,629
+Tabii geçen hafta ile ilgili sorusu olan varsa bu arada sorabilir.
+
+9
+00:09:58,629 --> 00:10:06,629
+Daha sonradan bakıp çalışmış olup kafasında sorusu olan varsa onlar dile getirebilirler sorularını.
+
+10
+00:10:06,629 --> 00:10:19,360
+Evet, şimdi geçen hafta hatırlarsanız segmented memory management yapılıyor demiştik.
+
+11
+00:10:19,360 --> 00:10:26,360
+Segmented memory management da memory yani bellek segmentleri ayrılıyordu.
+
+12
+00:10:26,360 --> 00:10:31,360
+Her bir segment 64K boyutunda olabiliyordu maksimum.
+
+13
+00:10:31,360 --> 00:10:43,360
+Ve bu farklı segmentler yani kod segment, data segment ve stack segment olmak üzere bizim kodumuzu oluşturan üç tane segment vardı.
+
+14
+00:10:43,360 --> 00:10:50,360
+Bu segmentlerle beraber kullandığımız bizim registrler var.
+
+15
+00:10:50,360 --> 00:10:55,360
+Yani işte üç farklı segment için kullanılabilecek registrler var.
+
+16
+00:10:55,360 --> 00:10:57,360
+Onlara böyle ikili diyoruz.
+
+17
+00:10:57,360 --> 00:10:59,360
+Neler bunlar onları görelim.
+
+18
+00:10:59,360 --> 00:11:05,360
+Kod kesimi için eğer ki kod kesimindeyseniz kod kesimi demek ne demek?
+
+19
+00:11:05,360 --> 00:11:14,360
+Memori de yani bir belleğin içerisinde ne kadar şuradan şeyi seçebilirsek güzel olacak.
+
+20
+00:11:14,360 --> 00:11:26,379
+Kalemin rengini en azından şöyle söyleyelim siz memorinin içerisindesiniz şu şekilde.
+
+21
+00:11:27,379 --> 00:11:29,379
+Kalibrasyonda bir sıkıntı var herhalde.
+
+22
+00:11:29,379 --> 00:11:37,379
+Memorinin içerisindesiniz ve şurası diyelim ki bizim istediğimiz segment olmuş olsun.
+
+23
+00:11:37,379 --> 00:11:40,379
+Segment hatta kod segment olmuş olsun.
+
+24
+00:11:40,379 --> 00:11:42,379
+CS diyelim o yüzden biz buna.
+
+25
+00:11:42,379 --> 00:11:47,379
+Pekala kod segment şu kod segment numarası mesela nasıl bir şey olacak?
+
+26
+00:11:47,379 --> 00:11:52,379
+Sıfır, A, on iki, B, hexadesimal.
+
+27
+00:11:52,379 --> 00:11:56,379
+Yani dört haneli bir sayı olacak.
+
+28
+00:11:56,379 --> 00:12:00,379
+Geçen hafta belki söylemeyi unutmuşsak bu hafta tekrar üstünden geçelim.
+
+29
+00:12:00,379 --> 00:12:10,379
+Hexadesimal sayılarda eğer sayı harf ile başlıyorsa yani rakam değil de harf ile başlıyorsa başına bir sıfır koyulur.
+
+30
+00:12:10,379 --> 00:12:16,379
+Bir sayının başına sıfır koyulması o sayının değerinin ne olduğunu değiştirmez.
+
+31
+00:12:16,379 --> 00:12:24,379
+Sizinde bildiğiniz gibi ama başına sıfır koyduğumuzda onu bir hexadesimal sayı olarak göreceğimizi söyleriz.
+
+32
+00:12:24,379 --> 00:12:27,379
+Başına sıfır koymazsaksa bu ne manaya gelir?
+
+33
+00:12:27,379 --> 00:12:34,379
+A, on iki, B, H isminde bir değişkenimiz olacağı manasına gelir.
+
+34
+00:12:34,379 --> 00:12:45,379
+A ile başlayanları değişkenlerden ayırmak için başına sıfır koyuyoruz ve değişkenlerde bildiğiniz üzere naming kuralları gereği rakamla başlayamıyor.
+
+35
+00:12:45,379 --> 00:12:53,379
+Şimdi kod segment RAM'in içerisinde RAM 1 MB boyutunda bir alan olduğunu düşünelim.
+
+36
+00:12:53,379 --> 00:13:02,379
+RAM'in içerisinde bir yer ve tam olarak RAM'in şurasında şu an kod yani bütün o alanda şurasında ilerliyor.
+
+37
+00:13:02,379 --> 00:13:12,379
+İşte burayı gösteren register'da instruction pointer yani kod segment ve instruction pointer ikisini bir arada kullanınca
+
+38
+00:13:12,379 --> 00:13:18,379
+tam olarak RAM'de neredeyiz oraya erişiyoruz yani şuraya erişiyoruz.
+
+39
+00:13:18,379 --> 00:13:21,379
+Pekala buranın fiziksel adresini nasıl buluyoruz?
+
+40
+00:13:21,379 --> 00:13:32,379
+İşte geçen hafta anlatmıştık kod segment çarpı 16 artı instruction pointer değeriyle beraber bizim tam olarak kodumuz Berlek'te nerede?
+
+41
+00:13:32,379 --> 00:13:38,379
+Onun fiziksel adresini de bu şekilde bulabiliyoruz.
+
+42
+00:13:38,379 --> 00:13:52,379
+Şimdi bir diğeri yığın kesimi bizim yazacağımız temelde iki farklı tip program olacak bir EXE tipi program bir de COM tipi program bunları ilerleyen haftalarda görüyor olacağız.
+
+43
+00:13:52,379 --> 00:14:00,379
+COM tipi programda bütün segmentler bir arada toplanacak ama biz bunların ayrı ayrı olduğu EXE tipi programı düşünelim.
+
+44
+00:14:00,379 --> 00:14:10,379
+Yani şurası bizim kod segmentimiz ise aşağılarda bir yerde veya yukarıda herhangi bir yerde bir de stack segment olacak.
+
+45
+00:14:10,379 --> 00:14:18,379
+Yine o stack segmentinde o segmentin yani şu stack segmentinde bir pointer olacak ona da biz stack pointer diyoruz.
+
+46
+00:14:18,379 --> 00:14:32,379
+Biz ekstradan stack pointer nasıl çalıştığını anlattık mı bu arada bilmiyorum ama onu da belki bir sonraki sunuma geçtiğimizde anlatalım.
+
+47
+00:14:32,379 --> 00:14:42,379
+Stack pointer da stack segmentin tam olarak hangi artık adresinde olduğunu offset diyelim bunu offsetinde olduğunu söylüyor.
+
+48
+00:14:42,379 --> 00:14:52,379
+Stack pointer ile base pointer stack segment için kullanılan iki tane görüyorsunuz iki tane register.
+
+49
+00:14:52,379 --> 00:15:04,379
+Stack segment kısmı last in first out şeklinde çalışıyor hatta dilerseniz vakti gelmişken kısaca bir anlatalım size onu.
+
+50
+00:15:04,379 --> 00:15:14,379
+Şimdi şu bizim stack segmentimiz olmuş olsun hemen bakın boyutlarının yanına yazıyorum 0.15.
+
+51
+00:15:14,379 --> 00:15:26,379
+0.15 ise şu nasıl bir boyut arkadaşlar vörtlük bir boyut yani 2 byte lık bir boyut yani bizim mimarimiz zaten 16 bitti.
+
+52
+00:15:26,379 --> 00:15:36,379
+Bütün registerlerimizin boyutları 16 bitti buraya bir değer içerisine atacağımız zaman bir registerın değerini atabiliyoruz.
+
+53
+00:15:36,379 --> 00:15:44,379
+Şimdi isteğin içerisine biz şu şekilde kullanacağımız push komutuyla değerler atabiliyoruz.
+
+54
+00:15:44,379 --> 00:15:58,379
+Mesela ax register'ın değerini atmış olalım ardından vört tanımlı sayı tamam yazamadık sayı vört değişkenini değerini isteğe atmış olalım.
+
+55
+00:15:58,379 --> 00:16:12,379
+Ardından bir tane işte hexadecimal sayı atmış olalım isteğin içerisine görselleştirirken farklı şeyler bir şekilde atılabiliyor onu görün diye söylüyorum.
+
+56
+00:16:12,379 --> 00:16:16,379
+Ardından yine bx register'ın değerini atmış olalım.
+
+57
+00:16:16,379 --> 00:16:30,379
+Şimdi stack segment şu şekilde ilerliyor başlangıçta gösterdiği nokta şurası diyelim ki stack segmentimizin bizim için adresi adresi demeyin boyutundan gidelim daha güzel olsun.
+
+58
+00:16:30,379 --> 00:16:36,379
+28 hex olarak boyutunu başlangıçta belirliyor olalım tamam.
+
+59
+00:16:36,379 --> 00:16:38,379
+Biz bunu program içerisinde belirleyebiliyoruz.
+
+60
+00:16:38,379 --> 00:16:40,379
+28 hex demek ne demek?
+
+61
+00:16:40,379 --> 00:17:02,379
+Yani şimdi bu 28 decimal değil 16'lık tabanda olduğu için 2 çarpı şurada 10'la değil de 16 ile çarpacağız 16 artı 8 yani bizim decimal manasında anladığımız değer 40 tamam mı?
+
+62
+00:17:02,379 --> 00:17:12,380
+Atacağımız her bir değerse içerisine bakın 2 byte yani bölü 2 eşittir 20 böyle bir soru sorarsak mesela cevabını nasıl hesaplamanız gerektiğini gördünüz.
+
+63
+00:17:12,380 --> 00:17:22,380
+Yani 28 hexadecimal boyutundaki bir isteğin içerisine kaç tane maksimum kaç tane değer atabilirim sorusunun cevabı 20.
+
+64
+00:17:22,380 --> 00:17:25,380
+Bak biz 5 tanesini atmış olduk.
+
+65
+00:17:25,380 --> 00:17:30,380
+Şimdi şunu şu tarafa alayım oraya doldurduğun için 28 hex adres şurasıydı.
+
+66
+00:17:30,380 --> 00:17:35,380
+İçerisine AX registerını attınız artık şurayı göstermeye başladı.
+
+67
+00:17:35,380 --> 00:17:40,380
+Doğal olarak boyut artık ne 26 hex 2-2 azalıyor yani.
+
+68
+00:17:40,380 --> 00:17:41,380
+Niye?
+
+69
+00:17:41,380 --> 00:17:43,380
+Çünkü Wordtip'in de organize edilmiş durumda site.
+
+70
+00:17:43,380 --> 00:17:56,380
+Bir tane daha attınız 24 hex bir tane daha attınız 22 hex bir tane daha attınız 20 hex bir tane daha atsaydınız veya atalım onu da görelim.
+
+71
+00:17:57,380 --> 00:18:01,380
+Bir tane daha atsaydınız ne olacaktı?
+
+72
+00:18:01,380 --> 00:18:06,380
+Yani 20'den 2 çıkartacağız ama hexadecimal olarak 2 çıkartacağız.
+
+73
+00:18:06,380 --> 00:18:15,380
+Bir E değil mi E 14'tu 14 bu da 16 30 eder.
+
+74
+00:18:15,380 --> 00:18:19,380
+Şurası 32'de 32'den 2 çıkar 14 bir E hexadecimal.
+
+75
+00:18:19,380 --> 00:18:21,380
+Sitek şimdi bu şekilde çalışıyor.
+
+76
+00:18:21,380 --> 00:18:24,380
+Sitein içerisine sürekli bir şeyler attınız.
+
+77
+00:18:24,380 --> 00:18:27,380
+1 2 3 4 5 tane şu an değerimiz var.
+
+78
+00:18:27,380 --> 00:18:28,380
+Sitein içerisinde.
+
+79
+00:18:28,380 --> 00:18:35,380
+Sitein içerisinden veri almak için de kullanacağımız komut pop arkadaşlar.
+
+80
+00:18:35,380 --> 00:18:37,380
+İlk attığımız register hangisi?
+
+81
+00:18:37,380 --> 00:18:38,380
+Değer hangisi?
+
+82
+00:18:38,380 --> 00:18:39,380
+AX sonra cyber.
+
+83
+00:18:39,380 --> 00:18:44,380
+Ama push da atıyorduk biz bunları popla çekerken ise en üstekini çekiyoruz.
+
+84
+00:18:44,380 --> 00:18:45,380
+Bunu çekeceğiz.
+
+85
+00:18:45,380 --> 00:18:47,380
+Bu çekildikten sonra bunu çekeceğiz.
+
+86
+00:18:47,380 --> 00:18:49,380
+Bu çekildikten sonra bunu çekeceğiz.
+
+87
+00:18:49,380 --> 00:18:54,380
+Yani bir kutunun içerisinde kitaplar dolu düşünün bu şekilde.
+
+88
+00:18:54,380 --> 00:18:55,380
+Bir kutumuz var.
+
+89
+00:18:55,380 --> 00:18:56,380
+Bir kutumuz var.
+
+90
+00:18:56,380 --> 00:18:58,380
+Kitaplar bu şekilde dolu.
+
+91
+00:18:58,380 --> 00:19:05,380
+Siz en alttaki AX kitabını okumak için almak için oradan ne yapmanız lazım?
+
+92
+00:19:05,380 --> 00:19:09,380
+Bütün bu üstündekileri çıkartmanız sonra AX'i almanız lazım.
+
+93
+00:19:09,380 --> 00:19:10,380
+Bu şekilde çalışıyor.
+
+94
+00:19:10,380 --> 00:19:12,380
+Yani neydi?
+
+95
+00:19:12,380 --> 00:19:14,380
+Last in first out son giren ne?
+
+96
+00:19:14,380 --> 00:19:16,380
+CX ilk çıkıyor.
+
+97
+00:19:17,380 --> 00:19:20,380
+Veya first in last out.
+
+98
+00:19:20,380 --> 00:19:22,380
+İlk giren en son çıkıyor.
+
+99
+00:19:22,380 --> 00:19:24,380
+Bu şekilde çalışıyor.
+
+100
+00:19:24,380 --> 00:19:26,380
+Sitein çalışma yapısı LiPo.
+
+101
+00:19:26,380 --> 00:19:31,380
+Bu bizim için çok şahane bir bellek birimi.
+
+102
+00:19:31,380 --> 00:19:34,380
+Side falan da stek duymuşsunuzdur.
+
+103
+00:19:34,380 --> 00:19:36,380
+Kullanılıyor falan demişsinizdir.
+
+104
+00:19:36,380 --> 00:19:41,380
+Belki stek ile ilgili stek mimarisini kendiniz kodlamışsınızdır.
+
+105
+00:19:41,380 --> 00:19:45,380
+Ama stek hala hazırda olan programın bir segmenti olduğu için
+
+106
+00:19:45,380 --> 00:19:51,380
+bu segment içerisine çeşitli veriler atıp almak için
+
+107
+00:19:51,380 --> 00:19:55,380
+bunlar ikisi bir sürü daha farklı farklı kodlar var.
+
+108
+00:19:55,380 --> 00:20:00,380
+Böyle burada kodlar olduğunu, minamanikler olduğunu görüyor olacağız.
+
+109
+00:20:00,380 --> 00:20:02,380
+Ama konumuza tekrar geri dönersek
+
+110
+00:20:02,380 --> 00:20:06,380
+kod segmentle beraber instruction pointer ikilisi kullanılırken
+
+111
+00:20:06,380 --> 00:20:08,380
+stek segmentle beraber stek pointer.
+
+112
+00:20:08,380 --> 00:20:10,380
+Yani şunlar ne arkadaşlar?
+
+113
+00:20:10,380 --> 00:20:11,380
+Şu yazıyorum ya şu.
+
+114
+00:20:11,380 --> 00:20:13,380
+Bak pointer ne demek?
+
+115
+00:20:13,380 --> 00:20:15,380
+Point etmek yani işaretlemek.
+
+116
+00:20:15,380 --> 00:20:16,380
+Şu ne?
+
+117
+00:20:16,380 --> 00:20:19,380
+Stek pointer'ın işte sayısal değeri.
+
+118
+00:20:19,380 --> 00:20:23,380
+Tabii stek pointer Wordtip'inde bir pointer olduğu için
+
+119
+00:20:23,380 --> 00:20:24,380
+şurada hep adres yazacak.
+
+120
+00:20:24,380 --> 00:20:25,380
+Mesela ne yazacak?
+
+121
+00:20:25,380 --> 00:20:29,380
+Stek pointer, işte 1, 2, 10,
+
+122
+00:20:29,380 --> 00:20:34,380
+hexadecimal adresini göstermiş olacak stek pointer.
+
+123
+00:20:34,380 --> 00:20:35,380
+Tamam.
+
+124
+00:20:35,380 --> 00:20:38,380
+Şurası bir büyük adres olduğu için
+
+125
+00:20:38,380 --> 00:20:40,380
+12 adresini göstermiş olacak.
+
+126
+00:20:40,380 --> 00:20:42,380
+Gibi, gibi tamam.
+
+127
+00:20:42,380 --> 00:20:44,380
+Burası da önemli bir hususlardan birisi.
+
+128
+00:20:44,380 --> 00:20:47,380
+Yani ikişer ikişer artıyor stek pointer'da.
+
+129
+00:20:47,380 --> 00:20:48,380
+Onu bilmiş olun.
+
+130
+00:20:48,380 --> 00:20:52,380
+Ve stek segment için stek pointer'u kullanıyoruz.
+
+131
+00:20:52,380 --> 00:20:54,380
+Base pointer'da kullandığımızı bilin.
+
+132
+00:20:54,380 --> 00:20:59,380
+Bunun için nasıl kullandığımızı yeri geldiğinde öğreniyor olacağız.
+
+133
+00:20:59,380 --> 00:21:01,380
+Puş ve pop'u anlatmış olduk.
+
+134
+00:21:01,380 --> 00:21:04,380
+Bir de tabii ki veri kesimi var.
+
+135
+00:21:04,380 --> 00:21:05,380
+Veri kesimi var.
+
+136
+00:21:05,380 --> 00:21:11,380
+Veri kesiminde de kullanacağımız üç tane temelde pointer,
+
+137
+00:21:11,380 --> 00:21:15,380
+yani üç pointer demeyelim bunlara index register'ları var.
+
+138
+00:21:15,380 --> 00:21:18,380
+Şimdi birisi kod segmentli, birisi stek segmentli,
+
+139
+00:21:18,380 --> 00:21:21,380
+birisi de data segmentli hatırlarsanız.
+
+140
+00:21:21,380 --> 00:21:23,380
+Tabii burada extra segment yazmış mıyız?
+
+141
+00:21:23,380 --> 00:21:25,380
+Evet güzel birisi de extra segment.
+
+142
+00:21:25,380 --> 00:21:29,380
+Bizim toplamda programımız üç farklı segmentten oluşuyor.
+
+143
+00:21:29,380 --> 00:21:36,380
+Kod segment, stek segment ve extra segment olmak üzere.
+
+144
+00:21:36,380 --> 00:21:39,380
+Tabii bu data segmentle aynı aslında şu an.
+
+145
+00:21:39,380 --> 00:21:41,380
+Şöyle yazalım data segment diyelim.
+
+146
+00:21:41,380 --> 00:21:42,380
+Extra segment neydi?
+
+147
+00:21:42,380 --> 00:21:47,380
+Data segment için data segmentini niye için kullanıyorsak,
+
+148
+00:21:47,380 --> 00:21:49,380
+extra segment de onun için kullanıyordu.
+
+149
+00:21:49,380 --> 00:21:51,380
+Data segment 64K'lık bir boyuttu.
+
+150
+00:21:51,380 --> 00:21:55,380
+Eğer 64K'lık boyuta değişkenlerimiz sığmıyorsa verilerimiz
+
+151
+00:21:55,380 --> 00:21:58,380
+extra segment de bu manada kullanabiliyordu.
+
+152
+00:21:58,380 --> 00:22:03,380
+Veya extra segmentlerde else üzerinden kullanabiliyorduk.
+
+153
+00:22:03,380 --> 00:22:06,380
+Şimdi kod segmentimiz için ne kullanılıyordu?
+
+154
+00:22:06,380 --> 00:22:10,380
+Instruction pointer, stek segmentimiz için stek pointer ve base pointer.
+
+155
+00:22:10,380 --> 00:22:12,380
+Her ikisi işinde ortak.
+
+156
+00:22:12,380 --> 00:22:16,380
+Yani data segment dediğimizde aklımıza şu gelsin.
+
+157
+00:22:16,380 --> 00:22:22,380
+Bizim yüksek seviyeli dillerde mesela dizinin dizi bir değişken değil mi?
+
+158
+00:22:22,380 --> 00:22:25,380
+Değişkense biz onu data segmentle tutuyoruz.
+
+159
+00:22:25,380 --> 00:22:31,380
+Dizinin şu şekilde indisi gibi kullanarak eriştiğimiz şeyler işte bunlar.
+
+160
+00:22:31,380 --> 00:22:39,380
+Yani source index, destination index ve base register.
+
+161
+00:22:39,380 --> 00:22:43,380
+Yani bakın bunu söylüyorum.
+
+162
+00:22:43,380 --> 00:22:45,380
+Daha sonra tekrar hatırlatmış olacağım.
+
+163
+00:22:45,380 --> 00:22:47,380
+Bu hatayı hepiniz yapıyorsunuz.
+
+164
+00:22:47,380 --> 00:22:54,380
+Lütfen lütfen yapmayın şu köşeli parantezler içerisinde tamam mı?
+
+165
+00:22:54,380 --> 00:23:00,380
+Assembli tarafında kullanacağınız, kullanabilme imkanınız olan registrler
+
+166
+00:23:00,380 --> 00:23:05,380
+şuradan gördüğünüz ölçüde S, D, I ve B, X.
+
+167
+00:23:05,380 --> 00:23:11,380
+Bunların haricinde herhangi bir registre bu amaçla kullanamazsınız.
+
+168
+00:23:11,380 --> 00:23:12,380
+Tamam.
+
+169
+00:23:12,380 --> 00:23:15,380
+Önemli olan hususlardan birisi de bu.
+
+170
+00:23:15,380 --> 00:23:22,380
+Yani S, D, I ve B, X'i data segment registrini adreslemek için kullanıyorsunuz.
+
+171
+00:23:22,380 --> 00:23:28,380
+Ve bunun haricinde C, X, A, X gibi ekstradan registre'leri kullanamıyorsunuz.
+
+172
+00:23:28,380 --> 00:23:30,380
+Buraya kadar sorusu olan var mı?
+
+173
+00:23:30,380 --> 00:23:40,589
+Evet güzel sorusu olan yok herhalde diye varsayalım.
+
+174
+00:23:40,589 --> 00:23:44,589
+Şunları da kapatabilirsem aslında çok on numara olacak.
+
+175
+00:23:44,589 --> 00:23:47,589
+Benim ekranda garip garip şeyler görüyorum.
+
+176
+00:23:47,589 --> 00:23:49,589
+Nasıl kapatacağız?
+
+177
+00:23:49,589 --> 00:23:51,589
+Neyse.
+
+178
+00:23:51,589 --> 00:23:54,589
+Evet tamam devam edelim o zaman.
+
+179
+00:23:54,589 --> 00:24:03,109
+Evet burada da onun bakın bir tablosunu vermiş durumdayız.
+
+180
+00:24:03,109 --> 00:24:04,109
+Kesim ne olacak?
+
+181
+00:24:04,109 --> 00:24:06,109
+Göreli konum ne olacak?
+
+182
+00:24:06,109 --> 00:24:09,109
+Ayrı ayrı burada incelemiş durumdayız.
+
+183
+00:24:09,109 --> 00:24:12,109
+Birisi kod komut adresleme yani kod segment,
+
+184
+00:24:12,109 --> 00:24:18,109
+diğeri yığın adresleme ve bir diğeri de veri adresleme şeklinde.
+
+185
+00:24:18,109 --> 00:24:29,940
+Evet şimdi program status word'tan bahsetmiştik hatırlarsanız.
+
+186
+00:24:29,940 --> 00:24:34,940
+Program status word flekler diye kullanıyorduk biz.
+
+187
+00:24:34,940 --> 00:24:36,940
+Yani bayraklar diye kullanıyorduk.
+
+188
+00:24:36,940 --> 00:24:41,940
+Rem'in içerisinde yer alan bir bellek alanıydı.
+
+189
+00:24:41,940 --> 00:24:48,940
+Word olduğu için boyutunun ne ölçüde büyük olduğunu tahmin edebiliyorsunuzdur diye düşünüyorum.
+
+190
+00:24:48,940 --> 00:24:49,940
+Neydi word?
+
+191
+00:24:49,940 --> 00:24:50,940
+Tekrardan yazalım.
+
+192
+00:24:50,940 --> 00:24:51,940
+Bunları böyle bugün yazalım.
+
+193
+00:24:51,940 --> 00:24:54,940
+Ondan sonra çok vaktimiz olmayabilir.
+
+194
+00:24:54,940 --> 00:24:56,940
+Sizin zaten öğrenmiş olmanız lazım.
+
+195
+00:24:56,940 --> 00:25:03,940
+Program status word boyutu 16 bitlik yani iki byte'lık bir büyüklük tamam mı?
+
+196
+00:25:03,940 --> 00:25:05,940
+Program status word.
+
+197
+00:25:05,940 --> 00:25:11,940
+Bayraklarda 16 bitlik bir yerde bulunuyorlar yani.
+
+198
+00:25:11,940 --> 00:25:12,940
+Onu söyleyebiliriz.
+
+199
+00:25:12,940 --> 00:25:22,940
+Bakın bir sıfırdan başlayıp 15'e kadar devam eden 16 tane şey olan nedeni olan alanı olan bir word.
+
+200
+00:25:22,940 --> 00:25:32,940
+Şimdi tabi bizim sistemimizde kullandığımız bu işleri yaparken kullandığımız temelde 16 tane fleğimiz yok.
+
+201
+00:25:32,940 --> 00:25:33,940
+9 tane fleğimiz var.
+
+202
+00:25:33,940 --> 00:25:43,940
+9 tane fleğimiz olduğu için 8 yani bir byte'lık bir değerin içerisine sığmadığından bir byte'ın bir büyüğü kaçtır?
+
+203
+00:25:43,940 --> 00:25:44,940
+2 byte.
+
+204
+00:25:44,940 --> 00:25:45,940
+Tamam.
+
+205
+00:25:45,940 --> 00:25:47,940
+2 byte'ın bir büyüğü kaçtır?
+
+206
+00:25:47,940 --> 00:25:48,940
+4 byte.
+
+207
+00:25:48,940 --> 00:25:49,940
+4 byte'ın bir büyüğü kaçtır?
+
+208
+00:25:49,940 --> 00:25:50,940
+8 byte.
+
+209
+00:25:50,940 --> 00:25:51,940
+Tamam.
+
+210
+00:25:51,940 --> 00:25:56,940
+Burada fleklerimizi görüyoruz neler olduğunu.
+
+211
+00:25:56,940 --> 00:25:59,940
+Tekre teker teker bunların üstünden geçiyor olacağız.
+
+212
+00:25:59,940 --> 00:26:14,940
+Carry flek, parity flek, auxiliary flek, zero flek, sine flek, trap flek, interrupt flek, direction flek ve overflow flek olmak üzere toplam 9 tane fleğimiz var.
+
+213
+00:26:14,940 --> 00:26:23,940
+Sizin için şu an bu fleklerin bu program status word'ın tam olarak neresine yerleştirilmesi gerektiğini bilmenize hiç gerek yok.
+
+214
+00:26:23,940 --> 00:26:24,940
+Ben de bilmiyorum.
+
+215
+00:26:24,940 --> 00:26:27,940
+İhtiyacım oluyor mu zaman zaman oluyor.
+
+216
+00:26:27,940 --> 00:26:28,940
+Açıp bakıyorum.
+
+217
+00:26:28,940 --> 00:26:29,940
+Tamam.
+
+218
+00:26:29,940 --> 00:26:30,940
+Neresine yerleştirildiğini.
+
+219
+00:26:30,940 --> 00:26:36,940
+Ona göre işlemler yapacağınız işlemler varsa çeşitli işlemler onları gerçekleştirebilirsiniz.
+
+220
+00:26:36,940 --> 00:26:40,940
+Şu kalemden bir süre kurtulmuş olalım.
+
+221
+00:26:40,940 --> 00:26:41,940
+Şimdi.
+
+222
+00:26:41,940 --> 00:26:42,940
+Evet.
+
+223
+00:26:42,940 --> 00:26:43,940
+Fleklerin üzerinden geçelim.
+
+224
+00:26:43,940 --> 00:26:45,940
+Flekler nedir ve ne amaçla kullanılır?
+
+225
+00:26:45,940 --> 00:26:46,940
+Carry flek.
+
+226
+00:26:46,940 --> 00:26:47,940
+Tamam.
+
+227
+00:26:47,940 --> 00:26:48,940
+Önemli kısımlardan birisi.
+
+228
+00:26:48,940 --> 00:26:50,940
+Carry'ye zaman zaman ihtiyacımız düşer.
+
+229
+00:26:50,940 --> 00:26:54,940
+İştihacımız olacak ve kullanacağız Carry fleyi.
+
+230
+00:26:54,940 --> 00:27:06,940
+Carry fleyi elde ve ödünç durumlarında bu fleklere tabi çok çok büyük bir kısmına biz kendimiz erişmiyoruz ve kendimiz değerlerini değiştirmiyoruz arkadaşlar.
+
+231
+00:27:06,940 --> 00:27:08,940
+Erişmiyoruz derken değiştirmiyoruz.
+
+232
+00:27:08,940 --> 00:27:15,940
+Bunlar kodların çalışması esnasında otomatik olarak etkilenen değerler.
+
+233
+00:27:15,940 --> 00:27:19,940
+Mesela carry flek elde varsa o carry flek oluyor.
+
+234
+00:27:19,940 --> 00:27:21,940
+Yani geçen hafta anlatmıştık.
+
+235
+00:27:21,940 --> 00:27:24,940
+Hatırlarsanız iki tane baytı topluyordunuz.
+
+236
+00:27:24,940 --> 00:27:28,940
+İki baytı topladığınızda bir bayta sığmıyordu.
+
+237
+00:27:28,940 --> 00:27:33,940
+Yani şöyle düşünelim bir baytan alabileceği maksimum onluk tabandaki değer nedir?
+
+238
+00:27:33,940 --> 00:27:34,940
+255.
+
+239
+00:27:34,940 --> 00:27:35,940
+Tamam.
+
+240
+00:27:35,940 --> 00:27:39,940
+Siz iki tane 200 sayısını toplarsanız bir bayta sığmaz.
+
+241
+00:27:39,940 --> 00:27:41,940
+Bir bayta sığmadığını nereden anlayacağız bunun?
+
+242
+00:27:41,940 --> 00:27:44,940
+İşte carry flek söylüyor bize hop taşma var diyor.
+
+243
+00:27:44,940 --> 00:27:47,940
+Veya bir çıkartma işlemi gerçekleştiriyorsunuz.
+
+244
+00:27:47,940 --> 00:27:50,940
+Yüzden 120'yi çıkartıyorsunuz.
+
+245
+00:27:50,940 --> 00:27:52,940
+Bir bora yani bir ödünç var değil mi?
+
+246
+00:27:52,940 --> 00:27:55,940
+Yani bir taraftan almışız.
+
+247
+00:27:55,940 --> 00:27:58,940
+Sayı o yüzden negatife dönüşmek zorunda kalmış.
+
+248
+00:27:58,940 --> 00:28:04,940
+Bunu yine carry flek bayrağını kontrol ederek tespit edebiliyoruz.
+
+249
+00:28:04,940 --> 00:28:09,940
+Bir diğeri işlem sonucunda yaptığımız herhangi bir işlem olabilir.
+
+250
+00:28:09,940 --> 00:28:14,940
+İşlem sonucunda oluşan değerin tek mi çift mi oldu?
+
+251
+00:28:14,940 --> 00:28:15,940
+Tamam.
+
+252
+00:28:15,940 --> 00:28:17,940
+Tek mi çift mi oldu?
+
+253
+00:28:17,940 --> 00:28:21,940
+Buna da parity flek üzerinden erişebiliyoruz.
+
+254
+00:28:21,940 --> 00:28:28,940
+Eğer ki parity even ise çift olsa tek olarak değerlendiriyoruz.
+
+255
+00:28:28,940 --> 00:28:37,940
+Yani yine sıfır olduğu ve bir olduğu durumlar için iki farklı değerimiz var burada.
+
+256
+00:28:37,940 --> 00:28:39,940
+Parity flekte tekrar söyleyelim.
+
+257
+00:28:39,940 --> 00:28:44,940
+Yani çift sayılarla ilgili size bir işlem yapmanızla ilgili bir mesela soru sormuş olduk.
+
+258
+00:28:44,940 --> 00:28:49,940
+Diyelim sınavda bir sayının çift olup olmadığını neyi kontrol ederek anlayabilirsiniz?
+
+259
+00:28:49,940 --> 00:28:53,940
+Parity fleyi kontrol ederek anlayabilirsiniz.
+
+260
+00:28:53,940 --> 00:28:56,940
+Bir diğeri, auxiliary carry flek.
+
+261
+00:28:56,940 --> 00:28:58,940
+Carry flek neydi hatırlarsanız?
+
+262
+00:28:58,940 --> 00:29:03,940
+Siz byte tabanlı bir toplama yapıyorsanız byte'dan taşıyorsa,
+
+263
+00:29:03,940 --> 00:29:10,940
+vert tabanlı bir toplama yapıyorsanız vert'ten taşıyorsa bunu carry flek üzerinden erişiyorduk.
+
+264
+00:29:10,940 --> 00:29:16,940
+Ama byte tabanlı bir işlem yapıyorsanız ve nibble'dan taşıyorsa,
+
+265
+00:29:16,940 --> 00:29:24,940
+vert tabanlı bir işlem yaparken de byte'dan taşıyorsa buna da auxiliary carry flek üzerinden erişiyoruz.
+
+266
+00:29:24,940 --> 00:29:26,940
+Bu arada fark önemli.
+
+267
+00:29:26,940 --> 00:29:28,940
+Tekrar söyleyelim.
+
+268
+00:29:28,940 --> 00:29:31,940
+Byte tabanlı bir işlem yaparken nibble'dan taşıyorsa.
+
+269
+00:29:31,940 --> 00:29:34,940
+Geçen hafta nibble boyutunu ne olduğunu söylemiştik.
+
+270
+00:29:34,940 --> 00:29:36,940
+Dört bittik bir boyuttu.
+
+271
+00:29:36,940 --> 00:29:39,940
+Yani bir byte iki nibble'dan oluşur.
+
+272
+00:29:39,940 --> 00:29:47,940
+Siz bir bytelık işlem yaparken nibble'dan veri taşıyorsa,
+
+273
+00:29:48,940 --> 00:29:51,940
+nibble'ın yüksek anlamlı tarafından,
+
+274
+00:29:51,940 --> 00:29:55,940
+diğer nibble'ın düşük anlamlı tarafına bir taşma varsa,
+
+275
+00:29:55,940 --> 00:29:59,940
+bunu auxiliary carry flek üzerinden görürsünüz.
+
+276
+00:29:59,940 --> 00:30:06,940
+Aynı şekilde 16 bittik işlem yapıyorken de byte'dan diğer byte'a bir taşma varsa,
+
+277
+00:30:06,940 --> 00:30:11,940
+yani 8. bitten 9. bitte bir elde ve ödünç durumu varsa,
+
+278
+00:30:11,940 --> 00:30:15,940
+bunu da yine auxiliary carry flek üzerinden görebilirsiniz.
+
+279
+00:30:15,940 --> 00:30:17,940
+Bir diğeri zero flek.
+
+280
+00:30:17,940 --> 00:30:24,940
+Zero flek bizim işlemimizin sonucunda oluşan değerin 0 mu?
+
+281
+00:30:24,940 --> 00:30:25,940
+1 mi?
+
+282
+00:30:25,940 --> 00:30:26,940
+Sıfır mı?
+
+283
+00:30:26,940 --> 00:30:28,940
+Sıfırdan farklı bir değer mi?
+
+284
+00:30:28,940 --> 00:30:29,940
+Onu söylüyor bize.
+
+285
+00:30:29,940 --> 00:30:31,940
+Yani şöyle düşünelim.
+
+286
+00:30:31,940 --> 00:30:33,940
+Bir şeyle sıfır çarpmışız.
+
+287
+00:30:33,940 --> 00:30:35,940
+Mesela sonuç sıfır çıkacak.
+
+288
+00:30:35,940 --> 00:30:37,940
+O sayıyı kendinden çıkartmışız.
+
+289
+00:30:37,940 --> 00:30:38,940
+Yine sıfır çıkacak.
+
+290
+00:30:38,940 --> 00:30:43,940
+Veya farklı işlemler neticesinde işlemin sonucunun,
+
+291
+00:30:43,940 --> 00:30:46,940
+rejisterde oluşan sonucunun sıfır çıktığını düşünelim.
+
+292
+00:30:46,940 --> 00:30:51,940
+Bu tarz durumda zero flek set olmuş olacak.
+
+293
+00:30:51,940 --> 00:30:54,940
+Ve işlem sonucunun sıfır çıktığını buradan anlayabiliriz.
+
+294
+00:30:54,940 --> 00:30:59,940
+Yani mesela siz while diye bir komut yapacaksınız.
+
+295
+00:30:59,940 --> 00:31:04,940
+Ve en kadar dizinin dönmesini bekliyorsunuz.
+
+296
+00:31:04,940 --> 00:31:06,940
+Ve çıkara çıkara geliyorsunuz.
+
+297
+00:31:06,940 --> 00:31:07,940
+Çıkara çıkara geliyorsunuz.
+
+298
+00:31:07,940 --> 00:31:08,940
+Çıkara çıkara geliyorsunuz.
+
+299
+00:31:08,940 --> 00:31:14,940
+Koşulunuzda while işte ax veya sayınız olsun sayı,
+
+300
+00:31:14,940 --> 00:31:16,940
+farklı olduğu sürece sıfırdan.
+
+301
+00:31:16,940 --> 00:31:17,940
+Bu işlemi yap.
+
+302
+00:31:17,940 --> 00:31:18,940
+Nasıl kontrol edeceksin?
+
+303
+00:31:18,940 --> 00:31:21,940
+İşte zero flek üzerinden kontrol edebilirsin bu tarafta.
+
+304
+00:31:21,940 --> 00:31:26,940
+Yani o değerin sıfır olup olmadığını zero flek üzerinden anlayabiliriz.
+
+305
+00:31:26,940 --> 00:31:28,940
+Bir diğeri yine sine flek.
+
+306
+00:31:28,940 --> 00:31:29,940
+Sine flek ne demek?
+
+307
+00:31:29,940 --> 00:31:34,940
+Bizim programımızda yine bir işlemin sonucunda
+
+308
+00:31:34,940 --> 00:31:40,940
+sonuç negatif yani sine mı çıkacak yoksa pozitif mi çıkacak?
+
+309
+00:31:40,940 --> 00:31:42,940
+Bunun için kullandığımız bir değer.
+
+310
+00:31:42,940 --> 00:31:44,940
+İşaret bayrağı yani.
+
+311
+00:31:44,940 --> 00:31:46,940
+İşlem yaptık.
+
+312
+00:31:46,940 --> 00:31:47,940
+Sonuç negatif çıkabilir.
+
+313
+00:31:47,940 --> 00:31:50,940
+100'den 120'yi çıkartırsanız sonuç negatifdir.
+
+314
+00:31:50,940 --> 00:31:53,940
+Tam tersini yaparsanız sonuç pozitiftir.
+
+315
+00:31:53,940 --> 00:31:56,940
+Eğer negatif ise bu bayrağın değeri 1 oluyor.
+
+316
+00:31:56,940 --> 00:31:58,940
+Set demek 1 demek arkadaşlar.
+
+317
+00:31:59,940 --> 00:32:05,940
+Eğer ki bu nedenle ona pozitifse bunun değeri sıfır olmuş oluyor.
+
+318
+00:32:05,940 --> 00:32:08,940
+O da clear manasına geliyor.
+
+319
+00:32:08,940 --> 00:32:12,940
+Bir direk, bir diğer flek, trap flek.
+
+320
+00:32:12,940 --> 00:32:21,940
+Bu fleki biz intrapları işlerken daha çok üzerinde duracağız.
+
+321
+00:32:21,940 --> 00:32:24,940
+Yani kesmeleri işlerken daha çok üzerinde duracağız.
+
+322
+00:32:24,940 --> 00:32:36,940
+Komutun adım adım çalıştırılması ve bu çalıştırılmayı da bizim izlememiz kesme üreterek izlememiz manasına geliyor.
+
+323
+00:32:36,940 --> 00:32:44,940
+Bu biraz daha bizim kendimizin set ettiği ve bu set üzerinden programın akışının gerçekleştirildiği bir flek.
+
+324
+00:32:44,940 --> 00:32:48,940
+Bunu çalıştırırken daha güzel anlayacaksınızdır diye düşünüyorum.
+
+325
+00:32:48,940 --> 00:32:51,940
+Trap flenin, fleyin nasıl olduğunu.
+
+326
+00:32:51,940 --> 00:32:55,940
+Bir diğeri interrupt flek yine kesmelerde.
+
+327
+00:32:55,940 --> 00:32:59,940
+Bizim yani kesmenin şu an tam olarak ne olduğunu bilmiyorsunuz interrupt'ın tabi de.
+
+328
+00:32:59,940 --> 00:33:11,940
+Burada programın akışı esnasında başka programlarda araya girip çalışma isteği gönderebilir mi olayına biz kesme diyoruz.
+
+329
+00:33:11,940 --> 00:33:19,940
+Bazı programlar interrupt fleyi set ederek kesme almaya müsait hale gelebiliyor.
+
+330
+00:33:19,940 --> 00:33:25,940
+Yani program 100 satırdan oluşuyorsa her 10 satırda bir işlemci başka işlerle uğraşabilir mesela.
+
+331
+00:33:25,940 --> 00:33:34,940
+Eğer ki interrupt fleyi siz clear yaparsanız benim programım başlayıp bitinceye kadar herhangi bir şekilde bölünmesini istiyorum demiş olursunuz.
+
+332
+00:33:34,940 --> 00:33:40,940
+Yine bunu da kullanınca göreceğiz 12. 13. haftalarda falan herhalde o konular.
+
+333
+00:33:40,940 --> 00:33:43,940
+Bir diğeri direction flek.
+
+334
+00:33:43,940 --> 00:33:55,940
+String işlemleri gerçekleştirirken bellek içerisinde yazacağımız stringi yazacağımız yönün nasıl bir yön oldu.
+
+335
+00:33:55,940 --> 00:34:10,940
+Yani yukarıdan aşağıya mı, aşağıdan yukarıya mı, düşük adresten yüksek adrese mi, yüksek adresten düşük adrese mi olduğuna karar veren yön fleyi de direction flek genellikle string işlemleriyle beraber kullanılıyor.
+
+336
+00:34:10,940 --> 00:34:13,940
+Bir diğeri ise son olarak overflow flek.
+
+337
+00:34:13,940 --> 00:34:21,940
+Overflow flek ise aritmatik işlemlerde bir taşma durumunun söz konusu olup olmadığını.
+
+338
+00:34:21,940 --> 00:34:23,940
+Yani kereflek de böyle.
+
+339
+00:34:23,940 --> 00:34:27,940
+Kerefleği kullanabiliyoruz ama aritmatik işlemlerde bir işlem gerçekleştiriyoruz.
+
+340
+00:34:27,940 --> 00:34:33,940
+Bu işlem istediğimiz boyuta sığmıyor.
+
+341
+00:34:33,940 --> 00:34:35,940
+Yani ne demek istiyoruz?
+
+342
+00:34:35,940 --> 00:34:37,940
+İstediğimiz boyuta sığmıyor.
+
+343
+00:34:37,940 --> 00:34:48,940
+Biz 2 tane byte'ı toplarken byte'ın değerleri o kadar büyük ki yine byte'ın içine sığmıyorsa overflow flek devreye girmiş oluyor.
+
+344
+00:34:48,940 --> 00:34:56,940
+O sebeple bu da eğer ki taşma olmuşsa 1, taşma olmamışsa 0 olarak gözlemleyebiliyoruz.
+
+345
+00:34:56,940 --> 00:35:01,940
+Toplam bu şekilde 9 tane fleğimiz var.
+
+346
+00:35:01,940 --> 00:35:06,929
+Evet buraya kadar sorusu olan var mı?
+
+347
+00:35:06,929 --> 00:35:08,929
+Hocam ben şey soracağım.
+
+348
+00:35:08,929 --> 00:35:11,929
+Cf ve af arasında ne fark var?
+
+349
+00:35:11,929 --> 00:35:16,940
+Evet cf ile af arasında ne fark var?
+
+350
+00:35:16,940 --> 00:35:22,940
+Şimdi şuraya bir yere yazabilerek anlatırsak güzel olur herhalde.
+
+351
+00:35:22,940 --> 00:35:26,940
+Şuradan kalemi geçelim.
+
+352
+00:35:26,940 --> 00:35:28,940
+Niye böyle olduğu bilmiyorum.
+
+353
+00:35:28,940 --> 00:35:31,940
+Şimdi diyelim ki ben 2 tane değeri toplamak istiyorum.
+
+354
+00:35:31,940 --> 00:35:43,940
+Bak 0, 1, 0, 1, 0, 1, 1, 1 ile 1, 0, 0, 0, 1, 1, 0, 1'i toplamak istiyorum.
+
+355
+00:35:43,940 --> 00:35:46,940
+Diyelim ki tamam mı?
+
+356
+00:35:46,940 --> 00:35:51,940
+Eğer ki şuradan yani dördüncüden tamam mı?
+
+357
+00:35:51,940 --> 00:35:52,940
+Bak nasıl olacak?
+
+358
+00:35:52,940 --> 00:35:53,940
+Şöyle gör.
+
+359
+00:35:53,940 --> 00:35:55,940
+1 ile 1'i topladım.
+
+360
+00:35:55,940 --> 00:35:56,940
+0.
+
+361
+00:35:56,940 --> 00:35:57,940
+Elde var 1 mi?
+
+362
+00:35:57,940 --> 00:35:58,940
+Koydum buraya.
+
+363
+00:35:58,940 --> 00:36:00,940
+Yukarıya koydum 1'i.
+
+364
+00:36:00,940 --> 00:36:02,940
+Bir nokta olarak koymuş olayım.
+
+365
+00:36:02,940 --> 00:36:04,940
+Yukarıya yazamadığım için nokta olarak koydum.
+
+366
+00:36:04,940 --> 00:36:06,940
+1 ile 1'i topladım.
+
+367
+00:36:06,940 --> 00:36:07,940
+0.
+
+368
+00:36:07,940 --> 00:36:08,940
+Elde var yine 1.
+
+369
+00:36:08,940 --> 00:36:10,940
+Nokta olarak koydum şuraya.
+
+370
+00:36:10,940 --> 00:36:12,940
+Tekrardan bu 3'ünü topladım.
+
+371
+00:36:12,940 --> 00:36:13,940
+1.
+
+372
+00:36:13,940 --> 00:36:14,940
+Elde var 1.
+
+373
+00:36:14,940 --> 00:36:16,940
+Nokta olarak koydum şuraya.
+
+374
+00:36:16,940 --> 00:36:20,940
+Hala daha keri flek ve oxyleri keri flek arkadaşlar.
+
+375
+00:36:20,940 --> 00:36:21,940
+Ne?
+
+376
+00:36:21,940 --> 00:36:22,940
+0.
+
+377
+00:36:22,940 --> 00:36:24,940
+Yani bir kerinin oluştuğunu söylemiyor.
+
+378
+00:36:24,940 --> 00:36:27,940
+Şuradaki 1, 0, 1'i topladım.
+
+379
+00:36:27,940 --> 00:36:30,940
+Bak 8 bittik ya bir bytelık bir işlem.
+
+380
+00:36:30,940 --> 00:36:32,940
+1, 0, 1'i topladım.
+
+381
+00:36:32,940 --> 00:36:33,940
+0 etti.
+
+382
+00:36:33,940 --> 00:36:34,940
+Elde var.
+
+383
+00:36:34,940 --> 00:36:36,940
+Şuraya koydum ya.
+
+384
+00:36:36,940 --> 00:36:47,940
+İşte dördten bakın dördüncü bitten beşinci bite bir elde geçiyorsa artık oxyleri keri flek yani oxyleri flek diyelim biz ona.
+
+385
+00:36:47,940 --> 00:36:48,940
+Oxyleri flek.
+
+386
+00:36:48,940 --> 00:36:50,940
+Oxyleri flek set olmuş oluyor.
+
+387
+00:36:50,940 --> 00:36:51,940
+1 oluyor arkadaşlar.
+
+388
+00:36:51,940 --> 00:36:53,940
+Şuradan geçişte.
+
+389
+00:36:53,940 --> 00:36:54,940
+Tamam.
+
+390
+00:36:54,940 --> 00:36:55,940
+Şuradan geçişte.
+
+391
+00:36:55,940 --> 00:36:57,940
+Daha sonra topladım topladım topladım.
+
+392
+00:36:57,940 --> 00:37:00,940
+Ola ki şu ikisini de topladım.
+
+393
+00:37:00,940 --> 00:37:06,940
+Bu ikisini topladıktan sonra elde bir tane de şurada oluştuysa işte bu da keri flek.
+
+394
+00:37:06,940 --> 00:37:08,940
+Bir olmuş oluyor.
+
+395
+00:37:08,940 --> 00:37:17,940
+Yani byte tabanlı işlemler gerçekleştirirken dördten beşinci byte geçişte şuradan şuraya geçişte bir elde varsa.
+
+396
+00:37:17,940 --> 00:37:32,940
+Oxyleri keri flek şeyden nedenir ona en son sekizinci bitten dokuzuncu bite bir geçiş varsa byte tabanlı işlemler yaparken bu da bizim keri fleğimizi tetikliyor.
+
+397
+00:37:32,940 --> 00:37:39,940
+Ama aynı durumda hangi flek en azından bir flek daha tetiklenir şurada taşma olduğu için overflow flek.
+
+398
+00:37:39,940 --> 00:37:40,940
+Tamam.
+
+399
+00:37:40,940 --> 00:37:43,940
+Hem keri var hem de taşma var.
+
+400
+00:37:43,940 --> 00:37:45,940
+Bu da önemli hususlardan birisi.
+
+401
+00:37:45,940 --> 00:37:47,940
+Bunun aynısını byte için yaptım.
+
+402
+00:37:47,940 --> 00:37:49,940
+Bir de word için olduğunu düşün.
+
+403
+00:37:49,940 --> 00:37:59,940
+Oxyleri keri flek sekizde dokuzuncu bitler arasa şurada yazdığı gibi sekizden dokuz a geçme durumunda bu işleri set oluyor.
+
+404
+00:37:59,940 --> 00:38:12,940
+Word lük olayda ise keri flek en son bitinin yani en anlamlı bitinden taşma olursa on altıncı bitinden o zaman set olmuş oluyor.
+
+405
+00:38:12,940 --> 00:38:14,940
+Evet anlaşıldı mı acaba?
+
+406
+00:38:14,940 --> 00:38:16,940
+Anladım hocam teşekkür ederim.
+
+407
+00:38:16,940 --> 00:38:18,940
+Başka soru var mı?
+
+408
+00:38:18,940 --> 00:38:20,940
+Hocam benim şöyle bir sorum var.
+
+409
+00:38:20,940 --> 00:38:22,940
+Sesin az geliyor.
+
+410
+00:38:22,940 --> 00:38:24,940
+Benim şu an duyabiliyor musunuz?
+
+411
+00:38:24,940 --> 00:38:26,940
+Evet buyurun.
+
+412
+00:38:26,940 --> 00:38:38,940
+Sine flek true false gibi boolean kontrollerde kullanılıyor mu yoksa 0 ve 1 gibi şeylerde mi negatif eksilerde falan mı kullanılıyor?
+
+413
+00:38:38,940 --> 00:38:41,940
+True false gibi sine fley kullanamaz.
+
+414
+00:38:41,940 --> 00:38:44,940
+Sine fley bir işlem yapacaksın.
+
+415
+00:38:44,940 --> 00:38:50,940
+Şu an daha minamaniklerimizi görmediğimiz için kafanıza belki canlanmıyor ama bir işlem yapacaksın.
+
+416
+00:38:50,940 --> 00:38:57,940
+İşlemin sonucunda oluşan değer eğer ki negatifse sine fley set olmuş olacak.
+
+417
+00:38:57,940 --> 00:39:00,940
+Yani 1 olmuş olacak.
+
+418
+00:39:00,940 --> 00:39:08,940
+Yani sen kafana göre sine fley'i ben gidip setedeyim ona göre kontrol ederim diye düşünemezsin doğrudan.
+
+419
+00:39:08,940 --> 00:39:15,940
+Yaptığın işlemin sonucu senin tasarladığın işlemin sonucu negatif olduğu her durumda false.
+
+420
+00:39:15,940 --> 00:39:22,940
+Pozitif olduğu her durumda ise true değerini döndürecekse bir şekilde o zaman kullanabilirsin.
+
+421
+00:39:22,940 --> 00:39:27,940
+Ama yani böyle ekstradan bir kullanma yapısı sine fley sağlamıyor.
+
+422
+00:39:27,940 --> 00:39:31,289
+Anladım hocam teşekkür ederim.
+
+423
+00:39:31,289 --> 00:39:33,289
+Ben teşekkür ederim. Başka sorusu olan var mı?
+
+424
+00:39:33,289 --> 00:39:40,219
+Evet yoksa devam edelim arkadaşlar.
+
+425
+00:39:40,219 --> 00:39:43,219
+Şimdi belleğe erişim.
+
+426
+00:39:43,219 --> 00:39:53,219
+Şimdi bizim önemli programın çalışması, bilgisayarın çalışması esnasındaki önemli birimlerden birisi de bellek.
+
+427
+00:39:53,219 --> 00:39:56,219
+İşlemci ve bellek bunlar olmazsa olmaz.
+
+428
+00:39:56,219 --> 00:40:06,219
+Bu söylediğimiz segmentlerin hepsi de belleğin içerisinde yani kod segment, data segment, extra segment, stack segment bunların hepsi belleğin içerisinde olan şeyler.
+
+429
+00:40:06,219 --> 00:40:09,219
+Onu da bir kez daha burada harici olarak vurgulamış olalım.
+
+430
+00:40:10,219 --> 00:40:15,219
+İşlemcinin adresleyeceği bellek miktarı bacak sayısıyla orantılı.
+
+431
+00:40:15,219 --> 00:40:22,219
+20 tane adresleme bacağı varsa 220'den 1 megabyte'lık bir boyutu adresleyebiliyor.
+
+432
+00:40:22,219 --> 00:40:26,219
+1 megabyte'lık boyut tam kasıtımız burada.
+
+433
+00:40:26,219 --> 00:40:31,219
+İşte 220 bir küsür küsür küsür bir şeye karşılık geliyordur.
+
+434
+00:40:31,219 --> 00:40:34,219
+Zaten o byte'dan gelen bir değer var.
+
+435
+00:40:34,219 --> 00:40:37,219
+Yani 1 megabyte'lık bir boyut düşünün.
+
+436
+00:40:37,219 --> 00:40:47,219
+Yani şu an kullandığınız işlemcinin boyutunun, işlemciyle beraber çalışan reminizin boyutunun ne kadar olduğunu düşünün.
+
+437
+00:40:47,219 --> 00:40:52,219
+Burada remimizin boyutu 1 megabyte.
+
+438
+00:40:52,219 --> 00:40:54,219
+Ama 1 megabyte daha büyük değil.
+
+439
+00:40:54,219 --> 00:40:58,219
+Ve daha önce söylediğim bir kez daha hatırlatıyorum.
+
+440
+00:40:58,219 --> 00:41:06,219
+1 megabyte'li rem küçük gibi geliyor olabilir size ama bu 1 megabyte'li remle insanlar ayağı adam göndermişler.
+
+441
+00:41:06,219 --> 00:41:09,219
+Yani en azından uzaya roket göndermişler.
+
+442
+00:41:09,219 --> 00:41:15,219
+Oraya gitmiş, belirli işlemleri gerçekleştirmiş, bütün kontrolleri yapmış.
+
+443
+00:41:15,219 --> 00:41:21,219
+Bu çok dikkatle böyle düşünülmesi gereken bir şey.
+
+444
+00:41:21,219 --> 00:41:26,219
+Bu kadar büyük bir bellek boyutuyla bunlar da yapılabilir.
+
+445
+00:41:26,219 --> 00:41:30,219
+Fiziksel adres hesabını zaten siz de geçen haftayı yaptık.
+
+446
+00:41:30,219 --> 00:41:34,219
+O yüzden tekrardan onun üzerinde durmak istemiyorum.
+
+447
+00:41:34,219 --> 00:41:41,219
+Şimdi fiziksel adres hesabı sonucunda hatırlarsanız iki farklı durum ortaya çıkıyordu.
+
+448
+00:41:41,219 --> 00:41:47,219
+Bir, fiziksel adres hesaplarken adreslerin birbirleriyle çakışma gibi bir ihtimali vardı.
+
+449
+00:41:47,219 --> 00:42:01,219
+Yani farklı kod segment ve instruksiyon point'ları mesela fiziksel adresine hesapladığımızda başka kod segment ve instruksiyon point'ların fiziksel adresiyle çakışabiliyordu.
+
+450
+00:42:01,219 --> 00:42:10,219
+O sebeple bizim temelde belleğe erişimi için iki farklı kipte çalışmamız gibi bir durum söz konusu.
+
+451
+00:42:10,219 --> 00:42:14,219
+Bunun birisi gerçek kip, birisi de korumalı kip.
+
+452
+00:42:14,219 --> 00:42:24,219
+Gerçek kipte 16 bitlik kesim yazmaçları sayesinde 64K'lık bir bloklara erişip toplamda bir megabaytlık bir bloğa erişebiliyoruz.
+
+453
+00:42:24,219 --> 00:42:28,219
+Bir megabaytlık bakın bir bloğa erişebiliyoruz.
+
+454
+00:42:28,219 --> 00:42:36,219
+Korumalı kip'e geçtiğimizde ise belleğin tabi bir megabaytlık fiziksel bir adres erişiyoruz gerçek kipte.
+
+455
+00:42:36,219 --> 00:42:45,219
+Biz bir megabaytlık fiziksel adrese erişmek isterken farklı adreslere de erişmemiz gibi bir durum yani aynı nasıl söyleyeyim
+
+456
+00:42:45,219 --> 00:42:49,219
+farklı segmentlerin birbirleriyle çakışması gibi bir durumda söz konusu olabiliyordu.
+
+457
+00:42:49,219 --> 00:42:51,219
+Onun kontrolünü tamamen bizim yapmamız gerekiyordu.
+
+458
+00:42:51,219 --> 00:42:55,219
+Korumalı kip'e geçtiğimizde ise belleğe de temelde bir koruma var.
+
+459
+00:42:55,219 --> 00:43:03,219
+Programlar birbirlerinin alanlarına yani kod segment, stack segment ve data segment alanlarına girmiyorlar.
+
+460
+00:43:03,219 --> 00:43:10,219
+Bunu işletim sistemi koruyor bu alanlara erişilmesinin fiziksel olarak.
+
+461
+00:43:10,219 --> 00:43:16,219
+O yüzden şu an bizim bilgisayarlarımız da zaten korumalı kipte çalışıyor.
+
+462
+00:43:16,219 --> 00:43:23,219
+Başkasının ben mesela şu an program yazmak istesem bir taraftan da Word açık, Zoom açık.
+
+463
+00:43:23,219 --> 00:43:25,219
+Zoom benim belleğimde bir yer kullanıyor.
+
+464
+00:43:25,219 --> 00:43:37,219
+Ben Zoom'un kullandığı yere doğrudan erişecek data segment ve kod segment değerlerini bunların offset değerleriyle birlikte bana işletim sistemi sunmayacaktır.
+
+465
+00:43:37,219 --> 00:43:41,219
+O yüzden korumalı kip ve gerçek kip arasında en temel farklardan birisi bu.
+
+466
+00:43:41,219 --> 00:43:43,219
+Ve çoklu görev destekliği var korumalı kipte.
+
+467
+00:43:43,219 --> 00:43:45,219
+Gerçek kip biraz daha...
+

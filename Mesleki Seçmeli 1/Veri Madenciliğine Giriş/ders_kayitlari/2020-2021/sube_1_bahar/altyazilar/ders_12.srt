@@ -1,0 +1,6847 @@
+1
+00:10:03,919 --> 00:10:10,139
+Merhaba arkadaşlar, Cuma öğleden sonra bir aradayız yine.
+
+2
+00:10:10,399 --> 00:10:10,820
+Merhaba hocam.
+
+3
+00:10:11,080 --> 00:10:14,759
+Merhaba [öğrenci], merhaba [öğrenci], merhaba [öğrenci].
+
+4
+00:10:15,759 --> 00:10:16,320
+Merhaba hocam.
+
+5
+00:10:17,139 --> 00:10:17,700
+Merhaba hocam.
+
+6
+00:10:18,100 --> 00:10:18,899
+Merhaba [öğrenci].
+
+7
+00:10:20,220 --> 00:10:21,519
+Sesinizi duymak güzel.
+
+8
+00:10:22,980 --> 00:10:25,179
+Evet, şu an 20 kişiyiz derste.
+
+9
+00:10:28,440 --> 00:10:33,460
+Her geçen hafta azalıyor, bunun sebebi ne olabilir arkadaşlar, ne diyorsunuz?
+
+10
+00:10:36,120 --> 00:10:37,179
+Güzel havalar hocam.
+
+11
+00:10:37,179 --> 00:10:41,460
+Hocam, havaların ısınmasıyla herkes tatil moduna geçiş yapmaya başladı.
+
+12
+00:10:42,059 --> 00:10:44,620
+Evet, bizi bu güzel havalar mahvetti değil mi?
+
+13
+00:10:46,639 --> 00:10:51,200
+Evet, kesinlikle hava çok güzel, insan dışarı çıkmak istiyor.
+
+14
+00:10:52,460 --> 00:10:56,659
+Ben dışarı çıktım, bir saat hava aldım, hemen eve geldim ders için.
+
+15
+00:10:57,799 --> 00:11:03,240
+Tabii bir de sonradan dersleri izleme imkanının olması herhalde rahatlatıyor.
+
+16
+00:11:03,240 --> 00:11:06,379
+Ama bir derse devam zorunluluğu diye bir şey de var.
+
+17
+00:11:06,799 --> 00:11:07,159
+Yani...
+
+18
+00:11:07,179 --> 00:11:10,100
+Bunu da dikkate almak lazım, değil mi?
+
+19
+00:11:15,860 --> 00:11:16,240
+Evet.
+
+20
+00:11:19,000 --> 00:11:21,860
+Peki, şöyle bir genel konuşalım.
+
+21
+00:11:23,320 --> 00:11:27,759
+Bu hafta 12. haftadayız.
+
+22
+00:11:28,740 --> 00:11:30,480
+Geriye kaldı iki haftamız.
+
+23
+00:11:31,779 --> 00:11:34,940
+Dönemi bitiyor yavaş yavaş, sona doğru yaklaşıyoruz.
+
+24
+00:11:35,899 --> 00:11:38,279
+Finallerle birlikte rahatlayacaksınız.
+
+25
+00:11:40,100 --> 00:11:43,879
+Ümitliyim, Ekim ayında birlikte yüz yüze derslerimiz...
+
+26
+00:11:44,259 --> 00:11:48,120
+Başlayacağız diye düşünüyorum.
+
+27
+00:11:49,419 --> 00:11:52,519
+Henüz aşı olmamış olmama rağmen bekliyoruz.
+
+28
+00:11:52,600 --> 00:11:53,639
+Aşı sıramız gelecek.
+
+29
+00:11:54,820 --> 00:12:05,019
+Şimdi arkadaşlar, eğiticisiz öğrenme, unsupervised clustering konu başlığına geçtik, hatırlarsanız.
+
+30
+00:12:05,019 --> 00:12:08,019
+Biz yöntemlerimizi...
+
+31
+00:12:08,820 --> 00:12:12,559
+Ekran paylaşımı yapmamışım, önce onu yapalım.
+
+32
+00:12:17,039 --> 00:12:17,600
+Evet, biz...
+
+33
+00:12:17,840 --> 00:12:24,000
+Bir data mining strategies diye bir başlık atmıştık vaktiyle, hatırlarsanız.
+
+34
+00:12:25,000 --> 00:12:37,919
+Bu stratejileri ikiye, üçe ayırmıştık.
+
+35
+00:12:38,919 --> 00:12:45,740
+Bir supervised learning vardı.
+
+36
+00:12:48,629 --> 00:12:55,639
+Unsupervised clustering vardı.
+
+37
+00:12:55,639 --> 00:12:59,019
+Ve bir de...
+
+38
+00:12:59,860 --> 00:13:00,840
+Üçüncü kol.
+
+39
+00:13:02,559 --> 00:13:03,120
+Market.
+
+40
+00:13:05,120 --> 00:13:05,779
+Basket.
+
+41
+00:13:05,919 --> 00:13:09,500
+Analysis konusu vardı.
+
+42
+00:13:10,019 --> 00:13:11,200
+Üç başlığımız vardı.
+
+43
+00:13:11,840 --> 00:13:15,639
+Supervised learning'i oldukça uzun konuştuk.
+
+44
+00:13:16,419 --> 00:13:19,940
+Üç farklı classifier öğrendik.
+
+45
+00:13:20,580 --> 00:13:24,860
+Sadece kategorik output için classification örnekleri yaptık.
+
+46
+00:13:26,399 --> 00:13:27,519
+Neydi bunlar?
+
+47
+00:13:27,679 --> 00:13:33,279
+Decision tree, naive bias ve conier's neighbor gibi yöntemlerdi.
+
+48
+00:13:36,740 --> 00:13:37,559
+Unsupervised...
+
+49
+00:13:37,620 --> 00:14:06,019
+Clustering tarafında eğiticisiz öğrenme ya da kümeleme bölümünde geçen hafta konuştuk, elimizde sınıf etiketi olmayan belli gözlemler var, yani öz niteliklerimiz var ama bir alan uzmanı oturup bunu etiketlememiş, çünkü etiketleme işi oldukça maliyetli biliyorsunuz, zaman alıcı bir iş.
+
+50
+00:14:06,019 --> 00:14:07,019
+O yüzden etiketsiz...
+
+51
+00:14:07,620 --> 00:14:09,620
+verileri ne yapabiliriz?
+
+52
+00:14:09,620 --> 00:14:18,120
+Birbirlerine olan benzerliklerine göre gruplayabiliriz dedik ve geçen hafta K-means clustering yöntemiyle bu gruplamayı öğrendik.
+
+53
+00:14:18,120 --> 00:14:21,120
+Aynı zamanda bir yöntem daha...
+
+54
+00:14:21,120 --> 00:14:23,120
+E.M.
+
+55
+00:14:23,120 --> 00:14:29,120
+Yani expectation maximization dediğimiz bir yöntemi daha anlatmıştım.
+
+56
+00:14:29,120 --> 00:14:36,320
+Bu hafta yani burada aslında şu ana kadar iki yöntem öğrendik diyebiliriz.
+
+57
+00:14:36,320 --> 00:14:37,320
+K-means...
+
+58
+00:14:37,620 --> 00:14:40,620
+clustering öğrendiniz.
+
+59
+00:14:40,620 --> 00:14:52,149
+E.M. clustering öğrendik diyebiliriz ve bu haftaki konu başlığımız hiyerarşik clustering olacak.
+
+60
+00:14:52,149 --> 00:15:01,509
+Üçüncü bir yöntemden bahsedeceğiz.
+
+61
+00:15:01,509 --> 00:15:05,509
+Bu da ilginç bir algoritma.
+
+62
+00:15:05,509 --> 00:15:09,509
+Şimdi yavaş yavaş detaylarına geçelim.
+
+63
+00:15:09,509 --> 00:15:15,450
+Hiyerarşik kümeleme...
+
+64
+00:15:15,450 --> 00:15:16,450
+Algoritmalar...
+
+65
+00:15:16,450 --> 00:15:29,450
+Elimizdeki örnekleri birbirlerine olan benzerliklerine göre grupluyoruz ve bu gruplama işini bir ağaç benzeri bir yapı ile gerçekleştiriyoruz.
+
+66
+00:15:29,450 --> 00:15:38,450
+Hiyerarşik clustering yöntemlerini agglomerative ve divisive diye iki gruba ayırıyoruz.
+
+67
+00:15:38,450 --> 00:15:45,450
+Agglomerative birleştirmeye dayalı, divisive ise bölmeye dayalı demek oluyor.
+
+68
+00:15:45,450 --> 00:16:02,450
+Ve bu iki birbirinden farklı yapıda birleştirmeye dayalı olan agglomerative dediğimiz çözüm bottom-up strateji izliyor.
+
+69
+00:16:02,450 --> 00:16:07,450
+Aşağıdan yukarıya doğru bir ağaç yapısı oluşturuyor.
+
+70
+00:16:07,450 --> 00:16:14,450
+Aşağıdan yukarıya doğru grupları, örnekleri birleştirerek bir bütüne doğru gitmeyi hedefliyor.
+
+71
+00:16:14,450 --> 00:16:15,450
+Aşağıdan yukarıya doğru grupları, örnekleri birleştirerek bir bütüne doğru gitmeyi hedefliyor.
+
+72
+00:16:15,450 --> 00:16:21,450
+Divisive yöntem ise top-down strateji dediğimiz yapıda çalışıyor.
+
+73
+00:16:21,450 --> 00:16:27,450
+Bölmeye dayalı, yani başta elimizde bir bütün var, bir veri bütünü var.
+
+74
+00:16:27,450 --> 00:16:35,450
+Bunu parçalayarak, bölerek, birbirine daha az benzeyen grupları ayırarak ilerliyor.
+
+75
+00:16:35,450 --> 00:16:44,450
+Aslına bakarsanız bu stratejiler içerisinde en akla yatkın ve kolay kurgulanabilen yapının,
+
+76
+00:16:44,450 --> 00:16:53,450
+agglomerative yapı olduğunu, yani aşağıdan yukarıya doğru birleştirerek giden yapının olduğunu söyleyebiliriz.
+
+77
+00:16:53,450 --> 00:17:01,370
+Az önce söylediğimiz şekilde hiyerarşik yöntemleri ikiye ayırdık.
+
+78
+00:17:01,370 --> 00:17:04,369
+Agglomerative ve divisive diye.
+
+79
+00:17:04,369 --> 00:17:09,369
+Agglomerative yapıyı üç bölümde inceleyeceğiz.
+
+80
+00:17:09,369 --> 00:17:15,369
+Bir, örneklerin birbirlerine olan benzerliklerini linkage method dediğimiz,
+
+81
+00:17:15,369 --> 00:17:21,369
+metod ile ölçebiliriz grupların birbirine benzerliğini.
+
+82
+00:17:21,369 --> 00:17:24,369
+İkinci yol varians metodu.
+
+83
+00:17:24,369 --> 00:17:30,369
+Varyansa göre, yani küme içi varyanslarını ölçerek bir yol alabiliriz.
+
+84
+00:17:30,369 --> 00:17:33,369
+Buna VARTS metod deniyor.
+
+85
+00:17:33,369 --> 00:17:37,369
+Ve üçüncüsü centroid metod diye geçiyor.
+
+86
+00:17:37,369 --> 00:17:41,369
+Linkage method,
+
+87
+00:17:41,369 --> 00:17:43,369
+yani
+
+88
+00:17:43,369 --> 00:17:45,369
+kümeler arası ve
+
+89
+00:17:45,369 --> 00:17:52,369
+semplar arası uzaklığı hesaplarken kullanılan yöntemler linkage method da
+
+90
+00:17:52,369 --> 00:17:54,369
+single linkage,
+
+91
+00:17:54,369 --> 00:18:01,369
+complete linkage ve average linkage dediğimiz formda üç şekilde olabiliyor.
+
+92
+00:18:01,369 --> 00:18:06,369
+Bunların her birini tek tek göreceğiz. Bunlarla ilgili örnekler yapacağız.
+
+93
+00:18:06,369 --> 00:18:09,369
+Bu haftaki konu başlığımız tümüyle
+
+94
+00:18:09,369 --> 00:18:14,369
+agglomerative yapı içerisinde bu linkage methodları kullanarak
+
+95
+00:18:15,369 --> 00:18:20,369
+bir hiyerarşik kümeleme yapmak.
+
+96
+00:18:20,369 --> 00:18:23,940
+Amacımız bu.
+
+97
+00:18:23,940 --> 00:18:29,940
+Agglomerative yapı, az önce söylediğim gibi birleştirmeye dayalı bir yapı demiştik.
+
+98
+00:18:29,940 --> 00:18:32,940
+Ve bottom-up strateji kullanıyor.
+
+99
+00:18:32,940 --> 00:18:37,940
+Bottom-up strateji nasıl çalışıyor bir bakacak olursak.
+
+100
+00:18:39,940 --> 00:18:42,940
+Ağacın en altında
+
+101
+00:18:42,940 --> 00:18:44,940
+her sample
+
+102
+00:18:44,940 --> 00:18:46,940
+kendi başına bir
+
+103
+00:18:46,940 --> 00:18:48,940
+atomik kastör
+
+104
+00:18:48,940 --> 00:18:52,940
+olarak varsayılıyor.
+
+105
+00:18:52,940 --> 00:18:53,940
+Yani
+
+106
+00:18:53,940 --> 00:18:55,940
+her objekt
+
+107
+00:18:55,940 --> 00:18:57,940
+kendi başına bir kastörde
+
+108
+00:18:57,940 --> 00:19:00,940
+ve sonra bu atomik kastörü
+
+109
+00:19:00,940 --> 00:19:02,940
+daha büyük ve daha büyük kastörlere
+
+110
+00:19:02,940 --> 00:19:03,940
+karıştırınca,
+
+111
+00:19:03,940 --> 00:19:05,940
+tüm objektlerin
+
+112
+00:19:05,940 --> 00:19:07,940
+bir kastörde olduğuna kadar
+
+113
+00:19:07,940 --> 00:19:08,940
+veya
+
+114
+00:19:08,940 --> 00:19:10,940
+bazı terminasyon durumları
+
+115
+00:19:10,940 --> 00:19:12,940
+satış edilmeye kadar.
+
+116
+00:19:12,940 --> 00:19:13,940
+Biz ne yapacağız?
+
+117
+00:19:13,940 --> 00:19:15,940
+Elimizde atomik kastör dediğimiz,
+
+118
+00:19:15,940 --> 00:19:17,940
+tek bir sampledan oluşan
+
+119
+00:19:17,940 --> 00:19:19,940
+kümeler var.
+
+120
+00:19:19,940 --> 00:19:22,940
+Bu atomik kastörler arasında
+
+121
+00:19:22,940 --> 00:19:24,940
+similarity hesaplayacağız.
+
+122
+00:19:24,940 --> 00:19:26,940
+Benzerlik hesaplayacağız.
+
+123
+00:19:26,940 --> 00:19:28,940
+Birbirine en benzeyen
+
+124
+00:19:28,940 --> 00:19:30,940
+kümeleri
+
+125
+00:19:30,940 --> 00:19:32,940
+adım adım
+
+126
+00:19:32,940 --> 00:19:34,940
+birleştirerek daha büyük
+
+127
+00:19:34,940 --> 00:19:36,940
+kümeler oluşturacağız.
+
+128
+00:19:36,940 --> 00:19:38,940
+Her bir adım
+
+129
+00:19:38,940 --> 00:19:40,940
+ağacın bir seviyesini oluşturacak.
+
+130
+00:19:40,940 --> 00:19:42,940
+Burada
+
+131
+00:19:42,940 --> 00:19:44,940
+nihai durumda
+
+132
+00:19:44,940 --> 00:19:47,940
+bütün objeler
+
+133
+00:19:47,940 --> 00:19:50,940
+tek bir küme içinde kalana kadar
+
+134
+00:19:50,940 --> 00:19:52,940
+ben bu birleştirme işlemini
+
+135
+00:19:52,940 --> 00:19:53,940
+sürdürüp
+
+136
+00:19:53,940 --> 00:19:55,940
+bir complete tree
+
+137
+00:19:55,940 --> 00:19:57,940
+yani bir tamamlanmış bir ağaç
+
+138
+00:19:57,940 --> 00:19:58,940
+oluşturabilirim.
+
+139
+00:19:58,940 --> 00:20:00,940
+Ama benim amacım tabii ki
+
+140
+00:20:00,940 --> 00:20:02,940
+hepsini aynı kümeye koymak değil.
+
+141
+00:20:02,940 --> 00:20:04,940
+Açıkçası amacımız
+
+142
+00:20:04,940 --> 00:20:07,940
+belli bir durma koşulu tanımlayarak
+
+143
+00:20:07,940 --> 00:20:10,940
+hiyerarşik yapı içerisinde
+
+144
+00:20:10,940 --> 00:20:16,400
+kümeleri oluşturmak.
+
+145
+00:20:16,400 --> 00:20:18,400
+Divisive method için
+
+146
+00:20:18,400 --> 00:20:20,400
+bunun tam tersi bir yapıda ilerliyor.
+
+147
+00:20:20,400 --> 00:20:22,400
+Top down strateji deniyor.
+
+148
+00:20:22,400 --> 00:20:24,400
+Reverse of agglomerative
+
+149
+00:20:24,400 --> 00:20:26,400
+hierarchical clustering
+
+150
+00:20:26,400 --> 00:20:28,400
+diye yazmış.
+
+151
+00:20:28,400 --> 00:20:30,400
+Ne yapıyor?
+
+152
+00:20:30,400 --> 00:20:32,400
+Çalışma şeklinde şöyle tanımlanmış.
+
+153
+00:20:32,400 --> 00:20:34,400
+Starting with
+
+154
+00:20:34,400 --> 00:20:36,400
+all objects
+
+155
+00:20:36,400 --> 00:20:38,400
+in one cluster.
+
+156
+00:20:38,400 --> 00:20:40,400
+Yani elimizdeki
+
+157
+00:20:40,400 --> 00:20:42,400
+tüm örnekleri tek bir kümenin
+
+158
+00:20:42,400 --> 00:20:44,400
+içine koyuyoruz. Hepsi birleştirilmiş
+
+159
+00:20:44,400 --> 00:20:46,400
+bir bütün oluşturmuş
+
+160
+00:20:46,400 --> 00:20:48,400
+varsayıyoruz. Daha sonra
+
+161
+00:20:48,400 --> 00:20:50,400
+divisive yöntemde bu kümeleri
+
+162
+00:20:50,400 --> 00:20:52,400
+alt gruplara ayırmaya çalışıyoruz.
+
+163
+00:20:52,400 --> 00:20:54,400
+Ama yani bu alt grupları
+
+164
+00:20:54,400 --> 00:20:56,400
+oluşturmak o kadar kolay bir şey
+
+165
+00:20:56,400 --> 00:20:58,400
+değil açıkçası. Yani agglomerative
+
+166
+00:20:58,400 --> 00:21:00,400
+yapı mantığa
+
+167
+00:21:00,400 --> 00:21:02,400
+ve kurgulamaya daha açık
+
+168
+00:21:02,400 --> 00:21:04,400
+ve daha kolayken bunu kurgulamak
+
+169
+00:21:04,400 --> 00:21:06,400
+o kadar kolay değil. O yüzden çok üzerinde
+
+170
+00:21:06,400 --> 00:21:08,400
+durmayacağım. Divisive sadece
+
+171
+00:21:08,400 --> 00:21:10,400
+teorik olarak böyle bir yöntem
+
+172
+00:21:10,400 --> 00:21:12,400
+vardır deyip geçeceğim.
+
+173
+00:21:12,400 --> 00:21:14,400
+Şimdi gelin
+
+174
+00:21:14,400 --> 00:21:16,400
+yapıyı biraz daha
+
+175
+00:21:16,400 --> 00:21:18,400
+böyle örneklendirerek
+
+176
+00:21:18,400 --> 00:21:20,400
+ilerleyelim.
+
+177
+00:21:20,400 --> 00:21:22,400
+Örneğimiz şöyle olsun.
+
+178
+00:21:22,400 --> 00:21:24,400
+Basit bir data setimiz var.
+
+179
+00:21:24,400 --> 00:21:26,400
+İçinde beş tane
+
+180
+00:21:26,400 --> 00:21:28,400
+sample var. Bakın
+
+181
+00:21:28,400 --> 00:21:30,400
+farklı kaynaklar farklı
+
+182
+00:21:30,400 --> 00:21:32,400
+terminoloji kullanıyor. Burada
+
+183
+00:21:32,400 --> 00:21:34,400
+five objects dediği
+
+184
+00:21:34,400 --> 00:21:36,400
+sample'ı kastediyor.
+
+185
+00:21:36,400 --> 00:21:38,400
+A, B, C, D,
+
+186
+00:21:38,400 --> 00:21:40,400
+E dediği sample'lar var
+
+187
+00:21:40,400 --> 00:21:42,400
+elimizde ve
+
+188
+00:21:42,400 --> 00:21:44,400
+ilk olarak
+
+189
+00:21:44,400 --> 00:21:46,400
+agglomerative yapıdan
+
+190
+00:21:46,400 --> 00:21:48,400
+bahsedeceğim. Agglomerative yapıyı
+
+191
+00:21:48,400 --> 00:21:50,400
+burada
+
+192
+00:21:50,400 --> 00:21:52,400
+agglomerative nesting'den
+
+193
+00:21:52,400 --> 00:21:54,400
+agnes diye kısaltmış.
+
+194
+00:21:54,400 --> 00:21:56,400
+Divisive yapıyı ise divisive
+
+195
+00:21:56,400 --> 00:21:58,400
+analysis'dan Diana diye
+
+196
+00:21:58,400 --> 00:22:00,400
+kısaltmış.
+
+197
+00:22:00,400 --> 00:22:02,400
+Grafikte aşağıda görüyorsunuz.
+
+198
+00:22:02,400 --> 00:22:04,400
+Şimdi ilk olarak
+
+199
+00:22:04,400 --> 00:22:06,400
+birleştirmeye dayalı yapıdan
+
+200
+00:22:06,400 --> 00:22:08,400
+bahsedeceğim. Agglomerative yapıdan
+
+201
+00:22:08,400 --> 00:22:10,400
+bahsedeceğim ve step zero
+
+202
+00:22:10,400 --> 00:22:12,400
+dediği
+
+203
+00:22:12,400 --> 00:22:14,400
+başlangıç adımında
+
+204
+00:22:14,400 --> 00:22:16,400
+agglomerative yapı nasıl çalışıyordu?
+
+205
+00:22:16,400 --> 00:22:18,400
+Her sample
+
+206
+00:22:18,400 --> 00:22:20,400
+atomik bir
+
+207
+00:22:20,400 --> 00:22:22,400
+cluster oluşturuyordu. Görüyorsunuz
+
+208
+00:22:22,400 --> 00:22:24,400
+bakın burada
+
+209
+00:22:24,400 --> 00:22:26,400
+A, B, C, D, E
+
+210
+00:22:26,400 --> 00:22:28,400
+dediğimiz bütün
+
+211
+00:22:28,400 --> 00:22:30,400
+sample'ları
+
+212
+00:22:30,400 --> 00:22:32,400
+kendi
+
+213
+00:22:32,400 --> 00:22:34,400
+içinde bir küme olarak kalmış.
+
+214
+00:22:34,400 --> 00:22:36,400
+Etrafını şöyle çizerek yaptığımız
+
+215
+00:22:36,400 --> 00:22:38,400
+şey bunun bir atomik
+
+216
+00:22:38,400 --> 00:22:41,650
+cluster olduğunu
+
+217
+00:22:41,650 --> 00:22:43,650
+göstermek. Atomic
+
+218
+00:22:43,650 --> 00:22:45,650
+cluster'dan kastım içinde sadece
+
+219
+00:22:45,650 --> 00:22:47,650
+bir tane sample olan bir küme gibi
+
+220
+00:22:47,650 --> 00:22:49,650
+görüyorum ben bunu.
+
+221
+00:22:49,650 --> 00:22:51,650
+Tüm örnekler
+
+222
+00:22:51,650 --> 00:22:53,650
+böyle bir atomic cluster
+
+223
+00:22:53,650 --> 00:22:55,650
+içerisinde ve
+
+224
+00:22:55,650 --> 00:22:57,650
+bu örneklerin
+
+225
+00:22:57,650 --> 00:22:59,650
+her birinin birbirlerine olan
+
+226
+00:22:59,650 --> 00:23:01,650
+similarity'lerini hesaplıyorum.
+
+227
+00:23:01,650 --> 00:23:03,650
+Benzerliklerini hesaplıyorum. Ama bu
+
+228
+00:23:03,650 --> 00:23:05,650
+eğer elimizdeki
+
+229
+00:23:05,650 --> 00:23:07,650
+örnekler nümerikse
+
+230
+00:23:07,650 --> 00:23:09,650
+distance şeklinde de olabilir. Yani
+
+231
+00:23:09,650 --> 00:23:11,650
+ben distance'dan gidebilirim.
+
+232
+00:23:11,650 --> 00:23:13,650
+İki sample arasındaki
+
+233
+00:23:13,650 --> 00:23:15,650
+mesafe ne kadar azsa
+
+234
+00:23:15,650 --> 00:23:17,650
+birbirine o kadar
+
+235
+00:23:17,650 --> 00:23:19,650
+benzerdir
+
+236
+00:23:19,650 --> 00:23:21,650
+diyebiliyoruz.
+
+237
+00:23:21,650 --> 00:23:23,650
+Dolayısıyla buna göre birbirine en
+
+238
+00:23:23,650 --> 00:23:25,650
+yakın olan sample'ları
+
+239
+00:23:25,650 --> 00:23:27,650
+gruplayarak
+
+240
+00:23:27,650 --> 00:23:29,650
+daha büyük
+
+241
+00:23:29,650 --> 00:23:31,650
+kümeler oluşturmaya
+
+242
+00:23:31,650 --> 00:23:33,650
+çalışacağım. Verdiğimiz
+
+243
+00:23:33,650 --> 00:23:35,650
+örnekte step zero
+
+244
+00:23:35,650 --> 00:23:37,650
+dediğimiz adımda elimizde beş
+
+245
+00:23:37,650 --> 00:23:39,650
+tane atomic cluster
+
+246
+00:23:39,650 --> 00:23:41,650
+vardı. Bu
+
+247
+00:23:41,650 --> 00:23:43,650
+atomic cluster'ları
+
+248
+00:23:43,650 --> 00:23:45,650
+aralarında
+
+249
+00:23:45,650 --> 00:23:47,650
+nasıl ölçerek veya similarity
+
+250
+00:23:47,650 --> 00:23:49,650
+ölçerek varsayalım ki
+
+251
+00:23:49,650 --> 00:23:51,650
+A'nın B'ye en benzeyen
+
+252
+00:23:51,650 --> 00:23:53,650
+iki küme olduğunu
+
+253
+00:23:53,650 --> 00:23:55,650
+tespit ettik. Bu durumda
+
+254
+00:23:55,650 --> 00:23:57,650
+step one dediğimiz adımda
+
+255
+00:23:57,650 --> 00:23:59,650
+o
+
+256
+00:23:59,650 --> 00:24:01,650
+benzerlik seviyesinde
+
+257
+00:24:01,650 --> 00:24:03,650
+yani en benzeyen dedik ya
+
+258
+00:24:03,650 --> 00:24:05,650
+en benzeyen iki tane
+
+259
+00:24:05,650 --> 00:24:07,650
+sample'ı belli bir
+
+260
+00:24:07,650 --> 00:24:09,650
+similarity measure ile
+
+261
+00:24:09,650 --> 00:24:11,650
+birleştiriyoruz ve
+
+262
+00:24:11,650 --> 00:24:13,650
+atomic cluster
+
+263
+00:24:13,650 --> 00:24:15,650
+büyüyor. Ne oluyor? Daha büyük bir
+
+264
+00:24:15,650 --> 00:24:17,650
+küme oluyor yani
+
+265
+00:24:17,650 --> 00:24:19,650
+A-B sample'larından oluşan
+
+266
+00:24:19,650 --> 00:24:21,650
+bir küme oluyor.
+
+267
+00:24:23,650 --> 00:24:25,650
+Birinci adımın
+
+268
+00:24:25,650 --> 00:24:27,650
+sonunda benim elimde
+
+269
+00:24:29,650 --> 00:24:31,650
+A-B
+
+270
+00:24:31,650 --> 00:24:33,650
+sample'larından oluşan bir küme
+
+271
+00:24:33,650 --> 00:24:35,650
+bir C
+
+272
+00:24:35,650 --> 00:24:37,650
+kümesi D ve
+
+273
+00:24:37,650 --> 00:24:39,650
+E'den oluşan toplamda
+
+274
+00:24:39,650 --> 00:24:41,650
+dört tane küme var.
+
+275
+00:24:41,650 --> 00:24:43,650
+Birinci adımın
+
+276
+00:24:43,650 --> 00:24:45,650
+sonunda ben tüm
+
+277
+00:24:45,650 --> 00:24:47,650
+kümeler arasında tekrar bir
+
+278
+00:24:47,650 --> 00:24:49,650
+benzerlik ölçüyorum
+
+279
+00:24:49,650 --> 00:24:51,650
+ve varsayalım ki
+
+280
+00:24:51,650 --> 00:24:53,650
+D ve E sample'ları
+
+281
+00:24:53,650 --> 00:24:55,650
+birbirine en benzeyen iki
+
+282
+00:24:55,650 --> 00:24:57,650
+sample oldu
+
+283
+00:24:57,650 --> 00:24:59,650
+ya da küme oldu.
+
+284
+00:24:59,650 --> 00:25:01,650
+Bu durumda ikinci adımda
+
+285
+00:25:01,650 --> 00:25:03,650
+gördüğünüz gibi ikinci adımda
+
+286
+00:25:03,650 --> 00:25:05,650
+D-E sample'larını
+
+287
+00:25:05,650 --> 00:25:07,650
+birleştirerek iki
+
+288
+00:25:07,650 --> 00:25:09,650
+sample'dan oluşan
+
+289
+00:25:09,650 --> 00:25:11,650
+daha büyük bir küme
+
+290
+00:25:11,650 --> 00:25:13,650
+oluşturuyorum.
+
+291
+00:25:13,650 --> 00:25:15,650
+Bu işlemler
+
+292
+00:25:15,650 --> 00:25:17,650
+agglomerative yapıda
+
+293
+00:25:17,650 --> 00:25:19,650
+step
+
+294
+00:25:19,650 --> 00:25:21,650
+three, step four diye
+
+295
+00:25:21,650 --> 00:25:23,650
+baktığımızda birleştire
+
+296
+00:25:23,650 --> 00:25:25,650
+birleştire devam ediyor
+
+297
+00:25:25,650 --> 00:25:27,650
+ve diyebiliriz ki işte
+
+298
+00:25:27,650 --> 00:25:29,650
+dördüncü adımın sonunda
+
+299
+00:25:29,650 --> 00:25:31,650
+ben tüm örnekleri
+
+300
+00:25:31,650 --> 00:25:33,650
+aynı kümenin içine
+
+301
+00:25:33,650 --> 00:25:35,650
+yerleştirdim.
+
+302
+00:25:35,650 --> 00:25:37,650
+Amacım eğer hepsini aynı kümeye koymaksa
+
+303
+00:25:37,650 --> 00:25:39,650
+niye bu kadar yoruldum diyebilirsiniz
+
+304
+00:25:39,650 --> 00:25:41,650
+tabii. Burada
+
+305
+00:25:41,650 --> 00:25:43,650
+dikkat ettiğimiz nokta şu
+
+306
+00:25:43,650 --> 00:25:45,650
+ben bu yapıyı oluşturuyorum
+
+307
+00:25:45,650 --> 00:25:47,650
+oluşturduktan sonra
+
+308
+00:25:47,650 --> 00:25:49,650
+diyorum ki
+
+309
+00:25:49,650 --> 00:25:51,650
+burada bir durma koşulu
+
+310
+00:25:51,650 --> 00:25:53,650
+tanımlayacağım. Mesela diyebilirim ki
+
+311
+00:25:53,650 --> 00:25:55,650
+iki küme kalana kadar
+
+312
+00:25:55,650 --> 00:25:57,650
+bu işi sürdür
+
+313
+00:25:57,650 --> 00:25:59,650
+o zaman üçüncü
+
+314
+00:25:59,650 --> 00:26:01,650
+adımın sonunda
+
+315
+00:26:01,650 --> 00:26:03,650
+üçüncü adımın sonunda dururum
+
+316
+00:26:03,650 --> 00:26:05,650
+ve üçüncü adımın sonunda
+
+317
+00:26:05,650 --> 00:26:07,650
+ne çıkmış benim karşıma
+
+318
+00:26:07,650 --> 00:26:09,650
+A-B sample'larından
+
+319
+00:26:09,650 --> 00:26:11,650
+oluşan bir küme
+
+320
+00:26:11,650 --> 00:26:13,650
+C-D-E sample'larından oluşan
+
+321
+00:26:13,650 --> 00:26:15,650
+bir küme. Bu şekilde iki tane küme
+
+322
+00:26:15,650 --> 00:26:17,650
+elde ettim diyebilirim. Yani durma
+
+323
+00:26:17,650 --> 00:26:19,650
+koşulunu adım sayısı
+
+324
+00:26:19,650 --> 00:26:21,650
+şeklinde verebilirim
+
+325
+00:26:21,650 --> 00:26:23,650
+ya da örneklerde göreceğiz
+
+326
+00:26:23,650 --> 00:26:25,650
+bir
+
+327
+00:26:25,650 --> 00:26:27,650
+distance veya similarity measure'ı
+
+328
+00:26:27,650 --> 00:26:29,650
+eşit değeri olarak tanımlayabiliyoruz.
+
+329
+00:26:29,650 --> 00:26:31,650
+Şu benzerlik ölçüsüne
+
+330
+00:26:31,650 --> 00:26:33,650
+kadar birleştirmeleri
+
+331
+00:26:33,650 --> 00:26:35,650
+gerçekleştir gibi.
+
+332
+00:26:37,650 --> 00:26:39,650
+Birleştirmeye dayalı yöntemi
+
+333
+00:26:39,650 --> 00:26:41,650
+açıkladık. Bu
+
+334
+00:26:41,650 --> 00:26:43,650
+şeklin altında
+
+335
+00:26:43,650 --> 00:26:45,650
+divisiv yöntemden
+
+336
+00:26:45,650 --> 00:26:47,650
+bahsediliyor.
+
+337
+00:26:47,650 --> 00:26:49,650
+Şimdi oraya bakalım.
+
+338
+00:26:49,650 --> 00:26:51,650
+Divisiv dediğimiz
+
+339
+00:26:51,650 --> 00:26:53,650
+yöntem için
+
+340
+00:26:53,650 --> 00:26:55,650
+step zero
+
+341
+00:26:55,650 --> 00:26:57,650
+nerede başlamış?
+
+342
+00:26:57,650 --> 00:26:59,650
+Step zero bütün
+
+343
+00:26:59,650 --> 00:27:01,650
+örneklerin aynı kümenin
+
+344
+00:27:01,650 --> 00:27:03,650
+içinde olduğu
+
+345
+00:27:03,650 --> 00:27:05,650
+durumdan başlamış.
+
+346
+00:27:05,650 --> 00:27:07,650
+Yani beş tane sample'ımız vardı
+
+347
+00:27:07,650 --> 00:27:09,650
+hepsi tek bir kümenin içinde
+
+348
+00:27:09,650 --> 00:27:11,650
+buradan
+
+349
+00:27:11,650 --> 00:27:13,650
+bakın işin zorluluğunu
+
+350
+00:27:13,650 --> 00:27:15,650
+size açıklamaya çalışıyorum.
+
+351
+00:27:15,650 --> 00:27:17,650
+Ben bu sample'ları nasıl
+
+352
+00:27:17,650 --> 00:27:19,650
+birbirine
+
+353
+00:27:19,650 --> 00:27:21,650
+benzer
+
+354
+00:27:21,650 --> 00:27:23,650
+grupları içine
+
+355
+00:27:23,650 --> 00:27:25,650
+alacak şekilde parçalayabilirim.
+
+356
+00:27:25,650 --> 00:27:27,650
+Zor bir iş aslına
+
+357
+00:27:27,650 --> 00:27:29,650
+bakarsanız divisiv yöntemin
+
+358
+00:27:29,650 --> 00:27:31,650
+çalışma mantığını kurgulamak.
+
+359
+00:27:31,650 --> 00:27:33,650
+İşte şimdi ben
+
+360
+00:27:33,650 --> 00:27:35,650
+agglomerative yapıyı kurguladıktan
+
+361
+00:27:35,650 --> 00:27:37,650
+sonra tabi ki divisiv yapıyı
+
+362
+00:27:37,650 --> 00:27:39,650
+bunun üzerinden hemen
+
+363
+00:27:39,650 --> 00:27:41,650
+şu şekilde parçalayacağım diye
+
+364
+00:27:41,650 --> 00:27:43,650
+yazabilirim ama dediğim gibi
+
+365
+00:27:43,650 --> 00:27:45,650
+bu parçalamaya dayalı.
+
+366
+00:27:45,650 --> 00:27:47,650
+yöntem
+
+367
+00:27:47,650 --> 00:27:49,650
+bu beş tane sample'ın
+
+368
+00:27:49,650 --> 00:27:51,650
+A-B sample'larını
+
+369
+00:27:51,650 --> 00:27:53,650
+bir gruba
+
+370
+00:27:53,650 --> 00:27:55,650
+C-D-E sample'larını bir gruba ayırıp
+
+371
+00:27:55,650 --> 00:27:57,650
+ikiye böl demek
+
+372
+00:27:57,650 --> 00:27:59,650
+açıkçası çok kolay
+
+373
+00:27:59,650 --> 00:28:01,650
+bir iş değil.
+
+374
+00:28:01,650 --> 00:28:03,650
+O yüzden biraz teoride
+
+375
+00:28:03,650 --> 00:28:05,650
+kalıyor. Çok uygulamaya
+
+376
+00:28:05,650 --> 00:28:07,650
+dökülemiyor bence.
+
+377
+00:28:07,650 --> 00:28:10,990
+Hierarşik kümelemede
+
+378
+00:28:10,990 --> 00:28:12,990
+arkadaşlar dendogram
+
+379
+00:28:12,990 --> 00:28:14,990
+adını verdiğimiz bir grafik
+
+380
+00:28:14,990 --> 00:28:16,990
+ile bu ağaç benzeri
+
+381
+00:28:16,990 --> 00:28:18,990
+yapı oluşturuluyor.
+
+382
+00:28:18,990 --> 00:28:20,990
+Dendogramın
+
+383
+00:28:20,990 --> 00:28:22,990
+mesela az önce A-B
+
+384
+00:28:22,990 --> 00:28:24,990
+C-D-E ya da
+
+385
+00:28:24,990 --> 00:28:26,990
+F-G-H
+
+386
+00:28:26,990 --> 00:28:28,990
+I dediğim
+
+387
+00:28:28,990 --> 00:28:30,990
+sample'ları olsun. Bunların
+
+388
+00:28:32,990 --> 00:28:34,990
+birleştirilerek nasıl
+
+389
+00:28:34,990 --> 00:28:36,990
+bir araya getirildiğini
+
+390
+00:28:36,990 --> 00:28:38,990
+şurada A ve B'den oluşan bir küme
+
+391
+00:28:38,990 --> 00:28:40,990
+olmuş sonra bu C katılmış
+
+392
+00:28:40,990 --> 00:28:42,990
+bunlara A-B-C
+
+393
+00:28:42,990 --> 00:28:44,990
+bir küme olmuş
+
+394
+00:28:44,990 --> 00:28:46,990
+gibi
+
+395
+00:28:46,990 --> 00:28:48,990
+bu işlemleri temsil eden
+
+396
+00:28:48,990 --> 00:28:50,990
+bir grafik çiziliyor.
+
+397
+00:28:50,990 --> 00:28:52,990
+Bu yapının
+
+398
+00:28:52,990 --> 00:28:54,990
+adı dendogram.
+
+399
+00:28:54,990 --> 00:28:56,990
+Biz de uygulamalarımızda
+
+400
+00:28:56,990 --> 00:28:58,990
+bu
+
+401
+00:28:58,990 --> 00:29:00,990
+tür bir dendogram ile
+
+402
+00:29:00,990 --> 00:29:02,990
+hierarşik kümeleme
+
+403
+00:29:02,990 --> 00:29:04,990
+işleminin
+
+404
+00:29:04,990 --> 00:29:06,990
+nasıl yapıldığını
+
+405
+00:29:06,990 --> 00:29:08,990
+göstereceğiz.
+
+406
+00:29:08,990 --> 00:29:12,819
+Şimdi
+
+407
+00:29:12,819 --> 00:29:14,819
+az önce bir
+
+408
+00:29:14,819 --> 00:29:16,819
+agglomerative
+
+409
+00:29:16,819 --> 00:29:18,799
+yöntemi üçe ayırt
+
+410
+00:29:18,799 --> 00:29:20,799
+ayırmıştık.
+
+411
+00:29:20,799 --> 00:29:24,170
+Linkage
+
+412
+00:29:24,170 --> 00:29:26,170
+metod dediğimiz
+
+413
+00:29:26,170 --> 00:29:28,170
+metod da
+
+414
+00:29:28,170 --> 00:29:30,170
+işte
+
+415
+00:29:30,170 --> 00:29:32,170
+kümeler arası benzerliği
+
+416
+00:29:32,170 --> 00:29:34,170
+hesaplamada
+
+417
+00:29:34,170 --> 00:29:36,170
+kullandığımız tekniklerden
+
+418
+00:29:36,170 --> 00:29:38,170
+bahsettik.
+
+419
+00:29:38,170 --> 00:29:40,170
+Hemen
+
+420
+00:29:40,170 --> 00:29:42,170
+şöyle dönüp bakacak olursak
+
+421
+00:29:42,170 --> 00:29:44,170
+single linkage
+
+422
+00:29:44,170 --> 00:29:46,170
+complete linkage
+
+423
+00:29:46,170 --> 00:29:48,170
+ve average
+
+424
+00:29:48,170 --> 00:29:50,170
+linkage şeklinde
+
+425
+00:29:50,170 --> 00:29:52,170
+çözümler vardı.
+
+426
+00:29:52,170 --> 00:29:54,170
+Şimdi bunları biraz konuşacağız.
+
+427
+00:29:54,170 --> 00:29:58,700
+Agglomerative
+
+428
+00:29:58,700 --> 00:30:00,700
+yöntemde
+
+429
+00:30:00,700 --> 00:30:02,700
+aslında
+
+430
+00:30:02,700 --> 00:30:04,700
+size şunu sormam
+
+431
+00:30:04,700 --> 00:30:06,700
+gerekir.
+
+432
+00:30:06,700 --> 00:30:08,700
+Biz birleştirerek örnekleri
+
+433
+00:30:08,700 --> 00:30:10,700
+daha büyük gruplar
+
+434
+00:30:10,700 --> 00:30:12,700
+oluşturuyoruz.
+
+435
+00:30:12,700 --> 00:30:14,700
+Ancak biz bugüne
+
+436
+00:30:14,700 --> 00:30:16,700
+kadarki derslerimizde
+
+437
+00:30:16,700 --> 00:30:18,700
+sadece şunu yaptık.
+
+438
+00:30:18,700 --> 00:30:20,700
+Bir örneğin, bir sample'ın
+
+439
+00:30:20,700 --> 00:30:22,700
+bir başka sample'a olan
+
+440
+00:30:22,700 --> 00:30:24,700
+uzaklığını hesapladık. Yani şöyle
+
+441
+00:30:24,700 --> 00:30:26,700
+düşünün, düzlemdesiniz.
+
+442
+00:30:26,700 --> 00:30:28,700
+Düzlemde elinizde bir sample
+
+443
+00:30:28,700 --> 00:30:30,700
+var, bir başka sample
+
+444
+00:30:30,700 --> 00:30:32,700
+var. Bu iki sample
+
+445
+00:30:32,700 --> 00:30:34,700
+arasında mesela
+
+446
+00:30:34,700 --> 00:30:36,700
+di virgül j deyip
+
+447
+00:30:36,700 --> 00:30:38,700
+i sample ile j sample arasında
+
+448
+00:30:38,700 --> 00:30:40,700
+distance hesapladım ve bu distance
+
+449
+00:30:40,700 --> 00:30:42,700
+üzerinden bu iki
+
+450
+00:30:42,700 --> 00:30:44,700
+sample'ın birbirine ne kadar benzediğini
+
+451
+00:30:44,700 --> 00:30:46,700
+ifade ettim.
+
+452
+00:30:46,700 --> 00:30:48,700
+Ama şimdi işler
+
+453
+00:30:48,700 --> 00:30:50,700
+değişti. Neden değişti? Çünkü
+
+454
+00:30:50,700 --> 00:30:52,700
+şöyle düşünün, benim elimde
+
+455
+00:30:52,700 --> 00:30:54,700
+üç elemanlı bir
+
+456
+00:30:54,700 --> 00:30:56,700
+bu da Gülen 100'e benzedi.
+
+457
+00:30:56,700 --> 00:30:58,700
+Üç elemanlı bir
+
+458
+00:30:58,700 --> 00:31:00,700
+cluster mı olsun?
+
+459
+00:31:00,700 --> 00:31:02,700
+Aynı yere de getiremiyorum.
+
+460
+00:31:02,700 --> 00:31:04,700
+Üç elemanlı bir
+
+461
+00:31:04,700 --> 00:31:06,700
+cluster mı olsun? Burada da bir
+
+462
+00:31:06,700 --> 00:31:08,700
+başka küme var. İçinde
+
+463
+00:31:08,700 --> 00:31:10,700
+dört tane
+
+464
+00:31:10,700 --> 00:31:12,700
+sample olsun. Bu
+
+465
+00:31:12,700 --> 00:31:14,700
+iki kümenin c1, c2
+
+466
+00:31:14,700 --> 00:31:16,700
+clusterları diyelim. Bu
+
+467
+00:31:16,700 --> 00:31:18,700
+iki kümenin birbirine benzerliğini
+
+468
+00:31:18,700 --> 00:31:20,700
+ya da birbirine olan
+
+469
+00:31:20,700 --> 00:31:22,700
+uzaklığını hesaplamak.
+
+470
+00:31:22,700 --> 00:31:27,609
+durumundayım. O zaman
+
+471
+00:31:27,609 --> 00:31:29,609
+işler değişti. Yani
+
+472
+00:31:29,609 --> 00:31:31,609
+benim burada bir takım
+
+473
+00:31:31,609 --> 00:31:33,609
+düzenlemeler yapmam gerekiyor.
+
+474
+00:31:33,609 --> 00:31:35,609
+Şimdi bunları
+
+475
+00:31:35,609 --> 00:31:37,609
+temsil etmek için
+
+476
+00:31:37,609 --> 00:31:39,609
+distance between clusters
+
+477
+00:31:39,609 --> 00:31:41,609
+diye bir başlık
+
+478
+00:31:41,609 --> 00:31:43,609
+açtık buraya.
+
+479
+00:31:43,609 --> 00:31:45,609
+Kümeler arası uzaklığı
+
+480
+00:31:45,609 --> 00:31:47,609
+nasıl
+
+481
+00:31:47,609 --> 00:31:49,609
+hesaplarız?
+
+482
+00:31:49,609 --> 00:31:51,609
+Kümeler arası uzaklığı
+
+483
+00:31:51,609 --> 00:31:53,609
+nasıl hesaplarız?
+
+484
+00:31:53,609 --> 00:31:55,609
+Burada
+
+485
+00:31:55,609 --> 00:31:58,890
+four widely used
+
+486
+00:31:58,890 --> 00:32:00,890
+measures for distance
+
+487
+00:32:00,890 --> 00:32:02,890
+between clusters
+
+488
+00:32:02,890 --> 00:32:04,890
+are as follows demiş.
+
+489
+00:32:04,890 --> 00:32:06,890
+Dört tane yaygın kullanılan
+
+490
+00:32:06,890 --> 00:32:08,890
+yöntemden bahsedeceğiz.
+
+491
+00:32:08,890 --> 00:32:10,890
+Bunlar minimum
+
+492
+00:32:10,890 --> 00:32:12,890
+distance, maximum distance,
+
+493
+00:32:12,890 --> 00:32:14,890
+mean distance ve average distance
+
+494
+00:32:14,890 --> 00:32:16,890
+yöntemleri.
+
+495
+00:32:16,890 --> 00:32:18,890
+Bunları
+
+496
+00:32:18,890 --> 00:32:20,890
+bunları
+
+497
+00:32:20,890 --> 00:32:22,890
+tabi slide'da yoktu
+
+498
+00:32:22,890 --> 00:32:24,890
+diye hatırlıyorum.
+
+499
+00:32:24,890 --> 00:32:26,890
+Ben şimdi yazacağım size.
+
+500
+00:32:26,890 --> 00:32:28,890
+Bu distance'ları.
+
+501
+00:32:28,890 --> 00:32:30,890
+Aslında kolay, oldukça kolay.
+
+502
+00:32:30,890 --> 00:32:46,170
+Burada
+
+503
+00:32:46,170 --> 00:32:48,170
+bir notasyon vermiş.
+
+504
+00:32:48,170 --> 00:32:50,170
+Notasyonda
+
+505
+00:32:50,170 --> 00:32:52,170
+şu
+
+506
+00:32:52,170 --> 00:32:54,170
+gördüğümüz notasyon
+
+507
+00:32:54,170 --> 00:32:56,170
+P ve P üstü
+
+508
+00:32:56,170 --> 00:32:58,170
+dediği iki tane
+
+509
+00:32:58,170 --> 00:33:00,170
+point ya da
+
+510
+00:33:00,170 --> 00:33:02,170
+bizim data mining'deki
+
+511
+00:33:02,170 --> 00:33:04,170
+tabirimizle
+
+512
+00:33:04,170 --> 00:33:06,170
+örnek, sample'lar arasındaki
+
+513
+00:33:06,170 --> 00:33:08,170
+uzaklığı gösteriyor.
+
+514
+00:33:08,170 --> 00:33:10,170
+P bir kümenin
+
+515
+00:33:10,170 --> 00:33:12,170
+içindeki örnek
+
+516
+00:33:12,170 --> 00:33:14,170
+P üstü dediği
+
+517
+00:33:14,170 --> 00:33:16,170
+diğer kümenin
+
+518
+00:33:16,170 --> 00:33:18,170
+içindeki örneği
+
+519
+00:33:18,170 --> 00:33:20,170
+ifade ediyor.
+
+520
+00:33:20,170 --> 00:33:22,170
+Bu yapacağımız
+
+521
+00:33:22,170 --> 00:33:24,170
+yazacağımız
+
+522
+00:33:24,170 --> 00:33:26,170
+formüllerde
+
+523
+00:33:26,170 --> 00:33:28,170
+Mi dediğimiz değer
+
+524
+00:33:28,170 --> 00:33:30,170
+Ci cluster'ının
+
+525
+00:33:30,170 --> 00:33:32,170
+merkez noktasını
+
+526
+00:33:32,170 --> 00:33:34,170
+gösteriyor olacak.
+
+527
+00:33:34,170 --> 00:33:36,170
+Ni ise
+
+528
+00:33:36,170 --> 00:33:38,170
+yine Ci dediğimiz kümenin
+
+529
+00:33:38,170 --> 00:33:40,170
+içerisindeki
+
+530
+00:33:40,170 --> 00:33:42,170
+zaman sayısını
+
+531
+00:33:42,170 --> 00:33:44,170
+gösteriyor olacak.
+
+532
+00:33:44,170 --> 00:33:46,170
+Oldukça basit aslında.
+
+533
+00:33:46,170 --> 00:33:48,170
+Minimum distance için
+
+534
+00:33:48,170 --> 00:33:50,170
+şöyle yazalım.
+
+535
+00:33:50,170 --> 00:33:54,349
+D minimum
+
+536
+00:33:54,349 --> 00:33:56,349
+Ci virgül
+
+537
+00:33:56,349 --> 00:33:58,349
+Cj
+
+538
+00:33:58,349 --> 00:34:00,349
+diyelim.
+
+539
+00:34:00,349 --> 00:34:02,349
+Yapmamız gereken
+
+540
+00:34:02,349 --> 00:34:05,920
+minimum
+
+541
+00:34:05,920 --> 00:34:09,900
+P eksi
+
+542
+00:34:09,900 --> 00:34:11,900
+P üstü değerini
+
+543
+00:34:11,900 --> 00:34:13,900
+bulmak.
+
+544
+00:34:13,900 --> 00:34:15,900
+Burada P
+
+545
+00:34:15,900 --> 00:34:17,900
+kümesinin elemanı iken
+
+546
+00:34:17,900 --> 00:34:19,900
+P üstü
+
+547
+00:34:19,900 --> 00:34:21,900
+C
+
+548
+00:34:21,900 --> 00:34:23,900
+Ci'nin elemanı iken öbürü
+
+549
+00:34:23,900 --> 00:34:25,900
+Cj'nin elemanı olacak.
+
+550
+00:34:25,900 --> 00:34:27,900
+Bu şu demek
+
+551
+00:34:27,900 --> 00:34:29,900
+ağzına bakarsanız.
+
+552
+00:34:29,900 --> 00:34:31,900
+Az önce çizdiğimiz
+
+553
+00:34:31,900 --> 00:34:33,900
+formuyla varsayalım ki
+
+554
+00:34:33,900 --> 00:34:35,900
+bir kümede 3 tane sample var.
+
+555
+00:34:35,900 --> 00:34:37,900
+Diğer kümede ise 4 tane
+
+556
+00:34:37,900 --> 00:34:39,900
+sample var.
+
+557
+00:34:39,900 --> 00:34:41,900
+Şöyle
+
+558
+00:34:41,900 --> 00:34:43,900
+Bu C1 olsun
+
+559
+00:34:43,900 --> 00:34:45,900
+2 kümesi olsun.
+
+560
+00:34:45,900 --> 00:34:47,900
+C1 kümesinin
+
+561
+00:34:47,900 --> 00:34:49,900
+içerisinde 3 tane sample
+
+562
+00:34:49,900 --> 00:34:51,900
+var. Yani P sample'ları
+
+563
+00:34:51,900 --> 00:34:53,900
+dediğimiz sample'larımız.
+
+564
+00:34:53,900 --> 00:34:55,900
+Diğer kümenin
+
+565
+00:34:55,900 --> 00:34:57,900
+elemanlarına ise P üstü
+
+566
+00:34:57,900 --> 00:34:59,900
+dedik. Böylece
+
+567
+00:34:59,900 --> 00:35:01,900
+aslında şunu yapmamız gerekiyor.
+
+568
+00:35:01,900 --> 00:35:03,900
+C1 kümesinin içerisindeki
+
+569
+00:35:03,900 --> 00:35:05,900
+her noktanın
+
+570
+00:35:05,900 --> 00:35:07,900
+her noktanın
+
+571
+00:35:07,900 --> 00:35:09,900
+C2 kümesi
+
+572
+00:35:09,900 --> 00:35:11,900
+içerisindeki
+
+573
+00:35:11,900 --> 00:35:13,900
+noktaları olan uzaklıklarını
+
+574
+00:35:13,900 --> 00:35:15,900
+hesaplamam gerekiyor.
+
+575
+00:35:15,900 --> 00:35:17,900
+Aynı şekilde diğer noktanın da
+
+576
+00:35:17,900 --> 00:35:19,900
+tüm sample'ları olan uzaklıklarını
+
+577
+00:35:19,900 --> 00:35:21,900
+karşı kümenin
+
+578
+00:35:21,900 --> 00:35:23,900
+elemanlarına olan uzaklıklarını
+
+579
+00:35:23,900 --> 00:35:25,900
+hesaplayacağım. Ve bu uzaklıklar
+
+580
+00:35:25,900 --> 00:35:27,900
+içerisinde minimum olanı
+
+581
+00:35:27,900 --> 00:35:29,900
+seçeceğim. Yani
+
+582
+00:35:29,900 --> 00:35:31,900
+diğer bir
+
+583
+00:35:31,900 --> 00:35:33,900
+deyişle iki kümenin birbirine en
+
+584
+00:35:33,900 --> 00:35:35,900
+yakın iki elemanı arasındaki
+
+585
+00:35:35,900 --> 00:35:37,900
+uzaklığı
+
+586
+00:35:37,900 --> 00:35:39,900
+iki kümenin birbirleri arasındaki
+
+587
+00:35:39,900 --> 00:35:41,900
+Distance olarak kabul
+
+588
+00:35:41,900 --> 00:35:43,900
+oluyoruz.
+
+589
+00:35:43,900 --> 00:35:45,900
+Minimum Distance dediğimiz
+
+590
+00:35:45,900 --> 00:35:47,900
+ifadede.
+
+591
+00:35:47,900 --> 00:35:49,900
+Maximum Distance bunun tam
+
+592
+00:35:49,900 --> 00:35:51,900
+tersi. Bu uzaklıkları
+
+593
+00:35:51,900 --> 00:35:53,900
+bulduktan sonra birbirine en
+
+594
+00:35:53,900 --> 00:35:55,900
+uzak iki sample arasındaki
+
+595
+00:35:55,900 --> 00:35:57,900
+mesafeyi iki
+
+596
+00:35:57,900 --> 00:35:59,900
+kümenin birbirine uzaklığı olarak
+
+597
+00:35:59,900 --> 00:36:03,980
+alıyoruz.
+
+598
+00:36:03,980 --> 00:36:05,980
+Mean Distance dediğimiz bir
+
+599
+00:36:05,980 --> 00:36:07,980
+Distance var. Bu da
+
+600
+00:36:07,980 --> 00:36:09,980
+aslında
+
+601
+00:36:09,980 --> 00:36:11,980
+şurada
+
+602
+00:36:11,980 --> 00:36:13,980
+Centroid
+
+603
+00:36:13,980 --> 00:36:15,980
+olarak tabir edilen
+
+604
+00:36:15,980 --> 00:36:20,699
+Centroid Method diye
+
+605
+00:36:20,699 --> 00:36:22,699
+tabir edilen yönteme karşı düşüyor
+
+606
+00:36:22,699 --> 00:36:24,699
+aslında. Her iki kümenin
+
+607
+00:36:24,699 --> 00:36:26,699
+merkez noktasını bulurum.
+
+608
+00:36:26,699 --> 00:36:28,699
+Bu merkez noktalarının birbirlerine
+
+609
+00:36:28,699 --> 00:36:30,699
+olan uzaklığını alırım.
+
+610
+00:36:30,699 --> 00:36:32,699
+Mean Distance bu. Yani
+
+611
+00:36:32,699 --> 00:36:34,699
+şunu yazmak gerekirse
+
+612
+00:36:34,699 --> 00:36:36,699
+d mean
+
+613
+00:36:36,699 --> 00:36:38,699
+ci virgül
+
+614
+00:36:38,699 --> 00:36:40,699
+cj
+
+615
+00:36:40,699 --> 00:36:42,699
+için
+
+616
+00:36:42,699 --> 00:36:44,699
+i kümesinin
+
+617
+00:36:44,699 --> 00:36:46,699
+merkezi mi
+
+618
+00:36:46,699 --> 00:36:48,699
+j kümesinin merkezi
+
+619
+00:36:48,699 --> 00:36:50,699
+ve j olsun. Bu ikisi
+
+620
+00:36:50,699 --> 00:36:52,699
+arasındaki Distance
+
+621
+00:36:52,699 --> 00:36:54,699
+bu iki kümenin birbirine uzaklığıdır
+
+622
+00:36:54,699 --> 00:36:56,699
+şeklinde yazabilirim.
+
+623
+00:36:56,699 --> 00:37:06,280
+Ve son olarak
+
+624
+00:37:06,280 --> 00:37:08,280
+Average Distance'ı yazacağım.
+
+625
+00:37:08,280 --> 00:37:10,280
+Ortalama
+
+626
+00:37:10,280 --> 00:37:12,280
+uzaklık
+
+627
+00:37:12,280 --> 00:37:14,280
+bunu da şöyle yazayım
+
+628
+00:37:21,519 --> 00:37:23,519
+Average Distance
+
+629
+00:37:23,519 --> 00:37:27,530
+i kümesi ile
+
+630
+00:37:27,530 --> 00:37:29,530
+j kümesi arasındaki
+
+631
+00:37:29,530 --> 00:37:31,530
+Average Distance'ı
+
+632
+00:37:31,530 --> 00:37:33,530
+hesaplamak istiyorum.
+
+633
+00:37:33,530 --> 00:37:35,530
+Bir bölü
+
+634
+00:37:35,530 --> 00:37:37,530
+ne i
+
+635
+00:37:37,530 --> 00:37:39,530
+çarpı ne j
+
+636
+00:37:46,679 --> 00:37:48,679
+i kümesinin içindeki
+
+637
+00:37:48,679 --> 00:37:50,679
+tüm elemanların
+
+638
+00:37:50,679 --> 00:37:52,679
+j kümesinin içindeki
+
+639
+00:37:52,679 --> 00:37:54,679
+tüm elemanlara uzaklıkları
+
+640
+00:37:54,679 --> 00:37:56,679
+hesaplanıyor. Bunlar toplanarak
+
+641
+00:37:56,679 --> 00:37:58,679
+toplanarak
+
+642
+00:38:00,679 --> 00:38:05,079
+toplam
+
+643
+00:38:05,079 --> 00:38:07,079
+mesafe sayısına bölünüyor
+
+644
+00:38:07,079 --> 00:38:09,079
+ve ortalama mesafe bulunuyor.
+
+645
+00:38:09,079 --> 00:38:11,079
+p elemanıdır
+
+646
+00:38:11,079 --> 00:38:13,079
+ci
+
+647
+00:38:13,079 --> 00:38:15,079
+p üssü elemanıdır
+
+648
+00:38:15,079 --> 00:38:17,079
+c j diyelim
+
+649
+00:38:17,079 --> 00:38:19,079
+p eksi
+
+650
+00:38:19,079 --> 00:38:21,079
+p üssü mesafelerinin
+
+651
+00:38:21,079 --> 00:38:23,079
+toplamını
+
+652
+00:38:23,079 --> 00:38:25,079
+en i çarpı en j ye böldüm
+
+653
+00:38:25,079 --> 00:38:27,079
+böylece bir ortalama
+
+654
+00:38:27,079 --> 00:38:29,079
+mesafe bulmuş
+
+655
+00:38:29,079 --> 00:38:31,079
+oldum. Evet
+
+656
+00:38:31,079 --> 00:38:33,079
+yani az önce söylediğim
+
+657
+00:38:33,079 --> 00:38:35,079
+gibi iki sample arasında
+
+658
+00:38:35,079 --> 00:38:37,079
+uzaklık hesaplamak ayrı bir şey
+
+659
+00:38:37,079 --> 00:38:39,079
+iki küme arasında
+
+660
+00:38:39,079 --> 00:38:41,079
+uzaklık hesaplamak ayrı bir şey
+
+661
+00:38:41,079 --> 00:38:43,079
+küme dediğimiz zaman
+
+662
+00:38:43,079 --> 00:38:45,079
+birden fazla elemanı var
+
+663
+00:38:45,079 --> 00:38:47,079
+dolayısıyla işte
+
+664
+00:38:47,079 --> 00:38:49,079
+burada gördüğümüz
+
+665
+00:38:49,079 --> 00:38:51,079
+yöntemleri
+
+666
+00:38:51,079 --> 00:38:58,239
+kullanıyoruz
+
+667
+00:38:58,239 --> 00:39:00,239
+chat ekranımı da açayım soru
+
+668
+00:39:00,239 --> 00:39:02,239
+soran oluyor mu olur mu
+
+669
+00:39:02,239 --> 00:39:04,239
+bakalım var mı sorunuz
+
+670
+00:39:04,239 --> 00:39:07,840
+şunu da şöyle kenara aldık
+
+671
+00:39:07,840 --> 00:39:12,360
+peki
+
+672
+00:39:12,360 --> 00:39:14,360
+şimdi
+
+673
+00:39:14,360 --> 00:39:18,190
+elimizdeki hiyerarşik küme
+
+674
+00:39:18,190 --> 00:39:20,190
+algoritmaları burada
+
+675
+00:39:20,190 --> 00:39:22,190
+kullanılan distance measure'a göre
+
+676
+00:39:22,190 --> 00:39:24,190
+yani kümeler arasındaki uzaklığı
+
+677
+00:39:24,190 --> 00:39:26,190
+hesaplama tekniğine göre
+
+678
+00:39:26,190 --> 00:39:28,190
+değişik isimler alıyor
+
+679
+00:39:28,190 --> 00:39:30,190
+eğer
+
+680
+00:39:30,190 --> 00:39:32,190
+kümeler arasında uzaklık hesaplamada
+
+681
+00:39:32,190 --> 00:39:34,190
+minimum distance
+
+682
+00:39:34,190 --> 00:39:37,630
+kullanılmışsa
+
+683
+00:39:37,630 --> 00:39:39,630
+i ve j kümesi arasındaki uzaklığı
+
+684
+00:39:39,630 --> 00:39:41,630
+hesaplamada minimum distance
+
+685
+00:39:41,630 --> 00:39:43,630
+kullanılmışsa yöntemin adı
+
+686
+00:39:43,630 --> 00:39:45,630
+single linkage
+
+687
+00:39:45,630 --> 00:39:47,630
+algoritm oluyor
+
+688
+00:39:47,630 --> 00:39:52,889
+eğer
+
+689
+00:39:52,889 --> 00:39:54,889
+maximum distance
+
+690
+00:39:54,889 --> 00:39:56,889
+kullanılmışsa
+
+691
+00:39:56,889 --> 00:39:58,889
+yöntemin adı
+
+692
+00:39:58,889 --> 00:40:00,889
+complete linkage
+
+693
+00:40:00,889 --> 00:40:06,480
+algoritm oluyor
+
+694
+00:40:06,480 --> 00:40:08,480
+tabi alternatiflerimiz
+
+695
+00:40:08,480 --> 00:40:10,480
+alternatif yöntemlerimiz de var
+
+696
+00:40:10,480 --> 00:40:12,480
+burada linkage methods of
+
+697
+00:40:12,480 --> 00:40:14,480
+clustering de bir grafiksel
+
+698
+00:40:14,480 --> 00:40:16,480
+gösterim var
+
+699
+00:40:16,480 --> 00:40:18,480
+birinci küme
+
+700
+00:40:18,480 --> 00:40:20,480
+ve ikinci küme dediğimiz iki küme
+
+701
+00:40:20,480 --> 00:40:22,480
+var birinci kümenin içerisinde
+
+702
+00:40:22,480 --> 00:40:24,480
+iki tane sample
+
+703
+00:40:24,480 --> 00:40:27,980
+var diğerinin
+
+704
+00:40:27,980 --> 00:40:29,980
+içinde de iki sample
+
+705
+00:40:29,980 --> 00:40:31,980
+buraya bir üçüncüyü de koyabilirdim
+
+706
+00:40:31,980 --> 00:40:33,980
+hiç önemli değil
+
+707
+00:40:33,980 --> 00:40:37,360
+hadi olsun three samples
+
+708
+00:40:37,360 --> 00:40:39,360
+şimdi buna göre
+
+709
+00:40:39,360 --> 00:40:41,360
+minimum distance'ın
+
+710
+00:40:41,360 --> 00:40:43,360
+yaptığı şey
+
+711
+00:40:43,360 --> 00:40:45,360
+iki kümenin birbirine en yakın
+
+712
+00:40:45,360 --> 00:40:47,360
+iki elemanı arasındaki uzaklığı
+
+713
+00:40:47,360 --> 00:40:49,360
+kümeler arası uzaklık olarak alıyordu
+
+714
+00:40:51,360 --> 00:40:53,360
+complete linkage
+
+715
+00:40:53,360 --> 00:40:55,360
+birbirine en uzak
+
+716
+00:40:55,360 --> 00:40:57,360
+iki sample arasındaki uzaklığı
+
+717
+00:40:57,360 --> 00:40:59,360
+alıyordu
+
+718
+00:40:59,360 --> 00:41:01,360
+average linkage
+
+719
+00:41:01,360 --> 00:41:03,360
+yöntemi ise ortalamayı alıp
+
+720
+00:41:03,360 --> 00:41:05,360
+bu şekilde bir
+
+721
+00:41:05,360 --> 00:41:07,360
+bir
+
+722
+00:41:07,360 --> 00:41:09,360
+mesafe buluyor iki
+
+723
+00:41:09,360 --> 00:41:11,360
+küme arasında
+
+724
+00:41:11,360 --> 00:41:13,360
+bunlar alternatiflerimiz
+
+725
+00:41:13,360 --> 00:41:15,360
+literatürde ve mesela
+
+726
+00:41:15,360 --> 00:41:17,360
+veka altında hierarşik
+
+727
+00:41:17,360 --> 00:41:19,360
+kümeleme algoritmasını seçip
+
+728
+00:41:19,360 --> 00:41:21,360
+orada
+
+729
+00:41:21,360 --> 00:41:23,360
+hangi mesafe
+
+730
+00:41:23,360 --> 00:41:25,360
+ölçüsünü kullanacağınızı
+
+731
+00:41:25,360 --> 00:41:27,360
+parametreler arasında siz
+
+732
+00:41:27,360 --> 00:41:29,360
+belirleyebiliyorsunuz
+
+733
+00:41:29,360 --> 00:41:31,360
+buna göre hangisini
+
+734
+00:41:31,360 --> 00:41:33,360
+kullanacağınıza karar verebiliyorsunuz
+
+735
+00:41:33,360 --> 00:41:35,360
+peki burada size bir soru sorayım
+
+736
+00:41:37,360 --> 00:41:39,360
+single linkage ve
+
+737
+00:41:39,360 --> 00:41:41,360
+complete linkage için bakacak olursak
+
+738
+00:41:41,360 --> 00:41:43,360
+sizce bunların
+
+739
+00:41:43,360 --> 00:41:45,360
+bunu kullanmanın
+
+740
+00:41:45,360 --> 00:41:47,360
+bu iki yöntemi kullanmanın
+
+741
+00:41:49,360 --> 00:41:51,360
+dezavantajı nedir
+
+742
+00:41:51,360 --> 00:41:56,239
+çok yaygın
+
+743
+00:41:56,239 --> 00:41:58,239
+kullanılıyor ama bir dezavantajı
+
+744
+00:41:58,239 --> 00:42:00,239
+var ne olabilir
+
+745
+00:42:00,239 --> 00:42:08,829
+ne dersiniz sevgili arkadaşlar
+
+746
+00:42:08,829 --> 00:42:10,829
+beni dinliyor musunuz
+
+747
+00:42:10,829 --> 00:42:12,829
+ben kendi kendime mi konuşuyorum acaba
+
+748
+00:42:12,829 --> 00:42:17,039
+ayrık noktalar
+
+749
+00:42:17,039 --> 00:42:19,039
+olabilir mi
+
+750
+00:42:19,039 --> 00:42:21,039
+yani
+
+751
+00:42:21,039 --> 00:42:23,039
+aykırı noktalar
+
+752
+00:42:23,039 --> 00:42:25,039
+aykırı değerler
+
+753
+00:42:25,039 --> 00:42:27,039
+aykırı değerler evet
+
+754
+00:42:27,039 --> 00:42:29,039
+aykırı değer ya da gürültü dediğimiz
+
+755
+00:42:29,039 --> 00:42:31,039
+verinin dağılımına uymayan
+
+756
+00:42:31,039 --> 00:42:33,039
+noktalar olabilir mesela şöyle bir
+
+757
+00:42:33,039 --> 00:42:35,039
+örnek düşünün size
+
+758
+00:42:35,039 --> 00:42:37,039
+bir örnek data dağılımı
+
+759
+00:42:37,039 --> 00:42:39,039
+vereyim normalde sample'ların
+
+760
+00:42:39,039 --> 00:42:41,039
+birbirine yakınlığı şöyle olsun
+
+761
+00:42:41,039 --> 00:42:43,039
+ama bu data'nın içerisinde
+
+762
+00:42:43,039 --> 00:42:45,039
+yani bu kümenin içerisinde
+
+763
+00:42:45,039 --> 00:42:47,039
+öyle düşünün ki şurada bir tane
+
+764
+00:42:47,039 --> 00:42:49,039
+sample var
+
+765
+00:42:49,039 --> 00:42:51,039
+diğer küme de varsayalım ki
+
+766
+00:42:51,039 --> 00:42:53,039
+şurada yerleşmiş olsun
+
+767
+00:42:53,039 --> 00:42:55,039
+onun da genel dağılımı
+
+768
+00:42:55,039 --> 00:42:57,039
+mesela
+
+769
+00:42:57,039 --> 00:42:59,039
+şöyle olsun
+
+770
+00:42:59,039 --> 00:43:01,039
+örnekler hep bu yönde toplanmış
+
+771
+00:43:01,039 --> 00:43:03,039
+ama bir tane sample'ı şurada
+
+772
+00:43:03,039 --> 00:43:05,039
+yerleşmiş olabilir
+
+773
+00:43:05,039 --> 00:43:07,039
+şimdi siz bu iki küme arasındaki
+
+774
+00:43:07,039 --> 00:43:09,039
+uzaklığı
+
+775
+00:43:09,039 --> 00:43:11,039
+şu ikisi arasındaki uzaklık diye belirleyin
+
+776
+00:43:11,039 --> 00:43:13,039
+belirliyorsunuz
+
+777
+00:43:13,039 --> 00:43:15,039
+nedir bu yöntemler
+
+778
+00:43:15,039 --> 00:43:17,039
+yani single linkage ve
+
+779
+00:43:17,039 --> 00:43:19,039
+complete linkage dediğimiz yöntemler
+
+780
+00:43:19,039 --> 00:43:21,039
+aslında
+
+781
+00:43:21,039 --> 00:43:23,039
+aykırı değerlere
+
+782
+00:43:23,039 --> 00:43:25,039
+veya gürültüye çok
+
+783
+00:43:25,039 --> 00:43:27,039
+hassas yöntemlerdir
+
+784
+00:43:27,039 --> 00:43:29,039
+o yüzden çok ideal
+
+785
+00:43:29,039 --> 00:43:31,039
+yöntemler değil ama neden
+
+786
+00:43:31,039 --> 00:43:33,039
+kullanılıyor neden tercih ediliyor
+
+787
+00:43:33,039 --> 00:43:35,039
+onu da şöyle açıklayayım
+
+788
+00:43:35,039 --> 00:43:37,039
+aslında
+
+789
+00:43:37,039 --> 00:43:39,039
+başta bütün
+
+790
+00:43:39,039 --> 00:43:41,039
+örnekler arasında bir mesafe
+
+791
+00:43:41,039 --> 00:43:43,039
+topladıktan sonra bir daha ekstra iş yapmaya
+
+792
+00:43:43,039 --> 00:43:45,039
+gerek kalmıyor o yüzden
+
+793
+00:43:45,039 --> 00:43:47,039
+belki tercih ediliyor
+
+794
+00:43:47,039 --> 00:43:49,039
+yani literatürde yaygın olarak
+
+795
+00:43:49,039 --> 00:43:51,039
+kullanılıyor belki
+
+796
+00:43:51,039 --> 00:43:53,039
+işlem karmaşıklığı daha az
+
+797
+00:43:53,039 --> 00:43:55,039
+olduğu için diyebiliriz
+
+798
+00:43:55,039 --> 00:43:57,039
+peki hocam
+
+799
+00:43:57,039 --> 00:43:59,039
+önden bu aykırı değerleri
+
+800
+00:43:59,039 --> 00:44:01,039
+ayıkladıktan sonra bu işlemi yapsak
+
+801
+00:44:01,039 --> 00:44:03,039
+olmaz mı
+
+802
+00:44:03,039 --> 00:44:05,039
+olabilir tabi öyle bir şey ama
+
+803
+00:44:05,039 --> 00:44:07,039
+her küme için ayrı bir aykırı değer analizi
+
+804
+00:44:07,039 --> 00:44:09,039
+yapmanız gerekir o zaman
+
+805
+00:44:09,039 --> 00:44:11,039
+ya da farklı
+
+806
+00:44:11,039 --> 00:44:13,039
+linkage yöntemi kullanabilirsiniz
+
+807
+00:44:13,039 --> 00:44:15,039
+mesela average linkage kullansak
+
+808
+00:44:15,039 --> 00:44:17,039
+bu biraz daha
+
+809
+00:44:17,039 --> 00:44:19,039
+ne olur
+
+810
+00:44:19,039 --> 00:44:21,039
+hani o duyarlılıktan kurtarır bizi
+
+811
+00:44:23,039 --> 00:44:25,039
+ama burada da
+
+812
+00:44:25,039 --> 00:44:27,039
+çok fazla
+
+813
+00:44:27,039 --> 00:44:29,039
+şey hesaplamanız gerekiyor
+
+814
+00:44:29,039 --> 00:44:31,039
+aslında aynı
+
+815
+00:44:31,039 --> 00:44:33,039
+distance yukarıda da hesaplıyoruz ama
+
+816
+00:44:35,039 --> 00:44:37,039
+ortalama almamız gerekiyor
+
+817
+00:44:37,039 --> 00:44:41,820
+ne dedik
+
+818
+00:44:41,820 --> 00:44:43,820
+bu minimum
+
+819
+00:44:43,820 --> 00:44:45,820
+ve maximum
+
+820
+00:44:45,820 --> 00:44:47,820
+distance'ın
+
+821
+00:44:47,820 --> 00:44:49,820
+aslında
+
+822
+00:44:49,820 --> 00:44:51,820
+sensitive to outliers
+
+823
+00:44:51,820 --> 00:44:53,820
+or noisy data
+
+824
+00:44:53,820 --> 00:44:55,820
+şeklinde
+
+825
+00:44:55,820 --> 00:44:57,820
+bir
+
+826
+00:44:57,820 --> 00:44:59,820
+geri dönüşümü olmuş
+
+827
+00:44:59,820 --> 00:45:01,820
+çok özür diliyorum
+
+828
+00:45:01,820 --> 00:46:14,219
+arkadaşlar
+
+829
+00:46:14,219 --> 00:46:16,219
+evet yöntemin
+
+830
+00:46:16,219 --> 00:46:18,219
+dezavantajından da bahsettik
+
+831
+00:46:18,219 --> 00:46:22,199
+bunun
+
+832
+00:46:22,199 --> 00:46:24,199
+üstesinden gelmek için
+
+833
+00:46:24,199 --> 00:46:26,199
+mean distance veya average distance
+
+834
+00:46:26,199 --> 00:46:28,199
+kullanmak bir alternatif
+
+835
+00:46:28,199 --> 00:46:30,199
+olabilir
+
+836
+00:46:30,199 --> 00:46:39,309
+şimdi
+
+837
+00:46:39,309 --> 00:46:41,309
+başta verdiğimiz
+
+838
+00:46:41,309 --> 00:46:43,309
+şeyde bir
+
+839
+00:46:43,309 --> 00:46:45,309
+yöntemleri
+
+840
+00:46:45,309 --> 00:46:47,309
+yapısal olarak gruplarken
+
+841
+00:46:47,309 --> 00:46:49,309
+variance metod ve
+
+842
+00:46:49,309 --> 00:46:51,309
+warts metoddan bahsetmiştik
+
+843
+00:46:51,309 --> 00:46:53,309
+biraz da ondan bahsedelim
+
+844
+00:46:53,309 --> 00:46:55,309
+orada da şöyle bir yol izleniyor
+
+845
+00:46:55,309 --> 00:46:57,309
+oluşturduğumuz her kümenin
+
+846
+00:46:57,309 --> 00:46:59,309
+bir küme merkezi hesaplanıyor
+
+847
+00:46:59,309 --> 00:47:01,309
+bir de tüm örneklerin
+
+848
+00:47:01,309 --> 00:47:03,309
+bu küme merkezlerine
+
+849
+00:47:03,309 --> 00:47:05,309
+olan uzaklıkları üzerinden
+
+850
+00:47:05,309 --> 00:47:07,309
+bir variance hesaplıyoruz
+
+851
+00:47:07,309 --> 00:47:09,309
+aslında ve
+
+852
+00:47:09,309 --> 00:47:11,309
+bunun üzerinden de
+
+853
+00:47:11,309 --> 00:47:13,309
+bu kümenin ne kadar
+
+854
+00:47:13,309 --> 00:47:15,309
+merkeze yakın toplandığını
+
+855
+00:47:15,309 --> 00:47:17,309
+veya
+
+856
+00:47:17,309 --> 00:47:19,309
+yayıldığını
+
+857
+00:47:19,309 --> 00:47:21,309
+söyleyen bir gösterge
+
+858
+00:47:21,309 --> 00:47:23,309
+oluyor elimizde
+
+859
+00:47:23,309 --> 00:47:25,309
+ve buna göre
+
+860
+00:47:25,309 --> 00:47:27,309
+bu gruplama işini
+
+861
+00:47:27,309 --> 00:47:29,309
+düzenleyebiliyoruz
+
+862
+00:47:29,309 --> 00:47:31,309
+warts metodu
+
+863
+00:47:31,309 --> 00:47:33,309
+için böyle
+
+864
+00:47:33,309 --> 00:47:35,309
+kısaca geçeceğim sadece
+
+865
+00:47:37,309 --> 00:47:39,309
+warts metodda
+
+866
+00:47:39,309 --> 00:47:41,309
+bir küme merkezi
+
+867
+00:47:41,309 --> 00:47:43,309
+gördüğünüz gibi hesaplanıyor
+
+868
+00:47:43,309 --> 00:47:45,309
+tüm örneklerin
+
+869
+00:47:45,309 --> 00:47:47,309
+bu küme merkezlerine olan uzaklıkların
+
+870
+00:47:47,309 --> 00:47:49,309
+ortalamasını alarak
+
+871
+00:47:51,309 --> 00:47:53,309
+küme içi
+
+872
+00:47:53,309 --> 00:47:55,309
+yayılımı
+
+873
+00:47:55,309 --> 00:47:57,309
+hesaplayabiliyoruz
+
+874
+00:47:57,309 --> 00:47:59,309
+centroid metodda ise
+
+875
+00:47:59,309 --> 00:48:01,309
+bu mean distance
+
+876
+00:48:01,309 --> 00:48:03,309
+dediğimiz yöntem
+
+877
+00:48:03,309 --> 00:48:05,309
+iki kümenin
+
+878
+00:48:05,309 --> 00:48:07,309
+m1 m2 dediğimiz
+
+879
+00:48:07,309 --> 00:48:09,309
+iki merkezi var
+
+880
+00:48:09,309 --> 00:48:11,309
+merkezler arasındaki uzaklığı
+
+881
+00:48:11,309 --> 00:48:13,309
+kümeler arasındaki
+
+882
+00:48:13,309 --> 00:48:15,309
+uzaklık olarak alıyoruz
+
+883
+00:48:15,309 --> 00:48:21,949
+şimdi
+
+884
+00:48:21,949 --> 00:48:23,949
+bu konuyla ilgili
+
+885
+00:48:23,949 --> 00:48:25,949
+geçen hafta
+
+886
+00:48:25,949 --> 00:48:27,949
+bana mail atan öğrenciler de oldu
+
+887
+00:48:27,949 --> 00:48:29,949
+hani kümelemenin
+
+888
+00:48:29,949 --> 00:48:31,949
+başarısını nasıl ölçeceğiz
+
+889
+00:48:31,949 --> 00:48:33,949
+değil mi
+
+890
+00:48:33,949 --> 00:48:35,949
+bu çok zor bir soru aslında
+
+891
+00:48:35,949 --> 00:48:37,949
+çünkü elimizdeki örnekler
+
+892
+00:48:37,949 --> 00:48:39,949
+aslında etiketli değil
+
+893
+00:48:39,949 --> 00:48:41,949
+o zaman
+
+894
+00:48:41,949 --> 00:48:43,949
+yaptığımız gruplama işleminin
+
+895
+00:48:43,949 --> 00:48:45,949
+ne kadar doğru
+
+896
+00:48:45,949 --> 00:48:47,949
+ne kadar
+
+897
+00:48:47,949 --> 00:48:49,949
+başarılı olduğunu
+
+898
+00:48:49,949 --> 00:48:51,949
+ölçebileceğimiz
+
+899
+00:48:51,949 --> 00:48:53,949
+aslında elimizde çok fazla parametre yok
+
+900
+00:48:53,949 --> 00:48:55,949
+burada
+
+901
+00:48:55,949 --> 00:48:57,949
+kullanılan
+
+902
+00:48:57,949 --> 00:48:59,949
+çözümlerden biri
+
+903
+00:48:59,949 --> 00:49:01,949
+intra class
+
+904
+00:49:01,949 --> 00:49:03,949
+similarity
+
+905
+00:49:03,949 --> 00:49:05,949
+ölçebiliriz
+
+906
+00:49:05,949 --> 00:49:07,949
+yani
+
+907
+00:49:07,949 --> 00:49:09,949
+aynı kümenin içerisinde olan
+
+908
+00:49:09,949 --> 00:49:11,949
+örneklerin
+
+909
+00:49:11,949 --> 00:49:13,949
+birbirine olan benzerliği üzerinden
+
+910
+00:49:13,949 --> 00:49:15,949
+bir ölçüm yapabiliriz
+
+911
+00:49:15,949 --> 00:49:17,949
+ve istediğimiz şey
+
+912
+00:49:17,949 --> 00:49:19,949
+aslında
+
+913
+00:49:19,949 --> 00:49:21,949
+intra class similarity nin
+
+914
+00:49:21,949 --> 00:49:23,949
+yüksek olması
+
+915
+00:49:23,949 --> 00:49:25,949
+yani aynı kümenin içine
+
+916
+00:49:25,949 --> 00:49:27,949
+yerleştirdiğimiz örneklerin
+
+917
+00:49:27,949 --> 00:49:29,949
+birbirine
+
+918
+00:49:29,949 --> 00:49:31,949
+benzerliklerinin yüksek olmasını
+
+919
+00:49:31,949 --> 00:49:33,949
+isteriz
+
+920
+00:49:33,949 --> 00:49:35,949
+bu birinci
+
+921
+00:49:35,949 --> 00:49:37,949
+ölçü diyelim
+
+922
+00:49:37,949 --> 00:49:39,949
+bizim için
+
+923
+00:49:39,949 --> 00:49:41,949
+ikinci ölçü ise
+
+924
+00:49:41,949 --> 00:49:43,949
+inter class similarity
+
+925
+00:49:43,949 --> 00:49:47,289
+yaptığımız
+
+926
+00:49:47,289 --> 00:49:49,289
+şey
+
+927
+00:49:49,289 --> 00:49:51,289
+kümeler arası
+
+928
+00:49:51,289 --> 00:49:53,289
+benzerliğin
+
+929
+00:49:53,289 --> 00:49:55,289
+olabildiğince düşük
+
+930
+00:49:55,289 --> 00:49:57,289
+olması
+
+931
+00:49:57,289 --> 00:49:59,289
+bunlar bizim oluşturduğumuz
+
+932
+00:49:59,289 --> 00:50:01,289
+kümelerin
+
+933
+00:50:01,289 --> 00:50:03,289
+ne kadar düzgün
+
+934
+00:50:03,289 --> 00:50:05,289
+yerleştirildiğini
+
+935
+00:50:05,289 --> 00:50:07,289
+örneklerin bu kümeleri ne kadar düzgün
+
+936
+00:50:07,289 --> 00:50:09,289
+yerleştirildiğini
+
+937
+00:50:09,289 --> 00:50:11,289
+gösteren ölçüler
+
+938
+00:50:11,289 --> 00:50:13,289
+tabi intra class ve inter class similarity de
+
+939
+00:50:13,289 --> 00:50:15,289
+herhangi bir sınıf bilgisine
+
+940
+00:50:15,289 --> 00:50:17,289
+ihtiyacımız yok
+
+941
+00:50:17,289 --> 00:50:19,289
+ama bunun yanında şöyle teknikler de var
+
+942
+00:50:19,289 --> 00:50:21,289
+yani aslında biz
+
+943
+00:50:21,289 --> 00:50:23,289
+kümeleme yönteminin
+
+944
+00:50:23,289 --> 00:50:25,289
+başarısını
+
+945
+00:50:25,289 --> 00:50:27,289
+ölçmek için
+
+946
+00:50:27,289 --> 00:50:29,289
+elimizde grand truth dediğimiz
+
+947
+00:50:29,289 --> 00:50:31,289
+gerçek doğruların olduğu
+
+948
+00:50:31,289 --> 00:50:33,289
+bir data set kullanıp
+
+949
+00:50:33,289 --> 00:50:35,289
+bu
+
+950
+00:50:35,289 --> 00:50:37,289
+class label larını
+
+951
+00:50:37,289 --> 00:50:39,289
+kümeleme algoritması
+
+952
+00:50:39,289 --> 00:50:41,289
+sırasında hiç kullanmadan
+
+953
+00:50:41,289 --> 00:50:43,289
+sadece
+
+954
+00:50:43,289 --> 00:50:45,289
+kümeleme işlemi bittikten sonra
+
+955
+00:50:45,289 --> 00:50:47,289
+gruplar ortaya çıktıktan sonra
+
+956
+00:50:47,289 --> 00:50:49,289
+bu gruplamanın
+
+957
+00:50:49,289 --> 00:50:51,289
+başarısını ölçmek için
+
+958
+00:50:51,289 --> 00:50:53,289
+kullanabiliriz
+
+959
+00:50:53,289 --> 00:50:59,039
+diyoruz
+
+960
+00:50:59,039 --> 00:51:01,039
+bununla ilgili
+
+961
+00:51:01,039 --> 00:51:03,039
+bununla ilgili
+
+962
+00:51:03,039 --> 00:51:05,039
+bir parametre
+
+963
+00:51:05,039 --> 00:51:07,039
+öneriyor
+
+964
+00:51:07,039 --> 00:51:09,039
+dokümanda
+
+965
+00:51:09,039 --> 00:51:11,039
+bundan sonraki bölümde
+
+966
+00:51:11,039 --> 00:51:13,039
+basit bir ölçü
+
+967
+00:51:13,039 --> 00:51:15,039
+bu basit ölçü
+
+968
+00:51:15,039 --> 00:51:17,039
+aslında
+
+969
+00:51:17,039 --> 00:51:19,039
+her wi
+
+970
+00:51:19,039 --> 00:51:21,039
+dediği her
+
+971
+00:51:21,039 --> 00:51:23,039
+cluster için bulduğu bir
+
+972
+00:51:23,039 --> 00:51:25,039
+ölçü
+
+973
+00:51:25,039 --> 00:51:27,039
+i kümesi için
+
+974
+00:51:27,039 --> 00:51:29,039
+bir purity yani
+
+975
+00:51:29,039 --> 00:51:31,039
+saflık değeri hesaplayacak
+
+976
+00:51:31,039 --> 00:51:33,039
+buna diyor ki
+
+977
+00:51:33,039 --> 00:51:35,039
+1 bölü ne
+
+978
+00:51:35,039 --> 00:51:37,039
+maksimum
+
+979
+00:51:37,039 --> 00:51:39,039
+bu
+
+980
+00:51:39,039 --> 00:51:41,039
+küme içerisindeki
+
+981
+00:51:41,039 --> 00:51:43,039
+tüm diğer sınıflara ait
+
+982
+00:51:43,039 --> 00:51:45,039
+örnek sayıları
+
+983
+00:51:45,039 --> 00:51:47,039
+üzerinden giderek
+
+984
+00:51:47,039 --> 00:51:49,039
+bir maksimumu
+
+985
+00:51:49,039 --> 00:51:51,039
+seçme işlemi var
+
+986
+00:51:51,039 --> 00:51:53,039
+şimdi bunu
+
+987
+00:51:53,039 --> 00:51:55,039
+bir örnekle göstereyim daha anlaşılır
+
+988
+00:51:55,039 --> 00:51:57,039
+olacak
+
+989
+00:51:57,039 --> 00:51:59,039
+purity example
+
+990
+00:51:59,039 --> 00:52:01,039
+saflığı ölçmek için
+
+991
+00:52:01,039 --> 00:52:03,039
+arkadaşlar diyor ki varsayalım ki
+
+992
+00:52:03,039 --> 00:52:05,039
+verimizi biz
+
+993
+00:52:05,039 --> 00:52:07,039
+3 tane kümeye ayırdık
+
+994
+00:52:07,039 --> 00:52:09,039
+cluster 1 2 3 dediğimiz
+
+995
+00:52:09,039 --> 00:52:11,039
+kümeler ve
+
+996
+00:52:11,039 --> 00:52:13,039
+sayalım ki elimizdeki örneklerin
+
+997
+00:52:13,039 --> 00:52:15,039
+aslında class label'larını
+
+998
+00:52:15,039 --> 00:52:17,039
+sınıf etiketlerini biliyorum dolayısıyla
+
+999
+00:52:17,039 --> 00:52:19,039
+burada kırmızı mavi
+
+1000
+00:52:19,039 --> 00:52:21,039
+ve yeşille gösterilmiş
+
+1001
+00:52:21,039 --> 00:52:23,039
+gerçek
+
+1002
+00:52:23,039 --> 00:52:25,039
+sınıf etiketleri
+
+1003
+00:52:25,039 --> 00:52:27,039
+yani ground truth'lar var
+
+1004
+00:52:27,039 --> 00:52:29,039
+ama ben bu bilgiyi
+
+1005
+00:52:29,039 --> 00:52:31,039
+kümeleme işlemi yaparken hiç
+
+1006
+00:52:31,039 --> 00:52:33,039
+kullanmadım ama şimdi
+
+1007
+00:52:33,039 --> 00:52:35,039
+değerlendirme yaparken açtım
+
+1008
+00:52:35,039 --> 00:52:37,039
+ve bu etiketlere
+
+1009
+00:52:37,039 --> 00:52:39,039
+bakarak bir değerlendirme
+
+1010
+00:52:39,039 --> 00:52:41,039
+yapmak istiyorum
+
+1011
+00:52:41,039 --> 00:52:43,039
+diyor ki
+
+1012
+00:52:43,039 --> 00:52:45,039
+birinci küme için
+
+1013
+00:52:45,039 --> 00:52:47,039
+purity değerini hesaplarken yani
+
+1014
+00:52:47,039 --> 00:52:49,039
+saflık değerini hesaplarken
+
+1015
+00:52:49,039 --> 00:52:51,039
+yaptığı işlem şu birinci kümenin içerisinde
+
+1016
+00:52:51,039 --> 00:52:53,039
+6 tane sample var
+
+1017
+00:52:53,039 --> 00:52:55,039
+1 bölü en iyi
+
+1018
+00:52:55,039 --> 00:52:57,039
+dediği değer 6
+
+1019
+00:52:59,039 --> 00:53:01,039
+bu kümenin içerisinde
+
+1020
+00:53:01,039 --> 00:53:03,039
+5 tane kırmızı sınıftan
+
+1021
+00:53:03,039 --> 00:53:05,039
+1 tane mavi sınıftan
+
+1022
+00:53:05,039 --> 00:53:07,039
+örnek var hiç yeşil sınıftan
+
+1023
+00:53:07,039 --> 00:53:09,039
+örnek yok
+
+1024
+00:53:09,039 --> 00:53:11,039
+dolayısıyla bu
+
+1025
+00:53:11,039 --> 00:53:13,039
+sınıfın yani kümenin
+
+1026
+00:53:13,039 --> 00:53:15,039
+cluster 1'in
+
+1027
+00:53:15,039 --> 00:53:17,039
+saflığı 6'da 5
+
+1028
+00:53:17,039 --> 00:53:19,039
+6'da 5
+
+1029
+00:53:19,039 --> 00:53:21,039
+6 tane sample'dan
+
+1030
+00:53:21,039 --> 00:53:23,039
+5'i aynı sınıftan olduğu için
+
+1031
+00:53:23,039 --> 00:53:25,039
+bunun
+
+1032
+00:53:25,039 --> 00:53:27,039
+saflığı 5 bölü 6 çıkıyor
+
+1033
+00:53:27,039 --> 00:53:29,039
+ikinci küme için baktığımda
+
+1034
+00:53:29,039 --> 00:53:31,039
+saflık
+
+1035
+00:53:31,039 --> 00:53:33,039
+ikinci kümenin içerisinde
+
+1036
+00:53:35,039 --> 00:53:37,039
+kırmızı sınıftan 1 tane
+
+1037
+00:53:37,039 --> 00:53:39,039
+sample var mavi sınıftan
+
+1038
+00:53:39,039 --> 00:53:41,039
+4 tane yeşil sınıftan
+
+1039
+00:53:41,039 --> 00:53:43,039
+1 tane sample var
+
+1040
+00:53:43,039 --> 00:53:45,039
+en yüksek olanı
+
+1041
+00:53:45,039 --> 00:53:47,039
+seçiyoruz
+
+1042
+00:53:47,039 --> 00:53:49,039
+dolayısıyla
+
+1043
+00:53:49,039 --> 00:53:51,039
+ikinci kümenin
+
+1044
+00:53:51,039 --> 00:53:53,039
+saflığı
+
+1045
+00:53:53,039 --> 00:53:55,039
+4 bölü 6
+
+1046
+00:53:55,039 --> 00:53:57,039
+çıkıyor ve son olarak
+
+1047
+00:53:57,039 --> 00:53:59,039
+üçüncü küme için bir purity
+
+1048
+00:53:59,039 --> 00:54:01,039
+hesaplıyor içerisinde
+
+1049
+00:54:01,039 --> 00:54:03,039
+bu kümenin içinde 5 tane
+
+1050
+00:54:03,039 --> 00:54:05,039
+sample var
+
+1051
+00:54:05,039 --> 00:54:07,039
+bu 5 tane sample'ın
+
+1052
+00:54:07,039 --> 00:54:09,039
+etiketleri
+
+1053
+00:54:09,039 --> 00:54:11,039
+2 tane
+
+1054
+00:54:11,039 --> 00:54:13,039
+sınıftan
+
+1055
+00:54:13,039 --> 00:54:15,039
+mavi sınıftan hiç örnek yok
+
+1056
+00:54:15,039 --> 00:54:17,039
+yeşil sınıftan 3 tane örnek var
+
+1057
+00:54:17,039 --> 00:54:19,039
+dolayısıyla bu 3 bölü
+
+1058
+00:54:19,039 --> 00:54:21,039
+5 olarak alınıyor
+
+1059
+00:54:21,039 --> 00:54:23,039
+ve bir saflık
+
+1060
+00:54:23,039 --> 00:54:25,039
+hesaplanıyor bu saflık üzerinden
+
+1061
+00:54:25,039 --> 00:54:27,039
+tabi yine bir
+
+1062
+00:54:27,039 --> 00:54:29,039
+toplam saflıkı hesaplayabilirsiniz
+
+1063
+00:54:29,039 --> 00:54:31,039
+ortalama saflık hesaplayabilirsiniz
+
+1064
+00:54:31,039 --> 00:54:33,039
+bunu bir ölçü olarak
+
+1065
+00:54:33,039 --> 00:54:35,039
+kullanabilirsiniz ama nedir
+
+1066
+00:54:35,039 --> 00:54:37,039
+burada ne kullandık burada
+
+1067
+00:54:37,039 --> 00:54:39,039
+sınıf etiketlerini kullandık
+
+1068
+00:54:39,039 --> 00:54:41,039
+o yüzden
+
+1069
+00:54:41,039 --> 00:54:43,039
+hani
+
+1070
+00:54:43,039 --> 00:54:45,039
+etiketli bir veri var diye
+
+1071
+00:54:45,039 --> 00:54:47,039
+kabul ettik eğer
+
+1072
+00:54:47,039 --> 00:54:49,039
+etiketli veri yoksa böyle bir
+
+1073
+00:54:49,039 --> 00:54:51,039
+ölçme maalesef
+
+1074
+00:54:51,039 --> 00:54:54,280
+yapamayız tabi ki
+
+1075
+00:54:54,280 --> 00:54:56,280
+evet arkadaşlar yöntemleri
+
+1076
+00:54:56,280 --> 00:54:58,280
+şöyle hızlıca bir
+
+1077
+00:54:58,280 --> 00:55:00,280
+anlatmış oldum sorunuz
+
+1078
+00:55:00,280 --> 00:55:02,280
+var mıdır
+
+1079
+00:55:02,280 --> 00:55:04,280
+soru yoksa
+
+1080
+00:55:04,280 --> 00:55:06,280
+ara vereceğim aradan sonra da
+
+1081
+00:55:06,280 --> 00:55:08,280
+bir örnek yapacağız
+
+1082
+00:55:08,280 --> 00:55:10,280
+sayısal bir örnek yapacağız
+
+1083
+00:55:10,280 --> 00:55:12,280
+tüm bu yöntemlerle ilgili
+
+1084
+00:55:12,280 --> 00:55:14,280
+evet
+
+1085
+00:55:14,280 --> 00:55:16,280
+peki
+
+1086
+00:55:16,280 --> 01:07:48,329
+10 dakika ara
+
+1087
+01:07:48,329 --> 01:07:50,329
+evet arkadaşlar
+
+1088
+01:07:50,329 --> 01:07:52,329
+derse devam edebiliriz
+
+1089
+01:07:52,329 --> 01:07:54,329
+şu an
+
+1090
+01:07:54,329 --> 01:07:56,329
+40 kişi derse bağlı görünüyor
+
+1091
+01:07:56,329 --> 01:07:58,329
+kimler ekranın başında
+
+1092
+01:07:58,329 --> 01:08:00,329
+beni dinliyor acaba
+
+1093
+01:08:00,329 --> 01:08:06,239
+bakayım 19
+
+1094
+01:08:06,239 --> 01:08:08,239
+yarıyı geçemedik
+
+1095
+01:08:08,239 --> 01:08:10,239
+20
+
+1096
+01:08:10,239 --> 01:08:12,239
+hadi bir kişi daha
+
+1097
+01:08:12,239 --> 01:08:14,239
+eklenirsek geçeceğiz 21
+
+1098
+01:08:14,239 --> 01:08:16,239
+tamam teşekkürler 24
+
+1099
+01:08:16,239 --> 01:08:18,239
+aldık peki
+
+1100
+01:08:18,239 --> 01:08:20,239
+derste olmanıza sevindim
+
+1101
+01:08:20,239 --> 01:08:22,239
+şimdi
+
+1102
+01:08:22,239 --> 01:08:24,239
+arkadaşlar bir örnek yapalım
+
+1103
+01:08:24,239 --> 01:08:26,239
+bir örnek yapalım sayısal
+
+1104
+01:08:26,239 --> 01:08:28,239
+bu işlemleri
+
+1105
+01:08:28,239 --> 01:08:30,239
+de gösteren
+
+1106
+01:08:30,239 --> 01:08:43,920
+bir örneğimiz var
+
+1107
+01:08:43,920 --> 01:08:45,920
+örneği şeyde açayım
+
+1108
+01:08:45,920 --> 01:08:50,409
+whiteboard
+
+1109
+01:08:50,409 --> 01:09:21,399
+da yapalım
+
+1110
+01:09:21,399 --> 01:09:34,600
+evet şimdi önce soruyu
+
+1111
+01:09:34,600 --> 01:09:36,600
+yazacağım
+
+1112
+01:09:36,600 --> 01:09:38,600
+soru farklı şekillerde verilebilir
+
+1113
+01:09:38,600 --> 01:09:40,600
+burada işimizi kolaylaştırmak
+
+1114
+01:09:40,600 --> 01:09:42,600
+adına bize bir
+
+1115
+01:09:42,600 --> 01:09:44,600
+distance matris verilmiş
+
+1116
+01:09:46,600 --> 01:09:48,600
+distance matris üzerinden
+
+1117
+01:09:48,600 --> 01:09:50,600
+işlem yapmamız
+
+1118
+01:09:50,600 --> 01:09:52,600
+isteniyor ya da önce şu şeyi
+
+1119
+01:09:52,600 --> 01:09:54,600
+yapalım bir dakika bir başka örneğimiz
+
+1120
+01:09:54,600 --> 01:09:56,600
+daha vardı
+
+1121
+01:09:56,600 --> 01:09:58,600
+bunu yapalım oradan gidelim
+
+1122
+01:09:58,600 --> 01:10:06,359
+örneklerin
+
+1123
+01:10:06,359 --> 01:10:08,359
+yerleri verilmiş
+
+1124
+01:10:08,359 --> 01:10:10,359
+önce biz distance matrisi
+
+1125
+01:10:10,359 --> 01:10:12,359
+oluşturacağız ondan sonra
+
+1126
+01:10:12,359 --> 01:10:14,359
+sırasıyla single linkage
+
+1127
+01:10:14,359 --> 01:10:16,359
+ve complete linkage için çözüm
+
+1128
+01:10:16,359 --> 01:10:18,359
+yapacağız
+
+1129
+01:10:18,359 --> 01:10:20,359
+şöyle
+
+1130
+01:10:20,359 --> 01:10:22,359
+diyor ki
+
+1131
+01:10:22,359 --> 01:10:24,359
+5 tane sample olsun
+
+1132
+01:10:24,359 --> 01:10:51,000
+elimizde
+
+1133
+01:10:51,000 --> 01:10:53,000
+noktalara x1
+
+1134
+01:10:53,000 --> 01:10:55,000
+x2 x3
+
+1135
+01:10:55,000 --> 01:10:57,000
+x4 ve
+
+1136
+01:10:57,000 --> 01:10:59,000
+x5 demiş
+
+1137
+01:11:01,000 --> 01:11:03,000
+with the following coordinates
+
+1138
+01:11:03,000 --> 01:11:23,500
+x1
+
+1139
+01:11:23,500 --> 01:11:25,500
+0,2
+
+1140
+01:11:25,500 --> 01:11:27,500
+x2 yani düzlemde
+
+1141
+01:11:27,500 --> 01:11:29,500
+2 boyutlu verilmiş
+
+1142
+01:11:29,500 --> 01:11:31,500
+0,0
+
+1143
+01:11:31,500 --> 01:11:33,500
+x3
+
+1144
+01:11:33,500 --> 01:11:35,500
+1,5 0
+
+1145
+01:11:35,500 --> 01:11:48,159
+5'e 0
+
+1146
+01:11:48,159 --> 01:11:51,439
+ve x5
+
+1147
+01:11:51,439 --> 01:11:53,439
+5'e 2
+
+1148
+01:11:53,439 --> 01:11:57,229
+şeklinde verilmiş
+
+1149
+01:11:57,229 --> 01:11:59,229
+bunları
+
+1150
+01:11:59,229 --> 01:12:01,229
+tabi şöyle bir
+
+1151
+01:12:01,229 --> 01:12:03,229
+düzlemdeki yerlerini
+
+1152
+01:12:03,229 --> 01:12:05,229
+görmek için
+
+1153
+01:12:05,229 --> 01:12:07,229
+çizebiliriz
+
+1154
+01:12:09,229 --> 01:12:11,229
+5'e kadar değer alıyor
+
+1155
+01:12:11,229 --> 01:12:19,609
+1,2,3,4,5
+
+1156
+01:12:19,609 --> 01:12:21,609
+1,2
+
+1157
+01:12:21,609 --> 01:12:24,989
+x8'e 0
+
+1158
+01:12:24,989 --> 01:12:26,989
+y'de 2
+
+1159
+01:12:26,989 --> 01:12:28,989
+şurada bir x1 noktası var
+
+1160
+01:12:28,989 --> 01:12:34,029
+0'a 0
+
+1161
+01:12:34,029 --> 01:12:36,029
+x2 var
+
+1162
+01:12:36,029 --> 01:12:38,029
+1,5'a 0
+
+1163
+01:12:38,029 --> 01:12:40,029
+şurada bir x3 var
+
+1164
+01:12:40,029 --> 01:12:45,869
+5'e 0
+
+1165
+01:12:45,869 --> 01:12:49,340
+x4 var
+
+1166
+01:12:49,340 --> 01:12:53,100
+ve 5'e 2
+
+1167
+01:12:53,100 --> 01:12:55,100
+şurada bir
+
+1168
+01:12:55,100 --> 01:12:57,100
+x5 var
+
+1169
+01:12:57,100 --> 01:12:59,100
+1,5'e 0
+
+1170
+01:12:59,100 --> 01:13:01,100
+0,5'e 0
+
+1171
+01:13:01,100 --> 01:13:03,100
+0,5'e 0
+
+1172
+01:13:03,100 --> 01:13:05,100
+0,5'e 2
+
+1173
+01:13:05,100 --> 01:13:07,100
+ve yarısını
+
+1174
+01:13:07,100 --> 01:13:09,100
+3'e
+
+1175
+01:13:09,100 --> 01:13:11,100
+4'e
+
+1176
+01:13:11,100 --> 01:13:13,100
+4'e
+
+1177
+01:13:13,100 --> 01:13:15,100
+4'e
+
+1178
+01:13:15,100 --> 01:13:17,100
+5'e
+
+1179
+01:13:17,100 --> 01:13:19,100
+6'a
+
+1180
+01:13:19,100 --> 01:13:21,100
+6'a
+
+1181
+01:13:21,100 --> 01:13:23,100
+ve
+
+1182
+01:13:23,100 --> 01:13:25,100
+7'a
+
+1183
+01:13:25,100 --> 01:13:27,020
+7'e
+
+1184
+01:13:27,020 --> 01:13:36,579
+Biz single linkage ve complete linkage yöntemlerini kullanarak kümelemek istiyoruz.
+
+1185
+01:13:37,399 --> 01:13:41,819
+Bu örnekler arasındaki önce mesafeyi hesaplamamız gerekiyor.
+
+1186
+01:13:41,819 --> 01:13:49,439
+Örnekler arasındaki mesafeyi ve bu örnekler arasındaki mesafeyi gösteren bir distance matrisi oluşturmam gerekiyor.
+
+1187
+01:13:53,970 --> 01:13:59,600
+Distance matrisim büyük D diyelim buna.
+
+1188
+01:13:59,600 --> 01:14:05,329
+Bu D matrisi 5'e 5'lik bir matris.
+
+1189
+01:14:11,420 --> 01:14:13,020
+5'e 5'lik bir matris.
+
+1190
+01:14:13,199 --> 01:14:16,779
+Şunu şöyle yapayım da sonra kalemi değiştirelim.
+
+1191
+01:14:16,779 --> 01:14:28,380
+1, 2, 3, 4, 5, 6.
+
+1192
+01:14:29,279 --> 01:14:35,260
+Bu matrisin ana köşegeni 0.
+
+1193
+01:14:43,020 --> 01:14:45,000
+3'ün 3'e olan uzaklığı 0.
+
+1194
+01:14:46,359 --> 01:14:48,500
+4'ün 4'e olan uzaklığı 0.
+
+1195
+01:14:48,640 --> 01:14:50,359
+5'in 5'e olan uzaklığı 0.
+
+1196
+01:14:50,460 --> 01:14:53,420
+Burada tireyle geçtiğim gözleri hesaplamamız gerekiyor.
+
+1197
+01:14:54,319 --> 01:14:57,140
+Ve varsayalım ki öklit mesafesi kullanıyoruz.
+
+1198
+01:14:57,140 --> 01:14:59,319
+Bu öklit mesafesine göre.
+
+1199
+01:14:59,579 --> 01:15:05,920
+İşte birinci sample'ın ikinci sample'a olan uzaklığını soracağım size.
+
+1200
+01:15:07,000 --> 01:15:13,159
+1'in 2'ye olan uzaklığı, öklit uzaklığı nedir?
+
+1201
+01:15:16,310 --> 01:15:17,670
+Evet, ses bekliyorum.
+
+1202
+01:15:18,409 --> 01:15:19,329
+Yorum bekliyorum.
+
+1203
+01:15:19,510 --> 01:15:20,050
+Hadi bakalım.
+
+1204
+01:15:24,970 --> 01:15:26,710
+Mikrofonunuzu açıp konuşabilirsiniz.
+
+1205
+01:15:26,989 --> 01:15:27,670
+Çekinmeyin.
+
+1206
+01:15:35,619 --> 01:15:35,899
+Peki.
+
+1207
+01:15:38,069 --> 01:15:39,109
+Teşekkürler.
+
+1208
+01:15:40,050 --> 01:15:41,250
+Çok zor bir soruydu.
+
+1209
+01:15:41,949 --> 01:15:44,250
+Arkadaşlarım cevap veremedi bir türlü.
+
+1210
+01:15:44,270 --> 01:15:47,810
+Evet, 2. Teşekkürler.
+
+1211
+01:15:48,489 --> 01:15:51,710
+1'in 3'e olan mesafesi,
+
+1212
+01:15:52,829 --> 01:15:57,050
+1.5'un karesi artı 2'nin karesi toplamlarının kare kökü,
+
+1213
+01:15:58,569 --> 01:16:00,289
+2.5.
+
+1214
+01:16:01,529 --> 01:16:02,550
+Ben doldurayım.
+
+1215
+01:16:02,810 --> 01:16:04,810
+Sizden bana şey gelmiyor.
+
+1216
+01:16:05,529 --> 01:16:07,430
+1'in 4'e olan uzaklığı,
+
+1217
+01:16:08,329 --> 01:16:09,930
+1'in 4'e olan uzaklığı,
+
+1218
+01:16:10,010 --> 01:16:12,329
+5'in karesi artı 2'nin karesi,
+
+1219
+01:16:12,329 --> 01:16:13,609
+25-29,
+
+1220
+01:16:14,270 --> 01:16:17,149
+kökünü aldık mı 5-39 gibi bir şey çıkıyormuş.
+
+1221
+01:16:23,300 --> 01:16:25,619
+1'in 5'e olan uzaklığı,
+
+1222
+01:16:28,689 --> 01:16:29,529
+çok kolay değil mi?
+
+1223
+01:16:29,829 --> 01:16:31,149
+Artık onu söyleyin yani.
+
+1224
+01:16:38,760 --> 01:16:40,199
+Ben isim isim soracağım.
+
+1225
+01:16:40,579 --> 01:16:40,739
+Tamam.
+
+1226
+01:16:41,199 --> 01:16:42,300
+Bundan sonra böyle.
+
+1227
+01:16:43,619 --> 01:16:43,979
+Evet.
+
+1228
+01:16:45,380 --> 01:17:00,979
+[öğrenci], [öğrenci], kimse derste yok ya.
+
+1229
+01:17:02,939 --> 01:17:10,680
+[öğrenci], [öğrenci], [öğrenci], [öğrenci].
+
+1230
+01:17:12,520 --> 01:17:13,159
+Merhaba hocam.
+
+1231
+01:17:15,869 --> 01:17:16,090
+Hocam, ben [öğrenci]'üm.
+
+1232
+01:17:16,090 --> 01:17:17,489
+Merhaba [öğrenci].
+
+1233
+01:17:19,109 --> 01:17:21,949
+Yani tam anlamadım o kısmı da hocam.
+
+1234
+01:17:22,050 --> 01:17:26,670
+1. sample'ın 5. sample'a olan uzaklığını soruyorum.
+
+1235
+01:17:26,670 --> 01:17:28,210
+Anladım, onu anladım da.
+
+1236
+01:17:29,270 --> 01:17:29,609
+Evet.
+
+1237
+01:17:30,369 --> 01:17:32,649
+Sample'ların değerleri de şöyle.
+
+1238
+01:17:33,029 --> 01:17:37,250
+Bakın, 1. sample'ın 5. sample'a olan uzaklığını soruyorum.
+
+1239
+01:17:37,850 --> 01:17:39,090
+5 o zaman hocam.
+
+1240
+01:17:39,510 --> 01:17:40,149
+Değil mi?
+
+1241
+01:17:40,310 --> 01:17:42,329
+Çok teşekkür ederim yani.
+
+1242
+01:17:44,090 --> 01:17:44,609
+Evet.
+
+1243
+01:17:44,609 --> 01:17:45,250
+Soruyu...
+
+1244
+01:17:45,250 --> 01:17:45,609
+Soruyu...
+
+1245
+01:17:46,090 --> 01:17:48,729
+Anlamamışsınız sadece demek ki.
+
+1246
+01:17:48,850 --> 01:17:50,350
+Çözümü biliyorsunuz aslında.
+
+1247
+01:17:50,609 --> 01:17:50,829
+Peki.
+
+1248
+01:17:51,369 --> 01:17:54,029
+5, şurası 5.39, burası 5.
+
+1249
+01:17:54,029 --> 01:18:04,029
+Şimdi, 2. sample'ın 3.ye olan uzaklığı, 2'nin 3'e olan uzaklığı 1.5'du zaten şeyde görünüyor.
+
+1250
+01:18:05,470 --> 01:18:06,369
+Hemen yazdım.
+
+1251
+01:18:07,250 --> 01:18:14,430
+2'nin 4'e olan uzaklığı, 2'nin 4'e olan uzaklığı, o da açık, gayet açık.
+
+1252
+01:18:15,229 --> 01:18:15,630
+Nedir?
+
+1253
+01:18:16,090 --> 01:18:18,170
+[öğrenci]?
+
+1254
+01:18:21,899 --> 01:18:23,140
+Yok, [öğrenci] yok.
+
+1255
+01:18:24,039 --> 01:18:25,920
+Sample'ları bilmiyorum hocam.
+
+1256
+01:18:26,739 --> 01:18:27,939
+Sample'ları bilmiyorsunuz.
+
+1257
+01:18:29,319 --> 01:18:34,699
+Şeyde, bir önceki whiteboard ekranında var.
+
+1258
+01:18:37,220 --> 01:18:38,960
+Bakın, sample'lar burada.
+
+1259
+01:18:40,960 --> 01:18:43,579
+2'nin 4'e olan uzaklığını sormuştum.
+
+1260
+01:18:43,720 --> 01:18:44,079
+5.
+
+1261
+01:18:44,560 --> 01:18:45,779
+5, evet.
+
+1262
+01:18:46,119 --> 01:18:46,359
+Değil mi?
+
+1263
+01:18:47,359 --> 01:18:49,539
+2'nin 5'e olan uzaklığı nedir?
+
+1264
+01:18:59,210 --> 01:19:02,590
+Yani aslında şuradaki uzaklık, 2'nin 5'e olan uzaklığı şu.
+
+1265
+01:19:03,289 --> 01:19:04,850
+5.9, 39.
+
+1266
+01:19:04,850 --> 01:19:05,890
+Değil mi?
+
+1267
+01:19:05,970 --> 01:19:07,329
+Az önce hesaplamıştık.
+
+1268
+01:19:07,449 --> 01:19:08,470
+Güzel, evet.
+
+1269
+01:19:10,270 --> 01:19:13,949
+Burada da, şurası 5, burası 5.39 oldu.
+
+1270
+01:19:15,789 --> 01:19:23,489
+3. sample'ın 4. sample'a olan uzaklığı, 3.5.
+
+1271
+01:19:26,130 --> 01:19:29,130
+3'ün 5'e olan uzaklığı, 4.
+
+1272
+01:19:29,130 --> 01:19:32,909
+0.3, ben tamamlıyorum tabloyu ve şurası 2.
+
+1273
+01:19:32,909 --> 01:19:47,029
+Şimdi bu, bulduğumuz değerlere göre, şimdi single linkage ve complete linkage için dendogram çizmemiz gerekiyor.
+
+1274
+01:19:47,329 --> 01:19:48,609
+Dendogram çizeceğiz.
+
+1275
+01:19:49,770 --> 01:19:51,329
+Yapacağımız işlem şu.
+
+1276
+01:19:52,590 --> 01:19:56,050
+Başlangıçta elimizde atomik cluster'lar var dedik.
+
+1277
+01:19:56,970 --> 01:19:59,090
+Elimizde atomik cluster'lar var.
+
+1278
+01:19:59,130 --> 01:19:59,489
+Elimizde atomik cluster'lar var.
+
+1279
+01:20:01,010 --> 01:20:03,930
+Şöyle hemen şu sayfayı açayım.
+
+1280
+01:20:05,390 --> 01:20:06,590
+Ne demek?
+
+1281
+01:20:06,770 --> 01:20:11,189
+Her bir sample bir kümenin içinde demek.
+
+1282
+01:20:11,949 --> 01:20:17,369
+X1, X2, X3, X4, X5 hepsi bir atomik cluster.
+
+1283
+01:20:17,850 --> 01:20:21,210
+Bu matriz içerisinde en küçük sayı bulacağım.
+
+1284
+01:20:21,390 --> 01:20:26,189
+Bu en küçük sayı birbirine en yakın iki sample'ı gösteriyor.
+
+1285
+01:20:26,550 --> 01:20:28,369
+En küçük sayı,
+
+1286
+01:20:29,130 --> 01:20:31,449
+bir buçuk, tabii sıfır haricinde.
+
+1287
+01:20:31,989 --> 01:20:32,789
+Ve bu nedir?
+
+1288
+01:20:33,949 --> 01:20:36,229
+X2'nin X3'e olan uzaklığı.
+
+1289
+01:20:36,229 --> 01:20:45,529
+O yüzden biz şöyle bir eksen üzerinde aslında değerlendirme yapacağız.
+
+1290
+01:20:45,970 --> 01:20:48,850
+Bu bizim distance eksenimiz.
+
+1291
+01:20:50,250 --> 01:20:52,970
+Distance'a göre sıfırdan başlıyor.
+
+1292
+01:20:54,329 --> 01:20:59,970
+1, 2, 3, 4, 5.
+
+1293
+01:21:00,409 --> 01:21:06,420
+Elimizde atomik cluster'lar var.
+
+1294
+01:21:06,560 --> 01:21:09,420
+Bunları ben buraya yerleştireceğim.
+
+1295
+01:21:09,600 --> 01:21:14,600
+Birbirine en yakın olanlar X2 ile X3 olduğu için
+
+1296
+01:21:14,600 --> 01:21:27,000
+X2 ile X3'ü bir buçuk mesafesinde birleştirerek bir grup oluşturacağım.
+
+1297
+01:21:28,439 --> 01:21:36,039
+Sonra buna yine matriz üzerinden bakıyorum.
+
+1298
+01:21:39,500 --> 01:21:40,640
+En küçük ikinci sayıdır.
+
+1299
+01:21:40,640 --> 01:21:40,659
+En küçük ikinci sayıdır.
+
+1300
+01:21:40,659 --> 01:21:40,680
+En küçük ikinci sayıdır.
+
+1301
+01:21:40,680 --> 01:21:56,930
+Sayı 2, 2 mesafesi, 2 mesafesinde 1'in 2'ye olan uzaklığı 2, 1 de 4'ün 5'e olan uzaklığı 2.
+
+1302
+01:21:56,930 --> 01:22:02,289
+O zaman 2 mesafesinde ben 2 tane birleştirme yapacağım aslında.
+
+1303
+01:22:02,289 --> 01:22:22,470
+Birincisi x1'i yukarıdaki kümeye dahil edeceğim çünkü x1'in x2'ye olan uzaklığı 2 olduğu için şöyle düşünün x2 ve x3'den oluşan bir kümemiz var bir de x1 var.
+
+1304
+01:22:22,470 --> 01:22:31,029
+Bu kümeye olan uzaklığı 1'in 2'ye ve 1'in 3'e olan uzaklıklarına bakılır minimum mesafede olan alınır.
+
+1305
+01:22:32,289 --> 01:22:44,369
+1'in 3'e olan mesafesi 2.5 ama 2'ye olan mesafesi 2 olduğu için minimum distance kullandığım için ilk çözümüm single linkage yapıyorum çünkü.
+
+1306
+01:22:44,369 --> 01:22:54,529
+Çünkü A şıkkı diyelim single linkage için çözüm üretiyorum.
+
+1307
+01:22:55,010 --> 01:22:59,630
+Buna göre en yakın mesafe yani minimum distance'ı kullanıyorum.
+
+1308
+01:23:00,909 --> 01:23:02,270
+Minimum distance'a göre değerlendirme.
+
+1309
+01:23:02,289 --> 01:23:08,710
+Değerlendirdiğimde x1 sample'ı bu kümeye 2 mesafesinde katılacak diyorum.
+
+1310
+01:23:10,510 --> 01:23:17,149
+Ve devamını tabi buraya sığdıramadığım için diğer sayfaya çizeceğim.
+
+1311
+01:23:18,250 --> 01:23:20,409
+Aynı mantık baştan başlıyoruz.
+
+1312
+01:23:21,470 --> 01:23:26,449
+0 mesafesi bir distance ekseni.
+
+1313
+01:23:26,449 --> 01:23:33,210
+1, 2, 3, 4 ve 5.
+
+1314
+01:23:37,439 --> 01:23:43,300
+Az önce 1.5 mesafesinde x2 ile x3'ü birleştirmiştik.
+
+1315
+01:23:50,970 --> 01:23:55,189
+Buna x1'i kattık 2 mesafesinde.
+
+1316
+01:23:55,909 --> 01:23:57,270
+Bir dendogram çiziyorum.
+
+1317
+01:23:59,479 --> 01:24:03,520
+Bu birleştirme işlemlerinin olduğu noktalara genelde şöyle yazılır.
+
+1318
+01:24:03,800 --> 01:24:08,560
+Küme içerisinde bir küme parantezinin içerisinde x2, x3.
+
+1319
+01:24:08,560 --> 01:24:14,560
+Sonra buraya yine bir küme parantezi içerisinde x2, x3.
+
+1320
+01:24:15,600 --> 01:24:19,800
+x1 yazılır.
+
+1321
+01:24:20,920 --> 01:24:27,560
+Yine 2 mesafesinde biz x4 ile x5'i birleştireceğimizi bulmuştuk.
+
+1322
+01:24:35,510 --> 01:24:41,710
+Burada x4 ile x5'i aynı kümenin içine aldığımızı belirttik.
+
+1323
+01:24:42,369 --> 01:24:45,550
+Şimdi şöyle bir değerlendirme yapmam lazım.
+
+1324
+01:24:47,590 --> 01:24:53,140
+x1, x2, x3 bir kümenin içinde.
+
+1325
+01:24:53,319 --> 01:24:55,500
+x4 ile x5 bir kümenin içinde.
+
+1326
+01:24:55,500 --> 01:24:59,399
+Bu iki kümenin birbirine olan uzaklığını hesaplayacağım.
+
+1327
+01:25:00,220 --> 01:25:08,029
+Bu iki kümenin birbirine olan uzaklığı distance matrise göre gidecek olursam.
+
+1328
+01:25:08,829 --> 01:25:16,250
+Bakıyorum mesela bu matriste 2'den sonraki en küçük sayı 2.5 ama bu 1 ile 3'ün birbirine olan mesafesi.
+
+1329
+01:25:16,350 --> 01:25:18,350
+1 ile 3 zaten aynı kümenin içinde.
+
+1330
+01:25:19,029 --> 01:25:21,010
+O zaman bir sonraki en küçük sayı ne?
+
+1331
+01:25:21,689 --> 01:25:22,189
+3.5.
+
+1332
+01:25:22,449 --> 01:25:25,470
+Bakıyorum bu 3'ün 4'ü olan mesafesi.
+
+1333
+01:25:25,470 --> 01:25:26,489
+Doğru mu?
+
+1334
+01:25:26,689 --> 01:25:26,890
+Evet.
+
+1335
+01:25:26,970 --> 01:25:29,369
+Çünkü ben zaten neyi arıyorum?
+
+1336
+01:25:30,550 --> 01:25:32,590
+Elimde şöyle bir şey vardı.
+
+1337
+01:25:43,869 --> 01:25:47,869
+Şurayı silersek daha rahat gösterebileceğiz.
+
+1338
+01:25:59,380 --> 01:26:06,819
+Elimde x1, x2 ve x3'den oluşan bir küme var.
+
+1339
+01:26:07,260 --> 01:26:11,199
+Bir de x4 ve x5'den oluşan ikinci bir küme var.
+
+1340
+01:26:11,680 --> 01:26:14,520
+Bu iki kümenin birbirine olan uzaklığını bulmak istiyorum.
+
+1341
+01:26:14,520 --> 01:26:19,880
+X1'in 4'e 5'e olan uzaklığına bakacağım.
+
+1342
+01:26:20,000 --> 01:26:22,319
+2'nin 4'e 5'e olan uzaklığına bakacağım.
+
+1343
+01:26:22,439 --> 01:26:25,159
+X3'ün 4'e ve 5'e olan uzaklığına bakacağım.
+
+1344
+01:26:25,640 --> 01:26:27,779
+Bunların içerisinde minimum olanı seçeceğim.
+
+1345
+01:26:27,939 --> 01:26:32,760
+Zaten distance matrise baktığım zaman bunu görebiliyorum.
+
+1346
+01:26:33,920 --> 01:26:39,520
+3'ün 4'ü olan mesafesi, X3'ün X4'ü olan mesafesi 3.5'miş.
+
+1347
+01:26:39,520 --> 01:26:46,289
+Ve bu da birbirine en yakın iki sample arasındaki.
+
+1348
+01:26:46,510 --> 01:26:47,350
+Uzaklık.
+
+1349
+01:26:47,850 --> 01:27:06,359
+Dolayısıyla demek ki ben bu iki kümeyi 3.5 mesafesinde birleştirerek dendogramı tamamlayacağım.
+
+1350
+01:27:07,779 --> 01:27:13,840
+X1, X2, X3, X4 ve X5.
+
+1351
+01:27:14,979 --> 01:27:20,060
+3.5 mesafesinde aynı kümenin içerisinde kalacak.
+
+1352
+01:27:20,859 --> 01:27:22,260
+Diyor bana bu çizim.
+
+1353
+01:27:22,880 --> 01:27:25,520
+Şimdi biz bunu yaptık da ne oldu?
+
+1354
+01:27:25,699 --> 01:27:28,779
+Hepsini aynı kümenin içine koymak değil tabii ki amaç.
+
+1355
+01:27:29,340 --> 01:27:31,180
+O zaman şöyle bir yol izleyeceğiz.
+
+1356
+01:27:31,680 --> 01:27:34,899
+Diyeceğiz ki biz burada bir threshold tanımlayacağız.
+
+1357
+01:27:35,020 --> 01:27:37,100
+Distanstan threshold tanımlayacağız.
+
+1358
+01:27:37,100 --> 01:27:45,699
+Mesela ben diyebilirim ki benim 2.2 gibi bir değer seçtim threshold.
+
+1359
+01:27:47,000 --> 01:27:49,760
+2.2 diye bir threshold seçtim.
+
+1360
+01:27:49,819 --> 01:27:50,840
+O zaman buradan.
+
+1361
+01:27:50,859 --> 01:27:55,039
+Dendogram üzerine bir dikme indiriyorum.
+
+1362
+01:27:55,600 --> 01:28:00,859
+Bunun kestiği noktalar, çizgileri kestiği noktalar bana kümeleri gösteriyor.
+
+1363
+01:28:01,840 --> 01:28:03,380
+İki tane noktadan kesti.
+
+1364
+01:28:04,460 --> 01:28:09,380
+Birinci kümede X1, X2, X3 var.
+
+1365
+01:28:10,079 --> 01:28:12,500
+İkinci kümede X4 ile X5 var.
+
+1366
+01:28:12,920 --> 01:28:19,060
+Bu threshold değerini kullandığımda.
+
+1367
+01:28:20,060 --> 01:28:22,960
+Threshold'u 2.2 kabul edersek.
+
+1368
+01:28:22,960 --> 01:28:24,279
+İki kümeyi ayırıyoruz.
+
+1369
+01:28:24,420 --> 01:28:25,699
+C1 ve C2 diye.
+
+1370
+01:28:25,880 --> 01:28:33,890
+C1 kümesinin içerisinde X1, X2 ve X3 var.
+
+1371
+01:28:34,970 --> 01:28:38,729
+C2 kümesinin içinde ise X4 ve X5 var.
+
+1372
+01:28:38,729 --> 01:28:50,699
+Bu single linkage, agglomerative clustering işlemi olmuş oluyor.
+
+1373
+01:28:51,340 --> 01:28:56,159
+Birinci çözümümüz single linkage.
+
+1374
+01:28:57,739 --> 01:28:58,039
+Şimdi.
+
+1375
+01:28:58,300 --> 01:29:01,239
+Bu en kolayı.
+
+1376
+01:29:02,619 --> 01:29:03,920
+Şimdi geçelim ikinciye.
+
+1377
+01:29:04,279 --> 01:29:14,859
+İkinci yöntem complete linkage kullanacak.
+
+1378
+01:29:14,859 --> 01:29:20,220
+Complete linkage da maximum distance'ı kullanıyor.
+
+1379
+01:29:21,420 --> 01:29:22,300
+Bakın.
+
+1380
+01:29:22,560 --> 01:29:24,760
+Şimdi burada çok ilginç bir açıklama yapacağım.
+
+1381
+01:29:27,680 --> 01:29:36,399
+Maximum distance, kümeler arasındaki mesafeyi hesaplamak için kullanılan bir yöntemdir.
+
+1382
+01:29:37,220 --> 01:29:38,239
+Kümeler arasındaki.
+
+1383
+01:29:38,239 --> 01:29:50,680
+Uzaklıkları bulduktan sonra merge işlemi yani kümeleri birleştirme işlemi birbirine en benzeyen kümeleri birleştirerek devam eder.
+
+1384
+01:29:51,619 --> 01:30:02,680
+O yüzden bu çok önemli bir nokta ve bu açıklamadan sonra şimdi complete linkage için dendogram çizmeye başlıyorum.
+
+1385
+01:30:02,680 --> 01:30:07,960
+Dendogramda yine bir distance ekseni çizdim.
+
+1386
+01:30:08,239 --> 01:30:14,550
+Burası sıfır noktası.
+
+1387
+01:30:15,609 --> 01:30:21,489
+Bir, iki, üç, dört, beş.
+
+1388
+01:30:22,909 --> 01:30:23,270
+Şimdi.
+
+1389
+01:30:24,170 --> 01:30:27,569
+Atomic cluster'larla başladığım için başlama adımı aynı.
+
+1390
+01:30:28,109 --> 01:30:29,210
+Başlama adımı aynı.
+
+1391
+01:30:29,369 --> 01:30:29,909
+Bu ne demek?
+
+1392
+01:30:31,170 --> 01:30:40,310
+Zaten tek elemanlı oldukları için birbirine en distance matriz üzerinde birbirine en benzeyen iki kümeyi birleştireceğim.
+
+1393
+01:30:40,310 --> 01:30:41,310
+Bu durumda.
+
+1394
+01:30:41,310 --> 01:30:53,250
+Bu durumda yine dönüp distance matrize bakacak olursak bu matristeki en küçük sayı 1.5 olduğu için x2 ile x3'ü bir buçuk mesafesinde birleştireceğim.
+
+1395
+01:30:57,020 --> 01:31:04,569
+x2 ve x3'ü bir buçuk mesafesinde birleştireceğim.
+
+1396
+01:31:08,560 --> 01:31:08,819
+Şöyle.
+
+1397
+01:31:10,949 --> 01:31:11,489
+Sonra.
+
+1398
+01:31:12,250 --> 01:31:18,470
+Tabii buraya belki distance matrizi şöyle taşısak iş daha kolay olacak.
+
+1399
+01:31:18,470 --> 01:31:20,229
+Onu da yazayım şöyle.
+
+1400
+01:31:20,350 --> 01:31:20,729
+Kenara.
+
+1401
+01:31:20,729 --> 01:31:21,750
+Bir köşeye bir yere.
+
+1402
+01:31:24,189 --> 01:31:26,390
+Şu köşeye yazabiliriz.
+
+1403
+01:31:28,289 --> 01:31:29,609
+0, 2.
+
+1404
+01:31:30,909 --> 01:31:31,829
+Pardon.
+
+1405
+01:31:34,149 --> 01:31:35,109
+0, 2.
+
+1406
+01:31:35,810 --> 01:31:37,329
+2.5.
+
+1407
+01:31:39,090 --> 01:31:40,350
+5, 39.
+
+1408
+01:31:42,189 --> 01:31:44,229
+Ve 5.
+
+1409
+01:31:44,229 --> 01:31:49,250
+1, 2, 3, 4, 5.
+
+1410
+01:31:52,760 --> 01:31:54,500
+İkinci satırda 0.
+
+1411
+01:31:54,920 --> 01:31:56,039
+1, buçuk.
+
+1412
+01:31:57,840 --> 01:31:58,680
+5.
+
+1413
+01:31:59,680 --> 01:32:00,899
+5'i 1, 9.
+
+1414
+01:32:02,479 --> 01:32:05,100
+Üçüncü satırda 0.
+
+1415
+01:32:06,439 --> 01:32:07,319
+3, buçuk.
+
+1416
+01:32:09,760 --> 01:32:10,939
+4, 0, 3.
+
+1417
+01:32:13,250 --> 01:32:14,130
+Burası 0.
+
+1418
+01:32:14,890 --> 01:32:15,210
+2.
+
+1419
+01:32:16,090 --> 01:32:16,489
+Ve 0.
+
+1420
+01:32:22,710 --> 01:32:24,329
+Bu matriz üzerinden gidiyoruz.
+
+1421
+01:32:24,329 --> 01:32:31,329
+Ve yaptığımız işlem buradaki birbirine en benzeyen iki kümeyi birleştirmek.
+
+1422
+01:32:32,189 --> 01:32:33,270
+Birbirine en benzeyen.
+
+1423
+01:32:33,270 --> 01:32:37,050
+İki küme dediğimde x2 ve x3 birleşti.
+
+1424
+01:32:37,689 --> 01:32:41,649
+Şimdi artık elimizde iki elemanlı bir küme var.
+
+1425
+01:32:42,130 --> 01:32:47,029
+Yani x2, x3'den oluşan bir küme var.
+
+1426
+01:32:47,529 --> 01:32:49,710
+Bir tane x1 var tek başına.
+
+1427
+01:32:50,890 --> 01:32:53,250
+x4 ve x5 var tek başına.
+
+1428
+01:32:55,630 --> 01:32:59,310
+Sadece iki elemanlı küme için değerlendirme biraz değişecek.
+
+1429
+01:32:59,430 --> 01:33:00,949
+Mesela şunu demek istiyorum.
+
+1430
+01:33:00,949 --> 01:33:04,590
+Ben x1'in hem x2'ye hem x3'e hesap.
+
+1431
+01:33:04,770 --> 01:33:07,750
+Yani uzaklığını kontrol edeceğim.
+
+1432
+01:33:08,109 --> 01:33:12,890
+Bu iki küme arasındaki uzaklığı temsil etmek için maksimum distansı alacağım.
+
+1433
+01:33:13,630 --> 01:33:17,149
+Bakın x1'in x2'ye olan uzaklığı 2 birim.
+
+1434
+01:33:18,970 --> 01:33:21,609
+1'in 3'e olan uzaklığı 2,5 birim.
+
+1435
+01:33:22,609 --> 01:33:23,630
+Yöntem ne diyordu?
+
+1436
+01:33:24,090 --> 01:33:25,630
+Maksimum olanı al diyordu.
+
+1437
+01:33:25,630 --> 01:33:34,630
+O zaman ben x1'in x3'e yani bu iki kümenin arasındaki uzaklığı tayin ederken.
+
+1438
+01:33:34,770 --> 01:33:35,989
+2,5 seçiyorum.
+
+1439
+01:33:36,170 --> 01:33:37,829
+Kümeler arasındaki uzaklığı.
+
+1440
+01:33:39,189 --> 01:33:45,050
+Şimdi benzer işlemi x4 ve x5 için de yapalım.
+
+1441
+01:33:45,869 --> 01:33:48,590
+Ve bu şeyleri kontrol edelim.
+
+1442
+01:33:50,449 --> 01:33:59,399
+Yapacağımız işlem x4'ün x2'ye olan uzaklığına bakıyorum.
+
+1443
+01:33:59,399 --> 01:34:02,000
+4'ün 2'ye olan uzaklığı 5 birim.
+
+1444
+01:34:03,159 --> 01:34:06,840
+4'ün 3'e olan uzaklığı 3,5 birim.
+
+1445
+01:34:07,300 --> 01:34:11,039
+Uzak olanı seçeceğime göre bu ikisi arasındaki uzaklık neymiş?
+
+1446
+01:34:11,119 --> 01:34:11,659
+5'miş.
+
+1447
+01:34:13,479 --> 01:34:16,039
+Distansı tayin ederken uzak olanı seçiyorum.
+
+1448
+01:34:16,960 --> 01:34:20,279
+x5'in bu iki elemanın uzaklığına bakıyorum.
+
+1449
+01:34:20,279 --> 01:34:25,560
+x5, x2'ye 5,39 uzaklıkta.
+
+1450
+01:34:25,619 --> 01:34:29,760
+x3'e 4,03 uzaklıkta.
+
+1451
+01:34:29,960 --> 01:34:31,460
+Demek ki ne olacakmış?
+
+1452
+01:34:31,859 --> 01:34:35,340
+5,39 olacakmış bu ikisi arasındaki uzaklık.
+
+1453
+01:34:36,479 --> 01:34:37,279
+Atomik.
+
+1454
+01:34:37,300 --> 01:34:40,579
+İki olanlar arasındaki uzaklık yine aynı biliyorsunuz.
+
+1455
+01:34:40,640 --> 01:34:43,460
+1 ile 4 arasındaki uzaklık 5,39.
+
+1456
+01:34:45,180 --> 01:34:51,640
+4 ile 5 arasındaki uzaklık x4'ün x5'e olan uzaklığı neymiş?
+
+1457
+01:34:52,520 --> 01:34:55,079
+2 imiş.
+
+1458
+01:34:55,880 --> 01:34:58,579
+O zaman burada bu uzaklıkları,
+
+1459
+01:34:58,960 --> 01:35:01,720
+tabii 1'in 5'e olan uzaklığını da yazmam lazım.
+
+1460
+01:35:01,859 --> 01:35:03,920
+1'in 5'e olan uzaklığı da 5 birim.
+
+1461
+01:35:05,319 --> 01:35:06,260
+Şurası da 5 birim.
+
+1462
+01:35:06,260 --> 01:35:07,260
+Tüm bu uzaklıklar,
+
+1463
+01:35:07,300 --> 01:35:09,380
+uzaklıkları yazdıktan sonra arkadaşlar,
+
+1464
+01:35:10,600 --> 01:35:11,539
+lütfen dikkat,
+
+1465
+01:35:12,000 --> 01:35:15,619
+uzaklıklarda maksimum uzaklıkları yazdık.
+
+1466
+01:35:16,060 --> 01:35:17,920
+Ama merge işlemi yaparken,
+
+1467
+01:35:18,119 --> 01:35:22,500
+birleştirme adımında birbirine en benzeyenleri birleştireceğim dedim.
+
+1468
+01:35:23,140 --> 01:35:28,579
+O zaman bu matriz içerisinde birbirine en benzeyen,
+
+1469
+01:35:29,180 --> 01:35:33,640
+iki uzaklığında x4 ve x5'tir.
+
+1470
+01:35:33,640 --> 01:35:39,390
+İki uzaklığında x4 ve x5,
+
+1471
+01:35:39,390 --> 01:35:41,890
+x4 ve x5'i birleştireceğim.
+
+1472
+01:35:41,890 --> 01:35:42,890
+Burayı sileceğim.
+
+1473
+01:35:42,890 --> 01:35:47,390
+Sorunuz yoksa eğer, burayı temizlemek zorundayım çizimi yapabilmek adına.
+
+1474
+01:35:48,689 --> 01:35:50,390
+Nerede silgimiz?
+
+1475
+01:35:50,390 --> 01:35:51,390
+Şurada.
+
+1476
+01:35:51,390 --> 01:36:17,489
+Bulunlaştırmamız lazım.
+
+1477
+01:36:17,489 --> 01:36:21,489
+Şimdi tekrar çizimi tamamlamaya geçecek olursak,
+
+1478
+01:36:24,500 --> 01:36:36,810
+x4 ile x5'i iki uzaklığında merge ediyoruz, birleştiriyoruz ve bir küme oluşturuyoruz.
+
+1479
+01:36:37,010 --> 01:36:39,010
+İki uzaklığında.
+
+1480
+01:36:39,010 --> 01:36:43,010
+Şimdi tekrar değerlendirme yapıyorum.
+
+1481
+01:36:43,010 --> 01:36:47,010
+Diyorum ki, elimde x2 ve x3'ten oluşan bir küme var.
+
+1482
+01:36:47,010 --> 01:36:51,010
+x4 ve x5'ten oluşan bir küme var.
+
+1483
+01:36:51,010 --> 01:36:57,010
+Bir de tek başına x1'in olduğu bir küme var.
+
+1484
+01:36:57,010 --> 01:37:04,010
+Bu üç tane kümenin birbirlerine olan uzaklıklarını maksimum distance kullanarak hesaplıyorum.
+
+1485
+01:37:04,010 --> 01:37:08,439
+Birin 4'e ve 5'e olan uzaklıklarını maksimum distance olarak hesaplıyorum.
+
+1486
+01:37:08,439 --> 01:37:09,439
+Birin 4'e ve 5'e olan uzaklıklarını maksimum distance olarak hesaplıyorum.
+
+1487
+01:37:09,439 --> 01:37:14,439
+Birin 4'e ve 5'e olan uzaklığına baktığımda, bu ikisi arasındaki en büyük uzaklık 5,39.
+
+1488
+01:37:22,220 --> 01:37:28,819
+x1'in 2 ve 3'e olan uzaklığına baktığımda,
+
+1489
+01:37:28,819 --> 01:37:31,819
+x1'in 2 ve 3'e olan uzaklığına baktığımda,
+
+1490
+01:37:31,819 --> 01:37:33,819
+maksimum mesafe nedir?
+
+1491
+01:37:33,819 --> 01:37:35,819
+maksimum mesafe nedir?
+
+1492
+01:37:36,819 --> 01:37:57,760
+Şurayı silememişim.
+
+1493
+01:37:57,760 --> 01:38:15,350
+Birin 3 ve 4'e olan uzaklığı,
+
+1494
+01:38:15,350 --> 01:38:17,350
+birin 3 ve 4'e olan uzaklığından
+
+1495
+01:38:17,350 --> 01:38:19,350
+maksimum olan
+
+1496
+01:38:19,350 --> 01:38:21,350
+x1'in 2 ve 3'e olan uzaklığından
+
+1497
+01:38:21,350 --> 01:38:23,350
+maksimum olan 2,5 uzaklığıdır.
+
+1498
+01:38:23,350 --> 01:38:25,350
+maksimum olan 2,5 uzaklığıdır.
+
+1499
+01:38:25,350 --> 01:38:27,350
+maksimum olan 2,5 uzaklığıdır.
+
+1500
+01:38:27,350 --> 01:38:29,350
+Sonra şu ikisi arasında uzaklık hesaplıyorum.
+
+1501
+01:38:29,350 --> 01:38:31,350
+Sonra şu ikisi arasında uzaklık hesaplıyorum.
+
+1502
+01:38:31,350 --> 01:38:33,350
+2'nin 4 ve 5'e olan uzaklığına baktım.
+
+1503
+01:38:33,350 --> 01:38:35,350
+2'nin 4 ve 5'e olan uzaklığına baktım.
+
+1504
+01:38:35,350 --> 01:38:37,350
+5,39 gördüm.
+
+1505
+01:38:37,350 --> 01:38:39,350
+Zaten bunu gördüğüm anda tamam diyorum.
+
+1506
+01:38:39,350 --> 01:38:41,350
+Zaten bunu gördüğüm anda tamam diyorum.
+
+1507
+01:38:41,350 --> 01:38:43,350
+5,39 bu matristeki en büyük sayı.
+
+1508
+01:38:43,350 --> 01:38:45,350
+O yüzden kümeler arasındaki uzaklıkları bu şekilde yazdım.
+
+1509
+01:38:45,350 --> 01:38:46,590
+bu şekilde yazdım.
+
+1510
+01:38:47,329 --> 01:38:49,250
+Şimdi neye geldi? Sıra birleştirme
+
+1511
+01:38:49,250 --> 01:38:51,369
+adımına. Birleştirirken ne yapıyorduk?
+
+1512
+01:38:51,569 --> 01:38:53,289
+Birbirine en benzeyenleri
+
+1513
+01:38:53,289 --> 01:38:55,350
+birleştiriyorduk. Yani iki buçuk
+
+1514
+01:38:55,350 --> 01:38:56,970
+mesafesinde x1
+
+1515
+01:38:56,970 --> 01:38:59,350
+x2 ve x3'e katılacak
+
+1516
+01:38:59,350 --> 01:38:59,909
+diyoruz.
+
+1517
+01:39:01,250 --> 01:39:03,170
+Bunun için hemen
+
+1518
+01:39:03,170 --> 01:39:05,170
+aşağıya temizleyeceğim.
+
+1519
+01:39:10,640 --> 01:39:11,939
+İki buçuk mesafesinde
+
+1520
+01:39:11,939 --> 01:39:14,079
+x1, x2 ve
+
+1521
+01:39:14,079 --> 01:39:15,180
+x3'e katılacak.
+
+1522
+01:39:24,029 --> 01:39:25,310
+Şuraya bir
+
+1523
+01:39:25,310 --> 01:39:44,750
+x1 koyalım. Şuraya bir
+
+1524
+01:39:44,750 --> 01:39:45,689
+x1 koyalım.
+
+1525
+01:39:46,689 --> 01:39:48,789
+x1, x2 ile x3'ü
+
+1526
+01:39:48,789 --> 01:39:49,189
+bir
+
+1527
+01:39:49,189 --> 01:39:52,909
+3'e katılacaktı iki buçuk mesafesinde.
+
+1528
+01:39:53,029 --> 01:39:54,909
+2.5 mesafesinde.
+
+1529
+01:39:55,350 --> 01:39:56,689
+Bunların yerlerini değiştirme
+
+1530
+01:39:56,689 --> 01:39:57,989
+hakkımız var arkadaşlar.
+
+1531
+01:39:58,689 --> 01:39:59,729
+Ben burada
+
+1532
+01:39:59,729 --> 01:40:01,630
+x1'i
+
+1533
+01:40:01,630 --> 01:40:04,470
+buraya yazmak yerine dendogramı
+
+1534
+01:40:04,470 --> 01:40:06,430
+daha düzgün çizebilmek adına
+
+1535
+01:40:06,430 --> 01:40:08,430
+şu araya yerleştirebilirim.
+
+1536
+01:40:16,479 --> 01:40:17,659
+Hangi araya? Şu araya
+
+1537
+01:40:17,659 --> 01:40:19,180
+yerleştireceğim x1'i.
+
+1538
+01:40:20,800 --> 01:40:21,279
+İki buçuk
+
+1539
+01:40:21,279 --> 01:40:22,399
+mesafesinde
+
+1540
+01:40:22,399 --> 01:40:23,739
+şurada
+
+1541
+01:40:23,739 --> 01:40:26,319
+bunlara katılacak.
+
+1542
+01:40:27,420 --> 01:40:29,260
+Şurada atomik klastırlar var.
+
+1543
+01:40:31,890 --> 01:40:33,210
+Dendogramda iki buçuk
+
+1544
+01:40:33,210 --> 01:40:34,909
+mesafesinde bu ikisinin
+
+1545
+01:40:34,909 --> 01:40:37,109
+birleştiğini ve bir küme oluşturduğunu
+
+1546
+01:40:37,109 --> 01:40:38,409
+görebiliyoruz.
+
+1547
+01:40:39,369 --> 01:40:41,130
+Ve son değerlendirmemizde
+
+1548
+01:40:41,130 --> 01:40:43,130
+artık elimizde iki tane küme var.
+
+1549
+01:40:43,869 --> 01:40:45,130
+Kümelerden birinde
+
+1550
+01:40:45,130 --> 01:40:47,289
+x1, x2, x3
+
+1551
+01:40:47,289 --> 01:40:47,649
+var.
+
+1552
+01:40:49,069 --> 01:40:51,029
+Diğerinde x4 ve x5
+
+1553
+01:40:51,029 --> 01:40:51,369
+var.
+
+1554
+01:40:52,949 --> 01:40:54,350
+Bu iki küme arasındaki
+
+1555
+01:40:54,350 --> 01:40:56,090
+uzaklık
+
+1556
+01:40:56,090 --> 01:40:59,090
+maksimum distansı kullandığım için
+
+1557
+01:40:59,090 --> 01:41:00,430
+5.39 olacak.
+
+1558
+01:41:01,170 --> 01:41:03,489
+Ve 5.39 mesafesinde
+
+1559
+01:41:03,489 --> 01:41:06,390
+bu iki küme
+
+1560
+01:41:06,390 --> 01:41:09,510
+birbiriyle birleşerek
+
+1561
+01:41:09,510 --> 01:41:11,250
+tek bir küme
+
+1562
+01:41:11,250 --> 01:41:12,270
+oluşturacak.
+
+1563
+01:41:13,430 --> 01:41:15,130
+Evet, hiyerarşik kümelemede
+
+1564
+01:41:15,130 --> 01:41:17,470
+çalışma mantığımız bu şekilde.
+
+1565
+01:41:17,470 --> 01:41:19,210
+Bir soru var.
+
+1566
+01:41:24,079 --> 01:41:24,680
+Yani evet,
+
+1567
+01:41:25,600 --> 01:41:26,560
+mantık şu.
+
+1568
+01:41:26,819 --> 01:41:28,640
+Kümeler arasında
+
+1569
+01:41:28,640 --> 01:41:30,319
+mesafeyi hesaplarken
+
+1570
+01:41:30,319 --> 01:41:32,720
+maksimum distansı kullanıyoruz
+
+1571
+01:41:32,720 --> 01:41:34,500
+ama merge işleminde
+
+1572
+01:41:34,500 --> 01:41:36,760
+birbirine en benzeyenleri yani
+
+1573
+01:41:36,760 --> 01:41:38,479
+minimum mesafede olanları
+
+1574
+01:41:38,479 --> 01:41:40,000
+birleştiriyoruz.
+
+1575
+01:41:40,539 --> 01:41:42,420
+Genel mantığımız bu
+
+1576
+01:41:42,420 --> 01:41:43,020
+şekilde.
+
+1577
+01:41:44,359 --> 01:41:46,699
+Evet, sorunuz var mı bana? Ben bir tane
+
+1578
+01:41:46,699 --> 01:41:48,359
+örnek yazacağım size.
+
+1579
+01:41:48,600 --> 01:41:50,520
+Eğer sorunuz yoksa o örneği
+
+1580
+01:41:50,520 --> 01:41:52,039
+sizin çözmenizi isteyeceğim.
+
+1581
+01:41:52,380 --> 01:41:54,300
+Ben bugün bir tane örnek çözdüm. Bu
+
+1582
+01:41:54,300 --> 01:41:56,199
+ikinciyi siz yapabilirsiniz.
+
+1583
+01:41:56,819 --> 01:41:58,460
+Hani yapı olarak
+
+1584
+01:41:58,460 --> 01:42:00,539
+benziyor. Beş tane sample var.
+
+1585
+01:42:00,720 --> 01:42:02,840
+Bu defa işinizi kolaylaştırmak
+
+1586
+01:42:02,840 --> 01:42:04,880
+adına distance matrisi
+
+1587
+01:42:04,880 --> 01:42:06,840
+ben veriyorum.
+
+1588
+01:42:08,840 --> 01:42:10,619
+Size bir distance
+
+1589
+01:42:10,619 --> 01:42:15,180
+matriks vereyim.
+
+1590
+01:42:15,460 --> 01:42:17,020
+Bu yeni bir örnek.
+
+1591
+01:42:21,569 --> 01:42:22,689
+Bu yeni örnekte
+
+1592
+01:42:22,689 --> 01:42:24,649
+D matrisi
+
+1593
+01:42:24,649 --> 01:42:26,970
+yine beş tane sample'dan
+
+1594
+01:42:26,970 --> 01:42:28,850
+oluşan bir dataset
+
+1595
+01:42:28,850 --> 01:42:29,409
+için
+
+1596
+01:42:29,409 --> 01:42:33,250
+0, 9,
+
+1597
+01:42:33,409 --> 01:42:34,050
+0,
+
+1598
+01:42:34,689 --> 01:42:36,729
+3, 7,
+
+1599
+01:42:37,390 --> 01:42:37,909
+0,
+
+1600
+01:42:39,029 --> 01:42:40,630
+6, 5,
+
+1601
+01:42:41,810 --> 01:42:42,289
+9,
+
+1602
+01:42:43,229 --> 01:42:44,890
+0 ve
+
+1603
+01:42:44,890 --> 01:42:46,529
+11,
+
+1604
+01:42:46,529 --> 01:42:47,010
+10,
+
+1605
+01:42:47,529 --> 01:42:49,250
+2,
+
+1606
+01:42:50,210 --> 01:42:52,029
+8 ve 0
+
+1607
+01:42:52,029 --> 01:42:53,590
+şeklinde verilmiş.
+
+1608
+01:42:55,050 --> 01:42:56,069
+Yine bunu
+
+1609
+01:42:56,069 --> 01:42:58,289
+şöyle düşünebilirsiniz.
+
+1610
+01:42:59,210 --> 01:43:00,710
+Şu x1,
+
+1611
+01:43:01,109 --> 01:43:02,029
+x2,
+
+1612
+01:43:03,029 --> 01:43:03,329
+x3,
+
+1613
+01:43:03,409 --> 01:43:06,869
+x4 ve x5 olsun.
+
+1614
+01:43:07,630 --> 01:43:08,470
+Aynı şekilde
+
+1615
+01:43:08,470 --> 01:43:10,510
+x1, x2,
+
+1616
+01:43:11,689 --> 01:43:14,550
+x3, x4, x5.
+
+1617
+01:43:14,930 --> 01:43:16,210
+Beş tane örneğin
+
+1618
+01:43:16,210 --> 01:43:17,409
+birbirlerine olan uzaklıklarını
+
+1619
+01:43:18,010 --> 01:43:19,310
+gösteriyor. Distance matris
+
+1620
+01:43:19,310 --> 01:43:20,829
+5'e 5'lik bir matris.
+
+1621
+01:43:21,750 --> 01:43:23,409
+Ana köşe geni üzerindeki
+
+1622
+01:43:24,149 --> 01:43:24,710
+tüm
+
+1623
+01:43:24,710 --> 01:43:26,750
+mesafeler
+
+1624
+01:43:26,750 --> 01:43:29,229
+sıfır. Kendi kendisine olan
+
+1625
+01:43:29,229 --> 01:43:31,270
+uzaklığı sıfır. Bu matris
+
+1626
+01:43:31,270 --> 01:43:33,029
+bir simetrik matris. O yüzden
+
+1627
+01:43:33,029 --> 01:43:34,489
+bir yarısını hesapladım.
+
+1628
+01:43:35,029 --> 01:43:35,949
+Bu matristeki
+
+1629
+01:43:35,949 --> 01:43:38,710
+mesafe ölçülerini
+
+1630
+01:43:38,710 --> 01:43:40,510
+kullanarak size
+
+1631
+01:43:40,510 --> 01:43:41,689
+diyebilirim ki
+
+1632
+01:43:41,689 --> 01:43:43,470
+A şıkkında
+
+1633
+01:43:43,470 --> 01:43:45,689
+single
+
+1634
+01:43:45,689 --> 01:43:48,670
+linkage kullanarak
+
+1635
+01:43:48,670 --> 01:43:52,000
+bir
+
+1636
+01:43:52,000 --> 01:43:54,520
+hiyerarşik
+
+1637
+01:43:54,520 --> 01:43:56,720
+kümeleme yapın
+
+1638
+01:43:56,720 --> 01:43:58,859
+ve dendogram çizin.
+
+1639
+01:44:02,979 --> 01:44:04,140
+B şıkkında ise
+
+1640
+01:44:04,140 --> 01:44:06,180
+complete linkage kullanarak
+
+1641
+01:44:06,180 --> 01:44:11,470
+bir kümeleme yapın.
+
+1642
+01:44:11,510 --> 01:44:13,609
+Ve bununla ilgili
+
+1643
+01:44:13,609 --> 01:44:15,789
+bir dendogram çizin
+
+1644
+01:44:15,789 --> 01:44:17,010
+diyebilirim.
+
+1645
+01:44:17,590 --> 01:44:19,449
+Evet, bu ikinci
+
+1646
+01:44:19,449 --> 01:44:21,810
+örneği sizin tamamlamanızı istiyorum.
+
+1647
+01:44:24,930 --> 01:44:27,689
+Özellikle complete linkage'da
+
+1648
+01:44:27,689 --> 01:44:28,789
+o şeyi
+
+1649
+01:44:28,789 --> 01:44:31,430
+iki aşamalı yapıyı
+
+1650
+01:44:31,430 --> 01:44:33,609
+iyi kurgulamanız
+
+1651
+01:44:33,609 --> 01:44:35,529
+için bakalım
+
+1652
+01:44:35,529 --> 01:44:36,529
+sonuçları
+
+1653
+01:44:36,529 --> 01:44:39,630
+ne çıkacak, nasıl bulacaksınız.
+
+1654
+01:44:39,630 --> 01:44:40,989
+Peki,
+
+1655
+01:44:41,510 --> 01:44:43,029
+sorunuz var mı arkadaşlar?
+
+1656
+01:44:43,310 --> 01:44:45,409
+Bu hafta benim size anlatacaklarım
+
+1657
+01:44:45,409 --> 01:44:45,930
+bunlar.
+
+1658
+01:44:52,579 --> 01:44:55,460
+Bugün çok sessizsiniz. Hiç derse katılmadınız.
+
+1659
+01:44:56,359 --> 01:44:57,520
+Ben de
+
+1660
+01:44:57,520 --> 01:44:59,460
+çok keyifsiz bir ders yaptım o yüzden.
+
+1661
+01:45:00,340 --> 01:45:01,239
+Sizden daha çok
+
+1662
+01:45:01,239 --> 01:45:03,300
+böyle gir besleme almam
+
+1663
+01:45:03,300 --> 01:45:05,140
+lazım. Şu an 36 kişi var
+
+1664
+01:45:05,140 --> 01:45:07,039
+derste ama maalesef
+
+1665
+01:45:07,039 --> 01:45:08,039
+yine bir yarısı
+
+1666
+01:45:08,039 --> 01:45:11,039
+derste ama derste değil gibi.
+
+1667
+01:45:12,819 --> 01:45:13,680
+Sorunuz var mı?
+
+1668
+01:45:13,680 --> 01:45:19,779
+Yok, peki.
+
+1669
+01:45:22,340 --> 01:45:23,199
+Hepinize iyi bir hafta.
+
+1670
+01:45:23,220 --> 01:45:24,119
+İyi hafta sonu diliyorum.
+
+1671
+01:45:24,600 --> 01:45:27,260
+Hocam, derste ders içeriğiyle
+
+1672
+01:45:27,260 --> 01:45:29,239
+alakalı değil de bu proje ödevleri
+
+1673
+01:45:29,239 --> 01:45:31,460
+hakkında bir açıklama
+
+1674
+01:45:31,460 --> 01:45:32,220
+yapacak mıydınız?
+
+1675
+01:45:32,760 --> 01:45:34,779
+Evet, geçen hafta söyledim.
+
+1676
+01:45:35,180 --> 01:45:37,399
+Hazırlıyorum, koyacağım projeyi
+
+1677
+01:45:37,399 --> 01:45:39,279
+diye ama maalesef atlamışım
+
+1678
+01:45:39,279 --> 01:45:41,279
+onu. Şimdi dersten sonra
+
+1679
+01:45:41,279 --> 01:45:43,020
+yayınlayacağım ve size mail
+
+1680
+01:45:43,020 --> 01:45:45,260
+göndereceğim. Her öğrenci
+
+1681
+01:45:45,260 --> 01:45:47,020
+farklı bir veri setiyle çalışacak
+
+1682
+01:45:47,020 --> 01:45:49,060
+biliyorsunuz. O atamayı da
+
+1683
+01:45:49,060 --> 01:45:51,020
+ben yapacağım. Siz
+
+1684
+01:45:51,020 --> 01:45:52,880
+sadece size atanmış olan
+
+1685
+01:45:53,220 --> 01:45:54,319
+ücretini indirip yine
+
+1686
+01:45:54,319 --> 01:45:56,500
+Python'la
+
+1687
+01:45:56,500 --> 01:45:59,000
+bu sefer
+
+1688
+01:45:59,000 --> 01:46:01,500
+hazır tool'ları kullanmanıza izin
+
+1689
+01:46:01,500 --> 01:46:02,399
+vereceğim.
+
+1690
+01:46:03,960 --> 01:46:05,239
+Bir proje
+
+1691
+01:46:05,239 --> 01:46:06,239
+yapacaksınız.
+
+1692
+01:46:07,300 --> 01:46:08,899
+Anladım hocam. Çok teşekkür ederim.
+
+1693
+01:46:09,699 --> 01:46:11,600
+Rica ederim. Evet arkadaşlar
+
+1694
+01:46:11,600 --> 01:46:13,239
+hepinize iyi hafta sonları.
+
+1695
+01:46:13,800 --> 01:46:15,220
+Haftaya görüşmek üzere. Hoşça kalın.
+
+1696
+01:46:16,899 --> 01:46:18,000
+İyi günler hocam.
+
+1697
+01:46:18,279 --> 01:46:19,159
+İyi günler hocam.
+
+1698
+01:46:19,479 --> 01:46:21,159
+Güle güle. Evet, nihayet
+
+1699
+01:46:21,159 --> 01:46:22,239
+biraz ses geldi.
+
+1700
+01:46:23,220 --> 01:46:25,840
+Çok güzeldi. Rica
+
+1701
+01:46:25,840 --> 01:46:27,779
+ederim. İyi günler arkadaşlar.
+
+1702
+01:46:28,260 --> 01:46:35,529
+Hoşça kalın. Evet
+
+1703
+01:46:35,529 --> 01:46:37,409
+sona kalanları ben bir göreyim gene.
+
+1704
+01:46:40,569 --> 01:46:41,369
+Neredesiniz
+
+1705
+01:46:41,369 --> 01:46:52,260
+gençler? Peki.
+
+1706
+01:46:52,899 --> 01:46:54,359
+Şu an 14 kişi bilgisayarın
+
+1707
+01:46:54,359 --> 01:46:55,819
+başında değilmiş. Öyle mi?
+
+1708
+01:46:57,100 --> 01:46:57,899
+Efendim nini?
+
+1709
+01:47:02,079 --> 01:47:04,199
+Whiteboard? Ha puşlayalım.
+
+1710
+01:47:04,600 --> 01:47:05,500
+Olur. Tamam.
+
+1711
+01:47:09,850 --> 01:47:10,609
+Tamamdır.
+
+1712
+01:47:21,090 --> 01:47:22,449
+İyi günler. Hoşça kalın.

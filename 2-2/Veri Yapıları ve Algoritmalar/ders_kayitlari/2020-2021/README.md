@@ -4,7 +4,7 @@
 
 | Şube | Dönem | Hoca | Klasör |
 | :---: | :---: | :--- | :--- |
-| — | Güz | Dr. Göksel Biricik | [sube_bilinmeyen/](sube_bilinmeyen/) |
 | 1 | Bahar | Prof. Dr. M. Elif Karslıgil | [sube_1/](sube_1/) |
+| 1 | Güz | Dr. Göksel Biricik | [sube_1_guz/](sube_1_guz/) |
 | 2 | Bahar | — | [sube_2/](sube_2/) |
 | 3 | Bahar | — | [sube_3/](sube_3/) |

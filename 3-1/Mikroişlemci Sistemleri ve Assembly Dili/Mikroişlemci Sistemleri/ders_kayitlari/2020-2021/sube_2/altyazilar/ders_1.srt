@@ -1,0 +1,3680 @@
+1
+00:00:27,789 --> 00:00:48,409
+Evet arkadaşlar, biraz bekleyelim, bir 15 dakika sonra veya 10 dakika sonra başlayalım, 2'yi 10 geçe diyelim, saat şu an 2'yi 5 falan geçiyor, bir 10 dakika sonra başlayalım, 2'yi 10 geçe, herkes bir tam tamam bir girsin, sonra başlayalım.
+
+2
+00:00:48,409 --> 00:04:23,740
+Arkadaşlar grup 2 olacak burası, zannedersem sistemde bir seçim sunuluyor size, kesinlikle grup 1'deki öğrenciler grup 2'ye gelmeyecek, grup 2'dekiler de grup 1'e gitmeyecek, aynı duyuru orada da yapılıyor, burası grup 2 yani Hamza Osman İlhan grubu grup 2 olacak, sizin bu hangi gruptayım sorusunun cevabı USİS'te ilgili grubunuz yazıyor zaten.
+
+3
+00:04:23,740 --> 00:04:59,040
+Onu öğrenebilirsiniz, o grupla derse gireceksiniz, muhtemelen iki gruba da katılabiliyorsunuz siz online yazı terör üzerinde, grup 2'de olanla grup 2'ye gelmek zorunda çünkü yoklama buna göre yazılmayacak, evet evet, yani USİS'ten aldığınız derslerde grup bilgisi yazacaktır, burası grup 2, hatta bunun daha net, evde şuraya bir not düşedim.
+
+4
+00:04:59,480 --> 00:05:13,519
+G2 derken şimdi orada da bir sıkıntı yaylaşamayalım, grup 2 sınıfındasınız diye gelenler en azından chatten bu bilgiyi alsın. Dediğim gibi ikiye on geçe başlayacağız, bir beş altı dakika daha bekleriz.
+
+5
+00:05:13,519 --> 00:13:33,519
+Şimdi bu gruba girmeyen öğrencilere link atmanızı, onların normalde online yıldız edip TR sayfasında derse katıl gözükmüyor mu acaba?
+
+6
+00:13:34,519 --> 00:15:48,610
+Link atmak derken, bakalım linki atmayı deneyelim, acaba şu linkten mi bahsediyorlar, bir bakalım, şu an ben de alımını USİS'ten gönderiyorum, message değil mi? Sanki şu olması lazım, tabi biraz USİS sisteminde mailleşmesi hemen düşmüyor ama, geldi mi mail arkadaşlar?
+
+7
+00:15:50,129 --> 00:16:02,049
+Geldi hocam, şimdi mail geldi.
+
+8
+00:16:02,250 --> 00:16:04,250
+Tamam yavaştan biz başlayalım.
+
+9
+00:16:46,700 --> 00:17:14,559
+Evet artık saat bayağı bir 15 dakika geçirdik, katılımcı sayımız gerçeği yine halen az ama, evet biz artık başlayalım yavaştan.
+
+10
+00:17:14,559 --> 00:17:25,359
+Merhaba arkadaşlar, umarım bu önümüzdeki dönemin sağlıklı bir şekilde bitirmeyi dilerim hepimiz için hayırlı bir dönem olur.
+
+11
+00:17:25,880 --> 00:17:37,400
+Mikro işlemciler dersini beraber işleyeceğiz, mikro işlemci sistemleri adı altında, 2 saatlik normal teorik saati, 2 saatlik labo olan bir ders.
+
+12
+00:17:37,400 --> 00:17:54,759
+Teoride neler yapacağız, ilk ondan bahsedeceğim, teoride işte mikro işlemci bugünkü konumuzla beraber, mikro işlemcilerin geçmişten günümüze gelişme hakkında biraz konuşacağız ve bizim esasen ders kapsamında işleyeceğimiz 8086 mikro işlemcisinin
+
+13
+00:17:55,160 --> 00:17:58,359
+en temel tanımlanmalarını gerçekleştireceğiz.
+
+14
+00:17:58,359 --> 00:18:18,160
+Sonrasında başka entegrelerle olan input-output entegresi, 82.54, interrupt entegresi, başka başka ADC, DAC entegresi, bundan da beraber biz mikro işlemci yapılarına yani sistem kurma yapılarına girmiş olacağız.
+
+15
+00:18:18,559 --> 00:18:37,759
+Ders bünyesinde merkezde mikro işlemci 8086 olacak, 8086 içeride primlerinde itibata geçiren başka entegrelerle netişimini kodlayacağız biraz da, kodlama meselesi zaten sizin labınız olacak, labda gerçekleştireceksiniz bu yapacağınız işlemleri.
+
+16
+00:18:38,359 --> 00:19:03,359
+Ders kapsamında notlandırma mevzusunda da bir adet vizemiz olacak, ya birinci hafta olacak ya ikinci hafta onu daha karar veremedik ama bir adet vizemiz olacak, bir de finalimiz olacak, vize yüzde 30 etkileyecek, final yüzde 40 etkileyecek, diğer geri kalan yüzde 30'u ise siz labdan elde edeceksiniz, lablarımız olacak demiştim zaten.
+
+17
+00:19:03,960 --> 00:19:30,960
+Bu lablar, dersi belki daha önceden alanlar var bilirler, gerçekten ciddi lab yani, işte logikte de labınız vardı, devre teorisinde de labınız vardı ama mikro işlemcinin labları biraz daha programlamaya yakın lablar olacak sizin açınızdan, biraz daha biz domonun mimarisinde, SM didilinde programlamayı öğrettiğimiz bir lablar olacak, bu yüzden bir tık bazı kesimlere zorlandığı lablar olacak.
+
+18
+00:19:31,559 --> 00:19:54,559
+Beş tane lab öngörüyoruz şu aşamada, tabii ki kalabalığız yani yaklaşık 240 kişi dersi seçmiş durumda, iki grubun toplamı yani burada tabii muafiyet durumları söz konusu olacak, çıkartmalar yani asistanlar o ayarlamayı yapacak ama tahmini olarak 180 kişinin laba katılabileceğini düşünüyoruz.
+
+19
+00:19:55,160 --> 00:20:04,160
+Böyle olunca beş lab olacak ve her bir labı dönüşünlü gruplar şekliyle bizim arkadaşlar organizi edecek, asistan arkadaşlar.
+
+20
+00:20:05,160 --> 00:20:23,160
+Dersi'nin asistanları üç tane araştırma görevcisi arkadaşımız olacak, Sercan Aygün zaten labın ana sorumlusu olacak, her türlü konuda sizin danışabileceğiniz kişidir kendisi mikro işlemci tabanlı problemlerinizden.
+
+21
+00:20:23,759 --> 00:20:36,759
+[öğrenci] ve [öğrenci] Hanım da beraber siz de lablarınızı kontrol edecek.
+
+22
+00:20:37,759 --> 00:20:51,759
+Burada şimdi bir sınıf oluşturuldu lab için, belki geçen sene alan arkadaşlar da o piyazayı kullanarak bir sınıf oluşturdu Sercan Hocanız.
+
+23
+00:20:52,359 --> 00:21:07,359
+Ben siz de onun kodunu paylaşacağım ve herkesten bu laba üye olmasını isteyeceğim çünkü bütün labla alakalı duyurularımız bu piyazla sistemi üzerinden olacak.
+
+24
+00:21:08,359 --> 00:21:16,359
+Sorularınızı piyaza üzerinden gönderebilirsiniz ve piyaz üzerinden de cevap verecek hocalarınız size labla alakalı olan kısımlardan.
+
+25
+00:21:16,960 --> 00:21:43,099
+Şimdi size bir kodu göndereceğim, arkadaşlar bir saniye kaç, arkadaşlarınız da sıkıntı çıkmış bakalım onlar neymiş.
+
+26
+00:21:49,160 --> 00:21:58,160
+Mikrofonu kullanmayacağınız vakitler arkadaşlar şu sol alt köşede aşağıda zoomda müt kısmı var orayı mütleyebiliriz.
+
+27
+00:21:58,759 --> 00:22:01,759
+Sesler çünkü biraz cazırtı yaparak bu tarafa geliyor.
+
+28
+00:22:07,589 --> 00:22:12,589
+YRM geldin mi bir link paylaşmıştım Maydenin yeni görüyorum burada mısın?
+
+29
+00:22:13,589 --> 00:22:16,589
+Bakıyoruz, YRM evet burada.
+
+30
+00:22:17,589 --> 00:22:22,440
+Tamam herhalde midler geldi.
+
+31
+00:22:23,440 --> 00:22:27,440
+Şimdi şu piyazı kodunu sizlerle paylaşalım.
+
+32
+00:23:14,630 --> 00:23:27,420
+Piyazlığa giriyorsunuz arkadaşlar.
+
+33
+00:24:14,099 --> 00:24:17,099
+Şu piyazlardan bir girmeyi deneyebilir miyiz arkadaşlar?
+
+34
+00:24:34,769 --> 00:24:37,769
+Giriliyor mu acaba klasa, sınıfa? Denedik mi?
+
+35
+00:24:57,650 --> 00:25:03,809
+Herhalde girdiniz muhtemelen.
+
+36
+00:25:12,309 --> 00:25:16,309
+Tamam orada sizden kendi profilinizi oluşturmanız isteniyor mu?
+
+37
+00:25:17,309 --> 00:25:22,940
+Yani isim, soy isim tarzı. Öğrenci olup olmadığınızla alakalı.
+
+38
+00:25:23,940 --> 00:25:28,940
+Hocam ilk girdiğimizde linkten demo yuzuru olarak atıyor bizi ama hesaplaşabiliyoruz açmamız gerekiyor mu?
+
+39
+00:25:29,539 --> 00:25:39,539
+Tabii yani soru soracağınız vakit veyahut da bir ödev verildiğinde isminize binayen ödevi submit etmek için kendi isminizi de 100 lira açmanız daha mantıklı.
+
+40
+00:25:40,539 --> 00:25:47,430
+Tamamdır.
+
+41
+00:25:48,430 --> 00:25:52,430
+Burada yukarıda lab 01234 tarzı her bir lab'a ait bir post ayrılabiliyor.
+
+42
+00:25:53,430 --> 00:25:56,430
+O posta göre siz oraya bir soru da sorabiliyorsunuz.
+
+43
+00:25:57,430 --> 00:26:01,430
+Normal bir forum sitesi mantığıyla piyazayı kullanabiliyoruz.
+
+44
+00:26:02,430 --> 00:26:04,430
+Güzel kullanışlı bir arayus sunuyor.
+
+45
+00:26:05,430 --> 00:26:09,430
+Şu an 57 tane öğrenci gözüküyor ama belki biraz güncel değilim.
+
+46
+00:26:10,430 --> 00:26:14,430
+Henüz daha belki eklenecektir diye düşünüyorum.
+
+47
+00:26:15,430 --> 00:26:18,430
+Bakıyoruz hala aynı gözüküyor ama.
+
+48
+00:26:19,430 --> 00:26:24,430
+Neyse piyaz üzerinden asistanlarla da bir irtibatta kalabilirsiniz.
+
+49
+00:26:25,430 --> 00:26:27,430
+Piyaz üzerinden sizin lab'larınız duyurulacak.
+
+50
+00:26:28,430 --> 00:26:32,430
+Lab'lar zoom vasıtasıyla lab seyirişinin 4-6 arası.
+
+51
+00:26:33,029 --> 00:26:41,029
+4-6 arasında siz zoom'a login olup ilgili asistana o haftanın ödevini göstereceksiniz.
+
+52
+00:26:43,029 --> 00:26:48,029
+Bu aşamada asistanlarla beraber bir planlama programlama yapacağız.
+
+53
+00:26:50,029 --> 00:26:52,029
+Dediğim gibi lab'lar önemli.
+
+54
+00:26:53,029 --> 00:26:55,029
+Bu ders genel olarak durumlarınız vardır.
+
+55
+00:26:56,029 --> 00:26:58,029
+Zor bir ders bazı öğrenciler için.
+
+56
+00:26:58,630 --> 00:27:03,630
+Yani o yüzden dersteki lab notunuzun yüksek olması çok önemli.
+
+57
+00:27:04,630 --> 00:27:06,630
+Birinci vize genelde kolay oluyor.
+
+58
+00:27:07,630 --> 00:27:11,710
+Class access kodunu mu soruyor?
+
+59
+00:27:12,710 --> 00:27:13,710
+Tamam.
+
+60
+00:27:14,710 --> 00:27:16,710
+Dur hemen onu da gönderiyorum.
+
+61
+00:27:20,680 --> 00:27:22,680
+Şu olması lazım.
+
+62
+00:27:23,680 --> 00:27:25,680
+Bir şunu deneyebilir miyiz?
+
+63
+00:27:38,970 --> 00:27:42,970
+Yani şuradaki activation kodu da geçerli olabilir arkadaşlar.
+
+64
+00:27:43,569 --> 00:27:45,569
+Bir activation kod gönderdim size.
+
+65
+00:28:13,640 --> 00:28:15,640
+Öyle bir problem var.
+
+66
+00:28:16,640 --> 00:28:23,640
+Onun için şu aşamada tek yapabileceğimiz mail olarak size her hafta dersin başında bir kod göndereceğim.
+
+67
+00:28:24,640 --> 00:28:26,640
+Bir link gönderebilirim.
+
+68
+00:28:27,640 --> 00:28:39,690
+Biz ama bildireceğiz muzeme.
+
+69
+00:28:40,690 --> 00:28:42,690
+Dersin ismi şöyle geçiyor arkadaşlar.
+
+70
+00:28:46,059 --> 00:28:49,529
+Şöyle de yazınca çıkabilir.
+
+71
+00:28:50,130 --> 00:28:52,130
+Kod da çıkması lazımdı ama nedense.
+
+72
+00:29:05,849 --> 00:29:09,849
+Şu an enrollmentlar oluyor ama şöyle yazabilirsiniz belki ismini.
+
+73
+00:29:21,029 --> 00:29:24,029
+Hocam kod micro 2020 ünlem çalışıyor.
+
+74
+00:29:28,400 --> 00:29:29,400
+Kodu şuymuş arkadaşlar.
+
+75
+00:29:29,400 --> 00:29:31,400
+Micro 2020 ünlemmiş.
+
+76
+00:29:40,240 --> 00:29:42,240
+Yalnız bu kodsuz da olması lazımdı.
+
+77
+00:30:03,299 --> 00:30:08,299
+Neyse bu piyazda olayını duyururuz zaten bir kod mod gerekiyorsa eğer.
+
+78
+00:30:08,900 --> 00:30:15,059
+Şu aşamada herhalde.
+
+79
+00:30:16,059 --> 00:30:18,059
+Şu an biraz en oldukları geliyor.
+
+80
+00:30:19,059 --> 00:30:21,059
+Girebiliyorsunuz evet.
+
+81
+00:30:22,059 --> 00:30:24,059
+Hocam göremeyen arkadaşları sorununu anladım şu an.
+
+82
+00:30:25,059 --> 00:30:29,059
+Yıldız'ı tuça haferle yazınca hiçbir şey çıkmıyor ama üniversite görüyor.
+
+83
+00:30:30,059 --> 00:30:32,059
+İngilizce haferle yazınca görüyor dersleri.
+
+84
+00:30:33,059 --> 00:30:36,059
+Tamam Yıldız Technicals diye yazınca görüyormuş arkadaşlar.
+
+85
+00:30:37,059 --> 00:30:39,059
+İngilizce bir şekilde yazalım.
+
+86
+00:30:39,660 --> 00:30:43,660
+Ama yine bir kod mevzusu varsa da Sercan Hocanızın şeyini takip edin.
+
+87
+00:30:44,660 --> 00:30:47,660
+AVS sayfasında gibi duyuruları oradan bir paylaşım yapılır.
+
+88
+00:30:48,660 --> 00:30:50,660
+Şöyle hitapta ben de bir kod olayını göremedim ama.
+
+89
+00:30:51,660 --> 00:30:53,660
+Google Classroom gibi de iyi zannedersem.
+
+90
+00:30:56,660 --> 00:31:00,660
+Evet neyse bu işi hallederiz ama genel olarak burayı takip edelim.
+
+91
+00:31:01,660 --> 00:31:05,660
+Bu piyazda üzerinden duyurlarımız vesaire olacak.
+
+92
+00:31:06,259 --> 00:31:11,079
+Evet yani labın önemli olduğunu vurguluyoruz.
+
+93
+00:31:12,079 --> 00:31:16,079
+Çünkü yani %30'luk payın labdan geleceği biri vize kadar.
+
+94
+00:31:17,079 --> 00:31:22,079
+Hatta birinci vize de genelde kolay olmakla beraber asıl problem finalde yaşamıyor.
+
+95
+00:31:23,079 --> 00:31:26,079
+İntel lablar işin içine girince biraz sıkıntı çekiyoruz.
+
+96
+00:31:27,079 --> 00:31:30,079
+O yüzden lablara gerekli önemi gösterelim.
+
+97
+00:31:31,079 --> 00:31:33,079
+Kaç kişi olduk ayrıca burada şu an?
+
+98
+00:31:35,079 --> 00:31:37,079
+Daha hala 80'ler.
+
+99
+00:31:38,079 --> 00:31:41,079
+Neyse bu hafta hızlı bir giriş yapacağız.
+
+100
+00:31:42,079 --> 00:31:46,079
+Genel olarak sistem nasıl yani 8086 üzerine odaklanacağımızı söyledik ama
+
+101
+00:31:47,079 --> 00:31:49,079
+8086'ın öncesini biraz deneyeceğiz.
+
+102
+00:31:50,079 --> 00:31:53,079
+Sonrasında 8086'dan iç yapısı ve bacak bağlantıları gibisinden
+
+103
+00:31:54,079 --> 00:31:56,079
+base anlamda ama önemli bilgileri anlatacağız.
+
+104
+00:31:57,079 --> 00:32:03,079
+Çünkü bu bilgileri biz her daim kullanacağız bütün dönem boyunca.
+
+105
+00:32:07,140 --> 00:32:12,140
+Şimdi biz aslında bu mikro işlemci sistemlerini 3 çağa ayırıyoruz.
+
+106
+00:32:13,140 --> 00:32:18,140
+Yani bilgisayar mimarilerini 3 çağa ayırıyoruz.
+
+107
+00:32:19,140 --> 00:32:22,140
+Mekanik çağla başlayan bir dönem var ki buradaki en büyük yenilik
+
+108
+00:32:23,140 --> 00:32:25,140
+minatın önce Baviller tarafından tasarlanan
+
+109
+00:32:26,140 --> 00:32:28,140
+işte abaküs örneği.
+
+110
+00:32:29,140 --> 00:32:31,140
+Mekanik çağın tabi ilerlemesi biraz yavaş sürmekle beraber
+
+111
+00:32:32,140 --> 00:32:35,140
+zaten bizde bilirsiniz elektronik dizayn da
+
+112
+00:32:35,140 --> 00:32:40,140
+bir eksponansiyel bir artım söz konusu yani hızlanma daha hızlı olması
+
+113
+00:32:41,140 --> 00:32:43,140
+sonlara doğru gerçekleşmiş durumda.
+
+114
+00:32:44,140 --> 00:32:48,140
+İşte ilk defa mekanik çağ devrende yapılan hesaplama işlemleri için
+
+115
+00:32:49,140 --> 00:32:53,140
+özellikle yapılan makineler işte abaküs gibi abaküsten sonra
+
+116
+00:32:54,140 --> 00:32:56,140
+bir tık sonra belki duydunuz paskal inmeşin diye geçer
+
+117
+00:32:57,140 --> 00:32:59,140
+paskal makinelerine kadar bir durağın dönem var.
+
+118
+00:33:00,140 --> 00:33:02,140
+Sonrasında da hızlanan bir dönem söz konusu.
+
+119
+00:33:02,140 --> 00:33:07,140
+Burada da hani bunun ilgili YouTube videosu var sunumlu izleyebilirsiniz ama
+
+120
+00:33:08,140 --> 00:33:11,140
+sırf merak edenler için aslında sağdaki çark çevirdikçe
+
+121
+00:33:12,140 --> 00:33:14,140
+her 10 dijitte bir soldakinin otomatikman çevrilmesi
+
+122
+00:33:15,140 --> 00:33:18,140
+arka planda bir çark yapısı mevcut.
+
+123
+00:33:19,140 --> 00:33:24,140
+O çarkın katmanlarına bağlı başka çarklar bu işlemi gerçekleştiriyor.
+
+124
+00:33:25,140 --> 00:33:30,140
+Toplama işlemini yapmak istediğimizde de işte iki sekizi çevirdikten sonra
+
+125
+00:33:30,140 --> 00:33:34,140
+beşi sekiz yani biriler dijitinde beş kadar çevirdiğimizde
+
+126
+00:33:35,140 --> 00:33:39,140
+otomatik soldaki artıyor ve üçü sonra da ikinci dijittekine
+
+127
+00:33:40,140 --> 00:33:41,140
+ekleyerek çeviriyoruz.
+
+128
+00:33:42,140 --> 00:33:46,140
+Böyle bir matematiksel işleme tabi tutan bir mekanik hesap makinesi yapılmış.
+
+129
+00:33:47,140 --> 00:33:49,140
+Tabii bunlar hala mekanik.
+
+130
+00:33:50,140 --> 00:33:55,140
+Mekanikler çok 1800 yıllara kadar kullanılan bir hesap makineleri genelde.
+
+131
+00:33:55,140 --> 00:34:01,140
+Yani bir hesaplama için yapılmış olan cihazlar 1800 yıllara kadar kullanılmış.
+
+132
+00:34:02,140 --> 00:34:07,140
+Artık 1800 yıllarda delikli kartlar ki bizim de aslında programlamanın temelini
+
+133
+00:34:08,139 --> 00:34:11,139
+oluşturan delikli kartların kullanılmasını görüyoruz.
+
+134
+00:34:12,139 --> 00:34:16,139
+Ve ondan sonra artık elektriksel çağ dediğimiz biraz daha o paskalin
+
+135
+00:34:17,139 --> 00:34:22,139
+meşinlerin elde değil de elektrik motoruyla geliştirilmesiyle başlayan bir trend var.
+
+136
+00:34:22,139 --> 00:34:27,139
+Yani ilk mekanik çağla başlayan bu bilgisayar bir şeyleri bilgisayar
+
+137
+00:34:28,139 --> 00:34:34,139
+kompütasyon işlem cihazları elektriksel çağ ile bir kademe atlamış durumda.
+
+138
+00:34:35,139 --> 00:34:38,139
+Burada da yine delikli kartlar kullanılmış.
+
+139
+00:34:39,139 --> 00:34:44,139
+Ve 1896 yıllara kadar bu delikli kartlar vasıtasıyla elektriksel çağda bir
+
+140
+00:34:45,139 --> 00:34:47,139
+hesaplama işleme makineleri kullanılmış.
+
+141
+00:34:47,139 --> 00:34:51,139
+Burada aslında çok da yabancı olmadığımız bir firmayı görüyoruz.
+
+142
+00:34:52,139 --> 00:34:58,139
+IBM makineleri, International Business Management diye geçen ilk 1896 yıllarda
+
+143
+00:34:59,139 --> 00:35:04,139
+aslında elektriksel çağdan günümüze çok büyük yenilikler getiren bir firmayı görüyoruz.
+
+144
+00:35:05,139 --> 00:35:10,139
+Sonrasında elektriksel çağın artık son döneminde yine aynı şekilde
+
+145
+00:35:11,139 --> 00:35:14,139
+delikli kartların kullanıldığı bir yapı var Z3 diye.
+
+146
+00:35:14,139 --> 00:35:20,139
+Bu aslında bizim şu an modern bilgisayarın ilk semedi yani en yakından önceki ilk diye
+
+147
+00:35:21,139 --> 00:35:22,139
+tabir edilen atası sayılabilir.
+
+148
+00:35:23,139 --> 00:35:25,139
+5 Hz'lik bir frekansla çalışan bir makine bu.
+
+149
+00:35:26,139 --> 00:35:31,139
+Şimdi bu tabirleri biliyoruz ama yenilmek için, hatırlatmak için bir daha üstünden geçmekte fayda var.
+
+150
+00:35:32,139 --> 00:35:35,139
+Şimdi buradaki Hz mantığı ne demek aslında?
+
+151
+00:35:36,139 --> 00:35:40,139
+Yani frekansla çalışıyorsa bunu zaman düzenini almak için
+
+152
+00:35:40,139 --> 00:35:44,139
+biz aslında bir bölüm f'den bir zaman bilgisi çıkartıyorduk.
+
+153
+00:35:45,139 --> 00:35:50,139
+Bunu unutmuş olabiliriz diye hızlıca geçelim çünkü bizim işlemlerimizi yapacağımızda
+
+154
+00:35:51,139 --> 00:35:56,139
+hep frekans, fers diyeceğiz, mini-second diyeceğiz, nanosecond diyeceğiz vs.
+
+155
+00:35:57,139 --> 00:36:00,139
+bunların neye tekabül geldiğini, kişisel dönüşünlerine bilmekte fayda var.
+
+156
+00:36:01,139 --> 00:36:05,139
+Aslında burası 1.5.33 lük bir zamanla kast ediyor.
+
+157
+00:36:05,139 --> 00:36:11,139
+Yani saniyenin 20'de birini kast ediyoruz.
+
+158
+00:36:12,139 --> 00:36:14,139
+Pardon 12'de birini kast ediyoruz.
+
+159
+00:36:15,139 --> 00:36:20,139
+Yani yaklaşık 1 saniyede ne işi yapmış oluyor?
+
+160
+00:36:21,139 --> 00:36:24,139
+12 işlem yapmış olan bir makineden bahsediyoruz.
+
+161
+00:36:25,139 --> 00:36:30,139
+Ki çok hızlı bir makine değil ama o dönemde yapılmış olan en hızlı makinelerden biri.
+
+162
+00:36:30,139 --> 00:36:34,139
+Burada önemli bir nokta var, roulette temelde olması.
+
+163
+00:36:35,139 --> 00:36:39,139
+Şimdi biz elektronik çağda 3 yapıdan bahsedeceğiz.
+
+164
+00:36:40,139 --> 00:36:44,139
+Bir roulette temelde bilgisayarlar, bir sonraki slide'da onlar geliyor zaten
+
+165
+00:36:45,139 --> 00:36:49,139
+elektronik çağ dediğimiz çağda vakum tüpleri yani roulette'den kastımız
+
+166
+00:36:50,139 --> 00:36:54,139
+biraz vakum tüpleri dediğimiz yapılar, roulette bir cihazlar demek.
+
+167
+00:36:55,139 --> 00:36:59,139
+Vakum tüpleriyle geliştirilen ilk bilgisayarlar başlıyor.
+
+168
+00:37:00,139 --> 00:37:08,139
+Vakum tüpünü belki internetler atırsınız, şöyle lambaya benzeyen vakum tüplü gibi şeyler.
+
+169
+00:37:09,139 --> 00:37:14,139
+Bunlardan birkaç tanesini normalde şuradaki yuvarlak dediklere sokarak, çalıştırarak
+
+170
+00:37:15,139 --> 00:37:19,139
+yani programlamayı tamamen donanımsal yaptıkları bir sistemi kast ediyor bu.
+
+171
+00:37:20,139 --> 00:37:24,139
+İlk Colossus denen bir makinede bunu kullanmışlar
+
+172
+00:37:25,139 --> 00:37:28,139
+ve bu enigma şifrenin çözülmesinde kullanılmış.
+
+173
+00:37:28,139 --> 00:37:33,139
+Tabii bu spesifik yani donanımsal programlamanın en büyük dezavantajı
+
+174
+00:37:34,139 --> 00:37:36,139
+zaten probleme spesifik olmasıdır.
+
+175
+00:37:37,139 --> 00:37:41,139
+Ve bir vakum tüpleriyle programlanan bir bilgisayar
+
+176
+00:37:42,139 --> 00:37:46,139
+sadece bir amacaya yönelik işlemler yapabilen bilgisayar demektir.
+
+177
+00:37:47,139 --> 00:37:52,139
+Bunu ilerleyen dönemlerde geliştirerek vakum tüplerinden ziyade
+
+178
+00:37:52,139 --> 00:37:57,139
+artık bir sonraki kademeye geçilmiş zaman düzleminde.
+
+179
+00:37:58,139 --> 00:38:00,139
+En yak çokça dinlenen bir bilgisayar.
+
+180
+00:38:01,139 --> 00:38:09,139
+Demin ki işte Alan Tuning'in çıkartmış olduğu Colossus'un üstünde çok çok daha hızlı bir bilgisayar.
+
+181
+00:38:10,139 --> 00:38:15,139
+Ama bunlaki sıkıntı şu, vakum tüpleri demin gösterdiğim boyutlarda olduğu için
+
+182
+00:38:16,139 --> 00:38:21,139
+17 bin tane vakum tüpünün kullanılması yaklaşık 30 tonluk bir bilgisayar ağırlığına
+
+183
+00:38:22,139 --> 00:38:24,139
+800 kilometrelik bir kalbo kargaşısından neden oluyor.
+
+184
+00:38:25,139 --> 00:38:27,139
+Yani büyük yapılar bu vakum tüpleri.
+
+185
+00:38:28,139 --> 00:38:31,139
+Ve büyük bir makine olmasından dolayı da çok da efektif değil.
+
+186
+00:38:32,139 --> 00:38:38,139
+Şeye baktığımızda yani saniyede 100 bin işlem demek aslında bu bize frekansını söylüyor biraz.
+
+187
+00:38:39,139 --> 00:38:44,139
+Yani saniyede şimdi frekansları hatırlarsanız 1000 demek 1 kHz demektir.
+
+188
+00:38:45,139 --> 00:38:49,139
+Buradaki de aslında 100 kHz'lik bir bilgisayardan bahsediyoruz.
+
+189
+00:38:49,139 --> 00:38:53,139
+100 kHz'lik bir bilgisayar çok da hızlı olmayan bir bilgisayar.
+
+190
+00:38:54,139 --> 00:38:59,139
+Ama tabii o dönem için çok da yani bu kadar büyük boyutlarda işlem yapabilmesi ve
+
+191
+00:39:00,139 --> 00:39:08,139
+işte saniyede yine 100 bin işlem yapabilmesi nedeniyle çokça isminden bahsettirilmiş bir bilgisayar en yak bilgisayarlara.
+
+192
+00:39:10,139 --> 00:39:15,139
+Sonrasında tabii bu elektronik çağ vakum tüpleri'nin kısa ömürleri, patlayıp durmaları gibisinden
+
+193
+00:39:15,139 --> 00:39:18,139
+internette bununla alakalı çok espriler de var.
+
+194
+00:39:19,139 --> 00:39:23,139
+Hani vakum tüplerine şey yaparsınız, karakatürlerine de bakarsınız.
+
+195
+00:39:24,139 --> 00:39:29,139
+Zamanında 1950'lerde 60'larda vakum tüpleri alakalı çok karakatürler çıkmış.
+
+196
+00:39:30,139 --> 00:39:39,139
+Çünkü ömürleri çok kısa olmasından dolayı artık yani bir işlem yapmağın getirdiği kazanç
+
+197
+00:39:39,139 --> 00:39:50,139
+o bakım gerektirdiği bakımdan daha iyi olmadığı için artık vakum tüplerinden çoğu kişiler bayağı bir şikayet etmişler.
+
+198
+00:39:51,139 --> 00:39:55,139
+Bunun üzerine artık biz elektronik çağda 3 evreden bahsedeceğiz demişti.
+
+199
+00:39:56,139 --> 00:39:57,139
+Vakum tüpleri bunun ilk evresiydi.
+
+200
+00:39:58,139 --> 00:40:02,139
+İkinci evresiyse ise transüstör tabanlı evre.
+
+201
+00:40:03,139 --> 00:40:10,139
+Yani transüstör temelli bilgisayarların veya bilgi işlemcilerin çıkarılmasıyla alakalı evre.
+
+202
+00:40:11,139 --> 00:40:15,139
+İlk 47 yılında çıkarılmış bir transüstör mimarisi mevcut.
+
+203
+00:40:16,139 --> 00:40:22,139
+İşte entegre anlamı biraz daha transüstörlerin gelişmesiyle ortaya çıkmış.
+
+204
+00:40:22,139 --> 00:40:24,139
+Nedir entegreden kastımız aslında?
+
+205
+00:40:25,139 --> 00:40:36,119
+Integrated diye geçen yapılar aslında içerisinde pek çok transüstörün yer aldığı bir yapı demek integrated devreler.
+
+206
+00:40:37,119 --> 00:40:40,119
+Bunlar bir ilkte ham 98 yıllarında başlanmış.
+
+207
+00:40:41,119 --> 00:40:47,119
+1960'lı yıllarda sayısal entegredildiğimiz digital integrated circuits'lara evrenmiş.
+
+208
+00:40:48,119 --> 00:40:51,119
+Çünkü sayısal mimaridere geçilmesi bilgisayarlarda önemli.
+
+209
+00:40:51,119 --> 00:40:56,119
+Sonuçta discreet bir yapı yani kontünüs bir yapının discreet moda geçilmesi gerekmekte.
+
+210
+00:40:57,119 --> 00:41:01,119
+71 yılında Intel firması ilk mikro işlemciyi geliştiriyor.
+
+211
+00:41:02,119 --> 00:41:15,119
+Bazı basic anlamda hesap makineleri olsun veya bazı saatlerin işlemcileri hala bu işlemciyi kullanır.
+
+212
+00:41:15,119 --> 00:41:23,119
+4004 serisi işlemciler ilk 1971 yılında çıkarılmış işlemciler ve transüstör tabanlı olmasına rağmen
+
+213
+00:41:24,119 --> 00:41:30,119
+%100 transüstör değil RTL dediğimiz yani direnç transüstör loji ile tasarlanmış mimariler.
+
+214
+00:41:31,119 --> 00:41:42,119
+Ama bizim yani mikro işlemci anlamında bizim başlangıç noktası mikro işlemci anlamında 4004 işlemcilerdir.
+
+215
+00:41:42,119 --> 00:41:49,119
+Bu işlemciye baktığımızda 4 bitlik bir mikro işlemci şimdi bu 4 bit nedir 8 bit nedir bunlara değineceğiz.
+
+216
+00:41:50,119 --> 00:41:57,119
+Şu etapta hani 4 bitlik bir mikro işlemci ile başlandığını genel kültür olarak bilelim.
+
+217
+00:41:58,119 --> 00:42:04,119
+Adresleme kapasiteleri şimdi bir işlemcinin iyi olmasını sağlayan birkaç şey var.
+
+218
+00:42:05,119 --> 00:42:10,119
+Yani bir işlemci bir işlemciden daha iyidir kaidesini şu nedenlere bağlayabiliriz.
+
+219
+00:42:10,119 --> 00:42:18,119
+Bir dediğimiz gibi kaç bitlik olduğu önemli işlemcinin kaç bitlik bir işlemci olduğu önemli.
+
+220
+00:42:19,119 --> 00:42:23,119
+İki adresleme bit sayısı yani adresleme kapasitesi ne olduğu önemli.
+
+221
+00:42:24,119 --> 00:42:29,590
+Sonra kaç adet rejister olduğu önemli içerisinde.
+
+222
+00:42:30,590 --> 00:42:43,420
+Sonrasında komut seti dediğimiz yani bir mikro işlemcinin yapabileceği kabiliyetleri belirtilen komut adedi önemli.
+
+223
+00:42:44,420 --> 00:42:50,559
+Bu 4 kretere göre biz bir mikro işlemcinin girişmişliğinden bahsedebiliyoruz.
+
+224
+00:42:51,559 --> 00:42:58,559
+Tabii işte saniyede 50 bin işlem yapması 100 bin işlem yapması da aslında bunlardan türetilen bir şey ama onu da yazalım.
+
+225
+00:42:59,559 --> 00:43:01,559
+Bir de yani çalışma frekansı diyebiliriz buna.
+
+226
+00:43:02,559 --> 00:43:08,199
+Çalışma frekansı önemli veya işlem frekansı diyelim daha iyi olur.
+
+227
+00:43:09,199 --> 00:43:10,199
+Şunu silebiliyor muyuz?
+
+228
+00:43:11,199 --> 00:43:16,599
+Evet işlem frekansı.
+
+229
+00:43:17,599 --> 00:43:22,599
+Şimdi bu 5 kretere göre biz bütün mikro işlemcileri aslında birbirine sınıflandırabiliyoruz.
+
+230
+00:43:23,599 --> 00:43:24,599
+Mesela kaç bitlikmiş bu?
+
+231
+00:43:25,599 --> 00:43:26,599
+4 bitlik bir mikro işlemciden bahsediyoruz.
+
+232
+00:43:27,599 --> 00:43:32,599
+Adresleme kapasitesi şimdi 4096'lık kısmı aslında önemli bizim için.
+
+233
+00:43:33,599 --> 00:43:38,599
+Bu şu demek 4096 tane farklı modülü tetikleyebilecek bir yapıda.
+
+234
+00:43:39,599 --> 00:43:44,599
+4096 farklı memori bloğunu ki buradaki memori bloğu o 4 diktikli memori bloğundan bahsetmiş.
+
+235
+00:43:44,599 --> 00:43:48,599
+4096 tanesini tetikleyebilen bir yapıda olduğundan.
+
+236
+00:43:49,599 --> 00:43:55,599
+Şu an böyle üstün körü geçiyorum detaylarına gireceğiz zaten kendi işlemliğimizi analiz ederken 8086 analiz ederken.
+
+237
+00:43:56,599 --> 00:44:01,599
+Komut setinin 45 adet olması aslında bu şu demek 45 farklı işlem gerçekleştirebiliyoruz.
+
+238
+00:44:02,599 --> 00:44:06,599
+Bunlar hani SMD bir soru vardı SMD ile alakalı.
+
+239
+00:44:06,599 --> 00:44:18,599
+Gözüm öyle bir denk geldi demin ama SMD'yi de aynı zaman alıyorsak derste zorluk çeker miyiz tarz bir soruydu ama şu an onu göremiyorum soruyu.
+
+240
+00:44:19,599 --> 00:44:29,599
+Şöyle arkadaşlar eğer dersi mikro işlemci dersini yani SMD 2. sınıf dersi SMD'yi alırken üstten mikro işlemciyi seçtiyseniz çok zorluk çekersiniz.
+
+241
+00:44:29,599 --> 00:44:33,599
+Yani mikro işlemcinin iç yapısı zaten SMD'dir.
+
+242
+00:44:34,599 --> 00:44:37,599
+Yani biz SMD dilinde prorah edileceğiz yani koklayacağız çoğu şeyi.
+
+243
+00:44:38,599 --> 00:44:40,599
+Ya bu SMD'yi bilmeniz lazım.
+
+244
+00:44:41,599 --> 00:44:49,599
+Ben bu hafta hızlıca SMD'ye vaktimiz kalırsa tabii SMD komutlarına da değineceğim ama hani en çok kullanacaklarımıza.
+
+245
+00:44:50,599 --> 00:44:51,599
+Ya bunu bilmemiz lazım.
+
+246
+00:44:52,599 --> 00:44:58,599
+Şimdi 45 komuttan oluşuyor demesi aslında işte MOV var ne var ADD var.
+
+247
+00:44:59,599 --> 00:45:09,599
+İşte sub var gibisinden bunların her bir SMD komutu ve bunlar aslında bizim instruction setimizdeki komut setimiz.
+
+248
+00:45:10,599 --> 00:45:19,599
+Yani bu bir tane bir tane bu ya toplam 45 farklı komuttan oluşan bir yapı bir instruction seti içeriyormuş 4004 ki bu gerçekten çok az bir sayı.
+
+249
+00:45:20,599 --> 00:45:22,599
+Yani her bir işi yapamayacağımızı gösteren bir durum.
+
+250
+00:45:22,599 --> 00:45:28,599
+Veyahut da işte örnek verelim multi player yapacaksınız yani çarpma işlemi yapacaksınız.
+
+251
+00:45:29,599 --> 00:45:30,599
+Mul komutu yok o zaman ne yapacağız?
+
+252
+00:45:31,599 --> 00:45:34,599
+ADD yapacağız kaç kere işte kaçla çarpacaksak.
+
+253
+00:45:35,599 --> 00:45:46,599
+Yani bu işlemler desteklemediği için bizi daha çok işleme yönlendirdiğinden dolayı bu komut setinin ne kadar zengin olması işlemcinin o kadar iyi olduğunu gösterir.
+
+254
+00:45:47,599 --> 00:45:50,599
+30 gram ağırlığında olması bir novelty bir yeniliktir.
+
+255
+00:45:51,599 --> 00:45:59,599
+Neden? Çünkü 30 tonluk bir makineden en yakından 30 gram ağırlığında bir işlemciye dönmek büyük başarılı olarak görülmüş.
+
+256
+00:46:00,599 --> 00:46:09,599
+Saniyede 500 50 bin işlem yani 50 player zik bir işlemci 100 bin işlem yapıyordu ama 30 tona tekabül edince aslında çok da manalı değil.
+
+257
+00:46:10,599 --> 00:46:11,599
+Yani 50 bin 100 bin yapmak.
+
+258
+00:46:11,599 --> 00:46:26,599
+Genelde işte zamanında tetlistler vardı hatırlar mısınız elde game boy der değil de tetlist tarzı böyle elde oynanan oyun şeyler vardı yani oyun konsolları demeyelim de oyun aletleri vardı.
+
+259
+00:46:27,599 --> 00:46:30,599
+Bunlar misalde 4004 işlemciyle yapılmıştı.
+
+260
+00:46:31,599 --> 00:46:35,599
+Şu an hala bazı saatler 4004 ile en basit o bakkal hesap makinesi diyoruz.
+
+261
+00:46:36,599 --> 00:46:45,599
+İşte havuza birme olmayan yani tek bir havuzayı da saklayamayan onlar misal hala 4004 işlemcisini kullanıyor.
+
+262
+00:46:47,599 --> 00:46:55,599
+İşte 4040 da çıkmış zamanda ama yüksek frekanslı sonuçta şu teknoloji gelişmedikten sonra bir yere kadar geliştirebilmişler.
+
+263
+00:46:56,599 --> 00:47:10,739
+Şimdi sorular geliyor da arkadaşlar en son şey yapalım şimdi çünkü konuyla alakasız bazı sorular geliyor en son şey yapalım onları.
+
+264
+00:47:12,739 --> 00:47:13,739
+Cevaplandıralım.
+
+265
+00:47:14,739 --> 00:47:21,739
+1971'de Intel 8008'i tanıtmış siz yazın çete ben en son hani en son 10 dakika şey yaparım cevap veririm onlara.
+
+266
+00:47:23,739 --> 00:47:30,739
+Şimdi buradaki yenilik dediğimiz o 4 kriter vardı ya işte kaç bitlik olduğu bu 4 bitlik bir mikro işlemci diyoruz.
+
+267
+00:47:31,739 --> 00:47:38,739
+Bu 8 bitlik bir mikro işlemci yani aslında iki kat bir mikro işlemcinin bit sayısında artırım söz konusu.
+
+268
+00:47:38,739 --> 00:47:44,739
+Dediğim gibi bundan neyi kastediyoruz anlatacağız 16 kilobaytlık bir adresleme kapasitesi var diyor.
+
+269
+00:47:45,739 --> 00:47:54,739
+Aslında şöyle demeye çalışıyoruz 8 bit normalde bu dönüşümleri lojikten hatırlarız nedir 1 byte'a tekabül gelir.
+
+270
+00:47:55,739 --> 00:48:04,739
+Ve buradaki byte aslında şuradaki BI tekabül gösterir ve aslında bu 16 bin tane her bir tanesi 1 byte olan
+
+271
+00:48:05,739 --> 00:48:08,739
+hücre bloğuna adresleyebildiğini gösterir.
+
+272
+00:48:09,739 --> 00:48:14,739
+Yani 16 bin tane farklı adreslemeye sahip olduğunun bilgisini vermekte.
+
+273
+00:48:15,739 --> 00:48:21,739
+Öteki işlemciye baktığımızda burada 4096 tane farklı modül desteklenmekteydi.
+
+274
+00:48:22,739 --> 00:48:30,739
+Bu 4 katına çıkartarak aslında 16 bin tabi küsür de var 16 bin 100 ne yapıyor 112 mü yapıyor öyle bir şey.
+
+275
+00:48:30,739 --> 00:48:33,739
+Farklı modülün desteklendiğini gösteriyor.
+
+276
+00:48:34,739 --> 00:48:35,739
+Burada da bir genişletme var.
+
+277
+00:48:36,739 --> 00:48:45,739
+Ve 3 adet de fazladan komutla bir tık da instruction set dediğimiz komut setini zenginleştirmiş söz konusu olmuş 8008 işlemcilerde.
+
+278
+00:48:47,739 --> 00:48:52,739
+Ve böylelikle 8008 ile beraber daha karmaşık sistemden kastılmış şu aslında.
+
+279
+00:48:52,739 --> 00:48:57,739
+Daha fazla memori modülüne sahip olan ki daha karmaşık isteme sürükleyecek bu bizi.
+
+280
+00:48:58,739 --> 00:49:10,739
+Ve daha farklı 8 bitlik bir bilgiyi saklayabilecek modüller içeren ki bu da karmaşıklığa neden olmuş bir mimari sunmuş bize 8008.
+
+281
+00:49:11,739 --> 00:49:15,739
+Sonra 73 yılında 8080'lere tanıtılmış.
+
+282
+00:49:15,739 --> 00:49:27,150
+8080'lerdeki 8008'deki en büyük fark aslında sadece addestleme modülündeki 16'yı 64 yani 4 katına arttırılmış bir addestleme modülü.
+
+283
+00:49:28,150 --> 00:49:30,150
+Daha kabasitist arda arttırılmış.
+
+284
+00:49:31,150 --> 00:49:35,150
+10 kat daha hızlı bir mimarı kullanılmış neden?
+
+285
+00:49:36,150 --> 00:49:38,150
+Çünkü transistördü transistör dediğimiz.
+
+286
+00:49:39,150 --> 00:49:46,150
+Bu bambaşka bir mimari TTL ki şu an günümüzde aslında CPU'ların içerisi SIMOS olmayanlar TTL teknolojisine, lojiğine bağlıdır.
+
+287
+00:49:47,150 --> 00:49:53,150
+Zaten biz burada konu içerisinde değil ama üçüncü evre dediğimiz evre kondansitör evresi.
+
+288
+00:49:54,150 --> 00:49:59,150
+Ama şu an kondansitör yani SIMOS yapısıyla,
+
+289
+00:49:59,150 --> 00:50:04,150
+lojiğiyle tasarlanmış bir işlemci üzerinden gitmeyeceğimiz için biz 8086 işlemcisi de bir TTL işlemci.
+
+290
+00:50:05,150 --> 00:50:12,150
+Öyle olduğu için onu şu an sunumlara koymadık ama üçüncü evre dediğimiz evre kondansitör evresi.
+
+291
+00:50:13,150 --> 00:50:17,150
+Şu an bu transistör evresine kadar geldiğimiz nokta.
+
+292
+00:50:17,150 --> 00:50:20,150
+8080 tabii bir İntel lisanslaması söz konusu değildi.
+
+293
+00:50:21,150 --> 00:50:24,150
+O yüzden pek çok firma 8080'e ait işlemci üretti.
+
+294
+00:50:25,150 --> 00:50:34,150
+8080'den sonra 6 ay üretti 88 çift sıvır işlemcisi bizim yani gömünün sistem tasarımcılığının önemli bir tanıdığı.
+
+295
+00:50:34,150 --> 00:50:42,150
+Neden? Çünkü basic dili, belki gördüğünüzü bilmiyorum ama QBasic diye bir programlama hala internette mevcut bakabilirsiniz.
+
+296
+00:50:43,150 --> 00:50:49,150
+Mavi ekranda kod yazarsınız. Bu QBasic ve Basic tarz programlamayı destekleyen mimariyi içeriyordu.
+
+297
+00:50:50,150 --> 00:50:52,150
+Biraz kısımlı bir programlaması var.
+
+298
+00:50:53,150 --> 00:50:55,150
+Bu programlamada bir şey var.
+
+299
+00:50:56,150 --> 00:51:03,150
+Bu QBasic ve Basic tarz programlamayı destekleyen mimariyi içeriyordu.
+
+300
+00:51:04,150 --> 00:51:10,150
+Biraz assembly'ye yakın ama sonuçta bir IDE yani bir üst dil makine dili assembly diliyle kodlamıyorsunuz.
+
+301
+00:51:11,150 --> 00:51:13,150
+Normal bir programlama diliyle kodluyorsunuz.
+
+302
+00:51:14,150 --> 00:51:18,150
+Arka tarafta kompaylederek size assembly diliyle çeviren bir mimari tasarlanmışlar.
+
+303
+00:51:19,150 --> 00:51:26,150
+Bunu da 88 çift sıvır entegresi için implementa etmişler, uyanmışlar.
+
+304
+00:51:27,150 --> 00:51:32,150
+Şimdi biz biraz daha tabii günümüze yakın işlemcilere doğru geleceğiz.
+
+305
+00:51:33,150 --> 00:51:36,150
+80-80'den sonra çok hızlı bir ilerleme söz konusu.
+
+306
+00:51:37,150 --> 00:51:40,150
+80-85 mikro işlemcisi 77 yılında çıkarılmış.
+
+307
+00:51:41,150 --> 00:51:47,150
+Bu da 8 bittik bir işlemci ama buradaki önemli pi TTR olduğu için ve daha da geliştirdikleri için
+
+308
+00:51:48,150 --> 00:51:56,150
+769 kHz'de çalışması yani saniyede 769-1230 işlem yapması kabiliyeti.
+
+309
+00:51:58,150 --> 00:52:01,150
+Bu saat üretici mevzusuna biraz dersin sonlarına doğru değineceğiz.
+
+310
+00:52:02,150 --> 00:52:03,150
+Bunun da önemli bir yeri var.
+
+311
+00:52:04,150 --> 00:52:07,150
+Ve entegre içerisindeki transistör sayısında da çok büyük artışlar mevcut.
+
+312
+00:52:08,150 --> 00:52:16,150
+Zaten şu an görmüşsünüzdür şöyle bir tablo çizerler CPU mimarisinde yani günümüz desktoplarında kullanılan.
+
+313
+00:52:16,150 --> 00:52:23,150
+İşte içerisindeki transistör sayıları şöyle bir artan eriye söz konusu.
+
+314
+00:52:24,150 --> 00:52:29,840
+Şurası transistör sayısı dersek şu üst tarafa transistör sayısı diyelim.
+
+315
+00:52:30,840 --> 00:52:32,840
+Şu alt tarafı da mimariler diyelim.
+
+316
+00:52:33,840 --> 00:52:39,840
+İşte atıyorum burası i3 olsun, i5 olsun gibisinden.
+
+317
+00:52:39,840 --> 00:52:47,840
+Hani bu işlemcilerin içerisindeki transistör sayılarının şu an günümüzde arttırmaya yönelik hızları arttırmak.
+
+318
+00:52:48,840 --> 00:52:51,840
+Yani hızları arttırmak için o transistör sayılarını, konfinans sayılarını arttırmaya çalışıyorlar.
+
+319
+00:52:52,840 --> 00:52:54,840
+Tabii bunun da bir kapasite sorunu var.
+
+320
+00:52:55,840 --> 00:53:00,840
+Şu an günümüzdeki işlemcilerin kılıfları bin yani belirli başlı kılıfların içerisinde o işlemciler.
+
+321
+00:53:01,840 --> 00:53:05,840
+Ve o kılıfa serbilecekleri maksimum transistörlere ulaşmış durumlara.
+
+322
+00:53:06,840 --> 00:53:07,840
+Bunu ne yapıyorlar?
+
+323
+00:53:08,840 --> 00:53:18,840
+İçerisinde çekirdek sayılarını arttırarak veya başka modümlerle üstte doğru yukarıya doğru kılıfı kalınlaştırarak bir şekilde yürütmeye çalışıyorlar.
+
+324
+00:53:19,840 --> 00:53:20,840
+Tabii orada da en büyük sıkıntı ne oluyor?
+
+325
+00:53:21,840 --> 00:53:22,840
+Sıcak mevzusu vs. vs.
+
+326
+00:53:23,840 --> 00:53:27,840
+Bunları zaten bilgisayar donanımı veya bilgisayar organizasyonu dersinde göreceksiniz.
+
+327
+00:53:28,840 --> 00:53:34,840
+Hani şu etapta transistör sayısının mikro işlemcilerin hızıyla doğrudan alakalı olduğunu bilelim.
+
+328
+00:53:36,840 --> 00:53:38,840
+Sonrası 78'in de 80-86 çıkıyor.
+
+329
+00:53:39,840 --> 00:53:44,840
+80-88 çıkıyor ama 80-86 daha popüler bir entegre oluyor.
+
+330
+00:53:45,840 --> 00:53:52,840
+Hatta yani şu an günümüzdeki x86 denen yani 32 bitlik işlemciler, 64 bit değil.
+
+331
+00:53:53,840 --> 00:53:57,840
+Genelde temelde 80-86 mimarisinin şuradaki 86'sından gelir.
+
+332
+00:53:58,840 --> 00:54:03,840
+Göreceğiz şimdi 80-286 var, 80-386 var.
+
+333
+00:54:03,840 --> 00:54:10,840
+Yani aslında hepsi 86, x86'ın ikinci versiyonu, üçüncü versiyonu gibisinden isimlendirildikleri için.
+
+334
+00:54:11,840 --> 00:54:16,840
+Peki 80-86'ın 80-80'den sonra en büyük enideyi nedir?
+
+335
+00:54:17,840 --> 00:54:19,840
+16 bitlik mikro işlemci sunması.
+
+336
+00:54:20,840 --> 00:54:27,840
+Bunun önemini dediğim gibi hani bu bitlik yapı mikro işlemcinin 4 bit, 8 bit, 16 bit olması ne demek bunlara değineceğiz.
+
+337
+00:54:27,840 --> 00:54:34,840
+Ama nihayetinde 80-86'da döneminde ilk defa 16 bit'e geçilmiş işlemciydi.
+
+338
+00:54:35,840 --> 00:54:39,840
+Hatta 80-88'de 8 bit yani 16 bit yapısı mevcut değildi.
+
+339
+00:54:40,840 --> 00:54:45,840
+Sahnede 2.5 milyon işleme kadar işlem yapabilecek kapasitesi vardı.
+
+340
+00:54:46,840 --> 00:54:50,840
+Adreslemesi en 64 kilobayta kadardır şimdiye kadar.
+
+341
+00:54:50,840 --> 00:54:57,840
+Ama bunda 1 megabayta kadar ki bunun detay analizinde yapacağız sonra nasıl 1 megabayt oluyor.
+
+342
+00:54:58,840 --> 00:55:01,840
+1 megabayta kadar adreslemesi mevcuttu.
+
+343
+00:55:04,840 --> 00:55:07,840
+Bir başka enliliği ise komutlarda kuyruğa sahip olması.
+
+344
+00:55:08,840 --> 00:55:13,840
+Yani siz arda ardına birkaç komut gönderdiğinizde bu komutlar sıraya girerek işleme tabi olabiliyordu.
+
+345
+00:55:14,840 --> 00:55:17,840
+Yani 2.5 milyon işlem aslında şöyle de düşünebiliriz.
+
+346
+00:55:17,840 --> 00:55:22,840
+4 kuyruk varsa bunun yarısı kadar aynı paradel evreminde gerçekleştiriliyor.
+
+347
+00:55:23,840 --> 00:55:33,840
+Ama tabi 4'ü birden işlediği için de 2.5 milyonluk işlem yapmış gibi sonuçta kuyruğa alındığında da işleme daha, yani işlem gerçekleştiğini gösteriyor.
+
+348
+00:55:34,840 --> 00:55:37,840
+Çarpma bölüme gibi komutların sunulmasıydı aslında.
+
+349
+00:55:37,840 --> 00:55:47,840
+Ama aslında 20.000'e bulan komut sayısı yani normal 45-48 instruction setlerden ziyade artık 20.000 bambaşka varyasyonlar.
+
+350
+00:55:48,840 --> 00:56:02,840
+İşte jantlar, işte CL'ler, işte başka ya daha önceki mikro mimari demin sunmadığı instruction set komutlarını burada kendisi bünyesinde barındıran bir yapısı vardı 80-86'ın.
+
+351
+00:56:02,840 --> 00:56:08,840
+Bu nedenle de zaten çok kullanıldı, çok halen de kullanılıyor çoğu sistemde.
+
+352
+00:56:09,840 --> 00:56:12,840
+Şimdi burada iki yapıdan bahsedip hızlıca bahsedeceğiz.
+
+353
+00:56:13,840 --> 00:56:17,840
+Bunların detayını zaten ya SMD'de ya da bilgisayar derp donanımında göreceksiniz.
+
+354
+00:56:18,840 --> 00:56:24,840
+Risk ve risk mimari. Daha önceki işlemciler işte 45 komut setlerinden bahsettik.
+
+355
+00:56:25,840 --> 00:56:30,840
+Bunlar azdı, reduced instruction set diye geçer, computers kısmı da var.
+
+356
+00:56:30,840 --> 00:56:36,840
+Yani daha az distraction setle işlemlerin yapılması üzerine kuruluydu.
+
+357
+00:56:37,840 --> 00:56:45,840
+Bunun bir avantajı vardı, şuydu daha az distraction set olduğu için bu distraction setleri indekslemek gereken hafıza birimi az olması.
+
+358
+00:56:46,840 --> 00:56:50,840
+Yani daha az hafıza birimiyle instruction setler indekslenebiliyordu.
+
+359
+00:56:51,840 --> 00:56:57,840
+Yani 40 taneyi saklayabileceğiniz yer ile 20.000'i saklayabileceğiniz yer farklı olacaktır.
+
+360
+00:56:57,840 --> 00:57:03,840
+Bu nedenle reduced olmasından dolayı memory efficient bir adres demeydi.
+
+361
+00:57:04,840 --> 00:57:07,840
+Ama şey komut setiydi. Ama dezavantajı neydi?
+
+362
+00:57:08,840 --> 00:57:15,840
+40 tanesi işte en basından multi-mul komutu yoksa bunların arasında ne yapmamız lazım?
+
+363
+00:57:16,840 --> 00:57:20,840
+Toplama işlemi yapacağız. Nasıl? Secure S1 toplaması o işlemi dizayn etmemiz gerekecek.
+
+364
+00:57:20,840 --> 00:57:30,840
+Yani dizayn süreci uzun ve yani yapacağı işlemi sayısı ulaşmak istediğimiz hedef için daha fazla olacak, az olunca.
+
+365
+00:57:31,840 --> 00:57:34,840
+Sonra Sisk mimarilerine geçildi, complex instruction set mimarileri.
+
+366
+00:57:35,840 --> 00:57:49,840
+Burada tabii ki 10.000 ve artık ne kadara gidebiliyorsa ve ne kadar fazla olursa o kadar da zengin tek satırda kodların neticelendirebileceğimiz bir yapıya geçildi Sisk mimarileriyle.
+
+367
+00:57:50,840 --> 00:58:01,840
+Bunun dezavantajı da neydi? Bunun tabii ki bu kadar komutu tutabilmesi, adresleyebilmesi için bir kendi içerisinden hafıza modülü ayırmak gerekecekti.
+
+368
+00:58:02,840 --> 00:58:15,840
+Ve biz buna da code segment diyeceğiz biraz sonra. Yani aslında bir code segment ve instruction pointer ile bir mimari üretmemiz gerekti Sisk mimarilerindeki komut setlerine ulaşabilmek için.
+
+369
+00:58:16,840 --> 00:58:34,840
+Yazmaçlı sayılarında çok fazla bir artış söz konuştu. Ne demiştik şu sunumda? Beş tane kaydaya bağlamıştık. Bir tanesi register diye geçen, Türkçe'de yazmaç diye çevrilen register sayılarındaki artış.
+
+370
+00:58:34,840 --> 00:58:45,840
+8086'da çok fazla var o döneminde. Yani 80.08'de 80.80'i kıyasladığımızda çok fazla yazma sayısına sahip bir 8086.
+
+371
+00:58:46,840 --> 00:58:54,840
+20 adet adres ucunun sahip olması demek aslında lojikten hatırlarsanız, gösterelim şuraya.
+
+372
+00:58:54,840 --> 00:59:12,000
+Mesela 3 adet ucum olsa bir devre bu, x entegresi olsun. 3 adet ucum olsa ve ben bunu bir dekodere bağlasam, kod çözücüye yani.
+
+373
+00:59:13,000 --> 00:59:25,000
+Kod çözücünün kaç tane çıktısı olabilir? Onu bir düşünelim. Yani dekoder ne iş yapıyordu? Bunun iki üzeri nlik versiyonundaki çıkıştan bir bilgisi almamızı sağlıyordu.
+
+374
+00:59:26,000 --> 00:59:38,000
+Yani mesela şöyle bir input verdim. Şurası msb olsun, şurası da dsb olsun. Bu 6'ya tekabül geldiği için 6. pin'den bize 1 verisini verebilecekti.
+
+375
+00:59:39,000 --> 00:59:49,000
+Yani böyle bir mimariydi. Şimdi 20 adet adres ucuna sahip olması demek aslında 220 farklı, şu mimarı yani şu ikisini bir düşünün,
+
+376
+00:59:49,000 --> 01:00:05,000
+220 tane farklı bir çıkartabilirim bu ucumdan demek. Yani bu da aslında 220 ne yapar? 1 milyon tane farklı ucundan adres deme yani bir clockwise'i gönderip atıyorum.
+
+377
+01:00:06,000 --> 01:00:15,280
+Şurada da bir memori blog'um olsun. Memori blog'larım olsun ve memori blog'larımın n' bulucuna bağladığımı düşünüyorum.
+
+378
+01:00:16,280 --> 01:00:26,280
+Ben lojikten biraz daha beziden anlatıyorum şu etapta. Memori uçlarına bağladığımızı düşünelim ve 001, şurada 6. memori blog'um olsun.
+
+379
+01:00:26,280 --> 01:00:38,280
+001, evet arkadaşlar biraz tabrik özür diliyorum. Onu biraz maruz göreceksiniz.
+
+380
+01:00:38,280 --> 01:00:48,280
+6. pinimde 001'de bunu bu memori modünü aktif ederek buna bir şey yazabiliyorum şu etapta.
+
+381
+01:00:49,280 --> 01:01:01,280
+Yani demem şu 20 tane uçta 220 tane farklı pini aktif veya deaktif edebileceğim için 220'den 1 milyon tane memori blog'una adresleyebilirim.
+
+382
+01:01:01,280 --> 01:01:08,280
+Bu entegreyle. Adres ucundan kastımız bu. Adres ucu bir mikro işlemci için önemli bir parametre.
+
+383
+01:01:09,280 --> 01:01:17,280
+Misal ne demiştik sunumun başında 4000, 4 için 4 adet adres ucu var demiştik değil mi? 8 mili 4 mili.
+
+384
+01:01:18,280 --> 01:01:28,769
+Bunları ezberlemenize gerek yok ama evet 4'müş. 4096'miş. Yani 4096'ı için ne olması lazım?
+
+385
+01:01:28,769 --> 01:01:36,769
+2012 olması lazım değil mi? Yani aslında bu işlemcinin 12 tane adres ucu var.
+
+386
+01:01:37,769 --> 01:01:48,769
+Neden? Çünkü 2012'den 4096 tane farklı memori blog'umu ama her bir memori blog'unun 4 bit olması kaidesiyle indeste edebileceğini söylüyor.
+
+387
+01:01:49,769 --> 01:01:58,769
+Ama bizim 8086'da ne demiş? 1MB. Buraya çizdiğim şeyler siliniyor mu? Bir sonraki ne biçimmiş?
+
+388
+01:01:59,769 --> 01:02:08,769
+Adres emek abesininize 1MB demiş. Ne demekte bu? 220 zaten 1 milyon tane memori blog'unu adresleyebilirim demek.
+
+389
+01:02:09,769 --> 01:02:17,769
+Ama bir de byte bilgisi vermiş ve her bir memori blog'un benim x8 bitlik veyahut da 1 byte'lık olacak demek.
+
+390
+01:02:20,559 --> 01:02:25,559
+Anladın mı? Hani giriş olarak şu etapta bazı şeyleri bahsediyorum. Bunun detaylarına zaten değineceğiz.
+
+391
+01:02:26,559 --> 01:02:43,559
+Burada sadece adresleme kapasitesinin 1MB olması nereden geliyor? Şuradan geliyor. Bu işlemci 8086'ının 20 adet adres ucu olduğundan dolayı 220'den 1 milyon tane memori adresleyebildiğinden geliyor.
+
+392
+01:02:43,559 --> 01:02:59,000
+Bir de 16 adet veri ucu varmış. Neden 16 adet veri ucu var? Ya illa olması gerektiği için değil ama bu 16 adet veri ucunun olması bizim bu işlemciyi daha kullanışlı hale getiriyor.
+
+393
+01:02:59,000 --> 01:03:17,949
+Çünkü ne demiştik? 16 bitlik bir işlemci demişiz ve 16 bitlik bir işlemci de 16 tane veri ucu olması, şöyle çizelim bir daha, bir işlemcinin 4 bit veya 8 bit olması ne anlama geliyor?
+
+394
+01:03:17,949 --> 01:03:39,239
+Onu şu an izah edeceğiz. Şimdi bu 8086. Biz biliyoruz ki bu 16 bit bir işlemci. Şu 80 veya 8008 diyelim 8 bit bir işlemci, şu da 4004, 4 bit bir işlemci.
+
+395
+01:03:39,239 --> 01:03:55,239
+Buradaki custom's bu bitsel anlamda aslında bunun içerisinde bu entegrenin içerisinde bulunan yazmaç veya rejisterlerin ikisi de aynı şey kapasitesini söylüyor.
+
+396
+01:03:55,239 --> 01:04:13,239
+16 bit demek aslında bunun 16 tane bit, bunu ben sıldıramayacağım, şöyle nokta nokta diyeceğim. 0. bit ve 15. bit. Yani 16 biti tek seferde bir yazmaçta saklayabildiğini söylüyor.
+
+397
+01:04:13,239 --> 01:04:24,239
+Ama 8 bitlik bir işlemci demek 8 adet bitin yani 1 bitin tek seferde bir işlemcinin yazmaçında saklanabildiğini söylüyor.
+
+398
+01:04:24,239 --> 01:04:35,239
+Şimdi şöyle düşünün, düz hesap yapalım. 1 artı 5 toplama işlemi doğru, bunu topladığımızda 6 edecek.
+
+399
+01:04:35,239 --> 01:04:46,239
+Ama siz istiyorsanız ki 2 dijitli toplamak istiyorum. O zaman ne yapmak lazım? 1 dokuzla dokuzu toplayacaksın, sonra ikinci dijitli kalanları üstüne ekleye ekleye gideceksin.
+
+400
+01:04:46,239 --> 01:04:54,239
+Yani şu sonuçta tek dijitli toplama işlemi yapıyor. Ama 16 bit de artık 2 haneli toplama işlemi de yapabilirsiniz.
+
+401
+01:04:54,239 --> 01:05:04,239
+Çünkü bir tanesi bir kısmına yazılır, ötekisi öteki kısmına yazılır. Yani işlem yapabileceğimiz sayının kabiliyeti artmış oluyor.
+
+402
+01:05:04,239 --> 01:05:12,239
+Tek seferde biller basamağını topladıktan sonra onlar basamağına geçmek var, bir de ikisini aynı anda toplamak var.
+
+403
+01:05:12,239 --> 01:05:23,239
+8086'nın kabiliyeti burada 16 bit olması aslında rejisterlerin içerisinde 16 bite kadar ki hepsini 1 yaparsak,
+
+404
+01:05:23,239 --> 01:05:44,239
+15. bit arasında hepsi 1 olursa kaça tekabül geliyor 216, 217 ne yapar? 64, 65 bin bilmem kaç yapıyor?
+
+405
+01:05:44,239 --> 01:05:54,239
+Yani 65 bin sayısına kadar toplama işlemi yani bir işleme dahil edebiliyoruz. Ama ötekisinde 8 bitlik olunca,
+
+406
+01:05:54,239 --> 01:06:11,239
+228'den 256 değil mi? Evet 256 sayısına kadar işlem yapabiliyoruz. Yani arada 65 bin ile 256 arasında yani şöyle yazalım,
+
+407
+01:06:11,239 --> 01:06:20,239
+0'dan 65 binincisinin arasında bütün sayıları bu kabul ederken tek hanede bu 0'da 256 arasındaki sayıları kabul edecek.
+
+408
+01:06:20,239 --> 01:06:32,750
+E 4 bit de 0'da 16 arasındaki sayıları kabul edecek. Yani işlemcinin bitser anlamdaki kabiliyeti aslında rejisterdaki saklayabildiği sayıdır.
+
+409
+01:06:32,750 --> 01:06:45,750
+Yani saklayabildiği bitlerin toplamadır. Şimdi biz dedik ki biz 8086 16 bitlik bir işlemci. 16 adet veri ucunun olması demek,
+
+410
+01:06:45,750 --> 01:07:06,000
+her bir biti 8086'ı şuraya bir daha açtıralım. Şurası 8086 tamam mı? Şuradan da data yollarımız olsun. 0'dan 15'e kadar geliyor.
+
+411
+01:07:06,000 --> 01:07:20,000
+Şimdi 16 veri ucu var ya, 16 veri ucu. Biz her bir tanesinden yazmak istediğimiz sayıyı gönderdiğimizde tek saykılda bütün rejisterin içerisini bir saykılda doldurabiliyoruz.
+
+412
+01:07:20,000 --> 01:07:32,000
+Yani işte ben öyle bir sayı göndermek istiyorum ki hepsini 16 veri ucuma olduğu için tek seferde yazabiliyorum. Ama 16 veri ucuma olmasaydı, 8 tane veri ucuma olsaydı,
+
+413
+01:07:32,000 --> 01:07:42,000
+o zaman öyle bir algoritma yapacaktık ki işte ilk başta ufağına yaz, sonra büyüğüne yaz veyahut da işte ilk büyüğüne yaz, sonra didi landing, big ending oradan geliyor biraz.
+
+414
+01:07:42,000 --> 01:07:56,000
+İşte ilk 8'i bir gönderecektik birinci saykılda. 16 bitlik bir rejister var içeride ve biz 8 data basılmaz veri ucumuz olduğu için 8'ini bir gönderecektik, sonra öteki 8'ini gönderecektik.
+
+415
+01:07:56,000 --> 01:08:07,000
+Ki bu efektifli anlamda 2 cycle demek. Şimdi 16 bit bir yazmacınız var ve 16 tane veri ucuna sahip olmak çok yüksek bir efficiency sağlıyor. Neden?
+
+416
+01:08:07,000 --> 01:08:16,000
+Tek saykılda bütün datayı gönderebilirim, tek saykılda yazmacın içindeki bütün veriyi okuyabilirim. Anlaşıldı mı bu biraz?
+
+417
+01:08:16,000 --> 01:08:33,989
+Tamam ileride daha oturacak ama şu etapta bir sorunuz var mı? Burada mıyız arkadaşlar? Online Campus'te yine arada test mesi yapıyorduk ama burada öyle bir şey de yok şimdi.
+
+418
+01:08:33,989 --> 01:08:45,989
+Kimin burada, kimin burada değil o da anlaşılmıyor. 80-80-8'e baktığımızda aslında oradaki batın neki görüyoruz. Yani 8 veri ucuna sahip 16 bitlik bir işlemciden bahsediyoruz.
+
+419
+01:08:45,989 --> 01:08:57,989
+Şimdi bu aslında çok efektif bir kullanım değil. Neden? 8'ini bir yazacağız, öteki 8'ini bir daha yazacağız. Yani 2 cycle'da biz bir register'da olduğumuzu çözeceğiz.
+
+420
+01:08:57,989 --> 01:09:15,989
+Bu nedenle dolayı ikisinin de adreslemesi yüksek ama şu veri ucuna bağlı olan yani veri ucunun adresinin 16 olmasından dolayı 80-80-6 daha çok kullanılmış bir işlemci.
+
+421
+01:09:15,989 --> 01:09:34,560
+Şimdi transistörlü gözüyle bakmayalım. Adres ucu derken biz bir blok şamasını çizdirmişiz. Yani şöyle düşünelim. Tabii ben yine yamuk çizdim, yamuk yamuk çizdim bir saniye.
+
+422
+01:09:34,560 --> 01:09:55,329
+Şunu bir silelim. Niye şöyle yapmıyoruz acaba? Biz aslında adres ucu derken de data yolu derken de biz kutuyu kast ediyoruz.
+
+423
+01:09:55,329 --> 01:10:11,329
+Yani bir 80-80-6 işlemcim var. Bundan adres de data da çıkacak. Adres ucu derken dışarıdaki memur bloğunun kaç tane memur bloğunu adresleyebildiğinden bahsediyoruz.
+
+424
+01:10:11,329 --> 01:10:21,329
+Data ucu derken de bu adreste, yani enable'larını aktif eden uç değil, memuriden gelen verilerin uçlarından bahsediyoruz.
+
+425
+01:10:21,329 --> 01:10:33,329
+Yani ikisi de aslında şematik gösterimde 80-80-6'dan çıkan bir şey. Ama adres ucunun çok olması, memurinin boyutunu yani kaç adet memur bloğunu adresleyebileceğimizi,
+
+426
+01:10:33,329 --> 01:10:45,329
+data'nın çok olması ise tek cycle'da kaç bitlik verinin alınabileceğini söyler. Mesela örnek verelim bir x işlemcisi olsun. Tamam mı? Kendimiz bir tasarım yapıyoruz.
+
+427
+01:10:45,329 --> 01:11:11,880
+X işlemcisi. Diyoruz ki bu x işlemcisine 12 adet, 10 adet adres ucu var ve bu x işlemcimiz 4 bitlik bir işlemci veya 8 bitlik olsun.
+
+428
+01:11:11,880 --> 01:11:29,890
+8 bitlik bir işlemci. Buradan şunu anlayacağız. Bu işlemci, x işlemcinin 8 bitlik ise bu işlemcinin içerisindeki havuza, yani register dediğimiz yapı aslında işlemcinin içerisindeki havuzalardır, havuza birimidir.
+
+429
+01:11:29,890 --> 01:11:44,890
+8 bitlik bir işlemci ise diyorum ki ben bunun içerisindeki register'larım 8 bitlik, yani 1 bitlik register. Tamam mı? Ve soruda da verin veya işte tasarımımız da verilmiş olsun.
+
+430
+01:11:44,890 --> 01:12:00,520
+Bu n-tickle'nin kılıfında 4 tane database veri yolu çıkmış olsun. 4 adet veri yolu çıkıyor. Hatta çizeyim şöyle 4 tane. Burada şunu söyleyeceğiz.
+
+431
+01:12:00,520 --> 01:12:16,520
+Diyeceğiz ki register'ımız 8 bitlik ama 4 adet veri yolu varsa bu veri yolu bu 8 bitlik register doldurması için 2 cycle'da çalışması gerekiyor. Bir 4 alacak, yazacak, sonra diğer 4'ü alıp yazacak.
+
+432
+01:12:16,520 --> 01:12:32,520
+Buradaki veri yolundan kastımız bu. Yani register'ımızı kast cycle'da doldurdu. Bir de memory block'umuz olsun yanında ve memory block'umuz da bizim byte yani her bir tane seri hücresi 8 bitlik olsun.
+
+433
+01:12:32,520 --> 01:12:46,520
+Yani 1 byte'lik olsun. Şimdi ben bunu şuraya bağladığımı düşünelim. Yani dataları çekeceğim buradan. Tabii direkt böyle bağlanmıyor da şimdi şöyle bir x kutusu yapalım.
+
+434
+01:12:46,520 --> 01:13:10,520
+X kutusuna girip buradaki datanın alındığını yani şuradaki satırdaki verinin buraya geçmesini ilüstre edelim, görselleştirelim. Bunun detaylarını ileride çözeceğiz de şöyle etapta buradaki 1 byte'ı ben şuradaki 1 byte'lık register'ı okuma işlem yapıyorsam 4 tane data veri yolum olduğu için 2 seferde okuyabilirim.
+
+435
+01:13:10,520 --> 01:13:25,520
+Bu bunu söyler. Eğer 8 tane data veri yolum olsaydı tek seferde okuyabilirdim. Yani her bir biti bir veri yoluna koyar, burada da her bir veri yoluna bağlı olan register'ın hücresini yazmış olurdu.
+
+436
+01:13:25,520 --> 01:13:39,520
+Peki 10 adet adres ucu varsa bu da şunu söylüyor bize aslında. 210 adet, ki o da 1024 yapar, 1024 tane şöyle memori bloğunu ben adresleyebilirim demek.
+
+437
+01:13:39,520 --> 01:14:08,449
+Anlaşıldı mı? Bunları sıkça zaten ileride değince şu an bir mikro işlemimizdeki 32 bitlik veya 16 bitlik mikro işlemci ne demek onu gösterdik. Bir de 27020'nin 1 MB olduğu ve 1 MB'lık bir hafıza bloğunun nasıl hangi matematikle adreslendiğini izah ettik.
+
+438
+01:14:08,449 --> 01:14:24,680
+Ama dediğim gibi ileride daha çok izahını yapacağız. 82806, 83806 bunlar 8086'nın geliştirilmiş versiyonu. Burada da gördüğümüz gibi 32 bit bir adres yolu var.
+
+439
+01:14:24,680 --> 01:14:45,680
+Bu şu demek 232, o da 231 GB yapar, 252 4 GB yapar, o da 4G'lik bir memori bloğunu adresler ve her bir memori bloğumuz bu yapıda 1 byte olacağından yani memori blokları byte olacağından 4 GB'lik bir reme adresleyebilir.
+
+440
+01:14:45,680 --> 01:14:56,680
+Şimdi size belki biraz haşır neşir olabileceğiniz bir mevzu geldi. Misal, 32 bitlik bir Windows kurduğunuzda 4 GB'lik remin üstünü adresleyemezsiniz.
+
+441
+01:14:56,680 --> 01:15:07,680
+Ne yaparsınız? Elinizde 8 GB bir rem bloğunuz varsa ve bunu bilgisayarda 8 GB olarak bifil kullanmak istiyorsanız 64 bitlik bir işlemci kullanmanız gerekir.
+
+442
+01:15:07,680 --> 01:15:18,680
+Sizin zaten Pentium 4'ten beri de 64 bitlik işlemciler var ama 32 bitlik bir Windows kurarsanız 64 bitlik bir işlemci görmeyecek o sisteme.
+
+443
+01:15:18,680 --> 01:15:25,680
+32 bitlik bir işlemcimiş gibi görüyor. Öyle olunca da adreslemeniz sizin maksimum 4 GB'ye kadar oluyor.
+
+444
+01:15:25,680 --> 01:15:34,680
+Neden? Çünkü 32 bitlik bir işlemcinin 200'leri 32 tane adres yolu olduğundan 4 GB'ye kadar adresleyebildiğinden.
+
+445
+01:15:34,680 --> 01:15:45,029
+Bu 8386'nın ayrıca 32 tane de bit yolu veri, data yolu mevcut olduğundan dolayı şunu diyebiliriz.
+
+446
+01:15:45,029 --> 01:15:54,029
+Her bir register'ın içerisine bir veri yolu girmiş ve tek cycle'da ben register'ı 32 bit veriyi de doldurabiliyorum.
+
+447
+01:15:54,029 --> 01:16:06,130
+Evet, genel olarak assembly'i ve logic'ten, hatta bilgisayar donanımdan bildiğimiz tabirleri böyle hızlıca bir bakalım.
+
+448
+01:16:06,130 --> 01:16:15,130
+Alo dediğimiz yapıyı biliyoruz. CPO'nun içerisinde iki birim var dedik. Bir aritmatik logic, kontrol unit hatta üç'ü ayırabiliriz.
+
+449
+01:16:15,130 --> 01:16:21,130
+Kontrol unit ve aritmatik logic birimi, bunların en temelinde olan birim.
+
+450
+01:16:22,130 --> 01:16:32,130
+Sonra register'lar, yine CPO'nun içerisindeki veya mikro işlemcinin içerisindeki hafıza birimleri ve bizim aslında tekrardan üstüne vurguluyorum.
+
+451
+01:16:32,130 --> 01:16:41,130
+4 bit, 8 bit, 16 bit işlemci dediğimiz şey o işlemcinin içerisindeki register'ların size'ları, boyutlarını kastediyoruz.
+
+452
+01:16:41,130 --> 01:16:51,130
+CPO genel olarak dış kılıfa verilmişim zaten. Mikroprocesör ve mikro kontroldör çok karıştırılıyor.
+
+453
+01:16:51,130 --> 01:16:59,130
+Mikro işlemci ve mikro denetleyici Türkçeleri. Mikro denetleyici bir spesifik olarak bir işlem için programlanan bir yapıdır.
+
+454
+01:16:59,130 --> 01:17:04,130
+Mikro işlemci ise programlanabilen, farklı işlerde kullanılabilen bir yapıdır.
+
+455
+01:17:05,130 --> 01:17:12,130
+System on chip'ler, SoC chip'ler yani ne demek? Bir chip'in içerisindeki sistemi ifade eder.
+
+456
+01:17:12,130 --> 01:17:18,130
+Mikro işlemcilerin çevre birimleriyle oluşturulmuş yapısını söyler aslında bize.
+
+457
+01:17:18,130 --> 01:17:27,130
+Harvard ve Von Neumann'ın iki tane arktektür şekli. Bir tanesinde Von Neumann'dan memory bloğumuz var.
+
+458
+01:17:27,130 --> 01:17:35,130
+İşlemci birimimiz var ve aradaki bas veri yollarını kapsar. Harvard arktektürü ise bunları ayrı ayrı kapsar.
+
+459
+01:17:35,130 --> 01:17:45,130
+Sisk ve riskten bahsettik zaten. Epic de bunların bir üstü, üst modeli yani çok da gerek yok mu bahsetmeye.
+
+460
+01:17:45,130 --> 01:17:57,130
+Middle-endian ve Big-endian aslında bizim ileride karşılaşacağımız iki tabir. Şu etapta çok da değinmeyeceğiz ama mesele şu.
+
+461
+01:17:57,130 --> 01:18:08,130
+Sayının işte 1, 2, 3, 4'ümüz var. Şimdi bu sayıyı biz havza birimlerinde saklarken şöyle havza birimlerimiz olsun.
+
+462
+01:18:08,130 --> 01:18:18,130
+İlk 34'ü mü alacağız yazacağız? Sonra 12'yi mi alıp üstüne yazacağız? Yoksa ilk 12'yi mi yazacağız?
+
+463
+01:18:18,130 --> 01:18:27,130
+Sonra mı 34'ü yazacağız? Tabirlerinden gidecek olan tabir. Bu aslında sayına nasıl bölüneceğini karar vereceğimiz yapı olacak.
+
+464
+01:18:27,130 --> 01:18:38,130
+Bunu geride gelince değineceğiz. Database adres bası değindik zaten. Database dediğimiz şey aslında CPO'nun işlemcilerin yazma açılarına,
+
+465
+01:18:38,130 --> 01:18:46,130
+rejisterlerine, dışarıdan veya memoriden yani input-output biriminden veya memoriden direk yazma açılara,
+
+466
+01:18:46,130 --> 01:18:55,130
+içerisindeki havza birimine tek saykılda kaç veri alınacağını, tek seferde kaç veriyi paralel olarak alabileceğimizi sağlayan veri yolları.
+
+467
+01:18:55,130 --> 01:19:07,130
+Adres basısı kaç tane havza birimini adreste edeceğimizi sağlayan veri yolu. Kontrol basısı ise bu database ile adres basının kombine edilmiş sistemleri mevcut.
+
+468
+01:19:07,130 --> 01:19:15,130
+Ki bizim 8086 aslında böyle bir yapı. Kontrol bası da bunların kontrolünü sağlayan veri yolu, kontrol yolu.
+
+469
+01:19:16,130 --> 01:19:27,130
+Akumulatör zaten SMD'de çok sıkça karşınıza geliyor. Nedir? Bütün işlemleri üzerinden yapan bir rejisterdir aslında.
+
+470
+01:19:27,130 --> 01:19:39,600
+Spesifik bir rejisterden bahseder. Şöyle genel olarak tekrar karşılaştırırsak eğer 8086'ın 16 bit veri yolu, 16 bit rejisteri ve 20 bit adres yolu var.
+
+471
+01:19:39,600 --> 01:19:49,600
+20 bit adres yolu olması bize neyi sağlıyordu? Tekrar üzerinden geçelim. 1 milyon tane havza modülünü adreste edilmemizi sağlıyordu.
+
+472
+01:19:49,600 --> 01:19:56,600
+16 bit rejister neyi sağlıyor? Aslında 2 byte'lık veriyi tek saykılda rejister alabilir diyor.
+
+473
+01:19:56,600 --> 01:20:03,600
+Ve 16 bit veri yolu olması nedeninde bu 2 byte'ı tek saykılda alabilmesini sağlayan bu ikisi.
+
+474
+01:20:03,600 --> 01:20:18,949
+8088'e bakarsak 8 bit veri yolu var, 16 bit rejister var, 20 bit adres yolu var. 80286'ya baktığımızda adres yolumuz biraz daha genişlemiş.
+
+475
+01:20:18,949 --> 01:20:41,960
+Yani normalde her bir memur blue byte olsun 1 megabitlik bir rem modülünü desteklerken artık burası 16 megabitlik, 16 megabitlik bir adres modülünü desteklediğini söyler.
+
+476
+01:20:41,960 --> 01:21:02,569
+32 bit olunca da 4 gigabitlik bir alanla destekleyen 83-86'dan bahsedebiliriz. 8086 ile 80 bit veri yolu karıştırılmamış mı derken?
+
+477
+01:21:02,569 --> 01:21:17,569
+Hayır. 8086'da 16 bit. O yüzden zaten günümüzde 8088 çok da tercih edilen bir işlemci değil. 8086'da 16 bit veri yolu var, 8088'de 8 bit veri yolu var.
+
+478
+01:21:17,569 --> 01:21:33,720
+Yani burada bir gelişme söz konusu değil, 8086'da daha popüler. Zaten gördüğün kadarıyla şunlarda ondan türetilmiş olanlar.
+
+479
+01:21:33,720 --> 01:21:50,720
+Düşük çıkarmak değil, biraz da special purpose'ları var. 8088 belli bir amaç için veri yolunu kullanmayacaksanız, 16 bit işlem yapmayacaksanız 8 bit veri yolu da yetecektir size.
+
+480
+01:21:50,720 --> 01:22:06,720
+Ama registralarda 16 bit var, 8 bit veri yolu da olsun ama ben 2 cycle'da da yapsam yapayım derseniz şöyle bir durum var, veri yolunu arttırırsanız sonuçta bu fiziksel bir yol ve kılıfın da büyümese neden olursunuz.
+
+481
+01:22:06,720 --> 01:22:13,720
+Yani işlemcinin bacak sayısının artmasına neden olursunuz. Çünkü daha fazla veri yolu var, daha fazla bacak çıkacak.
+
+482
+01:22:13,720 --> 01:22:21,720
+Belki daha kompakt bir dizayn istenmiş olabilir şu etapta benim gözlemde değil mi?
+
+483
+01:22:21,720 --> 01:22:31,489
+Evet, bunları zaten deneyeceğiz. Şimdi girelim 8086'ın iç yapısına.
+
+484
+01:22:31,489 --> 01:22:43,489
+Dediğim gibi bu dersin kapsamı 8086 üzerinden gidecek, 8086'da şunu dedik, 16 bit bir işlemciler. Yani 16 bit mikro işlemciler.
+
+485
+01:22:43,489 --> 01:22:47,489
+Yani içindeki registerlarımız 16 bit mikro olacak.
+
+486
+01:22:47,489 --> 01:22:55,489
+Şimdi registerları şöyle kutu kutu çizmiş, zaten şematik iç yapısı. Bizim 4 adet genel amaçlı registerımız mevcut.
+
+487
+01:22:55,489 --> 01:23:07,489
+A, B, C, D diyeceğimiz 4 adet register ve biz bunları 16 bit olduğunda AX, BX, CX ve DX şeklinde göstereceğiz.
+
+488
+01:23:07,489 --> 01:23:16,489
+Ama 8086'ın bir güzeldir şu, eğer ki biz 16 bit işlem yapmayacaksak, 8 bit işlem yapacaksak, yani şunu demeye çalışıyorum,
+
+489
+01:23:16,489 --> 01:23:24,489
+0'dan 7'ye yani 8, 256 yapıyor değil mi? Evet, 256'ya kadar ki olan sayıları yapacağız.
+
+490
+01:23:24,489 --> 01:23:33,489
+Atıyorum, örnek veriyorum. O durumda yani biz buraya 256'ya kadar indekslenmiş bir sayı girebiliriz.
+
+491
+01:23:33,489 --> 01:23:38,489
+Yani örnek veriyorum, siz 2 ile 3'ü toplayacağınız bir işlem yapacaksınız.
+
+492
+01:23:38,489 --> 01:23:48,489
+2'nin görselleştirilmesi 0010, 3'ün görselleştirilmesi 0011. Yani 4 bit 4 bit, iki sayıyı toplayacaksınız.
+
+493
+01:23:48,489 --> 01:24:01,729
+Böyle bir işlem yapacağınız vakit, tutukta 16 biti yani şu başındaki, hadi hepsini şöyle biraz daha yapalım.
+
+494
+01:24:01,729 --> 01:24:16,159
+Şu an 16 bit var. Yani şu kısmı kullanmanıza gerek yok. Öyle olması için hani gerekli olmadığı durumlarda,
+
+495
+01:24:16,159 --> 01:24:24,159
+sadece 8 bitle gösterebileceğimiz işte örnek verelim, 128 ile 5'i toplayacaksınız.
+
+496
+01:24:24,159 --> 01:24:33,159
+128 nedir? 0000000 zannedersem, bir dakika, 207, 128 değil mi? Doğru.
+
+497
+01:24:33,159 --> 01:24:45,159
+Bununla 5'i toplayacağımız bir hesaplamada, tutukta ax ve bx hesaba katmanın anlamı yok.
+
+498
+01:24:45,159 --> 01:24:49,159
+O yüzden 8 bitlik al'ye direkt biz atamalar yapabileceğiz.
+
+499
+01:24:49,159 --> 01:24:58,159
+Örnek verelim, mu al, işte kaç dedik, 128 mi dedik, 128 desim haldeydi.
+
+500
+01:24:58,159 --> 01:25:08,159
+Bunu direkt buraya alacağımız vakit al'ye atama yapabileceğiz. Böyle ayrı şekilde indekslemeyi sağlayabiliyor.
+
+501
+01:25:08,159 --> 01:25:18,199
+Bunlar genel amaçlı registrler dedik, 4 tane. Tabii bunların spresif kullanıldığı alanlar var, şimdi de ineceğiz onlara.
+
+502
+01:25:18,199 --> 01:25:24,199
+Bunların dışında da başka registrler var ama bu registrler Sisk mimaresinden doğan registrler.
+
+503
+01:25:24,199 --> 01:25:31,199
+İşte stack pointer registrimiz var, base pointer registrimiz var, bunlara şimdi de ineceğiz.
+
+504
+01:25:31,199 --> 01:25:48,199
+Destination indeximiz var, source index registrimiz var, segmentlerimiz var, code segment registrimiz, data segment registrimiz, stack segment registrimiz, extra segment ve instruction pointer'ımız var.
+
+505
+01:25:48,199 --> 01:25:56,199
+Bunların her biri registr. Ama bizim işlemleri üzerinde yapacağımız registrler bunlar, genel amaçlı registrler.
+
+506
+01:25:56,199 --> 01:26:02,199
+Tabii bir de flaglerimiz var, SMD'de de muhtemelen biliyorsunuz.
+
+507
+01:26:02,199 --> 01:26:08,199
+Flag bayrakların kontrolü bizim mikro işlemcide bir program yazarken kesinlikle yapmamız gereken bir şey olacak.
+
+508
+01:26:08,199 --> 01:26:15,199
+Örnek verelim, jump yapacaksınız, bir koşul istiyorsunuz, işte düğmeye basıldığında jump yap diyorsunuz.
+
+509
+01:26:15,199 --> 01:26:23,199
+Ama düğmeye basıldığında belki bir flayı tetikleyip o flayın jump yapmasının tetiklemesini sağlayabileceğiz.
+
+510
+01:26:23,199 --> 01:26:38,199
+Başka örnek verelim, port okuması yapıyoruz. Portlardan belli bir sıcaklığın altına gelince işte klimayı çalıştır gibi bir uygulama yapacağız.
+
+511
+01:26:38,199 --> 01:26:47,199
+Şimdi portun belli bir altına düşünce aslında sign flag, yani burada bir işaret flayın titiklenmesini sağlayıp,
+
+512
+01:26:47,199 --> 01:26:54,199
+bu titiklenmeye göre biz işte işlemcinin o çıkışını aktif veya low yapabileceğiz.
+
+513
+01:26:54,199 --> 01:26:58,199
+Bu flaglerde önemli, flag register'de önemli olacak bizim için.
+
+514
+01:26:59,199 --> 01:27:09,199
+Sonra burada başka bahsedeceğimiz dediğimiz gibi bir insta-reaction queue'miz olacak ama biz bunu programlarken çok da bizim programlayacağımız bir kısm olmayacak.
+
+515
+01:27:09,199 --> 01:27:21,039
+Nerede? Hocam Asya'yı programın dersinde M3S'nin ADAH kullanabiliyorduk.
+
+516
+01:27:21,039 --> 01:27:27,039
+Ama biz üstünde de in-line-sr bir kodu yazarken ADAH kullanmadık. Neden?
+
+517
+01:27:27,039 --> 01:27:29,039
+Direkt AX kullansanız da olur.
+
+518
+01:27:29,039 --> 01:27:35,039
+İlla kullanmanız gerekiyor diye değil de AX'e de direkt atama yapabilirsiniz. Boş yere kullanmış olursunuz diyorum.
+
+519
+01:27:35,039 --> 01:27:42,039
+Yani kullanamadık mı diyorsunuz? Bilmiyorum. Bir bakmak lazım.
+
+520
+01:27:42,039 --> 01:27:55,649
+Evet, database ve adres bus bunları anlattık zaten. Bunların detaylarına zaten geleceğiz haftalar geldikçe.
+
+521
+01:27:55,649 --> 01:28:02,279
+AX aslında bizle alakası yok. Neredeydi o AX'lar?
+
+522
+01:28:02,279 --> 01:28:08,840
+Göremedim. Bir yerde var mı?
+
+523
+01:28:08,840 --> 01:28:15,840
+AX aslında 32 bit işlemcinin diğer external kısmını gösteriyor.
+
+524
+01:28:15,840 --> 01:28:19,840
+AX burada yok ama ileride belki karşınıza çıkar. Onun için değilim.
+
+525
+01:28:20,840 --> 01:28:32,840
+AX dediğimiz kısım external unit yani şu external unit'in external kısmını yani AX 16 bit yanına bir AX daha koyarsak bunu 32 bit kullanabiliyoruz.
+
+526
+01:28:32,840 --> 01:28:37,840
+Ama bu ne zaman oluyor? 83-86'larda oluyor, 82-86'larda oluyor.
+
+527
+01:28:37,840 --> 01:28:41,600
+Yani bizde AX olmayacak.
+
+528
+01:28:41,600 --> 01:28:49,939
+Evet, bunlara şimdi tek tek bakacağız yazmaçlara değineceğiz ama daha vaktimiz varmış iyi.
+
+529
+01:28:49,939 --> 01:28:57,939
+Şimdi dediğim gibi AX 16 bitlik bir akımilatör, AH ve AL de 8 bitlik akımilatörler.
+
+530
+01:28:57,939 --> 01:28:59,939
+Yani bunları ayrı kullanabiliyoruz.
+
+531
+01:28:59,939 --> 01:29:03,939
+İşte aritmatik ve lojik işlemlerde kullanacağız.
+
+532
+01:29:03,939 --> 01:29:11,939
+Genelde biz bütün işte üstünden akımilatör anlamıyla kullanılması açık olan bütün işlemleri AX ve AL AH'tan yapacağız.
+
+533
+01:29:12,939 --> 01:29:14,939
+Genelde.
+
+534
+01:29:14,939 --> 01:29:18,939
+BX ise base register diye geçer normalde.
+
+535
+01:29:18,939 --> 01:29:23,939
+Hani bir dizi şeklindeki veri erişiminde kullanacağız genelde.
+
+536
+01:29:23,939 --> 01:29:25,939
+İşte örnek verelim.
+
+537
+01:29:25,939 --> 01:29:30,939
+Şimdi bir dizi yani bir sayı sekvensiniz var.
+
+538
+01:29:30,939 --> 01:29:34,939
+12, 3, 4 diyelim misal veya 5, 6 diyelim.
+
+539
+01:29:34,939 --> 01:29:40,939
+Şimdi burada eğer ki biz 8 bit, 8 bit kullanıyorsak bunları bir indekse bağlamamız lazım.
+
+540
+01:29:40,939 --> 01:29:44,939
+Çünkü her biri bir registre yani hepsi bir registre girmeyecek.
+
+541
+01:29:44,939 --> 01:29:50,890
+Bunun için base register olarak kullanacağımız kısım olacak şurası.
+
+542
+01:29:50,890 --> 01:29:58,000
+Genel amaçlı registre olarak da bunu kullanacağız ama dizilerde daha çok kullanacağız.
+
+543
+01:29:58,000 --> 01:30:06,000
+CX diyen counting zaten hani sayım işlemleri tekrarlı bir for dönüşünde bu CX'i dekriz ederek kullanacağız.
+
+544
+01:30:06,000 --> 01:30:11,000
+CX registrenin içerisindeki veri bizim için bir ne olacak?
+
+545
+01:30:11,000 --> 01:30:19,000
+Yani bir bir arttıracaksak işte counting de sayma işlemlerinde veya kaydırmada öteleme işlemlerinde yapacağımız sayım aleti olacak.
+
+546
+01:30:19,000 --> 01:30:25,000
+Yani bir bir arttıracaksak işte counting, CX registrenin sayıyı bir bir arttıracağız vs.
+
+547
+01:30:25,000 --> 01:30:29,000
+Programları da bunu bu şekilde kullanacağız.
+
+548
+01:30:29,000 --> 01:30:38,000
+DX data register genelde dataları işte dışarıdan bir memurdan veya input altından bir veri aldığımızda DX'de saklayacağız genelde.
+
+549
+01:30:38,000 --> 01:30:41,000
+Ve port işlemlerinde port numarasını da saklayabileceğiz.
+
+550
+01:30:41,000 --> 01:30:59,869
+Şimdi biraz daha yani diğerleri AX, BX, CX, DX'de biraz daha oturuyor başından ama yazmançlardaki yığın yazmacı ki stack pointer biraz zor oturuyor.
+
+551
+01:30:59,869 --> 01:31:05,869
+Çünkü stack mantığını belki hatırlarsanız tekrardan geçelim.
+
+552
+01:31:05,869 --> 01:31:18,869
+Yani last in first out mantıyla çalıştığı için yani bir çuvala bir şey atıyorsunuz, atıyorsunuz, en son geleniklik alıyorsunuz gibisinden stack adreslemeyi bu anlamda ileride kullanacağız.
+
+553
+01:31:18,869 --> 01:31:23,869
+Yani stack üzerinden işlemler yapacağız ve bunu yaparken biz stack pointer'ı kullanarak yapacağız.
+
+554
+01:31:23,869 --> 01:31:38,149
+Yani buranın diğerinin arttırma veya azaltma işlemleri stack'de bir memore, stack memore'de, stack segmentte bir işlem yapıyorsak SP ile adreslemesini gerçekleştireceğiz.
+
+555
+01:31:38,149 --> 01:31:43,149
+BVP base pointer, bunda da aslında SSI'da kullanılacak stack ile alakalı.
+
+556
+01:31:43,149 --> 01:31:48,149
+Yani bir base pointer ileride vardı herhalde kullanımı.
+
+557
+01:31:48,149 --> 01:31:54,149
+Base pointer artı stack pointer'ı kullanabileceğiz.
+
+558
+01:31:54,149 --> 01:32:01,149
+Yani buraya bir base'i atıp onun üzerinden bir dönük yani base'i değiştirerek işlem yapabileceğiz.
+
+559
+01:32:01,149 --> 01:32:04,149
+Bunlara da değineceğiz.
+
+560
+01:32:04,149 --> 01:32:13,149
+Şimdi bir diğer şok kullanacağım şeyde SSI ve DDI yani source index ve destination index.
+
+561
+01:32:13,149 --> 01:32:17,149
+Bunu dizi komutlarında kaynak indisi için kullanacağız.
+
+562
+01:32:17,149 --> 01:32:25,149
+Yani dizi nereden başlıyor, nereye kadar, bizim memori videomuzda bunu almak için kullanacağımız indisimiz olacak.
+
+563
+01:32:25,149 --> 01:32:29,149
+Diyada işte hedef noktasına belirtecek.
+
+564
+01:32:29,149 --> 01:32:36,149
+Şimdi genelde segment mimarisi karışık register yapılı olan işlemciler de mevcut.
+
+565
+01:32:36,149 --> 01:32:37,149
+Ne demek bu?
+
+566
+01:32:37,149 --> 01:32:43,149
+Biz bir örnek verelim data segmentimiz var.
+
+567
+01:32:43,149 --> 01:32:47,149
+Şu arkada da aşağıda da örnek var.
+
+568
+01:32:47,149 --> 01:32:52,149
+Data segment bizim bir head adresimizi verecek.
+
+569
+01:32:52,149 --> 01:33:03,149
+Sonraki pointer veya işte index ise bizim bu data segmentinin içerisindeki ilgili adresi verecek.
+
+570
+01:33:03,149 --> 01:33:06,149
+Bakmanlı hirasik bir memori videomuz var.
+
+571
+01:33:06,149 --> 01:33:10,159
+Şöyle düşünebiliriz.
+
+572
+01:33:10,159 --> 01:33:13,159
+Farklı bloklarımız var.
+
+573
+01:33:13,159 --> 01:33:18,159
+Data segmentle bu bir olsun, bu da iki olsun adresi.
+
+574
+01:33:18,159 --> 01:33:27,159
+Data segmentle acaba bir de mi iki de mi, bir de mi iki de mi bunu belirlemiş oluyoruz.
+
+575
+01:33:27,159 --> 01:33:31,159
+SA ile bu birin içerisindeyse nerede?
+
+576
+01:33:31,159 --> 01:33:34,159
+İkinin içerisindeyse nerede?
+
+577
+01:33:34,159 --> 01:33:36,159
+Bunu belirlemiş olacağız.
+
+578
+01:33:36,159 --> 01:33:42,159
+Yani aslında biz bir adres belirlerken DSIS şeklinde bir adres dememiz olabilir.
+
+579
+01:33:42,159 --> 01:33:48,159
+Sonra işte daha da çokça kullanacağımız CSIP olabilir.
+
+580
+01:33:48,159 --> 01:33:49,159
+Ne demek bu?
+
+581
+01:33:49,159 --> 01:33:51,159
+IP instruction pointer zaten.
+
+582
+01:33:51,159 --> 01:33:55,159
+Hani bir sonraki kodun ne olacağını belirleyen pointer.
+
+583
+01:33:55,159 --> 01:34:03,159
+Bunu kod segmentten bir jump komutuyla başka bir kod segmentine geçip oradaki instruction pointer'ı çalıştırmamızı sağlayacak.
+
+584
+01:34:03,159 --> 01:34:09,159
+DS data segment bunu işte BXS'ı onlarda da kullanabileceğiz.
+
+585
+01:34:09,159 --> 01:34:14,159
+İşte data segmentin source indexini verebileceğiz.
+
+586
+01:34:14,159 --> 01:34:23,159
+Yani o data'nın yani o segmentin, o data segmentinin ilgili adresinin içerisindeki source'un indexini veriyoruz esasında.
+
+587
+01:34:23,159 --> 01:34:27,159
+Burada bir örnek var zaten fisiki adresle alakalı.
+
+588
+01:34:27,159 --> 01:34:33,159
+1230H adresi data segmentse, SIS'i aslında bunu çarpı 10 yapıyoruz.
+
+589
+01:34:33,159 --> 01:34:41,159
+12300 artı 45 ile 12345'inci adresi söylediğini çıkartıyoruz.
+
+590
+01:34:41,159 --> 01:34:43,159
+Bu şöyle düşünebilirsiniz.
+
+591
+01:34:43,159 --> 01:34:46,159
+Tek memori bloğumuz var.
+
+592
+01:34:46,159 --> 01:34:48,159
+Sekmentlere ayrılmış.
+
+593
+01:34:48,159 --> 01:34:52,539
+Tabii böyle değil ama böyle ön görelim.
+
+594
+01:34:52,539 --> 01:34:59,539
+İşte data segment burası 12200 diyelim veya 1220 diyelim.
+
+595
+01:34:59,539 --> 01:35:04,539
+Şurası da 1230 olsun, şurası da 1240 olsun.
+
+596
+01:35:04,539 --> 01:35:08,539
+Şimdi 1230'da aslında biz şuradaki segmenti seçiyoruz.
+
+597
+01:35:08,539 --> 01:35:17,539
+Ve bunun içerisinde ne kadar aşağıdaki bir şeyi arıyoruz bunu da source index'de belirliyoruz.
+
+598
+01:35:17,539 --> 01:35:21,539
+Extra segmentte de kullanabiliriz DS'yi.
+
+599
+01:35:21,539 --> 01:35:28,539
+Data segment gibi kullanabiliriz yani oradaki BX'i veya source index'i kullanabiliriz.
+
+600
+01:35:28,539 --> 01:35:37,539
+Stack segmentte de yani stack pointer ile base pointer'ı kullanabileceğimiz bir segment olacak bunlar.
+
+601
+01:35:37,539 --> 01:35:42,539
+Bunları zaten ileride yapacağız örneklerimi de şimdi hızlıca.
+
+602
+01:35:43,539 --> 01:35:45,539
+Bundan bahsettik zaten.
+
+603
+01:35:45,539 --> 01:35:52,539
+CSX10 artı IP'li bir fiziksel efektif program adresini belirleyebiliyoruz.
+
+604
+01:35:52,539 --> 01:35:58,539
+Şimdi bayrak yazmacına baktığımızda bayraklar bizim için önemli.
+
+605
+01:35:58,539 --> 01:36:01,539
+İleride bunlarla işler yapacağız.
+
+606
+01:36:01,539 --> 01:36:04,539
+İşte carry flake var. Ne demek carry flake?
+
+607
+01:36:04,539 --> 01:36:12,539
+Bir toplama işlemi yaptığımızda ikisinin işaretsiz işlemlerde taşma olduğunda bir değerini alan bayrak.
+
+608
+01:36:12,539 --> 01:36:15,539
+Ve buna bağlı olarak biz bazı işlemler yapacağız.
+
+609
+01:36:15,539 --> 01:36:19,539
+Hatta sizin labınızda da var bununla alakalı bir şey.
+
+610
+01:36:19,539 --> 01:36:28,539
+Sonra parity flake dediğimiz işte eğer ki bir işlem yapıyoruz, işlem sonucunda şöyle bir sayı geldi 4 bitlik.
+
+611
+01:36:28,539 --> 01:36:31,539
+Burada birilerinin adedi şu an iki tane.
+
+612
+01:36:31,539 --> 01:36:35,539
+Bu yüzden parity flake bir değerini alacak.
+
+613
+01:36:35,539 --> 01:36:39,539
+Eğer birilerinin adeti tek olursa şöyle bir işlem çıktı.
+
+614
+01:36:39,539 --> 01:36:41,539
+Parity flake sıfır olacak.
+
+615
+01:36:41,539 --> 01:36:46,539
+Bunu ilgili biti kontrol etmek için kullanabileceğiniz zam ileriden.
+
+616
+01:36:46,539 --> 01:36:55,539
+Veyahut da karşı tarafı bir veri gönderirsek işte karşıdaki verinin bir bozuntuya uğrayıp uğramadığını kontrol edebiliriz.
+
+617
+01:36:55,539 --> 01:37:02,130
+Bunlarla alakalı yapacağız bir şeyler.
+
+618
+01:37:02,130 --> 01:37:09,130
+Xlarif flake 4 bitlik kısımların toplama çıkarma sonucunun elde değerini tutacak.
+
+619
+01:37:09,130 --> 01:37:14,130
+Yani elde varsa 1 yoksa 0 ama carry flake gibi 8 bit veya 16 bit işlemler değil.
+
+620
+01:37:14,130 --> 01:37:17,130
+Sadece dörtlük nibble denen kısımlar.
+
+621
+01:37:17,130 --> 01:37:29,729
+Nibble'ların 4 bitlik kısımlarının çıkarma sonucu veya toplama sonucundaki elde değerini tutacak.
+
+622
+01:37:29,729 --> 01:37:32,729
+Zero flake'i çokça kullanacaksınız.
+
+623
+01:37:32,729 --> 01:37:36,729
+İşlem sonucunun sıfır olma durumunda zero flake'ler olacak.
+
+624
+01:37:36,729 --> 01:37:40,729
+Sign flake eksi olma durumunda bir olan flake olacak.
+
+625
+01:37:40,729 --> 01:37:43,729
+Trap flake'i biz interruptlarda kullanacağız.
+
+626
+01:37:43,729 --> 01:37:48,729
+Yani bir interrupt komutu geldi mi gelmedi mi bunun kontrolünü yapacağız.
+
+627
+01:37:48,729 --> 01:38:00,729
+Interrupt enable flake'te de işte interruptların yani sistem çalışırken interruptlara izin ver veya izin verme gibisinden izinleri enable ettiğimiz flake bulacak.
+
+628
+01:38:00,729 --> 01:38:03,729
+Overflow direction flake'i çok kullanmayacağız.
+
+629
+01:38:03,729 --> 01:38:12,729
+Dize işlemlerinde işte yukarıdan aşama, aşağıdan yukarıma gibisinden nasıl anlamda veri geliyor bunun kontrolü ama bununla bir iş yapmayacağız biz.
+
+630
+01:38:12,729 --> 01:38:27,670
+Overflow aşım biti işaretli işlemlerde taşma durumunu kontrol edecek ama işte 8 bitin üstüne değil 16 bitin üstündeki taşmaları kontrol edecek.
+
+631
+01:38:27,670 --> 01:38:29,670
+Biz genelde real mode'da çalışacağız.
+
+632
+01:38:29,670 --> 01:38:33,670
+Şimdi normalde mikro işlemcilerin birkaç modu var.
+
+633
+01:38:33,670 --> 01:38:37,670
+Virtual mode var, real mode var 8086'da.
+
+634
+01:38:37,670 --> 01:38:39,670
+Biz real mode'da çalışacağız.
+
+635
+01:38:39,670 --> 01:38:40,670
+Neremek real mode?
+
+636
+01:38:40,670 --> 01:38:42,670
+Aslında adreslemenin birebir oldu.
+
+637
+01:38:42,670 --> 01:38:44,670
+Yani 20 adres ucumuz var.
+
+638
+01:38:44,670 --> 01:38:48,670
+1 megabaytlık bir memori bloğunu adresleyebileceğini gösteriyordu.
+
+639
+01:38:48,670 --> 01:38:50,670
+Onu izah etmiştik zaten.
+
+640
+01:38:50,670 --> 01:38:52,670
+Ve real mode'da da çalışacağız.
+
+641
+01:38:52,670 --> 01:38:58,670
+Birçok modda bu 20 adres ucu daha fazla memoriyi kesket bir yapıyla adresleyebiliyor.
+
+642
+01:38:58,670 --> 01:39:04,670
+Ama biz onunla değil, biz normal fiziksel olan ne ise real mode'da çalışacağız.
+
+643
+01:39:04,670 --> 01:39:13,920
+Şimdi real mode'da segment, adres ve offset değerleri demin anlattığımız şeyi biliyoruz aslında.
+
+644
+01:39:13,920 --> 01:39:15,920
+Data segmentimiz var.
+
+645
+01:39:15,920 --> 01:39:20,920
+Bir de BX'de de bir şey adresleyelim örnek olarak.
+
+646
+01:39:20,920 --> 01:39:24,920
+Havuz'a da istenen anına bu şekilde erişeceğiz.
+
+647
+01:39:25,920 --> 01:39:28,920
+Şimdi segmentlerin 64 kilobaytlık alanı göstermesi lazım.
+
+648
+01:39:28,920 --> 01:39:30,920
+Bu neden olabilir?
+
+649
+01:39:30,920 --> 01:39:31,920
+Bunu bir düşünelim.
+
+650
+01:39:31,920 --> 01:39:33,920
+Burada size bir soru var.
+
+651
+01:39:33,920 --> 01:39:38,130
+Ara vermeyeceğiz arkadaşlar.
+
+652
+01:39:38,130 --> 01:39:40,130
+Zaten geç başladık.
+
+653
+01:39:40,130 --> 01:39:46,130
+Zaten 2 saatlik bir ders ara vermeden biraz ilerleyelim.
+
+654
+01:39:46,130 --> 01:39:49,130
+Çünkü biraz geç başladık.
+
+655
+01:39:49,130 --> 01:39:54,789
+Şurada şu soruya bir cevap verebilir miyiz?
+
+656
+01:39:54,789 --> 01:39:58,789
+64 kilobaytlık alanı, yani daha doğrusu şunu soruyoruz.
+
+657
+01:39:58,789 --> 01:40:06,789
+Data segment dediğimiz, herhangi bir segment aslında bize 64 kilobaytlık bir alan gösteriyor.
+
+658
+01:40:06,789 --> 01:40:07,789
+Neden?
+
+659
+01:40:07,789 --> 01:40:24,859
+Evet, segmentler 16 bit olduğundan, iki üzeri 16'dan 64 kaldık ve her biri bit olduğundan 64 kilobaytlık alanı gösteriyor.
+
+660
+01:40:24,859 --> 01:40:27,859
+Evet, doğru, segmentler 16 bitlik olduğundan.
+
+661
+01:40:27,859 --> 01:40:30,859
+Yani şunu tekrardan belirtelim.
+
+662
+01:40:30,859 --> 01:40:31,859
+Demin bir örnek vardı.
+
+663
+01:40:31,859 --> 01:40:34,859
+1230, öteki de neydi?
+
+664
+01:40:34,859 --> 01:40:37,859
+0042 diyelim misal.
+
+665
+01:40:37,859 --> 01:40:39,859
+Bunu niye 10'la çarpıyoruz?
+
+666
+01:40:39,859 --> 01:40:50,859
+Çünkü aslında maksimum bir segmentin alabileceği bu, yani 16 bit, 4444, 16 bitlik bir adresleme alanı alabiliyor.
+
+667
+01:40:50,859 --> 01:40:53,859
+Yani şunu yapamazsınız.
+
+668
+01:40:54,859 --> 01:40:59,859
+Şehirlik olarak gösteriyorum, böyle yapılmaz da hani, registre anlamında gösteriyorum.
+
+669
+01:40:59,859 --> 01:41:04,859
+1230, böyle bir sayıyı buraya atayamazsınız.
+
+670
+01:41:04,859 --> 01:41:08,859
+Çünkü bu normalde 20 bitlik bir gösterim.
+
+671
+01:41:08,859 --> 01:41:12,859
+Ama bizim registre segmentlerimiz 16 bitlik.
+
+672
+01:41:12,859 --> 01:41:21,859
+16 bitlik olduğu için de maksimum 64 kiloluk, yani 64 in tane modül adres diyebiliyor, iki üzeri 16'dan.
+
+673
+01:41:21,859 --> 01:41:34,859
+Bu nedenle, işte segmentler DS segmenti misal, maksimum 0 ile 64536 in'e kadar yere kadar adresleme sağlayabiliyor.
+
+674
+01:41:34,859 --> 01:41:36,859
+Bu DS kısmı o.
+
+675
+01:41:36,859 --> 01:41:42,859
+Yani 0'dan 65k diyelim ve 64k'lık yere kadar bir adresleme.
+
+676
+01:41:42,859 --> 01:41:51,859
+Bunun içerisinde nereye gideceğimiz, yani bu adres boyutunun içerisinde nereye gideceğini ise ilgili segmentin içindeki BX belirleyecek.
+
+677
+01:41:51,859 --> 01:41:58,229
+Burada da bir örneğimiz var zaten.
+
+678
+01:41:58,229 --> 01:42:04,229
+Offset değeri 2000, segment değeri 1000 ise eğer, aslında gideceğimiz yer 12000 olan.
+
+679
+01:42:04,229 --> 01:42:11,229
+Yani daha doğrusu segmenti 10.000'in içerisinde 2000 aşağıya inilmiş bir adres bülyomda olacak.
+
+680
+01:42:11,229 --> 01:42:27,100
+Bunları zaten diyemiştik, program hafızasına CS yani COD segment ve instruction pointer'la, stack segment ve stack pointer'la veya base pointer'la erişim sağlayacağız.
+
+681
+01:42:27,100 --> 01:42:33,100
+Ve veri de şimdi de data segment, yani veri segmenti bu da onun içerisinde.
+
+682
+01:42:33,100 --> 01:42:37,100
+Ve ikisi DL'yi veya STL'yi kullanarak ulaşımı sağlayabileceğiz.
+
+683
+01:42:37,100 --> 01:42:44,590
+Evet, adresleme modlarına hızlıca geçeceğim.
+
+684
+01:42:44,590 --> 01:42:52,590
+Bunlar zaten SMB'de sizin bildiğiniz veya gördüğünüz yerler ama bu adresleme modlarına hızlıca geçmek lazım.
+
+685
+01:42:52,590 --> 01:42:57,590
+En bariz adresleme bülyomu zaten AX, BX'i MOV komutuyla yapıyoruz.
+
+686
+01:42:57,590 --> 01:43:02,590
+İkincisi source, birincisi destination olacak şekilde.
+
+687
+01:43:02,590 --> 01:43:05,590
+Burada bir örnek var, burada tekrardan belirtelim.
+
+688
+01:43:05,590 --> 01:43:12,960
+AX 16 bitliyi gösteriyordu, BX de 16 bitliyi gösteriyor.
+
+689
+01:43:12,960 --> 01:43:19,960
+Ve bunlardan her biri 4 bitlik olduğu için 4x4'den 16 bitlik bir sayıyı AX'e atamışız.
+
+690
+01:43:19,960 --> 01:43:27,960
+Sonra BX'e atamışız ve bunları kendi içerisinde MOV komutuyla BX, AX'e replike edebiliyoruz.
+
+691
+01:43:27,960 --> 01:43:32,960
+Burada en büyük sıkıntı şu, 8 bitlik ile 16 bitliyi kullanamayız.
+
+692
+01:43:32,960 --> 01:43:38,960
+Yani illa 8 bitler kendi içerisinde, 16 bitler kendi içerisinde olmak zorunda.
+
+693
+01:43:38,960 --> 01:43:44,600
+Normalde şöyle bir yapı yok hiçbir zaman.
+
+694
+01:43:44,600 --> 01:43:47,600
+Bunu kullanamayız, BX'i atacağız.
+
+695
+01:43:47,600 --> 01:43:51,600
+Eğer üstündeki 4 biti maskelemek istiyorsak,
+
+696
+01:43:51,600 --> 01:43:57,600
+bu 4 biti maskeleyecek Ent'le veya Ent komutuyla maskeleyebiliriz, silebiliriz yani.
+
+697
+01:43:57,600 --> 01:44:04,600
+Ama ilk etapta aynı sizelardaki yazmaçlar arasındaki iletişim söz konusu.
+
+698
+01:44:04,600 --> 01:44:13,399
+Direct Address, Immediate Addressing zaten bildiğimiz bir adresleme.
+
+699
+01:44:13,399 --> 01:44:16,399
+Burada yazarken de göreceksiniz.
+
+700
+01:44:16,399 --> 01:44:19,399
+Bu arada Proteos'un kullanacağız.
+
+701
+01:44:19,399 --> 01:44:28,399
+Loglarda ve uygulamalarda Proteos'taki mikro işlemcinin üzerine çift tıkladığımızda açılan ASM kodunu oraya yazacağız.
+
+702
+01:44:28,399 --> 01:44:32,399
+Burada Hegza desimal bir sayıda atabiliriz.
+
+703
+01:44:32,399 --> 01:44:35,399
+Yani Direct Address de, Hemen Address de.
+
+704
+01:44:35,399 --> 01:44:37,399
+Desimal bir sayıda atabiliriz.
+
+705
+01:44:37,399 --> 01:44:39,399
+Binary bir sayıda atabiliriz.
+
+706
+01:44:40,399 --> 01:44:45,399
+Hatta A'yı bu şekilde yazarsanız bunun ASM kodunu da atabilirsiniz.
+
+707
+01:44:45,399 --> 01:44:52,399
+16 bitlik olacağı için A, 8 bitlik olacağı için A, H'ye atmış sadece.
+
+708
+01:44:52,399 --> 01:44:58,399
+Bu da normalde 8 bit göndermek istiyor ama böyle bir sıkıntı var Proteos'ta.
+
+709
+01:44:58,399 --> 01:45:00,399
+Başına 0 koymamız gerekiyor.
+
+710
+01:45:00,399 --> 01:45:02,399
+Bu 0 anlam ifade etmiyor.
+
+711
+01:45:02,399 --> 01:45:07,399
+O yüzden bu 4 bitten 4 bitten 8 biti aslında bu A, L'ye atıyor.
+
+712
+01:45:08,399 --> 01:45:10,399
+Burada da C, X niye X demiş?
+
+713
+01:45:10,399 --> 01:45:13,399
+Çünkü bu 3 normalde 12 bit var burada.
+
+714
+01:45:13,399 --> 01:45:15,399
+12 bitlik bir sayı buraya atmış.
+
+715
+01:45:15,399 --> 01:45:17,399
+Öteki tarafta B, D'ye atmış.
+
+716
+01:45:17,399 --> 01:45:19,399
+8 bitlik bir sayı.
+
+717
+01:45:24,060 --> 01:45:32,060
+Direct Address de zaten adresin, yani adres virüsün içerisindeki bilgiyi B, X'e atılmasını söylüyor.
+
+718
+01:45:32,060 --> 01:45:38,060
+Yani DS data segmentinin içerisinde 1234 nola adresin içindeki bilgiyi B, X'e atıyoruz.
+
+719
+01:45:39,060 --> 01:45:40,060
+Köşede, parantezde.
+
+720
+01:45:40,060 --> 01:45:43,060
+Bunları SMD'den biliyoruz değil mi arkadaşlar?
+
+721
+01:45:44,060 --> 01:45:47,060
+Bunları ben hızlıca bir daha anlatmak istedim ama
+
+722
+01:45:48,060 --> 01:45:51,060
+grafikler, görsellerle vesaire de var ama
+
+723
+01:45:51,060 --> 01:45:53,060
+Registered indirect adreslemede,
+
+724
+01:45:53,060 --> 01:45:58,060
+yani yazmaçlar, dolaylı yazmaç, yazmaç dolaylı adreslemede ise
+
+725
+01:45:58,060 --> 01:46:07,060
+yaptığımız şey aslında bir yazmaçın içerisindeki sayının bir adres olarak o adresin içerisinde atılması.
+
+726
+01:46:07,060 --> 01:46:08,060
+Şurada bir örnek var.
+
+727
+01:46:09,060 --> 01:46:10,060
+DS'miz 100 olsun.
+
+728
+01:46:10,060 --> 01:46:12,060
+Tabii bunu 10'la çağırıyoruz.
+
+729
+01:46:12,060 --> 01:46:13,060
+1000'miş gibi.
+
+730
+01:46:13,060 --> 01:46:16,060
+Eğer ki B, X'in içerisinde,
+
+731
+01:46:16,060 --> 01:46:19,060
+yani yazmaçın içerisinde 1000 varsa,
+
+732
+01:46:20,060 --> 01:46:23,060
+data segmentimiz de 1000 olduğu için,
+
+733
+01:46:23,060 --> 01:46:26,060
+1000 artı 1000, 2000'inci adresten,
+
+734
+01:46:27,060 --> 01:46:28,060
+2000'i yazmıyoruz.
+
+735
+01:46:28,060 --> 01:46:31,060
+2000'in olduğu yerin içerisindeki adresten
+
+736
+01:46:31,060 --> 01:46:34,060
+veriyi A, X'e yazıyoruz.
+
+737
+01:46:34,060 --> 01:46:35,060
+Burada önemli nokta şu.
+
+738
+01:46:35,060 --> 01:46:37,060
+A, X dendiği için,
+
+739
+01:46:37,060 --> 01:46:41,060
+ya bu da base, yani base register olduğu için,
+
+740
+01:46:41,060 --> 01:46:45,060
+buradan başlayıp burayı dolduran sayıları yazmamız gerekiyor.
+
+741
+01:46:45,060 --> 01:46:48,060
+O yüzden hani ilk 12'yi yazdık,
+
+742
+01:46:48,060 --> 01:46:52,060
+sonra 34'ü de üst şeyine yazmamız gerekiyor.
+
+743
+01:46:52,060 --> 01:46:55,060
+Otomatikman bu ikisini sırasal bir düzende alıyor.
+
+744
+01:46:55,060 --> 01:47:03,779
+Burada aynı şey zaten.
+
+745
+01:47:03,779 --> 01:47:05,779
+Base index deminkinin aynısı.
+
+746
+01:47:05,779 --> 01:47:06,779
+Deminkinin aynısı.
+
+747
+01:47:06,779 --> 01:47:10,779
+Sadece buraya bir tane destination indexi koyabiliriz,
+
+748
+01:47:10,779 --> 01:47:13,779
+index yazmaçlarını veya source indexi koyabiliriz.
+
+749
+01:47:13,779 --> 01:47:16,779
+Yani bir varyasyon elde etmemizi sağlıyor.
+
+750
+01:47:16,779 --> 01:47:19,779
+DA'yı arttırabiliriz, SA'yı azaltabiliriz.
+
+751
+01:47:19,779 --> 01:47:23,779
+Yani dinamik olarak bir adresten bir adres bloğunu
+
+752
+01:47:23,779 --> 01:47:27,670
+DX'e atamamızı sağlıyor.
+
+753
+01:47:27,670 --> 01:47:32,670
+Onun yerine direkt nömerik olarak da bir adres göreleme verilebilir.
+
+754
+01:47:33,670 --> 01:47:38,670
+Farklı farklı index adresleme metodları.
+
+755
+01:47:38,670 --> 01:47:46,609
+Aynı şekilde memory bloğundan okuma ve yazma yaptığımız gibi,
+
+756
+01:47:46,609 --> 01:47:49,609
+adresleme yaptığımız gibi kendi yazmaçlar içerisinde
+
+757
+01:47:49,609 --> 01:47:52,609
+program hafızasına da yapabiliyoruz.
+
+758
+01:47:52,609 --> 01:47:53,609
+Yani ne demek?
+
+759
+01:47:53,609 --> 01:47:56,609
+Bir jump komutuyla, burası code segmenti gösteriyor,
+
+760
+01:47:56,609 --> 01:47:58,609
+burası da IP'yi gösteriyor.
+
+761
+01:47:58,609 --> 01:48:00,609
+Yani instruction pointer'ı.
+
+762
+01:48:00,609 --> 01:48:05,609
+İlgili code segmentin instruction point'inden jump yapabildiğimiz gibi,
+
+763
+01:48:05,609 --> 01:48:09,609
+ilgili code segmentin instruction pointindeki kodu
+
+764
+01:48:09,609 --> 01:48:12,609
+col'da edebiliriz, çağrada biliriz.
+
+765
+01:48:12,609 --> 01:48:19,119
+Bunları geçelim.
+
+766
+01:48:19,119 --> 01:48:22,119
+Buraları biliyorsunuz diye düşünüyorum.
+
+767
+01:48:22,119 --> 01:48:25,399
+Col segmentle alakalı.
+
+768
+01:48:25,399 --> 01:48:34,159
+Bu yeni adrestemede push ve pop'u zaten SMD'de de çokça kullanıyorsunuz.
+
+769
+01:48:34,159 --> 01:48:37,159
+İşte push normalde bir work dediğimiz,
+
+770
+01:48:37,159 --> 01:48:41,159
+yani 16 bitlik, 2 byte'lık bir veri yanına basar.
+
+771
+01:48:41,159 --> 01:48:43,159
+Ama pop ederken work çeker.
+
+772
+01:48:43,159 --> 01:48:46,159
+Push BL doğru olmayacaktır.
+
+773
+01:48:46,159 --> 01:48:50,159
+Yani daha doğrusu pop BL doğru olmayacaktır.
+
+774
+01:48:50,159 --> 01:48:54,159
+Push BL hani başına sıfır koyarak da push diyebilir.
+
+775
+01:48:54,159 --> 01:48:56,159
+Ama pop yaparken sıkıntı çıkarır.
+
+776
+01:48:56,159 --> 01:49:02,159
+Yön adresleme için ise stack segment ve stack pointer'ın ikisini kullanacağız ileride.
+
+777
+01:49:02,159 --> 01:49:15,640
+Şimdi burada normalde yazmaç yani push işleminde 2 bit 1'den kayacak,
+
+778
+01:49:15,640 --> 01:49:23,359
+2 byte 1'den kayacak.
+
+779
+01:49:23,359 --> 01:49:32,130
+Ve per grubu derken neyse.
+
+780
+01:49:32,130 --> 01:49:36,130
+Şimdi 2 byte veri 1'den yazabileceğiz.
+
+781
+01:49:36,130 --> 01:49:39,130
+Neden? Çünkü 16 bitlik işlemler yapıyoruz.
+
+782
+01:49:39,130 --> 01:49:45,130
+Ama word olarak yazacağımız vakit 2 azalacak veya 2 artacak.
+
+783
+01:49:45,130 --> 01:49:49,130
+Bunlara ilgili noktada tekrardan değineceğiz ama
+
+784
+01:49:49,130 --> 01:49:53,130
+şu E'lere çok dikkatinizi etmeyin.
+
+785
+01:49:53,130 --> 01:49:55,130
+Yani bu kısmı da yine gelmiş.
+
+786
+01:49:55,130 --> 01:49:58,130
+Bu grafiği aldığımız yer mutlaka 32 bitlik bir işlemci.
+
+787
+01:49:58,130 --> 01:50:01,130
+Ama 16 bitlik kısmını bizi ilgilendiriyor.
+
+788
+01:50:01,130 --> 01:50:05,130
+İşte normal stack pointer'ın adresi neyse,
+
+789
+01:50:05,130 --> 01:50:11,130
+bunu 10'la çarparak şurada 12-34'ü gömmek istediğimizde
+
+790
+01:50:11,130 --> 01:50:17,130
+normalde ilk 34 sonra 12 veya 10 bitgen diyen ve didilen diyen mevzularında
+
+791
+01:50:17,130 --> 01:50:21,130
+buraya yerleştirme ve okuma yapacağız ilgili haftalarda.
+
+792
+01:50:21,130 --> 01:50:26,020
+Şimdi uç tanımlamalarına gelelim.
+
+793
+01:50:26,020 --> 01:50:30,020
+8086 mikro işlemcisi 40 pin'den oluşan,
+
+794
+01:50:30,020 --> 01:50:33,020
+yani 40 tane bacağı bulunan bir işlemci.
+
+795
+01:50:33,020 --> 01:50:35,020
+Ne dedik bacaklarında?
+
+796
+01:50:35,020 --> 01:50:40,020
+Bir kere 16 adet veri yolu olacak dedik.
+
+797
+01:50:40,020 --> 01:50:45,020
+20 adet adres olacak dedik.
+
+798
+01:50:45,020 --> 01:50:52,020
+Zaten bu ikisi ayrı bir mimari yapılsa 36 bacak edecek ve bu genişleyebilecek.
+
+799
+01:50:52,020 --> 01:50:57,020
+Bunun yerine dizaynı yapanlar şöyle söylemiş,
+
+800
+01:50:57,020 --> 01:51:01,020
+adres ve data yollarını ortak almışlar.
+
+801
+01:51:01,020 --> 01:51:04,020
+Şimdi bu bir sıkıntıya yol açıyor. Nedir?
+
+802
+01:51:04,020 --> 01:51:07,020
+İşte ilk adresimi göndereceğim.
+
+803
+01:51:07,020 --> 01:51:12,020
+Adresi gönderdim, bu adresi tutmam lazım ki ilgili memorinin enable'ını bir yapıp
+
+804
+01:51:12,020 --> 01:51:15,020
+oraya ben datamı da göndereyim.
+
+805
+01:51:15,020 --> 01:51:22,020
+Burada bir combine yapı olduğu için adres ve data bir sıkıntı oluşuyor.
+
+806
+01:51:22,020 --> 01:51:26,020
+Bu nedenle buraya biz bir leç mekanizması kuracağız.
+
+807
+01:51:26,020 --> 01:51:31,020
+Yani leç dediğimiz mimariler, tutucu devreler demek.
+
+808
+01:51:31,020 --> 01:51:38,020
+Yani bizim adresi gönderdiğimizde, adres verisine hangi memori index dediğimizi gönderdiğimizde,
+
+809
+01:51:38,020 --> 01:51:41,020
+şuraya adres diyelim 20 tane pin var,
+
+810
+01:51:41,020 --> 01:51:47,020
+hangi memoriye gittiğini, hangi memoriye enable ettiğini,
+
+811
+01:51:47,020 --> 01:51:52,020
+bilgisini tutan bir leç entegre mimarisi tasarlayacağız.
+
+812
+01:51:52,020 --> 01:51:58,020
+Ve işte leç'i gönderdikten sonra aynı haptan şunu aktif ettik diyelim.
+
+813
+01:51:58,020 --> 01:52:01,020
+Bak aktif oldu, buralar yok.
+
+814
+01:52:01,020 --> 01:52:11,020
+Bunu aktif ettikten sonra aynı yoldan, tabi 16 tanesi ile veriyi göndereceğiz.
+
+815
+01:52:11,020 --> 01:52:15,020
+Ve ilgili yere yazıp veya okuma işlemini yapacağız.
+
+816
+01:52:15,020 --> 01:52:19,020
+Ama burada aynı yolu kullanacağız adres ve data yolunda.
+
+817
+01:52:19,020 --> 01:52:22,020
+Tabi data 16 bit olunca 15 de bitecek.
+
+818
+01:52:22,020 --> 01:52:27,020
+16, 17, 18, 19'lar sadece adrese ait, adresbasa ait veri uçlarımız olacak.
+
+819
+01:52:27,020 --> 01:52:31,020
+16 adet veri yolu, 20 adet adres yolu var.
+
+820
+01:52:31,020 --> 01:52:37,020
+Ve başka kontrolünü sağladığımız mikro işlemciyi kontrol ettiğimiz bazı uçlarımız mevcut.
+
+821
+01:52:37,020 --> 01:52:45,539
+Evet, herhalde arkadaşlar daha ilk dersten bayıldık.
+
+822
+01:52:45,539 --> 01:52:48,539
+O zaman ben burada durayım.
+
+823
+01:52:48,539 --> 01:52:52,539
+Çünkü bundan sonrakiler dikkatinizi cevap etmem gereken noktalar.
+
+824
+01:52:53,539 --> 01:53:01,539
+Burada bu noktaların bu adres database'ın nasıl kombine edildiği,
+
+825
+01:53:01,539 --> 01:53:08,539
+nasıl birbiri arasında değişkenlerin birini seçip birini leçetip birini verdiğimiz vs.
+
+826
+01:53:08,539 --> 01:53:10,539
+bu bilgileri vereceğimiz kısımlar.
+
+827
+01:53:10,539 --> 01:53:13,539
+Bu kısımları biraz tutalım.
+
+828
+01:53:13,539 --> 01:53:17,539
+Ama bu derste şunu anlamanızı istiyorum temel olarak.
+
+829
+01:53:18,539 --> 01:53:23,539
+Bir mikro işlemcinin kaç bitlik işlemci olduğu ne demek?
+
+830
+01:53:23,539 --> 01:53:26,539
+İşte ne kadarlık bir adresleme boyutu?
+
+831
+01:53:26,539 --> 01:53:28,539
+İşte 20 tane adresleme ucum var.
+
+832
+01:53:28,539 --> 01:53:31,539
+O zaman ne kadarlık bir memoriye ben adresleyebilirim?
+
+833
+01:53:31,539 --> 01:53:34,539
+Bunu bilmemiz, bunu anlamamız lazım.
+
+834
+01:53:36,539 --> 01:53:38,539
+Bir dakika şimdi ne yazıyoruz?
+
+835
+01:53:38,539 --> 01:53:40,539
+Saygıları paylaşacak mısınız hocam?
+
+836
+01:53:40,539 --> 01:53:41,539
+Evet paylaşacağım.
+
+837
+01:53:41,539 --> 01:53:43,539
+Avesis saygısında paylaşılacak.
+
+838
+01:53:43,539 --> 01:53:46,539
+Hocam mola vermeyince bir süresine odaklanmak zor oluyor.
+
+839
+01:53:46,539 --> 01:53:51,539
+Ya çay kahve falan alın canım yanınızda, artık evinizdesiniz.
+
+840
+01:53:51,539 --> 01:53:53,539
+Yani kontrol de yetmiyoruz sizi.
+
+841
+01:53:53,539 --> 01:53:56,539
+Derse gelirken de böyle bir sıkıntınız varsa şimdi yok.
+
+842
+01:53:56,539 --> 01:54:02,539
+Hani ya odaklanmak zor ama iki saatlik derste de ara verirsek bu konular yetişmez.
+
+843
+01:54:02,539 --> 01:54:04,539
+Sonra siz heba olursunuz.
+
+844
+01:54:04,539 --> 01:54:06,539
+Biz yetiştireceğiz derken.
+
+845
+01:54:06,539 --> 01:54:09,539
+İlk hafta olduğundan belki böyle oldu.
+
+846
+01:54:09,539 --> 01:54:10,539
+Yavaştan alışırsınız.
+
+847
+01:54:10,539 --> 01:54:12,539
+Ders kitap öneriniz var mı hocam?
+
+848
+01:54:12,539 --> 01:54:16,170
+Ya şu var.
+
+849
+01:54:16,170 --> 01:54:19,170
+Bir kere sunumlara kesinlikle derslere katılın.
+
+850
+01:54:19,170 --> 01:54:22,170
+Çünkü sunumu ben paylaşacağım diyorum.
+
+851
+01:54:22,170 --> 01:54:23,170
+Paylaşacağım da.
+
+852
+01:54:23,170 --> 01:54:26,170
+Ama sunumda gördüğünüz gibi açıklamalar yok çok fazla.
+
+853
+01:54:26,170 --> 01:54:28,170
+Yani şekil var.
+
+854
+01:54:29,170 --> 01:54:30,170
+Şekil var.
+
+855
+01:54:30,170 --> 01:54:35,170
+E o şekilden bir şeyler anlamak da tabi bir dinlemek gerektiriyor.
+
+856
+01:54:35,170 --> 01:54:38,170
+O yüzden bir kere derslere bence katılın.
+
+857
+01:54:38,170 --> 01:54:42,170
+Çünkü sunumlara sonra çalışırım demek ki bu ders için anlamlı değil.
+
+858
+01:54:42,170 --> 01:54:44,170
+Bence de yetersiz kesinlikle.
+
+859
+01:54:46,170 --> 01:54:50,170
+Kitap olarak da Tevfik Hoca'nın bir kitabı vardı hatırlarsanız.
+
+860
+01:54:50,170 --> 01:54:54,170
+Onun güncelleştirilmiş bir versiyonu çıkacak herhalde yırkımda.
+
+861
+01:54:54,170 --> 01:54:56,170
+Veya çıktı bilmiyorum.
+
+862
+01:54:56,170 --> 01:54:58,170
+Onu belki alabiliriz.
+
+863
+01:54:58,170 --> 01:54:59,170
+Önerebilirim.
+
+864
+01:54:59,170 --> 01:55:05,170
+Onun dışında Morris Manon'un ya tam 80-86'ı anlatan bir kitap değil o ama
+
+865
+01:55:05,170 --> 01:55:07,170
+Yani genel olarak...
+
+866
+01:55:07,170 --> 01:55:09,170
+Bakın yanımda var mıydı?
+
+867
+01:55:09,170 --> 01:55:14,090
+Yanımda var mıydı o kitap?
+
+868
+01:55:14,090 --> 01:55:16,090
+Yanımda yok herhalde.
+
+869
+01:55:16,090 --> 01:55:22,090
+Yani genel olarak 80-86'yı bizim gibi anlatan bir kitap mevcut değil.
+
+870
+01:55:22,090 --> 01:55:27,090
+Öyle olunca çok da bir kitap öneremiyorum açıkçası.
+
+871
+01:55:29,090 --> 01:55:30,090
+Lab olacak mı?
+
+872
+01:55:30,090 --> 01:55:31,090
+Bugün olmayacak.
+
+873
+01:55:31,090 --> 01:55:35,090
+Labların ilk 21 Ekim'de diye ben öngülüyorum ama
+
+874
+01:55:35,090 --> 01:55:54,090
+Sercan Aygün, [öğrenci] ve [öğrenci]'in havesi sayfalarını lütfen takip edelim.
+
+875
+01:55:54,090 --> 01:55:57,399
+5 lab olacak doğrudur.
+
+876
+01:55:57,399 --> 01:56:02,399
+İşte 5 labı dönüşümlü bir şekilde yapacaklar.
+
+877
+01:56:02,399 --> 01:56:04,399
+Bugün olmayacak.
+
+878
+01:56:04,399 --> 01:56:07,399
+200'leri 32 microjimde oluyor.
+
+879
+01:56:07,399 --> 01:56:09,399
+264 çok büyük bir sayı olmuyor mu?
+
+880
+01:56:09,399 --> 01:56:12,399
+Öyle olursa ben mi anlamadım orayı?
+
+881
+01:56:12,399 --> 01:56:14,399
+Evet çok büyük bir sayı oluyor.
+
+882
+01:56:14,399 --> 01:56:19,399
+Yani şöyle 64 tane eğer ki adresleme bacağı varsa bir işlemcinin
+
+883
+01:56:19,399 --> 01:56:23,399
+ki 64 tane adresleme bacağı olan bir işlemci ben bilmiyorum
+
+884
+01:56:23,399 --> 01:56:31,399
+64 tane adresleme bacağı olan bir işlemcide 264 tane memoru blonu adresleyebilirsiniz.
+
+885
+01:56:31,399 --> 01:56:32,399
+Doğru.
+
+886
+01:56:33,399 --> 01:56:41,399
+32 adresleme bacağı olan bir işlemcinin 200'leri 32'den 4 gigabaytlık bir alanı indexlemesi doğru.
+
+887
+01:56:43,399 --> 01:56:45,399
+İşte 33 tane olursa ne olacak?
+
+888
+01:56:45,399 --> 01:56:51,399
+8 gigabayt. 34 tane olursa 16 gigabayt gibisinden adreslenebilir.
+
+889
+01:56:53,399 --> 01:56:58,399
+Hocam kodu Proteus'ta yazacağız demiştiniz ama bizim Proteus'lar demo halindeydi.
+
+890
+01:56:58,399 --> 01:57:00,399
+Premium hesabı mı alacağız nasıl yapacağız?
+
+891
+01:57:00,399 --> 01:57:02,399
+Bir fikriniz var mı?
+
+892
+01:57:02,399 --> 01:57:04,399
+Çünkü kaydetmeyi engelliyordu o demo hesap.
+
+893
+01:57:04,399 --> 01:57:06,399
+Evet biliyorum bir fikrim yok.
+
+894
+01:57:08,399 --> 01:57:09,399
+Tamam.
+
+895
+01:57:09,399 --> 01:57:10,399
+Tamam.
+
+896
+01:57:10,399 --> 01:57:14,399
+Yani orada çözümler sizin usta becerilerinize bakıyor.
+
+897
+01:57:16,399 --> 01:57:19,399
+Vizenin ne zaman olacağını söylemiş miydiniz hocam?
+
+898
+01:57:19,399 --> 01:57:27,399
+Vize normal 1. vize veya 2. vize haftasından bir tanesinde olacak ama şu etapta hani karar vermedik ki 2. demo olur 1. demo olur.
+
+899
+01:57:28,399 --> 01:57:29,399
+Daha belli değil.
+
+900
+01:57:29,399 --> 01:57:35,210
+Ama bir tane vizemiz olacak.
+
+901
+01:57:35,210 --> 01:57:37,210
+Evet dersimiz de herhalde bitiyor mu?
+
+902
+01:57:37,210 --> 01:57:38,210
+4'te mi bitiyor?
+
+903
+01:57:38,210 --> 01:57:40,210
+Kaçta bitiyor ders?
+
+904
+01:57:41,210 --> 01:57:47,210
+Evet arkadaşlar bundan sonraki derslerimizde bol kahveli katılım sağlayalım.
+
+905
+01:57:47,210 --> 01:57:50,210
+Çünkü derslerde ara vermemeyi düşünüyorum.
+
+906
+01:57:50,210 --> 01:57:52,210
+Çünkü ucu ucuna yetişiyor.
+
+907
+01:57:53,210 --> 01:57:55,210
+Daha hatta bu haftanın konusu bitmedi.
+
+908
+01:57:56,210 --> 01:57:57,210
+Halbuki.
+
+909
+01:57:57,210 --> 01:57:59,210
+Neyse.
+
+910
+01:57:59,210 --> 01:58:01,210
+Ama dersleri takip edelim.
+
+911
+01:58:01,210 --> 01:58:05,210
+Biliyorsunuz takipten de biz bazen ekstra puan veriyoruz.
+
+912
+01:58:05,210 --> 01:58:12,210
+Gerçi şu etapta yoklamalar bize nasıl ulaştırılır bilmiyorum ama ulaşırsa oradan da bir şeyler verebiliriz belki.
+
+913
+01:58:13,210 --> 01:58:15,489
+Tamam.
+
+914
+01:58:15,489 --> 01:58:17,489
+Başka sorumuz yoksa arkadaşlar geçmiş olsun.
+
+915
+01:58:17,489 --> 01:58:20,489
+İlk dersinizi böylelikle başlayalım.
+
+916
+01:58:20,489 --> 01:58:23,489
+Kesinlikle derslere takip bırakmayalım.
+
+917
+01:58:23,489 --> 01:58:29,489
+Mikro işlemciler genelde dersi takip bir bıraktıktan sonra 2. ucunun kaçırdığınız dersler olur.
+
+918
+01:58:29,489 --> 01:58:30,489
+Derslerden bir tanesi.
+
+919
+01:58:31,489 --> 01:58:32,489
+İyi günler.
+
+920
+01:58:32,489 --> 01:58:33,489
+Sağlıcakla kalın.
+
