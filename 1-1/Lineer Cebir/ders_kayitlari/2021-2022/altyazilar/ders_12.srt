@@ -1,0 +1,2579 @@
+1
+00:02:55,092 --> 00:02:58,112
+Merhaba arkadaşlar, birazdan başlayacağım dersi, tamam mı?
+
+2
+00:03:48,276 --> 00:03:56,756
+Günaydın arkadaşlar. Evet, iki kişi var sınıfta, [öğrenci] ve [öğrenci]. Teşekkür ederim en azından size. Hiç kimse olmayabilirdi.
+
+3
+00:04:01,204 --> 00:04:10,144
+Hafta sonu yaptığım derse iki kişi harikinde, o da yabancı ürünüp öğrencilerdi anladığım kadarıyla. Kimse gelmedi yani. [öğrenci] sen katıldın mı hafta sonu dersime?
+
+4
+00:04:14,324 --> 00:04:18,463
+Hatılmadın değil mi? [öğrenci] de aynı şekilde, hatırlamıyorum çünkü sizin isimlerinizi.
+
+5
+00:04:20,384 --> 00:04:25,304
+Evet, iki dersimiz daha var. Sormak istediğiniz bir şey var mı arkadaşlar?
+
+6
+00:04:27,244 --> 00:04:34,403
+Şimdiye kadar anlattığım kısımlarla ilgili sormak istediğiniz bir şey varsa, kısaca da olsa konuşalım, üzerinden geçelim isterseniz.
+
+7
+00:04:34,403 --> 00:04:39,004
+Bakın final sınavına çok büyük bir zaman kalmadı artık. Söylemek istediğiniz bir şey var mı?
+
+8
+00:04:43,860 --> 00:04:54,480
+Sesim geliyor mu? Şu anda wifi sinyali biraz zayıf diye görüyorum ama olmazsa sınıfı değiştireyim. Buradan hiç çekmiyor galiba. Sesim geliyor mu [öğrenci]?
+
+9
+00:05:07,699 --> 00:05:19,039
+Evet. Burada sinyal biraz zayıf gidiyor, geliyor. Ekranımı görüyor musunuz şu anda? [öğrenci], sen cevap verebilir misin?
+
+10
+00:05:22,759 --> 00:05:29,199
+Kopukluk oluyorsa, kesik kesik geliyorsa, sınıfı değiştireceğim. Şu anda ofisimden bağlanım bir iki defa.
+
+11
+00:05:41,779 --> 00:06:03,500
+Ekerler. Bağlanıp cevap vermemeyi tercih ediyorsunuz demek ki. Şöyle yapalım. Ders güme gitmesin. Kimse gelmemiş olabilir. Kayıttan dinlersiniz. Ben ofisimden bu derse veremeyeceğim gibi gözüküyor. Sinyale güvendim bugün ama yani bu sorun çıkaracak gibi duruyor. Bana bir iki üç dakika müsaade edin. Ben sinyalin daha güçlü olduğu bir yerden yaptığım yayın.
+
+12
+00:07:28,692 --> 00:07:40,471
+Evet arkadaşlar, buradan sinyal gayet güçlü çekiyor, gözüküyor. Kimler var bakalım? Yeni aynı kişiler. Tamam, ben dersime başlayayım artık. Saat şu anda 11'i 4 geçiyor. Peki.
+
+13
+00:07:42,372 --> 00:07:53,451
+Boyut kavramına giriş yaptım diye hatırlıyorum. Buradan devam edelim. Let me continue with the notion of dimension for vector spaces, right? This is a quite important notion.
+
+14
+00:07:54,291 --> 00:08:01,891
+I think you have to understand very well. Otherwise, everything will be a mess, right?
+
+15
+00:08:06,572 --> 00:08:17,651
+Okay, let's see the definition 4.11, right? The dimension of a non-zero vector space, non-zero vector space is the number of vectors in a basis for V.
+
+16
+00:08:19,060 --> 00:08:31,879
+Everybody knows what's the meaning of basis for a vector space, right? Basis is a spanning set which consists of only linearly independent vectors, right?
+
+17
+00:08:32,779 --> 00:08:41,379
+And according to this definition, the dimension of your vector space is the number of element in your basis.
+
+18
+00:08:41,711 --> 00:08:51,312
+You can simply call generators, right? Generators because you generate the vector space, the whole vector space through your basis, right?
+
+19
+00:08:51,812 --> 00:09:00,111
+In the sense that any vector can be written as an inner combination of these generators, right?
+
+20
+00:09:00,111 --> 00:09:04,043
+If your vector space is trivial, I mean...
+
+21
+00:09:29,779 --> 00:09:55,148
+Bir dek bir
+
+22
+00:09:56,052 --> 00:09:58,052
+ve bu set, bu set olarak,
+
+23
+00:09:58,052 --> 00:10:00,052
+bu set olarak,
+
+24
+00:10:00,052 --> 00:10:01,052
+bir basis olarak,
+
+25
+00:10:01,052 --> 00:10:04,052
+ve bu basis olarak,
+
+26
+00:10:04,052 --> 00:10:23,211
+bu,
+
+27
+00:10:23,860 --> 00:10:36,659
+I see that there is nothing done to show if the set is indeed a basis, but we have done some similar job, so I don't see necessity for this example, right?
+
+28
+00:10:38,039 --> 00:10:50,019
+What's the meaning of showing that S is a basis for P2? That means elements in S are linearly independent, right? And we have one more condition.
+
+29
+00:10:50,899 --> 00:10:55,599
+You have to generate P2 by means of S, right?
+
+30
+00:10:55,839 --> 00:11:01,920
+That means take a polynomial, any arbitrary polynomial from P2, right?
+
+31
+00:11:03,799 --> 00:11:12,899
+And try to show that this polynomial can be written as a linear combination of t squared, t and one, right?
+
+32
+00:11:12,899 --> 00:11:17,899
+This is an easy task, so I really don't need necessity to...
+
+33
+00:11:19,176 --> 00:11:21,176
+bu,
+
+34
+00:11:18,836 --> 00:11:43,084
+bu eklidiyen bir eklidiyen bir eklidiyen bir eklidiyen bir eklidiyen bir eklidiyen bir eklidiyen bir eklidiyen bir eklidiyen bir eklidiyen bir eklidiyen bir eklidiyen bir eklidiyen bir eklidiyen bir eklidiyen bir eklidiyen bir eklidiyen bir eklidiyen bir eklidiyen bir eklidiyen bir eklidiyen bir eklidiyen bir eklidiyen bir eklidiyen bir eklidiyen bir eklidiyen bir eklidiyen bir eklidiyen bir eklidiyen bir eklidiyen bir eklidiyen bir eklidiyen bir eklidiyen bir eklidiyen bir eklidiyen bir eklidiyen bir eklidiyen bir
+
+35
+00:11:43,347 --> 00:12:07,647
+V is not R3 itself, V is a subspace of R3, right? Spanned by this set, this set S, right? Three element containing S. And we know each vector in coordinate, right? All right. Every vector in this subspace V is of the form
+
+36
+00:12:08,436 --> 00:12:11,536
+Let me show you, in this form, right?
+
+37
+00:12:12,456 --> 00:12:17,256
+Every vector in this vector subspace.
+
+38
+00:12:22,163 --> 00:12:42,144
+According to the claim here, is a lineer combination of these three element of S, right? For some real numbers. I don't have the pencil, I forgot at home, so I use my fingers. These are scalars, right?
+
+39
+00:12:45,875 --> 00:12:46,355
+Okay.
+
+40
+00:12:48,735 --> 00:12:57,175
+How do we know that any vector from V is a linear combination of these three vectors? Can anybody respond to my question or not?
+
+41
+00:12:57,836 --> 00:13:02,576
+How do we know that V is indeed a linear combination of V1, V2, V3?
+
+42
+00:13:03,895 --> 00:13:10,655
+Let me see if we have more than all. Nice. We have nine students now. Let me ask.
+
+43
+00:13:11,187 --> 00:13:17,427
+[öğrenci], can you open your microphone and answer my question, please?
+
+44
+00:13:21,139 --> 00:13:22,440
+If you are there, of course.
+
+45
+00:13:29,812 --> 00:13:45,432
+Arkadaşlar, kusura bakmayın ama yani böyle bir online sınıfta, bir buçuk senedir ilk defa sizde gördüm yani. Bu kadar yani ilgisiz, hiç sorulara cevap vermeyen, soru sormayan, çok ilginç gerçekten. Gerçekten çok ilginç yani.
+
+46
+00:13:48,916 --> 00:14:05,776
+All right. Any vector v from v, vector space, capital v, I mean, is indeed a linear combination of the element from s, because we have already said at the beginning, at the very beginning, that v is the subspace spent or generated by s, right?
+
+47
+00:14:06,236 --> 00:14:14,476
+If it is spent, that means any element is a linear combination of element in s, right? So you can write in this form. All right.
+
+48
+00:14:15,764 --> 00:14:29,995
+Ve bu,
+
+49
+00:14:33,011 --> 00:14:38,711
+Otherwise, you cannot see y, s, the set s is a linearly dependent set, right?
+
+50
+00:14:39,291 --> 00:14:46,152
+I mean, you have three element in s, but these three vectors are not linearly independent together, right?
+
+51
+00:14:47,152 --> 00:14:48,591
+Are not linearly independent.
+
+52
+00:14:50,571 --> 00:14:51,051
+Okay?
+
+53
+00:14:51,951 --> 00:14:56,251
+So you have two element, take two element, v1, v2.
+
+54
+00:14:57,076 --> 00:15:01,076
+S1'in bir sede.
+
+55
+00:15:01,076 --> 00:15:03,076
+Sede bir sede.
+
+56
+00:15:03,076 --> 00:15:07,076
+Bu sede.
+
+57
+00:15:07,076 --> 00:15:11,076
+Sede.
+
+58
+00:15:11,076 --> 00:15:13,076
+Bu sede.
+
+59
+00:15:13,076 --> 00:15:17,076
+V1 ve V2'in bir sede.
+
+60
+00:15:17,076 --> 00:15:22,827
+Ve bu sede.
+
+61
+00:15:22,836 --> 00:15:30,536
+You will immediately realize that one of them is never a multiple of the other one. This means they are linearly independent together, right?
+
+62
+00:15:31,436 --> 00:15:37,475
+Three vectors are not linearly independent, but V1, V2 together are linearly independent, right?
+
+63
+00:15:37,855 --> 00:15:43,316
+So these two vectors are enough actually to generate V, okay?
+
+64
+00:15:47,700 --> 00:16:14,420
+S is a spanning set for V, but it's not a basis. Yes, this is the example 8. What's example 8 saying, right? If you understand the difference between spanning set and the basis, I think you will be fine, right? The vector spaces.
+
+65
+00:16:14,964 --> 00:16:23,004
+S is a spanning set, but since its vectors are not linearly independent, it fails to be a basis, right?
+
+66
+00:16:23,504 --> 00:16:29,644
+But if you have a smaller part or portion of S, that's why we call S1, right?
+
+67
+00:16:29,984 --> 00:16:34,304
+S1 is a spanning set and contains only linearly independent vectors.
+
+68
+00:16:34,664 --> 00:16:40,084
+So according to the definition, our definition, S1 becomes a basis for V.
+
+69
+00:16:40,851 --> 00:16:52,432
+So, it doesn't matter if you add a finite number of vectors that are linear combinations of v1, v2 in your set S, right?
+
+70
+00:16:56,275 --> 00:17:12,935
+It will never be a basis. S will never be a basis if you add here, for example, V4, V5, right? It doesn't matter. As soon as they are all linear combinations of V1, V2, actually, you don't add something extra, right?
+
+71
+00:17:16,115 --> 00:17:21,115
+You still spend the same vector spend, but it is not a basis, right? It's not a basis.
+
+72
+00:17:22,259 --> 00:17:27,059
+Basis is a minimum set of spanning, minimum spanning set, right?
+
+73
+00:17:27,340 --> 00:17:28,380
+Roughly speaking, okay.
+
+74
+00:17:29,460 --> 00:17:30,619
+I think it's okay.
+
+75
+00:17:31,440 --> 00:17:33,139
+Now, one more example, example nine.
+
+76
+00:17:33,980 --> 00:17:45,400
+Now, V is the R3, and consider this set, this set, the four vectors, right?
+
+77
+00:17:46,067 --> 00:18:13,527
+We have, this is actually the canonical basis, right, of R3. This part is a canonical basis of R3. E1 is this vector, E2 is this vector, and E3. Let me write axis here, axis E, Y, right? And you have one more vector. Let me put something like this. This is V.
+
+78
+00:18:13,907 --> 00:18:18,547
+Bu, bu, positive ortent, of trispace, right?
+
+79
+00:18:20,087 --> 00:18:24,147
+Okay, we have considered this set S.
+
+80
+00:18:24,467 --> 00:18:28,967
+What else? Maximal independent subset of S, R, you see?
+
+81
+00:18:30,167 --> 00:18:32,788
+Why it says maximal independent subset of S?
+
+82
+00:18:32,867 --> 00:18:35,707
+Because S itself is not linearly independent.
+
+83
+00:18:36,627 --> 00:18:47,788
+It's not linearly independent. Why? You can immediately say that V is one time E1 plus one time E2 plus one time E3, right?
+
+84
+00:18:48,167 --> 00:18:54,967
+It's immediate. V is a linear combination of these three vectors, right?
+
+85
+00:18:54,967 --> 00:19:01,347
+So that means four vectors are linearly dependent, just three of them.
+
+86
+00:19:03,155 --> 00:19:07,775
+might form a maximal independent subset of S, right?
+
+87
+00:19:09,355 --> 00:19:16,755
+For example, if you are curious about the sample, this is a maximal independent subset of S, right?
+
+88
+00:19:16,816 --> 00:19:24,956
+You can call S1. This is another one, S2. This set is another maximal independent subset, let me call S3.
+
+89
+00:19:25,056 --> 00:19:28,556
+And this one is another one, S4, right?
+
+90
+00:19:29,844 --> 00:19:35,564
+So, maximal independent subset, actually we have the definition above, right?
+
+91
+00:19:36,284 --> 00:19:45,963
+We have a corollary if the vector space has dimension n, let me clear my screen, otherwise you will not see clearly.
+
+92
+00:19:48,523 --> 00:19:49,324
+All right.
+
+93
+00:19:49,715 --> 00:19:57,875
+Look at this corollary. It seems important, right? If the vector space has dimension n, then a maximally independent subset of vectors in vektör contains n vektör.
+
+94
+00:19:59,076 --> 00:20:13,795
+This corollary clearly says that in any vector space of dimension n, any basis must necessarily contain n vektörs, right? n vektörs, something like this.
+
+95
+00:20:42,932 --> 00:20:47,432
+Clearly, the statement of theorems and their corollaries, right?
+
+96
+00:20:47,531 --> 00:20:57,311
+If, for example, according to corollary 4.3, if you have a vector space of dimension n, then minimal spanning set for v contains n vector, right?
+
+97
+00:20:59,652 --> 00:21:01,099
+What was the...
+
+98
+00:21:02,099 --> 00:21:04,279
+Preceding corollary, let us read again.
+
+99
+00:21:04,279 --> 00:21:12,059
+If the vector space has dimension n, look at this, both corollaries start with the same sentence, same expression.
+
+100
+00:21:12,399 --> 00:21:15,939
+If your vector space v has dimension n, look at the next corollary.
+
+101
+00:21:16,019 --> 00:21:17,819
+If a vector space has dimension n.
+
+102
+00:21:18,324 --> 00:21:26,903
+This corollary 4.2 says that a maximal independent subset of vectors in V contains N vector.
+
+103
+00:21:26,903 --> 00:21:39,344
+That means if you pick N plus 1 vectors in a vector space of dimension N, then they cannot be linearly independent, right?
+
+104
+00:21:40,423 --> 00:21:44,104
+And the next corollary, corollary 4.3, says that
+
+105
+00:21:44,403 --> 00:22:09,644
+ve v bir n ve
+
+106
+00:22:09,907 --> 00:22:14,907
+Any subset of m-vektörs must be linearly dependent.
+
+107
+00:22:17,067 --> 00:22:22,507
+You can memorize this, something like this, for example.
+
+108
+00:22:23,047 --> 00:22:32,067
+Okay, any two linearly, any pair of linearly independent vectors, you know that generate plane, right?
+
+109
+00:22:34,067 --> 00:22:41,768
+You can have more than one basis, but the common thing between basis is that they all contain the same number, right?
+
+110
+00:22:42,748 --> 00:22:47,307
+Same number of element, which denotes the dimension of your vector space.
+
+111
+00:22:47,307 --> 00:22:57,567
+Now, in R2, you can generate the plane by means of any pair of linearly independent vector sites.
+
+112
+00:22:58,324 --> 00:23:00,324
+Çünkü dimensinim var.
+
+113
+00:23:00,324 --> 00:23:03,324
+Bu ne kadar daha bir vektör var?
+
+114
+00:23:03,324 --> 00:23:07,324
+Bu ne kadar daha daha bir vektör var?
+
+115
+00:23:07,324 --> 00:23:09,324
+Bu ne kadar daha bir vektör var.
+
+116
+00:23:09,324 --> 00:23:17,324
+Bu ne kadar yeni bir vektör var.
+
+117
+00:23:17,324 --> 00:23:21,324
+Bu ne kadar 4.4'a saygı.
+
+118
+00:23:22,003 --> 00:23:29,723
+If the dimension is two, then more than two elements can never form a linearly independent set.
+
+119
+00:23:29,903 --> 00:23:33,303
+They must be necessarily linearly dependent, right?
+
+120
+00:23:33,563 --> 00:23:38,183
+And the reason is quite clear, right?
+
+121
+00:23:38,943 --> 00:23:46,003
+If they were linearly independent, you can generate a vektör space, vektör subspace within...
+
+122
+00:23:46,387 --> 00:23:51,587
+Another one of dimensionless, smaller, something absurd, right?
+
+123
+00:23:52,127 --> 00:23:54,428
+This is something like contradiction, right?
+
+124
+00:23:56,067 --> 00:23:58,168
+Or absurd, let's say absurd.
+
+125
+00:23:59,148 --> 00:24:00,708
+This term is more suitable, okay.
+
+126
+00:24:01,107 --> 00:24:04,288
+One more theorem, corollary 4.5.
+
+127
+00:24:04,288 --> 00:24:09,288
+If vector space V has dimension n, then any subset of...
+
+128
+00:24:10,132 --> 00:24:15,471
+m-vektör, m is this time less than m, cannot span v.
+
+129
+00:24:16,612 --> 00:24:17,071
+All right.
+
+130
+00:24:18,951 --> 00:24:25,311
+This corollary says, let me show you this picture here.
+
+131
+00:24:25,751 --> 00:24:29,791
+Okay, suppose your vector space is R3 of dimension 3, right?
+
+132
+00:24:30,491 --> 00:24:36,932
+This corollary says that you already know that since dimension is 3, any basis of R3, yeah.
+
+133
+00:24:37,248 --> 00:24:41,407
+İntekler, lineer, independent vektör.
+
+134
+00:24:42,028 --> 00:24:47,567
+Ama ne yapabildi, ifade, iki lineer, independent vektör,
+
+135
+00:24:47,567 --> 00:24:50,347
+in this space of dimension 3?
+
+136
+00:24:50,548 --> 00:24:53,988
+This might be a case.
+
+137
+00:24:54,748 --> 00:24:59,688
+You cannot have more than three lineer, independent vektör.
+
+138
+00:25:00,243 --> 00:25:05,884
+R3, but you can have less number of linearly independent vectors in R3, right?
+
+139
+00:25:07,023 --> 00:25:15,223
+In this case, what you can generate with a less number of linearly independent vectors in R3 is a subspace.
+
+140
+00:25:15,364 --> 00:25:27,043
+If you have two vectors, for example, something like this, if you take this, the subspace you will generate is the plane, right?
+
+141
+00:25:30,644 --> 00:25:40,543
+Eğer sadece bir non-zero vektör, bu vektör, eğer non-zero vektör, sadece generisiniz.
+
+142
+00:25:44,115 --> 00:25:49,875
+vektör subspace, right, which is unidimensional, right?
+
+143
+00:25:53,587 --> 00:25:59,467
+You know, any non-zero vector might be considered as a set, linealit, independent set, right?
+
+144
+00:26:00,607 --> 00:26:05,687
+All right. So this is the picture of corollary 4.5.
+
+145
+00:26:06,567 --> 00:26:10,307
+Okay. Let us proceed.
+
+146
+00:26:12,647 --> 00:26:14,107
+Do you have any questions?
+
+147
+00:26:15,947 --> 00:26:20,107
+Please don't hesitate to stop my work if you have some questions.
+
+148
+00:26:21,140 --> 00:26:25,140
+Evet.
+
+149
+00:26:28,140 --> 00:26:31,140
+Let us see this theorem 4.11.
+
+150
+00:26:32,140 --> 00:26:37,140
+If S is a linearly independent set of vectors in a finite dimension vector space V,
+
+151
+00:26:37,140 --> 00:26:41,140
+then there is a basis t for V that contains S.
+
+152
+00:26:41,140 --> 00:26:42,140
+Right?
+
+153
+00:26:44,140 --> 00:26:47,140
+You have to be careful when you read.
+
+154
+00:26:47,476 --> 00:27:04,396
+A theorem, right? Look at this. Your vector space is of finite dimension, right? Finite dimension. You don't know the exact number, integer number, as dimension of V, but it is of finite dimension.
+
+155
+00:27:04,396 --> 00:27:10,076
+Suppose that you have a linearly independent set of vectors. You don't know how many.
+
+156
+00:27:10,675 --> 00:27:20,035
+Linearly independent vector, contained in S, right? It doesn't matter. You have a set S, you have a vector space of finite dimension, right?
+
+157
+00:27:21,155 --> 00:27:33,315
+You can suppose that V is of dimension K, for example, K is a finite number, and suppose that S contains M vectors.
+
+158
+00:27:33,315 --> 00:27:38,075
+According to theorem, M linearly independent set of vectors, right?
+
+159
+00:27:38,644 --> 00:27:47,384
+K-dimension vector space, or we can use the same notation and put n here, right?
+
+160
+00:27:48,744 --> 00:27:53,903
+M-linearly, independent set of vectors in the n-dimensional vector space, right?
+
+161
+00:27:54,484 --> 00:27:57,524
+M is, of course, less than n, right?
+
+162
+00:27:59,584 --> 00:28:00,384
+All right.
+
+163
+00:28:00,804 --> 00:28:03,276
+So, as I said, I don't...
+
+164
+00:28:03,859 --> 00:28:10,039
+I don't want to read the proof and explain the details, but let us read again the theorem.
+
+165
+00:28:10,460 --> 00:28:13,159
+You have a finite dimension, n-dimensional vector space, v.
+
+166
+00:28:13,599 --> 00:28:19,399
+You pick a m-linearly independent set of vectors in v, right?
+
+167
+00:28:20,639 --> 00:28:30,039
+Then what happens? Theorem says that there exists another, there exists a basis t for your vector space, v, that contains s, right?
+
+168
+00:28:30,740 --> 00:28:33,019
+Any vector space has a basis, right?
+
+169
+00:28:34,420 --> 00:28:41,700
+But this basis is a maximal independent subset of V.
+
+170
+00:28:41,700 --> 00:28:46,599
+So, it is evident, right?
+
+171
+00:28:46,700 --> 00:28:55,599
+It is evident that it must contain another linearly independent set of vectors, because the basis is a maximal independent.
+
+172
+00:28:57,364 --> 00:29:00,104
+set, that span your vector space, right?
+
+173
+00:29:01,224 --> 00:29:01,564
+Okay.
+
+174
+00:29:03,903 --> 00:29:05,124
+Now, suppose,
+
+175
+00:29:06,144 --> 00:29:06,964
+example 10.
+
+176
+00:29:07,984 --> 00:29:09,544
+You are in R4,
+
+177
+00:29:11,264 --> 00:29:11,964
+right?
+
+178
+00:29:12,644 --> 00:29:16,244
+And we are given, I think I will ignore this example.
+
+179
+00:29:17,183 --> 00:29:17,784
+Let me see.
+
+180
+00:29:19,284 --> 00:29:21,364
+QRM4.12.
+
+181
+00:29:44,660 --> 00:30:09,000
+Exam question, right? So, theorem, this theorem says that in any n-dimensional vector space, if you have a set of linearly independent vectors, then s is a basis, but just look at carefully the number of linearly independent vectors of s. The vector space is of dimension n, and you have n vectors, right?
+
+182
+00:30:09,779 --> 00:30:11,859
+All linearly independent.
+
+183
+00:30:12,440 --> 00:30:12,700
+Right?
+
+184
+00:30:17,203 --> 00:30:32,783
+S is a basis. It seems there is something missing here, right? Because when a set is a basis for a vector space, you have to verify the condition, the criteria, right?
+
+185
+00:30:32,843 --> 00:30:41,863
+One of them is that the vectors in your set must be linearly independent, and the second criterion is that they span your vector space.
+
+186
+00:30:41,863 --> 00:30:44,619
+But look at this, the difference here is that...
+
+187
+00:30:44,660 --> 00:30:48,820
+You are given the dimension of your vector space.
+
+188
+00:30:50,180 --> 00:30:58,820
+You start with this information, and any set of lineer independent set becomes automatically a basis.
+
+189
+00:30:59,140 --> 00:31:03,680
+You don't need to verify that it is a spanning set. It spans your vector space.
+
+190
+00:31:04,180 --> 00:31:06,200
+Why? Because you are given the dimension.
+
+191
+00:31:07,580 --> 00:31:07,759
+Right?
+
+192
+00:31:09,240 --> 00:31:11,340
+You are given the dimension, finite dimension.
+
+193
+00:31:12,307 --> 00:31:25,107
+As soon as you know the dimension, it's enough to take the same number of linearly independent vectors in your space to form a basis, right?
+
+194
+00:31:26,067 --> 00:31:31,248
+The second condition, B, of theorem, also says something interesting. Look at this.
+
+195
+00:31:31,248 --> 00:31:34,248
+If a set...
+
+196
+00:31:34,900 --> 00:31:47,000
+n vektör, I don't say linearly dependent, or independent, right? S is just a set that contains n vektörs, in an n-dimension vektör.
+
+197
+00:31:47,000 --> 00:31:51,599
+In this case, S is also aromonic, the basis for your vektör space v.
+
+198
+00:31:52,531 --> 00:31:56,231
+You don't need to verify that they are linearly independent.
+
+199
+00:31:56,851 --> 00:32:00,971
+I know according to the definition, they have to be linearly independent.
+
+200
+00:32:00,971 --> 00:32:17,391
+But again, since you start with the information, I mean, since you know the dimension, in this case, it's enough for you to have an n vector that spans your vector space, right?
+
+201
+00:32:17,511 --> 00:32:18,831
+You don't need to verify.
+
+202
+00:32:19,316 --> 00:32:27,156
+That they are linearly independent. Proof actually shows that they are indeed, they are in fact linearly independent, right?
+
+203
+00:32:28,615 --> 00:32:46,896
+So, what you have to understand from this theorem is the following. As soon as you know the dimension, and if you are interested in, if you are searching a basis, it's enough for you to take either and end.
+
+204
+00:32:47,200 --> 00:32:52,040
+vektörs that span your space, or n-lineerli independent set.
+
+205
+00:32:53,680 --> 00:32:53,960
+Right?
+
+206
+00:32:56,440 --> 00:32:57,620
+This is what
+
+207
+00:32:57,620 --> 00:33:01,500
+Theorem 4.12 says to us, right?
+
+208
+00:33:03,680 --> 00:33:04,540
+All right.
+
+209
+00:33:04,860 --> 00:33:08,160
+We have many exercises here, nice exercises.
+
+210
+00:33:11,140 --> 00:33:13,940
+I strongly recommend you to take a look at.
+
+211
+00:33:14,483 --> 00:33:19,915
+vekiketli bir kere
+
+212
+00:33:26,548 --> 00:33:29,327
+Bu, bu exercise.
+
+213
+00:33:54,036 --> 00:34:15,052
+Bu, bu
+
+214
+00:34:15,347 --> 00:34:19,988
+Bu, a subspace of R3.
+
+215
+00:34:20,368 --> 00:34:23,007
+So, we are asked to find a basis.
+
+216
+00:34:23,507 --> 00:34:26,368
+If you find a basis, you will know the dimension of this subspace.
+
+217
+00:34:27,668 --> 00:34:27,927
+Right?
+
+218
+00:34:28,587 --> 00:34:30,007
+How do you know a basis?
+
+219
+00:34:31,228 --> 00:34:31,868
+Basis.
+
+220
+00:34:33,868 --> 00:34:34,728
+Such that.
+
+221
+00:34:45,012 --> 00:34:46,192
+Do you have any answer?
+
+222
+00:34:47,532 --> 00:34:50,092
+Okay, take an element, typical element.
+
+223
+00:34:50,912 --> 00:34:55,092
+What that means, A, A, C, right?
+
+224
+00:34:56,152 --> 00:34:58,472
+Where A and C are real numbers.
+
+225
+00:34:59,552 --> 00:35:06,832
+Since B and A are coincident, you can reduce to one, the number of coordinates, right?
+
+226
+00:35:07,752 --> 00:35:10,192
+I mean, you can reduce to...
+
+227
+00:35:10,452 --> 00:35:17,811
+From 3 to 2, right? The number of coordinate here. You don't have 3 independent coordinate here, right?
+
+228
+00:35:20,572 --> 00:35:37,452
+Since A is equal to B, any vector V from this W is something like this. And this vector is, can written clearly in this form. Look at this, 1, 1, 0.
+
+229
+00:35:38,260 --> 00:35:41,120
+C x 001, right?
+
+230
+00:35:45,268 --> 00:35:46,528
+Bu çok güzel.
+
+231
+00:35:51,380 --> 00:36:15,659
+So that means, these two vectors, look at this, let me call v1, v2, are generators, right? These two are linearly independent. And you can generate w by means of this pair of vectors, right? What I have done here is exactly this.
+
+232
+00:36:16,980 --> 00:36:35,320
+If you take a set S, that contains V1, V2, this set is linearly independent, clearly because V1 is never a multiple of V2, right?
+
+233
+00:36:36,600 --> 00:36:42,320
+So it's clear that they are linearly independent, and we have already showed that.
+
+234
+00:36:42,576 --> 00:36:49,796
+Bu sepans W, because any vector is written as a linear combination of vectors in S.
+
+235
+00:36:49,796 --> 00:36:58,036
+S is a basis for W, let me call script B.
+
+236
+00:36:58,476 --> 00:37:04,296
+This is a basis. Since it contains two elements, two generators, the dimension of W is 2.
+
+237
+00:37:06,356 --> 00:37:10,356
+Bu, çünkü iki parâmetre kullanan iki parâmetre.
+
+238
+00:37:10,356 --> 00:37:16,356
+Bu parâmetre, ilerken, denemiyizde, denemiyizde, denemiyizde, denemiyizde, geneliyizde,
+
+239
+00:37:35,731 --> 00:37:50,072
+Homogeneous systems, I will skip this part and let me see. I think this week we have to start transition maps, transition matrices, excuse me.
+
+240
+00:37:51,832 --> 00:38:01,912
+Let me find coordinates and isomorphism, let's skip this part. There is nothing in course of schedule about isomorphism, back to space isomorphisms.
+
+241
+00:38:02,452 --> 00:38:28,592
+Bu, bu
+
+242
+00:38:28,592 --> 00:38:45,472
+Not clear for you. I can clarify. You can repeat if you prefer. Sorusu olan var mı arkadaşlar? Bakın, sormak istediğiniz bir şey varsa sorun. Artık vaktimiz de yok artık bazı şeyleri tekrarlamaya.
+
+243
+00:38:46,231 --> 00:38:55,932
+Geçiş matrislerine başlayacağım şimdi. Bunlar hep önemli konular. Final sınavımızda çıkacak bunlar. Hep ağırlıklı olarak çıkacak. Vektör uzayları, baz, taban, boyut, geçiş matrisi.
+
+244
+00:38:56,628 --> 00:39:18,508
+Yani bunlar, bunlar, final sınavınız, bunlar üzerine kurulu yani. Var mı sormak istediğiniz bir şey? 14 kişi var, hiç kimseden bir şey çıkmıyor ya, bir ses çıkmıyor, ne kadar ilginç bir şey. Yani, İngilizce sormaya mı çekiniyorsunuz, anlamadım ki. Yani benim de İngilizcem mükemmel değil ki, yani benim kadar basit İngilizce konuşan birini bulamazsınız yani.
+
+245
+00:39:21,172 --> 00:39:36,311
+Oxford mezunu değiliz. Yani sorabilirsiniz. Kimse kimseyi İngilizcesinden ötürü burada eleştirmez. Ki benim yabancı dilim de İngilizce değildir ayrıca. Ben Latin dillerini iyi biliyorum aslında. Portekizce, İspanyolca, İtalyanca. Neyse, var mı sorusu olan?
+
+246
+00:39:40,596 --> 00:39:46,976
+Yok, sorusu olan yok. Peki, şu an 11.35. Bir 15 dakika daha ders yapıp ara verelim.
+
+247
+00:39:48,916 --> 00:39:54,435
+Alright, let us see. Another important notion, which is called the transition matrices.
+
+248
+00:39:55,516 --> 00:40:03,996
+Right? Now we look at the relationship between two coordinate vectors for the same vector v.
+
+249
+00:40:04,436 --> 00:40:06,456
+ve respect to a different basis.
+
+250
+00:40:06,636 --> 00:40:08,596
+Now, what's the meaning of this sentence?
+
+251
+00:40:10,096 --> 00:40:17,296
+As I said, in a vector space, in any vector space, you can have more than one basis, right?
+
+252
+00:40:17,356 --> 00:40:18,376
+This is a fact.
+
+253
+00:40:20,244 --> 00:40:44,244
+I have never said that there exists a unique basis for a vector space. You can, you might have more than one basis, right? Different basis may generate the same vector space. This is perfectly possible, right? So suppose you have two different basis, S and T. You can have different basis for the same vector space, but...
+
+254
+00:40:44,500 --> 00:40:48,000
+Bases have the same common property, right?
+
+255
+00:40:48,599 --> 00:40:56,880
+And that property says that any two different bases must contain the same number of element, right?
+
+256
+00:40:58,239 --> 00:41:03,000
+Otherwise, it doesn't make sense, the definition of dimension,
+
+257
+00:41:03,119 --> 00:41:05,739
+because dimension is the number of generators in a base.
+
+258
+00:41:05,739 --> 00:41:10,739
+If two bases contains a different number of element, so...
+
+259
+00:41:11,315 --> 00:41:15,315
+Bu konuda bir bakım var.
+
+260
+00:41:15,315 --> 00:41:19,315
+Mesela farklı bakım var,
+
+261
+00:41:19,315 --> 00:41:22,315
+aynı kısım var.
+
+262
+00:41:22,315 --> 00:41:24,315
+Aynı kısım var.
+
+263
+00:41:24,315 --> 00:41:27,315
+Çünkü bu bakım var.
+
+264
+00:41:27,315 --> 00:41:31,315
+S ve 2 bakım var.
+
+265
+00:41:31,315 --> 00:41:33,315
+Bu bakım var.
+
+266
+00:41:33,315 --> 00:41:36,315
+Bu kadar, ikinizde bir bakım var.
+
+267
+00:41:37,940 --> 00:41:58,284
+Biz de bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, baz
+
+268
+00:41:58,324 --> 00:42:18,724
+We will emphasize this, right? We will work with ordered bases, right? Ordered bases means the vectors of your bases are given in a certain order, right? Certain order. You have to obey, you have to respect the order in your bases, right?
+
+269
+00:42:25,588 --> 00:42:35,008
+So, that means, this vector is a linear combination of the generators in your basis, right?
+
+270
+00:42:36,028 --> 00:42:43,628
+If you take S, if you fix S, you can write V as a linear combination of generators of S.
+
+271
+00:42:43,728 --> 00:42:51,568
+If you fix T as your basis, then you can write this V, vector V, as a linear combination of the generators in T.
+
+272
+00:42:52,980 --> 00:43:06,579
+So once you fix a basis, every vector from your vector space has a unique analytical representation, right? Analytical representation. Look at this.
+
+273
+00:43:08,039 --> 00:43:17,940
+Suppose you are interested in expressing this v in terms of the basis t, this expression, right?
+
+274
+00:43:18,547 --> 00:43:43,947
+Bu c1, c2, bu cilasın bir vektörünün bir vektörünün bir vektörünün bir vektörünün bir vektörünün bir vektörünün bir vektörünün bir vektörünün bir vektörünün bir vektörünün bir vektörünün bir vektörünün bir vektörünün bir vektörünün bir vektörünün bir vektörünün bir vektörünün bir vektörünün bir vektörünün bir vektörünün bir vektörünün bir vektörünün bir vektörünün bir vektörünün bir vektörünün bir vektörünün bir vektörünün bir vektörünün bir vektörünün bir vektörünün bir vektörünün bir vektörünün bir vektörünün bir vektörünün bir vektörünün bir
+
+275
+00:43:44,532 --> 00:43:46,492
+Koordinatörlük, bu konuları değiştirebilirsiniz.
+
+276
+00:43:48,992 --> 00:43:55,032
+Somehow, you adjust, you adjust your vector to the given basis, right?
+
+277
+00:43:55,231 --> 00:43:56,392
+So, this is the notation.
+
+278
+00:43:56,912 --> 00:44:05,711
+This is the representation, or analytical representation, of your vector in basis t, right?
+
+279
+00:44:05,711 --> 00:44:11,811
+Please, don't subestimate this notation, right?
+
+280
+00:44:12,244 --> 00:44:17,144
+v, in terms of t, or with respect to t.
+
+281
+00:44:18,144 --> 00:44:28,364
+When you see this interpretation, you have to understand that these numbers, these coordinates, are the scholars in this linear combination, right?
+
+282
+00:44:29,904 --> 00:44:38,044
+So, this is the representation of your vector with respect to t, but if you change the basis,
+
+283
+00:44:38,483 --> 00:44:48,724
+As I said, this linear combination will change, right? I mean, the fact that V is a linear combination will not change, but what will change are the coefficients in the combination, right?
+
+284
+00:44:49,204 --> 00:44:57,463
+When you change the base, when you pass from a base to another one, the coefficient in your linear combination will change, right?
+
+285
+00:45:07,476 --> 00:45:14,076
+You have to determine, right? You have to determine, look at this.
+
+286
+00:45:15,336 --> 00:45:32,296
+That means you will have to put a scala here, right? Times, excuse me, generators of S are V1, V2, Vn, right? V1, some scala, V2, and so on, right?
+
+287
+00:45:44,275 --> 00:45:44,735
+Ok.
+
+288
+00:45:50,675 --> 00:45:51,675
+Bakın.
+
+289
+00:46:09,748 --> 00:46:18,848
+So, the transition matrix from the base t to the basis s is an n by n matrix, right?
+
+290
+00:46:21,628 --> 00:46:35,428
+Here is a notation of your book, but we also use this notation, right? Some people use this notation, or this one.
+
+291
+00:46:38,068 --> 00:46:54,636
+Bu, bu
+
+292
+00:47:02,195 --> 00:47:07,036
+Ve bu metriksiyonu, bu metriksiyonu,
+
+293
+00:47:07,556 --> 00:47:09,195
+bu metriksiyonu,
+
+294
+00:47:09,195 --> 00:47:12,195
+ve bu metriksiyonu,
+
+295
+00:47:12,195 --> 00:47:29,132
+bu metriksiyonu,
+
+296
+00:47:36,052 --> 00:47:39,172
+Did you understand the definition of these metrics or not?
+
+297
+00:47:42,643 --> 00:47:43,343
+Look at this.
+
+298
+00:47:49,556 --> 00:47:51,476
+Let me call t
+
+299
+00:47:57,396 --> 00:47:59,836
+So, this vector
+
+300
+00:47:59,836 --> 00:48:03,696
+has a representation
+
+301
+00:48:03,696 --> 00:48:05,096
+with respect to t.
+
+302
+00:48:05,836 --> 00:48:06,016
+Right?
+
+303
+00:48:06,876 --> 00:48:08,196
+Any vector,
+
+304
+00:48:09,376 --> 00:48:12,296
+since you are going from t to s,
+
+305
+00:48:12,996 --> 00:48:14,076
+you have to write
+
+306
+00:48:14,076 --> 00:48:16,576
+each generator of your
+
+307
+00:48:16,576 --> 00:48:19,156
+basis t, in terms of
+
+308
+00:48:19,156 --> 00:48:20,756
+the other basis s.
+
+309
+00:48:21,456 --> 00:48:21,736
+Right?
+
+310
+00:48:22,416 --> 00:48:24,176
+And you have to do it
+
+311
+00:48:24,724 --> 00:48:32,664
+for every generator to form this n by n matrix, right? This is the definition.
+
+312
+00:48:43,027 --> 00:48:54,507
+And using this transition matrix, you can relate, must be, might be. Let me write might be, right?
+
+313
+00:49:00,244 --> 00:49:15,603
+might be related to the same vector, but in another basis through this transition matrix. Look at this. Look at this formula.
+
+314
+00:49:16,371 --> 00:49:24,192
+Vektör v, written in terms of s, vektör v, the same vector v, written in terms of t. These are different, right?
+
+315
+00:49:24,671 --> 00:49:33,891
+But transition matrix relates them, right? Identify somehow, right? Connect if you prefer. In what sense? Look at this.
+
+316
+00:49:40,467 --> 00:49:43,067
+Let me see the notation of the book again.
+
+317
+00:49:44,887 --> 00:49:45,467
+Yes.
+
+318
+00:49:53,364 --> 00:49:55,864
+You have to put T here, S here.
+
+319
+00:50:00,000 --> 00:50:07,320
+Bu şekilde, aynı vektör, aynı vektör, aynı vektör, aynı vektör.
+
+320
+00:50:08,159 --> 00:50:12,000
+Aynı vektör konuları yaptırmaktörü, aynı vektör konuları yaptırmaktör.
+
+321
+00:50:14,240 --> 00:50:19,119
+I think it will be more clear if we work with an example now.
+
+322
+00:50:19,315 --> 00:50:21,036
+Bu bir example, bir example.
+
+323
+00:50:45,523 --> 00:50:51,083
+Compute transition matrix from the basis t to the basis s.
+
+324
+00:50:52,083 --> 00:50:58,303
+So according to our notation, we are asked to determine these matrix.
+
+325
+00:50:59,303 --> 00:51:00,723
+Look at the direction.
+
+326
+00:51:01,283 --> 00:51:04,803
+We are going from t to s.
+
+327
+00:51:08,148 --> 00:51:25,108
+According to definition of transition matrix, this means you have to write a matrix n by n, here is 3 by 3, such that its columns are generators of t written in terms of s.
+
+328
+00:51:27,284 --> 00:51:40,903
+Generators of t, take each generator of the basis t, I mean w1, w2, and w3, and try to write each one of them in terms of s, right?
+
+329
+00:51:40,903 --> 00:51:51,043
+It represents each generator of t with respect to s, which means as a linear combination of v1, v2, v3, right?
+
+330
+00:51:54,579 --> 00:51:57,819
+The columns of your transition matrix in this way, right?
+
+331
+00:51:59,400 --> 00:52:00,500
+Look at this.
+
+332
+00:52:01,639 --> 00:52:04,860
+To compute these matrix, right?
+
+333
+00:52:05,579 --> 00:52:09,559
+In my notation, this one.
+
+334
+00:52:10,840 --> 00:52:15,539
+Okay, we need to find A1, A2, A3 such that,
+
+335
+00:52:17,420 --> 00:52:18,619
+because look at this.
+
+336
+00:52:19,679 --> 00:52:20,639
+Let me write again.
+
+337
+00:52:21,000 --> 00:52:21,639
+Once again.
+
+338
+00:52:22,483 --> 00:52:26,483
+Bu 3x3 matrixın 3 bölümünde,
+
+339
+00:52:26,483 --> 00:52:44,483
+ilk bölümünde,
+
+340
+00:53:11,476 --> 00:53:17,296
+So, any vector in your vector space is a linear combination of the generators in any basis.
+
+341
+00:53:17,676 --> 00:53:28,196
+In particular, if you take two bases, any generators of one of these two bases is a linear combination of the generators of the other bases, right?
+
+342
+00:53:29,016 --> 00:53:33,676
+So, write W1 as a linear combination of S.
+
+343
+00:53:36,115 --> 00:53:38,736
+Take the coefficient in the linear combination hand.
+
+344
+00:53:39,059 --> 00:53:46,940
+Bu, bu, A1, A2, A3'e bu.
+
+345
+00:53:46,940 --> 00:53:54,659
+Bu, A1, A2, A3'e bu.
+
+346
+00:53:54,659 --> 00:53:59,659
+Bu, A2 ve A3'e bu.
+
+347
+00:53:59,659 --> 00:54:04,659
+Bu, A1'e bu, A3'e bu.
+
+348
+00:54:05,523 --> 00:54:08,364
+I don't want to do, but let me see what is written here.
+
+349
+00:54:08,844 --> 00:54:16,583
+This linear combination, this linear combination right here, leads to a linear system of three equations and three unknown.
+
+350
+00:54:16,583 --> 00:54:23,864
+All right. This is the task of determining the coefficient a1, a2, a3, right?
+
+351
+00:54:24,103 --> 00:54:28,744
+It is, of course, related with the solution of a certain linear system, right?
+
+352
+00:54:29,683 --> 00:54:32,123
+As we have several times seen before.
+
+353
+00:54:34,835 --> 00:54:44,556
+So, according to this table, A1 is 2, A2 is 0, and A3 is 1.
+
+354
+00:54:45,435 --> 00:54:51,635
+That means W1, when you write in terms of S,
+
+355
+00:54:53,315 --> 00:54:59,135
+that is, when you write W1 as a linear combination of the generators of S,
+
+356
+00:55:00,135 --> 00:55:01,175
+you will write
+
+357
+00:55:02,003 --> 00:55:14,003
+2 times V1, 0 times V2, R21 times V3, right? That's why we write 2, 0, 1.
+
+358
+00:55:15,903 --> 00:55:25,703
+Please don't confuse W1 in terms of S with W1 itself, right? These are different.
+
+359
+00:55:26,739 --> 00:55:41,739
+Vektör ve
+
+360
+00:55:50,099 --> 00:56:06,399
+That says exactly to us this one. W2 in terms of S is V1 plus 2 times V2. Let us see if it is okay. Look at this.
+
+361
+00:56:44,884 --> 00:56:46,363
+Rehir here, right?
+
+362
+00:56:48,103 --> 00:56:48,884
+Let me see.
+
+363
+00:56:51,823 --> 00:56:53,763
+No, no, excuse me, excuse me.
+
+364
+00:56:55,783 --> 00:56:57,644
+We don't have to use...
+
+365
+00:57:30,291 --> 00:57:35,692
+This is v2 in terms of s, right?
+
+366
+00:57:38,411 --> 00:57:43,652
+This is v1 in s.
+
+367
+00:57:44,871 --> 00:57:50,911
+And the third column is w3 written in s.
+
+368
+00:57:51,911 --> 00:57:52,052
+Okay?
+
+369
+00:57:54,951 --> 00:57:56,992
+This is the transition matrix.
+
+370
+00:58:04,148 --> 00:58:30,827
+The rest of the question, let me read. Verify equation 3 for these vectors, right? For these vectors. I mean, express this v in both s and t, and then relate, relate these two expression analytical representation through a transition matrix, right? This is the question. Equation 3, let me show you.
+
+371
+00:58:31,380 --> 00:58:35,380
+İçerdeğiniz üçüncü, bu bir şey. İçerdeğiniz üçüncü, bu bir şey.
+
+372
+00:58:36,380 --> 00:58:39,380
+Vektör v, ama farklı bir şey.
+
+373
+00:58:40,380 --> 00:58:43,380
+İçerdeğiniz üçüncü, bu bir şey.
+
+374
+00:58:49,940 --> 00:58:51,940
+Ama bu, burada dikkatli olmalı.
+
+375
+00:58:51,940 --> 00:58:53,940
+Çünkü,
+
+376
+00:58:53,940 --> 00:59:01,940
+vt ve vs ve vt ve vs ve
+
+377
+00:59:01,940 --> 00:59:02,539
+...
+
+378
+00:59:06,132 --> 00:59:07,312
+Let me write here.
+
+379
+00:59:09,052 --> 00:59:09,892
+Look at this.
+
+380
+00:59:14,612 --> 00:59:26,351
+If you take V written in S, and V written in T, you have to use the correct transition matrix, right, from T to S.
+
+381
+00:59:27,032 --> 00:59:39,891
+If you are interested in producing something like this, you have to write from S to T, right?
+
+382
+00:59:43,092 --> 00:59:46,891
+You will see soon that these are not the same, right?
+
+383
+00:59:48,672 --> 00:59:54,291
+These two matrices are not the same. One is the inverse of the other, actually.
+
+384
+00:59:55,291 --> 00:59:57,471
+Transition matrix is a non-single matrix.
+
+385
+00:59:59,531 --> 01:00:04,652
+Look at this. You will see the relation between them, right? These are not the same.
+
+386
+01:00:06,031 --> 01:00:06,891
+Not the same.
+
+387
+01:00:12,244 --> 01:00:12,903
+All right.
+
+388
+01:00:16,820 --> 01:00:23,199
+So, the vector we are given is 4, minus 9, and 5, right?
+
+389
+01:00:24,139 --> 01:00:24,539
+Okay.
+
+390
+01:00:25,980 --> 01:00:27,692
+And this is the...
+
+391
+01:00:30,867 --> 01:00:38,708
+This is our transition matrix, right? Let me write with my notation from t to s, right?
+
+392
+01:00:41,827 --> 01:00:44,527
+Okay, so this is the vector.
+
+393
+01:00:51,539 --> 01:01:02,500
+Looking at the transition matrix, you can write these two expressions, right? Immediately. Okay?
+
+394
+01:01:05,240 --> 01:01:06,360
+Look at this.
+
+395
+01:01:15,860 --> 01:01:23,619
+Let us try to see again the generators of t.
+
+396
+01:01:24,559 --> 01:01:24,720
+Okay?
+
+397
+01:01:25,480 --> 01:01:27,539
+Look at the generators of t.
+
+398
+01:01:28,099 --> 01:01:30,900
+I mean w1, w2, and w3, right?
+
+399
+01:01:32,900 --> 01:01:33,619
+Okay.
+
+400
+01:01:37,204 --> 01:01:43,804
+Bu, bu.
+
+401
+01:01:53,715 --> 01:02:02,195
+And these coefficients, in this linear combination, gives you, look at this.
+
+402
+01:02:06,164 --> 01:02:14,484
+Analytical representation of V in T, because you have ended up writing V as a combination of the generators in the basis T, right?
+
+403
+01:02:15,024 --> 01:02:19,084
+So this is the analytical representation of V in T, in the basis T.
+
+404
+01:02:22,708 --> 01:02:38,168
+So, according to our formula, if you multiply, look at this, let me delete, you have a vector, right? 1, 2, minus 3.
+
+405
+01:02:38,947 --> 01:02:49,668
+You need a vector, excuse me, matrix 3 by 3, to obtain this, according to formula. Since we already have these matrix,
+
+406
+01:02:52,436 --> 01:02:55,476
+ve v in t
+
+407
+01:02:55,476 --> 01:02:58,476
+ve v in s
+
+408
+01:02:58,476 --> 01:03:00,476
+ve s
+
+409
+01:03:05,268 --> 01:03:08,204
+Bu, bu
+
+410
+01:03:15,411 --> 01:03:16,191
+Any questions?
+
+411
+01:03:22,164 --> 01:03:30,524
+Ok, if you don't have any question, I will stop here and continue 10 minutes later, ok? See you 10 minutes later.
+
+412
+01:15:29,747 --> 01:15:33,727
+All right, let me share the screen again.
+
+413
+01:15:43,347 --> 01:15:45,608
+Alright. How many still we are?
+
+414
+01:15:46,887 --> 01:15:47,347
+Alright.
+
+415
+01:15:48,028 --> 01:15:49,228
+Sorusu olan var mı arkadaşlar?
+
+416
+01:15:51,628 --> 01:15:57,648
+Bıkmadan, usanmadan sorduk dönemin başından beri. Sorusu olan var mı? Toplasanız on tane soru gelmedi sizden yani.
+
+417
+01:15:58,628 --> 01:15:59,628
+Evet, çok ilginç.
+
+418
+01:16:06,707 --> 01:16:33,607
+Evet, devam edelim. Umarım geçiş matrisini, olayını anlamışsınızdır arkadaşlar. Anlamadıysanız bunu son bir kez, isterseniz bu defa Türkçe anlatayım. Yani bunun anlaşılması önemli çünkü. Yoksa soruları yapar mısınız, yapamaz mısınız, emin değilim. Söylediği şuydu arkadaşlar, bakın kabacık size tek bir defa Türkçe için anlatıyorum.
+
+419
+01:16:33,939 --> 01:16:59,159
+Bir defaya mahsus olunuz diyor. Elinizde bir tane vektör uzayı var. N boyut. Buradan iki tane baz alıyorsunuz. Tamam mı? Şimdi boyutu N ise, hangi bazını alırsan al, aynı sayıda, boyut sayısı kadar eleman olmak zorunda mı? Olmak zorunda. V1, VN. Başka bir baz aldım. Birden fazla bazı olabilir mi? Olabilir. Bunu da söyledik. Tamam mı?
+
+420
+01:16:59,956 --> 01:17:26,796
+Peki, buradan bir tane V alalım. Herhangi bir vektör alalım. Şimdi S bir baz ise, bu V vektörünü S bazına göre yazabilir miyim? Yazabilir miyim? Ne demek o? Şöyle, A1, V1, AN, VN diye yazarsınız değil mi? Buradaki kat sayılar işte S bazına göre, ya S'in bileşenleri cinsinden yazdığım için, S'e göre veya S cinsinden gösterimi şudur.
+
+421
+01:17:28,500 --> 01:17:42,500
+Tamam mı? Bakın bunu V ile karıştırma. V vektörünün ta kendisi değil, V'nin S bazına göre gösterimi veya S bazı cinsinden koordinat vektörü.
+
+422
+01:17:44,500 --> 01:17:53,500
+İsterseniz bunu T'ye göre de yapabilirdiniz. Değil mi? Pekala. T'ye göre de yapabilirsin bunu. Ne demek o? Yani V'yi, T'nin...
+
+423
+01:17:54,068 --> 01:18:20,388
+elemanlarının lineer, kombinazonu cinsinden de yazmak isteyebilir misin? İsteyebilirsin. Tabii o da baz çünkü. O zaman da bakın bu vektör aynı ama baz değişik. Ne diyeceksin? B1, BN. Yani aynı vektör ama iki farklı baza göre gösterimleri var. Bunları birbirlerine bağlayan, aradaki ilişkiyi, bağlantıyı kuran da geçiş matrisi.
+
+424
+01:18:20,800 --> 01:18:22,920
+Ama kimden kime geçtiğiniz önemli.
+
+425
+01:18:24,000 --> 01:18:25,620
+Kimden kime geçtiğiniz önemli.
+
+426
+01:18:25,620 --> 01:18:32,420
+Yani eğer size şu verildiyse, pardon bu yazılış, bu notasyon doğru olmadı.
+
+427
+01:18:33,220 --> 01:18:33,979
+Düzeltelim onu.
+
+428
+01:18:35,800 --> 01:18:44,640
+Eğer size şu verildiyse, V'nin S'e göre gösterimini merak ediyorsanız o zaman şuraya yazacağınız matris.
+
+429
+01:18:47,155 --> 01:19:13,555
+Şuraya yazacağınız matris şudur arkadaşlar, bakın S'den T'ye. Bu önemli. Eğer, şöyle yazalım, size V'nin S'e göre gösterimi verildi ama T'ye göre gösterimini istiyorsa, şuraya yazacağınız matris, bak S'den T'ye gelir, tamam mı? Bunları, yönünü dur yazmazsanız hata yaparsınız. Peki bu matrisler nedir?
+
+430
+01:19:14,036 --> 01:19:40,236
+Yani bu matrisler nedir? Onu da söyleyelim bakın son kez burada. Bu matrisler nedir? Eğer şu yönde şu matrisi yazmak istiyorsanız, bakın nereden nereye olduğunu göstermek için ben böyle nokta nokta nokta, bir de şuraya bir ok şart yazıyorum. Kimden kime gittiğiniz belli olsun diye. Yoksa bu yazılmaz. T'yi aşağıya yazdığınız anda başlangıç bazınız T anlaşılır buradan, tamam mı? Bu en çarpı enlik bir matris.
+
+431
+01:19:41,395 --> 01:19:52,435
+Şimdi bunun en tane kolonu var. Peki bu kolonlar kim? T'den S'e geçtiğiniz için T'nin her bir elemanını S cinsinden yazarsanız işte onlar kolonlardır.
+
+432
+01:19:53,235 --> 01:20:08,095
+T'nin elemanları kimler? W1, W2, WN. Ama bu kolonlar W1, W2, WN değil. Bunların S'e göre yazılımları. Tamam mı? Bakın, ikinci kolonu bu, eninci kolonu da bu.
+
+433
+01:20:08,724 --> 01:20:34,424
+Bunlar ne? Yukarıda söyledim yani. Herhangi bir tane elemanını al, t'nin. Onun s cinsinden yazılması neyse, i'ninci kolonudur bu değil mi? Şurada i'ninci kolon bakın. i'ninci kolon i. Kolon i. Değil mi? O da nedir? A1i, V1. Değil mi? Böyle gider.
+
+434
+01:20:35,380 --> 01:20:39,560
+A-N-İ-V-N. Değil mi? Bunu kastediyor.
+
+435
+01:20:43,731 --> 01:20:46,412
+Evet, şimdi bu konuda.
+
+436
+01:20:46,412 --> 01:20:48,412
+Bu konuda, bu konuda daha fazla konuda,
+
+437
+01:20:48,412 --> 01:20:52,332
+bu konuda, biraz daha fazla konuda,
+
+438
+01:20:52,332 --> 01:20:54,811
+bu konuda, bu konuda,
+
+439
+01:20:54,811 --> 01:21:02,652
+bu konuda,
+
+440
+01:21:02,652 --> 01:21:05,091
+konuda,
+
+441
+01:21:06,211 --> 01:21:07,211
+tamam,
+
+442
+01:21:07,811 --> 01:21:09,211
+bu konuda,
+
+443
+01:21:09,716 --> 01:21:36,636
+Take a look at example 5. S and t are two ordered basis for R3, repletion space, or three dimension, right? Compute the transition matrix from t to s, right? Look at this. You are asked to find, excuse me. You see, it's very easy to confuse. The notation, you have to
+
+444
+01:21:37,460 --> 01:21:45,800
+You have to be careful to see the direction of the arrows, right? Arrows, look at it, from s to t, s to t.
+
+445
+01:21:45,800 --> 01:22:04,460
+So, what I have written here is wrong. I had to write, let me write clearly, s, t, or you have to write this notation, okay?
+
+446
+01:22:13,235 --> 01:22:27,175
+Okay, we are asked to find the transition metric from the basis s to the basis t and show that the other transition metrics is the inverse of the first one, right?
+
+447
+01:22:27,536 --> 01:22:30,956
+I mean, this is exactly what I have said before, right?
+
+448
+01:22:31,956 --> 01:22:32,695
+Look at this.
+
+449
+01:22:35,755 --> 01:22:39,235
+We are asked.
+
+450
+01:22:39,636 --> 01:22:46,536
+to find this, find this, find, and show that.
+
+451
+01:22:50,612 --> 01:22:51,432
+Look at this.
+
+452
+01:22:52,252 --> 01:22:58,371
+The inverse is the transition matrix from T to S.
+
+453
+01:22:58,371 --> 01:22:59,072
+Right?
+
+454
+01:23:04,979 --> 01:23:05,479
+Alright.
+
+455
+01:23:11,539 --> 01:23:19,439
+S and T are the basis or the basis already defined considered in example four. Let me see example four.
+
+456
+01:23:20,899 --> 01:23:30,959
+Yes, we are going to use again, once again, the same basis, right? These are the basis given, right?
+
+457
+01:23:30,959 --> 01:23:33,959
+So, we...
+
+458
+01:23:37,619 --> 01:23:42,619
+Bakın, bu bir matrix.
+
+459
+01:23:42,619 --> 01:23:45,619
+Bu, şimdi,
+
+460
+01:23:52,500 --> 01:23:54,500
+Bu, bu,
+
+461
+01:23:56,500 --> 01:23:57,500
+ama
+
+462
+01:23:57,500 --> 01:24:20,500
+bu,
+
+463
+01:24:23,444 --> 01:24:23,884
+All right.
+
+464
+01:24:28,532 --> 01:24:30,672
+Example 5, ok.
+
+465
+01:24:40,756 --> 01:24:51,695
+This first column is, just remember that the generators of S are V1, V2, V3, right?
+
+466
+01:24:51,956 --> 01:24:57,096
+And T is formed by W1, W2, and W3.
+
+467
+01:24:57,096 --> 01:25:03,516
+So this first column, this is according to our notation, is this matrix, right?
+
+468
+01:25:08,608 --> 01:25:34,968
+t. The second one, the second one, means v2 written in terms of t. And this third column means v3 in terms of t. Right? For each column, I mean, for each column, you see the entries.
+
+469
+01:25:45,427 --> 01:25:52,427
+Bu konuları, bu konuları,
+
+470
+01:25:52,427 --> 01:25:56,427
+vekiketlerle ilgili konuları, bu konuları,
+
+471
+01:25:56,427 --> 01:26:00,427
+bu konuları, bu konuları,
+
+472
+01:26:00,427 --> 01:26:03,427
+bu konuları,
+
+473
+01:26:07,347 --> 01:26:10,227
+All right, let me see.
+
+474
+01:26:12,087 --> 01:26:21,227
+Okay, we have obtained our matrix, transition matrix, from S to T, right?
+
+475
+01:26:22,247 --> 01:26:23,047
+From S to T.
+
+476
+01:26:24,627 --> 01:26:30,007
+But you have to verify now, this is indeed the inverse of the other transition matrix, right?
+
+477
+01:26:30,804 --> 01:26:40,163
+So, how do you verify? You have to multiply with the other transition matrix and obtain identity.
+
+478
+01:26:41,603 --> 01:26:52,724
+Let me read the matrix we have obtained, where it is.
+
+479
+01:26:56,372 --> 01:26:56,872
+Righty.
+
+480
+01:26:57,872 --> 01:26:58,172
+Okay?
+
+481
+01:27:27,539 --> 01:27:36,079
+Evet, let me see if I wrote the correct matrix, the third column, one, two, one, right?
+
+482
+01:27:38,440 --> 01:27:39,579
+One, two, one.
+
+483
+01:27:45,235 --> 01:28:01,456
+You can verify this metric multiplication and see if it is indeed the identity. If it is not, so that means you have committed some mistake in some place, right? That means you have to check your calculations until you get the right transition metrics, right?
+
+484
+01:28:02,456 --> 01:28:05,255
+Okay, one more example now.
+
+485
+01:28:07,060 --> 01:28:14,180
+Vektör space is the set of all polynomials of degree, not greater than one, right? Together with the zero polynomial.
+
+486
+01:28:15,200 --> 01:28:23,400
+This vector space has dimension two, if you remember, right? The canonical basis is this one, if you remember.
+
+487
+01:28:24,220 --> 01:28:30,840
+This is the canonical basis of this vector space, excuse me.
+
+488
+01:28:32,700 --> 01:28:33,140
+Okay?
+
+489
+01:28:34,771 --> 01:28:42,771
+But we are done, another basis here. Look at this, s and t are not canonical, not standard basis, right?
+
+490
+01:28:44,252 --> 01:28:54,711
+These two basis, ordered basis, indeed generate p1. You can verify, right? But this is not the point here in example 6.
+
+491
+01:28:55,391 --> 01:28:57,871
+All right, let us see explicitly.
+
+492
+01:28:59,028 --> 01:29:03,228
+S ve T are explicitly given, right?
+
+493
+01:29:03,388 --> 01:29:08,028
+These are the polynomials that span P1, the vector space P1.
+
+494
+01:29:08,507 --> 01:29:16,968
+In A, we are asked to compute the transition matrix from the basis T to the basis S, right?
+
+495
+01:29:17,087 --> 01:29:24,288
+So, according to our notation, we are going to write this matrix.
+
+496
+01:29:24,884 --> 01:29:31,384
+Which means you have to write each W in terms of S.
+
+497
+01:29:32,164 --> 01:29:36,943
+That is, each W as a linear combination of V1, V2.
+
+498
+01:29:37,324 --> 01:29:44,184
+The coefficient you will obtain in that, in those linear combinations, you have to write as the columns.
+
+499
+01:29:45,363 --> 01:29:45,564
+Right?
+
+500
+01:29:46,764 --> 01:29:49,824
+These matris will be the matris we are looking for, right?
+
+501
+01:29:51,684 --> 01:29:52,304
+In B,
+
+502
+01:29:53,811 --> 01:30:10,112
+Item B, we are asked to verify equation 3 for this polynomial, certain polynomial, right? Equation 3, just remember that equation 3 is this one, right?
+
+503
+01:30:15,111 --> 01:30:16,111
+bu,
+
+504
+01:30:14,131 --> 01:30:15,131
+Tamam.
+
+505
+01:30:16,371 --> 01:30:17,811
+And finally,
+
+506
+01:30:17,811 --> 01:30:20,652
+we are going to compute the transition matrix
+
+507
+01:30:20,652 --> 01:30:24,611
+from the basis S to the basis T.
+
+508
+01:30:26,572 --> 01:30:28,171
+And show that this is the inverse
+
+509
+01:30:28,171 --> 01:30:29,731
+of the other transition matrix.
+
+510
+01:30:29,731 --> 01:30:31,451
+The other transition matrix mean
+
+511
+01:30:31,451 --> 01:30:33,051
+you change the direction,
+
+512
+01:30:33,051 --> 01:30:34,051
+yeah?
+
+513
+01:30:34,572 --> 01:30:36,611
+You change the direction of the passage
+
+514
+01:30:36,611 --> 01:30:40,851
+between bases, okay?
+
+515
+01:30:42,100 --> 01:30:45,380
+Let me clear my screen here.
+
+516
+01:30:50,068 --> 01:30:51,404
+vektör,
+
+517
+01:30:54,579 --> 01:31:14,219
+Look at this. To compute the transition matrix from t to s, as I said, you have to write each w with respect to the basis s, right, as a linear combination of v1, v2, right here, okay?
+
+518
+01:31:18,804 --> 01:31:29,304
+So, this will lead you to a certain linear system, you have to solve the linear system to find A1, A2, B1, B2, right?
+
+519
+01:31:31,783 --> 01:31:41,184
+And then you will finally obtain this matrix, transition matrix from t to s, right?
+
+520
+01:31:46,452 --> 01:31:58,811
+Then, you multiply this vector by this matrix to obtain the same vector, but written in S.
+
+521
+01:32:00,412 --> 01:32:03,532
+Right? Written in S. Written in S means what?
+
+522
+01:32:10,420 --> 01:32:18,039
+You have to write v as a linear combination of v1, v2, right? Alpha times v1, beta times v2.
+
+523
+01:32:19,960 --> 01:32:32,519
+Once you obtain, you determine the transition matrix, and know this equation 3, you are obtained, you can obtain v in s, right?
+
+524
+01:32:32,599 --> 01:32:35,340
+I mean this coefficient in the linear combination.
+
+525
+01:32:46,612 --> 01:33:10,532
+All right. This is our V, right? And express V in terms of the basis T. This one. Look at this. T minus 1 was W1, if I'm not wrong, right? This was the W2. Let me show you the generators of T. T minus 1.
+
+526
+01:33:11,252 --> 01:33:14,472
+t plus 1, these are the generators of t, right?
+
+527
+01:33:15,372 --> 01:33:15,731
+Okay.
+
+528
+01:33:20,659 --> 01:33:28,219
+So, that means, okay, it's right here. V in terms of t is this vector, right?
+
+529
+01:33:30,139 --> 01:33:46,359
+You are interested in obtaining v in s. I mean, try to write 5 times t plus 1, this is v, as a linear combination of the generators of s. Alpha times v1, beta times v2.
+
+530
+01:33:47,988 --> 01:33:53,528
+Who are the coefficient alpha and beta? You can use equation 3, this is equation 3, right?
+
+531
+01:33:55,028 --> 01:34:06,108
+Since we have already obtained in item A, the transition matrix, and now we know v in t, this is just the matrix multiplication, right?
+
+532
+01:34:06,108 --> 01:34:13,807
+So this is v in s, that means alpha is 16 over 3.
+
+533
+01:34:14,804 --> 01:34:22,604
+Beteber'in 1'e 3'
+
+534
+01:34:30,515 --> 01:34:43,955
+Any question? No question, as always. Okay, we have some other section of nice exercises here. Many nice exercises.
+
+535
+01:34:50,292 --> 01:34:52,632
+For example, what is the question?
+
+536
+01:34:56,756 --> 01:34:58,636
+Let us read.
+
+537
+01:34:58,796 --> 01:35:09,836
+In exercises 1 through 12, compute the vector v, if the coordinate vector v in S is given with respect to each ordered basis S for v.
+
+538
+01:35:14,868 --> 01:35:26,988
+Vektör v, if the cord vector v is given, with respect to each ordered basis, S.
+
+539
+01:35:26,988 --> 01:35:28,128
+Right?
+
+540
+01:35:29,568 --> 01:35:33,908
+This is a nice exercise to practice, for example.
+
+541
+01:35:34,088 --> 01:35:34,248
+Right?
+
+542
+01:35:35,648 --> 01:35:36,988
+Here is the basis.
+
+543
+01:35:38,612 --> 01:35:47,132
+Here is the coordinate vector of a certain v, but you are asked to determine v, right?
+
+544
+01:35:48,132 --> 01:35:59,532
+Don't confuse v and its, excuse me, its coordinate vector in some basis, right?
+
+545
+01:35:59,952 --> 01:36:04,731
+These are different. Don't confuse, right?
+
+546
+01:36:06,452 --> 01:36:12,771
+You are given this information, but you are asked to determine the vector itself. Vector itself.
+
+547
+01:36:13,572 --> 01:36:20,051
+You don't have to confuse, you don't, you have to distinguish very well these notions, right? Otherwise, you will have a trouble.
+
+548
+01:36:21,992 --> 01:36:25,371
+What else? Many exercises.
+
+549
+01:36:30,068 --> 01:36:30,428
+Okay.
+
+550
+01:36:34,028 --> 01:36:34,908
+Look at this.
+
+551
+01:36:35,028 --> 01:36:37,608
+This kind of exercises you can ignore, right?
+
+552
+01:36:37,688 --> 01:36:43,408
+Because I don't say, I didn't say anything about vector space isomorphism, right?
+
+553
+01:36:43,408 --> 01:36:48,508
+You can ignore any exercise that contain isomorphism.
+
+554
+01:36:49,228 --> 01:36:51,008
+Just ignore it.
+
+555
+01:36:52,988 --> 01:36:54,887
+Rank of a matrix.
+
+556
+01:36:55,908 --> 01:36:56,368
+Okay.
+
+557
+01:36:57,908 --> 01:37:13,828
+We have already known what's the meaning of rank of a matrix, right? And the matrix is not necessarily a square matrix. It might be rectangular or square, it doesn't matter. But the notion of rank does not depend on the order, right?
+
+558
+01:37:26,739 --> 01:37:31,760
+Rows, consider, the rows of these matris are vectors in Rn, right?
+
+559
+01:37:32,079 --> 01:37:33,319
+For example, take this row.
+
+560
+01:37:35,239 --> 01:37:37,359
+This is a vector in Rn.
+
+561
+01:37:38,720 --> 01:37:42,899
+Or, you can say the same for any columns, right?
+
+562
+01:37:43,000 --> 01:37:47,920
+If you call this first column, for example, as a W, W is a vector in Rn.
+
+563
+01:37:48,920 --> 01:37:49,399
+M.
+
+564
+01:37:50,515 --> 01:38:02,735
+Because it has m entries in this column, that means m coordinate, which means your W is an m vector, element of rm.
+
+565
+01:38:04,515 --> 01:38:11,335
+So, rows or columns of a matrix are vectors in rn or rm, doesn't matter the dimension.
+
+566
+01:38:16,916 --> 01:38:23,016
+or columns span a subspace of Rm, right?
+
+567
+01:38:23,456 --> 01:38:29,636
+If you use row to span a subspace, then that subspace is called row space.
+
+568
+01:38:30,115 --> 01:38:37,195
+If you use instead columns of your matrix, then the subspace you generate will be a column space, right?
+
+569
+01:38:37,796 --> 01:38:42,916
+And the relationship between the rank and these rows and columns is that
+
+570
+01:38:44,884 --> 01:39:08,124
+Let me see the theorem 4.17. If A and B are two rectangular matrices of the same order, right, and these are row or respectively column equivalent matrices, then their row or column spaces are actually the same, right?
+
+571
+01:39:10,524 --> 01:39:11,604
+Actually the same.
+
+572
+01:39:18,931 --> 01:39:43,572
+Let me see what we have in example one. Find the basis for the subspace V of R5. We have a five-dimensional vector space and a certain subspace V of R5, right? And we know that it is spanned by this set. Spanned by this set. And each vector is given explicitly, right?
+
+573
+01:39:45,460 --> 01:39:49,460
+O yüzden R5'e birkaç birkaç birkaç.
+
+574
+01:39:49,460 --> 01:39:53,460
+R5'e birkaç birkaç ve buçuk.
+
+575
+01:39:53,460 --> 01:39:57,460
+Ve buçuk birkaç birkaç birkaç.
+
+576
+01:39:57,460 --> 01:40:03,435
+Bu birkaçç ve 4 vektörler.
+
+577
+01:40:06,836 --> 01:40:30,755
+So, note that V is the raw space of the matrix A, whose rows are the given vector. What is this? Look at this. These vectors, why don't you write these four vectors as rows of a certain matrix A? Look at this. This is the vector V1. The second row is exactly our second vector V2, right?
+
+578
+01:40:31,283 --> 01:40:43,863
+vektör
+
+579
+01:40:51,315 --> 01:41:03,115
+Şimdi, if V is the subspace spent by S, and if you write the element of S as rows of a certain matrix, then where is the row space of this matrix A, right?
+
+580
+01:41:03,895 --> 01:41:12,875
+According to definition above, using elementary row operation, you can find that this matrix A is row equivalent.
+
+581
+01:41:13,695 --> 01:41:14,175
+Look at this.
+
+582
+01:41:15,035 --> 01:41:17,395
+You can proceed.
+
+583
+01:41:18,292 --> 01:41:28,812
+using some elementary raw operations, and show that this is equivalent to some matrix, let me show you, B, here, right?
+
+584
+01:41:31,692 --> 01:41:31,932
+Here.
+
+585
+01:41:34,072 --> 01:41:44,812
+Raw equivalent, because we have used raw operations, elementary raw operations, and the last matrix, B, is in reduced raw echelon form, if you are...
+
+586
+01:41:45,268 --> 01:41:52,248
+If you are aware, this is in a perfect, refined form that we would like to, right?
+
+587
+01:41:53,188 --> 01:42:09,268
+It's not in just raw eşelon form, it's in reduced raw eşelon form, because the column of each pivot contains, excuse me, which is in reduced raw eşelon form.
+
+588
+01:42:09,268 --> 01:42:11,908
+Do you think this matrix is in raw eşelon form?
+
+589
+01:42:13,300 --> 01:42:15,480
+Evet, bir moment.
+
+590
+01:42:16,220 --> 01:42:19,780
+Bir zaman bir non-zero element
+
+591
+01:42:19,780 --> 01:42:22,180
+bu bölümde
+
+592
+01:42:22,180 --> 01:42:24,619
+bu element,
+
+593
+01:42:24,619 --> 01:42:25,659
+bu değil, bu bölümde
+
+594
+01:42:25,659 --> 01:42:26,560
+bu bölümde.
+
+595
+01:42:26,720 --> 01:42:27,980
+Evet, bu bölümde tamamen.
+
+596
+01:42:28,940 --> 01:42:30,000
+Bu bölümde tamamen.
+
+597
+01:42:31,220 --> 01:42:32,860
+Bu bölümde en azılam
+
+598
+01:42:32,860 --> 01:42:33,920
+indeed.
+
+599
+01:42:34,760 --> 01:42:35,579
+Evet, bu bölümde.
+
+600
+01:42:35,579 --> 01:42:39,140
+Bu bölümde tamamen.
+
+601
+01:42:42,484 --> 01:42:47,484
+Üçüncü kürtüller, bir kürtüller, ve hepsi 0.
+
+602
+01:42:47,484 --> 01:42:53,484
+Üçüncü kürtüller, bu kürtüller, bu kürtüller, bu kürtüller.
+
+603
+01:43:04,051 --> 01:43:07,271
+A'ı, is equivalent, raw equivalent to this matrix B.
+
+604
+01:43:07,692 --> 01:43:21,192
+So raw spaces of A and B are identical, and a basis for the raw space of B consists of these three generators, right?
+
+605
+01:43:21,351 --> 01:43:26,831
+Don't ignore the last raw, because completely zero, right?
+
+606
+01:43:27,711 --> 01:43:31,511
+We cannot add zero vector as a generator.
+
+607
+01:43:32,851 --> 01:43:43,851
+En any basis, right? No generators, zero generators exist in any basis, right? So the first three rows...
+
+608
+01:43:47,667 --> 01:43:49,607
+are linearly independent, right?
+
+609
+01:43:50,467 --> 01:43:53,487
+Because the matrix B is in reduced-alve-eşelon form, right?
+
+610
+01:43:55,387 --> 01:43:57,407
+Rank of this matrix is 3, right?
+
+611
+01:43:59,147 --> 01:43:59,747
+Okay.
+
+612
+01:44:02,207 --> 01:44:03,307
+Another question.
+
+613
+01:44:06,420 --> 01:44:16,960
+Let V be the subspace of example 1, I mean the preceding example, given that the vector V is in V, write V is a linear combination of the basis determined in example 1.
+
+614
+01:44:17,420 --> 01:44:25,860
+Look at this. This is our basis, right? V1, V2, excuse me, W1, W2, W3.
+
+615
+01:44:27,028 --> 01:44:51,916
+Bu, bu
+
+616
+01:45:00,243 --> 01:45:00,583
+Ok?
+
+617
+01:45:04,787 --> 01:45:16,527
+Bu, standard exercise, so I will skip. Let me see these exercises. Example 3, V with a subspace of P4. You see, this is dimension 5, right?
+
+618
+01:45:18,487 --> 01:45:26,347
+The vector space of polynomials of degree not greater than 4, together with the zero polynomial, is a vector space of dimension 5.
+
+619
+01:45:27,007 --> 01:45:31,307
+Within this vector space, consider a subspace V.
+
+620
+01:45:31,923 --> 01:45:36,184
+S, genelde, or spanned by this S, right?
+
+621
+01:45:36,384 --> 01:45:42,423
+And you know explicitly, each generator of this S, spanning S, right?
+
+622
+01:45:44,284 --> 01:45:49,184
+We are asked to find a basis, determine a basis for V.
+
+623
+01:45:50,503 --> 01:45:55,104
+You can ask if S itself is a basis or not, right?
+
+624
+01:46:01,619 --> 01:46:11,279
+P4 is isomorphic to R5, why? I think I have already said something about this connection.
+
+625
+01:46:11,279 --> 01:46:20,920
+Any polynomial of degree 4 is uniquely defined through five coefficients, right?
+
+626
+01:46:21,311 --> 01:46:39,948
+Bu 5-vektör konuları, bu 5-vektör konuları, R5 konuları, bu yüzden bu 5-vektör konuları, R5 konuları, bu yüzden bu ezerin isomor
+
+627
+01:46:42,292 --> 01:46:45,632
+Polynomial of degree 2, right?
+
+628
+01:46:46,072 --> 01:46:54,392
+So this is equivalent to this vector, ABC, because it is uniquely defined by the coefficient ABC, right? ABC.
+
+629
+01:46:55,312 --> 01:47:02,932
+So the same, it doesn't matter if you take now your polynomial P from P4, right?
+
+630
+01:47:18,899 --> 01:47:26,239
+Okay, now we have the relation between the raw space or column space and the rank of your matris.
+
+631
+01:47:26,420 --> 01:47:31,960
+The dimension of the raw space of A is called the rank, raw rank of A.
+
+632
+01:47:32,420 --> 01:47:39,880
+If you instead use column, then you can say that dimension of the column space of A is called the column rank of A, right?
+
+633
+01:47:41,000 --> 01:47:45,939
+Whenever you have two raw equivalent matrices, their raw rank are identical.
+
+634
+01:47:46,463 --> 01:47:49,463
+I think I will stop here.
+
+635
+01:47:52,463 --> 01:48:00,463
+Stop here, let me see what we have. Transition Matrix we have already said everything.
+
+636
+01:48:04,083 --> 01:48:06,163
+Nullalty, it doesn't matter, right?
+
+637
+01:48:08,564 --> 01:48:16,083
+Last week, I mean the first week of the next year, we will see eigenvalues and eigenvektör, vector space, right?
+
+638
+01:48:18,623 --> 01:48:20,203
+Rank and singularity.
+
+639
+01:48:24,180 --> 01:48:27,279
+Evet, I think I will stop here, right? Some application.
+
+640
+01:48:30,060 --> 01:48:39,300
+And then we will start, as I said, eigenvalues and eigenvektör, another chapter, right?
+
+641
+01:48:41,159 --> 01:48:45,140
+This is not the chapter I mean, but anyway.
+
+642
+01:48:50,292 --> 01:48:51,352
+Do you have any questions?
+
+643
+01:48:53,312 --> 01:49:00,392
+If you don't have any questions, I'm going to stop here because I have another class, face-to-face class now.
+
+644
+01:49:02,552 --> 01:49:08,732
+Okay, I wish you all a very happy new year and see you next week, next Tuesday, right?
+
+645
+01:49:12,152 --> 01:49:12,592
+Bye.

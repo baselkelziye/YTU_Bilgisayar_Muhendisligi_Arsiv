@@ -1,0 +1,2975 @@
+1
+00:00:22,036 --> 00:00:24,056
+Evet arkadaşlar, kaldığımız yerden devam edelim.
+
+2
+00:00:25,556 --> 00:00:32,496
+One more example we have here to fix the subject, right?
+
+3
+00:00:32,496 --> 00:00:33,835
+Example four.
+
+4
+00:00:38,420 --> 00:00:45,740
+This example says that the linear system represented by this augmented matrix has a unique solution.
+
+5
+00:00:45,859 --> 00:00:48,719
+Let us check why it has a unique solution, right?
+
+6
+00:00:51,799 --> 00:00:56,840
+How many linear equations and how many unknowns we have in our linear system?
+
+7
+00:00:58,439 --> 00:01:01,719
+Four linear equations and...
+
+8
+00:01:04,275 --> 00:01:20,834
+4 variables, or unknowns, we have, right? And the augmented matrix that represent our system, sigma, lineer system, is in reduced raw echelon form, right? Look at this. It's in perfect form.
+
+9
+00:01:21,492 --> 00:01:45,671
+Perfect form. And you just need to read. You just need to know how to read in a correct way these metrics, right? You don't have to use back substitution because everything is already embedded here, right? Embedded means what? Line by line you have to read the augmented metrics. In what way you have to read? Look at this. The last line says that.
+
+10
+00:01:47,379 --> 00:01:50,739
+X4 is equal to 8.
+
+11
+00:01:51,659 --> 00:02:00,078
+And do you think you need to use back substitution to find X3?
+
+12
+00:02:00,620 --> 00:02:09,300
+You don't need, because the third equation already says that X3 is equal to 7, right?
+
+13
+00:02:09,699 --> 00:02:14,000
+So no need to use X4 to reveal X3.
+
+14
+00:02:14,548 --> 00:02:20,907
+Bu yüzden bu yorumlarımızın
+
+15
+00:02:20,907 --> 00:02:22,747
+Bu yorumlarımızın
+
+16
+00:02:22,747 --> 00:02:25,048
+İngilizceye ve
+
+17
+00:02:25,048 --> 00:02:26,548
+Yorumlarımızın
+
+18
+00:02:26,548 --> 00:02:36,586
+İngilizceye
+
+19
+00:02:36,627 --> 00:02:45,687
+to obtain the solution vector. But here, you don't need, because the augmented matrix is in reduced, already reduced row of issue-conform, right?
+
+20
+00:02:46,328 --> 00:02:52,986
+It's in perfect form. Very clear picture we have here. So, line by line, you have to read.
+
+21
+00:02:54,127 --> 00:03:02,986
+The second row, or second line, says that x2 is equal to 6, and the first row says,
+
+22
+00:03:03,572 --> 00:03:11,170
+X1 is equal to 5. So this is indeed the unique solution, right? We do not have any other solution, right?
+
+23
+00:03:16,319 --> 00:03:22,319
+İngilizceye
+
+24
+00:03:15,860 --> 00:03:43,243
+Ve bu,
+
+25
+00:03:45,426 --> 00:04:02,948
+What does it mean? We have unique solution here. In terms of rank, what is the rank of, let me clear the screen, clear the screen, and then interpret this in terms of rank now, right?
+
+26
+00:04:05,026 --> 00:04:07,866
+So what is the rank of C?
+
+27
+00:04:09,876 --> 00:04:15,294
+Can anybody answer this question? What is the rank of the coefficient matrix C, this one?
+
+28
+00:04:16,036 --> 00:04:16,576
+Is it four?
+
+29
+00:04:17,536 --> 00:04:22,596
+Four, exactly. What is the rank of augmented matrix?
+
+30
+00:04:27,187 --> 00:04:37,627
+By definition, rank of a matrix is exactly the number of non-zero rows after you put it in raw-eşelon form.
+
+31
+00:04:37,927 --> 00:04:42,187
+But this matrix, augmented matrix, is already in reduced raw-eşelon form, right?
+
+32
+00:04:42,728 --> 00:04:44,507
+How many zero rows we have here?
+
+33
+00:04:46,100 --> 00:04:48,040
+No zero rows row, right?
+
+34
+00:04:48,160 --> 00:04:54,839
+So, the number of non-zero rows is by definition the rank of this augmented matrix, which is again 4.
+
+35
+00:04:56,120 --> 00:04:56,540
+You see?
+
+36
+00:05:00,276 --> 00:05:01,975
+As I said, let me return.
+
+37
+00:05:04,235 --> 00:05:05,295
+Look at the criteria.
+
+38
+00:05:06,136 --> 00:05:11,375
+If rank quite, this is full for example, right?
+
+39
+00:05:12,375 --> 00:05:23,815
+Okay, if you prefer, put C, excuse me, C and CD, right?
+
+40
+00:05:24,495 --> 00:05:26,675
+And both have the same rank.
+
+41
+00:05:27,603 --> 00:05:30,603
+Bu, bu kadar da var, bu kadar da var.
+
+42
+00:05:31,923 --> 00:05:36,043
+4, bu yüzden bir solucu var.
+
+43
+00:05:37,322 --> 00:05:41,603
+Bu kriteri var, bu kadar kullanılabiliriz.
+
+44
+00:05:41,603 --> 00:05:43,163
+Bu, test examin.
+
+45
+00:05:47,348 --> 00:05:47,887
+Alright.
+
+46
+00:05:55,540 --> 00:05:59,240
+What else? Let me see. Okay, one more exercises.
+
+47
+00:06:00,620 --> 00:06:10,980
+Suppose we have a system represented by, suppose you have a system sigma, represented by this augmented matrix, right?
+
+48
+00:06:12,139 --> 00:06:15,759
+Do you think this is in raw echelon form or not?
+
+49
+00:06:17,300 --> 00:06:20,240
+Bir tane zero row var,
+
+50
+00:06:20,240 --> 00:06:22,459
+bir tane de basit var.
+
+51
+00:06:22,459 --> 00:06:24,600
+Bu, güzel.
+
+52
+00:06:25,600 --> 00:06:26,600
+Bir tane?
+
+53
+00:06:27,100 --> 00:06:29,240
+Bir tane zero entry,
+
+54
+00:06:29,240 --> 00:06:30,240
+bir tane zero.
+
+55
+00:06:30,240 --> 00:06:32,240
+Bu bir tane.
+
+56
+00:06:32,839 --> 00:06:35,939
+Bir tane, bir tane,
+
+57
+00:06:35,939 --> 00:06:37,399
+bir tane, bir tane.
+
+58
+00:06:37,399 --> 00:06:39,060
+Bir tane zero entry,
+
+59
+00:06:39,459 --> 00:06:42,060
+bir tane,
+
+60
+00:06:48,531 --> 00:06:54,350
+Alright, so this is in a rabi shalom form. Rabi shalom form.
+
+61
+00:06:59,314 --> 00:07:19,615
+Ama, according to the picture, you have to, how many rows we have, how many equations in our system, sigma, three linear equations, how many variables we have, one more tree, number of columns, right? Five unknowns, right? Five unknowns.
+
+62
+00:07:21,043 --> 00:07:31,584
+So, the linear system, the coefficient matrix of linear system, our linear system, sigma, is not given by a square matrix, which is not necessary, right?
+
+63
+00:07:31,624 --> 00:07:36,824
+This is the general case where the coefficient matrix, matrix C, is n by n, right?
+
+64
+00:07:36,824 --> 00:07:47,923
+I mean, 3 by 5. C is a matrix that contains 3 roles and 5 columns. It's not a square matrix, but it doesn't matter, right?
+
+65
+00:07:48,435 --> 00:08:14,574
+So, the last line doesn't give me anything about the variables. So, you can ignore. This is dispensable, right? This line is dispensable because it doesn't reveal anything. Any information is provided by this line. So, I have only two rows to use. Look at the second line, this line.
+
+66
+00:08:14,862 --> 00:08:17,562
+You have to read in a correct way.
+
+67
+00:08:18,283 --> 00:08:19,283
+What does it mean?
+
+68
+00:08:20,362 --> 00:08:24,622
+X4, look at this, I'm reading the second line.
+
+69
+00:08:24,622 --> 00:08:33,923
+X4 plus 1 over 2 times, excuse me, this is X4, right?
+
+70
+00:08:35,263 --> 00:08:42,322
+X4 plus 1 over 2 times X5 is equal to 1 over.
+
+71
+00:08:42,706 --> 00:09:01,908
+So, okay, right here. And let us try to read the first row, that means x1 plus x2 plus 2 times x3 plus minus 5 over 2 times x5 is equal to 2 over 3.
+
+72
+00:09:01,908 --> 00:09:10,187
+If you rearrange, you will obtain this, right? So let me clear my screen.
+
+73
+00:09:13,620 --> 00:09:21,798
+So, if you read in a correct way, you will obtain these two variables, but we have five variables.
+
+74
+00:09:24,580 --> 00:09:40,200
+Right? X4 is in terms of X5. Okay, you can say, okay, I will put or I will select X5 as a free variable, right? Free variable. So, this might be any real number in this sense.
+
+75
+00:09:41,460 --> 00:09:43,620
+X4 is dependent on X5.
+
+76
+00:09:43,740 --> 00:09:44,740
+What about X1?
+
+77
+00:09:44,860 --> 00:09:49,240
+X1 is dependent on X2, X3, and X5.
+
+78
+00:09:50,399 --> 00:09:50,559
+Right?
+
+79
+00:09:52,379 --> 00:09:58,940
+So, this picture already suggests you that you have to select more than one free variable.
+
+80
+00:09:59,200 --> 00:09:59,279
+Right?
+
+81
+00:09:59,740 --> 00:10:01,539
+More than one free variable.
+
+82
+00:10:02,759 --> 00:10:03,860
+Look at this.
+
+83
+00:10:05,427 --> 00:10:06,986
+X2 and X3.
+
+84
+00:10:07,346 --> 00:10:12,466
+Is there any information that you can extract from this augmented matrix about X2 and X3?
+
+85
+00:10:13,466 --> 00:10:14,486
+No information.
+
+86
+00:10:14,486 --> 00:10:30,106
+That means that clearly indicates, or let's say in this way, that implicitly indicates that you have to select X2 as another free variable, right?
+
+87
+00:10:30,628 --> 00:10:32,288
+Let me write S.
+
+88
+00:10:34,676 --> 00:10:35,796
+Ama bu kadar.
+
+89
+00:10:35,796 --> 00:10:37,995
+Bir daha var var,
+
+90
+00:10:38,515 --> 00:10:40,535
+bir daha var var.
+
+91
+00:10:41,216 --> 00:10:44,456
+Bu var var.
+
+92
+00:10:44,975 --> 00:10:46,456
+3 var var.
+
+93
+00:10:48,456 --> 00:10:50,635
+Bu var var var var.
+
+94
+00:10:58,676 --> 00:11:21,163
+Bu, bu
+
+95
+00:11:21,812 --> 00:11:26,591
+Bu, bu kriterium, bu üçe varı var.
+
+96
+00:11:27,072 --> 00:11:28,750
+Ama bu ne kadar mandatory, değil mi?
+
+97
+00:11:28,990 --> 00:11:31,572
+Çünkü bu metrik already says,
+
+98
+00:11:31,672 --> 00:11:33,792
+bu şekilde yazarın, bu şekilde yazarın,
+
+99
+00:11:33,912 --> 00:11:37,392
+bu üçe varı var.
+
+100
+00:11:38,131 --> 00:11:44,111
+Bu, bu üçe varı var.
+
+101
+00:11:44,884 --> 00:12:01,884
+Bu, bir tane var, bir tane var, bir tane var, bir tane var, bir tane var, bir tane var, bir tane var, bir tane var, bir tane var, bir tane var, bir tane var, bir tane var.
+
+102
+00:12:01,884 --> 00:12:08,884
+Bu, bir tane var, bir tane var, bir tane var, bir tane var, bir tane var, bir tane var.
+
+103
+00:12:09,875 --> 00:12:18,774
+So, when you read the second line, I mean this line here, you see that two more variables are evolved here in an implicit way.
+
+104
+00:12:19,855 --> 00:12:23,975
+And this indicates that they have to be free variables, right?
+
+105
+00:12:23,975 --> 00:12:30,495
+Because x1 is dependent on x2, x3, and x5 also, but...
+
+106
+00:12:30,495 --> 00:12:52,696
+We do not have any extra or additional information about x2 and x3. That's why they are free variables. They can have any real number. You can associate to one of these x2, x3, any real number, right? So two more free variables and totally you have three free variables.
+
+107
+00:12:53,235 --> 00:12:59,056
+İndependent variables, and how many dependent variables do we have?
+
+108
+00:12:59,735 --> 00:13:08,615
+Just two, x1, x4 are functions, while x2, x3, and x5 are variables, right?
+
+109
+00:13:09,816 --> 00:13:10,615
+All right.
+
+110
+00:13:11,875 --> 00:13:19,495
+I don't know if it is clear for you, but if not, don't hesitate to ask me, right?
+
+111
+00:13:21,268 --> 00:13:25,488
+As I said, if you know how to read the picture, you know the answer.
+
+112
+00:13:26,988 --> 00:13:27,427
+Okay?
+
+113
+00:13:31,283 --> 00:13:45,822
+Look at the picture here. This is the solution vector x, right? You have three variables which are real numbers. For every choice you have a solution, right? So this system has clearly infinitely many solutions.
+
+114
+00:13:58,292 --> 00:13:59,491
+Rank of CD.
+
+115
+00:14:00,451 --> 00:14:07,131
+You will see that they are equal or not.
+
+116
+00:14:08,912 --> 00:14:15,792
+What we have seen, if they are not equal, there exists no solution, right?
+
+117
+00:14:15,851 --> 00:14:18,312
+But we have said that we have infinitely many solutions.
+
+118
+00:14:18,312 --> 00:14:24,043
+So that means C and CD, augmented matrix CD, have to...
+
+119
+00:14:24,307 --> 00:14:31,886
+Arkadaşlar, hangi free variables do we have? 3, right?
+
+120
+00:14:33,187 --> 00:14:38,466
+What is the total number of variables? 5. So rank must be?
+
+121
+00:14:39,986 --> 00:14:41,746
+So you decide, right?
+
+122
+00:14:43,407 --> 00:14:51,687
+You can interpret in terms of rank, if you want, but it's not mandatory, it's not necessary because this matrix already says everything you need.
+
+123
+00:14:54,130 --> 00:14:56,572
+All right. Now consider the linear system.
+
+124
+00:14:58,792 --> 00:15:03,432
+Okay. Write immediately the augmented matrix that represent your system.
+
+125
+00:15:04,312 --> 00:15:07,792
+Okay. It is not in raw echelon form.
+
+126
+00:15:08,692 --> 00:15:15,730
+So try to put it in raw echelon form, which will be equivalent by definition, right?
+
+127
+00:15:16,250 --> 00:15:21,230
+So what the first non-zero entry is one. This is the pivot or leading one of the first row.
+
+128
+00:15:21,582 --> 00:15:32,864
+The next step is to put 0 above 1, right? They are not 0, so what is the way to obtain 0 there?
+
+129
+00:15:33,744 --> 00:15:46,663
+First, you apply this raw operation, because if you want 0 here, you have to multiply 1 by minus 2 and add to 2, right?
+
+130
+00:15:47,154 --> 00:15:51,154
+Bu, 0'a 0'a koyduğum.
+
+131
+00:15:51,154 --> 00:15:55,883
+Çünkü bu, bu, bu, bu, bu, bu, bu, bu, bu?
+
+132
+00:16:00,724 --> 00:16:05,604
+Ok? So these are the elementary raw operations you have to perform.
+
+133
+00:16:09,172 --> 00:16:10,351
+respectivli, right?
+
+134
+00:16:10,672 --> 00:16:14,172
+First, this one to obtain this zero, and then...
+
+135
+00:16:17,556 --> 00:16:43,275
+Bu bir
+
+136
+00:16:43,442 --> 00:16:46,283
+This is not in raw echelon form yet, right?
+
+137
+00:16:47,802 --> 00:16:54,482
+This matrix, not in raw echelon form yet.
+
+138
+00:16:55,342 --> 00:16:55,863
+Attention.
+
+139
+00:16:58,082 --> 00:16:58,643
+Okay?
+
+140
+00:16:59,602 --> 00:17:01,442
+So what is the next operation?
+
+141
+00:17:01,962 --> 00:17:03,903
+I have used these two operations, right?
+
+142
+00:17:04,002 --> 00:17:05,942
+What is the next one in the list?
+
+143
+00:17:07,682 --> 00:17:11,358
+You can try to multiply the third row by...
+
+144
+00:17:11,358 --> 00:17:33,482
+Bu, bu bir line, bu bir line, bu bir line, bu bir line, bu bir line, bu bir line, bu bir line, bu bir line, bu bir line, bu bir line, bu bir line, bu bir line, bu bir line, bu bir line, bu bir line, bu bir line, bu bir line, bu bir line, bu bir line, bu bir line, bu bir line, bu bir line, bu bir line, bu bir line, bu bir line, bu bir line, bu bir line, bu bir line, bu bir line, bu bir line, bu bir line, bu bir line, bu bir line, bu bir line, bu bir line, bu bir line, bu bir line, bu bir line, bu bir line, bu bir line, bu bir line, bu bir line, bu bir line, bu bir line, bu bir line, bu bir line, bu bir line, bu bir line, bu bir line, bu bir line, bu bir line, bu bir line, bu bir line, bu bir line, bu bir line, bu
+
+145
+00:17:34,290 --> 00:17:35,730
+Bu yüzden ikinci kaptör.
+
+146
+00:17:35,730 --> 00:17:41,530
+After multiplying the third row by minus 1 over 5, I replace the second and third row.
+
+147
+00:17:41,530 --> 00:17:45,132
+So these are the row operations I have to include in my list.
+
+148
+00:17:45,132 --> 00:17:51,451
+So you will see exactly these are operations in the next page.
+
+149
+00:17:51,451 --> 00:17:53,851
+Look at this.
+
+150
+00:17:54,674 --> 00:18:00,775
+İlk olarak, 3rd row, as I said, by minus 1 over 5, and then interchange the second and third row.
+
+151
+00:18:00,955 --> 00:18:05,115
+Look at, these are the last two operations I have included.
+
+152
+00:18:06,336 --> 00:18:06,615
+Okay?
+
+153
+00:18:07,536 --> 00:18:11,174
+And we arrived in this matrix unit.
+
+154
+00:18:11,516 --> 00:18:11,875
+All right.
+
+155
+00:18:17,906 --> 00:18:18,906
+Ne daha?
+
+156
+00:18:20,106 --> 00:18:23,707
+Bu şekilde bir şekilde yapmak istedim.
+
+157
+00:18:44,692 --> 00:18:48,412
+İlk ve ikinci rövlerden birleştirilmiş olmalı.
+
+158
+00:18:48,412 --> 00:18:49,851
+Evet.
+
+159
+00:18:53,875 --> 00:18:57,195
+We are almost done. Almost done.
+
+160
+00:19:05,298 --> 00:19:23,420
+Non-zero entry in the third row is not one, right? So you have to divide by ten. Look at this. And then you will obtain one. Okay? Now it is in raw echelon form, right? It's not in reduced raw echelon form, but it doesn't matter, right?
+
+161
+00:19:23,796 --> 00:19:32,536
+It doesn't matter. If you put your augmented matrix in Rab-eşelon form, that means you are applying Gauss elimination method.
+
+162
+00:19:33,036 --> 00:19:44,135
+But if you want to go one step further, that means you are interested in putting your augmented matrix in reduced Rab-eşelon form.
+
+163
+00:19:44,796 --> 00:19:49,615
+And then you don't need to use back substitution. This is Gauss-Jordan reduction form, right?
+
+164
+00:19:50,098 --> 00:19:51,740
+But it's not necessary.
+
+165
+00:19:52,920 --> 00:19:53,659
+It's not necessary.
+
+166
+00:19:55,420 --> 00:19:56,240
+Look at this.
+
+167
+00:19:56,398 --> 00:20:01,358
+Now, it only remains to read in a correct way, as I always say.
+
+168
+00:20:01,778 --> 00:20:10,420
+So the third row means, look at this, this matrix is in raw eşelon form now, and it only remains to read.
+
+169
+00:20:12,240 --> 00:20:16,420
+The third and last line says z is equal to.
+
+170
+00:20:17,875 --> 00:20:24,695
+3. And you have to use, you have to apply back substitution means use the value of z.
+
+171
+00:20:28,692 --> 00:20:29,451
+Look at this.
+
+172
+00:20:30,632 --> 00:20:37,730
+Use this information in the preceding row to reveal y, right?
+
+173
+00:20:38,250 --> 00:20:39,912
+Preceding row is this one.
+
+174
+00:20:41,352 --> 00:20:48,810
+If z is 3, this means y is minus 2, right?
+
+175
+00:20:50,810 --> 00:20:55,892
+And then you use this information.
+
+176
+00:20:56,788 --> 00:21:22,407
+Z is equal to 3 to reveal x, right? This is the first line. In this line you have to use the fact that y is minus 2 and z is 3 to obtain x as 1, right? So this is the solution. Look at the solution vector.
+
+177
+00:21:24,884 --> 00:21:29,344
+Bu, sadece bir solution, değil? Bu, sadece bir solution. Bu, Gauss eliminasyonu.
+
+178
+00:21:29,344 --> 00:21:43,503
+Ama, if you don't want to apply this back substitution, if you think you are good enough in taking a matrix and converting it into a reduced Rab-Eşelon form,
+
+179
+00:21:43,624 --> 00:21:47,304
+if you think you understood very well this procedure,
+
+180
+00:21:48,115 --> 00:22:00,756
+So, put it in reduced rav-eşelon form, and just write immediately what are the variables, right? Without using back substitution. Am I making myself clear or not?
+
+181
+00:22:04,884 --> 00:22:07,042
+Arkadaşlar, açıklayabildim mi?
+
+182
+00:22:07,663 --> 00:22:08,522
+Disclear sir.
+
+183
+00:22:09,962 --> 00:22:14,364
+Şimdi bakın, iki satır hemen burasında Türkçe söyleyeyim. Şu ekranımı sileyim.
+
+184
+00:22:15,344 --> 00:22:21,222
+Bakın, elimde bir sistem vardı, genişletilmiş matrisi vardı, eşelon form da değildi.
+
+185
+00:22:21,482 --> 00:22:26,022
+Eşelon forma niye getirmeye çalışıyorum? Yani denk matrisleri kullanıyor. Niye eşelon forma getirmeye çalışıyorum?
+
+186
+00:22:26,355 --> 00:22:33,096
+Çünkü yani sistemi çözmek zor olabilir size verilen sistemi. Ne demek istiyorum ya? Başa döneyim bak, en başa dönelim.
+
+187
+00:22:33,096 --> 00:22:33,954
+En başa.
+
+188
+00:22:35,700 --> 00:22:59,858
+Sistem bu. Sen şimdi bunu alışık olduğu üzere, liseden, kolejden öğrendiğin haliyle ne yapacaksın? Bu denklemleri birini öbürüne toplayacaksın, çıkartacaksın. İzole etmeye çalışacaksın. X, Y, Z'den birini veya birkaçınını değil mi? Ondan sonra alacaksın ötekini başka birine ekleyeceksin, çıkartacaksın. Bununla uğraşamazsın yani. Zor da olabilir, çok zamanlı olabilir. Madem ki matrislerle, denk matrislerle uğraştık biz. Eşelon form diye bir şeyden bahsettik.
+
+189
+00:23:00,980 --> 00:23:22,380
+Değil mi? Artında senin birini alıp ötekine ekleyip çıkarma, satır işlemleri işte. Elemente satır işlemi dediğimiz şeyin ta kendisini kullanıyorsun aslında ama matrislerle çalışmak daha faydalı. Bir denkleme ötekini ekleyip çıkarıp oradan bir değişkeni tek başına bırakmaya çalışırken hata yapabilirsin yani. Takibi zor ama matrisle çalışmak daha kolay.
+
+190
+00:23:23,508 --> 00:23:37,048
+Ne yapıyorum ben? Bunu okuması daha kolay bir matrise dönüştürmeye çalışıyorum. Dönüştürmeden niye kastediyorum? Elementer satır işlemlerini kullanarak satır eşelon forma dönüştürmeye çalışıyorum.
+
+191
+00:23:37,727 --> 00:23:46,606
+İşte o en son karşıma çıkan eşelon formdaki matris var ya, genişletilmiş matris, o da bana ilk sisteme, yani şu sisteme denk.
+
+192
+00:23:47,604 --> 00:24:10,064
+Başka bir sistem veriyor. Denk olması demek zaten çözümlerinin aynı olması demek. Çözümler aynısı, ben çözümü daha kolay olan sistemle çalışırım. Niye daha zor olan, başlangıçta verilen mesai harcayayım ki? Değil mi? Tamam, bir takım işlemler uyguladık, uyguladık, uyguladık. Bakın, burayı siz de Türkçe hızlıca geçeyim.
+
+193
+00:24:12,948 --> 00:24:33,228
+Nereye getirdik? Şuraya getirdik bakın arkadaşlar. Şu hale getirdik. Eşelon formda mı? Evet, eşelon formda. Şimdi bunun okumasını yapacaksın. Üçüncü satıra bakarsan Z'nin üç olduğunu söylüyor. Bunu ikinci satırda yerine koyacaksın. Diğer değişkenlerden kimi bulursun? X'i bulacak halin yok. X'in kat sayısı sıfır çünkü burada değil mi? Y'yi bulacaksın tabii ki.
+
+194
+00:24:33,228 --> 00:24:39,688
+Y'yi de bulduktan sonra ne kaldı geriye X. Y'nin Z'nin değerlerini ilk satırda yerine koyarsan işte o zaman X'i bulursun.
+
+195
+00:24:39,858 --> 00:25:05,638
+Ama mesela bunu yapmayıp bir adım öteye götürmeye çalışabiliyorsun. O da nedir? Bak, bu satır eşelon formda ama indirgenmiş satır eşelon formda değil. Öyle değil mi? Bak, in raw eşelon form, but not in reduced raw eşelon form yet.
+
+196
+00:25:09,748 --> 00:25:35,567
+Backside Statition kullanmak istemiyorsan, ayıklanmış istiyorsan her şeyi tamam mı? Yerine koy götür binmen bunlarla uğraşmak istemiyorum. Ben bu işte iyiyim, bayağı da pratik kazandım diyorsan, bunu bir adım öteye götür, ondan sonra çözümü tak yaz. Ne demek o? Eşelon formda değil bu indirgenmiş eşelon formda. Nedir mesela bak, ikinci sütunda çalışman lazım, şunu sıfır yapman lazım değil mi? Ondan sonra.
+
+197
+00:25:36,722 --> 00:26:02,104
+Üçüncü sütunda da çalışman lazım mı? Lazım. Kimleri sıfır yapman lazım? Şunları sıfır yapman lazım. Bunları sıfır yaparken tabii şu sağdaki 6-4 burası değişecek tabii ki değil mi? Ya bunlar da değişecek. En sonunda bulacağın şey ne biliyor musun? En sonunda bulacağın şey şu. Eğer bunu şöyle yapalım, yanına yazalım da hem maddesi gör.
+
+198
+00:26:03,858 --> 00:26:21,898
+Hem de indirgenmiş satır eşelon formda gör. 1, 0, 0, 3, 0, 1, 0, eksi 2, 0, 0, 1, 3. Bunu bulurdun ya. Bilmem anlatabilirim mi arkadaşlar.
+
+199
+00:26:24,914 --> 00:26:30,654
+Hocam, indirgenmiş satır formuna çevirirken her zaman tam sayı olmak zorunda mı yoksa kesildi de?
+
+200
+00:26:31,174 --> 00:26:40,515
+Bunlar önemli değil, sayılara takılmayın. Real sayı da olur, olmaz. Çok önemli değil. Bir şeyi modellerken belki ondalıklı bir sayı vardır işin doğasında, kullanırsın, sorun değil.
+
+201
+00:26:43,028 --> 00:26:55,627
+Burada benim söylemek istediğim şey, ister Gauss yok etme metodunu kullan, ister eşelon formla yetinme, indirgenmiş eşelon forma kadar, yani taşıyabileceğin son noktaya kadar götür matrisi ayıklanmış hale getir.
+
+202
+00:26:55,982 --> 00:27:03,762
+değişkenleri bir seferde söyle kim olduklarını. Yani şu hale getirdikten sonra artık back substitution yapmana gerek yok.
+
+203
+00:27:03,903 --> 00:27:11,242
+Ya zaten şu resim sana x'in, y'nin, z'nin kim olduğunu söylüyor. Bak x eşittir 3, y eşittir, x'in, 2, z eşittir, 3 diyor yani bana bu matris.
+
+204
+00:27:14,182 --> 00:27:14,762
+Anlatabiliyor muyum?
+
+205
+00:27:24,858 --> 00:27:26,858
+Bu partijen var, bu partijen var.
+
+206
+00:27:26,858 --> 00:27:29,858
+Bu, bu partijen var, bu sorunlar.
+
+207
+00:27:29,858 --> 00:27:32,858
+Bu, sorunlar, lineer sistemler.
+
+208
+00:27:32,858 --> 00:27:36,858
+Bu, bu, krammer method.
+
+209
+00:27:36,858 --> 00:27:40,858
+Bu, krammer method, bu partijen var.
+
+210
+00:27:40,858 --> 00:27:43,858
+Bu, bu, krammer method.
+
+211
+00:27:47,442 --> 00:27:48,234
+Evet.
+
+212
+00:27:51,316 --> 00:28:17,316
+You see, this is what I have just said to you, right? If you are not satisfied with the Ra-Ve-Shalon form, here, look at this, if you are not satisfied with this Ra-Ve-Shalon form, and prefer to go one step further, I mean, continue until you obtain
+
+213
+00:28:18,644 --> 00:28:23,703
+A reduced rav eşelon form, rather than rav eşelon form, right?
+
+214
+00:28:24,604 --> 00:28:32,203
+So you continue, continue, and you stop here. This is the final stage, right?
+
+215
+00:28:33,344 --> 00:28:40,384
+No further step to go, right, here, because it is in perfect form, perfect form.
+
+216
+00:28:41,144 --> 00:28:45,674
+It's in reduced rav eşelon form, and just write the values of...
+
+217
+00:28:45,971 --> 00:28:48,871
+Veyaplos, unumns, of your linear system, OK?
+
+218
+00:28:51,770 --> 00:28:55,611
+All right, there are some applications, but I don't care.
+
+219
+00:28:56,192 --> 00:28:57,891
+Quadratic interpolation, right?
+
+220
+00:28:58,111 --> 00:29:00,692
+This is not of my interest.
+
+221
+00:29:02,590 --> 00:29:03,730
+Temperature distribution.
+
+222
+00:29:04,810 --> 00:29:08,730
+There are some applications of this material, right?
+
+223
+00:29:08,730 --> 00:29:11,330
+GPS, for example, you see that.
+
+224
+00:29:11,598 --> 00:29:14,398
+There are some applications regarding GPS.
+
+225
+00:29:16,798 --> 00:29:22,638
+If you are curious about the app, please, I recommend you take it.
+
+226
+00:29:26,451 --> 00:29:27,271
+All right.
+
+227
+00:29:32,372 --> 00:29:33,810
+Homogeneous system, Riyad.
+
+228
+00:29:35,090 --> 00:29:40,290
+Now we study a homogeneous system of m linear equations in n unknowns.
+
+229
+00:29:41,490 --> 00:29:44,372
+Consider the homogeneous system whose augmented system
+
+230
+00:29:48,626 --> 00:29:51,106
+Ağugmented matrix is given by this one.
+
+231
+00:29:53,126 --> 00:29:56,928
+I don't know if you are aware of the following.
+
+232
+00:29:57,106 --> 00:30:03,008
+These matrix, augmented matrix of my homogenous system, is in reduced ravisholun form already, right?
+
+233
+00:30:03,428 --> 00:30:07,248
+Look at this, the complete zero line is at the bottom of the matrix.
+
+234
+00:30:09,067 --> 00:30:12,248
+Every row has its leading one.
+
+235
+00:30:12,606 --> 00:30:18,146
+ve bu şekilde bir şekilde bir şekilde bir şekilde bir şekilde var.
+
+236
+00:30:19,846 --> 00:30:22,446
+Bu, bu, Rav Eşelon 4.
+
+237
+00:30:25,406 --> 00:30:30,507
+Bu, bu, 0-0-rowi yoksa bir bilgi verilmiştir.
+
+238
+00:30:30,507 --> 00:30:32,446
+Bu, bu, anonun.
+
+239
+00:30:37,490 --> 00:30:47,911
+Fourth line, look at this, the blue row, says that, how many variables we have?
+
+240
+00:30:48,451 --> 00:30:54,050
+One, two, three, four, five columns, so five unnum, right?
+
+241
+00:30:57,714 --> 00:31:08,674
+So, this blue line is x4 plus x5 is 0 or not.
+
+242
+00:31:18,132 --> 00:31:21,392
+If you read this way, you will make a mistake, right?
+
+243
+00:31:22,971 --> 00:31:35,412
+You will make a mistake, because you see, you have four linear equations, and four is less than the number of variables, right?
+
+244
+00:31:35,412 --> 00:31:40,412
+So, this implicitly indicates that some variables are...
+
+245
+00:31:40,480 --> 00:31:51,119
+Free, act as a free variable. So you have to determine how many free variables your homogene system uses, right?
+
+246
+00:31:53,440 --> 00:32:05,440
+I have just a couple of minutes. I think I don't have time, enough time to continue on this exercise. So why don't you take a look at on this example?
+
+247
+00:32:06,708 --> 00:32:14,468
+System is homogenous, so is, it's relatively easy to study, right?
+
+248
+00:32:17,347 --> 00:32:17,807
+Okay.
+
+249
+00:32:31,092 --> 00:32:42,010
+I think I have already said what I would like to say for today. These are systems with complex coefficient metrics. It doesn't matter, right?
+
+250
+00:32:42,632 --> 00:32:54,832
+We are interested in systems that have coefficient metrics with real entries. So I don't care. This is kind of complex augmented matrices, right?
+
+251
+00:32:55,770 --> 00:32:57,550
+Let me see what we have.
+
+252
+00:32:58,451 --> 00:33:00,771
+Ok, ok.
+
+253
+00:33:02,372 --> 00:33:10,672
+As you should know, now you have some exercises, brief section of exercises, right?
+
+254
+00:33:13,291 --> 00:33:16,991
+You have to take a look at here and try to solve some of them.
+
+255
+00:33:18,071 --> 00:33:19,071
+For example, one.
+
+256
+00:33:23,762 --> 00:33:31,182
+Let me, you can try to solve this one, this one, just odd numbers, right?
+
+257
+00:33:32,942 --> 00:33:36,344
+How many questions, many questions we have here?
+
+258
+00:33:47,923 --> 00:33:52,923
+You can ignore these kinds of exercises, right? Ignore.
+
+259
+00:33:55,923 --> 00:34:04,022
+Also ignore this one, because I didn't say anything about matris transformation, right?
+
+260
+00:34:13,684 --> 00:34:21,083
+Bu tür exercisesi, you can ignore, çünkü kullanan bir şey, kullanan bir şey, kullanan bir şey.
+
+261
+00:34:43,699 --> 00:34:44,739
+No, sir. Thank you.
+
+262
+00:34:45,739 --> 00:34:46,059
+Okay.
+
+263
+00:34:47,639 --> 00:34:51,559
+See you on Saturday, 27 November, right?
+
+264
+00:34:53,818 --> 00:34:55,380
+Any question about the exam?
+
+265
+00:34:59,059 --> 00:35:01,039
+Cumartesi günkü saat kaçta hocam?
+
+266
+00:35:02,039 --> 00:35:18,719
+Cumartesi ders yok. Ben anlatacağım şeyi anlattım. Yani bir tek kramer yöntemini anlatmadım ama onu ben on beş dakikada anlatırım. Sorun değil. Onun için de ekstra ders koymak istemiyorum. Yani sınavdan sonraki hafta kramer yönteminde anlatırım. O çok kolay bir yöntem. Çok kolay bir yöntem.
+
+267
+00:35:19,219 --> 00:35:24,699
+Bugün anlattığım yere kadar dahil olmak üzere sınavda sorumlusunuz arkadaşlar.
+
+268
+00:35:25,139 --> 00:35:28,099
+Yani lineer denklem sistemlerinin çözümüyle ilgili soru da gelir.
+
+269
+00:35:29,500 --> 00:35:34,298
+Ama denk maddislerle, işte Gauss yok etme metoduyla veya Gauss-Jordan metoduyla.
+
+270
+00:35:35,039 --> 00:35:39,579
+Ama test sınavı olacağı için dikkat edin, bakın klasik sınav sorusu gibi gelmez.
+
+271
+00:35:41,018 --> 00:35:44,219
+Yani acayip bir pratiklik kazanmış olmanız lazım çünkü...
+
+272
+00:35:44,306 --> 00:36:04,786
+Yani klasik sınav olsaydı size 5 soru sorardık. Yani 1,5 saatte süren olmuş olsa her bir soru için baya adam akıllı bir zamanın oluyordu değil mi? Müsvetle kağıdın orada çalışabiliyordu. Ama burada 20 soruya muhatap olacaksın. Yani belki kaç dakikan olacak soru başına hesap et artık yani. Soru üstüne soru efendim.
+
+273
+00:36:06,148 --> 00:36:07,206
+Bir saat, bir saat sınav.
+
+274
+00:36:08,228 --> 00:36:11,126
+Bir saat olmaz ya, bir saat yetmez ya.
+
+275
+00:36:11,443 --> 00:36:13,163
+20 soruya bir saat yetmez.
+
+276
+00:36:13,304 --> 00:36:14,422
+Bir saat değil miydin sen hocam?
+
+277
+00:36:14,943 --> 00:36:20,163
+İki saat gözüküyor orada da biz karar veriyoruz ona. Bir saat olmaz yani, mümkün değil.
+
+278
+00:36:20,864 --> 00:36:23,563
+Dört yanlış bir doğruyu götürür mü götürür mü? Bunları konuşmadık.
+
+279
+00:36:23,684 --> 00:36:27,443
+Şimdi ben, her hoca bunu kendi kafasına göre karar veremez.
+
+280
+00:36:27,523 --> 00:36:30,242
+Bize bölüm ne diyorsa biz onu yaparız, anlatabilir miyim?
+
+281
+00:36:30,322 --> 00:36:31,983
+Onun bilgisini henüz bilmiyor.
+
+282
+00:36:32,643 --> 00:36:34,764
+Yani o yüzden şu an size net bir şey söylemek istemiyorum.
+
+283
+00:36:34,943 --> 00:36:37,083
+Dört yanlış bir doğruyu götürür mü götürür mü? Götürürmez mi?
+
+284
+00:36:38,003 --> 00:36:38,443
+Tamam mı?
+
+285
+00:36:40,148 --> 00:36:57,547
+Var mı başka sorusu olan? Bir de şeyi de söyleyeyim, mesela bir de bunun Türkçe bir kitabı var, kaynakçada bakarsanız, bizim bölümdeki hocalardan ikisinin yazdığı, lineerce bir ve çözümlü problemleri diye, böyle sade bir lineerce bir kitabı var, orada çözümlü problemler var.
+
+286
+00:36:57,547 --> 00:37:07,407
+Mesela ihtiyacınız, ihtiyacın olduğunu düşünüyorsan çözümlü sorulara, o kullanabilirsin veya başka lineerce bir kitapları da kullanabilirsin, çözümlü örnekler.
+
+287
+00:37:07,731 --> 00:37:15,471
+Değil mi? Oda belli mi diyor, sınav salonu size bildireceğiz. Odadan salonu kastediyorsan.
+
+288
+00:37:19,443 --> 00:37:20,882
+Tabii ki sınav yüz yüze.
+
+289
+00:37:25,684 --> 00:37:30,902
+Başka sorusu olan var mı arkadaşlar? Keşke bu dersi yüz yüze yapabilseydik yani. Böyle online bu kadar oluyor.
+
+290
+00:37:32,143 --> 00:37:33,503
+Have a nice day. Bye.
+
+291
+00:39:57,715 --> 00:40:00,996
+Günaydın arkadaşlar. Sesim geliyor değil mi?
+
+292
+00:40:01,456 --> 00:40:01,815
+Geliyorum.
+
+293
+00:40:03,096 --> 00:40:04,376
+Sormak istediğiniz bir şey var mı?
+
+294
+00:40:08,626 --> 00:40:09,768
+Sorusu olan var mı?
+
+295
+00:40:10,927 --> 00:40:12,027
+Hocam benim bir sorum var.
+
+296
+00:40:14,306 --> 00:40:29,507
+[kişisel bilgi] Çok fazla bilgim yok sınav konusundan. Hangi gün olacaktı? Onu öğrenebilir miyim acaba?
+
+297
+00:40:30,452 --> 00:40:36,672
+Ya biz bunun bilgilenmesini yaptık ama tekrardan yapalım. İlk 6 haftanın müfredatı sınava dahil.
+
+298
+00:40:37,871 --> 00:40:39,231
+Her gün olacağını biliyorum.
+
+299
+00:40:42,572 --> 00:40:50,711
+O bizim matematik bölümü sayfasında var, sizlere bildiriliyor. Yani 27 Kasım, Cumartesi. Saat 9-11 arası diyebiliyorum. Yani sınıflar falan size bildirilir yani.
+
+300
+00:40:51,692 --> 00:40:54,912
+Kendi bölümünün sayfasında da ilan edilir o illaki yani.
+
+301
+00:40:55,443 --> 00:41:10,184
+Ama ben şimdi söyleyeyim gene. 27 Kasım, cumartesine geliyor. Saat 9'da diyebiliyorum. Matematik bölümünün sayfasına servis dersleri sekmesine girersen orada da görürsün bu bilgiyi. Tamam mı?
+
+302
+00:41:15,155 --> 00:41:16,416
+Başka sorusu olan var mı?
+
+303
+00:41:21,139 --> 00:41:35,840
+Evet, isterseniz devam edelim. Nerede kalmıştık? Mesela lineer denklem sistemlerinden bahsettim. Cumartesi günkü ekstra dersi dinleyen var mı içinizde? Kaç kişi var sınıfta? 13 kişi var.
+
+304
+00:41:39,827 --> 00:41:40,427
+Evet.
+
+305
+00:41:44,851 --> 00:41:48,012
+Orada bir giriş yapmıştım, lineer denklem sistemlerine, oradan devam edelim.
+
+306
+00:41:48,110 --> 00:41:56,412
+So, I'm going to continue with linear system, but today we are mainly interested in how to solve linear systems, right?
+
+307
+00:41:56,916 --> 00:42:05,416
+If you remember, we have seen how to put a matrix in its raw echelon form, or if you prefer, reduced raw echelon form.
+
+308
+00:42:05,556 --> 00:42:12,836
+Now you will see that this material will be quite useful to solve linear system of linear equations, right?
+
+309
+00:42:13,396 --> 00:42:18,296
+So, let me see what we have here.
+
+310
+00:42:21,427 --> 00:42:30,646
+Whenever you see, this is an augmented matrix, it represents the union system.
+
+311
+00:42:30,787 --> 00:42:39,787
+You have no really, whenever you see such a matrix, let me write, suppose this is your system, in matrix notation, right?
+
+312
+00:42:39,787 --> 00:42:44,047
+I think you should, why?
+
+313
+00:42:44,690 --> 00:43:03,979
+Şimdi, bu noktada, neden bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada,
+
+314
+00:43:06,195 --> 00:43:18,755
+Alright, so if you represent your system in matrix, this is A, this matrix is B, right?
+
+315
+00:43:20,755 --> 00:43:37,454
+Whenever you see augmented matrix, you have to understand, as you see, we have three by three matrix, so that means you have a system that consists of three linear equations, and three columns also indicate the number of variables in your linear system, right?
+
+316
+00:43:37,514 --> 00:43:46,996
+So we have three linear equations, three unknowns, or three variables. So you have to write, whenever you see such a matrix, this linear system that I'm going to write now.
+
+317
+00:43:47,731 --> 00:44:04,492
+x plus 2 times y is equal to 3. The first line is exactly this, linear equation, right? The second row of this augmented matrix say that, excuse me,
+
+318
+00:44:11,284 --> 00:44:18,083
+Y, Z is equal to the third and the last row, means Z is equal to minus one, right?
+
+319
+00:44:18,604 --> 00:44:23,864
+So this is our linear system, sigma, in coordinate, right? In coordinate.
+
+320
+00:44:25,543 --> 00:44:35,023
+So, actually there is nothing to do to solve this linear system because it's very easy, right?
+
+321
+00:44:35,023 --> 00:44:38,023
+Z is already noun here. If you put Z...
+
+322
+00:44:38,387 --> 00:44:46,987
+İndir 2nd equasyonu, yıza
+
+323
+00:44:52,436 --> 00:44:59,996
+Bu, bu, almost solved, çünkü bu, augmented matrix, bu, in raw echelon form, değil mi?
+
+324
+00:44:59,996 --> 00:45:06,876
+Let me clear the screen, to see better, değil mi?
+
+325
+00:45:06,876 --> 00:45:11,556
+Look at this augmented matrix here.
+
+326
+00:45:11,556 --> 00:45:17,436
+It is in raw echelon form, değil mi?
+
+327
+00:45:18,099 --> 00:45:43,720
+Rab-eşelon form, look at this. The first non-zero entry is one. I mean, this is the leading one of the first row and the other leading ones, I mean, the pivots of the next rows are distributed exactly in the way we want, right? Look at this. This is the pivot of the second row. The third row is here, right?
+
+328
+00:45:44,787 --> 00:45:48,787
+Bu, bu, Rav Eşilom form.
+
+329
+00:45:48,787 --> 00:45:51,787
+Çünkü, bu, bu,
+
+330
+00:45:51,787 --> 00:46:05,835
+bu,
+
+331
+00:46:06,226 --> 00:46:11,488
+I'm going to show you what is the idea to solve such a linear system, right?
+
+332
+00:46:11,927 --> 00:46:19,988
+Basically, suppose you have a system, something like this, and you are interested in solving this linear system, right?
+
+333
+00:46:20,527 --> 00:46:28,488
+You write your augmented matrix, you perform some elementary raw operation here, right?
+
+334
+00:46:28,488 --> 00:46:32,547
+A finite sequence, finite sequence.
+
+335
+00:46:33,300 --> 00:46:36,279
+Maybe you will not understand this notation, so let me delete.
+
+336
+00:46:38,039 --> 00:46:44,559
+Here you will perform raw operation, elementary raw operations, right?
+
+337
+00:46:44,639 --> 00:46:49,739
+A finite number of raw operations, variations, combinations, et cetera.
+
+338
+00:46:50,498 --> 00:46:55,599
+Then you will transform these initial augmented metrics to another one.
+
+339
+00:46:55,840 --> 00:46:57,059
+Let me write in this one.
+
+340
+00:46:57,878 --> 00:47:04,878
+bu,
+
+341
+00:46:57,427 --> 00:47:22,059
+Bu, bu
+
+342
+00:47:22,132 --> 00:47:24,230
+Liner systems are equivalent, right?
+
+343
+00:47:24,711 --> 00:47:28,951
+And systems equivalent means they have the same solution.
+
+344
+00:47:29,652 --> 00:47:31,771
+So what is the idea here?
+
+345
+00:47:32,291 --> 00:47:36,612
+Suppose that your initial system is seemingly complicated to solve.
+
+346
+00:47:37,311 --> 00:47:44,690
+So you can try to convert your linear system to another one, which is easier to solve, right?
+
+347
+00:47:46,032 --> 00:47:48,992
+Convert means in an equivalent way.
+
+348
+00:47:49,748 --> 00:47:53,748
+Yani, bu işe de kullanmanız gerekiyor.
+
+349
+00:47:53,748 --> 00:47:55,748
+Bu, bu işe de.
+
+350
+00:47:55,748 --> 00:48:00,748
+Ve bu metodun.
+
+351
+00:48:00,748 --> 00:48:16,748
+Bu metodun.
+
+352
+00:48:17,523 --> 00:48:23,443
+Bu, bu, sigma1, bu, sigma2.
+
+353
+00:48:23,963 --> 00:48:25,224
+Bu, bu, iki linear system.
+
+354
+00:48:26,324 --> 00:48:30,443
+Of course, bu, aynı number of linear equations
+
+355
+00:48:30,443 --> 00:48:33,364
+ve aynı number of variables, unnawns.
+
+356
+00:48:41,427 --> 00:48:44,686
+Linenasystems'e equivalen, meaning they have the same solution, right?
+
+357
+00:48:44,927 --> 00:48:47,846
+So it's enough for you to know the statement of the theorem.
+
+358
+00:48:48,067 --> 00:48:50,367
+It doesn't matter, it's proof, right?
+
+359
+00:48:50,427 --> 00:48:54,306
+But if you are curious enough, I recommend you to take a look at the proof.
+
+360
+00:48:54,447 --> 00:48:56,427
+It's good, right?
+
+361
+00:48:56,827 --> 00:49:05,827
+But since you will have a test exam, nobody will ask you a proof of a theorem, right?
+
+362
+00:49:06,067 --> 00:49:07,606
+So basically, you have to know.
+
+363
+00:49:08,306 --> 00:49:11,108
+Theorem says, ok?
+
+364
+00:49:20,050 --> 00:49:36,331
+Let me see, we have a corollary of the above theorem, which says, if A and C are raw equivalent matrices of the same order, then the homogenous systems, these systems, are equivalent, right?
+
+365
+00:49:37,630 --> 00:49:47,211
+Suppose this is your linear system. Just to remind you, if B is zero, then sigma is said to be homogenous, right?
+
+366
+00:49:49,108 --> 00:49:52,028
+Homojeni, if not, it is inhomogeneous.
+
+367
+00:49:52,788 --> 00:49:58,907
+And we know what's the meaning of consistency, inconsistency of a linear system, right?
+
+368
+00:49:58,947 --> 00:50:02,568
+We say if system admits a solution, then it is consistent.
+
+369
+00:50:02,768 --> 00:50:06,068
+If it doesn't admit a solution, it is inconsistent, right?
+
+370
+00:50:06,608 --> 00:50:15,007
+And suppose you know that your system has solution, and the next step is to ask how many solutions you have, right?
+
+371
+00:50:16,146 --> 00:50:23,988
+You might have just one solution, a unique solution, I mean, or more than one solution, infinite solutions.
+
+372
+00:50:24,488 --> 00:50:29,867
+So you have to analyze which is the case for each question, right? Each question.
+
+373
+00:50:29,867 --> 00:50:34,367
+So the corollary here says, suppose you have two matrices.
+
+374
+00:50:35,186 --> 00:50:36,447
+de aynı ordur,
+
+375
+00:50:36,527 --> 00:50:37,586
+de aynı şekilde
+
+376
+00:50:37,586 --> 00:50:38,527
+equivalence,
+
+377
+00:50:38,606 --> 00:50:39,387
+oral equivalence,
+
+378
+00:50:39,567 --> 00:50:41,126
+then the homogenous
+
+379
+00:50:41,126 --> 00:50:41,706
+systems
+
+380
+00:50:41,706 --> 00:50:42,248
+represented
+
+381
+00:50:42,248 --> 00:50:43,007
+by these
+
+382
+00:50:43,007 --> 00:50:43,927
+matrices,
+
+383
+00:50:44,086 --> 00:50:44,646
+so these
+
+384
+00:50:44,646 --> 00:50:45,666
+A and C
+
+385
+00:50:45,666 --> 00:50:46,467
+are basically
+
+386
+00:50:46,467 --> 00:50:47,646
+the matrices
+
+387
+00:50:47,646 --> 00:50:48,567
+of coefficient
+
+388
+00:50:48,567 --> 00:50:49,467
+of your systems,
+
+389
+00:50:49,646 --> 00:50:50,606
+homogenous systems.
+
+390
+00:50:51,488 --> 00:50:52,126
+Then these
+
+391
+00:50:52,126 --> 00:50:52,867
+homogenous systems
+
+392
+00:50:52,867 --> 00:50:53,407
+are equivalent.
+
+393
+00:50:53,887 --> 00:50:54,547
+This is quite,
+
+394
+00:50:55,248 --> 00:50:56,867
+quite,
+
+395
+00:50:56,867 --> 00:51:00,166
+how can I say?
+
+396
+00:51:01,300 --> 00:51:28,940
+Bu, bu
+
+397
+00:51:29,907 --> 00:51:44,586
+As I said, the idea is to convert an initial system, which is apparently difficult to solve, into another system, which is easier to solve, right?
+
+398
+00:51:45,248 --> 00:51:50,907
+And then use the fact that equivalent systems have the same solution, right?
+
+399
+00:51:55,443 --> 00:51:57,963
+The method, look at this, let me write.
+
+400
+00:52:01,748 --> 00:52:05,988
+This method is called Gaussian Elimination Method, right?
+
+401
+00:52:07,927 --> 00:52:11,988
+You start with some linear system, right?
+
+402
+00:52:12,807 --> 00:52:19,988
+Suppose you have some difficulty to solve, but you perform some raw elementary operations
+
+403
+00:52:20,547 --> 00:52:28,068
+and convert your initial augmented matrix to another equivalent augmented matrix, CD, right?
+
+404
+00:52:28,564 --> 00:52:44,523
+If this CD is in Rao-Eşelon form, I mean, whenever this, the final step, I mean, right, this final step matrix is in Rao-Eşelon form, then we say Gaussian elimination method.
+
+405
+00:52:44,663 --> 00:52:53,523
+If it is in reduced Rao-Eşelon form, look at this, reduced Rao-Eşelon form, this is the perfect form we could ask, right?
+
+406
+00:52:54,831 --> 00:53:06,831
+GAUS-Jordan-Reduction, ama bu diferençı çok ilgi veren.
+
+407
+00:53:06,831 --> 00:53:12,831
+Bu da bir soru değil, değil mi? Bu da bir soru değil. Bu da bir soru değil.
+
+408
+00:53:12,831 --> 00:53:18,831
+Bu da bir soru, bakın, bu da bir soru.
+
+409
+00:53:20,787 --> 00:53:28,988
+Step 1 says, transform augmented matrix to the matrix CD in Rab-Eşelon form, using elementary Rab operations.
+
+410
+00:53:29,947 --> 00:53:37,887
+The next step says, solution of the lineer system corresponding to the augmented matrix CD, using back substitution.
+
+411
+00:53:38,355 --> 00:53:43,875
+You will understand what it means now, right? In an example, we will see clearly what it means.
+
+412
+00:53:44,114 --> 00:53:55,095
+For the case in which A is a square matrix of the order n, then this linear system has a unique solution, right?
+
+413
+00:53:55,755 --> 00:54:05,355
+I mean, if your linear system contains the same number of linear equations and the variables, then...
+
+414
+00:54:05,619 --> 00:54:28,659
+Let me see. For the case in which a is n by n, and the linear system has a unique solution, right? This is the assumption, right? If your linear system of the same number of equations and variable has a unique solution, then these augmented metrics has the following form. Let us see.
+
+415
+00:54:30,659 --> 00:54:31,838
+Look at this.
+
+416
+00:54:33,460 --> 00:54:34,279
+This is
+
+417
+00:54:38,132 --> 00:54:42,132
+Form, that the augmented matrix CD has, right?
+
+418
+00:54:42,132 --> 00:54:48,132
+Don't forget that A is given as n by n, right?
+
+419
+00:54:48,132 --> 00:54:58,132
+And the system, let me show you, A times x equal to b has a unique solution, right?
+
+420
+00:54:58,132 --> 00:55:01,100
+So don't forget this assumption.
+
+421
+00:55:07,251 --> 00:55:09,050
+This has a unique solution.
+
+422
+00:55:11,351 --> 00:55:12,251
+So this is the
+
+423
+00:55:14,851 --> 00:55:17,050
+Raw Equivalent Augmented Matrix.
+
+424
+00:55:17,851 --> 00:55:18,550
+Look at this.
+
+425
+00:55:25,140 --> 00:55:48,235
+Bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu
+
+426
+00:55:49,202 --> 00:55:56,784
+Rho, that because you have n linear equation and n units of variables in your linear system, right?
+
+427
+00:55:57,943 --> 00:56:05,882
+So this is the raw eşelon form of the CD, the last step augmented matrix, I said, right?
+
+428
+00:56:06,063 --> 00:56:08,242
+So you know how to read this, look at this.
+
+429
+00:56:08,962 --> 00:56:13,784
+The last back substitution, if you remember, we said after you put...
+
+430
+00:56:14,304 --> 00:56:24,304
+İntial augmented matrix in another one, in Rab-Eşelon form, and is equivalent to the initial one, then you have to read your final step matrix.
+
+431
+00:56:25,224 --> 00:56:28,284
+That's exactly what we call back substitution. Look at this.
+
+432
+00:56:29,203 --> 00:56:40,284
+This last line of the augmented matrix, CD, in Rab-Eşelon form, says that Xn is equal to...
+
+433
+00:56:40,914 --> 00:56:51,795
+dn, right? So you know one of the variables immediately, thanks to the raw echelon matrix cd, right?
+
+434
+00:56:53,454 --> 00:57:04,635
+If you prefer to write the corresponding linear equation in coordinate, you have, let me call sigma1, the initial one, and this is the equivalent system, sigma2, right?
+
+435
+00:57:04,635 --> 00:57:08,095
+So cd means this linear equation.
+
+436
+00:57:08,914 --> 00:57:17,414
+Back substitution means, look at this, as soon as you reveal one of the variables,
+
+437
+00:57:17,574 --> 00:57:24,434
+then you return to the previous line of your linear system,
+
+438
+00:57:24,934 --> 00:57:30,454
+and then try to obtain one more variable, one more unknown.
+
+439
+00:57:30,994 --> 00:57:36,654
+Since Xn is known here, and if you put in this equation, you will obtain one.
+
+440
+00:57:36,672 --> 00:58:02,810
+X, N-1. So, one more variable is revealed, right? You will continue this way. Use the preceding line or preceding rows of this linear system. Rows here means, of course, linear equations. I refer to linear equations, right, as rows of the linear system, sigma 2. So, you will continue until you obtain X1.
+
+441
+00:58:03,699 --> 00:58:05,900
+Bu, bu, back substitution.
+
+442
+00:58:07,019 --> 00:58:23,559
+And I think you understand why we are interested in converting augmented matrix of our initial linear system to another one which is equivalent and in the raw eşelon form.
+
+443
+00:58:26,199 --> 00:58:30,300
+If it is in raw eşelon form, so we just perform back substitution.
+
+444
+00:58:30,867 --> 00:58:34,867
+Ve bu noktada bir noktada var.
+
+445
+00:58:34,867 --> 00:58:36,867
+Bu noktada baktabiliyorsunuz.
+
+446
+00:58:36,867 --> 00:58:38,867
+Baktabiliyorsunuz,
+
+447
+00:58:38,867 --> 00:58:40,867
+bu noktada n'ın ekranı,
+
+448
+00:58:40,867 --> 00:58:42,867
+bu noktada bir noktada var.
+
+449
+00:58:42,867 --> 00:58:44,867
+Bu noktada bir noktada var.
+
+450
+00:58:44,867 --> 00:58:46,762
+Bu noktada var.
+
+451
+00:58:50,612 --> 00:59:17,675
+Bu, baktığımda, baktığımda, baktığımda, baktığımda, baktığımda, baktığımda, baktığımda, baktığımda, baktığımda, baktığımda, baktığımda, baktığımda, baktığımda, baktığımda, baktığımda, baktığımda, baktığımda, baktığımda, baktığımda, baktığımda, baktığımda, baktığımda, baktığımda, baktığımda, baktığımda, baktığımda, baktığımda, baktığımda, baktığımda, baktığımda, baktığımda, baktığımda, baktığımda, baktığımda, baktığımda, baktığımda, baktığımda, baktığımda, baktığımda, baktığımda, baktığımda, baktığımda, baktığımda, baktığımda, bak
+
+452
+00:59:18,578 --> 00:59:21,259
+vektör
+
+453
+00:59:24,914 --> 00:59:43,036
+So, let me ask you a simple question. Do you think this matrix is in raw echelon form or not? Let me ask. [öğrenci], do you think this matrix here is in raw echelon form or not? Do you have any answer for this question?
+
+454
+00:59:52,914 --> 00:59:54,516
+[öğrenci].
+
+455
+00:59:56,654 --> 00:59:58,216
+Let me ask you, [öğrenci].
+
+456
+00:59:58,875 --> 01:00:00,695
+Do you have an answer for my question?
+
+457
+01:00:11,730 --> 01:00:14,510
+[öğrenci], orada mısın?
+
+458
+01:00:16,351 --> 01:00:16,971
+Yes, sir.
+
+459
+01:00:20,112 --> 01:00:21,112
+Can you hear me?
+
+460
+01:00:24,270 --> 01:00:25,632
+Yes, I hear you.
+
+461
+01:00:26,132 --> 01:00:26,751
+Look at this.
+
+462
+01:00:26,971 --> 01:00:31,711
+We are given a lineer system that consists of three equations and three unknowns, right?
+
+463
+01:00:31,711 --> 01:00:32,711
+So...
+
+464
+01:00:33,778 --> 01:00:40,498
+I'm asking you if the augmented matrix AB that represents sigma 1 is in raw echelon form already or not.
+
+465
+01:00:42,578 --> 01:00:46,940
+These matrix, right? Do you think this is in raw echelon form?
+
+466
+01:00:47,599 --> 01:00:59,618
+I don't think it is because the first row has also has two ends, three at the bottom.
+
+467
+01:01:00,530 --> 01:01:03,211
+They should be zero. They must be zero.
+
+468
+01:01:05,872 --> 01:01:10,132
+Not exactly. You should express yourself better, I think.
+
+469
+01:01:11,030 --> 01:01:13,591
+Türkçe söyle eğer şey yapamıyorsan, ifade edemiyorsan ki.
+
+470
+01:01:14,810 --> 01:01:18,530
+Yani bu satır indirgenmiş form, satır...
+
+471
+01:01:20,132 --> 01:01:20,711
+Ya sütun.
+
+472
+01:01:28,242 --> 01:01:38,722
+Yani bunu birazcık upper triangulara benzetmeye çalıştık. Teşekkür olarak. Yani hep onlara baktık ama bunda öyle değil. Bu yüzden olmadığını düşünüyorum.
+
+473
+01:01:42,324 --> 01:01:43,148
+Evet.
+
+474
+01:01:49,298 --> 01:01:50,239
+Yanılmıyor muyum hocam?
+
+475
+01:01:52,759 --> 01:01:55,939
+İnternet koptu gitti geldi. Evet tekrardan dönelim.
+
+476
+01:01:57,099 --> 01:01:58,378
+Duyuyorsunuz [öğrenci] duyuyor musun?
+
+477
+01:01:58,378 --> 01:01:59,078
+Duyuyorum hocam, duyuyorum.
+
+478
+01:01:59,498 --> 01:02:02,199
+Ekran paylaşımı yapacağım. Ekranda bir şey görmüyorsun şu anda tabii.
+
+479
+01:02:02,219 --> 01:02:02,958
+Yok hiçbir şey görmüyorum.
+
+480
+01:02:03,618 --> 01:02:08,759
+Tamam. Bu bizim Wi-Fi da mesele ya burada.
+
+481
+01:02:13,172 --> 01:02:14,132
+Şimdi görüyor musun?
+
+482
+01:02:15,211 --> 01:02:15,711
+Evet hocam.
+
+483
+01:02:16,271 --> 01:02:19,231
+Tamam. Satır eşelon formda değil dedin. Neden değil?
+
+484
+01:02:19,731 --> 01:02:28,592
+Çünkü birinci stümle şey, birinin altında iki ve üç var. Onların sıfır olması lazım bizim formda olması için. Yanlış mıyım?
+
+485
+01:02:29,190 --> 01:02:29,452
+Hayır.
+
+486
+01:02:29,471 --> 01:02:30,112
+Çok mu yanlış anladın?
+
+487
+01:02:30,112 --> 01:02:38,052
+Yani bir dakika. Sen şeyle karıştırma ama yani. İndirgenmiş satır eşelon form demedim ben. Satır eşelon form dedim ama.
+
+488
+01:02:41,971 --> 01:02:58,951
+Yani söylediğin şey değil yani, yanlış değil ama daha doğru ifade edebilirdin. Mesela birinci satırın sıfırdan farklı ilk elemanı bir olması lazım. Bir mi? Bir. Tamam güzel. İkinci satıra bakalım. İkinci satırın sıfırdan farklı ilk elemanı birin altında sağında olması gerekiyordu. Nerede o?
+
+489
+01:03:02,172 --> 01:03:03,271
+Birin altında sağında.
+
+490
+01:03:03,956 --> 01:03:26,416
+Yani, değil mi? İkinci satırın sıfırdan farklı iki elemanı bu. Ya birinin altında, altında ama sağında değil gibi, değil mi? Bu satır eşelon formda değil. Olsa zaten sistemi tak diye çözersin gibi. Satır eşelon formda verilmiş demek, ayıklanmış demek. Anlatabildim mi? Ayıklanmış sistem yani. Hiçbir şey yapmana gerek yok. Sadece çekeceksin. Sistemin bilinmeyenlerini çekeceksin yani.
+
+491
+01:03:27,775 --> 01:03:28,096
+Anladım.
+
+492
+01:03:29,010 --> 01:03:42,152
+Bu eşelon formda olmadığı için bunu eşelon forma dönüştüreceğim. Ondan sonrası okuma işi zaten. Back substitution dediği o. Her seferinde bir değişken bulup, bir öncekini de yerine koyup, bir tane daha, bir tane daha, bir tane daha hepsini bulmak.
+
+493
+01:03:44,652 --> 01:03:46,270
+Tamam, devam edelim.
+
+494
+01:03:46,270 --> 01:03:55,490
+Bu matris A, B, is not in raw eşelon form, but it might be converted into raw eşelon.
+
+495
+01:03:55,791 --> 01:03:57,510
+Ağugmented Matrix, right?
+
+496
+01:03:59,490 --> 01:04:03,371
+So this part is an exercise for you, right?
+
+497
+01:04:03,770 --> 01:04:13,230
+I don't want to spend my time with this elementary operations because we have done many examples, right?
+
+498
+01:04:13,550 --> 01:04:22,371
+So please check the operations here in the middle and show that this matrix is indeed
+
+499
+01:04:22,996 --> 01:04:29,996
+Şimdi, CD'in
+
+500
+01:04:29,996 --> 01:04:32,996
+ve bu
+
+501
+01:04:32,996 --> 01:04:49,996
+bu
+
+502
+01:04:49,716 --> 01:04:56,355
+Z, and 3 is equal to Z. You see?
+
+503
+01:04:58,556 --> 01:05:09,614
+Almost nothing to do, right? After you reach this, Rao eşelon, augmented matris CD, which is equivalent to ABD, right?
+
+504
+01:05:12,855 --> 01:05:16,855
+Backstab substitution here means what? Since Z is 3,
+
+505
+01:05:18,123 --> 01:05:20,123
+bu
+
+506
+01:05:42,770 --> 01:05:46,971
+Y, y, minus 1, right?
+
+507
+01:05:47,872 --> 01:05:59,510
+And if you use this information in the first row, you will obtain the variable x.
+
+508
+01:06:00,431 --> 01:06:03,050
+And the procedure is completed, right?
+
+509
+01:06:03,831 --> 01:06:05,211
+The procedure is completed now.
+
+510
+01:06:06,951 --> 01:06:07,550
+Okay.
+
+511
+01:06:10,163 --> 01:06:11,623
+Clear my ski.
+
+512
+01:06:18,483 --> 01:06:20,483
+Bu, gerçekten çok zor.
+
+513
+01:06:21,483 --> 01:06:24,483
+Bu, A, B, C, D'yebiyatı.
+
+514
+01:06:24,483 --> 01:06:29,483
+Bu, bir de yapı yapı yapmak için,
+
+515
+01:06:29,483 --> 01:06:31,483
+bu yapı yapı yapmak için,
+
+516
+01:06:31,483 --> 01:06:34,483
+yapı yapı yapı yapı yapı yapı yapı yapı yapı yapı.
+
+517
+01:06:34,483 --> 01:06:36,483
+Bu, bir de yapı yapı yapı yapı yapı.
+
+518
+01:06:36,483 --> 01:06:40,483
+Bu, bir yapı yapı yapı yapı yapı yapı yapı.
+
+519
+01:06:40,483 --> 01:06:44,483
+Bu yapı yapı yapı yapı yapı yapı.
+
+520
+01:06:45,364 --> 01:06:47,364
+2nd row
+
+521
+01:06:47,364 --> 01:06:49,364
+ve bu 2nd row
+
+522
+01:06:49,364 --> 01:06:51,364
+2nd row
+
+523
+01:06:51,364 --> 01:06:53,364
+1st row
+
+524
+01:06:53,364 --> 01:06:55,364
+3
+
+525
+01:06:55,364 --> 01:06:59,364
+3rd row
+
+526
+01:06:59,364 --> 01:07:01,364
+ve bu 3rd row
+
+527
+01:07:01,364 --> 01:07:20,327
+1st row
+
+528
+01:07:15,092 --> 01:07:38,956
+Bu, bu
+
+529
+01:07:39,764 --> 01:07:47,083
+y is equal to minus 1, z is equal to 3. So, this is the solution vector. You have to write this.
+
+530
+01:07:48,663 --> 01:07:55,264
+Right? This is the solution vector. And there exists the unique solution, right? Unique solution.
+
+531
+01:08:00,851 --> 01:08:01,152
+Ok.
+
+532
+01:08:07,154 --> 01:08:18,354
+This was the case, don't forget, this was the case where, let me write again, A is M by N, right?
+
+533
+01:08:19,934 --> 01:08:26,354
+And X contains N variables, right? This was the case for this situation.
+
+534
+01:08:27,795 --> 01:08:34,354
+What happens if your coefficient matrix A is not square matrix, right? So this is...
+
+535
+01:08:35,027 --> 01:08:37,247
+Bu, bu durumda çok önemli.
+
+536
+01:08:37,787 --> 01:08:42,846
+Bu, genelde bu durumda, n by n,
+
+537
+01:08:42,846 --> 01:08:45,527
+bu bir miktar, değil bir miktar,
+
+538
+01:08:46,728 --> 01:08:49,586
+bu aynı şekilde,
+
+539
+01:08:49,586 --> 01:08:51,806
+ama bu durumda,
+
+540
+01:08:51,806 --> 01:08:53,407
+bazı durumda,
+
+541
+01:08:53,407 --> 01:08:56,027
+bu durumda,
+
+542
+01:08:56,027 --> 01:08:56,627
+mesela,
+
+543
+01:08:58,228 --> 01:08:58,747
+suppose,
+
+544
+01:09:01,011 --> 01:09:08,711
+You have this linear system, c times x is equal to d, where c this time is not a square matrix, right?
+
+545
+01:09:08,770 --> 01:09:10,851
+It's a rectangular matrix, n by n.
+
+546
+01:09:12,730 --> 01:09:19,230
+And assume that this augmented matrix is in raw eşelon form, right?
+
+547
+01:09:19,470 --> 01:09:23,112
+For example, what does it mean? It means something like this. Look at this.
+
+548
+01:09:24,891 --> 01:09:25,891
+You see?
+
+549
+01:09:28,530 --> 01:09:32,190
+Bu, augmented matrix, in rağ veşelon form, right?
+
+550
+01:09:32,610 --> 01:09:35,631
+This, and c is not a square matrix.
+
+551
+01:09:36,570 --> 01:09:37,791
+So, look at this.
+
+552
+01:09:39,131 --> 01:09:46,171
+The first row, second row, and here you have row k, right here, right?
+
+553
+01:09:47,770 --> 01:09:49,962
+So, let me...
+
+554
+01:09:54,386 --> 01:09:55,226
+Look at this.
+
+555
+01:09:59,922 --> 01:10:05,863
+Bu, k by k², part of your linear system, değil mi?
+
+556
+01:10:09,940 --> 01:10:25,940
+But since C is m by n, you have to add more rows. Look at this. You have to add more rows. M linear equation. Your system contains m linear equations, right?
+
+557
+01:10:34,612 --> 01:10:43,252
+And here means the number of variables, right? And unknowns.
+
+558
+01:10:46,252 --> 01:10:46,592
+Okay?
+
+559
+01:10:47,690 --> 01:10:53,851
+So the previous case is actually inserted in this general case, right?
+
+560
+01:10:55,092 --> 01:11:02,471
+Eğer c'e a square matrix, you have just this k by k square block, right?
+
+561
+01:11:02,692 --> 01:11:11,092
+If it is rectangular, I mean, if the coefficient matrix c of your linear system is rectangular, so you have to extend this linear system.
+
+562
+01:11:11,211 --> 01:11:15,211
+This is Rav Eichelon, last step matrix.
+
+563
+01:11:15,372 --> 01:11:20,252
+You have to consider it in extended form, like you see in the screen, right?
+
+564
+01:11:20,252 --> 01:11:21,912
+But look at this.
+
+565
+01:11:22,708 --> 01:11:25,208
+n-k, Rose.
+
+566
+01:11:29,875 --> 01:11:33,515
+Since it is in raw echelon form, it must be in raw echelon form.
+
+567
+01:11:34,715 --> 01:11:41,235
+You see, the completely zeros might be at the bottom of the matrix, right?
+
+568
+01:11:46,515 --> 01:11:48,235
+So you have to...
+
+569
+01:11:51,860 --> 01:12:03,978
+This matrix CD, if you prefer to write in coordinates, you have to consider this sigma in blue, right?
+
+570
+01:12:04,780 --> 01:12:08,478
+And what about the solution in this general case?
+
+571
+01:12:10,619 --> 01:12:12,780
+What about the solution in this general case?
+
+572
+01:12:14,099 --> 01:12:18,891
+These lines say much more than you can...
+
+573
+01:12:19,699 --> 01:12:34,719
+Evet, look at this. If d sub k plus 1 is 1, then this system has no solution, right? This is because at least one of the equation is not satisfying, right?
+
+574
+01:12:37,219 --> 01:12:38,978
+Suppose this is 1, for example.
+
+575
+01:12:39,603 --> 01:12:49,324
+It is nonsense, right? 0 times x1 plus 0 times x2 plus 0 times xn is equal to 1 is nonsense.
+
+576
+01:12:50,382 --> 01:12:56,962
+That's why it is one of the equations is not satisfied and system sigma has no solution, right?
+
+577
+01:12:57,824 --> 01:13:02,583
+If this is 0 instead of 1, let me clear.
+
+578
+01:13:10,099 --> 01:13:12,719
+If this is zero, what happens?
+
+579
+01:13:15,298 --> 01:13:21,199
+That means the rest of the constant d, d's, are also zero, right?
+
+580
+01:13:21,380 --> 01:13:21,998
+Look at this.
+
+581
+01:13:23,440 --> 01:13:27,960
+Since this cd is assumed to be in ravish alone form, right?
+
+582
+01:13:30,099 --> 01:13:30,890
+If...
+
+583
+01:13:31,890 --> 01:13:45,592
+I don't know if it is clear for you. Arkadaşlar, açık mı burası sizin için, değil mi? Yoksa yani anlaşılmıyorsa ben Türkçe'de anlatabilirim bu kısmı bak. Bu D, K, artı bir. Bir ise sistemin çözümü yok çünkü en azından bir satır sağlanmamış oluyor sistemde.
+
+584
+01:13:45,970 --> 01:13:59,271
+Sıfır olursa kendinden sonraki D'ler de sıfır olacağından. Niye? Çünkü matris C'de genişletilmiş matrisi satır eşelon formda dedik. Satır eşelon formda olan bir matrisin sıfır olan satırları da matrisin en altında olmalı demiştik.
+
+585
+01:13:59,603 --> 01:14:13,122
+Değil mi? Yani dk artı bir sıfır dediğin anda, ondan sonrakiler de sıfır olduğu için, ondan sonraki d'leri kastediyorum. Ne oluyor? Şuradan itibaren bütün satırlar sıfır oluyor. Tamam mı? Sıfır satırlar.
+
+586
+01:14:13,682 --> 01:14:16,143
+Onlar da matrisinin en altında olması gerektiği için.
+
+587
+01:14:19,827 --> 01:14:27,467
+Satır eşelon formda olduğundan C'de, genişletilmiş matrisi, ne elde edersin? Şunu elde edersin, bakın.
+
+588
+01:14:32,211 --> 01:14:56,172
+Gene back substitution kullanacaksın. Ama xn için ne diyeceksin? dk diyeceksin. xn-1, işte ne yapacaksın? xn'in değerini bir önceki denklemde, yani şurada bak, bunu biliyorsun, burada yerine koy, xn-1'i bul. Ondan sonra onu bir önceki denklemde yerine koy, xn-2'yi bul. Ondan sonra x1'e kadar bu şekilde gelirsin. Back substitution. Geriye doğru sarıyorsun yani. Anlatabiliyor muyum?
+
+589
+01:14:56,690 --> 01:15:01,190
+Her defasında elindeki bir değişkenle bilinmeyen başka bir tanesini ortaya çıkarmaya çalışıyoruz.
+
+590
+01:15:03,072 --> 01:15:07,572
+Yani bu da bu şekilde yapılıyor. Bunları örnekler üzerinde daha iyi anlarız.
+
+591
+01:15:07,672 --> 01:15:09,371
+Mesela şu example 2'ye bakalım.
+
+592
+01:15:09,371 --> 01:15:12,971
+Let us study on this example 2.
+
+593
+01:15:14,652 --> 01:15:21,771
+Do you think these augmented metrics, this represent a lineal system, right? Let me write.
+
+594
+01:15:23,219 --> 01:15:40,899
+x1 plus 2 times x2 plus 3 times x3, 4 times x4, 5 times x5 is equal to 6, 7 is equal to what?
+
+595
+01:15:51,059 --> 01:15:51,639
+You see?
+
+596
+01:16:11,506 --> 01:16:14,307
+Alright, this is our linear systems in coordinates, right?
+
+597
+01:16:16,327 --> 01:16:20,208
+So what do you think? What kind of solution, if exists, do we have?
+
+598
+01:16:20,766 --> 01:16:24,567
+Unique solution or more than one solution, if it exists, right?
+
+599
+01:16:25,766 --> 01:16:29,628
+Do you think this matrix is in Rav Eşelon form already or not?
+
+600
+01:16:36,307 --> 01:17:02,032
+Bu, bu
+
+601
+01:17:02,032 --> 01:17:16,131
+M is equal to 4. How many unknowns we have? 5. Right? 5 unknowns, but 4 linear equations. So how to solve this linear system?
+
+602
+01:17:23,506 --> 01:17:24,606
+Hocam sesiniz kesildi.
+
+603
+01:17:27,987 --> 01:17:29,747
+Sesim mi kesildi? Şimdi geliyor mu?
+
+604
+01:17:30,106 --> 01:17:30,527
+Şu an geliyor.
+
+605
+01:17:32,926 --> 01:17:44,766
+Evet. Şimdi bakın arkadaşlar, 4 tane denklem, 5 tane bilinmeyen var. Nasıl çözeceğim? Bana verilen genişletilmiş matrisle satır eşelon formda bunun okumasını yapabilmem lazım, tamam mı? Nasıl yapacağım okumasını?
+
+606
+01:17:45,587 --> 01:17:47,987
+Yani bilinmeyen sayısı kadar satır yok elimde.
+
+607
+01:17:49,042 --> 01:18:15,682
+Bu işi zorlaştırmaz. Sadece biraz, yani ifade ederken dikkatli olmanızı gerektiriyor. Yani ne kastediyorum? Burada büyük bir ihtimalle şu değişkenlerden bazılarının cinsinden yazılacak demektir bu. Tamam mı? Bak onu da nasıl buluyorsun? En son satırı okumaya çalışalım. En son satırı. Kırmızı renk alalım. En son satırı okumaya çalışalım. Nasıl okuyacaksın bunu?
+
+608
+01:18:19,219 --> 01:18:32,398
+En son satır. Şurada yazıyor zaten. Yani burada x3'ü veya x5'i yalnız bırakmaya çalışsan, birini diğeri cinsinden yazmak dışında bir seçeneğin yok. Öyle mi diyeyim?
+
+609
+01:18:34,539 --> 01:18:39,639
+Bu durumda bir tanesini serbest değişken alacaksın, bir yerine bağımlı değişken alacaksın demektir. Bakın.
+
+610
+01:18:39,639 --> 01:18:40,398
+Bakın.
+
+611
+01:18:47,411 --> 01:18:50,411
+2x5
+
+612
+01:18:50,411 --> 01:18:52,411
+ve 9
+
+613
+01:18:52,411 --> 01:18:54,411
+Bakın
+
+614
+01:18:58,708 --> 01:19:14,287
+So, if you prefer to isolate x4, that means you are going to write x4 in terms of x5, right, or as a function of x5.
+
+615
+01:19:15,568 --> 01:19:15,728
+Okay?
+
+616
+01:19:18,228 --> 01:19:21,987
+And then you will use this.
+
+617
+01:19:23,443 --> 01:19:50,143
+line, for example, and then try to write x3 in terms of x4, x5, right? Let me show you. Okay. We have used this one and preferred x4 as a function of x5. All right. Now use another back substitution I'm using right now. x3.
+
+618
+01:19:51,667 --> 01:20:01,507
+Which equation must be used? This one. This one. 7 minus.
+
+619
+01:20:05,556 --> 01:20:18,476
+Ama since we already wrote x4 in terms of x5, we will write what? 9 minus 2 times x5 minus 3 times x5.
+
+620
+01:20:18,476 --> 01:20:24,735
+And this means x3 will be as a function of x5.
+
+621
+01:20:25,103 --> 01:20:28,862
+X4, exactly like X4, it was a function of X5, right?
+
+622
+01:20:29,323 --> 01:20:36,443
+So that's why I would like to call X5 as a free variable, right? Free variable.
+
+623
+01:20:37,342 --> 01:20:39,443
+So if you continue this way, look at this.
+
+624
+01:20:43,572 --> 01:20:55,251
+Let me show you how many I finalize here. Minus 4 times x5 minus 3 times x5.
+
+625
+01:20:58,962 --> 01:21:05,423
+Bu, bu, 7x5-11.
+
+626
+01:21:05,423 --> 01:21:10,344
+Bu, x3-5.
+
+627
+01:21:10,344 --> 01:21:11,344
+Evet?
+
+628
+01:21:11,344 --> 01:21:13,903
+Bu, bu,
+
+629
+01:21:13,903 --> 01:21:23,722
+bu,
+
+630
+01:21:23,987 --> 01:21:26,987
+Bu, x2, as a function of x5.
+
+631
+01:21:27,447 --> 01:21:31,387
+And finally, x1, as a function of x5.
+
+632
+01:21:31,528 --> 01:21:34,367
+So, what we have done here is that
+
+633
+01:21:34,367 --> 01:21:41,947
+4 over 5 variables are functions of x5.
+
+634
+01:21:42,367 --> 01:21:47,006
+So, you have to select, or you have to consider x5 as a free variable,
+
+635
+01:21:47,188 --> 01:21:51,247
+and the rest of the unknowns as functions of this free variable, right?
+
+636
+01:21:51,730 --> 01:22:13,310
+Since x5 is free, I used to write this way. You don't have to interpret this equation as a conventional equation, right? It means x5, you can attribute any number, real number to x5, right?
+
+637
+01:22:18,644 --> 01:22:19,344
+Look at this.
+
+638
+01:22:27,539 --> 01:22:30,318
+We had five variables, right, in our linear system.
+
+639
+01:22:30,918 --> 01:22:40,818
+What we have done was to select x5 as a free variable, right?
+
+640
+01:22:41,318 --> 01:22:46,498
+But x4 was a function of x5, right?
+
+641
+01:22:47,578 --> 01:22:51,338
+Let me write, I don't know, let me write something like this.
+
+642
+01:22:51,578 --> 01:22:52,199
+It's a function.
+
+643
+01:22:54,515 --> 01:23:08,476
+If you prefer, you can explicitly write, what is the function f sub 4, right? I don't care. X3 was a function of x5, x2 was a function of, let me say, f2, right?
+
+644
+01:23:10,935 --> 01:23:16,274
+X1 was a function of x5. So this is a free variable.
+
+645
+01:23:20,114 --> 01:23:27,074
+Ve bu 4 sonlar, funcions, funcions of x5.
+
+646
+01:23:28,074 --> 01:23:33,435
+They are dependent variable, while x5 is an independent variable.
+
+647
+01:23:34,556 --> 01:23:39,435
+So, any number you assign to x1 gives you a solution.
+
+648
+01:23:40,628 --> 01:23:48,427
+You are free to assign any real number. You have infinitely many choices, right? So that means exactly your system has infinitely many solutions.
+
+649
+01:23:50,068 --> 01:23:51,768
+Infinitely many solutions, right?
+
+650
+01:23:54,048 --> 01:23:54,987
+Look at this.
+
+651
+01:23:57,367 --> 01:23:59,407
+This is a solution, right?
+
+652
+01:24:04,690 --> 01:24:06,251
+R is any real number.
+
+653
+01:24:06,730 --> 01:24:13,871
+So x4 in terms of R is 9 minus 2 times R, and the rest is the same, right?
+
+654
+01:24:15,152 --> 01:24:16,911
+Always as a function of R.
+
+655
+01:24:18,230 --> 01:24:24,730
+For example, if you put 1 instead of R, your solution vector will be what?
+
+656
+01:24:25,851 --> 01:24:31,110
+Minus 11, 7, minus 10.
+
+657
+01:24:32,340 --> 01:24:34,238
+7, 1.
+
+658
+01:24:34,819 --> 01:24:36,399
+This is one of the solutions.
+
+659
+01:24:37,920 --> 01:24:38,099
+Right?
+
+660
+01:24:39,440 --> 01:24:44,119
+If you assign, for example, minus 1, you will obtain another solution.
+
+661
+01:24:44,300 --> 01:24:44,440
+Right?
+
+662
+01:24:44,940 --> 01:24:48,319
+Another solution for another solution.
+
+663
+01:24:52,179 --> 01:24:58,998
+vekizmektör, bu yüzden de system, genelasyonu, genelasyonu, genelasyonu, genelasyonu, genelasyonu.
+
+664
+01:24:58,998 --> 01:25:04,539
+Ve bir simple way to characterize this.
+
+665
+01:25:04,818 --> 01:25:14,719
+Let me write, how to know variables, we have to select as free variables.
+
+666
+01:25:17,652 --> 01:25:22,152
+There is a way to know this, for example, suppose this is your system.
+
+667
+01:25:37,074 --> 01:25:54,916
+Xn, b2, and the coefficient matrix is not necessarily square matrix, right? M1, X1, Mn, X, n is equal to b, m.
+
+668
+01:25:55,574 --> 01:26:00,556
+Okay? Suppose you are given such a linear system where...
+
+669
+01:26:04,371 --> 01:26:16,271
+Look at this. Let me write the augmented matrix, right? That represent sigma. So m, a is m by n, right? m by n.
+
+670
+01:26:27,635 --> 01:26:28,135
+Alright.
+
+671
+01:26:29,876 --> 01:26:33,355
+So write the augmented matrix for this system.
+
+672
+01:26:33,355 --> 01:26:34,835
+Let us write.
+
+673
+01:26:50,291 --> 01:26:51,871
+Bu, bu, our augmented matrix.
+
+674
+01:26:52,951 --> 01:27:02,690
+So, here is the criterion I told you to understand how many free variables we have to select if we have more than one solution. Look at this.
+
+675
+01:27:14,003 --> 01:27:21,003
+You have to follow exactly the next criterion to know about the solution of the above linear system.
+
+676
+01:27:22,583 --> 01:27:31,523
+Suppose you put the augmented matrix after some elementary raw operations in reduced raw echelon form, right?
+
+677
+01:27:32,003 --> 01:27:39,682
+Then, I mean, let me write. If I don't write, maybe you will not follow in a good way.
+
+678
+01:27:40,947 --> 01:27:48,827
+İzlediğiniz için, birisiniz, rağver operasyonu, ve
+
+679
+01:27:48,827 --> 01:27:57,506
+bu, rağver eşelonu form, ağaç, metriks, birisiniz, birisiniz, birisiniz, birisiniz,
+
+680
+01:28:07,506 --> 01:28:15,027
+Linear system, right? So, you have to, you have to check these conditions.
+
+681
+01:28:25,619 --> 01:28:26,639
+Let me write,
+
+682
+01:28:26,639 --> 01:28:26,658
+let me write,
+
+683
+01:28:31,699 --> 01:28:33,451
+You have to...
+
+684
+01:28:37,074 --> 01:28:39,036
+You have to compare the rank.
+
+685
+01:28:42,867 --> 01:28:51,827
+Rank of these two matrices, right? Versus, let me write this. Whenever they don't have the same rank, that mean system does not have solution.
+
+686
+01:28:53,247 --> 01:29:03,506
+Okay, if they have the same rank, if they have the same rank, do you remember the definition of rank of a matrix?
+
+687
+01:29:04,083 --> 01:29:16,243
+Rank of a matrix mean, after you put your matrix in raw eşelon form, you count non-zero rows, right? That number is exactly the rank of your matrix, right?
+
+688
+01:29:18,003 --> 01:29:27,243
+So, whenever these two matrices, A and AB, do not have the same rank, I mean, if...
+
+689
+01:29:28,724 --> 01:29:33,023
+They don't have the same rank, then no solution, right? No solution.
+
+690
+01:29:34,264 --> 01:29:40,724
+If they have the same number, let me write R, then you have to...
+
+691
+01:29:45,139 --> 01:29:48,699
+2 more conditions, right?
+
+692
+01:29:49,559 --> 01:29:54,760
+If r is equal to n, that there exists just one solution.
+
+693
+01:29:57,599 --> 01:30:02,039
+If r is less than n, that means
+
+694
+01:30:02,039 --> 01:30:04,840
+infinitely
+
+695
+01:30:04,840 --> 01:30:07,940
+many solution
+
+696
+01:30:08,755 --> 01:30:35,494
+And in this case, the free variables, the number of free variables is this one. Look at this. K is equal to N minus R. Units of free variables you have, right? So let me return to my original book.
+
+697
+01:30:37,108 --> 01:30:40,907
+Bu örneğin, sadece 1-3 variables.
+
+698
+01:30:40,907 --> 01:30:44,108
+Bu nedenle, bu materialli, bu materialli,
+
+699
+01:30:44,108 --> 01:30:58,108
+bu materialli,
+
+700
+01:30:58,108 --> 01:31:00,608
+let me clear the screen,
+
+701
+01:31:01,608 --> 01:31:02,608
+look at this,
+
+702
+01:31:07,987 --> 01:31:10,367
+This is already in raw eşelon form, right?
+
+703
+01:31:12,086 --> 01:31:14,447
+So, this is C.
+
+704
+01:31:17,146 --> 01:31:19,467
+Rank C.
+
+705
+01:31:22,067 --> 01:31:24,467
+Calculate the rank of this matrix, right?
+
+706
+01:31:25,387 --> 01:31:29,127
+And rank of CD, augmented matrix, right?
+
+707
+01:31:29,586 --> 01:31:35,047
+And compare. If they are not equal, then no solutions exist, right?
+
+708
+01:31:35,443 --> 01:31:40,443
+If they are equal, if they are equal,
+
+709
+01:31:45,363 --> 01:31:55,863
+You have to compare what? You have to compare the number of unknowns and rank. Okay?
+
+710
+01:31:59,003 --> 01:32:11,863
+If you remember, I have written something like this. Suppose they are equal, right? Suppose they are equal. Let us say they are equal. And if...
+
+711
+01:32:12,594 --> 01:32:18,094
+Bu durumda, bu durumda, nesil birçok var.
+
+712
+01:32:18,094 --> 01:32:22,755
+Eğer bu durumda, bu durumda, sadece bir solution var.
+
+713
+01:32:22,755 --> 01:32:29,375
+Bu durumda, bu durumda değil, çünkü bu sistem sistemde de altyazıcı manya solucu var.
+
+714
+01:32:29,375 --> 01:32:31,916
+Bu durumda, bu durumda,
+
+715
+01:32:32,211 --> 01:32:46,092
+R is less than n. And how many variables we have here? Five. Right? You will see that the rank is four. So you have...
+
+716
+01:32:51,667 --> 01:32:55,667
+If rank is 4, and then...
+
+717
+01:32:58,804 --> 01:33:13,703
+n-r, 5-4, 1-3 variable, you have to work with 1-3 variables, x5, for example.
+
+718
+01:33:15,703 --> 01:33:18,144
+And then you have infinitely many solutions, right?
+
+719
+01:33:22,355 --> 01:33:42,996
+Ok, I have already spent 55 minutes. I have to give a 10 minute break, but let me use three more minutes and then complete to 60 minutes, just one hour, right? And then give the break.
+
+720
+01:33:45,780 --> 01:34:08,860
+We have one more exercise here. You have a system represented by these augmented metrics, right? It is in raw echelon form, of course, right? But no solution exists because the last equation or the last row of these augmented metrics in raw echelon form says what? Says something impossible, right?
+
+721
+01:34:12,179 --> 01:34:19,371
+Bu, bu
+
+722
+01:34:24,724 --> 01:34:25,724
+Tamam.
+
+723
+01:34:27,483 --> 01:34:28,882
+Do you have any questions?
+
+724
+01:34:29,882 --> 01:34:37,483
+You have to study by yourself because it's not easy to understand everything just in the first time, right?
+
+725
+01:34:41,203 --> 01:34:46,684
+Arkadaşlar, bunları ilk seferde anlamayabilirsiniz. Lenden kendinizin de geçmesi lazım.
+
+726
+01:34:48,923 --> 01:34:57,264
+Burada mesela kaç tane değişken var? Dört tane değişken var. Çünkü matrisin sütunlarına bakın, C matrisinin sütunları. Hangisi C matrisi bu arada burada?
+
+727
+01:34:58,984 --> 01:35:02,603
+Bakın C matrisim şu katsaylar matrisim. Dört tane sütunu var.
+
+728
+01:35:03,890 --> 01:35:31,130
+Üç tane satır var. Üç satır demek M. Yani satır sistem üç tane lineer denklemden oluşuyor, dört tane değişkenden oluşuyor. Değil mi? Yani katserler maddesi kare maddesi değil, daha genel hali. Genel bir lineer sisteme örnek vermiş burada. Değil mi? Ama son satırına baktığınız zaman, son satırına baktığınız zaman mantıksız bir şey var orada. İşte o size sistemin çözümünün olmadığını söylüyor.
+
+729
+01:35:31,506 --> 01:35:45,487
+Yani sen bulamazsın ki x1, x2, x3, x4, şu şartı sağlayan bir x1, x2, x3, x4 bulabilir misin? Mümkün değil. Ama çözüm olabilmesi için sistemin bütün denklemlerinin aynı anda, simultane bir şekilde sağlanıyor olması lazım.
+
+730
+01:35:46,208 --> 01:35:56,807
+Bu da satırlardan bir tanesi, 0x1, 0x2, 0x3, 0x4 eşittir bir de satırlardan biri. Ama bu satırı sağlayan 4 tane değişken bulamazsın.
+
+731
+01:35:57,684 --> 01:36:01,443
+Değil mi? Bir tane denklem sağlanmazsa sistemin çözümü olmaz.
+
+732
+01:36:02,644 --> 01:36:21,923
+Gauss yok etme metoduyla Gauss-Jordan indirgeme metodu, reduction form diyelim ona, arasındaki fark şu, birinde kat sayılar matrisi, o en son adımda bulduğun eşelon form var ya, genişletilmiş matris var ya, o ya eşelon formdadır ya da indirgeniş eşelon form.
+
+733
+01:36:21,923 --> 01:36:30,644
+Eşelon formdaysa back substitution yaparaktan değişkenleri her seferinde birer tane, birer tane bula bula bula tamamlarsın. Ama Gauss-Jordan...
+
+734
+01:36:30,644 --> 01:36:40,844
+Bu anlamda şudur, eşelon formda değil, o en son bulduğun augmented matris, denk matris, indirgenmiş satır formdaysa, ayıklanmış dediğim işte o, artık yapmana gerek yok.
+
+735
+01:36:41,503 --> 01:36:44,064
+Backstreet strategy yapmana gerek yok, o onun içinde zaten.
+
+736
+01:36:45,484 --> 01:36:49,123
+Yani, bilmem anlatabiliyor muyum? Burada ben ara vereceğim, sorusu olan var mı?
+
+737
+01:36:51,083 --> 01:36:52,523
+Var mı sorusu olan arkadaşlar?
+
+738
+01:36:54,867 --> 01:37:15,307
+Bir arkadaşınız mesaj atmış bakalım. Bu konuda ilme vizeye hocam. İlk 6 haftanın konusu vizeye dahil. Yani şu anlattıklarımda dahil. Ama kremer yöntemi yok. Kremer yöntemi çok basit. Yani ben 10 dakikada da anlatırım onu. Sorun değil. Yani bir şekilde telafi etmiş olduk aslında işlemediğimiz konuları.
+
+739
+01:37:15,827 --> 01:37:38,427
+Yani benim şu anda burada gösterdiğim size lineer denklem sistemlerinin çözümü, neyle çözümü? Denk matrisler yardımıyla. Yani buna birisi Gauss yok etme metodu demiş, öteki Gauss'ı Jordan metodu demiş. Aralarındaki fark da, yani size verilen sistemin genişletilmiş matrisini eşelon forma koyarsan, back substitution ile değişkenleri bulma işine Gauss yok etme metodu deniyor.
+
+740
+01:37:38,783 --> 01:37:54,744
+Yok eğer bir adım daha öteye indirgenmiş satır eşelon forma getirip ondan sonra okuma yapayım diyorsan ona da Gauss-Jordan diyor. Çünkü back subsat bir şey yapmana gerek yok. İndirgenmiş satır forma soktuktan sonra genişletilmiş matris. Zaten ayıklanmış olarak veriyor sen değil mi? Sadece okuyacaksın.
+
+741
+01:37:55,315 --> 01:38:19,315
+Yani gördüğün matris de zaten kimin kim olduğunu söylüyor sana. Yani geriye sarıp değişkenlerden birini öteki denklemde yerine koyup başka bir değişken çıkartmana gerek yok. Değil mi? Niye? Çünkü her satının pivot elemanının sütununda kendinden başka sıfır olmayan eleman yok. Değil mi? Var mı sorusu olan arkadaşlar yoksa 10 dakika ara vereyim.
+
+742
+01:38:21,876 --> 01:38:25,355
+Ben şimdi kapatacağım sistemi, 10 dakika sonra tekrar bağlanacağım, oldum.
+
+743
+01:38:26,155 --> 01:38:27,476
+Görüşmek üzere, hoşçakalın.
+
+744
+01:38:28,036 --> 01:38:28,515
+Görüşmek üzere.

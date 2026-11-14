@@ -1,0 +1,1559 @@
+1
+00:00:33,875 --> 00:00:51,635
+Alright, let us continue with the rest of the topics today. Any questions? If you have any questions, I think you have to ask right now, okay? Don't you have any questions?
+
+2
+00:00:57,460 --> 00:01:05,640
+All right, let me continue with the matrix multiplication. This is much more important than the matrix additions column multiplication, right?
+
+3
+00:01:06,620 --> 00:01:18,439
+Before the definition, I have to say, what do you have to understand by dot product or inner product between n vectors in Rn, right?
+
+4
+00:01:18,879 --> 00:01:23,740
+Suppose you are given these two column matrices.
+
+5
+00:01:24,947 --> 00:01:31,887
+That might be considered as n-vektörs in RL, as I said before, right?
+
+6
+00:01:32,367 --> 00:01:41,227
+So, look at the definition of dot product between two n-vektörs in RL, or two column matrices, okay?
+
+7
+00:01:42,027 --> 00:01:45,987
+You multiply the same entries.
+
+8
+00:02:11,795 --> 00:02:28,036
+So, the dot product of two vectors is a real number, not a vector, right? Not a vector. So, please don't write A times B, I mean the dot product, as a vector. This is not a vector, not a vector, right?
+
+9
+00:02:31,175 --> 00:02:35,255
+Not a vector, just a number. How do you obtain this number?
+
+10
+00:02:36,563 --> 00:02:40,163
+A1, B1, just multiply.
+
+11
+00:02:42,803 --> 00:02:44,883
+Multiply A2 by B2.
+
+12
+00:02:45,663 --> 00:02:56,183
+Do the same with the rest of elements, right, of both vectors and then sum all the product to get this number, right?
+
+13
+00:02:56,584 --> 00:03:03,063
+This number is associated to some geometry, nice geometry, but it's not time to talk about it.
+
+14
+00:03:03,663 --> 00:03:08,843
+Möjbe, ama neyemi, let me, let me tell you some, something about it.
+
+15
+00:03:10,123 --> 00:03:12,783
+This number, look at this, you have.
+
+16
+00:03:16,372 --> 00:03:17,972
+ve n-vektör,
+
+17
+00:03:27,123 --> 00:03:35,683
+So, these two vectors live in Rn, right? Since both consist of n component or n coordinate.
+
+18
+00:03:36,644 --> 00:03:49,264
+Alright. So, the definition we already know, right? You have to product, consider this product for each i, and then sum all of them, right?
+
+19
+00:03:49,264 --> 00:03:52,544
+To obtain this number. And I said this number.
+
+20
+00:03:53,139 --> 00:04:20,139
+Bu, bu
+
+21
+00:04:20,884 --> 00:04:46,543
+Let me change the color here to see better. Look at this projection vector. This is the projection of A onto B, right? Let me call C this vector. You see, is there any common property shared by C and B? Do you think we have any?
+
+22
+00:04:47,252 --> 00:04:49,831
+Common property for CMB here or not?
+
+23
+00:04:51,072 --> 00:04:51,632
+Any answer?
+
+24
+00:04:55,411 --> 00:05:00,851
+What is the difference between C and B? The projection of A onto B.
+
+25
+00:05:01,411 --> 00:05:04,231
+Same direction?
+
+26
+00:05:05,771 --> 00:05:09,971
+Yes, they are parallel, right? They are on the same supporting line.
+
+27
+00:05:10,371 --> 00:05:13,971
+So you can say C is parallel to B, which means what?
+
+28
+00:05:13,971 --> 00:05:18,191
+Which means?
+
+29
+00:05:20,660 --> 00:05:27,600
+There exists a k scalar number such that c is k times b, right?
+
+30
+00:05:29,720 --> 00:05:34,340
+And this number k is related.
+
+31
+00:05:38,132 --> 00:05:40,812
+ile dot product.
+
+32
+00:05:42,151 --> 00:05:44,112
+To obtain this number k,
+
+33
+00:05:44,711 --> 00:05:47,812
+you have to consider the dot product of a and b.
+
+34
+00:05:48,252 --> 00:05:50,552
+So, roughly speaking, let's say,
+
+35
+00:05:51,252 --> 00:05:54,312
+dot product or inner product is related with
+
+36
+00:05:54,312 --> 00:05:57,372
+the projection of one of the vectors onto the other.
+
+37
+00:05:59,052 --> 00:06:00,951
+This is enough for you right now.
+
+38
+00:06:03,951 --> 00:06:04,632
+Alright.
+
+39
+00:06:05,843 --> 00:06:10,348
+Bu, bu
+
+40
+00:06:13,459 --> 00:06:40,839
+To give the definition of matris multiplication, right, here is a simple example. You have two vectors in R4, four-dimensional Euclidean space, right, and the dot product is number minus six, right, you have to multiply one and two, minus two and three, three and minus two, four and one.
+
+41
+00:06:41,684 --> 00:06:47,784
+Sama, all of this product to get this number minus 6.
+
+42
+00:06:48,824 --> 00:06:49,624
+All right.
+
+43
+00:06:51,304 --> 00:07:07,144
+So what does this dot product, what does it, let me say, maybe you are curious what it has to do with matrix multiplication, right?
+
+44
+00:07:07,144 --> 00:07:07,644
+So let me.
+
+45
+00:07:08,115 --> 00:07:12,915
+...immediately, the definition of matris multiplication here.
+
+46
+00:07:13,956 --> 00:07:15,235
+It's not readable.
+
+47
+00:07:16,996 --> 00:07:20,196
+Unfortunately, this page is not readable, right?
+
+48
+00:07:20,436 --> 00:07:22,836
+So let me use my notes...
+
+49
+00:07:25,475 --> 00:07:26,355
+...to write...
+
+50
+00:07:32,211 --> 00:07:36,711
+So, matris, multiplication.
+
+51
+00:07:40,500 --> 00:07:44,980
+So, suppose you are given two matrices, right?
+
+52
+00:07:48,627 --> 00:07:50,727
+Bu ilk soru.
+
+53
+00:08:06,927 --> 00:08:29,468
+They have to possess the suitable order, right? Suitable order means the following. If A is M by N matrix, then you can multiply such a matrix with another B if this B has
+
+54
+00:08:30,387 --> 00:08:35,587
+N rows, it doesn't matter how many columns, so let me write P here.
+
+55
+00:08:36,347 --> 00:08:41,048
+You see, you have to be very careful here, right?
+
+56
+00:08:41,647 --> 00:08:48,947
+The number of columns of A and the number of rows of B are equal.
+
+57
+00:08:49,167 --> 00:08:54,207
+Only in this case, you can multiply these two matrices.
+
+58
+00:08:57,364 --> 00:08:58,544
+Let me write C.
+
+59
+00:08:59,124 --> 00:09:00,544
+Will be a matrix.
+
+60
+00:09:04,211 --> 00:09:09,871
+M, Rho, ve P, kolumns, right?
+
+61
+00:09:10,711 --> 00:09:12,192
+Is it okay for you or not?
+
+62
+00:09:12,291 --> 00:09:14,652
+This is the necessary condition, right?
+
+63
+00:09:14,711 --> 00:09:16,591
+To talk about the matrix multiplication.
+
+64
+00:09:16,831 --> 00:09:19,371
+You cannot multiply any two matrices.
+
+65
+00:09:20,031 --> 00:09:23,291
+You have to require this condition, right?
+
+66
+00:09:23,668 --> 00:09:34,888
+The number of columns of one of the matrices has to be equal to the number of rows of the other matrix involved in multiplication, right?
+
+67
+00:09:35,908 --> 00:09:42,807
+Okay, after you have fulfilled this condition, you can give the formal definition of matrix multiplication.
+
+68
+00:09:42,807 --> 00:09:49,628
+As I said before, I would prefer the compact notation. Let me write aij.
+
+69
+00:09:50,772 --> 00:09:52,432
+B, I, J.
+
+70
+00:09:53,692 --> 00:09:57,352
+A is M by N.
+
+71
+00:09:57,532 --> 00:10:01,711
+As I said, above B is M by P matrix.
+
+72
+00:10:02,432 --> 00:10:04,372
+A times B.
+
+73
+00:10:04,372 --> 00:10:05,732
+This is the product matrix.
+
+74
+00:10:05,932 --> 00:10:08,492
+It will give us another matrix.
+
+75
+00:10:08,892 --> 00:10:10,252
+Let me call C.
+
+76
+00:10:10,652 --> 00:10:14,392
+How do you obtain the entries of this product matrix?
+
+77
+00:10:15,332 --> 00:10:18,188
+This is M by...
+
+78
+00:10:19,443 --> 00:10:26,144
+p, right, I mean i, is running from 1 to m,
+
+79
+00:10:29,299 --> 00:10:36,559
+ve j, the index that shows the number of columns, is running from 1 to p.
+
+80
+00:10:36,980 --> 00:10:42,899
+So, how do you obtain this element for every i and j?
+
+81
+00:10:44,939 --> 00:10:49,779
+This point has to be clarified for you to understand the matrix multiplication.
+
+82
+00:10:50,819 --> 00:10:52,219
+Here is the definition.
+
+83
+00:10:53,399 --> 00:10:55,339
+So, let me write.
+
+84
+00:10:56,436 --> 00:11:19,676
+1, 1. 1, how many columns we said that A has, has, how many columns A has, let me say, we said M by N, right? M by N, so I have to write here, N. Let me write one more row here, 2, 1, 2, N.
+
+85
+00:11:24,159 --> 00:11:50,959
+am1, right? And amn, okay? Let me write this way. a times b is this one. And the other, this is m by n. This is m by p. So b11, b1, p, right? Since we have p columns. Let me write the same way. The second row of b.
+
+86
+00:11:52,148 --> 00:11:56,467
+2, 1, 2, P,
+
+87
+00:11:59,028 --> 00:12:02,408
+how many rows we have? N, right?
+
+88
+00:12:02,927 --> 00:12:04,908
+So, N1,
+
+89
+00:12:05,827 --> 00:12:08,148
+N, P, right?
+
+90
+00:12:08,967 --> 00:12:09,288
+So,
+
+91
+00:12:11,008 --> 00:12:13,367
+what is the entries of the product matrix?
+
+92
+00:12:14,367 --> 00:12:15,648
+Look at this.
+
+93
+00:12:18,323 --> 00:12:44,703
+You have to fix the first row of A. Fix. Fix. The first row of A. And then consider the dot product of this row, fixed row, and each column of B, right? Each column of B. Let me use another color. Look at this.
+
+94
+00:12:47,923 --> 00:12:55,223
+Bu, ilk kolum, bu, kolum P, değil?
+
+95
+00:12:57,024 --> 00:13:12,963
+So, you have to consider, you have to consider, this product, for example, for the fixed row, for the first fixed row, I mean, when i is 1, but j,
+
+96
+00:13:13,408 --> 00:13:15,408
+1
+
+97
+00:13:15,408 --> 00:13:17,408
+2
+
+98
+00:13:17,408 --> 00:13:19,408
+P
+
+99
+00:13:19,408 --> 00:13:39,692
+Bu
+
+100
+00:13:43,635 --> 00:13:45,795
+Let me write one more here.
+
+101
+00:13:48,135 --> 00:13:51,555
+This dot product will give you the C11, okay?
+
+102
+00:13:52,055 --> 00:13:53,055
+Is it okay for you?
+
+103
+00:13:57,107 --> 00:14:06,367
+Since the resulting dot product is a real number, you will obtain exactly the entry of C in this position, right?
+
+104
+00:14:06,607 --> 00:14:12,627
+1, 1. Why 1, 1? Because you are using the first row, I mean the dot product.
+
+105
+00:14:12,980 --> 00:14:20,920
+You are considering here the rows and columns of matrices involved in matris multiplication as vectors in RL, right?
+
+106
+00:14:21,360 --> 00:14:31,160
+So since you start with the first row and first column, I mean the dot product of the first row, first column, so that means you are obtaining this entry.
+
+107
+00:14:31,620 --> 00:14:36,900
+Since I is fixed in the beginning, right? But J is running.
+
+108
+00:14:37,460 --> 00:14:38,900
+Rangin 1 to P.
+
+109
+00:14:39,280 --> 00:14:46,580
+In this example, you will take J equal to 2, and then you will consider, for example, look at this.
+
+110
+00:14:46,760 --> 00:14:48,020
+Let me write 1 once again.
+
+111
+00:14:48,340 --> 00:14:49,000
+1, 1.
+
+112
+00:14:50,440 --> 00:14:55,200
+I'm still working with the same fixed row of A, right?
+
+113
+00:14:56,660 --> 00:15:02,160
+Now consider the dot product between this fixed row of A.
+
+114
+00:15:02,995 --> 00:15:15,495
+ve diğer bir kolum, çünkü ilk bir kolum, bu bir kolum, bu, bu, bu.
+
+115
+00:15:21,107 --> 00:15:31,687
+Okay, and this will give you the entry located in the first row and the second column of the product matrix C, right?
+
+116
+00:15:32,207 --> 00:15:38,528
+Why? Because here i is 1 and here j is 2, right?
+
+117
+00:15:44,563 --> 00:15:50,764
+What happens when you use all the columns of all these blue columns?
+
+118
+00:15:51,203 --> 00:16:08,244
+Suppose you have started this red row, the first row of A, and then you consider the dot product of this red vector and each of these blue vectors, right?
+
+119
+00:16:08,244 --> 00:16:11,604
+So this means you finished.
+
+120
+00:16:13,268 --> 00:16:15,268
+Bu
+
+121
+00:16:12,052 --> 00:16:14,052
+İlk bir rol
+
+122
+00:16:14,052 --> 00:16:16,052
+metrik
+
+123
+00:16:16,052 --> 00:16:18,052
+Bu metrik
+
+124
+00:16:18,052 --> 00:16:20,052
+bu metrik
+
+125
+00:16:20,052 --> 00:16:28,052
+adına
+
+126
+00:16:28,052 --> 00:16:30,052
+bu
+
+127
+00:16:37,183 --> 00:16:41,183
+Şimdi i2 olarak,
+
+128
+00:17:03,635 --> 00:17:13,155
+Whenever you consider you finish to use all the columns of B, then you will skip one row, right?
+
+129
+00:17:13,235 --> 00:17:18,875
+You will pass to the third row, fourth, and finally to row of M.
+
+130
+00:17:19,435 --> 00:17:30,895
+You will repeat this construction, right? M times. Simply saying, you will repeat the same procedure M times, since A contains M units of rows, okay?
+
+131
+00:17:37,268 --> 00:17:50,228
+For example, let us do it here. 1, 2, minus, this is a 2 by 3 matrix, right? I'm talking about A.
+
+132
+00:17:51,268 --> 00:18:04,827
+Here are the entries, and I'm supposed to multiply this by this matrix, which is 3 by 2, right? These are
+
+133
+00:18:33,556 --> 00:18:36,056
+İlk olarak, 2nd column
+
+134
+00:18:36,056 --> 00:18:38,736
+of B
+
+135
+00:18:38,736 --> 00:18:42,316
+let me see if
+
+136
+00:18:42,316 --> 00:18:45,375
+this is 5, I think this number is 5
+
+137
+00:18:45,375 --> 00:18:48,355
+let me check if it's 5 or not
+
+138
+00:18:48,355 --> 00:18:51,236
+anyway it doesn't matter
+
+139
+00:18:51,236 --> 00:18:56,236
+so let us perform the matrix multiplication
+
+140
+00:18:56,236 --> 00:18:58,536
+look at this, this is the product matrix
+
+141
+00:19:06,612 --> 00:19:13,892
+Ok, how many entries we have? 4 entries to put in the correct position, right?
+
+142
+00:19:13,892 --> 00:19:15,112
+Ok.
+
+143
+00:19:20,627 --> 00:19:36,988
+Let me ask, for example, I have, I see 36 student participant here. For example, [öğrenci]. Are you there?
+
+144
+00:19:43,700 --> 00:19:54,099
+Why don't you use your microphone and tell us, for example, the entry of C in the first row and first column?
+
+145
+00:20:02,291 --> 00:20:07,071
+[öğrenci] doesn't respond. [öğrenci].
+
+146
+00:20:18,996 --> 00:20:26,276
+Arkadaşlar, böyle soruma cevap vermezseniz, ben burada kendim çalıyorum, kendim oynuyorum gibi olur. Yani interaktif bir ders yapmaya çalışıyorum.
+
+147
+00:20:28,176 --> 00:20:39,416
+Mikrofonunu açarsın, söylersin, ekrana geçeceğim birazdan. Söylemek isteyen var mı? Şöyle yapalım istersin. Bak, ekranda görüyorsun. Bir tanesi 2x3, diğeri 3x2, çarpı maddesi 2x2.
+
+148
+00:20:39,916 --> 00:20:45,456
+Dört tane sayı var buraya, uygun yerlere koyman gereken. Şunu söyleyecek olan yok mu ya?
+
+149
+00:20:47,827 --> 00:20:50,627
+4. Nasıl buldun?
+
+150
+00:20:52,827 --> 00:20:56,827
+A'nın ilk rovuyla B'nin...
+
+151
+00:20:57,947 --> 00:21:11,827
+Ok, you say and I write. You say you have considered the first row of A, which is 1, 2, minus 1, and then consider the dot product between...
+
+152
+00:21:12,756 --> 00:21:19,756
+Bu, bu, röv, n, the first column of B, right, which is minus 2, 4, 2. Is it okay?
+
+153
+00:21:25,811 --> 00:21:30,811
+Evet hocam.
+
+154
+00:21:30,811 --> 00:21:32,811
+1 x 2
+
+155
+00:21:32,811 --> 00:21:34,811
+plus
+
+156
+00:21:34,811 --> 00:21:35,811
+2 x 4
+
+157
+00:21:35,811 --> 00:21:38,811
+What was your answer to put here?
+
+158
+00:21:38,811 --> 00:21:40,811
+4 hocam.
+
+159
+00:21:40,811 --> 00:21:43,811
+Let us check if you were okay or not.
+
+160
+00:21:43,811 --> 00:21:45,811
+2 x 4 plus
+
+161
+00:21:45,811 --> 00:21:47,811
+minus 1 x 2
+
+162
+00:21:48,811 --> 00:21:49,811
+Right?
+
+163
+00:21:50,811 --> 00:21:51,811
+So what we have?
+
+164
+00:21:52,803 --> 00:21:55,803
+Evet hocam.
+
+165
+00:21:52,788 --> 00:21:55,847
+Minus 4, plus 8.
+
+166
+00:21:57,307 --> 00:21:57,647
+Right?
+
+167
+00:21:59,887 --> 00:22:01,227
+So we have
+
+168
+00:22:01,227 --> 00:22:05,327
+Plus 4, right?
+
+169
+00:22:05,548 --> 00:22:07,548
+So you were right.
+
+170
+00:22:10,427 --> 00:22:14,867
+Let us put the other entries, right?
+
+171
+00:22:15,167 --> 00:22:16,267
+So why don't you
+
+172
+00:22:40,660 --> 00:23:07,460
+Ok, so let us write here what we have, minus 6 plus 4, we have minus 2. If you add 8, you will have 6, right? And the number I have to write here is 3 times 5 gives 15, minus 3, you have 12 plus 4, 16, right?
+
+173
+00:23:08,084 --> 00:23:16,584
+Bu, bu, bu, 4, 6, 16.
+
+174
+00:23:29,107 --> 00:23:34,288
+Let me check if the first row was okay. 4 and minus 2. Excuse me.
+
+175
+00:23:39,539 --> 00:23:55,799
+4N-2, you see? Ve de 2nd row 6N-16. 6N-16, right? Bu şekilde, you can multiply the matrices, right?
+
+176
+00:23:55,799 --> 00:24:04,640
+Now, look at the example file. One more example to firm the definition, right?
+
+177
+00:24:05,779 --> 00:24:12,059
+Bu, bu, 3x3, diğer metriksiyonu, 3x2.
+
+178
+00:24:12,720 --> 00:24:20,539
+Bu, bu, 3x2.
+
+179
+00:24:21,332 --> 00:24:27,192
+But in this example 5, you are not asked to obtain the whole matrix C, right?
+
+180
+00:24:27,532 --> 00:24:35,632
+Just you asked to compute the entry of product matrix located in the third row and second column, right?
+
+181
+00:24:35,632 --> 00:24:43,672
+So let me write, let me write, C is 3 by 2, right?
+
+182
+00:24:43,912 --> 00:24:44,112
+3.
+
+183
+00:24:44,788 --> 00:24:47,127
+Rows and two columns.
+
+184
+00:24:47,728 --> 00:24:52,948
+And we are asked about to write this entry.
+
+185
+00:24:53,188 --> 00:24:53,327
+Okay?
+
+186
+00:24:54,327 --> 00:24:55,428
+What does it mean?
+
+187
+00:24:55,627 --> 00:24:59,248
+It means this tree says you have to consider the third row.
+
+188
+00:24:59,688 --> 00:25:03,128
+And this two means you have to consider the second column of B.
+
+189
+00:25:03,128 --> 00:25:04,988
+And then perform the dot product.
+
+190
+00:25:05,168 --> 00:25:09,028
+And then write the resulting number exactly in this position of the product matrix.
+
+191
+00:25:09,168 --> 00:25:09,268
+Right?
+
+192
+00:25:10,508 --> 00:25:11,067
+Look at this.
+
+193
+00:25:11,528 --> 00:25:11,968
+The third.
+
+194
+00:25:12,384 --> 00:25:37,963
+Rho, you can consider as a three vectors in R3, right? 0, 1, minus 2. The second column of B, again, as a three vector in R3, right? Which is 4, minus 1, 2. So dot product, we already know, this 0 facilitates our job, right? 0 times 4 is 0, 1 times minus 1 is minus 1.
+
+195
+00:25:38,336 --> 00:25:43,476
+Bu, minus 4, to add, so minus 5, right?
+
+196
+00:25:43,596 --> 00:25:47,875
+So, this is the entry we were looking for, to put here, right?
+
+197
+00:25:49,155 --> 00:25:54,556
+But you can complete this table and form the complete C, right?
+
+198
+00:25:54,996 --> 00:26:00,615
+Why don't you finish this example?
+
+199
+00:26:01,407 --> 00:26:05,947
+Not only the entry in the third row and second column.
+
+200
+00:26:06,787 --> 00:26:17,987
+In each position, why don't you entry, why don't you find all these numbers to obtain the whole matrix C, right?
+
+201
+00:26:19,467 --> 00:26:24,787
+Okay, I hope this multiplication is clear for you.
+
+202
+00:26:25,327 --> 00:26:27,867
+If it is not, you can spend some time.
+
+203
+00:26:28,307 --> 00:26:30,307
+ve
+
+204
+00:26:30,307 --> 00:26:32,307
+anlamak için
+
+205
+00:26:32,307 --> 00:26:33,307
+değil,
+
+206
+00:26:33,307 --> 00:26:34,307
+anlamak için
+
+207
+00:26:34,307 --> 00:26:50,796
+öğretmen
+
+208
+00:26:51,188 --> 00:26:52,488
+Soru bak kısım ediyorsay.
+
+209
+00:26:53,028 --> 00:27:08,408
+Evet, siz kullanabilirsiniz. Olur, siz daha fazla kitabı var, değil mi? Neden bu kitabı seçeneğiniz, siz daha familiarizlebilirsiniz? Bu kitabı kullanılmaz değil mi? Bu kitabı kullanabilirsiniz.
+
+210
+00:27:08,408 --> 00:27:12,888
+Siz siz bir lineer algebra kitabı kullanabilirsiniz, siz daha daha comfortable bulabilirsiniz.
+
+211
+00:27:12,888 --> 00:27:14,888
+Neden bu kitabı kullanabilirsiniz?
+
+212
+00:27:20,948 --> 00:27:22,548
+Let me write mat.
+
+213
+00:27:24,428 --> 00:27:30,028
+No need for sending books, just tell me the names, I will get it.
+
+214
+00:27:30,548 --> 00:27:36,268
+Balogna, okay. Here you have some references, for example.
+
+215
+00:27:38,847 --> 00:27:40,347
+Oh, there is books here.
+
+216
+00:27:41,307 --> 00:27:41,627
+Right.
+
+217
+00:27:43,067 --> 00:27:44,988
+I'm using Bernard Coleman.
+
+218
+00:27:46,847 --> 00:27:53,827
+öğretmen
+
+219
+00:27:46,836 --> 00:27:51,715
+Bu, bu, Antun Howard'ın,
+
+220
+00:27:51,715 --> 00:27:53,516
+Gilberto Streng'ın,
+
+221
+00:27:53,516 --> 00:27:55,836
+bu, bu,
+
+222
+00:27:55,836 --> 00:27:58,115
+bu, bu, bu,
+
+223
+00:27:58,115 --> 00:27:59,436
+bu, bu, bu, bu,
+
+224
+00:28:09,332 --> 00:28:24,952
+Bu, bu, quite non-mathematician, I think he's still alive, I'm not sure, but he was in MIT, if I remember correctly, Gilberto Strang.
+
+225
+00:28:27,052 --> 00:28:32,952
+Right? You can use the linear algebra book of this guy, for example, or Hoffman Kunze.
+
+226
+00:28:39,892 --> 00:28:40,892
+Tamam.
+
+227
+00:28:41,892 --> 00:28:44,892
+These are really good linear algebra books, okay?
+
+228
+00:28:45,892 --> 00:28:46,892
+Okay, thank you.
+
+229
+00:28:47,892 --> 00:28:53,892
+This book, Lineer Cebir Çözümleri, this is very simple, right?
+
+230
+00:28:54,892 --> 00:29:01,892
+The books in Turkish are quite easy, so I don't prefer to use. So, Coleman Hill is...
+
+231
+00:29:02,579 --> 00:29:08,759
+Bu, daha önceki özel bir şey, çünkü daha önceki özel, ne?
+
+232
+00:29:09,659 --> 00:29:10,759
+Ne özel bir şey.
+
+233
+00:29:12,000 --> 00:29:18,359
+Tidak, öğretmenin, last year's exams, bu konuları için?
+
+234
+00:29:18,359 --> 00:29:19,359
+Last year's exams?
+
+235
+00:29:19,359 --> 00:29:21,619
+Ne, öğretmenin, last year's exams, değil mi?
+
+236
+00:29:22,339 --> 00:29:26,339
+Ne, öğretmenin, last year's exams.
+
+237
+00:29:29,779 --> 00:29:35,420
+Bu, bu bölümde ilk başta, bu bir şekilde bir şey yapmak için,
+
+238
+00:30:20,596 --> 00:30:27,735
+suppose that you have two matrices such that A product B is defined.
+
+239
+00:30:27,836 --> 00:30:31,135
+This notation here I use in the sense that they are defined, right?
+
+240
+00:30:31,596 --> 00:30:37,315
+They are defined means the number of columns of A coincide with the number of rows of B, right?
+
+241
+00:30:37,375 --> 00:30:40,475
+In this sense, if you remember, this was necessary.
+
+242
+00:30:42,067 --> 00:31:08,587
+Bu, bu
+
+243
+00:31:09,460 --> 00:31:14,460
+Bu nedenle çok çok anlamlı.
+
+244
+00:31:14,460 --> 00:31:16,460
+Çünkü,
+
+245
+00:31:16,460 --> 00:31:20,460
+A'ı m'ı n'ı n'ı
+
+246
+00:31:20,460 --> 00:31:26,460
+ve bu bir matrix A'ı
+
+247
+00:31:26,460 --> 00:31:28,460
+bir b'ı,
+
+248
+00:31:28,460 --> 00:31:30,443
+bu b'ı b'ı
+
+249
+00:31:30,451 --> 00:31:57,492
+N-columns, it doesn't matter how many columns it has, so we have written P here, right? So this means AB is well-defined, let us call C for simplicity, and this is the M times P matrix, right? So this does not imply that we have
+
+250
+00:31:57,839 --> 00:32:09,839
+Well-defined product in this sense, right? It doesn't imply. Why? Look at this, B, which is M by P, then you are interested in multiplying in this order.
+
+251
+00:32:13,748 --> 00:32:23,167
+If p is not equal to p, so this means this product is not well defined. Is it okay?
+
+252
+00:32:28,084 --> 00:32:29,344
+I think it's clear, right?
+
+253
+00:32:30,924 --> 00:32:36,764
+So the first remark is about this fact, right?
+
+254
+00:32:37,304 --> 00:32:43,104
+A, B is defined, it does not imply that B, A is also defined, right?
+
+255
+00:32:45,924 --> 00:32:46,944
+What else?
+
+256
+00:32:48,524 --> 00:32:53,724
+Also we can say something more here.
+
+257
+00:32:55,476 --> 00:32:59,876
+A ve B'ye görebilirsiniz.
+
+258
+00:33:00,316 --> 00:33:01,456
+Açık adıları,
+
+259
+00:33:01,456 --> 00:33:17,016
+adıları,
+
+260
+00:33:23,380 --> 00:33:24,360
+Remark here.
+
+261
+00:33:25,820 --> 00:33:32,380
+You cannot claim that AB is equal to BA.
+
+262
+00:33:33,680 --> 00:33:33,920
+Right?
+
+263
+00:33:34,880 --> 00:33:36,760
+In general, they are not equal.
+
+264
+00:33:37,240 --> 00:33:39,520
+I mean, they are not, they do not commute.
+
+265
+00:33:40,180 --> 00:33:40,340
+Okay?
+
+266
+00:33:42,180 --> 00:33:44,900
+Both product are well-defined.
+
+267
+00:33:45,320 --> 00:33:48,420
+That doesn't necessarily mean that they are equal.
+
+268
+00:33:48,660 --> 00:33:48,820
+Okay?
+
+269
+00:33:49,140 --> 00:33:50,840
+They may equal or not.
+
+270
+00:33:51,508 --> 00:33:59,387
+Bu konuda da
+
+271
+00:33:59,387 --> 00:34:02,188
+bu konuda da
+
+272
+00:34:02,188 --> 00:34:03,548
+bu konuda
+
+273
+00:34:03,548 --> 00:34:07,948
+baktığımızı
+
+274
+00:34:07,948 --> 00:34:10,387
+bu konuda
+
+275
+00:34:10,387 --> 00:34:12,827
+ne tür metrises
+
+276
+00:34:12,827 --> 00:34:13,507
+commuter
+
+277
+00:34:13,507 --> 00:34:15,507
+bu konuda
+
+278
+00:34:15,507 --> 00:34:17,927
+bir
+
+279
+00:34:17,927 --> 00:34:18,688
+example
+
+280
+00:34:19,572 --> 00:34:20,572
+Diagonal.
+
+281
+00:34:23,811 --> 00:34:33,512
+Let me define some special type of matrices. Diagonal matrix means you have a matrix D, square matrix, of course, n by n, let's say.
+
+282
+00:34:34,472 --> 00:34:43,351
+You have just real numbers on the main diagonal, not necessarily all of them zero, right?
+
+283
+00:34:43,851 --> 00:34:45,372
+Not all zero, right?
+
+284
+00:34:45,372 --> 00:34:46,132
+But
+
+285
+00:34:46,835 --> 00:35:11,339
+Bu, bu
+
+286
+00:35:15,380 --> 00:35:40,740
+n by n. This is an example of, a very simple example of a diagonal matrix, right? And you already see that identity commutes with every square matrix of the same order, right? If you take any, excuse me, n by n, for any square matrix of order n, you can see, you can check immediately that.
+
+287
+00:35:42,483 --> 00:35:43,983
+Ey, kümülü bihay.
+
+288
+00:35:44,583 --> 00:35:44,903
+Okey?
+
+289
+00:35:49,172 --> 00:36:05,311
+So, this is the identity matrix, this is a diagonal, this is a diagonal matrix, right? If you want, I can write in this sense, D11, D22, Dnn, all the other entries are 0, right?
+
+290
+00:36:09,715 --> 00:36:17,996
+Okay, I'm talking about these matris. Such a matris is called diagonal, and this is the identity.
+
+291
+00:36:22,164 --> 00:36:30,164
+Ve bir daha bir örneğe bir örneğe, bir diagonal, bir skala, bir skala metriksiyonu.
+
+292
+00:36:49,139 --> 00:36:56,019
+metriks, by definition. So, identity metriks is a very special, very particular type of a scalar metriks.
+
+293
+00:36:56,139 --> 00:37:06,259
+What is the difference between identity and scalar metriks? In the case of scalar metriks, the entries you see on the diagonal are not necessarily one, right?
+
+294
+00:37:06,519 --> 00:37:12,019
+It might be any number repeatedly used, okay?
+
+295
+00:37:12,851 --> 00:37:18,871
+If you take in particular one, you will obtain your scalar matrix as an identity matrix, right?
+
+296
+00:37:18,871 --> 00:37:26,271
+And scalar matrix as the identity is an example of a diagonal matrix, right?
+
+297
+00:37:27,211 --> 00:37:37,951
+Any two diagonal matrices, D1, D2, let be two diagonal.
+
+298
+00:37:43,668 --> 00:37:44,668
+matrisi.
+
+299
+00:37:46,668 --> 00:37:56,668
+Then, D1, D2, it doesn't matter if you consider the product in this order, always coincide.
+
+300
+00:37:56,668 --> 00:38:04,668
+You can prove this. It's a very simple fact, actually. You can try to prove by yourself. It's not complicated.
+
+301
+00:38:04,668 --> 00:38:08,556
+But you cannot say this for any...
+
+302
+00:38:25,684 --> 00:38:32,884
+Not always two matrices will commit, right? Some special matrices can do it, okay?
+
+303
+00:38:33,983 --> 00:38:44,264
+We have five more minutes. Let me see what may I explain here.
+
+304
+00:38:45,963 --> 00:38:51,063
+The matrix vektör product written in terms of columns, okay, let me skip this.
+
+305
+00:38:56,052 --> 00:39:02,912
+Lineer systems, we need two or three weeks to speak of linear systems.
+
+306
+00:39:02,912 --> 00:39:07,512
+So, symmetric matri...
+
+307
+00:39:07,512 --> 00:39:18,172
+Let me define, since I have already listed some special type of matrices, let me continue with this list, right?
+
+308
+00:39:18,992 --> 00:39:19,872
+Symmetric.
+
+309
+00:39:23,347 --> 00:39:31,927
+What do we have to understand by a symmetric matrix, right? This is a matrix such that
+
+310
+00:39:37,907 --> 00:39:39,907
+İ, J'ye kadar.
+
+311
+00:39:39,907 --> 00:39:41,907
+Bu,
+
+312
+00:39:41,907 --> 00:39:43,907
+bir yi'ye kadar.
+
+313
+00:39:43,907 --> 00:39:45,907
+Bu,
+
+314
+00:39:45,907 --> 00:39:47,907
+yi'ye kadar.
+
+315
+00:39:47,907 --> 00:39:49,907
+Bu,
+
+316
+00:39:49,907 --> 00:39:51,907
+yi'ye kadar.
+
+317
+00:39:51,907 --> 00:39:53,907
+Bu,
+
+318
+00:39:53,907 --> 00:39:55,907
+yi'ye kadar.
+
+319
+00:39:55,907 --> 00:40:05,407
+Yi'ye kadar.
+
+320
+00:40:00,000 --> 00:40:08,000
+Bu yöntem, yöntem, yöntem, yöntem, yöntem.
+
+321
+00:40:08,000 --> 00:40:15,000
+Bu yöntem, yöntem, yöntem, yöntem.
+
+322
+00:40:15,000 --> 00:40:21,000
+Bu, bu, yöntem, yöntem, yöntem, yöntem.
+
+323
+00:40:21,000 --> 00:40:24,000
+Bu, bu, yöntem, yöntem.
+
+324
+00:40:24,755 --> 00:40:28,955
+These are the diagonal entries, right? S, n, n.
+
+325
+00:40:28,955 --> 00:40:43,055
+The definition of symmetric matrix says that this, let me write, S1, 2 is equal to S2, 1, right?
+
+326
+00:40:52,083 --> 00:40:54,083
+S1.
+
+327
+00:40:54,083 --> 00:40:58,083
+Bu yüzden aynı color
+
+328
+00:40:58,083 --> 00:41:01,083
+to indicate equal numbers
+
+329
+00:41:01,083 --> 00:41:02,083
+in different positions,
+
+330
+00:41:02,083 --> 00:41:04,083
+but equal numbers.
+
+331
+00:41:04,083 --> 00:41:06,083
+Different positions,
+
+332
+00:41:06,083 --> 00:41:08,083
+but same numbers.
+
+333
+00:41:08,083 --> 00:41:10,083
+Let me write one more for you.
+
+334
+00:41:10,083 --> 00:41:12,083
+For example,
+
+335
+00:41:12,083 --> 00:41:16,083
+let me write here for
+
+336
+00:41:16,083 --> 00:41:18,027
+S2.
+
+337
+00:41:18,420 --> 00:41:22,039
+N. So, I have to write here the symmetric.
+
+338
+00:41:26,195 --> 00:41:27,076
+Let me sit.
+
+339
+00:41:34,195 --> 00:41:34,735
+Let me see.
+
+340
+00:41:37,275 --> 00:41:41,435
+The number you have to write here has to be equal, right?
+
+341
+00:41:42,935 --> 00:41:43,835
+Look at this.
+
+342
+00:41:48,500 --> 00:41:48,860
+Ok?
+
+343
+00:41:56,340 --> 00:42:00,340
+So, this basically means that here is the...
+
+344
+00:42:01,340 --> 00:42:02,340
+Here is the...
+
+345
+00:42:07,860 --> 00:42:09,619
+More easier definition.
+
+346
+00:42:10,880 --> 00:42:16,639
+If S is equal to its transpose, then S is symmetric, right?
+
+347
+00:42:20,884 --> 00:42:25,403
+Another definition, this is the anti-symmetrik, or skew-symmetrik.
+
+348
+00:42:37,012 --> 00:42:52,772
+If S coincides with its transpose multiplied by minus 1, then S is a skew, symmetric, or anti-symmetric, right?
+
+349
+00:42:55,972 --> 00:42:57,152
+Matrix, okay?
+
+350
+00:43:01,235 --> 00:43:01,755
+Ok.
+
+351
+00:43:06,228 --> 00:43:08,548
+We have another definition, ortogon.
+
+352
+00:43:13,811 --> 00:43:32,971
+matris, suppose that you are given a matris always square, right? Antisymetrik also is assumed to be square matris, like a symmetric matris, right? A matris A, square matris A of order n is called orthogonal if
+
+353
+00:43:36,371 --> 00:43:49,652
+A times A transpose t is the identity of the same order, right? Whenever you have this condition fulfilled, specified, your matrix A is orthogonal.
+
+354
+00:43:53,172 --> 00:43:55,632
+And this is the definition of orthogonal matrix.
+
+355
+00:43:58,708 --> 00:44:10,288
+Evet arkadaşlar, koştura koştura ancak bu kadar anlatabildim. Yani geçen hafta anlatmaya çalışayım, şeylerin üstünden geçtim tekrardan. Sorusu olan var mı? Önümüzdeki hafta devam edeceğim.
+
+356
+00:44:16,115 --> 00:44:37,016
+Bakalım sıradan neredeyse bildik. İşte ben size biraz ödev vereyim o zaman. Şöyle yapalım bakın. Yani bir takım özelliklerden, işlemlerden bahsettik değil mi? Matrislerin toplamı, çarpımı. Bunların sağladığı bir takım özellikler var. Yani siz de bunlara böyle bir bakarsanız, bir sonraki ders biraz daha hızlı geçme imkanım olur burayı.
+
+357
+00:44:37,327 --> 00:45:03,188
+Tamam mı? Mesela matris toplamının sağladığı bir takım özellikler var. Bunlar yani, inanın üzerinde böyle çok fazla nefes tüketmeye gerek olan şeyler değil yani. Triviyel özellikler yani. Aslında bakarsın. Ya bir matrisi sıfır matrisle toplarsan kendisini elde edersin tabii ki. Bir matrisi eksi bile çarpar kendisiyle toplarsan tabii ki sıfır matris elde edersin değil mi? Bak mesela şunu söyledik zaten, birleşmelilik özelliği, associativity, right?
+
+358
+00:45:04,659 --> 00:45:16,039
+Yani bunu bir çırpıda kendiniz bile okusanız anlarsınız. Yani o yüzden ben müsaadenizle buraları hızlı geçeceğim önümüzdeki ders. Bir de matris çarpımıyla ilgili bir takım özellikler var. Bakın şu mesela, birinci özellik.
+
+359
+00:45:16,320 --> 00:45:40,300
+Bu, bu
+
+360
+00:45:40,500 --> 00:45:50,360
+And here you have, let's say, in some sense you have distributivity, property of matris addition to matris multiplication, right?
+
+361
+00:45:50,719 --> 00:45:51,300
+Look at this.
+
+362
+00:45:52,500 --> 00:45:55,460
+It doesn't matter if you multiply by left or by right.
+
+363
+00:45:56,980 --> 00:45:57,500
+Okay?
+
+364
+00:46:01,139 --> 00:46:05,959
+So, please take a look at it, also in this property, right?
+
+365
+00:46:07,299 --> 00:46:12,699
+And let me see what we have else here. Properties of scalar multiplication.
+
+366
+00:46:12,699 --> 00:46:18,619
+This list also is almost clear, right? Almost trivial, actually.
+
+367
+00:46:20,259 --> 00:46:23,259
+Let's see what we have. Properties of transpose.
+
+368
+00:46:25,460 --> 00:46:28,619
+Bu da bu konuda çok zor, ama ama ne kadar.
+
+369
+00:46:28,619 --> 00:46:31,220
+İlk başta 5-10 minuten,
+
+370
+00:46:31,220 --> 00:46:32,300
+ne kadar.
+
+371
+00:46:32,300 --> 00:46:34,780
+Bu konuda,
+
+372
+00:46:34,780 --> 00:46:38,340
+bu konuda,
+
+373
+00:46:38,340 --> 00:46:40,340
+ok?
+
+374
+00:46:40,340 --> 00:46:42,340
+Ok,
+
+375
+00:46:42,340 --> 00:46:46,340
+bu konuda,
+
+376
+00:46:46,340 --> 00:46:48,260
+ve bu konuda,
+
+377
+00:46:48,260 --> 00:46:51,780
+bu konuda,
+
+378
+00:46:51,780 --> 00:46:52,340
+ok?
+
+379
+00:46:53,331 --> 00:46:58,371
+Bu liste de bu liste de eğitimlerinizde,
+
+380
+00:46:58,371 --> 00:47:00,251
+bu eğitimlerinizde,
+
+381
+00:47:00,251 --> 00:47:04,331
+eğitimlerinizde,
+
+382
+00:47:04,331 --> 00:47:05,331
+birçok kullanmanızı,
+
+383
+00:47:05,331 --> 00:47:06,331
+birçok kullanmanızı.
+
+384
+00:47:06,331 --> 00:47:08,331
+Bu eğitimlerinizde,
+
+385
+00:47:08,331 --> 00:47:18,331
+birçok kullanmanızı,
+
+386
+00:47:18,331 --> 00:47:19,331
+birçok kullanmanızı.
+
+387
+00:47:20,211 --> 00:47:28,711
+Computer Programming Language Packages, for example, so you can avoid such exercises.
+
+388
+00:47:28,711 --> 00:47:40,211
+Okay, do you have any questions? If you don't, I'm going to finish the lecture. Right? Any questions?
+
+389
+00:47:40,211 --> 00:47:45,996
+Do you have any questions? Sorusu olan var mı arkadaşlar?
+
+390
+00:47:49,556 --> 00:48:07,435
+Yoksa haftaya görüşelim. Kopukluk olmadı diye tahmin ediyorum bugünkü derste, değil mi? Kayıttan izleyip ben de bakarım tekrardan. Oldu, hepinize iyi günler, iyi dersler dilerim, hoşçakalın. Benim dersim var saat birde çünkü. Hoşçakalın, görüşmek üzere.
