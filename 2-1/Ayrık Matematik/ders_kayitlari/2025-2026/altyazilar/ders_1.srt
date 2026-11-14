@@ -1,0 +1,1999 @@
+1
+00:06:48,307 --> 00:06:49,668
+Arkadaşlar ses geliyor mu?
+
+2
+00:06:52,587 --> 00:06:53,307
+Duyuyor musunuz?
+
+3
+00:06:58,420 --> 00:06:59,140
+Heli Hoca.
+
+4
+00:07:00,140 --> 00:07:02,100
+Hemen başlayalım.
+
+5
+00:07:09,108 --> 00:07:31,507
+Şimdi bugün son bir kısmımız var. Bundan bahsedeceğiz. Onun dışında bir de bazı terminolojik gelecek dönem lazım olacağını düşündüğüm birkaç kavramdan bahsedeceğim. Sonra dersi belki bir saatte bitirmeye çalışırız.
+
+6
+00:07:34,899 --> 00:08:02,500
+Önce ağaçlar kısmından devam edelim. Biz join dataset'i biz sizinle, tabi şu an burada sizden bir kişi var. Minimum Spanning Tree algoritmalarını anlattıkken konuştuk. Ne için kullanıyorduk? Bir minimum Spanning Tree oluştururken düğümleri Spanning Tree'ye dahil ettiğinizde
+
+7
+00:08:02,836 --> 00:08:08,596
+bir cycle olacak mı olmayacak mı yani ağaç durumunu bozacak mısınız bozmayacak mısınız?
+
+8
+00:08:08,596 --> 00:08:12,396
+Bunun sürekli kontrol edilmesi gerekiyor.
+
+9
+00:08:12,396 --> 00:08:17,475
+Bunu da Disjoint Dataset Datastructure ile yapılıyor.
+
+10
+00:08:17,475 --> 00:08:24,756
+Bu normal bir dizi gibi, ağaç gibi, stake gibi, queue gibi başka bir Datastructure.
+
+11
+00:08:25,076 --> 00:08:39,076
+oluşturulma şekline göre verimliliği, özellikle zaman verimliliği değişen bir yöntem. Şuna bakıyor, bir kere ayrık küme, hani dediğim şey, ayrık küme nedir?
+
+12
+00:08:39,076 --> 00:08:51,076
+Birbiriyle herhangi bir kesişim olmayan kümeler, işte A kümesi ve B kümesi şeklinde düşünebilirsiniz. Burada da diyor ki, S1'den SK'ya kadar N tane, K tane.
+
+13
+00:08:51,888 --> 00:09:00,448
+kümeyi ayrık olarak tutalım. Bunu ayrı bir data structure, yani bunun tamamı bir data structure olacak veri yapısı.
+
+14
+00:09:00,448 --> 00:09:05,888
+Temel olarak aslında üç işlemi var.
+
+15
+00:09:05,888 --> 00:09:10,288
+Bir küme oluşturma, meydana getirme.
+
+16
+00:09:10,288 --> 00:09:17,488
+İki kümenin union yapılması, yani birleşimi bildiğimiz şey.
+
+17
+00:09:17,844 --> 00:09:25,084
+Bir de verilen bir kümenin hangi kümeye dahil olduğunu bulmak.
+
+18
+00:09:26,284 --> 00:09:33,324
+Bu hangi kümedir? Mesela bizim grafta kenarlarımız ve köşelerimiz bu şekilde olsun.
+
+19
+00:09:34,284 --> 00:09:36,744
+Bu graftan bir spanning tree oluşturacağız.
+
+20
+00:09:37,944 --> 00:09:41,444
+Birinci, ikinci, üçüncü, dördüncü düğüm diyelim.
+
+21
+00:09:41,855 --> 00:09:47,415
+ne yapıyorduk? İşte prim algoritmasında herhangi birinden başlayıp ağırlıklara göre seçim yapıyorduk.
+
+22
+00:09:47,855 --> 00:09:57,216
+Şimdi Disjoint set yapısında her bir element, her bir köşe ayrı bir küme halinde öncelikle.
+
+23
+00:09:59,775 --> 00:10:08,735
+Dolayısıyla ben biri, anı set yaptığımda bir, bir nolu kümede, iki, iki nolu kümede, üç, üç nolu kümede, dört, dört nolu kümede diyebiliyorum.
+
+24
+00:10:09,364 --> 00:10:25,043
+Şu an hepsi ayrı kümedeler. Eğer herhangi iki kenarı birleştiriyorsam, örneğin bir ile ikiyi minimum spanikleriye dahil ettim, o zaman bir ve ikiyi aynı kümede yapacağım. Bunu yaparken de union operasyonu yapacağım.
+
+25
+00:10:25,043 --> 00:10:35,604
+Tabi burada operasyonun sırası önemli. Diyor ki x ve y'lerin olduğu şeyi birleştir. Bu birleştirmek ne demek?
+
+26
+00:10:35,923 --> 00:10:44,163
+1 ile 2'yi birleştirdiğimizde, işte ya ikisinin de kümesi 2 no'lu küme olacak ya da ikisinin de kümesi 1 no'lu küme olacak.
+
+27
+00:10:45,004 --> 00:10:56,403
+Olay böyle başlangıçtan bakıldığında kolay gibi görünüyor ama ilerleyen aşamalarda örneğin ben bununla bunu birleştirdim, bu da 2 no'lu küme olsun, bu da 2 no'lu küme olsun dedim.
+
+28
+00:10:58,644 --> 00:11:13,744
+İlerleyen aşamalarda bu birleştirme işlemlerinde bütün küme ID'lerinin yer değiştirmesi söz konusu ve bunu biz en defa yapıyoruz. Dolayısıyla en kareye giden bir karmaşıklık söz konusu. Bunun için alternatif çözümler ne vermiş şimdi onlara bir bakalım.
+
+29
+00:11:15,024 --> 00:11:24,624
+Tabi uygulamaları çok çok farklı yerlerde var. Bağlı bileşen, graftaki bağlı bileşenlerin tespit edilmesi konusu önemli bir şey.
+
+30
+00:11:25,172 --> 00:11:49,432
+Örneğin bu şekilde bir graf verildi. Mesela bir elinizde görüntü var. Bu bir biyomedikal görüntü olsun. İşte bir dokunun görüntüsü. Dokuda birbiriyle alakalı dokuların bir graf halini elde edersiniz burada olduğu gibi. Bunlardan aykırı olan, olağan dış olan noktaları tespit etmek isterseniz.
+
+31
+00:11:50,004 --> 00:11:57,244
+Kaç tane bağlı bileşen vardı? Şimdi şuraya baktığımızda, bu graf üzerinde, burası kendi içerisinde bağlı.
+
+32
+00:11:57,244 --> 00:12:04,124
+Yani burası birinci bağlı bileşen, burası ikinci bağlı bileşen, bu üçüncü bağlı bileşen, bu da dördüncü bağlı bileşen.
+
+33
+00:12:04,124 --> 00:12:14,124
+Burada mesela ağaç olanlar var. Örneğin şurası aynı zamanda bir ağaç. Bakın bu bir ağaç değil, bu bir graf.
+
+34
+00:12:14,355 --> 00:12:36,536
+Şu ayrı bir ağaç, şu da ayrı bir ağaç, şu üçü kendi içinde bir orman, forest dediğimiz şey diyebiliriz. Şimdi elimizde A'dan J'ye kadar düğümler varken, acaba burada kaç tane bağlı bileşen vardır? Sonuçta A'dan J'ye kadar bir komşuluk listesi, komşuluk matrisi verirse bize,
+
+35
+00:12:37,139 --> 00:12:42,819
+ve bu komşuluk matrisini kullanarak, sıfır ve birilerden oluşan matrisimiz var.
+
+36
+00:12:42,819 --> 00:12:53,139
+Bunu kullanarak buradaki kaç tane birbiriyle bağlı birleşen vardır, bunun bulan kodu yazın desek, o zaman ne olacak? Bu tarz bir veri yapısına ihtiyaç duyacağız.
+
+37
+00:12:53,139 --> 00:12:55,860
+Şimdi başlangıçta mesela burada ne yapmış?
+
+38
+00:12:58,259 --> 00:13:03,620
+İşte B ile D bağlı, E ile G bağlı bu initial olarak hani biraz
+
+39
+00:13:03,796 --> 00:13:29,436
+işlemi birkaç adım öteden başlatmış aslında burası. İşte B ile D normalde ayrıdır ilk başta. Sonra B ile D'nin komşu olduğunu, işte B ile C'nin komşu olduğunu falan bu bilgiyi alıyor. Sonra iteratif olarak kim kimle bağlı ve kim kimle bağlanamıyor diye bakıyoruz. En sonunda da ulaştığımız şey kaç tane buradan bağlı birleşen çıkıyor. Örneğin bakıldığında
+
+40
+00:13:30,868 --> 00:13:57,188
+Önce A var, A ile C'ye birleşmiş. Bakın daha sonra A, B, C, D bir araya gelmiş. Yani şurası bir kümelene kümelene ilk başta böyle gittikten sonra burası ne oluyor? Belli bir küme içerisine geliyor. Normalde A ayrı küme, B ayrı küme, C ayrı küme, D ayrı küme, E, F, G, H hepsi ayrı küme burada. Sonra bakılıyor ki A, B ve D aynı komşuluğa sahip. İşte burada B ve D'den başlamış mesela.
+
+41
+00:13:57,600 --> 00:14:12,000
+O zaman B ve D'yi tek bir küme yapayım. Sonra bu kümeye işte şöyle devam edip gidiyor. Neyi ekleyecek? İşte E ve G'yi eklemiş artık. Şuradaki sıraya göre bakıyor. Sonra A ile C'yi birleştirecek. Sonra H ile E'yi birleştirecek.
+
+42
+00:14:12,000 --> 00:14:22,799
+Ve nihayet olarak geldiğimizde en son şu kısımda neyi görüyoruz? Dört tane bağlı birleşen. Ki burada da zaten gözle saydığımızda dört tane bağlı birleşen oluyor.
+
+43
+00:14:22,847 --> 00:14:50,167
+Şurada da bunun basit bir algoritması var. İlk başta bütün elementleri ayrı ayrı kümelere aktarıyor. Bakın, her bir vertex için, her bir köşe için, vertex'in kendisine ait bir küme oluşturuyor. İşte birinci küme, ikinci küme, A kümesi, B kümesi, C şeklinde. Sonra her bir kenar için bu graf üzerinden, bakın grafın köşelerine bakacak, grafın kenarlarına bakacak.
+
+44
+00:14:50,611 --> 00:15:07,451
+Her bir kenar için diyor ki, eğer buradaki U köşesiyle V köşesinin kümeleri birbirinden farklıysa, find set ne yapıyordu? Bir elementin bulunduğu, ait olduğu kümeyi bize söylüyordu.
+
+45
+00:15:07,451 --> 00:15:18,451
+Find set'in durumuna göre, eğer bunlar birbirinden farklıysa, yani ne demek? Bunlar ayrık durumdalar. Ama böyle bir kenar var. Yani A ile B birbiriyle komşu.
+
+46
+00:15:18,480 --> 00:15:23,600
+Ama ilk başta bunların kümeleri farklı. O zaman bunların kümeleri farklıysa bunların kümelerini birleştiriyoruz.
+
+47
+00:15:24,879 --> 00:15:26,920
+Şimdi sem komponent olma durumu var.
+
+48
+00:15:27,440 --> 00:15:37,159
+U ve B eğer bakıldığında ikisinin de kümesi aynıysa ikisi de aynı komponent içindedir. Değilse değildir. Bu da yardımcı bir fonksiyon.
+
+49
+00:15:37,419 --> 00:15:39,480
+Bu şekilde ilerleyerek ne yapılabiliyor?
+
+50
+00:15:40,500 --> 00:15:44,080
+Bu algoritma sayesinde grafın bağlı birleşenleri tespit edilebiliyor.
+
+51
+00:15:44,884 --> 00:15:55,324
+Bu grafın algoritma bu şekilde de bunu bir veri yapısında saklamamız lazım. İşte n tane köşemiz var ve buna göre de kenarlarımız var.
+
+52
+00:15:55,324 --> 00:15:59,884
+Bunu LinkedList'e ile sağlayabiliyoruz. LinkedList'de ne yapılabiliyor?
+
+53
+00:16:10,131 --> 00:16:33,531
+çeşitli linkleri yaklaşımlarla sağlayabiliriz. Örneğin burada ne var? Her düğüm Head, F'yi gösterecek, F, G'yi gösterecek, G, D, D'yi gösterecek. Head düğüm aynı zamanda son düğümün adresini tutacak ama her düğümden başa dönmek de mümkün olacak. Böyle bir yapı olabilir. Yeni bir düğüm, F, G, D demiş, C, H, E, B demiş.
+
+54
+00:16:33,919 --> 00:16:44,919
+Bu yapılarla bu sağlanabilir. Eğer bunu bu yapıyla kurarsak, Make Set operasyonu O1 zamanda, yani tek seferde küme oluşturabiliyorsunuz.
+
+55
+00:16:45,699 --> 00:16:53,539
+Doğrudan bir elementin kümesini bulmak da O1 oluyor ama Union işlemi O en zamanda oluyor.
+
+56
+00:17:00,884 --> 00:17:26,364
+o en karmaşıklıklı bir şey yapacağız. Eğer ben bunu en defa yaparsam, n çarpı o en, yani ne olacak? Big o en kareye gidecek. Şimdi o en kare de bu tarz basit bir işlem için birazcık fazla maliyetli şey, onun birazdan başka bir yola gidecek. Linkli liste ile bu iş yapılabiliyor, hatta ere ile de yapılabiliyor. En basiti ben mesela geçen derste size prim anlatırken bunu ere ile yapmıştım.
+
+57
+00:17:28,948 --> 00:17:52,347
+A köşesi var, B var, C var, D var. Bunlara işte birinci küme, ikinci küme, üçüncü küme, böyle küme isimleri vermiştik. Sonra ben union yapacağım. Kimle kimi birleştireyim? A ile C'yi birleştireyim. O zaman şöyle bir kural koyuyoruz tabii ki. A'nın küme kodunu C'ye ekle. A'nın küme kodu 1, C'nin küme kodu 3. O zaman bunu 1 yapacağız.
+
+58
+00:17:52,799 --> 00:17:57,500
+Bu şekilde devam ederek gidiyoruz ama her bir union operasyonunda bakın ne oluyor?
+
+59
+00:17:57,500 --> 00:18:03,599
+N defa karşılaştırma yapmamız gerekiyor. Bunu N defa yaparken de Karma Fikuk N kareye doğru gidiyor.
+
+60
+00:18:05,199 --> 00:18:15,799
+Şurada diğer şeyler var onları geçelim. Diğer analizler, biraz veri yapıları dersinin de konusuna gittiği için fazla her yere girmek istemiyorum.
+
+61
+00:18:19,284 --> 00:18:23,884
+Ağaçlarla, aslında orman representation ile yapabilmek.
+
+62
+00:18:24,844 --> 00:18:28,744
+Burada her bir düğümü ayrı bir ağaç gibi düşünüyorsunuz.
+
+63
+00:18:28,744 --> 00:18:35,264
+Tabi her bir düğüm ayrı bir ağaç olunca tek başına tek bir tane elementi olan bir ağaç gibi olacak.
+
+64
+00:18:35,364 --> 00:18:39,744
+Önce A elementi, sonra B elementi, sonra C elementi böyle devam edilecek.
+
+65
+00:18:40,424 --> 00:18:41,744
+Bunları union yaparken de...
+
+66
+00:18:42,259 --> 00:19:09,739
+işte AB'nin atası veya AB'nin çocuğu olacak şekilde birleştirme sağlıyoruz. Yani bu yapı ne yapacak bizim? Şurada gördüğümüz Vigoenlik karmaşıklığı biraz daha aşağıya indirecek. Birazdan ona geleceğiz. Örneğin burada B, C, E ve H aynı küme içerisinde olduğunu anlıyor.
+
+67
+00:19:10,195 --> 00:19:31,195
+B ile C'nin kümesini sorguladığımızda hani find set fonksiyonumuz vardı. Bunlara bak dediğimizde B ve C aynı ağacın içerisinde olduğu için veya B'den C'ye bir yol bulabildiğim için ikisini aynı kümenin içerisinde görüyoruz.
+
+68
+00:19:31,195 --> 00:19:37,195
+Veya ne olacak işte B'den D'ye yol var mı şu durumda yok. O zaman bu ikisi aynı kümede de gelir.
+
+69
+00:19:37,428 --> 00:19:48,827
+Eğer ben bu graf üzerinde işte B ile D arasında bir kenarımız varsa ne yapacağım? O zaman şu ağaçla şu ağacı birleştireceğim demektir. İşte bu ağaçla bu ağaçla birleşince şöyle bir ağaç meydana gelecek.
+
+70
+00:19:49,568 --> 00:20:02,428
+Tabii şuradaki gösterimde ne var arkadaşlar? Bu iki ağacı birleştirmenin maliyeti de yine Big O N'e kadar gidiyor. Ama bunun iyileştirmeleriyle bunu Big O...
+
+71
+00:20:03,571 --> 00:20:08,571
+1'e kadar indirebilen iyileştirme yöntemleri var. Birazdan bunda gelecek.
+
+72
+00:20:08,571 --> 00:20:10,571
+Buraya kadar bir sorumuz var mı?
+
+73
+00:20:13,907 --> 00:20:14,407
+Kümeler.
+
+74
+00:20:22,099 --> 00:20:32,859
+Şimdi ağaç üzerinde renk dediğimiz şey aslında bir düğümün yüksekliğine göre, ağacın üzerindeki köke olan yüksekliğine göre yapılabilen bir şey.
+
+75
+00:20:32,859 --> 00:20:39,339
+Bunu MDEFA yaparsak aslında MLOG'e kadar gidiyor. Olay şu.
+
+76
+00:20:39,827 --> 00:20:51,228
+Şimdi biz her düğümü birleştirdiğimizde işte E ile F'yi birleştirdik, F ile D'yi birleştirdik, D ile C'yi birleştirdik. Bu şekilde ağacı büyütürsek veya şu şekilde de büyütebiliriz.
+
+77
+00:20:53,407 --> 00:21:04,688
+Böyle bir ağaç da olabilir. İşte A düğümü, B düğümü, C düğümü, D düğümü, E düğümü diyelim. Böyle ağaç büyürse, sorgulama esnasında, find set esnasında
+
+78
+00:21:05,087 --> 00:21:11,327
+karmaşıklık artıyor. Neden? D ile A'nın bağlı olduğunu bulabilmek için bu graf üzerinde dolaşıyoruz.
+
+79
+00:21:12,288 --> 00:21:18,607
+D'den A'ya bir şekilde ulaşabilir miyim diye. Halbuki buna pet compression dediğimiz, şurada söylediğimiz,
+
+80
+00:21:19,407 --> 00:21:24,887
+şöyle bir şey oluyoruz. İki düğümü birleştirirken, örneğin F ile A'yı birleştireceğim.
+
+81
+00:21:25,268 --> 00:21:30,748
+F ile A'yı bu şekilde birleştirdim. Bunun bir ikili ağaç olma zorunluluğu yok.
+
+82
+00:21:31,284 --> 00:21:34,364
+Yani çoklu bir, çok çocuklu ağaç olabilir.
+
+83
+00:21:34,364 --> 00:21:36,604
+Dolayısıyla P ile A'yı bu şekilde birleştirin.
+
+84
+00:21:36,604 --> 00:21:40,403
+Sonra A ile mesela C'yi birleştirin.
+
+85
+00:21:40,403 --> 00:21:46,884
+A ile C'yi bu şekilde birleştirirken bakıyorum ki A'nın bir parent'ı var mı? Var.
+
+86
+00:21:46,884 --> 00:21:53,884
+O zaman diyorum ki A ile birleştireceğim olan elemanın da parent'ı bu olsun.
+
+87
+00:21:53,884 --> 00:21:57,284
+Çünkü bunlar aynı ağacın üyeleri artık.
+
+88
+00:21:57,471 --> 00:22:09,471
+Aynı ekibin üyeleri. Dolayısıyla ne oluyor? Ben herhangi bir sorgulama yaptığımda doğrudan ne yapabiliyorum? Parent'a ulaşım sağlayabiliyorum.
+
+89
+00:22:09,471 --> 00:22:23,403
+Şimdi şurada şöyle bir soru aklımıza gelmesine. A ile C'nin birbiriyle komşuluğu var mı? Bunu sorgulamak için ne yapmamız gerekiyor? Var mı önerisi olan?
+
+90
+00:22:23,955 --> 00:22:42,495
+Bakın dedik ya, B ile, mesela buradaki D ile şuradaki C aynı kümede midir? Bunu sorgularken ne yapacağım? Bundan buna bir yol bakacağım. İşte buraya geçeceğim, buraya geçeceğim. Tabii bir sürü yol var, bir sürü yoldan geçmem lazım. Bu maliyetli bir şey. Ama aynı durum burada da söz konusu. Yani böyle bir sürü eleman olduğunu düşünün.
+
+91
+00:22:44,495 --> 00:22:50,855
+İşte A, C, D, E, hepsinin atası F olsun. Atasının ne olduğu önemli değil. Yani başka bir düğüm de olabilirdi.
+
+92
+00:22:51,667 --> 00:23:05,667
+Şimdi A'dan E'ye bir mesela graf üzerinde kenarımız var. Ama bu kenarın sorgulanması için bunların daha önce aynı kümeye dahil edilmiş mi edilmemiş mi buna bakmam lazım.
+
+93
+00:23:06,387 --> 00:23:18,447
+Şimdi karmaşıklığı azaltalım diye yola çıktık ama A'dan E'ye karmaşıklığa yol var mı yok mu buna bakmak için yine bütün ihtimalleri kontrol etmem gerekiyor. Doğrudan yol var mı yok mu diye.
+
+94
+00:23:18,900 --> 00:23:22,019
+Ama bunu iyileştirmemiz lazım. Ne olabiliriz size çözüm?
+
+95
+00:23:30,451 --> 00:23:52,451
+Şimdi bakın, çözüm şu aslında arkadaşlar. Yukarıda her bir düğümün şu kısımda ayrı bir küme olduğunu, daha sonra bunların aynı ağaç üzerinde bulunup bulunmadığını, hatta ilk diziye gidersek her bir kümenin küme ID'si üzerinden kontrol yapıyorduk.
+
+96
+00:23:56,627 --> 00:24:06,748
+B düğümünden E düğümüne veya B düğümünden D düğümüne yol var mı şeklinde bir düşünceyle, basit bir düşünceyle yola çıkarsak bu karmaşıklığı artırır.
+
+97
+00:24:07,288 --> 00:24:08,567
+Bunun yerine şuna bakabiliriz.
+
+98
+00:24:09,487 --> 00:24:15,587
+B düğümünün, pardon, B düğümünün bulunduğu ağacın root düğümü kimdir?
+
+99
+00:24:16,447 --> 00:24:18,527
+Buranın reprezentörü kim? C.
+
+100
+00:24:19,907 --> 00:24:22,527
+Buranın root düğümü kimdir? F.
+
+101
+00:24:24,788 --> 00:24:37,147
+ana düğümler, root düğümler üzerinden bakıyoruz. Eğer bunların rootları birbirinin aynısıysa, nedir bu? İkisi aynı kümededir. Birbirinin farklısıysa, ikisi farklı kümededir.
+
+102
+00:24:37,788 --> 00:24:49,707
+Burada işte mesela D'nin atası F, B'nin atası C. Bunlar farklı kümededir. Ama şurada baktığımızda, B'nin atası da F, B'nin atası da F. İkisi aynı kümedelerdir.
+
+103
+00:24:51,920 --> 00:25:09,620
+Rout'a kadar çıkarak bu maliyeti biraz azaltırım. İşte bu pet compression yoluyla Rout'a çıkmayı da tek bir seferde yapacak şekilde düzenlersem, C'nin atası da tek seferde bakıyorum ki F'dir, E'nin atası da tek seferde bakıyorum ki F'dir, o zaman bu ikisi aynı kümededir.
+
+104
+00:25:10,180 --> 00:25:17,900
+Eğer başka bir ağaç olsaydı işte birinin atası işte A olsun, öbürünün atası L olsun, ikisi farklı kümelerde olacaktır.
+
+105
+00:25:18,228 --> 00:25:29,228
+Bakın, bu pet compression yoluyla ne yaptık? Kümenin bir elemanın ait olduğu kümenin sorgulamasını hızlandırdık.
+
+106
+00:25:29,228 --> 00:25:44,228
+Bunset bu şekilde hızlandırınca unionı da hızlandırabiliriz. İki tane kümeyi, şurada bunun şeyi var da ben şöyle görsel olarak göstereyim. Örneğin bu bir küme, şu da bir başka küme.
+
+107
+00:25:44,339 --> 00:26:10,700
+Hani burada A düğümü, B düğümü, C düğümü, D olsun, E olsun, F olsun, G olsun. Ben bu kümeyle bunu örneğin D ve E üzerinden ikisini union yapacağım. Union yaparken de diyorum ki D'nin atası, G'nin de atası olsun. Tabi G'nin atasıyla beraber ne olacak? Buradaki bütün düğümlerin atası olacak. Normalde D'nin altına getirip bu düğümleri
+
+108
+00:26:10,912 --> 00:26:33,912
+eklemeniz lazım ama, pad compression yaklaşımıyla ne yapıyorsunuz? Artık E de bunun çocuğu, G de bunun çocuğu, P de bunun çocuğu oluyor birleşim yaptığınızda. Ve doğrudan tek seferde ROOTA erişecek şekilde bir UNILE işlemi gerçekleştirmiş oluyoruz. Şimdi bu konunun algoritmik detayları
+
+109
+00:26:34,740 --> 00:26:46,899
+Data Structure dersinde anlatılır, anlatılması gerekir. Onun için onunla alakalı detayları oraya bırakıyorum. Ben daha fazla bu konuya girmeyeceğim. Sizin bir sorunuz var mı?
+
+110
+00:26:51,220 --> 00:26:52,240
+Bir diğer konu
+
+111
+00:26:55,604 --> 00:27:20,403
+ipler. Şimdi sınavda özellikle WhatsApp grubunda da duyurdum Dijkstra algoritmasının hani çoğunuz matrisle yapmışsınız. Hani genel olarak da hani çok sıkıntılı bir şey yoktu da sadece adım adım göstermede problem vardı. Dijkstra algoritması normaldi arkadaşlar.
+
+112
+00:27:21,203 --> 00:27:42,683
+Yani prim Q ile çalışırken Dixter Aligortması öncelikli Q ile, Priority Q ile çalışır. Priority Q da nedir? Bir kuyruk var. Sizin bu kuyruktaki yeriniz, sayısal değerinize göre veya önceliğinize göre doğrudan kuyruğun sonuna eklenmiyorsunuz. Kuyrukta araya girebiliyoruz. Gerçek hayattaki işte ne bileyim.
+
+113
+00:27:43,220 --> 00:28:02,220
+Yaşlı bir bireyin hastanede sizin önünüze geçmesi gibi düşünebilirsiniz. Öncelik değeri var. Bu bir kuyruk modeli. Şimdi bu kuyruk modelini biz ereğlerle sağlayabiliyoruz ama ereğle yapınca birazdan göreceğiz ki kötü bir maliyet olacak. Onun yerine hip yapısını kullanacağız.
+
+114
+00:28:10,067 --> 00:28:37,387
+Priority Q kullanıyor. Şimdi bir graf verildiğinde, şöyle bir basit bir graf çizeyim. Çoğunuzun da yanlış yaptığı ve hani Dijkstra yapayım derken BFS veya Prim algoritması kullanarak sonucu buluyorsunuz ama bulduğunuz sonuç Dijkstra sonucu değil, BFS sonucu. Dolayısıyla bazılarınızın o puanları düşük geldi. Şimdi ben bu düğümden şuradaki düğüme gitmek istiyorum.
+
+115
+00:28:38,036 --> 00:28:50,756
+Şimdi benim için ilk başta, işte buraya A diyelim, B diyelim, C diyelim, D diyelim, F diyelim, A, B, C, D, E, F diye bir şey var.
+
+116
+00:28:50,756 --> 00:28:51,996
+Buraya sözünü alalım.
+
+117
+00:28:53,816 --> 00:28:58,656
+Şimdi A'dan gidilebilecek olan, işte 3 olsun, 6 olsun, 4 olsun, 5 olsun falan.
+
+118
+00:28:59,496 --> 00:29:03,676
+Normalde A'dan öncelikle gidilecek olan bütün düğümler sonsuz.
+
+119
+00:29:05,523 --> 00:29:12,003
+B sonsuz, ne bileyim, hatta şöyle bakılıyor galiba, işte Banu hoca bu şekilde anlatıyor.
+
+120
+00:29:12,123 --> 00:29:16,683
+A'dan A'ya gitmek sıfırda, bu sonsuz, bu sonsuz, bu sonsuz, bu sonsuz, bu sonsuz.
+
+121
+00:29:17,623 --> 00:29:21,243
+Sonra bakıldığında A'dan B'ye 3 ile gidebildiğimi görüyorum.
+
+122
+00:29:22,683 --> 00:29:24,883
+Buraya B'ye 3 üzerinden geldiğimi görüyorum.
+
+123
+00:29:25,043 --> 00:29:28,643
+C'ye 6 ile gidebildiğimi görüyorum.
+
+124
+00:29:28,803 --> 00:29:30,723
+Yani nereden geldiğimi not etmek için.
+
+125
+00:29:31,220 --> 00:29:39,619
+D'ye de 5 ile gidebildiğimi görüyorum. E'ye gidemediğimi görüyorum. Sonsuz buna da gidemediğimi görüyorum.
+
+126
+00:29:39,619 --> 00:29:52,980
+Bundan sonra yapacağımız şey, bu algoritmayı matriz üzerinden yapanlar hangi düğümü seçtiler? Örneğin siz söyleyin. Sınavda siz hangisini seçtiniz?
+
+127
+00:29:56,051 --> 00:29:58,051
+Şuradaki ağırlıkları da dört.
+
+128
+00:29:58,051 --> 00:30:01,051
+En kısa olan üç ağa diye seçerim.
+
+129
+00:30:01,051 --> 00:30:06,051
+En kısa olan doğru mu doğru yani bunu seçiyoruz. Güzel.
+
+130
+00:30:06,051 --> 00:30:17,051
+Şimdi bunu seçtikten sonra yani B üzerinden gidilebileceklere bakacağız. Şimdi B üzerinden önceden şurası F'ydi galiba.
+
+131
+00:30:21,940 --> 00:30:46,220
+3 artı 4 yani F üzerinden veya A'ya diyelim önceden sonsuzdu bizim için. Şimdi 7 ile gidebildiğimizi öğreniyoruz. O zaman bu ne olacak? 7 B üzerinden geleceğiz. B'ye A üzerinden geldik. Buraya gelmenin maliyeti 7 oldu. Sonra E'ye gitmenin maliyeti ne oldu? 3, 2 daha 5 oldu.
+
+132
+00:30:47,028 --> 00:31:10,908
+5, önceden sonsuzluğu, daha iyisini bulduk. B üzerinden geldik. Ondan sonra C'ye iyi de biliyoruz. C'ye gitmenin maliyeti, şuraya da ne diyelim, 2 diyelim mesela. C'ye gitmenin maliyeti önceden 6 idi. Şimdi 3, B üzerinden 5 olmuş. Daha iyisini bulduğumuz için ne yapacağız? Burayı 5, B üzerinden alacağız. Aslında şunu yok edeceğiz.
+
+133
+00:31:10,908 --> 00:31:13,228
+Şimdi aslında bunu yok etmiyoruz. Dursun.
+
+134
+00:31:15,188 --> 00:31:30,268
+Şimdi B üzerinden bakınca, burada A üzerinden gidilebileceklere baktık. Sonra bunlardan B üzerinden gidilebilecekleri de bitirdik. Şimdi kime bakacağız?
+
+135
+00:31:35,667 --> 00:31:43,907
+Şimdi bakacağımız için, aslında şurayı da dört yapayım bir dakika. Biraz daha olayı güzel noktaya taşıyalım.
+
+136
+00:31:46,067 --> 00:31:53,427
+Şimdi geçmişe yönelik, şu ana kadar ziyaret ettiğim bütün düğümler içerisinden bakacaksınız.
+
+137
+00:31:53,567 --> 00:32:18,948
+Yani tamam bu görüldü ama burada 6 var, 4 var, 5 var, 5 var, 7 var. Yani A'yı ziyaret ettik, B'yi ziyaret ettik. Şimdi kimden araştırma yapacağımızın durumu daha belli değil. Onu yaparken ne yapıyorsunuz? Bu olabilir, bu olabilir, bu olabilir, bu olabilir, bu olabilir. Sonuçta şu ana kadar uğranan yerler bunlar. Peki bunlardan hangisini seçiyorsunuz sınavda seçtiğiniz?
+
+138
+00:32:20,500 --> 00:32:22,619
+Metehan herhalde biraz öncesinden sormuştun.
+
+139
+00:32:22,839 --> 00:32:24,579
+Ben dört ayı seçmiştim.
+
+140
+00:32:24,940 --> 00:32:26,139
+İşte niye dört ay?
+
+141
+00:32:26,859 --> 00:32:27,859
+Mesela en son...
+
+142
+00:32:27,859 --> 00:32:31,000
+Çünkü seçmediklerimiz arasında en kısa olan o.
+
+143
+00:32:31,500 --> 00:32:38,000
+Peki bu seçmediklerimiz arasındaki en kısayı geriye yönelik dönüp bulmak ne demek?
+
+144
+00:32:38,139 --> 00:32:40,079
+Aslında bir öncelikli kuyruk tutmak.
+
+145
+00:32:40,079 --> 00:32:42,279
+Yani tuttuğunuz veri yapısı şu.
+
+146
+00:32:43,099 --> 00:32:45,099
+Önce hiç kimse yoktu ağaçta.
+
+147
+00:32:45,500 --> 00:32:47,579
+A'yı aldık kuyruğun başına.
+
+148
+00:32:48,211 --> 00:33:06,692
+Ondan sonra A'dan tabii gidilecek maliyet, A'nın kendisinde maliyeti sıfır. Şimdi A'dan gidebileceğim B3 var, C6 var, D4 var. Bunlardan en küçüğünü kuyruğun başına koyuyorum. Sonra mesela D4'ü koyuyorum. Sonra işte C6'yı koyuyorum.
+
+149
+00:33:07,612 --> 00:33:14,572
+Peki B'den gidebileceklerimi keşfettim. B'den gideceklerimi keşfettiğimde ne oldu?
+
+150
+00:33:14,991 --> 00:33:28,991
+C'ye 5 ile gidebildiğimi öğrendim. O zaman C'ye 5, şuradaki aslında güncelleyecek kendini. Sonra E'ye 5 ile gidecekmişim. Oraya da bunu ekliyorum. Sonra F'ye...
+
+151
+00:33:29,044 --> 00:33:45,244
+7 ile gidebiliyormuşum. Şimdi A ile gidilecekler zaten bitmişti. B ile gidilecekleri de bitirdim. Bundan sonra, işte bakın ne oldu? Kuyruğun başında bana kim var? Benim için kim var? D var. Artık D'den gidileceklere bakıyorum. D'den gidileceklere baktığımda
+
+152
+00:33:45,683 --> 00:34:11,123
+Şuraya da ne diyelim? Tabi burayı da hep böyle unutuyoruz. Buraya 8 diyelim. Ne olacak? 4, 8, işte C'ye 12 ile gidebildiğimizi görüyoruz ama zaten biraz önce 5 ile gidebildiğimizi gördük. Güncellemeyeceğiz. İşte 4, 4, E'ye 8 ile gidebildiğimizi görüyoruz D'den. 8, D üzerinden gidebileceğimizi görüyoruz. Pardon. Ha gerçi güncellemeyeceğiz. Yani durabilir.
+
+153
+00:34:11,539 --> 00:34:29,260
+D'den giderecek kimse kalmadı. Bu da bittiğinde şu beşli olanlardan artık C'yi de koyabilirsiniz, E'yi de koyabilirsiniz. Bakın kullandığımız şey, hani bu şekilde matriz de yapsanız veya normal algoritmik bir şey de yapsanız böyle bir kuyruk yapısı kullanmak zorundasınız.
+
+154
+00:34:29,260 --> 00:34:35,260
+C veya E'den hangisini seçtiğimiz fark etmiyor değil mi?
+
+155
+00:34:35,407 --> 00:34:48,608
+etmez. Zaten bu algoritmada bir anlamda şey yapıyoruz, greedy dediğimiz, açgözlü bir yaklaşım yapıyoruz. En küçük nereyi buluyorsa buyrun başında onu atlıyoruz.
+
+156
+00:34:48,608 --> 00:34:49,807
+Ve
+
+157
+00:34:49,903 --> 00:34:56,903
+Bu kuyruk boşalana kadar ve bütün düğümler gezilene kadar işlem yapacaksınız. Dolayısıyla burada herhangi bir sıkıntı olmayacak.
+
+158
+00:34:56,903 --> 00:35:02,903
+Hatta bununla alakalı bir tane bir web sitesi bulmuştum. Animasyon birazdan onu bulup size paylaşmaya çalışayım.
+
+159
+00:35:02,903 --> 00:35:12,903
+Orada da aynısını çok rahat inceleyebilirsiniz. Dolayısıyla bizim böyle bir problemi çözmek veya başka problemleri çözmek için öncelikli kuyruğa ihtiyacımız var.
+
+160
+00:35:12,903 --> 00:35:17,675
+Öncelikli kuyruğu, şurada biraz daha farklı şekilde söyleyelim.
+
+161
+00:35:17,844 --> 00:35:21,844
+Kabul edelim ki benim bir dizim var arkadaşlar. Diziye element ekliyorum.
+
+162
+00:35:21,844 --> 00:35:28,844
+8, 3, 6, 5, 7, 4. Ve şunu hedefliyoruz.
+
+163
+00:35:28,844 --> 00:35:33,844
+Hocam amaç E'ye varmak ya. Direkt E'yi seçtiğinde bitiremez misiniz?
+
+164
+00:35:33,844 --> 00:35:40,460
+Direkt bütün bitiremezsin [öğrenci]. Yani bu soru güzel bir soru. Neden bitiremezsin?
+
+165
+00:35:41,492 --> 00:36:01,912
+Senin amacın E'ye varmak değil, E'ye en kısa yoldan varmak. E'ye en kısa yoldan varmak için bütün ihtimalleri, olası bütün durumları dikkate alacaksın ve mevcut bildiğin yollardan, mevcut ulaştığın çözümlerden daha kısa bir çözüm varsa o çözümü artık dikkate alacaksın.
+
+166
+00:36:02,324 --> 00:36:29,324
+Dolayısıyla E'ye ilk varmak demek aslında bu BFS veya DFS yapmak demektir. Bu bir kör arama algoritmasıdır. E'ye en kısa yoldan. Hayır, E'yi en kısa şekilde güncellenemeyeceğini garanti etmiş olmuyorsun. Lokal minimuma takılmaktır senin dediğin kuyruk mantığıyla çalışmak. Daha bir kısa yol olabilir. Tabii böyle küçük bir graf üzerinden bunu böyle görmek mümkün değil ama benim...
+
+167
+00:36:29,684 --> 00:36:34,923
+Eski video kayıtlarında hatta bir şey vardı, bir tane graf, pardon ders notundaki grafta da bu var.
+
+168
+00:36:35,604 --> 00:36:46,024
+Q mantığıyla, Priority Q değil, Q mantığıyla bunu çözmeye çalışırsanız, ne oluyor? Lokale takılıyorsunuz ve daha kısa bir yol varken, daha uzun bir yoldan çözüme ulaşıyorsunuz.
+
+169
+00:36:46,164 --> 00:36:50,844
+İlk bulduğunuz çözüm, optimum çözüm olmuyor. İyi bir çözüm olmuyor.
+
+170
+00:36:50,844 --> 00:36:56,744
+Onun için, hani, mesela şu matrisin, böyle yapalım.
+
+171
+00:36:57,811 --> 00:37:04,811
+Şu matrisin dolması gereken bir derinlik var. Örneğin mesela sınavda düşük puan alanların bir kısmı şöyle.
+
+172
+00:37:04,811 --> 00:37:10,311
+İşte A demiş, B demiş, böyle düğümler çolmuş. Mesela bu matris belki şuraya kadar dolması lazım.
+
+173
+00:37:10,311 --> 00:37:17,811
+Ama şu kadarı dolmuş. Ne yapmış? Bulduğu ilk çözümü gerçek çözümmüş gibi kabul edenler vardı.
+
+174
+00:37:17,811 --> 00:37:23,811
+Mesela bunlar tam puan alamadılar. İşte 5-6 puan falan almışlardır. Çünkü bu bir Dijkstra Solution değil.
+
+175
+00:37:24,500 --> 00:37:41,539
+DixTran'ın bulduğu durum, buradaki bütün durumlara ulaşılabilecek bütün durumları kontrol ederek kesin sonucu garanti edermiş. Lokal minimuma takılmıyor. Onun için öyle bir şey kabul değil. Amaç en kısa yola gitmek.
+
+176
+00:37:46,612 --> 00:38:10,391
+PriorityQ için şu durumu söyleyelim. Şimdi ben bu diziye elemanlar ekleyeceğim. Şuradaki elemanları sırayla ekleyeceğim. Ama istediğim şey şu. Elemanları ekleyeceğim ama bu dizinin, mesela şuradan ekleyelim, bu dizinin sırasının bozulmaması istiyorum. Küçükten büyüğe sıralı olacak. Yani 8 geldiğinde 8'i buraya ekleyeceğim. Hatta şöyle göstereyim. 8'i ekledim önce.
+
+177
+00:38:11,059 --> 00:38:28,059
+Sonra 3 geldi. Ne olacak? 3, 8 olarak düzenlenecek. Sonra 6 geldi. 3, 6, 8. Sonra 5 geldi. Örnek güzel denk geldi bakın. 3, 5, 6, 8. Şimdi ne oluyor?
+
+178
+00:38:28,059 --> 00:38:37,771
+Sırayı bozmamak için, yani aslında ne oluyor? Aslında burada bir Priority Queue var. En küçük olan eleman sürekli başta olacak ve sıra bozulmayacak.
+
+179
+00:38:37,907 --> 00:38:48,507
+Şimdi bunu nasıl yapabiliriz? Elementi dizinin sonuna ekleriz. Mesela 8 vardı ne olur? 8-3 vardır diziyi sıralarız.
+
+180
+00:38:48,507 --> 00:38:58,467
+Şimdi diziyi sıralamanın maliyeti ne? Bir go n² gibi bir şey veya nlogan. Bir tane eleman eklemek için nlogan kadar en iyi ihtimalle şey.
+
+181
+00:38:58,527 --> 00:39:04,867
+Peki n tane eleman eklersem n çarpı nlogan yani n²logan'lik bir karmaşır. Bu çok kötü bir algoritma.
+
+182
+00:39:05,427 --> 00:39:14,188
+Bu olmasın diye ne yapıyoruz? Her elementi eklediğimde diyorum ki 3 eklenmiş 8 var, 6'yı ekleyeceğim. 6'ya önce yer ararım.
+
+183
+00:39:14,188 --> 00:39:22,228
+İşte nedir? 6 bununla bunun arasına girecek. O zaman 8'i ne yaparım? Bir kaydırırım. 6'yı araya insert ederim.
+
+184
+00:39:22,228 --> 00:39:29,827
+Şimdi burada da baktığımızda elemanın yerini bulmak için baştan bir arıyoruz.
+
+185
+00:39:31,603 --> 00:39:44,203
+n tane eleman içerisinde, n tane dizi eleman içerisinde bir yerde benim elemanın yeri var. O zaman n tane arama yapacağım. Sonra kaydırma yapacağım. O da n defa olacak. Yani kabaca n defa işlem yapacağız.
+
+186
+00:39:44,203 --> 00:39:58,804
+Az önce n kare logende bakın. Şu yaklaşımda önce yerini buldum, sonra yerleştirdim. Yaklaşık olarak n'lik defa. Niye n kare logende? Ben bu işi bir defa yapmayacağım. Sürekli yapacağım n kare logende. Peki burada
+
+187
+00:39:58,864 --> 00:40:03,864
+Bunu bir defa yapmanın maliyeti n. Peki n defa yaparsam, bu da n kare oluyor.
+
+188
+00:40:03,864 --> 00:40:06,864
+Şimdi n kare mi büyüktür, n kare log n mi büyüktür?
+
+189
+00:40:06,864 --> 00:40:10,864
+n kare daha küçük.
+
+190
+00:40:14,068 --> 00:40:40,748
+n-kare Logan daha büyük. Yani n-kare küçüktür, n-kare Logan. Bakın şu algoritmaya göre her defasında dizinin sonuna eleman ekleyip o diziyi sürekli sıralamak yerine elemanın yerini bulup o elemanı ilgili yere insertion yapmak daha mantıklı geldi. Şimdi böyle birazcık iyileştirme sağlık. Ama bakın bu n-kare de çok fazla. Hani hala çok iyi bir yerde değiliz.
+
+191
+00:40:42,324 --> 00:41:05,003
+Üzerinde düşünülmüş. Demek ki bu diziyi bu şekilde naif bir şekilde kullanıp doğrudan tekrar tekrar diziyi sıralamak veya dizinin içerisinde inserjion yapmak verimli olmamış. Prior to Q'nun önce şurada geleneksel kuyruktan bahsediyor. Geleneksel kuyruk da nedir?
+
+192
+00:41:05,076 --> 00:41:16,336
+Kuyruğun başından elemanı çıkartırsın, kuyruğun sonuna elemanı eklersin. Ama Prior2Q ne yapıyor? İşte sen 47 misin diyor. 47'nin yeri burasıdır. Bunu buraya eklerim ve kuyruğu muhafaza ederim.
+
+193
+00:41:17,655 --> 00:41:26,576
+Peki, burada da başka bir şey var. İşte hastasınızı demişti. Öncelikle hastalar daha öne gelsinler falan demişler. Bunların karmaşıklıkları burada var.
+
+194
+00:41:27,476 --> 00:41:31,396
+Hip yapısı bir data structure ve bir ağaç yapısı arkadaşlar.
+
+195
+00:41:31,936 --> 00:41:34,856
+Öyle bir ağaç ki, bu bir Complete Ağaç.
+
+196
+00:41:36,496 --> 00:41:38,356
+Hatta Complete Binary Tree.
+
+197
+00:41:39,756 --> 00:41:41,695
+Ne demek Complete Binary Tree?
+
+198
+00:41:42,356 --> 00:41:51,336
+Normalde bir Binary Tree'nin dengeli olanı vardı, dengesiz olanı vardı, Binary Search Tree vardı hatırlarsanız, farklı farklı ağaçlar.
+
+199
+00:41:51,876 --> 00:41:54,776
+Complete Binary Tree, şu bir Binary Tree mi? Evet, Binary Tree.
+
+200
+00:41:55,376 --> 00:41:57,516
+Ama bu Complete Binary Tree değil.
+
+201
+00:41:58,068 --> 00:42:03,628
+Sizin eklediğiniz elemanlar seviyeleri bozmadan, ağacın düzenini bozmadan ne oluyor?
+
+202
+00:42:04,528 --> 00:42:09,588
+Öyle bir ağaç oluşturacaksınız ki ağacın her seviyesindeki bütün düğümlerin yerleri dolacak.
+
+203
+00:42:10,148 --> 00:42:12,447
+Bakın bu Complete Binary Tree yapısı.
+
+204
+00:42:13,048 --> 00:42:15,427
+Şu non-complete yani böyle bir şey yok.
+
+205
+00:42:16,008 --> 00:42:18,188
+Yeni bir eleman eklediğinizde şuraya getireceksiniz.
+
+206
+00:42:18,288 --> 00:42:21,748
+Bir eleman daha ekleyeceksiniz buraya gelecek.
+
+207
+00:42:21,748 --> 00:42:25,708
+Ama bunun bir kuralı daha var.
+
+208
+00:42:26,547 --> 00:42:34,547
+Şu eleman, buna A diyelim, buna B diyelim, buna da C diyelim. Tabi bu bütün alt ağaçlar için de geçerli.
+
+209
+00:42:34,547 --> 00:42:41,547
+A büyüktür B ve aynı zamanda A büyüktür C kuralı da sağlaması gerekir.
+
+210
+00:42:41,547 --> 00:42:50,547
+Bir düğüm altındaki bütün elementlerden büyük olmak zorunda. Eğer bunu tersten düşünürseniz,
+
+211
+00:42:50,996 --> 00:43:03,155
+A küçüktür B, aynı zamanda A küçüktür C de olabilir. Olayı tersten düşünüp bunu da sağlayabilirsiniz. Bunlardan şu şekilde bir şey yapıyorsak buna max hip diyoruz.
+
+212
+00:43:04,775 --> 00:43:10,316
+Bir düğüm altındaki bütün elementlerden büyüktür. Tam tersini yapıyorsanız bunlardan min hip diyoruz.
+
+213
+00:43:11,215 --> 00:43:17,316
+Özelliği ne? İster max hip olsun ister min hip olsun. Özelliği ağacın tam dolu olması.
+
+214
+00:43:17,780 --> 00:43:44,420
+Yani şu an sizin 3, 4, 5, 6, 7, 8, 9, pardon 10 tane bu diyor. 3, 4, 5, 6, 7, 8, 9. 10 tane elemanınız varsa ağacınızın görüntüsü bu olacak. Yani aradan şöyle bir şey olmayacak işte 10 eleman veya ne bileyim 4 eleman için söyleyelim. 1, 2, 3, 4. elemanı getirip buraya koymuyorsunuz. Böyle bir şey yok. 4. eleman nereye gelecek? İllaki buraya gelecek. Ondan sonraki gelecek 5. eleman buraya gelecek. Ama elemanların yeri.
+
+215
+00:43:44,851 --> 00:43:52,211
+Ağaç üzerinde şu kurallara göre, minip veya maxip yerine göre değişecek. Şimdi bu bize neyi sağlıyor?
+
+216
+00:43:52,211 --> 00:44:02,612
+En tepedeki eleman, maxip için düşünürsek, şu ağaçta veya bir hip yapısında, en tepedeki eleman en yukarıda demektir.
+
+217
+00:44:02,612 --> 00:44:11,731
+Onun iki altındakiler ondan küçüktür, onun altındakiler ondan küçüktür. Ne oluyor bu? Biraz önce bahsettiğimiz, şurada yazdığımız
+
+218
+00:44:11,956 --> 00:44:34,355
+Bir elemanları ekledik, elemanları diziye sıralı ekleme yapıyorduk ya, şuradaki örnekte 8, 3, 6, 5, 7, 4. Öyle bir ağaç oluşuyor ki, bu ağacın oluşturduğu görüntü tam bir Priority Q oluyor. Ve bunun ağacının eklenmesi, silinmesi, ağacın içerisinden reorganization yapılması,
+
+219
+00:44:34,931 --> 00:44:51,091
+Biraz önceki insertion mantığına göre bakarak log n karmaşıklık da oluyor. Ve bunu ben n defa yaptığımda n log n'e geliyor. Bakın n log n'lik bir karmaşıklığa indirgedim. n log n mi daha iyi? n kare mi daha iyi? n kare log n mi daha iyi?
+
+220
+00:44:52,931 --> 00:44:54,931
+Şu çok çok daha iyi bir hal bu.
+
+221
+00:44:54,931 --> 00:44:56,555
+Peki...
+
+222
+00:44:56,692 --> 00:45:11,092
+Şu neyi de hatırlayalım. Dizinin sonuna ekle, diziyi her defasında sırala. Tabii sıralarken merge sortu kullanırsan n kareli olabilirsin. Eğer merge sort değil de insertion sort kullanırsan bu ne olur? n küp bile olabilir. Bu en kötü çözüm.
+
+223
+00:45:11,092 --> 00:45:23,692
+Her defasında ekliyorsun, insertion sort gibi veya selection sort gibi algoritmayla sıralıyorsun n kare demek. Bunu n defa yapıyorsan n küp. Hani selection sort diyelim.
+
+224
+00:45:24,500 --> 00:45:45,483
+n defa, bu n defa quicksort olsun. Şu neydi? n defa insertion. Her bir insert işlemi n kare başkaklı. Bunu n defa yaparsam n kare. Şu da n kes heap işlemi.
+
+225
+00:45:48,019 --> 00:46:11,980
+Bakalım birazcık detaylarına. HipDataStructure dediğimiz gibi arkadaşlar, komplet bir binary tree. Özelliğine her parent kendisinin çocuklarından büyük ya da küçük. Eğer küçük olursa, mini, büyük olursa maksimum dediğimiz bir yapı. Böyle bir görüntüsü var. Dolayısıyla burada şunu garanti edebiliyoruz. Mesela bu ağacın derinliği şu elemanın yüksekliğiyle aynı. Şu elemanla değil.
+
+226
+00:46:12,403 --> 00:46:17,523
+Mesela buraya yeni bir eleman ekleyeceksek buraya getiriyoruz. Bu şekilde dengeli bir ağaç oluşuyor.
+
+227
+00:46:17,523 --> 00:46:23,923
+Sıralama algoritmaları için de bu kullanılabilir de asıl kullanıma priority Q'dur.
+
+228
+00:46:23,923 --> 00:46:30,164
+Sıralama algoritmaları için nasıl kullanılır? Ağacı oluşturursunuz. Ağacı oluşturmak Logan.
+
+229
+00:46:30,164 --> 00:46:37,844
+Ağacın kökünü her defasında çeker, kopartırsınız. Şimdi kökte daima en büyük veya en küçük eleman olacak.
+
+230
+00:46:38,099 --> 00:46:45,420
+Kökü koparttığınızda ağaç kendini tekrar organize ediyor, tekrar organize ediyor ve siz kökü koparta koparta ağaçta hiçbir şey bırakmıyorsunuz.
+
+231
+00:46:45,420 --> 00:46:55,299
+Dolayısıyla Heapsort algoritması var incelersiniz. Bu algoritma da enlogan karmaşıklıkla işlem yapıyor. Mesela enlogan bir şey.
+
+232
+00:46:57,780 --> 00:47:24,260
+HIP operasyonları, bu yine DataStructure dersinin şeyi, ağaca eleman eklemek, ağaçtan eleman çıkartmak, ağacın tepesinde kim var buna bakmak, genel olarak bunlar. Bir de ağacı reorganize etmek. Şimdi bunu HIP'i illaki size C'de anlattığımız Structure'lar ve ağaç yapıları şey Structure'lar üzerinden yapmanız gerekmiyor. HIP'i dizilerle de yapabilirsiniz. Çünkü şöyle bir yapı var, dikkat edin.
+
+233
+00:47:25,076 --> 00:47:36,496
+Biz binary trilleri anlatırken demiştik, şu elemanın indisi dizinin birinci elemanı olsun, bunun sol çocuğu 2'de olacak, sağ çocuğu 3'de olacak.
+
+234
+00:47:36,635 --> 00:47:45,436
+Yani sol çocuk eleman P ise, sol çocuk 2P'de, tabii birden başladığımızı kabul ediyoruz, sağ çocuk 2P artı 1.
+
+235
+00:47:46,896 --> 00:47:48,876
+Şunun sol çocuğu kaç?
+
+236
+00:47:50,228 --> 00:48:17,668
+10'da olacak. Bakın bunun sol çocuğu 10, 36, 35'in sol çocuğu 36, sağ çocuğu 43. Bu şekilde bir düzenle gidiyor. Eğer ben bir düğümün parent'ına ulaşmak istiyorsam, bu seferde de işte i'inci düğüm 8'in parent'ı kaçtır? i bölü 2, yani 4. Buna doğrudan gidebiliyor. Bakın bu Complete Binary Tree olduğu için diziyi çok verimli kullanabiliyoruz çünkü bütün elemanlar dolu.
+
+237
+00:48:17,844 --> 00:48:21,124
+Complete olmasa ne olacaktı? İşte şöyle bir ağaç olsun.
+
+238
+00:48:23,124 --> 00:48:32,244
+Bu mesela birinci eleman, şu ikinci eleman, bu beşinci eleman, bu da beşinci eleman.
+
+239
+00:48:32,963 --> 00:48:34,324
+Böyle bir ağaç.
+
+240
+00:48:34,416 --> 00:49:01,356
+dizisi var ki işte birden başladınız, bir, iki, üç, dört, beş, ne bileyim on beşe kadar gitsin. Birde bir eleman var, işte buna A diyelim. İkide bir şey var, buna B diyelim. Üç boş, sıfır. Dört boş, sıfır. Beşte bir tane işte D diye bir eleman var, şey C diye bir eleman olsun. Yani içeriği sürekli boş elemanlarla dolu bir ağaçtı ama burada böyle bir şey yok. Çok daha temiz bir görüntü var. Dolayısıyla bu dizinin
+
+241
+00:49:01,715 --> 00:49:06,235
+inşa edilmesi ve ağacın diziyle oluşturulması da çok verimli.
+
+242
+00:49:08,295 --> 00:49:13,935
+Eğer bu bir minhipse, ki buradaki minhip yapısına uygun, ne olacak?
+
+243
+00:49:14,835 --> 00:49:20,835
+Şu seviyeye baktığımızda, bu da bundan büyük.
+
+244
+00:49:20,835 --> 00:49:24,835
+Yani 7, 18'den küçük, 7, 9'dan küçük veya...
+
+245
+00:49:25,043 --> 00:49:35,043
+Şu alt ağaca baktığımızda 9, 14'ten küçük, 9, 10'dan küçük veya şuraya baktığımızda 19, 28'den küçük, 19, 39'dan küçük oluyor.
+
+246
+00:49:35,043 --> 00:49:43,043
+Bakın bu dizi sıralı bir dizi değil ama şu garanti. Bu dizinin başındaki eleman en küçük eleman.
+
+247
+00:49:43,043 --> 00:49:49,043
+Bu dizinin sol çocuğuyla sağ çocuğu kendisinden daha büyük.
+
+248
+00:49:50,195 --> 00:50:11,875
+Peki hocam biz burada Priority Q'yu nasıl oluşturacağız? Hani dizinin elemanlarının sıralı olması lazım. İlla yukarıdaki gibi bir şey olması istemiyoruz. Biz dizinin başından bir hani Dixter'a yaptığınızı düşünün. Bir eleman seçtiniz. O seçtiğiniz eleman dizinin başında oluyor. Bundan sonraki küçük olanlar diğer elemenler.
+
+249
+00:50:12,052 --> 00:50:21,052
+onu mesela kuyruğa eklediğinizde ne olacak? İlgili yere gelecek, ağaç da ilgili yere alacak ve yapıyı bu şekilde muhafaza edebileceksiniz.
+
+250
+00:50:22,052 --> 00:50:36,812
+Vektör dizi görüntüsü, dizi representation'ı bu şekilde. Mesela bir eleman eklendiğinde, bakın şurada şöyle bir ağaç var, biz buna 8'e eklediğimizde, şimdi 8'e eklersek ne olur? Bu min-hip yapısını bozar.
+
+251
+00:50:36,980 --> 00:50:56,980
+Çünkü 7, 9'dan küçük, 9, 10'dan küçük ama 10, 8'den küçük değil. O zaman bu yapıyı sağlarken 8'i öyle bir noktaya koyuyoruz ki buradaki min-hips yapısı bozulmuyor. Mesela 8'i getirip buraya koyamam. 8'e yer ayırıyoruz. Bunu yer ayırırken de...
+
+252
+00:50:57,492 --> 00:51:07,332
+Logen karmaşıklık zaten, Logen'lik kısmı karmaşıklığı buradan buluyor. Bunun gidip ilgili yerini bulduruyorsunuz algoritma.
+
+253
+00:51:07,332 --> 00:51:23,172
+Dediğim gibi algoritmaki tarafları benim dersimin konusu değil. Ağacın tepesi en büyük veya yerine göre en küçük min veya max'a, maksimum ise o değeri size söylüyor. Bu şekilde çok daha performanslı olarak
+
+254
+00:51:23,411 --> 00:51:28,271
+bir priority queue yapısı sağlanıyor. Bakın bu önemli bir bilgi.
+
+255
+00:51:28,791 --> 00:51:29,811
+Hani
+
+256
+00:51:31,351 --> 00:51:35,191
+sıralı bir dizi veya şöyle diyelim priority queue
+
+257
+00:51:35,691 --> 00:51:40,311
+bir veri yapısı, bu veri yapısını inşa etmenin yolu klasik bir dizi oluşturup
+
+258
+00:51:40,571 --> 00:51:43,891
+şurada yaptığım karşılaştırmada olduğu gibi.
+
+259
+00:51:45,811 --> 00:51:56,572
+Nerede yaptık? Şurada yaptık. Yani bakın farklı farklı yollarda bu oluşabiliyor. Hip kullanmak, hatta Fibonacci hipler falan var. Biraz daha ikili ağaçlar değil de Fibonacci hip ağaçları var.
+
+260
+00:51:56,572 --> 00:52:06,811
+Bunlarla biraz daha maliyetini indirgeyebiliyorsunuz, iyileştirebiliyorsunuz. Bu yapıyı da nerede kullanıyoruz? Oradan Dijkstra algoritmasında kullanabiliyoruz.
+
+261
+00:52:06,811 --> 00:52:10,811
+Şimdi şuradan bir şey açacağım.
+
+262
+00:52:10,811 --> 00:52:13,771
+Şuydu galiba.
+
+263
+00:52:15,572 --> 00:52:17,572
+Evet, şu saklıka.
+
+264
+00:52:21,012 --> 00:52:45,332
+Şöyle bir şey, şimdi bu tarz bir grafta hani A'dan başlamış olalım. A'dan gidilebilecek, mesela ben hatta D'yi seçeyim. Şimdi D'den gidilebilecek olanlar, şurada da speed'ini azaltalım şöyle iyice. Ve Visualize yapalım. Şimdi D'den önce kime gideceğiz?
+
+265
+00:52:46,003 --> 00:53:11,003
+A var, E var, H var, bir de J var. A'yı keşfettik. Tabi A burada sadece şey, alfabetik olarak belki veya komşuluk olarak listede yerine geldiği için önceden sunusuzdu. 9, 16, 7 ve 3 diye çekildi. Şimdi bunlar içerisinden ilk bakacağımız şey kim olacak? 3 ile H olacak.
+
+266
+00:53:11,188 --> 00:53:16,188
+Artık bundan sonra H üzerinden genişletmemi yapıyorum.
+
+267
+00:53:17,388 --> 00:53:24,388
+Genişletmemizi yaptığımızda K'ya 7 ile gidebildiğimizi görüyoruz. Ondan sonra I'ya 15 ile gidebildiğimizi görüyoruz.
+
+268
+00:53:24,388 --> 00:53:29,188
+J'ye, bakın J'ye daha küçük bir maliyet bulduk. J'yi güncelledik.
+
+269
+00:53:31,188 --> 00:53:34,188
+E'yi güncellemedik. Şimdi bakacağımız şey kim olacak?
+
+270
+00:53:35,380 --> 00:53:44,980
+7'lerden birisine bakacağız. Yani 7K var, 7E var. E üzerinden, E daha önce kuyruğa girdiği için E üzerinden araştıracak.
+
+271
+00:53:44,980 --> 00:53:59,380
+Bakın bu bir BFS değil. Sürekli şu ana kadar ki ulaştıklarından en az maliyetli olanları genişlete genişlete, böyle yayla yayla ne yapıyoruz? Algoritmayı tamamlıyoruz.
+
+272
+00:53:59,380 --> 00:54:01,380
+Biraz sızlandıralım.
+
+273
+00:54:03,956 --> 00:54:14,956
+Fena da yapmamış yapan kişi. Bakın buradaki yapıya ne demiş? Priority Q. Bu öyle bir yapı ki, kuyruğun başında hem en az maliyetli olan şeyler var.
+
+274
+00:54:14,956 --> 00:54:22,956
+Matris kullansanız da aslında farkında olmadan demek ki ne yapıyormuşsunuz? Priority Q oluşturuyormuşsunuz.
+
+275
+00:54:22,956 --> 00:54:30,956
+Bu Priority Q eğer diziyle yaparsanız maliyet fazla, dizi dışında yaparsanız biraz daha uygun bir maliyet oluyor.
+
+276
+00:54:31,795 --> 00:54:32,995
+Sorumuz var mı?
+
+277
+00:54:39,123 --> 00:54:47,263
+Evet, son konumuza gelelim arkadaşlar. Bir 20-25 dakika daha anlatacağım. Blok yapalım, ara vermeyeyim. Araya gerek yok. Böyle devam etsin gitsin.
+
+278
+00:54:50,083 --> 00:55:04,884
+Herhalde hızı güncellememe izin vermiyor. Bakın Dijkstra'da bütün yolları ziyaret etmemiş görünüyor. Niye? O yolu ziyaret etmeyi denedi aslında. Ama deneyince ne oluyor? Şimdi ben E'den F'ye gidersem.
+
+279
+00:55:06,099 --> 00:55:08,420
+E'ye gelmenin maliyeti 7 idi.
+
+280
+00:55:09,119 --> 00:55:14,220
+Burada 11 eklenecek, 18. Ben daha önce oraya zaten B ile
+
+281
+00:55:14,599 --> 00:55:17,599
+nedir? İşte 7, 14, 16.
+
+282
+00:55:17,599 --> 00:55:23,099
+16 ile gitmişim. 18, 16'dan şey olduğu için bu yolu işaretlememesi normal.
+
+283
+00:55:23,300 --> 00:55:26,980
+Az önce bir arkadaşımız kimdi soru soran? [öğrenci]'di.
+
+284
+00:55:27,188 --> 00:55:39,487
+Mesela [öğrenci]'in sorusuyla bu çelişiyormuş gibi görünebilir. Şurası yok, çelişmiyor. Normalde o yol deneniyor ama o yoldan daha kısa, maliyetli bir yol daha önceden görüldüğü için o yol işaretlenmiyor.
+
+285
+00:55:39,487 --> 00:55:51,987
+Ama deneme yapılıyor illerki. O yol üzerinde hesaplama gerçekleştiriyor. Mesela ben A'dan D'ye, D'den A'ya, D'den E'ye, D'den Haşa, D'den J'ye gittim.
+
+286
+00:55:53,268 --> 00:56:06,268
+E'den haşa olan şeyi kontrol etmedim gibi görünmesin. Kontrol ediyoruz. Ama daha önce D'den haşa 3 ile gittiysem, 7, 6 artı 13 olacağı için ne oluyor?
+
+287
+00:56:08,268 --> 00:56:14,987
+O güncellenmiyor. İkinci pdf dediğin şu mu? Bu mu?
+
+288
+00:56:19,860 --> 00:56:20,860
+Yoksa şun
+
+289
+00:56:26,387 --> 00:56:29,327
+Vallahi bu hani paylaşırız da.
+
+290
+00:56:31,327 --> 00:56:34,327
+University of California'ya geldi galiba bu.
+
+291
+00:56:34,587 --> 00:56:38,427
+Evet, University of California'ya bir törbü. Şu kodu Google'a yazarsan
+
+292
+00:56:39,947 --> 00:56:41,487
+CSCI çıkar.
+
+293
+00:56:41,747 --> 00:56:46,107
+Şu da Bilkent'in bir site. Yani bunun devamı da var.
+
+294
+00:56:47,887 --> 00:56:53,788
+Algoritm2 CS502. Bu da Bilkent'in. Yazarsan zaten doğrudan budur.
+
+295
+00:56:54,612 --> 00:56:59,932
+Hatta Bilkent'inki şurada var, şeye, çete yazayım.
+
+296
+00:57:04,755 --> 00:57:13,195
+Gelecek dönem, data structure'da bunun detaylarını çalışacaksınız arkadaşlar. Ben işin algoritma tarafına girmiyorum. Diskret matematik tarafındayım.
+
+297
+00:57:13,195 --> 00:57:27,275
+Bunun algoritmik inceliklerine bakarsınız. Şimdi gelelim bizim konumuza. Bunlar ağaçlarla alakalı, graflarla alakalı anlattığım kısımlar önemli bölümlerde.
+
+298
+00:57:32,307 --> 00:57:36,067
+üzerinde çalıştığımız, kod yazdığımız cihaz nedir?
+
+299
+00:57:36,567 --> 00:57:38,127
+bir CPU'su var.
+
+300
+00:57:39,967 --> 00:57:45,367
+bu CPU instruction'ları execution yapıyor. CPU'nün görevi
+
+301
+00:57:46,467 --> 00:57:47,667
+instruction
+
+302
+00:57:48,627 --> 00:57:49,827
+execution
+
+303
+00:57:51,747 --> 00:57:55,347
+mesela datalar execute edilmez, datalar proses edilir.
+
+304
+00:57:55,987 --> 00:58:00,168
+Instruction'ları execute ederek de aslında dolaylı yoldan data processing yapıyoruz.
+
+305
+00:58:01,827 --> 00:58:08,668
+CPU'nun doğrudan görevi data processing değildir. Instruction execution'dir. Instruction execution'i yaparken de datayı proses edersin.
+
+306
+00:58:09,067 --> 00:58:14,547
+Ne demek data processing? Add dediniz, A ve B dediniz. İşte A ile B'yi topla.
+
+307
+00:58:15,268 --> 00:58:19,007
+Şimdi burada data dediğimiz şey A, B yani A artı B yapacağız aslında burada.
+
+308
+00:58:20,327 --> 00:58:23,188
+CPU'nun görevi şu komutu algılayıp işlem yapmak.
+
+309
+00:58:24,148 --> 00:58:32,548
+A ve B'yi toplamak da sizin hedefiniz. Bunlar datalar. Peki, bu CPU bu işi yaparken neye ihtiyaç duyuyor? Bir belleğe ihtiyaç duyuyor. Memori.
+
+310
+00:58:33,688 --> 00:58:46,088
+Tek başına CPU işe yaramaz. Hatta bunun içinde üçlü BAST yapımız var. Bu BAST yapısı da adres BAST, DATA BAST ve CONTROL BAST diye üç gruba ayrılıyor.
+
+311
+00:58:49,652 --> 00:59:04,331
+RAM dediğimiz aslında şurası da. Yapacağın, çalıştıracağın, çözmek istediğin programa dair algoritmanı alıyorsun, RAM'in içerisinde yüklüyorsun, CPU o RAM'den birer birer komutları alıyor, çalıştırıyor.
+
+312
+00:59:05,780 --> 00:59:24,780
+RAM'in kapasitesi kadar sonsuza yakın bir işlem tanımlayabiliyorsun burada. Yani sonsuzluktan kastım burada mutlak sonsuzluk değil. RAM'in kapasitesi kadar sonsuzluk yapılacak. Ve şöyle bir sonsuzluk da söz konusu. Bizim mesela operatörlerimizin neler? Toplama, çıkarma, çarpma, bölme.
+
+313
+00:59:26,143 --> 00:59:52,643
+Conditional işlemlerimiz var. Eşittir, eşittir, büyüktür, küçüktür gibi şeyler. Bunları sonsuz olarak kullanabilirsin. İstediğin şekilde sıralamalarını değiştir. Önce toplama yap, sonra çarpma yap, sonra çıkarma yap. Önce karşılaştırma yap. Bunlar farklı algoritma, geliştireceğin algoritmaya göre çeşitlilik gösterebilir. Fakat bir de bazı durumlar var ki bu kadar karmaşık bir yapıya gerek yok.
+
+314
+00:59:52,880 --> 01:00:08,239
+Çünkü hedeflediğim problem çok basit. Bu kadar pahalı CPU'ya, pahalı RAM'e, işte bus yapısına, bu kadar fazla donanım, hatta bu kadar elektronik bir yapıya ihtiyacın yok. Belki bunu mekanik olarak bile tasarlayabilirsin.
+
+315
+01:00:08,239 --> 01:00:17,519
+Bunun mekanik durumu, en güzel örnek metro istasyonlardaki basit turnikeler. Ne oluyor? Şimdi turnikeye dikkat edersen işte bir...
+
+316
+01:00:17,972 --> 01:00:41,952
+Cihaz var. Tabi şu an oradaki cihaz şey de, yeni teknoloji, kart okutuyorsun. Önceden kart yoktu, jeton atıyordu. Jetonun belli bir fiziksel özelliği var. O jeton bir hazneye düşüyor. O haznede o fiziksel özelliği doğrudan sağlıyorsa ne oluyor? Oradan geçiyor. Hatta jeton üzerinde çizikler falan olur. İşte bir anahtar gibi düşünün.
+
+317
+01:00:42,356 --> 01:00:50,356
+O oraya gittiğinde bir anahtarın bir kilidi açması gibi bir durum söz konusu oluyor. O durum tek seferlik gelişen bir durum.
+
+318
+01:00:50,356 --> 01:01:08,356
+Dolayısıyla kapalı olan bir şeyiniz var, turnikeniz var. Anahtar geçtiğinde açık hale geliyor. Siz oradan tekrar geçerseniz, yani o turnikenin kolunu hareket ettirdiğinizde tekrardan ne oluyor? Açık durumdan kapalı duruma geliyor.
+
+319
+01:01:09,204 --> 01:01:23,544
+sonlu durum makinesi. Yani böyle bir şeyiniz var ki, ya kapalı haldesiniz, ya açık haldesiniz. Bundan buna geçişler, ya işte jeton atmak ya da karşıya geçmek. İki farklı operasyonunuz var.
+
+320
+01:01:23,544 --> 01:01:35,064
+Bakın toplama, çıkartma, çarpma, bölme dedim. Biraz önce bir sürü operasyondan saydım. Burada iki tane operasyonumuz var. Jeton atmak, Turn 2'den geçmek. Jeton atınca
+
+321
+01:01:35,539 --> 01:01:40,539
+kapalı durumdan açık duruma geçiyorum. Turnike'den geçince açık durumdan kapalı duruma geçiyorum.
+
+322
+01:01:40,539 --> 01:01:53,539
+Şimdi bu çok basit bir algoritmayla çözülebilir ama bu şeyi yapmak için bir CPU tasarlama, CPU almak, RAM almak, ona program yazmak gerekli değil.
+
+323
+01:01:53,539 --> 01:02:01,539
+Sonlu bir durum makinesi ile hatta bunu mekanik olarak da tasarlayabiliyoruz ki zamanında öyleydi. Basit bir şekilde bu problem çözülebiliyor.
+
+324
+01:02:02,387 --> 01:02:12,387
+Şimdi gelelim. Yaptığımız şey zeton atmak, açık kapalı durumlar arasında geçiş yapmak diyebiliriz.
+
+325
+01:02:14,387 --> 01:02:25,387
+Şimdi değişime ne neden oluyor? Ya şunu yapmak ya da bunu yapmak. Değişimin sonucunda bulunduğumuz haller ne oluyor? Ya bu durum ya da bu durum. Yani bir değişkeniniz var.
+
+326
+01:02:25,876 --> 01:02:43,876
+Program açısından düşünecek olursak bir D değişkenimiz var. Bu ya 0 ya da 1. Bu D değişkenini kontrol eden iki farklı operasyon. İşte buna artı diyelim, buna eksi diyelim mesela veya ne bileyim buna alfa operasyon diyelim, buna da beta operasyon diyelim. Tanımladığımız şeyler bunlar.
+
+327
+01:02:43,876 --> 01:02:53,776
+Şimdi bu ve bunun gibi birçok sonlu durumu, bakın sonlu durumdan bahsediyoruz, çözebilecek makineler söylenmiş.
+
+328
+01:02:53,775 --> 01:02:58,675
+Sonlu durumlara burada durum kelimesi hani station, state'den geliyor.
+
+329
+01:02:59,996 --> 01:03:03,715
+Öyle bir şeyimiz olacak ki bir küme tanımlayacağız birazdan.
+
+330
+01:03:04,395 --> 01:03:06,335
+Durumlarımızın sayısı sonlu olacak.
+
+331
+01:03:07,335 --> 01:03:08,895
+Şimdi bir program yazdınız.
+
+332
+01:03:09,135 --> 01:03:12,735
+Mesela artı, eksi, çarpı, hop ne oldu?
+
+333
+01:03:15,475 --> 01:03:20,516
+Çarpı, bölü, eşittirden.
+
+334
+01:03:21,715 --> 01:03:22,556
+Allah Allah.
+
+335
+01:03:24,175 --> 01:03:24,915
+Bir şey oluyor.
+
+336
+01:03:26,195 --> 01:03:31,295
+Bu kadar farklı operasyonu kullanarak sonsuz işlem tanımlayabiliyorsunuz.
+
+337
+01:03:31,375 --> 01:03:34,915
+Ama bu hatta sonsuz durum oluşturabiliyorsunuz.
+
+338
+01:03:35,735 --> 01:03:39,395
+Elinizde mesela x ve y gibi iki tane değişkeniniz olsun.
+
+339
+01:03:40,076 --> 01:03:41,935
+Şunları kullanarak, hatta şunu da değil.
+
+340
+01:03:43,015 --> 01:03:47,615
+Bunları kullanarak ve bunları istediğiniz sayıda kullanarak, istediğiniz sırada kullanarak sonsuz tane
+
+341
+01:03:48,211 --> 01:04:00,311
+şey elde edersiniz değil mi? Sonuca ulaşırsınız. İşte x ile y'yi topla, ondan sonra bundan bunu çıkar, bundan bunu çarp, bundan bunu bir şey yap, bir sonuç eder. Ne bileyim, x'den y'yi çıkar, sonra çarp, sonra şey yap, o başka bir şey eder.
+
+342
+01:04:00,871 --> 01:04:06,771
+Bizi sonsuz tane duruma götürür. Ama buradaki ulaşacağınız durum sonlu olacak. Buna dikkat edelim.
+
+343
+01:04:09,231 --> 01:04:13,111
+Özellikle dil modellerinde, şimdi burada dil modelinden kastımız,
+
+344
+01:04:16,692 --> 01:04:21,411
+Farklı diller var da, hani bizim günlük hayatta konuştuğumuz doğal dillerden bahsetmiyoruz.
+
+345
+01:04:22,572 --> 01:04:28,032
+Makine vari diller, buna formal language istiyoruz.
+
+346
+01:04:30,132 --> 01:04:37,032
+Bizim günlük hayattaki dilimiz natural language'lar, doğal diller. Bu formal dillerin modellenmesinde kullanılır.
+
+347
+01:04:37,831 --> 01:04:43,891
+Örneğin, şöyle birazdan örneği gelecek. Bir otomatınız var.
+
+348
+01:04:44,340 --> 01:04:48,020
+Bu otomatta, işte bizim bölümde olan otomati düşünün.
+
+349
+01:04:48,340 --> 01:04:50,020
+30 liralık bir şey alacaksın.
+
+350
+01:04:50,020 --> 01:04:53,620
+Şimdi 30 lira diyelim, ürünün miktarı 30 TL.
+
+351
+01:04:54,420 --> 01:05:00,660
+Elimizdeki paralar da işte 5 liramız var, hani kağıt üzerinden düşünülecek olsak 10 var, 20 var.
+
+352
+01:05:00,660 --> 01:05:02,340
+Şimdi ben bunlardan...
+
+353
+01:05:03,251 --> 01:05:29,971
+bir kombinasyon yapacağım ve bu kombinasyonun sonucu 30'a gidecek. Ne olur? 5 tane 6 olabilir, 6 tane 5 olabilir, 3 tane 10 olabilir, 1, 20, 2 tane 5 olabilir, 1, 20, 1 tane 10 olabilir. Ama hedeflediğimiz şey 30'a gitmek. Bakın burada operatörlerimiz artı eksi çarpı gibi düşünürde 5 var, 10 var, 20 var.
+
+354
+01:05:30,304 --> 01:05:46,804
+Ben bir sisteme mesela 5 ekleyebilirim ilk başta. Bir sisteme 10 ekleyebilirim. Bir sisteme 20 ekleyebilirim. Yani para olarak 5'i 10'u ve 20'yi attım. Başka bir şey yok. Başka para türüm yok. Hani 100 falan yok kabul edelim burada.
+
+355
+01:05:46,804 --> 01:05:56,804
+Kabul edelim ki otomat mesela 100'ü kabul etmiyor. Şimdi 5'e 5'i eklersem bundan sonra gideceğim yollar ne olur? 5'e 20 ekleyebilirim.
+
+356
+01:05:57,108 --> 01:06:21,588
+5'e 10 ekleyebilirim, 5'e 5 ekleyebilirim. 5'e 20 eklersem, buradan 5 ederim. Bakın bir kabul durumuna geldim. 5'e 10 eklersem, işte buna 5 ekleyebilirim, buna 10 ekleyebilirim ama 20 ekleyemem artık. Ne olur 30'u geçer. O zaman bakın ne oluyor? Beni sonlu duruma götüren bakın bir ağaç gibi veya bir graf gibi bir şeyle karşılaşıyoruz.
+
+357
+01:06:21,972 --> 01:06:28,211
+İşte bu oluşan şeyle sonlu durum otomatı diyeceğiz. Peki sonlu durum makineleri nelerden oluşuyormuş?
+
+358
+01:06:29,731 --> 01:06:39,092
+Hani bunun farklı tanımları var da, genellikle sonlu durum makineleri bir makine kümesinden oluşuyor. Bu makine kümesi de şu altılı kümeden oluşuyor.
+
+359
+01:06:39,092 --> 01:06:47,652
+1- Giriş sembollerinin sonlu kümesi. Yani biz girdi olarak hangi sembolleri kullanacağız? Bu bir...
+
+360
+01:06:47,827 --> 01:07:15,147
+değişkenli, operasyonlu şey, birazdan örnekleriyle göreceksiniz. Mesela benim burada giriş sembollerim, şuradaki paralarım oldu. Başka bir şey de işte Turnike'nin jetonu oldu. Girişler buna göre değişebilir. Bu çıkış sembolleri, çıkış, birden fazla çıkış elde edebiliriz. Sonuçta otomatınız var, bu ne yapıyor? Sadece Turnike geçmeyi sağlıyor veya otomatınız var, 5 tane ürün satıyor.
+
+361
+01:07:15,347 --> 01:07:21,588
+Şu kadar para verirsen şu ürün, bu kadar para verirsen bu kadar bu ürün diyor. O zaman onlar da sizin çıkışınız.
+
+362
+01:07:21,588 --> 01:07:30,788
+Sonlu durumlarınız, girişe şunu eklersem beni şu duruma götürsün, şunu yaparsam beni bu duruma götürsün dediğimiz durumlar arası geçiş.
+
+363
+01:07:30,788 --> 01:07:40,387
+Durumlar arası geçiş. Ne demek durumlar arası geçiş? Turnike kapalıydı, jeton attım açık hale geldi. Açıktı.
+
+364
+01:07:41,460 --> 01:07:51,460
+Geçiş yaptım. Mesela Turnike açıkken jeton atabilir miyim? Atamamam gerekiyor. O durumun ne olması lazım? Engellenmesi lazım. Eğer atarsak,
+
+365
+01:07:51,460 --> 01:07:59,860
+ve atıldığında ona bir yeni durum tanımlayabiliriz. O da bizim elimizde. İşte bu sonlu durumlar şeyi bunu söylüyor.
+
+366
+01:08:05,139 --> 01:08:31,420
+üzerinde, sonlu durumlar üzerinde, herhangi bir girdiği uyguladığında, bakın bir kartezyen çarpım gibi bir şey aslında, elde edeceğim yeni durumun geçişini sağlayan şey, geçiş fonksiyonu. Şu da çıkışın fonksiyonu. Elde etmek istediğimiz çıkışa ulaştık mı şey. Bunlardan bazı çıkışlar, not ederim, kabul durumu olarak olabilir.
+
+367
+01:08:33,011 --> 01:08:58,771
+Bazı çıkışlarda kabul durumu olmaz, red durumu olur. Mesela istenmeyen duruma gitmiş. Buna bazen bad end diyoruz. Yani ölü sonuç falan diyoruz. Bir de bizim ilk initial durumumuz lazım. Çünkü ilk başlangıçta makineyi, mesela bu bir mekanik bir sistem, ilk açtınız, devreye aldınız. Yani basit bir elektronik ve elektriksel sistem de olabilir. İlk başlangıç durumu önemli.
+
+368
+01:08:59,412 --> 01:09:08,092
+Yani düşünün sabah gittiğiniz turnikeleri sıfırladınız. İşte ne olacak? Kapalı durumda olacaktır. Bu altılı durumu sağlayacak.
+
+369
+01:09:08,092 --> 01:09:20,452
+Ve örnek bir şey. Bakın bu bir girdisi A ve B olan. Yani sadece A ve B operasyonlarını yapıyoruz. Çıktısı ya sıfır ya da bir olan.
+
+370
+01:09:25,492 --> 01:09:40,952
+Sigma sıfır ve Sigma bir olan, şurada sigmayı yani başlangıç durumuna göre söylemiş ama şöyle bir durum. Diyor ki bu, ben Sigma sıfır durumundayken A geldiyse Sigma sıfır durumunda kalacağım.
+
+371
+01:09:42,211 --> 01:09:51,471
+Ve başlangıç durumumuz burada Sigma sıfır olarak verilmiş. Sigma sıfır durumu başlangıç durumumuz. Sigma sıfırdayken A geldiyse tekrardan nereye geleceğim?
+
+372
+01:09:51,988 --> 01:10:02,847
+Ben Sigma sıfır durumuna geleceğim. Çıktı olarak da bu biraz önce işte geçiş, yani şuradaki F gelecek durum şurada çıktıydı. Şuraya output diyelim.
+
+373
+01:10:04,788 --> 01:10:15,668
+Çıktı olarak da Sigma sıfırdayken A geldiyse çıktığım sıfır olacak. Bu bir sonlu durum makinesi. Bakın Sigma sıfırdayken A geldiğinde yapacağım iş belli.
+
+374
+01:10:15,668 --> 01:10:18,888
+B geldiğinde yapacağım iş belli. Ne oluyor? Buradan buraya geçiyorum.
+
+375
+01:10:19,283 --> 01:10:23,663
+A ve B dışında bir şey gelme diye bir şey yok. Çünkü A ve B'nin dışında bir operasyon yok.
+
+376
+01:10:24,304 --> 01:10:31,643
+Hani şunu toplama düşünün, bunu çıkarma düşünün. Üçüncü bir işlem şey tanımlanmamış, girdi tanımlanmamış.
+
+377
+01:10:31,643 --> 01:10:40,623
+Bir şey yapamıyorsunuz. Bu sayede bir makine elde ediyorsunuz. Bu makineyi mekanik veya farklı yollarla tasarlayabilmek mümkün.
+
+378
+01:10:40,683 --> 01:10:45,023
+Bu bir sonlu durum makinesi. Şuna transition, geçiş diagramı diyoruz.
+
+379
+01:10:45,779 --> 01:10:55,159
+Mesela bu diagram içerisinde şöyle iki tane iç içe geçmiş bir Q3 durum diyelim mesela Q2 durum diyelim.
+
+380
+01:10:55,699 --> 01:10:58,059
+Öyle bir şey olsa bu da sizin kabul durumunuz olur.
+
+381
+01:10:58,879 --> 01:11:01,239
+Accept dediğimiz bir duruma karşılıyor.
+
+382
+01:11:01,340 --> 01:11:06,239
+Bazı geçiş diagramlarında bir şeyi iki tane iç içe geçmiş halde görürsünüz.
+
+383
+01:11:07,379 --> 01:11:08,279
+Bunlar geçiş durumları.
+
+384
+01:11:08,379 --> 01:11:11,659
+Bunların tabii daha detayları gelecek dönem hesaplama kuramı dersinde gelecek.
+
+385
+01:11:12,404 --> 01:11:36,084
+Mesela diyor ki, giriş değeri 1.0.1.1.1 iken, yani öyle bir girdi vermişsiniz ki bu bir string gibi düşündü ama string falan yok arkadaşlar. Yani bu bir program değil. Sadece siz, yani işlemci de yok zaten, RAM de yok. Bir veriyorsunuz makineye, yani düşünün bu bir nedir? İşte para atmak, şu para atmak veya jeton atmak veya başka bir şey yapmak veya orada bir kol var.
+
+386
+01:11:36,564 --> 01:11:42,804
+Kol bir hizasına gidiyor veya sıfır hizasına gidiyor artık neyse. Buna göre bir şey ne üretecek?
+
+387
+01:11:42,804 --> 01:11:55,203
+Ve makinemizin geçiş diagramı şöyleymiş. Şimdi ben başlangıçta bir verirsem, bu birden dolayı bir geldiğinde beni bu duruma götürecek.
+
+388
+01:11:55,636 --> 01:12:12,156
+Ondan sonra 0 gelecekmiş. 0 geldiğinde beni bu duruma götürecek. Sonra 1 gelecekmiş. 1 beni bu duruma götürecek. Sonra 0 gelecekmiş. 0 beni buraya getirecek. Sonra 1 gelecekmiş. 1 beni buraya götürecek. Sonra bir daha 1 gelecekmiş. Buraya geçeceğiz. Ve S2 durumuna geliyoruz.
+
+389
+01:12:13,156 --> 01:12:21,496
+Her geldiği durumda da çıktı olarak şu yandaki virgül o çıktığı söylüyor. Mesela başlangıçta buradayız. 1 geldiğinde çıktığımız 0 olacakmış.
+
+390
+01:12:22,068 --> 01:12:29,788
+Ondan sonra sıfır geldiğinde çıktığımız yine sıfır olacaktır. Bu çıktığı da mesela bir lamba gibi düşünebilirsiniz veya bir led lamba tarzında şeyler olur ya.
+
+391
+01:12:29,788 --> 01:12:41,228
+Girdi bu olduğunda, önce mesela bir geldik, çıktığımız sıfır. Sonra sıfır geldi, sıfır geldiğinde şu duruma geçtik, çıktığımız sıfır, artık bu durumdayız.
+
+392
+01:12:41,228 --> 01:12:49,788
+Sonra bir geldi, çıktığımız bir olacak. Sonra sıfır geldi, çıktığımız sıfır olacak. Sonra bir geldi, çıktığımız...
+
+393
+01:12:50,195 --> 01:12:53,716
+Yine sıfır olacak. Sonra bir bir daha geldi.
+
+394
+01:12:55,796 --> 01:12:59,476
+Burada bir gelince aslında çıktığınız sıfır olması lazım. Şurada bir olması gerekiyor ama
+
+395
+01:12:59,796 --> 01:13:04,115
+veya ben bir adım erkenden gittim onu belki yanlış yapmış olabilirim.
+
+396
+01:13:04,115 --> 01:13:09,956
+Ve bu şekilde yani şu size girdiği, şu da çıktığı söyleyen,
+
+397
+01:13:09,956 --> 01:13:15,876
+girdi neyi etkiliyor bakın, durum geçişini etkiliyor bir de elde ettiğiniz çıktığı etkiliyor.
+
+398
+01:13:18,228 --> 01:13:21,347
+S3'e 1 geldiğinde S0'a gidiyoruz.
+
+399
+01:13:23,268 --> 01:13:24,747
+S3'e 1 geldi.
+
+400
+01:13:24,827 --> 01:13:26,288
+Ha evet evet doğru diyorsun bak.
+
+401
+01:13:26,488 --> 01:13:28,128
+Tamam şimdi tekrardan yapalım.
+
+402
+01:13:29,148 --> 01:13:29,628
+Doğrusunu.
+
+403
+01:13:30,667 --> 01:13:33,028
+Şimdi başlangıçta 1 geldi.
+
+404
+01:13:33,368 --> 01:13:34,347
+Buradan buraya geldik.
+
+405
+01:13:34,468 --> 01:13:35,148
+Çıktığımız 0.
+
+406
+01:13:36,708 --> 01:13:38,167
+Sonra 0 geldi.
+
+407
+01:13:38,528 --> 01:13:39,347
+S1'e gidiyoruz.
+
+408
+01:13:39,507 --> 01:13:40,407
+Çıktığımız yine 0.
+
+409
+01:13:41,548 --> 01:13:42,468
+Sonra 1 geldi.
+
+410
+01:13:42,788 --> 01:13:43,568
+S2'e gidiyoruz.
+
+411
+01:13:43,688 --> 01:13:44,368
+Çıktığımız 1.
+
+412
+01:13:45,108 --> 01:14:12,528
+Sonra 0 geldi, S3'e geri geldik, çıktımız 0. Sonra bir bir daha geldi, S0'a gidiyoruz, çıktımız yine 0. Böyle bir çıktı. Durum geçişlerimizde bize nereden başlayıp nereye gittiğiniz gibi. Mesela bu işin sonunda S0 durumunda olmak sizin istemediğiniz bir şeyse bu da ayrı bir anlamdır. Birazdan bunun başka bir örneği gelecek.
+
+413
+01:14:15,572 --> 01:14:21,432
+Mesela böyle bir state diagram var. Bu işlem sizce neyi gerçek? Bu biraz zor bir şey tabi.
+
+414
+01:14:25,524 --> 01:14:43,524
+Bakın burada sadece durumlar var, bellek yok. Geçmişe yönelik bilgiyi tutmuyoruz. Ben SF0 durumundan S1'e geçiyorsam, tekrardan S1 durumundan, S0 durumundan her bir back yapma gibi bir durum söz konusu değil.
+
+415
+01:14:43,524 --> 01:14:52,524
+Onu yapacağımız şeyler de var, makineler de var, sonlu durum makineleri de var. Onlar da birazdan ismini söylerim.
+
+416
+01:14:52,916 --> 01:14:57,155
+Gelecek dönem görürsünüz. Evet, sizce bu ne yapıyordur?
+
+417
+01:15:03,155 --> 01:15:07,315
+Bakın, girdiye 1 verdik. Yani başlangıç durumundayız.
+
+418
+01:15:08,915 --> 01:15:15,155
+1'e 1 veresek, yani 1-1 şeklinde gelirse, şimdi girdiye 1 verdiğimizde sonuç 0.
+
+419
+01:15:16,155 --> 01:15:20,435
+Ona da 1 verdiğimizde, hani mevcut duruma 1 verdiğimizde sonuç 1 oluyor.
+
+420
+01:15:21,036 --> 01:15:23,036
+Sonuçta 1-0, 1-1 gördüm.
+
+421
+01:15:24,148 --> 01:15:39,667
+Burada tek tek aslında bu durumu anlayıp, makinenin ne yaptığını algılamaya çalışmak tabii zor bir şey. Makineyi oluşturmaktan daha zor bir şey. Başlangıçta bir verdik, çıktığımız sıfır, ona da bir verdik. Yine kendi durumundayız, sonucumuz bir oldu.
+
+422
+01:15:51,123 --> 01:15:52,763
+Ne oldu? Sonucumuz bir oldu.
+
+423
+01:15:55,263 --> 01:15:56,683
+Bu acaba ne olabilir?
+
+424
+01:15:56,884 --> 01:15:59,123
+Veya sıfır verdik, sonucumuz sıfır.
+
+425
+01:15:59,243 --> 01:16:01,263
+Sıfıra bir sıfır daha verdik, sonucumuz sıfır.
+
+426
+01:16:02,144 --> 01:16:05,144
+Sıfır verdik, sonra bir bir verdik.
+
+427
+01:16:06,304 --> 01:16:08,043
+Sonucumuz yine sıfır oluyormuş.
+
+428
+01:16:10,623 --> 01:16:13,843
+Bu galiba, sağ bir kez shift yapabilen bir.
+
+429
+01:16:14,724 --> 01:16:16,123
+Yani sizin mesela...
+
+430
+01:16:16,307 --> 01:16:41,688
+0, 0, 1, 0 diyelim. Böyle bir girdiniz var. Bu makine sağa shift yapıyor. Bakın deneyelim. 0 verdiğimizde buraya geldik. Sonucumuz 0. 0 verdik. Yani buradayken başlangıçtan 0 iken sonucumuz 0. Bu durumdayken 0 verdik. Sonucumuz yine 0. Bu durumdayken 1 verdik. Sonucumuz yine 0.
+
+431
+01:16:42,163 --> 01:17:07,503
+Bu durumdayken 0 verdik, sonucumuz 1. Ne oldu? Bizi sağa bir birim shift yapmış oldu. Aslında yarıya bölmüş, ikiye bölmüş gibi oldu. Aynı şeyi mesela 1-0, 1-0 için deneyelim. 1 verdik, buraya geldik, sonucumuz 0. Tabii shift yapınca ne oluyor? Buradan bitler buraya doğru kayıyor ama buradan 0'la besliyorsunuz. 1 verdiğimizde sonucumuz 0.
+
+432
+01:17:07,988 --> 01:17:35,688
+Bu duruma geldik. Sıfır veriyoruz. Sıfır verdiğimizde sonucumuz bir oluyor. Bu duruma geldik. Tekrar bir verdik. Sonucumuz sıfır oluyor. Şu duruma geldik. Sıfır verdiğimizde sonucumuz bir oluyor. Ve bu duruma geldik. Ne oldu? Bir bit sağa şip yapmış olduk. Normalde size, tabii işin biraz ilginçliğini anlatmak için bu slide'ı ekledik. Size normalde bunu verir, bunu çizmeniz ister.
+
+433
+01:17:36,020 --> 01:17:44,020
+Bu belki hani tümevarım, tümden geliyim gibi düşünseniz, şunu yapabilmek yani bundan buna geçiş yapabilmek daha kolay çünkü biz
+
+434
+01:17:44,020 --> 01:17:54,020
+Shift yapabilmenin mantığını biliyoruz ama problemin ne yaptığını anlamadan yani makinenin ne yaptığını anlamaya çalışmak biraz daha zor olabilir.
+
+435
+01:17:54,020 --> 01:17:56,020
+En azından direktifler olması lazım.
+
+436
+01:17:57,747 --> 01:18:13,228
+Veya bir başka şey, iki sayıyı toplayan bir lojik devre tasarlayabileceğiz gibi bunu sonlu durum makinesiyle de yapabiliyorsunuz. Şimdi lojik devre mi daha az maliyetli, sonlu durum mu daha az maliyetli baktığımızda sonlu durum makineleri daha az maliyetli oluyor.
+
+437
+01:18:13,228 --> 01:18:21,268
+Yani bunu en azından tripfloplar falan onu da sağlayabilirsiniz. Toplama devresi bazen daha maliyetli olabilir.
+
+438
+01:18:23,315 --> 01:18:47,775
+Bunun, bakın, girdinizin her zaman tek bitlik olması gerekmiyor. Yani şu ayrı bir sembol arkadaşlar. Şu ayrı bir sembol. Yani biz buna, ne bileyim yani illaki sıfır sıfır binary olarak bir anlam yüklemek zorunda değiliz. Girdi bu olabilir, bu olabilir, bu olabilir, bu olabilir. İki bitlik sayılar üzerinde düşündüğümüzde. Başlangıç durumuna.
+
+439
+01:18:49,844 --> 01:18:57,783
+başlangıç durumuna 0-1 girersek, yani başlangıç durumumuz 0'ız. Yani sonucumuz 0 toplama yapacağız.
+
+440
+01:18:58,663 --> 01:19:07,943
+0'a 1 eklersek ne olur? Sonucumuz 1 olur. Ve 0-1'e olduğunda aynı durumdayız. 0 girersek aynı durumdayız.
+
+441
+01:19:07,943 --> 01:19:16,264
+Sonucumuz 0-1-0 girersek sonucumuz 1 oluyormuş. Sonra buna 1-1 durumu aldık. Yeni bir duruma geçiyoruz.
+
+442
+01:19:17,076 --> 01:19:24,076
+Bu durum içerisinde 0-1 olduğunda sonucumuz 0, işte 1-0 olduğunda sonucumuz. Mesela bunu şu şekilde deneyebiliriz.
+
+443
+01:19:24,076 --> 01:19:29,275
+0-1 ile 1-0'ı toplayalım. Ne olacak? 1-1 mi elde edeceğiz?
+
+444
+01:19:29,275 --> 01:19:38,076
+Çift olarak. Başlangıç durumundayız. 0-1 girdik, sonucumuz 1 oldu. O 1 dediğimiz şey bu.
+
+445
+01:19:39,604 --> 01:19:48,604
+0, 1 girdiğimiz için aynı durumdayız. Bundan sonra 1, 0 alıyoruz. 1, 0 aldığımızda da bu durumdayız. Sonucumuz yine bir. Bakın ne oldu? Bizi birbire götürdü.
+
+446
+01:19:48,604 --> 01:19:59,604
+Veya başka bir şey, 1, 0 ile veya 1, 1 ile 1, 1 ile ne yapalım? 1, 1'i toplayalım.
+
+447
+01:20:00,819 --> 01:20:08,260
+Şimdi bir bir ve bir biri toplamak nedir? Bir bir daha sıfır elde var bir, bir bir daha sıfır elde var bir, bir de elde vardı bir, bir de şurada şey olacak.
+
+448
+01:20:08,699 --> 01:20:18,619
+Hani taşma meydana gelecek. Normalde toplama sonucumuz bu. Şimdi bu durumdayken bir bir geldiğinde sonucumuzu sıfır görüyoruz ilk başta. Tamam.
+
+449
+01:20:19,840 --> 01:20:21,539
+Yani ilk basamağımız şu oldu aslında.
+
+450
+01:20:22,292 --> 01:20:40,051
+Sonra bu durumdayken bir bir bir daha geldiğinde sonucumuzu bir ağ elde ediyoruz ve ne oldu? Bir sıfır sonucuna ulaştık. Biraz önce şurayı bir tersten yaptım da önce sıfır sonra bir olacak. Taşmayı tabii burada göstermek için ayrı bir şey yapmak lazım. Onu burada göstermek.
+
+451
+01:20:49,076 --> 01:21:15,695
+üç tane bir durumla basıldığında, üç tane bir durum oluştuğunda hata olarak bir. Yani siz sıfır ve bu bir diye iki tane düğme var. Onlara basıyorsunuz. Yani bir tane sıfır düğmesi, bir tane bir düğmesi. Bunu mekanik olarak, elektronik olarak, basit bir elektrik elemanı olarak düşünebilirsiniz. Hani bir devre üzerinde de olabilir. Lojik devreyle bile sağlanabilir bu.
+
+452
+01:21:16,724 --> 01:21:34,724
+Ya sıfıra ya da bire basacaksınız ama bu sıfır ve birler içerisinde bir bir bir denk geldiğinde burada çıktı olarak veriyor. Mesela şöyle olsa sıfır bir sıfır sıfır sıfır sıfır bir bir bir bir bir şundan dolayı bir de şundan dolayı ne yapması lazım? Size şey vermesi lazım.
+
+453
+01:21:41,844 --> 01:21:52,184
+Bu bizim için üç tane bir anlamına değil. Ve sıfır gelirse ne olacak? Şu ana kadar hiçbir gelmediğini düşünürsek kendi durumumuzda kalacağız. Başka bir duruma geçmeyeceğiz.
+
+454
+01:21:53,444 --> 01:22:03,844
+Çünkü bir tane sıfır okuduk. Bizim için önemli olan üç tane birin aynı şeye gelmesi. Bu bizim için yeni bir hal değil. Zaten bulunduğumuz yer. Ama bir tane bir gelirse...
+
+455
+01:22:04,564 --> 01:22:26,564
+girdi de, ha bu yeni bir bir, yeni bir durumdur. O zaman bu durumu saklamamız gerek. Onun için yeni bir durum oluşturuyoruz. Ama bir tane bir gelmesi bize çıktı da bir vermesi için yeterli, çıktı da hala sıfır olacak. Sonra ikinci bir bir geliyor. İkinci bir gelmesi ne demek? Eğer üst üste iki tane bir gelirse, ha bu yeni bir durum.
+
+456
+01:22:27,091 --> 01:22:52,951
+O zaman yeni bir durum ise S2 durumu diye bir şey tanımlıyoruz. Ama çıktı hala sıfır olacak. Eğer burada bir daha bir gelirse ne oluyor? Artık bu durumda kalalım ve çıktığımızı bir verelim. Eğer bu durumdayken S2 durumdayken sıfır geliyorsa artık her şey başa dönecek. Çünkü nedir? 1-1-0 gibi bir şey geldiğinde bizim için nedir? Artık bu önceki iki tane durumun geriye dönüşü zaten yok. Bakın burada.
+
+457
+01:22:53,492 --> 01:23:19,712
+geçmişe yönelik bir bilgi sayamıyoruz. S2 durumundan S1 durumuna işte o zaman şu kadar durum vardı iki tane biri oldu. Böyle bir şey sayma diye bir şey yok çünkü öyle bir belleğimiz yok arkadaşlar. Yeni durum bize neyi söylüyor? Eğer burada sıfır geldiyse doğrudan başa döneceksin. Bakın şuraya döndürmüyor. Buraya döndürse yalnız sonuç olur. Bu durumu takip ettiğinizde işte verdiğiniz sıfır ve bir değerleri için inceleme yaparsanız.
+
+458
+01:23:20,756 --> 01:23:24,116
+Şöyle alalım.
+
+459
+01:23:43,539 --> 01:24:10,340
+Durum üzerinde, aa ne bilmiyorum. Mesela şöyle bir girdi yapalım. 0-1, 1-1, 0-0, 1-1-1. Şimdi ne olacak? 0 geldiğinde bu durumdayız. Sonra 1 geldi bu duruma gittik. Sonra 1 de geldi bu duruma gittik. Sonra 1 de geldi bu duruma gittik. Sonra 1 daha geldi bu duruma gittik. Ne yaptık? İşte ekrana bir tane veya işte 1 uyarısı verdik. Sonra 0 geldi, başa döndük.
+
+460
+01:24:10,868 --> 01:24:19,868
+Sonra bir sıfır daha geldi, kendi içerisindeyiz. Sonra bir geldi. Sonra bir bir daha geldi. Sonra bir bir daha geldi. Bir bir daha elde ettik. Sonra bir bir daha geldi.
+
+461
+01:24:19,868 --> 01:24:28,868
+Tekrardan bir elde ediyoruz. Çünkü o overlap eden şuradaki üç tane bir ile burada üç tane bir ne yapmış oluyor? Bunu sağlıyor.
+
+462
+01:24:28,868 --> 01:24:38,828
+Şimdi bu basit bir otomat. Şimdi bu otomatların birkaç farklı türü var. Bellekli, belleksiz.
+
+463
+01:24:43,891 --> 01:24:57,511
+Bellekten kastımız aslında stek yapısı, otomatlar. Bu otomatlardan yola çıkarak diller tanımlanıyor. İşte formal diller dedimiz. Hatta programlama dilleri ve derleyiciler de bunlarla tanımlanıyorlar arkadaşlar.
+
+464
+01:24:57,511 --> 01:25:09,371
+Hesaplama kuramını da göreceksiniz. Şimdi bakın burada problem size verilen hani yirdi böyle bir akış şeklinde baştan sona doğru gidiyor.
+
+465
+01:25:09,811 --> 01:25:22,372
+Herhangi bir yerde üç tane bir peş peşe gelirse, tabi bu geriye dönüş olmayan bir yapı, çıktığı bir veriyorsunuz. Şimdi geriye dönüşü olabilen otomatlar da var. Şöyle bir şey düşünün.
+
+466
+01:25:23,851 --> 01:25:34,551
+Sıfırdan k demek bu sıfır sıfır sıfır nokta nokta. K tane sıfırın bir araya gelmesi. Hatta sıfır demeyelim buna ya. A diyelim.
+
+467
+01:25:34,899 --> 01:25:54,199
+hani A'yı illa 0, 1 diye bir şey yok yani A diye bir şeyin girdimiz var. Bu A, A, A, K tane A'nın bir araya gelmesidir. String Concatenation kısmında aslında bunu kısmen anlattım size. B'den M tane olsun. Bu B, B, B, B, B.
+
+468
+01:26:02,484 --> 01:26:11,884
+m eleman doğal sayı diyelim. Yani burada ne olabilir? Boş bir string kabul. Çünkü k ve m sıfır olabilir.
+
+469
+01:26:12,884 --> 01:26:20,564
+Ondan sonra, tabii şöyle bir şey tanımlayacağız. a üzeri k, b üzeri m'yi tanıyan bir makine yapalım.
+
+470
+01:26:20,564 --> 01:26:27,564
+Yani bu ne yapacak? Boş stringi tanımlayacak. a boşu a'yı tanıyacak.
+
+471
+01:26:28,404 --> 01:26:42,824
+A şey, B'yi tanıyacak, A, B'yi tanıyacak, A, B, B'yi tanıyacak, A, A, B'yi tanır. Ondan sonra A, A, A, B, B, yani olabilecek bayağı bir şeyi tanır.
+
+472
+01:26:44,044 --> 01:26:52,144
+Bunu tanımlayan bir makine yapmak istediğinizde, şimdi önce A'nın hep gelmesini, eğer A diye bir şey varsa,
+
+473
+01:26:52,560 --> 01:27:12,000
+Sonra b'nin gelmesi. Yani b, a diye bir şey olmayacak. Önce a'lar geldi, sonra b'ler gelecek. Bu, şuradakine göre biraz daha zor bir problem. Bu problemi çözecek makine, sonlu durum makinesi biraz daha kapsamlı olması lazım. Şimdi bunun biraz daha zorunu göstereceğiz.
+
+474
+01:27:21,908 --> 01:27:48,388
+m, c üzeri k artı m gibi bir şey olsun. Şimdi ben a üzeri k'yı hesaplayacağım. Yani hesaplama diye bir şey yok zaten. Makine öyle bir şey olacak ki, a'nın k defa tekrar ettiğini, b'nin m defa tekrar ettiğini unutmayacak, c'nin de k artı m defa tekrar etmesi gerektiğini kuralını kontrol ederek
+
+475
+01:27:48,787 --> 01:28:12,247
+Bu durum mesela diyelim ki K, M elemanıdır pozitif doğal sayı. Yani burada neyi görürüz? AB, CC olur. ABB ise CCC olur. AA, BB ise CCC olur. Böyle şeyleri tanıması lazım değil mi? Şimdi bunu yapabilmesi için
+
+476
+01:28:13,619 --> 01:28:30,659
+A'nın bir defa, B'nin bir defa tekrar ettiğini, C'nin de iki defa tekrar etmesi gerektiğini veya işte şurada A'nın K defa, B'nin M defa, C'nin de K artı M defa tekrar etmesi gerektiğini algılayacak bir makine. Yani burada bakın bu bellekli bir şey.
+
+477
+01:28:32,159 --> 01:28:40,719
+Bu bellekli yapılarda da push down, otomata ve touring machine diyoruz. Hesaplama kuramı dersinde daha detaylı umarım anlatırlar.
+
+478
+01:28:41,203 --> 01:28:43,283
+Orada bunları öğrenirsiniz.
+
+479
+01:28:44,123 --> 01:28:45,104
+Sorunuz var mı arkadaşlar?
+
+480
+01:28:45,863 --> 01:28:46,403
+Burada duralım.
+
+481
+01:28:51,347 --> 01:29:04,487
+Evet, sınava konu dahil olmak üzere. Tabi şey, bu konunun şu slide'ı dahil, ben hani kuşta onu, automata falan size sınavda sormam. Sınavın büyük ihtimalle test olacak. Çoktan çok seçmeli bir test olacak.
+
+482
+01:29:04,487 --> 01:29:12,967
+Onu da kısaca söyleyeyim ki kayıtlara girsin. Hani sonra neymiş bu demeyelim. Şöyle bir yeni slide ekleyeyim.
+
+483
+01:29:20,595 --> 01:29:26,715
+İşte A, B, C, D ve E
+
+484
+01:29:26,715 --> 01:29:31,095
+Kalemi kaldırınca
+
+485
+01:29:31,095 --> 01:29:35,235
+Kabul edelim ki bunun 3 tane seçeneği doğru.
+
+486
+01:29:37,375 --> 01:29:42,655
+Siz bunu işaretlediniz, bunu işaretlediniz, şunu işaretlemediniz.
+
+487
+01:29:42,655 --> 01:29:43,775
+O zaman ne oluyor?
+
+488
+01:29:44,415 --> 01:29:46,715
+İşte bu soru mesela 5 puansa
+
+489
+01:29:47,380 --> 01:29:58,579
+2 bölü 3, çarpı 5'lik bir puan alıyorsunuz. Kısmen puan alıyorsunuz. 3 tanesini yaparsanız tam puan alırsınız. Bir tanesini yaparsanız 1 bölü 3 kadar puan. Eğer ki
+
+490
+01:30:00,579 --> 01:30:01,779
+durum şu iken
+
+491
+01:30:02,979 --> 01:30:04,979
+A, B, C, D, E
+
+492
+01:30:10,931 --> 01:30:20,931
+kabul edelim ki bu olsun, bu olsun doğru. İki tane doğrulu olan bir şey. Siz bunu işaretlediniz, bir de bunu işaretlediniz. O zaman buradan sıfır puan alıyorsunuz.
+
+493
+01:30:20,931 --> 01:30:31,371
+Yanlış olan seçeneğe işaretlemeyeceksiniz. Yani kafadan akmayacaksınız. Tamam mı? Kolay bu.
+
+494
+01:30:34,452 --> 01:30:52,452
+Ders başında anlattığımız slide'lar, yani ben öncelikli kuyruk beyin içerisine dahildir. Ne derler? Dijkstra'nın içerisine dahildir. Öncelikli kuyrukla alakalı diskret matematiği ilgilendiren soru sorabilirim. Ama...
+
+495
+01:30:53,268 --> 01:31:00,028
+Algoritma veri yapıları dersinde bir öncelikli kuyruğu diziyle yaparsan, ağaçla yaparsan karmaşıklığı ne olur?
+
+496
+01:31:00,568 --> 01:31:02,768
+Diziyle yaptığım zaman şu adımda ne olur?
+
+497
+01:31:02,888 --> 01:31:06,668
+Algoritma veri yapıları konusunu ilgilendiren kısımlarına soru sormak.
+
+498
+01:31:07,108 --> 01:31:12,888
+Ama öncelikli kuyruğun matematiksel tarafını içerecek şekilde soru sorabilirim.
+
+499
+01:31:23,188 --> 01:31:24,367
+Başka sorunuz var mı?
+
+500
+01:31:27,127 --> 01:31:33,648
+Peki, hepinize arkadaşlar sınavlarınızda başarılar dersimizi bitirebiliriz. Kendinize iyi bakın, hoşçakalın.
