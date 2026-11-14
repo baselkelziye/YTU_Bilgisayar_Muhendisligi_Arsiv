@@ -1,0 +1,3871 @@
+1
+00:03:34,036 --> 00:03:35,256
+Arkadaşlar merhabalar.
+
+2
+00:03:40,084 --> 00:03:40,903
+Merhaba, [öğrenci].
+
+3
+00:03:54,195 --> 00:03:59,675
+Hazırladığınız raporları sunmanız için toplanık.
+
+4
+00:04:24,819 --> 00:04:27,100
+Biraz daha bekleyin birkaç dakika.
+
+5
+00:04:38,995 --> 00:04:43,815
+Peki yavaş yavaş sunumlara başlayabiliriz.
+
+6
+00:04:50,932 --> 00:04:53,172
+Kim önce sunmak ister?
+
+7
+00:05:00,660 --> 00:05:02,160
+Ben başlayabilirim istersen.
+
+8
+00:05:14,867 --> 00:05:16,555
+Evet, let's do.
+
+9
+00:05:22,963 --> 00:05:24,963
+Ekrem paylaşımı yapabilirsiniz.
+
+10
+00:05:36,307 --> 00:05:37,608
+Geldim ekranım.
+
+11
+00:05:38,087 --> 00:05:38,528
+Geldim.
+
+12
+00:05:39,327 --> 00:05:41,608
+Tamam. Şöyle büyüteyim.
+
+13
+00:05:43,707 --> 00:05:44,848
+Görebiliyorsunuz sanırım.
+
+14
+00:05:48,468 --> 00:05:55,788
+Şu, sonraki slide'ı falan da görüyorsunuz. Acaba benim bir şeyim yok mu?
+
+15
+00:05:57,307 --> 00:06:01,908
+Slide'ı gösteriyordum acaba ama bir saniye çift ekrandan sanırım problem oldu.
+
+16
+00:06:07,891 --> 00:06:18,795
+Evet.
+
+17
+00:06:25,331 --> 00:06:26,651
+Şu an görebiliyor musunuz?
+
+18
+00:06:30,132 --> 00:06:31,232
+Şu anda görüyoruz.
+
+19
+00:06:32,172 --> 00:06:33,391
+Benim...
+
+20
+00:06:33,391 --> 00:06:37,911
+Tam ekranda slide değil de şeyi görüyoruz.
+
+21
+00:06:40,552 --> 00:06:41,672
+Şimdi tamam.
+
+22
+00:06:42,232 --> 00:06:48,211
+Sanırım tam ekran yapınca bağlantı gidiyor hocam. Bu şekilde anlatmaya devam edeyim isterseniz. Şuradan şöyle kapatayım.
+
+23
+00:06:49,204 --> 00:07:16,304
+Benim konum ABI.NET. ABI.NET dediğimizde bir Text Recognition modeli. Şu an State of the Art model. Bundan daha iyi bir model yok. Yeni yavaş yavaş çıkıyor. CBR 2021'de yayınlanan en son model. Önce şeyden başladım ben. Text Recognition nedir? Çünkü çok bilinen bir alan değil. Diğer alanların da gerisinde kalıyor çalışma olarak.
+
+24
+00:07:16,755 --> 00:07:42,755
+Her yıl çıkan yayınlar, Vision'da Classification'a göre daha az. O yüzden bunu anlatma gereği duydum. Şu şekilde bir yaklaşım var. Bu Detection ve Recognition ayrı iki model aslında. Detection buradaki bizim kelimeleri Detect edip bir Bandic Box'ın içinde alıp daha sonrasında bunları işte Recognition modeline veriyoruz ve içerisinde ne var bunu görüyoruz.
+
+25
+00:07:43,220 --> 00:08:11,220
+Yani bu model bize aslında burada ne yazdığını söylüyor diyebiliriz. Burada veri kümeleri diğer veri kümelerinden biraz farklılaşıyor. Çünkü burada iki tip veri kümesi mevcut. Biri sentetik veri kümeleri ve gerçek dünya veri kümeleri. Sentetik veri kümeleri genelde eğitim amaçlı kullanılıyor sadece testten daha çok. Gerçek dünya veri kümeleri de test amaçlı kullanılıyor. Çünkü bu gerçek dünya veri kümelerini etkileyecek.
+
+26
+00:08:11,220 --> 00:08:24,680
+Bir sınıf etiketi olmadığı için. Burada en çok kullanılan iki tip santetik veri kümesi var.
+
+27
+00:08:24,680 --> 00:08:37,160
+MgSynth ve Syntex. Burada iki farklı yaklaşım var. Syntex'te arka planda bir görüntü üzerinde arka plandaki bu yüzeyleri belirliyor.
+
+28
+00:08:39,220 --> 00:08:44,740
+segmentasyon işlemi kullanarak ve daha sonra bir depth işlemine tabi tutuyor bu görüntü.
+
+29
+00:08:44,740 --> 00:08:53,539
+Ve buradaki yüzeyleri belirliyor. Bu yüzeyleri, kelimeleri, fontlarını random bir şekilde uygun gelecek yerlere bunları koyuyor.
+
+30
+00:08:54,039 --> 00:08:56,019
+Ve daha sonrasında buradan croplayıp çekiyor.
+
+31
+00:08:57,620 --> 00:09:04,399
+MjSynthetesi, bu biraz daha farklı. Öncelikle kelimeyi belirliyor, bunu renderlıyor.
+
+32
+00:09:04,940 --> 00:09:06,740
+Daha sonra buna random bir şekilde işte...
+
+33
+00:09:07,220 --> 00:09:15,160
+Order ve Shadow ve renklerini değiştiriyor. Bunları arka planla birleştirip döndürme, alignment işlemleri uyguluyor ve en sonunda bir görüntü uyguluyor.
+
+34
+00:09:15,259 --> 00:09:19,399
+En başta neyden ürettiğimizi bildiğimiz için en son çıktığının içerisinde ne yazdığını da biliyoruz.
+
+35
+00:09:19,399 --> 00:09:25,379
+Bu şekilde milyonlarca veri kümesi üretiliyor. Gerçek dünya veri kümeleri de bu şekilde aslında.
+
+36
+00:09:25,480 --> 00:09:33,639
+İcdarlar İkisi ilk başlatılan bu alanı bu icdar yarışması diyeyim. İcdarda başlatılıyor.
+
+37
+00:09:34,419 --> 00:10:00,000
+2013 ve 2015 diye iki ayrı dataset var. Bunlar en çok kullanılan datasetleri. Bu gerçek dünya veri setleri de iki tipte bulunuyor. Bunlar regular ve irregular şeklinde gidiyor. Regular'lar aslında yazının aynı alignment üzerine yani düz bir şekilde yazdığı, şurada da gördüğünüz gibi. Irregular datasetleri ise daha yazının zor bulunduğu, yani zor bir şekilde döndürüldüğü veya...
+
+38
+00:10:00,000 --> 00:10:09,379
+Veya ışığa maruz kaldığı, case'ler bulunduğu dataset'ler oluyor. Mesela burada irregular dataset'inde Chelsea yazısı bayağı bir yok. Modeller bunları bulmakta çok zorlanıyor.
+
+39
+00:10:09,559 --> 00:10:18,347
+İşte bizim modelimiz aslında bu probleme çözüm bulmak amacıyla çıkıyor ve bu model aslında...
+
+40
+00:10:18,515 --> 00:10:33,515
+Şu ana kadarki modelleri biraz yıkarak geliyor. Çünkü burada bahsedilen şey bir ensemble model. Daha önceki modeller aslında bu ensemble yapısını kullanmıyor ve burada insanın bunu nasıl algıladığını...
+
+41
+00:10:33,855 --> 00:10:56,375
+Üzerine düşünülerek bulduğunu söylüyorlar. İşte kör ve duyma yetisini kaybetmiş birinin dil bakımından gelişmesi, görmesiyle bir bağlantısı olmadığını söylüyorlar. Ve bu şekilde alt modeller oluşturuyorlar. Üç farklı modelimiz var. Bunlar işte Vision Model, Language Model ve Fusion Model olmak üzere. Bu anayapa üzerinde Vision Model ve Language Model.
+
+42
+00:10:57,299 --> 00:11:03,700
+Aslında ana iş yapanlar. Vision model ilk başta backbone kullanarak işte future çıkarıyor.
+
+43
+00:11:03,700 --> 00:11:09,500
+Bu backbone da ResNet kullanılıyor ve aynı zamanda transformer yapısı var.
+
+44
+00:11:09,500 --> 00:11:15,299
+Buradan bunun çıktısı, Vision modelin çıktısı Language modeli destek besliyor.
+
+45
+00:11:15,299 --> 00:11:22,099
+Language modeli Vision modeli Fusion modelde birleştiriliyor sonuç çıktısı ve...
+
+46
+00:11:22,259 --> 00:11:26,259
+modelin aslında son çıktısını bu şekilde elde ediyoruz.
+
+47
+00:11:26,700 --> 00:11:32,319
+Şimdi Vision modeli detayına girecek olursak, Vision modelde ResNet yapısı kullanıldığını söylemiştim.
+
+48
+00:11:32,319 --> 00:11:35,139
+Fakat burada daha bir özelleştirilmiş ResNet yapısı var.
+
+49
+00:11:35,759 --> 00:11:39,419
+Aslında normal ResNet yapısı ana 4 layer vardır.
+
+50
+00:11:40,159 --> 00:11:44,299
+Burada kullanılan ResNet yapısındaysa 5 katman var.
+
+51
+00:11:44,788 --> 00:12:12,708
+Bu beş katman bunun için özelleştirilmiş. Yani bir pre-trained model yok. Kendileri eğitmişler bu sintetik tatları kullanarak. Ve bunun transformer yapısına sokmuşlar. Bu transformer yapısı dediğimiz şey de işte scale.product attention aslında multi-head attention yapısına sokuluyor. Bu scale.product dediğimiz attention yapısı da bu bildiğimiz işte bu attention is all you need paperından çıkan.
+
+52
+00:12:12,788 --> 00:12:13,776
+İşte şu an...
+
+53
+00:12:13,775 --> 00:12:40,855
+Baya bir yayında kullanılan yapı. İşte query ve key yapısını matiz çarpımına sokuyorsunuz. Bunu scale ediyorsunuz feature sayınıza. İşte bunu bir mask'a sokuyorsunuz. Bu genelde NLP tarafında kullanılan bir yapı. Sonra softmax fonksiyonuna sokup bunu value değeriyle çarpıyorsunuz. Ve elde ettiğiniz yapı aslında sizin attention'unuz oluyor. Buradan CNN'deki gibi bir feature çıkarma yapısı kullanıyorsunuz aslında.
+
+54
+00:12:41,775 --> 00:12:50,715
+ResNet'in feature'lerine multi-head attention'a veriyorsunuz. Multi-head attention'da da feature çıkarmaya devam ederek en sonunda bir feature rektörü elde ediyorsunuz.
+
+55
+00:12:51,539 --> 00:13:17,439
+Bu feature vektörünü de daha sonrasında position attention uyguluyorsunuz. Bu da modelin kendisinin önerdiği bir yapı. Çünkü bu sequential yapılar, yani mesela tekstin uzunluğunu bilemezsiniz, predict etmek istediğiniz. 10 karakter de olabilir, 20 karakter de olabilir. Bunu demişler ki 25'te sınırlayalım biz, ona göre devam edelim. Yani model aslında 25 karakterin üstünü tahmin edemiyor.
+
+56
+00:13:18,100 --> 00:13:36,379
+Şu şekilde bir yapı kurmuşlar. Burada enkoding işlemini 0'dan 25'e kadar enkodlamışlar. Burada da feature vektörünü yani ResNet ve Transformer'ından çıktı olarak gelen feature vektörünü bir UNET'e sokmuşlar. UNET'in sonucunda da key değerlerini elde etmişler.
+
+57
+00:13:36,884 --> 00:13:41,884
+Query değerlerimiz de bizim positional encoding'imizdi. Yani nerede bulunduğunun bilgisiydi.
+
+58
+00:13:41,884 --> 00:13:48,644
+Bu key ve value değerlerini attention'a sokarak, biz aslında burada ilgili karakterin
+
+59
+00:13:48,980 --> 00:14:08,060
+ilgili karakterin nerede olduğunun en yüksek olasılığını veriyor. Yani aslında şuranın çıktısı bizim karakterimizin olduğu feature'ların daha ön plana çıktığı, diğerlerinin ise daha geri plana atıldığı bir yapıya dönüşüyor. En sonunda bunun çıktısında Linear ve Softmax'de Probability'leri elde ediliyor.
+
+60
+00:14:11,635 --> 00:14:36,775
+Olasılık vektörlerimiz, yani maksimum ne demiştik, 25 karakter elde edilebiliyor. 26. karakter işte end of the string karakteri. 26 karaktere 10 tane rakam artı 26 tane İngilizce karakter eklersek 36. Yani 26'ya 36'lık bir olasılık vektörü döndürüyor bize. Biz de buradan hangi kelimenin predict edildiğini buluyoruz.
+
+61
+00:14:37,235 --> 00:14:53,716
+Yani şu şekilde, burada ben çıktığı boyutlarını aldım. İmputumuz bizim batch size'a 3'e 32'ye 128'lik bir input alıyoruz. Bunu resnet'e verdiğimizde bize batch size'ımıza 512, 832'lik bir future vektör döndürüyor.
+
+62
+00:14:54,548 --> 00:14:56,927
+Bunu Positional Enkoder'e gönderiyoruz.
+
+63
+00:14:57,048 --> 00:15:07,347
+Bu Positional Enkoder, işte Attention mekanizasında aslında birbirleriyle olan Attention arasındaki sıra kaybolduğu için bu sıra bilgisini tutmak için kullanılan bir yapı.
+
+64
+00:15:08,107 --> 00:15:10,687
+Daha sonra bunu Multi-Eat Attention'a gönderiyoruz.
+
+65
+00:15:10,687 --> 00:15:16,127
+Multi-Eat Attention'ın sonucunda bizim asıl elde ettiğimiz feature'ler 512x8 32'lik feature'ler.
+
+66
+00:15:16,788 --> 00:15:21,687
+Bunu da dediğim biraz önceki bu UNET yapısında dediğimiz...
+
+67
+00:15:22,035 --> 00:15:35,895
+Önemli düşük olan vektörleri yani future vektörlerini arka plana edip yüksek olanları ön plana almak istediğiniz bu position attention mekanizmasında sonucunda da 26'e 512 vektörler elde ediyoruz.
+
+68
+00:15:35,895 --> 00:15:43,395
+Daha sonrasında bunu full collected yapıya yani şu linear ve softmax yapısına sokup en sonundaki olasılık vektörlerimizi elde ediyoruz.
+
+69
+00:15:43,823 --> 00:15:48,323
+Bu olasılık vektörleri aslında ilk elde ettiğimiz bizim çıktığımız.
+
+70
+00:15:48,883 --> 00:15:51,943
+Fakat bunu kullanmak yerine bunu Language Mode'ye veriyoruz.
+
+71
+00:15:52,643 --> 00:15:56,023
+Language Model'in yapısı da Vision Model'den besleniyor aslında.
+
+72
+00:15:56,203 --> 00:15:59,223
+Yani Vision Model'in olasılık vektörlerini bize alıyor.
+
+73
+00:16:00,143 --> 00:16:01,963
+Bunu da enkodluyor burada.
+
+74
+00:16:02,383 --> 00:16:07,943
+Enkoding işleminden sonra burada da klasik bir NLP tarafında kullanılan Multi-Ether Tension mekanizması var.
+
+75
+00:16:08,643 --> 00:16:11,343
+Çok basit bir yapı NLP bilenler için.
+
+76
+00:16:11,759 --> 00:16:23,700
+Direkt Multi-Altret Atenşin uyguluyor. Daha sonra normalizasyon. Burada bir residual connection var. Daha sonra fit for root normalizasyon işlemi ve bunu işte en kere tekrarladığında bu bir language model oluyor.
+
+77
+00:16:24,179 --> 00:16:51,679
+Buradaki aslında diğer modellerden ayıran yapıysa şu. Language model ile vision model arasındaki şuraya gelecek olursak, tüm modele gelecek olursak, burada birbirileri arasında parametre aktardıkları için aslında bir gradiyan dönüşüm var. Yani buradan buraya bir gradiyan aktarılıyor. Fakat bunu kesmişler. Yani language modelin lossu vision modelin lossuna etki etmiyor.
+
+78
+00:16:52,340 --> 00:17:03,980
+Bu sebeple aslında Language modeli, Language'in yani o eğitildiği dilin özelliklerini öğrenmeye ittiğini iddia ediyorlar.
+
+79
+00:17:03,980 --> 00:17:11,380
+Bu şekilde aslında örnek vermek gerekirse şurada Show Wing, yani şuradaki W var burada bir tane.
+
+80
+00:17:11,980 --> 00:17:16,539
+Fakat bu parlamadan dolayı sadece W olarak görünüyor ve burada bir Show Wing yazısı.
+
+81
+00:17:17,044 --> 00:17:34,923
+W'nun görünmemesi sebebiyle bunun Vision modelinin Showing, yani W yerine burada V ile prediktet etmesini bekleriz. Fakat bunu Language modeli verdiğimizde dilin özelliklerini öğrendiği için burada V yerine W olması gerektiğini söylüyor bize.
+
+82
+00:17:35,955 --> 00:17:45,576
+Ve bu şekilde aslında bunu beslediğimizde bu V yapısını W'nun olasılığını arttırarak bize W olarak döndürülmesini sağlıyor.
+
+83
+00:17:47,915 --> 00:17:56,275
+Bunun katmanlarını inceleyecek olursak, girdi boyutu olarak 26'ya 37'lik yani Vision'un çıktısını aldığını söylemiştik.
+
+84
+00:17:56,275 --> 00:18:00,195
+Burada işte Full Connected Layer ile bunu 512'ye çıkarıyor.
+
+85
+00:18:00,544 --> 00:18:03,044
+Daha sonrasında bunu positional encoding uyguluyor.
+
+86
+00:18:03,244 --> 00:18:07,964
+Yine bu sıranın kaybolmaması için konuştuğumuz konu.
+
+87
+00:18:08,224 --> 00:18:11,444
+Daha sonra multi-head attention ve daha sonra full connected layer.
+
+88
+00:18:11,964 --> 00:18:17,824
+Bu decoder modeli en kere uygulanarak en tane katman ile büyütülüyor.
+
+89
+00:18:19,104 --> 00:18:20,304
+Özür dilerim.
+
+90
+00:18:21,604 --> 00:18:22,544
+Fusion model ise...
+
+91
+00:18:23,571 --> 00:18:29,931
+Bu Vision model ile Language modelin aslında üretici çıktıları bize birleştiren yapı.
+
+92
+00:18:31,059 --> 00:18:46,460
+Şu şekilde matematiksel olarak gösterirsek. Burada aslında paperla kodlarını incelediğimizde çok ufak bir farklılık var. O da paperda önerdiği yapıda bu FV ve FL dediği şey aslında olasılık matrisi olduğunu söylüyor.
+
+93
+00:18:46,460 --> 00:18:55,960
+Fakat bunun uygulamadaki gördüğümüz şey olasılık matrisinden bir önceki yapı. Yani şurada gördüğümüz 512'lik çıktı.
+
+94
+00:18:56,564 --> 00:19:23,764
+Bunun daha başarılı olduğunu görmüşler aslında. Bunu diyebiliriz. Bu iki yapıyı, iki çıktığı, konkat edip bir ağırlıkla çarpıyor. Ve daha sonrasında bunu sigmoid fonksiyonuna uyguluyor. Yani bu g değerlerini, gate olarak düşünebiliriz bunu. Sıfır ile bir değerlerin arasında alıyor. Daha sonra bunu bir ağırlık matrisi olarak kullanıp, bunun visual modelin çıktısıyla.
+
+95
+00:19:24,223 --> 00:19:37,143
+Bu şekilde bir ağırlık maddesiyle çarpıp, o daha sonra bir eksiği gate ile çarpıp, burada bir ağırlık uyguluyor aslında. Bunu söyleyebiliriz. Bu şekilde bir son çıktı elde ediyor aslında.
+
+96
+00:19:38,263 --> 00:19:51,163
+Burada yine girdileri ve çıktılarını inceleyecek olursak, işte 512'lik bir girdiği, konkad ettiğimizde 1024'e çıkıyor. Bu 1024'ü ağırlıkla çarpıcı tekrar 512'ye indiriyor. Bunu sigmoit uygulayıp.
+
+97
+00:19:51,347 --> 00:20:15,847
+Gate fonksiyonunu da soktuğunda işte 512'lik bir çıktı elde ediyor. Daha sonrasında bunu bu F yani son çıktığı elde etmek içinse işte bunu gateleyip tekrardan bunlarla çarpıp en sonunda full connected layer ile 512'yi tekrardan 26'ya 37'ye düşürüyor. Yani 26'ya 37'lik bir bize olasılık matası döndürmüş oluyor.
+
+98
+00:20:16,403 --> 00:20:24,344
+Bu yapının sonucunda bizim çıktığımız işte aslında Vision modelin çıktısını biz düzeltmiş oluyoruz.
+
+99
+00:20:25,244 --> 00:20:29,604
+Showing kelimesinin işte W, V'yi W'ye çevirmiş oluyoruz.
+
+100
+00:20:30,063 --> 00:20:36,183
+Yani bunu aslında bu girdiden bağımsız olarak dilin özelliklerini kullanarak elde ettiğimiz bir yapı.
+
+101
+00:20:37,044 --> 00:21:05,044
+Burada bahsetmek istediğim bir nokta da bunun iteratif olarak yapılması. Yani ne demek istiyorum? Vision modelin çıktısı Language Mode'le veriliyor. Language Model'de Vision Model'in çıktısı Fusion Mode'le verildikten sonra ilk çıktı elde ediliyor. Fakat bu iteratif olarak tekrardan Language Model'e Fusion Model'in çıktısı veriliyor. Language Model tekrardan bunu işleyip bir çıktı daha üretiyor. Daha sonrasında Fusion Model ile Language Model'in ilk çıktılarını...
+
+102
+00:21:05,044 --> 00:21:10,024
+Füji modele verilerek bir çıktı daha oluşturup bu şekilde iteratif bir yapı kurmuşlar.
+
+103
+00:21:10,644 --> 00:21:14,704
+Bu iteratif yapının sonucunda son çıktı elde ediliyor.
+
+104
+00:21:15,504 --> 00:21:18,443
+Paper'da bunun ikiden büyük olması gerektiğini söylemişler.
+
+105
+00:21:18,504 --> 00:21:20,464
+Bunun başarıyı arttığından bahsetmişler.
+
+106
+00:21:22,684 --> 00:21:26,664
+Uygulamada ise bu sayı 3. Yani 3 kere şunu tekrar ediyor diyebiliriz.
+
+107
+00:21:27,059 --> 00:21:33,380
+Los Funksiyonlar, GJK Oderside, var da LAMB-parametreler var.
+
+108
+00:21:34,291 --> 00:21:37,612
+Ağırlık uyguluyor aslında bunları. Bunlar tamamen hyperparameter.
+
+109
+00:21:38,192 --> 00:21:40,991
+Burada loss değerlerini aslında her birinin topluyor.
+
+110
+00:21:41,711 --> 00:21:45,851
+Buradaki cross-entropy loss kullanılıyor değerleri hesaplamak için.
+
+111
+00:21:45,851 --> 00:22:02,251
+Yani olması gereken olasılık maddesiyle bizim her bir modellen yani şurada elde ettiğimiz vision model, language model ve fusion modelden elde ettiğimiz olasılık maddeslerini bir ağırlık kalsayısıyla çarpıp, bir hyperparameterle çarpıp buna elde ediyor.
+
+112
+00:22:02,291 --> 00:22:19,971
+Buradaki M değeri ise burada dediğimiz işte iterasyon sayısı. Yani kaç iterasyon bu işlemi yaptığımızın sayısı. Burada bir de en self-training uygulanıyor. Bu yöntem yine aynı zamanda şu ICCV'de başarılı olan modellerde en çok uygulanan yöntemlerden biri yine.
+
+113
+00:22:20,367 --> 00:22:30,268
+Burada da ne yapılıyor? Elimizde bir veri var fakat etiketsiz. Bu etiketsiz veriyi kullanarak da biz modelimizin başarısını arttırabilir miyiz diyorlar.
+
+114
+00:22:31,148 --> 00:22:35,888
+Bunu da şu şekilde yapıyorlar. Önce bir elimizdeki etiketli veriyle modeli eğitiyoruz.
+
+115
+00:22:36,708 --> 00:22:42,867
+Daha sonra bu etiketli veriyi ürettiğimiz model ile etiketliyoruz. Buna Pusader Label deniyor.
+
+116
+00:22:47,316 --> 00:23:06,456
+Etiketi ve elimizde bir confidence değeri var bunların. Confidence değeri belli bir threshold'un üstünde kalanları doğru olarak kabul edip, bunun label'larla bunlara gürültü ekleyip tekrardan modelimizi eğitiyoruz. Bu şekilde başarının %1-2 arttığını söylüyorlar.
+
+117
+00:23:07,396 --> 00:23:14,656
+Modelin başarısına gelecek olursak, icdar veri setinde yani regular veri setinde bahsettiğimiz gibi bu daha kolay bir kezdi bizim için.
+
+118
+00:23:15,023 --> 00:23:36,563
+Şu an en yüksek başarılıları elde ettiğini söyleyebiliriz. Yani İJDAR 2013'te 97.7 şu ana kadar alınmış en yüksek başarı. İJDAR 2015'te ise 86.9'luk bir başarı var. Bu da İJDAR için bir önceki modele göre %2'lik %3'lük bir fark demek.
+
+119
+00:23:39,887 --> 00:24:07,227
+Ne kadar zor bir veri set olduğunu bilir. Hatta şurada bir iki örnek göstereyim. Yani şunu okumak anayın yazıyor burada. Çok zor. Fakat model bunu başarabiliyor. İnsanına geçmeye çok yakın olduğunu söyleyebiliriz. Burada da benim yaptığım denemeler var. Bu görüntüleri ben kropladım. Yani fotoğrafını çekip.
+
+120
+00:24:07,923 --> 00:24:35,923
+Burada da açıklarını görebilirsiniz. Dilin özelliklerini kullandığını söylemiştik. Mesela burada şey var. Bunu S olarak tanıyor. Fakat işte distortion daha fazla artarsa yanlış anmaya da yaklaşıyor. Mesela İngilizce için eğittiğiniz bir model, Türkçe bir kelimenin distortion çok fazlaysa İngilizce bir kelimeye evrilmeye yakın oluyor. Yani buradaki üğelerin üstündeki noktaları aslında bir model distortion olarak.
+
+121
+00:24:35,923 --> 00:24:44,723
+Görüyor diyebiliriz. Teşekkür ederim. Bu kadardı. Kodu gösterebilir mi yazdığım kodu? İsterse dururum. Zamanım varsa.
+
+122
+00:24:44,723 --> 00:24:47,044
+Tamam bir çalıştır.
+
+123
+00:24:52,884 --> 00:24:58,443
+Çalışmada yaptığın bir proje mi yoksa bu ders için mi yaptın sadece?
+
+124
+00:24:58,943 --> 00:25:04,764
+Bu ders için yaptım. Zaten başka bir ders için iki tane ders alıyorum. Diğerinde farklı bir şey.
+
+125
+00:25:21,140 --> 00:25:47,300
+Sanırım geldi. Şurada demo kodunu yazdım. Burada aslında yaptığımız işlem çok basit. İşte modelimizi inifil ediyoruz burada. Burada load diyoruz, yıkıyoruz. Daha sonrasında işte o imji okuyup modele pastıyoruz burada. Post-process işlemini yapıyoruz. Daha sonrasında çıktı, bastırıyorum. Bunu runlayayım.
+
+126
+00:25:48,884 --> 00:25:52,803
+Hazır model parametreleri var mı?
+
+127
+00:25:53,763 --> 00:25:58,003
+Evet hocam, şey, pretrain'ini paylaşmışlar, onu kullanıyorum.
+
+128
+00:25:59,144 --> 00:26:03,183
+Türkçe için zaten şey bulamadım, bir dataset'i bulamadım.
+
+129
+00:26:06,163 --> 00:26:13,124
+Siz şey göremeyeceksiniz sanırım çıktığı. Şöyle yapayım, özür dilerim. Direkt screen paylaşayım ben.
+
+130
+00:26:16,180 --> 00:26:39,220
+Bu slide'ı da gördünüz. Kendi cropladığım 800.116. İşte modern çizgi. Şuraya yazdırdım. Bu Aliens. Bu bir kitap kapağıydı. Interprocess diyor bu İngilizce kelime. Bunu bir biletten kesip verdim.
+
+131
+00:26:39,827 --> 00:26:48,208
+Bu da bir şey, kart üzerinden kesilmiş bir resim. Bu da bir kitap üzerinden kesilmiş bir resim yine. Bu da bir kitap. Bu şekilde aslında.
+
+132
+00:26:51,827 --> 00:26:55,528
+Güzel, teşekkür ederim. Güzel bir söyleyemedi bence.
+
+133
+00:26:56,327 --> 00:26:58,768
+Ben teşekkür ediyorum. Soru varsa alabilirim.
+
+134
+00:27:00,567 --> 00:27:01,127
+Ben bir şey söyleyeyim.
+
+135
+00:27:01,127 --> 00:27:05,827
+Yani bir şeyi anladın mı, anlamadın mı, kaçırdın mı? Diğer de...
+
+136
+00:27:07,700 --> 00:27:11,299
+Nefreti örgü tekrar gösterir misin? Nefreti örgü şeklini?
+
+137
+00:27:12,099 --> 00:27:12,759
+Tabii hocam.
+
+138
+00:27:13,759 --> 00:27:15,379
+Şey ya dedim sanki.
+
+139
+00:27:18,259 --> 00:27:24,240
+Vision modelin geri dönüşü, denli ölçü modeli verilmiyor.
+
+140
+00:27:24,960 --> 00:27:25,759
+Bu bir şey değil mi?
+
+141
+00:27:26,480 --> 00:27:29,879
+Şuradaki Vision modelin bir çıktı üretiyoruz buradan.
+
+142
+00:27:29,879 --> 00:27:35,220
+Bu Vision modelin çıktısı, prediction olarak aslında bizim için bir anlamlı bir kelime.
+
+143
+00:27:35,635 --> 00:27:41,695
+Fakat bunu biz Language Model'e yollayarak bunu düzeltmesini bekliyoruz aslında.
+
+144
+00:27:41,816 --> 00:27:48,036
+Yani buradaki Showing uygulamasında W üzerindeki bu feature'ları çıkaramıyor aslında parlamadan dolayı.
+
+145
+00:27:48,336 --> 00:27:50,756
+Ve bunu V olarak tahmin etmesini bekliyoruz.
+
+146
+00:27:51,336 --> 00:27:57,016
+Fakat burada V olarak bir kelime olmadığı için Language Model bunu bu kelimeye yormaya çalışıyor.
+
+147
+00:27:57,423 --> 00:28:02,544
+Ve o da bu Vision modelden gelen olasılık vektörlerine göre bir çıktı üretiyor.
+
+148
+00:28:02,544 --> 00:28:11,663
+Bu çıktı aslında Fusion modelde, Language model ile Vision model arasında işte bir ağırlık uygulayarak son çıktı üretiyoruz aslında.
+
+149
+00:28:14,544 --> 00:28:16,544
+Yani burada...
+
+150
+00:28:18,223 --> 00:28:21,263
+...Fusion modelde...
+
+151
+00:28:21,619 --> 00:28:48,139
+Evet, bir network. Şurada göstereyim tekrardan hocam. Bu şu FV dediğimiz feature vektörler, vision modelden gelen, bu da language modelden gelen feature vektörler. Bunları konkat ediyor ikisini birbirine. Daha sonra bir ağırlıkta çarpıyor ve buna bir sigmoid uyguluyor. Buna gate diyor. Bu gate aslında ağırlık uyguluyor anlamına gelebilir. Yani feature modelden gelen feature'larda.
+
+152
+00:28:48,576 --> 00:28:57,895
+Language Model ve Vision Model'den gelenleri bir ağırlıkla uygulayıp en son çıktığı elde ediyor. Yani aslında şu ağırlıklandırma yapısı gibi Vision Model ile Language Model arasında.
+
+153
+00:28:59,435 --> 00:29:02,415
+Etkili Vision Model'den gelen ağırlıklar mı?
+
+154
+00:29:03,215 --> 00:29:05,776
+Evet, bu Vision Model'den gelen aslında...
+
+155
+00:29:05,776 --> 00:29:07,995
+İki ne sorabiliyor sanırım. Aynı şey.
+
+156
+00:29:09,635 --> 00:29:10,536
+Anlayamadım onu.
+
+157
+00:29:10,536 --> 00:29:12,536
+Az önceki...
+
+158
+00:29:13,203 --> 00:29:17,303
+Denklemde G'yi hesaplarken F'liyi kullanıyor.
+
+159
+00:29:17,903 --> 00:29:20,364
+Evet, kullanıyor. Bunları bir ağırlıkla çarpıyor.
+
+160
+00:29:20,364 --> 00:29:23,543
+Burada aslında öğrenilen parametre.
+
+161
+00:29:23,543 --> 00:29:28,543
+Ama tekrardan bunu ağırlıklandırmak için kullanıyor.
+
+162
+00:29:28,663 --> 00:29:30,844
+Aslında ilk başta bir gate için kullanıyor.
+
+163
+00:29:30,963 --> 00:29:33,423
+Yani hangisinin daha önemli olduğunu bulmak için kullanıyor.
+
+164
+00:29:33,923 --> 00:29:37,043
+Ondan sonra da o önemli olan bulduğunu ön plana çıkarıyor.
+
+165
+00:29:38,263 --> 00:29:39,823
+Bir olasılık madresi elde ediyor aslında.
+
+166
+00:29:43,124 --> 00:29:47,484
+Bu şekli. Bir şey dedi ama anlayamadım biraz öyle.
+
+167
+00:29:47,504 --> 00:29:49,144
+Sesim geliyor mu? Bir soru soracaktım da.
+
+168
+00:29:49,504 --> 00:29:49,884
+Tabii.
+
+169
+00:29:51,144 --> 00:29:53,464
+Şey vardı ya, başarıları gösterdiğim bir slide vardı.
+
+170
+00:29:53,524 --> 00:29:56,124
+IJDR 2015'te 86.9 müydü? Öyle bir şeydi.
+
+171
+00:29:56,604 --> 00:29:57,004
+Evet.
+
+172
+00:29:57,584 --> 00:29:59,564
+O başarıları tam olarak nasıl hesaplıyor?
+
+173
+00:29:59,564 --> 00:30:03,524
+Harf harf mi hesaplıyor yoksa direkt doğru mu tahmin etmesi gerekiyor kelimeleri?
+
+174
+00:30:03,855 --> 00:30:25,676
+Şu şekilde oluyor. Birebir meç olması lazım. Yani mesela iki uzunluğu, lengte iki uzunluğu bir kemiği. Yani A, B olarak düşünün. A, C olması durumunda yanlış. A, B olmasını kesinlikle istiyor. Yani birebir eşleştiği durumunda buna korrek diyor. Herhangi bir yanlış da incorrect diyor. Yanlış diyor. Bu şekilde ekürüs hesaplanıyor aslında.
+
+175
+00:30:26,956 --> 00:30:28,176
+Anladım. Tamam, teşekkür ederim.
+
+176
+00:30:28,456 --> 00:30:29,036
+Rica ederim.
+
+177
+00:30:33,236 --> 00:30:34,076
+Başka var mı?
+
+178
+00:30:34,076 --> 00:30:35,436
+Başka bir soru soran var mı?
+
+179
+00:30:36,716 --> 00:30:36,976
+Yok.
+
+180
+00:30:38,516 --> 00:30:38,856
+Tamam.
+
+181
+00:30:39,856 --> 00:30:41,076
+Teşekkür ediyorum.
+
+182
+00:30:41,076 --> 00:30:42,076
+Şimdi...
+
+183
+00:30:42,076 --> 00:30:43,636
+Ben teşekkür ederim hocam.
+
+184
+00:30:43,656 --> 00:30:44,816
+...bizimlere başladık.
+
+185
+00:30:45,056 --> 00:30:50,356
+Esasen ben biraz şimdi ekran paylaşayım.
+
+186
+00:30:51,896 --> 00:30:53,316
+Submachine'lere bakalım.
+
+187
+00:30:53,516 --> 00:30:54,396
+Onları indirelim.
+
+188
+00:31:02,228 --> 00:31:03,208
+Grup Pakistan.
+
+189
+00:31:43,731 --> 00:31:50,811
+Şimdi bunları ben herkesle paylaşmayı düşünüyorum. Herkesle derken bu dersi alan herkesle.
+
+190
+00:31:50,811 --> 00:31:58,871
+Bu konuda bir bunu istemeyen var mı arkadaşlar? Hani sunumu daha doğrusu en azından.
+
+191
+00:32:00,091 --> 00:32:03,091
+Kodları da mı ilke ediniz? Her şeyin ilkemi istediniz galiba.
+
+192
+00:32:06,451 --> 00:32:10,811
+Yani kodları da paylaşabilirim. Bir sıkıntı olur mu? Bu konuda bir...
+
+193
+00:32:11,263 --> 00:32:14,423
+Paylaşmak istemiyorum diyen var mı?
+
+194
+00:32:21,044 --> 00:32:39,604
+Yok. Şimdiden Vision Paylaşım Bilgisayar Mühendisliği. Bunlara 20-25. Gelecek yıllık öğrencileriyle de paylaşmak istiyorum bu arada. Yine bir konuda sıkıntısı olan var mı? Onu da sorayım.
+
+195
+00:32:41,604 --> 00:32:46,064
+Yani paylaşmaya bilmiyoruz sıkıntısı olursa. 20-25.
+
+196
+00:32:48,243 --> 00:32:50,243
+Öniversitesi Bilgisayar Mühendisliği
+
+197
+00:33:23,028 --> 00:33:27,328
+Şimdi bir de notlandırma için bunları dinleyelim.
+
+198
+00:34:13,012 --> 00:34:19,972
+Bölüm zaman içerisinde, Bilgisayar Mühendisliği yazanlara bonus veriyorum gibi bir şey dememiştim.
+
+199
+00:34:22,552 --> 00:34:28,311
+Şey demiştiniz hocam, bu paperların üzerine yıldız atmıştınız.
+
+200
+00:34:29,231 --> 00:34:33,752
+Onları alanlara 5 puan fazla vereceğinizi söylemiştiniz.
+
+201
+00:34:34,592 --> 00:34:40,032
+Bir de kod gösterenlere de 20 puan fazla vereceğinizi söylemiştiniz.
+
+202
+00:34:47,219 --> 00:34:48,971
+Hoşçakalın.
+
+203
+00:35:22,356 --> 00:35:25,096
+Moldum ilizle alınan pradim alış.
+
+204
+00:35:35,539 --> 00:35:37,859
+Şimdi kim sunumu yaptı?
+
+205
+00:35:39,619 --> 00:35:41,460
+Ben yaptım efendim, [öğrenci].
+
+206
+00:35:43,199 --> 00:35:45,759
+Dört tüm sunum sanırım. Beş miydim?
+
+207
+00:35:47,759 --> 00:35:48,439
+Tamam.
+
+208
+00:35:52,307 --> 00:35:59,708
+O zaman şeyi soracağız. Kodlu istiyordun, ne kurdu çalıştıydın mı? Bir şey soracağız.
+
+209
+00:36:04,436 --> 00:36:07,019
+Bu nüshua nü
+
+210
+00:36:15,668 --> 00:36:17,108
+Şöyle bir bakmak lazım.
+
+211
+00:36:17,768 --> 00:36:18,568
+Sunumlara,
+
+212
+00:36:20,108 --> 00:36:22,028
+olsa bile rapora bir bakmak lazım.
+
+213
+00:36:22,248 --> 00:36:23,748
+Rapor da eklediniz herhalde.
+
+214
+00:36:25,168 --> 00:36:26,568
+Evet hocam, rapor da ekledik.
+
+215
+00:36:27,568 --> 00:36:28,528
+Sunumla yaptım.
+
+216
+00:37:25,811 --> 00:37:32,811
+Aslında, bu konuyu örneklerle anlatacağız.
+
+217
+00:38:11,380 --> 00:38:15,739
+[öğrenci]'ün izliymiştir.
+
+218
+00:38:20,275 --> 00:38:36,275
+Sonuç alıyorsunuz. Kötte gösterebiliyorsunuz. Sunuma da güzel bir sunum oldu bence. Yani bilmiyorum, dokuz değil mi mesela şimdi? Sonra da sonra bir bakabilirim.
+
+219
+00:38:42,739 --> 00:38:45,739
+Peki, başka bu şekilde şimdi...
+
+220
+00:38:54,612 --> 00:38:55,612
+Açı yöntemizden.
+
+221
+00:39:15,668 --> 00:39:16,088
+Açın.
+
+222
+00:39:44,275 --> 00:39:45,275
+Burası ne olur?
+
+223
+00:39:53,396 --> 00:39:58,396
+Neyim şöyle yüzünü ve bayit yükleyen veri mi ekliyor acaba?
+
+224
+00:40:13,556 --> 00:40:16,556
+Sevdar sen...
+
+225
+00:40:32,371 --> 00:40:37,371
+Şuraya koyuyorum. Ekranı görüyor musunuz? 2021 bir projekt.
+
+226
+00:40:40,724 --> 00:40:44,043
+İzleme içerisinde.
+
+227
+00:40:44,224 --> 00:40:47,543
+Abinot rapor, Abinot sunum. Bu da orijinal paper oluyor değil mi?
+
+228
+00:40:48,064 --> 00:40:48,724
+Evet hocam.
+
+229
+00:40:49,304 --> 00:40:49,524
+Tamam.
+
+230
+00:40:52,144 --> 00:40:59,423
+Güzel. Teşekkür ediyorum. Devam edebiliriz. Şu anda sunmak isteyen, sırada girmek isteyen var mı?
+
+231
+00:41:14,996 --> 00:41:17,856
+[öğrenci] mesela sunabilir. Siz seyir misiniz?
+
+232
+00:41:18,996 --> 00:41:20,296
+Hazır mı hocam? Sunabilirim.
+
+233
+00:41:20,695 --> 00:41:21,556
+Tamam, siz sunun.
+
+234
+00:41:21,556 --> 00:41:22,456
+Tamam.
+
+235
+00:41:22,956 --> 00:41:24,996
+Hemen eklemazını deneyeceğim.
+
+236
+00:41:57,748 --> 00:41:59,547
+Tam ekran olarak görünmesi lazım.
+
+237
+00:42:01,387 --> 00:42:02,028
+Evet, görüyorum.
+
+238
+00:42:03,248 --> 00:42:03,488
+Tamam.
+
+239
+00:42:04,568 --> 00:42:09,327
+Benim konum PyTracking'ti. PyTracking bir Python framework'ü.
+
+240
+00:42:10,108 --> 00:42:10,908
+Şöyle.
+
+241
+00:42:14,668 --> 00:42:20,547
+Pythorch'a dayalı görsel nesne takibi ve video nesnesi segmentasyonu için genel bir Python framework'ü.
+
+242
+00:42:22,175 --> 00:42:27,235
+Model eğitim için LTR kullanılıyor. İleride modelleri anlatımda daha da bahsedeceğim bundan.
+
+243
+00:42:27,855 --> 00:42:32,855
+LTR görsel izleme alanına gitmek için genel çerçeve olarak geçiyor.
+
+244
+00:42:36,375 --> 00:42:43,435
+Şöyle söyleyeyim. LTR öz nitelikleri çıkartmak için CNN'i ardından bunları birleştirmek için Transformer kullanıyor.
+
+245
+00:42:43,956 --> 00:42:54,556
+Aşağıda da iki tane farklı karşılaştırmada aldığı başarılarla ilgili bir şey var. Yaklaşık 40 FPS'lik bir başarımı var GPU üzerinde.
+
+246
+00:42:55,916 --> 00:43:04,376
+PyTracking çerçevesi içerisinde 6 tane farklı model uygulanmış. Bu modellerin farklı veri setlerinde aldığı başarılar ortaya çıkarılmış.
+
+247
+00:43:08,724 --> 00:43:31,664
+KS, PRDNP, DIMP ve Atom olarak. KeepTrack Uluslararası Bilgisayar Mühendisliği Görü Konferansı'nın 2021 yılında yayınlanmış bir model. İzleyen hedefte kafa karıştıracak kadar benzeyen nesnelerin varlığı. Görmüş adayla görse izleme de bir zorluk teşkil ediyor. Yani çok benzeyen özellikler.
+
+248
+00:43:33,684 --> 00:43:43,104
+Çoğu yöntem daha güçlü. Yani esas aradığı şeyleri takip etmeye çalışırken, KipTrek yanıltıcı nesneleri takip etmeyi amaçlıyor.
+
+249
+00:43:43,944 --> 00:43:54,923
+Bu amaçla tüm hedeflerin kimliklerini kareden kareye gelmemize yani takip ettiği bütün, kafa karıştırıcı olarak tabir ettiği şeyleri bütün kareler de takip etmeyi amaçlıyor.
+
+250
+00:43:55,824 --> 00:43:58,043
+Burada Lasot üzerinde.
+
+251
+00:43:58,463 --> 00:44:22,724
+%67,1'lik bir AUX skoru elde ediyor. AUX UVI'de de yine bir önceki başarıya göre %5,8'lik daha fazla bir başarı elde ediyor. Model temelde bu şekilde çalışıyor. Yani takip etmek istediği şeylerin yanındaki, ona çok benzeyen şeyleri de takip ederek ilerliyor.
+
+252
+00:44:25,684 --> 00:44:34,403
+Bu da yine bir video takip amacıyla yayınlanmış bir model. Bu da Avrupa Bilgisayarında Görü Konferansı'nda yayınlanıyor 2020 yılında.
+
+253
+00:44:36,003 --> 00:44:43,144
+İlk olarak burada BOSU anlatayım. Video nesnesi bir bitleme. Bir videonun arka plan gölgesini ön plan nesnesini ayırmaya başlıyor.
+
+254
+00:44:43,463 --> 00:44:47,724
+Arka taraftan öndeki nesneyi ayırıp takip ettiği nesneyi ortaya çıkartmaya başlıyor.
+
+255
+00:44:48,244 --> 00:44:57,444
+LVL mevcut hedef nesnenin bilgisini kompakt bir modelde yakalıyor ve uçlu uncu eğiterek video nesnesini takip etme amacıyla çalışıyor.
+
+256
+00:45:00,024 --> 00:45:06,204
+LVL hedef modeliyle kesin doğruluk etikleri arasındaki hatayı optimize etmek için kullanılıyor daha çok.
+
+257
+00:45:07,684 --> 00:45:13,824
+Hedef veriliyor, ulaşmak istenen sonuç belli. Onun için aradaki farkı kapatmak için uğraşıyor daha çok.
+
+258
+00:45:14,195 --> 00:45:24,835
+Burada bir başarı değerleri verilmiş level'in. Burada Jekert benzerlik kat sayısı ve F skoru olarak karşılaştırma yapılıyor.
+
+259
+00:45:26,155 --> 00:45:35,635
+İşte rakipleri olarak STM, Siyam, RCNM var. PRM, Vos var. Bunlara karşı aldığı başarı burada belli bir şekilde görülüyor.
+
+260
+00:45:37,300 --> 00:45:44,760
+G değerinde 81.5'lik değer rakiplerine göre daha yüksek bir başarı alıyor. Bu şekilde başarı değerleri burada veriliyor.
+
+261
+00:45:45,960 --> 00:45:52,420
+LV'de model eğitim için az sayıda kişinin kullandığı temel etiketleri de öğretiyor.
+
+262
+00:45:52,980 --> 00:46:01,720
+Belirli bir modelleri değil, herkes tarafından uygulanan, sadece birkaç kişi tarafından uygulanan tüm modelleri elde etmek anlayıcı ile çalışıyor.
+
+263
+00:46:03,020 --> 00:46:04,320
+Genel mimarisi bu şekilde.
+
+264
+00:46:05,076 --> 00:46:24,916
+Sonrasında KS, genelsel kara kara algılama tabanını izlemeden farklı olarak dizi boyunca değerli sahne bilgilerini yayar şeklinde çalışıyor. Bu bilgi her karada iyileştirilmiş bir sahneye duyarlı hedef tahminini elde etmek için kullanılıyor. Sahne bilgisi yoğun bir yerleştirilmiş durum ve iklimistik kullanılmak temsil ediliyor.
+
+265
+00:46:27,827 --> 00:46:41,568
+Mevcut son teknoloji yürümünü izleyeceğim. Nesneyi her kare yerleştirmek için yalnızca bir hedef görünüm modeline güvenirken, KS modeli çevredeki sahnedeki diğer nesnelerin varlığını ve konuları hakkında bilgi sahibi olmaya çalışıyor.
+
+266
+00:46:42,068 --> 00:46:47,887
+Böylelikle sadece hedef nesneyi takip etmek yerine sahnede bulunan bütün nesneleri ve bütün varlıkları çıkartmaya çalışıyor.
+
+267
+00:46:47,887 --> 00:46:54,927
+Onları belirleyerek nesnenin anlık konumuna göre, yani diğer nesnene göre durumunu da takip ediyor.
+
+268
+00:46:55,699 --> 00:47:05,079
+Yine bir izleme mümahallesi olarak geçiyor. Yerel bölge hedef, arka plan ve dikkat dağıtıcı ile kod devlen yoğunlaştırılmış tüm bilgileri temsil ediyor.
+
+269
+00:47:06,379 --> 00:47:19,919
+KS'nin başarısı da burada yine GAT10K, OTB ve NFS, yani NFS zaten oyun olarak kaç, yani Need for Speed oyununda aldığı FPS değeri üzerinden de karşılaştırma yapılıyor.
+
+270
+00:47:22,643 --> 00:47:30,163
+Rakibi olarak DIMP-50, Atom ve SPM gibi algoritmalara karşı aldığı başarı var.
+
+271
+00:47:32,043 --> 00:47:34,344
+Genel olarak model bu şekilde çalışıyor.
+
+272
+00:47:35,683 --> 00:47:36,963
+Modelin mimarisi bu şekilde.
+
+273
+00:47:37,683 --> 00:47:38,403
+KS modeli.
+
+274
+00:47:38,403 --> 00:47:48,223
+Sonrasında PR-DIMP, sonrasında DIMP çerçevesinde görse izlemeyi uygulanan revyasyon formülüyle çalışıyor.
+
+275
+00:47:48,596 --> 00:48:03,096
+Bir girde örüntüsü verilen hedef durumun koşullu olasılık yoğunluğunu tahmin ediyor. Olasılık yoğunluğu sinir aranı kendisi tarafından esnik bir şekilde parametre indiriliyor. Regnasyon Ağ, Kullback-Libler ayrışmasını doğrudan en azından indirerek eğitiyor.
+
+276
+00:48:05,216 --> 00:48:13,076
+Burada yine bunları da geçip başarı puanını bahsedeyim. Lasot'ta 59,8'lik bir AUK skor alıyor.
+
+277
+00:48:13,684 --> 00:48:20,324
+TrackNet, TrackingNet üzerindeki, TrackingNet veri set üzerinde %75,8'lik bir başarı elde ediyor.
+
+278
+00:48:21,724 --> 00:48:30,564
+Burada PRDMP ve DMP ve CMRPN algoritmalarının uygulandığı örnekler var.
+
+279
+00:48:31,324 --> 00:48:36,324
+Burada kırmızıyla tespit ediliyor. Diğerlerine göre daha büyük bir başarı elde ediyor.
+
+280
+00:48:36,324 --> 00:48:40,224
+Yani şuradaki özellikle şu resimde daha belirgin bir başarısı var.
+
+281
+00:48:40,980 --> 00:48:57,760
+Yani DIMP algoritması yanlış bir tespit yapıyor. Siyan, RPN daha büyük bir çerçeve çıkartırken algoritmamız tam olarak tespit yaptığı belli oluyor. Resimlere göre en belirgin burada bir fark var.
+
+282
+00:48:59,460 --> 00:49:07,039
+DIMP, hedef model tahmini için hem hedef hem de arka plan görünüm bilgisinden tam olarak yararlanabilen uçtan uca bir izleme mimarisi.
+
+283
+00:49:07,795 --> 00:49:21,076
+Az önceki model PR, DMP bunun daha gelişmiş modeli oluyor. Yalnızca birkaç ileme ile güçlü bir modeli tahmin edebilen özel bir optimizasyon süreci tasarlayarak harit edilir bir öğrenme kaybından üretilmiştir diyor.
+
+284
+00:49:21,076 --> 00:49:32,615
+Bu da yine OTB100 yani Object Tracking Benchmark'ta %68.4'lük bir AUX score elde ediyor. VOT 2018'de de 0.440'lık bir.
+
+285
+00:49:33,427 --> 00:49:50,307
+İyi, iyi, iyi, o puanı elde ediyor. Modelin mimarisi bu şekilde. Son olarak bir atom modelimiz var. Atom, çevrim dışı olarak eğitilen bir hedef tahmin modülüne, çevrim dışı olarak eğitilen hedef sınırlandırma modülüne dayanıyor.
+
+286
+00:49:50,807 --> 00:50:00,000
+Hedef tahmin modülü, hedef ile sınırlanıcı kutu arasında tahmin yetişimi arasındaki birleşim üzerinden çakışmalar tahmin etmek için kullanılıyor. Yani...
+
+287
+00:50:00,000 --> 00:50:07,220
+Hedef tahminiyle mevcut şey arasındaki çakışmaları, birebir eşleşen noktaları elde etmek amacıyla, onları belirlemek amacıyla kullanılıyor.
+
+288
+00:50:09,260 --> 00:50:15,480
+Şuradan şöyle döndüğüm. Özel hedef tahmini ve sınıflandırma birleşimlerine oluşan yeni bir izleme mimarisidir.
+
+289
+00:50:15,480 --> 00:50:19,920
+Kapsamlı çevrim dışı öğrenme yoluyla yüksek düzeyde bilgi ve hedef tahmini elde edilir.
+
+290
+00:50:21,440 --> 00:50:22,480
+Atom da yine...
+
+291
+00:50:23,572 --> 00:50:35,432
+Bu örneğe, 165'lik bir AUX score elde ediyor. Visual Object Tracking'de. Ve VOD 2018'de 0,401'lik bir puan elde ediyor.
+
+292
+00:50:36,892 --> 00:50:44,692
+Yine Atom algoritmasının diğer algoritmana karşı gösterildiği bir görüntü dizisi var burada.
+
+293
+00:50:47,251 --> 00:50:51,192
+Genel olarak diğerleriyle çok büyük bir başarı farkı yok arasında ama.
+
+294
+00:50:51,539 --> 00:51:02,719
+Örneğin birinci resimde UPDT algoritması kaçırırken yakalaması, diğerlerinde tam olarak kar içine almasıyla bir başarı farkı ortaya çıkıyor.
+
+295
+00:51:03,599 --> 00:51:09,119
+Burada PyTrakik'in içerisinde uygulanabilen tüm modellerin bir karşılaştırması var.
+
+296
+00:51:09,219 --> 00:51:13,000
+Çeşitli veri setlerinde aldıkları bir başarı yüzdeleri burada karşılaştırılıyor.
+
+297
+00:51:18,996 --> 00:51:20,916
+Büyük başarısı var diğerlerine karşı.
+
+298
+00:51:22,876 --> 00:51:25,476
+OTB %Kip Tracking başarısı var.
+
+299
+00:51:26,036 --> 00:51:28,996
+Bu şekilde çeşit devlet setlerinde uygulanan başarı %1 var.
+
+300
+00:51:29,996 --> 00:51:30,996
+Burada PyTracking'i...
+
+301
+00:51:32,467 --> 00:51:47,487
+Farklı veri setleri, veri türler üzerinde çalıştırabiliyoruz. Canlı bir kamera görüntü üzerinde ya da önceden kaydedilmiş bir video, önceden kaydedilmiş bir fotoğraf seti, yani veri seti üzerinde, görüntü veri seti üzerinde çalıştırabiliyoruz.
+
+302
+00:51:48,527 --> 00:51:59,228
+Burada çalışmasıyla ilgili sadece nasıl çalıştığı ile ilgili bir bahsedip sonrasında esas PyTracking algoritmasının kodundan bahsedeceğim.
+
+303
+00:51:59,731 --> 00:52:01,711
+Çalıştırması aslında çok basit.
+
+304
+00:52:02,351 --> 00:52:09,231
+Direkt GitHub'tan PyTracking'i indirdiğimizde içerisinde çalışabilecek modellere ait bütün kodlar içerisinde barındırıyor.
+
+305
+00:52:09,692 --> 00:52:14,532
+Çalıştırmak için de farklı veri tiplerine göre farklı dosyalar içeriyor.
+
+306
+00:52:14,831 --> 00:52:19,132
+Örneğin bir webcam görüntüsü çalıştırmak için direkt Python.
+
+307
+00:52:19,603 --> 00:52:25,043
+Run Webcam Pyg yani direkt bu dosyayı çalıştırdığımızda uygulanacak tracker name'ini veriyoruz.
+
+308
+00:52:25,304 --> 00:52:27,563
+Örneğin atom olabilir, kip track olabilir.
+
+309
+00:52:28,244 --> 00:52:32,623
+Ve işte bu tracker name'in yanında parametre name olarak onu veriyoruz.
+
+310
+00:52:34,164 --> 00:52:37,184
+Sonrasında bu kodun çalışmasından şöyle bahsedeyim.
+
+311
+00:52:37,184 --> 00:52:41,664
+İlk olarak main içerisinde bir tane argument parser oluşturuyoruz.
+
+312
+00:52:41,704 --> 00:52:44,204
+Burada vereceğimiz parametreleri eklemek için kullanıyoruz bunu.
+
+313
+00:52:46,132 --> 00:52:55,231
+Kullanılacak tracker'ın ismi, işte debug kullanacak mı, wisdom kullanılacak mı, wisdom kullanılıyorsa server, port gibi bilgilerinin verilmesi.
+
+314
+00:52:55,991 --> 00:53:01,871
+Sonrasında wisdom info da oluşturulduktan sonra run webcam metodu çağrılıyor.
+
+315
+00:53:04,596 --> 00:53:19,456
+Çeşitli düzenlemek yapıldıktan sonra esas tracker yani pytracking içerisinden bir tane tracker mesleğimiz oluşturuyor. Sonrasında tracker.runwebcam metoduna ilgili parametreleri göndererek uygulamaya başlıyoruz.
+
+316
+00:53:20,376 --> 00:53:26,776
+Bir hükümesiyle çalıştırmak için yine python run tracker py şeklinde sonrasında yine.
+
+317
+00:53:28,148 --> 00:53:44,568
+Uygulanacak tk'ın ismini veriyoruz. Dataset bilgilerini veriyoruz. Yine debug bilgileriyle ilgili. Burada argument parser oluşturuyoruz. Argument parser içerisinde runTracker'ı çağırıyoruz. RunTracker'da burada yine tracker içerisindeki ilgili metodu çağırıyor.
+
+318
+00:53:46,408 --> 00:53:52,568
+Birden fazla ver hükümesiyle ya da birden fazla tracker algoritmasını aynı anda da uygulayabiliyoruz.
+
+319
+00:53:53,184 --> 00:54:15,284
+Burada örneğin bir tanesinin çalıştırması şu şekilde Atom için bu şekilde verilmiş. İşte uygulanacak tracker ya da bir tracker listesi şeklinde bu şekilde verilmiş. DIMP, Atom, Eko farklı şekillerde hepsinin uygulanması için. Uygulanacak dataset olarak da UiAv diyeyim UiAv olarak okunuyor galiba dataset verilmiş.
+
+320
+00:54:18,228 --> 00:54:38,907
+Daha önceden kaydedilmiş bir video dosyasını da çalıştırmak için nasıl uygulandı? RunVideoPy kodunu çağırıyoruz. Sonrasında uygulayacağımız track'a, video file'ın adresini alıyoruz. Burada da ilgili RunVideo metodunu çağırarak uygulanmasını sağlıyoruz.
+
+321
+00:54:40,728 --> 00:54:43,947
+Sonrasında Wisdom olarak Wisdom'ı anlatmak istiyorum.
+
+322
+00:54:44,755 --> 00:55:03,155
+Tüm izleyiciler için hata ekranma görselleştirme için VizDum'u destekliyorlar. Yani uyguladığımız bütün tracker sonucunda ortaya çıkan sonuçları VizDum üzerinde izleyebiliyoruz. Yani verdiğimiz örnek veriler üzerinde uygulanan çerçeveleri ya da çıktı sonuçlarını VizDum üzerinde görüntüleyebiliyoruz.
+
+323
+00:55:04,075 --> 00:55:12,075
+Sonrasında sunumu paylaşacağımızı düşünerek ben böyle eklemiştim. GitHub adresi ve esas pipe tracker metodunu.
+
+324
+00:55:13,268 --> 00:55:22,048
+Son olarak şöyle ekranımı değiştirip şeyi de göstermek istiyorum. Koda da göstermek istiyorum.
+
+325
+00:55:24,188 --> 00:55:36,408
+Koda aslında dediğim gibi direkt buradan PyTracking projesine ulaşabiliyoruz. İçerisinde uygulanabilen modellerle ilgili bütün modeller burada. Daha doğrusu modellerle ilgili projeler burada.
+
+326
+00:55:37,012 --> 00:55:42,592
+Örneğin atomla ilgili kodlar bunun içerisinde. Yani direkt atomu parametre olarak verdiğimizde kullanabiliyoruz.
+
+327
+00:55:43,791 --> 00:55:54,211
+Şurada da projenin genel dosyası var. İşte webcam için çalıştırmak ya da video ya da normal bir tracker olarak veri seçiminde çalıştırmak amacıyla kullanılmak için.
+
+328
+00:55:55,972 --> 00:56:02,731
+Son olarak da tracker'ın ana metodundan bahsetmek istiyorum. Yani ana dosyadan PyTracking'den bahsetmek istiyorum.
+
+329
+00:56:03,215 --> 00:56:10,795
+Diğer çalıştırma biçimlerinde içerisine ulaştığımız metotlar burada örneğin bir video için.
+
+330
+00:56:17,684 --> 00:56:45,024
+Buradan aldığı parametrelerle video dosyasına ulaşıyor. Sonrasında işte multiple obje modu ile ilgili bir false blo var. Sonrasında ilgili videoya ulaşarak video üzerinde uygulamaları yapıyor. Bunu şöyle kapattığımda run video, run webcam gibi şeyleri var. Buradaki bütün metotları farklı uygulanacak veri setine göre uygulanabiliyor.
+
+331
+00:56:45,715 --> 00:56:57,396
+Burada genel olarak bu şekilde ulaşabiliyoruz buna. Dediğim gibi GitHub'ta zaten sizin paylaştığınız zikre hocam ulaşılabiliyordu. Tamamen bu şekilde gösterebilirim.
+
+332
+00:56:58,936 --> 00:57:04,615
+Yani çalışması ile ilgili herhangi bir çalışma yapmadım. Yani kodu çalıştırmadım. Onu o şekilde söyleyebilirim.
+
+333
+00:57:06,543 --> 00:57:10,844
+Bu benim verdiğim listede var mıydı bu çalışma?
+
+334
+00:57:11,344 --> 00:57:15,144
+Evet hocam. High Tracking olarak. Direkt kitap linkini vermiştiniz aslında.
+
+335
+00:57:16,824 --> 00:57:22,463
+Vallahi nasıl yapmışım ki ben bunu? Normalde çünkü paper falan veririm de.
+
+336
+00:57:22,463 --> 00:57:25,463
+Evet, aslında ben onun için makale...
+
+337
+00:57:26,324 --> 00:57:39,084
+İstediğiniz kısma ben şey yaptım, içerisinde kullanılan modellerle ilgili makaleleri ekledim. Biz de KeepTracking ile ilgili, KS ile ilgili makaleleri ekledim. KeepTracking genelde framework olarak kullanılıyormuş.
+
+338
+00:57:39,644 --> 00:57:40,184
+PyTracking.
+
+339
+00:57:41,184 --> 00:57:43,463
+Evet, içerisindeki şeyleri ekledim ben.
+
+340
+00:57:43,884 --> 00:57:45,024
+Evet, onları ekledim.
+
+341
+00:57:49,024 --> 00:57:50,764
+Bu şekilde diyebilirim hocam.
+
+342
+00:57:51,204 --> 00:57:52,624
+Peki, nasıl yapacağız bunu?
+
+343
+00:57:53,364 --> 00:57:58,364
+Bunu bilseydim, gözümden kaçmış hemen hızlıca tak tak bunları yazdık.
+
+344
+00:57:58,364 --> 00:58:06,364
+Normalde tercihim bir tane paper'ın düzgünce anlatılması olur.
+
+345
+00:58:06,364 --> 00:58:12,364
+Şimdi sen burada 6 tane paper'ı çok hızlı bir şekilde tak tak tak geçtin.
+
+346
+00:58:13,043 --> 00:58:28,284
+Biz de çok fazla anlamadık. Sen de altı paper'ı da inceleyememişsindir zaten. Bir paper'a yoğunlaşabilirsin ama altı paper'a yoğunlaşman da zor olur. Bonus statı olmuş muyum ben buna?
+
+347
+00:58:28,284 --> 00:58:38,684
+Evet hocam. Ben zaten genel olarak siz pie tracking istediğiniz için sadece nelerin kullanıldığı ile ilgili kısa bir bilgi vermek istedim. İçerisinde bunlar çalıştırılabiliyor gibi.
+
+348
+00:58:39,860 --> 00:58:46,340
+Yani paperları genel olarak sadece baktım diyebilirim öyle birinin üzerinde çalışma yapmadım, inceleme yapmadım.
+
+349
+00:58:51,027 --> 00:58:59,208
+Sonuçta benim bir de yıldızlamışım. Dolayısıyla kaçış yok. Bunu kabul edeceğiz.
+
+350
+00:59:02,347 --> 00:59:07,827
+Kod var ama çalıştıramamışsın. O yüzden oradan not vermiyorum.
+
+351
+00:59:11,827 --> 00:59:12,827
+Sonunda...
+
+352
+00:59:12,827 --> 00:59:18,228
+Tabii bunun kendi duası gereği biraz böyle yüzeysel kalmış.
+
+353
+00:59:18,804 --> 00:59:29,523
+Ama yine bir şeyler yapmışsın. O yüzden sunumuna da 80 lirayım. Bir önceki sunumuna da 100 lirayım. Şimdi biraz değiştirdim onu.
+
+354
+00:59:30,423 --> 00:59:34,583
+Yani buraya 8 yazdım. 80 demek, 10 demek, 100 demek.
+
+355
+00:59:35,243 --> 00:59:38,123
+Ve direkt 80-100 diyeyim.
+
+356
+00:59:41,780 --> 01:00:08,440
+Rapor, raporladın mı sen? Rapor. Evet hocam. Raporda da genellikle nasıl çalıştığınız. Sonrasında yine kullanılan modellerle ilgili bir kısa bilgi verdim. Tamam. Onlara sonra bakabilirsem bakacağım. Şimdi bir sonraki sunumu alalım. Bu arada yani giriş hızımıza bakılırsa bu hafta eğer bu şekilde bu hızla devam edersek 6 kişi sunabilir. İkisi sunurum.
+
+357
+01:00:08,851 --> 01:00:27,851
+4 kişi daha sunabilir. Gelecek hafta online ne olur, offline ne olur bilmiyorum. Gelecek haftayı offline planlamıştık ama gelecek hafta online ya da offline olabilir.
+
+358
+01:00:35,248 --> 01:00:45,488
+Bu hafta yapsın, online yapmam gerekiyor diyenler. Onlar hemen öne çıksınlar. Ben anlatayım desinler, yapsınlar yani.
+
+359
+01:00:47,288 --> 01:00:56,088
+Evet, kim sunmak ister? Bilgisayar mı kaldırdı? [öğrenci] el kaldırdı. Evet, [öğrenci] sunabilirsin.
+
+360
+01:00:58,260 --> 01:01:01,180
+Konuşmak için mi söyledin yoksa sunar mıydın?
+
+361
+01:01:01,200 --> 01:01:04,360
+Konuşmak için söyledim hocam. Şimdi ekran paylaşıyorum.
+
+362
+01:01:15,315 --> 01:01:24,135
+Bir ara verelim aslında ya. Bir 10 dakika ara verelim. Bir saatte olmuş. Sen de hazır olursun [öğrenci]. 10 dakika sonra senin sunulunla başlarız.
+
+363
+01:01:24,455 --> 01:01:25,275
+Tamamdır hocam.
+
+364
+01:14:57,108 --> 01:14:58,368
+Arkadaşlar, merhabalar.
+
+365
+01:15:01,408 --> 01:15:03,228
+[öğrenci] sen hazır, sen sen başla.
+
+366
+01:15:03,468 --> 01:15:12,628
+Hocam, ben buradayım ama göstereceğim örnekle ilgili ufak bir aksaklık yaşadım da çalıştırma noktasına bir sonraki kişiden sonra sunabilir miyim?
+
+367
+01:15:13,628 --> 01:15:15,087
+Tamam, hazır olan birisi var mı?
+
+368
+01:15:18,644 --> 01:15:19,532
+Evet.
+
+369
+01:15:26,963 --> 01:15:28,343
+Ben sunabilirim hocam.
+
+370
+01:15:28,644 --> 01:15:30,384
+Sen sunuz [öğrenci]'ün.
+
+371
+01:15:31,404 --> 01:15:33,203
+Ekran paylaşayım hemen.
+
+372
+01:15:35,683 --> 01:15:37,263
+Geldim ekranın.
+
+373
+01:15:38,083 --> 01:15:38,583
+Geldi.
+
+374
+01:15:43,923 --> 01:15:53,123
+Benim incelediğim makale Slow Fast Networks for Video Recognition. 2019'da Facebook'taki araştırmacıların yayınladığı bir makale bu.
+
+375
+01:15:54,068 --> 01:16:06,028
+Sunumda makalede ele alınan problemden bahsedip uyguladıkları yaklaşıma değineceğim. Sonrasında test sürecini nasıl uyguladıklarından bahsedip örnek çıktıkları paylaşacağım sizinle.
+
+376
+01:16:07,068 --> 01:16:13,668
+Bu makalede videolardaki hareketleri tespit etmek ve sınıflandırmak için yeni bir yaklaşım geliştirmişler.
+
+377
+01:16:14,007 --> 01:16:22,068
+Bu makalenin çıkış noktası videodaki uzay ve zaman faktörlerini ayrı ayrı işleyerek daha etkin bir hareket tespiti yapacak.
+
+378
+01:16:22,068 --> 01:16:30,288
+Bunun için nesne sınıflandırma ve hareket tespiti için iki farklı mimari uygulamışlar. Bundan bahsedeceğim.
+
+379
+01:16:31,891 --> 01:16:42,891
+Burada Slow Fast olmasının sebebi aslında Slow Pet ve Fast Pet olmak üzere iki tane paralel mimari çalıştırılıp sonra bunların çiftleri birleştiriliyor.
+
+380
+01:16:43,912 --> 01:16:50,371
+Slow Pet'te videodaki anlamsal bilgilere, uzaysal özelliklere odaklanarak nesne tanıma işlemi yapılıyor.
+
+381
+01:16:51,211 --> 01:16:56,811
+Fast Pet'te de videodaki hareketleri takip ederek hareket tanıma işlemi yapılıyor.
+
+382
+01:16:57,264 --> 01:17:05,623
+Bu iki aşamayı da paralel olarak uygulayarak elde edilen bilgiler birleştirilip, frame'ler işlenerek sınıflandırma yapılmış oluyor.
+
+383
+01:17:06,452 --> 01:17:20,891
+Makarada bahsedilen mimari burada kabaca özetlenmiş durumda. Slow Pad bu şekilde. Hani pastolan da burada paralel olarak çalışıyorlar. Nasıl çalıştığına dair detaylardan bahsedeceğim ilerleyen slide'larda.
+
+384
+01:17:20,891 --> 01:17:26,791
+Sonrasında bu ikisinin çıktığı birleştirilerek bir prediction işlemi yapılıyor.
+
+385
+01:17:28,532 --> 01:17:56,512
+Slow pathway'de nesne tanımaya odaklanılıyor. Burada da zamansal özelliklere ihtiyaç duyulmayacağı belirtiliyor. Burada zamansal özelliklerden kastedilen, örneğin saniyede 60 frame olan bir video düşünelim. Bu saniyede hangi nesnelerin bu sahnede olduğunu tahmin etmek için bütün frame'lere bakmaya aslında gerek yok. Birkaç tane frame'e bakılarak da bir tahminleme yapılabilir hangi nesnenin olduğuna da.
+
+386
+01:17:56,532 --> 01:18:07,252
+Bu durumu da uzaysal özellikleri kullanmak şeklinde yorumluyorlar. Burada video frame'lerini çıkartırken stride oranını yüksek tutuyorlar.
+
+387
+01:18:07,252 --> 01:18:19,252
+Stride dediğimiz şeyde hangi frame'lerin, yani ne kadar yoğunlukta frame kullanacağımızı belirtiyor. Burada stride 16 demişler. Yani her 16 frame'den birini alıp...
+
+388
+01:18:20,095 --> 01:18:31,115
+İşliyorlar ve o şekilde nesne tanıma yapıyorlar. Yani örneğin saniyede 30 frame içeren bir video için, her saniyesi için iki tane frame üzerinden nesne tanıma işlemi yapılıyor.
+
+389
+01:18:32,435 --> 01:18:42,635
+Fast Pathway'de de amaç hareketleri tespit etmek. Bu nedenle aslında daha çok sayıda frame kullanıp daha geniş bir zaman aralığına bakmak istiyorlar.
+
+390
+01:18:43,115 --> 01:18:52,296
+Strat sayısını düşük tutarak, örneğin Slow'da 16 iken burada 2 olarak belirlemişler. Yani her iki frame'den birini alıp modele besliyorlar.
+
+391
+01:18:52,296 --> 01:18:56,355
+Ve bu şekilde daha yoğun sayıda frame kullanmış oluyorlar.
+
+392
+01:18:56,884 --> 01:19:12,824
+Burada Slow Pathway'e göre 8 kat daha fazla frame incelenmiş oluyor. Bunun yol açabileceği bir maliyet sorunu var. Yani örneğin Slow Pathway'e göre burada 8 kat daha fazla mı hesaplama karmaşıklığı var şeklinde de inceleme yapmışlar.
+
+393
+01:19:12,824 --> 01:19:24,824
+Bunun böyle olmadığını hatta toplam genel mimarinin maliyetini yalnızca %20'sinin Fast Pathway'e ait olduğunu bulmuşlar. Bunun nedeni de Fast Path'de bütün...
+
+394
+01:19:24,884 --> 01:19:45,304
+Kanallara bakmamaları. Yani örneğin ben bir video sahnesindeki hareketi tahmin etmek istiyorsam, örneğin koşan bir insanın koştuğunu yorumlamak istiyorsam, örneğin bu görüntünün RGB formatında olmasına gerek yok. Belki gri tonlamalı bakılabilir gibi bir yaklaşımla burada tüm kanalları ele almıyorlar.
+
+395
+01:19:46,739 --> 01:19:58,579
+Kanal sayısı olarak da Slow Pathway'de tüm kanalları kullanıyorlar. Burada Slow'a göre 1 bölü 8 kadar kanal kullanıp o şekilde hesaplama maliyetini düşüp tutmuş oluyorlar.
+
+396
+01:20:00,500 --> 01:20:11,940
+Bu iki pathway'in sonuçlarını birleştirmek için ne yaptıklarına bakarsak, ilk olarak FAST'tan Slowa bilateral connectionlarla füzing yapılarak bilgi aktarımı yapılıyor.
+
+397
+01:20:11,940 --> 01:20:17,899
+Yani bu iki paralel mimarı birbirinden tamamen bağımsız olmamış oluyor.
+
+398
+01:20:18,880 --> 01:20:23,299
+FAST'da daha çok bilgi olabileceği için Slowa Time to Channel şeklinde.
+
+399
+01:20:23,828 --> 01:20:37,428
+Burada matrisde alfa t dediğimiz şey alfa tane frame s² frame size yani bunlar 224'lük frame'ler kullanıyordu. Beta c'de kanal bilgisi oluyor.
+
+400
+01:20:37,428 --> 01:20:49,428
+Bu alfa t tane frame'i slow pathway'e t frame s² size'ında ve alfa beta c yani alfa tane kanal bilgisi olarak aktarıyorlar.
+
+401
+01:20:49,747 --> 01:21:01,787
+Bunun dışında Time Strided Sampling yapıyorlar. Yine Alpha, TSKR, Beta, C formatındaki Fast Pathway'den alınan bilgiye. Alpha Frame var burada.
+
+402
+01:21:02,420 --> 01:21:08,780
+Bir tane frame'ini tskrbc formatında slow pathway'e aktarıyorlar.
+
+403
+01:21:08,780 --> 01:21:18,659
+Time strided convolution'da da alpha stride sayısı olacak şekilde beş tane kernel ile konvolüsyon uygulayıp yine çıkışlarını slow pathway'e besliyorlar.
+
+404
+01:21:18,659 --> 01:21:25,180
+Burada da 2bc kadar kanala denk gelmiş oluyor bu bilgileri fastan slow'a aktarıyorlar.
+
+405
+01:21:25,524 --> 01:21:46,324
+Bu şekilde iki mimari de çalışıp çıktığı ürettikten sonra bu çıktığıları bir arada sınıflandırmak için Global Average Pooling Layer'ı ekliyorlar. Bu layer'dan alınan özellik vektörlerini Fully Connected Layer'a girdi olarak besliyorlar ve buradan da dense layer'da hesaplama yaparak çıktı üretiyorlar.
+
+406
+01:21:46,324 --> 01:21:48,283
+Sana bir şey söylemek mi [öğrenci]?
+
+407
+01:21:48,623 --> 01:21:48,844
+Tabii.
+
+408
+01:21:50,804 --> 01:21:57,123
+Kanal dediğin ne burada? Mesela tüm kanalları kullanıyor, tüm kanalları kullanmıyor.
+
+409
+01:21:57,123 --> 01:22:08,184
+Şimdi zaten RGB bir videoda, renkli bir videoda zaten her frame'de 3 tane kanalım var. Benim aklıma gelen bu.
+
+410
+01:22:09,363 --> 01:22:18,183
+Renk kanalları varmış. Bunun dışında ben hangi kanallar olabilir diye baktığımda 64 tane kanal olabileceği söyleniyordu.
+
+411
+01:22:18,683 --> 01:22:20,863
+Videoda 64 kanal olabiliyor öyle mi?
+
+412
+01:22:21,523 --> 01:22:28,403
+Öyle bir bilgi edindim internetten de detay olarak şeyini bilmiyorum hangi kanalda nasıl bir bilgi tutulduğunu.
+
+413
+01:22:29,403 --> 01:22:31,304
+Ondan etmiyorum yapamayacağım.
+
+414
+01:22:33,716 --> 01:22:45,316
+Çalışmada uygulanan mimariye bakarsak, burada örneğin saniyesinde 64 tane frame olan frame size 224 ve 224'lük bir video klibini düşünelim.
+
+415
+01:22:45,976 --> 01:23:01,676
+Bunu Slow Pathway'e daha çok stride uyguladığımız için örneğin 4 frame alınmış. Yine frame size aynı. Fast Pathway'de de 8 kat daha fazla, 32 tane frame alınmış her bir seferinde. Yine frame size 220.
+
+416
+01:23:03,024 --> 01:23:21,484
+Burada konvolüsyon pooling ve ResNet backbone uygulanıyor. Bunu yaparken örneğin Slow Pathway'de 64 tane kanal kullanıldığını görüyoruz. Bunu Fast Pathway'de 8'e düşürmüşler. Yine 1 bölü 8 oranında kullanmışlar.
+
+417
+01:23:31,024 --> 01:23:39,324
+Örneğin kanal bilgisi. Bu nedenle Fast Pathway'de fazladan bir hesaplama maliyeti olmadığını görebiliyoruz.
+
+418
+01:23:42,515 --> 01:23:51,995
+Bunu test etmek için yapılan çalışmayı Kinetix 400, 600, Sherrits ve EVA veri setleri üzerinde test etmişler.
+
+419
+01:23:51,995 --> 01:24:08,995
+Bu veri setlerinden rastgele train ve test video klipleri oluşturarak bunların fremlerini mimariye besleyerek gerçek sınıfı neydi, biz ne tahmin ettik şeklinde bir ekürist hesaplamışlar ve MAP değerlerini de hesaplamışlar.
+
+420
+01:24:10,515 --> 01:24:16,296
+Bunu yaparken ImageNet ile ön eğitim yapmadan hesapladıklarını özellikle belirtmişler.
+
+421
+01:24:16,296 --> 01:24:23,296
+Ve burada yine %80 civarında bir ekürisi, MAP değeri olarak da 30-40 gibi değerler elde etmişler.
+
+422
+01:24:24,175 --> 01:24:33,435
+State of Art çalışmalarla kıyasladıkları zaman başarı olarak çok bir kayıp yaşamadıklarını, hemen aynı olduklarını vurgulamışlar.
+
+423
+01:24:34,395 --> 01:24:35,755
+MAP'in nedir bu arada?
+
+424
+01:24:38,260 --> 01:24:51,220
+MAP nesne takibinde falan da görmüştüm de. Sanırım nesnenin konumunu, o bounding box'ını ne kadar doğru çizebildiğiyle alakalı diyebiliyorum.
+
+425
+01:24:53,720 --> 01:24:59,159
+Bu çalışmadan alınan örnek çıktıları da şöyle slide'lara ekledim.
+
+426
+01:25:00,243 --> 01:25:12,423
+Örneğin burada kişilerin nasıl bir hareket halinde olduklarını doğru bir şekilde tahmin edip bu bounding box'unu da düzgün bir şekilde oluşturabiliyor bu model.
+
+427
+01:25:15,543 --> 01:25:17,583
+Bunun dışında yine şöyle bir görüntüde de.
+
+428
+01:25:17,643 --> 01:25:21,103
+Bunlar ne burada? 0.98, 0.97 falan.
+
+429
+01:25:21,743 --> 01:25:24,243
+Ne kadar olasılıkla bu hareketi...
+
+430
+01:25:24,752 --> 01:25:30,192
+Uyguladığına dair bir tahminleme yapmışlar. Onun çıktığı.
+
+431
+01:25:30,532 --> 01:25:31,912
+Yaptığını biliyoruz.
+
+432
+01:25:32,512 --> 01:25:43,872
+Evet, örneğin %98 oranla işte standing demiş. %82 olarak birisini izliyor demiş. Hani %85 konuşuyor şu anda demiş gibi.
+
+433
+01:25:44,724 --> 01:25:54,924
+Olasılıklarını da bastırmışlar. En muhtemelen örneğin %70'in üzerinde olan sonuçları bastırıyor olabilirler gibi duruyor. Şu an %70'in altında bir şey görmüyorum çünkü.
+
+434
+01:25:54,924 --> 01:26:03,984
+Evet. Yine burada da aynı şekilde biraz daha hızlı bir hareket var. Onu da takip edebiliyor bu model.
+
+435
+01:26:08,948 --> 01:26:17,028
+Bunun kodu GitHub'da var aslında. Hani yaptıkları çalışmadan da bahsetmişler Facebook Research grubunun altında.
+
+436
+01:26:18,528 --> 01:26:27,968
+Hem kodda çok fazla sınıf vardı. Benim de çalıştırmaya çok vaktim olmadı açıkçası. Hani incelemek isteyen olursa bakabilir.
+
+437
+01:26:29,971 --> 01:26:33,811
+Benim anlatacaklarım bu kadar. Sorunuz varsa onları alabilirim.
+
+438
+01:26:33,951 --> 01:26:38,412
+Bilgisayar Mühendisliği gösterdikleri bir resim var mıydı?
+
+439
+01:26:38,531 --> 01:26:40,131
+Şu var mesela.
+
+440
+01:26:41,831 --> 01:26:43,051
+Şunu ben şey merak ettim.
+
+441
+01:26:43,051 --> 01:26:54,091
+Yani loss fonksiyon hesabında bu iki ayrı pathway, ayrı bir loss.
+
+442
+01:26:54,899 --> 01:26:59,719
+Döndürüyor mu? Yoksa tamamen bunlar bir noktada birleştirilip o şekilde?
+
+443
+01:26:59,719 --> 01:27:07,079
+Hayır, şurada da bir tane genel şeyi vardı. Aslında çok detaylı çizmemişler ama makaleyi okuduğum zaman şöyle görüyorum.
+
+444
+01:27:07,239 --> 01:27:12,619
+Burada slow pathway'den bir çıktı alıyorlar. Fast pathway'den de bir çıktı alıyorlar.
+
+445
+01:27:13,079 --> 01:27:21,420
+Sonra bunları pooling yaparak hepsinden aldıkları özellik vektörünü densleyerek yani bu nöronlara aktarıyorlar.
+
+446
+01:27:22,899 --> 01:27:28,000
+Sonra da hani sanki tek bir model çıktısıymışçasına sınıflandırma yapıyorlar.
+
+447
+01:27:28,219 --> 01:27:30,979
+Hani Slayer'daki sınıflayıcıya özellik ödüyorlar.
+
+448
+01:27:31,420 --> 01:27:33,539
+Özellik vektörlerini besliyorlar, evet.
+
+449
+01:27:34,739 --> 01:27:35,559
+Tamam, peki.
+
+450
+01:27:38,079 --> 01:27:38,879
+Enteresan.
+
+451
+01:27:39,988 --> 01:27:47,788
+Şeyde, low frame'de ne yapmaya çalışıyor? Low frame rate'de ne yapmaya çalışıyor? High frame rate'de ne yapmaya çalışıyor?
+
+452
+01:27:47,807 --> 01:28:01,448
+Low frame rate'de aslında daha çok nesne tanımaya odaklanıyor. Bunu yaparken de ben daha az sayıda frame'e bakarak zaten nesneyi tanıyabilirim. O saniyede geçen bütün frame'leri incelememe gerek yok gibi bir varsayım yapmışlar.
+
+453
+01:28:07,988 --> 01:28:25,327
+Hareketi anlayabilmem için daha çok frame'i görüp ona göre bir yorum yapabilmek lazım diyor. Bunu yaparken de belki frame'deki bütün bilgilere ihtiyacım yok diyor. Örneğin RGB olmasına gerek yok. Oradan bir kanal kazanımı sağlayayım. Bu sayede de hesaplama maliyeti düşük olsun diyor.
+
+454
+01:28:26,195 --> 01:28:29,796
+Zaman esasen orada hareketi bulmaya çalışıyor değil mi?
+
+455
+01:28:30,115 --> 01:28:35,175
+Burada zamansal özelliklere odaklanmış oluyorlar Fast Pathway'de.
+
+456
+01:28:35,175 --> 01:28:37,735
+Orada çıkarmaya çalışıyor.
+
+457
+01:28:37,876 --> 01:28:41,935
+Slovda da uzaysal özelliklere odaklandıklarını vurguluyorlar.
+
+458
+01:28:42,635 --> 01:28:47,456
+Filtrelerle falan bir şekilde bir özellik var mı?
+
+459
+01:28:48,796 --> 01:28:50,956
+Konvolüsyon yapıyorlar burada.
+
+460
+01:28:51,539 --> 01:28:53,539
+Diğerine nasıl bu odaklanıyor?
+
+461
+01:28:53,539 --> 01:28:55,115
+Bunu görelim değil mi?
+
+462
+01:28:55,667 --> 01:29:09,028
+Zaman'dan kasta örneğin 64 frame olan bir video için slow'da sadece 4 tanesine bakıyor.
+
+463
+01:29:09,028 --> 01:29:19,907
+FASTA 32'sine bakıyor. Yani bu 1 saniye içerisindeki tüm hareketleri aslında daha yoğun olarak işleyebilmiş oluyor FASTA.
+
+464
+01:29:23,764 --> 01:29:29,103
+Enteresan. Peki. Tamam, peki. Teşekkürler [öğrenci].
+
+465
+01:29:31,724 --> 01:29:33,724
+Buradayım hocam. Paylaşayım mı?
+
+466
+01:29:34,904 --> 01:29:35,243
+Efendim?
+
+467
+01:29:36,644 --> 01:29:41,144
+Ben ekran paylaşabilirim hocam. Biraz önce sunacaktım ya [öğrenci].
+
+468
+01:29:41,144 --> 01:29:43,103
+Bir soru soracak var galiba.
+
+469
+01:29:43,644 --> 01:29:44,203
+Tamamdır.
+
+470
+01:29:44,203 --> 01:29:46,043
+El kaldırdı galiba. Göremeyeyim mi?
+
+471
+01:29:47,644 --> 01:29:48,663
+Ben şimdi istemiyorum.
+
+472
+01:30:00,000 --> 01:30:02,239
+Göreğini indirmiş anladığım kadarıyla.
+
+473
+01:30:09,844 --> 01:30:16,703
+Buna da bir notlandırma yapalım şimdi. Ondan sonra senaryum için bir saniyetin bir mizr.
+
+474
+01:30:16,703 --> 01:30:23,344
+Şimdi kim sundu? [öğrenci].
+
+475
+01:30:23,344 --> 01:30:24,423
+[öğrenci] bana o zaman, evet.
+
+476
+01:30:26,064 --> 01:30:27,384
+Bonuslu bir şey.
+
+477
+01:30:29,184 --> 01:30:34,164
+Kod çalıştırmamışsın. Bu kod çalıştırmayı yine bonus olarak koyacağım.
+
+478
+01:30:34,804 --> 01:30:35,923
+Bonus ne demek?
+
+479
+01:30:36,724 --> 01:30:50,603
+100 alan birisi, bir de bonus alırsa 120'ye çıkar. Ama sonra 100'e düşer. Yani ilk 100'ü elde ederken hesaplanacağız.
+
+480
+01:30:55,123 --> 01:30:59,923
+Sunumumda 90 yapayım. Daha önceki sunumu da biraz düşüreceğim.
+
+481
+01:31:11,828 --> 01:31:18,927
+Raporları bir daha sonra bakıyoruz. [öğrenci] sen başlayabilirsin. Teşekkür ediyorum bu arada [öğrenci].
+
+482
+01:31:19,427 --> 01:31:20,488
+Ben teşekkür ederim.
+
+483
+01:31:22,988 --> 01:31:25,028
+[öğrenci] Bey, başlayalım.
+
+484
+01:31:38,387 --> 01:31:48,927
+Geldi mi hocam? Ben çekişmeli üretici ağlar ile beyin MR'ı görüntüsü üretmek için yapılan bir çalışmadan bahsedeceğim.
+
+485
+01:31:50,579 --> 01:32:06,479
+Çalışmanın amacı çekişmeli üretici ağları kullanarak beyin MR'ı görüntüsü üretmek. Bu görüntülerle de teşhis güvenirliliğinin arttırılmasına, bilgisayar destekli teşhiste ve doktor eğitiminde veri arttırımına katkı sağlamak.
+
+486
+01:32:06,719 --> 01:32:18,479
+Çalışmada iki tane noktaya odaklanılmış. Bir tanesi gen seçimi hangi mimari daha uygun tıbbi görüntü üretmek için. Diğer bir noktada tıbbi veri geliştirmeye nasıl katkı sağlayabiliriz?
+
+487
+01:32:20,500 --> 01:32:47,620
+Gen nedir? Gen 2014 yılında Google araştırmacısı olan Ian Goodfellow tarafından icat edilen bir model. Modelin amacı gerçeğe benzer görüntüler üretmek. Modelin geliştirilmesiyle ilgili Facebook Yapay Zeka Direktörü bu modelin 10 yıldır önerilen fikirler içinde en ilginç ve en önemli fikir olduğunu ifade ediyor bu modelle ilgili.
+
+488
+01:32:48,595 --> 01:32:59,375
+Peki çalışma yapısı nasıl? Genler birbirine zıt şekilde çalışan iki tane neural network'ten oluşuyor. Bir tanesi generator, bir tanesi diskriminatör.
+
+489
+01:33:00,243 --> 01:33:20,304
+Generator kısmı gerçeğe benzer resimleri üretmeye çalışıyor. Diskriminatör de bu üretilen resimler gerçek mi, sahte mi bunu etiketlemeye çalışıyor, bunu tahmin etmeye çalışıyor. Burada Generator'ın ürettiği veri diskriminatörde sınıflandırıldıktan sonra bir hata hesaplanıyor.
+
+490
+01:33:28,243 --> 01:33:37,423
+Güncelleniyor. Her bir ipok sonrasında da güncelleme yapıldıkça aslında model daha gerçekçi görüntüler üretmeye başlıyor.
+
+491
+01:33:39,923 --> 01:33:48,543
+Burada şöyle bir hata fonksiyonu kullanılmış. Buna da yer vermek istedim ama biraz da karışık bir şey gibi geldi bana.
+
+492
+01:33:48,543 --> 01:33:50,783
+Buraya bir kısa geçeceğim.
+
+493
+01:33:51,572 --> 01:34:17,112
+Burada 2014'dan 2019 yılına kadar genle yapılmış çalışmalarda üretilen örnek resimler var. Yıllar geçtik de zaten gerçekliği artmış görünüyor üretilen resimleri. Yine bunlar da başka bir çalışmadan alınan resimler ama bunların sahte olduğu biraz daha belli. Özellikle şu hariç diğerleri direkt belli oluyor, sahte resimler oldu.
+
+494
+01:34:17,876 --> 01:34:21,896
+Önceki denklemlere bir gelsene. Sesimi duyuyor mu?
+
+495
+01:34:23,836 --> 01:34:24,916
+Efendim hocam?
+
+496
+01:34:25,456 --> 01:34:30,156
+Evet. Herhalde ses biraz geç geliyor sanırım. Önce duymalım.
+
+497
+01:34:30,676 --> 01:34:32,016
+Yok hocam, duymadım.
+
+498
+01:34:34,016 --> 01:34:37,216
+Bu nasıl bir şeydi? Bunu hatırlayan var mı arkadaşlar?
+
+499
+01:34:38,036 --> 01:34:41,016
+Burada G üzerinden...
+
+500
+01:34:41,555 --> 01:34:47,555
+Minimizasyon yapılıyor. Yani minimize eden L'yi minimize eden G bölümde.
+
+501
+01:34:49,055 --> 01:34:57,555
+D üzerinden de maksimizasyon yapılıyor. Yani L'yi maksimize eden D yapılıyor.
+
+502
+01:34:58,055 --> 01:35:04,555
+Yani sonra zaten bu jeneratik ve distromiyot değil mi?
+
+503
+01:35:05,555 --> 01:35:06,555
+Evet hocam.
+
+504
+01:35:10,579 --> 01:35:11,979
+Expectance var.
+
+505
+01:35:15,680 --> 01:35:19,380
+Eğilçin gerçek veri üzerindeki ortalanma değer.
+
+506
+01:35:21,340 --> 01:35:26,379
+Expectance yani beklenen değer ortalanma değer olarak anlayabiliriz.
+
+507
+01:35:27,219 --> 01:35:29,979
+Pd gerçek veri üzerindeki dağılım.
+
+508
+01:35:35,988 --> 01:35:43,988
+Beklememdeğer, ovasılıkta ki beklememdeğer, denklemelerini hatırlıyor musunuz? Neydi?
+
+509
+01:35:47,155 --> 01:35:48,376
+Yok hocam hatırlayamadım.
+
+510
+01:35:48,376 --> 01:36:04,636
+Egex nedir?
+
+511
+01:36:07,695 --> 01:36:13,376
+Screen olduğu zaman dediğimiz random verilir.
+
+512
+01:36:14,836 --> 01:36:18,055
+gx çarpı probability of x.
+
+513
+01:36:18,055 --> 01:36:20,215
+tüm x değerleri üzerinden.
+
+514
+01:36:25,595 --> 01:36:33,756
+Yani tüm x değerlerin üzerinden esasen bir log dx'i ne yapıyor?
+
+515
+01:36:35,456 --> 01:36:39,275
+probability of x ile çarpıyor sonra topluyor esasen.
+
+516
+01:36:40,948 --> 01:36:44,948
+LogDx'i PRX'le çarpıyor.
+
+517
+01:36:44,948 --> 01:36:46,948
+Hepsini de kopuyor.
+
+518
+01:36:48,948 --> 01:36:56,948
+Dx diskriminatörün gerçek ve Dx'in gerçek olması üzerine tahmin olasıdır.
+
+519
+01:36:57,948 --> 01:37:02,948
+Bu Dx sanırım network çıktısı.
+
+520
+01:37:02,948 --> 01:37:06,948
+Bir diskriminatör network var.
+
+521
+01:37:08,243 --> 01:37:11,764
+jeneratör network var.
+
+522
+01:37:13,583 --> 01:37:15,283
+Diskriminatör network'un
+
+523
+01:37:15,283 --> 01:37:15,943
+çıktısı da
+
+524
+01:37:15,943 --> 01:37:18,663
+büyük bir ünitsi.
+
+525
+01:37:19,983 --> 01:37:21,523
+Bana mazulu ünlatıyorum ama
+
+526
+01:37:21,523 --> 01:37:23,123
+siz benim mazulu ünlatmıyorsunuz.
+
+527
+01:37:24,804 --> 01:37:25,884
+EZ
+
+528
+01:37:25,884 --> 01:37:28,143
+jeneratör tarafından üretilmiş
+
+529
+01:37:28,143 --> 01:37:29,923
+tüm sahte verilerin ortalama
+
+530
+01:37:29,923 --> 01:37:30,583
+değerini diyor.
+
+531
+01:37:35,604 --> 01:37:49,604
+Tüm jeneratör çıktıkları için, z'ler için onların log 1-dgz ile o olasılığı çarpıyorsunuz.
+
+532
+01:37:51,204 --> 01:37:57,024
+Yani bu biraz karmaşık bir yönü ama şu expectanstan dolayı çok karmaşık gözüküyor.
+
+533
+01:37:58,764 --> 01:38:02,044
+Evet hocam bana da karmaşık geldi biraz. Hani yer verdim ama.
+
+534
+01:38:02,644 --> 01:38:04,644
+Çok da şey yapmak istemedim.
+
+535
+01:38:04,644 --> 01:38:10,644
+Evet, ama şu yani bu E-X, klasik şeydeki E-X esasen.
+
+536
+01:38:12,644 --> 01:38:15,644
+Bir an ben alayım şimdi o kısmını.
+
+537
+01:38:26,420 --> 01:38:28,420
+Ekranı kaldım. Yine.
+
+538
+01:38:31,539 --> 01:38:33,059
+Expective Reality'i
+
+539
+01:38:35,859 --> 01:38:37,059
+Karakterlerimizde.
+
+540
+01:39:24,148 --> 01:39:40,847
+x esasen şudur. Yani x'in beklenen değeri y eşittir. 1'den k'ya kadar. x i çarpı pi'dir. Pi, x i'in olasılığı oluyor.
+
+541
+01:39:42,948 --> 01:39:50,108
+Burada elimizde x i değil de esasen x i'in bir fonksiyonu olduğunda da benzer bir şey kullanıyoruz.
+
+542
+01:39:50,868 --> 01:39:54,688
+Expected value of g of x i olsa g bir fonksiyon.
+
+543
+01:39:55,828 --> 01:40:02,587
+I eşit bir den k'ya kadar g x i t pi şeklinde oluyor.
+
+544
+01:40:04,648 --> 01:40:08,568
+Dolayısıyla elimizde bir veri olduğunda ne olmuş oluyor?
+
+545
+01:40:08,568 --> 01:40:15,568
+Her bir verinin olabilen çıkan fonksiyon çarpı olabilen olasılığı.
+
+546
+01:40:17,332 --> 01:40:25,332
+Bu bir toplamaya dönüşüyor. O yüzden de o da ortalama dönüş.
+
+547
+01:40:27,332 --> 01:40:30,332
+Şey için tabi...
+
+548
+01:40:33,876 --> 01:40:38,572
+Pratikte ortalamaya da benziyor. Şehrin olasılığı...
+
+549
+01:40:42,387 --> 01:40:44,387
+Olasılık donasının ilgisi var.
+
+550
+01:40:44,387 --> 01:40:46,387
+Orada bakalama olmuş.
+
+551
+01:40:48,387 --> 01:40:52,387
+Elimizde 100 tane veri var.
+
+552
+01:40:52,387 --> 01:40:55,387
+İki tanesi aynı.
+
+553
+01:40:55,387 --> 01:41:01,387
+O verinin olasılığı iki katına çıkıyor.
+
+554
+01:41:01,387 --> 01:41:07,387
+Şu şekilde öngülersen öyle olacağız.
+
+555
+01:41:07,387 --> 01:41:09,387
+O verinin olasılığını iki katına alacağız.
+
+556
+01:41:12,275 --> 01:41:20,275
+Onun da şimdi bir şey çizmediğim için o da biraz şey kalmış olabilir ama oradaki standart orası expectans aslında.
+
+557
+01:41:30,707 --> 01:41:38,707
+Şuna daha çok benziyor. Şurada şey verebiliyor musunuz? Law of the unconscious statistician var.
+
+558
+01:41:40,707 --> 01:41:54,707
+O da integral göstermiş ama siz integral yerine toplam var diye düşünün. FX ve XSYM'de olasılığını düşünün. Ona benziyor esasen. Tamam devam edelim [öğrenci].
+
+559
+01:41:55,707 --> 01:41:56,707
+Hocam.
+
+560
+01:41:57,076 --> 01:42:14,456
+Buradan bahsetmiştim sanırım. 2014'den 2019'a kadar genalarıyla üretilmiş örnek resimler yıllar içinde de geliştiğini görüyoruz. Yine alttaki resimler de genalarıyla üretilmiş. Bunların sahte olduğu üsttekilere göre daha belli.
+
+561
+01:42:16,372 --> 01:42:38,011
+Çekişmeli üretici ağların birkaç türü var. Çalışmada da iki farklı türünü kullanmışlar. DC-Gen ve V-Gen. DC-Gen derin konvolüsyonel çekişmeli üretici ağ olarak geçiyor. Generator Network'ü dekonvolüsyonel bir network yapısına sahipken diskriminatör kısmı konvolüsyonel bir yapıya sahip.
+
+562
+01:42:39,636 --> 01:43:06,396
+Generator'da yapılan işlemler Transpose Konvolisyon, Bech Normalizasyon, Relu Katmanı ve Tan Aktivasyon fonksiyonu diyebiliriz. Burada Transpose Konvolisyon, Konvolisyonu tam tersi oluyor aslında. Relu'da ara katmanlarda sık sık kullanılan bir işlem. Tan da son çıktı değerinde kullanılıyor.
+
+563
+01:43:07,572 --> 01:43:26,152
+Diskriminator kısmında ise jeneratörün tam aksine konvolüsyon işlemi yapılıyor. Ara katmanlarda jeneratörde relu kullanılırken diskriminatörde 52 relu kullanılıyor. Tam fonksiyonu yerine de sigmoid kullanılıyormuş. Son katmanlı da flatten yapılıyormuş.
+
+564
+01:43:29,300 --> 01:43:54,740
+Yine bu çalışmada kullanılan bir diğer gen türü de Wigen diye geçiyor. Burada da hata fonksiyonu Wasserstein uzaklıktan türetilmiş yeni bir hata fonksiyonu kullanılıyor. Diskriminatör artık kritik rol oynamaktan çok bu Wasserstein ölçüsünün uygulanabilmesi için yardımcı bir durumdadır diye ifade etmişler yayında.
+
+565
+01:43:57,747 --> 01:44:04,607
+Çalışmaya gelecek olursam, çalışmada Bratz veri setini kullanmışlar. Veri setinde...
+
+566
+01:44:05,171 --> 01:44:28,611
+Yüksek dereceli gliyoma ve düşük dereceli gliyoma diye iki çeşit vaka türü var. Yüksek dereceli gliyoma dediği 3 ve 4. dereceden beyin tümörü içeren vakalarmış. Düşük dereceli gliyoma da ikinci dereceden beyin tümörleri bu gruba dahilmiş. Yüksek dereceli gliyoma'ya 220 örnek, düşük dereceli gliyoma'ya da 54 örnek varmış.
+
+567
+01:44:31,220 --> 01:44:57,079
+Burada bir vakaya ait dört çeşit görüntü var. T1, T1C, T2 ve Flayer diye. Bu T1 ağırlıklı demekmiş. Bu T1 ağırlıklı ve kontrastlı görüntü. Yine T2 ağırlıklı bir de Flayer. Bunlar aslında tıbbi açıdan hepsi farklı dokuları ve yerleri görmeyi.
+
+568
+01:44:57,619 --> 01:45:05,819
+Bu yüzden her vaka için aslında dört tane görüntü oluyor.
+
+569
+01:45:08,659 --> 01:45:25,039
+Yönteme gelirsem, pre-processing adımında 80'den 149'a kadar olan dilimler seçilmiştir diyor. Ben bunu şey gibi anladım. Görüntüdeki sadece anlamlı yeri almaya çalışmışlar gibi anladım. Bilmiyorum doğru mu anladım yayından.
+
+570
+01:45:26,003 --> 01:45:37,323
+Daha sonrasında bir yeniden boyutlandırma yapılmış 64-64 ve 128-128 olarak. Toplamda da 15.400 tane görüntü olmuş ellerinde.
+
+571
+01:45:39,572 --> 01:46:06,912
+Görüntü retim kısmına gelirsem iki tür gen kullanılıyor ve altı türde görüntü oluşturuyorlar. Zaten bu dördünden bahsetmiştim. Farklı farklı dokuları görmeye yarıyorlar. Bir de bunların birleşimi olan konket görüntü var. Bu konketi de iki farklı boyutta oluşturmuşlarken boyut açısından da modelin nasıl bir performans gösterdiğini anlamaya çalışmışlar böylece.
+
+572
+01:46:07,572 --> 01:46:17,572
+Burada DSG'nin uygulama detaylarına bakarsak, 4.4 boyutunda filtreler kullanılmış.
+
+573
+01:46:17,572 --> 01:46:22,792
+Batch Size 64 olarak belirlenmiş. Adam Optimizer kullanılmış.
+
+574
+01:46:23,296 --> 01:46:41,636
+Learning Rate de 2x10 üzeri 4 olarak belirlenmiş. Burada da üretilen sahte görüntüler var örnek. Bu 4 tanesi zaten bahsettiğim görüntü türleri. Bu ikisi de farklı boyutta olan konkret görüntüler.
+
+575
+01:46:43,988 --> 01:47:01,608
+Sonrasında Wegen'le tekrar görüntü üretmişler altı türde. Burada Batsize yine 64. Learning Rate farklı. 5x10 üzeri eksi 5 olarak belirlenmiş. Optimizer'ı da farklı bir optimizer kullanmışlar. RootMean Super Propagation Optimizer kullanılmış.
+
+576
+01:47:02,467 --> 01:47:11,047
+Buradaki sonuçlara bakıldığında Wegen'in DCG'e göre çok daha gerçekçi görüntüler ürettiği sonucuna varılmış.
+
+577
+01:47:14,195 --> 01:47:39,515
+Çalışma sonrasında görsel turing testi yapılıyor. Doktorlara 50 gerçek, 50 santetik MR görüntüsü rastgele veriliyor ve onlardan bir tahmin yapılması isteniyor. Bu tahminler de bu tabloda verilmiş sonuçları. Bu tabloda aslında şu kısım çok önemli. Çünkü bu kısım aslında sahte olup ama doktorlar tarafından gerçek sanılan görüntü sayısını içeriyor.
+
+578
+01:47:42,163 --> 01:47:52,703
+En iyi performans aslında vegan 128'e 128 ve vegan 64'e 64 yani 128'e 128 boyutundaki konkret görüntü.
+
+579
+01:47:52,703 --> 01:47:58,943
+64'e 64 boyutundaki konkret görüntüde en iyi performans sağlanmış.
+
+580
+01:47:59,123 --> 01:48:03,863
+15 sahte görüntünün 15'i de gerçek zannedilmiş doktorlar tarafından.
+
+581
+01:48:06,292 --> 01:48:23,992
+Sonuç olarak çalışmada genlerin özellikle Bilgisayar Mühendisliği, uzman bir doktorun bile gerçeğinden doğru bir şekilde ayırt edemediği gerçekçi beyin MR görüntüleri üretebildiğini, bunun da veri arttırmada ve doktor eğitimi gibi klinik uygulamalara katkı sağlayabileceğini gösterilmiş.
+
+582
+01:48:28,311 --> 01:48:30,471
+Teşekkürler sunumum bu kadardı.
+
+583
+01:48:36,180 --> 01:48:39,960
+Bir de bir kod örneğim var. Onu da göstereyim.
+
+584
+01:48:47,220 --> 01:48:55,539
+Bu farklı bir veri seti üzerinde yapılmış bir örnek. Minist Fashion veri seti üzerinde yapılmış.
+
+585
+01:48:58,440 --> 01:49:02,960
+Ben bunu sunumdan hemen önce çalıştırdım biraz epoklar uzun sürdüğü için.
+
+586
+01:49:05,100 --> 01:49:09,940
+Şurada veri setini yüklüyor zaten. Burada veri setindeki örnekleri görebiliriz.
+
+587
+01:49:11,604 --> 01:49:27,644
+Batsize 32 olarak setlenmiş bu örnekte. Ve DC Gen kullanılıyor burada. Şurada generator'ı oluşturuyor. Burada ton fonksiyonu bahsettiğim gibi son adımda.
+
+588
+01:49:27,644 --> 01:49:34,144
+Biraz lütfen artık kontrolü yükseldiğim için, yapılmıştırdım için, yapılmıştırdım için.
+
+589
+01:49:40,851 --> 01:49:42,712
+İyi mi hocam?
+
+590
+01:49:42,792 --> 01:49:44,391
+Generator Network'ı oluşturdu.
+
+591
+01:49:45,032 --> 01:49:57,092
+Bu Generator Network. Burada bir noise gibi bir şey üretmiş. Yani bunu tam anlayamadım ama şu adımda diskriminatör modeli oluşturuyor.
+
+592
+01:49:57,092 --> 01:50:07,472
+Yine sunumda da bahsettiğim gibi Rellio yerine Leaky Rellio kullanılıyor burada. Son adımda Flatten yapılmış. Tan yerine Sigmoid kullanılmış.
+
+593
+01:50:10,100 --> 01:50:14,100
+Yukarıdaki çığlık bölümünü ne öğretmiş olalım?
+
+594
+01:50:20,819 --> 01:50:27,899
+Anlamadığım dediğin gürültü sınavı. Şu gürültü üretmiş hocam burada ama tam.
+
+595
+01:50:30,479 --> 01:50:44,799
+Jeneratörü kullanmış mı burada? Kullanıyor hocam. Evet. Yani şöyle bu jeneratöre yanılmıyorsam gürültü verilmiyor.
+
+596
+01:50:45,619 --> 01:51:06,619
+Yani yine bu input output aracı. Dolayısıyla iyi kötü bir input gerekiyor. Burada da bir input veriyor. Bir örnek olarak vermiştir. Şimdi input içerisinde birçok böyle noise verilir.
+
+597
+01:51:06,619 --> 01:51:12,235
+Zaman içerisinde bu noise'lerden resim oluşturmaya öğrenilir.
+
+598
+01:51:13,011 --> 01:51:23,192
+Başlangıç noktası olarak alıyor o zaman. Evet, yani jeneratörün başlangıç noktası olarak düşünemelisin.
+
+599
+01:51:23,192 --> 01:51:31,192
+Burada da diskretive image'si diskretive image varmış. Generative image, jeneratör tarafından üretilmiştir.
+
+600
+01:51:38,100 --> 01:51:44,039
+1049 diye bir şey çıktı. Yani diskriminator bunu sınıfladı. Öyle mi oldu?
+
+601
+01:51:45,600 --> 01:51:49,640
+Evet hocam. Bir kadımda şöyle bir değer üretti aslında.
+
+602
+01:51:49,640 --> 01:51:52,680
+Ne yapacağını bir gösteriyor yani.
+
+603
+01:51:53,420 --> 01:51:57,700
+Evet. Burada bir train fonksiyonu tanımlanmış.
+
+604
+01:51:59,460 --> 01:52:01,980
+Şu şeye gelmek istiyorum hocam yavaşça.
+
+605
+01:52:04,180 --> 01:52:09,320
+Eğitim yaptığı kısmı. Aslında bunu tekrar başlatabilirim ama uzun sürüyor biraz.
+
+606
+01:52:10,199 --> 01:52:13,820
+Yukarıya çıksana, göndere gelsene. İçişe iki döneli abi.
+
+607
+01:52:16,159 --> 01:52:16,659
+Üstel.
+
+608
+01:52:19,340 --> 01:52:22,000
+Üstel mi geleyim hocam? Çok sesiniz gelmedi.
+
+609
+01:52:22,000 --> 01:52:26,260
+Burada rehin gilsin gandermiş.
+
+610
+01:52:28,979 --> 01:52:32,179
+GNDC RAM de kabili fonksiyonmuş.
+
+611
+01:52:34,479 --> 01:52:38,679
+Şimdi jeneratör ve disk miniatörü RAM.layers'ten aldı.
+
+612
+01:52:39,779 --> 01:52:50,179
+For Epoch in TQDN. TQDN ekrana şey, yazdırmak için, konsola bir şeyler yazdırmak için kullanılan bir tane.
+
+613
+01:52:52,079 --> 01:52:53,779
+Her bir Epoch için
+
+614
+01:52:56,307 --> 01:53:14,827
+Her bir batch için diyelim. Ne yaptı? Bir noise üretti. Jeneratörü verdi. Jeneratör tabii ne yaptı? İngeleri üretti. Generated images altında birden fazla inge üretiyordur o.
+
+615
+01:53:14,827 --> 01:53:22,347
+Yani batch için henüz XBatch'ı daha kullanmadı.
+
+616
+01:53:23,988 --> 01:53:31,188
+Ama batch size'ı veriyor. Yani X5'e uygun.
+
+617
+01:53:31,188 --> 01:53:37,988
+Noise'ler üretti. Noise'leri verdi generatori. Generative images.
+
+618
+01:53:37,988 --> 01:53:45,988
+Generative images'ı X5 ile koncept ettik.
+
+619
+01:53:45,988 --> 01:53:48,988
+X3 yani...
+
+620
+01:53:49,395 --> 01:53:56,996
+Yani karışık ve gerçek görüntülerden oluşan bir karışım algı etti değil mi?
+
+621
+01:53:58,996 --> 01:53:59,996
+Evet hocam.
+
+622
+01:53:59,996 --> 01:54:08,996
+Y1 eşitlikte constant, batch size, batch size. Neydi bu?
+
+623
+01:54:19,796 --> 01:54:21,996
+Sıfır mı? Sıfır mı çarpıyorum?
+
+624
+01:54:29,140 --> 01:54:35,140
+Sanki bir sabit bir matriz mi oluşturuyor mu? Oluşturuyor burada.
+
+625
+01:54:38,140 --> 01:54:40,140
+Neyse bakarız bana.
+
+626
+01:54:40,140 --> 01:54:46,140
+Discriminator Trenum Edilikleri yaptı. Discriminator Trenum Edilikleri yaptı.
+
+627
+01:54:46,140 --> 01:54:52,140
+Discriminator'ı X-Pay ve X-Rail'da, Y-E-Dil'de eğitiyor.
+
+628
+01:54:53,043 --> 01:55:03,063
+Hani fakelerin fake olduğunu, ha bak, sıfırlar ve birler. Yani batch size tane fake var.
+
+629
+01:55:03,063 --> 01:55:13,163
+Batch size tane gerçek, x5'ten gelen gerçek imde var. Diskriminatörü şimdi veri satır oluşturuyor yani. Küçük bir veri satır.
+
+630
+01:55:17,203 --> 01:55:23,524
+Tamam. Noise eşittir. Tf random normal. Yeni bir noise oluşturdu.
+
+631
+01:55:26,484 --> 01:55:32,324
+Y2 tf constant. Bunların hepsine 1 dedi.
+
+632
+01:55:34,324 --> 01:55:38,404
+Ganttrain on bytes diye bir tane çağırdı.
+
+633
+01:55:39,923 --> 01:55:47,243
+Ne var artık? Şu Gan.Train on Batch'ı bulabilir misin? O fonksiyonları bir tanımda.
+
+634
+01:55:48,684 --> 01:55:51,243
+Gan direktten sorup olalım mı var?
+
+635
+01:55:55,828 --> 01:55:57,328
+Bir dakika hocam.
+
+636
+01:55:57,547 --> 01:56:03,228
+Yoksa ben sözcükleri de olmuyor.
+
+637
+01:56:20,564 --> 01:56:22,524
+Senan İntensör Flow'da var.
+
+638
+01:56:24,864 --> 01:56:25,664
+Yo.
+
+639
+01:56:30,420 --> 01:56:31,920
+O GAN'ı nerede tanımlamışız?
+
+640
+01:56:31,920 --> 01:56:39,159
+Şurada ikisini aslında birleştiriyoruz. E-generator ve diskriminatörü. Şurada tanımlıyor.
+
+641
+01:56:39,439 --> 01:56:45,299
+Özel bir şey de değil. Yani iki tane şeyi sekolamşı olarak birleştirmiş.
+
+642
+01:56:45,479 --> 01:56:48,119
+Aynen. Evet hocam.
+
+643
+01:56:48,119 --> 01:56:50,659
+Bir özelliği yok.
+
+644
+01:56:54,359 --> 01:56:57,119
+Raymond Bucks'la eğitim tekrardan.
+
+645
+01:56:57,971 --> 01:56:59,811
+Bunu daha önce eğitmemiş miydi?
+
+646
+01:57:01,311 --> 01:57:02,111
+Efendim hocam?
+
+647
+01:57:03,351 --> 01:57:07,931
+Önce bir diskriminatör eğitiyor, sonra da ganın hepsini bir eğitiyor.
+
+648
+01:57:09,391 --> 01:57:10,951
+Bir, burada iki eğitim yapıyorum.
+
+649
+01:57:11,511 --> 01:57:15,691
+Evet hocam, çünkü ayrı ayrı fonksiyonları da vardı burada, training.
+
+650
+01:57:18,751 --> 01:57:25,231
+Bunu diskriminatör eğitiyor, sonra da hırıksızın birleşimini birleşiyor. Peki.
+
+651
+01:57:26,036 --> 01:57:27,115
+Tamam devam et.
+
+652
+01:57:29,256 --> 01:57:47,756
+Burada resimleri kaydediyor. Şurada o yukarıda baktığımız fonksiyonu çağırıyor ve 10 epok olarak çalıştırdım ben. Örnekte de öyleydi. Sonuçta 10 epok sonucunda bu resimleri elde edebildi.
+
+653
+01:57:48,659 --> 01:57:53,759
+12 dakika sürmüş çalışması. İsterseniz hocam şöyle tekrar çalıştırabilirim ama.
+
+654
+01:57:59,380 --> 01:58:03,380
+Bu son adımda üretilen...
+
+655
+01:58:03,380 --> 01:58:06,680
+Onepok'ta bile bir resim görüntüleri yapıyor değil mi?
+
+656
+01:58:06,859 --> 01:58:09,539
+Onepok'ta üretilen resimler aslında bunlar.
+
+657
+01:58:12,420 --> 01:58:16,479
+Tamam. Peki teşekkürler [öğrenci].
+
+658
+01:58:17,479 --> 01:58:19,279
+Rica ederim hocam. Ben teşekkür ederim.
+
+659
+01:58:21,876 --> 01:58:27,876
+Direkt onu göstermedim ama bize biraz ilgili bir kodla göstermiş oldum. Bunu kabileyeceğim.
+
+660
+01:58:29,876 --> 01:58:35,876
+Şimdi notlamana geçelim. Asa, Kırkan, Konus varmış.
+
+661
+01:58:36,876 --> 01:58:38,876
+O bir daha kabul etsin.
+
+662
+01:58:40,876 --> 01:58:42,876
+Bununla unuttum biraz ama nasıl bu?
+
+663
+01:58:50,260 --> 01:58:54,720
+Tamam, teşekkür ediyorum.
+
+664
+01:58:57,220 --> 01:59:05,760
+Şimdi bir on dakika ara daha verelim. Sonra geri kalan iki arkadaşı, iki kişiyi daha dinleriz.
+
+665
+01:59:10,676 --> 01:59:12,115
+10 dakika ara veriyorum arkadaşlar.
+
+666
+01:59:12,776 --> 01:59:14,235
+Hocam iki kişiyi seçtiniz mi?
+
+667
+01:59:15,416 --> 01:59:15,776
+Neyi?
+
+668
+01:59:16,516 --> 01:59:18,956
+Son iki arkadaşı. Dinleyeceğim demiştiniz ya.
+
+669
+01:59:18,956 --> 01:59:21,276
+Bana mesaj yapmıştın sen değil mi?
+
+670
+01:59:21,976 --> 01:59:22,876
+Yok ben atmıştım.
+
+671
+01:59:24,336 --> 01:59:25,436
+Sesim geliyor mu?
+
+672
+01:59:25,936 --> 01:59:28,636
+Şimdi bana mesajı [öğrenci]'nı değilim.
+
+673
+01:59:29,336 --> 01:59:30,436
+Sesim geliyor mu?
+
+674
+01:59:30,816 --> 01:59:35,576
+Gelin [öğrenci]'nı sunsun. Sonrasında sunmak isteyen var mı?
+
+675
+01:59:36,216 --> 01:59:37,356
+Ben var mı hocam? Ben sunarım.
+
+676
+01:59:37,811 --> 01:59:41,211
+Tamam, gelince bu iki arkadaşımızı dinleyecek.
+
+677
+01:59:41,211 --> 01:59:42,531
+Ben de karar veriyorum.
+
+678
+02:10:35,188 --> 02:10:40,947
+Evet arkadaşlar, başlayabiliriz. [öğrenci], sen başlayacaktın.
+
+679
+02:10:40,947 --> 02:10:44,648
+Geliyor mu? Sesim geliyor mu?
+
+680
+02:10:45,927 --> 02:10:46,347
+Geliyor.
+
+681
+02:10:47,167 --> 02:10:48,887
+Tamam, ekranı paylaşalım.
+
+682
+02:10:56,500 --> 02:10:57,579
+Ekran gözüküyor.
+
+683
+02:10:58,620 --> 02:10:58,960
+Evet.
+
+684
+02:11:02,771 --> 02:11:08,851
+Merhaba arkadaşlar. Pointrend Render olarak görüntü segmentasyonunu anlatacağım.
+
+685
+02:11:10,891 --> 02:11:18,851
+Sunum içeriği bu şekilde. Giriş, ilgili çalışma metod, deneyler var ve kodlu dosyadan da sunumdan da gösterebilirim.
+
+686
+02:11:20,511 --> 02:11:28,351
+Render, bilgisayar yardımıyla çizilen ve geliştirilen bir modelin programlar aracılığıyla dışarıya aktarılması.
+
+687
+02:11:30,131 --> 02:11:45,971
+İmaj segmentasyonu ise objelerin sınıflarının bounding box'lardan farklı olarak sınırların maskelerle belirtilmesidir. Bunlar semantik ve instance segmentasyonu olarak ikiye ayrılır.
+
+688
+02:11:58,068 --> 02:12:20,048
+Adlandırmaz. Örneğin ilk resimde sadece person, insan olarak maskelemesini çıkarmış. Ama instance'da tek tek person 1, person 2 şekilde aynı nesnenin farklı, aynı nesneleri de tek tek sayıyor.
+
+689
+02:12:25,876 --> 02:12:47,716
+Tabanını kullanıyor. Bu da Festar CNN mimarisini ve Region RPN, bölge önerim ağını kullanıyor. Bölge önerim ağı bu şekilde. Ve Festar CNN çıktıları da bu şekilde elde ediliyor. ResNet bir altyapısı var.
+
+690
+02:12:51,475 --> 02:12:54,695
+Bölge önerileri de 5 kısımda oluşuyor.
+
+691
+02:12:55,175 --> 02:13:07,515
+RPM kafası, Anchor Generation, Grand Threat Preparation, Loss hesaplama ve öneri seçimi olarak 5 kısım ayrılıyor.
+
+692
+02:13:07,515 --> 02:13:13,795
+Point Rent nesneleri ve sahnelerin yüksek kaliteli görüntü segmentasyonu için kullanılan bir yöntem bu.
+
+693
+02:13:17,363 --> 02:13:24,443
+Alternatif olarak üretilmiş ve daha yüksek başarılı birçok noktada ondan.
+
+694
+02:13:24,963 --> 02:13:32,403
+[öğrenci], incelediğin paper ne yapıyor? Bize bir iki cümleyi de özetler misin?
+
+695
+02:13:33,303 --> 02:13:39,623
+Segmentasyon yapıyor, resimleri. İnstasyon ve tematik segment.
+
+696
+02:13:39,623 --> 02:13:40,723
+Render.
+
+697
+02:13:44,564 --> 02:13:52,344
+Görüntüyü aynı zamanda işleyerek bir segmentini çıkartıyor. Onu daha sonra değineceğim hocam.
+
+698
+02:13:54,024 --> 02:14:07,824
+Piksel etiketleme görevlerinde karşılayışılan aşırı ve yetersiz örnekleme zorluklarına karşı bir çözüm üretmişler. Sinir A modülü kullanıyor ve yine limitli bir alt bölüm algoritmasına dayanıyor.
+
+699
+02:14:09,716 --> 02:14:33,156
+Yapısı bu şekilde. İlk önce bir kaba 28x28 bir maskeleme çıkartıyor. Oradan alt bölümleri ayırarak 56-56, 112 ve 224-224'e doğru pixel grid değerlerini, boyutlarını düşürerek daha iyi bir maskeleme segmentasyon sağlıyor.
+
+700
+02:14:33,747 --> 02:14:54,947
+Maskar CNN'de mesela burada eldeki tam parmaklar gözükmüyor, segment olmuyor. Tam ayrıntıları ile kenarlarına doğru segment olmuyor ama Point Rent'de parmakları da tam kenarlarından bir segment sağlıyor.
+
+701
+02:14:57,047 --> 02:14:59,884
+Maskar CNN'in varsayılan...
+
+702
+02:15:00,020 --> 02:15:05,220
+Maske kafasını değiştirmek için kullanıldığında ayrıntılı sonuçlar bu şekilde oluyor.
+
+703
+02:15:07,540 --> 02:15:11,620
+Burada da birkaç örneklerde kullanılmış.
+
+704
+02:15:12,180 --> 02:15:16,180
+Soldakiler hep Mascar CNN, sağdakiler Point Red.
+
+705
+02:15:16,920 --> 02:15:20,460
+Parmakları net ayrıntılı bir şekilde maske ediyor.
+
+706
+02:15:21,160 --> 02:15:22,000
+Tam oturtarak.
+
+707
+02:15:23,100 --> 02:15:25,160
+FPN ve ResNet 50 kullanılıyor.
+
+708
+02:15:27,315 --> 02:15:49,655
+Ve bu daha ince ayrıntılardan mask ediyor. Bunda çeşitli yapılar var. Non-Uniform Grid Representation. Bu seçimlerle farklı bir kriterler izliyor. Düzgün olmayan grid gösterimleri iki boyutlu görüntü almanız için bir baskın paradigma.
+
+709
+02:15:50,771 --> 02:16:01,271
+CNN tabanlı yaklaşıkların çoğu 64x64x64 gridlerin ötesine geçmez. Bunda daha üst sınıra çıkabiliyor.
+
+710
+02:16:02,711 --> 02:16:12,931
+Marin ve arkadaşları standart bir anlamsal görüntüleme ağıyla işlenmeden önce giriş görüntüsünün tek rüzü olmayan alt örneklemesine dayanan semantik görüntüleme ağ önermiş.
+
+711
+02:16:15,891 --> 02:16:23,192
+Çıktığı da tek tip olmayan örneklemeye odaklanıyor. İki yaklaşımı birleştirmek mümkün olabiliyor bununla.
+
+712
+02:16:23,192 --> 02:16:39,731
+İstans segmentasyonu tek tek nesneleri ayrı olarak segment edebiliyor. Küçük nesneler için yeterli ancak büyük nesneler için aşırı düzgünleştiren istenmeyen çıktılar üretebiliyor.
+
+713
+02:16:40,452 --> 02:16:41,891
+Semantik segmentasyon bu.
+
+714
+02:16:42,304 --> 02:16:53,443
+Komple nesneyi ve aynı nesnelerin sınırlarıyla birlikte alıyor. 5-6 tane person varsa hepsini person olarak bu şekilde alıyor.
+
+715
+02:16:55,244 --> 02:17:02,504
+Instance segmentasyon uygulanan Pointrend bu şekilde CNN altyapısını kullanıyor. Bir kaba tahmin ilk önce bulunuyor.
+
+716
+02:17:09,200 --> 02:17:16,200
+Ayrıntılarını daha sonra tahminlemede kullanıyor. Nokta özelliklerini kullanarak.
+
+717
+02:17:18,200 --> 02:17:30,200
+Instance segmentasyonu için standart bir ağ bir girgidi görüntüsünü alır ve hafif bir segmentasyon kafası kullanarak er nesne için bir kaba maske tahmin üretiyor. Aynı şekilde.
+
+718
+02:17:31,796 --> 02:17:43,416
+Nokta seçimi var eğitim ve çıkarımda. Yöntemin özünde segmentasyon etiketlerinin tahmin edileceği görüntü düzleminde noktaları uyarlanabilir bir şekilde seçme fikri yatmaktadır.
+
+719
+02:17:44,416 --> 02:17:50,916
+Çıkarımda seçim stratejisi bilgisayar grafiklerinde klasik uyarlamalı alt bölme tekniğinden.
+
+720
+02:17:51,572 --> 02:18:18,231
+Teknik, yalnızca değerin komşularından önemli ölçüde farklı olma olasılığını yüksek olduğu konumlardan hesaplayarak yüksek çözünürlüklü görüntülerde kullanılır. Önceden hesaplanmış çıktı değerlerin entarpolasyonuyla elde edilir. Her bölge için çıktı maskesini yinelemeli olarak kabadan ineceği bir şekilde işlemektedir. En kaba seviye tahmini normal bir grid üzerinde, noktalar üzerinde yapılır. Her yinelemede.
+
+721
+02:18:18,708 --> 02:18:27,468
+Önceden tahmin edilen segmentasyonu eklemeler yaparak grid'i daha böyle ince detayına dönüştürerek işlem yapar.
+
+722
+02:18:27,468 --> 02:18:43,788
+Genel işlem basamağı bu şekilde. 4x4 grid'te örneğin bu şekilde bir maskenime yaparken 8x8 grid'te daha böyle ince ayrıntıya ve kenarları daha oturtarak render işleminde.
+
+723
+02:18:45,396 --> 02:18:48,476
+Daha başarılı oluyor bu özellikle.
+
+724
+02:18:49,236 --> 02:18:56,156
+8x8'de de şu şekilde bir çıktısı oluyor. 4x4'de şuraları tam yapamamışken
+
+725
+02:18:56,916 --> 02:19:04,596
+8x8'de şu ince ayrıntıları şuraya da boş bırakabiliyor. Örneğin
+
+726
+02:19:05,876 --> 02:19:09,195
+grid oluşturarak bu işlemi yapmaya çalışsak,
+
+727
+02:19:09,716 --> 02:19:13,388
+2x2 bir grid alsak bu üçgeni
+
+728
+02:19:13,620 --> 02:19:33,620
+3 kareyi maskeleyerek ilk önce yaparız. Ama 4x4 daha sonraki basamak, alt basamakta buraları da maskeleriz ve şuraları kurtarmış oluruz maskelemeden. Daha ince bir detaya girmiş oluruz. 8x8'de daha da böyle biraz...
+
+729
+02:19:34,708 --> 02:19:41,788
+Üçgenle benzemeye başlar. 16x16'da hatta tam bir üçgen şeklini alır.
+
+730
+02:19:42,628 --> 02:19:45,708
+Kenarlar daha bir oturmuştur bu şekilde point rent.
+
+731
+02:19:46,488 --> 02:19:52,688
+Ama Mascar-CNN bu ilk 2x2 gibi bir grid sonucu verebilir.
+
+732
+02:19:53,468 --> 02:19:59,688
+Aynı temel nokta kava tahmini için farklı stratejiler kullanılarak örneklenen N14 kare...
+
+733
+02:20:00,000 --> 02:20:25,420
+Yüksek performans elde etmek için sistem eğitim sırasında daha verimli hale getiren hafif taraflı bir örnekleme bölge başına yalnızca az sayıda nokta örnekleme. Bunda farklı seçim stratejileri var. Düzenli gridleme her noktaya koyarak, her noktayı maskeleyerek bir grid oluşturabiliyor. Uniform da rastgele bir dağılım izliyor.
+
+734
+02:20:26,131 --> 02:20:48,051
+Ortalama ağırlıkta daha bir kenarlara oturtarak bir şu K3 ve Beta 75 bir değerler veriyor. Bu en başarımlı olan bu C modeli, C seçim krediteri. D'de de ağırlıklı bir ağırlıklandırma kullanıyor ama bunda daha bir başarım biraz düşüyor.
+
+735
+02:20:53,236 --> 02:20:59,916
+Eğitim sırasında Point Rent'in nokta kafasını eğitmek için nokta özellikler oluşturacağı noktaları da seçmesi gerekir.
+
+736
+02:21:00,316 --> 02:21:05,216
+Prensipte nokta seçim stratejisi çıkarımda kullanılan alt bölme stratejisine benzer olabilir.
+
+737
+02:21:05,216 --> 02:21:18,636
+Point Rent seçilen her nokta bazında özellik gösterimi verildiğinde basit bir çok katmanlı algıcıyı kullanılarak nokta bazıntı sebegümetasyon tahminleri yapar.
+
+738
+02:21:19,188 --> 02:21:26,188
+Bu MLP bir grafik evrişimine veya PointNet'e benzer şekilde tüm noktalarda ağırlıkları paylaşır.
+
+739
+02:21:26,188 --> 02:21:32,188
+Segmentasyon etiketi öngördüğünden standart göreve özel segmentasyon kayıpları ile eğitilebilir.
+
+740
+02:21:34,188 --> 02:21:43,188
+PointWise Representation, bu da ikinci bir yöntem var. İki özellik tipini kullanıyor bu.
+
+741
+02:21:45,203 --> 02:21:59,963
+Quartz Prediction Features, İnce Tahmin ve Kava Tahmini olarak, İnce Tahmin'de Point Rent'in İnce Segmentasyonu ayrıntılarını oluşturmasına izin vermek için CNN özellik haritalarından bir özellik vektörü çıkarıyor.
+
+742
+02:21:59,963 --> 02:22:08,963
+İki boyutlu koordinat olduğundan standart uygulamayı izleyerek özellik haritalarına çift doğrusal enterporasyon gerçekleştiriyor.
+
+743
+02:22:09,523 --> 02:22:18,743
+Tek bir özellik haritasından da çıkarılabilir. Çoklu özellik haritalarından ve hiperkolüm yöntemi izlenerek birleştirilebilir bu.
+
+744
+02:22:19,263 --> 02:22:22,843
+Course Prediction Features, kaba tahmini özellikleri bu.
+
+745
+02:22:23,379 --> 02:22:49,680
+Ayrıntıların çözülmesini sağlıyor. Ancak iki açı canlı da eksiktir. İlk olarak bölgeye özgü bilgiler içermezler ve bu nedenle iki örneğin sınırlayıcı kutuları tarafından örtüşen aynı nokta aynı ince taneli özelliklere sahip olacaktır. Ancak nokta yalnızca bir örneğin ön planında olabilir. Bu nedenle farklı bölgelerin aynı nokta için farklı etiketleri öngörebildiği instant segmentasyon görevi için özgü ek bilgileri ihtiyaç vardır.
+
+746
+02:22:50,579 --> 02:23:02,119
+Ayrıca DeepLav B3 ve Semantic FPM de Semantic Segmentasyonda kullanılıyor.
+
+747
+02:23:04,239 --> 02:23:11,079
+Bu düşüncelere dayalı olarak ikinci özellik tip A'dan bir kaba segmentasyon tahmini çıkarılıyor.
+
+748
+02:23:18,195 --> 02:23:33,956
+MLP kullanılarak nokta bazında segmentasyon tahminleri yapıyor. Ana sonuçlar bu şekilde maskeleme için Average Precision metriyini kullanmış ve bu bir sonuçlarını paylaşmış.
+
+749
+02:23:33,956 --> 02:23:41,396
+Dört konvolüsyon, burada Meskarsiyene'nin yapısı bu sonuçları.
+
+750
+02:23:41,652 --> 02:23:57,912
+Point Rent ise burada çıktı çözünürlüğün 28 olduğunda bile, 224 çarpı 224 olduğunda bile daha düşük bir average precision sağlıyor.
+
+751
+02:23:57,912 --> 02:24:08,252
+Daha yüksek bir average precision sağlıyor. Yani yüksek çözünürlükte bile daha kesin bir sonuç veriyor.
+
+752
+02:24:11,283 --> 02:24:20,243
+28 çarpı 28, point rent örnekleri bu şekilde. 224 çarpı 224'te çıktı çözünürlüğü bu şekilde.
+
+753
+02:24:24,084 --> 02:24:31,544
+Bu çeşitli metrikler kullanmış. Bunları başarımlarını kıyaslamak için. Flop diye bir metrik var.
+
+754
+02:24:34,404 --> 02:24:44,924
+Kesişim üzerine birleşim işlem sayısı olarak bunu açıklamış. Bunun az olması daha iyi bir başarım olarak gösteriliyor.
+
+755
+02:24:44,924 --> 02:24:50,144
+4 çarpı konvenisyonunda Meskart CNN'de 28 çarpı 28'de 0.5p'ye iken,
+
+756
+02:24:50,644 --> 02:25:08,123
+Point Rant'te bu çok yüksek çözünürlükte bile 0.9 neredeyse benzer yakın bir şekilde oluyor. Ve aktivasyon da aynı şekilde Point Rant. Bu şekilde Mascar CNN'e göre düşürüyor. Daha iyi bir başarım sağlıyor.
+
+757
+02:25:09,843 --> 02:25:24,523
+Daha yüksek çıktı çözünürlüğü AP'yi iyileştirir. Her alt bölüm adımında örneklenen noktaların sayısıyla iyileştirmeler hızla doygun hale gelse de karmaşık nesneler için nitel sonuçlar işlenmeye devam edilebilir.
+
+758
+02:25:24,523 --> 02:25:36,283
+Bu gene bir seti üzerinde metrikleri göstermiş. City Capes, şehir manzaraları ve COCO, hayvan segmentasyonu sınıflandırılmasında kullanılan.
+
+759
+02:25:37,492 --> 02:25:49,452
+Bir setleri. Bunda da yine başarımları daha iyi oluyor. Mascard CNN'e göre. Instant segmentasyonunda.
+
+760
+02:25:52,948 --> 02:26:01,148
+Kenar yumuşatmada kullanılıyor. Kesin nesne tanımlanması, nesneni kapladığı giriş bölümün çözünürlüğü eşlenmesi ve bu çözünürlüğün...
+
+761
+02:26:05,043 --> 02:26:07,984
+Çıktı maskesi çözünürlüğünü açması gerekiyor.
+
+762
+02:26:10,243 --> 02:26:15,723
+Kutu başında 14 kare puan ile eğitim süresi noktası seçim stratejileri bu şekilde göstereyim.
+
+763
+02:26:15,723 --> 02:26:23,243
+Bu 14 kare daha fazla kutuda alınabiliyor. 28 kare, 56 kare veya daha az da olabilir 7 kare.
+
+764
+02:26:24,211 --> 02:26:33,631
+Nokta değiştirilebiliyor buna. Büyük ölçüde ön yargılı örnekleme kapsamın önemini gösteren tek biçimli veya düzenli grid örneklenmesinde bile daha kötü performans gösteriyor.
+
+765
+02:26:35,291 --> 02:26:47,491
+Bu üçüncü tip C, ortalama ağırlıklandırma daha başarılı sonuç elde etmiş Coco ve CityCAPES veri setinde.
+
+766
+02:26:48,631 --> 02:26:50,631
+Point Runt modelinde.
+
+767
+02:26:53,043 --> 02:26:58,043
+Bu şekilde yine Mascar CNN ile kıyaslamış 4x konversiyon.
+
+768
+02:26:59,543 --> 02:27:05,043
+R50 ve FPN altyapısını kullanarak eğitmiş.
+
+769
+02:27:06,043 --> 02:27:15,043
+R101 ve FPN, X101 ve FPN hepsinde genelde daha başarımlı olmuş.
+
+770
+02:27:15,043 --> 02:27:19,043
+Daha büyük modeller ve daha uzun çalışma zamanında eğitmiş burada.
+
+771
+02:27:20,020 --> 02:27:27,880
+Eğitim sırasında nokta seçim stratejisini değiştirerek ve daha büyük, daha uzun eğitimli modeller kullanarak ablasyon çalışması yapılabilir.
+
+772
+02:27:29,159 --> 02:27:34,200
+Semantik Instance ve Semantik Segmentasyon için CityCAPES örnek sonuçları bu şekilde.
+
+773
+02:27:34,200 --> 02:27:41,899
+Mesk'ar CNN'de böyle. Mesk'ar CNN'e point trend eklendiğinde daha...
+
+774
+02:27:44,468 --> 02:27:48,048
+İyi bir başarım elde ediliyor ve DeepLap V3
+
+775
+02:27:48,828 --> 02:27:50,108
+modeline de
+
+776
+02:27:50,348 --> 02:27:54,708
+PointRand eklendiğinde daha iyi bir başarım elde ediliyor.
+
+777
+02:27:55,988 --> 02:27:58,288
+Burada DeepLap V3'te
+
+778
+02:28:00,348 --> 02:28:03,668
+Tematrik segmentasyon, temel DeepLap V3'ten
+
+779
+02:28:04,688 --> 02:28:09,308
+Normalde PointRand'ten daha iyi bir başarım elde ediyor.
+
+780
+02:28:11,572 --> 02:28:24,891
+Diplep V3. Ama bunun yüksek hesaplama ve bellek maliyetleri yüzünden Pointrend daha şu an kullanımda olan Pointrend.
+
+781
+02:28:27,831 --> 02:28:37,612
+Tematik segmentasyon için Pointrend çıkarımı bu şekilde. İlk önce daha düşük gridlerden başlıyor. Daha küçük boyutlu gridlerden.
+
+782
+02:28:38,131 --> 02:28:50,771
+Daha büyük boyutlu gritlerden. Sonra daha küçük boyutlu gritlere indikçe kenarları daha iyi bir şekilde oturtuyor ve oluşturuyor modeli.
+
+783
+02:28:54,868 --> 02:29:01,028
+Sematic FPN'de kıyaslamış çıktılarını ve Point Trend kullanıldığında.
+
+784
+02:29:02,208 --> 02:29:09,628
+Sematic FPN segmentasyon, temel sematic FPN'den daha iyi performans gösteriyor.
+
+785
+02:29:10,128 --> 02:29:14,567
+Kodu bu şekilde ama şeyden de gösterebilir bunu.
+
+786
+02:29:14,567 --> 02:29:15,567
+Kod dosyasını.
+
+787
+02:29:20,115 --> 02:29:23,795
+İlk önce detektronu yüklemelerini yaptım.
+
+788
+02:29:25,795 --> 02:29:27,896
+Gerekliliklerini ve kütüphanelerini.
+
+789
+02:29:33,587 --> 02:30:00,000
+Sonra ön ağırlıklı modeli çalıştırdım. Coco Veri Setinden bir resim girdi aldım. Bu uçak genelde uçak kullanılmış modelde. Bunun kuyruğunu daha bir göstermek için. Daha sonra bu görüntü üzerinden çıkarım yapmak için Config ve Default Predictor oluşturuyor ve standart bir Mascar SNM modeli kullanıyor.
+
+790
+02:30:00,000 --> 02:30:09,200
+Bu modeli yüklüyor ve tahmin yapıyor. Şurada ikisini kıyaslamış modellere.
+
+791
+02:30:13,427 --> 02:30:37,868
+Şurada Mascar CNN'de böyle bir dalgalı bir şekilde kenarı şey yapmış, render'ı modeli oluşturmuş. Ama burada PointRent'de daha bir uçağın kuyruk kısmına tam oturtturmuş bunu. Daha küçük gridler kullanarak. PointRent nokta örnekleme sürecinin görselleştirilmesi. Burada Model Forward fonksiyonu kullanılıyor.
+
+792
+02:30:39,219 --> 02:30:43,139
+Dahili durumları ve niteliklerine yarışan manuel bir adım ilerliyor.
+
+793
+02:30:44,340 --> 02:30:55,899
+Predicter ve Image değişkenini kullanıyor ve Backbone Bind Box Prediction ve Course Mask Segmentation ile de çalıştırıyor.
+
+794
+02:30:56,539 --> 02:30:59,779
+Ön plan düzleme için maske tahmini görselleştiriyor.
+
+795
+02:31:00,379 --> 02:31:02,699
+Bu ilk önce bir kaba tahmin ediyor bu uçak.
+
+796
+02:31:03,059 --> 02:31:21,159
+Yedi çarpı yedi bir çözünürlükte. Burada hiçbir şey belli olmuyor neredeyse. Neresi maskeli, neresi değil. Eğitim sırasında nokta örneklenmesi. Eğitim sırasında point rent kafasını eğitmek için kaba tahminin belirsiz olduğu noktalar seçiliyor.
+
+797
+02:31:21,159 --> 02:31:30,159
+Oversample ratio ve importance sample ratio parametreleri değiştirilerek işlemler yapılabiliyor. Bu şekilde.
+
+798
+02:31:30,772 --> 02:31:35,132
+Eğitimde noktalar kullanılarak bunu eğitmeye çalışıyor.
+
+799
+02:31:37,432 --> 02:31:42,551
+Bir şekilde işte dört seçim kriteri vardı, onlardan birini kullanıyor.
+
+800
+02:31:44,852 --> 02:31:47,412
+Çıkarım sırasında nokta örneklenmesi.
+
+801
+02:31:47,672 --> 02:31:54,332
+7 çarpı gridden başlıyor ve 224 çarpı 224'e doğru gidiyor.
+
+802
+02:31:55,612 --> 02:31:57,912
+Bu 7 çarpı 7 görüntüsü.
+
+803
+02:31:58,548 --> 02:32:20,168
+İkinci adımda daha iyi bir çözünürlük sağlıyor. 28x28. Biraz uçak oldu. Gene anlaşılmasa da daha biraz siyah beyaz benzemesi çalışıyor. 56x56. Üçüncü adımda daha bir uçak kenarları çıkmaya başlıyor. Dördüncü adımda 112x112.
+
+804
+02:32:21,236 --> 02:32:32,236
+A bir kenarları belirginleşmeye başlıyor ve 224x224 de daha bir en belirgin şeklini bu modelde alıyor.
+
+805
+02:32:36,084 --> 02:32:42,904
+Maske tahmininin görselleştirilmesi. Uçak olarak onu tahmin ediyor. Veri seçimde.
+
+806
+02:32:45,764 --> 02:32:48,684
+Sen bunu çalıştırdın mı? Çalıştırabiliyor musun?
+
+807
+02:32:49,184 --> 02:32:51,623
+Çalıştırdım evet hocam. Zaten şeyde Jüpiter'de o.
+
+808
+02:32:54,864 --> 02:32:57,504
+Tekrar başlatayım mı? Tekrar başlatamayayım.
+
+809
+02:33:01,940 --> 02:33:04,979
+Çok hızlı, çok yaşlı çabuk yine geldi.
+
+810
+02:33:09,940 --> 02:33:11,159
+Hatta mesajını verin.
+
+811
+02:33:14,159 --> 02:33:15,520
+Kutlu çarp.
+
+812
+02:33:29,940 --> 02:33:33,659
+Dosyayı başka yere yaptım ondan belki hata vermiş olum.
+
+813
+02:33:46,388 --> 02:33:48,528
+Bir hata var sen, çalıştıramadım.
+
+814
+02:33:49,968 --> 02:33:52,228
+Modül detektörünü yüklemedi.
+
+815
+02:33:55,956 --> 02:33:58,036
+İsminiz [öğrenci] değil mi?
+
+816
+02:33:58,296 --> 02:34:03,136
+[öğrenci]. Yok çalıştırdım aslında da burada. Şu an bir hata.
+
+817
+02:34:04,396 --> 02:34:08,636
+Yani onları bir kontrol etmem lazım [öğrenci].
+
+818
+02:34:12,531 --> 02:34:15,231
+Son olarak bakmadım. Dün en son bakmıştım.
+
+819
+02:34:16,671 --> 02:34:18,971
+Evet, şimdi...
+
+820
+02:34:18,971 --> 02:34:20,831
+Şu ismini belki değiştirdim.
+
+821
+02:34:29,012 --> 02:34:41,191
+Şimdi sunumunla ilgili tamam artık yani bu kodu kabul etmeyeceğim çünkü çalışmıyor şu anda. Sunumla ilgili de şöyle bir şey var.
+
+822
+02:34:42,191 --> 02:34:44,432
+Hocam çıktılar hepsini oradan elde ettim ben.
+
+823
+02:34:47,211 --> 02:34:49,871
+Çıktılar hepsini oradan elde ettim. Şunlar var hepsi benim.
+
+824
+02:34:52,819 --> 02:35:00,319
+Bunlar zaten çıktıları dosyadan. Hatta Jüpiter'de yazdım. Colab da değil. Benim bilgisayarımda yaptım zaten onu.
+
+825
+02:35:02,000 --> 02:35:05,540
+Peki kodları nereden? Örnek kodları falan var mıydı?
+
+826
+02:35:08,279 --> 02:35:16,399
+Kütüphanelerinden yararlandım detektorunu. Bu şekilde kendim yaptım. Zaten sunumda var. Size attığım dosyada da var.
+
+827
+02:35:18,324 --> 02:35:22,324
+Jüpiter'de yaptılar. Kolab'da değil. Kendi bilgisayarında.
+
+828
+02:35:22,324 --> 02:35:42,324
+Kabul edeyim. Yalnız sunumunda yalnız şey var. Çok fazla bir sunum nedir? Kısa bir şekilde olayı insanlara anlatacak bir şeydir. Hadi gidelim.
+
+829
+02:35:42,963 --> 02:35:55,963
+Sen böyle para haraplar para haraplar yazmışsın makaladan. O da yardım edeceğini esasen zorlaştırmış. Çünkü ben sen böyle bir sunum yaparken oturup o para harapları okuyacak halim yok.
+
+830
+02:35:55,963 --> 02:36:05,963
+Eğer yani seyirciler için de, dinleyen dinleyiciler için de. Bunu bir eğitim fesatı olarak söylüyorum. Yani bir sunum yaptığımda.
+
+831
+02:36:06,772 --> 02:36:29,212
+Yedi çarpı yedi kralı diye bir şeyden bahsediyor hatta. Yani yedi cümle, her cümle de yedi kelime gibi. Hatta mümkünse vurucu resimlerle olayı anlatmaya çalışmak lazım. Bu bakımdan senin sürüdünü kabul ediyorum ama biraz düşükçe puan, yetmiş puan vereceğim.
+
+832
+02:36:34,868 --> 02:36:35,988
+Teşekkür ediyorum.
+
+833
+02:36:36,788 --> 02:36:37,808
+Tamam, ben teşekkür ederim.
+
+834
+02:36:39,488 --> 02:36:41,847
+Kim vardı şimdi sırada?
+
+835
+02:36:42,507 --> 02:36:43,488
+Ben yapabilirim hocam.
+
+836
+02:36:43,887 --> 02:36:50,528
+Tamam. Vaktimiz de yalnız biraz sınırlı. Onu 15 dakikada yapabilir misin?
+
+837
+02:36:50,948 --> 02:36:53,067
+Hızlı yapmaya çalışırım, hızlı yapmaya çalışırım.
+
+838
+02:36:53,668 --> 02:36:57,507
+Tamam, slide sayım çok değilse yap. Yoksa sonraki haftaya bırakalım.
+
+839
+02:36:58,188 --> 02:37:00,868
+Sonraki hafta uzaktan mı olacak yoksa dersi mi olacak hocam?
+
+840
+02:37:01,907 --> 02:37:03,067
+Tam belli değil ya.
+
+841
+02:37:04,327 --> 02:37:07,768
+Yani ona göre bırakabilirim. [kişisel bilgi]
+
+842
+02:37:07,768 --> 02:37:09,387
+Tamam yapabilirim. Sağ olun.
+
+843
+02:37:10,087 --> 02:37:10,448
+Efendim?
+
+844
+02:37:11,108 --> 02:37:13,867
+Yap hadi yap. Sen buradayken.
+
+845
+02:37:14,387 --> 02:37:14,827
+Tamam.
+
+846
+02:37:17,147 --> 02:37:18,547
+Ekranımı görebiliyor musunuz?
+
+847
+02:37:19,007 --> 02:37:19,227
+Evet.
+
+848
+02:37:20,628 --> 02:37:47,528
+Sunum açıldım peki size şu an. Ben multi-object tracking alanında yapılan 2020'de çıkan bir çalışmayı anlatmaya çalışacağım. Şimdi Center Track isimli bir çalışma. Önce tracking'den biraz bahsedeyim kısaca. Tracking işlemine karşılaşılan en büyük zorluklar hız. Yani real-time çalışması gerekiyor daha çok track algoritmaların. Daha sonrasında detection algoritmasından gelen bounding box'ların görüntü arka planıyla çok örtüşmesi. Yani bir insanın bounding box'larının içerisinde arka planının çok dahil olması bir sorunu zorlaştırıyor.
+
+849
+02:37:47,987 --> 02:38:15,847
+Octojun dediğimizde aynı sınıftan iki tane nesnenin birbiriyle çok fazla örtüşmesi. Burada da ID Switch ortaya çıkabiliyor Trekint'te. Çünkü asıl amaç nedir? Her Unique nesneye ayrı bir ID atayıp, fremden ayrılana kadar doğru takip edebilmektir. Bu da işlemi zorlaştıran bir şey. Literatürde kabul edilen en büyük datasetleri burada paylaştım. Daha çok çalışmaların hepsi mod alanında yapılıyor. Mod dataset üzerinde yapılıyor. Bunda sadece insanlar var. İnsanların kalabalık bir şekilde yürüdüğü, sabit kameralı bir şekilde almış görüntüler.
+
+850
+02:38:15,987 --> 02:38:31,288
+Kit Data Set'inde insanlar ve araçlar var. D-Trek'te sadece araçlar var. Bir de TAO diye büyük bir veri seti var. Onda yaklaşık 1200 kadar sınıf vardı. Yanlış hatırlamıyorsam zaten 400 GB kadar boyutu var. Çok fazla çalışma yapılan bir veri seti değil çünkü eğitimi çok zor.
+
+851
+02:38:32,468 --> 02:39:00,228
+Burada başarı kriterlerinden biraz bahsedeceğim. Intersection of Union dediğimiz şey, tracking için. Detection'dan gelen bounding box ile tracking'den gelen bounding box'ın örtüşme aralarını karşılaştırılması. Yani tracking bir sonraki frame'de bu nesnenin nerede olacağını tahmin ediyor. Detection'da bir sonraki frame'de o nesneyi detekt ediyor. Bu ikisinin birbiriyle örtüşmesine belli bir threshold atanıyor. Bu threshold'un altındaysa doğru adi, atanlıyorsa başarılı. Threshold'un üstündeyse...
+
+852
+02:39:00,468 --> 02:39:18,288
+Birbirine olan uzaklık başarısız sayılıyor. Aynı zamanda bu başarı hesaplamasında değil, tracking içerisinde de kullanılan bir şey. Yani bir sonraki fremdeki yerini tamir ettiğinizde siz kalmam filtresi vesaireyle yani motion prediction ile tamir ettiğinizde bunun önceki nesneyle yüksek oranda örtüşmesi gerekiyor.
+
+853
+02:39:19,443 --> 02:39:38,384
+Burada başarı kriterlerinden en önemli üç tanesini yazdım. Aslında motocurisi olarak geçer her yerde ama o biraz yani sallantılı bir metrik. Daha önemli olan kısımlar bunlar. Missing Detection dediğimiz hesaplama kısmında Ground Truth veride var yayınlanan datasetlerde ama Detection algoritması bunu bulamazsa bu bir başarısızlıktır.
+
+854
+02:39:38,384 --> 02:39:46,963
+Post-Pozitiflerde Ground Truth veride yok ama Detection algoritması bunu tespit etmiş olabilir. Atıyorum bir şemsiyeye insan dediğinizde siz bu fremden çıkana kadar o şemsiyeyi takip edeceksiniz.
+
+855
+02:39:47,443 --> 02:39:54,164
+Bu da bir başarısızlık anlamına geliyor. MissMatch errorlarda da Ground Truth'taki ID ile Detection'dan gelen sizin tahmin ettiğiniz ID'nin uyuşmaması.
+
+856
+02:39:56,123 --> 02:40:06,863
+Motoculus'u başarısı bu şekilde hesaplanıyor. Post negatiflerle MissMatch'leri hepsini topluyorsunuz. Kaç tane hatanız varsa bunu Ground Truth neyse sayısına bölüyorsunuz.
+
+857
+02:40:06,863 --> 02:40:14,144
+Bu yüksek geldiğinde tracking algılması başarılı olarak geçiyor literatürde. Zaten bütün tablolarda da Motoculus üzerinden sıralanıyorlar.
+
+858
+02:40:15,059 --> 02:40:30,099
+Diğer bir metrik, mode precision. Bu tracking algoritmasını değil, detection'ın başarısını ölçen bir algoritma aslında. Şurada sol tarafta görebiliyorsunuz. DT dediğimiz Ground Truth ve Detection Box arasındaki Intersection of Union Distance. Yani bunun düşük olması gerekiyor tahmin edebileceğiniz gibi.
+
+859
+02:40:31,020 --> 02:40:40,979
+CET dediğimizde Ground Truth ve Detection arasındaki eşleşme sayısı. Bu doğru eşleşme sayısı anlamına geliyor. Yani mode precision değeri düşük olan algoritmalar daha başarılıdır. Yüksek olması değil, düşük olması burada önemli.
+
+860
+02:40:41,747 --> 02:41:05,868
+Diğer üç tane kriter de bunlar. Mostly Tracker dediğimiz bir insan mesela 100 frame boyunca o frame'in içerisinde ve biz buna bir ID'sini atadık. 100 frame'in 80 frame'inde en az bunun ID'si değişmeden kalıyorsa bu başarılıdır. Ama bir yerde değişiyorsa, %20 ile %80 arasında değişiyorsa mesela partial trackettir. %20'si kadar bile biz bunu takip edemiyorsak mostly lost'tur. Tahmin edebileceğiniz gibi ilk iki değerin yüksek, mostly lost'un düşük olması gerekiyor.
+
+861
+02:41:07,188 --> 02:41:32,847
+Burada bounding box, point ve confidence skorları kullanarak frameler arasında eşleştirme yapan algoritmalarımız hepsine multi-tracking algoritmaları diyoruz. Günümüzde yapılan çalışmalar ikiye ayrılıyor. Tracking by detection denilen çalışmalar tracking after detection aslında, öyle söyleyelim. Yani detection algoritması çalışacak ayrı bir modül olarak. Bize bounding box'ları ve confidence değerlerini verecek. Biz daha sonra bunları matching association işlemiyle birbirleriyle birleştireceğiz. Doğru ID atadık atamadık buna göre karşılaştırma yapacağız.
+
+862
+02:41:35,188 --> 02:41:45,867
+Sayısı durum şu. Bir tane baştan sonra bir model, bir network oluşturuluyor. Buna ardışık iki frame veriyorsunuz. Bu size hem detection box'larını hem ID'leri döndürüyor. Yani baştan sonra tek bir modele yetiyorsunuz.
+
+863
+02:41:46,968 --> 02:41:51,500
+Önce tracking by detection'dan kısaca bahsedeceğim hemen. Burada...
+
+864
+02:41:51,540 --> 02:42:03,120
+Aslında iyi algoritma kullanılan yöntemler bunlar. Çünkü daha diğer alan yeni yeni gelişmeye başladı. Şu anda benim makalemdeki konu da yeni gelişen bir alan. Öncesini görmek daha iyi olacak diye düşünüyorum. İyi kullanılan algoritma burada Sort.
+
+865
+02:42:04,180 --> 02:42:24,860
+SORT algoritmasından, burada bahsedeyim. SORT algoritması sadece motion prediction üzerinden işlem yapıyor. Yani herhangi bir buğandık box içerisinden future extraction yapmadan, sadece kalma filtresiyle tahmin edilen bir sonraki konumla dedikçinden geleni karşılaştırıp, yüksek örtüşme varsa aynı ID verir, yüksek örtüşme yoksa yeni bir ID atar. Bu şekilde, bu kadar basit bir tracking algoritması.
+
+866
+02:42:25,420 --> 02:42:31,860
+DeepSORT yine SORT'un yayınlandığı aynı konferansta bir sene sonunda çıkarılmış bir yayın. Burada da durum şu, hatta en kullanılan yani...
+
+867
+02:42:32,180 --> 02:42:34,960
+Bütün algoritmaların kendini karşılaştırdığı base algoritma budur.
+
+868
+02:42:35,760 --> 02:42:39,200
+Buradaki olay şu detection'dan gelen bu anlık baksanının hepsini resize ediyorlar.
+
+869
+02:42:39,340 --> 02:42:42,560
+Mars Re-ID datasetine göre. 64'da 128 olacak şekilde.
+
+870
+02:42:43,159 --> 02:42:45,260
+Bunların hepsinden bir future extraction ile future çıkartıyorlar.
+
+871
+02:42:46,100 --> 02:43:04,000
+Daha sonrasında future distance'ına, cosine similarity ile bakıp benzer olanları ilk buradan eşleştiriyorlar. Yani kalma filtresiyle motion prediction üzerine bir katman gelmiş gibi düşünün. Yüksek güvenlikli boxları önce future'lar üzerinden eşleştirelim. Eşleştiremediklerimizi kalma filtresiyle eşleştirelim ki daha robust bir sistem oluşsun diye düşünüyorlar.
+
+872
+02:43:04,819 --> 02:43:32,739
+Diğer Unitrack ve Bytrek daha 2021 yılında yeni çıkmış modeller. Unitrack'ın farkı Future Extraction için ResNet modelini kullanıyor. Distance için de Cosign değil, kendileri geliştirdikleri bir RCM, Reconstruction Simulatori'ni kullanıyorlar. Bunun farkı da diğerlerinden. Basit bir Entension mekanizması var. Yani bir insan bir sonraki frame'de eğer sadece belinin üstünü biz tespit edebildiysek, bir önceki bağınlık box'ında da aynı noktaları birbiriyle karşılaştıralım. Bağınlık box küçülse de örtüşen yerlerin birbirine distance'ına bakalım diye çıkmış.
+
+873
+02:43:32,819 --> 02:43:45,199
+Bu bir metrik. Bytrek'te SORT'un aynı sahasında sadece detection modelini geliştirmişler. Bandic Box'ları insanların visibility değeri düşük olsa da tam olacak şekilde tahmin ettiğinizde eşleştirme daha basit oluyor her zaman. Bunun için geliştirilmiş bir yöntem.
+
+874
+02:43:46,131 --> 02:44:11,051
+Ve tracking by detection algoritmalarının hepsinin mimarisi bu şekilde. Bunu kendim çizdim. Basitçe anlatması açısından. Önce bir frame'de object detection algoritmasını çalıştırıyorsunuz. Sağdaki gördüğünüz gibi bütün bounding box'lar oluşturuluyor. Confidence değerleriyle birlikte. Sonra bir feature extraction ağınız olacak. Burada bir resonate olabilir veya bir e-id ağınız olabilir. Önemli değil. Onun inputuna göre resize edeceksiniz bütün bounding box'ları ve ondan sonra onlardan feature çıkaracaksınız.
+
+875
+02:44:14,131 --> 02:44:36,931
+Başka bir distansmetri olabilir. Eşleşen bandboxlara aynı ID vereceksiniz. Eşleşmeyenlere de Kalman filtresiyle bir sonraki konumunu tahmin edip örtüşme uzaklığı üzerinden eşleştireceksiniz. Bütün mimariler bu şekilde. Kalman filtresi 1960'da çıkmış bir filtre. Motion Prediction için kullanılıyor. Tracking'de. Tracking modülünde. Başka alanlarda da kullanım var tabii ki. Buradaki state bilgisi. Bir şey mi sordunuz hocam?
+
+876
+02:44:36,931 --> 02:44:40,092
+Bir önündeki ekrana bilgilerini verir misiniz?
+
+877
+02:44:40,412 --> 02:44:40,592
+Tabii.
+
+878
+02:44:41,139 --> 02:44:54,899
+Burayı biraz daha anlıyorum. Yani biraz geçtiğe bitebilir. Çok da öğrenim değil. Sonuçta bilin yani. 5-10 noktada hiç çıkarıyoruz.
+
+879
+02:44:54,899 --> 02:45:02,139
+Biraz koşturdum, en hızlı olsun. İsteyen kadar hiç oradan çıkar.
+
+880
+02:45:02,139 --> 02:45:07,139
+Şimdi Object Detection var.
+
+881
+02:45:09,172 --> 02:45:15,891
+M çarpı V resized, V resized, M tane, W çarpı W.
+
+882
+02:45:17,172 --> 02:45:24,371
+Bu da nesne bulunuyor.
+
+883
+02:45:25,747 --> 02:45:29,227
+Bunlardan feature'lar çıkarılıyor değil mi?
+
+884
+02:45:29,227 --> 02:45:43,707
+Evet. Feature'ların dimension'a biri de olabilir. Yani kullandığımız similarity metriğine bağlı aslında. Cosine'da bir, yani 15 band-lug box varsa 15'e 512 atıyorum. Böyle bir feature çıkartılıyor ama farklı metriklerde bu dimension sayısı değişebiliyor.
+
+885
+02:45:45,308 --> 02:45:53,128
+Evet. Feature vektörleri özel bir algoritmı ayrılıyor mu yoksa nörel network ile mi çıkarılıyor mu?
+
+886
+02:45:53,587 --> 02:46:14,547
+Neural Network ile çıkartılıyor hocam. Yani 2021'deki çalışmalarda çoğunda ResNet 101, ResNet 18, 50, yani Classification ağlarının en sonundaki katmanını çıkarıp Future Extraction kısmını alıyorlar. Oradaki future'ları kullanıyorlar Classification'dan gelen veya Re-ID ağları var Person veya Vehicle için. O Re-ID ağlarını aldıkları future'lar arasındaki distance'a bakıyorlar.
+
+887
+02:46:14,547 --> 02:46:19,547
+Tamam. Şimdi Kazman…
+
+888
+02:46:20,691 --> 02:46:30,572
+Kalman da Motion Prediction için kullanılıyor. Yani hiç feature'lar kullanılmadan da aslında eşleştirme yapılabilir bunun üzerinden.
+
+889
+02:46:31,219 --> 02:46:59,200
+Bu şu demek, başta bir matriz oluşturuyor, kararsızlık matrizi diye. Bir insan mesela sürekli sağ tarafa doğru yürüyorsa ve belli bir hızı varsa, yani constant velocity üzerinden çıkmış bir olay zaten kalmanın burada kullanımı. İnsan sabit hızla gidiyorsa bir sonraki fremdeki yerini tahmin edebiliyorsunuz. Bu tahminde de XE merkez noktası ve aspect ratio, banding box. Yani insan kameradan uzağa doğru gidiyorsa banding box küçülecektir, yakınlaşıyorsa büyüyecektir. Bu 4 state'i birden tahmin etmesi gerekiyor kalmanın.
+
+890
+02:46:59,219 --> 02:47:02,020
+Tahminleriyle Detection'lar arasındaki örtüşmeye bakıyor.
+
+891
+02:47:05,020 --> 02:47:06,939
+Şu Association ne yapıyor?
+
+892
+02:47:07,939 --> 02:47:15,159
+O Association sadece bu Distance hesaplayıp, yani greedy matching yapıyor aslında. Distance'ı düşük olanla eşleştir demek sadece.
+
+893
+02:47:15,159 --> 02:47:15,939
+Evet.
+
+894
+02:47:18,340 --> 02:47:25,599
+Şu şey diyorsun ya, Kalman, O, O, Distances. O nedir? Yani main distance'ı.
+
+895
+02:47:26,164 --> 02:47:42,324
+Şöyle göstereyim. Burada kalmanız teklerini yazdım ben. XE, AH dediğimiz XE merkez noktası, aspect ratio'su ve height'i aslında burada. Bir de bunların hızı, sabit hızlı yasaya daha başarılı oluyor ama tutarsız bir hareket varsa daha başarısız oluyor. Tahmin edebileceğiniz gibi.
+
+896
+02:47:42,824 --> 02:47:54,164
+Şu bizim elimizde önceki frame var. Önceki frame'deki detection'lar var. Bir de canlı olarak şu anki frame var. Online metotları düşünürsek eğer. Bir önceki frame'deki bilgilerle biz bütün Bandic Box'ların şu anki durumunu...
+
+897
+02:47:54,164 --> 02:48:13,144
+Kalmanın yaptığı iş buraya kadar. Şu anki yerlerini tahmin ettik ve şu andaki frame'de detection algoritmasını çalıştırdık. Detection'daki box'larla bizim tahmindeki box'larımızın arasındaki distanslara bakıyoruz. En çok örtüşenin bir önceki frame'deki ID'sini şu anki ID'ye atıyoruz. Bu örtüşmeyi yaptığımız distans da intersectional union'dasınız.
+
+898
+02:48:18,515 --> 02:48:42,075
+Kalman'dan da bahsettik. Sortu burada yazdım ama zaten uzunca anlatmıştım. Buralara geçiyorum o yüzden. Deep Sort'un da kısaca burada mimarisinden bahsedeyim. Yolo V4 yazmışız burada ama önemli değil Yolo kullanabilirsiniz veya SSD, PS3, ARS'e herhangi bir detekşin aralıklarınızı kullanabilirsiniz. Önemli olan detekşin boxlarının gelmesi. Çünkü bütün tracking aralıkları bir detekşina ihtiyaç duyuyorlar. Joint olanlardan bahsetmiyorum tabii ki burada.
+
+899
+02:48:42,835 --> 02:48:50,115
+Daha sonrasında Kalman Prediction'la Deep Appearance Descriptor dediğimizde az önceki feature vektörleri bunların listesine bakıp esen işlemi yapıyor.
+
+900
+02:48:51,295 --> 02:48:58,615
+Joint Detection'e Tracking'de aslında Joint Detection Embedding, şurada birinci maddede yazdığım algoritma ile beraber ilk ortaya atılmış bir fikir.
+
+901
+02:48:59,115 --> 02:49:06,475
+Ortaya atılmasının sebebi şu, Detection'e ayrı, Tracking'e ayrı düşünürsek o yüzden aslında iki tane modülün birbirine başarısını bağlamış oluyoruz.
+
+902
+02:49:06,475 --> 02:49:10,835
+Yani Detection başarısızsa Tracking'in başarılı olmasını bekleyemeyiz çünkü ondan sonra çalışacağız.
+
+903
+02:49:10,835 --> 02:49:24,615
+Detection bütün boxları bulamıyorsa bütün boxları takip edemeyeceğiz. Bu kadar basit aslında. Detection bütün boxları bulacak. Daha sonrasında eşleştirme yapacağız. Tamam. Bu kadar başarılı ama bu sefer de ortaya şu geliyor aslında.
+
+904
+02:49:25,940 --> 02:49:53,139
+Bütün boxları bulduk, eşleştireceğiz. Ama iki farklı modül olduğu için çarpı iki hız düşümü yaşayacağız. Yani bir kere bir nörel network çalıştırıp detection yapıyoruz. Daha sonrasında bu sonuçlarına bir tane nörel network çalıştırıp future çıkarma yapıyoruz eşleştirme için. Bu iki tane hız düşme anlamına geliyor. Bunu ortadan kaldırmak için demişler ki bir tane network oluşturalım. Input'u tracking'e bağlı olsun. Yani sadece tek bir frame vermeyelim. İki frame birden verelim. Bize hem bağlı bir baksın hem adleri döndürsün diye ortaya atığımız bir çalışma.
+
+905
+02:49:53,711 --> 02:50:14,471
+Bizim asıl makalenin konusu Center Track'te. Ben aslında tracking'in nereden gelip nereye doğru gittiğini anlamanız için başından kadar buraya anlattım. Center Track'te olay şu. Center Detection diye bir algoritmaları var. Daha önceden çıkan bir algoritma bu detection için. Keypoint'ler üzerinden bir detection yapıyor. Yani önce nesnelerin merkez noktasını tahmin ediyor. Bu merkez noktası üzerinden bir...
+
+906
+02:50:15,123 --> 02:50:43,063
+Yayılım hesaplamasıyla bağımlık boxlara yayılım yapıyoruz merkez noktası üzerinden. Görüyorsunuz zaten sağ taraftaki merkez noktaları işaretlenmiş. Daha sonra bağımlık boxlara regresyonla yayılım yapılmış. Offset o değeri de center track ile beraber gelmiş bir değer. İki frame'i verdiğimiz için bize arka arkaya. Offset değeri bize optik akış gibi bir sonraki frame'de ne kadar ilerleyeceğini, ne taraf olduğu ilerleyeceğini gösteriyor. Bu offset değeri üzerinden çok basit yine intersection ornion'un distansı.
+
+907
+02:50:43,123 --> 02:50:51,904
+Bu algoritmaların en büyük dezavantajı şu. Sadece ağır dışı iki frame aldıkları için objenin...
+
+908
+02:50:51,904 --> 02:51:19,524
+Frame'den çıkması durumunda tekrar geri döndüğünde aynı ID veremeyeceklerdir. Veya objeyi kaybettiniz 2-3 frame boyunca. Bir daha geldiğinde önceki frame'de olmadığı için aynı ID veremeyeceksiniz. ID'sini kaybedeceksiniz. Bunu göze alıyor bugü grupların hepsi. Dezavantajları bu, eminlik dezavantajları. Mesela Deep Sword'da bu şöyleydi. 100 frame boyunca bütün takip edilen Bandic Box'ların füşürleri tutuluyor. Şu andaki frame'in hesaplamaları yapılırken önceki 100 frame birden karşılaştırılıyor.
+
+909
+02:51:19,904 --> 02:51:32,844
+Kaybetseniz bile 30 FPS'lik videoda 3 saniye sonra aynı kişiye aynı ID verebilirsiniz. Bu çok güzel bir şey aslında. Burada ortaya atılan yöntem de Tracking Condition Detection dediğimiz olay şu.
+
+910
+02:51:33,556 --> 02:51:51,855
+İki tane artışı frame'i verdiğimiz için input olarak aslında tracking outputlarını da kullanıyoruz biz eğitimde. Sadece objelerin sınıflarını vesaireye karşılaştırmıyoruz da yönlerini de karşılaştırıyoruz. Ne tarafa doğru gittiklerini de detection'a veriyoruz. Detection algoritması bir süre sonra hangi tarafta objeye arayacağına karar veriyor aslında.
+
+911
+02:51:53,907 --> 02:52:20,948
+Burada da işte bu long range eşleştirme işlemlerini göz ardı eder dediğim kısım oydu. Bunu göz ardı ettiklerinde yani siz diyorsunuz ki frame'den çıktığında aynı ID vermemesi önemli değil. Bizim önem verdiğimiz kısım frame'deyken aynı ID sürekli vermesi. Tekrar girip çıkması durumunu göz önünde bulundurmuyoruz diyorsunuz. Ama şu var, aynı frame içerisinde de eğer detection algoritmanınızı o kişiyi tespit edemezse belli bir süre yine ID'si değişecektir. Bu da yani zaten tracking'in en önemli kısmını yapamadığımız anlamına geliyor.
+
+912
+02:52:22,515 --> 02:52:34,876
+Burayı da geçiyorum. Bu da en son modellerin karşılaştırmaları. Mod veri setleri üzerinde. Mod 16'da DeepSort 2. İyi görebiliyorsunuz. Belki şu an farem gözükmüyordur benim. Onu da göstereyim.
+
+913
+02:52:36,575 --> 02:52:39,455
+Şurada DeepSort'u görüyorsunuz. 2017'de çıkmış bir model.
+
+914
+02:52:39,891 --> 02:53:00,512
+Mod accuracy üzerinden karşılaştırıyorlar genelde ama dediğim gibi önemli olan aslında mostly track it. Yani daha önemli bir ölçüt. Yüzde sekseni boyunca ailesini değiştirmeden takip edebildiğimizi gösteriyor. Şu anda bu tabloyu ben aldığımda en başarılı model fair moddu. Bu değişti yine 2020'de yeni bir model çıktı. ByteTrack diye. Bu sunumun içinde ona bahsetmeyeceğiz.
+
+915
+02:53:01,108 --> 02:53:29,008
+FairMode algoritması da Center Train biraz daha geliştirilmiş hala aslında. Yani içerine ben de tam hakim değilim. Ama yöntem aynı. Yine ağır dışı iki frame verip tahmin etme yine arkasında Center Detection dediğimiz merkez nokta detection çalıştırılıyor. Şurada Center Train, Moto 17 üzerinde görüyorsunuz. Yani FairMode olmam daha başarılı. Burada DeepSort'u göremedi. Moto 17 üzerinde bir yayınlanmış başarıları yok. Ama çok farklı değil zaten iki veri seti birbirinden. Tabii ki DeepSort'tan daha başarılı olmasını bekliyoruz.
+
+916
+02:53:29,108 --> 02:53:40,247
+Arada üç yıl var. Ama bu kullanılan yöntem, frame'den çıkıp tekrar girmesi durumunda veya frame içerisinde kaybedilmesi durumunu kapsamadığı için çok kullanılabilir bir yöntem olduğunu ben düşünmüyorum açıkçası.
+
+917
+02:53:41,688 --> 02:53:49,048
+Burada da sonuçtan bahsettim. Hem Joint Detection Tracking kısmında Center Track'ten daha başarılı algoritmalar var.
+
+918
+02:53:49,548 --> 02:53:53,848
+Hem de Tracking by Detection algoritması alanında DeepSock'tan daha başarılı algoritmalar şu anda var.
+
+919
+02:53:54,451 --> 02:54:21,711
+Çünkü tracking'in en önemli kısmı belki de detection diyebiliriz. Detection algoritması iyiyse, tracking'i iyi yapıyoruzdur. Kötüyse ne kadar iyi yaparsak yapalım, başarılı olamayız. İyi bir feature extraction ağı hem sınıflar arası distansı hem sınıf içi distansı ayırt edebildiği için bu tracking'e çok yardımcı olacaktır. Yani bizim tracking'te beklentimiz şu, hem insanlarla diğer araçları vesaire hayvanları birbirinden ayırabilmesi lazım, hem de insanları birbirinden ayırabilmesi lazım. Aslında basit bir identification, re-id de var bunun içerisinde.
+
+920
+02:54:22,451 --> 02:54:26,971
+Bu iyi olduğu sürece iyi tracking algılması çıkacaktır diye düşünüyorum. Bu kadar da sunuyorum. Teşekkür ederim.
+
+921
+02:54:29,451 --> 02:54:31,231
+Sorunuz varsa alabilirim koda geçmeden.
+
+922
+02:54:34,211 --> 02:54:34,791
+Yok.
+
+923
+02:54:38,131 --> 02:54:39,531
+Kod mu gösteriyor neyse?
+
+924
+02:54:39,951 --> 02:54:46,551
+Evet, kodu ben istiklalci adresine alınan bir video üzerinde çalıştırdım. Koko üzerinde eğitilmiş bir ağırlıkları var. Pre-training'ı indirdim.
+
+925
+02:54:47,219 --> 02:54:48,799
+Çalıştırımı şöyle kısaca göstereyim.
+
+926
+02:54:49,759 --> 02:54:51,439
+Kendi kitaplarından.
+
+927
+02:54:51,819 --> 02:54:53,319
+Evet, evet. Kendi kitaplarından aldım.
+
+928
+02:54:54,879 --> 02:54:55,899
+Görebiliyor musunuz?
+
+929
+02:54:56,259 --> 02:54:56,579
+Evet.
+
+930
+02:54:57,399 --> 02:55:04,019
+Koko'daki 80 sınıfta bunun içerisinde var. Aynı zamanda yayınladıkları mod için sadece insanları detekleden ağları da var.
+
+931
+02:55:04,415 --> 02:55:17,175
+Burada id'lerini görebiliyorsunuz. Person 60, 61 vs. Arkasının önünde bir insan geçtiğinde, bir süre izlersek tabii uzun bir süre bunu görebiliriz. Bir süre bunu kaybederse eğer id'sinin değiştiğini göreceğiz.
+
+932
+02:55:18,475 --> 02:55:19,395
+Id'si değişiyor mu?
+
+933
+02:55:19,795 --> 02:55:28,635
+Tabii değişecek. Bir de şu merkez noktasında offset değerlerini görebiliyorsunuz. Hangi tarafa doğru hareket ettiğini burada gösteriyor. Hangi tarafa yönelimli olduğum daha doğrusu.
+
+934
+02:55:32,500 --> 02:55:37,360
+Bunu sen kendi videonun üzerindedin. Bu İstiklal Caddesi'ne alınmış bir video hocam.
+
+935
+02:55:37,360 --> 02:55:38,299
+Youtube'dan bunu.
+
+936
+02:55:42,420 --> 02:55:46,639
+Detekşin'de çok başarılı çalıştığını görebiliyoruz aslında. Çok az görünen insanları bile bulabiliyoruz.
+
+937
+02:55:51,540 --> 02:55:53,540
+Real Time değil mi?
+
+938
+02:55:53,540 --> 02:55:54,540
+Efendim?
+
+939
+02:55:56,540 --> 02:56:00,540
+Real Time senin makinede biraz lat yapıyor ama...
+
+940
+02:56:00,540 --> 02:56:05,540
+Şu an 27 fps civarında çalışıyor yani Real Time kesinlikle.
+
+941
+02:56:17,843 --> 02:56:28,163
+Ben şimdi öncelikle [öğrenci]'i zaten kabul ettik dedim. O yüzden göstermem gerekiyor.
+
+942
+02:56:28,163 --> 02:56:32,963
+Biraz geçmeye başladı.
+
+943
+02:56:37,223 --> 02:56:42,163
+Şimdi kim...
+
+944
+02:56:42,611 --> 02:56:44,611
+Onur sen mi sunuyorsun?
+
+945
+02:56:44,611 --> 02:56:46,611
+Evet hocam.
+
+946
+02:56:46,611 --> 02:56:50,611
+Tamam. Sen kendi seçtiğin işini sunuyorsun.
+
+947
+02:56:50,611 --> 02:56:52,611
+Evet.
+
+948
+02:56:52,611 --> 02:56:56,611
+Sunumunu...
+
+949
+02:56:56,611 --> 02:56:58,611
+...biziz.
+
+950
+02:57:07,379 --> 02:57:23,639
+Şimdi şöyle baktığımda, sunmayan bir, iki, üç, dört grup görüyorum. Bu arkadaşlar sunacak değil mi daha sonraki hafta?
+
+951
+02:57:24,000 --> 02:57:26,619
+Evet hocam, isterseniz şu anda da sunum yapabilirim.
+
+952
+02:57:27,419 --> 02:57:28,739
+Artık bugünü bitirdik.
+
+953
+02:57:31,860 --> 02:57:57,920
+Bir iletişim sorunumuz var. Bu gelecek hafta normalde offline düşünüyoruz ama ben de şu anda biraz hastayım. Bu hastalığımın durumu ne olacak çok da belli değil. Ondan sonra böyle bir hastalık davran olursa geri online'a dönebiliriz ya da iptal de olabiliriz ama umarım iptal etmeyiz. Çünkü bana çok değiş düşmeyiz. Sadece bilmiyorum.
+
+954
+02:57:59,092 --> 02:58:12,332
+O durumda nasıl bir iletişim kuracağız? O sorun var. Ginsiz e-mail göndermiyor.
+
+955
+02:58:12,332 --> 02:58:21,612
+Bu online mail-in-tr'de bir mail atma sistemi var mı?
+
+956
+02:58:25,587 --> 02:58:27,587
+Teşekkürler.
+
+957
+02:58:45,299 --> 02:58:47,219
+E-posta gönderdiği bir şey var.
+
+958
+02:58:48,899 --> 02:58:50,539
+Online yıldız eduklarında.
+
+959
+02:58:51,979 --> 02:58:55,840
+Deneme bir e-postası düzenleyeceğim sizin işimizden deneme.
+
+960
+02:59:04,115 --> 02:59:06,956
+Hepinizi seçtelim.
+
+961
+02:59:20,691 --> 02:59:22,151
+Ekran perdesiyle mümkün.
+
+962
+02:59:44,180 --> 02:59:46,700
+Sizin bir WhatsApp kurdu gibi bir şey vardı değil mi?
+
+963
+02:59:48,060 --> 02:59:49,060
+Hocam e-posta geldi.
+
+964
+02:59:50,899 --> 03:00:03,819
+Tamam. Bu denemeye o zaman bu online yıldızı bir TR'den eğer değişiklik olursa İngiliz gönderdiği normal şartlarda offline yapacağız.
+
+965
+03:00:04,852 --> 03:00:15,172
+Haber almazsanız offline diye düşünebilirsiniz. Haber alırsanız online'a dönülecek olursak ben size haber göndereceğim. Tamam mı arkadaşlar?
+
+966
+03:00:17,752 --> 03:00:25,932
+Haftaya olan dersten bahsettim. Haftaya görüşürüz öyleyse. İyi akşamlar, iyi tatiller diliyorum.
+
+967
+03:00:28,112 --> 03:00:30,012
+İyi akşamlar hocam.
+
+968
+03:00:31,311 --> 03:00:31,972
+İyi akşamlar.

@@ -1,0 +1,2283 @@
+1
+00:07:19,091 --> 00:07:20,411
+Arkadaşlar, merhabalar.
+
+2
+00:07:25,427 --> 00:07:26,387
+[öğrenci].
+
+3
+00:07:31,411 --> 00:07:39,411
+Bazı insan var acaba dönemine gitmedim ya. Diğer kardeşiniz WhatsApp grubunda iddian edecekti.
+
+4
+00:07:42,632 --> 00:07:48,291
+Söylendi aslında da. Demek ki şey yapmadılar. Bir tekrar yazayım ben.
+
+5
+00:07:48,851 --> 00:07:50,211
+Herkes var değil mi o grupta?
+
+6
+00:07:51,431 --> 00:07:55,651
+Yani çoğu var benim bildiğim. Haberdar olup gruba katlanların çoğu var orada.
+
+7
+00:07:58,004 --> 00:07:59,444
+Tekrar bir yazayım ben.
+
+8
+00:08:00,384 --> 00:08:01,324
+Terse başlıyor diye.
+
+9
+00:08:38,100 --> 00:08:44,899
+Önce Dropbox'ı açalım. Burada şey yapalım. Ödev vardı galiba.
+
+10
+00:09:42,035 --> 00:09:47,315
+18 kişi, 18 sabluturs varmış. 8 sabluturs varmış.
+
+11
+00:09:51,604 --> 00:09:53,604
+Şimdi, nasıl?
+
+12
+00:09:54,604 --> 00:09:56,364
+Öncelikle, bu zonunlar.
+
+13
+00:10:02,100 --> 00:10:02,740
+Klos.
+
+14
+00:10:04,740 --> 00:10:06,300
+Kapatı.
+
+15
+00:11:26,323 --> 00:11:30,323
+Evet, ne yapmıştın insanlara? Biraz bakalım esasına.
+
+16
+00:11:58,355 --> 00:12:03,975
+Envahim'in falan yapmadım şimdi. Neyse onu boş verin. Daha sonra bakarım.
+
+17
+00:12:05,975 --> 00:12:07,655
+Şimdi bugünkü dersimizi yapalım.
+
+18
+00:12:17,076 --> 00:12:19,076
+Elbette ötüşüme bile bırakacağız.
+
+19
+00:12:46,419 --> 00:13:04,859
+Edge, kenar, kenar bulma. Kenarları nasıl bulacağız inlelerde? Amaç inlelerdeki ani değişiklikleri, inle parlaklarındaki ani değişiklikleri bulma.
+
+20
+00:13:11,700 --> 00:13:26,200
+Birçok semantik bilgi, yani inceleneğin olduğuna dair bilgi, anlamsal bilgi, kenarlar ile enkod ediliyor. Böyle bir düşünce var. O bakımdan önemli.
+
+21
+00:13:27,940 --> 00:13:30,960
+Bilgi olarak baktığımızda piksel bilgisinden daha önemli.
+
+22
+00:13:39,187 --> 00:13:51,648
+Neden önemli? İşte nesne tanımına da kullanılabiliyor veya bir kısım bilgilerin elde edilmesi, sadece nesnelerin tanımılması değil de bilgilerin elde edilmesini de kullanılabiliyor.
+
+23
+00:14:00,563 --> 00:14:04,243
+Geometrisini elde etmekte kullanıyorum.
+
+24
+00:14:08,916 --> 00:14:33,196
+Eceler nereden geliyor? Yüzey normalinde bir kısım ani farklılaşmalar. Derinlikte ani farklılaşmalar. Yani nesne var, arkasında büyük bir derinlik farkı var. Renkte bir kısım farklılaşmalar.
+
+25
+00:14:34,067 --> 00:14:44,687
+Aydınlatmada bir kısım farklılaştırmalar var. Olabiliyor. Farklı nedenlerle ecler elde edilebiliyor. Neden olabiliyor farklı şeyler eclerine.
+
+26
+00:14:47,508 --> 00:14:54,227
+Mesela şurada bir görüntü var. Şurayı bir yakınlaştırdığımızda şu şekilde görüyoruz.
+
+27
+00:14:56,227 --> 00:15:01,107
+Ve ecler de işte bu şeyleri ayırıyor. Mesela şurada bir ec var.
+
+28
+00:15:01,631 --> 00:15:17,231
+Burada bir ec var, burada bir ec var. Burada bir ec var, gördüğünüz gibi. Yine şurada esasen bir ec var, ec der var.
+
+29
+00:15:22,836 --> 00:15:39,516
+Dolayısıyla o gözlemlerden neyi anlıyoruz? Bir edge, bir kenar, ingede parlaklık fonksiyonundaki hızlı bir değişim. Bu şekilde düşünüyoruz.
+
+30
+00:15:43,091 --> 00:15:50,731
+Şurada beyaz yüksek bir değerken birden şurada bir intensity'de değişiklik var.
+
+31
+00:15:52,471 --> 00:15:58,831
+Intensity yüksek bir değerken, beyazdan birden siyaya düşmüş. İleride de siyahden birden beyaza düşmüş.
+
+32
+00:15:58,932 --> 00:16:00,111
+Burada iki tane edge var.
+
+33
+00:16:05,268 --> 00:16:11,288
+Bu ani değişimler birinci türevle fark edilebiliyor.
+
+34
+00:16:11,288 --> 00:16:21,488
+Yani türev nedir hatırlarsanız fonksiyondaki değişimin miktarı da değil mi?
+
+35
+00:16:23,108 --> 00:16:28,048
+Birim unit değişime karşılık gelen fonksiyon değeri değişimi.
+
+36
+00:16:29,331 --> 00:16:35,991
+Dolayısıyla türevin yüksek olduğu ya da düşük olduğu ortalama bir türev düşünün.
+
+37
+00:16:37,331 --> 00:16:56,331
+Değişimin olmadığı yerlerde türev sıfır. Dolayısıyla değişimin sıfırdan çok farklı olduğu, türevin sıfırdan uzak olduğu noktalar bizim için edge olabilen yerler.
+
+38
+00:16:57,812 --> 00:17:01,491
+Ve oralar işte internet sistemin çok miktarda değiştiği yerler.
+
+39
+00:17:22,516 --> 00:17:31,316
+Burada ne yapılmış? Şu çizgi üzerindeki Intensity Profile çizilmiş.
+
+40
+00:17:34,316 --> 00:17:46,316
+Yani şuralar beyaz, burada da Intensity'ler beyaz. Şurada siyah bir kısım var. Burada birden bir ek düşmüş. Sonra tekrar beyazlar. Sonra şurada tekrar düşmüş.
+
+41
+00:17:48,915 --> 00:17:55,395
+İntensity, yani parlaklık değerine bakarsanız şu çizgi üzerinde şöyle bir graf çıkıyor.
+
+42
+00:17:59,395 --> 00:18:05,556
+Şu nokta nedir onu anlamadım. Niye öyle bir şey göstermişler.
+
+43
+00:18:11,763 --> 00:18:28,563
+Şimdi şunu mu göstermişler onu da anlamadım. Burada sanırım türevi göstermişlerdir. Yani internet profilin üzerinde türevi alıp türev değerlerini göstermişlerdir.
+
+44
+00:18:38,451 --> 00:19:03,612
+Negatif kirev değeri oluşmuş. Çünkü pozitiften yüksek bir değerden alçak bir değere geçmiş. Renk parlaklığı. Şurada da bir yükseliş var. Karanlıktan aydınlığa geçiyor. Dolayısıyla pozitif bir kirev görüyoruz.
+
+45
+00:19:10,451 --> 00:19:36,592
+İyi gibi gözüküyor. Yani şuraya baktığımızda bir threshold alsak falan, türevin maksimumlarını bulsak, hani edge'leri bulabiliriz gibi gözüküyor. Fakat pratikte bir miktar gürültü eklerseniz bu türev, gradient çok değişiyor.
+
+46
+00:19:38,548 --> 00:19:42,228
+Burada biraz Gauss Brütüs'ü eklenilmiş aynı resme.
+
+47
+00:19:45,907 --> 00:20:09,268
+Dolayısıyla şeyi çok fark ediyorum. Yani nesneniz gürültülüyse onun türevi çok inanılmaz gürültülüyor. Çok fazla inişli çıkışlı oluyor. Çok fazla ekstreme oluyor orada. Dolayısıyla onların kullanılması biraz zor oluyor.
+
+48
+00:20:13,652 --> 00:20:18,852
+Edge'i şöyle bir çıktı da, Edge'i nereden bulacaksın? Normalde Edge burada ama...
+
+49
+00:20:21,052 --> 00:20:23,251
+Konusiyonumuz bu, bu Trev.
+
+50
+00:20:25,552 --> 00:20:33,251
+Dolayısıyla şuradaki değişim var ama çok da öyle gözümüze çarpan bir şey değil.
+
+51
+00:20:42,708 --> 00:20:43,908
+Ne yapabiliriz?
+
+52
+00:20:48,627 --> 00:20:59,407
+Bunun için çözüm önce bir yumuşatmadan geçiyor. Bunu yapabiliriz. Yani orijinal fonksiyonumuz buysa, biraz gürültülü bir fonksiyon.
+
+53
+00:20:59,407 --> 00:21:12,708
+Bir yumuşatırsak, bir Gauss fikresinde yumuşatırsak, elde ettiğimiz fonksiyon böyle oluyor. Yani Gauss.
+
+54
+00:21:13,619 --> 00:21:19,859
+Bitresi yumuşatıyor. Şu aşırı titreşimleri ortadan kaldırıyor.
+
+55
+00:21:23,440 --> 00:21:31,420
+Onun üzerinde tekrar şey aldığımızda, TREV aldığımızda, D1, Dx TREV demek.
+
+56
+00:21:32,759 --> 00:21:40,400
+Bu sefer yine buralarda TREV çıktısı sıfıra yakın. Önemli yer, önemli değişiklik de belir.
+
+57
+00:21:40,948 --> 00:21:52,428
+Tireli çıktığımız var. Dolayısıyla asıl yaklaşımımız ne olacak? Yumuşatılmış İngenim Tirelinde Ekstremalara bakacağız.
+
+58
+00:21:57,811 --> 00:22:15,371
+Burada Derivative Torem of Convolution dediği, şurada şöyle gözüküyor. Mesela ingeyi önce bir gaussla, filtrele sonra türevini al. İki işlem var.
+
+59
+00:22:15,371 --> 00:22:21,991
+Ama biz türev alırken türevi zaten bir kernelle alacağız.
+
+60
+00:22:22,579 --> 00:22:39,279
+Kernel filtreleme ile alacağız, konvolüsyon ile alacağız. Dolayısıyla o da bir konvolüsyon. Yani şu d bölü dx de bir konvolüsyon. Dolayısıyla neden şunu yapmayalım?
+
+61
+00:22:45,364 --> 00:22:58,023
+Türev kerneliyle konvolüsyona sokalım. Tek bir körner elde edelim. Filtremizi, nesnemizi onunla tuturuyorum. Yani iki konvolüsyon değil de tek konvolüsyonla işi kurtarmaya çalışalım.
+
+62
+00:23:02,604 --> 00:23:05,023
+Bu Gauss...
+
+63
+00:23:07,892 --> 00:23:17,012
+Fonksiyonu türev alındığı zaman şöyle bir tek boyutunda böyle bir fonksiyon ortaya çıkıyor.
+
+64
+00:23:18,092 --> 00:23:29,052
+Bununla işte orijinal nesnemizi, sinyalimizi konvolüsyona soktuğumuzda yine aynı sonucu elde ediyoruz.
+
+65
+00:23:32,756 --> 00:23:42,536
+Bu filtreye Derivatif Op Gaussian Filtre deniliyor. Yani Gaussian'ın Türevi filtresi.
+
+66
+00:23:43,976 --> 00:23:50,836
+Elinizde bir Gaussian var. Bunu bir Türev ile filtreleriniz. Şöyle bir şey elde ediyorsunuz.
+
+67
+00:23:55,508 --> 00:23:57,268
+Tabii...
+
+68
+00:24:02,675 --> 00:24:20,975
+Filtrelerken, filtreyi ne kadar büyük tutarsanız, daha smooth bir inge elde ediyorsunuz. Ama bu bir trade-off. Burada lokalizasyonu kaybediyorsunuz.
+
+69
+00:24:31,251 --> 00:24:49,152
+Ejlerin yeri daha belirsiz hale geliyor. Ejler neredeydi? Bu biraz daha belirsiz hale geliyor. Şurada belki siz bir eç istiyorsunuz ama bakın burada iki eç falan oluşuyor neredeyse.
+
+70
+00:24:55,220 --> 00:25:15,760
+Bilmediği esasen farklı ölçeklerde ejderi elde ediyoruz. Yakından baktığımızda şöyle ejder var. Biraz uzaktan baktığımızda böyle ejder var. Biraz daha uzaktan baktığımızda böyle ejder var gibi. Skellerde, farklı ölçeklerde ejder elde ediyoruz.
+
+71
+00:25:20,468 --> 00:25:37,708
+İyi bir kenar bulma, kenar bulucusu tasarımı için bir kısım kriterler düşünülebilir. İyi bir detection istiyoruz. Yani tüm gerçek kenarları bulsun istiyoruz.
+
+72
+00:25:47,124 --> 00:25:57,104
+Yapıları bulmasını istiyoruz. İyi lokalizasyon istiyoruz. Yani edge'in yerini mümkün olduğunca doğru yerde versin.
+
+73
+00:25:58,903 --> 00:26:08,044
+Ve bir de mümkün olduğunca bir edge için bir tek edge noktası döndürsün, bir kenar noktası döndürsün.
+
+74
+00:26:08,844 --> 00:26:12,463
+Yani şurada mesela geniş bir alan var.
+
+75
+00:26:13,011 --> 00:26:15,071
+Burası için bir nokta döndürsün.
+
+76
+00:26:21,091 --> 00:26:26,632
+Edge Detection yaparken nereden fikirler alabiliyoruz?
+
+77
+00:26:26,751 --> 00:26:39,211
+İşte renk değişimleri, parlaklık değişimleri, doku değişimleri ve diğer yüksek seviye bilgiden.
+
+78
+00:26:39,763 --> 00:26:47,763
+Ne yapıyoruz? İpuçları alabiliyoruz. Continued and Clojure'larına demek istemiş şu anda.
+
+79
+00:26:50,763 --> 00:27:00,763
+Bu Edge Detector'lar arasında, Kenny Edge Detector öne çıkmış bir Edge Detector. Oldukça bilinen bir şey.
+
+80
+00:27:00,763 --> 00:27:05,548
+Orijinal makale şu 1986'da yayınlanmış.
+
+81
+00:27:07,251 --> 00:27:10,811
+Kemi tarafından.
+
+82
+00:27:13,152 --> 00:27:15,611
+A computational approach to edge detection demiş.
+
+83
+00:27:19,011 --> 00:27:23,951
+Bununla ilgili teorik bir kısım şeyler yapmış Kemi.
+
+84
+00:27:25,411 --> 00:27:28,291
+Gauss'un, Gauss'ya'nın birinci trevinin.
+
+85
+00:27:30,420 --> 00:27:38,860
+Signal to Noise Ratio ve lokalizasyonun çarpımını en iyi şekilde optimize ettiğini göstermiş.
+
+86
+00:27:41,420 --> 00:27:55,860
+Bununla ilgili Gene Edge Detector şeyini Wikipedia'daki sayfayı tavsiye edebilirim. Güzel bir açıkçası var orada. Başka yerlerde de var.
+
+87
+00:27:56,307 --> 00:28:09,608
+Bilgi bulabilirsiniz. Biz de burada açıklayacağız şimdi. Ama slide'ların yeterli olmadığı noktalarda, işte mesela TNZTK'ın Wikipedia'da güzelce açıklanmış olaya bakabilirsiniz.
+
+88
+00:28:11,608 --> 00:28:14,788
+Burada orijinal bir imgemiz var.
+
+89
+00:28:18,387 --> 00:28:21,288
+Derivative of Gaussian kütlesiyle
+
+90
+00:28:22,195 --> 00:28:29,516
+Bunu filtreleyeceğiz. Bu filtrenin bir X yönünde bir de Y yönünde olan versiyonlarını kullanacağız.
+
+91
+00:28:31,036 --> 00:28:39,996
+X yönünde olan versiyonunu kullandığımızda bunu elde ediyoruz. Y yönünde olan versiyonunu kullandığımızda bunu elde ediyoruz.
+
+92
+00:28:40,955 --> 00:28:48,596
+Bu iki türevi ne yapmamız lazım? Birleştirmemiz lazım. Birleştirmek için de türevin
+
+93
+00:28:49,008 --> 00:28:58,788
+Magnitude'ni, gradient magnitude. Biliyorsunuz bir boyutlu da derivatör deriz. Birden fazla boyutlu trevden bahsediyorsak gradient deriz.
+
+94
+00:29:00,248 --> 00:29:13,468
+Gradient magnitude. Birden fazla boyutta olduğunda elimizde birden fazla trev olduğu için x yönündeki trev, y yönündeki trev.
+
+95
+00:29:13,907 --> 00:29:28,228
+Elimizde iki tane değer oluyor. Dolayısıyla bir vektör oluyor. Vektörün magnetotunu alırsak da, her piksel için şöyle bir resim elde ediyoruz.
+
+96
+00:29:31,827 --> 00:29:41,708
+Ek olarak o vektörün yönünü de bulabiliriz. Ona da gradient orientation diyoruz.
+
+97
+00:29:42,467 --> 00:29:47,927
+Dolayısıyla her piksel için elimizde bir magnitude var, bir de yön var.
+
+98
+00:29:47,927 --> 00:29:55,067
+O yönü mesela arktanjant olarak düşünebilirsiniz.
+
+99
+00:29:55,668 --> 00:29:57,288
+Tanjantın tersi olarak.
+
+100
+00:29:57,940 --> 00:30:07,500
+O size Teta verir, bir açı verir. Dolayısıyla her pikselde gradiyantın açısını biliyorsunuz.
+
+101
+00:30:13,491 --> 00:30:26,751
+Şimdi dolayısıyla bunları yaptık. Yani Keni Edge Detektörü için bunları yapacağız. Öncelikle X yönünde Derivator Garsyon, sonra Y yönünde Derivator Garsyon uygulayacağız.
+
+102
+00:30:26,912 --> 00:30:38,672
+Dragant Magnitude hesap edeceğiz. Dragant Orientation hesap edeceğiz. Sonra Non-Maximum Suppression uygulayacağız her oryantasyon için.
+
+103
+00:30:41,140 --> 00:30:52,580
+Yani diyelim ki şu Q pikselindeyiz. Bu Q pikselinde ne var? Bir gradient hesabı yaptık.
+
+104
+00:30:54,780 --> 00:30:57,020
+Diyelim ki gradient şu yönü gösteriyor.
+
+105
+00:31:03,020 --> 00:31:04,700
+Şunu diyeceğiz.
+
+106
+00:31:06,420 --> 00:31:23,940
+Gradyantın yönüne devam edersek, şu bir piksel, şu da bir piksel. Şuradaki gradyant değerini interpolasyon ile bulalım. Aynı şekilde gradyantın ters yönüne de devam edelim.
+
+107
+00:31:26,963 --> 00:31:40,163
+Bu gradyantın tersi yönüne devam ettiğimizde tabii iki püselin arasına düşecek gradyantın geçtiği yer. O noktadaki gradyantı da yine interpolasyon ile bulalım.
+
+108
+00:31:40,163 --> 00:31:52,623
+Bunu şuradaki gradyant ve şuradaki gradyantın interpolasyonu ile bulabiliriz. Linear interpolasyonu ile. Oradaki P noktasındaki.
+
+109
+00:31:53,460 --> 00:32:13,720
+Gradiyant elimizde. R noktasındaki gradiyant da elimizde görüyoruz ki. Eğer Q'daki gradiyant değeri P'dekinden ve R'dekinden daha yüksek değilse ne yapıyoruz? Bu pikseli çöpe atıyoruz.
+
+110
+00:32:14,820 --> 00:32:20,940
+Diyoruz ki bu piksel bir maksimum değil bu gradiyant yanında.
+
+111
+00:32:21,556 --> 00:32:37,536
+Bu gradyanik yönünde şu veya şu daha iyi, daha yüksek cevap vermiş. Dolayısıyla P'yi ya da V'yi kullanacağız. Hangisi daha büyükse. Bu pikselleri tek tek tabii gözden geçireceğiz.
+
+112
+00:32:39,236 --> 00:32:48,536
+Dolayısıyla Q'yu kullanmayacağız. Bu işe non-maximum suppression deniliyor. Yani maksimum olmayan piksellerin.
+
+113
+00:32:49,140 --> 00:33:15,140
+Baskılanması. Her bir gradyant oryantasyonu için bu pikseldeki gradyant oryantasyonu bir tane olacak. Bu pikselde başka bir oryantasyon olacak. Bu pikselde başka bir oryantasyon olacak. Bunların her biri için bu kontrolü yapıp maksimum olmayan pikselleri
+
+114
+00:33:15,700 --> 00:33:19,500
+Baskılıyoruz. Diyoruz ki bunlar edge'de değil.
+
+115
+00:33:20,500 --> 00:33:21,200
+Kenarda değil.
+
+116
+00:33:21,819 --> 00:33:23,559
+Bunu yapmamızdaki amaç ne?
+
+117
+00:33:25,559 --> 00:33:29,440
+Edge'in bir piksel olmasını istiyoruz.
+
+118
+00:33:29,879 --> 00:33:31,059
+Dar bir edge istiyoruz.
+
+119
+00:33:38,708 --> 00:33:47,908
+Interpolasyon Matlab'da imrisayiz diye bir şey var. Python'da OpenCV'de resayiz diye bir şey var.
+
+120
+00:33:51,108 --> 00:33:53,908
+Diye not almışım ben zamanında herhalde.
+
+121
+00:33:57,348 --> 00:34:05,108
+Burada CV2 Intertype ile Interpolasyon tipini seçebiliyorsunuz.
+
+122
+00:34:05,811 --> 00:34:31,391
+Nearest Neighbor Interpolation denilen bir yöntem var. Bu şu. Diyelim ki şu noktadaki değeri bulacaksınız. Fonksiyon değerini, parlaklık değerini bulacaksınız. Dört tane değer var en yakınında. Bu dört değerden en yakını neyse onu kabul ediyorsunuz. Dolayısıyla şöyle bir imgeniz varsa.
+
+123
+00:34:33,427 --> 00:34:34,907
+Bu ilgelerde
+
+124
+00:34:42,260 --> 00:34:43,400
+Bu imgelerde
+
+125
+00:34:49,268 --> 00:35:07,448
+Ne yapıyoruz? Bir karesel alan direkt bu pikselin değerini alıyor veya bu noktanın değerini alıyor. Şu karesel alan bu noktanın değerini alıyor. Nearest Interpolation'da bu var.
+
+126
+00:35:18,643 --> 00:35:38,063
+Fakat lineal interpelasyonda bir lineal interpelasyon yani bu noktanın içinde bulunduğu en yakın dörtlüğü düşünün. O dördünün bir ortalamasını alıyorsunuz.
+
+127
+00:35:46,739 --> 00:36:06,239
+16 tane komşusunun bir ortalamasını alıyorsunuz. Bunların avantaj ve dezavantajları tabii Nearest Neighborhood çok hızlı ama gördüğünüz gibi bloklu sonuçlar veriyor, ejder veriyor.
+
+128
+00:36:07,239 --> 00:36:12,479
+Bilineer oldukça iyi sonuçlar veriyor ve oldukça hızlı.
+
+129
+00:36:14,420 --> 00:36:30,420
+Daha bir görsel sonuçlar verebiliyor. Ama daha yavaş. Çünkü 16'ya 16'lık her pixel için bir alanda şey almanız gerekiyor. Burada bir slide olacak mı? Onu göremiyorum.
+
+130
+00:36:34,291 --> 00:36:39,331
+Belin eğer interpolasyonu anlatan bir slide vardı.
+
+131
+00:36:39,491 --> 00:36:41,291
+Onu atladı. Sanırım bu...
+
+132
+00:36:44,596 --> 00:36:50,636
+Slide izlenmiş. Onu geri açalım. O slide'ı da görelim.
+
+133
+00:37:03,188 --> 00:37:04,715
+Evet, burada...
+
+134
+00:37:08,851 --> 00:37:16,211
+Bilgisayar Interpolasyon açıklanmış. Bilgisayar Interpolasyon, Wikifedya'dan olan bir örnek var burada.
+
+135
+00:37:22,516 --> 00:37:28,256
+Şu örnekte kırmızı noktaların intensity değerlerini biliyoruz.
+
+136
+00:37:29,256 --> 00:37:33,556
+Veya gradient ile ilgili konuşuyorsak gradient değerlerini görebiliyoruz.
+
+137
+00:37:33,556 --> 00:37:39,916
+Yani hangi fonksiyonu interpelasyona sokacaksak o değerleri biliyoruz.
+
+138
+00:37:41,796 --> 00:37:43,936
+Bir linear interpelasyonda fikir şu.
+
+139
+00:37:48,596 --> 00:37:59,695
+Biner Interpolasyonunu kendi arasında alalım. Merak ettiğimiz yer de şu, yeşil nokta. Yani yeşil noktada fonksiyon değerini bulmak istiyoruz.
+
+140
+00:38:14,036 --> 00:38:34,416
+Interpolasyonunu elde ediyoruz mavi olarak. Buna değdirelim. Böylece X yönünde bir interpolasyon almış olduk. Aynı şekilde X yönünde interpolasyonu şu aşağıdaki iki nokta arasında da alıyoruz. V2, V1'i elde ediyoruz mavi.
+
+141
+00:38:34,867 --> 00:38:47,367
+Daha sonraki adımda iki mavinin interpelasyonunu yine bu uzaklıklara bağlı olarak aldığımızda T noktasındaki değeri elde etmiş oluyoruz.
+
+142
+00:38:49,148 --> 00:38:52,407
+Bununla ilgili sayısal bir örnek var burada.
+
+143
+00:38:56,827 --> 00:38:58,567
+Bir de şöyle bir şey var.
+
+144
+00:39:00,307 --> 00:39:18,927
+Bu interpolasyon yapacağınız kırmızı noktalar birim kare üzerindeyse, yani değerler F00, F01, yani koordinatlar 00, 01, 10, 11 ise şunların koordinatları.
+
+145
+00:39:18,927 --> 00:39:25,927
+O zaman böyle güzel bir matriks denklemi de var, direkt bulabileceğimiz. Ama tabii...
+
+146
+00:39:26,996 --> 00:39:28,996
+Pratikte böyle de olmuyor.
+
+147
+00:39:32,996 --> 00:39:34,996
+Esasen böyle değil mi?
+
+148
+00:39:35,996 --> 00:39:39,996
+İnde işleme olarak düşündüğümüzde hep bir gir gibi geliyor.
+
+149
+00:39:39,996 --> 00:39:49,996
+Burayı sıfır sıfır alırsa burayı bir gir, burayı bir sıfır, burayı bir gir gibi alabiliriz.
+
+150
+00:39:49,996 --> 00:39:53,996
+Yani algoritmayı programımızı nasıl yazdığımıza bağlı.
+
+151
+00:39:54,867 --> 00:40:03,587
+Çünkü imge işlemede, imgelerde piksellerin arasını bir uzaklıkta kabul ediyoruz.
+
+152
+00:40:03,587 --> 00:40:09,987
+Piksellerin arası uzaklık bir. Dolayısıyla bu bir piksel, burada bir piksel ise arası bir uzaklık.
+
+153
+00:40:09,987 --> 00:40:14,068
+Dolayısıyla şunu kullanabilmemiz lazım.
+
+154
+00:40:14,068 --> 00:40:19,507
+Evet, bu bilineer intercalation.
+
+155
+00:40:29,235 --> 00:40:43,496
+Dolayısıyla ne dedik? Bu interpolasyonlardan yararlanarak non-max suppression yapıyoruz. Bu şekildeki bir in de non-max suppression yapınca şu şekildeki bir in diye dönüşüyor.
+
+156
+00:40:55,092 --> 00:41:04,092
+Tek piksel genişliğindeki bir şeridi ölmüşüyor. Çok daha ince, edge'ler buluyoruz.
+
+157
+00:41:08,052 --> 00:41:17,112
+Şimdi bir de Kennedy'e hysteresis thresholding denilen bir şey var. Burada da fikir şu.
+
+158
+00:41:23,112 --> 00:41:28,891
+Gradient Magnitude'unu içe bölelim.
+
+159
+00:41:34,324 --> 00:41:43,324
+Bir threshold değil de iki threshold uygulayalım. Normalde ne yaparız? Diyelim ki gradient magnitude'u.
+
+160
+00:41:47,324 --> 00:41:53,324
+Diyelim ki şöyle gradient magnitude'lar var. Şöyle bir threshold uygularız.
+
+161
+00:42:01,556 --> 00:42:25,496
+Çok. Bundan önce bir absolut almamız lazım ki negatifte yüksek değerler de iyi bizim için. Onun için önce bir absolut alacağız. İngilizcesiyle. Dolayısıyla değerler, yani şuradaki değerler sıfıra yakın değerler, buradaki değerler büyük, pozitifte de negatif değerler diyeceğiz.
+
+162
+00:42:26,195 --> 00:42:37,615
+Normalde bunu yaparız. Bunlar Edge'dir deriz. Ama şey diyor ki, Ken'i şöyle yapsak, biz 3 tane threshold uygulasak.
+
+163
+00:42:41,364 --> 00:42:43,307
+Hiç stres oldu bu nasıl?
+
+164
+00:42:47,860 --> 00:42:58,480
+ve Gradient Magnitude'un en düşük olduğu pikselleri direkt şöpe atsak. Buradaki şey çok düşük.
+
+165
+00:43:04,851 --> 00:43:07,851
+Nanmax Suppression'dan sonra bahsediyorum.
+
+166
+00:43:07,851 --> 00:43:11,851
+Nanmax Suppression'dan sonra yine bir şey yapılacak.
+
+167
+00:43:11,851 --> 00:43:21,851
+Yani bir kısım ezler çöpe atılmak istemiyor. Çünkü şu yüze bakarsanız şurada bir sürü ezler var. Bunlardan kurtulmak istiyoruz.
+
+168
+00:43:23,851 --> 00:43:27,851
+Ne yapıyoruz? 2 tereşolt değeri belirliyoruz.
+
+169
+00:43:30,228 --> 00:43:57,328
+Alttaki threshold'un altını direkt zaten çöpe atıyoruz. Üstteki threshold'da ise bir yüksek high level'lar var. Bunlar high level. Bunlara strong edge diyoruz. Güçlü. Buradaki edge, şunlar güçlü. Bunları kesinlikle alacağız. Burada sıkıntı yok. Soru şu.
+
+170
+00:43:58,900 --> 00:44:00,000
+Buradakiler
+
+171
+00:44:03,827 --> 00:44:06,587
+Weak, yani güçlü olmayan.
+
+172
+00:44:11,284 --> 00:44:27,724
+Bu kenarların, güçlü olmayan kenarların bir kısmını istiyoruz, bir kısmını istemiyoruz. Bunu gözlemlemiş. Bunların bir kısmı işe yarıyor, bir kısmı işe yaramıyor. Bunu gözlemlemiş.
+
+173
+00:44:39,603 --> 00:45:05,724
+Bu kenarlardan başlayayım. Piksel piksel yürüyeyim. O güçlü kenarlardan başlayıp devam eden güçsüz kenarları kabul edeyim. Ama herhangi bir güçlü kenara bağlı olmayan güçsüz kenarları çöpe atayım. Buna histerizi streşol günü deniliyor.
+
+174
+00:45:07,411 --> 00:45:27,051
+Algoritma bu şekilde çalışıyor. Yani şu bir güçlü kenar. Bu da bir güçsüz kenar. Şu kısmı kabul ediyor. Bu da en düşük. Bunları diyelim ki kabul etmiyor.
+
+175
+00:45:30,099 --> 00:45:41,260
+Yani bir körlüğü düşünürsek, bir eğriyi, bu eğrinin bir kısmı güçlüyse oradaki güçsüz kenarları da kabul ediyor.
+
+176
+00:45:45,012 --> 00:46:03,912
+Bunu uyguladığınızda bu yüzde falan olan o güçsüz kenarları da çöpe atıyorsunuz. Ama asıl önemli yerlerdeki güçsüz kenarlar kalıyor. Dolayısıyla daha net bir EZTikşin elde edebiliyoruz.
+
+177
+00:46:05,292 --> 00:46:10,572
+Özetlemek gerekirse ne yapıyoruz? Yeni EZTikşin ne yapıyor?
+
+178
+00:46:11,123 --> 00:46:26,884
+Filtreyi Derivative O'u karşımda X ve Y'de Filtre'liyor. Böylece Trev alıyor. Bu Trev'in Magnet Trev'ini, büyüklüğünü ve oryantasyonu buluyor.
+
+179
+00:46:28,884 --> 00:46:34,724
+Sonra Interpolasyon Yardımıyla Non-Max Suppression uyguluyor.
+
+180
+00:46:41,235 --> 00:47:00,195
+Ne yapıyor? Histerisiz denilen bir şey var. İki threshold belirliyor. Bir yüksek, bu düşük, bir de yüksek threshold. Yüksekden de yüksek threshold'un üzerindeki değerlerden başlıyor. Onları kabul ediyor.
+
+181
+00:47:08,244 --> 00:47:11,543
+Ki değerler varsa onları çöpe atıyorum.
+
+182
+00:47:12,543 --> 00:47:15,344
+Enerji detektör özetle bu.
+
+183
+00:47:16,444 --> 00:47:23,543
+Bu detektör MATLAB'da ve Open CV'de hazır olarak geliyor.
+
+184
+00:47:28,659 --> 00:47:40,199
+Burada tabi Ejdet Detektör'ün bir şeyini ayarı, şu sigma değeri.
+
+185
+00:47:42,699 --> 00:47:55,059
+Sigma değeri neyin sigması var arkadaşlar? Gauss-Soyan'ın sigması var değil mi? Bu sigma nedir? Gauss-Soyan'ın. Şurada derivatör bir Gauss-Soyan var ya, bu Gauss'un sigması.
+
+186
+00:47:56,947 --> 00:48:23,307
+Standart sapması. Bu standart sapma değerini değiştirdiğimizde ne oluyor? Ejilerin kuvvetini ayarlayabiliyorsunuz. Küçük sigmalarda daha az güçlü ejleri de kabul ederken büyük sigmalarda daha güçlü ejleri alabiliyorsunuz.
+
+187
+00:48:36,340 --> 00:48:38,720
+Bu kısımla ilgili sorunuz var mı arkadaşlar?
+
+188
+00:48:43,891 --> 00:49:09,311
+Yok. Tamam. Şimdi devam edelim. Burada bir egzersiz yazdım ama bir sonraki kısmı bitirip bitirmediğime bağlı olarak bu egzersize verebilirim veya vermeyebilirim. Yani öder gibi düşünün.
+
+189
+00:49:11,347 --> 00:49:20,927
+Diyorum ki, keni edge detektörü kendiniz uygulayın. Kendiniz keni edge detektör yazın diyeceğim.
+
+190
+00:49:25,396 --> 00:49:34,396
+Ama önce şeye bakmak istiyorum. Bu hafta bir sonraki konuyu bitirebilirsem onu ödev olarak vereyim. Eğer bitiremezsem bunu vereceğim.
+
+191
+00:49:56,275 --> 00:50:08,275
+Şimdi bizim tabii amacımız ne? Nesneleri tanımak. Nesneleri tanımak için...
+
+192
+00:50:13,172 --> 00:50:31,172
+Ne yapıyorduk? Mesela Edge'lerden bahsettik. Edge'ler iyi fakat şöyle bir sorun var. Edge global bir özellik. Global özelliklerle nesne tanımaya çalışırsanız büyük sorunlarla karşılaşıyorsunuz.
+
+193
+00:50:36,051 --> 00:50:40,351
+Ne gibi sorular olabiliyor? Mesela örtüşme sorunu olabiliyor.
+
+194
+00:50:42,547 --> 00:50:44,667
+En büyük sorun o.
+
+195
+00:50:46,107 --> 00:50:47,547
+Veya...
+
+196
+00:50:51,315 --> 00:51:11,115
+Aynı nesnenin farklı konfigürasyonlarını tanıyamıyorsunuz. Mesela bir insan var, kollarını açmış bir insan var, bir de kollarını aşağıya indirmiş bir insan var. Bunları birbirine match etmek çok zor oluyor. Dolayısıyla araştırmacılar ne yapmaya karar verdiler?
+
+197
+00:51:12,400 --> 00:51:23,100
+Yerel özellikler bulalım. Acaba yerel özellikleri önce bir belirleyelim. Yerel özelliklerden daha sonra nesneleri tanıyabilir miyiz?
+
+198
+00:51:24,920 --> 00:51:38,960
+Bunun için de ilgi noktaları ve köşeleri, daha sonraki bölümde de ilgi bölgeleri ve özellikleri.
+
+199
+00:51:39,344 --> 00:51:45,144
+Onları işleyeceğiz. Bunları gündeme getiriyorlar.
+
+200
+00:51:51,155 --> 00:51:53,155
+Correspondence, işte bu...
+
+201
+00:51:56,916 --> 00:52:10,916
+Birbirine denk gelen denkliği, resimler arasındaki birbirine denk düşen, karşılık gelen şeyleri belirtiyor.
+
+202
+00:52:10,916 --> 00:52:23,635
+Mesela burada stop levhası var. Farklı bir ilgi bu. Şuradaki TO harflerini içeren bölgeler,
+
+203
+00:52:24,467 --> 00:52:41,687
+Baktığımızda birbirine çok benziyor. Buradan bu levha ile bu levhanın aynı levha olduğunu, yani aynı nesne değil ama çok benzer nesneler olduğunu çıkarabiliriz.
+
+204
+00:52:51,827 --> 00:53:00,547
+Bölgelerin, kenarların eşleştirilmesiyle ortaya çıkarmaya çalışacağız.
+
+205
+00:53:04,851 --> 00:53:27,811
+Buradan bir kısım teknikler geliştirilebilir. Mesela bu tekniği bilmiyorum ama slide'da var. İki imgeyi birbiriyle eşleştiren bir fundamental matrix çıkarılabiliyormuş. Merak ederseniz Silios Avalıza'nın slide'ından gelmiş bu araştırabilirsiniz.
+
+206
+00:53:31,059 --> 00:53:38,460
+Veya Structure from Motion gibi şeylerden yöntemlerde kullanılabiliyor.
+
+207
+00:53:42,140 --> 00:53:47,059
+Temel fikir şu, yani karşılık gelen ilgelerde,
+
+208
+00:53:50,059 --> 00:53:54,100
+farklı ilgelerde, karşılık gelen,
+
+209
+00:53:54,867 --> 00:54:11,547
+Yerel özellikleri bulalım. Yani küçük bir alandaki yerel derken küçük bir alandaki özellikleri bulalım ve bunları eşleştirmeye çalışalım. Bu fikir çok faydalı. Nöral netlörde çıkmadan önce.
+
+210
+00:54:12,884 --> 00:54:18,483
+Bunlar, direkt bunlar üzerine kullanan algoritmalar çok kullanıyor.
+
+211
+00:54:18,603 --> 00:54:23,743
+Nöral networkler de, derin öğrenmeler de, algoritmalar da yine bu fikri kullanıyor.
+
+212
+00:54:24,403 --> 00:54:27,623
+Ama katmanlara yerleştiriyor bu fikirleri.
+
+213
+00:54:32,743 --> 00:54:37,083
+Bu feature pointlere, bunlara feature point diyoruz.
+
+214
+00:54:37,083 --> 00:54:39,463
+Mesela karşılık gelen noktalar.
+
+215
+00:54:40,788 --> 00:55:07,827
+Yani buradaki heykelin şurasında bir nokta var. Aynı nokta burasında de burada görünüyor. Dolayısıyla bu iki nokta birbiriyle denk. Bu noktalara feature points diyoruz, özellik noktası. Bunlar birçok farklı uygulama için kullanılabiliyor. İlgelerin align edilmesi, üst boyutlu.
+
+216
+00:55:08,288 --> 00:55:26,907
+Şekin yani haritalama, hareketlerin takibi, robotların navigasyonu, resimlerin indekslenmesi veya geri getirilmesi, resimdeki nesnelerin tanınması.
+
+217
+00:55:27,807 --> 00:55:31,928
+Birçok bilgisayarla görü uygulamasında kullanılabiliyor.
+
+218
+00:55:37,108 --> 00:55:43,367
+Bu derste bu özellik noktalarına bakacağız.
+
+219
+00:55:46,108 --> 00:55:49,648
+Literatürde bunlar key point olarak da geçiyor bazen.
+
+220
+00:55:49,788 --> 00:55:59,847
+Interest pointler, key pointsler veya bazen bunlara özellikler olarak da, özellik olarak da bunlardan bahsediyor biliyor literatürde.
+
+221
+00:56:08,788 --> 00:56:11,447
+Diyelim ki orijinal bir resminiz var.
+
+222
+00:56:11,447 --> 00:56:13,447
+Ve...
+
+223
+00:56:17,523 --> 00:56:40,523
+Sizden şöyle bir şey istedim. Dedim ki, orijinal resimde bir yere tıklayacaksınız. Orayı tıklayıp belirleyeceksiniz. Sonra ben o resmi biraz deforme edeceğim. Mesela biraz yönünü çevireceğim. Biraz F'in transforma sokacağım. Biraz yukarıdan aşağıdan basacağım. Biraz açısal...
+
+224
+00:56:42,996 --> 00:57:03,516
+Açısal, görüş açısını değiştireceğim, bakış açısını. Resmi aynı manzara olacak ama biraz değiştireceğim. Hangi noktayı seçerdiniz? Yani şeyini, ha ne diyeceğim? Bunu yaptıktan sonra o noktayı tekrar bulmanızı istiyorum.
+
+225
+00:57:09,108 --> 00:57:24,507
+Muhtemelen cevabınız köşelerdir değil mi? Yani şurada bir yeri seçmezdiniz. Çünkü edge üzerinde aynı yeri bulmanız çok zor olur ama şöyle bir köşeyi mesela tak diye yine tekrar karşılık diyen yerde bulabilirsiniz.
+
+226
+00:57:24,507 --> 00:57:35,827
+Veya şu köşeyi tak diye bulabilirsiniz. Veya bu köşe, bu kenarın ucu bir köşe olarak düşünülebilir. Şu köşeler.
+
+227
+00:57:36,403 --> 00:57:52,703
+Böyle köşeleri direkt tak diye bulabilirsiniz. İşte bu noktalar, yani resmi bozduğunuzda tekrar kolaylıkla bulabildiğimiz noktalara ilgi bölgeleri diyoruz. Bu bölgeler ilgi bölgeleri.
+
+228
+00:57:58,516 --> 00:58:22,855
+İlgi bölgeleri şu şekilde kullanabiliriz. Birinci resimde bir kısım önemli ilgi bölgelerini bulalım. İkinci resimde de önemli ilgi bölgelerini bulalım. Sonra her bir ilgi bölgesi etrafında bir diğer alan belirliyelim. Sonra bu alanlardan bir özellikler çıkaralım.
+
+229
+00:58:22,855 --> 00:58:25,355
+Bu alanlardan özellikler çıkaralım.
+
+230
+00:58:25,940 --> 00:58:41,119
+Sonra bu özellikleri ne yapalım? Birbiriyle match edelim. Yani buradaki alan, şuradaki alanla yeterince yakın mı? Bunun etrafındaki alan, bu alanla yeterince yakın mı?
+
+231
+00:58:41,119 --> 00:58:50,579
+Bu soruyu soralım ve birbirine yakın bir şekilde görmüş olarak yakın alanları bulalım. Dolayısıyla ne yapmış olduk?
+
+232
+00:58:51,764 --> 00:59:15,103
+Benzer bölgeleri bulmuş olduk bilgilerde. Daha sonra algoritmayı devam ettirip birçok şey yapabiliriz orada neleriyle ilgili. Yani resimleri birleştirebiliriz, resimdeki aynı nesneleri bulabiliriz vs. vs. takip yapabiliriz.
+
+233
+00:59:15,503 --> 00:59:20,503
+Bu meçh edilmiş bölgeler yoluyla birçok şeyi yapabiliriz.
+
+234
+00:59:24,143 --> 00:59:29,884
+Tabii bu ilgi bölgeleri ya da key pointler gibi dönemeldiyor.
+
+235
+00:59:31,224 --> 00:59:35,183
+Bunların ne olmasını istiyoruz? Repeatable ve distinctive.
+
+236
+00:59:35,483 --> 00:59:40,923
+Yani tekrar tekrar bulunabilir ve distinctive. Görünür.
+
+237
+00:59:43,284 --> 00:59:49,284
+Bu lokal feature'ler, invariant lokal feature'lerden yararlanarak…
+
+238
+00:59:57,907 --> 01:00:18,907
+İmge içeriği transform edilip, local feature koordinatlarına transfer ediliyor. Bu local feature koordinatları taşımaya, dönmeye ve ölçeklemeye ve diğer bir kısım...
+
+239
+01:00:22,739 --> 01:00:41,920
+Bozulmalara diyelim, karşı dayanıklı oluyor. Daha sonra da bunları ne yapabiliyoruz? Meç edebiliyoruz. Yani kendi koordinatını alıp lokal özellik koordinatına getiriyorsunuz bölgeleri sonra meç edebiliyorsunuz.
+
+240
+01:00:44,884 --> 01:00:51,884
+Bu meç ettikten sonra bu resmi, bu kamyonu gidip mesela bu resimde bulabiliyorsunuz.
+
+241
+01:00:56,755 --> 01:01:15,395
+Başka bir örnek mesela panorama stitching. Yani bir panorama yapmak istiyoruz. Aynı manzaranın daha geniş bir görüntüsünü elde etmek istiyoruz iki tane üngeden.
+
+242
+01:01:16,155 --> 01:01:21,375
+Burada diyelim ki şu kısım ve şu kısım hemen hemen aynı ünge.
+
+243
+01:01:22,996 --> 01:01:28,496
+Şu kısımlar farklı. Ne yapmak istiyoruz? Bunları birleştirmek istiyoruz.
+
+244
+01:01:30,236 --> 01:01:36,696
+Buna panorama stitching deniliyor. Mesela ne yapılabilir? İlgi bölgeleri bulunabilir.
+
+245
+01:01:38,076 --> 01:01:44,496
+Sonra ilgi bölgelerinden o özellikler çıkarılabilir.
+
+246
+01:01:48,148 --> 01:02:04,688
+Özellikleri çıkarıyoruz. Sonra match edilebilir. Karşılık gelen noktalar birbirine en yakın noktaların aynı nokta olduğu varsayımından yola çıkarak. Sonra da o yengeler birleştirilebilir.
+
+247
+01:02:06,748 --> 01:02:14,987
+Güzel özelliklerin karakteristikleri nedir diye bir sanımlamalar yapmış. Repeatability demiş.
+
+248
+01:02:16,148 --> 01:02:27,408
+Aynı özellik farklı imgelerde geometrik ve fotometrik transformasyonlar olsa bile bulunabilmeli.
+
+249
+01:02:29,548 --> 01:02:32,288
+Her bir feature distinctive olmalı demiş.
+
+250
+01:02:33,968 --> 01:02:35,728
+Salo Yansı demiş buna.
+
+251
+01:02:36,528 --> 01:02:39,468
+Distinctive derken ne demek istiyorsanız tam emin değilim.
+
+252
+01:02:42,003 --> 01:03:06,143
+Compactness and Efficiency. Normalde bu ingede kaç piksel var? Bine binlik bir pikselde bir milyon, bine binlik bir ingede bir milyon piksel olur. Sizin çok daha az sayıda noktanız olması mantıklı ki,
+
+253
+01:03:07,347 --> 01:03:09,728
+İşleminiz yeterince hızlı olsun.
+
+254
+01:03:10,948 --> 01:03:20,628
+Locality, feature'ın yeterince küçük bir alanda görünebilmesini istiyoruz.
+
+255
+01:03:20,628 --> 01:03:33,428
+Ki, yeterince küçük bir alanda olursa üst üste gelmeden veya özelliklerin birbirine girmesinden korunabilir.
+
+256
+01:03:40,244 --> 01:03:59,184
+Şimdi buradaki amacımız repeatability dedik. Repeatability neden önemli? Yani farklı yüngelerde çünkü aynı görüntüyü match edebilmek istiyoruz. Dolayısıyla aynı noktalar farklı yüngelerde biraz bozulmuş da olsa yenge bulunabilmeli.
+
+257
+01:04:00,664 --> 01:04:02,644
+Burada mesela bakın.
+
+258
+01:04:03,603 --> 01:04:10,403
+Bu nokta burada bulunamamış, bu nokta burada bulunamamış, bu nokta burada bulunamamış, bu nokta burada bulunamamış.
+
+259
+01:04:11,543 --> 01:04:13,843
+Burada bir nokta bulunmuş ama bu imgede bulunmamış.
+
+260
+01:04:14,743 --> 01:04:22,963
+Şimdi burada ne oldu? Yeterince birbiriyle meç eden nokta yok. Dolayısıyla bir şey yapamayız bile.
+
+261
+01:04:30,320 --> 01:04:36,820
+Tek noktaları bulma prosedürünü diğer imgelerden bağımsız olarak çalıştırabilmeliyiz.
+
+262
+01:04:42,300 --> 01:04:45,260
+Distinctiveness burada biraz açıklamış.
+
+263
+01:04:48,200 --> 01:04:53,960
+Şimdi diyelim ki burada bölge var. İmgeyi buldunuz. Bir nokta buldunuz.
+
+264
+01:04:56,980 --> 01:05:07,819
+Kendisine benzemeli, diğerlerinden farklı olmalı. Bunu sağlayan noktalar istiyoruz. Buna destekli birini istiyoruz.
+
+265
+01:05:15,347 --> 01:05:40,768
+Dolayısıyla ne yapacağız? Ana işlemler. Bunları bulacağız. Daha sonra bunların tariflerini yapacağız. Sonra da meç edeceğiz. Böyle üç ana adımdan bahsediyoruz burada. Bu dersimizde birinci adımdan, yani noktaların bulunmasından bahsedeceğiz. Sonraki derslerde bu noktaların tarifi ve meçin eşlenmesine geçeceğiz.
+
+266
+01:05:42,291 --> 01:06:00,331
+Birçok farklı nokta bulucusu var. Hesiyan, Harris, Laptasyan, Dog. Bunlar ta 2004'teki en yeni şey, 2004'te buradaki şeyler.
+
+267
+01:06:00,331 --> 01:06:08,451
+Tabii bu slide'lar yenilense çok daha yeni inge bulucuları bulunabilir.
+
+268
+01:06:09,331 --> 01:06:34,032
+Fakat bunların birçoğu mesela Haris nokta bulucusuna bağlı. Yani bir kısmı temel. Mesela Haris nokta bulucusu temel. Dolayısıyla Haris nokta bulucusunu burada işleyeceğiz. Genel bir mantık vermiş olacağız. Siz bu yöntemleri kullanmak isterseniz en son, en modern nokta bulucuları.
+
+269
+01:06:34,771 --> 01:06:37,451
+Ne yapabilirsiniz, bulabilirsiniz.
+
+270
+01:06:41,907 --> 01:06:45,967
+Hesiyan ve Harris. Harris nokta bulucusu bir köşe bulucusu.
+
+271
+01:06:49,148 --> 01:06:50,891
+Temel fikri...
+
+272
+01:06:55,603 --> 01:06:56,043
+Şu.
+
+273
+01:07:03,572 --> 01:07:09,251
+Noktayı küçük bir pencereye bakarak kolaylıkla tanıyabilmeliyiz.
+
+274
+01:07:10,152 --> 01:07:11,872
+Bu ne demek?
+
+275
+01:07:14,112 --> 01:07:25,731
+O küçük pencereyi herhangi bir yöne shift ederseniz, kaydırırsanız, imgi parlaklığında büyük bir değişiklik olmalı.
+
+276
+01:07:29,780 --> 01:07:54,019
+Düşünün, şurada olursa penceremiz, herhangi bir yöne pencereyi birazcık kaydırdığımızda, bu bölge içerisinde büyük bir parlaklık değişikliği olmuyor.
+
+277
+01:07:54,620 --> 01:07:56,920
+Düz bir bölge çünkü bu.
+
+278
+01:07:58,099 --> 01:08:20,680
+Bir kenarda ne oluyor? Kenarda komşuluğu, o window'u kenarın dikine hareket ettirirseniz büyük bir cevap geliyor ama kenar boyunca hareket ettirdiğimizde büyük bir parlaklık değişikliği olmuyor.
+
+279
+01:08:20,680 --> 01:08:24,519
+Ama bir köşeyi düşünün.
+
+280
+01:08:25,427 --> 01:08:33,847
+Bir köşede hangi yöne hareket ettirirseniz ettirin bu konuşuluğu.
+
+281
+01:08:34,987 --> 01:08:38,827
+Oldukça büyük bir cevap alıyorsunuz.
+
+282
+01:08:40,148 --> 01:08:42,407
+Parlaklık dönüşümü cevabı alıyorsunuz.
+
+283
+01:08:47,828 --> 01:09:04,648
+Bu mantığı kullanan bir yöntem var. Harris ve Stephens tarafından A Combined Corner and Edge Detector olarak yayınlanmış bir paper.
+
+284
+01:09:11,828 --> 01:09:29,948
+Ve diyor ki, ana fikir şu, bir köşenin çevresindeki bölgede image gradientı, türevi, hatırlarsınız türev bize imgenin değişimini veriyor ya.
+
+285
+01:09:31,747 --> 01:09:36,708
+Az önce bu fikri Kenev Zetetür'de de kullanmıştık, burada da kullanıyoruz.
+
+286
+01:09:40,756 --> 01:09:53,676
+İki ya da daha fazla dominant direction'da yönde ne yapması lazım? Büyük cevap vermesi lazım.
+
+287
+01:09:56,556 --> 01:10:03,355
+Yani iki ya da daha fazla büyük gradient yönelik olmasına lazım.
+
+288
+01:10:07,923 --> 01:10:22,584
+Buradan elde edilen konuyular, bu yöntemle elde edilen konuyular, repeatable ve distimited tekrar bulunabiliyor ve fark ediliyor. Yani farklı bölgeler veriliyor.
+
+289
+01:10:25,344 --> 01:10:34,304
+Bunun bir matematiği var. Zaman olarak nasıl gittik şimdi? Bir saat on dakika falan oldu.
+
+290
+01:10:36,243 --> 01:10:47,884
+Bu matematiğe girmeden bir 10 dakika ara verelim. Bu iki ders yapmayı düşünüyorum bugün. Blok ders yapmayı düşünüyorum. Bir sonraki blok derse geçmeden önce bir ara verelim.
+
+291
+01:10:52,435 --> 01:10:56,435
+Şu anda 15-11. Dolayısıyla...
+
+292
+01:11:01,076 --> 01:11:03,896
+15-21'e kadar ara bölümde.
+
+293
+01:23:34,996 --> 01:23:36,996
+Evet, arkadaşlar, seslerle ilgili değil mi?
+
+294
+01:24:06,292 --> 01:24:07,332
+Sesinde de bir mu.
+
+295
+01:24:21,108 --> 01:24:21,868
+Geliyor haşan.
+
+296
+01:24:27,507 --> 01:24:32,227
+Evet, Haris Peşabulucusundan bahsedeceğiz.
+
+297
+01:24:36,819 --> 01:24:42,119
+Az önceki fikirlerden yola çıkacağız. Şu fikirler.
+
+298
+01:24:52,948 --> 01:24:54,668
+Şimdi...
+
+299
+01:25:02,899 --> 01:25:05,539
+İngimiz ÖXY fonksiyonu.
+
+300
+01:25:10,420 --> 01:25:11,260
+Ön.
+
+301
+01:25:14,323 --> 01:25:29,203
+E, U, V ise cevap. Yani herhangi bir yöne. Şurada bir window var. Komşuluk. Buna WX'e diyelim.
+
+302
+01:25:42,612 --> 01:25:49,852
+Yani şu window'u diyelim ki bir birim yukarıya bir birim sağa ilerledik. Demek ki E bir bir oluyor.
+
+303
+01:25:54,492 --> 01:26:00,572
+E sıfır sıfır hiçbir iteleme yok. Öyle düşünelim tam merkez.
+
+304
+01:26:02,711 --> 01:26:04,811
+İte dediğimizde...
+
+305
+01:26:08,372 --> 01:26:15,372
+Değişim nedir? Çok basit esasen değil mi? Komşuluğun içerisindeki...
+
+306
+01:26:18,804 --> 01:26:29,004
+Piksellerden. Komşuluğu bir miktar iteledik ya yukarı ve sağ. Yeni bir komşuluk var diye düşünün.
+
+307
+01:26:31,224 --> 01:26:34,804
+Onun içerisindeki şeyleri ne yapıyoruz? Çıkarıyoruz.
+
+308
+01:26:38,804 --> 01:26:41,764
+Karşılıklı ilge değerlerini çıkarıyoruz.
+
+309
+01:26:45,235 --> 01:26:56,195
+Farkın karesini alıyoruz. Sonra tüm o değerleri topluyoruz. Burada W, X, Y ile çarpmak ne anlama geliyor?
+
+310
+01:26:58,195 --> 01:27:03,456
+Yani komşuluğun içerisindeki değerleri sadece göz önünde bulunduracağız.
+
+311
+01:27:04,796 --> 01:27:12,036
+Komşuluğun dışarısındaki değerleri göz önünde bulunduracağız diye düşünüyorum.
+
+312
+01:27:13,492 --> 01:27:31,932
+Dolayısıyla UV'nin farklı değerleri için bu değişikliği yaptığımızda elimizde bir EUV şeyi olacak. Bu piksel için bir değerler olacak.
+
+313
+01:27:38,068 --> 01:27:40,587
+Burada ötelenmiş bir yolu görüyoruz.
+
+314
+01:27:44,115 --> 01:27:52,615
+İki birim yukarıya, üst birim kenara ötelenmiş. Şu hesaplamayı yaptığımızda E32'yi elde ediyoruz.
+
+315
+01:28:00,500 --> 01:28:14,340
+Burada Ix'ye intensity, Ix artı U, Y artı V shifted intensity. Yani o window'u shift ettiğimiz zaman.
+
+316
+01:28:17,908 --> 01:28:24,468
+Karşılık gelen değer. W'da Window Function, pencere fonksiyonu.
+
+317
+01:28:26,847 --> 01:28:36,728
+Window Function şöyle bir kutu körnelı gibi bir şey düşünebilirsiniz. O zaman ne olur?
+
+318
+01:28:39,788 --> 01:28:44,927
+Komşuluğun içerisindeki değerler 1, dışındaki değerler 0 gibi düşünebilirsiniz.
+
+319
+01:28:45,939 --> 01:28:52,340
+İşte Window Function'la çarpınca komşuluğun dışındaki değerler sıfırla çarpılacak.
+
+320
+01:28:55,859 --> 01:29:01,559
+Dolayısıyla onları göz önünde bulundurmuyoruz. Zaten buradaki toplamda window fonksiyonu üzerinde.
+
+321
+01:29:02,139 --> 01:29:04,760
+Window fonksiyonunun x'iliyesi üzerinden.
+
+322
+01:29:04,760 --> 01:29:09,679
+Tabi teorik olarak bu fonksiyonlar, window fonksiyonları sonsuzdur her yende.
+
+323
+01:29:10,859 --> 01:29:17,239
+Ama pratikte sıfır olmadığı yerleri işlemlerimize alıyoruz.
+
+324
+01:29:24,307 --> 01:29:31,587
+Olarak da alabiliriz Gündoğlu komisyonunu. Gaussiya'nın bir yaklaşımı olarak alabiliriz.
+
+325
+01:29:39,828 --> 01:29:50,688
+Bu fonksiyon, EUV fonksiyonunun nasıl davrandığını merak ediyoruz.
+
+326
+01:29:50,688 --> 01:29:57,528
+Çünkü köşelerde bu EUV fonksiyonu genel olarak parlak olması lazım.
+
+327
+01:29:58,368 --> 01:30:05,688
+Yakın, küçük şıkkilerde, EUV'nin küçük değerlerinde yüksek değerler olması lazım.
+
+328
+01:30:06,899 --> 01:30:21,639
+Tabii bunu böyle tek tek hesap etsek iyi güzel, tam güzel bir değer buluruz. Tam değer buluruz ama düşünürseniz çok yavaş bir işlem oluyor bu.
+
+329
+01:30:24,379 --> 01:30:33,020
+Yani Gündoğ Vittin'in karesi, Shift-Range'nin karesi ve İnger Vittin'in karesi çarpımının.
+
+330
+01:30:33,779 --> 01:30:41,779
+İlk o kompleksitesinde oldukça yüksek bir değer olacaktır bu.
+
+331
+01:30:44,779 --> 01:30:57,779
+Yani mesela 11'i 11'lik bir window shift'i düşünmüş, 11'lik shift range'i düşünmüş, ingenin de 600'e 600 olduğunu düşünmüş.
+
+332
+01:30:59,060 --> 01:31:12,100
+Bu durumda 5 milyar tane şundan yapmanız lazım diye. Oldukça kadar yüksek değerler bunlar. Yavaş çalışır yani.
+
+333
+01:31:17,220 --> 01:31:21,980
+İngedeki her piksel için 14 bin tane işlem yapman lazım diye.
+
+334
+01:31:25,492 --> 01:31:30,311
+Tabi modern üngeler çok büyük. Onu korumlandırmış olmak lazım.
+
+335
+01:31:32,832 --> 01:31:42,612
+Şimdi bundan dolayı bir approximation'da kullanacağız. Yani bir yakın değer bulacağız.
+
+336
+01:31:42,612 --> 01:31:51,452
+Bu yakın değer, Tyler serilerinin açılımına bağlı bir yakınsama olacak.
+
+337
+01:31:53,235 --> 01:32:13,615
+Hatırlarsanız Tyler serilerinde bir f fonksiyonu a noktasına yakın yerlerde bir x yerinde. Yani fx'i bulmak istiyorsunuz. a'daki değeri biliyorsunuz. x de a'ya yakın bir değer.
+
+338
+01:32:22,931 --> 01:32:37,471
+X'de A'ya yakın bir değer. Dolayısıyla A'nın değerinden ve A noktasındaki trevlerin değerlerinden X'deki değeri tahmin edebiliyorsunuz.
+
+339
+01:32:37,551 --> 01:32:41,652
+Tyler serilerinin, Tyler serisi açılımı sayesinde.
+
+340
+01:32:42,551 --> 01:32:47,471
+Buna Tyler Approximation'da deniliyor bu tahmin işine.
+
+341
+01:32:48,627 --> 01:32:59,247
+Bu approximation'da ne var? Bir boyutlu da fx eşittir. Bu fx eşittir yazmamış burada ama fx eşittir.
+
+342
+01:33:09,332 --> 01:33:27,952
+A noktasındaki birinci türev bölü bir faktoryel çarpı x-a artı A noktasındaki ikinci türev bölü iki faktoryel çarpı x-a'nın kavesi artı şeklinde gidiyor.
+
+343
+01:33:27,952 --> 01:33:31,412
+Burada approximation'ı ne kadar?
+
+344
+01:33:31,891 --> 01:33:46,351
+Düzgün, doğru almak isterseniz o kadar çok kiral kullanabiliyorsunuz. Tabii ki bunun maliyeti de ona göre yükseliyor. Daha fazla kiral almanız gerekecektir. Daha fazla hesaplama yapmanız gerekecektir.
+
+345
+01:33:50,832 --> 01:33:57,771
+Buradaki kirik ne? X, A'ya yakın. X, A'ya yakın. A değil ama.
+
+346
+01:34:05,652 --> 01:34:13,211
+Burada şu animasyondan çürev sayısına bağlı olarak,
+
+347
+01:34:15,012 --> 01:34:18,551
+aproksimasyonun ne kadar doğru olduğunu görebiliyoruz.
+
+348
+01:34:20,252 --> 01:34:27,471
+Burada kırmızı, bizim aproksimasyonumuz, mavi, yakınsamaya çalıştığımız fonksiyon.
+
+349
+01:34:29,551 --> 01:34:31,711
+N eşittir sıfır.
+
+350
+01:34:32,564 --> 01:34:42,164
+Sıfırıncı türev. Yani direkt o noktadaki A'nın değerini alıyoruz. En eşittir 1, birinci türev. En eşittir 2, ikinci türev.
+
+351
+01:34:43,764 --> 01:34:44,863
+Şeklinde gidiyor.
+
+352
+01:34:49,963 --> 01:34:52,764
+Dolayısıyla ne kadar çok alırsak.
+
+353
+01:34:53,971 --> 01:35:17,412
+Aproximasyon daha uzaklarda daha geçerli hale geliyordur. Yani x'i a'dan uzak alabiliyoruz. Ne kadar az terim alırsak x'i o kadar yakın almamız lazım. Burada e üzeri x'e f0'da bir yaklaşım yapmış. F0'ı biliyoruz. Yani e üzeri 0 nedir? 1'dir.
+
+354
+01:35:18,515 --> 01:35:34,595
+Ama 1.1'deki değeri ne? E üzeri 1.1 ne acaba? Bu tarz bir merakınız var. İşte bu Tyler serisi açılımı yardımıyla tahminlerde bulunabiliyorsunuz.
+
+355
+01:35:42,163 --> 01:35:50,564
+Şimdi, Tyler serisinin açılımını birden fazla boyutta düşünebiliyoruz.
+
+356
+01:35:54,564 --> 01:35:57,363
+Buna order deniliyor, second order.
+
+357
+01:36:02,868 --> 01:36:25,868
+Second Order ikinci türevlere kadar kullanacağız demek. İki boyutlu ikinci türeve kadar ne yapacağız? Şey alacağız. Approximation yapacağız. O zaman elimizde böyle bir fonksiyon oluyor. Bu fonksiyon...
+
+358
+01:36:28,243 --> 01:36:47,623
+Aslında şuna benziyor. Bakın mesela Tider Series Approximation'da önce orijinal fonksiyon değeri. Burada da orijinal fonksiyon değeri. 0,0, uv eşittir 0,0 etrafında bir yakınsama yapmak istiyoruz.
+
+359
+01:36:50,963 --> 01:36:53,823
+X yerine u ve v var burada.
+
+360
+01:36:55,604 --> 01:37:12,224
+Sonra birinci türev. Birinci türev yerine gradyan var. Yani U yönünde türev alıyorsunuz, yazıyorsunuz. Bir birleşen bu. Diğer birleşen de V yönünde türev alıyorsunuz, onu yazıyorsunuz.
+
+361
+01:37:23,572 --> 01:37:41,711
+Ne yapıyor size? Gradiyanı veriyor. Dolayısıyla gradiyan, UV. Bu ne oldu? Şu terimi.
+
+362
+01:37:46,644 --> 01:37:48,724
+x8'e a'yı niye koymamış oluyor?
+
+363
+01:37:57,043 --> 01:38:15,904
+V zaten işte o miktar. U zaten değişim miktarı ya. U x eksi A oluyor. V de x eksi A oluyor. Yani U ve V, U orada A değil. U x eksi A. Öyle düşünüyorum.
+
+364
+01:38:21,908 --> 01:38:40,748
+Şu çarpımı yaparsanız, tabii matriz çarpımı yapıyorsunuz. Burada aslında bir iki tane denklem gelir. Yani X yönünde ve Y yönünde iki tane denklem gelir diye düşünüyorum.
+
+365
+01:38:43,508 --> 01:38:49,448
+Yok öyle mi oluyor? Yok. Normal tek bir değer verir bu.
+
+366
+01:38:50,003 --> 01:38:55,923
+Ama X'e ve Y'ye bağlı iki tane terim gelir. Onların toplamı olur burada.
+
+367
+01:38:57,984 --> 01:39:02,743
+Bu birinci order Tyler Exploration'ı. Yani bir tane trev kullanıyoruz.
+
+368
+01:39:02,963 --> 01:39:08,343
+Second order Tyler Exploration'da ikinci trevleri de kullanacağız. Bunun için ne yapacağız?
+
+369
+01:39:09,823 --> 01:39:16,623
+X yönünde trevi almıştık. Bir trev daha aldık X yönünde. E, U, U'yu elde ettik.
+
+370
+01:39:18,323 --> 01:39:26,583
+X'lerin de yönünde Trev almıştık. Onun Y yönünde Trev'ini aldık. E, U, V'yi elde ettik.
+
+371
+01:39:29,108 --> 01:39:39,728
+Y yönündeki türevi almıştık. Onun bir türevini de aldık. E, U, V'yi tekrar elde ettik. Bu ikisi birbirinin aynısı olur. Simetriktir bu.
+
+372
+01:39:40,927 --> 01:39:50,368
+Yani önce X yönünde türevi alıp sonra Y yönünde türevi almışsınız veya önce Y yönünde sonra X yönünde türevi almışsınız. Fark etmez. Aynı değeri verir.
+
+373
+01:39:51,427 --> 01:39:54,167
+Sonra da iki kere Y yönünde türevi alıyoruz.
+
+374
+01:39:55,220 --> 01:40:16,819
+UV'leri bu şekilde ayarlayıp 1 bölü 2'ye bölersek, bu da 2'nin faktörüyle 2'dir. Dolayısıyla neye gelmiş oluruz? Şuna gelmiş oluyoruz. Bu kare, şu şekilde ayarlarsanız bu vektörleri o kareye denk geliyor.
+
+375
+01:40:22,547 --> 01:40:27,447
+Second Order, ikinci dereceden Taylor açılımı.
+
+376
+01:40:35,828 --> 01:40:40,988
+Neyin etrafında? 0,0 noktası. Yani shift'in 0 olduğu nokta etrafıyla.
+
+377
+01:40:43,208 --> 01:41:02,908
+Şimdi bunlara bakıyor. Öncelikle E0,0 her zaman 0. Neden? Hiç shift yok. Dolayısıyla E0,0 imge kendisinden çıkarılıyor. Şu değerlerin hepsi 0. Dolayısıyla kareleri de 0, toplamları da 0.
+
+378
+01:41:03,956 --> 01:41:04,895
+Bu sıkış.
+
+379
+01:41:08,532 --> 01:41:13,292
+Şurada da birinci türevin sıfır olduğunu söylüyor.
+
+380
+01:41:15,872 --> 01:41:21,872
+E, U ve E, V'nin sıfır olduğunu söylüyor.
+
+381
+01:41:28,212 --> 01:41:34,932
+Geriye bize şu teramik alıyor. Yalnız birinci türev neden sıfır acaba? Şimdi onu düşüremedim.
+
+382
+01:41:39,315 --> 01:41:43,395
+Birinci krevi neden sıkışır? Başka bir evde açıklamış mıydı galiba?
+
+383
+01:41:59,155 --> 01:42:01,796
+Shift'in 0 olmasından dolayı 0 geliyor.
+
+384
+01:42:08,595 --> 01:42:12,195
+Şurada açıklamış galiba aslında. Burada bakalım.
+
+385
+01:42:12,195 --> 01:42:17,195
+E-U, açılımını yapmış E-U'nun.
+
+386
+01:42:17,195 --> 01:42:26,195
+Yani birinci yönde türenin açılımını yapmıyor.
+
+387
+01:42:33,235 --> 01:42:50,276
+Bu açılımda, şuna yani, Ix artı U'dan, Ix artı U, Y artı V'den Ix'ye çıkarılıyor ya. U ve V sıfır olunca, şurası sıfır oluyor.
+
+388
+01:42:54,579 --> 01:43:06,060
+Dolayısıyla burası sıfır olduğu için tüm toplam yine sıfır oluyor. Yani bu türev, şu iki türev de sıfır. Dolayısıyla bu ekspansyonda şu türevi ve şu türevi çapa atabiliyoruz.
+
+389
+01:43:10,484 --> 01:43:12,484
+Birinci türevin açılımı neden böyle?
+
+390
+01:43:28,435 --> 01:43:30,635
+Şu farkın birinci trevini alıyor.
+
+391
+01:43:42,547 --> 01:43:44,547
+E'nin türevini alıyor yani.
+
+392
+01:43:45,747 --> 01:43:47,467
+E'nin türevini alıyor.
+
+393
+01:43:52,435 --> 01:44:04,676
+Bu değer buradan sıfır oluyor. Ama şu U'lar ve V'ler sıfır olmuyor. Neden olmuyor?
+
+394
+01:44:04,676 --> 01:44:17,556
+Neden olmuyor? Çünkü açılımını yaptığımızda şöyle uzunca bir değer çıkıyor. Bu değer de
+
+395
+01:44:18,292 --> 01:44:25,152
+Şu kısım yine sıfır oluyor ama şu kısımda toplama halinde bu kısım.
+
+396
+01:44:27,971 --> 01:44:33,091
+Şu kısımda yok olmuyor o kısım.
+
+397
+01:44:35,152 --> 01:44:38,511
+Yani şu kalıyor sadece. Şu kısım yine sıfır oluyor.
+
+398
+01:44:38,511 --> 01:44:41,511
+Çünkü I, X, U...
+
+399
+01:44:42,131 --> 01:44:59,631
+Uvv 0'dayken, yani Uvv'nin 0 olduğu noktada bu çıkarım 0. Dolayısıyla tüm toplamda 0. Bunları çöpe atabiliyoruz. Sadece şunlar kalıyor.
+
+400
+01:45:00,851 --> 01:45:08,851
+Böyle baktığımızda şu denklemde ne oldu? Burası 0, şu ikisi 0. Bu ikisi tümden gidiyor.
+
+401
+01:45:09,684 --> 01:45:33,344
+Geriye şunlar kalıyor. E, U, U. E, V ve E, U, V'ler kalıyor. Bunları incelediğimizde ne var burada? Window fonksiyonu var. Bir de I, X. Yani orijinal imgenin X yönünde türevi var. I, Y. Orijinal imgenin Y yönünde türevi.
+
+402
+01:45:34,644 --> 01:45:44,384
+Orijinal imgenin X ve Y yönündeki türevleri kalıyor. Bir de Window fonksiyonu kalıyor. Bir de 2.
+
+403
+01:45:48,243 --> 01:45:59,083
+Dolayısıyla bize sadece şu matriz çarpımı. Önemli olan bizim için bu.
+
+404
+01:46:00,083 --> 01:46:04,283
+Ve E, U, U şu. Bunu yazdı direkt oraya.
+
+405
+01:46:05,903 --> 01:46:09,243
+E, V, V bu. Bunu direkt yazdı buraya.
+
+406
+01:46:10,103 --> 01:46:14,703
+Burada bir 1 bölü 2 vardı hatırlar mısınız? O 1 bölü 2 ile şu ikleri sağdereştiriyor.
+
+407
+01:46:16,500 --> 01:46:24,740
+Şuradaki 1,2 ile şu ikileri sağdurum. EUV'ler de bunlar olacak.
+
+408
+01:46:34,484 --> 01:46:47,083
+Dolayısıyla o kvadratik approximation esasen şuna dönüşüyor. Bir matriz var, bir M matrizi diyelim. Şu türevlerden oluşan matriz. M diyelim dediği bu matrize.
+
+409
+01:47:00,435 --> 01:47:24,515
+İki yönde bir şiflik farkı hesabı edeceksiniz. Buralara bir bir yazıyorsunuz. Matrisi de çarpıyorsunuz. Size yaklaşık bir yeri veriyor. Bir sıfır elde edeceksiniz. O şekilde veriyorsunuz falan. Sonuçta yaklaşım buna geliyor. Bu matris M matrisi Second Moment matrisi olarak isimleniyor.
+
+410
+01:47:25,876 --> 01:47:33,576
+İkinci Moment maddesi ve İmge türevlerinden elde ediliyor.
+
+411
+01:47:34,896 --> 01:47:50,316
+Ve şuna denk, yani İmge'nin birinci, o pikseldeki birinci türevi, bunun karesi X yönünde, Y yönündeki türevin karesi o pikselde, X ve Y yönündeki türevlerin çarpımı.
+
+412
+01:47:51,060 --> 01:48:10,060
+Bir de ne ile çarpacaksınız? Window fonksiyonu ile çarpacaksınız. Rahatsızlı olabiliyor bu. Ve toplayacaksınız. O pikselin, şu window fonksiyonu, o pikselin ne kadar yük içerisinde kullandığınızı belirliyor. O piksel değerini kuruyorsunuz.
+
+413
+01:48:13,908 --> 01:48:38,908
+Burada ne demiş? Dolayısıyla bir toplama var. Toplamayı dışarıya almış. Yani şu Gauss window fonksiyonu toplama olayını dışarıya almış.
+
+414
+01:48:43,315 --> 01:48:46,395
+Türev imgesi üzerinde düşünmeye başlıyor.
+
+415
+01:48:49,716 --> 01:49:10,315
+Dolayısıyla direkt türev imgesini ÖX ve ÖY gradiyan üzerinden düşünmüş. İngenin gradiyanını transpozuyla, ingenin gradiyanını çarparsak, toplarsak aynı şeyi veriyor. Böyle notasyonda...
+
+416
+01:49:11,060 --> 01:49:13,060
+Pedro Nelv.
+
+417
+01:49:13,060 --> 01:49:13,932
+Dürüm siz.
+
+418
+01:49:19,828 --> 01:49:21,048
+Değişik bir yazım.
+
+419
+01:49:28,467 --> 01:49:37,347
+Şimdi buraya kadar bunu yaptık. Second Moment matrisini elde ettik.
+
+420
+01:49:37,347 --> 01:49:50,827
+Şimdi bu Moment matrisi ne diye baktığımızda şunu görüyoruz. Bu bir ünge türevlerinin matrisi ve
+
+421
+01:49:51,475 --> 01:50:00,755
+Ortalama alınmış belirli bir rünoydur burada. Bir noktanın etrafında ortalama alınıyor şu pencere fonksiyonu sayesinde.
+
+422
+01:50:03,815 --> 01:50:12,615
+İmgelere baktığımızda, hatırlarsanız X yönündeki türele baktığımızda şöyle bir şey veriyor. Y yönünde türele baktığımızda böyle bir şey veriyor.
+
+423
+01:50:13,555 --> 01:50:19,216
+Şurada bunların kareleri var. Şu üngenin karesi, bu üngenin karesi var. Şuralarda.
+
+424
+01:50:24,176 --> 01:50:30,135
+Diğer tarafta ise önce bir yönde sonra da ikinci yönde trevalma var.
+
+425
+01:50:33,684 --> 01:50:42,384
+Yani şu, I'nın altına x'i böyle sapsıklık şeklinde yazarsanız, I'nın x yönündeki trevi anlamına geliyor.
+
+426
+01:50:42,384 --> 01:50:50,884
+Bu daha kolay olsun, notasyon diye kullanılan bir şey. İngilizce paperlarında bunu görebilirsiniz.
+
+427
+01:50:50,884 --> 01:50:55,184
+X dediği zaman ne demek? I'nın x yönünde trevini alıyoruz.
+
+428
+01:51:00,692 --> 01:51:05,352
+Bu Second Moment matrisini yorumlamaya çalışalım.
+
+429
+01:51:22,420 --> 01:51:30,039
+Burada second moment, yani ikinci türevlerde kullandığımız için ikinci türevleri kullandık.
+
+430
+01:51:30,039 --> 01:51:44,640
+Birinci türev zaten çok haklıymıştı. Orijinal fonksiyon da çok haklıymıştı. Dolayısıyla kuadratik bir form. Bu simetrik, kuadratik bir formdur. İkinci türev.
+
+431
+01:51:46,460 --> 01:51:49,119
+İkinci türevi ne yapıyoruz?
+
+432
+01:51:51,572 --> 01:52:00,431
+Birinci türevlerle aproxime ediyoruz. Şunu, şununla aproxime ediyoruz.
+
+433
+01:52:05,235 --> 01:52:19,676
+Şu EU yani UV çarpı second moment matrix çarpı UV'yi eşitli bir const yapıp bir eşitlik kurduğunuzu düşünün.
+
+434
+01:52:19,676 --> 01:52:31,756
+Bu eşitlik bir elipsi tarif eder. Constant'ın değerini değiştirdikçe farklı elipsler elde edersiniz.
+
+435
+01:52:34,931 --> 01:52:42,571
+1 verdikçe, 2 verdikçe, 0 verdikçe, 10 verdikçe farklı farklı elipsler elde edersiniz.
+
+436
+01:52:43,951 --> 01:52:47,571
+Tabi U ve B'nin değerini de değiştiriyorsunuz.
+
+437
+01:52:49,151 --> 01:52:50,931
+Farklı elipsler elde edersiniz.
+
+438
+01:52:59,859 --> 01:53:07,059
+Bu elipse incelemişler. Bu elipsin eksenlerinin boyu şöyle.
+
+439
+01:53:10,059 --> 01:53:22,899
+Maddis'in aygen değerleriyle ve yönü de R ile elde ediliyor. Bu aygen value decomposition sanırım.
+
+440
+01:53:27,347 --> 01:53:50,068
+Şu şekilde bozumluyorsunuz. Maddesin kendi içerisinde maddesin algen valu'larını buluyorsunuz önce. Zaten iki algen valu'si olur. O iki algen value şöyle köşelere yazıp diğerleri sıfır yapıyorsunuz.
+
+441
+01:53:51,283 --> 01:54:04,363
+Sonra geriye bir R değeri kalıyor, vektörü kalıyor. Bu vektörün tersiyle, pardon, burada eksi bir dediğine göre bugünkü maddesi olması lazım.
+
+442
+01:54:08,564 --> 01:54:18,463
+Bu iki matrisle, R matrisi ve R'nin tersiyle çarptığınızda orijinal M'yi elde etmemiz lazım. Böyle bir matris bozunumu kullanılıyor.
+
+443
+01:54:33,716 --> 01:54:54,876
+Elipsin uzunluğunu veriyor. Elipsin kısa olması o yöndeki değişimin hızlı olmasını gösteriyor. O yönde aygen verinin büyük olması ise değişimin daha az olmasını veriyor.
+
+444
+01:55:00,020 --> 01:55:02,260
+Şuradaki değer 1 bölü aygenle alıyor.
+
+445
+01:55:14,676 --> 01:55:15,596
+bir bölüm
+
+446
+01:55:15,596 --> 01:55:19,536
+ay genel bölümün
+
+447
+01:55:19,536 --> 01:55:21,576
+karesi.
+
+448
+01:55:26,100 --> 01:55:44,940
+Dolayısıyla kısa elipsin ekserinin uzunluğunun kısa olduğu yerde eigenvalue büyük. Maksimum eigenvalue.
+
+449
+01:55:45,880 --> 01:55:52,860
+Zaten iki eigenvalue var burada. Birine minimum, birine maksimum değilim. Minimum eigenvalue da
+
+450
+01:55:54,804 --> 01:56:09,263
+Elipsin uzun olduğu yönü gösteriyor. Aygen vektör o yönü gösteriyor ve onun değişiminin miktarını da göstermiş oluyor. Aygen verdiğinin miktarı.
+
+451
+01:56:12,724 --> 01:56:20,823
+Second Moment madreslerini piksel piksel çizdirebilirsiniz. Her bir piksel için burada çizdirmişler.
+
+452
+01:56:26,452 --> 01:56:35,692
+Bir nevi bakarsanız o pikseldeki şeyi gösteriyor. O pikselin komşuluğunun şeklini gösteriyor.
+
+453
+01:56:43,315 --> 01:56:53,035
+Bu Eigen Value, Second Moment maddesleri, ilgi bölgelerinin yerini göstermek için bu elipsileri çizerek kullanılabiliyor.
+
+454
+01:57:01,460 --> 01:57:02,460
+Şimdi...
+
+455
+01:57:06,036 --> 01:57:20,356
+Alice demiş ki, bu eigenvalue'lardan, bu arada eigenvalue ve eigenvektörleri biliyor musunuz? Daha önce hiç duymuş muydunuz? Çete yazabilir misiniz? Eigenvalue ve eigenvektörü duydum duymadım diyor.
+
+456
+01:57:26,515 --> 01:57:32,935
+Veya söyleyebilirsiniz. Duymayan var mı? Hiç I can value, I can vector ne düş? Duymayan var mı?
+
+457
+01:57:36,627 --> 01:57:38,127
+[öğrenci]-ı Noluş.
+
+458
+01:57:42,996 --> 01:57:45,555
+Tamam. Duyan var mı?
+
+459
+01:57:57,076 --> 01:57:59,515
+Şu anda bir tek [öğrenci] yazılıyor.
+
+460
+01:58:03,764 --> 01:58:08,624
+Eigenvalue Decomposition diye bir şey var. Çete yazıyorum.
+
+461
+01:58:13,203 --> 01:58:20,203
+Aygen Veli'ler var. Her bir aygen velüğe karşılık gelen bir aygen vektör var.
+
+462
+01:58:21,583 --> 01:58:24,163
+Bunları tütçede özdeğer ve özvektör deniliyor.
+
+463
+01:58:29,108 --> 01:58:29,908
+Teşekkür ederim.
+
+464
+01:58:37,619 --> 01:58:46,420
+Bunları bilmiyorsanız öğrenin. Bu sizin işiniz. Aygenler gibi bir kompozisyon diye bir şey var.
+
+465
+01:58:53,043 --> 01:59:02,563
+Herhangi bir matriz eigenvalue decomposition ile eigenvalue'lara ve eigenvektörlere bölünebiliyor.
+
+466
+01:59:06,183 --> 01:59:08,263
+Burada da işte böldük.
+
+467
+01:59:08,804 --> 01:59:11,623
+Eigenvektör ve eigenvalue'ları bulduk.
+
+468
+01:59:11,903 --> 01:59:14,143
+Bilmiyorsanız nasıl bulunduğunu onu öğrenin.
+
+469
+01:59:14,243 --> 01:59:14,983
+O sizin işiniz.
+
+470
+01:59:22,899 --> 01:59:37,840
+Şimdi bu eigen value'lar, lambdalar değer, büyüklük.
+
+471
+01:59:37,840 --> 01:59:47,500
+Bu piksellerdeki eigen value'ların büyüklüğüne göre Paris,
+
+472
+01:59:48,787 --> 02:00:06,087
+Pikselleri sınıflandırmış. Eğer her iki eigen value de small ise, küçükse, demek ki o E küçük değer alıyor. Demek ki orası düz bir yer demiş. Orada köşe yok, kenar da yok.
+
+473
+02:00:07,087 --> 02:00:15,467
+İki eigen value'dan bir tanesi küçük, bir tanesi de çok büyükse, o zaman orası bir kenar.
+
+474
+02:00:15,988 --> 02:00:20,807
+Ya bir dikey kenar, buradaki ya bir yatay kenar ya da bir dikey kenar.
+
+475
+02:00:22,128 --> 02:00:38,148
+Eğer her iki eigen vektör de büyükse ve eigen vektörler birbirine yakın değerlerde ise o zaman burada her iki yönde de E artıyor.
+
+476
+02:00:38,148 --> 02:00:43,148
+Ne demek bu? E her yönde artıyor. Yani demek ki burası bir köşe.
+
+477
+02:00:43,667 --> 02:00:52,868
+Böyle bir düşünceye ulaşmış Aris. Bu eigen value'ları kullanıyor.
+
+478
+02:00:54,307 --> 02:01:04,828
+Yalnız şöyle bir durum var. Eigen value'ların hesaplanması biraz pahalıca bir iş ve her bir piksel isimli hesaplanacaksınız siz bunu.
+
+479
+02:01:05,828 --> 02:01:06,868
+Dolayısıyla demiş ki…
+
+480
+02:01:08,212 --> 02:01:18,772
+Benzer bir değer veren bir fonksiyon var. Buna R demiş. Corner Response Function diyoruz buna.
+
+481
+02:01:21,452 --> 02:01:29,092
+Bu R fonksiyonu eğer çok küçükse değer olarak,
+
+482
+02:01:30,484 --> 02:01:37,764
+Bu düz yerlere denk geliyor. Negatifse ezlere denk geliyor. Pozitifse köşelere denk geliyor.
+
+483
+02:01:37,764 --> 02:01:48,964
+Ve nasıl hesap ediliyor bu konu respons fonksiyonu? Yine M üzerinden hesap ediliyor. Ama M'nin determinantını alıyorsunuz.
+
+484
+02:01:50,384 --> 02:01:56,704
+O pikseldeki M'nin determinantı. Çok daha ucuz bir işlem. İkiye ikilik bir maksuz bu çünkü.
+
+485
+02:01:57,652 --> 02:02:10,431
+Trais'ini alıyorsunuz. Trais neydi? Trais sanırım ana diyogonaldeki değerlerin toplamı. Doğru mu? Doğru hatırlayamıyorum.
+
+486
+02:02:14,355 --> 02:02:41,355
+Trace neydi arkadaşlar? Oydum sanırım. O değilse de siz bulun ne olduğunu. Trace'in karesini alıyor. Bir alfa değeriyle kendisinin kullandığı sihirli bir değer bu. Çarpıyor. Corner Response Function diyor. Bu da şeyden geliyor esas. Determinant.
+
+487
+02:02:42,003 --> 02:03:08,844
+Maddesinin determinanı eigen value'ların çarpımına eşitmiş. Trace de eigen value'ların toplamına eşit. Dolayısıyla eigen value'ların toplamının karesini çarpımlarından çıkarırsanız eigen value'ların büyük ve birbirine yakın olduğu değerlerde pozitif değerler veriyor.
+
+488
+02:03:09,844 --> 02:03:34,663
+İşte bu toplam yerine trace'i kullanıyor. Çarpım yerine determinant'ı kullanıyor. Buna da Corner Response Function diyor. Alfayı da 0.04 ile 0.06 arasındaki değerlerde alıyor. Böyle bir Corner Response Function var. Hesaplanması daha hızlı.
+
+489
+02:03:36,500 --> 02:04:02,000
+İşte bu corner response fonksiyonuna bağlı Harris corner detektir. Ne yapıyor? Önce hem bir imge için, imge window'u için M'yi hesap ediyor. M'den de şu R'yi hesap ediyor corner response fonksiyonuna.
+
+490
+02:04:04,948 --> 02:04:25,628
+Sonra bu Corner'ın Skor diyor buna. Bu R'lerin belirli bir değerden yüksek olduğu noktaları alıyor. Yani bir threshold yapıyor. Küçük R değerine sahip pikselleri siz diyor köşe olamazsınız.
+
+491
+02:04:33,363 --> 02:04:39,303
+Birbirine bağlı olan 2-3 tane böyle büyükçe şey olabilir.
+
+492
+02:04:41,543 --> 02:04:44,943
+Corners olabilir. Bunları ne yapıyor?
+
+493
+02:04:49,619 --> 02:05:12,000
+Bitişik olanları büyük olanlarına kabul ediyoruz. Yani bir pikselin cevabı sekiz komşusunun cevabından büyük değilse onu almıyor. Hepsinin en büyük olması gerekiyor. Böylece bitişik noktaları da engellemiş oluyor.
+
+494
+02:05:13,000 --> 02:05:14,859
+Arıs Kornağı'nda da diyor.
+
+495
+02:05:16,787 --> 02:05:42,847
+Özet versek, önce ne yapacağız? Pratikte tabii ne yapacağız? Bunu yapabilmek için şöyle yapacağız. Önce orijinal imgemizle başladık. Bunun X yönünde türeğini alacağız. Bir türev imgesi elde edeceğiz. Bunu AX diyelim. Bir de Y yönünde türev imgesi elde edeceğiz.
+
+496
+02:05:43,475 --> 02:05:44,915
+Buna da I, Y diyelim.
+
+497
+02:05:48,815 --> 02:05:50,015
+Sonra ne yapacağız?
+
+498
+02:05:55,572 --> 02:06:13,232
+Bunların karelerini alacağız. x'in karesi ve y'nin karesini alacağız. Bir de x ve y'nin çarpını alacağız. Şunları elde edeceğiz. Sonra bunları Gauss'la filtreleyeceğiz. Neden bunu yapıyoruz?
+
+499
+02:06:17,232 --> 02:06:19,232
+İşte o shape fonksiyonu.
+
+500
+02:06:20,435 --> 02:06:24,595
+Ne bu hud fonksiyonu oluyor bu? Gauss'ta fikredeceğiz bunları.
+
+501
+02:06:28,948 --> 02:06:39,268
+Sonra bu 4 değeri birleştireceğiz her bir piksel için. Yani elimizde 4 tane resim olacak.
+
+502
+02:06:40,168 --> 02:06:45,688
+Gauss'ları gün de düşünürseniz 3 resim olacak esasen. Yani şu ikisi aynı çünkü.
+
+503
+02:06:46,347 --> 02:06:50,188
+Bu 3 resimin aynı pikseldeki değerlerini kullanarak
+
+504
+02:06:50,771 --> 02:07:08,971
+Maddesi oluşturacağız. Bu maddesin determinantını ve trace'ini alacağız. Algen vergesini bulmayacağız. Determinant ve trace'ini bulacağız. Bu daha hızlı olacak. Alfa değerimiz 0.4. Buradan yararlanarak ne yapıyoruz?
+
+505
+02:07:17,492 --> 02:07:22,092
+Determinantı ve Trace'ini de esasen açmış burada.
+
+506
+02:07:23,372 --> 02:07:28,492
+Determinant şudur. Bunu biliyorsunuz zaten. Determinant nedir biliyorsunuz değil mi?
+
+507
+02:07:29,012 --> 02:07:32,332
+Şununla şunun çarpımından, bunlarının çarpımını çıkaracaksınız.
+
+508
+02:07:34,132 --> 02:07:39,252
+Trace'ini de şu ikisini almış dediğim gibi.
+
+509
+02:07:41,052 --> 02:07:44,892
+Dolayısıyla ne yapmış oluyorsunuz her piksel için?
+
+510
+02:07:46,036 --> 02:07:55,715
+Şu resimleri elde edip bunları birbirinden çıkarıyorsunuz. Yani işlem yaparken şunu bir resim, bunu da ayrı bir resim olarak alabilirsiniz.
+
+511
+02:07:57,715 --> 02:08:03,475
+Oldukça hızlı bir şekilde Halis cevap resmini elde edebilirsiniz.
+
+512
+02:08:06,036 --> 02:08:08,695
+Halis cevap resmini bu şekilde elde ediyoruz.
+
+513
+02:08:11,731 --> 02:08:18,311
+Daha sonra non-max suppression, yani sadece maksimum olan köşeleri alıyoruz.
+
+514
+02:08:19,271 --> 02:08:24,131
+Bu özetlemiş. Önce corner response fonksiyonunu almış.
+
+515
+02:08:25,612 --> 02:08:33,032
+Sonra daha büyük değerleri olanları kullanmış. Değerlerine sıfır vermiş.
+
+516
+02:08:33,931 --> 02:08:38,631
+Yani threshold geçirmiş. Küçük değerli olanlar sıfır olmuş.
+
+517
+02:08:39,220 --> 02:08:46,600
+Değerleri pozitif değer almış. Sonra da her bir bölgenin neyini elde ediyor?
+
+518
+02:08:47,920 --> 02:08:53,380
+Numax Suppression uygulayarak her bir bölge için bir tane piksel elde ediyor.
+
+519
+02:08:56,180 --> 02:09:02,360
+Her bir bölge için değil mi? En de bitişik olmayan böyle pikseller elde ediyorlar.
+
+520
+02:09:03,828 --> 02:09:28,268
+Gördüğünüz o zaman ne oluyor? Bakın. Bu köşeler nerede çıkıyor? Aynı nesnenin farklı bir açıdan resmi var burada. Işıklandırma da farklı galiba. Değil mi? Ufak oynamalar da yapmıştık dersen bir resimde.
+
+521
+02:09:35,123 --> 02:09:37,304
+Başka bir açıdan çıkmışlar galiba.
+
+522
+02:09:42,292 --> 02:10:04,051
+Kontrast da azalmış gibi. Evet, kontrast var. Birazcık rotasyon var. Birazcık bakış açısı değişimi var. Ama köşeler aynı yerde görüyor musunuz? Mesela şu burundaki köşe bu burunda da var. Şu gözdeki iki köşe bu gözde de var.
+
+523
+02:10:06,868 --> 02:10:10,768
+İşte bu yüzden yararlı oluyor Haris detektörü.
+
+524
+02:10:21,300 --> 02:10:35,340
+Evet, invarians ve covariance'dan bahsedebiliyoruz. Invariance, değişmeme. Covariance, uygun şekilde değişmeme. Bakalım, invariance.
+
+525
+02:10:35,340 --> 02:10:46,659
+Image is transformed and corner locations do not change. Yani bir köşe bulucusu bir özelliğe göre, bir değişime göre.
+
+526
+02:10:47,123 --> 02:10:57,184
+Invaryant ise o değişimi gerçekleştirdiğimizde köşe yeri değişmiyor. Hala aynı yerde çıkıyor.
+
+527
+02:10:57,184 --> 02:11:07,184
+Kovaryant ise aynı imgenin iki tane bozulmuş versiyonu varsa elimizde.
+
+528
+02:11:10,644 --> 02:11:24,724
+Aynı şekilde bozulmuş. İki farklı versiyonu var aynı ilginin. Benzer şekilde bozulmuş. O zaman köşe yine aynı yerde oluyor. Buna covariant deniliyor.
+
+529
+02:11:36,692 --> 02:11:41,872
+Geometrik transformasyonlar için ise kovaryant olmasını istiyoruz.
+
+530
+02:11:42,312 --> 02:11:44,612
+Kodometrik transformasyonlar neler?
+
+531
+02:11:45,112 --> 02:11:48,612
+Az önce arkadaşınızın dediği kontrastın değişmesi,
+
+532
+02:11:50,932 --> 02:11:55,572
+ışığın farklı açıdan gelmesi gibi şeyler.
+
+533
+02:11:55,572 --> 02:12:00,852
+Geometrik transformasyonlar ise rotasyon,
+
+534
+02:12:04,467 --> 02:12:09,568
+Ölçeklemeler, taşımalar, bu gibi şeyler.
+
+535
+02:12:18,100 --> 02:12:30,420
+Şimdi burada devam ediyor slide ama bu bakalım çok bir şey de kalmamış. Tamam, bunu bitirmeye çalışalım.
+
+536
+02:12:37,011 --> 02:12:55,551
+Intensity Change dediği parlaklık değişimi, afil parlaklık değişimi. Bu durumda meslenin parlaklığı afil bir şekilde değişiyor. Yani parlaklık U iken A'ı artı B olmuş.
+
+537
+02:13:05,844 --> 02:13:09,844
+Neden basıyorsunuz burada ya? Kafam biraz ağrıdı.
+
+538
+02:13:18,676 --> 02:13:24,836
+Intense Screening'de A'ı oluyor.
+
+539
+02:13:28,115 --> 02:13:34,655
+Şu bizim Corner Response fonksiyonumuz galiba, R demiş çünkü. Neyi anlatıyor burada?
+
+540
+02:13:35,995 --> 02:13:42,615
+R diyor, bu intensity değişimlerinde aynı köşeleri yine bulabiliyor.
+
+541
+02:13:43,975 --> 02:13:51,055
+Yalnız şu olabiliyor, parlaklık azalırsa bazı köşeleri bulamayabiliyor.
+
+542
+02:13:55,699 --> 02:14:10,699
+Çünkü bir treşok var ya, treşok kullanıyoruz. Dolayısıyla parlaklık artınca daha fazla köşe bulabiliyor. Yani imgenin genel parlaklığı biraz önem arz ediyor.
+
+543
+02:14:11,699 --> 02:14:18,699
+Buradan da neyi çıkarabiliriz? Bu koronu detektörü kullanmadan önce belki de...
+
+544
+02:14:19,060 --> 02:14:25,120
+İmgenin parlaklığını bir standart hale getirmek mantıklı olabilir. Normalize etmek mantıklı olabilir.
+
+545
+02:14:27,840 --> 02:14:39,620
+Dolayısıyla afin parlaklık değişiminde her istatüleri parçalı invariant diyor.
+
+546
+02:14:42,340 --> 02:14:43,680
+Nispeten invariant.
+
+547
+02:14:46,899 --> 02:15:11,699
+Geometrik değişimlerden imge taşıma. Burada kürevler ve pencere fonksiyonu shift invariant. Dolayısıyla köşenin yeri kovaryant. Yani aynı resmi iki farklı şekilde taşırsanız, iki farklı imge de taşırsanız o iki imge de aynı yere gidiyor.
+
+548
+02:15:14,579 --> 02:15:32,960
+İmgeyi döndürdüğümüzde, rotasyona soktuğumuzda, second moment elipsi dönüyor. Fakat şekli sabit kalıyor. Yani elips dönüyor fakat hala aynı elips oluyor.
+
+549
+02:15:35,960 --> 02:15:40,859
+Dolayısıyla şunu diyebiliyoruz. Korner köşe 7.
+
+550
+02:15:41,652 --> 02:15:44,592
+Rotasyon açısından kovalyant veriyoruz yine.
+
+551
+02:15:47,731 --> 02:15:49,872
+Scaling de yalnız kovalyant değil.
+
+552
+02:15:51,452 --> 02:15:53,612
+Yani diyelim ki bir resminiz var.
+
+553
+02:15:53,612 --> 02:15:57,612
+Bunun...
+
+554
+02:15:57,652 --> 02:16:12,431
+Farklı bir ölçekteki versiyonu var. Yani zoom ettiniz, ingeye zoom ettiniz. O zaman köşemiz böyle şöyle bir köşe düşünün. Zoom edip yakınlaştırdığınızda şöyle kocaman bir alana dönüşüyor.
+
+555
+02:16:25,555 --> 02:16:34,655
+Bulanık, uzaktan gördüğünüz bir ingede köşe olmayabiliyor. Artık oralar bir ece dönüşebiliyor.
+
+556
+02:16:35,716 --> 02:16:45,995
+Dolayısıyla buradaki ünlem önemli. Köşenin yeri ölçeklemeye karşı.
+
+557
+02:16:46,484 --> 02:17:13,264
+Kovaryant değil. Ölçekleme derken ne demekten bahsediyoruz? Yani zoom edip yakından bakmaktan bahsediyoruz. Zoom out edip uzaktan bakmaktan bahsediyoruz. Değişik ölçeklerde bakmak aynı diye. Bu işlemi yaptığınızda bu köşeler kovaryant değil. Bunun çözümü için uğraşmamız gerekecek. Ona daha sonra bakacağız.
+
+558
+02:17:14,995 --> 02:17:25,995
+Ama rotasyon ve taşımaya ne? Kovalyant. Değişik ışıklandırmalara da nispeten invaryant.
+
+559
+02:17:28,375 --> 02:17:40,615
+Bu slide'ı bitirmiş olduk. Haris köşe bulucusunu da öğrenmiş olduk. Dolayısıyla ödevimizi de buna yönelik ödev verelim.
+
+560
+02:17:55,603 --> 02:18:14,903
+Ne diyor? Aris Corner detektörü implemente ediniz. Aynı resmin transform edilmiş sahnelerinde, örneğin slide'da geçen o inek resminde, inek oyuncağı resminde bir deneyimiz.
+
+561
+02:18:22,835 --> 02:18:28,835
+O şeyin üzerinde gösteriniz, ineklerin üzerinde gösteriniz. Bu ödev...
+
+562
+02:18:33,971 --> 02:18:35,432
+Bu ödevi yine vereyim.
+
+563
+02:18:36,932 --> 02:18:37,871
+Dropbox'a.
+
+564
+02:18:47,123 --> 02:18:55,004
+Bu ödevin şeylerini, tarihi iğne gelecek dersimiz olacak. Dersimizin hemen öncesinde,
+
+565
+02:18:55,004 --> 02:19:00,863
+bu da kapsı kaldıracağım, paylı ikonist. Yükleme linkini falan şimdi dersi bitireceğim.
+
+566
+02:19:02,144 --> 02:19:08,724
+Şey yapacağım, bu exercise.log'a, logx'e yazacağım. Sorunuz vesaire var mı arkadaşlar?
+
+567
+02:19:13,172 --> 02:19:26,932
+Hocam dersin çevrimiçi başladığı haberini biraz geç aldığım için dersin başında yaptım. Birinci ödevle ilgili konuştuğumuzu. Hayır, sadece onları indirdim. Birinci ödevi sadece indirdim.
+
+568
+02:19:29,672 --> 02:19:30,472
+Tamam.
+
+569
+02:19:33,231 --> 02:19:39,512
+Bugün de şey yaptık, işte Edge Detection Sliding'e yaptık ve Harris Detector Sliding'e yaptık.
+
+570
+02:19:40,819 --> 02:19:43,119
+Haftaya görüşürüz arkadaşlar. Kapatıyorum.
+
+571
+02:19:52,691 --> 02:20:00,791
+Bugün şeyi yapacağım, Dropbox linkini yüklemeniz için bu akşam ayarlarım. İyi akşamlar diliyorum.
