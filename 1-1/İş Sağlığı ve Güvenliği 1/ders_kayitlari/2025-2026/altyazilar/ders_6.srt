@@ -1,0 +1,727 @@
+1
+00:01:15,924 --> 00:01:21,804
+Merhabalar gençler, iyi akşamlar. Dersimize başlıyoruz artık.
+
+2
+00:01:22,867 --> 00:01:25,607
+Kişi sayımıza ulaştık. Rahatlıkla başlayabiliriz.
+
+3
+00:01:26,027 --> 00:01:31,487
+Şimdi, öncelikle yanlış bilmiyorsam, ara sınavınız 20 Kasım, Perşembe.
+
+4
+00:01:32,287 --> 00:01:37,007
+Özür diliyorum, sizin değil, çok özür diliyorum. Kontrol otomasyon mühendisliğinin şeklinde sizin değil.
+
+5
+00:01:37,407 --> 00:01:40,227
+Sizin henüz sınav programınız gelmedi. Çok pardon.
+
+6
+00:01:40,907 --> 00:01:42,687
+Çünkü bilgisayar mühendisliğiniz.
+
+7
+00:01:43,207 --> 00:01:47,307
+Gençlik, ara sınav nasıl olacak sorusunu cevaplayalım önce.
+
+8
+00:01:48,084 --> 00:02:08,884
+İlk haftalarda konuştuğumuz gibi, yani tanımlar, neyin tanımı? Riskin tanımı, tamam mı? Ondan sonra işte ne bileyim kanuni tanımlar, yani benim sana ISG sıfır diye anlattığım, ders notu olarak gönderdiğim şeydeki tanımlar. Başka?
+
+9
+00:02:09,364 --> 00:02:30,124
+Slide'larım var senin ders duvarında. O slide'ların devamlarını da ekleyeceğim ben. Slide'lardan sorumlusun. Slide'lardan sorumlusun derken şu şekilde. Şimdi biliyorsun ki ben senden şunu bekliyorum. Risk nedir dendiğinde zarar verme potansiyeli olan bir şey olduğunu.
+
+10
+00:02:30,740 --> 00:02:52,740
+Riski hesaplamak için olasılık ve şiddete ihtiyacın olduğunu bilmen lazım. Risk faktörleri nedir dendiğinde fiziksel risk faktörleri, kimyasal, biyolojik, ergonomik, psikososyal risk faktörlerini sıralayabilmen lazım. Anlaştık mı? Yani benim senden beklentim...
+
+11
+00:02:53,171 --> 00:03:20,651
+Mesela ben sana sınavda bir fotoğraf vereceğim. Bunu konuştuk zaten. Ya da bir senaryo vereceğim. Henüz net değil. Diğer gruplar fotoğraftan yana şanslarını kullandılar. Hani hocam fotoğraf daha kolay, onu biz daha iyi yapıyoruz falan dediler. Senaryo daha uzun dediler. Yani muhtemelen hepiniz aynı şeyi sorarım. Bir fotoğraf verdiğimde, bir senaryo verdiğimde, oradaki riskleri bana bul dediğimde bunu cevaplayabilmen lazım.
+
+12
+00:03:21,491 --> 00:03:46,851
+Hangisi fizikseldir, hangisi kimyasaldır dediğimde bunu cevaplayabilmen lazım. Ama şık mı? Zaten şöyle düşün, ben senden şey beklentim yok demiştim. Fiziksel risk faktörleri dendiğinde gürültü, titreşim, basınç, ısı, sıcaklık, aydınlık, karanlık, iklimlendirme, radyasyon bunları bilmem, isim olarak bilmem yeterli demiştim.
+
+13
+00:03:47,635 --> 00:03:54,735
+İşte kimyasal risk faktörleri dendiğinde asitler, bazılar, yanıcılar, yakıcılar, patlayıcılar bunları bilmem.
+
+14
+00:03:54,895 --> 00:04:05,055
+İşte kozmetiktir, deterjandır, ilaçtır bunlar kimyasal risktir. Sigaradır mesela. Yangın çıkarma potansiyeli olan her şey kimyasal risktir arkadaşım.
+
+15
+00:04:05,651 --> 00:04:23,011
+Ya da bakteri, virüs, bulaş dediğimde tamam mı? Bunların biyolojik risk olduğunu, mobbing, cinsel taciz, sözlü taciz, iş yükü, zaman değişiklikleri vs. bunlar dendiğinde psikososyal.
+
+16
+00:04:23,636 --> 00:04:35,056
+İnsan vücuduyla ilgili her şey, insan vücuduyla uygun makine tasarlamak, ekipman tasarlamak, bunları yapmak dediğimde ergonomik olduğunu bana söylemen yeterli olur demiştim.
+
+17
+00:04:35,855 --> 00:04:44,816
+Yoksa sana işte minimum kaç derece, maksimum kaç derece, hangi desibelde ne olur, hangi milimetre karede kaç basınç bunlardan sorumlu değilsin demiştim.
+
+18
+00:04:45,016 --> 00:04:47,916
+Genel olarak bana isim verebil. Tamam mı?
+
+19
+00:04:48,435 --> 00:05:00,075
+Bir de tabii ki bilmen gereken şey ne? İş kazası diye konuşmuştuk. Bir olaya baktığımda bu olay iş kazası mıdır değil midir? Bunu bana söyleyebilmen yeterliydi benim için.
+
+20
+00:05:00,355 --> 00:05:14,315
+Bir şeyin iş kazası sayılması için hatırla iş yerinde olması, mesai saatleri içerisinde olması, görevlendirmedeyken olması gerekiyordu ve her şeyden önce
+
+21
+00:05:14,687 --> 00:05:25,908
+Sadece sigortalı olman gerekiyordu. Yani sigorta bu işin mastıydı. Sigorta olmadığı zaman zaten olay bitmişti. Sana hep aynı örneği veriyordum.
+
+22
+00:05:26,324 --> 00:05:46,884
+Aklında kalsın diye. Sen Yıldız Tekniğin bahçesinde Davut Paşa'da koştur koştur kantine, kafeye bilmem neye giderken düşsen, bunun adı iş kazası değildi. Ama senin bölümündeki bir hoca düşse, bunun adı iş kazasıydı. Çünkü o okulun sigortalı çalışanıydı. Ama sen okulun sigortalı çalışanı değildin.
+
+23
+00:05:47,216 --> 00:06:13,555
+Ne zaman ki staja gidiyordun, sigortalanıyordun, o zaman iş kazası olarak değerlendiriyordun. Anlaştık mı? Yani sen, ben sana sorduğumda bu olay iş kazası mıdır, değil midir dediğimde, önce şuna bakacaksın. Adamın sigortası var mı, yok mu? Adam iş yerinde mi, değil mi? Mesai saatleri içerisinde mi, değil mi? Bu adam işiyle ilgili bir şey mi yapıyor, yoksa bambaşka mı takılıyor? Bu sorulara cevap verebilmen bizim için yeterli olacaktı.
+
+24
+00:06:14,196 --> 00:06:37,276
+Ve son bölüm olarak, yani vizeye dahil olan son bölüm olarak, kişisel koruyucu ekipmanla işaretlemeleri bilmen gerekiyordu. Bugün işaretlemelerin ve kişisel koruyucu ekipmanların zaten üzerinden geçeceğiz. Böylece vize konularımızı tamamlamış olacağız. Burası herkes tarafından anlaşıldı inşallah. Tanımları biliyorsun.
+
+25
+00:06:37,696 --> 00:06:51,396
+Risk çeşitlerini biliyorsun, risk yönetimi, onlarla ilgili soruları biliyorsun ve bugün anlatacağım kişisel koruyucu donanımları, ekipmanları biliyorsun, işaretlemeleri, bir de iş kazası nedir, ne değildir bunları biliyorsun.
+
+26
+00:06:51,556 --> 00:07:00,456
+Zaten rahatlıkla dediğim gibi yapabileceğimiz sınav çok kolay değil, çok zor değil, orta şiddetle ders takip eden bir adamın rahatlıkla yapabileceği bir şey.
+
+27
+00:07:01,043 --> 00:07:16,483
+Şimdi gençlik, önce şeyden bir başlayalım. Nereden bir başlayalım? Kişisel koruyucu donanımdan bir başlayalım. Kişisel koruyucu donanımla ilgili ben sana şöyle bir şey söyledim. Sanırım ekranımı görebiliyor herkes.
+
+28
+00:07:24,276 --> 00:07:44,475
+Aslında benim risk hiyerarşimde, o risk yönetimi hiyerarşimde en son basamak demek. Neden? Hatta bunu da şöyle söylemiştim. Çünkü sana güvenmiyorum demiştim. Yani ben bir iş güvenlikçi olarak, sen de bir çalışan olarak, ben sana güvenmediğim için kişisel koruyucu donanım en son da demiştim.
+
+29
+00:07:45,336 --> 00:07:49,295
+Sen de kendi kendine şey düşünmüştün ya hoca niye güvenmiyor ki yani ne alaka?
+
+30
+00:07:50,036 --> 00:08:11,496
+Çünkü şöyle, kişisel koruyucu donanım dediğim şey, arkadaşım benim elimi, yüzümü, gözümü, başımı, kulağımı, ayağımı, göğsümü, karnımı koruyan, çalıştığım işte oluşabilecek risklere karşı önlem almak için kullandığım donanım, araç, gereç, tamam mı?
+
+31
+00:08:12,216 --> 00:08:17,616
+Yani bana ait bir şey, bana verilmiş bir şey. E ben de bir insanım.
+
+32
+00:08:17,935 --> 00:08:44,836
+O zaman bunu kullanmayabilirim. Ne bileyim, hani size anlatmıştım ya ben, balet veriyorsun ustaya, adam diyor ki başımı ağrıtıyor. Balet benim başımı ağrıtıyor diye, ağır diyor, başımı ağrıtıyor diye ve kullanmıyor. Kulaklık veriyorsun mesela, diyor ki ben duyamıyorum bunu takınca. Ya da daha şey, gözlük veriyorsun mesela, gözlük kullanmak istemiyor. Diyor ki iyi göremiyorum kaynağı diyor mesela. Halbuki sen kaynağı yaparken de gözünü kısıyorsun zaten ama işte hani.
+
+33
+00:08:45,491 --> 00:08:54,991
+Bu nedenle güvenmiyorum. Yani kişisel koruyucu donanımın çalışanlar tarafından kullanılıp kullanılmadığından emin olamadığım için hiyerarşinin sonunda.
+
+34
+00:08:54,991 --> 00:09:11,151
+O zaman neymiş kişisel koruyucu donanım? Bizim çalışanlarımızı yaptıkları işten kaynaklı, herhangi bir sıkıntıdan, riskten, problemden koruyan ve bu çalışan tarafından giyilen, takılan, tutulan
+
+35
+00:09:11,731 --> 00:09:31,912
+Araç, gerek, cihazların hepsi kişisel koruyucu donanım demek. Kulak koruyucusu olabilir. Gözlerini, yüzlerini korumak için olabilir. Nefesini korumak, solunum sistemi koruyucusu olabilir. Karın bölgen için, gövden için, elin, kolun, ayağın, bacağın, cildin, vücudun, başın hepsi için koruyucularımız var bizim.
+
+36
+00:09:32,340 --> 00:09:57,580
+Bunlardan en favorileri, en bilindikleri kulak koruyucuları. Tamam mı? Neden? Çünkü gürültü çok önemli bir fiziksel faktör. Çünkü gürültü işitme kaybına sebep oluyor. Ve biz çalışma hayatımıza girdiğimizde ne yazık ki %20 ila 25'imiz işitme kaybıyla karşılaşıyoruz.
+
+37
+00:10:00,000 --> 00:10:05,280
+Her şey güzel ama 80 decibeli aştığında artık sıkıntı başlıyor.
+
+38
+00:10:05,875 --> 00:10:13,835
+85 decibelde mutlaka kulak koruyucu kullanmak zorundasın. Çünkü kullanmazsan eşittir işitme kaybı.
+
+39
+00:10:14,295 --> 00:10:33,815
+Kulak koruyucular çeşitli çeşitli. Yani senin uçak yolculuğunda kullandıklarından, küçük kullanatlıklardan tut da, havuza denize girerken kullandıklarından tut da, havaalanlarında statlarda çalışırken kullandıklarıma kadar, ses emicilere kadar geniş bir yelpazen var kulak koruyucular.
+
+40
+00:10:33,875 --> 00:10:39,175
+Bunun dışında ikinci favorim gözlükler.
+
+41
+00:10:40,275 --> 00:11:04,716
+Neden gözlük takıyoruz? Çünkü gözümüze toz geliyor, kıvılcım geliyor, gaz geliyor, kimyasal sıvı geliyor, ışın geliyor, kaynak ışığı geliyor, radyasyon geliyor, ateş, alev, duman geliyor. İşte bunların hepsinden korumak için biz çalışanlarımızın gözlük kullanmasını istiyoruz. Peki onlar istiyorlar mı? Hayır.
+
+42
+00:11:05,248 --> 00:11:20,188
+İşte onlar istemediği için, biz istediğimiz için böyle genellikle bir savaş halinde oluyoruz. Çok amaçlı gözlüklerimiz, darbeye karşı dayanıklı gözlüklerimiz, ultraviyole gözlüklerimiz, kapalı gözlüklerimiz, yarı kapalı gözlüklerimiz, her çeşit gözlüklerimiz var.
+
+43
+00:11:20,692 --> 00:11:48,292
+Çalışana teslim ediliyor ve kullanması isteniyor. Ha bu arada sadece şeyde yapmayayım, hani şimdi benim tuzum kuru, tamam ben veriyorum çalıştığım yerden kaynaklı ama her türlü iş yerinde arkadaşlar bu kişisel koruyucu donanımlar ne yazık ki alınmıyor. Bir de böyle bir durum var. Yani alınıp çalışana teslim edilmiyor. Neden? Çünkü para, maliyet. Adam istemiyor böyle bir şey.
+
+44
+00:11:48,788 --> 00:11:54,048
+Şimdi ben devlet kurum olduğum için benim için zaten okey. Yani nasıl diyeyim size?
+
+45
+00:11:54,548 --> 00:12:22,488
+Ahmet Mehmet gibi bir patronum yok benim. Devlet kurumu. Zaten ihtiyacını belirtiyorsun. Diyorsun ki 100 tane gözlük, 200 tane kulaklık, şu kadar balet, bu kadar bilmem ne diyorsun. Onlar alınıyor ve çalışanların kullanılması isteniyor. Ama özel bir kurum olduğunu düşün. Özel bir kurum bunun maliyet analizini yapıyor ister istemez. Diyor ki şu kadar masraf, bunlar bu kadar zamanda deforme olacak. İşte ayda bir, üç ayda bir, yılda bir yenilenmesi gerekecek vesaire vesaire derken çok uzun bir serüvene gidiyor o.
+
+46
+00:12:22,548 --> 00:12:32,707
+Gözlüklerin hemen yanında üçüncü favorilerimiz bizim mesela sadece inşaatlı değil, laboratuvarlarda da çok kullandığımız el koruyucularımız.
+
+47
+00:12:32,707 --> 00:12:41,947
+Şimdi sizler neredesiniz bu arada? Neredesiniz? Hakikaten neredesiniz? Ben niye böyle görmedim sizi? Çünkü ekran görüntüsü de alacağım ya.
+
+48
+00:12:43,148 --> 00:12:48,827
+Mesela şimdi sizler bilgisayar mühendisliği olduğunuz için mesela şöyle bir laboratuvarda işiniz yok.
+
+49
+00:12:49,152 --> 00:13:03,152
+Anatomi laboratuvarında kadavrayla uğraşmıyorsun. Diş laboratuvarında alçıyla uğraşmıyorsun. Ne bileyim, beslenme diyetik laboratuvarında yemek yapmıyorsun. Ya da ne olsun, şeyde...
+
+50
+00:13:03,988 --> 00:13:17,988
+Bizimle ilk acil laboratuvarında, ilk yardım acil laboratuvarında oradaki sıvılarla vesairelerle uğraşmıyorsun. Aslında senin dünyan daha ponçik bir dünya, daha güzel bir dünya, daha risksiz bir dünya belki de. Ama şimdi bana bakan yönüyle...
+
+51
+00:13:20,211 --> 00:13:34,351
+Dünya kadar laboratuvar, yani 34 tane laboratuvar, hepsi sağlıkla ilgili ve hepsinde yüksek risk. Bu ne demek? Kulağını korumak zorundasın, gözünü korumak zorundasın, elini korumak zorundasın, her şeyi korumak zorundasın demek.
+
+52
+00:13:34,351 --> 00:13:48,211
+El koruyucular diye kastettiğimiz, yani şunlar arkadaşlarım, bizi kimyasallardan, asitten, yağdan, ateşten, PVC ile ilgili su geçirmezden, camdan mesela...
+
+53
+00:13:48,211 --> 00:13:54,371
+koruyacak olan, elektrikten koruyacak olan eldivenlerden bahsediyorum.
+
+54
+00:13:54,932 --> 00:14:22,872
+Mesela elektrik kazalarına karşı eldivenlerimiz var. 3 dakika kadar 90 bin volta dayanmak zorunda. Şimdi ekranda mesela bak metal örgüle eldiven görüyorsun. Koruyucu eldiven görüyorsun, lastik eldiven görüyorsun ya da antistatik eldiven görüyorsun, elektrik eldivenleri. Ya da mesela bak asit eldiveni görüyorsun uzun konşlu. Uzun konş ne demek? Şurası şöyle uzun bak. Hani o asit sıçramalarına karşı olsun diye.
+
+55
+00:14:22,932 --> 00:14:49,632
+Bunları hem laboratuvardaki çalışanlarına hem normal iş yapan çalışanlarına vermek durumundasın. Neden? Çünkü çalıştığı işle ilgili herhangi bir sıkıntı yaşamasın diye. Mesela bak kaynakçı eldiveni görüyorsun burada. Deri eldivenin var, ondan sonra yangına karşı, ateşe karşı dayanıklı var. Bir dünya eldivenler var. Bunlar olduğu gibi bir de bizim ayak koruyucularımız var.
+
+56
+00:14:50,067 --> 00:15:03,407
+Mesela şantiyede normal ayakkabıyla dolaşamazsın. Çünkü ayağına bir şey battığında, bir şey düştüğünde, kalas düştüğünde, beton düştüğünde, ayağın çamura girdiğinde, efendim çivi battığında vs. vs.
+
+57
+00:15:04,247 --> 00:15:12,167
+Ya da elektrik döşendiği bir yerde tamam mı senin antistatik ayakkabı, özel kavuşuktan yapılmış ayakkabı giymen lazım.
+
+58
+00:15:12,596 --> 00:15:35,995
+Ya da kaygan yüzeyler için kaydırmaz tabanlı, su geçirmeyen, sıvı geçirmeyen, deriden yapılmış ayakkabılar, ayak koruyucular giymen lazım. Şöyle düşün, ben derse kendi spor ayakkabılarımla gidebilirim ama ofisimde çelik uçlu ayakkabılarım var. Yani şu uç bölgesi çelik uçlu olanlar var. Şantiyeye çıktığım zaman çelik uçlu ayakkabıları giymek durumundayım.
+
+59
+00:15:36,436 --> 00:15:56,916
+Bunlar olduğu gibi bir de bizim baş koruyucularımız, yani senin en çok bildiğin baretler var. Başımı darbelerden korumak için, tamam mı? Yüksekte çalıştığımda, iskelede çalıştığımda, madende, tünelde, toprak işlerinde, kaya işlerinde çalıştığımda, kömür işletmelerinde olduğumda.
+
+60
+00:15:57,460 --> 00:16:15,420
+Kanonizasyonda çalıştığımda her türlü inşaat işinde baretleri kullanabiliyoruz rahatlıkla. Ve bu baretler senin başına bir malzemenin çarpmasından, yüksek bir yerden düşmenden vesaire gibi tehlikeli şeylerde seni korumaya yönelik ekipmanlar.
+
+61
+00:16:15,420 --> 00:16:24,720
+Tabii ki şu var ki bu baretlerin renkleri, malzemeleri, temiz bakımları, periyodik bakımları ve bir kullanım ömürleri var.
+
+62
+00:16:25,460 --> 00:16:45,279
+Elektrik için kullandığım yalıtkan baret, normal inşaatta kullandığım plastik baret, madenci bareti, alüminyum bareti gibi çeşitler var. Bunların hepsi, tatlım benim, herhangi bir riske karşı önlem almak için ve de şöyle yapayım.
+
+63
+00:16:47,700 --> 00:17:10,480
+Seni daha fazla risklerden korumak için yapılan çalışmalar, kişisel koruyucu donanımlar. Burada tabii ki şunu bilmen gerekiyor. Kişisel koruyucu donanım risk yönetiminin en son aşaması. İlk aşama ne? İlk aşama riski bertaraf etmek. Yani yok etmek.
+
+64
+00:17:11,251 --> 00:17:32,152
+Ama bütün riskleri yok edemezsin. Yani her şeyi bertaraf edemezsin. Öyle değil mi? Bütün düşmanlarınla aynı anda savaşamazsın. Kavgaya ona bir giremezsin yani. Karşında o kişi varsa o kavgaya girmezsin. Doğal olarak düşmanlarını bölüp parçalaman ve bu şekilde yönetmen gerekir. O yüzden biz riskleri önce tanımlarız.
+
+65
+00:17:32,531 --> 00:17:39,572
+Sonra sınıflandırırız, sonra risk analizi yapar ve kimin öncelikli olduğuna karar veririz.
+
+66
+00:17:40,491 --> 00:17:57,731
+Bertaraf edemiyorsak, yok edemiyorsak, daha az zararlı olanla değiştiremiyorsak, ne bileyim mühendislik önlemleri alamıyorsak, yönetimsel önlemleri alamıyorsak ya da yaptık ama yetmiyorsa o zaman işte kişisel koruyucu donanımları kullanıyoruz.
+
+67
+00:17:57,731 --> 00:17:59,112
+Bu bölüm böyle.
+
+68
+00:17:59,827 --> 00:18:08,467
+Peki gelelim diğer bölüme. Diğer bölüm kim? Bizim işaretlemelerimiz. Yani sınavda da senin karşına çıkacak olan bölüm.
+
+69
+00:18:09,027 --> 00:18:19,688
+Şimdi, 4 tane temel renk dedik, hatırla. Mavi, sarı, kırmızı, yeşil. Bu 4 temel renk, mavi, sarı, kırmızı, yeşil bizim için çok önemliydi.
+
+70
+00:18:19,688 --> 00:18:26,608
+Çünkü işaret levhaları demekte bunlar. Piktogram diyorduk biz buna. Süslü adı buydu, piktogram.
+
+71
+00:18:27,092 --> 00:18:46,811
+Mümkün olduğu kadar sade, mümkün olduğu kadar az yazısız, çok resimli ve herkes tarafından aynı şeyi anlaşılacak derecede kolay, iyi aydınlatılmış, görüş seviyesine uygun, tamam mı? Görünür yerlere konulmak zorundaydı bunlar.
+
+72
+00:18:49,523 --> 00:18:59,824
+Koyduğum yerde görme ile ilgili sorun varsa, doğal ışığın zayıf olduğu yerler varsa ekstra yapay aydınlatmada kullanmak durumundaydım.
+
+73
+00:19:00,243 --> 00:19:11,344
+Şimdi, dört renkten ilki, yani kırmızı. Kırmızının iki tane manası var. Biri yasak, biri yangın. Önce yasağa bakalım.
+
+74
+00:19:12,743 --> 00:19:17,003
+Ben sana sınavda piktogram vereceğim ve ne anlama geldiğini soracağım.
+
+75
+00:19:18,132 --> 00:19:35,672
+Sen daire biçiminde, beyaz bir zemin üzerinde, siyah fotoğraflı, siyah piktogramlı, kırmızı böyle üzerinde kros çizgisi çerçevesi olan bir şeyi gördüğünde bunun öncelikle yasaklayıcı işaret olduğunu anlayacaksın.
+
+76
+00:19:36,612 --> 00:19:43,932
+Her türlü kırmızı yasak demek. Sigara içilmez, yaya giremez, su dökülmez.
+
+77
+00:19:44,468 --> 00:20:00,208
+Ateş kullanılmaz. Tamam mı? Bu yasak. Su içilmez, musluk kullanılmaz, iş makinesi girmez, dokunmak yasak, yetkisiz kimse giremez. Bunların hepsi yasak işaretleri. Kırmızının ilk manası bu.
+
+78
+00:20:01,248 --> 00:20:03,528
+İkinci rengimiz sarı.
+
+79
+00:20:03,892 --> 00:20:14,192
+Sarı demek, uyarı işaretleri demek. Sen bunu en çok AVM'lerde, metrolarda, böyle ıslak zemin tabelası şeklinde görüyorsun.
+
+80
+00:20:15,272 --> 00:20:23,652
+Uyarı işareti üçgen şeklinde olur. Sarı bir zemin üzerine, siyah piktogram ve siyah çerçeve. Tamam, mesela böyle.
+
+81
+00:20:24,115 --> 00:20:50,176
+Patlayıcı madde. Yani sana diyor ki, dikkat diyor, burada patlayıcı madde var. Dikkat, burada aşındırıcı madde var. Dikkat, burada toksik, zehirli bir madde var. Yüksek ısı var diyor mesela. Dikkat, radyoaktif madde. Dikkat, iş makinesi çıkabilir. Dikkat, elektrik tehlikesi var. Yani sarı demek, arkadaş kafanı kaldır da bir yukarıya bir bak, bir etrafa bir bak. Burada tehlikeli bir şey var demek.
+
+82
+00:20:50,771 --> 00:20:53,551
+Ve sarı bana uyarıyı gösteriyor.
+
+83
+00:20:54,011 --> 00:20:59,991
+Tabii ki bir dünya uyarı işaretleri var ama derste ne anlattıysam sen ondan sorumlusun.
+
+84
+00:21:00,431 --> 00:21:07,091
+Mesela şu o harfi üzerinde böyle yanar yanar oksitleyici madde diyor mesela, lazer ışını diyor mesela, tamam mı?
+
+85
+00:21:07,691 --> 00:21:11,091
+Şu şekli gördüysen sen bana yanına açıklama yazacaksın.
+
+86
+00:21:11,091 --> 00:21:18,111
+Dikkat kuvvetli manyetik alan, dikkat düşme tehlikesi, dikkat engel var, dikkat biyolojik risk gibi.
+
+87
+00:21:18,644 --> 00:21:45,624
+Sarının anlamı bu. Mesela bak karayollarında yollarda bunu görürsün. Buzlanma için koyarız biz bunu. Buzlanma yollarda. Ne demek çünkü bu? Düşük sıcaklık demek. Ya da mesela bak çamaşır suyunun üzerinde görürsün sen bunu. Dikkat, zararlı madde, tahriş edici madde. Sanırım bu ikisini anladık. Kırmızı gördüğüm her şey yasak, sarı gördüğüm her şey uyarı.
+
+88
+00:21:46,228 --> 00:22:09,288
+Gelelim maviye. Mavi emredici işaretler. Çok net emrediyor. Otur, kalk, giy, dur, yürü. Böyle. Daire biçiminde mavi bir zemin var. Üzerinde beyaz kiktogram var. Yani baret giy, maske tak, eldiven giy, gözlük kullan. Uyarı yapıyor sana.
+
+89
+00:22:10,387 --> 00:22:21,367
+İş ayakkabısı giy, emrediyor, koruyucu elbise giy, yaya yolunu kullan, yüz siperi kullan. Şöyle bir ifade gördüğün zaman sen bana şunu diyeceksin, yüz siperi kullan.
+
+90
+00:22:21,855 --> 00:22:40,076
+Kullansan iyi olur değil. Kullanmak yasaktır değil. Dikkat, yüz siperi var değil. Mavi beyazı gördün, diyeceksin ki yüz siperi kullan. Bitti. Emredici işaret çünkü. Emniyet kemeri kullan. Eğer bir ünden varsa bu genel bir uyarı demektir.
+
+91
+00:22:40,615 --> 00:22:47,475
+Gelelim bizim diğer rengimize. Yani yeşile. Yeşilin iki tane manası var.
+
+92
+00:22:47,839 --> 00:23:01,500
+Birinci manası acil çıkışlar, kaçışlar. İkinci manası da ilk yardım işaretleri. Acil çıkışlar, ilk yardımlar yeşille gösteriliyor gençler. Tamam mı?
+
+93
+00:23:02,195 --> 00:23:28,375
+Toplanma alanlarını, acil çıkışları, ilk yardım işaretlerini sen hep yeşil beyaz görüyorsun. Mesela bak acil çıkış, kaçış yönü, yönler, kaçış yönleri tamam mı? Ya da mesela bir sedye işareti, yakınlarda bir yerde sedye var demek. Göz duşu, güvenlik duşu, tamam mı? İlk yardım telefonu, bunları hep yeşil beyaz görüyorsun.
+
+94
+00:23:29,107 --> 00:23:39,787
+Gelelim kırmızının ikinci manasına. Kırmızının ikinci anlamı yangın. Yangınla mücadele işaretleri.
+
+95
+00:23:40,307 --> 00:24:05,768
+Yani nasıl ki yasakları kırmızı gördüysen yangınla ilgili her şeyi de kırmızı görüyorsun. Yangın dolaplarını, yangın hortumlarını, yangın söndürme tüplerini, yangın merdivenlerini, yangın telefonlarını ya da yangın kaçış rotaları vardır mesela. Yangın kaçış rotalarını, bunların hepsini kırmızı beyaz görüyorsun.
+
+96
+00:24:06,451 --> 00:24:33,052
+O zaman neymiş? Piktogram dediğim şey benim işaretlemelerimmiş. Ve dünyanın neresine gidersem gideyim hepimiz aynı şeyi anlıyormuşuz. Yani diyormuşuz ki abi kırmızı, mavi, sarı, yeşil, dört tane renk var. Tamam mı? Bu dört tane renkten kırmızının iki malası var. Diyor ki bana kırmızı yasak. Yasak ya bu kadar basit yani yasak. İkincisi de diyor ki yangınla ilgili bilgilendirme.
+
+97
+00:24:33,875 --> 00:24:48,896
+Dünyanın neresine gidersem gideyim, sarı siyah bana diyor ki uyarıyor, seni uyarıyorum, bak burada tehlike var, tamam mı? Mavi emrediyorum, maske tak, balet giy, şunu yap, bunu yap gibi.
+
+98
+00:24:49,811 --> 00:25:03,651
+Efendim, yeşil, acil çıkışlar, toplanma alanları, parklarda falan görürsün ya hani işte toplanma alanları vesaireler tamam mı? Bunlar senin şeylerin, nedir onun adı?
+
+99
+00:25:05,683 --> 00:25:26,524
+İşaretlemelerin, piktogramların, doğal olarak bu piktogramlar sana her yerde aynı bilgiyi veriyor. Kafa karışıklığı olmasın diye. Ve bunları kullanmak zorundayız. Bunları kullanmadığımızda herhangi bir kaza olursa zaten o zaman suçlu durumdayız. Anlaştık mı?
+
+100
+00:25:26,996 --> 00:25:33,396
+Bunları kullandığımız halde kaza olursa da o zaman kusur paylarına bakıyoruz.
+
+101
+00:25:35,276 --> 00:25:37,716
+Buraya kadar olan her şeyin anlaşıldığını düşünüyorum.
+
+102
+00:25:38,136 --> 00:25:42,436
+Kişisel koruyucu donanımları anlattım ve işaretlemeleri anlattım.
+
+103
+00:25:42,436 --> 00:25:43,436
+Şimdi...
+
+104
+00:25:44,307 --> 00:26:03,748
+Gelelim biz kendi risk yönetimi konumuza. Kendi risk yönetimi konumuz ne? Bizim geçen hafta değil, ondan önceki hafta başlayıp bıraktığımız konu. Dedim ki sana, bir yerde tehlikeleri gördüm. Tamam. Bunları sınıflandırdım. O da tamam. Eyvallah. Sonra ne yapacağım? Ben bunları bir ölçmek zorundayım.
+
+105
+00:26:04,468 --> 00:26:15,268
+Çünkü ölçmediğim şeyi yönetemem. Yani bir bakmak zorundayım, ya bunun derdi ne bende, ne kadar bir derdi var ya da ben bununla ne yapabilirim diye bir hesap yapmak zorundayım.
+
+106
+00:26:16,048 --> 00:26:31,948
+İşte böyle deyince bizim karşımıza risk analizleri çıkıyor. Risk analizleri demek, gençlik şu demek aslında, çeşitli sayısal, sözel ya da karma yöntemler demek. Tamam mı?
+
+107
+00:26:32,596 --> 00:26:43,096
+Sözel yöntemleri nerede kullanırım? Eğer çok küçük işletmeyse, risklerim küçükse, azsa, kişi sayım azsa, binalarım ufaksa, sözel yöntemlerle işimi götürebilirim.
+
+108
+00:26:44,036 --> 00:26:52,415
+Ama binalarım büyüdükçe, kişi sayım arttıkça, risk faktörlerim arttıkça artık o yöntemler bana yetmez, sayısal yöntemler kullanmalıyım.
+
+109
+00:26:53,256 --> 00:26:59,996
+Daha da kompleks hale gelince, şu örneği vermişimdir mutlaka, sen şimdi Davut Paşa kampüsünü düşün.
+
+110
+00:27:01,395 --> 00:27:07,115
+Davutpaşa kampüsünü sadece bir çeşit risk analiziyle yönetebilir misin?
+
+111
+00:27:10,771 --> 00:27:35,991
+Yönetemezsin. Çünkü kafeler var mesela orada. Sınıflar var mesela. Tamam mı? Mesela senin yok ama bir başka mühendisliğin mutlaka bir laboratuvarı vardır. Vardır bir şeyler mutlaka. Ne bileyim kesen, biçen, siyasi tezgahıyla uğraşan, hani mühendislik laboratuvarlarında ne bileyim mimarlıkta bir şeylerin vardır. Vardır. Bu sana şunu söyler.
+
+112
+00:27:36,336 --> 00:27:54,036
+Birbirinden farklı risklerin var. Birbirinden farklı risklerin olduğu yerde de herkese aynı risk analizini yapamazsın. Bu da senin farklı farklı risk analizleri yapma zorunluluğunu ortaya çıkarır. İşte o zaman da biz buna karma risk analizi diyoruz.
+
+113
+00:28:02,740 --> 00:28:27,460
+Biz bunu tek kişi yapabiliyorduk. Hatta çoğu iş yerlerinde İSG'ci bile yapmıyordu bunu. Normal bir personelden çalışmasını yapmasını bekliyorlardı. Çünkü aynı senin sınavda yapacağın gibi riskleri tespit ediyordu, sınıflandırıyordu, olasılıklarına ve şiddetlerine değer verip bunları çarpıyordu. Ne demek istiyorum?
+
+114
+00:28:28,276 --> 00:28:45,996
+Anket yapar gibi düşün. Hani sana anket soruyorlar ya, katılıyorum, katılmıyorum, çok katılıyorum, az katılıyorum falan. Birden 5'e değer veriyorsun mesela. İşte bir yemek mekanına gidiyorsun ya, 10 üzerinden kaç diyorsun. Ya da ne bileyim, böyle yakışıklı bir çocuk görüyorsun ki, 10 üzerinden kaç veriyorsun buna diyorsun mesela.
+
+115
+00:28:46,448 --> 00:29:04,248
+Onun gibi düşün. Olasılığa 5 üzerinden kaç veriyorum? İşte şiddete 5 üzerinden kaç veriyorum? 1 en az, 5 en çok. 1 en düşük, 5 en yüksek. Giderek şiddet artıyor, giderek olasılık artıyor. Olasılığın artması demek ne demek?
+
+116
+00:29:14,259 --> 00:29:25,200
+Ne bileyim, belki 6 ayda, 4 ayda, 3 ayda 1 olur. Olasılık 3 ise, abi her ay olur bu. Olasılık 2 ise, olasılık 1 ise çok daha yüksek olur. Tamam mı?
+
+117
+00:29:26,419 --> 00:29:39,339
+Mesela şöyle düşün, eskiden, 1-2-3-4 yıl öncesinde metrobüs kazalarının olasılıkları çok düşükken, şu an metrobüs kazalarının olasılıkları çok yüksek. Öyle değil mi?
+
+118
+00:29:40,115 --> 00:29:59,596
+Efendim, oluşumlu bu şekilde. Peki şiddet? Şiddet de şu, tamam oldu, eyvallah, tamam olay gerçekleşti. Bu gerçekleşen olay beni ne kadar incitecek? 1 ile 5 arası, tamam mı? Hiçbir şey olmadı, atlattım, hafif atlattım. Ne bileyim?
+
+119
+00:30:00,000 --> 00:30:09,700
+İş Göremez raporu aldım, tedaviye ihtiyacım oldu, bacağım koptu, kolum koptu, gözüm gitti, öldüm, birden 5'e kadar numaralandırıyorum.
+
+120
+00:30:09,700 --> 00:30:20,240
+Ve bu değerleri çarptığımda da bir risk skoru elde ediyorum ki bu risk skoru, bu matriz, 5'e 5'lik bir matriz bana çeşitli bölgeler veriyor.
+
+121
+00:30:20,756 --> 00:30:29,816
+Bu verdiği bölgelerde yeşil bölge, sarı bölge, ondan sonra işte kırmızı bölge dediğim bölgeler bana şunu söylüyor.
+
+122
+00:30:29,956 --> 00:30:38,496
+Diyor ki, arkadaşım sen bu şartlarda çalışmaya devam edemezsin. Hatta ekranda paylaşayım sana. Dur bakayım.
+
+123
+00:30:40,884 --> 00:31:08,264
+Fotoğraflarınızı tekrar aldım gençlik, şey için, yoklama için. Tarihçesiyle ilgili herhangi bir şey sormayacağımı zaten söylemiştim size. Sana demiştim ki bak burası çok önemli demiştim. Tehlikeleri tanımlamak, tahmin etmek, derecelendirmek, analizini yapmak, bu süreci yönetmek önemlidir demiştim. Sonra bu önemli şeyleri yaparken de işte çeşitli yöntemlerimiz var demiştim hatırlarsan. Şurada kalmıştık biz. Şimdi gençlik.
+
+124
+00:31:09,172 --> 00:31:19,172
+Geliyorum, geliyorum, geliyorum, geliyorum. Burası, L matriz. Başka bir deyişle sebep-sonuç ilişkilerini değerlendirdiğim 5'e 5'lik bir matriz.
+
+125
+00:31:19,292 --> 00:31:35,991
+O zaman diyorum ki, olasılık 1'den 5'e çok küçük. Yılda bir, küçük, 3 ayda bir, orta ayda bir, yüksek, haftada bir, çok yüksek, her gün. Tamam mı? Eşiddet çok hafiften çok ciddiye kadar.
+
+126
+00:31:36,819 --> 00:31:45,700
+İşte bu ikisini çarptığında bulduğun sonuçlar yeşil bölgedeyse kabul edilebilir risk diyoruz biz buna.
+
+127
+00:31:45,920 --> 00:31:55,840
+Kabul edilebilir risk. Yani onunla hayatına devam edebilirsin. O senin zaten mesleğinin doğasında var. Tamam mı?
+
+128
+00:31:55,840 --> 00:32:02,840
+Yani nasıl anlatayım ben sana şöyle anlatayım. Ana okulu öğretmeniysen,
+
+129
+00:32:04,147 --> 00:32:16,307
+Bütün kış hastasın. Bu net. Niye? Sınıfta 20 çocuk varsa, 20'si birer kere nezle olsa zaten sonra 20 hafta yapar, zaten sezon biter. Bu senin nesliğin riski.
+
+130
+00:32:17,967 --> 00:32:30,147
+Efendim, sarı bölgede ise önlem alman gerekir ama bulduğun sonuçlar kırmızı bölgede ise o işi o şekilde yapmaman gerekir.
+
+131
+00:32:30,147 --> 00:32:31,268
+Tamam mı?
+
+132
+00:32:32,276 --> 00:32:52,716
+Hani çok konuştuğumuz Kartalkaya yangını ya da benzeri yangınlarda zaten skorlar hep kırmızı bölgede olduğu halde, yani zaten ortam çok riskli göründüğü halde, aynı şekilde işlemler devam ettiği için biz bu kadar canı kaybettik.
+
+133
+00:32:53,364 --> 00:33:19,104
+Peki, şimdi bana senin şunu sorman lazım. Hocam, ben neyle neyi çarpacağımı nereden bileceğim? Ya da kırmızıda ben 3 dedim, 2 dedim, 6 çıktı. Arkadaş aynı şeye 4, 4 dedi, 16 çıktı. Benimki yeşil bölgede çıktı, onunki efendim kırmızı bölgede çıktı. O zaman ne yapacağız, ne olacak? Zaten şöyle bir şey olacak tatlım. Sınav için konuşmuyorum, genel olarak konuşuyorum.
+
+134
+00:33:20,819 --> 00:33:29,480
+Senin yeşil bölgede çıktığın bir yerde kaza oluyorsa zaten sen işini iyi yapmamışsın demektir.
+
+135
+00:33:30,939 --> 00:33:40,240
+Senin sarı bölgede bulduğun bir sonuçta kaza oluyorsa, bir kötü olay yaşanıyorsa zaten sen onu öngörememişsin demektir.
+
+136
+00:33:40,240 --> 00:33:41,240
+Anlatabiliyor muyum?
+
+137
+00:33:41,619 --> 00:33:58,259
+O nedenle biz hep iş güvenliği için olarak en kötüsünü düşünüyoruz. En kötü senaryo. Sana ilk ders ben şöyle bir şey dedim. Çok net hatırlıyorum. Sana dediğim şey de dedim ki ben bizim işler dedim.
+
+138
+00:33:58,740 --> 00:34:15,739
+Kayınvalide modu gibi dedim. Biz sürekli şeyiz böyle, hata arayan, kusur arayan tipleriz. Sürekli bir memnuniyetsizlik. Sürekli bir memnuniyetsizlik. Niye? Her şeyden memnun olsak çünkü sonra fatura bana gelecek. O yüzden...
+
+139
+00:34:18,099 --> 00:34:36,880
+Bizler en kötü, en şey senaryoya göre, hani böyle berbat defalk senaryoya göre hareket etmek durumundayız. Çünkü en kötü senaryoda ben en fazla önlemi alıyorum. O da beni zaten en fazla koruyor. Risk hiyerarşisine geri geliyorum.
+
+140
+00:34:37,231 --> 00:34:48,632
+Risk yönetimi ya da risk hiyerarşisi dediğim şey de tehlikeleri, riskleri tanımlamam, sıralamam, sonra risk analizi yapmam, sonra bunları değerlendirmem ve sonuca bakmam gerekiyordu.
+
+141
+00:34:49,612 --> 00:34:57,471
+Sen de bunu yapacaksın. Vize haftan geliyor. Diyeceksin ki 8 tane dersim var. Ben bunların 8'ine de yapamam.
+
+142
+00:34:57,876 --> 00:35:13,296
+Birisine hiç girmedim, birisine hep girdim, birisinin hocası çok kolay soracak, birineki çok zor soracak, o zaman şuna şu kadar gün çalışmalıyım, buna bu kadar yapmalıyım, şunu borçlamalıyım, bunu zaten buraya bırakmalıyım gibi düşmanlarını bölüp parçalayıp yöneteceksin.
+
+143
+00:35:13,876 --> 00:35:19,756
+Ve ondan sonra da kime nasıl çalışacağına karar verip hareket edeceksin. Aslında benim yaptığım da o.
+
+144
+00:35:20,211 --> 00:35:48,211
+Mesela senin okulundaki iş güvenlikçinin yaptığı da o. Davut Paşa kampüsünü tek bir yer olarak düşünemez. Bölecek. Yemekhaneyi bölecek, kafeyi bölecek, işte şeyleri bölecek, nedir onun adı, spor salonunu bölecek, hocaların kaldığı lojmanlar var, bir dünya iş, orayı ayrı bölecek vs. vs. Ona göre de her yere uygun risk anı bizi uygulayıp sorunları görmeye, sorunları bulmaya çalışacak ki...
+
+145
+00:35:48,211 --> 00:35:55,231
+Önerilerinde bulunacak ve bu bulduğu önerilerle de risk analizlerini gerçekleştirecek.
+
+146
+00:35:55,631 --> 00:35:59,291
+Şimdi çok popüler olan bir konu var, onu önüne bitirmek istiyorum.
+
+147
+00:36:01,971 --> 00:36:06,591
+Mesela bu 21 yıl hapis cezası alan iş güvenlikçi ile ilgili.
+
+148
+00:36:07,172 --> 00:36:12,991
+Şimdi onun tabii ki arka planında şey var, hani kapatılmamış, bizler bir yere tanımlıyız gençler.
+
+149
+00:36:13,396 --> 00:36:39,576
+[kişisel bilgi] TC kimlik numaram gibi bir numaram var, orada tanımlıyım ben. [kişisel bilgi] Yoksa ben onu kapatmazsam ya da ilgili kişiler kapatmazsa ben böyle ilelebet oranın iş güvenlikçisi gibi kalırım. Şimdi orada öyle bir sorum var, onu bir kenara koyuyorum.
+
+150
+00:36:40,115 --> 00:36:57,875
+Ama onun dışında yanlış anlaşılan şöyle bir nokta var. İş güvenlikçisi patron değil, işveren değil. Anlaştık mı? O sadece raporu tutan, değerlendirmesini yapan, burada bir sorun var ve bu sorun şöyle çözülmeli diyen kişi.
+
+151
+00:36:58,516 --> 00:37:07,476
+Benim yaptığım şey ve benim gibi çalışan arkadaşların yaptığımız şey bu. Ben Sağlık Bilimleri Üniversitesi'nin ya da Yıldız Tekniği'nin sahibi değilim.
+
+152
+00:37:07,891 --> 00:37:14,411
+Ne yaparım? Sorunları gözlemlerim, raporlarım. Sorun var, düzeltilmesi gereken yer de bu derim.
+
+153
+00:37:14,804 --> 00:37:26,524
+Bunu yapacak olan, buna maddi maneviye para harcayacak, enerji harcayacak, güç harcayacak olan şey, tabii ki işveren yani patron o yaptırmadıktan sonra zaten gerçekleşmez.
+
+154
+00:37:26,943 --> 00:37:38,044
+Az önce sana ne dedim, hani kişisel koruyucu donanımların alınması hususunda, dedim ki benim tuzum kuru, ben zaten devlet kurumuyum, ben istediğimde zaten alınıyor, işçiye, öğrenciye, hocaya, şuna, buna zaten veriliyor.
+
+155
+00:37:38,463 --> 00:37:39,664
+Olmama gibi bir durum yok.
+
+156
+00:37:40,083 --> 00:38:04,943
+Ama mesela özel bir kurum olsaydım, belki bu kadar rahat konuşamazdım. Belki derdim ki, işte 100 tane eldiven lazım, bana derlerdi ki 20 tane neyine yetmiyor. Belki derdim ki işte şu kadar yangın tüpü lazım, bana derlerdi ki 400 tane çok ya, 200 tane neyine yetmiyor gibi sorunlarla, ki bunlar psikolojik sorunlar, psikososyal sorunlar, bunlarla da uğraşmak zorunda kalabilirdim. Böyle bir durum var. Neyse.
+
+157
+00:38:05,907 --> 00:38:19,487
+Cuma akşamı için daha fazla şişirmeyin başınızı. Aslında ben şey yapmak istemiştim ama onu şu an bulamadım. Bir dakika. Diğerlerde bulabilirsem eğer gençler. Nerede olabilir mesela?
+
+158
+00:39:03,603 --> 00:39:12,403
+Şu an bulamadım. Yani sabahtan İngilizce gruplarla şey yapmıştık, eski sınav sorularını çözmüştük. Türkçelerini bulmaya çalıştım şu an ama Türkçelerini bulamadım.
+
+159
+00:39:13,243 --> 00:39:21,824
+Bulsaydım size de çözerdim, artık size de haftaya çözeriz. Bakıyorum hani İngilizcesinden bir iki tane göstersen mi diye düşündüm. En azından.
+
+160
+00:39:56,467 --> 00:40:16,567
+Yok arkadaşlar, evet bulamadım. Şu an bunların hepsi İngilizce. Haftaya hazırlamış olurum en azından. Türkçe eski sınav sorularından, geçen sene, ondan önceki sene sorularından falan çözeriz. Birazcık sizin de aklınızda daha netleşir konu. Ondan sonra da zaten ara sınavınızı gerçekleştirirsiniz. Herhangi bir sorusu olan var mı?
+
+161
+00:40:19,827 --> 00:40:46,147
+Eğer yoksa dersimizi tamamlayalım, ayrılabilirsiniz arkadaşlar. Çok özür diliyorum. Yeni gelen biri, neyse dur, buradan aldım. Tamam, buradan aldım, yakaladım. Yeni gelen olmuş, okey. Herkese iyi akşamlar, hoşçakalın. Sadece test değil sınav arkadaşlar, test artı klasik. Tamam. Herkese iyi akşamlar, hoşçakalın. İngilizcesini gösterebilirim tabii ki.
+
+162
+00:40:50,547 --> 00:40:59,507
+Bir saniye sen kal o zaman arkadaşım, İngilizcesini isteyen. Hemen göstereyim mesela. İngilizcesini gösterebiliriz aslında, evet.
+
+163
+00:41:01,347 --> 00:41:07,347
+Hemen şöyle bir tane örnek mesela. Ne demek istediğimi anlatacak tarzda bir derdim.
+
+164
+00:41:24,532 --> 00:41:25,372
+Mesela
+
+165
+00:41:25,372 --> 00:41:28,552
+Şöyle
+
+166
+00:41:32,083 --> 00:41:56,983
+Görebiliyor musunuz? Problem var mı? Benzer şeyler sizinle karşınıza gelecek arkadaşlarım. Mesela sana bir fotoğraf verdim. Birinci ihtimal bu. Tamam mı? Bu fotoğrafı verdiğimde sen bu fotoğrafa baktığında bana şunu söylemelisin. Bu ortamdaki riskler neler? Tamam mı? Zaten hemen altında bir tablo. Kaç tanesini istiyorsam ben senden, 5 tane mi 10 tane mi ne istiyorsam.
+
+167
+00:41:57,327 --> 00:42:16,367
+Riski ve risk çeşidini yazmanı isterim. Mesela risk nedir? Islak zemin, değil mi? Şurada ıslak zeminde olmak, burada ne bileyim boşluk olması, işte ne bileyim efendim kadının taşırken önünü görmemesi, buralarda çivilerin olması falan bunlar.
+
+168
+00:42:17,268 --> 00:42:40,527
+Risklerdir. Çünkü kazaya sebep olur. Peki ne çeşit risktir? Mesela bak, adam sigara içiyor. Bu kimyasal bir risktir. Çünkü yangın çıkar. Düşecek. Bu fiziksel bir risktir. Çünkü bir tarafını incitir. Anlaştık mı? Birinci grup bu. İkinci grup, mesela şöyle baktığında, daha yeni yaptık zaten.
+
+169
+00:42:41,204 --> 00:43:00,124
+Sana bir piktogram verdiğinde bunun anlamını yazabilmen. Mesela, kırmızı bak, yasak, yetkisiz kişi giremez, mavi bak, emir, kulaklık tak, tamam mı? Mesela bak, kırmızı, yasak, dokunma diyor mesela.
+
+170
+00:43:09,204 --> 00:43:21,744
+Nedir bunun adı? Mavi. Bak ne diyor? Siperlik giy, yüz siperliği. Tamam, emir veriyor. Böyle piktogramların anlamlarını yazmalısın. Bir başka grup, mesela şuraya bakalım.
+
+171
+00:43:22,771 --> 00:43:38,131
+Sadece ismini bilin dediğim şey bu işte. Mesela diyor ki, aşağıdakilerden hangisi kimyasal risk faktörü değildir? Biz ne yaptık seninle? Fiziksel, kimyasal, biyolojik, psikososyal, ergonomik risk faktörlerini tanımladık.
+
+172
+00:43:38,579 --> 00:44:01,299
+Ben sana ne dedim? Her türlü yanıcı, yakıcı, patlayıcı şeyler kimyasaldır dedim. O zaman gaz, patlayıcı madde, yangın ya da yanıcı madde ya da tahriş edici madde bunlar nedir? Kimyasal. Ama bakteri nedir? Bakteri biyolojiktir. Tamam mı?
+
+173
+00:44:01,715 --> 00:44:12,936
+Ya da mesela biz seninle şöyle bir tarif yaptık. Ramak kala diye bir şey tarif ettik. Ramak kala demek ne demek? Bir kaza oldu.
+
+174
+00:44:13,652 --> 00:44:35,771
+Ama sen onda zarar görmedin. Yani ölmedin. Kulum kanadım kopmadı. Sana herhangi bir zarar gelmedi. İngilizce near miss olarak diyoruz biz buna. Yani bir kaza gerçekleşti ama sende herhangi bir demet, herhangi bir şey yok, zarar yok. Bu nedenle mesela ramak kala nedir sorusuyla karşılaşabilirsin. Tamam mı?
+
+175
+00:44:41,652 --> 00:45:02,811
+Şimdi kazaların dedim sana ben temel nedeni nedir? Kazaların temel nedeni insandır değil mi? Bir de bizim çevresel faktörlerimiz ve hareketlerimizdir. Yani insan kaynaklı kazalarımız vardır.
+
+176
+00:45:03,315 --> 00:45:25,635
+Güvensiz davranış kaynaklı kazalarımız vardır. Bir de güvensiz çevre şartları kaynaklı kazalarımız vardır. Yani bizzat serap yüzünden çıkan kazalar vardır. Ne bileyim, dikkatsizimdir, heyecanlıyımdır, telaşlıyımdır, cahilimdir vs. vs. benden kaynaklı.
+
+177
+00:45:28,032 --> 00:45:40,192
+Bu hareketlerimden kaynaklı. Ansefek dediğimiz, güvenilir olmayan hareketlerden kaynaklı. Mesela şimdi şeyler çok korkunç değil mi? Martı'ya 2-3 kişi biniyorlar. Ondan sonra ve işte şey yapıyorlar.
+
+178
+00:45:40,820 --> 00:45:58,540
+Nedir onları? Sağa sola çarpıyorlar, bilmem ne ediyorlar, her tarafa martıları, motorları, bilmem neleri bırakıyorlar falan. Böyle güvensiz davranışlar. Ya da etraf zaten güvensiz. Yani çevresel şartlar zaten güvensiz. Bunların üçü temel kaza nedenleridir.
+
+179
+00:45:59,476 --> 00:46:19,916
+Ne olsun mesela, hadi bir tane daha söyleyeyim. Nedir? Şu. Ne diyor? Riskin tanımı. Risk neydi? Risk şöyle bir şeydi. Kötü bir şeyin gerçekleşme ihtimali. Kötü bir durumun gerçekleşme olma ihtimali.
+
+180
+00:46:20,563 --> 00:46:44,983
+Biz buna risk diyorduk. Hesaplarken de olasılıkla şiddeti çarpıyorduk. Bu grubu da böyle arkadaşlar. Çoktan seçmeli çıkarsa, boşluk doldurma çıkarsa falan filan. Durum böyle. Haftaya şey yaptığımızda, neredesiniz? Buradasınız. Haftaya Türkçe benzerliklerini çözdüğümüzde çok daha net şey yapabilirsiniz, anlayabilirsiniz diye düşünüyorum.
+
+181
+00:46:45,804 --> 00:46:47,583
+Tamam mıyız? Konuşikler, anladı mı herkes?
+
+182
+00:46:48,307 --> 00:46:54,748
+Bakayım. Ben teşekkür ederim. Ne demek? Herkese iyi hafta sonları. Haftaya görüşürüz o zaman. Hoşçakalın.
