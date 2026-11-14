@@ -1,0 +1,871 @@
+1
+00:00:29,940 --> 00:00:42,679
+Böyle yaparsak tamam. Başlayalım mı? Başlayalım. Haydi bakalım. Tamam. Dedik ki neye bakıyorduk en son? Datalar ne tipçi olur onlara bakıyorduk.
+
+2
+00:00:42,679 --> 00:00:53,799
+İlki dedik record kayıt datası olur dedik. İkincisi matriz şeklinde datalar olur dedik. Sonra dedik ki dokümanları nasıl tutacağız? Değil mi?
+
+3
+00:00:56,307 --> 00:01:03,608
+Dokümanları da gördüğünüz gibi genellikle her bir dokümana, dokümanı tek bir satır olarak tutuyoruz.
+
+4
+00:01:04,328 --> 00:01:09,048
+Ve burada da genellikle her kelimenin kaç kere geçtiğini sayıyoruz.
+
+5
+00:01:09,207 --> 00:01:16,748
+Buna da term yani terim vektörü. Her kelime, her terim kaç kere geçmiş gibi gözüküyor.
+
+6
+00:01:16,748 --> 00:01:17,668
+Tamam mı?
+
+7
+00:01:20,212 --> 00:01:36,712
+Dediğimiz gibi genellikle bunlarda az geçenler yani ne oluyor? Atılıyor. Bazı kelimeler. Diyelim ki yani bir kelime sadece bir dokümanda böyle, diyelim ki bin tane dokümam var ve bir kelime sadece bir dokümanda bir kere geçiyorsa.
+
+8
+00:01:47,219 --> 00:02:04,660
+Büyük olmuş oluyor kelime sayısı çok olduğu için. Stun sayısı da ne? Attribute sayısı çok fazla. Dolayısıyla çok az geçen kelimeler. Yani genellikle threshold belirlenir. Threshold 3 ise mesela işte bin dokümanda eğer 3'ten az sonra kelime hop atılır.
+
+9
+00:02:05,075 --> 00:02:07,775
+Tamam? Datayı daha fazla büyütmeye gerek olmadığı için.
+
+10
+00:02:08,555 --> 00:02:15,656
+Gelelim transaction'lara. Transaction'lar nerede var? Market alışverişinde var, bankalarda var. Değil mi yaptığımız işlemler?
+
+11
+00:02:16,316 --> 00:02:24,756
+Burada da her transaction her bir müşteriyi göstermiyor. Yani aynı müşteri arda arda iki tane transaction gerçekleştirilmiş olabilir.
+
+12
+00:02:28,788 --> 00:02:43,608
+Transaction'a neler alınmış onu tutuyor. Banka datasında ne tutulur? İşte yapılan işlem ne, miktarı ne, nereye yapıldığı gibi şeyler tutulur. Ama genellikle Transaction Data'da biz ne yapıyoruz?
+
+13
+00:02:44,828 --> 00:02:51,487
+Bu genelde market basket analizi dediğimiz yöntemler var. Yani neler birlikte satılır? Onlar için kullanıyoruz.
+
+14
+00:02:53,268 --> 00:03:03,867
+Association analize bunları görmüş olacağız. Peki, gelelim şuraya. Transaction data'yı record data'ya yani tabloya diyelim çevirebilir miyiz?
+
+15
+00:03:08,211 --> 00:03:27,391
+Hatta bir sorum azcık daha değiştiriyorum. Şunu transaction data gibi tutabilir miyiz? Yani doküman bir diyeyim, BIM, İTİM, BİRGÜL, SOR BİRGÜL diyeyim. O zaman sayıları kaybederim. Okey. Peki. Şunu.
+
+16
+00:03:29,075 --> 00:03:44,536
+Şuradaki transakçonu şöyle çıksam, doküman gibi birinci transakçonda ekmek var mı? Var. Burada zaten çünkü sayı yok, metinden farklı. Ekmek varsa bir, atıyorum. Kola varsa bir, işte varsa bir, yoksa sıfır koysam.
+
+17
+00:03:45,816 --> 00:03:47,915
+Niye böyle tutmuyoruz? Şöyle tutuyoruz.
+
+18
+00:03:49,256 --> 00:03:53,195
+Çünkü şişler tıpkı graflar gibi değil mi? Grafları nasıl tutabilirsiniz?
+
+19
+00:03:53,780 --> 00:03:59,219
+Ya konşuluk madresi şeklinde tutabilirsiniz ya da liste şeklinde tutabilirsiniz.
+
+20
+00:03:59,219 --> 00:04:01,380
+Ejresinizi liste, ejresinizi madresi.
+
+21
+00:04:02,460 --> 00:04:12,340
+Eğer ki graflarda grafınız çok dense, yani her yerden her yere yol varsa, diyelim ki komple graf ise neye açı çıkar?
+
+22
+00:04:13,080 --> 00:04:15,700
+Listeyle madresin boyutu aynı şeye gelir.
+
+23
+00:04:20,276 --> 00:04:42,156
+Genellikle bu datalarda yüzlerce kolon oluyor. Tamam mı? Ve bir sıfır bir sıfır tutarsanız ne olur? Datanız çok çok büyür. Listeyle de işlem yapması zor. Niye? Çünkü listeyi bilgisayar programı bunu bilgisayar programı işleyecek. Listeyi nasıl okuyorsunuz? Satır satır okuyorsunuz değil mi?
+
+24
+00:04:42,740 --> 00:04:57,400
+Bir elemana erişmek için. Dolayısıyla o da yavaş oluyor ama genellikle işte burada ne var? Hız mı yoksa hafıza mı ikile mi oluyor ama bunlar da çok hız önemli olmadığı için.
+
+25
+00:04:58,800 --> 00:05:09,840
+Çünkü bu modeli bir kere eğiteceğiz. Sürekli eğitilmek zorunda değil. Hafıza ya da genellikle sığmadığı için genellikle liste şeklinde transaction datası bu şekilde tutuluyor.
+
+26
+00:05:10,387 --> 00:05:19,087
+Tamam. Şimdi data objektleri ve etriktörü tarpları yani dersin ilk kısmını ne yaptık? Bitirdik.
+
+27
+00:05:19,668 --> 00:05:33,627
+Şimdi zaten çoğunuzun bildiğini düşündüğüm istatistiksel tanımlarını, data üzerindeki bazı istatistiksel şeyleri nasıl yaparız? Ne yaparız? Ortalama.
+
+28
+00:05:33,627 --> 00:05:37,608
+Hı? Ne?
+
+29
+00:05:38,899 --> 00:05:43,419
+Standart sapma, medya, mod, bunlara bakarız değil mi?
+
+30
+00:05:44,779 --> 00:05:51,099
+Şimdi, niye peki istatistiksel tanımlara ihtiyacımız var? Niye ortalamasına falan bakacağım ki?
+
+31
+00:05:56,851 --> 00:06:04,052
+Genel veri hakkında aslında bakın daha hiç şeye başlamadım, veri madenciliğine falan başlamadım. Tamam mı?
+
+32
+00:06:05,512 --> 00:06:11,971
+Ve siz işte diyelim ki data scientist oldunuz, bir şey yapacaksınız. Veri, veridir gözüyle bakıyorum.
+
+33
+00:06:12,096 --> 00:06:32,216
+Yani mesela o veriyi toplayan bankacıysa ya da işte bambaşka bir alanda çalışıyorsa, diyelim ki meteoroloji mühendisiyse onun veriye baktığı göz farklı oluyor, sizin farklı oluyor. Dolayısıyla da istatistiksel şeyler size veri hakkında ön bilgi veriyor.
+
+34
+00:06:33,427 --> 00:06:43,307
+Ve buradan şuna bakıyorsunuz. Yani sizin veriniz tamam toplanmış, hatta uzun bir zaman boyunca da toplanmış ama ne tip şeyler var?
+
+35
+00:06:43,947 --> 00:06:51,747
+Mesela neler neler olabilir? Diyelim ki çok çok eski veri var, paradan sıfır atıldığı tarihe kadar gidiyor.
+
+36
+00:06:52,467 --> 00:06:56,027
+Bir anda kolonlarınızın değerleri değişmiş mesela, değil mi?
+
+37
+00:06:56,468 --> 00:07:11,807
+Ya da saat toplamışsınız. Saatler bir saat geri alınır, ileri alınır da eskiden. Mesela hop orada bir farklılık var. İşte bu tarz verinizde şeyler olabilir. Farklıklar, değişiklikler olabilir.
+
+38
+00:07:21,747 --> 00:07:29,088
+ne tarz dağılım gösterdiği, nasıl değiştirdiği, değiştiği hakkında ne yapıyor? Bilgi veriyor.
+
+39
+00:07:29,088 --> 00:07:38,168
+Ve genellikle central tendency dediğimiz şey, genel eğilimi nasıl? Bunlara bana ne söylüyor?
+
+40
+00:07:38,867 --> 00:07:47,427
+ve ortalama yani mean, median, mode ve midrange dediğimiz şey söylüyor. Onların tanımını zaten formülleriyle vereceğiz.
+
+41
+00:07:47,427 --> 00:07:56,867
+Peki data'nın dağılımını, yayılımını ne söylüyor? Yine burada da quartallar, quartilin Türkçesi herhalde direkt öyle çeviriyor.
+
+42
+00:07:56,867 --> 00:08:04,867
+Çeyreklikler yani bunlar söylüyor. Tamam. Şimdi bunları hızlı hızlı geçelim.
+
+43
+00:08:05,108 --> 00:08:13,288
+Mini nasıl hesaplarsınız? Tüm elemanları toplarsınız, eleman sayısına bölersiniz. Bu nedir? Aritmetik ortalamadır.
+
+44
+00:08:14,387 --> 00:08:18,707
+Bir de, bunları istatistikte gördünüz herhalde, bir de ne var? Ağırlıklı ortalama var.
+
+45
+00:08:18,707 --> 00:08:32,488
+Onda ne yapıyoruz? Toplarken her elemanı ağırlığıyla çarpıp öyle topluyoruz ve bölerken eleman sayısına bölmüyoruz. Neye bölüyoruz?
+
+46
+00:08:33,395 --> 00:08:35,316
+Toplam ağırlığa bölüyoruz.
+
+47
+00:08:36,015 --> 00:08:36,115
+Tamam.
+
+48
+00:08:36,576 --> 00:08:38,175
+Niye bunu kullanırız, niye bunu kullanırız?
+
+49
+00:08:38,235 --> 00:08:38,995
+Bunun farkı ne?
+
+50
+00:08:40,035 --> 00:08:43,655
+Ne zaman weighted ağırlıklı ortalamayı kullanırız?
+
+51
+00:08:44,316 --> 00:08:44,955
+Neye gerek var?
+
+52
+00:08:48,096 --> 00:08:49,355
+Ne gibi mesela?
+
+53
+00:09:00,947 --> 00:09:03,168
+Bir önceki ilk saatlere sıfır, hafta beş olabilir.
+
+54
+00:09:06,107 --> 00:09:06,908
+Evet?
+
+55
+00:09:07,748 --> 00:09:15,947
+Bu tip durumlarda genel, her bilgiler şey, tevhiyat, aynama gelmesi için değilse, bu tip durumlarda kullanılabilir.
+
+56
+00:09:15,947 --> 00:09:18,067
+Kullanılabilir. Eğer, güzel, başka.
+
+57
+00:09:20,008 --> 00:09:20,167
+Ne?
+
+58
+00:09:24,884 --> 00:09:27,504
+Niye ağırlıkla oluyorlar orada? Niye direkt ortalama anlıyor?
+
+59
+00:09:29,644 --> 00:09:35,764
+Değil mi? Mesela AKTSS ile çarpıyorlar değil mi? Ağırlığıyla işte not ortalama gibi.
+
+60
+00:09:36,244 --> 00:09:48,644
+Aynen iki arkadaşımız da dediği gibi sadece değeri artı bir şeye daha bağlıysa yani o mesela dersin AKTSS'e oradaki 3-5 size ekstra bir şey söylüyorsa o zaman ne yapıyoruz? Onlarla çarpıp topluyoruz.
+
+61
+00:09:49,748 --> 00:10:03,068
+Tamam, şimdi bir de şey var, direkt pat diye ortalama almıyoruz. Ne yapıyoruz? Outlier'ları çıkarıp öyle ortalama alıyoruz. Ama outlier'ları ben nasıl bulacağım ki? Nasıl bulacağım?
+
+62
+00:10:09,068 --> 00:10:13,908
+Neyle? Evet. Ama daha gelmedim oraya, daha onu da bilmiyorum.
+
+63
+00:10:15,923 --> 00:10:19,144
+Kümeleyerek de bulur. İstatistik olarak bir tanım yapsam.
+
+64
+00:10:27,028 --> 00:10:36,108
+Gibi. Böyle bir şeyle birazdan formülü göstereceğim ya da katille de yine aynı tanımı yapabilirsiniz. Tamam mı? Birazdan şekil üzerinde gösterelim.
+
+65
+00:10:36,768 --> 00:10:44,988
+Outlier'ları çıkarıp, çok sapan değerleri çıkarıp, o şekilde de ne yapmamız gerekebilir? Ortalama almamız gerekebilir.
+
+66
+00:10:45,108 --> 00:10:50,648
+Buna da ne diyoruz? Streamed mean diyoruz. Tamam mı? Okey? Tamam.
+
+67
+00:10:54,388 --> 00:11:04,668
+Medyanda sıraladık, ortadaki budur dedik. Ama ya çift sayıda elemanım varsa, ortası yok, ne yapacağım? Altı elemanım var. Üçüncüyü mü alayım, dördüncüyü mü alayım?
+
+68
+00:11:07,168 --> 00:11:16,768
+Üç ile dördün ortalamasını alacağız. Tamam. Bir de burada diyor ki, genellikle diyor, medyan numarik dataya uygulanır.
+
+69
+00:11:17,152 --> 00:11:44,044
+Ama bazen ordinal dataya da, yani kategorik dataydı ordinal. Hatırladınız mı? Büyüktür, küçüktürün bir anlamı vardı. Buna da uygulanabilir. Niye uygulansın buna? Nasıl uygulayacağız? Zaten hepsini sıralayacağız. Bütün datayı sıralayacağız, ortasına bakacağız. Aslında bu neyi verir size? Birazcık ortalama nereye gelmiş? Yani diyelim ki bunun şey…
+
+70
+00:11:45,331 --> 00:11:47,851
+Bir şey var, bir şey bekliyorsunuz, tamam mı?
+
+71
+00:11:49,851 --> 00:11:53,631
+Bazen şöyle, mesela benim kullandığım bir şey var.
+
+72
+00:11:54,451 --> 00:11:58,591
+Kullanıcıya diyor ki, sizin dosyalarınızı işledi, işledi.
+
+73
+00:11:59,072 --> 00:12:02,531
+Son iki aydaki işlediği dosyaların bekleme süresini veriyor.
+
+74
+00:12:02,871 --> 00:12:04,052
+Tamam mı? Ne kadar beklemiş?
+
+75
+00:12:04,971 --> 00:12:07,111
+Onu da şöyle veriyor, medyanını veriyor.
+
+76
+00:12:07,731 --> 00:12:34,051
+Bir de %97'lik kısmını veriyor. Siz diyorsunuz ki medyanı 10 ay beklemiş, %97'si 15 ay beklemiş sayısal olarak. Ama bunu şöyle yapsanız, elinizdeki şeyle az bekledi, orta bekledi, çok bekledi olarak alsanız, sıraladıktan sonra bunun medyanına baksanız aslında o şey size çok şunu söylemiyor.
+
+77
+00:12:34,484 --> 00:12:47,624
+10 ay ile 15 ay arasında şu kadar kişi var ama aslında o ortası medyan olan aslında çok bekleyene de ne yapabilir? Düşüyor olabilir.
+
+78
+00:12:48,904 --> 00:12:58,264
+Dolayısıyla da bu tarz durumlarda ya da işte mesela kahve boyutuna göre küçük, orta, büyük var. Sıralayıp medyanına baktığımız size neyi verir?
+
+79
+00:13:02,163 --> 00:13:13,163
+Yarısı küçük boy mu almış, mesela orta boy mu almış değil mi? Yani en azından biliyorsunuz ki alanların yarısı orta ve daha küçük almış ya da alanların yarısı...
+
+80
+00:13:13,299 --> 00:13:18,859
+Medyanına baktığınız zaman hep küçükse dersiniz ki burada hep küçük satılıyor.
+
+81
+00:13:19,519 --> 00:13:26,739
+Hani mod mesela bu küçük orta büyüklü mod aldığınız zaman üçte bire çok yakın olabilirken medyan size neyi söylüyor?
+
+82
+00:13:27,199 --> 00:13:30,999
+Yok bak bunun yarısı da buraya giriyor. Onu söyleyebilirim.
+
+83
+00:13:33,219 --> 00:13:33,659
+Mod ne?
+
+84
+00:13:36,859 --> 00:13:39,119
+Tekrarlama sayısı. En çok tekrarlayan.
+
+85
+00:13:39,443 --> 00:14:06,263
+Tamam mı? Nasıl bulacağım en çok tekrarlayanı ya? Kaç döngü yaparsınız? En elemanlı bir şeyiniz varsa. En karede de yapabilirsiniz değil mi? Her bir eleman için döngüyü döndürürsünüz. Ya da ne yaparsınız? En logende sıralarsınız. Sonra bir daha sıralı dizinin üstünden geçersiniz gibi. Dolayısıyla ne yapacağız? Sıralayacağız.
+
+86
+00:14:06,639 --> 00:14:10,059
+Sonra her biri kaç kere geçmiş sayacağız.
+
+87
+00:14:11,179 --> 00:14:17,259
+Peki ya en çok geçen yoksa, her şey bir kere geçiyorsa modu nedir?
+
+88
+00:14:20,379 --> 00:14:22,059
+Modu yoktur diyoruz.
+
+89
+00:14:22,639 --> 00:14:23,939
+Hepsidir demiyoruz.
+
+90
+00:14:24,799 --> 00:14:26,219
+Modu yoktur diyoruz.
+
+91
+00:14:27,892 --> 00:14:43,451
+Peki, en çok geçen 5 kere geçiyor ama böyle 3 tane sayı var. Onların 3'ü de en çok 5 kere geçiyor. Yani en çok maksimum sayı 5. Ama 5 kere geçen 3 tane şey var. Böyle bir şey olabilir mi? Yine modu 5 midir? Evet, 5'tir. Tamam mı?
+
+92
+00:14:43,451 --> 00:14:55,231
+Ve şöyle bir şey var. Eğer sadece bir şeyin bir modu varsa, günü mod alıyoruz. Tamam mı? Bir şeyin iki modu varsa, iki modu ne demek? Yani en çok geçen iki tane eleman varsa.
+
+93
+00:14:55,764 --> 00:15:03,704
+İşte bir model, üç tane varsa bir model diye böyle böyle gidiyor. Bunlar istatistikte muhtemelen gördüğünüz şeyler. Tamam.
+
+94
+00:15:04,764 --> 00:15:09,024
+Bunu aslında size çizdirecektim ama bunu tartıştıracaktım ama biraz yavaş gidiyoruz.
+
+95
+00:15:09,884 --> 00:15:16,464
+Şimdi datamız simetrikse, yani aslında simetrik data ne demek? Bu sizin dağılımınız değil mi?
+
+96
+00:15:16,943 --> 00:15:22,964
+Dağılımınız sağ ya da sola eğik değil, yatık değil.
+
+97
+00:15:23,508 --> 00:15:25,268
+Bu bayağı iyi bir ne?
+
+98
+00:15:27,608 --> 00:15:28,408
+Dağılım.
+
+99
+00:15:29,288 --> 00:15:37,508
+Baktığımız zaman eğer sizin dağılımınız bu şekildeyse bu dağılımın mini, medyanı ve modu aynı şekildedir.
+
+100
+00:15:38,048 --> 00:15:40,687
+Yani çok yakındır böyle mükemmel çıkmasa bile.
+
+101
+00:15:41,148 --> 00:15:42,048
+Tamam, böyledir.
+
+102
+00:15:42,768 --> 00:15:47,427
+Peki, datanız şu tarafa geldiyse ders çok zordu.
+
+103
+00:15:47,848 --> 00:15:49,587
+Tamam mı? Herkes döküldü.
+
+104
+00:15:49,968 --> 00:15:50,848
+Bu onun grafiği.
+
+105
+00:15:51,251 --> 00:16:01,932
+Nasıl çıkar? Düşünün bakalım. Min, median ve mod. Hangisi birbirinden daha küçük çıkar? Şurada düşünelim bakalım.
+
+106
+00:16:03,412 --> 00:16:09,891
+Herkes döküldü ise. Hangisi şu tarafa daha yakın çıkar? Niye?
+
+107
+00:16:13,940 --> 00:16:23,139
+Mod zaten bunun en üstte olanı. En çok geçeni bulacağız ya. Bu da dağılım olduğuna göre her birinden kaç tane mod. Mod'un burada olduğunu anlıyoruz.
+
+108
+00:16:23,139 --> 00:16:37,620
+Şimdi, mean'imiz nerede çıkar? İyi alanlar da olduğu için. 3-5 tane. Onlar mean'i bu tarafa çeker. Tamam. Mean mod'un bu tarafında olacak. Peki medyan niye burada?
+
+109
+00:16:38,515 --> 00:16:59,135
+Niye mi miyle medyan yer değiştirmiş değil? Niye böyle çıkarsın için? Çünkü sıraladığımız zaman, değil mi? Medyanda yani şey alan daha çok ya, düşük alan, kalan çok fazla, burada geçen çok az. Onlar miyini ortalamayı biraz yukarı çekiyor. Ama sıraladığınız zaman,
+
+110
+00:16:59,988 --> 00:17:06,867
+Notlarda sıralayıp kalan sayısı daha çok olduğu için medyamda ne olacak? Mean'den daha önce gelmiş olacak.
+
+111
+00:17:08,128 --> 00:17:18,288
+Peki bu da çok kolay ders. Hangi ders? Herkes geçiyor, herkes geçiyor. Bu kalan bir iki kişi de yanlışlıkla kalmış. Hiç uğramamışım. Bir kere uğrasa geçecekmiş dersi.
+
+112
+00:17:18,387 --> 00:17:23,608
+Bu da onun grafiği. Notumuz zaten burada. Değil mi?
+
+113
+00:17:24,660 --> 00:17:35,660
+Peki, sıraladınız sıraladınız. Zaten sınıfın yarısından fazlası A almış. Medyan neredeyse moda çok yakın. Tamam mı?
+
+114
+00:17:35,660 --> 00:17:49,660
+Mean'imiz nerede? Mean median'dan daha az. Niye? Çünkü şuradaki kalanlardan ve birkaç tane işte DD falan alanlardan dolayı.
+
+115
+00:17:53,428 --> 00:17:54,148
+Sıraladı.
+
+116
+00:18:04,468 --> 00:18:06,408
+Medyan mı? Düşünelim.
+
+117
+00:18:14,195 --> 00:18:22,995
+Dalgalı çok olmaz da, yani genelde bu dağılımlarda çok dalga olmuyor ama olmayabilir herhalde ya. Bir bakalım, bir bakayım, tamam mı? Bir düşüneyim yani.
+
+118
+00:18:24,755 --> 00:18:39,235
+Bilmiyorum cevabını. Düşünmem lazım. Düşünüyorum ama. Olmak zorunda değil mi? Olmak zorunda değil ama bilmiyorum. Bakayım, bir düşünün daha. Birkaç örnek üzerinde bakayım.
+
+119
+00:18:41,748 --> 00:18:45,107
+Bunların minini bulun. İzamet, haydi.
+
+120
+00:18:50,003 --> 00:19:14,763
+Birinciye bakalım. 2-4-4 kaç? 10. 16, 8 daha. 24, 24, 24, 48. Kaça böleceğiz? 6'ya. Tamam mı? Medyanı nasıl bulacağız? Zaten sıralı ama ortada 5'i yok. 5 olsaydı ne yapacağız? 6 artı 4 bölü 2 diyeceğiz.
+
+121
+00:19:15,731 --> 00:19:39,692
+Peki, modu ne bunun? 4 değil mi? En çok 4 geçmiş. Gelelim ikinciye. Bulun bakalım. Minine toplayın ortalaması. 7 diyorsanız 7'leri gerçekten toplamadım. Bunun modu ne şimdi? Her şey bir kere geçmiş. Modu yok diyeceğiz. Medyanı ne? Direk 7.
+
+122
+00:19:44,435 --> 00:20:10,316
+Nasıl bir data? Ordinal data değil mi? Çünkü bu da büyüklüğe göre sıralanmış, sıralanmış bir şey var. Sıralanmış olmasaydı medyan bulabilir miydik? Bulamazdım. Tamam. Peki bunun mini var mı? Yok. Değil mi sayısal? Çünkü toplayabileceğimiz bir şeyimiz yok. Medyanımız ne? Small herhalde. 3-3 small mu? Small.
+
+123
+00:20:10,900 --> 00:20:21,040
+Şimdi soruyu zorlaştırıyorum. Burada 7 eleman var. Burada 6 eleman olsaydı ben bunun medyanı nasıl bulacaktım? Ortadakileri bölüp top 2'ye bölüyordum ya.
+
+124
+00:20:22,860 --> 00:20:24,020
+Yoktur diyecektik.
+
+125
+00:20:30,675 --> 00:20:39,915
+Çifti mi? O zaman da yine yoktur. Kendiniz şey yaparak, sıralayıp bakarak, small'a düşüyormuş derdin ama onu sana diyen zaten ne?
+
+126
+00:20:41,735 --> 00:20:49,515
+Yani şöyle sıralı ya bu. Diyelim ki medyanın yoktur dedi. Baktığın zaman iki tarafında small olduğunu görerek bir şey çıkarabilirsin.
+
+127
+00:20:49,515 --> 00:20:55,076
+Yani tabii bunun kullanılan pool'a göre değişiyor. Bazısı yoktur diyor, bazısı da small olarak o durumda veriyor.
+
+128
+00:20:56,692 --> 00:21:00,591
+Peki, bunun şeyine modu, 3 tane small olduğuna göre small.
+
+129
+00:21:02,591 --> 00:21:05,731
+Bu da şey, tamam.
+
+130
+00:21:07,911 --> 00:21:12,251
+Şimdi gelelim, ne yaptık? Datanın yayılımına bakacağız.
+
+131
+00:21:12,651 --> 00:21:15,692
+Burada da ne yapacağız? Range. Range dediğimiz şey ne? Aralık.
+
+132
+00:21:16,111 --> 00:21:20,031
+Yani aralığı nasıl buluyoruz? Maksimum, eksi, minimum değerle buluyoruz.
+
+133
+00:21:20,031 --> 00:21:21,591
+Bunları hep ne için konuşuyorum?
+
+134
+00:21:22,099 --> 00:21:47,980
+attribute için yani tek bir kolonda yapıyoruz bütün bu işlemleri tamam mı? Min medyan bulurken neren min medyanın alınmı buluyoruz. Her bir attribute için yani data, datamızdaki her bir kolon için bunlar geçerli. Tamam mı? Şimdi range ne yaptık? Maksimum, eksi, minimum dedik. Şimdi gelelim interpile range'e. Bu ne demek? Şimdi çeyrek. Bir şeyin çeyreğini nasıl bulacağız dağılımda?
+
+135
+00:21:49,491 --> 00:22:04,731
+Q1, Q3 yani birinci çeyrek olduğu yer Q1 değil mi? Üçüncü çeyreğin baş diye bittiği yer Q3. Nasıl bulacağım? Neyi böleceğim dörde? Kocaman bir şey var elimde.
+
+136
+00:22:09,203 --> 00:22:14,423
+Şöyle bak bak bak. Şöyle. Bu güzel gösteriyor.
+
+137
+00:22:16,423 --> 00:22:19,124
+Şimdi farkar dediğimiz şey şey dedi.
+
+138
+00:22:21,804 --> 00:22:24,264
+Burada %25 yazıyor. Tamam mı?
+
+139
+00:22:24,784 --> 00:22:32,064
+Şimdi buraya baktığımız zaman burası Q1, burası Q3. Q1 ve Q3'ü nasıl hesaplayacağım?
+
+140
+00:22:34,963 --> 00:22:35,564
+Güzel.
+
+141
+00:22:36,756 --> 00:22:45,416
+Eğer sıralıysa ne yapacağız? Elemanların tamamen nasıl medyanı veriyor? Zaten Q2 medyan olmuş oluyor.
+
+142
+00:22:46,216 --> 00:22:56,576
+Diğer ikiye böldükten sonra bu tarafı ikiye, bu tarafı da ikiye böldüğünüz zaman her iki parçanın da medyanı size Q1 ve Q3'ü vermiş oluyor.
+
+143
+00:22:56,576 --> 00:22:58,276
+Bu çeyrekler niye önemli ki?
+
+144
+00:23:06,163 --> 00:23:14,223
+O ayrı. Vergilendirme falan var orada, onda. Yani şehreye göre büyümeler, şirketlerin şeyler oluyor da.
+
+145
+00:23:15,644 --> 00:23:21,163
+Şimdi, burada söylemediğim bir şey kaldı mı? Tamam. Söyle.
+
+146
+00:23:34,740 --> 00:23:41,140
+Ortalama alacağız, ortalama. Eğer medyanda çift sayıdaysa ne yapıyoruz? En ortadakilerin ikisinin ortalamasını alıyoruz.
+
+147
+00:23:44,420 --> 00:23:55,220
+A hatla ayır belirlerken kullanabiliriz. Bir de bu size neyi verir biliyor musunuz? Q1, Q3 arasındaki uzaklık size bir şey söyler. Ne söyler? Bunu söyler.
+
+148
+00:23:55,220 --> 00:23:57,779
+Yani, derinki dağılımlar var.
+
+149
+00:24:01,587 --> 00:24:12,307
+Ama şu dağılımda bakın. Neyse, nasıl yapacağız? Siz görüyorsunuz, diğerlerinden çizeceğiz. Yani online derslerde de değil.
+
+150
+00:24:14,687 --> 00:24:22,248
+Böyle bir dağılım var, tamam mı? Q1 şuraya da düşebilir. Q1 şuraya da düşebilir.
+
+151
+00:24:37,811 --> 00:24:56,031
+Dolayısıyla da bana ne söyler? Aslında dağılımın uç değerlerinde ne kadar eleman var? Onu söylemiş olur. Yani sizin Q1 ve Q3 arasındaki alanınız neydi?
+
+152
+00:24:57,619 --> 00:25:17,460
+Hatırlarsanız, söylemedik zaten, interquals one partile range'di, tamam mı? Çeyrekler arasındaki uzaklık. Bunu nasıl buluyoruz? Q1-Q3-Q1 ile bölük buluyoruz. İkisi arasındaki uzaklığı size bu söylemiş oluyor.
+
+153
+00:25:22,036 --> 00:25:35,576
+Sıraladığınız eleman sayısı var ya, sizin aslında dağılımınızın yüksekliğine göre Q1-Q3 arasındaki alan ne olur? Değişir.
+
+154
+00:25:36,276 --> 00:25:43,196
+Bu da sizin aslında dağılımınızın ne kadar merkezde toplanıp ne kadar merkezde toplanmadığını söyler bir.
+
+155
+00:25:43,656 --> 00:25:47,496
+İkincisi şunu da hemen söyleyelim. Varyans var. Varyans ne?
+
+156
+00:25:52,948 --> 00:26:03,948
+Önce öyle, nasıl hesaplıyoruz? Her bir elemandan mean'i çıkarıyoruz. Tamam mı? Karesini alıp toplayıp eleman sayısına bölüyoruz.
+
+157
+00:26:05,548 --> 00:26:16,168
+Buna ne diyoruz? Variance diyoruz. Standart deviation da ne? Bunun kare kökünü aldığınız zaman variant'ın standart satmayı buluyoruz.
+
+158
+00:26:16,372 --> 00:26:36,372
+Bu ne? Aslında ortalamadan ne kadar saplığını gösteriyor. Bütün elemanlar ortalamaya eşit olsa sizin varyantınız ne olacak? Sıfır olacak. Sıfıra çok yakın olacak. Ama varyant ne kadar büyükse ortalamadan o kadar uzaktadır ve sizin şu dağılımınızın şeyi o kadar daha yayvandır.
+
+159
+00:26:43,571 --> 00:26:52,672
+Bu ne? Ya bu da şu, şimdi bir sample var, bir de population var. Oradan kaynaklanıyor. Bunu da bölerken kendisini çıkarıp bölüyorsun.
+
+160
+00:26:52,672 --> 00:27:04,111
+Yani şunu kullanın, bu kafanızı karıştırmasın. Alırken kendisini çıkarıp, yani alırken en eksi bire bölüyoruz.
+
+161
+00:27:04,231 --> 00:27:10,711
+Bazı isimli hesaplarda bu kullanılıyor ama siz varyans standart satmaya gidelim. Tamam bu kafanızı karıştırıyorsun.
+
+162
+00:27:10,867 --> 00:27:36,907
+Şimdi, altla ayrı da belirlerken demin sormuştuk değil mi? İlk şeyde, istatistiksel olarak altla ayrı belirleyebilir miyiz diye. Nasıl belirliyoruz? Şimdi, interqualter rencimiz var. Bu neydi? Q3-Q1'di değil mi? 3. çeyrek-1. çeyrek. Bunu 1.5 ile çarptığımız zaman, tamam mı?
+
+163
+00:27:37,619 --> 00:27:54,139
+Ne veriyor? Bana bir aralık vermiş oluyor. Ve de işte bu aralıktan, şöyle aralığım var ya, bunun bir buçuk katında ve bir buçuk yani sağlı sollu bir buçuk katında kalanlar, tamam mı? Neyi outlier'dir diyorum.
+
+164
+00:28:03,731 --> 00:28:14,731
+Bir katı iken, iki katı iken, üç katı iken aslında sizin eğrinizin nasıl değiştiğini vermiş ama bakarsınız şu an şey değil. Tamam mı?
+
+165
+00:28:14,731 --> 00:28:22,604
+Baktığımız zaman bir distribution'a ne yapabiliriz? Beş, siz görüyor musunuz?
+
+166
+00:28:27,155 --> 00:28:42,635
+5 farklı şeyle özetleyebiliriz. Ne? Minimum, Q1, median, Q3 ve maksimum. Yani iç değerleri verdiğiniz zaman dağılımın nasıl olduğunu aşağı yukarı ne yapabilirsiniz? Tahmin edebilirsiniz.
+
+167
+00:28:43,275 --> 00:28:52,155
+Ve bunun içinde birkaç tane şey göreceğiz. Data'ını görselleştirme yöntemi göreceğiz. İlk ne? Boxplotlar yani kutu.
+
+168
+00:28:56,915 --> 00:29:14,195
+Grafik. Ne diye geçiyor Excel'de? Grafik diye mi geçiyor değil? Tablo. Tablo da değil. Neyse. Bu şeye ne diyor? Ne deniyor ya plotlara? Grafik diye geçmiyor ama ya. Neyse bulamadım. Tamam.
+
+169
+00:29:18,579 --> 00:29:46,079
+Grafik diye mi geçiyor? Tamam. Grafik deniyormuş. Kutu grafiği. Kutu grafiğinde ne var? Şimdi kutu grafiklerini ne zaman kullanıyoruz? Dağılım hakkında hani dedik ya five numbers'a müdür diye. Şimdi kutu grafikleri şöyle gösterilir. Şöyle bir kutu şeklinde gösterilir. Kutunun alt çizgisi sizin Q1'inizi, burası medyanı, burası da Q3'ü gösterir. Tamam mı?
+
+170
+00:29:46,304 --> 00:30:10,503
+Kutunuzun, şuradaki kutunun boyu çok uzun değilse bu nedir? Ne demektir? İşte Q1 ve Q3 arasındaki farkı. Aslında bunlar böyle yatağa çizilmiyor. Genelde dik çiziliyor da. Evet, genişliği, yüksekliği değil. Var mı? Varyans fazla mı, düşük mü?
+
+171
+00:30:13,844 --> 00:30:35,263
+Birbirine niye? Çok yakın. Yani şurası kısaysa nedir? Değil mi? Sapma azdır. Şurası çünkü Q1, şurası Q3. Q1 ve Q3 arasındaki interfalto kuatel rencimiz nedir? Az demektir. Tamam. Şurası ve şurası da neyi gösteriyor sayısal değer olarak?
+
+172
+00:30:35,988 --> 00:30:46,407
+Sizin lower ekstriminizi yani minimum ve maksimumuzu gösteriyor gibi ama değil. Niye? Niye bunlara ekstrim demiş? Çünkü burada outlier'ları da gösteriyor.
+
+173
+00:30:47,147 --> 00:30:58,647
+Eğer ki, demiştik ya interfalter range çarpı bir buçuk diye. Eğer ki bazı değerler işte o bir buçuğa düşüyorsa onları da böyle nokta nokta ve nokta olarak gösterir.
+
+174
+00:30:58,647 --> 00:31:01,887
+Tamam, faks kodlar bu şekilde gösterilir.
+
+175
+00:31:06,291 --> 00:31:32,672
+Böyle bir grafikten modun mu? Modun yüksek olması ne demek? Ha şurası çok diye mi? Bu moda neyle ne arasındaki fark? Burası az mı? Buraya göre mi az? Dolayısıyla ne diyorsun mod?
+
+176
+00:31:39,604 --> 00:31:52,203
+Her zaman olmayabilir, her zaman olacak diye bir şey yok. Bazı dağınlılarda yani mod çok şeye yakındır, bir değere yakındır. Olmayabilir. Her zaman olacak diye bir şey yok.
+
+177
+00:31:57,107 --> 00:31:59,667
+Bekle. Evet.
+
+178
+00:32:09,172 --> 00:32:16,511
+Sapma şöyleye geliyor, şuna geliyor. Her elemandan ortalamayı, ha şurada mı neye geliyor?
+
+179
+00:32:17,812 --> 00:32:20,771
+Burada bunun içinde işte standart sapmayı göremezsin burada.
+
+180
+00:32:25,748 --> 00:32:26,908
+Normal sapma ne ki?
+
+181
+00:32:28,908 --> 00:32:29,827
+Hep saları saklıyorum.
+
+182
+00:32:30,607 --> 00:32:32,908
+Çünkü dağılımdan hesaplıyorum sapmayı.
+
+183
+00:32:33,408 --> 00:32:35,948
+Yani nasıl bir tane ortalama varsa bir tane de sakma var.
+
+184
+00:32:42,132 --> 00:32:42,791
+Varma.
+
+185
+00:32:49,683 --> 00:32:54,384
+Hayır, hayır. Her dağılımdan, her dağılıma göre bir tane standart sapma hesaplıyorum.
+
+186
+00:32:55,263 --> 00:33:03,503
+Standart sapma standart değil. O mu? Değil mi? Bir tane standart sapma var, diğerleri sapma. Öyle değil. Her dağılımın standart sapması.
+
+187
+00:33:05,644 --> 00:33:06,943
+Öyle düşünmemiştim.
+
+188
+00:33:08,723 --> 00:33:29,403
+Şimdi bu da çok basit sorular. Hemen hızlıca söyleyin. Bunun hangisinin standart sapması daha büyüktür? Ama hesaplamayın demiş. Bakın şurası birer birer artarken şurada bir 30 var. Gördünüz mü? Ve ortalamayı çıkaracağız. Şu 30 ortalamayı yukarıya çekecek muhtemelen. Değil mi? Oysa bununki daha büyük çıkacak.
+
+189
+00:33:31,303 --> 00:33:35,803
+Interquartile range'leri ver demiş. Hemen böleceğiz. Nasıl böleceğiz?
+
+190
+00:33:36,627 --> 00:33:55,248
+4, 4, 4, 4, 4, böldük. Değil mi? Q1'de 2, 3 var. 4, 5, Q2'de, 6, 7 burada, 8, 9 burada. Ama bunların arasını bulmamız gerekiyor ya. Ne bulacağız buradan? Değil mi? Şuradan 3,5 gelecek. Buradan ne gelecek?
+
+191
+00:34:00,607 --> 00:34:01,887
+7,5 değil ya.
+
+192
+00:34:05,491 --> 00:34:24,252
+İlteşem yazım şeyimle. Burası Q1, Q2, Q3, Q4, değil mi? Q3 eksik Q1. 6,5 buradan geldi mi? Değil mi? 2,5 da buradan geldi mi? Bunların farkı.
+
+193
+00:34:24,252 --> 00:34:31,811
+Tamam. A-Layr, buna göre A-Layr var mı diyor. 1,5 ile çarpacağız. Değil mi?
+
+194
+00:34:32,340 --> 00:34:39,420
+Ve bir buçukla çarptıktan sonra, eğer ki dışarıda kalan varsa outlier'dır diyeceğiz.
+
+195
+00:34:41,900 --> 00:34:44,119
+Şurada mesela şununkini hesaplamadık.
+
+196
+00:34:44,800 --> 00:34:46,560
+Ama bununki ne çıkıyormuş?
+
+197
+00:34:46,780 --> 00:34:54,000
+15 artı bir buçuk çarpı inter part a rençten.
+
+198
+00:34:54,079 --> 00:34:55,180
+Bununki kaç çıkıyor ki ya?
+
+199
+00:34:55,600 --> 00:34:57,980
+Mesela bunu hesaplayın tamam mı? Kaç eleman var burada?
+
+200
+00:34:58,612 --> 00:35:12,231
+2, 4, 6, 8 taneymiş ya şey değilmiş. Bunlar da 2, 2'ymiş pardon. Tam çok zor değilmiş hesaplaması. Baktığımız zaman Q1'de ne var? 3. Değil mi? Q3'de ne var?
+
+201
+00:35:14,872 --> 00:35:18,851
+11, 12. Hopla hep 2'ye bölün kaç var?
+
+202
+00:35:31,572 --> 00:35:36,512
+Tabii ki nokta olarak bakacağız.
+
+203
+00:35:36,512 --> 00:35:38,032
+Evet, pardon, pardon. Tamam.
+
+204
+00:35:38,692 --> 00:35:46,992
+Şöyle ki, şimdi Q1'i alırken, şurada 2, 3, 4, 5, 6, 7, 8, 9 aldık ya, ben ne yaptım?
+
+205
+00:35:47,412 --> 00:35:50,092
+Pat, 4, 5'i aldım ya. Değil mi?
+
+206
+00:35:50,712 --> 00:35:57,072
+Ama Q1 bittiği yer. Yani aslında alacağı, yani şu dağılım olarak baktığımız zaman, 3, 4.
+
+207
+00:35:57,780 --> 00:36:19,000
+Q1'e giriyor tabii ki de. Çünkü önce böldük. Niye? Ben ne güzel yaptım. Ben medyanı bulmadan, siz de böyle yapın hatalı. 2-2-2 cert diye böldüm. Değil mi? Böyle. Ama ve lakin, silelim. Bulurken nasıl buluyoruz?
+
+208
+00:36:19,764 --> 00:36:43,543
+Önce medyanı buluyoruz. Medyanı bulduktan sonra 3-4 zaten. Tamam mı? Yani medyanı bulduk ya. Bunun arasını... Şöyle medyanı bulduk. Şu ikisi Q1 iken şu ikisi bana Q3'ü veriyor. Tamam mı? Ben pat pat diye ne yaptım? Eşit şeye böldüm. Yanlışlıkla.
+
+209
+00:36:43,871 --> 00:36:56,152
+Evet. Tamam. Dolayısıyla Q1'leri, Q3'leri bu şekilde ne yapacağız? Hesaplayacağız. Tamam. Benim yaptığım hatayı yapmayın.
+
+210
+00:36:56,152 --> 00:36:58,931
+Okey.
+
+211
+00:36:59,635 --> 00:37:23,496
+Şurada en son bir de bir şey var. Diyor ki, standart sapması, zero olan bir şey ver diyor. Ne yapıyorduk standart sapmada? Mini hepsinden çıkarıp çıkarıp bölüyorduk. Değil mi? Burada eğer hepsi aynıysa, grafik olarak da düşünebilirsiniz, bir, bir, bir, biri. Ne olacak? Tek bir çubuk olacak sizin dağılımınız. Hiçbir yere sapan bir şey yok. Dolayısıyla standart sapmanız nedir? Sıfırdır.
+
+212
+00:37:24,496 --> 00:37:25,996
+Evet, tamam.
+
+213
+00:37:27,731 --> 00:37:30,331
+Herkes uyuyor. Ara istiyor musunuz?
+
+214
+00:37:31,771 --> 00:37:32,331
+Diyenler?
+
+215
+00:37:35,192 --> 00:37:36,751
+Daha çok slide'ım var.
+
+216
+00:37:37,672 --> 00:37:39,052
+Uyanıp gelin, tamam mı? 10 dakika.
+
+217
+00:37:40,291 --> 00:37:41,572
+10 dakikalık ara.
+
+218
+00:37:42,932 --> 00:37:46,392
+Online'lar, sizle de 10 dakikalık ara. 10 dakika sonra görüşürüz.

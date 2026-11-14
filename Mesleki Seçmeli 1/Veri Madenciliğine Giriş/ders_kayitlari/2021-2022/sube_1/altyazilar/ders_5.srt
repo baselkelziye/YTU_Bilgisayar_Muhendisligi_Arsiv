@@ -1,0 +1,1151 @@
+1
+00:00:09,715 --> 00:00:15,375
+Bunların linki böyle mi alınıyor ya? Bunların linki nasıl alınıyor eski şeylerin?
+
+2
+00:00:18,716 --> 00:00:21,356
+Bizle deyince şu direkt paylaşılabiliyor mu bu link?
+
+3
+00:00:21,356 --> 00:00:23,756
+Ben de zaten biliyorum.
+
+4
+00:00:24,435 --> 00:00:24,576
+Hı?
+
+5
+00:00:26,036 --> 00:00:26,835
+Derseniz de.
+
+6
+00:00:28,216 --> 00:00:29,595
+Bunu kapatmadık ama.
+
+7
+00:00:32,235 --> 00:00:32,936
+Biliyor muyuz?
+
+8
+00:00:36,787 --> 00:00:39,527
+Şimdi Zoom'da şu linki direkt kopyalamak yetiyor mu?
+
+9
+00:00:43,508 --> 00:00:45,427
+Onlar silinebilirmiş de onları kopyalayalım.
+
+10
+00:00:47,268 --> 00:00:49,608
+Terse katıldık mı? Katıldık, okey.
+
+11
+00:00:50,688 --> 00:00:52,028
+Ekranımızı paylaşalım.
+
+12
+00:00:57,107 --> 00:01:10,847
+Şimdi biz ne yapıyorduk? Önce bir duyurumu yapayım da aklımdayken. Malum üçüncü haftadayız. Bu dersin projesi var. Projelerde iki kişi bir proje istiyoruz.
+
+13
+00:01:36,659 --> 00:01:52,000
+Biraz yavaştan birazcık da nasıl olacak proje vesaire ayrıntılı açıklayacağım. Ama en azından takımınızı oluşturmaya, neler yapılmış, küçük küçük mutlaka bakmaya başlayın. Tamam.
+
+14
+00:01:52,724 --> 00:02:17,304
+Çünkü haftaya şey yaparız, bir metot anlatırsak birazcık daha neler yapabileceğiniz aklımızda oturmuş olur. Sonra da işte proje önerilerini nasıl yazacağınızı, küçük bir şey olacak öneri, iki sayfalık bir sayfalık bir şey olacak. Onun formatını vesaire vereceğim. En azından ona birazcık hazırlık yapmış olursunuz. Tamam mı? Yani sonra sıkışmamış olursunuz. Öyle söyleyeyim.
+
+15
+00:02:18,740 --> 00:02:23,300
+%30 proje, %30 bize 40 final dedik diye hatırlıyorum.
+
+16
+00:02:27,860 --> 00:02:35,100
+Proje son testin tarihi işte 12. hafta sonunda. 13 ve 14. haftalarda da projelerin sunumu olacak.
+
+17
+00:02:40,563 --> 00:02:43,843
+Görüyor musunuz? Görüyorsunuz. Kafandan belki göremiyor olabilirsiniz.
+
+18
+00:02:45,343 --> 00:02:45,563
+Evet.
+
+19
+00:02:46,544 --> 00:02:48,063
+Ne yaptık? Smoting'e baktık.
+
+20
+00:03:06,804 --> 00:03:18,804
+Online arkadaşlar, hemde altı kişi var. Ekranı da paylaşıyor. Online'lar burada.
+
+21
+00:03:18,804 --> 00:03:33,804
+Ne yaptık? Data smooth etmek için dedik ki binlere ayırabiliriz dedik. Ondan sonra da dedik ki bunlar genellikle bu teknikler data reduction için de kullanabilir ama onun ne olduğunu zaten birazdan göreceğiz.
+
+22
+00:03:34,259 --> 00:03:58,099
+Peki, data cleaning is a process. Yani süreç olarak bakarsak, data cleaning. Nereden yapabilirsiniz başka? Yani tamam işte nal değerlerden bahsettik. Bir de data'nın da verimizin içinde uyumsuzluk olabilir. Ne gibi? Yani diyelim ki işte demin örnek vermiştik.
+
+23
+00:03:58,383 --> 00:04:03,603
+Kullanıcı bir yerde doğum tarihini girmiştir, bir yerde yaşını girmiştir, birbirine uyumlu değildir.
+
+24
+00:04:03,763 --> 00:04:11,663
+Ya da işte adres girmiştir, adresteki şehirle girdiği posta kodu birbiriyle uyumlu değildir gibi yerlerden ne yapabilirsiniz?
+
+25
+00:04:12,583 --> 00:04:14,463
+Çıkarım yapabilirsiniz.
+
+26
+00:04:15,303 --> 00:04:15,643
+Tamam mı?
+
+27
+00:04:16,052 --> 00:04:28,052
+Bunları yaparken de eğer ki elinizde metadata varsa, metadata nedir? Mesela bir fotoğrafın içinde gizli data vardır değil mi? Nerede çekilmiş? İşte resmin onları kim? Hangi tarihte çekilmiş gibi şeyler.
+
+28
+00:04:28,652 --> 00:04:37,852
+Mesela bazı verilerde metadata olur. Web sitelerinin sayfalarında olabilir. Atıyorum elinizde loglar olabilir. Tamam.
+
+29
+00:04:38,548 --> 00:04:55,348
+Gibi şeyler varsa ne yapabilirsiniz? Bu tarz datalardan da kullanarak, dataları da kullanarak eğer ki datanızın bütünlüğünü bozan, datada hataya sebep olan veriler varsa ne yapabilirsiniz? Bunları kullanabilirsiniz.
+
+30
+00:04:55,867 --> 00:05:05,548
+Mesela bir de hazır şeyler de var, yani ticari tullar da var. Diyelim ki işte gerçekten posta kodları bir yere ait mi? Gerilen yerde.
+
+31
+00:05:06,064 --> 00:05:13,664
+İçine ait mi? Bu Amerika için kullanılıyor. Daha çok da işte mesela bunu şey yapan ya da işte spellcheck yapan, yazım yanlışı var mı?
+
+32
+00:05:14,404 --> 00:05:27,764
+İşte adres de olabilir ya da başka şeyler de olabilir. Bu tarz neler var? Bu tarz programlar kullanarak da, datanızda bir sorun var mı? Ne yapabilirsiniz? Bunlara bakabilirsiniz.
+
+33
+00:05:29,144 --> 00:05:32,924
+Şimdi Data Integration'a geldik. Data Integration ne?
+
+34
+00:05:33,716 --> 00:05:56,036
+Farklı farklı yerlerden datayı alıyorsunuz. Niye alıyorsunuz? Diyelim ki bir şu benim farklı branch'ları olabilir. Farklı yerlerde olabilir. Ya da size data lazım olabilir. Yani atıyorum bir şey tahmin edeceksiniz. Mesela gidersiniz bir yerden hava durumu verisi alırsınız.
+
+35
+00:05:56,271 --> 00:06:07,271
+Tamam mı? Başka bir kravları yazarsınız. O kravları gider ve başka bir web sitesinden başka bir şey alır. Tamam mı? Gibi. Dolayısıyla bu dataları...
+
+36
+00:06:08,211 --> 00:06:15,192
+Farklı veri tabanlarından da çekebilirsiniz. Kendiniz gidip bir şey yazıp oradan da yine ne yapabilirsiniz? Çekebilirsiniz.
+
+37
+00:06:15,771 --> 00:06:20,251
+Ama bu dataları birleştirirken genellikle ne çıkar? Ön işlem yapmak zorunda kalırsınız.
+
+38
+00:06:20,371 --> 00:06:26,111
+Çünkü bir şeylerin formatları, tutuluş tarzları vesaire nedir? Birbirinden farklıdır.
+
+39
+00:06:27,111 --> 00:06:31,971
+En basitinden yani peki datayı çektikten sonra mesela ne olur?
+
+40
+00:06:32,403 --> 00:06:38,084
+Mesela duplicate record var mı? Bunu kontrol etmeniz gerekir. Değil mi? Aynı kişi aynı yerde var mı gibi.
+
+41
+00:06:38,684 --> 00:06:45,983
+Ya da işte diyelim ki hava sıcaklığını aldınız ama orada diyelim atıyorum 3 senelik vardı.
+
+42
+00:06:46,084 --> 00:06:50,723
+3 seneden önce başka bir yerden gittiniz aldınız. Nem, rüzgar hızı vs. gibi şeyleri.
+
+43
+00:06:51,384 --> 00:06:56,644
+Yine bilimlerini çevirmeniz gerekebilir gibi şeyler başınıza gelebilir.
+
+44
+00:06:58,675 --> 00:07:03,855
+Şimdi bu niye birazcık daha önemli? Data integration. Mesela bu şeyler oluyor ya.
+
+45
+00:07:05,635 --> 00:07:06,435
+Hekaton değil.
+
+46
+00:07:07,572 --> 00:07:32,771
+Veri Madenciliği olana ne isim koymuşlardı? Data bir şey. Adı aklıma gelmiyor. Mesela Türk Hava Yolları böyle bir yarışma yapıyor. İşte gidiyor takımlar. İki gün boyunca uğraşacaklar. İşte şeyi verdiler, veriyi vesaire. İşte rötter var mı yok mu? Onlara yüzde işte uçuş verisi var. Ellerinde işte müşteriler onlar bunlar falan filan. Oradan bulmaya çalışıyorlar. Sonra birinci olan takım şöyle bir şey yapmış.
+
+47
+00:07:35,572 --> 00:07:50,632
+hava durumuyla ilgili ekstra veriler çekmiş o günkü hava şartları ile ilgili. Tamam. Ondan sonra onu dataya eklemiş mesela kendi datasına gün gün. Ondan sonra mesela daha fazla elinde daha fazla attribute veri olduğu için.
+
+48
+00:07:51,040 --> 00:08:13,963
+Daha iyi tahminler yapabildi. Genellikle yani tek yerden hadi veriyi al kullan gibi bir şey çok. Ne olmuyor? Verimli olmuyor. Zaten siz de şeyi fark ediyorsunuzdur. İşte Instagram'ınızın Chrome'la bağlantılı olduğunu. Değil mi? Yani size mesela recommender sistemler vesaire çıkarken arada sınıfta farklı yerden datalarınızın toplamını işlenip...
+
+49
+00:08:14,004 --> 00:08:29,024
+Size geldiğiniz, siz de zaten fark edebiliyorsunuzdur. Yani genellikle tek yerden veriyi alıp ne yapmıyoruz? İşlemiyoruz gibi. İşleyebiliyoruz tamamen aslında şeye göre. Amacınızın ne olduğuna bağlı değil.
+
+50
+00:08:29,024 --> 00:08:31,884
+Öyle bir söylesek daha doğru olacak.
+
+51
+00:08:33,504 --> 00:08:37,983
+Bidandan C peki nasıl anlayacağız? Yani tekrarlayan data var mı?
+
+52
+00:08:42,196 --> 00:08:43,056
+Nasıl anlarsınız?
+
+53
+00:08:53,011 --> 00:08:58,291
+Öyle bir şeye bakabilirsiniz. Ama onu alırken, şöyle daha basit düşünelim önce.
+
+54
+00:08:58,851 --> 00:09:06,991
+İlk olarak diyelim ki, ne tuttunuz? Hem posta koduyla hem ilçeyi, mahalleyi tutmanın bir anlamı yok aslında.
+
+55
+00:09:06,991 --> 00:09:12,611
+İkisi aynı şey. Ya da işte, hep diyorsan yaşla doğum tarihi. İkisini birden tutmanın anlamı yok.
+
+56
+00:09:12,811 --> 00:09:19,351
+Çünkü bu sizin datanızı ne yapar? Daha büyük olmasına yol açar. Yani boşuna işlem yapmış olursunuz. Bilgisayarın gücünden yersiniz.
+
+57
+00:09:21,011 --> 00:09:36,491
+Bir attribute'u başka bir attribute'den çıkartabiliyorsanız, tamam mı? Burada bir idamlısı vardır. İlk olarak yani o tarz verilerin ikisini de kullanmanıza gerek yok. Onları ne yapabilirsiniz? Çıkartabilirsiniz. Tamam mı?
+
+58
+00:09:36,755 --> 00:09:47,535
+Dediğimiz gibi integration yaptıktan sonra yine şey olabilir, aynı benzer data olabilir. Ama siz o datanın birebir benzer olduğunu bilmeyebilirsiniz.
+
+59
+00:09:47,535 --> 00:09:57,975
+Yani çünkü kullanıcı oraya başka bir isim vermiştir, sayı ismi aynıdır ama mesela atıyorum iki isimli ise bir yere bir ismini vermiştir, diğeri başka ismini vermiş olabilir gibi.
+
+60
+00:09:58,975 --> 00:10:00,716
+Dolayısıyla sayısal olarak söyle.
+
+61
+00:10:07,923 --> 00:10:12,663
+Alanını hesaplarsın.
+
+62
+00:10:18,451 --> 00:10:29,212
+Öyle şeyler de yapabilirsiniz. Bazen 2 hatta 3-4 datayı bir araya getirip onları tek data gibi de ne yapabilirsiniz? İşleyebilirsiniz.
+
+63
+00:10:29,212 --> 00:10:35,892
+Annen arkadaşınızın dediği gibi. Ve korelasyon ne demiştik? Geçen hafta bir korelasyondan bahsetmiştik değil mi? Pozitif.
+
+64
+00:10:36,192 --> 00:10:45,272
+İşte 1 olması ne demektir? 1'e yakın olması, 0 olması ya da eksi olması. Sonra demiştik ki ama bunlar nelerde vardı? Attribütler arasında vardı.
+
+65
+00:10:45,779 --> 00:10:56,580
+Mesela, eğer ki sizin attribütünüz Ritandatı'sa, yani kullanıcı değil, attribütler, kolonlar, yani iki kolon aynı şeyi ifade ediyor olabilir.
+
+66
+00:10:57,000 --> 00:11:06,299
+Tamam mı? Çok ben yani. Nedir? Bunlar arasında pozitif bir korelasyon vardır. Değil mi? Şimdi ne yapabiliriz?
+
+67
+00:11:06,964 --> 00:11:19,244
+Redundant attribute'ları korelasyon analiziyle ortaya çıkarıp sadece bir tanesini kullanabiliriz. Burada da eğer neye bağlı? Tamam sayısalsa korelasyonuna bakabiliriz.
+
+68
+00:11:20,204 --> 00:11:28,804
+Ama kategorik değersen ne yapacağız? Nominalse ne yapacağız? O zaman da iki kare kullanacağız. Tamam mı?
+
+69
+00:11:28,804 --> 00:11:32,923
+Şimdi gelelim. İlk numerik data için ne yapabiliriz?
+
+70
+00:11:33,395 --> 00:11:48,535
+Correlation, coefficient'a bakacağız. Correlasyonu nasıl yapacağız? Şimdi burada formülü var. A üstü ve B üstü dediğimiz şeyler ortalamalar. Tamam mı? Minler. Ne yapıyorsunuz?
+
+71
+00:11:48,879 --> 00:12:00,980
+Her bir değer için, yani iki tane attributum var, yani şöyle iki kolonum var, öyle söyleyeyim tamam mı? İki stünum var. Bunların stünlardaki sayısal değerler için ortalamayı buldunuz mu? Buldunuz.
+
+72
+00:12:00,980 --> 00:12:14,980
+Sonra her değerden, her bir satırdan ortalamayı çıkarıyorsunuz. Buradaki A stünudakilerin veya B stün için. Çarpıp kaç tane eleman varsa bunların standart...
+
+73
+00:12:15,412 --> 00:12:32,152
+sapmasına bölerek ne yaptınız? Bir R dediğimiz aslında değer buldunuz. R, A-1 ise nedir? Şu demektir. Birisi artarken diğeri azalıyor demektir. Bunlar arasında eksi, negatif bir korelasyon vardır.
+
+74
+00:12:34,707 --> 00:12:41,467
+1, 1'e yakın, hatta 0, 5'ten daha da iyiyiz, üstünse, diyoruz ki bunlar arasında pozitif korelasyon vardır.
+
+75
+00:12:41,587 --> 00:12:44,507
+Bu sayısal değerlerden birisi artıyorsa, diğer de artıyordur diyoruz.
+
+76
+00:12:45,007 --> 00:12:49,307
+0 civarı bir şey çıkıyorsa da diyoruz ki, bu ikisi birbirinden bağımsız.
+
+77
+00:12:49,407 --> 00:12:53,287
+Aralarında bir korelasyon var mı? Hayır, yok.
+
+78
+00:12:53,807 --> 00:12:56,747
+Dolayısıyla da, ikisini silecek miyiz bunları?
+
+79
+00:12:58,644 --> 00:13:12,524
+Silmeyeceğiz. İkisi farklı şeyler söylüyor iki polonda. Bunu yapabilirsiniz. Bunu da yaparken, geçen hafta görmediğimiz, yani şöyle bir şey var, tool'larda, scatterplot diye bir şey var. Tamam mı?
+
+80
+00:13:13,484 --> 00:13:24,403
+Scatterplot yaptığınız zaman bu aralarındaki korelasyon çiziyor ve diyelim ki 10 tane attribütümüz varsa, ne olur? Hepsine ikili ikili ikili bakıyorsunuz ya.
+
+81
+00:13:24,884 --> 00:13:31,884
+Bunların onun ikilisi şeklinde size tablo olarak, şekil olarak aralarındaki korelasyonun nasıl olduğunu...
+
+82
+00:13:32,659 --> 00:13:57,580
+görselleştirerek ne yapıyor? Veriyor. Oradan yani tek tek bunu yapmanıza gerek yok. Genellikle işte bunların scatter plotunu çiz dediğiniz zaman tool'lardan ya da işte hazır kütüphanelerden ne yapıyorsunuz? Buradan görsel olarak inceleye gidirsiniz. Tamam mı? Yani direkt şunun döngüyle kodunu yazıp bulmuyorsunuz. Peki.
+
+83
+00:13:58,580 --> 00:14:03,160
+Şimdi, tamam, korelasyon analiz var. Bir de covariance var.
+
+84
+00:14:08,628 --> 00:14:28,288
+Eğer ki, şöyle söyleyelim, elinizde birden fazla, yani ikili ikili ikili iki bakıyoruz ya, buna matriz olarak bakarsanız ne olur? Elinizde bir matriz olur değil mi? İkili ikili derle. Bunda ne yaparsınız? Korrelasyon matrizi olarak gösterebilirsiniz.
+
+85
+00:14:33,908 --> 00:14:42,727
+Neyse, şimdi söyleyelim. Şimdi min value'ları A ve B. Burada tamamen A'nın ve B'nin ortalamasına expected value'lar diyoruz.
+
+86
+00:14:42,727 --> 00:14:52,888
+Tamam mı? Çünkü yani varyans neydi? Ortalamadan ne kadar uzaklıyordu ya. Co-varians da aslında ne? Co hani ikili birlikteliktir ya. Ona bakacağız.
+
+87
+00:14:53,648 --> 00:15:01,307
+Şimdi co-varians A ve B arasındaki co-variansı nasıl hesaplıyoruz? Ortalamaları çıkarıp
+
+88
+00:15:01,360 --> 00:15:18,460
+Çarpıyoruz. Ama bu bize kovaryansı veriyor. Ve de sonra bunu ne yaptığı, şeye baktığı, standart sapmalara böldüğümüz zaman kovaryanslarını buluyoruz. Yani şu aslında şunu söylemek istiyor bize. Burada bir çarp, hepsinin, ben gidelim.
+
+89
+00:15:18,799 --> 00:15:28,179
+Tek tek çıkarıp çarpıyorsunuz ya, aslında burada bir vektörün dot product'a var. Yani birinci elemanı birinci elemanla, ikinci elemanı ikinci elemanla çarpmış oluyor.
+
+90
+00:15:29,179 --> 00:15:41,059
+Dolayısıyla şu formülü baktığımız zaman, iki vektörü dot product yapıp ortalamalarını çıkardığınız zaman, covariance değerini bulmuş oluyorsunuz.
+
+91
+00:15:42,995 --> 00:16:03,536
+Tamamen burası matematik. Yani şey, şu böyle karışık gibi bir şey ama söylediği şey şunun aynısı aslında. Sadece dediği şey böyle tek tek çıkarmak yerine ne yapabilirsin? Yani bir direkt minleri, direkt bunları çarpıp minleri sonradan çıkarırsan bunu elde edebilirsin. Şimdi gelelim şuraya.
+
+92
+00:16:04,467 --> 00:16:26,283
+Şimdi A ve B, iki tane stok varmış. Tamam mı? Elimde 1, 2, 3, 4, 5 satır var. İlk değer A'nın değeri, ikincisi B'nin değeri. A'nın, B'nin böyle böyle gidiyor. Tamam mı? Ve elimde burada sadece 5 tane kolay göstermek için 5 tane değer vermiş. Normalde 5 satırlık da olmaz. Tamam mı? Diyor ki...
+
+93
+00:16:26,451 --> 00:16:47,451
+İki tane stok yani A ve B. İkisi de aynı endüstri trendinden etkileniyorsa birinin artarken diğeri düşer mi? Ona bak diyor. Bu ne demek? Aralarındaki ilişkiye bakacağız. Ne yapıyoruz? Şimdi ilk başta ne hesaplamamız lazım?
+
+94
+00:16:47,956 --> 00:16:54,956
+expected value'yu hesaplamamız lazım, beklenen değeri. Yani bunların A'nın ve B'nin ortalama değerini hesaplayacağız.
+
+95
+00:16:55,736 --> 00:17:06,076
+A'nın değerine 2, 3, 5, 4, 5, 5, 5, 5, 5, 5, 8, 10, 11, 14, 5.
+
+96
+00:17:06,936 --> 00:17:10,236
+Sonra da bunları ne yapıyoruz?
+
+97
+00:17:10,836 --> 00:17:21,556
+Bunları dot product yapıyoruz. Yani 2 çarpı 5 artı 3 çarpı 8 artı 5 çarpı 10 artı 4 çarpı 11 artı 7 buca dedikten sonra
+
+98
+00:17:21,556 --> 00:17:33,056
+dedik mi dedik ondan sonra kaç eleman varsa ona böldük. Eksi expected veriyorların değeri. 4.88 çıktı. Bu ne demek?
+
+99
+00:17:33,811 --> 00:17:54,971
+Pozitif bir şey çıktı değil mi? Sıfır civarı bir şey çıkmadı. Negatif olsaydı diyecektik ki bir tanesi azalırken diğeri artar diyecektik. Sıfıra yakın bir şey çıksa aralarında hiç ilişki yok diyecektik. Ama pozitif bayağı ciddi pozitif bir şey çıktı. Bu da diyeceğiz ki aralarında pozitif ilişki var biri artarken diğeri de artar diyeceğiz.
+
+100
+00:17:56,591 --> 00:17:59,692
+Tamam. Diyeceğimiz şey bu.
+
+101
+00:18:01,556 --> 00:18:13,536
+Bu böyle soru sormam şeydi. Sınavda tutup bunu şey yapmayın. Bu istatistik sorusu yani. İstatistik dersler bunları görmüş olmamız lazım. Görmüş değil mi? Tamam biliyorsunuz. Geçtim bunları.
+
+102
+00:18:14,355 --> 00:18:27,396
+Ama şu önemli olabilir. Eğer bir zatıdık nominalse ne yapacaksın? Yani işte küçük, orta, büyük gibi ya da işte yaşlı, genç falan filan gibi değer varsa.
+
+103
+00:18:27,955 --> 00:18:35,515
+Bu zaman, bu zaman diye bir kelime yok. Bu durumda iki atribüt arasındaki ilişkiyi nasıl hesaplayacağız?
+
+104
+00:18:41,844 --> 00:18:46,364
+Sayısal değer versek ama şey de bilmiyorum, tamam şey de yok, ordinal değil de değil.
+
+105
+00:18:46,364 --> 00:18:54,324
+Yani nominal ama şey, sıfır bir gibi düşün, binary gibi düşün. Hangisine sıfır diyeceğim, hangisine bir diyeceğim bilmiyorum.
+
+106
+00:18:59,476 --> 00:19:00,916
+Ne yapacağız? Ne yapardınız?
+
+107
+00:19:05,916 --> 00:19:07,296
+Mod olur mu?
+
+108
+00:19:12,756 --> 00:19:13,796
+Neyse, e se?
+
+109
+00:19:16,736 --> 00:19:17,296
+Neyse.
+
+110
+00:19:24,051 --> 00:19:40,091
+gibi. Olabilir mi? Olabilir. Ama üç değer var. 0, 1, 2, hangisine 0 diyeceğim, hangisine 2 diyeceğim, onu da bilmiyorum. Sayıdan ne çıkarırız saysak? En azından sayılarının dengeli olmasını bekleriz değil mi? Yani atıyorum işte.
+
+111
+00:19:40,576 --> 00:19:54,316
+4'te 1 oranında A varsa, 4'te 1 oranında B varsa, 4'te 2 oranında C varsa, diğer taraftaki B kolonunda da 4'te 1, 4'te 1, 2 bölü 4'lük bir şey bekleriz. Hadi tamam. Bunu okey. Başka ne olabilir?
+
+112
+00:20:00,000 --> 00:20:03,400
+Ne olur? 2 kare olur. Bakalım 2 kare ne yapıyoruz? Tamam mı?
+
+113
+00:20:04,100 --> 00:20:10,740
+Şimdi ne yapıyoruz? Bunlar nominalzatı. Yani işte siyah, beyaz, kırmızı gibi. Tamam mı?
+
+114
+00:20:11,440 --> 00:20:19,720
+Dolayısıyla A'da, B'de farklı değerler olsun. Yani A'nın alabileceği değerler, B'nin alabileceği değerler.
+
+115
+00:20:19,840 --> 00:20:22,900
+Ve bunların sayıları eşit olmak zorunda mı? Hayır değil.
+
+116
+00:20:23,571 --> 00:20:50,091
+A beş tane değer alırken B daha az ya da daha fazla değer alabilir. Tamam mı? Şimdi bakın iki karede ne yapıyoruz? İlk başta şunlardan şey yapalım. Bunların sayısını alıyoruz. O dediğimiz şeyler bir tanesi. Yani A bir şeyken, B de diğer değerken bunlardan kaç tane var ikili ikili? Onların sayısı. Observed Frequency.
+
+117
+00:20:50,740 --> 00:21:15,519
+Yani datada o ikili kaç tane var? Bunu her ikili için yapıyoruz. Bir tanesi siyahken, diğeri küçük. Atıyorum, öbürü kahve rengiyken, ağaç sunu, diğerinde orta var. O dediğimiz şey bunlar. E, J dediğimiz şey de expected frequency. Peki onu nereden çıkartacağız?
+
+118
+00:21:16,852 --> 00:21:28,972
+expected frequency, ne kadar expected sıklığı olduğu. Onu da şöyle yapacağız. A'dan kaç tane var? Yani şimdi siyah küçük örneği verdik ya.
+
+119
+00:21:29,712 --> 00:21:38,732
+Siyah sayısı çarpı küçük sayısı B'deki bölü kaç tane varsa N ona ne yapacağız? Böleceğiz.
+
+120
+00:21:39,192 --> 00:21:44,152
+Tamam, yani N dediğimiz şey de orada kaç tane toplam data oldu?
+
+121
+00:21:45,364 --> 00:22:01,304
+Şimdi şuraya bakalım. Şöyle olsun, daha böyle örnek verelim. A'da beş tane değer olsun. Siyah, beyaz, kırmızı, mavi, sarı. Tamam mı? B'de küçük, orta, büyük. Tamam mı?
+
+122
+00:22:01,304 --> 00:22:10,784
+Şimdi bakın, iyi dediğimiz şey ne yapıyor? A'daki her bir değeri alacak. Siyah'tan başlayacak.
+
+123
+00:22:11,155 --> 00:22:20,836
+Sonra A siyahken, şu R'ye kadar giden J'de B'nin değerlerini olacak. Küçük, orta, büyüğü. İlk başına bakacak. Siyah, küçük. Tamam mı?
+
+124
+00:22:21,316 --> 00:22:29,375
+Siyah, küçükten kaç tane var gerçekten datada? Eksi, bunun expectiti kaç tane vardı? Nasıl hesaplıyorum?
+
+125
+00:22:29,915 --> 00:22:37,195
+Tek başına siyah olan çarpı, tek başına küçük olan bölü toplam data sayısı. Aslında şunu da normalize etmiş oluyor şuradaki nerede.
+
+126
+00:22:37,811 --> 00:23:02,491
+Bunun karesi bölü, neye bölüyorum? Expect'e bölmüş oluyorum. Peki bu bana neyi verir? X karesizce nasıl bir şey çıkar? Hepsi birbirine eşit olsa, daha da basitleştirelim. Tamam mı? Şöyle olsa. 3'te 1, 3'te 1, 3'te 1 olsa. Tamam mı? Ve hepsinin de gerçekten sayısı aynı olsa. Yani bir tanesi siyahsa, siyahlar hep küçük, beyazlar hep orta, kırmızılar da hep büyük olsa.
+
+127
+00:23:03,155 --> 00:23:21,315
+Tamam mı? Şuradan nasıl bir şey çıkar? Baktığımız zaman sıfıra yakın bir şey çıkar. Değil mi? Doğru mu? Çünkü niye expectifte çıkartıyorsunuz? Expectifte sayılarının bölerek hesapladık.
+
+128
+00:23:29,428 --> 00:23:34,928
+Kikare bize neyi söyleyecek? Bunlar arasında nasıl bir ilişki olup olmadığını.
+
+129
+00:23:35,248 --> 00:23:43,128
+Yani şimdi şurada da örnek vermiş de bu örnek. Neyse bakalım. Benim siyah beyaz örneğimi versek daha iyi oluyordu da.
+
+130
+00:23:44,288 --> 00:23:54,528
+Şimdi şöyle ki. Diyelim ki elimde iki tane attribute var. Tamam mı? A attribute'u science fiction ile değil mi?
+
+131
+00:23:54,932 --> 00:24:03,251
+Tamam mı? Evet, hayır gibi düşünün. Ve attribute'u da satranç oynuyor mu, oynamıyor mu? Ne kadar saçma gibi.
+
+132
+00:24:04,692 --> 00:24:15,672
+İki tane attribute var. Yani normalde şöyle düşünün. Size fiction, yes, no demiş. Diğer tarafa da play chess, yes, no demiş gibi düşünün. Tamam mı attribute'ler?
+
+133
+00:24:16,231 --> 00:24:19,412
+Burada biz kolay hesaplayalım diye ne yapmış? Sayısını vermiş.
+
+134
+00:24:19,839 --> 00:24:39,659
+Burada Science Fiction'u evet olan ve Play Chess'i de evet olan 250 kişi varmış. Tamam mı? Sonra Science Fiction olup Play Chess'i no olan 200. İşte bu onların sayısı. Tamam mı? Bir de ne yapmamız lazım? Şuradaki formüle bakarsak.
+
+135
+00:24:41,748 --> 00:24:55,268
+şeyleri çıkartmamız lazım değil mi? Expected değerleri bulmamız lazım. Kaç tane olduğu bölü ne? Şimdi bakarsak burada kaç tane toplam satır var? Toplam 1500 satır varmış.
+
+136
+00:24:55,268 --> 00:25:07,608
+Tamam mı? 1500 satırın şu dört tanesini toplarsanız yani 250 artı 200 artı 50 artı 1000. Bu 1500 satırının 250 tanesi evet evet.
+
+137
+00:25:08,147 --> 00:25:31,607
+Tamam mı? 200 tanesi evet, play chess hayır. 50 tanesi science fiction hayır, play chess yes. İki tarafta hayır, hayır olan bin tane de bu varmış. Tamam mı? Şimdi ben neyi bulmaya çalışıyorum? Science fiction'ınla play chess arasında yani bu iki tane attribute, iki tane kolon, iki feature birbiriyle
+
+138
+00:25:32,403 --> 00:25:36,303
+Korele midir, değil midir? Aralarında bir ilişki var mı? Bunu bulmaya çalışıyorum.
+
+139
+00:25:37,023 --> 00:25:42,023
+İşte bunlar nominal değer olduğu için, sayı olmadığı için ne yapacağız? Ki kareyle bakacağız.
+
+140
+00:25:43,063 --> 00:25:48,843
+Baktığımız zaman, şimdi expected değerlerine baktığımız zaman expected değerlerini nasıl hesaplıyorduk?
+
+141
+00:25:49,923 --> 00:25:58,604
+Hemen bakarsanız tek başına orada olan, yani bir tanesi evet olan çarpı diğerinin evet ya da hayır olduğu bölü.
+
+142
+00:25:58,991 --> 00:26:10,751
+Burada 1500 diyeceğiz değil mi? Mesela bakarsak, science fiction olan toplamda kaç tane var? Baktığımız zaman.
+
+143
+00:26:16,372 --> 00:26:35,572
+450 tane var. Peki, Pc dediğine, play chess olan kaç tane var? 250 artı 50'den 300 tane var. Toplamda 1500 olduğuna göre, çarpı 300 bölü 1500'den. Bunun ekspektisini bulduk 90. Bunların hepsi için yapmam lazım.
+
+144
+00:26:37,203 --> 00:26:45,523
+Şimdi bu ne? Science Fiction olan artı Play Chess olan. Sonra bunun, expected veriyorsunuz, Science Fiction olmayan.
+
+145
+00:26:45,523 --> 00:26:51,523
+Kaç tane var? 1050, değil mi? 1050 çarpı bu sefer Play Chess olan.
+
+146
+00:26:52,339 --> 00:27:05,439
+Çarpı, play chess kaç tane? 300, şu altta onu yazmış. Çarpı 300 bölü 1500, onu bulmam lazım. Yani şunun dörtlüsünü de bulmam lazım her birisi için, expectif değeri. Parantez içinde onları hesaplayıp vermiş.
+
+147
+00:27:07,839 --> 00:27:09,759
+Nasıl hesaplamış? Mesela bu.
+
+148
+00:27:10,132 --> 00:27:25,512
+Şuradaki 210'u nasıl hesaplamış? Play chess olacak, 300 tane. 300. Çarpı not like science fiction olacak, o da 1050 tane. Çarpı 1050 bölü 1500'den 210 çıkıyordur umarım. Çıkmıyor olabilir.
+
+149
+00:27:26,932 --> 00:27:29,891
+Yani şöyle olabilir dediğim bazen hafa alıyor ki tafalarla.
+
+150
+00:27:31,271 --> 00:27:34,911
+Sonra da bunu formülde yerine koyduğumuz zaman ne yapıyoruz?
+
+151
+00:27:35,131 --> 00:27:37,811
+250 eksi, expected value'nun karesi bölü.
+
+152
+00:27:38,731 --> 00:27:40,871
+Neye bölüyoruz? Neye bölmek mantıklı?
+
+153
+00:27:42,771 --> 00:27:45,451
+Niye expected value'ya bölüyor 90'a burada sizce?
+
+154
+00:27:47,131 --> 00:27:49,391
+Yani niye burada hep expected value'ya bölmüş?
+
+155
+00:27:54,804 --> 00:28:08,764
+Niye yani? Yok yok formül anlamaya çalışıyorum. Formülde, şurada x-mex veriyor ya bölüyor ya, niye buna bölüyor? Çünkü, aynen bu aslında normalize etme şey. Tamam mı?
+
+156
+00:28:09,236 --> 00:28:17,096
+Şöyle ki, şimdi buradan çok farklı değerler gelebilir. Şuradaki E aslında buradan çıkacak değeri normalize etmeye çalışıyor.
+
+157
+00:28:17,216 --> 00:28:25,476
+Çünkü bunların sayıları birbirinden çok farklı olduğu zaman ve data da büyük olduğu zaman burada çok böyle çok büyük bir sayı çıkabilir.
+
+158
+00:28:25,476 --> 00:28:32,635
+Tamam mı? Şurada bölmesinin amacı bunu normalize etmeye çalışmak diyebiliriz. Tamam mı?
+
+159
+00:28:33,236 --> 00:28:47,076
+Ve de bunu topladığınız zaman 507 gibi bir şey çıkıyor. E bu ne demek? Bunlar Koreli mi değil mi? Koreli değil. Değil mi? Koreli olsaydı nasıl bir şey çıkmasını bekliyorduk? Sıfıra yakın bir şey çıkmasını.
+
+160
+00:28:50,708 --> 00:28:53,648
+Hangisi? Şu mu?
+
+161
+00:28:58,740 --> 00:29:22,779
+Şöyle ki, şimdi bunlar Koreli olsa, tamam mı? Şöyle düşünün, çok şu o dediğim şey bunların sayılarının çarpımı. Değil mi? Ve de expectte çok yakın olmasını bekliyoruz. Dolayısıyla burada çok çok küçük bir şey çıkacak. Değil mi?
+
+162
+00:29:23,347 --> 00:29:32,087
+Dolayısıyla da burada çok çok küçük bir değer çıkması, ki karenin daha küçük bir şey çıkması ne demek? Bir dakika düşünüyorum.
+
+163
+00:29:35,923 --> 00:29:49,123
+Aralarında ilişki yok demek. Doğru doğru evet. Niye? Şurayı söyleyelim. Şimdi burada çarpıyoruz ya bunları. Daha sonra da N'e bölüyoruz. Şimdi şuradaki şeyden kaynaklanıyor. N'e bölümden kaynaklanıyor. Ben bunu düşünmedim.
+
+164
+00:29:49,863 --> 00:30:03,003
+Dediği gibi ki kalemiz ne kadar büyükse arada o kadar ilişki var. Düzeltiyorum. Niye? Çünkü şuradaki bakın sayılarını çarptık ya kaç tane oldu. Burada biz N'e bölüyoruz aslında. N'e bölmek ne demek?
+
+165
+00:30:03,476 --> 00:30:13,656
+Oradaki yani çarp buradaki çarpımı n'e böldüğünüz zaman aslında daha virgülü bir sayı elde ediyorsunuz ve bunu böldüğümüz zaman da yine normalize etmiş oluyor.
+
+166
+00:30:13,736 --> 00:30:19,376
+Evet, pardon, pardon, evet. Ki kare ne kadar büyükse arada o kadar ilişki var demek. Tamam?
+
+167
+00:30:19,876 --> 00:30:25,536
+E zaten negatif olamaz. Paralasyondaki gibi değil. Ki kareniz negatif olamaz çünkü karesini alıyoruz.
+
+168
+00:30:26,416 --> 00:30:29,296
+Tamam, okey. Doğru. Pardon, düzeltiyorum.
+
+169
+00:30:29,844 --> 00:30:36,024
+Online'lar bir şey, çok ciddi bir şey düzelttik. Thanks, teşekkür ediyorum. Oradalar mı? 9 kişi orada.
+
+170
+00:30:39,827 --> 00:30:43,207
+Şu da şöyle bir örnek ama buraya bakarsınız sonra.
+
+171
+00:30:43,707 --> 00:30:44,487
+Digi yok.
+
+172
+00:30:45,007 --> 00:30:46,067
+Ne mi değil geç?
+
+173
+00:30:47,048 --> 00:30:51,548
+Şimdi, data transformation'a başlayacağım ama ara istemeyin.
+
+174
+00:30:51,647 --> 00:30:52,307
+Şunu bitirelim.
+
+175
+00:30:53,127 --> 00:30:53,847
+Sonra ara verelim.
+
+176
+00:30:54,447 --> 00:30:57,288
+Data transformation ve discretization.
+
+177
+00:30:57,447 --> 00:30:57,807
+Ne demek?
+
+178
+00:30:58,587 --> 00:31:00,067
+Ayrıklaştırma ve dönüştürme.
+
+179
+00:31:00,596 --> 00:31:12,355
+Şimdi Data Transformation'a baktığımız zaman, şimdi ne yaptık? Cleaning'i gördük, değil mi? Bir de neyi gördük? Datayı nasıl temizleriz? Onu gördük. Daha sonra nasıl smoothlaştırırız? Onları gördük.
+
+180
+00:31:13,096 --> 00:31:20,755
+Şimdi ne yapacağız? Şimdi de datayı transform edeceğiz. Niye transform edeceğiz? Ne gerek var?
+
+181
+00:31:32,819 --> 00:31:34,819
+Bunu veri tabanına sınsın diye yaparsın.
+
+182
+00:31:40,084 --> 00:32:00,424
+Genellikle data transformation, data integration yapılırken kullanılır. Mesela yine atıyorum firmanın farklı farklı ülkelerde şeyi var, tamam mı? Bir tanesi dolar cinsinden yapılan satış tutmuş, öbürü Türk parası cinsinden tutmuş, tamam mı? Gibi. Böyle şeylerde ne yapmamız gerekiyor? Transformation yapmamız gerekiyor.
+
+183
+00:32:00,980 --> 00:32:08,759
+Bir de ne var? Normalizasyon var. Normalizasyon da birkaç tane min maksimum normalizasyon ya da farklı normalizasyonlara bakacağız.
+
+184
+00:32:10,059 --> 00:32:17,700
+Bir de discretization dediğimiz ayrıklaştırma var. Bu ne? Bu da nümerik bir değeri. Ne yapacağız?
+
+185
+00:32:18,819 --> 00:32:23,279
+Nominal bir değer olarak, kategorik bir değer olarak nasıl tutarız? Onlara bakacağız. Tamam?
+
+186
+00:32:23,279 --> 00:32:25,299
+Şimdi hemen hızlı hızlı onlara bakalım.
+
+187
+00:32:26,771 --> 00:32:29,432
+İlk yine normalize. Şimdi bir şey niye normalize edelim?
+
+188
+00:32:35,059 --> 00:32:58,119
+Bunun şeyde güzel bir örneği var. Bir tane veri seti var. Veri setinde ev fiyatları var. Evle ilgili bilgiler var. Kaç artı, yeri nerede vesaire. Bir de ev fiyatları var. Gerçek veri. Ev fiyatlarını alırken bir yerden sonra, evler varken bir yerden sonra bazı evlerin fiyatları uçuyor. Çarkı, bin gibi değerler oluyor.
+
+189
+00:32:59,220 --> 00:33:06,420
+Siz onu normalize etmeden verirseniz, datayı, daha böyle ucuz evler var, az sayıda da büyük evler var.
+
+190
+00:33:06,420 --> 00:33:13,720
+Bunları verdiğiniz zaman nümerik olarak o büyük sayılar, ileride göreceğimiz metotlarda, regresyonda vs.
+
+191
+00:33:14,420 --> 00:33:19,799
+o küçük sayıları hiçbir şey anlam ifade etmemesine neden olabiliyor.
+
+192
+00:33:19,940 --> 00:33:23,339
+Aralık çok büyük olduğu için. Kullandığınız algoritmaya göre değişiyor tabii ki.
+
+193
+00:33:25,695 --> 00:33:34,435
+Genellikle normalize etmemiz gerekiyor ya da şunda da gerekiyor. Bazı algoritmalar, bazı metotlar sadece 0-1 aralığında input alabiliyor.
+
+194
+00:33:36,435 --> 00:33:48,596
+Dolayısıyla yine bunlarda da normalize etmemiz gerekiyor. Ama normalize ederken nasıl normalize etsek bizim için daha iyi olur. Ona karar vermemiz gerekiyor.
+
+195
+00:34:03,059 --> 00:34:06,940
+O da yine metoda göre değişir. Her metotta şey olmaz.
+
+196
+00:34:14,867 --> 00:34:30,527
+Yapay sinir anı daha hızlı öğrenebilir ama mesela Bayes networklerde falan çok fark etmeyebilir. Yani metoda göre o değişebilir. Yapay sinir anda çok fark eder normalizasyon.
+
+197
+00:34:36,275 --> 00:34:48,536
+Öyle de yapabilirsin. Normalize, şimdi nasıl normalize edebilirsin? Bir min-max normalizasyon yapabilirsin. S-score ya da ondalıkla yapabilirsin. Şimdi min-max normalizasyon ne demek?
+
+198
+00:34:49,355 --> 00:35:03,275
+Aslında tamamen lineer olarak, yani sayıların değerini değiştirmeden, yani normal distribisyona falan getirmeyeceğiz. Sayıların değerini değiştirmeden, diyelim ki işte min-max'ı
+
+199
+00:35:04,179 --> 00:35:28,699
+Söyleyelim ne yapacağız? Diyelim ki 0-1 aralığına normalize etmek istiyorsunuz. Yani ne gibi? Sizin maksimum değeriniz 1 olsun. Tamam mı? En küçük değeriniz de 0 olsun. Bu aralıklı 0-1 aralığına verilen değerleri ne yapacağız? Map edeceğiz. Ne yaparsınız? Düşünün bakalım.
+
+200
+00:35:34,003 --> 00:35:36,224
+Evet, en büyük ve en küçük değeri bulursun.
+
+201
+00:35:37,184 --> 00:35:40,224
+Diyelim ki sayı doğrusunu şu tarafındasınız. Öyle daha basit düşünelim.
+
+202
+00:35:40,644 --> 00:35:43,283
+Minimumu çıkartsanız her bir değerden ne olur?
+
+203
+00:35:43,943 --> 00:35:46,563
+En başı sıfıra getirmiş olursunuz. Doğru mu?
+
+204
+00:35:47,264 --> 00:35:54,443
+Onu da minimum ve maksimum arasındaki farka bölseniz, yani normalize etseniz aslında bir yerde de, ne olur?
+
+205
+00:35:56,431 --> 00:36:22,431
+0-1 aralığına scale etmek olur. Ama her zaman şey yapmak zorunda değilsiniz, 0-1 aralığına map etmek zorunda değilsiniz. Yani eksi 1 artı 1 aralığına da map edebilirsiniz. Değil mi? Sizin ne yapacağınıza bağlı. Dolayısıyla şuradaki formülü ne yapabilirsiniz? Kullanabilirsiniz. Tamam mı? Yani şurada bir new max, new min dediği işte 1-0 koyarsınız zaten.
+
+206
+00:36:23,059 --> 00:36:38,559
+Aynı şey çıkacağını görürsünüz. Asıl formül şu. Ona göre bu da ne yapıyor aslında? Yaptıktan sonra çarpı yeni aralık artı yeni min diyor. Yaptığı şey o. Yani 0-1 aralığına şurası dönüştürür.
+
+207
+00:36:38,996 --> 00:36:52,016
+Sonra eğer 0, 1 değil de başka bir minimum ve maksimum istiyorsanız, new max, new min dediği gibi, oradaki aralıkla çarpıp bir de yeni min kadar toplayarak ne yaparsınız? Saydırırız.
+
+208
+00:36:54,016 --> 00:36:58,656
+Bu min max normalization diye geçer. En çok kullanılan yöntem budur.
+
+209
+00:36:58,656 --> 00:37:01,656
+Tamam. Genellikle de 0, 1 arasına...
+
+210
+00:37:02,516 --> 00:37:24,576
+Değerler ne olur? MEP edilir. Bunun güzelliği ne? Güzelliği şu. Diyelim ki bir şey toplanmış, ne cinse olduğunu bilmiyorsun. Diyelim ki atıyorum basınç toplanmış, tamam mı? Başka bir yer daha basınç toplamış. Arada ve fiziksel olarak, coğrafya olarak çok fark yok. Ama şeyini falan da bilmiyorsun.
+
+211
+00:37:28,500 --> 00:37:36,059
+Aletle toplandı vesaire. İki tarafı da 0-1 arasına ayrı ayrı mep ettikten sonra ne yapabilirsin? Birleştirebilirsin.
+
+212
+00:37:36,419 --> 00:37:40,639
+Arada küçük farklar olur mu hatalar? Olur ama böyle de edilebilir.
+
+213
+00:37:41,679 --> 00:37:44,939
+Tamam algoritmalar tarafında. Böyle güzellikleri var.
+
+214
+00:37:45,479 --> 00:37:51,059
+Bu da örnek vermiş ama bunu yaparsınız zaten. Bu da bir espri yok. Tamam minimumu çıkarıyor. Maksimum eksi minimuma bölüyor.
+
+215
+00:37:52,596 --> 00:38:19,596
+Şimdi gelelim Z-Score Normalization'a. Bunu gördünüz mü? İstatistikle görmüş olmanız lazım. Z-Score Normalization'ı neydi? Ortalama ve standart sapmasına göre ne yapıyoruz? Normalize ediyoruz. Burada da yaptığımız şey bu. Her bir de yani attribute'un ortalamasını aldık. Standart sapmasını da aldık. Daha sonra ortalamayı çıkardıktan sonra ne yapıyoruz? Standart sapmasına bölüyoruz.
+
+216
+00:38:20,403 --> 00:38:30,564
+Tamam. Bunun diğerinden farkı ne? Bana ne sağlar? Zero Min Normalization ne işe yarar? Farkı ne bunun?
+
+217
+00:38:34,900 --> 00:38:41,920
+Aynen, normal dağılımın avantajını kullanabilirsiniz ve minimum maksimumdan emin değilsiniz. Bu ne demek?
+
+218
+00:38:42,520 --> 00:38:51,300
+Yani burada standart sapma hesaplıyor ama diyeceksiniz ki ben niye minimum maksimumdan emin olmayayım ki datamdaki, o sütundaki en küçük değer benim minimumumdur.
+
+219
+00:38:51,940 --> 00:38:56,500
+Hayır değil. Niye? Çünkü testte size o değerden daha küçük bir değer gelebilir.
+
+220
+00:38:56,980 --> 00:39:14,019
+Yani, tamam mı? Diyelim ki data topladınız, büyüklerden topladınız, sonra küçük çocuklara uyguladığınız yaş var. Diyelim ki siz 18 yaşı 0'a kaydırdıysanız MinMax Normalization'da, bu ne demek? 0'ın altındaki tüm yaşları da 0 olarak alacaksınız demek mesela. Sıkıntı çıkarabilir.
+
+221
+00:39:14,019 --> 00:39:23,019
+Ama ZSKOR Normalization, eğer datandaki minimumun gerçekten test aşamasında da sana gelecek olan minimum olup, yani minimum...
+
+222
+00:39:23,123 --> 00:39:47,063
+Ne biçim bu cümle kurdum? Baştan kuruyorum. Eğer ki test aşamının minimumdan emin değilseniz, tamam mı? Gerçekten bana gelecek minimum ve maksimum budur diyemiyorsanız o zaman ne yapabilirsiniz? Elinizdeki dağılama da güveniyorsanız tabii ki Z-skor normalizasyonu yapabilirsiniz. Yaptığımız şey ortalamayı çıkartıyorsunuz. Aslında ne yapıyorsunuz? Ortalamayı alıp sıfıra taşıyorsunuz. Değil mi? Yani bir dağılımınız var.
+
+223
+00:39:47,539 --> 00:39:53,980
+Tamam mı? Alıp ortalaması sıfır olacak şekilde taşıyorsunuz. Standart sapmaya bölerek ne yapıyorsunuz?
+
+224
+00:39:55,839 --> 00:40:08,460
+Aslında daha sap, daha böyle eğer ki standart sapmanız büyük, küçükse ne yapıyoruz? Aslında bunu normalize ederken aslında birazcık daha şöyle söyleyelim.
+
+225
+00:40:09,172 --> 00:40:18,831
+İlki standart satmanız büyükse nedir? Dağılımınız daha böyle yargındır. Daha büyük değere böldüğünüz zaman elde ettiğiniz sayı daha küçük olmuş oluyor.
+
+226
+00:40:19,831 --> 00:40:23,431
+Buna göre de daha küçük bir aralığa normalize etmiş olursunuz aslında.
+
+227
+00:40:26,711 --> 00:40:32,831
+Peki bu ne? Bu en basiti. Ona bölerek yani...
+
+228
+00:40:33,268 --> 00:40:37,867
+İşte ne denir? Birbirinden sonrasını atarız, yuvarlarız vs. gibi şeyler var ya.
+
+229
+00:40:38,688 --> 00:40:41,567
+Bu da bazen böyle şeyler yapmamız gerekebilir.
+
+230
+00:40:41,567 --> 00:40:47,788
+Tamam mı? Bu da kendiniz şu örnek birazcık daha iyi anlatıyor.
+
+231
+00:40:47,867 --> 00:40:55,347
+Diyelim ki A var. A'daki değerler de eksi 986 ile 917 arasındaki A kolonundaki değerler.
+
+232
+00:40:56,596 --> 00:41:05,155
+Ve biliyorsunuz ki maksimum absolute values'u yani şunun şeyini aldığınız zaman mutlak değerine 986'ya tekabül ediyor.
+
+233
+00:41:06,076 --> 00:41:15,755
+Tamam. Şöyle yapabilirsiniz. Sanki bu işte bin arası yani işte her değeri bine bölerek ne yapabilirsiniz?
+
+234
+00:41:15,755 --> 00:41:23,016
+İşte bu sıfır nokta şununla sıfır nokta şu ve sıfır nokta işte böldüğünüz zaman 917 arasındadır gibi bir şey diyebilirsiniz.
+
+235
+00:41:23,315 --> 00:41:25,515
+Ya da direkt sıfırları atabilirsiniz.
+
+236
+00:41:26,275 --> 00:41:27,935
+Yani şöyle bir şey var.
+
+237
+00:41:28,096 --> 00:41:30,975
+Diyelim ki, ne söyleyelim?
+
+238
+00:41:32,096 --> 00:41:33,535
+Para cinsinden bir şey.
+
+239
+00:41:33,655 --> 00:41:34,715
+Ev fiyatları.
+
+240
+00:41:34,935 --> 00:41:39,155
+Ev fiyatlarının hep milyon evler.
+
+241
+00:41:39,596 --> 00:41:41,535
+Genelde son üç basamak sıfır.
+
+242
+00:41:41,755 --> 00:41:43,355
+Çok nadiren küsurat var.
+
+243
+00:41:43,755 --> 00:41:46,155
+Ama o milyonun yanında o küsurat çok önemli değil.
+
+244
+00:41:46,295 --> 00:41:49,235
+O zaman hepsini bine bölüp küçültebilirsiniz.
+
+245
+00:41:49,395 --> 00:41:49,535
+Niye?
+
+246
+00:41:50,931 --> 00:42:08,291
+Niye böyle bir şey yapasınız? Bu sene sağlar. Hafızadan tasarruf bazı algoritmanızda da birazcık daha büyük sayılarla uğraşmadığı için, işte atıyorum long integer kullanmak zorunda kalmaz falan filan gibi şeyleri avantajları olabilir.
+
+247
+00:42:12,596 --> 00:42:39,975
+Peki, gelelim discretization'a. Bu ne demek? Ayrıklaştırma. Bu sefer ne yapıyorum? Elimde continuous bir attribute var. Ne? Mesela yaş. Yaşı nasıl söylersiniz? Atıyorum işte 24.2. Ayı da yuvarladık. Tamam mı? Ya da kilo girdi insanlar 56.35 girdi mesela. Elinizde böyle sürekli değer var. Tamam mı? Bunu kategorik değere çevirmek isteyebilirsiniz.
+
+248
+00:42:41,907 --> 00:42:53,327
+Nasıl yapacağız? Genellikle aralıkları kim belirler? Genellikle insanlar belirler. Aralıkları belirlerken neye bakarsınız peki?
+
+249
+00:42:57,288 --> 00:43:07,847
+Neye bakmak mantıklı olabilir aralık belirlerken? Şöyle. Arasının eşit olması. Buna bakabilirsiniz. Peki.
+
+250
+00:43:08,500 --> 00:43:12,480
+Bu datadaki frekansa vesaire bakmak size bir şey ifade eder mi?
+
+251
+00:43:14,920 --> 00:43:20,099
+Yani şöyle demek mantıklı mı? 0-10 bir grup, 10-20 bir grup. Böyle böyle mi bölersiniz?
+
+252
+00:43:20,739 --> 00:43:29,139
+Yoksa diyelim ki işte 0 ile 10 arasında 5 kişi var, 10 ile 20 arasında 30 kişi var, 20 ile 30 arasında 100 kişi var.
+
+253
+00:43:30,659 --> 00:43:34,780
+Ayrıklaştırırken buna bakmanız gerekebilir mi? Datamızın nasıl dağıldığına bakmanız gerekir mi?
+
+254
+00:43:37,523 --> 00:44:01,063
+Probleme göre değişir. Tamam mı? Tamamen probleme göre değişen bir şey. Bakmanız gerekebilir, gerekmeyebilirdi. Ama genellikle işte araları siz belirliyorsanız, işte atıyorum, ne yaptınız? İşte kilo değerlerini, ne deniyor ona ya? Zayıf, zayıfın kibarcısı ne? Zayıf, sızka.
+
+255
+00:44:01,619 --> 00:44:15,799
+Neyse işte obezin tam tersi obez, normal, sayıp öyle dedik. 3 var tam, 3 grup varsa, işte kendiniz atıyorum kütle indeksini hesapladınız, elinizde şey de var, direkt hangisine düşüyorsa otomatikman thresholdları koyup ne yapabilirsiniz?
+
+256
+00:44:17,319 --> 00:44:22,639
+Döndüre, çevire de bilirsiniz. Bunları nerede yapacağız peki ya? DataWaze'in üstünde mi yapacağız bunları?
+
+257
+00:44:23,668 --> 00:44:30,088
+Yani burada data mining yaparken data cleaning yapıyoruz ya, direkt bunları veri tabanın üstünde mi yapıyoruz? Nerede yapıyoruz bunları?
+
+258
+00:44:35,367 --> 00:44:47,067
+Ön işlemedeki en büyük sıkıntılardan bir tanesi. Gördüğünüz ön işlemede tek bir şey yok. Değil mi? Dolayısıyla datayı çekiyorsunuz. Datayı bir yerde orijinalini saklayın mutlaka.
+
+259
+00:44:47,764 --> 00:45:00,748
+Çünkü en büyük sıkıntı, bir kere bu yaşanan sıkıntı, Missing Value'ları ortalama değerle değiştirmişler. Tamam mı? Sonra bir güzel işlem yapmışlar, yapmışlar, bir şeyler çıkıyor. Ama sonra bir de bakıyorlar ki...
+
+260
+00:45:01,172 --> 00:45:08,872
+Hangi misimde, yani ortalama kaçtı bilmiyorlar. Çünkü misim veriyorlar ne? Onu da bilmiyorlar hangileri değişti.
+
+261
+00:45:09,331 --> 00:45:14,072
+Sonra algoritmaları hani misim bu şeyden ne kadar etkilendi onu falan da hesaplayamıyorlar gibi.
+
+262
+00:45:14,652 --> 00:45:18,092
+Bu işlemleri hiçbir zaman verinin üzerinde doğrudan yapmıyoruz. Tamam?
+
+263
+00:45:19,112 --> 00:45:22,811
+Mutlaka ön işlemede birden fazla adım da olduğu için ne oluyor?
+
+264
+00:45:24,492 --> 00:45:28,331
+Gereklemeli çalışmak gerekiyor. Proje denize ne yapın? Dikkat edin.
+
+265
+00:45:34,387 --> 00:45:38,107
+Evet, şey değil. Genellikle öyle bir sıkıntı oluyor.
+
+266
+00:45:38,947 --> 00:45:46,207
+Tamam. Peki, bir de diskreti metotlara baktığımız zaman şöyle bir şey var.
+
+267
+00:45:46,643 --> 00:46:09,543
+Unsupervised'da eğer ki, şimdi süpervised ve unsupervised ne demek? Bir tanesi gözetimli, süpervised. Başında bir süpervisor var gibi. Unsupervised'da gözetimsiz. Hani biz başta ikiye ayırdık ya şeyi. Ne dedik? Metotları predictive ve de descriptive olarak ayırdık. Değil mi?
+
+268
+00:46:09,972 --> 00:46:17,472
+Ve dedik ki, eğer ki bir etket varsa, verinizin etketi varsa, dedik ki bu nedir? Predictive'dir dedik.
+
+269
+00:46:18,271 --> 00:46:25,592
+İşte etketi olan verilerde classification gibi yöntemler genellikle supervised yöntemler olarak geçer.
+
+270
+00:46:26,351 --> 00:46:31,052
+Kümeleme gibi descriptive yöntemler de unsupervised olarak geçer.
+
+271
+00:46:31,052 --> 00:46:34,672
+Şimdi, discretization'da da ikisi de kullanılabilir.
+
+272
+00:46:36,239 --> 00:46:56,239
+Diyelim ki, discretize için yapacağız, tamam mı? Sınıflandırma için yapacağız. Yani şey, yapacağımız iş, classification en sonunda. Ama datamızı discretize etmek istiyoruz. Yani datam continuous, onu ne yapacağım? Discrete değerlere çevireceğim. Bunu yaparken...
+
+273
+00:46:57,268 --> 00:47:07,788
+Supervised Discretization yapabiliriz. Burada ne yapacağız? Supervised Sınıflandırma olan yöntem. Mesela Recision Tree ile hangisi hangi aralığa düşmüş?
+
+274
+00:47:07,788 --> 00:47:19,567
+Class patında bakıp buna göre belirleyebiliriz. Unsupervised'da da Class Tilling yaparsınız. Kontinus değerleriniz var bir sürü. Dediniz ki 3 kümeyi ayır.
+
+275
+00:47:20,755 --> 00:47:36,055
+3 kümeyi ayırdıktan sonra küme 1, küme 2, küme 3 diye ne yaparsınız? Bu aradaki değer, yani küme 1'in değerleri, minimum maksimum arası, küme 2'nin değerleri, küme 3'ün değerleri bunların minimum maksimumları var ya, buna göre bunları ne yaparsınız?
+
+276
+00:47:36,695 --> 00:47:43,755
+Kendiniz threshold belirlemeden ayırabilirsiniz. Çok kullanılıyor mu? Çok kullanılmıyor çünkü...
+
+277
+00:47:43,856 --> 00:47:53,576
+Çok müdahale edemiyorsunuz. Eğer ki noise falan hala varsa daha absürt şeyler çıkabiliyor. Tamam mı? Unsupervice'da çok kullanılmıyor açıkçası.
+
+278
+00:47:57,396 --> 00:48:05,356
+Bir de demin BIN'in görmüştük. Hatırlıyor musunuz? Hatırlıyorsunuz. Şimdi estribütlerin değerleri...
+
+279
+00:48:05,684 --> 00:48:26,784
+Ya eşit binlere bölünür, yani işte demin gördüğümüz neydi? Equal frequency idi değil mi? Ne vardı hatırlamıyorum. 4, 8, 13 mü vardı? Yani direkt sayısının 12 tane elemanınız varsa bunu 3000'e koyacaksanız sıralıyorduk. 4, 4, 4 koyuyoruz. Tamam. Bu frekansa göre olan.
+
+280
+00:48:29,804 --> 00:48:33,184
+Binleme, binleme diye bir kelime yok. Tamam mı?
+
+281
+00:48:33,652 --> 00:48:56,032
+Bir de equal width var. Bu da şu demek. Diyelim ki minimum maksimum arasına baktınız. 0 ile 30 arasında. Benim 3 tane binim olacak diyorsunuz. 0 ile 10 arasında olanlar 1 bin, 10-20 arası 1 bin, 20-30 arası başka bir bin deyip buna koyarsanız buna da equal width binin deniyor. Bu şekilde ne yapabilirsiniz?
+
+282
+00:48:57,364 --> 00:49:08,243
+Genellikle mesela yaş ne oluyor? 0, 18, 18, 25 mi oluyor? 25, 35, 35, 50. Bu hangisine örnek?
+
+283
+00:49:12,340 --> 00:49:35,300
+Equal Vite birazcık daha örnek. Aslında Viter equal değil, on on gitmiyor. Ama oradaki şeyleri eşit on on gitmese bile yani yaş aralığı on on beş gidiyor ama insan tarafından belirlenmiş. Yani tutup veri tabanında kaç tane var, kaç kişi var onları say demiyoruz. Frekansa göre yapmıyoruz. Tamam.
+
+284
+00:49:37,427 --> 00:49:42,427
+Herhalde bir ara istersiniz. Şunu...
+
+285
+00:49:42,427 --> 00:49:50,127
+Çok mısınız? Neyse, aradan sonra atayım da can sıkıntınızı geçin. 10 dakikada verelim. Can sıkıldınız. Daha anlatacağım.
+
+286
+00:49:56,083 --> 00:49:56,907
+Evet.
+
+287
+00:50:04,947 --> 00:50:06,107
+11.10'da gelin.
+
+288
+00:50:08,288 --> 00:50:11,688
+Online'lar, sevgili online'lar, 11.10'da bekleniyorsunuz.
