@@ -1,0 +1,3135 @@
+1
+00:09:46,227 --> 00:09:47,767
+Evet, herkese merhaba.
+
+2
+00:09:57,172 --> 00:10:03,372
+Başka derste olduğu için herhalde biraz gecikme yaşıyor anladığım kadarıyla. Pazartesilere böyle bir durum vardı galiba değil mi?
+
+3
+00:10:05,912 --> 00:10:09,492
+Evet hocam, daha ders yeni bitti ya da bitmemiş de olabilir yani.
+
+4
+00:10:09,492 --> 00:10:10,872
+Haa, tamam.
+
+5
+00:11:56,083 --> 00:12:05,423
+Evet, 33 kişi görünüyor. Merhaba dedi [öğrenci]. Evet, merhaba herkese. Şimdi 35-34 oldu.
+
+6
+00:12:07,983 --> 00:12:23,043
+Şimdi kutupsal koordinatlara başlayacaktım bugün. Bitiririm galiba bugün. Yarın da uygulama yaparız. Bu parametrik eğriler ve kutupsal koordinatlarla ilgili uygulama yaparız.
+
+7
+00:12:23,423 --> 00:12:25,744
+Haftayı böyle noktalarız diye düşünüyorum.
+
+8
+00:12:27,183 --> 00:12:33,783
+Konu olarak da, şimdi, nerede? Bir dakika, şu müfredata bir bakalım.
+
+9
+00:13:09,395 --> 00:13:30,955
+4. hafta, 4. haftadayız bu hafta. Kutupsal koordinatlar aslında 5. haftada gözüküyor. Biz bu hafta kutupsalı bitiririz. 5. haftanın sonunda kutupsal bitecek görünüyor. Bu hafta kutupsalı bitiririz. Parametrik ve kutupsalla ilgili soru çözeriz. Bu haftayı böyle noktalarız diye düşünüyorum.
+
+10
+00:13:43,956 --> 00:13:47,056
+Evet, şimdi kutupsal koordinatlara başlayalım.
+
+11
+00:13:48,016 --> 00:13:56,696
+Şimdi kutupsal koordinat deyince önce bir kutup noktası alıyoruz.
+
+12
+00:13:56,855 --> 00:14:00,615
+Böyle bir adına, genelde o harfiyle gösteriyoruz.
+
+13
+00:14:00,716 --> 00:14:01,875
+Böyle bir kutup noktası.
+
+14
+00:14:02,656 --> 00:14:04,516
+Ve böyle bir başlangıç işini alıyoruz.
+
+15
+00:14:04,875 --> 00:14:07,716
+Not var zaten, görüyorsunuz. O notu size paylaşacağım.
+
+16
+00:14:08,395 --> 00:14:11,156
+Buna başlangıç işini diyoruz, bu başlangıç işine.
+
+17
+00:14:14,035 --> 00:14:22,735
+Sonra böyle bir teta açısı alıyoruz. Teta açısına karşılık gelen noktayı P diye gösteriyoruz.
+
+18
+00:14:23,135 --> 00:14:38,995
+Tabii bunu daha iyi belirleyebilmek için şu P'nin O'ya uzaklığı eren mutlak R ise veya bu R pozitif mutlak R diye genelde söylüyoruz ama R pozitif durumunda.
+
+19
+00:14:39,508 --> 00:14:54,128
+O'nun P'ye uzaklığı ne olacaktır? R olacaktır. O zaman bu teta açısına karşılık gelen P noktasını R teta ikilisiyle temsil ediyoruz.
+
+20
+00:14:55,608 --> 00:15:01,327
+Evet, bir başta orjin dediğimiz ya da kutup dediğimiz bir nokta aldık, buna kutup dedik.
+
+21
+00:15:03,128 --> 00:15:05,268
+Bir başlangıç işini aldık.
+
+22
+00:15:06,484 --> 00:15:10,163
+Veya kutup ekseni de deniliyor buna, kutup ekseni.
+
+23
+00:15:12,324 --> 00:15:25,704
+Sonra, başlangıç ışınından, hani trigonometreden bildiğimiz üzere, saatin dönme yönünün tersine, saatin dönme yönünün tersine bir açı aldık.
+
+24
+00:15:25,704 --> 00:15:33,944
+Bu pozitif yönünün açı oluyor tabii. Eğer saatin dönme yönünün aynı yönünü alsaydık, o da negatif yönlü bir açı olacaktı bizim.
+
+25
+00:15:34,803 --> 00:15:46,563
+Bir tete açısına karşılık gelen noktayı P diye gösterdim. Bu P'nin O'ya uzaklığı, yani kutupa olan uzaklığı, orjine olan uzaklığı R olarak. R ise şayet o zaman.
+
+26
+00:15:47,124 --> 00:15:54,804
+P noktasını R theta ikilisiyle temsil ediyoruz.
+
+27
+00:15:54,943 --> 00:15:57,324
+Demek ki burada R neymiş? Orijin olan uzaklık.
+
+28
+00:15:57,903 --> 00:16:02,564
+Theta da başlangıç işiniyle yapılan pozitif yönlü açı.
+
+29
+00:16:03,224 --> 00:16:04,144
+Negatif de olabilir.
+
+30
+00:16:04,384 --> 00:16:09,224
+Eğer ne olursa saatin dönme yönüyle aynı yönlü olursa ne diyoruz?
+
+31
+00:16:09,324 --> 00:16:12,324
+O zaman negatif yönlü bir açı oluyor.
+
+32
+00:16:12,324 --> 00:16:13,564
+Bu theta.
+
+33
+00:16:15,347 --> 00:16:18,567
+Evet, kutupsal koordinat bu demek.
+
+34
+00:16:26,484 --> 00:16:28,484
+Evet, şimdi tabii...
+
+35
+00:16:37,043 --> 00:16:46,864
+Şunlar var tabii, şu bilgiler üzerinden geçelim. Bir noktayı temsil eden sonsuz tane kutupsal koordinat çifti vardır. Bu şu demek.
+
+36
+00:16:48,524 --> 00:16:59,063
+Siz şimdi biraz önce aldınız bir RTT noktası, ona da P dedik.
+
+37
+00:16:59,635 --> 00:17:26,235
+Siz bu noktaya başka türlü de ulaşabilirsiniz. Ne yaparsınız? 2P'yi döndürürseniz, 2P'yi eklerseniz, şöyle 2P'yi eklediğiniz zaman yine aynı noktaya ulaşabilirsiniz. Dolayısıyla her 2P eklemede, yani 2PK eklemelerde teta'ya yine aynı noktaya ulaşabilirsiniz. Dolayısıyla aslında sonsuz tane kutupsal koordinat vardır. Onu demek istiyoruz. Bir daha söylüyorum.
+
+38
+00:17:26,816 --> 00:17:42,816
+PR, teta ikilisine 2P eklediğinizde yine aynı noktaya ulaşırsınız. Bir 2P daha eklediniz, yani 4P eklediniz yine aynı nokta. Bu şekilde. Demek ki teta artı 2P eklerseniz yine aynı noktaya. Dolayısıyla sonsuz tane kutupsal koordinat çifti vardır şeklinde yorumluyoruz bunu.
+
+39
+00:17:48,051 --> 00:18:15,511
+Peki, R negatif olabilir. R sıfır ise ne olursa olsun P kutup olur. R orijinal olan uzaklık tabii ki sıfır olursa, yani R sıfır olursa bizim noktamız ne olur? Kutuptan ibaret o şey. O noktası bizim noktamız kutuptan ibaret olur. Çünkü uzaklık yok, R sıfır. Sadece elimizde ne olur? O. Yani kutup olur. Sadece kutuptan ibaret olur nokta.
+
+40
+00:18:17,748 --> 00:18:21,688
+Peki, R negatifse orjine göre yansıtma yaparak buluyoruz.
+
+41
+00:18:22,708 --> 00:18:30,288
+Yani o da şu demek, burada örneklerini yine bu dosyada görebileceksiniz örneklerini.
+
+42
+00:18:30,288 --> 00:18:34,288
+O da şu demek, şimdi şöyle bir nokta aldık.
+
+43
+00:18:36,807 --> 00:18:41,567
+P noktası. P'nin orjine olan uzaklığı R bilim olsun.
+
+44
+00:18:45,715 --> 00:19:00,715
+P eksi R teta'yı almak istiyorsanız, o zaman şöyle oluyorsunuz, şu mesafe, bu mesafeye eşit olmak üzere, P eksi R teta'yı orjine göre yansıtarak boyuyorsunuz.
+
+45
+00:19:00,715 --> 00:19:08,615
+Tamam mı? Yani şurası P, R teta ise onun simetriyi, orjine göre simetriyi, kutuba göre simetriyine, eksi R'ye teta diyoruz.
+
+46
+00:19:09,235 --> 00:19:09,675
+Tamam mı?
+
+47
+00:19:11,731 --> 00:19:17,911
+Eksi reye teta şeklinde söylenebileceği gibi açıları düşünerek şöyle de yapabilirsiniz bunu.
+
+48
+00:19:18,771 --> 00:19:24,172
+Ben ne diyebilirim? Şurası teta olduğuna göre, şu mesafe pi olduğuna göre dersiniz.
+
+49
+00:19:24,991 --> 00:19:30,711
+O zaman ben buradan itibaren böyle düşündüğüm zaman ne olur? Pi artı teta olur.
+
+50
+00:19:31,371 --> 00:19:37,091
+Evet, yani evet pi artı teta ile de bu noktaya buraya ne yapabilirsiniz?
+
+51
+00:19:37,715 --> 00:20:00,195
+ulaşabilirsiniz. Yani P'ye, bu eksi R'ye, teta'ya, noktasına, P artı teta R şeklinde de ulaşabilirsiniz. Böyle de ulaşılabilir. Şöyle şurada bakın, şurada izah ettiğimiz üzere,
+
+52
+00:20:02,836 --> 00:20:08,576
+teta pozitif, re pozitif böyle bir nokta oluyor.
+
+53
+00:20:08,776 --> 00:20:10,336
+re'ye teta böyle bir nokta oluyor.
+
+54
+00:20:11,956 --> 00:20:20,715
+Eğer re küçük, re pozitif, teta negatifse o zaman teta negatif olunca, negatif yönlü olunca bu tarafta bu şekilde bir nokta oluyor.
+
+55
+00:20:21,816 --> 00:20:29,675
+teta pozitif, re negatifse o zaman şurası re birim olmak üzere şöyle bir nokta elde ediyorsunuz.
+
+56
+00:20:30,548 --> 00:20:32,447
+Yani aslında burası ekstra et veta.
+
+57
+00:20:34,087 --> 00:20:34,988
+Olmuş oluyor.
+
+58
+00:20:35,548 --> 00:20:35,988
+Tamam mı?
+
+59
+00:20:37,647 --> 00:20:38,567
+Bu şekilde.
+
+60
+00:20:44,435 --> 00:20:47,915
+Şimdi bir tane diyelim ki, bir örnek verelim şöyle.
+
+61
+00:20:56,660 --> 00:21:18,600
+Şöyle diyelim ki, eksi 2'ye P, eksi 2'ye P bölü 6 ne demek? Bunun yorumunu şöyle yapıyoruz. 2'ye P bölü 6'yı çiziyorsunuz. Şurası P bölü 6. Burası başlangıç ışınımız. Şurası kutup. 2'ye P bölü 6 burası.
+
+62
+00:21:20,723 --> 00:21:30,203
+Orijine göre yansıtıyorsunuz, şöyle diyorsunuz. Burası P-2'ye P bölü 6 diyorsunuz. Tamam mı? Bu şekilde söyleyebilirsiniz.
+
+63
+00:21:31,903 --> 00:21:48,083
+Şimdi, ama aynı zamanda bu nokta, şöyle, şu açıyı düşünürseniz, hocam şuradan başlasak diyeceksiniz belki, şu açı P, şu da P bölü 6, şöyle ne olur, P artı,
+
+64
+00:21:49,779 --> 00:21:50,900
+pi bölü 6 olur.
+
+65
+00:21:52,019 --> 00:21:53,360
+pi artı pi bölü 6 olur.
+
+66
+00:21:53,779 --> 00:21:58,059
+Dolayısıyla biz bunu 2'ye 7 pi bölü 6 noktası olarak da düşünebiliyoruz.
+
+67
+00:21:58,700 --> 00:21:59,799
+Evet, bu aynı zamanda ne?
+
+68
+00:22:00,940 --> 00:22:05,960
+2'ye 7 bir pi bölü 6 noktası olarak da düşünebiliriz bunu.
+
+69
+00:22:07,960 --> 00:22:12,240
+Bu eşittir. 2'ye 7 pi bölü 6 şeklinde de söyleyebiliriz.
+
+70
+00:22:13,364 --> 00:22:38,624
+Evet, bir daha söylüyorum. Şimdi pi bölü 6'ya, 2'ye pi bölü 6 noktası bu. Orijine göre yansıttık, o zaman eksi 2'ye pi bölü 6'yı bulduk. Ama şu açıyı düşünerek, şu açı pi artı pi bölü 6, bunu 2'ye 7 pi bölü 6 noktası olarak da adlandırabiliyoruz. Şurası 2 birim olduğu için tabii, şurası 2 birim. 2 birim. Tamam mı?
+
+71
+00:22:38,996 --> 00:22:41,036
+Evet, bu şekilde.
+
+72
+00:22:44,076 --> 00:22:51,916
+Evet, bir daha söylüyorum. 2'ye pi bölü 6, eksi 2'ye pi bölü 6 orjine yansıtarak buluyoruz. Aynı mesafe. Şurası 2 birim olacak.
+
+73
+00:22:53,036 --> 00:22:55,996
+Burası 2 birim. Burası da 2 birim.
+
+74
+00:22:57,216 --> 00:23:04,036
+Eksi 2 pi bölü 6 deyince orjine göre yansıtmasını düşüneceğiz. Ama buna şöyle de düşünebiliriz. Şu açı...
+
+75
+00:23:05,523 --> 00:23:11,384
+7 pi bölü 6 olduğu için 2'ye 7 pi bölü 6 noktası gözüyle de bakabiliyoruz.
+
+76
+00:23:14,123 --> 00:23:21,603
+Evet, tabii bu iki paşı ileriye doğru örneklerde, daha farklı örneklerde göreceğiz.
+
+77
+00:23:41,556 --> 00:23:49,276
+Şimdi birkaç tane örnek yapalım. Kutupsal denklemler ve grafikleri.
+
+78
+00:23:53,683 --> 00:24:03,143
+Şimdi R eşit A deyince, R eşit A merkezi orijinde olan, yarı çapı mutlaka olan bir çemberi anlıyoruz.
+
+79
+00:24:03,284 --> 00:24:10,523
+R eşit A deyince, merkezi A, yarı çapı mutlaka olan çember. Niye?
+
+80
+00:24:21,236 --> 00:24:48,135
+olan uzaklığı ya da kutuba olan uzaklığı, işte şöyle kutuba aldık, kutuba olan uzaklığı ne olacak? A birimi olan noktalar demek bu. Açı belirtmemiş, açı değişiyor. Açı değiştiğine göre bir noktadan eşit uzaklıkta olan mutlak A, mutlak A, evet bir noktadan eşit uzaklıkta olan sonsuz tane nokta ne belirtirdi? Bir çember belirtildi değil mi?
+
+81
+00:24:49,076 --> 00:25:06,976
+O zaman ne olur? Bu böyle bir çember olur. Evet, R eşit A, theta değiştikçe, bir O noktasına eşit uzaklıkta olan tüm noktaların kümesi nedir? Bir çemberdir. R eşit A o zaman ne olur? Mutlaka yarı çaplı bir çember olur.
+
+82
+00:25:16,692 --> 00:25:38,092
+Kutup ekseniyle teta sıfır açısı yapan şöyle bir, şöyle diyelim, şöyle düzeltabiliriz. Şura teta eşit teta sıfır. Böyle teta sıfır açısı yapan bir doğru olur. Yani teta eşit teta sıfır deyince bir doğru alıyoruz. Kutupla şurası başlangıç işini.
+
+83
+00:25:42,003 --> 00:26:07,063
+başlangıç işine. Theta eşit theta sıfır deyince, R için bir şey yok, o zaman böyle bir doğru olur. Böyle bir doğru olur. Çünkü R için bir sınır konulmamış, böyle theta eşit theta sıfır bir doğru olmuş olur. R için bir sınır yok, R'ye bir şey denilmiyor. Dolayısıyla neymiş? O'dan geçen ve kutup eksineyle theta sıfır açısı yapan bir doğru elde ediyoruz.
+
+84
+00:26:07,604 --> 00:26:31,144
+Biraz daha somutlaştıralım. R eşit 1, R eşit eksi 1 ne demek? R eşit 1, R eşit eksi 1. Tabii bu R eşit eksi 1 de uzaklık olarak düşündüğümüz zaman bu nedir? R eşit orjinal olan uzaklığı bir olan noktalar demek. Sadece R eşit 1 deyince,
+
+85
+00:26:34,324 --> 00:26:43,304
+Orjine, buradaki a negatif de olabilir, dikkat edin, biraz önce söyledik, a, re eşit a, a negatif de olabilir burada, a küçük sıfır da olabilir.
+
+86
+00:26:43,964 --> 00:26:48,804
+Re eşit a biçiminde olunca, orjine mutlak a birim uzaklıkta olan noktalar.
+
+87
+00:26:49,704 --> 00:26:57,064
+Dolayısıyla, eksi bir de olsa re, orjine bir birim uzaklıkta olan noktaları kast ediyoruz.
+
+88
+00:26:57,064 --> 00:27:00,684
+Hem re eşit bir ile, hem re eşit eksi bir ile neyi kast ediyoruz?
+
+89
+00:27:01,715 --> 00:27:08,255
+uzaklığı 1 olan noktaları kastediyoruz. Bu da bizim yukarıda söylediğimiz üzere 1, çember.
+
+90
+00:27:09,455 --> 00:27:21,455
+Yani R'nin negatif değeri de olsa uzaklık olduğu için kutup olan uzaklığı 1 olan, ya da burada A demiştik, mutlak A olan çemberi kastediyoruz.
+
+91
+00:27:21,596 --> 00:27:26,255
+R eşit A ile her zaman orijin olan uzaklığı mutlak A olan.
+
+92
+00:27:26,675 --> 00:27:30,175
+mutlaka yani pozitif olan noktaları kastediyoruz.
+
+93
+00:27:31,975 --> 00:27:34,516
+Teta eşit pi bölü 6, biraz önce de dedik.
+
+94
+00:27:35,056 --> 00:27:46,775
+İşte şöyle bir pi bölü 6, şöyle başlangıç içinde şu açı pi bölü 6 olacak biçimdeki bir doğruyu kastediyoruz.
+
+95
+00:27:46,775 --> 00:27:53,536
+İşte teta eşit 7 pi bölü 6 olunca buna pi eklerseniz, pi eklediğimizde buraya,
+
+96
+00:27:54,163 --> 00:28:14,143
+Değil mi? Pi artı pi bölü 6, 7 pi bölü 6, şuradan itibaren, pi artı pi bölü 6, işte 7 pi bölü 6, böyle bir doğruyu kastediyoruz.
+
+97
+00:28:16,468 --> 00:28:21,927
+teta eşit eksi p bölü 6 deyince, o zaman eksi p bölü 6 olunca da yine ne olur?
+
+98
+00:28:25,088 --> 00:28:38,907
+Şurası nasıl olur? p'den tamamı p, eksi p'ye ne ekleyeceğim? p bölü 6 ekleyeceğim. O da eksi p, 5 p bölü ne olur? 6 olur.
+
+99
+00:28:40,008 --> 00:28:42,307
+Eksi p'ye p bölü 6 ekleyeceğim.
+
+100
+00:28:43,059 --> 00:28:47,539
+Dolayısıyla eksi 5 pi bölü 6 olunca da şöyle bir doğru, şu doğru.
+
+101
+00:28:48,859 --> 00:28:51,420
+Kast ediyoruz değil mi? Bu şekilde.
+
+102
+00:28:54,420 --> 00:29:01,099
+R 1 ile 2 arasında, biraz önce demiştik ki, R eşit 1, 1 çemberdir. Şöyle.
+
+103
+00:29:02,480 --> 00:29:03,659
+Bir çember.
+
+104
+00:29:05,440 --> 00:29:06,659
+Şöyle bir dakika düşüyorum.
+
+105
+00:29:08,359 --> 00:29:09,199
+Şöyle diyelim.
+
+106
+00:29:12,084 --> 00:29:13,923
+R eşit 1 şöyle bir çember.
+
+107
+00:29:15,524 --> 00:29:19,403
+Bu başlangıç ışını.
+
+108
+00:29:21,184 --> 00:29:23,384
+Başlangıç ekseni, başlangıç ışını.
+
+109
+00:29:25,144 --> 00:29:31,684
+Şimdi şurası R eşit 1 deyince böyle bir çember.
+
+110
+00:29:32,344 --> 00:29:35,144
+R eşit 2 deyince şöyle bir çember.
+
+111
+00:29:37,203 --> 00:29:46,223
+Ama R1'den büyük olduğuna göre, şu kısım ve 2'den küçük olduğuna göre, aradığımız bölge ne olur? Böyle.
+
+112
+00:29:47,384 --> 00:29:50,023
+Bu aradaki halka bölge olmuş olur. Şurası kutup tabii.
+
+113
+00:29:51,364 --> 00:29:55,083
+Evet, R1 ile 2 arasında olunca böyle bir bölgeyi kast ediyoruz.
+
+114
+00:29:55,803 --> 00:30:01,283
+Çünkü R eşit bir bu çember. R1'den büyük veya eşit olduğu için çemberin kendisi ve dışı.
+
+115
+00:30:01,683 --> 00:30:05,103
+İki denle küçük olduğu için, re eşit iki çemberi ve içi olmuş olur.
+
+116
+00:30:06,384 --> 00:30:07,284
+Bu şekilde.
+
+117
+00:30:12,307 --> 00:30:12,807
+Peki.
+
+118
+00:30:18,804 --> 00:30:23,144
+R eşit benzer şekilde şu 3'ü de söyleyelim.
+
+119
+00:30:24,384 --> 00:30:28,364
+Evet, şey C, D'yi de söyleyelim, şundaki D'yi.
+
+120
+00:30:29,644 --> 00:30:34,324
+Nedir? R eksi 3 ile 2 arası. R eşit eksi 3 deyince nedir?
+
+121
+00:30:34,524 --> 00:30:40,284
+Yine 3 birim orijine olan mesafesi ama şeye göre yansıtacaktık, kutuba göre yansıtacaktık.
+
+122
+00:30:40,364 --> 00:30:45,284
+Bulaşı şöyle bir nokta. Şurası eksi 3 diyoruz ama şurası kaç birim?
+
+123
+00:30:45,683 --> 00:31:12,584
+Eksi 3, yani 3 birim. Şurası, evet, 3 birim olan, şurası 3 birim mesafe, şurası 2 ise, burası 3, kabul edelim. Evet, re, eksi 3 ile 2 arası, o zaman burada, şuraya kadar olan bir doğru parçası. Evet, bir daha, şöyle bir daha yapıyorum. Şurası, eksi 3 deyince, orijine göre yansıtıyoruz. Eksi 3'ü bulduk, ama şurası 3 birim.
+
+124
+00:31:13,779 --> 00:31:17,439
+Evet, burası, eksi.
+
+125
+00:31:21,268 --> 00:31:32,627
+Evet, lag eksi 3, 3 birim, şu parça 2 birim, demek ki şu arası, şu arası, yani şu doğru parçasını kastediyoruz.
+
+126
+00:31:32,747 --> 00:31:35,907
+Çünkü R eksi 3 ile kaç arası? 2 arası.
+
+127
+00:31:36,327 --> 00:31:41,028
+Ve teta pi bölü 4 denilmiş, şu arası da, şu açıda neymiş? pi bölü 4.
+
+128
+00:31:41,947 --> 00:31:43,167
+Bunu kastediyoruz.
+
+129
+00:31:44,596 --> 00:31:49,596
+Bu arada şu öncekinde c'de theta 0 ile pi bölü 2 arasında değişiyordu.
+
+130
+00:31:50,115 --> 00:31:52,395
+Theta eşit pi bölü 2 şu ışın tabii.
+
+131
+00:31:53,015 --> 00:32:00,935
+Bu arada şu kutup ise theta eşit pi bölü 2 ışını burası oluyor.
+
+132
+00:32:01,055 --> 00:32:02,195
+Bu arada bunu da söyleyelim.
+
+133
+00:32:02,615 --> 00:32:05,816
+Şu başlangıç ekseni.
+
+134
+00:32:07,508 --> 00:32:15,508
+Veya başlangıç ışığını, neyse, başlangıç ekseni, eksen demek daha doğru, başlangıç ekseni. Bu şekilde.
+
+135
+00:32:17,008 --> 00:32:28,667
+Şimdi, burada, işte, R yok dikkat ederseniz, teta 2 pi bölü 3 ile, 2 pi bölü 3 120 derece demek, değil mi?
+
+136
+00:32:28,667 --> 00:32:35,028
+O zaman nasıl bir şey olur? Şöyle bir, şurası.
+
+137
+00:32:36,468 --> 00:32:50,628
+teta eşit 2 pi bölü 3. Böyle bir doğru. Diğeri de 5 pi bölü 6. O da 150 olacağına göre. O da şöyle bir şey. Değil mi? Bu da şuradan diyelim.
+
+138
+00:32:52,468 --> 00:32:59,748
+teta eşit 5 pi bölü 6. Evet. 2 pi bölü 3'ten büyük.
+
+139
+00:33:01,428 --> 00:33:20,948
+2 pi bölü 3'ten büyük, 5 pi bölü 6'tan küçük. O zaman ne olur? Burası var. Bir de neresi var? Şurası var. Evet, bu şekilde. Böyle bir. Şurası tabii teta eşit 0. Yani başlangıç eksenimizi teta eşit 0 ile gösteriyoruz. Tabii ki. Evet, bu şekilde.
+
+140
+00:33:28,660 --> 00:33:30,559
+Evet, şu f'yi de söyleyelim.
+
+141
+00:33:34,740 --> 00:33:49,579
+Evet, şöyle bir şey verilmiş, F'de. R2 ile 3 arasında, R2 ile 3 arasında denilmiş. Ama 2 dahil değil. Şimdi aldık şöyle, pardon, şöyle.
+
+142
+00:33:54,199 --> 00:34:01,740
+Kutubumuz, R2'ye dahil olmadığı için aslında normalde şöyle çizmemiz lazım, değil mi? Böyle.
+
+143
+00:34:03,731 --> 00:34:29,931
+Bir, R büyük 2 demiş. R eşit 2 olsaydı, bunun çember olarak alacaktık. 2'den büyük, nokta nokta aldık, 3'den küçük eşit. R eşit 3 deyince de bu. Bunun arasında olacak. Demek ki şöyle, normalde böyle ama theta için bir sınırlama var.
+
+144
+00:34:30,612 --> 00:34:48,032
+Şöyle olacaktı. Fakat theta için sınırlama var. Şöyle, nereye kadar diyor theta? Sıfırdan pi bölü 6'ya kadar. Yani şu açımız diyor, pi bölü 6, gradyan olsun diyor. O zaman şöyle yaparız. Demek ki sonuç olarak şöyle.
+
+145
+00:34:52,032 --> 00:34:56,471
+Şöyle başlangıç eksenini aldık. Şurası nokta nokta.
+
+146
+00:34:56,916 --> 00:35:22,275
+R eşit kaça karşılık geliyor normalde? 2'ye karşılık geliyor. Şöyle R eşit 3. Şu aradaki mesafe. Peki bu açımız ne? Açımız da şu açımız. Açımız pi bölü 6. Theta sıfırla, theta sıfır şu. Theta sıfır bu. Theta eşit pi bölü 6 da bu. Evet. Sıfırdan pi bölü 6'ya kadar böyle olmuş oldu.
+
+147
+00:35:26,675 --> 00:35:27,615
+Evet, bu şekilde.
+
+148
+00:35:32,916 --> 00:35:46,195
+Şimdi, diğer ne var? Başka? Bu aradaki ilişkiden bahsetmişiz burada. Kutupsal koordinatlar ile, kartezyen koordinatlar arasındaki ilişki. Bu önemli.
+
+149
+00:35:48,336 --> 00:35:51,256
+Bazen kartezyenden kutupsala,
+
+150
+00:35:51,827 --> 00:36:06,827
+Veya tersi işlemi yapmak gerekir. Yani kutupsal koordinatı kartezyene veya kartezyene kutupsala dönüştürmemiz gerekebilir. Bunun için şu bilgiye ihtiyacımız var. Şöyle bir x'ye noktası aldık.
+
+151
+00:36:14,327 --> 00:36:17,988
+Kartezyen koordinatlarda şöyle bir x'ye noktası aldık.
+
+152
+00:36:19,699 --> 00:36:44,479
+X'ye noktası aldık. Bu, Rt'ta'ya karşılık gelsin. Rt'ta'ya karşılık gelsin ne demek? Orjinle, X eksenini aynı gördük. Başlangıç ekseniyle, ekseni demiştik. Onu X ekseniyle özdeşledik. X ekseni olarak başlangıç eksenini aldık. Bu X ekseni aldık.
+
+153
+00:36:45,492 --> 00:37:05,231
+Kutupla da bildiğimiz orjini eşledik. Zaten orjin diyorduk, kartezyen koordinatlarda. Şimdi biraz önce kutup dediğimizde orjin diyorduk. Onun ikisini aynı aldık. O zaman bizim x'ye noktası aslında şurası teta artçısı ise ne olur? x'ye noktası. P, r, teta ikilisine karşılık gelir x'ye noktası.
+
+154
+00:37:12,052 --> 00:37:20,292
+Tamam. Peki ben size desem ki, kosünüs teta nedir desem? Herkes söyler, hocam komşu bölü hipoteniz, şurası x, şurası r, mutlak r birimdi.
+
+155
+00:37:20,512 --> 00:37:33,851
+R'yi pozitif aldığımız için r diye yazalım. Kosünüs teta x bölü r. Siz teta'yı yazsam dersiniz ki, şurası y olduğuna göre dersiniz, y bölü r dersiniz.
+
+156
+00:37:33,851 --> 00:37:36,672
+Peki ben size desem ki, kos kare artı sin kare nedir?
+
+157
+00:37:38,739 --> 00:37:45,739
+dersiniz ki 1, cos kare x bölü, x kare bölü re kare, artı x kare bölü y kare eşittir 1.
+
+158
+00:37:46,019 --> 00:37:49,199
+O halde x kare artı y kare eşittir re kare.
+
+159
+00:37:49,199 --> 00:38:02,960
+Hatta bir bilgi daha söylersiniz. Bunu buna bölseniz, şunu, evet, sintetayı,
+
+160
+00:38:04,371 --> 00:38:27,371
+cos theta'ya bölerseniz ne olur? Tanjant theta olur elbette. Ama o da ne olur? y bölü r bölü x bölü r'den y bölü x olur. Demek ki bu bilgi lazım. Bir. Bir de ne bilgisi var elimizde? x kare artı y kare eşittir. v kare bilgisi var. Evet. Bunları kullanarak, yani şurada dediğimiz işte şu üç bilgi.
+
+161
+00:38:28,052 --> 00:38:34,392
+Bizim Kartezyen ile kutupsal arasındaki ilişkimizi ifade etmiş oluyor bu üç bilgi.
+
+162
+00:38:40,788 --> 00:38:46,887
+Şimdi, mesela x kare eşit, y kare eşit, a kare çemberinin kutupsal denklemini yazalım.
+
+163
+00:38:46,967 --> 00:38:47,407
+Yazalım.
+
+164
+00:38:49,248 --> 00:38:51,708
+Ne biliyorduk? x eşit, r kosinisteta.
+
+165
+00:38:52,367 --> 00:38:55,467
+y eşit, r, x kare artı, y kare eşittir.
+
+166
+00:38:56,108 --> 00:38:56,627
+Ne yazacağım?
+
+167
+00:38:57,448 --> 00:38:59,728
+a kare, kutupsal denklemini yazmak istiyordum.
+
+168
+00:38:59,847 --> 00:39:03,407
+Peki, x kare neydi? Benim x'im, r kosinistetaydı.
+
+169
+00:39:03,927 --> 00:39:04,688
+Bunları bileceğiz.
+
+170
+00:39:05,028 --> 00:39:05,668
+y m neydi?
+
+171
+00:39:06,168 --> 00:39:07,108
+r sintetaydı.
+
+172
+00:39:07,503 --> 00:39:23,543
+Yaz yerine, re kare kos kare teta, artı re kare sin kare teta, eşittir nedir? A kare, bu re kare parantezinde kos kare teta artı sin kare teta, eşittir A kare olduğuna göre, burada ne çıkar?
+
+173
+00:39:24,163 --> 00:39:28,703
+Re kare eşit A kare, veya re eşittir ne olur? Mutlak A olmuş olur.
+
+174
+00:39:30,931 --> 00:39:42,952
+Merkezi orijinde yarı çapı a olan çember aslında re eşit mutlaka bu ne demek? Re eşit a veya re eşit eksi a ile şu nedir? A mıdır?
+
+175
+00:39:44,591 --> 00:39:57,652
+Evet, re eşit a ile re eşit eksi a demek aslında merkezi orijinde olan, merkezi orijinde m diyelim, merkezi orijinde yarı çapı re olan
+
+176
+00:39:58,132 --> 00:40:16,072
+Çemberi kast ediyoruz, değil mi? Merkezi orijinde, yarı çarpı, R olan. 0R mi deriz? 0A olan. Evet. Merkezi 0, 0 pardon. Şöyle demek daha, böyle demek lazım. Merkezi 0, 0.
+
+177
+00:40:16,563 --> 00:40:26,163
+Yarı çapı da nedir? A olan çember. A olan çember ne demek? R eşit A ya da R eşit A, eksi A veya R eşit mutlaka aynı şey.
+
+178
+00:40:26,804 --> 00:40:30,663
+İşte şurada zaten yapılmış hali var. Oraya da bakabilirsiniz.
+
+179
+00:40:32,304 --> 00:40:39,083
+Şimdi mesela x kare artı y eksi 3'ün karesi diyor ki x kare artı y eksi 3'ün karesi eşit 9.
+
+180
+00:40:39,724 --> 00:40:42,423
+Bunun kutupsal karşılığı nedir diyor.
+
+181
+00:40:43,380 --> 00:40:55,860
+Kutupsal nedir bu? Nedir? X yerine biz her zaman R cos theta yazıyoruz. R yerine R sin theta yazıyoruz. Yazalım. R kare cos kare theta artı.
+
+182
+00:40:56,020 --> 00:41:01,000
+Hocam şunu bir açsaydık değil mi? Belki öyle diyeceksiniz. Hemen çünkü daha rahat olmayacak mıydı? Evet.
+
+183
+00:41:01,619 --> 00:41:07,360
+Şunu silelim. Şöyle yapalım. Açarsak daha rahat edeceğiz. Çünkü X kare artı Y kareyi biliyoruz.
+
+184
+00:41:10,739 --> 00:41:16,799
+y'de r sinteta ise, o zaman biliyorsunuz ki x kare artı y kare eşit neydi? r kare.
+
+185
+00:41:16,879 --> 00:41:25,279
+Bunda kullanma şansımız var şurada. Şunu açarsak, x kare artı y kare, eksi 6y artı 9 eşittir 9.
+
+186
+00:41:25,279 --> 00:41:35,500
+Değil mi? Buradan, şurası, diyeceksiniz ki bu r kare değil mi? Evet, bu r kare.
+
+187
+00:41:35,920 --> 00:42:00,000
+Şu dokuzlar da gitti, eşit 6y var. y yerine şu değerini yazalım, şunu yazalım. O zaman 6r sinteta. Evet, re kare eşit 6r sinteta. Yani re parantezini alıp işte re eksi 6 sinteta eşittir sıfır deyip re sıfır veya re eşit 6 sinteta.
+
+188
+00:42:00,532 --> 00:42:25,391
+şeklinde de söyleyebiliriz burada. Değil mi? R eşit 6 sinteta şeklinde söyleyebiliriz. Ama bu, tabii R eşit 0'ı almayız. Çünkü bu işte böyle bir çember, nasıl bir çember bu? Merkezi 0'a 3, yarı çapı 3 olan bir çember olduğuna göre, R eşit 0 neydi? Bir nokta 7. Onun için sadece şunu alırız. Değil mi?
+
+189
+00:42:26,643 --> 00:42:37,863
+R eşit sıfır bir noktaydı. Sadece R eşit sıfır değerini değil de sadece R eşit altı sintetayı alırız. Çünkü R eşit sıfır sadece bir nokta, oysa elimizde bir çember var.
+
+190
+00:42:39,183 --> 00:42:48,583
+Evet, bu geçişler önemli. Yani bir kartezyen denklem verildiğinde onun kutupsal koordinatlardaki karşılığı nedir bulabilmek önemli.
+
+191
+00:42:49,556 --> 00:42:58,536
+Bazı sorular da bize kolaylık sağlıyor, geçişi güzel ifade edebilmek.
+
+192
+00:42:59,296 --> 00:43:03,395
+Evet, şimdi bir başka, burada tersi var bakın, diğer örnekle.
+
+193
+00:43:04,395 --> 00:43:09,855
+Diğer örnekle tersi, tersi, şuradaki üçüncü örnekle diyor ki, bunun kartezyen karşılığını yazın.
+
+194
+00:43:09,855 --> 00:43:11,735
+O zaman tersini eşit edeceğiz.
+
+195
+00:43:16,628 --> 00:43:18,708
+Pardon. Şimdi,
+
+196
+00:43:19,628 --> 00:43:23,968
+R eşit diyor ki, A kare,
+
+197
+00:43:25,048 --> 00:43:25,387
+cos,
+
+198
+00:43:26,387 --> 00:43:29,088
+A kare, cos 2 teta.
+
+199
+00:43:29,448 --> 00:43:30,788
+Bu nedir diyor bizim
+
+200
+00:43:30,788 --> 00:43:33,748
+kartezyen'de.
+
+201
+00:43:34,168 --> 00:43:38,948
+Bu komplike bir örnek. Şu alttaki daha iyi olmuş.
+
+202
+00:43:39,488 --> 00:43:40,168
+Bakalım şimdi.
+
+203
+00:43:41,008 --> 00:43:41,628
+R kare,
+
+204
+00:43:43,871 --> 00:44:04,851
+R kare eşittir, A kare çarpı. Şimdi kos kare, R karemizi biliyoruz biz aslında. R kare eşittir, X kare artı Y kare. Bu tamam. Eşittir. Şurada A kare var ama kos kare lazım bize. Şurada A kareyi yazdım. Kos kareydi, kos kare, pardon kos 2 teta lazım. Kos 2 teta neydi?
+
+205
+00:44:05,364 --> 00:44:17,443
+Kos kare teta, eksisin kare teta idi. Getir yerine yaz. Evet, bunun yerine kos kare teta, eksisin kare teta yazarsak.
+
+206
+00:44:20,144 --> 00:44:23,583
+Bu da, x kare artı y kare.
+
+207
+00:44:24,436 --> 00:44:41,695
+yazdık buraya. Ak kare, şu kos kare eksi sin kareyi nasıl yazacağım? Şimdi x eşit r kosünüs teta olduğuna göre, kosünüs teta x bölü r olur. O zaman x kare bölü y kare. Ne oldu?
+
+208
+00:44:44,436 --> 00:44:50,976
+Eşittir akare çarpı x kare bölü r kare olur. Değil mi? Öbürü de aynı şekilde.
+
+209
+00:44:51,603 --> 00:45:14,983
+y eşit re sinis teta olduğuna göre, değil mi? Sin teta y bölü re idi. O zaman bu da y kare bölü re kare olur. Şurada da x kare artı y kare vardı. Re kare yerine x kare artı y kare yazdık. O zaman denklemimiz de şurada.
+
+210
+00:45:20,532 --> 00:45:24,931
+Ne oldu? Re karenin karesi gelmiş oldu.
+
+211
+00:45:25,072 --> 00:45:29,212
+X kare artı y kare. Şu re kare yerine de değerini yazarsak şöyle oldu.
+
+212
+00:45:29,311 --> 00:45:34,332
+X kare artı y kare eşit. A kare, x kare eksi y kare bölü.
+
+213
+00:45:35,132 --> 00:45:37,891
+Re kare geldi. O da x kare artı y kare.
+
+214
+00:45:38,972 --> 00:45:39,851
+Dolayısıyla ne oldu?
+
+215
+00:45:40,692 --> 00:45:47,271
+X kare artı y karenin karesi eşittir. Şu da x kare artı y kare. Dolayısıyla eşittir.
+
+216
+00:45:47,891 --> 00:45:51,771
+a kare parantezine x kare eksi y kare oldu.
+
+217
+00:45:52,971 --> 00:45:54,692
+x kare eksi y kare oldu.
+
+218
+00:45:55,631 --> 00:45:58,811
+Evet, bir daha, tekrar bir daha özetliyorum.
+
+219
+00:46:00,851 --> 00:46:09,831
+Yani şuradaki gibi, re kare, şu sağ taraf bir kare, sağ taraf yerine, kos kare theta yerine x kare bölü re kare.
+
+220
+00:46:10,291 --> 00:46:15,891
+sin kare yine y kare bölü re kare yazdık. a kare bölü re kare, x kare eksi y kare oldu.
+
+221
+00:46:16,631 --> 00:46:25,131
+Ama sol tarafta, şu re kare neye eşitti zaten? re kare, x kare artı y kare eşitti.
+
+222
+00:46:25,851 --> 00:46:32,231
+Evet, x kare artı y kare eşittir. a kare bölü re kare, x kare eksi y kare oldu.
+
+223
+00:46:32,724 --> 00:46:51,123
+Şu yine x kare artı, şu yine x kare artı y kare. Dolayısıyla x kare artı y karenin karesi eşittir. A kare çarpı x kare eksiye y kare oldu. Bu bizim tabii çok bildiğimiz bir renklem değil. Yani tanıdığımız bir eğri yok burada.
+
+224
+00:46:53,403 --> 00:46:56,704
+Aşağıdaki de öyle bir eğri var. Doğru çıkıyor daha doğrusu.
+
+225
+00:46:57,844 --> 00:47:12,944
+R eşit ne var? 4 bölü 2 kos eksi sim varmış. Burada R eşit hemen R eşit 4 bölü 2 kos teta eksi sim teta var.
+
+226
+00:47:12,944 --> 00:47:24,344
+Evet, burada çarparsak 2 R kos teta, ister dışlar çarpım yapıp eksi.
+
+227
+00:47:24,800 --> 00:47:51,019
+R sin teta eşit 4 olur. Buradan tanıdık bir şeyler var. Bakın şu x. Dolayısıyla 2x geldi. Şu y eşit 4 olur. Demek ki bu bir doğru. 2x eksi y eşit 4 doğrusu veya y eşittir. 2x eksi 4 doğrusu şeklinde bildiğimiz doğru. Biraz kesirli bir ifade var ama aslında şöyle basit bir doğru bu.
+
+228
+00:47:51,795 --> 00:47:53,375
+Böyle basit bir doğal.
+
+229
+00:47:59,764 --> 00:48:23,904
+Burada yine birkaç tane örnek var bunlarla ilgili. Kolayca söylenebilir. R kos teta eşit 2. R kos teta eşittir 2. X eşit 2 doğrusudur. Niye? Kolay bunları yaparsınız zaten. R kos teta eşit 2. Bu x'i zaten. X eşit 2 doğrusudur.
+
+230
+00:48:24,851 --> 00:48:46,092
+R kare cos theta sin theta eşit 4. O ne demek? R kare cos theta sin theta eşit 4. Şu R çarpı cos theta, bir de R var yine, R, R, R, R, sin theta eşit 4. Şu X, değil mi?
+
+231
+00:48:53,172 --> 00:48:59,831
+x'ye eşit 4 oldu, değil mi? Evet, x'ye eşit 4. Re kareyi r, r diye de attık yani.
+
+232
+00:49:01,251 --> 00:49:09,831
+Re kosa x dedik, diğer re kusine de y dedik, x'ye eşit 4. Yani y'ye eşit 4 böyle x hipervol. Böyle bir hipervol olmuş oldu.
+
+233
+00:49:13,523 --> 00:49:32,943
+Evet. Diğeri, şu x'in karesi bakın, görüyorsunuz. Şu da y'nin karesi. x kare eksi, y kare eşit bir olmuş oldu. Değil mi? Şu, nasıl öyle çıktı? R eşittir, 1 artı 2 R. Kosteta.
+
+234
+00:49:37,943 --> 00:49:40,144
+Şimdi, şu,
+
+235
+00:49:41,204 --> 00:49:54,623
+x kare artı y kare eşittir e kare, re eşittir, kök x kare artı y kare, burası böyle olur, x kare artı y karenin kökü olur sol taraf.
+
+236
+00:49:55,384 --> 00:50:00,603
+Sağ tarafta 1 artı 2, şu neydi? x, 1 artı 2x olur.
+
+237
+00:50:05,268 --> 00:50:29,748
+karesi olmuş. Onu düzenlersek galiba böyle bir şey çıkıyor. Şurası. Öyle gelmesi lazım. Değil mi? Düzenlersek x kare artı y kare eşittir. 1 artı 4x kare artı 4x. Sonra şunları bu tarafa atarsak, eksi 3x kare olur. Değil mi? y kare eksi 3x kare. Şunu böyle attık.
+
+238
+00:50:30,675 --> 00:50:44,996
+Bir de eksi 4x geliyor, bir de eksi 1 geliyor, eşittir 0. Ama tanıdık bir renklem mi? Değil. Çok işimize yaramaz bunu çizmeyi bilmedikten sonra. Sadece şu soruya cevap vermiş oluruz. Kartezyen'de böyle bir denkleme karşılık gelir.
+
+239
+00:50:46,855 --> 00:50:58,016
+Gibi. Evet. Mesela diğeri bir tane daha var. Bir tanesini daha yapalım. Gerisi aynı şekilde. Siz de bulabilirsiniz. R eşit 1-kos teta neymiş? R eşit 1-kos teta.
+
+240
+00:50:59,219 --> 00:51:04,139
+Bu da biraz komplike bir şey var. Bakın yine orada. Nasıl yapacağız bunu?
+
+241
+00:51:13,876 --> 00:51:33,655
+R, yine az önce R'yi şöyle bulmuştuk, x kare artı y kareydi. Cosinus teta da x bölü, yani R eşit cos teta olduğuna göre, cos, şey, pardon, x eşit R cos teta olduğuna göre, cos teta x bölü R, bunları yazarak ancak düzenlenebilir.
+
+242
+00:51:34,596 --> 00:51:39,655
+Eşittir, 1 eksi x bölü R olur burası.
+
+243
+00:51:41,108 --> 00:51:43,748
+şey, pardon, ne oldu?
+
+244
+00:51:45,288 --> 00:51:48,568
+x bölü r, yani x bölü,
+
+245
+00:51:48,648 --> 00:51:50,008
+şunun yerine de,
+
+246
+00:51:50,807 --> 00:51:53,768
+bir dakika, şunun yerine de, r yerine de tekrar ne yazarak,
+
+247
+00:51:54,588 --> 00:51:54,788
+şey,
+
+248
+00:51:56,108 --> 00:52:00,588
+yani şöyle yapsaydık daha açık olacaktım,
+
+249
+00:52:00,728 --> 00:52:01,648
+vazgeçtim bundan.
+
+250
+00:52:02,588 --> 00:52:04,568
+Şurayı, şurayı sileceğim, bir dakika.
+
+251
+00:52:05,648 --> 00:52:08,288
+r eşit bir, şöyle bir şey yapalım.
+
+252
+00:52:08,724 --> 00:52:32,804
+Bir dakika, şöyle, re ile çarpalım iki tarafı. Re kare eşittir, re bir eksi, cos theta olur. Bu x kare artı y kare eşit. Bu re eksi re cos theta gelir. Bu x kare artı y kare eşittir, re eksi şu x olur. Şunun yerine de x kare artı y kare yazarız.
+
+253
+00:52:33,844 --> 00:53:01,244
+Eşit, eksi, x oldu. Şimdi düzenlendi. Eşittir, x karar, t y karar. Bu böyledir ama daha da uzak. Yani şöyledir denklem ama açıp açarsak şöyle olur sanırım. Şu aşağıda verilen denklem olur. Yani eksi, x'i sol tarafa atıp kare almak gerekiyor. Böyle bir denklem olur. Evet, çok da kolay değil ama bunu kutupsalda çizmek çok zor olmuyor. Göreceğiz bunu. Bunun çizimini göreceğiz. Bunlara kardiyoyit diyoruz.
+
+254
+00:53:01,684 --> 00:53:09,224
+Bunun kutup çizimi çok zor değil, şunun çizimi hemen görünmüyor. Bakın, kopike bir şey çıktı. Evet.
+
+255
+00:53:11,064 --> 00:53:18,164
+Hadi. Ha, şu güzel mesela. R eşittir. 2A cos theta.
+
+256
+00:53:18,724 --> 00:53:25,764
+Cos theta. Bu böyle bir çember çıkmış. Bakın, şöyle bir çembermiş bu. Böyle olduğunu görebiliriz.
+
+257
+00:53:27,827 --> 00:53:33,847
+Ne yapalım? R ile çarpalım iki tarafı. R kare eşittir, 2 a, r kostet olur.
+
+258
+00:53:35,507 --> 00:53:42,307
+Diyeceksiniz ki şu hocam, x kare artı y kareydi, güzel. 2 a, şu da x'ti. 2 a, x oldu.
+
+259
+00:53:42,467 --> 00:53:47,168
+E peki bunu böyle yazalım. x kare eksi 2 a, x artı y kare eşittir, sıfır diyelim.
+
+260
+00:53:48,268 --> 00:53:54,188
+Hocam, şuraya diyeceksiniz, tam kare yaparız bunu diyeceksiniz. x kare eksi 2 a, x.
+
+261
+00:53:54,963 --> 00:53:58,744
+Artı, a kare, ümmü desek.
+
+262
+00:53:59,963 --> 00:54:07,864
+Eşşinin, eksi 2a'nın yarısını düşünürsek, a kare ekleyelim, a kare çıkartalım, artı y kare, eşittir sıfır.
+
+263
+00:54:07,983 --> 00:54:13,963
+O zaman burası, x eksi a'nın karesi, artı y kare diyelim, a kareyi de sağ atalım, bitti.
+
+264
+00:54:14,503 --> 00:54:18,624
+Ne oldu? İşte merkezi a'ya sıfır, yarı çapı, a olan çember.
+
+265
+00:54:18,624 --> 00:54:21,624
+Aslında böyle bir şey, bu denklemi görünce artık aslında bu bir...
+
+266
+00:54:22,036 --> 00:54:24,416
+çemberdir şeklinde söyleyebiliriz.
+
+267
+00:54:26,176 --> 00:54:29,356
+Evet, bu şekilde. Yani kutupsaldan,
+
+268
+00:54:30,176 --> 00:54:34,696
+kart izine geçerken, bir daha söylüyorum, x eşittir r cosinus teta,
+
+269
+00:54:35,936 --> 00:54:38,416
+y eşittir r sinus teta, ve
+
+270
+00:54:38,416 --> 00:54:43,396
+y bölü x eşittir tanja teta
+
+271
+00:54:43,396 --> 00:54:45,836
+denklemlerini kullanıyoruz.
+
+272
+00:54:45,836 --> 00:54:47,436
+Veya bazen
+
+273
+00:54:47,891 --> 00:54:52,311
+X kare artı Y karenin de tabii R kare olduğu işimize yarıyor.
+
+274
+00:54:54,771 --> 00:54:56,331
+Evet, bu şekilde.
+
+275
+00:55:01,108 --> 00:55:07,788
+Başka orada yine örnekler var. Bu alttaki de aynı şekilde onlar yapılabilir. Bakarsınız onlara da.
+
+276
+00:55:10,988 --> 00:55:16,728
+Evet, şimdi simetri. Bu simetriyi vermemizin nedeni kutupsal grafik çiziminde işimize yarıyor.
+
+277
+00:55:25,556 --> 00:55:31,715
+Gidebilir ama şimdi neyse ben bunun üzerinden devam edeyim. Daha kısa da söyleyeceğim.
+
+278
+00:55:32,796 --> 00:55:49,496
+Şimdi eğer e, re eşit f theta fonksiyonunda theta eşit eksi theta yazılırsa, kutup eksenine göre, yani bir anlamda biz onu kutup ekseniyle x eksenini özdeşleştirince, yani x eksenine göre simetri olmuş oluyor.
+
+279
+00:55:49,496 --> 00:55:52,615
+Neymiş? Ne olursa?
+
+280
+00:55:53,012 --> 00:56:01,972
+f-teta f-teta y ise o zaman x-exte'ne göre simetri var diye söylüyoruz biz bunu.
+
+281
+00:56:01,972 --> 00:56:10,792
+Eğer f-teta f-exte eşittir, f-teta ise eğri x-exte'ne göre simetrik.
+
+282
+00:56:14,643 --> 00:56:36,443
+Yöre simetrik. Mesela, R eşittir, kosünüs teta böyle bir eğridir. Çünkü R eşit, F teta eşittir, kosünüs teta verilmiş. Siz eksi teta yazarsanız, yine kosünüs eksi teta, o da kosünüs teta eşit. Bu x eksene göre simetrik bir eğri oluyor.
+
+283
+00:56:40,128 --> 00:56:48,108
+x eksenine göre simetrik bir eğri olur. Hatta nasıl bir eğridir bu? Şuradan hemen re ile çarpalım. Re kare eşittir re kosmis teta.
+
+284
+00:56:49,048 --> 00:57:00,628
+Tamam. Bu x kare artı y kare idi. Bu da x idi. x. Tamam. O zaman x kare eksi x artı y kare eşittir sıfır olur.
+
+285
+00:57:01,628 --> 00:57:04,807
+Şunu da x kare eksi x artı bir bölü dört.
+
+286
+00:57:05,748 --> 00:57:13,607
+x'in kat sayısı 1, eksi 1 olduğu için yarısını alıyorum. 1 bölü 2, 1 bölü 4 ekliyorum, 1 bölü 4 çıkarıyorum. Artı y kare eşittir 0.
+
+287
+00:57:15,007 --> 00:57:29,927
+Eşittir, eşittir 0. Şöyle oldu. x eksi 1 bölü 2'nin karesi, artı y kare eşittir. 1 bölü 2'nin karesi.
+
+288
+00:57:30,260 --> 00:57:56,920
+Oldu, böyle bir denklem. O da şöyle olmaz mı? 1 bölü 2'ye sıfır noktasında, yarı çapı 1 bölü 2, şurası 1 bölü 2, yarı çapı da 1 bölü 2 olan çember, şöyle bir çember. R eşit, kostiyata bu. Bakın kime göre simetrik? X eksenine göre simetrik. Bakın şu. Bunun simetriği aşağısı. Bu kadar. Evet, bir daha söylüyorum.
+
+289
+00:57:57,460 --> 00:58:04,780
+Eğer f eksi teta eşit f teta ise, eğer x eksenine göre simetriktir. Örnek, r eşit cos teta ayrısını düşündük.
+
+290
+00:58:06,900 --> 00:58:11,120
+f eksi teta da cos teta olur. Onun için x'e göre simetri var.
+
+291
+00:58:13,280 --> 00:58:13,840
+Simetri.
+
+292
+00:58:15,260 --> 00:58:16,640
+x eksenine göre simetri.
+
+293
+00:58:17,140 --> 00:58:20,619
+Bunu, hocam niye böyledir? Bunun çizmesi...
+
+294
+00:58:21,076 --> 00:58:29,655
+Çizme, bunları zaten ezbere bilmemiz gereken çizimlerden bazısı olacak ama şurada bir açıkça yazalım dedik.
+
+295
+00:58:31,036 --> 00:58:40,496
+R eşit kosteta, R ile çarptık, R kare eşit R kosteta, R kare X kare artı Y karedir, R kosteta X'tir. Bunu düzenledik, şöyle bir çember çıktı.
+
+296
+00:58:41,536 --> 00:58:46,895
+Bu çemberde merkezi 1 bölü 2, yarı çapı 0 olan çember, yani şurası, şurası 1 bölü 2 verim.
+
+297
+00:58:47,668 --> 00:59:13,888
+Burası 1 bölü 2. Tabii şurası 1'e vuruyor, dikkat edin. Evet. İşte simetriyi görün. İşte simetri şu. Şu üst kısmın x'e göre simetrini alırsak şu 6 elde ediyoruz. Onu kastediyoruz yani. x'e göre simetri bu. Bu x'e göre simetride f eksi teta eşit f teta mantığını kullanıyoruz. f eksi teta eşit f teta ise x'e göre simetri var diyoruz. Tamam mı? Bu şekilde.
+
+298
+00:59:15,603 --> 00:59:21,344
+P-Teta için, şimdi orada vardır sanırım.
+
+299
+00:59:23,344 --> 00:59:24,083
+Bir dakika.
+
+300
+00:59:27,083 --> 00:59:31,284
+Evet, şimdi bunu geçiyorum ben.
+
+301
+00:59:31,563 --> 00:59:32,923
+F-Teta eşit ekstra.
+
+302
+00:59:33,063 --> 00:59:34,743
+Şu B'si çok lazım değil.
+
+303
+00:59:35,743 --> 00:59:39,364
+Orada da X-Teta ise Teta eşit P bölü 2'ye göre.
+
+304
+00:59:39,583 --> 00:59:42,083
+Bunu B'sini düşünmeseniz de olur.
+
+305
+00:59:43,380 --> 00:59:51,540
+Şu ikincisi, şu a lazım. Yani kafanız fazla karışacak bu sefer. Şu a lazım. b'yi düşünmezseniz de olur şimdilik.
+
+306
+00:59:52,740 --> 00:59:59,560
+x'e göre simetriyi verdim mi ben size? Verdim. Bu şu an gerekli değil. Başka şeyler, detaya girmeye gerek yok.
+
+307
+01:00:00,240 --> 01:00:09,260
+İkincisi, p-x-teta'yı bilmeniz lazım. p-x-teta için yine f-teta'yı buluyorsak, evet f p-x-teta.
+
+308
+01:00:09,972 --> 01:00:15,892
+eşittir. F teta ise, teta eşit pi bölü 2'ye göre simetri, yani y eksenine göre simetri.
+
+309
+01:00:20,820 --> 01:00:33,460
+var. Hocam, örnek verir misiniz? Verelim. R eşit sin theta'yı düşünün. Bu, y'ye göre simektiktir. Niye? Çünkü, bu f theta tabii.
+
+310
+01:00:35,460 --> 01:00:43,040
+Çünkü f p x theta yazalım. f p x theta sin p x theta olur.
+
+311
+01:00:44,371 --> 01:01:05,211
+Bu sin teta demektir biliyorsunuz. Sin px teta, trigonometreden bilirsiniz, sin teta eşit. Yani bu, re'yi bulduk. Evet. Ya da f teta'yı bulduk. Evet. F teta'yı bulduk. Evet. fpx teta, f teta eşit oldu. O zaman bunu görünce diyeceksiniz ki, y'ye göre simetri var.
+
+312
+01:01:08,211 --> 01:01:09,391
+Göre simetri.
+
+313
+01:01:09,972 --> 01:01:17,012
+Bir de bir üçüncü simetri daha var. O da pi artı teta için aynı sonucu buluyorsanız, o da orijine göre simetri. O kadar. Üç simetri yetiyor bize.
+
+314
+01:01:18,112 --> 01:01:30,972
+Evet, demek ki bizim şu kime göre simetrikmiş? Y ekserine göre, re eşitsin üst. Niye re eşitsin üst? Ne demek? Biraz önce yaptığımız üzere, re ile çarp, re kare eşittir, re simetri.
+
+315
+01:01:30,972 --> 01:01:35,632
+Tamam, bu x kare artı y kare. Bu y oldu.
+
+316
+01:01:36,148 --> 01:01:41,307
+Şimdi az önce yaptığımız gibi, x kare artı y kare, eksi y eşittir sıfır, değil mi?
+
+317
+01:01:42,168 --> 01:01:48,327
+x kare artı y kare, eksi y artı bir bölü dört, eksi bir bölü dört eşittir sıfır.
+
+318
+01:01:49,127 --> 01:01:51,487
+Bu ne demektir? Bunu şu tarafa doğru yazıyorum.
+
+319
+01:01:52,107 --> 01:01:53,168
+O da şu demek değil midir?
+
+320
+01:02:02,771 --> 01:02:27,432
+X değil, Y eksi, değil mi? Y eksi 1 bölü 2'nin karesi eşittir, 1 bölü 2'nin karesi. Bu denklem değil mi? Yok olmadı. Bir de ne var? X kare artı. X kare artı, şurası Y eksi 1 bölü 2'nin karesi. Y kare eksi Y artı 1 bölü 4 eşit 1 bölü 4 olur. Bu da nedir? Şöyle bir çember değil midir? Hangi eksen üzerinde?
+
+321
+01:02:28,307 --> 01:02:35,388
+0'a 1 bölü 2, şurada 1 bölü 2, şurası 1 olacak tabii, böyle bir çember.
+
+322
+01:02:37,847 --> 01:02:48,568
+Değil mi? Bu re eşit neydi? Sin teta. Re eşit sin teta bu. Bakın neye göre simetri var? Şunun simetriği bu.
+
+323
+01:02:49,628 --> 01:02:55,468
+Veya karşıt olarak bunun simetriği bu. Hangi eksene? Teta eşit fi bölü 2 ışınına göre.
+
+324
+01:02:55,936 --> 01:02:59,976
+Veya diğer adı neydi onun? Y eksenine göre ne vardır? Simetri var.
+
+325
+01:03:00,736 --> 01:03:11,776
+Evet, ikinci tip simetri de demek ki Px theta için aynı sonucu buluyorsak, o zaman y eksenine veya theta eşit P bölü 2 ışığına göre ne var diyoruz?
+
+326
+01:03:12,376 --> 01:03:19,135
+Simetri var diyoruz. İkinci tip. Bu notta var zaten. Bunlar notta var da biraz daha sadeleştirilmiş olalım.
+
+327
+01:03:19,135 --> 01:03:20,635
+Bir de üçüncü tip simetri.
+
+328
+01:03:23,764 --> 01:03:36,543
+Evet, şunu da şu kafanızı fazla karıştırmasın. Şu lazım bize. Üçüncü simetri. Şu B'si lazım değil, çok önemli değil. B'si.
+
+329
+01:03:39,003 --> 01:03:50,724
+Şu üçüncü simetriyi söyleyelim. Pi artı teta için f teta oluyorsa orijine göre simetri. Bu da üçüncü simetri. R eşit.
+
+330
+01:03:51,956 --> 01:04:11,436
+F pi artı teta eşittir. F teta ise, bu da orijine eğri ise, eğri orijine göre simetriktir.
+
+331
+01:04:15,507 --> 01:04:23,788
+Evet, eğer eğri orjine göre simetrik. Bu da üçüncü tip. Bu üç simetriyi bileceğiz. Çizerken, grafik çizerken işimize yarıyor.
+
+332
+01:04:28,788 --> 01:04:29,307
+Peki.
+
+333
+01:04:38,291 --> 01:04:56,452
+Evet, bir de zaman zaman gerekiyor. Çok ihtiyacımız olmamasına rağmen. Çünkü çoğu eğri zaten kalıp olarak... Şurada bir eğim meselesi var. Kutupsal koordinatlar için eğimin hesabını şöyle yapıyoruz.
+
+334
+01:05:05,952 --> 01:05:13,412
+Veya, R eşit F theta olduğumuz için eğrimiz, R yerine F theta yazdık, F theta, cos theta.
+
+335
+01:05:14,512 --> 01:05:17,412
+R'imiz F theta olduğu için, Y F theta, sin theta.
+
+336
+01:05:17,652 --> 01:05:21,092
+Buradan eğim için biliyorsunuz, eğim demek neydi?
+
+337
+01:05:23,251 --> 01:05:25,452
+Türevini hesaplamamız gerekiyordu.
+
+338
+01:05:26,211 --> 01:05:30,492
+Evet, bir noktadaki eğim, o noktadaki türev demekti, değil mi?
+
+339
+01:05:31,251 --> 01:05:39,452
+Şimdi, onun için de türev gerekiyor. dy bölü dx'i hesaplamak için parametrik türevi kullanıyoruz. dy bölü dta, dx bölü dt.
+
+340
+01:05:40,371 --> 01:05:46,412
+y'nin teta'ya göre türevi, f teta'nın türevi çarpı sin teta, işte bakın, f üst teta çarpı sin üst teta.
+
+341
+01:05:46,412 --> 01:05:51,811
+sin teta'nın türevi kosünüs, kosünüs teta çarpı f teta.
+
+342
+01:05:53,032 --> 01:05:54,291
+Aynı şekilde.
+
+343
+01:05:54,815 --> 01:06:13,775
+f üstü teta çarpı paydanın türevi, yani y'nin türevi, f teta'nın türevi, f üstü teta çarpı, bir dakika, f üstü teta çarpı, pardon özür dilerim, y'ninkini aldık, x'inkini alıyoruz.
+
+344
+01:06:14,455 --> 01:06:17,915
+f üstü teta çarpı, kosün üstü teta, işte şurası.
+
+345
+01:06:18,675 --> 01:06:43,956
+Kosinus türev eksi, sin teta çarpı f teta. Bu şekilde hesaplanıyor. Burada şöyle bir kolaylık olabiliyor, bu eğim. Eğimi böyle hesaplıyoruz ama eğer teta eşit teta sıfır için eğri orjinden geçiyorsa, yani f teta sıfır sıfır oluyorsa,
+
+346
+01:06:44,884 --> 01:07:09,304
+F teta sıfır, sıfır oluyorsa, o zaman şurası, şu eğim şuna eşit oluyor, d bölü d x, teta eşit teta, yani r sıfır oluyorsa, teta eşit teta sıfır oluyorsa, o zaman şurası ne olur? Şunlar gider, şunlar şu sıfır olur.
+
+347
+01:07:10,356 --> 01:07:30,156
+F theta 0 0, yani şu theta yerine theta 0 yazdık. Theta eşit theta 0 için net dedik. F theta 0 0 ise dedik, yani orijinden geçiyor eğri belli bir açıda, belli bir theta 0 açısı için orijinden geçiyorsa.
+
+348
+01:07:37,460 --> 01:07:45,500
+sin theta, bölü, f üstü, theta 0, cos theta 0 olur.
+
+349
+01:07:46,219 --> 01:07:47,079
+Cos theta 0 olur.
+
+350
+01:07:47,139 --> 01:07:48,960
+Hocam, şunlar gitti diyeceksiniz. Ne oldu?
+
+351
+01:07:49,719 --> 01:07:54,440
+Tanjant, theta 0, hani bizim bildiğimiz eğim, tanjantına eşitti.
+
+352
+01:07:55,559 --> 01:07:57,619
+Pozitif yönün açımı tanjantına eşitti.
+
+353
+01:07:58,179 --> 01:07:58,779
+Eğim ne oldu?
+
+354
+01:08:00,519 --> 01:08:03,199
+Eğim, tanjant theta 0 oldu. Hangi durumda?
+
+355
+01:08:03,987 --> 01:08:21,007
+Eğer teta eşit teta sıfır için eğri orijinden geçiyorsa, yani uzaklık sıfır ise, değil mi? O zaman eğimizi tanjant teta sıfır diye hesaplıyoruz. Bu kalabalık formül yerine şunu, şu karşımıza bazen sorularda bunu uygulamamız gerekecek.
+
+356
+01:08:21,567 --> 01:08:31,327
+Çünkü bazı teta değerlerinde eğri orijinden geçecek. Yani reğimiz sıfır olacak. O zaman da diyeceksiniz ki ben eğimi bulacağım.
+
+357
+01:08:31,743 --> 01:08:42,563
+Orijinden hangi eğimle geliyor, orijinden hangi eğimle çıkıyor, yu bulabilmek için hangi teta sıfır değerinde bizim eğrimiz sıfır oluyor.
+
+358
+01:08:43,283 --> 01:08:46,783
+Yani f tetayı, r eşit f tetayı sıfır eşitleyeceğiz.
+
+359
+01:08:48,884 --> 01:08:54,903
+Oradan bunu sıfır yapan değer olarak bir teta eşit teta sıfır bulacağız.
+
+360
+01:08:57,615 --> 01:09:13,636
+Tanjantını bulmaktan geçecek. O kadar. Bir daha söylüyorum. R eşit F teta'yı sıfır eşitleyeceğiz. Oradan eğri hangi teta açısı için R sıfır oluyor? Yani orijinden geçiyor. Ona bakacağız.
+
+361
+01:09:22,515 --> 01:09:33,475
+Tanjan, theta 0. Theta 0 ne çıkmışsa, tanjan, theta 0 diye. Bu da bize eğimi bulmakta fayda sağlayacak.
+
+362
+01:09:34,915 --> 01:09:44,575
+Evet, bu şekilde. Şimdi çizimden biraz bahsedeceğim ama önce bir ara verelim. Aradan sonra çizime geçelim, tamam mı?
+
+363
+01:09:47,060 --> 01:10:06,460
+Çizimden bahsedelim. 1-2 test sonra çözeriz. Ondan sonra bitiririz zaten. Evet, ara veriyorum. Saat 15 dakika ara iyi midir? Benimki 8 geçiyor, 10 geçiyor. 25 geçe burada olalım. Tamam mı? Evet, 25 geçe buradayız. Tamam mı?
+
+364
+01:10:10,003 --> 01:10:21,164
+Tamamdır diyor [öğrenci]. Sağ olsun hemen cevap verdi. Evet. Diğerleri de sessiz kaldığımıza göre, kaldığımıza göre tamamdır. Evet. 25 geçe. Burada olalım. Artı eksi 1-2 dakika sorun değil.
+
+365
+01:29:42,739 --> 01:29:43,779
+Evet, burada mısınız?
+
+366
+01:29:47,444 --> 01:29:48,004
+Evet hocam.
+
+367
+01:29:48,644 --> 01:29:53,123
+Evet. Şimdi bir eğri çizimi yapalım birlikte.
+
+368
+01:29:55,164 --> 01:29:59,444
+Şimdi bu re eşit a çarpı bir artı kosünüs tetanın çizimi var burada.
+
+369
+01:30:04,164 --> 01:30:10,084
+Şimdi bunun üzerinden yapalım madem ki böyle vermişiz.
+
+370
+01:30:10,084 --> 01:30:11,524
+Re eşit.
+
+371
+01:30:16,051 --> 01:30:34,691
+Bir kere hepsine tek tek bakacağız mı? Kosünüs 2 teta, kosünüs teta olduğu için muhtemelen çift fonksiyon mantığıyla düşüneceğiz. Yani re eksi teta'ya bir bakalım. Nedir? A çarpı bir artı kosünüs eksi teta.
+
+372
+01:30:35,347 --> 01:30:47,927
+Eşittir a çarpı 1 artı, kosünüs teta olur. Dolayısıyla re, eksi teta eşittir re teta. Eğri y eksenine göre nedir? Simetriktir. Eğri, şey, x eksenine göre, ne göre? Simetrik.
+
+373
+01:30:50,087 --> 01:31:01,207
+Buna baktık, bu bitti. İkinci simetri falan, bir tane simetriyi bulduk mu yeter. Burada işte kutup eksenine göre, yani x eksenine göre nedir? Simetriktir.
+
+374
+01:31:01,587 --> 01:31:12,108
+Şunları incelemeye gerek yok. Bir simetriyi buldunuz mu bir tanesi yeterli. Bunlar yok zaten de. Bu birinci aşama. İkinci aşama.
+
+375
+01:31:18,515 --> 01:31:19,995
+Evet, ikinci aşamamız.
+
+376
+01:31:21,975 --> 01:31:23,195
+Pardon, şey oldu.
+
+377
+01:31:24,355 --> 01:31:25,055
+Bek yapalım.
+
+378
+01:31:27,615 --> 01:31:28,015
+Evet.
+
+379
+01:31:32,015 --> 01:31:34,636
+Eğimini bulalım. İkinci aşama.
+
+380
+01:31:36,355 --> 01:31:37,495
+R eşit.
+
+381
+01:31:41,652 --> 01:32:07,872
+R eşit nedir? A, 1 artı, kosün üstü tetaydı, bu ikincisi, bu 1 buydu. R üstü eşittir, bunu açarsak, A artı A kos teta, türevini alırsak, A'nın türevi bu 0, A kos teta'nın türevi, şöyle diyelim, R üstü eşittir, eksi A,
+
+382
+01:32:08,564 --> 01:32:24,184
+Sinteta, eksi a sintet olur, revsü bu. Eksi a revsünde ne olduğunu görüyoruz, negatif olduğunu görüyoruz. Evet, daima revsü negatif, yani re azalan daima, bunu gördük.
+
+383
+01:32:35,699 --> 01:32:40,479
+cos theta eşit 0. Nerede 0 oluyor ona bakalım.
+
+384
+01:32:42,959 --> 01:32:46,420
+1 artı cos theta eşittir 0.
+
+385
+01:32:47,699 --> 01:32:51,100
+A büyük 0 diye tabii bir şekilde belirtilir genelde.
+
+386
+01:32:51,500 --> 01:32:53,359
+Zaten şurada söylenmiş bakın A pozitif.
+
+387
+01:32:53,459 --> 01:32:54,840
+Onun için bu 0'dan farklı.
+
+388
+01:32:55,920 --> 01:32:57,439
+O halde 1 artı cos theta 0.
+
+389
+01:32:57,439 --> 01:32:59,100
+Yani theta eşit.
+
+390
+01:32:59,604 --> 01:33:25,604
+P bölü 2, kosinüs 90, 0. Evet, demek ki P bölü 2 için eğri ne oluyor? Sıfır oluyor. P bölü 2 için sıfıra P bölü 2. Kutuba P bölü 2 açı P bölü 2 olduğu zaman R sıfır oluyor. Yani kutupta...
+
+391
+01:33:26,260 --> 01:33:48,500
+Olmuş oluyor. Orijinden geçiyor eğri. Orijinden geçiyor. Orijine mesafesi sıfır oluyor. Açı pi bölü 2 olduğun zaman. Orijine mesafesi ne oluyor? Sıfır oluyor. Burada eğimi bulmanızı, size demiştim, tanjantını bularak eğimini bulun demiştim. O zaman tanjant pi bölü 2 ne oluyor?
+
+392
+01:33:50,836 --> 01:33:52,755
+Hocam, pi çıkmayacak mıydı?
+
+393
+01:33:54,716 --> 01:33:55,315
+Nasıl?
+
+394
+01:33:55,976 --> 01:33:57,396
+Ha, özür dilerim, pardon.
+
+395
+01:33:58,536 --> 01:34:00,536
+Tamam, bravo, teşekkür ederim uyarın için.
+
+396
+01:34:01,036 --> 01:34:02,275
+Pardon, şurası eksi bir.
+
+397
+01:34:03,155 --> 01:34:04,175
+Şu bir dakika, şunu.
+
+398
+01:34:04,976 --> 01:34:06,115
+Şurayı sileceğim, pardon.
+
+399
+01:34:06,435 --> 01:34:07,896
+Şu kısmı da hata yaptım.
+
+400
+01:34:07,976 --> 01:34:08,976
+Dur, düzeltiyorum şimdi.
+
+401
+01:34:11,796 --> 01:34:12,355
+Şu.
+
+402
+01:34:13,076 --> 01:34:13,815
+Evet, ne olacaktı?
+
+403
+01:34:13,876 --> 01:34:14,916
+Pi çıkacaktı elbette.
+
+404
+01:34:15,636 --> 01:34:38,656
+Şurada ne olur? Kosinüs teta eşittir, eksi bir, teta eşit pi olur. Tamam. Tanjantını bulacağız bunun. Tanjant pi eşittir, sıfır. Demek ki orijinde pi, orijindeki eğimi ne olacak? Sıfır. Evet, orijindeki eğimi sıfır olacak.
+
+405
+01:34:43,572 --> 01:34:52,752
+radyan iken, orjinden geçiyor ama nasıl bir eğimle geçiyor sorusunun cevabı sıfır eğimle geçiyor. Bir daha söylüyorum, bu cümle önemli.
+
+406
+01:34:54,152 --> 01:35:01,731
+Açı pi bölü 2 iken, orjinden geçiyor ama nasıl bir eğimle geçiyor? Sıfır eğimle geçiyor.
+
+407
+01:35:02,412 --> 01:35:06,532
+Tamam mı? Bunu bulmak önemli olabiliyor. Yani çizerken,
+
+408
+01:35:09,203 --> 01:35:16,823
+Klasik test sınavında pek sizin için bir anlam ifade etmeyebilir ama klasik bir sınavda bu bilgi işimize yarayabilir.
+
+409
+01:35:18,583 --> 01:35:26,483
+Demek ki orjinden sıfır eğimle orjinden geçiyor şeklinde söylüyoruz.
+
+410
+01:35:26,863 --> 01:35:29,443
+Evet, sıfır eğimle orjinden geçiyor.
+
+411
+01:35:30,503 --> 01:35:32,064
+Evet, siliyorum.
+
+412
+01:35:32,343 --> 01:35:33,763
+Tabii burada çözümü var zaten.
+
+413
+01:35:33,863 --> 01:35:36,423
+Çözümden yine bir daha çalışırken bakarsınız siz.
+
+414
+01:35:37,011 --> 01:35:42,412
+Geçelim şimdi bu ikinci tarafa bakalım. Çizime geliyoruz.
+
+415
+01:35:42,412 --> 01:35:56,072
+Çizime, bakayım şu önce de daha başka bir şey var mıydı? Yok. Şimdi çizime gelelim. Çizimi de burada var ama ben beraber hani birlikte bir tanesini yapalım ki diğerlerini benzer şekilde siz yaparsınız.
+
+416
+01:35:56,811 --> 01:36:03,692
+Şimdi nasıl yapıyoruz? Bir tanesini böyle birlikte yapalım. Nasıl yapıyoruz? Şöyle bir, bir dakika.
+
+417
+01:36:06,804 --> 01:36:11,324
+Şöyle, yukarıdakini, şunu yap, neyi yapacaktık? R eşittir.
+
+418
+01:36:16,435 --> 01:36:17,495
+Evet, re eşit.
+
+419
+01:36:25,268 --> 01:36:31,388
+R eşit A, 1 artı cos theta. Buradaki zili hali var, cos theta.
+
+420
+01:36:33,108 --> 01:36:44,528
+Şimdi, değerleri vereceğiz. Şimdi burada 3 tane değer vermiş ama, şimdiye kadar bulduklarımızı düşünürseniz, bir kere simetri var.
+
+421
+01:36:44,528 --> 01:36:50,148
+X 80'ine göre simetrikti, onu biliyoruz. Eğim nerede sıfır oluyordu?
+
+422
+01:36:52,819 --> 01:37:19,699
+Theta, Theta sıfırı eşit Pi için sıfıra Pi'ydi. Yani orijinden açı Pi radyan iken orijinden geçiyordu. Burada eğim neydi? Eğim de sıfırdı. Tanjant Pi sıfır. Çünkü eğim de sıfır idi. Bunu biliyoruz. Başka şunlara bakacağız.
+
+423
+01:37:20,212 --> 01:37:44,872
+Şimdi bazı R değerleri vereceğiz. Bu R değerleri de, eğer x eksenine göre simetri varsa, sıfırdan pi'ye alacağız. Burada x eksenine göre, yani kutuba göre simetri varken, sıfırdan pi'ye alacağız. Burada her ne kadar 3 tane verilmişse de, normalde klasik bir sınavda, bunu biraz arttırmak lazım ki, daha net görelim. Mesela sıfır.
+
+424
+01:37:45,652 --> 01:37:59,811
+pi bölü 6 verelim, pi bölü 4 verelim, sonra pi bölü 2 verelim, 2 pi bölü 3 verelim, hatta 5 pi bölü 6 verelim, bir de gelelim pi'ye.
+
+425
+01:38:00,591 --> 01:38:06,731
+Şurada da pi olsun, tamam mı? Nasıl çizdiğimizi beraber göreceğiz şimdi.
+
+426
+01:38:08,652 --> 01:38:10,332
+Sıfırdan pi'ye çizeceğiz.
+
+427
+01:38:11,412 --> 01:38:29,632
+Sonra simetriğini alacağız. Şimdi bir kere sıfır yazarsam, re eşit, a, bir artı kosünüs sıfır olur. Kosünüs sıfır, kosünüs sıfır bir, iki iki a. Demek ki şurası iki a. Tamam mı? Sıfıra iki a.
+
+428
+01:38:39,252 --> 01:38:51,472
+Aslında bu a yerine değer verselik daha da iyi olurdu. Yani a'yı 1 olarak alsaydık baştan, daha rahat bir eğri olurdu. Değerleri görebilirdik. Ama a'nın pozitif olduğunu biliyoruz.
+
+429
+01:38:51,472 --> 01:39:05,212
+R eşittir. a, 1 artı, kosinus 30, köküş bölü 2. Böyle bir değer olacak. 1 artı köküş bölü 2. a çarpı.
+
+430
+01:39:05,908 --> 01:39:16,968
+1 artı kök 3 bölü 2. Hatta, şöyle yapayım ben size. Yani şunu, a'yı 1 olarak düşünün. Bu, 1 gibi düşünelim bir an için.
+
+431
+01:39:17,148 --> 01:39:30,968
+2'ye, burası 1 artı kök 3 bölü 2. Yani ne oluyor? a çarpı 1 artı kök 3, 1.7 yaklaşık. 2'ye bölersek 0.85 gibi mi?
+
+432
+01:39:31,764 --> 01:39:53,724
+Yaklaşık böyle bir de 1 artı 0.85 gibi bir değer oldu. Yani 2A'dan daha düşük. Orijinal olan uzaklık 2A iken ne yaptı? Daha azaldı. Dikkat ettiniz mi? 1.85A olmuş oldu, A pozitif olduğu için. Sonra Pi bölü 4 için A çarpı, şurası 1 artı 1 bölü 2 olacak.
+
+433
+01:39:56,884 --> 01:40:21,543
+45, 1 bölü kök 2'dir. Ya da kök 2 bölü 2'dir. Kök 2 bölü 2'dir. Değil mi? O da A çarpı 1 artı, kök 2 yaklaşık biliyorsunuz, kök 2 1.4. Dolayısıyla 1.4'ün yarısı gelecek. O da 0.1. Bir saniye, bir ara vereceğim.
+
+434
+01:43:39,923 --> 01:44:03,764
+Merhaba, kusura bakmayın. Bir hocamız geldi, acil bir şey vardı. Evet, şimdi şurada kaldık. Nedir? 45 için 1 artı kök 2 bölü 2 dedik. Yaklaşık 0.7 gibi alsak onu da. O zaman ne olur? A çarpı.
+
+435
+01:44:04,112 --> 01:44:07,351
+1 artı 0.7, böyle bir değer olur.
+
+436
+01:44:08,711 --> 01:44:13,612
+Değil mi? 1,7 gibi bir şey olur. 1 artı 0.7 diyelim.
+
+437
+01:44:14,311 --> 01:44:19,912
+Bu şekilde birkaç değer daha yazabiliriz. 90 için ne olur? Şurası 90 için.
+
+438
+01:44:21,231 --> 01:44:23,811
+Kosülüs 90, 0 değil mi?
+
+439
+01:44:24,592 --> 01:44:29,932
+R eşit A, 1 artı 0 A oluyor. 90 için A oluyor.
+
+440
+01:44:31,032 --> 01:44:31,371
+Sonra,
+
+441
+01:44:32,564 --> 01:44:49,524
+2P bölü 3 için, 1A çarpı, 1 artı, 2P bölü 3 için, kosünüs 2P bölü 3, neye eşit? Eksi sin 30'a eşit.
+
+442
+01:44:50,084 --> 01:44:56,884
+Eksi sin 30'a eşit. Eksi sin 30, yani eksi 1 bölü 2 oluyor değil mi? Kosünüs.
+
+443
+01:44:57,555 --> 01:45:11,635
+İkinci bölgede eksi, 120 derecede, eksi 1 bölü 2'ye eşit değil mi? Dolayısıyla, A çarpı, şurası 90 için sıfırdı, bu A çarpı, 1 eksi 1 bölü 2, A bölü 2 oluyor.
+
+444
+01:45:13,475 --> 01:45:14,355
+Öyle mi oldu?
+
+445
+01:45:16,175 --> 01:45:17,755
+Şey, pardon, A bölü 2 olmuyor.
+
+446
+01:45:17,935 --> 01:45:19,795
+A, bir saniye.
+
+447
+01:45:25,268 --> 01:45:40,028
+A çarpı, şurada yazıyorum, A çarpı 1, eksi 1 bölü 2 oldu. Yani A bölü 2 oldu. A bölü 2 oldu. Öyle mi oldu?
+
+448
+01:45:41,507 --> 01:45:51,948
+A bölü 2 için? 2 pi bölü 3 için A bölü 2 oldu. Evet, 90 için ne olmuştu? Kosinus 90 sıfır, A oldu.
+
+449
+01:45:52,692 --> 01:46:19,351
+Kosinus 90, 0. 90 için A artı, kosinus 90, 0 gelmişti. Burası A olmuştu. A. Kosinus 90, 0. Dolayısıyla A geldi. 5 pi böl 6 için de söylenebilir. Evet. Kosinus 150 demektir. Kosinus 150 de eksi kosinus 30 demektir. Yani eksi kök 3 bölü 2.
+
+450
+01:46:19,859 --> 01:46:41,440
+Dolayısıyla a çarpı, bir eksi, kök üç bölü iki, yani işte biraz kök üç bölü ikiyi de 0.85 gibi düşündük. Bu ne oldu? a çarpı bir eksi 0.85 yaklaşık. Yani 0.2a gibi bir değer oluyor yaklaşık.
+
+451
+01:46:41,440 --> 01:46:44,199
+Pi için en son, pi için olanı da söyleyelim.
+
+452
+01:46:44,756 --> 01:46:50,816
+a çarpı 1 artı kosinus pi eksi 1, pi için ne oldu? 0.
+
+453
+01:46:51,636 --> 01:46:52,636
+Pi için de 0 oldu.
+
+454
+01:46:53,396 --> 01:47:00,676
+Şimdi, bu değer, ooo hepsini sildik, neyse, kötü oldu ama, şöyle oldu.
+
+455
+01:47:04,796 --> 01:47:06,456
+Şuraya çizeyim ben kabaca.
+
+456
+01:47:09,456 --> 01:47:12,536
+Kosinus 0 için 2 a'ydı.
+
+457
+01:47:12,591 --> 01:47:28,331
+Burada olduğu gibi, 2A olduğu için, orijini olan uzaklık, 2A olacak. Şöyle bir nokta. Şöyle. Sonra, 30 için, biraz önce pi bölü A çarpı, 1 artı, kosünüs 30 kök 3 bölü 2 idi.
+
+458
+01:47:39,060 --> 01:47:50,840
+A çarpı 1.80, 2A'dan küçük bir değer. Yani orijinal olan uzaklık, şu açı, P bölü 6 iken, şöyle bir mesafe olacak.
+
+459
+01:47:51,359 --> 01:47:57,840
+Yani aslında 2A'dan daha küçük, yani değil mi? Şöyle yani, şunu şöyle biraz yapalım, daha yaklaştıralım.
+
+460
+01:47:57,960 --> 01:48:03,884
+Mesafe biraz düşecek yani, şöyle bir şey olacak, değil mi? Ama bu P bölü 6'yı da...
+
+461
+01:48:04,020 --> 01:48:20,640
+Daha şık çizmek lazım. Biraz daha aşağı aslında, değil mi? Şöyle, şöyle. Tam 45 olduğu zaman, a çarpı 1 artı kök 2 bölü 2, 1.7a gibi bir değer oluyor.
+
+462
+01:48:22,040 --> 01:48:31,060
+1.7a gibi bir değer oluyor. O da biraz daha yakın, değil mi? Bakın, biraz şurası 45 olduğu zaman.
+
+463
+01:48:32,532 --> 01:48:34,551
+Biraz daha yaklaşmış olacak.
+
+464
+01:48:36,011 --> 01:48:40,551
+Orijinal olan mesafe, biraz daha, şöyle bir şey yani.
+
+465
+01:48:41,411 --> 01:48:43,851
+Tamam mı? Buradan geldik böyle böyle böyle böyle.
+
+466
+01:48:44,871 --> 01:48:51,731
+Sonra, pi bölü 2 için, pi bölü 2 için, açı 90 derece olduğu zaman,
+
+467
+01:48:53,731 --> 01:48:56,791
+a çarpı 1 artı kosinüs 90 sıfır,
+
+468
+01:48:58,036 --> 01:49:19,036
+Ne oluyordu? A oluyordu. A. Tam pi bölü 2 olduğu zaman A'da kesiyor. Şurası A. Demek ki şöyle geldi. Böyle geldi. Devam etti. Biraz önceki değerleri yaparsak, yazarsak, aynı mantıkla devam edecek. Nihayet pi için 0. Pi için 0, 0 olacak böyle. Ama demiştik ki bakın pi de...
+
+469
+01:49:20,212 --> 01:49:32,652
+P'de sıfır oluyordu. Bizim eğrimiz P için sıfır oluyordu, değil mi P için? A çarpı bir artı, kosünüs teta eşit sıfır, teta P için sıfır oluyordu.
+
+470
+01:49:34,632 --> 01:49:41,692
+Açı P olduğu zaman, orjinden geçiyordu. Peki eğimi de bulmuştuk, tanjant P. Hangi eğimle?
+
+471
+01:49:42,127 --> 01:49:48,567
+orjine geliyor. Sıfır eğimle, yani buraya böyle eğim sıfır olacak şekilde geliyor. Böyle geliyor.
+
+472
+01:49:50,147 --> 01:50:06,807
+Yatay bu şekilde üstünde sıfır eğim yapıyor. Değil mi? Şimdi bu sıfırdan pi'ye kadar çizdik mi? Çizdik. Şurada da pi bölü 2 için aldığı değer. Çizdik. Hemen orjine göre simetriyini al, bitti. İşte. Bu olmuş oldu.
+
+473
+01:50:07,539 --> 01:50:32,239
+Tamam mı? Evet, bu genel olarak bu eğrimiz ismi ne oldu? R eşittir. A, 1 artı, kosünüs, teta eğrisi oldu. 1 artı, kosünüs, teta eğrisi hep, bu bir kalıp artık. Bu A çarpı, 1 artı, kosünüs, teta'yı gördünüz mü? Hemen bunu bileceksiniz. Kalıp.
+
+474
+01:50:32,608 --> 01:50:37,648
+Tamam mı? Bu kalıpları da vereceğim birazdan. Zaten bu notumuzun içerisinde de var bu arada.
+
+475
+01:50:38,387 --> 01:50:41,328
+Tamam mı? A çarpı 1 artı kosinus yetteği böyle çiziyoruz.
+
+476
+01:50:43,108 --> 01:50:49,608
+Evet, aynı şekilde A çarpı 1 eksisi sinüs yetteği. Bu eğriyi de söyleyeyim. Nasıl çiziliyor?
+
+477
+01:50:53,608 --> 01:50:55,608
+Şimdi bir kere...
+
+478
+01:50:59,475 --> 01:51:13,076
+R eşit, periyodu da bulmuşuz burada, periyodu da bulmakta fayda var, çok da üzerinde durmuyoruz ama bulursanız da zarar olmaz.
+
+479
+01:51:14,496 --> 01:51:21,155
+Periyotta 2 pi, sinüsün ve kosinüsün periyodunun 2 pi olduğunu biliyoruz zaten, değil mi?
+
+480
+01:51:22,155 --> 01:51:25,676
+Evet, yani şöyle yazarsanız.
+
+481
+01:51:27,155 --> 01:51:36,155
+A çarpı 1 eksisiniz, teta artı 2 pi yazsanız da, bu neye eşit olur zaten?
+
+482
+01:51:38,155 --> 01:51:45,695
+R teta'ya eşit olur. Değil mi bu R teta? R, R, şu, F teta diyelim şuna.
+
+483
+01:51:47,155 --> 01:51:49,615
+Pardon, F pi artı teta dediğimiz zaman.
+
+484
+01:51:53,908 --> 01:52:03,688
+Evet, f, teta yerine, teta artı 2 pi yazsanız, bu yine neye eşit çıkar? f, teta'ya eşit çıkar, periyodu 2 pi'dir.
+
+485
+01:52:04,268 --> 01:52:08,088
+Değil mi? Zaten sinüs ve kosinüsün periyodu 2 pi. Bunu biliyoruz.
+
+486
+01:52:08,088 --> 01:52:18,128
+Şimdi ikinci olarak simetri. Sinüsün tek fonksiyon olduğundan hareketle şöyle düşünebiliriz.
+
+487
+01:52:22,163 --> 01:52:27,343
+P eksi teta'yı bakalım, P eksi teta'ya bakalım.
+
+488
+01:52:28,043 --> 01:52:31,283
+A çarpı bir eksi sinüs P eksi teta.
+
+489
+01:52:32,523 --> 01:52:37,443
+Bu da A çarpı bir eksi sin P eksi teta kime eşitti? Sin teta'ya eşitti.
+
+490
+01:52:39,083 --> 01:52:40,763
+Dolayısıyla bu F teta'ya eşit çıktı.
+
+491
+01:52:42,083 --> 01:52:47,923
+O halde eğri teta eşit P bölü 2'ye ışını veya y ekseni.
+
+492
+01:52:49,876 --> 01:52:50,976
+Göre simetrik.
+
+493
+01:52:53,615 --> 01:52:56,115
+Evet, y ekserine göre simetrik.
+
+494
+01:52:56,536 --> 01:52:56,716
+Evet.
+
+495
+01:52:58,216 --> 01:52:59,996
+Olduğunu görmüş oluyoruz.
+
+496
+01:53:00,756 --> 01:53:04,735
+Evet. Periyodu 2 pi, hangi ekserine göre simetrik?
+
+497
+01:53:04,816 --> 01:53:06,436
+Bitti. Simetri olayı bu kadar.
+
+498
+01:53:08,636 --> 01:53:09,356
+Peki.
+
+499
+01:53:13,587 --> 01:53:22,367
+Başka, re üssüyü bulabilirsiniz. Fonksiyon azalan mı, artan mı açısından re üssü de kolay burada zaten.
+
+500
+01:53:23,907 --> 01:53:36,447
+Re üssü nedir? Re eşittir. A, bir eksi sintetaydı. Re üssü eşittir. Şurası ne demek? A eksi A sinteta.
+
+501
+01:53:37,447 --> 01:53:40,947
+Türevi, bunun türevi sıfır, bunun türevi kosülüs teta.
+
+502
+01:53:41,811 --> 01:53:54,832
+Revüsü daima negatif, yani azalan fonksiyonumuz, daima eğrimiz, fonksiyonumuz azalan.
+
+503
+01:53:58,072 --> 01:54:07,712
+Şimdi bizim, bu arada şunu da söyleyeceğim. Biraz önce demiştim ki eğrimiz kime göre simetrik? Y eksenine göre simetrik.
+
+504
+01:54:09,524 --> 01:54:16,144
+teta eşit pi bölü 2'ye göre simetrik. O zaman incelemeyi eksi pi bölü 2 ile pi bölü 2 aralığında yapıyoruz.
+
+505
+01:54:16,963 --> 01:54:23,003
+Tamam mı? Bir daha söylüyorum. Biraz önce kosinüste x eksenine göre simetrik iken,
+
+506
+01:54:25,703 --> 01:54:29,003
+göre simetri olduğunda 0p'de inceliyoruz.
+
+507
+01:54:31,144 --> 01:54:33,771
+y eksenine göre simetri de de,
+
+508
+01:54:33,939 --> 01:54:56,000
+eksi p bölü 2, p bölü 2 seçiyoruz. Unutmayın. Y eksenine göre simetrik olduğu zaman, eksi p bölü 2, p bölü 2 aralığında inceleme yapıyoruz. Zaten örnekleri görünce bayağı bir alışacaksınız. Onda sorun olmayacak. Evet, bir daha söylüyorum. Eğer y eksenine göre simetri varsa, eksi p bölü 2, p bölü 2 de çiziyoruz. Sonra simetri alıyoruz.
+
+509
+01:54:57,108 --> 01:55:23,188
+Şimdi, bir de neyi buluyorduk? Burada yapmamışız ama bir de neye bakıyorduk? Eğime bakıyoruz. Eğim içinde, r eşit neydi? A bir eksi sinüs teta. Bunu sıfır eşitleyelim. Bir eksi sin teta eşit sıfır. Evet, eğime bakıyoruz dedim. Evet, sin teta eşit bir.
+
+510
+01:55:23,764 --> 01:55:44,324
+Deta eşit nedir? P bölü 2. Evet, bir kere demek ki P bölü 2, açı P bölü 2 olduğu zaman orijinden geçiyor. Yani 0 P bölü 2 için, 0 P bölü 2 koordinatımız böyle olduğunda, yani açı P bölü 2 olduğunda orijinden geçiyor.
+
+511
+01:55:44,324 --> 01:55:50,044
+Eğime bakacağım, tanjant P bölü 2. Doğru yazdın mı?
+
+512
+01:55:52,724 --> 01:56:16,724
+1-sin teta, 0-sin teta 1, 90. Evet, bu ne oldu? Düşeğe teğet var gibi düşüneceğiz. Değil mi? Düşeğe teğet var. Bu nereye gidiyor? Sonsuza gidiyordu. Değil mi? Tanja pi bölüki sonsuz. Düşeğe teğet olmuş olacak. Değil mi? Peki, bakalım şimdi bu bilgiler ışığında...
+
+513
+01:56:19,091 --> 01:56:28,411
+Birkaç nokta alarak çizersek böyle görünüyor ama hani biraz daha fazla nokta bulmakta fayda var. Ben öyle yapacağım.
+
+514
+01:56:29,171 --> 01:56:38,471
+Theta, r, sıfır yapalım. Hani burada birkaç nokta, ben biraz daha ekleyeyim. Mesela p bölü 4, pardon 0 p'yi almayacağız. Ne alacağız?
+
+515
+01:56:39,612 --> 01:56:44,171
+Eksi p bölü 2. Eksi p bölü 2'den alacaktık.
+
+516
+01:56:44,659 --> 01:56:48,480
+Çünkü y eksenine göre simetri, eksi pi bölü 2'den başlatacağız.
+
+517
+01:56:49,560 --> 01:57:01,420
+Şuraya eksi pi bölü 2 alalım. Bir de mesela eksi pi bölü, eksi 90, eksi mesela 60 alalım.
+
+518
+01:57:01,760 --> 01:57:06,720
+Yani pi bölü 3 alalım. Eksi pi bölü 4 alalım. Sonra 0 alalım.
+
+519
+01:57:07,320 --> 01:57:11,300
+Pi bölü 4 alalım. Değil mi? Pi bölü 3 alalım.
+
+520
+01:57:11,764 --> 01:57:15,304
+Ondan sonra bir de pi bölü 2 alalım. Bunlara bakalım.
+
+521
+01:57:16,324 --> 01:57:38,463
+Eksi 90 için, re eşit, a bir, eksi sin teta, evet, 2a olur çünkü sin eksi 90, re eşit, re eksi pi bölü 2, a bir eksi sin eksi 90.
+
+522
+01:57:39,315 --> 01:58:02,416
+Değil mi? O da nedir? Artı sin 90 demektir. Yani 1 artı sin 91 2A. Evet, demek ki burası 2A. Evet, eğrimiz şöyle yani. Şurada açı 90 dereceyken, evet 2A şuradan başlıyor. İşte zaten şekil olarak var. 2A'dan başlıyor. Şurası 2A.
+
+523
+01:58:03,572 --> 01:58:28,372
+Açı 90 derece iken, nasıl? Eksi 90. Eksi 90 deyince şurası. Böyle iken, 2A. Evet. 2A'dan başladı. 2A'dan başladı. Peki. Sonra, eksi pi bölü 3 iken, R eşittir. R eksi pi bölü 3.
+
+524
+01:58:31,220 --> 01:58:56,819
+çarpı bir eksi, artı diyelim hatta, bir artı sinus 60. Sin eksi 60, eksi sin 60. Dolayısıyla artı oldu. A çarpı bir artı sin 60, kök 3 bölü 2. Dolayısıyla, biraz önce de hesaplamıştık, A artı 0,85, 1,85. Biraz daha ne olacak? 60 derecelik açı iken biraz daha yaklaşacak. Şöyle bir nokta olacak.
+
+525
+01:58:57,876 --> 01:59:00,796
+açı eksi altmışken, şöyle bir mesafe.
+
+526
+01:59:01,796 --> 01:59:04,016
+Sonra, 45 iken,
+
+527
+01:59:12,435 --> 01:59:16,815
+Evet, eksi 60 iken böyle olacak.
+
+528
+01:59:18,756 --> 01:59:21,115
+Evet, böyle.
+
+529
+01:59:21,996 --> 01:59:29,756
+Sonra 45 iken, R eşit, şimdi 45 iken ne olur?
+
+530
+01:59:29,756 --> 01:59:36,296
+O zaman R eşittir, R eksi P bölü 4.
+
+531
+01:59:37,716 --> 01:59:59,536
+a çarpı 1 artı sin 45 kök 2 bölü 2, 1 artı 0.7 idi. Yani 1.7 a olur. O da biraz daha şöyle oldu. Şu noktaları birleştiriyoruz, birleştiriyoruz.
+
+532
+02:00:03,667 --> 02:00:21,367
+R eşit, R sıfır, A çarpı bir artı sin sıfır sıfır, A geldi. Değil mi? Evet. O zaman ne oldu? A oldu. Yani sıfır, açı sıfırken, ne olacak? Evet, şöyle.
+
+533
+02:00:25,367 --> 02:00:30,407
+A olacak, şöyle bir geldi, şöyle. Burası A, A birim oldu.
+
+534
+02:00:31,123 --> 02:00:47,484
+Açı neyken? 0 dereceyken. Evet, şurası A'da kesiyor. Sonra devam ettik aynı şekilde. P bölü 4 için, R eşittir, R P bölü 4 eşittir.
+
+535
+02:00:56,532 --> 02:01:00,352
+1.4, 0.7 mi oldu?
+
+536
+02:01:02,772 --> 02:01:06,092
+Dolayısıyla ne oldu? 0.3a gibi bir değer oldu.
+
+537
+02:01:06,652 --> 02:01:08,992
+Yani mesafe azaldı.
+
+538
+02:01:09,952 --> 02:01:12,312
+Şöyle bir değer oldu, 45 derece iken.
+
+539
+02:01:12,312 --> 02:01:19,272
+Bu şekilde devam ederek, tabii şu arası şu an henüz daha yok ama böyle.
+
+540
+02:01:20,092 --> 02:01:21,372
+Sonra 60 için,
+
+541
+02:01:24,340 --> 02:01:50,479
+60 için, 0.3a gibi olduğu 45 için, 60 için de r eşittir, r pi bölü 3 eşittir, a, 1 eksi, kök 3 bölü, sin 60, kök 3 bölü 2, a çarpı 1 eksi, 0.1, 0.8, yani
+
+542
+02:01:50,975 --> 02:02:15,855
+8 gibi kabul edersek, 0.2a gibi bir değer oluyor. Evet. 60 derece için böyle bir nokta oluyor. Bunları birleştirdik. Nihayet 90 için, 90 olursa, şurayı, 90 içinde,
+
+543
+02:02:20,564 --> 02:02:39,724
+Evet, 90 için, 0 yazdığımızda, r, r eşit, r pi bölü 2, a, 1 eksi, sin 90 neydi? 1, 0 oluyor. 90'da 0 oluyor. Böyle geldik, şöyle geldi yani.
+
+544
+02:02:41,764 --> 02:02:45,544
+Şurada 0 oluyor. Burada da işte, yani düşeğe kelet dediğimiz şu işte, bu.
+
+545
+02:02:46,003 --> 02:03:13,023
+Bunu tamamladık şimdi. Şöyle tamamladık. Simetrini aldık. Bitti. Bu. Buradaki masamaklar tabii şurada notumuzda var ama böyle çiziyoruz yani. Bu şekilde. Evet. İşte eğrimiz böyle. Bu da kalıp eğrilerden biri. Hocam bunu bilmek çok işe yarıyor mu? Evet. Burada değişebilir ama kalıp eğrilerden biri şu eğriyi gördüğünüz zaman.
+
+546
+02:03:13,619 --> 02:03:18,399
+Artık diyeceksiniz ki bu eğri a çarpı bir eksi sinteta.
+
+547
+02:03:20,260 --> 02:03:30,699
+Evet. Kalıpları vereceğiz. Yani bazı eğrileri otomatik bilmeniz gerekiyor. Ezbere bilmeniz gerekiyor. Onları vereceğiz şimdi. Birazdan vereceğim.
+
+548
+02:03:32,439 --> 02:03:37,899
+Evet bu. Şimdi bazı işte temel şekiller. Bu temel şekiller birinci akar demişler. Başka bir yolu yok.
+
+549
+02:03:38,515 --> 02:03:50,155
+Ya da hep benim gibi çizeceksiniz. Bu uzun iş gördüğünüz gibi. Ama kalıpları bilmek test sınavlarında olsun, klasik sınavlarda o kalıpları bildiğiniz için daha hızlı sonuca gidebilirsiniz.
+
+550
+02:03:50,855 --> 02:03:57,115
+R eşit A böyle bir çember. Bu bilinecek. Daha önce söyledik. R eşit A kos tetayı ben size çizdim.
+
+551
+02:03:58,235 --> 02:04:05,055
+Yani nasıl çizmiştik hatta? R eşittir. A kos tet. R ile çarp demiştim. R kre eşit.
+
+552
+02:04:05,395 --> 02:04:32,775
+r a kosinus teta, değil mi? Şurası x, x kare artı y kare eşittir. Şu x olduğu için ax olmuştu, değil mi? x kare eksi ax artı y kare eşittir sıfır diye yazarız bunu. Hatta burada çözümü de yazmışız oluyor ama. Bu x kare eksi ax artı bir bölü dört, eksi bir bölü dört yazacağım bir yere, eksi bir bölü dört eşittir sıfır.
+
+553
+02:04:33,184 --> 02:04:58,544
+x kare eksi, a bölü 2'nin karesi, artı y kare eşit, 1 bölü 4 biçimde yazılır. O da nedir? Şöyle bir çember. Nasıl bir çember? Merkezi a bölü 2, yarı çapı 0 olan kim? x eksen üzerinde. Şöyle, a bölü 2, şurası a, a'dan geçecek, şöyle bir çember. Bu da kalıp olarak bilinecek, tamam mı? Bu da re eşit.
+
+554
+02:04:59,699 --> 02:05:12,220
+Hangi çember? A siniste. Nerede oluşuyor bu çember? X ekseni, yani başlangıç ekseni veya kutup ekseni dediğimiz eksen üzerinde oluşuyor bu.
+
+555
+02:05:13,600 --> 02:05:25,140
+Evet, bu çember bilinecek. Şöyle diyeyim ben. İşte bu R eşitliğiymiş, A kusur. Sinis olursa Y eksen üzerinde oluşan çember oluyor. A sin teta.
+
+556
+02:05:25,140 --> 02:05:26,680
+A sin teta.
+
+557
+02:05:27,220 --> 02:05:35,980
+y eksinin üzerinde oluşuyor. Başka neler var? Başka kardiyotları da vereceğiz şimdi.
+
+558
+02:05:36,800 --> 02:05:41,500
+Teta eşit alfa, eğimi alfa olan doğru. Bunu daha önce de bahsettik. Şöyle bir doğru.
+
+559
+02:05:43,500 --> 02:05:54,340
+Başka, şu beşinci var bakın burada. R eşit, R kosülüs teta eşit A veya şu beş, bir daha söyleyeyim.
+
+560
+02:05:54,804 --> 02:06:04,443
+Şimdi R cos theta eşit A ise, şöyle yazabiliriz değil mi? Bunu A bölü cos theta, o da A secant theta demektir.
+
+561
+02:06:04,923 --> 02:06:11,043
+R eşit A secant theta, bu da nedir? X eşit A doğrusudur.
+
+562
+02:06:11,764 --> 02:06:22,243
+X eşit A doğrusu olur. R eşit A secant theta, X eşit A doğrusu şeklinde düşünebiliriz değil mi?
+
+563
+02:06:23,188 --> 02:06:26,807
+Çünkü x eşit a ne demek?
+
+564
+02:06:29,028 --> 02:06:36,868
+x yerine r kosülüs teta yazarsak, a, buradan r eşittir, a bölü kosülüs teta olur.
+
+565
+02:06:37,507 --> 02:06:46,268
+Değil mi? Onun için r kosülüs teta eşit a deyince, bu bizim x eşit a doğrumuza karşılık gelir.
+
+566
+02:06:46,528 --> 02:06:50,087
+Evet, x eşit a doğrusuyla r kosülüs teta eşit a aynı şey.
+
+567
+02:06:51,091 --> 02:07:03,671
+R sin theta eşit B de, zaten pardon, yani zaten şurada şunun yerine X yazabiliriz, onun için X eşit A'dır demek daha şıktı ama yan için öyle dedim.
+
+568
+02:07:04,811 --> 02:07:09,471
+R sin theta Y olduğu için bu da Y eşit B demekti ama böyle de verilebilir yani.
+
+569
+02:07:10,171 --> 02:07:15,631
+Bu böyle verilirse, R eşit A sekant derlerse de bunun X eşit A olduğunu unutmayalım.
+
+570
+02:07:16,180 --> 02:07:36,620
+Evet, R eşit B kosekant denilirse, onun Y eşit B olduğunu unutmayalım. Bir daha alıyorum. R eşit kosünüs teta demek, zaten bu X olduğu için X eşit A, güzel. Tamam, R eşit, R sin teta eşit B ise bu Y eşit B, buradan anlaşılıyor belki ama şöyle de verilebilir, bu geçişi yapın. Evet.
+
+571
+02:07:37,555 --> 02:07:52,915
+Yani re, a çarpı, bunun yerine bir bölü, sekant theta yerine bir bölü, kosünüs theta yazdığımızda, bu zaten ne olur? Re kosünüs theta eşittir, a olur. Dolayısıyla x eşit a'dır diyebilmek önemli. Tamam mı?
+
+572
+02:07:53,155 --> 02:08:02,935
+Aynı şekilde bunu gördüğümüz zaman, re eşit b, kosünüs theta yerine bir bölü sinüs yazın. O zaman re sin theta eşittir, e.
+
+573
+02:08:03,796 --> 02:08:11,536
+Yani y eşit b olduğunu görmek faydalı oluyor bazı sorularda. Bu kosekant sekantı görünce bunlar aklınıza gelsin.
+
+574
+02:08:11,956 --> 02:08:20,296
+Evet, kardiyoidler önemli. Kardiyoidler, şu kalıp bunlar, dediğim gibi kalıpe eriler vereceğim demiştim.
+
+575
+02:08:20,816 --> 02:08:25,196
+Kalıplardan bir tanesi a kosinist eta, diğeri de onun simetriyi. Bakın şöyle.
+
+576
+02:08:25,196 --> 02:08:27,656
+Bir dakika.
+
+577
+02:08:30,899 --> 02:08:49,659
+Evet, şimdi şu iyi bilinecek, re eşit, bu kardiyoid kalp eğrisi demek, kardiyoid kalp eğrisi, bu re eşit, a, bir artı, kosinüs teta, a'mız büyük sıfır, tamam mı?
+
+578
+02:08:50,659 --> 02:08:56,239
+Burada, bakın şöyle sıfır için, hemen şu pratik olarak şuna alışın, teta sıfırsa,
+
+579
+02:08:56,851 --> 02:09:02,331
+O zaman re ne olur? Kosinus 0,1, 2a. İşte 2a şurası. Tamam mı?
+
+580
+02:09:03,531 --> 02:09:11,151
+Theta 90 ise, theta pi bölü 2 ise, re eşittir a, kosinus 90,0,a.
+
+581
+02:09:12,571 --> 02:09:18,651
+İse rea olur. Ha, a da şurası. Burası da eksi a, simetriden dolayı. Tamam mı?
+
+582
+02:09:19,828 --> 02:09:47,408
+Hatta burası da ne için alır? P için 0 oluyordu. Değil mi? Kosinüs P eksi 1, P için de 0. Şurası orijin P olduğu zaman bu oluyor. Bunun simetriği, simetriği şu yani, bunun simetriği de R eşittir, A bir eksi kosinüs tete oluyor. Şurada eğri. Zaten şu bir eksi kosinüsü mü çizmiştik?
+
+583
+02:09:47,859 --> 02:10:14,339
+Şunu, artılısını mı çizmiştik? Çizmiştik birini. Evet, bunlar 2, kosünise bağlı 2 kardioid, bu önemli. Bunun formunu bilmeniz lazım. Evet, bu formlar test sınavlarında hemen bu eğriyi çizmek gerekiyor. Çünkü alan bulma var, uzunluk bulma var. Bu çizmek gerekebilir hızlı bir şekilde. Kalıpları iyi bilmeniz gerekiyor. Evet, bu böyle. Şimdi sadece bunların sinüsü olanlara geçeceğim.
+
+584
+02:10:18,612 --> 02:10:19,532
+Geçemeyecek miyiz?
+
+585
+02:10:22,996 --> 02:10:24,076
+Olması gerekiyor.
+
+586
+02:10:25,036 --> 02:10:25,816
+İnternet mi gitti?
+
+587
+02:10:27,976 --> 02:10:29,356
+İnternet gitti galiba.
+
+588
+02:10:31,676 --> 02:10:32,576
+Sesiniz geliyor hocam.
+
+589
+02:10:33,336 --> 02:10:33,936
+Geliyor mu ses?
+
+590
+02:10:34,976 --> 02:10:35,956
+Bir dakika.
+
+591
+02:10:38,356 --> 02:10:39,876
+Pardon, gitmemiş.
+
+592
+02:10:39,876 --> 02:10:40,275
+Pardon.
+
+593
+02:10:42,655 --> 02:10:43,876
+Şimdi...
+
+594
+02:10:46,931 --> 02:11:12,532
+Peki, şimdi diğer kalıp eğriler 8 ve 9 var. Bu 8 ve 9 da bilinmesi lazım. Yani burada maddelediklerinizin hepsini bilmeniz lazım. Yani hocam çok ezber de var. Ya çizmek lazım, çizmek uzun gördüğünüz gibi. Ama bir kere, birkaç kere biraz üzerinde durursanız, uğraşırsanız, yani ezberlemesi de akılda tutması çok zor değil. Biraz emek verirseniz olduğunu göreceksiniz.
+
+595
+02:11:14,804 --> 02:11:18,583
+Şu
+
+596
+02:11:35,315 --> 02:11:40,595
+Evet, şu alana, alan değil, alandan şeyine geçtik.
+
+597
+02:11:43,095 --> 02:11:48,775
+Şu iki eğriyi de, bu da önemli, bu iki eğri.
+
+598
+02:11:49,195 --> 02:11:57,015
+Evet, R eşit A, A bir artı kosünüs teta, R eşit A bir artı sin teta.
+
+599
+02:12:02,591 --> 02:12:27,571
+R eşit ne olur? Sin 0, 0. Dolayısıyla R eşit A. 0'a A burası. 90 olsa, R eşit pi bölü 2 ise, R eşit A, 1 artı sin 91, 2A. R 2A, işte 2A size. Tamam mı? Burası da haliyle eksi A olacak. İşte bu kimin renklemi? R eşittir. A, 1 artı sin theta.
+
+600
+02:12:30,387 --> 02:12:36,748
+Bunun simetriği, yani şu, bunun simetriği ne olur? Şu.
+
+601
+02:12:39,168 --> 02:12:44,788
+Evet, orada sadece arası eksi oluyor. R eşit, A bir eksi simtete. Bu kadar.
+
+602
+02:12:46,420 --> 02:12:50,539
+Yani birini bildiniz mi, şu arası eksi olunca diğeri simetri oluyor.
+
+603
+02:12:51,000 --> 02:12:58,560
+R, A, bir eksi, sinteta. Bunları da dediğim gibi kalıp olarak bu 9 tane eğri tipini iyi bilirseniz çok sıkıntı olmayacaktır.
+
+604
+02:12:58,779 --> 02:13:04,579
+Tabii daha komplik eğriler var ama onun sonu yok zaten. Fakat bu temelleri bilmeniz gerekiyor.
+
+605
+02:13:06,100 --> 02:13:12,840
+Evet, şimdi alan nasıl bulunur? Kutupsal koordinatlarda alandan biraz bahsederim.
+
+606
+02:13:16,787 --> 02:13:27,807
+Evet, alan. Şöyle formülümüz şu. R eşit F theta eğrisinin theta eşit alfa ve theta eşit beta doğrularıyla sınırladığı bölgenin alanını şöyle buluyoruz.
+
+607
+02:13:32,467 --> 02:13:53,927
+Evet, şu bölge yani, kastettiğimiz bölge, şu bölge, şu bölgenin alanı nasıl bulunur? Şu teta eşit, teta eşit beta ışını, bu teta eşit alfa ışını, şuradaki bir alanı nasıl buluruz? Eğrimizde eğer şu eğrinin adı da şu eğri.
+
+608
+02:13:55,347 --> 02:14:00,728
+Şu eğri, uçtaki eğri, re eşit, f theta ise o alanın formülü şu, bunu bileceğiz.
+
+609
+02:14:02,747 --> 02:14:06,948
+1 bölü 2, re kare, d theta.
+
+610
+02:14:07,507 --> 02:14:11,887
+Theta nereden nereye değişiyor? Alfada, beta'ya kadar değişiyor.
+
+611
+02:14:12,287 --> 02:14:16,807
+Bu eğrinin alanı, yani şöyle bir eğri var elimizde, şöyle şöyle.
+
+612
+02:14:17,627 --> 02:14:19,587
+Bu re eşittir, f theta.
+
+613
+02:14:20,435 --> 02:14:46,455
+Şu açı arasında değişiyor. Şuradaki açımız, teta eşit alfa. Diğer açımız şöyle. O açımız da teta eşit beta. Teta alfadan beta'ya kadar alıyorsunuz. Neredeki alanı hesaplayacağım? İşte şu alanı. Eğrimiz böyleyse.
+
+614
+02:14:46,996 --> 02:14:53,775
+Evet, o zaman nasıl hesaplıyorum? 1 bölü 2, re kare, re kare, d teta formülümüz bu.
+
+615
+02:14:54,195 --> 02:15:05,416
+Hemen örneğimiz var, bakın. Örneğimiz şu. R eşit diyor. 1 artı kosütü. Hocam hemen çizdiniz. Biliyoruz çünkü ezbere. Şöyle bir eğri bu.
+
+616
+02:15:07,296 --> 02:15:12,876
+R eşittir. 1 artı kosütü. Hatta 1-2 noktasını söyleyebilirim mesela.
+
+617
+02:15:13,395 --> 02:15:37,475
+0'a karşılık şurası ne acaba diye merak ediyorum. Kosinus 0, 1 olduğu için R eşittir. 1 artı 1, 2. Demek ki şurası 2'ymiş. Mesela şurası 90, 90'a karşılık gelen teta pi bölü 2 için R ne olur? 1 artı kosinus 90, 0, 1. Yani şurası da 1'miş. Demeniz lazım. Dolayısıyla şurası eksi 1. Demek lazım.
+
+618
+02:15:38,163 --> 02:15:50,443
+O zaman diyebilirsiniz ki, hocam ben şu kısmı hesaplasam, burası alanın, tüm alanın yarısı dersiniz. A bölü 2 burası dersiniz. Sonra 2 ile çarparsınız.
+
+619
+02:15:51,123 --> 02:15:56,063
+A bölü 2'ne, formülümüze göre A bölü 2 eşittir. 1 bölü 2.
+
+620
+02:15:56,851 --> 02:16:05,831
+Nereden nereye kadar değişiyor? Sıfırdan şu pi'ye kadardı. Hatırlarsanız, theta eşit pi için, sıfırdan pi'ye çiziyorduk bu ayırıyı.
+
+621
+02:16:05,831 --> 02:16:09,572
+X ekserine göre simetrik olduğu için sıfırdan pi'ye kadar çiziyorduk.
+
+622
+02:16:09,992 --> 02:16:20,771
+Theta eşit pi için, r eşit, 1 eksi cos pi, 1 eksi eksi 1, 2. Değil mi? 2 idi. Değil mi?
+
+623
+02:16:23,155 --> 02:16:28,716
+1 artı kosinus pi, şey pardon, 1 artı kosinus pi, 1 artı eksi 1 sıfır.
+
+624
+02:16:29,315 --> 02:16:32,115
+Pi için sıfır, zaten şöyle sıfır olması lazım pi için.
+
+625
+02:16:32,615 --> 02:16:34,556
+Pi için sıfır, pi için sıfır.
+
+626
+02:16:35,335 --> 02:16:36,756
+Buraya kadar. Ne yapacağım?
+
+627
+02:16:37,236 --> 02:16:42,175
+Diyeceğim ki, şurası pi için aldığı değerdi, pi için sıfır oluyordu.
+
+628
+02:16:42,716 --> 02:16:48,056
+O zaman sıfırdan pi'ye kadar, re kare, re kare dediğim re neydi?
+
+629
+02:16:48,528 --> 02:16:55,828
+1 artı cos theta, 1 artı cos theta'nın karesi d theta diye hesaplayacağız. Bu kadar. Bir daha söylüyorum.
+
+630
+02:16:56,648 --> 02:17:02,587
+Sıfırdan piye kadar hesaplarsam, o alanın yarısı olur. a bölü 2 olur.
+
+631
+02:17:04,368 --> 02:17:09,648
+Formülümüze göre re'nin karesini alacaktım, 1 artı cos theta'nın karesi. Burası pi için aldığı değer olduğu için.
+
+632
+02:17:10,036 --> 02:17:35,855
+0'dan pi'ye kadar, 1 artı cos theta'nın karesini hesaplamak gerekiyor. Onu nasıl hesaplarız? Zor değil, a eşittir, a bölü 2 eşittir, 1 artı cos theta'nın karesi d theta, 0'dan pi'ye kadar. O da zor bir integral değil tabii.
+
+633
+02:17:37,043 --> 02:17:59,364
+1 bölü 2, 1 artı 2 kosinüs teta, artı kos kere teta d teta, d teta, sıfırdan pi'ye kadar, 1 bölü 2, 1'in integrali teta, 2 kos tetanın integrali ikisi teta, kos kare teta'yı ne yazarak integral alabiliriz?
+
+634
+02:17:59,364 --> 02:18:01,864
+Kos kare teta, kos kare teta niye eşitti?
+
+635
+02:18:04,371 --> 02:18:19,051
+1 artı, kos, 2 theta bölü 2 idi. Onun yerine de 1 artı, yani şu integral 1 artı, kos 2 theta bölü 2 yazıyorduk, kos karenin integralini alırken.
+
+636
+02:18:19,991 --> 02:18:30,171
+Evet, o zaman ne olur? 1 bölü 2, şurada tabii sınırlar var elbette, theta artı 2 sin theta, artı 1 bölü 2, theta yine,
+
+637
+02:18:30,675 --> 02:18:49,015
+Artı, kos 2 tetan integralı sin 2 teta bölü 2, sin 2 teta bölü 4 olacak. Sıfırdan işte şeye kadar, pi'ye kadar. Şurada var zaten çözümü, görüyorsunuz. Bu şekilde integralı kolayca alabiliriz.
+
+638
+02:18:49,015 --> 02:18:54,135
+İşte burada yapılan işlem sonucu, 3 pi bölü 4 çıkıyor, a bölü 2, a bölü 2 burada.
+
+639
+02:18:55,603 --> 02:19:03,763
+Evet, onun da a'sı 2 ile çarp, 3 pi bölük kaç olur? 2 olur bu alan. Tamam mı? Alan böyle.
+
+640
+02:19:06,083 --> 02:19:06,603
+Peki.
+
+641
+02:19:11,243 --> 02:19:12,603
+Şimdi eğer...
+
+642
+02:19:19,123 --> 02:19:44,703
+Eğer şöyle olursa, iki tane eğri arasında kalan alan söz konusu olursa, yani şöyle demek istiyoruz. Şöyle bir eğri var, böyle bir eğri var. Açılarımız da şöyle. Şöyle diyelim. Şu R eşittir. R1, R2 olsun. R eşit R2. Şu da R eşit.
+
+643
+02:19:45,683 --> 02:20:07,583
+R1 olsun, iki eğri. Biz de şu alanı hesaplamaya çalışalım. Bu alan. A eşit. O zaman şöyle diyeceğim. 1 bölü 2. Şu tamamını düşüneceğim. Şu aşağıdaki parçayı da düşüneceğim. Ondan diğerini çıkaracağım. 1 bölü 2. R2 kare D theta. Eksi 1 bölü 2. R1 kare D theta. İşte formül şu.
+
+644
+02:20:13,780 --> 02:20:15,564
+D, yakın.
+
+645
+02:20:31,956 --> 02:20:54,155
+Evet, şurayı anladınız mı bilmiyorum. Tamamını diyeceğiz. Tamamı. Evet, şunun tamamını düşündüğümüzde nasıl hesaplıyorduk? 1 bölü 2, R2 kare DT, yani şu alt aşağı kısım tamamı. Ama ben neyi istemiyorum? Şurası lazım değil bana. Orayı çıkarmam gerekiyor. Orayı çıkarmak için de ne yaptık?
+
+646
+02:20:54,963 --> 02:21:04,384
+Onun alanı 1 bölü 2, R1 kare teta, D teta, şu parçayı çıkarmam gerekiyor, şu parçayı çıkardık. Dolayısıyla istenen alan böyle oldu. İşte formülümüz bu.
+
+647
+02:21:05,963 --> 02:21:06,244
+Evet.
+
+648
+02:21:12,564 --> 02:21:19,324
+Evet, bu da iki eğri arasında kalan alan olmuş oluyor. Şimdi örneğimiz var mı? Var burada bir tane.
+
+649
+02:21:21,743 --> 02:21:37,184
+Evet, bu örneğe bakalım. Şimdi R eşit bir çemberin içinde ve R eşittir bir eksi kosinistetakardiyodunun dışında kalan bölgenin dışında kalan bölgenin alanını bulun.
+
+650
+02:21:39,667 --> 02:22:06,527
+içinde, kardiyoidin de dışında. Şimdi tabii ezbere bilmemiz gereken eğriler var içinde. Hemen bir kere şu eğrileri çizebilmemiz lazım. R eşit 1 deyince çemberdi şu. Bu R eşit 1 idi. Tamam mı? Diğeri de şöyleydi. Şu R eşit neydi bu? 1 artı.
+
+651
+02:22:08,404 --> 02:22:34,128
+1-stikoste tiydi. Bunları bildiğimizi kabul ediyorum. Diyor ki, çemberin içinde, kardiyoidin dışında, yani şu bölge, çemberin içinde kardiyoidin dışında bu bölge. Bunu hesaplayacağım. O zaman şu noktaları bulmam lazım. Burası A bölü 2 deyip hesaplayacağım, yarısı deyip hesaplayacağım ama şunlar lazım. Onları bulmam lazım. O da...
+
+652
+02:22:34,128 --> 02:22:42,608
+0 için aldığı değere bakacağım. Yani şöyle diyeceğim, eşitleyin bakalım bunları birbirine. Nerede kesişiyorlar? Şurada kesiştikleri noktalar, şunlar bir kere.
+
+653
+02:22:44,108 --> 02:22:52,348
+Şurası 0 için aldığı değer, onu biliyorum. Çünkü neydi bu? A'ydı. Burada R eşit 1 olduğu için burası 1 idi. Değil mi?
+
+654
+02:22:53,148 --> 02:22:57,768
+R eşit 1 yani x kare artı y kare eşit 1 çemberi o. Şurası 1 idi.
+
+655
+02:23:02,004 --> 02:23:10,103
+Peki şu kesişim, şu nokta ne? Belki bazınız söyleyecek hocam. O pi bölü 2 olmalı ama bir görelim yine de.
+
+656
+02:23:10,103 --> 02:23:23,684
+Bir eşit, bir eksi kosünüs teta. Kosünüs teta eşittir, sıfır. Teta eşit pi bölü 2. Demek ki şu pi bölü 2. Zaten bir diyorduk, şekilleri iyi bilenler hemen zaten söyleyecektir yani.
+
+657
+02:23:24,244 --> 02:23:29,484
+O zaman demek ki ben sıfırdan pi bölü 2'ye kadar hesaplayacağım. A bölü 2 eşittir diyeceksiniz.
+
+658
+02:23:29,971 --> 02:23:50,252
+1 bölü 2, formül 1 bölü 2'den vardı. 1 bölü 2'yi isterseniz dışarıda tutarsınız. Neydi? 1 kare d teta, eksi, diğer eğrimiz neydi? 1 eksi, kosinus teta, kare d teta. 0'dan pi bölü 2'ye, 0'dan pi bölü 2'ye.
+
+659
+02:23:53,907 --> 02:23:55,347
+Sıfırdan pi bölü 2'ye.
+
+660
+02:23:56,487 --> 02:24:00,507
+Gibi. Tamam mı? Şurada formül yapmışız zaten.
+
+661
+02:24:01,247 --> 02:24:05,367
+İşte bir kare eksi bir bölü 2, bir eksi kosünüs teta kare.
+
+662
+02:24:05,907 --> 02:24:10,367
+O da tabii integral alırken sadece şurada kos kare teta geliyor.
+
+663
+02:24:10,507 --> 02:24:16,387
+Onun da bir artı kosünüs 2 teta bölü 2 olduğunu bilirseniz, integral almak da zor değil.
+
+664
+02:24:16,887 --> 02:24:18,288
+Sonra tabii bu a bölü 2 oluyor.
+
+665
+02:24:19,188 --> 02:24:21,648
+Şu üstte hesaplamış oluyoruz, şu üst parçayı.
+
+666
+02:24:22,727 --> 02:24:23,367
+Bu A bölü 2.
+
+667
+02:24:24,727 --> 02:24:26,167
+İki katını aldınız mı bitti.
+
+668
+02:24:26,308 --> 02:24:27,207
+A alan bu oldu.
+
+669
+02:24:27,968 --> 02:24:28,387
+Tamam mı?
+
+670
+02:24:29,207 --> 02:24:29,707
+Bu şekilde.
+
+671
+02:24:33,047 --> 02:24:33,567
+Evet.
+
+672
+02:24:39,731 --> 02:24:42,551
+Evet, uzunluk var burada.
+
+673
+02:24:45,612 --> 02:24:53,971
+Evet, şimdi uzunluk formülü alanı verdik. Daha soru çözeceğiz tabii ki. Sadece yarın soru çözümü yapacağız ayrıca.
+
+674
+02:24:54,932 --> 02:24:56,691
+Uzunluk formülünü de verelim.
+
+675
+02:25:01,691 --> 02:25:05,231
+R eşit f theta erisinin uzunluğu şu formülle bulunuyor.
+
+676
+02:25:07,219 --> 02:25:07,739
+Evet.
+
+677
+02:25:11,827 --> 02:25:19,227
+Evet, formülümüz şu yukarıda. Evet, formülü bileceğiz burada da.
+
+678
+02:25:29,523 --> 02:25:30,763
+Şöyle diyelim.
+
+679
+02:25:35,123 --> 02:25:45,903
+Şöyle, eğilimiz bu, R eşit, F teta ya da R eşit, R teta fark etmez, bu.
+
+680
+02:25:47,443 --> 02:25:55,443
+Nerede? Şu açımız teta eşit alfa, şu açımız da teta eşit beta olsun.
+
+681
+02:25:55,443 --> 02:26:01,243
+Ben şu uzunluğu hesaplayacağım. Uzunluğu hesaplarken formülümüz L eşittir.
+
+682
+02:26:02,067 --> 02:26:12,948
+alfadan beta'ya, re'nin karesi artı re'nin türevinin karesi, d teta. Formül bu, bu formülü de bileceğiz.
+
+683
+02:26:13,547 --> 02:26:21,807
+Evet, şu parçayı hesaplayacağım. Onu hesaplamak için, alfadan beta'ya kadar değiştiği için re kare artı re üstü kare d teta olacak.
+
+684
+02:26:23,608 --> 02:26:28,968
+Örnek, re eşit yine ez verebildiğimiz eğerlerden birisi. Eğerimiz şu.
+
+685
+02:26:29,407 --> 02:26:35,087
+1 eksi kosünüs teta'nın uzunluğunu hesaplayın diyor bize. Bu eğriyi biliyoruz. 1 eksi kosünüs teta.
+
+686
+02:26:37,007 --> 02:26:49,128
+Bu eğrinin de yine, şurası neydi? Sıfırdan pi'ye kadardı aslında değil mi? 1 eksi kosünüs teta.
+
+687
+02:26:51,412 --> 02:26:59,992
+Şurası 2 birim idi. Burada L bölü 2 diye alıp, sıfırdan Pi'ye kadar hesaplayabiliriz ama tamamını hesaplamışız burada. Olabilir.
+
+688
+02:27:00,772 --> 02:27:10,432
+L eşittir. Sıfırdan 2 Pi'ye, R kare artı, R'miz 1 eksi kosünüs teta, D teta.
+
+689
+02:27:10,932 --> 02:27:15,711
+R üstü, kos teta'nın türevi, eksi sinteta, sinteta oldu türevi.
+
+690
+02:27:20,084 --> 02:27:35,484
+Yani 1 eksi, bunun karesini alalım. Karesi, re kare eşittir, 1 eksi, 2 cos theta, artı cos kare theta, re üstü kare gerekiyor. O da sin kare theta.
+
+691
+02:27:38,064 --> 02:27:47,064
+Evet, dolayısıyla ne oldu? Re kare artı re üstü kare, ne geldi? Sin kare artı cos theta, 1, 2 eksi, 2 cos theta oldu.
+
+692
+02:27:47,667 --> 02:28:03,747
+toplarsak. 2-2 cos theta bakalım. 2-2 cos theta şeklinde oldu işte şurası. Tamam mı? O da, 2-2 cos theta'yı da şöyle yazabiliriz.
+
+693
+02:28:06,747 --> 02:28:12,887
+2 parantezini alırsak, 1-cos theta. Değil mi? 1-cos theta nedir?
+
+694
+02:28:13,523 --> 02:28:18,263
+Şimdi sin kare tetayı hatırlayın. Sin kare tetayı eşittir.
+
+695
+02:28:25,971 --> 02:28:36,531
+1 eksi, kosünüs 2 theta bölü 2 ile sin kare theta. O zaman 2 sin kare theta, eşittir 1 eksi kosünüs 2 theta.
+
+696
+02:28:36,992 --> 02:28:45,952
+Theta yerine theta bölü 2 yazarsak, 2 sin kare theta bölü 2, eşittir 1 eksi kos theta olur.
+
+697
+02:28:47,671 --> 02:28:50,671
+Evet, o zaman demek ki bu neye eşitmiş? 2 çarpı.
+
+698
+02:28:52,308 --> 02:28:56,968
+1-kos-teta yerine 2 sin kare teta bölü 2 yazacağım.
+
+699
+02:28:59,508 --> 02:29:08,048
+Evet, 1-kos-teta yerine 2 sin kare teta bölü 2 yazdım.
+
+700
+02:29:08,608 --> 02:29:10,148
+Evet, bu önemli.
+
+701
+02:29:10,888 --> 02:29:12,868
+Burada getirip sonra kare kök alacağız.
+
+702
+02:29:13,328 --> 02:29:16,568
+Burda 4 var, 4-2 olarak çıkacak, sin teta bölü 2 gelecek.
+
+703
+02:29:16,568 --> 02:29:17,248
+Tamam mı?
+
+704
+02:29:17,716 --> 02:29:36,296
+Bakalım burada yapılmış işlem. 4 sin kare teta, o da bizim bulduk burada. 2 sin teta bölü 2, mutlak 2 sin teta bölü 2 olarak çıktı. O da 0'dan 2 pi'ye kadar, şimdi teta 0'dan 2 pi'ye kadar ne gerekiyor?
+
+705
+02:29:42,932 --> 02:29:55,072
+Yani pozitif burada sinüs, sinüs ekseni, sıfırdan pi'ye kadar, sıfırdan pi'ye kadar nedir? Pozitif sinüs.
+
+706
+02:29:55,432 --> 02:30:03,032
+Sinüs bir ve ikinci bölgede pozitif. Onun için sin, theta bölü 2, mutlak değer dışına sin theta bölü 2 olarak çıkar.
+
+707
+02:30:04,731 --> 02:30:08,332
+Evet, o halde direkt, yani bu mutlak değerden kurtuldu, böyle yazabiliriz.
+
+708
+02:30:11,123 --> 02:30:34,743
+İntegrali de, cos theta bölü 2, bölü 1 bölü 2'dir. Ama eksisi var, sinin integrali, türevi sinin, cosinus. İntegrali eksi olduğu için bir eksisi var. İşte o eksi buraya. Dışarıda da ne vardı? 2 vardı. 1 bölü 2, eksi 4 diye geldi. Evet, bu da 8 çıkıyormuş. Bu kadar. Evet, bu da uzunluk meselesi böyle.
+
+709
+02:30:35,316 --> 02:31:00,336
+Bir tane daha, re eşit kostetan uzunluğu. Hocam, diyeceksiniz bu çember, bunun uzunluğunu bilmiyor muyuz zaten? Değil mi? P'dir uzunluğu. Çünkü yarı çapı 1 bölü 2 olduğu için diyeceksiniz belki bazılarınız. 2 pi re olduğuna göre bunun uzunluğu pi'dir diyebilirsiniz. Yani çoğunuz da dedi belki. Ama kutupsal olarak çözelim bunu.
+
+710
+02:31:02,388 --> 02:31:25,728
+Nasıl yapacağız? Formülümüz belli. 1 bölü 2, şey, L eşittir. L eşittir. R kare artı, R kare dediğim, R dediğim, cos üst teta. R üstü dediğim, eksi sin teta. Cos kare teta, artı sin kare teta, d teta.
+
+711
+02:31:26,515 --> 02:31:35,835
+Sınırları yazmazsak bir kere sadece d-teta geldi, bunu gördük. Sınırlarda ne yapabiliriz? Eksi pi bölü 2'den pi bölü 2'ye kadar.
+
+712
+02:31:38,475 --> 02:31:43,475
+Bunu çizerken ne demiştik? Eksi pi bölü 2'den pi bölü 2'ye kadar.
+
+713
+02:31:50,855 --> 02:31:53,235
+Çizerken eksi pi bölü 2'den pi bölü 2'ye kadar.
+
+714
+02:31:54,004 --> 02:31:57,324
+almışız, alabiliriz.
+
+715
+02:32:01,684 --> 02:32:02,644
+Değil mi?
+
+716
+02:32:05,344 --> 02:32:11,744
+Veya, sıfırdan 2 piye kadar, desek de olmaz mı?
+
+717
+02:32:12,984 --> 02:32:13,344
+Olur.
+
+718
+02:32:15,103 --> 02:32:17,423
+Sıfırdan 2 piye kadar desek ne olur?
+
+719
+02:32:18,463 --> 02:32:18,943
+Şurada,
+
+720
+02:32:21,556 --> 02:32:26,828
+şey, eksi p bölü, pardon, eksi p bölü 2'den p bölü 2'ye kadar, eee,
+
+721
+02:32:30,260 --> 02:32:57,459
+Şimdi, ne oldu? D theta oldu, sıfır değil de, bir dakika, x pi bölükten, l eşittir, şöyle oldu, cos kare theta artı, kosmi türevi, re kare, re kare buydu, re üstü kare de sin kare theta idi.
+
+722
+02:32:57,968 --> 02:33:04,247
+Dolayısıyla kos kare teta artı sin kare teta, d teta oldu.
+
+723
+02:33:05,968 --> 02:33:12,528
+Şimdi şu teta sıfır için neydi?
+
+724
+02:33:12,528 --> 02:33:18,388
+R kosinus sıfır, kosinus sıfır bir idi. Şurası.
+
+725
+02:33:25,940 --> 02:33:33,100
+Şurası 90 için olan değerdi. P bölü 2 için, R eşittir, kosinus 90, sıfırdı.
+
+726
+02:33:33,960 --> 02:33:52,479
+Şu tarafı, şu taraf, sıfırdan, şöyle diyeceğiz, sıfırdan, şu 90 için aldığı, kosinus 90, sıfır, sıfırdan P bölü 2'ye kadar, M bölü 2 desem ben, sıfırdan P bölü 2'ye kadar olur.
+
+727
+02:33:53,363 --> 02:34:17,144
+Evet, şurası sıfırdan pi bölü 2'ye kadar. Dolayısıyla sıfırdan pi bölü 2'ye kadar alırsam l bölü 2 olur o. Sıfırdan pi bölü 2'ye kadar d tete olur. Bu da tete olur sıfırdan pi bölü 2'ye. Bu pi bölü 2 çıkar. Kim? Yarısı. Yarısı pi bölü 2 tamamı l pi olur. Bu kadar.
+
+728
+02:34:18,868 --> 02:34:39,948
+Yani şöyle, şu 0 için aldığı değer, şu 90 için aldığı değerdi. Dolayısıyla şu parçayı hesapladım ben. Yani bunun uzunluğunu hesapladım. Yarısının uzunluğunu, çemberin yarısının uzunluğunu hesapladım. Tabii böyle basit bu. Yani hocam bunu zaten böyle yapmadan da görülebilir diyebilirsiniz elbette ama kutupsal koordinatlarda uzunluk hesabını kullanarak yaptık.
+
+729
+02:34:40,500 --> 02:34:46,500
+L'nin yarısı sıfırdan pi bölü 2'ye kadarını hesaplayacağım. Şurası 90 için sıfır.
+
+730
+02:34:48,880 --> 02:34:55,779
+Şurası sıfır için bir. Evet, yarısını hesaplamış olduk. Sonra iki katını aldık.
+
+731
+02:34:55,880 --> 02:35:03,260
+Veya eksi pi bölü 2'den pi bölü 2'ye kadar, şu eksi pi bölü 2'den sıfıra kadar olan bölüm şurası.
+
+732
+02:35:04,724 --> 02:35:19,064
+Evet, bir daha söylüyorum. Şu kısım, eksi pi bölü 2'den sıfıra kadar, eksi pi bölü 2'den sıfıra kadar, şurası sıfırdan pi bölü 2'ye kadar olan kısım. Sıfırdan pi bölü 2'ye kadar hesapladık, 2 ile çarptık.
+
+733
+02:35:26,611 --> 02:35:29,351
+Evet, bir başka, bir tane daha uzunluk sorusu var.
+
+734
+02:35:32,171 --> 02:35:41,412
+Evet, bu da 1 artı sintetanın uzunluğu.
+
+735
+02:35:44,231 --> 02:35:48,811
+Evet, onun uzunluğu da zor değil.
+
+736
+02:35:49,471 --> 02:35:52,791
+Yalnız, bu 1 artı sintetayı nerede çizmiştik?
+
+737
+02:35:53,940 --> 02:36:15,840
+Hatırlarsanız, şu demiştik, eksi pi bölü 2'den, pi bölü 2 aralığında incelemiştik, eksi pi bölü 2 için aldığı değer, şurası, şu bölüm, eksi pi bölü 2'den pi bölü 2'ye kadar hesaplarsak,
+
+738
+02:36:17,139 --> 02:36:42,200
+Şu parçayı buluruz. Sonra simetri almıştık, hatırlıyor musunuz? Eksi p bölükten p bölükkiye kadar çizmiştik. Şöyle yapmıştık. Eksi p bölükten p bölükkiye kadar çizip simetri almıştık. Yani şu parçayı bulmuştuk biz çizerken. O zaman bu tabii yarısı oluyor. L bölükü eşittir. Eksi p bölükten p bölükte kadar. Zaten işte eksi p bölük için ne oluyor bu?
+
+739
+02:36:44,244 --> 02:36:58,984
+Artı sinüs, eksi pi bölü 2, 1 eksi 1, sin 91, 1 eksi 1 ne oluyor? 0. Değil mi?
+
+740
+02:37:03,603 --> 02:37:10,763
+Eksi pi bölü 2 için, 1 artı sinüs 90, 1 eksi 1'den ne olur? 0.
+
+741
+02:37:12,979 --> 02:37:14,540
+0 olur, değil mi?
+
+742
+02:37:19,252 --> 02:37:23,772
+Ama bir dakika, ben yanlış yazdım, özür dilerim, kusura bakmayın, dalgınlama geldi.
+
+743
+02:37:24,932 --> 02:37:28,731
+Şey, tamam, pardon, tamam, yanlış çiz, eğriyi yanlış çiz.
+
+744
+02:37:29,372 --> 02:37:32,972
+Biz bir eksi sintetayı çizmiştik, değil mi? Ondan karıştı.
+
+745
+02:37:33,592 --> 02:37:35,952
+Bir daha çiziyorum, şöyle, eğrimiz şu.
+
+746
+02:37:37,592 --> 02:37:39,132
+Pardon, şöyle, eğrimiz bu.
+
+747
+02:37:40,992 --> 02:37:41,252
+Şu.
+
+748
+02:37:43,211 --> 02:37:44,492
+Bir artı sinteta buydu.
+
+749
+02:37:45,652 --> 02:38:10,131
+Biz bir eksi sin teta ile oluştuk. Şimdi oldu. Şimdi eksi pi bölük için, teta eşit eksi pi bölük için, r sıfır. İşte şurası. Eksi pi bölük için sıfır bırak. Pi bölük için, teta pi bölük için, r eşit de bir artı sin doksan.
+
+750
+02:38:11,572 --> 02:38:14,331
+1 artı 1, 2. İşte şurası 2 idi.
+
+751
+02:38:15,451 --> 02:38:20,252
+Tabi bunu çizledik de, bir eksisini konuştuğumuz için, algınlığa geldi.
+
+752
+02:38:20,252 --> 02:38:27,291
+Evet, yani şu bölüm, nereden nereye? Eksi pi bölü 2'den, pi bölü 2'ye.
+
+753
+02:38:28,492 --> 02:38:33,551
+Ama bu yarısı. Yarısı. L bölü 2 eşit.
+
+754
+02:38:34,324 --> 02:38:47,943
+eksi pi bölükten pi bölük 2'ye, şu r kare artı r üstü kareyi hesapladığımız takdirde, o da zor değil çünkü, r eşittir, 1 artı sin teta ise, r üstü eşittir, sin teta nütrevi, kosin üst teta.
+
+755
+02:38:49,064 --> 02:39:01,783
+r kare artı r üstü kare ne olur? 1 artı 2 sin teta, artı sin kare teta, artı kos kare teta olur.
+
+756
+02:39:02,227 --> 02:39:09,647
+Şu 1 geliyor, 2 artı 2 sinteta oluyor. Değil mi? İki parantezini alırsam 1 artı sinteta.
+
+757
+02:39:10,647 --> 02:39:19,927
+1 artı sinteta nedir diyeceksiniz. 1 artı sinteta da nasıl yazabiliriz 1 artı sintetayı?
+
+758
+02:39:23,927 --> 02:39:27,727
+Şimdi... Evet, burada bir şekilde yazmışız.
+
+759
+02:39:29,183 --> 02:39:30,523
+1 artı sinteta.
+
+760
+02:39:34,103 --> 02:39:38,183
+Şöyle yazarız. 1 artı cos p bölü 2 eksi sinteta yazabiliriz.
+
+761
+02:39:38,543 --> 02:39:39,563
+Sinteta yerine.
+
+762
+02:39:41,043 --> 02:39:42,644
+Başka bir yazım yolu olabilir mi?
+
+763
+02:39:49,139 --> 02:40:04,379
+sin kare tetadan gelmez. Evet, böyle yazmamız gerekiyor. Şimdi siliyorum. Şöyle, nasıl yazacağız? 1 artı sin teta yerine, 1 artı cos p bölü 2 eksi teta yazdık sin teta yerine.
+
+764
+02:40:05,379 --> 02:40:15,219
+Sin teta demek cos 90 eksi tetadır biliyorsunuz. Onu da şöyle düzenledik. 2 cos p eksi 2 teta bölü
+
+765
+02:40:16,180 --> 02:40:20,180
+4 eksi 1 şeklinde düzenledik.
+
+766
+02:40:21,180 --> 02:40:21,860
+Yani nereden?
+
+767
+02:40:22,100 --> 02:40:22,700
+Kosinus
+
+768
+02:40:22,700 --> 02:40:32,380
+Kosinus x eşittir.
+
+769
+02:40:34,899 --> 02:40:37,020
+Kosinus 2x eşittir.
+
+770
+02:40:37,459 --> 02:40:39,399
+Kosinus kare x'ten mi diyelim?
+
+771
+02:40:39,500 --> 02:40:41,100
+Kosinus kare x eşittir.
+
+772
+02:40:41,100 --> 02:40:42,479
+1 artı
+
+773
+02:40:43,059 --> 02:41:09,779
+Kosünüs 2x bölü 2. Buradan 1 artı kosünüs 2x eşittir 2 kos kare x. Değil mi? 2 kos kare x bölü 2 eksi 1 eşittir kos x. Evet, bunu kullanarak yaptık. Şu, şurayı, şu. Şu kısmı kos.
+
+774
+02:41:10,224 --> 02:41:28,763
+P bölü 2 eksi 4, yani şurada x yerine, x yerine P bölü 2 eksi 4 yazdığımız zaman, şey bir dakika, cos x, x yerine P bölü 2 eksi 4 yazarsak, P bölü 2 eksi teta yazarsak, şurada da yazarız.
+
+775
+02:41:29,484 --> 02:41:35,984
+O zaman 2 cos kare P bölü 2 eksi teta bölü 2 olur.
+
+776
+02:41:36,404 --> 02:41:54,144
+Yani 2 kos kare, pi eksi 2 teta bölü 4 olur. İşte şu. Tamam mı? Biraz dönüşüm bir şeyler var tabii. Sonra da integre edince, gerisi sıkıntılı değil, integre edince de 4 olarak elde ediliyormuş.
+
+777
+02:42:00,979 --> 02:42:01,439
+Evet.
+
+778
+02:42:09,492 --> 02:42:33,812
+Evet, bu son köyüydü zaten. Evet, bugünlük burada bitirelim. Yarın kaldığımız yerden devam ederiz. Hepinize iyi günler diliyorum. Yarın biraz daha soru çözeceğiz bunlarla ilgili ama bir tekrar edin yani. Bunu paylaşmadım değil mi? Bazıları belki söyleyecek şimdi. Bir paylaşayım sizinle. Sohbet kısmına girelim.
+
+779
+02:42:36,564 --> 02:42:37,548
+Evet.
+
+780
+02:42:44,819 --> 02:42:46,099
+Kutsal koordinatlar.
+
+781
+02:42:48,040 --> 02:42:55,020
+Evet, paylaşıyorum. Alınca [öğrenci] bir ses ver. Alıp almadığınızı bir söyleyin bakalım. Geldi mi?
+
+782
+02:42:56,899 --> 02:42:58,759
+Kimler var şu an bilmiyorum da.
+
+783
+02:43:02,804 --> 02:43:19,963
+Geldi dedi, [öğrenci], ismini yanlış söylüyorsam kusura bakma. Burada ABD, Allah yazıyor, yani tam da bilemiyorum, [öğrenci] mı diyelim? [öğrenci] mı? Tamam [öğrenci], geldi tamam, evet [öğrenci], evet gelmiş. Başka? Aldınız mı, herkes aldı mı?
+
+784
+02:43:26,164 --> 02:43:39,263
+Tamam, tamam. Yarın görüşmek dileğiyle. Dersi kapatıyorum. Yarın uygulama yapacağız. Evet, iyi günler hepinize. İyi günler.
