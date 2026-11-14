@@ -1,0 +1,2319 @@
+1
+00:01:12,691 --> 00:01:13,671
+Merhaba arkadaşlar.
+
+2
+00:01:16,891 --> 00:01:17,931
+Merhaba hocam.
+
+3
+00:01:18,991 --> 00:01:27,491
+Bu hafta dördüncü grup, altıncı grup, on üçüncü grup, bir dakika.
+
+4
+00:01:29,271 --> 00:01:35,911
+Dört, altı, on dördüncü grup.
+
+5
+00:01:39,763 --> 00:01:41,403
+Bir gruptan anlasılır mısın?
+
+6
+00:01:44,863 --> 00:01:52,084
+Evet, birinci grup, dördüncü grup, altıncı grup ve on dördüncü grup arkadaşlar. Bunlar bugün sunumunu yapıyorlar.
+
+7
+00:01:53,084 --> 00:01:54,823
+Kim var arkadaşlar bu gruplarda?
+
+8
+00:02:00,531 --> 00:02:02,572
+Biz dördüncü grup olarak buradayız hocam.
+
+9
+00:02:02,691 --> 00:02:04,931
+Biz de altıncı grup olarak buradayız hocam.
+
+10
+00:02:07,051 --> 00:02:08,831
+On dördüncü grup olarak buradayız hocam.
+
+11
+00:02:09,911 --> 00:02:11,352
+Birinci grup yok o zaman.
+
+12
+00:02:12,551 --> 00:02:14,512
+Buradayım hocam. Birinci grup da burada.
+
+13
+00:02:15,331 --> 00:02:17,531
+Tamam. Birinci grup başlamak ister misiniz?
+
+14
+00:02:19,312 --> 00:02:22,352
+Yani gerçi sırası şöyle dördüncü gruba birinci demişiz.
+
+15
+00:02:22,352 --> 00:02:26,671
+Yani kim istiyor? Yine değiştirmek isterseniz değiştirebilirsiniz ama.
+
+16
+00:02:27,252 --> 00:02:29,331
+Dördüncü gruba bir yazmışız.
+
+17
+00:02:30,572 --> 00:02:32,292
+Biz başlayabiliriz hocam.
+
+18
+00:02:33,172 --> 00:02:33,852
+Kim? Tamam.
+
+19
+00:02:34,352 --> 00:02:35,151
+Hangi dört olarak.
+
+20
+00:02:35,771 --> 00:02:37,072
+Tamam, tamam arkadaşlar.
+
+21
+00:02:37,391 --> 00:02:40,872
+Tamam, başlayabilirsiniz. Ödevi kim yüklemişti arkadaşlar sizden?
+
+22
+00:02:42,211 --> 00:02:43,172
+Ben yüklemiştim hocam.
+
+23
+00:02:44,932 --> 00:02:46,891
+Bir dakika. İsmini bir dakika.
+
+24
+00:02:46,932 --> 00:02:47,891
+[öğrenci].
+
+25
+00:02:51,635 --> 00:02:53,536
+Ben BT'deki yeri nasılsın?
+
+26
+00:02:54,096 --> 00:02:58,255
+Tamam, siz sunuma başlayın. Ben ona bir daha bir bakayım raporumuza.
+
+27
+00:02:59,335 --> 00:03:01,036
+Siz başlayın arkadaşlar sunuma.
+
+28
+00:03:13,939 --> 00:03:30,819
+Başlıyoruz hocam o zaman biz. Evet, başlayın. Merhabalar, biz bugün testlerinin otomatikleştirilmesi ve daha etkili hale getirebilmesi adına bir proje geliştirdik. Bugün size ondan bahsedeceğiz. Bir sonraki slide'a geçebiliriz.
+
+29
+00:03:34,611 --> 00:03:39,931
+Şimdi size kısaca projenin amacından ve uygulanacak yöntemden bahsetmek istiyorum.
+
+30
+00:03:40,771 --> 00:03:46,731
+Günümüzde mobil teknoloji hızla geliştirilen mobil uygulamaların güvenliği giderek daha fazla önem kazanıyor.
+
+31
+00:03:47,271 --> 00:03:55,412
+Ancak bu uygulamalardaki güvenlik açıklarını tespit etmek ve kapatmak için geleneksel yöntemler yetersiz ve zaman alıcı kalabiliyor günümüzde.
+
+32
+00:04:01,812 --> 00:04:25,052
+İlal olması, mobil uygulamalardaki güvenlik testlerini daha etkile hale getirebilir. Bu projeden sinir ağlarıyla mobil uygulama konularını analiz ederek yapısal zayıflıkları önceden test etmeyi hedefliyor. Böylece de mobil uygulama geliştiricileri daha güvenli ve sağlam uygulamalar oluşturabilirken, kullanıcılarda daha güvenli bir deneyim yaşayabiliyorlar.
+
+33
+00:04:29,108 --> 00:04:30,608
+Bizim için de geçelim.
+
+34
+00:04:33,204 --> 00:04:43,364
+Şimdi kısaca sizlere sızma testlerinden ve projeleri kullanmayı hedeflediğimiz deniz sınır yönteminin neyi hedeflediğimizi göstermek istiyorum aslında.
+
+35
+00:04:43,364 --> 00:04:54,223
+Sızma testleri, öncelikle ne diyor? Sızma testleri, bilimsel sistemini veya önünü sistematik olarak değerlendirerek kullanılan güvenlik testi türlü aslında.
+
+36
+00:04:55,144 --> 00:05:01,204
+Temel amacı testlerindeki güvenlik açıklarını bulmak ve kötü niyetli saldırganların bu açıkları kullanmak...
+
+37
+00:05:01,204 --> 00:05:26,163
+engellemektir. Burada güvenlik açıklarını tespit etmek için derin sinir ağları yöntemini kullanmak oldukça umut verici bir yaklaşım aslında günümüzde. Bu yöntem daha hassas ve ölçeklenebilir sonuçlar sağlayabilir veya güvenlik açıklarını tespit etme sürecini optimize etmek için güçlü bir araç olarak kullanılabilir. Bir sonraki slide'a geçelim.
+
+38
+00:05:29,267 --> 00:05:57,267
+Son olarak da projemizin hedeflerinden bahsetmek istiyorum. Öncelikle hedefimiz aslında mobil uygulama güvenliğini artırmak. Yapay zeka ve derin sinir ağları kullanarak mobil uygulamalardaki güvenlik açıklarını tespit edip bunları düzeltmek. Diğer bir hedefimiz de sızma testlerinin otomatikleştirilmesi ve hızlandırılması. Burada da geleneksel sızma testlerinin yerine geçecek olan otomatik ve hızlı bir çözüm geliştirmeyi hedefliyoruz aslında. Üçüncü hedefimiz de
+
+39
+00:05:57,267 --> 00:06:08,427
+Güvenlik açıklarını, proaktif güvenlik açığı tespiti aslında, potansiyel güvenlik risklerini önceden belirleyerek mobil uygulama güvenliğini artırmak burada da temel hedefimiz.
+
+40
+00:06:09,759 --> 00:06:26,020
+Dördüncü hedefimiz de geliştiricileri eğitmek ve bilinçlendirmek. Burada da mobil uygulama geliştiricilerini, mobil uygulamaların güvenliği konusunda eğitmek ve farkındalık oluşturmak istiyoruz. Son olarak hedefimiz de mobil uygulama güvenliğine katkı sağlamak.
+
+41
+00:06:26,867 --> 00:06:35,168
+Burada genel olarak mobil uygulamaların güvenliğine katkıda bulunarak kullanıcıların daha güvenli bir deneyim yaşamalarını hedefliyoruz.
+
+42
+00:06:35,968 --> 00:06:40,628
+Şimdi de projemizin yöntem kısmından detaylı bir biçimde [öğrenci] bahsedecektir.
+
+43
+00:06:40,708 --> 00:06:41,888
+Beni dinlediğiniz için teşekkür ederim.
+
+44
+00:06:45,172 --> 00:06:58,312
+Projede kullanılacak yöntem ve metotlar için projenin temel amacı kullanıcı birerdenin uygulama güvenliği korumasıdır. Gelişen teknoloji ve artan sefer tetiklere karşı sürekli öğrenen bir sisteme cevap vermek projenin en önemli gerekliliklerindendir.
+
+45
+00:06:59,283 --> 00:07:06,564
+Kısaca yapay sinir ağlarından bahsedecek olursak, yapay sinir ağlarından bahsedecek olursak, yapay sinir ağlarından temel amacı girdi, alıp bunları işleyerek çıktı üretmekte.
+
+46
+00:07:06,663 --> 00:07:14,043
+Bu işlem sırasındaki ağdaki bağlantı ağırlıkları sağlanan verilere göre sürekli olarak ayarlanır ve optimizasyon yöntemleri kullanılarak güçlenir.
+
+47
+00:07:14,463 --> 00:07:16,884
+Yani kısaca öğrenme olarak adlandırılır bu yöntem.
+
+48
+00:07:17,504 --> 00:07:23,584
+Yapay sinir ağları, görüntü, ses, tanıma, dil işleme, oyun strateji, geliştirme ve robotik gibi birçok farklı konuda kullanılır.
+
+49
+00:07:27,283 --> 00:07:35,244
+Bu farklı ağ ve katmanlar, düğümler, kombinasyonlar oluşturabilir ya da bu spesifik uygulamalara göre değişiklik diye gösterilebilir.
+
+50
+00:07:35,824 --> 00:07:42,923
+Örneğin, derin öğrenme çok sayıda katman içerisinde sinir ağlarını işaret eder ve daha karmışık öğrenme gereksinimlerini gerçekleştirir.
+
+51
+00:07:49,396 --> 00:08:00,196
+Veri toplama kısmında ise projenin ilk adımı olaraktır. Bu sızma testleri için gerekli veri setlerini toplanmak için planladık. Bu verilerin çeşitli mobil uygulamalarına hem ticari hem de açık kaynakları toplanacaktır.
+
+52
+00:08:00,956 --> 00:08:07,576
+Veri toplama sürecimiz mevcut sızma testleri araçlarıyla birlikte özel olarak tasarlanmış veri toplama araçlarında kullanılacaktır.
+
+53
+00:08:08,355 --> 00:08:12,675
+Bu veriler daha sonra derin öğrenme modellerine eğitimlik üzere uygun formatı dönüştürülecektir.
+
+54
+00:08:16,372 --> 00:08:23,052
+Model eğitimi ise, eğitim sürecinde geçtiğimiz ve toplanan verilerin derin sinir ağlarını modelimiz için hazırlayacağız.
+
+55
+00:08:23,772 --> 00:08:28,452
+Bu süreç veri temizleme, öznetilik seçimi ve mühendislik adımları içerir.
+
+56
+00:08:29,472 --> 00:08:35,332
+Modelimiz özellikle mobil uygulamaların güvenlik açıklarını tespit etmek üzerine derin öğrenme algoritma ile dolaşılmıştır.
+
+57
+00:08:36,412 --> 00:08:42,912
+Bu modelin toplanan veri setleri üzerinde gerçekleştirecek yüksek doğruluk ve verimlilikte sızma testlerini yapmamızı sağlayacak.
+
+58
+00:08:45,971 --> 00:08:50,412
+Analiz ve yöntem sonuçları içinde, yani projemizin son aşamasıdır.
+
+59
+00:08:50,491 --> 00:08:54,612
+Kullanacağımız ana teknikler derin sinir ağları, yapay zeka ve veri mademciliği olacak.
+
+60
+00:08:55,412 --> 00:09:01,951
+Bu teknikle toplanan veri setlerin önemli bir bilgiler çıkartılarak geliştirilen modelin gerçek veri setlerini de değerlendirmesini sağlayacağız.
+
+61
+00:09:02,312 --> 00:09:08,331
+Ve kısaca öğrenme ve test alanlarını yaptıktan sonra modelin uyumluluğunu anlaşılacak.
+
+62
+00:09:08,916 --> 00:09:16,836
+Bu sürecin sonucunda da benzer atakların %90 oranında tespit edilebilir hale gelebileceğini ve projenin canlı ortamda taşınacağını öngörüyoruz.
+
+63
+00:09:17,816 --> 00:09:21,895
+Bu yaklaşımlar ve bu uygulama güvenliği önemli ölçüde arttıracağını düşünüyoruz.
+
+64
+00:09:22,336 --> 00:09:24,776
+Yani bunu ekstra olarak da modelleri arttırabiliriz.
+
+65
+00:09:24,936 --> 00:09:27,395
+Yani ya da modeli daha spesifik halde getirebiliriz.
+
+66
+00:09:28,135 --> 00:09:31,696
+Şimdi iş paketleri konusunda [öğrenci] Hanım devam edecek.
+
+67
+00:09:32,996 --> 00:09:33,875
+Teşekkürler de o.
+
+68
+00:09:33,875 --> 00:09:34,556
+Teşekkür ederim.
+
+69
+00:09:35,572 --> 00:09:49,132
+Merhaba, ben [öğrenci]. Bugün iş paketlerinden bahsedeceğim. Özetlemek gerekirse iş paketleri projenin farklı aşamalarını ve görevlerini kapsıyor. Proje yönetimi izlenmesi için de önemli bir araç olarak söyleyebilirim.
+
+70
+00:09:50,031 --> 00:10:00,291
+Şimdi projemizdeki iş paketlerine bakalım. İş paketlerini aşama aşama aktarmak istedim. İlk olarak hedeflerimizden bahsedeceğim. Bu projede neleri hedeflediğimizi aslında.
+
+71
+00:10:01,107 --> 00:10:21,887
+İlk aşamadaki hedefimiz, alçapı sistemlerini kurmak oldu. Bu aşamayı hazırlık aşaması olarak da düşünebiliriz aslında. Daha sonrasında verileri toplamak, gereksiz olan dataları temizlemek ve analizini yapmak da ikinci hedefimizdi. Bir sonraki adımımız, uygulama güvenlik testlerinin yapılması için eğitilmesi ve model kontrollerinin sağlanmasıydı.
+
+72
+00:10:22,580 --> 00:10:33,820
+Modeli de ettikten sonra test aşamasında hedefimizde tam olarak bir happy pet test yapılması, aynı zamanda da sürecin test senaryolarıyla ve otomasyonlarla desteklenecek hale gelmesiydi.
+
+73
+00:10:35,000 --> 00:10:41,860
+En son aşamamızda tabii ki de ürünü tamamlayarak prod geçişini sağlamak oldu. Bir sonraki slide'a geçebilir miyiz?
+
+74
+00:10:46,004 --> 00:10:51,344
+Diğer bir iş paketimizde yapılacak işler görevlerden oluşan bir paket.
+
+75
+00:10:52,104 --> 00:10:58,424
+Altyapı sistemlerini kurarken donanım, yazılım, altyapı sunucusu ve DB'nin kurulumunu tamamladık.
+
+76
+00:10:59,283 --> 00:11:05,324
+Veri toplarken ilk olarak kaynaklarımızı belirledik. Daha sonrasında verileri toplayarak temizledik ve analiz ettik.
+
+77
+00:11:05,908 --> 00:11:26,248
+Modelin eğitilmesi test adımında modeli eğitip analizlerini tamamladık. Test süreçlerini değerlendirip raporlama aşamasına geçtik. Süreci tamamen doğru çalışıp çalışmadığını öğrenmemiz için de testlere aslında çok fazla önem verdik. Unit testler, kullanıcı testleri yaptık. Aynı zamanda da test otomasyonlarıyla da bu süreci destekledik.
+
+78
+00:11:27,443 --> 00:11:37,344
+En son aşamamızda canlı geçiş aşamasında app marketlerine uygulamalarımızı yaydık. Burada gerekli olan entegrasyonları da sağladık ve buradaki süreci tamamladık aslında.
+
+79
+00:11:38,323 --> 00:11:40,663
+Bir sonraki sunuma geçebiliriz de o.
+
+80
+00:11:42,823 --> 00:11:48,104
+Başarı ölçtü iş paketinde de her adım için tabii ki de ayrı ayrı ölçütlerimiz mevcut.
+
+81
+00:11:48,943 --> 00:11:54,543
+Altyapının tamamlanması, verilerin belli bir standartta olması, modelin test sonuçlarına uygunluğu.
+
+82
+00:11:54,847 --> 00:12:02,807
+Tüm teslerin başarıyla tamamlanması ve tabii ki de son aşamada kullanıcının sorunsuz bir şekilde uygulamamıza erişebilmesi bizim başarı ölçütlerimizde aslında.
+
+83
+00:12:03,888 --> 00:12:05,587
+Yine bir sonraki slide'a geçersek.
+
+84
+00:12:08,648 --> 00:12:16,427
+Son iş paketimizde ara çıktılardı. Ara çıktılar bir projenin belli bir aşamasında veya bir görevin tamamlanmasında edildi.
+
+85
+00:12:16,427 --> 00:12:18,567
+Sonuçlar olarak özetleyebilirim.
+
+86
+00:12:18,899 --> 00:12:24,619
+Bilgi aktarmak, feedback almak ve projenin hedefine doğru bir şekilde ilerlemek için kullanılıyor.
+
+87
+00:12:26,019 --> 00:12:30,219
+Altyapı kurulumunun tamamlanması ilk adım için bir ara çıkmamız.
+
+88
+00:12:30,964 --> 00:12:40,124
+Topladığımız veri setleri, hazırladığımız analizler, geçici raporlar ise veri toplama adımımız için bir ara çıktı olarak söyleyebiliriz.
+
+89
+00:12:40,663 --> 00:12:53,563
+Modelin eğitilmesi ve test edilmesi adımında kontrol ve entegrasyon raporu ara çıktığımız oluyorken, otomasyon ile takip dediğimiz test senaryoların sonuçları, manual yürüttüğümüz test senaryoların sonuçları da test senaryolar adımımızın ara çıktıkları olarak söyleyebilirim.
+
+90
+00:12:54,004 --> 00:13:05,984
+En son adımımız olan canlı geçişi adımında da son kullanıcıya erişip erişmemesi bizim araçlıkımız oluyor. Benim aktaracaklarım bu kadar. Dinlediğiniz için teşekkür ederim. Sözü bir sonraki arkadaşım [öğrenci]'a bırakıyorum.
+
+91
+00:13:11,251 --> 00:13:27,231
+Merhabalar herkese. Ben size potansiyel risklerden, altyapı ve ekipmanlarımızdan ve yaygın etkilerimizden bahsedeceğim. Potansiyel risklerden başlamamız gerekirse, birinci riskimiz yapay zekanın yanlış veya hatalı sonuç üretmesi veya modelin yetersiz kalması.
+
+92
+00:13:33,779 --> 00:13:52,659
+Bu yöntemlerden bir tanesi sürekli iliştirme departmanı kuracağız içerimizde. Sürekli iliştirme departmanı her gün dev adımlarla yeni bir buluş değil de her gün daha iyi gitmeyi hedefleyen bir departman olacak. Her gün kendi işlerinin testlerini yapacaklar veya sistemi daha iyi nasıl yaparız onu düşünecekler.
+
+93
+00:13:52,659 --> 00:14:01,779
+Yapay zekanın saldırganlar tarafından kötüye kullanılması. Burada buna karşılık yine içimizde bir siber güvenlik departmanı kullanılması.
+
+94
+00:14:01,779 --> 00:14:18,559
+Siber güvenlik departmanlarının önlü görevlerinden bir tanesi güncel trendleri takip edecek, güncel siber güvenlik alanında çıkmış yenilikleri takip edecekler. Bunları güncellemelerle sitememize entegre edip kötü niyetli hackerlardan korumak amaçlı olacak.
+
+95
+00:14:20,628 --> 00:14:33,567
+Altyapı sorunlarımızdan kastımız şu, herhangi bir şeyin müşterilerimize verdiğimiz hizmeti kesmesi, bunu da incelemek veya bunun da izlenmesi için yine içimizde bir operasyon departmanı kuruyor olacağız.
+
+96
+00:14:33,567 --> 00:14:45,707
+Operasyon departmanı sürekli canlı ortamı izleyecek ED24, gerekirse bakım çalışmaları yapacaklar. Bundan sonra müşterilerimize birebir de sürekli destek verecekler.
+
+97
+00:14:46,427 --> 00:14:48,567
+Veri toplama esnasında verinin kalitesi de yeter.
+
+98
+00:14:48,628 --> 00:15:16,187
+Bu tür risklerde üç adımda inceleyeceğiz. Önce verinin temizlenmesi ve ön işleme. Burada veriyi topladıktan sonra ham olarak direkt kullanmayacağız. Veriyi önce temizleyeceğiz, veriyi normalleştireceğiz ve standart hale getireceğiz çalışmalarımız için. Arkasından veri zenginleştirme kullanacağız. Burada birçok teknik var. Buradan da yapay zekadan yine yararlanacağız. Yapay zeka ile verilerimizin boyutunu arttırmaya çalışacağız. Verinin kalite kontrolünü yapacağız.
+
+99
+00:15:16,628 --> 00:15:24,148
+Bunları manuel testlerle veya otomatikleştirilmiş testlerimizle yapacağız. Bir sonraki slide'a geçebilir miyiz?
+
+100
+00:15:26,707 --> 00:15:50,888
+Kullanacak altyapı ve ekipmanlar, ağ ekipmanlarından bahsetmek gerekirse ağdaki sızma testlerimizi ağ yönlerciler kullanarak yapacağız. Firewall'lar kullanacağız. Ayrıca bünyemizde yapacağımız testlerde sanal ağlar kullanıp kendi kötü niyetli kişilerin istememize giriyor gibi bir simülasyon ortamı hazırlayacağız ve onların bu tür aktivitelerine karşı kendimizi koruyacağız.
+
+101
+00:15:52,500 --> 00:16:03,940
+Veri setleri sızma testimiz için gerçekçi ve güncel veri setlerini kullanacağız. Bunları kullanırken kendi yazılımlarımız da olacak veya ekstra kullar da kullanıyor olacağız.
+
+102
+00:16:04,440 --> 00:16:15,600
+Test ortamımız, test ortamımız mobil uygulamada sistemi kurduktan sonra verdiğimiz inputlara doğru outputlar veriyor mu? Bunları inceleyeceğimiz bir ortam olacak.
+
+103
+00:16:16,340 --> 00:16:40,160
+Azure Cloud Server. Biz altyapımızı bir Cloud Server'da tutmayı planlıyoruz. Bunun nedeni güvenli bir yapısı olması ve ayrıyeten sürekli erişebilir bir yapıda olması. Böylece müşteri memnuniyetimizi arttıracağız. Kullandığın kadar ödev politikasıyla da ölçeklendirebilirlik hedefliyoruz. Yani şirketimizin hızlı büyüme senaryosunda.
+
+104
+00:16:40,628 --> 00:17:04,608
+Bunu ayak uydurarak gerekli aksiyonları alacağız. Database'imiz de aynı şekilde yine serverda olacak. Cloud serverda tutacağız. Güvenlik sebeplerinden dolayı. Gerekirse kullandığın kadar öde politikasıyla fiziksel maliyetlerden kaçınır. Oradan arttırdığımız maliyetle projemizde arga faaliyetlerine önem göstereceğiz. Bir sonraki slide alabilirim.
+
+105
+00:17:07,155 --> 00:17:23,975
+Yaygın etkiyi iki farklı başlıkta işleyebiliriz. Bir, toplumsal ve kültürel etkiler, iki, ekonomik etkiler ve uluslararası yönelik düzen etkileri. Toplumsal ve kültürel etkilerde tabii ki en büyük etki sağlayacağımız alanlardan bir tanesi ekonomik kalkınma ve sosyal gelişme. Yeni bir iş alanı yaratıyoruz.
+
+106
+00:17:24,432 --> 00:17:37,612
+Yeni bir imkan yaratıyoruz. Burada tabii ki bizim peşimizden yeni startuplar açılacak, yeni şirketler açılacak. Bunlar eleman işi alacaklar. Böylelikle istihdamas bir katkımız olmuş olacak.
+
+107
+00:17:38,771 --> 00:17:52,432
+Ekonomik etkiler ve uluslararası etkiler üstünde en önemlisi siber güvenlik. Vatandaşlarımızın, ülke sakinlerinin özel bilgilerini koruyarak ülke dışına çıkmasına izin vermeyeceğiz. Böylece kötü niyetli hackerlar...
+
+108
+00:17:52,432 --> 00:18:15,912
+İnsanların, insanların bizim özel bilgimiz erişmesini engelleyeceğiz. Bunun akabinde tabii ki teknolojik gelişim kaçınılmaz olacak. Yeni teknolojiler geliştirilmesi, bizden ilham olarak belki daha iyi projeler geliştirebilecekler. Biz de daha iyi gideceğiz. En büyük etkilerimizden bunları söz edebiliriz. Benden sonra [öğrenci] arkadaşıma bırakayım. Beni dinleyebilirsiniz. Teşekkür ederim.
+
+109
+00:18:18,932 --> 00:18:25,612
+Merhaba, selamlar herkese. Ben de projede oluşması gereken öngörüleri etkilen ve kalkınma planı ile olan ilişkisinden bahsedeceğim sizlere.
+
+110
+00:18:26,192 --> 00:18:29,412
+Öncelikle kalkınma planı ile olan ilişkisini şöyle özetleyebilirim.
+
+111
+00:18:30,612 --> 00:18:40,852
+Türkiye'nin ve dünyanın kalkınma ölçüde olarak dijitalleşme, yani dijital dönüşümünü bahsedecek olursak, bugün birçok firma dijital dönüşme başlamadan önce bir tedirginlik içerisinde oluyor.
+
+112
+00:18:41,231 --> 00:18:49,532
+Bu tedirginliğin en büyük sebebi de bir tanesi siber güvenlik. Yani veri güvenliği, biz verilerin güvenliğini sağlayabilir miyiz noktasında bir güvenli ortam ihtiyacına sahip oluyorlar.
+
+113
+00:18:49,532 --> 00:18:58,612
+Biz bu projede güvenli ortamı, yani dijital dönüşüm yapacak şirketlere, sistemlere, herhangi bir online varlığı, o güvenli ortamı sağlayaraktan kalkınma.
+
+114
+00:18:58,612 --> 00:19:00,311
+Bir destek olmayı planlıyoruz.
+
+115
+00:19:00,768 --> 00:19:11,928
+Onun haricinde projemiz canlıya alındıktan sonraki ilk 6, 12, 24 ve 36 aylık süreçler içerisinde ne gibi öngörülen etkilerimiz var onlardan bahsedeceğim kısaca.
+
+116
+00:19:12,288 --> 00:19:20,908
+Canlıya alındıktan ilk 6 ay sonra bizim yerel pazarda bir sızma testi aracı olarak olan boşluğu doldurmak olacak ilk baştaki öngörülen etkimiz.
+
+117
+00:19:21,268 --> 00:19:27,768
+Ancak sızma testi araçlarından diğer farkımız bizim yazılım, yapay zeka destekli olmasının faydasıyla birlikte.
+
+118
+00:19:28,768 --> 00:19:42,768
+Gözden kaçabilecek insan hatası, insan unsurlarının üzerine geçmiş olacağız. İlk 12 aylık süreçte ulusal pazarda artık bir yeterli araç olaraktan artık dijital dönüşüme entegre olan sistemlerin...
+
+119
+00:19:43,440 --> 00:19:55,819
+firmaları daha fazla entegrasyonunu sağlamak ve birbirleriyle artık entegrasyonunu sağlamak üzere çiçhik kampanyalarla daha fazla kitleye ulaşmaya hedefliyoruz.
+
+120
+00:19:55,819 --> 00:19:59,819
+İlk 24 ayda artık yerel ve ulusal pazarda kendimizi ispatladığımız...
+
+121
+00:20:00,000 --> 00:20:12,319
+için küresel pazara açılıp artık uluslararası uygulamaları ve Türkiye'deki uygulamaları birleştirmeyi, birbirleriyle olan enterkollektif sistem oluşturmayı ve daha çok kullanıcı kitlesine hitap etmeyi hedefliyoruz.
+
+122
+00:20:12,680 --> 00:20:23,980
+İlk 36'a geldiğimizde artık uygulamanızın bir yazılım ekipleri için veyahut da siber güvenlik ekipleri için ikinci bir araç değil de birinci bir güvenlik aracı, bir zorunluluk gibi görmelerini hedefliyoruz.
+
+123
+00:20:26,932 --> 00:20:54,932
+Geçebilir miyiz? Kaynaklar ve bütçeden kısaca bahsedeceğim. Burada biz kaynakları direkt liste listelemedik, liste yapmak istemedik. Sadece hangi kaynaklardan bahsedik, hangi kaynaklardan faydalandık? Bunlardan şöyle kısaca konu başlıklarına bahsetmek gerekirse, mobil uygulamaların testleri, mobil uygulamaların güvenlikleri, web uygulamaların güvenlikleri, mobil uygulamalarda sızma testleri, web uygulamalarında sızma testleri gibi alanlarda çeşitli metodolojileri, yöntemleri ve uygulama örnekleri.
+
+124
+00:20:54,932 --> 00:21:19,432
+İlk bir dokümanımız da bu kaynaklardan detaylıca bahsediyor olduk. Bir projenin en önemli unsurlarından bir tanesi maliyeti oluyor tabii hepimizin gözlüğü. Burada biz ortalama günlük anlı kurlarla ve gelecek 36 ay içerisinde, projemizi 36 ay içerisinde bitirmeye hedefliyoruz. Bir öngörerek yaklaşık olarak 4 milyon lira civarında bir bütçe belirledik.
+
+125
+00:21:22,932 --> 00:21:29,711
+Faydalanmayı, almaya hedeflemiyoruz. Eğer projemiz Tubitak'tan onaylanırsa, 1,5 bin lira lirasını Tubitak'tan talep edeceğiz.
+
+126
+00:21:29,852 --> 00:21:35,132
+Kalan 2,5 bin lira lirasını da destekleyici kuruluşlardan faydalanmayı düşünüyoruz.
+
+127
+00:21:35,512 --> 00:21:40,711
+Anlaştığımız birkaç firma var, ancak Tubitak onayı ile projenin başlamasına müsaade ediyorlar.
+
+128
+00:21:41,172 --> 00:21:48,932
+Kısaca bu ana maliyetlerimizi dört başlık altında incelersek, en ana yüksek olan %40 ile yazılım maliyetlerimiz var.
+
+129
+00:21:49,052 --> 00:21:50,932
+Yazılım maliyetlerin içerisinde altyapı maliyetlerimiz var.
+
+130
+00:21:50,932 --> 00:22:02,272
+ve yapay zeka maliyetlerimiz olarak iki başlığı ayrılıyor. Yapay zeka maliyetlerinin içerisinde belli toplama maliyetleri, çeşitli araçları ve tool'ları kullanarak ödememiz gereken rakamlar olabilir ve yapay zeka örneğiminin maliyetinde doğuyor.
+
+131
+00:22:02,772 --> 00:22:18,932
+Bir diğer büyük olan harcama kalemimiz uygulama süreçleri. Uygulama süreçleri içerisinde öncelikli olarak çalışan maliyetlerimiz bizim daha çok, çalışan maliyetlerimiz içerisinde çeşitli dış kaynaklardan faydalanabileceğimiz çalışanlarımızın maaş ücretleri ve bizim ve diğer çalışanlarımızın donanım ihtiyaçlarını...
+
+132
+00:22:18,932 --> 00:22:25,992
+Karşılacak son teknolojilerle geliştirilmiş test cihazları, normal cihazlarımız gibi en önemli kalemlerden bir tanesi de bu.
+
+133
+00:22:26,672 --> 00:22:32,211
+Uygulama süreçleri içerisindeki yaygınlaştırma maliyetlerimiz de uygulamanın artık canlıya alınma noktasında.
+
+134
+00:22:32,788 --> 00:23:00,707
+harcanacak, yapılacak entegrasyonların vesaire gibi ücretlerini barındırıyor. Onun haricinde %20'lik bir kısmı pazarlama ayırdık. Biz uygulama yaptıktan sonra son kullanıcıya ulaşmak için ve doğru kullanıcıya ulaşmak için gerçekten uygulamanın tanıtılması ve anlatılması gerektiğini düşünüyoruz. Yaklaşık %20'lik bir miktarı oraya ayırdık. Çeşitli lastmanlar vesaire, tantım lastmanları gibi. Son olarak her uygulamanın şüphesiz kendini sürdürebilmesi için bakım maharetlerine ihtiyacı var.
+
+135
+00:23:00,788 --> 00:23:25,607
+Projemizin ilk etaptaki gelirlerinden değil de ana gelirden bir 115 güçlü ayırarak bakım mayatlerini sürdürdük. Bu bakım mayatleri için bir ecail ekiple birlikte hem sahadaki istekleri karşılayacak hem sürdürülebilir olmasını sağlamasını düşünüyoruz. İlerleyen süreçlerde de projenin gelir düzeyine göre belli bir miktarı bakım mayatlerini ayırmaya devam etmeyi düşünüyoruz. Bir diğer slide'a geçtiğimizde artık sonuç kısmına geldik.
+
+136
+00:23:25,971 --> 00:23:33,731
+Burada bizim yapmış olduğumuz arkadaşlarım da bahsettiği gibi aslında firmalara, şirketlere, sistemlere güvenli bir zemin hazırlamak.
+
+137
+00:23:33,731 --> 00:23:53,971
+Bu güvenli zemin hazırlama aşamasında biz sızma testlerini, mobil uygulamalarla artık son kullanıcıların en çok kullandığı bütün verili işlemlerini ve güvenli sayabileceğimiz işlemleri artık cep telefonlarından, mobil uygulamalarından yaptığı için bu konuda daha önemli olduğunu düşündük ve sızma testlerimizi, yapay zeka sızma testlerimizi bu olanda yöneltiyoruz.
+
+138
+00:23:53,971 --> 00:24:09,711
+Derin sinir ağlarını eğitmek ve uygulama kodunu analiz etmek suretiyle güvenlik açıklarını belirleyen mobil uygulamaların çeşitli birleşenlerini kapsayacak şekilde sadece kod incelemesi değil, çeşitli detaylarını yaygınlaştıracak biçimde genişletmeyi hedef dedik.
+
+139
+00:24:10,036 --> 00:24:22,376
+Bizlere sabırladığınız için çok teşekkür ederim. Bir sorunuz vs. varsa şu anda olabilirim. Bize her zaman mail de atabilirsiniz, yüzüce de sorabilirsiniz. Arkadaşlarımın ekleyeceği bir cümle yoksa ben de sorun tutmak istiyorum. Tekrardan teşekkürler.
+
+140
+00:24:27,508 --> 00:24:28,908
+Teşekkürler arkadaşlar.
+
+141
+00:24:35,188 --> 00:24:42,348
+Şöyle bir hızlıca bakalım mı tekrar metotlarınıza, slide'larınıza? Hızlıca bir göz atalım. Sonra diğer gruba geçelim.
+
+142
+00:24:44,788 --> 00:24:49,368
+Evet, güzel. Yaygın etkiler, potansiyel riskler. Evet, güzel.
+
+143
+00:24:54,867 --> 00:24:58,587
+Yöntem, bir dahaki yöntem, veri toplama, veri toplamaya bakalım önce.
+
+144
+00:25:08,627 --> 00:25:32,247
+Ticari ve açık kaynaklı veri toplama. Çeşitli mobil uygulamalarda. Mesela bunu biraz daha açtınız sunum sırasında. Belki ben kaçırmış da olabilirim. Çeşitli mobil uygulamaları bunlar neler olabilir? Sonra veri dönüşümü. Diğer kısma geçelim. Derin öğrenme. Derin öğrenmede hangi model?
+
+145
+00:25:34,963 --> 00:25:41,483
+Sinir ağları, güvenlik açıklarını belirlemek için denilir sinir ağları ama işte
+
+146
+00:25:45,875 --> 00:25:49,715
+Arkadaşlar, bunlar yine çok çok genel şeyler hep.
+
+147
+00:25:50,415 --> 00:25:59,015
+Hocam, şöyle isterseniz açıklayayım. Derin sinir ağlarında, not ve hidden area kısımları ve seed kısımlarıyla ilgileneceğiz. Bununla alakalı verinin zenginliği çok önemli.
+
+148
+00:25:59,835 --> 00:26:12,795
+Bu bahsettiğimiz açık kaynaklı veri toplamı kısmında da bazı uygulamalar ya da bazı firmalar kendi verilerini, bu uygulama verilerini ya da başka verilerini, güvenlik verilerini paylaşır düzenli olarak. Bunlardan biz faydalanacağız ekstradan.
+
+149
+00:26:13,395 --> 00:26:24,316
+Buna ek olarak da bazı uygulamaların, yani bu mikroservis içeren uygulamaların apilerini birlikte anlaşıp onların sızma testlerini, daha önce yapılmış sızma testleriyle ilgili verileri alacağız.
+
+150
+00:26:24,556 --> 00:26:27,855
+Ve bunları salt bir veri haline getirip modülümüzü işleyeceğiz.
+
+151
+00:26:28,435 --> 00:26:30,192
+Teknik kısmında ise...
+
+152
+00:26:30,192 --> 00:26:45,412
+Node ve Hide'n Day'ı tamamen Neural Network adı altında çalışacağız. Burada katmanlarımızı geliştirebiliriz, seed kısmını geliştirebiliriz ya da karnalı ayarlarımızla da oynayabiliriz bu konularda. Yani modeli eğitmek için kendimiz de optimizasyon yapmak zorundayız bu konuda.
+
+153
+00:26:47,631 --> 00:26:55,892
+Output'umuz ne olacak? Çıktığınız ne? Yani ne? Model ne yapacak? Modelin görevi ne? Classification mı?
+
+154
+00:26:56,339 --> 00:27:09,519
+Biz verdiğimiz verileri, yani biz sisteme yapay sinir alanına verdiğimiz şeyi tedbir amaçlı o da bize karşılık bir, nasıl desem, benzeri bir yöntem olarak açıklarsan forecast metodu gibi yapacak.
+
+155
+00:27:09,519 --> 00:27:18,059
+Yani şu şu oranlarda saldırı olabilir, şunlar şu açıdan saldırı olabilir tarzında bize dönüş sağlayacak model sonunda.
+
+156
+00:27:19,796 --> 00:27:24,076
+Tamam arkadaşlar. Teşekkür ediyorum. Diğer gruba geçelim hemen.
+
+157
+00:27:25,316 --> 00:27:25,956
+Buyurun hocam.
+
+158
+00:27:27,456 --> 00:27:30,276
+Hocam, bir sonraki grup biziz sanırım grup 14.
+
+159
+00:27:31,716 --> 00:27:32,516
+Grup 14.
+
+160
+00:27:34,355 --> 00:27:40,136
+Tamam, başlayabilirsiniz arkadaşlar. Evet, grup 14 ikinci sırada demişiz.
+
+161
+00:27:41,496 --> 00:27:44,116
+Kim yükledi arkadaşlar ödeminizi? Grup 14.
+
+162
+00:27:44,819 --> 00:27:55,079
+Hocam, bizde boyut sıkıntısı olmuştu, mailleşmiştik hatta. Sunumu [öğrenci] arkadaşım yüklemişti, raporu da ben yüklemiştim. [öğrenci].
+
+163
+00:27:55,679 --> 00:28:01,399
+Şeydi galiba, doğru mu hatırlıyorum, bir link paylaşmıştınız galiba değil mi?
+
+164
+00:28:01,399 --> 00:28:11,299
+Evet, link olarak hepsini de paylaştık. Ayrıca sunumu [öğrenci] arkadaşım yükledi, raporu da ben yükledim.
+
+165
+00:28:14,451 --> 00:28:16,572
+Ama linkte hepsi de bir arada var.
+
+166
+00:28:17,652 --> 00:28:20,692
+Tamam arkadaşlar. Tamam. Başlayabilirsiniz arkadaşlar.
+
+167
+00:28:23,832 --> 00:28:25,432
+Sunum geldi mi acaba?
+
+168
+00:28:26,312 --> 00:28:27,932
+Evet geldi. Görünüyor şu anda.
+
+169
+00:28:28,892 --> 00:28:36,692
+Tamam. Merhabalar herkese. Bugün size enerji verimliği iyileştirmesi için yapay zeka tabanlı akıllı ev sistemleri başlıklı.
+
+170
+00:28:36,692 --> 00:28:38,532
+TÜBİTAK 1001 projemizi sunacağız.
+
+171
+00:28:39,155 --> 00:28:45,955
+Sunumuz projemizin kapsamını ve etkisini ele alan 7 bölüm ana bölümden oluşuyor görüldüğü üzere.
+
+172
+00:28:47,835 --> 00:28:54,795
+Bu projede odaklandığımız ana tema yapay zeka teknolojilerini kullanarak evlerimizde enerji verimliliğini maksimize etmek.
+
+173
+00:28:55,316 --> 00:29:08,695
+Geliştirdiğimiz sistem ev aletlerinin enerji tüketimini sürekli olarak izleyerek kullanıcı alışkanlıklarının derinlemesini analiz edecek. Bu bilgiler enerji tüketimini en uygun hale getirecek şekilde ayarlamalar yapılmasını sağlayacak.
+
+174
+00:29:09,155 --> 00:29:16,276
+Kullanıcılar için tasarlanan mobil uygulama üzerinden de bu ayarlar kişisel ihtiyaçlara göre özelleştirilebilecek.
+
+175
+00:29:16,692 --> 00:29:24,432
+Enerji tasarruf modları, otomatik ayarlar ve tüketim önerileri her bir kullanıcının yaşam tarzına uygun şekilde düzenlenecek.
+
+176
+00:29:25,951 --> 00:29:33,771
+Projemizin bu bölümü enerji yönetiminin daha akıllı ve etkilişimli hale getirme potansiyeline sahip.
+
+177
+00:29:35,631 --> 00:29:44,211
+Projemizin özgün değeri mevcut sistemlerden farklı olarak kullanıcı davranışlarının öğrenme yeteneğine sahip olması ve bu bilgileri enerji yönetimini iyileştirmek için stratejik olarak kullanmasıdır.
+
+178
+00:29:44,576 --> 00:29:57,435
+Geliştirdiğimiz algoritmalar, kullanıcıların günlük aktivitelerini ve enerji kullanım alışkanlıklarını analiz ederek bu verileri enerji tüketimini azaltmak ve verimliliği arttırmak için kullanacak.
+
+179
+00:29:58,355 --> 00:30:05,596
+Bu sayede enerji tüketimi bilinçli bir şekilde yönetilecek ve çevresel ayak izi de azaltılmış olacak.
+
+180
+00:30:06,395 --> 00:30:08,268
+Araştırma sorumuz da...
+
+181
+00:30:08,276 --> 00:30:16,076
+Bu teknolojinin enerji yönetimine nasıl bir yenilik getireceğini ve kullanıcı deneyimini nasıl dönüştüreceğini sorguluyor.
+
+182
+00:30:16,955 --> 00:30:24,395
+Akıllı ev sistemleri, kullanıcı alışkanlıklarını analiz ederek enerji tüketimini nasıl optimize edebilir? Araştırma sorumuz.
+
+183
+00:30:26,352 --> 00:30:37,772
+Hipotezimiz ise yapay zeka destekli algoritmaların kullanıcı alışkanlıklarına dayalı enerji yönetimi sağlayarak %20'ye kadar enerji tasarrufu sağlayabileceği yönünde.
+
+184
+00:30:38,452 --> 00:30:45,672
+Bu hipotezi test etmek için projemizin ilerleyen aşamalarında pilot uygulamalar planlıyoruz.
+
+185
+00:30:46,672 --> 00:30:48,692
+[öğrenci] arkadaşım devam edecek.
+
+186
+00:30:50,192 --> 00:30:51,412
+[öğrenci], özür dilerim.
+
+187
+00:30:52,115 --> 00:31:04,115
+Merhaba, bu kısımda projenin amaç ve hedeflerinden bahsedeceğim. Bu projedeki amacımız enerji verimliliğini arttırarak dünyamızı daha yaşanabilir yer yapmak.
+
+188
+00:31:04,115 --> 00:31:15,236
+Bunu yapay zeka destekli akıllı ev sistemleri geliştirerek kullanıcıların enerji tüketim alışkanlıklarını daha akıllıca yöntemlerine yardımcı olacak.
+
+189
+00:31:15,976 --> 00:31:19,496
+Hedeflerimiz ilk olarak bir mobil uygulama yapmak.
+
+190
+00:31:19,635 --> 00:31:25,736
+Enerji kullanımını kolayca izleyebileceğiniz ve yönetebileceğiniz bir mobil uygulama geliştireceğiz.
+
+191
+00:31:26,476 --> 00:31:34,355
+Uygulama alışkanlıklarınızı öğrenecek ve enerji tasarrufu sağlamanıza yardımcı olacak ve akıllı yönelilerde bulunacak.
+
+192
+00:31:35,276 --> 00:31:42,316
+Enerji gözlem altında tutulacak ev aletlerinizin enerji kullanımlarını sürekli izleyerek...
+
+193
+00:31:42,324 --> 00:31:53,004
+Hangi cihazların ne kadar enerji harcadığını bileceğiz. Bu bilgiler enerji tüketiminizi daha iyi anlamınıza ve yönetmemimize olarak tanıyacak.
+
+194
+00:31:53,556 --> 00:32:11,096
+Enerji tasarrufu için akıllı ayarlar olacak. İhtiyaçlarınızla göre enerji tasarrufu modları ve otomatik ayarlar yapacağız. Örneğin, evde olmadığınız zamanlarda cihazlarınız otomatik olarak enerji tasarrufu moduna geçecek. Son olarak da sonuçları ölçeceğiz.
+
+195
+00:32:11,892 --> 00:32:22,231
+Tüm bu çabaların sonunda ne kadar enerji tasarrufu yaptığınızı ve ne kadar memnun kaldığınızı ölçeceğiz. Böylece projemizin etkisini somut bir şekilde görebileceğiz.
+
+196
+00:32:22,892 --> 00:32:36,851
+Beklediğimiz sonuçlar ise daha az enerji tüketimi, daha fazla tasarruf, çevreye olan etkilerimizi azaltarak gezegenimizi koruma altına almak, iyileşen yaşam kalitesiyle daha konforlu bir ev ortamı sunmak.
+
+197
+00:32:36,851 --> 00:32:38,692
+Diğer slide'a geçebilir misin [öğrenci]?
+
+198
+00:32:39,955 --> 00:32:55,855
+Yöntem ve tekniklerde ise ilk olarak veri toplanacak. Akıllı ev cihazlarınızdan, mobil uygulamalarımızdan ve kullanıcı ile olan etkileşimlerimizden yaralanarak enerji kullanımına dair en değerli bilgiler toplayacağız.
+
+199
+00:32:56,036 --> 00:33:02,855
+Gerçek zamanlık kullanıcının evinin ve alışkanlıklarının bir yansıması olacak. Daha sonra analiz yöntemleriyle...
+
+200
+00:33:03,455 --> 00:33:10,455
+veriyi dönüştüreceğiz. Topladığımız verileri, makine öğrenimi teknikleri kullanarak analiz edeceğiz. Bu süreçte...
+
+201
+00:33:10,703 --> 00:33:37,344
+Verilerinizden modeller oluşturacak, regresyon analizleri ve sınıflandırma algoritmaları gibi yöntemlerle enerji kullanımınızı daha iyi anlamaya çalışacağız. Amacımız en etkili enerji tasarruflu yöntemlerini bulmak. Bağımsız değişkenler olarak günü saati, hava durumu, evdeki kişi sayısı gibi etkenleri göz önünde bulunduracağız. Bunlar bağımlı değişkenimiz olarak enerji tüketiminin nasıl etkilediğini anlamamıza yardımcı olacak.
+
+202
+00:33:38,703 --> 00:33:48,243
+Aslında ise veri setimiz üzerinde çeşitli statiksel testler yaparak hangi yöntemlerin enerji tasarrufunda gerçekten işe yaradığını göreceğiz.
+
+203
+00:33:49,003 --> 00:33:51,604
+Pilot uygulama ile bir ön çalışma olacak.
+
+204
+00:33:52,147 --> 00:33:59,087
+Bir evde prototip sistemimizi kuracağız ve bu sistem 6 ay boyunca bizim larvotolarımız olacak.
+
+205
+00:33:59,667 --> 00:34:05,947
+Buradan elde edeceğimiz bulgular sistemimizin ne kadar işe yarayıp yaramadığını test etmemize olarak sağlayacak.
+
+206
+00:34:06,548 --> 00:34:10,148
+Bir sonraki sunumu anlatması için sözü [öğrenci] arkadaşımıza bırakıyorum.
+
+207
+00:34:15,539 --> 00:34:42,900
+Merhaba arkadaşlar, ben size proje iş zaman planımızdan bahsedeceğim. Projemizdeki iş zaman planımız yedi aşamadan oluşmaktadır. Bu plan projemizin başlangıcından sonuna kadar tüm süreçleri kapsayacaktır ve projenin verimli ve zamanda yürütülmesini sağlayacak bizlere. Bunların ilki literatür taraması ve veri toplama. Projenin ilk aşamasında konumuzla ilgili güncel ve geçmiş literatürü kapsamlı bir şekilde tarayacağız.
+
+208
+00:34:43,539 --> 00:34:52,140
+Bu süreç, projemizin bilimsel temellerini sağlamlaştıracak ve araştırma sorunlarımızı daha net bir şekilde tanımlamamıza yardımcı olacaktır.
+
+209
+00:34:52,600 --> 00:35:01,199
+Enerji verimliliği ve yapay zeka üzerine mevcut çalışmaları derinlemesini analiz ederek, projemiz için en uygun veri toplama metodolojilerini geliştireceğiz.
+
+210
+00:35:01,940 --> 00:35:10,420
+Bir sonraki sürecimiz algoritma geliştirmedir. Bu süreçte enerji tüketimini analiz ve optimize etmek için gerekli algoritmaları tasarlayıp geliştireceğiz.
+
+211
+00:35:11,539 --> 00:35:16,100
+Adisleri ve veri bilimciler enerji yönetimi için gelişmiş algoritmalar üzerinde çalışacaklar.
+
+212
+00:35:16,699 --> 00:35:20,619
+Geliştirilen algoritmaların başlangıç testleri de bu aşamada yapılacak.
+
+213
+00:35:21,640 --> 00:35:28,119
+Her bir test, algoritmaların verimliliğini ve etkinliğini arttırmak için bizlere geri bildirimler sağlayacaktır bu sürecimizde.
+
+214
+00:35:28,820 --> 00:35:31,880
+Bir sonraki sürecimiz olan pilot uygulama ve ilk değerlendirme.
+
+215
+00:35:32,467 --> 00:35:48,307
+Proje yürütülürken, geliştirilen sistemlerin gerçek ev ortamlarında nasıl performans gösterdiğini değerlendirmek için pilot uygulamalar yapılacaktır. Her bir test, algoritmaların verimliliğini ve etkinliğini arttırmak için bizlere geri bildirim sağlayacaktır.
+
+216
+00:35:49,172 --> 00:35:59,251
+Optimizasyon ve ayarlama sürecimizde ise ilk uygulama ve testlerde elde edilen sonuçlara dayanarak sistemlerimizde gerekli iyileştirmeler ve optimizasyonlar yapacağız.
+
+217
+00:35:59,711 --> 00:36:08,811
+Kullanıcı deneyimleri ve enerji tasarrufu hedeflerimize ulaşmak için sistemlerin gerekli ayarları yapılacak. Bunlar düzenlenecek.
+
+218
+00:36:13,268 --> 00:36:18,748
+Maksimize, yani proje sonuçlarımızı maksimize etmek için önemli bir süreç olacaktır bizler için.
+
+219
+00:36:20,048 --> 00:36:29,927
+Altıncı aşamamız olan nihayi değerlendirme ve rapor hazırlama sürecinde tüm verilerin son analizleri yapıldıktan sonra projenin etkileri ve sonuçları değerlendirilecektir.
+
+220
+00:36:30,427 --> 00:36:38,748
+Elde edilen sonuçlar kapsamlı bir nihayi rapor halinde düzenlenecek ve bu rapor projenin başarılı ve anılımda kendileri belgelemiş olacaktır.
+
+221
+00:36:38,748 --> 00:36:41,268
+Son aşama planımız olarak da bilgi...
+
+222
+00:36:41,268 --> 00:37:05,027
+Bu süreçte de bilgi paylaşımı ve etki yaratma faaliyetlerinin ön planına çıkarılması hedeflenmektedir. Bunlar için bilimsel makaleler, konferans sunumları ve çeşitli medya etkinlikleri aracılığıyla projenin bulguları hedef kitlelere duyurulması hedeflenmektedir. Bu süreç projemizin kalıcı bir etki bırakmasını sağlayacaktır.
+
+223
+00:37:05,652 --> 00:37:17,192
+Bu iş zaman planı ile projemizin aracamasını yönetmek, süreçlerimizi optimize etmek, başta dediğim gibi zamanında projemizi yürütmemizi sağlayacaktır.
+
+224
+00:37:19,072 --> 00:37:20,672
+Bir sonraki slide'a geçebiliriz.
+
+225
+00:37:23,123 --> 00:37:35,323
+Projemizin toplam bütçesi farklı finansal kaynaklardan sağlanan 10.7 milyon TL olarak belirlenmiştir. Bu bütçe projemizin her aşamasının finanse edilmesini sağlayacak bir şekilde dağıtılmıştır.
+
+226
+00:37:35,323 --> 00:37:46,223
+7.2 milyon TL proje için TÜBİTAK'tan talep edilen katkı tutarı olmakta. Bu fon araştırma ve geliştirme çalışmalarımızın bizim ana finansman kaynağımız olacaktır.
+
+227
+00:37:51,123 --> 00:37:54,803
+Bu bütçeyle desteklenmesi hedeflenmektedir.
+
+228
+00:37:55,411 --> 00:38:04,071
+Öneren kuruluş katkısından talep ettiğimiz tutar olan 2.1 milyon TL ise Yıldız Teknik Üniversitesi tarafından sağlanacaktır.
+
+229
+00:38:04,591 --> 00:38:17,831
+Üniversitemiz tarafından sağlanan bu destek, projemizin teknik altyapısının güçlendirilmesi, araştırma ekibimizin ihtiyaç duyduğu ekipmanların temini ve diğer operasyonel giderler için kullanılacaktır.
+
+230
+00:38:17,831 --> 00:38:23,371
+Bu destek, projenin günlük operasyonu sorunsuz bir şekilde yürütülmesini sağlamak için önemli.
+
+231
+00:38:23,411 --> 00:38:33,411
+Bu fon yine aynı zamanda araştırma ekibinin ihtiyaç duyduğu çeşitli teknik ve idari destekleri de kapsamada bize yine faydalı olacak.
+
+232
+00:38:34,411 --> 00:38:41,511
+Son olarak diğer kuruluşların katkılarına ait talep ettiğimiz bütçe ise 1.4 milyon TL'dir.
+
+233
+00:38:41,844 --> 00:38:53,523
+İşbirliği yapılacak olan diğer kuruluşlar tarafından sağlanan bu ekfinansman, projemizin test ve optimizasyon faaliyetlerine desteklenmesi için hedeflenmektedir.
+
+234
+00:38:53,523 --> 00:39:07,764
+Bu projemizin geniş bir etki yaratmasına, yine bu test ve optimizasyonlar, projemizin etki yaratması ve sonuçlarının uygulanabilirliğini arttırması açısından önemli olan bütçemiz olacaktır.
+
+235
+00:39:08,467 --> 00:39:14,248
+Benden sonra [öğrenci] arkadaşımız devam edecek.
+
+236
+00:39:16,507 --> 00:39:16,947
+[öğrenci].
+
+237
+00:39:17,527 --> 00:39:18,467
+[öğrenci], pardon.
+
+238
+00:39:21,467 --> 00:39:23,427
+Merhabalar [öğrenci], teşekkür ederim.
+
+239
+00:39:25,652 --> 00:39:30,712
+Ben size risk yönetimi tarafına aktarıyor olacağım bugün.
+
+240
+00:39:31,372 --> 00:39:40,392
+[öğrenci]'un da anlattığı, aktardığı üzere proje iş zaman planımızla eş zamanlı olarak risk yönetimine de götürmek oldukça kritik bir konu.
+
+241
+00:39:40,392 --> 00:39:44,612
+Projenin başarılı bir şekilde yürütülmesine yardımcı olacaktır.
+
+242
+00:39:53,940 --> 00:39:59,960
+Yanındaki şey, yanındaki gibidir. İlk madde, yetersiz literatür bu.
+
+243
+00:40:28,000 --> 00:40:44,920
+teşvik etmek ve güncel gelişmelerden haberdar olmak da yine kritiktir. Bunlarla birlikte konferanslar, seminerler, workshoplara katılımda güncel bilgileri ve trendleri takip etmek için, network oluşturmak için önemli ve kritiktir.
+
+244
+00:40:46,220 --> 00:40:52,180
+İkinci tanımımız, algoritma geliştirme aşamasında beklenenden düşük performans ve optimizasyon.
+
+245
+00:40:52,735 --> 00:41:08,315
+Karşımıza çıkacak sorunları çapraz doğrulama yöntemleri, A-B Testing, Cross Function ile algoritmanın genelleştirme performansını artırmak için kullanılacak teknikler olabilir.
+
+246
+00:41:08,515 --> 00:41:10,995
+Dediğim gibi A-B Testing, çapraz doğrulama yöntemleri.
+
+247
+00:41:11,635 --> 00:41:28,715
+Uzman danışmanlıklar alınabilir. Alanında uzman bir danışmanın yardımıyla modelin performansını değerlendirmek ve gerekli düzeltmeleri yapmak için öngörülecek bir bütçe açığı bırakılabilir.
+
+248
+00:41:30,099 --> 00:41:47,440
+Pilot uygulama evlerinden yatarsız ve düşük kaliteli veri elde edilmesi karşısında veri kalitesi kontrolleri, toplanan veriler üzerinde düzenli kalite kontrolleri yapmak ve veri toplama süreçlerine iyileştirmek kritiktir.
+
+249
+00:41:47,440 --> 00:41:56,980
+Daha iyi veri toplama araçları kullanmak, kullanırken veri doğruluğunu ve temsil edilebirliğini arttırmak yine kritik olacaktır.
+
+250
+00:41:57,492 --> 00:42:13,992
+Optimizasyon ve ayarlamalarda yetersiz performans sonucu simülasyonlar ve senaryo analizleri, yani farklı senaryolar geliştirip yine altına modeli nasıl performa gösterdiğini test etmek için simülasyon yapmamıza yardımcı olacaktır.
+
+251
+00:42:14,672 --> 00:42:21,652
+Bu da yetersiz performansının önüne geçmek için kritik olacaktır. Sürekli izleme ve ayarlama.
+
+252
+00:42:22,291 --> 00:42:29,291
+Gerçek zamanlı verilerle modeli sürekli olarak izlemek ve gerektiğinde ayarlamalar yapmak gerekecektir.
+
+253
+00:42:30,452 --> 00:42:38,992
+Nihai değerlendirme ve rapor hazırlığında analizde hatalar ve yanılgılar olursa eğer, bağımsız değerlendirmeye ihtiyaç duyabiliriz.
+
+254
+00:42:38,992 --> 00:42:46,992
+Raporların ve analizlerin doğruluğunu artırmak için bağımsız bir üçüncü taraf tarafından değerlendirmesini talep edebilmeliyiz.
+
+255
+00:42:47,699 --> 00:42:56,039
+Raporlama standartları, hata oranlarını azaltmak için katı raporlama ve analiz standartlarını belirlemek gerekecektir.
+
+256
+00:42:57,139 --> 00:43:11,799
+Yaygın etki ve paylaşım aktivitelerinde yetersiz ilgi ve katılım için ise hedef kitle analizi, projeyi ilgilendiren hedef kitleleri detaylı olarak analiz etmek, bu kitlelere yönelik özelleştirilmiş içerikler hazırlamak önemli olacaktır.
+
+257
+00:43:11,799 --> 00:43:14,299
+İlgi ve katılımı yüksek seviyede tutmak.
+
+258
+00:43:14,739 --> 00:43:28,599
+Etkileşimli ve çekici içerikler, katılımı artırmak için yine etkileşimli ve çekici içerikler üretmek, sosyal medya ve diğer dijital platformlarda aktif olmak önem arz edecektir.
+
+259
+00:43:29,959 --> 00:43:35,819
+Bu öneriler karşılaşan riskleri yönetmek ve genel başarıyı artırmak için faydalı olabileceğini düşünüyoruz.
+
+260
+00:43:36,479 --> 00:43:37,859
+Diğer slide'a geçebiliriz.
+
+261
+00:43:40,563 --> 00:43:42,443
+Araştırma olanakları
+
+262
+00:43:47,603 --> 00:44:00,383
+Burada kuruluşta bulunan alt yapı, ekipman türü, model ve teçhizatlarımızdan ve projede kullanım amaçlarından listelediğimiz bir tabloyu görüyorsunuz.
+
+263
+00:44:00,843 --> 00:44:07,123
+Yapay zeka laboratuvarı, yapay zeka algoritmalarının geliştirilmesi ve test edilmesi için kullanılıyor bu olarak.
+
+264
+00:44:07,572 --> 00:44:25,052
+Veri toplama çihazları, sensörler, akıllı ölçüm aletleri, bu da real-time enerji tüketim verilerinin toplanması ve izlenmesi için gerekli olacaktır. Bilgisayar ve sunucular yine yapay zekar laboratuvar ortamında veri analizi ve algoritmalar için gerekli olacaktır.
+
+265
+00:44:25,492 --> 00:44:40,112
+Mobil uygulama geliştirme platformu, kullanıcı enerji tüketimlerini takip edebilmesi ve ayrıca kullanıcı verilerini toplamak için kullanılacak olan platformumuz aslında bir mobil uygulama geliştirmemize hizmet edecektir.
+
+266
+00:44:41,792 --> 00:44:49,792
+Son olarak test ve simülasyon yazılımları, enerji tüketimi senaryolarını simüle etmek ve optimizasyon yapmak için kullanılıyor olacaktır.
+
+267
+00:44:50,431 --> 00:44:56,211
+Teşekkür ediyorum beni dinlediğiniz için. [öğrenci]'la arkadaşım devam ediyor olacak bundan sonrasında.
+
+268
+00:44:57,571 --> 00:45:01,163
+Merhabalar. Projede oluşmasına umgörülen etkiler ve...
+
+269
+00:45:02,260 --> 00:45:14,480
+Proje açıklarını paylaşım ve yayınımından bahsedeceğim. Projemizin öngörülen etkileri toplumsal ve kültürler açıdan yaşam kalitesine katkı sağlama, sürdürülebilir çevre ve enerjiye destek olma, refah ve eğitim seviyesine iliştirme, aynı zamanda...
+
+270
+00:45:14,480 --> 00:45:21,620
+Pardon, arkadaşlar, konuşan kişi dışında diğer herkes mikrofonunu kapatsın lütfen.
+
+271
+00:45:28,052 --> 00:45:29,572
+Mikrofonun açık.
+
+272
+00:45:29,731 --> 00:45:32,251
+Hocam ben sesli bir ortamda değilim fakat kapatıyorum.
+
+273
+00:45:34,951 --> 00:45:41,172
+Yankı yapıyor da arkadaşlar o yüzden kapatıyorum. Herkes de kapatırsa yankı yapmaz.
+
+274
+00:45:42,452 --> 00:45:46,912
+Projede oluşması öngörülen etkiler ve proje açıkçalarının paylaşımı ve yayınımından bahsedeceğim.
+
+275
+00:45:47,032 --> 00:45:59,392
+Projemizin öngörülen etkileri toplumsal ve kültürel açıdan yaşam kalitesine katkı sağlamak, sürdürebilir çevre ve enerjiye destek olma, refah ve eğitim seviyeleri iyileştirme, aynı zamanda sosyal sorunlara çözüm getirmesi hedeflenmektedir.
+
+276
+00:46:03,923 --> 00:46:11,943
+Bu konuları belirleme, küresel pazar öngörü analiz etme, istihdam arttırma ve rekabetçiliği güçlendirmeyi hedeflemekteyiz.
+
+277
+00:46:12,523 --> 00:46:17,563
+Projemiz siber güvenlik ve enerji güvenliği gibi konulara odaklanarak güvenliği arttırmayı hedefliyoruz.
+
+278
+00:46:17,723 --> 00:46:25,384
+Bu etkilerin gerçekleşmesi için, projemizin belirlenen zaman çerçeveleri içinde, Eşham Kalesi'ne katkı ve çevre enerjiye katkı için
+
+279
+00:46:26,324 --> 00:46:28,563
+katkı çıkaracağını öngörüyoruz.
+
+280
+00:46:29,023 --> 00:46:32,604
+Yaşam kalitesi ve katkı ve çevre enerjiye katkı için 6 ile 12 ay.
+
+281
+00:46:33,124 --> 00:46:36,003
+Potansiyel sektöre uygulama alanları, küresel pazar öngörü,
+
+282
+00:46:36,003 --> 00:46:38,764
+sistem katkısı 18 ile 24 ay.
+
+283
+00:46:38,983 --> 00:46:44,304
+Enerji güvenliği ve siber güvenlik için projenin 12 ve 18 ay içinde
+
+284
+00:46:44,304 --> 00:46:47,003
+etkilerini göreceğimizi öngörüyoruz.
+
+285
+00:46:47,604 --> 00:46:48,684
+Diğer saate geçebiliriz.
+
+286
+00:46:52,947 --> 00:47:04,667
+Projemizin çıktığını paylaşmak ve yayınmak için çeşitli etkinlikler düzenleyeceğiz. Bunların arasında web sayfaları, bilimsel konferans sunumları, çalıştaylar, eğitim programları, sosyal medya kampanyaları, teknoloji fuarları ve proje.
+
+287
+00:47:05,460 --> 00:47:21,880
+pazarları bulunmaktadır. Web sayfaları projemizin detaylarına ve ilerlemesini sürekli olarak güncelleyerek geniş kitlere ulaşmaya hedefliyoruz. Bilimsel konferans sunumlarıyla projemizin akademik dünyadaki yankısını arttırmak ve araştırmacılar arasında etkileşim sağlamak için önemli bir platform oldu.
+
+288
+00:47:22,643 --> 00:47:39,943
+Olacağını düşünüyoruz. Çalıştay ve eğitim programları projemizin teknik detaylarını ve uygulama alanlarını paylaşmak için interaktif ortamlar sağlayacaktır. Sosyal medya kampanyaları projemizin farkındalığını arttırmak, genç nüfusa ulaşmak için etkili bir araç olacak.
+
+289
+00:47:42,132 --> 00:48:05,012
+Geniş kitlere ulaşacaktır. Teknoloji fuarları ve proje pazarı ise projemizin teknik yönlerini ve yeniliklerini potansiyel yatırımcılara ve iş ortaklarını sergilemek için önemli bir fırsat olacağını düşünüyoruz. Tüm bu etkinliklerle projemizin çıktılarını geniş kitlere ulaştırarak topluma ve ekonomiye olan olumlu etkilerini arttırmayı hedefliyoruz. Bizi dinlediğiniz için hepinize teşekkür ederiz.
+
+290
+00:48:12,244 --> 00:48:20,704
+Teşekkürler arkadaşlar. Yine bakalım hızlıca sizin de like'larınıza. Hızlıca hemen şöyle bir gözden geçirelim. Sonra diğer gruba geçelim.
+
+291
+00:48:26,324 --> 00:48:27,543
+Amaçlar, evet.
+
+292
+00:48:45,460 --> 00:48:48,420
+Regresyon analizleri, sınıflandırmak.
+
+293
+00:48:58,739 --> 00:49:01,559
+Tamam arkadaşlar, güzel. Teşekkürler.
+
+294
+00:49:03,939 --> 00:49:06,579
+Biz teşekkür ederiz.
+
+295
+00:49:07,419 --> 00:49:10,819
+Diğer gruba geçelim. Altıncı grup değil mi?
+
+296
+00:49:10,819 --> 00:49:11,079
+Evet.
+
+297
+00:49:12,359 --> 00:49:13,359
+Altıncı grup.
+
+298
+00:49:14,279 --> 00:49:16,499
+Evet, sesim geliyor değil mi? Herhangi bir program yok.
+
+299
+00:49:17,239 --> 00:49:18,599
+Evet, geliyor. Net.
+
+300
+00:49:19,179 --> 00:49:21,359
+Tamamdır, ekran paylaşımını ben yapacağım.
+
+301
+00:49:22,159 --> 00:49:22,419
+Tamam.
+
+302
+00:49:24,820 --> 00:49:26,740
+Kim yükledi arkadaşlar ödeminizi?
+
+303
+00:49:28,380 --> 00:49:31,560
+Arkadaşım yükledi ama benim paylaşmamda bir sorum olur mu?
+
+304
+00:49:31,900 --> 00:49:35,780
+Yok yok, hayır. Ben çünkü kontrol ediyorum da.
+
+305
+00:49:36,560 --> 00:49:39,240
+[öğrenci] yükledi.
+
+306
+00:49:39,240 --> 00:49:40,080
+Tamam, tamam.
+
+307
+00:49:40,080 --> 00:49:40,140
+Tamam.
+
+308
+00:49:44,140 --> 00:49:46,020
+Tamam, başlıyorum o zaman.
+
+309
+00:49:46,483 --> 00:49:47,363
+Evet.
+
+310
+00:49:47,503 --> 00:50:01,303
+Konuşturma Yöntemizin konusu kapalı alanlarda konum sistemi. Şimdi ben bu sunumuyla size proje konusu, amacı, teknik altyapılarından bahsedip hangi sistemlerle ilerlediğimizi anlatacağız.
+
+311
+00:50:04,303 --> 00:50:12,843
+Gelişen teknolojiyle beraber günümüzde nesne, araç ve kişi konularını belirlemek artık mümkündür.
+
+312
+00:50:13,204 --> 00:50:19,523
+Konum belirlemede çeşitli matematiksel hesaplamalar, teknolojiler ve bundan ışığında geliştirmiş birçok uygulama mevcuttur.
+
+313
+00:50:20,123 --> 00:50:25,844
+Bu yöntemler arasında en çok bilinen ise küresel konumlama sistemi GPS'tir.
+
+314
+00:50:26,463 --> 00:50:38,963
+GPS sistemi açık alanlarda çok kullanışlı olmakla birlikte bina, tünel ve kapalı alanlarda yaratı radyo sinyallerinin zayıflaması, bozulması, iletilememesi gibi nedenlerden dolayı yeterli çalışmamaktadır.
+
+315
+00:50:39,923 --> 00:50:56,724
+Kapalı alanlarda ve iç mekanlarda konum belirlenmesi için bazı lokal çözümler aranmaktadır. Bu çözümler arasında radyo frekansıyla tanımlama RFID, pasif kızıl ötesi, ultra geniş bans, wifi ve bulçuk gibi teknolojiler bulunmaktadır.
+
+316
+00:50:57,864 --> 00:51:03,103
+Konum belirli sistemlerinden RFID, radyo frekansıyla tanımlama teknolojisi.
+
+317
+00:51:03,764 --> 00:51:14,904
+Radyo frekansıyla tanımlama bir nesne veya kişiye ait tanımlama bilgisini kablosuz bir şekilde radyo dalgaları ile iletmek için kullanılan sistemleri tanımlamak amacıyla ifade edilen genel bir terimdir.
+
+318
+00:51:15,624 --> 00:51:24,804
+Bir RFI'de sistemin iki temel birleşeğine okuyucu ve taşıyıcıdır. Bunun yanında sistemi daha eskin hale getirmek için anten, bilgisayar ve veri tabanları kullanılmaktadır.
+
+319
+00:51:25,556 --> 00:51:34,156
+Veri bir veri taşıyıcı aygıtı üzerinde saklanır. Okuyucuyla veri taşıyıcı aygıt arasındaki veri iletişimi maynistik veya elektromanyistik alanlarda sağlanır.
+
+320
+00:51:36,016 --> 00:51:40,556
+Okuyucu taşıyıcının haftasında bulunan veriyi almak için anteni.
+
+321
+00:51:41,811 --> 00:51:55,511
+Antene enerji yükler. Bu sayede anten radyo sinyalleri yayarak taşıyıcı aktif hale getirir. Aktif hale gelen taşıyıcı da hafızasında yer alan veriyi bırakır. Anten okuyucu ve taşıyıcı arasındaki iletişimi sağlar.
+
+322
+00:51:56,411 --> 00:52:02,271
+RFID taşıyıcıları elektrik gücünün kaynağına göre aktif ve pasif olmak üzere iki genel kategoride incelenir.
+
+323
+00:52:02,739 --> 00:52:11,679
+Aktif taşıyıcılar genellikle bir pilden elde ettikleri kendi güç kaynaklarına sahiptir. Pasif taşıyıcılar ise güçlerini okuyduğunu sinyalinden alır.
+
+324
+00:52:14,899 --> 00:52:19,319
+Burada, arkadaşım [öğrenci], sen devam ediyordun sanki.
+
+325
+00:52:21,959 --> 00:52:22,699
+Merhabalar.
+
+326
+00:52:24,244 --> 00:52:31,844
+[öğrenci] arkadaşımız kapalı alanlarda konum belirleme sistemlerinden RFID teknolojisi hakkında bizlere bilgi verdi.
+
+327
+00:52:32,104 --> 00:52:39,063
+Ben de pasif kızıl ötesi sistemler, VLAN sistemleri ve ultra geniş band teknolojileri hakkında bilgiler vereceğim.
+
+328
+00:52:40,063 --> 00:52:51,784
+Pasif kızıl ötesi sensörler, insan vücudu tarafından yayılan ve çıplak gözle görülemeyen kızıl ötesi dalgaları tespit etmek amacıyla özel olarak tasarlanmış ısı enerjisine duyarlı cihazlardır.
+
+329
+00:52:52,275 --> 00:53:02,355
+Pasif kızıl ötesi sensör kapalı bir mekana yerleştirildiğinde o mekanın termal arka planını algılar ve eğer daha önceden tanımlanmamışsa bir termal referans hattı belirler.
+
+330
+00:53:03,155 --> 00:53:14,955
+Termal referans hattı belirlendikten sonra pasif kızıl ötesi sensörleri menzili dahilindeki kapalı alanda herhangi bir kızıl ötesi enerji değişimi olduğunda bunu algılayarak o mekanda bir kullanıcının var olduğunu bildirir.
+
+331
+00:53:17,295 --> 00:53:19,595
+[öğrenci] diğer sayfaya geçirdim.
+
+332
+00:53:21,907 --> 00:53:33,507
+Günümüzde yaygınlaşan internet kullanımı ile birlikte, VLAN ve Wi-Fi teknolojilerinin kullanımı, ofisler, okullar ve kamusal alanlarda artmıştır.
+
+333
+00:53:34,167 --> 00:53:44,227
+Bu nedenlerle VLAN teknolojilerinin kapalı alanlarda kullanıcıların konumlarını tespit etmeye de kullanabilirliği popüler bir araştırma konusu olmuştur.
+
+334
+00:53:45,300 --> 00:53:57,400
+VLAN tabanlı konum tespit sisteminde Wi-Fi donanımına sahip her bir mobil cihazın konumu, var olan kablosuz yeral ağ altyapısına bir konum belirleme sonucu eklenmesiyle belirlenir.
+
+335
+00:53:58,280 --> 00:54:07,380
+VLAN tabanlı konum belirlemede sistemlerde yeni erişim noktaları eklenerek kapsama alanları arttırılabileceğinden kolaylıkla genişleyebilme özelliklerine sahipliktirler.
+
+336
+00:54:12,447 --> 00:54:30,927
+Sistemlerin dezavantajları da bulunmaktadır. Değişen eşya düzenlerinin radyo sinyalleri üzerinde negatif etkisi, gerekli altyapısı olmayan binalar için kurulum maliyetinin yüksek olması, sinyallerin başka cihazların sinyalleriyle karışma olasılığının olması gibi nedenler bilimsel sistemlerin dezavantajlarıdır.
+
+337
+00:54:36,628 --> 00:54:44,548
+Ultra Geniş Band Teknolojisi, çok kısa radyo sinyalleriyle veri alışverişini yapma prensibine dayanır.
+
+338
+00:54:45,588 --> 00:54:56,828
+UVB tabanlı konum belirleme sistemi, konum belirteçlerinin kendilerine has etiketlerinden, sabitlenmiş radyo sinyal alıcılarından ve bir konum belirleme platformundan oluşur.
+
+339
+00:55:01,012 --> 00:55:10,672
+Açık görüş hattına sahip duymak sizin, en az enerji tüketimi ile yüksek hassasiyette konu belirleme özelliğine sahiptirler.
+
+340
+00:55:11,532 --> 00:55:25,952
+UB etiketlerinden yayılan radyo sinyalleri, diğer radyo frekansı tabanlı cihazlardan yayılan sinyallerden daha geniş bir radyo spektrumu kullandıkları için çevredeki sinyallerden etkilenmezler ve sinyal dağılımdaki çok yolluluğa karşı dirençlidirler.
+
+341
+00:55:27,059 --> 00:55:52,139
+Literatürde, UAB tabanında bir konum belirleme sistemi üretmek adına çalışmalar bulunsa da henüz geniş ölçüde kabul görmüş bir yaklaşım bulunmamaktadır. UAB tabanında konum belirleme sistemleri konum belirlemesinde diğer sistemlerden daha yüksek hassasiyete ve doğruluk oranına sahip olsa da kapsamlı bir sinyal alıcı verici altyapısına ihtiyaç duyması yüksek maliyetli bir teknoloji olması sebebiyle kullanımı yaygınlaşmamıştır.
+
+342
+00:55:54,800 --> 00:55:56,539
+Ve sinema arkadaşımız devam edecek.
+
+343
+00:56:03,411 --> 00:56:04,931
+[öğrenci] bir sonraki slide açabilir misin?
+
+344
+00:56:06,612 --> 00:56:14,211
+Merhaba herkese, ben de [öğrenci]. Bizim taradığımız literatürde sıradaki konum belirleme sistemimiz Bluetooth tabanlı konum belirleme sistemleri.
+
+345
+00:56:14,643 --> 00:56:36,983
+Bluetooth tabanlı konu belirleme sistemleri daha çok 3 çeşit parçadan oluşur. Etiketler, erişim noktaları ve merkezi yazılım platformu gibi 3 ana bilimselden oluşmaktadır. Etiketler daha çok kullanıcıların üzerine takılan veya eşyalarına bağlanan küçük Bluetooth etiketleridir. Bu etiketler konularını sürekli olarak yayarak çevredeki erişim noktalarına bilgi verirler.
+
+346
+00:56:37,391 --> 00:56:41,231
+Erişim noktaları da sabit konumlandırılmış Bluetooth erişim noktalarıdır.
+
+347
+00:56:41,231 --> 00:56:47,631
+Bu erişim noktaları da etiketlerden gelen sinyalleri algılayarak bu bilgiyi Merkez Yazılım Platformu'na iletirler.
+
+348
+00:56:47,631 --> 00:56:53,871
+Merkez Yazılım Platformu nedir derse, biz bilgisayar veya bulut tabanlı sistemlere örnek verebiliriz.
+
+349
+00:56:53,871 --> 00:57:02,351
+Bulut tabanlı sistemler, herkeste yaygın olarak kullanılması sebebiyle erişim çok kolay bir sistemdir.
+
+350
+00:57:04,340 --> 00:57:16,340
+Bazı dezavantajları da bulunmaktadır. Ama çoğu telefonda veya mobil cihazlarda harici, dahil olarak bulunması sebebiyle kullanılmaktadır. Bir sonraki slide'a geçebiliriz.
+
+351
+00:57:17,340 --> 00:57:24,236
+En yaygın konum belirleme sistemlerinden birincisi de GPS'tir. GPS bu zamana kadar.
+
+352
+00:57:24,563 --> 00:57:29,943
+Neredeyse bütün mobil sistemlerde var olan bir konu verilme sistemidir.
+
+353
+00:57:30,303 --> 00:57:32,844
+Fakat GPS'in bazı dezavantajları var.
+
+354
+00:57:33,243 --> 00:57:44,783
+Açık alanlarda çok güzel bir sinyal yakalasa da kapalı alanlarda katlar ve duvarlar araya girdikçe sinyallerin geriye çarpması, tekrar yansımasından dolayı
+
+355
+00:57:44,783 --> 00:57:47,163
+GPS kapalı alanlarda tam kullanılamıyor.
+
+356
+00:57:47,163 --> 00:57:52,563
+Bu yüzden ilerleyen zamanlarda kapalı alanları buna uygun hale getirilir.
+
+357
+00:57:52,563 --> 00:58:18,483
+iletişe çalışmışlar. Bunun için kapalı alanlara sabit altyapılar yerleştirilmiş ve GPS bu şekilde kapalı alanlarda kullanmaya başlanmış. Ama bu maliyetler daha fazla sebep olduğu için ileride hibrit sistemleri denemeye başlamışlar. Bu hibrit sistemlerde de Wi-Fi'dan, Bluetooth'tan, manyetik alanlardan ve hücresel sinyallerden faydalanmış ve bu sayede dışarıda çok iyi bir
+
+358
+00:58:19,923 --> 00:58:44,543
+Başarı gösteren GPS'i kapalı alanlarda da kullanmaya başlanmış. Bu sistemler daha sonra iyice ilerletilerek manyatometreler, barometreler, ime ölçer, jiroskop gibi daha teknik hassas sensörlerle işbirliği yaparak daha komplike bir sistem haline gelmiş. Peki bunun avantajı ve dezavantajı nedir dersek bir sonraki saniyata görebiliriz.
+
+359
+00:58:46,516 --> 00:58:54,036
+Yüksek doğruluk sağlayan bir sistem. Nerede olduğunu belirlemede, hedeflerine ulaşmada kullanıcıya çok büyük fayda sağlıyor.
+
+360
+00:58:54,576 --> 00:59:03,776
+Dediğim gibi açık havada çok geniş alana yayılabiliyor. Bu sayede büyük alışveriş merkezleri, stadyumlar, havalimanları gibi yerlerde kullanım alanı mevcut.
+
+361
+00:59:03,776 --> 00:59:10,836
+Ve çoğu cep telefonu taşınabilir cihazla dahil olduğu için yaygın kullanılan bir sistem.
+
+362
+00:59:12,947 --> 00:59:21,007
+günümüzde artık binaların çok katlı olması, çok fazla oda olması sebebiyle ciddi bir dezavantajı da mevcut.
+
+363
+00:59:21,507 --> 00:59:29,607
+Ve bu sürekli sinyal alıp vermesi gerektiği için enerji tüketimi çok fazla. Bu yüzden de pil ömrü azalıyor ve pil tüketimi artabiliyor.
+
+364
+00:59:31,227 --> 00:59:36,288
+Bazı kurulum maliyetli, bu da dezavantajlarından bahsedebiliriz.
+
+365
+00:59:38,643 --> 00:59:50,243
+konu belirleme sistemlerini literatür olarak taradık. Hangisini kullanacağımızı bu sayede karar verdik. O yüzden sunumuzu da bu şekilde belirttik. Bir sonraki slide'da bunu tablo olarak görebiliriz.
+
+366
+00:59:52,543 --> 00:59:59,143
+Burayı tek tek anlatmak istemiyorum. Genel olarak baktığımız zaman RFID her anlamda öne çıkan bir sistem.
+
+367
+01:00:06,612 --> 01:00:20,172
+Projemizi de kullanmak istedik. Bu sayede birinin dezavantajı, birinin avantajı bunları komplike hale getirip daha çok avantajlarından faydalanarak projemizi ilerletmeye karar verdik.
+
+368
+01:00:20,992 --> 01:00:26,871
+Bundan sonraki slidelarda [öğrenci] arkadaşım projeyi asıl nasıl duyguladığımızı anlatacak. Beni dinlediğiniz için teşekkür ederim.
+
+369
+01:00:38,036 --> 01:00:38,896
+Merhabalar.
+
+370
+01:00:43,731 --> 01:00:45,552
+Sonraki slide'a geçebilir miyiz?
+
+371
+01:00:49,771 --> 01:00:57,791
+Benden önceki arkadaşlarım indoor positioning sistemlerde kullanılan yöntemlerden, metotlardan bahsettiler.
+
+372
+01:00:58,152 --> 01:01:04,512
+GPS'in ve IPS'in avantajları, dezavantajlarından bahsettiler.
+
+373
+01:01:05,311 --> 01:01:09,512
+Dış mekanlarda konu bulmak için GPS sinyallerini kullanıyoruz.
+
+374
+01:01:10,963 --> 01:01:20,764
+Amerikan ordusuna ait uydu tarafından sağlanan veriler olduğu için zaman zaman hassasiyeti düşebilmektedir.
+
+375
+01:01:20,764 --> 01:01:33,503
+Örneğin Mısır ile İsrail arasındaki 6 gün savaşlarında GPS uydusuna erişimine engellenmesi sonucu Mısır tankları Sahra Çölü'nde kaybolmuştu.
+
+376
+01:01:34,291 --> 01:01:50,451
+Bizim asıl problemimiz kapalı alanlarda konu tespiti yapmak. Bu da işte binanın çizimi, duvarlar vesaire bu GPS sinyallerini engelledildiği için başka çözüm yöntemleri kullanmak durumunda kalıyoruz.
+
+377
+01:01:58,612 --> 01:02:06,372
+İşte bina içlerinde kullanılması tercih edilebilmektedir. Sonraki sayfaya geçebilir miyiz?
+
+378
+01:02:08,771 --> 01:02:17,112
+Bu sayfada IPS'in kullanım alanlarından birine örnek vermek istedik. Alışveriş merkezlerinde.
+
+379
+01:02:17,112 --> 01:02:21,532
+İşte insanlar alışveriş yaptığı mağazaların önünden geçerken.
+
+380
+01:02:21,844 --> 01:02:34,744
+Kullandıkları mobil uygulamalara, ilgili mağazayla ilgili reklam göndererek, kampanya göndererek hizmet almasını sağlamayı amaçlamıştık.
+
+381
+01:02:35,155 --> 01:02:50,916
+Başka kullanım amaçları da olabilir tabii bu tarz sistemlerin. Örneğin işte bir AGE personelinin, AGE alanında ne kadar vakit geçirdiğini ölçüp bunu da işte teşvik veren, bakanla raporlayan sistemler geliştirebiliriz.
+
+382
+01:02:52,255 --> 01:02:57,255
+Hastanelerde kullanabiliriz. Örneğin işte.
+
+383
+01:02:58,164 --> 01:03:08,063
+Hastanın ilgili polikalini bulması için çizmesi gereken rota vesaire gibi yöntemler de kullanabiliriz.
+
+384
+01:03:08,543 --> 01:03:22,244
+Bu sistemlerimizde işte Bluetooth, Ultra Wideband, RFID kartlar ve wireless sensörlerini hibrit bir şekilde kullanmayı amaçlamıştık.
+
+385
+01:03:23,827 --> 01:03:37,588
+Binanın girişine koyacağımız istasyonlarla RFID kartın okutulması sonucu, bina içinde olduğu bilgisini sağlamayı hedefledik.
+
+386
+01:03:38,307 --> 01:03:49,508
+Binanın içerisinde dolaşırken de, binanın hangi kısmında olduğunu anlayabilmek için Bluetooth sensörlerini kullandık.
+
+387
+01:03:50,643 --> 01:03:54,683
+Low Energy'yi tercih ettik enerji verimliliği için.
+
+388
+01:03:55,723 --> 01:04:12,463
+Bu Low Energy sensörlerinde uç birim ve server tarafında toplayıcı dediğimiz konsantratör cihazlarla MQTT, TCPIP tabanlı bir haberleşme yöntemiyle.
+
+389
+01:04:12,947 --> 01:04:28,507
+Haberleşmesini sağlayacağız. Bu verileri çeşitli matematiksel işlemlerle sinyal yücüğü, işte sinyal geliş açısı antenimize net olarak konum tespitini yapmayı hedefledik.
+
+390
+01:04:28,867 --> 01:04:29,827
+Sonraki sayfaya geçelim.
+
+391
+01:04:33,715 --> 01:04:55,715
+Genel olarak IPS'in kullanım yerlerinden bahsettim. Örnek vermek gerekirse otel ve tatil köylerinde konuklara restoranları, havuzları, plaj yerlerini, diğer olanakların net yerlerini bulmaları için kullanabiliriz.
+
+392
+01:04:56,715 --> 01:05:00,315
+Fuar ve kongre merkezleri genelde çok büyük alanlar.
+
+393
+01:05:03,188 --> 01:05:20,867
+İçer mi? İşte İstanbul Fuar Merkezi'ne gittiyseniz, görmüşsünüzdür, çok büyük alanlarda hangi firmanın nerede stand açtığını vesaire, fuarı ziyaretçilerine.
+
+394
+01:05:25,940 --> 01:05:28,199
+Bulmalarında yardımcı olunabilir.
+
+395
+01:05:30,000 --> 01:05:33,159
+Benim sunumum bu kadar. [öğrenci] arkadaşım devam etsettir.
+
+396
+01:05:36,851 --> 01:05:38,951
+Merhabalar hocam, iyi akşamlar.
+
+397
+01:05:39,311 --> 01:05:48,152
+Sistemimizin çalışması, sistemimizin tüketici ve işletmeciyi aynı platformda buluşturan bir aracı olarak çalışacaktır.
+
+398
+01:05:49,271 --> 01:06:01,572
+Özellikle alışveriş merkezlerinde mağazalara yerleştirdiğimiz indoor position cihazları ve akıllı telefonlar ile geliştirdiğimiz mobil uygulamalar birbirleri arasında bir sinyal ile haberleşeceklerdir.
+
+399
+01:06:02,324 --> 01:06:18,324
+Müşteriler bu mobil uygulama aracılığıyla AVM içerisindeki mağazaların konumlarını öğrenecek. Müşteriye en yakın mağazadaki sensör mobil uygulamayla iletişime geçecek ve eğer varsa kampanyalar, indirimler müşteriye bildirilecektir.
+
+400
+01:06:19,668 --> 01:06:30,307
+Bu işlem her bir müşteri ve mağaza için yapılacak. En yakındaki müşteri ve en yakındaki mağazadaki cihaz birbiriyle haberleşecektir. Bir sonraki sunuma geçebilir miyiz?
+
+401
+01:06:32,327 --> 01:06:38,268
+Sistemimizin genel kullanımı ilk aşamada firmalar ve kullanıcılar üyelik alarak platforma katılacaktır.
+
+402
+01:06:38,675 --> 01:06:44,516
+Firmalar indirimli ürünlerin veya yeni gelen ürünlere reklamlarını yaparak potansiyel müşterilerine ulaşacaktır.
+
+403
+01:06:45,115 --> 01:06:49,195
+Müşteriler ise indirim ve yeni ürünler hakkında bilgilendirilmiş olacaklar.
+
+404
+01:06:49,976 --> 01:06:56,996
+Müşteri istediği kategorideki ürünlerini listeleyip indirimli ürünler hakkında bilgi sahibi olabilecektir.
+
+405
+01:06:56,996 --> 01:06:58,935
+Bir sonraki.
+
+406
+01:06:59,764 --> 01:07:13,564
+Açık kaynak olarak Google haritalar ve projenin gerçekleştirileceği kapalı mekanın teknik çizimi uygun koşullarda birleştirilerek kullanacağımız streaking cihazlarının anlayacağı hale getirilecektir.
+
+407
+01:07:14,284 --> 01:07:19,284
+Bu şekilde ayrıntısız haritayı teknik çizimlerle ayrıntılı ve kullanışlı hale getirmiş olacağız.
+
+408
+01:07:20,304 --> 01:07:27,124
+Mekanın teknik çizimi parça parça çizilecek. Bu sayede projenin kolay kontrol edilmesinin olanak sağlanacak.
+
+409
+01:07:27,487 --> 01:07:34,987
+Öl, parçala, yönet mental tesiyle. Böylelikle kullanıcı dostu bir arayüz elde etmiş olacağız.
+
+410
+01:07:37,347 --> 01:07:46,107
+Pazar alanımız, dar alanda çok mağaza sahibi olan AVM ve pasajlar gibi mekanlara girmektedir.
+
+411
+01:07:46,967 --> 01:07:54,027
+Teknolojinin gelişmesiyle, yapay zekanın gelişmesiyle birlikte bu alanların daha da çok artacağına inanıyoruz.
+
+412
+01:07:54,708 --> 01:08:05,688
+Sunumumuz bu kadardı. Kaynakça kısmımız, araştırma kısmımız da buralar. Bizi dinlediğiniz için teşekkür ederiz. Sağ olun.
+
+413
+01:08:08,387 --> 01:08:21,644
+Teşekkürler arkadaşlar. Çok fazla metin vardı slide'larda. Hiç şekil yoktu. Hiç yani grafik yoktu. Bir de...
+
+414
+01:08:21,811 --> 01:08:42,931
+Bazen mesela o slide'lardaki o metinleri anlatmak yerine okundu. Bunları ben hep söylüyorum ya, slide'lar arkadaşlar sadece bir yol göstermek için. Bunu geçen hafta da söyledim. Konuyu anlatırken de söyledim. Öyle. Ama teşekkürler yine de.
+
+415
+01:08:44,756 --> 01:09:02,416
+Hocam, biz Bimbir formunda anlattığımız bilgileri bir daha koymak istemediğimiz için daha çok araştırdığımız yöntemleri anlatmak istedik. Yoksa Bimbir formunda proje ve paketlerden bahsetmiştik. Bir daha aynı şeyleri buraya koymak istemediğimiz için iki farklı ödev olduğu için biz bu şekilde yapmıştık ama tabii dediğiniz gibi teşekkür ediyoruz.
+
+416
+01:09:04,216 --> 01:09:07,316
+Söyle bir bakalım mı hızlıca slidelerinize?
+
+417
+01:09:07,316 --> 01:09:07,416
+Evet.
+
+418
+01:09:21,332 --> 01:09:28,811
+Mesela şurada çok fazla metin var. Çok dolu. Bir sonraki de öyle.
+
+419
+01:09:42,228 --> 01:09:55,868
+Yani mesela burada iki tane, üç tane böyle nokta koyup, mesela dört kelime, beş kelime koyup onları mesela anlatmanız lazım, okumamanız lazım.
+
+420
+01:09:57,908 --> 01:10:02,608
+Ama yine de hani bu yöntemleri anlatmanız güzel.
+
+421
+01:10:09,811 --> 01:10:12,851
+Teşekkürler arkadaşlar. Diğer gruba geçelim.
+
+422
+01:10:16,532 --> 01:10:18,752
+Ben hemen, hızlıca, yakam paylaşayım.
+
+423
+01:10:26,963 --> 01:10:28,144
+Ekranım geldi mi?
+
+424
+01:10:28,783 --> 01:10:28,984
+Evet.
+
+425
+01:10:33,423 --> 01:10:34,463
+Grup 1.
+
+426
+01:10:35,743 --> 01:10:37,343
+Grup 1, evet.
+
+427
+01:10:38,583 --> 01:10:40,644
+Kim yükledi arkadaşlar ödevinizi?
+
+428
+01:10:42,283 --> 01:10:44,123
+[öğrenci] yükledi.
+
+429
+01:10:46,003 --> 01:10:46,543
+Bir saniye.
+
+430
+01:10:46,583 --> 01:10:49,123
+Evet, tamam. Tamam, görüyorum. Evet, tamam.
+
+431
+01:10:49,743 --> 01:10:50,323
+Tamamdır.
+
+432
+01:10:52,595 --> 01:11:03,095
+Merhabalar, bugün size kanser tanılarında görüntü işleme ve yapay zekâ desteğiyle lezyon seviye tespitinin konu edinen projemizden bahsedeceğiz.
+
+433
+01:11:03,095 --> 01:11:06,095
+Akış olarak öncelikle...
+
+434
+01:11:06,836 --> 01:11:31,556
+Tanser hayatımız için nasıl bir risk oluşturuyor? Bunu dünya genelindeki istatistiklerle size aktaracağız. Erken teşhisin öneminden bahsederek mevcut da hangi çalışmalar yapılmış, biz bu çalışmalardan farkı ne vaat ediyoruz? Bunları aktaracağız. Ardından da projemizi nasıl planlıyoruz? Nasıl çıktılar elde etmeyi öngörüyoruz? Bunlardan da bahsederek sunumumuzu sonlandıracağız.
+
+435
+01:11:32,692 --> 01:11:43,832
+Neden kanser teşhisi konusuna odaklandık? Bununla başlamak istiyoruz. Kanser, dünya genelinde ölümle sonuçlanan hastalıklar arasında ikinci sırada bulunuyor.
+
+436
+01:11:44,192 --> 01:11:54,672
+Fakat erken teşhis yapılabilmesi durumunda farklı türleri de bulunan bu hastalıkla savaşabilmemiz, ölümle sonuçlanma oranlarını düşürebilmemiz mümkün.
+
+437
+01:11:54,672 --> 01:12:12,192
+Global çaptaki istatistiklere baktığımızda erken teşhis yöntemleri geliştirilmiş, özellikle görüntüleme tetkikleriyle erken teşhisin günümüzde de aktif olarak kullanıldığı akciğer, meme kanseri gibi kanser türlerinin pastada çok ciddi.
+
+438
+01:12:12,192 --> 01:12:27,672
+Bir dilim oluşturduğunu görüyoruz. Dünya genelindeki istatistiklere bakmaya devam ettiğimizde 2023 yılında 20 milyon yeni kanser vakası tespit edilmişken bu vakalardan 10 milyonunun ölümle sonuçlandığını görüyoruz.
+
+439
+01:12:28,015 --> 01:12:40,075
+Bu tablo hali hazırda çok ciddi bir tabloyken, 2040 yılına kadar bu vakalarda %60'lık bir artışla 30 milyon yeni kanser vakasının daha olacağı görüyor.
+
+440
+01:12:40,479 --> 01:12:56,399
+Bu artışın da büyük bir kısmının nüfus sayısının fazla olduğu, gelişmiş ülkelere kıyasla sağlık hizmetlerine erişimin düşük, sağlık altyapısının yetersiz olabildiği, orta ve düşük gelirli ülkelerde olabileceği açıklanmış.
+
+441
+01:12:57,119 --> 01:13:08,479
+Paylaşılan bu istatistikler durumun ciddiyetine, ölüm oranlarına düşüş sağlanabilmesi için çalışmalara başlanılmasının aciliyetine oldukça dikkat çekiyor.
+
+442
+01:13:08,479 --> 01:13:34,979
+Peki neler yapabiliriz? Ölüm oranlarında düşüş sağlanabilmesinin anahtarı kanserin erken teşhis edilebilmesinden geçiyor. Ne yazık ki günümüzdeki vakaların %50'sinde hastalığın tespiti ileri seviyelerde yapılabiliyor. Bu da hastaların tedavilerinde gecikmelerine, hastalığın ilerlemesine, kanser hücrelerinin sıçrama yapıp vücuda dağılabilmesine sebep olabiliyor.
+
+443
+01:13:35,439 --> 01:13:48,999
+Tüm bu durumlar göz önüne alındığında geliştirilecek yöntemlerin özellikle orta ve düşük gelirli ülkelerde erken teşhis yöntemlerinin erişilebilir hale getirilmesi için yapılması gerektiği görülüyor.
+
+444
+01:13:49,779 --> 01:13:59,059
+Sağlık sektöründeki mevcut yöntemleri araştırdığımızda erken teşhisteki en büyük yardımcımızın görüntüleme tetkikleri olduğunu gördük.
+
+445
+01:13:59,819 --> 01:14:09,539
+Manyetik rezonans, PET ve bilgisayarlı tomografi gibi görüntüleme yöntemleri kanser seviyesinin tespiti için hali hazırda kullanılan yöntemler arasında.
+
+446
+01:14:10,068 --> 01:14:28,068
+Bu yöntemlerden elde edilen sonuçların doğru ve hızlı bir şekilde yorumlanabilmesi erken teşhisin hızını arttıracağı için erken teşhis oranlarını da arttıracaktır. Erken teşhis oranları arttığında ise hastalık tedaviye daha uyumlu bir aşamada tespit edilmiş olacak.
+
+447
+01:14:28,496 --> 01:14:44,235
+Cerrahi olmayan tedavilerin uygulanabilmesi ve tedavilerden solunç alınabilmesi sağlanacak. Böylelikle tedavi maliyetlerinde de düşüş sağlanarak erken teşhisin orta ve düşük gelirli ülkeler için daha erişilebilir bir duruma gelmesi sağlanabilecek.
+
+448
+01:14:45,255 --> 01:14:55,135
+Tüm bu bahsettiğimiz problemler ve tespit ettiğimiz çözüm yollarına bakarak neden ve nasıl bir model oluşturduğumuzu anlatmaları için sözü arkadaşlarıma bırakıyorum.
+
+449
+01:14:58,163 --> 01:15:07,243
+Teşekkürler [öğrenci]. Bu kısımda ben devam edeceğim. Literatürdeki diğer çalışmalar ve hipotez konusuna değineceğim.
+
+450
+01:15:07,423 --> 01:15:21,823
+Sağlık ve teknoloji sektörlerinin işbirliği görüntüleme tetkiklerine ait sonuçların doğru ve hızlı bir şekilde yorumlanabilmesi için kritik öneme sahiptir.
+
+451
+01:15:22,271 --> 01:15:32,692
+Literatürde yapılan çalışmalar bu işbirliğinin sağlık hizmetlerinin kalitesini ve etkinliğini arttırdığını gösteren çalışmalar bulunmaktadır.
+
+452
+01:15:33,351 --> 01:15:44,471
+Teknolojinin gelişmesiyle birlikte yapay zeka ve derin öğrenme gibi yenilikçi teknolojiler, görüntüleme tetiklerinin yorumlanmasına büyük bir rol oynamaktadır.
+
+453
+01:15:46,100 --> 01:15:53,119
+Bu kapsamda yaptığımız araştırmalar sonucunda önemli bulduğumuz birkaç çalışmayı sizlerle paylaşmak istiyoruz.
+
+454
+01:15:53,699 --> 01:15:59,880
+Bunlardan ilki, 2021 yılında CİM ve arkadaşları tarafından gerçekleştirilen bir çalışma.
+
+455
+01:16:00,287 --> 01:16:16,767
+Ultrason görüntüleri üzerinde özellikle yumurtalık kanseri hastaları üzerinde UNET ve türevleri olan UNET++, UNET-WIT, RESNET ve CNET modellerine dayalı otomatik segmentasyon algoritması uygulanmıştır.
+
+456
+01:16:17,987 --> 01:16:18,967
+Araştırmacılar
+
+457
+01:16:19,359 --> 01:16:40,539
+Kanseri olan hastalarda lezyonun çapı üzerinden tahmin yapan bir model geliştirmişlerdir. Özellikle CNET modeli 0.89'luk Pearson kolorasyon değeri elde etmiştir. Bu sonuçlar yapılan testler doğrultusunda çıktıkların manuel yapılmış olan segmentasyon çıktıkları ile uyumlu olduğunu göstermiştir.
+
+458
+01:16:41,268 --> 01:16:55,668
+Bu çalışma tıbbi görüntüleme alanında yapay zeka tabanlı segmentasyon yöntemlerinin başarılı uygulanabileceğini ve bu yöntemlerin klinik uygulamalarda değerli bir araç olabileceğini göstermiştir.
+
+459
+01:16:56,268 --> 01:17:03,328
+Özellikle yumurtalık kanseri gibi erken tanının kritik olduğu durumlarda doğru ve hızlı bir tanı
+
+460
+01:17:03,699 --> 01:17:10,619
+süreci hastaların yaşam kalitesini arttırabilir ve tedaviye erken başlamasını sağlayabilir.
+
+461
+01:17:11,739 --> 01:17:27,260
+İkinci bir araştırma ise 2020 yılında çoğu ve arkadaşları tarafından gerçekleştirilen koloskobik fotoğrafları inceleyerek rahim ağzı kanserini tespit etmek için derin öğrenme yöntemlerini kullanmıştır.
+
+462
+01:17:27,636 --> 01:17:42,876
+Özellikle Inception, ResNet V2 ve ResNet 152 gibi görüntü işleme algoritmalarını tercih edilmiştir. Bu çalışma SIN ve LAST sistemleri ayrı ayrı test edilmiştir.
+
+463
+01:17:43,199 --> 01:17:57,560
+Lezyonların yüksek ve düşük riskli olacak şekilde iki sınıflandırmasında SIN sisteminde %78.1'lik, LAS sisteminde ise %70.8'lik doğruluk oranı elde edilmiş.
+
+464
+01:17:58,199 --> 01:18:10,359
+Bu sonuçlar kolposkobik fotoğrafların derin öğrenme algoritmalarıyla analiz edilerek rahim ağzı kanserinin tespit edilmesinde başarılı bir yöntem geliştirilebileceğini göstermiştir.
+
+465
+01:18:11,604 --> 01:18:34,884
+Üçüncü araştırmamız, Kizender ve arkadaşları 2015 yılında gerçekleştirdiği çalışmada IOTA veri kümesi üzerinden yumurtalık kanserine ait iki boyutlu B modu statik ultrason görüntülerini kullanarak iyi kötü huyda olacak şekilde ikili sınıflandırma yapılmıştır.
+
+466
+01:18:39,296 --> 01:19:00,195
+LBP histogramlarını kullanmışlardır. Ön işleme uygulamadan önce yapılan testlerde %62'lik bir doğrulama oranı elde edilirken, ön işleme uygulandıktan sonra yapılan testlerde doğruluk oranı %77'ye yükseldi, gözlemlenmiş.
+
+467
+01:19:01,939 --> 01:19:09,399
+Bu çalışmalar tıbbi görüntüleme alanında yapay zeka teknolojilerinin önemli bir potansiyele sahip olduğunu göstermekte.
+
+468
+01:19:10,239 --> 01:19:19,679
+Gelecekte daha fazla araştırma ve geliştirme ile bu tür yöntemlerin klinik uygulamalarda daha yaygın bir şekilde kullanılması beklenmektedir.
+
+469
+01:19:20,679 --> 01:19:21,859
+Bir sonraki slide'a geçelim.
+
+470
+01:19:23,796 --> 01:19:40,576
+Hipotezimiz ise literatürde yapılan çalışmalar incelendiğinde derin öğrenme modelleri ile daha başarılı ve tutarlı sonuçlar elde edildiğinin ancak farklı derin öğrenme modelleri ile beraber kullanılmadığı görülmektedir.
+
+471
+01:19:41,055 --> 01:19:45,015
+Bu da potansiyel bir gelişme alanı olarak karşımıza çıkmaktadır.
+
+472
+01:19:45,811 --> 01:19:53,292
+İkinci bir problemimiz, model eğitimlerinin tek bir veri kümesi üzerinde düşük sayıda gözlem ile yapılmasıdır.
+
+473
+01:19:54,172 --> 01:20:02,011
+Bu durum, modelin genelleme yeteneğini sınırlayabilir ve gerçek dünya verilerine uyum sağlamasını engelleyebilir.
+
+474
+01:20:02,532 --> 01:20:11,271
+Üçüncü olarak, biyomedikal veriler ile görüntü verilerinin ayrı olarak kullanılması da bir diğer problem olarak öne çıkmaktadır.
+
+475
+01:20:13,908 --> 01:20:21,108
+Farklı verik türlerini birleştirilerek modelin daha kapsamlı bir eğitim almasını engelleyebilir.
+
+476
+01:20:22,068 --> 01:20:28,568
+Bu problemleri göz önüne aldığımızda projemizde kümle bir model oluşturmayı hedefliyoruz.
+
+477
+01:20:29,528 --> 01:20:40,387
+Bu kümle modelde farklı derin öğrenme yöntemlerini bir araya getirerek her bir modelin güçlü yönlerini birleştirerek daha güçlü bir model elde etmeyi amaçlıyoruz.
+
+478
+01:20:41,203 --> 01:20:52,023
+Ayrıca modelin eğitimde kullanılmak üzere farklı veri kümesi kaynaklarını birleştirerek modelin daha geniş bir veri yelpadresine maruz kalmasını sağlayacağız.
+
+479
+01:20:52,803 --> 01:21:00,583
+Bu sayede modelin daha genelleyici ve gerçek verilere uyum sağlayabilecek bir yapıda olmasını amaçlıyoruz.
+
+480
+01:21:00,583 --> 01:21:02,303
+Projemiz
+
+481
+01:21:02,931 --> 01:21:14,351
+Derin öğrenme alanında yapılan çalışmalara yeni bir bakış açısı getirerek daha başarılı ve tutarlı sonuçlar elde etmek için potansiyel bir çözüm sunmaktadır.
+
+482
+01:21:15,491 --> 01:21:17,111
+Bir sonraki slide'a geçebiliriz.
+
+483
+01:21:18,192 --> 01:21:21,011
+Burada da sözü [öğrenci] arkadaşımıza bırakıyorum.
+
+484
+01:21:23,011 --> 01:21:23,931
+Merhabalar.
+
+485
+01:21:24,916 --> 01:21:41,636
+Ben size burada projenin ön çalışma kısmından bahsedeceğim. Ön çalışma dediğimiz aslında rojeden bağımsız olarak önceden eğitilmiş modellerin ve yöntemlerin uygunluğunu test etmek için bir ön çalışma hazırlıyoruz.
+
+486
+01:21:41,636 --> 01:21:50,636
+Alt tarafta gördüğümüz şekillerde yüksek kalitedeki ray mağazlı fotoğraflarını, bu bizim ana...
+
+487
+01:21:51,604 --> 01:22:07,283
+setimizi oluşturuyor. Ana veri kümemizi oluşturuyor. Diğer tarafta da ekstra veri kümemiz olarak da tekrar rayım ağızlı fotoğrafları. Bunlar biraz daha düşük kalitedeki fotoğraflarımız.
+
+488
+01:22:07,283 --> 01:22:16,564
+Sağ tarafta gördüğümüz kısımda aslında ön çalışmamızın nasıl yapılacağı açıklanıyor. Girdilerimiz.
+
+489
+01:22:17,043 --> 01:22:32,684
+IOHT, Driven System denilen sistem, aslında IOT denilen nesnelerin interneti, nesnelerin internetinin sağlık hizmetlerine entegre edilmiş şekli.
+
+490
+01:22:32,764 --> 01:22:42,184
+Nesnelerin interneti nedir? Nesnelerin interneti en basit kullanımımız, gün içerisinde otobüslerin kaç dakikada geldiklerini gördüğümüz.
+
+491
+01:22:42,836 --> 01:23:01,456
+Sistemler örnek verilebilir. Burada da sağlık hizmetlerinde kullanılması da bize bütün çekilen hastalıklarda, görüntüleme tekniklerinin kullanıldığı alanlarda verilere ulaşmamızı, otomatik olarak ulaşmamızı sağlayan bir sistem.
+
+492
+01:23:04,500 --> 01:23:24,579
+Derin öğrenme olarak, yani bu aslında buradaki döngü, yani tek bir döngü değil, sürekli farklı algoritmaların kullanılarak, farklı derin öğrenme modellerinin kullanılarak sonuçlarının bize bir ön bilgi olması açısından gerçekleştiriliyor.
+
+493
+01:23:24,579 --> 01:23:30,479
+Burada bizim CNN Encoder denilen konvolüsyonel neural network.
+
+494
+01:23:31,539 --> 01:23:48,819
+Konvolüsyonel sinir ağları, evrişimli sinir ağları olarak geçiyor. Biz bunun içerisinde daha geliştirilmiş olunan aslında Inception ResNet versiyon 2 ve ResNet 152 modellerinin beraber kullanılarak projede kullanılmasını hedefliyoruz.
+
+495
+01:23:58,804 --> 01:24:16,904
+Yaptıktan sonra özelliklerin sınıflandırılmasını da makine öğrenmesi modellerinin tekrar ayrı ayrı her döngüde tekrar farklı bir tanesini kullanarak farklı sonuçlar elde edip bunların bize veri sağlaması için tekrar tekrar ön çalışmayı gerçekleştiriyoruz.
+
+496
+01:24:23,091 --> 01:24:38,091
+Prediction Performance, burada derin öğrenme apısından, tarafından gerçekleştirilen tahmini alıyoruz. Tahminden sonra da patolog tarafından kanserli...
+
+497
+01:24:39,315 --> 01:24:53,975
+Kanserli hücre sonuçlarını inceleniyor. Bunun sonucunda da bize normal veya anormal olarak bir çıktı geliyor. Bunlar da bize projemizdeki ön çalışmayı sunuyor. Bir sonraki slide'a geçebilirsek.
+
+498
+01:25:00,532 --> 01:25:24,831
+Araştırmanın tasarımında, burada bakmamız gereken aslında iki ana konumuz, bağımsız değişkenler ve bağımlı değişkenler. Burada bağımsız değişkenler ve bağımlı değişkenler arasındaki ilişki aslında şöyle, bağımsız değişkenler kişinin işte görüntüleme teknikleri, MR, PET, BT dediği bilgisayarlı tomografi.
+
+499
+01:25:26,771 --> 01:25:38,631
+Manyetik Rezonans Görüntüleme, MGR olarak yazan, kullanılan yönteminde manyetik alan oluşturularak çekilen bir görüntüleme tekniği.
+
+500
+01:25:40,492 --> 01:25:50,872
+BT dediği bilgisayarlı tomografi, bilgisayarlı tomografide de radyo dalgaları ve kullanılıyor, X ışını olarak geçiyor.
+
+501
+01:25:51,667 --> 01:26:01,567
+PET'te daha gelişmiş olan bir teknoloji. Daha çok iç yapıları görüntülememize yarayan, yine tekrar ışın göndererek çalışan bir sistem.
+
+502
+01:26:02,907 --> 01:26:11,727
+Bu bağımsız değişkenler, bağımlı değişkenlerin aslında bağımlı değişkenlere bağlı olan kısım bağımsız değişkenler.
+
+503
+01:26:11,727 --> 01:26:17,767
+Bizim buradan elde ettiğimiz MR görüntüleri, bilgisayarlı tomografi ya da biyomedikal veriler.
+
+504
+01:26:18,195 --> 01:26:26,195
+gibi verilerin sonuçları, hangi sınıfa hitap ettikleri de bizim için aslında sonucu bağımlı değişkenleri oluşturuyor.
+
+505
+01:26:28,596 --> 01:26:45,416
+Autoencoders denilen de aslında bizim kullanacağımız neural network de konvolüsyonel sinir ağlarında tutacağımız verinin daha düşük boyutlarda tutmamızı sağlayan bir sistem.
+
+506
+01:26:45,872 --> 01:26:57,652
+Sağ tarafta görülen grafikte de autoencoders değerimizin 110'u geçtikten sonra hata değerimizin girdiğimizin daha altında olduğu görülmektedir.
+
+507
+01:26:58,112 --> 01:27:01,731
+Ben bu kadarını anlatacağım. Teşekkürler.
+
+508
+01:27:05,332 --> 01:27:18,476
+Ben devam ediyorum. Ben de [öğrenci] ve [öğrenci] arkadaşımızın anlattıklarına istinaden biraz daha işin teknik boyutunu anlatacağım. [öğrenci]'ın bahsettiği literatür araştırmalarına ek olarak...
+
+509
+01:27:18,707 --> 01:27:36,707
+Biz daha iyi neler yapabiliriz bu sonuçları, bu çıktıları? [öğrenci]'ın bahsettiği en son %89'luk bir başarı oranı vardı. Bunu nasıl daha çok arttırabiliriz? Hani %90'ın üstüne çıkartabiliriz üzerine çalışmalar yaptık. Yaptığımız araştırmalar sonucunda ise...
+
+510
+01:27:38,163 --> 01:27:51,783
+Literatürde yapılan araştırmalarda aslında 3 farklı hastanelerden toplanan görüntüleme sonuçları ve sonuçlarına dair bir veri model oluşturma ve yapay zeka modelleriyle eğitme süreci vardı.
+
+511
+01:27:56,307 --> 01:28:13,547
+Tomografi vs. bu imeç sonuçlarına ekstra olarak iki farklı güncel veri seti daha eklemeyi düşündük ve bu veri setlerini birleştirerek daha iyi sonuç alabileceğimizi konusunda planlamalar yaptık.
+
+512
+01:28:13,547 --> 01:28:18,148
+Bu veri setleri ise birincisi Cancer Imaging Arşiv.
+
+513
+01:28:19,956 --> 01:28:37,804
+Güncel kanser verilerinin toplandığı, aslında Uluslararası Sağlık Kuruluşu'nun da beslediği bir veri seti. Anonim olarak veriler besleniyor. Diğeri ise National Center for Biotechnology Information. Burada da imeçlerden görsel verilerin...
+
+514
+01:28:38,003 --> 01:28:45,243
+Görsel verilerden ziyade daha çok sayısal verilerin olduğu, sözel verilerin işlendiği bir veri seti.
+
+515
+01:28:45,243 --> 01:28:54,663
+Şimdi biz burada görsel verilerle sayısal ve sözel verileri harmanlayarak yeni birleştirilmiş bir veri seti oluşturduk.
+
+516
+01:28:54,983 --> 01:29:01,383
+Aslında bu yöntem daha önceki literatürdeki araştırmalarda kullanılmamış yöntemlerdi.
+
+517
+01:29:02,003 --> 01:29:06,003
+Biz bunu oluştururken machine learning tekniklerinden yarattık.
+
+518
+01:29:06,003 --> 01:29:26,003
+Bunlardan bahsedecek olursam, bir tanesi multi-input models. Bu görüntülerin yanı sıra, bu teknik görüntülerin yanı sıra metin, sayısal veri veya diğer türdeki verileri de içerebilen bir modeldir. Örneğin bir görüntü sınıflandırma modeline görüntü...
+
+519
+01:29:26,836 --> 01:29:41,360
+Vesilesiyle birlikte metin açıklamaları veya ekstra gelen etiket verilerini de birleştirmemizi sağlayan bir yöntem. Bunun yanında ikinci olarak da Data Fusion tekniğini kullandık. Yine bu da...
+
+520
+01:29:41,359 --> 01:30:00,920
+Bir önceki tekniğe benzer. Fakat bu farklı türdeki verilerin birleştirilmesini bir araya getirir. Örneğin farklı resim türleri olur, farklı resim formatları olur. Yine bunları bir araya getirilmesini sağlayan yöntemlerden bir tanesiydi. Sonraki slide'a geçebiliriz.
+
+521
+01:30:04,148 --> 01:30:26,688
+Bu model birleştirme işlemini yaptıktan sonra tabii elimizde çok büyük bir artık veri seti bulundu. Bu analiz yöntemlerinde ise bu veri setlerini daha efektif bir şekilde, bu büyük veri setlerini daha efektif bir şekilde nasıl kullanabileceğimizi düşündüğümüzde de autoencoder yöntemini kullandık.
+
+522
+01:30:26,688 --> 01:30:31,368
+Yani autoencoder özellik çıkarımı modelini kullandık.
+
+523
+01:30:32,148 --> 01:30:43,008
+Bu kadar nedir diyecek olursak, girdi verisini temsil etmek ve ardından bu verinin yeniden yapılandırılmasını sağlamak için kullanılan aslında bir yapay sinirağı modeli.
+
+524
+01:30:43,568 --> 01:30:51,148
+Bu büyük verilerin daha düşük boyutlu, convolutional layer'larına ayırarak temsil eden bir veri yöntemidir.
+
+525
+01:31:00,148 --> 01:31:07,328
+Bir algoritmaya modelimizi soktuğumuz zaman daha hızlı ve daha net bir sonuç vermesini sağlıyor.
+
+526
+01:31:07,768 --> 01:31:15,048
+AutoEncoder temelde iki bölümden oluşuyor. Birincisi Encoder, kodlayıcı dediğimiz model. İkincisi ise Decoder.
+
+527
+01:31:16,268 --> 01:31:25,488
+Decoder dediğimiz Encoder tarafından oluşturulan düşük boyutlu temsilciyi orijinal veri setine, veri girdisine dönüştüren modeldir.
+
+528
+01:31:26,195 --> 01:31:37,756
+Bu özellikler genellikle verinin önemli özelliklerini yakalar ve böylelikle daha düşük boyutlu model temsil etmemizi sağlar.
+
+529
+01:31:39,595 --> 01:31:46,036
+Peki bu autoencoder'a ek olarak daha başka neler yaptık diyecek olursak.
+
+530
+01:31:46,775 --> 01:31:51,536
+Bunun yanına bir de transfer learning ekledik. Bu da bir yine machine learning.
+
+531
+01:31:52,340 --> 01:32:01,980
+Yöntemi diyebiliriz. Auto Encoders'ın önerdiği özellikleri başka görevlere de aktarabilme yeteneğine sahip bir yöntem.
+
+532
+01:32:01,980 --> 01:32:17,680
+Aslında burada Auto Encoder'ın kodladığı, özelliklerin çıkarımlarını yaptığı modellerimizdeki içerideki verileri Transfer Learning yöntemiyle yine benzer şekilde modeller üretebilme yetisine sahip bir yöntem.
+
+533
+01:32:20,212 --> 01:32:31,212
+Data Fine Tuning normalizasyon işlemlerimizi gerçekleştirdik. Modelimizi hazırladıktan sonra, yani veri setimizi hazırladıktan sonra...
+
+534
+01:32:32,787 --> 01:32:53,408
+Hiperparametrelerimizi ayarladık. Biz sınıflandırma algoritması olarak aslında CNN'i kullandık. Bu hem en bilindik yöntem, en başarılı yöntem olarak da görülüyor. Diğer literatürdeki araştırmalardaki modelleri CNN'e uyguladığımızda daha yüksek sonuçlar verdiğini gördük.
+
+535
+01:32:53,408 --> 01:33:00,787
+Hani orada birinci sıradaki %89'luk yöntemde CNET yöntemleri falan uygulamışlardı. Bunlar kendi olup.
+
+536
+01:33:00,787 --> 01:33:24,448
+Yöntemler. Fakat o modeller yine CNN algoritmasına sokulduğunda yine başarı oranına yakın bir oran verildiğini gözlemledik. Biz de know-how'ımız olduğundan dolayı düzenlediğimiz büyük veri modeline karşı CNN kullanmayı seçtik. CNN sınıflandırmadan sonra da işte.
+
+537
+01:33:26,387 --> 01:33:42,787
+modelimizin çıktılarını başarılı bir şekilde alabildik. %91'e yakın, %91'i de zorlayan değişkenlik gösteriyor fakat bir başarı sonucu elde ettik test datalarına göre. Bir sonraki slide'a geçebiliriz.
+
+538
+01:33:46,676 --> 01:33:51,676
+Tüm bu işlemleri yaptıktan sonra aslında...
+
+539
+01:33:51,891 --> 01:34:13,571
+Literatürdeki diğer sonuçlarla karşılaştırılabilmesi için ekürisi yani doğruluk oranımız, sonra F1 skor değerimizi makalemizde bunlardan bahsettik. Bu araştırma konularımızı bunlardan bahsettik ve bu projemizi sağlık alanındaki kalkınma planına destek amaçlı hani biz yürütüyoruz aslında.
+
+540
+01:34:13,571 --> 01:34:19,891
+Yurt içi ve yurt dışındaki bu tarz çalışmaların webinarlarına katılım gösteriyor.
+
+541
+01:34:19,891 --> 01:34:45,691
+Burada sağlık alanındaki kalkınma planına biz de destek olmak istiyoruz açıkçası. Onun haricinde Türkiye Onkoloji Birliği ile de iletişim kurarak yine bu yöntemlerimizi onlara da bahsedip, onlara da anlatıp, onlara da destek olmak istiyoruz. Bizim projemizin amacı erken tesis, erken tesisin akabinde erken tedavi planlaması ve kaynakların optimize edilmesi.
+
+542
+01:34:46,292 --> 01:34:53,372
+Olarak açıklayabilirim. Benim anlatacaklarım da bu kadar. Dinlediğiniz için teşekkür ederim.
+
+543
+01:34:55,672 --> 01:34:59,932
+Teşekkürler arkadaşlar. Önceden çalışıyor muydunuz bu konuda?
+
+544
+01:35:01,844 --> 01:35:18,744
+Önceden, hocam ben aslında önceden birlikte çalışmışlığımız, diğer ekip arkadaşlarımızla birlikte çalışmışlığımız yok fakat ben hani üniversite projelerimde ya da öyle literatürden takip ediyordum bu tarz konuları.
+
+545
+01:35:19,564 --> 01:35:26,724
+Evet. Güzel olmuş çünkü hani literatür taraması falan da güzel. Hani dolu olmuş.
+
+546
+01:35:27,604 --> 01:35:29,644
+Slides'larınız da güzel.
+
+547
+01:35:30,044 --> 01:35:31,024
+Teşekkür ederim.
+
+548
+01:35:31,024 --> 01:35:31,764
+Güzeldi arkadaşlar.
+
+549
+01:35:32,684 --> 01:35:33,184
+Beğendim.
+
+550
+01:35:33,244 --> 01:35:34,804
+Anlatılışınız da güzeldi.
+
+551
+01:35:35,084 --> 01:35:36,724
+Tamam, teşekkür ediyorum hepinize.
+
+552
+01:35:37,664 --> 01:35:39,904
+Başka hazır olan var mı arkadaşlar?
+
+553
+01:35:40,224 --> 01:35:43,144
+Sunum normalde tarihi bugün olanlar bitti.
+
+554
+01:35:43,144 --> 01:35:53,144
+Ama eğer daha sonraki tariflerde sunum yapması gerekenlerden eğer hazır olan varsa...
+
+555
+01:35:54,163 --> 01:35:55,463
+Dinleyebiliriz.
+
+556
+01:35:56,884 --> 01:35:58,123
+Yapmak isteyen varsa.
+
+557
+01:36:03,572 --> 01:36:17,431
+Bir tek sadece bir önceki grupta bazılarınız kamera açmadı. Bir tane grup bana mail atmıştı çalıştıkları için orada kamerayı açamadıkları için açmamışlardı.
+
+558
+01:36:19,971 --> 01:36:27,872
+Bu grubun son, son grubun grubu çok güzeldi ama konuşanlardan bazıları bazen kamera açmadı. O da sıkıntı değil de.
+
+559
+01:36:31,539 --> 01:36:34,460
+Açabilirdiniz yine de. Tamam, sıkıntı değil.
+
+560
+01:36:36,239 --> 01:36:42,319
+Sunum yaparken hani ben çünkü bakıyordum ona göre de not veriyoruz çünkü.
+
+561
+01:36:42,319 --> 01:36:51,640
+Hani çünkü sunum yaparken mimikleriniz nasıl işte hani ses tonu, anlatma falan onlara da bakıyoruz.
+
+562
+01:36:51,779 --> 01:36:57,699
+O yüzden kameranın açık olması aslında gerekiyordu ama sıkıntı yok.
+
+563
+01:36:59,699 --> 01:37:22,719
+Şimdi yok mu arkadaşlar başka? Başka sunum yapmak isteyen yok. Sorusu olan var mı? Sorusu olan da yok. Haftaya Polonya'dan gelecek, hoca gelecek arkadaşlar. O işte bizzat okula gelecek. Yine biz duyuru yaparız.
+
+564
+01:37:23,412 --> 01:37:36,412
+Sonra diğer bir tanede, bir tanesi Polonya'dan gelecek, birisi İspanya'dan. İspanya'dan gelen hoca online bir eğitim yapacak. Çünkü o final haftasında gelecek. Final haftasında gelmeden önce online...
+
+565
+01:37:38,100 --> 01:37:44,600
+İşte publication ile ilgili, kendi araştırmalarıyla ilgili bir online sunum yapacak İspanya'dan gelen.
+
+566
+01:37:45,199 --> 01:37:53,340
+Kolonya'dan gelen bizzat haftaya bizim ders saatimizde bizzat okula gelip okulda büyük veriyle ilgili ders anlatacak.
+
+567
+01:37:53,340 --> 01:38:03,140
+Yine duyuru yapacağız. Yani haftaya bizim online sunumumuz olmayacak. O hocanın dersi olacak. Okulda bizzat bizim ders saatimizde.
+
+568
+01:38:04,180 --> 01:38:11,680
+Ona katılımınızı bekliyorum arkadaşlar. Ondan sonraki hafta yine online sunumlarınız devam edecek.
+
+569
+01:38:12,380 --> 01:38:19,079
+16 Mayıs'ta ve 23 Mayıs'ta. Sonra da final haftası finaliniz olacak bizzat yine okulda.
+
+570
+01:38:22,239 --> 01:38:28,279
+Sorunuz var mı arkadaşlar? Söylemek istediğiniz bir şey var mı?
+
+571
+01:38:30,100 --> 01:38:32,440
+Tamam, ben hepinize çok teşekkür ediyorum.
+
+572
+01:38:33,820 --> 01:38:37,660
+Hocam hangi derslikte olur haftaya belli mi? Ya da duyurur musunuz mailde?
+
+573
+01:38:38,620 --> 01:38:49,100
+Onu ben yine duyururum. Çünkü çok kalabalık olursa, yani belki devam, hatta şöyle, şimdi benim bir sizden önce...
+
+574
+01:38:49,171 --> 01:39:17,171
+Yine araştırma teknikte dersim var. Normal doktora, yüksek lisans öğrencilerine, veri biliminden ve siber güvenlikten onlara da var. O ikide başlıyor. Yani bu hoca da ikide başlayacak. Sonra devam edecek işte yediye kadar. Ara ara. Yani bir üç saat bir anlatacak. Sonra biraz ara verip sonra bir de üç saat daha anlatacak. O yüzden hani saat ikiden itibaren gelebilirsiniz. Çok katılım olacak gibi olursa amfide yapmayı düşünüyoruz. Amfi ayarlama.
+
+575
+01:39:17,171 --> 01:39:44,571
+planlıyoruz. Büyük ihtimalle amfide olacak ama biz yine duyurusunu yaparız onun. Tam kesin yerinin duyurusunu yaparız. Çok fazla katılım olmazsa sınıfta da yapabiliriz. Ama büyük ihtimalle hani dediğim gibi o bağlantılı olacağı için mesela üç saat bir konuyu anlatacak büyük veriyle ilgili sonra bir üç saat daha anlatacak. O yüzden amfiyi tutmayı planlıyoruz bu hoca için.
+
+576
+01:39:45,203 --> 01:39:55,803
+Herkes, mesela iki de gelip o üçer saat tamamını dinleyebilsin diye herkes. Ama kesin duyuruyu yaparız yine arkadaşlar.
+
+577
+01:39:57,723 --> 01:39:58,583
+Teşekkürler hocam.
+
+578
+01:39:59,863 --> 01:40:03,683
+Ben çok teşekkür ediyorum hepinize. Sorunuz var mı başka?
+
+579
+01:40:07,923 --> 01:40:12,303
+Tamam arkadaşlar, görüşmek üzere. İyi akşamlar diliyorum hepimize.
+
+580
+01:40:13,303 --> 01:40:15,563
+İyi akşamlar.

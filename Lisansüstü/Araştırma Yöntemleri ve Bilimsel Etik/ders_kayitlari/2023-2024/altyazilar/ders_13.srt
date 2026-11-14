@@ -1,0 +1,2459 @@
+1
+00:02:52,403 --> 00:02:53,403
+Merhaba arkadaşlar.
+
+2
+00:02:55,943 --> 00:03:01,704
+Merhaba hocam.
+
+3
+00:03:01,704 --> 00:03:06,364
+Hemen başlayabilirim isterseniz.
+
+4
+00:03:18,900 --> 00:03:23,680
+Evet, [öğrenci] sizin grup başlayabilirsiniz arkadaşlar. Slice'ları paylaşabilirsiniz hemen.
+
+5
+00:03:24,439 --> 00:03:25,219
+Tamamdır hocam.
+
+6
+00:03:25,259 --> 00:03:30,680
+[öğrenci], [öğrenci]. Hepiniz buradasınız değil mi? [öğrenci], [öğrenci], [öğrenci].
+
+7
+00:03:31,920 --> 00:03:32,620
+Buradayız hocam.
+
+8
+00:03:33,080 --> 00:03:33,520
+Evet hocam.
+
+9
+00:03:34,080 --> 00:03:34,319
+Tamam.
+
+10
+00:03:34,980 --> 00:03:41,100
+Hocam, pardon. Biz sınıftayız da sınıfa geliyor muydunuz acaba? Beş, altı kişi varız burada.
+
+11
+00:03:42,620 --> 00:03:44,259
+Hani online dedik ya hep.
+
+12
+00:03:45,000 --> 00:03:45,560
+Tamam hocam.
+
+13
+00:03:46,419 --> 00:03:54,120
+Yani fark etmez, okuldayım da ben. Hani hep online yapıyoruz ya sunumların hepsini. Online yaptık ya şimdiye kadar.
+
+14
+00:03:54,579 --> 00:03:57,679
+Tamam hocam, olur fark etmez. Biz online'da katılırız.
+
+15
+00:03:57,919 --> 00:03:58,939
+Tamam, tamam.
+
+16
+00:04:02,580 --> 00:04:05,260
+Ben uygunsanız başlayayım hocam.
+
+17
+00:04:05,460 --> 00:04:05,980
+Tabii.
+
+18
+00:04:07,560 --> 00:04:12,880
+Bizim proje konumuz aslında yapay zeka ve etik.
+
+19
+00:04:13,160 --> 00:04:26,379
+Yani daha doğrusu yapay zekanın verdiği kararların ne kadar etik ve adaletli olduğuna dair bir çalışma yürüttük.
+
+20
+00:04:28,564 --> 00:04:39,544
+Bu projenin özgün değer, yöntem, yönetim ve yaygın etkilerini daha sonrasında detaylı olarak anlatacağız.
+
+21
+00:04:40,531 --> 00:04:56,651
+Konumuz bu şekilde. Ben özgün detaylı, özgün değerden başlayayım. Projede aslında bizim özgün değerimiz yapay zeka, şöyle açıklayayım, günümüzde yapay zekalar hızlı bir şekilde gelişiyor.
+
+22
+00:04:56,651 --> 00:05:01,651
+Ve biz çoğu zaman yapay zeka sistemlerinden bir karar vermesini bekliyoruz.
+
+23
+00:05:02,740 --> 00:05:10,160
+Bu kararların etik çerçevesinde verilip verilmediği ile ilgili bazı şüpheler doğabiliyor.
+
+24
+00:05:11,259 --> 00:05:28,280
+Bizim bu projede özgün değerimiz aslında bu yapay zeka algoritmalarının etik ilkelerle uyumlu hale getirilmesi ve şeffaflığın bu süreçlerde nasıl sağlanabileceği ile ilgili pratik çözümler sunulması.
+
+25
+00:05:29,108 --> 00:05:43,508
+Bu projede hedeflerimiz bu algoritmaların çıktıklarının etik boyutunu incelemek en başta ve bu literatürdeki bununla ilgili çalışmaları analiz etmek.
+
+26
+00:05:43,508 --> 00:05:54,748
+Daha sonrasında adalet ve şeffaflık ilkelerini bu sistemle nasıl entegre edebileceğimizi
+
+27
+00:05:56,019 --> 00:05:59,860
+Bulmak ve bunlarla ilgili bazı yöntemler geliştirmek.
+
+28
+00:06:01,919 --> 00:06:07,879
+Genel olarak özgün değerimiz bu şekilde ilerliyor diyebilirim.
+
+29
+00:06:09,319 --> 00:06:12,500
+Yöntem kısmı için arkadaşıma devredeceğim.
+
+30
+00:06:13,039 --> 00:06:15,539
+Arkadaşım buradan devam edilir.
+
+31
+00:06:16,399 --> 00:06:16,860
+Merhaba.
+
+32
+00:06:18,139 --> 00:06:22,679
+Sunumumda otomatik kar verme süreçlerinde adalet ve şeffaflık konusunda yöntem kısmını ele alacağım.
+
+33
+00:06:23,507 --> 00:06:29,028
+Bu çalışmamızda yapay zekanın yaygın kullanımıyla ortaya çıkan adalet ve şeffaflık sorunlarını incelemeye başladık.
+
+34
+00:06:29,668 --> 00:06:34,767
+Yapay zeka geliştikçe artan adalet ve şeffaflık endişe verici hale geldi.
+
+35
+00:06:35,367 --> 00:06:37,607
+Bu bağlamda 5 farklı aşama adımlarını izleyeceğiz.
+
+36
+00:06:38,187 --> 00:06:41,747
+Bunlardan birincisi, literatür taraması ve kavramsal çerçeve oluşturma.
+
+37
+00:06:42,387 --> 00:06:46,587
+İlk olarak yapay zeka, etik, adalet ve şeffaflık kavramları üzerine...
+
+38
+00:06:46,587 --> 00:06:48,667
+Özellikle ismini söyleyebilir misin?
+
+39
+00:06:49,187 --> 00:06:49,587
+[öğrenci]?
+
+40
+00:06:50,107 --> 00:06:50,387
+Evet.
+
+41
+00:06:51,087 --> 00:06:52,687
+Tamam, tamam [öğrenci]. Devam edebilirsin.
+
+42
+00:06:52,687 --> 00:07:03,947
+İlk olarak yapay zeka, etik, adalet ve şeffaflık kavramları üzerine kapsamlı bir literatür taraması yapılacak ve temel kavramlar tanımlanacaktır.
+
+43
+00:07:04,851 --> 00:07:11,491
+Bir sonraki aşamamız, yapay zeka sistemlerinde adalet ve şeffaflık sorunlarının belirlenmesi.
+
+44
+00:07:12,631 --> 00:07:24,231
+Bu adımda, yapay zeka sistemlerindeki adalet ve şeffaflık sorunlarını belirlemek için literatür analizi, vaka incelemeleri ve uzman görüşleri kullanılacaktır.
+
+45
+00:07:25,831 --> 00:07:31,871
+Bir sonraki aşamamız, adalet ve şeffaflık odaklı yapay zeka modellerinin geliştirilmesi.
+
+46
+00:07:32,692 --> 00:07:40,831
+Bu aşamada adalet ve şeffaflık prensiplerine dayalı yapay zeka modelleri geliştirilecek ve uygulanacaktır.
+
+47
+00:07:42,132 --> 00:07:46,211
+Bir sonraki aşamamız performans değerlendirmesi ve iyileştirme.
+
+48
+00:07:47,132 --> 00:07:56,391
+Burada geliştirilmiş olan yapay zeka modelinin performansı değerlendirilecek, hangi konuda iyileştirme yapılabilir bu alanlar bellenecektir.
+
+49
+00:07:58,451 --> 00:08:15,231
+Son aşamamız, sonuçların analizi ve gelecek çalışmalar. Bu aşamada bulgular analiz edilecek, gelecek çalışmalar için öneriler sunulacaktır. Yapay zeka sistemlerinin adalet ve şeffaflık açısından iyileştirilmesi gerektiği vurgulanacaktır.
+
+50
+00:08:20,372 --> 00:08:35,251
+Bu çalışmamız, yapay zeka sistemlerinin etik açıdan duyarlı, adalet ve şeffaflık açısından incelenen yapay zeka sistemlerinin geliştirilmesine katkı sağlayarak toplumsal fayda odaklı bir araştırma yol haritası sunmayı amaçlamaktadır.
+
+51
+00:08:37,872 --> 00:08:41,271
+Yöntem kısmı bu kadar. Diğer sunum için arkadaşıma devrediyorum hocam.
+
+52
+00:08:50,451 --> 00:08:56,612
+Herkese merhaba, [öğrenci] ben. Proje yönetic meyve kısmını anlatacağım ben de.
+
+53
+00:08:57,791 --> 00:09:04,432
+Öncelikle iş paketlerimizde birinci adım olarak adalet ve şeffaflık açısından önemli olan veri setlerin toplanması kısmı var.
+
+54
+00:09:05,672 --> 00:09:09,372
+Veri setleri toplanırken dikkat edilmesi gereken bazı noktalar var.
+
+55
+00:09:09,731 --> 00:09:14,612
+Toplanan veri setlerin, toplumun tüm kesimlerini adil bir şekilde temsil etmesi gerekiyor.
+
+56
+00:09:15,024 --> 00:09:23,963
+Veri setleri farklı demografik gruplar, coğrafi bölgeler ve sosyoekonomik düzeylerle ayrı olmak üzere geniş bir erfazeyi kapsamaklıdır.
+
+57
+00:09:25,163 --> 00:09:29,963
+Verilerin elde edildiği kaynakların güvenilir ve etik standartlara uygun olması önemlidir.
+
+58
+00:09:31,624 --> 00:09:36,783
+İkinci iş paketi olarak veri setlerinin incelenmesi ve önyargıların belirlenmesi.
+
+59
+00:09:38,163 --> 00:09:41,703
+Ön yargı türlerinden bahsedeyim biraz.
+
+60
+00:09:42,524 --> 00:09:46,503
+Algoritmanın eğitildiği verilerde bulunan sistematik hatalar olabilir.
+
+61
+00:09:46,943 --> 00:09:50,584
+Belirli grupları ya da olayları yeterince temsil etmeyen veriler olabilir.
+
+62
+00:09:51,723 --> 00:09:56,864
+Algoritmanın tasarımında kullanılan kavram ve literatürler de farklı taraflılıklar olabilir.
+
+63
+00:09:58,144 --> 00:10:00,000
+Bu tür ön yargı türlerin...
+
+64
+00:10:00,000 --> 00:10:06,579
+arasında işte inceleme yöntemlerimiz var. İstatistiksel analiz yöntemleriyle inceleme yapabiliriz.
+
+65
+00:10:06,659 --> 00:10:16,159
+Verilerin demografik dağılımı, eksik veriler var mı ve aşırı temsil edilen grupların analiz edilmesi ve adalet göstergelerine bakılabilir.
+
+66
+00:10:16,279 --> 00:10:23,639
+Farklı gruplar arasındaki sonuç farklılıklarının belirlenmesi gibi. Üçüncü adımda önyargıları, idareme yöntemleri var.
+
+67
+00:10:25,491 --> 00:10:45,711
+Öncelikle ön işleme yapılması gerekiyor verimiz üzerinde. Veri temizleme ve dengeleme yöntemleri kullanılmalı. Eksik veya hatalı verilerin düzeltilmesi ya da çıkarılması gerekir. Az temizledilen grupları dengelemek için örnekleme yöntemleri kullanılacaktır.
+
+68
+00:10:46,868 --> 00:11:05,807
+Model eğitim tekniklerimiz var. Bunlar da modeli ön yargıları tespit eden bir başka modelle eğiterek, modelin eğitim aşamasında adalet kısıtlamaları ekleyerek, belirli adalet literatür tarihlerine uymasını sağlamalıyız.
+
+69
+00:11:07,348 --> 00:11:12,988
+Dördüncü adım da, adalet ve şeffaflık ilkelerine uygun yapay zeka modellerinin geliştirilmesi.
+
+70
+00:11:14,836 --> 00:11:20,436
+Algoritmaların nasıl çalıştığını ve kararlılığını nasıl verdiğini açıklayan modeller tasarlanacak.
+
+71
+00:11:21,355 --> 00:11:31,556
+Modelin belli bir adalet ölçüsüne, demokratik parite gibi, fırsat eşitliği gibi uygun olup olmadığını kontrol edilmesi gerekir.
+
+72
+00:11:33,276 --> 00:11:37,556
+Geliştirilen modeller, adalet ve şeffaflık açısından test edilmesi ve değerlendirilmesi.
+
+73
+00:11:38,515 --> 00:11:52,755
+Burada da test yöntemlerimiz olacak. Modelin işte farklı senaryolar altında nasıl performans gösterdiğini test edeceğiz. Modelin sınırlı bir alanda gerçek dünyada denenmesi ve sonuçlarının gözlenmesi adımımız olacak.
+
+74
+00:11:53,695 --> 00:12:06,515
+Değerlendirme kriterlerimizde demografik, parite, eşit fırsat gibi adalet metriklerine göre modelin performansını değerlendireceğiz. Modelin karar süreçlerinin açıklanabilirliği ve gerektiğinde hesap verilir.
+
+75
+00:12:06,515 --> 00:12:29,595
+İstihal konularını işleyebilir olması gerekir. Bunu değerlendireceğiz. Risk yönetimi kısmı, evet. Şöyle bir riskimiz var. Veri toplanırken geniş bir kitleye ulaşılamaması sadece belirli bir kitlenin isteklerinin karşılanmasıyla sonuçlanabilir. Bu durum toplumsal eşitliğin artmasına sebebiyet verebilir.
+
+76
+00:12:30,067 --> 00:12:52,587
+Tedbir olarak da ekonomik, sosyal ve kültürel açıdan farklı kesimlere ulaşılmalıdır. Veri set seçiminde bu adımı gerçekleştirmemiz gerekiyor. Araştırma olanakları da araç gereç teşhidat, bilgisayar, veri setleri, yapay zeka ve makine öğrenme algoritmalarına ihtiyacımız olacak.
+
+77
+00:12:55,220 --> 00:12:58,860
+Siz için teşekkür ederim. Sözü [öğrenci] bırakıyorum.
+
+78
+00:13:11,508 --> 00:13:14,988
+Merhaba hocam, [öğrenci] ben. Ben de size Yargın Etki'den bahsedeceğim.
+
+79
+00:13:16,067 --> 00:13:23,668
+Yargın Etki, bir projenin genişlikte üzerindeki etkisinden ve projenin uygulandığı toplum sektörlerinin üzerindeki geniş şapkıra etkiden bahsetmektedir.
+
+80
+00:13:28,820 --> 00:13:44,360
+Bunu üç kısımda inceledik. Bilimsel, akademik çıktılar. Ekonomik, ticari, sosyal çıktılar. Araştırmacı yetiştirilmesi ve yeni projeleri oluşturması için çıktılar. İlki, bilimsel ve akademik çıktılar.
+
+81
+00:13:50,515 --> 00:13:53,375
+[öğrenci], hangi şeydesin? Ben şeyi kaçırdım ya, slide'ın çıkmış.
+
+82
+00:13:53,375 --> 00:13:54,475
+Bilimsel akademik çıktı.
+
+83
+00:13:56,815 --> 00:13:58,355
+Tamam, pardon.
+
+84
+00:13:58,675 --> 00:14:07,315
+Projemizin hedefi, yapay zeka teknolojinin etik boyutunu araştırarak, otomatik karar verme süreçliğinde adalet ve şeffaflık sağlama.
+
+85
+00:14:07,955 --> 00:14:15,775
+Bu, inceleme sonucunda, bilimsel, uluslar ve uluslararası bir dergileye yönelilir olacak ölçüde bir bilimsel mürit makale tasarlaştırmayı amaçladık.
+
+86
+00:14:16,275 --> 00:14:25,155
+Ekonomik, ticari ve sosyal şıkkılara gelecek olursak, yapar zeka sistemliği tüm kullanıcıya adil ve tarafsız davranmalıdır.
+
+87
+00:14:25,215 --> 00:14:30,315
+Bu da yapar zeka teknoloji kullanıcılarının sistemliğe güven duymasını sağlamaktadır.
+
+88
+00:14:31,575 --> 00:14:36,915
+Ve bundan doğacak olumsuz sonuçlar da kimin sorunlu olacağı belirlenmelidir.
+
+89
+00:14:37,315 --> 00:14:40,155
+Bu hem bileliğin hem de kullanıcı sorumluluklarını içermektedir.
+
+90
+00:14:41,331 --> 00:14:58,291
+Üçüncüsü, araştırmacı yetiştirilmesi üzerindeki ve yeni proje oluşturması üzerindeki çıktılar. Bu da projeyi bir bürüsüyeye dahil edebiliriz. Bu bürüsüyeyle sık sık iletişim halinde olarak ve eğitim vererek bürüsüyeye yüksek lisans veya doktor tezini bunun üzerine yapması teşvik edilebilir.
+
+91
+00:14:59,731 --> 00:15:02,411
+Yayılım tablosundan bahsedecek olursak,
+
+92
+00:15:04,019 --> 00:15:15,740
+Burada faaliyet türleri mevcut, birçok faaliyet türü mevcut, toplantı, çalıştay, uluslar ve uluslararası konferans sunumu, uluslar ve uluslararası yayın, araştırma raporu, web sayfası ve sosyal medya.
+
+93
+00:15:16,779 --> 00:15:26,360
+Burada örnek verecek olursak, ülkemizde Şubat 2021 tarihinde bulunmuş Yapay Zekar Politikoları Derneği mevcut. Onayla iletişime geçebiliriz.
+
+94
+00:15:28,159 --> 00:15:29,439
+Gene bir sonraki adımda.
+
+95
+00:15:33,172 --> 00:15:34,451
+23. 22.
+
+96
+00:15:37,652 --> 00:15:39,231
+Slayt geçebilir miyiz?
+
+97
+00:15:41,371 --> 00:15:44,552
+Projenin oluşmasına öngörülen etkileşikli mevcudu mevcut.
+
+98
+00:15:44,731 --> 00:15:46,451
+Bunu da yine üç kısımda inceledik.
+
+99
+00:15:46,772 --> 00:15:50,792
+Toplumsal, kültürel etki, ekonomik etki ve ulusal güvenlik etkisi.
+
+100
+00:15:50,792 --> 00:15:52,792
+Bu da...
+
+101
+00:15:53,039 --> 00:16:05,120
+Kültür etkiye örnek verecek olursak, yapay zekalı da etik uygulamaları kuruşların davetinin çalışmasına sebep olmaktadır. Bu da çevreye çok daha duyarlı olmasına ve bu sayede insan sahneleşmesine yardımcı olmaktadır.
+
+102
+00:16:06,820 --> 00:16:18,159
+Ekonomik etkiye gelecek olursak, yapay zekalı da teknoloji uygulamaları üretkenli artırırken, bir yandan da çalışma hayatına yer aldığı için,
+
+103
+00:16:18,548 --> 00:16:26,108
+Çalışma hayatını tetkletmektedir. Çalışanlığın işlerini tetkletmektedir. Bu da ekonomik boyut üzerinde bir olumsuz oluşturmaktadır.
+
+104
+00:16:27,908 --> 00:16:41,988
+Üçüncüsü, uluslar güvenlik. Uluslar güvenlik, mevcut makine öğrenimi teknoloji sayesinde birçok alanda siber savunma, askeri sanayi gibi yoğun füryetlerdeki yüksek derecelik otomasyonlar sağlayabiliyor.
+
+105
+00:16:41,988 --> 00:16:44,488
+Bu da uluslar güvenlik etkisiydi.
+
+106
+00:16:44,980 --> 00:16:47,040
+En kısmı bu kadardı. Teşekkür ederim.
+
+107
+00:16:52,083 --> 00:17:10,763
+Merhabalar, ben de [öğrenci]. Size bütçe ve gerekçesi kısmından bahsedeceğim projemizin. Öncelikle bütçeyle alakalı bir konuşmak gerekirse, bütçe proje yönetiminin önemli bir aşaması. Çünkü eğer yapmaya çalıştığımız proje bir yerden kabul bekleyen bir proje ise,
+
+108
+00:17:11,347 --> 00:17:15,827
+En büyük kabul kriterlerinden biri olacaktır finansal durum.
+
+109
+00:17:16,768 --> 00:17:32,047
+Veya herhangi bir kabul beklemiyorsa veya zaten başlamış bir proje ise de projenin sürdürülebilirliği açısından finansal durumlar ve dolayısıyla bütçenin doğru bir şekilde ayarlanması önemli.
+
+110
+00:17:32,596 --> 00:17:52,596
+durumlar. Baktığımızda birkaç farklı gider tablomuz var. İlki bunlardan makine ve teçhizat giderleri. Burada sunumumuzun önceki kısımlarında bahsettiğimiz gibi belli yapay zeka algoritmalarının kullanılması veya verilerle çalışılması gibi aşamalarımız olacak projede. O yüzden...
+
+111
+00:17:53,107 --> 00:18:14,208
+Bu işlemlere uygun bilgisayarlar ve veri toplama aygıtları, depolama aygıtlarının önceden temin edilmesi önemli. Burada teknik özellikleri ve kullanım gerekçeleri de belirtilmiş. Bu makine ve tehditizat giderleri toplamda 85.000 TL gibi bir bedele gelmiş projemize uyumlu olması için.
+
+112
+00:18:15,127 --> 00:18:20,208
+Bir başka gider tablosuna bakalım dersek bir sonraki.
+
+113
+00:18:21,140 --> 00:18:38,120
+Sarf giderleri. Burada da yine verilerle çalışacağımız ve projemizin sonuçlarını ya da süreçlerini insanlarla paylaşabilmek için belirli giderlerimiz olacağı için bu giderler de burada listeleniyor.
+
+114
+00:18:39,476 --> 00:18:56,695
+Flash disklere ihtiyacımız olacak. Verilerin büyük hard disklerden, büyük sunuculardan başkalarına aktarılması için. Aynı zamanda bazı kırtasiye masraflarımız olacak. Türlü başvurular yapmak veya türlü konferanslarda kendimizi gösterebilmek için.
+
+115
+00:19:07,347 --> 00:19:29,347
+Yer alan, ürün olmayan, aynı zamanda sarf gideri de sayılamayacak bazı giderler. Bu giderlerden biz kiralık ofis kiralanması ve veri normalizasyonunun başka birileri tarafından yapılması gibi bazı hizmet alımları.
+
+116
+00:19:29,779 --> 00:19:45,899
+veri normalizasyonu, projemizde zaman ayırmamıza değmeyecek bir alanda. O yüzden biz de bununla ilgili dış bir kaynaktan hizmet almak gibi bir fikre sahip olduk.
+
+117
+00:19:48,596 --> 00:20:00,000
+Bir sonraki sunuma geçebilirsek. Temsil ve tanıtma giderleri şu şekilde bizim için çok önemli. Biz istediğimiz kadar projede büyük hesaplamalar yapıyoruz.
+
+118
+00:20:00,000 --> 00:20:18,000
+Güzel bir proje yürütelim. Eğer bu projenin sonuçlarını, edindiğimiz sonuçları aktaramazsak insanlara veya gerekli şirketlere, gerekli kurumlara bizim için önemli olmayacaktır. O yüzden temsil ve tanıtma giderlerimiz olacak. Burada gördüğümüz gibi kırtasiye ve ufak bir konferans tarzı bir...
+
+119
+00:20:18,740 --> 00:20:40,059
+Bu giderden bahsediyoruz. Bundan sonra da bizim saha çalışmalarımız geliyor. Yeni gider kalemleri olarak. Yurt içi ve yurt dışı olarak ikiye ayrılmış. Yurt içi saha çalışmamız birkaç farklı şehirde güzel planlanmış bir halde bazı saha çalışmaları içeriyor.
+
+120
+00:20:46,963 --> 00:20:59,683
+Burada bizim için önemli olan noktalardan biri seçtiğimiz yurt içi şehirlerindeki veri merkezi ve sunucuların ne kadar fazla olduğu gibi bazı fikirler oldu.
+
+121
+00:20:59,683 --> 00:21:02,723
+Bunun dışında bir de yurt dışı sağ çalışması düşündük.
+
+122
+00:21:03,183 --> 00:21:12,943
+Bu yurt dışı sağ çalışması için de Finlandiya'da dünyanın en büyük veri merkezlerinden birine bir ziyaret gibi düşündük.
+
+123
+00:21:13,543 --> 00:21:14,963
+Onun da aynı şekilde bu iki...
+
+124
+00:21:14,963 --> 00:21:18,383
+tabloda giderlerini görebilirsiniz bütçe açısından.
+
+125
+00:21:21,623 --> 00:21:24,963
+Bu yurt dışı sağ çalışmasının da bizim için...
+
+126
+00:21:25,428 --> 00:21:36,067
+Bizim için anlam ve önemi burada yazıyor. Az önce değindiğim gibi Avrupa'daki en büyük veri merkezlerinden biri olması bizim için global anlamda büyük bir fayda sağlayacaktır.
+
+127
+00:21:36,067 --> 00:21:46,067
+Bunun dışına baktığımızda burs yerlerimiz var ve bu burs yerlerimiz çok fazla olmasa da bu tabloda yer verildi. Burs miktarı...
+
+128
+00:21:46,963 --> 00:22:06,403
+Hesaplanırken şunlara dikkat edildi. Çalışma çalışmama durumları ve bursiyerlerin eğitim durumları. Bunlar önemli kısımlardı bursiyer ücreti tablomuzda. Ve bunların hepsini genel bir tabloda bizden toplamamız isteniyordu en sonunda.
+
+129
+00:22:13,299 --> 00:22:15,099
+sahip olduk diyebiliriz.
+
+130
+00:22:16,220 --> 00:22:17,259
+Sunumumuz bu kadardı.
+
+131
+00:22:18,339 --> 00:22:19,740
+Dinlediğiniz için teşekkürler.
+
+132
+00:22:27,284 --> 00:22:37,104
+Teşekkürler arkadaşlar. Yönteminize bakalım hemen hızlıca. Nasıl yapmıştınız yöntemi? Hızlıca ona bakalım. Sonra diğer gruba geçelim.
+
+133
+00:22:43,220 --> 00:22:47,160
+Slide'dan mı gösterelim, onu soracak.
+
+134
+00:22:47,759 --> 00:22:49,140
+Evet, slide'dan [öğrenci].
+
+135
+00:22:56,211 --> 00:23:00,192
+Yöntem, yapay zeka sistemlerinin adalet şefkine incemi.
+
+136
+00:23:03,112 --> 00:23:06,451
+Burada beş farklı madde ele almıştık hocam.
+
+137
+00:23:08,291 --> 00:23:19,211
+Literatür taraması, yapay zeka sistemlerinin adalet ve şeffaflık sorunlarının belirlenmesi, adalet ve şeffaflık odaklı yapay zeka modellerinin geliştirilmesi.
+
+138
+00:23:19,955 --> 00:23:29,435
+Performans değerlendirip bu performansı iyileştirme, bir de sonuçların analizi ve gelecek çalışmalara öneriler sunmaktır.
+
+139
+00:23:30,996 --> 00:23:35,155
+Evet, tamam. Tamam, teşekkürler.
+
+140
+00:23:38,135 --> 00:23:45,855
+Yani bu şimdi bir ön, yani bunları bunları yapacağız diye bir öneri değil mi? Tamam, yani.
+
+141
+00:23:48,819 --> 00:24:10,139
+Yapay zeka modellerini ne yapacaksınız mesela bunun? Hani ikinci adımdaki yapay zeka modellerinin geliştirilmesi. O yapay zeka modeli ne yapacak tam olarak? Ya da nasıl bir yapay zeka modeli olacak?
+
+142
+00:24:11,092 --> 00:24:26,311
+Şöyle hocam, bu geliştireceğimiz yeni yapay zeka modeli de diğer yapay zeka modellerinin çıktıklarının aslında bizim belirlediğimiz etik kurallara uygun olup olmadığını kontrol eden bir yapay zeka olacak.
+
+143
+00:24:26,551 --> 00:24:27,531
+Yani şey gibi düşünüyorum.
+
+144
+00:24:27,531 --> 00:24:31,211
+Hocam hem adaletli hem de şeffaf bir yapay zeka modeli olacak yani.
+
+145
+00:24:33,352 --> 00:24:34,932
+Yani biraz alacağız yani.
+
+146
+00:24:35,167 --> 00:25:01,167
+Şey gibi düşünebiliriz, elektrikli, insansız arabalar meydana geldiğinde, böyle bir kaza durumunda verilen kararın etik ve adalet çerçevesinde doğru bir karar mı olmadığını, bizim belirlediğimiz tabii sınırlar içerisinde, onu karar veren bir...
+
+147
+00:25:01,844 --> 00:25:03,943
+Ekstra bir yapay zeka gibi düşünebiliriz.
+
+148
+00:25:07,284 --> 00:25:24,364
+Hatta bunun çok güzel bir şeyi var, filmi var. Bir tarafta 50 kişi var trende, bir tarafta da oğlu var mesela. Bu duyguda insan oğlunu kurtarabilir 50 kişi dışında. Ama yapay zekanın burada nasıl bir karar vermesi çok önemli. Burada adaletli olması önemli.
+
+149
+00:25:26,304 --> 00:25:30,284
+Yani siz orada o self-driving kar...
+
+150
+00:25:30,804 --> 00:25:35,584
+Karar verirken, işte adaletli davranacak şekilde bir self-driving kar. Öyle mi?
+
+151
+00:25:36,844 --> 00:25:37,104
+Yani.
+
+152
+00:25:38,144 --> 00:25:48,163
+Daha adaletli, daha şeffaf. Hani bu kararların nasıl alındığına dairene herkesin bilinçlenebileceği şekilde şeffaf bir model olmasını planladık.
+
+153
+00:25:50,284 --> 00:25:56,644
+Tamam. Evet, güzel arkadaşlar. Tamam. Fikir güzel. Evet, güzel fikir. Tamam.
+
+154
+00:25:57,268 --> 00:26:19,127
+Ama uygulaması, yani bunu uygulaması biraz zor. Yani ne yapacağınıza bağlı. Şöyle basit bir şey olabilir, bir model olabilir mesela. Bir classification modeli mesela. En basitinden. O yapılabilir. Hani onu siz yaparsınız. Onda ne olabilir şeffaflık?
+
+155
+00:26:25,428 --> 00:26:40,108
+Baist olmaz, daha böyle, yani onda ön yargı olmaz, datalar daha şeffaf data olabilir, yani hani daha böyle öyle bir model geliştirilebilir, öyle şey denilebilir.
+
+156
+00:26:40,108 --> 00:26:42,108
+Tamam, ya da senin bahsettiğiniz...
+
+157
+00:26:42,108 --> 00:26:52,528
+Amacımız aslında bir farkındalık oluşturmak. Zaten yöntemler kısmında belirlediğim son aşamada olduğu gibi, gelecek çalışmalar için öneriler sunulacaktır demiştim.
+
+158
+00:26:52,912 --> 00:27:00,732
+Burada bir farkındalık yaratıp tüm yapay zeka modellerinin bu şekilde adaletli ve şeffaf olmasını sağlamayı amaçlıyorum aslında.
+
+159
+00:27:02,572 --> 00:27:05,112
+Tamam, teşekkürler arkadaşlar. Diğer gruba geçelim.
+
+160
+00:27:06,832 --> 00:27:11,492
+[öğrenci] çalışkan, [öğrenci], [öğrenci].
+
+161
+00:27:11,492 --> 00:27:13,492
+Bu arada kim de şey...
+
+162
+00:27:14,804 --> 00:27:19,804
+[kişisel bilgi]
+
+163
+00:27:20,364 --> 00:27:21,644
+Geldim hocam, buradayım.
+
+164
+00:27:22,264 --> 00:27:26,144
+Tamam, tamam [öğrenci]. Hoş geldin.
+
+165
+00:27:27,284 --> 00:27:28,464
+Hoş bulduk hocam, sağ olun.
+
+166
+00:27:29,204 --> 00:27:35,604
+Şimdi o zaman üçüncü grup [öğrenci], değil mi? Onlar mı açtı şimdi, kim açtı?
+
+167
+00:27:37,564 --> 00:27:39,364
+Evet hocam, biz açtık.
+
+168
+00:27:39,764 --> 00:27:41,504
+Tamam, başlayabilirsiniz arkadaşlar.
+
+169
+00:27:51,059 --> 00:27:53,059
+Bunu nereden geçiriyorduk üstüne geçir?
+
+170
+00:27:56,596 --> 00:28:06,316
+Herkese burada mı? [öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci]. Hepiniz burada mısınız?
+
+171
+00:28:06,695 --> 00:28:08,296
+Buradayız hocam.
+
+172
+00:28:08,296 --> 00:28:16,476
+Bu büyütme kısmının solunda hemen, sağ altta var ya, büyütme, onun solunda bir tane ekran var, şey var, perde gibi bir şey var, sağ altta.
+
+173
+00:28:17,355 --> 00:28:20,655
+Orası, evet, doğru yaklaştın. Tamam, oldu şimdi.
+
+174
+00:28:33,140 --> 00:28:34,720
+Açlayabilirsiniz arkadaşlar.
+
+175
+00:28:36,840 --> 00:28:38,420
+[öğrenci] burada mısın?
+
+176
+00:28:42,195 --> 00:28:44,355
+Hocam bir saniye ben hemen yazıyorum.
+
+177
+00:28:44,835 --> 00:28:45,695
+Sesim geliyor mu?
+
+178
+00:28:47,195 --> 00:28:47,835
+Evet.
+
+179
+00:28:47,835 --> 00:28:48,535
+Evet, geliyor, geliyor.
+
+180
+00:28:48,595 --> 00:28:51,155
+Tamam, tamam. Sesim geliyorsa, okey, başlıyorum.
+
+181
+00:28:52,435 --> 00:28:56,795
+[öğrenci], sen misin şu anda konuşan? Kim konuşuyor arkadaşlar?
+
+182
+00:28:57,515 --> 00:28:58,815
+Kameradaşım hocam, benim.
+
+183
+00:28:59,735 --> 00:29:02,015
+Tamam, [öğrenci]. Tamam, başlayabilirsin.
+
+184
+00:29:02,579 --> 00:29:13,039
+Tamamdır. Bugün sizlere sahte haberliğin algılanması ve özetlenmesi projesinden bahsedeceğim. Projeyi [öğrenci] [öğrenci], [öğrenci], [öğrenci] ve ben yapacağız. Yaptık.
+
+185
+00:29:14,003 --> 00:29:20,963
+Şimdi, sahte haberler, dijital çağın en büyük sorunlardan biri olan sahte haberlerle mücadele ile alacağız.
+
+186
+00:29:21,643 --> 00:29:24,563
+Giderek artan internet kullanım ve bilgi yarışımın kolaylıklı.
+
+187
+00:29:25,243 --> 00:29:28,583
+Ne yazık ki yanıtıcı bilgilerin de hızla yayınmasına zemin hazırlamıştır.
+
+188
+00:29:28,583 --> 00:29:32,283
+Sahte haberler sadece bireylerin gerçekte olan bağını zayıflatmakta kalmıyor.
+
+189
+00:29:32,843 --> 00:29:37,303
+Aynı zamanda toplumların yapısını ve huzurunu bozabilen düzeye girebiliyor.
+
+190
+00:29:42,003 --> 00:29:58,583
+yeteneğini geliştirme amaçlı olan projemizi anlatacağım. Projemizin nihai hedefi, gelişmiş algoritmalar ve yapay zeka teknikleri kullanarak sahte haberleri gerçek zamanlı olarak tespit edilebilen ve toplumun bilgiye dayalı kararlar almasını sağlayacak araçlara sunma hedefiyle ilerleyeceğiz.
+
+191
+00:30:00,000 --> 00:30:28,000
+Yapay zeka kısmından da biraz bahsedecek olursam, bu projede yapay zeka kısmını şeyde kullanacağız, doğal dijit işleme, makine öğrenmesi gibi teknolojileri kullanacağız. Makine öğrenmesinde dört model ile başlayacağız. Dört modelden en verimli olarak CVM'den ekürüs aldık. Diğerleri Random Forest, K&N, NaviBest ve CVM üzerinden deneyip CVM üzerinden devam edeceğiz.
+
+192
+00:30:28,000 --> 00:30:45,200
+devam etmeye kararı aldık. NLP'de de doğal dil işleyip metinler üzerinden teknik çıkarımlar yapacağız. Metnin yapaylığı hakkında bilgi sahibi olacağız. Bunlar da bizim sahte haberleri algılamakta çok işimize yarayacak. Şimdi diğer slayta geçebiliriz.
+
+193
+00:30:53,556 --> 00:30:55,516
+Diğer slide'a. Sesim geliyor değil mi?
+
+194
+00:30:57,896 --> 00:31:01,716
+Evet ama geçtim. Sahte haberle mücadele gözükmüyor mu şu anda slide'a?
+
+195
+00:31:02,676 --> 00:31:05,316
+Sahte haberlerin algılanması ve özetlenmesi.
+
+196
+00:31:06,076 --> 00:31:06,516
+Allah Allah.
+
+197
+00:31:06,876 --> 00:31:08,496
+Sen diğer ekranı mı yansıttın acaba?
+
+198
+00:31:09,596 --> 00:31:09,856
+İyine.
+
+199
+00:31:10,616 --> 00:31:12,576
+Diğer ekranı yansıtmış sanırım hocam.
+
+200
+00:31:17,715 --> 00:31:18,556
+Değişmiyor mu?
+
+201
+00:31:19,375 --> 00:31:20,235
+Yok hiç değişmiyor.
+
+202
+00:31:25,364 --> 00:31:27,703
+Hep ilk sayfadaki slide çıkıyor.
+
+203
+00:31:34,900 --> 00:31:40,960
+Şu an geldi. Ama dördüncü slide geldi. İkinci slide'a dönersin. Tamam.
+
+204
+00:31:43,440 --> 00:31:50,140
+Şimdi sahte haberler genellikle kasıtlı olarak yanlış veya yanıltıcı bilgi yaymak için oluşturan haber makalene diyoruz.
+
+205
+00:31:50,140 --> 00:31:56,660
+Bu haberler sosyal medya ve diğer çevrimçi platformlar aracılığıyla hızla yayınarak büyüklüklere ulaşabiliyor.
+
+206
+00:31:57,268 --> 00:32:01,947
+Yanıltıcı bilgilerin bu denli hızlı yayılması kamuoyu üzerinde ciddi etkilerin nedeni olabiliyor.
+
+207
+00:32:02,887 --> 00:32:09,387
+Hatta doğru şekilde yayınlanmaması seçimlere kadar siyasi olarak da büyük bir etken oluyor.
+
+208
+00:32:10,728 --> 00:32:12,248
+Diğer slayta geçebiliriz.
+
+209
+00:32:13,567 --> 00:32:15,248
+Sahte haberlerin etkileri.
+
+210
+00:32:16,211 --> 00:32:25,171
+Sahte haberler toplumda karışıklıklara ve çatışmalara yol açabiliyor. Hassas konularda da yanıtıcı bilgilerin verilmesi gruplarası gerilimi arttırabiliyor.
+
+211
+00:32:26,191 --> 00:32:33,311
+Toplumsal barışı bozabiliyor. Dediğim gibi politik ve demokratik yapıları tehlikeye atabiliyor.
+
+212
+00:32:33,571 --> 00:32:40,831
+Bu yüzden sahte haberlerin yayılmasını engellemek, insanları doğru bilgilendirmek toplumsal düzen ve huzur için kalzem bir konu olmuş oluyor.
+
+213
+00:32:42,011 --> 00:32:43,371
+Bir sonrakine geçebiliriz.
+
+214
+00:32:48,756 --> 00:32:54,316
+Sen çok ilerledin bu arada. Ben sahte haberlerin algılanma tekliklerini anlatacağım şimdi.
+
+215
+00:32:55,036 --> 00:32:56,236
+Aynen çok ilerledin.
+
+216
+00:33:03,316 --> 00:33:05,156
+Tamam, bunu anlatacağım.
+
+217
+00:33:06,796 --> 00:33:10,396
+Sahte haberleri tespit etmek için çeşitli teknikler geliştirdik.
+
+218
+00:33:10,496 --> 00:33:16,976
+Bu teknikler arasında haber kaynağını doğrulamak, yayın tarihini kontrol etmek, dil bilgisi ve yazım hatalarını incelemek,
+
+219
+00:33:17,496 --> 00:33:20,856
+önyargı belirtilerini ve duygusal tepkileri analiz etmek yer alıyor.
+
+220
+00:33:21,616 --> 00:33:27,536
+Ayrıca iddiaların doğruluk değilsini sorgulamak ve diğer güvenilir kaynaklarla bildiri çapraz kontrol etmek,
+
+221
+00:33:27,536 --> 00:33:30,596
+sahte haberleri gerçeklerden ayırmada büyük bir önem taşıyor.
+
+222
+00:33:31,316 --> 00:33:34,336
+Ben girişi yaptım, sözü de [öğrenci]'ye devrediyorum.
+
+223
+00:33:38,476 --> 00:33:50,156
+Merhaba, ismim [öğrenci]. Sahte haberle mücadele kısmını ben anlatacağım. Sahte haberler sadece bireylerin yanlış bilgiye maruz kalmasına yol açmakla kalmaz.
+
+224
+00:33:50,336 --> 00:33:56,316
+Aynı zamanda toplumda güvensizlik ve karmaşa yaratır. Bu tehditle başa çıkmak için...
+
+225
+00:33:56,500 --> 00:33:59,000
+atmamız gereken bazı önemli adımlar var.
+
+226
+00:33:59,476 --> 00:34:18,096
+Öncelikle medya okuryazarlığını geliştirmek zorundayız. Medya okuryazarlığı bireylerin medya içeriklerini eleştirisel bir şekilde değerlendirme yeteneğidir. Bu yeteneği geliştirerek sahte haberlerin yayılmasını önleyebilir ve halkımızın doğru bilgiye ulaşmasını sağlayabiliriz.
+
+227
+00:34:18,096 --> 00:34:24,655
+İkinci olarak doğrulma ve haber doğrulama platformlarını kullanmak.
+
+228
+00:34:25,748 --> 00:34:41,608
+Büyük önem taşımaktadır. Doğrulama platformları haberlerin kaynağını ve doğruluğunu kontrol ederek sahte haberlerin tespit edilmesine yardımcı olur. Bu platformları yargınlaştırarak yanlış bilgilerin hızla yayılmasını engelleyebiliriz.
+
+229
+00:34:41,608 --> 00:34:53,748
+Üçüncü adım, sosyal medya platformlarının sahte haberlerin yayılmasını önlemek için adımlar atmak gerekmektedir. Sosyal medya devleri içeriklerin doğruluğu.
+
+230
+00:34:53,748 --> 00:35:00,627
+kontrol etmek ve yanlış bilgilerin yayılmasını engellemek için çeşitli algoritmalar ve pozisyonlar geliştirmelidir.
+
+231
+00:35:01,007 --> 00:35:06,087
+Son olarak yapay zeka ve doğal dil işleme gibi teknolojileri kullanmak.
+
+232
+00:35:06,608 --> 00:35:10,268
+Sahte haberlerle mücadele de büyük bir avantaj sağlar.
+
+233
+00:35:10,427 --> 00:35:18,228
+Bu teknolojiler sahte haberlerin otomatik olarak algılanması ve sınıflandırılmasında etkili bir şekilde kullanılabilir.
+
+234
+00:35:18,688 --> 00:35:20,007
+Diğer slide'a geçebilir miyiz?
+
+235
+00:35:21,652 --> 00:35:39,731
+Şimdi de projemizin temel amaçlarına değinmek istiyorum. Projemiz sahte haberlerle mücadele etmek için birkaç önemli hedef belirlemiştir. Sahte haberleri otomatik olarak algılama, yapay zeka ve makine öğrenimi algoritmaları kullanarak sahte haberleri tespit etmek.
+
+236
+00:35:40,788 --> 00:35:50,127
+Sahte haberlerin özetlerini otomatik olarak oluşturma. Bu sayede kullanıcılar haberlerin doğruluğunu hızlı bir şekilde değerlendirilebilir.
+
+237
+00:35:51,148 --> 00:36:02,807
+Geliştirilen modellerin performansını optimize etme. Bu daha doğru ve etkili sahte haber tespiti için sürekli olarak modellerimizi iyileştirmemizi sağlar.
+
+238
+00:36:03,184 --> 00:36:21,324
+Sahte haberlerle mücadele farkındalık yaratmak, toplumda sahte haberlerin etkileri konusunda bilinç oluşturmak, sahte haber türlerini otomatik olarak sınıflandırmak, farklı sahte haber türlerini ayırt ederek her birine uygun siteciler geliştirmek,
+
+239
+00:36:21,844 --> 00:36:34,304
+Sahte haberlerin yayılımını izleme ve analiz etme, sahte haberlerin nasıl yayıldığını anlamak ve bu yayılımı durdurmak için stratejiler geliştirmek.
+
+240
+00:36:34,824 --> 00:36:40,023
+Bu amaçlara ulaşmak için toplumun her kesimiyle iş birliği yapmamız gerekmektedir.
+
+241
+00:36:41,711 --> 00:36:53,271
+Eğitim kurumları, teknoloji şirketleri ve bireyleri olarak hepimiz sahte haberlerle mücadele üzerimize düşen sorumluluğu yerine getirmeliyiz. Dinleriz, teşekkür ederim.
+
+242
+00:36:55,791 --> 00:37:01,492
+Merhabalar herkese. Bir sonraki slide'a da geçebiliriz. Veri toplama ve ön işlemi.
+
+243
+00:37:03,347 --> 00:37:11,887
+Hocam bir de az önce [öğrenci] arkadaşım da benim linkimden bağlandı. O yüzden ikimizin adı da aynı çıkıyor. Orada şey yapmıyorum ben. İkimiz de aynı adı da işiyor.
+
+244
+00:37:12,127 --> 00:37:13,988
+Evet, o yüzden tamam.
+
+245
+00:37:14,668 --> 00:37:16,708
+Linki çalışmıyor da ben gönderdim hocam.
+
+246
+00:37:17,007 --> 00:37:22,668
+Tamam. [öğrenci] [öğrenci], [öğrenci], [öğrenci], tamam. Şimdi [öğrenci] sen konuştun mu?
+
+247
+00:37:23,127 --> 00:37:24,827
+Yok, ben şimdi konuşuyorum hocam.
+
+248
+00:37:24,847 --> 00:37:27,568
+Daha anlatmadın, tamam. [öğrenci] [öğrenci] anlattın.
+
+249
+00:37:27,568 --> 00:37:28,387
+Evet, evet.
+
+250
+00:37:29,396 --> 00:37:45,356
+Şimdi veri toplama ve ön işleme slide'ına geçebilirsek. Burada yöntemden de bahsedeceğim ben aslında. Sahte haberlerinin algılanması projemizde ilk adım olarak veri toplama ve ön işleme...
+
+251
+00:37:45,356 --> 00:37:48,496
+Kamerayı açmada sıkıntınız yoksa açılmıyorsunuz.
+
+252
+00:37:48,496 --> 00:37:55,376
+Açarım hocam, bu problem değil. Biraz ortamın karanlık ama hocam görebiliyorsunuz herhalde az bir şey.
+
+253
+00:37:57,556 --> 00:38:25,556
+Bu ilk adım olarak veri toplama ve ön işleme aşamasını gerçekleştirdik. Bu aşama projemizin temelini oluşturan önemli bir süreçti. Veri toplama sürecinde çeşitli yöntemler ve araçlar kullandık. Özellikle Python'ın Beautiful Soft kütüphanesini kullanarak web scrapping yöntemini uyguladık. Bu sayede çeşitli web sitelerinden veriler topladık. Kısaca bu kütüphaneden bahsetmek gerekirse bu kütüphanede biz bir kategori seçtik.
+
+254
+00:38:25,556 --> 00:38:39,096
+Belli başlı haber sitelerini yükleyerek işte oradan direkt otomatik olarak database'imizi aslında veri çekebiliyoruz. İstersek bir metnin bir kısmını çekebiliyoruz veya belli başlı kelimeleri arıyorsak o kategoride onları da çekebiliyoruz.
+
+255
+00:38:39,096 --> 00:38:47,235
+Bu sahte haberler aslında veri tabanı oluşturma ve analiz etmeye de bizim veri tabanımızın oluşmasını sağlıyor bu kütüphane.
+
+256
+00:38:47,731 --> 00:38:54,372
+Haber makamelerini otomatik çektik. Bu içerik analiz etmek üzere web veri tabanımıza ekledik.
+
+257
+00:38:55,091 --> 00:39:02,192
+Ayrıca Twitter'ın API ve Facebook'un API gibi API'leri de bize otomatik olarak veri çekme işlemin gerçekleşmesini sağladı.
+
+258
+00:39:02,712 --> 00:39:08,912
+Sosyal medya görüntüleri, etkileşimlerini analize edebiliyoruz bu API'ler sayesinde otomatik şekilde veri tabanımıza bunlar da yükleniyor.
+
+259
+00:39:09,572 --> 00:39:15,731
+Sosyal medyadaki sahte haberlerin yayılımını anlamak ve tespit etmek için bu veriler bizim açımızdan kritik.
+
+260
+00:39:15,731 --> 00:39:43,731
+Bunların yanı sıra sahte habercilik üzerine yapılan akademik çalışmalardan ve önceden sahte haber olarak belirlenmiş içeriklerden de faydalandık. Bu kaynaklar sahte haberlerin karakteristik özelliklerini ve yayılım patenlerini anlamamıza yardımcı oldu. Örneğin, belli haber başlıkların veya metinlerin yapılarını sahte haberlerle sıkça kullandığı gözlemlerdi. Bir sonraki slide'da da şimdi geçmedi, onda da göreceksiniz hocam. Sahte haberleri bir akademik makalemiz var, orada yanlış hatırlamıştım.
+
+261
+00:39:43,731 --> 00:39:55,731
+50 bine yakın sahte haber ve gerçek haber var. Bunların hangisi saatte, hangisi gerçek önceden analiz edilmiş. Bunları da kendi aslında veri tabanımıza yükleyerek organında bir avantaj sağladık algoritman çalışması açısından.
+
+262
+00:39:57,891 --> 00:40:00,000
+Ön işleme aşamasında toplanılan verileri temizledik.
+
+263
+00:40:00,000 --> 00:40:06,439
+Biz dedik, düzenlenmesini sağladık ve analiz için uygun bir hale getirdik. Eksiklikler giderildi, tutarsızlıklar düzeltildi.
+
+264
+00:40:06,439 --> 00:40:13,419
+Bu önceden aldığımız veriler yardımcılığı aracılığıyla da yapıldı. Doğru ve güvenilir bir şekilde işlemesini sağladık verilerin.
+
+265
+00:40:13,479 --> 00:40:20,059
+Verinin ön işleme sürecinde kullanılması, daha sonra geliştirecek modellerin performansını doğrudan etkileyen bir unsur oldu bizim açımızdan.
+
+266
+00:40:20,139 --> 00:40:21,439
+Bir sonraki slide'a geçebiliriz.
+
+267
+00:40:24,532 --> 00:40:52,072
+Bu az önce bahsettiğim slide'daki 50 bin verinin sadece bir tane verisi. İlk baştaki veri yanlış, yalan bir haberden gelen bir veri. İkinci kalımdaki veri ise doğru haber. Böyle birçok örneğimiz var elimizde. Dolayısıyla veri tabanımızın oluşmasına da yardımcı yardım sağladı bu. Bunu da daha sonra kaynakçımızda da belirttik bu verileri. Veri toplama sürecinde kullandığımız araçlar projeye büyük katkı sağladı.
+
+268
+00:40:52,532 --> 00:41:04,612
+Matale dedin ya, o matale, hangi matale? Benim ilgimi çekti de bu konu benim de çalıştığım konu.
+
+269
+00:41:04,612 --> 00:41:18,532
+Bunu sonradan size atalım isterseniz. Kaynağımızı da belirttik, bu verilerin olduğu yanlış hatırlamıyorsam 50 bin tane olması lazım. Fake news, normal news diye geçiyor böyle kalınlarda. O şekilde önceden...
+
+270
+00:41:19,092 --> 00:41:24,032
+Oluşturulmuş bir veri tabanı oldu aslında. Ben size sonradan sunumumuz bitince atayım onu.
+
+271
+00:41:24,172 --> 00:41:36,092
+Tamam. Tamam, teşekkürler. Rica ederim hocam. Bu kütüphane, kullandığımız bu Python'ın Beautiful Soap kütüphanesi web sitelerinden veri toplama ve bu verileri yapılandırmış hale getirmesi...
+
+272
+00:41:36,496 --> 00:41:45,235
+için bize yardımcı oldu. Çeşitli haber sitelerinden kullandığımız apiler aracılığıyla da büyük bir kaynak sağladık. Bloglardan, haber sitelerinden.
+
+273
+00:41:47,827 --> 00:42:11,788
+Anlattığım üzere Twitter API'yi kullandık, Facebook krafı kullandık sosyal medya açısından. Ayrıca sahte habercilik üzerine yapılan akademik araştırmalardan da yararlandık. Daha önce belirttiğim gibi sahte haber üzerine yaratılmış ve tabanlarından faydalandık. Bu sahte haberlerin bizim dinamiklerini anlamamıza yardımcı oldu. Projemizin algoritmasına da büyük katkı sağladı. Diğer slide'a geçebiliriz.
+
+274
+00:42:14,068 --> 00:42:23,628
+Veri toplama ve ön işleme aşamalarını tamamladıktan sonra modelle ve algoritma geliştirme aşamalarına geçtik. Bu aşama projenin en teknik kısmı oldu aslında bizim açımızda.
+
+275
+00:42:24,308 --> 00:42:30,628
+[öğrenci] arkadaşım da bahsetmişti, birkaç algoritmayı denedik. Mesela bir tane Orange diye...
+
+276
+00:42:31,476 --> 00:42:54,536
+Veri madenciliği uygulaması var. Orada algoritmanızı seçip, datanızı yükleyip hangisinin daha doğru bir data, daha iyi bir çalıştığını görebiliyorsunuz. Oraya mesela makine öğrenimi, karar ağaçları, Navi Bias, Random Forest, K&N gibi algoritmaları yükledik. Daha sonrasında hangisinin verimli çalışmasını, çalıştığını görüp o algoritma üzerine yoğunlaştık.
+
+277
+00:42:56,500 --> 00:43:11,000
+Daha sonrasında her bir algoritmanın performansını değerlendirdik. En yüksek doğruluk olanı verdik. Onun üzerine yolunlaştık. Bu süreçte modellerin eğitimi için geniş bir veri setimiz vardı. Onu kullandık. Az önce de bahsettiğim algoritmanın performansları sürekli iyileştirildi bu veri setleriyle.
+
+278
+00:43:11,668 --> 00:43:25,407
+Doğal dil işleme algoritmaları ile haber içeriklerini analiz ettik. Bu algoritmalarda şundan da bahsediyorum. Bu arada mesela kelime köküne göre algoritmalarımız var. Kullanılan kelimelere göre hangisi, yapay zeka hangisi.
+
+279
+00:43:26,407 --> 00:43:39,668
+Bu aslında programın içinde var. Ona göre bize bir veri, o yöntemi kullanarak algoritmayı kullanınca bize diyor ki işte %90 seviyesinde bunun yapay zeka olduğunu buldum veri tabandaki bilgiler.
+
+280
+00:43:39,668 --> 00:43:49,347
+Bilgilere önceden yüklenmiş yabancı, fake news ve normal news olduğunu ona göre aslında ölçüp bize bir yüzde de veriyor.
+
+281
+00:43:51,184 --> 00:43:56,824
+Daha sonrasında modellerin eğitim ve test edilmesi sürecinde geri bildirim döngüleri oluşturularak iyileştirmeler yapıldı.
+
+282
+00:43:57,423 --> 00:44:04,003
+Modellerin performansı arttırılmak için farklı özellikler çıkarıma teknikleri ve öznetirdiği mühendis yöntemleri kullandı.
+
+283
+00:44:04,003 --> 00:44:09,543
+Bu adımlar algoritmaların sahte haberleri doğru bir şekilde tespit etme yeteneklerini geliştirdi.
+
+284
+00:44:10,403 --> 00:44:19,164
+Ayrıca son olarak AP'lerden de güncellenen veri setleri ve sayesinde de bu algoritmamız tam doğru anlamda yüksek bir doğruluk oranıyla.
+
+285
+00:44:19,184 --> 00:44:24,824
+çalışması sağlandı. Beni dinlediğiniz için teşekkür ederim. Sağdaki arkadaşıma sözünü iletiyorum.
+
+286
+00:44:26,684 --> 00:44:38,244
+Bu slide'ı, bu [öğrenci], merhabalar. Bu slide'ı birazcık detaylandırmak gerekirse, önce hani biz modelleme stratejisi olarak birçok farklı teknik kullandık aslında.
+
+287
+00:44:39,023 --> 00:44:42,184
+Makine öğrenmesi olsun, derin öğrenme olsun, doğal dil işlemi olsun.
+
+288
+00:44:42,643 --> 00:44:49,283
+Çeşitli medya platformlarında sahte haberleri tanımlamak için birçok modelden yararlandık.
+
+289
+00:44:49,283 --> 00:44:58,384
+Mesela makine öğrenmesi tekniklerinde işimize yaramasının sebebi verileri analiz edip kalıpları çıkarmak üzere tasarlanmış olması makine öğrenme algoritmalarının.
+
+290
+00:44:58,463 --> 00:45:05,523
+Bu sayede sistem karmaşık ilişkileri tanıyabiliyor, anlayabiliyor ve bu bilgiler doğrultusuna tahminler veya kararlar alabiliyor.
+
+291
+00:45:06,603 --> 00:45:10,283
+Yine derin öğrenme kullandık. Bu da karmaşık kalıpları ve anlamsal...
+
+292
+00:45:10,643 --> 00:45:14,063
+Bilgileri öğrenme potansiyeline sahip olduğundan avantajlı bir konumda.
+
+293
+00:45:14,063 --> 00:45:28,623
+Tabii derin öğrenmenin dezavantajını yaşadık. O da etiketli verilerin bulunabilirliği konusunda, hesaplamanın çok uzun sürebilmesi, masraflı olabilmesi ve yorumlanabilirlik tarafından sınırlı olması.
+
+294
+00:45:28,763 --> 00:45:30,903
+Aynı şekilde doğal dil işleme kullandık.
+
+295
+00:45:31,668 --> 00:45:41,968
+Bu ise kalıpların tanımlanmasında işimize yaradı. Ancak bağlamsal bilgilerin korrelasyonu ve metinsel belirsizliklerle mücadele ettik bu doğal din işleme konusunda.
+
+296
+00:45:44,448 --> 00:45:47,968
+Değerlendirme ve sonuçların analizi slide'ında ise...
+
+297
+00:45:48,692 --> 00:45:57,311
+Analizi iş parçacının hedefi geliştirilen modellerin ve algoritmaların performansının değerlendirilmesi ve proje sonuçlarının analiz edilmesiyle.
+
+298
+00:45:57,311 --> 00:46:00,311
+Bu kapsamda dört...
+
+299
+00:46:01,204 --> 00:46:29,204
+Modelde ele aldık. Birincisi, geliştirilen modellerin algoritmaların performanslarının değerlendirilmesi. İkincisi, modellerin test edilmesi ve farklı metriklerle ölçülmesi. Üçüncü olarak, modellerin gerçek dünya verileri üzerinde test edilmesi ve performanslarının analiz edilmesi. Dördüncü olarak da, elde edilen sonuçların raporlanması ve yorumlanması. Bu mevcut durumda izlenen yol, model optimizasyonu ile tekniklerin kombinasyonu, bu dediğim makine öğrenmesi, tekniklerinin derin...
+
+300
+00:46:29,204 --> 00:46:57,204
+Doğal dil işleme tekniklerinin kombinasyonunu kullandık aslında. Doğal dil işleme yöntemlerini ve derin öğrenme ile birleştirilmesiyle hem metinsel hem de grafik perspektifleri kullanarak daha kapsamlı bir yaklaşım elde etmemizi sağladı. Bu hibrit yaklaşımın daha iyi performans göstermesi ve daha geniş bir kullanım yelpazesini kapsaması beklendi. Bu beklentiyle bir hibrit çalışma yaptık. Ayrıca bu tekniklerin hesaplama maliyetleri nedeniyle optimizasyon...
+
+301
+00:46:57,204 --> 00:47:09,704
+Potansiyeli büyük oldu. Önceden hesaplanmış veriler, ön belliğe alınmış veriler veya belirli bölümler için önceden eğitilmiş algoritmalar kullanmak genel sistemi daha da iyileştirebilir kanaatindeyiz.
+
+302
+00:47:10,044 --> 00:47:14,184
+Ancak bazı doğruluktan, doğruluk payından ödün vermemiz gerekebilir.
+
+303
+00:47:15,024 --> 00:47:21,924
+Son o kısımda da benim iş zaman çizelgesi var. Pardon, bundan sonra bir saatte avramış. İş zaman çizelgesi var.
+
+304
+00:47:24,128 --> 00:47:32,528
+Üç aslında kısmı ayrıldık. Veri toplama ve ön işleme, modelleme ve algoritma geliştirme, bir de değerlendirme ve sonuçların analizli.
+
+305
+00:47:32,928 --> 00:47:38,908
+%40, %50 ve %10 olmak üzere projenin başarısındaki yüzdesel önemlerini burada belirttik.
+
+306
+00:47:40,048 --> 00:47:51,008
+Kim veya kimler tarafından gerçekleştireceği kısmına değindik ve burada da hangi aylarda hangilerini ele alacağı bir nevi ufak bir Gant diagramı çizdik.
+
+307
+00:47:53,427 --> 00:47:55,628
+Son olarak da risk yönetimi var.
+
+308
+00:47:57,668 --> 00:48:02,288
+Oluşabilecek riskler, dört tane risk biz belirledik.
+
+309
+00:48:04,927 --> 00:48:09,168
+İstersen [öğrenci] arkadaşımız burayı yapabilir.
+
+310
+00:48:12,288 --> 00:48:15,668
+Sen devam et [öğrenci], ben başka şey anlatacağım.
+
+311
+00:48:15,887 --> 00:48:16,807
+Peki, tamamdır.
+
+312
+00:48:17,588 --> 00:48:24,588
+Risk yönetiminde dört farklı şey var. Birincisi veri kaynaklarının erişilemez olması. Burada bizim...
+
+313
+00:48:25,043 --> 00:48:47,923
+Bulduğumuz çözüm ana veri kaynaklarından veri anlamaması durumunda. Alternatif çözümler olarak farklı apiler ve web sitelerini araştırmak ve bu web siteleri kullanabilir hale getirmek, veri adına kullanabilir hale getirmek oldu. Ek olarak önceden toplanmış yedek veri setleri de değerlendirilebilir ve kullanılabilir. Bu senaryoda veri toplam ve ön işleme aşamasına ek zaman ve kaynak ihtiyacı doğabilir.
+
+314
+00:48:48,596 --> 00:48:59,315
+İkinci olarak model performansının yetersiz olması sorunuyla karşılaşabiliriz. Burada da karmaşık veya farklı makine öğrenimi modelleri denenir ya da mevcut modellerin ayarları optimize edilir.
+
+315
+00:48:59,315 --> 00:49:09,715
+Gerekirse farklı özellik çıkarma teknikleri veya öz nitelik mühendisliği yöntemleri kullanılır. Modelleme ve algoritma geliştirme aşamasına ek zaman ve kaynak ayırılabilir.
+
+316
+00:49:10,195 --> 00:49:13,496
+Doğal dinişleme algoritmalarının uygulanmasında sorunlar yaşanabilir.
+
+317
+00:49:16,596 --> 00:49:27,996
+Doğal dil işleme algoritmasının istenen performansı sağlayamaması durumunda B planı olarak daha basit ve farklı algoritmalar denilir. Alternatif olarak farklı doğal dil işleme kütüphaneleri de kullanılabilir.
+
+318
+00:49:27,996 --> 00:49:35,996
+Son olarak da değerlendirme ve sonuçların analizinde veri yetersizliği sorunuyla karşılaşırsak da farklı veri setleri veya...
+
+319
+00:49:36,724 --> 00:49:45,784
+Sentetik veriler kullanarak bu boşluğu doldurmaya çalışabiliriz. Gerekirse daha geniş bir veri seti kullanılabilir veya farklı analiz yöntemleri uygulanabilir.
+
+320
+00:49:47,603 --> 00:49:48,804
+Teşekkür ederim.
+
+321
+00:49:49,784 --> 00:49:53,884
+Hocam ben de yapay zekayı kullanacağımız alanlardan bahsetmek istiyorum.
+
+322
+00:49:54,824 --> 00:50:00,000
+Bu alanlarda doğal bilin işlemi, makine örnemi, sentimet alan...
+
+323
+00:50:00,000 --> 00:50:05,039
+görüntü ve video analizi, veri doğrulama ve çapraz kontrol.
+
+324
+00:50:05,539 --> 00:50:11,639
+Doğal dil işlemede yapay zaka doğal dil işleme tekniklerini kullanarak metinleri analiz edebilir.
+
+325
+00:50:12,059 --> 00:50:21,000
+Bu teknikler haber metindeki dil bilgisayar yapıları, kullanılan filmleri ve ifade biçimlerini değerlendirerek sahte haberlerin belirli özelliklerini saptayabilir.
+
+326
+00:50:21,000 --> 00:50:28,000
+Makine öğreniminde makine öğrenimi modelleri büyük veri kümlerinden öğrenerek sahte haberlerin karakteristikleri.
+
+327
+00:50:28,000 --> 00:50:36,440
+Bu modeller, veri setlerindeki örneklerden öğrenilmiş desenleri kullanarak yeni haberlerin sahte olup olmadığını tahmin edebilir.
+
+328
+00:50:37,079 --> 00:50:48,340
+Sentiment analizinde, yapay seka metinlerin duygusal tonunu analiz ederek, sahte haberlerin sıklıkla kullanıldığı manipülatif dil yapılarını tespit edebilir.
+
+329
+00:50:48,739 --> 00:50:54,239
+Sahte haberler genellikle korku, öfke veya aşırı heyecan uyandırmak için tasarlanmıştır.
+
+330
+00:50:54,239 --> 00:50:56,000
+Sentiment analizinde bu duygusunda...
+
+331
+00:50:56,000 --> 00:51:00,579
+...yusul yüklemeleri birlileyerek haberlerin objectiflik düzeyini ölçebilir.
+
+332
+00:51:01,019 --> 00:51:06,800
+Görüntü ve video analizinde gelişmiş görüntü işlemi ve video analizi teknikleri...
+
+333
+00:51:06,800 --> 00:51:12,400
+...yapay zeka tarafından kullanılarak görsel içeriklerin manipüle edilip edilmediğini tespit etmek için kullanılabilir.
+
+334
+00:51:12,960 --> 00:51:19,000
+Veri doğrulumu ve çarpı az kontrolde ise yapay zeka farklı kaynaklarına elde edilen verileri...
+
+335
+00:51:19,000 --> 00:51:24,000
+...hızlı bir şekilde karşılaştırarak haberlerden bilgilerin doğruluk payını kontrol edilir.
+
+336
+00:51:24,000 --> 00:51:33,380
+Bu süreç otomatik olarak gerçekleştirilir ve sahtabellerin yayılmasını önlemek için hızlı bir fitleme mekanizmizmizi sağlar.
+
+337
+00:51:41,172 --> 00:51:49,471
+Son olarak da kaynakçımız da böyle. Bunu zaten hocam sizle paylaşırız o istediğiniz kısmı dilerseniz. Teşekkürler.
+
+338
+00:51:50,572 --> 00:51:55,512
+Teşekkürler arkadaşlar. Raporda vardı değil mi zaten? Ben okumuştum raporumuzu da.
+
+339
+00:51:55,612 --> 00:51:56,751
+Tabii tabii kaynakçı olarak.
+
+340
+00:51:56,751 --> 00:52:04,711
+Kaynaklara bakmadım tek tek. Yani çok ayrıntılı bakmadım. Ama bakarım. Yani hepsi varsa bu anlattığımız şeylerin o kaynaklarda.
+
+341
+00:52:06,592 --> 00:52:07,391
+Aynen öyle.
+
+342
+00:52:08,563 --> 00:52:10,483
+Tamam, bakayım ben ona ayrıntımı.
+
+343
+00:52:12,643 --> 00:52:16,963
+Şimdi derin öğrenme dediniz ya, orada derin öğrenmede ne kullandınız arkadaşlar?
+
+344
+00:52:17,744 --> 00:52:22,864
+Daha spesifik olursak, yani spesifik bir model kullandınız mı?
+
+345
+00:52:22,864 --> 00:52:25,744
+Yoksa kullanacak mısınız?
+
+346
+00:52:25,923 --> 00:52:30,364
+Ya da hani kullanacağız mı dediniz, kullandık mı dediniz orada?
+
+347
+00:52:31,963 --> 00:52:33,364
+Kullanacağız dedik hocam.
+
+348
+00:52:33,983 --> 00:52:35,063
+Tamam, nasıl mesela?
+
+349
+00:52:35,731 --> 00:52:38,791
+Ne kullanacaksınız mesela derin öğrenmeden?
+
+350
+00:52:39,652 --> 00:52:46,851
+Doğal dil işleme kullanacağız dedik aslında hocam ama derin öğrenme kısmını bahsetmiş miyim?
+
+351
+00:52:47,251 --> 00:52:48,271
+Algoritma olarak...
+
+352
+00:52:48,271 --> 00:52:51,231
+Biri bahsetti, biri bahsetti derin öğrenme.
+
+353
+00:52:51,251 --> 00:52:57,092
+Artificial Neural Network, ANN kısmını kullanacağız.
+
+354
+00:52:58,132 --> 00:52:59,012
+Ne yapacak o?
+
+355
+00:52:59,699 --> 00:53:01,159
+Yani ne yapmak için?
+
+356
+00:53:01,579 --> 00:53:09,739
+Yapay sinir ağları kurarak hocam, bu verdiğimiz veriler arasında çok anlaşılamayacak bağlar kurmasını bekleyeceğiz.
+
+357
+00:53:09,739 --> 00:53:14,059
+Aslında ek bir veri olarak kullanmaya çalışacağız diğer tekniklerin yanında.
+
+358
+00:53:15,299 --> 00:53:17,759
+Metinleri sınıflandırabiliriz hocam bu yöntemle.
+
+359
+00:53:19,799 --> 00:53:20,979
+Tamam, evet güzel.
+
+360
+00:53:20,979 --> 00:53:23,459
+Metinler arasındaki bağlantıları sağlayabiliriz belki.
+
+361
+00:53:25,492 --> 00:53:28,452
+Sırayla işledik bunların içerisindeki bağlantıları öğrenebiliriz.
+
+362
+00:53:30,231 --> 00:53:30,512
+Tamam.
+
+363
+00:53:34,092 --> 00:53:39,831
+Doğal dil işleme yöntemlerini kullanabilirsiniz.
+
+364
+00:53:39,831 --> 00:53:43,851
+Evet, doğal dil işleme yöntemleri de bir sürü yöntem var, bir sürü model var.
+
+365
+00:53:45,032 --> 00:53:47,251
+Derin öğrenme de yine bir sürü model var.
+
+366
+00:53:47,492 --> 00:53:49,552
+Bir sürü task var.
+
+367
+00:53:50,867 --> 00:53:56,683
+Ona yaptıracağınız bir sürü şey var. Mesela daha spesifik olsa...
+
+368
+00:53:56,755 --> 00:54:01,916
+Yani şu modeli şunun için kullanacağız gibi daha da iyi.
+
+369
+00:54:02,336 --> 00:54:03,876
+Ben söyleyebilirim isterseniz.
+
+370
+00:54:03,896 --> 00:54:10,356
+Lafınızı kestim ama şey kullanabiliriz, konvalyasyon sinir ağlarını kullanabiliriz derin öğrenmede.
+
+371
+00:54:10,836 --> 00:54:13,115
+Transfer modellerini kullanabiliriz.
+
+372
+00:54:13,376 --> 00:54:16,536
+Arkadaşlarım söylediği gibi yapay sinir ağlarını da kullanabiliriz.
+
+373
+00:54:16,796 --> 00:54:20,735
+O CNN'de görüntülerdeki sahtelikleri tespit edebiliriz hocam.
+
+374
+00:54:21,268 --> 00:54:28,367
+Çünkü görüntüler fake news'ten kastımız sadece metin değil, video içerikleri de olmuş oluyor. CNN'in de yapabiliriz.
+
+375
+00:54:28,987 --> 00:54:34,487
+Tamam, tamam arkadaşlar. Tamam, güzel anlattınız. Teşekkürler. Diğer gruba geçelim.
+
+376
+00:54:36,628 --> 00:54:40,568
+Hocam, grup 1 ve grup 3 yaptı ama grup 2'yi biz...
+
+377
+00:54:40,568 --> 00:54:42,708
+Tamam, [öğrenci] değil mi? Mesaj alın.
+
+378
+00:54:42,708 --> 00:54:45,427
+Evet, tamam. Siz başlayın arkadaşlar.
+
+379
+00:54:47,347 --> 00:54:50,188
+Tamamdır. Ben ekranımı paylaşıyorum.
+
+380
+00:54:51,008 --> 00:54:51,347
+Tamam.
+
+381
+00:54:58,675 --> 00:55:00,155
+Şu anda ekranım geldi mi?
+
+382
+00:55:01,035 --> 00:55:01,615
+Gelmedi.
+
+383
+00:55:03,515 --> 00:55:05,775
+Tamam, tekrardan bakayım.
+
+384
+00:55:10,931 --> 00:55:12,291
+Tamam, geldi şu anda.
+
+385
+00:55:18,451 --> 00:55:33,012
+Herkese merhaba. Biz grup 12 olarak iş süreçlerinde robotik süreç otomasyonunun hız, doğruluk ve değer katkısı üzerine bir bilimsel çalışma yaptık. Onu da sizlerle paylaşmak istiyoruz.
+
+386
+00:55:36,211 --> 00:56:01,932
+4 kişi olarak görev aldık ve toplamda da 8 tane ana başlığımız var. İlk iki ana başlığı, giriş ve özeti ben sunuyor olacağım. Materyal ve yöntemi [öğrenci] arkadaşımız. Bulgular ve RPA'nın artılarını, yani Robotik Süreç Otomasyonu'nun artılarını [öğrenci] arkadaşımız. Tartışma, sonuç ve teşekkür kısmında [öğrenci] arkadaşımız sunuyor olacak.
+
+387
+00:56:02,771 --> 00:56:12,871
+Sunumun bitiminde de test datalarıyla, UiPastüdyo'da bu web otomasyonunu bir sistem demosunu yapmak istiyoruz sizlere.
+
+388
+00:56:13,751 --> 00:56:24,711
+Umarım faydalı ve yeni fırsatlar doğuracak bir anlatım olur. Şimdiden iyi seyirler. Ben özet kısmıyla devam edeyim.
+
+389
+00:56:27,092 --> 00:56:52,092
+Şimdi robotik süreç otomasyonu bilgisayarla çalışan kişilerin, özellikle beyaz yaka dediğimiz kişilerin, kural tabanlı, repetitif tekrarlı, katma değeri düşük ve sıkıcı olarak adlandırdığımız manuel işlerini yazılım uzmanı, yani robotik süreç otomasyon yazılım uzmanları tarafından bu işleri öğrenilip robota...
+
+390
+00:56:53,012 --> 00:57:09,312
+Visual Basic.net ya da C-Shop kodlarıyla öğretilmesi üzerine dayanır. Bu sayede de kişiler artık bu tekrarlayan ve katma değeri şirkete ve kendisine, burada sadece şirkete değil kendisine de asılındı.
+
+391
+00:57:09,312 --> 00:57:18,572
+Çünkü bir kişiyi oturtup şu alanlara sadece şu veriyi gir ya da sadece şu verileri okuduktan sonra şu butona bas demek.
+
+392
+00:57:19,188 --> 00:57:28,987
+Bir saat sonra, iki saat sonra çok sıkıcı bir hale gelecektir ve kişi artık bu yaptığı işten memnun olmayacak ve çalıştığı şirkete de olumlu katkı sağlayamayacaktır.
+
+393
+00:57:29,987 --> 00:57:41,688
+Günümüzde özellikle muhasebe, satın alma, insan kaynakları departmanları başta olmak üzere, lojistik, havacılık, sigorta, enerji gibi
+
+394
+00:57:42,260 --> 00:57:48,520
+Birçok sektörde rutin ve katma değeri düşük işleri insanlar tarafından yapıldığı biliniyor.
+
+395
+00:57:49,360 --> 00:58:05,320
+Robotik süreç otomasyonu ile birlikte haftanın 7 günü 24 saat yorulmadan, sıkılmadan, bölünmeden, başladığı işi sonuna kadar devam eden RPA robotlarını devralmak üzerine tasarlanmıştır.
+
+396
+00:58:05,907 --> 00:58:10,027
+Bu da tabii dijital dönüşümün birinci ayağı olarak şu anda geçmektedir.
+
+397
+00:58:10,507 --> 00:58:24,607
+Özellikle ülkemizde 2018, 2019'dan sonra ve pandeminin de gelmesiyle birlikte robotik süreç otomasyonu yazılımları ilerleme kat etmeye başlamıştır ve bu gittikçe hızlanmaktadır.
+
+398
+00:58:26,708 --> 00:58:36,688
+Bununla birlikte çalışanlar zamanlarının adlı katma değeri daha yüksek, yoruma dayalı ve kendilerini geliştirebilecek alanlara doğru kaymaya başlamışlardır.
+
+399
+00:58:37,248 --> 00:58:48,648
+Biz de bu makalemizde bir veri girişini bir insanla robotun yaptık, karşılaştırmasında doğruluk, hız ve değer etkisini karşılaştık.
+
+400
+00:58:50,148 --> 00:58:52,948
+Şimdi giriş kısmına doğru geliyorum.
+
+401
+00:59:17,076 --> 00:59:28,415
+Daha sonra mail okuyabilir. Mail'in attachment eklerini alabilir. Bunların içerisindeki verileri ekstra dışarı çıkartabilir, alabilir. Daha sonradan bir mail atabilir.
+
+402
+00:59:29,875 --> 00:59:42,255
+Satın alma departmanı ya da insan kaynakları departmanında bir CV'yi alıp CV'yi okuyabilir. Unstructured, structured ya da semi-structured olarak. Şu anda önümüzde gördüğümüz üzere yapay zeka.
+
+403
+00:59:42,804 --> 00:59:49,484
+Doğal dil işleme, görüntü işleme, optical character recognition, şu anda document understanding tool'ları var.
+
+404
+00:59:49,924 --> 01:00:00,864
+UiPet'in özellikle. Bu tool'larla birlikte gelen taranmış, yani scan it, image olarak olan, image olarak gördüğümüz, içerisinde böyle elimizle alamayacağımız dokümanları,
+
+405
+01:00:01,484 --> 01:00:05,804
+normalde tekst olanları alabiliyoruz ama image'leri alamıyoruz. Bunlar için de şu anda...
+
+406
+01:00:06,804 --> 01:00:14,584
+Oseal teknolojisi ve yapay zeka teknolojileriyle birlikte UiPad'de bu alanda birçok yatırım yapmaktadır ve yeni yeni
+
+407
+01:00:15,059 --> 01:00:42,480
+Ürünler çıkartmaktadır. Çünkü şu anda Specialized AI var, bir de Generative AI var. İkisi arasındaki fark da aslında Specialized AI aslında bizim direkt olarak bir modeli eğitip o modelden aldıklarımız. Fakat Generative AI bizim ona soru sorup içerisinden istediğimiz bilgiyi çıkartmamız. Kodla değil de daha çok promptla. Bu da mesela şu anda en yaygın olan teknolojilerden biridir.
+
+408
+01:00:43,059 --> 01:00:56,780
+Robotik süreç otomasyonu, küresel yöneticilerin. %63'ü artık RPA dönüşümünün önemli bir bileşeni olarak söylüyor RPA'yı. Bu da PEGA sistemin anketinin sonucu olarak çıkmıştır karşımıza.
+
+409
+01:00:57,268 --> 01:01:01,108
+Hem insanların kullandığı hem de yazılımların kullandığı.
+
+410
+01:01:01,668 --> 01:01:04,668
+Arkadaşlar, özür dilerim [öğrenci]. Pardon, böldüm ama.
+
+411
+01:01:06,048 --> 01:01:10,848
+[öğrenci] bir şey yazmış. Şimdi sunum ne kadar sürer sizin [öğrenci]?
+
+412
+01:01:12,008 --> 01:01:17,208
+Kısa tutmaya çalışırım. Ben okuyamadım şu an çeti. Açayım ben de hocam. Kısa tutmaya çalışabilirim.
+
+413
+01:01:17,948 --> 01:01:19,348
+Yani ne kadar sürer?
+
+414
+01:01:19,891 --> 01:01:36,391
+Demo kısmında, hani demo göstermeden biz araya girebilirsek, çünkü 7'de derste yetişmemiz gerekiyor biliyorsunuz, onun için bir yoluna çıkacağız. Hani o arada biz sunumumuzu yaparsak en azından demoyu telefondan da takip edebiliriz. O yüzden rica ettik öyle ama.
+
+415
+01:01:37,231 --> 01:01:38,751
+Tamam. Benim kısmım...
+
+416
+01:01:38,751 --> 01:01:40,891
+Arkadaşlara da kusura bakmasın.
+
+417
+01:01:42,891 --> 01:01:43,451
+Tamamdır.
+
+418
+01:01:43,987 --> 01:02:11,187
+Daha özet geçmem gerekirse artık gündelik... O zaman şöyle yapalım. O zaman [öğrenci]'in dediği gibi yapalım. Demoya bir bakalım nasıl olacak. Devam etsen normal şekilde. Demo bu arada bir dakika sürmez. Demomuz bir dakika sürmez çünkü robot yapacak onu. O yüzden demo kısmı kolay. Ben de biraz daha hızlandırıyorum. Daha önemli yerlere nokta atışa adresleyeceğim.
+
+419
+01:02:11,603 --> 01:02:26,423
+Bizim burada yapacağımız deneyde de UiPad robotunun doğruluk çalışma hızını dört tane veriyle aslında biz yaptık ama sistemde bu da ben on tane satırla göstereceğim ve çok hızlı olacağı için zaten sizin de zamanınızı almayacaktır.
+
+420
+01:02:26,423 --> 01:02:36,023
+Bizim burada UiPad'i, RPA'y dolu olarak UiPad'i seçmemizin sebebi de Gartner'ın Magic Quadrant'ı vardır. Şöyle göstereyim hemen.
+
+421
+01:02:36,384 --> 01:02:43,923
+Bu, Gartner'ın raporları şudur aslında, belirli bir pazardaki, bu mesela Robotik Süreç Otomasyon pazarı, zaten şurada yazıyor.
+
+422
+01:02:44,659 --> 01:02:47,380
+Magic Quadrant for Robotic Process Automation.
+
+423
+01:02:48,019 --> 01:02:56,860
+Buradaki, bu pazardaki sağlayıcıları ve ürünleri karşılaştırıp, şirketlerin pazarlarındaki konumlarını anlamalarına yardımcı olur.
+
+424
+01:02:56,860 --> 01:03:05,835
+WebGartler'ın bu raporunda, Ability to Execute Complexness of Vision, yani bunun hızlıca çalıştırılıp ve...
+
+425
+01:03:06,324 --> 01:03:26,224
+Sonuçlarının çok optimal seviyede alabildiğimiz en iyi tool olan UiPad'di. Biz de bu deneyimizi en iyi olan, liderler arasındaki en iyi olan UiPad ile gerçekleştirdik. Benim anlatacaklarım genel itibariyle bu kadar. Ben sözü [öğrenci] arkadaşıma veriyorum. Hoşçakalın.
+
+426
+01:03:28,164 --> 01:03:30,904
+İyi akşamlar, herkese merhaba. [öğrenci] ben.
+
+427
+01:03:31,923 --> 01:03:35,203
+Ben deneyimizin materyal ve yöntem kısmını anlatacağım.
+
+428
+01:03:36,883 --> 01:03:55,503
+Deneyimizde kullandığımız materyaller, bir adet bilgisayar, internet bağlandısı, uiPad yani kullandığımız robotik yazılımın ücretsiz sürümü, kromometre, veri kümesi, tecrübeli bir yazılımcı yani 5 yıllık tecrübeli bir yazılımcı.
+
+429
+01:03:56,500 --> 01:04:00,079
+Bir web sitesi bu materyallerden oluşmakta.
+
+430
+01:04:01,460 --> 01:04:05,339
+Tabi bu internet bağlantısının deneyimi süresince kopmaması lazım.
+
+431
+01:04:07,440 --> 01:04:09,339
+Ve kullandığımız tarayıcında bir önemi yok.
+
+432
+01:04:09,559 --> 01:04:12,900
+Chrome, Mozilla, Firefox ya da Edge bunların bizim hiç önemi yok.
+
+433
+01:04:13,799 --> 01:04:14,440
+Devam edelim.
+
+434
+01:04:19,315 --> 01:04:34,115
+Kullandığımız verikümesi bu şekilde. Adı, soyadı, adresi, maili, şirketi, mesleği ve telefon numarası alanlarından oluşmakta burada. Grup üyelerimizin bilgilerinden verikümesini oluşturduk. Devam edelim.
+
+435
+01:04:35,555 --> 01:04:45,995
+Şimdi biz burada şöyle bir işlem yapacağız. Bir internet sitesine gidip bu internet sitesindeki formu elimizdeki verikümesiyle dolduracağız.
+
+436
+01:04:46,452 --> 01:04:54,231
+Tabii bunu bizim robotik yazılımımız belli bir sırayla yapıyor. Devam edelim, bir slide atlayalım.
+
+437
+01:04:57,192 --> 01:05:05,132
+Sağ tarafta, işte bu sırayı görmekteyiz. İnternet sitesini açıyor, elimizdeki veri kümesinin ad alanına giriyor forma.
+
+438
+01:05:05,731 --> 01:05:13,231
+Ardından soyadını, adresini, mailini, şirketini, mesleğini, telefon numarasına giriyor ve...
+
+439
+01:05:14,003 --> 01:05:28,724
+Submit edeyim mi? Yani dört tane veri gireceğimiz için dört satır. Submit ediyor ilk üçünde. Dördün de submit ediyor. Eğer submit etmeyecekse de bitiriyor süreci. İstersen web sitesini açalım.
+
+440
+01:05:30,864 --> 01:05:34,224
+Şimdi bizim web sitemiz bu şekilde.
+
+441
+01:05:35,251 --> 01:05:51,572
+Buradaki alanlar işte first name, adı, last name, soyadı vs. Bu şekilde alanları adı, soyadı, adresi, maili, şirketi, mesleği, telefon numarası şeklinde dolduruyor bu 7 alanı. Ardından submit'e tıklayalım.
+
+442
+01:05:52,436 --> 01:06:10,695
+Şimdi fark ettiyseniz, sabmete tıkladığımızda formu yeniden oluşturdu ama farklı bir düzenle oluşturdu. Yani buradaki sıralar değişti, yerler değişti. Bizim kullandığımızda bir robotik yazılımın böyle bir güzelliği var. Formun yapısı değişse de, tekrarla çalıştığı için başarılı bir şekilde çalışıyor.
+
+443
+01:06:12,655 --> 01:06:18,695
+Benim anlatacaklarım bu kadardı. Sözü [öğrenci] arkadaşımıza veriyorum.
+
+444
+01:06:21,012 --> 01:06:34,552
+Merhaba, ben de bulgular kısmını ve arkay artıları kısmını anlatacağım. Az önce [öğrenci] arkadaşımızın anlattığı deneyin sonuçlarından biraz bahsedeceğim.
+
+445
+01:06:44,916 --> 01:07:07,276
+Veri var burada. Bu bir işlem için gerçekleştirilen ve robotun da takip ettiği işlemler süresini tutan bir kayıt aldık biz. Görüldüğü gibi biz bu işlemi yaptığımızda 200 saniyeye yakın bir süre harcanırken robotlar bunu 10 ile 20 saniye içinde tamamlamaktadır.
+
+446
+01:07:07,923 --> 01:07:25,563
+Az önceki sayfa doldurma işlemine. Bu da robotların insanlara kıyasla ne kadar hızlı ve verimli çalıştığını net bir şekilde gösteriyor. Görüldüğü gibi biz 200 saniyeden fazla robot 10 ile 20 saniye arasında halletti bu işlemi.
+
+447
+01:07:26,284 --> 01:07:35,684
+Ayrıca robotların çalışmaya başladığı andan itibaren performanslarının da sabit kaldığını ve yorgunluk gibi faktörlerden etkilenmediğini de belirtmek.
+
+448
+01:07:35,923 --> 01:08:00,083
+önemli. Veya tuvalete gitme ihtiyacı veya sigara molası gibi herhangi bir faktörden etkilenmiyor. 7-24, 365 gün herhangi bir tatil süresi de olmadan robotlar çalışabiliyor. Bunlar da iş süreçlerinde sürekli yüksek performans ve kalite anlamına geliyor tabii ki. Diğer slayta geçebilir miyiz?
+
+449
+01:08:02,996 --> 01:08:05,916
+RP artılarından bahsedecek olursam.
+
+450
+01:08:06,612 --> 01:08:15,372
+RPA, tekrarlayan ve zaman alıcı görevleri otomatikleştirerek çalışanların daha stratejik ve yaratıcı işlere odaklanmasını sağlar.
+
+451
+01:08:15,892 --> 01:08:24,432
+Örneğin, bir çalışan manuel olarak veri girişi yaparken saatler harcayabilir. Ancak bu görev bir robot tarafından dakikalar içerisinde tamamlanabilir.
+
+452
+01:08:24,432 --> 01:08:32,092
+Bu da genel verimliliği önemli ölçüde arttırır ve çalışanların daha değerli işlere zaman ayırmasını sağlar.
+
+453
+01:08:32,532 --> 01:08:46,032
+Bir diğer RPA'nın avantajı da operasyonel maliyetleri düşürmesidir. Otomasyon sayesinde insan kaynaklarına olan bağımlılık azalır ve hata oranları minimize edilir. Bu da maliyet tasarruflarına yol açar.
+
+454
+01:08:46,355 --> 01:09:11,655
+Özellikle büyük ölçekli işletmelerde RPA uygulamaları sayesinde milyonlarca dolar tasarruf etmek mümkündür. Ayrıca robotlar 7.24 çalışabildiği için sürekli operasyonel maliyetler de azalır. Herhangi bir tatil olmadan 7.24, herhangi bir aksaklık olmadan devamlı çalışabilir. Bu da önemli bir maliyet düşüşü sağlar şirket için.
+
+455
+01:09:12,051 --> 01:09:33,211
+Bir diğer avantajı da hata oranlarını azaltmasıdır. İnsan kaynaklı hatalar manuel işlemler sırasında sıkça karşılaşılan bir sorundur. Özellikle büyük veri setlerinin işlenmesi veya karmaşık süreçlerin yürütülmesi sırasında hatalar olabilir. Ancak RPA ile bu hataları ortadan kaldırmak veya büyük ölçüde azaltmak mümkündür.
+
+456
+01:09:33,652 --> 01:09:41,851
+Robotlar belirlenmiş kuralları sıkı sıkıya bağlı kalarak çalıştığı için hata yapma olasılıkları yok denecek kadar azdır.
+
+457
+01:09:42,791 --> 01:09:54,951
+Herhangi bir kendisi herhangi bir şey uydurmadığı için sizin belirlediğiniz kurallara sıkı sıkıya bağlı olduğu için hata yapma oranı yine sizin hatanızla eş değer olacaktır.
+
+458
+01:10:00,000 --> 01:10:05,799
+Bu konuda programladığınız şekilde ilerleyip hatayı minimize edecektir.
+
+459
+01:10:07,440 --> 01:10:11,279
+RP ayrıca dijital dönüşümün temel taşlarından da biridir.
+
+460
+01:10:11,923 --> 01:10:32,804
+Ve gelecekte yapılacak iyileştirmeler için de sağlam bir temel oluşturur. Bu işletmelerin daha ileri teknolojilere kolayca adapte olmasını sağlar. Örneğin yapay zeka ve makine öğrenimiyle entegre edildiğinde RPA sistemleri daha da akıllı hale gelerek karmaşık görevleri de yerine getirebilir hale gelir.
+
+461
+01:10:33,744 --> 01:10:37,764
+Benim sunumum bu kadardı. Diğer arkadaşa vereceğim sözü.
+
+462
+01:10:56,083 --> 01:10:56,724
+[öğrenci].
+
+463
+01:10:58,903 --> 01:11:04,543
+Merhaba, ben [öğrenci]. Tekrar başlıyorum. Sesimi açmayı unutmuşum, rahatsız etmemek için kapatmıştım.
+
+464
+01:11:05,663 --> 01:11:13,724
+Projeyi arkadaşlarımız güzelce anlattılar. Teşekkür ederiz. Tartışma bölümünden sonra sizi sonuca ulaştırmayı hedefliyorum.
+
+465
+01:11:14,363 --> 01:11:20,423
+Projenin güçlü yönleri ve getireceği fırsatlar tabii göz ardı edilemez.
+
+466
+01:11:22,159 --> 01:11:37,199
+Bazı zayıf yönler ve riskler de mevcut. Bu risklerden konuşup riskleri nasıl minimize ederiz bunu da belirtmemiz gerekiyor. Yani bu çöpsüz üzüm değil. Bunu bir detaylandıralım.
+
+467
+01:11:37,939 --> 01:11:46,459
+En başta güvenlik ve gizlilik riski var. Her alanda olduğu gibi bu alanda da en büyük riskimiz güvenlik.
+
+468
+01:11:47,079 --> 01:11:52,379
+Yetersiz güvenlik önlemleri, veri icrağları ve gizlilik problemlerine yol açabilir.
+
+469
+01:11:53,379 --> 01:11:57,679
+Bu sadece yasal bir problem değil. Prestij kaybına da neden olabilir.
+
+470
+01:12:01,332 --> 01:12:09,252
+Sosyal medyada büyük gündem oluşturabilir. Bu da işletmeyi batışa sürükleyen bir unsur olarak değerlendirilebilir.
+
+471
+01:12:10,311 --> 01:12:18,032
+Sistem entegrasyon sorunu yaşanabilir. Sonuçta RPA diğer sistemlerle entegre bir şekilde çalışıyor.
+
+472
+01:12:18,592 --> 01:12:25,412
+Her zaman entegrasyon sağlanamayabilir. Sonuçta bilişim sistemlerinde sürekli bir güncelleme var.
+
+473
+01:12:26,260 --> 01:12:50,819
+RPA bunu yakalayamadığında beklenmedik hatalar oluşabilir. Hatalı bot konfigürasyonu da olabilir. Sonuçta tecrübeli bir yazılımcı yoksa bu işin başında. Ortaya çıkarılacak hatalar bu işi aksatabilir. Aksamalara yol açabilir.
+
+474
+01:12:54,323 --> 01:13:09,363
+Eski çalışanlarımız, gerek mevcut çalışanlar da olabilir. Bunlar arasında kötü niyetli insanlar çıkabilir. Bu durumda da RPA çalışmaları sabote edilebilir diye söyleyebiliriz.
+
+475
+01:13:09,563 --> 01:13:19,323
+Tabii hayatta her şeyin bir riski var. Önemli olan bu riskleri yönetmek. Peki RPA'nın risklerini nasıl en aza indirebiliriz?
+
+476
+01:13:20,756 --> 01:13:30,556
+Güçlü kimlik doğrulama ve verilerin şifreli iletilmesi bu riskleri en aza indirecektir.
+
+477
+01:13:31,456 --> 01:13:38,755
+Düzenli güvenlik denetimleri yapılabilir. Güncelleme ve yama çalışmaları burada yapılabilir.
+
+478
+01:13:39,896 --> 01:13:44,755
+Güvenlik eğitimleri verilebilir. Bu işin başındaki kişilere...
+
+479
+01:13:45,235 --> 01:13:51,235
+verdiğimiz eğitimlerle bu riskler en aza indirilir.
+
+480
+01:13:53,235 --> 01:14:05,235
+Neticede dikkat dağılığı, hata uğranı ve zaman kaybı gibi unsurları görmediği için
+
+481
+01:14:09,684 --> 01:14:18,444
+Çalışmalar aksamadan yürüyecektir. Burada da sloganımız, robotlar işleri yapar, insanlar hikayeleri yazar.
+
+482
+01:14:19,384 --> 01:14:26,444
+Hikayeler yazar. Yani hikayeler yaratır şeklinde yazmışım. Tamam, geçebilir miyiz de?
+
+483
+01:14:35,252 --> 01:14:50,212
+Projede hazırlanan botlar işleri en kısa sürede bitiriyor ve sonuçta neticede hatasız bir şekilde işlemler gerçekleşiyor.
+
+484
+01:14:52,592 --> 01:15:02,632
+Burada önemli olan tabii bu sistemi kullanacak çalışanların direnci, insanlar işlerini robotlara bırakmak istemeyebilir.
+
+485
+01:15:03,060 --> 01:15:16,060
+Tabi bu konuda direnci kırmak için de çeşitli yöntemler var. Bütün bilişim sistemlerinde ilk entegrasyonda, ilk dönüşüm esnasında çalışanların direnci oluşması normal.
+
+486
+01:15:16,060 --> 01:15:30,060
+Vereceğimiz eğitimlerle ve diğer çalışmalarla bu direnç kırıldığı takdirde robotlar, insanların yaptığı sıkıcı işleri devralacaktır diye söyleyebiliriz.
+
+487
+01:15:30,420 --> 01:15:32,500
+Son slide'ıma geçebilir miyiz?
+
+488
+01:15:39,636 --> 01:16:05,876
+Şimdi, çağımızda zaman en kıymetli sermaye. RPA ile kişiler değerli zamanını yeni fırsatlar aramak için kullanır diyoruz. Benim de anlatacaklarım bu kadardı. Sorunuz yoksa, sistem demoya geçmek istiyorum. Ve sözümü [öğrenci] arkadaşımıza bırakıyorum.
+
+489
+01:16:06,547 --> 01:16:07,387
+İyi günler.
+
+490
+01:16:09,148 --> 01:16:10,307
+Teşekkür ederim.
+
+491
+01:16:11,648 --> 01:16:18,368
+Şimdi elimde böyle bir veri seti var. Ben hemen hızlıca göstereyim. Bir sonraki grubun da zamanını almamak adına.
+
+492
+01:16:27,315 --> 01:16:31,135
+Bunlar gerçek biriler değildir. Test verilerdir.
+
+493
+01:16:43,859 --> 01:16:54,119
+Şu şekilde. Buradaki verilerin kolon bazlı olarak alınıp her satırın bir sayfaya girilip sabit edilmesi gerekmektedir.
+
+494
+01:16:54,119 --> 01:17:08,119
+Burada da öncelikle kodumuzda bu Excel'i okuyoruz ve bunu bir nesne yönelik programlamadaki datatable nesnesine dönüştürüp daha sonradan da browser'ı açtırıp kendisi yapıyor bunun hepsini.
+
+495
+01:17:08,851 --> 01:17:24,731
+Robot, buradan aldığı dataları, browser'ı kendisi açıp, burada ben bir tane pop-up bıraktım süreç başlasın mı diye. En sonunda da bana bütün yapmış olduğu değerleri, çıktısı olarak alanların doğruluğunu sistem tarafından bize verecektir.
+
+496
+01:17:24,731 --> 01:17:32,691
+Ben şunu şurayı bir kapatayım. Aynı olmasın. Aynı tarayıcı karıştırabilir çünkü.
+
+497
+01:18:07,412 --> 01:18:25,672
+Şimdi ben robotunu egzeküte ettim. Aşağıda da yeşil bir şekilde çalıştığını gösteriyor. Önceliği Excel'i okuyor. Açtı, kapattı, Excel okudu ve daha sonradan RPA Challenge sayfasına geldi ve bana süreç başlasın mı? Şeklinde bir soru veriyor.
+
+498
+01:18:25,672 --> 01:18:32,952
+OK'ye bastıktan sonra kendisi Start ve Submit alanları doldurup Submit edecektir. OK'ye basıyorum ve ben elimi bırakıyorum.
+
+499
+01:18:37,971 --> 01:18:56,771
+Alanlar değişiyor, konumları değişiyor ama robot burada HTML kodlarını arkadaki kendisi alıp bu HTML kodu bu alanındır, bu textbox bu tagindir şeklinde, bu inner text attributundır şeklinde adresleyip
+
+500
+01:18:57,076 --> 01:19:21,416
+Ve çok kısa bir sürede %100 başarıyla bu alanların hepsini doldurdu. Bizim de en sonunda da müşteriye atacağımız, müşteri diyelim, atacağımız bir işse, bu proje ise bu şekilde bu teksti alıp şurayı da tekrardan ekstrak edip, bunu da bir string tekstine atıp size böyle gösterdik. Bu da tabii yine bir mail otomasyonuyla atılabilir.
+
+501
+01:19:22,003 --> 01:19:28,344
+Bizi dinlediğiniz için çok teşekkür ederiz. Bizim anlatacaklarımız ve sistem durumumuz bu şekildedir.
+
+502
+01:19:43,091 --> 01:19:44,112
+Başlayalım.
+
+503
+01:19:45,671 --> 01:19:55,091
+Güzel olmuş arkadaşlar bu arada. Baya güzeldi. Herhalde önceden çalışmıştınız değil mi bu konuda? Baya profesyonel olmuş, güzel olmuş.
+
+504
+01:19:56,652 --> 01:19:59,872
+Çok teşekkür ederiz. 3-4 kere bir araya da geldik.
+
+505
+01:20:00,000 --> 01:20:05,939
+Bizim için de birbirinizi tanıma güzel bir çalışma oldu. Bu fırsatı bize tanıdığınız için de çok teşekkür ederiz.
+
+506
+01:20:06,359 --> 01:20:14,720
+Ben teşekkür ederim arkadaşlar bu güzel sunumunuz için. Yeni grup başlayabilir. [öğrenci], başlayabilirsiniz.
+
+507
+01:20:15,380 --> 01:20:24,619
+Merhabalar, ben [öğrenci]. Bugünkü anlatacağım sunumunuzun konusu sepet analiz ile müşteri davranışlarının modellenmesi. Bir ileri alabilir miyiz?
+
+508
+01:20:26,260 --> 01:20:40,680
+Konumuzun ana başlıkları, proje özeti, proje konusu, önemi, projenin amaç ve hedefi, proje yöntemi, proje alanı, iş paketleri, riskler ve tedbirler, projelerin elde edilmesi öngörülen çıktılar, proje çıktılarının paylaşımı ve yayılımı.
+
+509
+01:20:42,060 --> 01:20:43,060
+İlergi denilmeyiz.
+
+510
+01:20:44,400 --> 01:20:50,699
+Bu araştırma, sepet analizi yöntemlerini kullanarak müşteri davranışları modellemesine hedeflemektedir.
+
+511
+01:20:51,283 --> 01:21:01,703
+Çevrim içi para kendi satışı yapan platformlarda müşterilerin alışveriş sepetlerindeki ürünleri inceleyerek satın alarak sergiledikleri danışları çeşitli faktörlerle etkilenmektedir.
+
+512
+01:21:02,623 --> 01:21:10,643
+Bu faktörler arasında müşterilerin demografik özellikleri, alışveriş alışkanlıkları, indirimler ve diğer pazarlama stratejileri yer almaktadır.
+
+513
+01:21:11,503 --> 01:21:14,383
+Amaç sepet analiz tekniklerini kullanılarak
+
+514
+01:21:14,752 --> 01:21:27,771
+Müşteri dağınışlarının anlaşılması ve modellenmesini amaçlamaktayız. Hedefimiz de müşteri segmentasyonunu ve kişiselleştirici pazarlama stratejileri geliştirmek için bu modelin kullanılmasını planlıyoruz.
+
+515
+01:21:29,032 --> 01:21:30,152
+İleri gidebilir miyiz?
+
+516
+01:21:32,172 --> 01:21:35,971
+Söylediğim konusu ve önemli bölümümüzde ise sepet analizinin tanımıyla başlayalım.
+
+517
+01:21:35,971 --> 01:21:40,811
+Sepet analizi nedir? Müşterilerin birlikte satın aldığı ürünlerin analizinin edilmesidir.
+
+518
+01:21:41,235 --> 01:21:52,155
+Projenin özgün değeri, firmalar mevcut müşterileriyle kurdukları ilişkileri geliştirmek, yeni müşteriler kazanmak ve tüm müşterileri elde tutabilmek için sepet analizli yöntemleri kullanılacaktır.
+
+519
+01:21:52,815 --> 01:21:57,395
+Projeyle müşteri danışları açıklanarak ileriye yönelik tahminler yapılmaktadır.
+
+520
+01:21:57,716 --> 01:22:03,235
+Yandaki resimde de yöneticilerin müşterilerin alım durumları ve satış istatisi oluşturma temel olan bir grafiği gösterdik.
+
+521
+01:22:03,836 --> 01:22:06,635
+Benim anlatacaklarım bu kadardır. Sözü [öğrenci] arkadaşımıza bırakıyorum.
+
+522
+01:22:09,108 --> 01:22:09,688
+Merhaba.
+
+523
+01:22:13,779 --> 01:22:19,199
+Ben size sepet analiziyle müşteri davranışının modellenmesi projesinin amaç ve hedeflerinden bahsedeceğim.
+
+524
+01:22:19,879 --> 01:22:25,759
+Firmaların karar verme süreçlerinde doğru ve anlamlı bilgiye hızlı bir şekilde erişmeleri gerekmektedir.
+
+525
+01:22:26,079 --> 01:22:32,279
+Fakat çok büyük miktardaki veriler ve çeşitliliğin artması analizlerin hızını etkileyen faktörler olmaktadır.
+
+526
+01:22:32,739 --> 01:22:41,759
+Projemizle anlamlı ve eyleme yönelik bilgiler ortaya çıkarılacak, ekonomik ve değişen piyasa, rekabet ortamında hızlı kararlar alınabilecektir.
+
+527
+01:22:42,144 --> 01:22:50,164
+Aynı zamanda müşterilerin sepetlerine ekleyebilecekleri tamamlayıcı ürünler sunarak ortalama sepet değerini arttırma amacımız vardır.
+
+528
+01:22:51,064 --> 01:23:02,244
+Projede toplanmış olan veriler sayısal yöntemlerle incelenecek ve büyük veriler arasındaki ilişkiler, örüntüler, değişiklikler, ilginç bilgilerin ortaya çıkarılması ve keşfedilmesi amaçlanmaktadır.
+
+529
+01:23:10,144 --> 01:23:16,844
+Bilimsel ürünlerinin raf düzenlemelerinde ve promosyon stratejilerinin belirlenmesinde hedefliyoruz.
+
+530
+01:23:17,235 --> 01:23:32,115
+Analiz sonucu ile karar destek amaçlı bilgi haline dönüşmüş çıktılar. Satış ve pazarlama faaliyetleri açısından doğru karar alma ve kararların hayata geçirilmesi, bunların sonucunda işletmelilerin varlıklarını devam ettirebilmeleri açısından çok önemlidir.
+
+531
+01:23:32,535 --> 01:23:45,235
+Projemizin hedeflerinden bir diğeri ise stok yöntemini optimize etmektir. Sepet analizi yöntemleri kullanılarak müşteri davranışlarını modellemek ve müşteriye uygun ürünler çıkarılarak satışların arttırılması.
+
+532
+01:24:10,963 --> 01:24:19,363
+İlk olarak bu projadaki en önemli şey veri toplama. Biz bu verileri farklı sektörlerden bir önceki hem.
+
+533
+01:24:19,859 --> 01:24:30,099
+Farklı sektörlerden firmaların müşteri sepetlerinden toplamamız gerekiyor ve biz bu verilere genellikle firmaların satış noktalarından veya e-ticaret platformlarından elde ediliriz.
+
+534
+01:24:30,099 --> 01:24:42,519
+Yani aslında bizim önceliğimiz satış verilerini toplamak ve müşterilerin hangi ürünleri satın aldığını görmek ve özellikle bunların fiyatlarını içeren bir liste görmek.
+
+535
+01:24:42,659 --> 01:24:45,799
+Yani bu bilgiler bizim için en önemli şey.
+
+536
+01:24:46,484 --> 01:24:58,424
+İkincisi bizim bu topladığımız verilerin temizlenmesi ve hazırlanması. Bu adımı yapmamızın sebebi bu verileri analiz için hazır bir hale getirmek.
+
+537
+01:24:58,815 --> 01:25:04,315
+Biz bu verilerimizi analiz için hazır hale getirirken verilerde şunları yapabiliriz.
+
+538
+01:25:04,456 --> 01:25:09,655
+Yani bazen verilerde hatalı girişler olabiliyor veya eksik veriler olabiliyor.
+
+539
+01:25:09,815 --> 01:25:16,735
+Bunları düzeltip doldurabiliriz veya bazen boş değerler olabilir, tutarsız veri girişleri olabilir.
+
+540
+01:25:16,895 --> 01:25:21,635
+Bunlar da tespit edilerek işlenir ve böylece analize hazır bir hale getirilebilir.
+
+541
+01:25:22,695 --> 01:25:24,735
+Bir dahaki slide'a geçebilir miyiz?
+
+542
+01:25:27,123 --> 01:25:33,043
+Şimdi verilerimizi temizledikten ve hazırladıktan sonra üçüncü olarak sepet analizine geçiyoruz.
+
+543
+01:25:33,983 --> 01:25:40,043
+Burada bazı sepet analizi teknikleriyle müşterilerin satın alma eğilimlerini ve tercihlerini belirleyeceğiz.
+
+544
+01:25:40,604 --> 01:25:45,403
+Mesela buradaki kullanacağımız yöntemlerden biri frekans analizi yöntemi.
+
+545
+01:25:45,939 --> 01:25:54,899
+Burada hangi ürünlerin en sık satın alındığını belirliyoruz. Yani bu bizim için önemli çünkü müşteri tercihlerini belirlemek açısından çok faydalı.
+
+546
+01:25:55,680 --> 01:26:03,859
+Veya bir diğer analiz türü, ürün kategorileri analizi. Burada müşterilerin farklı ürün kategorileri arasındaki tercihler tespit ediliyor.
+
+547
+01:26:04,119 --> 01:26:09,340
+Yani hangi kategoriler satın alınmış diye müşterilerde analiz yapabiliyoruz.
+
+548
+01:26:09,728 --> 01:26:16,108
+Daha sonrasında bu yaptığımız analizlerden sonra modelleme adımına geçiyoruz yöntemlerimizde.
+
+549
+01:26:16,627 --> 01:26:26,107
+Bu modelleme adımı, müşteri davranışlarını modellemek için istatistiksel ve makine öğrenme tekniklerini kullanmamız gerekiyor.
+
+550
+01:26:26,867 --> 01:26:31,427
+Burada bazı algoritmalarımız var. Bunlardan biri Apriori algoritması.
+
+551
+01:26:31,687 --> 01:26:39,047
+Biz bu algoritmada veri setindeki ürünlerin birlikte satın alma olasılıklarını ölçüyoruz.
+
+552
+01:26:39,047 --> 01:26:44,407
+Yani burada satın alınan ürünler arasındaki ilişkiler belirleniyor ki bu çok önemli.
+
+553
+01:26:44,627 --> 01:26:58,087
+Sınır durumu analizi var ve sınır durumu analizinde aslında şöyle yapılıyor. Minimum veya maksimum satın alma durumlarına bakarak müşteri davranışlarını anlayabiliyoruz sınır durumu analiziyle.
+
+554
+01:26:58,484 --> 01:27:07,043
+Veya kümeleme analizi de yapabiliyoruz. Bu kümeleme analizinde ise müşterilerin benzer alışveriş durumlarını da inceleyebiliyoruz. Bu yüzden bunu yapabiliriz.
+
+555
+01:27:07,724 --> 01:27:14,923
+Veya en son olarak derin öğrenme modellerinden yardım alabiliriz biz bu modelleme işlemlerini yaparken.
+
+556
+01:27:15,064 --> 01:27:20,904
+Derin öğrenme modellerinden de büyük bir kümelerinde çalışıyorsak yardım almamız bizim için daha iyi olur.
+
+557
+01:27:21,427 --> 01:27:28,668
+Sonrasında yaptığımız tüm bu yöntemlerin değerlendirilmesi var. Bu değerlendirme sonucunda.
+
+558
+01:27:29,104 --> 01:27:35,644
+Biz bu sonuçları yorumlayıp pazarlama ve satış stratejilerinin geliştirilmesi için kullanacağımız kısım.
+
+559
+01:27:35,963 --> 01:27:37,623
+Yani burada şunları yapabiliriz.
+
+560
+01:27:39,503 --> 01:27:50,104
+Ürün yerleştirmeleri, promosyonlar veya kişiselleştirmiş pazarlama kampanyaları gibi durumlarla satışlarımızı ve hedef kar marjımızı arttırabiliriz.
+
+561
+01:27:50,612 --> 01:27:57,692
+Ben yöntemleri anlattım. Riskler bölümünü de anlatacağım ama şimdilik sözü [öğrenci] arkadaşıma bırakıyorum. Teşekkür ederim.
+
+562
+01:27:59,891 --> 01:28:20,051
+Arkadaşlar, ben [öğrenci]. Ben de iş proje elemimi ve iş fakatleri süreçten size bahsedeceğim. Proje planını iş adımlarına göre yaptık. Toplamda 13 aylık bir süreç bir damak oldu. Bu süreçte de ilk 6 ay proje için gerekse de rengi yöntemi belirlenmesi süreçleri.
+
+563
+01:28:23,648 --> 01:28:45,828
+Senin açık galiba, ben kapatabiliyor muyum acaba senin sesini [öğrenci]? Bakayım. Çünkü yankı yapıyor [öğrenci]'in anlattıkları. [öğrenci] uyanık. Senin mikrofonun açık. O yüzden yankı yapıyor. Ben kapatamıyorum da.
+
+564
+01:28:45,828 --> 01:28:49,287
+Hocam [öğrenci] henüz girmeye çalışıyor sanırım.
+
+565
+01:28:51,028 --> 01:28:59,868
+Ama işte mikrofonu açık, bir yankı yapıyor [öğrenci]'in sesi. Ya da bana mı? Bir tek bana değil mi öyle oldu? Neyse, devam edebilirsin.
+
+566
+01:29:02,387 --> 01:29:18,868
+Devam ediyorum. İlk 6 ayı biz proje gereksinimleri ve yöntemleri belirlenmesi süreçlerine ayırdık. Sonraki 7 ayda ise projenin hayatı geçirilmesiyle ilgili süreçler. Bir sonraki silah.
+
+567
+01:29:26,100 --> 01:29:30,619
+Projeyle ilgili bu şekilde bir iş zamançı dergemiz var. İlerleyelim.
+
+568
+01:29:35,060 --> 01:29:46,619
+İş paketleri kısmına geldik. Bizim toplamda 10 tane iş paketimiz var. İlk 6 iş paketimizde proje grubunun oluşturulması, proje gereksinimlerinin...
+
+569
+01:29:47,636 --> 01:30:00,916
+belirlenmesi gibi maddeler var. İş paketi bir, proje yönetimi ve iki oluşturma paketimiz. İş paketi iki, literatür taraması, ilerleyebilmesi.
+
+570
+01:30:04,436 --> 01:30:13,976
+İş paketi üç, proje gerekçesinin belirlenmesi. İş paketi dört, veri kaynaklarının belirlenmesi ve API ile erişimler sağlanması.
+
+571
+01:30:14,836 --> 01:30:30,916
+İş paketi 5, beri toplama, ön işleme ve temizleme işlemleri. İş paketi 6, tepet analizi yöntemlerinin bilimsel etik. Ve bundan sonra da kodlamayla ilgili süreçlere geçiyoruz.
+
+572
+01:30:36,467 --> 01:30:49,427
+İş paketliği de müşteri davranışlarının modellenmesi için kullanılacak makine öğrenimi ve tekniklerini oluşturulması. İş paketi 8, ortaya çıkan modelin performansını değerlendirme ve iyileştirebilmesi.
+
+573
+01:30:51,927 --> 01:31:02,728
+Kodlama aşaması bittikten sonra da elde edilen sonuçların analiz ve yorumlanması. İş paketi 9 oluyor, iş paketi 10'da da proje raporunun hazırlanması ve sorumu.
+
+574
+01:31:03,220 --> 01:31:10,300
+Benim bahsedeceğim bunlar. Ben tekrardan [öğrenci] arkadaşıma sözü devrediyorum.
+
+575
+01:31:13,440 --> 01:31:22,199
+Teşekkür ederim hocam. Pardon ben de az önce videomu kameramı açma unutmuşum ama başlatmıyor şu an. Ha başlattı.
+
+576
+01:31:22,547 --> 01:31:50,368
+Şimdi riskler ve tedbirler var. Bu riskler bizim bu projeyi uygularken karşımıza çıkabilecek olumsuzluklar. Tedbirler de bunlara karşı ne yapmamız gerektiği, bu olumsuzlukları yaşarsak, yaşamamız durumunda. Bu risklerden bir tanesi yetersiz veri kalitesi olabilir. Eğer başımıza böyle bir durum gelirse veri toplamı sürecinde kontrollü, veri işlem kontrollü olmak ve veri düzeltme işlemlerini gerçekleştirmek gerekir.
+
+577
+01:31:50,547 --> 01:32:07,608
+Bir diğeri modelleme karmaşıklığı riski. Böyle bir şey başımıza gelirse yani gelmemesi için bu modelleri anlatıcı, basit ve açıklayıcı modeller tercih etmek ve gerektiğinde modelin karmaşıklığını azaltmak gerekir.
+
+578
+01:32:08,051 --> 01:32:33,752
+Gizlilik ve güvenlik riski durumunda veri güvenliği protokollerini uygulamak gerekir. Yani bunlar veriye erişimi sınırlamak gibi protokoller olabilir. Bir diğer risk, teknolojik altyapı riski. Böyle bir durum için ihtiyaç duyulan teknolojik altyapının belirlenmesi gerekir. Yani uygun bir altyapının seçilmesi gerekir veya gerektiğinde bu teknolojinin iyileştirmelerinin yapılması gerekir.
+
+579
+01:32:34,579 --> 01:32:47,920
+Bir diğeri yönetim ve iş süreci riski. Burada proje yönetim planının oluşturup takip edilmesi gerekir ve burada proje ekibinin düzenli bir iletişimi olması gerekli.
+
+580
+01:32:48,500 --> 01:33:02,280
+Bir diğeri zaman ve bütçe aşımları riski. Burada zaman ve bütçe yönetiminin düzenli olarak izlenmesi gerekir veya gerektiğinde kaynak tahsisinde değişiklikler de yapılabilmeli bence. Yani durumda pardon.
+
+581
+01:33:03,280 --> 01:33:14,060
+Bir diğeri de paydaş beklentilerin yerine getirilememe riski. Burada da sürekli iletişim ve geri bildirim yapmak ve düzenli güncellemeler sağlamak önemlidir.
+
+582
+01:33:14,899 --> 01:33:18,959
+Artık benim bu kadardı. Sözümünü senaya bırakıyorum. Teşekkür ederim.
+
+583
+01:33:23,923 --> 01:33:33,043
+Merhabalar, sepet analizi ile müşteri davranışlarının modellenmesi sonucunda elde edilebilecek çeşitli çıktılardan birincisi bilimsel akademik çıktılar.
+
+584
+01:33:33,703 --> 01:33:41,804
+Müşterilerin sepetlerine hangi ürünleri birlikte satın aldıkları analiz edilerek elde edilen bilgilerle makale yayınlanacak, literatüre katkıda bulunacaktır.
+
+585
+01:33:42,283 --> 01:33:46,144
+Projenin ortası, sonu ve sonrasında makalelerin yayınlanması beklenmektedir.
+
+586
+01:33:51,923 --> 01:34:13,904
+İlgilerle ileriye dönük promosyon, satış, maliyet analizleri yapılacaktır. Analiz sonuçları çeşitli satış ekiplerine satılarak ekonomik bir fayda elde edilmesi sağlanacaktır. Yapılacak sepet analizi sonrasında marketlerde ve mağazalarda ürün yerleşimini minimize ederek müşterilerin işlem süresi de minimize edilecektir. Kategori yönetimi iyileştirilerek müşteri sadakati artırılması sağlanacaktır.
+
+587
+01:34:19,923 --> 01:34:24,264
+ürünleri alabileceğinin analiz edilmesi daha fazla satış yapma yollarından birini
+
+588
+01:34:24,264 --> 01:34:25,043
+oluşturacaktır.
+
+589
+01:34:25,644 --> 01:34:28,104
+Proje sonunda çıktığının elde edilmesi beklenmektedir.
+
+590
+01:34:28,851 --> 01:34:40,511
+Üçüncü çıktı ise araştırması, yetiştirilmesi ve yeni projeler oluşturulması üzerine projeye alınacak olan yüksek lisans doktor öğrencileri ile sanayi odaklı ortak tez çalışması yürütülmesi planlanmaktadır.
+
+591
+01:34:41,072 --> 01:34:45,431
+Öngörülen zaman aralığı ise proje sonu ve sonrasında tezlerin tamamlanması beklenmektedir.
+
+592
+01:34:46,051 --> 01:34:53,391
+Bu çıktılar işletmelerin müşteri ilişkileri yöntemi, pazarlama stratejileri ve operasyonel kararlarını optimize etmelerine yardımcı olabilir.
+
+593
+01:34:56,916 --> 01:35:05,195
+Sepet analizi ile müşteri davranışlarının modellenmesinin paylaşımı ve yayılımı, işletmelerin bu analiz sonuçlarını etkili bir şekilde kullanmalarını ve paylaşmalarını içerir.
+
+594
+01:35:05,935 --> 01:35:12,015
+Birincisi, proje web sayfası, bu çalışanların ve ilgili paylaşlarının analiz sonuçlarından haberdar olmalarını sağlar.
+
+595
+01:35:12,595 --> 01:35:20,336
+İkincisi ise, sepet analizi ile müşteri davranışlarının modellenmesi konulu seminer ve seminer programları düzenleyerek çalışanlarını bilgilendirebilir.
+
+596
+01:35:20,336 --> 01:35:24,916
+Bu programlar analiz ve tekniklerini anlamalarını ve etkili bir şekilde kullanmalarını sağlar.
+
+597
+01:35:24,916 --> 01:35:40,275
+Üçüncüsü sosyal medya paylaşımları. İşletmeler sepet analiz sonuçlarını blog yazıları, sosyal medya gönderilir ve diğer dijital platformlar aracılığıyla paylaşabilir. Bu müşterilere ve diğer ilgili paydaşlara analiz sonuçları hakkında bilgi vermenin etkili bir yoludur.
+
+598
+01:35:40,876 --> 01:35:50,215
+Dördüncüsü ise makale. Bu yöntemle grafikler, tablolar, haritalar ve diğer görsel öğeler analiz sonuçlarını daha anlaşılır hale getirebilir ve paylaşımını kolaylaştırabilir.
+
+599
+01:35:50,676 --> 01:35:59,135
+Beşincisi ise proje tanıtım günü. Bu tanıtım ile analiz sonuçlarına dayalı olarak alınabilecek kararlar tartışmak ve stratejiler geliştirmek için fırsat sağlar.
+
+600
+01:35:59,916 --> 01:36:11,435
+Sepet analiz sonuçlarının etkili bir şekilde paylaşılması ve yayılması, işletmelerinin stratejik karar alma süreçlerinden bu analizlerden maksimum fayda sağlamalarına ve müşteri odaklı yaklaşımlarını güçlendirmelerine yardımcı olacaktır.
+
+601
+01:36:13,775 --> 01:36:16,076
+Bizim sunumumuz bu kadar. Teşekkür ederiz.
+
+602
+01:36:22,676 --> 01:36:32,636
+Teşekkürler arkadaşlar. Şimdi dersimizi bitiriyoruz artık. Haftaya finaliniz olacak. Gördünüz mü final tarihini saatini?
+
+603
+01:36:36,212 --> 01:36:38,472
+Evet hocam.
+
+604
+01:36:39,432 --> 01:36:40,252
+Tamam, ne zaman?
+
+605
+01:36:43,923 --> 01:36:45,264
+Hatırlıyor musunuz?
+
+606
+01:36:51,475 --> 01:37:18,235
+Ben zaten önce de söylemiştim, hem web sitesinde de yayınlandı. BT'ye göre yapalım dedik. 5.30'dan 6.30'a kadar haftaya perşembe burada bizzat. Sınıf da zaten orada görünüyor, görmüşsünüzdür. Olacak, test olacak. 25 soru yarım saat, 30 dakika. Ama biz bir saatlik bir sınıf ayarladık. Yine hani bir saat, gözetmenler bir saatlik.
+
+607
+01:37:19,988 --> 01:37:36,387
+Ayarlandı, bir saatlik sınıf ayarlandı ama yarım saat sürecek. Dört yanlış bir doğruyu götürecek ama yapabileceğiniz sorular, test soruları zaten. Benim anlattıklarımı dinlediyseniz, slide'ları da bir göz atarsınız.
+
+608
+01:37:37,171 --> 01:37:51,651
+Verdiğim o notlara da bir göz atarsınız. Genel bilgilerinizle, benim anlattıklarımı dinlediyseniz zaten o araştırma teknikleriyle ilgili, etikle ilgili genel bilgileri biliyorsanız çok rahat yapabileceğiniz sorular.
+
+609
+01:37:51,651 --> 01:38:00,431
+Şimdi sunumların hepsi bitti. Ben sunum notlarını bugün yarın girerim. İkinci vize olarak. Yüzde otuz, yüzde otuz.
+
+610
+01:38:01,363 --> 01:38:14,264
+%60 bunlar olabilir. Yani aslında %30 rapor kesin %30 olacak. Sunumda %30 da olabilir, %20 de olabilir etkisi.
+
+611
+01:38:18,963 --> 01:38:44,363
+Finalde işte bunlar yüzde altı. Çünkü bize enstitü öyle bir aralık koymuş. Normalde lisansta yüzde altmış vizeler etkiliyor, yüzde kırk final etkiliyor. Ama enstitünün bu notlandırma sisteminde bize öyle bir açıklık koymuş. Yani yüzde elli etkileyebilir finaller ya da yüzde altmış etkileyebilir.
+
+612
+01:38:45,076 --> 01:38:54,076
+O daha esnek. O yüzden hani bu sunum notlarınız daha da etkileyebilir. Yani etkisi biraz daha fazla olabilir. Yüzde yirmi değil de yüzde otuz olabilir.
+
+613
+01:38:54,076 --> 01:39:10,076
+İşte finalinize yüzde kırk ya da yüzde elli etkili olacak son notumuzda. Onu da zaten haftaya finalden sonra girerim. Hemen birkaç gün sonra girerim zaten finallerden sonra final notumuzu da. Böylece dönemi bitirmiş oluruz arkadaşlar.
+
+614
+01:39:10,076 --> 01:39:12,939
+Herhangi bir sorusu olan var mı?
+
+615
+01:39:15,091 --> 01:39:34,511
+Bir ihtiyacınız olursa, söylemek istediğiniz bir şey olursa her zaman bana e-mail gönderebilirsiniz arkadaşlar. Güzel bir dönem geçirdik birlikte öyle düşünüyorum ben. Finalde de zaten görüşürüz. Başarılar diliyorum hepinize. Teşekkürler hocam. Teşekkürler. İyi günler arkadaşlar.

@@ -1,0 +1,2095 @@
+1
+00:01:16,340 --> 00:01:42,780
+Merhaba arkadaşlar. Merhaba hocam. Merhaba hocam. Merhaba hocam. Şimdi kim başlıyor? Ne yazmışız? On altıncı. Bir dakika efendim. On altıncı. On altı Mayıs. Birinci kim yazmışız? Bir dakika hemen bakalım. On birinci grup yazmışız arkadaşlar.
+
+2
+00:01:46,195 --> 00:01:47,775
+11. grup burada mı?
+
+3
+00:01:49,456 --> 00:01:51,896
+Kişileri söylerseniz numara yatırılabilir.
+
+4
+00:01:51,915 --> 00:01:52,715
+Hemen bakalım.
+
+5
+00:01:53,995 --> 00:01:58,135
+[öğrenci], [öğrenci], [öğrenci].
+
+6
+00:01:58,135 --> 00:01:58,915
+Buradayız hocam.
+
+7
+00:01:59,876 --> 00:02:00,676
+Buradayız.
+
+8
+00:02:01,096 --> 00:02:04,176
+Tamam, paylaşır mısınız arkadaşlar?
+
+9
+00:02:05,295 --> 00:02:08,835
+[öğrenci] ile [öğrenci] ilk başlayacaktı da onlar katıldı mı acaba?
+
+10
+00:02:11,835 --> 00:02:12,475
+Bakalım.
+
+11
+00:02:13,747 --> 00:02:15,447
+Herhalde katılmamışlar şu anda.
+
+12
+00:02:16,887 --> 00:02:17,807
+Şimdi geliyor arada.
+
+13
+00:02:17,807 --> 00:02:19,787
+Başlayacak geliyor şimdi hemen.
+
+14
+00:02:20,768 --> 00:02:26,768
+Bekleyeceksek biz de başlayabiliriz hocam. Benim de toplantım var. Ucu ucuna içecek gibi benim için de çok iyi olur.
+
+15
+00:02:26,907 --> 00:02:29,307
+Başlıyoruz. Hemen başlıyoruz şu anda.
+
+16
+00:02:33,460 --> 00:02:33,900
+Tamam.
+
+17
+00:02:43,412 --> 00:03:05,972
+Rapor notunu almayan var mı arkadaşlar? Siz hepiniz zaten 69 kişiydi, 69 kişinin hepsi de yükledi sanırım. Yani herkes notunu aldı. Aranızda notunu almayan var mı? Rapor notunu almayan. Tamam, herhangi bir sorusu olan var mı?
+
+18
+00:03:07,972 --> 00:03:09,211
+Tamam.
+
+19
+00:03:11,123 --> 00:03:12,483
+Geldi iki kişi.
+
+20
+00:03:15,004 --> 00:03:21,743
+Şöyle [öğrenci] ben ama benim bilgisayarımda problem olduğu için [öğrenci] arkadaşımdan katıldım yan yana yazı şu an.
+
+21
+00:03:22,403 --> 00:03:23,543
+Başlayabiliriz yani.
+
+22
+00:03:24,064 --> 00:03:24,304
+Tamam.
+
+23
+00:03:25,024 --> 00:03:26,324
+Tamam, başlayın arkadaşlar.
+
+24
+00:03:27,403 --> 00:03:29,064
+Tamamdır, [öğrenci] benim isim.
+
+25
+00:03:29,483 --> 00:03:33,304
+Projemiz doğrusal regresyon ile otomatik vadiye planlama sistemi.
+
+26
+00:03:34,424 --> 00:03:38,623
+Size kısaca vadiye sisteminden, konumuzdan ve hedefimizden bahsedeceğim.
+
+27
+00:03:39,283 --> 00:03:41,163
+Slide ilerletebilir miyiz [öğrenci]?
+
+28
+00:03:46,228 --> 00:04:00,828
+Vardiya yönetim sistemi ile günlük olarak kaç vardiya süresi olacağı belirlenir ve o sayıda personal grupları oluşturulur. Bu sistem çoğu perakend yönetiminde mağaza müdürü tarafından manuel olarak yönetilmektedir. Örnek verecek olursam.
+
+29
+00:04:01,235 --> 00:04:09,835
+Filo mağazacılıkta, Shift yazılımı altında mağaza müdürleri manuel olarak personel ataması gerçekleştiriyor ve bunu her hafta yapıyorlar.
+
+30
+00:04:10,475 --> 00:04:16,535
+Bir mağaza müdürü için aslında bir efor, uzun bir efor var diye tahmin etmek.
+
+31
+00:04:16,695 --> 00:04:18,175
+Üstelik de bunu her hafta yapmak.
+
+32
+00:04:18,695 --> 00:04:21,235
+Çünkü birçok faktörü de göz önünde bulundurması gerekiyor.
+
+33
+00:04:22,163 --> 00:04:25,384
+Personel yönetim süreçlerinin karmaşıklığının artması.
+
+34
+00:04:25,943 --> 00:04:30,163
+Açık mısınız arkadaşlar? Kamera açık olması lazım sunumda.
+
+35
+00:04:30,543 --> 00:04:34,203
+Pardon tabii ben bilgisayarı değiştirince unuttum kusura bakmayın.
+
+36
+00:04:36,703 --> 00:04:38,403
+Şu an ok sanırım.
+
+37
+00:04:39,956 --> 00:05:00,616
+Tamam, devam edeyim kaldım yerden. Personel yönetim stratejilerinden en önemlilerinden biri ise vardiya planlama kısmıdır bize göre. Özellikle prekendis sektöründe vardiya planlama çok büyük önem arz ediyor. Peki hedefimiz ne? Bir sonraki slide'ı kaydırabilir misin [öğrenci]?
+
+38
+00:05:03,475 --> 00:05:20,255
+Hedefimiz, mağazanın kapasitesine, müşterinin yoğunluğuna, personenin görev tanımlamalarına, ziyaretçi sayısına gibi birçok faktöre, birçok kısıtlamaya göre, yani bunları göz önünde bulundurarak hızlı ve kolay bir vardiya planlaması hazırlamaktır.
+
+39
+00:05:21,675 --> 00:05:30,855
+Böylelikle mağazaların hem müşteri memnuniyetinin artması, hem satışlarının iyileşmesi, hem de personel memnuniyetinin artmasını amaçlamaktayız.
+
+40
+00:05:31,507 --> 00:05:37,827
+Benim alçaklarım bu kadar. Sözü sevgiye bırakacağım. Şimdi bir yer değiştireceğiniz için ben bir videoyu durduruyorum.
+
+41
+00:05:56,660 --> 00:06:24,060
+[öğrenci] ben, [öğrenci]. Vardiyat hamilemede karşılaşılan zorluklardan bahsedeceğim öncelikle size. Burada ilk maddemiz tarihsel veriye dayalı manuel planlamanın sınırlamaları. Bunun için şöyle düşünebiliriz. Aslında tarihsel veriden kastımız şu, mağaza müdürleri vardiya planlama yaparken bir bayram zamanı vardiya planladığında geçmiş bayram dönemi verilerine bakarak vardiya planlıyor.
+
+42
+00:06:24,660 --> 00:06:32,620
+Bu bir iş gücü kaybı ve iş gücü kaybı ve verimliliği de azaltan bir durum olarak karşımıza çıkıyor.
+
+43
+00:06:32,620 --> 00:06:37,620
+İkinci durum değişen müşteri taleplerine ve personel mevcudiyetine uyum sağlama zorluğu.
+
+44
+00:06:38,500 --> 00:06:45,540
+Mağazalarda saatlere göre ya da mağazanın yerine, konumuna vesaire göre müşterinin trafiğini ve farklılıklar görünebiliyor.
+
+45
+00:06:46,675 --> 00:06:59,535
+Bu müşteri trafiğinin fazla olması ya da az olması gibi durumlarda müşterinin vardiya planlamadığı, mağaza müdürlerinin ya da vardiya yapan kişiye bu tahminleme kısmında zorluklara yol açıyor.
+
+46
+00:06:59,987 --> 00:07:26,987
+Üçüncü yöntemimiz optimizasyon eksikliği ve verimsiz vardiya planlama. Bunu da şöyle düşünebiliriz. Bir mağaza müdürü pazartesi günü vardiyasını yaptığını düşünürsek eğer, pazartesi günü en yoğun saat 3 ile 5 arası en fazla satışın yapıldığı, en fazla müşterinin geldiği zaman olarak düşünebiliriz. Böyle düşünüldüğünde mağaza müdürü bunu öngöremeyebiliyor. Öngöremediğinde de aslında burada bir optimizasyon eksikliği oluyor.
+
+47
+00:07:27,987 --> 00:07:37,728
+Bunlardan yola çıkarak da aslında bizim bu tahminlemedeki yapmamızın amacı da bu optimizasyonu sağlamak ve daha verimli bir vardiya planlaması sağlamak.
+
+48
+00:07:38,927 --> 00:07:40,507
+Diğer slayta geçebiliriz.
+
+49
+00:07:44,372 --> 00:07:47,872
+Otomatik varlığı tahminleme sistemlerinin faydaları.
+
+50
+00:07:53,168 --> 00:08:16,947
+Artan verimlilik ve maliyet tasarrufu. Burada aslında bu valiyet sistemiyle biz verimliliği arttırmış oluyoruz. Verimliliğin artması da doğru zamanında doğru çalışanların görevlendirilmesiyle üretim artar ve israf azalır. Aynı zamanda maliyet tasarrufunu sağlıyoruz. Yine fazla mesai ve iş gücü eksikliği gibi durumlara bağlı maliyetler azalır.
+
+51
+00:08:17,427 --> 00:08:32,508
+Üçüncü durumumuz, pardon ikinci durumumuz daha iyi müşteri memnuniyeti ve satışlar. Bunun için de şöyle düşünebiliriz. Daha hızlı ve tutarlı hizmet sunumu sayesinde müşterilerin memnuniyeti ve sadaketi artıyor.
+
+52
+00:08:33,172 --> 00:08:46,672
+Diğer durum geliştirilmiş personel planlama ve optimizasyon. Çalışanların iş yaşam dengesini sağlayabilmeleri ve tercihlerini planlamaya dahil edebilmeleri de motivasyon ve bağlılıklarını arttırıyor.
+
+53
+00:08:47,220 --> 00:09:12,240
+Dinamik ve değişime uyumlu vardiya planlama. Aslında burada da vardiyanın durumun dinamik demek, sabit olmaması demek. Değişen koşullara uygun olarak bunun değişmesi, çalışanların iş yoğunluğuna göre ya da farklı durumlara göre, talepteki dalgalanmalara göre uyum sağlamayı mümkün kuluyor. Bu da aslında faydalarından biri olarak karşımıza çıkıyor.
+
+54
+00:09:14,035 --> 00:09:16,455
+Diğer slide'a geçebiliriz [öğrenci].
+
+55
+00:09:19,956 --> 00:09:47,296
+Otomatik valide sistemlerinin uygulanması. Burada kısaca özet geçeceğim. Diğer arkadaşlarımız daha detaylı bu konuda anlatım yapacak. Burada ilk olarak sistem seçimi gibi düşünebiliriz. Sistem seçimi yaparken sistem işletmenin ihtiyaçlarının göz önünde bulundurulması, verinin kalitesinin önemi, verinin kaliteli ve her zaman güncellenebilir ve doğru olması, kullanıcı dostu bir arayüzün sağlanması.
+
+56
+00:09:47,956 --> 00:09:52,596
+Burada da aslında bir tahminleme sistemi yaparken aslında bir shift arayüzü de olmalı.
+
+57
+00:09:52,596 --> 00:09:57,596
+Yani uygulamanın kullanıldığı bir arayüz. Bu arayüzün de kullanıcı dostu olması gerekmektedir.
+
+58
+00:09:58,016 --> 00:10:06,096
+Entegrasyon. Entegrasyon diğer USP sistemi olabilir ya da diğer CRM gibi sistemlerle entegrasyonun doğru çalışması.
+
+59
+00:10:06,755 --> 00:10:13,956
+Destek. Yine destek kısımlarının yapılabilmesi, işte bu süreçte uygulamayla ilgili eğitimlerin verilebilmesi.
+
+60
+00:10:14,515 --> 00:10:35,755
+İkincisi, sistem kurulumu. Burada da dikkat etmemiz gereken veri toplama. Veri toplarken işte hava durumu verileri diyebiliriz belki. Ya da geçmiş vardiya sistemlerinin verileri, bu verilerin doğru şekilde toplanması. Verilerin işlenmesi, modellenme, modelleme, entegrasyon gibi sistemlerin çalıştırı halde olması.
+
+61
+00:10:36,467 --> 00:10:54,087
+Üçüncüsü sistem entegrasyonu diyebiliriz. Sistem entegrasyonu içinde vardiya planlama sistemiyle bizim bir oluşacağımız sistemle bir de otomatik vardiya tahminleme sisteminin entegrasyonunu sağlanması. Bu entegrasyonun doğru ve güvenli bir şekilde yapılıyor olması gerekmektedir.
+
+62
+00:10:55,187 --> 00:11:07,248
+Yine aynı zamanda burada diğer sistemlerden de bahsedebiliriz. SAP sistemi, personellerin alındığı sistem, entegre edildiği sistemlerin de optimize edilmesi gerekmektedir.
+
+63
+00:11:11,251 --> 00:11:25,792
+Sistem izleme ve güncellemeden bahsedebiliriz burada size. Burada da işte geri bildirim, performans göstergeleri, yeni veriler gibi verilerin tam olarak sisteme kazanılır olması ve bunların da sisteme entegre edilmesi gerekmektedir.
+
+64
+00:11:26,351 --> 00:11:33,812
+Aslında sistemin kurulmasından kısaca bu şekilde bahsedebiliriz. İlerleyen saatlerde arkadaşlar devam edecekler. Sözü taygına bırakabilirim.
+
+65
+00:11:37,812 --> 00:11:45,932
+Ben [öğrenci] [öğrenci]. Ben de Vardiyel Planlamasındaki doğrusal regresyondan ve yöntemlerinden bahsedeceğim.
+
+66
+00:11:46,752 --> 00:11:54,752
+Doğrusal regresyon, ham verilerinin güvenli bir şekilde iş zekasına eleme dönüştürmesinde için kullanılır.
+
+67
+00:11:55,812 --> 00:12:04,392
+Doğrusal regresyonda Vardiyel Planlamasını'na geçmiş satış verilerinin ve diğer faktörleri kullanarak satış tanemesinde kullanılan bir istatistikler yöntemdir.
+
+68
+00:12:05,043 --> 00:12:10,564
+Bu taramlar mağazaya ne kadar personel ters edilebileceği ve planlamada yardımcı olmaktadır bizlere.
+
+69
+00:12:12,344 --> 00:12:23,964
+Bu yöntemlerde planlama mağazanın geçmiş satış verilerini kullanarak satışta tahmin etmek mağazanın en yoğun saatlerde personel sahip olmasını sağlar.
+
+70
+00:12:24,436 --> 00:12:33,576
+Özel günlerdeki pazarlama kampanya gibi faktörlerde de bu yoğunluğu azaltarak bu bilgilerin mağazanın bu tür olayların nasıl tepki verebileceğini planlamasında işe yarar.
+
+71
+00:12:35,016 --> 00:12:39,836
+Farklı personelde örneğin tam zamanlı, yarı zamanlı satışlardaki nasıl etkilenileni belirler.
+
+72
+00:12:40,036 --> 00:12:44,036
+Bu bilgilerde mağazaların ne zaman kullanılabilir planlaması için kullanılmaktadır.
+
+73
+00:12:44,576 --> 00:12:47,956
+Bu faydalar ise daha doğru var diye planlamasını sağlamak.
+
+74
+00:12:48,436 --> 00:12:56,816
+Mağazanın en yoğun saatlerde personelere sahip olup müşterilere daha iyi yardımcı olabilmeni sağlamaktadır.
+
+75
+00:12:57,796 --> 00:13:11,336
+Maliyet tasarrufu doğrusal regresyon ve mağazanın fazla personelere israf etmemesinin önlemini sağlar ve müşterinin memnuniyetinin artmasında doğrusal regresyon müşterinin bekleme sürelerini azaltır ve sıra oluşumunu engeller.
+
+76
+00:13:14,416 --> 00:13:15,956
+[öğrenci]'i bırakacağım şimdi.
+
+77
+00:13:18,396 --> 00:13:25,615
+Merhabalar, ben [öğrenci]. Slide'ı değiştirebilir misin [öğrenci]? Ben iş paketlerimizden bahsedeceğim.
+
+78
+00:13:26,000 --> 00:13:33,280
+İlk iş paketimiz veri toplama ve işleme. Burada mağazanın geçmiş verileri toplanacak arkadaşlarımızın da bahsettiği gibi.
+
+79
+00:13:33,580 --> 00:13:38,980
+Ki bu verileri biz değişkenimizde kullanabilirim. Burada değişkenimiz aslında mağaza oluyor.
+
+80
+00:13:39,700 --> 00:13:42,980
+Bu verileri düzenledikten sonra model geliştirme.
+
+81
+00:13:43,412 --> 00:13:55,672
+Modelimiz, makine öğrenmesi modeli geliştirme, vardiya planlamasını etkileyen faktörleri belirleyip, burada bizim örneğimizde mağaza konumu, mevsimler, etkiler, özel günler, mağazanın yoğun saatleri oluyor.
+
+82
+00:13:56,292 --> 00:14:02,072
+Buna en doğru yöntem olarak doğrusal regresyon seçmeyi doğru bulduk.
+
+83
+00:14:02,611 --> 00:14:24,031
+Optimizasyon, veri analizi ve modelleme. Doğrusal regresyonu burada uyguluyoruz. Faktörlerin vardiya düzenlemesi üzerindeki etkilerini analiz ediyoruz. Bu etkileri de pilot uygulama yaptığımız mağazalarda kullanacağız. Geliştirilen modelin pilot mağazalarda gerçek verilerle doğrulanması ve performansının değerlendirilmesini yapıyoruz.
+
+84
+00:14:30,611 --> 00:14:36,411
+yaygınlaştıracağımız diğer mağazalarda vardiya ihtiyaçlarını tahmin etmek için bu modeli kullanıyoruz.
+
+85
+00:14:37,191 --> 00:14:41,571
+En sonunda artık dağıtımı yapacağız bütün mağazalara.
+
+86
+00:14:42,031 --> 00:14:51,911
+Geliştirilen sistem modelin mevcut iş süreçlerine uygun şekilde entegrasyonu ve uygulamanın dağıtımı ve kullanıma hazır hale getirilmesi yapılacak.
+
+87
+00:14:51,911 --> 00:14:55,851
+En sonunda destekleme, personel eğitimi.
+
+88
+00:14:56,240 --> 00:15:06,200
+Sistemin kullanımıyla ilgili destek sağlayacağız ve sorunlar, buglar olursa ya da yeni güncelleştirmeler, iyileştirmeler çıkarsa bunların yönetilmesi yapılacak.
+
+89
+00:15:06,940 --> 00:15:08,220
+Değiştirebilir misin [öğrenci]?
+
+90
+00:15:11,572 --> 00:15:26,411
+Kazanımlarımızdan bahsedeceğim. Vardiya planlama sisteminin geliştirilmesiyle bir dizi önemli kazanım elde edilebilir. Bu kazanımlar vardiya planlama sisteminin geliştirilmesiyle işletmenin operasyonel verimliliğini arttıracak. Hem iç hem de dış paydaşlar için değer yaratabilir.
+
+91
+00:15:26,411 --> 00:15:39,572
+İlk olarak optimiz edilmiş personel planlaması daha dengeli ve öngörülebilir vardiya düzenlemeleri yapılacak. Personelimizin iş ve özel hayat dengesini de sağlamasına yardımcı olacak. Arttırılmış iş gücü.
+
+92
+00:15:39,572 --> 00:15:54,812
+İş gücü, daha etkili kaynak kullanımı, doğru vardiya planlaması, iş gücümüzü daha etkili bir şekilde kullanmamızı sağlayarak operasyonel verimlerimizi de arttıracak. Geliştirilmiş müşteri deneyimi, optimize edilmiş vardiya planları.
+
+93
+00:15:55,183 --> 00:16:13,024
+Müşteri hizmet seviyelerini arttıracak, müşteri memnuniyetini arttıracak ve sadakati arttıracak, daha iyi çalışma ortamı sağlayacak, talep ve değişiklikleri hızlı bir şekilde yanıt verme yeteneğimizi arttırmış olacağız. Beklenmedik durumlarla da daha iyi başa çıkma kabiliyeti kazandıracak.
+
+94
+00:16:20,032 --> 00:16:26,192
+Vardiya planlama süreçlerini daha veri odaklı hale getirecek, daha iyi kararlar almamıza da yardımcı olacaktır.
+
+95
+00:16:27,872 --> 00:16:29,952
+Slaytımız geçebilir misin?
+
+96
+00:16:32,132 --> 00:16:38,712
+Burada kullandığımız kaynakçılarımız var ve slaytımızın da sonuna geldik aslında.
+
+97
+00:16:40,152 --> 00:16:41,932
+Bizi dinlediğiniz için teşekkür ederiz.
+
+98
+00:16:45,331 --> 00:16:50,471
+Teşekkürler arkadaşlar. Güzel olmuş. Hemen diğer gruba geçelim.
+
+99
+00:16:51,451 --> 00:16:52,471
+Teşekkür ederiz hocam.
+
+100
+00:16:53,991 --> 00:17:02,672
+Herkese merhaba. Hocam, ben mail atmıştım işlerinde olduğum için kamerayı açamayacağım öncelikle. Onu söylemiş olayım.
+
+101
+00:17:03,251 --> 00:17:03,531
+Tamam.
+
+102
+00:17:06,251 --> 00:17:07,411
+Hemen paylaşıyorum.
+
+103
+00:17:09,811 --> 00:17:11,052
+Grup 8.
+
+104
+00:17:13,107 --> 00:17:18,788
+Değil mi? Grup 8, [öğrenci], [öğrenci], [öğrenci], [öğrenci]. Evet.
+
+105
+00:17:19,427 --> 00:17:20,047
+Doğru hocam.
+
+106
+00:17:20,067 --> 00:17:24,887
+[öğrenci] ile ben de mail atmıştık bu arada. [öğrenci] atmıştı daha doğrusu ikimiz için.
+
+107
+00:17:25,268 --> 00:17:29,867
+Tamam, hatırladım. Tamam arkadaşlar. [öğrenci] o zaman bir tek kamerayı açacak sizden.
+
+108
+00:17:30,607 --> 00:17:34,487
+Ben de çok müsait değilim hocam. [kişisel bilgi] O yüzden ben de açamayacağım.
+
+109
+00:17:36,447 --> 00:17:36,927
+Tamam.
+
+110
+00:17:39,380 --> 00:17:41,100
+Başlayalım mı hocam? Görünüyor mu ekranım?
+
+111
+00:17:41,120 --> 00:17:42,800
+Başlayın. Başlayın arkadaşlar.
+
+112
+00:17:43,460 --> 00:17:57,519
+Tamamdır. Herkese merhabalar tekrardan. Bizim projemizin adı Akıl Tarımlı Ayoti Tabanlı Sulama Sistemi. [öğrenci], [öğrenci], [öğrenci] ve ben birlikte yürütüyor olacağız bu projeyi.
+
+113
+00:17:58,579 --> 00:18:10,059
+Öncelikle akıllı tarım neden önemli? Akıllı tarımın avantajları, kullanılan teknolojiler, enerji verimliği ve sürdürülebilirlik akıllı kullanma sistemlerinin faydalarından bahsediyor olacağız.
+
+114
+00:18:10,819 --> 00:18:24,480
+Hepimiz biliyoruz ki dünyada tarıma uygun olan toprak miktarı azalıyor. İnsanlar artık eski kadar tarımla ilgilenmiyor. Bu da tarımı sürdürülebilir kılmak için yeni yöntemler bulmamız gerektiği anlamına geliyor.
+
+115
+00:18:25,332 --> 00:18:36,692
+Bunun üstüne tabii su kaynaklarımız da azalıyor. Bütün bunları göz önünde bulundurduğumuzda tarımda insan gücünü azaltmak önemli rol oynayacağı kanısına varıyoruz.
+
+116
+00:18:37,692 --> 00:18:43,972
+Bu nedenle elimizdeki toprak ve su kaynaklarını en iyi şekilde kullanmak için yeni teknolojilere ihtiyaç bulunmakta.
+
+117
+00:18:45,032 --> 00:18:48,352
+Akıllı tarım da tam bu noktada bu sorunlara çözüm sunuyor.
+
+118
+00:18:49,395 --> 00:19:01,935
+Akıl tarım verimliliği arttırmanın ve kaynaklarımızı korumanın en iyi yollarından biridir. Bu yüzden gelecekte tarımın sürdürülebilir olması için akıl tarım uygulamalarını daha fazla göreceğiz.
+
+119
+00:19:03,576 --> 00:19:10,415
+Bir sonraki slide'ıma geçiyorum. Akıl tarım neden önemli? Bunu anlatmaya çalışacağım sizlere.
+
+120
+00:19:10,932 --> 00:19:27,232
+Tarıma uygun arazilerin ve tarıma ilgi duyanların azalması, tarım sektörünün verimliliğini olumsuz etkileyen temel faktörlerdendir. Bununla birlikte sınırlı su kaynakları ve insan gücünün daha verimli kullanılmasının gerekliliği akıl tarımın önemini daha da arttırmaktadır.
+
+121
+00:19:27,796 --> 00:19:38,836
+Bu bağlamda akıllı tarım, teknolojilerinin ve sürdürülebilir tarım uygulamalarının yaygınlaştırılması gelecekte gıda güvenliği ve sürdürülebilir adlik açısından kritik bir rol oynamaktadır.
+
+122
+00:19:40,276 --> 00:19:45,776
+Tarımın geleceği için daha akıllı ve daha sürdürülebilir çözümlere odaklanmak gerekiyor.
+
+123
+00:19:47,216 --> 00:19:53,616
+Biz de projemizde odaklandığımız önemli sorunlardan biri sulama sistemlerinin verimli çalışmamasıdır.
+
+124
+00:19:54,163 --> 00:20:05,063
+Sulama işlemi sırasında bitkinin ne kadar suya ihtiyaç olduğunu tahmin edebiliriz. Ancak sulama devam ederken gerektiğinde müdahale etmekte zorlanabiliyoruz.
+
+125
+00:20:06,343 --> 00:20:12,643
+Manel ve otonom şekilde uzaktan sulama kontrolünün olmaması da ayrı bir sorun teşkil ediyor tabii bu noktada.
+
+126
+00:20:20,051 --> 00:20:43,931
+sulama sistemlerini geliştirmeyi hedefliyor. Akıllı tarım teknikleri sayesinde sulama sistemlerini uzaktan kontrol edebileceğiz. Böylelikle çiftçiler tarlaya gitmek zorunda kalmadan sulama yönetebilecek ve gerektiğinde müdahale edebilecekler. Bu özellikle tarımda insan gücünü azaltarak daha verimli bir şekilde çalışmamıza yardımcı olacak.
+
+127
+00:20:47,188 --> 00:20:55,048
+Akıllı tarım avantajlardan bahsedecek olursak, ilk olarak akıllı tarım uygulamaları verimliliği tabii ki arttırmaktadır.
+
+128
+00:20:56,067 --> 00:21:03,628
+Sensör teknolojileri ve veri analitiği sayesinde tarımsal üretim süreçleri daha etkin bir şekilde izlenebilir ve yönetilebilir.
+
+129
+00:21:04,228 --> 00:21:07,508
+Böylece verimlilik ve ürün kalitesi de arttırabilmektedir.
+
+130
+00:21:08,211 --> 00:21:17,092
+Akıl sulama sistemleri su kaynaklarının daha etkin kullanılmasını sağlayarak su israfını önlemekte ve çevresel sürdürülebilirliği arttırmaktadır.
+
+131
+00:21:18,231 --> 00:21:26,332
+Ayrıca otomatikleştirilmiş tarım ekipmanları iş gücü maliyetlerini azaltmakta ve yoğun tarım çalışmalarını daha verimli hale getirmektedir.
+
+132
+00:21:34,003 --> 00:21:45,463
+Çevresel sürdürülebilirliği arttırılmaktadır. Son olarak, veri odaklı yaklaşımıyla akıllı tarım karar alma süreçlerini iyileştirmekte ve tarımsal risklerimizi minimize etmektedir.
+
+133
+00:21:46,624 --> 00:21:53,683
+Bütün bu avantajlar, tarım sektörünün daha sürdürülebilir, verimli ve rekabetçi hale gelmesini sağlamaktadır.
+
+134
+00:21:55,764 --> 00:21:59,324
+Bir sonraki slide'ıma geçiyorum ve [öğrenci] arkadaşımıza devrediyorum.
+
+135
+00:22:01,140 --> 00:22:14,880
+Merhaba herkese. Ben öncelikle size projemizin amacından bahsetmek istiyorum. Projemizde tarım alanlarında kullanılan sulama sistemlerinde akıllı çözümler getirerek taramın verimliliğini artırmaya hedefliyoruz.
+
+136
+00:22:15,540 --> 00:22:26,280
+Geliştirdiğimiz çözümlerle su kaynaklarının daha etkin kullanılmasını sağlamakla birlikte yaşlı tarım işçilerinin arazadaki hareketlerini kolaylaştırarak iş gücü verimliliğini artırmaya amaçlıyoruz.
+
+137
+00:22:26,867 --> 00:22:40,387
+Solama işlemlerinin uzaktan kontrol edilebilir olması çiftçilere daha fazla esneklik ve yönetim imkanı sunmaktadır. Bu sayede solama işlemleri daha verimli, esnek ve sürdürülebilir hale gelmektedir.
+
+138
+00:22:41,268 --> 00:22:48,127
+Projemizin temel odak noktası tarım sektöründe akıllı teknolojinin kullanımıyla çiftçilere daha iyi bir gelecek sağlamaktır.
+
+139
+00:22:49,007 --> 00:22:54,387
+Kısacası projemiz sayesinde tarımda verimliliği arttırmayı ve çevresel etkileri azaltmayı hedefliyoruz.
+
+140
+00:22:54,703 --> 00:23:01,503
+Ayrıca akıllı tarım sayesinde kayıt düzenini oluşturmak ve tarımda daha iyi kararlar vermek için etkili bir bilgi akışı sağlayacağız.
+
+141
+00:23:02,303 --> 00:23:08,103
+Gübre ve ilaç gibi kimyasaların kullanımını azaltarak çevreyi korumayı da aynı zamanda planlıyoruz.
+
+142
+00:23:09,124 --> 00:23:16,283
+Yenilikçi bir yaklaşımla tarım sektöründe hem verimliği artırmak hem de sürdürülebilirliği sağlamak için çalışıyoruz bu projede.
+
+143
+00:23:16,915 --> 00:23:43,016
+Aslında bu projenin amacı tarım arazisinin sahibinin veya çiftçinin mobil app üzerinden tarım arazisine gitmesine gerek kalmadan uzaktan bir şekilde ilgili gündeki havanın sıcaklığı, topraktaki su miktarı, güneş ışınına göre ilgili verileri app üzerinden takip edebileceği ve buna bağlı olarak sulama sisteminin otonom veya manuel olarak kontrol edebileceği, bu sayede ürünlerin çeşitliliği, ürün miktarı, ürün kalitesi anlamında fayda sağlayabileceği bir uygulama tasarlamaktır.
+
+144
+00:23:43,796 --> 00:23:45,436
+Diğer slide'a geçebiliriz.
+
+145
+00:23:49,756 --> 00:23:53,036
+Bu slide'da İhzaman çizelgesinden bahsediyor olacağım.
+
+146
+00:23:53,428 --> 00:24:15,648
+Proje kapsamında kapsam belirlenmesi, literatür araştırması, elektronik malzemelerin araştırılması ve temini süreçlerinin yanı sıra donanım ekipmanlarının testleri, gömülü yazımların oluşturulması, sistemin internet ve aplikasyon ortamında verilerinin görünür hale getirilmesi ve bütün sistem birleşenlerinin bir araya getirilerek projenin tamamlanması gibi iş paketleri bulunmaktadır.
+
+147
+00:24:15,648 --> 00:24:19,728
+Son olarak projenin sonuçlarına raporlanması önemli bir adımdır.
+
+148
+00:24:21,428 --> 00:24:37,788
+Bu adımda projenin hedefleri ve kısıtları netleştirilir aslında. Gereksinimler belirlenir ve proje planı oluşturulur. Daha sonra literatür araştırması yapılır. Benzer projelerde kullanılan teknolojiler, yöntemler ve bulgular incelenir.
+
+149
+00:24:38,144 --> 00:24:44,783
+Bu sayede mevcut bilgi birikimi ışığında projenin daha etkin ve kolay yürütülmesi sağlanmaktadır.
+
+150
+00:24:45,523 --> 00:24:49,703
+Ardından projede kullanılacak elektronik malzemeler araştırılır ve temin edilir.
+
+151
+00:24:50,343 --> 00:24:56,663
+Sensörler, kontrol sistemleri ve diğer elektronik birleşenlerin seçimi dikkatlice yapılır ve uygun tedarikçiden temin edilir.
+
+152
+00:24:57,363 --> 00:25:02,683
+Bu süreçlerin başarıyı tamamlanması, projenin ilerlemesi ve hedeflere ulaşması için temel adımları oluşturur.
+
+153
+00:25:03,859 --> 00:25:15,779
+Donanım ekipmanlarının testleri ve gömülü yazımlarının oluşturulması adımında ise projenin teknik altyapısının oluşturulması sağlanır. Bu adımda donanımın uyumluluğu ve yazılımın istenen işlevselliği test edilir.
+
+154
+00:25:16,372 --> 00:25:23,972
+Sistemin internet ve uygulama ortamında verilerinin görünür hale getirilmesi, projenin son kullanıcılarla etkileşimini sağlayan önemli bir adımdır aslında.
+
+155
+00:25:24,972 --> 00:25:32,712
+Bu süreçte toplanan verilerin kullanıcı dostu bir arayüz üzerinden erişilebilir hale getirilmesi ve gerektiğinde çeşitli cihazlardan erişim sağlanması amaçlanır.
+
+156
+00:25:33,472 --> 00:25:37,332
+Dördüncü adımda ise tüm birleşenlerin bir araya getirilmesi ve entegrasyonu sağlanır.
+
+157
+00:25:37,332 --> 00:25:43,652
+Bu süreçte donanım ve yazılım birleşenleri birleştirilerek sistemin bütünlüğü sağlanır ve projenin son haline getirilir.
+
+158
+00:25:44,147 --> 00:25:49,127
+Son aşamada projenin başlangıcından sonuna kadar olan süreç detaylı bir şekilde raporlanır.
+
+159
+00:25:49,587 --> 00:25:59,927
+Elde edilen veriler, yapılan testler, karşılaşılan zorluklar ve alınan sonuçlar raporlar halinde sunularak projenin değerlendirilmesi ve gelecekteki çalışmaları yol gösterilmesi sağlanır.
+
+160
+00:26:01,127 --> 00:26:02,468
+Şimdi [öğrenci] devam edecek.
+
+161
+00:26:04,019 --> 00:26:32,000
+Selam, ben devam edebilirim. Ben de akıl taram projemizi, hangi teknolojilerin kullandığınızı anlatmak istiyorum. Aslında bu projede birçok farklı cihaz ve sensör kullanıyoruz. Her biri sunama sisteminin daha verimli akıllara getirmek için kritik önemlere sahip. Bunlardan bazılarını açıklayacağım. NodeMCU mesela burada Wi-Fi bağlantısını sağlayarak sağlayan bir mikro denetleyici aslında. Sensörlerden gelen verile toptu ve kablosuz olarak bulutu aktarıyor. Aynı zamanda uzaktan sunama kontrolü içinde kullanılmaktadır.
+
+162
+00:26:32,019 --> 00:26:38,179
+Bir diğer donanım ekipmanı Arduino Nano aslında. Burada küçük bir güçlü bir mikro denetleyici aslında.
+
+163
+00:26:39,240 --> 00:26:45,019
+Sensörlerden veri toplamaya cihazlar arası kontrol etmeye görevinde kullanılıyor.
+
+164
+00:26:45,480 --> 00:26:52,219
+Burada Arduino Nano aslında çeşitli sensörlerden gelen verileri, motorlarla ilgili verilerle motorları kolayca yönetebiliyor.
+
+165
+00:26:52,919 --> 00:26:55,219
+Toprak nem sensörü, bu sensör aslında...
+
+166
+00:26:56,468 --> 00:27:04,528
+Toprağın nem seviyesini ölçüyor. Böylelikle sulama sistemi ne kadar su verilebileceğini belirlemek için doğru bilgilere sahip oluyoruz. Bu sayede aşırı ve yeterli sulamaya yönlüyoruz.
+
+167
+00:27:05,147 --> 00:27:14,508
+D-HT11 sıcaklık nem sensörü. Burada D-HT11 sıcak, havanın sıcaklığını ve havanın nemini ölçüyor. Tarım için uygun hava koşullarını da izlemek.
+
+168
+00:27:15,251 --> 00:27:35,511
+Önemli. Bu sensör de bize bu konuda yardımcı oluyor aslında. 16.2 LCD ekranda bu ekranın üzerine metin tabanlı bilgileri göstermek için kullanıyoruz. Sensörlerden gelen veriler ve diğer kontrol talimatlarını göstermek için kullanıyoruz. Kullanıcıya aslında kolayca geri bildirim verebiliyor bu şekilde.
+
+169
+00:27:43,251 --> 00:27:52,511
+neteciler arasında seri veri haberleşmesi yapabiliyoruz aslında. Bu teknolojiler taramın daha akıllı ve verimli hale getirmemize yardımcı oluyor.
+
+170
+00:27:52,511 --> 00:27:59,731
+Her bir projemizin bir parçası olarak aslında sulama sistemini daha iyi kontrol etmeme ve optimize etmek için kullanıyoruz.
+
+171
+00:28:00,891 --> 00:28:08,111
+Genel olarak projemizde bu teknolojileri bir araya getirerek hem kaynak islaflığının önlemi hem de çiftçilerin içine kolaylaştırmayı da yapıyoruz.
+
+172
+00:28:08,311 --> 00:28:09,591
+Bir sonraki sayete geçebiliriz.
+
+173
+00:28:11,731 --> 00:28:38,451
+Burada da kısaca elektronik tasarım ve yazılımsal tasarımdan bahsedeceğim. Elektronik tasarım aşamasında aslında mekanik bileşenlerin yerleşim planlarının belirlenmesi önem taşıyor. Burada sensörlerin ve mikro denetlerinin optimal konumlandırılması ve montaj için aslında detaylı bir planlama yapılması gerekiyor. Aynı zamanda güç beslemesi, kaplama göz önünde bulunur olarak aslında sistemin enerji ihtiyacının ve elektriksel bağlantıları belirleniyor.
+
+174
+00:28:39,731 --> 00:28:46,731
+Yazılım aşamasında ise aslında yazılım ekiplerinin yeteneklerine göre yazılım dili konusunda...
+
+175
+00:28:47,923 --> 00:28:52,964
+Ortak noktaya varılacak. Mikro denetci üzerinde çalışacak yazılımın işlevselliği belirleniyor ve kodlanıyor.
+
+176
+00:28:53,744 --> 00:28:59,864
+Ayrıca network yazılımları geliştirilerek cihazın ağ üzerindeki iletişim kurabilmesi, haberleşmesi sağlanıyor.
+
+177
+00:29:00,844 --> 00:29:06,564
+Aslında bu süreçte cloud entegrasyonu da gerçekleştirerek cihazın bu tabanlı hizmetlere entegre olması sağlanıyor.
+
+178
+00:29:06,564 --> 00:29:13,584
+Son olarak da test ve doğrulama adımlarıyla birlikte yazılım ve sistemin işlevselliği test ediliyor ve gerekli düzenlemeler yapılıyor.
+
+179
+00:29:13,704 --> 00:29:14,984
+Benim aktaracaklarım bu şekilde.
+
+180
+00:29:15,923 --> 00:29:16,923
+Arkadaşlar, bilimsel yöntem, bilimsel.
+
+181
+00:29:18,996 --> 00:29:44,935
+Merhabalar herkese. Burada geliştirilmesi düşünülen uygulama arayüz örneklerinden birini prototip olarak görmekteyiz. Bu arayüzde nem oranı, sıcaklık, toprak nem oranı, ışık oranı gibi önemli verilerin görsel olarak sunulması, kullanıcıların sistem hakkında anlık bilgilere kolayca erişmesini sağlayacak ve tanım süreçlerinde daha etkin bir şekilde yönetmelerini olmak tanıyacaktır. Bir sonraki slayta geçebiliriz.
+
+182
+00:29:47,188 --> 00:30:00,000
+Yine burada da kullanmasını öngördüğümüz Mobile App'in bir prototip çalışmasını görüyoruz. Bu arayüzde de yine sıcaklık, nem, toprak nemi, ışık oranı gibi şimdi ve geçmişe yönelik verileri görüntüleme...
+
+183
+00:30:00,000 --> 00:30:12,099
+Bu arayüz bize. Uygulama arayüzü aynı zamanda kullanıcıların mobil cihazlarından kolayca erişilebilir olmasıyla kullanıcıların tarım süreçlerini her zaman ve her yerden takip etmelerini olanak sanıyıklı sağlayacak.
+
+184
+00:30:12,740 --> 00:30:26,459
+Ayrıca toprak nem grafiği gibi detaylı bir grafiğin yer alması da kullanıcıların toprak nem seviyelerinin zaman içindeki değişimlerini daha iyi anlamalarına ve sulama gibi tarımsal kararları daha bilinçli bir şekilde almalarına olanak tanıyacaktır.
+
+185
+00:30:26,847 --> 00:30:28,327
+Bir sonraki slide'a geçebiliriz.
+
+186
+00:30:29,748 --> 00:30:43,008
+Burada da maliyet çizelgesini görüyoruz. Bu çizelgede projede kullanılacak olan makine ve teçhizat giderleri, sarf giderleri, hizmet alımları ve diğer harcama kalemleri belirli kategoriler altında listelenmiş bir şekilde yer alıyor.
+
+187
+00:30:43,668 --> 00:30:50,388
+Ayrıca projenin finansman kaynakları arasında TÜBİTAK'tan talep edilen katkı ve öneren kuruluş katkısı da bulunuyor.
+
+188
+00:30:50,388 --> 00:30:55,788
+Aslında bu tablo projenin bütçe planlaması ve yönetimi için önemli bir rehber sağlamaktadır.
+
+189
+00:30:57,748 --> 00:31:02,428
+ve destek sağlayan kuruluşların katkılarını da net bir şekilde gösteriyor.
+
+190
+00:31:03,347 --> 00:31:10,688
+Projemizin tüm masrafları ithalen tahminin maliyetleri de 297.230 TL olarak öngörülmektedir.
+
+191
+00:31:11,488 --> 00:31:12,668
+Bir sonraki sayıda geçelim.
+
+192
+00:31:14,291 --> 00:31:31,692
+Sonuçlara gelmeden önce projemizdeki risklerden bahsetmek istiyorum biraz. Projenin maliyeti genellikle önemli bir faktör olduğu için projemizin uygulanabilirliği konusunda bazı zorluklar yetebiliriz. Proje maliyetinin yüksek olması özellikle kısıtlı bütçelerle çalışan tarım işletmeleri için zor bir engel olabilir.
+
+193
+00:31:31,692 --> 00:31:42,251
+Bu nedenle dünyada benzer sorunlarla karşılaşmış şirketlerin projelerini detaylı bir şekilde incelemek, maliyetleri düşürmek ve optimizasyon için neler yapılabileceğini anlamak için.
+
+194
+00:31:42,291 --> 00:31:49,911
+iyi bir yol olabilir. Başarılı projelerin hangi teknikleri kullandığını öğrenerek kendi çözüm yollarımızı geliştirebileceğimizi düşünüyoruz.
+
+195
+00:31:50,591 --> 00:31:58,771
+Yazılım entegrasyonları da önemli bir diğer kundur aslında. Bu tarz tarım projelerinde çeşitli yazılım türlerinin kullanılması gerekebilir.
+
+196
+00:31:59,331 --> 00:32:05,651
+Dolayısıyla da farklı yazılımların uyumlu bir şekilde çalışması için entegrasyon süreçlerinin dikkatle planlanması gerekir.
+
+197
+00:32:05,651 --> 00:32:10,291
+Bu projede kullanılan donanım ve sensörlerle uyumlu yazılımların seçilmesi.
+
+198
+00:32:10,291 --> 00:32:16,371
+ve yazılım ile donanımın birlikte çalışmasını sağlayacak entegrasyon çalışmalarının yapılması anlamına gelir.
+
+199
+00:32:16,915 --> 00:32:44,175
+Projeyi özetlemem gerekirse, sonuç olarak bu projede iOS tabanlı bir sulama sisteminin tasarımı, uygulanması ve test edilmesine odaklanılmıştır. Projemiz, sürüme alanında su kaynaklarının daha verimli kullanılmasını sağlayacak ve sulama süreçlerini optimize ederek su tasarrufunu artıracak bir çözüm sunmayı amaçlamaktadır. Bununla birlikte, projenin odak noktalarından biri de kullanıcı deneyimini iyileştirmek ve çiftçilere kolaylık sağlamaktır.
+
+200
+00:32:44,915 --> 00:32:52,895
+Bu konuların erişim imkanı sayesinde çiftçiler her zaman ve her yerden sulama sistemin durumunu izleyebilir ve gerektiğinde müdahale edebilirler.
+
+201
+00:32:53,716 --> 00:33:04,635
+Son olarak projeden beklenen sonuçlar arasında su tasarrufu ve verimlilik, kullanıcı kolaylığı ve uzaktan erişim, gelecek iyileştirme olmakları ve sistem performansının değerlendirmesi bulunmaktadır.
+
+202
+00:33:12,915 --> 00:33:16,915
+uygulamalarda nasıl fayda sağlayabileceğini netleştirmemizi sağlayacaktır.
+
+203
+00:33:17,776 --> 00:33:19,175
+Dinlediğiniz için teşekkür ederiz.
+
+204
+00:33:23,539 --> 00:33:27,400
+Teşekkürler arkadaşlar, güzel olmuş. Hemen diğer gruba geçelim.
+
+205
+00:33:31,892 --> 00:33:39,612
+Grup 5, [öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci].
+
+206
+00:33:41,912 --> 00:33:42,572
+Buradayız canım.
+
+207
+00:33:43,771 --> 00:33:46,451
+Tamam, hemen paylaşır mısınız arkadaşlar?
+
+208
+00:33:47,192 --> 00:33:47,432
+Tabii.
+
+209
+00:33:51,667 --> 00:33:53,127
+Görüntü geldi sanıyorum.
+
+210
+00:33:54,807 --> 00:33:55,167
+Evet.
+
+211
+00:33:56,487 --> 00:33:57,028
+Tamamdır.
+
+212
+00:33:59,167 --> 00:34:00,288
+Hadi başlatalım.
+
+213
+00:34:11,507 --> 00:34:21,567
+Merhabalar, ben [öğrenci]. Ekip arkadaşlarınla birlikte akıllı şeyler için kullanılacak olan veri analizi platformumuz hakkında detayları aktaracağız sizlere.
+
+214
+00:34:22,728 --> 00:34:35,687
+Öncelikle projemiz şehirlerde toplanan çeşitli veri kaynaklarından gelen bilgileri, verileri, dataları analiz ederek daha yaşanılabilir, sürdürülebilir ve verimli şehirler oluşturmaya amaçlayan bir girişim.
+
+215
+00:34:36,052 --> 00:34:56,212
+Bu platform sensörlerden, kameralardan, trafik sistemlerinden, sosyal medyadan ve diğer kaynaklardan gelen verileri raporlayarak şehir yetkililerinin daha bilinçli karar almasına veya hizmetleri optimize etmesine ya da vatandaşların yaşam kalitesini yükseltmek için çalışmalar yapmaya yardımcı oluyor.
+
+216
+00:34:57,523 --> 00:35:08,884
+Bizim platformumuzla akıllı bir şey için yönetimini gerçekleştirmek için izleyeceğimiz yol aşamalarında öncelikle akıllı şekilde zaten var olan sistemlerin bizim platformunuza entegrasyonu yer alıyor.
+
+217
+00:35:09,683 --> 00:35:13,783
+Burada stratejik planlama ve finansman sağlanması oldukça kritik öneme sahip.
+
+218
+00:35:14,363 --> 00:35:20,403
+Ekosistem entegrasyonu ve teknolojilerin değerlendirilmesi kapsamlı bir yaklaşım gerektiriyor.
+
+219
+00:35:20,723 --> 00:35:24,363
+Bu aşamada yerel yönetimlerle iç içe bir çalışma yürütmeyi planlıyor.
+
+220
+00:35:25,012 --> 00:35:38,712
+Yerel yönetimlerin, yani örneğin belediyelerin veya daha küçük boyuttaki yerel yönetimlerin risk yönetime ve veri güvenliğiyle ilgili buna yapılarak da insan kaynaklarını geliştirmeye yönelik çalışmalarına katkı sağlamayı edebiliyoruz.
+
+221
+00:35:38,891 --> 00:35:45,771
+Yani nihayet edemiz, akıllı şehir ve yaşam kalitesi endeksleriyle ölçülebilen sonuçlar elde etmek.
+
+222
+00:35:47,443 --> 00:36:07,403
+Bu konuda baktığımız zaman yaptığımız bu çalışmalarla farklı kaynaklardan yine aldığımız bu verileri derleyerek, analitik iplemlerden geçirerek var olan sistemlerin optimizasyonu, daha verili çalışması ve refahı arttıracak konuda raporlamaların sağlanmasını edebiliyoruz.
+
+223
+00:36:07,403 --> 00:36:10,863
+Örneğin, ulaşım optimizasyonu kısmını düşünürsek,
+
+224
+00:36:12,307 --> 00:36:24,927
+Platform, trafik ışıklarının senkronizasyonlarından toplu taşıma ortalarının optimize edilmesine kadar çeşitli yöntemler kullanarak şehirdeki trafik akışını önemli ölçüde iyileştirebilecek bir potansiyelesi.
+
+225
+00:36:24,927 --> 00:36:31,087
+Bu da tıkanıklığı azaltmaya, seyahat sürelerini kısaltmaya ve hava kirliliğini düşürmeye yardımcı olabilir.
+
+226
+00:36:31,603 --> 00:36:56,223
+Bir diğeri, kamu güvenliğinin sağlanması, yani suç oranlarının düşürülmesiyle ilgili. Yerel kolluk kuvvetlerinde suç modellerini analiz ederek, onlardan aldığımız verilerle, platformumuzda bu suç modellerini analiz ederek, potansiyel suç bölgelerini belirlemek ve kolluk kuvvetlerinin devriyeleriyle kaynak tasarlarını optimize etmek için bir raporlama ve dashboard aracı sunmayı hedefliyoruz.
+
+227
+00:36:56,223 --> 00:36:59,223
+Bununla beraber de suç oranlarını düşürmeye ve vatandaşların...
+
+228
+00:36:59,603 --> 00:37:03,123
+Daha güvenli hissedmelerine kapı aralıyoruz.
+
+229
+00:37:04,483 --> 00:37:12,743
+Enerji tasarrufu yönteminde yine enerji tüketimlerini analiz ederek optimize edilmiş bir enerji skalası devreye çıkarabiliriz.
+
+230
+00:37:13,103 --> 00:37:16,543
+Ve aslında en önemlisi bir şehirdeki atık yönetimini geliştirmek.
+
+231
+00:37:17,143 --> 00:37:23,223
+Atık toplama rotalarını optimize etmek için atıkların geri dönüşüm oranlarını arttırarak
+
+232
+00:37:24,563 --> 00:37:31,903
+Bu yönetim maliyetlerini düşürmeye yardımcı olmayı edebiliyoruz. Bu da şehirlerin daha temiz ve daha sürdürülebilir hale gelmesine yardımcı olur.
+
+233
+00:37:32,923 --> 00:37:42,503
+Sonraki kısımda [öğrenci] arkadaşımız, platformumuzun özellikleriyle ilgili bağlantı kısmından bahsedecek.
+
+234
+00:37:43,155 --> 00:38:02,916
+Merhaba, biz platform özelliklerini ekipçi aslında 3 maddede inceledik. Bağlantı, sürdürebilirdik ve şam kalitesi olarak. Bağlantı özelliğimiz veri kaynaklarından sürekli canlı veri akışı sağlaması bizim için çok önemli bir şey. Güncelleştirme olsun, geliştirme olsun, müsaade oluyor.
+
+235
+00:38:11,155 --> 00:38:17,816
+sunan bu platform aslında bizim sorunlara daha hızlı reaksiyon ve tepki vermemizi sağlıyor.
+
+236
+00:38:18,715 --> 00:38:28,115
+Bu özellikler şiir yetkililerin altyapıyı daha etkili bir şekilde yönetmelerini, sorunları hızlı çözmelerini aslında olanak ve imkan tanıyor.
+
+237
+00:38:28,936 --> 00:38:30,275
+Diğer slayete geçebilir miyiz?
+
+238
+00:38:35,539 --> 00:38:46,640
+Şimdi sürdürülebilirlik özelliğimizi altı maddede inceledik. Enerji kaynakları, çevre tüketimi, sergazı emisyonları, su kaynakları, atıkim, haletim ve çevredostu şehir.
+
+239
+00:38:47,380 --> 00:38:58,539
+Akıllı şehirler enerji ve su kaynaklarının daha verimli kullanmaya başlıyor. Hem enerjisini hem doğal kaynaklarını daha doğru kullanmaya başlayarak hem geleceğe yatırım yapıyor.
+
+240
+00:38:58,539 --> 00:39:02,880
+Hem de çevresel zararları doğayı korumaya çalışıyor.
+
+241
+00:39:03,539 --> 00:39:18,480
+Yaklaşım çevre tüketimini azaltmakla beraber atıf yönetimini de iyileştiriyor. Dolayısıyla da seri gönlüsü emisyonlarını düşürüyor. Böylece şehirler aslında daha çevre dostu bir hale gelmiş oluyor. Sıradaki slide'a geçelim.
+
+242
+00:39:20,596 --> 00:39:38,115
+Yaşam kalitesi, bunu da altı maddede inceledik. Toplu taşıma, temiz hava, düşük suç oranı, düşük çevre kirliliği, yüksek ekonomik kazanç ve artan yaşam kalitesi. Aslında akıllı şehirler, sakinler için, yani akıllı şehirde yaşayanlar için daha iyi bir yaşam kalitesini amaçlıyor.
+
+243
+00:39:48,596 --> 00:39:52,355
+Direkt ve doğrudan olarak yaşam kalitesini arttırmaya, mutluluk orunu yükseltmeye başlıyor.
+
+244
+00:39:52,996 --> 00:40:02,375
+Ayrıca çevre kilini azaltmak, ekonomik kazanç fırsatlarını da arttırmakta ve genel olarak da bunların toplamında yaşam kalitesinde bir yükselme görülüyor.
+
+245
+00:40:02,375 --> 00:40:08,875
+Bu özellikler şehirde yaşamların daha sağlıklı ve güvende bir ortamda yaşamalarını sağlamakta.
+
+246
+00:40:09,235 --> 00:40:10,435
+Temel amacı da bu yönde.
+
+247
+00:40:11,115 --> 00:40:12,615
+Diğer slide geçelim mi?
+
+248
+00:40:12,915 --> 00:40:13,235
+[öğrenci].
+
+249
+00:40:14,612 --> 00:40:42,612
+Karar destek sistemleri fotoğrafta da aslında örneklerle gösterdik. Akıllı şehir konsepti 9 ana alanın birleşiminden oluşuyor. Bunları fotoğrafta da örneklediğimiz gibi akıllı yönetim, akıllı insanlar, akıllı ekonomi, akıllı çevre gibi gibi. Bu alanların aslında teknolojiyle entegrasyonu şehirlerde yaşamı kolaylaştıracak ve konfor sunacak cinsten böyle tasarlanmışlar ve ana amacı da zaten insan, insanın konforu mutlu olur.
+
+250
+00:40:42,612 --> 00:40:57,112
+Yenilebilir enerji kaynakları kullanılarak bireysel ve ortak elektrik üretimi yapılabilecek. Bu önemli bir şey. Gereksiz yere tüketimden hem kaçınılması hem de doğru ve temiz bir üretim sağlayacak.
+
+251
+00:40:57,332 --> 00:41:10,612
+Yaygın ve entegre güvenlik sistemleriyle okullar, sokaklar, parklar daha güvenli hale gelecekler. Trafik yoğunluğuna göre geçişleri kendi düzenleyen, trafik ışıkları.
+
+252
+00:41:10,612 --> 00:41:26,132
+Akıllı kavşaklar, akıllı sulama sistemleri, akıllı atık yönetimi gibi uygulamalar hem hayatı kolaylaştırıyor hem de kaynakların daha verimli kullanılmasını sağlayacak. Benimki buraya kadar da teşekkür ederim.
+
+253
+00:41:30,771 --> 00:41:31,971
+Bir insan yan.
+
+254
+00:41:52,563 --> 00:41:56,083
+Merhaba, kusura bakmayın gecikme için.
+
+255
+00:41:58,043 --> 00:42:01,224
+Slaytın bu bölümünde amaçlar ve hedefleri anlatacağız.
+
+256
+00:42:02,704 --> 00:42:10,043
+Bizim bu projedeki amacımız alınan verileri, elde edilmiş verileri analiz ederek anlamlandırmak.
+
+257
+00:42:10,603 --> 00:42:12,304
+Peki bu bize ne kazandıracak?
+
+258
+00:42:13,012 --> 00:42:25,192
+Kentin sürdürülen işleri, süreçlerini iyileştirme ve şehrin geliştirmesi üzerine neler yapılabilir, nasıl yapılabilir, en optimum nedir?
+
+259
+00:42:25,931 --> 00:42:27,251
+Gibi çıktılar verecek.
+
+260
+00:42:29,072 --> 00:42:32,471
+Şimdi platformda çeşitli verileri kaynaklardan topluyoruz.
+
+261
+00:42:33,211 --> 00:42:37,411
+Bu büyük verileri işleyerek şehir üniticilerine, trafik, enerji, kamu,
+
+262
+00:42:37,871 --> 00:42:42,012
+gibi alanlarda bilimsel kararlar alabilmeleri sağlıyoruz. Temelinde bu amacımız.
+
+263
+00:42:46,963 --> 00:42:48,443
+Bir sonraki slide'a geçebilir miyiz?
+
+264
+00:42:51,043 --> 00:42:52,723
+Veri entegrasyonu.
+
+265
+00:42:53,403 --> 00:43:02,423
+Veri entegrasyonu, çeşitli şehir yönetimi ve halka açık alanlardan gelen verileri birleştirerek veri depolanma çözümü geliştirmek,
+
+266
+00:43:02,423 --> 00:43:10,343
+bu platformun geniş bir veri yapı perzesine analiz edilebilmesini ve daha kapsamlı sonuçlar üretilebilmesini sağlamaktır.
+
+267
+00:43:11,363 --> 00:43:13,423
+Bunlardan bazı başlıkları,
+
+268
+00:43:13,619 --> 00:43:26,400
+Şehir yönetim sistemleri verileri, halka açık kaynak verileri, trafik yönetici sistem verileri, dijital verileri, operasyon sistem verileri, meteoroloji ve polis merkezi güvenlik verileridir.
+
+269
+00:43:29,119 --> 00:43:29,920
+Geçebiliriz.
+
+270
+00:43:32,200 --> 00:43:33,599
+Gerçek zamanlı veri işlemi.
+
+271
+00:43:34,612 --> 00:43:42,572
+Gerçek zamanlı veri işleme, platformun gerçek zamanlı veri toplama ve işleme yeteneklerini geliştirerek anlık karar alma ihtiyaçlarına cevap verebilmek.
+
+272
+00:43:43,012 --> 00:43:56,992
+Örneğin, trafik yoğunluğu var. Bu alanda trafik yoğunluğu tespit edip alternatif yollara yönlendirmek ya da bir anda bir yangın oluşumunda bunu itibariye erlerine bildirebilmek, daha hızlı müdahale sağlayabilmek.
+
+273
+00:43:58,832 --> 00:43:59,552
+Geçebiliriz.
+
+274
+00:44:04,019 --> 00:44:16,240
+Analitik modüllerin geliştirilmesi. Analitik modüllerin geliştirilmesi enerji tüketimi ve trafik akışı gibi spesifik alanlarda kullanılmak üzere ya da ısınma ihtiyacı, enerji ihtiyacı olarak da düşünebiliriz.
+
+275
+00:44:17,800 --> 00:44:26,240
+Analitik modüler geliştirerek bu modüllerin verileri daha derinlemesi analiz edilerek hangi alanda ne kadar ihtiyacımız var, daha anlamlı bir...
+
+276
+00:44:27,764 --> 00:44:31,844
+Çıktı elde etmek, daha anlamlı bir planlama yapılmasını sağlayabilmek.
+
+277
+00:44:34,403 --> 00:44:35,284
+Geçebiliriz.
+
+278
+00:44:38,244 --> 00:44:39,204
+Kupancı dostu.
+
+279
+00:44:39,891 --> 00:45:04,991
+Arayız. Konucu dostlar arayız. Şimdi veriler var elimizde. Verileri anlamlandırdık. Ama bunu en güzel şekilde sunmamız lazım. Grafiklerle. Hiçbir ilgisi olmayan insanın bile bir erişebilmesini, buradan bir anlam sonuç çıkartabilmesini sağlamak. Temelinde en önemli amacımız bu. Verileri anlamlandırarak bir çıktığı sağlayabilmek.
+
+280
+00:45:05,876 --> 00:45:08,576
+Buradan sonrasına [öğrenci] arkadaşımız devam edecek.
+
+281
+00:45:11,456 --> 00:45:13,316
+Ben en iyisi için teşekkür ederim.
+
+282
+00:45:14,456 --> 00:45:19,936
+Evet, şimdi bu akıllı şehirlerle alakalı bizim arkadaşlarının attığı belki birçok avantaj var.
+
+283
+00:45:21,276 --> 00:45:29,516
+Bunların da mutlaka biz hem toplumsal olarak hem ekonomiksel olarak etkilerini göreceğiz diye düşünüyoruz.
+
+284
+00:45:33,235 --> 00:45:36,856
+Yani bir ileri geçelim [öğrenci] Slide'da.
+
+285
+00:45:39,276 --> 00:45:41,536
+Toplumsal olarak düşündüğümüzde şimdi biz ne dedi?
+
+286
+00:45:41,635 --> 00:45:47,756
+İşte daha temiz bir çevre, daha az trafik sıkışıklığı, daha iyi işte ne bileyim toplu taşıma organizasyonu gibi,
+
+287
+00:45:47,756 --> 00:45:58,235
+belki işte zamanlı enerjiyle alakalı elektrik kesintileri veya o tip planlamalar daha böyle güzel planı yapıldığı zaman.
+
+288
+00:45:58,996 --> 00:46:14,376
+Bizim buradaki temel amacımız, akıllı şehirlerde yaşayan insanların mutluluğu, daha mutlu bir topluluk oluşturabilmek. Daha planlı, programlı hareket edilebilen bir şehirde muhtemelen insanlar daha mutlu olacaktır gibi düşünüyoruz.
+
+289
+00:46:14,376 --> 00:46:22,316
+Bugün şöyle İstanbul'un toplu taşımasındaki kaos ortamının trafik sıkışıklığını, trafikte yeri geliyor.
+
+290
+00:46:25,876 --> 00:46:32,876
+Adım bile atamıyoruz yani. O noktaların olmadığını varsayarsak hepimiz muhtemelen İstanbul'da çok daha mutlu olacağız.
+
+291
+00:46:34,296 --> 00:46:41,836
+Buradaki işte akıllı şeylerin asıl amacı yani yeni teknolojileri gündelik yaşantımıza uygulamak.
+
+292
+00:46:42,096 --> 00:46:46,416
+Bu vesileye bile daha kolay bir hayat sürebilmek diyebiliriz.
+
+293
+00:46:48,096 --> 00:46:50,296
+Devam edelim bu kadar. Aynen.
+
+294
+00:46:52,019 --> 00:47:07,859
+Ekonomik etkileri olarak burada trafikte harcayacağımız belki geçirdiğimiz zaman, trafikte harcadığımız yakıt, boşuna harcanan enerji israfı, su israfı gibi.
+
+295
+00:47:09,715 --> 00:47:19,195
+İsrafların önüne geçersek, ekonomik olarak topluma hem genel çapta uzun vadede de ülkeye bir katkısı olacağını düşünüyoruz açıkçası.
+
+296
+00:47:20,155 --> 00:47:25,976
+Hani bunu işte su kısmında mesela sulamalardan bahsetmişti birkaç önceki arkadaşlar.
+
+297
+00:47:26,135 --> 00:47:30,603
+Hani su şebekelerinde belki oluşabilecek bir su sızıntılarını...
+
+298
+00:47:30,675 --> 00:47:44,936
+Bir merkezi bir monitöring ekibi olsa uzaktan tespit edebilse ve bunu anlık olarak, o su sızıntısının bulunduğu bölgedeki suyu uzaktan müdahale edebilse, bence güzel olur.
+
+299
+00:47:47,188 --> 00:47:54,608
+Yüksek oranda bir su tasarrufuna gitmiş olabiliriz. Yani aynı şekilde elektrikle alakalı bir tasarrufa gitmiş olabiliriz.
+
+300
+00:47:54,988 --> 00:48:07,508
+Ya da trafik optimizasyonu önceden trafiğin sıkışabileceğini sezdiği noktalarda alternatif rotalar üretse daha ekonomik olarak bize geri dönüşük pozitif olur diye düşünüyoruz açıkçası.
+
+301
+00:48:08,548 --> 00:48:09,068
+Devam edelim.
+
+302
+00:48:12,563 --> 00:48:23,943
+İşte bu noktada da bizim planladığımız şekilde, yani şöyle bugün bir su sızıntısı, elektrik ya da trafik dediğimizde, yani biz bunların muhtemelen bir devlet kurumlarından ya da işte belirlenmiş özel kurumlardan veri çekeceğiz.
+
+303
+00:48:23,943 --> 00:48:36,364
+E bu çektiğimiz verileri de tabii ki online canlı ortamda çekeceğiz ve hani buradaki kişisel bilgiler dışarıya sızdırılmamalı veya dışarıdan müdahaleye açık bir sistem olmaması gerekiyor.
+
+304
+00:48:36,523 --> 00:48:40,563
+Yani hani bugün su şebekesi dedik, bu dışarıdan eğer müdahale edilebilir.
+
+305
+00:48:40,563 --> 00:48:56,684
+Saboteye açık olabilir, at niyetli insanlar tarafından farklı uygulamalar için kullanılabilir şeklinde düşünüyoruz. Bu noktada da güvenlik olarak aslında önemli bir çalışma gerektirdiğini düşünüyoruz.
+
+306
+00:48:58,563 --> 00:48:59,804
+Yani benim söyleyeceklerim bu kadar.
+
+307
+00:49:10,612 --> 00:49:16,012
+Teşekkür ederiz herkese. Sunduğumuz burada son veriyor.
+
+308
+00:49:22,356 --> 00:49:23,076
+Ayşe Hocam.
+
+309
+00:49:23,756 --> 00:49:29,155
+Evet arkadaşlar, burada [öğrenci] sen konuştun, [öğrenci] sen konuştun.
+
+310
+00:49:31,236 --> 00:49:38,556
+Evet hocam, burada [öğrenci] yok, size konuyla ilgili mail attığını söylemişti ya da atacaktı.
+
+311
+00:49:38,556 --> 00:49:48,155
+O bir iş durumu sebebiyle katılamadı. Bir on dakika öncesinde konuştuk saat. Beşe on kala civarlarında mail atacağını söylemişti size.
+
+312
+00:49:50,612 --> 00:49:53,952
+Diğer, [öğrenci], [öğrenci].
+
+313
+00:49:55,372 --> 00:50:00,912
+Hocam, ben konuştum, [öğrenci]'dan sonra ben konuşmuştum aslında.
+
+314
+00:50:00,912 --> 00:50:06,012
+Evet, olabilir belki listeye.
+
+315
+00:50:06,112 --> 00:50:07,912
+Çünkü bir taraftan...
+
+316
+00:50:08,947 --> 00:50:13,307
+Arkada listelerin, yani notları falan. Sunum için not alıyorum da.
+
+317
+00:50:13,907 --> 00:50:23,427
+Şöyle, herkes konuştuğum, [öğrenci] size mail atacakmış. Aramızda sadece o yok. Bir de hocam şu [öğrenci] ihtiyarı oğlu değil de ihtiyar orayı da bir ekranın içi kalmasın.
+
+318
+00:50:24,403 --> 00:50:28,763
+Öyle yazmışlar. Kim öyle yazılmış da bu listeye.
+
+319
+00:50:28,763 --> 00:50:35,423
+Mail öyle de öyle bir karışmış. Benim de gözümden kaçmış. Arkadaş bana onaylatmış durumda benim de gözümden kaçmış öyle.
+
+320
+00:50:35,884 --> 00:50:39,043
+Mail abi, bu da bu ihtiyar oğlu ama hocam. O yanlış değil.
+
+321
+00:50:40,019 --> 00:50:52,279
+Tamam, şimdi arkadaşlar, [öğrenci], [öğrenci], [öğrenci], siz ben nasıl, tamam, siz kimdense, önce [öğrenci] sen konuştun, neyse ben kayıda bir daha bakayım tekrar.
+
+322
+00:50:52,339 --> 00:50:56,000
+Ben şöyle sıralayayım hocam, önce ben konuştum, sonra [öğrenci], sonra [öğrenci] konuştum.
+
+323
+00:50:56,000 --> 00:50:58,879
+Evet hocam, önce [öğrenci] konuştu, sonra [öğrenci] konuştu.
+
+324
+00:51:00,279 --> 00:51:02,919
+Tamam, tamam arkadaşlar.
+
+325
+00:51:03,519 --> 00:51:05,000
+Sonra ben, sonra [öğrenci].
+
+326
+00:51:05,684 --> 00:51:08,184
+Tamam, o zaman bir tek [öğrenci] konuşmadı.
+
+327
+00:51:08,744 --> 00:51:09,064
+Evet.
+
+328
+00:51:09,624 --> 00:51:10,724
+Aranızda, tamam.
+
+329
+00:51:11,904 --> 00:51:16,364
+Tamam arkadaşlar, devam edelim. Diğer gruba geçelim.
+
+330
+00:51:22,516 --> 00:51:23,135
+Grup 7.
+
+331
+00:51:26,496 --> 00:51:27,635
+Merhaba hocam.
+
+332
+00:51:28,355 --> 00:51:28,795
+Merhaba.
+
+333
+00:51:34,076 --> 00:51:35,255
+Ekran geliyor mu?
+
+334
+00:51:35,855 --> 00:51:37,315
+Evet, geliyor şu anda.
+
+335
+00:51:38,916 --> 00:51:39,175
+Tamam.
+
+336
+00:51:42,099 --> 00:51:52,359
+Öncelikle merhaba herkese. Bugün size meslek hissi öğrendilerin matematik başarısı ile matematik başarısına etkilen faktörler arasındaki ilişki, şu bir takdim bir projesini sunacağız.
+
+337
+00:51:54,039 --> 00:52:02,859
+Öncelikle matematik bugünün dünyasında hayati bir rol oynar ve bilimden, teknolojiye, finansdan, mühendisliğe hayatın her yönünü etkiler.
+
+338
+00:52:03,139 --> 00:52:08,759
+Dolayısıyla matematikte sağlam bir temel, her yaştan ve meslekten dileğiyle içine önemlidir.
+
+339
+00:52:09,715 --> 00:52:17,455
+Öncelikle sunumun, projenin amaçlarından bahsetmek istiyorum.
+
+340
+00:52:18,275 --> 00:52:27,015
+Matematikte başarısını etkileyen faktörlerle bu faktörler arasındaki ilişkiyi anlamak, meslek lisesi öğrencileri için son derece önemli bir konudur.
+
+341
+00:52:27,015 --> 00:52:36,255
+Birçoğu için matematik dersi oldukça zığlayıcı olabilir ve bu durum genellikle öğrencilerde stres ve endişe yaratır.
+
+342
+00:52:36,692 --> 00:52:45,512
+Bu yüzden bu araştırma projesinin temel amacı bu ilişkiyi anlamak ve öğrencilerimize daha iyi destek sağlamaya çalışmaktadır.
+
+343
+00:52:46,711 --> 00:52:59,351
+Başka bir amacı ise öğrencilerinin matematik başarısını artırmaya yönelik etkili politika ve uygulamalar geliştirmek için kaynak tahsisi, müfredat tasarımı,
+
+344
+00:53:00,019 --> 00:53:14,199
+Destek programları, öğretmen eğitimi, veri katılımı, teknoloji, entegrasyon ve değerlendirme ve geri bildirim gibi alanlara odaklanarak öğrenci başarısına teşvik eden bir öğrenme ortamını oluşturabilir.
+
+345
+00:53:17,459 --> 00:53:25,459
+Diğer bir amacımız ise meslek lisesinde matematik başarısına etkilen faktörleri sistematik bir şekilde belirlenmekte.
+
+346
+00:53:25,715 --> 00:53:30,996
+Bunun için öncelikle mevcut bilgileri içeren kapsamlı bir literatür taraması yapacağız.
+
+347
+00:53:31,456 --> 00:53:38,695
+Ardından öğrencilerimizden, öğretmenlerimizden ve ilgili taraflardan anketler ve görüşmeler aracılığıyla veri toplayacağız.
+
+348
+00:53:39,235 --> 00:53:45,735
+Bu verileri istatistikler ve liter analiz yöntemleriyle analiz ettikten sonra uzmanlardan doğrulama alabileceğiz.
+
+349
+00:53:45,735 --> 00:53:49,096
+Daha sonra bu faktörleri değerlendirmek için.
+
+350
+00:53:49,492 --> 00:53:55,612
+İlk adım olarak ilgili verileri toplayıp istatistiksel analizleri sürecimize başlayacağız.
+
+351
+00:53:56,192 --> 00:54:06,272
+Öğrencilerden, öğrencilerin akademik performanslı demografik özellikleri, öğrenme ortamları ve destek programları gibi konulara detaylı bilgi içeriyecek,
+
+352
+00:54:06,532 --> 00:54:16,432
+liderleri analiz ettikten sonra faktörün matematik başarısını etkilerini belirlemek için kontrol grupları oluşturup uzman görüşlerini alacağız.
+
+353
+00:54:17,268 --> 00:54:35,968
+Son olarak projenin sonuçları ise, Meslek Lisesi eğitiminde matematik başarısını arttırmaya yönelik etkili stratejilerin giriştirilmesine katkı sağlayacak ve eğitim politikası, oruç durucuları, okul yöneticileri ve öğretmenleri için önemli rehberlik kaynakları olacaktır.
+
+354
+00:54:40,628 --> 00:54:54,628
+Araştırmamızın tasarımı olacak. Araştırma amacımızı net bir şekilde tanımlayarak hipotezler oluşturacağız ve BİSLEK LİSETİ öğrencileri hedef kitleye örneklem büyüklüğünü ve örnekleme yöntemini belirleyeceğiz.
+
+355
+00:54:54,628 --> 00:55:05,028
+Daha sonra bağımlı değişken olan matematik başarısına odaklanırken, yaş cinsiyet gibi demografik özellikler, öğrenme stratejileri, öğretim yöntemleri, okul kaynakları,
+
+356
+00:55:05,460 --> 00:55:28,780
+ve aile faktörleri gibi çeşitli bağımsız değişkenleri analiz edeceğiz. Veri toplamak için, nicel veriler için anketler ve sandra testler kullanarak sayısal verileri inceleyecek ve nitel verileri keşfetmek için odak grupları ve derinlemesine mülakatlar gibi nitel yöntemlerden faydalanacağız.
+
+357
+00:55:31,284 --> 00:55:37,484
+Analiz yöntemlerimiz, nicel verileri, istatistiksel teknikleriyle...
+
+358
+00:55:37,484 --> 00:55:42,504
+Şimdi neden kameranı açmadı? Kameranı açabilirsen açar mısın?
+
+359
+00:55:43,164 --> 00:55:44,484
+Kameram biraz kötü de.
+
+360
+00:55:47,664 --> 00:55:50,284
+Tamam. Yani açamıyorsan...
+
+361
+00:55:52,124 --> 00:55:53,844
+Bir şey söyleyeyim.
+
+362
+00:55:54,884 --> 00:55:57,684
+Neyse tamam. Sorun değil açamıyorsan.
+
+363
+00:55:59,411 --> 00:55:59,871
+Tamam.
+
+364
+00:56:01,591 --> 00:56:22,271
+Analiz yöntemleri, nicel verileri, istatistiksel teknikleriyle değerlendirecek ve matematik başarısı ile değerlendirme değişkenler arasındaki ilişkiyi ortaya koymak için ilişkisel analizler, doğrusel regresyon ve faktör analiz gibi istatistiksel yöntemleri kullanacaktır.
+
+365
+00:56:22,739 --> 00:56:36,379
+Ön çalışma ve feasibility aşamasında benzer araştırmalarda edinilen bilgiler ve yapılan literatür taramaları projenin temellerini oluşturacak ve veri toplama sürecini rehberlik edecektir.
+
+366
+00:56:36,704 --> 00:56:54,704
+Araştırmanın her aşamasında belirli bir paketleriyle ilişkilendirerek düzenlenecek ve veri toplama, analiz sonuçları, yorumlanmasına ve raporlama gibi iş paketleri projenin başarısıyla tamamlanmasına sağlayacak şekilde organize edilecektir.
+
+367
+00:56:55,704 --> 00:56:58,524
+Bir sonraki sunumu anlatması için sözü arkadaşıma bakıyorum.
+
+368
+00:57:05,652 --> 00:57:07,652
+Merhabalar, sesim geliyor mu?
+
+369
+00:57:10,132 --> 00:57:11,092
+Evet, geliyor.
+
+370
+00:57:11,892 --> 00:57:12,612
+Tamamdır.
+
+371
+00:57:13,231 --> 00:57:18,271
+Senin bir sonraki iş paketleri kısmına geçebilir misin? İş paketlerinden bahsediyor olacağım çünkü.
+
+372
+00:57:20,492 --> 00:57:22,271
+Merhabalar, bu...
+
+373
+00:57:22,867 --> 00:57:27,967
+Benim bahsedeceğim kısımda da bu projeyi yönetebilmemiz için izleyeceğimiz adımlardan bahsediyor olacağım.
+
+374
+00:57:28,768 --> 00:57:32,147
+Bu adımlardan ilki araştırma tasarımını oluşturma paketi.
+
+375
+00:57:32,807 --> 00:57:37,367
+Bu paket üzerinde ilk adımda araştırma sorularının belirlenmesiyle başlıyoruz.
+
+376
+00:57:37,667 --> 00:57:46,107
+Bu sorular öğrencilerin matematik dersinde olan tutumları ve bu tutumları etkilen faktörler hakkında bilgi edinmemizi sağlayan bir kısım.
+
+377
+00:57:50,867 --> 00:58:03,967
+Araştırma sorularını yanıtlamak için en uygun ve geçerli yöntemleri seçmeye çalışıp bu yöntemlerin de bu araştırma soruları net bir şekilde yanıtlamamıza yardımcı olacağını düşünüyoruz bu kısımda.
+
+378
+00:58:04,747 --> 00:58:13,467
+Çünkü araştırma sorularının ve hipotezlerin net bir şekilde belirlenmesi de bu proje için başarı ölçütlerimiz adına önemli bir kısım içeriyor.
+
+379
+00:58:16,211 --> 00:58:29,711
+Araştırma tasarımının oluşturması kısmındaki araç çıktılarımızdan bahsediyor olacağım şimdi de. Bu araç çıktılar, projemizin başarıyla tamamlandığını somut bir şekilde gösteren bir kısım aslında bu araştırma tasarımlarının oluşturulması.
+
+380
+00:58:30,392 --> 00:58:40,112
+Örneğin, Türkiye'deki meslekçisi öğrencilerinin matematik dersinde olan tutumları hakkında detaylı, teknik bir rapor ve analiz sonuçları elde etmiş olacağız bu adımda.
+
+381
+00:58:44,211 --> 00:58:48,211
+eğitim politikaları ve uygulamalarına bir katkı sağlayabileceğini düşünüyoruz.
+
+382
+00:58:49,271 --> 00:58:51,291
+[öğrenci], ikinci pakete geçebilir misin?
+
+383
+00:58:53,204 --> 00:58:59,524
+Bu pakette de veri toplama kısmı, yani anket sorularının tasarlaması ve geliştirilmesini içeriyor.
+
+384
+00:59:00,404 --> 00:59:10,604
+Bu sorular öğrencilerin matematik başarısına etkilen faktörleri kapsayacak şekilde özenle ve özenle seçilip geliştirilmeyi de içeren bir alan.
+
+385
+00:59:11,604 --> 00:59:19,324
+Bu anket sorularının hazırlanmasının ardından anket formlarında düzenlenmesi ve görsel tasarımının da yapılması aşamasını kapsıyor.
+
+386
+00:59:19,860 --> 00:59:28,840
+Bu adımda da katılımcıların anketi anlayabilmesi, doğru yöntemelmesi için de kullanıcı dostu bir arayüz oluşturmayı hedeflenen bir paket bu olan.
+
+387
+00:59:30,119 --> 00:59:33,860
+Bu veri toplama alanındaki başarı ölçütlerimiz de...
+
+388
+00:59:34,900 --> 00:59:43,940
+Anket formlarının katılımcılarla test edilip güvenilir ve geçerli ya da doğru cevapları verip vermediklerinin belirlenmesini içeriyor.
+
+389
+00:59:44,719 --> 00:59:52,960
+Ek olarak da veri araçlarının anlaşılır ve kullanımında kolay olduğunun belirlenmesi de önemli bir kısım bu veri toplamak paketinde.
+
+390
+00:59:53,880 --> 01:00:00,000
+Bu paketteki araçlarımız ise hazırlanan bu anket formlarının veri toplama araçları ve katılımcılarla test edilir.
+
+391
+01:00:00,000 --> 01:00:15,099
+alıncılarla yapılacak olan iletişim ve randevu planı da içeriyor. Bu veri toplama süreci projemizin en temel kısmını oluşturduğu için meslek lisesi öğrencilerinin bu matematik başarısını etkilen faktörleri anlamamızda en önemli adımlardan biri.
+
+392
+01:00:16,679 --> 01:00:18,759
+Sırın geçebiliriz bir sonraki slayda.
+
+393
+01:00:19,603 --> 01:00:40,543
+Üçüncü adımımız da veri analiz yöntemlerinin belirlenmesi. Bu pakette ilk olarak araştırma sorularından ve anketlerden elde ettiğimiz verilerde öncelikle nicel veriler için istatistiksel analiz yöntemlerinin belirlenmesi ve ardından da nitel verilerin analiz yöntemlerinin belirlenmesini kapsıyor.
+
+394
+01:00:47,603 --> 01:01:07,183
+Detaylı ve derinlemesini anlamamızı sağlayacak bir kısım bu veri analizi yöntemleri. Bu veri analizi için gerekli yazılımların belirlenmesi ve hazırlanması da çok önemli bir nokta. Çünkü bu yazılımlar analiz sürecini kolaylaştıracak ve verilerin doğru bir şekilde yorumlanmasına yardımcı olacak.
+
+395
+01:01:08,019 --> 01:01:25,519
+Bu paketteki başarı ölçütlerimiz ise nitel ve nicel verilerin araştırma sorularını yanıtlamak için uygun olup olmadığını belirlenmesini kapsıyor ve veri analizi için kullanılan yöntemlerin doğruluğu da bu projenin kapsamında çok önemli bir adım içeriyor.
+
+396
+01:01:26,739 --> 01:01:32,019
+Bu iş paketi de yine topladığımız verilerin doğru analizini sağlayıp projenin...
+
+397
+01:01:33,043 --> 01:01:37,403
+İlerleyen süreçlerindeki önemli bir parçasını içeriyor olacak.
+
+398
+01:01:38,863 --> 01:01:43,363
+Benim paketler için söyleyeceklerim bunlar. [öğrenci] arkadaşımız devam edecek şimdi.
+
+399
+01:01:46,723 --> 01:01:56,183
+Merhabalar, ben de [öğrenci]'ın anlattığı aslında üç paketten devamı olan dördüncü ve beşinci iş paketlerini anlatıp risk yönetimi kısımda geçeceğim.
+
+400
+01:01:56,724 --> 01:02:07,604
+Burada iş paketi 4 de aslında projenin yine temel taşlarından biri. Biraz önce [öğrenci]'ın aslında bahsettiği gibi anketin hazırlanması kısmı gibi.
+
+401
+01:02:07,604 --> 01:02:17,604
+Yani o da bir en önemli veri aslında sorulacak sorular, analizler, algoritmaların çıkartılması. Bunun yanında da aslında...
+
+402
+01:02:18,612 --> 01:02:24,572
+Verilerin toplanmasının yanı sıra bu verilerin anlamlı bir şekilde yorumlanabiliyor olması gerekiyor.
+
+403
+01:02:25,012 --> 01:02:35,472
+Ve bu yorumların da aslında sonuçlarında sağlam bir temel üzerine oturtturabilmek, bu izleyeceğimiz aslında analiz sonucunda en önemli kısma varıyor.
+
+404
+01:02:36,152 --> 01:02:44,472
+Bulguların raporlanması ve sunumların hazırlanması bu iş paketi dörtte ki en kritik görevlerimiz arasında yer alıyor.
+
+405
+01:02:45,139 --> 01:02:57,780
+Ayrıca bu iş paketin içerisinde hedef kitlelerinin belirlenmesi kısmını da ekledik. Burada hedef kitleler belirlendikten sonra aslında iletişim stratejilerinin oluşturulması gerekmektedir.
+
+406
+01:02:58,500 --> 01:03:13,139
+Sunum materyallerinin de bu iş paketi içerisinde hazırlanıyor ve titizlikle hazırlandıktan sonra sunumların etkili bir şekilde planlanabilmesi projenin başarısını etkileyeceği için aslında yani iş paketi dörde biz...
+
+407
+01:03:13,139 --> 01:03:21,720
+Biz çok fazla temel taşı eklemiş olduk. Bunun haricinde son bir iş paketimiz daha kaldı. Bir sonraki slide'a geçebilir miyiz?
+
+408
+01:03:22,800 --> 01:03:28,760
+İş paketi 5'te de proje süreçlerinin değerlendirilmesi ve iyileştirme planlarının oluşturulması yer alıyor.
+
+409
+01:03:29,360 --> 01:03:35,639
+Burada projenin başlangıcından aslında sonuna kadar geçen sürenin incelenmesi ve değerlendirilmesini içeriyor.
+
+410
+01:03:40,916 --> 01:04:01,376
+etkinliğinin değerlendirilmesi ve aynı zamanda bir hedefe ulaşılmış ama zaman çizelgesine uyulup ulaşılmış mı kontrol edilmesi kısmı yer almakta. Bunun haricinde de proje ekibinin performansının analiz edilmesi de bu paketin içeriğinde yer alıyor.
+
+411
+01:04:01,940 --> 01:04:15,139
+Bu değerlendirme, projenin başarısını sağlamak ve gelecek projelerdeki aslında yapılan eksikliklerin değerlendirilmesi için de oldukça önemli bir adım.
+
+412
+01:04:16,755 --> 01:04:30,135
+Bir sonraki slide'a geçebilir miyiz? Burada da bir sonraki slide'da da aslında risk yönetimimizden bahsedeceğiz. Burada bahsedilen risk yönetimlerinden bazıları aslında tüm projeler için geçerli olabilecek risklerden.
+
+413
+01:04:30,804 --> 01:04:39,083
+Burada projenin belli aşamalarında değil, aslında her aşamasında karşılaşabileceğimiz olası risklerden bahsettik.
+
+414
+01:04:39,643 --> 01:04:46,804
+Katılımcıların ilgisizliği bizim için en büyük risk. Çünkü en önemli şey bizdeki anketin verileri.
+
+415
+01:04:46,804 --> 01:04:55,304
+Bu veriler katılımcıların ilgisini çekebilecek şekilde toplanırsa eğer, hem doğru verilerle toplanmış olacak.
+
+416
+01:04:55,864 --> 01:04:58,603
+Sonucumuz ve raporumuz aslında doğru bir analize.
+
+417
+01:04:58,804 --> 01:05:10,643
+hem de katılımcı sayısı az olduğu durumda da bu sefer daha ufak bir kitleyle yapılan analiz aslında geneli kapsamayacağı için çok başarılı olmayacak.
+
+418
+01:05:11,643 --> 01:05:15,804
+Burada katılımcıların ilgisizliğinin yanı sıra...
+
+419
+01:05:16,563 --> 01:05:37,923
+Yanı sıra aslında en önemli diğer kısım veri kaybımız. Çünkü biz verileri bir şekilde topladık ama bu verinin bir kısmını ya da tamamını kaybettiğimiz zaman aslında projemiz ilerleyen süreçte en başa dönmüş oluyor ve belli bir zaman periyoduna uyabilmek için daha hızlı bir şekilde toplanabilir.
+
+420
+01:05:40,788 --> 01:05:51,768
+Bu tarz teknik sorunları engelleyebilmek için. Belki bir yedek alınması zaten en büyük temel. Bunun haricinde belki profesyonel bir destek alınabilir.
+
+421
+01:05:54,208 --> 01:05:56,028
+Bir sonraki slide'a geçebilir miyiz?
+
+422
+01:05:58,516 --> 01:06:05,695
+Aynı zamanda analiz sürecinde beklenmeyen zorluklar da yaşayabiliriz. Burada en büyük sıkıntı teknik sorunlar olabilir.
+
+423
+01:06:06,396 --> 01:06:17,476
+Çünkü belirlediğimiz aslında analizde kullanabileceğimiz yöntemleri belirledikten sonra bu bizim veri setimize uymayabilir veya kullandığımız araçlar bunları desteklemeyebilir.
+
+424
+01:06:22,483 --> 01:06:46,223
+Analiz yöntemi değil. Eğer bu analiz yöntemini çalıştıramazsak veya herhangi bir teknik sorunla karşılaşırsak bizim alternatiflerimizin olması gerekiyor. Eğer böyle bir durum olduğu zaman iki üç tane en azından bir alternatif olursa sırasıyla ikinci üçüncü analiz yöntemleri denenebilir. Bu da bütün o sürecin aslında boşa gitmesini engelleyecektir.
+
+425
+01:06:46,931 --> 01:06:59,851
+Ve gerekirse bu tarz işlerle yine uğraşan teknik destek alabiliriz. Hangi analiz yönteminin kullanması gerektiğini belki bize söyleyebilirler veya...
+
+426
+01:06:59,860 --> 01:07:08,300
+İlk başta çalıştıramadığımız aslında analiz yöntemini çalıştırabilmek için uygun araç gereçlerin temin edilmesi konusunda yardımcı olabilirler.
+
+427
+01:07:09,280 --> 01:07:15,140
+Son riskimiz aslında tüm projeleri etkileyebilecek bir şey. Proje ekibinin dağılması.
+
+428
+01:07:15,780 --> 01:07:20,940
+Burada çok fazla insan gücüne de ihtiyaç duyuluyor verilerin toplanabilmesi için.
+
+429
+01:07:21,059 --> 01:07:25,640
+Onun haricinde analiz çabı yapan arkadaşların da dağılması süreci olabilir.
+
+430
+01:07:27,860 --> 01:07:44,860
+Her bir kişinin dağılımı, yani her bir kişiye tek bir dağılım verilmez. Belki ikili gruplar, üçlü gruplar yapılabilir ve sürekli her bir aşamada dokümentasyon oluşturularak aslında herhangi bir ekibin dağılması durumunda aslında yedeklenmiş gibi olabilir.
+
+431
+01:07:46,880 --> 01:07:51,480
+Bir sonraki slide'da aslında [öğrenci] arkadaşın devam edecek. Ben sözümü ona bırakıyorum.
+
+432
+01:07:54,291 --> 01:08:05,111
+Teşekkür ederim [öğrenci]'cığım. Merhaba arkadaşlar, ben [öğrenci] Hanım. Hocam, kameramda bir sıkıntı var, erişilemiyor. O yüzden bu şekilde devam edeceğim sunulma maalesef.
+
+433
+01:08:05,651 --> 01:08:06,611
+Tamam, önemli değil.
+
+434
+01:08:06,971 --> 01:08:07,631
+Teşekkür ederim.
+
+435
+01:08:09,171 --> 01:08:19,291
+Araştırma olanakları olarak tabii ki meslek liseleri, ülkemizdeki meslek liselerinden gidip veri toplayabiliriz. Oradaki öğretmenlerle iletişim sağlayıp öğrencileri...
+
+436
+01:08:20,564 --> 01:08:26,363
+Gerekli analizlerin yapılabilmesi için anket vesaire veri toplama kısmında meslek sitelerine de irtibat kurmamız gerekiyor.
+
+437
+01:08:26,423 --> 01:08:29,024
+Online veri tabanlarını kullanarak süreci hızlandırabiliriz.
+
+438
+01:08:30,324 --> 01:08:33,863
+Google Form gibi anketler üzerinden hızlandırabiliriz.
+
+439
+01:08:36,524 --> 01:08:40,024
+Bilimsel veri tabanlara yine tutum ölçekleri var bu konuda hazırlanmış.
+
+440
+01:08:40,123 --> 01:08:43,043
+Literatür taramalarını bunların üzerinden gerçekleştirebiliriz.
+
+441
+01:08:45,619 --> 01:08:58,819
+Bunlar da baya çünkü Türkiye'de de yapılmış araştırmalar var. Sadece meslek listesi özelliğinde belki daha sınırlı ama genel olarak Türkiye'deki matematikteki öğrenme güçlükleri üzerine araştırmalar mevcut. Bunlardan yararlanabiliriz.
+
+442
+01:08:59,828 --> 01:09:09,428
+İlgili meslek grupları, akademi veya öğretmenler eğitim camiasından, onların uzman görüşlerinden danışmanlık faaliyeti yürütebiliriz.
+
+443
+01:09:09,828 --> 01:09:14,868
+Birlikte sorularımızı hazırlayabiliriz. Onların da deneyimlerinden istifade edebiliriz.
+
+444
+01:09:16,668 --> 01:09:24,748
+Değerlendirme aşamasında hem soruların belirlenmesinde hem de projenin değerlendirmesinde kılavuzluk edecektir branş öğretmenleri bu konuda bize.
+
+445
+01:09:25,876 --> 01:09:27,695
+Devam edebiliriz bir sonraki slayta.
+
+446
+01:09:28,896 --> 01:09:42,855
+Yaygın etkisi de öngörülen çıktılar. En az bir akademik makale bildiri çıkışı olacaktır. Sonuçların değerlenmesinden 6 ila 12 ay içerisinde bir çıktı. Mümkün olacaktır.
+
+447
+01:09:45,043 --> 01:09:50,764
+Bunları artırmaya yönelik, bütün öğrencilerin başarısını artırmaya yönelik materyaller oluşturulabilir.
+
+448
+01:09:51,023 --> 01:09:55,884
+Ya da aslında belki de en önemli avantajı şu olacak diye düşünüyorum.
+
+449
+01:09:55,884 --> 01:09:58,064
+Hani problem tespit edilecektir.
+
+450
+01:09:58,224 --> 01:09:59,304
+Nerede bir ağırlık var?
+
+451
+01:10:00,000 --> 01:10:12,260
+Ortalama olarak öğrencilerin neden başarısız kaldıkları nokta, örneğin aile mi etken, yoksa işte beslenme mi ya da ne bileyim tutumlarından kaynaklı olarak mı bu başarısızlık devam ediyor, geliyor.
+
+452
+01:10:13,039 --> 01:10:17,639
+Aslında zaten kırılma yeri de lise giriş sınavında ortaya çıkıyor harita aslında.
+
+453
+01:10:17,639 --> 01:10:27,979
+Yani meslekçileri diye biz özelleştirdik konuyu ama konu aslında LGS sınavlarında Teams yayın biliyorsunuzdur, Teams ve PISA gibi.
+
+454
+01:10:28,000 --> 01:10:33,800
+Uluslararası ölçme değerlendirme eğitimi için kullanılan ölçme değerlendirme araştırmaları var.
+
+455
+01:10:34,860 --> 01:10:39,159
+Tims mesela aslında büyük ölçülükte ortaya koyuyor. Dört yıllık bir periyot kapsıyor.
+
+456
+01:10:40,520 --> 01:10:44,520
+Beşinci, altıncı, yedinci, sekizinci sınıf gibi bir kapsama süreci var.
+
+457
+01:10:46,539 --> 01:10:51,340
+Oradan çıkan sonuç zaten aslında yansıyor. Liselere de yansıyor.
+
+458
+01:10:51,988 --> 01:11:04,308
+Ve sadece aslında meslek listeleri olayı bizim ülkemizde mühslimin hasır değil. Uluslararası camiada da bu yani bütün dünyada da meslek listelerinin başarısı en alt seviyede kalıyor.
+
+459
+01:11:07,507 --> 01:11:14,707
+Bu tabii ki mesleğe yönelmelerinde bir ölçek oluyor ama bütün herkes de aynı branştan devam etmiyor.
+
+460
+01:11:14,707 --> 01:11:18,768
+Yani meslek sesinde ne branş okuyorsa onun üzerine hayatını idame ettirmiyor.
+
+461
+01:11:18,887 --> 01:11:27,768
+Öğrenci %25'i veya %15'i gibi çok cüzi bir kısmı aynı meslekten, aynı öğrendiği, tahsil ettiği ilimden devam edebiliyor.
+
+462
+01:11:28,108 --> 01:11:31,368
+Ama birçoğu zaten akademide de devam edemiyor.
+
+463
+01:11:31,887 --> 01:11:34,047
+Başka türlü iş alanlarında hayatına devam ediyor.
+
+464
+01:11:34,507 --> 01:11:35,507
+Ama her ne olursa olsun.
+
+465
+01:11:35,507 --> 01:11:43,947
+Bu yüzden tabii ki matematiğinin, okuryazarlarının artmış olması diğer yerlere de yansıyacaktır.
+
+466
+01:11:44,047 --> 01:11:49,687
+Ki önümüzdeki süreçte gördüğümüz gibi bütün iş alanları teknolojik bir şekilde devam edecek.
+
+467
+01:11:50,127 --> 01:11:57,987
+Dolayısıyla öğrencinin de yani gençlerin de kendini daha yetenekli hale getirmeleri.
+
+468
+01:11:58,431 --> 01:12:16,011
+Gerekecek diye düşünüyorum. Kendim de meslek sitesinde şu an bilişim öğretmeni olarak görev almaktayım. Bu yönde tezler hazırlanmaya devam edilebilir. Bunları destekleyecektir bizim yaptığımız çalışmada. Devam edebiliriz bir sonraki slide'a.
+
+469
+01:12:19,444 --> 01:12:26,664
+Bu çıktılar muhakkak ve muhakkak paylaşılmalı. Eğitim camiasında daha spesifik toplantılarla olabilir.
+
+470
+01:12:27,152 --> 01:12:42,391
+Yani bu makaleyi yayınlayanların sadece akademide kalmaması gerekiyor. O tezlerin, yapılan çalışmaların bizzat ilgili olduğu meslek sesselerinde de bunların çıktıklarının sunumlarının yapılması hem öğrencilerde hem de öğretmenlerde farkındalık oluşturacaktır.
+
+471
+01:12:42,391 --> 01:12:48,391
+Bu toplantılarla olabilir, online toplantılarla olabilir. Sosyal medyadan...
+
+472
+01:12:49,555 --> 01:13:03,695
+Çeşitli materyaller hazırlayarak öğrencilerin dikkate çekilebilir. Fuarlar aracılığıyla eğitim, özel eğitim, yani sadece devlet okulları değil, belki özel okullar da bu konuda istifade edebilir. Devam edelim bir sonrakine.
+
+473
+01:13:09,515 --> 01:13:17,343
+Oluşması öngörülen etkilere ilişkin bilgiler, projeden oluşması öngörülen etkilere ilişkin bilgiler. Bir yıl içinde...
+
+474
+01:13:17,344 --> 01:13:41,944
+Başarının artılmasıyla eğitim değişikliklerinin azalması. Bu çok aslında biraz ütopik bir yaklaşım olabilir. Aslında çok kısa bir vade ama daha uzatılabilir tabii ki. İki yıl içerisinde iş gücü piyasasına daha donanımlı bireylerin yetişmesi, nitelikli bir iş gücü sağlayacaktır. Ve üç yıl içerisinde ise yetenekli gençlerin yetişmesiyle bilimsel ve teknolojik gelişimlere de katkı sağlanacaktır.
+
+475
+01:13:43,731 --> 01:14:00,012
+Örneğin, şu an bu konuyla belki uzaktan bahsediyor olacağım ama eskiden sadece mekanik sistem mevcuttu. Çamaşır makinelerimizden tutun, arabalara kadar her şey mekanikken şu an mekatronik, hem elektroniğin hem mekaniğin yazılımın da devreye girmesi söz konusu.
+
+476
+01:14:00,012 --> 01:14:10,372
+Bütün beyaz eşyalarımız şu an programlanabilir vaziyette. Arabalarımız esek tamamen artık elektrikle çalışan arabalara doğru. Hibrit'ten de artık elektriğe tamamen dönüş söz konusu.
+
+477
+01:14:11,731 --> 01:14:38,311
+Daha üst düzey öğrenmeleri gerekiyor. Öğrencilerin de kendilerini bu konuda yetiştirmeleri gerekiyor. Teknisyen de olsa, sanayide de çalışacak olsa daha üst düzey bir bilgiye erişmiş olması bekleniyor günümüzde. Bu teknolojik gelişmelerin desteklenmesinde bizim yapacağımız çalışmanın katkı sağlayacağını düşünüyorum. Bir sonraki slide'ımız. Teşekkür ederim dinlediğiniz için. Varsa sayımızı alabilirim.
+
+478
+01:14:39,572 --> 01:14:48,172
+Ben teşekkür ederim arkadaşlar. Çok güzel anlattınız. Yani okumadığınız slide'ları gerçekten anlattınız. Güzel oldu anlatımınız hepinizin.
+
+479
+01:14:48,492 --> 01:14:49,332
+Teşekkür ederiz hocam.
+
+480
+01:14:50,652 --> 01:14:59,212
+Başka sorusu olan var mı arkadaşlar? Bir de şöyle haftaya sunum olup da bu hafta ben hazırım deyip sunmak isteyen var mı aranızda grup?
+
+481
+01:15:00,212 --> 01:15:02,731
+Evet hocam var. Biz grup onu.
+
+482
+01:15:04,340 --> 01:15:15,000
+Eğer mümkün olabilirse biz sunarız. Ama bizim şöyle bir şey var. [öğrenci] arkadaşımız [kişisel bilgi]
+
+483
+01:15:17,119 --> 01:15:31,380
+O yüzden olmaz arkadaşlar. Ona demiştik ya öyle. Çünkü ona söz verdik şimdi. Ona göre ayarladık. Değil mi? Artık yani hani
+
+484
+01:15:31,648 --> 01:15:33,347
+Olmaz, şimdi de az geldi.
+
+485
+01:15:35,148 --> 01:15:41,247
+Yani aslında geldi herhalde [öğrenci] ama bizimle de iletişime geçmediği için.
+
+486
+01:15:43,367 --> 01:15:53,028
+Şey demişti bana en son e-mail attığında, hatta bir tane resmi yazı da göndermişti bütün hocalara.
+
+487
+01:15:54,867 --> 01:15:57,007
+Orada son, yani öyle demişti.
+
+488
+01:15:58,003 --> 01:16:02,444
+20 o hafta geleceğini söylemişti. 20'si haftası.
+
+489
+01:16:03,784 --> 01:16:07,083
+Peki tamam hocam. Yani siz nasıl isterseniz.
+
+490
+01:16:09,684 --> 01:16:15,503
+Tamam arkadaşlar. O zaman onu haftaya yapalım. Başka herhangi bir sorusu olan var mı?
+
+491
+01:16:18,323 --> 01:16:38,683
+Tamam. Yarın bir tane hani bahsettiğim İspanya'dan bir hocanın online dersi var. Publication'la ilgili ya araştırma nasıl yapılır, makale nasıl yazılır. Katılmak isterseniz bilgilerini paylaşmıştım. Katılabilirsiniz. Onun dışında haftaya sunumlarımız devam ediyor. Online bir şekilde dört grup var.
+
+492
+01:16:39,199 --> 01:16:54,180
+O dört grubun da sunumlarını dinleyeceğiz. Böylece bitireceğiz. Sonra finaliniz olacak. Finaliniz okulda olacak. Arkadaşlar, herkes tam tarihi belli olunca zaten görürsünüz. Onu ayarlayacak araştırma görevlisi arkadaşlarımız tarihini, yerini.
+
+493
+01:16:57,699 --> 01:17:06,520
+Saatini ben özellikle dedim beş buçuktan, yani herkes katılabilsin diye beş buçuktan altı buçuğa kadar. Günü daha tam belli değil.
+
+494
+01:17:07,988 --> 01:17:31,628
+Öyle arkadaşlar. Okulda olacak. Test olacak. Final için bir döküman atmıştınız galiba değil mi? Slide'lardan sorulmuşsunuz arkadaşlar. Bir de iki tane döküman. Slide'lardan, anlattıklarımdan, sonra o iki tane işte PDF vardı onlardan. Genel olarak.
+
+495
+01:17:32,595 --> 01:17:45,335
+Zaten dersi dinlediyseniz genel olarak yapacağınız şeyler olur. Tabii yine genel bilgileriniz de olması lazım. Zaten anlatırken, o slide'ları anlatırken genel bilgilerden de bahsettik.
+
+496
+01:17:46,855 --> 01:18:00,015
+Öyle araştırma teknikleri, etik dersiyle ilgili önemli olan noktalardan bahsetmiştik zaten. Genel olarak o bilgileriniz, yine tabii çalışmanız üstünden geçmeniz lazım ama yeterli olacaktır diye düşünüyorum.
+
+497
+01:18:00,916 --> 01:18:11,395
+Öyle arkadaşlar, finaliniz olacak işte. Onun dışında başka benim söyleyeceğim bir şey yok. Sizin sorunuz var mı? Söylemek istediğiniz bir şey yok.
+
+498
+01:18:12,055 --> 01:18:17,996
+Hocam, bu sunumlar için de yoklama alıyor muydunuz? Sunumlara katılın.
+
+499
+01:18:20,515 --> 01:18:25,376
+Yani hani tabii bu online olarak zaten otomatik alıyor sistem.
+
+500
+01:18:25,952 --> 01:18:34,532
+Başkasının sunumuna katılmadıysam, yok, devamsızlık mı, devamsızlık olur mu diye mi soruyorsun?
+
+501
+01:18:34,652 --> 01:18:35,492
+Aynen öyle.
+
+502
+01:18:37,152 --> 01:18:39,932
+Onlara bakacağım arkadaşlar, hepsine tekrar.
+
+503
+01:18:40,832 --> 01:18:43,592
+Yani tabii o da devamsızlık, dinlemeniz de gerekiyor başka.
+
+504
+01:18:43,592 --> 01:18:47,772
+Yani bu da sonuçta ders ya, devam ediyor yani tabii.
+
+505
+01:18:48,372 --> 01:18:51,832
+Peki toplamda kaç devamsızlık hakkımız var hocam? Bir sınır var mı orada?
+
+506
+01:18:52,851 --> 01:19:11,511
+Normalde %70'ti ama diğer gruptakiler çok ısrar etti. Çünkü çalışıyoruz falan diyorlar. Tamam, haklısınız. Ama tabii bir taraftan da diploma alıyorsunuz siz de. Bunu siz seçiyorsunuz.
+
+507
+01:19:20,148 --> 01:19:35,828
+Bakacağım, %50 dedim onlara. %50 devamsızlık. Yani normalde %70 ama %50 gibi tolerans göstermeye çalışacağım arkadaşlar. Bakacağım hepsine tekrar.
+
+508
+01:19:37,168 --> 01:19:38,748
+Tamam hocam, teşekkür ederim, sağ olun.
+
+509
+01:19:39,368 --> 01:19:43,108
+Rica ederim. Başka sorusu olan var mı?
+
+510
+01:19:46,739 --> 01:19:48,899
+Söylemek istediği bir şey olanlar mı?
+
+511
+01:19:49,519 --> 01:19:55,920
+Hocam, nokları toplu olarak mı sisteme gireceksiniz peki bunları yoksa her grup o gün mü gerekecek bir şey yapmıyor?
+
+512
+01:19:56,219 --> 01:19:59,259
+Bir iki defa bugün, ben anlatımlı yaptık da o yüzden soruyoruz.
+
+513
+01:20:00,000 --> 01:20:08,000
+Sunum notları ikinci vize olarak görünecek. Herkes bitirdikten sonra toplu olarak aktarıyorum arkadaşlar ben notlarınızı.
+
+514
+01:20:08,559 --> 01:20:14,839
+Ama sunum yaparken not alıyorum sürekli. Kim ne yapmış, kim nasıl anlattı. Not alıyorum şu anda.
+
+515
+01:20:14,839 --> 01:20:23,199
+Yani sizin notunuzu ben şu anda verdim. Ama bir daha bir dinleyip, bazen bir daha üstünden gidiyorum online kayıt olduğu için.
+
+516
+01:20:25,639 --> 01:20:26,839
+Ama genel olarak...
+
+517
+01:20:28,115 --> 01:20:42,155
+Şu anda verdim sisteme, herkesinkini beraber işleyeceğim. Herkes bitirdikten sonra, bütün sunumlar bittikten sonra, bunu ikinci vize olarak, toplu olarak herkesin notunu OBSY'ye o zaman aktaracağım.
+
+518
+01:20:42,435 --> 01:20:51,775
+Yani 23'ünde sizin sunumlarınız bitmiş olacak, o zaman 24'ünde ben bunları aktarabileceğim. İkinci vize olarak herkesinkine.
+
+519
+01:20:52,195 --> 01:20:52,855
+Teşekkürler.
+
+520
+01:20:53,815 --> 01:20:54,475
+Rica ederim.
+
+521
+01:20:56,948 --> 01:20:58,648
+Başka sorusu olan var mı?
+
+522
+01:21:03,347 --> 01:21:05,687
+Söylemek istediğiniz bir şey var mı arkadaşlar?
+
+523
+01:21:09,492 --> 01:21:16,431
+O zaman görüşmek üzere haftaya. İyi günler diliyorum hepinize. İyi günler hocam.
+
+524
+01:21:16,431 --> 01:21:17,431
+İyi günler.
