@@ -1,0 +1,3979 @@
+1
+00:00:07,411 --> 00:00:08,411
+Pekala.
+
+2
+00:00:10,211 --> 00:00:11,411
+Pekala paylaşalım.
+
+3
+00:00:13,711 --> 00:00:17,812
+Evet. 14.10'a kadar atlasını beklememiz.
+
+4
+00:11:47,316 --> 00:11:50,316
+Evet arkadaşlar, yeterince bekletik.
+
+5
+00:11:51,456 --> 00:11:52,995
+Açmaç başlayabiliriz.
+
+6
+00:11:54,696 --> 00:11:56,036
+27 kişiyiz, ben dahi.
+
+7
+00:11:56,756 --> 00:11:57,636
+Eşimdaha bilmez.
+
+8
+00:11:59,216 --> 00:12:00,436
+Bakalım şimdi.
+
+9
+00:12:16,692 --> 00:12:17,251
+Şenç.
+
+10
+00:12:26,451 --> 00:12:29,892
+Aşkın.
+
+11
+00:12:36,692 --> 00:12:38,692
+Evet, tamam. Peki.
+
+12
+00:12:40,692 --> 00:12:41,692
+We may begin.
+
+13
+00:12:44,692 --> 00:12:47,692
+I don't exactly remember.
+
+14
+00:12:47,692 --> 00:12:50,692
+Okay, we'll begin from this slide.
+
+15
+00:12:50,692 --> 00:12:59,692
+So, I will make a demonstration about the IDEA and VALETUALMAD.
+
+16
+00:13:02,740 --> 00:13:09,299
+I will continue by demonstrating the VILET UML for you.
+
+17
+00:13:09,299 --> 00:13:24,340
+Last week, I have described how to install Java Virtual Machine, Java Development Kit, Java Entire Environment, and Integrated Development Environment, such as Eclipse.
+
+18
+00:13:25,971 --> 00:13:34,591
+If you are able to install JDK correctly, then you would write something like Java version.
+
+19
+00:13:35,591 --> 00:13:41,432
+And you will have a meaningful response for that command.
+
+20
+00:13:43,316 --> 00:13:56,516
+Also, when building my lecture notes, in order to draw Java diagrams, I have used a lightweight tool with WildTriana.
+
+21
+00:13:58,516 --> 00:14:05,516
+It itself is a Java application, as you can see shortly.
+
+22
+00:14:11,412 --> 00:14:15,412
+Ok, but somehow the shortcut isn't now.
+
+23
+00:14:16,412 --> 00:14:18,412
+Ok, now it's first.
+
+24
+00:14:19,412 --> 00:14:24,412
+This itself is an executable Java file.
+
+25
+00:14:24,788 --> 00:14:36,427
+You can merge multiple class files into one jar file and designate one of these classes as a main application.
+
+26
+00:14:37,207 --> 00:14:51,388
+And in that case, if you double click that jar file, the main method of the design main application is executed first and the control flow begins.
+
+27
+00:14:51,988 --> 00:14:59,188
+If you wish, you can open this with an app such as WinRAR.
+
+28
+00:15:03,091 --> 00:15:21,851
+If you open it, you'll see a director structure and the class codes are in packages such as comb.hardmove.violet, that for example, product and diagram for example.
+
+29
+00:15:21,851 --> 00:15:30,091
+You can see many class files here according to a package layout. We will talk about packages soon.
+
+30
+00:15:30,128 --> 00:15:34,248
+If you double click this application, it will be executed.
+
+31
+00:15:35,948 --> 00:15:38,848
+And you will see such an application.
+
+32
+00:15:39,648 --> 00:15:44,307
+You can create any type of diagrams here.
+
+33
+00:15:44,307 --> 00:15:49,307
+We will use class diagrams and sequence diagrams in that picture.
+
+34
+00:15:50,388 --> 00:15:52,307
+For example, let's create a...
+
+35
+00:15:53,716 --> 00:16:15,276
+Class Diagram. When you create a diagram, at the right hand side, you will see a panel. And you can see all diagram components in that panel. You can select and click to the canvas and you can put as many components as you want.
+
+36
+00:16:18,484 --> 00:16:26,484
+If you use the select icon, you can select individual items or you can draw a box.
+
+37
+00:16:27,384 --> 00:16:31,444
+When you double click any item, its properties will be opened.
+
+38
+00:16:32,104 --> 00:16:37,604
+For example, let's create a class named lectures.
+
+39
+00:16:40,804 --> 00:16:43,944
+And that will be students.
+
+40
+00:16:44,820 --> 00:16:46,500
+Enroll to that lecture.
+
+41
+00:16:46,900 --> 00:16:49,800
+And let's make an association like this.
+
+42
+00:16:50,240 --> 00:16:54,160
+We will talk about different types of associations soon.
+
+43
+00:16:55,720 --> 00:16:58,160
+Those will be...
+
+44
+00:16:59,347 --> 00:17:05,707
+How can I say? I couldn't find the word yöndler in Turkish. These are direct iterations.
+
+45
+00:17:06,427 --> 00:17:15,887
+So, and every arrowhead means different things. We will learn all of them soon.
+
+46
+00:17:16,248 --> 00:17:23,427
+But just in order to give you an impression here, I will demonstrate a little few things.
+
+47
+00:17:25,427 --> 00:17:26,467
+For example.
+
+48
+00:17:27,539 --> 00:17:31,699
+When you create an diagram, you can save it.
+
+49
+00:17:34,299 --> 00:17:36,199
+For example, in anywhere you wish.
+
+50
+00:17:37,339 --> 00:17:39,099
+For example, in here.
+
+51
+00:17:42,579 --> 00:17:48,019
+Now, I have saved it as a class diagram file. If I wish, I can open it any time I wish.
+
+52
+00:17:50,699 --> 00:17:54,579
+Let's select class diagram files and here is my file.
+
+53
+00:17:55,299 --> 00:17:58,579
+Also, if you wish, you can export this as an image.
+
+54
+00:17:59,859 --> 00:18:00,579
+Such as this.
+
+55
+00:18:01,679 --> 00:18:05,899
+And you can open it in any image editor.
+
+56
+00:18:15,955 --> 00:18:16,675
+That's it.
+
+57
+00:18:18,815 --> 00:18:23,035
+There will be a few cases that you cannot do with VILDTMS.
+
+58
+00:18:23,035 --> 00:18:30,415
+So if you open this image with an image editor, you can edit it as you wish.
+
+59
+00:18:31,635 --> 00:18:37,035
+For example, this one, Paint.net application, it's a very...
+
+60
+00:18:37,523 --> 00:18:41,483
+It's a very nice program and it's also free.
+
+61
+00:18:41,803 --> 00:18:42,983
+It has multiple capabilities.
+
+62
+00:18:43,743 --> 00:18:50,383
+I use it in my basic image processing, image editing tool.
+
+63
+00:18:50,383 --> 00:18:51,603
+I use this one.
+
+64
+00:18:52,243 --> 00:18:57,203
+If you wish, you can do anything else with this file tool.
+
+65
+00:19:00,243 --> 00:19:13,163
+Okay. Normally, as I enjoy using this program, I don't want it to be shown as the default icon of the Java applications.
+
+66
+00:19:15,303 --> 00:19:20,283
+It was... I'm sorry. Let's find it again too.
+
+67
+00:19:22,132 --> 00:19:47,352
+Okay. Its default appearance is the classic Java icon, a coffee cup, brewing some coffee. But as its name is violet, I have taken its violet pictures from its website and converted it to an icon file, as you can see the extension here. And when I make a shortcut to my desktop,
+
+68
+00:19:47,763 --> 00:19:52,823
+I change its icon from here.
+
+69
+00:19:54,603 --> 00:19:56,023
+And I go ahead.
+
+70
+00:20:00,000 --> 00:20:23,619
+We really need to use that tool. Not probably, but if it is decided to make exams online, not face-to-face, online, then maybe we may ask you to draw some class diagram or a sequence diagram. In that case, you can use that tool.
+
+71
+00:20:25,523 --> 00:20:37,823
+Export your diagram, image file, and edit to your answer that you will be creating in the format of a word file, for example.
+
+72
+00:20:37,823 --> 00:20:47,723
+But hopefully, we will do our remaining exams face to face, hopefully, inshaAllah.
+
+73
+00:20:47,723 --> 00:20:49,223
+We will see about that.
+
+74
+00:20:49,652 --> 00:20:57,872
+This tool cannot create any code or it cannot draw the diagram of existing code.
+
+75
+00:20:57,872 --> 00:21:04,412
+It's just for you to draw some diagrams and export them as image files.
+
+76
+00:21:04,632 --> 00:21:05,072
+That's all.
+
+77
+00:21:05,592 --> 00:21:12,711
+If you wish more complicated tools, I can give you one open source alternative.
+
+78
+00:21:13,032 --> 00:21:15,092
+It's called Argo diagram.
+
+79
+00:21:15,584 --> 00:21:29,344
+It has some code transformation capabilities, but not as long as this lecture goes while GML is more than enough for me, mostly enough sufficient for me.
+
+80
+00:21:29,664 --> 00:21:31,324
+So this is the one that I use.
+
+81
+00:21:34,403 --> 00:21:42,983
+Okay, now let's begin with the fundamental rules of the object-oriented approach.
+
+82
+00:21:51,124 --> 00:22:02,124
+Our main programming element would be objects. As the name task, it is object-oriented programming. So this is our main focus, the objects.
+
+83
+00:22:02,124 --> 00:22:10,923
+I'm sorry. An object contains some attributes and some tasks.
+
+84
+00:22:11,571 --> 00:22:20,331
+In any case, when we write program code, it is being done in order to solve a real problem.
+
+85
+00:22:22,195 --> 00:22:32,056
+progress and manage that real-world problem or a workflow or any kind of process, etc.
+
+86
+00:22:32,056 --> 00:22:41,056
+Therefore, every real-world entity in our problem domain will be mapped onto programming constructs.
+
+87
+00:22:41,971 --> 00:22:51,672
+And every real-world entity in the problem domain will be treated as objects in our application, in our code.
+
+88
+00:22:52,432 --> 00:22:59,912
+Therefore, an object in an object-oriented code will be corresponding to a real-world entity.
+
+89
+00:23:03,192 --> 00:23:08,211
+An object contains attributes and takes tasks, as I have told.
+
+90
+00:23:08,627 --> 00:23:17,167
+The attributes of an object is about the data about the entity in the real world.
+
+91
+00:23:18,003 --> 00:23:35,003
+And the actions that the real world entity can take or the actions that can be used upon that real world entity will be called as methods in object-oriented language.
+
+92
+00:23:36,003 --> 00:23:43,803
+Previously, I have talked about tasks, but we don't call them tasks in object orientation. We call them methods.
+
+93
+00:23:44,276 --> 00:23:56,695
+Methods are very similar to functions, but there are additional rules of object orientation when these methods are coded and called.
+
+94
+00:23:57,491 --> 00:24:11,991
+On the right hand side, you see a diagram. This is not a UML diagram, but it's a diagram, a two-dimensional diagram that I use to mention some important thing.
+
+95
+00:24:11,991 --> 00:24:21,891
+Let's assume that this is an object. It has data in its core and it's surrounded by metals.
+
+96
+00:24:22,644 --> 00:24:34,743
+As this is a two-dimensional figure, if I want to access some of this data of this object, I have to go through a method.
+
+97
+00:24:36,443 --> 00:24:42,443
+Wherever I draw a line, it will be passing among a method.
+
+98
+00:24:43,804 --> 00:24:49,243
+And maybe in this case, it's passing along one method.
+
+99
+00:24:49,748 --> 00:24:57,827
+This means that the data of an object shouldn't be able to access directly.
+
+100
+00:24:58,788 --> 00:25:07,668
+This is called, and also the methods and the data of an object are connected together as a whole.
+
+101
+00:25:08,016 --> 00:25:10,776
+This is called encapsulation principle.
+
+102
+00:25:11,436 --> 00:25:15,235
+The data and the methods of an object cannot be separated.
+
+103
+00:25:15,836 --> 00:25:19,876
+And moreover, data is accessed through methods of an object.
+
+104
+00:25:20,876 --> 00:25:31,715
+When we make some analogies between functions of procedural programming and methods of object-oriented languages,
+
+105
+00:25:34,259 --> 00:25:40,679
+In procedural programming, data and functions are apart from each arc.
+
+106
+00:25:41,980 --> 00:25:48,559
+In, for example, C program, you can build some struct types.
+
+107
+00:25:49,011 --> 00:25:55,351
+Asign some values, called some fields into a structure.
+
+108
+00:25:55,831 --> 00:26:03,652
+And this structure, as a whole, will be represented, will be representing the data of an entity.
+
+109
+00:26:04,612 --> 00:26:12,811
+However, when you write functions, those are not associated with the struct that you have called.
+
+110
+00:26:13,683 --> 00:26:27,824
+The best you do is to pass some struct elements as parameters or create some struct elements in functions.
+
+111
+00:26:28,384 --> 00:26:34,983
+But the data and the functions do not belong to each other.
+
+112
+00:26:35,344 --> 00:26:40,344
+They are somewhat related, but they are not treated as a whole.
+
+113
+00:26:42,099 --> 00:27:04,500
+On the contrary, the data of an object and the methods of an object are connected, they are treated as a whole, and other types of objects can access the data of different objects according to the object orientation rules.
+
+114
+00:27:05,299 --> 00:27:14,139
+You can limit accessing of data to the outside other objects as much as you wish.
+
+115
+00:27:15,240 --> 00:27:19,900
+And during this lecture, we will be mastering these rules.
+
+116
+00:27:21,380 --> 00:27:25,299
+There will be relationships between objects.
+
+117
+00:27:25,695 --> 00:27:37,596
+We will design and code relationships between objects, and we will code them and we will use them according to object orientation rules.
+
+118
+00:27:38,275 --> 00:27:42,215
+Methods, and moreover, methods can have parameters.
+
+119
+00:27:43,495 --> 00:27:46,435
+If a method doesn't have any parameter,
+
+120
+00:27:46,996 --> 00:27:53,496
+Arkadaşlar, the data it will be using is its own object's data.
+
+121
+00:27:55,576 --> 00:28:05,896
+Arkadaşlar, if you put some, if you give some parameters to it, then the parameters can be used too.
+
+122
+00:28:06,756 --> 00:28:08,436
+These parameters can be...
+
+123
+00:28:08,756 --> 00:28:14,716
+Other objects as well, or some primitive data such as an integer, et cetera.
+
+124
+00:28:15,516 --> 00:28:22,376
+Therefore, the method parameters, given method parameters, can be used within this method too.
+
+125
+00:28:22,376 --> 00:28:34,456
+But the important thing to remember is, unless stated, otherwise, a method of an object works with its own object's data.
+
+126
+00:28:38,996 --> 00:28:39,996
+Let's continue.
+
+127
+00:28:41,496 --> 00:28:42,996
+And what is the class?
+
+128
+00:28:42,996 --> 00:28:47,496
+The class is merely a template that defines objects.
+
+129
+00:28:48,996 --> 00:28:58,496
+When I make an analogy, I think about some cookies, homemade cookies that are being cut from a dough.
+
+130
+00:29:00,496 --> 00:29:04,496
+We are most interested in cookies, to cook them and to eat them.
+
+131
+00:29:04,996 --> 00:29:06,496
+Those will be the objects.
+
+132
+00:29:07,028 --> 00:29:15,188
+And how can I say the, like I said, I don't know English word now.
+
+133
+00:29:16,907 --> 00:29:28,887
+The template that you will be using to cut those cookies from the dough will be, can be taught about, can be taught as objects.
+
+134
+00:29:32,147 --> 00:29:47,847
+That's it. When you record an object, you use the keyword class and you give that class a name and between two embraces, you write the class code. We will be learning the details soon.
+
+135
+00:29:48,628 --> 00:29:59,847
+Also, you can add comments to your code, just like you do in the C language. Double slashes are used for one line of comment and the...
+
+136
+00:30:00,000 --> 00:30:04,860
+Pairs of slash and star is used for multiple lines of comments.
+
+137
+00:30:05,779 --> 00:30:20,019
+Those comments mean nothing to the compiler, but they are meaningful in order to explain what is going on with that code and some technical details about that code.
+
+138
+00:30:20,019 --> 00:30:22,160
+And this is used for documentation.
+
+139
+00:30:22,160 --> 00:30:24,160
+So when you...
+
+140
+00:30:25,044 --> 00:30:34,244
+Leave that quote for a while and then when you will be working on it again, you can more easily remember what is done and left.
+
+141
+00:30:44,531 --> 00:30:49,092
+Let's think about an example object, about a car, for example.
+
+142
+00:30:49,652 --> 00:30:52,451
+But not just any car, a particular car.
+
+143
+00:30:53,132 --> 00:30:58,491
+When you look out from the window, you can see such a particular car.
+
+144
+00:30:59,152 --> 00:31:00,831
+It will be having some attributes.
+
+145
+00:31:01,491 --> 00:31:03,291
+What can the attributes of a car be?
+
+146
+00:31:04,211 --> 00:31:08,811
+Its model, its license plate number, its color.
+
+147
+00:31:10,483 --> 00:31:14,923
+How many kilometers has it traveled?
+
+148
+00:31:16,723 --> 00:31:18,163
+Who is its owner?
+
+149
+00:31:19,483 --> 00:31:20,763
+What is price?
+
+150
+00:31:21,604 --> 00:31:21,923
+Etc.
+
+151
+00:31:23,124 --> 00:31:33,683
+Among these attributes, license plate number is a very important attribute as it is the unique identifier of that object.
+
+152
+00:31:34,644 --> 00:31:43,963
+A unique identifier field is used for distinguishing objects, same kinds of objects, from each other.
+
+153
+00:31:44,903 --> 00:31:52,503
+Every car has a different license plate, so this is an identification of that object.
+
+154
+00:31:53,107 --> 00:32:06,107
+This is very important and during our course we will be using those identifiers, those unique identifiers and we will be paying special attention to them.
+
+155
+00:32:07,107 --> 00:32:09,107
+And what about other attributes?
+
+156
+00:32:11,107 --> 00:32:12,107
+We will be...
+
+157
+00:32:12,991 --> 00:32:23,291
+Selektin, using, and coding the relevant attributes that are in line with our problem domain.
+
+158
+00:32:23,291 --> 00:32:38,531
+For example, if you are interested in, for example, a motor vehicle registration system, then in addition to the license plate number, the cars, model,
+
+159
+00:32:40,692 --> 00:33:04,692
+Brand, Year, and what else? And motor value will be of importance. Therefore, we will be coding and using those attributes. But if we are coding, for example, an autopark application, autopark billing application, then the attribute we need is...
+
+160
+00:33:04,884 --> 00:33:07,144
+Again, the license plate of the car.
+
+161
+00:33:07,624 --> 00:33:11,423
+But, for example, we are not interested in the color of that car.
+
+162
+00:33:11,763 --> 00:33:26,564
+What we are interested in, the entry time, the exit time, and the hourly rate, hourly fee, so that we can determine how much that car needs to pay when it's leaving.
+
+163
+00:33:27,783 --> 00:33:28,564
+That's it.
+
+164
+00:33:29,084 --> 00:33:32,223
+We are not interested in the color of that car, for example.
+
+165
+00:33:33,491 --> 00:33:38,932
+And what can the actions of an object of that particular car?
+
+166
+00:33:39,672 --> 00:33:43,292
+We may query that object about its license plate number.
+
+167
+00:33:43,971 --> 00:33:48,572
+That one is important because it's related with its unique identifiers.
+
+168
+00:33:49,832 --> 00:33:56,672
+As I mentioned before in the previous slide, you cannot access the data of an object directly.
+
+169
+00:33:57,107 --> 00:34:03,347
+You can access it via, by using its accessory methods.
+
+170
+00:34:03,708 --> 00:34:05,988
+We will be talking about that soon.
+
+171
+00:34:06,488 --> 00:34:07,508
+What else we can do?
+
+172
+00:34:08,028 --> 00:34:15,108
+For example, if this is a motor vehicle registration software, we can sell this car another owner.
+
+173
+00:34:16,627 --> 00:34:22,648
+We can mark that car as a personal car or a commercial car.
+
+174
+00:34:23,443 --> 00:34:39,023
+Tijali araylar, which means in Turkish we call it tijali araylar, therefore it is being used as a part of a business, so its taxes will be somewhat lower when you pay it.
+
+175
+00:34:39,507 --> 00:34:41,727
+Etc. Such kinds of things.
+
+176
+00:34:42,367 --> 00:34:52,027
+But in an AutoPark application, we will just query about the enter time and the exit time of that car.
+
+177
+00:34:52,027 --> 00:34:54,027
+And maybe we are...
+
+178
+00:34:55,764 --> 00:34:58,844
+Also, then, a subscription-based service.
+
+179
+00:34:59,304 --> 00:35:09,224
+Therefore, if that car is already subscribed to our AutoPak, we are just collecting a monthly fee, not an hour fee, for example.
+
+180
+00:35:12,784 --> 00:35:16,764
+And what can we say about the class of that particular object?
+
+181
+00:35:17,184 --> 00:35:20,904
+Then we can name a class such as an automobile.
+
+182
+00:35:21,652 --> 00:35:28,172
+That will be a program code which will be defining the attributes and the methods of cars.
+
+183
+00:35:29,052 --> 00:35:32,452
+We will create objects from that class.
+
+184
+00:35:32,832 --> 00:35:35,971
+We will create instances of that class.
+
+185
+00:35:36,431 --> 00:35:43,011
+And we will be using that instances, those objects, in our application.
+
+186
+00:35:43,692 --> 00:35:46,612
+We can create any number of classes.
+
+187
+00:35:47,072 --> 00:35:57,192
+We can code any number of classes and we can create any number of objects in an object-oriented program.
+
+188
+00:35:57,192 --> 00:36:14,511
+In that slide, actually, I should be writing, you can create any number of objects from any number of and different, any numbers of and.
+
+189
+00:36:15,188 --> 00:36:23,568
+Any different classes with an object-oriented program.
+
+190
+00:36:24,867 --> 00:36:27,028
+Those should be in English.
+
+191
+00:36:30,327 --> 00:36:35,148
+Let's do it fastly, quickly.
+
+192
+00:36:37,288 --> 00:36:37,688
+Yes.
+
+193
+00:36:40,367 --> 00:36:41,547
+Let's do this.
+
+194
+00:36:43,795 --> 00:36:45,956
+No, let's not waste your time.
+
+195
+00:36:47,435 --> 00:36:47,655
+Okay.
+
+196
+00:36:49,115 --> 00:36:54,055
+Well, the attributes of an object can be regarded in two groups.
+
+197
+00:36:54,875 --> 00:36:57,395
+Those would be primitives and non-primitives.
+
+198
+00:36:58,315 --> 00:37:09,895
+A primitive is one unit of information, such as an integer number, a real number, a brilliant value, a character, but just one character, etc.
+
+199
+00:37:10,547 --> 00:37:15,927
+And non-primitives are any number of objects from any number of classes.
+
+200
+00:37:17,467 --> 00:37:28,268
+For example, if we are calling a motor vehicle registration system, then we should be able to query that system about the owner of a car.
+
+201
+00:37:29,331 --> 00:37:43,231
+Therefore, we will be accessing a particular car object and query it about its owner and it will return its owner as a human object.
+
+202
+00:37:44,231 --> 00:37:50,971
+Therefore, that attribute of that car, its owner,
+
+203
+00:37:51,360 --> 00:37:57,360
+is non-primitive because it's an object from the class Perth.
+
+204
+00:37:58,640 --> 00:38:02,800
+But for example, its model year is a primitive attribute.
+
+205
+00:38:03,520 --> 00:38:13,520
+If it's built in 2015, for example, then this is an integer value and it is a primitive attribute.
+
+206
+00:38:17,748 --> 00:38:21,507
+Now, let's begin using the correct terminology.
+
+207
+00:38:22,948 --> 00:38:27,007
+We don't usually say the data of an object.
+
+208
+00:38:27,007 --> 00:38:30,668
+We mostly use the term member field.
+
+209
+00:38:32,367 --> 00:38:35,608
+For short, we can use just field.
+
+210
+00:38:36,547 --> 00:38:40,148
+And in some books, they are called attributes.
+
+211
+00:38:41,288 --> 00:38:44,208
+In Turkish, we say, we are alone.
+
+212
+00:38:44,724 --> 00:39:10,844
+Member is üye and field is alan. Üye alan. Ya da kısaca alan diyebiliriz. Nesnenin alanları. Nitelikleri attribute ise nitelik olarak çevirmiş oluyoruz. Bu şekilde kullanıyoruz. Metotlarına gelince üye metotla diyoruz. Englisce member field.
+
+213
+00:39:11,795 --> 00:39:18,175
+Or for short, we can just say method, the method of an object, we can call.
+
+214
+00:39:19,475 --> 00:39:29,175
+We will not name them as tasks or actions or functions because functions are related with...
+
+215
+00:39:29,588 --> 00:39:35,728
+Structural programming and methods of an object have additional object to react.
+
+216
+00:39:35,728 --> 00:39:40,768
+Both for functions are not actually mean methods.
+
+217
+00:39:40,768 --> 00:39:43,608
+We will call them methods, not functions.
+
+218
+00:39:43,608 --> 00:39:48,608
+And there are number fields and number methods.
+
+219
+00:39:48,608 --> 00:39:55,088
+When we talk about just numbers, then this means that we are mentioning them both.
+
+220
+00:39:55,572 --> 00:39:58,452
+Both member methods and member fields.
+
+221
+00:39:59,292 --> 00:40:07,052
+And when in Turkish, UMLN'nin üyeleri dediğimizde, derste kısaca, hem üye alanları hem üye metotlarını kastetmiş oluyoruz.
+
+222
+00:40:09,752 --> 00:40:21,052
+Şimdi, hem Türkçe, hem İngilizce olarak söylemeye çalışıyorum ki, Türkçe kaynaklardan da yararlandığınızda veya konuyu Türkçe olarak anlatmamız.
+
+223
+00:40:21,440 --> 00:40:31,019
+Konuşmanız gerektiğinde de doğru karşılıklarını bilin. Yoksa başka bir eş anlamlı kelime şeklinde çığırırsınız. O da pek uygun. Olmaz yani.
+
+224
+00:40:34,019 --> 00:40:35,260
+Şey bu, durum bu.
+
+225
+00:40:38,260 --> 00:40:50,760
+Ok, we have talked about member fields, member methods. Let's mark them, so let's not skip any of them. We have talked about member methods and member fields.
+
+226
+00:40:52,300 --> 00:41:00,000
+There is a term which is called state, the state of an object. In Turkish we say durum, business name durum.
+
+227
+00:41:00,820 --> 00:41:10,340
+The set of an object is the set of values of all attributes or all member fields that are coded of an object.
+
+228
+00:41:12,740 --> 00:41:22,020
+Türkçe söylersen de bir nesnenin durumu, o nesnenin, birya alanlarının, tümünün herhangi bir andaki aldığı değer kümesi.
+
+229
+00:41:23,443 --> 00:41:29,564
+This is an important concept that we'll be using in detail later.
+
+230
+00:41:32,203 --> 00:41:34,724
+And we also talked about this.
+
+231
+00:41:35,483 --> 00:41:44,564
+We usually call classes as classes, but in some books, they can be called as types.
+
+232
+00:41:46,144 --> 00:41:47,963
+This is also being used.
+
+233
+00:41:48,403 --> 00:41:53,984
+Türkçe söylersek de kür ya da tip diyebiliyoruz sınıf yerine.
+
+234
+00:41:56,043 --> 00:42:00,984
+This is an aptly named conversion.
+
+235
+00:42:02,003 --> 00:42:20,783
+I like that conversion, class mistype, because as a class describes the general outline of entities from that type, then it's okay to call classes as a type.
+
+236
+00:42:21,588 --> 00:42:27,547
+Türkiye'de söylediğimizde, araba sınıfından bir araba nesnesi diyoruz.
+
+237
+00:42:27,847 --> 00:42:29,788
+Veyahut da araba türünden bir nesneler diye.
+
+238
+00:42:30,588 --> 00:42:41,988
+Gerçekten de sınıflar varlıkların özelliklerini, üye alanları, üye metodlarını toplayıp bu nesneler için bir tanım ortaya koydukları için
+
+239
+00:42:42,643 --> 00:42:56,523
+tür ya da tip olarak anlandırılması da gayet doğal. Öyle ki ben konuşurken A sınıfından A nesnesi yerine A tümünden nesnelerine çok rahatlıkla diyebiliyorum yani. Onu çekimden söyleyebilirsiniz.
+
+240
+00:42:58,363 --> 00:43:09,423
+And there is another term which is being an instance of. Sorry, it's not a good line. Now this is a good line. It's a better line.
+
+241
+00:43:10,483 --> 00:43:30,483
+If we create an object and name it all, and this object is being created from the class C, instead of saying all is an object of class C, we can also say that all is an instance of C.
+
+242
+00:43:30,483 --> 00:43:33,483
+In Turkish, we use Örni olmak.
+
+243
+00:43:37,903 --> 00:43:41,804
+O, C sınıfının bir örneğidir.
+
+244
+00:43:42,104 --> 00:43:45,324
+C türünden bir örnektir diyebiliyoruz.
+
+245
+00:43:45,923 --> 00:43:47,184
+Being an instance of.
+
+246
+00:43:48,623 --> 00:43:55,663
+Okay, then how we represent objects and classes in the UML modelik language?
+
+247
+00:43:57,264 --> 00:44:02,623
+In UML, in order to describe classes,
+
+248
+00:44:03,119 --> 00:44:08,119
+Their members and relationship between classes.
+
+249
+00:44:08,119 --> 00:44:11,119
+We use UMLN class diagrams.
+
+250
+00:44:11,119 --> 00:44:17,119
+And a rectangle means a class in a UMLN class diagram.
+
+251
+00:44:17,119 --> 00:44:21,119
+And within it, we write the class name.
+
+252
+00:44:21,119 --> 00:44:28,119
+Therefore, this is a class named class in a UMLN class diagram.
+
+253
+00:44:29,139 --> 00:44:32,460
+Moreover, we will be learning UML sequence diagrams.
+
+254
+00:44:33,359 --> 00:44:38,119
+Sequence diagrams describe the runtime behavior of objects.
+
+255
+00:44:39,259 --> 00:44:44,979
+Therefore, the rectangles in a sequence diagram will be objects.
+
+256
+00:44:46,179 --> 00:44:53,000
+And within this rectangle, we write the object's name.
+
+257
+00:44:56,947 --> 00:44:58,487
+Double dots.
+
+258
+00:44:59,367 --> 00:45:00,667
+Şimdi güzel olmadı.
+
+259
+00:45:02,667 --> 00:45:05,027
+Şöyle yapayım da daha iyi çizeyim.
+
+260
+00:45:05,648 --> 00:45:07,507
+The name of an object.
+
+261
+00:45:09,607 --> 00:45:10,967
+Double dots.
+
+262
+00:45:11,587 --> 00:45:14,207
+And the type of an object.
+
+263
+00:45:14,867 --> 00:45:16,907
+We write them in this order.
+
+264
+00:45:16,907 --> 00:45:21,188
+And do not forget to draw an underlining line.
+
+265
+00:45:22,036 --> 00:45:31,036
+Therefore, this means that this is an object from the type class kavram.
+
+266
+00:45:31,036 --> 00:45:37,036
+And we named the object reference as int.
+
+267
+00:45:37,036 --> 00:45:43,036
+For example, when you define a primitive, you write int x, for example.
+
+268
+00:45:43,036 --> 00:45:49,036
+Then x is variable name and int is the type of that variable.
+
+269
+00:45:49,556 --> 00:45:59,036
+When we define an object, in the same fashion, we define its class and we give that object a reference name.
+
+270
+00:45:59,036 --> 00:46:03,676
+In that case, the name is kit and the type is car.
+
+271
+00:46:04,315 --> 00:46:13,356
+And do not forget those two dots and do not forget to underline this because when we draw a diagram,
+
+272
+00:46:13,972 --> 00:46:21,692
+If the name of an object is not important, we just write something like this.
+
+273
+00:46:21,692 --> 00:46:23,432
+Let me write here.
+
+274
+00:46:26,672 --> 00:46:32,592
+We can, for example, write double dots, car.
+
+275
+00:46:33,012 --> 00:46:39,952
+This means that the reference name, object name is not important, but this is a car instance.
+
+276
+00:46:39,952 --> 00:46:43,792
+This is an object of class car.
+
+277
+00:46:44,572 --> 00:46:55,332
+Or if the name of an object gives information about its type, for example, we can write a car.
+
+278
+00:46:57,172 --> 00:47:03,251
+But when we write it fully, we write a car's products car.
+
+279
+00:47:04,211 --> 00:47:11,152
+We can mention the same object with either of those three representations.
+
+280
+00:47:12,632 --> 00:47:16,751
+If the object name is not important, we use the first one.
+
+281
+00:47:17,460 --> 00:47:35,880
+If the type name is not much important because it can inferred, it can be understood from the object variable name and we just write the object name or if we want to make full representation we write this like that.
+
+282
+00:47:36,880 --> 00:47:40,780
+But in any case, do not forget to underline.
+
+283
+00:47:41,588 --> 00:47:45,668
+That will be worth some points.
+
+284
+00:47:47,008 --> 00:47:51,168
+In any case, let's make the drawing.
+
+285
+00:47:54,248 --> 00:47:57,568
+In any case, do not forget to underline them.
+
+286
+00:47:58,807 --> 00:48:05,367
+Because if you do not underline, for example, a representation such as this.
+
+287
+00:48:09,235 --> 00:48:10,695
+Şimdi ok çizmaya çalışıyorum.
+
+288
+00:48:12,496 --> 00:48:18,355
+When you write, for example, just a car with an erect handle, that can be confused by a class.
+
+289
+00:48:18,835 --> 00:48:21,195
+But this one is not a class. This is an object.
+
+290
+00:48:21,855 --> 00:48:24,235
+Therefore, please do not forget the underline.
+
+291
+00:48:25,235 --> 00:48:35,655
+Actually, when we draw the rest of the diagram, you can easily understand whether a diagram is a class diagram or a sequence diagram.
+
+292
+00:48:36,295 --> 00:48:40,075
+Therefore, all the rectangles are either class or objects.
+
+293
+00:48:41,615 --> 00:48:47,095
+I know that you are right, but this is a language rule.
+
+294
+00:48:47,539 --> 00:48:50,259
+The modern languages rule.
+
+295
+00:48:50,819 --> 00:48:54,899
+So please do not forget to draw that underlines.
+
+296
+00:49:00,467 --> 00:49:02,467
+Any questions so far?
+
+297
+00:49:02,467 --> 00:49:06,467
+If you ask in Turkish, I'll answer it in English.
+
+298
+00:49:06,467 --> 00:49:13,467
+Sorry. If you ask it in Turkish, then I will answer them in Turkish.
+
+299
+00:49:13,467 --> 00:49:15,467
+So, if you wish, please ask.
+
+300
+00:49:21,268 --> 00:49:23,268
+Ok, now we are talking.
+
+301
+00:49:26,708 --> 00:49:29,907
+Actually, there are two kinds of UMLN interaction diagrams.
+
+302
+00:49:30,467 --> 00:49:35,027
+First one is sequence diagram and the second is collaboration diagram.
+
+303
+00:49:37,108 --> 00:49:41,907
+Sequence diagrams are widely used in literature and in the field.
+
+304
+00:49:42,132 --> 00:49:46,152
+But collaboration diagrams are rarely used.
+
+305
+00:49:46,652 --> 00:49:50,311
+Therefore, we will be focusing on sequence diagrams.
+
+306
+00:49:51,451 --> 00:49:59,672
+If I say just interaction diagram, then understand that I will be mentioning sequence diagrams.
+
+307
+00:49:59,672 --> 00:50:02,911
+I will not be using collaboration diagrams.
+
+308
+00:50:04,132 --> 00:50:08,052
+Both types of diagrams have strengths and weaknesses.
+
+309
+00:50:09,876 --> 00:50:29,816
+Sequence diagrams tend to be larger and they tend to grow both in width and depth, but it's very, very easy to follow the method calls in sequence diagrams.
+
+310
+00:50:30,420 --> 00:50:32,920
+Collaboration diagrams are the opposite.
+
+311
+00:50:33,520 --> 00:50:41,620
+They can be very compact, but it's very, very hard to follow the control flow, the method calls all this.
+
+312
+00:50:42,440 --> 00:50:47,720
+And we are mostly interested in the method calls sequence.
+
+313
+00:50:48,360 --> 00:50:57,940
+So we are using unlearning sequence diagrams, and this is the reason why sequence diagrams are widely preferred over collaboration diagrams.
+
+314
+00:51:03,315 --> 00:51:25,655
+We have our slogan. Should we continue? We have 14 minutes passed and this is rather caught in sequence without any breaks. So let's have our break now, a timely break.
+
+315
+00:51:30,003 --> 00:51:31,003
+K-on-was.
+
+316
+00:51:33,003 --> 00:51:36,003
+Therefore, let's call it a break.
+
+317
+00:51:39,003 --> 00:51:46,003
+Time to 3 and up to 3 o'clock.
+
+318
+00:51:46,003 --> 00:51:47,003
+That's a timing break.
+
+319
+00:51:47,003 --> 00:51:49,003
+Then we will be continuing.
+
+320
+01:04:12,532 --> 01:04:20,152
+Evet, ok, guys, we may begin. I am a little bit late, sorry. Let's continue.
+
+321
+01:04:24,596 --> 01:04:29,456
+Ama bu arada buraya kadar sorunuz varsa da lütfen sorma arkadaşlar biliyorsunuz.
+
+322
+01:04:29,456 --> 01:04:32,516
+Yani bunu birkaç kere hatırlatacağım ama hani önemli bu.
+
+323
+01:04:32,516 --> 01:04:35,195
+Eğer soru sormak istiyorsanız lütfen sorma.
+
+324
+01:04:35,195 --> 01:04:36,916
+Lütfen sorarsanız çünkü şeyin tutuyorum.
+
+325
+01:04:36,916 --> 01:04:38,235
+Hiç ders değil.
+
+326
+01:04:44,916 --> 01:04:46,596
+Ok, then. Let's continue.
+
+327
+01:04:51,315 --> 01:04:58,275
+We have an important slogan here. It says, each object is a different individual.
+
+328
+01:05:01,476 --> 01:05:11,076
+This is the normal, regular way of working with objects and regular way of thinking about objects.
+
+329
+01:05:11,507 --> 01:05:14,268
+Each object is a different individual.
+
+330
+01:05:14,268 --> 01:05:18,067
+Consider two objects from the same type.
+
+331
+01:05:18,067 --> 01:05:26,147
+They will both have same type attributes, but the values of these attributes will be different,
+
+332
+01:05:26,147 --> 01:05:31,748
+which means that the states of these objects will be different.
+
+333
+01:05:31,748 --> 01:05:37,268
+Even if you create two objects having the same state,
+
+334
+01:05:37,715 --> 01:05:44,155
+These two different objects will be stored in different areas of the computer memory.
+
+335
+01:05:46,155 --> 01:05:54,356
+Modules in Java language, the Java machine creates a universal unique identifier for this purpose.
+
+336
+01:05:54,876 --> 01:05:56,796
+It is called UUID.
+
+337
+01:05:57,976 --> 01:06:04,436
+It's different than unique identifier that we determine for example the license plate of the car, but
+
+338
+01:06:05,300 --> 01:06:10,660
+The virtual machine gives a universal unique identifier to each object.
+
+339
+01:06:11,720 --> 01:06:16,980
+Therefore, so that it can track those objects.
+
+340
+01:06:17,972 --> 01:06:24,152
+ve kullanıcı, memori management tasks related with those objects.
+
+341
+01:06:24,152 --> 01:06:27,152
+Bu Universi-UMLNesne Yönelik identifieri var.
+
+342
+01:06:45,972 --> 01:07:00,212
+However, we can have a hedge card function on that identifier and we can obtain a hexadecimal number from each object.
+
+343
+01:07:00,212 --> 01:07:07,632
+That number will be different for every different object that we create.
+
+344
+01:07:12,307 --> 01:07:34,387
+So we will not be further talking about that universal unique identifier, but just know it, that it's there, we cannot access it directly, but we can take such kind of universal unique identifier-like number from every object.
+
+345
+01:07:35,127 --> 01:07:37,347
+Let's make a concrete example.
+
+346
+01:07:38,579 --> 01:07:41,820
+Let's consider any two cars in the street.
+
+347
+01:07:43,380 --> 01:07:50,519
+Let's assume that we are interested in attributes, the model, the color and the license plate, for example.
+
+348
+01:07:51,380 --> 01:07:54,380
+The models and the colors of these cars will be surely different.
+
+349
+01:07:55,680 --> 01:08:02,220
+But let's think that you are passing from the Technopark, for example.
+
+350
+01:08:03,764 --> 01:08:09,264
+In such places, companies rent car fleets.
+
+351
+01:08:10,003 --> 01:08:22,943
+Therefore, there will be many cars having the same model, same age, and same color, same model, and same age.
+
+352
+01:08:22,943 --> 01:08:35,443
+And when they park them next to each other, for example, you can see two very similar looking cars parked next to each other.
+
+353
+01:08:36,180 --> 01:08:46,979
+Well, although they seem the same, their colors are the same, their models are the same, however, their license plate will be different.
+
+354
+01:08:48,560 --> 01:08:51,060
+Their unique identifiers will be different.
+
+355
+01:08:52,079 --> 01:08:56,979
+Let's consider that there is a cheetah.
+
+356
+01:08:57,619 --> 01:09:08,520
+In Turkish we say sahte class, in English we can say a scammer. Let's think that there is a scam, there is a scamming person.
+
+357
+01:09:08,520 --> 01:09:19,020
+And there is a license plate scamming so that the license plates of those two cars are the same, let's assume.
+
+358
+01:09:19,799 --> 01:09:24,520
+Although this is the case, if you open up the...
+
+359
+01:09:25,203 --> 01:09:32,323
+Front trunks of these cars, they will be, what is it in Turkish?
+
+360
+01:09:33,203 --> 01:09:35,724
+Their chassis numbers will be different.
+
+361
+01:09:36,523 --> 01:09:46,683
+Those chassis numbers are assigned to every car when it's being built in the factory and they cannot be changed.
+
+362
+01:09:47,380 --> 01:09:51,120
+However, some people know how to tamper them as well.
+
+363
+01:09:51,880 --> 01:10:01,480
+Let's assume that our scam is very skillful and that person tampered the chassis ideas of both cars so that they are the same.
+
+364
+01:10:02,159 --> 01:10:11,239
+Well, when you start the engine of the first car, the engine of the second car will not be started automatically.
+
+365
+01:10:11,239 --> 01:10:14,780
+There are different objects.
+
+366
+01:10:15,231 --> 01:10:21,332
+So, again, repeat, each object is a different individual.
+
+367
+01:10:22,371 --> 01:10:32,051
+Or let's assume that if we were on a physical class, I will be seeing multiple students.
+
+368
+01:10:32,595 --> 01:10:37,855
+Every and each one of you are student instances.
+
+369
+01:10:38,675 --> 01:10:45,275
+Or I can say every and each of you are human person instances.
+
+370
+01:10:46,195 --> 01:10:48,175
+However, your names will be different.
+
+371
+01:10:49,587 --> 01:11:06,059
+Let's assume that there's another, for example, UMLN in the class. I don't know if there is any. Let's check the name list. Ah, this is from the previous year's records. I'm sorry. Let's check the...
+
+372
+01:11:06,323 --> 01:11:07,323
+Solders.
+
+373
+01:11:07,323 --> 01:11:09,323
+Ah, anlamışım ya.
+
+374
+01:11:09,323 --> 01:11:10,323
+Neyse, okay.
+
+375
+01:11:10,323 --> 01:11:16,323
+Even if there were another UMLNsende, our surnames would be different.
+
+376
+01:11:16,323 --> 01:11:27,323
+Even, and also, there are also the name and surname combinations out there, our identity numbers would be different.
+
+377
+01:11:31,315 --> 01:11:41,095
+And therefore, two different objects from the same type, even if they are from the same type, they will give different answers to the same message.
+
+378
+01:11:42,076 --> 01:11:46,036
+What's the reason for that? Because their states will be different.
+
+379
+01:11:48,095 --> 01:11:51,216
+I would be seeing many students in the class.
+
+380
+01:11:52,020 --> 01:12:00,700
+When I ask their name to each and every student, every student will say different answers.
+
+381
+01:12:01,500 --> 01:12:03,960
+Even there can be two people having the same name.
+
+382
+01:12:04,640 --> 01:12:08,739
+This is a coincidence and surnames would be different.
+
+383
+01:12:09,800 --> 01:12:14,380
+I have called the exact same method for every student.
+
+384
+01:12:14,380 --> 01:12:16,579
+I have asked their names.
+
+385
+01:12:18,420 --> 01:12:21,539
+They have given me different answers.
+
+386
+01:12:21,539 --> 01:12:27,420
+They have given me different answers to the same question, why their states are different.
+
+387
+01:12:27,420 --> 01:12:38,380
+And moreover, we can give different parameters to the same method, even if we call the same method of the same object twice.
+
+388
+01:12:38,420 --> 01:12:53,279
+If we had supplied different parameters in each time, the outcome of those method calls would probably be different because they had taken different parameters.
+
+389
+01:12:54,547 --> 01:13:09,407
+So, each object is indeed a different individual and they probably answer the same message as by giving different results. This is possible, quite possible.
+
+390
+01:13:13,268 --> 01:13:22,188
+Ok, if we call the method of an object, we can also mention it as sending a message to an object.
+
+391
+01:13:22,728 --> 01:13:30,487
+Tukça söylersen, bir nesneye bir mesaj göndermek demek, o nesnenin bir metodunu çağırmış olma demek.
+
+392
+01:13:31,728 --> 01:13:35,547
+Then why do we do this? Why do we send a message to an object?
+
+393
+01:13:36,307 --> 01:13:40,268
+We do it in order to have this object to do something.
+
+394
+01:13:40,756 --> 01:13:43,036
+A calculation, for example.
+
+395
+01:13:44,836 --> 01:13:45,195
+Maybe.
+
+396
+01:13:46,456 --> 01:13:55,076
+Or there is another common reason to do this, is to access a member field of that object.
+
+397
+01:13:56,556 --> 01:14:03,996
+When we access to a member of an object, we can do it for one of the two reasons.
+
+398
+01:14:04,564 --> 01:14:14,984
+Maybe we are accessing that number field of an object in order to change its value or in order to read its value.
+
+399
+01:14:16,024 --> 01:14:23,024
+Changing the value of a number field of an object is called a setting operation.
+
+400
+01:14:27,024 --> 01:14:28,024
+And...
+
+401
+01:14:26,707 --> 01:14:40,127
+If we access that number field in order to obtain its value, only read its value without modifying it, then we call this operation as a getting operation.
+
+402
+01:14:41,608 --> 01:14:53,047
+And when we code those methods of objects, we will be recording some setter methods and getter methods.
+
+403
+01:14:53,587 --> 01:15:16,587
+In order to access the member fields of an object. Remember that we cannot use the member fields of objects directly. We can access them by using its appropriate and allowed methods. And those are accessor methods. An accessor method could be for...
+
+404
+01:15:17,492 --> 01:15:27,852
+Setting or getting an accessible method can set the value of a member field or get the value of a member field.
+
+405
+01:15:34,547 --> 01:15:39,547
+And we access a member method of an object in order to run that method.
+
+406
+01:15:39,547 --> 01:15:43,547
+And optionally, you can add some, supply it with some parameters.
+
+407
+01:15:43,547 --> 01:15:48,547
+A method call is very similar to calling a function in the C language.
+
+408
+01:15:48,547 --> 01:15:58,547
+But do not forget that, unnecessarily otherwise, the method of an object works with the member fields and member methods of this object.
+
+409
+01:15:59,380 --> 01:16:13,539
+We can have it doing otherwise, but in order to be able to do that, we need to learn the different kinds of relationships between objects.
+
+410
+01:16:14,340 --> 01:16:20,020
+So, we'll be working it shortly, maybe next week, let's see.
+
+411
+01:16:23,956 --> 01:16:34,896
+Okay. In object-oriented programming terminology, we say that an object accesses a member method of another object by sending a message with another object.
+
+412
+01:16:35,216 --> 01:16:47,756
+And an object-oriented program is run, is being executed as message sending, message passing between different objects.
+
+413
+01:16:48,996 --> 01:16:50,384
+Let's consider...
+
+414
+01:16:50,384 --> 01:16:53,984
+This UML sequence diagram here.
+
+415
+01:16:55,344 --> 01:16:57,904
+Let me take my time here.
+
+416
+01:16:59,823 --> 01:17:03,263
+If we write a statement such as,
+
+417
+01:17:03,263 --> 01:17:05,583
+kit.getPlate,
+
+418
+01:17:07,344 --> 01:17:12,224
+remember that this is an object named kit,
+
+419
+01:17:12,863 --> 01:17:14,623
+as you can see from the...
+
+420
+01:17:15,731 --> 01:17:28,072
+Secrets diagram, the name of the object is kit, and two dots here, and the type of the object is car.
+
+421
+01:17:28,992 --> 01:17:37,992
+So, kit dot get plate, and those parentheses are better parentheses, as you can understand.
+
+422
+01:17:38,644 --> 01:17:44,004
+We are calling the getplate method of the object named kit.
+
+423
+01:17:44,784 --> 01:17:48,064
+And this dot here is an important notation.
+
+424
+01:17:48,884 --> 01:17:51,024
+Kit dot getplate.
+
+425
+01:17:51,164 --> 01:17:54,244
+The getplate method of the object kit.
+
+426
+01:17:55,203 --> 01:17:58,703
+How do we draw it as a UML sequence diagram?
+
+427
+01:17:59,623 --> 01:18:05,584
+We draw our object, that of whose method is being called.
+
+428
+01:18:06,868 --> 01:18:10,288
+And we draw a lifeline with dash dots.
+
+429
+01:18:11,007 --> 01:18:13,328
+This is called the lifeline of an object.
+
+430
+01:18:14,068 --> 01:18:20,548
+We say that an object is active during an execution of a method.
+
+431
+01:18:24,087 --> 01:18:28,927
+Wherever this code resides, we don't know where it is yet.
+
+432
+01:18:30,548 --> 01:18:32,528
+Some other object.
+
+433
+01:18:33,076 --> 01:18:37,496
+is calling the getPlate method of the object kit.
+
+434
+01:18:38,456 --> 01:18:50,175
+Therefore, we make a rectangle mentioning that this object is now executing a method.
+
+435
+01:18:50,775 --> 01:18:56,735
+We draw an incoming error and on top of that error we write the method name.
+
+436
+01:18:59,439 --> 01:19:09,159
+In sequence diagrams, when we go down further in the diagram, then this means that time is passing, time is advancing.
+
+437
+01:19:10,599 --> 01:19:21,159
+I repeat, as we go down in that diagram, in sequence diagrams, this means that the time is being advancing.
+
+438
+01:19:22,131 --> 01:19:28,811
+Buçun da söylüyorum. Sequence'lerden aşağı doğru ilerledikçe zamanda da ileri gidiyorum demektir.
+
+439
+01:19:29,851 --> 01:19:43,011
+Therefore, we represent the time period that this method is being executed by the object with a rectangle.
+
+440
+01:19:43,011 --> 01:19:49,211
+And we mark the ending of that method.
+
+441
+01:19:50,228 --> 01:19:55,108
+We tell backwards going along with dashed line.
+
+442
+01:19:56,387 --> 01:20:06,847
+And if we wish, if some information is being returned from that method call, we can write that information on top of the return arrow, if we wish.
+
+443
+01:20:07,167 --> 01:20:08,108
+But this is optional.
+
+444
+01:20:11,688 --> 01:20:13,788
+And who is calling this method?
+
+445
+01:20:13,988 --> 01:20:14,708
+We don't know.
+
+446
+01:20:15,188 --> 01:20:18,927
+Therefore, there is a client object. We don't know its type.
+
+447
+01:20:20,087 --> 01:20:29,007
+But that object is active so that it's calling that method, that getplate method of the object, kit.
+
+448
+01:20:30,188 --> 01:20:33,067
+And this is how we draw a method call here.
+
+449
+01:20:36,667 --> 01:20:41,067
+There is no way of an object who...
+
+450
+01:20:41,971 --> 01:21:00,431
+That who is calling its method. An object does not know anything about a client. It's only its sole responsibility is to serve. It serves whoever calls its method.
+
+451
+01:21:01,203 --> 01:21:26,263
+Of course, there is a rule. If we mark this method public only, then this can be used. Otherwise, if we define a method as private, then only objects from that type can call those methods. Otherwise, if we mark a method as public, which is this in that case, get plate method of that.
+
+452
+01:21:26,707 --> 01:21:28,147
+Arkadaşlar, class is public.
+
+453
+01:21:28,527 --> 01:21:41,067
+Therefore, any client, any type of client can call that method or can send that getPlate message to a car object and have a meaningful correct answer.
+
+454
+01:21:43,947 --> 01:21:45,627
+That's going to be lost.
+
+455
+01:21:47,487 --> 01:21:49,167
+And continue.
+
+456
+01:21:49,927 --> 01:21:51,167
+How to...
+
+457
+01:21:53,363 --> 01:22:14,543
+How to implement and how to interpret the figure. What does that figure mean? I have tried to tell you, but let's check whether in case of I forgot something, let's repeat that. There's an object named client. We know of its type. There's an object named kit and its type is car.
+
+458
+01:22:15,380 --> 01:22:24,139
+The class kavram has a method named getPlate so that the objects from that time can understand that message.
+
+459
+01:22:25,199 --> 01:22:34,180
+The client sends the message getPlate to the object kit or we can say the client calls the getPlate method of the object kit.
+
+460
+01:22:34,979 --> 01:22:40,139
+The object kit returns its license plate number as the answer to that question.
+
+461
+01:22:41,139 --> 01:22:42,539
+This is how we do it.
+
+462
+01:22:42,963 --> 01:22:53,043
+I'm sorry, that taught me, it's still on touch, how can I remove it? Let's again exit as anto from the slideshow.
+
+463
+01:22:55,043 --> 01:23:00,043
+Okey. Buraya kadar soru soran arkadaşım var mı? Varsa buyursunlar.
+
+464
+01:23:09,108 --> 01:23:10,388
+Hey, let's talk to you then.
+
+465
+01:23:14,804 --> 01:23:18,804
+As an intervention, I want to talk about the packages.
+
+466
+01:23:19,804 --> 01:23:26,804
+Classes in Java can be grouped together in abstract containers named packages.
+
+467
+01:23:27,804 --> 01:23:33,804
+Those are similar to runtime libraries of the C language with that purpose.
+
+468
+01:23:34,804 --> 01:23:41,804
+ArrayList is to group such classes that can be used for a particular common purpose.
+
+469
+01:23:42,195 --> 01:23:52,195
+We group the classes that are relevant to each other in terms of a common aim, a common purpose together in packages.
+
+470
+01:23:54,195 --> 01:23:56,195
+Let's consider that class diagram.
+
+471
+01:23:57,195 --> 01:24:08,195
+The packages are shown as folders in UML class diagram and package name is written on this small ear of that folder.
+
+472
+01:24:08,916 --> 01:24:18,416
+As you can see, there is a package named package1, and it contains class A plus B, and it contains another package.
+
+473
+01:24:19,176 --> 01:24:20,275
+This one, package2.
+
+474
+01:24:20,855 --> 01:24:28,976
+This package2 is within the package1, and that package2 has a class named class C in it.
+
+475
+01:24:31,036 --> 01:24:36,256
+How do we use those classes in another project?
+
+476
+01:24:36,948 --> 01:24:46,688
+If we want to be able to use that class A from another class, we have to give the statement import.
+
+477
+01:24:48,307 --> 01:24:54,548
+We write import, then we write the package name, dot class name.
+
+478
+01:24:55,427 --> 01:25:02,968
+If we write that statement, we can use class A from our other code.
+
+479
+01:25:04,756 --> 01:25:08,855
+As an alternative notation, we can use the star notation.
+
+480
+01:25:09,816 --> 01:25:24,076
+Instead of writing class name, if we just write star, this means that the source code of every class in that package var can be used from our source code.
+
+481
+01:25:27,859 --> 01:25:36,239
+An important issue is if we use that star notation, that does not include sub-packages.
+
+482
+01:25:36,840 --> 01:25:48,680
+Therefore, if you just start import package1.star, we cannot access that class C because package2 is not automatically imported.
+
+483
+01:25:49,524 --> 01:26:02,764
+If we need to be able to use class C, then we have to give the statement such as import package1.package2.class C os star.
+
+484
+01:26:05,043 --> 01:26:15,324
+That's how we import this. This is similar to the include notation in the C language, but in Java we use import.
+
+485
+01:26:18,292 --> 01:26:23,012
+That star notation does not have any side effects.
+
+486
+01:26:23,652 --> 01:26:28,612
+For example, let's assume that we just need class A, but we have written star here.
+
+487
+01:26:30,051 --> 01:26:40,731
+The class codes of that classes are not automatically added headfirst to our target code.
+
+488
+01:26:41,332 --> 01:26:52,332
+Java Virtual Machine tries to load the source code of every class that is being referenced in runtime.
+
+489
+01:26:52,332 --> 01:27:00,332
+Therefore, our code will not be larger than necessary if we write the star notation.
+
+490
+01:27:00,332 --> 01:27:04,332
+There are no problems about that.
+
+491
+01:27:06,068 --> 01:27:10,328
+So you can use the star notation without hesitation.
+
+492
+01:27:12,968 --> 01:27:20,468
+Different classes in different packages may share the same name without creating any conflicts.
+
+493
+01:27:21,268 --> 01:27:27,688
+For example, in the Java class library in the I.O. package, there is a class named File.
+
+494
+01:27:28,532 --> 01:27:35,952
+It is used for file operations. We will study them later. We will study that file class later.
+
+495
+01:27:36,731 --> 01:27:54,631
+But in addition to it, you want to be able to code and use your own file class, having some extra functionality, for example, or doing some things differently than the regular file class.
+
+496
+01:27:55,155 --> 01:28:02,015
+So that you can call that class with the same name, having a file, but in a different page.
+
+497
+01:28:02,015 --> 01:28:08,456
+For example, com.file.file class, you are mentioning it.
+
+498
+01:28:08,816 --> 01:28:16,855
+Therefore, this resides, that file class, your file class, will be residing in the com.file result package.
+
+499
+01:28:17,684 --> 01:28:26,284
+In any project, you can use those different versions of file classes without any problem.
+
+500
+01:28:26,284 --> 01:28:39,144
+But if you will be using those two in the same class file, then every time when you write file, you have to write the fully qualified name.
+
+501
+01:28:39,664 --> 01:28:45,684
+Otherwise, if you just write file, the compiler will not understand which different time.
+
+502
+01:28:45,684 --> 01:29:04,684
+So, if you want to be able to use both of those classes in the same source code, in the same Java file, then you have to mention their fully qualified names.
+
+503
+01:29:04,684 --> 01:29:11,684
+And also, the file path hierarchy reflects the package hierarchy.
+
+504
+01:29:11,891 --> 01:29:28,631
+For example, that file class which is in the com.file result package is when you open up the project directory, you can see a folder named src.
+
+505
+01:29:29,631 --> 01:29:34,092
+And then within it, you will see a directory named com.
+
+506
+01:29:35,092 --> 01:29:38,731
+Within it, you will see a directory named fire result.
+
+507
+01:29:39,247 --> 01:29:47,047
+And within that directory, you will finally see the file.java file.
+
+508
+01:29:49,927 --> 01:29:53,847
+The exact location must be in that case, like this.
+
+509
+01:29:54,407 --> 01:30:00,727
+Therefore, the package hierarchy reflects the path hierarchy.
+
+510
+01:30:03,167 --> 01:30:03,807
+Okay.
+
+511
+01:30:04,724 --> 01:30:14,724
+Now, about visibility to lose and information hiding. It's also an important principle of object orientation.
+
+512
+01:30:18,724 --> 01:30:31,467
+The first rule is an object can access all of its numbers and all numbers of other objects belonging to the same class or same type.
+
+513
+01:30:32,340 --> 01:30:38,140
+You cannot cite data from the same type of objects.
+
+514
+01:30:42,420 --> 01:30:49,440
+Let's assume that we have called the class car and we have created two different car objects.
+
+515
+01:30:50,319 --> 01:31:00,180
+Those objects can access their member fields directly and member methods also directly, no matter what.
+
+516
+01:31:01,180 --> 01:31:04,239
+You cannot place any restrictions on that rule.
+
+517
+01:31:04,724 --> 01:31:16,923
+Therefore, an object fully entrusts other objects from the same type, but not to other types of objects, just the same type of objects.
+
+518
+01:31:18,123 --> 01:31:27,163
+However, we can hide some numbers of an object so that they cannot be accessed from objects of different types.
+
+519
+01:31:27,163 --> 01:31:29,844
+This is called information hiding.
+
+520
+01:31:30,579 --> 01:31:33,479
+Why is it important? How do we do it?
+
+521
+01:31:35,100 --> 01:31:43,880
+We need to hide the members, what members, usually member fields, and sometimes member methods,
+
+522
+01:31:44,440 --> 01:31:51,200
+which are related with the inner lurking details of an object from objects of different types.
+
+523
+01:31:52,100 --> 01:31:52,559
+Therefore,
+
+524
+01:31:52,975 --> 01:32:01,515
+Arkadaşlar, those different objects can use our objects according to the black box principle.
+
+525
+01:32:02,135 --> 01:32:15,376
+Arkadaşlar, in order to an object to use another object, it shouldn't know or it shouldn't be dependent on the inner, internal working details of that other object.
+
+526
+01:32:16,376 --> 01:32:18,655
+Otherwise, usage will be very hard.
+
+527
+01:32:19,667 --> 01:32:27,647
+Let's assume that I am bored and I want to be entertained by watching TV, for example.
+
+528
+01:32:28,907 --> 01:32:31,327
+And there's a TV just over there.
+
+529
+01:32:32,067 --> 01:32:33,167
+I want to watch it.
+
+530
+01:32:34,087 --> 01:32:40,227
+I don't need to know the inner working details of that television set.
+
+531
+01:32:40,787 --> 01:32:45,207
+Let's consider that it's an old television having a cathode tube.
+
+532
+01:32:46,195 --> 01:32:49,376
+I don't have to know the working principles of Kettle Tube.
+
+533
+01:32:50,115 --> 01:32:52,336
+There is an electron gun at the back.
+
+534
+01:32:53,095 --> 01:32:55,735
+It shoots electrons to the screen.
+
+535
+01:32:55,735 --> 01:33:01,916
+The back of the screen is covered by some phosphorous material.
+
+536
+01:33:03,615 --> 01:33:13,355
+If an electron is sent to a particular coordinate, then the phosphor pixel will be light enough.
+
+537
+01:33:13,971 --> 01:33:22,811
+And according to the strength of the light, it will be closer to white or closer to black.
+
+538
+01:33:23,771 --> 01:33:30,031
+Or if it's in the middle, it will mean that regular gray, for example.
+
+539
+01:33:31,171 --> 01:33:36,251
+And that electron is being sent in lines.
+
+540
+01:33:36,787 --> 01:33:42,867
+And there are 24 or 25 rolls of lines.
+
+541
+01:33:43,867 --> 01:33:49,307
+And 50 or 60 times a second.
+
+542
+01:33:49,779 --> 01:34:08,099
+Arkadaşlar, the electron line goes back to the top left corner of the screen so that the image in the television screen is being refreshed 50 times or 60 times a second.
+
+543
+01:34:09,539 --> 01:34:11,879
+I don't have to know these details.
+
+544
+01:34:12,219 --> 01:34:13,420
+I just want to watch TV.
+
+545
+01:34:14,323 --> 01:34:18,923
+Or let's consider that it's an LED TV set.
+
+546
+01:34:20,303 --> 01:34:29,363
+There are three different crystals in each pixel, having the colors red, green, and blue.
+
+547
+01:34:30,483 --> 01:34:35,923
+And those pixels are floating in a...
+
+548
+01:34:38,676 --> 01:34:41,936
+How to say it? Yarı iletken.
+
+549
+01:34:44,776 --> 01:34:46,115
+Unuttum, özür dilerim.
+
+550
+01:34:46,115 --> 01:34:52,676
+Yarı iletken bir sıvının içinde yazıyorlar.
+
+551
+01:34:53,276 --> 01:34:53,976
+Bundan sonucu var.
+
+552
+01:34:54,736 --> 01:35:03,655
+Ve o sıvıya uygulanan gerilimin noktalarına göre, semiconducting, yes, semiconducting.
+
+553
+01:35:04,948 --> 01:35:09,948
+Lütte, those are floating air semiconducting fluid.
+
+554
+01:35:09,948 --> 01:35:17,948
+And when you apply some voltage to the specific parts, then specific pixels will...
+
+555
+01:35:20,212 --> 01:35:41,332
+Submerge dalmakta, we float over the substance and the color will be supplied as different combinations of red, green and blue values such as this for example. I don't need to know those details. I just want to watch some TV.
+
+556
+01:35:41,568 --> 01:36:07,528
+How can I do it? I take the remote control. I know the universal standards of the power-up button, volume up and down buttons, and channel up-down buttons. I know their signs. So I can find those in the remote controller and I immediately begin watching television.
+
+557
+01:36:08,979 --> 01:36:36,159
+Or, let's assume that I want to be, I want to drive a car. I don't need to know the working details of motors, for example. There are cylinders, there are different types of ignitions, etc. I don't need to be a mechanical engineer in order to drive a car. I just have to know the basic control.
+
+558
+01:36:36,979 --> 01:36:44,680
+Kull control devices, such as steering wheel, pedals, et cetera.
+
+559
+01:36:45,300 --> 01:36:47,159
+And then I can use that car.
+
+560
+01:36:48,019 --> 01:36:53,300
+I don't need to be a mathematical engineer or an electrical engineer to use a car.
+
+561
+01:36:56,399 --> 01:36:58,019
+Or another example.
+
+562
+01:36:58,619 --> 01:37:00,979
+Let's assume that we are on class.
+
+563
+01:37:01,427 --> 01:37:09,407
+And one of my students has forgotten his or her purse at home.
+
+564
+01:37:10,287 --> 01:37:13,608
+He doesn't have any money yet, but he is hungry.
+
+565
+01:37:14,688 --> 01:37:17,568
+He needs to eat something and be able to go back home.
+
+566
+01:37:18,228 --> 01:37:44,708
+So, he needs a few, some nidas. He asks me to borrow some money. And normally, I give, for example, $50 or $100. I can say, okay, you can give it back to me next week or whenever it's possible for you. I say, lending some money.
+
+567
+01:37:45,652 --> 01:37:57,412
+I don't do such a thing such as I take off my credit card due to my student and okay, the code of that card is 1234.
+
+568
+01:37:58,412 --> 01:38:01,792
+You can use it and bring it to me later.
+
+569
+01:38:02,792 --> 01:38:09,792
+There are different probabilities that, for example, that student has...
+
+570
+01:38:10,323 --> 01:38:14,323
+Bu da bir adım kullanıyor.
+
+571
+01:38:14,323 --> 01:38:20,323
+Ve bu adım, 100,000 lira kutluğun.
+
+572
+01:38:20,323 --> 01:38:26,323
+Ve bu adım, çok büyük bir adım.
+
+573
+01:38:26,323 --> 01:38:30,323
+Ve bu adım, bir adım.
+
+574
+01:38:30,323 --> 01:38:32,323
+Ve bu adım, bu adım.
+
+575
+01:38:32,323 --> 01:38:34,323
+Bu adım, bu adım.
+
+576
+01:38:34,323 --> 01:38:38,323
+Bu adım, bir adım.
+
+577
+01:38:38,323 --> 01:38:54,323
+Another possibility that when that student uses that card on an ATM, they will just see there's 500 laughs, or that teacher is so poor and I would be ashamed, for example.
+
+578
+01:38:54,323 --> 01:38:59,783
+Those are different examples of what can go wrong.
+
+579
+01:39:02,836 --> 01:39:11,636
+I don't need to share my inner information, such as my bank account, my bank account, password, etc.
+
+580
+01:39:12,695 --> 01:39:18,036
+In that scenario, just I have the money lending method.
+
+581
+01:39:18,036 --> 01:39:25,536
+My student calls that money lending method and I lend some money to my student.
+
+582
+01:39:25,996 --> 01:39:28,636
+That's how it is supposed to work.
+
+583
+01:39:29,108 --> 01:39:41,568
+As a black box. You don't know the details, but you know how to interface with that box, how to use that box, how to use it. That's it.
+
+584
+01:39:42,547 --> 01:39:50,587
+In fact, that final example is not quite accurate because remember the first sentence of that slide?
+
+585
+01:39:50,587 --> 01:39:57,847
+An object can access all of its members and all members of other objects from the same type.
+
+586
+01:39:58,688 --> 01:40:00,000
+Therefore, we are all...
+
+587
+01:40:00,000 --> 01:40:02,720
+So, we are all people.
+
+588
+01:40:03,180 --> 01:40:11,239
+So, if we are computer code, then we can access every bit of information of each other.
+
+589
+01:40:11,520 --> 01:40:14,199
+This is not the case in real life.
+
+590
+01:40:14,699 --> 01:40:27,739
+But I like to give that money learning example as a, how can I say, yani atlada kalıcı örnek, as an example that stays on your mind.
+
+591
+01:40:30,420 --> 01:40:40,079
+If we don't obey the information hiding principle, we will face with dire consequences, bad consequences.
+
+592
+01:40:41,399 --> 01:40:41,640
+Okay.
+
+593
+01:40:42,319 --> 01:40:46,559
+How can we enforce those rules while coding?
+
+594
+01:40:47,479 --> 01:40:54,000
+And how can we display those rules in UML class diagrams?
+
+595
+01:40:55,347 --> 01:41:02,387
+There are two basic access modifiers in order to obtain information hiding.
+
+596
+01:41:03,667 --> 01:41:07,827
+The public rule means there are no access restrictions.
+
+597
+01:41:09,507 --> 01:41:11,727
+Members can be public.
+
+598
+01:41:12,268 --> 01:41:19,107
+This means that any type of object can access this method no matter what.
+
+599
+01:41:20,667 --> 01:41:22,787
+And the second rule is the private rule.
+
+600
+01:41:23,956 --> 01:41:32,916
+Objects from different types cannot access another type of object, private members.
+
+601
+01:41:34,136 --> 01:41:40,336
+Those two loops are enough, most enough for most cases.
+
+602
+01:41:41,096 --> 01:41:46,876
+And in a UML class diagram, now our rectangle has three compartments.
+
+603
+01:41:47,416 --> 01:41:51,155
+The first compartment is reserved for class name.
+
+604
+01:41:52,083 --> 01:41:56,923
+The second compartment is reserved for displaying member fields.
+
+605
+01:41:57,704 --> 01:42:01,944
+And the third compartment is reserved for displaying member methods.
+
+606
+01:42:06,515 --> 01:42:07,515
+Sorry.
+
+607
+01:42:09,515 --> 01:42:20,515
+Public is denoted as plus in class diagrams, and private is displayed as minus in UML class diagrams.
+
+608
+01:42:21,515 --> 01:42:25,515
+Let's examine that member field of that class.
+
+609
+01:42:25,515 --> 01:42:27,515
+It is private.
+
+610
+01:42:27,515 --> 01:42:31,515
+We always mark member fields as private.
+
+611
+01:42:32,500 --> 01:42:35,800
+We shouldn't be able to access member fields directly.
+
+612
+01:42:35,800 --> 01:42:47,960
+Therefore, we need to enforce information hiding and we have to declare every member field as private.
+
+613
+01:42:48,880 --> 01:42:53,860
+There is a small exception to that, but we will study it soon, not now.
+
+614
+01:42:55,604 --> 01:43:19,884
+And when writing that member field, first we denote the access modifiers, then we write the name of that member field, we use two dots, and we write the type, the class of that member field, just as we did as the object name to that class name notation.
+
+615
+01:43:21,587 --> 01:43:25,587
+And let's examine the method compartment, the third compartment.
+
+616
+01:43:27,047 --> 01:43:39,007
+The methods will usually be public because an object will serve other objects by methods.
+
+617
+01:43:39,827 --> 01:43:44,327
+So mostly the methods are defined as public.
+
+618
+01:43:44,819 --> 01:43:56,439
+However, there may be some important methods that are related with the inner working principles of that object so that they shouldn't be called directly.
+
+619
+01:43:56,439 --> 01:44:04,479
+In those cases, we can absolutely and surely define this method as private.
+
+620
+01:44:05,519 --> 01:44:11,479
+However, normally, most of the time, we need methods of an object to form.
+
+621
+01:44:11,855 --> 01:44:21,376
+To different objects, therefore, methods are mostly public. And public is shown as plus in class diagrams.
+
+622
+01:44:22,496 --> 01:44:28,336
+This is a public method that doesn't take any parameters and that doesn't return anything.
+
+623
+01:44:29,935 --> 01:44:34,975
+The second one is a public method that is returning some information.
+
+624
+01:44:35,507 --> 01:44:47,967
+In that case, after closing the method parentheses, we write two dots and write the type of the data that this method is returned.
+
+625
+01:44:51,167 --> 01:44:56,188
+Let's check the third method. This is a public method having a parameter.
+
+626
+01:44:56,728 --> 01:45:00,948
+If a method takes a parameter, we write it between the parentheses.
+
+627
+01:45:01,779 --> 01:45:12,819
+And we write the parameter name, two dots, and parameter types similar to the member field notation.
+
+628
+01:45:13,399 --> 01:45:15,920
+First we write the name, then we write the type.
+
+629
+01:45:17,420 --> 01:45:24,859
+If a method takes more than one parameter, then we separate those with commas.
+
+630
+01:45:25,720 --> 01:45:26,439
+That's it.
+
+631
+01:45:30,163 --> 01:45:34,163
+There are more additional rules to visibility.
+
+632
+01:45:37,843 --> 01:45:42,163
+I said you are not responsible for those in class, but you can.
+
+633
+01:45:42,723 --> 01:45:55,979
+We will not be using those, but you may need them in different cases, not in this lecture, but in different subjects.
+
+634
+01:45:56,404 --> 01:46:02,524
+Let's say, how can I say this?
+
+635
+01:46:08,404 --> 01:46:10,564
+And that's just in this slide, okay?
+
+636
+01:46:18,996 --> 01:46:40,996
+Okay. There is a rule named protected and it's shown as a hash sign. In Turkish we call it mostly DS. This means that, well this is related with inheritance. We have not, we will study the inheritance later.
+
+637
+01:46:41,300 --> 01:46:44,300
+Therefore, I cannot talk much about it.
+
+638
+01:46:44,300 --> 01:46:59,300
+But for the students that already know inheritance, this means that that member is public to the package and subclasses, private to other, any other classes.
+
+639
+01:46:59,300 --> 01:47:06,956
+And a rule unique to Java is called the package visibility rule.
+
+640
+01:47:07,060 --> 01:47:09,220
+It is mentioned with a tilde.
+
+641
+01:47:10,840 --> 01:47:33,060
+These such numbers are public to the package, which means any other class that lies within the same package with that class can have its objects directly access to those package methods.
+
+642
+01:47:33,876 --> 01:47:38,876
+For example, if the first method is .
+
+643
+01:47:38,876 --> 01:47:41,876
+Therefore, a tilde being there.
+
+644
+01:47:41,876 --> 01:47:42,876
+That's all.
+
+645
+01:47:43,475 --> 01:47:45,475
+Tilda being there.
+
+646
+01:47:45,475 --> 01:48:06,475
+Every other classes, instances can access this method, but classes that reside in different packages cannot have their instances to execute this method because it will be unaccessible to them.
+
+647
+01:48:07,604 --> 01:48:10,684
+Sadly, this is the default rule in Java.
+
+648
+01:48:11,124 --> 01:48:17,124
+Therefore, if you don't write anything such as public or private in front of a member,
+
+649
+01:48:17,664 --> 01:48:22,244
+then this member will be handled as a package member.
+
+650
+01:48:23,004 --> 01:48:25,484
+And this is not something that we want.
+
+651
+01:48:26,264 --> 01:48:31,764
+Therefore, always mark your member fields as private.
+
+652
+01:48:32,340 --> 01:48:35,340
+Mark your methods as public.
+
+653
+01:48:36,340 --> 01:48:38,539
+This is the main rule of thumb.
+
+654
+01:48:39,340 --> 01:48:49,539
+If a method is directly related to inner workings of a class, then go ahead and mark them as private instead of public.
+
+655
+01:48:50,100 --> 01:49:03,020
+Or, there will be a time where we can use public numbers, number fields, but it's very, it's a niche, it's a random situation.
+
+656
+01:49:05,160 --> 01:49:08,300
+Okay, that's clean those.
+
+657
+01:49:09,600 --> 01:49:10,320
+And continue.
+
+658
+01:49:16,500 --> 01:49:17,539
+Tamam, bir şey atladım değil mi?
+
+659
+01:49:19,220 --> 01:49:20,100
+Tamam, peki.
+
+660
+01:49:23,859 --> 01:49:24,179
+Ok.
+
+661
+01:49:28,627 --> 01:49:34,627
+In reality, we cannot perfectly apply the information hiding principle.
+
+662
+01:49:36,387 --> 01:49:39,908
+We may slip in some moments.
+
+663
+01:49:40,587 --> 01:49:48,707
+We will try our best not to do so, but we can unintentionally.
+
+664
+01:49:50,612 --> 01:49:59,211
+However, the further we comply with information hiding principle, the easier our coding will be.
+
+665
+01:50:00,351 --> 01:50:07,951
+Because if we don't use information hiding between two objects, for example,
+
+666
+01:50:08,884 --> 01:50:30,884
+The differences being done in the source code of an object can adversely affect another class which is being dependent on the inner working details of that previous object.
+
+667
+01:50:31,731 --> 01:50:40,171
+And those side effects will create, may probably create, bugs in our software.
+
+668
+01:50:40,731 --> 01:50:46,811
+And such kinds of bugs are very hard to track and correct.
+
+669
+01:50:46,811 --> 01:50:54,492
+Therefore, please try to do your best and obey the information highly accessible.
+
+670
+01:50:55,604 --> 01:51:10,104
+And I repeat, in order to comply with information binding, we need to define member fields as private and necessary accessor methods and other methods as public.
+
+671
+01:51:11,884 --> 01:51:18,804
+This is a great in exams, so please do not forget to do that.
+
+672
+01:51:22,579 --> 01:51:43,400
+Okay. We have talked about accessor methods. Settler method is used for changing the value of a member field. And a getter method is used for just obtaining the value for reading of a member field of an object.
+
+673
+01:51:44,500 --> 01:51:49,760
+When we code that method, we use a specific naming convention.
+
+674
+01:51:50,771 --> 01:52:01,192
+We use the GET word, then write the name of that member field, beginning with capital K in that member name.
+
+675
+01:52:01,672 --> 01:52:06,971
+But the G of the GET and S of the Z will start small.
+
+676
+01:52:06,971 --> 01:52:11,851
+Because in Java, we always begin with smaller Ks.
+
+677
+01:52:12,792 --> 01:52:17,752
+We only begin capital Ks in class names.
+
+678
+01:52:18,420 --> 01:52:22,220
+Otherwise, we always begin with small k's.
+
+679
+01:52:24,260 --> 01:52:29,159
+There, for example, let's assume that there is a plate member of a car.
+
+680
+01:52:29,640 --> 01:52:37,380
+Then its access to methods will be getPlate and setPlate with key having capital k's.
+
+681
+01:52:38,319 --> 01:52:42,199
+And there are no spaces between them.
+
+682
+01:52:42,819 --> 01:52:44,940
+This is a single word.
+
+683
+01:52:45,363 --> 01:53:03,443
+But it is a logically composite word. Mantıksal olarak, kavramsız olarak birleşik kelime. Birleşik kelime ile ayırmıyorsunuz. Ayırmıyoruz biliyorsunuz. Burada da böyle. Kelime ile ayırsak bunlar farklı kelimelerle olarak arayıp değerleme hadasıyla karşılaştırız.
+
+684
+01:53:03,443 --> 01:53:10,764
+Those are composite words. So we don't separate them with any space or other thing.
+
+685
+01:53:11,091 --> 01:53:15,391
+They are just connected.
+
+686
+01:53:20,243 --> 01:53:45,603
+Let's make our first design. Let's have a class named car. It will be a plate. It will have a plate number. Plate as a number field. It is of type string. As you see, S is capital K. So this is actually a class. So this is a non-primitive number field. And it's private, of course.
+
+687
+01:53:46,100 --> 01:53:49,500
+We declare every member field as fact.
+
+688
+01:53:50,500 --> 01:53:53,199
+And it has two accessor methods.
+
+689
+01:53:54,000 --> 01:53:56,000
+The first one is the getter method.
+
+690
+01:53:56,699 --> 01:53:58,199
+The methods are public.
+
+691
+01:53:58,699 --> 01:54:03,800
+The name of the method is getplate because the name of the member field is plate.
+
+692
+01:54:04,800 --> 01:54:09,000
+A getter method does not need any parameters.
+
+693
+01:54:09,427 --> 01:54:14,588
+Because an object knows its member fields.
+
+694
+01:54:15,668 --> 01:54:22,768
+Unless stated otherwise, member methods of an object work with the member fields of that object.
+
+695
+01:54:22,768 --> 01:54:27,668
+Therefore, every class knows its state.
+
+696
+01:54:28,979 --> 01:54:47,579
+And this is a getter method. Therefore, it will return the value of the license plate. Therefore, we will use two dots and write the type of that member field that is being returned, which is a string type.
+
+697
+01:54:50,771 --> 01:54:58,871
+And for example, if I ask the name of any student, I just ask, what's your name?
+
+698
+01:55:01,551 --> 01:55:06,851
+This method, this message call does not have any parameters.
+
+699
+01:55:08,411 --> 01:55:12,951
+Or maybe I can ask, what is the name of your plant sitting next to you?
+
+700
+01:55:12,951 --> 01:55:13,931
+I can say.
+
+701
+01:55:14,420 --> 01:55:24,760
+In that case, I am giving a reference pointer to the send object sitting next to there.
+
+702
+01:55:25,439 --> 01:55:26,260
+This is a parameter.
+
+703
+01:55:26,720 --> 01:55:29,079
+But the first question, what is your name?
+
+704
+01:55:29,380 --> 01:55:35,199
+It doesn't require any parameter because every person knows his or her name.
+
+705
+01:55:38,260 --> 01:55:48,380
+On the other hand, certain methods need a parameter because it will be used for modifying the value of that number here.
+
+706
+01:55:50,039 --> 01:55:53,720
+And the types need to be the same.
+
+707
+01:55:54,640 --> 01:56:04,539
+As the license plate of a car is of type string, then the method parameter will surely also need to be a string.
+
+708
+01:56:06,163 --> 01:56:09,564
+And a setter method does not need to return anything.
+
+709
+01:56:10,264 --> 01:56:15,663
+It will just write the assignment and make the assignment.
+
+710
+01:56:16,284 --> 01:56:19,484
+So it doesn't need to return anything back.
+
+711
+01:56:22,304 --> 01:56:25,963
+You can easily change the permissions to the member fields.
+
+712
+01:56:26,612 --> 01:56:51,152
+For example, if we want our car's license plate not to be modified, then we remove the setplate method entirely, or we just mark that setplate method as private, so that no other types of objects can change the license plate of a car object.
+
+713
+01:56:54,420 --> 01:56:55,140
+For example.
+
+714
+01:56:59,699 --> 01:57:07,420
+O yüzden arkadaşlar, kolay kaçıp yuyalarını public yapmıyoruz. Yuyalarını private yapıp gereken getter, settle, metodları yapıyoruz.
+
+715
+01:57:09,179 --> 01:57:09,859
+Okay.
+
+716
+01:57:11,139 --> 01:57:13,179
+Any questions so far?
+
+717
+01:57:13,840 --> 01:57:14,579
+This is important.
+
+718
+01:57:15,399 --> 01:57:21,239
+Public and private and getter, methods and getter, and settle, methods and usability rules.
+
+719
+01:57:21,840 --> 01:57:22,579
+Those are important.
+
+720
+01:57:23,179 --> 01:57:26,279
+So if you have any questions, please ask.
+
+721
+01:57:36,212 --> 01:57:45,732
+Okay, now we have enough time for static and public, sorry, static and final numbers.
+
+722
+01:57:47,092 --> 01:57:53,332
+Okay, remember that every object is a different individual.
+
+723
+01:57:54,163 --> 01:58:07,563
+However, there may be some cases that this default behavior is not wanted, is not needed, but the opposite is needed.
+
+724
+01:58:09,163 --> 01:58:13,563
+Let's begin with static member fields.
+
+725
+01:58:14,739 --> 01:58:22,219
+As we have learned, the state of each object, even though they are of the same class, is different.
+
+726
+01:58:23,399 --> 01:58:33,419
+However, in some cases, we may want to have all objects of a particular type to share a common membership.
+
+727
+01:58:34,612 --> 01:58:45,311
+All and share are of the essence of that static condition.
+
+728
+01:58:45,971 --> 01:58:50,291
+In that case, we define this member field with the static keyword.
+
+729
+01:58:51,291 --> 01:59:00,192
+For example, let's assume that we are coding a car racing game, for example.
+
+730
+01:59:01,492 --> 01:59:09,492
+Let's assume that it is being in a third-person view in three dimensions.
+
+731
+01:59:10,492 --> 01:59:13,492
+We need to draw those cars quickly.
+
+732
+01:59:13,492 --> 01:59:21,492
+And when coding the drawing method, we need to draw the tires of those cars.
+
+733
+01:59:22,000 --> 01:59:25,640
+Every car will have four tires.
+
+734
+01:59:26,319 --> 01:59:41,199
+And we assume that we are not writing a realistic game such as the one tire of a car can run flat or can be plugged off and go away because of an accident.
+
+735
+01:59:41,779 --> 01:59:43,840
+We are not modeling such cases.
+
+736
+01:59:46,292 --> 01:59:53,271
+When we draw cars, we need to draw four wheels every time and for every car object.
+
+737
+01:59:53,931 --> 02:00:11,271
+If I define a normal member field, such as wheel number field, then every car object will have their own...
+
+738
+02:00:11,328 --> 02:00:17,328
+ve farklı, real number field.
+
+739
+02:00:17,328 --> 02:00:26,328
+And although all will have the same value, they will be residing in different parts of the memory.
+
+740
+02:00:26,328 --> 02:00:35,328
+Therefore, they will be wasting, they will be literally wasting some memory.
+
+741
+02:00:35,536 --> 02:00:47,836
+Because an integer is worth 4 bytes, let's assume that you have marked as a short int, or a char, for example, maybe, using 1 byte.
+
+742
+02:00:48,275 --> 02:00:50,456
+Okay, but 1 byte is 1 byte.
+
+743
+02:00:50,456 --> 02:01:02,756
+If you have, for example, 100 cars, then you will be wasting 99 bytes, because just 4 should be enough as the real numbers.
+
+744
+02:01:04,212 --> 02:01:09,851
+Let's assume that you define this as a global member variable, which is forbidden.
+
+745
+02:01:10,851 --> 02:01:15,532
+We are not using any global variables, any help.
+
+746
+02:01:17,716 --> 02:01:24,456
+Then what else? We can only code it as a member field car class.
+
+747
+02:01:24,456 --> 02:01:33,515
+But I repeat, in that case, every car object will have their own different real members member fields.
+
+748
+02:01:37,747 --> 02:01:47,707
+In order to control memory, every car object, we want every car object to share that member field.
+
+749
+02:01:47,707 --> 02:01:52,867
+Therefore, we define that one member field as static.
+
+750
+02:01:53,707 --> 02:01:57,207
+Static means commonly shared.
+
+751
+02:01:58,727 --> 02:02:05,047
+In that case, we don't have to access this member field by any object.
+
+752
+02:02:05,488 --> 02:02:10,868
+But we can access that number field by class name reference.
+
+753
+02:02:11,588 --> 02:02:20,008
+For example, we can write car.wheelcount, class name dot rambliname notation.
+
+754
+02:02:25,235 --> 02:02:28,235
+These are four static number fields.
+
+755
+02:02:29,235 --> 02:02:34,955
+For static number methods, the concept is more or less the same.
+
+756
+02:02:35,604 --> 02:02:42,024
+Normally, two different objects of the same type should answer the same message differently.
+
+757
+02:02:42,564 --> 02:02:43,724
+We have studied it.
+
+758
+02:02:44,264 --> 02:02:53,064
+However, in some cases, we may need to hear all objects of a particular type to share a common behavior.
+
+759
+02:02:53,652 --> 02:03:03,211
+Also, similar to the member field, static member fields, static member methods are having the same rationale.
+
+760
+02:03:04,652 --> 02:03:09,411
+All objects of a particular type share a common behavior.
+
+761
+02:03:10,451 --> 02:03:16,931
+If you want this to happen, then we define this member method by using the static keyword.
+
+762
+02:03:17,747 --> 02:03:22,467
+Also, such methods can be accessed from class names directly.
+
+763
+02:03:23,367 --> 02:03:29,947
+If we access any static member from an object, then we have a warning.
+
+764
+02:03:30,627 --> 02:03:42,027
+It's not much that important, but the proper way to access those static members is by using the class name dot member name notation.
+
+765
+02:03:43,252 --> 02:03:56,992
+Şimdi, biraz Türkçeye geçmek istiyorum. Aranızda eski Türk filmlerini ve özellikle de Cüneyt Akın'ın Karamurat filmlerini seyredenler var mı?
+
+766
+02:03:58,472 --> 02:04:09,592
+Seyredenler bir erkağdasını bakalım, sohbet ekranında falan. Var mı? Karamurat'ı seyredenler, Fatih'in fedası Karamurat falan.
+
+767
+02:04:13,939 --> 02:04:16,439
+Tamam, önce Zülçü davrandı, ben Zedim Hoca diyor.
+
+768
+02:04:16,439 --> 02:04:16,800
+Tamam.
+
+769
+02:04:17,079 --> 02:04:22,439
+O zaman Zülçü ve onu seyreden diğer arkadaşların bir de belki Karamuat'ı seyredenler.
+
+770
+02:04:23,460 --> 02:04:26,659
+Karamuat bir Osmanlı akıncısı, fedaisi.
+
+771
+02:04:27,359 --> 02:04:33,319
+Ondan sonra çoğunlukla da daha İstanbul'un fethinden önce pahaliyet gösteriyordu kendileri.
+
+772
+02:04:33,939 --> 02:04:52,899
+Bizans'a gizli operasyonlar yapar. Ondan sonra kallerine baskınlar, düzenler falan epey canını yakar Bizansları. O yüzden aranan birisidir Bizanslar tarafından. Eğer olur da yakalanırsa zindanatarlar Karabalat'ın.
+
+773
+02:04:53,332 --> 02:05:09,412
+Karanolat tabi Osmanlı askerleri arasında da bilinen bir ünlü çağız. Zindana atılmıştır Karanolat. Ondan sonra ne bileyim Kalenin komutanı ya da Dere Bey'i ya da Tekful her kimse onu sorgulamak isteyecektir.
+
+774
+02:05:10,412 --> 02:05:15,332
+Arbe askere sonra Karanolat'u getirin diye. Aska inen zindana.
+
+775
+02:05:15,796 --> 02:05:34,695
+Guardian'dan ister Karamunat'ı, Guardian sorar, Karamunat hangisi diye sorar, oradaki bütün esirler, Karamunat benim der. Yani aynı metot çağrısına aynı yanıtı verirler. Karamunat kim? Karamunat, Karamunat benim. Hepsi aynı şekilde davranıyor.
+
+776
+02:05:35,395 --> 02:05:41,476
+Ya da benzer şekilde, örneğin, harp okullarında yoklama alınırken, tımza saygı olarak.
+
+777
+02:05:41,855 --> 02:05:51,336
+Atımızın Öğrenc numarası okunduğunda bütün öğrenciler ayağa kalkar ve içim kalbimizde giderler.
+
+778
+02:05:51,667 --> 02:06:07,427
+Bu şekilde aynı soruya karşılık, aynı metot çağrısına karşılık aynı türden nesmelerin tamamen aynı davranışı yürütmeleri istiyorsak o zaman o metodu statik olarak kodlarız.
+
+779
+02:06:07,988 --> 02:06:09,907
+Metot adının başına statik yerine yazarız.
+
+780
+02:06:10,407 --> 02:06:16,667
+Artık o metot statik olmuştur ve o sınıftan tüm nesmelerin o metodu çağrıldığında aynı biçimde davranırlar.
+
+781
+02:06:19,060 --> 02:06:22,080
+Daha doğru yolu sınıf adı üstünden erişmektir.
+
+782
+02:06:22,500 --> 02:06:25,700
+Nesne adı üzerinden erişirseniz, warning almaktasınız.
+
+783
+02:06:26,340 --> 02:06:29,900
+Şimdi burada söz etmeyi unutmuşum galiba.
+
+784
+02:06:30,515 --> 02:06:34,235
+Pardon. Evet. Yansıtta sürekli uklubmysim.
+
+785
+02:06:34,235 --> 02:06:40,835
+There is an important issue, topic with static member methods.
+
+786
+02:06:40,835 --> 02:06:49,035
+We will be demonstrating in when we are writing code, but let me please tell it to you.
+
+787
+02:06:50,415 --> 02:06:52,175
+In a static member method,
+
+788
+02:06:52,884 --> 02:06:58,884
+You need to use only static member fields and other static methods.
+
+789
+02:06:58,884 --> 02:07:17,836
+We shouldn't use regular methods in a static method directly because static methods can be used without an object of reference, but regular methods need a normal object reference.
+
+790
+02:07:17,876 --> 02:07:23,396
+They always need an object that was. However, static methods do not.
+
+791
+02:07:24,216 --> 02:07:34,316
+Therefore, either we only use static member fields and member methods in a static method,
+
+792
+02:07:34,316 --> 02:07:44,176
+or we can give a regular object parameter to that static method.
+
+793
+02:07:44,576 --> 02:07:52,676
+In that case, that static method will be using the method of that particular parameter object without any problems.
+
+794
+02:07:53,615 --> 02:07:58,436
+So we can temporarily create a regular object in a static method.
+
+795
+02:07:59,216 --> 02:08:06,696
+Then this object will be only associated with that static method.
+
+796
+02:08:06,696 --> 02:08:09,716
+Therefore, it can be normally used.
+
+797
+02:08:10,068 --> 02:08:19,708
+This is an important issue that we will be demonstrating while writing and testing our Java calls.
+
+798
+02:08:23,108 --> 02:08:23,368
+Okay.
+
+799
+02:08:24,588 --> 02:08:28,188
+The second special case is being a final member.
+
+800
+02:08:29,188 --> 02:08:32,688
+A final member field means
+
+801
+02:08:32,688 --> 02:08:34,539
+a...
+
+802
+02:08:36,659 --> 02:08:52,319
+When we need a member field to stay the same, stay constant during the entire lifetime of an object, we need to define this member field with the final keyword.
+
+803
+02:08:53,180 --> 02:09:01,319
+Final means assign value only once and do not change it.
+
+804
+02:09:02,355 --> 02:09:05,835
+It means this type of behavior.
+
+805
+02:09:06,875 --> 02:09:08,295
+Okay, [öğrenci] has a question.
+
+806
+02:09:08,775 --> 02:09:13,815
+He asks, hani, abstract metodlar sınıf adı olmadan çağrılabilir mi?
+
+807
+02:09:14,175 --> 02:09:14,895
+Diyor.
+
+808
+02:09:15,375 --> 02:09:20,555
+Yani, nesne işaretçisi üstünden değil de sınıf adı üstünden çağrılması.
+
+809
+02:09:20,755 --> 02:09:21,635
+İşin normali.
+
+810
+02:09:21,735 --> 02:09:24,175
+Abstract'a da warning alıyoruz demiştik.
+
+811
+02:09:24,175 --> 02:09:26,175
+Ve onun dışında...
+
+812
+02:09:29,363 --> 02:09:44,403
+Uyar almamak için sınıf adını, diyelim ki işte static metotları sınıf adı üstünden direkt kullanmalıyız. İlk iki sınıfımızı filan yazdığımızda bunun örneğin demonstrasyonunu yaparız.
+
+813
+02:09:48,180 --> 02:09:50,500
+Ok, finalden basileduk.
+
+814
+02:09:55,460 --> 02:10:09,160
+We define a member field final for members that need to be assigned a value just once and not to be changed during the entire lifetime of that object.
+
+815
+02:10:09,980 --> 02:10:14,440
+Then, when should we assign a value to a final object?
+
+816
+02:10:14,960 --> 02:10:19,039
+We usually do it when that object is being created.
+
+817
+02:10:19,956 --> 02:10:34,536
+For example, when a car is being produced in a factory, before it leaves that factory, the chassis number of that car is etched onto its chassis in the factory.
+
+818
+02:10:34,536 --> 02:10:39,956
+And for the casunia, and it cannot be changed afterwards.
+
+819
+02:10:40,596 --> 02:10:46,896
+It is being as the value of that member is assigned when that object is being created.
+
+820
+02:10:47,956 --> 02:10:52,916
+We cannot change it any other time in the future.
+
+821
+02:10:55,136 --> 02:10:58,615
+What about static final member methods?
+
+822
+02:10:59,956 --> 02:11:12,775
+This is also related with inheritance, but to the students that already know something about that subject, I can say that final member methods cannot be overrated.
+
+823
+02:11:14,771 --> 02:11:18,391
+It will be meaningful later when we learn in haptics.
+
+824
+02:11:20,971 --> 02:11:21,692
+Okay.
+
+825
+02:11:22,391 --> 02:11:29,152
+And moreover, we can define the same member, both final and static, at the same time.
+
+826
+02:11:29,572 --> 02:11:30,152
+It's possible.
+
+827
+02:11:30,711 --> 02:11:33,032
+Those are not mutually exclusive.
+
+828
+02:11:33,591 --> 02:11:35,431
+Only final or only static.
+
+829
+02:11:35,811 --> 02:11:39,731
+A member can be both final and static at the same time.
+
+830
+02:11:40,979 --> 02:11:52,819
+If a member field is both final and static, only in that case we can define that member field as public.
+
+831
+02:11:54,039 --> 02:12:00,779
+I repeat, if a member field is both final and static,
+
+832
+02:12:01,332 --> 02:12:06,712
+Then this member field can be designed, marked as public.
+
+833
+02:12:06,712 --> 02:12:11,072
+In that case, we don't need any access or methods to call.
+
+834
+02:12:11,452 --> 02:12:14,572
+Just we call this member field as public.
+
+835
+02:12:15,272 --> 02:12:18,232
+Because, why is this reason?
+
+836
+02:12:19,012 --> 02:12:24,192
+Such cases can be used for modeling universal constants.
+
+837
+02:12:24,752 --> 02:12:26,912
+For example, the number pi.
+
+838
+02:12:27,380 --> 02:12:36,060
+Or the gravitational acceleration constant g, for example.
+
+839
+02:12:37,279 --> 02:12:42,819
+Or the speed of sound or the speed of light, for example.
+
+840
+02:12:43,720 --> 02:12:49,779
+In many normal cases, those are constant and do not change.
+
+841
+02:12:49,779 --> 02:12:50,779
+So...
+
+842
+02:12:51,359 --> 02:13:14,739
+We can, how do we model these constants in code? By a member field, of course, but as they will not be changed and they will be always having the same value and that value is for every instance of that class, then we can mark this member field as public.
+
+843
+02:13:15,283 --> 02:13:41,283
+If that member field is both final and static. In other cases, we always use private for member fields. Okay? And while learning these topics, please do not confuse final and static with each other. In order to do that, please learn their appropriate...
+
+844
+02:13:43,155 --> 02:13:59,595
+aims, appropriate usage reasons, appropriate purposes, final means set value only once, static means shared usage.
+
+845
+02:14:00,515 --> 02:14:10,395
+Hele ki bunu Türkçe düşündüğünüzde final ve static'in anlamını özellikle karıştırmamak için final bir kez de yaratınız ve değişmez.
+
+846
+02:14:11,060 --> 02:14:19,440
+Statik ise ortaklılığın şeklinde düşünün. Bunların birebir Türkçe karşılıklarında düşündüğünüzde karıştırabiliyorsunuz. O yüzden önemli.
+
+847
+02:14:21,100 --> 02:14:30,900
+How to mark those rules in UML class diagrams? We use the curve braces.
+
+848
+02:14:31,488 --> 02:14:42,008
+between curly braces, we write final or static, or in case of bot, we separate them with comma.
+
+849
+02:14:47,091 --> 02:14:48,471
+Any questions so far?
+
+850
+02:14:57,844 --> 02:14:58,731
+Evet.
+
+851
+02:15:03,091 --> 02:15:09,411
+Now, on the topic of constructors and finalizers, let's talk about them too.
+
+852
+02:15:09,411 --> 02:15:19,491
+I will not give a break. I will finish this lecture earlier, not at 5 p.m.
+
+853
+02:15:21,652 --> 02:15:30,892
+Let's make a quick entrance to that topic, constructors and finalizers, and end the session.
+
+854
+02:15:39,412 --> 02:15:41,412
+Ok, ok.
+
+855
+02:15:43,412 --> 02:15:53,412
+Constructor method is executed explicitly by the programmers, by us, when object is about to be created.
+
+856
+02:15:54,412 --> 02:16:04,412
+The reason of coding a constructor, they are used for assigning the initial values of the member fields of that particular object.
+
+857
+02:16:05,684 --> 02:16:10,063
+We will pay a significant attention to constructors in this class.
+
+858
+02:16:10,804 --> 02:16:19,304
+Why? Because we have mentioned the importance of the unique identifier member field of each object,
+
+859
+02:16:21,224 --> 02:16:29,304
+which means that a unique identifier value of each object of the same type should be different.
+
+860
+02:16:29,844 --> 02:16:37,923
+Therefore, we need to supply an object with a unique identifier in time of its creation.
+
+861
+02:16:40,164 --> 02:16:51,364
+In any type of, even in simple problems, the entities that we will quote will need to be separated from each other.
+
+862
+02:16:51,844 --> 02:16:55,684
+We need to be able to be distinguished from each other.
+
+863
+02:16:56,147 --> 02:17:14,147
+Therefore, they will have one universal, not universal, they will have one unique identifier and we need not to forget supply those objects with unique identifiers.
+
+864
+02:17:14,147 --> 02:17:18,147
+Therefore, we will always call the constructors.
+
+865
+02:17:18,772 --> 02:17:27,672
+Bu, which has at least one parameter, and that parameter being the unique identifier of that object.
+
+866
+02:17:29,512 --> 02:17:45,731
+In some cases, for example, in exams, we will draw UMLN class diagrams, and we will ask you to answer the questions according to that UMLN class diagram.
+
+867
+02:17:46,611 --> 02:18:03,711
+We may purposefully not show the constructor methods in classes, but know that every class should have a constructor, which is used for initializing the unique identifier number field.
+
+868
+02:18:04,431 --> 02:18:11,511
+Therefore, if we ask to write the source code of that class, also call the constructor method.
+
+869
+02:18:12,275 --> 02:18:31,355
+Or if you are needed to use a class in a question, then know that when using that other object, first initialize it by using the constructor having the related unique identifier parameters.
+
+870
+02:18:32,015 --> 02:18:33,795
+This is very important.
+
+871
+02:18:38,388 --> 02:18:39,388
+Hilarie [öğrenci].
+
+872
+02:18:41,388 --> 02:18:43,388
+What about finalizers?
+
+873
+02:18:43,388 --> 02:18:48,388
+The finalizing method is executed not by us.
+
+874
+02:18:48,388 --> 02:18:52,388
+It is executed implicitly by the JavaVision machine.
+
+875
+02:18:52,388 --> 02:19:03,388
+When an object is to be about deleted, is about to be removed from the memory, the name of that method is finalize.
+
+876
+02:19:03,987 --> 02:19:06,087
+It doesn't take any parameters.
+
+877
+02:19:06,647 --> 02:19:08,567
+It doesn't return anything.
+
+878
+02:19:08,567 --> 02:19:14,968
+And we do not, we normally do not call that finalizer method.
+
+879
+02:19:15,867 --> 02:19:23,867
+The Java virtual machine, sorry, the Java compiler automatically adds a finalizer method.
+
+880
+02:19:25,367 --> 02:19:29,807
+And we don't need to call that finalizing method.
+
+881
+02:19:30,420 --> 02:19:39,540
+Unlike we do in C and C++, Java programmers mostly do not need to handle memory management.
+
+882
+02:19:40,420 --> 02:19:44,779
+This is automatically done by the Java machine.
+
+883
+02:19:45,860 --> 02:19:49,920
+Therefore, we will not study the finalizing methods in this class.
+
+884
+02:19:51,440 --> 02:19:54,979
+But just let me tell a few more things.
+
+885
+02:19:55,412 --> 02:20:03,412
+Let's assume that you need to witness a finalizing method is being run.
+
+886
+02:20:04,412 --> 02:20:16,412
+Well, it's a hard thing to do because the memory management process also runs with the garbage collector process.
+
+887
+02:20:23,087 --> 02:20:24,507
+To stay in the memory.
+
+888
+02:20:25,368 --> 02:20:26,988
+For example, you remove an echo.
+
+889
+02:20:27,763 --> 02:20:35,304
+Then that record object isn't needed to be stored in the memory.
+
+890
+02:20:35,863 --> 02:20:38,063
+It should be removed from the memory.
+
+891
+02:20:38,063 --> 02:20:38,863
+Okay.
+
+892
+02:20:39,583 --> 02:20:46,443
+But the garbage collector does not actually delete this object.
+
+893
+02:20:46,763 --> 02:20:52,063
+It just marks that object as suitable for deletion.
+
+894
+02:20:53,203 --> 02:21:15,484
+When is it actually deleted? When the allocated system memory begins getting low, then the Java Virtual Machine invokes the garbage collected process and it travels the memory and actually removes that unnecessary objects at that moment.
+
+895
+02:21:16,531 --> 02:21:24,731
+And moreover, the default allocated memory to each Java program is 256 megabytes.
+
+896
+02:21:25,871 --> 02:21:26,531
+It's a lot.
+
+897
+02:21:28,072 --> 02:21:37,691
+So, for example, you need to create one million of objects and try to delete them all.
+
+898
+02:21:38,231 --> 02:21:41,311
+Only in that case, maybe you can fill up that memory.
+
+899
+02:21:41,851 --> 02:21:42,971
+And it's not for sure.
+
+900
+02:21:43,311 --> 02:21:47,231
+Therefore, I will not dwell more on that topic.
+
+901
+02:21:47,772 --> 02:21:50,951
+We don't need to quote any finalizing reports.
+
+902
+02:21:51,932 --> 02:21:56,252
+But if you do, then know that it's called finalize.
+
+903
+02:21:56,252 --> 02:22:02,231
+And you can write some, whatever code you want in that finalize.
+
+904
+02:22:07,603 --> 02:22:09,683
+Okay, rules for constructors.
+
+905
+02:22:10,324 --> 02:22:11,923
+First, they are public.
+
+906
+02:22:12,664 --> 02:22:20,984
+You shouldn't call the private constructor because constructor is being used for creating objects.
+
+907
+02:22:21,523 --> 02:22:26,543
+And if that constructor is not public, then it cannot be called.
+
+908
+02:22:27,223 --> 02:22:33,023
+Then this means that you cannot create any instances, any objects of that class.
+
+909
+02:22:35,443 --> 02:22:37,263
+private constructors.
+
+910
+02:22:38,423 --> 02:22:45,824
+You may need private constructors in niche cases, but that's very rare.
+
+911
+02:22:47,804 --> 02:22:53,164
+The name of that constructor method should be the same as the class name.
+
+912
+02:22:53,943 --> 02:22:56,223
+Therefore, it will begin with a capital case.
+
+913
+02:22:59,636 --> 02:23:14,316
+Although the constructor methods are used to create an object, when coding a constructor method, you will not code any return statement in the body of the constructor method.
+
+914
+02:23:14,996 --> 02:23:18,896
+And we do not give any return type to constructor method.
+
+915
+02:23:19,636 --> 02:23:28,436
+For regular methods, if a regular method does not return anything, then we mark this method as void.
+
+916
+02:23:31,076 --> 02:23:40,236
+However, constructor methods do not have return statements, but they don't have the void keyword either.
+
+917
+02:23:42,835 --> 02:23:49,335
+A constructor method is the best place to assign initial values to final member fields.
+
+918
+02:23:50,615 --> 02:23:56,135
+And when calling a constructor method, we also use the new keyword.
+
+919
+02:23:57,075 --> 02:24:00,255
+For example, we know that kit is a car object.
+
+920
+02:24:00,775 --> 02:24:09,475
+So in order to initialize it, in order to create it, we call the constructor method.
+
+921
+02:24:10,548 --> 02:24:12,648
+This one, car, with capital C.
+
+922
+02:24:13,468 --> 02:24:15,608
+This doesn't have any parameters.
+
+923
+02:24:16,368 --> 02:24:25,228
+It just allocates an object of that type from the memory and returns it back, although we don't write any return statement.
+
+924
+02:24:25,948 --> 02:24:34,368
+Also, we need to use the new keyword and make an assignment such as this one.
+
+925
+02:24:37,363 --> 02:24:40,463
+I'm more about that constructor.
+
+926
+02:24:42,611 --> 02:24:44,051
+Ashiplar Suryum.
+
+927
+02:24:44,051 --> 02:24:47,371
+This constructor does not have any parameters.
+
+928
+02:24:47,371 --> 02:24:52,651
+This is a rare case because we are learning them just now.
+
+929
+02:24:52,651 --> 02:25:00,251
+Regularly, we need to be able to supply license plate numbers, of course, to the constructor.
+
+930
+02:25:00,251 --> 02:25:05,531
+But let's focus on that easy example for now.
+
+931
+02:25:05,531 --> 02:25:08,051
+This is the default constructor.
+
+932
+02:25:08,180 --> 02:25:12,380
+Which means the constructor method without any parameters.
+
+933
+02:25:13,520 --> 02:25:33,979
+If we do not code any constructor in a class, then the Java virtual machine with the Java compiler will automatically add a default constructor, not to the source code, but to the class file.
+
+934
+02:25:35,987 --> 02:25:37,247
+More on that later.
+
+935
+02:25:38,147 --> 02:25:46,807
+But first, let's demonstrate it in a UML sequence diagram and encode.
+
+936
+02:25:52,628 --> 02:26:03,347
+When we just defining an object is not enough to use it, we also have to instantiate it by calling its constructor.
+
+937
+02:26:03,347 --> 02:26:06,268
+In English, we say instantiation.
+
+938
+02:26:07,547 --> 02:26:11,708
+In Turkish, Türkçesinden konuşalım.
+
+939
+02:26:12,387 --> 02:26:15,927
+Şimdi, İngilizce tek adı var, constructor metod.
+
+940
+02:26:16,628 --> 02:26:33,628
+Ve bütün nesneye Yönelik dillerde buna constructor deniliyor. Başka şey deniliyor. Ama mesela C++'da finalizer metot denmiyor da destructor metot deniliyor. Constructor, destructor. Java terminolojisinde finalizer deniliyor.
+
+941
+02:26:45,012 --> 02:27:02,031
+Olabilir. Kimisi ilklendirici diyor. Tamamen sonuç yolundan yola çıkarak. O da olabilir. Kimi de kurucu diyor. Ben de kurucuyu tercih ediyorum. Nedeni de tamamen ses benzerli. Constructive kurucu.
+
+942
+02:27:02,352 --> 02:27:20,632
+Birisi ko, birisi ku. İlk harfleri ortak, ikinci sesleri de birine yakın sesler. O yüzden Türkçe konuşurken, constructor metod yerine kurucu metod diyorum genelde. Ama yaplandırıcıya da ilplandırıcıya da diyebilirsiniz Türkçe konuşurken. Hepsi oldu.
+
+943
+02:27:20,632 --> 02:27:23,972
+But in English it's only construct.
+
+944
+02:27:26,004 --> 02:27:35,864
+Let's assume, let's do a UML sequence diagram to show how can we initialize that object.
+
+945
+02:27:35,864 --> 02:27:44,944
+Well, the object name is kit, two dots. The object type is car and underlined between a rectangle.
+
+946
+02:27:45,864 --> 02:27:51,484
+The lifeline begins. Now the object being active will be created.
+
+947
+02:27:52,211 --> 02:28:02,211
+And in that case, the constructor method is being executed because the incoming error has new written on it.
+
+948
+02:28:04,211 --> 02:28:11,211
+Regularly, when we draw a method call, we write the method name on top of the arrow.
+
+949
+02:28:14,608 --> 02:28:21,728
+During the constructor code, it's enough, it's just enough to write new, in that case.
+
+950
+02:28:23,288 --> 02:28:30,708
+Then, at the end of the rectangle, the constructor is finished and returned.
+
+951
+02:28:32,108 --> 02:28:33,808
+This is the UML representation.
+
+952
+02:28:35,188 --> 02:28:37,148
+What about code representation?
+
+953
+02:28:38,260 --> 02:28:48,180
+There are two possibilities about where this object is being constructed or instantiated.
+
+954
+02:28:50,620 --> 02:28:54,380
+First possibility is as a number field.
+
+955
+02:28:55,440 --> 02:28:57,040
+Let's assume there's a class.
+
+956
+02:28:57,363 --> 02:29:00,743
+We also mark classes as public or private too.
+
+957
+02:29:00,743 --> 02:29:11,523
+But mostly we use public modifier for classes because we want to be able to create instances of that class, of those classes.
+
+958
+02:29:11,943 --> 02:29:13,644
+So classes are defined as public.
+
+959
+02:29:14,343 --> 02:29:19,723
+Okay, public class, a class within its body.
+
+960
+02:29:20,244 --> 02:29:25,344
+First, a member field is declared private car kit.
+
+961
+02:29:26,344 --> 02:29:29,724
+The word ordering is in this way.
+
+962
+02:29:30,864 --> 02:29:44,664
+And for example, in a method, in any method of that process, we can initialize that kit object, this member field, this kit being a member field.
+
+963
+02:29:45,203 --> 02:29:55,203
+Or alternatively, within this class, within the constructor of that class, we can also initialize that kavram object.
+
+964
+02:29:55,203 --> 02:30:01,123
+Either way, this kit is a membership of a class.
+
+965
+02:30:02,063 --> 02:30:04,523
+And let's assume the other case.
+
+966
+02:30:06,403 --> 02:30:09,723
+In that case, in that another class,
+
+967
+02:30:10,079 --> 02:30:27,360
+There is not any member field such as hit or off-time k, but within a method of another class, we both define and initialize that hit object at the same line.
+
+968
+02:30:28,628 --> 02:30:31,108
+There are two possibilities.
+
+969
+02:30:32,108 --> 02:30:53,927
+A UML sequence diagram can show that, of course, because, well, actually, maybe it cannot show that, but know that there are two possibilities where and how that object can be instantiated.
+
+970
+02:30:59,827 --> 02:31:14,747
+Tamam, tamam. Peki, constructor'dan tek sayfa kaldı. Ondan sonra haftaya, date bakışından bahsedeceğiz.
+
+971
+02:31:14,747 --> 02:31:18,688
+Peki, evet. Az daha salladım. Az bir şey daha kaldı.
+
+972
+02:31:21,172 --> 02:31:27,972
+As I have told, the default constructor is a constructor without any parameters.
+
+973
+02:31:28,772 --> 02:31:37,072
+And the Java machine acts implicitly and automatically defines the default constructor if the programmer does not code any.
+
+974
+02:31:37,620 --> 02:31:42,080
+But it will not be sufficient for us.
+
+975
+02:31:42,540 --> 02:31:49,080
+We will need to code constructor method or multiple constructor methods with parameters.
+
+976
+02:31:49,900 --> 02:32:00,159
+Both parameters are used for assigning initial values to the important member fields of that object and especially the unique identifiers.
+
+977
+02:32:01,907 --> 02:32:13,108
+If the programmer explicitly codes a constructor with parameters, then the Java Mutual Machine does not add that default constructor.
+
+978
+02:32:13,988 --> 02:32:26,268
+However, if you want both a default and non-default constructor reside in the same class explicitly, then we explicitly code both constructors.
+
+979
+02:32:26,675 --> 02:32:32,315
+It is possible. It doesn't give us any errors or warnings.
+
+980
+02:32:32,315 --> 02:32:44,376
+But please keep in mind that regular business logic often requires a constructor with parameters and for its port constructors.
+
+981
+02:32:44,500 --> 02:32:54,600
+Therefore, we're always holding one default constructor, one or multiple constructors. More on that later next week.
+
+982
+02:32:55,603 --> 02:33:16,363
+But we can do it. We can call multiple constructors, having the same name, because the constructor should have the same name as class, but the numbers and types of the constructor method parameters will be different.
+
+983
+02:33:17,332 --> 02:33:31,952
+There will be multiple constructors having the same name but different parameters, both in terms of parameter number and in terms of parameter types.
+
+984
+02:33:32,572 --> 02:33:40,031
+What we do is called overloading and especially constructor overloading.
+
+985
+02:33:40,435 --> 02:33:48,136
+We can also overload regular methods too. We will cover all those topics in the following weeks.
+
+986
+02:33:48,136 --> 02:33:57,376
+But for today, that's enough. Eğer sorularınız varsa lütfen buyurun. Constructuralar üzerinde tartışalım.
+
+987
+02:34:00,948 --> 02:34:09,868
+Ne bileyim sorularımıza gerekirse gereklamak için o ne kodda bile ilerliyoruz atlarız. Ama kafanızda sorularsa, tamam buyurun.
+
+988
+02:34:09,868 --> 02:34:25,508
+Ben de bu arada kaldığım yeri not edeyim. Siz sorun içindeyken. Ama şey, evet tamam. Şurada. Oynaya kadar geldik, tutup'a kadar geldik, oturup dahil.
+
+989
+02:34:28,084 --> 02:34:35,184
+Ondan sonra yani constructors.
+
+990
+02:34:39,184 --> 02:34:43,404
+Üçüncü yansından itibaren devam edeceğiz.
+
+991
+02:34:43,543 --> 02:34:47,624
+Yani kontrol flordan itibaren devam edeceğiz hafta.
+
+992
+02:34:47,764 --> 02:34:55,764
+Peki kontrol florda iki üç yansıyla baktıktan sonra ilk sınıfımızı, ayrıntılı sınıfımızı tasarlayıp
+
+993
+02:34:56,275 --> 02:35:20,076
+Kodlayıp denemeye başlayacağız haftaya. O yüzden CDK'yı kurup, yani CDK kurmayanlar varsa haftaya kadar bunu yapsınlar lütfen. Çünkü biz de örneğini yapacağız. Siz de bu örnek üzerinde oynamak veya farklı örnekleri kendiniz kodlamak ve bunlar üstünde denemeler yapmak isteyebilirsiniz.
+
+994
+02:35:20,076 --> 02:35:22,036
+Peki.
+
+995
+02:35:22,708 --> 02:35:31,708
+Soru gelmediğine göre o zaman bugünlük bu kadar. Haftaya görüşmek üzere inşallah. Elinize iyi bakın. Şimdilik arasmanızı.

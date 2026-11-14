@@ -1,0 +1,2503 @@
+1
+00:16:59,316 --> 00:17:00,416
+Merhaba arkadaşlar.
+
+2
+00:17:02,355 --> 00:17:03,556
+Sesim geliyor mu sizlere?
+
+3
+00:17:11,092 --> 00:17:11,972
+Geliyor hocam.
+
+4
+00:17:13,352 --> 00:17:16,612
+Tamam. Bir beş dakika başlayalım, bekleyelim. Ondan sonra başlayacağım.
+
+5
+00:22:57,907 --> 00:23:00,827
+Evet, başlayalım arkadaşlar. Let's get started.
+
+6
+00:23:02,607 --> 00:23:17,687
+So this week is the six week into the semester. We have only two weeks left till the midterm exam.
+
+7
+00:23:19,316 --> 00:23:25,276
+So next week, I will be out of city.
+
+8
+00:23:25,576 --> 00:23:27,175
+I will be attending a conference.
+
+9
+00:23:27,336 --> 00:23:30,155
+That's why we won't have any lecture next week.
+
+10
+00:23:30,336 --> 00:23:37,395
+But the week, the following week, which means two weeks from today, we will have the lecture.
+
+11
+00:23:37,556 --> 00:23:40,695
+That will be the last lecture before the midterm exam.
+
+12
+00:23:41,296 --> 00:23:45,296
+So it is highly important for you to attend that lecture.
+
+13
+00:23:45,711 --> 00:23:54,451
+Because I might talk about the kinds of questions that you will see in the midterm exam.
+
+14
+00:23:54,451 --> 00:24:04,571
+The midterm exam, as we talked at the beginning of the class, is the eighth week of the semester.
+
+15
+00:24:04,892 --> 00:24:07,132
+So we can double check.
+
+16
+00:24:08,612 --> 00:24:09,932
+So let's see.
+
+17
+00:24:13,011 --> 00:24:14,971
+I think it's in the first slide.
+
+18
+00:24:17,432 --> 00:24:26,652
+Yeah, the eighth week is the April 19th, which is the eighth week of the semesters.
+
+19
+00:24:26,652 --> 00:24:29,271
+So you will have your first midterm exam.
+
+20
+00:24:30,652 --> 00:24:37,311
+So make sure that you are attending the week before that to the lecture.
+
+21
+00:24:51,892 --> 00:25:04,432
+Okay, so far we have covered all these topics up to objects and object relations.
+
+22
+00:25:05,432 --> 00:25:08,471
+So we are now covering the object relations.
+
+23
+00:25:11,604 --> 00:25:20,884
+And so we will talk about some UML sequence diagrams as well as we talked about these relations.
+
+24
+00:25:21,663 --> 00:25:25,304
+So we are going to talk about inheritance and abstract classes.
+
+25
+00:25:25,824 --> 00:25:30,104
+I hope to complete all these topics before the midterm exam.
+
+26
+00:25:30,744 --> 00:25:34,704
+Maybe depending on the time, we may also cover interfaces.
+
+27
+00:25:35,296 --> 00:25:42,336
+As well, but so I want to make sure that we are going to cover the inheritance and abstract classes.
+
+28
+00:25:48,980 --> 00:25:57,980
+Okay, now, so last week we started talking about the relations between...
+
+29
+00:26:06,259 --> 00:26:27,259
+relations. So one of them is association. And we said that association is ownership relationship, which means that one object owns to another one. So this is the class representation of the association relationship. Now, as you see,
+
+30
+00:26:28,564 --> 00:26:37,044
+So, I have the person class, which you have seen before in the UML representations in the previous lectures.
+
+31
+00:26:37,524 --> 00:26:43,864
+And I have here a main program class and I have here a car class.
+
+32
+00:26:44,304 --> 00:26:48,864
+And if you look at the relation between the car and person, you see that...
+
+33
+00:26:49,299 --> 00:26:56,480
+So one person owns zero or more car.
+
+34
+00:26:57,099 --> 00:26:57,240
+Okay.
+
+35
+00:26:57,779 --> 00:27:03,319
+So basically this relationship is association relationship.
+
+36
+00:27:04,059 --> 00:27:15,339
+And to make sure that we are talking about the association relationship, you can also check the member fields of the owner class.
+
+37
+00:27:15,339 --> 00:27:17,299
+In this case, owner class is the...
+
+38
+00:27:17,299 --> 00:27:38,859
+Person, class. So you can see that in the data member fields, you can see the card type data variable. So if it is in the data member field of a owner class, which in this case, in this relationship, owner class is person, then so this is an association relationship.
+
+39
+00:27:39,284 --> 00:27:45,144
+And so obviously one person may have zero or one.
+
+40
+00:27:45,144 --> 00:27:55,504
+So which means that when I create a person class, person object out of the person class,
+
+41
+00:27:55,887 --> 00:28:02,307
+So, I may create a person without a car object.
+
+42
+00:28:02,307 --> 00:28:12,208
+And later, if I wanted to add a car object into this person object, I could use the set car method.
+
+43
+00:28:12,847 --> 00:28:12,947
+Okay.
+
+44
+00:28:14,307 --> 00:28:15,007
+And.
+
+45
+00:28:16,627 --> 00:28:21,447
+Now we have an understanding of the association relationship.
+
+46
+00:28:22,028 --> 00:28:25,387
+And there is another relationship is the dependency relationship.
+
+47
+00:28:25,548 --> 00:28:27,607
+Yes, we also talked about it.
+
+48
+00:28:28,307 --> 00:28:40,447
+Now, if the so in dependency relationship, the second class in the relationship is being mentioned in the method, member methods.
+
+49
+00:28:40,447 --> 00:28:41,167
+Okay.
+
+50
+00:28:41,768 --> 00:28:44,587
+So it is either in.
+
+51
+00:28:44,627 --> 00:28:50,947
+The argument section of the method or it is in the method body of the
+
+52
+00:28:52,019 --> 00:29:14,059
+Method. So in this particular case, as you see, the car is not being mentioned in the argument section. Obviously, since there is a dependency relationship, you should think that car is being mentioned in the method body. And likewise, person is being mentioned in the method body. So therefore, there is a dependency relationship. Okay.
+
+53
+00:29:27,508 --> 00:29:31,788
+Now, this here is the car class.
+
+54
+00:29:32,148 --> 00:29:34,008
+So, the car class is simple.
+
+55
+00:29:34,788 --> 00:29:38,128
+So, as you see, here is the data member field.
+
+56
+00:29:38,248 --> 00:29:39,788
+There is only one data member field.
+
+57
+00:29:40,288 --> 00:29:42,367
+There is one parameter constructor.
+
+58
+00:29:42,948 --> 00:29:45,768
+And there is one getplate method.
+
+59
+00:29:46,688 --> 00:29:47,288
+Okay.
+
+60
+00:29:51,059 --> 00:30:01,920
+And this here is the person class, which is the owner of the, owner in the association relationship.
+
+61
+00:30:02,559 --> 00:30:07,960
+Now, if you look at it in data member fields, so we can see that there are two member fields.
+
+62
+00:30:08,159 --> 00:30:11,099
+One has a type string, the other one has a type car.
+
+63
+00:30:11,899 --> 00:30:13,920
+And there is one parameter constructor.
+
+64
+00:30:14,451 --> 00:30:18,192
+And there is a getter method for the name.
+
+65
+00:30:19,652 --> 00:30:23,951
+There is getter and setter methods for the car data member field.
+
+66
+00:30:24,432 --> 00:30:27,291
+And if you look at it, there is introduced self method here.
+
+67
+00:30:28,511 --> 00:30:30,511
+In the introduced self method,
+
+68
+00:30:32,384 --> 00:30:37,903
+So here I'm defining an integer.
+
+69
+00:30:38,503 --> 00:30:46,744
+I'm defining a temporary variable and I'm assigning some string values to this variable.
+
+70
+00:30:46,744 --> 00:30:47,744
+And then...
+
+71
+00:30:48,276 --> 00:31:11,115
+I am checking whether the car variable, that is global variable, is pointing to an object, okay? If this is other than null, okay? If it is other than null, then this is true, this statement is true, then I can execute this statement here.
+
+72
+00:31:12,627 --> 00:31:22,548
+If it is not, so this means that car is pointing to null, which is it is not initialized, then I won't execute this statement.
+
+73
+00:31:22,548 --> 00:31:33,587
+Okay. Now, if I don't do this check, if I don't do this control, in that case, the Java Virtual Machine will execute the statement.
+
+74
+00:31:33,967 --> 00:31:40,407
+And in this particular statement, as you see, there is a method call for this.
+
+75
+00:31:40,627 --> 00:31:54,268
+If this object is not already created, the method call will return an error, okay, because we will be calling a method for non-existing objects.
+
+76
+00:31:54,268 --> 00:32:02,007
+So therefore, so we need to make sure that that object is initialized.
+
+77
+00:32:02,579 --> 00:32:10,599
+And then, so at last, we are returning the value of intro as the return value.
+
+78
+00:32:16,531 --> 00:32:37,652
+Okay, so we talked about the association relationship. In this particular case, the association in the association relationship, the person side of the relationship, there was only one person and the car side of the relationship, there was zero to one, which means that a person may have zero or one car.
+
+79
+00:32:37,652 --> 00:32:38,652
+Okay.
+
+80
+00:32:39,443 --> 00:32:53,864
+If you see a star instead of zero and one, this means that it could be, it could, a person may have zero or more, zero or more car objects. Okay.
+
+81
+00:32:58,708 --> 00:33:07,887
+And so, and you also have seen that I checked whether or not the car object is initialized.
+
+82
+00:33:08,108 --> 00:33:15,928
+If I didn't check that, and if I did a method call, then I would get null pointer exception error.
+
+83
+00:33:16,367 --> 00:33:21,948
+So which would cause stalling of my program.
+
+84
+00:33:21,948 --> 00:33:22,347
+Okay.
+
+85
+00:33:28,115 --> 00:33:40,016
+Now, so I could do different kind of checks. For example, the check that I did is this one. I was looking for whether this object initialized or active.
+
+86
+00:33:40,400 --> 00:34:08,400
+So I was checking this way. So this was my parameter or variable that I use in order to keep track of my object. I was checking whether it is other than null. If it is true, then I know that that object is initialized. I could also do this this way. I could say that if this variable is equal to.
+
+87
+00:34:08,400 --> 00:34:13,460
+If this is false, then I will know that that object is created.
+
+88
+00:34:14,039 --> 00:34:20,579
+I could say, so if the value is null, if this is true, I will know that that object is not initialized.
+
+89
+00:34:21,159 --> 00:34:27,159
+So in the other case, if it is other than null, so this will be false.
+
+90
+00:34:28,100 --> 00:34:33,019
+So in that case, I will know that that object is not initialized.
+
+91
+00:34:41,940 --> 00:34:58,619
+Now, let's take a look at the main program. In the main program, I have a main method. There is only one method, main method. And as you see here, first, I'm defining a person where the name, where the variable is octi.
+
+92
+00:34:59,000 --> 00:35:09,940
+And then I am creating an object of the person here in the right hand side of this equation. And here at this point, I created the object.
+
+93
+00:35:09,940 --> 00:35:13,800
+And I assign the reference of this object to this variable.
+
+94
+00:35:14,159 --> 00:35:14,260
+Okay.
+
+95
+00:35:14,600 --> 00:35:17,820
+Now, from this point forward, I can use this variable.
+
+96
+00:35:17,820 --> 00:35:24,059
+I can use this variable in order to keep track this person object.
+
+97
+00:35:25,000 --> 00:35:30,579
+And then here, in the next line, I'm creating another object, but this one is a car object.
+
+98
+00:35:31,284 --> 00:35:40,804
+And I am assigning the reference to this car object, reference address of this car object to this variable where the type of the variable is car.
+
+99
+00:35:41,583 --> 00:35:44,903
+And then I am setting this, this.
+
+100
+00:35:45,364 --> 00:35:54,324
+Car object to the person object by using the set car method of the person object.
+
+101
+00:35:54,324 --> 00:36:00,003
+Okay, set car method takes a car object reference as its input.
+
+102
+00:36:00,744 --> 00:36:06,204
+Okay, at this line now, the person object knows the car object.
+
+103
+00:36:06,403 --> 00:36:09,784
+Okay, so when I wanted to print out.
+
+104
+00:36:10,867 --> 00:36:24,887
+In that case, if I wanted to call introduce self method for the person object, so what it will do, it will write everything related with this person.
+
+105
+00:36:26,188 --> 00:36:36,927
+And in addition, it will also tell about the car object that this, the one that I set it into this person object.
+
+106
+00:36:36,927 --> 00:36:37,268
+Okay.
+
+107
+00:36:38,067 --> 00:36:38,867
+Now, in the.
+
+108
+00:36:38,867 --> 00:36:45,807
+In the following line, you see that I created an object, a person object, another person object.
+
+109
+00:36:45,807 --> 00:36:50,947
+I assign the reference to this person object to this variable here.
+
+110
+00:36:51,708 --> 00:36:54,887
+And then I'm calling the introduce self method.
+
+111
+00:36:55,327 --> 00:37:00,847
+So in this case, remember, I had to check whether or not that person has a car.
+
+112
+00:37:01,231 --> 00:37:20,251
+Object. So if that person does not have a car, in that case, I will not call the get car method of that person object because that if statement will be false and the following statement will not be executed.
+
+113
+00:37:20,251 --> 00:37:26,291
+So we can, since now that we are mentioning it, okay.
+
+114
+00:37:30,900 --> 00:37:33,820
+Okay, so I will check here.
+
+115
+00:37:34,240 --> 00:37:41,560
+So since object Aziz does not have car, then this will be false.
+
+116
+00:37:42,019 --> 00:37:46,740
+Since it's false, this statement here is going to be executed.
+
+117
+00:37:46,740 --> 00:37:56,700
+And all we will be able to print is that this string that I assigned to this temporary string variable here.
+
+118
+00:38:02,708 --> 00:38:05,347
+Okay, and this was the main program.
+
+119
+00:38:08,288 --> 00:38:16,807
+Okay, and so this was the sequence diagram that I showed you in the previous lecture, and this is the sequence diagram for introduce self.
+
+120
+00:38:17,208 --> 00:38:21,788
+Here, we are calling the introduce self method from the main method.
+
+121
+00:38:22,008 --> 00:38:26,807
+In the introduce self method, introduce self method belongs to the person object.
+
+122
+00:38:27,507 --> 00:38:30,667
+So this here represents the person object.
+
+123
+00:38:31,327 --> 00:38:41,467
+And here in the introduce solve method, we are making a method call to the same object, which is a get name.
+
+124
+00:38:41,987 --> 00:38:46,047
+And in order to show that I have another block, a code block.
+
+125
+00:38:46,387 --> 00:38:53,228
+And then after that, we are making a method call to the car object by calling the get plate.
+
+126
+00:38:53,972 --> 00:38:57,692
+And the getplate will return something.
+
+127
+00:38:58,731 --> 00:39:07,632
+And obviously, we need to here make sure that we are checking whether or not that car object is other than null.
+
+128
+00:39:07,632 --> 00:39:12,032
+So therefore, this is the syntax in order to check that.
+
+129
+00:39:15,059 --> 00:39:32,440
+Car object is other than null. Okay. And I can either use this one, this notation, or I can either use this notation. Okay. Now, after I get the return value, then I return the final string value again to the main method.
+
+130
+00:39:38,452 --> 00:40:00,000
+And this is the main method. Now, in the main method, Java Virtual Machine, when you first run your program, remember, only the class, Java class files that has main program can be run by the Java Virtual Machine. Here, Java Virtual Machine runs the main program.
+
+131
+00:40:00,000 --> 00:40:03,940
+It calls the main method automatically when you run it.
+
+132
+00:40:04,639 --> 00:40:07,720
+And in the main program, so we have a main method.
+
+133
+00:40:07,900 --> 00:40:13,500
+And in the main method, the first thing that we do is we are creating a person object.
+
+134
+00:40:13,871 --> 00:40:16,192
+And then we are creating the car object.
+
+135
+00:40:16,652 --> 00:40:19,612
+We are setting the car object to the person object.
+
+136
+00:40:19,612 --> 00:40:23,811
+And then we are calling the introduce self method of the person object.
+
+137
+00:40:24,311 --> 00:40:29,851
+Next, we are creating another object, a person object, but pay attention.
+
+138
+00:40:30,431 --> 00:40:32,951
+Now, each of these are objects.
+
+139
+00:40:33,311 --> 00:40:41,251
+So this means that if I create another person object, there has to be another rectangle shape here.
+
+140
+00:40:41,511 --> 00:40:41,631
+Okay.
+
+141
+00:40:41,871 --> 00:40:53,672
+So therefore, when I create new object, person object, so there has to be another rectangle shape and underneath there need to be dashed column here.
+
+142
+00:40:55,219 --> 00:41:03,259
+dash line in the sequence diagram, and it will return the reference to that object.
+
+143
+00:41:03,759 --> 00:41:14,159
+And when I call the introduce self method, introduce self method will execute the introduce self method of the person object, and it will return the string value.
+
+144
+00:41:14,159 --> 00:41:20,880
+Finally, the main method will go back to the Java Virtual Machine, which will stop our program.
+
+145
+00:41:21,299 --> 00:41:21,339
+Okay.
+
+146
+00:41:21,979 --> 00:41:23,159
+Now, in the exam,
+
+147
+00:41:23,219 --> 00:41:42,319
+You should expect that if we ask you to write a program that includes, so let's say main program, or it could be some regular method, just like the introduce self, we could say that, okay, you should write the sequence diagram for this method, okay?
+
+148
+00:41:42,319 --> 00:41:46,380
+You should make some exercises by yourself.
+
+149
+00:41:46,735 --> 00:41:51,655
+In order to be familiar with it.
+
+150
+00:41:55,956 --> 00:42:06,876
+Okay, now when we show the relationships within the class diagrams, now we may sometimes hide information, for example.
+
+151
+00:42:08,336 --> 00:42:15,956
+Now, so let's take a look at this association relationship. Now, class A.
+
+152
+00:42:16,416 --> 00:42:28,976
+O, class B. Okay. Which means that class objects of class A may have two objects of class B. Okay. Now.
+
+153
+00:42:29,780 --> 00:42:44,159
+I can also represent the same thing just like this. As you see in the data membership field, class A has two variables where the variable type is B.
+
+154
+00:42:44,159 --> 00:42:51,900
+So which means that any object which is initiated from class A will have two.
+
+155
+00:42:52,288 --> 00:43:11,427
+Arkadaşlar, objects of B. So in order to show that, so we are showing 1 and 2. Now, so we may hide this information, but you can understand it by looking at these quantities in the ownership relationship, in the association relationship. So take a look at this.
+
+156
+00:43:11,891 --> 00:43:31,731
+Now, here, there is a dependency relationship. Now, you see that in either side of this arrow. So, I have one here. Okay. Now, since dependency relationship, I know that class B is being mentioned in the method, member method section of this class. Okay.
+
+157
+00:43:39,891 --> 00:44:00,531
+method of this class A, there is only one B that is mentioned. So in that case, so if I wanted to show it with details, I could show it like this. So, so there is a method in the argument section, there is only one B where the type is class B.
+
+158
+00:44:02,483 --> 00:44:25,203
+Now, so there is another UML class diagram. So here you see that class A and class B. And if you look at the quantities, now here is there is a diamond shape. Now this diamond shape, so you could have one as the quantity or you could have the diamond shape. They both are the same thing.
+
+159
+00:44:30,483 --> 00:44:34,483
+They include zero or more objects of class B.
+
+160
+00:44:35,083 --> 00:44:35,203
+Okay.
+
+161
+00:44:35,443 --> 00:44:58,364
+Now, if I wanted to show this in detail in class representation, then you see that since there is an association relationship, since there is an association relationship, this one, the second class should be mentioned in the member, data member field section of the first class.
+
+162
+00:44:58,483 --> 00:45:05,684
+Arkadaşlar, and since we are talking about zero or more in that case, so this is what we should expect.
+
+163
+00:45:05,684 --> 00:45:16,543
+It's an array, so it basically zero, it identifies that the objects of class A may have zero or more B, okay?
+
+164
+00:45:25,076 --> 00:45:30,856
+Now, similar to a one-way association, there is also two-way association, okay?
+
+165
+00:45:30,856 --> 00:45:41,636
+Now, here you see that the person class may have zero or one car class, and the car class may have zero or one person class, okay?
+
+166
+00:45:42,275 --> 00:45:52,416
+And objects of, another way of saying it, objects of person class may include zero or one objects of car class, objects of car class.
+
+167
+00:45:53,076 --> 00:46:17,195
+The objects of car class may be owned by zero or more, zero or one person object. Okay. Now this is the relationship between the two. And there is also another main program. And this main program, they, these both classes are being mentioned in the method section of the main program. Okay.
+
+168
+00:46:17,376 --> 00:46:20,936
+Now, let's take a look at the code for this one.
+
+169
+00:46:26,483 --> 00:46:28,423
+Okay, we talked about this.
+
+170
+00:46:28,844 --> 00:46:30,884
+So let's see some codes.
+
+171
+00:46:33,983 --> 00:46:38,903
+Okay, let's now take a look at the car object.
+
+172
+00:46:39,583 --> 00:46:42,403
+Just like the previous example, we have two.
+
+173
+00:46:44,275 --> 00:47:11,815
+Data member fields. In the previous car example, we didn't have the person type variable. We only had the string type variable in the data member fields. Now, right now, the only difference is that since we wanted to create two-way association relationship, now the person class is being mentioned in the data member fields section of the car class.
+
+174
+00:47:12,275 --> 00:47:19,515
+So therefore, the only difference is that now here we have the person type owner variable.
+
+175
+00:47:20,500 --> 00:47:25,940
+Now, if you look at it, there's two constructors.
+
+176
+00:47:26,440 --> 00:47:28,840
+So one is one parameter constructor.
+
+177
+00:47:29,000 --> 00:47:31,279
+The other one is two parameter constructor.
+
+178
+00:47:31,279 --> 00:47:42,980
+So you can create a car object by just giving the plate number, or you can create the car object by giving the plate number and also the owner, okay?
+
+179
+00:47:43,920 --> 00:47:44,699
+Owner object.
+
+180
+00:47:45,427 --> 00:47:53,427
+Now, there is a setter and getter methods for the owner variable and there is...
+
+181
+00:47:54,291 --> 00:48:16,711
+setter method for the plate variable. And there is also an introduce self method. Okay. Now, in the previous example, the car did not have introduce self method, only the person class had the introduce self method. Now, I wanted to add the introduce self method here as well.
+
+182
+00:48:17,172 --> 00:48:29,811
+Now, in this introduce self method, let's take a look at it. In the first line here, I am defining a string. In the second line, I am assigning some string values to this variable that I created.
+
+183
+00:48:30,255 --> 00:48:40,355
+In the following line, so now I am checking whether or not this owner object is already initialized.
+
+184
+00:48:40,355 --> 00:48:40,995
+Okay.
+
+185
+00:48:41,615 --> 00:48:49,215
+If this is true, then this statement underneath the ifs if it will be executed.
+
+186
+00:48:49,755 --> 00:48:57,395
+Which if this being true means that there is already a person object that is created.
+
+187
+00:48:58,155 --> 00:48:58,255
+Okay.
+
+188
+00:48:58,255 --> 00:49:05,495
+And after I do the check, I also assign some other values to the string.
+
+189
+00:49:05,615 --> 00:49:12,335
+As you see, I am adding these additional string values to the existing string value.
+
+190
+00:49:12,335 --> 00:49:20,215
+And I am returning the whole string value as a return for introduce self method.
+
+191
+00:49:29,427 --> 00:49:32,627
+Okay, so we talked about this.
+
+192
+00:49:37,108 --> 00:49:59,728
+Now, let's take a look at the main method. Now, in the main method, so first I'm creating the person object, assigning to this variable where the type is person. I am creating the car object. And then I am setting the car object, car object to the person object. And I am also doing the same thing for
+
+193
+00:50:00,000 --> 00:50:04,319
+The car object, I am setting the person object to the car object.
+
+194
+00:50:04,319 --> 00:50:10,099
+Now, at this point, both car object and the person object, they are pointing to each other.
+
+195
+00:50:10,460 --> 00:50:21,440
+Okay, they are giving, which means that from the person object, I can make a method call to the car object.
+
+196
+00:50:21,559 --> 00:50:25,140
+From the car object, I can make a method call to the person object.
+
+197
+00:50:25,523 --> 00:50:34,963
+And then I'm calling the introduce submethod of the person class and calling the introduce submethod or the car object.
+
+198
+00:50:35,643 --> 00:50:35,743
+Okay.
+
+199
+00:50:36,543 --> 00:50:39,703
+Next, what I do is that I'm creating another person.
+
+200
+00:50:40,123 --> 00:50:40,563
+Okay.
+
+201
+00:50:40,983 --> 00:50:41,563
+Object.
+
+202
+00:50:41,743 --> 00:50:52,884
+And I'm assigning the reference value for this person object to this variable, creating another car object, assigning the reference to this variable.
+
+203
+00:50:53,523 --> 00:50:58,943
+And then I am setting this car object to the person object.
+
+204
+00:50:58,943 --> 00:51:01,563
+And I am doing the similar thing.
+
+205
+00:51:01,663 --> 00:51:06,663
+I am setting this person object to the car.
+
+206
+00:51:07,423 --> 00:51:21,043
+And then I can call the introduce self methods of both person and the car objects.
+
+207
+00:51:31,347 --> 00:51:38,688
+Now, so one thing that you see here, so if you look at the lines six and seven,
+
+208
+00:51:45,715 --> 00:51:57,496
+If you look at the lines six and seven, as you see, first I am setting the car object to the person object, and then I am setting the person object to the car object.
+
+209
+00:51:57,496 --> 00:51:58,015
+Okay.
+
+210
+00:51:58,615 --> 00:51:59,135
+Now,
+
+211
+00:52:01,416 --> 00:52:01,695
+so,
+
+212
+00:52:02,356 --> 00:52:06,556
+The question is, now, can I do this thing in one line?
+
+213
+00:52:07,196 --> 00:52:07,356
+Okay.
+
+214
+00:52:07,916 --> 00:52:13,176
+So why do I need to do it in two different operations, in two different method calls?
+
+215
+00:52:13,256 --> 00:52:15,076
+Can I do it in just one line?
+
+216
+00:52:15,136 --> 00:52:26,236
+Because sometimes you may add the card to the personal object, but you may forget doing the same thing.
+
+217
+00:52:26,236 --> 00:52:26,615
+Okay.
+
+218
+00:52:30,356 --> 00:52:42,096
+relationship by just doing, by just adding one reference from one object to another and forgetting the other one, you can miss the two-way relationship.
+
+219
+00:52:42,096 --> 00:52:51,296
+So, so the question is, can I do these two lines, number lines six and seven, can I do it in one line?
+
+220
+00:52:57,588 --> 00:53:10,068
+Yes, I can. But we need to have a modification in car class and also we need to have a modification in person class. So let's make a modification in car class.
+
+221
+00:53:11,795 --> 00:53:23,095
+Now, the only modification that I do here is when I create the constructor for the car class, okay?
+
+222
+00:53:23,635 --> 00:53:28,355
+As you see, I am calling the setOwner method.
+
+223
+00:53:29,155 --> 00:53:35,055
+And I am passing the owner object which is passed to this constructor, okay?
+
+224
+00:53:35,055 --> 00:53:39,755
+Now, this means that the person object is already created.
+
+225
+00:53:39,795 --> 00:53:44,755
+Before we initialize the car object.
+
+226
+00:53:45,295 --> 00:53:49,615
+And when I create the car object, I call this constructor.
+
+227
+00:53:50,155 --> 00:53:55,795
+And when I call it, I call it with the reference to the already created person object.
+
+228
+00:53:56,215 --> 00:53:56,355
+Okay.
+
+229
+00:53:56,815 --> 00:54:03,555
+And when I do that, so what I do here is that I am calling the setOwner method.
+
+230
+00:54:04,175 --> 00:54:06,795
+And so let's see the setOwner method.
+
+231
+00:54:08,115 --> 00:54:12,815
+The set owner method is setting the owner into the global member field.
+
+232
+00:54:12,815 --> 00:54:25,435
+Now, this way, when I create the car object, I am also creating the reference.
+
+233
+00:54:36,244 --> 00:54:46,583
+Now, so if I do that, so when I call the person, when I create the person class, I am assigning the person class to
+
+234
+00:54:47,699 --> 00:55:02,099
+This variable, when I create the car object, now pay attention, when I create the car object, I'm creating with the object reference to this object that I've already created.
+
+235
+00:55:02,099 --> 00:55:06,359
+So when I do that, this in the constructor,
+
+236
+00:55:06,867 --> 00:55:15,827
+So, constructor will assign this reference to this person object to the global member field of this car object.
+
+237
+00:55:15,827 --> 00:55:30,947
+Okay. And now the car object is pointing to its owner to the, to, which is the person object. Okay. So let me see.
+
+238
+00:55:48,115 --> 00:55:48,576
+ÇAČ!
+
+239
+00:55:49,012 --> 00:56:08,032
+Take a look at the set car and set owner methods. As I said, in both person and the car class, so we need to update the set methods. In the set method that belongs to the person object, so what do we do?
+
+240
+00:56:17,012 --> 00:56:37,271
+We used to take the reference to the car object. We used to assign it to the global member field of the person. And this way we were done. We were setting the relationship between the person and car. But this time, so what we are doing is that we are taking this.
+
+241
+00:56:38,867 --> 00:56:56,887
+Object, which is the person object, okay, and this is the person object, okay, and we are checking whether the car object which is being passed here, the car object's owner is different than this person.
+
+242
+00:56:56,887 --> 00:57:06,528
+If it is different than this person, then what we do is that we are calling, we are making the method call to the car object which is being passed here.
+
+243
+00:57:06,867 --> 00:57:15,627
+calling setOwner method of that object and we are passing this person's object reference.
+
+244
+00:57:15,627 --> 00:57:16,188
+Okay.
+
+245
+00:57:16,747 --> 00:57:25,487
+So whenever this means that whenever we want to make a connection between the person and the car,
+
+246
+00:57:25,887 --> 00:57:34,707
+Arkadaşlar, objects, in that case, so this addition that we have done here, it creates a two-way relationship.
+
+247
+00:57:35,507 --> 00:57:39,747
+And I can do the same thing for the car class as well.
+
+248
+00:57:39,747 --> 00:57:44,447
+So remember, before we make this addition,
+
+249
+00:57:44,916 --> 00:57:57,396
+So, all we did is that whenever a personal object is passed to this set owner method, this reference is assigned to the global member field.
+
+250
+00:57:57,396 --> 00:58:01,636
+But now, so we are adding this to these two lines.
+
+251
+00:58:02,136 --> 00:58:11,676
+We are checking whether the object which is being passed to this method, okay, has a car.
+
+252
+00:58:12,244 --> 00:58:35,064
+And if it is a car, and if it is different than this car, in that case, what we are going to do, we are going to call the person method, which is the object which is being passed here, person's method, set car method, and we are going to set this object's reference.
+
+253
+00:58:35,064 --> 00:58:35,724
+Okay.
+
+254
+00:58:45,331 --> 00:59:03,551
+And if I do that, in that case, so whenever I make a, whenever I create a person class, after I create a person class, whenever I make a method call for this constructor, so remember in this constructor.
+
+255
+00:59:06,228 --> 00:59:10,568
+In this constructor, I put the setOwner method, okay?
+
+256
+00:59:10,948 --> 00:59:19,148
+And when I call the setOwner method, setOwner method will create the two-way association relationship.
+
+257
+00:59:19,148 --> 00:59:21,508
+So this gives me an advantage.
+
+258
+00:59:23,407 --> 00:59:28,088
+This gives me an advantage by just having this line here.
+
+259
+00:59:28,480 --> 00:59:36,960
+Basically, I am creating the two-way association relationship because so in the constructor of the car class, there is setOwner method.
+
+260
+00:59:36,960 --> 00:59:46,260
+And in the setOwner method with the new addition, I am creating a two-way relationship between the car and the person objects.
+
+261
+00:59:46,639 --> 00:59:54,900
+Okay. So right now, so if I do it this way, I don't need to use the set methods here.
+
+262
+00:59:55,320 --> 00:59:55,800
+Okay.
+
+263
+00:59:56,480 --> 01:00:00,659
+And now I can call the octai introduced self.
+
+264
+01:00:01,860 --> 01:00:09,260
+The octai will know, octai object will know about the rover object and it will print it out.
+
+265
+01:00:09,380 --> 01:00:21,980
+And I can call the rover introduced self, rover car object will know about the octai person and it will print out the details of that person as well because they both point to each other.
+
+266
+01:00:31,731 --> 01:00:34,511
+Okey. Bir soru var. Hemen bakalım.
+
+267
+01:00:38,547 --> 01:00:43,167
+Metot içerisinde yapılan işlemleri parametreyi owner nasıl değiştiriyor?
+
+268
+01:00:44,167 --> 01:00:45,967
+Şimdi tekrar bakalım.
+
+269
+01:00:52,307 --> 01:00:59,307
+Şimdi iki tane benim objem var değil mi? Bir tanesi person objesi, ikincisi de car objesi.
+
+270
+01:00:59,688 --> 01:01:07,627
+Şimdi birinci person objesini yarattım ben. Ondan sonra da car objesini yaratıyorum.
+
+271
+01:01:08,052 --> 01:01:30,532
+Şimdi car objesini yaratırken car objesinin ikili konstraktörünü çağırıyorum. Birinci konstraktöründe bu arabaya vermiş olduğum isim var. İkinci konstraktöre verdiğim birinci parametrede arabaya verdiğim isim var. İkinci parametrede ise bu yaratmış olduğum person objesinin referansı var.
+
+272
+01:01:31,027 --> 01:01:42,607
+Şimdi kar objesinin konstruktörünü az önce görmüştük. Kar objesinin konstruktöründe ben neyi çağırdım? Karın set owner metodunu çağırdım. Tamam.
+
+273
+01:01:43,059 --> 01:01:59,839
+Şimdi, car objesinin constructor'ından yine aynı objenin set owner metodunu çağırırken de bu constructor'a benim ilk oluştururken pas etmiş olduğum bu person objesinin referansıyla bu set owner'ı çağırdım.
+
+274
+01:01:59,839 --> 01:02:08,079
+Şimdi artık car objesi içerisindeyim ve car objesi içerisinde set owner'a şeyle gelmişim.
+
+275
+01:02:08,199 --> 01:02:10,839
+Yine yaratılmış olan person objesini...
+
+276
+01:02:11,059 --> 01:02:35,679
+referansıyla gelmişim. İlk yaptığı şey öncelikle ne yapıyor? Bu person objesini gidiyor. Bu karın global member fiili olan owner'a ekliyor. Artık kar, kar objesi person objesine işaret ediyor. Artık kar objesi person objesinin nerede olduğunu biliyor. Arkasındansa şunu kontrol ediyor. Diyor ki,
+
+277
+01:02:36,179 --> 01:02:52,920
+Bu diyor, owner objesinin referansı elimde var şu anda. Owner objesinin get car metodunu çağırıyor. Get car metodu şu anda person objesi bu car objesinden habersiz olduğu için buna null döndürecektir.
+
+278
+01:02:53,331 --> 01:03:17,231
+Şimdi buraya bakıyor, diyor ki null ile Disney'yi gösteriyordu, bulunduğumuz objeyin referansını gösteriyor. Biz şu anda hangi, neyin içerisindeyiz? Kar objesinin içerisindeyiz. Bu ikisinin farklı olmasını, farklı mı? Farklı. Birisi bir objeyi referans ediyor, birisi de null ifade ediyor. Dolayısıyla true olacaktır bu ve burası execute edilecek.
+
+279
+01:03:21,331 --> 01:03:38,451
+referansı olduğu için onun set car metodunu çağırıyorum. Yani car objesinden yine daha önce yaratmış olduğum person objesinin set car metodunu çağırdım. Çağırırken de car objesinin referansıyla çağırdım.
+
+280
+01:03:39,123 --> 01:03:53,383
+Şimdi car objesinin referansıyla çağırdığım zaman ne olacak? Person objesinin şu metodunu çağırdım. Person objesi bu car objesinin referansını gelip global member fieldına atayacak.
+
+281
+01:03:53,940 --> 01:04:03,780
+Global Member Field'ine atadıktan sonra artık ilk yaratmış olduğum person objesi de car objesini ne yapıyor? Tanıtıyor.
+
+282
+01:04:03,780 --> 01:04:17,320
+Dolayısıyla ben ne yapmış oluyorum? Bu parametrelere referansları pes ettiğim için bu referansları kullanaraktan her objek diğer objeğin metotlarını çağırabiliyor.
+
+283
+01:04:21,940 --> 01:04:29,240
+Bir object, diğer objenin içindeki variable'ı o objenin set metodunu kullanarak değiştirebiliyor.
+
+284
+01:04:32,916 --> 01:04:34,416
+Soruna yarınç verebildim mi?
+
+285
+01:04:36,496 --> 01:04:37,295
+Tamam.
+
+286
+01:04:38,387 --> 01:04:55,007
+Burada da hani ben ne yaptım hani kar objesi içerisinden person objesinin set kar metodunu çağırdım. Ne yaptı bu da? Kar objesinin referansını öğrenmiş oldu. Bunu global member firde atadı. Ondan sonra bu da dedi ki ya ben de bir kontrol edeyim.
+
+287
+01:05:06,387 --> 01:05:18,628
+Öncelikle biz car objesine bu person'ı objesinin referansını verdiğimiz için buradan dönen obje referansıyla şuradaki this aynı çıkacağı için burası false olacaktır.
+
+288
+01:05:18,887 --> 01:05:21,467
+Yani bunu execute etmesine gerek kalmayacaktır.
+
+289
+01:05:21,548 --> 01:05:30,947
+Çünkü zaten car objesi içerisine bu person objesini biz daha ilk constructor'ı çağırırken vermiştik.
+
+290
+01:05:30,947 --> 01:05:34,268
+Bakın şurada ilk daha constructor'ı çağırırken.
+
+291
+01:05:34,387 --> 01:05:46,907
+Bu person objesinin referansını vermiştik. Dolayısıyla daha ilk arabayı yarattığımda zaten car objesinin global member field'larında bu person objesini set etmiştim.
+
+292
+01:05:46,907 --> 01:06:01,887
+Şimdi bu şekilde yaptığım zaman artık bu aradaki hani bu şurada main metodu içerisinde setlerle, setter'larla birbirlerine bunları tanıtmama gerek kalmıyor. Bu yapmış olduğum eklemeyle.
+
+293
+01:06:08,211 --> 01:06:16,491
+Okay. Now, we talked about the two-way association and there is aggregation relationship.
+
+294
+01:06:17,091 --> 01:06:21,931
+Okay. Now, before I start aggregation relationship, so let's give a small break.
+
+295
+01:06:22,631 --> 01:06:27,871
+It's 10 to 3 o'clock right now. And I'll start at 3 o'clock and then we'll continue.
+
+296
+01:06:29,111 --> 01:06:32,351
+10 dakika ara verelim arkadaşlar. 3 de devam ediyoruz.
+
+297
+01:16:57,555 --> 01:17:04,915
+Okay, let's get started. Arkadaşlar, bir sesim geliyor mu diye teyid eder misiniz? Rica ediyorum.
+
+298
+01:17:06,115 --> 01:17:06,775
+Geliyor hocam.
+
+299
+01:17:06,775 --> 01:17:07,415
+Tamam.
+
+300
+01:17:09,716 --> 01:17:14,296
+Now, the next relationship between the object is aggregation.
+
+301
+01:17:15,315 --> 01:17:20,496
+Actually, aggregation is sort of association relationship.
+
+302
+01:17:20,775 --> 01:17:32,296
+All the aggregation and composition relationship, which I will talk next, they all are extended version of the association relationship.
+
+303
+01:17:33,056 --> 01:17:41,976
+Aggregation is a little bit stronger than association, but in essence, it is also an association relationship.
+
+304
+01:17:43,315 --> 01:18:04,056
+Take a look at this. There is an aggregation relationship. There is whole part relationship. So what does this mean? Let's take a look at the bus route and this bus stop example. Now, bus route, one bus route may have two or more bus stops. Okay.
+
+305
+01:18:04,979 --> 01:18:14,019
+It has to have two bus stops because if there is a route, there should be a starting point and there should be a stopping point, right?
+
+306
+01:18:14,019 --> 01:18:24,159
+So, therefore, one bus route consists of two or more bus stops, okay?
+
+307
+01:18:24,639 --> 01:18:30,399
+And the diamond, so in the representation, the diamond indicates one.
+
+308
+01:18:30,399 --> 01:18:32,399
+So, you could...
+
+309
+01:18:32,979 --> 01:18:36,699
+Either put diamond here, or you could just put one here.
+
+310
+01:18:37,019 --> 01:18:38,159
+They both are the same thing.
+
+311
+01:18:38,260 --> 01:18:41,479
+Sometimes you get to see both of them here as well.
+
+312
+01:18:41,479 --> 01:18:41,879
+Okay.
+
+313
+01:18:42,760 --> 01:18:53,359
+Now, so this implies that, so the bus route must have at least two and more bus stops.
+
+314
+01:18:53,879 --> 01:18:54,159
+Okay.
+
+315
+01:18:54,559 --> 01:18:56,760
+So this is the aggregation relationship.
+
+316
+01:18:58,963 --> 01:19:05,123
+And the composition relationship is also an extension version of association relationship.
+
+317
+01:19:05,463 --> 01:19:09,884
+And it is a little bit stronger than the aggregation.
+
+318
+01:19:09,884 --> 01:19:10,684
+Okay.
+
+319
+01:19:11,023 --> 01:19:13,023
+So you can consider this.
+
+320
+01:19:13,123 --> 01:19:15,703
+You can say the stronger whole part relationship.
+
+321
+01:19:16,043 --> 01:19:21,123
+Again, here, just consider the team and the team player example.
+
+322
+01:19:21,744 --> 01:19:26,224
+Now, one team may have zero or more team players.
+
+323
+01:19:26,684 --> 01:19:26,824
+Okay.
+
+324
+01:19:26,963 --> 01:19:33,603
+But the second object may only belong to the first one.
+
+325
+01:19:33,603 --> 01:19:38,603
+In the bus route example, in the bus route example, in the...
+
+326
+01:19:38,832 --> 01:19:46,292
+Aggregation example, one bus stop may belong to more than one bus route.
+
+327
+01:19:46,292 --> 01:19:52,231
+Okay, there may be other bus routes that this bus stop may belong to.
+
+328
+01:19:52,572 --> 01:19:56,132
+It may not necessarily have to belong to one bus route.
+
+329
+01:19:56,452 --> 01:19:59,992
+It may be within the other bus route.
+
+330
+01:20:00,000 --> 01:20:00,539
+As well.
+
+331
+01:20:01,039 --> 01:20:12,319
+But with the composition relationship, this object, the second object may, has to be, has to belong to the first object.
+
+332
+01:20:12,319 --> 01:20:15,199
+It cannot belong to other objects as well.
+
+333
+01:20:15,460 --> 01:20:15,539
+Okay.
+
+334
+01:20:16,039 --> 01:20:18,960
+One team player can only play in one team.
+
+335
+01:20:19,360 --> 01:20:24,720
+So therefore, so it is a little bit stronger than the aggregation relationship.
+
+336
+01:20:25,260 --> 01:20:27,979
+But in essence, the association.
+
+337
+01:20:28,000 --> 01:20:31,020
+They all are association relationship.
+
+338
+01:20:32,020 --> 01:20:37,340
+So you can see sort of an ownership relationship here as well.
+
+339
+01:20:37,780 --> 01:20:44,039
+Team players are owned by the team or you can say the similar thing.
+
+340
+01:20:44,699 --> 01:20:49,780
+The bus stops, all these bus stops are owned by this bus route.
+
+341
+01:20:49,920 --> 01:20:52,940
+So this bus route consists of all these bus stops.
+
+342
+01:20:52,940 --> 01:20:53,260
+Okay.
+
+343
+01:20:53,619 --> 01:20:55,880
+In essence, they are the association.
+
+344
+01:20:56,000 --> 01:21:04,960
+relationship, but in aggregation, you see a little bit stronger relationship because as you see, so there is the…
+
+345
+01:21:05,427 --> 01:21:09,327
+It requires that bus route at least has to have two bus stops.
+
+346
+01:21:09,987 --> 01:21:10,108
+Okay.
+
+347
+01:21:10,507 --> 01:21:18,708
+And in composition relationship, you see a little bit further, stronger association relationship
+
+348
+01:21:18,708 --> 01:21:27,087
+because the second object can only belong only the first object.
+
+349
+01:21:27,087 --> 01:21:31,028
+It may not belong to other team objects.
+
+350
+01:21:36,787 --> 01:22:04,547
+Okay. So implementation of association, aggregation, composition, they are all similar. Even though we are identified, we are differentiating these relationships based on their strength. Okay. So their implementation is almost similar. So we are using data structure, arrays, lists, stacks, queues.
+
+351
+01:22:04,787 --> 01:22:13,147
+Leaps, trees, you will see, you only have seen arrays after now, but there are other data structures that we are going to see in this course.
+
+352
+01:22:13,847 --> 01:22:20,967
+And so we are using these data structures in order to create these relationships.
+
+353
+01:22:20,967 --> 01:22:21,608
+Okay.
+
+354
+01:22:34,644 --> 01:22:40,344
+Now, let's take a look at an example, composition relationship.
+
+355
+01:22:41,244 --> 01:22:45,804
+Here, so the problem here is such as this.
+
+356
+01:22:46,164 --> 01:22:51,283
+Let's create a gallery class associated with multiple cars to be sold.
+
+357
+01:22:51,863 --> 01:22:56,504
+And we will reuse the car class, which we used in previous example.
+
+358
+01:22:57,304 --> 01:22:57,484
+Okay.
+
+359
+01:22:58,100 --> 01:23:05,200
+And here we will add a constructor having only the license plate as the parameter.
+
+360
+01:23:05,740 --> 01:23:09,740
+However, we opted for nothing, not doing this.
+
+361
+01:23:09,960 --> 01:23:15,120
+We can assign a gallery, an owner, a person instance as some kind of temporary owner.
+
+362
+01:23:15,120 --> 01:23:18,900
+So let's take a look at the car class.
+
+363
+01:23:19,600 --> 01:23:26,100
+So after this change, and also we are going to implement.
+
+364
+01:23:26,100 --> 01:23:32,360
+The gallery class as well. So let's take a look at the code so that you have a better understanding of what I'm talking about.
+
+365
+01:23:33,020 --> 01:23:35,500
+Okay. Here is the package. Okay.
+
+366
+01:23:36,948 --> 01:23:48,368
+Now, if I ask you this in the class, in the exam, if I ask you to write the UML class representation, this is what I want to see.
+
+367
+01:23:48,368 --> 01:23:53,347
+I want to see the package and within the package, I want to see the classes.
+
+368
+01:23:54,168 --> 01:24:03,847
+And in each class, I want to see the three segments of the class representation and also the relations between the objects.
+
+369
+01:24:04,507 --> 01:24:04,648
+Okay.
+
+370
+01:24:04,948 --> 01:24:07,328
+Now, here is the UML diagram.
+
+371
+01:24:07,888 --> 01:24:10,588
+So, the person class, you have seen it before.
+
+372
+01:24:10,768 --> 01:24:13,028
+The car class, you have seen it before.
+
+373
+01:24:13,528 --> 01:24:17,248
+And the gallery class, now, this is the new class that you are seeing.
+
+374
+01:24:17,728 --> 01:24:19,648
+Here, you see the name of the gallery.
+
+375
+01:24:20,748 --> 01:24:25,588
+And you see that a gallery may have zero or more cars.
+
+376
+01:24:25,588 --> 01:24:30,528
+And in order to identify this, here, I have the car array.
+
+377
+01:24:31,475 --> 01:24:40,935
+And I want to, I'm using a counter variable in order to keep track of how many cars that I have in the gallery.
+
+378
+01:24:41,575 --> 01:24:44,315
+And also I am, I have.
+
+379
+01:24:45,939 --> 01:24:52,739
+Person type variable in order to identify the owner of the gallery.
+
+380
+01:24:53,180 --> 01:24:53,299
+Okay.
+
+381
+01:24:53,659 --> 01:24:56,859
+Now, one gallery may have one owner.
+
+382
+01:24:57,059 --> 01:25:01,019
+That's why there is association relationship.
+
+383
+01:25:02,159 --> 01:25:07,420
+So as you see, one gallery owns one person and the quantities is one to one.
+
+384
+01:25:08,083 --> 01:25:13,003
+And here, one person may have only one car.
+
+385
+01:25:13,163 --> 01:25:18,384
+So therefore, there's one association direction here.
+
+386
+01:25:18,644 --> 01:25:21,863
+And the one car may have only one owner.
+
+387
+01:25:22,003 --> 01:25:26,304
+And you see the association relationship pointing to person.
+
+388
+01:25:26,304 --> 01:25:28,384
+So this is two-way associations.
+
+389
+01:25:29,083 --> 01:25:31,923
+And you see the quantities, one and one.
+
+390
+01:25:32,503 --> 01:25:36,083
+And basically, you can understand the quantities by looking at...
+
+391
+01:25:36,083 --> 01:25:45,863
+As you see, this person has only one car type member field.
+
+392
+01:25:46,343 --> 01:25:52,963
+And this car object has only one person type member field.
+
+393
+01:25:53,203 --> 01:25:53,283
+Okay.
+
+394
+01:25:53,644 --> 01:25:59,543
+By looking at this, you should understand that the quantities should be one.
+
+395
+01:26:00,063 --> 01:26:01,763
+And as for the gallery is the same.
+
+396
+01:26:01,763 --> 01:26:03,304
+As you see that gallery.
+
+397
+01:26:04,083 --> 01:26:32,083
+has only one owner. So therefore, one gallery has one owner. Okay. Now let's take a look at the relationship between the gallery class and the car class. You see that, so this is a composition relationship because gallery consists of cars. Okay. Gallery may have zero or more cars. So therefore, one gallery have zero or more cars. So remember how we represent.
+
+398
+01:26:32,083 --> 01:26:35,403
+We use SAR.
+
+399
+01:26:36,532 --> 01:27:01,791
+Okay. Now, and the fourth class is the main program, just like we have seen it in other examples. And in the main program, I have the main method. And in the main method, both gallery and the car classes are being mentioned. Therefore, there's a dependency relationships between the main program and the gallery and the car. Okay. Now, this is the UML diagram.
+
+400
+01:27:02,228 --> 01:27:19,228
+Okay. Now, in the exams, you may encounter, I can either give you the description of the problem, and I can say that, okay, starting from the description, write the UML diagram, and...
+
+401
+01:27:19,231 --> 01:27:26,932
+Arkadaşlar, let's say, let's pick a class, let's say, for the gallery class, write the Java code for the gallery class, okay?
+
+402
+01:27:27,672 --> 01:27:38,391
+I could, or I could give you the UML diagram, and I could say, okay, this is the UML diagram, I want you to write the gallery class, okay?
+
+403
+01:27:39,028 --> 01:27:47,328
+Sometimes, I can give you the UML diagram, but I may delete some of the information that is necessary there.
+
+404
+01:27:47,328 --> 01:27:51,927
+For example, as you see, there is getter and setter methods, right?
+
+405
+01:27:52,568 --> 01:28:03,808
+I could delete the getter and setter methods, and I could say that, okay, so this is the UML diagram, but there may be some information missing in the UML diagram.
+
+406
+01:28:04,176 --> 01:28:17,256
+Okay, so in that case, you should find out which information is missing and you should add those missing information into your UML diagram. I could also say that. Okay.
+
+407
+01:28:19,716 --> 01:28:23,195
+Now, let's take a look at the gallery class.
+
+408
+01:28:24,467 --> 01:28:30,087
+Now, in the gallery class, here is, let's take a look at the global member fields.
+
+409
+01:28:30,427 --> 01:28:34,547
+So, I have the gallery name where the type is string.
+
+410
+01:28:34,948 --> 01:28:36,087
+I have the cars.
+
+411
+01:28:36,307 --> 01:28:39,587
+Remember, one gallery may have zero or more cars.
+
+412
+01:28:40,427 --> 01:28:43,128
+Here, the type is car array, therefore.
+
+413
+01:28:43,807 --> 01:28:52,467
+And I have an integer variable, which I will use in order to keep track of the number of cars that is available.
+
+414
+01:28:52,467 --> 01:28:54,467
+Available in the gallery.
+
+415
+01:28:54,467 --> 01:29:01,467
+And I have a gallery owner variable where the type is person, which indicates the owner of the gallery.
+
+416
+01:29:01,467 --> 01:29:03,467
+Now, here is the constructor.
+
+417
+01:29:05,492 --> 01:29:18,971
+Constructor takes two parameters. One is the name of the gallery. When you create this gallery, you should give a name to this gallery, and you should also pass the object of the person who owns this gallery.
+
+418
+01:29:18,971 --> 01:29:32,512
+Okay. And so once you pass these two variables, okay, then so in the constructor, so you need to update the global member fields, the gallery owner and the gallery name.
+
+419
+01:29:33,492 --> 01:29:42,032
+And then we set the counter for tracking the number of cars to zero.
+
+420
+01:29:42,032 --> 01:29:42,652
+Okay.
+
+421
+01:29:43,211 --> 01:29:51,912
+And then we are creating an array where the size of the array 30 and then the type of the array car.
+
+422
+01:29:52,452 --> 01:29:59,971
+We are creating a car array and we are assigning the reference to this car array.
+
+423
+01:30:00,000 --> 01:30:04,800
+to this globally defined cars variable.
+
+424
+01:30:04,800 --> 01:30:18,600
+Okay, now the cars variable, globally defined cars variable are pointing to an array where the size is 30, but note that each cell of this car array
+
+425
+01:30:19,060 --> 01:30:39,500
+Is empty right now. Okay. There is no object in the cells of this car array. So there is, so this is an array which is responsible for holding the car objects. But at this point, we initialize the array, but inside the array cells, there is no object.
+
+426
+01:30:40,659 --> 01:30:44,659
+Okay, now there is a getter method for gallery name.
+
+427
+01:30:45,180 --> 01:30:47,799
+There is the setter method for gallery name.
+
+428
+01:30:47,799 --> 01:30:50,159
+And there is this introduce self method.
+
+429
+01:30:50,299 --> 01:30:59,399
+The introduce self method basically returns you a string which gives information about the gallery itself.
+
+430
+01:30:59,779 --> 01:31:00,920
+So let's move forward.
+
+431
+01:31:03,252 --> 01:31:08,352
+Now, so this is the addCar method of the gallery class.
+
+432
+01:31:09,212 --> 01:31:19,292
+Okay, now, so we are passing the car object when we call the addCar method of the gallery object.
+
+433
+01:31:19,292 --> 01:31:24,391
+We are passing the car object that we want to add into this gallery.
+
+434
+01:31:25,072 --> 01:31:29,012
+Okay, now here, we need to check two things.
+
+435
+01:31:29,427 --> 01:31:38,707
+One is we need to check whether or not this car is already available in the gallery.
+
+436
+01:31:39,907 --> 01:31:45,788
+Then we also need to check whether the available cars
+
+437
+01:31:46,355 --> 01:31:55,935
+In the gallery is less than the available, maximum available car length.
+
+438
+01:31:56,355 --> 01:31:56,495
+Okay.
+
+439
+01:31:56,735 --> 01:31:58,895
+So what is the maximum available car length?
+
+440
+01:31:58,956 --> 01:31:59,735
+Which is 30.
+
+441
+01:31:59,995 --> 01:32:00,296
+Okay.
+
+442
+01:32:00,415 --> 01:32:04,415
+Because we created the car array for the size 30.
+
+443
+01:32:04,415 --> 01:32:06,796
+So therefore the car count.
+
+444
+01:32:07,283 --> 01:32:10,384
+Existing car count has to be less than 30.
+
+445
+01:32:10,943 --> 01:32:11,063
+Okay.
+
+446
+01:32:11,804 --> 01:32:30,304
+Now, so we check this and if it is less than 30 and if this car is not available in the gallery, then what we are going to do, we are going to assign the reference to this car object to the corresponding
+
+447
+01:32:31,091 --> 01:32:47,271
+cell of the cars array. Okay? Now, so remember, we are keeping the car count in order to keep track of the size of the cars. Also, we are using this.
+
+448
+01:32:48,627 --> 01:32:55,127
+In order to identify the cell number in the array.
+
+449
+01:32:55,647 --> 01:32:55,688
+Okay.
+
+450
+01:32:56,228 --> 01:33:01,347
+And so let's say if there is a zero car, let's start from the beginning.
+
+451
+01:33:01,487 --> 01:33:03,788
+Let's say we just started the gallery.
+
+452
+01:33:03,948 --> 01:33:08,368
+There is a zero car and we want to add a car into this gallery.
+
+453
+01:33:08,368 --> 01:33:15,167
+So we are passing the object to this car and we are searching whether there is this car in the gallery.
+
+454
+01:33:15,587 --> 01:33:16,608
+The answer is no.
+
+455
+01:33:16,627 --> 01:33:19,228
+And the answer is no.
+
+456
+01:33:19,587 --> 01:33:26,228
+But as you see, there is a negation in front of this.
+
+457
+01:33:26,228 --> 01:33:29,907
+So therefore, if it is false, then it will make it true.
+
+458
+01:33:30,355 --> 01:33:38,136
+And then we are going to check whether the car count, since at the beginning the car count is zero, it will be less than 30.
+
+459
+01:33:38,536 --> 01:33:40,115
+So this also will be true.
+
+460
+01:33:40,115 --> 01:33:42,536
+So the whole if condition is true.
+
+461
+01:33:42,855 --> 01:33:45,576
+Then the car count is zero, right?
+
+462
+01:33:45,835 --> 01:33:53,695
+So therefore, we are going to assign the value of the newly created car.
+
+463
+01:33:55,072 --> 01:34:02,072
+To the first cell, which is cars zero, the first cell of the cars array.
+
+464
+01:34:02,612 --> 01:34:02,712
+Okay.
+
+465
+01:34:02,852 --> 01:34:16,992
+Now, at this point, the zero in the cell of the cars array, which is the first cell of the cars array, is pointing to this car object.
+
+466
+01:34:17,779 --> 01:34:23,299
+And then since we added a car into the cars array, we need to increment the car count.
+
+467
+01:34:23,712 --> 01:34:43,952
+Okay. Now the car count is one. And then we, since we are able to add this car, we are going to return true. Next time another car comes in, again, we are going to check if it is available in the gallery and if it is less than the maximum length.
+
+468
+01:34:45,172 --> 01:34:51,532
+If these conditions are true, then since in previously we added one.
+
+469
+01:34:51,712 --> 01:35:02,752
+Car and the car count was one, that this time the new one will be assigning to the cars array in this number one.
+
+470
+01:35:03,212 --> 01:35:09,492
+Okay. Since the car count is now one. And then we are going to increment the car count to two.
+
+471
+01:35:10,012 --> 01:35:17,932
+Okay. So this way, whenever we want to add another car, so we are able to add it by using the add car.
+
+472
+01:35:19,712 --> 01:35:29,032
+Pay attention. So we need whenever we want to do an adding operation, you need to check, you need to do this.
+
+473
+01:35:30,552 --> 01:35:41,072
+You need to do this check. OK. And if you don't do this check, basically, you will create a null pointer exception.
+
+474
+01:35:41,752 --> 01:35:47,192
+And in the exam, if you do not do this check, you will lose points, at least five points. OK.
+
+475
+01:35:48,180 --> 01:35:56,560
+So, therefore, whenever you want to do an add operation, you must, there is no exception, you must do this check.
+
+476
+01:35:56,560 --> 01:36:01,800
+The first check is that you need to check whether that object is available in the gallery.
+
+477
+01:36:02,260 --> 01:36:10,960
+The second one is that whether it is less than the maximum allowed array length.
+
+478
+01:36:11,739 --> 01:36:11,880
+Okay.
+
+479
+01:36:17,332 --> 01:36:21,672
+Now, the search car method of the gallery class.
+
+480
+01:36:22,152 --> 01:36:25,872
+Now, let's take a look at the implementation of the search car method.
+
+481
+01:36:26,612 --> 01:36:30,592
+Here, I am passing the car object to the search car method.
+
+482
+01:36:31,032 --> 01:36:33,811
+And you see that here, for each method.
+
+483
+01:36:34,239 --> 01:37:02,100
+Now, for you have, so we talked about different four methods. One was a classical for loop. So this one, for example, classical for loop, and this one is the for each loop. Okay. Now, what this for loop is doing is that, as you see, this is a cars array. It's going to take starting from the, in this number zero, it will take each object from the cars array, and it will assign to this.
+
+484
+01:37:02,239 --> 01:37:04,940
+A local temporary variable.
+
+485
+01:37:04,940 --> 01:37:05,420
+Okay.
+
+486
+01:37:06,180 --> 01:37:11,639
+And then in the, within the method body of the for loop, it will execute the method body.
+
+487
+01:37:12,039 --> 01:37:26,799
+It will check whether the first, the car object in the first cell of the cars array is the same thing as the, the car object which is being passed to this search method.
+
+488
+01:37:27,604 --> 01:37:35,104
+If it is the same thing, then we will return true, meaning that the car is available in the gallery.
+
+489
+01:37:35,604 --> 01:37:41,404
+If not, we will return false, which means that that car is not available in the gallery.
+
+490
+01:37:41,404 --> 01:37:42,084
+Okay.
+
+491
+01:37:42,996 --> 01:37:50,695
+Now, so this is searching for a car by using the reference to a car object.
+
+492
+01:37:50,695 --> 01:37:56,476
+I can also search for a car by using the plate number of a car object.
+
+493
+01:37:56,796 --> 01:37:56,916
+Okay.
+
+494
+01:37:57,115 --> 01:38:00,695
+Now, in this particular case, I am searching with the plate number.
+
+495
+01:38:01,675 --> 01:38:02,556
+So in that case.
+
+496
+01:38:02,931 --> 01:38:25,811
+So pay attention. Now I have a for loop. And in this for loop, the starting statement is this one. So I am starting with the e equal to zero. And starting from the zero all the way to the car count, which is the available number of cars. And after each iteration, I am increasing the value of i.
+
+497
+01:38:27,380 --> 01:38:35,579
+And here, what I do is that I'm getting the, I'm starting from the cell number zero.
+
+498
+01:38:35,579 --> 01:38:41,819
+I am getting the reference of that object that is available in that cell, ArrayCell.
+
+499
+01:38:42,180 --> 01:38:46,079
+And then I am calling the getPlate method of that object.
+
+500
+01:38:46,899 --> 01:38:47,500
+Okay.
+
+501
+01:38:47,860 --> 01:38:49,940
+And this will give me the string value.
+
+502
+01:38:50,384 --> 01:38:56,203
+And then I am going to, I am calling to compare two methods of the string class.
+
+503
+01:38:56,344 --> 01:39:00,224
+Remember the string class, I have shown you different methods of the string class.
+
+504
+01:39:00,224 --> 01:39:02,703
+One of them was compare two method.
+
+505
+01:39:03,384 --> 01:39:09,183
+And I'm comparing with the string plate variable.
+
+506
+01:39:10,043 --> 01:39:10,144
+Okay.
+
+507
+01:39:10,443 --> 01:39:13,263
+If they both are the same, then.
+
+508
+01:39:14,323 --> 01:39:23,203
+So this means that, so this car's plate number is equal to the plate number which is being passed here.
+
+509
+01:39:23,203 --> 01:39:32,123
+In that case, this car is available in the gallery and I will return the reference of that car as a return.
+
+510
+01:39:33,103 --> 01:39:33,224
+Okay.
+
+511
+01:39:33,623 --> 01:39:36,163
+Otherwise, I will return a null value.
+
+512
+01:39:36,543 --> 01:39:41,103
+So which means that that car is not available in the array.
+
+513
+01:39:41,844 --> 01:39:59,984
+Now, pay attention. Here I have two same name methods in the same class. We talked about this. We can have the same name methods in the same class as long as their signature is different. What was the signature? The return value.
+
+514
+01:40:00,000 --> 01:40:06,340
+And the arguments that are being passed all together indicates the signature.
+
+515
+01:40:06,680 --> 01:40:10,719
+As you can see, the signature of this method is different than signature method.
+
+516
+01:40:10,719 --> 01:40:20,279
+So therefore, we are allowed to have two different signatures with the same name in the same class.
+
+517
+01:40:20,639 --> 01:40:22,319
+And this is called overloading.
+
+518
+01:40:23,020 --> 01:40:23,600
+Okay.
+
+519
+01:40:27,412 --> 01:40:34,032
+And now let's take a look at the remove car method of the gallery class.
+
+520
+01:40:34,652 --> 01:40:40,172
+Now in this particular case, I want to remove this car by using the plate number.
+
+521
+01:40:40,979 --> 01:40:46,500
+And again, I'm doing a for loop starting from the zero all the way to the car count.
+
+522
+01:40:46,939 --> 01:40:55,519
+I am going through the car array, getting each car object reference that is available in the car array.
+
+523
+01:40:55,519 --> 01:41:00,579
+From those, I'm getting the plate number of those car objects.
+
+524
+01:41:01,079 --> 01:41:04,699
+I am comparing that with the plate number that I'm passing here.
+
+525
+01:41:05,140 --> 01:41:16,579
+Now, if it is equal to the plate number, and in that case, I know that that car that I'm searching is available in the gallery.
+
+526
+01:41:16,579 --> 01:41:27,200
+So in that case, what I do is that I am taking the reference of that cars array and I am assigning to a temporary variable here.
+
+527
+01:41:27,979 --> 01:41:28,120
+Okay.
+
+528
+01:41:28,600 --> 01:41:29,520
+And then.
+
+529
+01:41:30,739 --> 01:41:45,899
+What I do is that from the location that I want to remove this car, because this is remove car method, what I do that I am moving the next.
+
+530
+01:41:46,319 --> 01:41:52,520
+Indices, okay, one in this back by having these for loop here.
+
+531
+01:41:52,520 --> 01:42:09,639
+Okay, this for loop allows me to move the values in the following indices, one in this back because I am removing one car object from the array somewhere in the middle.
+
+532
+01:42:09,899 --> 01:42:10,000
+Okay.
+
+533
+01:42:10,520 --> 01:42:14,219
+And after that, I assign.
+
+534
+01:42:14,319 --> 01:42:14,667
+Arkadaşlar, class, object, constructor, inheritance, polymorphism,
+
+535
+01:42:15,475 --> 01:42:28,235
+The last indus which used to point to a car object and I'm assigning a null value to that indus.
+
+536
+01:42:28,235 --> 01:42:36,515
+And lastly, I am decrementing the car count which indicates the total number of cars.
+
+537
+01:42:37,395 --> 01:42:43,235
+And finally, after I remove the car from the gallery, I am returning the...
+
+538
+01:42:43,475 --> 01:42:44,935
+Reference to that car.
+
+539
+01:42:45,796 --> 01:42:46,115
+Okay.
+
+540
+01:42:47,539 --> 01:43:02,340
+And similarly, I have a sell car method. In the sell car method, so it takes two parameters, the plate number to the car and the reference to the owner of the car.
+
+541
+01:43:02,399 --> 01:43:08,360
+So what I do is that here, if you want to sell a car first, you need to remove it from the gallery, right?
+
+542
+01:43:08,819 --> 01:43:14,559
+So here in the sell car method, I am calling the remove car method by passing the plate number.
+
+543
+01:43:15,539 --> 01:43:24,039
+This, what it will do, we just talked about, it will remove the car and it will return the value of the car that it has just removed.
+
+544
+01:43:24,659 --> 01:43:24,920
+Okay.
+
+545
+01:43:25,119 --> 01:43:27,139
+And this is the reference to the sold car.
+
+546
+01:43:28,680 --> 01:43:34,579
+This is the reference to the car object that we just removed from the cars array.
+
+547
+01:43:35,219 --> 01:43:40,380
+And we are assigning the reference of that object to the sold car variable.
+
+548
+01:43:41,268 --> 01:43:45,708
+And after that, so we are checking whether it is different than null.
+
+549
+01:43:46,028 --> 01:43:56,048
+If it is different than null, then we are going to set the sold car owner with the new owner, okay?
+
+550
+01:43:56,048 --> 01:43:59,028
+And we are going to return the value as true.
+
+551
+01:43:59,908 --> 01:44:05,648
+Otherwise, so we are going to return the false value, okay?
+
+552
+01:44:06,163 --> 01:44:27,563
+So one thing that you need to pay attention, as I write the sell car method, I use the remove car method, okay? I did not do all these things within the sell car method, okay? Now, if I ask you one method in the exam,
+
+553
+01:44:28,051 --> 01:44:34,152
+And if you should check whether that method can use other methods of the same class.
+
+554
+01:44:34,591 --> 01:44:40,751
+If it can use other methods of the same class, so in that case, you should use it.
+
+555
+01:44:40,751 --> 01:44:41,311
+Okay.
+
+556
+01:44:41,471 --> 01:44:43,032
+Because that's what I expect.
+
+557
+01:44:43,171 --> 01:44:51,171
+I don't want you to write the method body of other methods in another method again.
+
+558
+01:44:51,431 --> 01:44:51,652
+Okay.
+
+559
+01:44:51,671 --> 01:44:55,891
+We want to do this for reusability property.
+
+560
+01:44:56,631 --> 01:44:56,912
+Okay.
+
+561
+01:45:01,011 --> 01:45:09,011
+Okay, now finally, the main program. Now, in the main program, you see that I have a main method.
+
+562
+01:45:10,271 --> 01:45:17,671
+Now, in the main method, so first I'm creating a gallery. In the gallery,
+
+563
+01:45:18,228 --> 01:45:28,167
+So I am giving a name to this gallery and I'm also creating an object and I'm passing the reference of that object to this gallery.
+
+564
+01:45:28,167 --> 01:45:28,847
+Okay.
+
+565
+01:45:29,652 --> 01:45:50,391
+As you see, right where I am calling the constructor, here I am creating the object to this person and I am passing the reference to this object to the gallery constructor as the second argument.
+
+566
+01:45:51,604 --> 01:46:03,144
+And then I am creating a car object. As you see, when I create the car object, the second parameter is null because at this point the car does not have any owner.
+
+567
+01:46:03,963 --> 01:46:10,484
+Array, I am creating another car object. At this point the car does not have any owner. That's why the value is null.
+
+568
+01:46:10,996 --> 01:46:15,416
+Here, I have two references that's pointing to these two cars.
+
+569
+01:46:16,135 --> 01:46:16,235
+Okay.
+
+570
+01:46:16,895 --> 01:46:25,675
+Now, then, here, I am calling the add car method of the gallery by passing the first car.
+
+571
+01:46:26,296 --> 01:46:32,675
+Now, this adding operation will be succeeded because there is no...
+
+572
+01:46:33,939 --> 01:46:36,979
+Car that is available in the gallery.
+
+573
+01:46:37,600 --> 01:46:37,720
+Okay.
+
+574
+01:46:38,319 --> 01:46:43,960
+And then what I will do, I will call the search car method.
+
+575
+01:46:44,800 --> 01:46:44,979
+Okay.
+
+576
+01:46:46,960 --> 01:46:51,560
+Since this will be true, the else statement will not be executed.
+
+577
+01:46:52,212 --> 01:46:59,892
+Okay, now the next if statement, now you see that I am calling the search car method with BMW.
+
+578
+01:47:00,472 --> 01:47:06,292
+BMW is pointing to this object and I just add it into my gallery.
+
+579
+01:47:06,292 --> 01:47:10,532
+So therefore, when I call the search car method, it will return true.
+
+580
+01:47:10,692 --> 01:47:12,052
+So this will be true.
+
+581
+01:47:12,692 --> 01:47:17,972
+And then it will write search is successful, then the else statement will not be executed.
+
+582
+01:47:18,792 --> 01:47:20,212
+And then I will...
+
+583
+01:47:20,212 --> 01:47:23,112
+I will call the remove car method.
+
+584
+01:47:24,052 --> 01:47:33,052
+But pay attention when I call the remove car method, I am calling with the Audi's license plate number, which I did not.
+
+585
+01:47:33,652 --> 01:47:54,851
+added into the gallery. So, Audi up to now is not added into the gallery, but I am trying to call the remote car method with the Audi's plate number. Okay. So, this will return null value. Okay. This will return null value because the Audi is not there.
+
+586
+01:47:56,595 --> 01:48:04,315
+So therefore, it will return null value because it could not remove it.
+
+587
+01:48:04,715 --> 01:48:09,595
+And the null value is not equal to the Audi object reference.
+
+588
+01:48:09,956 --> 01:48:13,055
+So therefore, this if statement will be false.
+
+589
+01:48:13,855 --> 01:48:17,416
+In that case, the as statement will be executed.
+
+590
+01:48:17,655 --> 01:48:22,275
+So it will write remove operation failed, which we should expect.
+
+591
+01:48:22,671 --> 01:48:40,692
+Okay. And then the next statement is the if statement. Here we are searching for Audi. Since Audi is not inserted into the gallery, this will return false and false equal to false will be true.
+
+592
+01:48:41,072 --> 01:48:46,791
+In that case, so it will say that the last operation has correctly failed.
+
+593
+01:48:46,952 --> 01:48:49,551
+The last operation was the remove operation.
+
+594
+01:48:49,551 --> 01:48:53,171
+It will say the last operation correctly failed.
+
+595
+01:48:53,871 --> 01:48:53,992
+Okay.
+
+596
+01:48:55,791 --> 01:49:00,671
+Now you can find all of that here in the codes.
+
+597
+01:49:01,811 --> 01:49:10,731
+You can find all of this and you can run it and you can experiment with it so you can...
+
+598
+01:49:14,515 --> 01:49:16,836
+Ok, so let's run this one.
+
+599
+01:49:22,935 --> 01:49:23,895
+Close others.
+
+600
+01:49:35,731 --> 01:49:37,412
+So I should have run this one.
+
+601
+01:49:37,932 --> 01:49:38,352
+Okay.
+
+602
+01:49:42,963 --> 01:49:59,164
+Okay. Now, so you can see all the things that I have just said. You can experiment it by yourself. And you can also go through the methods of the gallery class. Okay. One by one.
+
+603
+01:50:00,000 --> 01:50:06,039
+And you can also experiment with the car and the person class on your own.
+
+604
+01:50:06,039 --> 01:50:28,000
+Okay. Now, I'm going to stop right now. So, inheritance relationship and also the interface relationship, I will cover them in the last lecture before the midterm exam, which is not next week, the week that falls.
+
+605
+01:50:28,000 --> 01:50:52,960
+Okay. In two weeks time, we will have a lecture. So in that lecture, I will talk about the inheritance relationship and also the interfaces before the final exam. The final exam is again in the, which will be in the eighth week of the semester. So if you have any questions, so next week we won't have any classes.
+
+606
+01:50:53,747 --> 01:51:00,987
+And if you have any questions, you can always ask me via sending emails.
+
+607
+01:51:00,987 --> 01:51:01,527
+Okay.
+
+608
+01:51:06,387 --> 01:51:14,688
+Nope. The midterm is the 8th week, which is so this day.
+
+609
+01:51:16,908 --> 01:51:24,708
+Okay. Usually they don't change the date. So let me make sure. Okay.
+
+610
+01:51:34,484 --> 01:51:38,844
+So next week, Wednesday, April the 5th.
+
+611
+01:51:41,884 --> 01:51:47,404
+The following week, April the 12th, we will have a lecture.
+
+612
+01:51:48,524 --> 01:51:53,963
+And the week that follows, April 19th, that's the week when we will have exam.
+
+613
+01:51:55,324 --> 01:51:55,584
+Okay.
+
+614
+01:51:58,144 --> 01:51:59,884
+So any further questions?
+
+615
+01:52:01,427 --> 01:52:05,368
+Okay, so right now we are at the inheritance relationship.
+
+616
+01:52:06,368 --> 01:52:06,847
+Okay.
+
+617
+01:52:07,359 --> 01:52:12,039
+I did not cover the inheritance and abstract classes and interfaces.
+
+618
+01:52:12,359 --> 01:52:17,199
+I will cover it in two weeks' time.
+
+619
+01:52:17,459 --> 01:52:19,519
+Next week, we won't have any lectures.
+
+620
+01:52:19,739 --> 01:52:21,359
+The week that follows, we will have lectures.
+
+621
+01:52:21,859 --> 01:52:27,439
+Make sure to attend that lecture because that is the last lecture before the exam.
+
+622
+01:52:28,139 --> 01:52:32,899
+So you don't want to miss that lecture because I may talk about the midterm exam.
+
+623
+01:52:36,115 --> 01:52:42,095
+That I don't know whether or not the exams are online. So I will also talk about it on that week.
+
+624
+01:52:44,815 --> 01:52:58,615
+So one of the students asked me about the exams. So we don't know yet whether it's going to be online or physical exam.
+
+625
+01:53:00,020 --> 01:53:07,320
+Okay, I'm going to stop now. Thanks for attending. So, I'll see you in two weeks' time.
+
+626
+01:53:15,380 --> 01:53:18,559
+Kolay gelsin arkadaşlar. İyi dersler dilerim. Görüşmek üzere.

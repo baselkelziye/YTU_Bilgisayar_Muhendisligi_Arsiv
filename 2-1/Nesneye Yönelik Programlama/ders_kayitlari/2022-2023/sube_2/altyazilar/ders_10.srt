@@ -1,0 +1,2343 @@
+1
+00:00:08,083 --> 00:00:08,724
+Evet.
+
+2
+00:00:10,724 --> 00:00:12,663
+Yaklaşımla başlıyorum.
+
+3
+00:00:34,036 --> 00:00:35,176
+Arkadaşlar.
+
+4
+00:00:44,179 --> 00:00:46,179
+Şimdi bu ziyaretçiliğiniz için.
+
+5
+00:01:13,299 --> 00:01:15,159
+Bu noktada kalmış. Peki.
+
+6
+00:01:16,039 --> 00:01:20,759
+Yönetimiz, örneği, bir diziyle oranlığın farklılıkları vurgulayacağız.
+
+7
+00:01:20,759 --> 00:01:25,179
+Bir de ünit teslimi yapacağız.
+
+8
+00:01:26,179 --> 00:01:27,500
+Tamam. Peki.
+
+9
+00:01:27,859 --> 00:01:30,299
+Bu hatıbuki birazcık daha bekleyelim bakalım.
+
+10
+00:01:30,640 --> 00:01:32,719
+Belki inşallah katılımcı sayımız arka.
+
+11
+00:01:33,459 --> 00:01:34,379
+Bu bağlamda.
+
+12
+00:01:35,819 --> 00:01:36,680
+Şunu geçelim.
+
+13
+00:01:41,268 --> 00:01:44,287
+Bu yıl hayliot işim ya. Amma.
+
+14
+00:01:44,987 --> 00:01:46,128
+Ekbudu yaptım ya.
+
+15
+00:01:53,203 --> 00:01:54,203
+Evet.
+
+16
+00:01:54,203 --> 00:02:00,107
+Onda, oda makada, bekleyin birkaç dakika sonra başlıyoruz.
+
+17
+00:11:59,155 --> 00:12:00,915
+Ok, a few more minutes.
+
+18
+00:12:01,615 --> 00:12:03,235
+Pass that and we can begin.
+
+19
+00:12:12,115 --> 00:12:21,816
+Let me find out the epitube. I am forgetting that, sorry. I forgot that.
+
+20
+00:12:32,500 --> 00:12:43,500
+Okay. Last week, we had talked about general classes and one of their implementation, general computer disks.
+
+21
+00:12:44,500 --> 00:12:57,500
+We had carried out an example of this following design with a one-to-minute association between cores and the spirit objects.
+
+22
+00:12:58,868 --> 00:13:14,068
+Now, let's compare that example we have already coded with an example of the same implementation, but this time with using a regular array.
+
+23
+00:13:20,211 --> 00:13:27,572
+NYP 9x, or maybe 10x, let's see, let's clear this out.
+
+24
+00:13:29,451 --> 00:13:31,812
+It's 10x, it should be.
+
+25
+00:13:33,792 --> 00:13:39,632
+That one is from the previous version of my election month.
+
+26
+00:13:40,111 --> 00:13:44,591
+It means that I have forgotten to collect that one, and now let's collect this.
+
+27
+00:13:48,916 --> 00:13:58,416
+Eclipse, at which one was this other normal code, which is A, relation A.
+
+28
+00:14:00,916 --> 00:14:09,115
+Here is 10A with linked lists, as you can see here.
+
+29
+00:14:09,916 --> 00:14:14,016
+This is an ArrayList of students in the course class.
+
+30
+00:14:16,244 --> 00:14:21,844
+This is a regular old-fashioned student array of students.
+
+31
+00:14:21,844 --> 00:14:27,644
+Now let's see what changes between those two.
+
+32
+00:14:27,644 --> 00:14:41,443
+If we can want to compare two classes, we can click them while pressing the control key and then right-click on one of them and we click compare with each other.
+
+33
+00:14:43,988 --> 00:14:47,688
+Let me magnify that.
+
+34
+00:14:49,567 --> 00:14:59,688
+The left one is the ArrayList implementation and the right one is the ArrayList implementation.
+
+35
+00:15:00,608 --> 00:15:02,688
+The different parts are highlighted.
+
+36
+00:15:03,288 --> 00:15:03,848
+I'm sorry.
+
+37
+00:15:04,968 --> 00:15:06,567
+Different parts are highlighted.
+
+38
+00:15:07,668 --> 00:15:25,847
+Maybe more so than I want because, for example, in line 5 on the left and line 4 on the right, there is actually one more number, one additional number.
+
+39
+00:15:26,303 --> 00:15:37,183
+We have the student count number. Why? Because when working with regular arrays, you need to keep a track where to add the last element.
+
+40
+00:15:38,463 --> 00:15:50,923
+But when using lists or maps for that fashion, you don't need such a pointer, such an index reference.
+
+41
+00:15:52,211 --> 00:15:58,051
+This is completely, this soon comes, completely gone in the ArrayList version.
+
+42
+00:16:02,580 --> 00:16:10,180
+Of course, initialization of the ArrayList and the regular ArrayList is of course different.
+
+43
+00:16:10,180 --> 00:16:14,460
+There is no need to delve deeper on that.
+
+44
+00:16:14,460 --> 00:16:21,620
+But here on the left, this getStudentCount is actually a little bit different.
+
+45
+00:16:21,620 --> 00:16:28,819
+In the ArrayList version, we just delegate this task to the ArrayList object.
+
+46
+00:16:29,203 --> 00:16:41,303
+But in the regular array version, we return the value of that extra counters we keep.
+
+47
+00:16:44,303 --> 00:16:48,483
+Adding the student is much more easy.
+
+48
+00:16:48,879 --> 00:16:58,720
+in the list version, because the actual addition is done with only one statement, line 22 on the left.
+
+49
+00:16:59,340 --> 00:17:11,200
+However, in order to add an element to an array, we do a little bit more work in lines 17 and 18 of the code right-hand side.
+
+50
+00:17:15,316 --> 00:17:20,576
+Let's check the find student method.
+
+51
+00:17:21,135 --> 00:17:24,916
+Those two are about sequential search.
+
+52
+00:17:26,036 --> 00:17:31,416
+There is no particular advantage on any of them.
+
+53
+00:17:32,796 --> 00:17:39,155
+But let's check what we need to do in order to increase the capacity of a class.
+
+54
+00:17:39,763 --> 00:18:01,183
+Well, it's very hard to do so when using regular arrays because after the first consistency check of line 32 and 33 on the left and 28 and 29 on the right, checking whether the new capacity should be greater than the old capacity, otherwise we just return back.
+
+55
+00:18:01,748 --> 00:18:13,608
+In this version, we just assign the new capacity because that capacity number here is not the actual capacity of the data structure.
+
+56
+00:18:13,608 --> 00:18:20,508
+It is the logical capacity of that class according to business logic.
+
+57
+00:18:20,968 --> 00:18:21,508
+But however,
+
+58
+00:18:22,675 --> 00:18:32,076
+When using regular arrays, the business logic and data structure becomes one of the inseparable things.
+
+59
+00:18:32,076 --> 00:18:36,395
+So that we need to do much more work.
+
+60
+00:18:39,395 --> 00:18:42,395
+In order to arrange an array, we need to...
+
+61
+00:18:43,519 --> 00:19:10,900
+Declare a larger array, copy the entire elements of the previous array to this new large array, then change the array references. This is a lot of work. However, there is nothing we need to do to actually enlarge the data structure when we are using a list. So that's very easy when using linked lists or other data structures.
+
+62
+00:19:11,731 --> 00:19:23,471
+And when listing the entire class, entire students in a class, we can safely use the for each loop.
+
+63
+00:19:23,471 --> 00:19:37,932
+However, if we want to use the for each loop in the regular array implementation, we also should change whether every element is null or not.
+
+64
+00:19:38,324 --> 00:19:48,324
+Because the actual, you know, that there is a difference between actual capacity and the number of elements in the list.
+
+65
+00:19:48,324 --> 00:19:59,004
+So if you want to use a Fourier loop in regular arrays, we always should always check for null equivalence.
+
+66
+00:20:00,000 --> 00:20:09,900
+We can use the regular forage loop like the one here and count up to the element count, not the entire length of the array.
+
+67
+00:20:09,900 --> 00:20:26,539
+I wonder why Java does not make a, how can I say, improvement on that topic ending where the element becomes null and not continue with the rest, but
+
+68
+00:20:26,864 --> 00:20:30,204
+That behavior can also be needed in some cases.
+
+69
+00:20:30,423 --> 00:20:34,864
+So I guess we are not altering this for this reason.
+
+70
+00:20:35,124 --> 00:20:37,663
+But this is a thing we must be aware of.
+
+71
+00:20:38,564 --> 00:20:39,304
+That's it.
+
+72
+00:20:41,724 --> 00:20:47,624
+Those are differences about using data structure and the rigorous array.
+
+73
+00:20:49,556 --> 00:20:57,816
+Of course, there are no performance advantages, memory management advantages, etc.
+
+74
+00:20:57,816 --> 00:21:02,376
+When using data structures such as list maps, etc.
+
+75
+00:21:02,776 --> 00:21:07,036
+But now, I only focus on ease of coding.
+
+76
+00:21:08,916 --> 00:21:12,135
+And when we think about ease of coding,
+
+77
+00:21:13,940 --> 00:21:19,660
+Data-structural implementations have their additional advantages as well.
+
+78
+00:21:20,580 --> 00:21:24,059
+So, I guess we are clear with that.
+
+79
+00:21:24,500 --> 00:21:27,220
+Please ask any questions that you may have.
+
+80
+00:21:31,763 --> 00:21:36,763
+And other than that, what we need to do is...
+
+81
+00:21:43,700 --> 00:21:44,980
+Ok, some testing.
+
+82
+00:21:46,980 --> 00:21:52,599
+When using, while using JUnit.
+
+83
+00:21:57,076 --> 00:22:02,655
+Ok. Arkadaşlar, bir bir okuyayım. Bakın ne de zaten şeydir.
+
+84
+00:22:03,496 --> 00:22:09,756
+Likes geliyor. Meraklı, sil, et ve kot. Tamam. Ok.
+
+85
+00:22:19,284 --> 00:22:24,284
+Let's build the JNN testing in that scenario.
+
+86
+00:22:25,284 --> 00:22:31,284
+And when I read the actual code, let me look at them again.
+
+87
+00:22:31,284 --> 00:22:37,284
+TAL-A automated test evaluation. Okay. TAL-A automated test evaluation.
+
+88
+00:22:37,284 --> 00:22:38,284
+Use that. Okay.
+
+89
+00:22:42,284 --> 00:22:45,284
+Let me collect those characters.
+
+90
+00:22:53,556 --> 00:22:55,036
+I am sorry.
+
+91
+00:22:57,956 --> 00:22:58,355
+Okay.
+
+92
+00:23:05,875 --> 00:23:12,375
+Okay, now this one is compatible with JUnit 4.
+
+93
+00:23:13,175 --> 00:23:16,135
+And why have this 4s changed?
+
+94
+00:23:16,275 --> 00:23:22,235
+I don't actually change anything, but okay, let's save this one.
+
+95
+00:23:23,135 --> 00:23:24,895
+And we can close this comparison.
+
+96
+00:23:25,475 --> 00:23:30,235
+And let's focus on testing JUnit.
+
+97
+00:23:32,660 --> 00:23:41,451
+In order to use the annotations required by the sharing framework, we have to...
+
+98
+00:23:41,460 --> 00:23:48,500
+We use that import static statement for abstractions.
+
+99
+00:23:48,500 --> 00:23:55,579
+This is a must. Maybe this is the detail that I forgot in the previous week.
+
+100
+00:23:55,579 --> 00:24:03,860
+And then we have to, of course, import the pictures in the JUnit package.
+
+101
+00:24:06,132 --> 00:24:21,012
+You can see that our class name does not need to begin with test keyword, but it contains a test word anyway in order to tell its reason better.
+
+102
+00:24:22,451 --> 00:24:28,072
+We have a course and we have some student objects here.
+
+103
+00:24:28,627 --> 00:24:39,067
+Remember the setup method. It doesn't need to be named setup, but in that case, we use FB for annotation, before that method.
+
+104
+00:24:42,067 --> 00:24:43,067
+One...
+
+105
+00:24:47,380 --> 00:24:57,140
+According to this setup method, we have to obey this method signature that throws an exception.
+
+106
+00:24:57,140 --> 00:25:07,540
+Actually, we don't throw any exception in calls. There is no exception here and the student.
+
+107
+00:25:07,540 --> 00:25:12,420
+However, this is a requirement of...
+
+108
+00:25:12,627 --> 00:25:23,107
+The J-init framework, the setup method, needs to have this signature because it's defined on the class.
+
+109
+00:25:23,107 --> 00:25:30,228
+Actually, we don't need to need inheritance, but this signature is a must requirement.
+
+110
+00:25:30,771 --> 00:25:43,731
+I initialized the course and student objects in the setup method. Remember that this method is repeated the course before every test method.
+
+111
+00:25:44,307 --> 00:25:50,947
+I actually have an additional method here, populate course method.
+
+112
+00:25:51,607 --> 00:25:57,307
+In some tests, I need to have an empty course.
+
+113
+00:25:57,628 --> 00:26:02,087
+And some other tests, I need a course with students.
+
+114
+00:26:02,788 --> 00:26:07,688
+However, although I have those two different needs,
+
+115
+00:26:08,084 --> 00:26:12,463
+The setup method can be coded in only one way.
+
+116
+00:26:16,463 --> 00:26:35,163
+Sometimes, when I want to work with a course which students already wrote in that course, I use the popular course method, as you will see in some other tests.
+
+117
+00:26:37,172 --> 00:26:39,172
+And now test cases begin.
+
+118
+00:26:39,751 --> 00:26:42,291
+The first method with the test annotation.
+
+119
+00:26:43,532 --> 00:26:48,152
+Well, the method name begins with test word, but it is not necessary.
+
+120
+00:26:48,672 --> 00:26:54,991
+I repeat again, I remind again, because we have the test annotation here.
+
+121
+00:26:54,991 --> 00:26:58,231
+And remember the casing, this is case sensitive.
+
+122
+00:26:58,751 --> 00:27:00,771
+Those annotations are case sensitive.
+
+123
+00:27:06,483 --> 00:27:15,303
+Our first test is to add the student in an empty course. It should be successful.
+
+124
+00:27:15,859 --> 00:27:31,239
+So, the result of adding a student, Yasha, to the OOP class should be successful. That method should return 2. Therefore, I am using the assert rule statement of the JN framework.
+
+125
+00:27:31,239 --> 00:27:39,239
+If this operation is successful, then this test passes. Otherwise, it will fail. Let's compare it with the...
+
+126
+00:27:41,299 --> 00:27:43,400
+Manual test evaluation here.
+
+127
+00:27:45,420 --> 00:27:47,220
+I created the course.
+
+128
+00:27:47,720 --> 00:27:49,299
+I created the first student.
+
+129
+00:27:49,539 --> 00:27:54,880
+And if the first student to the class is unsuccessful, then I have a problem.
+
+130
+00:27:55,159 --> 00:27:56,740
+Otherwise, I don't have a problem.
+
+131
+00:27:57,360 --> 00:28:05,639
+In manual testing, I tend to report failures and do nothing if it is successful.
+
+132
+00:28:06,163 --> 00:28:14,384
+But in unit testing, we usually think about the passing case.
+
+133
+00:28:15,084 --> 00:28:20,724
+And if that doesn't pass, Yönelik automatically reports to us that it has failed.
+
+134
+00:28:21,483 --> 00:28:24,764
+This is the way of thinking that we need to use.
+
+135
+00:28:28,403 --> 00:28:28,903
+Okay.
+
+136
+00:28:31,684 --> 00:28:32,804
+Machine merak ediyorum.
+
+137
+00:28:32,884 --> 00:28:34,023
+Ekran parashim tamam.
+
+138
+00:28:35,764 --> 00:28:36,423
+Gele dönelim.
+
+139
+00:28:37,284 --> 00:28:37,503
+Okay.
+
+140
+00:28:39,344 --> 00:28:46,184
+Let's test that we shouldn't be able to test add the same student twice.
+
+141
+00:28:46,184 --> 00:28:53,064
+So my second unit test is named test adding same student twice.
+
+142
+00:28:53,728 --> 00:28:55,728
+This shouldn't be successful.
+
+143
+00:29:02,355 --> 00:29:03,627
+Um...
+
+144
+00:29:07,604 --> 00:29:07,943
+Ok.
+
+145
+00:29:12,276 --> 00:29:13,388
+Arkadaşlar, class, object,
+
+146
+00:29:16,596 --> 00:29:30,996
+Şimdi madem, özellikle ben Türkçe dönmek zorunda düşünürken, örneğin düşünce, madem setup metodu bu şeyleri, her sesinde tekrar çalışıyordu.
+
+147
+00:29:30,996 --> 00:29:36,195
+Setupta her seferinde bu post ilklenecek ondan sonracıma.
+
+148
+00:29:36,531 --> 00:30:00,000
+Ahaha, tamam, pardon. I'm sorry. The first statement in that unit test, line 33, edits the student. I know that it should be successful because I have called the previous test case and I am checking for it to success. If that one fails, my other test may also be successful.
+
+149
+00:30:00,000 --> 00:30:03,680
+I don't care about them at that moment.
+
+150
+00:30:03,680 --> 00:30:12,599
+If I see my first test fails, then I will collect it and then check for the other tests.
+
+151
+00:30:12,599 --> 00:30:15,559
+Therefore, the line 33 should pass.
+
+152
+00:30:15,920 --> 00:30:38,799
+Then I am trying to add the same student again to that course and the result of that operation should return false. Therefore, I am using it as a false method. This result should be false. In that case, this test will pass. Otherwise, this test will fail.
+
+153
+00:30:43,188 --> 00:31:08,128
+And on my next test, it is named test adding student when capacity is full. I shouldn't be able to do this. So in that test case, I am calling the populate core method. This will work because, well, actually,
+
+154
+00:31:08,756 --> 00:31:20,596
+Before this test runs, the setup method will automatically run and it will create the course and the students.
+
+155
+00:31:21,476 --> 00:31:31,076
+However, I have some additional test cases when I need an already populated class.
+
+156
+00:31:31,076 --> 00:31:34,396
+Therefore, for example, this next one.
+
+157
+00:31:34,771 --> 00:31:41,271
+I want to be able to search and find enrolled students.
+
+158
+00:31:41,731 --> 00:31:47,911
+Therefore, in that case, I will again need an already populated class.
+
+159
+00:31:47,911 --> 00:31:52,051
+I don't want to repeat my code in multiple test cases.
+
+160
+00:31:52,471 --> 00:31:56,911
+Therefore, I have recorded a particular method for that.
+
+161
+00:32:00,788 --> 00:32:08,168
+This one, this will lead to multiple runs of both statements.
+
+162
+00:32:10,668 --> 00:32:15,468
+But I need to do it.
+
+163
+00:32:16,248 --> 00:32:16,868
+Okay.
+
+164
+00:32:17,388 --> 00:32:24,348
+Because before adding students, I need to have a course initialized.
+
+165
+00:32:28,019 --> 00:32:31,079
+And students enrolled.
+
+166
+00:32:31,079 --> 00:32:46,639
+Therefore, this setup method will be run twice, actually, when I cop the proplate course in any unit test.
+
+167
+00:32:46,639 --> 00:32:52,639
+But this is the trade-off that I am willing to make for...
+
+168
+00:32:53,268 --> 00:32:56,488
+Being able to use an automated test tool.
+
+169
+00:32:57,348 --> 00:33:06,928
+The advantages of test automation overweights this small extra code code.
+
+170
+00:33:08,308 --> 00:33:11,748
+So I'm happy with that.
+
+171
+00:33:18,963 --> 00:33:19,344
+Okay.
+
+172
+00:33:21,023 --> 00:33:30,543
+In that test case, I populate the course and I'm trying to add a new student to the course.
+
+173
+00:33:31,503 --> 00:33:39,344
+It should fail because of capacity reasons, not because of student duplication, because...
+
+174
+00:33:40,084 --> 00:33:44,503
+First of all, in that setup method, I don't add any students to the course.
+
+175
+00:33:45,003 --> 00:33:51,063
+And second, in that populate course, I do not add units to that course.
+
+176
+00:33:51,543 --> 00:33:59,543
+Therefore, when the capacity is free, then I shouldn't be able to add this fourth student here.
+
+177
+00:34:00,084 --> 00:34:12,043
+Although that student wants to take that lecture, the capacity is full, so we shouldn't be able to add that student.
+
+178
+00:34:12,043 --> 00:34:24,203
+Therefore, this add student method should return false, and if the return is false, then abstract false will declare that this unit test is accessible.
+
+179
+00:34:26,324 --> 00:34:27,123
+Okay.
+
+180
+00:34:27,668 --> 00:34:37,467
+My next test case is to test whether I can find the enrolled students in that course.
+
+181
+00:34:37,467 --> 00:34:40,608
+So I again call the populated course method.
+
+182
+00:34:41,627 --> 00:34:46,248
+And in here I actually call two assert statements.
+
+183
+00:34:47,268 --> 00:34:54,887
+I usually prefer using one assert per test case.
+
+184
+00:34:55,507 --> 00:34:59,487
+However, you can do other life if you wish.
+
+185
+00:35:03,795 --> 00:35:11,055
+If I wish, I could divide this test, this one test into two tests.
+
+186
+00:35:11,055 --> 00:35:18,155
+First being, let me do it here in Notepad, for example.
+
+187
+00:35:23,764 --> 00:35:24,604
+Çalışmadım mı?
+
+188
+00:35:25,043 --> 00:35:25,764
+Oh, last getirdi.
+
+189
+00:35:26,064 --> 00:35:26,203
+Okay.
+
+190
+00:35:27,003 --> 00:35:31,884
+I can write this test into two tests.
+
+191
+00:35:33,244 --> 00:35:36,104
+Like this first one will be this.
+
+192
+00:35:38,244 --> 00:35:46,963
+Test finding students with ID, student numbers.
+
+193
+00:35:47,963 --> 00:35:50,684
+And in this version,
+
+194
+00:35:52,628 --> 00:36:06,268
+The search with direct ID, because I'm directly writing the ID here manually with hand.
+
+195
+00:36:06,268 --> 00:36:17,387
+And in here, with get ID, with get method.
+
+196
+00:36:19,027 --> 00:36:27,727
+And in that case, I am using the number obtained from the object.
+
+197
+00:36:29,087 --> 00:36:31,687
+Maybe one will pass and one may fail.
+
+198
+00:36:31,687 --> 00:36:32,047
+Maybe.
+
+199
+00:36:33,427 --> 00:36:35,027
+Therefore, it's.
+
+200
+00:36:36,467 --> 00:36:48,927
+I think better to divide those two tests, but as they are very similar to each other, maybe you can opt for merging those two to one test.
+
+201
+00:36:50,907 --> 00:36:58,047
+And finally, I am testing increasing capacity and then I should be able to add.
+
+202
+00:36:58,387 --> 00:37:17,667
+So, I populate the course, I increase the capacity by one from three to four, and now I should be able to add the new student, so the return should be true, and therefore I have used the assert true statement here.
+
+203
+00:37:20,127 --> 00:37:25,547
+This ordering is in parallel with my manual test evaluation.
+
+204
+00:37:26,324 --> 00:37:37,284
+The only problem I repeat in using this automated test evaluation, when I need the course to be already populated,
+
+205
+00:37:38,503 --> 00:37:50,284
+either I should populate the course in the setup method, but then I need to make tests in an empty.
+
+206
+00:37:50,751 --> 00:37:59,731
+Class, then maybe I can remove them in those test methods, but I'd rather not do four.
+
+207
+00:38:01,891 --> 00:38:12,372
+Because it is different when you do something and turn a stretch and when you check for before anything else in a fresh start.
+
+208
+00:38:12,800 --> 00:38:19,039
+Therefore, this is the solution that we can come up with.
+
+209
+00:38:19,039 --> 00:38:38,039
+If we need some additional reparations before some test cases, I can put those additional tasks before.
+
+210
+00:38:38,675 --> 00:38:45,115
+Before the test cases, I can call the setup method twice in that case.
+
+211
+00:38:48,851 --> 00:39:16,311
+Böyle yapmam lazım mı aslında? Aslında böyle yapmam da lazım değil biliyor musunuz? Bunun çalıştığını deneyelim de ondan sonra bu setup'ı kaldırıp da sadece Populate Course'u çalıştırırsam aslında doğru yani Populate Course'ın içerisinde setup'ı niye özellikle çalıştırmaya ihtiyacı duyuyor ki? Bunları sadece test kezlerinin içerisinde yapıyorsam yani o gibi setup'ı tekrar eklerimin çok da bir anlamı yok gibi şimdi geldi bana. Neyse deneyelim görelim.
+
+212
+00:39:21,139 --> 00:39:23,759
+Let's run the automated test evaluation.
+
+213
+00:39:25,659 --> 00:39:29,579
+And I can see the run-as-veal unit test option here.
+
+214
+00:39:31,219 --> 00:39:33,139
+When I run it, everything is okay.
+
+215
+00:39:34,420 --> 00:39:37,299
+All five tests are successful.
+
+216
+00:39:38,339 --> 00:39:46,899
+And keep in mind that although there are two assert statements in the test-finding student's case,
+
+217
+00:39:47,635 --> 00:39:50,135
+Test finding to this one.
+
+218
+00:39:51,395 --> 00:39:59,095
+Those two only count as one test case, as test finding student case.
+
+219
+00:39:59,755 --> 00:39:59,895
+Okay.
+
+220
+00:40:02,395 --> 00:40:03,695
+What else?
+
+221
+00:40:07,695 --> 00:40:09,715
+Let's connect this line now.
+
+222
+00:40:12,436 --> 00:40:23,916
+And she read those test cases beginning with the public course or method call, passes or fail, pass or fail.
+
+223
+00:40:30,643 --> 00:40:31,843
+Ok, and I pass.
+
+224
+00:40:33,443 --> 00:40:33,963
+Ok.
+
+225
+00:40:35,063 --> 00:40:37,463
+I don't need this one at all.
+
+226
+00:40:43,380 --> 00:40:46,860
+And let me collect my notes here.
+
+227
+00:40:52,851 --> 00:40:55,172
+Test is completely anlisys.
+
+228
+00:40:59,315 --> 00:41:00,315
+Let's see.
+
+229
+00:41:01,315 --> 00:41:06,855
+First, you know, some of you may need few extra courses, first two cases with Yasha.
+
+230
+00:41:07,215 --> 00:41:08,975
+Now let's check for donors.
+
+231
+00:41:09,715 --> 00:41:13,935
+This is not related with the populated course I'm set up thing.
+
+232
+00:41:14,175 --> 00:41:14,996
+This is another thing.
+
+233
+00:41:15,095 --> 00:41:18,496
+Let me find out and remember what it was.
+
+234
+00:41:20,596 --> 00:41:27,475
+This is a relatively new addition to the code, so I'm not too memorized.
+
+235
+00:41:27,475 --> 00:41:29,975
+Let's see.
+
+236
+00:41:31,096 --> 00:41:31,895
+Here, bakalım.
+
+237
+00:41:32,615 --> 00:41:37,435
+Yaşa demişiz, tanınmışız, eklemişiz, ondan sonra.
+
+238
+00:41:38,516 --> 00:42:06,516
+Oh, yeah. Okay. That's not a very big deal. In the manual test evaluation, I create the course, I create the student, I test this first one here, first add operations, it should be successful. And then the second operation, adding operation, should not be successful. In here, I only edit Yasha two times here, first in the first test and...
+
+239
+00:42:06,516 --> 00:42:23,307
+Bu, bu
+
+240
+00:42:23,572 --> 00:42:26,492
+ve yeni bir kursa ve yeni bir kursa
+
+241
+00:42:26,492 --> 00:42:28,251
+ve yeni bir kursa.
+
+242
+00:42:28,251 --> 00:42:31,452
+Bu, bu testi bir kursa
+
+243
+00:42:31,452 --> 00:42:34,452
+ve Yashar'ı ekledi.
+
+244
+00:42:34,452 --> 00:42:36,652
+Bu, bu kursa ilk kursa,
+
+245
+00:42:36,652 --> 00:42:39,572
+ilk kursa, Yashar'ı ekledi.
+
+246
+00:42:39,572 --> 00:42:41,452
+Ve bu kursa ilk kursa
+
+247
+00:42:41,452 --> 00:42:45,291
+ve ilk kursa ekledi.
+
+248
+00:42:45,291 --> 00:42:51,452
+Bu, bu kursa bir kursa ekledi.
+
+249
+00:42:51,572 --> 00:42:55,112
+So, put the same object to the same data structure.
+
+250
+00:42:55,112 --> 00:42:59,172
+And this is a very fast operation.
+
+251
+00:42:59,172 --> 00:43:03,172
+There are not any penalties for that.
+
+252
+00:43:03,172 --> 00:43:03,672
+Okay.
+
+253
+00:43:03,672 --> 00:43:14,172
+So, this disadvantage is not a big deal.
+
+254
+00:43:14,172 --> 00:43:18,372
+It's only a negligible problem.
+
+255
+00:43:20,532 --> 00:43:33,211
+But if I wish, I could merge those two tests into one.
+
+256
+00:43:34,891 --> 00:43:38,891
+How could I do it? Like this. Let's copy them.
+
+257
+00:43:40,492 --> 00:43:44,231
+And paste that here again.
+
+258
+00:43:44,851 --> 00:43:46,292
+Instead of those two.
+
+259
+00:43:46,675 --> 00:44:08,675
+I can have a test case such as test adding first student, test adding students once and...
+
+260
+00:44:09,780 --> 00:44:10,480
+Twice.
+
+261
+00:44:11,320 --> 00:44:14,500
+The first line should pass and the second one should fail.
+
+262
+00:44:15,380 --> 00:44:21,880
+So, and I can have those lines.
+
+263
+00:44:27,155 --> 00:44:28,315
+Like this, okay?
+
+264
+00:44:30,795 --> 00:44:31,555
+Okay.
+
+265
+00:44:32,536 --> 00:44:40,876
+Instead of those two, I can have just one unit test, but with two assert classes.
+
+266
+00:44:40,876 --> 00:44:43,876
+If that operation...
+
+267
+00:44:45,235 --> 00:44:46,935
+It takes up a long time.
+
+268
+00:44:46,935 --> 00:44:56,635
+Let's consider such a scenario that this method called is a method called from a different server in a different network, for example.
+
+269
+00:44:56,635 --> 00:45:02,536
+This will take a long time, so I don't want this one to be executed twice.
+
+270
+00:45:02,536 --> 00:45:09,536
+Then I should optimize for runtime performance by using this.
+
+271
+00:45:10,003 --> 00:45:18,283
+But while sacrificing the fine granularity of or fine scale of testing.
+
+272
+00:45:19,643 --> 00:45:24,603
+So that should also run. Let's try.
+
+273
+00:45:25,663 --> 00:45:27,643
+Söylemesi kolay bir de deneyelim bakalım.
+
+274
+00:45:31,155 --> 00:45:34,556
+Contra-J, Contra-J, Contra-J, version 2.
+
+275
+00:45:35,235 --> 00:45:35,516
+Okay.
+
+276
+00:45:36,956 --> 00:45:51,976
+Now, in this one, instead of finding students here, let's divide one test into two.
+
+277
+00:45:51,976 --> 00:45:53,536
+Copy here.
+
+278
+00:46:01,043 --> 00:46:23,264
+Neydi? Ha, şuydu değil mi? İki assert, tek assert, tamam, biri şu. Control V. Tamam. Ötekisi de neydi? İkisini bir tane yapıyorduk. Control C. Test adding first students and the next one.
+
+279
+00:46:24,563 --> 00:46:33,063
+into only one test case with two assorts. Everything should pass two in that case.
+
+280
+00:46:36,851 --> 00:46:38,851
+Ok, everything passes, no problems.
+
+281
+00:46:45,588 --> 00:46:47,228
+All right. What else?
+
+282
+00:46:49,568 --> 00:46:50,748
+Any questions?
+
+283
+00:46:55,123 --> 00:46:56,623
+Okay, I guess not.
+
+284
+00:47:00,211 --> 00:47:01,452
+Yani UMLN continue.
+
+285
+00:47:04,391 --> 00:47:05,711
+Ne varmış bakalım.
+
+286
+00:47:11,476 --> 00:47:12,976
+Ok, next class.
+
+287
+00:47:20,371 --> 00:47:24,851
+Maybe we can have a break before studying maps.
+
+288
+00:47:26,652 --> 00:47:27,851
+10 minutes of break.
+
+289
+00:47:28,771 --> 00:47:34,531
+So, that's it.
+
+290
+00:47:35,391 --> 00:47:36,771
+On the TV, on the TV.
+
+291
+00:47:37,131 --> 00:47:38,692
+Okay, that's our time.
+
+292
+00:47:39,051 --> 00:47:40,711
+Actually, 12 minutes break.
+
+293
+00:47:41,371 --> 00:47:42,031
+See you soon.
+
+294
+00:47:43,192 --> 00:47:44,471
+Hocam, bir şey sorabilir miyim?
+
+295
+00:47:45,331 --> 00:47:46,231
+Tabii ki buyurun.
+
+296
+00:47:46,708 --> 00:47:51,387
+Proje ödeviyle ilgili bir şey açıklamış mıydınız geçen hafta?
+
+297
+00:47:52,908 --> 00:47:54,288
+Yok, ekstra bir şey açıklamadım.
+
+298
+00:47:55,167 --> 00:48:00,828
+Evet, tamam. Bir de lablarla ilgili bir şey var mıydı? Ben geçen haftaki dersi izleyememiştim da.
+
+299
+00:48:01,235 --> 00:48:09,815
+Şöyle, şimdi proje evini açıklayacağız. Proje eviniyle ilgili biz bugün sabah aramızda ilk başlattık.
+
+300
+00:48:09,815 --> 00:48:15,535
+Önümüzdeki haftaki derse kadar size proje konusu açıklayacağız.
+
+301
+00:48:15,875 --> 00:48:20,655
+Çünkü zaman da azalıyor, bu kalan zamanda yapabileceğiniz bir proje hazırlayacağız size.
+
+302
+00:48:21,595 --> 00:48:25,575
+Önümüzdeki haftaya alacaksınız açıklamasını ve konusunu inşallah.
+
+303
+00:48:26,135 --> 00:48:29,235
+Laboratuarlarda ise laboratuvar çalışmalarımız başlıyor.
+
+304
+00:48:29,235 --> 00:48:49,095
+Ondan sonra acaba bu yüzden o dersi hesaplarınıza gelecek mailleri, bizden size gelecek duyuruları lütfen takip ediniz. Ondan sonra acaba ona göre çalışmalarımız başlıyor. Yakında başlıyor. Onu söyleyeyim.
+
+305
+00:48:49,455 --> 00:48:50,575
+Anladım hocam. Sağ olun.
+
+306
+00:48:52,255 --> 00:48:55,884
+Ben de şey diyeyim. Peki. Önümüzdeki...
+
+307
+00:48:55,956 --> 00:48:57,796
+Ders saatinde görüşmek üzere.
+
+308
+01:02:05,715 --> 01:02:10,755
+Evet arkadaşlar, ara süremizi de iki dakika geçirdim. Özür dilerim.
+
+309
+01:02:12,019 --> 01:02:36,799
+Başlayalım. Bir de arada başka bir haber geldi. Maalesef'in bir aksak olduğu, elimde olmayan sebepten ötürü bu son dersimiz olacak. İki saat yapacağız dersimizi. Zaman içinde yeterli olacağını sanıyorum ama olup da konulardan eksik kalırsak zaten ayrı bir tedavi uçamı ayarlarız. Merak etmeyin.
+
+310
+01:02:40,019 --> 01:02:46,019
+Bugün için son olacak ders saatimizde bu map yapısını yaparız.
+
+311
+01:02:46,559 --> 01:02:47,739
+Review'unu da yaparız.
+
+312
+01:02:48,239 --> 01:02:52,879
+Fact Casting'e de yetebiliriz herhalde ama yetmiyor.
+
+313
+01:02:53,139 --> 01:02:53,899
+Neyse bakacağız.
+
+314
+01:02:54,079 --> 01:02:55,299
+Şimdi çok da şey etmeyin bakalım.
+
+315
+01:02:55,960 --> 01:02:57,059
+Şunu kesin yapacağız.
+
+316
+01:02:57,059 --> 01:02:58,299
+Okey.
+
+317
+01:03:02,003 --> 01:03:10,623
+Now we will continue with our second generic data structure, being a map data structure.
+
+318
+01:03:12,403 --> 01:03:20,623
+A map data structure enables us to query some objects according to their identifiers.
+
+319
+01:03:23,092 --> 01:03:32,592
+That map data structure lets us to easily and directly reach an existing element according to its unique identifier.
+
+320
+01:03:32,592 --> 01:03:35,592
+That data structure is...
+
+321
+01:03:39,476 --> 01:03:53,215
+How can I say? It's very much faster to access an element by supplying its key, which means its unique identifier in that case.
+
+322
+01:03:53,396 --> 01:04:03,775
+When we were working with lists in order to find an element, we should begin from the beginning, head of the headlock of the list.
+
+323
+01:04:07,092 --> 01:04:15,032
+Follow the next pointers until we find that element or until we reach the end of the list.
+
+324
+01:04:15,632 --> 01:04:21,791
+In map data structures, we can have almost direct access.
+
+325
+01:04:21,791 --> 01:04:28,771
+If you remember the implementation of those map structures, we have some bucket sizes, etc.
+
+326
+01:04:30,612 --> 01:04:41,132
+It's not very much direct access, but it's kind of similar to the binary search in all the...
+
+327
+01:04:42,452 --> 01:04:45,092
+list or LA.
+
+328
+01:04:45,732 --> 01:04:46,852
+So it's very fast.
+
+329
+01:04:47,432 --> 01:04:50,292
+It's all log n complexity.
+
+330
+01:04:50,472 --> 01:04:51,812
+So it's very, very fast.
+
+331
+01:04:52,632 --> 01:04:59,412
+This is the Java implementation, generic implementation of that data structure.
+
+332
+01:04:59,972 --> 01:05:01,092
+We have the...
+
+333
+01:05:01,396 --> 01:05:03,016
+Map data structure.
+
+334
+01:05:03,636 --> 01:05:12,696
+In its shorthand notation in the UMLN diagrams, k stands for key, v stands for value.
+
+335
+01:05:13,976 --> 01:05:22,976
+So in the JavaJetel package, we have the map, generic map interface of type k and v.
+
+336
+01:05:23,776 --> 01:05:26,916
+Again, k is for key and v is for value.
+
+337
+01:05:29,139 --> 01:05:33,000
+What are the methods of that interface?
+
+338
+01:05:33,639 --> 01:05:36,639
+First one is the get method.
+
+339
+01:05:36,639 --> 01:05:49,180
+You supply a key to that method and it returns the value giving that key as it's identified.
+
+340
+01:05:50,039 --> 01:05:52,760
+The type of the key can be anything.
+
+341
+01:05:53,199 --> 01:06:04,879
+Because it's for type object, but actually we should use that actual type key type instead of a generic object pointer.
+
+342
+01:06:05,879 --> 01:06:09,559
+This is for some backwards compatibility, I think.
+
+343
+01:06:10,519 --> 01:06:18,319
+But the type of the returns value is always V, whatever type we define, declare here.
+
+344
+01:06:19,380 --> 01:06:45,300
+And the put method. The put method accepts two parameters. First one is the key of that element. And the second one is that element itself. I suggest to have that key by using the vector method of its primary unique identifier of that ve object. We will demonstrate it soon.
+
+345
+01:06:47,507 --> 01:06:50,267
+What does this method return aspect?
+
+346
+01:06:50,267 --> 01:07:05,207
+If there is already an object registered with that key will be removed and the actual new object will be put in that table.
+
+347
+01:07:05,583 --> 01:07:14,023
+However, this method gives you a second chance for dealing with the previously existing element here.
+
+348
+01:07:14,563 --> 01:07:18,123
+You can do whatever with it, this return object.
+
+349
+01:07:18,603 --> 01:07:22,843
+This was the object which was previously registered with that key.
+
+350
+01:07:23,843 --> 01:07:26,683
+Now this one is removed from the table.
+
+351
+01:07:27,088 --> 01:07:38,427
+The object given object parameter is now desired in the table, but this returned previous value can be used for whatever you wish.
+
+352
+01:07:39,284 --> 01:07:47,543
+But however, if you use the unique identifiers as keys, then this should not happen.
+
+353
+01:07:47,543 --> 01:07:54,943
+This returned element should be always known if you always use the identifiers as keys.
+
+354
+01:07:55,483 --> 01:08:00,583
+Or otherwise, there should be a problem with the uniqueness of that identifier.
+
+355
+01:08:02,704 --> 01:08:04,324
+And the remove method.
+
+356
+01:08:05,204 --> 01:08:08,064
+Droom method accepts a key.
+
+357
+01:08:08,692 --> 01:08:23,551
+Then if there is an element with that key, having that key, having that identifier, it would be removed from the table and return back from the method code.
+
+358
+01:08:24,231 --> 01:08:34,391
+You can do again whatever you wish. You can discard it or you can put that to another list or map, for example, whatever you wish.
+
+359
+01:08:36,851 --> 01:08:50,111
+The values method returns us a collection of, or you can think about a list of every element actually residing in that data structure.
+
+360
+01:08:50,971 --> 01:09:02,691
+Therefore, you can use a for each loop in order to visit every recorded element in that map structure.
+
+361
+01:09:03,648 --> 01:09:22,408
+Arkadaşlar, there is no such thing in list because every element will be in order in a list, but in table, if you remember, it's under behind the curtains representation.
+
+362
+01:09:22,408 --> 01:09:28,408
+Arkadaşlar, we need an...
+
+363
+01:09:28,532 --> 01:09:37,931
+Experience iterator, which will guide the element of that data structure.
+
+364
+01:09:38,351 --> 01:09:42,532
+So this method, this values method is how we obtain that.
+
+365
+01:09:43,832 --> 01:09:46,032
+The isempty method returns true.
+
+366
+01:09:46,351 --> 01:09:50,131
+If that data structure is empty, otherwise it will return false.
+
+367
+01:09:50,707 --> 01:09:58,227
+The size method will return the number of elements currently residing in that table.
+
+368
+01:09:59,948 --> 01:10:07,347
+The contents key value takes a key parameter and if there is any value,
+
+369
+01:10:07,728 --> 01:10:17,648
+Having that key recorded with that key, then this method will return true, otherwise it will return false.
+
+370
+01:10:18,188 --> 01:10:24,268
+And there's a method of containing certain element already exists in that table or not.
+
+371
+01:10:24,268 --> 01:10:35,528
+We give the object as a parameter to the contains value method, and it returns true if that element already exists in the table, false, otherwise.
+
+372
+01:10:35,728 --> 01:10:44,667
+For example, we want to check whether a particular student exists enrolled in a class.
+
+373
+01:10:45,208 --> 01:10:54,407
+Instead of trying to get it and check for the return being not now, we can use contains value method.
+
+374
+01:10:54,988 --> 01:10:59,368
+This will be much more straightforward and fast.
+
+375
+01:11:02,387 --> 01:11:15,948
+The abstract map interface and the hash table kv interface, implementer interface, and the hash map class extends the abstract map class.
+
+376
+01:11:17,307 --> 01:11:22,368
+In this course, we will use the hash map type and hash table type.
+
+377
+01:11:22,368 --> 01:11:26,547
+Notice that p is a small case.
+
+378
+01:11:26,975 --> 01:11:30,095
+Not uppercase, it's lowercase.
+
+379
+01:11:32,216 --> 01:11:35,895
+But the M in the hashmap is uppercase.
+
+380
+01:11:37,195 --> 01:11:47,475
+The hash table type is an older type in Java editions, but hashmap is relatively newer than this.
+
+381
+01:11:48,216 --> 01:11:52,011
+The old one does not...
+
+382
+01:11:52,148 --> 01:12:03,308
+Obey with the camel casing, hash table, but in the new version, map is taught as a second word, therefore it's capitalized, okay?
+
+383
+01:12:03,808 --> 01:12:12,048
+Hash map with M capital case, this one is thread unsafe, and hash table with small case T, this is thread safe.
+
+384
+01:12:12,548 --> 01:12:14,568
+We will cover this in multi-trading.
+
+385
+01:12:15,748 --> 01:12:20,148
+When you are quoting a multi-traded application, it in order to...
+
+386
+01:12:20,148 --> 01:12:41,148
+In order to keep data consistency, you use the hash table type. Otherwise, you can use the hash map type. Hash table is thread safe, but also operations done with hash table is a little bit slower because safe, safeness comes with a small performance overhead.
+
+387
+01:12:41,148 --> 01:12:43,148
+Okay.
+
+388
+01:12:44,564 --> 01:12:52,664
+I guess this is simpler than the multiple different list type in Java library.
+
+389
+01:12:52,664 --> 01:13:01,244
+We have in that case only two net types, hash and hash table, one thread safe and one thread unsafe.
+
+390
+01:13:02,084 --> 01:13:04,024
+And please remember that.
+
+391
+01:13:04,404 --> 01:13:11,864
+Additional element insertion and retrieval methods names are different.
+
+392
+01:13:11,864 --> 01:13:25,904
+In lists, we have get and set or add and we don't have a direct search method.
+
+393
+01:13:26,547 --> 01:13:32,827
+However, in maps, we have the get and put methods.
+
+394
+01:13:34,327 --> 01:13:36,587
+Please do not confuse them.
+
+395
+01:13:49,011 --> 01:13:56,211
+Okay, I have defined everything from the UML diagram, I guess, but let's check if I forgot something.
+
+396
+01:13:57,252 --> 01:14:04,692
+Get returns the value. Put, okay, let's specify the list, specify the key in this map, okay.
+
+397
+01:14:06,371 --> 01:14:13,891
+All right, if there are all these already an object registered with the pay key, it will be returned back.
+
+398
+01:14:14,399 --> 01:14:16,399
+Delete and return back.
+
+399
+01:14:16,399 --> 01:14:18,899
+And the new one will be in the table now.
+
+400
+01:14:18,899 --> 01:14:24,399
+And you can do whatever you wish with that return to this object.
+
+401
+01:14:24,399 --> 01:14:27,899
+OK, collection you can use for this.
+
+402
+01:14:30,036 --> 01:14:52,595
+OK, now let's change our course example by using the HashMap data structure. Instead of a list, now we will be using a map. The different parts are highlighted and they will also be the parts related to it, map data structure, of course.
+
+403
+01:14:53,043 --> 01:14:57,763
+Now we have a hashmap of string, student.
+
+404
+01:14:58,463 --> 01:15:02,923
+The key is, should be the student ID.
+
+405
+01:15:03,384 --> 01:15:05,623
+And this is of type string, remember.
+
+406
+01:15:06,123 --> 01:15:11,923
+And the elements that will be stored in the data structure are student projects.
+
+407
+01:15:12,443 --> 01:15:16,123
+Therefore, our type is hashmap string and student.
+
+408
+01:15:19,283 --> 01:15:21,583
+The rest are the same.
+
+409
+01:15:22,144 --> 01:15:25,564
+In constructor, we initialize that map data structure.
+
+410
+01:15:26,023 --> 01:15:27,884
+We don't supply any capacity.
+
+411
+01:15:28,703 --> 01:15:34,404
+The capacity member field and the parameter is only for business logic.
+
+412
+01:15:34,963 --> 01:15:38,763
+Again, similar to the list example.
+
+413
+01:15:42,144 --> 01:15:57,924
+GetStudentCount method is the same as the list version because again over the term student size, the size method are common in lists and maps.
+
+414
+01:15:59,104 --> 01:16:01,244
+But in certain element is different.
+
+415
+01:16:01,963 --> 01:16:08,024
+When we try to add the student, first we do our regular consistency checks.
+
+416
+01:16:08,532 --> 01:16:14,572
+If there is nothing wrong, then I can put that student, enroll that student into that course.
+
+417
+01:16:15,471 --> 01:16:21,112
+When adding that student object to the map, I am using the put method.
+
+418
+01:16:21,920 --> 01:16:33,940
+As for its key, I get, I directly get, use the getter method, getnumber method, in order to obtain its key in other terms, unique identify.
+
+419
+01:16:34,520 --> 01:16:38,800
+And then, in a second parameter, I give the object itself.
+
+420
+01:16:40,319 --> 01:16:41,340
+And that's all.
+
+421
+01:16:44,564 --> 01:16:52,224
+Ok, how can we search a student? This is much more easier and faster when using class.
+
+422
+01:16:52,819 --> 01:17:04,260
+I directly delegate forward that information to the GET method of the data structure and it will return, find and return that student.
+
+423
+01:17:04,260 --> 01:17:13,840
+Of course, if a student with that number isn't enrolled into the class, this method will return me now with you.
+
+424
+01:17:14,939 --> 01:17:17,659
+Increased capacity method is the same.
+
+425
+01:17:18,323 --> 01:17:22,323
+No difference with that because it's related to business logic.
+
+426
+01:17:22,323 --> 01:17:24,323
+It is not related with data structure.
+
+427
+01:17:24,323 --> 01:17:27,323
+It's related with business logic.
+
+428
+01:17:27,323 --> 01:17:33,323
+Although the data structure changes, this method doesn't change.
+
+429
+01:17:33,323 --> 01:17:40,323
+And when we look at the show class list method, for each loop,
+
+430
+01:17:40,532 --> 01:18:03,471
+Çeşitli, because, again, I define a temporary student object here, but now at the right-hand side of the products, I have students that values, because remember that this method returns a collection of every element stored in that data structure.
+
+431
+01:18:03,760 --> 01:18:07,620
+When it was a list, we just used students here.
+
+432
+01:18:07,980 --> 01:18:15,520
+But when it's a Mac, HMAP or HTABLE, I use students that will use methods here.
+
+433
+01:18:15,960 --> 01:18:17,140
+The rest is the same.
+
+434
+01:18:17,560 --> 01:18:22,060
+Let's compare now those two versions with each other.
+
+435
+01:18:24,060 --> 01:18:25,399
+Close O.
+
+436
+01:18:25,840 --> 01:18:29,500
+And this one is the course with ArrayList.
+
+437
+01:18:29,500 --> 01:18:30,500
+And...
+
+438
+01:18:33,235 --> 01:18:35,615
+This one is the course with math.
+
+439
+01:18:36,315 --> 01:18:43,036
+When we compare those two, compare with each other,
+
+440
+01:18:46,735 --> 01:18:48,935
+let's maximize this.
+
+441
+01:18:50,015 --> 01:18:52,775
+I have an ArrayList here, HashMap here.
+
+442
+01:18:54,775 --> 01:18:56,235
+Initialization is...
+
+443
+01:18:56,372 --> 01:19:04,271
+A little bit different because of the constructor call are different because the height names are different.
+
+444
+01:19:05,771 --> 01:19:10,711
+And then, in fact, those two methods are the same.
+
+445
+01:19:11,551 --> 01:19:14,252
+The getStandCount and getStand2 versions.
+
+446
+01:19:14,452 --> 01:19:18,352
+There is just only an extra space here, an extra space here.
+
+447
+01:19:18,872 --> 01:19:23,771
+And somewhat the tabbing is different, but there are no code changes here.
+
+448
+01:19:25,300 --> 01:19:34,300
+And the Ed Student Method. In fact, this line 20 are the same, just only white space.
+
+449
+01:19:34,300 --> 01:19:38,300
+Şunları da sistem yorulun tarihe, boşu boşuna kafa karıştırmasın.
+
+450
+01:19:39,184 --> 01:20:04,623
+And then, of course, adding an element to the data structure is different. In list, we have the add method. In map, we have the put method. And put method takes two parameters. First parameter is the unique identifier, t or unique identifier. And the second parameter is the object itself. But in the list, we just add the object.
+
+451
+01:20:06,195 --> 01:20:10,335
+And what about finding a student?
+
+452
+01:20:11,216 --> 01:20:22,515
+When we were using lists, we had to manually travel, visit each element of the list and check for equivalence.
+
+453
+01:20:22,515 --> 01:20:30,415
+But now this map data structure, HMAP, does all of those for us.
+
+454
+01:20:31,335 --> 01:20:32,775
+We only call that method.
+
+455
+01:20:34,003 --> 01:20:44,283
+And what about the rest? This one. The for-each loop in the left-hand side, we have the data structure directly inside.
+
+456
+01:20:44,764 --> 01:20:50,923
+But in here, we call the values method of the data structure in map structure.
+
+457
+01:20:51,764 --> 01:20:58,923
+The rest is the same. Other than some extra spaces or tabs which are not relevant.
+
+458
+01:21:00,627 --> 01:21:02,207
+That's it.
+
+459
+01:21:02,887 --> 01:21:05,768
+If you have any questions, please feel free to ask.
+
+460
+01:21:06,547 --> 01:21:12,587
+But let's, of course, let's make sure that this version will work too.
+
+461
+01:21:13,587 --> 01:21:16,608
+For this purpose, I have this.
+
+462
+01:21:18,579 --> 01:21:19,619
+Test version.
+
+463
+01:21:20,199 --> 01:21:26,219
+Class names are different, but actually they are the same code.
+
+464
+01:21:26,219 --> 01:21:33,819
+For example, let's compare this uses with manual test evaluation here.
+
+465
+01:21:34,739 --> 01:21:36,819
+I have funny maps on this one.
+
+466
+01:21:37,260 --> 01:21:38,380
+Let's compare them.
+
+467
+01:21:43,539 --> 01:21:50,760
+Look, other than that, the Turkish letters' differences, they are the same.
+
+468
+01:21:50,760 --> 01:21:52,760
+I am thanked at the first student.
+
+469
+01:21:53,520 --> 01:22:04,652
+And here I have divided this line to two statements, but here in just one statement, directly in the result, those three statements are actually...
+
+470
+01:22:04,724 --> 01:22:11,724
+The same as this long statement, both three are grouped in this statement, otherwise they are the same.
+
+471
+01:22:11,724 --> 01:22:16,724
+And here I just have some Turkish characters.
+
+472
+01:22:16,724 --> 01:22:26,724
+Maybe a little bit different here, I have used different student names, but the logic is the same, the testing logic is the same.
+
+473
+01:22:29,235 --> 01:22:32,255
+Okay, I have some extra cases here too.
+
+474
+01:22:32,255 --> 01:22:43,015
+Now, let me prove that I will use the automated test evaluation of the linked list version.
+
+475
+01:22:43,695 --> 01:22:48,136
+I will copy this and it's already here.
+
+476
+01:22:48,475 --> 01:22:56,695
+Now, let's compare the automated test evaluations of implementation with the list and the net.
+
+477
+01:22:57,108 --> 01:23:00,387
+Let's compare those with each other.
+
+478
+01:23:06,292 --> 01:23:30,032
+Pekacı nevimiz daha different. Hadi şu şeyleri de yapalım. Şu Türkçe karakterleri ve şu setup metodunun ekstra çağrısını da düzelteyim de ondan sonra cema. Hatta şöyle yapayım. Bakın, doğrudan. Aslında öyle yapacak. Görünceyi başka vazgeçtip şimdi tekrar yapıyorum. 11'dekini siliyorum. Tamam. 10A'da bugün oluşturduğumuz şeyi kopyala. Buraya yapışkız.
+
+479
+01:23:30,899 --> 01:23:34,699
+Ondan sonra canım, bakayım bir ekstradan fazla da import vermiş olmasın, tamam.
+
+480
+01:23:35,659 --> 01:23:51,760
+Aynı testi, Naked List'den Map'li yapıya, hop yapıştırdım, bunu çalıştırdığımda, herhangi bir problem olmadan, gördüğünüz gibi yine problemlarsız, hepsini aynı şekilde çalıştırdım.
+
+481
+01:23:52,319 --> 01:23:53,659
+Tamam mı? Olay bu yani.
+
+482
+01:23:54,036 --> 01:23:55,515
+Ne vedendik? Ne vedendik?
+
+483
+01:23:56,916 --> 01:23:58,355
+What have we learned?
+
+484
+01:23:58,896 --> 01:24:02,216
+We only changed the underlying data structure.
+
+485
+01:24:02,755 --> 01:24:08,796
+This had led us to do some small changes in the course class.
+
+486
+01:24:09,655 --> 01:24:14,376
+However, when it comes to testing, we didn't change anything.
+
+487
+01:24:15,252 --> 01:24:19,952
+Because only the underlying data structure has changed.
+
+488
+01:24:20,311 --> 01:24:23,212
+The actual business logic didn't change.
+
+489
+01:24:24,811 --> 01:24:27,592
+Therefore, this is a good thing.
+
+490
+01:24:28,672 --> 01:24:31,912
+This means that everything goes smoothly.
+
+491
+01:24:33,731 --> 01:24:36,032
+So, that's nice.
+
+492
+01:24:37,092 --> 01:24:37,272
+Okay.
+
+493
+01:24:46,644 --> 01:24:52,284
+And I defined this here to, Tsukhotiyev-Skoyopinja, that shows you.
+
+494
+01:24:53,944 --> 01:24:54,224
+Okay.
+
+495
+01:24:56,564 --> 01:25:00,344
+There are a few more things that I need to tell you.
+
+496
+01:25:09,108 --> 01:25:15,208
+Well, let me consider the hashmap or hashtable for this fashion.
+
+497
+01:25:16,148 --> 01:25:24,048
+The P is a type which is an object and that is not a primitive.
+
+498
+01:25:25,988 --> 01:25:31,688
+The student IDs that we have used in our examples were strings.
+
+499
+01:25:32,327 --> 01:25:34,628
+Therefore, there aren't primitives.
+
+500
+01:25:34,628 --> 01:25:36,068
+What will happen?
+
+501
+01:25:36,532 --> 01:25:43,731
+If we try to use a primitive, such as an int, as a unique identifier.
+
+502
+01:25:43,731 --> 01:25:57,731
+Well, if we want primitive unique identifiers and at the same time we want generic data structures, then...
+
+503
+01:25:58,163 --> 01:26:05,363
+We will use the corresponding wrapper types instead of primitive keys.
+
+504
+01:26:06,463 --> 01:26:06,564
+Okay.
+
+505
+01:26:09,064 --> 01:26:11,123
+But don't worry.
+
+506
+01:26:11,703 --> 01:26:14,824
+We don't have to change our existing code.
+
+507
+01:26:15,347 --> 01:26:31,907
+If we cannot return any code with primitive keys yet, then we can begin with using non-primitive identifiers, which is fine.
+
+508
+01:26:31,907 --> 01:26:42,987
+But if we have already some legacy code, having primitives as unique identifiers, we can continue to use them.
+
+509
+01:26:43,347 --> 01:26:57,347
+Because up to a certain version, which is rather old, Java compiler automatically converts a primitive to its corresponding wrapper.
+
+510
+01:26:59,347 --> 01:27:01,847
+What I mean, let's show you.
+
+511
+01:27:04,247 --> 01:27:07,547
+Now, in the package 10c,
+
+512
+01:27:07,984 --> 01:27:13,424
+I changed the source code of the student class. Let's check it.
+
+513
+01:27:14,084 --> 01:27:21,644
+In 10a and 10b, the student has a number as a string. It's a unique identifier.
+
+514
+01:27:22,584 --> 01:27:33,504
+But in 10c, I have the student as having integers, int, primitive int as a driver key.
+
+515
+01:27:34,676 --> 01:27:41,115
+The other, the rest is straightforward. Ondan sonra acaba.
+
+516
+01:27:45,195 --> 01:28:00,656
+Let's see the source code of the course class. This time C is the one with the Heming, again, the integer and student map.
+
+517
+01:28:01,024 --> 01:28:12,884
+HashMap. Although we use this one and we have an integer non-primitive wrapper as a key type.
+
+518
+01:28:14,344 --> 01:28:17,884
+In the at student method, I can...
+
+519
+01:28:18,292 --> 01:28:41,872
+Without any problem, use that getNumber method, which returns an int, which is a primitive, but I do can add this object to that map because I have defined the wrapper of the primitive as the key type.
+
+520
+01:28:42,547 --> 01:29:04,768
+And this automatic conversion is called autoboxing in Java terminology. Don't ask me why they have named it in this way. Yani otomatik kutulama, paketleme. Ne diyeyim işte, ilkleri sanma vecısına paketliyor işte.
+
+521
+01:29:04,768 --> 01:29:06,087
+Evet, evet.
+
+522
+01:29:07,347 --> 01:29:11,247
+Or you can think of it as automatic conversion between types.
+
+523
+01:29:13,587 --> 01:29:26,747
+And so when I compare the 10b version and 10c versions of the course classes, compare with each other.
+
+524
+01:29:33,171 --> 01:29:38,771
+In the previous version, we have string as a key, and now we have integer as a key.
+
+525
+01:29:39,371 --> 01:29:43,571
+And of course, the constructor call changes a little bit.
+
+526
+01:29:44,231 --> 01:29:52,331
+But other than that, okay, now the five student method should accept the int as a parameter.
+
+527
+01:29:52,891 --> 01:30:00,000
+Although, again, this is an int, which is a primitive, get method of the...
+
+528
+01:30:00,000 --> 01:30:11,379
+Data structure, although it expects us an object, which is an integer, which is a wrapper, that int value is accepted here.
+
+529
+01:30:12,579 --> 01:30:19,379
+The Java machine will automatically wrap this primitive in its corresponding wrapper.
+
+530
+01:30:20,299 --> 01:30:25,539
+Therefore, automatic wrapping, auto-boxing is in effect here.
+
+531
+01:30:27,764 --> 01:30:29,844
+And the rest is the same.
+
+532
+01:30:30,984 --> 01:30:31,064
+Okay.
+
+533
+01:30:32,543 --> 01:30:35,144
+This is actually a nice feature.
+
+534
+01:30:35,144 --> 01:30:47,324
+It gives us lots of ease of use and it enables us backwards compatibility with our existing previous code.
+
+535
+01:30:48,944 --> 01:30:50,864
+So, so far, so good.
+
+536
+01:30:54,996 --> 01:30:58,195
+But if you have any questions, please ask.
+
+537
+01:30:59,396 --> 01:31:04,195
+Then we'll talk about a summary of the data structures.
+
+538
+01:31:14,292 --> 01:31:34,532
+Okay. I guess there are no questions at the moment. Now let's remember what generate data structures we have and we will use mostly in that course. We have the LinkedDisk class.
+
+539
+01:31:34,931 --> 01:31:46,371
+This gives us first insert and delete operations, but random access is slow because we need to traverse every element in that list.
+
+540
+01:31:47,291 --> 01:31:51,131
+This is actually, this may be a double link.
+
+541
+01:31:51,828 --> 01:31:58,148
+We can normally, we traverse it one way only from beginning to the end.
+
+542
+01:31:58,768 --> 01:32:08,388
+But if we obtain a list iterator from the linked list, the list iterator interface allows us to travel backwards too.
+
+543
+01:32:08,968 --> 01:32:12,048
+But we will not cover this topic in this lecture.
+
+544
+01:32:13,492 --> 01:32:24,492
+ArrayList. ArrayList is the opposite of the LinkedList. Insert and delete operations are slower, but random access is faster.
+
+545
+01:32:25,492 --> 01:32:35,492
+Evaluate your software and if you have more frequent insert and delete operations, use LinkedList.
+
+546
+01:32:36,564 --> 01:32:47,524
+But if you have more often search statements, then use the ArrayList structure.
+
+547
+01:32:48,203 --> 01:32:54,963
+And about the vector class, it's again a list implementation, but it's thread safe.
+
+548
+01:32:55,667 --> 01:33:00,887
+It's similar to ArrayList, but it's thread-safe. In other terms, it's synchronized.
+
+549
+01:33:01,487 --> 01:33:07,927
+So it's three to the four multi-threaded use. Do not use this in single-threaded regular applications.
+
+550
+01:33:08,448 --> 01:33:17,448
+But if you need multi-threadness, then use thread-safe data structure such as Vector.
+
+551
+01:33:18,347 --> 01:33:22,407
+And for the maps, we have the hash map and hash table classes.
+
+552
+01:33:23,252 --> 01:33:29,252
+HashMap is used for first very fast searches by a key index.
+
+553
+01:33:29,716 --> 01:33:42,396
+And hash table is similar to the hash map, but it's synchronized, which means thread safe, which means there are some overhead in order to enable this thread safeness.
+
+554
+01:33:42,396 --> 01:33:53,396
+Therefore, in regular applications, non-multi-traded, single-traded applications use hash map and use hash table in multi-traded applications.
+
+555
+01:33:53,856 --> 01:33:56,396
+And regardless of threadness...
+
+556
+01:33:57,108 --> 01:34:14,167
+If you need very frequent and very fast searches according to a key value, then use hash map or hash table. Use one of these. Okay?
+
+557
+01:34:14,623 --> 01:34:36,523
+Instead of trying to visit every element or having an array in the background, such as in the ArrayList case, if we need frequent searches according to a keyword, then use HashMap or HashTable according to the threat situation.
+
+558
+01:34:37,183 --> 01:34:42,523
+Otherwise, you can use any of the list implementation considering...
+
+559
+01:34:42,623 --> 01:34:47,703
+their strength and weaknesses, those are and cause.
+
+560
+01:34:48,103 --> 01:34:54,064
+Now don't forget that hash map, n with the capital case, and hash table, t with the lower case.
+
+561
+01:34:56,023 --> 01:34:56,963
+All right.
+
+562
+01:34:57,743 --> 01:35:00,423
+This is it for the data structures.
+
+563
+01:35:01,083 --> 01:35:05,443
+Now let's consider typecasting.
+
+564
+01:35:09,876 --> 01:35:11,876
+Şimdi niye çıkılabilir miyim bilmiyorum.
+
+565
+01:35:14,275 --> 01:35:17,876
+Bu dersin kalan süresinde
+
+566
+01:35:17,876 --> 01:35:23,876
+Korkut diyeceğiz, takvim diyeceğiz, takvimin şeyi diyeceğiz, sınav falan.
+
+567
+01:35:24,876 --> 01:35:28,876
+Bilmiyorum, diğer gruplar neredeydi bu arada?
+
+568
+01:35:55,155 --> 01:35:58,995
+Yani mesela Memutu şu HMAP'i tamamladık.
+
+569
+01:35:58,995 --> 01:36:03,395
+Yani işte orayla yakın gidiyoruz.
+
+570
+01:36:08,595 --> 01:36:11,755
+Aceli almak istemiyorum.
+
+571
+01:36:23,923 --> 01:36:36,923
+Bugün bu kadar diyelim arkadaşlar. Yani kusura bakmayın, bugün böyle oldu. Beni de yetiştiririz diye ümit ediyorum. Yetiştiremezsek bir ders, bir oturum tamamlanırız.
+
+572
+01:36:36,923 --> 01:36:47,924
+Harikasını katılabileceği. Bugün bu kadar. Sorularınız varsa buyurun. Ben de şu kaldığımız yeri not edeyim. 10 Mayıs'ta.
+
+573
+01:36:52,148 --> 01:36:56,148
+189.
+
+574
+01:36:57,528 --> 01:36:58,368
+Diyelim.
+
+575
+01:37:04,508 --> 01:37:12,048
+Sonra proje edeceğimiz için sonraki vize haftasında bir şey yapmayacağız.
+
+576
+01:37:12,228 --> 01:37:14,448
+İki haftamız var, hatta üç haftamız var.
+
+577
+01:37:15,028 --> 01:37:18,148
+Bu üç haftalık süre içerisinde...
+
+578
+01:37:19,091 --> 01:37:24,091
+Geçen dönem ne yapacağız? Ona bakayım. Geçen dönemin...
+
+579
+01:37:26,091 --> 01:37:29,091
+...prosesuna baktığımda...
+
+580
+01:37:29,091 --> 01:37:30,091
+...bakalım...
+
+581
+01:37:41,203 --> 01:37:46,103
+180, object list, 82, şimdi mi harcayız?
+
+582
+01:37:47,523 --> 01:38:02,003
+189, peki, şimdi yaklaşık kaba olan, kaba yaşa diğer evlenmişleri, bir hafta, iki hafta, üç hafta da tamamlayabilmişiz.
+
+583
+01:38:03,091 --> 01:38:19,291
+Şimdi bir hafta, iki hafta, üç hafta, üç hafta tamamlayacağız. Tamam peki. 17 Mayıs tatile gelmiyor. 24 Mayıs, 31 Mayıs bu arada tatile gelmiyor. Tamam yetişiyor arkadaşlar. Yetişecek. Öyle söyleyelim.
+
+584
+01:38:19,291 --> 01:38:26,751
+İyi. Şimdi biraz daha rahat şekilde kapatıyorum derse. Kusura bakmayın. Bugün bu kadar haftaya görüşmek istiyorum.
+
+585
+01:38:28,371 --> 01:38:29,491
+Paylaşımı dolduralım.
+
+586
+01:38:30,036 --> 01:38:31,376
+Oturumu sonlandı.

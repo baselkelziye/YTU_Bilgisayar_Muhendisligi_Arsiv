@@ -1,0 +1,3943 @@
+1
+00:00:04,788 --> 00:00:21,167
+Evet, hadi bakalım. Bugünkü dersimize başlıyoruz. Dün OVS'den yaptığım duyur üzerine, bugün bölüm toplantısının nedeniyle, dersi her zamanki başlangıçında değil de saat 1'de başlatacağımı duymuştum.
+
+2
+00:00:21,167 --> 00:00:31,908
+Bu kapsamda derse başlangıç zamanımız geldi. O yüzden başlayalım yavaş yavaş. Bakalım şimdi ekran paylaşımıyla.
+
+3
+00:00:41,844 --> 00:00:43,524
+Zaten paylaşımımızı yapalım.
+
+4
+00:00:44,944 --> 00:00:46,984
+Bu sefer de 10 dakika beklemeyeceğim.
+
+5
+00:00:47,764 --> 00:00:51,344
+Ancak zaten açan ayıdana kadar daha da belirli bir süre geçeriz.
+
+6
+00:00:51,823 --> 00:00:53,323
+Aslında başlayalım dersi.
+
+7
+00:00:57,524 --> 00:01:00,323
+Şimdi nerede kalmıştık bir bakalım.
+
+8
+00:01:12,980 --> 00:01:16,204
+Arkadaşlar, class, object,
+
+9
+00:01:28,147 --> 00:01:28,843
+Şuraya.
+
+10
+00:01:38,067 --> 00:01:40,388
+Peki, inheritance ile başlayacağız.
+
+11
+00:01:47,412 --> 00:02:00,972
+Evet, şimdi bugün bölüm toplantısı nedeniyle ve daha erken başlayıp daha erken bitireceğimizi söylemiştim OBS üzerinden.
+
+12
+00:02:01,451 --> 00:02:04,152
+Şimdi bu bağlamda başlayalım derse.
+
+13
+00:02:09,204 --> 00:02:13,484
+Bir buçuk saat, yani en fazla iki saat ders yapabileceğiz.
+
+14
+00:02:13,924 --> 00:02:14,963
+Bir bakışı bakalım bakalım.
+
+15
+00:02:15,384 --> 00:02:16,944
+Nerede bir konu arasından denk geleceğiz?
+
+16
+00:02:17,204 --> 00:02:20,663
+Ona göre bir mola işini konuşuruz.
+
+17
+00:02:22,584 --> 00:02:23,424
+Okey.
+
+18
+00:02:24,243 --> 00:02:28,343
+Ha bu arada şey, odamdan anlattığım için dersler.
+
+19
+00:02:28,364 --> 00:02:31,484
+Odamdaki korktuklarda gıcırdama eğilimi var.
+
+20
+00:02:32,144 --> 00:02:32,663
+O yüzden...
+
+21
+00:02:33,683 --> 00:02:38,683
+Pozisyonumu değiştireceğim zaman filan ufak bir ses size alırım.
+
+22
+00:02:38,683 --> 00:02:42,683
+Rahatsız etmek istemem gıcırılama sesiyle.
+
+23
+00:02:42,683 --> 00:02:48,183
+Ama olur da sesi açma unutursam lütfen hocam deyin filan. Siz kendi sesinizi açın hocam diyeyim.
+
+24
+00:02:48,183 --> 00:02:50,183
+Ondan sonra acaba ne bileyim.
+
+25
+00:02:50,183 --> 00:02:57,183
+Arası da kaçarsın ufak tefek gajutlar. Sabah meşhurinden peşin olarak bir özellik bir durum veririz.
+
+26
+00:02:58,683 --> 00:03:01,183
+Evet, peki. We may begin now.
+
+27
+00:03:01,876 --> 00:03:07,216
+And we are beginning with the inheritance relationship.
+
+28
+00:03:09,055 --> 00:03:21,295
+Inheritance in object orientation is a way of creating a new class by using an existing class as a foundation.
+
+29
+00:03:22,675 --> 00:03:31,515
+In real world, inheritance means a child inherits some genetic properties from his or her parents.
+
+30
+00:03:31,515 --> 00:03:43,336
+And in object orientation, it is a means of creating a new class from an existing class so that it is similar with the real world.
+
+31
+00:03:43,728 --> 00:03:50,627
+Remember that we are trying to model the real-world objects and their relationships in our code.
+
+32
+00:03:50,627 --> 00:04:10,548
+So if there is some dependency between two objects that first one, an existing one, inherits every genetic property, every property, which means every member.
+
+33
+00:04:11,060 --> 00:04:14,799
+This is the way that inheritance work.
+
+34
+00:04:15,659 --> 00:04:17,000
+Just a moment, please.
+
+35
+00:04:24,052 --> 00:04:37,132
+In UMLN diagrams, we represent inheritance with a solid body and then a clothed white triangle as the arrowhead.
+
+36
+00:04:38,132 --> 00:04:43,132
+Inheritance is always a one-direction relationship.
+
+37
+00:04:45,843 --> 00:04:52,764
+Unlike other relations, this is a purely class level relation.
+
+38
+00:04:53,144 --> 00:04:56,624
+Sorry, Professor. I can't see your screen.
+
+39
+00:04:57,172 --> 00:05:24,232
+Hmm. It's a problem and I don't know why. Now I have turned off screen shake and I will share it again. In my previous lecture, software engineering, we had the same problem. I don't know whether it is related with some network latency or not, but we have discovered that my actions
+
+40
+00:05:25,172 --> 00:05:29,432
+As seen on your computers with a few little delay.
+
+41
+00:05:29,852 --> 00:05:34,632
+But sooner or later, you should be able to see something.
+
+42
+00:05:35,032 --> 00:05:38,192
+Now, I am in the presentation mode.
+
+43
+00:05:38,432 --> 00:05:41,892
+Can you see my lecture note at the moment?
+
+44
+00:05:42,892 --> 00:05:43,852
+I can see it.
+
+45
+00:05:45,332 --> 00:05:45,632
+Okay.
+
+46
+00:05:46,432 --> 00:05:48,452
+Then I can continue.
+
+47
+00:05:48,452 --> 00:05:49,452
+Thank you.
+
+48
+00:05:50,872 --> 00:05:52,192
+Tamam değil mi? Görebiliyorsunuz.
+
+49
+00:05:54,899 --> 00:05:55,899
+Thank you.
+
+50
+00:05:56,899 --> 00:05:57,899
+Okay.
+
+51
+00:06:00,899 --> 00:06:12,899
+When we represent inheritance in UMLN class diagrams, we use a solid body and a closed right triangle as the arrowhead.
+
+52
+00:06:12,899 --> 00:06:16,899
+This inheritance relationship is always one way.
+
+53
+00:06:16,899 --> 00:06:19,755
+It's always a one way relationship.
+
+54
+00:06:19,987 --> 00:06:31,768
+We have the class A and we want to create a new class, in this case B, from that existing class A by using inheritance.
+
+55
+00:06:32,768 --> 00:06:41,708
+The inheritance error begins from the new class and ends at the old class.
+
+56
+00:06:43,764 --> 00:06:52,884
+The current terminology is the class A, we call it the parent class, and B is called child class.
+
+57
+00:06:53,764 --> 00:06:57,524
+In Turkish we say ebeveyn sınıf ve çocuk sınıf.
+
+58
+00:06:58,803 --> 00:07:03,144
+Or we can call the existing class a super class.
+
+59
+00:07:03,863 --> 00:07:09,803
+And if we do so, then we refer to the new class as the subclass.
+
+60
+00:07:10,355 --> 00:07:14,855
+Türkçe, we can say üst sınıf, alt sınıf.
+
+61
+00:07:15,435 --> 00:07:27,635
+When we translate into Turkish, we sometimes use sınıf also, but most often we use üst class, üst sınıf, alt sınıf.
+
+62
+00:07:27,635 --> 00:07:38,355
+And traditionally, when we draw inheritance relationship, we draw the parent class on top and derive new class.
+
+63
+00:07:38,355 --> 00:07:45,596
+At the bottom, so we can call it top class, super class, and the sub class.
+
+64
+00:07:47,115 --> 00:07:51,195
+And we can call the existing class as base class.
+
+65
+00:07:51,635 --> 00:07:55,255
+Then we call the new class as derived class.
+
+66
+00:07:55,776 --> 00:07:59,455
+In Turkish, we can say tamaslov ve tretilmiş.
+
+67
+00:08:00,675 --> 00:08:02,375
+How does inheritance work?
+
+68
+00:08:02,720 --> 00:08:12,980
+Every member field and every member method, in short, every member of the parent class are transferred to the child class.
+
+69
+00:08:13,840 --> 00:08:19,740
+However, the children cannot access the inherited private members.
+
+70
+00:08:20,560 --> 00:08:28,540
+If we want them to be able to do so, then we have to use public getter and all setter methods.
+
+71
+00:08:30,067 --> 00:08:37,748
+And there is a special case of visibility rule. This is the protected rule.
+
+72
+00:08:38,748 --> 00:08:55,707
+If a member network is declared as protected or at the same time member field or a member network is declared as protected, then those members act.
+
+73
+00:08:56,063 --> 00:09:03,563
+Like public numbers to the child classes and private to other classes.
+
+74
+00:09:07,827 --> 00:09:11,827
+What are the rules? There are some important rules for inheritance.
+
+75
+00:09:13,487 --> 00:09:18,107
+A subclass cannot reject a number from the superclass.
+
+76
+00:09:19,387 --> 00:09:29,827
+This is why we translate this relationship as kalıtım to Turkish, in similar to its biological fashion.
+
+77
+00:09:30,740 --> 00:09:39,399
+If we think about it is legal fashion, you can reject some inheritance.
+
+78
+00:09:39,399 --> 00:09:50,319
+For example, your parents have left some debt behind and you can reject that.
+
+79
+00:09:51,635 --> 00:09:58,875
+But as for the genetic properties, you cannot reject anything.
+
+80
+00:10:01,115 --> 00:10:09,295
+But for member methods, you can change the body of an inherited method.
+
+81
+00:10:10,195 --> 00:10:15,035
+And this process is called overriding, with one exception.
+
+82
+00:10:15,796 --> 00:10:24,436
+If you declare a member method as final, then this method cannot be overridden in child class.
+
+83
+00:10:25,995 --> 00:10:28,896
+Therefore, we have covered the last exceptions.
+
+84
+00:10:28,896 --> 00:10:31,596
+What does protected means?
+
+85
+00:10:31,995 --> 00:10:34,216
+It is related with inheritance.
+
+86
+00:10:35,036 --> 00:10:41,896
+Protected members mean public to subclasses and private to others.
+
+87
+00:10:42,548 --> 00:10:51,107
+And final member method means you cannot change the body of that method in a subclass.
+
+88
+00:10:53,788 --> 00:10:56,168
+Let me remind you that.
+
+89
+00:10:56,768 --> 00:11:03,508
+And let me give you an example about how you cannot reject inheritance.
+
+90
+00:11:05,491 --> 00:11:10,571
+For example, I have inherited my eye color from my father.
+
+91
+00:11:10,571 --> 00:11:19,411
+It's light brown, but my mother had green eyes.
+
+92
+00:11:19,827 --> 00:11:36,548
+Maybe I wish to have green eyes too, but I cannot reject my inheritance. I cannot reject my eyes. I have obtained their genetic material from my father. I cannot reject it. There is no way.
+
+93
+00:11:37,076 --> 00:11:47,796
+But, if I wish, I can take a colored lens, a green one or a blue one, and use it and have my eye color changed externally.
+
+94
+00:11:49,236 --> 00:11:52,096
+And this is an example of override.
+
+95
+00:11:52,096 --> 00:11:53,096
+Okay.
+
+96
+00:11:53,652 --> 00:12:05,552
+This is why we use the genetic translation such as kalitim, Turkish, not its legal version, miras.
+
+97
+00:12:10,752 --> 00:12:12,752
+This is one rule.
+
+98
+00:12:13,232 --> 00:12:18,552
+And the second rule is, of course, you can add new members to subclasses.
+
+99
+00:12:19,923 --> 00:12:28,524
+And you can use a subclass as a parent of other child classes as well.
+
+100
+00:12:29,123 --> 00:12:35,563
+In that case, we come up with a hierarchy or a tree you can call.
+
+101
+00:12:36,123 --> 00:12:40,463
+For example, in my slide, we have the class person.
+
+102
+00:12:41,395 --> 00:12:52,775
+And by using this class person, we have created three new classes by inheritance, student, employer and retired.
+
+103
+00:12:53,971 --> 00:13:09,532
+And by using the employee class, we have created two new additional subclasses of those employee class, which are directors and part-time.
+
+104
+00:13:10,652 --> 00:13:16,812
+In that case, the class employee is the subclass of class person.
+
+105
+00:13:17,268 --> 00:13:22,788
+And it is the superclass of classes, director and part-time classes.
+
+106
+00:13:24,107 --> 00:13:33,487
+We call this as a hierarchy or a tree, as you can remember from the data structure class.
+
+107
+00:13:34,087 --> 00:13:42,947
+But if you didn't learn the tree structure yet, then you will be learning it soon in data structure class.
+
+108
+00:13:46,196 --> 00:13:54,116
+When using inheritance, please do not let this inheritance hierarchy too deep.
+
+109
+00:13:54,116 --> 00:14:02,036
+Because it creates a problem which is called fragile superclass problem.
+
+110
+00:14:02,516 --> 00:14:06,836
+Why? This is analogous to a rotten tree.
+
+111
+00:14:07,604 --> 00:14:14,084
+In data structures, we call the topmost node as the root.
+
+112
+00:14:16,624 --> 00:14:32,924
+In regular trees, biological trees, the roots are at the ground, but in data structure trees or hierarchies, the root is the utmost numbers, the utmost element, the element on the top.
+
+113
+00:14:33,299 --> 00:14:38,839
+In that case, this person class is our root of the hierarchy.
+
+114
+00:14:39,839 --> 00:14:49,239
+Do not make this hierarchy too deep because as every class inherits all the properties of the parent class,
+
+115
+00:14:49,940 --> 00:15:17,940
+When this inheritance becomes too many levels, then when you make some change in the root class or utmost classes, then those changes can create some unintended consequences in other methods, in other subclasses, because those subclasses...
+
+116
+00:15:17,940 --> 00:15:21,060
+Classes can have additional methods as well.
+
+117
+00:15:21,060 --> 00:15:27,980
+And those additional methods, some of them will be using the inherited methods.
+
+118
+00:15:27,980 --> 00:15:37,860
+And when you change something in the root, then this change will be propagated during the entire hierarchy.
+
+119
+00:15:37,860 --> 00:15:45,780
+And somewhere in between, previously correctly working member methods can...
+
+120
+00:16:18,548 --> 00:16:25,827
+We can call the inheritance relationship as the generalization specialization relationship as well.
+
+121
+00:16:26,488 --> 00:16:33,707
+Why? Because a child class is a specialized and more capable version of its parents.
+
+122
+00:16:34,368 --> 00:16:45,827
+Because a child class has every member from the parent class and in addition it can have additional member fields and methods.
+
+123
+00:16:46,192 --> 00:16:54,231
+Therefore, that child is more specialized, it has more capabilities than its parents.
+
+124
+00:16:55,292 --> 00:17:06,392
+And likewise, when you look from the other side, a parent class is a generalized version of its children having less members.
+
+125
+00:17:09,971 --> 00:17:25,652
+And another effect of this relationship is substitutability, which means a child can be used instead of its parent wherever a parent is expected.
+
+126
+00:17:26,067 --> 00:17:31,347
+Why? Because that child has everything that the parent has.
+
+127
+00:17:31,347 --> 00:17:37,907
+So it can be used, it can do whatever its parent can do.
+
+128
+00:17:38,487 --> 00:17:44,907
+So it can be used in any context that an object from a parent class is being expected.
+
+129
+00:17:46,087 --> 00:17:51,288
+And therefore, we can give another name to that relationship, is-air relationship.
+
+130
+00:17:52,127 --> 00:17:52,987
+For example...
+
+131
+00:17:54,804 --> 00:18:04,504
+We have the car class and we have drive three subclasses from it, station wagon, racing and jeeps.
+
+132
+00:18:05,844 --> 00:18:07,504
+Let's consider the railroad.
+
+133
+00:18:10,804 --> 00:18:15,804
+For example, a race car is a specialized version of a regular car.
+
+134
+00:18:16,604 --> 00:18:21,604
+It has more speed, maybe it has more gears.
+
+135
+00:18:22,067 --> 00:18:47,907
+It is only suitable for one driver, doesn't have any baggages. Its fuel depot may be smaller than a regular car, but according to the race type, it can have different wheels, wheels having different widths, for example.
+
+136
+00:18:48,788 --> 00:18:50,028
+Exeter.
+
+137
+00:18:51,168 --> 00:18:56,108
+Therefore, you can say a race car is a specialized version of a regular car.
+
+138
+00:18:58,208 --> 00:19:02,488
+Or we can say every race car is a car.
+
+139
+00:19:03,048 --> 00:19:05,768
+Every race car is also a car.
+
+140
+00:19:06,168 --> 00:19:12,128
+Therefore, you can name this relationship as is a relationship too.
+
+141
+00:19:13,508 --> 00:19:16,268
+Or every jeep is a car.
+
+142
+00:19:16,692 --> 00:19:23,152
+It is most suited to traverse through rough terrain, but it's a car.
+
+143
+00:19:23,392 --> 00:19:25,172
+It takes four or five passengers.
+
+144
+00:19:25,412 --> 00:19:26,832
+You can carry luggage, etc.
+
+145
+00:19:27,092 --> 00:19:32,711
+But if your luggage is too much, then it's better for you to use a station wagon car.
+
+146
+00:19:33,731 --> 00:19:37,192
+That station wagon, every station wagon car is a car.
+
+147
+00:19:37,332 --> 00:19:38,292
+It's also a car.
+
+148
+00:19:38,771 --> 00:19:52,311
+And a station wagon car is a more specialized version of a car which has more interior space, more trunk space, and in sometimes more passenger seats.
+
+149
+00:19:54,491 --> 00:20:01,991
+You want to go from point A to point B. If you need to carry a lot of load, you use a station wagon.
+
+150
+00:20:02,548 --> 00:20:07,007
+If you want to go there as soon as possible, you can use a race car.
+
+151
+00:20:07,647 --> 00:20:20,147
+Or if your destination is in some rough spaces, for example, mountain terrain or sand terrain, for example, then you should better use it.
+
+152
+00:20:20,947 --> 00:20:28,827
+But you can use every instance of those subclasses as a car too.
+
+153
+00:20:29,875 --> 00:20:36,115
+Another example, every laser printer is also a printer.
+
+154
+00:20:36,675 --> 00:20:41,096
+Every inch-shack printer is a printer, and every dot matrix printer is a printer.
+
+155
+00:20:41,096 --> 00:20:45,535
+But those are specialized types of printers.
+
+156
+00:20:46,596 --> 00:20:51,096
+If you want fast and lots of...
+
+157
+00:20:52,403 --> 00:20:53,243
+Printouts.
+
+158
+00:20:53,864 --> 00:21:02,503
+And if you don't mind it's being greyscale, then choosing a laser printer is the best option.
+
+159
+00:21:03,983 --> 00:21:07,183
+But if you want color, it can be too expensive.
+
+160
+00:21:07,183 --> 00:21:11,283
+And if you don't have that budget, you can use an InChat printer.
+
+161
+00:21:12,276 --> 00:21:23,655
+Or if you want to write some invoices and multiple copies of the same invoices, then you can use that old classical dot matrix.
+
+162
+00:21:26,655 --> 00:21:28,455
+And you are good to go.
+
+163
+00:21:31,096 --> 00:21:35,695
+I hope those examples are sufficient.
+
+164
+00:21:40,243 --> 00:21:49,884
+Using inheritance, please use it very wisely, very sparingly and very carefully because you can misuse it.
+
+165
+00:21:50,884 --> 00:22:00,144
+There is a famous saying that when you have a hammer in your hand, then you see everything like a nail.
+
+166
+00:22:01,223 --> 00:22:02,263
+Don't use it.
+
+167
+00:22:04,564 --> 00:22:11,504
+Maybe you can use a more suitable tool for another work, not another.
+
+168
+00:22:12,504 --> 00:22:14,423
+Let's give an example.
+
+169
+00:22:14,996 --> 00:22:42,996
+You have tried and worked hard and you have called the GUI button class. It's a button, a rectangular one. It has a label on it. When you go on top of it and press the left mouse button, as you press the mouse button, then that button graphic will also...
+
+170
+00:22:42,996 --> 00:22:45,836
+Sobi, kollapsed.
+
+171
+00:22:46,420 --> 00:22:53,600
+And then when you remove the left button, then it will again go on top.
+
+172
+00:22:53,600 --> 00:23:02,160
+And after the end of this clicking operation, some methods can be executed to do some useful work.
+
+173
+00:23:02,440 --> 00:23:02,760
+Exactly.
+
+174
+00:23:03,560 --> 00:23:10,040
+This is an all working and nice button class.
+
+175
+00:23:10,600 --> 00:23:14,360
+You have written your code by using that group.
+
+176
+00:23:14,420 --> 00:23:16,580
+Class and show it to your customer.
+
+177
+00:23:17,140 --> 00:23:24,240
+Then your customer says, well, we are an enterprise and we have some company colors.
+
+178
+00:23:24,900 --> 00:23:32,120
+Those are orange, blue and green.
+
+179
+00:23:32,820 --> 00:23:34,560
+We have those.
+
+180
+00:23:34,860 --> 00:23:38,560
+We want to have those colored buttons.
+
+181
+00:23:39,859 --> 00:23:46,740
+All right, the customer is always right, but how to create those new buttons?
+
+182
+00:23:47,619 --> 00:23:55,579
+At first, you can think that, well, I already have a GUI button class, but it's gray and boring.
+
+183
+00:23:56,480 --> 00:24:03,799
+Therefore, I can create those new classes that my customer wants by using inheritance.
+
+184
+00:24:04,692 --> 00:24:14,451
+My customer wanted orange and green and, I don't remember, let's say orange and green buttons.
+
+185
+00:24:14,711 --> 00:24:21,991
+Then I can create orange button class and green button class by using inheritance, for example.
+
+186
+00:24:22,451 --> 00:24:25,231
+Or let's say red, yellow and purple, for example.
+
+187
+00:24:26,152 --> 00:24:30,211
+Instead of doing this, you can do much better modeling.
+
+188
+00:24:30,372 --> 00:24:30,591
+Why?
+
+189
+00:24:31,188 --> 00:24:38,847
+Because that customer wants those particular three colors and other customers will want many different colors.
+
+190
+00:24:40,008 --> 00:24:48,367
+When you try to create a new class for every desired color, soon you will have hundreds of classes.
+
+191
+00:24:49,508 --> 00:24:54,607
+And it will be very hard to maintain those classes.
+
+192
+00:24:55,124 --> 00:25:10,283
+Let's suppose that you have a bug in the GUI-BATTLE class, then you have to collect those bugs in every subclass, which is a maintenance nightmare.
+
+193
+00:25:11,283 --> 00:25:18,083
+You can do better. How? Please consider what actually changes.
+
+194
+00:25:18,771 --> 00:25:23,151
+What actually changes is the color of the button.
+
+195
+00:25:24,051 --> 00:25:33,231
+Well, in that case, every button will have a color, which means association, ownership association.
+
+196
+00:25:34,231 --> 00:25:38,311
+The color is changing, so create a color class.
+
+197
+00:25:41,715 --> 00:25:49,315
+And when trying to generate a color, there are three main colors, red, green and blue.
+
+198
+00:25:49,315 --> 00:26:05,235
+And by giving those three main colors intensities between 0 and 255, you can create 16 million colors.
+
+199
+00:26:06,996 --> 00:26:16,916
+Create a RGB class, or let's, or you can name it color or anything you wish, and have three members here, red, green, and blue.
+
+200
+00:26:17,616 --> 00:26:29,612
+And when painting a button, drawing a button to the screen or a platform, etc., in the body of that print method, first...
+
+201
+00:26:29,683 --> 00:26:33,084
+Take a paintbrush from the system.
+
+202
+00:26:33,744 --> 00:26:37,703
+Every operating system and framework has such statements.
+
+203
+00:26:37,884 --> 00:26:44,703
+You give red, green, and blue values between 0 and 265.
+
+204
+00:26:45,324 --> 00:26:49,344
+Then the system gives you the appropriate color.
+
+205
+00:26:49,963 --> 00:26:55,443
+And when you draw or paint something, then they will be drawn by using that color.
+
+206
+00:26:56,019 --> 00:27:07,799
+Therefore, please create this RGB class and obtain one-to-one ownership association between the button class and that RGB class.
+
+207
+00:27:08,360 --> 00:27:10,059
+This is the correct modeling.
+
+208
+00:27:10,720 --> 00:27:14,880
+The one on the left is the incorrect use of inheritance.
+
+209
+00:27:17,279 --> 00:27:21,319
+Let me give you another example, but just a moment, please.
+
+210
+00:27:31,443 --> 00:27:35,163
+Now, let me give you a more concrete example.
+
+211
+00:27:36,243 --> 00:27:44,483
+We have a requirements document and we are trying to write software in order to fulfill those requirements.
+
+212
+00:27:45,324 --> 00:27:50,324
+Or you can also think about as an exam question as well.
+
+213
+00:27:51,344 --> 00:27:53,223
+It says, let's read it.
+
+214
+00:27:53,943 --> 00:27:57,624
+It's saying that we should keep track of patient names.
+
+215
+00:27:58,420 --> 00:28:02,960
+ID numbers, birthdates, and cell numbers, cell phone numbers.
+
+216
+00:28:03,440 --> 00:28:06,360
+This information should be stored for doctors too.
+
+217
+00:28:06,360 --> 00:28:17,580
+Well, if you read just those two sentences and without reading the rest, you can do something such as this.
+
+218
+00:28:18,019 --> 00:28:19,820
+You can create the patient class.
+
+219
+00:28:20,403 --> 00:28:25,284
+Give the member fields name, ID number, birth date, and cell number.
+
+220
+00:28:25,284 --> 00:28:32,443
+Then generate the doctor class as those information will be stored for the doctors too.
+
+221
+00:28:33,004 --> 00:28:40,864
+And it says that it is required by row to keep the diploma number of the doctors.
+
+222
+00:28:41,124 --> 00:28:47,744
+Then you can add the diploma number to the doctor class and you can call it a day.
+
+223
+00:28:48,819 --> 00:28:52,200
+But then comes the next sentence.
+
+224
+00:28:53,019 --> 00:28:57,059
+We should keep records of treatments applied to a patient too.
+
+225
+00:28:57,799 --> 00:29:06,500
+Then you should create the treatment class and construct a one-to-many relationship between patient and treatment.
+
+226
+00:29:07,559 --> 00:29:15,399
+Then this means that you should add an array to the patient class which will contain treatment objects.
+
+227
+00:29:15,955 --> 00:29:31,035
+And as this is inheritance, doctor will inherit this ArrayList too, and some related methods such as added treatment, partial treatment, removal treatment, etc.
+
+228
+00:29:31,775 --> 00:29:43,375
+Those are completely unnecessary for the doctor because if a doctor is ill, he cannot do, he or she cannot do its job, the job.
+
+229
+00:29:44,211 --> 00:29:48,432
+So, this is the incorrect use of inheritance.
+
+230
+00:29:49,271 --> 00:29:50,551
+What should you do?
+
+231
+00:29:51,672 --> 00:30:05,811
+You should create a new class which will contain the members that will be contained in both patient and doctor.
+
+232
+00:30:07,152 --> 00:30:15,152
+And don't add any member fields that are exclusive to the subclasses.
+
+233
+00:30:15,751 --> 00:30:21,152
+Because the place to add them is in their respective subclasses.
+
+234
+00:30:21,852 --> 00:30:33,951
+Therefore, the correct model is to create a class person, give the common information to that class, name, ID number, cell phone number and date.
+
+235
+00:30:34,483 --> 00:30:46,683
+Then create the doctor and patient classes by inheritance, add the diploma number member field to the doctor, and add the treatments array to the patient.
+
+236
+00:30:48,064 --> 00:30:50,183
+This is the correct model.
+
+237
+00:30:51,203 --> 00:30:55,943
+In our Lecominist documentation, you cannot see anything such as a person.
+
+238
+00:30:56,564 --> 00:31:04,044
+But the correct modeling is this. You need this person class because of how inheritance works.
+
+239
+00:31:04,864 --> 00:31:07,804
+Okay. Please keep this in mind.
+
+240
+00:31:08,804 --> 00:31:20,364
+And experienced object-oriented modelers tend to choose other types of relationship instead of inheritance.
+
+241
+00:31:21,107 --> 00:31:28,967
+This doesn't mean that you shouldn't use inheritance. You should use inheritance, but you should use it in a correct way.
+
+242
+00:31:28,967 --> 00:31:29,647
+Okay?
+
+243
+00:31:32,267 --> 00:31:41,967
+And when trying to validate your choices, use the is a...
+
+244
+00:31:42,291 --> 00:31:52,612
+relationship. For example, in our wrong modeling, can we say every doctor is a patient? No, of course not. Every doctor is not a patient.
+
+245
+00:31:53,352 --> 00:32:06,912
+But in our correct modeling, we can say every doctor is a person. Correct? Yes. And every patient is a person too. Yes. It's also correct. Therefore, this is the correct model.
+
+246
+00:32:11,028 --> 00:32:13,368
+Okay. Any questions up to now?
+
+247
+00:32:15,108 --> 00:32:20,468
+The last bullet says this.
+
+248
+00:32:21,908 --> 00:32:24,448
+Patients should have treatments, not the doctors.
+
+249
+00:32:31,476 --> 00:32:56,476
+Okay. Inheritance is a class-level relationship because, for example, you said, we said, every doctor is a person. You cannot think otherwise. You cannot think of a doctor which is not a person. When you declare that the class doctor is created by inheritance from a class person,
+
+250
+00:32:57,011 --> 00:33:04,091
+Then, the only way to change this relationship is to change the source code.
+
+251
+00:33:06,211 --> 00:33:15,271
+As soon as the program begins, it is always said that a doctor is always a person.
+
+252
+00:33:18,071 --> 00:33:22,211
+Therefore, this relationship cannot be changed in runtime.
+
+253
+00:33:24,751 --> 00:33:30,152
+Kud, as we have seen, for example, we have a gallery and cars in it.
+
+254
+00:33:30,152 --> 00:33:36,352
+We can associate and disassociate any car with that gallery.
+
+255
+00:33:36,352 --> 00:33:43,552
+We have added new cars, removed the car, etc. We have associated and disassociated.
+
+256
+00:33:43,711 --> 00:33:46,352
+class with the Gale.
+
+257
+00:33:46,612 --> 00:33:52,652
+But you cannot disassociate a person, a doctor being a person.
+
+258
+00:33:53,008 --> 00:34:04,888
+You cannot do it. So this is a more rigid relationship and it should be taught as in terms of classes, not objects.
+
+259
+00:34:04,888 --> 00:34:19,168
+Every other types of relationship are better to be taught as relationships between objects, but inheritance is a strictly class level relationship.
+
+260
+00:34:23,155 --> 00:34:36,295
+Okay. And alternatively, we have the interface construct. This is the topic of a later week, so we will not go into details for now.
+
+261
+00:34:38,755 --> 00:34:45,956
+And I have a lot of managing design patterns. Do I have extra things? No. Okay.
+
+262
+00:34:49,652 --> 00:34:51,431
+Ops, pardon, far second.
+
+263
+00:34:53,492 --> 00:34:53,912
+Sure.
+
+264
+00:34:55,172 --> 00:34:56,112
+Ah, that's okay.
+
+265
+00:34:58,811 --> 00:35:05,931
+Corate usage of inheritance is very important because it could lead us to some errors easily.
+
+266
+00:35:07,315 --> 00:35:25,855
+After we have completed this object-oriented, object-orientation class, then to the students who are interested in working as software developers, please study the subject of design patterns.
+
+267
+00:35:27,827 --> 00:35:35,027
+This is a very necessary and required skill for the engineers.
+
+268
+00:35:37,628 --> 00:35:41,827
+And if you write design patterns in the library catalog,
+
+269
+00:35:42,164 --> 00:35:49,664
+We have a hard copy of that book and moreover we have the digital edition of that book.
+
+270
+00:35:49,664 --> 00:35:59,164
+You can access it from your house as long as you have activated your library account and latest account.
+
+271
+00:35:59,164 --> 00:36:04,164
+Visit the library website for details for group access.
+
+272
+00:36:04,692 --> 00:36:10,731
+But please study design patterns after this section.
+
+273
+00:36:10,731 --> 00:36:11,731
+Okay?
+
+274
+00:36:11,731 --> 00:36:18,891
+And the correct use of inheritance is a key aspect of every design pattern.
+
+275
+00:36:22,164 --> 00:36:37,524
+Actually, I give that lecture, Objectional, Analyze, and Design, in a graduate course in the first week terms.
+
+276
+00:36:38,584 --> 00:36:44,624
+Therefore, I have my lecture notes for design patterns in my EMS page.
+
+277
+00:36:45,204 --> 00:36:50,804
+I also teach some codes managrafaturing too. You can examine them too.
+
+278
+00:36:52,244 --> 00:36:56,304
+If you are interested, then please study on that topic.
+
+279
+00:37:03,092 --> 00:37:15,672
+An important use case of this inheritance, polymorphism and overriding.
+
+280
+00:37:16,352 --> 00:37:24,612
+Well, we have talked about that you can change the body of an inherited method, and this is called overriding.
+
+281
+00:37:25,612 --> 00:37:28,612
+And remember, final methods cannot be overriding.
+
+282
+00:37:29,152 --> 00:37:42,172
+And we have also talked about an instance of a subclass can be used, wherever an instance of its superclass is expected.
+
+283
+00:37:43,231 --> 00:37:45,792
+Then let's consider this design.
+
+284
+00:37:46,512 --> 00:37:53,832
+We have the class person and it has a method named introduce self and it is also introduction string.
+
+285
+00:37:53,832 --> 00:37:55,711
+For this purpose.
+
+286
+00:37:56,244 --> 00:38:02,984
+How does a person introduce yourself or herself? By saying the name.
+
+287
+00:38:03,724 --> 00:38:09,564
+For example, as a person, I will introduce myself as hello, my name is UMLNesne Yönelik.
+
+288
+00:38:09,564 --> 00:38:11,084
+And that's it.
+
+289
+00:38:12,364 --> 00:38:16,844
+And from this person class, we have created three subclasses.
+
+290
+00:38:17,604 --> 00:38:21,984
+Student class, employee class, and the retired class.
+
+291
+00:38:23,188 --> 00:38:28,688
+How does a student introduces himself to a polymorphism?
+
+292
+00:38:28,688 --> 00:38:31,688
+Different than as a person, of course.
+
+293
+00:38:31,688 --> 00:38:50,604
+Why? Because, alright, the student will also say his local name, but in addition, he or she will also tell something about his or her university and division.
+
+294
+00:38:52,275 --> 00:39:10,355
+For example, one of the students, [öğrenci], now in this lecture, when we ask him to introduce himself, he says, hello, I am [öğrenci], I am a student in New York District University, Computing Engineering Division.
+
+295
+00:39:11,275 --> 00:39:14,715
+He doesn't just say, hello, I am [öğrenci].
+
+296
+00:39:16,019 --> 00:39:25,280
+As an employee, let's consider me, I'm a teacher in that division, so I am an employee of my division.
+
+297
+00:39:25,280 --> 00:39:35,120
+When I introduce myself, I say that, hello, I am Yusuf Nesanchu, and I am a lecturer in Computer Science Department of UMLN.
+
+298
+00:39:35,120 --> 00:39:38,980
+I introduce myself, such as this.
+
+299
+00:39:39,731 --> 00:39:50,572
+And also, entire person gives the name and the last company that you or she has been worked in.
+
+300
+00:39:51,672 --> 00:39:58,851
+So, those subclasses introduce themselves somewhat differently.
+
+301
+00:39:59,972 --> 00:40:02,672
+But, let's consider that.
+
+302
+00:40:03,152 --> 00:40:05,632
+We have an array of type person.
+
+303
+00:40:06,291 --> 00:40:19,251
+And within this area, we have a random distribution of person objects, student objects, employee objects, and retired objects.
+
+304
+00:40:19,251 --> 00:40:26,711
+We can do it so, because you can use any subclass instead of a superclass.
+
+305
+00:40:27,219 --> 00:40:38,799
+So, in that superclass type, person type of an array, we can put some elements as student objects or employee options.
+
+306
+00:40:39,500 --> 00:40:47,959
+Then, let's consider that in a for loop, we have asked every element of the array to introduce them.
+
+307
+00:40:48,739 --> 00:40:49,879
+How they will work.
+
+308
+00:40:50,959 --> 00:40:54,119
+For example, let's take the case of a student.
+
+309
+00:40:55,155 --> 00:41:16,515
+Will that student introduce himself or herself as a student or because he or she is actually a student or as a person because every student is also a person and that object is in an array of type person, superclass.
+
+310
+00:41:17,235 --> 00:41:17,915
+What will happen?
+
+311
+00:41:18,815 --> 00:41:19,875
+Well, let me tell you.
+
+312
+00:41:22,099 --> 00:41:29,699
+Specialized version of that introduced self method is executed for every object in there.
+
+313
+00:41:30,460 --> 00:41:30,579
+Okay.
+
+314
+00:41:31,720 --> 00:41:32,980
+This is not automatically.
+
+315
+00:41:33,820 --> 00:41:36,559
+And this is called polymorphism.
+
+316
+00:41:37,860 --> 00:41:41,460
+Multiple, şey, çok biçimdir.
+
+317
+00:41:41,460 --> 00:41:43,139
+Poly means multiple.
+
+318
+00:41:43,740 --> 00:41:45,440
+Morph means in that case.
+
+319
+00:41:49,076 --> 00:41:50,076
+How can I say?
+
+320
+00:41:53,076 --> 00:41:54,076
+Piglet, for example.
+
+321
+00:41:56,076 --> 00:41:59,076
+All kind, all type, for example.
+
+322
+00:42:01,076 --> 00:42:10,076
+This is the default working mechanism of polymorphism in many languages, except C sharp.
+
+323
+00:42:13,235 --> 00:42:17,595
+Also, in including Java, polymorphism is enabled by default.
+
+324
+00:42:18,935 --> 00:42:26,015
+It should be downfall too because polymorphism is a very strong tool that we can use.
+
+325
+00:42:26,635 --> 00:42:30,015
+But of course, we shouldn't misuse it, by the way.
+
+326
+00:42:32,395 --> 00:42:39,375
+But however, that polymorphism is closed, disabled by default in C-Shark.
+
+327
+00:42:39,956 --> 00:42:55,916
+If you want a method to be actually overridden and worked in a polymorphic fashion, then you should add the add-on-write tag in front of every method that you liked.
+
+328
+00:42:57,496 --> 00:42:58,916
+Well, this is...
+
+329
+00:42:59,092 --> 00:43:09,532
+A little bit maybe more flexible because maybe you can disable the polymorphic behaviors for some methods.
+
+330
+00:43:11,652 --> 00:43:15,112
+But it's also a cumbersome way.
+
+331
+00:43:15,112 --> 00:43:24,592
+And as polymorphism is such an important feature of object orientation, I expect it to be enabled by this.
+
+332
+00:43:27,635 --> 00:43:33,235
+Ok, we have overridden some methods too, let's say.
+
+333
+00:43:33,735 --> 00:43:46,596
+But what if we both need the overridden new version of the method and non-overridden, the old version of that method at the same time?
+
+334
+00:43:47,215 --> 00:43:53,036
+Can we do it? Yes, we can. We can do it by using the super pointers.
+
+335
+00:44:01,300 --> 00:44:19,300
+Tamam, şimdi bir örneğin bir örneğin bir örneğin yapacağız. Eğer bir soru var, sorun. Eğer yok, sorun. Bir sonraki bir süre sonraki bir süre sonraki bir şekilde yapacağız.
+
+336
+00:44:19,300 --> 00:44:29,039
+Buyrun, sonu var, sağlayın. Biraz teorik olduk ama önce bütün kuralları anlatayım ki...
+
+337
+00:44:29,039 --> 00:44:33,180
+Ondan sonra bunları örneklerde uygulayabilelim.
+
+338
+00:44:33,940 --> 00:44:36,840
+Peki, şimdi 10 dakika ara.
+
+339
+00:44:38,440 --> 00:44:41,360
+Demek oluyor ki, nerede bu?
+
+340
+00:44:41,720 --> 00:44:42,160
+Şurada.
+
+341
+00:44:43,400 --> 00:44:44,039
+13.45.
+
+342
+00:44:49,396 --> 00:44:57,396
+Beşinde, on üç, elli beş arasında, on dakika.
+
+343
+00:55:02,291 --> 00:55:28,291
+Okay, class, the break time is over. We can continue with our inheritance example. Please let me open this in its PDF form so I can arrange it better in the screen. And also this has a little bit small off screen, this computer, so...
+
+344
+00:55:28,692 --> 00:55:30,972
+This is a must.
+
+345
+00:55:37,748 --> 00:55:41,288
+Ok. Now we are in here.
+
+346
+00:55:42,988 --> 00:55:43,448
+This.
+
+347
+00:55:44,528 --> 00:55:45,488
+Şana da gelsin.
+
+348
+00:55:46,828 --> 00:55:47,608
+Şöyle de.
+
+349
+00:55:49,468 --> 00:55:49,688
+Evet.
+
+350
+00:55:50,828 --> 00:55:52,448
+Çıkalım daha bir şey biliyor muyum?
+
+351
+00:55:54,968 --> 00:55:55,368
+Ayy.
+
+352
+00:55:55,368 --> 00:55:56,328
+Çok istedim.
+
+353
+00:56:02,835 --> 00:56:03,835
+Evet.
+
+354
+00:56:11,284 --> 00:56:13,284
+Ok, this is somewhat better.
+
+355
+00:56:15,684 --> 00:56:19,204
+And let's see what we have here.
+
+356
+00:56:20,403 --> 00:56:23,124
+We will have a class person.
+
+357
+00:56:23,923 --> 00:56:29,923
+And from the class person, we will create the employee class, subclass.
+
+358
+00:56:30,724 --> 00:56:36,164
+And from that employee class, we will create the manager subclass.
+
+359
+00:56:36,724 --> 00:56:41,284
+Therefore, we will be modeling a company, for example.
+
+360
+00:56:42,844 --> 00:56:49,864
+And in order to test those classes, we will write a class having a main method.
+
+361
+00:56:50,524 --> 00:56:55,204
+We will create an array of employees.
+
+362
+00:56:56,164 --> 00:57:02,504
+And to that array, we will add both two employees and one manager.
+
+363
+00:57:03,284 --> 00:57:11,784
+And obtain all of their names and salaries in our example.
+
+364
+00:57:11,784 --> 00:57:15,284
+But first, let's consider our design.
+
+365
+00:57:15,284 --> 00:57:18,284
+The person class is very straightforward.
+
+366
+00:57:18,284 --> 00:57:27,784
+It has the name, member field, and a constructor for assigning it and get the method for name.
+
+367
+00:57:28,115 --> 00:57:32,155
+From it, by using inheritance, we create the employee class.
+
+368
+00:57:33,195 --> 00:57:36,096
+He or she will have a salary of integers.
+
+369
+00:57:38,356 --> 00:57:40,076
+And it's constructed.
+
+370
+00:57:40,195 --> 00:57:41,596
+What about its constructs?
+
+371
+00:57:41,956 --> 00:57:50,275
+The constructor of employee class will obtain, will accept a name and the salary for that employee.
+
+372
+00:57:50,715 --> 00:57:51,096
+Why?
+
+373
+00:57:51,516 --> 00:57:54,155
+Because every employee is a person.
+
+374
+00:57:55,284 --> 00:58:08,884
+Therefore, the employee class will inherit the name member, but it cannot access it directly as it's private.
+
+375
+00:58:09,884 --> 00:58:20,324
+And also, we don't have a setter method for the name, so the employee cannot change the name directly.
+
+376
+00:58:21,139 --> 00:58:29,980
+But we should be able to give a name to an employee too because every employee is a person and every employee will have a name too.
+
+377
+00:58:31,259 --> 00:58:38,239
+Well, we can do it by using the constructor of the superclass.
+
+378
+00:58:38,239 --> 00:58:42,019
+We will learn how to do it while closing.
+
+379
+00:58:42,931 --> 00:58:48,751
+And of course, every employee will have a salary, so the constructor takes this value too.
+
+380
+00:58:49,652 --> 00:58:54,771
+And then we have both get run set of methods for that salary.
+
+381
+00:58:56,451 --> 00:59:00,251
+And we create the manager class.
+
+382
+00:59:00,692 --> 00:59:12,372
+A manager is a special type of employee. A manager has a salary too, but also a manager may have a bonus, a monthly bonus.
+
+383
+00:59:13,432 --> 00:59:22,539
+Therefore, the constructor of the manager accepts name and salary because name because every manager is...
+
+384
+00:59:22,612 --> 00:59:27,912
+An employer and also every employee is a person and a person has a name.
+
+385
+00:59:28,512 --> 00:59:34,912
+And every manager also will have a salary because every manager is also an employee.
+
+386
+00:59:36,512 --> 00:59:39,852
+But not every manager needs to have a bonus.
+
+387
+00:59:40,352 --> 00:59:41,312
+It can be changed.
+
+388
+00:59:42,312 --> 00:59:47,711
+So we have the set and get set bonus method for the manager.
+
+389
+00:59:48,307 --> 00:59:52,208
+We don't need a getter method for the bonus.
+
+390
+00:59:52,948 --> 01:00:04,168
+The get salary method will suffice because when calculating the total salary of a manager, we will add the salary and bonus.
+
+391
+01:00:05,448 --> 01:00:08,307
+Therefore, we will have a...
+
+392
+01:00:09,972 --> 01:00:12,152
+Particular getCellery metode.
+
+393
+01:00:12,572 --> 01:00:17,731
+Therefore, we will not need the getBonus method for the manager.
+
+394
+01:00:19,312 --> 01:00:20,192
+Okay.
+
+395
+01:00:20,392 --> 01:00:22,751
+Now let's begin coding those classes.
+
+396
+01:00:23,751 --> 01:00:25,271
+Let me run Eclipse.
+
+397
+01:00:27,112 --> 01:00:28,412
+Şöyle yapayım.
+
+398
+01:00:29,731 --> 01:00:30,632
+Unrise edeceğim.
+
+399
+01:00:30,751 --> 01:00:32,312
+Başka türlü erişim, unruld oluyor.
+
+400
+01:00:32,492 --> 01:00:33,211
+Kusura bakmayın.
+
+401
+01:00:34,251 --> 01:00:36,292
+Let's run an Eclipse.
+
+402
+01:00:49,364 --> 01:00:52,164
+First, let me maximize this.
+
+403
+01:01:01,460 --> 01:01:02,460
+Okay.
+
+404
+01:01:04,259 --> 01:01:06,259
+This is week seven.
+
+405
+01:01:06,259 --> 01:01:13,460
+So let's create a package, new package.
+
+406
+01:01:20,659 --> 01:01:22,860
+And let's generate the class.
+
+407
+01:01:22,860 --> 01:01:26,860
+So first then we will fill their bodies.
+
+408
+01:01:28,059 --> 01:01:29,259
+We will have a...
+
+409
+01:01:29,427 --> 01:01:32,487
+New class person.
+
+410
+01:01:36,884 --> 01:01:37,344
+Tamam.
+
+411
+01:01:40,851 --> 01:01:46,991
+And you will have the class, you know, class, employer.
+
+412
+01:01:53,300 --> 01:01:56,079
+Here we will have the class manager.
+
+413
+01:02:01,876 --> 01:02:03,956
+And we will have class company.
+
+414
+01:02:13,331 --> 01:02:16,672
+Okay, now I can do this and this.
+
+415
+01:02:18,092 --> 01:02:20,851
+And let's also open up our design.
+
+416
+01:02:21,311 --> 01:02:22,391
+And let's begin coding.
+
+417
+01:02:23,512 --> 01:02:25,811
+Well, the person class is easy.
+
+418
+01:02:27,092 --> 01:02:31,731
+It says private string name.
+
+419
+01:02:33,364 --> 01:02:43,004
+constructor and getter method. Let's call it quickly source generate constructor using fields name.
+
+420
+01:02:44,804 --> 01:02:47,804
+And let's add getter method.
+
+421
+01:02:48,564 --> 01:02:51,204
+Generate getters.
+
+422
+01:02:52,364 --> 01:02:54,244
+Select getters.
+
+423
+01:02:55,923 --> 01:03:00,764
+Okay, this is it for our class. It's rather simple.
+
+424
+01:03:01,300 --> 01:03:03,980
+Let's consider the class employee.
+
+425
+01:03:04,640 --> 01:03:10,500
+Well, we want it to be the subclass of person.
+
+426
+01:03:10,920 --> 01:03:16,500
+Therefore, we have to write the Xtimes keyload in Java.
+
+427
+01:03:16,980 --> 01:03:19,220
+Then we will supply the superclassmen.
+
+428
+01:03:20,900 --> 01:03:24,059
+Public class, employee, Xtimes, person.
+
+429
+01:03:24,579 --> 01:03:24,700
+Okay.
+
+430
+01:03:25,640 --> 01:03:28,820
+Now, let's continue our code.
+
+431
+01:03:29,204 --> 01:03:36,204
+I have an error over there, but let's suppose that I didn't notice it.
+
+432
+01:03:36,204 --> 01:03:38,204
+Let's continue.
+
+433
+01:03:40,204 --> 01:03:45,204
+Cylent and salary.
+
+434
+01:03:45,204 --> 01:03:51,204
+And let's have the constructor being called it.
+
+435
+01:03:56,115 --> 01:04:02,295
+Think, name, and study.
+
+436
+01:04:02,295 --> 01:04:03,275
+Okay.
+
+437
+01:04:06,804 --> 01:04:10,384
+Now, what should we do?
+
+438
+01:04:11,984 --> 01:04:19,564
+First, let's try to assign the name, but we cannot write something such as this.name.
+
+439
+01:04:20,744 --> 01:04:27,364
+We can only access the getName method, which is inherited from the class person.
+
+440
+01:04:27,804 --> 01:04:31,504
+I cannot access that name number field directly.
+
+441
+01:04:32,344 --> 01:04:33,364
+What should I do?
+
+442
+01:04:33,940 --> 01:04:37,940
+Should I declare it as protected in the superclass?
+
+443
+01:04:38,579 --> 01:04:42,079
+Well, I can do it so, but I don't have to.
+
+444
+01:04:43,419 --> 01:04:49,980
+What I will do is to, well, how can I set the name of that person?
+
+445
+01:04:49,980 --> 01:04:55,980
+I only have that constructor method being available to me.
+
+446
+01:04:56,500 --> 01:04:57,899
+And I can use it.
+
+447
+01:04:58,219 --> 01:05:00,980
+I can use it by using the...
+
+448
+01:05:01,972 --> 01:05:12,352
+Super keyword. Remember that the base class, the super class, it's called super class, and you can use the super keyword.
+
+449
+01:05:13,092 --> 01:05:21,212
+By only using the super keyword and method parentheses, you can access the constructor of the super class.
+
+450
+01:05:21,992 --> 01:05:28,072
+What does the constructor of the class person, the super class, expect from us?
+
+451
+01:05:28,416 --> 01:05:30,416
+The name of that person.
+
+452
+01:05:31,616 --> 01:05:34,916
+And this name has been given us as a parameter.
+
+453
+01:05:35,776 --> 01:05:43,496
+So what I will do is to write this super name and that's all.
+
+454
+01:05:44,936 --> 01:05:51,216
+By using this super keyword, I can access the constructor of the super class.
+
+455
+01:05:51,216 --> 01:05:54,096
+And I have to do it.
+
+456
+01:05:55,059 --> 01:06:12,579
+This is not an option. This is not a choice. This is mandatory. This is a must. After doing this, notice that my error has gone. I only have a warning that the salary has not been used yet.
+
+457
+01:06:13,172 --> 01:06:16,272
+Yet, I will just use it.
+
+458
+01:06:16,712 --> 01:06:26,972
+Now, as I have used the construct of the supercast, then I am free to set the salary of that employee.
+
+459
+01:06:28,412 --> 01:06:33,932
+This dot salary equals to salary.
+
+460
+01:06:34,532 --> 01:06:36,072
+This is simple setting.
+
+461
+01:06:36,072 --> 01:06:36,972
+One.
+
+462
+01:06:39,764 --> 01:06:51,604
+Now you have learned this super keyword. Super keyword used alone and with parentheses means the constructor of the super class.
+
+463
+01:06:52,404 --> 01:06:57,564
+Every employee is a person, so every employee will have a name.
+
+464
+01:06:58,404 --> 01:07:06,124
+And the correct way to initialize that information is by using the constructor of the super class.
+
+465
+01:07:06,516 --> 01:07:10,875
+And this statement must always be the first statement.
+
+466
+01:07:11,576 --> 01:07:20,435
+If I change the lines six and seven, cut it from here and paste it here, I have that error, okay?
+
+467
+01:07:21,076 --> 01:07:27,016
+The first error is we have to call a constructor.
+
+468
+01:07:27,795 --> 01:07:33,775
+And in here, it says this constructor call must be the first statement, okay?
+
+469
+01:07:34,483 --> 01:07:36,903
+So, let's change it back.
+
+470
+01:07:41,204 --> 01:07:47,524
+Okay, please do not forget this. And we can continue coding our employee class.
+
+471
+01:07:49,444 --> 01:07:54,324
+Well, we just have the get-run-setter method for the salary. Let's add them.
+
+472
+01:07:56,724 --> 01:08:03,524
+And generate get-run-setters of last number. Okay. Okay, this is it.
+
+473
+01:08:04,467 --> 01:08:09,807
+And the warning has gone away as we are now using that salaric battlefield.
+
+474
+01:08:09,807 --> 01:08:12,747
+Okay, what you learned is this.
+
+475
+01:08:13,187 --> 01:08:17,227
+Okay, first this with an extens superclass name.
+
+476
+01:08:17,747 --> 01:08:22,907
+And we can access the construct of the superclass by using the super keyword.
+
+477
+01:08:23,787 --> 01:08:26,507
+Okay, that class is complete.
+
+478
+01:08:28,147 --> 01:08:30,547
+Let's consider that management.
+
+479
+01:08:31,380 --> 01:08:37,220
+One, that manager extends an employee.
+
+480
+01:08:40,100 --> 01:08:55,079
+And similar to our error in the employee class, we have to call the constructor of the public class one direct class, which means the employee class.
+
+481
+01:08:55,667 --> 01:09:00,067
+But first add that bonus member field here.
+
+482
+01:09:01,387 --> 01:09:03,948
+Private field bonus.
+
+483
+01:09:05,307 --> 01:09:07,507
+Then let's add the constructor.
+
+484
+01:09:10,387 --> 01:09:11,147
+Public.
+
+485
+01:09:12,427 --> 01:09:13,347
+Private shares.
+
+486
+01:09:19,412 --> 01:09:24,932
+Sextum, evils, alavé, vajt.
+
+487
+01:09:28,500 --> 01:09:39,500
+Now, first we will use the super killer to access the constructor of the class, which extracts both name and salary.
+
+488
+01:09:42,739 --> 01:09:55,460
+What we do here is to forward those parameters, LR to the manager constructor, to the supercore classes constructor.
+
+489
+01:09:56,460 --> 01:09:57,559
+And that's it.
+
+490
+01:10:00,627 --> 01:10:05,147
+For the moment, I don't set the bonus in the constructor.
+
+491
+01:10:05,667 --> 01:10:09,288
+I will do it later by adding a second constructor.
+
+492
+01:10:09,627 --> 01:10:13,127
+I will overload that construct.
+
+493
+01:10:14,268 --> 01:10:15,987
+Now let's continue.
+
+494
+01:10:16,967 --> 01:10:18,907
+Setter method for bonus.
+
+495
+01:10:19,427 --> 01:10:20,707
+It's also easier.
+
+496
+01:10:22,387 --> 01:10:24,747
+Source, generate, get, results, it does.
+
+497
+01:10:25,332 --> 01:10:28,152
+I just write set bonus method.
+
+498
+01:10:28,592 --> 01:10:33,052
+And then let's try to quote that getCelary method here.
+
+499
+01:10:35,452 --> 01:10:36,012
+Carclic.
+
+500
+01:10:37,891 --> 01:10:39,292
+GetCelary.
+
+501
+01:10:41,652 --> 01:10:50,072
+I have to do this because the salary of a manager is calculated differently.
+
+502
+01:10:51,028 --> 01:10:57,688
+The salary of a miniature is the manager's salary added by the bonds.
+
+503
+01:10:58,967 --> 01:11:00,768
+So, what can we do?
+
+504
+01:11:00,768 --> 01:11:07,667
+Can I write something such as this return salary plus bonds?
+
+505
+01:11:08,608 --> 01:11:13,268
+Well, in that case, salary is inherited from employee.
+
+506
+01:11:14,228 --> 01:11:18,427
+It's a private member, so I cannot use it directly.
+
+507
+01:11:19,380 --> 01:11:35,300
+However, I can use the getter method of the employee class. I have inhabited it. So maybe I can write get salary here. Return get salary plus bonus.
+
+508
+01:11:36,399 --> 01:11:44,340
+Well, this will not work either. I don't have any errors here yet.
+
+509
+01:11:44,787 --> 01:11:48,067
+The compiler does not give me any error.
+
+510
+01:11:48,768 --> 01:11:51,688
+But this is an infinite loop.
+
+511
+01:11:52,707 --> 01:11:52,967
+Why?
+
+512
+01:11:53,188 --> 01:11:56,047
+Because let's check here.
+
+513
+01:11:56,447 --> 01:12:04,007
+When I highlight the get salary, also that get salary here at line 12 is also highlighted.
+
+514
+01:12:04,847 --> 01:12:09,768
+This means this method is calling itself indefinitely.
+
+515
+01:12:12,564 --> 01:12:30,004
+So we will have an exception. We have to be able to access the unmodified version of the getCeler method as it is in the superclass, in the employee class.
+
+516
+01:12:31,764 --> 01:12:38,884
+In order to do that, I will again use the super keyword, but this time by using that.
+
+517
+01:12:39,828 --> 01:12:55,348
+Now, scupper.getSelary means execute the original, non-overwritten version of that getSelary method from the subclass.
+
+518
+01:12:56,408 --> 01:13:01,088
+Therefore, this one will return me the correct salary.
+
+519
+01:13:01,708 --> 01:13:05,188
+Then I will add bonus and return that information.
+
+520
+01:13:05,188 --> 01:13:07,268
+Okay, this is the way.
+
+521
+01:13:08,180 --> 01:13:12,380
+I sound like the Mandalorian. This is the way. Okay.
+
+522
+01:13:15,760 --> 01:13:21,400
+If there are no questions, I can begin coding class company.
+
+523
+01:13:22,200 --> 01:13:30,440
+In fact, I will use that code directly in order to not to skip over any important details.
+
+524
+01:13:31,520 --> 01:13:34,540
+So, if there aren't any questions,
+
+525
+01:13:35,028 --> 01:13:38,188
+I will maximize that eclipse.
+
+526
+01:13:40,108 --> 01:13:42,688
+And see the package explorer.
+
+527
+01:13:43,608 --> 01:13:50,087
+And take the source code of that company class from here.
+
+528
+01:13:53,087 --> 01:13:54,807
+Which package was it?
+
+529
+01:13:56,488 --> 01:13:57,587
+05.
+
+530
+01:13:57,587 --> 01:13:58,048
+Okay.
+
+531
+01:14:00,608 --> 01:14:02,448
+Let's copy this class.
+
+532
+01:14:05,140 --> 01:14:08,960
+And it's the table here.
+
+533
+01:14:09,680 --> 01:14:10,460
+You don't have to do that?
+
+534
+01:14:10,560 --> 01:14:11,800
+Yes, I don't have to do that.
+
+535
+01:14:18,100 --> 01:14:20,540
+Ok, I can save it, I guess.
+
+536
+01:14:21,500 --> 01:14:22,420
+Alright, that's fine.
+
+537
+01:14:23,079 --> 01:14:25,500
+Now let's examine the test code.
+
+538
+01:14:26,640 --> 01:14:30,579
+I have an array named start of type MPOE.
+
+539
+01:14:31,440 --> 01:14:34,900
+And I will add three objects in it.
+
+540
+01:14:35,340 --> 01:14:38,819
+Therefore, I created it with the capacity of trail.
+
+541
+01:14:41,319 --> 01:14:44,900
+I have used some writers example.
+
+542
+01:14:45,619 --> 01:14:56,780
+Let's first create a manager object. Let's call that object boss and use the constructors, give a name and the salary.
+
+543
+01:14:57,780 --> 01:15:07,500
+And I am giving a bonus to the manager. Then I am adding that object to the array.
+
+544
+01:15:08,500 --> 01:15:11,539
+Then I will create two employees.
+
+545
+01:15:12,051 --> 01:15:18,931
+One of is Yashan Muratürk and has this amount of salary.
+
+546
+01:15:19,832 --> 01:15:34,891
+Instead of defining a temporary object, such as in the case of that manager boss, I am directly assigning the newly created object to the array.
+
+547
+01:15:34,891 --> 01:15:37,891
+And I add another...
+
+548
+01:15:39,123 --> 01:15:40,123
+Object 2.
+
+549
+01:15:40,123 --> 01:15:54,123
+And in the for loop, I am printing the names and salaries of each author in the spec array.
+
+550
+01:15:54,123 --> 01:15:57,123
+What will happen?
+
+551
+01:15:57,123 --> 01:15:58,891
+It will work correctly.
+
+552
+01:15:59,028 --> 01:16:10,048
+As we haven't forgotten to use that super keyword here in the getCelary method of the class.
+
+553
+01:16:10,528 --> 01:16:12,468
+Let's go back to the company.
+
+554
+01:16:13,228 --> 01:16:19,808
+What I am expecting, boss will have 10,500 relas salary.
+
+555
+01:16:20,747 --> 01:16:24,948
+And you see the other salaries here as well.
+
+556
+01:16:24,948 --> 01:16:26,408
+Let's try this.
+
+557
+01:16:32,692 --> 01:16:42,932
+Okay. Everything is expected. The boss takes 10,000 and 500, and the others are regular salaries.
+
+558
+01:16:44,131 --> 01:16:48,372
+And now you can witness polymorphism.
+
+559
+01:16:50,532 --> 01:16:57,492
+The first object at index zero of the array is actually a manager object.
+
+560
+01:16:58,036 --> 01:17:02,036
+Although this array is of type employee.
+
+561
+01:17:03,036 --> 01:17:15,036
+And when I call the get salary method of that object, it has worked as its most specialized version.
+
+562
+01:17:15,036 --> 01:17:20,216
+It worked as a manager, not as an employee.
+
+563
+01:17:21,171 --> 01:17:25,971
+Pataz var regular employees and they have acted as such.
+
+564
+01:17:28,291 --> 01:17:28,811
+This is it.
+
+565
+01:17:31,691 --> 01:17:34,331
+If you have any questions, please ask.
+
+566
+01:17:35,051 --> 01:17:37,072
+You can ask in Turkish if you wish.
+
+567
+01:17:53,108 --> 01:17:57,427
+Ok, if not, I will tell you something more about it.
+
+568
+01:18:04,180 --> 01:18:05,180
+Okay.
+
+569
+01:18:11,180 --> 01:18:13,180
+Okay, we have talked about supers.
+
+570
+01:18:16,180 --> 01:18:17,180
+How? What about?
+
+571
+01:18:18,180 --> 01:18:19,180
+Hmm, okay.
+
+572
+01:18:22,180 --> 01:18:23,180
+Remember that,
+
+573
+01:18:25,180 --> 01:18:26,180
+in class managers,
+
+574
+01:18:27,180 --> 01:18:31,180
+I have called the superclasses constructor by giving name and salary.
+
+575
+01:18:31,823 --> 01:18:36,203
+This is only one statement. Do not split it, okay?
+
+576
+01:18:36,843 --> 01:18:39,983
+For example, you cannot write super name and superset.
+
+577
+01:18:40,603 --> 01:18:49,663
+Because there is only one constructor in the super class, which is the super having two parameters.
+
+578
+01:18:50,503 --> 01:18:53,304
+Do not write such and such thing, okay?
+
+579
+01:18:54,547 --> 01:19:17,728
+If you add two constructors to the employee class, then it will not work for the employee class either because when you try to initialize that employee with a name, then when you try to initialize it with a salary, the previous version of the employee will be vanished.
+
+580
+01:19:18,355 --> 01:19:19,355
+Ok?
+
+581
+01:19:19,355 --> 01:19:24,355
+It will be marked for deletion and it cannot be accessed.
+
+582
+01:19:24,355 --> 01:19:34,355
+That the object created in the second construct form is completely different object than previous one.
+
+583
+01:19:34,355 --> 01:19:37,355
+Therefore, it doesn't work anyway.
+
+584
+01:19:38,100 --> 01:19:51,300
+Moreover, the rule is you can only use super once in the constructor and once and as the first statement. There are no exceptions.
+
+585
+01:19:54,360 --> 01:19:56,559
+And we have talked about this.
+
+586
+01:19:59,420 --> 01:20:00,000
+Ha, moreover.
+
+587
+01:20:00,000 --> 01:20:06,280
+You can use super only once. You cannot use such as super dot super.
+
+588
+01:20:07,039 --> 01:20:09,680
+In our class diagram, for example...
+
+589
+01:20:09,680 --> 01:20:10,700
+Doğru sorabilir miyim hocam?
+
+590
+01:20:11,020 --> 01:20:11,979
+Tabii, lütfen buyurun.
+
+591
+01:20:12,319 --> 01:20:16,360
+E hocam, burada şimdi super dediğimiz zaman sadece bir üst katmana mı çıkabiliyoruz?
+
+592
+01:20:16,360 --> 01:20:22,360
+Evet, aynen öyle. Onu demek istiyordum. Burada nota baktığımızda...
+
+593
+01:20:23,412 --> 01:20:33,471
+Şurada, ben manager'dan, süpür ve sadece employee'e erişimlerim. Manager'dan person'a erişmek diye bir şey söz konusu değil.
+
+594
+01:20:33,672 --> 01:20:34,852
+Adım adım gidiyor yani.
+
+595
+01:20:35,592 --> 01:20:38,032
+Evet, aynen öyle. Adım adım gitmek zorundayız.
+
+596
+01:20:38,731 --> 01:20:47,072
+Bir de mesela bir üsttekini, özelliğini çağırdığımız zaman, mesela süper yerine onun ismini yazabilir miyiz mesela?
+
+597
+01:20:47,072 --> 01:20:48,072
+Yok.
+
+598
+01:20:48,884 --> 01:21:05,924
+Yok. Sadece hani statik metotlar, sınıf adı üzerinden çalışılıyor. Hani employee'nin şusu diye bir şey belirtemiyoruz. Zaten göreceğiz Java ve diğer çok modern mesleğe Yönelik dilde sadece bir tane ebeveynin olabiliyor.
+
+599
+01:21:06,283 --> 01:21:16,324
+Math, the inheritance desteklenmiyor. Çukluk atım desteklenmiyor. O yüzden employee'nin ikini veya kullan diye bir şeyden bize gerek yok. Çünkü başka bir atası da yok zaten.
+
+600
+01:21:16,884 --> 01:21:17,804
+Başka atlası olamıyor.
+
+601
+01:21:18,463 --> 01:21:21,463
+Yani managerın içinde mesela süper dedik mesela.
+
+602
+01:21:21,664 --> 01:21:28,264
+Süper mesela yani override'ın olan metodu değil de employee'ın içindeki mesela get salari'yi kullandık.
+
+603
+01:21:28,984 --> 01:21:30,463
+O gitmek de yazabilirdik.
+
+604
+01:21:30,804 --> 01:21:32,703
+Mesela şunu şöyle diyeyim mesela.
+
+605
+01:21:33,244 --> 01:21:38,164
+Yani managerın içinde işte employee.get salari gibi bir şey yapabilir miydik managerın içinde?
+
+606
+01:21:38,904 --> 01:21:40,503
+Evet yapabiliriz istersek.
+
+607
+01:21:40,503 --> 01:21:43,984
+Mesela şuraya ama şimdi şurada override ediyoruz ya.
+
+608
+01:21:44,307 --> 01:21:50,448
+Ben şimdi burada sadece GetSeller'ı çağırırsam, hani bir C'ye koymuyorum ama pardon, bu kadar bir kullanma dedim.
+
+609
+01:21:53,847 --> 01:22:01,488
+Şimdi boş kullandım, bir hata vermiyor ama bakın şimdi kıtladığımda bakın neyi highlight ediyor, override edilmiş halini highlight ediyor.
+
+610
+01:22:02,195 --> 01:22:15,195
+Ben buradan da set bonusun içinden de get salary'e erişmek istediğimde eğer sadece kendisini yazarsam kendisinin override edilmiş metoduna ulaşabiliyorsunuz.
+
+611
+01:22:15,596 --> 01:22:21,296
+Ama öbür türlü super nokta diyerekten böyle bir şey yapabiliyorsunuz.
+
+612
+01:22:22,096 --> 01:22:24,695
+Ekran gelmedi galiba da şeyde kaldı.
+
+613
+01:22:25,695 --> 01:22:28,976
+Olabilir. Bir iki saniye bekleyelim bakalım gelecek mi.
+
+614
+01:22:32,627 --> 01:22:39,967
+Gelmediyse şöyle yapalım. Bir paylaşımı durdurayım. Ondan sonra tıklar paylaşıma geçeyim.
+
+615
+01:22:45,043 --> 01:22:55,043
+Ondan sonra koda geçelim. Şimdi mesela şöyle bir şey yapalım. Yeni bir metot ekleyeyim ben. Buna diyelim ki mesela
+
+616
+01:23:12,948 --> 01:23:28,547
+Çalışan olarak maaşım diyelim, artı, küpür nokta, geç sanırım.
+
+617
+01:23:30,787 --> 01:23:36,547
+B, müdür olarak.
+
+618
+01:23:40,467 --> 01:23:41,827
+Açım, ay na açım.
+
+619
+01:23:41,827 --> 01:23:48,087
+Açım ve altı direk geçsene.
+
+620
+01:23:51,699 --> 01:24:10,119
+Burada koşturuyoruz mesela şeyde, company'de. Şunu da kaydedeyim. Şurada yapmak istiyorum. For döngüsünde değil de. Şu boss'u yaptıktan sonra buraya ekleyebilirim mesela.
+
+621
+01:24:10,119 --> 01:24:16,419
+Boss.dias diyor mesela. Kaydet çalıştır.
+
+622
+01:24:21,395 --> 01:24:32,755
+Çalışan olarak maaş 8000, evet, bakın çalışan olarak maaş 8000 ama müdür olarak maaş 10500, 2500 eklenmiş hal.
+
+623
+01:24:32,755 --> 01:24:33,895
+Yani,
+
+624
+01:24:36,307 --> 01:24:53,068
+İlla ki mesela üst sınıfın yetseleri metoduna onun alt sınıfta override edilmiş halin içinden erişmemiz şart diye bir şey yok. Herhangi bir yerden erişebilirsiniz. Ve her seferinde sadece bir tane erişebilirsiniz. Mesela şöyle bir şey yazamayız.
+
+625
+01:25:02,015 --> 01:25:03,916
+ismin filan bilelim.
+
+626
+01:25:04,376 --> 01:25:05,015
+Diyelim ki
+
+627
+01:25:05,015 --> 01:25:06,675
+işte
+
+628
+01:25:06,675 --> 01:25:07,635
+atı
+
+629
+01:25:07,635 --> 01:25:09,395
+super nokta
+
+630
+01:25:09,395 --> 01:25:11,555
+get
+
+631
+01:25:11,555 --> 01:25:12,315
+name
+
+632
+01:25:13,011 --> 01:25:21,631
+Yazdım ama, automatic compilation, railway girdi ama bakın şu ikinci süpürün üstünde artık hata veriyor.
+
+633
+01:25:22,051 --> 01:25:26,491
+Ama burada hata diyor ki, bir daha bunu kullanamazsın anlamında diyor.
+
+634
+01:25:26,911 --> 01:25:28,551
+Sadece bir kere kullanabilirsin.
+
+635
+01:25:28,551 --> 01:25:30,771
+O da hani şöyle.
+
+636
+01:25:31,380 --> 01:25:41,539
+Bu anlamda çok anlamı da yok. Çünkü override etmedim bu yetmeği metodunu ama en azından ne yapılabilir ne yapılamaz onu göstermiş olurum.
+
+637
+01:25:41,539 --> 01:25:50,340
+Böyle süper yok, süper yok. Her zaman kalıtım hiyerarşisindeki bir üst sınıfın üyelerine girişilebilirsiniz.
+
+638
+01:25:50,340 --> 01:25:55,380
+O da zaten eksperks yazarken o sınıfın ismini yazıyorsunuz.
+
+639
+01:25:55,380 --> 01:25:58,380
+Evet, doğru mu?
+
+640
+01:25:58,676 --> 01:26:06,756
+Peki hocam orada mesela şey diyebilir miydik mesela süper süper değil de doğrudan normal hangisiydi en üstte employee.get name yazabilir miydik orada?
+
+641
+01:26:07,596 --> 01:26:12,716
+Hayır çünkü bu static metod kullanımı gibi oluyor.
+
+642
+01:26:14,216 --> 01:26:15,736
+Doğru obje yaratmadık doğru.
+
+643
+01:26:16,376 --> 01:26:17,336
+Tamam dedim teşekkür eder.
+
+644
+01:26:17,336 --> 01:26:18,556
+Bir şey değil.
+
+645
+01:26:19,696 --> 01:26:21,776
+Peki başka soru var mı?
+
+646
+01:26:30,387 --> 01:26:33,768
+Peki, şimdi şey ekleyeceğiz yanılmıyorsam.
+
+647
+01:26:36,327 --> 01:26:38,148
+Evet tamam, bundan bahsettik.
+
+648
+01:26:40,268 --> 01:26:42,408
+For döngüsünü bahsettik.
+
+649
+01:26:43,148 --> 01:26:45,228
+Sequence diagramını da şimdilik çizmeyiz.
+
+650
+01:26:45,587 --> 01:26:47,507
+Önce başka bir şeyler yapmak istiyorum.
+
+651
+01:26:49,847 --> 01:26:51,127
+Ha, o da buradaymış.
+
+652
+01:26:52,648 --> 01:26:53,747
+Neyse, tamam peki.
+
+653
+01:26:55,908 --> 01:26:57,207
+Anlaşım oluşasına kadar.
+
+654
+01:26:57,811 --> 01:26:59,592
+Ben önce şunu konuşmak istiyorum.
+
+655
+01:27:00,271 --> 01:27:02,792
+First, I want to talk about this.
+
+656
+01:27:03,032 --> 01:27:07,212
+Then, I will go back to the sequence diagram.
+
+657
+01:27:10,391 --> 01:27:13,012
+Tamam, inheritance konusunu bitirelim arkadaşlar.
+
+658
+01:27:13,271 --> 01:27:14,692
+Öyle kapatalım dersin.
+
+659
+01:27:14,992 --> 01:27:19,891
+I want to complete the inheritance relationship topic.
+
+660
+01:27:20,351 --> 01:27:23,832
+Then, we will end today's lecture.
+
+661
+01:27:29,268 --> 01:27:35,208
+Şey, arkadaşlar, full moduna geçmem belki de bir şey karıştırıyor.
+
+662
+01:27:35,507 --> 01:27:37,108
+Şu an full modundan çıktım.
+
+663
+01:27:37,387 --> 01:27:39,988
+Ekranımı, PowerPoint ekranımı görebiliyor musunuz?
+
+664
+01:27:43,539 --> 01:27:44,300
+Görünüyor mu?
+
+665
+01:27:47,000 --> 01:27:48,100
+Görünüyor hocam.
+
+666
+01:27:48,619 --> 01:28:02,239
+Tamam, peki. Belki de sunum moduna girip çıkmak bir şeyleri karıştırıyordur. Sunum moduna hiç girmeyin bari. Bakalım. Yine olur da bir şeyler kapanırsa gelmezse lütfen dikkatimi çekin.
+
+667
+01:28:02,239 --> 01:28:03,239
+Şimdi.
+
+668
+01:28:04,659 --> 01:28:10,820
+Please do not confuse overloading and overwinding. Do not confuse them.
+
+669
+01:28:11,539 --> 01:28:16,139
+Overlighting is related with inheritance.
+
+670
+01:28:16,779 --> 01:28:20,059
+You can modify the body of an inherited method.
+
+671
+01:28:20,579 --> 01:28:22,459
+It is related with inheritance.
+
+672
+01:28:23,619 --> 01:28:28,439
+But overloading, you can do overloading without inheritance.
+
+673
+01:28:29,203 --> 01:28:38,903
+You have multiple methods having the same name but different parameter lists and overloading is not related with inheritance.
+
+674
+01:28:38,903 --> 01:28:49,703
+Şu kılıcı şeylerde beni çok yolar. O yüzden şu zil ayarını yapayım da burayı daha güzel görelim.
+
+675
+01:28:50,623 --> 01:28:54,323
+Hatta elindeymişken. Şurada bir hızlıcım tıklayabilirim.
+
+676
+01:28:56,916 --> 01:28:57,416
+Okay.
+
+677
+01:28:59,175 --> 01:29:05,855
+In this example, we did overriding.
+
+678
+01:29:06,536 --> 01:29:14,655
+We have overridden the getCellar method of class employee in the class manager.
+
+679
+01:29:15,576 --> 01:29:23,576
+And let's again do an overloading by adding a second constructor to the manager.
+
+680
+01:29:24,115 --> 01:29:46,515
+If we want a manager to be created with name, salary, and bonus, I can add this second constructor to first I should use the super constructor code and then I can assign the bonus of this manager object.
+
+681
+01:29:46,515 --> 01:29:48,995
+Let's do it in Eclipse.
+
+682
+01:29:52,340 --> 01:30:06,060
+But before doing that, please remind you that why I create a temporary object named boss?
+
+683
+01:30:07,500 --> 01:30:12,340
+Why didn't I add a manager directly to an array?
+
+684
+01:30:12,660 --> 01:30:18,800
+I added employees directly to the array, but I didn't add the manager directly.
+
+685
+01:30:19,136 --> 01:30:20,836
+I did it indirectly.
+
+686
+01:30:21,516 --> 01:30:24,076
+First, I created a temporary object.
+
+687
+01:30:25,076 --> 01:30:30,576
+I have set up that object, then added it to the array.
+
+688
+01:30:30,976 --> 01:30:31,356
+Why?
+
+689
+01:30:32,836 --> 01:30:37,416
+Because Java is a strongly typed language.
+
+690
+01:30:38,556 --> 01:30:42,056
+This array type is of type employee.
+
+691
+01:30:45,439 --> 01:30:50,639
+A manager is being assigned to that array.
+
+692
+01:30:50,639 --> 01:31:04,659
+And although overloading, sorry, polymorphism is in effect, I cannot add a method of the manager class from this reference.
+
+693
+01:31:04,899 --> 01:31:05,039
+Okay?
+
+694
+01:31:05,599 --> 01:31:08,979
+For example, I cannot write such things such as...
+
+695
+01:31:10,036 --> 01:31:15,496
+are not here in the next slide, for example.
+
+696
+01:31:17,336 --> 01:31:25,916
+Now, let's try to change the bonus of that ball by using the staff reference.
+
+697
+01:31:27,195 --> 01:31:32,675
+Staff 0.setBonus.
+
+698
+01:31:33,475 --> 01:31:36,996
+See, it is not being listed here because
+
+699
+01:31:37,391 --> 01:31:44,791
+The array is of type employee and you don't have a set bonus method in the employee class.
+
+700
+01:31:45,952 --> 01:31:58,471
+This is why first I have created a manager object given its bonus and then I have added it to the array.
+
+701
+01:31:59,412 --> 01:32:02,072
+This is mandatory, this is necessary.
+
+702
+01:32:03,251 --> 01:32:03,612
+However,
+
+703
+01:32:04,112 --> 01:32:10,692
+When I create that second constructor, I can work this way.
+
+704
+01:32:11,992 --> 01:32:17,871
+Now let's add the second constructor, also using this.
+
+705
+01:32:18,671 --> 01:32:20,971
+Now let me show you the shorthand.
+
+706
+01:32:21,631 --> 01:32:26,871
+Right click, source, generate constructor using fields.
+
+707
+01:32:26,871 --> 01:32:29,612
+Now I will click.
+
+708
+01:32:32,307 --> 01:32:57,347
+This option is disabled. I cannot omit the call to the default constructor. The idea will automatically edit for me. When I click generate, here I can see this.
+
+709
+01:32:59,155 --> 01:33:01,775
+Just like I would write it by hand.
+
+710
+01:33:03,895 --> 01:33:06,515
+Name, salary and bonus argument as parameters.
+
+711
+01:33:07,296 --> 01:33:10,576
+First the super code is done with name and salary.
+
+712
+01:33:10,796 --> 01:33:14,456
+Then I add the bonus member field.
+
+713
+01:33:15,216 --> 01:33:18,935
+I can cut it from here and put it to the top.
+
+714
+01:33:20,055 --> 01:33:20,975
+This is my preference.
+
+715
+01:33:23,395 --> 01:33:25,635
+Now I can do such a thing.
+
+716
+01:33:27,123 --> 01:33:40,803
+In company, I can write something such as, no, no, I cannot, I can, I still can't write, but I can do something like this.
+
+717
+01:33:43,863 --> 01:33:47,223
+Let's comment those.
+
+718
+01:33:50,163 --> 01:33:52,003
+And just write.
+
+719
+01:33:55,155 --> 01:34:11,895
+Copy this. Staff 0 is new manager, name, salary, and both. This one, let's make it 3000. So, not confuse it with our previous one. And then let's test.
+
+720
+01:34:17,011 --> 01:34:18,011
+This share application.
+
+721
+01:34:18,912 --> 01:34:25,092
+You see, both the manager will have 11,000.
+
+722
+01:34:25,912 --> 01:34:27,672
+8,000 plus 8,000.
+
+723
+01:34:28,332 --> 01:34:33,792
+And I have directly added that object to the array.
+
+724
+01:34:34,212 --> 01:34:34,431
+Why?
+
+725
+01:34:34,431 --> 01:34:39,811
+Because now I have this second constructors, overloaded constructors.
+
+726
+01:34:40,792 --> 01:34:43,052
+If I don't have that constructors,
+
+727
+01:34:46,003 --> 01:34:47,103
+Komatis.
+
+728
+01:34:52,275 --> 01:34:58,675
+This is not useful.
+
+729
+01:34:59,555 --> 01:35:04,076
+Let's remove this one, try to run the first constructor.
+
+730
+01:35:04,395 --> 01:35:08,115
+Then how can I set up the bonus?
+
+731
+01:35:08,635 --> 01:35:16,515
+I cannot do any such thing because when I try to do so, I don't have that method accessible.
+
+732
+01:35:18,996 --> 01:35:19,935
+Aye, don't have it.
+
+733
+01:35:24,083 --> 01:35:25,083
+I should pardon.
+
+734
+01:35:27,804 --> 01:35:29,804
+It's very comparable.
+
+735
+01:35:30,164 --> 01:35:33,844
+I don't have any method and such method in class employee.
+
+736
+01:35:35,684 --> 01:35:41,444
+This is why I have used this employee options.
+
+737
+01:35:47,859 --> 01:35:49,020
+Let's do it again.
+
+738
+01:35:54,868 --> 01:35:57,448
+Öncelik seçim cevabı 10.0005.
+
+739
+01:36:06,036 --> 01:36:12,355
+Okay, and let me tell you about the object class.
+
+740
+01:36:13,536 --> 01:36:16,396
+There is a cosmic superclass in Java.
+
+741
+01:36:17,136 --> 01:36:19,296
+It is called the object class.
+
+742
+01:36:19,676 --> 01:36:21,536
+It is in the Java language package.
+
+743
+01:36:22,115 --> 01:36:27,256
+This class is the implicit superclass of all classes.
+
+744
+01:36:27,256 --> 01:36:28,775
+For example,
+
+745
+01:36:29,716 --> 01:36:31,956
+I have class person here.
+
+746
+01:36:32,436 --> 01:36:43,896
+It doesn't extend anything, but invisibly to the programmer, it extends object.
+
+747
+01:36:44,815 --> 01:36:50,115
+Even if I write it so, or even if I don't write it so, this is the case.
+
+748
+01:36:50,735 --> 01:36:55,076
+Every class will extend the object class.
+
+749
+01:36:55,695 --> 01:36:56,936
+This is done automatically.
+
+750
+01:36:57,587 --> 01:37:16,707
+By the Java virtual machine in order to be able to create, manage every different type of classes that we can code and create objects from those types and manage it. Memory management, etc.
+
+751
+01:37:18,387 --> 01:37:28,068
+Yani bütün bu her türden olabilecek Nesmo'nun yönetimiyle ilgili temel işlemler bu object sınıfında kodlanmıştır.
+
+752
+01:37:28,068 --> 01:37:38,528
+Ki sizin yazacağınız herhangi bir sınıfta bunun alt sınıfı olacağında onlar da Java sağlamak istediklerinde güzelce yönetilebilirler, işlenebilirler. Olay bu.
+
+753
+01:37:42,195 --> 01:37:52,975
+I want to introduce you two methods of that object class.
+
+754
+01:37:53,456 --> 01:37:57,115
+The first one is the toString method.
+
+755
+01:37:58,555 --> 01:38:02,716
+ToString method is defined in class object.
+
+756
+01:38:03,815 --> 01:38:06,695
+Let's change them to English too.
+
+757
+01:38:09,939 --> 01:38:29,279
+This two-thinkling method is defined in the class object and it turns a string that is when non-overloaded, I'm sorry, when non-overridden.
+
+758
+01:38:29,939 --> 01:38:41,539
+This will return the result of a hash function of the object, of the universal unique identifier of the object.
+
+759
+01:38:42,680 --> 01:38:44,699
+Please let me demonstrate.
+
+760
+01:38:47,579 --> 01:38:51,275
+In this code, first...
+
+761
+01:38:51,412 --> 01:38:59,392
+I am writing the names and salaries of the objects.
+
+762
+01:39:00,271 --> 01:39:05,052
+Then, before it, please let me write
+
+763
+01:39:05,052 --> 01:39:11,572
+Autodact to string
+
+764
+01:39:11,572 --> 01:39:14,132
+class
+
+765
+01:39:14,868 --> 01:39:19,208
+ArrayList, space, and then the rest.
+
+766
+01:39:20,268 --> 01:39:30,028
+And finally, please let me system.art.println, that's both.
+
+767
+01:39:30,028 --> 01:39:30,568
+Okay?
+
+768
+01:39:32,108 --> 01:39:40,448
+Both the first element of the array and the final output is related with the same object.
+
+769
+01:39:41,128 --> 01:39:42,288
+Let's see what happens.
+
+770
+01:39:52,467 --> 01:40:10,028
+When that two-setting method is called directly, it returns me the package name and the class name of the type of that object, a letter at, and a hexadecimal number.
+
+771
+01:40:10,612 --> 01:40:21,952
+This number is not the universal unique identifier, but it is a result of a hashing function.
+
+772
+01:40:21,952 --> 01:40:26,872
+This is a special kind of mathematical function and one-to-one function.
+
+773
+01:40:27,452 --> 01:40:37,232
+Therefore, if the hash functions of two objects are the same, then this means that they are the same object.
+
+774
+01:40:37,811 --> 01:40:43,111
+This one has this number and the final output also has this number.
+
+775
+01:40:43,751 --> 01:40:53,351
+Why? Because the first one is the first element of the array and the last one is the same object, both the same reference, the same object reference.
+
+776
+01:40:53,351 --> 01:41:02,711
+So the hash codes are the same, but the hash codes of different two employees are also different.
+
+777
+01:41:05,363 --> 01:41:14,363
+Bu tür bir output kullanabiliriz, özellikle kompleks data structures.
+
+778
+01:41:26,387 --> 01:41:34,047
+başındaki nesline doğru nesline, sondaki doğru nesline, bunu filan filan ayrımlamak için bu H function'dan gidebilirsiniz.
+
+779
+01:41:35,487 --> 01:41:37,747
+Böyle debug işlemleri için kullanılabilir.
+
+780
+01:41:38,787 --> 01:41:44,247
+But as for regular usage, this is not very meaningful.
+
+781
+01:41:47,347 --> 01:41:53,408
+And please notice that I don't add the two string method here.
+
+782
+01:41:54,087 --> 01:42:01,887
+This two string method is called automatically when a string representation of an object is expected.
+
+783
+01:42:02,568 --> 01:42:05,988
+Well, in that case, println expects a string.
+
+784
+01:42:06,668 --> 01:42:14,708
+Therefore, the virtual machine automatically executes the two string method of that object and it gives me this.
+
+785
+01:42:16,083 --> 01:42:32,323
+I can both use it like this or I can add string too but the results will always be the same for that same object.
+
+786
+01:42:34,884 --> 01:42:42,323
+This is the same. Also those numbers do not change between the consecutive runs.
+
+787
+01:42:42,688 --> 01:42:46,148
+This is also interesting.
+
+788
+01:42:50,355 --> 01:42:51,596
+They are always the same.
+
+789
+01:42:55,615 --> 01:42:56,935
+Okay, what else?
+
+790
+01:42:57,416 --> 01:43:01,275
+Up to now, we have been using this.
+
+791
+01:43:01,779 --> 01:43:05,599
+Not here, but introduce self method.
+
+792
+01:43:06,099 --> 01:43:10,519
+Now, we will begin using this two string method.
+
+793
+01:43:10,519 --> 01:43:13,719
+We will override that method.
+
+794
+01:43:14,699 --> 01:43:21,439
+Therefore, we will be using it more easily.
+
+795
+01:43:22,000 --> 01:43:29,239
+Now, let's add this, for example, to employee, for example.
+
+796
+01:43:32,627 --> 01:43:33,387
+Public.
+
+797
+01:43:36,347 --> 01:43:36,587
+So.
+
+798
+01:43:37,727 --> 01:43:38,207
+Spring.
+
+799
+01:43:41,567 --> 01:43:41,827
+Uh.
+
+800
+01:43:46,068 --> 01:44:01,548
+return name plus face and plus salary.
+
+801
+01:44:02,768 --> 01:44:02,908
+Okay.
+
+802
+01:44:03,748 --> 01:44:09,208
+But let's say not salary, but also name is not directly accessible.
+
+803
+01:44:09,208 --> 01:44:11,668
+Let's say get name.
+
+804
+01:44:16,051 --> 01:44:17,011
+Get Salah.
+
+805
+01:44:21,460 --> 01:44:30,220
+Now, I have overridden this method in employee, but I will not override it in manager.
+
+806
+01:44:31,000 --> 01:44:34,359
+And let's see what happens here.
+
+807
+01:44:35,140 --> 01:44:39,079
+Let me uncomment this and comment this one.
+
+808
+01:44:40,519 --> 01:44:41,619
+Let's see what happens.
+
+809
+01:44:41,619 --> 01:44:43,059
+Save and run.
+
+810
+01:44:48,340 --> 01:44:53,340
+Kemal'un orduğum beş yüz, Yaşar'un orduğum beş yüz, Fatih'in.
+
+811
+01:44:53,340 --> 01:44:56,340
+Ve yine en sonunda tekrar Kemal'un orduğum beş yüz.
+
+812
+01:44:56,340 --> 01:44:58,340
+What happened?
+
+813
+01:45:00,340 --> 01:45:03,340
+This two-setring method
+
+814
+01:45:03,340 --> 01:45:07,340
+with calls to getName and getSeller methods
+
+815
+01:45:07,340 --> 01:45:11,340
+are inherited by the manager class.
+
+816
+01:45:11,340 --> 01:45:13,340
+I didn't overwrite it.
+
+817
+01:45:13,340 --> 01:45:14,956
+However,
+
+818
+01:45:14,996 --> 01:45:25,376
+The inherited version of that two-setting method has the correct over-leadal get-seller version.
+
+819
+01:45:26,496 --> 01:45:28,775
+That's the power of polymorphism.
+
+820
+01:45:29,716 --> 01:45:32,275
+Bu adikati izleyecekmek istiyorum.
+
+821
+01:45:35,015 --> 01:45:37,996
+Bu two-setting metodu...
+
+822
+01:45:38,260 --> 01:45:58,279
+Employee's key metodu, get name ve get seller üstünden çalışıyor. Manager da bunu hiç değiştirmeden internet etmiş oluyor, kalıtımlanmış oluyor. Ve çağrıldığında da metot yukarıdan gelmesine rağmen get seller'in yukarıdan gelen versiyonu değil, override edilmiş versiyonu geliyor.
+
+823
+01:46:01,279 --> 01:46:05,500
+Bunların çalışılabilme içtiği için eğer C-Shot kullanıyor olsaydık,
+
+824
+01:46:06,131 --> 01:46:10,291
+Şunun başına şöyle bir
+
+825
+01:46:10,291 --> 01:46:12,631
+at
+
+826
+01:46:12,631 --> 01:46:15,511
+or override diye bir
+
+827
+01:46:15,511 --> 01:46:17,771
+tek açmamız
+
+828
+01:46:17,771 --> 01:46:20,411
+gerekecektir. Bu C-Shark O-Site.
+
+829
+01:46:20,891 --> 01:46:21,911
+Aksi taktirde bu
+
+830
+01:46:21,911 --> 01:46:24,371
+polymorphism hep kapalı oluyor.
+
+831
+01:46:26,371 --> 01:46:27,831
+Öyle bir durumu var.
+
+832
+01:46:35,347 --> 01:46:36,807
+Okay, any questions?
+
+833
+01:46:54,963 --> 01:46:58,604
+O zaman şu sequence diagramı çizmek kaldı.
+
+834
+01:47:04,916 --> 01:47:08,296
+Şimdi sizinle birlikte hızlıca yapmaya çalışalım.
+
+835
+01:47:10,216 --> 01:47:14,736
+Şimdi tabii bunun için bunları eski haline çevireyim.
+
+836
+01:47:14,736 --> 01:47:15,656
+Bu arada.
+
+837
+01:47:17,676 --> 01:47:19,876
+Ne yapıyoruz? Bursa etkiliyoruz.
+
+838
+01:47:19,956 --> 01:47:20,216
+Tamam.
+
+839
+01:47:25,235 --> 01:47:47,235
+Kodu, şu an şu bilgi yazıcısı, yaptığımız şeydi. Hatta şu an daha iyi göstermek için, konutlar söylüyorum, konut yapayım yine de. Evet, şöyle olsun. Şu fazla davranını da dileyim.
+
+840
+01:47:49,807 --> 01:47:55,807
+Şurada da an kodum. Sequence diagramını çizmeye çalışalım.
+
+841
+01:48:00,807 --> 01:48:12,779
+Şimdi bunu şöyle yapalım bir tane. Şöyle büyütelim. Sonra şöyle kenara gelsin bu. Bir de wild tuyeler açayım.
+
+842
+01:48:16,435 --> 01:48:18,435
+New Sequence Program.
+
+843
+01:48:18,435 --> 01:48:19,315
+Gelin.
+
+844
+01:48:20,475 --> 01:48:21,775
+Onu da şöyle yapayım.
+
+845
+01:48:22,815 --> 01:48:25,615
+Şöyle ek üçle yayına bakalım.
+
+846
+01:48:27,775 --> 01:48:29,115
+Bir tane dummy object.
+
+847
+01:48:31,115 --> 01:48:33,615
+And company.
+
+848
+01:48:40,435 --> 01:48:46,635
+The equation, vals, and the main method called.
+
+849
+01:48:55,028 --> 01:48:57,028
+What do we have here?
+
+850
+01:48:57,028 --> 01:49:05,028
+First, I create an array named staff of type employee.
+
+851
+01:49:05,028 --> 01:49:07,028
+How can I draw this?
+
+852
+01:49:07,028 --> 01:49:11,028
+Well, first of all, I need an object lifeline.
+
+853
+01:49:12,028 --> 01:49:14,028
+This is staff.
+
+854
+01:49:14,028 --> 01:49:19,028
+It is of type employee but an array.
+
+855
+01:49:20,372 --> 01:49:22,932
+Eee, yaz almadım, pardon, bir dakika.
+
+856
+01:49:27,988 --> 01:49:34,467
+Taçtı ama şöyle yapsam en azından ağırlıkları geçince taşmazdı bari.
+
+857
+01:49:35,347 --> 01:49:43,148
+Şimdi bunu ilklendirdim ya o yüzden şuraya şöyle bir New York diyorum.
+
+858
+01:49:48,851 --> 01:49:53,851
+Bu diziyi ilklendirmek şeklinde anlayın lütfen.
+
+859
+01:49:56,851 --> 01:50:03,851
+Ondan sonra, manager türünden boss nesnesini konuşturuyorum.
+
+860
+01:50:03,851 --> 01:50:04,851
+Koyalım.
+
+861
+01:50:06,851 --> 01:50:07,851
+Boss.
+
+862
+01:50:08,851 --> 01:50:09,851
+Koyacağız.
+
+863
+01:50:14,420 --> 01:50:15,920
+I initialize it.
+
+864
+01:50:20,239 --> 01:50:22,239
+Bu adını kısa yazayım.
+
+865
+01:50:24,239 --> 01:50:25,859
+Uzunluğunu yazmayayım.
+
+866
+01:50:26,420 --> 01:50:27,939
+Biraz yerden tasarruf edelim.
+
+867
+01:50:31,699 --> 01:50:32,800
+Kaç vermiştik?
+
+868
+01:50:32,800 --> 01:50:33,279
+Sekiz.
+
+869
+01:50:38,131 --> 01:50:40,131
+Ayağı, onu yazacağım, onu yazacağım.
+
+870
+01:50:40,131 --> 01:50:42,131
+Şuraya yazayım.
+
+871
+01:50:49,695 --> 01:50:54,695
+A i o ne yazıcama ve yazıcım.
+
+872
+01:50:54,695 --> 01:50:56,695
+A i o ne yazıcım.
+
+873
+01:50:48,724 --> 01:51:03,224
+Pardon. Constructors'ı kapatalım. Constructors'ı içinde basitçe atamalar yapıyoruz. O yüzden başka metod çağrımız yok. Constructors'ı gibi geliyor.
+
+874
+01:51:03,224 --> 01:51:12,224
+Daha sonra onun set bonus modudunu çağırmışız. 8. satırda. Tamam, çağıralım. Şuradan şöyle şuraya.
+
+875
+01:51:16,372 --> 01:51:18,652
+O basmadı.
+
+876
+01:51:22,032 --> 01:51:23,032
+Beş yüz.
+
+877
+01:51:26,092 --> 01:51:27,692
+O geri döndü.
+
+878
+01:51:29,532 --> 01:51:31,292
+Peki şimdi şunu ne yapacağız?
+
+879
+01:51:31,472 --> 01:51:33,732
+Bizi de sıfırıncı gözüne boss meselesini ekliyor.
+
+880
+01:51:34,292 --> 01:51:35,632
+Bunu nasıl gösteririz?
+
+881
+01:51:36,172 --> 01:51:37,952
+Şöyle bir kısa yol öneriyorum size.
+
+882
+01:51:40,032 --> 01:51:41,832
+Staff dizisine ekleniyor ya,
+
+883
+01:51:42,252 --> 01:51:43,412
+okumuz oraya gitsin.
+
+884
+01:51:43,956 --> 01:51:55,135
+Sonra diyelim ki, işte, add boss. Tamam mı? Boss nesne, snake de boss zaten nesne olarak şurada gözüküyor. Add boss diyeyim mesela.
+
+885
+01:51:55,895 --> 01:51:57,735
+Tabii bunu da şöyle yapmak istiyorum.
+
+886
+01:51:59,060 --> 01:52:26,280
+UMLS serotype gibi yapmak istiyorum. Onun için de bir tane boş bir class diagram oluştum. Bir tane interface koyup tamamen şu iki küçüktür, iki büyüktüre ihtiyacım var. O yüzden şu iki karakteri şuradan bir kopyalayayım ya da kopyalayayım. Sonra gelip şuraya geldiğimde de şuraya yapıştırayım. Ama tabii ki şey, edbosu bunun içine alacağım. O yüzden.
+
+887
+01:52:27,188 --> 01:52:29,948
+Şuradan kes, şuraya yapıştır.
+
+888
+01:52:31,427 --> 01:52:31,608
+Evet.
+
+889
+01:52:32,587 --> 01:52:34,347
+Bu küçüktür aslında tek karakter.
+
+890
+01:52:34,488 --> 01:52:35,788
+Bu iki büyüktür de tek karakter.
+
+891
+01:52:35,788 --> 01:52:38,908
+Bu iki araya geldiğinde stereotip deniliyor.
+
+892
+01:52:39,668 --> 01:52:48,488
+Ve işte herhangi bir UML bileşimini varsayılan anlamının dışında kullandığınız zaman bu şekilde gösterebiliyorsunuz.
+
+893
+01:52:48,756 --> 01:52:50,636
+Ah, that's important, the introduction.
+
+894
+01:52:51,756 --> 01:53:00,576
+Those two letters, two smaller and two greater than operators, are called together as stereotypes.
+
+895
+01:53:01,676 --> 01:53:03,076
+Let me write it here.
+
+896
+01:53:04,536 --> 01:53:06,176
+Not, not.
+
+897
+01:53:17,460 --> 01:53:18,180
+What's called?
+
+898
+01:53:19,180 --> 01:53:19,820
+No, sorry.
+
+899
+01:53:20,440 --> 01:53:25,320
+In the last one, that is called stereotype.
+
+900
+01:53:25,320 --> 01:53:25,600
+Okay.
+
+901
+01:53:27,220 --> 01:53:38,600
+And stereotype means when you see a stereotype somewhere, then this means that the regular usage of this UML diagram element has been changed.
+
+902
+01:53:39,240 --> 01:53:40,120
+What is it?
+
+903
+01:53:40,460 --> 01:53:45,260
+In this case, normally this is a regular method call error, but...
+
+904
+01:53:45,395 --> 01:54:03,115
+Now, I have overridden its meaning. I have given it a new meaning. What does it mean? It is to add that both object to this area. That's it. And it will end.
+
+905
+01:54:07,796 --> 01:54:09,416
+Evet, biz de rettis var.
+
+906
+01:54:14,131 --> 01:54:18,891
+What else?
+
+907
+01:54:19,692 --> 01:54:22,551
+Okay, now I have created two employees.
+
+908
+01:54:23,692 --> 01:54:25,412
+Let me show them.
+
+909
+01:54:26,811 --> 01:54:28,431
+Such as this.
+
+910
+01:54:29,431 --> 01:54:31,471
+Let me maximize it.
+
+911
+01:54:32,112 --> 01:54:33,452
+There are two objects.
+
+912
+01:54:37,395 --> 01:54:42,475
+Start Employee.
+
+913
+01:54:48,020 --> 01:54:51,340
+But I can see it here too, start with both type employee.
+
+914
+01:54:51,340 --> 01:54:58,160
+But let me repeat it again in order to be more expressive.
+
+915
+01:54:59,360 --> 01:55:00,800
+And let's copy this one.
+
+916
+01:55:02,940 --> 01:55:03,780
+Copy.
+
+917
+01:55:05,000 --> 01:55:07,760
+And copy a little.
+
+918
+01:55:11,828 --> 01:55:16,268
+C, şuraya, Ctrl V.
+
+919
+01:55:17,427 --> 01:55:17,768
+Okay.
+
+920
+01:55:19,868 --> 01:55:20,268
+Evet.
+
+921
+01:55:22,988 --> 01:55:25,288
+And I am initializing them.
+
+922
+01:55:26,747 --> 01:55:28,967
+This one is Şarnovi Hoca.
+
+923
+01:55:35,412 --> 01:55:40,612
+Don't forget to return that constructor call back.
+
+924
+01:55:42,352 --> 01:55:48,652
+And then I create initialize the other object.
+
+925
+01:55:55,572 --> 01:56:02,572
+Also, they have cellulites. Sorry, I have forgotten to add them.
+
+926
+01:56:04,572 --> 01:56:09,572
+Schleyer.
+
+927
+01:56:15,667 --> 01:56:18,587
+And don't forget to draw the return arrow.
+
+928
+01:56:20,867 --> 01:56:22,188
+Anything else?
+
+929
+01:56:23,627 --> 01:56:28,268
+Then, in the for loop, which is directed to the array,
+
+930
+01:56:29,268 --> 01:56:35,148
+I call the getName and getCellum methods.
+
+931
+01:56:36,148 --> 01:56:38,347
+The files are actually the files are from the scenario.
+
+932
+01:56:38,347 --> 01:56:38,787
+The scenario pushes.
+
+933
+01:56:41,747 --> 01:56:42,528
+Now what?
+
+934
+01:56:43,091 --> 01:56:50,711
+Now, as those messages are directed to the array, I will draw them to the array.
+
+935
+01:56:50,711 --> 01:56:56,731
+Beginning from here and ending here in the array.
+
+936
+01:56:57,951 --> 01:57:03,131
+I have the name method.
+
+937
+01:57:05,251 --> 01:57:06,251
+Hold.
+
+938
+01:57:09,524 --> 01:57:13,524
+And after that, I call the getSelery method.
+
+939
+01:57:26,355 --> 01:57:30,055
+But those calls are not just for once.
+
+940
+01:57:30,235 --> 01:57:34,195
+They are for every element of the array.
+
+941
+01:57:34,475 --> 01:57:37,515
+So I put a star on top of.
+
+942
+01:57:40,155 --> 01:57:40,796
+Done.
+
+943
+01:57:41,475 --> 01:57:42,435
+This is necessary.
+
+944
+01:57:49,747 --> 01:57:51,347
+Or the desired scores.
+
+945
+01:57:51,347 --> 01:57:55,027
+Those stars denote the form loop.
+
+946
+01:57:55,027 --> 01:58:00,587
+If we have a loop, then please don't forget to add this star in front of the method.
+
+947
+01:58:04,115 --> 01:58:09,076
+And finally, the main method will end.
+
+948
+01:58:10,956 --> 01:58:11,256
+Okay.
+
+949
+01:58:12,275 --> 01:58:15,695
+Let's compare it to my solution in the lecture notes.
+
+950
+01:58:26,068 --> 01:58:39,167
+Hemen hemen şey aynı. Bir tek hani oluşturulan bu şeyi, Nesne'yi diziye eklediğimi göstermek için şöyle bir şey eklemişim. Çok da dert değil. Anlaşılıyor yani.
+
+951
+01:58:39,636 --> 01:58:54,695
+Ama tabii biraz farklı düşünmüşüm orada. Aslında her ne kadar şu kodda bir geçici nesne kullanmasam da, doğrudan diziye atasam da aslında bir tür geçici nesne oluşturuluyor gibi düşünmüşüm.
+
+952
+01:58:54,695 --> 01:59:07,596
+O yüzden burada temporary, temporary, temporary bir şey var. Önce yaşanları oluşturuluyor, sonra o temporary object diziye ekleniyor, sonra diğer nesne geçici nesne oluşturuluyor ve o da diziye ekleniyor.
+
+953
+01:59:07,636 --> 01:59:21,796
+Ondan sonra işte geri kalan kısmının tamamıyla aynı. Ford Örgüsü yani Yıldız, Getmey ve Getse'leri çalışıyor. Yani böyle yapabilirsiniz. Böyle yapabilirsiniz. Fark etmez.
+
+954
+01:59:24,884 --> 01:59:51,323
+Eksi de olur. Ders notundaki biraz daha kompakt. Şurada iki tane fazla daha değil de bir tane fazla vermesi de var. Bahçeden belki daha avantajlı. Ama orada da fazladan işte böyle et, t, m, p şeyleri yapmışım. Eksini bir arada getirip de hepsini de en azından indirebilirsiniz. Yani bu aşamayı da şu iki yerine tek yaptıktan sonra ondan son açıma.
+
+955
+01:59:55,507 --> 02:00:13,847
+Ama sonra eklemek lazım değil mi? Ama bunu böyle ayrı ayrı gösterirsen bir iki diye zaten o elemanını ilklendirip eklemiş oluyorum. İkisi bir arada. O zaman onu ayrıca göstermeye gerek yok. Tamam peki. Evet doğru da böyle olur.
+
+956
+02:00:13,847 --> 02:00:22,587
+Yeter ki işte şu sequence diagramlar çizerken nelere dikkat ediyorduk? Birincisi.
+
+957
+02:00:23,252 --> 02:00:26,412
+Şu aralarda boşluklar vermeye dikkat ediyorduk.
+
+958
+02:00:27,132 --> 02:00:31,932
+İkincisi, metot çağrı aralarında da biraz boşluklar vermeye dikkat ediyorduk.
+
+959
+02:00:32,632 --> 02:00:39,592
+Üçüncüsü, şöyle daha yukarıdan bir yerlerden başlamamaya dikkat ediyorduk.
+
+960
+02:00:39,988 --> 02:00:47,547
+Dördüncüsü, şuradaki four döngüsünü simgeleyen yıldızları unutmayın.
+
+961
+02:00:48,007 --> 02:00:51,707
+Do not forget those asperixes which denote the four group.
+
+962
+02:00:54,507 --> 02:00:55,068
+Böyle yani.
+
+963
+02:00:57,207 --> 02:00:57,507
+Evet.
+
+964
+02:01:00,268 --> 02:01:00,448
+Peki.
+
+965
+02:01:01,268 --> 02:01:04,868
+Konuşmalar arkadaş olarsa buyursam konuşalım.
+
+966
+02:01:13,011 --> 02:01:16,612
+Sesin oluyo, ilgin oluyo şaşalmaları benim.
+
+967
+02:01:20,467 --> 02:01:22,307
+Evet, şunlar var. Bakın.
+
+968
+02:01:25,387 --> 02:01:33,587
+Ana proje toplantısı, ha Fıkan Özeri. Bakınız ya, bir şey denir.
+
+969
+02:01:35,907 --> 02:01:40,347
+Gönderin, şey yapalım, yani yaparız, mutlaka yaparız.
+
+970
+02:01:40,787 --> 02:01:45,627
+Hani söylediğim boş sananların çoğu hala boş.
+
+971
+02:01:46,036 --> 02:01:52,155
+Ondan sonra açıdan bir şeydin mutlaka yazın mesajıma lütfen.
+
+972
+02:01:52,715 --> 02:01:58,515
+O da bu haftaya olmasın diye mesela diyelim ki sarı günü müsaat diyorsak haftaya salık olur.
+
+973
+02:01:58,755 --> 02:02:05,135
+Ama mesela perşembe cumar diyorsak diğerisi de bir gün olduğuna göre ya bu perşembe cumayla haftaya abdek başlarız.
+
+974
+02:02:05,475 --> 02:02:10,255
+Tabii siz mutlaka ilerleyelim ama bir yandan da ne yaptığınızı da biraz takip edelim.
+
+975
+02:02:10,255 --> 02:02:11,295
+Onu da istiyoruz.
+
+976
+02:02:13,268 --> 02:02:14,968
+Peki, başka soruslar var mı?
+
+977
+02:02:23,604 --> 02:02:24,724
+Ben bakteni.
+
+978
+02:02:28,724 --> 02:02:33,724
+Kaldığım yeri işaretleyeyim. O sırada siz aklınızda soru giden sana lütfen yazın, sorun.
+
+979
+02:02:35,724 --> 02:02:40,587
+Şimdi, dondurduğuna kadar geldik. Tamam.
+
+980
+02:02:56,020 --> 02:03:04,159
+Bu arada arkadaşlar, vize haftasının bayram nedeniyle, son Cuma günü bayrama denk gelmesineyle 9. haftaya taşındı.
+
+981
+02:03:04,560 --> 02:03:14,779
+Onu da söyleyeyim. Sonra tekrar bölüm sayfasında da duyulacak ama bugün öğle arasındaki toplantıda tekrar hatırlatılıp izlesinle paylaşın.
+
+982
+02:03:14,920 --> 02:03:22,659
+Sakınca yok. Yakında bölüm sayfasında da duyulacak revizelerimiz sekizinciliği, dokuzuncu hafta gerçekleşecek.
+
+983
+02:03:22,659 --> 02:03:31,500
+Yani şuraya olacak ve bugün gördüğümüz inheritance konularının da dahil olacak şekilde.
+
+984
+02:03:32,560 --> 02:03:55,980
+Eğer şeye geçeceğiz, soyut sınıflar ve interface var. Onlar dahil olur mu olmaz mı bakacağız. Sonra önümüzdeki haftan itibaren uygulama derslerimiz de başlayacak, online olacak. O konularda da OBS'e üstünden sizleri bilgilendiriyor olacağız. Hesabımızı izlemeye devam edelim.
+
+985
+02:03:57,296 --> 02:04:12,916
+diyeyim. Bazen e-mail atmak daha rahat oluyor. Bazen kullanıcı hesabınızın duvarına bir şey yazmak daha rahat geliyor. O yüzden hem e-mail'inize hem OBS hesabınıza bir arada girin, bakın, takip edin, gelişmeleri kaçırmayın.
+
+986
+02:04:14,115 --> 02:04:21,935
+Peki, soru gelmediğine göre bugün bu kadar istiyorum. Haftaya görüşmek üzere. İnşallah ağzım artık şimdilik.

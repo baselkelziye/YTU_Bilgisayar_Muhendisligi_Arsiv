@@ -1,0 +1,3711 @@
+1
+00:01:54,995 --> 00:01:59,935
+Arkadaşlar merhaba. Sesim gidiyor mu sizlere?
+
+2
+00:02:08,532 --> 00:02:13,132
+Tamam, sesim gidiyor sanırım. Ben şuradan diğer ekrardan ekran paylaşımı yapayım.
+
+3
+00:02:25,939 --> 00:02:26,120
+Ok.
+
+4
+00:02:49,235 --> 00:03:12,555
+Evet arkadaşlar, geçtiğimiz hafta inner class konusunda kalmıştık. Bu hafta, gelecek hafta, son haftamız oluyor dersimizde. Gelecek hafta proje değerlendirmelerinin olacağı hafta. Bildiğiniz gibi ikinci vizeyi yapmıyoruz. Daha önce açıkladım.
+
+5
+00:03:13,056 --> 00:03:33,936
+İkinci vize yerine proje gerçekleştiriyorsunuz. Yani bir tane birinci vizeniz olmuş oluyor, bir tane projeniz olmuş oluyor, bir tane lab assignment'ınız oluyor, labdan da not alıyorsunuz. En sonunda bir de final sınavınız oluyor.
+
+6
+00:03:34,771 --> 00:03:56,251
+Bu haftada son hafta ders içeriklerini tamamlayacağımız son hafta. Bu haftadan sonraki gelecek hafta proje değerlendirmelerinin olduğu hafta olacak. Aranızda birinci vizeye raporlu olduğundan dolayı giremeyen varsa gelecek hafta aynı zamanda mazeret sınavının olduğu hafta olacak.
+
+7
+00:03:58,836 --> 00:04:03,156
+Bu işleyişle ilgili bir sorunuz var mı? Derse başlamadan önce.
+
+8
+00:04:05,776 --> 00:04:10,696
+Hocam benim projeyle ilgili birkaç sorum olacaktı da onu ne zaman sorabilirim size?
+
+9
+00:04:11,795 --> 00:04:15,495
+Ders içeriğini bitirdikten sonra şey yapabiliriz.
+
+10
+00:04:15,975 --> 00:04:21,935
+Aslında şu anda biz araştırma görevlisi arkadaşlarımızı görevlendirdik.
+
+11
+00:04:22,055 --> 00:04:26,076
+Proje içerikleriyle ilgili soruları yanıtlamak konusunda.
+
+12
+00:04:26,076 --> 00:04:38,076
+En doğrusu Elçin Hoca ya da diğer araştırma görevlisi arkadaşlarımıza projeyle ilgili anlayamadığın ya da yönlendirme talep ettiğin şeyleri sorman olacaktır.
+
+13
+00:04:38,927 --> 00:04:56,627
+Ben açıkçası proje dökümanını o detayda incelemedim. Bütün gruplara aynı proje önerisini veriyoruz. Benim tavsiyem eğer sorun detaysa [öğrenci] neye sorabilirsin Elçin Hoca'ya?
+
+14
+00:04:57,043 --> 00:05:07,043
+Ama eğer şey ise, prosedürle ilgili ise yani puanlandırılması vesaire genel sorularsa ben yine yanıtlarım.
+
+15
+00:05:09,223 --> 00:05:15,943
+İşleyişle ilgili olduğu için yani proje dokümanıyla ilgili onu Erçin Hoca'ya sorayım o zaman. Teşekkür ederim hocam.
+
+16
+00:05:15,943 --> 00:05:17,003
+Tamam, tamamdır.
+
+17
+00:05:19,283 --> 00:05:30,483
+Okay, so let's get started. I'm not going to wait for the rest of the class, so you can make the announcement that we started if you have a WhatsApp group for this class.
+
+18
+00:05:31,363 --> 00:05:38,903
+So otherwise, everyone can listen to this video record later.
+
+19
+00:05:40,627 --> 00:05:43,467
+Okay, today we are going to talk about the inner classes.
+
+20
+00:05:44,288 --> 00:05:48,107
+And also after that, we are going to talk about multi-threading.
+
+21
+00:05:48,327 --> 00:05:52,087
+And given the time, I also will talk about the graphical user interface.
+
+22
+00:05:52,087 --> 00:05:52,447
+Okay.
+
+23
+00:05:57,492 --> 00:06:12,891
+Now, so far, the kind of classes that we have seen so far are the regular classes, meaning that we only had one class inside of a Java file.
+
+24
+00:06:13,692 --> 00:06:18,552
+Now, we are going to learn that within a class, we can also have another class.
+
+25
+00:06:19,411 --> 00:06:24,331
+And so in that case, so these become nested classes.
+
+26
+00:06:24,591 --> 00:06:27,791
+There will be one outer class and there will be one inner class.
+
+27
+00:06:28,411 --> 00:06:28,651
+Okay.
+
+28
+00:06:29,051 --> 00:06:35,851
+Now the inner class can be defined as public or it can be defined as private.
+
+29
+00:06:35,991 --> 00:06:37,312
+We will see both cases.
+
+30
+00:06:37,312 --> 00:06:38,231
+Okay.
+
+31
+00:06:42,963 --> 00:07:00,963
+Now, let's take a look at this example. So, in this particular example, we have a person class. That's the author class. And inside the person class, as you see, I have two global... I have one...
+
+32
+00:07:00,975 --> 00:07:02,656
+A global member field.
+
+33
+00:07:03,495 --> 00:07:05,875
+So that's name and type is string.
+
+34
+00:07:05,975 --> 00:07:08,555
+And I have one constructor for this class.
+
+35
+00:07:09,036 --> 00:07:12,555
+And then what you see here is there is an inner class.
+
+36
+00:07:13,516 --> 00:07:17,776
+Now, so the inner class is exactly like the regular class.
+
+37
+00:07:18,175 --> 00:07:22,536
+Okay, so it has its own global member fields.
+
+38
+00:07:22,776 --> 00:07:26,336
+It has its own constructor.
+
+39
+00:07:27,055 --> 00:07:30,315
+It has its own regular methods.
+
+40
+00:07:30,456 --> 00:07:38,555
+In this particular case, we have getter and setter methods for the global member field and two string methods in this inner class.
+
+41
+00:07:39,175 --> 00:07:44,756
+Now, as I said, inner class can be defined either private or public.
+
+42
+00:07:45,427 --> 00:07:49,907
+Now, in this particular case, this inner class is defined as private class.
+
+43
+00:07:50,507 --> 00:07:52,167
+So what does this mean?
+
+44
+00:07:52,307 --> 00:07:59,707
+So if it is defined as private class, then only the outer class can see this inner class.
+
+45
+00:08:00,339 --> 00:08:22,559
+Okay. Now, if it is defined as a public class, then the classes outside of the outer class can also see this inner class. So we will see it in an example. Now, so let us take a look at the private class example.
+
+46
+00:08:23,603 --> 00:08:42,564
+So in this particular case, the only, so the methods in this inner class, since it's defined as private inner class, the methods and the global member fields in this inner class will only be visible by the outer class, by the personal class.
+
+47
+00:08:43,223 --> 00:08:44,963
+Now let's take a look at the main method.
+
+48
+00:08:46,067 --> 00:08:56,028
+Now, in the main method, as you see, I am constructing an array where the type is employee and the size of the array is three.
+
+49
+00:08:56,687 --> 00:09:04,687
+Now, so you remember the person and employee example from our previous examples.
+
+50
+00:09:05,667 --> 00:09:10,087
+So here I'm constructing an array of employee.
+
+51
+00:09:11,412 --> 00:09:17,312
+And assign the reference to this array to this local variable staff.
+
+52
+00:09:17,892 --> 00:09:23,172
+And I'm defining a person type variable.
+
+53
+00:09:23,792 --> 00:09:26,312
+And I'm creating a new person, Osman.
+
+54
+00:09:26,832 --> 00:09:27,112
+Okay.
+
+55
+00:09:27,731 --> 00:09:32,951
+Assigning the reference to this person object to this local variable.
+
+56
+00:09:34,211 --> 00:09:38,112
+And now you see, what you see here is that I am actually...
+
+57
+00:09:38,740 --> 00:09:44,860
+creating an object of the inner class.
+
+58
+00:09:45,039 --> 00:09:46,079
+How do I do this?
+
+59
+00:09:46,299 --> 00:09:52,139
+Now, this inner class can be accessed by the outer class, right?
+
+60
+00:09:52,500 --> 00:10:00,000
+So now if I have an object of the outer class, which in this case, kishi, is an object of the outer class.
+
+61
+00:10:00,000 --> 00:10:02,539
+outer class, which is person class.
+
+62
+00:10:03,299 --> 00:10:10,200
+And by using this object, I can create an object of the inner class as well.
+
+63
+00:10:10,860 --> 00:10:10,960
+Okay.
+
+64
+00:10:12,160 --> 00:10:17,819
+And so what I do is that I kishi and then I call new employee.
+
+65
+00:10:18,420 --> 00:10:21,059
+I call the instructor of it.
+
+66
+00:10:21,059 --> 00:10:25,000
+By doing so, I am creating an object of the inner class.
+
+67
+00:10:26,004 --> 00:10:31,903
+Now, and I'm passing a variable as an argument to this constructor.
+
+68
+00:10:31,903 --> 00:10:38,584
+Now, as you see here, here I will have an object which I will use.
+
+69
+00:10:39,104 --> 00:10:46,244
+I will take the reference of this object and assign to the first cell of this array.
+
+70
+00:10:47,364 --> 00:10:50,304
+And then I will create another person, Nihat.
+
+71
+00:10:51,283 --> 00:11:17,163
+Okay. And then I will create this new person, Yad. And now, as you see, I'm creating a new, I'm creating another object of the inner class here.
+
+72
+00:11:17,940 --> 00:11:18,460
+Okay.
+
+73
+00:11:19,020 --> 00:11:23,020
+And this time, I'm using the same reference.
+
+74
+00:11:23,440 --> 00:11:29,500
+But this reference is now pointing to the new object, Nihat.
+
+75
+00:11:29,500 --> 00:11:36,440
+So previously, this reference Kishi was pointing to the object Osman.
+
+76
+00:11:36,940 --> 00:11:46,040
+Now I created another object, which I called Nihat, and assigned the reference to this previously created local variable.
+
+77
+00:11:46,772 --> 00:11:55,992
+Now, kişi is now, the local variable is now pointing to the second object where the object is niyat.
+
+78
+00:11:57,252 --> 00:11:57,512
+Okay.
+
+79
+00:11:58,272 --> 00:12:11,652
+Now, what I do is that I'm creating another employee object, which is an object of the inner class by using the second person object reference.
+
+80
+00:12:12,307 --> 00:12:18,207
+And then I'm assigning this to the second cell of the employee array.
+
+81
+00:12:18,947 --> 00:12:19,668
+Okay.
+
+82
+00:12:20,207 --> 00:12:22,087
+And now I do the same thing.
+
+83
+00:12:22,227 --> 00:12:36,168
+Now I'm creating another object, Barış, another person object, Barış, assigning the reference of it to Kishi, which is the local variable that I've used so far.
+
+84
+00:12:36,827 --> 00:12:39,207
+And then I am creating...
+
+85
+00:12:40,115 --> 00:12:45,596
+Another employee object by using the third person object.
+
+86
+00:12:46,115 --> 00:12:46,275
+Okay.
+
+87
+00:12:46,915 --> 00:12:51,836
+So as you see, the first thing that I did, I created the person object.
+
+88
+00:12:51,836 --> 00:12:57,855
+And by using this object, I created the inner class object and assigned it to this employee.
+
+89
+00:12:58,355 --> 00:13:03,795
+And I did the same thing for the second person object and the third person object.
+
+90
+00:13:04,436 --> 00:13:07,355
+Now, at the end of it, in the employee array,
+
+91
+00:13:07,775 --> 00:13:13,696
+Okay, in the employee array, what I have is that I have three employee objects.
+
+92
+00:13:13,696 --> 00:13:22,515
+The first employee object is created using the Osman, person Osman object.
+
+93
+00:13:22,936 --> 00:13:27,615
+The second one was created by the person Nihat object.
+
+94
+00:13:27,816 --> 00:13:31,576
+And the third one was created by the Barış person object.
+
+95
+00:13:31,892 --> 00:13:41,752
+And then what I do is that I do it for each loop on this array and print all the details of these objects.
+
+96
+00:13:42,592 --> 00:13:46,452
+Okay, now this is the private class.
+
+97
+00:13:46,792 --> 00:13:59,172
+So the members, member fields and the constructor and the global member field of this inner class, since it's defined as private, can only be accessed by the outer class.
+
+98
+00:14:02,964 --> 00:14:14,244
+So in this example, so we learned how to define in inner classes and we learned how we can access the outer object from the inner object.
+
+99
+00:14:14,244 --> 00:14:26,164
+Okay. Now pay attention to this also. Now in the inner class, in the inner class,
+
+100
+00:14:26,543 --> 00:14:34,683
+We can access the outer class member fields and the data member fields and methods as well.
+
+101
+00:14:34,683 --> 00:14:43,764
+So as you see in the inner class, in the two string method, I am accessing the global member field of the outer class.
+
+102
+00:14:44,144 --> 00:14:48,083
+So without any problem, I can access it and I can write it.
+
+103
+00:14:48,423 --> 00:14:54,403
+So we see how we define inner class and we see how we can access.
+
+104
+00:14:54,543 --> 00:14:57,083
+The outer object from the inner object.
+
+105
+00:14:57,423 --> 00:15:03,524
+As you see, we are accessing the outer object member field from the inner object.
+
+106
+00:15:05,384 --> 00:15:06,103
+Okay.
+
+107
+00:15:06,563 --> 00:15:10,123
+And so here we define the inner class as private.
+
+108
+00:15:10,707 --> 00:15:16,268
+Therefore, this private inner class is hidden.
+
+109
+00:15:17,008 --> 00:15:26,187
+Even the other classes in the same package cannot access to the methods of the inner class.
+
+110
+00:15:26,187 --> 00:15:31,628
+The only thing that they can do, they can access it through the outer class.
+
+111
+00:15:31,768 --> 00:15:38,168
+As you see now, so I am not accessing to this.
+
+112
+00:15:38,707 --> 00:15:44,727
+Directly, I am accessing through the object of the outer class.
+
+113
+00:15:44,847 --> 00:15:48,087
+First, I need to create an object of the outer class.
+
+114
+00:15:48,087 --> 00:15:53,628
+Then I can access to the, I can create an object of this inner class.
+
+115
+00:15:58,836 --> 00:16:07,255
+Now, let's do the same thing, but this time, let's do it with the public classes.
+
+116
+00:16:07,255 --> 00:16:14,115
+The only difference is that instead of defining it as a private, we are defining it as public.
+
+117
+00:16:14,803 --> 00:16:30,384
+Now, as you see in this inner cluster, we have a global member field, which is defined as integer, and a constructor, employee, getter, etc. methods, and also a two-string method, just like the previous example.
+
+118
+00:16:31,004 --> 00:16:35,264
+And you also see that we are accessing the outer class.
+
+119
+00:16:36,916 --> 00:16:39,196
+Data member fields without any problem.
+
+120
+00:16:39,375 --> 00:16:46,336
+That's also, we observed the same thing as in the private inner classes as well.
+
+121
+00:16:47,076 --> 00:16:47,156
+Okay.
+
+122
+00:16:50,196 --> 00:16:58,855
+Now, so with the public inner classes, we can access, we can access.
+
+123
+00:16:59,264 --> 00:17:09,284
+This, the methods of the public inner classes from the other classes as well.
+
+124
+00:17:09,284 --> 00:17:10,104
+Okay.
+
+125
+00:17:10,423 --> 00:17:13,423
+Not only from the outer class.
+
+126
+00:17:14,144 --> 00:17:14,824
+Okay.
+
+127
+00:17:14,943 --> 00:17:17,463
+But also other classes as well.
+
+128
+00:17:17,824 --> 00:17:18,084
+Okay.
+
+129
+00:17:18,124 --> 00:17:24,543
+To show you this, here you see I have another class called test inner class directly.
+
+130
+00:17:25,087 --> 00:17:28,327
+And this test inner class directly has a main method.
+
+131
+00:17:29,788 --> 00:17:37,147
+And so as you see, again, what I'm doing is I'm creating an array of employee where the size is three.
+
+132
+00:17:37,647 --> 00:17:44,947
+And then I'm creating, I'm defining a person type variable.
+
+133
+00:17:45,627 --> 00:17:48,947
+And then I am creating an object of person.
+
+134
+00:17:50,259 --> 00:17:59,400
+And again, just like in the previous example, I am accessing the object of the inner class through the object of the outer class.
+
+135
+00:17:59,900 --> 00:18:00,000
+Okay.
+
+136
+00:18:00,579 --> 00:18:05,759
+And I'm doing it for the first person object, second and the third person object.
+
+137
+00:18:06,139 --> 00:18:06,320
+Okay.
+
+138
+00:18:06,900 --> 00:18:13,000
+Now, the only difference is that now that this inner class is defined public.
+
+139
+00:18:13,000 --> 00:18:13,159
+Okay.
+
+140
+00:18:14,440 --> 00:18:15,559
+I can access.
+
+141
+00:18:16,048 --> 00:18:37,128
+Outside of the person class, so I can create another class, test inner class directly, and I can, through this outside Java file, outside class, I can still access to the inner class because it is defined as public.
+
+142
+00:18:38,612 --> 00:18:44,032
+But for me to do this, I also need to import the inner class as well.
+
+143
+00:18:44,251 --> 00:18:49,852
+So remember, with the private inner classes, I cannot even do this.
+
+144
+00:18:49,932 --> 00:18:57,992
+The only thing that I could do with the private inner classes, I can only access it from the outer class itself.
+
+145
+00:18:57,992 --> 00:19:06,112
+Okay. Now with the public inner class, the advantage that comes with it is that I can access to
+
+146
+00:19:06,612 --> 00:19:15,332
+The inner class, public inner class from other classes as well, just like as you see in this particular example.
+
+147
+00:19:24,019 --> 00:19:24,380
+Okey.
+
+148
+00:19:30,900 --> 00:19:35,819
+Bir saniyenizi istiyorum arkadaşlar. Önemli bir telefon geldi. Hemen gidiyorum.
+
+149
+00:20:36,723 --> 00:20:44,344
+Evet, kusura bakmayın. Açmam gerekiyordu telefonu. Sesimin geldiğini tekrardan bitirdiniz arkadaşlar devam etmeden.
+
+150
+00:20:45,443 --> 00:20:46,384
+Sesiniz geliyor hocam.
+
+151
+00:20:46,663 --> 00:20:47,243
+Tamam, süper.
+
+152
+00:20:48,344 --> 00:20:48,603
+Okey.
+
+153
+00:20:48,603 --> 00:20:49,603
+Now...
+
+154
+00:20:53,076 --> 00:21:19,596
+So I have shown you two example inner class. So one is the inner class is defined as private. The other one is inner class is defined as public. Right. Now, in the public inner class, we were able to create an object of the inner class from the outside of the class.
+
+155
+00:21:20,500 --> 00:21:35,639
+Right. In the privately defined inner class, okay, I was only able to create the object from the outer class. Okay.
+
+156
+00:21:36,639 --> 00:21:45,839
+Now, what if I wanted to create the object of the inner class?
+
+157
+00:21:46,387 --> 00:21:53,288
+From another class while the inner class is private.
+
+158
+00:21:54,107 --> 00:22:10,007
+So this means that I would like to have a private inner class, but at the same time, I would like to be able to create an object of this by using another class, okay, an outside class.
+
+159
+00:22:10,127 --> 00:22:11,507
+How can I do this, okay?
+
+160
+00:22:12,276 --> 00:22:20,596
+Now, so one thing that I can do, I can define my class as private, just like as you see here, employee.
+
+161
+00:22:20,596 --> 00:22:27,635
+And I can add a method that I can use.
+
+162
+00:22:28,915 --> 00:22:54,675
+That is responsible for creating an object of this inner class. As you see, I added a method called nList. Okay. And it's a void method. And it's a public method. So when I call this method, what this method is doing is creating an object of the inner class. Okay. It's creating an object of the inner class. Okay. And as you see,
+
+163
+00:22:55,635 --> 00:23:05,976
+I also define a global member field here where the type is employee.
+
+164
+00:23:06,875 --> 00:23:16,076
+So whenever I call this enlist method, what it's going to do, it's going to create an object of the inner class and assign it to the global member field.
+
+165
+00:23:16,076 --> 00:23:16,576
+Okay.
+
+166
+00:23:17,087 --> 00:23:24,807
+Now, so if I do this, how can I use it from the outside class?
+
+167
+00:23:25,008 --> 00:23:27,888
+Okay, let's take a look at the outside class, the third class.
+
+168
+00:23:28,228 --> 00:23:31,608
+I'm going to call this test inner class via outer class.
+
+169
+00:23:32,807 --> 00:23:34,548
+It has one main method.
+
+170
+00:23:34,668 --> 00:23:42,908
+In the main method, first, I'm creating an array of person.
+
+171
+00:23:42,908 --> 00:23:43,668
+Okay.
+
+172
+00:23:44,192 --> 00:23:51,612
+So an array where the type is person and the size of the array is three.
+
+173
+00:23:52,432 --> 00:23:52,552
+Okay.
+
+174
+00:23:53,211 --> 00:24:01,512
+And then I'm creating a first person, as you see, and assigning to the first cell of this array.
+
+175
+00:24:02,387 --> 00:24:09,587
+And then what I do is that for this personal object, I'm calling the enlist method and passing some parameters.
+
+176
+00:24:09,587 --> 00:24:12,627
+So when I do that, so what happens is that.
+
+177
+00:24:13,844 --> 00:24:25,104
+So, my code is going to create an object of the inner class, okay, for me, and assign the reference to this global member field, okay?
+
+178
+00:24:25,483 --> 00:24:35,584
+Now, in this person object, in this person object, which is sitting in the first cell of this person array,
+
+179
+00:24:36,084 --> 00:24:38,743
+I also have an employee object.
+
+180
+00:24:38,743 --> 00:24:47,044
+So which means that not only I have the person object, but also I have an employee object.
+
+181
+00:24:47,763 --> 00:25:02,943
+Now, I'm doing the same thing for the second person object, and I'm calling the enlist method. Enlist method will create another employee object, which is inside of the person object, and I'm doing the same thing for the third object.
+
+182
+00:25:04,023 --> 00:25:14,023
+Now, as you see in this class, I did not use the employee inner class at all.
+
+183
+00:25:14,304 --> 00:25:16,964
+The only thing that I use is the person class.
+
+184
+00:25:17,484 --> 00:25:17,584
+Okay.
+
+185
+00:25:18,244 --> 00:25:35,304
+But in the person class, by adding this and this method, okay, so when the methods of the person class is being called, I am actually using the privately defined inner class as well.
+
+186
+00:25:35,304 --> 00:25:35,864
+Okay.
+
+187
+00:25:36,224 --> 00:25:37,804
+But the outside class.
+
+188
+00:25:38,579 --> 00:25:46,180
+Does not know this. The outside class is only aware of the public methods of the person class.
+
+189
+00:25:46,675 --> 00:25:58,076
+Right after that, as you see, I'm doing a for each loop on the person array, and I'm writing every detail of the person objects.
+
+190
+00:25:58,415 --> 00:26:00,276
+Let's go to the toString method.
+
+191
+00:26:00,836 --> 00:26:11,536
+In the toString method, what you see here is that, so when this toString method is called, I am checking whether this person object has also employee object as well.
+
+192
+00:26:11,536 --> 00:26:14,536
+If yes, then I'm going to...
+
+193
+00:26:14,675 --> 00:26:17,715
+Write the information from the employee object.
+
+194
+00:26:18,135 --> 00:26:18,276
+Okay.
+
+195
+00:26:20,195 --> 00:26:29,556
+And I'm going to assign it to this local string variable and return that string variable.
+
+196
+00:26:33,076 --> 00:26:38,496
+Return the value of the string material as the return value of this two string methods.
+
+197
+00:26:38,496 --> 00:26:39,135
+Okay.
+
+198
+00:26:39,892 --> 00:26:54,212
+Now, I have shown you three things. I have shown you one, how we use private inner classes, okay, within an outer class.
+
+199
+00:26:55,028 --> 00:27:00,307
+In that case, how we can create an object of the inner class.
+
+200
+00:27:00,307 --> 00:27:09,768
+So remember, if it is private class, if you want to create an object of the private inner class, you have to create inside of the outer class.
+
+201
+00:27:10,612 --> 00:27:14,652
+And then I have shown you a public inner class.
+
+202
+00:27:14,951 --> 00:27:30,672
+In that case, if you want to create an object of the public inner class, you can either create in the same outer class or you can create it in a different class, in a third class.
+
+203
+00:27:30,672 --> 00:27:31,031
+Okay.
+
+204
+00:27:31,692 --> 00:27:38,612
+So, but if you want to create in a third class, the only thing that you need to do, you need to import that inner class so that...
+
+205
+00:27:38,612 --> 00:27:44,592
+This third-party class can see the inner class.
+
+206
+00:27:44,912 --> 00:27:52,892
+Since it's defined as public, the third class will be able to access to its methods.
+
+207
+00:27:52,892 --> 00:27:56,412
+It will access to its constructor and also public methods.
+
+208
+00:27:57,672 --> 00:28:04,751
+And the third thing that I have shown you is that if you wanted to use your inner class as private class,
+
+209
+00:28:05,152 --> 00:28:24,551
+And if you wanted to access and also create an object of the inner class, in that case, what you need to do is that you need to have a method like endless method in which you can create the object of the inner class by yourself.
+
+210
+00:28:26,259 --> 00:28:41,500
+And so from the outer class, you will be able to call your own method like the Enlist method, which will then be responsible for creating the object of the inner class for yourself.
+
+211
+00:28:41,500 --> 00:28:53,819
+Okay. So in that case, if you wanted to do in this way, your third class will not use the inner class at all.
+
+212
+00:28:54,259 --> 00:29:01,900
+It will use the outer class always. In this particular case, the outer class is the person class.
+
+213
+00:29:02,387 --> 00:29:24,387
+But while it is using the autory class member methods like the endless method, in the background, okay, in the background, it will create an object of the employee class and also it will use the methods of the employee class, private class, okay?
+
+214
+00:29:24,387 --> 00:29:29,427
+So now you have three different way of using inner classes.
+
+215
+00:29:33,140 --> 00:29:36,480
+Okay, any questions so far with the related inner classes?
+
+216
+00:29:39,600 --> 00:29:50,180
+Bir önceki slide'da private yaptığımız için bir employee dizisi oluşturamıyoruz değil mi? Sadece person dizisi bir şekilde yapıyoruz.
+
+217
+00:29:50,480 --> 00:29:58,140
+Çünkü bu üçüncük sınıfımız, cast inner class veya outer class, employee diye bir sınıf olduğunu bilmiyor.
+
+218
+00:30:00,000 --> 00:30:26,000
+Bir sınıfın farkında değil. Çünkü burada bu private tanımlanmış. Şuna ulaşamıyor yani. Bunun varlığından haberi yok. Şey diyemiyorum yani buraya. Hani şeyde daha önce dediğim gibi işte buraya bir tane person yarattım. İşte stop nokta new employee diyemiyorum. Çünkü şunu private tanımlamışım.
+
+219
+00:30:27,476 --> 00:30:43,436
+Diyemediğim için de ve bunun da objesini oluşturmak istiyorsam bunun objesini oluşturacak public bir tane metot oluşturuyorum. Burada yaptığım gibi. Bunun içerisinde oluşturuyorum. Bu durumda kodu yazan da ben olduğum için.
+
+220
+00:30:43,855 --> 00:30:50,036
+Geri planda enlisti çağırdığımda aslında bir tane employee'nin objesinin oluşturulduğunu biliyorum.
+
+221
+00:30:50,776 --> 00:30:53,696
+Dolayısıyla üç tane person objesi yarattım.
+
+222
+00:30:53,855 --> 00:30:59,776
+Aslında üç tane person objesinin yanı sıra üç tane de employee objesi yaratmış oldum.
+
+223
+00:31:00,196 --> 00:31:02,716
+Her birisinde enlist metodunu çağırmış olarak da.
+
+224
+00:31:04,396 --> 00:31:05,756
+Anladım hocam, teşekkür ederim.
+
+225
+00:31:08,635 --> 00:31:09,355
+Okey.
+
+226
+00:31:12,435 --> 00:31:16,556
+Now, if there are no questions, I'm going to go to the multitrilling.
+
+227
+00:31:19,695 --> 00:31:21,016
+Okay, let's move forward.
+
+228
+00:31:21,195 --> 00:31:27,836
+If you have questions, we can always come back and so we can talk about the inner classes as well.
+
+229
+00:31:27,895 --> 00:31:30,355
+So inner classes is highly important.
+
+230
+00:31:30,615 --> 00:31:38,615
+You will see examples of the inner classes in the exam.
+
+231
+00:31:39,220 --> 00:31:41,059
+Okay, so it's highly important.
+
+232
+00:31:42,740 --> 00:31:44,000
+Okay, so multi-threading.
+
+233
+00:31:45,559 --> 00:32:04,799
+Now, usually, so in our, in today hardware, so we have more than one CPU, we have more than one core CPU, central processing unit in our computers, okay?
+
+234
+00:32:05,556 --> 00:32:10,955
+And each CPU is responsible for executing instructions.
+
+235
+00:32:12,236 --> 00:32:19,915
+And as you know, every process that we are running, like, so this is a process, right?
+
+236
+00:32:19,975 --> 00:32:21,296
+So it is a main method.
+
+237
+00:32:21,415 --> 00:32:23,096
+It's an executable process.
+
+238
+00:32:23,508 --> 00:32:41,468
+So when I say Java test inner class via outer class dot class, so what Java Virtual Machine is going to do, it's going to run this code in the CPU.
+
+239
+00:32:42,268 --> 00:32:42,367
+Okay.
+
+240
+00:32:42,988 --> 00:32:46,948
+Now, so what Java Virtual Machine is going to do, it's going to take this.
+
+241
+00:32:47,316 --> 00:32:51,496
+piece of code, it's going to turn into machine code.
+
+242
+00:32:52,115 --> 00:32:52,256
+Okay.
+
+243
+00:32:53,576 --> 00:33:10,156
+So first assembly code and the machine code, so which will consist of zeros and ones, and then it will give it to the CPU, and the CPU will execute it starting from the first line all the way to the last line.
+
+244
+00:33:11,375 --> 00:33:11,916
+Now.
+
+245
+00:33:12,819 --> 00:33:18,779
+Every process is going to be run in one CPU.
+
+246
+00:33:18,919 --> 00:33:26,259
+If you have four CPU, this means that your computer can run four different processes at the same time.
+
+247
+00:33:26,259 --> 00:33:27,219
+Right?
+
+248
+00:33:28,019 --> 00:33:36,120
+But if you have only one process, that process will be run in one CPU.
+
+249
+00:33:36,120 --> 00:33:44,120
+Even though you have four CPU, if you have one process like this, it's going to be run on one CPU.
+
+250
+00:33:44,380 --> 00:33:46,800
+The other three CPU will be idle.
+
+251
+00:33:47,840 --> 00:33:47,960
+Okay?
+
+252
+00:33:48,627 --> 00:34:13,627
+Now, with the multi-threading, what we are trying to do, we are trying to write the code in a way that our code can be run simultaneously by the four different CPUs at the same time, okay, by the multiple CPUs at the same time.
+
+253
+00:34:14,324 --> 00:34:28,503
+So in order to do this, instead of writing our code as a single thread process, okay, we are writing it as multi-thread process, okay?
+
+254
+00:34:28,503 --> 00:34:38,524
+Now, you have another terminology, single thread, multi-thread. Single thread process, multi-thread process, okay?
+
+255
+00:34:40,148 --> 00:34:43,748
+This code here is a single thread process.
+
+256
+00:34:44,328 --> 00:34:44,488
+OK.
+
+257
+00:34:44,948 --> 00:34:49,148
+So which means that there is only one execution flow.
+
+258
+00:34:49,668 --> 00:34:49,988
+OK.
+
+259
+00:34:50,568 --> 00:34:52,588
+There is only one execution flow.
+
+260
+00:34:52,708 --> 00:34:58,168
+And this code can only be run on one CPU.
+
+261
+00:34:58,768 --> 00:34:59,028
+OK.
+
+262
+00:34:59,028 --> 00:35:07,668
+But if I write this code as a multi-thread process, in that case, this code can be run in.
+
+263
+00:35:08,148 --> 00:35:10,688
+More than one CPU.
+
+264
+00:35:12,948 --> 00:35:13,548
+Okay.
+
+265
+00:35:14,408 --> 00:35:18,408
+So therefore, with the multi-threading, what we are trying to do,
+
+266
+00:35:18,868 --> 00:35:25,908
+so we are trying to take advantage of the computer with CPUs having multiple cores.
+
+267
+00:35:25,908 --> 00:35:31,168
+So we are trying to take advantage of the computers which has more than one CPU.
+
+268
+00:35:32,211 --> 00:35:48,371
+Now here, by writing the same code as multi-thread process, in that case, we are executing this code on more cores, more CPU, simultaneously.
+
+269
+00:35:50,251 --> 00:35:53,711
+Now, so let's take a look at how we are doing this.
+
+270
+00:35:55,219 --> 00:36:11,239
+So, first of all, when you write your code, okay, let's say you wrote your code and you use Java Virtual Machine to run your code, okay?
+
+271
+00:36:11,860 --> 00:36:19,119
+So, when your code is ready, okay, your code, you compile your code.
+
+272
+00:36:19,180 --> 00:36:20,860
+So, this is your Java class.
+
+273
+00:36:20,980 --> 00:36:23,279
+And then you give it to the Java compiler.
+
+274
+00:36:23,840 --> 00:36:29,760
+And then Java compiler will compile this into Java.class.
+
+275
+00:36:29,840 --> 00:36:35,579
+It will compile into testinner class via outer class.class, okay?
+
+276
+00:36:36,371 --> 00:36:53,492
+Now, after Java compiler converted into a class file, then you can use Java Virtual Machine, which will take this and bring it into the physical memory.
+
+277
+00:36:54,068 --> 00:37:12,108
+Okay. It will take this class file and it will bring it into a physical memory and it will also give the operating system will assign a state called near state to this process.
+
+278
+00:37:12,108 --> 00:37:12,967
+Okay.
+
+279
+00:37:13,556 --> 00:37:26,855
+Now, what Java Virtual Machine did that, it took the class file and bring it into physical memory, and the operating system gave a state to this process, new.
+
+280
+00:37:27,699 --> 00:37:42,159
+And then operating system, what the operating system is doing, it is starting to schedule all these processes that are waiting to be executed on the CPU.
+
+281
+00:37:45,811 --> 00:38:02,051
+A process has a state new, okay, then it is the operating system is going to schedule this into by using one of the scheduling algorithms.
+
+282
+00:38:02,051 --> 00:38:08,612
+Then the new state is going to be changed to runnable state, okay?
+
+283
+00:38:09,112 --> 00:38:13,771
+So the runnable state means that the process is now scheduled.
+
+284
+00:38:13,811 --> 00:38:15,751
+To be executed.
+
+285
+00:38:16,291 --> 00:38:16,491
+Okay.
+
+286
+00:38:17,331 --> 00:38:30,831
+Now, just like this class file, test inner class via outer class process, there are other processes as well.
+
+287
+00:38:30,831 --> 00:38:31,311
+Okay.
+
+288
+00:38:31,911 --> 00:38:37,291
+Waiting to be executed on the CPU and they all have runnable state.
+
+289
+00:38:38,036 --> 00:38:57,676
+And the scheduler, when the CPU becomes idle, which means that when the CPU does not process anything, in that case, it takes one of the jobs or one of the processes from the runnable state queue and put it into the CPU.
+
+290
+00:38:57,676 --> 00:39:01,696
+And the CPU will start executing this process.
+
+291
+00:39:02,116 --> 00:39:02,256
+Okay.
+
+292
+00:39:02,963 --> 00:39:17,784
+And after certain time, let's say five seconds, after certain time, the operating system will take this process from the CPU and put it back to the runnable state.
+
+293
+00:39:17,784 --> 00:39:28,463
+Okay, because the operating system does not want one process to take up all the CPU time. It is doing a time sharing. Okay.
+
+294
+00:39:29,139 --> 00:39:38,939
+Now, sometimes the processes, they might want to be blocked because they may be waiting some input from the user.
+
+295
+00:39:39,391 --> 00:39:44,691
+Or they may be reading some information from the file.
+
+296
+00:39:45,211 --> 00:39:51,291
+So in that case, operating system is changing their status to be a block state.
+
+297
+00:39:51,291 --> 00:39:51,851
+Okay.
+
+298
+00:39:52,311 --> 00:39:59,831
+Until they finish whatever process that they need to do after they complete that process.
+
+299
+00:40:00,000 --> 00:40:07,940
+The operating system puts it back to the runnable state so that they can be scheduled to take the CPU time again.
+
+300
+00:40:09,060 --> 00:40:19,000
+So once the process completes all instructions, so which means that once the...
+
+301
+00:40:20,115 --> 00:40:27,155
+All the lines of this process is executed in the CPU.
+
+302
+00:40:27,155 --> 00:40:34,816
+Then the operating system assigns the dead state to this process.
+
+303
+00:40:35,396 --> 00:40:35,516
+Okay.
+
+304
+00:40:36,775 --> 00:40:45,316
+Now, these are the five states that we are using in order to keep track of the states of the processes.
+
+305
+00:40:45,896 --> 00:40:46,135
+Okay.
+
+306
+00:40:49,076 --> 00:40:59,615
+Now, so here what we are trying to do, we are trying to write our code as a multi-threaded code, okay?
+
+307
+00:41:00,195 --> 00:41:11,695
+By writing our code as a multi-threading code, we can have our code do different things at the same time simultaneously, okay?
+
+308
+00:41:12,307 --> 00:41:25,748
+Now, so how we are doing this, so let's first take a look at an example of a multi-threaded program.
+
+309
+00:41:25,748 --> 00:41:26,628
+Okay.
+
+310
+00:41:27,088 --> 00:41:32,588
+Now here I have a regular class, StokerFan.
+
+311
+00:41:33,108 --> 00:41:33,407
+Okay.
+
+312
+00:41:34,324 --> 00:41:45,603
+And I would like, and so what I would like to do is that I would like to have this regular class to be implemented as multi-threaded.
+
+313
+00:41:46,603 --> 00:41:52,083
+Instead of writing it as a single-threaded, I want to write it as multi-threaded, okay?
+
+314
+00:41:53,203 --> 00:42:01,743
+Now, if I want a class to be written as a multi-threaded, what I need to do is that I need to implement the runnable interface.
+
+315
+00:42:02,452 --> 00:42:10,992
+Okay, the runnable interface is, we are using it when we want to write our code as a multi-tribbed code.
+
+316
+00:42:11,732 --> 00:42:14,552
+As you see, I'm implementing the runnable interface.
+
+317
+00:42:15,292 --> 00:42:22,172
+And so this Circarfan class has these global member fields.
+
+318
+00:42:22,792 --> 00:42:24,152
+Some of them are final.
+
+319
+00:42:24,912 --> 00:42:27,212
+Some of them are public.
+
+320
+00:42:28,692 --> 00:42:30,832
+And some of them are private.
+
+321
+00:42:31,412 --> 00:42:31,492
+Okay.
+
+322
+00:42:32,412 --> 00:42:36,271
+And then I have a constructor.
+
+323
+00:42:36,731 --> 00:42:42,492
+And this constructor is a two parameter constructor.
+
+324
+00:42:42,692 --> 00:42:45,231
+It is taking the team name and the shout face.
+
+325
+00:42:46,092 --> 00:42:50,392
+And as you see in the constructor, I am initializing the global member fields.
+
+326
+00:42:51,492 --> 00:42:54,132
+And then I have a run method.
+
+327
+00:42:54,996 --> 00:43:12,960
+Now, remember when we are using the interfaces, we said that interface is a superclass which has methods that needs to be implemented by the child classes that...
+
+328
+00:43:12,960 --> 00:43:14,000
+Extends them.
+
+329
+00:43:14,500 --> 00:43:19,460
+So, which means that in the runnable interface, we have this run method, right?
+
+330
+00:43:19,920 --> 00:43:28,660
+So, therefore, in the child class which is implementing the runnable interface, we must have the run method, okay?
+
+331
+00:43:29,099 --> 00:43:38,099
+The run method here is a must method because we are implementing the runnable interface and in the interface, we have the run method.
+
+332
+00:43:38,547 --> 00:43:50,047
+Now, so in the run method, so what we are trying to do, we are writing the code that each thread that needs to execute.
+
+333
+00:43:50,647 --> 00:43:50,787
+Okay.
+
+334
+00:43:51,447 --> 00:43:57,367
+Now, here in the run method, what I do is that I am creating a random object.
+
+335
+00:43:58,267 --> 00:44:04,667
+And in the try catch method, what I do is that I do a classic for loop.
+
+336
+00:44:05,523 --> 00:44:16,663
+And within this classic for loop, I do the loop for a number of steps, which is defined here in the global member field section.
+
+337
+00:44:17,703 --> 00:44:22,583
+And in each iteration of this loop, I'm writing something into the screen.
+
+338
+00:44:23,203 --> 00:44:30,343
+And then what I do is that I am calling the sleep method of the thread class.
+
+339
+00:44:31,003 --> 00:44:32,403
+Now, what is this?
+
+340
+00:44:32,884 --> 00:44:39,784
+So remember, there were some static methods that are useful for us to use.
+
+341
+00:44:40,163 --> 00:44:45,384
+So you remember these static classes from the math class, right, from the random class.
+
+342
+00:44:45,844 --> 00:44:53,523
+Just like the static classes from the math class, the thread class also has a static method called sleep.
+
+343
+00:44:54,516 --> 00:45:02,415
+And you can call the sleep method and sleep method will ask you to enter a parameter which is in seconds.
+
+344
+00:45:02,415 --> 00:45:16,096
+So you can enter the time that this thread needs to wait before it should go to the beginning of the next iteration.
+
+345
+00:45:16,755 --> 00:45:37,955
+Okay, so what it does is, so what, what, so when we call the thread sleep, what operating system is doing, for example, if the thread is running on the CPU at this point, when we call the sleep method, the operating system will take it from here and put it into the block state.
+
+346
+00:45:38,612 --> 00:45:44,632
+So that the CPU will be idle and CPU can be used for another process.
+
+347
+00:45:44,632 --> 00:45:55,652
+And the thread that we are talking about will be in this block state until the sleep time is over.
+
+348
+00:45:57,172 --> 00:45:57,852
+Okay.
+
+349
+00:45:58,212 --> 00:46:03,632
+So when the sleep time is over, then the operating system will take this process and...
+
+350
+00:46:04,244 --> 00:46:10,023
+So, put it into the runnable queue.
+
+351
+00:46:10,923 --> 00:46:21,043
+And the scheduler will take this thread whenever its turn is up and it will run it on the CPU.
+
+352
+00:46:23,347 --> 00:46:33,207
+Okay, so this means that, so I'm going to execute this for loop for 10 times because the steps is defined as 10.
+
+353
+00:46:33,887 --> 00:46:41,707
+And in each step, so I'm going to write something into the screen and then I'm going to wait for some time.
+
+354
+00:46:41,707 --> 00:46:48,927
+Okay, now if I use a thread class.
+
+355
+00:46:49,396 --> 00:46:56,136
+And so if I use any methods of the thread class, so this is a checked exception.
+
+356
+00:46:56,756 --> 00:46:59,716
+So which means that I have to put it into try catch block.
+
+357
+00:47:00,148 --> 00:47:16,088
+And in the catch, as you see, interrupted exceptions. So this is an exception ending class that is related to the thread. So if there is an error that happens here, it will be caught with this catchphrase and I will write something about this error.
+
+358
+00:47:16,288 --> 00:47:26,988
+Okay, now this is the run method. Okay, now what I'm trying to do is that whenever the run method will be executed, and there will be 10 steps.
+
+359
+00:47:28,148 --> 00:47:32,668
+10 times there will be a command print outline.
+
+360
+00:47:33,228 --> 00:47:35,988
+So I will write something into the console.
+
+361
+00:47:35,988 --> 00:47:40,488
+But in each iteration, I will wait for a small amount of time.
+
+362
+00:47:41,088 --> 00:47:41,228
+Okay.
+
+363
+00:47:41,448 --> 00:47:43,928
+Now that's the soccer fan regular class.
+
+364
+00:47:44,628 --> 00:47:45,988
+Now let's take a look at the...
+
+365
+00:47:48,108 --> 00:47:54,988
+So by doing this, I made the soccer fan class as...
+
+366
+00:47:55,887 --> 00:47:57,447
+A multi-trend class.
+
+367
+00:47:58,067 --> 00:47:58,187
+Okay.
+
+368
+00:47:59,467 --> 00:48:06,467
+Now let's take a look at the match class, which is using the Sakrafan class.
+
+369
+00:48:07,667 --> 00:48:11,067
+In the match class, I have a void method.
+
+370
+00:48:11,327 --> 00:48:22,987
+In the void method, now as you see, what I do is that first I'm creating, I'm defining a local variable where the type is thread class.
+
+371
+00:48:24,211 --> 00:48:28,832
+Okay. And then I am creating an object of the thread class.
+
+372
+00:48:29,652 --> 00:48:44,912
+But when I create the object of the thread class in the constructor, I am passing the object of the multi-threaded class that I just wrote.
+
+373
+00:48:44,912 --> 00:48:45,612
+Okay.
+
+374
+00:48:46,387 --> 00:48:53,288
+Any class that implements the runnable interface.
+
+375
+00:48:54,628 --> 00:48:55,387
+Okay.
+
+376
+00:48:57,608 --> 00:48:59,007
+Just a second.
+
+377
+00:48:59,347 --> 00:48:59,507
+Okay.
+
+378
+00:49:00,027 --> 00:49:08,768
+Any class that implements the runnable interface can go into the parameter of the constructor of the thread class.
+
+379
+00:49:08,768 --> 00:49:11,536
+As you see, here I am putting the...
+
+380
+00:49:11,536 --> 00:49:30,115
+A constructor of the, I'm calling the constructor of the soccer fan class, and I'm creating an object of the soccer fan class, and this object is going to be given as an argument to the constructor of the thread class.
+
+381
+00:49:30,295 --> 00:49:39,536
+As you see here, I create an object of the new thread, and when I call the start method of the thread class, what?
+
+382
+00:49:39,536 --> 00:49:48,795
+What start method is going to do, the start method is going to call the run method of the SockerFan class.
+
+383
+00:49:49,556 --> 00:49:49,655
+Okay.
+
+384
+00:49:50,096 --> 00:49:57,976
+Now, as you see, when I call the start, so this start is going to call the run method of the SockerFan class.
+
+385
+00:49:58,976 --> 00:49:59,255
+And
+
+386
+00:50:00,000 --> 00:50:04,559
+So here, I can do this here.
+
+387
+00:50:04,900 --> 00:50:12,619
+So this is one thread, and second thread, and the third thread, and the fourth thread.
+
+388
+00:50:12,739 --> 00:50:23,119
+And for each of the threads, so I need to call the start method, because they are going to be calling the run method of the soccer pen class.
+
+389
+00:50:24,052 --> 00:50:47,212
+Now, when I do this, what happens is that now I am able by doing this, I am able to execute, I am able to execute the same regular class as a multi-threaded class and the CPU can run this class.
+
+390
+00:50:47,699 --> 00:50:52,559
+In multi cores at the same time.
+
+391
+00:50:52,779 --> 00:50:58,179
+So which means that this thread is going to be run on one core.
+
+392
+00:50:58,659 --> 00:51:02,599
+This thread is going to be run on the second core.
+
+393
+00:51:03,079 --> 00:51:04,839
+This one on the third core.
+
+394
+00:51:04,839 --> 00:51:07,319
+And this one on the fourth core.
+
+395
+00:51:07,659 --> 00:51:09,059
+So there will be four cores.
+
+396
+00:51:09,279 --> 00:51:15,699
+If I have four cores in my CPU, all these threads will be executed in different...
+
+397
+00:51:15,699 --> 00:51:40,119
+Ok, now if I didn't implement the soccer fan, ok, so in that case, I want to implement the runnable interface. In that case, I would have to put the code here in the main method, for example, of the soccer fan. In that case, when I execute this, this was going to be executed only in one code.
+
+398
+00:51:40,512 --> 00:51:49,852
+But by doing this as a multi-core, multi-threaded class, I am able to run it on the multiple cores as well.
+
+399
+00:51:50,792 --> 00:51:50,952
+Okay.
+
+400
+00:51:52,612 --> 00:52:04,472
+Now, one thing that you see here is that for each of the thread class, a thread object that I'm creating, I'm calling the start method.
+
+401
+00:52:05,012 --> 00:52:08,252
+Okay, but there are easier ways to do this.
+
+402
+00:52:08,252 --> 00:52:21,032
+Java software development key, Java SDK, provides us a library that helps us to create these objects in an efficient way.
+
+403
+00:52:21,212 --> 00:52:24,872
+So, by using the thread pools.
+
+404
+00:52:25,264 --> 00:52:31,943
+So, I'm going to give a 10-minute break and afterwards, I'm going to talk about these libraries.
+
+405
+00:52:31,943 --> 00:52:42,384
+Arkadaşlar, bir 10 dakika ara veriyorum. Arkasından devam edeceğiz. Şu an 2.55 saat. 5 gece tekrardan başlıyorum.
+
+406
+01:04:58,099 --> 01:04:59,500
+Evet, sesim gidiyorum arkadaşlar.
+
+407
+01:05:01,420 --> 01:05:02,119
+Geliyorum hocam.
+
+408
+01:05:02,839 --> 01:05:03,460
+Tamam, süper.
+
+409
+01:05:04,839 --> 01:05:06,639
+Kaldığımız yerden devam edelim.
+
+410
+01:05:09,599 --> 01:05:21,799
+Okay, now, I said that, so let's go back and let's again take a look at the previous code.
+
+411
+01:05:23,159 --> 01:05:24,639
+So remember, so when I...
+
+412
+01:05:26,195 --> 01:05:37,295
+So when I said that when we want to create a thread, we are using the thread class.
+
+413
+01:05:38,355 --> 01:05:49,536
+And with the thread class, when we create an object of the thread class, we are passing the object of the class which implements the runnable interface.
+
+414
+01:05:50,516 --> 01:05:57,296
+And so once we create the object of the thread class, then we call the start method.
+
+415
+01:05:57,896 --> 01:06:08,696
+So when we call the start method, what Java Virtual Machine is doing, it goes to that class which implements the runnable interface and it executes the run method.
+
+416
+01:06:09,780 --> 01:06:21,360
+Okay. Whatever we put into the run method, it is going to be executed by the Java Virtual Machine when we call the start method of the thread class. Okay.
+
+417
+01:06:21,920 --> 01:06:28,900
+Now, this is a structure that we are going to use when we write the multi-thread code. Okay.
+
+418
+01:06:29,240 --> 01:06:34,440
+Now, as you see, for each thread, I need to call the start method. Okay.
+
+419
+01:06:34,943 --> 01:06:40,564
+Now, which means that for start and every time, so I need to call the start method.
+
+420
+01:06:40,564 --> 01:06:44,564
+And there is an easy way for doing this.
+
+421
+01:06:45,264 --> 01:06:57,943
+Java Virtual Machine, Java Software Development Kit, Java SDK, also comes with a concurrent package, which is under java.util.
+
+422
+01:06:58,931 --> 01:07:04,971
+And it provides several classes that we can use, which makes multi-thread programming easier.
+
+423
+01:07:05,691 --> 01:07:20,111
+For example, it provides an executors class, which is giving us a thread of, which is giving us a pool of threads that we can use.
+
+424
+01:07:20,531 --> 01:07:24,271
+We can identify, for example, the number of threads.
+
+425
+01:07:24,719 --> 01:07:27,639
+Of our program that we want.
+
+426
+01:07:28,019 --> 01:07:28,319
+Okay.
+
+427
+01:07:28,819 --> 01:07:32,939
+Or it can create a threat dynamically when it is needed.
+
+428
+01:07:32,939 --> 01:07:33,539
+Okay.
+
+429
+01:07:33,959 --> 01:07:41,939
+So this is this executors class is responsible for providing us a number of threats that we need.
+
+430
+01:07:42,019 --> 01:07:50,579
+For example, if I wanted this class, this regular class to be run with four threat.
+
+431
+01:07:51,079 --> 01:07:51,419
+Okay.
+
+432
+01:07:51,639 --> 01:07:52,539
+In that case.
+
+433
+01:07:52,719 --> 01:08:00,139
+I can specify that I want 4 thread for this regular class.
+
+434
+01:08:00,139 --> 01:08:00,579
+Okay.
+
+435
+01:08:01,539 --> 01:08:13,559
+Now, so the other class that we are going to be using is the other type of class that we are going to use is executor service.
+
+436
+01:08:16,851 --> 01:08:34,811
+several methods, shutdown method, which is responsible for shutting down the thread pool, but it allows all the existing threads to be completed before it shuts it down.
+
+437
+01:08:35,604 --> 01:08:38,564
+There is another method, shut down now.
+
+438
+01:08:39,043 --> 01:08:42,923
+So it doesn't wait until all the threats are finishes.
+
+439
+01:08:43,363 --> 01:08:49,203
+It shuts down the threat pool immediately.
+
+440
+01:08:49,863 --> 01:08:52,384
+There is another method called is shut down.
+
+441
+01:08:52,543 --> 01:08:58,184
+It is checking whether or not all the threats in the pool is completed.
+
+442
+01:08:58,899 --> 01:09:05,859
+It is terminated. It is checking whether the pool is terminated.
+
+443
+01:09:06,039 --> 01:09:11,179
+So there are different methods that belongs to executor service that we can utilize.
+
+444
+01:09:11,179 --> 01:09:11,859
+Okay.
+
+445
+01:09:12,500 --> 01:09:16,319
+And for executors class, I already told you that.
+
+446
+01:09:16,800 --> 01:09:21,000
+So it is giving us a thread pool of threads.
+
+447
+01:09:22,000 --> 01:09:29,819
+Either based on the number of threads that we want, or it can create a thread pool with the dynamic number of threads.
+
+448
+01:09:30,579 --> 01:09:44,100
+And another class, executor class, which allows us to execute the runnable object, the regular classes that implements the regular runnable interface.
+
+449
+01:09:44,799 --> 01:09:47,979
+Now, so this was our previous code.
+
+450
+01:09:48,539 --> 01:09:50,239
+Okay, this was our previous code.
+
+451
+01:09:50,239 --> 01:09:53,239
+Now, I'm going to implement the same code with the...
+
+452
+01:09:53,747 --> 01:10:00,000
+Bu da
+
+453
+01:10:00,500 --> 01:10:06,280
+Now, this is the class that I'm going to use, and it has one main method.
+
+454
+01:10:06,960 --> 01:10:17,260
+Now, as you see, what I do is that first I'm creating a dynamic thread pool by calling the executor's new cache thread pool method.
+
+455
+01:10:17,840 --> 01:10:24,399
+Now, remember, if it is a static method, I don't have to create an object of the class.
+
+456
+01:10:24,399 --> 01:10:26,280
+So this is a static method.
+
+457
+01:10:26,800 --> 01:10:28,399
+It will give me an...
+
+458
+01:10:28,500 --> 01:10:30,539
+An object.
+
+459
+01:10:31,891 --> 01:10:33,471
+That I can use.
+
+460
+01:10:34,051 --> 01:10:48,711
+And the type of this object, executor service, because I'm going to use methods of the executor service in order to execute these runnable objects.
+
+461
+01:10:49,531 --> 01:10:58,951
+Now, so by calling the new cache thread pool of the executors class, it will give me an executor service object.
+
+462
+01:10:59,412 --> 01:11:05,391
+And I'm assigning this reference to this object to this local variable pool.
+
+463
+01:11:05,792 --> 01:11:08,731
+And now I am calling the execute method.
+
+464
+01:11:09,332 --> 01:11:13,072
+Now execute method takes the runnable object as its input.
+
+465
+01:11:13,072 --> 01:11:17,811
+As you see, I have four different runnable objects I'm inserting into execute.
+
+466
+01:11:18,372 --> 01:11:27,152
+And every time I call the execute method, what it does is it starts this object immediately.
+
+467
+01:11:27,152 --> 01:11:28,152
+So before.
+
+468
+01:11:29,652 --> 01:11:36,032
+First, I needed to create the threat object and I need to then specifically call the start method.
+
+469
+01:11:36,271 --> 01:11:40,452
+But right now, all I need to do is I need to call the execute method.
+
+470
+01:11:40,631 --> 01:11:48,332
+Execute method will not only create the threat object, but also it will call the start method on my behalf.
+
+471
+01:11:48,332 --> 01:11:48,952
+Right.
+
+472
+01:11:49,587 --> 01:12:11,707
+And as you see, I have four different runnable object, four different thread objects, and I'm executing these by using this thread pool, which means that this new cache thread pool will create four different threads in order to run these four different runnable objects.
+
+473
+01:12:12,564 --> 01:12:21,123
+And after that, I'm calling the shutdown method. Remember, the shutdown method is one of the methods of executable, executor service.
+
+474
+01:12:22,164 --> 01:12:30,604
+And so what this shutdown method is doing, it is checking whether all these threads are completed properly.
+
+475
+01:12:30,604 --> 01:12:35,684
+After that, it shuts down the whole thread pool.
+
+476
+01:12:36,344 --> 01:12:36,384
+Okay.
+
+477
+01:12:36,924 --> 01:12:38,592
+Now, so...
+
+478
+01:12:38,591 --> 01:12:50,492
+So these classes, executors and executor service, as you see, executor service extends the executor interface, which means that
+
+479
+01:12:50,768 --> 01:12:58,768
+ExecutorService will also inherit the Execute method along with these four methods.
+
+480
+01:12:59,288 --> 01:13:15,647
+Now, these classes, Executors and ExecutorService, they are useful methods because it helps us to decrease the amount of code that we need to write when we write the multi-threaded programming.
+
+481
+01:13:18,452 --> 01:13:18,912
+Ok?
+
+482
+01:13:23,956 --> 01:13:37,935
+Now, with the run method, as you see, with the run method, we cannot change the signature of the method, which means that we cannot say at the end of it, troves and exception.
+
+483
+01:13:37,935 --> 01:13:51,956
+We cannot change the run method. So therefore, when we use multi-thread programming, so if we need to catch an exception within the run method,
+
+484
+01:13:51,956 --> 01:13:55,656
+We have to put it into try catch inside the run method.
+
+485
+01:13:55,996 --> 01:13:56,136
+Okay.
+
+486
+01:13:56,556 --> 01:14:09,816
+So remember when we explained the exception handling topic, we said that there are sometimes, there are sometimes if we don't want to catch the.
+
+487
+01:14:10,195 --> 01:14:25,155
+Error inside of the method, then we can add throw keyword at the end of the signature of the method, and then we can throw the exception from this method.
+
+488
+01:14:25,155 --> 01:14:38,036
+Okay, instead of putting the try catch block inside of the method, we can just add this into throw statement into the signature of the method and throw the
+
+489
+01:14:38,195 --> 01:14:41,296
+Arkadaşlar, exception from this method.
+
+490
+01:14:41,515 --> 01:14:47,916
+Arkadaşlar, and wherever this method is called, so in this particular case, this method is called setH from here.
+
+491
+01:14:48,396 --> 01:14:51,576
+So this exception handling needs to be handled here.
+
+492
+01:14:51,576 --> 01:14:57,175
+So the try catch block will be inserted wherever this method is called.
+
+493
+01:14:57,755 --> 01:15:00,576
+But so when we use...
+
+494
+01:15:01,492 --> 01:15:20,311
+Multi-threaded programming, we cannot do that. We cannot change the signature of the run method. If there is an exception that needs to be handled, we use the try-catch block inside of the run method.
+
+495
+01:15:27,091 --> 01:15:34,911
+Okay, now one thing that is also important with the multitreading is the synchronization.
+
+496
+01:15:35,511 --> 01:15:40,051
+Okay, now I will teach you the synchronization with an example.
+
+497
+01:15:40,051 --> 01:15:47,711
+First, I want you to understand the example, then I will teach you why there is a synchronization problem that needs to be handled.
+
+498
+01:15:48,819 --> 01:15:56,959
+Now, here you see I want to write a multi-threaded program, and I have two regular class.
+
+499
+01:15:57,099 --> 01:15:58,679
+One is account with drawer.
+
+500
+01:15:58,879 --> 01:16:00,879
+The other one is account depositor.
+
+501
+01:16:01,420 --> 01:16:01,559
+Okay.
+
+502
+01:16:02,519 --> 01:16:07,439
+And what I do is that I want these classes to implement runnable interface.
+
+503
+01:16:08,148 --> 01:16:19,887
+So when I want these regular classes to implement runnable interface, actually what I want to do is I want to write these classes as a multi-thread class.
+
+504
+01:16:19,887 --> 01:16:20,528
+Okay.
+
+505
+01:16:21,779 --> 01:16:30,079
+Now, so which means that instead of having a single thread class, I will have a multi-thread class.
+
+506
+01:16:30,420 --> 01:16:34,180
+So therefore, these two classes are implementing the runnable interface.
+
+507
+01:16:34,180 --> 01:16:40,659
+Therefore, you see that inside the member methods of these two classes, I have a run method.
+
+508
+01:16:41,340 --> 01:16:41,460
+Okay.
+
+509
+01:16:42,387 --> 01:17:03,948
+Now, these two classes are accessing a third class, which is account. As you see, this has a global member field, which is balance. It is a constructor and it has some methods, some regular methods inside of it. Okay?
+
+510
+01:17:04,431 --> 01:17:14,051
+Basically, with this, I have an account object which has a balanced member field in it.
+
+511
+01:17:14,492 --> 01:17:20,672
+And these two classes are accessing to this account object, which is an object of this class.
+
+512
+01:17:21,152 --> 01:17:25,451
+And it is they are updating the value inside of this object.
+
+513
+01:17:25,832 --> 01:17:28,072
+OK, this is the essence of this program.
+
+514
+01:17:28,851 --> 01:17:38,452
+Now, let's take a look at the code for the account. Let's take a look at the code for the middle class, this account.
+
+515
+01:17:39,112 --> 01:17:46,532
+Now, you see I have one global member field, which is double, it is private, and I have a constructor.
+
+516
+01:17:47,055 --> 01:17:48,555
+One parameter constructor.
+
+517
+01:17:49,275 --> 01:17:52,495
+And I have a getter method for the global member field.
+
+518
+01:17:53,015 --> 01:17:54,155
+And I have two methods.
+
+519
+01:17:54,335 --> 01:17:55,215
+One is withdraw.
+
+520
+01:17:55,395 --> 01:17:56,876
+The second one is deposit.
+
+521
+01:17:56,876 --> 01:18:01,956
+And they are responsible for updating the global member field balance.
+
+522
+01:18:02,815 --> 01:18:02,956
+Okay.
+
+523
+01:18:04,564 --> 01:18:16,324
+Now, in the withdraw method, what I do is that first thing, I get the value of the balance and I assign it to this local variable.
+
+524
+01:18:16,324 --> 01:18:27,684
+And then I call a possible delay method, which is responsible for waiting for some time, which is responsible for waiting for five minutes a second.
+
+525
+01:18:28,264 --> 01:18:32,524
+And then I update the balance with the amount.
+
+526
+01:18:32,564 --> 01:18:36,564
+that I'm passing to the withdraw method.
+
+527
+01:18:37,108 --> 01:18:39,948
+And I do the same thing with the deposit this time.
+
+528
+01:18:40,068 --> 01:18:47,087
+I'm updating the balance by adding the amount that I'm passing to deposit method.
+
+529
+01:18:47,087 --> 01:18:48,847
+So I have two methods.
+
+530
+01:18:49,288 --> 01:18:57,968
+So in this case, you can say that account depositor object will be responsible for calling the deposit.
+
+531
+01:18:58,568 --> 01:19:05,108
+Account withdrawer object will be responsible for calling the withdraw method.
+
+532
+01:19:05,108 --> 01:19:11,228
+Ok, let's take a look at the account depositor class.
+
+533
+01:19:11,608 --> 01:19:18,828
+Now, I wanted to make this as a multi-traded class, so therefore it implements the runnable interface.
+
+534
+01:19:19,828 --> 01:19:24,988
+It has one, it has these two global member fields.
+
+535
+01:19:25,188 --> 01:19:29,888
+One has account, the other one is amount.
+
+536
+01:19:30,484 --> 01:19:33,424
+And it has one constructor in it.
+
+537
+01:19:33,623 --> 01:19:35,444
+It's two parameter constructor.
+
+538
+01:19:36,004 --> 01:19:41,623
+And it has one run method in it because it has to have run method because we are implementing the runnable interface.
+
+539
+01:19:42,387 --> 01:19:59,528
+Now, in the run method, what we are doing is that we are calling the account deposit method, account objects deposit method, and by passing the amount that we want to insert into this account object.
+
+540
+01:20:00,000 --> 01:20:09,719
+Okay. Now, remember, when I create the account depositor, I'm also passing the account object that this account depositor will need to update.
+
+541
+01:20:09,719 --> 01:20:18,180
+So the account object reference is going to be inserted when this object of the account depositor is created.
+
+542
+01:20:18,440 --> 01:20:27,699
+So therefore, when I call the deposit method, I will actually call the actual objects deposit method.
+
+543
+01:20:28,000 --> 01:20:31,159
+I want to create the object of account here.
+
+544
+01:20:31,819 --> 01:20:36,799
+The reference of the object of account will be passed in the arguments.
+
+545
+01:20:38,036 --> 01:20:42,615
+Now, the same thing is for the account withdraw.
+
+546
+01:20:42,956 --> 01:20:45,456
+It is implementing the runnable interface.
+
+547
+01:20:46,036 --> 01:20:50,915
+Exactly the same things that I have in the account depositor.
+
+548
+01:20:51,576 --> 01:20:56,835
+But in the run method, instead of calling the deposit, I'm calling the withdraw method.
+
+549
+01:20:57,615 --> 01:20:57,775
+Okay.
+
+550
+01:20:58,155 --> 01:20:59,495
+Now you have seen the code.
+
+551
+01:20:59,495 --> 01:21:04,495
+Now let's take a look at the fourth class, bank simulation class.
+
+552
+01:21:04,863 --> 01:21:08,703
+Now, in the PANX simulation class, you see there's a main method.
+
+553
+01:21:09,323 --> 01:21:15,384
+In the main method, the first thing that I do, I'm creating an account object where the balance is zero.
+
+554
+01:21:16,023 --> 01:21:16,663
+Okay.
+
+555
+01:21:17,323 --> 01:21:26,843
+Now, after I create the account object, first thing that I do is that I'm getting the balance before I do anything.
+
+556
+01:21:27,083 --> 01:21:29,303
+And so I'm writing into screen.
+
+557
+01:21:29,423 --> 01:21:31,823
+So the balance field show zero.
+
+558
+01:21:32,724 --> 01:21:41,863
+Okay, then what I do is that I am creating a thread pool by calling the executors new cache thread pool method.
+
+559
+01:21:41,863 --> 01:21:47,304
+It will give me an object where the type of the object is executor service.
+
+560
+01:21:48,224 --> 01:21:53,203
+And I'm assigning the reference to this object to executors local variable.
+
+561
+01:21:54,744 --> 01:21:56,724
+Then I do a for loop.
+
+562
+01:21:57,363 --> 01:22:06,943
+And within this for loop, I'm creating 100 different threads for account depositor.
+
+563
+01:22:07,343 --> 01:22:11,804
+As you see, the iteration number for the for loop is 100.
+
+564
+01:22:12,323 --> 01:22:17,603
+So there I will create 100 different threads for account depositor.
+
+565
+01:22:17,603 --> 01:22:18,243
+Okay.
+
+566
+01:22:18,804 --> 01:22:23,603
+And each time, so I will pass the...
+
+567
+01:22:24,148 --> 01:22:29,708
+A, account, object, when I create the thread.
+
+568
+01:22:29,847 --> 01:22:36,868
+So, which means that I will create 100 different threads and every thread will access to the same account object.
+
+569
+01:22:36,868 --> 01:22:44,927
+There will be only one account object and 100 thread will try to access to this account object.
+
+570
+01:22:45,307 --> 01:22:50,587
+And they will all try to deposit one dollar.
+
+571
+01:22:51,539 --> 01:23:01,460
+Okay. And here you see I'm doing the same thing this time. Instead of creating 100 threads, I'm creating 50 threads for account withdrawals.
+
+572
+01:23:02,180 --> 01:23:18,780
+And these account withdrawals threads will also access to the same account object. There will be one account object, 100 account depositors thread, and 50 different account withdrawals threads.
+
+573
+01:23:19,636 --> 01:23:24,695
+And as you see in the for loop, I am calling the executor, execute method.
+
+574
+01:23:24,836 --> 01:23:26,016
+So what is the executor?
+
+575
+01:23:26,136 --> 01:23:28,556
+Executor service type object.
+
+576
+01:23:29,036 --> 01:23:34,275
+And I'm calling the execute method and I'm inserting the runnable object.
+
+577
+01:23:34,416 --> 01:23:35,976
+What is the runnable object here?
+
+578
+01:23:36,115 --> 01:23:37,115
+Account depositor.
+
+579
+01:23:37,536 --> 01:23:39,775
+And I'm doing the same thing here again.
+
+580
+01:23:39,775 --> 01:23:44,435
+I'm putting the runnable object.
+
+581
+01:23:44,916 --> 01:23:48,036
+In this case, the runnable object is account with drop.
+
+582
+01:23:48,416 --> 01:23:48,556
+Okay.
+
+583
+01:23:50,076 --> 01:23:53,636
+I'm passing it to the execute method.
+
+584
+01:23:55,315 --> 01:24:21,775
+Okay, now at this point, so once these two for loops gets completed, okay, at this point, now I have 100 different, 100 different depositor threads inserted $1 at each time and 50 different withdrawer thread withdraw $1 from the account at each time.
+
+585
+01:24:22,131 --> 01:24:35,652
+At the end of it, I'm calling the shutdown method of the executor, which will close, which will wait until all the threads gets completed and it will shut down the pool.
+
+586
+01:24:35,652 --> 01:24:46,811
+And I'm going to check whether the executor service is terminated. If yes, I will print the balance. Okay.
+
+587
+01:24:49,555 --> 01:24:52,855
+Now, this is all good, but there is a problem.
+
+588
+01:24:54,255 --> 01:24:55,535
+Now, the problem is this.
+
+589
+01:24:57,215 --> 01:25:01,595
+Now, remember, there was only one account object, right?
+
+590
+01:25:01,715 --> 01:25:02,375
+This object.
+
+591
+01:25:02,755 --> 01:25:14,695
+And let's say, so we are talking about the withdraw function of this, withdraw function of the account object.
+
+592
+01:25:15,188 --> 01:25:29,427
+Now, there is one with drawer thread here, and there is another with drawer thread here.
+
+593
+01:25:29,427 --> 01:25:35,568
+So remember, in this particular example, I created 50 different with drawer threads.
+
+594
+01:25:36,148 --> 01:25:40,908
+Okay, now let's take a look at two of them, only two of them.
+
+595
+01:25:41,308 --> 01:25:46,168
+Okay, now there is one with drawer thread here and there is another with drawer thread here.
+
+596
+01:25:46,648 --> 01:25:53,368
+And these with drawer thread take an object of the account when they were created.
+
+597
+01:25:53,368 --> 01:25:57,228
+So they both have an access to the same account object.
+
+598
+01:25:57,971 --> 01:25:59,371
+Now, what happens here?
+
+599
+01:25:59,811 --> 01:26:07,611
+So at the beginning, let's say I have $1,000 in the account balance, right?
+
+600
+01:26:07,991 --> 01:26:17,131
+Now, so what's going to happen is that the first thread, a withdrawal thread, will try to withdraw $100.
+
+601
+01:26:17,791 --> 01:26:21,991
+Second thread will try to withdraw $50, right?
+
+602
+01:26:22,804 --> 01:26:41,644
+Now, so let's say the first thread came to account, okay, and it learned the balance by calling the get balance, okay, and it assigned the curveball value, okay.
+
+603
+01:26:42,703 --> 01:26:48,003
+Now, it learned the get balance as $1,000, okay.
+
+604
+01:26:48,564 --> 01:26:54,583
+But at the same time, second thread came to the account.
+
+605
+01:26:55,503 --> 01:27:01,783
+And it also learned the balance as $1,000 because it also called the get balance method.
+
+606
+01:27:02,283 --> 01:27:02,364
+Okay.
+
+607
+01:27:03,304 --> 01:27:08,024
+Now, they both are executing right now inside the withdraw method.
+
+608
+01:27:08,644 --> 01:27:08,984
+Okay.
+
+609
+01:27:09,492 --> 01:27:19,612
+Now, this withdrawal threat subtracted $100 from the balance and made it $900.
+
+610
+01:27:19,612 --> 01:27:27,912
+Okay. Now, from this threat perspective, there is only $900 in the account.
+
+611
+01:27:28,500 --> 01:27:41,780
+Now, remember, initially, this thread also read $1,000 from the get balance because they executed the same line simultaneously.
+
+612
+01:27:42,900 --> 01:27:47,600
+And so they both read the same thing at $1,000.
+
+613
+01:27:48,659 --> 01:28:03,339
+And after this gets completed, this thread, this time, I've subtracted $50 from $1,000 and ended up with $950 and updated the balance with $950.
+
+614
+01:28:04,180 --> 01:28:13,000
+Now, this thread thinks right now that there is $950, but this thread thinks there is $900 in the balance.
+
+615
+01:28:13,000 --> 01:28:25,300
+Okay. So which means that by executing the same method at the same time, two threads created an inconsistent view of the program.
+
+616
+01:28:25,648 --> 01:28:42,588
+Okay, now we don't want that. If we are writing a multi-threaded program, we want synchronization. All the threads should agree on the data state or the member field state of the objects.
+
+617
+01:28:43,408 --> 01:28:50,428
+Now, in order to do that, what we are doing is that we are adding a keyword called synchronized keyword.
+
+618
+01:28:51,988 --> 01:29:09,588
+Now, we are adding the synchronized keyword to the methods description where the methods needs to be, where the data member fields of the objects needs to be protected.
+
+619
+01:29:09,588 --> 01:29:18,968
+Now, if you write a synchronized keyword here, only one thread can execute this method at a time.
+
+620
+01:29:19,296 --> 01:29:43,615
+Okay, so if you write a synchronized method, for example, to this method, in that case, what will happen is that, so when the LS thread comes here, when it executes the withdraw method, the second one will wait until the first thread finishes the withdraw method altogether.
+
+621
+01:29:44,275 --> 01:29:50,295
+It won't execute to withdraw method until the LS completes its execution.
+
+622
+01:29:51,055 --> 01:29:59,715
+So therefore, by adding the synchronized method, we are able to protect the global member fields,
+
+623
+01:29:59,715 --> 01:30:05,595
+and we only allow one thread to execute the synchronized method.
+
+624
+01:30:05,755 --> 01:30:09,435
+So that's also an important concept that we need to do.
+
+625
+01:30:09,495 --> 01:30:11,775
+If we need to do a synchronization,
+
+626
+01:30:12,224 --> 01:30:18,064
+So we are adding the synchronized keyword into the method signature.
+
+627
+01:30:18,804 --> 01:30:18,944
+Okay.
+
+628
+01:30:21,424 --> 01:30:28,144
+Now, if you have a member fields like this, so we can add...
+
+629
+01:30:29,011 --> 01:30:35,231
+By adding the synchronized keywords to the methods, we can create the synchronizations.
+
+630
+01:30:35,452 --> 01:30:45,231
+And if we have a data structures, in that case, so if we have a data structure such as vector or the hash tables, these data structures are synchronized.
+
+631
+01:30:45,872 --> 01:30:47,091
+So they are thread safe.
+
+632
+01:30:47,292 --> 01:30:56,992
+So if we use a data structure such as vector and the hash table, in that case, the synchronization is done by the data structure.
+
+633
+01:30:57,011 --> 01:31:01,372
+itself, we don't need to provide the synchronization.
+
+634
+01:31:04,072 --> 01:31:04,771
+Okay.
+
+635
+01:31:07,311 --> 01:31:19,011
+So any questions related with the multi-trend, how we make a class a multi-trend program and how we implement the...
+
+636
+01:31:20,500 --> 01:31:25,739
+How we create the runnable object by implementing the runnable interface?
+
+637
+01:31:26,479 --> 01:31:30,460
+How we creating the object of the runnable interface?
+
+638
+01:31:30,899 --> 01:31:34,759
+How we use the executor service and executors?
+
+639
+01:31:35,099 --> 01:31:37,119
+Any questions related with all of that?
+
+640
+01:31:42,260 --> 01:31:44,859
+Any questions related with the synchronizations?
+
+641
+01:31:46,340 --> 01:31:46,619
+Okay.
+
+642
+01:31:47,500 --> 01:31:54,539
+Now, all of this will come, you know, you will encounter them in the exam, in the final exam.
+
+643
+01:31:54,539 --> 01:32:09,340
+So make sure that you completely understand the multiprogramming examples that I have shown you and make sure that you have studied the quotes that I have posted on the course website.
+
+644
+01:32:11,475 --> 01:32:14,275
+Excuse me, can I have a question please?
+
+645
+01:32:14,755 --> 01:32:15,335
+Sure, yeah.
+
+646
+01:32:16,495 --> 01:32:26,175
+I have done my project using GUI, GUI, drag and, şey, pardon.
+
+647
+01:32:27,115 --> 01:32:33,775
+Hocam, kodumu yazarken, şey, drag and drop kullandım. Onunla alakalı bir sıkıntı olur mu?
+
+648
+01:32:34,275 --> 01:32:34,875
+Yok, hocam.
+
+649
+01:32:35,764 --> 01:32:42,604
+Kodunuzu zaten GUI olarak Swing'de kullanabilirsiniz yahut da farklı bir interface de kullanabilirsiniz.
+
+650
+01:32:42,804 --> 01:32:51,823
+Java Server Pages de kullanabilirsiniz. Java Server Faces de kullanabilirsiniz. Onda bir sonu yok.
+
+651
+01:32:52,756 --> 01:32:53,676
+Teşekkür ederim.
+
+652
+01:32:54,096 --> 01:33:01,236
+Yani önemli olan sadece button ve label isimleri değil mi hocam?
+
+653
+01:33:01,656 --> 01:33:01,856
+Evet.
+
+654
+01:33:01,856 --> 01:33:03,836
+Sadece onlara bakacaksınız. Tamam. Teşekkür ederim.
+
+655
+01:33:05,492 --> 01:33:12,892
+Okay, now I want to use the rest of the time to go into graphical user interfaces now.
+
+656
+01:33:12,892 --> 01:33:26,892
+If you have any other, if you don't have any other questions, I just want to show you a simple, how we are using simple frames and also the panels so that you have a basic idea how they are going to be used.
+
+657
+01:33:27,472 --> 01:33:33,072
+And you can implement your project either using Swing or other web-based.
+
+658
+01:33:33,492 --> 01:33:35,112
+Java programming technologies.
+
+659
+01:33:35,332 --> 01:33:37,792
+But here we are teaching you the swing.
+
+660
+01:33:39,292 --> 01:33:39,472
+Okay?
+
+661
+01:33:42,112 --> 01:33:42,832
+Now,
+
+662
+01:33:43,380 --> 01:33:50,160
+Graphical user interface with Java basically has different frameworks.
+
+663
+01:33:50,780 --> 01:33:53,539
+One of them is SWINC framework.
+
+664
+01:33:53,539 --> 01:33:58,480
+It is using a model view controller design pattern.
+
+665
+01:33:59,140 --> 01:34:04,320
+Design pattern is a structure that we follow when we write our programs.
+
+666
+01:34:04,980 --> 01:34:06,820
+There are different design patterns.
+
+667
+01:34:07,000 --> 01:34:09,960
+One of them is model view controller design pattern.
+
+668
+01:34:10,368 --> 01:34:19,968
+And the Sween framework that comes with Java Software Development Kit is following this design pattern.
+
+669
+01:34:20,508 --> 01:34:28,388
+Now, with this design pattern, so you have a model class which basically has the raw information.
+
+670
+01:34:28,388 --> 01:34:31,388
+You have the Beam class which...
+
+671
+01:34:31,583 --> 01:34:37,423
+is responsible for representing different representation of this data.
+
+672
+01:34:37,423 --> 01:34:49,203
+And you have the controller classes, which basically provides interaction between the user and also the software that you are implementing.
+
+673
+01:34:49,743 --> 01:34:49,843
+Okay.
+
+674
+01:34:50,703 --> 01:34:51,003
+Now.
+
+675
+01:34:51,488 --> 01:35:05,847
+Here, I will show you how you can use the Java Swing interface, the simplest Java Swing interface on an example.
+
+676
+01:35:05,847 --> 01:35:07,248
+So,
+
+677
+01:35:08,659 --> 01:35:11,819
+So let me start with the frame concept.
+
+678
+01:35:12,119 --> 01:35:12,259
+Okay.
+
+679
+01:35:12,659 --> 01:35:19,639
+So when we write our code with Java Swing, the first thing that we do, we create an empty frame.
+
+680
+01:35:20,159 --> 01:35:28,939
+And on top of that empty frame, what we are trying to do, we are trying to bring a panel.
+
+681
+01:35:29,139 --> 01:35:35,299
+So let me see if I can show you an example of it.
+
+682
+01:35:39,155 --> 01:35:39,516
+Ok.
+
+683
+01:36:07,188 --> 01:36:07,728
+There it is.
+
+684
+01:36:30,963 --> 01:36:39,104
+Okay, now you see, so this is basically a simple frame that I'm creating.
+
+685
+01:36:39,104 --> 01:36:43,884
+And so let's take a look at the simple window.
+
+686
+01:36:44,423 --> 01:36:44,543
+Yeah.
+
+687
+01:36:45,564 --> 01:36:49,743
+Now, so this here, as you see, it's a regular class.
+
+688
+01:36:50,195 --> 01:36:56,595
+It extends the JFrame, which is provided by java.swing framework.
+
+689
+01:36:56,595 --> 01:37:02,216
+It comes with the regular Java software development kit.
+
+690
+01:37:04,235 --> 01:37:13,855
+So basically with this, what we are doing is that we are extending the JFrame, the abstract class.
+
+691
+01:37:14,224 --> 01:37:20,943
+And here we are defining the width and the height of the frame that we want to see.
+
+692
+01:37:21,743 --> 01:37:23,783
+And it has a constructor.
+
+693
+01:37:24,003 --> 01:37:28,943
+In the constructor, we are setting the width and the height of the...
+
+694
+01:37:31,444 --> 01:37:33,944
+Simple window that we want to see.
+
+695
+01:37:34,624 --> 01:37:49,524
+And here in the main method, you see that I am creating an object of this window and I am setting the title and also make it visible by calling the set visible true.
+
+696
+01:37:49,524 --> 01:37:53,524
+And I also say that if I...
+
+697
+01:37:53,876 --> 01:37:56,855
+Click on the X button here.
+
+698
+01:37:57,315 --> 01:37:59,095
+It will, my program will close.
+
+699
+01:37:59,195 --> 01:38:01,635
+As you see right now, my program is running.
+
+700
+01:38:01,815 --> 01:38:08,456
+So you can see this red button that indicates that my program is still running.
+
+701
+01:38:08,456 --> 01:38:12,536
+But if I click on the X button, so it will stop there.
+
+702
+01:38:12,996 --> 01:38:13,095
+Okay.
+
+703
+01:38:13,555 --> 01:38:18,956
+Now, so this is basically a simple frame.
+
+704
+01:38:19,675 --> 01:38:21,456
+And every time when I...
+
+705
+01:38:21,876 --> 01:38:24,996
+implement a graphical user interface with Swing.
+
+706
+01:38:25,095 --> 01:38:29,335
+First thing that I need to do is I need to create a frame.
+
+707
+01:38:29,835 --> 01:38:34,956
+And in order to create a frame, I'm extending the JFrame abstract class.
+
+708
+01:38:35,395 --> 01:38:38,036
+Now, let's go from this example this time.
+
+709
+01:38:38,547 --> 01:38:44,707
+I want to do the same thing, but this time I'm going to make it a little bit complex.
+
+710
+01:38:45,887 --> 01:38:50,828
+So in the course, I call this class as size window with icon.
+
+711
+01:38:51,507 --> 01:39:00,328
+So the difference between this one and the previous one, this time I'm going to add an icon into my frame.
+
+712
+01:39:00,328 --> 01:39:04,127
+And also I'm going to set the size of the...
+
+713
+01:39:04,127 --> 01:39:09,847
+Size of the window proportional to the screen that I have.
+
+714
+01:39:09,927 --> 01:39:14,087
+So let's first run the code and then I'll explain it to you.
+
+715
+01:39:19,155 --> 01:39:46,675
+Okay, there it is. As you see, so the size is proportional to the screen. And so there is a title here. And also there is an image here. Okay. Again, so when I close it, so my program will stop. So I'm doing the same thing. I'm creating the object of this regular class, which extends the J frame. Okay.
+
+716
+01:39:47,155 --> 01:39:52,515
+And I'm making it visible by setting the set visible true.
+
+717
+01:39:53,215 --> 01:39:58,415
+And so whenever I click on the exit button, so my program will stop.
+
+718
+01:39:58,835 --> 01:40:01,735
+Now let's take a look at the constructor.
+
+719
+01:40:02,295 --> 01:40:12,175
+In the constructor, so what I do is that first thing I'm creating, I'm getting the screen size and screen height.
+
+720
+01:40:12,608 --> 01:40:20,968
+From the system, from the screen size.
+
+721
+01:40:21,288 --> 01:40:23,808
+How do I get the screen size from the system?
+
+722
+01:40:24,408 --> 01:40:33,288
+There is a class provided by the Java Swing framework called Toolkit.
+
+723
+01:40:33,508 --> 01:40:40,328
+And so when I call to get the whole Toolkit static method of this class, it will give me an object.
+
+724
+01:40:43,060 --> 01:40:56,400
+And I can, from this, I can get the screen size where the type is dimension and I can get the height and the width from the, from this object.
+
+725
+01:40:56,580 --> 01:41:04,040
+And by, if I get the height and the width, then I can set the size of the window accordingly.
+
+726
+01:41:04,700 --> 01:41:10,440
+So in this particular case, not only I am setting the size, I'm also setting the location of this.
+
+727
+01:41:11,060 --> 01:41:36,060
+...
+
+728
+01:41:29,115 --> 01:41:40,055
+Arkadaşlar, class, object,
+
+729
+01:41:28,659 --> 01:41:39,699
+And also, by using this toolkit object, you can also get the image that you want to show in your window.
+
+730
+01:41:40,340 --> 01:41:43,500
+So there's this get image method.
+
+731
+01:41:43,840 --> 01:41:47,920
+So you can get it from the file system.
+
+732
+01:41:48,368 --> 01:41:53,007
+And here, you should have it here in the file system.
+
+733
+01:41:53,127 --> 01:41:57,587
+As you see, econ object is in the file system available.
+
+734
+01:41:58,347 --> 01:42:03,387
+So, here.
+
+735
+01:42:04,467 --> 01:42:20,967
+Yeah. And by calling the setEconImage, which is coming from the JFrame abstract class, you can also set the image, so which will make it visible in the window.
+
+736
+01:42:20,967 --> 01:42:32,467
+And you can also set the title, setTitle, setEconImage, setLocation, setSize. All these are methods of the JFrame, as you see, since we are extending the JFrame.
+
+737
+01:42:32,467 --> 01:42:35,167
+We are able to access all these methods.
+
+738
+01:42:35,667 --> 01:42:35,787
+Okay.
+
+739
+01:42:36,287 --> 01:42:48,587
+Now, this is another J-frame example that gives us a good example of how we can create the panels.
+
+740
+01:42:50,827 --> 01:42:55,387
+How we can create actually the frames.
+
+741
+01:42:55,387 --> 01:42:56,108
+Okay.
+
+742
+01:42:56,987 --> 01:42:57,587
+Now,
+
+743
+01:43:00,884 --> 01:43:02,123
+So let me see.
+
+744
+01:43:26,996 --> 01:43:28,896
+Okay, now let's take a look at this one.
+
+745
+01:43:29,615 --> 01:43:41,976
+Here, I'm creating a frame here called not hello world frame.
+
+746
+01:43:42,356 --> 01:43:44,456
+Let's go to the not hello world frame.
+
+747
+01:43:45,171 --> 01:44:10,131
+Now, in this not hello world frame, I am creating the frame by, I'm setting the title, I'm setting the size. At the same time, I am also adding, creating an object of the panel. Okay. Now, panel is the second thing that you should learn. The first thing is frame, the second thing is panel.
+
+748
+01:44:10,836 --> 01:44:18,355
+Now, when you create a frame, so you cannot do anything with the frame, it's an empty space.
+
+749
+01:44:18,916 --> 01:44:24,456
+In order for you to write inside of the frame, you need to use a panel object.
+
+750
+01:44:25,011 --> 01:44:31,271
+There is the panel object. So you create a panel object and you add the panel object into the frame.
+
+751
+01:44:31,771 --> 01:44:37,572
+Okay. Just like the set title, set size, there is also add method that belongs to JFrame.
+
+752
+01:44:37,572 --> 01:44:44,531
+And it is responsible for inserting a panel object into the frame. Okay.
+
+753
+01:44:48,532 --> 01:44:58,572
+Okay, now as you see, so this was my initial frame and inside of it I inserted a panel.
+
+754
+01:44:59,220 --> 01:45:17,720
+And let's take a look at what the panel is. I'm going to go to nothelloworkpanel.java. Now this panel, so here you see that there is nothelloworkpanel class that is regular class which extends the JPanel.
+
+755
+01:45:18,840 --> 01:45:25,220
+Just like the frame examples that I have shown you, they were extending the JFrame.
+
+756
+01:45:25,652 --> 01:45:30,311
+This time, I'm showing you a panel example, which is extending the J panel.
+
+757
+01:45:30,672 --> 01:45:39,311
+Now, in the J panel, so we have a paint component method, and the paint component method...
+
+758
+01:45:40,595 --> 01:45:46,376
+Is responsible for writing or drawing something into that panel.
+
+759
+01:45:46,956 --> 01:45:58,595
+So in this particular case, so what we do is that we call the superbait, we call the paint component method of the superclass.
+
+760
+01:45:58,895 --> 01:46:04,876
+And then we write something into the screen by calling the drawstring method.
+
+761
+01:46:04,876 --> 01:46:05,555
+Okay.
+
+762
+01:46:06,216 --> 01:46:08,555
+Now, so what just happened is that.
+
+763
+01:46:08,595 --> 01:46:21,935
+When we call the not hello world program, it first created the frame.
+
+764
+01:46:22,771 --> 01:46:50,752
+Okay, after that, in the frame, so we created an object of the panel, and when we call the panel object, as you see, so we have a paint component method here, that paint component method executed automatically, and not a hello world program statement appears.
+
+765
+01:46:50,771 --> 01:46:52,551
+Arkadaşlar, in the panel.
+
+766
+01:46:53,072 --> 01:47:01,011
+Arkadaşlar, now from now forward, when you write your code, so first thing that you need to do, you need to create a frame.
+
+767
+01:47:01,652 --> 01:47:04,872
+Arkadaşlar, and then in the frame, you need to create a panel.
+
+768
+01:47:05,391 --> 01:47:08,431
+Arkadaşlar, and in the panel, you can write something into the panel.
+
+769
+01:47:08,971 --> 01:47:12,771
+Arkadaşlar, now let's take a look at...
+
+770
+01:47:12,771 --> 01:47:13,644
+Arkadaşlar, in the panel, you need to create a panel.
+
+771
+01:47:13,747 --> 01:47:17,547
+The way that this code looks.
+
+772
+01:47:18,267 --> 01:47:18,407
+Okay.
+
+773
+01:47:19,007 --> 01:47:25,227
+Now, you see some interesting things that you haven't seen so far.
+
+774
+01:47:29,779 --> 01:47:32,140
+Sorry for interrupting. Can I ask?
+
+775
+01:47:33,079 --> 01:47:33,380
+Sure.
+
+776
+01:47:34,380 --> 01:47:43,800
+There was a parameter g that we passed to the hello world panel. What exactly is that?
+
+777
+01:47:45,420 --> 01:47:53,319
+Okay. Now, this is related with how the jpanel works.
+
+778
+01:47:53,712 --> 01:48:03,091
+So, it is an object of the inner, one of the inner objects that the JPanel is utilizing.
+
+779
+01:48:03,091 --> 01:48:18,172
+So, when you call the JPanel, when you create an object of the JPanel, basically what it does is that it creates a graphics object in the background.
+
+780
+01:48:18,655 --> 01:48:29,155
+And then when you, it uses this graphics object in order for it to write something into the screen.
+
+781
+01:48:29,155 --> 01:48:29,676
+Okay.
+
+782
+01:48:30,096 --> 01:48:45,496
+So you can basically think that, so this is an object that we are not responsible for keeping track of, but so it will be run by the J panel by itself.
+
+783
+01:48:45,916 --> 01:48:46,655
+It's one of those.
+
+784
+01:48:46,655 --> 01:48:56,695
+Those methods that as the user we are not responsible for calling, the only thing that we need to write is inside of this paint component method.
+
+785
+01:48:56,695 --> 01:49:09,695
+Yani bunun içerisini sadece doldurmakla sorumluyuz. Bu paint component metodun hangi parametreyle çağrıldığını bunu bizim adımız jpanel gerçekleştiriyor.
+
+786
+01:49:11,060 --> 01:49:39,000
+Buradaki paint component motivunu da biz aslında override ediyoruz. Yani bu bir abstract class olduğu için zaten paint component dahil olmak üzere birçok metodu Jpanel kendisi implement ediyor. Yani ben burada gelip şunun içerisine bu Jpaneli oluşturdum. Şurada bir tane Jpanel objesi oluşturdum ve paneli ekledim. Ben buraya şunu yazmasaydım bile, şunu yazmasaydım bile.
+
+787
+01:49:39,060 --> 01:49:50,460
+bana her halükarda bu benim oluşturmuş olduğum şeyin içerisine, frame'in içerisine bu paneli ne yapacaktı ekleyecekti.
+
+788
+01:49:51,040 --> 01:49:56,220
+Sadece bu panelin içerisinde yani şurada bir paneli ekledim.
+
+789
+01:49:56,640 --> 01:50:00,540
+Bu panelin içerisine paint component metodunu çağırdı.
+
+790
+01:50:01,320 --> 01:50:05,020
+Burada bir panel var ama içerisine ne yazacağını ben de söylemedim.
+
+791
+01:50:05,359 --> 01:50:14,859
+Demek ki ne oluyor? Ben ne zamanki bir tane paneli yaratıyorum, paneli yarattığım zaman, paneli nasıl yarattım? Tekrardan şuraya dönelim.
+
+792
+01:50:15,639 --> 01:50:27,559
+Paneli nasıl yarattım? Bunun bir constructorını oluşturarak. Bu constructor oluşturduğum zaman aslında şu C panelini ekstendettiği zaman C panelin bir constructorını çağırmış oldum.
+
+793
+01:50:27,988 --> 01:50:36,407
+Bu Jpanelin Constructor'ı içerisinde de ben ne yapıyorum? Şuradaki paint metodu çağırıyorum.
+
+794
+01:50:37,087 --> 01:50:48,207
+Bu paint metodu eğer ben override etmemiş olsam her halükarda bu paneli eklemiş olmakla beraber benim kodumda bir tane panel eklenmiş olacak.
+
+795
+01:50:48,207 --> 01:50:51,180
+Ama ben ne yapıyorum? Bunun içerisine...
+
+796
+01:50:51,731 --> 01:51:02,431
+Bu paint component motodu overwrite edip şu içerisine şu değeri yazmakla birlikte şuradaki gözükmeyen panel içerisine kendi yazdırmak istediğimi yazdırıyorum.
+
+797
+01:51:03,571 --> 01:51:03,791
+Okey.
+
+798
+01:51:05,931 --> 01:51:10,611
+Yani bu J panelde, J framede bunlar abstract metotlar.
+
+799
+01:51:10,711 --> 01:51:11,891
+These are abstract methods.
+
+800
+01:51:11,891 --> 01:51:14,391
+And all the methods that they have.
+
+801
+01:51:14,963 --> 01:51:28,824
+Have already implemented by default values. What we are trying to do, we are trying to overwrite them with the things that we want to be shown in the graphical user interface.
+
+802
+01:51:32,423 --> 01:51:33,904
+Anladım hocam, teşekkür ederim.
+
+803
+01:51:34,564 --> 01:51:34,784
+Okay.
+
+804
+01:51:37,524 --> 01:51:40,744
+Hocam, bu kodları paylaşır mısınız acaba?
+
+805
+01:51:41,235 --> 01:51:45,056
+Bunların hepsi sayfasında var arkadaşlar, dersin sayfasında var.
+
+806
+01:51:46,076 --> 01:51:48,596
+Yok hocam, bunlar kodların arasında yok.
+
+807
+01:51:49,456 --> 01:51:51,315
+Bu şu anda gösterdiklerim yok mu?
+
+808
+01:51:51,916 --> 01:51:52,216
+Yok.
+
+809
+01:51:52,956 --> 01:51:53,636
+Okey, o zaman.
+
+810
+01:51:53,636 --> 01:51:53,815
+Ben de yok.
+
+811
+01:51:54,676 --> 01:51:58,416
+Okey, ben o zaman bunu tekrardan koyacağım.
+
+812
+01:51:58,496 --> 01:51:59,436
+Ben de bir kontrol edeyim.
+
+813
+01:51:59,775 --> 01:52:01,275
+Ben hemen şimdi kendime not alıyorum.
+
+814
+01:52:02,216 --> 01:52:05,796
+Bunların hepsinin şeyin üzerinde olması lazım.
+
+815
+01:52:08,127 --> 01:52:13,347
+İki tane zip dosyası olması lazım aslında dersin sayfasında.
+
+816
+01:52:14,967 --> 01:52:17,067
+Baktan öyle hemen izleyecek bir şey olun.
+
+817
+01:52:17,787 --> 01:52:19,187
+Yok hocam, sadece bir tane var.
+
+818
+01:52:19,587 --> 01:52:23,687
+Bir tane var, tamam. O zaman benim hatam. Ben onu hemen bugün içerisinde düzeltiyorum.
+
+819
+01:52:25,524 --> 01:52:48,904
+Şimdi bir frame'i nasıl oluşturduğumu gösterdim. Frame'in içerisine boş bir pencere dedik. Bunun içerisine ben bir şeyler yaptırmak istiyorsam mutlaka panel ekliyorum dedim. Bu paneli eklerken de genelde frame'in constructor'ında ben bu işi gerçekleştiriyorum dedim. Paneli ekledikten sonra panelin içerisinde ben istediğim şeyi yazdırabilirim dedim.
+
+820
+01:52:51,252 --> 01:52:54,232
+Şimdi bunun haricinde artık şeyler var.
+
+821
+01:52:54,432 --> 01:52:56,492
+Hani ben bir paneli yaratmayı öğrendim.
+
+822
+01:52:57,492 --> 01:53:00,192
+Bir tane frame'i ona eklemeyi öğrettim.
+
+823
+01:53:00,772 --> 01:53:06,252
+Bundan sonra artık diğer UI tool'ları işte...
+
+824
+01:53:06,931 --> 01:53:11,011
+Buton ekleme, bir text box ekleme, yani bu tür şeyler var.
+
+825
+01:53:11,631 --> 01:53:16,411
+Şimdi bir önemli şey de, şunu göstermeden geçmeyelim.
+
+826
+01:53:16,811 --> 01:53:18,991
+Şurada benim bunu çalıştırma şeklim.
+
+827
+01:53:20,491 --> 01:53:25,931
+Şimdi burada bir şey görüyorsunuz, yapı görüyorsunuz.
+
+828
+01:53:27,011 --> 01:53:29,931
+Şuna, şu yapı.
+
+829
+01:53:35,475 --> 01:53:52,435
+Bu bir object. Bu bir runable object. Ama ben bu objeye isim vermemişim. Bunu başka türlü ben nasıl yapardım? Bunu şu şekilde yapabilirdim. Derdim ki şuraya şu arkadaşı taşırdım. Şuraya.
+
+830
+01:53:59,252 --> 01:54:01,612
+Şuna bir tane isim verirdim.
+
+831
+01:54:02,192 --> 01:54:03,252
+Ondan sonra...
+
+832
+01:54:12,467 --> 01:54:19,327
+Ondan sonra buna isim verdikten sonra getirirdim bu arkadaşı bunun içerisine eklerdim.
+
+833
+01:54:19,667 --> 01:54:39,427
+Burada benim yapmış olduğum ne yaptım? Hani buna isim vermeden ben bu işi yapmayı tercih ettim. Buna isim vermeden eğer bir objeyi tanıtmak istiyorsam yani bir sınıfın objesini tanıtmak istiyorsam şu arkadaşın tamamını alıp getirip buraya koyarım.
+
+834
+01:54:47,667 --> 01:54:57,687
+Bu thread klasında bu threadlerin daha kolay kullanımını sağlamak için executor servis sınıfını kullanmıştım.
+
+835
+01:54:58,147 --> 01:55:03,447
+Bu kullanıcı arayüzünde de event queue diye bir tane servisi Java Swing bana sağlıyor.
+
+836
+01:55:04,467 --> 01:55:08,307
+Event queue sınıfının da invoke later diye bir tane metodu var.
+
+837
+01:55:08,307 --> 01:55:15,007
+Aynı executor gibi. Bunun içerisine runable objelerini koyup bunu ben ne yapabiliyorum?
+
+838
+01:55:15,667 --> 01:55:17,467
+multi-threaded olarak çalıştırabiliyorum.
+
+839
+01:55:17,907 --> 01:55:22,927
+Burada da ben bir runable şey yapmışım.
+
+840
+01:55:23,047 --> 01:55:28,967
+Hani kullanıcı arayüzümde oluşturacağım frame'i bir thread oluştursun diye düşünmüşüm.
+
+841
+01:55:29,387 --> 01:55:31,827
+Bunu da götürmüşüm run metodunu içine koymuşum.
+
+842
+01:55:32,327 --> 01:55:36,247
+Bunu da bir tane runable objenin içerisine koymuşum.
+
+843
+01:55:36,247 --> 01:55:43,247
+Yani şuradaki ayrı bir sınıf yaratıp onu runable'ı interfejse...
+
+844
+01:55:43,667 --> 01:55:52,287
+implement ettireceğim yerine şu kodu hiç isim vermeden bir runnable objeye dönüştürmüşüm ve bunun içerisine koymuşum.
+
+845
+01:55:52,347 --> 01:55:56,867
+Aslında yaptığım şey bir tane frame objesini thread olarak çalıştırmak.
+
+846
+01:55:56,947 --> 01:56:05,987
+Bunu çalıştırmak için de bu event queue sınıfının invoklator metodu bana böyle bir kolaylık sağlıyor.
+
+847
+01:56:06,647 --> 01:56:10,547
+Demek ki bu şekilde ben objeyi yaratıp kullanabiliyormuşum.
+
+848
+01:56:11,667 --> 01:56:19,127
+multi-thread şey kullanıcı arayüzlerinde multi-thread yapmak istiyorsam genelde kullanım tarzımız bu.
+
+849
+01:56:19,227 --> 01:56:26,287
+Çünkü bu thread'i başka bir yerde kullanmayacağım için buna böyle bu şekilde bir isim vermeye ihtiyacı duymuyorum.
+
+850
+01:56:26,427 --> 01:56:29,307
+Direkt bunu alıp şuradaki kodun içerisine gömüyorum.
+
+851
+01:56:35,028 --> 01:56:38,868
+Hocam bu arada kodlar sayfada varmış. Kusura bakmayın ben fark etmeliyim.
+
+852
+01:56:39,648 --> 01:56:39,868
+Tamam.
+
+853
+01:56:42,568 --> 01:56:51,728
+Okey. Şimdi burada da ben ne yapmış oldum? Bu şey InvokeLater ile bir tane runable object sinerini kullanarak çalıştırmış oldum.
+
+854
+01:56:52,015 --> 01:56:56,395
+Şimdi peki sizden şey ne bekleyeceğim ben?
+
+855
+01:56:57,275 --> 01:57:02,715
+Burada görüyorsunuz hani şey bir tane Jframe'i extend etmişim.
+
+856
+01:57:02,715 --> 01:57:10,975
+Bir main metodu içerisinde bu öncelikle bir Jframe'i extend eden bir tane şey oluşturuyorum.
+
+857
+01:57:11,495 --> 01:57:17,655
+Onun içerisinde de farklı tipteki mesela şunu çalıştırabiliyor muyuz bakalım?
+
+858
+01:57:22,868 --> 01:57:27,928
+Burada bir tane butonlar var.
+
+859
+01:57:28,688 --> 01:57:30,428
+İşte bir tane text box var.
+
+860
+01:57:31,188 --> 01:57:33,688
+Ben buradan işte şey yapabiliyorum.
+
+861
+01:57:33,788 --> 01:57:36,228
+File sistemden bir tane şey seçebiliyorum.
+
+862
+01:57:36,608 --> 01:57:38,108
+Ya da bunu kaydedebiliyorum.
+
+863
+01:57:38,608 --> 01:57:41,128
+Bununla ilgili bir tane burada kod var.
+
+864
+01:57:41,368 --> 01:57:42,648
+Bir buna bakmanızı istiyorum.
+
+865
+01:57:42,648 --> 01:57:43,248
+Okey.
+
+866
+01:57:44,428 --> 01:57:50,868
+Bu frame'i bir de paneli anladıktan sonra bu panelin içerisine bundan sonra koyacağımız her şey paneli.
+
+867
+01:57:50,868 --> 01:58:08,308
+panelin içerisine konulan şeyler olmuş oluyor. Bu panelin içerisine konulmuş objeler üzerinden de gelen eventleri nasıl dinleyeceğinizle ilgili kodlarımız da burada var.
+
+868
+01:58:08,688 --> 01:58:27,987
+Şimdi sizden bununla ilgili bir deneme yapmanızı istiyorum. Daha önce bu Graphical User Interface ile ilgili Online Yıldız Edu.tr'de benim koymuş olduğum arşivdeki derste daha kapsamlı bir şekilde bu eventlerin kullanımı ile ilgili örnekle anlatımım da var.
+
+869
+01:58:27,987 --> 01:58:35,667
+Yine bu kodlar üzerinden bunu anlatmıştım. Oradan da faydalanabilirsiniz ya da bana da soru da sorabilirsiniz.
+
+870
+01:58:36,688 --> 01:58:54,188
+Bu size göstermiş olduğum bu frame bir de panelin üzerinden giderek bir de şuradaki kodlardan giderekten şu OOP11'in altındaki kodları çalıştırmanız ve anlamanız.
+
+871
+01:58:54,739 --> 01:59:09,119
+Ve bunu projenizde kullandınız. Ama dediğim gibi bir zorunluluk yok. İlla Swing'de bu projenizi implement etmek zorunluluğunuz yok. Ama bu kodları alıp bunun üzerinde çalışıp devam ederekten kolay bir şekilde yapabilirsiniz.
+
+872
+01:59:09,300 --> 01:59:14,439
+Yahut da kendi istediğiniz Java'nın GUI interfeyesini kullanarak yapabilirsiniz.
+
+873
+01:59:16,819 --> 01:59:43,359
+Online Yıldızı İdü TR üzerinde de arşiv, object-oriented programming dersinin arşiv derslerine girdiğiniz vakit en son derste, en son ya da ondan bir önceki derste bu graphical user interface'lerle ilgili kapsamlı anlatımın olduğu dersi de bulacaksınız arkadaşlar.
+
+874
+01:59:46,612 --> 01:59:49,372
+Hocam, projeyle ilgili bir soru mu olacak?
+
+875
+01:59:49,832 --> 01:59:50,092
+Evet.
+
+876
+01:59:50,932 --> 01:59:56,372
+Peki çocuk bir kere oynadıysa ondan sonra bir daha oynayabilecek mi yapıta?
+
+877
+01:59:57,311 --> 02:00:07,052
+Sen projenin detayıyla ilgili soruyorsun. Projeyi ben hazırlamadım. O yüzden bu soruna ben yanıt veremeyeceğim. Ama Elçin Hoca'ya sorabilirsin.
+
+878
+02:00:07,604 --> 02:00:23,304
+Şimdi onlar projeleri değerlendirecekler. Projenin içeriğinde ne beklendiğiyle ilgili şeyi hiç beklemeden Elçin Hoca'ya sor. E-mail de atabilirsin, e-mailinde beni CC'de de tutabilirsin.
+
+879
+02:00:23,884 --> 02:00:34,864
+Yahut da eğer İstanbul'daysan gelip Elçin Hoca ile direkt ofisinde de görüşebilirsin. Ama hiç beklemeden bu soruyu asistan hocalara sor. Üç tane asistan hocamız var, üçüne de sorabilirsin.
+
+880
+02:00:35,604 --> 02:00:37,164
+Teşekkür ederim hocam. Tamam.
+
+881
+02:00:38,984 --> 02:00:41,204
+Başka bir şey soracaksın. Evet.
+
+882
+02:00:42,504 --> 02:00:47,204
+Laptan muaf olanlar node değerlendirmesi nasıl olacak? Yani yüz değeri nasıl olacak?
+
+883
+02:00:47,204 --> 02:01:03,204
+Şimdi diğer hocalarımız hani laptan muaflığı şey yapmadılar. Yani herkes labı alacak dediler ama ben onlardan farklı olarak geçen dönem bu dersi almış olan öğrenciler
+
+884
+02:01:03,296 --> 02:01:22,036
+labdan muaf olabilirler şeyini getirdim. Şimdi o durumda ben nasıl bir uygulama yapacağım? Diğer hocalarımızdan farklı olarak öncelikle bu dersi ilk defa alan öğrenciler. Bu öğrenciler kesinlikle lab puanı alacaklar. Yani grade'lerinde lab etki edecek.
+
+885
+02:01:22,707 --> 02:01:30,487
+Bu dersi ikinci defa olanlardan ben labı da almak istiyorum diyenler de olmuş.
+
+886
+02:01:30,847 --> 02:01:35,887
+Hani onların da lab puanı aynı ilk defa alanlar gibi hesaplanacak.
+
+887
+02:01:35,887 --> 02:01:47,027
+Ama bu dersi ikinci defa alanlardan ve labı almak istemiyorum diyenler için bu öğrenciler için şey olmayacak.
+
+888
+02:01:48,627 --> 02:01:57,908
+lab'ı puanlarına katmayacağım. O lab'ın yüzde onluk değerini vize ve projenin üzerine dağıtacağım.
+
+889
+02:02:00,007 --> 02:02:00,847
+Anlaşıldı mı?
+
+890
+02:02:01,748 --> 02:02:02,868
+Tamam hocam, teşekkür ederim.
+
+891
+02:02:03,448 --> 02:02:11,068
+Tamam. Biraz benim işimi zorlaştırıyor bunu takip etmek ama bu şekilde açıklamıştım. Bu şekilde devam edeceğim.
+
+892
+02:02:11,207 --> 02:02:12,148
+Bir şey sorabilir miyim?
+
+893
+02:02:12,568 --> 02:02:12,847
+Evet.
+
+894
+02:02:13,492 --> 02:02:15,752
+[kişisel bilgi].
+
+895
+02:02:16,292 --> 02:02:16,552
+Tamam.
+
+896
+02:02:17,252 --> 02:02:23,512
+Buna benzer ders geçmişte aldım ama üzerinden 7-2 yıl geçtiği için sayılmadı benim dersimde.
+
+897
+02:02:24,092 --> 02:02:27,772
+Ben de laboratuvardan katılacak mıyım, muhafık olacak mıyım?
+
+898
+02:02:27,952 --> 02:02:30,392
+Yok, katılacaksın. Sen ilk defa alıyorsun bu dersi.
+
+899
+02:02:31,232 --> 02:02:40,112
+Bu benim bahsettiğim durum sadece ama sadece bizim bölümden bu dersi benden Yunus Hoca'dan ya da Furkan Hoca'dan bir önceki sene almış olan
+
+900
+02:02:40,659 --> 02:02:49,100
+Lab almış olan öğrenciler bu dönem muaf olabilir. Onun dışında hiçbir exception yok. O durumda mutlaka labı almış olmanı bekliyoruz.
+
+901
+02:02:49,100 --> 02:03:00,560
+Yani bu durumda mesela diyelim ki senin durumun için söylüyorum. Dersi aldın, lablara hiçbirisine girmedin. Lab puanın katkısı sıfır olmuş olacak.
+
+902
+02:03:02,840 --> 02:03:04,079
+Tamam, teşekkür ederim.
+
+903
+02:03:07,923 --> 02:03:35,923
+Evet arkadaşlar, şimdiden başarılar diliyorum. Gelecek hafta dersimiz yok. Proje değerlendirmeleri var. Asistan hocanız size bir skeçül çıkartacak. Öncelikle yönergeye bakaraktan projenizi mutlaka gönderin. Projenizin katkısı vizeye kadar olmuş oluyor. Bu sefer ikinci vize yapmadığımız için çok önemli. Proje yapmazsanız dersten...
+
+904
+02:03:35,923 --> 02:03:42,903
+Kalma ihtimaliniz çok yüksek olur. Mutlaka yapın. Eksikleriniz olsa bile yapın. Mutlaka yapın.
+
+905
+02:03:42,903 --> 02:03:58,823
+Ve gönderin. Hocalarınız sizle online sessionler üzerinden toplantılar yaparaktan sizlere kodlarınızı ekran görüntüsü paylaşarak anlatmanızı sağlayacaklar ve bunlardan puan alacaksınız.
+
+906
+02:03:59,463 --> 02:04:03,064
+Hocanız olarak ben şu anda sizin vize puanlarınızı biliyorum.
+
+907
+02:04:03,408 --> 02:04:24,468
+Asistan hocalarınız bana iki şey gönderecek. Bir tane proje notlarınızı gönderecek. Bir de lab notlarınızı gönderecek. Ben de buna dayalı olarak sizin dönem içi notunuzu hesaplayacağım. Dönem içi notunuzu hesapladıktan sonra bir de final sınavı olacak. Final sınavının online olacağı üniversite tarafından açıklandı.
+
+908
+02:04:25,076 --> 02:04:42,336
+Final sınavınızdan da bir nokt gelecek. Dönem içi notu ve final notunuzun birleşiminden sizin dönem sonu notunuz ortaya çıkacak. Dönem sonu notu üzerinde de otomatik olarak sizin harf notunuz hesaplanacak. Süreç bu şekilde işliyor.
+
+909
+02:04:42,336 --> 02:04:49,136
+Şimdiden başarılar diliyorum hem final sınavınızda hem de önümüzdeki gelen dönem projesi için.
+
+910
+02:04:49,536 --> 02:04:59,896
+Eğer mazeret sınavına gireceksiniz, benimle temas kurun, gelecek hafta mazeret sınavınızı gerçekleştirmeye çalışacağım.
+
+911
+02:05:00,896 --> 02:05:02,476
+Hocam bir soru daha sorabilir miyim?
+
+912
+02:05:02,716 --> 02:05:02,936
+Tamam.
+
+913
+02:05:03,416 --> 02:05:13,296
+Gelecek ders galiba proje değerlendirmeleri olacak dediniz de, son teslim tarihi galiba 1 Haziran'a denk geliyor.
+
+914
+02:05:14,195 --> 02:05:32,335
+Tamam, doğrudur. O zaman öyleyse gelecek ders yok. Sadece mazeret sınavını gerçekleştireceğim. O durumda sizlerden mazeret sınavına girmeyecek arkadaşlarım da o zamanı proje için harcayabilirler, projeye yoğunlaşabilirler.
+
+915
+02:05:34,375 --> 02:05:35,535
+Tamamdır hocam, teşekkürler.
+
+916
+02:05:36,595 --> 02:05:39,051
+Hocam ben lablara hiç katılmadım ama...
+
+917
+02:05:40,020 --> 02:05:42,680
+Bundan sonra da herhalde katılma şansımız yok.
+
+918
+02:05:45,855 --> 02:06:09,935
+Maalesef yani şu an bir şey sen yine de asistan hocalara sor. Hani ben lab skecülünü ben ayarlamadım. O konuda bütün hocalarımız, asistan hocalarımızdan destek alıyoruz. Onların yayınlamış olduğu bir lab assignment şeyi var. Onlardan henüz kalan lab assignment şeyi varsa ona katılabilirsin.
+
+919
+02:06:10,431 --> 02:06:15,931
+Ondan sonra en azından oradan alacağın bir notun olmuş olur.
+
+920
+02:06:16,931 --> 02:06:23,571
+Peki iletişime geçebileceğin bir şey var mı? Yani laboratuvar sınıfı, classroomu veya farklı bir maili?
+
+921
+02:06:24,211 --> 02:06:35,871
+Dersin üç tane asistanı var. Bunlardan bir tanesi Elçin Hoca. Bizim bilgisayar mühendisliği bölümünün sayfasında şeyi bulabilirsin. Elçin Güvey'i, onun e-mail adresini.
+
+922
+02:06:36,372 --> 02:06:50,552
+E-mail atıp ben laplara katılmam gerektiğini hocadan öğrendim. Ama bunu takip etmemiştim. Şu anda kalan bir laplar var mıdır katılabileceğim diye sorabilirsin. Seni yönlendirecektir.
+
+923
+02:06:51,311 --> 02:06:52,632
+Tamam. Teşekkür ederim hocam.
+
+924
+02:06:53,832 --> 02:06:57,952
+Rica ederim. Başarılar dilerim arkadaşlar. Kolay gelsin.
+
+925
+02:06:59,192 --> 02:07:02,652
+Evet. Elçinin de e-mail adresini bir arkadaşınız yazdı.
+
+926
+02:07:03,007 --> 02:07:04,887
+chatten kopyalayabilirsin.
+
+927
+02:07:05,608 --> 02:07:06,288
+Teşekkür ederim.
+
+928
+02:07:07,868 --> 02:07:09,268
+Kolay gelsin, iyi günler diliyorum.
