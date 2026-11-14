@@ -1,0 +1,1607 @@
+1
+00:28:27,892 --> 00:28:29,392
+[öğrenci] merhabalar.
+
+2
+00:28:43,666 --> 00:28:48,166
+Hiç senden başka bir yer olmadı.
+
+3
+00:28:55,634 --> 00:29:00,634
+Arkadaşınız da geride çıktı, geride çıktı.
+
+4
+00:29:05,971 --> 00:29:06,971
+Evet.
+
+5
+00:29:06,971 --> 00:29:07,818
+İşte böyle oldu acaba.
+
+6
+00:29:11,124 --> 00:29:16,124
+Bir tahmin de bulun. Neden insanlar gelmedi? Niye gelmiyorlar?
+
+7
+00:29:17,124 --> 00:29:25,124
+[kişisel bilgi]
+
+8
+00:29:28,124 --> 00:29:29,124
+Ondan olabilir.
+
+9
+00:29:30,124 --> 00:29:34,124
+Ortalama yüksek olduğu için gerekli var mı dersiniz insanlar?
+
+10
+00:29:36,124 --> 00:29:38,124
+Valla bilemedim ki hocam.
+
+11
+00:29:39,154 --> 00:29:40,154
+Evet.
+
+12
+00:29:40,154 --> 00:29:41,154
+Ben tersi.
+
+13
+00:29:41,154 --> 00:29:45,154
+Dün başka bir şey var mıydı bilmiyorum da, ikinci sınıflar için.
+
+14
+00:29:51,954 --> 00:29:56,939
+Ne yapalım şimdi? Sen de geldin, anlatalım biraz öyleyse.
+
+15
+00:30:00,000 --> 00:30:06,480
+Şey söyleyebilirsiniz, konu başlıklarını azıca yazabiliriz.
+
+16
+00:30:06,480 --> 00:30:09,920
+Mesela bir soru final yapıyorum.
+
+17
+00:30:26,932 --> 00:30:31,250
+En son ne dediğini anlamadım. Telefon çaldı.
+
+18
+00:30:31,250 --> 00:30:45,730
+Şey yapabiliriz, konu başlıklarını yazabilirsiniz. Normalde bugün nereye kadar işleyecektik? O seksine kadar belirtirseniz, şey de yapabiliriz, dağılabiliriz aslında.
+
+19
+00:30:45,730 --> 00:30:52,932
+Ne bileyim, öyle mi yapsam?
+
+20
+00:30:53,682 --> 00:30:55,682
+Of, bende kaldım şimdi.
+
+21
+00:31:00,146 --> 00:31:07,028
+Biraz ufak ufak anlatayım yine ben şeylerini, temel konulara giriş yapayım yine.
+
+22
+00:31:11,538 --> 00:31:14,138
+Bir de en gibi konu başlıklarını anlatayım.
+
+23
+00:31:28,146 --> 00:31:29,803
+Evet, şimdi bunu şuradan.
+
+24
+00:31:34,163 --> 00:31:38,762
+Bir de sonra kayıtlar izlenebiliyor ya hocam, biri gelirse izlemeye.
+
+25
+00:31:38,762 --> 00:31:43,962
+Sanırım o da çok o yüzden de rahat davranıyor herkes.
+
+26
+00:31:43,962 --> 00:31:45,564
+Olabilir.
+
+27
+00:32:17,618 --> 00:32:19,563
+Bir de İngilizce mi anlatacağız?
+
+28
+00:32:26,900 --> 00:32:38,099
+So today, we are going to talk about point estimators for mean and variance.
+
+29
+00:32:45,844 --> 00:32:46,667
+ve
+
+30
+00:32:57,652 --> 00:33:03,652
+Estimating, so in this case, bir sample.
+
+31
+00:33:15,442 --> 00:33:25,442
+Sample can be written as a collection of random variables x1, x2, up to xn.
+
+32
+00:33:28,442 --> 00:33:36,442
+And we want to find, or we want to estimate mean.
+
+33
+00:33:41,268 --> 00:33:45,259
+ve iyi estimator, benim için
+
+34
+00:33:51,442 --> 00:34:00,442
+Estimate mean mu, which is expected value of x. A good estimator for that is,
+
+35
+00:34:09,396 --> 00:34:10,996
+İzsamplemin
+
+36
+00:34:28,436 --> 00:34:30,436
+Bu şekilde bu.
+
+37
+00:34:33,114 --> 00:34:35,114
+Ve bu.
+
+38
+00:34:35,114 --> 00:34:36,114
+Bu.
+
+39
+00:34:50,324 --> 00:34:54,824
+ve variyans konularını, bu kadar daha fazla zamanla dağılmak için.
+
+40
+00:34:56,922 --> 00:34:58,731
+Ve variyans konularını,
+
+41
+00:35:09,204 --> 00:35:11,204
+A point estimator is
+
+42
+00:35:28,596 --> 00:35:47,355
+Sample variance, so a good estimator for variance is sample variance.
+
+43
+00:35:54,036 --> 00:36:05,076
+Ve bu S2'ye veren bir k
+
+44
+00:36:22,291 --> 00:36:29,291
+ve normal dağılım, ve normal dağılım, ve normal dağılım,
+
+45
+00:36:43,922 --> 00:37:05,867
+x k
+
+46
+00:37:09,235 --> 00:37:10,235
+So, uh...
+
+47
+00:37:15,603 --> 00:37:36,282
+Notice that the division here is not 1 over n, so here, notice that we do not have 1 over n, so not 1 over n, and here again it is not 1 over n.
+
+48
+00:37:41,940 --> 00:37:43,940
+Ve bu nedenle,
+
+49
+00:37:47,940 --> 00:37:53,940
+s² olarak 1 n n n nelerde,
+
+50
+00:37:53,940 --> 00:37:59,940
+s² olarak
+
+51
+00:37:59,940 --> 00:38:01,940
+birleştirdik.
+
+52
+00:38:04,940 --> 00:38:06,940
+Birleştirdik.
+
+53
+00:38:07,891 --> 00:38:18,490
+So, to make the s-square an ambiast estimator, instead of 1 over n, we divide by 1 over n-square.
+
+54
+00:38:25,523 --> 00:38:27,523
+A point estimator for
+
+55
+00:38:39,572 --> 00:38:44,612
+ve standard deviation,
+
+56
+00:38:47,331 --> 00:38:51,012
+is we can just use square root of varyans,
+
+57
+00:38:51,012 --> 00:38:55,492
+so we call that sample standard distribution.
+
+58
+00:38:56,052 --> 00:38:59,092
+So let's write,
+
+59
+00:39:05,460 --> 00:39:07,460
+A good estimator.
+
+60
+00:39:11,027 --> 00:39:11,914
+Körüse.
+
+61
+00:39:16,628 --> 00:39:30,188
+Samples, a good estimator for population standard deviation is square root of sample variance.
+
+62
+00:39:32,867 --> 00:39:34,306
+And we call this
+
+63
+00:39:37,619 --> 00:39:43,739
+Sample, standard, deviaçın.
+
+64
+00:39:51,059 --> 00:39:52,523
+ve şimdi...
+
+65
+00:39:59,027 --> 00:40:03,027
+Notice that in this case, S is best.
+
+66
+00:40:07,347 --> 00:40:11,347
+Sample standard deviation is biased.
+
+67
+00:40:13,347 --> 00:40:19,347
+But there is no unbiased estimator that the books tell us.
+
+68
+00:40:19,347 --> 00:40:24,347
+So I guess it's a real, it's okay, it's an okay estimator.
+
+69
+00:40:24,347 --> 00:40:26,347
+So we don't really care about it.
+
+70
+00:40:30,347 --> 00:40:33,347
+So an example for that.
+
+71
+00:40:34,643 --> 00:40:36,298
+might be
+
+72
+00:40:51,219 --> 00:40:58,219
+So, let's look at data. Let's say t is a timetable.
+
+73
+00:41:05,492 --> 00:41:10,172
+Nelemede, for a specific task in a factory to be completed.
+
+74
+00:41:12,251 --> 00:41:16,052
+So, we want to estimate mean and variance of t.
+
+75
+00:41:18,572 --> 00:41:21,572
+So, we observe a random sample.
+
+76
+00:41:23,492 --> 00:41:26,132
+So, we observe
+
+77
+00:41:28,210 --> 00:41:29,771
+a random.
+
+78
+00:41:37,876 --> 00:41:48,556
+T1, T2, up to T6.
+
+79
+00:41:48,556 --> 00:41:50,556
+So,
+
+80
+00:41:50,556 --> 00:41:56,996
+and the values of this sample is
+
+81
+00:42:03,219 --> 00:42:12,579
+18, 21, 17, 16, 24, 20
+
+82
+00:42:16,083 --> 00:42:30,523
+ve notice that ti are, so t1 to t6 are iid, meaning they are independent and identically distributed.
+
+83
+00:42:30,523 --> 00:42:41,322
+So the question is find sample mean.
+
+84
+00:42:54,387 --> 00:42:55,387
+So, find
+
+85
+00:43:01,364 --> 00:43:02,844
+Sample mean
+
+86
+00:43:06,068 --> 00:43:13,387
+Sample variyans ve sample standard deviation.
+
+87
+00:43:16,387 --> 00:43:18,387
+Now this is very simple.
+
+88
+00:43:19,668 --> 00:43:22,108
+You could just write
+
+89
+00:43:34,291 --> 00:43:46,291
+t hat, which is, so this was wrong actually, I should have written t hat there, right? So random variable we have here is t.
+
+90
+00:43:49,291 --> 00:43:59,291
+So sample mean of t is just the summation of t1, t2, up to t6.
+
+91
+00:44:01,748 --> 00:44:08,748
+ve 6.0.19.33
+
+92
+00:44:09,748 --> 00:44:13,748
+Şimdi, 2.0.vara'nın varansı
+
+93
+00:44:14,748 --> 00:44:17,748
+Bu, 2.0.vara'nın varansı
+
+94
+00:44:18,748 --> 00:44:25,324
+Bu, 1.0.vara'nın varansı
+
+95
+00:44:25,492 --> 00:44:30,472
+Bu, bu durumda sadece bir nomborun bir nomborun,
+
+96
+00:44:30,472 --> 00:44:33,391
+bu, bu, bu,
+
+97
+00:44:34,791 --> 00:44:35,788
+bu,
+
+98
+00:44:41,811 --> 00:44:50,451
+We have one of us, 6-1.
+
+99
+00:44:54,260 --> 00:45:02,659
+Ekran koruyucun devreye girdi. Bir 50 saniye çalışacak, kara verim meclis halini sonra kapatacağım.
+
+100
+00:45:50,931 --> 00:45:57,931
+Evet, ekran koruyucumu kapatayım. Daha doğrusu bu haberli uyarıyor beni, kalk biraz gez diye.
+
+101
+00:45:57,931 --> 00:46:05,931
+So anyway, so we were finding sample varians.
+
+102
+00:46:05,931 --> 00:46:16,931
+So then we just need to sum over from one to six.
+
+103
+00:46:23,059 --> 00:46:50,778
+tk minus, it's a sample mean, so 19.33. And we will take the square of this. And tk are 18, 21, et cetera. And this should be 8.67. And finally, sample standard deviation is just square root of,
+
+104
+00:46:52,563 --> 00:46:54,563
+Sample Variance.
+
+105
+00:46:57,043 --> 00:46:59,043
+And it should be
+
+106
+00:47:00,003 --> 00:47:01,931
+2.94.
+
+107
+00:47:05,907 --> 00:47:19,907
+ve in practice, these days, you would need, you'll probably calculate these using programming languages or programming.
+
+108
+00:47:31,539 --> 00:47:39,860
+Obviously, there are a lot of different programming languages that you can use, but using Python,
+
+109
+00:47:45,300 --> 00:48:11,699
+You can do this. First, you will say, import numpy as np. NumPy is a linear algebra package and it has a lot of useful functionality.
+
+110
+00:48:13,523 --> 00:48:17,523
+ve sonra, you'll somehow define the data.
+
+111
+00:48:18,523 --> 00:48:21,523
+So, 18, 21,
+
+112
+00:48:23,523 --> 00:48:24,523
+what was it?
+
+113
+00:48:25,523 --> 00:48:28,523
+17, 16, 24, 20.
+
+114
+00:48:29,523 --> 00:48:31,523
+So, this is a Python list.
+
+115
+00:48:32,523 --> 00:48:33,523
+We assign it to,
+
+116
+00:48:36,523 --> 00:48:38,523
+let's say we assign it to A.
+
+117
+00:48:40,402 --> 00:48:44,402
+Let's say we assign it to T
+
+118
+00:48:51,155 --> 00:49:09,755
+And now we can get the mean by, let's call it mean of t, by just using np.mean and we will give t as a parameter.
+
+119
+00:49:09,755 --> 00:49:13,755
+It automatically will calculate mean for us.
+
+120
+00:49:14,655 --> 00:49:15,655
+And for variance,
+
+121
+00:49:18,036 --> 00:49:21,036
+We will use np.var
+
+122
+00:49:43,219 --> 00:49:49,219
+Evet, bu n'in varianı var.
+
+123
+00:49:49,219 --> 00:49:55,219
+Yani n'in varianı var.
+
+124
+00:49:55,219 --> 00:49:59,219
+Yani, bu n'in varianı var.
+
+125
+00:49:59,219 --> 00:50:11,146
+Bu n'in varianı var.
+
+126
+00:50:11,380 --> 00:50:13,036
+1-1
+
+127
+00:50:16,851 --> 00:50:26,851
+ve, obviously, to take the standard, sample standard, you just can…
+
+128
+00:50:30,900 --> 00:50:40,900
+Take the square root of variance, so you can say np square root variance of t.
+
+129
+00:50:47,443 --> 00:50:49,443
+Any questions from this part?
+
+130
+00:50:51,844 --> 00:50:52,844
+No?
+
+131
+00:50:52,844 --> 00:50:54,844
+Şu anlık yok hocam.
+
+132
+00:50:54,844 --> 00:50:55,844
+Yok, tamam.
+
+133
+00:50:56,443 --> 00:50:59,844
+This part was easy actually.
+
+134
+00:51:00,344 --> 00:51:01,344
+Now,
+
+135
+00:51:02,344 --> 00:51:05,344
+with this, let's start
+
+136
+00:51:05,344 --> 00:51:08,344
+maximum likelihood estimation.
+
+137
+00:51:08,943 --> 00:51:09,943
+Or
+
+138
+00:51:13,012 --> 00:51:18,012
+Let me call that Probe9.
+
+139
+00:51:23,922 --> 00:51:30,184
+MN, maximum light lingültere estimation.
+
+140
+00:51:35,507 --> 00:51:38,474
+Let me add some pages.
+
+141
+00:51:50,483 --> 00:51:51,371
+So,
+
+142
+00:51:56,018 --> 00:52:01,018
+Maximum byte root estimation.
+
+143
+00:52:04,755 --> 00:52:11,755
+So, we discussed point estimators for
+
+144
+00:52:17,588 --> 00:52:19,500
+Estimators for
+
+145
+00:52:22,708 --> 00:52:26,007
+mean and variance
+
+146
+00:52:26,007 --> 00:52:31,827
+of distributions.
+
+147
+00:52:32,867 --> 00:52:34,047
+Sometimes though
+
+148
+00:52:34,047 --> 00:52:36,128
+we want to find
+
+149
+00:52:36,128 --> 00:52:37,108
+estimate
+
+150
+00:52:37,108 --> 00:52:39,827
+a parameter of a distribution.
+
+151
+00:52:40,568 --> 00:52:42,268
+So how can we
+
+152
+00:52:42,268 --> 00:52:44,668
+estimate
+
+153
+00:52:52,583 --> 00:52:58,539
+bazı
+
+154
+00:52:51,827 --> 00:52:52,827
+Parameter
+
+155
+00:52:55,306 --> 00:52:55,827
+Of
+
+156
+00:52:56,068 --> 00:52:56,748
+Some
+
+157
+00:52:57,467 --> 00:52:58,268
+Distribution
+
+158
+00:53:03,443 --> 00:53:14,443
+For example, let's say, we have some, we want, we know that our data is, let's say, Poisson solution.
+
+159
+00:53:20,436 --> 00:53:22,411
+ve
+
+160
+00:53:25,523 --> 00:53:35,922
+is, let me write this way, sorry for, I'm changing always. Let's say x is distributed by Poisson.
+
+161
+00:53:35,922 --> 00:53:44,804
+And Poisson has a parameter called lambda. And
+
+162
+00:53:48,947 --> 00:53:57,106
+Poisson'ın, bu solucu ile ilgili bir
+
+163
+00:53:57,106 --> 00:54:02,268
+ve, e to the minus lambda, lambda over x,
+
+164
+00:54:02,268 --> 00:54:04,387
+divided by,
+
+165
+00:54:04,387 --> 00:54:07,706
+x is,
+
+166
+00:54:07,706 --> 00:54:09,706
+factorial.
+
+167
+00:54:16,083 --> 00:54:18,182
+Parameter here is Lambda.
+
+168
+00:54:19,802 --> 00:54:22,682
+And let's say you have some data.
+
+169
+00:54:23,943 --> 00:54:26,402
+You know that the distribution is poison.
+
+170
+00:54:27,302 --> 00:54:33,242
+And if you can find what Lambda is, you can specify the whole distribution.
+
+171
+00:54:33,242 --> 00:54:38,043
+So you can gather some data.
+
+172
+00:54:39,822 --> 00:54:42,083
+You can gather some data.
+
+173
+00:54:45,108 --> 00:54:48,306
+Let's say 642.
+
+174
+00:54:49,387 --> 00:54:58,148
+And obviously, in reality, you want to gather much more data than this, a lot of data.
+
+175
+00:55:01,268 --> 00:55:06,248
+Now, you want to estimate what lambda is, right?
+
+176
+00:55:06,447 --> 00:55:08,507
+You want to know what lambda is.
+
+177
+00:55:10,003 --> 00:55:12,804
+Bu bir genelde estimation problem,
+
+178
+00:55:12,804 --> 00:55:18,003
+ve bu konulma ile ilgili bir şey yapabilirsiniz.
+
+179
+00:55:19,003 --> 00:55:24,202
+Bu konulma ve öğrenmek için,
+
+180
+00:55:24,202 --> 00:55:28,202
+ilk olarak, bir şey yapabilirsiniz.
+
+181
+00:55:29,603 --> 00:55:32,603
+Bu, bir şey yapabilirsiniz.
+
+182
+00:55:32,603 --> 00:55:37,202
+Yani, bir şey yapabilirsiniz.
+
+183
+00:55:49,235 --> 00:55:56,315
+Now, this is the likelihood function in discrete case.
+
+184
+00:55:58,554 --> 00:56:01,675
+So for discrete
+
+185
+00:56:04,394 --> 00:56:08,394
+random variable x
+
+186
+00:56:10,076 --> 00:56:13,195
+Likelihood function is given as
+
+187
+00:56:24,402 --> 00:56:39,402
+Orası, this is sometimes written as L. L is written as probability of the data. So, let's say you have x1.
+
+188
+00:56:42,835 --> 00:57:00,594
+So, probability of x1 having value x1, then x2 having value x2, and all of this data, xn having value xn.
+
+189
+00:57:03,355 --> 00:57:08,996
+And now for discrete random variables,
+
+190
+00:57:09,811 --> 00:57:26,811
+X is notice that all of the X's I said this I think previously but all of these X I must be I ID.
+
+191
+00:57:28,811 --> 00:57:36,811
+So X I are independent and identically distributed.
+
+192
+00:57:37,588 --> 00:57:41,588
+They are independent.
+
+193
+00:57:41,588 --> 00:57:52,588
+So, we can write this joint probability as the multiplication of these individual probabilities.
+
+194
+00:57:52,588 --> 00:58:02,507
+So, we have this x1 x1 x1 x1 x1.
+
+195
+00:58:04,114 --> 00:58:08,436
+Probabilisiydi de X2'ye bir veriyor X2
+
+196
+00:58:10,516 --> 00:58:15,876
+Apto probable to X and value X
+
+197
+00:58:18,275 --> 00:58:18,556
+So
+
+198
+00:58:20,436 --> 00:58:21,235
+Now we can
+
+199
+00:58:22,516 --> 00:58:29,394
+This is it or if you want to we can write this a little compact using the this capital P
+
+200
+00:58:30,547 --> 00:58:39,547
+P is for multiplying, it's multiplication, it's like sum but for multiplication.
+
+201
+00:58:39,547 --> 00:58:57,547
+So we can write this as i from 1 to n, probability of x i, having value x i.
+
+202
+00:58:59,603 --> 00:59:05,202
+So basically we are just multiplying probability of each, each.
+
+203
+00:59:09,876 --> 00:59:24,876
+ve
+
+204
+00:59:37,012 --> 00:59:41,931
+ve yine
+
+205
+00:59:45,907 --> 00:59:51,507
+again, Xi is independent and identically distributed.
+
+206
+01:00:00,000 --> 01:00:03,000
+İndi bu, likelihood.
+
+207
+01:00:07,731 --> 01:00:20,652
+Or, I'll just write L, is probability of, or its joint density. Sorry.
+
+208
+01:00:34,036 --> 01:00:37,036
+So, it is...
+
+209
+01:00:42,612 --> 01:01:09,211
+Dense x at x1, x2, up to xn, joint density. And this is joint density, so I have to write x1, x2, xn here. And again, xi are independent and identically distributed, so they are independent.
+
+210
+01:01:09,907 --> 01:01:18,907
+Since they are independent, we can write this joint density as multiplication of marginal densities.
+
+211
+01:01:18,907 --> 01:01:36,907
+So this is density of x1 at x1, density of x2 at x2, up to density of xn.
+
+212
+01:01:37,684 --> 01:02:04,588
+at x n. Again, if you want, you can write this using this large summation notation from i equal 1 to n f densit of x i at x i.
+
+213
+01:02:05,139 --> 01:02:11,398
+So, they are very similar actually, discrete case and continuous case.
+
+214
+01:02:11,398 --> 01:02:20,460
+You are multiplying in the discrete case probability masses or probability values.
+
+215
+01:02:21,679 --> 01:02:26,840
+In continuous random variables, you are multiplying the densities.
+
+216
+01:02:29,396 --> 01:02:35,175
+Now, what does method of maximum likelihood do? Let's return to that.
+
+217
+01:02:44,724 --> 01:02:53,003
+So, Method of, of, Maximum, Likelihood.
+
+218
+01:02:58,099 --> 01:03:22,460
+In method of maximum likelihood, you find theta hat that maximizes that likelihood. Remember that, recall, that we want to find or we want to estimate.
+
+219
+01:03:30,547 --> 01:03:32,547
+sum Theta.
+
+220
+01:03:32,547 --> 01:03:35,547
+And our estimator
+
+221
+01:03:42,291 --> 01:03:44,612
+We call our estimator Theta hat.
+
+222
+01:03:46,451 --> 01:03:50,210
+Okay, this is by convention. This is hat.
+
+223
+01:03:51,692 --> 01:03:59,490
+We will read this as hat and Theta hat is the estimator for Theta.
+
+224
+01:04:00,331 --> 01:04:03,851
+And in maximum likelihood estimation
+
+225
+01:04:09,523 --> 01:04:15,123
+Tether head is the tether head
+
+226
+01:04:20,210 --> 01:04:22,210
+...yazı makamayız...
+
+227
+01:04:22,971 --> 01:04:24,971
+...yazı makamayız.
+
+228
+01:04:29,427 --> 01:04:40,188
+So you want to find a theta head such that the likelihood is maximum.
+
+229
+01:04:42,027 --> 01:04:55,867
+Now, that means usually we will do, if we are solving this problem analytically, we will do
+
+230
+01:04:57,619 --> 01:05:04,579
+We will use derivatives and make derivatives equal to zero.
+
+231
+01:05:06,579 --> 01:05:18,155
+So for analytic solution, that means
+
+232
+01:05:23,380 --> 01:05:25,659
+Theta hat is
+
+233
+01:05:29,235 --> 01:05:44,036
+has the property that when you take the derivative of the likelihood function with respect to the theta hat, you get zero. So this should be zero.
+
+234
+01:05:46,835 --> 01:05:56,036
+So theta hat is such that when you take the derivative of likelihood with respect to theta hat, you get zero.
+
+235
+01:05:57,076 --> 01:06:16,076
+I guess you remember that when you want to do optimization, you take the derivative with respect to theta hat, and when you do this, you don't actually always...
+
+236
+01:06:19,891 --> 01:06:23,050
+Finde minima, right?
+
+237
+01:06:23,050 --> 01:06:25,331
+So, remember that
+
+238
+01:06:31,922 --> 01:06:33,643
+Let's say this is
+
+239
+01:06:38,132 --> 01:06:43,132
+The graph of theta hat versus maximum likelihood.
+
+240
+01:06:43,132 --> 01:06:47,132
+And let's say
+
+241
+01:06:55,092 --> 01:07:00,684
+İzlediğiniz için, bu durumda,
+
+242
+01:07:08,306 --> 01:07:17,427
+So, let's say you have a minima, and then you have a seven point, and then you have a maximum.
+
+243
+01:07:20,228 --> 01:07:23,268
+So, let's say our data is
+
+244
+01:07:30,516 --> 01:07:52,516
+Let's say our likelihood is defined between A to B. And A and P are boundary points, right? So we call A and P boundary points.
+
+245
+01:07:59,860 --> 01:08:01,860
+B is another boundary point.
+
+246
+01:08:03,860 --> 01:08:05,860
+So we have these two boundary points.
+
+247
+01:08:12,083 --> 01:08:33,203
+Now, we also have this minimum point, and here we have a saddle point, so this is a minimum, and here we have a saddle point, and here we have a maximum.
+
+248
+01:08:38,515 --> 01:09:03,314
+So, let's say minimum is at A, B, C, let's say. Settel is at D. And maximum is at E. Now, theta is such, theta… So, the fact that this derivative equals to 0…
+
+249
+01:09:03,572 --> 01:09:20,716
+Bu da teta hat
+
+250
+01:09:24,274 --> 01:09:49,975
+How should I say? Theta hat is in the critical points list for the derivative equals to zero.
+
+251
+01:09:50,707 --> 01:09:52,907
+So, what are critical points here?
+
+252
+01:09:54,127 --> 01:09:57,426
+In this example, critical points are
+
+253
+01:10:04,500 --> 01:10:12,500
+A is a critical point. Why? Because it's a boundary point.
+
+254
+01:10:16,212 --> 01:10:30,652
+So, boundary points, at boundary points, the other may not be defined, but you need to check them anyways. So, A is a boundary point, B is a boundary point.
+
+255
+01:10:46,930 --> 01:10:57,692
+And C, D, E are boundary points because the derivative at these points will be zero.
+
+256
+01:11:05,844 --> 01:11:30,844
+So you basically take the derivative, equalize it to zero, and solution of that will give you some boundary, some critical points. You also add that critical point list, A and P, which are the boundaries. Then you check whether maximum takes, whether, sorry, whether
+
+257
+01:11:32,243 --> 01:11:36,743
+ve functionin maksimum valuesi, bu noktada dağılım var.
+
+258
+01:11:38,743 --> 01:11:41,743
+So, let's do an example on this.
+
+259
+01:11:46,420 --> 01:11:52,420
+Bir şey, bir örnek daha önce, bu bir şey.
+
+260
+01:12:12,340 --> 01:12:16,939
+logaritmum of likelihood, or maximize let's say.
+
+261
+01:12:20,979 --> 01:12:25,979
+Maximize, Nogartemode Likelyhood.
+
+262
+01:12:33,108 --> 01:12:34,466
+instead of
+
+263
+01:12:45,747 --> 01:12:49,867
+İstediğiniz için,
+
+264
+01:12:57,140 --> 01:13:07,859
+ve reason for that is, let's say your likelihood has this graph.
+
+265
+01:13:11,091 --> 01:13:13,091
+ve maximum here.
+
+266
+01:13:18,484 --> 01:13:22,484
+Now, logaritm of the likelihood,
+
+267
+01:13:27,922 --> 01:13:30,922
+İlk başımın her zaman, bu kadar.
+
+268
+01:13:36,819 --> 01:13:59,819
+So, the solution is exactly the same. It has maximums at the same place. And we prefer it over maximizing likelihood because when you take the derivatives with respect to theta et, remember the likelihood.
+
+269
+01:14:00,756 --> 01:14:10,315
+It has this P, which is a multiplication from i to i1 to n.
+
+270
+01:14:11,756 --> 01:14:14,256
+Probabilisiydi, let's say, xi.
+
+271
+01:14:16,694 --> 01:14:25,756
+Now, when you take the derivative of multiplication, the result will be very complicated.
+
+272
+01:14:26,836 --> 01:14:28,055
+This will be complicated.
+
+273
+01:14:32,532 --> 01:14:42,346
+Ama, if you take the logarithm, what will happen? We can send the logarithm, so we can write it this way.
+
+274
+01:14:48,692 --> 01:15:02,091
+logaritm of L, logaritm of, this from 1 to n, P of xi.
+
+275
+01:15:02,091 --> 01:15:14,091
+Now, logaritm of the multiplication is summation. So this logaritm, this will turn into summation.
+
+276
+01:15:14,528 --> 01:15:21,528
+İçin, doğ, instead of probabilities, we will have Robert-Mock probabilities.
+
+277
+01:15:28,627 --> 01:15:32,787
+Now, usually this is much simple.
+
+278
+01:15:33,787 --> 01:15:35,146
+Much simple.
+
+279
+01:15:36,627 --> 01:15:45,268
+When you take the derivative because you are taking the derivative of the terms separately, so derivative.
+
+280
+01:15:49,203 --> 01:15:52,203
+is simpler, usually.
+
+281
+01:15:55,203 --> 01:15:56,323
+So,
+
+282
+01:16:00,948 --> 01:16:05,931
+Let's do an example and then let's have a break.
+
+283
+01:16:10,899 --> 01:16:12,899
+So, let's do this example.
+
+284
+01:16:18,354 --> 01:16:32,755
+Let's say we know that x is distributed by Poisson, with some lambda parameters, and we want to estimate lambda.
+
+285
+01:16:38,002 --> 01:16:54,243
+ve, for the sake of simplicity, let's say data is very simple, it's just 642, just for the sake of simplicity.
+
+286
+01:16:54,243 --> 01:17:02,002
+And so we will use maximum likelihood estimation.
+
+287
+01:17:08,082 --> 01:17:17,082
+Let's say, teta hat is the maximum likelihood estimator.
+
+288
+01:17:21,876 --> 01:17:25,274
+Maximum likelihood estimation estimator.
+
+289
+01:17:28,948 --> 01:17:30,948
+Lambda.
+
+290
+01:17:30,948 --> 01:17:34,948
+Lambda hatı'ı da bu lambda.
+
+291
+01:17:34,948 --> 01:17:40,948
+Ve Poisson'in distribution'in
+
+292
+01:17:56,756 --> 01:18:03,336
+This is lowercase x, divided by lowercase x is factorial.
+
+293
+01:18:03,336 --> 01:18:07,076
+So,
+
+294
+01:18:19,764 --> 01:18:35,203
+So, let's first write the likelihood function, right? Likelihood function is the multiplication from i cos 1 to n, probability of xi.
+
+295
+01:18:35,203 --> 01:18:43,122
+So, Poisson is a discrete distribution. So, we are using multiplication of these probabilities.
+
+296
+01:18:45,363 --> 01:18:46,083
+So, we have
+
+297
+01:18:48,212 --> 01:18:50,212
+İ1-N
+
+298
+01:18:58,194 --> 01:19:14,636
+e to the minus lambda, lambda over x i, so we have subscripts on x i, divided by x i's factorial.
+
+299
+01:19:25,140 --> 01:19:35,640
+Derivative, but as I said before, let's use logarithm of likelihood. So, we will say,
+
+300
+01:19:40,243 --> 01:19:48,643
+logaritm of L, when you take the derivative of this with respect to theta hat.
+
+301
+01:19:48,643 --> 01:20:03,762
+Now, I am saying theta hat here, I'm using the symbol theta hat here, but in the maximum in the derivative, but here I am saying lambda.
+
+302
+01:20:05,747 --> 01:20:08,747
+ve
+
+303
+01:20:12,564 --> 01:20:36,484
+Up to this point logarithm is, so when we say lambda hat, because we say lambda hat, because when we take derivative with respect to lambda hat, we say that derivative is zero.
+
+304
+01:20:40,212 --> 01:20:45,212
+At this point, we are using estimator of lambda.
+
+305
+01:20:47,212 --> 01:20:52,212
+And we will solve this and we will find lambda hat, right?
+
+306
+01:20:52,212 --> 01:20:59,212
+Up to this point, we are just using population, population value.
+
+307
+01:21:04,114 --> 01:21:07,114
+Now, let's continue from here.
+
+308
+01:21:08,614 --> 01:21:18,114
+From here then on, it's just mathematics, like it's calculus. We need to solve this derivation equation.
+
+309
+01:21:19,114 --> 01:21:27,114
+So, this might need a little work. Let's work on this a little bit and then we will have a break.
+
+310
+01:21:32,082 --> 01:21:33,082
+Let's see.
+
+311
+01:21:37,082 --> 01:21:38,082
+We have
+
+312
+01:21:41,082 --> 01:21:42,082
+derivative of
+
+313
+01:21:45,939 --> 01:21:49,100
+Logaritm of L, what is it?
+
+314
+01:21:49,100 --> 01:21:50,100
+So,
+
+315
+01:21:51,779 --> 01:21:54,100
+we will have a summation.
+
+316
+01:21:54,100 --> 01:21:59,139
+When we take the logarithm of multiplication, it becomes summation.
+
+317
+01:21:59,139 --> 01:22:03,059
+It will again will be from 1 to n.
+
+318
+01:22:03,059 --> 01:22:06,019
+Inside, we will have logarithm of
+
+319
+01:22:10,899 --> 01:22:38,443
+e to the minus lambda hat. Remember, we are using lambda hat now. Lambda hat's x i power and x i factorial. And this is equal to zero. This derivation is equal to zero. And now, remember,
+
+320
+01:22:40,948 --> 01:22:45,948
+Logaritmen, konversi multiplications into summations.
+
+321
+01:22:45,948 --> 01:22:55,948
+So, I have d over d lambda hat, i from 1 to n.
+
+322
+01:22:55,948 --> 01:23:02,948
+And I have now logaritm of this guy,
+
+323
+01:23:06,386 --> 01:23:29,930
+Bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu
+
+324
+01:23:35,091 --> 01:23:44,530
+So, lnE is just one. So, from this term here, we have minus lambda hat.
+
+325
+01:23:50,868 --> 01:23:53,868
+Ve bu termen,
+
+326
+01:23:53,868 --> 01:23:57,868
+yine, aslında, birçok birçok.
+
+327
+01:23:57,868 --> 01:24:03,868
+Bu, bu, 3 termen aslında.
+
+328
+01:24:03,868 --> 01:24:07,868
+Bu, ilk termen, minus lambda hat.
+
+329
+01:24:18,131 --> 01:24:27,770
+This lambda hat to the power of x i becomes x i.
+
+330
+01:24:35,922 --> 01:24:48,922
+ve have logaritm of lambda head minus, since this is in the division, I will make it minus.
+
+331
+01:24:53,076 --> 01:24:59,836
+We have logarithm of Xi's.
+
+332
+01:25:14,068 --> 01:25:20,068
+ve yine bu, bu, 0.
+
+333
+01:25:27,730 --> 01:25:39,730
+Now, both these terms, I find it easier to write separately and take the derivative.
+
+334
+01:25:42,112 --> 01:25:47,171
+Now, one of these terms will be directly with zero, this guy.
+
+335
+01:25:48,452 --> 01:25:51,992
+We will take the derivative with respect to lambda hat.
+
+336
+01:25:53,747 --> 01:25:57,546
+And there is no lambda hat in this term.
+
+337
+01:25:58,386 --> 01:26:03,226
+So that means when we take the derivative, this will be zero.
+
+338
+01:26:04,606 --> 01:26:04,867
+Right?
+
+339
+01:26:05,327 --> 01:26:06,546
+Its derivative is zero.
+
+340
+01:26:13,140 --> 01:26:16,539
+And now, these two terms, what are they?
+
+341
+01:26:18,539 --> 01:26:19,220
+Let's look.
+
+342
+01:26:30,036 --> 01:26:32,036
+Yani, derivatı var.
+
+343
+01:26:43,346 --> 01:27:09,420
+Bu ne?
+
+344
+01:27:09,587 --> 01:27:36,987
+But i changes, right? So, instead of n, I have a summation of x i logarithm lambda hat. So, let me take the logarithm of lambda hat to the front. So, I have logarithm of lambda hat. And this part is a summation from 1 to n.
+
+345
+01:27:37,395 --> 01:27:38,395
+XI.
+
+346
+01:27:38,395 --> 01:28:06,224
+Right?
+
+347
+01:27:46,323 --> 01:27:53,922
+I took the logarithm of hat outside the summation because summation is over i and lambda hat doesn't have i.
+
+348
+01:27:54,922 --> 01:28:03,922
+Now this guy here, it's like sample mean. We are summing all of these xis.
+
+349
+01:28:06,051 --> 01:28:11,051
+Right?
+
+350
+01:28:05,076 --> 01:28:14,435
+But we didn't divide it by n, right? So we can write this as sample mean, but divide it by n.
+
+351
+01:28:15,796 --> 01:28:16,296
+Okay.
+
+352
+01:28:17,675 --> 01:28:18,636
+So,
+
+353
+01:28:19,475 --> 01:28:22,354
+we have again, we didn't,
+
+354
+01:28:23,496 --> 01:28:25,595
+but we are coming here, hopefully,
+
+355
+01:28:26,496 --> 01:28:28,716
+and lambda
+
+356
+01:28:29,555 --> 01:28:32,015
+plus logarithm.
+
+357
+01:28:32,819 --> 01:28:34,819
+Yanda Hz.
+
+358
+01:28:34,819 --> 01:28:36,715
+Ve yanda Hz.
+
+359
+01:28:41,587 --> 01:28:44,827
+Sample mean divided by n equal to zero.
+
+360
+01:28:46,787 --> 01:28:49,827
+At this point, I think I can take the logarithm.
+
+361
+01:28:51,827 --> 01:28:56,028
+Let's try to take this derivative. I can take the derivative.
+
+362
+01:28:57,787 --> 01:29:03,546
+If I take the derivative with respect to lambda head, from here, I have minus n.
+
+363
+01:29:06,667 --> 01:29:07,306
+And
+
+364
+01:29:08,627 --> 01:29:16,707
+Burada, bu
+
+365
+01:29:23,859 --> 01:29:41,878
+Derivative logarithm of lambda hat. Derivative is 1 over lambda. So I have 1 over lambda hat and I have x.
+
+366
+01:29:45,268 --> 01:29:51,368
+Sample mean divided by n here, and I need to sum this up, and this should be zero.
+
+367
+01:30:14,100 --> 01:30:23,300
+Do I have a mistake? Let's do this later, let's come here later. Let's continue with the...
+
+368
+01:30:26,386 --> 01:30:29,386
+I wrote it here, actually this was n times.
+
+369
+01:30:32,386 --> 01:30:41,386
+This is n times standard deviation because standard deviation has 1 over n here.
+
+370
+01:30:41,386 --> 01:30:48,386
+This is n times standard deviation. So I have n times standard deviation here.
+
+371
+01:31:05,076 --> 01:31:08,076
+Continuar n times standard deviation here.
+
+372
+01:31:10,274 --> 01:31:21,274
+And n simplify and this minus n goes to the other side as 1.
+
+373
+01:31:21,876 --> 01:31:26,274
+So standard deviation divided by lambda hat is 1.
+
+374
+01:31:27,274 --> 01:31:32,675
+So lambda hat then is standard deviation.
+
+375
+01:31:34,484 --> 01:32:00,484
+As you see, once you get the derivative, it's not that hard, but you need to be very careful about this. So what does this say? Well, for the data we have, what was the data?
+
+376
+01:32:02,354 --> 01:32:09,515
+Bu da 642.
+
+377
+01:32:09,515 --> 01:32:11,515
+2 3.
+
+378
+01:32:28,243 --> 01:32:31,403
+Ve do we need to check the boundaries here?
+
+379
+01:32:36,756 --> 01:33:00,756
+I guess Poisson was number of events in given time so x goes from 0 to infinity and lambda is lambda goes from 0 to infinity too so at 0 at lambda equals to 0
+
+380
+01:33:04,306 --> 01:33:09,306
+Bu ne kadar maksimum ve ne kadar maksimum?
+
+381
+01:33:16,020 --> 01:33:26,578
+So, we need to also check Lambda equals to zero and
+
+382
+01:33:32,082 --> 01:33:41,404
+Lambda hatı kısım 0, Lambda hatı kısım 0, çünkü Lambda is 0.
+
+383
+01:33:44,042 --> 01:33:47,922
+So, Lambda's range is from 0 to infinity.
+
+384
+01:33:48,564 --> 01:33:53,323
+So, those might be a better estimate.
+
+385
+01:33:53,323 --> 01:33:59,682
+So, we need to check whether likelihood gets larger values there.
+
+386
+01:34:00,948 --> 01:34:04,492
+Ama bu dağılım,
+
+387
+01:34:15,956 --> 01:34:27,155
+You can do that home and hopefully we will see that lambda equals to zero and lambda equals to infinity gives lower likelihood values.
+
+388
+01:34:29,555 --> 01:34:39,354
+Okay, so with this we finished Mike's interval estimation and I will give a break before that.
+
+389
+01:34:40,114 --> 01:34:44,274
+Next lecture, we will start interval estimation.
+
+390
+01:34:57,939 --> 01:35:02,939
+15-minutes break.
+
+391
+01:35:02,939 --> 01:35:05,939
+4 o'lukla başlayacağız.
+
+392
+01:35:05,939 --> 01:35:08,939
+Do you have any questions?
+
+393
+01:35:08,939 --> 01:35:11,939
+Bu kısımdan bir sorunuz var mı?
+
+394
+01:35:11,939 --> 01:35:12,939
+Yok hocam.
+
+395
+01:35:12,939 --> 01:35:13,939
+Yok.
+
+396
+01:35:13,939 --> 01:35:21,939
+Şimdi şöyle olacak, bugün devam ederseniz ikinci derste de normal anlatabileceğim kadar anlatacağım.
+
+397
+01:35:23,764 --> 01:35:45,578
+Pratikte şöyle bir şey oluyor, 3 grup var şu anda. Sınavda 3 grubun en az ilerleyeninin konuları dahil oluyor. Çünkü ortak sınav hazırlıyoruz. Dolayısıyla...
+
+398
+01:35:46,100 --> 01:35:54,100
+Ben kendi anlattığım grup, diğer grup Cuma günü var. Ayşe hocamın anlattığı diğer grup var yine Cuma günü.
+
+399
+01:35:54,100 --> 01:36:11,100
+Onlarda nereye geldiysek bu derste o kadar anlattığımı varsayacağım. Yani bu derste ikinci derste kaldığım yerde değil de diğer grubumda kaldığım yerden devam edeceğim gelecek hafta.
+
+400
+01:36:12,948 --> 01:36:27,948
+Nerede kaldığımı öğrenebilirsiniz ama pratikte eğer hazırlıklı da olmak istiyorsanız, interval estimation'dan kalan kısma kendiniz çalışın.
+
+401
+01:36:27,948 --> 01:36:37,948
+Onlarla da en fazla interval estimation'ı bitirebiliriz diye düşünüyorum. Şu anda bir ara vereceğim, saat dörde kadar artık.
+
+402
+01:36:37,948 --> 01:36:39,948
+Tamamdır hocam.

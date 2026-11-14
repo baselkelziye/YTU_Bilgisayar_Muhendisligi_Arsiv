@@ -1,0 +1,3387 @@
+1
+00:06:34,740 --> 00:06:36,524
+Arkadaşlar merhabalar.
+
+2
+00:06:43,156 --> 00:06:44,956
+Sesim geliyordur umarım.
+
+3
+00:07:13,012 --> 00:07:14,764
+Teşekkürler, [öğrenci].
+
+4
+00:07:18,548 --> 00:07:19,548
+So today,
+
+5
+00:07:19,548 --> 00:07:23,947
+we will start
+
+6
+00:07:23,947 --> 00:07:26,947
+limit theorems.
+
+7
+00:07:40,500 --> 00:07:49,000
+Ödevin bitiş saati olarak ne zamandı? diye sormuş [öğrenci]. İyi hatırlattın. Ödevin bitiş günü ne zamandı?
+
+8
+00:07:55,572 --> 00:07:56,771
+17 Ocak.
+
+9
+00:08:02,259 --> 00:08:29,439
+Dan önce. 17 Ocak hangi güne geliyor? Cuma gününe geliyor. Yani işte Cuma günü muhtemelen sabahtan falan kapatırım. Cuma günü uyandıktan sonra kapatırım. Otomatik bir sistem yok. Kendi kendime kapatmam gerekecek.
+
+10
+00:08:34,484 --> 00:08:36,724
+17 aralıktır, Ocak değildir.
+
+11
+00:08:51,412 --> 00:08:58,412
+Şurada iyi hatırlattığınız takvimli not alayım 17 Ocak.
+
+12
+00:09:18,676 --> 00:09:25,836
+Nasıl şey yapabiliyor musunuz? Ödev yapabiliyor musunuz?
+
+13
+00:09:33,556 --> 00:09:41,056
+Güzel bir tekrar oluyordur diye düşünüyorum. Sürekli olasılığın güzel bir tekrarı oluyordur diye düşünüyorum.
+
+14
+00:10:03,124 --> 00:10:23,124
+gelecek yıllarda o tarz ödev ve toplamayı daha da bir çoklaştırıp diğer bölümlerden de, konulardan da böyle testler hazırlamayı falan düşünüyoruz.
+
+15
+00:10:27,379 --> 00:10:30,500
+Bakalım bu yıl nasıl bir sonuç alınacak.
+
+16
+00:10:36,244 --> 00:10:42,244
+Evet şimdi dersimize devam edelim.
+
+17
+00:10:42,244 --> 00:10:48,244
+So we are looking, we are starting to the limit theorems.
+
+18
+00:10:48,244 --> 00:10:52,244
+Before that we need to learn a couple of definitions.
+
+19
+00:10:52,244 --> 00:11:03,884
+One of the definitions, one of the things that you might come across to is this.
+
+20
+00:11:03,892 --> 00:11:06,892
+Abdeviation called IID.
+
+21
+00:11:08,492 --> 00:11:14,692
+And IID is an abbreviation for independent.
+
+22
+00:11:20,052 --> 00:11:22,052
+ve identikli
+
+23
+00:11:26,388 --> 00:11:27,388
+distribüt ed.
+
+24
+00:11:35,059 --> 00:11:38,859
+ve
+
+25
+00:11:45,556 --> 00:11:48,396
+So, independent and identically distributed.
+
+26
+00:11:50,796 --> 00:11:52,396
+Random variables...
+
+27
+00:12:02,067 --> 00:12:03,980
+x1 to xn
+
+28
+00:12:12,244 --> 00:12:17,804
+İndependent, ve identikleri,
+
+29
+00:12:17,804 --> 00:12:18,804
+distribüt edilmiş.
+
+30
+00:12:33,652 --> 00:12:35,652
+iid
+
+31
+00:12:35,652 --> 00:12:37,652
+if
+
+32
+00:12:44,724 --> 00:12:47,923
+If, one, they are independent,
+
+33
+00:12:55,827 --> 00:12:58,427
+2, they are identical distributed.
+
+34
+00:12:59,427 --> 00:13:00,827
+Meaning,
+
+35
+00:13:03,227 --> 00:13:07,227
+their distributions marginal distributions are
+
+36
+00:13:08,067 --> 00:13:09,227
+same so
+
+37
+00:13:10,227 --> 00:13:12,227
+distribution of x1
+
+38
+00:13:14,827 --> 00:13:18,627
+x is same as distribution of
+
+39
+00:13:20,627 --> 00:13:22,627
+x2 x
+
+40
+00:13:23,892 --> 00:13:31,892
+Bu, all of these x1, x2, x3, et cetera, they should have the same distribution.
+
+41
+00:13:36,916 --> 00:13:51,276
+Bu, bu
+
+42
+00:13:55,668 --> 00:13:58,860
+ve ilk bölümün
+
+43
+00:14:08,436 --> 00:14:12,436
+Now, we need to learn a couple of...
+
+44
+00:14:16,755 --> 00:14:27,915
+Statistics, one of them is, by the way, we start statistics actually this. Sample mean.
+
+45
+00:14:37,172 --> 00:14:45,971
+We show the sample mean with this or we show it with MN.
+
+46
+00:14:50,355 --> 00:14:56,203
+Bu iki
+
+47
+00:15:04,179 --> 00:15:31,179
+So, we say that for i, i, d, independent and identically distributed xi, and when I say xi, or let me write x1 to n because we have an n here, x1,
+
+48
+00:15:32,019 --> 00:15:36,519
+x2, up to xn.
+
+49
+00:15:39,220 --> 00:15:41,819
+These are random variables, by the way.
+
+50
+00:15:46,196 --> 00:15:49,796
+Sample mean is given by, or defined as,
+
+51
+00:16:05,364 --> 00:16:07,364
+Bu çok kolay.
+
+52
+00:16:09,364 --> 00:16:12,364
+Sadece bu allıları.
+
+53
+00:16:18,131 --> 00:16:22,811
+ve n bu, n bu, n bu, n bu.
+
+54
+00:16:31,923 --> 00:16:38,443
+As I said, we could write this as n x.
+
+55
+00:16:39,923 --> 00:16:48,443
+And the x here is, so this x here is, remember that we don't have any x here.
+
+56
+00:16:50,443 --> 00:16:53,003
+We have x1, x2, xn, et cetera.
+
+57
+00:16:53,763 --> 00:16:56,203
+But we assume that...
+
+58
+00:16:56,820 --> 00:17:03,220
+These X1, X2, Xn are independent and identically distributed.
+
+59
+00:17:03,220 --> 00:17:09,539
+And this X represents that identical distribution.
+
+60
+00:17:12,259 --> 00:17:18,580
+It's a random variable that is distributed by that identical distribution.
+
+61
+00:17:21,779 --> 00:17:24,259
+And sample mean here.
+
+62
+00:17:24,723 --> 00:17:31,723
+ve
+
+63
+00:17:49,460 --> 00:17:54,460
+Centrum mean itself is a random variable, okay?
+
+64
+00:17:54,460 --> 00:17:56,076
+So,
+
+65
+00:18:00,660 --> 00:18:08,660
+We can talk about its expected value, expected value of sample meal.
+
+66
+00:18:13,779 --> 00:18:19,299
+Or we can talk about varianz of sample mean.
+
+67
+00:18:21,180 --> 00:18:23,619
+And the reason is...
+
+68
+00:18:27,124 --> 00:18:33,124
+Sample mean is a sum of these random variables.
+
+69
+00:18:33,124 --> 00:18:39,115
+So, itself, sample mean itself is a random variable.
+
+70
+00:18:44,180 --> 00:18:54,420
+So, how can we calculate its mean and its variance? Let's look at first the mean.
+
+71
+00:19:01,011 --> 00:19:15,092
+So, let's write that first sample mean itself is a random variable. And first let's try to find its expected value.
+
+72
+00:19:17,652 --> 00:19:28,291
+And we just need to apply expected value definition to this sample mean definition, right?
+
+73
+00:19:29,044 --> 00:19:42,464
+So, we will write this is expected value of x1 plus x2 up to xn divided by n.
+
+74
+00:19:45,204 --> 00:19:55,964
+And that is expected value of x1 plus expected value of x2 plus...
+
+75
+00:19:56,852 --> 00:20:02,852
+up to expected value of xm, divided by n.
+
+76
+00:20:04,852 --> 00:20:09,852
+And these expected values of
+
+77
+00:20:16,596 --> 00:20:20,635
+x1, x2, et cetera.
+
+78
+00:20:22,155 --> 00:20:22,755
+Their
+
+79
+00:20:25,755 --> 00:20:29,316
+expected value of any x pi
+
+80
+00:20:30,755 --> 00:20:31,316
+is
+
+81
+00:20:33,476 --> 00:20:36,635
+equal to expected value of x itself.
+
+82
+00:20:38,556 --> 00:20:39,556
+The reason is
+
+83
+00:20:40,596 --> 00:20:56,596
+Bu, x1, x2, xn random variables, bu, yukarıda aynı distribi, ve x'i, yukarıda aynı distribi.
+
+84
+00:21:08,243 --> 00:21:22,743
+So, this becomes expected value of x plus expected value of x2. So, for each of them, we have an expected value of x.
+
+85
+00:21:26,644 --> 00:21:27,923
+Dividi ve n.
+
+86
+00:21:39,604 --> 00:21:44,604
+n times expected value of x divided by n.
+
+87
+00:21:44,604 --> 00:21:50,604
+We simplify n's so that we see that expected value of
+
+88
+00:21:50,604 --> 00:21:51,340
+x divided by n times expected value of x divided by n.
+
+89
+00:21:59,856 --> 00:22:02,156
+We simplify n's so that we see that expected value of x divided by n times expected value of x divided by n.
+
+90
+00:21:55,092 --> 00:22:02,132
+Sample mean is the expected value itself or the population itself.
+
+91
+00:22:17,140 --> 00:22:20,540
+Bu önemli result.
+
+92
+00:22:25,556 --> 00:22:31,564
+ve
+
+93
+00:22:37,299 --> 00:22:46,740
+Now we can talk about variance of sample mean. So let's try to calculate that.
+
+94
+00:22:50,228 --> 00:22:54,008
+Bu, bu parçası bir parçası var.
+
+95
+00:23:04,403 --> 00:23:06,403
+Varyansı of sample mean.
+
+96
+00:23:16,372 --> 00:23:20,372
+We will just apply varians to both sides.
+
+97
+00:23:20,372 --> 00:23:43,332
+So, varians of x, sample mean, varians of sample mean, is varians of, let's just write the definition first, x1 plus x2 plus,
+
+98
+00:23:46,036 --> 00:24:12,107
+x n, divided by n. And now we can write these individually. Variance of x1 plus variance of x2 up to variance of xn. And we will divide by n.
+
+99
+00:24:12,180 --> 00:24:26,099
+ve reason we can write these variances separately is x1, x2, xn, so xi, are independent.
+
+100
+00:24:30,963 --> 00:24:38,963
+Since they are independent, we can divide that variance summation like this.
+
+101
+00:24:39,963 --> 00:24:41,803
+And now...
+
+102
+00:24:44,884 --> 00:24:53,163
+Varyansı x1, Varyansı x2, etk. They all are equal to variants of x.
+
+103
+00:25:07,796 --> 00:25:23,796
+again we have divided by n here and we can write this because variance of x i is equal to variance of x.
+
+104
+00:25:34,708 --> 00:25:40,028
+So, again, x represents the underlying distribution.
+
+105
+00:25:42,088 --> 00:25:45,148
+So, we can just write that.
+
+106
+00:25:51,188 --> 00:25:57,188
+So now, again, we have here n of these variances.
+
+107
+00:26:02,259 --> 00:26:15,299
+I have a mistake here. This 1 over n, when it gets out of variance term, it should be, it will be 1 over n squared. So I have a square here.
+
+108
+00:26:17,900 --> 00:26:28,860
+So that should be n squared. Now we have n of these variances. So n variances.
+
+109
+00:26:29,715 --> 00:26:35,275
+x divided by m2.
+
+110
+00:26:35,275 --> 00:26:36,755
+So we have
+
+111
+00:26:47,892 --> 00:26:52,492
+Varansızı x divided by n squared.
+
+112
+00:26:54,372 --> 00:27:00,132
+So, we can write this as sigma squared over n squared to.
+
+113
+00:27:02,132 --> 00:27:08,532
+Sorry, n, because this n will simplify one of those n's.
+
+114
+00:27:09,291 --> 00:27:11,932
+So here, we will just have n.
+
+115
+00:27:17,172 --> 00:27:20,491
+Again, this is important to know.
+
+116
+00:27:20,491 --> 00:27:23,592
+Variance of the sample mean is
+
+117
+00:27:23,592 --> 00:27:28,432
+variance of the population divided by n.
+
+118
+00:27:37,779 --> 00:27:53,779
+Varyansı has another important property, and it is called weak law, weak law of large numbers. So there are two of these low large numbers. First is the weak law of large numbers.
+
+119
+00:28:09,844 --> 00:28:16,844
+We will call this WLLM, weak, low of large numbers.
+
+120
+00:28:16,844 --> 00:28:20,556
+And this is
+
+121
+00:28:23,955 --> 00:28:33,932
+This says that, let Xi be...
+
+122
+00:28:47,155 --> 00:28:51,076
+Let XI be set of
+
+123
+00:28:55,059 --> 00:29:04,559
+independent, identikleri, random, varyaplar.
+
+124
+00:29:13,619 --> 00:29:17,619
+Let's expect insof...
+
+125
+00:29:19,619 --> 00:29:21,035
+So let's...
+
+126
+00:29:36,211 --> 00:30:01,211
+let's expectans of any of these x i is less than infinity and let's call these expected expectans of any of these x i mu so that we can write easier.
+
+127
+00:30:02,387 --> 00:30:04,387
+Çünkü, onlar da aynı.
+
+128
+00:30:08,403 --> 00:30:22,347
+Then, for any epsilon larger than zero, we have limits.
+
+129
+00:30:28,915 --> 00:30:38,915
+As limit n goes to infinity, probability of n is the number of days xi.
+
+130
+00:30:40,835 --> 00:30:50,355
+So, as limit n goes to infinity, probability of
+
+131
+00:30:53,011 --> 00:30:59,755
+ve
+
+132
+00:31:02,963 --> 00:31:08,163
+Being larger than zero is zero.
+
+133
+00:31:10,324 --> 00:31:17,763
+So let me write this first part again because I want to show n there.
+
+134
+00:31:21,587 --> 00:31:41,587
+So, I will rewrite that part. Let x1, x2, up to xn, be identically distributed.
+
+135
+00:31:45,076 --> 00:31:47,076
+İndeperim, random variables.
+
+136
+00:31:49,556 --> 00:31:55,956
+And their mean is less than infinity and let's call it M.
+
+137
+00:31:58,036 --> 00:32:00,755
+Then for any epsilon larger than zero,
+
+138
+00:32:02,996 --> 00:32:09,875
+the difference, their difference as n goes to infinity as we have more and more samples.
+
+139
+00:32:11,859 --> 00:32:38,731
+Yani, bu bölümün
+
+140
+00:32:39,635 --> 00:32:51,715
+Differencesle me so small that the difference will be smaller than Epsilon, right?
+
+141
+00:32:53,715 --> 00:32:55,627
+So this is the...
+
+142
+00:33:01,844 --> 00:33:04,604
+The weak law of large numbers.
+
+143
+00:33:06,044 --> 00:33:07,644
+This can be proved by
+
+144
+00:33:12,004 --> 00:33:14,203
+Chebyshev's inequality.
+
+145
+00:33:29,460 --> 00:33:35,460
+It's an exercise for you to do it or you can check out from the book.
+
+146
+00:33:45,140 --> 00:33:48,060
+Bu bir de önemli limit theorem,
+
+147
+00:33:48,060 --> 00:33:50,860
+ve büyük law of large numbers.
+
+148
+00:33:53,060 --> 00:33:56,900
+Bir de önemli teoriyeler,
+
+149
+00:33:56,900 --> 00:33:58,660
+central limit theorem.
+
+150
+00:34:12,403 --> 00:34:17,564
+Sensörlimitoren, we will abbreviate it as CLT.
+
+151
+00:34:23,251 --> 00:34:31,251
+ve bu önemli bir şey.
+
+152
+00:34:36,403 --> 00:34:40,364
+Theorem, and in English it says that
+
+153
+00:34:45,172 --> 00:34:53,172
+İngilizce, it says that if you sum a large number of...
+
+154
+00:35:09,139 --> 00:35:11,139
+That sun is
+
+155
+00:35:13,619 --> 00:35:15,220
+Approximately
+
+156
+00:35:20,500 --> 00:35:25,899
+Aproximiyetli normal, in distribution.
+
+157
+00:35:37,268 --> 00:35:47,268
+So, if you have a sum of some random variables, you can basically use normal distribution for the calculation.
+
+158
+00:35:47,268 --> 00:35:48,268
+Okay.
+
+159
+00:35:52,268 --> 00:35:56,268
+Let's try how it is written in math.
+
+160
+00:36:01,364 --> 00:36:03,364
+in the language of math.
+
+161
+00:36:11,795 --> 00:36:29,795
+So, you will say that let x1, x2 again up to xn be independent identically distributed random variables.
+
+162
+00:36:54,996 --> 00:36:55,996
+Let's...
+
+163
+00:36:59,668 --> 00:37:06,668
+ve normal dağılımı işlemiyemle,
+
+164
+00:37:11,860 --> 00:37:23,860
+let's call that mean is less than infinity and their variance
+
+165
+00:37:31,731 --> 00:37:34,372
+is larger than zero.
+
+166
+00:37:38,483 --> 00:37:46,483
+ve, let's call that variance, sigma square, that variance is less than infinity.
+
+167
+00:37:58,452 --> 00:38:00,452
+The random variables
+
+168
+00:38:12,884 --> 00:38:14,003
+Zn
+
+169
+00:38:17,811 --> 00:38:28,683
+...which is you subtract mean from sample mean and divide by...
+
+170
+00:38:31,795 --> 00:38:34,095
+Sükür, Dubai, Baye.
+
+171
+00:38:37,811 --> 00:38:43,931
+Sample standard deviation, so, square root of this variance.
+
+172
+00:39:00,628 --> 00:39:04,620
+So basically you are dividing by the...
+
+173
+00:39:14,068 --> 00:39:18,068
+sigma divided by square root of n, and that is the…
+
+174
+00:39:26,228 --> 00:40:11,659
+Bu, bu
+
+175
+00:40:18,675 --> 00:40:20,675
+variyansı, sampler mi.
+
+176
+00:40:23,475 --> 00:40:24,475
+So,
+
+177
+00:40:27,475 --> 00:40:28,475
+this
+
+178
+00:40:29,876 --> 00:40:30,876
+value
+
+179
+00:40:41,684 --> 00:40:45,388
+ve
+
+180
+00:40:51,315 --> 00:41:15,595
+Both sides with n, you have x1 plus x2 plus up to xn minus n mu, divided by square root of n sigma. And now,
+
+181
+00:41:16,916 --> 00:41:18,916
+Bu, bu,
+
+182
+00:41:25,172 --> 00:41:27,148
+Bu
+
+183
+00:41:33,300 --> 00:41:50,300
+Here we have some of these random variables and n of them and then we are subtracting n of the mu and we are dividing by square root of n varyans.
+
+184
+00:42:00,052 --> 00:42:04,552
+Dividi ve square root n var.
+
+185
+00:42:06,052 --> 00:42:09,483
+Anyways, so this is the n.
+
+186
+00:42:15,123 --> 00:42:25,067
+Let me delete these parts, so, this end, this z end, sorry.
+
+187
+00:42:33,012 --> 00:42:36,012
+Zn converges to
+
+188
+00:42:40,532 --> 00:42:46,092
+konularıcısın, konularıcısın, siviyonu,
+
+189
+00:42:54,516 --> 00:42:55,884
+standart
+
+190
+00:43:00,371 --> 00:43:02,315
+normal, random,
+
+191
+00:43:14,420 --> 00:43:17,880
+So, let's just write it in.
+
+192
+00:43:22,099 --> 00:43:31,940
+met, so we are writing this part in that, random variable, z n,
+
+193
+00:43:35,219 --> 00:43:38,340
+has the property
+
+194
+00:43:42,835 --> 00:43:44,035
+Limit.
+
+195
+00:43:48,500 --> 00:44:02,188
+Zn'infinitiye kadar z n'infinitiye kadar z n'infinitiye kadar z n'infinitiye kadar z n'infinitiye kadar z n'infinitiye kadar z n'infinitiye kadar z n'infinitiye kadar z n'infinitiye kadar z n'infinitiye kadar z n'infinitiye kadar z n'infinitiye kadar z n'infinitiye kadar z n'infinitiye kadar z n'infinitiye kadar z n'infinitiye kadar z n'infinitiye kadar z n'infinitiye kadar z n'infinitiye kadar z n'infinitiye kadar z n'infinitiye kadar z n'infinitiye kadar z n'infinitiye kadar z n'infinitiye kadar z n'infinitiye kadar z n'infinitiye kadar z n'infinitiye kadar z n'infinitiye
+
+196
+00:44:06,708 --> 00:44:11,468
+ve normal dağılım,
+
+197
+00:44:16,884 --> 00:44:27,364
+ve P of x is the standard.
+
+198
+00:44:32,659 --> 00:44:34,659
+Cumulative Distribution Function.
+
+199
+00:44:41,556 --> 00:44:42,556
+So, um,
+
+200
+00:44:54,835 --> 00:45:12,595
+This is important because a lot of the random variables are some of other random variables and central limit theorem gives us an approximation.
+
+201
+00:45:18,235 --> 00:45:22,555
+It says that we can just use
+
+202
+00:45:23,347 --> 00:45:34,315
+normal distribution, standard normal distribution cumulative values to calculate that sums cumulative probabilities.
+
+203
+00:45:37,556 --> 00:45:39,936
+Let's give an example.
+
+204
+00:45:55,764 --> 00:45:59,083
+So, let's say we have a bank teller.
+
+205
+00:46:05,460 --> 00:46:13,300
+And that bank teller serves customers one by one.
+
+206
+00:46:16,179 --> 00:46:19,980
+And service time.
+
+207
+00:46:26,324 --> 00:46:28,203
+XI for
+
+208
+00:46:28,203 --> 00:46:30,564
+Customer
+
+209
+00:46:36,211 --> 00:46:39,851
+has me...
+
+210
+00:46:44,244 --> 00:46:46,244
+2 minutes
+
+211
+00:46:48,244 --> 00:46:49,244
+and
+
+212
+00:46:51,244 --> 00:46:52,244
+variyans
+
+213
+00:46:58,260 --> 00:47:02,260
+1 minit square.
+
+214
+00:47:05,260 --> 00:47:08,260
+Now, let's assume that
+
+215
+00:47:11,260 --> 00:47:13,260
+Xi's are
+
+216
+00:47:14,260 --> 00:47:15,260
+independent.
+
+217
+00:47:19,092 --> 00:47:21,452
+ve identiklalık,
+
+218
+00:47:25,300 --> 00:47:26,300
+Okay.
+
+219
+00:47:28,300 --> 00:47:30,300
+Now, let's
+
+220
+00:47:32,300 --> 00:47:33,300
+y be
+
+221
+00:47:34,300 --> 00:47:35,300
+the
+
+222
+00:47:36,300 --> 00:47:37,300
+total time
+
+223
+00:47:45,108 --> 00:47:46,956
+Bank tellers
+
+224
+00:47:58,963 --> 00:47:59,963
+Bank Teller
+
+225
+00:47:59,963 --> 00:48:02,963
+Serves
+
+226
+00:48:06,543 --> 00:48:10,543
+Bank Teller
+
+227
+00:48:06,195 --> 00:48:09,163
+Total time the bank teller spends.
+
+228
+00:48:16,739 --> 00:48:21,036
+Bank Teller
+
+229
+00:48:15,860 --> 00:48:16,659
+Serving
+
+230
+00:48:16,659 --> 00:48:18,619
+50
+
+231
+00:48:18,619 --> 00:48:20,659
+Customers
+
+232
+00:48:25,684 --> 00:48:39,524
+So, what is the probability of Y'e between 90 minutes and 110 minutes?
+
+233
+00:48:44,811 --> 00:48:45,811
+Bank Teller
+
+234
+00:48:44,403 --> 00:48:46,403
+So in this example,
+
+235
+00:48:50,099 --> 00:48:51,400
+What do we have?
+
+236
+00:48:52,139 --> 00:48:53,059
+We have
+
+237
+00:48:53,059 --> 00:48:55,719
+serving times.
+
+238
+00:48:56,079 --> 00:48:57,759
+So bank teller, services,
+
+239
+00:48:58,759 --> 00:49:00,420
+customers.
+
+240
+00:49:00,920 --> 00:49:00,980
+And
+
+241
+00:49:00,980 --> 00:49:04,639
+we are interested in
+
+242
+00:49:04,639 --> 00:49:09,559
+total time
+
+243
+00:49:09,559 --> 00:49:13,179
+for serving
+
+244
+00:49:13,179 --> 00:49:14,539
+50 customers.
+
+245
+00:49:15,339 --> 00:49:16,759
+Now what does that mean?
+
+246
+00:49:21,608 --> 00:49:22,608
+Bu, ne?
+
+247
+00:49:21,172 --> 00:49:44,931
+y is sum of x1, x2, up to how many? 50. 50 customers. And each of these x's show the time spent for serving that customer. So,
+
+248
+00:49:45,007 --> 00:49:53,007
+ve ilk kastım, ve ikinci kastım, ve ikinci kastım, ve ikinci kastım, ve ikinci kastım.
+
+249
+00:49:53,007 --> 00:49:55,007
+Ve if you sum them,
+
+250
+00:49:57,007 --> 00:49:59,007
+you get the total, total,
+
+251
+00:50:00,007 --> 00:50:02,007
+time spent for 50 kastım.
+
+252
+00:50:02,007 --> 00:50:05,007
+And each of these are random variables,
+
+253
+00:50:05,007 --> 00:50:07,007
+so we didn't observe them yet.
+
+254
+00:50:08,007 --> 00:50:09,771
+Tomorrow,
+
+255
+00:50:09,907 --> 00:50:13,947
+bu tarzı terörler için bu tarzı terörler için
+
+256
+00:50:13,947 --> 00:50:15,467
+bu tarzı terörler için
+
+257
+00:50:15,467 --> 00:50:21,667
+ama bu tarzı terörler için
+
+258
+00:50:21,667 --> 00:50:27,211
+bu tarzı terörler için
+
+259
+00:50:28,628 --> 00:50:38,628
+A customer is served two minutes and varyans of that serving time is one minute square.
+
+260
+00:50:40,628 --> 00:50:41,628
+Now,
+
+261
+00:50:44,628 --> 00:50:45,628
+since we have
+
+262
+00:50:48,783 --> 00:50:56,623
+bu tarzı terörler için
+
+263
+00:50:47,507 --> 00:50:57,987
+quite a bit number of random variables and they are summed up to get y we can use central limit theorem so
+
+264
+00:51:01,268 --> 00:51:07,268
+we can use central limit
+
+265
+00:51:18,164 --> 00:51:23,724
+It says that if we subtract
+
+266
+00:51:28,148 --> 00:51:36,828
+n times mean, n divided by square root of n times sigma.
+
+267
+00:51:39,548 --> 00:51:45,788
+This will be distributed by standard normal distribution.
+
+268
+00:51:50,963 --> 00:51:55,963
+Aproximately, okay. Remember, this is standard normal distribution.
+
+269
+00:52:06,579 --> 00:52:12,139
+ve normal dağılım,
+
+270
+00:52:16,244 --> 00:52:34,244
+So, to get the question, to calculate what we are asked for, we write it in this term, in this style. So, we write it like this.
+
+271
+00:52:43,603 --> 00:52:54,123
+Probabiliteli, let's start with this probability of y being between 90 minutes and 110 minutes.
+
+272
+00:52:54,963 --> 00:53:06,023
+Now, I will subtract nm and divide square root of n and sigma, everything in this inequality.
+
+273
+00:53:06,863 --> 00:53:10,243
+So, that will be equal to probability of
+
+274
+00:53:10,963 --> 00:53:34,003
+90, minus, I have 50 customers and it's 50, and mu is two minutes, divided by square root of sigma 50, and sigma was one, sigma square was one actually.
+
+275
+00:53:35,476 --> 00:53:41,476
+Varyansı 1, sigma square is 1, then sigma is 1 itself too.
+
+276
+00:53:41,476 --> 00:53:44,476
+So times 1.
+
+277
+00:53:49,268 --> 00:54:15,820
+Bu da bu
+
+278
+00:54:16,788 --> 00:54:21,408
+So, let's use that, z.
+
+279
+00:54:24,408 --> 00:54:26,387
+And n is 50.
+
+280
+00:54:26,748 --> 00:54:30,847
+So, zn means z50 here.
+
+281
+00:54:31,467 --> 00:54:35,108
+The sum of 50 elements, we call that z.
+
+282
+00:54:38,628 --> 00:54:40,708
+So, this is zn.
+
+283
+00:54:42,028 --> 00:54:43,467
+Z50, sorry.
+
+284
+00:54:46,900 --> 00:54:55,500
+Ve again, on this side, we will again do this normalization.
+
+285
+00:54:57,019 --> 00:54:59,500
+So we will say that...
+
+286
+00:55:08,148 --> 00:55:21,347
+110 divided by 50 times 2, sorry, sub, we subtract 50 times 2, and divide by square of 50 times 1.
+
+287
+00:55:21,347 --> 00:55:22,468
+Okay.
+
+288
+00:55:25,427 --> 00:55:32,068
+And now, if we do the calculation, we will get
+
+289
+00:55:33,076 --> 00:55:36,715
+Probabilisiydi de minus square root of 2.
+
+290
+00:55:37,996 --> 00:55:42,556
+Z50, smaller than Z50.
+
+291
+00:55:43,215 --> 00:55:46,476
+And that being smaller than square root of 2.
+
+292
+00:55:48,476 --> 00:55:49,036
+And.
+
+293
+00:55:56,628 --> 00:56:12,387
+This is approximately, since we know that Z50 is approximately normal, we can say that this value is,
+
+294
+00:56:15,603 --> 00:56:25,603
+Fee, square root of 2, minus Fee, minus square root of 2.
+
+295
+00:56:27,603 --> 00:56:33,603
+And that is 0.64 something.
+
+296
+00:56:37,684 --> 00:56:38,684
+So,
+
+297
+00:56:44,916 --> 00:57:06,916
+The mathematical definition of sensor limit theorem is that, and there is a different interpretation, let me write that, alternative interpretation.
+
+298
+00:57:23,635 --> 00:57:36,836
+Let's say again, y is sum of x1, x2, up to xn, and xi are iid.
+
+299
+00:57:42,996 --> 00:57:44,996
+We can assume that
+
+300
+00:57:50,228 --> 00:58:08,228
+Bu,
+
+301
+00:58:13,396 --> 00:58:22,276
+ve mean is n times mu, variyans is n times sigma square.
+
+302
+00:58:32,083 --> 00:58:40,460
+Bu, bu
+
+303
+00:58:53,172 --> 00:58:55,467
+ve
+
+304
+00:58:58,867 --> 00:59:02,867
+m
+
+305
+00:59:02,867 --> 00:59:04,788
+times m
+
+306
+00:59:04,788 --> 00:59:06,487
+as the mean of y and
+
+307
+00:59:06,487 --> 00:59:07,967
+mu here is
+
+308
+00:59:15,764 --> 00:59:20,923
+Mu'n var, bu'n var, bu'n var, bu'n var.
+
+309
+00:59:30,228 --> 00:59:36,348
+ve sigma-square variyansı, x i.
+
+310
+00:59:39,348 --> 00:59:45,948
+Let's look at the above example with this alternative interpretation.
+
+311
+00:59:57,364 --> 00:59:58,963
+Example, again.
+
+312
+01:00:03,155 --> 01:00:27,815
+So, we say that y is distributed by normal distribution, and we have 50 as n, mu is 2 minutes, and again n is 50, varians is 1, right?
+
+313
+01:00:32,532 --> 01:00:37,532
+And now since y is approximately normal distribution,
+
+314
+01:00:40,532 --> 01:00:46,532
+the values we are asked for 90…
+
+315
+01:00:49,972 --> 01:00:57,572
+ve 100 minuten, ve mean is...
+
+316
+01:01:07,668 --> 01:01:11,387
+So, the mean is 2 x 50, 100.
+
+317
+01:01:16,115 --> 01:01:35,516
+So, y is, we will assume that y is approximately distributed this way, and we want to find this area, right?
+
+318
+01:01:37,516 --> 01:01:41,387
+Because area will give the probability of...
+
+319
+01:01:42,900 --> 01:01:50,900
+Y'e bu 90 ve 110.
+
+320
+01:01:55,380 --> 01:02:18,380
+Remember that when we work with random, when we work with normal distribution, we convert the problem into standard normal distribution by subtracting mean and...
+
+321
+01:02:26,452 --> 01:02:28,452
+Dividiyle by varyans.
+
+322
+01:02:31,372 --> 01:02:44,268
+So, from 90, we subtract mean, which is 100, and then we divide by standard deviation, which is square root of 50.
+
+323
+01:02:53,876 --> 01:03:08,636
+ve, in this case, mean becomes zero, ve, and the second part becomes 110-100, divided by again, square root of 50.
+
+324
+01:03:08,636 --> 01:03:20,492
+Ve, notice that we came to the same point now, probability of y being 9, 10, 100, and 10.
+
+325
+01:03:21,076 --> 01:03:35,076
+is equal to probability of z being between this value which is minus square root of 2 and this value square root of 2.
+
+326
+01:03:44,211 --> 01:03:51,211
+We can again find this by cumulative distributions.
+
+327
+01:03:58,132 --> 01:04:02,132
+ve aynı zamanda, aynı zamanda.
+
+328
+01:04:02,132 --> 01:04:08,132
+So, alternative interpretation, to me, is much easier.
+
+329
+01:04:08,132 --> 01:04:12,132
+Why don't they just use this then?
+
+330
+01:04:12,132 --> 01:04:15,132
+Why don't they just say that?
+
+331
+01:04:15,132 --> 01:04:20,132
+I think there are...
+
+332
+01:04:32,532 --> 01:04:34,532
+Bir soru var.
+
+333
+01:04:34,532 --> 01:04:39,532
+Bir soru var, normal distribution is not discrete.
+
+334
+01:04:39,532 --> 01:04:47,532
+So, some of these may not be discrete.
+
+335
+01:04:47,532 --> 01:04:51,532
+So, we cannot say it is normal distribution
+
+336
+01:04:51,532 --> 01:04:54,532
+because normal distribution is continuous.
+
+337
+01:04:57,715 --> 01:05:01,715
+ve n is large, ve n is infinite,
+
+338
+01:05:03,955 --> 01:05:07,715
+you have mean of infinity,
+
+339
+01:05:07,715 --> 01:05:09,715
+so theoretically it's problematic,
+
+340
+01:05:09,715 --> 01:05:12,715
+but for large fixed n,
+
+341
+01:05:12,715 --> 01:05:16,715
+you can just think like that,
+
+342
+01:05:16,715 --> 01:05:20,715
+and this makes thinking about sensory limit theorem
+
+343
+01:05:20,715 --> 01:05:22,715
+much more easy for me.
+
+344
+01:05:24,916 --> 01:05:30,195
+But the real rigorous mathematical definitions here.
+
+345
+01:05:32,276 --> 01:05:34,675
+So you need to learn this, sure.
+
+346
+01:05:39,195 --> 01:05:41,916
+Let's give a 10 minutes break and
+
+347
+01:05:41,916 --> 01:05:47,396
+if you don't have any question
+
+348
+01:05:56,692 --> 01:06:01,692
+We can stop here for 10 minutes.
+
+349
+01:06:06,036 --> 01:06:09,115
+Okay, let's give a 10 minutes break.
+
+350
+01:16:23,828 --> 01:16:24,828
+Hello again.
+
+351
+01:16:24,828 --> 01:16:27,828
+Let's start.
+
+352
+01:16:27,828 --> 01:16:44,828
+So we just learned central limit theorem and we learned that if we have enough random variables,
+
+353
+01:16:52,243 --> 01:16:56,243
+Can be assumed to be normal?
+
+354
+01:16:58,243 --> 01:17:01,243
+One question is what is enough?
+
+355
+01:17:01,243 --> 01:17:07,243
+Or when can we use central limit theorem?
+
+356
+01:17:16,148 --> 01:17:17,148
+Ben 10.
+
+357
+01:17:19,148 --> 01:17:22,988
+We use central limit theorem or.
+
+358
+01:17:30,452 --> 01:17:36,692
+ve ne kadar büyük bir n bu.
+
+359
+01:17:52,500 --> 01:17:54,500
+İlk olarak,
+
+360
+01:18:00,180 --> 01:18:07,380
+is larger than or 30. Normal approximation
+
+361
+01:18:18,420 --> 01:18:20,011
+çok iyi.
+
+362
+01:18:23,220 --> 01:18:47,788
+So, if you have n or more variables and you are summing the up, you should, you can use central limit theorem to do a normal approximation. You can do that. Another thing is, if,
+
+363
+01:18:48,627 --> 01:18:57,507
+The x i that we are summing up are distributed by normal distribution.
+
+364
+01:19:00,067 --> 01:19:14,147
+If they themselves are normal, then the sum y equals to, let me just write in English, the sum
+
+365
+01:19:18,292 --> 01:19:22,292
+is always normal.
+
+366
+01:19:24,292 --> 01:19:31,292
+So, if Xi is normal, even if n is smaller like 3, 2, 4,
+
+367
+01:19:32,292 --> 01:19:40,292
+you can still use central limit theorem because the sum is normal itself, okay?
+
+368
+01:19:40,292 --> 01:19:45,292
+The sum of normals is normal itself.
+
+369
+01:19:50,452 --> 01:20:07,916
+ve
+
+370
+01:20:23,764 --> 01:20:28,804
+Normal approximation
+
+371
+01:20:32,724 --> 01:20:50,724
+For then, let's say, when we need to calculate, let's say, binominal distribution, sorry, when we need to calculate binomial distribution.
+
+372
+01:20:53,963 --> 01:20:56,923
+Let me write here, when we calculate,
+
+373
+01:21:00,051 --> 01:21:01,051
+Bayes, amir.
+
+374
+01:21:05,908 --> 01:21:08,847
+ve bilimle distribution
+
+375
+01:21:22,484 --> 01:21:26,484
+Orada, let's say, Bernoulli Rönden veri vos.
+
+376
+01:21:35,060 --> 01:21:45,540
+ve ne
+
+377
+01:21:45,540 --> 01:21:46,540
+binomiyal
+
+378
+01:21:46,540 --> 01:21:48,540
+distribution
+
+379
+01:21:48,540 --> 01:21:51,540
+is a sum
+
+380
+01:21:51,540 --> 01:21:52,540
+of
+
+381
+01:21:52,540 --> 01:21:54,740
+geometric
+
+382
+01:21:54,740 --> 01:21:56,492
+random variables
+
+383
+01:22:02,739 --> 01:22:06,500
+ve also saw that gamma-distilviyon,
+
+384
+01:22:09,971 --> 01:22:16,692
+is a sum of exponential distribution, exponential random variables, let's say.
+
+385
+01:22:22,228 --> 01:22:37,067
+So, in all of these cases, if you need to calculate a binomial distribution, a negative binomial distribution, or a gamma distribution, you can just use normal distribution.
+
+386
+01:22:39,587 --> 01:22:44,467
+You can use central limit theorem and do a normal approximation.
+
+387
+01:22:50,996 --> 01:22:56,796
+Bir şey, bir şeyin de çok zor olmalı var.
+
+388
+01:22:56,796 --> 01:23:00,971
+Bu bir şey, bir şey called continued correction.
+
+389
+01:23:09,811 --> 01:23:11,811
+ve ne continuu teoreksiyon,
+
+390
+01:23:11,811 --> 01:23:16,611
+ve
+
+391
+01:23:19,011 --> 01:23:20,011
+proximi
+
+392
+01:23:25,747 --> 01:23:35,587
+Discrete distribution using a continuous distribution.
+
+393
+01:23:39,636 --> 01:23:43,636
+ve ve central limit teorema,
+
+394
+01:23:44,636 --> 01:23:46,636
+ve kullanıyoruz,
+
+395
+01:23:46,636 --> 01:23:48,636
+a continuos distribution,
+
+396
+01:23:48,636 --> 01:23:49,636
+which is normal.
+
+397
+01:24:00,916 --> 01:24:03,916
+Normal distribution is a continuous distribution.
+
+398
+01:24:04,916 --> 01:24:09,916
+So, when we approximate a discrete distribution with normal distribution,
+
+399
+01:24:09,916 --> 01:24:11,916
+we need to do a continuity correction.
+
+400
+01:24:11,916 --> 01:24:13,916
+And what does that mean?
+
+401
+01:24:13,916 --> 01:24:15,916
+Well, let's look at an example.
+
+402
+01:24:15,916 --> 01:24:19,916
+Let's say we have a binomial distribution.
+
+403
+01:24:21,916 --> 01:24:23,916
+In binomial distribution,
+
+404
+01:24:29,876 --> 01:24:38,155
+Let's draw its probability mass function. Binomial distribution.
+
+405
+01:24:41,556 --> 01:24:47,155
+Now, let's say we have a point mass at
+
+406
+01:24:52,115 --> 01:24:56,115
+ve sayfada bir nokta, MES'e 6.
+
+407
+01:24:59,115 --> 01:25:02,115
+Now, let's say
+
+408
+01:25:04,115 --> 01:25:06,115
+probability of 5 is
+
+409
+01:25:08,115 --> 01:25:09,115
+1 over 6
+
+410
+01:25:12,115 --> 01:25:15,115
+and probability of 6 is
+
+411
+01:25:15,115 --> 01:25:18,115
+1 over 5, let's say
+
+412
+01:25:21,268 --> 01:25:25,307
+Şimdi,
+
+413
+01:25:25,307 --> 01:25:28,268
+bu şekilde
+
+414
+01:25:28,268 --> 01:25:33,627
+bu binomial
+
+415
+01:25:33,627 --> 01:25:34,268
+distribution
+
+416
+01:25:34,268 --> 01:25:36,268
+normal
+
+417
+01:25:36,268 --> 01:25:38,268
+distribution.
+
+418
+01:25:42,739 --> 01:25:47,979
+Now, let's think about corresponding values, 5 and 6.
+
+419
+01:25:56,819 --> 01:25:58,819
+Bu ne?
+
+420
+01:25:58,819 --> 01:26:03,819
+Probabilisinizin 5'e?
+
+421
+01:26:07,859 --> 01:26:08,859
+1 over 6.
+
+422
+01:26:10,500 --> 01:26:15,539
+Now, what is the probability of 5 using normal distribution?
+
+423
+01:26:16,739 --> 01:26:20,619
+Well, normal distribution is a continuous distribution.
+
+424
+01:26:20,619 --> 01:26:25,199
+So, the probability of a single point is 0.
+
+425
+01:26:26,439 --> 01:26:34,479
+And obviously, these two are not equal and they are very different.
+
+426
+01:26:38,804 --> 01:27:06,123
+So, what we need to do is, we can think about 5, not as this point, but we can think of 5 as the range from 4.5 to 5.5, right?
+
+427
+01:27:09,332 --> 01:27:11,180
+ve
+
+428
+01:27:16,340 --> 01:27:35,500
+Now, this is much better, right? We can say that, okay, let's say binomial distribution, we use the random variable x and for normal distribution, let's say we use the random variable y.
+
+429
+01:27:40,851 --> 01:27:47,851
+Ve bu
+
+430
+01:27:47,851 --> 01:28:06,851
+bu
+
+431
+01:28:08,435 --> 01:28:10,435
+ve 5.5.
+
+432
+01:28:10,435 --> 01:28:14,435
+Okay, so this is called continuity correction.
+
+433
+01:28:14,435 --> 01:28:20,435
+Instead of 5, you will use 4.5 and 5.5.
+
+434
+01:28:23,435 --> 01:28:35,435
+And to continue the example, let's say, probability of x being between 5 and 6, let's say.
+
+435
+01:28:50,739 --> 01:28:54,300
+Bu normalde de normalde de
+
+436
+01:28:54,300 --> 01:29:14,475
+de
+
+437
+01:29:20,051 --> 01:29:24,652
+Instead of 5, let's use 4.5.
+
+438
+01:29:27,611 --> 01:29:31,211
+And what does that mean? We are subtracting 1 over 2.
+
+439
+01:29:34,771 --> 01:29:59,971
+Sorry for that. So from 5, we will subtract 1 over 2. And on this side, now we have 6, but we want to use 6.5, right? So 6 is this whole area in this case.
+
+440
+01:30:00,000 --> 01:30:03,159
+So, when we say, why is between?
+
+441
+01:30:08,692 --> 01:30:10,692
+6, or equal to 6.
+
+442
+01:30:28,756 --> 01:30:51,556
+ve ne yazı, instead of smaller here, smaller equal to, so x being smaller than equal to 5, so 5 smaller than equal to x, smaller than equal to 6. On this side, let's use smaller than equal to 2, because
+
+443
+01:30:57,108 --> 01:31:12,268
+You need to use this idea and whether there is a similar than equal to or just smaller changes what you write here, right? So you need to use this graphical idea.
+
+444
+01:31:15,007 --> 01:31:18,148
+Here we will use six plus.
+
+445
+01:31:24,275 --> 01:31:26,091
+6 plus 1 over 2.
+
+446
+01:31:32,180 --> 01:31:46,579
+And really depends, so the whole idea is in normal distribution approximation instead of single points, use this range around the point, right?
+
+447
+01:31:47,960 --> 01:31:55,340
+So for example, probability of x being less than 6, let's say.
+
+448
+01:31:56,480 --> 01:31:59,760
+How will we write that? Probability of?
+
+449
+01:32:00,440 --> 01:32:05,440
+de
+
+450
+01:32:00,115 --> 01:32:20,395
+Y'y
+
+451
+01:32:23,507 --> 01:32:26,307
+So, this is continuity correction.
+
+452
+01:32:28,188 --> 01:32:41,708
+And when do we use continuity correction? We use it when we approximate a discrete distribution with a continuous distribution.
+
+453
+01:32:43,188 --> 01:32:50,827
+So, for these, should we use continuity correction?
+
+454
+01:32:52,851 --> 01:33:04,551
+For example, when we approximate binomial distribution, should we use continuity correction? Yes.
+
+455
+01:33:12,659 --> 01:33:15,539
+Çünkü binomile is a discrete distribution.
+
+456
+01:33:15,539 --> 01:33:21,699
+Should we use continuity correction in negative binomile distribution approximation?
+
+457
+01:33:21,699 --> 01:33:22,699
+Yes.
+
+458
+01:33:27,315 --> 01:33:40,595
+Çünkü negatif binomio isimli. Ve en gama distribution, bu konuları kullanmalı, çünkü gama itself isimli.
+
+459
+01:33:41,876 --> 01:33:46,195
+Ve en gama distribution ile diğer konuları distribution, bu konuları kullanmalı,
+
+460
+01:33:54,996 --> 01:33:58,996
+use continuity correction.
+
+461
+01:34:04,659 --> 01:34:06,979
+I hope this part is clear.
+
+462
+01:34:10,515 --> 01:34:13,315
+Do you have any question on this part?
+
+463
+01:34:18,260 --> 01:34:24,760
+Ok, let's start statistical inference.
+
+464
+01:34:28,340 --> 01:34:30,315
+Statistikal Inference
+
+465
+01:34:33,363 --> 01:34:35,863
+I will open a new notebook for that.
+
+466
+01:34:44,115 --> 01:34:45,115
+Tadayı do.
+
+467
+01:35:23,028 --> 01:35:25,028
+Medya, San Pedro, Sina Dönes.
+
+468
+01:35:39,667 --> 01:35:43,563
+So, basically now we are working on statistics.
+
+469
+01:35:54,003 --> 01:36:00,503
+Statistiklerin inferences, basically, it's just some methods.
+
+470
+01:36:03,828 --> 01:36:04,828
+to draw
+
+471
+01:36:05,828 --> 01:36:06,828
+conclusions
+
+472
+01:36:10,931 --> 01:36:19,931
+ve random, random variable,
+
+473
+01:36:19,931 --> 01:36:23,931
+data.
+
+474
+01:36:23,931 --> 01:36:26,931
+So, what does that mean?
+
+475
+01:36:26,931 --> 01:36:33,931
+There is this data, and every time you collect the data, you get different values.
+
+476
+01:36:33,931 --> 01:36:37,931
+So, the data values are random.
+
+477
+01:36:39,155 --> 01:37:06,091
+So, you want to draw some conclusions from that data. And you might want to know the mean of the data, the variance of the data. And you might want to know some parameters.
+
+478
+01:37:06,452 --> 01:37:09,452
+or the distribution that data come from
+
+479
+01:37:11,452 --> 01:37:14,315
+This is called statistical inference
+
+480
+01:37:17,524 --> 01:37:42,124
+There is a template for this. We will call it statistical inference problem. So in statistical inference problem, there is an unknown quantity.
+
+481
+01:37:46,644 --> 01:37:53,644
+ve
+
+482
+01:37:59,923 --> 01:38:04,923
+You want to estimate it. And what you do is you get some data.
+
+483
+01:38:16,819 --> 01:38:43,195
+ve
+
+484
+01:39:04,180 --> 01:39:07,180
+Bir de, frequentistik ve,
+
+485
+01:39:14,131 --> 01:39:15,131
+Klasikl.
+
+486
+01:39:20,180 --> 01:39:21,180
+Inference,
+
+487
+01:39:24,059 --> 01:39:25,780
+the other is Bayesian.
+
+488
+01:39:34,260 --> 01:39:46,739
+Bayesian inference, I think, is developed a little later. Frequentist methods were developed a little earlier, so they are used classical.
+
+489
+01:39:50,260 --> 01:40:03,659
+Bu, bu
+
+490
+01:40:13,876 --> 01:40:15,876
+infrequentist inference.
+
+491
+01:40:19,396 --> 01:40:20,195
+So,
+
+492
+01:40:21,396 --> 01:40:23,556
+we have an unknown
+
+493
+01:40:24,836 --> 01:40:25,876
+quantity.
+
+494
+01:40:29,108 --> 01:40:33,108
+ve say that quantity is theta.
+
+495
+01:40:34,108 --> 01:40:37,108
+Okay, let it be theta.
+
+496
+01:40:37,108 --> 01:40:39,108
+We don't know what it is.
+
+497
+01:40:42,108 --> 01:40:45,108
+But theta is not random.
+
+498
+01:40:45,108 --> 01:40:47,108
+Theta is fixed.
+
+499
+01:40:52,307 --> 01:40:54,252
+Meaning it is not wrong.
+
+500
+01:41:00,676 --> 01:41:02,676
+Ama biz de bilgi yapıyoruz.
+
+501
+01:41:02,676 --> 01:41:06,676
+O yüzden
+
+502
+01:41:06,676 --> 01:41:09,676
+bu
+
+503
+01:41:09,676 --> 01:41:11,676
+ve
+
+504
+01:41:11,676 --> 01:41:13,676
+teta
+
+505
+01:41:13,676 --> 01:41:18,676
+ve
+
+506
+01:41:18,676 --> 01:41:20,676
+et
+
+507
+01:41:20,676 --> 01:41:22,676
+ve
+
+508
+01:41:22,676 --> 01:41:24,748
+et
+
+509
+01:41:26,707 --> 01:41:51,707
+of theta will be theta hat. I will read this as hat. So theta hat is our estimate. And now our estimate will come from data, and data is random.
+
+510
+01:41:52,372 --> 01:41:58,372
+O zaman teta hata bir anlayan.
+
+511
+01:42:11,604 --> 01:42:15,283
+since it depends.
+
+512
+01:42:24,500 --> 01:42:28,100
+So, this is frequentist interface, influence.
+
+513
+01:42:31,315 --> 01:42:33,296
+Bayes'in
+
+514
+01:42:43,091 --> 01:42:51,500
+Bu, Bayes'in
+
+515
+01:42:55,091 --> 01:42:57,091
+The unknown quantity
+
+516
+01:43:05,427 --> 01:43:09,747
+Let's say theta is a random variable.
+
+517
+01:43:14,484 --> 01:43:21,684
+Ve in frequentist inference, unknown quantity theta is not random.
+
+518
+01:43:21,684 --> 01:43:25,043
+It is some fixed value, but we don't know it.
+
+519
+01:43:25,043 --> 01:43:30,324
+Bayezian inference assumes that theta is some random variable.
+
+520
+01:43:30,324 --> 01:43:31,924
+Theta itself can change.
+
+521
+01:43:35,204 --> 01:43:41,043
+And we have some initial guess.
+
+522
+01:43:50,484 --> 01:43:56,172
+ve
+
+523
+01:44:01,844 --> 01:44:02,844
+Theta.
+
+524
+01:44:05,203 --> 01:44:13,783
+So it might be normal distribution, it might be exponential, Poisson, whatever.
+
+525
+01:44:13,783 --> 01:44:16,783
+We have some initial guess about the distribution of theta.
+
+526
+01:44:17,984 --> 01:44:27,503
+But the parameters, so if it is a normal distribution, we have some initial guess about the parameters of the distribution.
+
+527
+01:44:27,503 --> 01:44:29,503
+So it's mean, variance.
+
+528
+01:44:29,587 --> 01:44:31,587
+Lambda, whatever.
+
+529
+01:44:32,587 --> 01:44:34,587
+What we do is, we update
+
+530
+01:44:39,507 --> 01:44:42,507
+Dissibisyonu Theta
+
+531
+01:44:49,171 --> 01:44:53,171
+using Bayes rule.
+
+532
+01:45:02,387 --> 01:45:03,768
+Based on the data.
+
+533
+01:45:13,555 --> 01:45:14,507
+No.
+
+534
+01:45:21,460 --> 01:45:48,220
+Conventional, in the introduction, introductory probabilitem statistics course, frequentist inference is taught, Bayesian inference is not taught, and we will do like that, we will discuss frequentist inference and
+
+535
+01:45:48,979 --> 01:45:51,979
+We will not have enough soon.
+
+536
+01:46:58,707 --> 01:47:22,307
+Okay, sorry for that. So, we were talking about, we were saying that probably we will not have enough time to do Bayesian inference, but there is a section, there is a chapter on it on Barons' ve Pişonik's books, so you can take a look at them if you want.
+
+537
+01:48:07,604 --> 01:48:18,244
+As we said, we will have an unknown quantity, theta, which is fixed.
+
+538
+01:48:21,908 --> 01:48:28,228
+We will try to estimate theta with theta hat.
+
+539
+01:48:30,468 --> 01:48:32,948
+And theta is a random variable.
+
+540
+01:48:34,948 --> 01:48:36,667
+So, let's see.
+
+541
+01:48:39,068 --> 01:48:42,068
+We will need to wait some 10 seconds somehow.
+
+542
+01:48:43,427 --> 01:48:47,148
+I have this screen savers.
+
+543
+01:48:50,131 --> 01:48:53,731
+I have this program, I have forgotten to close it. Okay.
+
+544
+01:48:56,291 --> 01:49:03,731
+So, in the frequentist inference, first of all, we need to collect data.
+
+545
+01:49:06,451 --> 01:49:12,691
+And when we collect data, we need to use simple random sampling.
+
+546
+01:49:16,884 --> 01:49:23,884
+ve
+
+547
+01:49:29,587 --> 01:49:34,868
+Simple, random, sentence.
+
+548
+01:49:39,060 --> 01:49:42,060
+What is a simple random sampling?
+
+549
+01:50:05,844 --> 01:50:09,844
+So, we say that a collection of random variables...
+
+550
+01:50:20,083 --> 01:50:21,836
+Random Ables
+
+551
+01:50:26,739 --> 01:50:37,036
+x1, x2, up to xn is a random sample.
+
+552
+01:50:45,619 --> 01:50:47,159
+of size N
+
+553
+01:50:52,148 --> 01:50:53,388
+İfteyer
+
+554
+01:51:00,404 --> 01:51:03,324
+İ, İ, D.
+
+555
+01:51:03,324 --> 01:51:04,684
+That's it.
+
+556
+01:51:04,684 --> 01:51:11,484
+So, they have to be independent and identically distributed.
+
+557
+01:51:11,484 --> 01:51:17,043
+If your random sample is independent and identically distributed,
+
+558
+01:51:17,043 --> 01:51:22,364
+if your sample is independent and identically distributed,
+
+559
+01:51:22,364 --> 01:51:25,844
+then it is a simple random sample.
+
+560
+01:51:32,916 --> 01:51:39,916
+ve
+
+561
+01:51:39,916 --> 01:51:59,916
+bu
+
+562
+01:51:59,380 --> 01:52:08,699
+So, be careful. The first thing you need to be sure is that simple random sampling was used to collect data.
+
+563
+01:52:21,363 --> 01:52:28,804
+Çünkü, we are using simple random sampling, we have some assumptions.
+
+564
+01:52:33,971 --> 01:52:34,859
+So.
+
+565
+01:52:43,923 --> 01:52:53,923
+So, we use simple random sampling.
+
+566
+01:52:56,423 --> 01:53:04,923
+Hence, we can assume, so we assume,
+
+567
+01:53:22,240 --> 01:53:24,240
+bu
+
+568
+01:53:21,524 --> 01:53:28,524
+İndip edinçliğinde bu
+
+569
+01:53:28,524 --> 01:53:30,524
+birşeyi
+
+570
+01:53:30,524 --> 01:53:33,524
+ve
+
+571
+01:53:33,524 --> 01:53:48,524
+birşeyi
+
+572
+01:53:50,228 --> 01:54:00,708
+X here is the distribution, the underlying distribution that we got the data.
+
+573
+01:54:09,971 --> 01:54:24,779
+Bu mu.
+
+574
+01:54:28,467 --> 01:54:50,587
+And finally, variyans of these Xi are equal to variyans of the underlying distribution, because they are identically distributed. And let's call that sigma square.
+
+575
+01:54:51,956 --> 01:54:57,956
+That sigma square again should be less than infinity. It should not be infinite.
+
+576
+01:55:07,155 --> 01:55:13,155
+Pişonik's book, there is a section called Order Statistics.
+
+577
+01:55:20,819 --> 01:55:27,699
+I am skipping that part due to time limit. You should read yourself.
+
+578
+01:55:33,043 --> 01:55:37,283
+Now, we will do estimations, okay?
+
+579
+01:55:37,283 --> 01:55:37,783
+So,
+
+580
+01:55:42,963 --> 01:55:44,963
+We said that at the beginning,
+
+581
+01:55:51,283 --> 01:55:54,623
+We will estimate teta.
+
+582
+01:56:04,435 --> 01:56:05,579
+ve kullanımlar dağılık,
+
+583
+01:56:09,427 --> 01:56:18,787
+We will estimate theta. Now, there are two different kind of estimation methods. One is point estimation.
+
+584
+01:56:24,724 --> 01:56:26,724
+ve en point estimation,
+
+585
+01:56:29,724 --> 01:56:33,724
+we will find a single value, a point.
+
+586
+01:56:41,363 --> 01:56:43,363
+as or estimate.
+
+587
+01:56:46,163 --> 01:56:50,163
+The other type is interval estimation.
+
+588
+01:56:58,003 --> 01:57:22,796
+Bu, terwijl'e seviyeçten, we will say that our estimate, teta hat, should be somewhere in this range. We will say that teta hat is in this range.
+
+589
+01:57:26,260 --> 01:57:28,108
+ve some probability.
+
+590
+01:57:35,956 --> 01:57:42,515
+So, we will talk about the probability of X being in that range.
+
+591
+01:57:45,716 --> 01:57:48,916
+So, that will be interval estimation.
+
+592
+01:57:49,716 --> 01:57:54,355
+Today, we will start with point estimation.
+
+593
+01:58:08,404 --> 01:58:11,724
+So, we will just estimate a single value.
+
+594
+01:58:15,564 --> 01:58:20,804
+Let's give a 10 minutes break, and then when we come we will continue.
+
+595
+02:11:23,636 --> 02:11:24,636
+Hello again.
+
+596
+02:11:26,636 --> 02:11:27,636
+Let's continue.
+
+597
+02:11:29,636 --> 02:11:30,636
+So,
+
+598
+02:11:32,636 --> 02:11:38,636
+we started statistics and we were talking about estimation of
+
+599
+02:11:39,636 --> 02:11:41,636
+estimation of
+
+600
+02:11:42,636 --> 02:11:44,636
+parameter theta
+
+601
+02:11:45,636 --> 02:11:46,636
+and
+
+602
+02:11:47,667 --> 02:11:54,667
+Bu, iki tane de estimasyon, bir de point estimasyon, bir de interval estimasyon.
+
+603
+02:11:55,667 --> 02:11:56,667
+Ve...
+
+604
+02:12:02,804 --> 02:12:05,003
+Let me delete this teta hat.
+
+605
+02:12:07,003 --> 02:12:10,123
+So, teta is in range with some probability.
+
+606
+02:12:18,355 --> 02:12:20,795
+So, we will talk the probability of that.
+
+607
+02:12:23,755 --> 02:12:24,995
+We will say that
+
+608
+02:12:29,876 --> 02:12:36,996
+Anyways, the details of this part will be later in those chapters.
+
+609
+02:12:38,115 --> 02:12:41,155
+Let's start point estimation.
+
+610
+02:12:42,036 --> 02:12:44,275
+And point estimation,
+
+611
+02:12:45,636 --> 02:12:46,636
+now,
+
+612
+02:12:47,996 --> 02:12:50,475
+to resummarize,
+
+613
+02:12:51,235 --> 02:12:53,355
+we have an unknown parameter.
+
+614
+02:13:05,043 --> 02:13:11,283
+Usually we will call the parameter theta. As an example,
+
+615
+02:13:17,555 --> 02:13:33,115
+As an example, teta might be expected value of some random variable x.
+
+616
+02:13:36,692 --> 02:13:41,652
+So, let's say we want to find the expected value of some random variable x.
+
+617
+02:13:45,268 --> 02:13:49,427
+Now, Theta is fixed.
+
+618
+02:14:04,404 --> 02:14:06,404
+Now, we collect data.
+
+619
+02:14:14,292 --> 02:14:20,612
+ve eta, to estimate zeta.
+
+620
+02:14:30,963 --> 02:14:41,547
+ve, as we said, we will collect a simple, random, sample.
+
+621
+02:14:46,452 --> 02:14:52,452
+x1, x2, xn
+
+622
+02:14:54,852 --> 02:14:56,052
+such that
+
+623
+02:15:07,155 --> 02:15:26,435
+These x1, x2, xn, these si, these xi have the same, xi's have the same distribution.
+
+624
+02:15:33,235 --> 02:15:36,715
+as or random variable x.
+
+625
+02:15:37,555 --> 02:15:43,755
+So, the idea is we want to find a parameter of x, right?
+
+626
+02:15:45,275 --> 02:15:50,155
+Now, we will collect data such that
+
+627
+02:15:52,755 --> 02:15:58,555
+those xi's will have the same distribution as x.
+
+628
+02:15:58,555 --> 02:15:59,307
+So,
+
+629
+02:16:01,096 --> 02:16:14,096
+Bu mu.
+
+630
+02:16:00,404 --> 02:16:03,704
+Ve bu simple random sample,
+
+631
+02:16:03,704 --> 02:16:06,404
+they will be identically distributed.
+
+632
+02:16:09,404 --> 02:16:10,404
+So we have
+
+633
+02:16:13,404 --> 02:16:15,404
+e-data,
+
+634
+02:16:16,404 --> 02:16:20,404
+independent identically distributed data
+
+635
+02:16:21,404 --> 02:16:22,404
+and
+
+636
+02:16:23,404 --> 02:16:25,404
+distribution of Xi
+
+637
+02:16:30,707 --> 02:16:34,707
+ve aynı zamanda, x'e de, ok?
+
+638
+02:16:57,075 --> 02:17:10,075
+Theta hat is a function of the random sample.
+
+639
+02:17:15,443 --> 02:17:31,283
+So, let's say, some function h, or theta at hat is some function h of theta x, h of x1, x2, xn.
+
+640
+02:17:34,644 --> 02:18:00,083
+As an example, for example, we want to, let's say, our parameter is expected value of x. We want to find expected value of x. So what can be a good point estimator? Well,
+
+641
+02:18:00,628 --> 02:18:13,008
+A point estimator, a good point estimator, might be the sample mean.
+
+642
+02:18:14,008 --> 02:18:24,968
+And we just learned this sample mean is x1 plus x2 plus, we sum all these x axes.
+
+643
+02:18:27,156 --> 02:18:31,156
+ve ayrıca, nüveri ve sampli.
+
+644
+02:18:36,564 --> 02:18:37,924
+So, let's call it
+
+645
+02:18:41,940 --> 02:19:08,819
+Let's call this theta hat. Notice that for a given parameter, we can have more than one estimators. For example, instead of this sample mean, we could say, okay, I will just estimate the expected value of it.
+
+646
+02:19:08,912 --> 02:19:12,752
+x with the first value.
+
+647
+02:19:15,752 --> 02:19:16,072
+So,
+
+648
+02:19:19,891 --> 02:19:26,891
+ve vayda, ilk rastgele değişken, bu
+
+649
+02:19:45,012 --> 02:19:54,012
+ve teta et 2 might be x1 plus xn divided by 2, right?
+
+650
+02:19:54,012 --> 02:19:56,012
+Or,
+
+651
+02:19:56,012 --> 02:20:01,012
+we might have different point estimators.
+
+652
+02:20:01,012 --> 02:20:07,012
+Now, the question is, which of these estimators are better?
+
+653
+02:20:07,012 --> 02:20:09,012
+We should be,
+
+654
+02:20:10,004 --> 02:20:36,004
+Bu sorunlarımızın nefesine uygulaması?
+
+655
+02:20:36,628 --> 02:20:43,628
+Bu
+
+656
+02:20:51,763 --> 02:20:58,763
+Anbiased'in birbirine
+
+657
+02:20:58,763 --> 02:21:15,019
+birbirine
+
+658
+02:21:16,371 --> 02:21:44,092
+MSE or mean square, mean square error is better. Again, we will learn what MSE is. And good estimators are consistent. Again, we will learn what consistent means. So, when we learn these things, these three things,
+
+659
+02:21:45,904 --> 02:21:49,904
+birbirine
+
+660
+02:21:44,659 --> 02:21:50,700
+We will be able to tell whether an estimator is good or bad.
+
+661
+02:21:52,319 --> 02:21:59,299
+Or we will be able to say that this estimator is better than that estimator.
+
+662
+02:22:00,700 --> 02:22:04,780
+So first of all, this is unbiased.
+
+663
+02:22:05,559 --> 02:22:09,360
+So we will need to learn what biased is.
+
+664
+02:22:10,835 --> 02:22:16,835
+So, I will write Evaluating Estimators.
+
+665
+02:22:20,211 --> 02:22:25,211
+ve ilk önce BES'i öğrenme BES'i öğrenme.
+
+666
+02:22:52,435 --> 02:22:54,435
+Bayes
+
+667
+02:22:56,435 --> 02:23:01,435
+of an coin estimator theta hat is defined by
+
+668
+02:23:03,435 --> 02:23:04,435
+Bayes of
+
+669
+02:23:08,180 --> 02:23:25,060
+point estimator theta hat is defined by expected value of that estimator minus the actual population parameters.
+
+670
+02:23:28,691 --> 02:23:31,771
+So here, B is for BS.
+
+671
+02:23:35,316 --> 02:23:40,316
+Theta head is our point estimator.
+
+672
+02:23:43,572 --> 02:23:45,891
+E is expected value.
+
+673
+02:23:53,652 --> 02:24:03,551
+θ is the actual parameter we want to estimate.
+
+674
+02:24:12,115 --> 02:24:18,816
+Bu biraz biraz biraz
+
+675
+02:24:23,028 --> 02:24:25,228
+ve actually want to estimate it.
+
+676
+02:24:26,228 --> 02:24:33,828
+So how can we calculate Bs when it is dependent on theta?
+
+677
+02:24:33,828 --> 02:24:48,427
+Well, we will see that this expected value of the point estimator, if its expected value is theta,
+
+678
+02:24:49,012 --> 02:24:51,792
+Şimdi, teta minus teta, bu bir 0.
+
+679
+02:25:17,459 --> 02:25:21,000
+But before that, I'll just write it here.
+
+680
+02:25:21,840 --> 02:25:24,000
+Anbiasedness is just...
+
+681
+02:25:34,932 --> 02:25:59,332
+We say that an estimator theta hat is unbiased if the bias of that estimator is 0 for all possible values of theta.
+
+682
+02:26:16,659 --> 02:26:23,979
+So, theta hat is an ambiast, is an ambiast estimator.
+
+683
+02:26:32,244 --> 02:26:50,684
+Theta, if, the Bias is 0. So we want the Bias to be 0, in that case, our estimator will be unbiased.
+
+684
+02:26:50,684 --> 02:26:53,684
+Like here.
+
+685
+02:26:59,796 --> 02:27:07,796
+Let's try to find the areas of sample mean.
+
+686
+02:27:13,940 --> 02:27:19,244
+ve ve
+
+687
+02:27:29,172 --> 02:27:33,772
+We want to know whether sample mean is biased or unbiased.
+
+688
+02:27:35,772 --> 02:27:39,772
+So let's start with the definition of bias.
+
+689
+02:27:40,372 --> 02:27:43,772
+So bias of sample mean.
+
+690
+02:27:45,172 --> 02:27:46,572
+What will it be?
+
+691
+02:27:46,972 --> 02:27:56,572
+Expected value of sample mean minus the parameter sample mean actually estimates.
+
+692
+02:28:11,219 --> 02:28:14,219
+or x i.
+
+693
+02:28:14,219 --> 02:28:15,219
+so
+
+694
+02:28:18,219 --> 02:28:19,219
+sample mean
+
+695
+02:28:20,219 --> 02:28:21,219
+is
+
+696
+02:28:25,587 --> 02:28:27,087
+Estimator
+
+697
+02:28:30,995 --> 02:28:35,995
+teta equals the expected value of Xi.
+
+698
+02:28:35,995 --> 02:28:36,995
+OK.
+
+699
+02:28:37,995 --> 02:28:39,995
+So,
+
+700
+02:28:41,995 --> 02:28:43,995
+so we want to know whether
+
+701
+02:28:51,731 --> 02:28:53,731
+Bayes'i bu.
+
+702
+02:29:02,899 --> 02:29:09,380
+Teta is expected value of Xi.
+
+703
+02:29:17,747 --> 02:29:31,188
+Remember that we obtained, sorry, we calculated expected value of sample mean at the start of this lecture.
+
+704
+02:29:33,327 --> 02:29:41,007
+It was expected value of x.
+
+705
+02:29:42,995 --> 02:29:50,835
+ve now we have expected value of x minus expected value of x, so we have zero.
+
+706
+02:29:59,156 --> 02:30:06,956
+So, um, that means, uh, that's a nice thing to have.
+
+707
+02:30:10,316 --> 02:30:21,396
+Uh, sample mean is an unbiased, is an unbiased, uh, estimator.
+
+708
+02:30:25,652 --> 02:30:35,652
+So, sample means, it seems to be a good estimator for expected value of x or xi.
+
+709
+02:30:35,652 --> 02:30:38,652
+But is it?
+
+710
+02:30:38,652 --> 02:30:44,652
+Let's see another example.
+
+711
+02:30:44,652 --> 02:30:52,652
+Remember that we told that we can estimate
+
+712
+02:30:53,971 --> 02:31:15,211
+X
+
+713
+02:31:19,487 --> 02:31:20,487
+ve
+
+714
+02:31:18,227 --> 02:31:19,051
+say...
+
+715
+02:31:26,884 --> 02:31:28,884
+ve
+
+716
+02:31:24,948 --> 02:31:28,948
+Bu, teta'ı, teta'ı, x1.
+
+717
+02:31:31,348 --> 02:31:35,348
+So, let's call this teta'ı, from x1.
+
+718
+02:31:35,948 --> 02:31:42,948
+Is teta'ı, bir, bir, bir, bir, bir?
+
+719
+02:31:48,308 --> 02:31:51,608
+Ve again, let's look at the definition.
+
+720
+02:31:51,608 --> 02:31:59,708
+So, piers of theta at 1 is expected value of
+
+721
+02:32:05,236 --> 02:32:08,236
+teta hat 1 minus teta.
+
+722
+02:32:10,036 --> 02:32:25,236
+And teta is again expected value of n of x, x i's, for example, we can use x1, because x1, x2, these all have same expected value.
+
+723
+02:32:26,236 --> 02:32:32,236
+And we just used, we just said that
+
+724
+02:32:33,268 --> 02:32:35,268
+θ hat 1 is x1.
+
+725
+02:32:36,667 --> 02:32:43,268
+So, its expected value is expected value of x1, and this gives us 0.
+
+726
+02:32:47,156 --> 02:32:48,156
+As-di-bias.
+
+727
+02:32:49,236 --> 02:32:50,076
+So...
+
+728
+02:32:51,476 --> 02:32:52,316
+Hmm...
+
+729
+02:32:55,667 --> 02:33:03,268
+So, Theta-1 hat seems, is anbiased.
+
+730
+02:33:07,476 --> 02:33:12,460
+Bu soru
+
+731
+02:33:20,211 --> 02:33:29,011
+Theta 1 hat, or Theta hat, right? Or I'll just write sample mean here.
+
+732
+02:33:36,404 --> 02:33:47,404
+So, which is better? It seems like our intuition tells us that sample mean is better than just using the first element.
+
+733
+02:33:49,404 --> 02:33:51,308
+So...
+
+734
+02:33:57,716 --> 02:34:24,476
+But we are not able to tell you tell that using yes, so we will try to use mean squared error to distinguish or differentiate them. So mean squared error or MSE.
+
+735
+02:34:28,147 --> 02:34:29,147
+So,
+
+736
+02:34:38,036 --> 02:35:02,756
+MSE of a point estimator, teta hat, is defined as expected value of teta hat minus tetas squared.
+
+737
+02:35:06,899 --> 02:35:13,099
+So here, again, MSE is for min squared errors.
+
+738
+02:35:19,123 --> 02:35:21,923
+Theta hat is over point estimator.
+
+739
+02:35:26,131 --> 02:35:28,531
+B is for expected value.
+
+740
+02:35:37,043 --> 02:35:41,043
+Theta'a bir parçası var.
+
+741
+02:36:01,172 --> 02:36:03,172
+Let me add some pages.
+
+742
+02:36:19,188 --> 02:36:41,131
+Out of any two, out of two estimators, if an estimator has a smaller mean squared error, that kind of implies that it is the better estimator.
+
+743
+02:36:51,347 --> 02:37:05,807
+Well, let us again try to find mean squared error of sample mean and then this theta hat 1.
+
+744
+02:37:07,628 --> 02:37:16,108
+So, our example is mean squared error of sample mean.
+
+745
+02:37:45,299 --> 02:37:46,840
+So, let's write this.
+
+746
+02:37:51,476 --> 02:37:53,292
+Min skirt ve roof.
+
+747
+02:37:57,332 --> 02:38:00,252
+ve let's look at the definition.
+
+748
+02:38:00,252 --> 02:38:04,412
+It's very simple to the definition of variance.
+
+749
+02:38:04,412 --> 02:38:05,612
+Did you notice that?
+
+750
+02:38:11,283 --> 02:38:18,283
+ve
+
+751
+02:38:38,227 --> 02:38:42,227
+Şimdi de bu konuda.
+
+752
+02:38:54,195 --> 02:39:02,763
+Yeni, bu,
+
+753
+02:39:06,804 --> 02:39:12,804
+ve bir anaydı ve bir anaydı.
+
+754
+02:39:24,755 --> 02:39:25,451
+No...
+
+755
+02:39:28,531 --> 02:39:30,531
+This is a
+
+756
+02:39:32,371 --> 02:39:35,251
+Variance divided by n
+
+757
+02:39:38,932 --> 02:39:42,051
+You should read this or
+
+758
+02:39:46,195 --> 02:39:49,195
+Prove yourself.
+
+759
+02:40:07,443 --> 02:40:08,043
+Now,
+
+760
+02:40:12,308 --> 02:40:19,067
+Expected value of, sorry, mean squared error of theta.
+
+761
+02:40:23,667 --> 02:40:25,268
+Theta hat 1.
+
+762
+02:40:35,283 --> 02:40:37,227
+mean squared error of
+
+763
+02:40:40,308 --> 02:40:49,908
+Theta hat 1, is min squared error of, so it's expected value of,
+
+764
+02:40:55,443 --> 02:41:02,563
+x1 minus expected value of x.
+
+765
+02:41:08,628 --> 02:41:09,628
+Bu şekilde.
+
+766
+02:41:11,268 --> 02:41:16,628
+Ve X'e ve X'e ve X'e
+
+767
+02:41:16,628 --> 02:41:17,628
+X'e aynı.
+
+768
+02:41:17,628 --> 02:41:20,628
+Bu şekilde.
+
+769
+02:41:22,828 --> 02:41:25,628
+X'e minus X'e.
+
+770
+02:41:27,028 --> 02:41:28,628
+X'e.
+
+771
+02:41:30,988 --> 02:41:32,628
+Ve X'e.
+
+772
+02:41:32,628 --> 02:41:35,628
+Bu şekilde.
+
+773
+02:41:38,739 --> 02:41:41,540
+Bu, bu, bu, variyansı.
+
+774
+02:41:50,932 --> 02:41:57,172
+ve, let us just call it sigma-square, because variyans of x is sigma-square.
+
+775
+02:41:59,812 --> 02:42:00,812
+Now,
+
+776
+02:42:03,092 --> 02:42:06,692
+when we compare them, we see that
+
+777
+02:42:11,156 --> 02:42:29,716
+M'n'larger 1, min squared error of sample mean is less than min squared error of theta hat 1.
+
+778
+02:42:37,587 --> 02:42:50,587
+So, by this criterion, we say that x1 is better than x1.
+
+779
+02:42:53,747 --> 02:42:54,747
+Theta at 1,
+
+780
+02:42:56,747 --> 02:42:58,268
+with respect to
+
+781
+02:43:03,059 --> 02:43:05,059
+Nincs gördüğünüz kriterium.
+
+782
+02:43:12,435 --> 02:43:19,015
+So if you look at the mean squared illusion, sample mean is vertiş.
+
+783
+02:43:39,956 --> 02:43:53,131
+Bu, bu, ikinci bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir
+
+784
+02:43:56,724 --> 02:44:02,103
+MSE'nin bir relation ile variyans var.
+
+785
+02:44:02,103 --> 02:44:03,684
+Bu, bakalım.
+
+786
+02:44:11,123 --> 02:44:28,243
+MSE, BES ve Varyansı var.
+
+787
+02:44:38,260 --> 02:45:06,028
+So, we have that, mean squared error, of a point estimator theta hat, is equal to variance of, or estimate, plus Bs,
+
+788
+02:45:06,804 --> 02:45:11,004
+or estimates, estimates, square.
+
+789
+02:45:14,904 --> 02:45:15,904
+So here again,
+
+790
+02:45:18,804 --> 02:45:19,804
+mse for
+
+791
+02:45:21,304 --> 02:45:23,603
+mean squared
+
+792
+02:45:27,804 --> 02:45:31,103
+theta height is or estimators
+
+793
+02:45:33,904 --> 02:45:34,404
+for
+
+794
+02:45:34,963 --> 02:45:39,164
+Theta, varansız varansız varansız.
+
+795
+02:45:39,164 --> 02:45:45,164
+Again, Theta'ı, bu, B'ı, B'ı, B'ı.
+
+796
+02:45:51,540 --> 02:46:16,364
+Bu, bu
+
+797
+02:46:20,788 --> 02:46:22,188
+ve normal dağılım,
+
+798
+02:46:35,700 --> 02:46:52,940
+Now, there is one final thing that we want from a good estimator, and we want it to be a consistent estimator. So, let's talk about consistency.
+
+799
+02:47:09,427 --> 02:47:16,827
+Let's, Z1 hat, Z2 hat.
+
+800
+02:47:20,531 --> 02:47:25,531
+Theta n hat, et cetera.
+
+801
+02:47:27,131 --> 02:47:30,531
+The sequence of...
+
+802
+02:47:35,796 --> 02:47:37,739
+Point Estimators
+
+803
+02:47:46,899 --> 02:47:47,899
+of theta.
+
+804
+02:47:50,420 --> 02:47:51,500
+We say that
+
+805
+02:47:54,459 --> 02:47:55,579
+theta hat n
+
+806
+02:47:56,659 --> 02:47:57,220
+is
+
+807
+02:47:58,860 --> 02:47:59,860
+consistent
+
+808
+02:48:04,275 --> 02:48:05,835
+Estimator
+
+809
+02:48:10,164 --> 02:48:11,164
+Teta
+
+810
+02:48:12,164 --> 02:48:13,132
+If
+
+811
+02:48:16,691 --> 02:48:25,963
+ve normal dağılım,
+
+812
+02:48:28,979 --> 02:48:36,579
+Theta n hat minus theta absolute value.
+
+813
+02:48:36,739 --> 02:48:41,520
+So the absolute value of difference is larger than epsilon.
+
+814
+02:48:44,340 --> 02:48:51,139
+So we are talking about the probability of this difference being larger than some epsilon value.
+
+815
+02:48:56,211 --> 02:49:10,851
+Not theta, but zero here. Zero for all epsilon larger than zero.
+
+816
+02:49:21,556 --> 02:49:23,556
+As an example,
+
+817
+02:49:27,827 --> 02:49:33,467
+Sample mean is, is consistent.
+
+818
+02:49:35,747 --> 02:49:46,427
+And we actually learned this, if you remember, we gave this as a property of sample mean.
+
+819
+02:49:49,307 --> 02:49:55,427
+We called it, we named it as,
+
+820
+02:49:56,051 --> 02:49:58,051
+Veak
+
+821
+02:49:59,252 --> 02:50:03,979
+ve
+
+822
+02:50:12,115 --> 02:50:18,316
+Bu, bu
+
+823
+02:50:29,556 --> 02:50:34,556
+Now, there is one final definition for consistency.
+
+824
+02:50:36,556 --> 02:50:41,556
+I will write that and I will finish today's course, today's lecture.
+
+825
+02:50:44,556 --> 02:50:54,252
+So, we will call this consistency as
+
+826
+02:50:55,219 --> 02:50:57,219
+Min squared error limit.
+
+827
+02:51:02,611 --> 02:51:03,611
+ve sayesinde,
+
+828
+02:51:09,172 --> 02:51:11,172
+Yeni, let's
+
+829
+02:51:13,172 --> 02:51:17,172
+Theta hat 1, Theta hat 2
+
+830
+02:51:19,172 --> 02:51:21,172
+be a sequence
+
+831
+02:51:25,556 --> 02:51:27,404
+Point estimators
+
+832
+02:51:35,603 --> 02:51:36,555
+Teta.
+
+833
+02:51:40,819 --> 02:51:43,379
+if this limit
+
+834
+02:52:01,427 --> 02:52:03,427
+ve mean squared average.
+
+835
+02:52:08,051 --> 02:52:15,051
+ve 0'ı
+
+836
+02:52:24,435 --> 02:52:28,835
+Theta hat n is a consistent estimator.
+
+837
+02:52:38,548 --> 02:52:39,548
+Teta.
+
+838
+02:52:39,548 --> 02:52:49,628
+So, consistency is, can be defined as these two limits.
+
+839
+02:52:49,628 --> 02:53:04,548
+As n increases, you want min squared, min squared error to be, to go to zero or,
+
+840
+02:53:05,332 --> 02:53:13,432
+You want this probability to go to zero.
+
+841
+02:53:13,692 --> 02:53:14,971
+Again, this is an error.
+
+842
+02:53:15,072 --> 02:53:22,551
+If you notice that, this is the error between theta and head and theta.
+
+843
+02:53:23,412 --> 02:53:26,971
+So with this, we finished today's lecture.
+
+844
+02:53:29,031 --> 02:53:31,932
+If you have any questions, you can ask.
+
+845
+02:53:32,404 --> 02:53:35,963
+Otherwise, I will end the lecture.
+
+846
+02:53:43,924 --> 02:53:58,244
+Ekran kaplayıcım çalıştı yine. Chat penceresinden yazdıklarınızda 10 saniyeye giremeyeceğim. Sorunuz var mı?
+
+847
+02:54:07,347 --> 02:54:11,747
+Yok gibi gözüküyor. Öyleyse haftaya görüşürüz arkadaşlar.

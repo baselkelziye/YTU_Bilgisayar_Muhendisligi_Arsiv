@@ -1,0 +1,2875 @@
+1
+00:06:23,315 --> 00:06:25,955
+Arkadaşlar, merhabalar. Sesim geliyor mu?
+
+2
+00:06:27,075 --> 00:06:28,075
+Geliyor hocam.
+
+3
+00:06:42,451 --> 00:06:44,451
+Sesimi geliyor mu arkadaşlar?
+
+4
+00:06:45,951 --> 00:06:47,451
+Geliyor hocam.
+
+5
+00:07:06,163 --> 00:07:20,563
+Ok, so, starting from this week, we will continue to do Probabilitent Statistics course together.
+
+6
+00:07:20,563 --> 00:07:31,764
+If you cannot hear me well, you can tell me so that I can give more volume to my voice.
+
+7
+00:07:37,843 --> 00:07:40,843
+Oğuz Altun
+
+8
+00:08:00,339 --> 00:08:03,799
+You can email me through my email.
+
+9
+00:08:15,187 --> 00:08:18,060
+ve çizgi olarak, yıldız ediciye, rastgele değişken,
+
+10
+00:08:21,939 --> 00:08:36,820
+Now, this week, we will start with, we will start to the continuous probabilities.
+
+11
+00:08:50,067 --> 00:09:05,932
+Ve o,
+
+12
+00:09:08,947 --> 00:09:09,947
+İnequality.
+
+13
+00:09:09,947 --> 00:09:18,947
+But the thing is, we don't have enough time to do this kind of review.
+
+14
+00:09:18,947 --> 00:09:24,947
+This is a well known thing, well known inequality.
+
+15
+00:09:24,947 --> 00:09:28,947
+So just do your research, read the books.
+
+16
+00:09:28,947 --> 00:09:30,947
+So I will not explain this anymore.
+
+17
+00:09:45,716 --> 00:09:56,043
+Bu, ne?
+
+18
+00:10:00,820 --> 00:10:06,440
+Evet, çünkü sadece bir hafta bir hafta,
+
+19
+00:10:06,440 --> 00:10:09,720
+bu kadar iyi bir zaman da bir iş verilir.
+
+20
+00:10:12,720 --> 00:10:15,840
+Bu, sonra da bir hafta, bir iş verilir.
+
+21
+00:10:21,331 --> 00:10:22,331
+Evet, bu.
+
+22
+00:10:24,331 --> 00:10:25,331
+So,
+
+23
+00:10:29,331 --> 00:10:32,331
+so far we have learned discrete probabilities.
+
+24
+00:10:44,371 --> 00:10:51,091
+Is this line too thin? Maybe I should increase that a little bit.
+
+25
+00:10:54,451 --> 00:11:08,971
+So we have seen discrete probabilities and the thing with the discrete probabilities is their range is countable.
+
+26
+00:11:13,556 --> 00:11:30,283
+...
+
+27
+00:11:53,556 --> 00:12:00,556
+ve
+
+28
+00:12:20,628 --> 00:12:30,628
+So, something like you might come across something like from one to, I don't know, to two.
+
+29
+00:12:30,628 --> 00:12:32,628
+Right?
+
+30
+00:12:32,628 --> 00:12:37,628
+So, as an example.
+
+31
+00:12:37,628 --> 00:12:46,628
+So, that means one thing interesting is if you think about it,
+
+32
+00:12:48,724 --> 00:13:08,044
+If you, if your range, if the random variable's range is between one and two, that means every possible real value here is in the range. So the question is, how many possible values here are there here?
+
+33
+00:13:17,844 --> 00:13:24,844
+İzlediğiniz için, bu kadar dağılım var.
+
+34
+00:13:49,364 --> 00:14:06,764
+So, result of that is, if you consider any single value here, any single x here, the probability of that single x is actually zero.
+
+35
+00:14:08,764 --> 00:14:16,923
+Because if we give non-zero values to these probabilities of the single points,
+
+36
+00:14:18,740 --> 00:14:25,500
+ve total probabiliyle 1'i de var.
+
+37
+00:14:25,500 --> 00:14:29,420
+We want the total probabiliyle 1'i de var.
+
+38
+00:14:29,420 --> 00:14:35,420
+So, otherwise...
+
+39
+00:14:39,796 --> 00:14:43,236
+Bu, Bayes, total probability
+
+40
+00:14:43,236 --> 00:14:47,355
+would be
+
+41
+00:14:47,355 --> 00:14:49,975
+larger than
+
+42
+00:14:57,203 --> 00:15:12,604
+Evet, we will learn on continuous random variables and probabilities and what we can calculate them.
+
+43
+00:15:12,604 --> 00:15:19,596
+So, since single point has zero probability,
+
+44
+00:15:19,731 --> 00:15:37,412
+We will be talking about the probability of ranges. So we will be talking about, for example, what is the probability of random variable having values between 1 and 1.2, let's say.
+
+45
+00:15:38,412 --> 00:15:46,652
+This kind of thing is what we will be thinking about.
+
+46
+00:15:52,340 --> 00:16:01,340
+We have already learned a lot of rules in discrete random variables.
+
+47
+00:16:10,104 --> 00:16:12,843
+...
+
+48
+00:16:09,331 --> 00:16:11,331
+And in those roles...
+
+49
+00:16:16,779 --> 00:16:22,779
+...
+
+50
+00:16:16,019 --> 00:16:36,019
+There was this summation. A lot of the times you would see some summation. For example, you would have expected value of x is equal to sum of all possible x's.
+
+51
+00:16:43,279 --> 00:16:50,500
+So, here this px is pmf, this was pmf of x.
+
+52
+00:16:54,292 --> 00:16:58,292
+Probabilitemizde fücünün x.
+
+53
+00:16:58,292 --> 00:17:11,291
+Now, in continuous random variables, a lot of the rules will be very similar, but with a twist.
+
+54
+00:17:11,291 --> 00:17:19,180
+So, in discrete random variables, we will say that, for example, for this example,
+
+55
+00:17:20,403 --> 00:17:43,403
+X'e de, instead of summation, now, what will we have? We will have an integration for all possible values of X. So that means instead of listing the X, we will say from minus infinity to positive infinity, X.
+
+56
+00:17:48,180 --> 00:17:54,180
+We will use this thing called probability density function and we will learn what that is.
+
+57
+00:17:59,059 --> 00:18:00,059
+Dx
+
+58
+00:18:08,980 --> 00:18:26,059
+So, this guy here is called probability density function of x and we will learn what this is. And as you see here, the difference is we have a summation here.
+
+59
+00:18:31,988 --> 00:18:33,588
+Here we have an integration.
+
+60
+00:18:37,971 --> 00:18:41,011
+Ve all possible values of x
+
+61
+00:18:41,011 --> 00:18:44,432
+will be converted
+
+62
+00:18:44,432 --> 00:18:46,392
+from minus infinity
+
+63
+00:18:46,392 --> 00:18:48,172
+to positive infinity.
+
+64
+00:18:49,172 --> 00:18:53,912
+So let's say this is
+
+65
+00:18:53,912 --> 00:18:56,592
+discrete random variable rules
+
+66
+00:18:56,592 --> 00:18:59,172
+are similar to
+
+67
+00:18:59,172 --> 00:19:01,051
+continuous
+
+68
+00:19:01,051 --> 00:19:04,683
+random variable.
+
+69
+00:19:07,923 --> 00:19:13,244
+Orada, in fact, maybe we should write continuous random variable rules are similar to.
+
+70
+00:19:13,244 --> 00:19:16,043
+So let's write that way.
+
+71
+00:19:20,531 --> 00:19:33,971
+Continuous random variable rules are similar to discrete random variable rules.
+
+72
+00:19:40,564 --> 00:19:45,548
+Ok, so, can you easily hear my voice? Is there any problem?
+
+73
+00:20:05,332 --> 00:20:07,332
+No problem, okay.
+
+74
+00:20:08,332 --> 00:20:09,332
+Okay, so...
+
+75
+00:20:12,332 --> 00:20:14,332
+Let's continue.
+
+76
+00:20:59,988 --> 00:21:01,528
+Let's look at an example.
+
+77
+00:21:06,163 --> 00:21:07,663
+Or, let's define it.
+
+78
+00:21:17,140 --> 00:21:20,012
+Let's define continuous random variables.
+
+79
+00:21:39,763 --> 00:22:03,755
+Sorry for that. I didn't do an online lecture for a while, so I'm kinda, I have forgotten how to use this. My finger memory is lost. So we should, let us define what the continuous.
+
+80
+00:22:08,276 --> 00:22:10,876
+random variable is
+
+81
+00:22:19,028 --> 00:22:22,987
+A random variable x
+
+82
+00:22:27,892 --> 00:22:29,892
+is said to be
+
+83
+00:22:31,092 --> 00:22:33,492
+a random variable x
+
+84
+00:22:34,532 --> 00:22:35,532
+with
+
+85
+00:22:43,443 --> 00:23:00,563
+Cumulative distribution function f of x of x is saydive continuous.
+
+86
+00:23:09,523 --> 00:23:10,475
+if
+
+87
+00:23:22,740 --> 00:23:25,740
+Sayed Cumulative Distribution Function
+
+88
+00:23:29,907 --> 00:23:33,507
+is a continuous function.
+
+89
+00:23:42,451 --> 00:23:49,387
+for all x in real numbers.
+
+90
+00:23:57,779 --> 00:24:02,667
+ve
+
+91
+00:24:10,195 --> 00:24:12,195
+Cumulative distribution function
+
+92
+00:24:15,195 --> 00:24:16,195
+is differentiable.
+
+93
+00:24:26,483 --> 00:24:28,364
+Olum, Oasılık evliver.
+
+94
+00:24:38,579 --> 00:24:40,579
+Şu anda ne görüyorsunuz?
+
+95
+00:24:44,307 --> 00:24:49,907
+Yazdığım ekranı mı görüyorsunuz yoksa farklı bir şey mi?
+
+96
+00:25:13,587 --> 00:25:28,587
+Teşekkürler. Bir uyarma uygulaması var da, belirli aralıklarla ekranımı kapatıyor. Onu şimdiden kapatayım. Az önce devreye girdi, herhalde siz görmediniz.
+
+97
+00:26:42,804 --> 00:26:44,684
+So, let's look at an example.
+
+98
+00:26:55,220 --> 00:26:58,340
+Or, yeah, let's look at an example.
+
+99
+00:27:00,279 --> 00:27:01,159
+For example,
+
+100
+00:27:12,884 --> 00:27:20,875
+Eksine, örneklem,
+
+101
+00:27:25,779 --> 00:27:28,659
+If you want to choose a real number,
+
+102
+00:27:38,067 --> 00:27:39,627
+Uniformly
+
+103
+00:27:42,932 --> 00:27:45,532
+at random
+
+104
+00:27:48,532 --> 00:27:49,731
+in the
+
+105
+00:27:50,432 --> 00:27:51,632
+interval
+
+106
+00:27:56,435 --> 00:28:15,559
+AB
+
+107
+00:28:05,844 --> 00:28:07,844
+call it x.
+
+108
+00:28:09,844 --> 00:28:13,844
+Then this will be a continuous
+
+109
+00:28:21,411 --> 00:28:26,604
+AB
+
+110
+00:28:19,443 --> 00:28:26,443
+Bu, continuoslandı ve ayrıca,
+
+111
+00:28:31,975 --> 00:28:37,975
+AB
+
+112
+00:28:31,667 --> 00:28:41,867
+We will choose the number uniformly, meaning all values between a and b are equally possible.
+
+113
+00:28:43,447 --> 00:28:52,387
+So, from a to b, we can choose any number.
+
+114
+00:28:56,852 --> 00:29:03,352
+So, let's try to first find its cumulative distribution function.
+
+115
+00:29:27,827 --> 00:29:31,827
+So, we know that...
+
+116
+00:29:35,635 --> 00:29:36,635
+İkluar a
+
+117
+00:29:40,948 --> 00:29:47,488
+ve, the values of, the probability of the values before a are all zero.
+
+118
+00:29:47,488 --> 00:29:49,228
+And remember,
+
+119
+00:29:49,228 --> 00:29:55,228
+Cumulative distribution function is
+
+120
+00:29:59,667 --> 00:30:07,827
+Probabiliteli, random value, having value less than or equal to is lowercase x.
+
+121
+00:30:07,827 --> 00:30:16,827
+So, up to this point, all the sums, everything is zero, so the sums are zero.
+
+122
+00:30:16,827 --> 00:30:22,763
+So, we know that if...
+
+123
+00:30:25,748 --> 00:30:30,748
+So, if x is less than a,
+
+124
+00:30:34,355 --> 00:30:36,355
+ve Cumülatifun,
+
+125
+00:30:38,355 --> 00:30:39,355
+is 0.
+
+126
+00:30:42,355 --> 00:30:48,355
+And we know that total probability between a and b is 1.
+
+127
+00:30:50,355 --> 00:30:59,355
+And after b, we don't add anything because the probability of values larger than b are 0.
+
+128
+00:31:00,276 --> 00:31:02,576
+So, we do not add anything there.
+
+129
+00:31:03,356 --> 00:31:04,396
+Sorry for that.
+
+130
+00:31:14,771 --> 00:31:37,071
+So, if x is larger than b, in fact, when it is also equal to b2, because at b, we sum all the probabilities. So, if it is larger than b, the cumulative probability is 1.
+
+131
+00:31:41,203 --> 00:31:43,203
+Now, what is the...
+
+132
+00:31:45,203 --> 00:31:47,203
+What is the...
+
+133
+00:31:52,084 --> 00:31:59,084
+Probabilit, Cumulatil Probabilit if X is between A and B.
+
+134
+00:31:59,084 --> 00:32:01,084
+Right?
+
+135
+00:32:01,084 --> 00:32:04,084
+So
+
+136
+00:32:04,084 --> 00:32:26,735
+.
+
+137
+00:32:11,220 --> 00:32:32,220
+Now, we have a uniform distribution, and the whole distribution between, the whole distribution of probability between a and b is 1. It's all distributed. So, let's think about this a little bit.
+
+138
+00:32:36,692 --> 00:32:46,392
+x, we want to find probability of x having value less than or equal to lowercase x.
+
+139
+00:32:49,844 --> 00:33:07,844
+ve, remember, x is somewhere here, right? x is here. So, basically, wherever x is, we want to find this probability, right? This would be cumulative probability of x.
+
+140
+00:33:24,180 --> 00:33:28,180
+Söperate x and capital X.
+
+141
+00:33:28,180 --> 00:33:35,579
+So, when I write capital X, I write like this.
+
+142
+00:33:35,579 --> 00:33:42,579
+When I write lowercase, I write x like this.
+
+143
+00:33:59,220 --> 00:34:02,099
+Probabiliteli, X,
+
+144
+00:34:05,140 --> 00:34:08,539
+Probabiliteli, ve total probability between,
+
+145
+00:34:09,420 --> 00:34:12,380
+or smaller than X is this area,
+
+146
+00:34:12,380 --> 00:34:14,900
+probability of this area between A and X.
+
+147
+00:34:15,460 --> 00:34:19,380
+So basically we are actually talking about probability of,
+
+148
+00:34:28,532 --> 00:34:53,932
+X being in the range a to x, right? So this is the range a to x. And now, uniformly, so we have a uniform distribution, so all values are equally possible here.
+
+149
+00:34:56,052 --> 00:34:57,996
+Bu probabiliteler
+
+150
+00:35:03,188 --> 00:35:08,967
+is x minus a divided by b minus a.
+
+151
+00:35:12,980 --> 00:35:17,800
+So, we have found the cumulative distribution of x.
+
+152
+00:35:21,320 --> 00:35:28,039
+And we can just, these are all the cases, so we can just nicely write this.
+
+153
+00:35:30,800 --> 00:35:36,119
+So, I should write f of x of x is,
+
+154
+00:35:38,820 --> 00:35:39,320
+so,
+
+155
+00:35:40,947 --> 00:35:55,447
+4x smaller than a, 0, 4x larger than b, 0.
+
+156
+00:36:09,780 --> 00:36:12,780
+ve x'inbetwein
+
+157
+00:36:33,427 --> 00:36:59,188
+We have this x minus a divided by b minus a. I told you that I will use this for capital and this for lowercase, but I am forgetting and using this for lowercase too. Let me not write that. You will understand from the size of the x, I guess.
+
+158
+00:37:01,139 --> 00:37:02,923
+Let me not write that.
+
+159
+00:37:08,596 --> 00:37:09,452
+still like
+
+160
+00:37:23,795 --> 00:37:25,579
+These are all lowercase.
+
+161
+00:37:29,748 --> 00:37:30,748
+So,
+
+162
+00:37:35,219 --> 00:37:48,019
+Now, here, should I rule, here, I have an equal or less than here, but I wrote less than here.
+
+163
+00:37:49,300 --> 00:37:54,460
+It doesn't really matter for conditional continuous probabilities.
+
+164
+00:37:55,679 --> 00:37:58,500
+So let's use it this way.
+
+165
+00:37:59,699 --> 00:38:01,899
+Because if you think about it,
+
+166
+00:38:02,771 --> 00:38:18,971
+Equality adds just one more point to this range, and the probability of just one point is zero, so it doesn't really matter. It doesn't really change the final result.
+
+167
+00:38:21,771 --> 00:38:22,471
+Now,
+
+168
+00:38:27,443 --> 00:38:31,443
+Bu önemli bir şey.
+
+169
+00:38:37,108 --> 00:38:45,108
+less than is equivalent to less than or equal to for continuous probabilities.
+
+170
+00:38:52,115 --> 00:38:55,615
+ve şimdi, let's try to graph this.
+
+171
+00:38:59,123 --> 00:39:03,623
+Graph this cumulative distribution function.
+
+172
+00:39:12,115 --> 00:39:12,475
+So,
+
+173
+00:39:32,083 --> 00:39:33,083
+So, um,
+
+174
+00:39:36,724 --> 00:39:41,104
+Up to a, we have 0, right?
+
+175
+00:39:46,387 --> 00:39:52,268
+A to B, we have this linear function.
+
+176
+00:39:52,268 --> 00:39:53,207
+Okay.
+
+177
+00:39:54,487 --> 00:39:58,768
+So, this is...
+
+178
+00:40:13,427 --> 00:40:20,427
+ve sonra B'ye kadar bu,
+
+179
+00:40:20,427 --> 00:40:37,592
+bu,
+
+180
+00:40:29,715 --> 00:40:32,715
+Bu bir conti.
+
+181
+00:40:33,715 --> 00:40:36,172
+Bu conti.
+
+182
+00:41:03,188 --> 00:41:08,688
+So, let's look at expected value and varians of continuous functions.
+
+183
+00:41:10,688 --> 00:41:12,688
+Any questions up to this point?
+
+184
+00:41:20,115 --> 00:41:20,475
+Okay.
+
+185
+00:41:56,300 --> 00:42:08,300
+bu,
+
+186
+00:41:55,380 --> 00:41:57,380
+Bu midterm, bu da bir test.
+
+187
+00:41:57,380 --> 00:42:09,380
+Bu da bir test.
+
+188
+00:42:09,380 --> 00:42:23,019
+Bu da bir soru var.
+
+189
+00:42:23,380 --> 00:42:29,380
+exercises. So try to do those exercises yourselves.
+
+190
+00:42:43,891 --> 00:42:51,891
+Before expectation though, let's look at this thing called probability density function.
+
+191
+00:43:01,684 --> 00:43:03,244
+Probability
+
+192
+00:43:06,835 --> 00:43:13,956
+Density, Fung-Chi, or P-D-F.
+
+193
+00:43:26,708 --> 00:43:28,556
+ve normal dağılımı işlemiyelim.
+
+194
+00:43:34,164 --> 00:43:36,364
+Ofer konti üsluğundur, meriğiniz.
+
+195
+00:43:44,083 --> 00:43:50,203
+Probabilitendence, a function of a continuous
+
+196
+00:43:55,443 --> 00:43:58,443
+random variable x.
+
+197
+00:44:05,684 --> 00:44:08,923
+Of n absolutely contains of n.
+
+198
+00:44:10,043 --> 00:44:15,524
+Absolutely.
+
+199
+00:44:19,027 --> 00:44:25,627
+Meaning, it's always continuous. When you say absolutely continuous, I think it means it's always continuous.
+
+200
+00:44:25,627 --> 00:44:32,027
+So probability density function of an absolutely continuous random variable x.
+
+201
+00:44:37,876 --> 00:44:41,716
+is defined by,
+
+202
+00:44:43,256 --> 00:44:46,396
+we use lowercase f in this case,
+
+203
+00:44:48,296 --> 00:44:50,556
+probability-danced log-frandom variable x,
+
+204
+00:44:51,656 --> 00:44:54,396
+and we write lowercase x here,
+
+205
+00:44:56,256 --> 00:44:56,576
+is.
+
+206
+00:44:57,776 --> 00:44:58,176
+So,
+
+207
+00:45:00,376 --> 00:45:01,876
+in continuous functions,
+
+208
+00:45:02,516 --> 00:45:04,716
+we get probability-danced functions
+
+209
+00:45:05,588 --> 00:45:19,052
+Dxd
+
+210
+00:45:26,228 --> 00:45:30,228
+of the cumulative function.
+
+211
+00:45:34,164 --> 00:45:35,052
+Ok?
+
+212
+00:45:51,059 --> 00:46:05,940
+Probabilisiydi adı da function of x on x.
+
+213
+00:46:16,947 --> 00:46:34,411
+Şimdi, bu
+
+214
+00:46:53,396 --> 00:47:03,396
+So, we have, sorry, we have cumulative function defined like this.
+
+215
+00:47:05,396 --> 00:47:17,388
+0 for x smaller than a, 1 for x larger than b.
+
+216
+00:47:17,523 --> 00:47:27,003
+ve x-a-a-b-a-b-a-b-a-b-a-b.
+
+217
+00:47:30,804 --> 00:47:34,804
+Now, this is a piecewise function.
+
+218
+00:47:35,804 --> 00:47:43,804
+So, to differentiate, we need to differentiate each piece, right, one by one.
+
+219
+00:47:43,804 --> 00:47:44,804
+So,
+
+220
+00:47:47,804 --> 00:47:48,523
+so,
+
+221
+00:47:51,668 --> 00:47:54,668
+Dense, the function in this case would be
+
+222
+00:48:02,164 --> 00:48:18,164
+Buna baktın.
+
+223
+00:48:23,923 --> 00:48:28,524
+Derivative of 0 with respect to x is 0.
+
+224
+00:48:43,572 --> 00:48:45,572
+A'ı.
+
+225
+00:48:45,572 --> 00:48:49,172
+Ve derivative 1'ı 0'ı.
+
+226
+00:48:49,172 --> 00:48:51,292
+Bu devleti var.
+
+227
+00:48:51,292 --> 00:48:54,284
+Derivatives 0'ı.
+
+228
+00:48:59,443 --> 00:49:04,443
+ve bu
+
+229
+00:49:04,443 --> 00:49:06,443
+a'a
+
+230
+00:49:06,443 --> 00:49:07,443
+0'a
+
+231
+00:49:07,443 --> 00:49:08,443
+x'a
+
+232
+00:49:08,443 --> 00:49:12,443
+1'a
+
+233
+00:49:12,443 --> 00:49:16,443
+4'a
+
+234
+00:49:16,443 --> 00:49:21,579
+1'a
+
+235
+00:49:24,596 --> 00:49:26,596
+Derivative of
+
+236
+00:49:30,483 --> 00:49:34,983
+x minus a divided by e minus a.
+
+237
+00:49:35,983 --> 00:49:36,283
+Okay.
+
+238
+00:49:37,183 --> 00:49:40,183
+And that's one over b minus a.
+
+239
+00:49:41,384 --> 00:49:45,683
+For x between b and a.
+
+240
+00:49:51,795 --> 00:49:54,416
+So, if we graph this,
+
+241
+00:50:16,179 --> 00:50:24,500
+If we graph this, it's a graph of probability density function.
+
+242
+00:50:32,500 --> 00:50:34,284
+ve
+
+243
+00:50:41,811 --> 00:50:50,811
+Densit is 0 before A, and density is again 0 after B, so this is A and B.
+
+244
+00:50:59,539 --> 00:51:06,279
+A ve B, it's always 1 over B minus A. So it's a constant.
+
+245
+00:51:32,211 --> 00:51:48,851
+Okay, so let's give a break here. When we come we will continue with the rules of probability densities. Any questions here?
+
+246
+00:51:52,628 --> 00:51:56,628
+Ok, let's give a 10-minutes break till...
+
+247
+01:04:01,907 --> 01:04:03,907
+Hello, bek.
+
+248
+01:05:30,708 --> 01:05:42,700
+Okay, so we were talking about probability density functions.
+
+249
+01:05:46,483 --> 01:05:48,107
+ve öğrenci,
+
+250
+01:06:04,083 --> 01:06:09,844
+Probabilidadansı function can be obtained by differentiation of
+
+251
+01:06:18,804 --> 01:06:20,804
+Cumulative Function.
+
+252
+01:06:23,804 --> 01:06:27,804
+So that means we can actually find
+
+253
+01:06:30,804 --> 01:06:31,804
+Cumulative Function
+
+254
+01:06:32,804 --> 01:06:33,804
+From
+
+255
+01:06:36,804 --> 01:06:37,804
+Danse Function
+
+256
+01:06:37,804 --> 01:06:40,804
+And the inverse of derivative is integration.
+
+257
+01:06:47,699 --> 01:07:11,300
+So, for that we will need to integrate from minus infinity to x and we will integrate f but I will not write f of lowercase x because I have already used lowercase x here.
+
+258
+01:07:13,043 --> 01:07:21,483
+So, it kind of, it will become kind of confusing. So instead of that, I should use something else.
+
+259
+01:07:24,483 --> 01:07:25,764
+Also, let me
+
+260
+01:07:25,764 --> 01:07:29,483
+change this
+
+261
+01:07:29,483 --> 01:07:33,844
+to lowercase x.
+
+262
+01:07:36,148 --> 01:07:42,948
+So, you can use any variable here. It's called the variable. So, let us use u.
+
+263
+01:07:44,148 --> 01:08:00,148
+So, if we integrate the density function from minus infinity to x, you get the cumulative density.
+
+264
+01:08:02,228 --> 01:08:04,228
+ve ayrıca,
+
+265
+01:08:09,492 --> 01:08:10,731
+Probabiliterle of
+
+266
+01:08:16,819 --> 01:08:18,507
+Rindç.
+
+267
+01:08:24,372 --> 01:08:28,372
+Probabiliteli of a range can be obtained using PDF.
+
+268
+01:08:30,372 --> 01:08:34,220
+So, if you think about it.
+
+269
+01:08:47,988 --> 01:08:55,347
+So, if this is your a, this is your b, this is your dense functions graph.
+
+270
+01:08:55,347 --> 01:08:56,347
+Okay.
+
+271
+01:08:56,347 --> 01:09:01,468
+So,
+
+272
+01:09:05,492 --> 01:09:12,252
+Any area, the probability between A and B is
+
+273
+01:09:17,492 --> 01:09:21,492
+So, the probability of random variable being between a and b.
+
+274
+01:09:27,699 --> 01:09:43,420
+So, remember that this was probability of, this was cumulative value on A, sorry on B.
+
+275
+01:09:47,060 --> 01:10:12,660
+minus cumulative value on a. So this was true for discrete, discrete random variables too. Now, if you look at it from this a, this graph, it's easy to see that probability of, cumulative probability of b,
+
+276
+01:10:15,295 --> 01:10:21,295
+1'a
+
+277
+01:10:14,931 --> 01:10:37,163
+Bu bölgelerin arasında bu bölgelerin arasında bu bölgelerin arasında bu bölgelerin arasında bu bölgelerin arasında bu bölgelerin arasında bu bölgelerin arasında bu bölgelerin arasında bu bölgelerin arasında bu bölgelerin arasında bu bölgelerin arasında bu bölgelerin arasında bu bölgelerin arasında bu bölgelerin arasında bu bölgelerin arasında bu bölgelerin arasında bu bölgelerin arasında bu bölgelerin arasında bu bölgelerin arasında bu bölgelerin arasında bu bölgelerin arasında bu bölgelerin arasında bu bölgelerin arasında bu bölgelerin arasında bu bölgelerin arasında bu bölgelerin arasında bu bölgelerin arasında bu bölgelerin arasında bu bölgelerin arasında bu bölgelerin arasında bu bölgelerin arasında bu bölgelerin ar
+
+278
+01:10:54,707 --> 01:10:58,307
+If you write this equation here,
+
+279
+01:11:01,971 --> 01:11:22,971
+If you write these cumulative probabilities in terms of these probabilities, these density integrations, you will see that we have integration of density.
+
+280
+01:11:30,260 --> 01:11:34,860
+A to B, ve bu dağılımı alayın.
+
+281
+01:11:38,195 --> 01:11:39,076
+bu ekran
+
+282
+01:11:41,555 --> 01:11:42,595
+ve bu ekran
+
+283
+01:11:45,395 --> 01:11:46,836
+bu ekran
+
+284
+01:11:48,515 --> 01:11:49,076
+ok
+
+285
+01:11:52,275 --> 01:11:53,076
+ekran
+
+286
+01:12:13,555 --> 01:12:25,395
+Now, another property is integration over the whole line is 1.
+
+287
+01:12:25,395 --> 01:12:37,235
+So, integration over or total probability is equal to
+
+288
+01:12:37,747 --> 01:12:49,747
+Bu da aynı şekilde.
+
+289
+01:12:49,747 --> 01:12:56,460
+İnteklidir.
+
+290
+01:13:01,043 --> 01:13:02,043
+ve get one.
+
+291
+01:13:02,043 --> 01:13:06,043
+Ve, bu, çok logik.
+
+292
+01:13:15,539 --> 01:13:17,539
+What else do we have?
+
+293
+01:13:23,347 --> 01:13:26,827
+Probabilitetized Function
+
+294
+01:13:28,307 --> 01:13:31,228
+Values are always larger than zero.
+
+295
+01:13:34,452 --> 01:13:35,452
+So,
+
+296
+01:13:42,163 --> 01:13:43,163
+This is a node.
+
+297
+01:13:47,923 --> 01:13:50,804
+So, density.
+
+298
+01:13:55,220 --> 01:14:10,460
+is larger than zero for all x in the real numbers.
+
+299
+01:14:10,460 --> 01:14:13,980
+Larger than or equal to zero.
+
+300
+01:14:13,980 --> 01:14:18,220
+So what does this say?
+
+301
+01:14:18,220 --> 01:14:19,980
+So this says that
+
+302
+01:14:32,851 --> 01:15:00,779
+So, you will always have something like this. It will never go down the zero, right? So, density will be always positive. Notice that density, so these are notes, let's say, density can be larger than
+
+303
+01:15:02,996 --> 01:15:03,916
+1
+
+304
+01:15:13,395 --> 01:15:38,059
+Yani bir kere daha
+
+305
+01:15:38,292 --> 01:15:43,307
+Bu, bu
+
+306
+01:15:48,435 --> 01:15:51,435
+Can I insert a page here?
+
+307
+01:15:57,043 --> 01:16:01,043
+İlk başta, ben de bu.
+
+308
+01:16:49,619 --> 01:16:54,619
+Bu programı çok güzel, ama bu programı çok kolay.
+
+309
+01:17:28,787 --> 01:17:29,515
+Evet.
+
+310
+01:17:48,372 --> 01:17:49,632
+Somehow we made it.
+
+311
+01:18:01,652 --> 01:18:22,072
+Okay, I think we made it somehow. So what I want to add was here, so there is a more general idea here. So instead of any, just any range, we want to write, I want to write here that probability of a set.
+
+312
+01:18:33,684 --> 01:18:56,764
+For a set A, probability of random variable being in the set A is integration over that set, integration of the density over that set.
+
+313
+01:19:04,307 --> 01:19:05,996
+Ok, so...
+
+314
+01:19:17,587 --> 01:19:19,179
+Eksiyon,
+
+315
+01:19:25,779 --> 01:19:52,899
+You could have a probability of x, so this is an example, probability of x being between or in the range 0, 1, union, union, let's say 3, 4.
+
+316
+01:19:56,659 --> 01:20:19,159
+So here, this would be your A. Your set is a union of other sets. And in this case, you need to integrate from 0 to 1 to density.
+
+317
+01:20:24,051 --> 01:20:46,059
+Şimdi bu,
+
+318
+01:21:00,115 --> 01:21:01,115
+Evet.
+
+319
+01:21:11,731 --> 01:21:14,636
+Finally, what is the range?
+
+320
+01:21:21,171 --> 01:21:22,171
+Range
+
+321
+01:21:24,171 --> 01:21:28,171
+Continuous random variable
+
+322
+01:21:39,155 --> 01:21:42,475
+So, range, as you know, is
+
+323
+01:21:46,228 --> 01:21:48,228
+set of possible values
+
+324
+01:21:56,851 --> 01:21:58,635
+random variable x.
+
+325
+01:22:01,684 --> 01:22:04,804
+So, if x is continuous,
+
+326
+01:22:06,724 --> 01:22:07,923
+that means
+
+327
+01:22:12,851 --> 01:22:16,268
+If X is continuous,
+
+328
+01:22:19,636 --> 01:22:26,636
+That means x can be defined instead of real numbers.
+
+329
+01:22:32,916 --> 01:22:39,916
+If x is continuous, range of x can be defined.
+
+330
+01:22:44,627 --> 01:22:49,099
+in terms of real numbers.
+
+331
+01:22:55,060 --> 01:23:01,380
+Set of real numbers, let's say. Set of real numbers.
+
+332
+01:23:05,876 --> 01:23:18,676
+So you can have something like range of x is set of x such that density is let's say
+
+333
+01:23:24,307 --> 01:23:31,307
+So, set of real numbers, sorry, whose density is
+
+334
+01:23:34,899 --> 01:23:35,899
+Density
+
+335
+01:23:41,524 --> 01:23:45,524
+is larger than zero.
+
+336
+01:23:50,100 --> 01:23:56,100
+ve here, I'm just writing what I have taught in pros.
+
+337
+01:24:01,171 --> 01:24:10,211
+So, range of x, a set of x such that their density is larger than zero.
+
+338
+01:24:17,140 --> 01:24:18,880
+Let's look at an example.
+
+339
+01:24:34,931 --> 01:24:35,992
+So, let's say,
+
+340
+01:25:06,163 --> 01:25:12,403
+appropriate years from my other notes.
+
+341
+01:26:01,235 --> 01:26:16,115
+So, let's say the lifetime in years of some electronic component.
+
+342
+01:26:24,916 --> 01:26:30,796
+is defined is continuous random variable
+
+343
+01:26:33,115 --> 01:26:34,996
+with density
+
+344
+01:26:45,684 --> 01:27:06,684
+f of x equals to k or x cube for x larger than 1 and 0 for x smaller than 1.
+
+345
+01:27:13,460 --> 01:27:21,139
+We want to find cumulative density.
+
+346
+01:27:29,203 --> 01:27:48,884
+We want to find k before that and we want to graph this density and also what is the probability of the lifetime?
+
+347
+01:27:54,771 --> 01:27:55,771
+Exceeding
+
+348
+01:27:59,252 --> 01:28:00,252
+5 years.
+
+349
+01:28:05,779 --> 01:28:09,779
+Bu elektronik komponent,
+
+350
+01:28:09,779 --> 01:28:13,779
+ve aileli bir kere.
+
+351
+01:28:13,779 --> 01:28:17,355
+Bu kere, bu kere.
+
+352
+01:28:28,148 --> 01:28:42,347
+ve, you want to find the scale, you want to find the cumulative function, you want to graph the cumulative function, and you want to find lifetime.
+
+353
+01:28:42,347 --> 01:28:52,948
+So let's call this A, B, C. A, B, and C. So with A, let's solve this.
+
+354
+01:28:54,644 --> 01:29:18,644
+So, to find k, we have multiple ways of doing this. One thing that we know is the total probability is 1, right? So we can use that, for example, here. So we can say, okay, from minus infinity to plus infinity,
+
+355
+01:29:22,771 --> 01:29:46,771
+f dx is 1. We know that. Because total probability is 1. Now, let's apply that rule here. Now, notice that the probability is 0 up to 1, right? So these minus 1s and plus 1s,
+
+356
+01:29:47,539 --> 01:29:50,380
+They are theoretically minus 1 and plus 1.
+
+357
+01:29:52,119 --> 01:29:54,159
+But we need to consider
+
+358
+01:29:54,159 --> 01:30:00,800
+when the probability becomes non-zero.
+
+359
+01:30:01,319 --> 01:30:05,439
+And in this case, probability becomes non-zero starting from 1.
+
+360
+01:30:06,800 --> 01:30:08,399
+Right? Up to 1, it's 0.
+
+361
+01:30:10,800 --> 01:30:12,500
+This is decreasing, right?
+
+362
+01:30:18,676 --> 01:30:19,532
+So...
+
+363
+01:30:23,764 --> 01:30:29,744
+Bu, let's say x, f of x, and we have something like this, right?
+
+364
+01:30:32,744 --> 01:30:35,884
+But up to one, it's all zeros.
+
+365
+01:30:36,463 --> 01:30:50,384
+So, this negative minus one should be actually converted to one, because before that, from minus infinity,
+
+366
+01:30:51,060 --> 01:31:16,060
+to plus infinity, the integration is just zero. Because it's all zeros, right? It all zeros. So from one to now plus infinity, I want to do an integration k over x cubed dx.
+
+367
+01:31:19,828 --> 01:31:23,828
+ve nasıl bir süreçte?
+
+368
+01:31:28,388 --> 01:31:29,828
+Bu, x'e de minus
+
+369
+01:31:36,595 --> 01:31:37,595
+3
+
+370
+01:31:48,692 --> 01:31:49,192
+So,
+
+371
+01:31:59,283 --> 01:32:01,283
+Bu bir şey.
+
+372
+01:32:11,188 --> 01:32:15,188
+x equals 1 to infinity.
+
+373
+01:32:21,619 --> 01:32:27,180
+ve bu, k over 2 ve know, bu 1.
+
+374
+01:32:27,180 --> 01:32:33,819
+So, from there, we understand that k is 2.
+
+375
+01:32:45,555 --> 01:32:48,715
+Let me check something here. Give me one minute.
+
+376
+01:33:57,235 --> 01:34:06,556
+So, yeah, when you are taking a polynomial integral, you need to actually for all integrals, you need to ask this question.
+
+377
+01:34:06,556 --> 01:34:22,675
+So, k to the x cubed, that's what we have here. And k is a constant, so let's forget about it. So, we need to find the integral of 1 over x.
+
+378
+01:34:23,539 --> 01:34:31,275
+ve soru
+
+379
+01:34:36,500 --> 01:34:53,500
+So, there is a function and we took its derivative and we got this. So now we want to find its integral meaning we want to find that function whose integral was this, right?
+
+380
+01:34:53,500 --> 01:34:55,148
+And
+
+381
+01:34:58,195 --> 01:35:06,195
+ve 1 over x3'e x to the minus 3, right?
+
+382
+01:35:06,195 --> 01:35:13,195
+So, which function would give you x to the minus 3 if you integrate?
+
+383
+01:35:13,195 --> 01:35:23,195
+Well, if you integrate x to the minus 2, sorry, if you take the derivative of x to the minus 2,
+
+384
+01:35:27,444 --> 01:35:38,444
+What you will get is x to the minus 3 divided by 3.
+
+385
+01:35:44,148 --> 01:35:46,148
+So divide it by two.
+
+386
+01:35:47,448 --> 01:35:51,648
+Eksi iki buraya geliyor değil mi? Kafam gitti şu anda ya.
+
+387
+01:36:08,532 --> 01:36:10,032
+Buraya geliyor.
+
+388
+01:36:11,532 --> 01:36:12,908
+Öyle olmuyor mu?
+
+389
+01:36:17,108 --> 01:36:19,108
+[öğrenci] yazmış.
+
+390
+01:36:24,692 --> 01:36:25,971
+Dolayısıyla
+
+391
+01:36:37,140 --> 01:36:42,480
+Eğer şurada bir eksi iki olursa, ne olur? Eksi ikiler gider.
+
+392
+01:36:46,323 --> 01:36:49,023
+Geriye x üzeri x3 karşıma.
+
+393
+01:36:51,563 --> 01:36:52,563
+So,
+
+394
+01:36:53,083 --> 01:36:56,183
+that's the function that will give you
+
+395
+01:36:56,783 --> 01:37:00,083
+1 over x3
+
+396
+01:37:00,963 --> 01:37:02,283
+if you integrate.
+
+397
+01:37:03,723 --> 01:37:04,423
+Right?
+
+398
+01:37:05,323 --> 01:37:08,123
+And it's this function now.
+
+399
+01:37:10,223 --> 01:37:12,823
+Okay, I hope you understood that.
+
+400
+01:37:13,076 --> 01:37:18,060
+Bu, bu, çok basit, çok basit, bu, çok basit.
+
+401
+01:37:26,931 --> 01:37:38,611
+So, if you don't remember, integration review, review, basic, integration.
+
+402
+01:37:43,220 --> 01:37:45,220
+Formüle Asit Sitaratür.
+
+403
+01:37:56,948 --> 01:38:08,148
+Ve polynomial integration, if you don't want to think about it, like we needed to think a little bit there, you have this shortcut.
+
+404
+01:38:09,148 --> 01:38:22,148
+If you integrate x to the n dx, you have x to the n plus 1 divided by n plus 1.
+
+405
+01:38:23,252 --> 01:38:31,020
+Bu, bu
+
+406
+01:38:36,020 --> 01:38:59,180
+So, if you think it like that, 1 to 8, infinity, k, x to the minus 3, dx would be x to the minus 2 divided by minus 2. And k is here. Okay.
+
+407
+01:39:03,028 --> 01:39:20,148
+You can use this simple rule or you can just use the idea that an integrate, when you are integrated, you actually need to find the function that was derived, that was taken, right?
+
+408
+01:39:22,667 --> 01:39:25,667
+So you can go both ways.
+
+409
+01:39:26,688 --> 01:39:28,608
+Anyway, so I think this is clear.
+
+410
+01:39:31,667 --> 01:39:37,667
+Bu, Polynomials, you can use this idea.
+
+411
+01:39:37,667 --> 01:39:49,667
+And then, what's the cumulative function now?
+
+412
+01:39:49,667 --> 01:39:55,667
+Well, with these integrations, you can easily find cumulative function too.
+
+413
+01:39:58,676 --> 01:40:15,536
+Füncü, u again integrate from minus infinity to x this time, so f of u du, right?
+
+414
+01:40:16,756 --> 01:40:24,836
+And now this time you have, again, very simple, the same integration we have now, only the bounds are different.
+
+415
+01:40:25,716 --> 01:40:48,652
+So, again, from 0 to 1, everything is 0. So, we'll just start from 1. And we will integrate up to x. This is over k is x. And we have k over x cubed.
+
+416
+01:40:49,876 --> 01:40:53,876
+D u, oh this should be u, sorry.
+
+417
+01:40:54,876 --> 01:41:07,876
+Since we are using double variable u here, we should have u here too, so u is third power.
+
+418
+01:41:07,876 --> 01:41:08,876
+Alright.
+
+419
+01:41:09,876 --> 01:41:10,876
+And,
+
+420
+01:41:25,779 --> 01:41:29,779
+bu
+
+421
+01:41:33,171 --> 01:41:51,491
+1 over 1 minus 1 over x squared, çünkü we know what k is, right? We already found k, so we'll just write it, right? And you can do that integration at home.
+
+422
+01:41:58,323 --> 01:42:14,027
+Bu, bu
+
+423
+01:42:26,355 --> 01:42:28,155
+So, let's write this way.
+
+424
+01:42:28,155 --> 01:42:32,956
+So, we should make sure
+
+425
+01:42:40,500 --> 01:42:42,500
+Evet.
+
+426
+01:42:48,467 --> 01:42:55,967
+This is a piecewise function, so for x larger than, for x smaller than one.
+
+427
+01:43:04,787 --> 01:43:08,787
+0, or x
+
+428
+01:43:16,851 --> 01:43:22,912
+Larger than 1, we have 1 minus 1 over x square.
+
+429
+01:43:29,427 --> 01:43:36,427
+Evet, bu
+
+430
+01:43:36,427 --> 01:43:43,427
+Cumulative function and now it's very easy to draw this, right?
+
+431
+01:43:56,115 --> 01:44:01,100
+Bu, bu
+
+432
+01:44:08,051 --> 01:44:12,171
+C'yı
+
+433
+01:44:12,171 --> 01:44:15,612
+Probabiliterle
+
+434
+01:44:15,612 --> 01:44:17,791
+Lifetime
+
+435
+01:44:17,791 --> 01:44:19,631
+to exceed 5 years.
+
+436
+01:44:20,551 --> 01:44:21,072
+Basically
+
+437
+01:44:32,228 --> 01:44:46,228
+c'i bu,
+
+438
+01:44:31,731 --> 01:44:41,032
+Probabilen tov. X, having a value larger than. 5, right, that was the question.
+
+439
+01:44:43,672 --> 01:44:45,172
+And now for this.
+
+440
+01:44:48,967 --> 01:44:50,167
+c'i bu,
+
+441
+01:44:48,467 --> 01:44:51,948
+You can do
+
+442
+01:44:56,307 --> 01:44:58,807
+Yeni, birçok integrasyon, if you want.
+
+443
+01:45:00,247 --> 01:45:05,807
+So, from 5 to infinity, integrat the density.
+
+444
+01:45:09,747 --> 01:45:12,667
+Bu da bir result.
+
+445
+01:45:26,547 --> 01:45:27,467
+ve...
+
+446
+01:45:41,363 --> 01:45:48,363
+ve bu
+
+447
+01:45:48,363 --> 01:45:58,859
+bir
+
+448
+01:46:09,332 --> 01:46:10,872
+Breed 2.
+
+449
+01:46:19,507 --> 01:46:21,420
+Bir tüylen, 4 okuruk.
+
+450
+02:00:06,836 --> 02:00:08,836
+Ok, let's continue.
+
+451
+02:00:17,235 --> 02:00:22,435
+We will look at expected value and variance of continuous variables.
+
+452
+02:00:30,739 --> 02:00:33,500
+expected value of continuous random variable.
+
+453
+02:00:35,899 --> 02:00:40,459
+Now, this is defined as the expected value.
+
+454
+02:00:43,279 --> 02:00:49,699
+You know what it is, so I will not tell what it is.
+
+455
+02:00:50,299 --> 02:00:53,539
+You know what expected value is from discrete random variables.
+
+456
+02:00:55,956 --> 02:01:01,956
+Bu, a continuosu random variable x, instead of summation, we have integration.
+
+457
+02:01:01,956 --> 02:01:08,956
+And we will do that from minus infinity to positive infinity.
+
+458
+02:01:08,956 --> 02:01:13,956
+And we will multiply x with the density function.
+
+459
+02:01:20,916 --> 02:01:24,908
+ve bu dağılık,
+
+460
+02:01:29,779 --> 02:01:30,279
+Now,
+
+461
+02:01:35,539 --> 02:01:45,940
+The expected value of a function of continuous random variable is defined like this.
+
+462
+02:01:49,492 --> 02:01:50,492
+expected value.
+
+463
+02:01:55,572 --> 02:02:02,572
+Function of continuous random variable.
+
+464
+02:02:13,811 --> 02:02:39,811
+So here, instead of x, you have g of x. So let's say we want to find we have y equals to g of x. And then what is the expected value of y, right?
+
+465
+02:02:40,728 --> 02:02:51,728
+bir
+
+466
+02:02:40,724 --> 02:02:47,724
+Ve bu
+
+467
+02:03:07,315 --> 02:03:18,315
+Then we will again multiply with the density, and dx, and take the derivative.
+
+468
+02:03:26,163 --> 02:03:27,163
+So,
+
+469
+02:03:40,948 --> 02:03:45,407
+So, to give simple examples for this,
+
+470
+02:03:52,979 --> 02:03:53,979
+Let's say,
+
+471
+02:04:04,372 --> 02:04:06,772
+Let's say fx, fx
+
+472
+02:04:10,387 --> 02:04:34,387
+is 2 to the x to the minus 3 for x larger than 1, okay, the previous function. And what's the expected value of this? Well, we will integrate.
+
+473
+02:04:34,547 --> 02:04:41,268
+But again, instead of minus infinity, now we need to write one because up to minus, up to one, everything is zero.
+
+474
+02:04:42,788 --> 02:04:44,948
+From one to infinity.
+
+475
+02:04:48,547 --> 02:04:52,788
+And x is x.
+
+476
+02:04:54,427 --> 02:04:58,827
+And then we have two to the x to the minus three.
+
+477
+02:05:00,884 --> 02:05:15,764
+dx. So this should be lowercase. So we have from 1 to infinity, we can take 2 here, x to the minus 2.
+
+478
+02:05:21,427 --> 02:05:22,427
+dx.
+
+479
+02:05:22,427 --> 02:05:38,708
+And that's minus 2 x to the minus 1 from 1 to infinity which is 2.
+
+480
+02:05:38,708 --> 02:05:46,368
+And remember that we can also write mu for this.
+
+481
+02:05:46,368 --> 02:05:49,108
+So expected value.
+
+482
+02:05:49,492 --> 02:06:08,779
+Bu mu.
+
+483
+02:06:13,908 --> 02:06:22,347
+So you are just integrating x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times the x times
+
+484
+02:06:26,195 --> 02:06:32,835
+x times the density. And expected value of a function, let's do an example for that.
+
+485
+02:06:50,804 --> 02:07:03,756
+Let's find the expected value of x squared, right? And for the...
+
+486
+02:07:07,923 --> 02:07:11,923
+Bu aynı function, aynı density.
+
+487
+02:07:11,923 --> 02:07:17,923
+Yani, bir tane to infinity,
+
+488
+02:07:17,923 --> 02:07:23,923
+bu aynı şekilde,
+
+489
+02:07:23,923 --> 02:07:25,923
+x'e,
+
+490
+02:07:25,923 --> 02:07:29,923
+x'e.
+
+491
+02:07:35,604 --> 02:07:40,484
+2, x to the minus 3.
+
+492
+02:07:49,876 --> 02:07:56,876
+Dx.
+
+493
+02:07:56,876 --> 02:07:59,876
+And what is this?
+
+494
+02:07:59,876 --> 02:08:01,876
+From 1 to infinity.
+
+495
+02:08:01,876 --> 02:08:08,876
+So we have x squared and x to the minus 3 canceling out.
+
+496
+02:08:08,876 --> 02:08:10,876
+2
+
+497
+02:08:18,323 --> 02:08:25,323
+We have 2x to the minus 1 dx.
+
+498
+02:08:35,283 --> 02:08:43,844
+And x-minus integration is, if you remember, it's ln, right?
+
+499
+02:08:43,844 --> 02:08:55,263
+So 2 ln x from 1 to infinity.
+
+500
+02:08:56,083 --> 02:08:57,483
+So...
+
+501
+02:08:59,091 --> 02:09:13,099
+Bu bir diğer bir şey, bu bir şeyin de
+
+502
+02:09:20,372 --> 02:09:20,872
+So,
+
+503
+02:09:27,764 --> 02:09:29,764
+Bu da bu bu?
+
+504
+02:09:55,604 --> 02:10:03,604
+Bu, in this case, expected value of x squared is infinite.
+
+505
+02:10:03,604 --> 02:10:07,604
+This is possible.
+
+506
+02:10:13,747 --> 02:10:15,884
+ve bu
+
+507
+02:10:23,028 --> 02:10:30,148
+Now, expectation is a linear operation.
+
+508
+02:10:30,148 --> 02:10:37,148
+So, you can use, sometimes you can use it.
+
+509
+02:10:37,148 --> 02:10:39,868
+So, expectation.
+
+510
+02:10:44,020 --> 02:10:45,020
+is
+
+511
+02:10:47,180 --> 02:10:48,360
+linear.
+
+512
+02:10:53,555 --> 02:10:55,339
+Bu da
+
+513
+02:11:06,292 --> 02:11:28,731
+expectatio ala, a, x plus b is a times expectation of x plus b and for all a, b in real numbers.
+
+514
+02:11:32,212 --> 02:11:55,212
+ve, also, expectiyle, some random variables, like x1 plus x2 plus up to xn, is some of expectation of these things term by term.
+
+515
+02:11:55,212 --> 02:11:59,212
+So expectation of x1 plus expectation of x2.
+
+516
+02:12:01,235 --> 02:12:04,515
+up to expectation of Xn.
+
+517
+02:12:12,083 --> 02:12:34,203
+So, these properties sometimes help you finding the expectations. So, if you can easily find the expectation of x1, x2, xn, you can just use this identity and find the expectation of the sum.
+
+518
+02:12:55,572 --> 02:13:03,971
+Gamma distribüsü, for example. Gamma distribüsü, or negative binomyal distribüsü.
+
+519
+02:13:17,716 --> 02:13:33,316
+So, if you have a distribution that is a sum of, because gamma, we didn't learn it yet, but gamma is sum of exponentials.
+
+520
+02:13:38,036 --> 02:13:43,556
+So, again, we didn't learn exponential distribution yet, but we will learn it.
+
+521
+02:13:43,556 --> 02:13:55,716
+And so, gamma distribution is a sum of exponential distribution, and you can use this property to find the expected value of gamma distribution.
+
+522
+02:14:03,412 --> 02:14:15,412
+Now let's look at varians, if you don't have any question from this, this part. Let me add some pages.
+
+523
+02:14:26,387 --> 02:14:29,387
+So, variyans.
+
+524
+02:14:29,387 --> 02:14:30,387
+So, variyans
+
+525
+02:14:30,387 --> 02:14:33,587
+of a
+
+526
+02:14:33,587 --> 02:14:35,587
+continuous random variable.
+
+527
+02:14:35,587 --> 02:14:38,587
+Now,
+
+528
+02:14:38,587 --> 02:14:43,587
+the canonical
+
+529
+02:14:43,587 --> 02:14:46,587
+definition of variyances
+
+530
+02:14:46,587 --> 02:14:51,587
+if you remember it is expected value of
+
+531
+02:14:55,220 --> 02:15:19,700
+x minus mu x and you take the square and take the expectation and we learned this in discrete distributions and this is still valid. Also, there was another form. So this is like form one and the other form is expected value of
+
+532
+02:15:20,243 --> 02:15:25,243
+X is squared minus Mu x is squared.
+
+533
+02:15:25,243 --> 02:15:31,243
+So you can see this form two.
+
+534
+02:15:31,243 --> 02:15:45,243
+And form one is more helpful when you want to understand what variances.
+
+535
+02:15:47,123 --> 02:15:53,243
+Varyansı, the expected value of the difference from the mean, right?
+
+536
+02:15:54,243 --> 02:16:03,023
+And form two is helpful when you want to do calculations because it's easier to just calculate this.
+
+537
+02:16:03,804 --> 02:16:06,843
+You already have this, you should already have the expected value.
+
+538
+02:16:07,644 --> 02:16:12,683
+You can calculate the expected value of x squared.
+
+539
+02:16:13,779 --> 02:16:16,779
+ve kolaylaşılık, ve kolaylaşılık, yöntemizde.
+
+540
+02:16:16,779 --> 02:16:27,779
+Ve, in practice, when we want to do the calculations, we will mostly use Form 2,
+
+541
+02:16:27,779 --> 02:16:30,779
+because it will be easier to calculate.
+
+542
+02:16:30,779 --> 02:16:36,779
+But when we think of what variance is et cetera, Form 1 is more helpful.
+
+543
+02:16:43,092 --> 02:16:50,132
+If you want to write these for continuous random variables, how will we write them?
+
+544
+02:16:52,051 --> 02:17:10,212
+So for the form one, we will have from integration from minus infinity to plus infinity, x minus, this should be lowercase x, x minus x is square.
+
+545
+02:17:11,827 --> 02:17:13,827
+ve denizde
+
+546
+02:17:15,827 --> 02:17:17,827
+ve x
+
+547
+02:17:17,827 --> 02:17:19,827
+Bu form 1
+
+548
+02:17:19,827 --> 02:17:38,507
+Bu
+
+549
+02:17:38,932 --> 02:17:44,932
+Şimdi bu part, bu part'in altyazı.
+
+550
+02:17:44,932 --> 02:18:06,636
+Bu, bu part'in altyazı.
+
+551
+02:18:07,891 --> 02:18:10,891
+Densi.
+
+552
+02:18:16,628 --> 02:18:41,548
+Bu, bu
+
+553
+02:18:44,755 --> 02:18:45,755
+Um,
+
+554
+02:18:49,108 --> 02:18:50,380
+bu
+
+555
+02:19:04,531 --> 02:19:06,912
+So to give an example,
+
+556
+02:19:10,899 --> 02:19:18,899
+Let's continue from the last function. What was the function?
+
+557
+02:19:20,899 --> 02:19:21,899
+Sorry.
+
+558
+02:19:23,899 --> 02:19:34,899
+It was f of x equals to 2 times x to the minus 2, right?
+
+559
+02:19:36,899 --> 02:19:37,771
+Let me check.
+
+560
+02:19:45,236 --> 02:19:47,236
+2x-3
+
+561
+02:19:50,835 --> 02:19:57,835
+bu
+
+562
+02:19:57,835 --> 02:19:59,835
+x
+
+563
+02:19:59,835 --> 02:20:01,835
+1
+
+564
+02:20:01,835 --> 02:20:03,835
+right
+
+565
+02:20:03,835 --> 02:20:05,835
+or
+
+566
+02:20:05,835 --> 02:20:07,835
+1
+
+567
+02:20:07,835 --> 02:20:08,835
+and
+
+568
+02:20:16,659 --> 02:20:24,860
+So, expectation of x was 2, we found it earlier. And also we found expectation of x squared, right?
+
+569
+02:20:28,260 --> 02:20:28,819
+Here.
+
+570
+02:20:31,260 --> 02:20:34,940
+Expectation of x squared. So, it was infinity.
+
+571
+02:20:41,396 --> 02:20:45,396
+Now, what is the variance of x?
+
+572
+02:20:48,396 --> 02:20:49,396
+Right?
+
+573
+02:20:50,396 --> 02:20:53,396
+So, everything is here now.
+
+574
+02:20:53,396 --> 02:20:57,396
+We can just use this form 2, right?
+
+575
+02:21:01,396 --> 02:21:08,396
+Variance of x is expectation of x squared minus
+
+576
+02:21:08,531 --> 02:21:33,531
+Mu x is square, and this guy is infinity, this guy is 2 square, 4. And here again variances infinite, so this is possible, so some again variances in this case is infinite. But that's how we calculate.
+
+577
+02:21:42,995 --> 02:21:43,995
+Um,
+
+578
+02:22:42,004 --> 02:22:47,644
+So, just to remind you, let's write some properties of variances.
+
+579
+02:23:03,219 --> 02:23:04,459
+ve
+
+580
+02:23:08,819 --> 02:23:36,139
+Varyansı, a times x plus b is a squared times variance of x. And b, variance of a constant, is 0. So we don't see b at all here. And normally,
+
+581
+02:23:37,652 --> 02:23:51,051
+You cannot do this. Normally you cannot say variance of let's say x plus y and x and y are random variables here.
+
+582
+02:23:56,147 --> 02:24:12,867
+You cannot say this normally, but if there is a situation, if some condition holds, we can say, and that condition is x and y should be independent.
+
+583
+02:24:12,867 --> 02:24:18,187
+So for independent.
+
+584
+02:24:22,963 --> 02:24:28,963
+x and y, we have this equation.
+
+585
+02:24:57,987 --> 02:25:01,987
+Bu programı başlıyor.
+
+586
+02:25:01,987 --> 02:25:03,987
+Bu programı başlıyor, ama
+
+587
+02:25:04,987 --> 02:25:10,987
+bir programı başlıyor, bu programı başlıyor.
+
+588
+02:25:10,987 --> 02:25:15,987
+Bu programı başlıyor.
+
+589
+02:25:20,852 --> 02:25:21,852
+Ok, so
+
+590
+02:25:31,219 --> 02:25:38,251
+Bu, bu
+
+591
+02:26:04,852 --> 02:26:10,492
+So, let's talk about functions of continuous random labels.
+
+592
+02:26:31,188 --> 02:26:38,188
+Bunlar, bu
+
+593
+02:26:45,971 --> 02:26:55,971
+So if x is a continuous random variable,
+
+594
+02:26:59,092 --> 02:27:01,852
+y is g of x.
+
+595
+02:27:04,731 --> 02:27:08,731
+Then y itself is a random variable.
+
+596
+02:27:25,683 --> 02:27:29,283
+So, we should be able to, we can find
+
+597
+02:27:32,915 --> 02:27:34,859
+We can find...
+
+598
+02:27:39,924 --> 02:27:41,924
+Cumulative distribisyon,
+
+599
+02:27:44,724 --> 02:27:46,924
+Densi-functions, et cetera.
+
+600
+02:28:02,164 --> 02:28:27,084
+So, when we want to do this, when we want to find like, which of these, like when we want to find cumulative probability, density or other things, usually it's easier to start from,
+
+601
+02:28:27,796 --> 02:28:30,175
+Cumülatif function.
+
+602
+02:28:39,379 --> 02:28:54,379
+In general, we want to first find this because if you can find continuous, if you can find cumulative function, we can take the derivative and find density.
+
+603
+02:28:54,379 --> 02:29:01,379
+But first of all, we must find the range. So make sure you first find range.
+
+604
+02:29:01,379 --> 02:29:05,379
+Find
+
+605
+02:29:06,868 --> 02:29:13,387
+Range of Y, ok, and
+
+606
+02:29:19,412 --> 02:29:37,711
+Range of y is g of x such that f of x is larger than zero.
+
+607
+02:29:45,203 --> 02:29:47,203
+Fakat bu konusunda var.
+
+608
+02:29:47,203 --> 02:30:05,203
+Bu konusunda var.
+
+609
+02:30:05,203 --> 02:30:13,100
+Ve bu konusunda var.
+
+610
+02:30:16,788 --> 02:30:20,788
+Cumulative Density.
+
+611
+02:30:20,788 --> 02:30:35,788
+And remember that Cumulative Density is Probability of y having a value less than or equal to y.
+
+612
+02:30:35,788 --> 02:30:43,788
+And y in this case is g of x, right?
+
+613
+02:30:43,891 --> 02:30:54,891
+So, we will need to find the probability of G of x, a value less than or equal to y.
+
+614
+02:30:54,891 --> 02:30:56,891
+Okay?
+
+615
+02:30:56,891 --> 02:31:06,891
+And remember y is a noun value here. It's a number or something, right? So we know y.
+
+616
+02:31:07,476 --> 02:31:12,476
+Ve bu şekilde bu şekilde.
+
+617
+02:31:35,667 --> 02:31:37,667
+ve cumulative dönstık y.
+
+618
+02:31:41,667 --> 02:31:43,667
+So, that's the general idea.
+
+619
+02:31:48,468 --> 02:31:50,468
+Let's look at an example.
+
+620
+02:31:55,379 --> 02:31:57,379
+Bu, bir örnek.
+
+621
+02:32:29,012 --> 02:32:43,412
+So let x be uniform random variable between 0 and 1. So if you remember,
+
+622
+02:33:01,620 --> 02:33:13,620
+We have already seen this. So a is 0, b is 1. Today at the beginning of the lecture we have seen this.
+
+623
+02:33:13,620 --> 02:33:23,620
+And let y be e to the x.
+
+624
+02:33:28,308 --> 02:33:32,608
+A, what is the CDF of y?
+
+625
+02:33:38,644 --> 02:33:43,024
+B, what is the density of y?
+
+626
+02:33:46,932 --> 02:33:51,932
+Ve
+
+627
+02:33:51,932 --> 02:34:13,420
+bir
+
+628
+02:34:14,515 --> 02:34:16,015
+ve solucu.
+
+629
+02:34:25,716 --> 02:34:29,316
+X has density,
+
+630
+02:34:32,675 --> 02:34:37,236
+so we know that X densities
+
+631
+02:34:42,388 --> 02:35:00,328
+If x is less than 0, we have 0. If x is larger than 1, we have 0. And if x is between a,
+
+632
+02:35:03,667 --> 02:35:09,167
+ve B, 1 over B minus A.
+
+633
+02:35:09,167 --> 02:35:11,368
+We found it today, right?
+
+634
+02:35:11,368 --> 02:35:13,667
+We calculated this.
+
+635
+02:35:13,667 --> 02:35:19,167
+So, just put these commas there.
+
+636
+02:35:19,167 --> 02:35:21,167
+Okay?
+
+637
+02:35:21,167 --> 02:35:27,667
+And also we found its cumulative function too.
+
+638
+02:35:33,332 --> 02:35:56,572
+If x is between a and b, it was x minus a divided by b minus a, and it was zero, sorry, it's not zero, right?
+
+639
+02:36:00,012 --> 02:36:00,452
+So,
+
+640
+02:36:02,036 --> 02:36:04,299
+İlk önce, yazarın,
+
+641
+02:36:11,796 --> 02:36:14,195
+So, if x is
+
+642
+02:36:16,116 --> 02:36:19,956
+smaller than 0, we have 0.
+
+643
+02:36:21,076 --> 02:36:22,515
+If x is
+
+644
+02:36:23,876 --> 02:36:26,836
+larger than 1, we have 1.
+
+645
+02:36:27,876 --> 02:36:29,316
+Now in between,
+
+646
+02:36:34,880 --> 02:36:36,880
+bir
+
+647
+02:36:34,868 --> 02:36:39,488
+We have x minus a divided by b minus a, right?
+
+648
+02:36:39,708 --> 02:36:42,347
+We calculate like this for me.
+
+649
+02:36:44,728 --> 02:36:49,068
+And what is the range of x?
+
+650
+02:36:49,368 --> 02:36:52,448
+We are now reviewing what we know about x.
+
+651
+02:36:52,847 --> 02:36:54,148
+What is the range of x?
+
+652
+02:36:58,515 --> 02:37:03,515
+X's range is between 0 and 1, right?
+
+653
+02:37:29,236 --> 02:37:36,355
+Densi-dense function is non-zero or above zero, only between zero and one.
+
+654
+02:37:37,476 --> 02:37:40,436
+Everything else, anywhere else, it's just zero.
+
+655
+02:37:42,835 --> 02:37:50,756
+That means it's ranges, this range between zero and one, right?
+
+656
+02:37:51,675 --> 02:37:54,916
+Now, let's try to find...
+
+657
+02:37:57,587 --> 02:38:05,988
+Range of y, so we will start with range, that's important. So, what is the range of y?
+
+658
+02:38:11,283 --> 02:38:13,283
+İlk başlayalım.
+
+659
+02:38:29,012 --> 02:38:52,876
+So, for the values in between, we assume the value will be, so, range of y is set of g of x such that f of density of x.
+
+660
+02:38:55,572 --> 02:39:22,092
+Yani,
+
+661
+02:39:28,788 --> 02:39:56,747
+G of 0 ve G of 1, right? We are only interested in this range. Because the values before 0, these values, density is not larger than 0. So we don't care about them. They are not in our range. And the values after 1, again, density is
+
+662
+02:39:56,819 --> 02:40:21,419
+0 derler, we don't care about them, we only care about the values between 0 and 1. And logically, our new function should be defined in the same place. So, g of 0 is e to the 0.
+
+663
+02:40:23,188 --> 02:40:26,507
+ve g1, e1.
+
+664
+02:40:27,507 --> 02:40:31,868
+ve 1, e1.
+
+665
+02:40:34,828 --> 02:40:37,507
+This is our
+
+666
+02:40:49,075 --> 02:40:50,075
+RENÇİ
+
+667
+02:40:54,835 --> 02:41:17,396
+Now, from range, we can immediately go to, we can immediately go to some values of cumulative distribution, because cumulative distribution, in cumulative distribution of y,
+
+668
+02:41:21,716 --> 02:41:26,155
+All the values less than this value will be 0.
+
+669
+02:41:28,155 --> 02:41:32,876
+Because up to there, density is 0 too.
+
+670
+02:41:32,876 --> 02:41:47,155
+Right? So, up to, for y, which, we should write y here, for y smaller than 1, we have 0.
+
+671
+02:41:47,827 --> 02:41:50,827
+Bu, Bayes'in daha büyük bir şey.
+
+672
+02:41:54,227 --> 02:42:10,927
+We have 1 as cumulative distribution. Now, the question would be then what is the density, sorry, what is the cumulative function when we have y between 1 and e?
+
+673
+02:42:15,860 --> 02:42:17,548
+Bu soru
+
+674
+02:42:23,123 --> 02:42:24,324
+Clean this.
+
+675
+02:42:43,316 --> 02:42:50,515
+Now, for this guy, we can go from the definition of
+
+676
+02:42:54,772 --> 02:42:56,772
+...definition of...
+
+677
+02:43:00,211 --> 02:43:02,211
+Cumulative distribution.
+
+678
+02:43:02,211 --> 02:43:03,627
+So...
+
+679
+02:43:07,827 --> 02:43:29,707
+Or, y between 1 and e, f of y, now, the definition of cumulative distribution is, cumulative distribution is the probability of y having value less than or equal to y.
+
+680
+02:43:34,324 --> 02:43:37,364
+y is e to the x
+
+681
+02:43:46,484 --> 02:43:55,364
+Ve şimdi, we cannot directly calculate this, right?
+
+682
+02:43:55,364 --> 02:44:09,684
+We cannot directly calculate this, because we can calculate things like probability of x smaller than some value, right?
+
+683
+02:44:12,020 --> 02:44:15,139
+So, we need x here, not a function of x.
+
+684
+02:44:16,560 --> 02:44:26,380
+But what we can do is, we can apply the inverse of g here, right?
+
+685
+02:44:26,479 --> 02:44:30,040
+So, g is e to the x.
+
+686
+02:44:31,319 --> 02:44:35,479
+We can apply inverse function.
+
+687
+02:44:35,479 --> 02:44:42,731
+So,
+
+688
+02:44:47,860 --> 02:44:54,340
+To the reverse function, if you put e to the x, it should give us y.
+
+689
+02:44:58,900 --> 02:44:59,659
+X, sorry.
+
+690
+02:45:05,075 --> 02:45:10,995
+So, g to the x brings us from x to y.
+
+691
+02:45:13,875 --> 02:45:17,795
+So, y is equal to g to the x.
+
+692
+02:45:20,195 --> 02:45:29,315
+And its inverse function should bring us from y to x, right?
+
+693
+02:45:32,564 --> 02:45:53,564
+So, I am kind of making this quite complicated here, but it's very easy actually. So, you can think of this as, so inverse of power is logarithm. So, you can just take the logarithm of both sides.
+
+694
+02:45:59,219 --> 02:46:12,020
+So, probability of logarithm of e to the x is x and that should be smaller than or equal to ln y, right?
+
+695
+02:46:17,299 --> 02:46:18,411
+ve
+
+696
+02:46:22,388 --> 02:46:31,148
+Now, we came to original density, original cumulative function.
+
+697
+02:46:31,148 --> 02:46:35,148
+So, f of...
+
+698
+02:46:39,540 --> 02:46:48,540
+This is f , and inside instead of x, you will have ln x, ln y.
+
+699
+02:46:56,531 --> 02:47:04,531
+ve yine, we know what value y is somehow, so we know it's ln2, we know it's logarithm 2.
+
+700
+02:47:08,371 --> 02:47:09,371
+So,
+
+701
+02:47:45,363 --> 02:48:04,523
+So here I wrote a and b, but sorry for that. We don't have a and b here, right? Because a is, we have it, but a is 0, b is 1. So let's add them.
+
+702
+02:48:07,263 --> 02:48:07,763
+So
+
+703
+02:48:13,556 --> 02:48:17,835
+1-1 over 1-0 is 1.
+
+704
+02:48:23,987 --> 02:48:27,387
+1 over 1 ish, bu bir şey.
+
+705
+02:48:32,755 --> 02:48:38,315
+ve here x-0 divided by 1-0 is x.
+
+706
+02:48:46,100 --> 02:48:50,779
+ve neks. Ve instead of a and b, I still return 0 and 1.
+
+707
+02:49:15,316 --> 02:49:29,716
+So, we know what this is because we know its definition, cumulative function of x is x, right?
+
+708
+02:49:29,716 --> 02:49:35,596
+So, this is just...
+
+709
+02:49:40,979 --> 02:49:42,979
+Bayes, kay?
+
+710
+02:49:53,780 --> 02:50:04,940
+Bu, bu
+
+711
+02:50:09,747 --> 02:50:11,747
+Cumulat function of x.
+
+712
+02:50:16,747 --> 02:50:21,747
+With this now we have all the parts, we have this part too.
+
+713
+02:50:29,203 --> 02:50:53,203
+F of y here and then I will finish. F of y is 0 if y is less than 1, ln y if y is between 1 and e, and 1 if…
+
+714
+02:50:53,683 --> 02:50:57,683
+y'e, we found f.
+
+715
+02:50:58,683 --> 02:51:01,683
+Now the rest is actually required easily.
+
+716
+02:51:03,683 --> 02:51:05,683
+You can do that at home.
+
+717
+02:51:36,564 --> 02:51:42,564
+Yani EY'ye kadar kolayca bulundur.
+
+718
+02:51:44,564 --> 02:51:48,564
+Şimdi bu videoyu izlediğiniz için.
+
+719
+02:51:59,059 --> 02:52:11,467
+Bir soru
