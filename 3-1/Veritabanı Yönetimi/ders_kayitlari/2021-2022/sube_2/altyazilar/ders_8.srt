@@ -1,0 +1,1559 @@
+1
+00:02:40,532 --> 00:02:41,552
+Arkadaşlar, hoş geldiniz.
+
+2
+00:02:42,992 --> 00:02:46,292
+Şimdi Toprak Hoca gelince tekrar ben devredeceğim kendisine.
+
+3
+00:02:46,852 --> 00:02:47,932
+Lapa devam edeceksiniz.
+
+4
+00:02:48,072 --> 00:02:49,052
+1-2 dakika bekleyelim.
+
+5
+00:02:50,812 --> 00:02:51,912
+Teşekkür ederim hocam.
+
+6
+00:05:15,060 --> 00:05:15,600
+Merhaba hocam.
+
+7
+00:05:20,723 --> 00:05:23,944
+Hocam hoş geldiniz. Şimdi sizi host yaptım.
+
+8
+00:05:25,584 --> 00:05:27,423
+Hoş bulduk hocam. Oldu. Teşekkür ederim.
+
+9
+00:05:27,843 --> 00:05:29,663
+İyi dersler size. Hoşçakalın arkadaşlar.
+
+10
+00:05:30,444 --> 00:05:31,243
+Hoşçakalın hocam.
+
+11
+00:05:34,836 --> 00:05:37,156
+Merhaba arkadaşlar, nasılsınız? Nasıl gidiyor?
+
+12
+00:05:41,492 --> 00:05:43,092
+Teşekkürler hocam, iyisin.
+
+13
+00:05:44,272 --> 00:05:51,572
+Ben de iyiyim. Hayat normaliyle, tabii dert edecek bir şey ararsanız durumda olabilirsiniz.
+
+14
+00:05:52,472 --> 00:05:55,432
+Quiz nasıl geçti, kolay mı, zor muydu, neler yaptınız?
+
+15
+00:06:03,507 --> 00:06:08,187
+Bence iyiydi ama cevapları açıkladınız mı? Bir yerde paylaştınız mı? Haberim yok da.
+
+16
+00:06:09,527 --> 00:06:18,288
+Paylaşmadık. Paylaşabiliriz de, paylaşamayız da. Yani şöyle birinci quizi İdris Hoca'nın hazırladığı ve o okuyacak. O yüzden top 10'da biraz.
+
+17
+00:06:19,367 --> 00:06:28,747
+Ama kolaydı bence. Bütün sorular şeydi. Biraz yani keywordleri hatırlamada şey vardı. Böyle kalıplar geldiğinde bir 3-5 saniye baktığımda onu fark ettim.
+
+18
+00:06:30,259 --> 00:06:36,399
+Evet, hocam keşke bilgisayarda olsa, deneme yanılmayla onları oturttururduk da, kağıtta olunca.
+
+19
+00:06:37,180 --> 00:06:46,659
+Yani doğru, kesinlikle katılıyorum ama şu an yani laba şey, yani şöyle düşünün, bütün 3 grupta toplam 170 kişi var.
+
+20
+00:06:47,839 --> 00:06:51,439
+Yani lablara da 10-15 kişi alabiliyorsun, çarpı 17 gibi bir durum oluyor.
+
+21
+00:06:52,459 --> 00:06:55,819
+Yani bir grup 5-6, bir grup 6-7, bir grup 7-8, o da çok.
+
+22
+00:06:56,660 --> 00:06:58,100
+Olmaz gibi görünüyor yani.
+
+23
+00:07:02,004 --> 00:07:26,144
+Alan yetmedi demiş bir arkadaş olabilir. Yani soruların şeyine göre. Tamam onu da ben değerlendireyim İdris Hoca'ya da söyleyeyim. Yani gerçi diğer kuyucuları o hazırlamayacak da. Öyle. Yani şeyle ilgili mail atmak isterseniz İdris Hoca ile iletişim yapabilirsiniz.
+
+24
+00:07:29,043 --> 00:07:34,603
+Öyle diyelim. Başka ufaktan bu haftanın şeyine başlayalım.
+
+25
+00:07:39,187 --> 00:07:40,207
+ekranı paylaşayım.
+
+26
+00:07:42,048 --> 00:07:42,847
+İyi geldi mi ekran?
+
+27
+00:07:52,180 --> 00:07:55,500
+Şuradan çetiri açayım. Evet demiş. Teşekkür ederim.
+
+28
+00:07:56,980 --> 00:08:00,820
+Şimdi arkadaşlar, bugünün konusu yazıyor. Gruplama ve sıralama fonksiyonları.
+
+29
+00:08:00,860 --> 00:08:03,740
+Bunu agrofiyat deniyor. Genelde onu kullanırız.
+
+30
+00:08:05,100 --> 00:08:09,300
+Şimdi mesela, şuradan ben bütün tabloları hemen açabileyim diye şey yaptım.
+
+31
+00:08:10,980 --> 00:08:14,639
+İlk 3 haftadaki herhangi bir sorguyu düşünün veya koçdaki herhangi bir sorguyu düşünün.
+
+32
+00:08:15,279 --> 00:08:18,000
+Yani ne soruyordu bize? İşte şurada yaşayanın adını soyadın.
+
+33
+00:08:18,548 --> 00:08:28,967
+Buna gel, burada bir şeye göre filtrele şunu yazdır. Şunun çalıştığı departman, yani 5 numaralı departmanla çalışan şeyler. Yine gel, bu tabloda sorgula, buradaki bir sütun ismini yazdır gibi.
+
+34
+00:08:29,768 --> 00:08:41,327
+Hani gerçek hayatta bize bu soruyu sorsalar, yani kağıt kalem gerekmeden böyle tablolara bakıp gözle, kaç tane içinde söyleyebileceğimiz sorgulardı yani bence.
+
+35
+00:08:44,916 --> 00:08:52,536
+Nasıl diyeyim? Yani şimdi mesela şunların toplamı direkt buraya bakınca görülebilen bir şey değil. Üstünde işlemler yapılması gerekiyor.
+
+36
+00:08:53,375 --> 00:09:00,516
+Ve bu tarz şeyleri göreceğiz. Yani buradaki direkt anlık bir bilgi değil. Bunun üzerinde bazı işlemler yapılmış şeyleri göreceğiz.
+
+37
+00:09:01,676 --> 00:09:06,615
+O da bize bazı hani sorgunun şeyine göre kolaylıklar sağlıyor olacak.
+
+38
+00:09:09,043 --> 00:09:31,084
+Mesela, işte bunların ilk şeyi, AVERAGE, COUNT, MINT, MAX ve SUM. Bunu zaten geçen haftanın son slide'ımızda vardı. Bir hızlıca onu tekrar etmiş olalım. Yani yine bu tabloyu yapacağız. SELECT. Şunu bir alışkanlıktan yazayım. FROM, EMPLOYEE. Hani işlem yapmak saları da mantıklı olduğu için.
+
+39
+00:09:33,043 --> 00:09:35,984
+Şey diyebiliriz, ne diyebiliriz? Önce COUNT'u görelim.
+
+40
+00:09:37,556 --> 00:09:43,336
+Şimdi count da direkt burada yer alan bir bilgi değil. Yani bu tablonun kaç alanı var? 40 alanı var. Bunu yazdıracak.
+
+41
+00:09:45,115 --> 00:09:52,615
+Onun haricinde işte max salary dediğimizde tek bir, yani toplam en büyük maaş gösterecek.
+
+42
+00:09:52,696 --> 00:09:57,156
+Hani bu tablo 40 satımdan ucuzsa da bu sorgun şeyi tek satırlık.
+
+43
+00:09:57,156 --> 00:10:02,156
+Bunu yazarken bunları düşünmemiz lazım. Buraya tekrar fnm dediğimizde.
+
+44
+00:10:02,484 --> 00:10:12,443
+Hata verecektir. Çünkü kimin türenimini yaz? Yani 40 tane vardı. Şunlar tek satır dönerken bu 40 satır dönüyorsa orada bir sorun oluşuyor. O yüzden bu şekilde yazamıyoruz.
+
+45
+00:10:14,403 --> 00:10:29,163
+Bu derste göreceğimiz ilk şey bunlar. Şuna geleceğiz. Orası da önemli. Mesela ne diyor? Seyiriz departmanında kaç kişinin çalıştığını, toplam maaşlarını en yüksek ve en düşük ortalama maaşı yazın. Aslında çok yine aynı soru yani.
+
+46
+00:10:30,355 --> 00:10:34,675
+Sadece SELECT departmanı diye ayrıca bir şey yapmamız lazım. Şunu bir şöyle yapabilirsem.
+
+47
+00:10:37,895 --> 00:10:41,516
+Bu da bayağı küçük oluyordu aynı ekranda görünsün diye. Bunu düşünebildim.
+
+48
+00:10:44,076 --> 00:10:46,036
+Neydi soruyu tabii ki hatırlamıyorum.
+
+49
+00:10:48,115 --> 00:10:51,436
+SELECT departmanında kaç kişinin çalıştığı? Şimdi çalıştığı departmanı nereden bulabilirim?
+
+50
+00:10:51,975 --> 00:10:57,956
+Adı burada yazıyor SELECT. Maaşı da şurada yazıyor. O yüzden bu iki tabloyu birleştireceğim.
+
+51
+00:10:59,572 --> 00:11:08,511
+Şu dursun, SELECT. Neyini soruyordu? Kaç kişinin çalıştığını, toplam, yani hepsini soruyor aslında, tamam.
+
+52
+00:11:13,620 --> 00:11:18,960
+Şunları tek tablo değil, birkaç tabloyu birleştirip yapıyoruz. Yani bunun şeyi o.
+
+53
+00:11:20,759 --> 00:11:25,660
+Department diyelim, sonra employee diyelim.
+
+54
+00:11:27,120 --> 00:11:32,680
+Tamam, bir de bunları birleştirmemiz gerekiyor bir şeye göre. Neye göre birleştiriyormuşuz?
+
+55
+00:11:33,980 --> 00:11:36,180
+Sales'ın Dnumber'ı.
+
+56
+00:11:38,779 --> 00:11:39,596
+Bunun.
+
+57
+00:11:40,596 --> 00:11:41,355
+Dene olsun.
+
+58
+00:11:45,172 --> 00:11:46,652
+Tamam, AND diyelim.
+
+59
+00:11:48,932 --> 00:11:50,971
+Ne diyeceğiz? DNI meşittir.
+
+60
+00:11:53,491 --> 00:11:54,532
+Sales, yani
+
+61
+00:11:54,532 --> 00:11:57,932
+neyi verdi? Sales departmanında kaç şey var?
+
+62
+00:11:58,052 --> 00:12:00,471
+İşte yer, sadece average maaşı bulur.
+
+63
+00:12:00,471 --> 00:12:01,471
+Şöyle.
+
+64
+00:12:08,980 --> 00:12:10,980
+Yani neyi bulduk biz şu an?
+
+65
+00:12:13,379 --> 00:12:18,180
+Sales departmanında kaç tane çalışan var ve bunların ortalama maaşı ne?
+
+66
+00:12:18,779 --> 00:12:19,779
+O da buymuş.
+
+67
+00:12:19,779 --> 00:12:21,779
+Tamam.
+
+68
+00:12:23,779 --> 00:12:24,980
+Bu şekilde.
+
+69
+00:12:27,379 --> 00:12:31,379
+Ne diyor? Sekiz numaralı departmanla çalışan işlerin ortalama ve toplam maaşlarını bulun.
+
+70
+00:12:31,668 --> 00:12:56,867
+Yine aynı soru uzunca yazmamıza gerek yok. Burada 8 dediği için ver de şeyi 8 eşleyeceğiz. Sonra sorduğu sorguyu yazacağız. Hani ilk haftalarda gibi. Burada bir şey yok. Burada görmüş olalım. Ne diyor? Ortalama ve toplam dediği için. Ebruç saları ve sam saları. Bu bilgiler nerede? Employee tablosunda. Burada 8 diye direkt verdiği için diğer tabloya gerek yok. Buna da isim vermişiz. Böyle verebiliyorduk.
+
+71
+00:12:57,268 --> 00:13:11,107
+Buna da 8 demişiz. Sonucumuz bu. Burada ez anahtar sözcüğümüz var. Bunu da aslında önceki haftalarda gördük. Burada sütunların ismine isim vermemizi sağlıyor. Şunu bir alayım.
+
+72
+00:13:14,448 --> 00:13:18,148
+Bildiğinizde biliyorum ki konu bu olduğu için onu anlatmamız gerekiyor.
+
+73
+00:13:22,323 --> 00:13:34,443
+Tamam, şimdi bunun adı average olarak geldi. Şu üstünün üstünden bahsediyorum. Bunun adı sum olarak geldi. Bunu eğer istediğiniz bir isim verebiliriz. Bu karmaşıklaştıkça böyle isim vermek mantıklı olabilir ya da birine raporda vesaire.
+
+74
+00:13:36,303 --> 00:13:43,223
+Ne diyelim? Ortalama maaş, bu da toplam maaş.
+
+75
+00:13:52,307 --> 00:14:03,587
+Yani sadece basitçe bunları değiştirmiş olduk. Büyük yazlığımızdan rağmen küçük geldi. Bu isimlerinde de böyleydi. Onu da bir söylemiş olalım. Yani bu ikisi aynı şeyi söyleyebiliriz.
+
+76
+00:14:05,248 --> 00:14:16,567
+Şimdi buraya ez yazabiliriz dedik, yazmayı da biliriz. Yani şu da deminkisi orguyla birebir aynı şey. Şu virgül koyduğu için bunun bir tane alan olduğunu anlıyor. Ondan sonra boşluk bıraktıysanız ve isim verdiyseniz.
+
+77
+00:14:17,716 --> 00:14:25,235
+O olduğunu anlıyor. Yani, SD'ye de bilirsiniz, DM'ye de bilirsiniz. Anlaşılabilirliği artırmak için böyle bir şey var.
+
+78
+00:14:29,683 --> 00:14:37,683
+Bundan da bahsettik. Middleware projesinde kaç kişinin çalıştığını ve bu çalışanların ortalama amaçlarını, yine aynı sorgu.
+
+79
+00:14:38,583 --> 00:14:47,043
+Yani mantığı aynı, sorgu basit olduğu için şey yapacağım. Şimdi Middleware projesiydi değil mi? Middleware projesi burada ismi.
+
+80
+00:14:47,203 --> 00:14:52,003
+Bu projeden, şuradan kim çalışıyor ona gideceğim. Buradan da buna gideceğim. Üç tabloyu birleştireceğim verle.
+
+81
+00:14:53,364 --> 00:14:55,943
+Sonra kaç kişinin çalıştığı dediği için count yazacağım.
+
+82
+00:14:56,500 --> 00:15:05,340
+Ortalama başladığı için Average Salary diyeceğim. Yani şunu yapabiliriz diye düşünüyorum. Sonra da yeni sorguyu bir basıcı ekleyeceğiz.
+
+83
+00:15:09,620 --> 00:15:12,980
+Üç tablo birleştirdiğimiz için ilgili alanları şey yaptık.
+
+84
+00:15:14,460 --> 00:15:20,840
+Şurada er çalışan sayısı demişiz. Neymiş? Bir gün böyle projesinde dört kişi çalışıyormuş ve ortadan maaşları buymuş.
+
+85
+00:15:22,980 --> 00:15:27,820
+Bu önemli. En genç çalışan çalıştığı projelerin numaraları.
+
+86
+00:15:29,899 --> 00:15:32,940
+Şimdi birinin yaşını nereden anlayabiliriz? Doğum tarihinden anlayabiliriz.
+
+87
+00:15:34,320 --> 00:15:36,679
+O da bizim şey tablomuzda olması lazım şurada.
+
+88
+00:15:40,403 --> 00:15:41,283
+Bu niye böyle oldu?
+
+89
+00:15:43,144 --> 00:15:47,224
+Demin ekran gitti, geldi bir şey oldu mu arkadaşlar? Şimdi şey yazdı da ekranda.
+
+90
+00:15:48,704 --> 00:15:51,144
+Yani diğer kişiler ekranınızı görebilir yazdı da niye şimdi yazdı?
+
+91
+00:15:51,903 --> 00:15:54,004
+Normal hocam. Bir değişiklik yok.
+
+92
+00:15:54,484 --> 00:15:57,004
+Tamam. Ben de şey görünce ne oluyor dedim.
+
+93
+00:15:59,464 --> 00:16:01,303
+Tamam. Şimdi en genç çalışanı bulacağız.
+
+94
+00:16:02,384 --> 00:16:05,104
+Şimdi normalde nasıl oluruz? Şu tabloda doğum tarihleri var.
+
+95
+00:16:05,104 --> 00:16:06,364
+B değil.
+
+96
+00:16:07,572 --> 00:16:18,831
+Bu, en yüksek doğum tarihine sahip olan kişi, büyük olan, en genç kişidir. Mesela bir yazmaya çalışalım. SELECT, neyini soruyordu?
+
+97
+00:16:21,652 --> 00:16:32,231
+Burada bir şey oluyor, bir şey oluyor. En genç çalışan, çalıştığı proje numaralı. Bir de proje numarası diyor. Proje numarasını, tam 3 tabloya gerek yok, şurada var zaten.
+
+98
+00:16:35,279 --> 00:16:37,279
+İlip, PNEO, tamam.
+
+99
+00:16:39,279 --> 00:16:40,971
+PNEO.
+
+100
+00:16:45,331 --> 00:16:52,091
+Herden, Employee'den ve Voxon'dan.
+
+101
+00:16:56,148 --> 00:17:21,788
+Şimdi koşulumuz ne? BDATE'i şey olacak, ne olacak? İşte en yüksek olacak ama en yüksek şeyi bilmiyorum. Yani 1972 olsa buraya yazabilirim ama bilmiyorum onu. Ne yapabilirim diye düşündüğümüzde şu yanlış, onu bir görmüş olalım. O ilk slide'da yazan. Hani bu mesela max salary dediğimizde maksimum maaş veriyordu. İşte average dediğimizde average veriyordu.
+
+102
+00:17:22,192 --> 00:17:24,672
+Bu gitsin, maksimum BD'ye eşit olsun o zaman.
+
+103
+00:17:28,692 --> 00:17:38,632
+Bunu diyemiyoruz. Yani bunu bir kural gibi düşünebilirsiniz. Bu aggregate fonksiyonları verden sonra kullanılamıyor. Yani hemen sonra araya başka keyboard girdiğinde kullanılabiliyor.
+
+104
+00:17:40,211 --> 00:17:50,451
+Bu şekilde direkt diyemiyoruz. Word date'i bilmiyoruz da. Nasıl yapabiliriz? Bunu mecbur, iç içe sorgu kullanmamız gerekiyor diyeceğim. Mecbur deyince hemen şey oldum.
+
+105
+00:17:51,351 --> 00:17:54,592
+Büyük ihtimalle başka şekilde de yapabiliyoruzdur da. Burada öyle göreceğiz.
+
+106
+00:17:55,604 --> 00:18:05,443
+Buradaki şey nokta, bunları şu anlık şurada kullanabildiğimizi bilmek, direkt verden sonra, hani bir değişkenmiş gibi, buna eşittirmiş gibi şey yapamıyoruz.
+
+107
+00:18:06,884 --> 00:18:07,923
+Peki bunu nasıl bulacağız?
+
+108
+00:18:09,584 --> 00:18:11,024
+Buraya bir sorgu yazacağız.
+
+109
+00:18:12,124 --> 00:18:14,384
+Şöyle, ya bunu bulan bir sorgu yazacağız.
+
+110
+00:18:16,524 --> 00:18:17,403
+SELECT.
+
+111
+00:18:21,652 --> 00:18:23,971
+FROM, nereden, employee'den.
+
+112
+00:18:26,552 --> 00:18:29,692
+Bu sorgu normalde neyi bulur? Aslında ilk sorgunun aynısı.
+
+113
+00:18:30,132 --> 00:18:33,771
+Bu tabloya gidecek, bütün birth date'ler arasında maksimum bir tane şeyi yazdıracak.
+
+114
+00:18:33,892 --> 00:18:35,992
+Sadece bunu seçtiğim için. Şimdi sadece burası çalışacak.
+
+115
+00:18:39,508 --> 00:18:42,488
+Şöyle, sintaks hatası verdi.
+
+116
+00:18:49,395 --> 00:18:54,675
+Virgül koyduğum için herhalde. Normalde şurada koymuyoruz ya SELECT'li programlarına.
+
+117
+00:18:59,124 --> 00:19:05,284
+MaxDate buymuş, 1962'miş. Tamam, şimdi bu, evet buyur.
+
+118
+00:19:05,284 --> 00:19:09,584
+BDATE IN desek de aynı sonucu verir değil mi? Yani eşittir işareti yerine.
+
+119
+00:19:10,523 --> 00:19:13,304
+Verir, ama daha vermedi de. Ama verir evet.
+
+120
+00:19:14,023 --> 00:19:14,584
+Tamamdır.
+
+121
+00:19:17,543 --> 00:19:25,023
+Şimdi bu ne döndü? Tek bir değeri buldu. Yani bu buna eşittir diyebiliriz. Öbür türlü ise aslında daha kolay ve olurmuş gibi geliyor ama.
+
+122
+00:19:25,844 --> 00:19:29,844
+Bu aggregate fonksiyonu kullanacaksanız bu şekilde bir sol bir içinde kullanmamız gerekiyor.
+
+123
+00:19:31,844 --> 00:19:33,676
+Bu şekilde çalıştıralım.
+
+124
+00:19:39,316 --> 00:19:59,235
+Mesela bir hata yaptığımızı fark ettim. Şu iki tabloyu birleştirirken neye göre birleştirdiğimizi yazmadım. Çünkü bu kadar şeyde çalışıyor olamaz. Bir en genç çalışan. Neymiş o? Nereden birleşiyor onlar? DNA ve yok. Employee ve Workson SSL'den birleşiyor.
+
+125
+00:20:02,275 --> 00:20:03,355
+SSL'i alıyorum.
+
+126
+00:20:13,683 --> 00:20:28,563
+Yani şurada neyi bulduk? En genç çalışan, 1 ve 2 numaralı projede çalışıyormuş diye düşünüyorum. Bir de şöyle bir şey de, dediği gibi, arkadaşınızın buraya in yazabiliriz.
+
+127
+00:20:28,943 --> 00:20:33,644
+Bunun içindeyse bir liste gibi düşünüyorum, böyle Python'da arama gibi. Bu ikisi birebir aynı sonuç.
+
+128
+00:20:35,784 --> 00:20:40,903
+Şöyle, ama şunu yapamayız. Yani mesela buraya bir de bin, dört diye bir satayım.
+
+129
+00:20:41,344 --> 00:20:45,024
+En yaşlının, hem en gencin çalıştığı şeyler bulmaya çalışacağız.
+
+130
+00:20:49,268 --> 00:20:53,948
+Burada tarayacak. Bunu bir liste gibi düşünüp bunun içindeyse tarayı bu şekilde yapamıyoruz.
+
+131
+00:20:57,460 --> 00:20:59,000
+Bunu da görmüş olduk.
+
+132
+00:21:00,740 --> 00:21:03,280
+Burada, gibi önce tabloyu birleştirmemiz lazım.
+
+133
+00:21:04,079 --> 00:21:06,680
+Yani, tablo yapıyorsak, bir şeyler olması gerekiyor.
+
+134
+00:21:07,680 --> 00:21:08,600
+Birleştirme koşulluğumuz.
+
+135
+00:21:08,760 --> 00:21:11,039
+Yani, bu türlü haritizleniş hakkında birleştirme koşulları.
+
+136
+00:21:11,039 --> 00:21:12,440
+Ama genelde birleştirme koşulları.
+
+137
+00:21:14,539 --> 00:21:16,180
+Bunu kullanamıyoruz dedik.
+
+138
+00:21:17,260 --> 00:21:17,500
+Tamam.
+
+139
+00:21:19,559 --> 00:21:22,320
+Asıl konu, şu.
+
+140
+00:21:22,460 --> 00:21:24,039
+Hani, başta dedim ya, şunlar...
+
+141
+00:21:24,788 --> 00:21:41,788
+İlk sorgularda buradaki değerleri okuyduk sadece. Bununla birlikte şurada istatistiksel işlem yapabilirim. Yani bunu istatistiksel, sadece buradakilerle kısıt değiliz, kendimiz de bir şeyler yapabiliriz. Yani evreci minimuma görebiliriz mesela.
+
+142
+00:21:47,251 --> 00:21:48,251
+Bunun gibi.
+
+143
+00:21:51,251 --> 00:21:55,251
+Şimdi bundan da daha yeni bir şeyler yapabilmeye başlayacağız.
+
+144
+00:21:56,251 --> 00:21:58,251
+O keyword'ümüzde grup var.
+
+145
+00:22:00,251 --> 00:22:02,251
+Aslında şuna yarıyor.
+
+146
+00:22:02,251 --> 00:22:06,124
+Örnekte çok şey değil de aynı sayıları olduğu için.
+
+147
+00:22:13,268 --> 00:22:20,588
+Şu haliyle çalışılacak mı? Ona hata verecek. Niye hata verecek? Çünkü bir aggregate fonksiyonu kullandım. Bir yere normal üstün ismi.
+
+148
+00:22:21,668 --> 00:22:27,188
+O yüzden hata verecek. Bir tabloyu görelim yine. Şöyle yapalım.
+
+149
+00:22:29,508 --> 00:22:39,788
+Bu projelerin şeylerini gösteriyor. 5-5-5 diyor. Çünkü birden fazla proje, yani ismi var şöyle yaparsak.
+
+150
+00:22:42,003 --> 00:22:52,023
+Bunlar projelerin isimleri, bunlar da departmanların numaraları. Bunlar da projelerin numaraları. Projelerin numaraları tabii ki farklı, her bir yeni proje olduğu için. Ama şu 3 proje birden bu departman.
+
+151
+00:22:53,583 --> 00:23:02,803
+Şimdi şurada yaptığımız şey, DNM'a göre grupla diyoruz ya, bu 5 tanes, yani 5 yazanların 3'ünü birden bir işleme katacak.
+
+152
+00:23:05,395 --> 00:23:12,375
+Evet, öyle. Sonra bu bir yazanları bulacak, onları bir işleme batacak. Bir, bir tane galiba. Alt yazanları şey yapacak.
+
+153
+00:23:13,576 --> 00:23:17,715
+Şimdi normalde hiçbir şey yapmasak, şu şekilde count desek, şöyle yapıyor ya.
+
+154
+00:23:19,536 --> 00:23:21,976
+Hiç iyi anlatamadığım farkındayım, öbür örnekle daha yaklaşılacak.
+
+155
+00:23:26,612 --> 00:23:51,192
+Bu ne yaptı? Toplam 11 tane şey vardı. Şimdi bunu çalışıyorum. Niye toplam 11 tane? Çünkü toplam 11 tane. Şimdi bu 11 taneyi hepsine göre değil de şu 5'lerinki kaç tane, 1'lerinki kaç tane, 4'lerinki kaç tane, 6'larinki kaç tane, 7'lerinki kaç tane. Yani bunlara göre gruplayıp şunu uyguluyoruz. Buraya diğer fonksiyonları da yazabilirsiniz. Ama burada ortalama falan almak anlamsız olduğu için count yapmışız.
+
+156
+00:23:53,140 --> 00:24:02,559
+Şimdi dedim ya, bu 11 dönüyordu. Burada şey dönecek. DNM'a göre grupa yaptığım için, DNM'ın kaç tane alanı var, onu dönecek.
+
+157
+00:24:15,155 --> 00:24:17,435
+Şu an şey oldu, buranın şeyi gitti, buraya da gelmedi.
+
+158
+00:24:19,295 --> 00:24:20,115
+Şimdi öyle bir etkiyorum.
+
+159
+00:24:21,115 --> 00:24:21,695
+Bakalım ne olacak?
+
+160
+00:24:31,124 --> 00:24:32,503
+Alıp yeni şey açmayı deneyelim.
+
+161
+00:24:33,824 --> 00:24:34,583
+Şunu kapatalım.
+
+162
+00:24:47,347 --> 00:25:02,307
+Yani diyor ki, 5'in yanı, yani şey, defak anlaması 5 olan 3 tane proje var, defak anlaması 4 olan 2 tane proje var. Bunu bu grupla ile şey yapıyoruz, şurada hepsinin toplam sayısını veriyordu, tüm grupladık, sadece o grupta kaç tane var, onu bilmiyorum.
+
+163
+00:25:06,996 --> 00:25:33,456
+Şu örneği inceleyelim. Burada yeni bir tablomuz var. Bu kampanın değil, bir değil, yine bir şey. Bu tablo neyi tutuyor? Dersin kodu var, bir de öğrencinin numarası var. Aynı dersin kodu bir daha var. Niye? Çünkü bu tablo, yani bu ders alan öğrencileri tutacak. Bu öğrenci bu dersi almış. Başka bir öğrenci aynı dersi alabilir. O yüzden birden fazla aynı ders var. Tamam, böyle bir tablomuz var.
+
+164
+00:25:34,612 --> 00:25:43,692
+Şimdi bunu yaptığımızda, yani bu tabloyu sorguladığımızı düşünelim. BLM ile başlayanlar diye de filtrelediğimizi düşünelim. Bu, burada dönüştü.
+
+165
+00:25:43,692 --> 00:25:55,692
+Yani normal tabloyu görüntüde değil, BLM'ye göre dönüştü. Şu an benim üst kısmı düşünmeden. Bu da tamam. Koda göre, şimdi bu, buna dönüştü. Tamam. Niye? Çünkü şurada filtreledim.
+
+166
+00:25:55,692 --> 00:25:58,692
+Ondan sonra koda göre grup by yap dediğimizde,
+
+167
+00:25:58,816 --> 00:26:21,076
+Burada 3 tanesi aynı. Bunları tek bir yerdeymiş gibi bunun yanına 3 tane şey geliyor. Tabi bu hale çalışırsanız da böyle bir şey oluşmuyor. Bunu biz adım adım düşünebilelim diye böyle bir şey var. Ondan sonra bir aggregate fonksiyonu uygulamamız gerekiyor. Bir şeye göre grupladık. Tamam bu grupları ne yapacağız? Yine bunların ortalamasını alabilirdik ama numaraya göre ortalamamak anlamlı olduğu için.
+
+168
+00:26:25,779 --> 00:26:53,439
+Zaten anlaşılıyor. Bu kod şu tablo üzerinde şu sonucu üretiyor. Niye bunu üretiyor? Önce BLM'ye göre grupladı, filtreledi. Bu da şu yüzden önemli. Filtrelemeyi şurada oluşan tabloya göre yapacak. Onu anlatmak için. Sonra baktı, grupladı bunları. Bunlar bunun yanına geldi. Niye? Bunların başındaki şey aynıydı. Yani şu 6 haneli tablo 3 haneye dönüştü. Niye? Çünkü aynı kodun yanında birden fazla ayrı.
+
+169
+00:26:55,476 --> 00:27:02,836
+Sonra bunları ne yapacaktı? Bunları grupladı, bir şeyin yanına aldı. Bunun üzerinde yapacağımız işlemi de buraya yazıyoruz.
+
+170
+00:27:06,516 --> 00:27:12,196
+Anlamadığınız bir yer var mı sormak istediğiniz şu ana kadar? Bununla ilgili de olabilir, öncekilerle ilgili de olabilir.
+
+171
+00:27:16,756 --> 00:27:19,316
+Biraz bekleyelim, ben de ağzım fırlamış.
+
+172
+00:27:46,036 --> 00:27:47,976
+Tamam, geçiyorum o zaman bir soru kişiye.
+
+173
+00:27:49,536 --> 00:27:53,316
+Bundan sonra, burada yeni bir keyword görmüştük, grup BY.
+
+174
+00:27:53,816 --> 00:27:55,836
+Şimdi bir başka keyword görüyoruz, bu da ORDER BY.
+
+175
+00:27:57,236 --> 00:28:00,696
+Bunun için yine en baştaki ilk slide şeylerimize dönelim.
+
+176
+00:28:00,796 --> 00:28:03,176
+Şimdi bu tablo, yine bunları gösteriyordu, tamam.
+
+177
+00:28:04,496 --> 00:28:06,876
+Bunun üzerinde sorgu yapıyorduk, istersek şimdi gruplamayı öğrendik.
+
+178
+00:28:07,216 --> 00:28:11,596
+Şimdi bu neye göre geliyor? Şimdi ben bunun çözdüğümde böyle geliyor, bir daha çözdüğümde, bir daha böyle geliyor.
+
+179
+00:28:11,596 --> 00:28:13,676
+Bu neye göre geliyor? Tabloya eklenme sırasına göre.
+
+180
+00:28:14,067 --> 00:28:16,288
+Ama ben bunun farklı sırada gelmesini isteyebilirim.
+
+181
+00:28:17,708 --> 00:28:19,148
+Yani basitçe alfabetik olarak gibi.
+
+182
+00:28:19,708 --> 00:28:21,008
+Bunun için buraya ORDER BY yazıyorum.
+
+183
+00:28:22,448 --> 00:28:24,588
+Tamam, bir şeye göre sıralayacağım. Neye göre sıralayacağım?
+
+184
+00:28:24,688 --> 00:28:26,188
+Değenemlere göre sıralıcı sayı olduğu için.
+
+185
+00:28:27,188 --> 00:28:28,148
+Göremesi daha kolay.
+
+186
+00:28:31,731 --> 00:28:45,351
+Şöyle yapalım. Ne oldu? Bir buraya geldi, dört buraya geldi. Aynı tablo. Ama sırası değişti. Default olarak küçükten büyüğe sıralıyor. Tabii ki büyükten küçüğe de sıralıyor. Onun için de buraya nasıl yazılıyor?
+
+187
+00:28:52,627 --> 00:28:55,907
+DES, C yazıyoruz. Descending, border.
+
+188
+00:29:01,364 --> 00:29:05,463
+Bu da ne yapacak? DNM'a göre sıralayacak ama tersten sıralayacak.
+
+189
+00:29:06,483 --> 00:29:07,243
+Dedik olmadı.
+
+190
+00:29:08,023 --> 00:29:08,804
+Sondan sonra mı kurdu?
+
+191
+00:29:14,132 --> 00:29:36,132
+Aynen. Bu da tamam. Şimdi 7-7 diyor ya, şimdi bunlar yine neye göre sıralanıyor? Bir de o var. Birden fazla şeyi sıralamak isteyebiliriz. Önce BNM'e göre sıralar, tamam. Ama sonra şunları da alfabetik sıralayabiliriz. Birden fazla şeye göre sıralayabiliriz. Onu da şuradan görelim. Şu Border Boy'ın başlığı da sıralayabilir.
+
+192
+00:29:40,852 --> 00:29:48,252
+Tamam, burada şu deminki üstteki ders alır tablomuz var. Burada da 12 ile başlayanlar diye öğrenci numarası, yani ID'si şey yapmışız.
+
+193
+00:29:48,312 --> 00:29:58,852
+ORDER BY dediğimizde küçük olan şeyler başa gelmiş oldu. Tamam, tersten sıralar dediğimizde de büyük olan numaralar başa gelmiş oldu. Bu da tamam.
+
+194
+00:30:00,792 --> 00:30:07,392
+Şurada, yani şöyle ID'ye göre desenli ama önce bu, hani, kurmak istedik bir ötesine sıralayacak. Ondan sonra aynı alanlar için.
+
+195
+00:30:07,827 --> 00:30:09,607
+Koda göre sıralar şeklinde.
+
+196
+00:30:11,927 --> 00:30:15,208
+Yazabiliriz. Şuki sintaksta aynı. Niye aynı?
+
+197
+00:30:15,708 --> 00:30:17,827
+Hani bu terşelemek istiyorsak bunu yazıyoruz dedik ya.
+
+198
+00:30:18,468 --> 00:30:22,067
+Şimdi normalde bir şey yazmamıştır. Normal sıralamasını istiyorsak bunu da yazabiliriz.
+
+199
+00:30:22,187 --> 00:30:23,067
+Ama yazmayabiliriz.
+
+200
+00:30:24,587 --> 00:30:28,288
+Yani defolt olarak bu. Yani şu iki şey aynı şeyi yapabiliyor.
+
+201
+00:30:30,008 --> 00:30:30,827
+Bu da tamam.
+
+202
+00:30:33,940 --> 00:30:36,740
+Bu kadar şey gördük. Onu da size bırakalım biraz.
+
+203
+00:30:37,740 --> 00:30:39,619
+2-3 dakika şey olsun ya.
+
+204
+00:30:41,740 --> 00:30:42,680
+Şuraya da yazalım.
+
+205
+00:30:47,155 --> 00:30:48,575
+5 dakika süre yazalım.
+
+206
+00:30:50,335 --> 00:30:52,915
+Ulan çete yazsın diyelim.
+
+207
+00:30:57,811 --> 00:31:06,051
+Ama tabloyu da koymak istiyorum. Şimdi böyle yaksam, yazılar yorumlayacak. Tablo küçük olabilir. Şunu alalım.
+
+208
+00:31:20,435 --> 00:31:21,975
+Şöyle, o zaman da temizlikle ilgili.
+
+209
+00:31:27,380 --> 00:31:29,940
+Neyse, soru bu arkadaşlar. Bir 5 dakika bakın bakalım.
+
+210
+00:31:46,067 --> 00:31:48,327
+Hocam tabloyu biraz büyütebilir misiniz acaba?
+
+211
+00:32:26,483 --> 00:32:30,063
+Konuşuyorum, ama mikrofon kapatıyor. Şu an oldu yani.
+
+212
+00:32:31,343 --> 00:32:32,703
+İyi böyle hocam, teşekkürler.
+
+213
+00:37:48,755 --> 00:37:56,235
+Tam saate bakmadım da oldu herhalde, 5 dakika. Paylaşmak isteyen ya da yapan yok sanırım. Derken varmış chat.
+
+214
+00:37:57,335 --> 00:38:04,015
+Chate bildirim, şurada 1 diye gözüküyordu, gözükmedi. Bakalım, herkes de yazmış.
+
+215
+00:38:09,235 --> 00:38:13,355
+Ver fazla oldu demiş. Tamam. Şimdi bunları bakıyorum.
+
+216
+00:38:27,572 --> 00:38:32,971
+Şimdi şuradaki çözüme bakalım. Aynı mı diye bakalım. Şu an anlamam uzun süreç için.
+
+217
+00:38:34,471 --> 00:38:38,912
+Bizdeki çözüm bu. Bakalım ne dönüyor. Bir de sizdekiler ne dönüyor diye. Bakalım.
+
+218
+00:38:41,672 --> 00:38:51,872
+Bu niye şey? Tablomuzda 3 tane, yani nerede çalıştığına bakmak için, hangi projede çalıştığına bakmak için 3 tane tablo gezmemiz gerekiyor.
+
+219
+00:38:51,872 --> 00:38:54,811
+Böyle gereksizce. Onun için o 3 tabloyu şey yapıyoruz.
+
+220
+00:38:55,603 --> 00:39:09,163
+Sadece onları bağladık burada. Sonra projelerin ismine göre grupladık. Sonra da basitçe maaşlarını yazdırıp şeye göre sıralamışız. Şöyle ne döndüğüne bakalım.
+
+221
+00:39:16,724 --> 00:39:17,724
+Bunu dönüyormuş.
+
+222
+00:39:19,224 --> 00:39:22,224
+Yani şu projede, ortalama çalışanların maaşı buymuş.
+
+223
+00:39:22,224 --> 00:39:23,224
+Bu projede buymuş.
+
+224
+00:39:24,224 --> 00:39:26,724
+[öğrenci], seninkini deniyorum, artık şey yapmam.
+
+225
+00:39:27,724 --> 00:39:28,724
+Bakalım.
+
+226
+00:39:29,724 --> 00:39:32,724
+Sen, ENERGY O'nun olarak yazmışsın, o fark etmez.
+
+227
+00:39:33,724 --> 00:39:35,224
+Ama aynısını döndü.
+
+228
+00:39:36,724 --> 00:39:38,224
+Şurada bir fark var.
+
+229
+00:39:38,224 --> 00:39:41,224
+Bu da, BER ile birleştirme.
+
+230
+00:39:42,003 --> 00:39:50,884
+P number'a göre, biz P name'e göre gruplamışız. Aslında fark etmez. Çünkü numarası ve name aynı. Hatta seninki daha doğru olabilir. Sayı olduğu için müddet daha hızlıdır.
+
+231
+00:39:54,068 --> 00:39:55,488
+[öğrenci]'inkine bakalım.
+
+232
+00:40:00,340 --> 00:40:08,699
+3 tabloyu birleştirmiş. Sonra PNM'a göre gruplamış. Sonra PNM. Tamam, aynı.
+
+233
+00:40:13,940 --> 00:40:21,980
+[öğrenci]'ınkine nereden itibaren kopyalasam diye bakıyorum. Çünkü ver fazla dediği için şuradan itibaren bir alsam.
+
+234
+00:40:31,251 --> 00:40:32,652
+Geri kısmını alıyorum.
+
+235
+00:40:39,251 --> 00:40:42,372
+Aslında şeyi görmüş olduk. Yani bunu çalıştalım.
+
+236
+00:40:57,844 --> 00:40:59,484
+Nasıl yazıyorduk bunun sintaksını?
+
+237
+00:41:00,984 --> 00:41:01,804
+Fandemiştir işte.
+
+238
+00:41:23,059 --> 00:41:24,559
+Niye olmadı bunu anlayamadım ben.
+
+239
+00:41:25,159 --> 00:41:26,659
+Bu joinler iner olmadığı için.
+
+240
+00:41:43,284 --> 00:41:47,443
+Bence şey oldu sanırım şu, yani burayı yazdığımızda oraya da yazmamız gerekiyor.
+
+241
+00:41:49,923 --> 00:41:50,724
+Ne oldu?
+
+242
+00:41:53,884 --> 00:41:56,583
+Niye çalışmadığını anlayamadım arkadaşlar? Ben anlayamadım.
+
+243
+00:41:58,623 --> 00:41:59,623
+Arada değiştirdim de.
+
+244
+00:42:00,963 --> 00:42:03,264
+Ben de anlamadım hocam, fikrim yok.
+
+245
+00:42:08,884 --> 00:42:15,123
+Şurada değil mi? Onu ben de düşündüm ama üstte tam tersi örnekler var derken o yüzden yapalım dediğini.
+
+246
+00:42:24,148 --> 00:42:25,568
+Şunu bir daha deneyebileyim.
+
+247
+00:42:29,907 --> 00:42:30,627
+Hıh, güzel oldu.
+
+248
+00:42:32,067 --> 00:42:33,067
+Biz bunu denemedik mi?
+
+249
+00:42:33,327 --> 00:42:35,228
+Yani şu şurada olunca olmanız çok saçmalı.
+
+250
+00:42:43,476 --> 00:42:54,796
+Demin bir yere yanlış yapmışım herhalde, o kayıklarda var artık. Ama şurayla şuranın aynı olması gerektiğini bence burada anlamış olduk. Bu da önemli bir şey aslında.
+
+251
+00:42:55,756 --> 00:43:01,735
+Yani buraya, hani aslında aynı şeyi ifade etse de buraya yazdığımız birebir şeyle buraya yazdığımız şey aynı olması gerekiyor değil mi?
+
+252
+00:43:03,615 --> 00:43:08,155
+Yani PNO'ya göre gruplayıp, buraya ben PNO'yimi yazamıyorum.
+
+253
+00:43:09,748 --> 00:43:15,688
+Ya ona göre grupluyorsan ona şey yap, ona göre grupluyorsan ona göre yaz gibi. Yani şu ikisi aynı olacak.
+
+254
+00:43:17,847 --> 00:43:25,788
+Ve mesela aynı sorguyu, bir övürü aynı sorguyu. Burada PNM'le, burada PNumber'la, burada da şeyle yaptık ama şurada yine çelişen bir şey oldu.
+
+255
+00:43:27,827 --> 00:43:29,748
+Yani buradakiler farklı, o nasıl oluyor?
+
+256
+00:43:37,940 --> 00:43:51,220
+Bu çalışıyor. Tamam. Bunu pre-name yapınca, ha şey tamam tamam. Birden fazla proje etmiş. Bu pre-name, bu demin nasıl çalışmıyordum? Ben de çalışmıyordum.
+
+257
+00:44:18,260 --> 00:44:21,480
+Şimdi grup NO varken çalışmıyor. [öğrenci] dediğine bakıyorum.
+
+258
+00:44:22,160 --> 00:44:24,980
+Denem bir yazıncı çalıştı. Tamam. Şey ne, olay ne?
+
+259
+00:44:41,364 --> 00:44:42,083
+Şimdi girer.
+
+260
+00:44:47,251 --> 00:45:01,872
+Acaba şöyle bir şey mi? Yani şurada, şimdi şurada order by PNM diyoruz ya, burada bunu yazdırmasak, demin ben bunu değiştiriyorum, hatırlamıyorum da, neye göre sıralayacağını bulamıyor olabilir.
+
+261
+00:45:03,851 --> 00:45:10,971
+Yani öyle bir şey olabilir. Yani PNM'e göre sıralıyorsun, PNM yok olabilir. Eminim değilim, şuradan geri muhamet'in yazdığına bakmaya gidiyorum.
+
+262
+00:45:12,980 --> 00:45:15,779
+Biz bu değiştirmeden hali şuydu, şunu bir alalım.
+
+263
+00:45:36,788 --> 00:45:37,847
+Şimdil, sevgili seyir.
+
+264
+00:45:47,827 --> 00:45:50,268
+İzlediğiniz için çalışırlık ne yapıyoruz?
+
+265
+00:46:21,139 --> 00:46:24,980
+Yani PNO ile PNM arasındaki fark ne? Farklı tabloda olmaları, değil mi?
+
+266
+00:46:27,319 --> 00:46:29,420
+PNM buradaki, PNO buradaki.
+
+267
+00:46:31,000 --> 00:46:36,539
+Demek ki biz bunu yazdıracağız, PNM'i buradan alacağız, bunu buraya yazmamız gerekiyor gibi anlıyorum şu anda.
+
+268
+00:46:38,859 --> 00:46:43,819
+Aslında hipotez üretmeden sonuca göre yorum yapıyoruz, o da saçma da.
+
+269
+00:46:45,199 --> 00:46:46,000
+Şu an öyle görünüyor.
+
+270
+00:46:48,179 --> 00:46:53,679
+Yani şurada yazdıracağımız şeye göre bir grup da olmamız gerekiyor. Anlam aynı olsa bile diyeceğim ama yine yanlış oluyor.
+
+271
+00:46:57,492 --> 00:47:01,652
+Yani bu sorguların çalışanlara ve çalışmayanlara arasındaki fark değine o.
+
+272
+00:47:02,872 --> 00:47:04,532
+Değil mi? Öyle mi?
+
+273
+00:47:04,872 --> 00:47:07,432
+GURKLANDIRDIĞIMIZ ŞE AYNI TABLODA OLMALI DİYE ANLIYORUM HOCAM.
+
+274
+00:47:10,112 --> 00:47:11,972
+GURKLANDIRDIDIĞIMIZ ŞE AYNI TABLODA OLMALI.
+
+275
+00:47:12,072 --> 00:47:12,952
+Yani şu, şu.
+
+276
+00:47:15,012 --> 00:47:16,271
+Geleceğim o başka bir şey zaten.
+
+277
+00:47:16,552 --> 00:47:18,712
+Yani şu değil mi? Nasıl?
+
+278
+00:47:32,916 --> 00:47:37,115
+Mesela, şu çalış, planiyonsun çalışmadan değil mi?
+
+279
+00:47:43,699 --> 00:47:49,319
+Şuradaki, ya PNM yerine, şey yaslaması, sen yaslam çalıştık.
+
+280
+00:48:01,523 --> 00:48:02,764
+Şunu da yapayım, ne? Bunda 3.
+
+281
+00:48:20,340 --> 00:48:28,739
+Yani durum bu, tam anlamadım. Siz anlayanınız varsa anlamıştır diye düşünüyorum. Yorumlar da varmış. Bakalım.
+
+282
+00:48:36,916 --> 00:48:41,256
+Şuna buraya ZZZ yazmak istemiyorum.
+
+283
+00:48:46,996 --> 00:48:48,996
+Tamam, hepsi bu niye çalışmıyor?
+
+284
+00:48:51,996 --> 00:48:53,596
+Bunun şey hali çalışıyor mu?
+
+285
+00:48:53,596 --> 00:48:54,596
+PNN hali.
+
+286
+00:49:02,931 --> 00:49:06,211
+Son bilgi, şey yapalım, o araştırmış, [öğrenci]'ın dediği gibi.
+
+287
+00:49:08,011 --> 00:49:11,771
+Listelemek istediğimiz sütunla, GROUP BY yaptığımız tablodan ilerledim.
+
+288
+00:49:14,291 --> 00:49:18,211
+Öbür türlüsünü istiyorsak, iç içe soğuk bir şekilde yazmamıymışız diyelim.
+
+289
+00:49:18,311 --> 00:49:21,051
+Çünkü, o zaman da ilerliyoruz, siz de sıkılmayın.
+
+290
+00:49:23,987 --> 00:49:31,148
+Tamam. Bir sonraki sorumuz da şunu göstermişiz. Tamam şimdi grup by yapabiliyoruz, anladık. Aynı gruba göre sorguluyor vs.
+
+291
+00:49:33,148 --> 00:49:36,947
+Şimdi bu örneğin amacı da birden fazla şeye göre de grup by yapabiliyoruz.
+
+292
+00:49:38,827 --> 00:49:40,987
+Şuradan hemen yok tabi.
+
+293
+00:49:42,228 --> 00:49:45,547
+Bir employee tablosunu şey yapalım. Örkenlerimizin sınıfı açıyoruz.
+
+294
+00:49:46,228 --> 00:49:47,980
+[kişisel bilgi]
+
+295
+00:50:01,139 --> 00:50:08,139
+Bu geliyordu. Bunu mesela neye göre gruplamak olabilir burada? Cinsiyete göre gruptayabiliriz. Böyle aynı fikirler ediyor çünkü.
+
+296
+00:50:21,684 --> 00:50:33,164
+Ama bu cinsiyete göre kaç kişi var onu yazdırıyor. Diğer buradaki şey ne? DNO. DNO'ya göre de yapabiliriz aynı sını. Ama ikisine birden göre de yapabiliriz.
+
+297
+00:50:33,824 --> 00:50:41,224
+Bu sefer de işte bu numaralı DNO'da bu kadar kişi çalışıyor ikisinden. Onların ikisini aynı anda da yapabiliriz.
+
+298
+00:50:44,044 --> 00:50:45,144
+Başka burada değil.
+
+299
+00:50:46,132 --> 00:50:49,592
+Bir de ortadan maaşı yazdıralım ki böyle bir şeyler de oluşuyoruz.
+
+300
+00:50:54,483 --> 00:50:56,203
+Başka koşulların 4-0 gibi geliyor.
+
+301
+00:50:58,264 --> 00:51:01,844
+Tamam, yani hem ona göre hem ona göre grupla gibi.
+
+302
+00:51:02,603 --> 00:51:06,224
+Yani 1 numaralı departmanda çalışan erkeklerin maaşının ortalması.
+
+303
+00:51:06,323 --> 00:51:08,183
+5 numaralı departmanda çalışan erkeklerin ortalması.
+
+304
+00:51:08,323 --> 00:51:09,923
+Tabi aynısının kadınla olması lazım.
+
+305
+00:51:10,663 --> 00:51:14,523
+Burada sayıları da var ama 1 numaralı departmanda kadın yok herhalde ya da ben göremiyorum.
+
+306
+00:51:15,804 --> 00:51:17,743
+Ama işte 7 numaralı departmanda.
+
+307
+00:51:18,420 --> 00:51:22,699
+Şurada üç tane kadın, aşçıları ortaması bu, erkeklerim buymuş gibi.
+
+308
+00:51:22,699 --> 00:51:28,500
+Dediğim gibi bu örneğin amacı iki tane grup by ile yapabiliyoruz. İki tane yaparsak ikisini de yazmamız gerekiyor.
+
+309
+00:51:28,500 --> 00:51:35,500
+Dedim ama değil, aynen. Yani bu şekilde.
+
+310
+00:51:35,891 --> 00:51:47,992
+İki şeye göre de gruplayabiliriz. Tavlonun mantıken büyümesi gerekiyor. Çünkü öbür türlü sadece M ve F yazacaktı. Sadece bunu yapsaydık, kaç tane şey varsa o yazacaktı. Şimdi ikisini birden yazıyor.
+
+311
+00:51:49,291 --> 00:51:54,671
+Belki katına da çıkmıyor çünkü bir cinsiyetten çalışanın olmadığı departman numaraları var.
+
+312
+00:51:57,671 --> 00:52:02,791
+Şimdi bunlar da tamam. Şu en başta çalışan, en genç falan öyle bir şey var diye.
+
+313
+00:52:04,307 --> 00:52:17,427
+Şurada VER kullanamıyoruz demiştik. Bunu kullanabileceğimiz, VER'den sonra kullanamıyoruz bunları demiştik. Bunu kullanabileceğimiz yer, şu HAVING, yani hepsini yazdık, grup pay yaptık. Bu sefer grupları filtre edeceğiz.
+
+314
+00:52:19,948 --> 00:52:30,768
+Yani şu DNV'ye göre şey yapıyordun, tamam, her birinin ortalama maaşını yazdıracaktı, buraya AVERAGE saları yazsaydın, bu AVERAGE salariler arasından 40.000 üzerinde olanları yazdırıyorduk.
+
+315
+00:52:31,219 --> 00:52:32,319
+Şöyle, on ne soruyor.
+
+316
+00:52:45,364 --> 00:52:47,884
+5 numaralı departmanın ortalama aşı bunlar tamam.
+
+317
+00:52:48,624 --> 00:52:51,103
+Diyoruz ki average salary ise direkt böyle diyebiliriz.
+
+318
+00:52:51,224 --> 00:52:54,204
+İçişe sorgu vs. bir şey olmana 40 binden büyük olanlar.
+
+319
+00:52:56,023 --> 00:53:00,344
+Yani şunun sonucunu filtrelemek için grup by'li bir şey.
+
+320
+00:53:00,943 --> 00:53:03,903
+Ver değil grup by'den sonra having kullanıyoruz.
+
+321
+00:53:04,704 --> 00:53:08,483
+Ve aggregate fonksiyonunu direkt kullanıp işte şartımız neyse ona göre belirtiyoruz.
+
+322
+00:53:08,903 --> 00:53:10,864
+Ki burada bir daha iç içe sorgu da yapabiliriz.
+
+323
+00:53:12,019 --> 00:53:22,059
+Mesela, yani şey de olabilir. Evrit çalarının 1.5 katından büyükleri, gerçi burada anlamsız oluyor, sağ tarafa atabiliriz, işler çarpılmaktan da şöyle yapalım.
+
+324
+00:53:22,760 --> 00:53:28,920
+Yani bu da bir, burada işte mantıksal mı? Yok. İşlemsel, yani burada işlemde yapabiliyoruz.
+
+325
+00:53:31,220 --> 00:53:34,199
+Yani ortalamasının 1.5 katı 40.000'den büyük bir şey az.
+
+326
+00:53:37,108 --> 00:53:40,528
+Bu da tamam. Şu şey tablosundaki HAVING'e bakalım.
+
+327
+00:53:43,467 --> 00:53:47,507
+İşte kodlar öğrenciler, tamam. 12 ile başlayanları getirdi.
+
+328
+00:53:48,328 --> 00:53:50,007
+Şefkoda göre grupladı.
+
+329
+00:53:53,028 --> 00:53:59,807
+Sonra bu gruplamış haline bir tane ver, yani filtre uyguluyorum. Bunun veri, HAVING yani.
+
+330
+00:54:00,748 --> 00:54:03,568
+Şunun COUNT'u, yani şuradakilerin COUNT'u bir olanı getir.
+
+331
+00:54:04,403 --> 00:54:09,963
+Yani şu tabloya şunu uyguladığımızda şunu elde ediyoruz.
+
+332
+00:54:13,684 --> 00:54:22,064
+5 numaralı departman dışındaki departmanlar arasından ortalama maaşı 40.000 dolar üzerinde kurulan departmanların numaralarını ve bu departmanların ortalama maaşlarını bulalım.
+
+333
+00:54:25,104 --> 00:54:28,124
+Tamam, sadece employee tablosunu kullanıyorum maaşı orada olduğu için.
+
+334
+00:54:29,184 --> 00:54:36,584
+Departmanlara, departmanlara demişim, evlisalarıyla ortalama maaşı demişim. Departmanlara göre grupladım çünkü tek tek departmanların şeyi lazım.
+
+335
+00:54:37,556 --> 00:54:46,115
+ortalaması 40 bin üzerinde olanlar dedim ve yine şartım buraya dedim. Departmanın olsun 5'ten farklı olanlar arasında bu filtrelemeyi yapacak.
+
+336
+00:54:46,235 --> 00:54:51,356
+Yani hem evriç salarisi 40 bin üzeri olacak hem departmanın olsun 5'ten farklı olacak.
+
+337
+00:55:06,996 --> 00:55:12,016
+Bu da tamam. Burada şöyle de yapabiliriz daha programlarına alıştığımız şekilde. Ben böyle yazarım.
+
+338
+00:55:14,496 --> 00:55:16,996
+Burada mesela şunu şuraya yazsaydık ne olur?
+
+339
+00:55:19,456 --> 00:55:20,516
+Yani bu ikisinin farkı ne?
+
+340
+00:55:31,827 --> 00:55:47,708
+Buradaki fark da şu, burada departman nosu 5 olmayanların olmadıktan sonra gruplayacak, ondan sonra bakacak. Yani bu average salary'de departman nosu 5 olanlar yok ama burada olsa itibariyle.
+
+341
+00:55:57,460 --> 00:55:59,660
+Sonuç değişmiyor zaten aynı şeyleri yazdık için.
+
+342
+00:56:01,680 --> 00:56:04,240
+Şimdi bir sürü keyword gördük. Bunların sıralaması önemli.
+
+343
+00:56:04,380 --> 00:56:05,900
+Yani grup by grup buradan yazamayız.
+
+344
+00:56:05,900 --> 00:56:13,079
+Zaten başından beri yazdığımız sorgularda önce SELECT, sonra VER, önce SELECT, sonra FROM yazıyorduk.
+
+345
+00:56:13,160 --> 00:56:15,800
+Hani FROM başta, sonra SELECT yazamayız.
+
+346
+00:56:16,820 --> 00:56:26,620
+Ya da SELECT, VER, FROM diyemeyiz. Onun gibi. Yani bu sırada kullanmamız lazım. Temel bir sorgu yapıyorsa. Tabii iç içe sorgumuz varsa VER'den sonra onu açıp kullanabiliriz.
+
+347
+00:56:28,340 --> 00:56:36,880
+Şu keywordleri gördük. Şu slide denet falan yeni keywordımız. Limit. Şimdi limit keywordü de aslında adından da anlaşılıyor.
+
+348
+00:56:37,880 --> 00:56:42,040
+Yani bunlar hepsini yazmak zorunda da değiliz. SELECT, FROM, limit diyebiliriz. Ki burada öyle demişiz.
+
+349
+00:56:42,400 --> 00:56:55,480
+Normalde kaç tane yazdıracaksa yazdırıyordu. Ama limit 3 dediğimizde 3 tane şey yazıyor. Bu kadar. Hani yine en genç çalışan diyordu ya, orada da aslında limit vesaire kullanarak şey yapabilirsiniz.
+
+350
+00:56:55,480 --> 00:57:02,140
+Aggregate'e girmezsiniz. Şeye göre sıralarsınız doğum tarihine göre. İşte limit 1 dersiniz, ona eşitse vesaire öyle şeyler yapabilirsiniz.
+
+351
+00:57:04,520 --> 00:57:09,620
+Burada bir de offset olayı var. Yani şu limit 3 en başlık 3 tanesini getiriyor diyor.
+
+352
+00:57:10,547 --> 00:57:19,547
+Bu da 5. den itibaren 3 tanesini getiriyor. Şuradan başlıyor. Yanlış bir sayıyoruz, doğru mu sanıyoruz? Şuradan herinde. Şöyle en azından.
+
+353
+00:57:19,547 --> 00:57:30,547
+Bu offset de şeyden işe yarıyor. En genç 2. çalışanı soruysa limit 1, offset 1 diyebilirdiniz. Bir kişiye atlamak için bir soruysa çalışan. Bu da limit key böyle.
+
+354
+00:57:30,547 --> 00:57:37,355
+Burada dediği gibi, limit A, ilk A tanesini yazdır. Offset B dediğimizde B'den sonraki ilk A tanesini yazdır.
+
+355
+00:57:37,427 --> 00:57:38,148
+Şeklinde.
+
+356
+00:57:41,548 --> 00:57:42,867
+Şu sorguya bakalım.
+
+357
+00:57:45,387 --> 00:57:47,688
+Employee tablosuna First Name, Last Name'i getir.
+
+358
+00:57:48,847 --> 00:57:50,248
+Tamam, salariye göre sırala.
+
+359
+00:57:51,467 --> 00:57:52,628
+Limit'i de birle.
+
+360
+00:57:52,927 --> 00:57:55,407
+Şimdi bunu neyi bulmuş oldu? En çok maaş alan işçi bulmuş oldu.
+
+361
+00:57:56,048 --> 00:57:57,248
+Ama limitle bulmuş oldu.
+
+362
+00:57:57,387 --> 00:58:00,347
+Öbür gördüğümüz max'da da bulunabilirdi.
+
+363
+00:58:00,851 --> 00:58:05,991
+Yine bu quizde böyle şeyler de olabilir. Direkt şununla bulun diye şeyi kısıtlayabiliriz.
+
+364
+00:58:05,991 --> 00:58:14,031
+Bu da onunla ilgili bir şey. Bir de nal değeri var. Biliyorsunuz bazı yerlik alanlar boş.
+
+365
+00:58:14,491 --> 00:58:21,371
+Yani adamın yöneticisi yoksa o alan boş oluyor. Tablodaki SQL'de boş alanlara nal diyoruz.
+
+366
+00:58:21,780 --> 00:58:30,300
+Burada, hani o NAL'la ilgili bir sorgulama yapacaksak, eşittir değil, hani eşit eşit NAL'a eşitme şeklinde yapmıyoruz. Direkt iz NAL NAL mı şeklinde sorgu yapıyoruz.
+
+367
+00:58:31,980 --> 00:58:37,460
+Bu da bize, neyi gösteriyor? Yöneticisi olmayan kişileri gösteriyor. Çünkü yöneticisi SSN'leri boş.
+
+368
+00:58:39,559 --> 00:58:41,660
+Bir de Extract Keyword'ümüz var.
+
+369
+00:58:42,164 --> 00:58:48,164
+Şimdi şurada bir şeyler yapıyorduk ya SELECT'in içinde mesela COUNT, şey falan diye. Burada çokça fonksiyon var.
+
+370
+00:58:48,164 --> 00:58:52,164
+Bu belki yüzlerce, binlerce fonksiyon var. Tabii biz işini görmeyeceğiz.
+
+371
+00:58:52,164 --> 00:59:00,164
+Ama burada bir tane hani burada fonksiyon kullanabildiğine örnek olsun diye. Şunu da alalım şöyle.
+
+372
+00:59:05,780 --> 00:59:07,460
+Şimdi ne yaptığını anlatmak için şöyle.
+
+373
+00:59:16,692 --> 00:59:22,751
+Normalde buydu. Ama bize sadece yıl lazım. Mesela onunla ilgili işlem yapacak olabiliriz.
+
+374
+00:59:25,011 --> 00:59:31,731
+Şu Extract diye fonksiyonumuz bu. Şuraya da yıl, yıl, yıl, gerektiği için yıl yazıyoruz. Başı şeylerde yazabiliriz.
+
+375
+00:59:33,311 --> 00:59:40,991
+Yani şunu üzerinde bir işlem yaptık. Bir tablomuzda bize bir şey dönüyor. Satır satır. Bu hazır fonksiyon içinde. Bununla dediğim gibi çok fazla fonksiyon var.
+
+376
+00:59:42,739 --> 00:59:51,139
+İstediğimiz bilgiyi alabiliriz. Mesela string ile ilgili şeyler de var. Oradan ilk 4 tanesini al, onu şeye çevirip alan öyle şeyler de yapabiliriz.
+
+377
+00:59:51,139 --> 01:00:00,739
+Buradaki anlaşılması gereken şey, şurada fonksiyon kullanılabilmesi. Fonksiyonları, tabi dokumentasyon açıp okuyabiliriz.
+
+378
+01:00:00,739 --> 01:00:08,739
+Bizim labın şeyi zaten uzun, onlara girecek kadar şeyi yok. Bu da bu kadar arkadaşlar. Slide'ın sonuna gelmiş oluruz.
+
+379
+01:00:10,164 --> 01:00:10,724
+Diyelim.
+
+380
+01:00:12,664 --> 01:00:14,784
+Böyle teşekkür ederim katıldığınız için.
+
+381
+01:00:15,884 --> 01:00:17,004
+İyi akşamlar diyeyim.
+
+382
+01:00:17,384 --> 01:00:19,144
+Var mı bir şey söylemek isteyen, eklemek isteyen?
+
+383
+01:00:19,724 --> 01:00:21,084
+İyi akşamlar hocam.
+
+384
+01:00:22,364 --> 01:00:23,204
+İyi akşamlar.
+
+385
+01:00:23,524 --> 01:00:24,984
+Ondan güzel bir mesut duymuş olduk.
+
+386
+01:00:27,624 --> 01:00:28,264
+Tamam.
+
+387
+01:00:28,604 --> 01:00:29,564
+Sonlandırıyorum o zaman.
+
+388
+01:00:30,384 --> 01:00:31,484
+Herkes kendine iyi baksın.
+
+389
+01:00:31,804 --> 01:00:32,344
+Görüşürüz.
+
+390
+01:00:34,884 --> 01:00:36,004
+Öncelikten durdum.

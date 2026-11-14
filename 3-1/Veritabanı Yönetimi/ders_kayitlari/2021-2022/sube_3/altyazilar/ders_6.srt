@@ -1,0 +1,2643 @@
+1
+00:00:33,460 --> 00:00:34,640
+Tamam, teşekkür ederim.
+
+2
+00:00:59,572 --> 00:01:05,831
+Ders dokümanlarını paylaşacağız ama bunları zaten önceden paylaştık diye ben.
+
+3
+00:01:07,230 --> 00:01:14,072
+Tekrar bir seikolojiyle konuşulur. O grup üçün zaten yürütücüsü olarak gözüküyor.
+
+4
+00:01:15,352 --> 00:01:22,012
+O önceden paylaşmış olduğunu düşünüyorum. Paylaşmadıysa buna söyleriz. Paylaşınır inşallah.
+
+5
+00:01:22,706 --> 00:01:43,867
+Şimdiden devam edeyim. Zaten o dersin kitabı, o dersin notları, o zaten internette var yani onlar. Silbert Chatsun ders kitabının notları onlar. Onlar zaten hazır. İnternette dinleyebilirsiniz.
+
+6
+00:01:50,804 --> 00:01:57,343
+Ne bilemedim, onu sorarız. Ama bunları paylaşış olması lazım yani, benim şu anda size anlattığım dersim.
+
+7
+00:02:38,228 --> 00:02:46,288
+Evet, arkadaşlar, şimdi bu anahtarların belirlenmesi noktasındayız.
+
+8
+00:02:47,247 --> 00:02:49,228
+Şimdiye kadar bazı tanımlarımızı yaptık.
+
+9
+00:02:50,668 --> 00:02:56,288
+Şimdi bundan sonra anahtarların tanımlanmasından bahsedeceğim.
+
+10
+00:03:00,288 --> 00:03:01,068
+Burada...
+
+11
+00:03:01,395 --> 00:03:20,055
+Şimdi anahtarlar tabii hem varlıklar için var hem de bağıntılar için söz konusu. Bağıntılarda da işte birebindik, bireenlik ve eleenlik olması durumlarına göre değişiyor. Varlıklarda da işte zayıf varlık olmasına göre bir nokta var. Orada değişiyor.
+
+12
+00:03:29,395 --> 00:03:41,235
+Öncecik kılacak nitelik grubu anahtarı oluyor. Onun minimali, minimal süper keyi de aday anahtarı oluyor. Onlardan da seçilen bir tanesi de primary keyi oluyor.
+
+13
+00:03:41,414 --> 00:03:54,395
+Yani 3 tane anahtar yanımımız var. Super keyi, key ile aynı, süper keyi aynı şey diyelim. Sonra candidate key, minimal süper keyi oluyor. Primary key ise...
+
+14
+00:03:54,770 --> 00:04:04,931
+kendi de süper keylerden seçilen bir anahtar. Bunu söyledik. Şimdi bundan sonra bağıntılar noktasında bir anahtar mevzusu var. Bir de zayıf varlıklar için var.
+
+15
+00:04:06,550 --> 00:04:15,230
+Şimdi birebirlikte eleman sayılana göre bağıntıların anahtarları nasıl değişir?
+
+16
+00:04:15,616 --> 00:04:25,656
+Şimdi burada NNN'lik bağıntıda, burada cümleyi okuyalım, NNN'lik bağıntıda anahtarı, bağıntı içerisindeki varlık kümelerinin anahtarlarının hepsidir.
+
+17
+00:04:26,136 --> 00:04:33,716
+Yani NNN'lik bir bağıntı, ister dekülsif olsun, ister binary olsun, ister turner olsun falan.
+
+18
+00:04:34,276 --> 00:04:41,396
+Her bir için bakın bu kurallar şimdi hepsi çok önemli, yani bundan sonra hep işte buna bağlı diğer yapacağımız şeyler.
+
+19
+00:04:43,615 --> 00:04:46,995
+bir bağıntının, demek ki şeyim,
+
+20
+00:04:47,668 --> 00:05:03,088
+bir bağıntının anahtarı ne oluyor? İçerisinde bulunduğu, o bağıntının içerisinde, o bağıntıyı barındıran, içerisinde bulunan varlık setlerinin anahtarlarının toplamı. İkisi nedeni oluyor.
+
+21
+00:05:03,447 --> 00:05:09,326
+Şimdi bunu böyle aldık, tamam böyle ama nedenini de anlamak bu cidden önemli oluyor.
+
+22
+00:05:09,326 --> 00:05:14,668
+Çünkü başka türlü anahtar olamayacağını görmek lazım.
+
+23
+00:05:15,668 --> 00:05:22,848
+direnlikte bakın, sadece N tarafındaki bağıntının anahtarı olacak.
+
+24
+00:05:23,326 --> 00:05:29,127
+Bire birlikte ise sadece bir tanesi yeterli. Herhangi biri olsa yeterli.
+
+25
+00:05:29,127 --> 00:05:36,387
+Şimdi bu üç cümlenin nedeninin anlaşılması gerekiyor. Sonra zayıf haritlere bakacağız.
+
+26
+00:05:36,687 --> 00:05:41,127
+Şimdi mesela...
+
+27
+00:05:42,420 --> 00:06:09,459
+Buna göre önceki bağıntılardaki şeyleri, önceki bağıntılara bir bakalım mesela burada. Mesela burada şu basit olanlardan başlayalım. Mesela 1'e endik, N'e endik mesela. Bunlara bakalım. Şimdi burada 1'e birlikte, hepsi var burada, 1'e birlikte. Mesela 1'e birlikte şu bağıntı için anahtar nedir desek, bu bağıntı içerisindeki bir kere elemanlar neler?
+
+28
+00:06:10,420 --> 00:06:35,240
+mesela D1, E1, D2, E2, D3, E3 gibi sampullar, örnekler yani. Buradaki bir D, bir D, benim buradaki biraz önceki o sette bir kez geçti. Bir kez geçmeye mecbur. Çünkü bir E1'di.
+
+29
+00:06:35,519 --> 00:06:57,139
+Aynı şekilde bir E de bir kez geçmeye mecbur. Çünkü şundan dolayı, buradaki birden dolayı. O zaman ben burada ikisinden bir tanesinin anahtarı bu pantın anahtarı olmak için yeterli. Çünkü D1 bir kez geçti. Yani bakın tekrar söylüyorum buna uygun olacak bir seti. D1, E1, D2, E2.
+
+30
+00:06:57,584 --> 00:07:19,584
+D3, E3. Böyle böyle devam edin. Yani hiçbir zaman D1, E1 ile beraber D1, E2 göremeyeceksiniz. Çünkü birebirlik. Aynı şekilde hiçbir zaman D1, E1, D2, E1 yine göremeyeceğiz. Çünkü E1 bir departmanın yöneticisi oluyor. O zaman demek ki burada birebirlikte...
+
+31
+00:07:19,795 --> 00:07:45,774
+Bu bağıntı için anahtarı, bunun iki taraftan bir tanesi olması yeterli. Yani sadece departman numarası, yani D1, buradaki bağıntı içerisindeki seti unique kılmak için yeterli oluyor. Veya E1 yeterli oluyor. E1'in numarası yeterli oluyor. Şimdi bire birlikte böyle.
+
+32
+00:07:46,240 --> 00:07:47,680
+Peki brennikte
+
+33
+00:07:47,680 --> 00:07:49,279
+brennikte nasıl?
+
+34
+00:07:49,779 --> 00:07:50,519
+Burada mesela
+
+35
+00:07:50,519 --> 00:07:53,100
+D1, E1 diyeceğim.
+
+36
+00:07:53,560 --> 00:07:55,040
+D1, E2
+
+37
+00:07:55,040 --> 00:07:57,759
+D1, E3 diyebilirim.
+
+38
+00:07:58,220 --> 00:08:00,079
+Bir tane buradan örnek aldım.
+
+39
+00:08:00,360 --> 00:08:01,920
+Üç tane onunla eşleşti.
+
+40
+00:08:02,000 --> 00:08:02,740
+Çünkü brennik.
+
+41
+00:08:03,500 --> 00:08:04,160
+Şimdi burada
+
+42
+00:08:04,160 --> 00:08:06,680
+bu örneğimden yola çıkarak
+
+43
+00:08:06,680 --> 00:08:07,720
+diyebilir miyim ki
+
+44
+00:08:08,276 --> 00:08:29,875
+Departman numarası bu bantı için, bu bantı için anahtar olabilir. Olamaz. Çünkü neden? D1, E1, D1, E2, D1, E3. Tek başına D1. Bakın 3 tane employee ile eşleşti. O zaman departman numarası tek başına yeterli olmayabilir. Ama burada hiçbir zaman diyemem D1, E1.
+
+45
+00:08:30,516 --> 00:08:45,615
+D2, E1 diyebilir miyim? Diyemem. Çünkü E1 birden çok departmanla çalışamaz. Bu küçük dünyanın bize söylediği mana. D1, E1, D2, E1 olamaz.
+
+46
+00:08:46,259 --> 00:08:59,318
+E1 birden çok departmanda çalışamaz. Öyle olunca o zaman benim burada sayacağım sette hiçbir zaman herhangi bir employee varlığı birden çok geçemez.
+
+47
+00:08:59,744 --> 00:09:14,323
+geçemeyeceğini gördük. Öyle olduğu için işte bir de Enlilk'te her zaman bu bağıntının, bu bağıntı kümesinin anahtarı en olan taraftaki varlığın anahtarı olmak durumunda. Öyle olmak zorunda.
+
+48
+00:09:14,772 --> 00:09:23,211
+Birebirlikte herhangi bir tanesi, birebirlikte en olan taraftaki varlığın, kımesinin anahtarı olmak zorunda.
+
+49
+00:09:23,611 --> 00:09:31,772
+En önemlilikle bakalım, burada employee proje. Yani bir employee objesi, varlığı, bir tane projede...
+
+50
+00:09:32,082 --> 00:09:59,942
+Veya birden çok projede çalışabiliyor. Bir projede de birden çok employee var. Yani şöyle bir set olabilir. Şöyle bir bağıntıda böyle bir sample olabilir. E1, P1, E1, P2. E3, P1. Bakın P1 hem E ile hem P1 hem E3 ile geçleşti. Aynı şekilde E1 hem P1 ile hem P1 ile.
+
+51
+00:10:00,000 --> 00:10:17,379
+T2 ile eşleşti. Yani çoklu bağıntı. Şimdi böyle olunca ben buradan tek bir varlık birden çok geçtiği için buradan gelen bir anahtar bu bağıntı için yeterli olmayacak. Aynı şekilde buradan gelen yeterli olmayacak. Çünkü birden çok geçiyor.
+
+52
+00:10:27,764 --> 00:10:28,303
+Evet.
+
+53
+00:10:29,484 --> 00:10:31,524
+Sesim geliyor değil mi? Orada sorun yok.
+
+54
+00:10:33,703 --> 00:10:41,864
+Eleman sayılarına bağlı olarak, yani kardinal etiğe bağlı olarak o bağıntı, nihayetinde bağıntı da bir küme.
+
+55
+00:10:42,264 --> 00:10:45,344
+Yani varlık seti gibi bağıntı setimiz var.
+
+56
+00:10:45,678 --> 00:10:58,259
+İki varlığın elemanlarının bir araya gelmesiyle oluşan, onun da bir anahtarı olacak. Onun anahtarını belirlemeye çalışıyoruz şu anda. O da eleman sayılana bağlı olacak. Bu kısım oldukça önemli.
+
+57
+00:10:58,259 --> 00:11:05,058
+Benzer bir nokta, zayıf varlık kümesi için.
+
+58
+00:11:05,971 --> 00:11:16,890
+Madem zayıf varlık içerisindeki niteliklerin hepsi birden bile o zayıf varlık için bir anahtar olma kabiliyeti göstermedi.
+
+59
+00:11:17,350 --> 00:11:22,091
+O yüzden birinci anahtarı, o yüzden bir güçlü varlık tanımladık.
+
+60
+00:11:22,451 --> 00:11:32,192
+İşte o güçlü varlığın birinci anahtarı ile, yani birinci anahtarı ile hayır dediği nitelik bir araya gelince o zayıf varlığın anahtarı olacaktı.
+
+61
+00:11:33,971 --> 00:11:38,510
+Zayıf varlık kavramı içerisinde bunu zaten ifade ettim. Evet.
+
+62
+00:11:40,115 --> 00:12:08,096
+Önceki bağıntıları şey yaptık, örneklendirdik burada. Şimdi diğer örnekler, üçlü bağıntılar için, çok dereceli bağıntılar için. Bu çok dereceli bağıntılar, yani çok yaygın kullanıma olmamakla beraber, onu belirtmekte fayda var. Ama gene bu ER kapsamı içerisinde de önemli bir konu, yani olayın işte biraz daha teorik diye.
+
+63
+00:12:08,115 --> 00:12:21,096
+Öyle ifade edelim. O da tam olmadı ama. Yani gene ihtiyaç olabilir. Çünkü o küçük dünyayı çok güzel ifade ediyor. Yani mesela burada çalışan proje makine.
+
+64
+00:12:21,682 --> 00:12:27,682
+Burada bir şey yazmadıysak N manasında oluyor bu arada ama genelde yazıyoruz yani.
+
+65
+00:12:28,082 --> 00:12:33,923
+Burada diyor ki, bu küçük dünyamız şöyle bir dünya, bir çalışan bir projede birçok makine kullanıyor.
+
+66
+00:12:34,342 --> 00:12:36,582
+Yani bu bizim bir bilgisayar projesi olsun.
+
+67
+00:12:37,182 --> 00:12:46,903
+Bir çalışan bir projede hem bilgisayar kullanıyor, hem desktop kullanıyor, hem işte laptop kullanıyor, hem GPS cihazı kullanıyor, hem cep telefonu kullanıyor falan o manada öyle bir şey düşünüyorum.
+
+68
+00:12:47,154 --> 00:12:55,054
+Diğer taraftan, bir projede kullanılan bir makine, birden çok kişi tarafından kullanılıyor.
+
+69
+00:12:55,456 --> 00:13:23,394
+Bir projedeki bir makine, bakın buralardan bir sample aldım. Bir proje, bir makine. Birçok çalışan da kullanıyor. Çünkü şurada N var. Ben yazmadım ama N var söyledim. Aynı şekilde bir çalışan bir makineyi birçok projede kullanıyor. Bunu söylediklerle bir projede bir makine birçok çalışan da bir çalışan bir projeyi birçok makineyi kullanıyor. Yani hepsinde iki tane sample aldım, diğerini çoklu halde ifade ettim. Bu her zaman böyle N, N, N, N.
+
+70
+00:13:23,456 --> 00:13:39,514
+olmak zorunda değil. Duruma göre, burada mesela bakın, şöyle bir küçük dünya var. Yani bir teknisyen, bir projede bir tane notebook kullanabilir. Bir teknisyen, bir notebooku ancak bir projede kullanabilir.
+
+71
+00:13:41,748 --> 00:13:48,086
+Bir projedeki bir notebook, bir bilgisayar, bir teknisyen tarafından kullanılabilir.
+
+72
+00:13:48,488 --> 00:13:58,826
+İşte bu şartlar altında, bu küçük dünyada bu şartlar altında ifademiz bu şekilde oldu.
+
+73
+00:13:59,412 --> 00:14:21,011
+Burada bunu ifade etmiş işte böyle. İşte bu gereksinim analizi diyelim. Yani o Yönet'e hasır eden ifade buradaki ifadeler. O zaman burada bunun anahtarı ne olacaktır diye düşünsek. Bunun anahtarı ne olabilir? Yani ikili bağıntılarda anahtarı ifade ettik.
+
+74
+00:14:23,028 --> 00:14:39,567
+anahtarı ifade ettik. Güçlü bağıntıda, yani şuradaki bağıntı kümesi içerisinde neler olabilir? Mesela T1, T1, N1. N1 bir daha geçebilir mi? Tek başına.
+
+75
+00:14:42,067 --> 00:14:44,648
+T1, T1, N1.
+
+76
+00:14:45,586 --> 00:15:05,788
+N1 geçebilir mi tek başına? Evet, geçebilir. Yani ama T1, T1 değil de başka bir. Örneğin T2, P2, N1 geçebilir. Yani T2, P2, N1, T1, P1, N1 olabilir.
+
+77
+00:15:07,124 --> 00:15:18,302
+Çünkü bunun ifade ettiği manada, ne dedik, yani bunu tekrar söylüyorum, şu bu kritik olan nokta orası, buralardan bir sample aldıktan sonra bu bir kez geçebilir.
+
+78
+00:15:18,899 --> 00:15:30,320
+O zaman, buradaki bir N1 notebookunun, buradaki set içerisinde, bağıntı kümesi içerisinde, çok kez gözükmesi de mümkün olmuş oluyor.
+
+79
+00:15:30,679 --> 00:15:39,720
+Buradaki, biraz önceki ikili bağıntılar gibi değil yani. Şurada bir yazınca, notebook, buradaki bağıntı kümesinde bir kez gözüklecek değil.
+
+80
+00:15:39,720 --> 00:15:45,220
+Çünkü bu bir manası, şundan, şundan bir sample aldığım zaman bir.
+
+81
+00:15:45,615 --> 00:15:47,936
+Bir kez gözükecek, o manası var yani.
+
+82
+00:15:49,395 --> 00:15:58,336
+Öyle olunca, yani bir T1, T1, N1, hatta T1, T2, N1.
+
+83
+00:15:59,436 --> 00:16:04,775
+Yine olabilir. Bakın, buradan iki farklı sample aldım. Aynı notebook'u kullandım.
+
+84
+00:16:05,682 --> 00:16:12,202
+Öyle olduğu için burada N1, yani notebook'un anahtarı bu bağıntı için yeterli olmayacak.
+
+85
+00:16:12,523 --> 00:16:17,602
+Benzer şekilde projenin anahtarı, bu bağıntı kümesinin anahtarı olmakta yeterli olmayacak.
+
+86
+00:16:17,702 --> 00:16:25,423
+Çünkü P1 mesela bir kez geçmeye mecbur değil, N1 bir kez geçmeye mecbur değil, aynı şekilde T1 bir kez geçmeye mecbur değil.
+
+87
+00:16:25,423 --> 00:16:32,543
+Ya ne peki, ne olacak? Şuradaki T1, P1 mesela,
+
+88
+00:16:32,975 --> 00:16:56,296
+Burada ancak bir kez geçebilir. Çünkü onun şeyi burada bir kez gözüküyor. Yani bir tanenin de kullanabileceği için. Demek ki iki tanesi, en az iki tane seçmem lazım. En az iki tane varlık benim bu bağım tükmesinin bir anahtarı olabilir. En az iki tane.
+
+89
+00:16:57,268 --> 00:17:25,268
+Evet, bu düşünceyi yapı oluşturmak önemli. Yani bu konunun burasını anlamak için. O zaman burada ne oldu bakın? T1, T1 veya N1, T1 veya T1, N1. Bunlar ancak bir kez geçebilir bu saydığım şeyler. Böyle olunca demek ki bu üçlü de benim herhangi iki tanesini seçip ona anlayabilirim.
+
+90
+00:17:25,268 --> 00:17:40,268
+anahtar diyebilirim. Çünkü o iki tane seçtiğim varlık seti, yani Teknistan Project olabilir, Project Notebook veya Teknistan Notebook olabilir. Bu seçtiğiniz hiç fark etmez. Hepsi ancak bir kez ortaya, bir kez...
+
+91
+00:17:40,338 --> 00:17:49,278
+O, ortaya çıkacağım. O yüzden, bunun anahtarı, şu bağıntı kümesinin anahtarı, teknisyen, projek seçebilirim yani mesela.
+
+92
+00:17:49,878 --> 00:17:57,179
+Veya diğer ikili grubu seçebilirim. Şimdi gelelim diğer örneklere. Bu örneklerde de bakın, farklı eleman sayıları var.
+
+93
+00:17:58,298 --> 00:18:06,558
+Bire bire N'lik, bire N'e N'lik, yani şuradaki N, P'ler, bunlar kafamızı karıştırmasın, bunlar çoklu manasında. N, P.
+
+94
+00:18:07,038 --> 00:18:13,179
+N, P, M mesela. Ama çoklu manası farklı olması ifade etmiyor.
+
+95
+00:18:13,839 --> 00:18:25,960
+Şimdi böyle olunca mesela, bire bire enlikten başlayalım. Burada diyoruz ki, şuradan birer sample aldığımız zaman bu çok kez geçebilir.
+
+96
+00:18:28,500 --> 00:18:31,420
+Bir, bir, buradan çok aldırıp çok kez geçebilir.
+
+97
+00:18:31,892 --> 00:18:55,371
+O yüzden buradan yani bu çok geç geçebildiği için şu ikisi anahtar olmak için yeterli değil. En olan taraftan olan varlığın, varlığı içerecek şekilde bir tane daha seçmem lazım. Yani Employee Location veya Employee Project burada bu üçlü bağıntının anahtarı olabilecek.
+
+98
+00:18:55,858 --> 00:19:11,838
+O zaman bu düşünceden yola çıkarak yine bir adım daha attığımız zaman şöyle ki şuradaki 1N'lik bir bağıntıda bunun anahtarı, bağıntı hükümesinin anahtarı çoklu olan taraflardan iki tane seçmem yeterli olacaktır.
+
+99
+00:19:11,838 --> 00:19:19,838
+Yani enjinyer ve projektin anahtarlarının projek ve enjinyerin anahtarları bakın projektenin ve employee ID.
+
+100
+00:19:23,188 --> 00:19:44,508
+Bu ikisinin anahtarları bir araya gelince bu bir kez geçiyormuş. Şuradaki bağıntıda. Bir kez geçmek zorunda. Şu biri onu ifade ediyor. O zaman ikisinin anahtarları bir araya gelerek şu managed'in anahtarını oluşturuyor. Peki, ene ene enlik çoklu bağıntılarda, şöyle çoklu olanda herhangi iki tanesini seçmem yeterli mi?
+
+101
+00:19:45,586 --> 00:19:59,207
+Yeterli değil. Üçü birden olması lazım. Çünkü şu ikisini seçtiğin zaman bu çok kez geçebiliyor. Şunun manası şu ikisinin geçme sayısını ifade ediyor. Şunun manası bu ikisinin geçme sayısını ifade ediyor.
+
+102
+00:20:00,000 --> 00:20:21,118
+Böyle olunca o zaman çok kez geçiyorlarmış şu ikisi. Çok kez geçiyor. Bu ikisi çok kez geçiyor. O zaman çok kez geçiyorsa bu ikisi anahtar olamaz. İkisinin anahtarlarının bir araya gelmesi anahtar olamaz bu bağıntı için. O zaman ne yapacağız? Mecbur şu üçünün birden anahtarlarının bir araya gelmesiyle bir anahtar tanımımız olacak.
+
+103
+00:20:21,748 --> 00:20:49,748
+Evet. Şimdi bazı şeylerde, mesela PCNM'in de birazdan bakacağız ama zaman yeterse, yani burada üçlü bağıntı tanımlama imkanı olmayabiliyor. Bu diğer diagram böyle tool'ları var, hatta ücretli olanlar var. Çünkü burada işte bu diagramı yapıp da çalışmak ayrı bir işte, database designer mesela, ayrı bir meslek yani, ayrı bir dağılık.
+
+104
+00:20:49,748 --> 00:20:54,946
+Yani sonuçta ayrı bir profizyonik elektriği. Bundanla ilgili tabii tool'lar var, araçlar var.
+
+105
+00:20:55,268 --> 00:21:06,508
+ERWin mesela, bunlardan bir tanesi, ücretle. Yine işte PCN'de de var. Neyse, yani burada bazıları böyle üçlü veya çoklu bağıntılara izin vermiyorlar.
+
+106
+00:21:06,606 --> 00:21:11,826
+Yani kullanılıyor bunlar. Bunun yerine böyle ikili bağıntılarla bunu ifade edebiliriz.
+
+107
+00:21:12,788 --> 00:21:23,508
+Ama bu da mesela tam bizim o küçük dünyayı tasvir etmeyebilir, ona denk gelmeyebilir. Mesela bu ikisini karşılaştırdığımız zaman bu tam olarak buna denk geliyor mu?
+
+108
+00:21:24,596 --> 00:21:43,316
+Tam denk gelmiyor. Bu çok daha fazla mana taşıyor. Yani burada diyoruz ki bir tedarikçi bir parçayı işte şu projeye sağladı veya işte çok projeye sağladı. Burada şey yazmadığı için yine N'e N'e N'lik bunlar. Çok projeye sağlıyor.
+
+109
+00:21:52,596 --> 00:22:08,976
+supply, tedarik ediyor. Bir projede mal sağlıyor. İşte ona malzeme tedarik ediyor. Ama sonra diyor ki burada bir tedarikçi bir parçayı tedarik ediyor. Yine bir projede şu parçalar kullanılıyor.
+
+110
+00:22:09,778 --> 00:22:23,538
+Şimdi burada bize bu bilgileri verdi. Fakat biz buradan bu şekle bakarak şu çıkarımı yapamıyoruz. Yani diyemiyoruz ki bir tedarikçi bir parçayı bu projede kullandı.
+
+111
+00:22:23,954 --> 00:22:51,836
+Bu çıkarımı yapamayız. Yani %100 yapamıyoruz. Belki bir olasılıksal bir şey çıkartabiliriz. Yani hee diyebiliriz ki bu tedarikçi bu parçayı sağladığına göre bir projede bu parça kullanıldığına göre belki bir ihtimal yani veya bazı şartlar altında diyebiliriz ki yani işte tek olması lazım. Yani bu bir parçanın.
+
+112
+00:22:51,954 --> 00:23:08,454
+Yani bu projede tek bir parça olması lazım. Bu da bu proje için tek bir tedarikçi olması lazım ki o zaman diyebilirim bu tedarikçi bu parçayı bu projede sağladı diyebilirim.
+
+113
+00:23:08,454 --> 00:23:19,954
+Ama böyle bakın enlik olduğu zaman, böyle çoklu olduğu zaman biraz önceki bu ikili kurduğum cümlelerden yola çıkarak diyemem ki bir tedarikçi bir parçayı işte şu parçayı...
+
+114
+00:23:19,954 --> 00:23:46,855
+Şu tedarikçi, şu projeyi tedarik etti, olduğunu söyleyemem. Yani bu çıkarımı yapamam yani. Bu analitik düşünce kurbusu içerisinde bunu yapamam. Yani bunu bir düşünün mesela, çalışırken veya dinlerken tekrar düşünüyor. Burada mesela bakın, şu ifade onu ifade ediyor. Biraz önceki şeyimi ifade ediyor. Bu ona tam denk gelmiyor.
+
+115
+00:23:48,242 --> 00:24:01,042
+O yüzden N-E-N-N-Liklerde eğer N-E-N-Lik ise, çokluysa bizim turning bandımız, bunun tam olarak ifade etmesi için okuşuk dünyayı, 3N-E-N-Lik'e o zaman kullanmam lazım.
+
+116
+00:24:01,163 --> 00:24:05,502
+Ama bu da yeterli olabiliyor bazı durumlarda eğer N-E-N-Lik değilse.
+
+117
+00:24:07,316 --> 00:24:23,076
+Eğer illa böyle şey yapacaksak, şöyle bir şey yapacaksak, eğer kullandığımız ER diyagram oldu da buna izin vermiyorsak, öyle bir malzeme yoksa diyelim çizimde, o zaman buna denk geliyor.
+
+118
+00:24:23,496 --> 00:24:26,115
+Yani şöyle bir zayıf varlık da bunu ifade edebiliriz.
+
+119
+00:24:26,115 --> 00:24:28,115
+Şimdi burada...
+
+120
+00:24:31,316 --> 00:24:50,694
+Burada ne yapıyor bakın. Burada supply'ı zayıf yaptık. Supply hadisesini yani tedarik etme hadisesi, tedarik etme olayı. Bu tedarik etme olayını da supplier part ve projekte bir anlik bağladık.
+
+121
+00:24:50,928 --> 00:24:58,928
+Diyoruz ki burada bir supply, yani quantity'si de var. O bantının işte ne kadar...
+
+122
+00:24:59,508 --> 00:25:09,127
+Ne kadar miktar verdik, tedarik ettik. Diyoruz ki burada, bu tedarik, bir supplier tarafından bakın, birer endik.
+
+123
+00:25:09,127 --> 00:25:22,606
+Bunun şeyi, bu zayıfın var olma bağımlılığı, 3 tane güçlü varlık seti üzerinden oldu.
+
+124
+00:25:27,508 --> 00:25:32,067
+Bu zayıf varlığı güçlü kılmak için gerekli olan bağlantılar.
+
+125
+00:25:32,488 --> 00:25:33,907
+Şunlar, burada bir bağlantılar.
+
+126
+00:25:34,307 --> 00:25:39,067
+Bu zayıf varlığın hepsi birden bunu ancak güçlü kılıyor.
+
+127
+00:25:39,647 --> 00:25:42,627
+Yani işte o zaman bu buna denk gelmiş oldu bakın.
+
+128
+00:25:43,326 --> 00:25:46,667
+Çünkü burada bu supply'ın anahtarı ne oldu?
+
+129
+00:25:47,508 --> 00:25:52,188
+S-Name, supplier, partner ve proje name olmuş oldu.
+
+130
+00:25:52,387 --> 00:25:53,627
+Üçü birden ancak oldu.
+
+131
+00:25:54,036 --> 00:26:09,336
+Sebebi de şu zayıf varlıklarda şunları böyle o zayıf varlığın güçlüsü, var olma bağıntısı kıldığım için şu bağıntıları buna denk geldim.
+
+132
+00:26:18,324 --> 00:26:35,463
+Evet, böyle zayıf varlıklar da kullanmak istemiyor isek, o zaman ne yapabiliriz diye sorsak, buradaki soruyu, bir kür olan var mı? Pek katılmıyorsunuz. Genelde çevrimişi derslerde böyle oluyor.
+
+133
+00:26:37,463 --> 00:26:39,483
+14 kişi var, bilmiyorum ne kadar.
+
+134
+00:26:40,307 --> 00:27:08,307
+Takip edebiliyorsunuz. Burada, hani, şunu yapmak istemedik. Bizim Turner'i, Bant'ı kullanamadık mesela. O zaman bunu yapabiliriz. Burada da zayıf varlık kullanmak istemedik. Ne yapacağız? Veya kullanmamıza izin vermedi. Tool'da o yok mesela. Bunun çizimi sırasında. O zaman da bunu şey yapıp, güçlü yapacağız gene, madem zayıf yok. O zaman bunu güçlü yapıp, bunu bir tane anahtar, yani saplan.
+
+135
+00:27:08,307 --> 00:27:34,106
+anahtarı vereceğiz. Tabii bu mümkün, yani her zaman mümkün. Zayıf varlık kullanmadan hepsini güçlü yapmak veya turneri yapmamak, turneri kullanmamak her zaman mümkün bunlar ama işte bunlar projenin, kavramsat tasarımının ince ayarları. Yani daha iyi tasarımı noktasında. Ben bunu zayıf yapmam, bu benim veritabanı tasarım için daha başarılı. Yani zayıf varlık kullanmak.
+
+136
+00:27:34,451 --> 00:28:02,290
+İyi bir tasarım yani esasında ama yeri geldiği zaman kullanabiliyorsak. Çünkü zayıf varlık ekstra bir bilincin anahtar yükü getirmiyor sistemimize. Çünkü bilincin anahtarın takip edilmesi, onun biricik kılınması, sistemin bu kısıtı sağlaması ayrı bir yük. Ben bunu zayıf yapınca o yük ne oluyor? Bir parça atı istemiş oluyor. O yüzden burada bu önemli.
+
+137
+00:28:02,451 --> 00:28:14,432
+oluyor. Yani bu zayıf varlığı kullanmak her zaman iyi bir şey yani bir CET'ten, o CET'ten iyi bir şey. Ama zayıf varlığı kullanmıyorsak da o zaman işte burada bunu düştü kılacağız.
+
+138
+00:28:16,242 --> 00:28:34,323
+Burada tasarımımız sırasında böyle çoklu gene bağıntılara ihtiyaç olabilir dediğimiz gibi ve 3'ten fazla da olabilir. O küçük dünyaya göre buradaki sayıların belirlenmesi gerekiyor. Yani eleman sayılarının belirlenmesi gerekiyor.
+
+139
+00:28:38,644 --> 00:28:48,624
+İfadeden yola çıkarak bu sayılar belirlenecek. Yani şu sayı, şurada buradaki N sayısı, yazmıyor ama N, N, N idi bu.
+
+140
+00:28:49,384 --> 00:28:55,364
+Buradaki N sayısını nasıl ifade ettik? Şuradan bir numune, buradan bir numune alarak bunu ifade ettik.
+
+141
+00:28:57,084 --> 00:29:01,202
+Tekrar ifade etmeyeyim, aynı cümleyi kurmayayım. O zaman örneği şurada yapalım.
+
+142
+00:29:01,324 --> 00:29:06,124
+Burada da şunu ifade etmek için diğer elinden birer numune alarak.
+
+143
+00:29:06,414 --> 00:29:26,154
+Yani bir sample alarak bunu ifade edeceğiz. Yani burada ne var bakın, anlaşılan ne? Öğrencinin işte bir dersi alması, işte hangi zamanda, hangi odada, hangi günde, hangi günün, hangi saatinde, hangi sınıftan o dersi alıyor? Bizim üniversite veritabanının...
+
+144
+00:29:26,900 --> 00:29:32,059
+Şemasının kavramsat tasarımıyla ilgili bir kısım.
+
+145
+00:29:33,319 --> 00:29:48,220
+Şimdi burada bir öğrenci bir günde aynı o günün bir zamanında bir öğrenci bir günde o günün bir zamanında bir odada birden çok ders alabilir mi?
+
+146
+00:29:49,778 --> 00:30:00,000
+Alamaz. Değil mi? Yani bir kere aynı odada birden çok ders olamaz. Aynı sınıfta birden çok ders olamaz. Zaten aynı...
+
+147
+00:30:00,000 --> 00:30:20,460
+gün içerisinde de öğrenci birinden çok derse kaydolmaz, çakışma oluyor diyoruz ya. İşte o yüzden burası ne olacak? Demek ki bir olmak zorunda. Bakın buradan birer numune aldım ve bu buraya belirledim. Benzer şekilde diğerlerini de belirlememiz mümkün. Mesela örnek şunu seçelim mesela, şunu belirleyeceğiz.
+
+148
+00:30:26,740 --> 00:30:45,440
+Biri derse aynı sınıftan, aynı saatte, farklı günlerde girebilir mi? Evet girebilir. Veritabanı dersi, işte misal pazartesi, çarşamba, pazartesi, cuma olmuş olsun, aynı sınıfta sabah saat 9'da başlıyor. Bakın bu olay gerçekleşmiş oldu.
+
+149
+00:30:46,163 --> 00:30:55,364
+Farklı günlerde bir öğrenci, Eri Tabanı dersini aynı sınıfta, aynı zamanda, fakat farklı günlerde girdi.
+
+150
+00:30:56,202 --> 00:31:04,202
+Evet, o zaman ne oldu? O zaman burada şu 1 ile şu farklı günler, N'i belirlemiş olduk. Demek ki burası 1, burası N olacak.
+
+151
+00:31:04,583 --> 00:31:07,442
+Diğer soru işaretlerini de siz belirleyebilirsiniz artık.
+
+152
+00:31:11,730 --> 00:31:25,070
+Devam ediyorum. Şimdi ER malzemelerimiz bunlar. Diğer bir konumuz EER, yani Extended ER, yani genişletilmiş ER.
+
+153
+00:31:26,194 --> 00:31:42,914
+Şimdi bazı küçük dünyaları tam böyle ER'li ifade edemiyoruz veya eksik oluyor. Zaten anlaşılacak vaziyet. O yüzden böyle ek yardımcı bazı böyle malzemeler kullanmamız gerekiyor.
+
+154
+00:31:46,996 --> 00:31:57,796
+Bunlar da genelleme ve ize ait olma bağıntıları da ifade ediliyor.
+
+155
+00:32:00,338 --> 00:32:23,578
+Superclass'lar ve Super Entity veya Alt, Süper Varlık veya Subtype, Alt Varlıklar olacak. Bunlar nesne yönelimli, yani kavramlar esasında. Oradaki kavramlardan çok çok farklı değil. Ama ufak bazı dikkat etmesi gereken noktalar var.
+
+156
+00:32:28,338 --> 00:32:51,519
+katılım kısıtlaması var. Yani şu süper varlığın alt varlıklara ayrılmasında buradaki bütün elemanların mutlaka bir gruba dahil olması söz konusuysa buna zorunlu katılım kısıtlaması diyeceğiz.
+
+157
+00:32:51,519 --> 00:32:55,499
+Yani bütün gemiler ya yolcu gemisi ya yük gemisi ise.
+
+158
+00:32:56,050 --> 00:33:09,871
+O zaman zorunlu. Ama aksi takdirde, yani bazı gemiler bu kategorilere sığmıyor ise, bu kategorilere girmiyor ise, o zaman burası şey olacak, kısmi olacak, seçimli olacak.
+
+159
+00:33:23,124 --> 00:33:35,864
+İkisinde de, yani bütün alt varlıklarda da olması söz konusu veya birden çok alt varlıkta olması söz konusuysa o zaman OR ile bunu ifade edeceğiz.
+
+160
+00:33:36,544 --> 00:33:41,124
+Aksi takdirde disjoint yani AND ile ifade edeceğiz.
+
+161
+00:33:41,782 --> 00:33:44,624
+O zaman böylece dört farklı kısıtlama ortaya çıkmış oluyor.
+
+162
+00:33:47,124 --> 00:33:56,044
+OR, total, AND veya kısmi, OR, kısmi, AND olacak şekilde dört farklı kısıtlama olmuş oluyor.
+
+163
+00:33:56,682 --> 00:34:01,804
+Burada süper varlık bunların parent'ı gibi kısasında.
+
+164
+00:34:01,804 --> 00:34:13,483
+Böyle olunca bu süper varlıktaki bütün nitelikler dolayısıyla otomatik olarak buradaki alt varlıkların da nitelikleri olmuş oluyor.
+
+165
+00:34:15,123 --> 00:34:35,623
+Yolcu gemisi için de geçerli. Yolcu gemisinin de bir gemi numarası var, ağırlığı var. Burada bu primel 2, yolcu gemisinin de primel 2 gemi numarası. Aynı şekilde yük gemisinin de bir gemi numarası var. Yük gemisinin de bir ağırlığı var. Ama yolcu gemisinin bir yük kapasitesi yok.
+
+166
+00:34:36,148 --> 00:34:59,947
+yük türü yok. Bu nitelikler, yani subtype'lara, alt varlıklara yazdığımız bu nitelikler, sadece bu alt varlıklar için bağlayıcı. Onları ifade ediyor. Diğer varlıklarla, işte o yüzden zaten bunu detaylandırdık zaten. Yani bu niteliklerin bunu, buna has kılmak için detaylandırdık. Aksi takdirde böyle bir şey kullanmasam,
+
+167
+00:35:01,108 --> 00:35:29,108
+Böyle bir notasyon, böyle bir ifade kullanmasam, o zaman buradaki bütün nitelikleri buraya yazacağım. Bu geminin de belki bir tip bağıntısı yazacağım. Yani gemi tipi diyeceğim, yolcu gemisi, yük gemisi diyeceğim. Gemi numarası ağırlık olacak. Ama bütün bu nitelikler bu varlık setinde olacaklar. Ve yük gemisi için olan nitelikler, yük gemileri için bu nitelikler belirsiz olacaklar.
+
+168
+00:35:29,108 --> 00:35:42,688
+NAL olacak. Yani onlar için bir şey giremeyeceğim. Diğer taraftan yolcu gemisi, yolcu gemileri için şu nitelikler, bunların hepsini buraya taşıdım ya, yolcu gemileri gemisi için bu nitelikler NAL olacak.
+
+169
+00:35:43,188 --> 00:35:54,367
+İşte veritabanında da bir tabloda NAL görmek boşuma gitmediği için, çünkü NAL dediğimiz zaman o bir belirsiz bir durum veya oraya veri giremiyorum veya bilinmiyor.
+
+170
+00:35:54,367 --> 00:35:56,188
+Yani belirsiz bir durum olmuş oluyor.
+
+171
+00:35:57,108 --> 00:36:07,367
+O yüzden bu tasarım, bu tasarımımızda bir nalı ortadan kaldırmış oluyoruz. Yani daha isabetli bir tasarım olmuş oluyor bu yani.
+
+172
+00:36:07,891 --> 00:36:32,431
+Burada farklı böyle kısıtları ifade etmiş. Evet, ana hatlarıyla EER böyle. Burada diğer şey, bunları biraz örneklendirmişiz. Supertype, Subtype bunlar. Şu notasyonun çok bir şey yok. Yani bunun alt kümesi olduğunu ifade ediyor. Çok şart değil. Şu işaretten bahsediyorum.
+
+173
+00:36:35,891 --> 00:37:02,951
+Seçimli, kısmı ve disjoint. Yani ne demek? Buradaki bütün employiler, yani bazı employiler bu alt tiplere dahil değiller. Yani manager, engineer, teknisyen, sekreter olmayan bazı işçiler var. Bazıları var öyle yani bu gruplara dahil olmayan. Yine disjoint dediği için bir işçi bu alt gruplardan bir tanesine dahil olacaksa ancak bir tanesine dahil olabilir. Yani bir işçi ancak engineer olabilir.
+
+174
+00:37:03,391 --> 00:37:27,130
+Veya teknisyen olabilir, veya sekreter olabilir. Birden çok gruba dahil olamaz. Sağ tarafta ise total var bakın. Burada bütün individual, bütün kişiler bu ikisinden bir tanesine dair olmak zorunda. Ve ikisine birden de dair olabilir. Overlap olduğu için, bu disjoint de, bu overlap olduğu için yani or.
+
+175
+00:37:28,467 --> 00:37:32,128
+olduğu için o zaman buraya overlap O yazdık.
+
+176
+00:37:32,708 --> 00:37:33,987
+Tamam mı? Evet.
+
+177
+00:37:34,728 --> 00:37:41,748
+Diğer bir kavramımız aggregation. Bu da biraz daha zor bir kavram.
+
+178
+00:37:43,347 --> 00:37:52,628
+Bundan sonra UML'lerimiz var. Sonra da örneklerimiz başlıyor. Burada da 8-10 tane örneğimiz var.
+
+179
+00:37:58,068 --> 00:37:58,568
+Evet.
+
+180
+00:38:02,963 --> 00:38:09,262
+Bu da Batra'da kullandığınız şey, Campany Veritabanı'nın tasarımı.
+
+181
+00:38:14,547 --> 00:38:40,867
+Evet. Şimdi aggregation, aggregation, aggregation is when we have a model, when we have a model, a relationship involving a relationship set. Yani birden şu relationship'i, şuradaki bağıntıyı, şu employee ile beraber bir bağıntı içerisine soktuk.
+
+182
+00:38:41,043 --> 00:38:42,864
+Bu N'e N'lik olmuş bakın.
+
+183
+00:38:44,802 --> 00:38:53,143
+Bu biraz daha esasında kavram olarak daha biraz daha ince bir kavram var burada.
+
+184
+00:38:54,003 --> 00:38:59,063
+Egregation'dan, ilk önce turnery'i zaten şey yaptık.
+
+185
+00:39:00,182 --> 00:39:05,123
+Burada projelerle departmanların sponsor.
+
+186
+00:39:07,507 --> 00:39:26,007
+departmanların projeleri sponsor etmesiyle ilgili en önemli bir bağıntı var. Bu sponsor etme hadisesini, yani bu sponsorluğu takip edecek bir, monitor edecek, takip edecek bir işçi tayin ediliyor buraya.
+
+187
+00:39:28,628 --> 00:39:37,288
+Burada şu kısım oldukça kolay, burada bir sorun yok. Projelerimiz var, işte projelerimizin ID'leri, budgetleri falan, departmanlarımız var.
+
+188
+00:39:37,288 --> 00:39:46,708
+Ve departmanlar da bu projeleri sponsorluk yapıyorlar. Yani ona destek veriyorlar. Belli bir tarihten beri ona destekleri oluyor.
+
+189
+00:39:48,088 --> 00:39:55,327
+Ve burada enerjik, yani bir departmanın birdençok projesi olabilir. Bir projede birdençok departmandan sponsorluk olabilir.
+
+190
+00:39:56,628 --> 00:40:06,268
+Bununla beraber, bu monitör, burada mesela aggregation dediğimiz bu yapı daha elverişli diyor.
+
+191
+00:40:06,268 --> 00:40:10,268
+Here aggregation is best since monitored is a distinct relationship.
+
+192
+00:40:11,088 --> 00:40:17,088
+Şu monitör, monitored is a distinct relationship with a descriptor attribute.
+
+193
+00:40:18,804 --> 00:40:29,784
+Yani bu departmanın bu projeye sponsorluk yapmasını belli bir tarihten itibaren monitör ediyor.
+
+194
+00:40:29,784 --> 00:40:41,708
+Yani ben şu monitörü burada şuna bağlasam, monitörü şu bağıntıya bağlasam, o zaman bu departmanın...
+
+195
+00:40:41,876 --> 00:40:49,335
+Bu projeyi sponsor etmesini takip etmeyi şu antil tam olarak ifade edemeyecek.
+
+196
+00:40:50,795 --> 00:40:55,635
+Burada söylenen, since monitor is a distinct relationship with a descriptor attribute.
+
+197
+00:40:56,315 --> 00:41:02,376
+Otherwise, if you had designed with ternary, since attribute would repeat for every monitoring.
+
+198
+00:41:03,347 --> 00:41:22,306
+Evet, since ve until bu sefer kavramları çakışmış oluyor. Since attribute will repeat for every monitoring. If we do not need to store until eternity, şu da until then dolayı şu monitörü yapmış olduk.
+
+199
+00:41:22,576 --> 00:41:41,195
+Tabii bunun küçük dünya tarifini dikkatlice okumak lazım ki şu aggregation'a, şu bağıntıyı monitör etmesinde bu şekilde kullanılması gerektiğini anlayabilirim.
+
+200
+00:41:41,195 --> 00:41:50,195
+Bu küçük dünyada demek ki böyle bir SINCE ile beraber departmanın o projeyi sponsor etmesi şu tarihten beri.
+
+201
+00:41:50,576 --> 00:42:00,255
+Antil'de monitör hadisesi, yani şundan farklı olarak, belli bir tarihe kadar, o monitör ediyor, başka bir tarihe kadar başka bir de monitör edecek.
+
+202
+00:42:02,356 --> 00:42:19,695
+Şu olmasaydı, şurada aggregate kullanmamıza gerek yoktu. Yani şu yapıya aggregation deniyor. Diğer taraftan, burada bu nitelikten dolayı böyle bir yapı kullanmak zorunda kaldık.
+
+203
+00:42:21,427 --> 00:42:45,967
+Evet. Şimdi ER ve EER'lar böyle. Diğer taraftan UML'de, belki yazılım mühendisliğinde derslerinde bunu görmüşsünüzdür. Bu yeri tabana tasarımında da yine benzer notasyonlar burada kullanılıyor. Çok fazla notasyon gördük zaten ama şundan da üzerinden bir şekilde geçelim.
+
+204
+00:42:47,922 --> 00:42:55,384
+Burada nitelikleri içeren bir nesnemiz var.
+
+205
+00:42:55,384 --> 00:42:57,384
+Burada...
+
+206
+00:43:00,947 --> 00:43:03,168
+Bağıntıları ifade eden
+
+207
+00:43:05,427 --> 00:43:16,266
+notasyon, yani bir çizgiyle bağıntı ifade ediyoruz. Generalization dediğimiz, yani ize bağıntısı şu şekilde.
+
+208
+00:43:17,847 --> 00:43:25,166
+Aggregation, biraz önce gördüğümüz şuradaki aggregation bu şekilde. Composition da bu şekilde.
+
+209
+00:43:25,306 --> 00:43:30,086
+Composition'ı daha görmedik. İleride belki geçiyor ya da, ha şurada geçiyor, evet.
+
+210
+00:43:32,148 --> 00:43:40,568
+Evet, UML'deki aggregation, şuradaki aggregation farklı yanlış. Yani bu kavramlar ikisinden farklı. ER'deki aggregation.
+
+211
+00:43:40,568 --> 00:43:48,628
+Bunun belki buraya tam dair etmeseci daha kolay olacaktı. Çünkü UML'deki aggregation farklı.
+
+212
+00:43:49,748 --> 00:43:59,568
+Şurada bire enlik, işte reküsif bire enlik, çoklu, turnery bağıntılar bu şekilde ifade ediliyor. Yani ikili olunca...
+
+213
+00:44:00,148 --> 00:44:14,027
+şey yazmıyoruz ama üçte olunca şöyle bir dörtgen gene yazılabiliyor. Evet, gene var olma durumu, existence burada.
+
+214
+00:44:16,367 --> 00:44:26,907
+Eleman sayıları, bire birlik, bire çoklu ve bağıntının niteliği, burada bu şekilde ifade edilmiş bir bağıntının niteliği ve var olma durumu ise,
+
+215
+00:44:29,300 --> 00:44:57,039
+Var olma durumu bu sefer ER'da o bağıntıya yaptığımız çizgide yazıyorduk. Burada bu sefer burası diğerinden farklı. Diğerleri, diğer bilgilerin yönleri aynı, ER'dakiyle aynı ama var olma durumunda var olma kısıtını gene eleman sayısıyla beraber ifade ediyoruz.
+
+216
+00:44:57,300 --> 00:45:10,000
+Yani burada department manager employee, bir departmanın bir tane employee menajeri var ve olmak zorunda.
+
+217
+00:45:10,400 --> 00:45:38,260
+O yüzden bakın 1, yani 0-1 değil. Ama şurası 0-1. Yani employee bir departmanın menajeri ama olmayı da bilir. En fazla bir departmanın menajeri olmayı da bilir. Oradaki şunun var olma durumuna bakıyor, şuradaki 0. Burada da 1 yanında 0 olmaması şunun var olma durumuna bakıyor. Mutlaka var olmak zorunda bu baantıda.
+
+218
+00:45:38,400 --> 00:46:00,380
+Yani departmanın mutlaka menajeri olması lazım. Diğer taraftan şu örneğimizde, burada ise, sıfır yıldız dediğim zaman, bir ofisinde çok sayıda eleman olabilir, boş da olabilir. Sıfır. Yani bu bağıntıda yer almayabilir. Var olmak kısıtı.
+
+219
+00:46:01,907 --> 00:46:10,306
+Buradan bakıldığı zaman zorunlu değil. Optional yani. Şurası optional. Burada employee, şurada mutlaka var olman.
+
+220
+00:46:10,623 --> 00:46:34,063
+Yani bir işçinin mutlaka bir ofise olmak zorunda. Evet, UMLD'de böyle. Bizim ER diyagramına oldukça yakın. Bir tek şu var olmada bir değişiklik var. Eleman sayıları, törmeli, reküsüller hemen hemen aynı. Bir de şu aggregation'da bir farklılık var. Şimdi UMLD'deki aggregation ve composition'da tanımları şöyle.
+
+221
+00:46:35,411 --> 00:46:47,572
+Burada yine böyle bir generalization, specialization, yani şöyle yukarıdan, aşağıdan yukarıya baktığımız zaman bir genelleştirme, generalization manası var.
+
+222
+00:46:48,072 --> 00:46:56,911
+Yukarıdan aşağıya baktığımızda ise specialization manası var. Yani bu şekilde, o şekilde, bu esas üzerine okuyabiliriz.
+
+223
+00:47:03,411 --> 00:47:08,592
+şeylerini, kısıtlarını, disjoint falan, onları da burada yazabiliriz.
+
+224
+00:47:09,210 --> 00:47:17,371
+Bununla beraber, kompozisyon ve aggregation da, kompozisyonda tek başına, parçalar tek başına bulunmuyor.
+
+225
+00:47:18,052 --> 00:47:19,291
+Bir mana ifade etmiyorlar.
+
+226
+00:47:19,291 --> 00:47:27,032
+Yani, kompozisyon dediğimiz şu kompozisyon, yani hepsi birden bir mana ifade ediyor.
+
+227
+00:47:27,092 --> 00:47:29,692
+Yani, frame mesela, yani car.
+
+228
+00:47:30,099 --> 00:47:53,579
+Bu her bir frame, yani pencere, arabanın, arabaya ait olan bir pencere. Yani arabayla beraber bir manaka veriyor. Sanki zayıf varlık gibi. Zaten burada frame, zayıf varlık olarak düşünebilir. Bakın burada hiç zayıf varlık notasyonu yok. Zayıf varlık esasında kompozisyon gibi.
+
+229
+00:47:54,260 --> 00:48:10,539
+Buradaki framelerin bir araba içerisinde ayırt edilebilir ama frameler farklı arabalarda aynı frame numarası olabilir mesela. Böyle düşünebiliriz.
+
+230
+00:48:11,922 --> 00:48:20,623
+Evet, kompozisyon manası böyle ama aggregation manası, şu kompozisyon, şu aggregation manası.
+
+231
+00:48:21,123 --> 00:48:25,123
+Aggregation'da ise parçalar kendi başına mana ifade ediyorlar.
+
+232
+00:48:25,123 --> 00:48:29,043
+Yani burada mesela bakın bir aggregation manası var.
+
+233
+00:48:29,983 --> 00:48:35,043
+Course, teacher, textbook. Yani textbook mesela bunlara bağımlı değil.
+
+234
+00:48:35,722 --> 00:48:38,784
+Course, keza öyle, teacher öyle.
+
+235
+00:48:39,215 --> 00:48:58,635
+Ama burada işte bir program, electronic documentation mesela, o program bir software product'ın içerisinde kullanılan bir program. Yani zayıf varlık gibi veya zayıf varlık diyebiliriz yani bunlara. Bununla beraber bir mana ifade ediyor. O zaman buna kompülüsyon dedik.
+
+236
+00:49:00,056 --> 00:49:01,635
+Evet, yine en...
+
+237
+00:49:02,068 --> 00:49:07,788
+ENLI veya gene primary key kavramları da bu şekilde böyle ifade ediliyor.
+
+238
+00:49:08,007 --> 00:49:08,987
+VK yazıyoruz.
+
+239
+00:49:09,487 --> 00:49:11,588
+ENLI bağıntı da bu şekilde ifade ediliyor.
+
+240
+00:49:12,768 --> 00:49:12,967
+Evet.
+
+241
+00:49:15,688 --> 00:49:17,840
+YMR ile ilgili basit böyle...
+
+242
+00:49:17,840 --> 00:49:34,239
+Notasyon, basit örneklerimiz. Daha küçük dünya tasvirlerine gelmedik. İleride onlar da. Şurada başlıyor zaten. Burada yine basit notasyonlarla, notasyonu öğrenmek maksadıyla basit örnekler var burada.
+
+243
+00:49:45,840 --> 00:49:54,679
+yaparsınız. Yani orada da bir araba örneğimiz vardı. Mesela araba evvelden. Öğrencinin ders alması örneği vardı da.
+
+244
+00:50:06,320 --> 00:50:27,739
+Var olma durumları, optional veya kısmi, yani şu sıfır bunun var olma durumunu ifade ediyor. Şuradaki sıfır da bunun var olma durumunu ifade ediyor. Yani öğrenci hiçbir ders almayabilir, anlamış olabilir. Bir dersi hiçbir öğrenci daha seçmemiş olabilir gibi bu manada.
+
+245
+00:50:30,900 --> 00:50:34,440
+Burada da gene bağıntının niteliği gözüküyor.
+
+246
+00:50:35,960 --> 00:50:37,838
+Ve bağıntının ismi de bu şekilde.
+
+247
+00:50:40,159 --> 00:50:47,219
+Evet, burada gene işte 1NLIK ve 1EBİRLİK birçok örnekler görüyoruz mesela.
+
+248
+00:50:47,460 --> 00:50:51,400
+Erkek kadın evli, 1EBİRLİK evli olmayabilir.
+
+249
+00:50:51,400 --> 00:50:55,400
+O yüzden sıfır kısmı.
+
+250
+00:50:58,880 --> 00:51:20,039
+Burada eleman sayılarını UML'de biraz daha detaylandırabiliyoruz. Yani buradaki bir eleman en fazla 50 elemanla eşleşebilir. Buradaki B elemanı en fazla 6 elemanla eşleşebilir. Yani böyle jenerik bir N çoklu manasından ziyade daha da detaylandırdık.
+
+251
+00:51:20,306 --> 00:51:32,407
+Bunu yapabiliriz UEM'lerde. Üçlü bağıntı örneği ve ikili bağıntı ve reküsif bağıntı örnekleri de böyle.
+
+252
+00:51:41,588 --> 00:52:06,248
+Evet, lise öğrenci bağıntımız vardı biraz önce. Kısmi bağıntı tamamlamıştık hatırlıyorsunuz. Liseler güçlü idi, öğrenciler ise güçlü değildi. Öğrencilerin güçlü olmaması, ayırt edici nitelikle bunu ifade ettik. Bunun ayırt edici nitelik olması, bunun güçlüsü lise oldu.
+
+253
+00:52:06,931 --> 00:52:12,692
+O yüzden burada şu kompozisyon şeyini kullanabiliriz esasında.
+
+254
+00:52:12,811 --> 00:52:15,891
+Şurada şu kompozisyon ifadesini kullanabiliriz.
+
+255
+00:52:15,951 --> 00:52:23,331
+Burada onu kullandık ya, line, invoice mesela, fatura, sipariş formu ve satır numarası demiştik.
+
+256
+00:52:23,570 --> 00:52:24,590
+Ona denk geliyor bu.
+
+257
+00:52:24,590 --> 00:52:29,590
+Bu sipariş ile satır numarası, satır numarası ayırt edici nitelik.
+
+258
+00:52:30,791 --> 00:52:34,570
+Gerçi bu ayırt edici niteliğin, ayırt edici.
+
+259
+00:52:34,931 --> 00:52:47,030
+Bu kısmi varlık, bu kısmi varlığın anahtarı, bu birinci anahtarla beraber, buradaki line item'ın ayırt edici niteliği oluyor.
+
+260
+00:52:47,351 --> 00:52:54,110
+Yani invoice number ve line number. Bu zayıf varlık olarak ifade edilmiş kompozisyon içerisinde.
+
+261
+00:52:54,110 --> 00:53:00,672
+Aynı şekilde burada da şu kompozisyon ifadesini koymam lazım esasında şuraya.
+
+262
+00:53:04,114 --> 00:53:04,614
+Evet.
+
+263
+00:53:09,268 --> 00:53:10,268
+Burada...
+
+264
+00:53:13,972 --> 00:53:18,192
+Şuraya kadar yapalım, sonra bırakalım, ben de yoruldum bayağı.
+
+265
+00:53:22,652 --> 00:53:24,572
+Burayı yaptık, tamam mı?
+
+266
+00:53:24,572 --> 00:53:25,192
+Burayı yaptık.
+
+267
+00:53:29,568 --> 00:53:34,568
+Öğrencinin mesela ders almasıyla ilgili bir örnek var burada da.
+
+268
+00:53:35,788 --> 00:53:46,027
+İşte bunu yapmıştık zaten. Şuradayız zaten. Lise ile öğrenci. Burada bir kompozisyon ifadesi buraya koymamız gerekiyor. O eksik olmuş burada.
+
+269
+00:53:48,244 --> 00:53:54,284
+Burada ne var? Kişinin kurs, kişi kurs. En aylık bir bağlantı bakın, yıldız.
+
+270
+00:53:55,463 --> 00:54:02,344
+Ve var olma durumları, kısıtları, kısmi, yani herhangi bir kurs almaz önünde değil.
+
+271
+00:54:03,704 --> 00:54:06,043
+Bir kursta da hiçbir kişi olmamış olabilir.
+
+272
+00:54:06,864 --> 00:54:14,684
+Ve bu kursu aldığı zaman da hangi sene aldı ve başarısı, yani başarılı oldu mu olmadı mı gibi mesela.
+
+273
+00:54:15,795 --> 00:54:27,775
+Burada şöyle bir sual sormuş. Aşağıdaki örnekte bir kişi aynı kurşu farklı yıllarda tekrar alabiliyorsa, Van Antik Üniversitesi'nin anahtarı ne olur?
+
+274
+00:54:30,195 --> 00:54:32,496
+Aynı kurşu farklı yıllarda.
+
+275
+00:54:32,496 --> 00:54:37,496
+Şimdi aynı, ilk olarak burada aynı...
+
+276
+00:54:39,539 --> 00:55:00,300
+Böyle olmuş olsun. Yani belli bir sene aldı bu kursu. İkisi de güçlü varlıklar. Belli bir sene bu kursu aldı ve başarılı oldu. Böyle bir enerjik bağıntının anahtarı iki taraf birden olacak. Yani kişi no ve kurs no olacak.
+
+277
+00:55:00,820 --> 00:55:22,298
+Ama biz desek ki bu farklı yıllarda bunu alabiliyor. O zaman bu yeterli olmayacak. Çünkü yani Kishino ve Kusno tekrar ediyor. Yani 2020'de aldı, 2015'te de almıştı mesela. O zaman yılın da dahil olması gerekiyor o zaman anahtara.
+
+278
+00:55:23,123 --> 00:55:39,222
+Evet, bu nokta NNN puantıda veya BNNNNN de aynı şekilde. Eğer böyle bir şey varsa bunun anahtarını bilir derken dikkat etmek gerekiyor. İkisinin bilincinin anahtarı yeterli olmuyor.
+
+279
+00:55:39,222 --> 00:55:43,882
+Evet, diğer bir örneğimiz.
+
+280
+00:55:45,199 --> 00:55:56,759
+Yine basit örneklerden, şunu zaten yapmıştık biraz önce, bunun UML versiyonu, yani gemilerin alt gemiler, subtype'lar, supertype'lar.
+
+281
+00:55:57,418 --> 00:56:11,539
+Burada da biraz daha kapsamlı bir örnek var. Personelin detaylandırılması, personel buraya, bu notasyonda, UML'de, buraya yazıyoruz zorunlu, işte or diye böyle ifade edebiliriz.
+
+282
+00:56:11,539 --> 00:56:13,079
+Ayrı bir notasyon kullanılmamış.
+
+283
+00:56:13,199 --> 00:56:24,599
+Yani bir personel mutlaka şu iki gruptan bir tanesi olmak zorunda veya disjoint, ikisinden bir tanesi olmak zorunda ve ikisi birden olamaz.
+
+284
+00:56:25,998 --> 00:56:32,498
+Gene burada akademik personel zorunlu, bu üç tanesinden bir tanesi olmak zorunda.
+
+285
+00:56:34,498 --> 00:56:37,099
+Gene şuradaki personel...
+
+286
+00:56:38,452 --> 00:56:52,952
+Öyle başka bir personel ile kadro arasında böyle bir akademik birim herhalde bu.
+
+287
+00:57:00,114 --> 00:57:15,083
+Burada bu kadrolu kişinin, personelin, bu akademik personeli ve bu kadrolu personel...
+
+288
+00:57:38,164 --> 00:57:38,664
+Evet.
+
+289
+00:57:40,384 --> 00:57:41,983
+Bakam akılamadım ne olduğunu.
+
+290
+00:57:42,983 --> 00:57:43,304
+Evet.
+
+291
+00:57:44,184 --> 00:57:52,844
+Şuraya kadar yapalım. Şu kompozisyon örneğiyle, yine binanın odaları ve personel ve bölüm.
+
+292
+00:57:53,684 --> 00:57:55,164
+Yani farklı...
+
+293
+00:57:56,496 --> 00:58:04,175
+Bir bölüm içerisindeki personenin hangi odaları kullanması ve o odalar hangi binaya ait onunla ilgili şeyler.
+
+294
+00:58:05,456 --> 00:58:08,614
+Burada bina ile oda bir kompozisyon oluşturulmuş.
+
+295
+00:58:08,992 --> 00:58:22,891
+Oda numarası farklı binalarda aynı olabilir. O yüzden şu oda zayıf varlık. O yüzden bir ayırt edici niteliği var. Bunun güçlüsü bu, bilincin anıltar.
+
+296
+00:58:25,556 --> 00:58:39,275
+Personelimiz de bir oda kullanıyor. Kullandığı oda bir tane. Bir odayı birden çok personel de kullanabiliyor bu şekilde. Ve personelde bağlı bulduğu bölümler var.
+
+297
+00:58:41,043 --> 00:58:53,422
+Evet, şimdi bundan sonraki örneklerimizde biraz daha kapsamlı olarak küçük dünyayı tarif edeceğiz. Daha sonra bir takım aşamalardan sonra tasarımımız ortaya çıkacak.
+
+298
+00:58:54,882 --> 00:59:02,563
+Dediğimiz gibi burada birçok böyle izleyen noktalar var. Buradaki örnekler de bunu biraz daha pekiştirmeye çalışacağız.
+
+299
+00:59:03,059 --> 00:59:29,960
+Evet, bugünkü dersimizde temel kavramları, malzemeleri öğrendik. Yani onların ne olduğunu şey yaptık. Bundan sonraki haftaki dersimizde de bunları örneklerde kullanacağız. Örneklerde pikstirmeye çalışacağız. Şimdi bugünkü dersimizi o zaman bitiriyorum. Herhangi bir sorumuz yoksa.
+
+300
+00:59:33,684 --> 00:59:36,344
+Haftaya kaldığımız yerden devam ederiz.
+
+301
+00:59:42,844 --> 00:59:44,724
+Şöyle ayrı günler diliyorum.
+
+302
+01:05:45,492 --> 01:05:46,251
+Herhala.
+
+303
+01:05:48,271 --> 01:05:49,631
+Utku, hocam sesim geliyor mu?
+
+304
+01:05:50,351 --> 01:05:51,010
+Herhala, hocam.
+
+305
+01:05:52,612 --> 01:05:55,771
+Hocam, şimdi size host yaptım, hocam. Siz verebilirsiniz.
+
+306
+01:05:55,771 --> 01:05:56,211
+Ben duyamıyorum.
+
+307
+01:05:56,472 --> 01:05:58,751
+Ben duyamıyorum, siz beni duyabiliyor musunuz?
+
+308
+01:06:00,351 --> 01:06:01,612
+Duyabiliyor musunuz, hocam beni?
+
+309
+01:06:01,912 --> 01:06:02,510
+Duyamıyorum.
+
+310
+01:06:03,510 --> 01:06:05,492
+Ben diyorum, siz duyabiliyor musunuz beni?
+
+311
+01:06:07,092 --> 01:06:08,251
+Hocam duyabiliyor musunuz beni?
+
+312
+01:06:10,932 --> 01:06:12,972
+Utku, hocam sesim geliyor mu?
+
+313
+01:06:19,891 --> 01:06:29,471
+Ustuk Hocam, ben sizi duyabiliyorum. Siz duyabiliyor musunuz beni? Sanırım sesim gelmiyor.
+
+314
+01:06:35,059 --> 01:06:46,878
+Evet, sanırım Ulu Hocanın mikrofonunda bir şey var hocam. Mikrofonunuz, daha doğrusu speaker'ınızda.
+
+315
+01:06:55,316 --> 01:06:57,576
+Duyuyoruz hocam biz sizi.
+
+316
+01:06:58,655 --> 01:07:00,456
+Teşekkür ederiz. Size de zahmet oldu.
+
+317
+01:07:00,496 --> 01:07:02,256
+Rica ederim hocam. Kolay gelsin.
+
+318
+01:07:02,496 --> 01:07:04,976
+Size host yaptım. Devam edebilirsiniz. Görüşmek üzere.
+
+319
+01:07:05,376 --> 01:07:06,916
+İyi dersler hocam. İyi dersler arkadaşlar.
+
+320
+01:07:11,987 --> 01:07:14,847
+Evet arkadaşlar, kaç kişi olduk?
+
+321
+01:07:20,756 --> 01:07:27,316
+Evet, geçen hafta sınav oldum. Nasıl geçti sınavınız? Kolay mıydı, zonuydı.
+
+322
+01:07:30,376 --> 01:07:31,914
+Diğer arkadaşla gelinceye kadar.
+
+323
+01:07:35,396 --> 01:07:38,534
+Evet, sesim az geliyor. Şimdi az mı geliyor?
+
+324
+01:07:40,534 --> 01:07:42,896
+Sizin hiç gelmiyor. Biri konuşsun da ben de.
+
+325
+01:07:43,762 --> 01:07:45,884
+Bağlantı olduğundan... Ben biraz arttı hocam.
+
+326
+01:07:46,103 --> 01:07:48,702
+Tamam, o zaman ben biraz daha bağırarak konuşayım.
+
+327
+01:07:50,064 --> 01:07:54,543
+Evet, nasıl sınavınız zor muydu, kolay mıydı? Yapabildiniz mi?
+
+328
+01:08:00,244 --> 01:08:04,184
+Sınav kağıtlarını okuyoruz. Herhalde yakın zamanda ilan edeceğiz inşallah.
+
+329
+01:08:07,403 --> 01:08:10,543
+Evet ben paylaşım açayım o zaman.
+
+330
+01:08:19,603 --> 01:08:31,324
+Bu haftaki dersimizde kavramsal tasarım, ER diyagramları, onların ilişkisel model tablolarına dönüştürülmesi gibi konuları göreceğiz.
+
+331
+01:08:32,382 --> 01:08:37,304
+Şimdiye kadarki konularımız yeni bir seviyeye geldi.
+
+332
+01:08:38,462 --> 01:08:44,824
+Yani genel olarak işte veritabanının kullanılmasıyla ilgili SQL ve fonksiyonlar, prosedürler.
+
+333
+01:08:45,216 --> 01:08:48,435
+Veritabanı güvenliği gibi konuları işledik.
+
+334
+01:08:50,291 --> 01:08:59,592
+Tabii bu konuları işlerken elimizde bir veritabanı var idi. Yani işte bir öğrenci kayıt veritabanı vardı, üniversite veritabanı vardı.
+
+335
+01:08:59,711 --> 01:09:06,791
+Laboratuvarda da bir company veritabanı üzerine örnekler yapıyorsanız.
+
+336
+01:09:08,150 --> 01:09:18,291
+Şimdi de acaba bu işte bizim önümüzdeki o şema veritabanı, işte veritabanını, o küçük dünyayı temsil eden o şema acaba nereden geldi?
+
+337
+01:09:18,291 --> 01:09:45,770
+Hani onu merak etmek, o merakın, o sualin cevabını esasında biraz araştıracağız. Bu süreç tabii oldukça uzun. Yani veritabanın o şemanın ortaya çıkması öyle çok kolay değil. Tabii bizim buradaki şemalarımız, kullandığımız şemalarımız biraz böyle protektif bir şekilde. Yani ne demek? İşte biraz böyle eğitimsel amaçlı. Ufak oyuncak veritabanları yani tabi caizse.
+
+338
+01:09:46,291 --> 01:10:10,751
+Tabii böyle gerçek hayatta en üst düze biraz daha uzun senelerde kullanılan bir sistem ise, veritabanı ise, oradaki tabloların sayısı tabii çok daha fazla oluyor. O tablolardaki fonksiyonlar, o tabloların güvenlik ayarları, yetkilendirilmeleri falan oldukça daha şey oluyor.
+
+339
+01:10:12,500 --> 01:10:14,039
+kapsamlı oluyor.
+
+340
+01:10:23,987 --> 01:10:41,726
+Lobotör var mı diye bir sormuş. Evet, lobotör var. Yani normal şartlarda lobotörümüz devam ediyor. Olmayacağına dair bir ses gelmedi. Bir haber gelmedi. Evet.
+
+341
+01:10:42,260 --> 01:10:59,300
+Bu arada laboratuarla ilgili dersin projeyi ilan edilmiş olması lazım. Size de mesaj atıldı bu noktada. Grup oluşturmanız gerekiyor. Proje tanımlamaları yapıldı. Ona göre çalışmaya başlamanız gerekiyor.
+
+342
+01:10:59,300 --> 01:11:07,619
+Bizlerimde ortasını geçtik yani, arasına oldu. Evet, sunuyu görüyorsunuz herhalde. Görüyor musunuz sunuyu?
+
+343
+01:11:11,411 --> 01:11:13,251
+Evet. Evet.
+
+344
+01:11:15,310 --> 01:11:18,751
+Şimdi bunu esasında ben büyüttüğüm şunu da.
+
+345
+01:11:21,372 --> 01:11:23,390
+Şöyle büyü toparsak daha iyi olur.
+
+346
+01:11:32,692 --> 01:11:58,592
+Genel olarak bakıldığı zaman bu kavramsal şemaya, bu derste göreceğimiz temel kavramlar olacak. Varlıklar, varlık kümeleri, bağıntı ve bağıntı kümeleri, rol yerin tanımlanması, yani kavramsat kasların kapsam içerisinde rol tanımı, anahtarlar, anahtar nitelikler, daha sonra zayıf varlık kümelerini bahsedeceğiz.
+
+347
+01:11:59,828 --> 01:12:24,347
+Bunlar ER diyagramlarının temel kavramları. Yani kavramsal tasarımın en temel kavramları. Bunlara yardımcı olacak. Yani tasarımımıza böyle bir cila daha iyi hale gelmesi noktasında yardımcı böyle elimizde tanımlar olacak, kavramlar olacak. Onlar da kümenimi, genelleme ve kompozisyon tarzında.
+
+348
+01:12:27,828 --> 01:12:30,467
+Bu dünyada biz birçok küçük dünyayı temsil edebiliriz.
+
+349
+01:12:32,307 --> 01:12:34,188
+tanımlayabiliriz.
+
+350
+01:12:34,708 --> 01:12:36,868
+Kahramsal tasarım dediğimiz,
+
+351
+01:12:36,987 --> 01:12:38,606
+esasında genel olarak,
+
+352
+01:12:39,127 --> 01:12:41,208
+bu küçük dünyayı,
+
+353
+01:12:41,208 --> 01:12:43,828
+kağıda, yani bilgisayara değil de daha,
+
+354
+01:12:44,006 --> 01:12:44,948
+kağıda,
+
+355
+01:12:45,006 --> 01:12:48,188
+taşımak. Yani o küçük dünyada olan,
+
+356
+01:12:48,307 --> 01:12:48,627
+biten,
+
+357
+01:12:48,807 --> 01:12:50,448
+hadiseleri,
+
+358
+01:12:50,847 --> 01:12:53,408
+veya işte o küçük dünyadaki varlıkları,
+
+359
+01:12:54,467 --> 01:12:55,847
+o küçük dünyayı,
+
+360
+01:12:55,927 --> 01:12:57,167
+o kağıda taşımak.
+
+361
+01:12:57,547 --> 01:12:59,208
+Ve bunu kağıda taşımak ne demek?
+
+362
+01:12:59,328 --> 01:13:00,027
+Bunu bir şekilde,
+
+363
+01:13:00,307 --> 01:13:16,287
+İşte temsil etmek manasında. O şekillerimizde işte kutular olacak, dörtgen olacak ve onların arası bir takım bağlantılar, varlıklar ve onların arası bir takım bağlantılar yapacağız.
+
+364
+01:13:16,948 --> 01:13:37,726
+Burada örnek veritabanımız da company veritabanı olacak. Hem ER hem de ona ek olarak, daha çok bilgi amaçlı, daha çok ileride ER ve ER kullanıyor olacağız. Ama UML'de bir standart olduğu için UML notasyonundan da bahsedeceğiz.
+
+365
+01:13:38,420 --> 01:13:45,119
+Genel olarak geri tabanı tasarım prosesi, böyle biraz önce söylediğim gibi, böyle uzun soluklu,
+
+366
+01:13:46,483 --> 01:14:13,643
+bir süreç. Ve tasarım oldukça önemli. Çünkü burada yapılan işler, bu veritabanının kullanımı hayatı boyunca, kullanımı hayatı boyunca, o bütün o şeyi etkileyecek olan çekirdek yani. Hani bir ağacın çekirdeği gibi böyle mesela. O çekirdekte bazı şeyler bozuk olursa, o ağacın da işte meyveleri ona göre arzada olacak.
+
+367
+01:14:14,483 --> 01:14:34,222
+Veya işte tam istediğimiz meyveyi vermeyecek. Ağaçta bir faydası olmayacak yani. O yüzden burada yani kavramsat tasarım kısmında verilecek kararlar kritik oluyor. Yani bütün şey veritabanın hayatını o şeyi etkiliyor.
+
+368
+01:14:35,411 --> 01:14:48,030
+Burada ilk olarak okçuk dünyanın tahlil edilmesi, iclenmesi ve okçuk dünyadaki gereksinimlerin çıkarılması, toplanması ve analiz edilmesi gibi konular var.
+
+369
+01:14:51,411 --> 01:15:02,832
+DAVDA diyelim ve bu burada. Tamamıyla bu ders kapsamı içerisinde bizim kullandığımız veri tabanı şemalarının oluşturulmasıyla ilgili.
+
+370
+01:15:03,251 --> 01:15:11,390
+Yani kavramsal tasarım, yani ER, sonra mantıksal tasarım, yani ilişkisel model tabloları, daha sonra fiziksel tasarım.
+
+371
+01:15:11,390 --> 01:15:19,390
+Yani işte bu sistemin artık çalışmaya başladı, ayağa kalktı, kullanılıyor. Bunun fiziksel olarak...
+
+372
+01:15:19,411 --> 01:15:31,011
+ayarının düzgün yapılması lazım ki, hızlı bir şekilde çalışsın, doğru bir şekilde çalışsın, beklenen meyveyi versin yani sonuçta.
+
+373
+01:15:31,011 --> 01:15:41,030
+Sol taraftaki dalda ise, böyle bir kontrol ediyorum, bağlamat falan kesiliyor mu diye. Evet, şu anda sorun yok.
+
+374
+01:16:32,083 --> 01:16:35,203
+Evet, sol tarafta ise bu veritabanında
+
+375
+01:16:35,203 --> 01:16:37,762
+Bu
+
+376
+01:16:43,476 --> 01:17:10,595
+Bu veri tabanı üzerine bir takım böyle işte olayların eklenmesi, fonksiyonların eklenmesi noktasında bir gidişat var. Yani fonksiyonel analiz. Bu da işte uygulamaların yazılması ve işte bu uygulamalar böyle veri tabanı uygulamaları olabilir veya 3 uygulama programları olabilir. Yani transaction implementation, application program gibi ifadeler burada kullanılıyor.
+
+377
+01:17:11,476 --> 01:17:32,476
+O zaman burada şu çizgi önemli bakın. Bu çizginin aşağısında, şu kısımda veritabanına has olaylar olacak. Yani ne demek istiyorum? Yani işte TCSQL'de, Oracle'da, SQL Server'da bunlar farklı şekillerde tasarlanacaklar.
+
+378
+01:17:39,476 --> 01:18:01,876
+Tarzı olduğu teşkilatı. Tabi burada çok çok farklı değil ama nihayetinde kullanılan stored procedure'ler olsun, yazılan SQL dahi olsun, farklı olabilir. Yani bazı operatörler bazı veritabanlarında gerçekten yok. Mesela SQL Lite, SQL Lite ufak bir veritabanı. Yani 2-3 MB falan yer kaplıyor yani. Yani kendi sistemi.
+
+379
+01:18:03,538 --> 01:18:08,360
+Sistem kısmı. Şimdi bu verite bana, tabii bazı operatörleri gerçeklemiyor.
+
+380
+01:18:09,880 --> 01:18:16,078
+Yani ama bir Oracle mesela, PCSQL de öyle. Çok kapsamlı ekosistemler yani.
+
+381
+01:18:16,340 --> 01:18:22,340
+Öyle olunca tabii onlar çok büyük, yani sistemde de çok yer kaplıyorlar işletim sisteminde de.
+
+382
+01:18:22,720 --> 01:18:37,659
+Öyle olunca tabii burada farklılık gösterecek onların kullandığı operatörler, esferler, store prosajlar, yani ürün yer fazlası, yani orta kullanım tarzı farklı olacak.
+
+383
+01:18:39,283 --> 01:19:02,422
+Evet, burada tabii her bir adımda farklı böyle senaryolar, diagramlar kullanılıyor. Yazılım mühendisliğine has bazı malzemeler de kullanılıyor. Bazı tool'lar da kullanılıyor. Biz burada işte ELETABAN'ın şemas noktasında ER diyagramını kullanacağız. Şurada gözüküyor ER diyagramını kullanacağız.
+
+384
+01:19:07,283 --> 01:19:35,283
+eklemişiz ama, tabii biraz detaylandırmadan evvel, genel bir bakış kazandırmak adına bunlar burada var. Genel olarak böyle şeyleri, gereksinimleri böyle belirledikten sonra, burada kavramsal tasarımımız da olacak. Şu şeyi de açayım, nözeyleri açayım, belki görmüyorsunuz. Bu mantıksal tasarımından sonra fiziksel...
+
+385
+01:19:35,283 --> 01:19:56,724
+tasarımımız ve daha sonra gerçekleme kısmında olacak. Burada her aşamada, sadece burada gözüküyor ama, bu gereksinimlerin analizi, yeni gereksinimlerin ortaya çıkması noktasında, böyle geri dönüşümlü bir süreç esasında, gerek mantıksal tasarım, gerek fiziksel tasarımda.
+
+386
+01:19:57,842 --> 01:20:07,663
+Böyle geri dönüşümlerle sistemimizin iyileştirilmesi, ince ayarlarının yapılması gerekiyor.
+
+387
+01:20:09,163 --> 01:20:14,182
+Buna tuning yani fine tuning veya cold tuning falan gibi tabliler kullanabiliriz.
+
+388
+01:20:15,063 --> 01:20:18,744
+Sağ tarafta ise yine benzer şekilde böyle bir life cycle var.
+
+389
+01:20:20,532 --> 01:20:48,512
+Böyle bir döngü içerisinde bu işlemlerin yapılması lazım. Burada küçük dünyayı tasvir ediyor. Productlar, salesperson, orders, customer gibi. Bunlar varlıklar. Bu varlıklar farklı kullanıcılar noktasında farklı şemalar ortaya çıkartabilir. Burada mesela retail salesperson view. Yani bu veritabanı, bu küçük dünya içerisinde.
+
+390
+01:20:48,532 --> 01:21:00,431
+Böyle bir satış elemanının alakaları olduğu diye vardı Kılaş ve onlarla olan bağlantısı burada görünüyor.
+
+391
+01:21:00,851 --> 01:21:17,532
+Diğer taraftan customer view var bakımında da. Yani müşterinin bu küçük dünyayla olan bağlantıları. Müşteri bir sipariş veriyor mesela. Onun küçük dünyasında bu var. Yani bu küçük dünyada onun yeri böyle.
+
+392
+01:21:28,851 --> 01:21:32,512
+Bu entegrasyon neticesine böyle bir şema ortaya çıkıyor.
+
+393
+01:21:32,631 --> 01:21:40,150
+Yani demek ki bu şamanın büyümesi böyle ufak ufak alt şemalarla ilk önce onları oluşturmayla.
+
+394
+01:21:40,251 --> 01:21:44,811
+Yani customer'ın bu küçük dünyadaki yeri ve daha sonra işte...
+
+395
+01:21:45,363 --> 01:21:55,523
+Salesperson'ın yeri, onun o alt şeması. Bu alt şemalar daha sonra bir araya gelerek böyle bir büyükçe bir şema.
+
+396
+01:21:55,523 --> 01:22:03,083
+Yani burada gene bu ufak temsili oldu ama nihayetinde büyük şemalar bu şekilde böyle ortaya çıkıyorlar.
+
+397
+01:22:03,635 --> 01:22:14,815
+Tabii bunların işte manasını birazdan daha netleşecek. Yani burada büyük resme bakmaya çalıştık bir parça. Evet, sorusu olan yoksa devam ediyorum.
+
+398
+01:22:19,567 --> 01:22:46,027
+Yeni tabanı tasarımımız da gereksinliğinin toplanması, analize önemli bir aşama. Bunun da bazı esasları var, kuralları var. Bununla ilgili kitaplar var diyeyim. Fakat biz burada bu kısmı biraz daha yazılım mühendisliğine de bakıyor bu süreç. Sürecin bu kısmı, alt süreci diyelim. O yüzden bunu biraz daha hızlı geçeceğiz.
+
+399
+01:22:47,567 --> 01:22:55,947
+Küçük Dünya'yı böyle tarif edeceğiz. O küçük Dünya'ya bakarak da elimizdeki o malzemelerle o küçük Dünya'yı temizletmeye çalışacağız.
+
+400
+01:22:57,716 --> 01:23:10,956
+Evet. Kavramsal aşamada kavramsal bir tasarım, yani o kavramları, küçük dünyadaki kavramları tasarlamak, onların bağlantısını, varlıkları belirlemek noktası önemli.
+
+401
+01:23:12,716 --> 01:23:22,996
+Gereksinimler açıklanması gerekiyor şekillerle veya şekle ek olarak yanına işte belki ilk bir açıklama yazılabilir, bir varsayın ifadesi yazılabilir.
+
+402
+01:23:24,560 --> 01:23:35,000
+Varlıklar, bağıntılar ve kısıtlamalar, bunların ifade edilmesi gerekiyor.
+
+403
+01:23:40,179 --> 01:23:54,779
+Mantıksal tasarımda, deri modellenmesi, daha sonra mantıksal tasarımdan sonra mantıksal tasarımda ise bizim ilişkisel modele, yani relational model, hani tablolarımız vardı ya.
+
+404
+01:23:55,408 --> 01:23:59,628
+Onların üzerine SQL'ler yapıyorduk, işte join yapıyorduk falan.
+
+405
+01:23:59,787 --> 01:24:05,266
+İşte o kavramsal eşamadan yola çıkarak o ilişkisel model tablolarımızı oluşturduk.
+
+406
+01:24:05,528 --> 01:24:10,887
+İşte bu mappingin, bu transformasyonun, bu dönüşümün yapılması gerekiyor.
+
+407
+01:24:11,266 --> 01:24:13,488
+Bu da bir takım kurallar çerçevesinde oluyor.
+
+408
+01:24:14,608 --> 01:24:19,708
+Yani o sürecin son aşaması demek ki ilişkisel model tabloları olacak.
+
+409
+01:24:19,708 --> 01:24:23,408
+Ondan sonra en son artık fiziksel tasarımın oluşturduk.
+
+410
+01:24:23,408 --> 01:24:38,167
+Yani indekslerin veya diğer yardımcı somut görüntüleri olabilir mesela veya yine yetkilendirme ayarlarının yapılması gibi. Bunları arka planda daha sonraki ayarlar olmuş oluyor.
+
+411
+01:24:38,167 --> 01:24:40,628
+Evet, şimdi böyle bir girişten sonra.
+
+412
+01:24:41,266 --> 01:24:58,448
+Entity Relationship model dediğimiz, yani varlık bağıntı modelinde, modeline başlayabiliriz. Burada varlıklarımız var, bağıntılarımız ve niteliklerimiz olacak. Bu nitelikler hem varlıklara ait hem de bağıntılar için ifade edilebilir.
+
+413
+01:24:58,448 --> 01:25:07,667
+UML notasyonu da yazılım geliştirilmede yaygın olarak kullanılan bir Unified isminden de anlaşılacak gibi Unified Modeling Language.
+
+414
+01:25:09,266 --> 01:25:27,426
+Tek bir model, yani bütün o yazılım süreci içerisindeki verinin veya fonksiyonların, yazılım süreçlerinin işte böyle tek bir dil ile ifade edilmesini maksadını taşıdığı için, ER'da da, ER'daki yapılan işlemler İmian Adya'da yapılabilir.
+
+415
+01:25:28,047 --> 01:25:32,667
+Ama yani bu genel olarak kabul görmüştür diye düşünüyorum en azından.
+
+416
+01:25:32,895 --> 01:25:39,835
+Ama genel olarak, çoğu veritabanın kitabında, geleneksel olarak ER diyagramları terk edilmiş değil.
+
+417
+01:25:40,835 --> 01:25:49,194
+Eksil çoğunda, %80, %90'ında, yani böyle meşhur veritabanı kitaplarında, ER diyagramları her zaman var.
+
+418
+01:25:49,354 --> 01:25:52,215
+Gözünüzü de görebiliriz yani onları.
+
+419
+01:25:53,515 --> 01:25:54,895
+Gene böyle...
+
+420
+01:25:55,603 --> 01:26:08,663
+PCSQR olsun, Oracle, OSC, çok yeni tabanının böyle apisinde veya işte onu işte PC admin gibi böyle arayüz admin.
+
+421
+01:26:09,555 --> 01:26:19,155
+ER diyagramlarını hazırlamak için arayüzler var. Onu da dersin sonunda size göstereceğim. Onu da kullanabilirsiniz.
+
+422
+01:26:21,074 --> 01:26:31,216
+Bu bizim ER modeline benziyor ama aynısı değil. Sonuçta aynı maksadı hizmet edecek böyle malzemeler orada bulabilirsiniz.
+
+423
+01:26:31,216 --> 01:26:37,534
+Evet, şimdi burada varlıklarımız ne demek?
+
+424
+01:27:05,555 --> 01:27:17,295
+Yani onu varlık yapamadık yani. Aynı mevzu, aynı tanım. Bağantılar için de geçerli. Burada varlıkların işte demek ki bir takım böyle nitelikleri var.
+
+425
+01:27:20,690 --> 01:27:30,110
+Tabii varlıkları birbirinden ayırt edilmesiyle beraber o varlıkların da aynı özelliklere, aynı niteliklere sahip olması.
+
+426
+01:27:30,351 --> 01:27:38,411
+Yani işte bir öğrenci kayıtları tabanında mesela, işte öğrencilerle departmanlar tabii ki tanım olarak farklı.
+
+427
+01:27:38,411 --> 01:27:44,610
+Yani öğrenci, departman. Bunlar birbirinden, hepsi birbirine ayırt ediliyor yani demek istediğimiz.
+
+428
+01:27:44,970 --> 01:27:48,331
+Öğrenciler kendi içerisinde aynı nitelikleri taşıyorlar.
+
+429
+01:27:48,690 --> 01:27:56,650
+öğrenciler birbirlerinden ayırt edebilecek bir niteliğe sahipler. Mesela öğrenci numarası veya TC kimlik numarası gibi mesela.
+
+430
+01:27:58,515 --> 01:28:02,956
+Aynı şey diğer varlıklar için de sorunlayabilmesi lazım.
+
+431
+01:28:03,114 --> 01:28:13,774
+İşte bu varlıkların, aynı özelliğe sahip olan varlıkların bir araya gelmesi de varlık kümesi dediğimiz, yani entity set ortaya çıkartıyor.
+
+432
+01:28:14,496 --> 01:28:23,154
+Bu varlıkların nitelikleri, yani işte bunlar o varlıklarla ilgili özellikler oluyor, attributları yani.
+
+433
+01:28:23,295 --> 01:28:34,456
+nitelikler. Bunlar işte başta ismi olur, numarası falan, tahmin edebileceğimiz diğer nitelikler. O niteliklerin de bir domeni var.
+
+434
+01:28:35,435 --> 01:28:45,695
+Domenin demek hem veli tipi hem de değer aralığı manasında. Yani formatı. Yani işte bir öğrenci numarası mesela şu aralıkta olması lazım.
+
+435
+01:28:45,695 --> 01:28:50,595
+Yani ilk olarak işte bir seneyle başlayacak. İşte 2020 girişler, 2020.
+
+436
+01:28:51,295 --> 01:29:01,414
+Daha sonra işte, mesela işte bir seconds numarası, 2020'de birinci giren öğrenci, 2021 olacak, 2022 olacak, diye öyle sırayla.
+
+437
+01:29:01,716 --> 01:29:05,795
+Yani belli bir formatı olması için hep hepsinin domain kapsamı içerisinde.
+
+438
+01:29:05,795 --> 01:29:11,914
+Bunun ötesinde, domain'in de bir alt şeyi, alt tanımı ne? İşte tip, veri tipi.
+
+439
+01:29:12,015 --> 01:29:19,295
+Yani bu şey, integer olacak bu öğrenci numarası. İşte big int olacak.
+
+440
+01:29:19,295 --> 01:29:24,154
+gibi böyle farklı veritiflerim olabilir.
+
+441
+01:29:25,695 --> 01:29:31,996
+Evet, diğer taraftan bu varlıkların birbirleriye olan bağlantıları,
+
+442
+01:29:32,914 --> 01:29:35,815
+evet sesim geliyor değil mi? Bağlantı var.
+
+443
+01:29:37,476 --> 01:29:38,074
+Geliyor hocam.
+
+444
+01:29:38,435 --> 01:29:38,614
+Tamam.
+
+445
+01:29:39,135 --> 01:29:41,295
+Bu varlıkların birbirleriye olan...
+
+446
+01:29:41,747 --> 01:29:46,646
+Bağantıları da, yine bu küçük dünyamızda önemli bir şey.
+
+447
+01:29:46,827 --> 01:29:57,188
+Aks taktirde bunlar, yani ne demiştik, veritabanı tanımında, birbirleriyle alakalı olan varlıkların bir araya gelmesiyle oluşan bir küçük dünya.
+
+448
+01:29:57,824 --> 01:30:04,564
+dediğimiz zaman o varlıkların bir araya gelmesi. Yani bir bağıntı. Ama işte burada o varlıkların hangi arasında bir bağıntı var?
+
+449
+01:30:05,603 --> 01:30:10,202
+İşte onların tespit edilmesi ve o bağıntının şekillendirilmesi gerekiyor.
+
+450
+01:30:10,202 --> 01:30:20,202
+Evet, elimizdeki yapı taşları esasında, yani building blocks'lar, yapı taşlarımız, varlık ve bağıntılar olacak.
+
+451
+01:30:22,804 --> 01:30:35,787
+veritabanında, öğrenci kayıt veritabanında, öğrencilerimiz var, derslerimiz var, hocalarımız var, öğrenci dersi alması. Bu bir bağıntı. Yani bu küçük dünyayı böyle tasvir ederken...
+
+452
+01:30:35,987 --> 01:30:46,506
+Kurgularken, tarif ederken kullandığım özneler çoğunlukla, belki diyelim yani aday. Neye aday? Varlık olmaya aday.
+
+453
+01:30:46,506 --> 01:30:57,967
+Yani öğrenciler ders alıyorlar gibi mesela. Burada da alması, dersi alması bir bağıntı, yani odaki fiillerde bir bağıntı ifade ediyor.
+
+454
+01:30:58,106 --> 01:31:03,708
+Hangi bağıntı ifade ediyor? Öğrenci ile dersler arasında bir.
+
+455
+01:31:03,987 --> 01:31:31,407
+Bantiyi ifade ediyor. Yani bu düşünce oldukça basit. Ama tabii çok da kolay olmuyor. Çünkü o küçük dünya bu kadar basit cümlelerle tarif edilmiyor. Çok detaylar olabilir. O küçük dünya biraz büyük bir dünya olabilir. Çok varlıklar olabilir, çok olaylar olabilir. İşte o yüzden bu kavramsal tasarımın zor olan tarafı tek bir tasarım olmaması. Yani birçok tasarımlar olabilir.
+
+456
+01:31:31,987 --> 01:31:41,146
+Ve bunların da bazı noktalara dikkat edilmesi lazım bu tasarımda. Evet, onlara da değineceğiz daha sonradan.
+
+457
+01:31:41,387 --> 01:31:48,586
+Şimdi burada kullanacağımız şekilleri ifade ediyor. Tanımları yaptık, varlık ve bağında.
+
+458
+01:31:49,006 --> 01:31:58,987
+Varlıklarımız böyle dikdörtgenle, dörtgenle ifade edeceğiz. Bu varlığımızın niteliklerini de böyle yuvarlak...
+
+459
+01:31:59,956 --> 01:32:27,195
+elips veya işte yuvarlak ve onun içerisinde niteliğin ismini yazarak ifade edeceğiz. Bu genel ER diyagramı. Yani başka ER diyagramları görebilirsiniz. Çok var. Yani işte PSQL'de ikini göstereceğim size mesela. Farklı kitaplarda da, yani literatürde de mesela gene farklı ER var. Ama en çok yaygın kullanılan bu olduğunu söyleyebilirim. Yani en geleneksel, en klasik bu.
+
+460
+01:32:27,956 --> 01:32:39,735
+UML'den farklı zaten bu. ER da kendi içerisinde farklı olabiliyor. Ama biz buna böyle liayet edersek, değerlendirmemiz o noktada kolay olacaktır.
+
+461
+01:32:40,935 --> 01:32:55,055
+Şimdi burada işte bir departman varlığı var, projekt varlığı var, araba varlığı var mesela. Bunların içinde bulundukları küçük dünyaya bağlı olarak bu varlıklarda da böyle niteliklerimiz var.
+
+462
+01:32:55,956 --> 01:33:14,595
+isim niteliği, numarası, menajeri falan, lokasyonları var. Projekte de bu niteliklerimiz var. Şimdi burada bu nitelikleri böyle farklı şekillerde tarif ediyor. Tarif edebiliriz. Farklı şekiller alabiliyor.
+
+463
+01:33:23,956 --> 01:33:51,956
+deposit diyoruz. Yani birleşik nitelik. Eğer bir şey çıkmıyorsa, singular. Yani tek nitelik oluyor. Çünkü burada bakın, arabanın mesela bir registration numarası var. Bu registration numarası da böyle belli bir formatı var. Yani belli bir farklı alt niteliklerden oluşuyor. Yani işte eyalet ismi ve numarası gibi. Yani işte İstanbul'da.
+
+464
+01:33:51,956 --> 01:33:54,435
+İstanbul'un plakası mesela.
+
+465
+01:33:56,515 --> 01:34:06,295
+Gibi burada. Bununla beraber işte diğer bir nitelik. Bir de şurada bazı niteliklerin altı çizili bakımları mesela.
+
+466
+01:34:06,414 --> 01:34:12,375
+Bunun çizili olması, mesela bu niteliğin altı çizili, bu nitelik demek ki bir anahtar.
+
+467
+01:34:12,755 --> 01:34:32,735
+Yani anahtar ne demek? Buradaki bu varlık setini, bu ne dedik? Varlıkları toplayan, varlıklardan oluşan bir varlık seti. Bu varlık setindeki varlıkları birbirinden ayırt etme kabiliyeti olan bir nitelik bu.
+
+468
+01:34:34,324 --> 01:34:54,764
+Vehicle ID demek ki buradaki bütün arabaların hepsi şimdi birinden farklı, unique, biricik. Aynı şekilde registration numarası da öyleymiş. Yani bundan bağımsız olarak registration da yani kompozit olan bir registration numarası da gene biricik kılıyormuş buradaki anahtarları.
+
+469
+01:34:55,220 --> 01:35:03,439
+Benzer şekilde burada da bakın, hem name hem de number buradaki departmanları biricik kılıyor.
+
+470
+01:35:03,956 --> 01:35:25,956
+İkisi birden değil. Yani name de kılıyor, farklı kılıyor. Buradaki departmanları number da farklı kılıyor. Burada da gene name ve number buradaki projekleri farklı kılabiliyor yani. Bu ne demek? Yani ben bu projek için her zaman farklı bir isim girmem lazım. Veya farklı bir isim olduğunu...
+
+471
+01:35:26,130 --> 01:35:37,532
+O olmasını şart koşuyorum. Parti bir numara olmasını şart koşuyorum. Yani tasarımın küçük dünyamda böyleymiş. Yani bunu nerede, bu da peki nereden geldi? Ezbere de değil. Yani öyle olmasını istiyor müşteri.
+
+472
+01:35:37,532 --> 01:35:53,871
+Ben işte müşteriyle konuşmaya gidiyoruz ve interview yapıyoruz mesela. İşte bir gereksinim analizi yapıyoruz. Onları topluyoruz dedik mesela. Öyle bir aşama var. Orada bize diyorlar ki yani bu projelerin işte isimleri birbirinden farklı olacak. Yani biz farklı isim koyuyoruz diyorlar.
+
+473
+01:35:54,130 --> 01:36:00,411
+Proje numaralı da farklı olacak diyorlar mesela. Böyle olmasını istiyorlar. Böyle olunca biz de tasarımımızı buna göre yapıyoruz.
+
+474
+01:36:01,032 --> 01:36:05,251
+Yani meselenin membağı oraya dayanıyor. Yani sebebi bu oluyor.
+
+475
+01:36:06,150 --> 01:36:15,532
+Evet, diğer bir buradaki notasyonumuz, anahtarları, kompozit ve singler, kompozit ve singler'ı söyledik, anahtarı söyledik.
+
+476
+01:36:15,532 --> 01:36:20,192
+Bir de bakın çift çizgi var şurada bakın. Bu çift çizgi de multi-values.
+
+477
+01:36:20,979 --> 01:36:33,479
+Yani çok değerli. Yani bir varlık, bir varlık, bir varlığın buradaki color niteliğine ait değer, birçok değer olabilir.
+
+478
+01:36:33,971 --> 01:36:56,252
+Olabilir mi? Bu color için olabilir. Yani bir arabanın rengi sadece böyle kırmızı değil, kırmızı-mavi karışma olabilir mesela. Hani o manada. İşte birden çok renk olması, yani 10 tane rengin karışma olabilir. İşte bu manayı böyle kağıda taşımak için böyle iki çizgi kullanıyorum.
+
+479
+01:36:56,724 --> 01:37:01,903
+Burada bunun bir instance var bakın. Car, entity, instance.
+
+480
+01:37:02,496 --> 01:37:17,916
+Yani buradaki varlık kümesi ve bu iteliklerle ilgili bu varlık kümesinin içerisindeki varlıklar bunlar olabilir. Yani buna uyumlu bir set oluyor bu.
+
+481
+01:37:17,916 --> 01:37:25,335
+Yani bakın şu bir ABC-123 Texas. Yani şu registration numarası bakın.
+
+482
+01:37:25,939 --> 01:37:39,659
+Yani ikisi birden unique olacak şekilde burada ikisi birden düşündüğümüz zaman unique olması lazım. Yani hiçbir zaman ABC-123, Texas bir daha görmemem lazım. Bir tane Texas gördük bakın ama şeyi farklı.
+
+483
+01:37:40,180 --> 01:38:06,119
+New York, ABC 123, ABC 123 gördük ama bu sefer bu farklı. İkisi birden her zaman farklı olması lazım. Çünkü onu ne yaptık? Anahtar dedik. Primary demiyorum daha, birazdan tanımlayacağız onu. Anahtar dedik sadece. Diğer taraftan Vehicle Number dediğimiz, yani şu TK629 o hep farklı bakın. O hep farklı. Yani buraya gireceğimiz o tek değer her zaman farklı olması.
+
+484
+01:38:06,675 --> 01:38:21,795
+Bununla beraber, Color mesela bakın, bu varlık setin içerisindeki her bir varlığın şeyi, Color'ı, birden çok Color olabilir. Birden çok renk olabilir. Red Black olmuş mesela.
+
+485
+01:38:22,034 --> 01:38:33,375
+Yani kırmızı, hem kırmızı var demek ki, karışımı da olabilir veya arabanın bir kısmı kırmızı, bir kısmı siyah mesela, iki renkten oluşuyor. O da olabilir artık.
+
+486
+01:38:34,675 --> 01:38:45,055
+Hangi mana varsa. Evet, bu şekilde bu kurallara buradaki şekle ait olan bir instance burada tanımlamış olduk.
+
+487
+01:38:45,492 --> 01:39:05,271
+Evet, diğer taraftan bu varlıklar ve nitelikler böyle. Son tarafta ise bir bağıntı görüyoruz arkadaşlar. Bu bağıntımız, bağıntı iki varlık seti arasında olması lazım. Bu varlık setleri de aynı olabilir veya farklı olabilir.
+
+488
+01:39:05,715 --> 01:39:13,735
+Aynı olunca buna rekülsif diyeceğiz. Farklı olunca bir şey demeyeceğiz, yani anrekülsif diyeceğiz yani.
+
+489
+01:39:14,595 --> 01:39:20,715
+Burada ders ve öğrenci arasında bir bağıntı, yani öğrencinin bu dersi...
+
+490
+01:39:21,331 --> 01:39:34,970
+Almasını ifade eden bir R bağıntısında. Bu bağıntının ismi R. Fakat ben buraya daha böyle hatırlatacak bir isim koyabilirim. Yani ders alma bağıntısı. Böyle bir isim takabilirim yani.
+
+491
+01:39:36,331 --> 01:39:46,050
+Burada esasında iki varlık sitedi arasındaki bu bağıntı, varlıklar arasında bir bağıntıyı ifade ediyor.
+
+492
+01:39:46,447 --> 01:39:57,447
+Yani buradaki varlık setlerinin arasındaki bağıntı. Bunun instance'ına baktığımız zaman, aynı burada nasıl varlığın bir instance'ına, yani bir snapshot'ına böyle bir...
+
+493
+01:39:57,824 --> 01:40:15,764
+Vaziyet alabilir varlık kümesi. Burada da bağıntı esasında böyle bir vaziyet alabilir. Bunun böyle bir vaziyet alması da diğer bir nokta, yani arasında bir bağıntı olması ve o bağıntının da şurada eleman sayıları, yani cardinality denilen.
+
+494
+01:40:16,128 --> 01:40:22,068
+Kardinality, eleman sayılarının N'e N olması ile böyle olmuş.
+
+495
+01:40:22,608 --> 01:40:26,887
+Burada farklı eleman sayıları olabilir, farklı Kardinality'ler olabilir.
+
+496
+01:40:27,327 --> 01:40:31,728
+Bunlar, bire birlik, bire enlik, N'e birlik ve N'e enlik.
+
+497
+01:40:32,148 --> 01:40:40,548
+Birebir, bire N'lik, N'e birlik ve N'e N'lik olmadığı için de yani bire N'lik yönünü değiştirdiğimiz zaman o da farklı olmuş oluyor tabii.
+
+498
+01:40:40,987 --> 01:40:49,606
+Ve N'e N'lik olacak şekilde. Bu ne demek? Bu birazdan zaten onları detaylandırıyor ama burada yapmış olalım o tanımı.
+
+499
+01:40:49,708 --> 01:40:56,266
+Bu şekli gördüğümüz için burada. Buradaki her bir varlık, yani bu varlık seti içerisinde, bu varlık seti ne kadar olabilir?
+
+500
+01:40:56,266 --> 01:40:59,007
+Bilmiyoruz, yüzlerce, binlerce öğrenci olabilir burada.
+
+501
+01:41:00,148 --> 01:41:28,148
+Bir varlık için burada bu varlığın, bu öğrencinin kaç ders alabileceğini ifade ediyor şu N. Yani buradan baktığımız zaman, şuradan bakın, tarafa doğru. Şu N diyor ki buradaki bir öğrenci buradan N ders alabilir. N ders. Yani çok ders alabilir. N neyi temsil ediyor? Çoklu. Bakalım bir şekilde öyle mi? Evet, şuradaki E1, buradaki T1 dersini almış. Başka ders almış.
+
+502
+01:41:28,148 --> 01:41:53,407
+E2, P1 dersini almış, E2 aynı zamanda P4 dersini almış. Yani 1'den 1'e N'li. Şurada da bakın E3, 3 dersi almış. 1'e 3, 1'e N'li gene. Buradan bakıldığı zaman N manası o. Buradan bakalım, bir dersin birçok öğrencisi olması.
+
+503
+01:41:54,130 --> 01:42:22,112
+İşte gerçekten öyle. Yani P1 hem E1 hem E2 öğrencilerini içeriyor. Artık cümlemi öyle kuruyorum. P2 ise hem E3 öğrencisini içeriyor. O kadar. Başka hiç içermiyor. P2 bir tek E3 öğrencisini içeriyor. P3 iki tane öğrenciyi içeriyor. E3'ü ve işte E4'ü içeriyor. Şimdi bu şekil böyle. Bu şekilde uyum içerisinde. Peki bu nereden geldi?
+
+504
+01:42:22,130 --> 01:42:50,072
+küçük dünyadan geldi gene. Hani bu böyle uydurma bir şey değil. Yani gerçek hayatta da böyle mi olur? Böyle olur tabii. Baksak mesela içinde bulunduğumuz küçük dünyaya bir öğrenciyiz. Kaç ders alıyoruz? Çok ders alıyoruz. O zaman en yazacağım. Bir derse bakıyoruz. İşte veritabanı Yönetimi dersi. Bu derste öğrencilere olan bağıntısı ne? Bir dersi bir tek kişi alır mı? Almaz. Bir dersi en kişi alıyor. O yüzden buradan. Demek ki
+
+505
+01:42:50,130 --> 01:43:06,412
+Yani bizim bu şekildeleri çizerken, buradaki bu varlıkları da kompozit olması, mantıverit olması gibi bunları böyle bilir derken, o küçük dünya ve o küçük dünya bizden isteyen kişilerle olan iletişimimiz neticesinde bunları böyle çiziyoruz.
+
+506
+01:43:11,412 --> 01:43:38,130
+Evet, herhalde gayet açık. Şimdi bu derste benim en çok gördüğüm, gerek işte SQL olsun, gerek işte kavramsal tasarımı, bundan sonra konular. Yani tanımlar, kavramlar oldukça basit esasında. Fakat böyle bu tanımları, kavramlarını böyle üst üste koyuyoruz ve işte karşımıza bir şey çıkıyor. Bunları böyle sağlam bir şekilde üst üste koymazsa sonra bu yıkılıyor.
+
+507
+01:43:38,867 --> 01:43:54,987
+Yani kolay, ama kolaylar bir araya gelince böyle karmaşık olabiliyor, zorlaşabiliyor. O yüzden böyle iyice anlamak lazım. Ve bunları böyle daha sonra kullanacağız bu basit tanımları. Evet, şimdi devam edelim.
+
+508
+01:43:55,987 --> 01:44:04,947
+Bağantıların işte kısıtları. Biraz önce şurada ben açıkladığım şeyden burada yazıya dökmüş. Bağantının iş ismi, bağantıdaki varlıklar.
+
+509
+01:44:06,867 --> 01:44:25,407
+çok olabilir. Biz sadece 2 varlık dedik, recursive dedik, 2 varlık dedik. Bir de çoklu olabilir. Yani bu bağıntımızdaki bağıntının derecesi de burada 2. Bununla beraber 3 tane varlık seti üzerine bir bağıntı tanımlayabilir.
+
+510
+01:44:25,791 --> 01:44:48,612
+4 tane varlık seti üzerine bir bağıntı tanımlayabiliriz. Bu çok yaygın değil. Yani gerçek hayatta daha çok ikili bağıntılar kullanıyoruz. Bu işlemlerimizde veya tasarımımızda daha kolaylaştırıyor. Ama öyle tasarımımızda daha profesyonel, daha ince bir ayar yapılması gerekiyorsa o zaman südürür incesi 3 veya daha fazla.
+
+511
+01:44:49,363 --> 01:45:16,943
+Olabilir. Diğer bir tanımımız, kardinal itirreşiyor oldu. Yani eleman sayısı, kaçak açtık gibi ifadeler burada kullanıyoruz. Birebirlik, işte birerlilik, enerlilik, enerlilik. Diğer bir tanım burada, rol. Burada rekümsif bağıntılar için. Yani iki varlığımız var, iki varlık kümemiz var. O iki varlık kümesi aynı. Yani bir bağıntı aynı varlık kümesi üzerinde tanımlanıyor ise.
+
+512
+01:45:17,363 --> 01:45:18,483
+Döreceğiz birazdan.
+
+513
+01:45:20,340 --> 01:45:31,340
+O zaman işte o bağıntıdaki o varlık kümelerinin o rollerini tanımlamam lazım ki daha anlaşılır olsun.
+
+514
+01:45:32,459 --> 01:45:35,220
+Şimdi bu daha sonra birazdan aşağı çıkacak.
+
+515
+01:45:35,579 --> 01:45:39,239
+Burada aşağıda gene ikili bir bağıntı görüyoruz.
+
+516
+01:45:39,559 --> 01:45:42,639
+Ve rekülsif değil, yani iki tane varlık setimiz farklı.
+
+517
+01:45:42,819 --> 01:45:45,059
+Customer varlığımız var, varlık setimiz var.
+
+518
+01:45:45,439 --> 01:45:46,760
+Car, araba varlık setimiz var.
+
+519
+01:45:46,760 --> 01:45:48,300
+Burada nasıl bir küçük dünya var?
+
+520
+01:45:48,340 --> 01:46:08,280
+Yani bu müşteriler bu arabaları kiralıyorlar. Müşterilerin işte numarası isimleri var, arabaların işte plako numaraları var, modern revatikleri var. Bu bir müşteri birden çok araba kiralayabilir mi? Bunun cevabı burada, N. Yani evet kiralayabilir.
+
+521
+01:46:08,688 --> 01:46:32,988
+Zaten bu beklenen bir şey değil mi? Bir müşteri bir anda da birden çok araba kiralayabilir, farklı zamanlarda da kiralayabilir. O yüzden burada N olması gayet makul. Yani bunu sormaya bile gerek yok. Yani müşteriye gidip sormaya bile gerek yok. Bizden bu tasarımı isteyenler. Ama bazen bunu detaylandırmak gerekiyor. Yani biraz stili olabiliyor.
+
+522
+01:46:40,307 --> 01:47:06,188
+Elbette. Şimdi bu kiralıyor arabayı. Yani bir gün kiraladı, iki gün kiraladı. Daha sonra başka biri kiralayacak. Tabii ki farklı bir tarihte bunu kiralayabilir. Burada aynı tarihte kiralayabilir mi gibi bir sual. Aynı tarihte kiralamamasına göre burada durum değişecek. Yani tasarımımız değişebilir. Birden çok müşterinin kiralaması devreye giriyor bir aracı.
+
+523
+01:47:08,307 --> 01:47:22,246
+düzenleme olacak. Çünkü artık arabanın başına bir kaza gelse, birden çok müşteri mesul olacak. Bu bütün o şeyi etkiliyor yani. İşte bu detayları, ince ayarları.
+
+524
+01:47:23,700 --> 01:47:37,079
+Yapabilmek için o gereksin listesini iyice analiz etmek gerekiyor. Burada oldukça basit. Yani sonuçta bir arabanın kiralanması, müşterinin arabayı kiralaması gibi bir mevzu var.
+
+525
+01:47:37,079 --> 01:47:38,300
+Evet.
+
+526
+01:47:40,435 --> 01:47:59,114
+ER notasyonlarımızı görelim. Şimdiye kadar gördüklerimiz oldu. Buna ek olarak görebileceklerimiz olacak. Burada varlıklarımız, entity, böyle bir kutu içerisinde ifade ediyoruz. Daha görmedik, birazdan göreceğiz. İki çizgili bir kutu olduğu zaman buna zayıf varlık diyeceğiz.
+
+527
+01:47:59,635 --> 01:48:07,255
+Diğer taraftan bir bağıntı, varlık kümeleri arasındaki bağıntılarımız böyle ifade ediliyor.
+
+528
+01:48:08,435 --> 01:48:15,075
+Böyle dörtgen ama işte ne deniyor buna işte, batlava tarzında dörtgen.
+
+529
+01:48:15,595 --> 01:48:20,375
+Gene nitelikler ise böyle yuvarlak içerisinde.
+
+530
+01:48:21,555 --> 01:48:29,315
+Altı çizgi olunca bu anahtar bir nitelik, çift çizgili olunca da multi-value oluyor.
+
+531
+01:48:29,935 --> 01:48:35,034
+Böyle olunca da kompozit veya kompleks tribü diyoruz bunlara da.
+
+532
+01:48:36,688 --> 01:49:04,608
+Şununla şu aynı, composite, complex attribute. Buna ek olarak şöyle, drive attribute'imiz var bakın, kesik çizgide. Bağıntılarımız ise bu şekilde böyle ifade ediliyor. Bağıntının ismi, varlık setlerinin ismi, cardinality'ler, bire, and, hik, veya diğerleri, cardinality'le eşiyorlar var. Bir de participation meselesi var, total participation veya partial.
+
+533
+01:49:04,688 --> 01:49:13,048
+participation, yani tam yer alma veya kısmı yer alma. Bu da tek çizgi veya iki çizgiyle ifade ediliyor.
+
+534
+01:49:13,048 --> 01:49:27,688
+Yani bunun manası, şunu söyleyeceğiz zaten, burada genel bir varlık, bu varlık setindeki bütün varlıkların bu bağıntıda yer alıp almama durumuna göre bu çizgiler burada ifade ediliyor.
+
+535
+01:49:28,128 --> 01:49:32,048
+Evet, şimdi onu söyleyeceğiz birazdan. Evet, şimdi karşımıza çıktı zaten, var olma bağımlılık.
+
+536
+01:49:32,275 --> 01:49:49,396
+Bunun manası, bu da bakın bizim o küçük dünyadaki o şeye göre, küçük dünyadaki, küçük dünyaya göre ortaya çıkacak bir tanım. O küçük dünyayı daha iyi tarif etmiş oluyoruz yani.
+
+537
+01:49:49,396 --> 01:49:57,824
+Şimdi burada tabii ilk olarak şöyle tanımı anlamak adına notasyon olarak AB kullanalım da daha sonra burada küçük dünyada.
+
+538
+01:49:57,824 --> 01:50:24,403
+karşıda çıkacak zaten. Yani B varlık kümesindeki her bir B varlığı, şuradaki mesela B varlığı, B varlık kümesindeki B varlığı, A varlık kümesindeki bir A varlığıyla mutlaka bir bağıntı kurması gerekiyor ise, mutlaka bu bağıntıda yer alması gerekiyor bu B'nin. O zaman B varlık kümesi, A varlık kümesine var olma bağımlıdır denir. Yani mutlaka B,
+
+539
+01:50:25,042 --> 01:50:48,983
+B, buradaki her bir B, mutlaka A ile bağıntı içerisinde. Herhangi bir A ile. O zaman buna total diyoruz. Bu total bakın buna bakıyor. Burası bakın ne? Partial, yani kısmi, kısmi yer almak, kısmi var olmak. Yani buradaki bütün A'lar, bütün bu bağıntıda yer almayabilir.
+
+540
+01:50:50,612 --> 01:50:58,512
+İşte böyle olunca o zaman buna da kısmi ediyoruz. Şimdi bakalım gerçek hayat örneklerine.
+
+541
+01:50:59,351 --> 01:51:07,912
+Tabii bu tanım burada bu kardinalikten bağımsız. Yani ene enlik olur, bire enlik olur, bire birlik olur. Ondan bağımsız bir şey bu.
+
+542
+01:51:09,592 --> 01:51:11,912
+Ama mesela hani bire birlikse...
+
+543
+01:51:12,691 --> 01:51:34,671
+Böyle bir durum olması için, yani birebir olduğunu düşünelim bunun. Ne demek? Buradaki her bir varlık, buradaki bir varlık da bağlantı içerisinde. Bu ne demek? Buradaki A varlık seti içerisinde 100 tane varlık varsa, B'de de 100 tane varlık olması gerekiyor. Yani birebirlik olduğu zaman.
+
+544
+01:51:36,819 --> 01:51:40,819
+Ama burada demek ki...
+
+545
+01:51:41,108 --> 01:51:56,648
+şu kısmi olduğu için burada 100'den fazla da şey olabilir, 100'den fazla da eleman olabilir. Yani burada 200 eleman olabilir, 200 tane varlık olabilir, burada 100 tane varlık olabilir.
+
+546
+01:51:56,648 --> 01:52:09,108
+Ama bu 100 varlık mutlaka bu A'nın 100 varlığıyla şu total'dan dolayı bağıntı içerisinde ama bu 200 tane varlık buradaki onlardan sadece 100 tanesi buradaki 100 tanesi.
+
+547
+01:52:09,108 --> 01:52:15,887
+Bakın diğer 100 tanesi ne oldu? Bu bağıntıda yeri olmadı yani.
+
+548
+01:52:16,691 --> 01:52:19,130
+Böyle bir örneklendirme yapabiliriz.
+
+549
+01:52:19,671 --> 01:52:23,351
+Eneğenlikte, az önce verdiğim örnek, Birebirlik'te.
+
+550
+01:52:23,811 --> 01:52:29,391
+Eneğenlikte, gene benzer şekilde daha esnek oluyor bir eneğenlik.
+
+551
+01:52:29,771 --> 01:52:31,252
+Benzer şekilde düşünebiliriz.
+
+552
+01:52:31,711 --> 01:52:34,211
+Yani bunlara sayısal örnekler verebilirsiniz.
+
+553
+01:52:34,211 --> 01:52:37,730
+Şimdi şu örneğe bakalım mesela.
+
+554
+01:52:38,952 --> 01:52:44,691
+Burada departmanlarımız, bölümlerimiz var, işçilerimiz var ve is managed var.
+
+555
+01:52:44,691 --> 01:53:09,650
+Yani her bir departman, departmanın yönetilmesi. Bunu yöneten, bir kere şu eleman seyreğine baktığımız zaman, bu departmanı yöneten, İzmen Eskipay yöneticisi, bir kişi. Bir. Burada bir olması oldukça makul. Yani departmanın, departman bölüm başkanı bir kişi olur. Yani bu dünyada bütün bölümlerde böyledir.
+
+556
+01:53:09,971 --> 01:53:26,051
+O yüzden bunu soruşturmaya, acaba öyle mi falan demeye gerek yok. Bölüm başkanı, tek bir şey oluyor. Bir köyün bir muhtarı olması gibi bir bölümünde bir başkanı oluyor. O yüzden burada mutlaka biri olması gerekiyor.
+
+557
+01:53:27,604 --> 01:53:34,064
+Diğer taraftan, yani kardinalitleri tespit yapmaya çalışıyorum ilk olarak, daha sonra participation'lara bakıyorum.
+
+558
+01:53:34,324 --> 01:53:41,463
+Diğer taraftan, employee'nin yönettiği departmanlar birden çok olabilir mi? Evet, olabilir.
+
+559
+01:53:42,064 --> 01:53:47,283
+Yani bunu sorabiliriz. Veya o küçük dünyayı biraz daha analiz etmemiz gerekebilir.
+
+560
+01:53:47,283 --> 01:53:55,584
+Ama burada neyi seçmiş? Bir. Yani bir işçi, yani bir tane departman yönetebilir. Yani o kadar yüklenmiyor.
+
+561
+01:53:55,604 --> 01:54:14,884
+Bir işçinin bir tek departman yönetici olacaksa, işçiliğe katletmiş personel niyatinde bir tane bölümü yönetebilir. Şimdi bakalım participation'a. Bir departmanın, şu iki çizgi diyor ki, bir departmanın mutlaka bir yöneticisi vardır.
+
+562
+01:54:23,604 --> 01:54:47,884
+mühendisliği, işte inşaat mühendisliği bölümleri, o bölümleri düşün. Hepsinin bir bölüm başkanı olması lazım. O yüzden burası tek çizgi. Peki burası, burası, burası mutlaka, mutlaka tek çizgi olması lazım. Yani gene bunu soruşturmaya gerek yok. Çünkü o üniversitelerde diyelim veya o iş yerinde her bir işçinin bir başkanlık pozisyonu olması mümkün mü?
+
+563
+01:54:48,148 --> 01:55:02,407
+Mümkün değil. Yani burada %1, %1, %1, %1, %1, %1, %1 çalışandan bir kişi oranında bir başkanlık vazifesi var. Kaç tane bölüm varsa o kadar kişi burada başkanlık vazifesi yapacak.
+
+564
+01:55:02,899 --> 01:55:29,220
+O zaman böyle olunca burasının iki çizgi olması kabul edilebilir değil. Yani yüzde yüz yanlış olmuş. Bunu soruşturmaya gerek yok. İşte bu küçük dünyayı burada ne yaptık? Böyle tarif etmiş olduk. Diğer bir örnek bakın, office employee. Yani ofislerimiz bir binada ofislerle işte hangi kişi, hangi işçi, çalışan, hangi ofiste kalıyor falan bunun takip edilmesi.
+
+565
+01:55:30,899 --> 01:55:39,459
+tahmin edebilirsiniz. Bu böyle daha büyükçe bir şemanın alt şemaları. Yani, ne ya şimdi, kampani veritabanında geçebilir.
+
+566
+01:55:40,539 --> 01:55:43,139
+Hani oturma planını böyle takip etmek istiyoruz gibi.
+
+567
+01:55:44,595 --> 01:56:11,155
+Şimdi burada gene bir ofiste birden çok işçi oturabilir. Oldukça gerçekçi. Diğer taraftan bir işçi bir tane ofisi olabilir. Yani bu belki biraz şey, çünkü şu kabul edilebilir veya bu makul. Mesela asistanlar, 2-3 asistan mesela bir odayı paylaşıyorlar.
+
+568
+01:56:11,700 --> 01:56:17,300
+O yüzden bire enlik olması burada güzel, doğru yani.
+
+569
+01:56:17,500 --> 01:56:18,500
+Çünkü gerçek hayata uygun.
+
+570
+01:56:18,639 --> 01:56:21,880
+Bizim şu andaki bulunduğumuz fakültemize baktığımız zaman böyle.
+
+571
+01:56:22,539 --> 01:56:29,159
+Ama diğer taraftan bir işçinin bir odasının olması biraz tam doğru olmayabilir.
+
+572
+01:56:29,319 --> 01:56:35,800
+Veya burada öyle yazmış, bir yazmış ama mesela bölüm başkanı, bölüm başkanı yardımcılarının birden çok odası olabiliyor.
+
+573
+01:56:36,340 --> 01:56:38,220
+Şu anda öyle mesela fakültemizde.
+
+574
+01:56:38,220 --> 01:56:39,700
+Ama bize diyebiliriz.
+
+575
+01:56:39,700 --> 01:56:52,319
+Diler ki, bizde öyle bir şey yok. Herkese mutlaka bir odası var, dese, bize, bizde o gereksinim listesinde böyle yazıyor olsa, demek ki o zaman buraya bir yazacağız. Şimdi burada demek ki böyleymiş.
+
+576
+01:56:52,319 --> 01:57:07,319
+Diğer taraftan, participle eşitlere bakalım. Yani yara alma durumlarına baktığımız zaman, burada bir ofiste mutlaka birisi var. Yani boş oda yok. Mutlaka ofiste bir kişinin tahsis edilmesi gerekiyor.
+
+577
+01:57:07,680 --> 01:57:33,539
+Boş oda olması. Yani bu biraz çok gerçekçi gelmedi bana esasında. Yani çünkü başta daha bu şey, işte bölüm açıldığı zaman veya bina hizmete girdiği zaman boş oda olacak mesela değil mi? Yani biraz daha geniş düşünsek. Ama şimdi burada böyle yapmıştı tasarımı. Diğer taraftan bir işçi de, bir işçi de mutlaka bir odası olacak. Yani daha işe girer girmez mutlaka bir oda tahsisi olacak.
+
+578
+01:57:34,068 --> 01:57:36,506
+Burada da o yüzden çizgi yaptık.
+
+579
+01:57:36,867 --> 01:57:38,068
+İşte bunları böyle...
+
+580
+01:57:38,420 --> 01:58:06,340
+tahlil ettiğimiz zaman, işte küçük dünyayı kağıda taşımakla bunu ifade ediyoruz. Yani maksadımız bu. Küçük dünyayı, istenilen şeyleri daha iyi ifade etmiş olduk. Şimdi bundan sonra, yani daha bitmedi ama, yani buradaki tanımlı olabiliyor. O küçük dünyayı işte böyle kağıda ne kadar iyi taşıdıysak, bunu daha sonra ilişkisel model tablolarına aktarmamızı da aktardıktan sonra daha başarılı bir veri tabanı olacak.
+
+581
+01:58:06,420 --> 01:58:13,159
+Bir okuçu dünyayı daha iyi temsil etmiş olacağız. Olaya, büyük öresine baktığımız zaman aksadımız bu olmuş oluyor.
+
+582
+01:58:18,899 --> 01:58:31,059
+Evet, genelde bir ara veriyoruz arkadaşlar. Yine iki, işte beş kişi, on kişi bir ara veririz. Yani on, on beş dakika sonra. Ondan sonra ikinci dersimizi yaparız. Evvelden de öyle mi yapıyordunuz bilmiyorum.
+
+583
+01:58:40,755 --> 01:58:45,175
+Şimdi burada yine notasyonları ifade edilmiş.
+
+584
+01:58:56,114 --> 01:59:00,235
+Bakın burada biraz önce dediğim gibi
+
+585
+01:59:08,148 --> 01:59:16,768
+Bir adem dediğim gibi, recursive bir bağıntı var. Recursive bağıntımız, employee ile yine employee arasında, managed bağıntısı.
+
+586
+01:59:17,331 --> 01:59:45,331
+Yani bir işçiyi yöneten başka bir işçi. Yani o işçinin yöneticisi. Biraz önce işçiyle departman arasında, şurada şu bağıntı gene bakın burada. Böyle bir manage bağıntısı yaptık işçiyle yönetici arasında, şey pardon, işçiyle departman arasında. Burada da işçinin supervisor'ı manasında yani yöneticisi, yani bağlı bulunduğu kişi noktasında.
+
+587
+01:59:45,331 --> 01:59:57,492
+İşte burada bunları böyle daha iyi ifade edebilmek adına rol tanımlamam gerekiyor. Yani demek ki roller rekülsif şeylerde, bağlantılarda karşıma çıkıyor.
+
+588
+01:59:57,824 --> 02:00:05,184
+Burada bir menajer, nasıl okuyacağız bunu? Bir menajer, bir yöneticinin birden çok alt çalışanı olabilir.
+
+589
+02:00:05,342 --> 02:00:14,903
+Bire N'lik, bire N. Bir yöneticinin birden çok altında çalışan, yani altında bağlı olan ona, Bire N o manada.
+
+590
+02:00:14,903 --> 02:00:20,943
+Veya şuradan okusak, şuradan baksak, bir kişinin, bir işçinin bir tane menajeri var.
+
+591
+02:00:21,943 --> 02:00:23,863
+Bir kişinin bir tane menajeri var.
+
+592
+02:00:24,211 --> 02:00:40,730
+Evet, İlk Unary böyle. Binary ve Churnary de bu şekilde. Binary biraz önce gördük zaten. Bir departmanın bağlı bulunduğu bir division var. Bir division'da da, yani fakülte manasında bu, fakülte de birden çok departman olabilir.
+
+593
+02:00:42,355 --> 02:01:04,536
+Tönleri ise, yani üçlü bağıntı, burada da üç tane varlık olması gerekiyor. Bu üç tane varlık üzerindeki bağıntımızın ismi ve bağıntıdaki gene eleman sayıları ve gene yer alma durumları, yani var olma durumları. Burada hepsinin kısmıymış.
+
+594
+02:01:10,355 --> 02:01:16,076
+Fünelini kullanıyor, yani kabiliyetini, bu işi yapıyor diyelim, SQL, iş olmuş olsun.
+
+595
+02:01:16,675 --> 02:01:28,935
+Bir işçi, bu bir projede bir işi yapıyor. Ama bu N'in manası, şu ikisinden bir numune alıp, bunun manası ortaya çıkıyor.
+
+596
+02:01:28,935 --> 02:01:32,935
+Yani şunu demek istiyorum, bir işçi, bir projede...
+
+597
+02:01:33,331 --> 02:01:58,970
+N tane iş yapıyor, N tane final, N tane kabiliyeti var, N tane iş yapıyor diyelim, daha nasıl şey olacak, N tane iş yapıyor. Aynı şekilde bunu nasıl okuyoruz, bu N'in keskisi nasıl oluyor? Yine bu ikisinden, bu sefer diğer ikisinden, şunlardan bir N numune alıyoruz. Yani bir projedeki bir iş, birden çok kişi tarafından yapılıyor. N, bu N'i de öyle okuyoruz.
+
+598
+02:01:59,539 --> 02:02:08,399
+Esasında buradaki okumalara da aynı manada. Buradan bir departman aldık. O departmanın bir tane fakültesi var.
+
+599
+02:02:08,882 --> 02:02:16,804
+veya buradan bir tane fakülte aldık. Bu fakülteye ait N tane, yani buradan bir tane numune alıp diğer tarafa gidiyorduk.
+
+600
+02:02:16,804 --> 02:02:28,842
+Şimdi burada üçlü olunca iki tanesinden birer numune alıyoruz. Yani bir proje diyoruz, bir iş. Bir projedeki bir iş birçok kişi tarafından yapılıyor.
+
+601
+02:02:29,324 --> 02:02:31,462
+O yeni nasıl okuyoruz? Bir işi.
+
+602
+02:02:32,211 --> 02:02:50,150
+Bir işçi, bir işi birçok projede yapıyor. Yani A projesinde aynı işi yaptı, B projesinde aynı işi yaptı. Yani eğer durum böyleyse, o zaman bu Turner'i, bu üçlü olan bağıntımızın bu eleman sayıları da bu şekilde olması gerekiyor.
+
+603
+02:02:51,476 --> 02:03:00,135
+Evet, bu detaylar yine burada karşımda çıkacak biraz daha sonra. Bu notasyonumuz burada böyle.
+
+604
+02:03:02,003 --> 02:03:23,063
+Evet, bu örnekleri de incelersiniz. Hepsini burada tekrar tekrar yapmak zaten şeyde kalmıyor. Herhalde anlaşıldı veya ekstra farklı bir şey yok burada. Sadece farklı örneklerimiz var. Zaten bu sunurda çok fazla örnek var. Yani bayağı örneğimiz var ve yeterince. Bunları anlatsanız birçok küçük dünyayı tasarlamaya yeterli olacaktır.
+
+605
+02:03:26,063 --> 02:03:26,663
+Evet.
+
+606
+02:03:27,059 --> 02:03:32,139
+Var olmayla ilgili de burada biraz önceki örneklerimiz var. İkisi de bu sefer.
+
+607
+02:03:33,235 --> 02:03:46,975
+tam mandatory, optional, mandatory isimlendirmesi yapmıştık burada. Total veya kısmı dedik biz. İkisi de aynı manada. Yani total, mandatory, kısmı ile optional'a karşılıklıydı.
+
+608
+02:03:46,975 --> 02:04:01,235
+Evet, gelelim şimdi anahtar meselesine. Biraz önce bunu bir parça şey yaptık. Anahtar demek birbirinden bir niteliğin, bir niteliğin, bir niteliğin yani nitelik grubunun anahtar.
+
+609
+02:04:01,235 --> 02:04:11,914
+anahtar olması demek, bu nitelik kurulunun, o varlık seti içerisindeki varlıkları, birbirinden ayırt edebilmesi demek.
+
+610
+02:04:13,194 --> 02:04:23,295
+Şimdi bu ayırt etme, bu nitelik, bu anahtar noktası, anahtar meselesi, fakat farklı tanımlarda olabiliyor.
+
+611
+02:04:23,475 --> 02:04:25,494
+Farklı alt tanımları var, öyle diyeyim.
+
+612
+02:04:29,235 --> 02:04:46,534
+Yani bütün nitelikler, bütün nitelikleri bir araya getirdiğimiz zaman, o tablodaki, o daha tablo demeyelim, varlık setindeki bütün nitelikleri düşündüğüm zaman, bunun hepsi şey yapabilir, o varlıkları birbirinden ayırt edebilir.
+
+613
+02:04:47,755 --> 02:04:50,715
+O zaman bununla ilgili bir kısıt söylemiyor istek.
+
+614
+02:04:51,123 --> 02:05:02,283
+Yani böyle bir nitelik grubu, herhangi bir nitelik grubu, buradaki bütün varlıkları birbirinden ayırt ediyor ise ona süper key diyoruz.
+
+615
+02:05:02,283 --> 02:05:17,664
+Süper key. Ancak burada bu süper key dediğim şey hiçbir özalt kümesi süper anahtar değil ise, yani bu süper key minimar bir süper key ise,
+
+616
+02:05:18,164 --> 02:05:24,903
+Yani o nitelik grubundan herhangi bir nitelik çıkardığım zaman anahtarı olma özelliğini kaybediyor ise.
+
+617
+02:05:25,492 --> 02:05:31,532
+Bakın, tanımlar gene hem basit hem de örneklendirmeye kalktığımız zaman zorlaşacak.
+
+618
+02:05:31,711 --> 02:05:33,932
+Yani işte dediğim gibi böyle bir gene bir sınır var.
+
+619
+02:05:34,351 --> 02:05:37,532
+Gene basit gibi ama dikkat gerektiriyor.
+
+620
+02:05:37,532 --> 02:05:39,252
+Ne dedik şimdiye kadar?
+
+621
+02:05:39,630 --> 02:05:41,291
+Herhangi bir şekilde bir kısıt yok bakın.
+
+622
+02:05:41,671 --> 02:05:48,630
+Bir nitelik grubu, bir varlık setini biricik olarak tanımlıyor ise buna süper key diyoruz.
+
+623
+02:05:49,300 --> 02:06:06,659
+Şimdi kısıt koyacağım. O nitelik grubu minimal ise, yani o nitelik grubundan ben bir nitelik çıkardığım zaman anahtar olma özelliğini kaybediyor ise, demek ki minimalmiş, o zaman aday anahtar diyoruz. O zaman aday anahtar minimal striker olmuş oluyor.
+
+624
+02:06:08,600 --> 02:06:10,959
+Bundan sonra diğer bir tanım daha yapacağız.
+
+625
+02:06:12,403 --> 02:06:23,684
+primary key, candidate key den çok farklı değil esasında. Candidate keyler çok sayıda olabilir. Onlardan bir tanesinin seçilmesi manasında.
+
+626
+02:06:24,023 --> 02:06:33,842
+Şimdi bu konu olayın, ilişkisel modelin biraz teorisine veya normalizasyona bakıyor. Onu haftaya veya daha sonraki derslerde göreceğiz.
+
+627
+02:06:34,962 --> 02:06:45,483
+Olayın o kısmı birazdan notasyon gerektiriyor ama kavram olarak bunları söyleyebiliriz. Burada herhangi bir sorusu olan var mı? Örnekler de daha iyi açığa çıkacak.
+
+628
+02:06:45,483 --> 02:06:54,923
+Şimdi bunu niye burada söyledik? Çünkü sayıf varlık kümesinde bir tanım geçecek o da. Bir varlık kümesinde anahtar bulunamıyor ise,
+
+629
+02:06:55,667 --> 02:07:10,128
+Yani bütün nitelikler bir arada olsa da anahtar olmuyorsa anasını. Ne dedik? Genelde o varlık seti içerisinde ben bir anahtar arıyorsam, bütün niteliklerin bir araya gelmesiyle zaten bir anahtar olacak.
+
+630
+02:07:10,346 --> 02:07:17,667
+Çünkü varlık setimiz birbirine ayırt edilebilen diye tanımladık. Ama birbirinden ayırt edilemiyor ise...
+
+631
+02:07:18,003 --> 02:07:26,664
+O zaman o varlık setimiz zayıf varlık kümesi olacak. Tam varlık olmadı ama ben onları varlık da etmek istiyorum. Varlık kümesi olmasını istiyorum yani.
+
+632
+02:07:27,412 --> 02:07:49,572
+İşte o zaman buna zayıf varlık kümesi diyeceğiz. Bunu da çift çizgi ve dörtgen, çift çizgili dörtgen olarak ifade edeceğiz. Ve bu zayıf varlık kümesinin mutlaka güçlü bir varlık ile bağlantı içerisinde olması lazım. Ya bire birlik ya da bire enlik tipte. Bir ve enin yönlerini birazdan göreceğiz.
+
+633
+02:07:51,412 --> 02:08:11,371
+En olan taraf zayıf varlıkta, bir olan taraf güçlü varlıkta olacak şekilde var olma bağımlı diyeceğiz buna da var olma bağımlı. Çünkü o zayıf varlık tek başına o varlıkları birbirinden ayırt edemediğim için oradaki varlıkların her biri mutlaka güçlü bir varlıkla bağıntı içerisinde olmalı.
+
+634
+02:08:14,290 --> 02:08:23,251
+Peki, zayıf varlık kümesindeki varlıkları nasıl ayırt edeceğim? Tek başlarına onları ayırt edemedik ama aynı güçlü varlık içerisinde.
+
+635
+02:08:23,647 --> 02:08:30,106
+Yani bağlı oldukları bir güçlü varlığın altında onları ayırt edildikleriyle tanımlamamız gerekiyor.
+
+636
+02:08:30,106 --> 02:08:38,686
+Evet, bütün tanım böyle. Kavramlar böyle. Şimdi bunlar tabii biraz havada kaldı. Şimdi biraz daha örneklerle bunu ayakları yere bassın.
+
+637
+02:08:39,208 --> 02:08:48,387
+Burada mesela bir zayıf varlık görüyoruz. Zayıf varlık kümesi. Burada da güçlü bir varlık. İlk olarak bu ne demek?
+
+638
+02:08:51,647 --> 02:09:04,208
+İsteliklerle beraber lise isimleri, burada bir tane isim niteliği var. Yani benim bu tasarımın da bir tek isim olmasını istiyorum. Öğrencinin bir tek numarası olmasını istiyorum. Başka bir şey istemiyorum. Böyle bir tasarım.
+
+639
+02:09:04,208 --> 02:09:15,606
+Şimdi burada, bu da benim Türkiye'deki liseler. Bu liselerin ismi, hepsi birbirinden farklı. Farklı olması mümkün.
+
+640
+02:09:15,918 --> 02:09:37,280
+Farklı olmasını garanti ediyorum. Ama öğrenci isimleri birbirinden farklı değil. Bu gerçekten de böyle. Yani hani lise isimleri tamam, her bir lise ismini farklı kılabiliriz. Bu nitelik tek başına benim bu varlık setini güçlü kılmam için yeterli olabilir.
+
+641
+02:09:38,355 --> 02:09:57,656
+Yeterli olabilir. Ama öğrenciler için aynı numaralandırma kullanılabilir farklı liselerde. Ne demek? Aynı numara farklı liselerde kullanılabiliyor olabilir.
+
+642
+02:10:00,500 --> 02:10:12,200
+Öyle olunca, o zaman bütün öğrencilerin olduğu, yani Türkiye'deki bütün lise öğrencilerinin olduğu bu tabloda, çok büyük bir tablo, aynı numaralar olacak.
+
+643
+02:10:13,000 --> 02:10:19,040
+O zaman bu numara bizim şeyi öğrencilere ayırt etmek için yeterli olmadı.
+
+644
+02:10:19,960 --> 02:10:21,920
+İşte o zaman buna zayıf dedik.
+
+645
+02:10:22,192 --> 02:10:32,192
+İşte o yüzden bu zayıf varlığın bağlı olduğu güçlü bir varlık olarak bu lise tablosu karşıma çıktı.
+
+646
+02:10:33,620 --> 02:10:49,418
+Burada bunun belirleyici, var olma bağımlı bir bağıntı dedik. Esasında şu bağıntı, bu zayıf varlık için var olma bağımlı bir bağıntı. O yüzden bunu da çift çizgi çizmek lazım.
+
+647
+02:10:49,418 --> 02:11:01,360
+Yani burada tek çizgi çizilmiş, şuradaki gibi çift çizgi çizilmesi lazım. Burada da yanlış olmuş. O zaman ne oldu bakın, bir lise için.
+
+648
+02:11:01,620 --> 02:11:07,179
+Yani bir lise isminde, bir lise altında öğrenciler birbirinden farklı.
+
+649
+02:11:07,939 --> 02:11:10,679
+Bu ayırt edicilik onu ifade ediyor.
+
+650
+02:11:10,679 --> 02:11:15,399
+Ama farklı liselerde öğrenci numaraları aynı olabilir.
+
+651
+02:11:15,860 --> 02:11:17,418
+O yüzden zaten zayıf oldu bu.
+
+652
+02:11:18,259 --> 02:11:36,898
+Evet, buradaki mesele bu. Yani öğrenci numarası tek başına benim. Öğrenciyi ayırt ettik için yeterli olmadığı için bunu zayıf yaptım. Ve var olma bağımlı olduğu bir bağıntı üzerinden güçlü bir bağıntıya bunu tanımladık.
+
+653
+02:11:46,259 --> 02:12:11,519
+Hap etmiş olduk yani. Çünkü küçük dünyamızda ne dediler bize o küçük dünya için? Lise isimleri hepsi birbirinden farklı. Ama dediler ki öğrenci isimleri farklı değil. Farklı liselerde aynı numaralı öğrenciler olabilir dediler bize. O zaman bu bize bunu dedikleri için, küçük dünya böyle olduğu için bunu böyle tasarlamış olduk. Diğer bir örnek, bunu da yapalım sonra bir ara veririz.
+
+654
+02:12:15,570 --> 02:12:37,271
+Bir muhasebe diyelim, bir satış takibi yapılıyor. Satış formu içerisinde de, bunun daha büyük tasarımını birazdan göreceğiz, tam tasarımını göreceğiz, bunun bir kısmı var. Bu satış formu içerisinde de satırlar var, yani çizgiler, satırlar var. O her bir satırın içerisinde de alınan ürün olacak.
+
+655
+02:12:43,570 --> 02:13:02,191
+hükümesinde elbette satın numarası, unique olması, yani bu satınları biricik kılmasına yeterli olmayacaktır. Çünkü farklı sipariş formları içerisinde her birinde aynı satın numarası var. Yani birinci satır, ikinci satır diye devam ediyor.
+
+656
+02:13:11,570 --> 02:13:20,890
+satış formunda, bir tek satış formunda, bir tane satır numarası, UNIQ, yani birinci satır, ikinci satır, üçüncü satır, yani o şekilde devam ediyor.
+
+657
+02:13:21,451 --> 02:13:24,370
+Öyle olunca demek ki, bu zayıf varlığın,
+
+658
+02:13:25,587 --> 02:13:49,867
+var olma bağımlı olduğu güçlü varlık bu oldu. Bu satış formu içerisindeki satırlar. O satırların numaraları da her bir satış formu altında ayırt edici bir nitelik oldu. Yani bunlar biricik ama sadece o satış formu için biricik. Bütün satış formları için biricik değil.
+
+659
+02:13:50,272 --> 02:13:53,932
+Bu manayı bu kağıda böyle taşımış olduk.
+
+660
+02:13:54,832 --> 02:13:57,971
+Evet, sorusu olan yoksa bir ara bileceğim.
+
+661
+02:14:02,164 --> 02:14:07,363
+Evet, o zaman arkadaşlar buçukta görüşürüz inşallah.
