@@ -1,0 +1,4103 @@
+1
+00:00:05,171 --> 00:00:06,059
+Müzik
+
+2
+00:07:41,331 --> 00:07:42,552
+Oğuz Hocam, merhabalar.
+
+3
+00:07:47,187 --> 00:07:47,767
+Merhaba.
+
+4
+00:07:49,527 --> 00:07:51,228
+Beni ost yaparsanız.
+
+5
+00:07:52,327 --> 00:07:53,627
+Okeydir.
+
+6
+00:07:54,087 --> 00:07:54,947
+Teşekkür ediyorum.
+
+7
+00:08:12,148 --> 00:08:13,828
+Sesim geliyor değil mi? Bir sıkıntı yok.
+
+8
+00:08:15,308 --> 00:08:16,108
+Herhalde geliyor.
+
+9
+00:08:17,848 --> 00:08:20,328
+Hemen projekleri bağlayayım.
+
+10
+00:08:54,964 --> 00:08:56,344
+Okay, good morning everyone.
+
+11
+00:09:00,403 --> 00:09:07,403
+Are you ready? Okay. Do you remember what have you learned last week? Who remembers?
+
+12
+00:09:16,851 --> 00:09:20,432
+What have you talked about? What have you learned last week?
+
+13
+00:09:27,700 --> 00:09:30,340
+Language, okay, what else?
+
+14
+00:09:34,900 --> 00:09:37,780
+Final state missions, okay.
+
+15
+00:09:39,440 --> 00:09:40,780
+Do you remember what was it?
+
+16
+00:09:45,779 --> 00:09:56,899
+Do you want to say something? Finite automata. Okay. Very good. Okay. Let's begin. I think you can see it.
+
+17
+00:10:03,899 --> 00:10:06,299
+I'm sorry, just a few examples.
+
+18
+00:10:21,524 --> 00:10:24,524
+Bakın ne görüyorsunuz?
+
+19
+00:10:31,572 --> 00:10:33,192
+You can see it.
+
+20
+00:10:36,916 --> 00:10:39,236
+Determinize the Quinate State Machine.
+
+21
+00:10:39,236 --> 00:10:40,236
+Okay?
+
+22
+00:10:40,236 --> 00:10:41,236
+What was it?
+
+23
+00:10:41,236 --> 00:10:46,196
+It was a very simple machine, like a computer.
+
+24
+00:10:46,196 --> 00:10:47,196
+Okay?
+
+25
+00:10:47,196 --> 00:10:49,396
+But it has limited memory.
+
+26
+00:10:49,396 --> 00:10:50,396
+Okay?
+
+27
+00:10:50,396 --> 00:10:56,116
+In each step, you can only process just one symbol.
+
+28
+00:10:56,116 --> 00:10:57,116
+Okay?
+
+29
+00:10:57,116 --> 00:11:04,108
+Do you remember the terms alphabet, symbols, language, length of a string?
+
+30
+00:11:04,275 --> 00:11:06,275
+I hope you remember all of them.
+
+31
+00:11:06,275 --> 00:11:07,275
+Okay.
+
+32
+00:11:07,275 --> 00:11:09,275
+Now let's continue.
+
+33
+00:11:09,275 --> 00:11:14,275
+When you look at here, you'll see a very simple fine state machine.
+
+34
+00:11:14,275 --> 00:11:23,275
+And we said that last week, we can define a fine state machine with five tuples.
+
+35
+00:11:23,275 --> 00:11:25,275
+What were they?
+
+36
+00:11:25,275 --> 00:11:29,275
+One of them was the initial state, 5, 2, 0.
+
+37
+00:11:29,875 --> 00:11:40,355
+Another one is final state, like Q4. These are states and there were transitions between the states.
+
+38
+00:11:40,355 --> 00:11:51,035
+Okay. Now we will learn the extended transition function. Here you see the symbol delta here with a star.
+
+39
+00:11:52,035 --> 00:11:55,955
+It is a function and its input is
+
+40
+00:11:56,320 --> 00:12:01,320
+Sitesi ve Symbols.
+
+41
+00:12:18,580 --> 00:12:23,700
+Let's say that you are in Q0 and you get A and B as input.
+
+42
+00:12:24,160 --> 00:12:24,320
+Okay?
+
+43
+00:12:25,220 --> 00:12:37,540
+You are in Q0 here and when you get input A, the first input, the next state is Q1.
+
+44
+00:12:38,040 --> 00:12:42,519
+When you get B, the next state is Q2.
+
+45
+00:12:42,519 --> 00:12:42,980
+Okay?
+
+46
+00:12:43,988 --> 00:12:48,288
+This is called extended transition function, delta star.
+
+47
+00:12:48,288 --> 00:12:53,288
+Okay, you have a sequence of inputs.
+
+48
+00:12:54,528 --> 00:12:55,307
+Is it clear?
+
+49
+00:12:56,128 --> 00:12:57,128
+I think yes.
+
+50
+00:12:57,448 --> 00:12:59,208
+I think you remember it.
+
+51
+00:12:59,508 --> 00:13:00,908
+Let's look at this example.
+
+52
+00:13:02,268 --> 00:13:03,568
+This is the delta star.
+
+53
+00:13:03,688 --> 00:13:09,588
+The initial state is Q0 and the input string is ABBBAA.
+
+54
+00:13:10,868 --> 00:13:16,868
+Bu ilk A, ve bu ikinci A'ın Q5'ı çıkartır.
+
+55
+00:13:16,868 --> 00:13:20,868
+Ve bu ikinci A'ın Q5'ı çıkartır.
+
+56
+00:13:20,868 --> 00:13:28,868
+Bu, bu ikinci A'ın Q5'ı çıkartır.
+
+57
+00:13:28,868 --> 00:13:32,868
+Ve bu ikinci A'ın Q5'ı çıkartır.
+
+58
+00:13:36,115 --> 00:14:03,692
+Bu, bu
+
+59
+00:14:04,532 --> 00:14:29,092
+So, the set of strings that the automata accepts are called, for example, we say that this automata accepts this language. Do you remember, for example, last week we gave some examples. For example, the language that contains the strings that end with zero. Like this. Okay. So, let's get chat.
+
+60
+00:14:30,707 --> 00:14:34,467
+Hocam, slide dondu. Is it still frozen?
+
+61
+00:14:37,548 --> 00:14:38,407
+Herhalde değil, okay.
+
+62
+00:14:39,728 --> 00:14:47,248
+And then also we can say that it is, delta star is a walk of transitions.
+
+63
+00:14:47,508 --> 00:14:53,107
+For example, you go to state 1 to 2, then 3, okay?
+
+64
+00:14:54,627 --> 00:14:56,548
+And states may be repeated.
+
+65
+00:14:56,548 --> 00:14:58,315
+For example, if you...
+
+66
+00:14:58,580 --> 00:15:27,580
+İlk olarak,
+
+67
+00:15:26,611 --> 00:15:30,251
+It contains all the strings excepted by M.
+
+68
+00:15:31,771 --> 00:15:33,572
+I think it's okay.
+
+69
+00:15:38,611 --> 00:15:49,111
+Ok, let's say that we have a finite state machine, ok, and automate. And it is going to accept some strings and it is going to reject some strings.
+
+70
+00:15:49,111 --> 00:16:01,912
+For example, let's give this example. It's accepting the strings that end with zero, ok. We call it the language where the machine accepts.
+
+71
+00:16:07,028 --> 00:16:09,228
+Oops, oops, oops.
+
+72
+00:16:12,916 --> 00:16:14,656
+Hocam, slide aynı kaldı.
+
+73
+00:16:15,276 --> 00:16:20,616
+Hala mı kaldı? Pardon. Bir daha söyler misin?
+
+74
+00:16:23,936 --> 00:16:26,996
+Şu an devam, stop, stop share mı demiştin demin?
+
+75
+00:16:31,076 --> 00:16:34,516
+Tamam, şu an geldi değil mi slide? Arkadaşlar, çok özür diliyorum.
+
+76
+00:16:37,096 --> 00:16:39,476
+Şu an buradayız, ok? Respondayım.
+
+77
+00:16:40,687 --> 00:16:43,008
+Şimdi, bir hala ekleyip öneriyorum.
+
+78
+00:16:44,028 --> 00:16:47,048
+Sizin online öğrencilerden de görüyorsunuz?
+
+79
+00:16:47,467 --> 00:16:48,768
+Evet, evet.
+
+80
+00:16:49,187 --> 00:16:50,548
+Efendim, bir hala ekleyip,
+
+81
+00:16:56,851 --> 00:17:02,351
+Let's say that we have an automaton, okay?
+
+82
+00:17:11,231 --> 00:17:16,912
+Okay, let's say that this is the initial state, okay?
+
+83
+00:17:17,571 --> 00:17:19,951
+I'm going to draw, I'm drawing an automaton.
+
+84
+00:17:19,951 --> 00:17:22,412
+Let's say that this is zero.
+
+85
+00:17:23,539 --> 00:17:28,539
+A, B, B.
+
+86
+00:17:28,539 --> 00:17:30,539
+This is the initial state.
+
+87
+00:17:30,539 --> 00:17:37,539
+Let's say that 1, and this is 01.
+
+88
+00:17:37,539 --> 00:17:42,539
+And let's say that this is the accept state.
+
+89
+00:17:42,539 --> 00:17:46,539
+What does it accept?
+
+90
+00:17:46,539 --> 00:17:50,539
+When you look at this automaton, what does it accept?
+
+91
+00:17:51,188 --> 00:17:53,347
+0, 0, 0, 1.
+
+92
+00:17:54,548 --> 00:17:56,988
+Should it begin with 0 always?
+
+93
+00:17:57,827 --> 00:17:59,708
+But there is one here.
+
+94
+00:18:00,668 --> 00:18:04,228
+Does it accept 1, 0, 0, 1?
+
+95
+00:18:05,768 --> 00:18:07,568
+It accepts 0.
+
+96
+00:18:08,088 --> 00:18:08,468
+Okay.
+
+97
+00:18:09,568 --> 00:18:11,068
+It doesn't accept 1.
+
+98
+00:18:12,928 --> 00:18:13,847
+Okay.
+
+99
+00:18:13,847 --> 00:18:17,847
+It accepts the strings that include...
+
+100
+00:18:18,195 --> 00:18:25,955
+At least one zero. Okay? We call that the language of M. We can write it like this.
+
+101
+00:18:27,495 --> 00:18:42,635
+Is the language, let's say that W are the strings, where W includes at least one zero.
+
+102
+00:18:48,400 --> 00:18:49,400
+İlk olarak,
+
+103
+00:18:47,827 --> 00:19:11,500
+Bu, bu
+
+104
+00:19:15,508 --> 00:19:33,188
+Deterministik, it is deterministic. What does it mean? You know that you always get the same output with the same input. There is no surprise in a deterministic automata.
+
+105
+00:19:35,188 --> 00:19:38,508
+It is a deterministic automata.
+
+106
+00:19:39,059 --> 00:19:44,059
+Bu aynı input, aynı output.
+
+107
+00:19:47,059 --> 00:19:51,059
+Bu deterministik mesin değil.
+
+108
+00:20:05,523 --> 00:20:09,804
+Şimdi bunu clear yapmayalım.
+
+109
+00:20:11,864 --> 00:20:12,804
+Kapatalım.
+
+110
+00:20:17,236 --> 00:20:18,316
+Çifti kapatalım.
+
+111
+00:20:20,695 --> 00:20:26,996
+Bu screen'deyiz. Yeni NewShare diyeb, desktop'tan, değil hatta buradan devam edelim.
+
+112
+00:20:27,256 --> 00:20:28,796
+Okay, let's continue.
+
+113
+00:20:29,816 --> 00:20:35,316
+Okay, is that clear? This is the language, for example, that we give by drawing.
+
+114
+00:20:36,236 --> 00:20:43,396
+The language is all of the strings, or you can call words, that, and automated accents.
+
+115
+00:20:43,976 --> 00:20:44,115
+Okay?
+
+116
+00:20:44,884 --> 00:20:46,884
+Bu önemli bir şey.
+
+117
+00:21:12,276 --> 00:21:13,276
+Eşşş.
+
+118
+00:21:24,147 --> 00:21:33,268
+Okay, this means that this is the delta star functions. This is the input. You go to a number of states in order to get Q prime.
+
+119
+00:21:33,268 --> 00:21:46,867
+Okay. And this means if it is, for example, if F is a finite state, final state, you say that this string W is accepted.
+
+120
+00:21:48,387 --> 00:21:49,827
+If you end in a...
+
+121
+00:21:50,579 --> 00:21:57,740
+state, which is not a final state, we say that this string is rejected.
+
+122
+00:21:58,519 --> 00:21:58,779
+Okay?
+
+123
+00:21:59,740 --> 00:22:01,559
+And now look at some examples.
+
+124
+00:22:04,900 --> 00:22:07,480
+When you look at this, the first one, what do you see?
+
+125
+00:22:07,900 --> 00:22:09,380
+This is the initial case.
+
+126
+00:22:09,480 --> 00:22:13,500
+You get A and B, and there is no final state.
+
+127
+00:22:13,599 --> 00:22:14,360
+What does it mean?
+
+128
+00:22:14,740 --> 00:22:16,360
+It doesn't accept anything.
+
+129
+00:22:17,159 --> 00:22:17,440
+Okay?
+
+130
+00:22:18,195 --> 00:22:23,515
+So, the language of this machine is AMP.
+
+131
+00:22:24,295 --> 00:22:26,395
+When you look at here, what does it do?
+
+132
+00:22:26,815 --> 00:22:31,215
+It accepts all of the strings, including the AMP string.
+
+133
+00:22:31,335 --> 00:22:32,635
+Do you remember the AMP string?
+
+134
+00:22:35,215 --> 00:22:35,815
+Yeah.
+
+135
+00:22:36,435 --> 00:22:46,775
+So, if the input is an empty string, it will go to the Q0 and it will end and it is going to accept all of the A and B's.
+
+136
+00:22:47,335 --> 00:22:50,596
+Okay? Do you remember what does this sigma star mean?
+
+137
+00:22:51,975 --> 00:23:01,195
+It means all of the strings that can be generated with the symbols of that language.
+
+138
+00:23:01,195 --> 00:23:01,815
+Okay?
+
+139
+00:23:06,932 --> 00:23:08,532
+Okay, another one.
+
+140
+00:23:09,751 --> 00:23:10,972
+Then you look at here.
+
+141
+00:23:11,271 --> 00:23:12,432
+There are two states.
+
+142
+00:23:13,652 --> 00:23:17,731
+Q0 and I think it should be Q1.
+
+143
+00:23:18,012 --> 00:23:19,731
+Okay, there is a mistake here.
+
+144
+00:23:20,172 --> 00:23:21,392
+This should be Q1.
+
+145
+00:23:22,332 --> 00:23:26,771
+So, in the initial states, it accepts.
+
+146
+00:23:28,872 --> 00:23:30,231
+What does it accept?
+
+147
+00:23:30,231 --> 00:23:31,231
+Just the...
+
+148
+00:23:32,564 --> 00:23:39,224
+Empty symbol. Here it's shown with lambda, but it's better to show it with epsilon.
+
+149
+00:23:40,884 --> 00:23:47,423
+And for all of the inputs, including A and B, it is going to add in Q1.
+
+150
+00:23:50,023 --> 00:23:55,364
+So what does it accept? It accepts only the empty symbol.
+
+151
+00:23:57,680 --> 00:24:11,759
+For example, if you get AA, let's say that the input is AA. For the first A, you come to Q1, and for the second N, you will end in Q1.
+
+152
+00:24:11,759 --> 00:24:24,700
+So, this is not a final state, and it is going to reject AA. It is going to reject all of the strings except empty string.
+
+153
+00:24:27,380 --> 00:24:30,180
+Any questions? Siz anlıyor musunuz?
+
+154
+00:24:32,500 --> 00:24:32,900
+Okay.
+
+155
+00:24:34,580 --> 00:24:36,500
+Okay. Tamam gözler iyi.
+
+156
+00:24:37,700 --> 00:24:45,780
+Let's look at this example. What's happening here? Let's look. This is the initial state. Q0.
+
+157
+00:24:46,500 --> 00:24:52,580
+And if it gets a string beginning with A, it will go to Q1.
+
+158
+00:24:53,395 --> 00:24:56,155
+Otherwise, it will go to Q3.
+
+159
+00:24:58,016 --> 00:25:04,215
+So, is there any way to go end up with Q2 when you go to Q3?
+
+160
+00:25:04,735 --> 00:25:05,016
+No.
+
+161
+00:25:06,076 --> 00:25:16,516
+So, you can come to Q2 if and only if you got an A and B in the prefix of string.
+
+162
+00:25:16,516 --> 00:25:17,435
+Okay?
+
+163
+00:25:18,076 --> 00:25:19,915
+Then it accepts...
+
+164
+00:25:19,923 --> 00:25:26,163
+A and B's. So when you look at this machine, what do you see? What does it accept?
+
+165
+00:25:28,644 --> 00:25:39,443
+For example, does it accept empty string? No, because you come to Q0 and it is not the final state. Does it accept A?
+
+166
+00:25:40,915 --> 00:25:44,915
+Q1'ye gelip, Q3'ye gelip,
+
+167
+00:25:44,915 --> 00:25:49,915
+A'ya gelip, AB'ye gelip,
+
+168
+00:25:54,067 --> 00:26:19,288
+Okay. Oh, which is much more different. Look at it. Here the states are shown with 0, 0, 0, 0, 0, 1. Okay. It may be confusing, but it is an example taken from the internet. Instead of showing the states with the symbols of an alphabet, just use other letters. Okay. For example, in this example.
+
+169
+00:26:20,627 --> 00:26:27,627
+Instead of writing 0, 0, 0, just...
+
+170
+00:26:33,779 --> 00:26:59,000
+Let's write A instead of 0, write B instead of 0, 0, okay? Because you may be confused. Let's look at this example. Does it accept empty string? No. So let's look at what does it accept? It accept the strings begin with 0, 0, 1. Okay, this is the first one, 0, 0, 1.
+
+171
+00:26:59,539 --> 00:27:04,900
+Let's look at another example. 01001.
+
+172
+00:27:07,379 --> 00:27:12,799
+Look at the example. 01001.
+
+173
+00:27:12,799 --> 00:27:16,299
+Or it accepts. Look at this example.
+
+174
+00:27:17,319 --> 00:27:22,700
+1, 0, 0, 0, 0, 0, 0, 1.
+
+175
+00:27:23,879 --> 00:27:24,680
+And.
+
+176
+00:27:25,332 --> 00:27:28,812
+There can be much more 1 and 0's in the n.
+
+177
+00:27:29,352 --> 00:27:30,672
+So what does it accept?
+
+178
+00:27:36,180 --> 00:27:44,740
+Burada, bu adı sadece stringin 0, 0, 1'in it.
+
+179
+00:27:44,740 --> 00:27:51,860
+Bu adı, suffix, or adı, orijinal bir adı.
+
+180
+00:27:51,860 --> 00:27:53,460
+Bu adı, bu adı, değil.
+
+181
+00:28:06,708 --> 00:28:22,708
+Bunun arasında bir, ha, evet, tamam. Şimdi, do you understand this one? Okay, now I'm going to show you. Sometimes it asks you, for example, here the example is,
+
+182
+00:28:22,900 --> 00:28:52,200
+bu
+
+183
+00:28:48,852 --> 00:28:54,451
+Binary string, string, that doesn't contain 001.
+
+184
+00:28:56,251 --> 00:28:58,652
+Ok, this is the automaton that
+
+185
+00:29:00,451 --> 00:29:04,652
+Find the strings, find the except strings containing 001.
+
+186
+00:29:04,652 --> 00:29:10,852
+But in order to design an automaton that doesn't accept 001,
+
+187
+00:29:10,852 --> 00:29:13,451
+what should you do? Any ideas?
+
+188
+00:29:27,347 --> 00:29:34,347
+Evet, ne yapacağız?
+
+189
+00:29:34,347 --> 00:29:45,347
+Bu örneğin, bu örneğin, bu örneğin, tahtadakini de göstereceğim. Sonra burada tekrar göstereceğim.
+
+190
+00:29:48,180 --> 00:30:14,220
+Bu, bu
+
+191
+00:30:14,836 --> 00:30:26,655
+What I am doing is, the initial state is going to be the final state, like this, okay, this is the final state, and this is going to be the initial state.
+
+192
+00:30:26,655 --> 00:30:39,775
+So, let's draw it, oops, oops, oops, one, this is zero, and this is the final state.
+
+193
+00:30:42,228 --> 00:30:43,387
+Çok güzel çiziyorum.
+
+194
+00:30:44,748 --> 00:30:46,208
+A, B, B.
+
+195
+00:30:46,728 --> 00:30:48,208
+Can you look at it? What do you see?
+
+196
+00:30:53,364 --> 00:30:57,259
+Why you look at this green automaton? What do you see?
+
+197
+00:31:00,339 --> 00:31:24,299
+İlk adet verilmiştir.
+
+198
+00:31:24,339 --> 00:31:30,499
+final state ve final state ve final state ve initial state.
+
+199
+00:31:30,499 --> 00:31:35,299
+So, let's stop share and I'm going to share my screen again.
+
+200
+00:31:35,299 --> 00:31:38,299
+So, oops, okay.
+
+201
+00:31:38,299 --> 00:31:44,379
+This is the automaton that it contains binary strings containing 001.
+
+202
+00:31:44,379 --> 00:31:47,379
+Okay, now let's go to the next slide.
+
+203
+00:31:47,379 --> 00:31:49,499
+What, when you look at it?
+
+204
+00:31:50,324 --> 00:32:17,804
+Bu, bu
+
+205
+00:32:18,163 --> 00:32:23,983
+And it accepts all others three, as you see. There are three final states.
+
+206
+00:32:29,124 --> 00:32:31,463
+Burada değiştirdik initial state'i.
+
+207
+00:32:32,463 --> 00:32:39,683
+Burada initial state'i değiştirdik. Bak, öncekinde böyleydi. Sonra final state yaptık.
+
+208
+00:32:41,003 --> 00:32:41,564
+Bir daha söyle.
+
+209
+00:32:47,028 --> 00:32:50,648
+İnanız, İnanız oldu. Tardır, doğalansız, etkili.
+
+210
+00:32:51,148 --> 00:32:53,148
+Faydalı yapıp, aykılık, onları söylüyor.
+
+211
+00:32:54,528 --> 00:33:01,088
+Haa, okey, okey, okey. Pardon. O anlayı, söylediğim o anlamda yanlış anlaşılabilir. Okey. Tamam, düzeltiyorum.
+
+212
+00:33:01,875 --> 00:33:18,836
+Final olmayanları Final State yapıyoruz. Diğerlerini Final State olmayan yapıyoruz. Tamam, Initial yapmıyoruz. Zaten şöyle bir sıkıntı olur. Yani söylediğim şuradan yanlış olduğunu anlamanız lazım. Bir tane Initial State'imiz olabilir. Tamam mı? Ama birden fazla Final State'imiz olabilir.
+
+213
+00:33:18,836 --> 00:33:23,155
+Thank you for the correction. Let's look at this example.
+
+214
+00:33:24,435 --> 00:33:50,235
+What does it accept? Let's get the final state. Final state is here. So it accept the strings. It begins with A. And then it can take many B's and A and A again. So it should begin and end with A. Okay? But
+
+215
+00:33:50,836 --> 00:33:55,836
+İndirmeyenin adıları, B's var.
+
+216
+00:33:55,836 --> 00:33:57,836
+Bu bir şey var.
+
+217
+00:33:57,836 --> 00:34:04,836
+Bu örneğin, ABA'ya.
+
+218
+00:34:04,836 --> 00:34:10,836
+Bu anlamda, A's başlarında,
+
+219
+00:34:15,476 --> 00:34:18,596
+That includes many A's and B's.
+
+220
+00:34:19,016 --> 00:34:23,695
+But the first and last symbols are A.
+
+221
+00:34:31,603 --> 00:34:40,223
+İntial state, if the first symbol is B, you can never come to the final state.
+
+222
+00:34:40,223 --> 00:34:43,603
+So, the initial symbol should be A.
+
+223
+00:34:44,384 --> 00:34:52,623
+When you look at the final state, in order to come here, the last symbol should be A.
+
+224
+00:34:53,076 --> 00:34:55,456
+And also it can be A here.
+
+225
+00:34:56,056 --> 00:34:56,195
+Okay.
+
+226
+00:34:56,536 --> 00:34:59,275
+So it begins and ends with A.
+
+227
+00:34:59,695 --> 00:35:03,855
+But here there can be many A's and A's like this.
+
+228
+00:35:05,235 --> 00:35:05,836
+Okay.
+
+229
+00:35:09,972 --> 00:35:10,492
+So,
+
+230
+00:35:14,291 --> 00:35:17,931
+Bu, bu, ok.
+
+231
+00:35:20,211 --> 00:35:23,211
+Ve bu, last week,
+
+232
+00:35:23,731 --> 00:35:26,251
+ve bu,
+
+233
+00:35:26,251 --> 00:35:27,371
+bu,
+
+234
+00:35:27,371 --> 00:35:29,331
+regular languages.
+
+235
+00:35:30,572 --> 00:35:31,451
+Bu,
+
+236
+00:35:31,451 --> 00:35:34,011
+if a deterministik
+
+237
+00:35:34,731 --> 00:35:35,971
+state machine
+
+238
+00:35:35,971 --> 00:35:38,132
+accepts a language,
+
+239
+00:35:38,132 --> 00:35:39,891
+if you can design a
+
+240
+00:35:39,891 --> 00:35:41,491
+finite state machine,
+
+241
+00:35:42,420 --> 00:35:50,180
+...that accepts a language, then we call that language as a regular language.
+
+242
+00:35:50,880 --> 00:35:51,119
+Okay?
+
+243
+00:35:51,740 --> 00:35:55,579
+For example, here you see a language which is not regular.
+
+244
+00:35:57,039 --> 00:35:57,360
+Okay?
+
+245
+00:35:58,559 --> 00:36:00,380
+What is the problem here?
+
+246
+00:36:00,380 --> 00:36:07,380
+It says that there is a language and it accepts strings containing...
+
+247
+00:36:08,724 --> 00:36:14,944
+A, B, A, A, B, B, 3 A's and 3 B's.
+
+248
+00:36:15,364 --> 00:36:15,524
+Okay?
+
+249
+00:36:16,503 --> 00:36:23,003
+If you try to design an automata for this string, you cannot be successful.
+
+250
+00:36:23,164 --> 00:36:23,423
+Why?
+
+251
+00:36:24,344 --> 00:36:26,404
+Because there is a term N.
+
+252
+00:36:27,564 --> 00:36:27,884
+Okay?
+
+253
+00:36:28,784 --> 00:36:32,864
+And we don't have memory to store the value of N.
+
+254
+00:36:34,931 --> 00:36:45,971
+So, you cannot, and nobody can, design and automate them to accept A over N, B over N.
+
+255
+00:36:45,971 --> 00:37:00,231
+Okay? So, this language is not a regular language. Okay? This language, L, that contains the strings A over N, B over N, is not a regular language. Okay?
+
+256
+00:37:05,012 --> 00:37:05,771
+Bir daha söyle.
+
+257
+00:37:07,312 --> 00:37:08,432
+Can you give an example?
+
+258
+00:37:12,352 --> 00:37:15,712
+Regular olmayan dil için mi? İşte bu. A üzeri B üzeri B.
+
+259
+00:37:17,811 --> 00:37:45,811
+Şöyle örnekler söyleyebiliriz. Diyelim ki C'de olsun yine A üzeri N, C, B üzeri N. Yani hafızada bir şey tutmam gerekiyorsa, tamam mı? Bu tarz diller regular değil. Mesela ne yapacağız? Bunun için pushdown automata göreceğiz. O da hafıza olarak stack kullanacağız. Tamam mı? Daha bunu göreceğiz birkaç hafta sonra. Mesela bir stack yardımcı hafıza yapısıyla bunu çözebiliyor olacağız. O tarz bir diller.
+
+260
+00:37:45,811 --> 00:37:51,811
+regular language değiller.
+
+261
+00:38:02,452 --> 00:38:14,932
+Pilot automata aslında nerede kullanılıyor? Yine günümüz compiler'larında kullanılıyor. Yani günümüz compiler'larının temeli buna dayanıyor.
+
+262
+00:38:14,932 --> 00:38:20,692
+Ama Lex, Lex ve Yak var. Bir tanesi Lexical Analyzer yapıyor.
+
+263
+00:38:21,556 --> 00:38:32,135
+Bir de yak dediğimiz şey de aslında Unix komutu ama compiler'da sizin yazdığınız kod ne kadar doğru ona bakıyor. Onların temeli buraya dayanıyor.
+
+264
+00:38:37,556 --> 00:38:53,395
+Asansörlerle de artık çok kullanılmıyor. Artık şeyler ucuz, daha çok kullanılıyordu da, şeylerden ne denir, daha hafıza içeren kartlar daha ucuzladığı için artık çok kullanılmıyor ama mesela eskide şeyler var.
+
+265
+00:38:54,867 --> 00:39:14,867
+Printer demeyeyim de, o tarz şeyler var, onlar da falan da hani bu şey kullanılmış. Ama bakın Türkçeye döndük ama dinleyin. Şimdi bunlar şey değil, şöyle düşünün. Bunlar teorik olarak ortaya çıktığı zaman ortada bilgisayar falan yok. Tamam mı? Bunlar ta bilgisayarın teorik temelleri. Tamam mı?
+
+266
+00:39:19,027 --> 00:39:29,527
+deterministic finance otomata ve non-deterministic. Sonra bir üst seviye dillere geçeceğiz, pushdown automata göreceğiz. Sonra onun da bir üst seviyesi Turing machine.
+
+267
+00:39:30,771 --> 00:39:51,711
+Turing machine'de hafızamız var. Yine çok ilkel bir makine. O gün için soyut bir makine. Ama YouTube'a Turing machine yazarsanız mesela onu bir hardware ile implement eden şeyler görebilirsiniz. Tamam mı? Hani onu şu an yapabiliriz. Ama günümüzdeki olay şurada kopuyor.
+
+268
+00:39:52,403 --> 00:40:00,844
+Var olan bütün algoritmaları, bütün algoritmaları bir Turing machine üzerinde implement edebilirsin.
+
+269
+00:40:00,844 --> 00:40:02,844
+Yani işte bu...
+
+270
+00:40:02,900 --> 00:40:23,460
+Alan Turing'in teorisinin güçlü tarafı o. Ne? Şunu ispatlamış oluyor. Burada kısıtlanıyoruz, kısıtlanıyoruz ya hafızamız yok. Turing machine de şöyle bir şey olacak. Var olan bütün algoritmaların Turing machine üzerinde implement edilebileceği teorik olarak kanıtlanmış.
+
+271
+00:40:27,476 --> 00:40:54,956
+Tamam, algoritmalar gelişecek, gelişecek. O zaman yani graph, tree hiçbir şey yok. Hani var olan büyük bir algoritmaları düşünün. O yüzden önemli bir şey. Bu da aslında ne? Bir bakıma algoritma kurmayla ilgili. Şimdi şöyle bir şey yapmaya çalışın mutlaka. Çalışma soruları koyacağız. Ödev değil, sadece çalışın diye. Kitabın arkasındaki sorulara da bakın. Bunlara bir bakın. Sonra kendiniz bunları mutlaka çizmeye çalışın.
+
+272
+00:40:55,603 --> 00:41:02,423
+Tamam. Algoritmik düşünme yeteneğinizi, analitik düşünme yeteneğinizi çok geliştirir. Tamam.
+
+273
+00:41:04,583 --> 00:41:16,603
+Soru neydi, nereye geldim? Okey. This is the end of our chapter. Let's close it and I'm going to share it again.
+
+274
+00:41:17,863 --> 00:41:22,643
+Tabii ki bulabilirsem. Bir de saat söyler misiniz bana ya? Tamam, süper.
+
+275
+00:41:24,436 --> 00:41:25,756
+Doğru slide mi?
+
+276
+00:41:28,716 --> 00:41:30,815
+Şunun içine kanı bir paylaştım da.
+
+277
+00:41:33,815 --> 00:41:38,615
+Yok ya, özür dileyerek söylüyorum ki paylaşmadım, unuttum. Hemen paylaşırım.
+
+278
+00:41:39,076 --> 00:41:43,436
+Bu ana kadar gördüğümüz geçen haftanın devam slide'larıydı. Şimdi yeni slide'a geçiyorum.
+
+279
+00:41:43,436 --> 00:41:51,615
+Now, the things that we have learned until now is about deterministic finance automation.
+
+280
+00:41:52,148 --> 00:41:54,347
+So, what does deterministic mean?
+
+281
+00:41:56,748 --> 00:41:59,788
+Let's make it, I'm going to share again the whiteboard.
+
+282
+00:42:13,172 --> 00:42:15,091
+What does deterministic mean?
+
+283
+00:42:20,148 --> 00:42:26,148
+Can you look at N? This is a deterministic automata. What does it mean?
+
+284
+00:42:26,148 --> 00:42:29,068
+Nereye gitti?
+
+285
+00:42:29,068 --> 00:42:30,788
+Bokum.
+
+286
+00:42:34,748 --> 00:42:36,908
+Sparkboard'um gitti. Bir dakika bekleyin.
+
+287
+00:42:37,748 --> 00:42:39,068
+Çok hocalamayayım.
+
+288
+00:42:43,668 --> 00:42:46,208
+Mikeboard'ım geri geldi. Bunu da açtık.
+
+289
+00:42:46,628 --> 00:42:50,908
+Okay, when you look at here, this is a deterministic automata.
+
+290
+00:42:51,528 --> 00:42:54,507
+So, what does the word deterministic mean?
+
+291
+00:42:55,568 --> 00:42:56,927
+In Turkish, what does it mean?
+
+292
+00:43:02,507 --> 00:43:03,228
+Nedensel.
+
+293
+00:43:04,507 --> 00:43:04,827
+Okay.
+
+294
+00:43:06,188 --> 00:43:06,827
+Kararlı.
+
+295
+00:43:07,448 --> 00:43:07,768
+Okay.
+
+296
+00:43:08,708 --> 00:43:10,788
+I think the word kararlı is much more.
+
+297
+00:43:12,275 --> 00:43:23,275
+So, it means that when you give, we said that if you have an input, specific input from the same machine, you always get the same output.
+
+298
+00:43:24,015 --> 00:43:24,155
+Okay?
+
+299
+00:43:24,935 --> 00:43:27,215
+So, it is deterministic.
+
+300
+00:43:28,295 --> 00:43:33,155
+And given the current state, if I give you the current state,
+
+301
+00:43:33,556 --> 00:43:40,556
+ve ikinci input veriyorlar, süreçte de ne kadar bir şey var.
+
+302
+00:43:40,556 --> 00:43:48,556
+Ve sadece bir şey var.
+
+303
+00:44:00,255 --> 00:44:02,135
+B in state, B.
+
+304
+00:44:04,576 --> 00:44:12,596
+For the specific inputs and states, you will always go to the specific state.
+
+305
+00:44:13,076 --> 00:44:18,315
+There is no surprise, there is no choices, there is no randomness.
+
+306
+00:44:19,996 --> 00:44:24,175
+And it is simple and easy to design.
+
+307
+00:44:24,175 --> 00:44:27,175
+And when you look at the non-deterministic,
+
+308
+00:44:31,764 --> 00:44:34,624
+Non-deterministic machines.
+
+309
+00:44:35,543 --> 00:44:35,864
+So,
+
+310
+00:44:40,884 --> 00:44:43,884
+Bu da
+
+311
+00:44:55,539 --> 00:45:05,940
+Okay. And next state can be chosen randomly.
+
+312
+00:45:19,347 --> 00:45:24,887
+All next states can be in parallel.
+
+313
+00:45:25,288 --> 00:45:26,387
+Okay, let's write like this.
+
+314
+00:45:26,427 --> 00:45:27,547
+So what does it mean?
+
+315
+00:45:32,980 --> 00:45:38,139
+Şimdi, yeteni konuşturacağım.
+
+316
+00:45:39,939 --> 00:45:43,059
+Şimdi güzel bir nondeterministik mesin çizmek için.
+
+317
+00:45:44,659 --> 00:45:45,159
+Okay.
+
+318
+00:45:46,779 --> 00:45:47,659
+Let's say that
+
+319
+00:45:49,659 --> 00:45:50,659
+this is A.
+
+320
+00:45:53,139 --> 00:45:54,859
+Okay, this is one state.
+
+321
+00:45:55,579 --> 00:45:59,300
+So, with input 0, it can go to A.
+
+322
+00:45:59,460 --> 00:46:00,460
+Okay, no problem.
+
+323
+00:46:00,916 --> 00:46:08,296
+B'ye bir input, 1'ye bir input.
+
+324
+00:46:08,296 --> 00:46:13,856
+C'ye bir 0'ye bir input.
+
+325
+00:46:13,856 --> 00:46:18,496
+Yine bir input, 1'ye bir input.
+
+326
+00:46:18,496 --> 00:46:22,036
+Ve bir input, 1'ye bir input.
+
+327
+00:46:22,036 --> 00:46:28,396
+Yine bir input, 1'ye bir input.
+
+328
+00:46:31,923 --> 00:46:34,423
+Bu, non-deterministic machine.
+
+329
+00:46:35,463 --> 00:46:37,083
+So, what are the differences?
+
+330
+00:46:37,784 --> 00:46:39,184
+Please look at the board.
+
+331
+00:46:40,184 --> 00:46:48,784
+In a deterministic machine, each state can have transitions as the number of symbols.
+
+332
+00:46:59,188 --> 00:47:01,368
+0, 0, 1. Ok?
+
+333
+00:47:01,908 --> 00:47:04,348
+But for non-deterministic machines,
+
+334
+00:47:05,228 --> 00:47:10,388
+there is 0 here. Also, there is 0 here.
+
+335
+00:47:11,408 --> 00:47:22,188
+By taking the input symbol 0, it can stay in state A or it can go to state 0. Ok?
+
+336
+00:47:26,387 --> 00:47:34,827
+For example, with one, it can go to B or it can go to D.
+
+337
+00:47:36,588 --> 00:47:40,788
+And this is the most important part, which is epsilon.
+
+338
+00:47:41,508 --> 00:47:44,468
+What is epsilon in the directory?
+
+339
+00:47:45,468 --> 00:47:47,688
+It is empty symbol.
+
+340
+00:47:50,568 --> 00:47:51,668
+Empty symbol.
+
+341
+00:47:51,668 --> 00:47:52,968
+What does it mean?
+
+342
+00:47:57,684 --> 00:48:03,104
+Without taking any input, it can go to E.
+
+343
+00:48:03,943 --> 00:48:04,244
+Okay?
+
+344
+00:48:04,744 --> 00:48:06,423
+Look, it doesn't take any input.
+
+345
+00:48:10,579 --> 00:48:20,579
+Bu, bu bir nöndeterministik automata.
+
+346
+00:48:20,579 --> 00:48:24,579
+Ve bu, ilerlerine farklı next states var.
+
+347
+00:48:24,579 --> 00:48:31,579
+Eks. Bu, A ve C'ye next states var.
+
+348
+00:48:31,579 --> 00:48:35,579
+A ve C'ye next states var.
+
+349
+00:48:36,275 --> 00:48:41,455
+Next state can be choosing randomly. It can go to A or C for input 0.
+
+350
+00:48:43,095 --> 00:48:48,795
+And when you look at this machine, how can you understand what does it do?
+
+351
+00:48:50,675 --> 00:48:55,035
+You should look all of the states.
+
+352
+00:48:56,563 --> 00:49:01,063
+Bazen bir şey gibi bir şey düşünceleriz.
+
+353
+00:49:01,063 --> 00:49:05,063
+Mesela biraz daha başka bir şey daha güzel bir şey.
+
+354
+00:49:05,063 --> 00:49:07,063
+Tamam, bir de bir şey.
+
+355
+00:49:07,063 --> 00:49:09,063
+Öncelikle bir şey.
+
+356
+00:49:13,043 --> 00:49:15,963
+Non-deterministic finite automata.
+
+357
+00:49:17,503 --> 00:49:20,703
+So, when you look at the formal definition,
+
+358
+00:49:27,572 --> 00:49:30,291
+İmputs are, the inputs are very similar.
+
+359
+00:49:31,552 --> 00:49:35,371
+The first input is Q.
+
+360
+00:49:35,791 --> 00:49:36,711
+What is Q?
+
+361
+00:49:37,592 --> 00:49:38,952
+The set of states.
+
+362
+00:49:39,492 --> 00:49:41,692
+It is the same in the deterministic machines.
+
+363
+00:49:42,311 --> 00:49:42,432
+Okay?
+
+364
+00:49:43,952 --> 00:49:46,972
+Sigma is the alphabet.
+
+365
+00:49:47,811 --> 00:49:48,851
+It is also same.
+
+366
+00:49:49,811 --> 00:49:50,972
+What is delta?
+
+367
+00:49:50,972 --> 00:49:53,552
+It is the transition function.
+
+368
+00:49:54,052 --> 00:49:55,564
+However, there is...
+
+369
+00:49:55,668 --> 00:50:00,588
+When you look at here, the transition function is different.
+
+370
+00:50:01,608 --> 00:50:05,668
+In deterministic machine, the transition function was like this.
+
+371
+00:50:07,088 --> 00:50:08,548
+2Q.
+
+372
+00:50:09,108 --> 00:50:10,088
+What does it mean?
+
+373
+00:50:10,168 --> 00:50:16,728
+You are in one state, you get a symbol from the alphabet and you go to the next state.
+
+374
+00:50:17,828 --> 00:50:18,068
+Okay?
+
+375
+00:50:19,288 --> 00:50:20,988
+This is for deterministic.
+
+376
+00:50:22,228 --> 00:50:30,327
+But here you see that in the transition function the output is 2 over Q.
+
+377
+00:50:31,327 --> 00:50:33,027
+Why it is 2 over Q?
+
+378
+00:50:41,235 --> 00:50:43,476
+Q is the state.
+
+379
+00:50:44,596 --> 00:50:46,755
+So, Q over 2, what does it mean?
+
+380
+00:50:48,135 --> 00:50:52,456
+All subsets of the states.
+
+381
+00:50:52,936 --> 00:50:53,215
+Okay?
+
+382
+00:50:53,795 --> 00:50:54,135
+Why?
+
+383
+00:50:54,235 --> 00:50:56,655
+Because it can go to any states.
+
+384
+00:50:57,795 --> 00:51:00,875
+For example, let's say that.
+
+385
+00:51:01,811 --> 00:51:09,371
+If you are in Q1, Q2, these are the symbols and also empty symbol, you can go anywhere, okay?
+
+386
+00:51:10,392 --> 00:51:11,632
+According to the mission.
+
+387
+00:51:12,892 --> 00:51:17,731
+And the initial state and the final and acceptance states are the same, okay?
+
+388
+00:51:17,731 --> 00:51:24,572
+The only difference with the deterministic and non-deterministic missions is in this part.
+
+389
+00:51:26,931 --> 00:51:30,511
+Şu slide'ı da anlatıp sizi biraz dinlendireceğim.
+
+390
+00:51:30,511 --> 00:51:30,811
+Okey?
+
+391
+00:51:33,971 --> 00:51:34,851
+İnşallah.
+
+392
+00:51:35,571 --> 00:51:35,851
+Geç.
+
+393
+00:51:42,228 --> 00:51:44,788
+Hoca silemedi, geçmedi.
+
+394
+00:51:45,828 --> 00:51:47,268
+Clear my drawings.
+
+395
+00:52:02,931 --> 00:52:26,672
+Tamam, tamam. Çocuklar, tamam, ara. İnsan şuraya bir patchdown şeyini koyar. Online arkadaşlar, kapatmıyorum. 10 dakika yeterli mi? Ara için 15 dakika mı? 15 dakika ara veriyoruz. 59.52 10.07'de görüşürüz, tamam.
+
+396
+00:52:33,108 --> 00:52:36,468
+Mikrofonu da kapatmıyorum, dedikoduları dinleyebilirsiniz ben yokken.
+
+397
+00:52:38,468 --> 00:52:40,108
+Sor sor, onlar da düşününler.
+
+398
+00:52:40,108 --> 00:52:42,068
+Hocam, şu da W'nin olay ne?
+
+399
+00:52:42,068 --> 00:52:45,108
+Şunun için ne şey yapmayalım, zaten mesleği çalışıyorum.
+
+400
+00:52:46,867 --> 00:52:53,108
+W'nin yoksa, A ile başlamış, A ile bitmiş, yine W diye bir şey var.
+
+401
+00:52:53,867 --> 00:52:56,048
+Kaç detkili, tamam mı? Şöyle düşünebilirsin.
+
+402
+00:52:56,608 --> 00:52:58,468
+W elemanıdır, A, B, S.
+
+403
+00:52:58,708 --> 00:52:59,768
+A, B, S ne demek?
+
+404
+00:53:00,500 --> 00:53:02,500
+A'dan B'den bir süreç olabilir.
+
+405
+00:53:02,500 --> 00:53:04,500
+Yani A, B, B, A olur.
+
+406
+00:53:04,500 --> 00:53:06,500
+A, A, A olur.
+
+407
+00:53:06,500 --> 00:53:08,500
+B, B, B. Şimdi
+
+408
+00:53:08,500 --> 00:53:10,500
+Buraya gelmemiz için bak. Başlarım ya.
+
+409
+00:53:14,835 --> 00:53:16,475
+Şikide geri, faen bir şey.
+
+410
+00:53:17,475 --> 00:53:18,395
+Ay, ne başlıyoruz.
+
+411
+00:53:25,043 --> 00:53:27,043
+B, bir sürü B, bir sürü B.
+
+412
+00:53:27,043 --> 00:53:33,003
+Sonra, tekrar A ile gelip, A'lar gelip, bu sürü ne?
+
+413
+00:53:36,211 --> 00:53:40,172
+A ile başlıyor. A ile bitiyor. Ortasında böyle bir tüntü var.
+
+414
+00:53:40,172 --> 00:53:41,963
+İstiklilik içinde de.
+
+415
+00:54:14,387 --> 00:54:34,748
+B, C, O. Tamam mı? Yani B, C olmasın da, su bir suik olsun. Tamam mı? Bu sadece AA'ları kabul eder ama bu da B'leri de yazman lazım ya. Tamam mı? Yani sonunca AA'yı ne kabul ediyor? B'de buraya gelmen lazım. Bu B'de hiç gidememen lazım.
+
+416
+00:54:38,068 --> 00:54:40,748
+Buraya gelmen için çok daha içim olmaz.
+
+417
+00:54:42,007 --> 00:54:46,347
+Sadece B'de buraya gidip, B'de buraya yapmayacağım. Tamam mı?
+
+418
+00:54:46,987 --> 00:54:48,188
+Ben de destek istiyorum.
+
+419
+00:54:49,628 --> 00:54:52,847
+B'de buraya geldin, her B'de de bu destek.
+
+420
+00:54:54,987 --> 00:54:56,748
+Sadece A'ları kabın.
+
+421
+00:55:03,027 --> 00:55:11,727
+Burada bir A olmamız lazım. Tamam mı? Başlangıçta doğrusu. İlk A'da buraya geldim. Sonda da şuraya geldim.
+
+422
+00:55:15,699 --> 00:55:30,099
+Şimdi araya istediğini işleyebilirsin. Yani şunu şöyle çizsek olur mu? Bak, fakat şurada kaçırır. AB'de buraya gitsem, sonra buraya gelsem, B'de de kendine dönsür desem. Bunun solunu ne olur ama biliyor musun? İki A'da çalışmamış.
+
+423
+00:55:32,000 --> 00:55:41,379
+Yani, bak, iki A gelince burada kalır. Bir A'da buraya geldi, ikinci A'da buraya geldi, iki A'da çalışmamış olur.
+
+424
+00:55:43,507 --> 00:56:10,327
+Biraz karışık, bunu daha basit çizebilir miyim? Çizebilirsin. Şöyle söyleyeyim. Bir dili tanıyabilecek, birden fazla meşin çizebilirsin. Yani mesela ben şu dili tanıyan bir meşin çizim dediğin zaman senin makinanlar, arkadaşının makinesi çok farklı olabilir, ikisi de doğru olabilir. Bu biraz karıştırmış anlayın diye. Tamam mı? Ama AA'da edin, şöyle bir şey olacak. AA.
+
+425
+00:56:12,244 --> 00:56:14,664
+Yani, diğer B'leri buraya atacağız.
+
+426
+00:56:15,043 --> 00:56:16,503
+Burada onu tekrar almayacak sorun.
+
+427
+00:56:16,624 --> 00:56:18,403
+Tabii, bu B'den zaten hiçbir yere gidemiyor.
+
+428
+00:56:20,923 --> 00:56:22,204
+Çok güzelmiş ya.
+
+429
+00:56:29,331 --> 00:56:29,692
+Tamam.
+
+430
+00:59:46,835 --> 00:59:47,955
+It's 10 hours.
+
+431
+01:06:24,052 --> 01:06:25,644
+DFA ve FNC
+
+432
+01:08:33,268 --> 01:08:35,127
+Merhabalar online'lar.
+
+433
+01:08:38,355 --> 01:08:39,015
+Kopatala.
+
+434
+01:08:50,963 --> 01:08:51,304
+Ok.
+
+435
+01:09:07,060 --> 01:09:12,060
+Önceler, non-deterministik final automata.
+
+436
+01:09:12,060 --> 01:09:18,060
+Önceler, it is a little bit similar to deterministik final automata.
+
+437
+01:09:18,060 --> 01:09:20,060
+However, there are some differences.
+
+438
+01:09:20,060 --> 01:09:22,060
+Önceler, we said that,
+
+439
+01:09:22,060 --> 01:09:26,060
+Önceler, where is the major difference here?
+
+440
+01:09:26,060 --> 01:09:30,060
+The major difference is in transhusion function.
+
+441
+01:09:30,060 --> 01:09:33,060
+Önceler, let's look at this part.
+
+442
+01:09:35,412 --> 01:09:39,792
+Let's say that we have an automaton.
+
+443
+01:09:40,952 --> 01:09:45,311
+And we have just two states.
+
+444
+01:09:45,971 --> 01:09:46,132
+Okay?
+
+445
+01:09:47,032 --> 01:09:49,971
+For example, A and B.
+
+446
+01:09:51,952 --> 01:09:53,471
+These are the states.
+
+447
+01:09:53,792 --> 01:09:53,952
+Okay?
+
+448
+01:09:55,252 --> 01:10:00,192
+In a deterministic machine, for example, let's say that
+
+449
+01:10:01,203 --> 01:10:03,764
+İput symboli 0 ve 1.
+
+450
+01:10:13,235 --> 01:10:17,275
+Niye böyle yamuk? Burada iyice yamuk gözüküyor. Önemli değil.
+
+451
+01:10:17,275 --> 01:10:24,956
+When you look at here, in a deterministic machine, A, B, 0 and 1.
+
+452
+01:10:25,456 --> 01:10:33,755
+For example, for state A, if the input is, input symbol is 0, it can go to A for example.
+
+453
+01:10:34,216 --> 01:10:36,376
+For 1, it can go to B.
+
+454
+01:10:40,307 --> 01:10:49,307
+A ve B.
+
+455
+01:10:49,307 --> 01:10:55,307
+A ve Q.
+
+456
+01:10:55,307 --> 01:11:01,307
+A ve A ve B.
+
+457
+01:11:01,307 --> 01:11:02,315
+A ve B.
+
+458
+01:11:04,627 --> 01:11:09,807
+It can go to both A and B with the same input.
+
+459
+01:11:10,927 --> 01:11:15,567
+Also, there is one more thing which is epsilon.
+
+460
+01:11:17,527 --> 01:11:21,727
+Okay, so this is the number of subsets.
+
+461
+01:11:23,327 --> 01:11:31,547
+Okay, for example, if you have two states A and B, this is the number of subsets which is 2 over 2.
+
+462
+01:11:32,015 --> 01:11:32,536
+Ok?
+
+463
+01:11:47,060 --> 01:12:13,036
+Şimdi, Türkçe'ye geçtim. Şurayı bir anlatayım. Bakın, fark, deterministik, kararlı demek. Her input için, yani her string için size aynı şeyi üretir. Tamam mı? Ama non-deterministik, kararsız. Aynı input için farklı farklı şeyleri ne yapabilir? Üretebilir. Bu nereden çıkıyor? Niye böyle bir şey var? Çünkü...
+
+464
+01:12:13,524 --> 01:12:22,064
+Şuraya çizdiğimiz gibi, bakın bu bir non-determinist şeyde, A sıfır alınca A'da da kalabilir, C'ye de gidebilir.
+
+465
+01:12:22,484 --> 01:12:32,224
+Tamam mı? A daha kendine hiç input gelmeden, epsilonla E'ye de gidebilir.
+
+466
+01:12:34,836 --> 01:12:44,416
+Bu işte ne yapıyor? Yani farklı input için yani aynı sıfırı aldığı zaman A'ya da gidebilir, C'ye de girebilir. Dolayısıyla farklı A kutlar üretiyor.
+
+467
+01:12:45,775 --> 01:12:55,836
+Şimdi niye böyle bir şey yapmışlar ki? Yani biraz saçma. Zaten bizim bir şeyimiz vardı değil mi? Güzel güzel çalıştırıyordu. Niye böyle bir şeye ihtiyaç var?
+
+468
+01:12:57,971 --> 01:13:24,231
+Çünkü birazdan göreceğiz. Birkaç tane örnek size çizdim. Kafanız da birazcık daha otursun. Mesela yine muhteşem çizim yeteneğimle çok güzel çizeceğim. Evet. A var. Hop. Çık oldu. Bu B. Ve final state.
+
+469
+01:13:25,876 --> 01:13:32,275
+Ve şöyle o, 0, 1 and it is 0.
+
+470
+01:13:35,176 --> 01:13:38,136
+Şimdi bakın burası çok önemli.
+
+471
+01:13:39,796 --> 01:13:46,136
+Ben size desem ki, bu bir deterministik midir, non-deterministik midir desem.
+
+472
+01:13:49,140 --> 01:14:08,819
+Non, niye biliyor musunuz? Çünkü deterministik olsa bakın A'dan 0 ve 1 çıkmış değil mi? Ama iki tane 0 var. Bir şey daha var, bakın B'den hiçbir şey çıkmamış. Deterministikte siz o tabloyu boş bırakamazsınız tamam mı? B, 0 ve 1 aldığı zaman nereye girecek yok.
+
+473
+01:14:10,260 --> 01:14:14,260
+Okey? Dolayısıyla bu bir non-deterministik.
+
+474
+01:14:15,091 --> 01:14:27,671
+finite automata. Yani buna ne diyebiliriz? Bu bir NFA diyebiliriz. Peki bu neyi bulur? Hangi stringleri bulur? Language ne?
+
+475
+01:14:31,412 --> 01:14:38,472
+Aynen öyle. Language A, except W, verb, W ends with zero.
+
+476
+01:14:55,731 --> 01:14:57,652
+Okay, I'm going to draw another one.
+
+477
+01:15:00,931 --> 01:15:05,851
+This is A, oops, E.
+
+478
+01:15:09,747 --> 01:15:11,435
+DFA
+
+479
+01:15:14,452 --> 01:15:15,792
+001
+
+480
+01:15:21,716 --> 01:15:23,636
+Which languages does it accept?
+
+481
+01:15:26,796 --> 01:15:28,796
+Is it an NFA or DFA?
+
+482
+01:15:31,676 --> 01:15:33,256
+Why is it an NFA?
+
+483
+01:15:37,844 --> 01:15:43,224
+Evet, çünkü A bir tane bir tane almak yok.
+
+484
+01:15:43,224 --> 01:15:47,743
+Ama ne olacak, ne olacak?
+
+485
+01:15:47,743 --> 01:15:51,663
+Ne olacak, ne olacak?
+
+486
+01:15:51,663 --> 01:15:54,344
+1, 0, 0.
+
+487
+01:15:54,344 --> 01:15:58,344
+A'ya almak ve ne olacak?
+
+488
+01:15:58,344 --> 01:16:02,344
+Aslında, bu bir tane almak var.
+
+489
+01:16:05,492 --> 01:16:07,492
+Bu bir şey gibi bir şey yapabilir.
+
+490
+01:16:07,492 --> 01:16:09,492
+Ve bu bir şey hiç geçer.
+
+491
+01:16:09,492 --> 01:16:14,492
+Bu bir şey gibi bir şey gibi bir şey yok.
+
+492
+01:16:14,492 --> 01:16:17,492
+Ama bir şey gelip bir şey,
+
+493
+01:16:17,492 --> 01:16:19,492
+bu bir şey yok.
+
+494
+01:16:19,492 --> 01:16:21,492
+Bir şey yok.
+
+495
+01:16:21,492 --> 01:16:23,492
+Bu bir şey yok.
+
+496
+01:16:23,492 --> 01:16:25,492
+Burada bir şey,
+
+497
+01:16:25,492 --> 01:16:28,940
+bu bir şeyin bir şeyin?
+
+498
+01:16:35,315 --> 01:16:41,956
+İzlediğiniz için, bu, 0, 1, 0, 1.
+
+499
+01:16:49,747 --> 01:16:52,867
+Starts with you.
+
+500
+01:16:56,372 --> 01:16:56,971
+Okay, yes?
+
+501
+01:17:01,811 --> 01:17:02,311
+Evet.
+
+502
+01:17:05,908 --> 01:17:06,427
+Neden?
+
+503
+01:17:13,524 --> 01:17:39,924
+Tamam, güzel bir soru. Diyor ki arkadaşımız, bu bütün sıfırla bitenlerimi kabul eder. Tamam mı? Bunu şöyle düşüneceğiz. Şimdi şurayı bir sileyim size çizmek için. Diyor ki, sıfır sıfır geldi. Birinci sıfır da buraya geldi. İkinci sıfır da A'da kalıp B'ye gitmemiş olabilir mi? Dolayısıyla A'da kaldığı için B'yi kabul etmiyor olabilir mi? Soru bu değil mi? Çok güzel bir soru. Şimdi.
+
+504
+01:17:42,068 --> 01:18:09,047
+Şurayı mükemmel yeteneğimle silemiyorum. Şimdi daha mükemmel yeteneğimle siliyorum. Şimdi bunu nasıl düşüneceğiz biliyor musunuz? Sıfır sıfırı. Ağaç gördünüz değil mi? Ağaç gibi düşüneceğiz. Ve ağaçtan, ağaçlardan bir tanesi bile, parse 3 diye bir şey gördünüz mü daha önce? Tamam görmediniz. Okey. Şimdi burası initial state. Tamam mı?
+
+505
+01:18:09,300 --> 01:18:36,940
+Başlangıcımız bu olsun. A çiziyorum. Şimdi sıfır gelince A'ya gidebilir mi? Gidebilir. Peki sıfır gelince B'ye gidebilir mi? Gidebilir. Değil mi? Sonra diyelim ki bir daha bir geldi. A'da kalabilir. B'ye bir daha bir gelirse ne yapacağız? Buraya geldik.
+
+506
+01:18:37,171 --> 01:18:57,051
+Değil mi? Şimdi, sonra bir daha diyelim ki, şurası bir mi demiştik, bir demiştik, şuraya da bir gelmiş olsun. Tamam mı? B'ye bir geldi, Trap State'e gitti, burası bitti artık. Ağaçtan buradan başka dal çıkmayacak. Tamam mı? Şimdi sıfır geldik, A'da kalabilirdi, B'ye gidebilirdi.
+
+507
+01:18:57,391 --> 01:19:14,111
+Sonra 1 geldi. A'ya 1 gelirse ne oldu? A'da kaldı. A'ya tekrar 0 geldiğini düşünüyoruz. Ne olur? A'ya gidebilir, B'ye gidebilir. Tamam mı? Ve bu input stringimiz 0, 1, 0 olsun.
+
+508
+01:19:14,111 --> 01:19:15,851
+Okey?
+
+509
+01:19:17,363 --> 01:19:42,503
+Şimdi bakın, değişik bir renkle çiziyorum. Burada aslında dedik ya, yazarken bir yere paralel gidebilir yazmıştım. Hatırladınız mı? Bu şu demek. Yani sıfırda burada da kalabilir, buraya da gidebilir. Bunlardan bir tanesini random seç değil. Tamam mı? Ağaç gibi, sanki bu paralel processing yapıyormuş gibi, bu burada böyle çalışırken bu tarafa, bu tarafa da çalışır. Tamam mı?
+
+510
+01:19:45,363 --> 01:20:00,000
+0, 1, 0 geldi ya, şunlar 0, 0. Bu reject eder, bu accept eder. Değil mi? Aynı input için leaflerden, yani şurada kökten leafe bir tanesi bile...
+
+511
+01:20:00,000 --> 01:20:26,360
+accept ediyorsa, diyoruz ki biz bu bunu accept eder diyoruz. Tamam mı? Şöyle bir şey demiyoruz bakın. Diyelim ki güzel soruydu. 0, 0 geldi. 0 da döndü, A'da kaldı birinci 0'da. İkinci 0'da da döndü, A'da kaldı. Bu bunu reject eder demiyoruz. Tamam mı? Çizersek 0'a 0'ı. A'dan başladım. 0 gelince iki ihtimal var. A'ya gider, B'ye gider. Değil mi?
+
+512
+01:20:27,060 --> 01:20:44,780
+İkinci sıfıra baktığımız zaman, sıfır gelince A'ya gider, B'ye mi gider bir daha? İkinci sıfır. Değil mi? Peki, buna bir daha sıfır gelse ne olur? Trap olur. Burayı çarpıladım. Tamam mı?
+
+513
+01:20:45,079 --> 01:20:54,480
+B, final state olduğuna göre accept etti, A da reject etti. Baktığım zaman şurası accept ediyor mu? Accept eden bir tane var mı?
+
+514
+01:20:55,475 --> 01:21:17,755
+Evet, var. Dolayısıyla diyorum ki bu NFA bunu accept eder diyorum. Tamam, paralelde çalıştırıyoruz. Yani rastgele bir tanesini seçip oradan gitmiyoruz. Tamam, bütün hepsi paralelde çalışıyor. En az bir tane accept eden bulduysak bu bunu accept eder diyoruz. Size soru. Niye DFA varken bu NFA diye şeyi bulmuşlar? Ne gerek var mı?
+
+515
+01:21:20,948 --> 01:21:26,728
+Ben bunları zaten şu, ne yapıyor? Bu sıfırla bir taneleri kabul ediyor. Ben bunu DFA'de çizerdim.
+
+516
+01:21:34,707 --> 01:21:53,707
+İlerleyen örneklerde göreceğiz. Cevabı veriyorum. Bakın burada her durumu çizmek zorunda olmadığımızda ve epsilonla başka bir stater direkt atlayabildiğimiz için daha kolay bir şekilde ne yapıyoruz? Çizebiliyoruz. Tüm ihtimalleri düşünmek zorunda olmadığımız için. Tamam mı?
+
+517
+01:21:53,707 --> 01:22:00,127
+Birazdan örneklerde göreceksiniz ne yapıyoruz? Daha kolay çizim yapabiliyoruz. Tamam mı?
+
+518
+01:22:01,332 --> 01:22:04,912
+Şimdi burayı clear yapmayalım, şeye geri dönelim.
+
+519
+01:22:09,452 --> 01:22:23,731
+Peki bu 2 üzeri Q nereden geliyormuş? Hani diğer statlere gidiyor mu diye bakıyoruz ya, her statten bütün yani A, B, AB dediğim ikisine birden M stat ise, iki tane varsa gidebilir.
+
+520
+01:22:27,220 --> 01:22:50,360
+İptar olur. Tamam mı? Oradan ileriye yürümüyorsa. Tamam. Şimdi. Transition function, QX inputu aldığı zaman, hemen hızlıca özetliyorum. Q'ya bir daha X ile hem Q1'e hem Q2'ye hem QK'ya ne yapabilir? Gidebilir. Şurası 2 olacak. Burada da hata var. Tamam mı?
+
+521
+01:22:51,060 --> 01:22:56,980
+Yani, deterministten farklı, aynı inputla farklı yere gidebilir. Tamam.
+
+522
+01:22:58,640 --> 01:22:59,200
+Şimdi,
+
+523
+01:23:02,720 --> 01:23:07,260
+şimdi şuraya bakalım.
+
+524
+01:23:09,400 --> 01:23:11,500
+Q1 takes 0 as input.
+
+525
+01:23:14,944 --> 01:23:18,884
+Let's say that you are in Q1 and the input symbol is zero.
+
+526
+01:23:19,244 --> 01:23:19,963
+What can happen?
+
+527
+01:23:20,124 --> 01:23:25,184
+It can go to Q0 or it can go to Q2.
+
+528
+01:23:26,024 --> 01:23:30,344
+But here you can see an epsilon.
+
+529
+01:23:32,024 --> 01:23:33,204
+What does it mean?
+
+530
+01:23:37,587 --> 01:23:58,327
+Şimdi bakın, buraya bir bakın. Q1'e input olarak sıfır gelirse, Q0'a gider mi? Gider. Q2'ye gider mi? Gider. Şimdi burada epsilon var ya, bu epsilon ne demek biliyor musunuz? Q2'ye geldiği anda hiç input almadan hop Q0'a atlayabilir. Şimdi eğer ki şu olmasaydı, şurayı siliyorum.
+
+531
+01:24:04,148 --> 01:24:18,548
+Şurası olmasaydı. Tamam mı? Q1'e 0 geldiği anda, Q2'de durabilir ya da ağacın başka bir dalı, hop Q0'a gidebilir. Sor.
+
+532
+01:24:18,548 --> 01:24:19,728
+Hocam okuyormuş.
+
+533
+01:24:21,108 --> 01:24:26,388
+Haa tamam, evet sağ ol. Tamam, artık şöyle. Yoksa.
+
+534
+01:24:27,408 --> 01:24:28,667
+Evet, burası yok. Tamam.
+
+535
+01:24:29,171 --> 01:24:41,811
+Peki, tamam. Burası anlaşıldı mı? Anlaşılmış. Bir soru sordun. Peki, yön işaretini şöyle olsa, Q0'a geldiği anda, başladığımız anda, şu epsilon ne demek?
+
+536
+01:24:45,395 --> 01:24:47,675
+Pat diye Q2'den de başlayabilir demek.
+
+537
+01:24:48,775 --> 01:24:49,036
+Tamam.
+
+538
+01:24:49,655 --> 01:24:52,716
+Peki bu neleri kabul eder? Şuna bir bakın bakalım bu neleri kabul eder?
+
+539
+01:24:55,435 --> 01:24:57,235
+Epsilon, boş string kabul eder mi?
+
+540
+01:24:59,675 --> 01:25:01,576
+Ama buradan hiçbir daha dönüş yok.
+
+541
+01:25:02,435 --> 01:25:03,615
+Etmez. Değil mi?
+
+542
+01:25:03,956 --> 01:25:05,456
+Bakın boş stringi çıkarttık.
+
+543
+01:25:10,456 --> 01:25:12,395
+Q0 yani boş.
+
+544
+01:25:12,851 --> 01:25:17,739
+Şeyle, bunu böyle çizdiyse, buradan verdiyse en üstlük bir papülatina dolar atalım.
+
+545
+01:25:21,332 --> 01:25:29,452
+Neyi kabul eder? 1-0'ı kabul eder. Başta. Başka neyi kabul eder?
+
+546
+01:25:33,716 --> 01:25:37,115
+Tamam eder, okey. Peki ne bir daha bu ikiye gitmiş?
+
+547
+01:25:49,971 --> 01:25:50,871
+Biri kabul eder mi?
+
+548
+01:25:55,507 --> 01:25:56,608
+Birbiri kabul eder mi?
+
+549
+01:25:58,747 --> 01:26:02,268
+Esmer. Bu aslında bir şey kabul edermiş, şeyi değiştirmiş.
+
+550
+01:26:02,268 --> 01:26:02,867
+Neyse.
+
+551
+01:26:03,967 --> 01:26:05,907
+Bunu hiç kafamı sıkıştırmayayım.
+
+552
+01:26:11,475 --> 01:26:22,675
+Gidebilir. Ama dedik ya, ağaç dalları, ona da bakacak, ona da bakacak. Bir tanesini kabul ettiği anda, hop kabul etmişler diyecek. Soru.
+
+553
+01:26:26,775 --> 01:26:28,655
+Ben hiç anlamıyorum abi, daha sor.
+
+554
+01:26:35,123 --> 01:26:42,023
+Tamam, burada 0-1 bir o bir erektirmiş ya, demek ki burada strep state var. Yani aldığı an hiç reject eder diyeceğiz.
+
+555
+01:26:46,707 --> 01:26:49,227
+Tabii ki, tabii ki. Epsilon'dan sonra çizebilirsin.
+
+556
+01:26:54,387 --> 01:27:09,807
+Tamam, mesela Q0, epsilon ile hop, Q2'ye gidebilir. Peki, Q2'ye 1 gelse ne olacak? Hiçbir şey, trap stack, tamam, bir jekle edeceğiz direkt. Peki, gelin buraya bakalım. A alırsa ne oluyor?
+
+557
+01:27:19,220 --> 01:27:22,800
+Q3'e gidebilir, Q1'e gidebilir, Q2'ye gidebilir. Bu neyi kabul eder?
+
+558
+01:27:28,115 --> 01:27:42,115
+İki A'yı kabul ederdim. Başka hiçbir şeyi kabul etmez. Peki bunun çizmesine gerek var mıydı? Yoktu ama şey için göstermiş. Slide yani Q0'dan aynı inputun iki kere çıkabileceğini NFA'ydı. Amacı onu göstermiş. Tamam mı?
+
+559
+01:27:48,243 --> 01:27:52,243
+Evet, 3 A'yı kabul eder mi? Hayır. Bir A'da geldi, bir A'da geldi.
+
+560
+01:27:58,195 --> 01:28:10,115
+To choices, yani şu Ikea'ı alabileceğini göstermek için. Bunlarda da transition yok. Ikea'dan başka. Ikea'yı accept ediyor. Sonra bunları göstermiş, tamam.
+
+561
+01:28:10,855 --> 01:28:25,055
+Şimdi, if there exists a computation of the NFA that accepts a string. Yani, computation dediğim şey, paralel computation'lar var gibi düşüneceğiz. Bir tanesi bile kabul ediyorsa ne yapacağız?
+
+562
+01:28:25,524 --> 01:28:26,584
+Hop, accept it.
+
+563
+01:28:27,144 --> 01:28:27,844
+Tamam mı?
+
+564
+01:28:28,584 --> 01:28:29,004
+Soru.
+
+565
+01:28:32,851 --> 01:28:47,351
+Birkaç tane örnek çizeceğim şimdi. Bu AA ama bu kolay. Anladınız bence burayı. Tek A'yı reject edecek değil mi? Niye? Tek A'da A'ca bakarsanız, Q0'a ya Q3'e gider ya Q1'e gelir. Ne olur? Reject eder.
+
+566
+01:28:50,351 --> 01:28:55,131
+Second choice, ikisi de reject. Mesela 3A'da, kim sordu? Demin biri sordu.
+
+567
+01:28:55,667 --> 01:29:01,347
+3A'da yine hop rejekt edecek. Çünkü bir yere gitmeyecek. Tamam, bu artık geçti.
+
+568
+01:29:08,372 --> 01:29:09,532
+Şimdi burası çok güzel.
+
+569
+01:29:10,332 --> 01:29:12,332
+This is epsilon transition.
+
+570
+01:29:20,212 --> 01:29:21,532
+Sıvıca bir simbol.
+
+571
+01:29:28,404 --> 01:29:34,824
+If it comes to Q1, it can stay here or directly pass to Q2.
+
+572
+01:29:35,064 --> 01:29:35,164
+Okay?
+
+573
+01:29:36,043 --> 01:29:37,484
+So what does it accept?
+
+574
+01:29:38,004 --> 01:29:39,224
+Let's look at this example.
+
+575
+01:29:39,424 --> 01:29:39,924
+A8.
+
+576
+01:29:40,744 --> 01:29:43,064
+In the first day, it will come to Q1.
+
+577
+01:29:44,924 --> 01:29:51,884
+And because of epsilon, yani bunun, şunu şöyle anlayın diye bir şey çizeceğim gençler, bir dakika.
+
+578
+01:29:54,547 --> 01:30:12,108
+İnşallah çizerim. Şu epsilon da şunu kalemde çizimine koymuşum. Şimdi Q0'dan başladım. İlk ağda nereye gelir? Q1'e. Değil mi? Şimdi burada epsilon var ya, şunu şöyle çizeceğim.
+
+579
+01:30:20,435 --> 01:30:26,675
+Hop, buradan Q2'ye de geçebilir. Tamam mı ağaçta? İkisinden de devam edeceğim.
+
+580
+01:30:30,515 --> 01:30:46,555
+Yani, epsilon'da illa buraya atlayacak diye bir şey yok. Hemen paralel bir dal daha açıyoruz. Q1'den devam da edebilir. Q2'de de kalabilir. Şimdi ikinci A, Q1'e gelirse ne olur? Ağaçta.
+
+581
+01:30:57,076 --> 01:31:06,456
+Q3'e gelir ve accept eder. Tamam mı? Yani her epsilonı görünce illa buraya atlayacak diye ne yapmıyoruz? Düşünmüyoruz, okey?
+
+582
+01:31:07,796 --> 01:31:13,996
+Chette bir sorumuz var galiba. Valla. Bekleyin. Evet.
+
+583
+01:31:21,747 --> 01:31:25,087
+Hocam, empty string'i neden kabul etmediğini tekrar açıklar mısınız?
+
+584
+01:31:29,108 --> 01:31:33,707
+Ne demek? Ha, ta deminki şey empty'i niye kabul etmiyor, tamam.
+
+585
+01:31:35,987 --> 01:31:38,027
+Şimdi anladım soruyu.
+
+586
+01:31:40,747 --> 01:31:42,327
+Şurada bir yerdeydi o.
+
+587
+01:31:43,207 --> 01:31:46,427
+O çok önceydi ya, tamam. Başka bir şey de açıklayacağım, tamam.
+
+588
+01:31:47,427 --> 01:31:49,268
+Tamam, şimdi AA'ya baktık.
+
+589
+01:31:50,355 --> 01:32:15,815
+3A'ya baktığımız zaman ne olacak? Bunu hep ağaç gibi düşüneceğiz. Tamam mı? Ağaç gibi düşünürseniz hiç hata yapmazsınız. Tüm ihtimalleri çözmüş olursunuz. 3A reject olacak. Neden? Çünkü birinci A'da Q1'e geldi. Buradan iki ihtimalim var. Q1 ya da Q2'den devam eder. İkinci A. Q1'den devam ederse zaten reject. Q2'den devam ederse Q3'e geçecek.
+
+590
+01:32:17,036 --> 01:32:18,075
+Tamam mı?
+
+591
+01:32:19,188 --> 01:32:24,028
+Peki, ikinci ağdaki ülke geçti, üçüncü ağ geldiği zaman hiçbir şey yok, dolayısıyla rejekt.
+
+592
+01:32:29,203 --> 01:32:32,363
+Şimdi, şuna bir bakalım. Biraz işler karıştı.
+
+593
+01:32:32,804 --> 01:32:33,043
+Şimdi,
+
+594
+01:32:35,183 --> 01:32:36,304
+This is Anna Renet Bey.
+
+595
+01:32:39,859 --> 01:32:40,579
+E-Test!
+
+596
+01:33:06,387 --> 01:33:14,427
+Bunu şöyle göstermeyi de şey yapalım. Yavaş yavaş regular expression olarak yazabileceğimiz için.
+
+597
+01:33:15,647 --> 01:33:20,427
+Şimdi bakın. AB star ne demek?
+
+598
+01:33:22,108 --> 01:33:24,827
+AB star yapmayalım da şöyle yazalım.
+
+599
+01:33:25,779 --> 01:33:50,920
+AB'yi bir kere yazalım ya da şöyle yazın ya da AB artı olarak yazın. Tamam mı? Çünkü AB star'da ne olay olabilir? Emptistinkli olabilir. Tamam mı? Yani AB tekrarlarını kabul edecek. Şimdi bakın AB'de buraya geldik. Sonra buraya geldikten sonra yeni bir tane şey hop ne yapabilir? Q3'e oradan da Q0'a gidebilir. Bunu ağaç olarak çizelim mi AB AB için?
+
+600
+01:33:53,108 --> 01:34:03,407
+Şimdi Q0'dan başladık. A geldi, Q1'e geldik. B'ye geldik, Q2'ye geldik. Tamam mı?
+
+601
+01:34:04,128 --> 01:34:15,648
+Şimdi Q2'ye geldiysen burada kalabilir ya da hop paralelinde Q3'e geçebilir. Hop paralelinde ne yapabilir? Q0'a geçebilir. Tamam mı?
+
+602
+01:34:18,463 --> 01:34:28,503
+Diyelim ki AB'den sonra tekrar A geldiğinde bakacağım. Buna A gelebilir. Buna A gelebilir. Buna A gelebilir. Tamam mı? Q2'ye A gelirse ne oluyor?
+
+603
+01:34:31,503 --> 01:34:45,603
+Trapstate. Q3'e A gelirse Trapstate. Q0'a A gelirse Q1. Tamam mı? Böyle ağaç olarak düşünürseniz.
+
+604
+01:34:45,716 --> 01:34:58,276
+Sonra tekrar Q1'e B gelirse, Q2, ama bakın Q2 bitti mi, Q2'den yine burada Q3 ve Q4'ü düşüneceksiniz. Tamam.
+
+605
+01:34:58,916 --> 01:35:09,496
+Bu except bunlar, bir şey yani böyle yap, böyle hep buraya geçtiğini düşüneceğiz. Peki soru şu olmasaydı, şu şöyle olsaydı.
+
+606
+01:35:11,356 --> 01:35:12,176
+Şuralar yok.
+
+607
+01:35:15,507 --> 01:35:18,327
+Ne olurdu? Farklı olur mu, olmaz mıydı?
+
+608
+01:35:24,819 --> 01:35:34,939
+Ne yaptık burada? Q2'ye geldikten sonra Q3'e açmıştık. Oradan da hop otomatikman Q0'a gidebiliyordu.
+
+609
+01:35:35,500 --> 01:35:44,579
+Sadece ağaçta şu kısım iptal olacak. Q2'ye geldiyse Epsilon'dan dolayı Q0'a gider. Yine buradan AB AB'leri kapıyor.
+
+610
+01:35:46,180 --> 01:35:50,959
+Birkaç bir şey daha göstereyim. Mesela şu ne demek? A star B. Bu ne demek?
+
+611
+01:35:52,372 --> 01:35:58,891
+0 ya da istediğiniz kadar yan yana A yazıyorsunuz, sonra bir tane B yazıyorsunuz demek. Tamam mı? A, A, A, B.
+
+612
+01:36:01,711 --> 01:36:06,912
+Ya da tek B'yi de kabul eder. Çünkü star'da ne vardı? Epsilon doldu.
+
+613
+01:36:09,772 --> 01:36:13,572
+Bunu niye söylediğimi bilmiyorum. Şu abi şunu anlayın diye söyledim.
+
+614
+01:36:15,492 --> 01:36:19,811
+Artı derseniz Epsilon'ı almıyoruz. En az bir kere A, B olmak zorunda.
+
+615
+01:36:21,171 --> 01:36:29,051
+AB, AB star derseniz de, şunun anlamına geliyor zaten. Bir kere AB olacak, sonra yanına istediğin kadar AB koyulan.
+
+616
+01:36:29,051 --> 01:36:39,531
+Yine çatayımıza bakıyoruz. Hocam, bu evet fark ettim ki önceki örnek için de sonra dersten sonra sana anlatayım bir daha tamam mı? Ya da herkese bir daha başka örnek de anlatayım.
+
+617
+01:36:40,531 --> 01:36:42,131
+Şu muhteşem çizimlerimi sildim.
+
+618
+01:36:51,859 --> 01:37:02,779
+Burada mıyız? Neredeyiz? Slide numarası koyacağım. Bunu görmedik değil mi? Tabii ki.
+
+619
+01:37:02,779 --> 01:37:07,719
+Ben sınavda karnasıklar yapıyorum. Normal yazı yapmıyor. Hiçbir şey anlamadım.
+
+620
+01:37:07,719 --> 01:37:15,199
+Sınavda karnasıklar normal yazı yapmıyor. Sınavda zorunluğunu da zaten. Bunun bir şey, ben bir şey.
+
+621
+01:37:15,579 --> 01:37:18,439
+Şimdi birkaç tane örnek yapalım bununla ilgili. Tamam.
+
+622
+01:37:19,828 --> 01:37:34,308
+Bunu yaptık değil mi? Yaptık. Bunu da yaptık. Bunu da yaptık. Nerelere gittim? Nerelere gittim? Bunu da yaptık. Burada mı kaldık? Evet, AB, AB'yi kabul ettiğini gösteriyor. Tamam, bunları evde tuttuk yapın. Bu da bunu yazmış. Sağ olsun. Tamam mı?
+
+623
+01:37:45,747 --> 01:37:52,747
+NFA, nondeterministik, çünkü X-Signal. Bu kolay. Bu ne?
+
+624
+01:37:56,051 --> 01:37:57,911
+Does it accept empty string?
+
+625
+01:38:00,671 --> 01:38:02,631
+Kabul ediyor. Çünkü buradan başladık.
+
+626
+01:38:02,751 --> 01:38:04,351
+Does it accept?
+
+627
+01:38:05,951 --> 01:38:06,511
+One, zero.
+
+628
+01:38:09,511 --> 01:38:10,591
+Ne olmuş?
+
+629
+01:38:15,859 --> 01:38:28,960
+Ha, onu görmedim ki. Evet, bu demin arkadaşınızın sonucu söyledi. Pardon, pardon. Şunu yine bu tarafa geliyor gördüm. Çok pardon. Bakın, buraya Epsilon geldiği anda boş string gelirse eğer, hop, ne yapıyoruz? Q2'ye gidiyoruz.
+
+630
+01:38:34,836 --> 01:38:47,056
+Ya şöyle alınıyor, tamam bunlar soyut olduğu için. Şunu diyorsanız ki eğer, Epsilon da bir karakterdir ve ben dizayn ettiğim zaman buraya gider diyorsa kitabınızda ya da kafanızda nasıl kabul ediyorsanız böyle çizin. Tamam.
+
+631
+01:38:47,916 --> 01:38:55,596
+Öbür türlü de Epsilon'u kabul etmez diyorsanız eğer, yani şimdi Epsilon Q0'dan başladık ya.
+
+632
+01:38:58,868 --> 01:39:07,988
+Şimdi arkadaşınız diyor ki, şimdi bu Q0'dan başlayacak, Epsilon gördüğü anda tık tık tık paralelinde Q2'ye gidebilir diyor arkadaşınız. Tamam mı?
+
+633
+01:39:08,428 --> 01:39:15,408
+Dolayısıyla Epsilon'u bakın Q0'dayken kabul edecek, Q2'deyken ne yapacak? Kabul etmeyecek.
+
+634
+01:39:16,008 --> 01:39:18,868
+Ama biz dedik ki Epsilon'da bunlar aynı anda paralel işliyor.
+
+635
+01:39:18,868 --> 01:39:23,648
+Tamam, şöyle anlatayım, kafanızı karıştırmayayım. Q0'ı kabul ettiği için,
+
+636
+01:39:24,404 --> 01:39:45,804
+Bunu Epsilon'u kabul eder diye. Tamam mı? Ama bazı kitaplarda bunu verip böyle demeyebilir. Tamam mı? Sadece Epsilon'a özel. Yani şöyle diyebilir. Epsilon da bir boş karakterdir. Yani boş durama karakterdir. Dolayısıyla Epsilon da buraya gelir şeklinde söylediğini görebilirsiniz. Tamam mı? Yani şöyle...
+
+637
+01:39:45,804 --> 01:39:46,964
+Özel olarak belirttiği için.
+
+638
+01:39:46,964 --> 01:39:52,004
+Evet, evet. Özel olarak belirttiği için diye. Tamam mı? Bu senin sonra da cevap. Şimdi bakın.
+
+639
+01:39:53,108 --> 01:40:19,728
+Soru şu, şimdi ilk başladığımız zaman Q0, her Q0'a geldiği zaman paralelinde hop bir de Q2'ye yol açılacak değil mi? Şimdi ama bu her epsilon aslında ve Q2'den hiçbir yere gitmiyor. Bu ne demek? Her kabul etti, her accept'in paralelinde bir de hiçbir şeyi kabul etmeyeceği bir Q2 durumu var demek değil mi? Çünkü Q2'den hiçbir yere hop falan gitmiyor. Q2'nin hiçbir anlamı yok aslında.
+
+640
+01:40:20,404 --> 01:40:46,044
+Yani bunun çizmesinin de bir anlamı yok aslında. Yani şu sadece size epsilonı göstersin diye çizilmiş bir örnek. Tamam mı? Yani siz şunlar olmadan, çünkü bakın bu trap state zaten bunu burada çizmek zorunda mısın? Değilsin. Tamam mı? Bunları da çizilmiş. Yani bir anlamı yok da bu örnek olsun diye çizilmiş birazcık. Tamam mı? Böyle söyleyelim. Şunların hiçbir anlamı yok aslında.
+
+641
+01:40:50,163 --> 01:40:55,844
+Niye anlamı yok? Çünkü bakın bu trap stake. Bunu çizmek zorunda değilsiniz Q2'ye. Hiçbir yere gitmiyor.
+
+642
+01:40:55,844 --> 01:40:58,844
+Şimdi...
+
+643
+01:41:02,707 --> 01:41:07,247
+Şöyle anlatalım, daha altınıza daha iyi kalacak. Her Q0'a geldiği zaman Q2'ye de gelir.
+
+644
+01:41:08,107 --> 01:41:11,487
+Dolayısıyla Epsilon'u kabul eder olarak bakıyoruz.
+
+645
+01:41:13,367 --> 01:41:22,927
+Bir sıfırı kabul etti. Bir bir bir gelse kabul etmedi. Peki bir sıfır, bir sıfır, bir sıfır kabul eder mi?
+
+646
+01:41:24,787 --> 01:41:28,527
+Eder. Değil mi? Dolayısıyla bu neleri kabul eder?
+
+647
+01:41:29,779 --> 01:41:50,919
+Bir sıfırları kabul eder. Şurayı çizmeseydi de çizde yine bir şey var. Öncekinde kabul etmez demiştik. Evet şu an kabul yani bu paralel işlemeyi anlayın diye şu anki örnekte kabul eder diyorum. Tamam kabul eder alın. Tamam. Hem online'ler hem sınıftakiler şunu paralel işlediği için kabul eder olarak alın. Tamam mı? Örneklerle de öyle alın.
+
+648
+01:41:51,220 --> 01:41:57,859
+Bazı kitaplarda da tersini görürseniz şaşırmayın. Mesela epsilon yerine lambda falan da görebilirsiniz. Onda da şaşırmayın.
+
+649
+01:41:59,359 --> 01:42:09,560
+Dolayısıyla bu neyi kabul ediyor? Nasıl yazacağız? 1, 0. Üzeri yıldız mı? Yıldız. Neden yıldız? Çünkü epsilon da kabul ettiği için.
+
+650
+01:42:14,579 --> 01:42:16,780
+Şimdiden kurtulalım, kutulmayalım.
+
+651
+01:42:18,119 --> 01:42:20,039
+Kuru maydelen isteyenin, tamam.
+
+652
+01:42:24,307 --> 01:42:30,368
+Tamam, burada bakın, epsilon, bir sıfır, bir sıfır, bir sıfırları kabul etmeden bir sıfır yıldızı yaptık.
+
+653
+01:42:36,916 --> 01:42:46,855
+Hocam, Les 1-0 diyebilir miyiz? Evet, diyebiliriz. Slide'da yazıldığı üzere. Yılgız'la da diyebiliriz. Çünkü Epsilom da kabul ediyor. Artık koymamıza gerek yok.
+
+654
+01:42:51,828 --> 01:42:53,328
+Bakın bu da şeye güzel bir örnek.
+
+655
+01:42:54,808 --> 01:42:55,828
+Bu şuradaki yaptığınız...
+
+656
+01:43:00,916 --> 01:43:28,416
+Şunların hiçbir anlamı yok. Şunun, bu trap state zaten. Şunun da hiçbir anlamı yok. Yani siz bunu basitçe böyle çizerdiniz. Tamam mı? Bu size neyi ama bu da yanlış mı? Doğru. Demin slide'da bir şey dedik. Dedik ki bir language'i birden fazla meşinle gösterebilirsiniz. Tamam mı?
+
+657
+01:43:28,884 --> 01:43:49,524
+Yani bir şey yapın dediğin zaman ödevde bütün sınıfın çözümü aynı olmaz. Bir language'i accept eden meşinin çizmenin farklı farklı neleri var? Yolları var. Ama bir meşinin accept ettiği language sadece bir tanedir. Sadeleştirmiş haliyle bir tanedir.
+
+658
+01:44:00,756 --> 01:44:06,516
+Şimdi, epsilon'a baktığımız zaman, input'ta aslında epsilon diye bir şey var mı? Yok.
+
+659
+01:44:07,476 --> 01:44:14,616
+Post symbol demek değil mi? Şuna baktığımız zaman, tek bir state'imiz var, hiçbir şeyi kabul etmez.
+
+660
+01:44:15,776 --> 01:44:23,416
+Empty string de kabul etmez. Ama şu ne dedik? Empty string'i, epsilon'ı kabul eder dedik. Tamam mı? Böyle kabul edelim ok.
+
+661
+01:44:27,060 --> 01:44:30,160
+Şimdi, bu güzel örnek.
+
+662
+01:44:30,280 --> 01:44:34,300
+NFA is interesting because we can express languages easier than the other.
+
+663
+01:44:36,300 --> 01:44:37,740
+Let's look at this example.
+
+664
+01:44:42,068 --> 01:45:00,076
+Bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu
+
+665
+01:45:03,155 --> 01:45:20,895
+Çünkü Q1'den A çıkması gerekir. Tamam mı? DFA olacak. Sınavda diyorum ki, DFA çiz diyorum. DFA'yı çizdiniz ya, doğru mu çizdim diye ne yapacaksınız? Her state'den o kadar input simbola, ok çizdiğimize emin olmak zorundasınız. Tamam, trap state diye bir şey yok.
+
+666
+01:45:20,895 --> 01:45:29,295
+And let's look at this machine. Q0A, Q1A, Q2A. So what does it accept?
+
+667
+01:45:31,123 --> 01:45:39,923
+It accepts only A, but for the trap state of NFA, you should draw this part.
+
+668
+01:45:41,003 --> 01:45:41,223
+Okay?
+
+669
+01:45:42,943 --> 01:45:48,303
+So, NFAs are easier to draw.
+
+670
+01:45:53,171 --> 01:46:20,571
+Değil mi? Ama şu üstteki, aslında burada da bir track stake var mı? Var. Ama bunu DFA ile ne yapmak zorundasınız? Göstermek zorundasınız. Dolayısıyla NFA'yla biraz daha basit bir şekilde çizim yapabiliyorsunuz. Dizaynı birazcık daha kolay oluyor. Her şeyi göstermek zorunda olmadığınız için.
+
+671
+01:46:23,507 --> 01:46:29,207
+Ok, let's look at this. The extended transition function, delta star.
+
+672
+01:46:30,927 --> 01:46:37,687
+What does it mean? Now we are in Q0, we are in state 0 and we get input A.
+
+673
+01:46:37,687 --> 01:46:48,727
+What happens? Q0, if you get A, you go to Q1. Ok, the output is Q1.
+
+674
+01:46:49,555 --> 01:47:16,863
+Ama, Q0'a, A ve A'ya, Q4'a, Q5'a,
+
+675
+01:47:16,863 --> 01:47:28,143
+Buraya bakalım. AB'de Q2'ye geldik. Değil mi? Q2'de kalabiliriz. Bakın hemen burada ağaç gibi düşünürseniz hiç zorluk yaşamazsınız. Tamam mı?
+
+676
+01:47:28,143 --> 01:47:38,023
+Şimdi, bakın A'da, neyse bir çizelim. Q0'dan A'ya geldik, Q1'e.
+
+677
+01:47:38,095 --> 01:48:01,935
+Q1'e B geldi. Nereye geldik? Q2'ye. Ama epsilon olduğu için Q3'den de devam edeceğim. Q0'dan da şuradaki oktan dolayı devam edeceğim. Yani AB'den sonra AB A gelse, şurada bir de A olsa, artık buraya A gelirse ne olur? Buraya A gelirse ne olur? Buraya A gelirse ne olur? Bakıyoruz.
+
+678
+01:48:04,884 --> 01:48:29,123
+Burayı anladık mı? Bu ağaç olayını anlamadıysanız tekrar anlatacağım. Bakın ağaca bütün dallanıyor, bir tanesinin accept etmesi yeterli. Paralel prosesi gibi bakıyoruz, bir tanesi accept ediyorsa okey diyoruz. Yani şu şurada kalır, ya Q2'de kalır, ya Q3'e gider, ya Q0'a gider değil. Hepsi paralel çalışıyor. Bir tanesi bile accept etse, accept et diyoruz.
+
+679
+01:48:30,707 --> 01:48:33,387
+Burası anlaşıldı mı? Anlaşılmıştır.
+
+680
+01:48:33,387 --> 01:48:33,827
+Tamam.
+
+681
+01:48:39,252 --> 01:48:52,212
+Bu da diğer slide'ın aynısı. Yani delta star dediğimiz zaman W'nun içinde bir sürü string varsa, şimdi buradan buraya gidiyorduk ya, aslında tek bir pet yok burada. Değil mi?
+
+682
+01:48:52,692 --> 01:49:00,612
+Yani DFA ile determinist şeklinde tek bir pet var. Buradan buraya gidersin, buradan buraya gidersin o input geldiğinde değil mi?
+
+683
+01:49:00,932 --> 01:49:04,772
+Ama burada ağaç olduğu için ne yapıyoruz? Dallana dallana gidiyoruz.
+
+684
+01:49:06,771 --> 01:49:08,291
+Tamam, tek bir pet yok.
+
+685
+01:49:11,351 --> 01:49:14,931
+Tamam, accept ediyorsa, accept ederdik dedik. İşte burada onu anlatıyor.
+
+686
+01:49:15,151 --> 01:49:22,511
+Yani burada, şu fayda önemli, hani dallanır dedik ya ağaç gibi. Ağacın şunları dalları gibi düşünün.
+
+687
+01:49:22,651 --> 01:49:26,431
+Hepsinin inputu aynı. Aynı inputla farklı farklı yerlere gidersiniz.
+
+688
+01:49:27,571 --> 01:49:33,751
+Şuradakilerden en az bir tanesi accept ediyorsa dersiniz ki bu bunu accept etmiştir. Bu şekilde onu anlatmayacak.
+
+689
+01:49:34,163 --> 01:49:37,203
+Ama ben daha iyi anladım. Niye? Çünkü artistik.
+
+690
+01:49:42,068 --> 01:49:47,828
+Sanki dinamit programlamadaki şeylere benzemiyor mu? Petlere, greedy, çözüm gibi.
+
+691
+01:49:49,648 --> 01:49:54,347
+Okey, tamam, burada bunlar sıktı beni. Sizi de anladığınızı düşündüğüm için.
+
+692
+01:49:55,488 --> 01:49:56,928
+Şuna bakalım, bu ne demek?
+
+693
+01:49:58,428 --> 01:50:03,748
+Okey, this is the language that it accepts. Let's look at, what does it mean?
+
+694
+01:50:04,228 --> 01:50:08,928
+It accepts, A, B star, what does it mean? You can come to A, B.
+
+695
+01:50:09,971 --> 01:50:17,931
+AB, Q1, Q2, and because of F1, you go to Q3, and you get, you can get several A and B's.
+
+696
+01:50:18,351 --> 01:50:20,671
+Okay? And what is this sign?
+
+697
+01:50:30,671 --> 01:50:35,911
+Tamam, Yıldız ya, Yıldız boşta demek ki Yıldız içinde. Dolayısıyla F1, şunun içinde.
+
+698
+01:50:36,532 --> 01:50:48,532
+Peki şu ne demek şu işaret? Ne demek birleşim? Yani şu ifadede AB-SPR birleşim, AB-SPR...
+
+699
+01:50:55,028 --> 01:51:03,108
+Ama birleşimi veya gibi alacağız. Bakın, ya bu şuradan gelen AB'yi kabul eder ya da AB'yi de istediği kadar döner.
+
+700
+01:51:07,091 --> 01:51:13,851
+Hiç dönmeyebilir. O yüzden Star Wars boşta gelebilir. Bir de A, A'yı kabul eder. Tamam mı?
+
+701
+01:51:16,011 --> 01:51:28,811
+Şimdi bakın. A, B, Epsilon kabul etti mi? Epsilon nereden geldi? Şu. Biz onlar meraklısızlık yapmayalım. Şimdi Epsilon nereden geldi?
+
+702
+01:51:34,163 --> 01:52:00,823
+Hoppa. Şu AB'den bir Epsilon geldi mi? Geldi değil mi? Star olduğu için Epsilon da aldık. Sonra buradan AB, tek AB, AB, AB, böyle AB, AB, AB gidiyor. Tamam mı? Ya böyle bunu alır, şu çevrimde döner durur. Ya da yine şu Epsilon bilmem ne bilmem ne alır, bir de AA alır, Q5'e giden yol var. Tamam mı?
+
+703
+01:52:03,444 --> 01:52:25,564
+Yani tek AA'yı alır mı? Alır. Çünkü şuradan epsilon gelecek. Epsilon AA, AA demek değil mi? Peki AA'yı alır mı? Alır. Tamam mı? Şunlar, şu ifadeler, regular expression'lar. Tamam mı? Regular expression'lar. Sonra bunları şeyde de görüşürüz, programlama dillerinin içinde falan filan da görüşürüz.
+
+704
+01:52:26,844 --> 01:52:30,824
+Regex. Tamam mı? Kısaltılmaz. Okey?
+
+705
+01:52:34,420 --> 01:52:35,060
+Soru.
+
+706
+01:52:36,480 --> 01:52:38,860
+Neden sadece A'a'yı mı almadık?
+
+707
+01:52:41,279 --> 01:52:42,000
+Söyle.
+
+708
+01:52:42,720 --> 01:52:45,400
+Neden sadece A'a'yı mı almadık?
+
+709
+01:52:51,699 --> 01:52:52,679
+Birleşim ile beraber.
+
+710
+01:52:53,099 --> 01:52:56,219
+Çünkü bu AA bir kere olmak zorunda.
+
+711
+01:52:57,179 --> 01:52:57,420
+Değil mi?
+
+712
+01:52:57,859 --> 01:53:00,899
+Şimdi eğer çok güzel soru diyor ki, niye birleşimi yazdık diyor.
+
+713
+01:53:01,000 --> 01:53:05,239
+Şöyle yazaydım ben şunu, yanına da AA yazsaydım olurdu.
+
+714
+01:53:05,979 --> 01:53:06,239
+Değil mi?
+
+715
+01:53:06,779 --> 01:53:08,859
+Ama bak bu neyi de kabul eder biliyor musun?
+
+716
+01:53:09,039 --> 01:53:10,880
+Bunda illaki AA olacak.
+
+717
+01:53:11,039 --> 01:53:12,259
+Bu epsilon'u kabul eder mi?
+
+718
+01:53:14,199 --> 01:53:14,799
+Etmez.
+
+719
+01:53:15,039 --> 01:53:15,279
+Değil mi?
+
+720
+01:53:15,819 --> 01:53:19,259
+Dolayısıyla sadece şunu yazsaydın, epsilon'u almamış olurdu.
+
+721
+01:53:21,716 --> 01:53:22,155
+Tamam.
+
+722
+01:53:26,547 --> 01:53:33,028
+Şey yolumuz da yok, yani bunun AA'nın üstüne yıldız koysak şöyle bir sorunumuz var, AA AA yani dört tane A olmuyor.
+
+723
+01:53:34,068 --> 01:53:34,268
+Okey?
+
+724
+01:53:40,467 --> 01:53:41,807
+Soru varsa sorun.
+
+725
+01:53:43,148 --> 01:53:43,787
+Tam sırası.
+
+726
+01:53:44,328 --> 01:53:45,448
+Online'lar soru var mı?
+
+727
+01:53:49,268 --> 01:54:16,187
+Offline'larda da soru yok. Okey. Uyuyanlar kalkın. Evet. Kuyuz yapalım mı bugün? Yapmayacağız bugün. Niye yapmayacağız? Online'lar var ya haksızlık olmasın diye. Şimdi diyoruz ki burada, burada da bir definition var. Eğer ki iki meşinin accept ettiği dil aynıysa
+
+728
+01:54:16,627 --> 01:54:21,188
+Bu iki machine'nin language'leri, yani iki machine birine eşit oluyor.
+
+729
+01:54:22,707 --> 01:54:32,307
+If the languages that machine one and machine two are saying that we say that machine one is equivalent to machine two.
+
+730
+01:54:33,228 --> 01:54:38,568
+Ama şeyleri aynı olmak zorunda değil. Birinde üç state varken diğerinde beş state olabilir.
+
+731
+01:54:39,188 --> 01:54:43,747
+Tamam mı? Yani bunların her şeyi birebir aynı. O anlamda denk değil.
+
+732
+01:54:45,108 --> 01:54:49,148
+Accepted language ile aynıysa iki meşin birbirine equal'udur.
+
+733
+01:54:54,036 --> 01:55:04,935
+Okay, you can look at this example. This is an NFA, non-deterministic. What does it accept? It accepts 1-0 star. Okay?
+
+734
+01:55:05,596 --> 01:55:21,055
+Now you look at this example, what does it accept? It accepts, this is an DFA, and it accepts epsilon and 1, it only accepts 1-0. Okay? 1-0 star.
+
+735
+01:55:21,844 --> 01:55:27,244
+So, these two machines, M1 and M2 are equal.
+
+736
+01:55:36,180 --> 01:55:59,500
+Son müzeh soru alır mı? Mesela iki tane vereceğiz diyeceğiz ki bunlar ilk konut. Ya da tek bir tane regular expression versem, yani sadece şunu versem mesela, bir sıfır yıldızı, accept eden NF ve DEP'yi çizim desem, çizersiniz değil mi? Bir de bir şey daha söyleyeyim da aklıma gelmişken, şununla şu farklı.
+
+737
+01:56:02,452 --> 01:56:12,771
+Şunu şöyle yazarken, parantez varken şunu şöyle yazmayın, tamam mı? Bu şu demek, bir, sonra istediğin kadar sıfır demek, tamam mı? Şu parantezlere dikkat edin, okey?
+
+738
+01:56:22,579 --> 01:56:35,020
+vereceğiz. Hemen bir sonraki slide'a bakayım. Okey. Bugün herhalde slide'ları bitireceğim ilk defa. Birkaç örnek. Tamam. Şimdi ara verelim. 56 geçiyor. 10 dakikaya serme 15 dakikama.
+
+739
+01:56:37,359 --> 01:56:43,359
+Tamam. 10 dakika ara verelim. Biraz örnek sözcüsüm vardı da.
+
+740
+01:56:50,195 --> 01:56:51,836
+Mögele, bağlamdan bağımsız.
+
+741
+01:57:37,011 --> 01:57:38,311
+DFA ve FNK'ın başına, tamam.
+
+742
+01:58:32,564 --> 01:58:34,364
+Dur, zorla hatırlamıyorum ki.
+
+743
+01:58:35,124 --> 01:58:37,244
+Birleşimi neden koyduk?
+
+744
+01:58:37,244 --> 01:58:38,224
+Tamam, tamam.
+
+745
+01:58:46,420 --> 01:58:48,420
+Anladım ben, evet söyleyelim.
+
+746
+01:58:48,420 --> 01:59:06,347
+AB yıldız vardı, birleşim AB yıldız, parantez AA vardı. AB yıldız, AB'nin accept oldu, yani soldaki Q'sı, bunun accept oldu. Diğeri de Q5'in accept oldu. İki tane accept olduğu için birleşim koymuş mu oldu?
+
+747
+01:59:06,579 --> 01:59:19,299
+Evet, diyebiliriz. Ama her iki excepte iki tane yazacağız diye bir kural var. Tamam mı? Yani o öyle bir kural değil ama ya Q5'te bitiricek. Q5'te bitiyorsa AA olabilir. AA'nın önünde AB'ye yurtulabilir.
+
+748
+01:59:19,299 --> 01:59:23,420
+Sağdaki ifade şey anladığım kadarıyla, AB dönüyor, en son bir kere AA oluyor.
+
+749
+01:59:24,139 --> 01:59:28,619
+Ya da hiç AB'ye dönmeden AA da olabilir. Onu da daha.
+
+750
+01:59:29,716 --> 01:59:31,936
+Niye? Çünkü AB'nin üstünde yolu var ya.
+
+751
+01:59:31,936 --> 01:59:36,275
+Hiç AB'ye dönmeden AA olabildi. Nasıl alıyoruz? Yok yani gösterim olarak nasıl aldık?
+
+752
+01:59:37,956 --> 01:59:39,536
+Ya tahtaya yazayım ya.
+
+753
+01:59:47,252 --> 01:59:48,204
+It's 11 hours.
+
+754
+02:00:01,140 --> 02:00:17,644
+DFA ve NFA
+
+755
+02:00:25,268 --> 02:00:25,467
+Ne?
+
+756
+02:00:31,667 --> 02:00:32,947
+Ekstiyonma
+
+757
+02:00:59,155 --> 02:01:00,155
+Yıldız
+
+758
+02:01:00,155 --> 02:01:01,155
+Ben de gittim
+
+759
+02:01:01,155 --> 02:01:02,155
+A A
+
+760
+02:01:06,068 --> 02:01:07,108
+geldik bitmedi.
+
+761
+02:01:07,927 --> 02:01:09,507
+AB hop geldi.
+
+762
+02:01:10,007 --> 02:01:10,668
+Eksiyon
+
+763
+02:01:10,668 --> 02:01:11,868
+bitmeyebili.
+
+764
+02:01:11,868 --> 02:01:13,148
+Orada AA.
+
+765
+02:01:14,108 --> 02:01:15,788
+AB'ye yanımsız koyduk ya.
+
+766
+02:01:19,539 --> 02:01:20,539
+Sadece.
+
+767
+02:01:20,539 --> 02:01:23,539
+Ya bu saatler için bak şuraya da yazabiliriz.
+
+768
+02:01:23,539 --> 02:01:24,539
+Aa bir beşim.
+
+769
+02:01:44,972 --> 02:01:52,972
+Tadja.
+
+770
+02:01:44,851 --> 02:01:51,332
+Yani bu, her türlü Q5, senin dediğim gibi Q5 ile bitecekleri.
+
+771
+02:01:57,120 --> 02:01:57,580
+Tadja.
+
+772
+02:01:56,404 --> 02:01:57,364
+Dönar.
+
+773
+02:02:07,579 --> 02:02:08,587
+Tadja.
+
+774
+02:02:07,539 --> 02:02:08,587
+Bu zaten bunu içebilir.
+
+775
+02:02:16,192 --> 02:07:37,131
+Tadja.
+
+776
+02:07:34,195 --> 02:07:36,836
+Evet, online arkadaşlar 27 kişi kaçmış?
+
+777
+02:07:41,123 --> 02:07:44,923
+Tadja.
+
+778
+02:07:41,011 --> 02:07:45,031
+Ok, let's see our screen.
+
+779
+02:08:11,123 --> 02:08:13,123
+Nasıl isterseniz?
+
+780
+02:08:14,884 --> 02:08:16,884
+Okay, finally we said that.
+
+781
+02:08:18,324 --> 02:08:26,003
+If the languages that two different machines accepted are the same, we said that these two machines are equal.
+
+782
+02:08:26,003 --> 02:08:30,963
+Okay, so it is equal of machines and finally we showed an example.
+
+783
+02:08:31,604 --> 02:08:36,163
+There is an NFA, N1 and a DFA deterministic.
+
+784
+02:08:36,884 --> 02:08:38,963
+Finite automata, which is M2.
+
+785
+02:08:39,543 --> 02:08:43,463
+They both accept the same language, 1, 0 star.
+
+786
+02:08:44,283 --> 02:08:48,563
+So we say that M1 and M2 are equal.
+
+787
+02:08:50,163 --> 02:08:51,844
+Okay, I think it's clear.
+
+788
+02:08:52,983 --> 02:08:57,423
+So NFAs accept regular languages.
+
+789
+02:08:57,423 --> 02:08:59,223
+We said that first.
+
+790
+02:08:59,731 --> 02:09:08,572
+If a DFA, if a language is accepted by a DFA, we call it as a regular language.
+
+791
+02:09:08,572 --> 02:09:09,091
+Okay.
+
+792
+02:09:10,551 --> 02:09:15,572
+Now, I say that if a language is...
+
+793
+02:09:22,720 --> 02:09:23,579
+Okay?
+
+794
+02:09:17,619 --> 02:09:25,180
+Accepted by an NFA, non-terministic, finite, automata, it is regular.
+
+795
+02:09:25,500 --> 02:09:29,159
+So you can write here NFA or DFA.
+
+796
+02:09:30,739 --> 02:09:41,319
+If a language is accepted by either a DFA or an NFA,
+
+797
+02:09:42,292 --> 02:09:44,692
+NFA, it is a regular language.
+
+798
+02:09:46,252 --> 02:09:52,092
+So, NFA's and DFA's have the same computation power.
+
+799
+02:09:53,092 --> 02:09:55,972
+Because they both accept regular languages.
+
+800
+02:09:57,472 --> 02:09:59,732
+Şimdi bakın, dillerin sınıfları var.
+
+801
+02:10:00,052 --> 02:10:00,452
+Tamam mı?
+
+802
+02:10:01,312 --> 02:10:08,292
+Dillerin sınıflarında en temel diller regular language olarak sınıflandırılmış.
+
+803
+02:10:08,292 --> 02:10:09,212
+Tamam mı?
+
+804
+02:10:09,391 --> 02:10:33,831
+Language ne dedik? Simbıllardan meydana gelir dedik. Siz mesela bitik şineri üzerinden farklı farklı language'ler tanımlayabilirsiniz dedik. Mesela iki tane sıfır içeren bir dil. Ya da işte sıfırla başlayıp sıfırla biten bir dil gibi. Tamam mı? Ama mesela regular olmayan bir dil neydi? Sıfır üzeri N, bir üzeri N. Yani beş sıfır varsa yanında beş tane bir olacak mesela. Tamam mı?
+
+805
+02:10:36,372 --> 02:10:43,292
+Tanıyan bir NFA ya da DFA çizemezsiniz. Dolayısıyla bu regular language değildir dedik.
+
+806
+02:10:43,712 --> 02:10:54,431
+Şimdi dilleri tanımlarken, nasıl söyleyeyim, şu an en alt kümeyi görüyoruz ki üst kümeleri gördükçe gördükçe bu diller kafanızda oturacak.
+
+807
+02:10:54,532 --> 02:10:59,832
+Tamam, pushdown automata'yı gördüğümüz zaman orada dilleri kurallarla tanımlayacağız.
+
+808
+02:11:00,500 --> 02:11:14,539
+Orada birazcık da aklımıza oturur. Şu an normal anlam alalım. En basit tanımı yapıyorum. Eğer ki bir dili tanıyan NFA ya da DFA çizilebiliyorsa o dil regular langüestir.
+
+809
+02:11:14,539 --> 02:11:19,660
+Dil alt kümesinin en en alt kümesi.
+
+810
+02:11:27,123 --> 02:11:52,903
+Şimdi zaten en imzal bir soru sordu arkadaşımız. Her NF'yi, DFA'ya çevirebilir miyiz? Evet, çevirebiliriz. Nasıl çevireceğiz? Trap state'ler var ya, trap state'leri çizeceğiz. Peki iki tane sıfır gidiyorsa ne yapacağız? Bir yerden. Onları azaltmak için de farklı yöntemler var, göreceğiz. Tamam mı?
+
+811
+02:11:53,716 --> 02:11:55,136
+Hadi bakalım devam edelim.
+
+812
+02:11:56,136 --> 02:12:03,996
+Okay. Now, we said it. If languages are accepted by NFA, then it is a regular language.
+
+813
+02:12:04,536 --> 02:12:06,716
+If it is a...
+
+814
+02:12:06,716 --> 02:12:15,216
+Okay. If language is accepted by NFA, then it's a subset of regular language.
+
+815
+02:12:15,216 --> 02:12:16,216
+Şimdi...
+
+816
+02:12:22,228 --> 02:12:26,728
+NFA's, include regular languages.
+
+817
+02:12:28,787 --> 02:12:30,028
+So,
+
+818
+02:12:30,899 --> 02:12:45,500
+Şimdi şuradan, bu çok uzun anlatıyor, şuradan anlatacağım. Aslında her bir deterministik olanı NFA ile çizebilirsiniz. Tam dersi de mevcut. Her bir NFA'yın, DFA'yını ne yapabilirsiniz? Çizebilirsiniz. Tamam mı?
+
+819
+02:12:46,000 --> 02:12:57,880
+Dolayısıyla, basitçe anlatıyorum. Diyelim ki, L language'i bir DFA tarafından accept ediliyorsa, NFA tarafından da accept edilir. Çünkü birbirine ne bunlar? Çevrilebiliyor.
+
+820
+02:12:58,752 --> 02:13:10,912
+Dolayısıyla da birinci aşamada diyoruz ki, her bir DFA, NFA'ya çevirebildiği için L dilini tanıyan DFA'yı çizelim.
+
+821
+02:13:11,532 --> 02:13:14,192
+Tamam. Burada onu anlatıyor.
+
+822
+02:13:18,192 --> 02:13:20,552
+Şimdi gelelim buraya.
+
+823
+02:13:25,587 --> 02:13:43,328
+Bir tane makinemiz var. Tamam mı? Bu birine non-deterministik. Bunu deterministik olan en üstüne çevirebiliyorsa ne diyoruz? Bunların tanıdığı dil de aynıdır diyoruz. Aslında bu profun devamı ama asıl anlatmak istediğimiz şey bu. Tamam mı?
+
+824
+02:14:00,340 --> 02:14:05,399
+Arkadaşlar, bir koptum geri geldim online'lar kusura bakmayın. Hemen ekranı tekrar paylaşıyorum.
+
+825
+02:14:10,739 --> 02:14:13,099
+Yeni kaynaşamıyorum.
+
+826
+02:14:13,099 --> 02:14:14,219
+Bir aşağı alın.
+
+827
+02:14:17,939 --> 02:14:19,139
+Şimdi paylaşabilirim.
+
+828
+02:14:19,300 --> 02:14:19,439
+Okay.
+
+829
+02:14:20,599 --> 02:14:26,960
+So, if we convert an NFA, DFA, then these two automatons are equal.
+
+830
+02:14:27,519 --> 02:14:27,760
+Okay?
+
+831
+02:14:29,019 --> 02:14:29,619
+Şimdi.
+
+832
+02:14:32,119 --> 02:14:33,559
+Tamam, bu burada dursun.
+
+833
+02:14:33,720 --> 02:14:35,039
+Önce biraz örnek çözeceğim.
+
+834
+02:14:35,260 --> 02:14:35,680
+Tamam mı?
+
+835
+02:14:35,739 --> 02:14:38,180
+Sonra bu konversiyon haftaya geçelim.
+
+836
+02:14:39,239 --> 02:14:41,479
+Okay, now I'm going to share.
+
+837
+02:14:45,203 --> 02:14:46,803
+Let's go to the whiteboard.
+
+838
+02:14:48,123 --> 02:14:49,923
+Şu şey tam anlaşılmasını istiyorum.
+
+839
+02:14:51,923 --> 02:14:54,763
+Kopunca içi çizdiklerim gitti, keşke kaydetsaydım.
+
+840
+02:14:55,983 --> 02:14:56,743
+Okay.
+
+841
+02:14:58,123 --> 02:15:03,723
+Now I'm going to solve some examples about BFAs and NFAs.
+
+842
+02:15:04,683 --> 02:15:04,983
+Okay.
+
+843
+02:15:06,223 --> 02:15:08,103
+Let's say that we have a string.
+
+844
+02:15:09,663 --> 02:15:11,843
+We have a language, L1.
+
+845
+02:15:11,843 --> 02:15:12,443
+Okay.
+
+846
+02:15:12,979 --> 02:15:16,379
+And it accepts set of all strings.
+
+847
+02:15:20,372 --> 02:15:21,692
+That content zero.
+
+848
+02:15:29,076 --> 02:15:51,196
+NFA, NFA, NFA for this test, for this language. Set of all strings that contain 0. Or let's write at least 10. It's a better definition. At least 10.
+
+849
+02:15:58,387 --> 02:15:58,788
+Tchau.
+
+850
+02:16:06,163 --> 02:16:06,923
+Can you draw it?
+
+851
+02:16:13,395 --> 02:16:14,395
+Evet?
+
+852
+02:16:14,395 --> 02:16:15,395
+We have two states.
+
+853
+02:16:15,395 --> 02:16:18,395
+We are going to have two states, okay.
+
+854
+02:16:18,395 --> 02:16:21,395
+0, 0, 1.
+
+855
+02:16:21,395 --> 02:16:23,395
+Okay, Q0, Q1.
+
+856
+02:16:23,395 --> 02:16:26,395
+Q1, Q1, Q1, Q2.
+
+857
+02:16:26,395 --> 02:16:28,395
+Okay.
+
+858
+02:16:35,636 --> 02:16:36,556
+DFA ve Ağabeyi
+
+859
+02:16:40,659 --> 02:17:04,119
+Burada dur, burada dur. Tamam, buraya kadar doğru. Tamam mı? Bakın. Şimdi diyor ki, that contain at this one zero. Yani ağaç ya bu. Bir tane zero gördüğü zaman buraya gelecek. Değil mi? Buraya kadar güzel. Şimdi birkaç bir şey yapmamız lazım. Şimdi buraya bir sıfır gelebilir mi? Buraya bir sıfır gelebilir mi? Düşünün.
+
+860
+02:17:09,652 --> 02:17:32,371
+Şöyle yapsamla, şununla şunun farkı ne? Buraya bir yazmakla. Buraya sıfır bir yazmanın arasında fark olur mu? Ama daha bunun da şeyi yok ya, bunun da hiç şeyi yok. O yüzden X'de NFA, buraya bir yazsam ne olur? Sıfır virgül bir yazsam ne olur? İlk sorun bu.
+
+861
+02:17:42,772 --> 02:17:43,612
+Teşekkürler.
+
+862
+02:17:49,971 --> 02:17:56,932
+Fark etmiyor değil mi? Ağaç olduğu için. Farklı dallar. Tamam. 0-1 yazalım. Problem değil. Şurayı sildim. Peki bitti mi?
+
+863
+02:18:03,156 --> 02:18:19,096
+Bu şu an neyi kabul eder biliyor musunuz? Tek sıfırla bitenleri kabul eder değil mi? Yani sıfırla bitenleri kabul eder. Doğru mu? Peki ama diyor ki bana içinde diyor en az bir tane sıfır olanları kabul etsin diyor. Ne yapacağım?
+
+864
+02:18:19,096 --> 02:18:28,976
+Q1'den? Şuna da sıfır bir yapsam olur mu?
+
+865
+02:18:30,515 --> 02:18:50,396
+Bu NFA mi, DFA mi? Niye NFA? Çünkü bakın sıfır bir burada var, bir burada var. İki tane sıfır çıkmış tekstekten. Tamam mı? Şimdi bunu formal definition'ını yazsak. Nasıl yazarsınız? Alfabemiz ne? Beş tane şey yazacağız. Alfabemiz ne?
+
+866
+02:18:59,156 --> 02:19:15,756
+Q diyelim, Q0, Q1. Başka neyimiz var? Initial state'imiz Q0, initial state, final state'imiz Q1. Şimdi gelelim, şeyi nasıl yapacağız? Transition kısmını nasıl yapacağız?
+
+867
+02:19:18,216 --> 02:19:24,515
+Delta fonksiyonumuz var değil mi bu delta? Şöyle bir şey yazmamız lazım. Nasıl yapacağız?
+
+868
+02:19:27,476 --> 02:19:29,256
+Hoppa, şöyle yapalım mı?
+
+869
+02:19:30,636 --> 02:19:32,636
+Push kitabın stoplasyonunu yapalım.
+
+870
+02:19:44,468 --> 02:19:45,548
+Ben de bütün gibi yapayım ya.
+
+871
+02:19:46,288 --> 02:19:50,048
+Şimdi, Q0, Q1 yazsak. Tamam mı?
+
+872
+02:19:50,708 --> 02:19:52,568
+Buraya input olarak neler gelebilir?
+
+873
+02:19:53,427 --> 02:19:55,688
+Zero, one gelebilir. Bir şey daha gelebilir mi?
+
+874
+02:19:57,528 --> 02:19:58,948
+Epsilon gelebilir değil mi?
+
+875
+02:20:01,028 --> 02:20:07,368
+Peki, burada epsilon var mı? Yok. Oraları boş küme yapayım.
+
+876
+02:20:07,987 --> 02:20:13,487
+Tamam, epsilon olsaydı, diyelim ki epsilon gelince başka bir seyde gitseydi yazardık.
+
+877
+02:20:14,587 --> 02:20:17,667
+Peki Q0'a, 0 gelince nereye gidiyor?
+
+878
+02:20:20,288 --> 02:20:23,327
+Q0'a ya da Q1'e gidiyor, tamam, ikisini de yazdık.
+
+879
+02:20:23,827 --> 02:20:25,027
+Bir gelince nereye gidiyor?
+
+880
+02:20:26,087 --> 02:20:27,407
+Yine Q0'a gidiyor.
+
+881
+02:20:28,628 --> 02:20:32,987
+Q1'e 0 gelirse, Q1, Q1.
+
+882
+02:20:38,036 --> 02:20:39,076
+Bu da Transition.
+
+883
+02:20:42,076 --> 02:20:44,995
+Fonksiyonunuz, table'ınız, ne dersiniz? Söyle.
+
+884
+02:20:48,995 --> 02:20:50,495
+İkisine virgülle yazdım.
+
+885
+02:20:55,763 --> 02:21:07,043
+Epsilon geldi, hiç Epsilon yok ya, o yüzden böyle. Ama şöyle deseydin, atıyorum tamam mı burayı? Şurası Epsilon olup, şurası Q2 olsaydı, şuraya bırt bırt bırt Q2 yazardı.
+
+886
+02:21:08,523 --> 02:21:12,023
+Final state.
+
+887
+02:21:15,583 --> 02:21:18,304
+Burada initial ile final state'i göstermedim.
+
+888
+02:21:27,476 --> 02:21:50,556
+Anladım. Şey soruyorsun, mesela şu slide'da bir tane örneği, tamam. Örneği güzelleştireyim, sonra da onunkini yazayım, tamam mı? Şimdi bu örnek ne diyor? Set of all strings contain at least one zero diyor, tamam mı? Şimdi bunun tam tersini yapalım. Hiç zero kabul etmeyen stringler, tamam mı? Yeni açtım şurayı.
+
+889
+02:21:54,227 --> 02:22:12,487
+Set of strings, contain, yani at least one zero vardı ya, contain, no zero diyeyim, tamam mı? Fix, ruff, fırk, kabul etmeyeni çizeceğiz. Nasıl çizeceğiz? Bir öncekine gideyim. Bir şeyin tam tersini çiziyorsak nasıl çiziyorduk?
+
+890
+02:22:20,788 --> 02:22:26,148
+Final state olmayanlara Final state yapıyorduk. Final state'leri de normal düz state'e geçiriyorduk. Peki.
+
+891
+02:22:29,108 --> 02:22:33,268
+Deneyelim bakalım. Şimdi buradan da senin epsilon şeyini çözeceğim. Tamam mı?
+
+892
+02:22:33,868 --> 02:22:39,888
+Şöyle yapsak. Şimdi Q0 orada Final değildi, Final oldu. Değil mi?
+
+893
+02:22:41,067 --> 02:22:47,708
+Şurası 0. Q1 Final da düz oldu. Şurada 0 birim vardı.
+
+894
+02:22:48,884 --> 02:23:15,783
+Burada da 0, 1'in var mıydı? Şimdi bu oldu mu olmadı mı? Evet, niye? Çünkü bakın bu 0'ı kabul eder. Değil mi? Şimdi şunu çizerken size, şurayı bir dinleyin sonra bakın. Burayı çizerken buraya 0, 1 de yazabilirim demiştim. Hatırlarsanız 1 de yazabilirim demiştim. Hatırladık mı? Değil mi?
+
+895
+02:23:16,308 --> 02:23:33,448
+Şu an burada fark etmiyordu ama ben bunu buna döndürdüğüm anda şuradaki 0,1 fark etti. Çünkü bu sıfırları da accept eder. Dolayısıyla bunu aldım, hop, sildim. Tamam mı? Şu an bu ne yapıyor?
+
+896
+02:23:37,907 --> 02:23:39,207
+Ne kabul eder bu?
+
+897
+02:23:44,020 --> 02:24:00,979
+sonsuz bir kabul eder. Değil mi? Bir de epsilon kabul eder mi? Eder. Değil mi? Dolayısıyla one star yazabiliriz. Language'e. Değil mi? L2'ye yani o ait. L2 eşittir. Şu bir, bu da yıldız. One star diyebiliriz.
+
+898
+02:24:00,979 --> 02:24:10,360
+Şimdi arkadaşınız güzel bir soru sordu. Epsilon olsa nasıl yazacaktık? Hani deminkinde. Hadi bakalım yazalım. Q0, Q1.
+
+899
+02:24:11,956 --> 02:24:30,036
+Sonra bunu bir modifiye edeyim, tamam mı? Bir şey daha göstereceğim. 0 var, 1 var. Şimdi Q0'a 0 gelse nereye gidiyor? Q1'e. Q0'a 1 gelse? Q0'a. Bir de buraya epsilon'ı her türlü yazmamız lazım. Q1'e.
+
+900
+02:24:33,096 --> 02:24:35,195
+0, 1'de, ikisi de Q1, Q1.
+
+901
+02:24:36,195 --> 02:24:37,056
+Şu 1.
+
+902
+02:24:37,811 --> 02:24:41,991
+Çaktırmayan bir. Peki, Q0'a epsilon gelse?
+
+903
+02:24:46,515 --> 02:24:55,556
+Yine Q0'da kalır. Değil mi? Peki Q1'e Epsilon gelse? Boş güme, hiçbir yere gitmiyor zaten. Epsilon diye bir şey yok.
+
+904
+02:24:56,255 --> 02:24:59,435
+Şimdi arkadaşınızın sorusu sanırım şu, kalemimi değiştiriyorum.
+
+905
+02:24:59,435 --> 02:25:04,775
+Just wait. Biz hep Türkçe konuştuk ya, niye öyle oldu? Online'lar anlamıyor diye oldu.
+
+906
+02:25:05,635 --> 02:25:11,155
+Şimdi şöyle olsaydı, şurada da Q2 olsaydı, tamam mı?
+
+907
+02:25:14,451 --> 02:25:18,711
+Buradan bir epsilon ile Q3'e de gidebilir. O zaman şöyle yazacaktık.
+
+908
+02:25:18,791 --> 02:25:24,091
+Diyelim ki Q1'e epsilon geldiğinde boş güme değil de Q2'ye gidiyor olacak.
+
+909
+02:25:28,500 --> 02:25:30,040
+Öyle söylemek daha doğru.
+
+910
+02:25:30,520 --> 02:25:30,720
+Okey?
+
+911
+02:25:41,268 --> 02:25:42,207
+Hiç anlamadım.
+
+912
+02:25:44,367 --> 02:25:45,567
+Evet.
+
+913
+02:25:53,556 --> 02:25:57,195
+Evet, evet. O zaman bir şey yazmıyoruz, boş güme diyoruz.
+
+914
+02:25:59,876 --> 02:26:03,355
+Ya istiyorsan burada da boş güme diye deme ama yap böyle de.
+
+915
+02:26:19,443 --> 02:26:21,323
+Öyle yaptıysam hata yapmışım.
+
+916
+02:26:24,723 --> 02:26:25,603
+Tabii ki.
+
+917
+02:26:25,943 --> 02:26:27,644
+Slide'da mı yazdım, elimle mi yazdım?
+
+918
+02:26:28,503 --> 02:26:31,283
+Elimle yazdıklarım, bağlantı kopunca uçtu maalesef.
+
+919
+02:26:34,083 --> 02:26:40,063
+Şeyse, bana resmini çek gönder, düzelteyim, Classroom'a koyayım tamam mı? Notlarda yanlış kalması.
+
+920
+02:26:40,823 --> 02:26:42,523
+Tamam, şimdi bir dersten sonra gönderebilirsin.
+
+921
+02:26:43,823 --> 02:26:46,223
+Peki, şunu da siz çizin, hep ben çiziyorum.
+
+922
+02:26:55,316 --> 02:26:56,316
+Set of strings.
+
+923
+02:26:58,896 --> 02:27:01,256
+Çok kolay oldu ya. Start with
+
+924
+02:27:01,256 --> 02:27:04,996
+One zero.
+
+925
+02:27:07,116 --> 02:27:09,936
+Bana yaptık mı? A, B'sini, A, A'sini yaptık. Söyle.
+
+926
+02:27:12,996 --> 02:27:15,136
+Siliyorum. Bunu yapmış.
+
+927
+02:27:16,956 --> 02:27:21,156
+İşte bağlantım kopunca bütün whiteboard'ın uçtu. Sıfırdan başladık.
+
+928
+02:27:22,355 --> 02:27:23,556
+Bunu nasıl yapacaksınız?
+
+929
+02:27:31,956 --> 02:27:32,355
+Haydi.
+
+930
+02:27:37,556 --> 02:27:43,015
+Şimdi bakın, böyle yaparken ilk kabul ettiğini düşünün, sonra kabul etmediklerini Trap Step'a atın. Tamam mı? En kötü.
+
+931
+02:27:43,655 --> 02:27:52,615
+Trap Step'a atın. Şimdi ne diyor? 1, 0'ı kabul, 1, 0'la başlayacak diyor. O zaman Q0, hop, Q1, şurası startım.
+
+932
+02:27:55,115 --> 02:28:03,716
+Q2 olsun. 1, 0'la başlıyor. Sonra ne yapacağım?
+
+933
+02:28:12,531 --> 02:28:13,991
+Q2 mi final state olacak?
+
+934
+02:28:15,851 --> 02:28:17,191
+Yaptım. Oldu mu?
+
+935
+02:28:22,708 --> 02:28:32,628
+Bitti mi bu olay? Bu şimdi 1-0 ile başlayanları kabul eder mi? Mesela 1-0-1'i kabul eder mi?
+
+936
+02:28:37,268 --> 02:29:03,547
+Etmez değil mi? Niye? Çünkü bir sıfır da buraya gelir, sonra şu bir de hop trap state'e gider. Ama kabul etmesini istiyorum. O yüzden şöyle de bir tane kendine döndüreceğiz. Tamam mı? Peki and sweet desem ne olur? Start sweet dedik ya. And sweet one zero desek. Nasıl yapacağız?
+
+937
+02:29:06,708 --> 02:29:15,128
+L4, set of strings, and width, 1-0.
+
+938
+02:29:20,884 --> 02:29:23,884
+NFA
+
+939
+02:29:30,932 --> 02:29:38,292
+Şimdi 0-1 olduğuna göre, tamam mı? Şöyle bir şey yapacağız. Yani 1-0, böyle gitmek zorunda.
+
+940
+02:29:45,108 --> 02:29:59,987
+Ne yapacağız? Kabul edeceğiz. Ama şu an bu, bakın, en baştan başlayayım. Yani en bez durumda. Tamam mı? Bu ne yapıyor? Bir sıfırı kabul ediyor. Ama benim istediğim bu değil ki. Bir sıfırla bitenleri kabul etsin istiyorum. Ne yapacağım?
+
+941
+02:29:59,987 --> 02:30:07,907
+Q2'den.
+
+942
+02:30:09,648 --> 02:30:11,907
+Burası Q2. 3'ye atmışım. Evet.
+
+943
+02:30:14,100 --> 02:30:17,659
+1 gelirse Q1'e gitsin.
+
+944
+02:30:18,619 --> 02:30:18,939
+Eee?
+
+945
+02:30:20,380 --> 02:30:20,659
+Tamam.
+
+946
+02:30:22,819 --> 02:30:25,479
+0 gelirse de Q0'a gitsin.
+
+947
+02:30:27,139 --> 02:30:28,260
+Başka türlü yapamaz mıyım?
+
+948
+02:30:29,079 --> 02:30:32,739
+Daha basit, daha öyle DFA gibi gidiyoruz.
+
+949
+02:30:32,920 --> 02:30:34,720
+Tamam mı? Daha basit bir şekilde çizebilirim.
+
+950
+02:30:34,799 --> 02:30:36,560
+Sizin dediğiniz olur, yanlış değil.
+
+951
+02:30:37,180 --> 02:30:38,659
+Daha basit bir yolu var. Ne yapacağım?
+
+952
+02:30:40,139 --> 02:30:40,380
+Söyle.
+
+953
+02:30:41,203 --> 02:30:47,243
+Epsilion ile başa dönebilir miyiz?
+
+954
+02:30:52,691 --> 02:31:07,311
+1-0-1-0 kabul edecek değil mi mesela? Epsilon'la başa dönsem 1-0-1-0 kabul eder mi? Ama Epsilon'la başa dönersem tamam eder, güzel. Bir şeyler daha var, haydi. Söyle.
+
+955
+02:31:17,940 --> 02:31:20,740
+Şimdi ne oldu? Oldu mu?
+
+956
+02:31:27,316 --> 02:31:37,136
+Bu oldu mu, olmadı mı? Haydi bakalım, oldu diyenler. Olmadı diyenler. Niye olmadı?
+
+957
+02:31:42,227 --> 02:31:43,608
+Hemen olmazı biliyorsunuz.
+
+958
+02:31:43,768 --> 02:31:46,307
+Bir köyüç, bir stringden geçe, geri anlatayım.
+
+959
+02:31:47,867 --> 02:31:52,948
+Söyle bakalım, kaç mesela bunun accept etmesi gereken ama accept etmediği stringi söyle.
+
+960
+02:31:53,347 --> 02:31:55,847
+Hocam, köyüçü bir geldi geldi diye bir parada.
+
+961
+02:31:56,227 --> 02:31:58,467
+Yani arkadaşınız diyor ki, bir dakika bekle bekle.
+
+962
+02:31:59,127 --> 02:32:01,768
+Diyelim ki bir sıfır bir geldi diyorsun değil mi?
+
+963
+02:32:02,007 --> 02:32:02,167
+Evet.
+
+964
+02:32:02,307 --> 02:32:04,167
+Bu bunu accept etmez mi diyorsun?
+
+965
+02:32:04,427 --> 02:32:04,647
+Evet.
+
+966
+02:32:05,687 --> 02:32:06,927
+Accept etmesi mi lazım?
+
+967
+02:32:06,927 --> 02:32:08,627
+Ben şöyle bir sıfır bir sıfır etmiyorum.
+
+968
+02:32:09,683 --> 02:32:11,144
+1 sıfır 1 sıfır yok etmez.
+
+969
+02:32:14,523 --> 02:32:20,083
+Bak ne oluyor biliyor musun? İlk 1 sıfırı şu içinde döndürüyor, sonraki 1 sıfırı kabul ediyor.
+
+970
+02:32:22,183 --> 02:32:22,823
+Tamam.
+
+971
+02:32:25,043 --> 02:32:33,963
+Yani bu gayet basit. Ama şöyle şöyle buradan sıfır çıkarıp buraya atsanız falan filan yine çalışır yani. Tamam.
+
+972
+02:32:35,028 --> 02:32:43,387
+Sıfır koysanız, buraya tutsanız, epsilon koysanız falan filan olur ama gerek var mı? Yok. En temiz hali bu.
+
+973
+02:32:47,796 --> 02:32:54,556
+Peki, şununla şunun arasındaki fark ne? Bakın bakalım. 1-1-0 ile başlayalım. 1-1-0 ile biten. Farkları ne?
+
+974
+02:33:00,948 --> 02:33:24,968
+Bakın bu ağaç, farkı şu, bir sıfırları başladıktan sonra birinde, sonda istediği kadar alıyorsunuz, burada da başta alıyorsunuz. Bakın bunu ağaç gibi düşüneceğiz. Niye? Bir burada var, bir burada var. Mesela arkadaşınızın dediği bir sıfır, bir sıfır var ya. Şimdi yapalım, hemen bir güzel çizelim. Oh, bence güzel bir şey. İtirazdı. Tebrik ediyoruz. Şimdiki.
+
+975
+02:33:26,195 --> 02:33:33,056
+Q1, Q3'den de vazgeçiyorum. Buna ABC diyorum ki işler anlatması kolay olsun.
+
+976
+02:33:37,716 --> 02:33:41,655
+Burası A, B, C.
+
+977
+02:33:42,796 --> 02:33:47,015
+Şimdi inputumuz 1-0, 1-0.
+
+978
+02:33:48,376 --> 02:33:54,796
+A'ya 1 gelirse ne olur? Ya A'da kalır ya da B'ye gider.
+
+979
+02:33:54,796 --> 02:33:56,175
+Değil mi? Inputum 1.
+
+980
+02:33:57,916 --> 02:34:01,576
+A'ya 0 gelirse A'da kalır.
+
+981
+02:34:02,355 --> 02:34:03,576
+B'ya 0 gelirse
+
+982
+02:34:05,299 --> 02:34:06,319
+C'ye gider.
+
+983
+02:34:07,439 --> 02:34:09,019
+Bir sonraki inputum ne?
+
+984
+02:34:10,479 --> 02:34:11,159
+Bir daha bir.
+
+985
+02:34:12,619 --> 02:34:18,039
+A'ya bir gelirse, ya A'ya gider, ya B'ye gider.
+
+986
+02:34:19,859 --> 02:34:23,639
+C'ye bir gelirse, şurada, hop, trap state.
+
+987
+02:34:23,759 --> 02:34:25,959
+Buradan devam etmiyoruz. Tamam mı? Şunlar bir.
+
+988
+02:34:26,835 --> 02:34:45,255
+A'ya 0 geldi, B'ye 0 geldi. A'ya 0 gelirse A'da kalır, B'ye 0 gelirse C'ye gider. Dolayısıyla şunu accept et. Tamam mı? Yani şuradaki ağacın şu accept et. Okey? Böyle düşünürseniz daha kolay yaparsın.
+
+989
+02:35:13,332 --> 02:35:19,371
+Şu an kafadan bir şey çizeceğim. Çiziyorsunuz değil mi? Tamam, çizin. Chat'e bakıyorum.
+
+990
+02:35:22,012 --> 02:35:28,051
+Hocam, state'lerin birileri Q1'e gitmez mi? Tüm state'lerin birileri Q1'e gitmez mi? Dur bekle.
+
+991
+02:35:28,852 --> 02:35:32,352
+Şurada değil mi? Tüm state'lerin birileri Q1. Q1 bu muydu?
+
+992
+02:35:35,352 --> 02:35:40,912
+Soruyu bir daha açar mısın? [öğrenci]. Tüm state'lerin birileri Q1'e gitmez mi?
+
+993
+02:35:48,500 --> 02:35:49,500
+No, вообще, блин.
+
+994
+02:36:21,811 --> 02:36:23,811
+Herhalde yaz...
+
+995
+02:36:23,811 --> 02:36:28,331
+Tüm size doğru olması için sormuştum da siz zaten söylediniz. Tamam, okeydir.
+
+996
+02:36:29,471 --> 02:36:34,611
+Şimdi, çok acayip bir şey çizeceğim. Tamam mı? Bu neyi accept eder? Bakın.
+
+997
+02:36:35,831 --> 02:36:39,171
+Şu 1-2-3 yazdığım state'ler ABC gibi alabilirsiniz.
+
+998
+02:36:40,171 --> 02:36:40,491
+1
+
+999
+02:36:40,491 --> 02:36:43,772
+Epsilon
+
+1000
+02:36:43,772 --> 02:36:45,991
+2
+
+1001
+02:36:45,991 --> 02:36:47,572
+Epsilon
+
+1002
+02:36:47,572 --> 02:36:49,211
+2
+
+1003
+02:37:09,492 --> 02:37:10,171
+Bu 5.
+
+1004
+02:37:10,171 --> 02:37:11,832
+Çaklanıyorum ama 5.
+
+1005
+02:37:52,275 --> 02:37:53,755
+Şöyle yapayım da bir daha.
+
+1006
+02:37:57,736 --> 02:38:05,795
+Şimdi buraya baktığınız zaman, dinleyin burayı, bir sürü epsilon görüyorsunuz değil mi? Bu ne demek?
+
+1007
+02:38:07,955 --> 02:38:14,376
+Mesela üçteki epsilon, üçte kalabilir, altıya da gidebilir. Ama burada üçten bir şey gitmemiş zaten.
+
+1008
+02:38:15,335 --> 02:38:18,475
+Tamam mı? Dolayısıyla yani şununla
+
+1009
+02:38:19,796 --> 02:38:22,175
+Şu epsilon aynı şey.
+
+1010
+02:38:23,816 --> 02:38:28,076
+Mesela dörde ikiden epsilon ile gelebilirsiniz.
+
+1011
+02:38:28,736 --> 02:38:30,496
+Yani epsilon A ile gelebilirsiniz.
+
+1012
+02:38:30,675 --> 02:38:32,876
+Direkt epsilon ile gelebilirsiniz.
+
+1013
+02:38:33,855 --> 02:38:34,136
+Değil mi?
+
+1014
+02:38:34,816 --> 02:38:39,416
+Dolayısıyla baktığınız zaman, bunun da şu start state'imiz de burası.
+
+1015
+02:38:40,656 --> 02:38:43,936
+Ağaç olmadan yapmaya kalkarsanız zorlanırsınız.
+
+1016
+02:38:44,076 --> 02:38:45,496
+Bu neleri accept eder peki?
+
+1017
+02:38:45,496 --> 02:38:46,496
+A.
+
+1018
+02:38:48,051 --> 02:38:52,452
+A'yı eder. Güzel. Başka?
+
+1019
+02:38:53,971 --> 02:38:56,412
+2 A'yı eder mi? Başka?
+
+1020
+02:39:04,404 --> 02:39:10,123
+Başka bir şey etmez değil mi? Buradaki B'nin hiçbir şeyi yok. Peki 3A'y eder mi?
+
+1021
+02:39:14,067 --> 02:39:20,867
+Şöyle gelse, bir, iki, üç, şurada şöyle.
+
+1022
+02:39:23,807 --> 02:39:26,827
+Tamam, okey, dörtten bir en iyimiz yok, dönüşümüz.
+
+1023
+02:39:31,407 --> 02:39:32,387
+Çıkır bir bakalım.
+
+1024
+02:39:34,608 --> 02:39:38,108
+A ve A, A, tamam, okey. Bu şey epsilon umarım anlaşılmıştır.
+
+1025
+02:39:40,884 --> 02:40:05,123
+Şimdi çalışma soruları vereceğim. Mutlaka bakın. Tamam mı? Oğuz Hoca ile hazırlayıp herhalde bu hafta içinde size vermiş oluruz. Şimdi şu proof'ta kaldık. Bu proof'ta ne yapacağız? Bir NFA'yı DFA'ya eşit olduğunu gösterdikten sonra bir NFA'yı DFA'ya nasıl çeviririz ona bakacağız. Tamam mı? Subset betodu kullanacağız. Tamam. Okey.
+
+1026
+02:40:07,572 --> 02:40:27,152
+Bunda haftaya. Şimdi kaçta kaldık? Şu kurukta kaldık. Slide numarası yok zaten ya. Tamam, okey. Kırk geçiyor. Bugünlük bu kadar. Tamam, haftaya görüşmek üzere. Online'lar görüşmek üzere. Bye bye.
