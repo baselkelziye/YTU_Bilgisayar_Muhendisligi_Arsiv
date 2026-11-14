@@ -1,0 +1,1719 @@
+1
+00:02:19,508 --> 00:02:21,368
+Hocam sesiniz gelmiyor.
+
+2
+00:03:19,508 --> 00:03:27,468
+Evet, merhaba arkadaşlar. Şu an sesim geliyor herhalde. Tamamdır. Herhalde geliyor.
+
+3
+00:03:31,968 --> 00:03:42,188
+Dünkü derste dersin genelinden bahsettik. Ders içeriyle neler işleyeceğimizden bahsettik. Bu derste de dizilerden devam edeceğiz.
+
+4
+00:03:42,367 --> 00:03:46,508
+Önce bir dünkü dersin kısa bir tekrarını yapmak istiyorum. Daha sonra...
+
+5
+00:03:47,219 --> 00:03:51,639
+Konu sıralamamıza göre devam edeceğiz arkadaşlar.
+
+6
+00:03:54,599 --> 00:03:54,939
+Şimdi
+
+7
+00:03:54,939 --> 00:04:01,639
+Öncelikle dizi nedir? Dizi aslında
+
+8
+00:04:02,132 --> 00:04:08,331
+Bir çeşit fonksiyondur. Zaten fonksiyonları biliyorduk. Ancak bu fonksiyonun şöyle bir özelliği var.
+
+9
+00:04:09,132 --> 00:04:20,012
+Numaralandırılmış terimlerle gitmesi gerekiyor. Yani birden sonsuza kadar doğal sayılarla numaralandırılmış bir düzene göre ilerlemesi gerekiyor.
+
+10
+00:04:21,552 --> 00:04:27,351
+Bir dizinin belli bir kurala göre sıralanmış fonksiyonlar olduğunu
+
+11
+00:04:29,331 --> 00:04:30,372
+İfad ediyoruz.
+
+12
+00:04:31,348 --> 00:04:39,048
+Ve dizinin genel terimini AN dedik, N'e indis dedik ve bu kurala göre sıralanmış sayılara dizi dedik.
+
+13
+00:04:39,427 --> 00:04:42,048
+Ve bu dizilerle ilgili bazı özelliklerden bahsediyoruz.
+
+14
+00:04:42,048 --> 00:04:50,508
+Bazı dizi örnekleri verdik. Mesela 1 bölü N dizisi, N 1 olduğunda 1 oluyor, 2 olduğunda 1 bölü 2 oluyor, 3 olduğunda 1 bölü 3 oluyor.
+
+15
+00:04:50,608 --> 00:04:57,567
+Bu şekilde giden diziydi ve benzer şekilde farklı dizi örnekleri verebiliriz. Bunları dün de ifade etmiştik.
+
+16
+00:04:58,612 --> 00:05:05,372
+Yine dizilerde toplam çarpım, sabit sayıyla, skalerle çarpım gibi özellikleri de belirttik.
+
+17
+00:05:05,372 --> 00:05:24,712
+Sınırlı dizi kavramına girdik. Üstten ya da alttan bir sayıyla sınırlanabiliyorsa, üstten ya da alttan bir sayıdan küçük terimlere sahipse ya da bir sayıdan bütün terimler büyükse, üstten sınırlı ya da alttan sınırlı diyorduk diziye.
+
+18
+00:05:27,540 --> 00:05:42,440
+AN dizisi alttan, N dizisi mesela, AN eşitir N dizisi, 1, 2, 3, 4, 5 diye gidiyor. Bu alttan 1 ile sınırlıdır, üstten sınırlı değildir.
+
+19
+00:05:43,200 --> 00:05:54,720
+Ve bu dizide alttan 1 bölü 2 ile üstten 1 ile sınırlıdır demiştik. Monoton dizi kavramına girdik. Monoton dizide azalmayan ya da artmayan kavramını karşılayan dizilerdir.
+
+20
+00:05:55,028 --> 00:06:04,468
+Azalmayan kavramını, an artı bir bölü an büyüktür bir ise azalmayandır dedik, an artı bir bölü an küçüktür bir ise artmayan dizidir dedik.
+
+21
+00:06:05,187 --> 00:06:09,848
+Azalmayan ve artmayan olduğunu, bakın burada şunu ifade etmiştik.
+
+22
+00:06:09,848 --> 00:06:12,468
+An
+
+23
+00:06:25,812 --> 00:06:26,692
+3 eşittir.
+
+24
+00:06:30,052 --> 00:06:31,111
+A n artı 1 ise,
+
+25
+00:06:33,951 --> 00:06:34,632
+bu durumda,
+
+26
+00:06:35,312 --> 00:06:36,372
+A n artı 1'i,
+
+27
+00:06:36,912 --> 00:06:37,752
+ya da A n'i,
+
+28
+00:06:38,672 --> 00:06:41,591
+bu tarafa atabiliriz. Mesela A n'i bu tarafa attık.
+
+29
+00:06:41,591 --> 00:06:45,812
+Bu durumda, burası A n artı 1 bölü, A n oldu.
+
+30
+00:06:46,252 --> 00:06:46,992
+Değil mi arkadaşlar?
+
+31
+00:06:47,572 --> 00:07:03,172
+Ve ben ne yapıyorum? An artı bir bölü An, birden küçük eşit oluyor. Çünkü bu An artı bir, An'ı bu tarafa attığımda, burada bir kaldı. An artı bir bölü An, birden büyük olmuş oldu.
+
+32
+00:07:13,492 --> 00:07:39,612
+AN'den, ya büyük olacak, ya eşit olacak. Yani bir artış var, azalış yok. Azalmayan dizdir diyorum. Yine AN artı bir küçük eşittir AN durumundaysa, ben AN ifadesini bu tarafa atıyorum. AN'i bu tarafa attığımda, AN artı bir bölü AN, küçüktür, bir oluyor.
+
+33
+00:07:40,180 --> 00:07:47,600
+Bu durumda da, bakın, an artı bir an'den daha küçük. Dikki edin buraya. An artı bir an'den daha küçük.
+
+34
+00:07:50,920 --> 00:07:53,579
+An artı bir an'den daha küçük olduğu için,
+
+35
+00:07:59,220 --> 00:08:05,740
+Bakın bir azalma olabilir. An artı 1 çünkü An'den küçük eşit.
+
+36
+00:08:06,132 --> 00:08:10,012
+Ancak bir artış yok. Dolayısıyla artmayan dizide diyoruz.
+
+37
+00:08:10,331 --> 00:08:22,091
+İşte bu azalmayan ya da artmayan diziler durumundaysa, bu diziye, böyle bir özelliği sağlayan diziye, yani azalmayan veya artmayan bir diziye, biz monoton dizi diyeceğiz.
+
+38
+00:08:22,372 --> 00:08:24,151
+Monoton dizi kavramı da bu.
+
+39
+00:08:24,572 --> 00:08:26,432
+Şimdi bakın örneklerde şunu yaptık.
+
+40
+00:08:26,791 --> 00:08:31,391
+N bölü N artı bir mesela, dizisi monoton mudur diyor.
+
+41
+00:08:32,628 --> 00:08:34,508
+Bu dizi monotonudur, inceleyeceğiz.
+
+42
+00:08:35,708 --> 00:08:37,847
+An artı bir bölü, An terimini alıyorum.
+
+43
+00:08:38,307 --> 00:08:40,388
+Şimdi bakın, An artı bir terimi nedir?
+
+44
+00:08:42,087 --> 00:08:47,607
+An artı bir terimi, N yerine bu dizide N artı bir koyduğumuz durumdur.
+
+45
+00:08:48,327 --> 00:08:49,668
+N yerine N artı bir koyuyor.
+
+46
+00:08:50,347 --> 00:08:54,248
+An artı bir, N artı bir bölü, N artı bir artı bir oluyor.
+
+47
+00:08:54,488 --> 00:08:56,307
+Bakın, N yerine N artı bir koydu.
+
+48
+00:08:56,468 --> 00:08:58,748
+Dolayısıyla N artı bir bölü, N artı iki oldu yukarı.
+
+49
+00:08:59,988 --> 00:09:04,188
+AN yerine de zaten, AN neydi? N bölü N artı 1'di. Onu koyuyorum.
+
+50
+00:09:05,807 --> 00:09:13,307
+Buraya N artı 1 bölü, N'i yukarı taşıdığım zaman, N artı 1'in karesi bölü, N artı 2 çarpı N oluyor.
+
+51
+00:09:14,688 --> 00:09:18,168
+N artı 1'in karesi, N kare artı 2, N artı 1 oldu arkadaşlar.
+
+52
+00:09:18,676 --> 00:09:37,235
+Aşağısı n artı 2 çarpı n oldu. Bakın bunu ters çevirip yukarı taşıdım. n artı 2 çarpı n oldu. Dolayısıyla aşağısı n kare artı 2 n oldu arkadaşlar. Bu durumda n kare artı 2 n artı 1'in bakın payı, paydan nedir? Bir büyüktür arkadaşlar.
+
+53
+00:09:45,683 --> 00:09:59,463
+Paydan büyük. Pardon, pay paydadan bir büyük. Dolayısıyla bu ifade birden büyüktür. Bu durumda da şunu söyleyebiliriz. An artı bir, an'den büyüktür arkadaşlar.
+
+54
+00:10:00,179 --> 00:10:17,879
+AN artı 1 AN'den büyükse, ne var burada bakın, AN'den AN artı 1'e artış var. Yani bu AN dizisi azalmayan bir dizidir. Dolayısıyla monoton dizidir arkadaşlar. Bu monoton kavramında anlaşılmayan bir şey var mı arkadaşlar?
+
+55
+00:10:22,740 --> 00:10:26,220
+Anlaşıldı diyenler 1'e bassın. En azından bu örnek için.
+
+56
+00:10:28,860 --> 00:10:30,480
+Teşekkürler yanıtlarınız için.
+
+57
+00:10:31,100 --> 00:10:32,160
+Diğer örneğe geçiyorum.
+
+58
+00:10:42,100 --> 00:10:50,559
+Bu monotonluk kavramını gösterdikten sonra tekrardan biraz ısınmış olacağız diye dizinin limiti kavramına geçeceğiz.
+
+59
+00:11:01,203 --> 00:11:03,144
+Bütün diziler monoton olmuyor.
+
+60
+00:11:08,788 --> 00:11:18,528
+Mesela, eksi 1 üzeri n dizi monoton olmuyor. Yani artış ve yazılıştan bahsedemiyoruz. Her dizi monoton olmuyor. Dolayısıyla. Evet.
+
+61
+00:11:21,707 --> 00:11:23,211
+Şimdi a n...
+
+62
+00:11:39,539 --> 00:11:47,559
+AN dizisi olarak bize, 1, 1 bölü 2, 1 bölü 4, 1 bölü 8 şeklinde, yani bunu da biz, tabii kestireceğiz.
+
+63
+00:11:47,700 --> 00:11:53,720
+Yani AN nedir? Mesela, 1 için 1 olmuş, en eşittir 1 için. En eşittir 2 için.
+
+64
+00:11:54,131 --> 00:12:17,131
+1 bölü 2 olmuş, eniştir 3 için 1 bölü 4 olmuş. 1 bölü 2'nin 2 üzeri n gibi bir şey değil mi bu ifade? Buradan biz dizinin genel terimini kestirim yapmamız lazım. Yani bu dizinin genel terimi 1 bölü 2 üzeri n gibi bir şey. 1 bölü 2 üzeri n olabilir mi? Olamaz. Çünkü birinci terim 1 zaten. 1 bölü 2 üzeri n olamaz. Çünkü...
+
+65
+00:12:18,259 --> 00:12:34,099
+1 bölü 2 üzeri n olursa, n'e 1 verirse, 1 bölü 2 olur birinci terim. Dolayısıyla 1 bölü 2 üzeri n-1 olacak. 1 bölü 2 üzeri n-1 olur mu? n eşittir 1 için 1 oluyor. n eşittir 2 için doğru 1 bölü 2 oluyor, 1 bölü 4 oluyor. Bu şekilde ilerleyeceğiz. Genel terim bu şekilde.
+
+66
+00:12:47,091 --> 00:12:48,831
+Büyük eşit ifadesi
+
+67
+00:12:52,851 --> 00:12:55,511
+Şu büyüktür, eşittir.
+
+68
+00:12:57,392 --> 00:13:00,531
+Ya da küçüktür, eşittir.
+
+69
+00:13:00,872 --> 00:13:04,172
+Yani küçük de olabilir, eşit de olabilir anlamına geliyor.
+
+70
+00:13:06,412 --> 00:13:10,292
+Büyük olabilir ya da eşit olabilir anlamında.
+
+71
+00:13:16,724 --> 00:13:34,984
+Şurada an artı bir küçük eşittir an ifadesi ise, an artı bir an'den küçük olabilir. Yani an'den sonraki terim an'den küçük olabilir. Ya da an'den sonraki terim an artı bir terimi an terimine eşit olabilir anlamına geliyor.
+
+72
+00:13:39,124 --> 00:13:46,803
+Eşit olursa artmayan olmuş olacak. Yani artmıyor. Artmayan. Ya da azalmayan olacak.
+
+73
+00:13:49,323 --> 00:13:58,183
+Yani mesela şöyle oldu. 1, 1, 2, 3. Azalmayan olmuş oluyor. Ama ilk iki terim birbirine eşit gibi gibi.
+
+74
+00:14:10,995 --> 00:14:14,575
+Sabit dizi olmuş oluyor. Evet. Monotonluktan bahsedemiyoruz.
+
+75
+00:14:23,220 --> 00:14:24,560
+Dizisi monotonudur demiş.
+
+76
+00:14:25,440 --> 00:14:26,019
+Şimdi bakalım.
+
+77
+00:14:26,840 --> 00:14:29,580
+1 bölü 2 üzeri n-1 terimine bakalım.
+
+78
+00:14:31,500 --> 00:14:32,220
+Bu terimde,
+
+79
+00:14:33,379 --> 00:14:34,580
+genel terimi kullanarak,
+
+80
+00:14:34,899 --> 00:14:40,120
+Bizim an artı bir bölü an ifadesini hesaplamamız gerekiyor arkadaşlar.
+
+81
+00:14:40,459 --> 00:14:43,939
+An artı bir bölü an ifadesini hesaplamamız gerekiyor.
+
+82
+00:14:44,319 --> 00:14:51,199
+Yani bu ifade birden küçük mü büyük mü buna göre artan mı, artmayan mı, azalmayan mı, nasıl bir molatonun? Ön test edeceğiz.
+
+83
+00:14:51,919 --> 00:14:57,120
+Bir bölü 2 üzeri n artı bir eksi bir olacak burası.
+
+84
+00:14:57,559 --> 00:14:59,199
+Bakın burası 2 üzeri n artı bir.
+
+85
+00:14:59,923 --> 00:15:21,604
+Eksi 1. Yani n yerine n artı 1 koyuyorum burada. Eksi 1 ile artı 1 birbirini götürdü. 1 bölü 2 üzeri n oldu burası. Bölü n yerine n koyuyorum. Zaten genel terim 1 bölü 2 üzeri n eksi 1. Dolayısıyla bakın 1 bölü 2 üzeri n bölü 1 bölü 2 üzeri n eksi 1 oldu. Bunu yukarı attığım zaman 2 üzeri n eksi 1 olarak 2 üzeri eksi 1 oldu burası.
+
+86
+00:15:22,131 --> 00:15:34,072
+2 üzeri eksi 1'de 1 bölü 2'dir zaten. 1 bölü 2'de 1'den küçüktür. Yani AN dizisi artmayan bir dizidir. Yani monoton bir dizidir arkadaşlar.
+
+87
+00:15:40,275 --> 00:15:45,435
+Monotonluk bu şekilde. Birden küçük olup olmamasına bakarak bunu tespit ediyoruz.
+
+88
+00:15:45,995 --> 00:15:50,315
+Şimdi dizilerde limit kavramı var. Limit kavramının bir tanımını göstereceğiz.
+
+89
+00:15:55,475 --> 00:15:59,475
+Fonksiyonlardaki limit kavramının bir özel durumu bu limit kavramı.
+
+90
+00:15:59,615 --> 00:16:00,995
+Dizilerde limit kavramı.
+
+91
+00:16:01,956 --> 00:16:05,895
+An bir dizi olsun arkadaşlar.
+
+92
+00:16:07,235 --> 00:16:08,555
+An bir dizi olsun.
+
+93
+00:16:08,555 --> 00:16:15,635
+Eğer her epsilon büyüktür sıfır sayısı için n büyük eşittir n iken,
+
+94
+00:16:16,096 --> 00:16:20,115
+an eksi ile küçüktür epsilon olacak şekilde,
+
+95
+00:16:20,559 --> 00:16:30,059
+Bir n eşitin, n epsilon tam sayısı varsa, an dizisi bir limite sahiptir diyoruz. L limitine yakın sahip diyoruz.
+
+96
+00:16:30,179 --> 00:16:39,559
+Ve limit an, n sonsuza giderken eşittir l ile gösterilir. L ise dizinin limitidir. Şimdi bu tanım ne demek istiyor?
+
+97
+00:16:40,460 --> 00:16:45,659
+Şunu demek istiyor, epsilon büyüktür sıfır sayısı arkadaşlar, özel bir sayı.
+
+98
+00:16:45,971 --> 00:16:48,572
+Limit tanımında kullanılan bir sayı.
+
+99
+00:16:49,471 --> 00:16:55,792
+Epsilon büyüklüğü sıfır sayısı, sıfıra oldukça yakın bir sayı.
+
+100
+00:16:56,192 --> 00:17:05,532
+Yani 0,001 gibi, 0,00 sonsuz tane, yani çok büyük sayıda 0,1 gibi bir sayı.
+
+101
+00:17:06,291 --> 00:17:09,152
+Yani sıfıra oldukça yakın, minik bir sayı.
+
+102
+00:17:09,991 --> 00:17:11,251
+Böyle bir sayı bulursam,
+
+103
+00:17:11,955 --> 00:17:38,495
+Her böyle bir sayı için, yani böyle minik minik sayılar buldum sıfıra. En büyük eşittir en için, yani bir numaralandırılmış en noktasından sonra, mesela bir milyonuncu numaradan sonra, yüz milyonuncu, bir milyonuncu, bir trilyonuncu noktadan sonra, ya da bu noktadan büyük enler için, yani bunlar farazi, çok büyük enler için, bir numaradan sonraki enler için.
+
+104
+00:17:39,220 --> 00:18:03,820
+an eksile, yani dizinin çok ilerideki bir terimini aldım. An derken mesela bir milyonuncu terimini alıyorum. Bir trilyonuncu terimini alıyorum. Ve ondan l'yi çıkartıyorum. Bir sabit sayıyı çıkartıyorum. Eğer bu iki sayı arasındaki farkı aldığımda, epsilondan küçük olacak şekilde ise,
+
+105
+00:18:06,132 --> 00:18:21,872
+Ve bu fark, epsilon'dan küçük olacak şekilde, bir n eşittir, n epsilon tam sayısı, epsilon'a bağlı bir n numarası bir tam sayı bulunabiliyorsa, a n dizisi, l limitine yakınsak diyoruz.
+
+106
+00:18:22,372 --> 00:18:25,271
+Ve limit a n eşittir, l diyoruz arkadaşlar.
+
+107
+00:18:25,932 --> 00:18:28,932
+l'ye de bu dizinin limiti diyoruz.
+
+108
+00:18:28,932 --> 00:18:30,032
+Bu ne anlama geliyor?
+
+109
+00:18:34,003 --> 00:18:48,563
+A1 aldık, A2 aldık, işte A3 aldık, böyle bu dizi ilerliyor, AN aldık, AN artı 1 aldık vs.
+
+110
+00:18:51,003 --> 00:18:55,563
+Diyelim ki real sayı, real eksendeyiz, bunları numaralandırdık.
+
+111
+00:19:01,779 --> 00:19:27,960
+L sayısı var arkadaşlar. Bu AN'den büyük sayılar alıyorum. AN artı 1, AN artı 2. Ya da bir numara belirliyorum. O numaradan daha büyük AN'ler alıyorum. Bu AN'ler, yani AN artı 1 olabilir, AN artı 5 olabilir vs. Bu AN'ler, L'ye o kadar yaklaşıyorlar ki, çok yaklaşıyorlar. Ama hiçbir zaman L olmuyorlar.
+
+112
+00:19:29,811 --> 00:19:53,192
+AN'lerin L'ye çok yaklaştığını söylüyorum. AN'ler L'ye çok yakın ama L'de değiller. Bu o zaman ne demektir? Bu sıfıra oldukça yakın bir sayı olmalı değil mi arkadaşlar? AN-L'ye sıfıra oldukça yakın bir sayı olmalı.
+
+113
+00:19:57,236 --> 00:20:05,456
+Sıfıra ne kadar yakın olursa, AN'lerin de L'ye o kadar yakın olduğunu söyleyebiliriz.
+
+114
+00:20:06,135 --> 00:20:14,276
+Yani bu aradaki farkın sıfıra çok yakın olması, AN dizisinin limitinin L olması anlamına geliyor.
+
+115
+00:20:14,896 --> 00:20:19,096
+AN dizisinin limitinin L'ye yakın olduğu anlamına geliyor.
+
+116
+00:20:19,256 --> 00:20:23,356
+L limit olduğu anlamına gelmesi için de bir tanım geliştirmek gerekiyor.
+
+117
+00:20:23,700 --> 00:20:27,059
+İşte bu tanımda nedir? Bu tanımda arkadaşlar,
+
+118
+00:20:32,980 --> 00:20:39,960
+Ben bu sıfır oldukça yakındır demiyorum. Yani bunu ben matematiksel olarak ifade etmek istiyorum.
+
+119
+00:20:40,940 --> 00:20:47,700
+Yani sözel ifadeleri sevmiyorum ben. Afaki konuşmak istemiyorum. Teorik şeyler söylemek istemiyorum.
+
+120
+00:20:47,700 --> 00:20:58,679
+Ne yapmak istiyorum? Ben bunu gerçekten matematiksel bir tanımla ifade etmek istiyorum. Bir matematiksel ifade olsun istiyorum.
+
+121
+00:20:59,124 --> 00:21:16,943
+Yani ben bunu sembollerin diliyle, sembollerle ifade etmek istiyorum. Semboller ne der? Bir, epsilon sayısı alayım diyorum. Bu sembol ne anlama geliyor epsilon sayısı? Sıfıra oldukça yakın bir sayı alayım diyorum.
+
+122
+00:21:16,943 --> 00:21:26,344
+Ve bunu zihnimde bu sembolü, epsilon sembolünü sıfıra oldukça yakın bir sayı olarak ifade ediyorum.
+
+123
+00:21:27,316 --> 00:21:37,836
+Yani sıfıra oldukça yakın, mini minnacık, çok küçük bir sayıyı zihnimde epsilon olarak tanımlıyorum.
+
+124
+00:21:37,836 --> 00:21:50,615
+Ve bunu kağıda döküyorum. Diyorum ki bu an-l ifadesi, yani dizinin arkadaşlar, l'ye oldukça yaklaştığını,
+
+125
+00:21:51,059 --> 00:22:17,059
+AN'lerin L'ye çok yakın sayılar olduğunu, ancak hiçbir zamanda L olmadığını ifade etmek için, AN-L ifadesi, benim zihnimde tanımladığım, bir şekilde tanımladığım, sıfıra oldukça yakın bir sayı olarak ifade ettiğim, sıfıra oldukça yakın bir sayı olduğunu varsaydım, zihnimde oluşturduğum bir epsilon sayısından,
+
+126
+00:22:18,195 --> 00:22:19,976
+küçük olsun, diyor.
+
+127
+00:22:20,855 --> 00:22:25,236
+a en eksile, küçüktür, epsilon olacak şekilde, diyorum.
+
+128
+00:22:26,076 --> 00:22:33,016
+Bir, numaralandırma sistemi geliştirebiliyorsam, yani en eşittir, en epsilon tam sayısı varsa,
+
+129
+00:22:34,195 --> 00:22:36,895
+yani a enleri oldukça büyüttüğüm takdirde,
+
+130
+00:22:37,940 --> 00:22:44,259
+L'ye yaklaşıyorum ve bu yaklaşmamı epsilon gibi sıfıra yakın bir sayıyla ifade ediyorum.
+
+131
+00:22:44,960 --> 00:22:53,860
+Ve bu sayıyla bu n numarası ne demiştik? n'ler bu n numarasından büyük eşit iken demiştik.
+
+132
+00:22:53,860 --> 00:23:04,960
+Yani aldığım n'ler büyük eşittir n iken olacak şekilde bir n numarası epsilon'a bağlı bir n numaralandırma sistemi geliştirebiliyorsam diyorum.
+
+133
+00:23:05,428 --> 00:23:10,348
+AN dizisi diyorum, L limitine yakınsak diyorum arkadaşlar.
+
+134
+00:23:12,148 --> 00:23:13,188
+Burası anlaşıldı mı?
+
+135
+00:23:22,003 --> 00:23:26,183
+Bu tanım sonuç olarak bunu ifade ediyor arkadaşlar.
+
+136
+00:23:33,940 --> 00:23:35,480
+Anlayanlar 1'e bassın.
+
+137
+00:23:39,092 --> 00:23:41,072
+İkinci kez alan var mı derse?
+
+138
+00:23:46,355 --> 00:23:48,196
+İkinci kez alan var mı dersin?
+
+139
+00:23:53,748 --> 00:23:56,048
+Herkes bire basıyor.
+
+140
+00:23:57,788 --> 00:23:59,208
+Sembolizasyon karıştı.
+
+141
+00:24:05,587 --> 00:24:12,887
+Gerçi bir dakika ya, numaralarınız eskiydi zaten. İkinci kez alan öğrenciler de vardı.
+
+142
+00:24:16,884 --> 00:24:33,923
+Dolayısıyla, limit nedir arkadaşlar? Bir limit, en sonsuza giderken, AN dizisinin limiti arkadaşlar, L bir real sayı, AN yakınsak dizidir diyoruz.
+
+143
+00:24:33,923 --> 00:24:40,183
+Yani limit AN bir L sayısına eşitse, AN bir yakınsak dizidir diyoruz arkadaşlar.
+
+144
+00:24:43,443 --> 00:25:08,463
+aendisi artı ya da eksi sonuçta ıraksar diyoruz. Dizi ıraksaktır diyoruz arkadaşlar. Eğer limit yoksa, yani limit elde edilemiyorsa, limit mevcut değil gibi kavramlar varsa, kitaplarda başka kaynaklarda çalışırken bunlarla karşılaşabilirsiniz. Limit yoktur, limit mevcut değildir, limit bulunamaz gibi ifadeler varsa yine dizi ıraksaktır diyoruz.
+
+145
+00:25:10,420 --> 00:25:36,640
+Fonksiyonlardaki limit kuralları, işte limitin bazı kuralları vardı hatırlarsınız arkadaşlar. Birinci dönemi işledik, çarpım, toplan vs. oralara girmeyeceğim. Dizilerde de geçerlidir. Yani limit kavramını zaten geçen dönem göstermiştik fonksiyonlarda. Limit kavramı zaten bildiğimiz bir kavram. Geçen dönemde limit tanımını anlatmıştık galiba. Anlatmış mıydık? Fonksiyonlarda limiti anlatmıştık galiba.
+
+146
+00:25:43,667 --> 00:25:47,887
+Limit tanımı vardı değil mi? Ama sınavlarda çok çıkmıyordu galiba.
+
+147
+00:25:50,587 --> 00:25:55,987
+Geçen dönem sınavda falan çıktı mı hiç limit tanımı falan? Çıkmadı galiba değil mi?
+
+148
+00:26:06,132 --> 00:26:11,452
+AN dizisinin limitinin sıfır olduğunu, limit tanımı ile gösteririz demiş soruda.
+
+149
+00:26:12,032 --> 00:26:12,692
+Gösterelim.
+
+150
+00:26:14,392 --> 00:26:17,412
+AN dizisinin limiti sıfırmış.
+
+151
+00:26:17,992 --> 00:26:19,432
+Limit tanımı ile gösteririm.
+
+152
+00:26:19,672 --> 00:26:22,692
+Her epsilon büyüktür sıfır sayısı için.
+
+153
+00:26:23,332 --> 00:26:25,992
+Yani sıfır oldukça yakın bir sayı alıyorum.
+
+154
+00:26:27,312 --> 00:26:31,272
+Ve bir n numarasından büyük n'ler alıyorum.
+
+155
+00:26:31,700 --> 00:26:45,680
+Bir n numarasından büyük nler için, 2n, yani n büyük eşittir, bu n numarasından büyük n iken, 1 bölü n eksi limit, limitim ne? L m ne? Yani sıfır.
+
+156
+00:26:48,319 --> 00:26:56,039
+1 bölü n eksi sıfır, küçüktür epsilon olacak şekilde, 1 n eşittir, n epsilon tam sayısı var mı?
+
+157
+00:26:56,372 --> 00:27:04,612
+Bunu elde etmem gerekiyor. Eğer böyle bir tam sayı varsa, bu limit sağlanır. Bu dizinin limiti sıfırdır arkadaşlar.
+
+158
+00:27:05,932 --> 00:27:16,672
+1 bölü n küçüktür epsilon. Buradan alıyorum. 1 bölü n küçüktür epsilon. Çünkü n'ler zaten pozitif sayılar. 1, 2, 3, 4 gidiyorlar.
+
+159
+00:27:17,492 --> 00:27:18,852
+1 bölü n küçüktür epsilon.
+
+160
+00:27:42,804 --> 00:27:50,384
+1 bölü epsilon, küçüktür, n oldu. Dolayısıyla burada yapmam gereken şey,
+
+161
+00:27:56,372 --> 00:28:19,731
+N'yi, 1 bölü epsilon'dan büyük, herhangi bir tam sayı seçersek, sonuç, tüm en büyüktür, n'ler için sağlanır. Yani böyle bir numaralandırma yapabilirim. Epsilon'a bağlı bir n eşittir, n epsilon sayısı bulabilirim arkadaşlar.
+
+162
+00:28:26,036 --> 00:28:48,695
+Mesela ne olabilir? 1 bölü epsilon. 1 bölü epsilon'dan büyük nler için bu limit sağlanır arkadaşlar. Bakın 1 bölü n küçüktür, 1 bölü epsilon elde ettim. Dolayısıyla n'yi bu tarafa atıp burayı 1 bölü epsilon yaparsam en küçüktür 1 bölü epsilon olur.
+
+163
+00:28:52,819 --> 00:29:08,079
+n eşittir, n epsilon eşittir de, 1 bölü epsilon dersem, bakın sıfıra oldukça yakın bir sayı, bu 1 bölü 1 milyon mesela, 1 bölü 1 milyar, değil mi?
+
+164
+00:29:10,079 --> 00:29:19,959
+Pardon, 1 bölü 0,001, yani dolayısıyla epsilon 1 bölü 1 milyon, 1 bölü 1 milyar gibi bir sayı,
+
+165
+00:29:20,403 --> 00:29:44,444
+Bir bölü, böyle bölü bir sayı. Bunu da yukarı attığım zaman, bir numara çıkıyor. N number çıkıyor. Yani, bir milyon çıkıyor, bir milyar çıkıyor, bir trilyon çıkıyor. Dolayısıyla bakın, y'e bağlı bir n numaralandırma sistemi bulabiliyorum. Bir n numaralandırması bulabiliyorum. Ve benim bu n numaralandırmamdan n'ler büyük çıkıyor.
+
+166
+00:29:45,044 --> 00:30:05,044
+En büyüktür, en epsilon olacak şekilde, en büyüktür, en epsilon olacak şekilde, bir en buluyorum, epsilona bağlı bir en epsilon numaralandırması buluyorum. Bir en epsilon fonksiyonu elde ediyorum. Bir en epsilon elde ediyorum. En epsilon fonksiyonu elde ediyorum.
+
+167
+00:30:05,460 --> 00:30:12,500
+Ve benim küçük enlerim bu n epsilon numaralandırmasından, bu sistemden, bu fonksiyondan büyük oluyor.
+
+168
+00:30:13,620 --> 00:30:15,500
+Bundan büyük enler içinde...
+
+169
+00:30:16,211 --> 00:30:18,251
+Ben bu limiti elde edebilirim.
+
+170
+00:30:18,451 --> 00:30:22,672
+Yani, bir bölü n dizinin limiti 0 olur arkadaşlar.
+
+171
+00:30:22,951 --> 00:30:34,291
+Her epsilon büyüktür 0 için, n büyük eşittir n iken, bir bölü n-0 küçüktür epsilon olacak şekilde, bir n eşittir n epsilon tam sayısı elde ederim arkadaşlar.
+
+172
+00:30:35,511 --> 00:30:41,951
+Bu n epsilon tam sayısı da, yani bu n epsilon fonksiyonu da aslında bir bölü epsilon fonksiyonudur.
+
+173
+00:30:42,932 --> 00:31:02,771
+Bakın bunu da açıkladık. 1 bölü 1 milyon, 1 bölü 1 milyon olur. Bu da bir n numarası olur. Bu n'den büyük n'ler içinde n'yi 1 bölü epsilondan büyük herhangi bir tam sayı seçersek sonuç tüm n büyük eşittir n'ler için sağlanır arkadaşlar. Anlaşıldı mı?
+
+174
+00:31:11,859 --> 00:31:13,939
+Limit kavramı anlaşıldı mı arkadaşlar?
+
+175
+00:31:26,483 --> 00:31:28,583
+Aynen öyle ispat için yaptık.
+
+176
+00:31:33,395 --> 00:31:40,076
+Yani, a en eşittir birbül endisinin limitinin sıfır olduğunu göstermek için yaptık.
+
+177
+00:31:44,468 --> 00:31:46,167
+Diğer sorumuz da
+
+178
+00:31:55,571 --> 00:31:56,571
+A en eşittir.
+
+179
+00:31:57,271 --> 00:31:58,951
+N-1 bölü, N desi verilmiş.
+
+180
+00:32:00,211 --> 00:32:04,652
+Sınavlar geçen dönem ve ondan önceki dönem testti.
+
+181
+00:32:05,331 --> 00:32:08,112
+Ondan önceki dönem bir kısa bir süre klasik oldu galiba.
+
+182
+00:32:09,432 --> 00:32:11,932
+Gerçi yok yok. İlk dönem klasikti galiba.
+
+183
+00:32:14,152 --> 00:32:16,112
+Klasikte bazı sorunlar ortaya çıktı.
+
+184
+00:32:16,951 --> 00:32:19,571
+Yani gerek yüklemesi olsun, gerek...
+
+185
+00:32:20,500 --> 00:32:33,500
+Herkesin yazısının farklı olması, fotoğraf çekerken kötü çekilmesi vs. gibi nedenlerle, okunmasının, süresinin uzaması gibi nedenlerle test yapma kararı aldık.
+
+186
+00:32:35,460 --> 00:32:41,340
+Test sınavı yapıldı geçen dönem. Bu dönemde büyük ihtimalle test olacak arkadaşlar sınavlarımız.
+
+187
+00:32:45,748 --> 00:32:55,127
+a en eşittir, en eksi bir bölü en destisi veresin. Bu sizin limitinin bir olduğunu zaten biliyoruz arkadaşlar. Geçen dönemde fonksiyonlar limitinde zaten gördük bunu biz.
+
+188
+00:32:57,427 --> 00:33:03,327
+Şimdi ispatını gösterelim. En sonuçta giderken limit a enin bir olduğunu gösterelim.
+
+189
+00:33:04,756 --> 00:33:13,375
+Her hep keyfi, herhangi bir epsilon büyüktür sıfır için. Yani sıfırdan büyük, sıfıra oldukça yakın bir sayı olduğunu söylemiştik bunun.
+
+190
+00:33:14,155 --> 00:33:23,715
+En büyük eşittir en için. Tanımı yazıyorum ben. N-1 bölü N-1. Yani A-N-L yazıyorum aslında. A-N-N-L. L'de bir arkadaş.
+
+191
+00:33:23,715 --> 00:33:31,836
+N-1 bölü N-1. Küçüktür epsilon olacak şekilde bir en eşittir. N-epsilon tam sayısı var mıdır?
+
+192
+00:33:32,468 --> 00:33:34,588
+Soru bu. Şimdi bakalım.
+
+193
+00:33:35,928 --> 00:33:38,268
+n-1 bölü n-1 eşittir.
+
+194
+00:33:38,568 --> 00:33:40,148
+n-1 bölü n olur.
+
+195
+00:33:42,188 --> 00:33:44,008
+Mutlak değer içerisinde bu da eşittir.
+
+196
+00:33:44,068 --> 00:33:45,808
+1 bölü n olur arkadaşlar.
+
+197
+00:33:46,808 --> 00:33:48,528
+1 bölü n küçüktür epsilon dedim.
+
+198
+00:33:49,348 --> 00:33:51,728
+Dolayısıyla 1 bölü epsilon küçüktür n oldu.
+
+199
+00:33:52,256 --> 00:34:14,596
+Yani yine aynı şey çıktı aslında. Neyi 1 bölü epsilon'dan büyük herhangi bir tam sayı olarak seçersek, sonuç tüm en büyük eşittir n'ler için sağlar. Yani ben ne yaptım? n eşittir, n epsilon tam sayısı olarak, aslında bu bir fonksiyon, n epsilon fonksiyonu, epsilon'a bağlı n epsilon fonksiyonunu 1 bölü epsilon olarak seçtim arkadaşlar.
+
+200
+00:34:17,300 --> 00:34:28,260
+Bundan büyük, herhangi bir sayı aldığımda, hangi sayı alırsak alalım, artık bunların hepsi 1'e yakın sayılar olur arkadaşlar.
+
+201
+00:34:28,659 --> 00:34:32,240
+1'e oldukça yaklaşır, yani epsilon da bunu ifade eder.
+
+202
+00:34:32,720 --> 00:34:37,039
+1'e oldukça yakın sayılardır, ancak hiçbir zaman 1 olmazlar.
+
+203
+00:34:37,539 --> 00:34:43,100
+Bunu da epsilon, yani sıfıra oldukça yakın olan epsilon ile ifade ediyoruz arkadaşlar.
+
+204
+00:34:58,356 --> 00:35:23,696
+Bu soruda anlaşılmayan bir yer var mı arkadaşlar? Artık bu limit tanımında geçiyorum. Zaten geçen dönemde işlenmişti. Sınavlarda da çıkmamıştı galiba geçen dönem. Yani test sınavında belki sorulabilir bilmiyorum. Yine de bilmenizde yarar var arkadaşlar. Anlamadığınız yer varsa sorun arkadaşlar.
+
+205
+00:35:27,507 --> 00:35:46,288
+Youtube'daki diziler videosunu izleyen oldu mu? Orada limit tanımını anlatmış mıyım ben? Orada limit tanımı var mıydı? Buna benzer farklı sorular var mıydı? Kimse izlemedi mi?
+
+206
+00:36:35,059 --> 00:36:41,500
+Şimdi limit kurallarına geçelim. Limit a n eşittir, a olsun. Bunu bir örnek olsun diye veriyorum.
+
+207
+00:36:42,559 --> 00:36:53,800
+a n dizisinin limiti a, b n dizisinin limiti b. Bu durumda a n artı b n genel teriminin limiti a artı eksi b oluyor.
+
+208
+00:36:54,460 --> 00:37:01,840
+k çarpı a n dizisinin limiti k çarpı a oluyor arkadaşlar. Limit a n bürü b n.
+
+209
+00:37:02,260 --> 00:37:18,000
+Yani, AN bölü BN, dizinin genel terimleri olan AN ve BN'i, AN dizinin ve BN dizinin genel terimleri olan AN ve BN'i birbirine bölersek, bunların limitleri olan A bölü B oluyor.
+
+210
+00:37:19,180 --> 00:37:24,180
+K ile çarparsak genel terimi, AN'in limitini K ile çarpıyoruz.
+
+211
+00:37:24,180 --> 00:37:28,940
+Ya da toplam ve farkla da bu şekilde ifade ediyoruz arkadaşlar.
+
+212
+00:37:30,771 --> 00:37:41,371
+Diziler için sandviç teoremi var. Sandviç teoremini hatırladınız mı arkadaşlar? Fonksiyonların limitinde göstermiştik.
+
+213
+00:37:43,891 --> 00:37:46,492
+Var mı hatırlayan? Neydi sandviç?
+
+214
+00:38:42,228 --> 00:39:04,628
+Güzel arkadaşlar, teşekkürler. Uç limitler eşitse, yani aslında elimde AN ve CN gibi bir ikili limit var. İki tane dizi var, pardon. Bu iki dizinin limitini aldım. AN'in limitini aldım. CN'in limitini aldım. Ve bunların limitleri birbirine eşit imiş. Yani bunların ikisinin limiti L olsun.
+
+215
+00:39:10,195 --> 00:39:26,815
+AN'den küçük, büyük eşit ve CN'den küçük eşit ise, yani BN dizisinin genel terimi AN ile CN arasında kalıyorsa, ikisinin arasında kalıyorsa, limit BN diyorum, L'dir diyorum arkadaşlar.
+
+216
+00:39:27,336 --> 00:39:35,456
+Çünkü AN'den büyük eşit, CN'den küçük eşit zaten. Bunun limitinden de küçük eşit ya da büyük eşit olacak.
+
+217
+00:39:37,108 --> 00:39:40,168
+Ortadaki limit de aynısı çıkmış oluyor.
+
+218
+00:39:41,708 --> 00:39:46,988
+Burada yine sinüs ve kosünüs fonksiyonlar çok kullanmıştık fonksiyonlarda, mat bir de hatırlayın.
+
+219
+00:39:48,307 --> 00:39:51,908
+Neden? Çünkü kosünüs ve sinüs fonksiyonları ne ile ne arasındaydı arkadaşlar?
+
+220
+00:39:53,788 --> 00:39:57,408
+Hangi sayılar arasındaydı arkadaşlar kosünüs ve sinüs fonksiyonları?
+
+221
+00:40:03,123 --> 00:40:04,663
+Eksi 1 ile 1 arasında.
+
+222
+00:40:05,304 --> 00:40:06,344
+Teşekkürler, güzel.
+
+223
+00:40:10,260 --> 00:40:20,140
+Evet, şimdi, kosünüs n bölü n, dizisi, nereye yakınsak, bakalım.
+
+224
+00:40:21,580 --> 00:40:29,860
+Kosünüs n, bir kere öncelikle, bunu zaten fonksiyonlarda gösterdiğimiz için, üzerinden hızlıca geçilmiş,
+
+225
+00:40:30,320 --> 00:40:33,900
+eksi birden büyük eşit, birden küçük eşit değil mi arkadaşlar?
+
+226
+00:40:33,900 --> 00:40:36,020
+Her tarafı n'e bölersem,
+
+227
+00:40:37,652 --> 00:40:58,992
+Kosyonüs n bölü n dizisi, dolayısıyla eksi 1 bölü n ile 1 bölü n dizisi arasında. Değil mi arkadaşlar? Dolayısıyla n sonsuza giderken, eksi 1 bölü n de, 1 bölü n de, ne oluyor? Sıfıra gidiyor. O zaman, burası da, pardon, burası da kosyonüs n bölü n de, sıfıra gider.
+
+228
+00:41:04,820 --> 00:41:05,676
+Onlar kılıkları,
+
+229
+00:41:24,467 --> 00:41:36,547
+Bu dizide, eksi 1 üzeri n çarpı 1 bölen 0'a gider. Çünkü eksi 1 bölü n 0'a gider, 1 bölü n de 0'a gider. Dolayısıyla arada kalan eksi 1 üzeri n çarpı 1 bölü n'si de 0'a gider arkadaşlar sandüş teoreminde.
+
+230
+00:41:38,327 --> 00:41:42,228
+Şimdi diziler için fonksiyon teoremine geçelim arkadaşlar.
+
+231
+00:42:23,795 --> 00:42:25,975
+Diziler için sürekli fonksiyon teoremine bakalım.
+
+232
+00:42:47,251 --> 00:43:09,612
+AN bir real sayısı olsun. Eğer bakın, AN dizisinin limiti L ise ve bir F fonksiyonu var diyelim ki, F fonksiyonu da her AN'de tanımlı olsun arkadaşlar. Bakın, F fonksiyonu bir fonksiyon. Ve bu dizide tanımlı olacak bir fonksiyon.
+
+233
+00:43:13,427 --> 00:43:35,768
+için tanımlı olan bu fonksiyon eğer, L'de sürekliyse, bakın, a, n, l'ye yakınsak, a, n, l'ye yakınsıyor, yani limiti L'ye ve bu fonksiyon da a, n dizisi üzerinde tanımlı ve L noktasında sürekliyse, o zaman ev a, n,
+
+234
+00:43:36,659 --> 00:43:42,399
+FL'ye yakınsaktır diyoruz. Yani F-H-N'disi FL'ye yakınsaktır diyoruz.
+
+235
+00:43:44,779 --> 00:43:46,440
+Şimdi örneklere bakalım.
+
+236
+00:43:50,708 --> 00:43:59,507
+Köken artı bir bölü n dizisini alalım. Diyelim ki, köken artı bir bölü n dizisi, bire yakınsak mıdır? Bunu gösterelim.
+
+237
+00:44:01,587 --> 00:44:09,648
+Öncelikle, bunu bir kere tanımla falan göstermek biraz zor. Yakınsaklığını göstermek biraz zor.
+
+238
+00:44:11,268 --> 00:44:15,867
+Bununla beraber fonksiyonları kullanarak, biraz daha kolaylıkla gösterebiliriz.
+
+239
+00:44:17,811 --> 00:44:24,192
+Diziler için sürekli fonksiyon teoremi göstermek için de basit bir örnek olarak değerlendirebilirsin.
+
+240
+00:44:24,551 --> 00:44:32,171
+n artı 1 bölü n dizisinin 1'e yakınsak olduğunu biliyoruz. Bu kolay. n artı 1 bölü n 1'e yakınsaktır.
+
+241
+00:44:32,251 --> 00:44:40,591
+Bunu yukarıda göstermiştik. Yani n bölü n eksi 1'i göstermiştik. Benzer. n artı 1 bölü n 1'e yakınsaktır. Bunu biliyoruz.
+
+242
+00:44:40,591 --> 00:44:42,931
+Ve şunu söyleyelim.
+
+243
+00:44:43,295 --> 00:45:07,135
+fx eşittir, kök x şeklinde bir fonksiyon alalım. Ve l eşittir, bir alalım. Bu durumda, köken artı bir bölü köken, köken artı bir bölü l, kök bire yakınsır arkadaşlar. Çünkü, fx eşittir, kök x fonksiyonu bir de süreklidir değil mi? Sürekliliği bozan herhangi bir durum yok.
+
+244
+00:45:07,476 --> 00:45:19,775
+Dolayısıyla, bu kök 1'e yakınsak, bu da kök 1'de 1 olur zaten. Böylelikle, köken artı bir bölü eninde 1'e yakınsak olduğunu göstermiş olursa arkadaşlar.
+
+245
+00:45:25,108 --> 00:45:49,868
+Bir dizinin limiti varsa, tektir arkadaşlar. Bir dizinin iki tane limiti olamaz. Yani, A-N dizisi hem bir A sayısına, hem de A-N dizisi, aynı dizi, hem de bir B sayısına eşit olamaz. B sayısına yakınsak olamaz. A'ya yakınsıyorsa, ya da limiti A ise,
+
+246
+00:45:50,675 --> 00:46:12,895
+Limit a en eşittir b diyorsa, a eşittir b olmalıdır. Yani limit her zaman tektir. Böyle bir durum olursa, aynı fonksiyondan bahsediyorsa, aynı diziden bahsediyorsak, bu dizi şu sayıya yakınsaktır, aynı zamanda da bu sayıya yakınsaktır, şu ifadeye yakınsaktır, ya da bu ifadeye yakınsaktır şeklinde soruyorsa soru da bize,
+
+247
+00:46:13,396 --> 00:46:40,140
+O iki ifade, birbirine eşittir arkadaşlar. Yani bunu bu şekilde sorabilir. İşte şu ifadeye eşit. Yani mesela bir dizi verdi. X kare artı 2x artı 1 eşit. Aynı zamanda 5'e de eşit. Yani x kare artı x artı 1'e yakınsıyor. Bir de 5'e yakınsıyor diyorsa, x kare artı 1 artı, x kare artı 2x artı 1, 5'e eşittir arkadaşlar. Oradan işte x'i bulursunuz falan filan. Yani bunu...
+
+248
+00:46:40,179 --> 00:46:52,039
+Bir dizinin limiti hem şudur hem budur şeklinde sorabilir arkadaşlar. Bu durumda limit tektir diyoruz. Bir dizinin limiti var ise tektir. O ikisini birbirine eşitliyoruz ve soruyu çözüyoruz arkadaşlar.
+
+249
+00:47:23,764 --> 00:47:40,644
+N dizisi, bildiğimiz N sayılarından oluşan en basit dizilerden, 1, 2, 3, 4, N'e kadar gidiyor. Bu artı sonsuza, ıraksayan bir dizidir, ıraksak bir dizidir. Artı sonsuza, ıraksak. Çünkü N sonsuza giderken, limit N artı sonsuzdur arkadaşlar.
+
+250
+00:47:42,764 --> 00:47:49,984
+Mesela, eksi 1 üzeri N dizisi nasıldır? Bakın, eksi 1 üzeri N dizisi, 1 de eksi 1 olur.
+
+251
+00:47:50,516 --> 00:48:07,696
+2'de artı 1 olur, 3'de eksi 1 olur, 4'de artı 1 olur, artı 1 eksi 1, artı 1 eksi 1 gider. Peki bu dizi yakınsak mıdır arkadaşlar sizce? Yakınsak mıdır eksi 1 üzerinden dizisi? Yakınsaktır derseniz neden yakınsaktır?
+
+252
+00:48:20,947 --> 00:48:24,608
+Yakınsak değildir derseniz, neden yakınsak değildir?
+
+253
+00:48:27,568 --> 00:48:28,708
+Açıklamanız nedir?
+
+254
+00:48:29,548 --> 00:48:30,728
+Chatten yazabilirsiniz.
+
+255
+00:48:32,268 --> 00:48:33,027
+Konuşabilirsiniz.
+
+256
+00:50:15,891 --> 00:50:41,311
+Güzel, sinüs ve kosünüs fonksiyonuna benziyor aslında değil mi? Doğru. Sinüs ve kosünüs fonksiyonlarda ne demiştik arkadaşlar? Hani, nasıldılar? Böyle böyle gidiyorlardı sürekli. Dolayısıyla bir noktaya yaklaşmıyorlardı. Eksi bir aralarında sıçrama yapıyordu. Sürekli bir oraya bir oraya gidiyorlardı. Dolayısıyla o fonksiyonlarında limiti yoktur demiştik hatırlayın. Değil mi? Ona benziyor aslında bu da.
+
+257
+00:50:49,235 --> 00:50:50,835
+Burada da benzer durum var.
+
+258
+00:50:51,596 --> 00:50:52,036
+İzinin
+
+259
+00:51:01,396 --> 00:51:19,036
+Seslerinizi kapatın arkadaşlar lütfen. Ses geliyor. Gelmesin. Yani sorulara cevap verirken, soruyu cevap vermek için açabilirsiniz, cevap verebilirsiniz. Cevap verdiğiniz için çok teşekkürler. Ama sesinizi açık bırakmayın.
+
+260
+00:51:25,972 --> 00:51:45,972
+Şimdi burada şöyle bir durum var arkadaşlar. Dizinin terimleri bir eksi bir oluyor, bir artı bir oluyor. Bir eksi bir oluyor, bir artı bir oluyor. Dolayısıyla ne eksi bire yakınsıyor, ne artı bire yakınsıyor. Ne de belli bir numaradan sonra sıfıra yakın olacak şekilde
+
+261
+00:51:47,027 --> 00:52:11,347
+Bir sayıya yakınsak diyemiyoruz. Mesela belli bir numaradan sonra bir olsa, ya da belli bir numaradan sonra bir bölü endisi mesela, belli bir numaradan sonra hep sıfıra yakın sayılar oluyor. Bir epsilon bulabiliyorum ben. Sıfıra oldukça yakın bir sayıdan küçük oluyor mesela aradaki fark. Burada böyle bir şey bulamıyorum. Yani artı bir de olabilir, eksi bir de olabilir. Sonsa kadar gidiyor. Dolayısıyla buna bir yakınsaktır.
+
+262
+00:52:12,788 --> 00:52:35,268
+Şeklinde bir ifade kullanamıyorum. O zaman bu dizi ıraksaktır diyorum ben. Yani bir yakınsaklık durumu mevcut değildir burada. Bu dizi yakınsak değildir, ıraksaktır. Çünkü neden? Limit mevcut değildir. Limit en sonsuza giderken, eksi bir üzeri en bulunamaz.
+
+263
+00:52:36,532 --> 00:52:52,852
+Yani epsilon'a bağlı bir n eşittir, n epsilon tam sayısı mevcut değildir. Ondan sonra yakınsak değildir. Bir sayıya yakınsam az yaklaşmaz. Yani eksi bir ziren mevcut değildir. Dolayısıyla bu dizi bıraksaktır diyorum arkadaşlar.
+
+264
+00:52:53,556 --> 00:53:09,376
+Yakınsak bir dizi sınırlıdır arkadaşlar. Ancak tersi doğru değildir. Yani sınırlı bir dizi yakınsak olmak zorunda değildir. Sınırlı olabilir ama bir sayıya yakınsak olmayabilir arkadaşlar.
+
+265
+00:53:37,523 --> 00:53:47,703
+Bakın, sınırlı diziyi burada işlemiştik. Alttan bir sınır varsa, alttan sınırlıdır, üstten sınırlıysa, üstten sınırlıdır demiştik.
+
+266
+00:53:49,643 --> 00:53:55,703
+Yani M küçük eşit, aynı olacak şekilde bir M varsa, alttan sınırlıdır, üstten sınırlıdır demiştik.
+
+267
+00:53:56,723 --> 00:54:03,943
+Bakın, eksi bir üzeri N dizisi de, alttan ve üstten sınırlı değil mi? Ama bıraksak bir dizi.
+
+268
+00:54:07,987 --> 00:54:19,127
+Ancak yakınsak bir dizi sınırlıdır arkadaşlar. Ancak tersi doğru değildir. Yani sınırlı bir dizi var elimizde ama o dizi yakınsak olmak zorunda değil.
+
+269
+00:54:23,380 --> 00:54:36,780
+Bir an dizisi alalım. Örnek olarak, an dizisi, kök içinde n kare artı iken, eksi n şeklinde bir dizi. O dizinin yakınsaklığını inceleyelim arkadaşlar.
+
+270
+00:54:38,880 --> 00:54:49,440
+En sonsuza giderken, n kare artı iken, eksi n, limitini alalım. Bu limiti nasıl alıyoruz arkadaşlar? Eşeniyle çarpıyoruz. İfadeyi.
+
+271
+00:54:50,036 --> 00:54:58,076
+Kök içinde n kare artı iken, artı en ile çarptık, böldük. Yukarıyı bununla çarptığımızda, kök gitti, n kare artı iken, eksi en oldu.
+
+272
+00:54:59,135 --> 00:55:05,296
+Eksi en kare oldu, pardon. En kareler birbirini götürdü. Dolayısıyla yukarıda iki en kaldı. İki en bölü.
+
+273
+00:55:06,336 --> 00:55:09,715
+Burayı da, kökün içerisinde n kare parantezine aldık.
+
+274
+00:55:17,139 --> 00:55:23,999
+n kare parantezinde n kare 1 oldu. 2 n'i de 2 bölü n olarak ifade ettik.
+
+275
+00:55:24,879 --> 00:55:29,379
+n kare ile 2 bölü n'i çarptığımızda 2 n kare bölü n'den 2 n olur değil mi arkadaşlar?
+
+276
+00:55:30,359 --> 00:55:34,939
+Dolayısıyla bu n kare de dışarı ne olarak çıkar arkadaşlar? n olarak çıkar.
+
+277
+00:55:35,879 --> 00:55:39,179
+n çarpı kök içerisinde 1 artı 2 bölü n oldu.
+
+278
+00:55:40,719 --> 00:55:43,979
+Artı n vardı bir de bakın. O da 1 oldu. Artı 1 oldu.
+
+279
+00:55:45,427 --> 00:56:06,287
+Bu n'ler birbirini götürdü. 2 bölü n, n sonsuza giderken sıfıra gider. Aşağıda 1 artı 1, kök 1 artı 1'den 2 kaldı arkadaşlar. Burası sıfır bakın. Bu sıfır, 2 kaldı. 2 bölü 2'den de cevap 1 olur arkadaşlar. Bu soruda anlaşılmayan bir şey var mı?
+
+280
+00:56:10,867 --> 00:56:15,628
+Anladım diyenler 1'e bassın bu soruyu. Kolay bu soru zaten.
+
+281
+00:57:17,492 --> 00:57:34,252
+Şimdi fonksiyonları biraz kullanalım. Her n büyük eşittir n sıfır, n sıfır numarasından büyük n'ler için, a n'i işte f n olacak şekilde bir fonksiyon, bir a n dizisi olsun.
+
+282
+00:57:35,332 --> 00:57:43,252
+Ve her x büyük eşittir n sıfır için tanımlı bir f x fonksiyonu mevcut olsun. Böyle bir fonksiyon varsayıyoruz. Yani a n'ler f n olacak şekilde.
+
+283
+00:57:43,923 --> 00:57:45,263
+Bir an dizisi var.
+
+284
+00:57:47,003 --> 00:57:54,183
+Ve x'ler bu n sıfırdan büyük olduğunda, böyle bir fx fonksiyonu tanımlayabilirim.
+
+285
+00:57:55,023 --> 00:57:59,583
+Bu durumda, limit fx x sonsa giderken, bir l'ye eşittir.
+
+286
+00:58:02,163 --> 00:58:04,063
+Yani fonksiyonun limitini alabilirim ben.
+
+287
+00:58:04,163 --> 00:58:06,583
+Fonksiyonun limitini görmüştük geçen dönem.
+
+288
+00:58:07,483 --> 00:58:11,163
+Fonksiyonun limitini alıyorsam, dizinin limitini de alabilirim.
+
+289
+00:58:11,539 --> 00:58:19,539
+Fonksiyonun limiti dizinin limiti eşittir. Çünkü dizinin genel terimiyle fonksiyon zaten birbiriyle çakışıyor arkadaşlar. Birebir uyumlu.
+
+290
+00:58:22,220 --> 00:58:28,180
+Teorem, limitin mevcut olması durumunda geçerli. Tabii ki bir limit mevcut değilse bu teoremi de gerçekleyemeyiz.
+
+291
+00:58:29,043 --> 00:58:34,043
+Bazı dillerin limitlerini hesaplarken de lopitel kuralını kullanabiliriz arkadaşlar.
+
+292
+00:58:34,823 --> 00:58:39,083
+Zaten lopitel kuralını kullanabiliyorsanız kesinlikle kullanın, kullanmanız gerekiyor.
+
+293
+00:58:39,723 --> 00:58:41,683
+Lopitel ile sağlamasını yapmanız gerekiyor.
+
+294
+00:58:42,063 --> 00:58:45,603
+Klasik sınavda, test sınavında da bu her zaman bir taktik.
+
+295
+00:58:45,803 --> 00:58:48,423
+Yani lopitel kuralını kullanacaksın, limiti hesaplayacaksın.
+
+296
+00:58:49,143 --> 00:58:52,943
+Limit neyse ona göre, yani lopitel kullanmayın diyorsa da.
+
+297
+00:58:53,364 --> 00:58:59,624
+Hesapladıktan sonra doğru mu yanlış mı ona bir bakacaksın yani. En azından cevabı bileceksin.
+
+298
+00:59:03,251 --> 00:59:23,991
+L, N, N bölü, N dizisini vermiş, yakınsaklığını sormuş. Şimdi bunu dizi olarak hesaplamak, numaraları vs. biraz karışık olabilir. Bunun yerine, hani, fx eşittir, L, N, x bölü, x alırsak, ne olur? Bunun limitini hesaplarken de o pitel kullandığımızda direkt türev olabiliriz ya.
+
+299
+00:59:24,436 --> 00:59:48,436
+Böyle daha mantıklı. Dolayısıyla limit Ln x bölü x'in limitini alabilirim x sonsuza giderken. Direkt Ln'e bakın, elimine ediyorum. Ln'den kurtuluyorum. Türevini aldım 1 bölü x, x'in türevini aldım 1, 1 bölü x bölü 1, 1 bölü x oldu. Bu da sıfıra eşit oldu. Limit Ln'en bölen en sonsuza giderken eşittir sıfır oldu arkadaşlar.
+
+300
+00:59:49,588 --> 00:59:52,468
+Dolayısıyla AM yakınsaktır arkadaşlar.
+
+301
+01:00:06,003 --> 01:00:13,483
+Burada anlaşılmayan bir şey var mı arkadaşlar? Yani dizi ile fonksiyon çakışıyorsa, ne diyoruz?
+
+302
+01:00:15,204 --> 01:00:23,583
+ln, n bölü, n dizisi, n fx eşit, ln x bölü x fonksiyonunu alıyoruz. Ve bu fonksiyonun limiti, bu dizinin limitine eşittir diyoruz arkadaşlar.
+
+303
+01:00:24,264 --> 01:00:28,183
+Fonksiyonun limitini aldık. Fonksiyonun limiti 0 çıktı. O zaman,
+
+304
+01:00:30,516 --> 01:00:37,396
+En sonsuza giderken elenen bölü en limiti de 0'dır arkadaşlar. Yani AN 0'a yakınsak bir dizidir arkadaşlar.
+
+305
+01:00:39,416 --> 01:00:41,176
+Bu sırada anlaşılmayan bir yer var mı?
+
+306
+01:00:54,996 --> 01:00:57,096
+Güzel. Devam ediyorum.
+
+307
+01:01:12,244 --> 01:01:20,143
+Sinüs NP dizisinin yakınsaklığını inceleyin demiş. Sinüs NP dizisinin yakınsaklığını inceleyin.
+
+308
+01:01:20,784 --> 01:01:30,244
+Bize verdiği dizi, Sinüs NP dizisi. Bunun yakınsaklığını incelerken, numaraları hesaplamak tabii ki uzun ve zorlu bir yol.
+
+309
+01:01:30,683 --> 01:01:38,143
+Yani Sinüs P, Sinüs 2P, Sinüs 3P, 4P, 5P ya da P bölü 2 olabilirdi.
+
+310
+01:01:38,643 --> 01:01:52,063
+pi kare bölü 4 olabilirdi vs. Bunun yerine, bu basit bir örnek olmuştu bir de, fx eşittir sinüs pi x alırsak, bu limite bakarsak, ki bu limit zaten mevcut değil.
+
+311
+01:01:55,539 --> 01:02:05,019
+Çünkü limit sin 2p, sin 3p, sin 4p, sin 5p nedir arkadaşlar hep?
+
+312
+01:02:06,219 --> 01:02:06,820
+Nedir?
+
+313
+01:03:09,139 --> 01:03:19,760
+Sinüs pi, sinüs 2 pi, sinüs 3 pi, sinüs 4 pi, x sonsuza giderken işte ya da en sonsuza giderken, sinüs pi x hep nedir arkadaşlar?
+
+314
+01:03:20,940 --> 01:03:27,239
+Sıfırdır, sabit dizidir. Biliyorsunuz sinüs pi'de ne oluyor? Sıfır oluyor.
+
+315
+01:03:28,619 --> 01:03:35,400
+2 pi'de de sıfır oluyor. 3 pi'de de sıfır oluyor. 4 pi'de de sıfır oluyor. Böyle böyle gidiyor.
+
+316
+01:03:38,324 --> 01:03:44,364
+Dolayısıyla, sinüs mpi, ıraksaktır diyemiyoruz.
+
+317
+01:03:46,543 --> 01:03:52,923
+Çünkü her zaman neye eşitsin üs pyenler? Sıfıra eşitler. Sabit bir diziye sahibiz burada.
+
+318
+01:03:53,884 --> 01:04:00,543
+Dolayısıyla en sonsuza giderken, an dizisi sıfıra yakınsak, dizi yakınsaktır arkadaşlar.
+
+319
+01:04:01,744 --> 01:04:03,903
+Burada anlaşılmayan bir şey var mı?
+
+320
+01:04:57,172 --> 01:05:15,791
+Monoton dizi teoreminde bir AN dizisi alttan sınırlı ve artmayan bir dizi, bir BN dizisi üstten sınırlı ve azalmayan bir dizi ise yakınsaktır diyoruz arkadaşlar.
+
+321
+01:05:16,532 --> 01:05:25,492
+Yani iki tane özelliğim var. Sınırlılık ve monotonluk. Dolayısıyla bu durum varsa yakınsaklığı söyleyebiliyoruz.
+
+322
+01:05:26,072 --> 01:05:29,952
+Buna da biz ne diyeceğiz? Monoton dizi teoremi diyeceğiz.
+
+323
+01:05:29,952 --> 01:05:37,472
+Yani monotonluk varsa artmayanlık ya da azalmayanlık. Bir de sınırlık varsa alttan sınırlı veya üstten sınırlı.
+
+324
+01:05:37,856 --> 01:05:45,615
+Artmayan dizi için alttan sınırlı, azalmayan dizi için üstten sınırlık varsa, dizi yakınsaktır diyoruz arkadaşlar.
+
+325
+01:05:48,596 --> 01:05:58,016
+Üstten sınırlı, azalmayan bir dizinin, yani artıyor, üstten sınırı var, yani yavaş yavaş artan, azalmayan bir dizi.
+
+326
+01:05:59,056 --> 01:06:03,756
+Böyle bir dizinin en küçük üst sınırı, eküsü, dizinin yakınsadığı sayıdır.
+
+327
+01:06:04,724 --> 01:06:17,664
+Alttan sınırlı bir dizimiz var. Artmıyor, azalabilir. E bası, yani en küçük, en büyük alt sınırı, bu dizinin yakınsadığı sayıdır arkadaşlar.
+
+328
+01:06:37,427 --> 01:06:47,847
+En bölü en artı bir dizisinin monotonluğunu, sınırlılığını, en büyük alt sınırını ve en küçük üst sınırını inceleyin demiş.
+
+329
+01:06:49,327 --> 01:06:54,628
+Bu diziye bakalım. En bölü en artı bir dizisini aslında daha önce de incelemiştik.
+
+330
+01:06:55,628 --> 01:06:58,327
+En küçük üst sınırı ve en büyük alt sınırı bulmuştuk.
+
+331
+01:06:59,108 --> 01:07:02,847
+Dizi alttan bir bölü ikiyle sınırlıydı. Değil mi arkadaşlar?
+
+332
+01:07:03,427 --> 01:07:04,768
+Alttan bir bölü ikiden büyük.
+
+333
+01:07:05,172 --> 01:07:26,012
+Ve her zaman, üstten de 1 ile sınırlıydı. Ve 10'dan büyük her sayı ile sınırlıydı zaten. Dolayısıyla en küçük üst sınırı 1'di. Ve 1 bölü 2'den küçük her sayı ile de sınırlıydı. Dolayısıyla 6 sınırların en büyük, en büyük 6 sınırda 1 bölü 2 oluyordu bu sayının, bu dizinin.
+
+334
+01:07:29,907 --> 01:07:45,347
+n bölü n artı 1 dizisi için, an bölü an artı 1 ifadesi, n bölü n artı 1 bölü, n artı 1 bölü n artı 1 artı 1, yani n artı 1 bölü n artı 2 ifadesi. Bunu ters çevirip yukarıda çarpmıştık.
+
+335
+01:07:47,347 --> 01:07:56,347
+Tabi o inceledik dizi n artı 1 bölü n de, bu n bölü n artı 1 dizisi, n kare artı 2n bölü,
+
+336
+01:07:57,268 --> 01:08:12,527
+n kare artı 2 n bölü, n kare artı 2 n artı 1 oldu. Bakın bunun payı paydadan küçük. Dolayısıyla payda büyük olduğu için bu ifade birden küçüktür arkadaşlar.
+
+337
+01:08:14,367 --> 01:08:21,487
+Bu ifade birden küçüktür. O zaman an artı birden küçüktür.
+
+338
+01:08:23,667 --> 01:08:46,947
+Dolayısıyla bakın, bir artış olabilir, artma var. Ama ne var? Azalma yok. Dolayısıyla bu diziye azalmayan dizi diyebiliriz. Buna monoton dizi diyebiliriz. Dolayısıyla azalmayan bir dizi, yani artıyor. O zaman neyi hesaplamamız lazım?
+
+339
+01:08:47,572 --> 01:09:15,092
+Eküsü, yani en küçük, üst sınıra bakmaması lazım. Bakın, monoton bir dizi, azalmayan bir dizi, sınırlı bir dizi, bakın elimde sınırlılık var, sınırlık var, üstten sınırlık var, bir de, sınırlılık var elimde, bir de bakın,
+
+340
+01:09:16,083 --> 01:09:43,183
+Üstten sınırlık elimde var, azalmayanlık var. Yani gidiyor gidiyor, artıyor, artıyor. Üstten de sınırlayabiliyorum. Eküsünü bulabiliyorum. Hem sınırlı dizi hem azalmayan dizi. Sınırlık var, monotonluk var. Bu durumda bu en küçük üst sınır eküs limittir benim için. Yakınsak olduğu sayı eküstür. Yani limit n bölü n artı 1 eşittir 1'dir.
+
+341
+01:09:44,659 --> 01:09:50,039
+Dizi zaten hem alttan hem üstten sınırlı olduğu için sınırlı bir dizidir.
+
+342
+01:09:50,680 --> 01:09:58,319
+Ve dolayısıyla direkt en küçük üst sınırın bu dizinin limiti olduğunu söyleyebilirim ben arkadaşlar.
+
+343
+01:10:23,091 --> 01:10:25,992
+Burada anlaşılmayan bir nokta var mı arkadaşlar bu soruda?
+
+344
+01:11:25,652 --> 01:11:41,592
+Ve son olarak da sık rastlanan limitlere bakalım. Yani bizim karşımıza sık gelen limitler var. Aslında birinci dönemde fonksiyonlar limitinde bunları görmüştük zaten. Bazı sıkça rastlanan limitlere bakalım.
+
+345
+01:11:46,612 --> 01:11:50,431
+En inci mertebeden köken limiti 1 oluyor.
+
+346
+01:11:55,956 --> 01:12:00,676
+En sonsuza giderken, x seri 1 bölü n limiti 1 oluyor. x büyüktür 0 için.
+
+347
+01:12:01,836 --> 01:12:10,736
+Ve en sonsuza giderken, x seri n limiti, eğer mutlak x küçüktür 1 ise, koşul sağlanıyorsa, ne oluyor?
+
+348
+01:12:10,855 --> 01:12:17,836
+1 bölü n gibi bir şey olması lazım zaten. Yani 1 bölü 2 gibi, 1 bölü 3 gibi, 1 bölü 5 gibi bir şey olması lazım.
+
+349
+01:12:21,235 --> 01:12:36,475
+Sonsuza kadar artıyor, n arttıkça. Dolayısıyla payda sonsuza kadar arttığı için 1 bölü n gibi bir şey oluyor. 1 bölü 2 üzeri n, 1 bölü 3 üzeri n. Bu n'ler sonsuza gittikçe de payda sonsuza kadar büyüyor. Pay sabit. Dolayısıyla burası sıfıra yakınsıyor.
+
+350
+01:12:38,335 --> 01:12:43,175
+x üzeri n bölü n faktöriyel limiti var. Eşittir sıfır oluyor.
+
+351
+01:12:44,435 --> 01:13:04,536
+1 artı a bölü en üzeri en, bunu zaten çokça kullandık. E üzeri a'nın limiti. Burada a varsa, e üzeri a olmuyor. 1 artı 1 bölü en üzeri en, e'nin limitiydi zaten. 1 artı a bölü en üzeri en de, e üzeri a'nın limiti. Bunlarla da ilgili de oldukça soru çözmüştük.
+
+352
+01:13:11,796 --> 01:13:15,736
+Limitlerde, bu e sayısını oldukça kullanmıştık.
+
+353
+01:13:17,816 --> 01:13:23,216
+En sonsuza giderken, x üzeri en limiti, bu da sonsuza gidiyor arkadaşlar, x büyüktür bir için.
+
+354
+01:13:25,796 --> 01:13:29,656
+x küçüktür bir için zaten bakın, sıfıra gittiğini söylemiştik.
+
+355
+01:13:30,796 --> 01:13:35,876
+Bunlar da, sık rastlanan bazı limitler. Bunları bilmeniz gerekiyor.
+
+356
+01:13:38,771 --> 01:13:40,231
+Şimdi şu örneğe bakalım.
+
+357
+01:13:44,307 --> 01:13:59,628
+n-2 bölü n üzeri n dizisi yakınsak mıdır? n-2 bölü n üzeri n dizisini biraz düzenlediğimizde n bölü n, eksi 2 bölü n olur. n bölü n 1'dir. 1-2 bölü n oldu bakın.
+
+358
+01:14:13,108 --> 01:14:14,868
+üzeri n oldu bakın.
+
+359
+01:14:16,108 --> 01:14:16,988
+Bu neye benzedi?
+
+360
+01:14:17,548 --> 01:14:18,388
+1 artı,
+
+361
+01:14:19,427 --> 01:14:20,908
+a bölü n üzeri n'e benzedi.
+
+362
+01:14:21,007 --> 01:14:21,648
+a ne burada?
+
+363
+01:14:22,608 --> 01:14:24,248
+a eksi 2 arkadaşlar.
+
+364
+01:14:24,948 --> 01:14:25,788
+a eksi 2.
+
+365
+01:14:27,068 --> 01:14:28,728
+a eksi 2 oldu.
+
+366
+01:14:29,728 --> 01:14:30,468
+Dolayısıyla,
+
+367
+01:14:32,188 --> 01:14:34,028
+e üzeri eksi 2 olarak,
+
+368
+01:14:34,808 --> 01:14:36,288
+elde ediyorum ben bu limiti.
+
+369
+01:14:36,851 --> 01:14:40,771
+Burada anlaşılmayan bir şey var mı arkadaşlar? Anlamadığınız yerleri sorun lütfen.
+
+370
+01:14:47,444 --> 01:14:52,043
+Bu soruyu anladınız mı? Anlayanlar 1'e bassın.
+
+371
+01:14:59,220 --> 01:15:01,059
+Teşekkürler katılımlarınız için.
+
+372
+01:15:02,440 --> 01:15:03,760
+Şimdi diğer örneğe geçelim.
+
+373
+01:15:04,600 --> 01:15:07,500
+Diğer örnekte de yine çokça bilinen bir limiti kullanacağım.
+
+374
+01:15:10,159 --> 01:15:12,159
+Soru yoksa bu soruyla ilgili siliyorum.
+
+375
+01:15:15,220 --> 01:15:15,979
+Evet.
+
+376
+01:15:17,100 --> 01:15:17,539
+Şimdi.
+
+377
+01:15:23,699 --> 01:15:24,260
+Şimdi
+
+378
+01:15:29,171 --> 01:15:38,531
+En sonsuza giderken en inci dereceden kök içerisinde 3N, en inci dereceden kök 3, en inci dereceden köken limit.
+
+379
+01:15:39,011 --> 01:15:44,671
+Bakın yukarıda çokça bilinen limitlerde en inci dereceden kökenin 1 olduğunu söylemiştik.
+
+380
+01:15:46,671 --> 01:15:51,311
+Bunu üstel limite de gösterebiliriz. En inci dereceden kök 3'te 3 üzeri 1 bölü n oluyor.
+
+381
+01:15:52,072 --> 01:15:56,412
+En sonsuza giderken 1 bölü n 0'a gider. Değil mi arkadaşlar?
+
+382
+01:15:57,332 --> 01:16:06,512
+Bu sıfıra gidince de 3 üzeri 0'da 1'e eşit olur. Dolayısıyla burası 1 olur. Bu da 1 zaten. Dolayısıyla sonucum 1 olarak elde edilir arkadaşlar.
+
+383
+01:16:07,452 --> 01:16:09,592
+Burada anlaşılmayan bir nokta var mı arkadaşlar?
+
+384
+01:16:17,844 --> 01:16:19,863
+Güzel. Devam ediyorum.
+
+385
+01:16:22,604 --> 01:16:25,504
+Yok arkadaşlar, anı vermeyeceğiz, bitireceğiz zaten.
+
+386
+01:16:26,043 --> 01:16:30,244
+Dizilerle ilgili anlatacaklarım bitti, sayılır. Birkaç örnek daha var.
+
+387
+01:16:30,884 --> 01:16:32,623
+Bu örnekleri bitirdikten sonra bitireceğiz.
+
+388
+01:16:35,844 --> 01:16:37,064
+En sonsuza giderken,
+
+389
+01:16:37,811 --> 01:16:50,551
+Eksi 1 bölü 2 üzeri n ifadesi. Zaten bakın, payda paydan büyük. En sonsuza gidiyor. 1 üzeri n bir şey ifade etmiyor zaten. Dolayısıyla bu sıfıra yakınsak arkadaşlar.
+
+390
+01:16:53,131 --> 01:17:04,452
+Şu diziye bakalım. 2 eksi 1 bölü 2 üzeri n, 3 artı 1 bölü 2 üzeri n. En sonsuza giderken, 2 eksi 1 bölü 2 üzeri n de 1 bölü 2 üzeri n sıfıra gider.
+
+391
+01:17:05,971 --> 01:17:10,711
+3 artı 1 bölü 2 üzerende, 1 bölü 2 üzerende, en sonsa giderken, sıfıra gider.
+
+392
+01:17:12,112 --> 01:17:18,791
+Dolayısıyla, 2 çarpı 3'ten, burası, 6 olarak elde edilir arkadaşlar.
+
+393
+01:17:19,512 --> 01:17:22,752
+Bu dizide, yakınsaktır arkadaşlar, dolayısıyla.
+
+394
+01:17:24,652 --> 01:17:28,951
+Evet, diziler de, böylelikle, bitmiş oldu arkadaşlar.
+
+395
+01:17:29,692 --> 01:17:32,971
+Dizilerle ilgili, zaten daha çok...
+
+396
+01:17:33,007 --> 01:17:48,268
+Fonksiyonları da kullanacağız. Monotonluk ve sınırlık kavramları var. Bunlarla ilgili de örnekler yaptık. Siz farklı örneklere de bakınız. Sınavdan önce de sınavda çıkabilecek sorulara yönelik uygulamalar yaparız. Dizilerle ilgili sorular da çözeriz.
+
+397
+01:17:49,487 --> 01:17:54,768
+Bundan sonra aslında asıl bu pdf'i attım zaten. Tekrar atayım arkadaşlar.
+
+398
+01:17:59,923 --> 01:18:09,943
+Hemen atıyorum. Şuradan atıyorum arkadaşlar. WhatsApp grubuna da atmıştım. WhatsApp grubuna da katılın.
+
+399
+01:18:15,604 --> 01:18:20,904
+Oradan da yine kaynakları paylaşacağım ben.
+
+400
+01:20:21,876 --> 01:20:24,675
+Whatsapp davet bağlantısını atabilir misiniz arkadaşlar?
+
+401
+01:20:27,056 --> 01:20:30,536
+Whatsapp grubu davet bağlantısını alamak.
+
+402
+01:21:08,115 --> 01:21:11,656
+WhatsApp grubunun da davet bağlantısını paylaşalım arkadaşlar.
+
+403
+01:21:22,707 --> 01:21:24,567
+Davet bağlantısı nasıl olunuyor?
+
+404
+01:21:40,083 --> 01:21:41,203
+Teşekkürler.
+
+405
+01:22:29,235 --> 01:22:34,416
+Tamamdır arkadaşlar. WhatsApp grubundan da yine paylaşımları yapacağım.
+
+406
+01:22:37,435 --> 01:22:41,056
+Bundan sonraki notumuzda seriler arkadaşlar.
+
+407
+01:23:08,979 --> 01:23:10,799
+Serileri de atacak mısınız hocam?
+
+408
+01:23:11,239 --> 01:23:12,500
+Attım şu anda.
+
+409
+01:23:17,076 --> 01:23:43,935
+Serileri de atıyorum. Daha sonra da ondan sonraki konular ve ondan sonraki konulardaki notlar biraz karışık. Onlardan bazı seçimler yapıp bir kısmını işleyeceğim, bir kısmını işlemeyeceğim falan karışık biraz. Orada biraz daha dersten takip edeceksiniz. Serileri de attım. Bizlerle ilgili örnek soruları da sınavdan önce çözeceğiz arkadaşlar. Şu an onları atmak istemiyorum.
+
+410
+01:23:45,363 --> 01:23:48,404
+Çünkü bazı konular konu dışı oluyor, vesaire.
+
+411
+01:23:49,043 --> 01:23:52,224
+Hocam, serileri buradaki chat kısmında da atabilir misiniz?
+
+412
+01:23:53,064 --> 01:23:56,963
+Neyi? Serileri, tabii tabii atabilirim. Atıyorum hemen.
+
+413
+01:24:00,819 --> 01:24:04,420
+Haftaya da buradan devam edeceğiz arkadaşlar.
+
+414
+01:24:06,379 --> 01:24:11,260
+Seriler 13 MB, onun için biraz beklememiz gerekiyor. Şu an yükleniyor.
+
+415
+01:24:13,979 --> 01:24:19,719
+Dizilerle ilgili sorusu olan var mı arkadaşlar? Dizilerde yakınsaklık bizim için önemli.
+
+416
+01:24:19,719 --> 01:24:21,719
+Yakınsak diziler...
+
+417
+01:24:21,792 --> 01:24:47,772
+Limiti olan diziler. Bir de ıraksaklık kavramı var. Eğer dizinin limiti mevcut değilse, limiti bulunamıyorsa, limiti yoksa, ıraksaktır diyoruz. Bir de eğer dizinin limiti, diyelim ki n dizisi, eksi n dizisi gibi, sonsuza gidiyorsa dizinin limiti, ya da n kare dizisi olabilir, vesaire. Dizinin limiti sonsuza gidiyorsa, arkadaşlar, dizinin limiti sonsuza gidiyorsa,
+
+418
+01:24:49,395 --> 01:24:55,095
+O zaman da, artı ya da eksi sonusu olabilir. Dizi, ıraksaktır diyoruz arkadaşlar.
+
+419
+01:24:58,095 --> 01:25:08,235
+Bu serilerle ilgili PDF'i WhatsApp'tan da attım. 13 MB indirdiniz mi arkadaşlar?
+
+420
+01:25:14,355 --> 01:25:19,735
+Bu chatten attığım arkadaş indirdiyse, dersi artık sonlandırıyorum arkadaşlar.
+
+421
+01:25:21,255 --> 01:25:23,855
+Umarım verimli, yararlı bir ders olmuştur.
+
+422
+01:25:26,335 --> 01:25:27,355
+Sorunuz varsa...
+
+423
+01:25:32,404 --> 01:25:35,123
+Whatsapp'tan da devam ederiz. Kendinize iyi bakın.
+
+424
+01:25:45,555 --> 01:26:02,995
+Bu diziler konusunda anlamadığınız yer belki dizinin limiti, tanımı falan olabilir. Onlar da zaten çok çıkmıyor. Çok takmanıza gerek yok. Diğer kısımlar yakınsaklık, monotonluk, azalmayanlık kısımları da üzerine biraz çalıştığınızda zaten anlaşılmayacak yerler değil.
+
+425
+01:26:03,835 --> 01:26:11,755
+Diziler burada en basit aslında konumuz. Asıl önemli olan seriler zaten. Seriler de biraz daha zorlanabilirsiniz belki.
+
+426
+01:26:12,500 --> 01:26:29,659
+Seriler biraz daha önemli. Haftaya da zaten serilere geçeceğiz. Ama dediğim gibi serilerin yakınsaklığının tespitinde bir testler kullanılıyor. Bir de testlerden başka.
+
+427
+01:26:30,963 --> 01:26:48,824
+Kısmi toplamlar dizisiyle de yakınsaklığına bakılıyor. O açıdan diziler önemli. Ondan dolayı dizilere çalışmanız gerekiyor. Yani dizileri bir tekrar edin, bir çalışın, soruları tekrar bir çözün. Anlamadığınız yerler varsa tekrar bir bakın arkadaşlar.
+
+428
+01:26:49,884 --> 01:26:55,324
+Dizinin ne anlama geldiğini bilin. Yani belli kurala göre oluştuğunuz sayılarda olduğunu bilin.
+
+429
+01:26:55,956 --> 01:27:10,876
+Ondan sonra yakınsaklık kavramını iyice anlayın. Buna bir bakın, çalışın. Yakınsaklık kavramının ne olduğunu iyice algılayın, anlayın. Bu takdirde serileri de kolayca anlayacağınızı düşünüyorum arkadaşlar.
+
+430
+01:27:16,051 --> 01:27:19,311
+Ders bitmiştir. Hepinize iyi günler arkadaşlar. Kendinize iyi bakın.

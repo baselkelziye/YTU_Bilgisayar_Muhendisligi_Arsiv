@@ -1,0 +1,1387 @@
+1
+00:00:18,292 --> 00:00:21,332
+Arkadaşlar, merhaba, sesin açık olanlar var, lütfen kapatın.
+
+2
+00:00:52,307 --> 00:01:10,787
+Merhaba arkadaşlar. En son, Taylor ve Maclaurin serilerinde, açılımlarına bakıyorduk serilerin. Birkaç örnek çözdük ve bir iki örnek bıraktık. Şöyle kısa bir tekrar yapıp, sonra devam edeceğiz.
+
+3
+00:01:20,180 --> 00:01:28,100
+Bir fonksiyonun bir kuvvet serisine açılabileceği mantığından ortaya çıkmıştı.
+
+4
+00:01:29,300 --> 00:01:35,640
+Yani bir A noktasının belli bir civarında bir fonksiyonu bir kuvvet serisi olarak ifade edebiliyorduk.
+
+5
+00:01:35,760 --> 00:01:41,140
+Ve dolayısıyla bundan yola çıkarak yaklaşık değerini de bulmamız mümkündü.
+
+6
+00:01:47,924 --> 00:01:51,164
+Taylor serisi, kuvvet serisindeki
+
+7
+00:01:58,676 --> 00:02:14,596
+x eksi c üzeri n şeklindeki mantığa benzer şekilde, bir fonksiyonun bir a noktası civarında, bir a noktası civarında seriye açılımıydı.
+
+8
+00:02:14,596 --> 00:02:22,636
+Şimdi bakın, eğer ben bir fonksiyonu bir noktanın civarında seriye açabiliyorsam, arkadaşlar,
+
+9
+00:02:49,427 --> 00:03:13,048
+Varsayalım ki, bir seri bir noktanın civarında seriye açılsın. Bu durumda, seri açılımındaki, şuradaki, bakın, terimleri nasıl bulabilirim? Aslında, temel sorun bu. Bunu zaten x, eksi, a'yı bize veriyor. Mesela, bir noktanın civarında fonksiyonu seriye açıyorduk.
+
+10
+00:03:16,180 --> 00:03:22,680
+kat sayıları olarak, x80'in kuvvetleri olarak, seri olarak ifade edebildiğimizi varsayalım.
+
+11
+00:03:23,020 --> 00:03:23,760
+Bir fonksiyonun.
+
+12
+00:03:24,260 --> 00:03:34,879
+Şimdi eğer bu şekilde ifade ediyorsak, kuvvet serisi olarak ifade ediyorsak, yakınsaklık aralığı içindeki terimleri tek tek türevlerini alın.
+
+13
+00:03:35,160 --> 00:03:38,100
+Birinci türevini aldık, ikinci türevini aldık, üçüncü türevini aldık.
+
+14
+00:03:38,383 --> 00:03:50,183
+Bakın burada A2'den sonraki kat sayılar, burada A3'den sonraki kat sayılar, burada A4'den sonraki kat sayılar, x'e A verdiğimiz zaman F A noktasında tek sıfır oluyor.
+
+15
+00:03:52,024 --> 00:03:52,383
+Dolayısıyla...
+
+16
+00:03:59,412 --> 00:04:12,052
+Ben burada, buraları sıfır yaptıktan sonra, sadece kat sayıları elde ediyorum. Bakın, A1 kat sayısı, A2 kat sayısı. Yani, F1'in türevi, A1 kat sayısı olarak elde edilmiş oluyor arkadaşlar.
+
+17
+00:04:13,932 --> 00:04:23,272
+A2 kat sayısı, F1'in ikinci türevi bölü 2! olarak, A3 kat sayısı da, F1'in üçüncü türevi bölü 3! olarak, ve AN kat sayısı da,
+
+18
+00:04:23,891 --> 00:04:29,032
+f eninci mertebeden türev a bölü n faktöri olarak elde ediliyor arkadaşlar.
+
+19
+00:04:29,532 --> 00:04:33,312
+Dolayısıyla ben kat sayıları da elde etmiş oldum.
+
+20
+00:04:33,432 --> 00:04:38,091
+O zaman serinin biçimi artık benim için bir Taylor serisi arkadaşlar.
+
+21
+00:04:38,752 --> 00:04:39,711
+fx eşittir.
+
+22
+00:04:40,307 --> 00:04:55,587
+f a artı, f a'nın türevi çarpı x eksi a, f a'nın ikinci türevi bölü 2 faktörü yel çarpı x eksi a'nın karesi, artı f en inci mertebeden a bölü n faktörü yel çarpı x eksi a üzeri n genel terimiyle, bakın bu şekilde ifade ediliyor.
+
+23
+00:05:06,259 --> 00:05:08,759
+fx fonksiyonuna açıyoruz.
+
+24
+00:05:10,179 --> 00:05:12,699
+Şimdi, Taylor serisi bu.
+
+25
+00:05:13,579 --> 00:05:14,779
+Maclaurin serisi nedir?
+
+26
+00:05:15,039 --> 00:05:27,439
+Maclaurin serisi kavramı da, bakın, Taylor serisinde, a yerine 0 aldığımda, f0 artı f0'ın türevi,
+
+27
+00:05:27,824 --> 00:05:40,403
+x artı, f sıfırın ikinci türevleri, iki faktör yer çarpı x kare olarak tanımlanır arkadaşlar. Yani Maclaurin serisi, x eşittir sıfırdaki Taylor serisidir arkadaşlar. Tamam mı?
+
+28
+00:05:41,364 --> 00:05:51,484
+Taylor polinomları da, bakın burada polinom derken aslında, en inci mertebeye kadar türevlerini aldığım fonksiyonu ifade ediyorum. Bakın burada.
+
+29
+00:05:52,596 --> 00:06:08,776
+n. mertebeye kadar, yani pnx, fa artı, fa'nın türevi, fn. mertebeden türevi, a bölü n faktörer çarpı, x, x, a, n'e kadar olan kısmına, Taylor polinomları diyorum.
+
+30
+00:06:08,975 --> 00:06:11,635
+Ve bunlarla ilgili bazı örnekler yaptık arkadaşlar.
+
+31
+00:06:13,716 --> 00:06:17,635
+Mesela sinüs x'i açtık, kosünüs x'i açtık, 1 bölü x'i açtık.
+
+32
+00:06:20,500 --> 00:06:28,560
+Dereceden, kök kök, 1,2'nin yaklaşık değerini bulduk. O noktanın civarında açarak ve bazı önemli Maclaurin serilerini verdik.
+
+33
+00:06:29,199 --> 00:06:41,139
+Bakın, buradaki Maclaurin serileri, oldukça önemli. Bunları bilmeniz gerekiyor. Zaten, mutlaki x küçüktür 1 için, bu iki seriyi biliyorsunuz.
+
+34
+00:06:41,139 --> 00:06:47,279
+Bununla ilgili örnekler de yaptık. Hatta ödev olarak da, bunlarla ilgili örnekler yapmanızı istemiştim.
+
+35
+00:06:57,012 --> 00:07:00,692
+Şimdi, en son
+
+36
+00:07:11,603 --> 00:07:13,084
+Sosik skareyi yaptık.
+
+37
+00:07:19,891 --> 00:07:24,891
+Elen x bölü, x eksi bir şeklinde olan örnekte kalmıştık.
+
+38
+00:07:26,531 --> 00:07:26,811
+Pardon.
+
+39
+00:07:27,971 --> 00:07:28,931
+E üzeri x'i açtık.
+
+40
+00:07:31,151 --> 00:07:34,151
+Sinüs x kareyi yapalım.
+
+41
+00:07:34,231 --> 00:07:37,231
+Bakın burada, sinüs x'in açılımını biliyoruz.
+
+42
+00:07:37,311 --> 00:07:42,151
+x eksi, işte x küp bölü 3 faktöriyel, artı 2 sürü 5 bölü 5 faktöriyel.
+
+43
+00:07:42,831 --> 00:07:44,691
+x yerine x kare koyuyoruz.
+
+44
+00:07:44,691 --> 00:07:46,211
+Bu sinüs x açılımında.
+
+45
+00:07:46,675 --> 00:07:57,295
+O zaman sinüs x kare, x yerine x kare koyarsa x kare, x seri 6 bölü 3 faktoryel, x üzeri 10 bölü 5 faktoryel şeklinde tanımlanayım.
+
+46
+00:07:58,015 --> 00:08:12,015
+Sinüs x kare dx, c artı x küp bölü 3, x x seri 7 bölü 7 çarpı 3 faktoryel, x seri 11 bölü 10 çarpı 5 faktoryel, ve eksi 1 üzeri, dolayısıyla bakın bu şekilde açtığım zaman,
+
+47
+00:08:13,971 --> 00:08:23,271
+Eksi bir üzeri n artı bir çarpı, x'e 2n artı bir bölü, 2n artı bir çarpı n faktörü, yani şeklinde elde edilmiş oluyor arkadaşlar.
+
+48
+00:08:30,067 --> 00:08:55,208
+Bazen belirsiz durumdaki limitleri hesaplamak için de kullanabiliriz. Bakın bunları yapmıştık zaten. Mesela belirsiz bir limit var. 0 bölü 0 belirsiz diye. Burada Taylor serisini açarak, Taylor serisi açılımını kullanarak yapabilirim. Dolayısıyla burada da sonuç 1 bölü 6 çıkıyor arkadaşlar.
+
+49
+00:10:56,403 --> 00:11:00,903
+lnx bölü x eksi bir şeklinde bir limit verilmiş burada bakın.
+
+50
+00:11:02,283 --> 00:11:07,564
+x giderken bire lnx bölü x eksi bir limitini hesaplayalım.
+
+51
+00:11:08,124 --> 00:11:10,024
+Şimdi lnx limitini biliyorduk.
+
+52
+00:11:11,703 --> 00:11:13,364
+ln bir artı x limitini biliyorduk.
+
+53
+00:11:14,868 --> 00:11:39,148
+x yerine x eksi 1 yazarsak, ln 1 artı x limitinde, ln x limitini elde ederiz. Dolayısıyla, ln x limiti x eksi 1, x x eksi 1'in karası bölü 2, artı x eksi 1'in küp bölü 3 olur. Bakın burada 1 artı x'in açılımı, x, x x kare bölü 2, artı x küp bölü 3. Ben burada x yerine x eksi 1 yazarsam, bakın buraya x eksi 1 yazıyorum.
+
+54
+00:11:42,932 --> 00:11:58,511
+Daha sonra, x-1 yazdıktan sonra, burası ne oldu? Yani içerisi, 1 artı x-1, x oldu. Eleni x'i elde ettim arkadaşlar. Sonrasında,
+
+55
+00:12:00,980 --> 00:12:23,860
+Burada, ki açılımda, x yerine artık, bakın ne yazıyorum, x eksi 1 yazıyorum. x yerine x eksi 1 yazdım. x eksi 1, x'i x kare bölü 2'de, x yerine x eksi 1 yazıyorum. Dolayısıyla x kare bölü 2 ne oldu arkadaşlar? x eksi 1'in karesi bölü 2 oldu. Artı, x küp bölü 3'ün olduğu, x eksi 1'in küpü bölü 3 oldu. Bakın, x yerine x eksi 1 yazdım.
+
+56
+00:12:24,596 --> 00:12:36,336
+Dolayısıyla, lnx bölü x eksi bir ifadesi, bakın zaten başta lnx bölü x eksi bir vermişti, bu ifade bölü x eksi bir oldu. Tamamını buranın x eksi bire bölüyorum.
+
+57
+00:12:36,796 --> 00:12:45,615
+Ben burayı x eksi bire böldüğüm zaman arkadaşlar, şuradaki x eksi bir ile buradaki x eksi bir bölüm olduğunda ne olur? Bir olur. Bir buradan geldi.
+
+58
+00:12:46,216 --> 00:12:51,216
+x eksi birin karesini x eksi bire böldüğümde x eksi bir olur. x eksi bir bölü iki oldu burası.
+
+59
+00:12:51,988 --> 00:13:08,968
+x-1'in kübünü x-1'e böldüğümde x-1'in karesi bölü 3 olur. Dolayısıyla açılım bu şekilde edelim. x-1'e giderken x-1'lik kıtımlar ne olur? 0 olur arkadaşlar. Dolayısıyla burası 1 olmuş olur arkadaşlar.
+
+60
+00:13:44,755 --> 00:13:46,715
+Burada anlaşılmayan bir şey var mı arkadaşlar?
+
+61
+00:13:48,475 --> 00:13:49,515
+Alttakine bakalım.
+
+62
+00:13:50,335 --> 00:13:53,055
+Sinus x eksi tanjant x bölü x küp şeklinde.
+
+63
+00:13:59,764 --> 00:14:05,844
+x eksi x küp bölü 3 faktöriyel, artı x seri 5 bölü 5 faktöriyel, sinüs x'in açılımı.
+
+64
+00:14:06,303 --> 00:14:09,724
+Tangent x'i yapmıştık yukarıda, sinüs x bölü kosinus x açılımından.
+
+65
+00:14:10,423 --> 00:14:12,423
+Polinom bölmenisiyle kendiniz de yapabilirsiniz.
+
+66
+00:14:14,524 --> 00:14:17,604
+Bu açılımdan, bu açılımı çıkartıyorum.
+
+67
+00:14:19,324 --> 00:14:24,283
+Dolayısıyla bakın, x'ler gitti, x küpler gitti.
+
+68
+00:14:27,956 --> 00:14:29,235
+x'ler gitti.
+
+69
+00:14:33,139 --> 00:14:40,039
+x, x, x ama x küp bölü 3 faktöriyelle x küp bölü 3 faktöriyelle çıkartıldı birbirinden. Dolayısıyla bakın,
+
+70
+00:14:46,035 --> 00:15:09,295
+Eksi x küp bölü 3 faktörü elden, eksi x küp bölü 3'ü çıkartıyorum. Dolayısıyla, eksi 1 bölü 2'yi elde ettim. Burada, x küp bölü 3 faktörü elden, x küp bölü 3'ü çıkardıktan sonra, her tarafı x küp'e böldüm arkadaşlar. Buraya dikkat edin. Dolayısıyla, x küpler birbirini götürmüş oldum.
+
+71
+00:15:10,004 --> 00:15:27,704
+2 x üzeri 5 bölü 5 faktör yerden, 2 x üzeri 5 bölü 15 çıkardım. Dolayısıyla buranın işareti negatif oldu. 5 faktör yer bölü 5 faktör yerden 15 çıkardığımda da, x x kare bölü 8 oldu. Burası x üzeri 5'i de x küpü bölünce, burası x x kare bölü 8 olarak elde edildi.
+
+72
+00:15:36,659 --> 00:15:43,960
+Sıfıra gider arkadaşlar. Cevap nedir? Eksi 1 bölü 2 olarak elde edilir. Burada anlaşılmayan bir yer var mı arkadaşlar?
+
+73
+00:19:42,291 --> 00:20:03,891
+Arkadaşlar, şu an sesim geliyor mu? Bu internette yine bir sorum var. Geliyorsa bire basın arkadaşlar, sesim geliyorsa lütfen. İnternet bir gitti, tamam. Teşekkürler. Evet, bu soruda anlaşılmayan bir yer yoksa geçiyorum arkadaşlar. Bu tarzda bir iki sorumuz daha var.
+
+74
+00:20:05,683 --> 00:20:13,244
+Mesela 1 bölü sinüs x verdi diyelim ki bize. Ne yapacağız? Ona bakalım. Bakın, 1 bölü sinüs x.
+
+75
+00:20:23,667 --> 00:20:50,547
+eksi 1 bölü x şeklinde vermiş ifadeyi. O zaman, burayı x ile, burayı da sinüs x ile payda eşitlerim. Öncelikle, ilk yapacağım işlem bu. Burayı da sinüs x ile payda eşitliyorum. Daha sonra, bunları çarpacağım. Burayı x ile çarptım, payı ve paydayı, burayı sinüs x ile çarptım. İfade x eksi sinüs x bölü, x çarpı sinüs x oldu.
+
+76
+00:20:51,316 --> 00:20:58,715
+Dolayısıyla, sonuç olarak x eksi, x eksi x küp bölü 3 faktörü yel, artı x seri 5 bölü 5 faktörü yel oldu.
+
+77
+00:20:59,755 --> 00:21:08,036
+Burası x çarpı, x eksi x küp bölü 3 faktörü yel, artı x seri 5 bölü 5 faktörü yel, nokta nokta şeklinde olmuş oldu arkadaşlar.
+
+78
+00:21:08,436 --> 00:21:13,036
+Bakın, yukarıda x'ler birbirini götürdü.
+
+79
+00:21:13,916 --> 00:21:16,715
+Aşağıda x'e çarpınca ilk terim x kara oldu.
+
+80
+00:21:17,167 --> 00:21:38,627
+İkinci terim x üzeri 4 oldu. Üçüncü terim x üzeri 6 oldu. Burada bakın x küp var, x üzeri 5 var. Şimdi bakın, bunun paydanın bakın, dikkat edin buraya. İlk terimi x kare. Dolayısıyla yukarıdaki ifadeyi x kare parantezine alırsam, pay ve paydadaki ortak birer terimi yok etmiş olurum.
+
+81
+00:21:39,155 --> 00:21:43,476
+Burayı x kare parantezine aldım, yukarıyı da x kare parantezine aldım, birbirini götürdüm.
+
+82
+00:21:43,935 --> 00:21:48,456
+x kare parantezinde burası x bölü 3 faktöriyel, artı x küp bölü 5 faktöriyel oldu.
+
+83
+00:21:49,056 --> 00:21:52,855
+Aşağısı x kare parantezinde 1 eksi x kare bölü 3 faktöriyel.
+
+84
+00:21:53,200 --> 00:22:17,220
+Bakın burası x'e 4'le hatırlayın. x'e çarpanca x'e 6 oldu burası. x'e 4 bölü 5 faktöri olarak elde ettim burayı arkadaşlar. Bunlar birbirini götürdü. Burası zaten bak x sıfıra giderken komple sıfıra gider. Burası x sıfıra giderken 1'dir. Sonuç ne olur? Sıfır olur arkadaşlar. Bu soruda anlaşılmayan bir yer var mı?
+
+85
+00:24:08,564 --> 00:24:15,624
+Şimdi diğer örneğe bakalım. E üzeri 2x-1 çarpı ln 1 artı x şeklinde vermiş.
+
+86
+00:24:16,344 --> 00:24:21,943
+Şimdi bakın arkadaşlar, burada da bildiğimiz bazı limitler var, onları kullanacağız tabii ki.
+
+87
+00:24:21,943 --> 00:24:26,943
+Bir tanesi nedir? Bildiğimiz limitlerden bir tanesi...
+
+88
+00:24:27,284 --> 00:24:41,624
+Bir kere, en başta bilmemiz gereken, en çok bilmemiz gereken limit zaten, e üzeri x en basit, en akılda kalıcı, 1 artı, x artı, x kare bölü 2 faktörüel, artı x küp bölü 3 faktörüel, artı x'e 4 bölü 4 faktörüel, şeklinde verilen limit.
+
+89
+00:24:43,903 --> 00:24:51,664
+Diğeri, kosünüs x zaten, bu da verilmiş yukarıda, diğeri de ln 1 artı x, bunu da vermiş zaten yukarıda.
+
+90
+00:24:51,664 --> 00:24:52,524
+Şimdi bakalım.
+
+91
+00:24:53,107 --> 00:24:57,528
+e üzeri 2x'i verdiyse, e üzeri x açılımından bunu elde edebilirim.
+
+92
+00:24:57,807 --> 00:25:02,387
+x yerine 2x yazarsam, bakın x yerine 2x yazdım, ne oldu?
+
+93
+00:25:03,208 --> 00:25:05,907
+Açılımda x yerine artık 2x yazıyorum.
+
+94
+00:25:06,228 --> 00:25:11,168
+Bakın, x yerine 2x, 2x'in karesi bölü 2 faktörü şeklinde bunu yazdım.
+
+95
+00:25:12,528 --> 00:25:16,607
+Kosünüs x'inin açılımında bizden kosünüs 3x'i istemişiz orada.
+
+96
+00:25:17,107 --> 00:25:24,887
+x yerine 3x yazıyorum. Açılımda, yine bakın seri açılımında, x yerine 3x yazdım arkadaşlar. Bu açılımı yapıyorum.
+
+97
+00:25:26,067 --> 00:25:34,748
+ln1 artı x'in açılımında, x, x kare bölü 2 artı x küp bölü 3 olduğunu biliyorum. x yerine x küp yazacağım burada.
+
+98
+00:25:35,087 --> 00:25:40,067
+Bakın çünkü bize soruda neyi sormuş? 1 artı x küp açılımını sormuş.
+
+99
+00:25:40,948 --> 00:25:49,708
+x'e yan x küp yazdım, x küp eksi, x küpün karesi bölü 2, x küpün küpü bölü 3 şeklinde verilmiş arkadaşlar.
+
+100
+00:26:06,099 --> 00:26:20,679
+Sonuç olarak, bunları artık toparlıyorum. Birinci aldığım bu, ikincisi bu, üçüncü bu. Sırayla yerine koyuyorum. İşte, bir eksi demiş, birler gitti. Bakın, sonra da, e üzeri iki, x eksi bir demiş.
+
+101
+00:26:22,359 --> 00:26:27,019
+E üzeri iki, x'e yerine yazdım, eksi bir olunca, bakın şu bir gitti.
+
+102
+00:26:27,488 --> 00:26:34,548
+e üzeri 2x, eksi, 1 yapınca, bu 1 gitti. Geriye ne kaldı? 2x artı 2x'in karesi bölü 2 vs. kaldı.
+
+103
+00:26:36,307 --> 00:26:41,768
+Şurada ne kaldı? ln 1 artı x küp, x küp eksi x'e 6 bölü 2, x'e 9 bölü 3, burası kaldı.
+
+104
+00:26:42,628 --> 00:26:44,488
+Bakın, 3x'in...
+
+105
+00:26:45,076 --> 00:27:11,135
+Açılımını yazdım. Kosünüs 3x'in açılımını yazdım. Yukarıda soru da ne demiş kosünüs 3x için? 1-kosünüs 3x'in karesi demiş arkadaşlar. 1-kosünüs 3x'in karesi demiş. Dolayısıyla burada ne yapıyorum? 1-kosünüs 3x dediği için buradaki 1 gitti arkadaşlar. Ne kaldı? 3x'in karesi bölü 2 faktöriyel, 3x'in karesi bölü 4 faktöriyelin karesi kaldı arkadaşlar.
+
+106
+00:27:14,771 --> 00:27:34,291
+Dolayısıyla, sonuç olarak burayı x seri 4 parantezine alabilirim. Neden bunu yaptım? Bakın 2x ile x kübü çarptım, x seri 4 elde ettim. 2x ile x seri 6'yı çarptım, x seri 4'ten mertebesi daha büyük bir terim elde ettim.
+
+107
+00:27:35,155 --> 00:27:52,556
+2x'in karesiyle x kübü çarptım. Yine x üzeri 4'ten daha büyük mertebesi olan bir terim elde ettim. Bunları sırayla yazıyorum. İlk terimim 2x üzeri 4. Diğerleri zaten, ilki 2x. 2x'in karesiyle x kübü çarptığımda x üzeri 5.
+
+108
+00:28:05,011 --> 00:28:27,931
+2x ile x gibi çarptım. 2x'leri 4 arkadaşlar. Dolayısıyla, bunları sırayla çarptım. Kalan bütün terimler zaten bundan daha büyük. Yani hepsi x'e bağlı terimler. Şuradan sonrası hep x'e bağlı terimler. Aşağıdaysa, ilk terim 3x'in karesi 9 çarpı x kare.
+
+109
+00:28:31,731 --> 00:28:38,211
+3'ün 4. kuvveti x üzeri 4 zaten. Bakın burada x'in karesinin karesi x üzeri 4'lü biterim.
+
+110
+00:28:38,963 --> 00:28:53,284
+x'e 4'ün karesi, zaten x'e 8, dolayısıyla ilk terimden sonrası yine, x'e 4 parantezini alırsam, 9 bölü 2, x'e 4 eksi, bunlar artık hep x'li, x'e bağlı terimler.
+
+111
+00:28:53,364 --> 00:28:58,923
+Bakın, bu noktadan sonraki terimlerin hepsi, x sıfıra giderken sıfıra gidiyor arkadaşlar.
+
+112
+00:28:59,443 --> 00:29:04,064
+Burası da sıfıra gidiyor bakın, x'li terimlerin hepsi x sıfıra giderken sıfıra gidiyor.
+
+113
+00:29:04,364 --> 00:29:06,624
+Yukarıda hangi terimi aldım? 2 aldım.
+
+114
+00:29:06,963 --> 00:29:12,403
+Nereden aldım? 9 bölü 2 aldım. Ne oldu dolayısıyla? 2 çarpı.
+
+115
+00:29:18,579 --> 00:29:37,139
+2 bölü 9 bölü 2'nin karesinden, 9 bölü 2'nin karesini yukarı taşıdım. 9 bölü 2'nin karesi nedir? 81 bölü 4, yukarı 4 bölü 81 olarak geçti. 2 çarpı 4 bölü 81'den 8 bölü 81 olarak elde ediyorum arkadaşlar.
+
+116
+00:29:38,379 --> 00:29:39,220
+Var mı sorusu olan?
+
+117
+00:31:40,980 --> 00:31:45,180
+Sorusu olan yoksa, şimdi binom serisi açılımına bakalım arkadaşlar.
+
+118
+00:31:45,940 --> 00:31:49,059
+Bir de böyle bir seri biçimi var.
+
+119
+00:31:50,059 --> 00:31:50,880
+Şunu biliyoruz.
+
+120
+00:31:50,880 --> 00:32:07,779
+1 artı x'in r'inci kuvveti, 1 artı rx artı r çarpı r eksi bölü 2 faktöriyel çarpı x kare, artı r çarpı r eksi 1 çarpı r eksi 2 çarpı x köp bölü 3 faktöriyel.
+
+121
+00:32:08,403 --> 00:32:22,004
+Bu şekilde bir binom serisi tanımlanıyor arkadaşlar. Bu binom açılımından faydalanarak yapılıyor. Ayrıntılarını öğrenmek isteyen varsa kitaba bakabilir. Bunun çok üzerinde durmayacağım.
+
+122
+00:32:22,867 --> 00:32:34,488
+1 artı, dolayısıyla bakın şurası, r çarpı, r eksi 1 çarpı, r eksi 2, n'e kadar, r eksi, n eksi 1, n faktörüel olarak veriliyor.
+
+123
+00:32:34,968 --> 00:32:44,408
+Çarpı, x ile n şeklinde, bir seri açılma. Bu, 1 artı x'in, r'inci kuvvetini belirleyen, bir seri açılma.
+
+124
+00:32:44,408 --> 00:32:45,508
+Şimdi,
+
+125
+00:32:47,667 --> 00:32:52,587
+Bu açılımı kullanarak aslında normalde biz binom açılımını neyde biliyorduk?
+
+126
+00:32:53,327 --> 00:33:00,207
+Karesi, küpü, ikinci, üçüncü, dördüncü, beşinci kuvveti gibi, eninci kuvveti gibi ifadelerde kullanıyorduk.
+
+127
+00:33:00,727 --> 00:33:09,548
+1 artı x'in katlarının seri açılımlarında da bunu kullanabiliriz gibi bir yaklaşımla bunu düşünmemiz gerekiyor.
+
+128
+00:33:10,548 --> 00:33:12,707
+Yani mesela şöyle ki,
+
+129
+00:33:13,907 --> 00:33:19,507
+1 artı 1 bölü, kök 1 artı x'in kuvvet serisi temsilini buldunuz demiş.
+
+130
+00:33:21,747 --> 00:33:26,747
+fx fonksiyonunun, 1 bölü, kök 1 artı x olduğunu düşünelim.
+
+131
+00:33:27,527 --> 00:33:29,847
+Bu 1 artı x'leri eksi 1 bölü 2'dir.
+
+132
+00:33:30,107 --> 00:33:31,647
+Bakın rasyonel kuvvet var.
+
+133
+00:33:32,027 --> 00:33:35,107
+Yani karesi küpü, beşinci kuvvet falan değil.
+
+134
+00:33:35,447 --> 00:33:36,847
+Üstü eksi 1 bölü 2 var.
+
+135
+00:33:37,487 --> 00:33:38,507
+O açılımı kullanalım.
+
+136
+00:33:38,900 --> 00:34:04,900
+1-1 bölü 2x artı, eksi 1 bölü 2 çarpı, eksi 3 bölü 2, bölü 2 faktörüel çarpı x kare şeklinde verilmiş. Artı, eksi 1 bölü 2 çarpı, eksi 3 bölü 2 çarpı, eksi 5 bölü 2 bölü, 3 faktörüel çarpı x küp şeklinde verilmiş. Artı, nokta nokta nokta şeklinde ifade edilmiş.
+
+137
+00:34:05,875 --> 00:34:22,235
+Burada bakın, neyi kullandım ben? Ben burada, 1 artı x üzeri r'deki binom serisi açılımı formülünü kullandım arkadaşlar. Dediğim gibi, bunun da açılımları var. Kitaptan isterseniz, merak ediyorsunuz, bakabilirsiniz.
+
+138
+00:34:23,956 --> 00:34:39,155
+Bunu düzenlediğim zaman da, yani bu ifadeleri çarptığım zaman, eksi 1 bölü 2 çarpı, eksi 3 bölü 2, iki faktör ile hesaplayıp yazdığım zaman düzenli biçimde, 1 eksi 1 bölü 2x, 1 çarpı 3 çarpı x kare eksi bu şekilde açılıyor.
+
+139
+00:34:39,155 --> 00:34:40,908
+Şimdi bakın burada...
+
+140
+00:34:41,235 --> 00:35:01,755
+Belli bir düzen yine var. Yani burası 1 çarpı 3 x kare, burası 1 çarpı 3 çarpı 5 x küm. Yani 1, 3, 5 gidiyor bakın burası güzel bir düzende gidiyor. Ben bunu 1, 3, 5, 2, n-1 şeklinde yazabilirim. Yani dördüncü, beşinci, n'inci, n artı birinci terimi de yazabilirsiniz burada tabii ki.
+
+141
+00:35:07,219 --> 00:35:11,899
+2'nin karesi, 2'nin kübü şeklinde verilmiş arkadaşlar.
+
+142
+00:35:12,460 --> 00:35:18,079
+Dolayısıyla 2 üzeri n çarpı n faktörü şeklinde verilmiş arkadaşlar burası.
+
+143
+00:35:18,339 --> 00:35:26,539
+Dolayısıyla eksi x üzeri n olarak burayı da ifade edebilirim arkadaşlar.
+
+144
+00:35:27,500 --> 00:35:32,519
+Böylelikle seriler kısmını bitirmiş oluyoruz arkadaşlar.
+
+145
+00:35:32,519 --> 00:35:34,339
+Sorusu olan var mı serilerle ilgili?
+
+146
+00:36:15,123 --> 00:36:22,083
+Evet, soru yoksa artık kutupsal koordinatlar konusuna geçebiliriz.
+
+147
+00:38:03,603 --> 00:38:08,643
+Evet arkadaşlar, şimdi artık diğer konuya geçeceğiz.
+
+148
+00:38:11,363 --> 00:38:14,783
+Yok, ara vermedik arkadaşlar. Kutupsala geçiyoruz.
+
+149
+00:38:16,783 --> 00:38:18,844
+Kutupsal koordinatlar.
+
+150
+00:38:27,347 --> 00:38:43,047
+Kutupsal koordinatlar nedir? Biz normalde arkadaşlar, x-y düzleminde çalışıyorduk. Yani bizim çalıştığımız yer x ve y eksenleriydi.
+
+151
+00:38:46,579 --> 00:39:02,099
+Burada ben doğru çiziyordum, alan belirliyordum, çember çiziyordum veya çeşitli işlemlerle fonksiyonları ben fonksiyonları x'ye kartezyen koordinat düzleminde ifade ediyordum.
+
+152
+00:39:04,179 --> 00:39:12,579
+Bir fonksiyon, bir polinom fonksiyonu eğri çiziyordu, çeşitli eğriler çizebiliyordu, ya da bir parabol fonksiyonum vardı.
+
+153
+00:39:12,719 --> 00:39:18,099
+Çeşitli fonksiyonları ben kartezyen koordinat düzleminde ifade ediyorum.
+
+154
+00:39:18,659 --> 00:39:21,699
+Peki ama kutupsal koordinat nedir?
+
+155
+00:39:22,519 --> 00:39:26,840
+Şimdi bu kartezyen koordinat düzlemini ben başka bir düzleme taşıyacağım.
+
+156
+00:39:26,840 --> 00:39:28,359
+Nasıl bir düzleme taşıyacağım?
+
+157
+00:39:31,731 --> 00:39:40,412
+Açı ve uzunluk olan bir düzleme taşıcam. Uzunluktan kastimi R ile belirteceğim arkadaşlar.
+
+158
+00:39:40,632 --> 00:39:46,192
+R yarı çapı ile belirteceğim. Açıdan kastimi teta açısıyla belirteceğim.
+
+159
+00:39:46,192 --> 00:39:56,771
+X, Y yerine artık benim R ve teta'm var. R, teta kutupsal koordinat düzleminde belirleyeceğim.
+
+160
+00:39:57,076 --> 00:40:00,376
+Benim artık sadece 2 değişkenim var arkadaşlar.
+
+161
+00:40:00,536 --> 00:40:07,275
+X'ye düzlemi yerine, R'im var uzunluk olarak, açı olarak da T'tan var.
+
+162
+00:40:09,907 --> 00:40:17,108
+Burada bakın, x'ye dik koordinatları düzlemdeki bir p noktasının bir dikey doğru ile bir detay doğrunun kesişmesi olarak belirtir.
+
+163
+00:40:17,167 --> 00:40:24,927
+Kutupsal koordinatlar ile bir p noktasını bir çemberle merkezden çıkan bir ışının kesişmesi olarak belirtir ve aşağıdaki gibi tanımlanır.
+
+164
+00:40:25,707 --> 00:40:28,927
+Yani düzlem üzerinde bir nokta ve bu noktadan çıkan bir ışığını seçelim.
+
+165
+00:40:30,407 --> 00:40:32,827
+Evet, burada da böyle anlatmış.
+
+166
+00:40:35,268 --> 00:40:36,127
+Biraz anlaşılıyor.
+
+167
+00:40:36,563 --> 00:40:47,264
+Noktaya kutup, ışına ise kutup ekseni denir. Bunlar kavramlar. Bakın noktaya kutup diyoruz, ışına kutup ekseni diyoruz.
+
+168
+00:40:47,663 --> 00:40:51,983
+Kavramsız olarak bu şekilde ifade ediliyormuş. Ama siz şunu anlayın yeter.
+
+169
+00:40:58,260 --> 00:41:07,340
+R uzunluğu ve açı olan theta'dan müteşekkil bir düzleme taşıyorum. Bunu bilmen yeterli.
+
+170
+00:41:08,220 --> 00:41:20,060
+Şimdi, peki ama nasıl taşıyacağım? Yani, x'ye düzlemini, kartezyen koordinat düzlemini, kutupsal koordinat düzlemini nasıl taşıyacağım?
+
+171
+00:41:24,000 --> 00:41:30,819
+P nokta, yani bir xye noktasını, PR teta şeklinde, kutupsal koordinatlara taşıyorum.
+
+172
+00:41:31,840 --> 00:41:38,779
+R, P'nin orjine olan yönlü uzaklığı. Bakın, şu uzaklığa R diyorum.
+
+173
+00:41:40,460 --> 00:41:45,880
+Teta, kutup ekseniyle, OP arasındaki yönlü açı arkadaşlar.
+
+174
+00:41:45,880 --> 00:41:47,000
+Dolayısıyla,
+
+175
+00:41:52,211 --> 00:41:54,332
+0 P aralığına
+
+176
+00:42:14,387 --> 00:42:17,387
+0p uzunluğuna r yarı çapı diyorum.
+
+177
+00:42:17,827 --> 00:42:25,427
+Theta, yarı, bu yarı çapın o kutup ekseniyle yaptığı açı arkadaşlar.
+
+178
+00:42:51,923 --> 00:43:12,484
+Şimdi saatin tersi yönü pozitif yön olarak düşünülüyor. Yani saatin tersi yönünde tetayı ölçüyorum arkadaşlar. Bir de negatif teta var. Bu da saat yönünde ölçülen açıya deniyor. Yani saat yönünü biliyorsunuz zaten.
+
+179
+00:43:18,739 --> 00:43:20,500
+ölçülüyor arkadaşlar.
+
+180
+00:43:21,199 --> 00:43:26,979
+Bir noktayı temsil eden, sonsuz tane, kutupsal koordinat, çifti vardır.
+
+181
+00:43:30,059 --> 00:43:35,839
+Yani nasıl? Herhangi bir noktada, teta açısı, sonsuza kadar dönebilir.
+
+182
+00:43:36,279 --> 00:43:42,899
+Yani R0 ise, bakın R0 ise, teta ne olursa olsun, P1 kutup olmuş olur.
+
+183
+00:43:42,899 --> 00:43:43,579
+Dolayısıyla,
+
+184
+00:43:44,244 --> 00:43:48,543
+Sonsuz tane kutupsal koordinat çifti elde edebilirim.
+
+185
+00:43:49,164 --> 00:43:58,463
+R küçüktür sıfır ise, P teta açılı ışının ters yönündeki teta artı pi açısı açılı ışının üzerinde olup, kutuptan R birim uzaklıktadır.
+
+186
+00:43:59,784 --> 00:44:02,423
+R'nin negatif olduğu duruma bakalım, bakın.
+
+187
+00:44:03,844 --> 00:44:08,444
+R negatif olduğunda da, ters yönündeki teta artı pi olarak.
+
+188
+00:44:08,784 --> 00:44:14,784
+Bakın buradan teta açısı var ya, bu da teta artı pi. Bakın buraya pi kadar geliyor.
+
+189
+00:44:16,324 --> 00:44:21,684
+Kutuptan da r birim uzaklıkta. Yine eksi üçün mutlak değerini aldık.
+
+190
+00:44:22,224 --> 00:44:27,963
+r neydi? Burada üç mesela diyelim ki. Burası yine üç birim uzaklıkta.
+
+191
+00:44:28,304 --> 00:44:32,704
+Ama buranın koordinatını eksi üç pi bölüç olarak belirtiyoruz arkadaşlar.
+
+192
+00:44:32,704 --> 00:44:33,844
+Şimdi.
+
+193
+00:44:36,467 --> 00:44:41,127
+Bazı kutupsal koordinat noktalarını ifade edelim.
+
+194
+00:44:41,627 --> 00:44:48,307
+Mesela kutupsal eksenden pi bölü 4 açısı yapan 3 birimlik bir noktayı ifade edelim.
+
+195
+00:44:48,447 --> 00:44:50,567
+Bu 3 pi bölü 4 noktasıdır.
+
+196
+00:44:50,887 --> 00:44:55,127
+Bu R uzunluğu, bu theta açısı arkadaşlar.
+
+197
+00:44:57,148 --> 00:45:03,188
+Kutupsal eksenden negatif yönde uzaklaşan 2 birimlik bir kutupsal açı.
+
+198
+00:45:03,188 --> 00:45:03,728
+Bakın.
+
+199
+00:45:04,436 --> 00:45:10,416
+2, R'miz, eksi, P bölü 6, kutupsal eksenli yaptığı açı arkadaşlar.
+
+200
+00:45:15,411 --> 00:45:27,011
+Mutlak eksi 3, sonucuya bakalım, eksi 3'e pi bölü 3 açılı olan kutup noktasını belirleyelim.
+
+201
+00:45:27,591 --> 00:45:34,572
+Kutupsal eksenden pi bölü 3 açısı yapan 3 birimlik noktayı alıyoruz.
+
+202
+00:45:36,436 --> 00:45:46,936
+pi kadar uzaklaşıyoruz. Neden? Çünkü bize eksi 3 vermiş. Bunun tam negatif tarafı olması gerekiyor. Eksi 3, pi bölü 3 olarak belirledik arkadaşlar.
+
+203
+00:45:50,436 --> 00:45:51,536
+Şimdi arkadaşlar.
+
+204
+00:46:04,563 --> 00:46:13,163
+R theta, eksi R theta artı, Pi'ye eşittir.
+
+205
+00:46:15,523 --> 00:46:19,543
+Çünkü bakın, R theta'ya
+
+206
+00:46:20,275 --> 00:46:34,055
+eksi re'ye aldığımızda, eksi re ya da pi'ye eklediğimizde aynı noktaya gelir. Bu aynı zamanda eksi re teta artı 3 pi'ye eşittir. Yani 2 pi katlarına hep eşittir. Eksi re teta artı 2 k artı 1 pi şeklinde olanlara eşittir.
+
+207
+00:46:34,815 --> 00:46:43,255
+Bakın re teta, re teta artı 2 pi'ye de eşittir. Zaten bir tam dönüş yapmış olur. Teta artı 4 pi'ye ve 2 k pi'lere de eşittir.
+
+208
+00:46:43,648 --> 00:46:51,108
+teta 0, 2 pi aralığında kabul edilirse, düzlemin her noktasına tek bir re teta kutupsal çifti karşılık gelir arkadaşlar.
+
+209
+00:46:51,108 --> 00:47:06,927
+Şimdi, kutupsal denklemler ve grafikleri, denklem re eşittir a, merkezi 0,
+
+210
+00:47:10,068 --> 00:47:13,528
+Yarı çapı mutlak A olan çemberdir.
+
+211
+00:47:13,968 --> 00:47:20,068
+Theta eşittir, theta sıfır da sıfırdan geçen ve kutup eksinin theta sıfır açısı yapan doğrudur arkadaşlar.
+
+212
+00:47:21,748 --> 00:47:27,068
+Şimdi kutupsal koordinatları, aşağıdaki şartları sağlayan noktalar kümesinin grafinçisin.
+
+213
+00:47:27,307 --> 00:47:28,688
+Bakın, R eşittir 1.
+
+214
+00:47:29,268 --> 00:47:31,128
+R eşittir 1 nedir arkadaşlar?
+
+215
+00:47:31,807 --> 00:47:35,508
+Kutupsal koordinat düzleminde bir çemberdir arkadaşlar.
+
+216
+00:47:35,908 --> 00:47:37,428
+R eşittir 1 çemberi.
+
+217
+00:47:38,739 --> 00:47:43,759
+Ya da re eşittir eksi 1. Eksi 1 bu tarafa geldi. Bu da bir çemberdir arkadaşlar.
+
+218
+00:47:44,719 --> 00:47:48,500
+Teta eşittir pi bölü 6. Pi bölü 6 açısıdır arkadaşlar.
+
+219
+00:47:49,420 --> 00:47:53,539
+Teta eşittir 7 pi bölü 6. 7 pi bölü 6 açısıdır arkadaşlar.
+
+220
+00:47:53,539 --> 00:48:01,500
+Sadece bakın bunlar da açı. Teta eşittir eksi 5 pi bölü 6'da. Ters yönde eksi 5 pi bölü 6 açısıdır arkadaşlar.
+
+221
+00:48:02,299 --> 00:48:04,960
+Re 1 ile 2 aralığında. Bakın bunu ifade edelim.
+
+222
+00:48:05,427 --> 00:48:10,728
+R, bir noktasından, bir yarı çapından, iki uzunluğuna geliyor arkadaşlar.
+
+223
+00:48:11,867 --> 00:48:14,288
+Theta sıfırdan pi bölü ikiye geliyor.
+
+224
+00:48:14,528 --> 00:48:18,327
+Bakın, theta sıfırdan pi bölü ikiye geliyor arkadaşlar.
+
+225
+00:48:19,847 --> 00:48:20,467
+Tamam mı?
+
+226
+00:48:21,347 --> 00:48:26,288
+Dolayısıyla, theta eşittir sıfırdan pi bölü ikiye geliyor arkadaşlar.
+
+227
+00:48:27,068 --> 00:48:30,748
+Eğer, theta kısıtlaması o olmasaydı.
+
+228
+00:48:33,331 --> 00:48:40,231
+Theta sıfırdan 2 pi'ye kadar olsaydı arkadaşlar.
+
+229
+00:48:40,731 --> 00:48:43,652
+Theta sıfırdan 2 pi'ye kadar olsaydı.
+
+230
+00:48:43,652 --> 00:48:47,412
+O zaman ne yapacaktım?
+
+231
+00:48:47,891 --> 00:48:51,952
+Sıfırdan 2 pi'ye kadar olsaydı, Theta eşittir sıfırdan.
+
+232
+00:48:53,907 --> 00:49:12,228
+Gelecekti, gelecekte, te buraya kadar, 2 piye kadar. R nereden nereye? 1'den 2. O zaman bu simit şeklindeki kısmı alacaktım arkadaşlar. Tamam mı? Şimdi bakın, diğer örnekleri de yapalım. İyice otursun.
+
+233
+00:49:17,588 --> 00:49:24,887
+Teta, şimdi bakın burada tek bir açı vermiş, dolayısıyla tek bir doğru olacak.
+
+234
+00:49:25,448 --> 00:49:31,347
+Eksi 3 ile 2 arasında R. Eksi 3 burası, negatif taraf, 2 de burası.
+
+235
+00:49:31,968 --> 00:49:41,328
+Açı ne? Teta eşittir, pi bölü 4. Bu açılı, bu 2'den eksi 3'e kadar olan kısım arkadaşlar.
+
+236
+00:49:41,908 --> 00:49:44,268
+R eksi 3'ten 2'ye kadar geliyor.
+
+237
+00:49:46,643 --> 00:50:04,843
+Eğer, 2 pi bölü 3 ile 5 pi bölü 6 arasındaysa, teta, 2 pi bölü 3 ile 5 pi bölü 6 arasındaysa, bakın 2 pi bölü 3 burası, 5 pi bölü 6 ise, burası arkadaşlar.
+
+238
+00:50:11,092 --> 00:50:32,891
+Kutupsal koordinat düzleminde şu bölge, bu açıl arasındaki bölgeyi veriyor arkadaşlar. Bakın, R yarış çapı 2 ile 3 arasında. 2'den başlıyor, 2'yi nokta nokta gösteriyorum. Neden? Çünkü bakın, 2'den büyük vermiş R'yi. 3'ü direkt çizerek gösteriyorum. Çünkü 3'den küçük eşit vermiş.
+
+239
+00:50:35,987 --> 00:50:39,367
+0 ile pi bölü 6 arasında theta.
+
+240
+00:50:58,420 --> 00:51:04,680
+R-1 ile 2 aralığında, eksi 1'den büyük, 2'den küçük arkadaşlar.
+
+241
+00:51:07,300 --> 00:51:11,900
+Theta, eksi 2 pi bölü 3 açısına sahip arkadaşlar.
+
+242
+00:51:12,699 --> 00:51:15,260
+Eksi 2 pi bölü 3'ü aldım.
+
+243
+00:51:16,039 --> 00:51:17,400
+Neresi reksi 2 pi bölü 3?
+
+244
+00:51:17,980 --> 00:51:22,199
+Şurası, eksi 2 ile 1 aralığında aldım arkadaşlar.
+
+245
+00:51:22,399 --> 00:51:24,279
+Bakın, bu doğruyu verdi bana.
+
+246
+00:51:24,380 --> 00:51:26,000
+2 dahil değilmiş.
+
+247
+00:51:26,579 --> 00:51:30,539
+Bakın, 2'yi açık aralık olarak belirtmiş. Buraya dikkat edin.
+
+248
+00:51:33,619 --> 00:51:38,059
+Evet, kutupsal koordinatlar anlaşıldı mı arkadaşlar? Anlaşılmayan bir yer var mı?
+
+249
+00:51:39,539 --> 00:51:46,759
+Dediğim gibi, kartezyen koordinat düzlemini, r, teta şeklinde kutupsal koordinatlara taşıyoruz.
+
+250
+00:51:48,199 --> 00:51:52,259
+Şimdi, bunların arasındaki bağlantı, yani kutupsal koordinatlar bu demek,
+
+251
+00:51:52,755 --> 00:52:00,976
+Ama mantığı kartezen koordinatları taşımak. Şimdi arasındaki ilişkiyi açıklayacağız. Buraya kadar anlaşılmayan bir yer var mı?
+
+252
+00:52:35,731 --> 00:52:43,231
+Şimdi ilişkiyi kuralım arkadaşlar. Tabii ki notları paylaşım yapalım.
+
+253
+00:52:45,152 --> 00:52:53,872
+Şimdi bunun arasındaki bir ilişki var arkadaşlar. Yani kartezyen koordinatları kutupsal koordinatlara taşıyordum ben.
+
+254
+00:52:54,492 --> 00:53:02,072
+Kutupsal koordinatları kartezyen koordinatları kutupsal koordinatlara taşırken de yapmam gereken bazı işlemler var.
+
+255
+00:53:02,675 --> 00:53:10,355
+Nasıl taşıyacağım, nasıl belirteceğim ben, kartezen koordinatlarda verilen bir ifadeyi, bunu,
+
+256
+00:53:55,891 --> 00:54:09,111
+Diyelim ki bize bir nokta verildi. X'ye noktasını r teta olarak ifade etmemiz tendi. Bu durumda X'i r cos teta, Y'yi r sin teta olarak ifade ediyorum arkadaşlar.
+
+257
+00:54:10,491 --> 00:54:19,111
+Bakın normalde X'ye kartezyen koordinat düzemi verilmiş. Bunu ben kutupsal eksene, kutupsal koordinatlara taşımak istiyorum.
+
+258
+00:54:19,111 --> 00:54:22,027
+Neden taşımak istiyorum? Çünkü bazen...
+
+259
+00:54:22,420 --> 00:54:36,500
+kartezen koordinatlarda işlem yapmak zor olabilir. Ya da kutupsal koordinatlarda, mesela integrallere geçeceğiz, çift katlı integrallere, çok değişkenli fonksiyonların integrallerine geçeceğiz.
+
+260
+00:54:37,579 --> 00:54:46,251
+Dolayısıyla buralarda bazen döndürme işlemleri olacak, döndürülmüş bir cismin hacmini bulma olacak. Yani mesela...
+
+261
+00:54:46,867 --> 00:54:52,367
+Bir doğruyu, x'ye eksenin etrafında, x'ye z eksenin etrafında döndüreceğiz.
+
+262
+00:54:53,047 --> 00:55:00,567
+360 derece döndürdüğümüzde bir kova şeklinde bir cisim çıkacak. Bu cismin hacmini hesaplamamız gerekecek.
+
+263
+00:55:00,967 --> 00:55:06,047
+Bu tarz durumlarda, kutupsal koordinatları geçmek, bize kar sağlayacak.
+
+264
+00:55:06,047 --> 00:55:11,668
+Ne olacak? Daha kolay hesaplama yapacağız. Çünkü cisim dönen bir cisim.
+
+265
+00:55:12,628 --> 00:55:22,628
+x'e kartezen koordinat düzeni artık bizim işimizi görmeyecek. Başka bir boyut kullanmamız gerecek. Başka bir boyuta geçmemiz gerecek. O da kutupsal koordinatlar olacak arkadaşlar.
+
+266
+00:55:23,307 --> 00:55:31,248
+x'e işte r kosteta, y'e işte r sinteta yazarsam, bakın x kare artı y kare o zaman bana r kareyi verir.
+
+267
+00:55:31,923 --> 00:55:42,624
+Zaten, x'ye kar tezzen koordinat düzeminde, x kare artı y kare, bakın burayı 90 derece olarak alırsam, r'nin karesidir değil mi arkadaşlar? Dik üçgendeki bağıntıları kullandım.
+
+268
+00:55:43,503 --> 00:55:48,604
+Taycan teta da aynı zamanda y böl x'dir. Dolayısıyla bu birbiriyle tutarlı olmuş.
+
+269
+00:55:52,384 --> 00:55:55,084
+Sakin olun arkadaşlar, sesinizi kapatın.
+
+270
+00:56:07,284 --> 00:56:14,544
+Şimdi x kare artı yakın, kare eşit, akare çemberinin kutupsal denklemini yazalım arkadaşlar.
+
+271
+00:56:23,731 --> 00:56:27,471
+x kare artı y kare eşitir a kare bir çemberdir.
+
+272
+00:56:28,071 --> 00:56:29,831
+Kartezian koordinat düzleminde.
+
+273
+00:56:30,411 --> 00:56:33,731
+Ben onun kutupsal denklemini istiyorum.
+
+274
+00:56:34,371 --> 00:56:37,411
+Kutupsal denklemini nasıl yazabilirim?
+
+275
+00:56:37,571 --> 00:56:37,971
+Soru bu.
+
+276
+00:56:38,632 --> 00:56:39,652
+Şimdi bakın arkadaşlar.
+
+277
+00:56:40,500 --> 00:56:52,539
+Ne yapıyorduk? Kartezyen koordinat düzleminde verilen x'ye noktasını kutupsal koordinat düzlemine taşımak için x yerine r cos theta, y yerine r sin theta yazacaktım.
+
+278
+00:56:52,819 --> 00:56:58,219
+Yazdım, x yerine r cos theta, y yerine r sin theta yazdım.
+
+279
+00:56:59,339 --> 00:57:00,500
+x kare artı y kare
+
+280
+00:57:02,132 --> 00:57:20,951
+R kare, kos kare teta, artı, y kare de, re kare, sin kare teta. Kos kare teta artı sin kare teta bir değil midir arkadaşlar? Birdir. O zaman sadece burada ne kalır? R kare çarpı kos kare teta artı sin kare kalır. Kos kare teta artı sin kare teta bir olduğu için burada sadece artık re kare kalır.
+
+281
+00:57:21,251 --> 00:57:29,611
+R kare de neye eşitmiş? Bakın, a kare eşitmiş. R kare eşitir, a kare ise, re eşitir mutlak a olur arkadaşlar.
+
+282
+00:57:30,771 --> 00:57:31,271
+Tamam.
+
+283
+00:57:42,804 --> 00:57:50,804
+Şimdi başka bir çember vermiş. Onun kutupsal denklemini yazalım. Yine aynı şekilde devam edeceğiz arkadaşlar.
+
+284
+00:57:51,503 --> 00:57:55,884
+X yerine R cos theta, Y yerine R sin theta yazıyorum.
+
+285
+00:57:57,563 --> 00:57:58,923
+Önce açalım.
+
+286
+00:58:00,436 --> 00:58:21,356
+x kare artı y kare, eksi 6y artı 9 olur bu, y eksi 3'ün karesini açtığımda. Bu artı 9'da bu 9 birbirini götürdü. Ufak bir düzenleme yaptık. x kare artı y kare, eksi 6y eşitir 0 oldu. R kare, kos kare tete, artı r kare, sin kare tetadır burası. Sin kare artı kos kare 1 olduğu için, r kare kaldı burada.
+
+287
+00:58:21,711 --> 00:58:29,552
+Buraya da y yerine r sinteta yazdım. Dolayısıyla burası r kare eksi 6 r sinteta olmuş oldu arkadaşlar.
+
+288
+00:58:31,132 --> 00:58:34,211
+O zaman r nedir? Burayı r parantezine alırsam.
+
+289
+00:58:41,364 --> 00:59:02,923
+1 eksi, r eksi, 6 sinteta olur. O zaman r 6 sintetadır. Dolayısıyla, bunun kutupsal denklemi, r eşittir 6 sinteta olarak elde edilir. Çünkü bakın, normalde y eşittir ne yapıyorduk? fx fonksiyonuyla ifade ediyorduk.
+
+290
+00:59:03,315 --> 00:59:20,495
+Y eşittir, fx fonksiyonuyla ifade ediyorduk. Bir eğriyi, bir doğruyu, bir çemberi, bir şekli, çizgilerle ifade edilmiş bir şey. Kutupsal koordinatlar, karteziyen koordinatlar da y eşittir, fx fonksiyonuyla ifade ediyorduk.
+
+291
+00:59:31,315 --> 00:59:42,175
+Burada da benzer şekilde kutupsal koordinatlarda ifade ediş biçimini gösteriyorum aslında. Burada normalde yiğit, yalnız bırakmak biraz uğraştırıcı bir iş.
+
+292
+00:59:42,931 --> 01:00:01,091
+Bırakmak çok zor. Bunun yerine, r eşittir, r teta şeklinde bir fonksiyon olarak aslında ben bunu ifade ediyorum. Normalde fx, y eşittir, f2 şeklinde ifade edemeyeceğim bir fonksiyonu, r eşittir, r teta eşittir, 6 sin teta olarak ifade etmiş oluyorum arkadaşlar.
+
+293
+01:00:05,396 --> 01:00:21,076
+R eşitir 6 sin tata aslında, y eşitir fx, y eşitir x kare, y eşitir x küp gibi, y eşitir x üzeri 6 artı x üzeri 4 artı 5 x küp gibi bir fonksiyon gibi bir fonksiyonu aslında, r eşitir r tata şeklinde.
+
+294
+01:00:21,523 --> 01:00:42,043
+R'ye ve teta'ya bağlı bir kutupsal koordinat ifadesini yazıyorum. Normalde kartezyen koordinatlarda bu şekilde ifade ediyordum fonksiyonları. Ama mesela çemberi ben kutupsal koordinatlarda daha kolay ifade ediyorum. Çünkü çemberi uzunluk ve açı cinsinden ifade etmek daha kolay arkadaşlar değil mi?
+
+295
+01:00:47,487 --> 01:01:14,148
+Kartizel koordinat düzeninde ifade edebilirim kolaylıkla. Bir doğruyu ifade edebilirim ama çember şeklinde bir yapıyı kutupsal koordinatlara daha kolay ifade ediyorum. Neden? Ona daha müsait. Yarı çap ve açı bana yeterli olabiliyor bazen. Yani yarı çap ve açıyı kullanarak daha kolay hesap yapabilirim ben. Burada da bakın onu yapmış olduk. Sorusu olan var mı?
+
+296
+01:02:37,972 --> 01:02:46,732
+Şimdi tam tersini yapalım. Yani kutupsal koordinatlarda verilmiş bir ifadenin, kartezyen koordinatlarda ifade edilmişini gösterelim.
+
+297
+01:02:46,992 --> 01:02:52,492
+R kare eşitir, akare, kosikiteta şeklinde verilmiş kutupsal koordinatlarda verilmiş.
+
+298
+01:02:52,492 --> 01:03:00,612
+Yani bize R eşittir, R teta olarak verilmiş bir ifadenin, R eşittir, R teta olarak verilmiş bir ifadenin,
+
+299
+01:03:01,396 --> 01:03:09,296
+Kutupsal koordinatlarda verilmiş bir ifadenin, kartezyen koordinatlar, yani y eşittir fx şeklinde ifadesini yazalım.
+
+300
+01:03:09,596 --> 01:03:12,235
+x'e ve y'ye bağlı olarak r ve teta'yı çevirelim.
+
+301
+01:03:12,836 --> 01:03:17,436
+Tabii ki x eşittir r cos theta, y eşittir r sin theta olduğunu biliyoruz.
+
+302
+01:03:18,076 --> 01:03:23,316
+cos 2 theta'nın da açılımının cos kare theta x ve sin kare theta olduğunu biliyoruz. Bunları kullanalım.
+
+303
+01:03:24,376 --> 01:03:26,076
+Şimdi r kare eşittir a kare.
+
+304
+01:03:27,891 --> 01:03:32,172
+cos 2 theta yerine cos kare theta, eksisi in kare theta olarak yazdım arkadaşlar.
+
+305
+01:03:32,652 --> 01:03:42,771
+Şimdi bunu düzenlersem, cos theta yerine, cos theta yerine, artık burada bakın cos theta'yı yalnız bırakırsam ben, cos theta nedir? x bölü r'dir arkadaşlar.
+
+306
+01:03:57,684 --> 01:04:20,784
+x bölü r'dir arkadaşlar. Kos teta x bölü r. Tamam mı? Kos kare teta o zaman nedir? x bölü r'nin karesidir. Sin teta da y bölü r, sin kare teta da y kare bölü r kare. Bunları yerine yazdım. Dolayısıyla a kare bölü r kare parantezinde x kare eksi y kare oldu burası.
+
+307
+01:04:21,715 --> 01:04:48,915
+Bu re kareyi de bu tarafa atarsam, burası re karenin karesi oldu. Bu tarafta a kare çarpı x kare eksi y kare oldu. Şimdi bakın, ben ne yapmaya çalışıyorum? Re ve teta'yı x ve y cinsinden ifade etmeye çalışıyorum. Dolayısıyla, bu tarafta ben bu işi başardım. X'e ve y'ye göre burayı ifade ettim. Ama bu tarafta bir sorun var.
+
+308
+01:04:49,427 --> 01:05:05,867
+theta ya da r'den biri var. Bunu buradan kurtarmam gerekiyor. Onun için yapmam gereken şey, r yerine x ve y cinsinden bir ifade yazmak. Ben r yerine x ve y cinsinden bir ifade yazamam ama r kare yerine yazabiliyorum.
+
+309
+01:05:06,420 --> 01:05:12,480
+Bakın, re kare, x kare artı y kare eşit. Bunu biliyoruz değil mi? En temel zaten eşitliğimizdi.
+
+310
+01:05:12,920 --> 01:05:19,900
+x kare, re kare yerine x kare artı y kare yazarsam, x kare artı y karenin karesi eşittir.
+
+311
+01:05:20,159 --> 01:05:26,259
+a kare çarpı x kare eksi y kare olarak elde edilmiş olur arkadaşlar.
+
+312
+01:05:26,400 --> 01:05:27,819
+Burada anlaşılmayan bir şey var mı?
+
+313
+01:08:07,027 --> 01:08:13,867
+R eşittir, 4 bölü, 2 cos theta, eksi sin theta şeklinde verilmiş arkadaşlar.
+
+314
+01:08:14,567 --> 01:08:17,647
+Bu ifadenin kartezyen denklemini yazınız diyor.
+
+315
+01:08:18,307 --> 01:08:21,427
+Şimdi bu ifadenin kartezyen denklemini elde edelim.
+
+316
+01:08:24,647 --> 01:08:27,727
+R çarpı 2 cos theta, eksi sin theta eşittir, 4'tür bu denklem.
+
+317
+01:08:27,967 --> 01:08:29,827
+Bunu bu tarafa çarpma olarak geçirdim.
+
+318
+01:08:30,327 --> 01:08:30,887
+Burası kolay.
+
+319
+01:08:31,967 --> 01:08:32,907
+Cos theta yerine,
+
+320
+01:08:34,868 --> 01:08:51,468
+2R cos theta'yı, R'yi içine dağıtalım. 2R cos theta olarak yazalım. Bakın burası 2R cos theta, eksi R sinteta oldu. Artık zaten bakın, R cos theta yerine ne yazacağım? Biliyorum, X yazacağım. R sinteta yerine ne yazacağım arkadaşlar? Y yazacağım.
+
+321
+01:08:52,288 --> 01:09:00,248
+Bakın, 2X eksi Y eşittir, 4 olarak elde ettim. Yani Y eşittir, 2X eksi 4 olarak elde ettim. Bakın, Y eşittir.
+
+322
+01:09:02,195 --> 01:09:03,515
+f x eşittir.
+
+323
+01:09:09,939 --> 01:09:12,439
+2x-4 olmuş oldu arkadaşlar.
+
+324
+01:09:18,996 --> 01:09:24,716
+Burada arkadaşlar, r kos teta eşitir 2 demiş, x eşittir 2 zaten bu, bunu biliyorsunuz.
+
+325
+01:09:24,956 --> 01:09:30,095
+x'i eşittir 4, r kos teta çarpı resim teta eşittir 4, x'i eşittir 4 denklem bu.
+
+326
+01:09:30,716 --> 01:09:33,216
+Bunları tek tek arkadaşlar, bakın çıkartın.
+
+327
+01:09:33,435 --> 01:09:36,136
+Mesela şunları, şunları çıkartın arkadaşlar.
+
+328
+01:09:37,396 --> 01:09:39,355
+Yani bunları nasıl çıkarttığını gösterin.
+
+329
+01:09:40,376 --> 01:09:41,416
+Ödev olsun bu size.
+
+330
+01:09:43,576 --> 01:09:44,876
+Yani bunları gösterin.
+
+331
+01:09:45,427 --> 01:10:02,847
+Ödev olarak da buna benzer bir soru bulun arkadaşlar. Yani bir kutupsal koordinatlarda ifade edilmiş denkleme, kartezyen koordinatlarda ifade edilmiş denkleme, kutupsal koordinatlarda ifade edin arkadaşlar ödev olarak da.
+
+332
+01:10:06,836 --> 01:10:08,816
+Önceki derste de ödevler vermiştim.
+
+333
+01:10:09,595 --> 01:10:18,996
+Taylor, Maclaurin serileri yazacaktınız ve Taylor, Maclaurin serisinin benzer şekilde Mutlak X Küçüktür 1 için bir örnek seri elde edin dedim.
+
+334
+01:10:18,996 --> 01:10:25,396
+Yani Mutlak X Küçüktür 1 için aritmetik cebirsel bazı işlemler yapmıştık.
+
+335
+01:10:25,836 --> 01:10:28,756
+O işlemlere örnek olarak bir soru bulun demiştim.
+
+336
+01:10:29,396 --> 01:10:33,935
+Hepsinden birer adet soru bulup WhatsApp'tan bana atın arkadaşlar.
+
+337
+01:10:34,707 --> 01:10:44,567
+Ve aynı zamanda şu kartezyen koordinatları, kutupsal koordinatları çevirin. Kutupsal koordinatları da kartezyen koordinatları çevirin arkadaşlar.
+
+338
+01:10:45,147 --> 01:10:53,627
+Birer tane soru bulup yazın bir kağıda arkadaşlar. Toplam 5 soru ödevinize 5 soru bulun arkadaşlar haftaya kadar. Bu sizin ödeviniz 5 soru.
+
+339
+01:10:54,987 --> 01:11:01,907
+Burada bitiriyorum arkadaşlar. Haftaya bu kutupsal koordinatlardan devam edeceğiz. Bunlarla ilgili eğri çizimleri vs. var.
+
+340
+01:11:03,380 --> 01:11:04,760
+Buradan devam edeceğiz.
+
+341
+01:11:13,235 --> 01:11:14,536
+Sorusu olan var mı?
+
+342
+01:11:25,684 --> 01:11:51,659
+Çok teşekkürler katılım gösterdiğiniz için. Çok size söz veremiyorum. Çok da soru soramıyorum. Çünkü zaten konu çok yoğun arkadaşlar. Bundan dolayı arkadaşlar ödevleri lütfen ihmal etmeyin. Çünkü ödevleri ihmal ettiğiniz takdirde, yani ödevlerin bir katkısı yok. Ancak bununla beraber son hafta çok bir yoğunluk olacak. Bir de bundan sonra zaten çok vektörler...
+
+343
+01:11:53,395 --> 01:12:12,935
+parametrik denklemler ve çok değişkenli fonksiyonlara geçeceğiz. Ondan sonra zaten katlı integraller ve hacim hesapları var. Onlar daha yoğun konular olduğu için kafanız çorba olsun istemiyorum. Ondan dolayı ödevlerinizi yaparsanız en azından kendiniz için WhatsApp'ta paylaşırsanız sevinirim.
+
+344
+01:12:13,811 --> 01:12:36,891
+Size katkısı olur. Ya da en azından birer soru dışarıda bulamıyorsanız, en azından defterdekileri yazın. Ama bir kez yazın. Bir çalışma gösterin, bir tekrar yapın. Sadece derste anlamanız yetmeyebilir. Sonra kafanız çorba olmasın, karışmasın. Ödevleri yapanlara çok teşekkür ediyorum. Ödev yapan sayısı azaldı.
+
+345
+01:12:37,332 --> 01:13:01,272
+Lütfen arkadaşlar, son zamana bırakmayın. İkinci kez, üçüncü kez de alsanız, zaten zaman geçince konular unutuluyor. Tekrar edilmediği takdirde sınavda biraz daha sorular farklı gelecek. Bakın sınavda sorular zor gelmiyor, bunu unutmayın. Sınavda sorular sadece bu sorulardan farklı geliyor. Dolayısıyla eğer pratik yapmazsanız, sınavda sorular zor gelirse.
+
+346
+01:13:02,003 --> 01:13:27,663
+Ondan dolayı, eğer bir kez en azından yazmazsanız, bir farklı soruya bakmazsanız, bir iki çeşit farklı soruya, ona kafanızı yormazsanız, sınavda size ne sorulursa sorulursa zor gelir. Kolay da sorulursa zor gelir arkadaşlar. Çünkü zaten bu sorulardan farklı bir soru oluşturulacak sınav için. Dolayısıyla lütfen tekrarınızı yapın, ödevlerinizi yapın arkadaşlar. Kamu spotu ile de bitiriyorum arkadaşlar.
+
+347
+01:13:28,435 --> 01:13:29,655
+Hepinize iyi günler.

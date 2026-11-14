@@ -1,0 +1,2183 @@
+1
+00:00:14,676 --> 00:00:16,135
+Evet, günaydın arkadaşlar.
+
+2
+00:00:39,444 --> 00:00:41,444
+Hoşçakalın.
+
+3
+00:01:09,299 --> 00:01:10,379
+Teşekkür ederim.
+
+4
+00:01:12,280 --> 00:01:13,219
+Ben de.
+
+5
+00:01:23,635 --> 00:01:25,215
+Bir saniyemizi rica edeceğim.
+
+6
+00:02:45,331 --> 00:02:56,271
+Şimdi hazır mıyız? Saat 9.10 geçiyor. Kaç kişi konuştuz? 65 kişi. Bugün yeni bir konuyu getireceğiz arkadaşlar. Şöyle ekran paylaşımında yapmadım.
+
+7
+00:03:26,771 --> 00:03:28,371
+Ekran geldi herhalde değil mi?
+
+8
+00:03:30,751 --> 00:03:31,751
+Günaydın [öğrenci].
+
+9
+00:03:32,411 --> 00:03:32,911
+Evet hocam.
+
+10
+00:03:42,036 --> 00:03:45,936
+Evet, notlarımızdan bilmiyor muyuz? Bu arada, onları sormadım.
+
+11
+00:03:48,515 --> 00:03:50,936
+Pek değil, daha yüksek bekliyorduk.
+
+12
+00:03:52,295 --> 00:03:52,776
+Ben de.
+
+13
+00:03:55,135 --> 00:03:59,295
+Daha yüksek beklediğim çok kişi vardı aramızda açık hatta.
+
+14
+00:04:02,216 --> 00:04:04,376
+Finale daha iyi çalışıyoruz, tamam mı?
+
+15
+00:04:06,536 --> 00:04:09,036
+Evet, şimdi bugünkü konumuz...
+
+16
+00:04:12,403 --> 00:04:14,864
+Şöyle yine minik bir konu, dinerleştirme gibi.
+
+17
+00:04:20,180 --> 00:04:21,819
+Ekstremun değerler.
+
+18
+00:04:31,091 --> 00:04:32,692
+ve eğer noktaları.
+
+19
+00:04:40,244 --> 00:04:45,064
+Şimdi çift değişkenli bir fonksiyonun ekstremonu değerleriyle araştıracağız arkadaşlar burada.
+
+20
+00:04:45,204 --> 00:04:51,804
+Hatırlarsanız Mazpili'de tek değişkenli bir fonksiyonun yerel maksimum, minimum, mutlak maksimum minimumlarını araştırıyorduk.
+
+21
+00:04:52,184 --> 00:04:55,644
+Burada da çift değişkenli fonksiyonlarınkini hesaplayacağız.
+
+22
+00:04:55,644 --> 00:04:57,783
+Onu isterseniz şöyle bir hatırlayalım.
+
+23
+00:04:58,184 --> 00:05:00,604
+Şimdi elimde bir fx fonksiyonu var.
+
+24
+00:05:01,144 --> 00:05:03,403
+Bu fx fonksiyonu bir ne belirtiyordu arkadaşlar?
+
+25
+00:05:03,604 --> 00:05:05,504
+Bir eğri belirtiyordu öyle değil mi?
+
+26
+00:05:06,963 --> 00:05:23,843
+bir eğri belirtiyordu. Dolayısıyla bu efiks fonksiyonunun arkadaşlar, yatay teğet doğrusuna, yatay teğet doğrusuna sahip olduğu noktaları.
+
+27
+00:05:25,324 --> 00:05:29,183
+Yani yatay teğet doğrusuna sahip olması ne demek arkadaşlar?
+
+28
+00:05:32,276 --> 00:05:36,716
+0 olduğu noktalar değil mi? Türevinin 0 olduğu noktalar üzerinden
+
+29
+00:05:37,108 --> 00:06:02,987
+Biz yerel ekstremumlarını arıyorduk hatırlarsanız. Çünkü yerel ekstremumlar iki türlü noktada olabilirdi. Bir kritik noktada, yani birinci türevi sıfır olan noktada, bir de uç noktalarda olabilirdi. Yani FX'in tanım kümesinin uç noktalarında olabilirdi. Dolayısıyla yatay telet doğrusunun sahip noktaları bulacağız. Yani birinci türevi buluyorduk mat 1'de. Sonra bu noktalardan bazı araştırmalarla yerel minimum,
+
+30
+00:06:03,923 --> 00:06:06,024
+Yerel maksimum onu buluyorduk.
+
+31
+00:06:07,403 --> 00:06:12,943
+Bir de neyimiz vardı arkadaşlar? Şöyle yapalım ve büküm noktalarımız vardı.
+
+32
+00:06:19,060 --> 00:06:25,759
+Bu da hatırlarsanız arkadaşlar, ikinci türevini sıfır yapan noktaların yeriydi, hüküm noktası da.
+
+33
+00:06:27,120 --> 00:06:33,220
+Şimdi artık elimizde bir fxy fonksiyonu var arkadaşlar. Bu da bir ne belirtiyor demiştik.
+
+34
+00:06:33,700 --> 00:06:38,660
+Eğriye bir boyut daha eklediğimiz zaman bir yüzey elde ediyoruz, öğretmeni bir yüzey belirtiyordu.
+
+35
+00:06:45,716 --> 00:07:01,196
+Doğru varsa, bir yüzeye de teğit düzlemden bahsediyorduk ya, şimdiye kadar lineerleştirmede vesaire de anlatmıştım bunu size. Burada da yatay teğit düzlemini arıyorum arkadaşlar. Yatay teğit düzleme sahip noktaları arıyorum.
+
+36
+00:07:07,764 --> 00:07:15,384
+Bu noktaları arayacağım. Bunlar üzerinden yerel minimumu ve yerel maksimumunu arayacağım.
+
+37
+00:07:16,864 --> 00:07:25,224
+Bu büküm noktalarının çift değişkenli fonksiyonla karşılık geldiği nokta türü ise arkadaşlar, tam büküm noktasının karşılığı değil de aslında.
+
+38
+00:07:25,864 --> 00:07:31,484
+Burada çeşit olarak, nokta çeşidimiz olarak bir büküm noktası. Burada da eğer noktalarımız olacak.
+
+39
+00:07:33,684 --> 00:07:37,584
+Şimdi ne anlama geldiğini bunları anlatacağım.
+
+40
+00:07:39,244 --> 00:07:42,604
+Tanımlar diyelim, tanımlarımızı yazarak başlayalım.
+
+41
+00:07:48,755 --> 00:07:52,915
+Şimdi, çift değişkenli bir fonksiyonum var, fx fonksiyonu.
+
+42
+00:07:52,915 --> 00:08:02,835
+Bir ab noktasını içeren, bir r bölgesinde,
+
+43
+00:08:13,843 --> 00:08:20,603
+Eğer bu AB noktasının uygun bir komşuluğundaki
+
+44
+00:08:25,427 --> 00:08:30,187
+Uygun bir komşuluğundaki, yani abinin çevresindeki demek istiyorum.
+
+45
+00:08:33,187 --> 00:08:40,427
+Komşuluğundaki, tüm x ve y noktaları için.
+
+46
+00:08:48,884 --> 00:09:03,224
+Şimdi tanımımız şöyle. Bakın, AB'nin civarında bulunan tüm X, Y noktaları için eğer F, X, Y'ler F, AB'lerden hep küçük kalıyorsa arkadaşlar, AB'nin civarındaki
+
+47
+00:09:03,892 --> 00:09:15,852
+Tüm noktalar için fx'e fab'den küçük kalıyorsa, o zaman mantıken bu ab noktaları bir maksimum nokta olmaz mı diğer x'e noktalarına göre?
+
+48
+00:09:16,052 --> 00:09:19,852
+Ab'nin çevresindeki tüm noktalardan daha büyük kalıyor.
+
+49
+00:09:30,259 --> 00:09:31,860
+maksimum noktasıdır.
+
+50
+00:09:39,251 --> 00:09:45,432
+Bu noktaydı. Bir de bizim değerlerimiz vardı hatırlarsanız arkadaşlar. Yerel maksimum ve minimum değerlerimiz vardı.
+
+51
+00:09:45,432 --> 00:09:57,071
+İşte FAB'de parantez içinde yazalım. FAB'de F'nin yerel bir yerel maksimum değeridir diyoruz.
+
+52
+00:10:00,436 --> 00:10:00,875
+Tamam.
+
+53
+00:10:10,707 --> 00:10:32,467
+Bunun tam tersi durumda da, yani bir AB noktası civarındaki bütün noktalardan daha aşağıda kalıyorsa, daha az bir değere sahipse, o zaman AB noktası F'nin bir yerel minimum noktasıdır.
+
+54
+00:10:36,628 --> 00:10:50,728
+FAB'de, aslında şurada şey tırnak olmayacak, bu ayrı yazılan değer değil mi? F'ni bir yerel minimum değeridir.
+
+55
+00:10:55,956 --> 00:11:10,296
+Ve yine mat 1'dekine paralel olarak da bu fx, y fonksiyonunun maksimum ve minimum değerlerine biz ekstremum değerler diyoruz.
+
+56
+00:11:17,491 --> 00:11:18,011
+Tamam.
+
+57
+00:11:22,548 --> 00:11:29,927
+Yani bize bir fonksiyonun ekstremum değerleri sorulduğunda arkadaşlar, maksimum ve minimum her ikisini birden bulmamız gerekiyor.
+
+58
+00:11:30,968 --> 00:11:32,067
+Hacım bir şey sorabilir miyim?
+
+59
+00:11:32,347 --> 00:11:32,607
+Tabii.
+
+60
+00:11:32,607 --> 00:11:38,168
+Biz çok değişkenli fonksiyonları işlediğimiz zaman bir tane grafik çizmiştik, paraboloid.
+
+61
+00:11:39,168 --> 00:11:39,387
+Evet.
+
+62
+00:11:39,587 --> 00:11:40,567
+100-x.
+
+63
+00:11:41,228 --> 00:11:41,988
+Evet.
+
+64
+00:11:43,067 --> 00:11:44,127
+Sesin gitti.
+
+65
+00:11:44,528 --> 00:11:45,408
+Bu paraboloidin.
+
+66
+00:11:45,727 --> 00:11:58,627
+Orada z eksenindeki tepe noktası yüzdü. Mesela şimdi ben gerel maksimum bulmak istiyorsam, o zaman x ile y sıfır nokta sıfır noktası, sıfır virgül sıfır noktası oluyor değil mi hocam?
+
+67
+00:11:58,768 --> 00:11:59,807
+Evet, aynen öyle.
+
+68
+00:12:00,567 --> 00:12:01,307
+Aynen öyle.
+
+69
+00:12:01,548 --> 00:12:02,567
+Tamam hocam.
+
+70
+00:12:02,567 --> 00:12:03,427
+Teşekkürler.
+
+71
+00:12:03,807 --> 00:12:12,407
+Yatay tt tam olarak o noktada sahip, öyle değil mi [öğrenci]? Bak, o paraboluidin diğer kenarlarına hep böyle eğimli bir tt sahip olacak.
+
+72
+00:12:12,607 --> 00:12:13,727
+Tam yatay tt sahip olacak.
+
+73
+00:12:13,727 --> 00:12:15,907
+sahip olduğu o paraboliydin tepe noktası.
+
+74
+00:12:16,987 --> 00:12:17,587
+Evet hocam.
+
+75
+00:12:17,987 --> 00:12:18,347
+Tamam mı?
+
+76
+00:12:18,567 --> 00:12:18,867
+Anladım.
+
+77
+00:12:25,172 --> 00:12:38,352
+Şimdi, hatırlarsanız yine Mat 1'de 1. ve 2. türev testlerimiz vardı. Türevler yardımıyla buluyorduk bu ekstrem değerleri. Aynı mantıkla şimdi de yerel ekstremler için 1. türev testini yazalım.
+
+78
+00:12:48,275 --> 00:12:52,255
+Yerar ekstri onlar için birinci türev testi.
+
+79
+00:13:00,244 --> 00:13:14,723
+Biz yatay teyp düzleme sahip noktaları arıyoruz ya arkadaşlar. O da şöyle diyoruz. Eğer fx diye fonksiyonu bir a b noktasında
+
+80
+00:13:18,740 --> 00:13:21,180
+Yerel ekstremuma sahipse
+
+81
+00:13:21,180 --> 00:13:25,779
+Yerel ekstremuma
+
+82
+00:13:25,779 --> 00:13:28,600
+sahipse
+
+83
+00:13:28,600 --> 00:13:31,920
+ve
+
+84
+00:13:31,920 --> 00:13:35,579
+aynı noktada, yani bu AB noktasında
+
+85
+00:13:39,251 --> 00:13:44,071
+Birinci mertebe, kısmi türevleri mevcutsa.
+
+86
+00:13:53,556 --> 00:13:58,015
+Kısmi türevler mevcutsa, çünkü mevcutsa ben kısmi türevini alabiliyorum.
+
+87
+00:13:58,596 --> 00:14:08,556
+F'in x'e göre kısmi türevi eşittir sıfır ve F'in y'ye göre kısmi türevi eşittir sıfırdır.
+
+88
+00:14:10,995 --> 00:14:20,515
+Her ikisi birden, bakın birinden biri değil, her ikisi birden birinci mertebe kısmi türev ve'nin AB noktasındaki değeri sıfır olacak.
+
+89
+00:14:21,155 --> 00:14:23,696
+Hangi nokta yerel ekstremıma sahipse.
+
+90
+00:14:38,067 --> 00:14:39,827
+Şimdi şöyle bir tanım yapalım.
+
+91
+00:14:49,011 --> 00:14:56,672
+Bir AB noktası, aşağıdakilerden birini sağlıyorsa,
+
+92
+00:15:00,563 --> 00:15:06,303
+Aşağıdakilerden birini sağlıyorsa, kritik noktadır.
+
+93
+00:15:08,463 --> 00:15:12,423
+Yine hatırlarsanız, mat 1'de de biz kritik noktalardan bahsetmiştik.
+
+94
+00:15:12,423 --> 00:15:16,303
+Çünkü ekstremumları ya kritik noktalarda ya da uç noktalarda arıyorduk.
+
+95
+00:15:17,624 --> 00:15:20,463
+Son cümleyi bir önceki sayfadaki mi [öğrenci]?
+
+96
+00:15:20,783 --> 00:15:21,903
+Şimdi gördüm yazdığınız.
+
+97
+00:15:25,491 --> 00:15:38,911
+Tamam, şunu anlatayım, çevireyim. Bir AB noktası, yine kritik noktalarımız bizim aday noktalarımız arkadaşlar ve iki tane tanım yazacağım. Sadece o noktalarda arayacağız biz ekstrem olarak.
+
+98
+00:15:39,811 --> 00:15:47,771
+Çünkü biliyorsunuz yüzeyde sonsuz tane noktam var. Hangi biri? Burada bir eleme yapıyorum aslında. Tamam mı? Hani aday noktalarımı belirliyorum.
+
+99
+00:15:49,811 --> 00:15:50,651
+Rica ederim.
+
+100
+00:15:57,460 --> 00:16:10,860
+Şimdi eğer f'in x'e göre kısmi türevinin abdeki değeri ve f'in y'ye göre kısmi türevinin bu ab noktasındaki değeri her ikisi birden sıfırsa
+
+101
+00:16:10,860 --> 00:16:22,680
+veya ikisinden biri mevcut değilse arkadaşlar, ikisi de mevcut olmayabilir ama birinin mevcut olmaması yeterli.
+
+102
+00:16:31,283 --> 00:16:36,163
+Bu ikisinden birini sağlıyorsa, biz bu AB noktasına kritik nokta diyoruz.
+
+103
+00:16:47,892 --> 00:16:54,892
+Buralar biraz yazı arkadaşlar. Örneklere geçeceğiz zaten şimdi ama, gerçi çok da bir şey kalmadı.
+
+104
+00:16:54,892 --> 00:16:59,892
+Artık birazdan örneklere geçeceğiz.
+
+105
+00:16:59,892 --> 00:17:04,892
+Evet, bir tane fx'ye fonksiyonu var.
+
+106
+00:17:09,044 --> 00:17:10,724
+Efeksiye fonksiyonu
+
+107
+00:17:10,724 --> 00:17:13,344
+Ekstremum değerlerini
+
+108
+00:17:17,140 --> 00:17:28,240
+Sadece kritik noktalarda ve sınır noktalarında alır.
+
+109
+00:17:36,915 --> 00:17:46,655
+Fakat her kritik nokta bir yerel ekstremi meydana getirmez.
+
+110
+00:17:54,900 --> 00:18:05,140
+Az önce söylediğim gibi arkadaşlar, bu kritik noktalar, kritik ve sınır noktaları bizim fonksiyonumuzun yerel ekstrem onları için aday noktalarımız.
+
+111
+00:18:05,140 --> 00:18:14,960
+Ama hepsi birden elbette bir ekstrem on meydana getirmez. Bazıları ekstrem onlar meydana getiriyor. Bunları da incelemesini göstereceğim şimdi.
+
+112
+00:18:25,587 --> 00:18:27,768
+Son iki tane tanımımız daha var.
+
+113
+00:18:45,971 --> 00:18:47,032
+Yalnızca mesaj.
+
+114
+00:18:51,188 --> 00:18:53,408
+Bugün geçemeyiz herhalde [öğrenci].
+
+115
+00:19:33,523 --> 00:19:38,423
+Bugün 8.30 ay, zaten bu sorularını falan çöğünce ancak 2 saatte geçiririz.
+
+116
+00:19:41,940 --> 00:19:42,420
+Şimdi.
+
+117
+00:19:46,067 --> 00:19:54,768
+Acaba AB noktası ne zaman bir yerel maksimum veya ne zaman bir yerel minimum olur için bu da bir yöntem arkadaşlar.
+
+118
+00:19:55,447 --> 00:19:56,367
+Şimdi yazacağım şey.
+
+119
+00:19:57,807 --> 00:20:00,367
+Şimdi kritik noktamı buldum tamam mı?
+
+120
+00:20:00,668 --> 00:20:03,087
+Çünkü aday noktalarım kritik noktalardı.
+
+121
+00:20:03,688 --> 00:20:05,987
+Kritik noktalarımı belirledim ve ele alıyorum.
+
+122
+00:20:06,107 --> 00:20:08,067
+Bak bir AB kritik noktası.
+
+123
+00:20:11,067 --> 00:20:13,567
+Ve yeterince küçük.
+
+124
+00:20:18,132 --> 00:20:21,112
+Her hk sayısı için.
+
+125
+00:20:29,236 --> 00:20:29,996
+Bakın şimdi.
+
+126
+00:20:32,036 --> 00:20:40,175
+A ve B noktasından azıcık kaydığım zaman, tamam mı? Çok küçük haşka sayıları alıyorum ve bu AB'ye ekliyorum.
+
+127
+00:20:40,296 --> 00:20:43,436
+Yani bu AB noktasından minicik hareket ediyorum. Tamam mı?
+
+128
+00:20:45,256 --> 00:20:52,296
+Eğer bunun AB'den farkı sıfırdan büyük eşitse ya da şu nokta FAB'den büyük eşitse diyebiliriz.
+
+129
+00:20:52,296 --> 00:20:53,836
+Bunu diğer tarafa attığımız zaman.
+
+130
+00:20:56,660 --> 00:21:02,660
+AB noktasında bir yerel minimuma...
+
+131
+00:21:07,700 --> 00:21:14,120
+Ya da tam tersi, FA artı H, B artı K, eksi FAB.
+
+132
+00:21:15,220 --> 00:21:21,420
+Küçük açısı sıfırsa, yani ben azıcık kaydığım zaman, AB noktasından daha küçük bir yere kayıyorsam,
+
+133
+00:21:21,420 --> 00:21:28,940
+o zaman da, FAB'de, bakın bunları mantık olarak öğreniyoruz, tamam mı? Ezmerlememize gerek yok.
+
+134
+00:21:36,692 --> 00:21:39,412
+maksimuma sahiptir.
+
+135
+00:22:02,548 --> 00:22:02,988
+Tamam.
+
+136
+00:22:06,612 --> 00:22:12,072
+Ve de son olarak eğer noktamızın tanımını yapalım ve örneklerimize geçelim.
+
+137
+00:22:12,412 --> 00:22:13,852
+Eğer noktası neydi acaba?
+
+138
+00:22:19,923 --> 00:22:28,023
+Şimdi, eğer fx'ye fonksiyonu bir a-b kritik noktasında,
+
+139
+00:22:31,892 --> 00:22:34,052
+Bir AB kritik noktasında.
+
+140
+00:22:34,892 --> 00:22:37,868
+Yerel ekstremoma sahip değilse...
+
+141
+00:22:47,988 --> 00:22:55,907
+Elimde bir kritik noktam var ama bu noktada yerel ekstrem'e sahip değil. İşte o zaman bu noktayı ben eğer noktası diyorum.
+
+142
+00:23:55,955 --> 00:23:57,855
+Yazdık mı arkadaşlar? Yazmayanlar mı?
+
+143
+00:23:57,855 --> 00:23:58,995
+Hocam bir soru sorabilir miyim?
+
+144
+00:23:59,375 --> 00:23:59,875
+Tabii ki.
+
+145
+00:24:00,715 --> 00:24:03,895
+Bu yerel ekstremıma sahip olmadığı her noktada mı geçerli olur?
+
+146
+00:24:04,695 --> 00:24:06,576
+Tabii ama kritik noktaysa.
+
+147
+00:24:07,335 --> 00:24:09,895
+Evet hocam, kritik noktalarda soruyorum, aynen.
+
+148
+00:24:10,135 --> 00:24:14,895
+Aha, aynen. Kritik noktaları belirledim. Ekstrem değilse eğer diyorum.
+
+149
+00:24:15,576 --> 00:24:16,875
+Tamamdır hocam, teşekkürler.
+
+150
+00:24:16,875 --> 00:24:17,536
+Sağ olun.
+
+151
+00:24:18,815 --> 00:24:22,115
+Şimdi, ümitlerimize geçelim.
+
+152
+00:24:36,180 --> 00:24:48,039
+fxd fonksiyonun şöyle, x kare artı, y kare fonksiyonun kritik noktalarını bulup,
+
+153
+00:24:53,523 --> 00:24:54,663
+Hepsini flandıralım.
+
+154
+00:25:03,539 --> 00:25:09,339
+Sınıflandırma dediğimiz, yerel maksimum, yerel minimullarını ayırmak.
+
+155
+00:25:17,299 --> 00:25:26,679
+Şimdi ne yapıyorum? Hemen kısmi türevlerini alarak başlıyorum. f'in x'e göre kısmi türevi 2x, f'in y'e göre kısmi türevi 2y.
+
+156
+00:25:26,679 --> 00:25:32,759
+Ne demiştik arkadaşlar? Kritik nokta için bunların ya her ikisinin birden sıfır yapan,
+
+157
+00:25:33,587 --> 00:25:36,288
+Ya da ikisinden birini tanımsız yapan değerleri alacağım.
+
+158
+00:25:36,467 --> 00:25:38,807
+Tanımsız olan bir değeri yok, gördüğümüz gibi.
+
+159
+00:25:39,027 --> 00:25:43,587
+Zaten o paydaya bir x'li ifade ya da y'li ifade gelirse olur.
+
+160
+00:25:43,947 --> 00:25:46,728
+Ama burada sadece sıfır yapan değerleri alacağım mecburen.
+
+161
+00:25:47,268 --> 00:25:51,748
+Peki, bunu sıfır yapan değer x'nin sıfır olduğu, bunu da y'nin sıfır olduğu.
+
+162
+00:25:51,748 --> 00:25:57,367
+Bu ikisini aynı anda sıfır yapan x, y noktası nedir arkadaşlar?
+
+163
+00:25:58,291 --> 00:26:02,411
+0'a 0 noktasıdır öyle değil mi? İşte bu bizim kritik noktamız.
+
+164
+00:26:07,796 --> 00:26:28,376
+Buldum. Bir tane kritik noktam var ve bunu sınıflandıracağım şimdi. Ve sınıflandırmak için neyi gördük? Şöyle bir bana yol verdi. Kritik noktam var elimde. Bu kritik noktadan mincik hareket ettiğim zaman acaba AB noktamdan daha yukarı mı çıkıyor mu aşağıya bilmiyorum. Buna bakacağım.
+
+165
+00:26:35,635 --> 00:26:38,955
+0'a h ekliyorum, 0'a k ekliyorum.
+
+166
+00:26:39,975 --> 00:26:42,995
+Eksi f 0, 0 diyorum.
+
+167
+00:26:44,995 --> 00:26:46,516
+Bu nedir arkadaşlar?
+
+168
+00:26:46,795 --> 00:26:50,516
+f h, k, h kare artı k karedir değil mi?
+
+169
+00:26:52,255 --> 00:26:56,435
+f 0'a 0'da 0, yani h kare artı k kare.
+
+170
+00:26:57,235 --> 00:27:00,516
+Bu her zaman h ve k ne olursa olsun.
+
+171
+00:27:00,980 --> 00:27:14,619
+0'dan büyük yetişik değil midir? 0'dan büyüktür hatta. O zaman ne diyorum? Buradan ben 0'a 0 noktasının bir yerel minimum olduğunu, yerel minimum nokta olduğunu söyleyebiliyorum.
+
+172
+00:27:15,179 --> 00:27:26,319
+Yerel minimum değerini sorsaydı bu 0'a 0'ı yerine koyup o da 0 olacaktı. 0'da zaten bizim yerel minimum değerimiz olmuş olacak. Anlaştık mı?
+
+173
+00:27:31,155 --> 00:27:31,736
+Evet, hocam.
+
+174
+00:27:48,211 --> 00:28:03,031
+Bugün belki dersi blog yapıp, biraz erken bitirebiliriz arkadaşlar. Kısa bir konu çünkü. Çift katlı integral'e girersem, çok başında kalacağız. Yarın başlarız. Ara vermeden direkt pull, devam ederiz.
+
+175
+00:28:15,700 --> 00:28:20,200
+x'ye x artı y'nin karesi artı y üzeri 4.
+
+176
+00:28:24,692 --> 00:28:26,852
+kritik noktalarını budur psani fadır.
+
+177
+00:28:55,412 --> 00:28:57,511
+Ne yapıyorum kritik noktalarını bulmak için?
+
+178
+00:28:58,412 --> 00:29:01,211
+Önce x ve y'ye göre kısmi türevlerini alıyorum.
+
+179
+00:29:01,771 --> 00:29:03,571
+x'e göre kısmi türevi nedir arkadaşlar?
+
+180
+00:29:03,871 --> 00:29:05,091
+Şurası zaten sıfır.
+
+181
+00:29:05,591 --> 00:29:08,251
+Bunun kısmi türevi, önce fonksiyonun türevini alalım.
+
+182
+00:29:08,491 --> 00:29:10,211
+2 x artı y.
+
+183
+00:29:10,932 --> 00:29:14,091
+Sonra fonksiyonun içinin türevi de, x'e göre türevi 1'dir değil mi?
+
+184
+00:29:14,271 --> 00:29:16,511
+Dolayısıyla sadece 2 x artı y kaldı.
+
+185
+00:29:17,571 --> 00:29:18,511
+Buradan da yine...
+
+186
+00:29:19,539 --> 00:29:24,419
+x artı y artı 4y küp gelecek.
+
+187
+00:29:24,679 --> 00:29:33,959
+Bu yine tanımsız yapan bir nokta olmadığı için her ikisine aynı anda sıfır yapan değerlerine bakacağım.
+
+188
+00:29:41,523 --> 00:29:46,403
+Şimdi, şurayı sıfır yapan değer x artı y'nin sıfır olduğu değer değil mi?
+
+189
+00:29:48,223 --> 00:29:51,263
+Tamam, burası sıfırsa o zaman 4 yüklü de sıfırdır.
+
+190
+00:29:52,843 --> 00:29:56,563
+Dolayısıyla y sıfır, y sıfır olduğu için x de sıfır.
+
+191
+00:29:58,124 --> 00:29:59,343
+Çünkü toplamları sıfır.
+
+192
+00:30:00,884 --> 00:30:04,364
+Yani ilk yüklüden yola çıkarak x artı y'nin sıfır olduğunu buldum.
+
+193
+00:30:05,011 --> 00:30:12,152
+Bunu zaten şurada yerine koyunca 4, y, tüpün 0 olduğu anlamına geliyor. O zaman y, 0, y, 0 oldu. X, 0.
+
+194
+00:30:13,412 --> 00:30:17,912
+Dolayısıyla bizim kritik noktamız neymiş arkadaşlar? 0, 0'mış.
+
+195
+00:30:19,572 --> 00:30:21,052
+Kritik noktamız.
+
+196
+00:30:22,912 --> 00:30:24,152
+Yine bir tane çıktı.
+
+197
+00:30:30,036 --> 00:30:37,656
+Evet, şimdi ne yapıyorum? F0 artı h ve 0 artı k. Minicik bir kayıyorum sıfıra sıfır noktasından.
+
+198
+00:30:38,536 --> 00:30:40,496
+X'e F0 sıfıra bakacağım.
+
+199
+00:30:43,596 --> 00:30:44,576
+Nedir bu?
+
+200
+00:30:45,936 --> 00:30:51,256
+H artı k'nın karesi, fonksiyonla yerine koydum, artı k üzeri 4.
+
+201
+00:30:51,896 --> 00:30:53,596
+F0 sıfırımız zaten sıfır.
+
+202
+00:30:54,516 --> 00:31:07,336
+Biz bunun da her zaman sıfırdan büyük eşit olduğunu söyleyebiliriz. Dolayısıyla yine aynı mantıkla sıfıra sıfır noktamız bizim yerel minimum noktamızmıyız.
+
+203
+00:31:38,067 --> 00:31:39,428
+Hocam bir şey sorabilir miyim?
+
+204
+00:31:39,788 --> 00:31:40,008
+Tabii.
+
+205
+00:31:41,408 --> 00:31:44,647
+Hocam, daha demin demiştik ya, bu AR noktasıdır diye.
+
+206
+00:31:45,087 --> 00:31:49,847
+Burada büyük eşit sıfırda yerel minimum oluyor, küçük eşit sıfırda maks nokta oluyor.
+
+207
+00:31:50,468 --> 00:31:52,968
+Peki, AR noktası nasıl oluyor o zaman?
+
+208
+00:31:53,208 --> 00:31:55,208
+Yani bütün her yeri kaplamış oluyor zaten.
+
+209
+00:31:55,908 --> 00:31:58,248
+Şimdi örneğine geldi, bak şimdi.
+
+210
+00:31:59,827 --> 00:32:02,228
+Nasıl oluyor? Hemen onun örneğine geldik.
+
+211
+00:32:06,324 --> 00:32:09,924
+Fonksiyonumuz şöyle bir fonksiyon. [öğrenci] sensin değil mi?
+
+212
+00:32:11,504 --> 00:32:12,324
+Evet hocam benim.
+
+213
+00:32:13,644 --> 00:32:15,624
+Kritik noktalarını bulup sınıflandırın.
+
+214
+00:32:33,587 --> 00:32:35,008
+i kare, iksi, x kare.
+
+215
+00:33:05,332 --> 00:33:06,332
+Neyse, 2 gün sonra.
+
+216
+00:33:12,660 --> 00:33:27,900
+Çizelim. Şimdi, başladım. Kısmi türevlerini almaya. Eksi 2x, f'in y'ye göre kısmi türev de 2y. Tamam mı? Dolayısıyla buradan, bunu 0 yapan değer x eşittir 0, bunu 0 yapan değer, değil mi?
+
+217
+00:33:28,040 --> 00:33:35,080
+Şunu 0 yapan değer, bunu 0 yapan değer de y eşittir 0. O zaman bizim kritik noktamız yine 0'a 0'mış.
+
+218
+00:33:38,804 --> 00:33:39,304
+Bunu bul.
+
+219
+00:33:42,044 --> 00:33:46,104
+Şimdi, noktamdan menicik kayıyorum.
+
+220
+00:33:46,584 --> 00:33:48,484
+Eksi, f, sıfır, sıfır.
+
+221
+00:33:49,584 --> 00:33:50,764
+Burası ne oldu arkadaşlar?
+
+222
+00:33:51,404 --> 00:33:53,864
+K kare, eksi, haş kare.
+
+223
+00:33:55,704 --> 00:33:58,664
+Bunun her zaman sıfırdan büyük olduğunu söyleyebilir miyim?
+
+224
+00:34:00,788 --> 00:34:09,028
+Söyleyemem, öyle değil mi? Her zaman sıfırdan küçük olduğunu da söyleyemem. Yani büyük eşit sıfır veya küçük eşit sıfır olabilir bu.
+
+225
+00:34:12,563 --> 00:34:29,103
+Bazı noktalara göre değişiyor. 0, 0'dan nereye doğru kaydığıma göre değişiyor. Eğer k'sı haşından daha büyük bir noktaya kayarsam, büyük eşit 0 oluyor. K'sı haşından daha küçük bir noktaya kayarsam, küçük eşit 0 oluyor.
+
+226
+00:34:30,323 --> 00:34:35,783
+İşte bu yüzden ben buradaki 0'a 0 noktasına eğer noktası diyorum.
+
+227
+00:34:42,612 --> 00:34:56,712
+Anlaştık mı? Şimdi bizim bunları hesaplayabilmemiz için, yerel ekstremlar için ikinci türev testimiz var. O daha bize kolay yol gösteriyor bundansa. Ama şimdi bunu birazcık daha açıklayacağım.
+
+228
+00:34:56,712 --> 00:35:03,432
+Şimdi bu AI noktası aslında, hani yüzeyim öyle bir yüzey ki arkadaşlar, bir noktası var.
+
+229
+00:35:03,860 --> 00:35:09,699
+Bir tarafından baktığımda yerel minimum görünüyor, diğer tarafından baktığımda yerel maksimum görünüyor.
+
+230
+00:35:10,100 --> 00:35:12,780
+İşte bunun niye eğer noktası denmiş? Hemen onu açıklayayım.
+
+231
+00:35:13,240 --> 00:35:19,260
+Atların eğerini biliyor musunuz arkadaşlar? Atların veya eşeklerin üzerine bir eğer konudur öyle değil mi?
+
+232
+00:35:19,740 --> 00:35:22,539
+Oturmak için, sürücülerinin oturması için.
+
+233
+00:35:23,220 --> 00:35:26,420
+İşte o nasıl bir eğerdir? Bakın şöyle çizelim.
+
+234
+00:35:28,039 --> 00:35:29,340
+Güzel çizebilirim umarım.
+
+235
+00:35:31,347 --> 00:35:38,387
+ismini zaten oradan geliyor. Burası x olsun. Şöyle de y eksenimiz olsun.
+
+236
+00:35:42,963 --> 00:35:46,963
+Gözünü de canlandırmak için şöyle bir dizilerini.
+
+237
+00:36:02,228 --> 00:36:02,708
+Evet.
+
+238
+00:36:21,300 --> 00:36:25,020
+Şunu biraz daha yukarıdan çizsem daha iyi olacaktı. Şöyle bakalım.
+
+239
+00:36:26,260 --> 00:36:30,060
+Bu da şunu paralel bir şekilde çizdiğimiz bir şekil.
+
+240
+00:36:32,260 --> 00:36:37,800
+Şimdi tam böyle oturttuğumuz bir eğer düşünme arkadaşlar. Şu nokta, bakın şu nokta.
+
+241
+00:36:40,739 --> 00:36:44,180
+Şuradaki şu ikisinin kesişme noktası.
+
+242
+00:36:44,980 --> 00:36:54,720
+Bakın aşağıdan baktığında, bu yüzeye ben aşağıdan baktığında, yani bu yüzeyimin tabanındaki noktalara göre burası yerel maksimum olacak.
+
+243
+00:36:55,420 --> 00:37:02,239
+Ama yukarıdan baktığında bu nokta yerel minimum olacak. Aslında bu nasıl bir nokta biliyor musunuz arkadaşlar? Şöyle göstersen daha iyi.
+
+244
+00:37:02,239 --> 00:37:04,100
+Hamdur, güzel çizemedim çünkü.
+
+245
+00:37:07,539 --> 00:37:08,559
+Şöyle bir nokta.
+
+246
+00:37:10,220 --> 00:37:11,679
+Şöyle bir yüzey.
+
+247
+00:37:12,480 --> 00:37:12,920
+Tamam mı?
+
+248
+00:37:13,739 --> 00:37:23,439
+Bu ikisinin bu çakıştığı nokta, şu yüzeye baz alırsam, bakın şu karşıdan baz alırsam, bunun en dip noktası, minimum noktası değil mi?
+
+249
+00:37:23,439 --> 00:37:28,439
+Ama bu yüzeyi böyle döndürdüm, şuradan baz alırsam, bu nokta...
+
+250
+00:37:28,628 --> 00:37:45,228
+Şu aşağıdaki yüzeye göre maksimum nokta. Ama bu birleşik bir yüzey. Çakıştık yani. Yüzeyimiz bu şekilde bir yüzey. Dolayısıyla nereden baktığımıza bağlı olarak değişiyor. Yani yerel minimum ve maksimum noktasına çatışıyor bu iki nokta. İşte biz bu noktaya eğer noktası diyoruz.
+
+251
+00:37:48,596 --> 00:38:12,155
+Tamam mı? Yani bu yukarıdaki noktalar kısının haşından büyük olduğu noktalar mesela. O yüzden büyük keçit sıfır oluyor, burası yerel minimum oluyor. Tam tersi aşağıdaki, bu tabanındaki noktalardan baktığında kısın haşından küçük olan noktalar. O yüzden burası küçük keçit sıfır oluyor, burası aşağıdan bakıldığında bir yerel maksimum oluyor. Biraz kafanızda canlandı mı? Bunu çok güzel çizemedim ama.
+
+252
+00:38:12,155 --> 00:38:13,296
+Evet hocam.
+
+253
+00:38:16,083 --> 00:38:21,463
+Hatta bakın şöyle şey yapabiliriz.
+
+254
+00:38:22,563 --> 00:38:29,783
+Bu işte z eşittir, y kare eksi, x kare yüzeye, işte f x virgül sıfır diyelim.
+
+255
+00:38:30,344 --> 00:38:32,983
+Tamam mı? Bu nedir? Eksi x karedir değil mi?
+
+256
+00:38:36,820 --> 00:38:41,039
+Burada arkadaşlar sıfıra sıfır bir yerel maksimum noktadır.
+
+257
+00:38:42,840 --> 00:38:48,220
+Şu aşağıdan baktığımızda yani x tarafından baktığımızda yerel maksimum nokta.
+
+258
+00:38:49,220 --> 00:38:53,340
+Aynı şekilde f sıfıra y noktası y kare.
+
+259
+00:38:54,440 --> 00:38:59,720
+O zaman sıfıra sıfır bir yerel minimum nokta.
+
+260
+00:39:01,811 --> 00:39:13,891
+İşte burada arkadaşlar, x ve y yönleri noktanın maksimum veya minimum olması konusunda çeliştikleri için, biz buna maksimum veya minimum demiyoruz, eğer noktası diyoruz.
+
+261
+00:39:14,751 --> 00:39:23,471
+Yani sıfıra sıfır bir yerel ekstremi olamaz. Yerel maksimum veya minimum olamaz. Bu yüzden eğer noktası diyoruz.
+
+262
+00:39:27,476 --> 00:39:29,536
+Şuradan hatta bulursam siz yazarken.
+
+263
+00:39:46,739 --> 00:39:49,059
+Evet, GeoGebri'de daha da iyi gözükür.
+
+264
+00:39:50,659 --> 00:39:53,179
+Ben size şu kitaptan bir açacağım.
+
+265
+00:40:01,396 --> 00:40:03,115
+Çok kısa vaktinizi alayım.
+
+266
+00:40:51,188 --> 00:40:52,307
+Sıçı, yüttir.
+
+267
+00:41:21,139 --> 00:41:32,076
+Ekranı görüyor musunuz arkadaşlar? Bakın şurayı. Z eşittir y kare x kare. Bakın mavi çizginin bulunduğu yer. Yani o eğilimizin...
+
+268
+00:41:32,724 --> 00:41:54,083
+Sürücünün oturduğu yer, yukarıdan bakıldığında bu mavi çizginin, şuradaki sıfıra sıfır noktası, yerel minimum oluyor ama sarı eğriye göre, yani yüzeyimizi aşağıdan baktığımız durumda, bu sıfıra sıfır noktası sarı çizginin, sarı eğrimizin yerel maksimum olduğu nokta olmuş oluyor.
+
+269
+00:41:56,851 --> 00:42:03,231
+Biraz daha kafamıza canlanmıştır herhalde. Dolayısıyla, yerel maksimum ve minimum olması noktasını çeliştikleri için
+
+270
+00:42:05,108 --> 00:42:16,648
+Biz buraya eğer noktası diyoruz. Bu da bizim arkadaşlar, Thomas Kalkuluş, daha önce bahsetmiştim bizim ders kitabımız. Biz bundan işliyoruz derslerimizi. Bu İngilizce'de buradan Türkçe'ye çevirip o şekilde aktarıyoruz.
+
+271
+00:42:16,648 --> 00:42:26,588
+Buradan bakın, şimdi de göstereyim. Yerel minimum ve maksimumlar, yüzeydeki yerel minimum ve maksimumlar. Bakın, yerel maksimumlar şey.
+
+272
+00:42:27,155 --> 00:42:44,935
+Nasıl? Bir dağın zirvesindeki noktalar gibi. Yerel minimum da bir ovanın en çukur noktası gibi. Bir yerin en çukur noktası gibi düşünebiliriz. Yüzeylerdeki yerel maksimum minimumluk da bu şekilde gözümüzde canlanabilir.
+
+273
+00:42:55,155 --> 00:43:06,815
+Düzlüğün en minimum noktası oluyor. Zaten burada da bakın, elokal maximum occurs at a mountain peak, yani bir dağın zirvesinde ortaya çıkar diyor yerel maksimumlar.
+
+274
+00:43:07,135 --> 00:43:18,115
+Ve yerel minimum da bir vadinin en düşük noktasında, en derin noktasında ortaya çıkar diye. Şurada da o şekilde bir açıklama yapmış. Tamam mı?
+
+275
+00:43:29,396 --> 00:43:32,016
+Hayaller o şekilde, hayatlar da burası.
+
+276
+00:43:55,956 --> 00:43:57,556
+İkstediğiniz için.
+
+277
+00:44:05,043 --> 00:44:16,823
+İkinci kürev testi. Biz aslında bunu kullanacağız arkadaşlar. O az önce gösterdiğim yöntemi de nerede kullanacağımızı şimdi söyleyeceğim size.
+
+278
+00:44:20,947 --> 00:44:27,547
+Şimdi, fx'e ab noktası, fx'e'nin bir kritik noktası olsun.
+
+279
+00:44:32,436 --> 00:44:36,296
+Kritik noktalarını bulduğumuzu farz ediyoruz. Elimizde kritik noktalar var.
+
+280
+00:44:43,731 --> 00:44:55,851
+Sonra, tabii kritik noktası olduğu için arkadaşlar, bu F1. türevin AB'deki değeri, 2. türevin AB'deki değeri sıfır olacak, öyle değil mi?
+
+281
+00:44:57,992 --> 00:44:58,431
+Oldu.
+
+282
+00:45:06,547 --> 00:45:11,427
+Bir de bunlar arkadaşlar, bu iki kısmi türevinde sürekli olduğunu kabul ediyorum.
+
+283
+00:45:11,427 --> 00:45:15,339
+Bu durumda...
+
+284
+00:45:20,628 --> 00:45:24,387
+A dediğim ifade şu olsun.
+
+285
+00:45:24,948 --> 00:45:30,347
+F'in x'e göre ikinci mertebe kısmı türevinin AB'deki değeri.
+
+286
+00:45:32,500 --> 00:45:45,460
+B dediğim F'in X'e göre ve sonra Y'ye göre kısmi türevin AB'deki değeri ve bunu sürekli kabul ettiğim için de arkadaşlar, Şivar'si teoreminden ben bunun neye çift olduğunu biliyorum.
+
+287
+00:45:46,019 --> 00:45:50,519
+F, Y, X'i yer değiştirebiliyordular değil mi? Bunun AB'deki değeri.
+
+288
+00:45:52,180 --> 00:45:58,640
+Ve de son olarak C dediğimde F'in Y'ye göre ikinci mertebe kısmi türevin AB'deki değeri.
+
+289
+00:45:59,123 --> 00:46:03,123
+A, B ve C isimleri verdi. Olmak üzere.
+
+290
+00:46:27,219 --> 00:46:41,219
+b kare eksi ac, sıfırdan küçük ve a sayısı sıfırdan büyükse arkadaşlar, tamam mı? Bunları hesaplıyorum önce, bu ikinci mertebe, bakın ikinci türev testi alıyorsunuz.
+
+291
+00:46:41,819 --> 00:46:53,039
+İkinci mertebe ve kısmi türevlerini hesaplıyorum, abc şeklinde. Ve b kare eksi ac'ye bakıyorum. Bu sıfırdan küçük ve a sayısı sıfırdan büyük ise, tamam mı?
+
+292
+00:46:54,260 --> 00:47:02,579
+f fonksiyonu ab noktasında bir yerel minimuma sahip.
+
+293
+00:47:19,027 --> 00:47:41,188
+2, b kare eksi ac küçük sıfır. Bakın her ikisinde küçük sıfır. Ama a küçük, yani a da küçük sıfırdan küçükse, sadece şu koşul değişiyor ise, f ab noktasında bir yerel maksimuma sahiptir.
+
+294
+00:48:00,692 --> 00:48:09,372
+Bakın, hemen bana yerel minimum, yerel maksimum diye şak söylüyor bu test. Yani az önceki gibi haşkaları ekleyip işlem yapmıyorum.
+
+295
+00:48:10,332 --> 00:48:17,692
+Eğer b kare eksi ac sıfırdan büyük ise, hiç a'ya bakmıyorum arkadaşlar.
+
+296
+00:48:17,872 --> 00:48:25,612
+B kare eksi ac sıfırdan büyük ise, ab noktasında, eğer noktasına sahiptir.
+
+297
+00:48:40,115 --> 00:48:42,795
+B'de bir eğer noktasına sahiptir.
+
+298
+00:48:47,731 --> 00:49:01,231
+Son olarak da, bunlar haricindeki tek şey ne kaldı? Durum. B kare eksi A C'nin sıfır olması öyle değil mi? O zaman da bu test sonuç vermiyor arkadaşlar.
+
+299
+00:49:05,268 --> 00:49:14,007
+İşte bu testin sonuç vermediği durumda şuna döneceğim ben. Şu haçlı karlı işleme döneceğim. Anlaştık mı?
+
+300
+00:49:17,523 --> 00:49:21,623
+Hocam, C'yi nasıl kabul ettik? Pozitif mi yoksa negatif? Ben kaçırdım orayı.
+
+301
+00:49:22,023 --> 00:49:27,043
+Bilmiyoruz ki. Y'ye göre ikinci kısmı türevinin AB'deki değeri verecek bize.
+
+302
+00:49:28,543 --> 00:49:31,683
+Bilmiyoruz. Sadece bir ifade ilgilendiriyor.
+
+303
+00:49:34,443 --> 00:49:39,543
+Bakın, eğer B kare eksi AC sıfırdan küçükse, bir yerel ekstremum var.
+
+304
+00:49:40,183 --> 00:49:43,163
+Maksimum minimumunu belirleyen şey de A noktası.
+
+305
+00:49:43,827 --> 00:49:52,587
+Eğer b kare eksi ac sıfırdan büyükse, orada eğer noktası var, b kare eksi ac sıfıra içi seri test sonuç vermez, o zaman şu teste gidiyorum.
+
+306
+00:49:53,167 --> 00:50:00,000
+Tamam mı? Bu her türlü bize sonuç verecek. Ama bu her zaman daha kısa bir yol olduğu için, yani şu diğerine nazara, bunu kullanıyorum.
+
+307
+00:50:00,000 --> 00:50:12,880
+ve kare eksi acinin 0 olduğu durumda ona tekrar gideceğiz. Test bir sonuç vermemesi ne demek arkadaşlar? Bilmiyoruz. Yani bir yerel maksimum minimumluğunun olup olmadığını bu test yardımı yine bilmiyoruz.
+
+308
+00:50:27,539 --> 00:50:28,600
+sahip olabilir.
+
+309
+00:50:33,331 --> 00:50:34,171
+bilmiyoruz.
+
+310
+00:50:35,951 --> 00:50:40,811
+Yani bu testten bunu çıkaramıyoruz. Dediğim gibi az önceki o testte gideceğiz.
+
+311
+00:51:00,884 --> 00:51:01,743
+Anlaştık mı?
+
+312
+00:51:15,891 --> 00:51:20,491
+yazmayan, var mı yazmayan?
+
+313
+00:51:26,771 --> 00:51:29,192
+Şimdi örneklerimize geçelim artık. Yazı bu kadar.
+
+314
+00:51:35,987 --> 00:51:37,268
+x'i
+
+315
+00:51:37,268 --> 00:51:39,707
+2 x'i
+
+316
+00:51:39,707 --> 00:51:40,987
+x'i
+
+317
+00:51:40,987 --> 00:51:42,087
+6 x'i
+
+318
+00:51:42,087 --> 00:51:44,087
+artı 3 şeker.
+
+319
+00:51:48,244 --> 00:51:52,984
+Bu fonksiyonun kritik noktalarını bulup
+
+320
+00:52:23,476 --> 00:52:41,476
+Şimdi neyle başlıyorum? Hemen kısmi türevlerini alarak başlıyorum arkadaşlar. Ne için? Önce kritik noktaları bulacağım. Değil mi? Az önceki ikinci türev testini uygulamadan önce. Önce kritik noktaları bulacağım. Birinci türev yardımıyla sonra ikinci türevden ABC değerlerini bulup işlemini yapacağım.
+
+321
+00:52:48,947 --> 00:52:53,207
+y'ye göre kısmi türevi de, eksi 6x, artı 6y.
+
+322
+00:52:59,092 --> 00:53:02,292
+Ne yapıyorum? Onları sıfır yapan değerlere bakıyorum.
+
+323
+00:53:04,552 --> 00:53:06,231
+Buradan ne geldi arkadaşlar?
+
+324
+00:53:06,532 --> 00:53:07,552
+X kare eşit X.
+
+325
+00:53:09,431 --> 00:53:12,692
+Buradan da X eşittir diye geldi öyle değil mi?
+
+326
+00:53:16,340 --> 00:53:23,800
+Peki, x kare eşit x ise şöyle, x eşittir 0 veya x eşittir 1'dir öyle değil mi?
+
+327
+00:53:25,680 --> 00:53:27,560
+x kare x eşit olduğuna göre.
+
+328
+00:53:28,100 --> 00:53:32,760
+Peki, o zaman bu her iki değer içinde şuraya koyuyorum arkadaşlar.
+
+329
+00:53:35,940 --> 00:53:38,240
+Şurası artı 3'ye kare ya, [öğrenci]'e.
+
+330
+00:53:39,539 --> 00:53:43,599
+Şuradan eksi 6 x ya diye geliyor kısmi türevden, buradan artı 6 y'ye geldi.
+
+331
+00:53:46,228 --> 00:53:47,087
+Tamam, burada.
+
+332
+00:53:54,291 --> 00:54:07,411
+x'e göre kısmi türev ve katlı, ha şurası y. Şunu diyorsunuz değil mi? Aynen. O zaman ne oldu? x kare eşittir y oldu. Tekrar yapalım. Buradan da x eşittir y oldu.
+
+333
+00:54:08,991 --> 00:54:19,731
+Şurayı karalayalım o zaman. x kare eşit y ise, x de y'ye eşit. Ha yine aynı şeye geldi. Bu ikisinden ne elde ettim ben? x kare eşittir x elde ettim öyle değil mi?
+
+334
+00:54:20,916 --> 00:54:24,556
+Şimdi ikisini ortak çözüyorum. İkisine aynı anda sıfırlayan şeye bakacağım.
+
+335
+00:54:25,416 --> 00:54:32,336
+x kare eşittir x. O zaman yine x eşittir 0 veya x eşittir 1 oldu.
+
+336
+00:54:37,619 --> 00:54:42,539
+x eşittir 0 için arkadaşlar, o zaman şu denklemi kullanıyorum.
+
+337
+00:54:42,539 --> 00:54:55,759
+Burada x eşittir x'i buldum. x eşittir 0 için y 0, yani x virgül y noktamız kritik noktalarımızdan biri neymiş? 0'a 0'mış.
+
+338
+00:54:56,596 --> 00:55:06,236
+Diğeri de x eşittir 1. x eşittir 1 için yine x eşittir y, y eşittir 1 oldu. İkinci kritik noktamız çıktı. Bu da 1'e 1'dir.
+
+339
+00:55:31,891 --> 00:55:43,011
+Kötü noktalarımızı bulduk. Şimdi neleri bulacağız? Burada bir problem var mı arkadaşlar bunu bulma şeklinde? Bakın her ikisini aynı anda sıfırlanan değerleri aradığım için iki denklemi ortak çözüyorum.
+
+340
+00:55:47,219 --> 00:55:53,339
+Şu ikisini ortak çözdüğüm zaman x kare x'e eşit, kare iskansında içi olan iki sayımız var, 0 ve 1.
+
+341
+00:55:53,919 --> 00:56:00,139
+x'i 0 ve x'i 1 olan diğer noktalar, ister burada yerine koyun, ister burada yerine koyun arkadaşlar.
+
+342
+00:56:00,699 --> 00:56:03,419
+y'sine çıkacak, yine 0 ve 1 çıkacak.
+
+343
+00:56:05,199 --> 00:56:08,219
+Şimdi a'mız f x x.
+
+344
+00:56:12,916 --> 00:56:21,696
+B'miz, F, X'i, isterseniz F, Y'ye X'de alabilirsiniz. Hangisini, hangisi seri olamada almanız daha kolaysa onu yapın.
+
+345
+00:56:22,256 --> 00:56:26,476
+C'miz de F, Y'ye Y. Şimdi bunları hesaplayalım.
+
+346
+00:56:29,176 --> 00:56:33,996
+Şu an tekrar X'e göre türevini aldım. Burası 12X çıktı mı? Çıktı.
+
+347
+00:56:34,996 --> 00:56:38,816
+F, X'i, bunun Y'ye göre kısmi türevini aldım. X'e 6 çıktı.
+
+348
+00:56:40,628 --> 00:56:45,008
+F, Y'nin bunu bir kere daha Y'ye göre kısmi türevini aldım. 6 çıktı.
+
+349
+00:56:48,980 --> 00:56:50,239
+Buraya kadar tamamlayız.
+
+350
+00:56:54,099 --> 00:56:59,719
+Şimdi ne yapacağım? Şöyle bir tabloya aktaracağım arkadaşlar. Daha rahat görmek için.
+
+351
+00:57:01,819 --> 00:57:06,399
+Şimdi noktamız sıfıra sıfır noktası, bire bir noktası.
+
+352
+00:57:07,619 --> 00:57:18,199
+A'yı yazayım. 12x. B'imiz ne olursa olsun hep x'e 6 çıktı. C'imiz de noktamız ne olursa olsun.
+
+353
+00:57:18,559 --> 00:57:25,579
+Yani tüm noktalarda b'imiz eksi 6, c'imiz 6. Benim hesaplayacağım şey mi? b kare eksi a.
+
+354
+00:57:29,427 --> 00:57:36,367
+X'e 0 koydum, o zaman 0'a 0 noktasında, A'nın 0'a 0'daki değeri nedir? 0'dır.
+
+355
+00:57:37,107 --> 00:57:46,107
+Burası hep eksi 6'ya 6. O halde B kare eksi AC 36 eksi 0'dan 36 çıktı. Bu da büyük 0.
+
+356
+00:57:50,420 --> 00:58:00,960
+Şurayı da hesaplayalım. Burası 12. A'nın 1'e 1 noktasındaki değeri 12. Burası xv'ye ne olursa olsun hep eksi 6'ya 6 idi.
+
+357
+00:58:01,740 --> 00:58:11,720
+b kare eksi ac ne oldu? 36 eksi 12 çarpı 6. Ne olduğunun önemi yok ama şurası 36'dan büyük olduğu için bunu 0'dan küçük olduğunu biliyorum.
+
+358
+00:58:11,860 --> 00:58:14,840
+Benim için önemli olan o. Uzunluğunu hesaplamayın sakın.
+
+359
+00:58:16,115 --> 00:58:32,735
+Şimdi, neye bakacağım arkadaşlar? B kare eksi ac sıfırdan büyük olduğu için ikinci türev testi bana ne diyordu? Bu nokta sıfıra sıfırın ne olduğunu söylüyordu? Eğer noktası olduğunu söylüyordu öyle değil mi? Eğer noktası.
+
+360
+00:58:37,556 --> 00:58:58,336
+Şimdi şuraya bakıyorum. Burası sıfırdan küçük çıktı. O zaman burada bir yerel ekstremum var. Ama maksimumu, minimum olduğunu ne söyleyecek? A'nın işareti söyleyecek değil mi? A'mız 12. Sıfırdan büyük olduğu için bire bir noktası da bizim yerel minimum noktası.
+
+361
+00:59:05,523 --> 00:59:12,563
+Çünkü böyle karmaşık bir fonksiyonlu arkadaşlar, o az önceki HBK'lı şey baya zorlayacaktır sizi.
+
+362
+00:59:13,284 --> 00:59:19,804
+Baya zorlayacak. O yüzden 2 dürev testi her zaman bizim için daha kullanışlı olacak.
+
+363
+00:59:21,683 --> 00:59:24,003
+Anlaştık mı? Anlaşılmayan bir yer var mı?
+
+364
+00:59:58,547 --> 00:59:59,707
+Anlaşmayan bir yer var mı?
+
+365
+01:00:06,452 --> 01:00:07,271
+[öğrenci] mi?
+
+366
+01:00:11,635 --> 01:00:12,635
+[öğrenci] veren ne?
+
+367
+01:00:18,867 --> 01:00:21,107
+Biraz daha karne süpürüyorum bakalım.
+
+368
+01:00:32,052 --> 01:00:42,172
+fx'i x'çuk, eksi 3 x kare, artı 3 x y kare, eksi 3 y kare.
+
+369
+01:00:43,011 --> 01:00:45,572
+Yine kritik noktayı bulur, sınıflandıracağız.
+
+370
+01:00:51,731 --> 01:01:01,771
+Şimdi fonksiyon karmaşıklaştıkça arkadaşlar, kritik noktalarını bulmak biraz daha zor olacak. Daha zor olacak derken daha karışık olacak. Şöyle, hemen benim türevlerini alarak başlıyorum.
+
+371
+01:01:02,771 --> 01:01:16,731
+Kısmi türevlerini tabii ki. X'e göre kısmi türevi 3x kare, x'e 6x, artı 3y kare. Değil mi? Bunu sıfır yapan değerleri bileceğim.
+
+372
+01:01:17,940 --> 01:01:26,940
+y'ye göre kısmi türev ve burası 0, burası 0, burası 6xy, burası da eksi 6y.
+
+373
+01:01:28,940 --> 01:01:32,579
+Y'ye ikisini aynı anda sıfırlayan xy nokta içindeyim.
+
+374
+01:02:06,579 --> 01:02:15,699
+Şimdi şuradan yola çıkmam zor, öyle değil mi? X ile y arasındaki bağımsız için. Şuradan biraz daha kolay. O zaman ikinci eşitliğe geldim. Şuraya geldim.
+
+375
+01:02:16,519 --> 01:02:24,239
+Buradan ben neyi? 6y parantezine alırsam x eksi bir eşitlikleri sıfır olacak, öyle değil mi?
+
+376
+01:02:25,599 --> 01:02:33,460
+O zaman bunu sıfırlayan y değeri sıfır yahut x değeri bir, öyle değil mi?
+
+377
+01:02:35,380 --> 01:02:42,699
+Şimdi bunları arkadaşlar, ikinci eşitliği sağlayan x ve değerleri bunlar. Bunları gidip ilk eşitlikte yerine yazacağım.
+
+378
+01:02:43,019 --> 01:02:49,559
+Ve bunların yanına gelen, yani şu y eşittir sıfırın yanına gelen x değerini ve x eşittir birin yanına gelen y değerini bulacağım.
+
+379
+01:02:51,000 --> 01:02:51,420
+Tamam mı?
+
+380
+01:02:52,239 --> 01:02:58,639
+Şunu kullanarak, şimdi y eşittir sıfır ise, bunu hatta şöyle yıldız diyelim isterseniz.
+
+381
+01:02:58,639 --> 01:03:00,000
+Yıldız eşitliği.
+
+382
+01:03:00,596 --> 01:03:09,796
+Yıldızı yerine koyarak arkadaşlar, y eşittir sıfırı burada yerine koyarsam ne gelir? 3x kare eksi 6, x eşittir sıfır gelir öyle değil mi?
+
+383
+01:03:10,856 --> 01:03:17,996
+Buradan ne gelir arkadaşlar? Burayı 3x parantezine alırsam, x eksi 2 eşittir sıfır.
+
+384
+01:03:18,356 --> 01:03:42,456
+Dolayısıyla x eşittir 0 ve x eşittir 2 geldi. Bakın bunu sağlayan y eşittir 0 için bu eşitliği sağlayan, yani şu yıldız eşitliğini sağlayan 2 tane x değerim var. O zaman ben buradan 2 tane kritik elde etmiş olacağım. Onların biri 0, 0 değil mi? x'i 0, y'si 0. Diğeri de 2'ye 0.
+
+385
+01:03:46,132 --> 01:03:46,812
+Bu ne oldu?
+
+386
+01:03:50,547 --> 01:03:56,707
+Bir de x eşittir 1 için, x eşittir 1 için bunu yıldızda yerine koyacağım.
+
+387
+01:03:56,807 --> 01:04:00,127
+Çünkü sadece buradan elde ettim, sadece ikinci eşittikten elde ettim.
+
+388
+01:04:00,567 --> 01:04:05,788
+İkisini ortak çözmem gerekiyor. Çünkü ikisini aynı anda sıfır yapan x'ye değerlerine, nokta çiftliğine ihtiyacım var.
+
+389
+01:04:06,367 --> 01:04:13,707
+x eşittir 1'i burada yerine koydum. 3-6-3, yani 3y kare-3 eşittir 0.
+
+390
+01:04:16,387 --> 01:04:17,827
+Tamam, buradan da.
+
+391
+01:04:18,260 --> 01:04:23,920
+y² eşittir 1, y'miz artı eksi 1 oldu mu?
+
+392
+01:04:26,380 --> 01:04:34,559
+Dolayısıyla x eşittir 1 için y'nin bir tanesi 1, diğeri de x eşittir 1 için y'nin diğeri de eksi 1.
+
+393
+01:04:35,840 --> 01:04:39,059
+Gördüğünüz gibi arkadaşlar, kaç tane kritik nokta bulduk? 4 tane.
+
+394
+01:04:47,059 --> 01:04:54,460
+Burada anlaşılmayan bir yer var mı? Bakın fonksiyon karmaşıklaştıkça en fazla, en karmaşıklık bu şekilde şeyler gelecek karşınıza.
+
+395
+01:04:54,800 --> 01:04:57,659
+Bu arada böyle ikili ikili gruplandırıyoruz.
+
+396
+01:05:11,251 --> 01:05:33,311
+Buraya kadar bir sıkıntı var mıdır? Tamam. Şimdi birinci kısmi türev ile ne aldım? Sıfıra eşitliyorum. Her ikisini birden sıfıra eşitleyen, x'ye noktayı çiftleyen ihtiyacım var. O yüzden ikisini aynı anda çözmem gerekiyor [öğrenci]. Tamam mı? Şurası biraz daha karmaşık olduğu için buradan yola çıktı. Tamam. Hangi denklem daha kolaysa oradan yola çıkın.
+
+397
+01:05:33,652 --> 01:05:43,491
+6y karantezini aldım. 6y çarpı x eksi 1 sıfırsa burada ya y sıfırdır ve x eşitir 1. Şimdi y'nin sıfır olduğu durumda,
+
+398
+01:05:43,956 --> 01:06:10,436
+Bunu sadece şundan elde ettim. O zaman buradan elde ettim. Burada yerine yazayım ki burayı da sıfırlayan noktayı elde edebileyim. İkisini ortak çözmek için. Y eşittir sıfırı buradan yerine koyduğum zaman, şu eşitlikle, şu denklemle yerine koyduğum zaman, iki tane x değeri elde ettim. x eşittir sıfır ve x eşittir iki. Y'e sıfır olan iki tane nokta varmış ki, bu h ikisini birden aynı anda sıfırlıyormuş.
+
+399
+01:06:10,643 --> 01:06:31,643
+Onun da bir tanesinin x'i 0, diğerinin x'i 2 ama y'si sabit 0. Sonra x'i 1'i ele aldım. Yine burada yerine koydum. 3y kare eksi 3 oldu. x'i 1'i yerine koydum. Buradan yine 2 tane y'e de ilerledim. Bunları da yazdım. Kırtık nokta olmuş oldu.
+
+400
+01:06:33,643 --> 01:06:36,804
+Şimdi de ne yapıyorum? İkinci türevlere geçiyorum. Tamam mı?
+
+401
+01:06:37,204 --> 01:06:50,384
+A'mız ne? F, X, X. Yani ikinci türevini alıyorum bundan. 6X, X'e 6. B'miz ne arkadaşlar? F, X, Y.
+
+402
+01:06:51,844 --> 01:06:57,324
+Bunu Y'yi isterseniz buradan X'e göre de alın. Çünkü bunlar her türlü sürekli öyle değil mi? Polinom tarzında.
+
+403
+01:06:58,384 --> 01:07:03,264
+Bunun türevini aldım. 6Y. Y'ye göre kısmi türevi 6Y.
+
+404
+01:07:03,731 --> 01:07:09,911
+Ve son olarak, F, Y, Y'de, şuranın yeri göre kısmi türevi, altı yükse yükse altı.
+
+405
+01:07:20,083 --> 01:07:22,203
+Şimdi bunları tabloya yerleştirelim.
+
+406
+01:07:25,183 --> 01:07:27,083
+4 tane kritik noktamız var.
+
+407
+01:07:34,099 --> 01:07:43,679
+Birincisine sıfıra sıfır, ikiye sıfır, bire bir ve bire eksik.
+
+408
+01:07:47,347 --> 01:07:49,807
+A'mız 6x-6
+
+409
+01:07:49,807 --> 01:07:53,927
+B'miz 6y
+
+410
+01:07:53,927 --> 01:07:59,187
+C'miz 6x-6
+
+411
+01:07:59,187 --> 01:08:03,807
+B kare eksi ac'leri hesaplayacağım.
+
+412
+01:08:21,363 --> 01:08:28,163
+Şimdi, A'nın 0, 0'daki değeri nedir arkadaşlar? Sadece x yerine 0 koydum, burası x'e 6 oldu.
+
+413
+01:08:29,183 --> 01:08:42,443
+B'nin 0, 0'daki değeri 0. C'nin 0, 0'daki değeri x'e 6. B kare eksi ac'de ne oldu o zaman? 0, eksi 36, küçük 0 oldu.
+
+414
+01:08:43,663 --> 01:08:47,144
+O zaman ben ne diyorum? Burada bir yerel ekstremim var.
+
+415
+01:08:48,307 --> 01:08:52,907
+Ama bunun minimum, maksimumluğunu bana ne söyleyecek? A'nın işareti.
+
+416
+01:08:53,487 --> 01:09:02,868
+A'mız da eksi 6, bu da 0'dan küçük olduğu için bu nokta, yani 0, 0 noktası, yerel maksimum nokta.
+
+417
+01:09:20,659 --> 01:09:21,380
+Tamam mı?
+
+418
+01:09:23,380 --> 01:09:25,260
+Şimdi 2'ye 0'a geldim.
+
+419
+01:09:26,200 --> 01:09:27,239
+6 kere 2, 12.
+
+420
+01:09:30,659 --> 01:09:33,420
+12-6'dan burası 6 oldu.
+
+421
+01:09:34,200 --> 01:09:35,520
+12-6'dan 6.
+
+422
+01:09:36,200 --> 01:09:37,539
+6'yemiz 0.
+
+423
+01:09:38,579 --> 01:09:40,479
+12'ye 6 çıkardım. 6 oldu.
+
+424
+01:09:41,203 --> 01:09:58,043
+b²-ac'miz nedir? Yine, eksi 36, bu da küçük 0, yerel eksperimum var diyorum. Bu sefer ama a'mız 6, yani 0'dan büyük olduğu için, 2'ye 0 noktamız bir yerel minimum noktaymış.
+
+425
+01:10:09,684 --> 01:10:20,244
+1'e 1 noktasına geldim. Buradan 6-6'dan 0 oldu. 6y'imiz 6, 6-6'ımız da 0 oldu.
+
+426
+01:10:20,824 --> 01:10:30,744
+b²-ac yani 36-0, 0'dan büyük olduğu için 1'e 1 noktamız bir ne noktasıdır?
+
+427
+01:10:32,123 --> 01:10:33,344
+Bu noktamızın isim nedir?
+
+428
+01:10:37,203 --> 01:10:38,144
+Aynen öyle.
+
+429
+01:10:38,363 --> 01:10:38,743
+E yani.
+
+430
+01:10:44,724 --> 01:11:04,984
+1'e, eksi 1'e geldik. 6, eksi 6, yine burası 0 oldu. 6'yım, burası eksi 6. 6, eksi 6'mı yine 0 oldu. 36, eksi 0, büyük 0. Yine aynı şekilde burası da bir eğer noktası varmış.
+
+431
+01:11:09,684 --> 01:11:13,484
+kritik noktalarını bulduk ve bu şekilde de sınıflandırdık.
+
+432
+01:11:15,324 --> 01:11:21,244
+Bu çift değişkenli fonksiyonumuzun yerel maksimum noktası 0'a 0, yerel minimum noktası 2'ye 0.
+
+433
+01:11:22,744 --> 01:11:25,764
+Eğer noktaları da 1'e 1 ve 1'e eksi 1'dir.
+
+434
+01:13:11,283 --> 01:13:15,023
+Böyle bir fonksiyon verilmiş. Hemen başlıyorum kliklik noktasını bu noktasını.
+
+435
+01:13:15,144 --> 01:13:21,943
+f'in x'e göre kısmi türevi nedir arkadaşlar? Burası y. 1 bölü x'in kısmi türevi de eksi 1 bölü x kare.
+
+436
+01:13:26,068 --> 01:13:31,608
+ekin y'ye göre kısmi türevine bakıyorum. Burası x, burası da eksi 8 bölüye ekleyelim.
+
+437
+01:13:38,163 --> 01:13:44,404
+Şimdi bu her ikisini birden sıfır yapan x, y noktalarını bulacağım arkadaşlar. Ortak çözüm an lazım.
+
+438
+01:13:44,943 --> 01:13:52,203
+Buradan ne geldi? y eşitti, 1 bölü x kare geldi. Buradan da ne geldi? x eşitti, 8 bölü y kare geldi.
+
+439
+01:13:53,123 --> 01:14:03,844
+Şunu, yani ikisinden birini ister y'yi burada yerine yazın arkadaşlar. Yani şunu alın, şurada yerine yazın. Ya da ister x'i alın, burada yerine yazın.
+
+440
+01:14:04,212 --> 01:14:08,252
+İkisini ortak çözmek için o şekilde bir katakulle yapıyorum sadece.
+
+441
+01:14:09,932 --> 01:14:13,332
+Şimdi buradan şöyle diyelim, aşağısına geçelim.
+
+442
+01:14:13,952 --> 01:14:16,632
+Bunu şurada yerine yazalım, daha kolay olacak sanki.
+
+443
+01:14:16,632 --> 01:14:19,672
+Bu y'imiz daha sade bir ifade olduğu için.
+
+444
+01:14:20,252 --> 01:14:26,752
+x eşittir 8 bölü 1 bölü x karenin karısı.
+
+445
+01:14:32,659 --> 01:14:40,939
+Diğerine yazılacak. Buradan ne geldi arkadaşlar? x eşittir, buradan x üzeri 4, 8 x üzeri 4 gelmedi mi?
+
+446
+01:14:44,039 --> 01:14:54,920
+Yani şöyle bir şey, x eksi 8, x üzeri 4 eşittir 0. Buradan x parantezin aldığına 1 eksi 8 x kü, eşittir 0 olacak.
+
+447
+01:14:58,260 --> 01:15:12,579
+O zaman bunu sağlayan x değerleri, birisi x eşittir 0, diğeri de nedir arkadaşlar? 8x kükünün 1 olduğu yer. Yani x kükünün 1 bölü 8, yani x'in 1 bölü 2 olduğu nokta değil.
+
+448
+01:15:18,036 --> 01:15:18,956
+Tamam, biz buraya kadar.
+
+449
+01:15:26,739 --> 01:15:51,279
+Şimdi bu farklı bir soru arkadaşlar. Şu açıdan farklı. Burada dikkat etmeniz gereken bir şey var. Normalde biz ne yaparız? Tamam, x değerlerini buldum. Bunu gidip ikisinden birini yerine yazıp, pardon, y değerini bulurum. Ve böylece iki tane kritik noktam var derim. Ya da kaç tane y çıkarsa. Ama ve lakin şuna dikkat etmeniz gerekiyor. x eşit bir sıfır fonksiyonun tanım cüresinde mi?
+
+450
+01:15:59,028 --> 01:16:07,968
+Değil değil mi? Tanım kümesinde olmadığı için arkadaşlar, x eşittir sıfır da tanımlı değil bu fonksiyon. O yüzden bunu almıyorum.
+
+451
+01:16:09,768 --> 01:16:18,407
+Buna dikkat edelim. Şimdiye kadar hep böyle polinom tarzında, yani hiç faydasında x'li yeri değerler olmayan şeyler geldiği için buna bakmadım.
+
+452
+01:16:18,407 --> 01:16:26,448
+Gerek yoktu. Ama bu tarz sorularda dikkat edeceğimiz şey burası. O zaman sadece x eşittir 1 bölü 2'yi alıyorum.
+
+453
+01:16:26,931 --> 01:16:33,252
+X işte 1 bölü 2'ye karşılık gelen y değeri neymiş? Ona bakarsam ne yükleyebilecek?
+
+454
+01:16:37,876 --> 01:16:42,695
+Şurada 1 bölü 2 koydum, 1 bölü 4 oldu, ters çevirdim, y'si 4 oldu.
+
+455
+01:16:44,036 --> 01:16:48,095
+Dolayısıyla noktam neymiş? 1 bölü 2'ye 4 noktasıymış.
+
+456
+01:16:49,316 --> 01:16:53,756
+Tek bir tane kritik noktam var, o da 1 bölü 2'ye 4 noktası.
+
+457
+01:16:54,176 --> 01:16:57,976
+Yani öyle tıvapla oluşturmama gerek yok, bir tanecik olduğu için.
+
+458
+01:16:58,636 --> 01:17:02,615
+Ne yapıyorum? A değerini, B değerini ve C değerini hesaplayacağım.
+
+459
+01:17:02,615 --> 01:17:03,996
+Yani f, x, x.
+
+460
+01:17:04,595 --> 01:17:06,855
+Bunun tekrar x'e göre türevi.
+
+461
+01:17:09,055 --> 01:17:14,595
+Ne olacak? y'nin türevi 0, x'i 1 bölü x karenin türevi de 2 bölü x'i türevi.
+
+462
+01:17:21,555 --> 01:17:38,515
+B'niz ne olacak? F, X, Y. Bunun Y'ye göre kısmi türevini alırsam, bakın, F, Y, X yaparsam, şunun Y'ye göre kısmi türevini almak bir tık daha zor değil mi? Ama şunun Y'ye göre kısmi türevini, pardon, gerçi bunun da X'e göre kısmi türevini alınca 1 olacak, özür dilerim.
+
+463
+01:17:38,515 --> 01:17:49,095
+Yani şunu demek istiyorum, ister F, X'i alın, ister F, Y, X'i, hangisinin işlemi daha kolaysa onu yapmakta serbestsiniz. Burada F, X, Y'ye baktım, kısmi türevim 1.
+
+464
+01:17:49,908 --> 01:17:52,587
+f, y, x'e baksaydım da yine 1 olacaktı.
+
+465
+01:17:53,327 --> 01:17:55,868
+c'ye baktığında f, y, y değerimiz ne?
+
+466
+01:17:56,307 --> 01:18:01,608
+8 bölü, y, eksi 8 bölü, y kare denkide, 16 bölü, y.
+
+467
+01:18:08,819 --> 01:18:17,360
+Şimdi b kare eksi ac'ye bakacağım. b kare eksi ac'nin şart sürekli olması, fx'lerin sürekli olması.
+
+468
+01:18:20,340 --> 01:18:30,880
+Gerçi burada sıfır a sıfır noktasında bunlar sürekli değil ama sıfır a sıfır noktası zaten fonksiyonumun tanım kümesinde olmadığı için bunların her yerde sürekli olduğunu söyleyebilirim.
+
+469
+01:18:33,652 --> 01:18:38,011
+Fonsiyonun tanım çümesine yok. Zaten oradan geçmiyor. Fonsiyonun oradan geçmiyor bile.
+
+470
+01:18:39,371 --> 01:18:41,531
+Bir kare eksi ac'ye bakacağız.
+
+471
+01:18:44,091 --> 01:18:55,916
+Bu da nedir? Birin karesi eksi a çarpı c. Yani 32 bölü x çüp y çüp mu olur?
+
+472
+01:18:59,188 --> 01:19:02,048
+Ama bunun hangi noktasındaki değerine ihtiyacım var benim?
+
+473
+01:19:02,488 --> 01:19:05,667
+AB noktasındaki, yani 1 bölü 2'ye 4 noktasında.
+
+474
+01:19:05,948 --> 01:19:11,528
+Yani B kare eksi AC'nin 1 bölü 2'ye 4'teki değerine bakıyorum.
+
+475
+01:19:12,507 --> 01:19:14,927
+Bu ve işte şurası 1 bölü 8 oldu değil mi?
+
+476
+01:19:14,927 --> 01:19:20,427
+X yerine 1 bölü 2 koyunca 1 bölü 8, Y yerine 4 koyunca 64 oldu.
+
+477
+01:19:20,948 --> 01:19:28,388
+64'ü 8'e böldüm. 8, 32'yi 8'e böldüm. 4, 1-4, x-3 mi oluyor? Evet.
+
+478
+01:19:28,388 --> 01:19:29,388
+Eksi 3.
+
+479
+01:19:32,268 --> 01:19:38,248
+Sıfırdan küçük. Evet. Demek bir yerel x'ler var. O zaman beni ne ilgilendiriyor arkadaşlar?
+
+480
+01:19:38,988 --> 01:19:47,528
+A'nın işareti ilgilendiriyor. A'nın 1 bölü 2'ye 4'teki işareti nedir? 2 bölü x küp.
+
+481
+01:19:49,300 --> 01:19:58,579
+16, 0'dan büyük olduğu için, ne diyoruz? 1 bölü 2'ye 4 noktası, 1 gelen bir.
+
+482
+01:20:10,644 --> 01:20:11,584
+Ama Sturvun.
+
+483
+01:20:42,036 --> 01:20:45,355
+Son bir tane daha çözüp bitirelim. Bu da zaten minik bir soru.
+
+484
+01:20:49,140 --> 01:20:52,079
+Bunu özellikle çözmek istedim. Şuna dikkat. Tamam mı?
+
+485
+01:20:53,880 --> 01:20:54,819
+Yazmayan var mı?
+
+486
+01:20:56,360 --> 01:20:58,860
+Tabii çok kolay bir konu. Bir esprisi yok.
+
+487
+01:20:59,980 --> 01:21:02,060
+Sadece şöyle zorlaştırılabilir.
+
+488
+01:21:02,860 --> 01:21:05,860
+Kapalı fonksiyon değilse kapalı türev almamız gerekir.
+
+489
+01:21:05,860 --> 01:21:08,620
+Sadece o türevleri almakla bazen zorlanabilirsiniz.
+
+490
+01:21:09,100 --> 01:21:10,800
+Onu da uygulamada ben çözeceğim zaten.
+
+491
+01:21:11,560 --> 01:21:13,500
+Onun halinde hiçbir esprisi yok.
+
+492
+01:21:20,819 --> 01:21:23,279
+Aynen öyle. Güzelleştiriyoruz.
+
+493
+01:21:24,539 --> 01:21:31,360
+2y tıp, artı 3x kare, eksi 3y kare, eksi 12x.
+
+494
+01:21:34,579 --> 01:21:38,079
+Haa evet ona dikkat sakın al, bir kare eksi aracı arkadaşlar.
+
+495
+01:21:43,667 --> 01:21:46,368
+Güzel değilim, sakın daha oraya da koymayalım.
+
+496
+01:21:48,747 --> 01:21:54,208
+Şimdi hemen x'e göre kısmi türevini alıyorum. 6x-12y.
+
+497
+01:21:55,688 --> 01:21:57,948
+Tamam mı? Bunu sıfırlayan değerleri bulacağım.
+
+498
+01:21:58,108 --> 01:21:59,788
+y'ye göre kısmi türevini aldım.
+
+499
+01:22:01,228 --> 01:22:06,728
+6y kare, eksi 6y, eksi 12x. Eşittir sıfır.
+
+500
+01:22:09,971 --> 01:22:13,192
+Şimdi buradan hemencik x eşittir 2y'ye geldi.
+
+501
+01:22:14,371 --> 01:22:14,652
+Değil mi?
+
+502
+01:22:15,471 --> 01:22:16,412
+Buradan ne geldi?
+
+503
+01:22:18,931 --> 01:22:21,591
+6y kare eksi, 6y eksi 12x.
+
+504
+01:22:22,271 --> 01:22:25,572
+Buraya arkadaşlar sıfır yapan değerleri bulunmak için ne yapacağım?
+
+505
+01:22:25,671 --> 01:22:27,332
+Bakın ikisini ortak çözüleceğim.
+
+506
+01:22:27,871 --> 01:22:28,971
+Yine buraya geliyorum.
+
+507
+01:22:29,511 --> 01:22:31,871
+x eşittir 2y'ye ne yapacağım?
+
+508
+01:22:32,231 --> 01:22:33,371
+Burada yerine yazacağım.
+
+509
+01:22:35,764 --> 01:22:53,604
+Yani ne oldu? 6y kare eksi 6y, eksi 24y, eşittir 0. Buradan 6y kare eksi 30y, yani y kare eksi 5y, eşittir 0. Buradan da 2 tane y değerini geldi. y eşittir 0, y eşittir 1.
+
+510
+01:23:01,108 --> 01:23:08,988
+Şimdi kritik noktalarımın y koordinatlarını buldum. x'lerimi bulmak için de ne yapacağım? Gidip burada yerimi geçeceğim.
+
+511
+01:23:11,268 --> 01:23:21,368
+y eşittir 0 için x'imiz neydi? 2y idi. x'imiz de 0 oldu. O zaman kritik noktalarımdan biri 0'a 0'mış.
+
+512
+01:23:21,368 --> 01:23:27,868
+y eşittir 5 için yine x eşittir 2y diyorum. x eşittir 10 oldu.
+
+513
+01:23:28,467 --> 01:23:34,327
+İkinci bir kritik noktam da 10'a 5'miş. İşte bunlar benim yerel ekstremlar için aday noktalarım.
+
+514
+01:23:43,155 --> 01:23:45,155
+A'yı buluyorum, fxx.
+
+515
+01:23:46,296 --> 01:23:49,396
+Bunun tekrar x'e göre kısmi türevini aldığımda 6 oldu.
+
+516
+01:23:50,036 --> 01:23:51,815
+B'ye yapıyorum, fx'ye.
+
+517
+01:23:51,815 --> 01:24:01,916
+Bunu tekrar y'ye göre kısmi türevini aldığımda 12'ye, x'in, bir dakika, fx'ye, pardon.
+
+518
+01:24:03,255 --> 01:24:05,296
+Şunun sadece x12 kalacak değil mi?
+
+519
+01:24:06,675 --> 01:24:07,976
+Şunu alıyorum yanlışlıkla.
+
+520
+01:24:08,155 --> 01:24:09,015
+x12 oldu.
+
+521
+01:24:09,460 --> 01:24:19,739
+12'ye göre kısmi türev ve C'ye göre kısmi türev yani F, Y, Y'ye baktığım zaman da 12'ye eksi 6 olur.
+
+522
+01:24:30,899 --> 01:24:37,340
+Burada iki tane kritik noktam var. Biri 0, 0, diğeri 10'a 4.
+
+523
+01:24:43,188 --> 01:24:43,747
+6.
+
+524
+01:24:46,148 --> 01:24:47,148
+B'imiz
+
+525
+01:24:47,148 --> 01:24:49,407
+eksi 12.
+
+526
+01:24:50,788 --> 01:24:53,327
+Y'imiz 12'ye eksi 6.
+
+527
+01:24:54,208 --> 01:24:58,887
+A her zaman sıfırdan büyük olduğu için burada bir yerel maksimumdan söz edemiyoruz.
+
+528
+01:24:59,028 --> 01:25:00,728
+Her zaman sıfırdan büyük çıkacak.
+
+529
+01:25:00,927 --> 01:25:02,228
+B karemiz ne olursa olsun.
+
+530
+01:25:03,128 --> 01:25:04,967
+Sonra burada da B kare eksi A.
+
+531
+01:25:08,564 --> 01:25:27,283
+Burası 6, eksi 12, 6, eksi 12. Çünkü x ve y'ye bağlı değil. Sadece c'y'yı sıkıntı yapıyor. Burası da c'y'yı eksi 6 oldu. Burada da 12'ye eksi 6'dan, ne oldu arkadaşlar? 12'leri 5, 60, 54 oldu.
+
+532
+01:25:35,731 --> 01:25:46,412
+6 çarpı eksi, yani eksi 36. Burası her zaman sıfırdan büyük, öyle değil mi? O zaman sıfıra sıfır bir eğer noktam.
+
+533
+01:25:53,043 --> 01:26:13,463
+Sonra burada da 144-54 çarpı 6. Bu akar 144'ü geçecek. Dolayısıyla burası sıfırdan küçük oldu arkadaşlar. Değil mi? Ama ağımız 6. Yani sıfırdan büyük olduğu için de 10'a 5 noktası bir yerel minimum yok.
+
+534
+01:26:27,731 --> 01:26:28,231
+Çok güzel.
+
+535
+01:26:38,836 --> 01:26:40,836
+Onun için yani bir yer yoksa bizim bu kadar.
+
+536
+01:26:41,716 --> 01:26:42,796
+Sorular da bu şekilde.
+
+537
+01:26:43,115 --> 01:26:46,076
+Yine uygulama halde devam ederiz sorulara.
+
+538
+01:26:46,855 --> 01:26:47,996
+Zaten zor bir şey değil.
+
+539
+01:26:48,136 --> 01:26:49,355
+Sadece dikkat etmeniz gerekiyor.
+
+540
+01:26:49,435 --> 01:26:51,056
+İşlem atması yapmanız gerekiyor.
+
+541
+01:26:52,336 --> 01:26:53,376
+Çok teşekkür ederim.
+
+542
+01:26:53,615 --> 01:26:54,675
+Görüşmek üzere.
+
+543
+01:26:58,836 --> 01:27:00,156
+Teşekkürler hocam, iyi günler.
+
+544
+01:27:00,496 --> 01:27:01,756
+İyi günler, hoşçakalın.
+
+545
+01:27:05,619 --> 01:27:07,319
+Görüşürüz.
+
+546
+01:27:16,692 --> 01:27:18,692
+İyi günler arkadaşlar, hoşçakalın.

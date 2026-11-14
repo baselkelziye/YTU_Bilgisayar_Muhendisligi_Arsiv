@@ -1,0 +1,2679 @@
+1
+00:09:48,467 --> 00:09:49,347
+Açıkınca oraya gittin.
+
+2
+00:10:07,155 --> 00:10:20,915
+Merhabalar arkadaşlar. En son katlı integrallere geçmiştik. Katlı integral mantığı nedir? Riemann integraliyle katlı integral nasıl hesaplar? Bununla ilgili ödev vermiştim. Bunu izlemenizi istemiştim.
+
+3
+00:10:21,364 --> 00:10:31,344
+Daha sonra da basitçe katlı integral nasıl çözülür? Yani önce x'e göre integral alıyoruz. Sonra elde ettiğimiz fonksiyonun y'ye göre integralini alıyoruz.
+
+4
+00:10:31,344 --> 00:10:47,224
+Ya da dy de x şeklindeyse katlı integral. Mesela integral bir f fonksiyonu. İki değişkenli. Önce y'ye göre.
+
+5
+00:10:48,244 --> 00:10:53,844
+Sonra x'e göre integrasyon varsa, iki kat integralimiz var.
+
+6
+00:10:55,084 --> 00:11:00,624
+Burada önce bu kısmın y'ye göre integralini alıyoruz.
+
+7
+00:11:00,964 --> 00:11:05,484
+Sonra elde ettiğimiz fonksiyonun x'e göre integralini alıyorduk.
+
+8
+00:11:05,564 --> 00:11:07,844
+Bundan bahsetmiştim, basit bir örnek çözmüştük.
+
+9
+00:11:07,844 --> 00:11:13,163
+Şimdi tekrarlama yoluyla katlı integraller ve Fubini teoreminden bahsedeceğiz.
+
+10
+00:11:18,580 --> 00:11:33,700
+Tek değişkenli fonksiyonlar için Riemann integralinin bir AB aralığını en bölüntüye, sonlu en bölüntüye böldüğümüzde bir fonksiyonun altındaki eğrin alanını verdiğini göstermiştik.
+
+11
+00:11:34,480 --> 00:11:41,060
+Aynı zamanda çok değişkenli fonksiyonlar için de Riemann integralini dikdörtgensel bölgeler için tanımladık.
+
+12
+00:11:43,796 --> 00:11:52,596
+sonlu sayıda bölüntüye bölüp, eni ve emi sonsuza götürdüğümüzde, katlı integralı elde etmiştik.
+
+13
+00:11:53,396 --> 00:12:00,616
+Ancak, üst iman ve alt iman toplamlarıyla, integrasyon hesabı, her zaman için kullanışlı değildir.
+
+14
+00:12:01,036 --> 00:12:04,956
+Dolayısıyla, integrasyonu, genelleştirmemiz gerekir.
+
+15
+00:12:04,956 --> 00:12:09,756
+Ve, çok değişkenli fonksiyonlarda,
+
+16
+00:12:10,259 --> 00:12:16,940
+katlı integrallerin hesabında, tekrarlama yoluyla integralleri almamız gerekir.
+
+17
+00:12:17,980 --> 00:12:22,440
+Bir integral, aynı zamanda bir fonksiyondur.
+
+18
+00:12:22,440 --> 00:12:24,440
+Mesela, bir...
+
+19
+00:12:27,956 --> 00:12:42,176
+Çünkü arkadaşlar, burada iki katlı integralden bahsediyoruz. İlkini aldığımda, elde ettiğim şey aslında bir fonksiyon. Yani y'ye bağlıysa x'e bağlı oluyor, x'e bağlıysa y'ye bağlı değerler çıkıyor. Bu bir fonksiyon sonra tekrar integral alıyorum.
+
+20
+00:12:43,556 --> 00:12:49,416
+Fonksiyonunu, z'ştir, fxf fonksiyonunu, bir integralini alalım.
+
+21
+00:12:56,211 --> 00:13:20,271
+Şimdi burada tabii bu işlemleri yaparken Z eşittir, Fx'ye fonksiyonuna geçmiş olduk. Z dediğimiz zaman Fx'ye iki değişkenli fonksiyonu düşünün. Burada fi ve kısı gibi bazı farklı Yunan alfabesinden harfler de kullanmış olabiliriz. Fonksiyonların genel gösterimlerinden yararlanmak zorundayız. Ama bunlar sizi korkutmasın. Yani fi derken işte şöyle bir harf mesela.
+
+22
+00:13:23,731 --> 00:13:30,932
+bildiğimiz ABC gibi bir harf olarak düşünün. Yani bunun zor olduğu anlamına gelmiyor arkadaşlar.
+
+23
+00:13:37,203 --> 00:13:37,703
+İkseyin.
+
+24
+00:13:42,035 --> 00:13:45,795
+Bu fonksiyon, x'e ve y'ye bağlı bir fonksiyon.
+
+25
+00:13:47,035 --> 00:13:58,255
+x'e göre integral aldığımızda, x'in a'dan b'ye kadar sınırlarla tanımlı olduğuna dikkat edelim.
+
+26
+00:13:59,355 --> 00:14:04,755
+x'in değerlerinin yerine koyduğumuzda, bu integrasyonun sonucu bize,
+
+27
+00:14:06,707 --> 00:14:16,927
+pi y şeklinde y'ye bağlı bir fonksiyon verecektir. Bu y'ye bağlı fonksiyon, integrasyonun bir sonuçtur.
+
+28
+00:14:16,927 --> 00:14:34,411
+Ve y'ye bağlı fonksiyonun bir a eşittir, ab çarpı cd bölgesinde integre edilebilir.
+
+29
+00:14:41,652 --> 00:14:47,211
+Biz bu fonksiyonu bu bölgede integral edebiliyorsak, diyelim ki,
+
+30
+00:14:51,028 --> 00:14:52,168
+P fonksiyonu
+
+31
+00:14:55,572 --> 00:14:57,331
+Y'ye göre integral edelim.
+
+32
+00:15:12,052 --> 00:15:38,751
+Dolayısıyla, şu tek katlı integralde elde ettiğimiz fi y fonksiyonunun y'ye göre integrasyonunu alırsak, bize integral y eşittir c'den d'ye, iç parantez, fi y'ye yerine yazarsak, integral x eşittir a'dan d'ye, fx'ye,
+
+33
+00:15:41,299 --> 00:15:50,679
+x fonksiyonunun, bakın buraya pi y'yi yazdım, pi y fonksiyonunun, pardon burası.
+
+34
+00:16:01,652 --> 00:16:06,652
+Dostuyoruz gibi, bu bize katlı integrali verir. Benzer şekilde eğer...
+
+35
+00:16:42,292 --> 00:16:58,192
+X'e ve Y'ye bağlı bir fonksiyondur. Fonksiyon Y'ye göre, integrasyonunu aldığımda, Y'nin sınırları, C'den D'ye, sabit sayıları yerine koyduğumda, bunun sonucu, X'e bağlı bir fonksiyon olarak ortaya çıkar.
+
+36
+00:16:59,552 --> 00:17:02,932
+Bu, benzer şekilde...
+
+37
+00:17:02,932 --> 00:17:09,291
+Bakın burada mesela, A'dan B'ye aldık. Burada, C'den D'ye...
+
+38
+00:17:09,440 --> 00:17:10,820
+Alacağız, buraya dikkat edin.
+
+39
+00:17:12,900 --> 00:17:24,019
+Bir dikdörtgensel bölgede, yani ABCD bölgesinde, bu dikdörtgensel bölgede tekrar integralini alayım.
+
+40
+00:17:26,000 --> 00:17:30,820
+Bakın, bu integrasyon, bu integral, bana bir fonksiyon verir.
+
+41
+00:17:30,820 --> 00:17:35,059
+Bu fonksiyonun integralini alırsam, integral,
+
+42
+00:17:35,923 --> 00:17:47,243
+x eşittir, a'dan b'ye, tx, dx integralini alırsam, aslında bu integralde, integrasyon,
+
+43
+00:17:50,996 --> 00:17:58,476
+fx'ye yazarsam integral fx'ye d'ye
+
+44
+00:18:01,715 --> 00:18:04,755
+fonksiyonunu x'e göre integralini alacağız.
+
+45
+00:18:06,615 --> 00:18:11,155
+Bu integrallere tekrarlama yoluyla integral diyoruz.
+
+46
+00:18:11,275 --> 00:18:12,975
+Tekrarla integral diyoruz.
+
+47
+00:18:14,455 --> 00:18:18,735
+Peki ne zaman bu integraller birbirine eşit olur?
+
+48
+00:18:19,556 --> 00:18:23,695
+Dolayısıyla tekrarla integrallerin birbirine eşit olması demek,
+
+49
+00:18:25,056 --> 00:18:27,335
+iki farklı açıdan yaklaştığımızda,
+
+50
+00:18:28,051 --> 00:18:34,951
+Tekrarlı integrallerin birbirine eşit olması, bize aynı zamanda işlem kolaylığı sağlayacak.
+
+51
+00:18:35,652 --> 00:18:40,831
+Eğer x'e göre integre edemiyorsam, y'ye göre integre edebilmem lazım.
+
+52
+00:18:41,351 --> 00:18:44,331
+Tabi orada sınırları da değiştirmek gerekecek.
+
+53
+00:18:45,152 --> 00:18:49,331
+y'ye göre integre edemiyorsam, x'e göre integre etmem gerekir.
+
+54
+00:18:50,152 --> 00:18:54,231
+Tabi yine orada da sınırlarda ufak değişiklikler yapacağım.
+
+55
+00:18:54,900 --> 00:18:57,840
+Buna, integrasyon sırasını değiştirme diyeceğiz.
+
+56
+00:18:58,539 --> 00:19:03,000
+Şimdi, tekrarlı integrallerle ilgili bir teorem ifade edeceğim.
+
+57
+00:19:12,564 --> 00:19:14,744
+Fubini teoremi diyeceğiz.
+
+58
+00:19:16,584 --> 00:19:19,644
+Fubini teoremi, şunu ifade ediyor.
+
+59
+00:19:50,195 --> 00:19:54,355
+CD şeklinde tanımlanmış bir dikdörtgensel bölge olsun.
+
+60
+00:19:54,355 --> 00:19:58,096
+Ve bu bölgede, yani bu dikdörtgende,
+
+61
+00:20:04,115 --> 00:20:05,536
+İntegre edilebilir olsun.
+
+62
+00:21:07,251 --> 00:21:13,011
+Bölgesi olan bir dikdörtgensel bölgede tanımlanmış bir F fonksiyonu almış.
+
+63
+00:21:14,791 --> 00:21:24,451
+Ve dikdörtgensel ABCD bölgesinde bu fonksiyonun integre edilebilir olduğunu söylüyor.
+
+64
+00:21:29,236 --> 00:21:39,236
+Bu takdirde,
+
+65
+00:23:11,859 --> 00:23:14,919
+tx eşittir, c'den d, fx'e d y fonksiyonu.
+
+66
+00:23:15,460 --> 00:23:25,319
+Aslında yeni bir fonksiyon tanımıyorum ama bu fonksiyonun sonuçta integralini aldığımda x'e bağlı bir fonksiyon elde edeceğimi görüyorum.
+
+67
+00:23:25,460 --> 00:23:36,259
+Çünkü y'nin sınırları sabit sayılar, onları y'nin sınırlarını yerine koyduğumda elde edilen fonksiyon x'e bağlı bir fonksiyon olarak elde edilmiş olacak arkadaşlar.
+
+68
+00:23:36,459 --> 00:23:37,199
+Buraya dikkat edin.
+
+69
+00:23:37,199 --> 00:23:38,199
+Burada.
+
+70
+00:23:39,412 --> 00:23:42,572
+fx'ye fonksiyonu, x'e ve y'ye bağlı bir fonksiyon.
+
+71
+00:23:43,672 --> 00:23:50,672
+y'ye göre integre ettiğimde, y'nin sınırlarını yerine verdiğimde, bu x'e bağlı bir fonksiyon çıkartacak.
+
+72
+00:23:51,152 --> 00:23:54,451
+Dolayısıyla bu integral, x'e bağlı bir integraldir.
+
+73
+00:23:54,451 --> 00:24:03,660
+Bu koşullar altında, fx şeklinde tanımlı fonksiyonu,
+
+74
+00:24:16,019 --> 00:24:16,800
+Un elemek
+
+75
+00:25:06,067 --> 00:25:08,507
+Bu benim teoreme, bana bunu söylüyor.
+
+76
+00:25:13,428 --> 00:25:25,807
+Yani bu cd'ye dörtgeninde, integre edilebilir bir fonksiyon aldığında, ab'de sabitlenmiş her x için, cd'de y'ye göre integre edilebilir ise, tx eşittir.
+
+77
+00:25:27,208 --> 00:25:37,968
+Bu integrasyonu, x'e bağlı bir fonksiyon olarak elde ediyorum. Dolayısıyla, bu şekilde tanımlı fonksiyon, ab'de de integre edilebilirdir.
+
+78
+00:25:37,968 --> 00:25:38,928
+Dolayısıyla,
+
+79
+00:25:39,476 --> 00:25:41,476
+bu katlı integral elde edebilirim.
+
+80
+00:25:44,476 --> 00:25:45,476
+Bu ne anlama gelir?
+
+81
+00:26:10,612 --> 00:26:27,112
+AB'de sabitlenmiş Y'ye göre, AB'de integral edilebilir, AB'de X'e göre integral edilebilir, TY fonksiyonlarını alırsam, yine aldığım fonksiyon, CD'de integral edilebilir olacak.
+
+82
+00:26:28,112 --> 00:26:38,052
+Dolayısıyla, bunu da ifade edersem, sonuç olarak bu teoremden ve diğer şekilde ifade edebileceğim teoremden,
+
+83
+00:26:38,996 --> 00:27:06,056
+İkisini birleştirip, bir sonuç elde edersen, tekrarlı integrasyonu çıkartmış olur. O da şu anlama gelir. Yani, a'dan b'ye, c'den d'ye, fx'ye, d'ye dx, eşittir. İntegral, c'den d'ye, integral.
+
+84
+00:27:06,644 --> 00:27:12,884
+A'dan B'ye, Fx'ye, Tx'ye eşittir.
+
+85
+00:27:23,251 --> 00:27:40,411
+Bakın arkadaşlar, buraya dikkat edin. Burada ne yaptım ben? C'den D'ye, Y'ye göre alınan integrasyonla, A'dan B'ye, X'e göre alınan integrasyonun, bakın sıraları değişti. Bu şekilde sıralarını değiştirmen mümkün oluyor.
+
+86
+00:27:52,243 --> 00:28:03,123
+ve cd'de sabitlediğim y için x'e göre ab aralığında integre edebiliyorsam fonksiyonu, bu iki integral birbirine eşittir.
+
+87
+00:28:03,963 --> 00:28:14,903
+Dolayısıyla, bir aralıkla tamamlı sürekli bir fonksiyon için, integre edebileceğim bir fonksiyon için, iki katlı integralin birbirine eşit olması demek,
+
+88
+00:28:15,215 --> 00:28:21,935
+Benim aslında bölgede integrasyonun sınırlarını değiştirebileceğim ve rahatlıkla hareket edebileceğim anlamda gelir.
+
+89
+00:28:22,895 --> 00:28:31,955
+Yani önce fx'ye d'ye hesaplayıp bu fonksiyon kolaysa x'e göre integral alırım.
+
+90
+00:28:32,955 --> 00:28:40,975
+Önce eğer bu zorsa önce x'e göre integral alıp a'dan b'ye bölgesinde
+
+91
+00:28:41,491 --> 00:28:46,632
+Ben sonra y'ye göre integral alabilirim. Bir örnekle bunu açıklayalım.
+
+92
+00:28:51,476 --> 00:28:56,716
+1 dikdörtgensel bölgede bu niyetin önemine bir örnek yapalım.
+
+93
+00:28:59,516 --> 00:29:03,136
+Şimdi bu örnekte arkadaşlar şunu göreceğiz.
+
+94
+00:29:03,136 --> 00:29:03,716
+0, 1.
+
+95
+00:29:04,476 --> 00:29:09,816
+Hangi integrasyonuz olursa onun sınırlarını değiştirerek integralı çözeceğiz.
+
+96
+00:29:10,336 --> 00:29:10,896
+2, 5.
+
+97
+00:29:11,336 --> 00:29:12,196
+İlk dörtgenini.
+
+98
+00:29:20,243 --> 00:29:21,023
+fonksiyonlar.
+
+99
+00:29:24,948 --> 00:29:30,928
+Bu fonksiyonun bu dikdörtgensel bölge üzerinde katlı integraline al.
+
+100
+00:29:39,251 --> 00:29:39,751
+Altı'ya.
+
+101
+00:29:54,740 --> 00:30:02,740
+Burada x artı y yerine x kare artı y, x kare artı x ye gibi polinomlar olsaydı, onlar da integre edebilirdim.
+
+102
+00:30:02,820 --> 00:30:05,259
+Bir polinom fonksiyonudur ve orada integre edilebilirdir.
+
+103
+00:30:06,139 --> 00:30:13,279
+Bu integre edilebilir bir fonksiyon olduğuna göre, ilk olarak px'i hesaplayayım.
+
+104
+00:30:14,079 --> 00:30:21,599
+px fonksiyonum benim, y eşittir 2'den 5'e.
+
+105
+00:30:22,324 --> 00:30:24,504
+x artı y, d y.
+
+106
+00:30:27,504 --> 00:30:37,184
+Gördüğünüz gibi, y'ye göre integral alıp, y'nin sınırlarını yerine koyduğumda, x'ler kalacak. Dolayısıyla, x'e bağlı bir fonksiyon elde edeceğim.
+
+107
+00:30:38,524 --> 00:30:49,084
+Bu integral'i alırsam, x, y artı, y kare bölü 2, y'nin sınırları 2'den,
+
+108
+00:30:49,556 --> 00:30:51,135
+5'e kadar olacak.
+
+109
+00:30:53,816 --> 00:30:55,076
+Bu integral aldığımda,
+
+110
+00:30:56,296 --> 00:30:57,476
+px fonksiyonu,
+
+111
+00:30:58,276 --> 00:30:59,316
+tabi x'e bağlı,
+
+112
+00:31:00,536 --> 00:31:02,396
+yeni sıralarını yerine yazayım.
+
+113
+00:31:03,076 --> 00:31:04,755
+5x artı,
+
+114
+00:31:04,755 --> 00:31:06,976
+25 bölü 2,
+
+115
+00:31:06,976 --> 00:31:07,976
+eksi,
+
+116
+00:31:09,936 --> 00:31:12,976
+2x artı,
+
+117
+00:31:13,396 --> 00:31:14,655
+4 bölü 2.
+
+118
+00:31:15,155 --> 00:31:41,955
+şeklinde elde edelim. 5-2x'den, 3x gelir, 25-4 bölü 2'den, 21 bölü 2 elde edelim. 3x artı, 21 bölü 2. Bakın bu zaten çözülebilen bir integraldi. x artı y'yi x'e göre aldık. x artı y'nin x'e göre integralini aldığımızda, x artı y'nin x'e göre integralini x.
+
+119
+00:31:53,652 --> 00:32:09,511
+x kare bölü 2 artı x'ye dy oluyor. Ama biz burada ne yaptık? Bakın y'iştir 2'den 5'e kadar x artı y'nin y'ye göre integralini aldık. Bunu bir fi x fonksiyonu olarak hesaplamış olduk arkadaşlar.
+
+120
+00:32:27,059 --> 00:32:32,519
+İki kat integral, r bölgesinde fx'ye, dx, d'ye,
+
+121
+00:33:36,884 --> 00:33:54,403
+fonksiyonuna göre, integral alırsam, tx'i 3x artı 21 bölü 2 olarak elde ettim. 3x artı 21 bölü 2'nin x eşittir, sıfırdan bira sınırlarında, x'e göre integralini alacağım.
+
+122
+00:33:56,003 --> 00:33:57,264
+Tekrar integral alırsam,
+
+123
+00:34:00,852 --> 00:34:08,291
+3 x kare bölü 2 artı 21 bölü 2 x olarak entegreyle alın.
+
+124
+00:34:09,072 --> 00:34:14,672
+x'i 0'dan 1'e verdiğimde, sınır 0 için 0 olacaktır.
+
+125
+00:34:15,632 --> 00:34:26,791
+1 için 21 bölü 2 artı 3 bölü 2 den 24 bölü 2 olacaktır.
+
+126
+00:34:27,072 --> 00:34:30,492
+ve buradan 12 olarak elde edelim.
+
+127
+00:34:31,572 --> 00:34:37,852
+Peki, bu integrasyonu ben tx fonksiyonuna göre yaptım.
+
+128
+00:34:38,652 --> 00:34:45,912
+Ve şunu söyledim, bu polinom fonksiyonu olduğu için Fugino teoreminin sonucunu sağlayacaktı.
+
+129
+00:34:47,271 --> 00:34:54,492
+Eğer pi y'ye göre yaparsam, ya da ilk olarak y'ye göre integrasyon alırsam anlamına geliyor bu.
+
+130
+00:34:54,996 --> 00:35:01,695
+Sonuç ne çıkacak? Şimdi ona bakalım. Burada x yerine y alacağım.
+
+131
+00:35:21,748 --> 00:35:23,547
+eşit olduğunu göstermeye çalışıyorum.
+
+132
+00:35:25,188 --> 00:35:26,188
+Ki y fonksiyonu
+
+133
+00:35:32,436 --> 00:35:38,256
+oradan biri, x artı y, ve x alacağım.
+
+134
+00:35:41,652 --> 00:35:49,831
+Sıfırdan biri, sabit sayılar. Bu integral alıp x'in sınırlarını yerine koyduğunda, x'ler elimine edilmiş, yok edilmiş olacak.
+
+135
+00:35:50,532 --> 00:35:53,652
+y'ye bağlı bir fonksiyon elde etmiş olacağım.
+
+136
+00:35:54,072 --> 00:35:56,532
+fi'ye fonksiyonunu elde etmiş olacağım.
+
+137
+00:35:57,572 --> 00:35:58,592
+fi'ye fonksiyonu
+
+138
+00:36:02,708 --> 00:36:03,408
+integral oldu.
+
+139
+00:36:42,579 --> 00:36:47,480
+Bu fonksiyonun y'ye göre integralini alırsam, bakalım aynı sonucu elde edecek mi?
+
+140
+00:36:49,940 --> 00:36:58,480
+2 kat integral, r bölgesinde x artı y, dx d'ye, integralim,
+
+141
+00:37:36,083 --> 00:38:00,643
+5'e alırsam, ve değerleri yerine koyarsam, 5 bölü 2 artı, 25 bölü 2 eksi, 2 bölü 2 artı, 2'nin karesi, 4 bölü 2. Dolayısıyla, 30 bölü 2 eksi, 30 bölü 2 eksi, 6 bölü 2'den,
+
+142
+00:38:01,652 --> 00:38:07,072
+Gördüğünüz gibi m5, 15-3'den, burası 12 olarak elde edilir.
+
+143
+00:38:07,771 --> 00:38:26,692
+Yani, iki kat integral, x'in sınırları, 0'dan 1'e, x artı y, dx, dy, y eşittir 2'den 5'e, bu dikdörtgensel bölgede, x artı y, dx, dy,
+
+144
+00:38:28,403 --> 00:38:45,384
+x artı y'ye integre edilebilir bir fonksiyon olduğu için, bu bölgede x eşitli sıfırdan 1'e, y eşittir 2'den 5'e, x artı y'ye, d'ye dx integraline eşit olarak elde edilir.
+
+145
+00:38:45,384 --> 00:38:46,884
+Bu Bini teoreminde,
+
+146
+00:38:47,248 --> 00:38:54,248
+Biz bu iki katlı integralin, bu iki adet iki katlı integralin birbirine eşit olduğunu göstermiş olduk.
+
+147
+00:38:54,248 --> 00:38:59,115
+Sıralama değiştiğinde, integralin değeri aynı bulmuş.
+
+148
+00:39:02,996 --> 00:39:21,716
+Katlı integrallerde, Kuguny'e teoremi bu şekilde bize, dikdörtgensel bir bölgede, iki katlı integralin, önce x'e göre ya da önce y'ye göre integral aldığımızda, iki türlü iki katlı integralin, birbirine eşit olduğu sonucunu verir.
+
+149
+00:39:32,692 --> 00:40:00,000
+elde ettik. İkinci olarak, x'e göre integral alıp, tiye fonksiyonunu elde ettik. tiye'nin y'ye göre integralini aldık. tx'in x'e göre integralini aldık. Aslında bu iki integral, katlı integralin, iki adet tekrarlı katlı integralin ifadesiydi. Çünkü, ilk adet,
+
+150
+00:40:00,000 --> 00:40:05,480
+İlk aldığım katlı integral, ilk aldığım normal integralin sonucu bana bir fonksiyon veriyor.
+
+151
+00:40:06,079 --> 00:40:13,559
+Ve eğer o fonksiyon bölgede integre edilebilir bir fonksiyonsa, sıralamanın çok da önemi kalmıyor.
+
+152
+00:40:14,519 --> 00:40:25,640
+Dolayısıyla ben bir etiksiyel fonksiyonu için x sınırları ve y sınırları değiştiğinde
+
+153
+00:40:27,315 --> 00:40:32,815
+Önce y'ye göre integral alıp, daha sonra x'e göre integral alıp hesap yapabilirim.
+
+154
+00:40:33,135 --> 00:40:38,635
+Ya da önce x'e göre integral alıp, sonra y'ye göre integral alabilirim.
+
+155
+00:40:39,076 --> 00:40:49,595
+Ancak burada dikkat etmemiz gereken konu, y'nin sınırları, eğer burada dy varsa, y'nin sınırlarını,
+
+156
+00:40:51,155 --> 00:40:57,376
+yerine koymamız gerekiyor. Eğer burada dx arsa, x'in sınırlarını yerine koymamız gerekiyor.
+
+157
+00:40:58,496 --> 00:41:03,016
+Farklı durumlarda, integrasyon sırasının değiştirilmesi durumlarında,
+
+158
+00:41:05,456 --> 00:41:17,395
+dikdörtgensel bölge değil de, iki fonksiyonun farkı olarak ya da bir doğrudan bir fonksiyona kadar giden bölgede, eğrisel bölgelerde, farklı bölgelerde,
+
+159
+00:41:17,907 --> 00:41:20,927
+katlı integralleri alacağız ve sıralarını değiştireceğiz.
+
+160
+00:41:22,007 --> 00:41:30,167
+Fubini teoremin de, burada ifade ettiğim Fubini teoremi, sadece dikdörtgensel bölgelerdeki integrasyon için geçerli.
+
+161
+00:41:31,108 --> 00:41:36,067
+Şimdi, Fubini teoreminin bir de kapsamlı şekli var, ona geçelim.
+
+162
+00:41:36,688 --> 00:41:44,307
+Fubini teoremi normalde, aslında iki katlı integrallerde, zorlu integrallerin hesabında işimize yarıyor.
+
+163
+00:41:44,916 --> 00:41:49,816
+Dolayısıyla onu görmeniz önemli. Katlı integrallerde çok çıçkı.
+
+164
+00:41:49,816 --> 00:42:01,016
+Bir teoremini tanımlamıştık. Bu biniteoreminde bizim yaptığımız şey, bir dörtgensel bölgede tanımlı katlı integralin hesabında px fonksiyonunu tanımlamıştık.
+
+165
+00:42:01,016 --> 00:42:04,751
+Ve bu px fonksiyonunun integralini aldığımızda...
+
+166
+00:42:04,751 --> 00:42:22,931
+Eğer bölgede uygun koşullar sağlandığında, sürekli türev ve teoremin gerektiği koşulları sağlandığında, biz o bölgede iki türlü de integral alabileceğimizi, dolayısıyla aslında katlı integralin katları arasında geçişin sağlanabileceğini göstermiştik.
+
+167
+00:42:27,668 --> 00:42:33,628
+x'e göre aldığımız integral ile y'ye göre aldığımız integralin sırasının değişebilmesi demek aslında.
+
+168
+00:42:34,887 --> 00:42:38,328
+Bir kısımla ilgili arkadaşlar, bugün teoreminin ilgili sorusu olan var mı?
+
+169
+00:42:40,668 --> 00:42:41,467
+Değil mi?
+
+170
+00:42:41,807 --> 00:42:47,307
+Aslında zaten o çok kolaydı. Yani kolay bir fonksiyonun integralini aldık.
+
+171
+00:42:47,608 --> 00:42:52,108
+Burada biraz daha zor fonksiyonların katlı integrasyonları nasıl yapılır onu göreceğiz.
+
+172
+00:42:52,108 --> 00:42:54,988
+Sırayı değiştirdiğimiz zaman biz eğer...
+
+173
+00:42:55,251 --> 00:43:02,311
+İlk integrali, birinci sıradaki integrali alamıyorsak, ikinci sıradaki değişkene göre integral alabiliriz demektir.
+
+174
+00:43:02,891 --> 00:43:16,172
+Yani x'e göre alınamayan, ya da y'ye göre alınamayan bir integrali, diğer değişkene göre, x'e göre integral edemiyorsak, sırayı değiştirip y'ye göre integral edebiliriz fonksiyonu, integrali.
+
+175
+00:43:16,172 --> 00:43:22,943
+Dolayısıyla, eğer ben elementer fonksiyonlarla ifade edilemeyecek...
+
+176
+00:43:22,943 --> 00:43:46,184
+İçimde bir integrale sahipsen, mesela zor bir fonksiyon varsa elimde, yani integralinin alınmasında zorlandığım bazı fonksiyonlar vardı. Her integrali alamıyorum. Bazı integraller alınabiliyor kolaylıkla, ama bazı integrallerin alınmasında zorluk çekiyorum. Başka türlü hesaplamalar gelebiliyor. Basit olmuyor integralin hesabı.
+
+177
+00:43:46,739 --> 00:43:51,239
+Mesela kare köklü ifadelerin integrasyonlarında falan zorlanıyordu hatırlarsanız.
+
+178
+00:43:51,819 --> 00:44:03,859
+Integral konusunu işlerken, kare köklü ifadelerin integrasyonlarında ve bazı fonksiyonların, üstel fonksiyonların mesela, logaritmik fonksiyonların integrasyonlarında zorlandığımız oluyordu.
+
+179
+00:44:03,859 --> 00:44:06,859
+Ama bu fonksiyonların içini...
+
+180
+00:44:07,603 --> 00:44:18,884
+du'ya, dv'ye veya kısmi integrasyona dönüştürebildiğimiz durumlarda, biraz olsun integrasyonu daha kolaylıkla integre edebildiğimiz durumlar vardı.
+
+181
+00:44:19,263 --> 00:44:26,183
+Ama bazen kısmi integrasyon vesaire de kurtarmıyordu. Bu tür durumlarda, bu binite oran bize kolaylık sağlıyor.
+
+182
+00:44:26,523 --> 00:44:30,323
+İntegrasyon sırasını değiştirerek, biz bu...
+
+183
+00:44:30,323 --> 00:44:32,183
+Bazı integraller var arkadaşlar.
+
+184
+00:44:32,655 --> 00:44:36,155
+Bunları kısmi integrasyonla yapsanız, çözemeyebiliyorsunuz.
+
+185
+00:44:36,976 --> 00:44:42,315
+Yani e üzeri x'e ve y'ye bağlı bir fonksiyon integralini almanız mümkün değil.
+
+186
+00:44:43,516 --> 00:44:48,036
+Eksponansiyel e üzeri bir integrali almak mümkün değil.
+
+187
+00:44:48,115 --> 00:44:52,275
+Ya da sin x bölü x şeklinde farklı versiyonlarda integraller var.
+
+188
+00:44:52,715 --> 00:44:54,016
+Bunların alınması mümkün değil.
+
+189
+00:44:54,016 --> 00:44:55,016
+Ama...
+
+190
+00:44:56,480 --> 00:45:14,480
+Bir değişken, bir fonksiyonun bir parçası x'e bağlı, bir parçası y'ye bağlıysa, önce x'e ya da önce y'ye bağlı aldığımızda, burada biraz daha integrale zorluktan paçasını kurtarmamız mümkün.
+
+191
+00:45:14,699 --> 00:45:15,559
+Şimdi burada onu göreceğiz.
+
+192
+00:45:15,559 --> 00:45:23,900
+Basitçe integralini alamadığımız, elementar fonksiyonlarla ifade edemediğimiz integralleri almakta kolaylık.
+
+193
+00:45:26,003 --> 00:45:39,824
+sağlıyor Fubini teoremin. Şimdi, Fubini teoreminin, dörtgensel bölgede ifade ettiğimiz Fubini teoreminin, bir de dikdörtgensel olmayan, daha kapsamlı olan şeklini ifade edeceğim.
+
+194
+00:45:42,583 --> 00:45:52,104
+Tabii ki z eşittir, fx'ye fonksiyonu ile başlıyorum. Z eşittir, fx'ye fonksiyonu olan. Bu fonksiyon, bir,
+
+195
+00:45:53,139 --> 00:45:54,300
+R bölgesinde
+
+196
+00:45:58,164 --> 00:46:01,664
+Bir R bölgesinde, pozitif ve sürekli olsun.
+
+197
+00:46:02,444 --> 00:46:05,644
+Arkadaşlar, bu videoların bir kısmını ödev olarak da attım size.
+
+198
+00:46:06,344 --> 00:46:23,963
+Eğer sınavlarınız varsa, çok vaktiniz yoksa, buradan ayarlardan çalma hızını 2'ye çıkartarak, mesela 1.75'e çıkartarak, böyle hızlı bir şekilde ilerleterek izlemeniz mümkün arkadaşlar.
+
+199
+00:46:26,643 --> 00:46:50,643
+Şimdi tabii normal yapacağım. Eğer internet bağlantınızda problemleriniz varsa, yani 3G'den bağlanıyorsunuz, 4.5G'den bağlanamıyorsunuz ya da hani bulunduğunuz mevkinin internet kalitesi düşük, internetsiz düşükse burada kalite ayarlarından arkadaşlar, 144P'yi seçerek mesela biraz daha kötü bir görüntü ama en azından...
+
+200
+00:46:51,284 --> 00:47:16,203
+Az da olsa bir şeyler var. Ya da, 240p'yi seçerek, biraz daha kaliteli bir görüntü. Hani 144p'de, video çekilmiş falan diyorlar ya, en düşük kalite. En düşük kalitelerde, ben 720p'de açıyorum tabii ki. Düşük kalitelerde izleyerek, hani internetiniz yavaşsa, yüklenme sorunlarını bu şekilde açabilirsiniz arkadaşlar.
+
+201
+00:47:18,387 --> 00:47:21,407
+Zamanınız yoksa hızlı da izleyebilirsiniz.
+
+202
+00:47:22,287 --> 00:47:26,747
+Fx'e fonksiyonu bu bölgede pozitif ve sürekli olacak.
+
+203
+00:47:28,667 --> 00:47:35,067
+İse R ile, R bölgesi, x'e bir bölge aldım.
+
+204
+00:47:35,507 --> 00:47:39,407
+Bu R ile z eşittir, fx'e fonksiyonu ne yapıyordu?
+
+205
+00:47:39,947 --> 00:47:44,188
+Bir, z tüzleminde bir yüzey belirliyordu.
+
+206
+00:47:44,884 --> 00:47:48,423
+Z-Eşitör, FX'ye, yüzeye arasındaki bölgenin
+
+207
+00:47:53,940 --> 00:47:54,760
+Ülgenin
+
+208
+00:48:02,867 --> 00:48:09,728
+katlı integral, R bölgesinde, F, X, Y, D, A.
+
+209
+00:48:10,987 --> 00:48:15,407
+Şimdi, Riemann toplamında, bunu gösterdik.
+
+210
+00:48:16,307 --> 00:48:22,087
+Bir R bölgesi, X, Y düzeninde bir bölge alalım.
+
+211
+00:48:30,036 --> 00:48:38,355
+Bu bölgeyi z ekseninde bir yüzeye alın. Z eşittir, fx'ye fonksiyonunu alayım.
+
+212
+00:48:40,596 --> 00:48:46,916
+Buradaki alanı biman toplamıyla ve normal integral hesabıyla hesaplayabiliyor.
+
+213
+00:48:46,916 --> 00:48:56,796
+Benzer şekilde eğer fx'yeye göre integral alırsam, buradaki 3 boyutlu dikdörtgen,
+
+214
+00:48:57,364 --> 00:49:12,304
+3 boyutlu dikdörtgenler krizmalarının sonlu toplamını alıp, n tanesinin ya da m tanesinin sonlu toplamını alıp, o n ve m'i sonsuza götürdüğümde, oradaki bölgenin hacmini hesaplayabilirim.
+
+215
+00:49:13,163 --> 00:49:14,423
+Bu, bunu ifade ediyor.
+
+216
+00:49:16,264 --> 00:49:19,083
+Şimdi, bunu biraz daha açayım.
+
+217
+00:49:53,235 --> 00:49:54,096
+İyi ise
+
+218
+00:49:57,684 --> 00:50:11,804
+Y2x fonksiyonlar arasında alayım. Yani Y, 2 fonksiyon arasında olacak. 2 eğri arasında olacak. Artık bir dörtgensel bölge değil, bakın, dikkat edin. 2 doğru arasında değil, 2 fonksiyon arasında bir bölge tanımlıyorum.
+
+219
+00:50:18,132 --> 00:50:24,012
+Ve bu bölgede, bir, ax fonksiyonu tanımlayın.
+
+220
+00:50:25,811 --> 00:50:37,132
+Ax fonksiyonu, y eşittir g1x'den, y eşittir y2x'e kadar, integrasyon olsun ve,
+
+221
+00:50:42,739 --> 00:50:45,059
+X'ye, D'ye olur.
+
+222
+00:50:46,419 --> 00:50:50,619
+Bu bana, o bölgedeki kesit alanını verir.
+
+223
+00:50:51,739 --> 00:50:52,659
+Şöyle ki,
+
+224
+00:50:59,027 --> 00:51:07,367
+ve bu bölgedeki kesit alanının dolayısıyla, a'dan b'ye integralini alırsam, komple hacmi hesaplıdırlar.
+
+225
+00:51:08,367 --> 00:51:12,627
+Şöyle ki, diyelim ki, x'ye düzleme,
+
+226
+00:51:17,300 --> 00:51:21,840
+x eşittir a doğrusundan x eşittir.
+
+227
+00:51:25,364 --> 00:51:39,963
+kısma alalım. Bir de y eşittir, y bir x'ten, y iki x'e kadar olan kısma alalım. Bunların kesişimi, bana bir bölge verecek.
+
+228
+00:51:40,564 --> 00:51:51,224
+y eşittir, y bir x fonksiyonundan, bakın bu bir fonksiyon artık, bu fonksiyonundan, bu fonksiyona kadar olan bölgeyi alıyorum. Şöyle, bir fonksiyon şekli isteyim.
+
+229
+00:51:51,731 --> 00:51:53,351
+Bunu da biraz daha açık çizeyim.
+
+230
+00:51:55,492 --> 00:51:58,492
+Bakın böyle bir bölge olsun mesela.
+
+231
+00:51:59,851 --> 00:52:00,412
+Dolayısıyla,
+
+232
+00:52:03,211 --> 00:52:04,391
+z eksenini de alırsam,
+
+233
+00:52:05,231 --> 00:52:05,672
+ve burada,
+
+234
+00:52:06,771 --> 00:52:08,292
+bir yüzey alayım.
+
+235
+00:52:11,827 --> 00:52:37,827
+Bu z eşittir fx'ye fonksiyonunun, z eşittir fx'ye yüzeyinin, bu bölgeye tekabül eden kısmını alayım. Mesela şurası olsun. Şurası bu bölgeye tekabül etsin. Bu bölgede, integrasyon alacağım çünkü. Dolayısıyla, bu arada kalan kısmı,
+
+236
+00:52:39,123 --> 00:52:47,123
+Yani, g1x'den g2x'e kadar olan kısım, bir ax kesit alanını verecek bana.
+
+237
+00:52:47,943 --> 00:52:58,903
+Çünkü ben burada, g1x'den g2x'e kadar integral alıyorum, ve f fonksiyonuna göre, fx'ye fonksiyonuna göre bir integral oluyor.
+
+238
+00:52:59,463 --> 00:53:02,083
+Dolayısıyla bana bu kesit alanını verir.
+
+239
+00:53:02,675 --> 00:53:20,115
+Eğer bu kesit alanını, yani y1x'den y2x'e kadar olan kısmı, z eşit f eşit ye göre integralini alıp, ben bunu x eşittir a'dan b'ye kadar integralini alırsam, onu da şöyle alıyorum.
+
+240
+00:53:23,731 --> 00:53:27,891
+Görsel olarak, dolayısıyla, sadece kesit alanını aldım.
+
+241
+00:53:29,511 --> 00:53:41,532
+Y'eştir G1x'den, Y'eştir G2x'e kadar olan, x'ye düzlemindeki bölgenin, Z eşittir Fx'ye göre integralini alırsam, bu arada kesit alanını almış olurum.
+
+242
+00:53:42,131 --> 00:53:43,452
+Ve bu kesit alanının da,
+
+243
+00:53:47,092 --> 00:53:52,132
+Bu kesit alanının da, yani AX'in de,
+
+244
+00:53:57,492 --> 00:53:59,492
+Kesit alanını
+
+245
+00:54:00,932 --> 00:54:02,932
+A-ips
+
+246
+00:54:02,932 --> 00:54:03,932
+verir.
+
+247
+00:54:04,432 --> 00:54:06,156
+Ve kesit alanını
+
+248
+00:54:12,052 --> 00:54:17,231
+x eşittir a'dan, x eşittir b'ye kadar.
+
+249
+00:54:21,043 --> 00:54:21,764
+İnteklendir.
+
+250
+00:54:29,139 --> 00:54:35,279
+x eşittir b'ye kadar ax, dx şeklinde integralini alırım bunu.
+
+251
+00:54:36,019 --> 00:54:40,679
+x eşittir a'dan, x eşittir b'ye kadar ax fonksiyonunun integralini alıyorum.
+
+252
+00:54:40,679 --> 00:54:55,439
+Yani ax fonksiyonu o kesit alanını veriyor. Ben o kesit alanını x eşittir a'dan, şöyle x eşittir a'dan, x eşittir b'ye kadar integralini alıyorum x'e göre, dx'e göre.
+
+253
+00:54:56,916 --> 00:55:00,416
+Bu da ne demektir? x eşittir a'dan b'ye.
+
+254
+00:55:01,695 --> 00:55:03,735
+ax fonksiyonunu yerine yazayım.
+
+255
+00:55:04,115 --> 00:55:05,516
+ax'ı nasıl tanımlamıştım?
+
+256
+00:55:06,076 --> 00:55:18,056
+ax'ı y eşittir g1x'den, y eşittir g1x'den, g2x'e kadar, fxy, dy şeklinde tanımlamıştım.
+
+257
+00:55:19,436 --> 00:55:21,016
+Bu integralim dx'e göre.
+
+258
+00:55:21,588 --> 00:55:37,807
+Bakın, çift katlı integral'i elde ettim. Eğer ax'in x eşittir a'dan x eşittir b doğrusuna kadar olan kısmının integralini alırsam, çift katlı integral fx'ye d y d x'i elde edelim.
+
+259
+00:55:40,748 --> 00:55:48,688
+Bu da bana o kesit alanını x eşittir a'dan b'ye kadar olan bölge boyunca tarayarak,
+
+260
+00:55:48,980 --> 00:55:51,420
+hacmi elde edebileceğim anlamına gelir.
+
+261
+00:55:51,920 --> 00:55:56,760
+Şimdi arkadaşlar, integrasyon bize alanı veriyor.
+
+262
+00:55:57,539 --> 00:56:08,920
+Yani, x'ye kartezan koordinat düzeninde aldığım integrasyon, bana o bölgenin, o fonksiyonun, çizdiği bölgenin, oluşturduğu bölgenin alanını veriyor.
+
+263
+00:56:08,920 --> 00:56:13,239
+Hatta o eğrinin altında kalan alanı veriyor, diye tanımamıştık.
+
+264
+00:56:16,500 --> 00:56:26,319
+Daha sonra, önce bakın ilk kısmı taradığımızda, sonra diğer değişkene göre taradığımızda, bu sefer artık hacme ulaşıyoruz.
+
+265
+00:56:26,800 --> 00:56:31,960
+Yani biz katlı integral aslında bir bölgenin hacmini hesaplamak için kullanacağız.
+
+266
+00:56:32,380 --> 00:56:36,599
+Bakın hatırlayın, matbinin sonunda ne kullanmıştık?
+
+267
+00:56:37,172 --> 00:56:50,792
+Bir tane fonksiyon vardı, bir integral vardı ve bir bölgede döndürerek, döndürme yoluyla, silindir metoduyla, disk metoduyla hacim hesaplıyorduk.
+
+268
+00:56:51,091 --> 00:56:58,171
+Aslında onların hepsi birer iki katlı integral idi. Şöyle düşünün, oradaki ilk fonksiyon bir...
+
+269
+00:56:59,347 --> 00:57:05,347
+Başka fonksiyonun, yani y'ye bağlı bir fonksiyonun, integrasyonu gibi düşündüğümüz takdirde,
+
+270
+00:57:06,260 --> 00:57:30,659
+Normalde orada bir fonksiyon alıyorduk, onu döndürüyorduk, tekrar integral alıyorduk. Oraya dikkat edin bakın. Burada 3 boyutlu uzayı devreye kattığımız zaman, 3 boyutlu uzayı işin içine kattığımız zaman, 3. bir boyut eklendi ve dolayısıyla 3. boyut eklendiği için, önce bir değişkene göre sonra diğer değişkene göre integral aldığımız zaman, bize bu da hacmi verecek arkadaşlar.
+
+271
+00:57:41,523 --> 00:57:42,643
+Şimdiki bine, Taylor minne.
+
+272
+00:57:43,384 --> 00:57:43,844
+Hayatın.
+
+273
+00:57:49,619 --> 00:57:51,019
+sanını şekli diyorum.
+
+274
+00:57:53,159 --> 00:58:00,099
+Önceki ifade ettiğimiz kubini teoremi, dikdörtgensel bölgede daha basit bir teoremdi.
+
+275
+00:58:00,559 --> 00:58:02,539
+Sadece sınırlar, sabit sayılardı.
+
+276
+00:58:03,019 --> 00:58:06,919
+Sabit değerler bulduğum için integrali de zaten kolaylıkla alabiliyordum.
+
+277
+00:58:07,519 --> 00:58:12,319
+Ama burada eğrisel bir bölge, biraz daha karışık.
+
+278
+00:58:12,820 --> 00:58:18,940
+olarak düşünebileceğim. Yani fonksiyonlar olan, sınırları fonksiyonlar olan bir bölgeden bahsediyorum artık.
+
+279
+00:58:21,560 --> 00:58:22,940
+Fxy fonksiyonu
+
+280
+00:58:28,724 --> 00:58:30,028
+R bölgesinde sürekli
+
+281
+00:58:34,356 --> 00:58:35,076
+Bir koltuk.
+
+282
+00:58:59,699 --> 00:59:04,440
+G1x'i daha önceki tanımda aldığım tek değişkenli fonksiyonlar x'e göre.
+
+283
+00:59:05,739 --> 00:59:07,699
+A, B'de sürekli olsunlar bunlar.
+
+284
+00:59:09,919 --> 00:59:10,659
+A, B'de.
+
+285
+00:59:11,679 --> 00:59:16,139
+Yani G1x ve G2x fonksiyonlar A, B aralığında sürekli fonksiyonlar olsunlar.
+
+286
+00:59:16,579 --> 00:59:18,480
+Yani bu gerekli bir konusu zaten.
+
+287
+00:59:18,859 --> 00:59:22,460
+Fonksiyonun integralini almak için o aralıkta sürekli bir fonksiyon olması gerekiyor.
+
+288
+00:59:22,559 --> 00:59:26,839
+Sürekli fonksiyonun integralini ya da türevlerini almakta zorluk çekiyorum zaten.
+
+289
+00:59:27,635 --> 00:59:29,416
+AB'de sürekli olmak üzere
+
+290
+00:59:37,139 --> 00:59:49,779
+x'ler a ile b aralığında olsun ve y1x fonksiyonuyla y2x fonksiyonu arasındaki bölgeyi alayım.
+
+291
+00:59:49,779 --> 01:00:02,259
+Bu bölgede y1x ve y2x fonksiyonu sürekli fonksiyonla iki kat integral, r bölgesinde fx, y, d, a dediğim integral,
+
+292
+01:00:06,099 --> 01:00:14,819
+B'ye, G1x'den G2x'e, fx'ye,
+
+293
+01:00:20,052 --> 01:00:25,052
+Yani R bölgesini integral aldığımda, R bölgesini aldığım integral,
+
+294
+01:00:31,092 --> 01:00:41,972
+bölgeye göre aldığım fonksiyonun, fx'ye fonksiyonuna göre aldığım integral, a'dan b'ye, y1x'den y2x'e kadar, fx'ye, d'ye, dx şeklindedir.
+
+295
+01:00:41,972 --> 01:00:53,271
+Eğer r, bir de fıtoremin diğer ifadesi, burada bakın, y1x'den y2x'e kadar aldım y'nin sınırlarına.
+
+296
+01:00:53,556 --> 01:01:15,556
+Bunlar y'ye göre bakın. Burası x eşittir a'dan x eşittir b'ye, y eşittir g1x'den g2x'e. Peki, x'i bir fonksiyon olarak ifade edersek, yani normalde x'i'ye düzleminde fx şeklinde ve g1x şeklinde ve g2x şeklinde iki fonksiyon aldım. Peki ama...
+
+297
+01:01:16,884 --> 01:01:22,603
+Birincisi türev ve yy şeklindeyse, yani böyle fonksiyonlarsa nasıl yapacak? Şurada onu ifade edeyim bir de.
+
+298
+01:01:26,420 --> 01:01:30,139
+Fubin etenoreminin ilk kısmı bu şekilde, ikinci kısmı ise
+
+299
+01:01:34,356 --> 01:01:35,155
+Evet, evet.
+
+300
+01:01:39,572 --> 01:02:02,252
+bölgesinde, h1 ve h2 fonksiyonları, bunlar tabi x eşittir h1y, ve x eşittir h2y şeklinde tanımlanmış fonksiyonlar, bir cd aralığında, cd'de sürekli fonksiyonlar olsun. cd'de o zaman nerede? y ekseninde olacak.
+
+301
+01:02:04,972 --> 01:02:05,772
+Sürekli,
+
+302
+01:02:06,579 --> 01:02:07,480
+olmak üzere
+
+303
+01:02:14,931 --> 01:02:15,652
+İlham C'de,
+
+304
+01:02:21,715 --> 01:02:23,715
+Açık yer, arasın duruşun.
+
+305
+01:02:25,456 --> 01:02:26,115
+Bu arada tak.
+
+306
+01:02:32,371 --> 01:02:34,871
+bilet alanlı ise, bu takdirde,
+
+307
+01:02:38,804 --> 01:02:40,163
+integral fx'ye
+
+308
+01:02:40,163 --> 01:02:43,063
+d-a
+
+309
+01:03:05,139 --> 01:03:10,879
+İkisinin sınırları, h1y'den h2y'ye kadar olacak şekilde tamamlanmıştır fonksiyon.
+
+310
+01:03:11,239 --> 01:03:15,460
+Dolayısıyla, bu binite öremini bunu ifade eder.
+
+311
+01:03:16,960 --> 01:03:22,940
+Şimdi buna örnek olarak, hacim bulmayı gösterebilirsin.
+
+312
+01:03:23,339 --> 01:03:26,059
+Hacim bulmada, bu binite öremini kullanılır.
+
+313
+01:03:48,403 --> 01:03:51,563
+R²'de, xx'ini
+
+314
+01:04:22,164 --> 01:04:24,804
+z eşittir, fx'ye eşittir,
+
+315
+01:04:27,164 --> 01:04:31,144
+3x-y olan,
+
+316
+01:04:43,284 --> 01:04:47,963
+x'ye düzlemindeki kısmını göstereyim.
+
+317
+01:04:49,384 --> 01:04:50,784
+Nedir? x ekseni.
+
+318
+01:04:52,284 --> 01:04:53,463
+x ekseni bu.
+
+319
+01:05:13,588 --> 01:05:27,228
+x eşittir, x doğrusu. Bir de x eşittir, 1 doğrusu. x eşittir, 1 doğrusu. Bu birden geçen doğruluğuyla. Dolayısıyla burası da 1'e 1 noktası olacak değil mi?
+
+320
+01:05:31,860 --> 01:05:35,600
+eksiye düzlemindeki bölge bu şekilde. Z ekseni de nasıl?
+
+321
+01:05:39,827 --> 01:05:41,827
+Y, Z
+
+322
+01:05:41,827 --> 01:05:45,668
+Z'de ne alır bu?
+
+323
+01:05:46,807 --> 01:05:48,168
+Sıfır verelim.
+
+324
+01:05:49,067 --> 01:05:49,807
+Z'de nedir?
+
+325
+01:05:50,807 --> 01:05:51,107
+Üç
+
+326
+01:06:05,907 --> 01:06:14,687
+kesişimini almam lazım bölgenin. Düzlemsel bölge, 3'ten iniyor böyle. Ama, şuradaki,
+
+327
+01:06:22,068 --> 01:06:26,068
+Böyle bir şeyle de kesilmesi gerekiyor ama bu 1'e kadar geliyor.
+
+328
+01:06:26,068 --> 01:06:33,068
+Yani dolayısıyla, buradan da 1 ile kesiyorum.
+
+329
+01:06:33,068 --> 01:06:37,068
+Böyle bir şey. Burada bir şekil oluşuyor.
+
+330
+01:06:37,068 --> 01:06:41,068
+Bu şekilde bir şekil oluşuyor. Şimdi o şekli biraz daha ayrıntılı çizelim.
+
+331
+01:06:41,068 --> 01:06:44,068
+Çok ayrıntılı görmemiz mümkün değil burada.
+
+332
+01:06:47,827 --> 01:06:58,307
+Bu şekilde düzlem, 3'ten 3'e giden. Ama y'e işte, x ve bunun kesişimini bir noktasından kestiğim için, iç kısımdan kesmem gerekiyor düzleme.
+
+333
+01:06:59,507 --> 01:07:00,507
+Şimdi...
+
+334
+01:07:05,427 --> 01:07:25,467
+Soruyu siliyorum ama videoyu durdurup geri alıp soruyu tekrar gözlemlemeniz mümkün. Yani sorunun burada durmasında bir mana yok. Videoyu geri alıp soruya tekrar bakabilirsiniz çalışırken. Dolayısıyla bakın bölgeyi çizeyim. İksiye düzleminde.
+
+335
+01:07:33,364 --> 01:07:56,004
+Burada, x eşittir 1 doğrusu ile kesilen ve y eşittir x doğrusu ile de kesilen bir düzlemden bahsediyorum. Dolayısıyla bunu yukarı çıkardığımda, bu da buradan geldiğinde bu şekilde kesecek. Bu da buradan kesecek.
+
+336
+01:08:00,532 --> 01:08:07,332
+kısım oluşacak ve bunu indirdiğimde bakın aşağı, böyle bir şekil. Ama üç boyutlu bakın.
+
+337
+01:08:09,292 --> 01:08:14,732
+Ben şunu biliyorum, ikisiye düzleminde bu şekli aşağıda,
+
+338
+01:08:19,091 --> 01:08:32,211
+x eşittir 1 doğrusu, y eşittir x doğrusu, x ekseni ve x eşittir 1 doğrusu, y eşittir x'i 1, 1 noktasına keser. Bunları biliyorum.
+
+339
+01:08:36,212 --> 01:08:38,212
+Dolayısıyla integral'i alırken ben...
+
+340
+01:08:43,060 --> 01:08:51,600
+Eğer y'ye göre alırsam, y'ye göre integral alırsam ilk olarak,
+
+341
+01:08:55,859 --> 01:09:05,819
+x'ye, d y şeklinde y'ye göre alırsam, y'ye göre aldığımda, ilk aldığım integralde, sınırları fonksiyon olarak tanımlıyorum.
+
+342
+01:09:07,020 --> 01:09:10,879
+Bakın, ilk aldığım integralde, bu bölgede integral alıyorum.
+
+343
+01:09:14,000 --> 01:09:16,039
+y'ye göre integral alıyorum.
+
+344
+01:09:17,479 --> 01:09:20,479
+y'ye göre aldığım integralde, nereden nereye alacağım?
+
+345
+01:09:20,479 --> 01:09:21,979
+y eşittir.
+
+346
+01:09:23,988 --> 01:09:34,988
+0 doğrusundan, bakın y'ye göre alırsam, y'e 0 doğrusundan, bakın buradan buraya doğru alıyorum, y'e 0 doğrusundan, bu doğru ne?
+
+347
+01:09:35,908 --> 01:09:42,408
+y'e x doğrusu, y'e 0 doğrusundan, y'e x doğrusuna kadar olan kısımın integralini alıyorum.
+
+348
+01:09:43,347 --> 01:09:49,588
+y'e 0'dan, y'e x doğrusuna kadar olan kısımın integralini alıyorum.
+
+349
+01:09:56,115 --> 01:09:59,195
+Bunu doğru olarak, burayı bir fonksiyon olarak ifade etmiyor.
+
+350
+01:09:59,536 --> 01:10:00,796
+Peki x'e göre nasıl alacağım?
+
+351
+01:10:01,255 --> 01:10:03,935
+x'e göre alırken artık doğrularla alacağım.
+
+352
+01:10:04,355 --> 01:10:05,876
+Bölgeyi doğrularla ifade edeceğim.
+
+353
+01:10:06,976 --> 01:10:10,095
+Dıştaki integral'i x'e göre alacağım.
+
+354
+01:10:10,735 --> 01:10:12,056
+x nereden nereyedir?
+
+355
+01:10:12,816 --> 01:10:14,456
+x eşittir 0 doğrusundan.
+
+356
+01:10:14,996 --> 01:10:17,416
+Bakın y ekseni x eşittir 0 doğrusundan.
+
+357
+01:10:18,136 --> 01:10:20,076
+x eşittir 1 doğrusuna kadardır.
+
+358
+01:10:21,076 --> 01:10:22,155
+x eşittir 0'dan.
+
+359
+01:10:25,939 --> 01:10:28,299
+y eşit x doğrusuydu.
+
+360
+01:10:29,159 --> 01:10:34,600
+x eşit sıfırda, x eşittir, bir doğrusuna kadar olan kısmın integralini alıyorum.
+
+361
+01:10:35,379 --> 01:10:37,119
+Şimdi bu integrali alalım beraber.
+
+362
+01:10:39,859 --> 01:10:41,500
+Umarım anlaşılmıştır.
+
+363
+01:10:49,492 --> 01:10:54,352
+İyi çizerseniz, üzerine ayrıntı oluşuyorsanız, basit olduğunu göreceksiniz.
+
+364
+01:10:54,492 --> 01:11:04,432
+Aynı zamanda Google'a z eşittir, 3 eksi, x eksiye yazarak bölgenin grafik olarak ifadesini görebilirsiniz.
+
+365
+01:11:05,212 --> 01:11:11,512
+x eşittir, y doğrusunun x eşittir bir doğrusu ile kesildiğini unutmayın arkadaşlar.
+
+366
+01:11:11,512 --> 01:11:14,131
+Dolayısıyla x eşittir bir doğrusu ile kestiğimde,
+
+367
+01:11:14,484 --> 01:11:20,543
+3 düzleminden daha küçük bir bölge ile o düzlemi kestiğimi görmeniz gerekiyor.
+
+368
+01:11:21,024 --> 01:11:24,524
+Yani dolayısıyla daha küçük bir bölgede ben hacim hesaplıyorum.
+
+369
+01:11:25,584 --> 01:11:27,404
+Şimdi integral'i alalım.
+
+370
+01:11:28,644 --> 01:11:32,104
+0'dan y'e kadar, 0'dan 1'e kadar.
+
+371
+01:11:33,104 --> 01:11:36,744
+Fonksiyonum 3 eksi, x eksi, y.
+
+372
+01:11:37,404 --> 01:11:42,084
+Önce d'ye göre, sonra d'ye göre integral alıyorum.
+
+373
+01:11:50,387 --> 01:11:51,467
+Bu yine teklene anlaşsam.
+
+374
+01:11:56,532 --> 01:12:20,112
+Y'nin integrali, 3y, eksi, xy, eksi, y kare bölü 2'dir. Bakın burada y'ye göre integral oluyor. Y'nin sınırları, y eşittir sıfırdan x'e kadar, ve dıştaki integrali yazıyorum. Dx, x eşittir sıfırdan 1'e.
+
+375
+01:12:23,539 --> 01:12:49,719
+Burayı alayım. 3x, eksi, x kare, y yerine x yazıyorum. Y eşit, sıfırdan y eşit, x'e kadar iki kalıyorum. Eksi, y yerine x yazıyorum. x kare bölü 2. Yani 3x, eksi 2x, eksi x kare, 3x, eksi 3x kare bölü 2 olarak bunu elde edelim.
+
+376
+01:12:50,676 --> 01:13:02,376
+Şimdi bunun integralini alayım. x eşitir sıfırdan 1'e, 3x eksi, 3 x kare bölü 2'nin x'e göre integralini alacağım.
+
+377
+01:13:03,676 --> 01:13:13,136
+x'e göre integral alırsam, 3x'in integral nedir? 3 çarpı x kare bölü 2'dir. x'in integral x kare bölü 2 olarak alır.
+
+378
+01:13:16,372 --> 01:13:21,051
+3 bölü 2'yi başa geçireyim. x karenin integrali x küp bölü 3 olur.
+
+379
+01:13:23,572 --> 01:13:40,612
+x'in sınırları sıfırdan 1'e. Ayrıntılı olarak yazılmıyor. 3'ler giderse, 3x kare bölü 2, eksi, x küp bölü 2 olarak elde edelim. Burada da,
+
+380
+01:13:40,948 --> 01:13:49,028
+X yerine 0 yazarsam zaten 0. X yerine 1 yazdığımda, bulduğum ifadeyi X yerine 0 yazdığım ifadeden çıkartacağım.
+
+381
+01:13:50,888 --> 01:14:01,728
+X yerine 1 yazarsam 3 bölü 2 eksi 1 bölü 2'den, 3 eksi 1 bölü 2, 2 bölü 2, 1 olarak elde edelim.
+
+382
+01:14:08,275 --> 01:14:09,855
+1 girm çatmış.
+
+383
+01:14:11,056 --> 01:14:11,695
+Şimdi,
+
+384
+01:14:11,695 --> 01:14:13,895
+burayı siliyorum.
+
+385
+01:14:33,652 --> 01:14:58,311
+Şimdi tekrar bölgeyi düşünelim. X'i yüzyılda göre. Y eşittir x doğrusu, x eşittir 1 doğrusu. Önce x'e göre integral alırsam, sınırları nasıl alacağım? Önce x'e göre integral alayım. Önce x'e göre integral alırsam, burası y eşittir x, x'e göre alıyorum bakın.
+
+386
+01:15:01,140 --> 01:15:12,579
+x eşitli sıfırdan x eşitli bire gibi gözüküyor ama öyle değil. İlk olarak fonksiyon alacağım. İkinci olarak sabit sayılar alacağım. İlk olarak x'e göre integral alacağım.
+
+387
+01:15:13,260 --> 01:15:21,659
+x'e göre fonksiyonlarla ifade edeceğim. Bölgem burası bakın. y eşitli x doğrusu aslında x eşittir y doğrusudur.
+
+388
+01:15:29,268 --> 01:15:39,147
+x eşittir 1'e kadar olan bölgenin integralini alıyorum. Yine 3-x, direkt yazayım bu sefer, eksiye, fxye.
+
+389
+01:15:39,788 --> 01:15:42,807
+Bakın arkadaşlar, şuraya dikkat edin. Burası çok önemli.
+
+390
+01:15:44,948 --> 01:15:51,127
+x'e göre ilk aldığımız integrasyonda, integral alırken,
+
+391
+01:15:51,503 --> 01:15:56,103
+içerideki integrasyonun bana bir fonksiyon vermesi gerekiyor.
+
+392
+01:15:56,644 --> 01:15:59,923
+Bir f fonksiyonu ya da g herhangi bir fonksiyon vermesi gerekiyor.
+
+393
+01:15:59,923 --> 01:16:02,543
+Hatta bunu biz ne ile göstermiştik öncekinde?
+
+394
+01:16:03,423 --> 01:16:04,923
+Fi'yi y ile göstermiştik.
+
+395
+01:16:05,876 --> 01:16:07,876
+Bir tane fonksiyon vermesi gerekiyor.
+
+396
+01:16:08,136 --> 01:16:10,255
+Fi y gibi bir fonksiyon. Neden fi y dedim?
+
+397
+01:16:10,416 --> 01:16:16,416
+Çünkü bakın dıştaki integrasyonu aldığım d y, y'ye bağlı bir ifade.
+
+398
+01:16:16,855 --> 01:16:18,515
+Dolayısıyla burası fi y olacak.
+
+399
+01:16:19,056 --> 01:16:23,636
+Ve buradaki sınırları artık fonksiyona göre alacağım.
+
+400
+01:16:24,095 --> 01:16:25,615
+Bakın bunları fonksiyona göre alıyorum.
+
+401
+01:16:25,615 --> 01:16:27,456
+X eşittir y'den yani.
+
+402
+01:16:27,792 --> 01:16:43,412
+x eşittir y fonksiyonundan, x eşittir bir fonksiyonuna kadar olan kısmı alıyorum. Sonra ne yapıyorum arkadaşlar? Bakın şimdi, x'in sınırlarında ne alacağım bu sefer? Pardon, y'nin sınırlarında ne alacağım?
+
+403
+01:16:45,712 --> 01:16:50,632
+Y'nin sınırları nereden nereye bu sefer? Bakın bu sefer y'yi doğrularla alıyorum.
+
+404
+01:16:51,636 --> 01:16:53,275
+Üst tarafta yeşil.
+
+405
+01:16:53,296 --> 01:16:59,476
+Yeni sınırların sabit sayılar alacağım. Nereden nereye arkadaşlar? Var mı cevabı olan burada?
+
+406
+01:17:09,011 --> 01:17:17,091
+Chat'ten yazabilirsiniz. Tahmininiz nedir? Nereden nereye olması gerekiyor? Çok güzel, çok teşekkürler. Elbette.
+
+407
+01:17:17,451 --> 01:17:20,152
+Bir doğrusuyla sınırlı değil mi? Yeştir ikisi.
+
+408
+01:17:20,152 --> 01:17:30,572
+Bakın üstten yeştir bir doğrusuyla sınırlı. Alttan da nereden başlıyor arkadaşlar? Yeşti sıfırdan başlıyor. Yani bu tarafta fonksiyonları aldım.
+
+409
+01:17:30,944 --> 01:17:35,664
+Burada, sabit sayılar alarak, integrasyonu hesaplıyorum.
+
+410
+01:17:59,155 --> 01:18:19,615
+İşte dy var, y'ye göre sınırlar alıyoruz. y'işte 0'dan, y'işte 1'e kadar olan kısım alıyoruz. Bakın buraya dikkat edin. y'işte 0 doğrusundan, y'işte 1'e kadar alıyoruz. En dıştakinin sınırların sarktı olması gerekiyor. İntegrelin sonucu bize hacmi versin.
+
+411
+01:18:20,212 --> 01:18:27,172
+En içtekinin arkadaşlar sınırları fonksiyonlar olacak ki, ne olacak? Ben bir fonksiyon elde edeceğim.
+
+412
+01:18:27,832 --> 01:18:39,972
+Ki burada bir integral alabileyim. Daha sonra aldığım integralde, en dıştaki integralde ise sınırlar sabit sayılar olacak ki, ben bu alanı, hacmi ne isteniyorsa onu bulabileyim arkadaşlar.
+
+413
+01:18:44,532 --> 01:19:02,572
+Yani bir sayı çıkarsın dışarı. Aynı zamanda zaten, biz burayı fonksiyon olarak aldığımız için, buraya artık sayı olarak ifade etmemiz gerekiyor. Bölgeyi bu şekilde tanımlıyoruz. Bu integralı şimdi alalım. Önce x'e göre integral alacağız.
+
+414
+01:19:08,659 --> 01:19:16,680
+3'ün integrali 3x olarak, x'in integrali, x'i x'i y'ye alarak, alırım integrali.
+
+415
+01:19:17,459 --> 01:19:22,260
+Sınırlar bu sefer, x eşittir, y'den eşittir, 1'e.
+
+416
+01:19:22,760 --> 01:19:24,879
+Yani x yerine burada y koyacağım.
+
+417
+01:19:27,000 --> 01:19:30,319
+x yerine, üst sınır olarak 1'i koyacağım.
+
+418
+01:19:30,319 --> 01:19:35,099
+Dolayısıyla, bir de dışındaki integralı da yazayım.
+
+419
+01:19:35,459 --> 01:19:35,899
+D, y.
+
+420
+01:19:37,235 --> 01:19:40,416
+tekrar, eşit 0'dan 1'e kadar.
+
+421
+01:19:40,416 --> 01:19:43,376
+Şimdi sınırları yerine koyayım.
+
+422
+01:19:45,056 --> 01:19:45,815
+Siliyorum.
+
+423
+01:19:55,667 --> 01:19:56,847
+ve satmamam gerekiyor.
+
+424
+01:19:58,688 --> 01:19:59,407
+x eşittir.
+
+425
+01:19:59,747 --> 01:20:01,188
+Bir sınırını yerine koyarsam,
+
+426
+01:20:02,007 --> 01:20:02,608
+3 eksi,
+
+427
+01:20:04,667 --> 01:20:07,427
+1'in karesi bölü 2, 1 bölü 2, eksi,
+
+428
+01:20:09,167 --> 01:20:11,868
+x yerine 1 yazdım, 1 şarpı y olacak.
+
+429
+01:20:15,539 --> 01:20:19,519
+Eksi, x yerine bakın, alt sınırda y koyacağım.
+
+430
+01:20:20,500 --> 01:20:27,519
+3y, 3 çarpı y, eksi, x yerine y koydum, y kare bölü 2, eksi, y kare.
+
+431
+01:20:28,420 --> 01:20:33,379
+x yerine y koydum, y çarpı y, y kare olarak bulurum.
+
+432
+01:20:34,059 --> 01:20:37,579
+İntegreli ifade edeyim, buraya parantez içine alalım.
+
+433
+01:20:37,579 --> 01:20:42,959
+D'ye, y eşitli sıfırdan, 1'e kadar, sün tekrar alıyorum.
+
+434
+01:20:44,851 --> 01:20:52,391
+Şimdi burayı düzenleyin. Burayı düzenlersen, 3-1 bölü 2'den 5 bölü 2 gelir.
+
+435
+01:20:53,832 --> 01:20:57,152
+Eksi y-3y'den eksi 4y gelir.
+
+436
+01:20:59,311 --> 01:21:01,851
+Eksi de rahat olur.
+
+437
+01:21:02,451 --> 01:21:03,891
+y kare bölü 2 artı y kare.
+
+438
+01:21:05,992 --> 01:21:07,271
+3 y kare bölü.
+
+439
+01:21:11,796 --> 01:21:17,976
+2 olur. Bakın buranın da, y'ye göre integralini alacağız.
+
+440
+01:21:18,336 --> 01:21:21,496
+D y'sinden uzak. y'şte 0'dan 1'e kadar.
+
+441
+01:21:22,956 --> 01:21:38,115
+Bu ifadenin y'ye göre integralini alırsam, 5 bölü 2, y eksi, 4 y'nin y'ye göre integrali, 4 y kare bölü 2, artı 3 bölü 2 çarpı, y karenin integrali, y küp bölü 3 olarak.
+
+442
+01:21:38,623 --> 01:22:05,824
+elde ederim. Y'nin sınırları, sıfırdan biri. Sıfırda zaten, hepsi y'ye bağlı fonksiyonlar olduğu için, ifadeler olduğu için, sıfır olur. Biri yerine koyarsam da, 5 bölü 2, bu integralı alırsam, 5 bölü 2, y, eksi 4, y kare bölü 2, artı, 3 bölü 2 çarpı, y karenin integralı, y küt bölü.
+
+443
+01:22:07,604 --> 01:22:20,584
+elde edelim. Y eşitli sıfırdan 1'e kadar son olur. Bu üçler gider. 4 bölü 2'den, burası 2 kalır. Yani 5 bölü 2, y, eksi, 2'ye kare.
+
+444
+01:22:26,228 --> 01:22:33,468
+2, y eşittir 0'dan 1'e. Sırıları yerine koyarsam, 5 bölü 2, y yerine 1 yazacağım.
+
+445
+01:22:33,728 --> 01:22:36,908
+y eşittir 0'da zaten hepsi y'ye bağlı olduğu için 0 olacak.
+
+446
+01:22:37,688 --> 01:22:49,528
+y yerine 1 yazdığımda, 5 bölü 2, eksi 2, artı 1 bölü 2, 5 bölü 2, artı 1 bölü 2, 6 bölü 2, eksi 2, 3 eksi 2, cevap 1 olarak.
+
+447
+01:22:53,619 --> 01:23:10,119
+fx şeklinde, x'e bağlı fonksiyon olarak yeni sınavlarını ifade edersen, ya da x eşittir hy şeklinde, x eşittir ky şeklinde, x'i fonksiyonlara bağlı olarak ifade edersem de değişen bir şey olmuyor.
+
+448
+01:23:10,800 --> 01:23:21,219
+Ama birini fonksiyonlara göre ifade ediyorsam, karteziyen koordinatlardan birini, diğerini sabit sayılarla, sabit doğrularla göstermem lazım.
+
+449
+01:23:23,028 --> 01:23:25,747
+Şimdi bir örnek daha çözelim.
+
+450
+01:23:30,612 --> 01:23:37,492
+Burada sınırları değiştirdiğinde iki türlü de soruyu çözdüm ve aynı sonucu buldum.
+
+451
+01:23:39,492 --> 01:23:40,460
+Ama her zaman durum...
+
+452
+01:23:44,979 --> 01:23:57,699
+Bir fonksiyon alalım. Öncelikle bölgeyi tamamlayalım. X ekseni, yine benzer şekilde x ekseni, y eşittir x ve
+
+453
+01:24:11,444 --> 01:24:26,144
+Şimdi burada bu bölgede, integrali vermiş, R bölgesinde, 2 kat integral, R'ye göre, sin x bölü x,
+
+454
+01:24:36,212 --> 01:24:43,532
+Şimdi bu integral'i hesaplamaya çalışalım. Öncelikle tabii yapmamız gereken neydi? Bölgeyi belirlemek.
+
+455
+01:24:53,268 --> 01:24:53,908
+x ekseni bu.
+
+456
+01:24:57,087 --> 01:25:03,007
+y eşittir x doğrusu ve x eşittir 1 doğrusu.
+
+457
+01:25:07,731 --> 01:25:14,131
+y eşitir x eşitir 1 doğrusu, y eşitir x ekseninde, y eşitir 1 noktasında karşılır.
+
+458
+01:25:17,587 --> 01:25:19,387
+Şimdi sırayla integral alayım.
+
+459
+01:25:21,387 --> 01:25:21,587
+Önce...
+
+460
+01:25:35,347 --> 01:25:38,608
+Peki arkadaşlar, burada x'e göre alabilir miyiz integrali sizce?
+
+461
+01:25:56,435 --> 01:25:59,415
+y eşitir x'e kadar integral oluyor.
+
+462
+01:25:59,595 --> 01:26:03,195
+y eşitir 0 doğrusundan y eşitir x'e kadar integral oluyor.
+
+463
+01:26:04,195 --> 01:26:10,055
+Bakın burası y eşitir 0 doğrusu, burası da y eşitir x.
+
+464
+01:26:10,595 --> 01:26:14,195
+y eşitir 0 doğrusundan y eşitir x'e kadar integral oluyor.
+
+465
+01:26:14,695 --> 01:26:16,375
+Sonra dy'ye göre.
+
+466
+01:26:17,295 --> 01:26:19,155
+y'ye göre de, bakın,
+
+467
+01:26:39,572 --> 01:27:06,072
+y-x'in x-0 doğusundur. x-0 doğusundan, bakın arkadaşlar, burada karışıyor. Ben de anlatırken karıştırmışım. Önce y'ye göre, dikkat edin, y-0 fonksiyonundan, tamam mı? y-x fonksiyonuna kadar alıyoruz. Sonra dışta x'e göre sabit değerler alıyoruz. Yani x-x'in de işte 0'dan 1'e kadar alıyoruz.
+
+468
+01:27:22,131 --> 01:27:24,591
+Yani burada şunun anlaşılması gerekiyor herhalde artık.
+
+469
+01:27:24,927 --> 01:27:29,948
+İntegrasyon, iki katlı integraldeki integralin sınırları bana bir bölge veriyor.
+
+470
+01:27:29,948 --> 01:27:41,807
+Ve ben o bölgeyi çizdiğim takdirde arkadaşlar, yani x'den y'ye, ya x ekseni boyunca, ya da y ekseni boyunca, iki türlü de integral alabiliyorum arkadaşlar.
+
+471
+01:27:42,367 --> 01:27:50,768
+Bu sayede, integrasyon sırasını değiştirecek, çok zor bir integral verildiğinde arkadaşlar, baktınız mesela, önce şunu şöyle veririz zaten, bu soruyu.
+
+472
+01:27:51,475 --> 01:27:53,095
+Şu şekilde sorar zaten.
+
+473
+01:27:53,795 --> 01:27:56,475
+Dx, dy'yi hesaplayın der mesela.
+
+474
+01:27:57,255 --> 01:27:58,435
+Tamam mı? O zaman ne yapacağız?
+
+475
+01:27:58,975 --> 01:28:00,335
+Dx, dy'yi hesaplayamam.
+
+476
+01:28:00,795 --> 01:28:02,956
+Dolayısıyla sırayı değiştireceğim.
+
+477
+01:28:03,155 --> 01:28:04,135
+Dy, dx yapacağım.
+
+478
+01:28:04,375 --> 01:28:06,475
+Buradaki sınırları da bölgeyi...
+
+479
+01:28:06,899 --> 01:28:14,019
+kartezian koordinat düzlemini x'ye kartezian koordinat düzleminde çizerek bölgeyi işaretleyip ona göre alacağım.
+
+480
+01:28:14,139 --> 01:28:23,939
+Yani normalde x'e göre almıştır bu sınırları. Ben y'ye göre fonksiyonları önce belirleyip sonra sabit değerleri belirleyip sınırları bu şekilde alacağım arkadaşlar.
+
+481
+01:28:37,268 --> 01:28:39,108
+İnteklerine sağın ya Pâsak.
+
+482
+01:28:53,011 --> 01:29:06,912
+y'ye işte x'e, sin x bölü x, d'ye, d'x. Bakın burada, integrale dikkat edin, y'ye göre integralıyoruz. Sin x bölü x, sabit bir sayı gibi düşüneceğiz.
+
+483
+01:29:07,211 --> 01:29:12,591
+y'ye göre integralılırsa, sin x bölü x, çarpı y olarak bir integr ile alırım.
+
+484
+01:29:17,684 --> 01:29:40,664
+Dx, içerideki kısmın sınırları, y eşittir sıfırda, y eşittir x'e kadar. Sıfırda sıfır olur, y yerine x yazarsam da, x eşittir sıfırdan bire kadar integral, y yerine x yazarsam, sinus x bir x ile x'i çarptığında, x'ler birbirini götürür, sinus x olarak burayı elde ederim. Dx.
+
+485
+01:29:41,804 --> 01:29:43,324
+Sinus x, Dx nedir?
+
+486
+01:29:43,824 --> 01:29:44,203
+Bakın.
+
+487
+01:29:44,595 --> 01:30:00,235
+Sinus x bölü x fonksiyonunun ben integralini alamıyorum x'e göre. Ama ne oldu? Buraya y'yi koyduğum zaman, y'nin sınırları da sıfırdan x'e verelim zaten. x'ler birbirini götürdü. Direkt sinus x fonksiyonunu elde ettim. Artık benim bu integralı almam çok kolay arkadaşlar.
+
+488
+01:30:02,735 --> 01:30:08,855
+Sinus x'in integrali, x'i kosinus x olarak elde edelim.
+
+489
+01:30:15,956 --> 01:30:26,835
+Çünkü sin x'in türevi cos x ama cos x'in türevi ne? Eksi sin x. O zaman buraya başına eksi olarak gelir integralin sonucu.
+
+490
+01:30:27,556 --> 01:30:38,216
+Bu da eksi cos x'in türevi, sınırları yerine koyarsam, eksi cos 1, eksi cos 0 olarak elde edilir.
+
+491
+01:30:38,216 --> 01:30:43,155
+cos 0 nedir? 1'dir. Eksi, eksi 1, artı 1 olur. Eksi cos 1.
+
+492
+01:30:43,615 --> 01:30:46,675
+artı 1 olarak elde edilir bu integralin sonucu.
+
+493
+01:30:47,515 --> 01:30:49,595
+Peki, bu sınırları
+
+494
+01:30:54,228 --> 01:30:58,988
+Burada ben sınırları önce y'ye göre aldım.
+
+495
+01:30:58,988 --> 01:31:18,427
+Umarım arkadaşlar anlaşılmıştır. Yani ben çok zorlu bir integralle karşılaştırdığımda, 2 katlı integraldeki sınırların bir bölge çizdiğini, kartezyen koordinat düzeninde bir bölge çizdiğini, bu bölgede sınırları değiştirebileceğimi artık öğrenmiş oldum.
+
+496
+01:31:18,427 --> 01:31:20,427
+Sonra x'e göre aldım.
+
+497
+01:31:24,819 --> 01:31:26,260
+x'i y eksenlerini düşünelim.
+
+498
+01:31:28,840 --> 01:31:29,940
+y eşitir x doğrusu,
+
+499
+01:31:31,279 --> 01:31:32,440
+x eşitir 1 doğrusu,
+
+500
+01:31:33,159 --> 01:31:33,840
+ve x eksen.
+
+501
+01:31:38,100 --> 01:31:38,680
+Yani
+
+502
+01:31:47,475 --> 01:31:48,615
+Cinus Xperlix
+
+503
+01:31:59,252 --> 01:32:06,672
+y fonksiyonunda, bakın burası fonksiyon, x'e göre alırsam, bu tarafa doğru gidiyorum, tarayarak bölgeye gidiyorum.
+
+504
+01:32:07,952 --> 01:32:23,352
+x eşittir y'den, x eşittir 1 doğrusuna kadar alıyorum.
+
+505
+01:32:23,552 --> 01:32:26,452
+y'nin sınırları nasıl alıyorum? y eşittir 0'dan.
+
+506
+01:32:33,555 --> 01:32:34,763
+Ejitir bir doğusun kalı.
+
+507
+01:32:44,051 --> 01:32:49,791
+Ancak bu integral, elementer fonksiyonlarla ifade edilemez.
+
+508
+01:33:02,804 --> 01:33:27,264
+Sinus x, kos x, ln x vs. fonksiyonlarla bunu ifade edemeyiz. Daha farklı çözüm yöntemleri ile çözmemiz gerekir bunu. Farklı yaklaşımlarla çözülmesi gerekir. Bildiğimiz elementer fonksiyonlarla, bildiğimiz fonksiyonlarla bunu çözmemiz mümkün değil. Yani basit fonksiyonlarla ifade edemez. Basit bir şekilde bunun integrali alınamaz demek oluyor. O zaman demek ki bu şekilde
+
+509
+01:33:28,051 --> 01:33:34,391
+x'eşitir y'den x'eşitir 1'e alırsak, önce x'e göre integral alırsak, bu integralı hesaplayamıyoruz.
+
+510
+01:33:34,751 --> 01:33:41,652
+Bakın arkadaşlar, bu integral hesaplanamıyor. Hesaplanması çok zor bir integral. Ama sınırları değiştirerek hesaplayabiliyoruz.
+
+511
+01:33:42,171 --> 01:33:49,171
+Ama sırayı değiştirsek, önce y'ye göre, daha sonra x'e göre alırsak, önceki yaptığım sözümdeki gibi,
+
+512
+01:33:50,260 --> 01:33:57,960
+Önce y'ye göre, sonra x'e göre alırsak, rahatlıkla integrasyonu yapabiliyoruz. İntegrali hesaplayabiliyoruz, integral alabiliyoruz.
+
+513
+01:33:58,560 --> 01:34:06,520
+Biz buna daha sonra sınırları değiştirme diyeceğiz. Katlı integralde sınırları değiştirerek integral alma diyeceğiz.
+
+514
+01:34:06,720 --> 01:34:15,979
+Eğer biz integrasyonu kolaylıkla yapamıyorsak, buradaki gibi x eşittir y'den x eşittir 1'e kadar
+
+515
+01:34:16,692 --> 01:34:26,471
+alamıyorsak, bize bu şekilde verdiyse bir integrale, yani x eşittir y doğrusunda, ya da bir fonksiyon olarak bunu vermiş olabilir.
+
+516
+01:34:27,051 --> 01:34:36,612
+x eşittir y, y fonksiyonundan mesela, burayı bir fonksiyon olarak verdiğim işlenin, x eşittir fy şeklinde, y, y şeklinde.
+
+517
+01:34:36,612 --> 01:34:40,612
+Yani x'i y'ye bağlı bir fonksiyon olarak verdi. O fonksiyonda,
+
+518
+01:34:41,108 --> 01:34:45,568
+Başka bir yere, başka bir fonksiyon, başka bir yere kadar olan bölgeyi vermiş olarak.
+
+519
+01:34:46,307 --> 01:34:52,927
+X eşittir Y fonksiyonundan X eşittir 1'e kadar olan bölgeyi vermiş ama biz bu integralı hesaplayamıyoruz.
+
+520
+01:34:53,247 --> 01:35:06,427
+Bu takdirde sınırları değiştirerek X eşittir Y'den X eşittir 1'e değil de Y'yi fonksiyon olarak, yani Y eşittir 0 doğrusundan Y eşittir X'e kadar integral olarak ya da bunu ters çevirerek.
+
+521
+01:35:07,028 --> 01:35:19,587
+x eşittir f, y şeklinde verdiyse fonksiyonu, bu da x eşittir y, y eşittir x olarak ifade etmemesi kolay ama x eşittir f, y şeklinde verdiyse y'yi de y, x olarak ifade ediyoruz, ters fonksiyon olarak ifade ediyoruz.
+
+522
+01:35:19,587 --> 01:35:34,168
+f eksi bir x, ters fonksiyonu alarak y eşittir y, x şeklinde ifade edip tersini alıp fonksiyonu bu şekilde alarak bölgeyi değiştirip, integrasyonu, sınırlarını değiştirerek, katlı integralde sınır değiştirerek.
+
+523
+01:35:34,739 --> 01:35:48,180
+Basit fonksiyonlarla ifade edemediğimiz, basitçe integrasyon yapamadığımız, integral çözemediğimiz integralleri, elementel fonksiyonlarla yapılamayan, ifade edilemeyen integralleri, sınırları değiştirerek çözeceğiz.
+
+524
+01:35:49,619 --> 01:35:52,587
+Evet, burada katlı integrali...
+
+525
+01:35:52,819 --> 01:36:02,719
+çözerken, aslında çözemediğimiz durumlarda, zorlu integrallerde, integrasyon sırasını değiştirerek çözebileceğimizi görmüş olduk arkadaşlar.
+
+526
+01:36:03,600 --> 01:36:09,219
+Şimdi, birkaç farklı örnekle bunu pekiştirelim.
+
+527
+01:36:11,299 --> 01:36:12,819
+Bu, yine...
+
+528
+01:36:18,100 --> 01:36:19,840
+Not üzerinden gidelim şimdi de.
+
+529
+01:36:22,560 --> 01:36:25,140
+Burada güzel sorular var arkadaşlar. Bunları çözün.
+
+530
+01:36:25,420 --> 01:36:31,640
+Yani sırayla katlı integrallerin çözümleriyle ilgili sorular var. Bunları çözün.
+
+531
+01:36:33,000 --> 01:36:36,460
+Örneklerini çözdük zaten. Benzer sorular var.
+
+532
+01:36:36,460 --> 01:36:40,600
+Şimdi ben integrasyon sırasını değiştirmeyle ilgili sorulara bakacağım.
+
+533
+01:36:41,060 --> 01:36:44,396
+Bu oldukça önemli. Sınavlarda çokça çıkıyor. Ondan dolayı.
+
+534
+01:36:44,787 --> 01:36:46,448
+İntegrasyon sırasını değiştirme.
+
+535
+01:36:47,948 --> 01:36:50,247
+Yani muhakkak bir soru karşınıza çıkacaktır bununla ilgili.
+
+536
+01:36:52,108 --> 01:36:55,667
+Şimdi, bir tane fonksiyonumuz var arkadaşlar.
+
+537
+01:36:58,747 --> 01:37:03,727
+Sinus x kare, dx, dy şeklinde integral vermiş.
+
+538
+01:37:04,768 --> 01:37:06,927
+Bakın, x eşittir y'den,
+
+539
+01:37:07,315 --> 01:37:19,896
+Ne demiş? Sınırlarım x eşittir y'den, x eşittir 1'e. Neden buraya x diyorum? Çünkü önce x'e göre integral almış, dx'e göre integral almış. Sonra y'ye göre integrasyon var.
+
+540
+01:37:31,636 --> 01:37:34,176
+Sabit sayılar. İkisin sıraları fonksiyon.
+
+541
+01:37:34,736 --> 01:37:40,096
+Şimdi öncelikle sin 6 kare dx fonksiyonunu, integralini alabilir miyiz arkadaşlar?
+
+542
+01:37:40,256 --> 01:37:43,615
+Alamayız. Dışarıda bir 2x gibi bir şey olsa u dönüşümü falan yapar.
+
+543
+01:37:43,695 --> 01:37:45,096
+Ama öyle bir şey yok.
+
+544
+01:37:45,816 --> 01:37:52,756
+Dolayısıyla yine bu da elementer fonksiyonlarla ifade edilemeyen, hesaplanamayan, integrasyon sırasını değiştirmemiz gereken bir fonksiyon durumu.
+
+545
+01:37:52,756 --> 01:37:54,796
+Şimdi bölgeyi gösterelim.
+
+546
+01:37:55,316 --> 01:37:57,136
+Y eşit sıfırdan y eşit bireymiş.
+
+547
+01:37:57,619 --> 01:38:06,020
+y ekseninde, x ekseni, y ekseni, y ekseninde sıfırdan bire kadar olan bölgeyi vermiş arkadaşlar.
+
+548
+01:38:06,760 --> 01:38:08,139
+Y ne sınırlar? Sıfırdan bire.
+
+549
+01:38:08,699 --> 01:38:11,559
+y eşitir sıfır doğrusundan, y eşitir bir doğrusuna kadar sabit sayılar.
+
+550
+01:38:12,340 --> 01:38:17,420
+x ise, x eşittir y'den, bakın, y eşitir x doğrusu, x eşitir y doğrusu, aynı şey.
+
+551
+01:38:18,639 --> 01:38:21,559
+Bire kadar geliyor tabii, y eşitir birle sınırlı.
+
+552
+01:38:22,195 --> 01:38:36,496
+x eşittir y'den, x eşittir 1 doğrusuna kadarmış arkadaşlar. Bakın, 1 doğrusuyla da, çok kötü çizdim, 1 doğrusuyla da buradan sınırlı. Yani, x eşittir y'den, x eşittir 1'e kadar.
+
+553
+01:38:39,036 --> 01:38:45,556
+x eşittir y'den, x eşittir 1'e, y eşittir 1'den, y eşittir 0'a kadar. Şimdi burada integrasyon sırasını değiştireceğim.
+
+554
+01:38:45,855 --> 01:39:05,415
+Önce sinüs x kare de y diyeceğim, sonra d x diyeceğim. Şimdi d y dedim ama burası artık x eşittir y'den ya da y eşittir x'den bire falan olmayacak. Burada bölgeyi öncelikle arkadaşlar geometrik olarak kartezyen koordinatlarda çizmem gerekiyor. Buna dikkat edin bakın. Burası önemli.
+
+555
+01:39:10,287 --> 01:39:23,807
+Göstermem gerekiyor. Önce kartezal koordinatları çiziyorum. Kartezal koordinatları çizdikten sonra, önce bakın, y'nin sınırlarını, bakın y'nin sınırlarını ilk olarak, y'nin sınırlarını fonksiyon olarak alıyor.
+
+556
+01:39:24,567 --> 01:39:35,927
+Nereden nereye y'nin sınırları? y eşittir sıfırdan arkadaşlar, bakın y eşittir sıfırdan, böyle alıyorum bakın, burada çizmiş bakın, y eşittir sıfırdan.
+
+557
+01:39:37,971 --> 01:39:52,715
+Fonksiyon olarak alıyorum dedim. Bölgem bu, D bölgem. Y eşittir 0'dan, nereye gidiyor? Bakın, buraya kadar gidiyor. Şununla sınırlıydı. Yani x eşittir y ile sınırlıydı. Bakın, x eşittir y ile sınırlıydı. Dolayısıyla...
+
+558
+01:39:56,916 --> 01:40:21,855
+y eşittir 0'dan y eşittir x'e kadar alıyorum. İntegrasyonun sınırlarını ilk olarak fonksiyonlarla. Sonra ne alacağım arkadaşlar? x'in sınırlarını x eşittir 0'dan x eşittir 1 doğrusuna kadar alacağım. Bakın burada y eşittir 0'dan y eşittir 1 doğrusuna kadar almıştım. Burada x eşittir 0'dan x eşittir 1 doğrusuna kadar alıyorum.
+
+559
+01:40:22,228 --> 01:40:45,328
+Arkadaşlar, burası anlaşıldı mı? Yani şu bölgeyi önce x'e göre belirlemem, sonra y'ye göre belirlemem anlaşıldı mı? Bana lütfen chatten yazın. Hocam anlaşıldı ya da anlaşılmadı şeklinde yazın. Çünkü burası önemli. Bu soru tipi de sınavda karşınıza gelecek arkadaşlar. Evet, cevaplarınızı bekliyorum.
+
+560
+01:40:51,475 --> 01:40:53,176
+Arkadaşlar, dinlemiyor musunuz?
+
+561
+01:40:56,756 --> 01:41:00,836
+Burada bakın, sınavda karşınıza çıkacak bir soru tipi var.
+
+562
+01:41:02,456 --> 01:41:05,016
+Direkt böyle bir iki tane soru karşınıza çıkacak sınavda.
+
+563
+01:41:06,696 --> 01:41:08,596
+Yani şu sırayı değiştireceksiniz.
+
+564
+01:41:09,756 --> 01:41:09,956
+Evet.
+
+565
+01:41:13,492 --> 01:41:18,872
+chatten yazar mısınız lütfen? Yani anlaşıldıysa 1'e basmanız da yeterli.
+
+566
+01:41:43,283 --> 01:41:51,463
+Güzel, burası anlaşıldıysa, şimdi bakın burası, artık önce y'nin sınırlarını alıyorum.
+
+567
+01:41:51,823 --> 01:41:55,043
+y eşitli sıfırdan y eşitliyse, sıfırdan x'e kadar,
+
+568
+01:41:56,467 --> 01:42:03,507
+İntegrasyonu alıyorum y'ye göre. Y'ye göre integral nedir? Sinus x kare, x'e bağlı bir fonksiyon, sabit sayı gibi bir düşünülür.
+
+569
+01:42:04,028 --> 01:42:15,068
+Y çarpı sinus x kare olarak fonksiyonun integrali alınır. Y çarpı sinus x kare. Bakın sinus x kareyi sabit bir sayı gibi düşünüp, y çarpı sinus x kare olarak fonksiyonun integrali aldım.
+
+570
+01:42:15,068 --> 01:42:24,068
+Y çarpı sinus x kare ile daha sonra sınırlarını alıyorum, sıfırdan x'e. Bakın buraya dikkat edin, burası y eşittir sıfırdan y eşittir x'e. Yani ben burada...
+
+571
+01:42:24,336 --> 01:42:43,036
+Sınır koyarak y'ye sınır koyuyorum. Sınır olarak y'ye sınır koyuyorum. Y'nin sınırları x'den sıfıra. x çarpı sinüs x kare, eksi sıfır çarpı sinüs sıfır oldu. Sıfır zaten orası. x çarpı sinüs x kare elde ettim. Artık bunun integralini almak kolay. Yani x kareye u dersen 2x dxdo olur.
+
+572
+01:42:43,456 --> 01:42:51,336
+Ne olur arkadaşlar? x dx'de du bölü 2 olur. Yani sinüs u bölü 2 alarak buranın integralini artık alabilirim arkadaşlar.
+
+573
+01:42:51,855 --> 01:42:55,655
+Sinüs u bölü 2 alarak buranın integralini alabilirim arkadaşlar.
+
+574
+01:42:56,695 --> 01:43:05,256
+Ve böylelikle, bakın sinüs u bölü 2 oldu. x kareye u dedim. 2x dx du oldu. x eşittir 1 de u eşittir 1 olur.
+
+575
+01:43:05,695 --> 01:43:13,655
+x eşit de 0, dolu eşit de 0 olur. Buranın integralini alıyorum. 1 bölü 2 kosinus u, u'nun sınırları 0'dan 1'e, yerine koydum.
+
+576
+01:43:14,475 --> 01:43:22,895
+Eksi 1 bölü 2 kosinus 1, eksi, eksi 1 bölü 2, artı 1 bölü 2 oldu. Kosinus 0 zaten 1, artı 1 bölü 2 oldu burası.
+
+577
+01:43:23,916 --> 01:43:29,475
+Dolayısıyla 1 bölü 2 parantezinde 1 eksi kosinus 1 olarak integrali aldım arkadaşlar.
+
+578
+01:43:33,235 --> 01:43:54,235
+Diğer soruya bakalım arkadaşlar. Şimdi bakalım. Diğer soruda da, e üzeri x'ye, d, y, d, x var. Yine burada integral almak oldukça zor. Anlamaz hatta. Dolayısıyla, sınırları değiştireceğim yine. Bölgeyi bakın, işaretliyorum. Bölgeyi işaretledim. Bölgem...
+
+579
+01:44:35,060 --> 01:44:38,060
+Burada bölgeyi çizleyeyim de, bakın bölge...
+
+580
+01:44:44,115 --> 01:44:51,655
+x eşittir 1'den x eşittir 0'a. En dıştaki sabit sayılar bunlar.
+
+581
+01:44:52,916 --> 01:44:59,136
+Y'nin sınırları nereden nereye? Bakın y eşittir x'den y eşittir 1'e kadar olan bölge.
+
+582
+01:44:59,436 --> 01:45:02,676
+Yine benzer bir bölgemiz var. x eşittir y doğrusunu çiziyorum.
+
+583
+01:45:02,676 --> 01:45:06,996
+Ancak burada bakın y eşittir 1 doğrusu dediği için
+
+584
+01:45:07,667 --> 01:45:20,907
+x'in sınırları da sıfırdan biri, bölgem şu üst kısım oluyor. Diğerinden farklı olarak. Şimdi bakın, sınırları değiştireceğim. Yani e üzeri x'i'ye dx alacağım. Burada dy idi bakın, burada dx. Buraya dikkat edin.
+
+585
+01:45:34,579 --> 01:45:59,680
+fonksiyon olmalıydı. X'in fonksiyon olduğu duruma bakıyorum. X eksenim, y eksenim. Nereden nereye arkadaşlar? X eksenim, x eşittir 0'dan, değil mi? X eşittir 0 doğrusundan arkadaşlar. Nereye kadar? Şurayı bir temizleyelim. X eşittir 0 doğrusundan bakın arkadaşlar. Burası x eşittir 0 doğrusundan.
+
+586
+01:46:00,083 --> 01:46:02,864
+x eşittir, y doğrusuna kadar.
+
+587
+01:46:03,243 --> 01:46:04,243
+Bakın şöyle alıyorum.
+
+588
+01:46:05,003 --> 01:46:08,203
+x eşittir, y doğrusuna kadar aldım arkadaşlar.
+
+589
+01:46:09,268 --> 01:46:15,408
+y'nin sınırları nereden nereye bu sefer? Bu sefer y'yi sabit sayılar olarak alacağım arkadaşlar.
+
+590
+01:46:16,068 --> 01:46:21,748
+y'nin sınırları y'ştir 0 doğrusundan y'ştir 1 doğrusuna kadar arkadaşlar.
+
+591
+01:46:22,047 --> 01:46:25,108
+y'ştir 0 doğrusundan y'ştir 1 doğrusuna kadar.
+
+592
+01:46:25,528 --> 01:46:29,507
+Artık burada integral almak kolay. e üzeri x'i y'nin integral alınabiliyor.
+
+593
+01:46:30,307 --> 01:46:34,648
+Çünkü e üzeri x'i y bölü 1 bölü y dediğim zaman
+
+594
+01:46:35,283 --> 01:46:47,663
+Bunun türevini aldığımda x'e göre, zaten bunu verecek. Şurayı verecek, e üzeri x bölü y'yi verecek. Dolayısıyla bu integral artık alınabiliyor. Çünkü x'e göre integral alıyorum ben.
+
+595
+01:46:48,024 --> 01:47:00,323
+E üzeri x'in integralı da zaten kendisiydi. Artık integral almak kolay. E üzeri x'e bölü 1 bölü y. Yani y e üzeri x bölü y oldu. Y'nin sınırlarını da verdim sıfırdan y'ye.
+
+596
+01:47:00,703 --> 01:47:13,104
+y'de y çarpı, e üzeri x bölü y, eksi y çarpı, e üzeri 0 bölü y oldu. x yerine 0 yazdım. e üzeri 0'da 1 olduğu için burası y kaldı arkadaşlar.
+
+597
+01:47:13,903 --> 01:47:25,144
+e üzeri y eksi y, d y olmuş oldu arkadaşlar. Dolayısıyla e y kare bölü 2, eksi y kare bölü 2, 0'dan 1'e sınırlarım. Buranın da y'ye göre integralini aldım.
+
+598
+01:47:25,876 --> 01:47:32,136
+e çarpı y'nin integrali, e y kare bölü 2, eksi y'nin integrali, y kare bölü 2 arkadaşlar.
+
+599
+01:47:32,796 --> 01:47:37,736
+Dolayısıyla, buraya aldığım zaman, y eşittir sıfırdan 1'e,
+
+600
+01:47:41,492 --> 01:47:52,811
+Ne oldu? 1'i verdim. e bölü 2, eksi 1 bölü 2 oldu. 0 verdim. 0 oldu zaten. e eksi 1 bölü 2 olarak elde ediyorum arkadaşlar.
+
+601
+01:47:53,292 --> 01:48:06,792
+İntegrasyon sınırlarını değiştirme umarım alışılmıştır arkadaşlar. Haftaya artık iki katlı integrallerde düzlem alanların
+
+602
+01:48:07,412 --> 01:48:22,652
+Hesabı ve hacim hesabına geçeceğiz. Onları işleyeceğiz. Aynı zamanda kutupsal koordinatlarda hacim hesapları, daha sonra da katlı integrallerde Jacobian determinantını göreceğiz.
+
+603
+01:48:23,132 --> 01:48:34,112
+Bir bölgenin başka bir bölgeye nasıl taşındığını, nasıl orada Jacobian determinantıyla çözüldüğünü göreceğiz. Bunlar da katlı integrallerin farklı çözüm yöntemleri.
+
+604
+01:48:34,804 --> 01:48:43,804
+Ortalama değer teoremine bir bakalım. Ortalama değer teoreminde şu var. Diyelim ki iki katlı bir integral için...
+
+605
+01:48:44,467 --> 01:48:51,467
+1D bölgesi üzerinde fx'e integrallenebilir bir fonksiyonsa, bunun ortalama değerine 1 bölü D'nin alanı diyorum.
+
+606
+01:48:51,967 --> 01:48:55,607
+Bu YouTube videosunda da anlatmıştım onu, geçen gönderdiğim videolarda var.
+
+607
+01:48:56,027 --> 01:48:57,427
+fx'e D'a'dır bu.
+
+608
+01:48:58,087 --> 01:49:05,247
+Köşelere 0, 0, 1, 0 ve 1, 1'de olan dik üçgende x kare artı y kare fonksiyonunun ortalama değerini bulunuz demiş.
+
+609
+01:49:05,907 --> 01:49:07,907
+Burada direkt formülü kullanacağız arkadaşlar.
+
+610
+01:49:07,907 --> 01:49:11,947
+Bu dik üçgenin alanını biliyoruz, 1 bölü 2 yani.
+
+611
+01:49:12,467 --> 01:49:20,227
+0, 0 noktasını aldım. 1, 0 noktasını aldım. 1, 1 noktasını aldım. Bu üçgenin alanı 1, 2'dir.
+
+612
+01:49:22,327 --> 01:49:31,247
+a çarpı b, 2. Buradan üçgenin alanı buldum. Sınırları alıyorum. x'in sınırları 0'dan 1'e.
+
+613
+01:49:32,564 --> 01:49:46,944
+y'nin sınırları nereden nereye arkadaşlar? y'e 0'dan y'e x'e. Ne demiştik? İçerideki fonksiyonun sınırları, içerideki değişkene bağlı olan kısmın sınırları fonksiyonlar olacaktı.
+
+614
+01:49:47,764 --> 01:50:00,000
+Fonksiyona göre alıyorum. Yani y'e 0'dan y'e x'e kadar alıyorum. Şöyle aldığım zaman. Bakın burada artık integral hesabı. Bu integral hesapladığım zaman da x'e kadar alıyorum.
+
+615
+01:50:00,000 --> 01:50:26,539
+X'e göre integral aldım, bir temizleyelim. X'e göre integral aldım. Önce Y'e göre integral alıyorum. Y'e göre integral aldım. X kareye artı Y karenin integrali Y küp bölü 3. Bunun tekrar sınırları koyup Y yerine X koyduğum zaman X küp artı X küp bölü 3 oldu. Bunun da X'e göre integralini aldığım zaman X'e 4 bölü 4, X'e 4 bölü 12 oldu.
+
+616
+01:50:27,699 --> 01:50:35,199
+Ve hesapladığım zaman da, 2 bölü 3 olarak, bir fonksiyonun ortalama değerini hesaplıyorum arkadaşlar.
+
+617
+01:50:36,479 --> 01:50:37,559
+Bu da bu şekilde.
+
+618
+01:50:38,639 --> 01:50:49,179
+Şimdi, çok değişkenli fonksiyonlarda, katlı integralleri kullanarak alan ve hacim hesabı yapmam mümkün.
+
+619
+01:50:51,507 --> 01:50:56,327
+İlk olarak, hacim hesabına geçmeden önce, alan hesabına bakalım.
+
+620
+01:50:56,807 --> 01:51:08,507
+Alan hesabında arkadaşlar, D bölgesinde, direkt herhangi bir fonksiyon olmadan bakın burada, 1 verdiğimiz zaman, bu integral, bu katlı integral,
+
+621
+01:51:08,895 --> 01:51:12,055
+O bölgenin, D bölgesinin alanını verir arkadaşlarımız.
+
+622
+01:51:12,355 --> 01:51:13,435
+D bölgesinin alanını verir.
+
+623
+01:51:13,536 --> 01:51:14,335
+Alan eşittir.
+
+624
+01:51:14,515 --> 01:51:16,255
+İki katlı integral D bölgesinde,
+
+625
+01:51:16,996 --> 01:51:19,335
+Dx, D'ye şeklindedir arkadaşlar.
+
+626
+01:51:19,935 --> 01:51:22,775
+Şimdi mesela, bunu kullanalım.
+
+627
+01:51:23,355 --> 01:51:24,675
+Normalde biz bunu aslında,
+
+628
+01:51:25,935 --> 01:51:27,996
+tek katlı integral ile zaten hesaplıyorduk.
+
+629
+01:51:27,996 --> 01:51:30,615
+Ama aslında bunu, iki katlı integral ile de,
+
+630
+01:51:31,055 --> 01:51:32,755
+göstermek mümkün arkadaşlar.
+
+631
+01:51:33,635 --> 01:51:33,895
+Şimdi,
+
+632
+01:51:34,868 --> 01:51:44,528
+y kare eşittir 4x ile y eşittir 2x eksi 4 doğrusu arasında kalan alanı iki katlı integral ile hesaplayın demiş.
+
+633
+01:51:45,188 --> 01:51:58,128
+Bölgeyi çizeceğim arkadaşlar. y kare eşittir 4x bu parabol, x'e göre parabol ve y eşittir 2x eksi 4 doğrusu da bunu kesiyor buradan bakın.
+
+634
+01:51:58,128 --> 01:51:59,768
+Bu bölgeyi çiziyorum.
+
+635
+01:52:01,939 --> 01:52:14,039
+Daha sonra, x'in ve y'nin sınırlarını koyuyorum. x eşittir y kare bölü 2'den, normalde bakın y kare eşittir 4x'te, x eşittir y kare bölü 2'den, x eşittir y artı 4 bölü 2'ye.
+
+636
+01:52:15,599 --> 01:52:22,979
+y eşittir 2x eksi 4, ve denkleminde x'i yalnız bıraktığım zaman, x eşittir y artı 4 bölü 2 olur arkadaşlar.
+
+637
+01:52:23,879 --> 01:52:25,919
+x'in sınırları da nereden nereye arkadaşlar?
+
+638
+01:52:27,667 --> 01:52:50,047
+Fonksiyon olarak alındığı için, iki fonksiyon arasındaki sınır. Y'nin sınırları nereden nereye? Y eşittir. Bakın, eksi 2'den başlıyor. Çünkü bu noktada kesişiyor iki fonksiyon. Bunu nereden buldum? 4x'i, 2x eksi 4'ün karesini eşitledim. Neden karesini eşitliyorum? Bakın, ilk başta y kare fonksiyonu vermiş.
+
+639
+01:52:52,020 --> 01:52:56,980
+2x-4 yazdığım zaman, 2x-4'ün kareti, 4x eşit oldu. İki fonksiyonu birbirine eşitledim.
+
+640
+01:52:57,680 --> 01:53:05,300
+Buradan bu denklemi düzenlediğim zaman, x kare eksi 5x artı 4'ten, eksi 4, eksi 1 olarak elde ettim.
+
+641
+01:53:05,300 --> 01:53:13,200
+x eşittir. Bir noktasında, yani bu denklemi x-4 çarpı x-1 olarak ayırırım.
+
+642
+01:53:13,551 --> 01:53:19,231
+x eşitleri 1 noktasında y eşitleri eksi 2, x eşitleri 4 noktasında y eşitleri 4 olur arkadaşlar.
+
+643
+01:53:19,831 --> 01:53:26,551
+Dolayısıyla eksi 2'den 4'e kadar olan bölge. Yani kesişim noktaları altta eksi 2, üstte 4 arkadaşlar.
+
+644
+01:53:26,711 --> 01:53:31,611
+Bu bölgeyi çizip, iki denkle birbirine eşit, kesişim noktalarını bulabilirsiniz.
+
+645
+01:53:31,611 --> 01:53:36,611
+Şimdi kesişim noktalarını elde ettim. Daha sonra...
+
+646
+01:53:45,011 --> 01:54:05,831
+İntegrali alıyorum. X'e göre integral aldım. Zaten X'dir. X nereden nereye? Şöyle y²'den y²'den y². Yani dolayısıyla y² olarak alıyorum bu integral'i. Bunun y'ye göre integralini alacağım. Bunun y'ye göre integralini aldığım zaman da arkadaşlar,
+
+647
+01:54:09,555 --> 01:54:19,996
+y'ye göre integralini aldığım zaman da, y artı 4 bölü 2 eksi y kare bölü 2'nin integralide 9 olarak elde ediliyor arkadaşlar.
+
+648
+01:54:20,836 --> 01:54:21,956
+Şimdi diğer soruya bakalım.
+
+649
+01:54:23,036 --> 01:54:24,715
+Diğer soru da, bu da benzer şekilde.
+
+650
+01:54:26,076 --> 01:54:34,315
+Önce, y eşitir elen x'den, y eşitir 1'e, x eşitir 0'dan, ve y eşitir 0 eğrileriyle,
+
+651
+01:54:34,771 --> 01:54:50,391
+sınırladığı alanı vermiş. Yani orijinden, x eşittir 0, y eşittir 0 eğrilerini, x eşittir 0 eğrisini istiyorum şu anda. Bu da y eşittir 0 eğrileriyle. Bir de y eşittir lnx eğrisiyle.
+
+652
+01:54:51,671 --> 01:54:59,211
+y eşittir lnx eğrisiyle. Bir diğer eğrim de, ne arkadaşlar, y eşittir 1 eğrisiyle sınırlı bölgenin alanı sormuş.
+
+653
+01:55:01,203 --> 01:55:04,443
+integral dydx ya da dxdx yapacağım.
+
+654
+01:55:05,383 --> 01:55:06,303
+dxdx yapacağım.
+
+655
+01:55:07,103 --> 01:55:09,523
+Önce dydx'i hesaplayalım.
+
+656
+01:55:10,363 --> 01:55:14,023
+Şimdi bakın arkadaşlar, burada şuna dikkat edelim.
+
+657
+01:55:14,823 --> 01:55:16,603
+Burada iki tane bölge var aslında.
+
+658
+01:55:16,603 --> 01:55:20,063
+Şuradan böldüğüm zaman, burası zaten bir üçgen aslında.
+
+659
+01:55:20,823 --> 01:55:23,843
+Buranın uzunluğu 1, buranın uzunluğu 1, 1 kere 1, 1.
+
+660
+01:55:24,503 --> 01:55:26,443
+Buranın uzunluğu 1.
+
+661
+01:55:28,819 --> 01:55:41,279
+Dikdörtgenin alanından da hesaplayabilirim. Ya da iki kat integral, sıfırdan bire y'ye göre, sıfırdan bire x'e göre integral olarak da hesaplayabilirim. Böyle de alsam bir, böyle de alsam bir olur.
+
+662
+01:55:43,079 --> 01:55:55,339
+İkinci bölge, asıl integral ile ilgilendiren bölge benim için. Bakın ikinci bölgede y eşittir lnx'den, yani y eşittir lnx fonksiyonundan arkadaşlar.
+
+663
+01:55:55,855 --> 01:56:01,655
+y eşittir, bir bölgesine kadar integral alıyorum. İlk başta y'ye göre aldım.
+
+664
+01:56:02,195 --> 01:56:07,975
+y'nin sınırları da, y eşittir, elin x'den başlıyor, yukarı doğru, y eşittir, bire kadar.
+
+665
+01:56:08,395 --> 01:56:16,315
+x'in sınırları nereden nereye arkadaşlar? x'e göre bakıyorum. x buradan başlıyor, x eşittir, bir doğrusundan, x eşittir, e'ye kadar geliyor arkadaşlar.
+
+666
+01:56:17,275 --> 01:56:23,215
+x eşittir, birden, x eşittir, e'ye geliyor arkadaşlar.
+
+667
+01:56:25,844 --> 01:56:38,323
+x eşitir birden, x eşitir e'ye geliyor. Ve dolayısıyla, burayı da hesapladığım zaman, bu bölgenin alanını hesaplıyorum. Bu integralı alıp hesaplayabilirsiniz arkadaşlar.
+
+668
+01:56:39,443 --> 01:56:48,623
+Alan da bu şekilde hesaplanıyor arkadaşlar. Buraya kadar anlaşılmayan bir kısım var mı? Bundan sonra artık iki katlı integrallerde hacim nasıl hesaplanır?
+
+669
+01:56:49,300 --> 01:56:58,320
+Bu bölgenin hacimleri nasıl hesaplanır? Kutupsal koordinatlarda nasıl hesaplanır? Ve Jacobian determinantı nasıl hesaplanır? Haftaya da onlara bakacağız arkadaşlar.
+
+670
+01:57:01,560 --> 01:57:05,780
+Bugünlük dersimiz bu kadar. Hepinize iyi günler diliyorum arkadaşlar.

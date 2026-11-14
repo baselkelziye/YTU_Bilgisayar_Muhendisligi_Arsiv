@@ -1,0 +1,1999 @@
+1
+00:13:42,707 --> 00:13:51,707
+Günaydın arkadaşlar. En son kutupsal koordinatlarda kaldık. Kutupsal koordinatlarda biz ne yapıyorduk? İkisiye kartezyen koordinat düzlemini.
+
+2
+00:13:51,707 --> 00:13:54,267
+Bir, R, Theta.
+
+3
+00:14:02,163 --> 00:14:07,864
+R theta ile belirtilmiş bir kutupsal koordinat düzlemine taşıyorduk.
+
+4
+00:14:08,104 --> 00:14:09,063
+R theta neydi?
+
+5
+00:14:10,943 --> 00:14:16,323
+R theta, uzunluk ve açı ile ifade edilen bir koordinat düzlemiydi.
+
+6
+00:14:17,203 --> 00:14:26,984
+Yani biz, x'ye kartezen koordinat düzlemine bir R theta ile belirtilmiş uzunluğa ve açıya bağlı bir düzleme taşımaya çalışıyorduk.
+
+7
+00:14:26,984 --> 00:14:28,004
+Ve bu şekilde.
+
+8
+00:14:29,620 --> 00:14:32,019
+Bazı integral çözümlerini ileride yapacaktık.
+
+9
+00:14:32,980 --> 00:14:39,100
+Kutupsal koordinat düzemiyle ilgili bazı açıklamalar yapmıştık.
+
+10
+00:14:39,980 --> 00:14:45,879
+Mesela, kutupsal koordinat düzleminde 3 pi bölü 4 ne demektir?
+
+11
+00:14:56,639 --> 00:14:59,939
+Kutupsal eksen ile, burada da kutupsal eksen diyorduk.
+
+12
+00:15:02,559 --> 00:15:03,860
+Kutupsal eksen ile
+
+13
+00:15:07,508 --> 00:15:11,588
+pi bölü 4 açısını yapan bir noktaydı.
+
+14
+00:15:12,448 --> 00:15:17,908
+Bakın, 3 birim uzunlukta, kutupsal eksen ile pi bölü 4 açısını yapan noktaydı.
+
+15
+00:15:19,508 --> 00:15:24,288
+Ve farklı noktalarda, farklı biçimlerde ifade etmiştik.
+
+16
+00:15:34,515 --> 00:15:37,235
+Ve kutupsal denklemlerin grafiklerine baktık.
+
+17
+00:15:37,915 --> 00:15:49,675
+Mesela, R eşittir 1'in kutupsal koordinat düzleminde ifade ettiği şey nedir?
+
+18
+00:15:49,675 --> 00:15:51,355
+Ona baktık.
+
+19
+00:15:52,435 --> 00:15:55,795
+R eşittir 1, bir uzunluklu,
+
+20
+00:16:00,884 --> 00:16:12,344
+Bir birim uzunluklu, uzunluğu bir birim olan noktanın kutupsal eksen etrafında 360 derece döndüğünde oluşturduğu şekildir.
+
+21
+00:16:13,104 --> 00:16:16,864
+Bu şekil nedir? Bakın bunu 360 derece döndürelim burada.
+
+22
+00:16:18,144 --> 00:16:20,043
+Bir çember oluşturur.
+
+23
+00:16:21,403 --> 00:16:26,344
+Reştir, eksi bir de benzerdir. Eksi bir, ters yönde bir birim uzunluklu.
+
+24
+00:16:27,796 --> 00:16:34,776
+Bir çizgidir. Bu da 360 derece döndüğünde, yine bir çember oluşturur arkadaşlar.
+
+25
+00:16:36,115 --> 00:16:38,076
+Teta eşitir, pi bölü 6 açısı nedir?
+
+26
+00:16:39,916 --> 00:16:43,376
+Pi bölü 6 uzunluklu. Doğrudur bu da arkadaşlar.
+
+27
+00:16:44,236 --> 00:16:48,396
+Bakın, pi bölü 6 açısına sahip. Uzunluğu belli olmayan. Doğrudur.
+
+28
+00:16:55,028 --> 00:17:00,307
+R1 ile 2 arasındaysa ve teta 0 ile pi bölü 2 arasındaysa ne oluşturur?
+
+29
+00:17:00,668 --> 00:17:07,788
+Bakın yarı çap 1 ile 2 arasında. 1'den 2'ye kadar. Şu uzunluk. Şurası.
+
+30
+00:17:08,596 --> 00:17:24,976
+Theta ise sıfırdan pi bölü 2'ye. Theta eşittir sıfır burasıdır. Theta eşittir pi bölü 2 burasıdır. O zaman bu aralığı almamız gerekiyor. 1-2 arasında Theta'nın sıfırdan pi bölü 2'ye kadar olduğu kısım burasıdır arkadaşlar. Burayı, bu taralı alanı alıyorum.
+
+31
+00:17:26,996 --> 00:17:38,236
+teta kısıtlaması olmasaydı, yani sadece R birden büyük, ikiden küçük eşit olsaydı. Bu durumda da 1-2 aralığındaki bakın bu simiti alıyorum.
+
+32
+00:17:43,092 --> 00:17:50,592
+R-3 ile 2 aralığındaysa, x-3 ile 2'ye kadar gidiyorum, çizgi çiziyorum bakın, x-3 ile 2'ye kadar.
+
+33
+00:17:52,672 --> 00:17:58,492
+Ve pi bölü 4 açısı, teta eşitir pi bölü 4 ise, bu şekilde çiziyorum arkadaşlar.
+
+34
+00:18:01,132 --> 00:18:07,472
+Teta 2 pi bölü 3 ile 5 pi bölü 6 aralığındaysa, teta eşitir 2 pi bölü 3'ü aldım.
+
+35
+00:18:11,124 --> 00:18:21,104
+Doğru bu. Theta'nın 5 pi bölü 6 olduğu doğru. Bu arkadaşlar, arasında kalan bölge. Burası. Bu şekilde belirtiyorum arkadaşlar.
+
+36
+00:18:23,663 --> 00:18:25,244
+R2 ile 3 arasında.
+
+37
+00:18:33,587 --> 00:18:35,107
+R2 ile R3 arasında
+
+38
+00:18:39,155 --> 00:18:42,096
+teta sıfırla pi bölü 6 arasında.
+
+39
+00:18:43,556 --> 00:18:46,635
+Şuraya bakın, 2'den 3'e kadar.
+
+40
+00:18:48,755 --> 00:18:50,415
+Teta nereden de reymiş?
+
+41
+00:18:51,115 --> 00:18:53,596
+Sıfırdan büyük eşitmiş, pi bölü 6'dan küçükmüş.
+
+42
+00:18:54,455 --> 00:18:56,695
+Sıfırdan büyük eşit olduğu için burayı kapalı alıyorum.
+
+43
+00:18:57,695 --> 00:19:01,475
+Pi bölü 6'dan küçük olduğu için burayı nokta nokta alıyorum.
+
+44
+00:19:01,475 --> 00:19:02,516
+Bakın bu aralık.
+
+45
+00:19:04,403 --> 00:19:11,064
+Keta 0 pi böl 6, r 2 3 aralığı olmuş oluyor. Bu bölgeyi işaretliyorum arkadaşlar.
+
+46
+00:19:12,584 --> 00:19:15,144
+r eksi 1 ile 2 aralığındaysa,
+
+47
+00:19:18,324 --> 00:19:25,144
+R-1 ile 2 aralığında, x-1'den 2'ye kadar olan kısım buradan, burasıdır bakın.
+
+48
+00:19:26,584 --> 00:19:30,304
+x-1 burası olsun mesela, 2 de burasıdır.
+
+49
+00:19:31,264 --> 00:19:33,064
+Teta ise x-2 pi bölüşmüş.
+
+50
+00:19:33,423 --> 00:19:37,324
+Bakın ters yönde, x-2 pi bölüş kadar gidecek.
+
+51
+00:19:37,764 --> 00:19:39,824
+Ters yönde, x-2 pi bölüş kadar gidecek.
+
+52
+00:19:40,084 --> 00:19:41,403
+x-2 pi bölüş nedir?
+
+53
+00:19:41,664 --> 00:19:43,364
+Ters yönde, x-2 pi bölüş açısıdır.
+
+54
+00:19:44,115 --> 00:20:10,996
+O zaman ne olacak? Bu tam tersi dönecek. Yani dolayısıyla, eksi bir buraya gelecek. Bu tam ters döndüğü zaman, şurada olduğunu düşünelim mesela bunun. Yani eksi bir, ikiyi sıfırda alalım. Sıfırdan iki pi'yi bir üç açısı kadar ters dönsün. O zaman iki birim buraya gelir, eksi bir burada olmuş olur arkadaşlar.
+
+55
+00:20:13,491 --> 00:20:15,551
+Buraya kadar anlaşılmayan bir kısım var mı?
+
+56
+00:20:20,276 --> 00:20:26,396
+Daha sonra da arkadaşlar, kutupsal koordinatlar ile kartezyen koordinatlar arasındaki bağıntıyı kurduk.
+
+57
+00:20:32,372 --> 00:20:34,251
+Bu bağlantıyı nasıl sağlıyorduk?
+
+58
+00:20:34,971 --> 00:20:38,892
+X için R cos theta, Y için de
+
+59
+00:20:42,675 --> 00:20:56,155
+R sin teta diyerek, kartezyen koordinat düzemini, kutupsal koordinat düzemini taşıyorduk. Bu durumda x kare artı y kare, r kare eşittir. Çünkü x kare artı y kare, r kare cos kare teta artı r kare sin kare teta'dır.
+
+60
+00:20:57,556 --> 00:21:04,375
+Cos kare teta artı sin kare teta 1 olduğu için, bu r kare olarak elde edilir.
+
+61
+00:21:10,003 --> 00:21:16,203
+Biz, kutupsal denklemlerini ifade edelim. Mesela, x kare artı y kare eşittir, a kareyi ifade edelim.
+
+62
+00:21:17,683 --> 00:21:23,783
+x kare artı y kare eşittir, a kare çemberinin kutupsal denklemini yazalım.
+
+63
+00:21:25,183 --> 00:21:33,263
+x eşittir, r koste dedik, y eşittir, r sintet edik, x kare artı y kare eşittir, r kare koste artı, r kare sin kare artı da r kare oldu.
+
+64
+00:21:33,983 --> 00:21:35,183
+Bu da a kareyi eşitmiş.
+
+65
+00:21:36,463 --> 00:21:36,923
+O zaman,
+
+66
+00:21:37,364 --> 00:21:40,324
+R eşittir, A olmuş olur arkadaşlar.
+
+67
+00:21:47,955 --> 00:21:52,215
+Başka bir çember denklemi. Bunun kutupsal denklemini yazın diyor.
+
+68
+00:21:53,535 --> 00:21:59,715
+x kare eşittir y eksi 3'ün karesi eşittir 9 çemberinin kutupsal denklemini yazın diyor.
+
+69
+00:22:04,723 --> 00:22:24,683
+x yerine r kos teta, y yerine r sinteta yazdım. Dolayısıyla zaten şunu biliyorum, x kare artı y kare, r kareye eşit, eksi 6 y de, dolayısıyla bakın, y yerine r sinteta yazarsam, eksi 6 r sinteta olmuştur.
+
+70
+00:22:28,564 --> 00:22:36,324
+Ben bu x kare artı y x 3'ün kare seçtiği 9'u kutupsal koordinatlarda r eşitir 6 sin teta olarak ifade edebilirim.
+
+71
+00:22:37,524 --> 00:22:47,564
+Bakın burası y eşittir f x fonksiyonu belirliyorduk kartezyen koordinatlarda ya da y x fonksiyonu olarak ifade ediyorduk.
+
+72
+00:22:47,804 --> 00:22:52,584
+Yani y x'e bağlı bir fonksiyonu. Burada r eşittir r teta.
+
+73
+00:22:53,140 --> 00:22:58,060
+R, theta'ya bağlı bir fonksiyon olarak ifade ediliyor kartezyen koordinatlarda.
+
+74
+00:22:58,920 --> 00:23:02,680
+Şimdi R kare eşitir akarekos 2 theta'nın kartezyen denklemini yazalım.
+
+75
+00:23:02,920 --> 00:23:06,640
+Yani, bu kutupsal koordinatlarda verilmiş bir denklem.
+
+76
+00:23:06,980 --> 00:23:10,860
+Bakın, R kare eşitir akarekos 2 theta, R, theta'ya bağlı bir fonksiyon.
+
+77
+00:23:11,740 --> 00:23:13,420
+Bunun kartezyen denklemini yazalım.
+
+78
+00:23:14,640 --> 00:23:18,060
+Şunu biliyoruz, x eşitir r cos theta, y eşitir r sin theta.
+
+79
+00:23:19,316 --> 00:23:28,476
+Olarak yazdığımız zaman, karteziyen koordinatları, kutsal koordinatları ya da kutsal koordinatlarda verilmiş bir ifadeyi karteziyen koordinatları taşıyabiliriz.
+
+80
+00:23:28,596 --> 00:23:33,436
+O zaman cos 2 theta, cos kare theta, eksis sin kare theta olduğunu biliyoruz.
+
+81
+00:23:33,556 --> 00:23:34,996
+Cos 2 theta yerine bunu yazalım.
+
+82
+00:23:40,211 --> 00:23:47,072
+R kare eşittir, a kare parantezinde, cos 2 theta yerine cos kare theta, x sin kare theta yazdım arkadaşlar.
+
+83
+00:23:48,652 --> 00:23:52,751
+cos kare theta, şimdi cos theta, x bölü r'dir.
+
+84
+00:23:55,491 --> 00:23:59,451
+x eşittir r cos theta'ydı, cos theta da x bölü r'dir.
+
+85
+00:23:59,951 --> 00:24:04,552
+O zaman cos kare theta, x kare bölü r karedir arkadaşlar.
+
+86
+00:24:04,552 --> 00:24:06,251
+x kare bölü r karedir.
+
+87
+00:24:07,316 --> 00:24:32,275
+Sin teta ise, y eşittir, r sin tetaydı. Sin teta ise, y bölü r'dir. Sin kare teta nedir o zaman? y kare bölü r karedir. Burayı açıkça yazdığım zaman, a kare bölü r kare parantizine, bu r kare parantizine aldığım ifadeyi, x kare eksi, y kare olur burası arkadaşlar.
+
+88
+00:24:33,460 --> 00:24:35,140
+x kare eksi, y kare olur.
+
+89
+00:24:36,240 --> 00:24:42,760
+Bu re kareyi de bu tarafa attığım zaman, burası re kare çarpı re kare, yani re karenin karesi olmuş olur.
+
+90
+00:24:43,740 --> 00:24:46,599
+Burası da a kare çarpı x kare eksi, y kare oldu zaten.
+
+91
+00:24:48,200 --> 00:24:52,460
+Peki, re kare nedir? Bakın bu ifadede sadece...
+
+92
+00:24:56,276 --> 00:25:12,596
+X'e ve Y'ye bağlı değerler olmasını arzu ediyoruz. Bunun sebebi ne? Bizden kutupsal koordinatlarda verilmiş bir ifadenin, kartezyen koordinatlarda verilmiş, kartezyen koordinatlara taşınmış halini istiyor.
+
+93
+00:25:13,716 --> 00:25:23,196
+Kutupsal koordinatlarda verilmiş bir ifadenin, kartezyen denklemini istiyor. Dolayısıyla, ben bu ifadenin kartezyen denklemini yazayım.
+
+94
+00:25:27,988 --> 00:25:55,628
+x kare artı y karenin karesi eşittir. a kare çarpı x kare eksi y kare olarak elde ederim. Bunu nasıl elde ettim? Bakın, burada bir r var. r, kartetezyen koordinatlarda olmaması gereken bir ifade. Sadece r değil, r kare var. r karenin x kare artı y kare olduğunu biliyorum. r kare yerine x kare artı y kare yazarsam, burası x kare artı y karenin karesi eşittir. a kare çarpı x kare eksi y kare olarak.
+
+95
+00:25:56,339 --> 00:26:01,339
+Kartizyen koordinatlarda ifade edilmiş olur arkadaşlar.
+
+96
+00:26:54,804 --> 00:27:00,764
+Şimdi de R eşittir. 4 bölü 2 cos theta eksi sint theta. Kartezyen denklemini yazalım.
+
+97
+00:27:03,184 --> 00:27:13,944
+Bakın, R çarpı 2 cos theta eksi sint theta'tır. Burası, burası da 4 cos theta yerine 2R cos theta. R'yi dağıtıyorum.
+
+98
+00:27:14,771 --> 00:27:42,231
+R'yi dağıtıp sin teta yerine, eksi R sin teta yazdım, eşittir 4 oldu. Bakın, bu ifadede R cos teta'nın X olduğunu, R sin teta'nın da Y olduğunu biliyorum. Bunun yerine X, bunun yerine Y yazdım. 2X eksi Y eşittir 4 olarak kartezyen koordinatlarda ifade etmiş oldum. Bunu biraz daha düzenlersem, yani Y'yi yalnız bırakırsam, Y eşittir 2X eksi 4 olarak kartezyen koordinatlarda ifade ediliş biçimini bulurum arkadaşlar.
+
+99
+00:27:43,508 --> 00:27:59,588
+Kutupsal denklem ve kartezyen denklikleri var. Bakın burada da r cos theta eşittir 2. Bu r cos theta yerine x yazarım. x eşittir 2 olur. r kare cos theta sin theta eşittir 4 vermiş.
+
+100
+00:28:00,019 --> 00:28:05,119
+Burada R kostete ve R sintete yerine X ve Y yazarsam, X çarpı Y eşitir 4 olur.
+
+101
+00:28:05,759 --> 00:28:08,259
+Benzer şekilde diğer denklemleri de elde edebilirim.
+
+102
+00:28:08,460 --> 00:28:11,000
+Bunların açılımlarını ödev olarak yazın demiştim.
+
+103
+00:28:11,139 --> 00:28:19,059
+En azından bir kutupsal denklemi kartezyen koordinatlara, bir kartezyen koordinatlardaki denklimi de kutupsal koordinatlara taşıyın demiştim.
+
+104
+00:28:19,839 --> 00:28:21,199
+Hiç kimse ödevini yapmamış.
+
+105
+00:28:24,019 --> 00:28:27,000
+En azından 1-2 kişi gönderseydi sevinirdim.
+
+106
+00:28:28,019 --> 00:28:31,480
+Her neyse. Şimdi simetriye geçelim.
+
+107
+00:28:34,932 --> 00:28:36,471
+Reştir f detada
+
+108
+00:28:41,460 --> 00:29:00,500
+teta yerine, eksi teta yazdığımızda, f eksi teta eşittir, f teta eşittir, re ise, yani, eksi teta yazdığımda oluşan denklemle, teta yazdığımda oluşan denklem birbirine eşitse, kutup eksenine göre simetri vardır.
+
+109
+00:29:00,500 --> 00:29:06,500
+Yani, a, re, teta ve a üstü, re, teta olarak bakın.
+
+110
+00:29:08,435 --> 00:29:18,455
+Bu noktayla, bu nokta, kutupsal eksene göre birbirine simetriktir. Yani kutupsal eksene aynı uzunluktadır arkadaşlar.
+
+111
+00:29:19,615 --> 00:29:32,556
+R eşittir f theta'da, theta yerine eksi theta yazılınca, bakın f eksi theta eşittir, eksi f theta eşittir, eksi re oluyorsa, theta eşittir pi bölü 2'ye göre simetri vardır.
+
+112
+00:29:39,316 --> 00:29:53,855
+Oluşturduğumuz, teta eşitir pi bölü 2 açısına sahip olan, 90 derecelik açıya sahip olan, bu çizgiye göre birbirine simetriktir.
+
+113
+00:29:54,375 --> 00:30:04,735
+Ar teta, a eksi re eksi teta'ya, eşit uzaklıktaysa teta eşitir pi bölü 2'ye göre, bakın birbirine göre simetriktir bunlar.
+
+114
+00:30:06,708 --> 00:30:18,428
+R eşittir F theta'da, theta yerine P eksi theta yazılınca, F P eksi theta eşittir, F theta eşittir R ise, bu durumda theta eşittir P bölü 2'ye göre yine simetri vardır.
+
+115
+00:30:19,488 --> 00:30:29,708
+Yani F P eksi theta, F theta eşitse, bakın, AR theta burası zaten, dikkat edin, P eksi theta zaten, bu theta'dan...
+
+116
+00:30:31,220 --> 00:30:48,639
+teta açısı yapmış, ar teta. Burada pi eksi teta açısı yapmış. Zaten bakın, 90 dereceye göre aynı uzunlukta yere geliyor. Dolayısıyla ar pi eksi teta da pi bölü 2'ye göre simetrik olmuş oluyor arkadaşlar.
+
+117
+00:30:58,963 --> 00:31:13,483
+R eşittir F theta'da, theta yerine P eksi theta yazarsak, theta yerine P eksi theta yazarsak, F P eksi theta eşittir, eksi F theta eşittir, eksi R ise kutup eksenine göre simetral.
+
+118
+00:31:13,483 --> 00:31:24,703
+Bakın P eksi theta, eksi F theta eşittir, yani eksi R eşittir. Dolayısıyla P eksi theta'yı aldım, normalde buraya gelmesi gerekiyor değil mi?
+
+119
+00:31:25,523 --> 00:31:42,503
+teta, pi eksi teta burası, bu nokta. Ama ne olmuş? Eksi re olmuş sonuç. Yani, tam tersi yönde, aynı birim uzunlukta gitmemiz gerekiyor. O zaman, a üstü, eksi re, pi eksi teta noktasını elde ediyorsam ben,
+
+120
+00:31:42,900 --> 00:31:48,860
+tete yerine pi eksi tete aldığımda, o zaman bakın, kutupsal eksene göre simetri vardır.
+
+121
+00:31:48,980 --> 00:31:53,720
+Yani kutupsal eksene, burası ne kadar uzaktaysa, burası da o kadar uzaktadır.
+
+122
+00:31:55,440 --> 00:32:00,240
+Yani kutupsal eksene göre, burası simetriktir arkadaşlar.
+
+123
+00:32:12,403 --> 00:32:26,903
+R eşittir F theta'da, theta yerine, P artı theta yazınca, F P artı theta, yine R'ye eşitse bakın, neye göre simetri vardır?
+
+124
+00:32:28,063 --> 00:32:38,644
+Orijine göre simetri vardır. Çünkü bakın, A R theta, P artı theta yazdım, hop buraya geldi.
+
+125
+00:32:40,788 --> 00:32:44,048
+Yine bakın, R uzunluğa sahip. O zaman ne diyorum?
+
+126
+00:32:45,208 --> 00:32:48,427
+Orijine göre simetri vardır diyorum.
+
+127
+00:32:54,451 --> 00:33:03,092
+Yine R theta eğri üzerindeyken, eksi R theta da bu eğri üzerindeyse, yine orjine göre simetri vardır arkadaşlar.
+
+128
+00:33:04,231 --> 00:33:12,251
+Bakın R theta, eksi R theta eğri üzerindeyse, yine orjine göre simetri bulunuyor.
+
+129
+00:33:14,092 --> 00:33:21,152
+Şimdi, kutupsal koordinatlarda belirtilen, verilmiş bir,
+
+130
+00:33:21,683 --> 00:33:24,423
+fonksiyonun türevini nasıl alırız ona bakalım.
+
+131
+00:33:32,627 --> 00:33:34,907
+Buraya kadar anlaşılmayan bir kısım var mı arkadaşlar?
+
+132
+00:35:50,579 --> 00:35:57,819
+Şimdi türeve geçmeden önce arkadaşlar, parametrik denklemler isimli bir konumuz var. Onu işlememiz gerekiyor.
+
+133
+00:36:05,268 --> 00:36:06,148
+Onunla ilgili
+
+134
+00:36:11,668 --> 00:36:16,168
+Notu da size gönderdim Zoom'dan, Whatsapp'tan da atıyorum.
+
+135
+00:36:17,827 --> 00:36:20,228
+Önce onu bir işleyeceğiz.
+
+136
+00:36:20,728 --> 00:36:22,928
+Parametrik denklemlere giriş yapacağız.
+
+137
+00:36:23,588 --> 00:36:27,748
+Sonra kutupsal koordinatlarda türev kavramına bakacağız arkadaşlar.
+
+138
+00:40:19,635 --> 00:40:32,876
+Parametrik denklemlerde, x'ye kartezyen koordinat düzeninde verilmiş x ve y değişkenlerini, x eşittir f'te ve y eşittir g'te şeklinde, iki tane fonksiyon olarak tanımlıyoruz.
+
+139
+00:40:32,876 --> 00:40:45,496
+Yani, bakın, burada, x eşittir f'te ve y eşittir g'te olarak,
+
+140
+00:40:47,827 --> 00:40:58,087
+Tanımladığımızda, x'ye kartezen koordinat düzenindeki x'ye noktaları, ft, gt fonksiyonlarıyla belirtilmiş oluyor.
+
+141
+00:40:58,627 --> 00:41:02,608
+Ve bu noktalar kümesi, bir parametrik eğriyi veriyor bize.
+
+142
+00:41:03,387 --> 00:41:07,288
+Bu denklemlere de eğrinin parametrik denklemleri diyoruz.
+
+143
+00:41:07,288 --> 00:41:13,228
+Burada t, bu eğri için bir parametre olarak ifade etmiş.
+
+144
+00:41:14,579 --> 00:41:39,840
+oluyoruz. I parametre aralığı, T ise bu. Bu oluşturacağımız eğri için bir parametredir. Mesela I'yı AB aralığı olarak alalım. Yani T, A ile B arasında olsun. Bu durumda eğrinin başlangıç noktası FAGA, bitiş noktası FBGB olur.
+
+145
+00:41:41,235 --> 00:41:47,895
+Bu aralıkla birlikte, denklemlere eğrinin bir parametrizasyonu diyeceğiz.
+
+146
+00:41:49,775 --> 00:41:56,515
+Yani mesela, x'ye düzleminde hareket eden bir parçacığın bıraktığı iz,
+
+147
+00:41:57,748 --> 00:42:02,688
+Her zaman bir fonksiyonun veya tek bir denklememiz grafiği değildir.
+
+148
+00:42:03,108 --> 00:42:06,327
+Bir eğrinin aslında birden fazla parametrizasyonu vardır.
+
+149
+00:42:06,908 --> 00:42:12,088
+Yani mesela FTGT parçacının T anındaki konumu olarak belirtirsek,
+
+150
+00:42:12,088 --> 00:42:15,588
+burada x'ye yerine
+
+151
+00:42:15,920 --> 00:42:19,320
+f, t, g, t fonksiyonları olarak belirtmiş oluruz.
+
+152
+00:42:19,800 --> 00:42:23,119
+Ve bir t anında konumu da burasıdır.
+
+153
+00:42:23,500 --> 00:42:26,220
+Diyelim ki böyle bir eğri çizdiğini varsayalım.
+
+154
+00:42:27,180 --> 00:42:32,619
+Mesela, bir örnek olarak, x eşittir, t kare olsun.
+
+155
+00:42:33,460 --> 00:42:35,960
+y eşittir de, t artı 1 olsun.
+
+156
+00:42:37,180 --> 00:42:39,699
+x eşittir, t kare dedik.
+
+157
+00:42:41,715 --> 00:42:51,855
+y eşittir de t artı 1 şeklinde bir fonksiyon belirledik. Bakın burada x eşittir, x t fonksiyonu eşittir, t kare oldu.
+
+158
+00:42:53,675 --> 00:43:01,895
+y eşittir, bir y t fonksiyonu eşittir, t artı 1 olarak parametrize etmiş olduk.
+
+159
+00:43:03,175 --> 00:43:07,135
+Bu parametrizasyon da t eksi sonsuz sonsuz aralığında olsun.
+
+160
+00:43:09,492 --> 00:43:11,372
+xy cinsinden bulup çizelim.
+
+161
+00:43:16,307 --> 00:43:26,768
+y eşittir t artı 1'di. O zaman t eşittir y eksi 1'dir. Yani t yerine denklemde y eksi 1 yazabilirim.
+
+162
+00:43:27,427 --> 00:43:38,327
+x eşittir t kare olarak ifade edilmişti. t neydi? y eksi 1'di. t yerine y eksi 1 yazarsam x eşittir y eksi 1'in karesi olur.
+
+163
+00:43:43,092 --> 00:43:53,372
+Bu şekilde çizdiğimde aslında bu parametrik olarak verilmiş eğrinin denklemini kertesiyen koordinat düzeninde ifade etmiş olurum arkadaşlar.
+
+164
+00:43:53,672 --> 00:43:55,112
+Anlaşılmayan bir yer var mı burada?
+
+165
+00:47:02,804 --> 00:47:13,543
+Mesela, x eşittir, a koste de, a koste, y eşittir de, a sin t verdiğini bahsettir.
+
+166
+00:47:14,624 --> 00:47:21,244
+Ve t sıfırla iki pi aralığında olsun. Böyle bir parametrizasyondan bahsetsin.
+
+167
+00:47:22,844 --> 00:47:27,804
+Bu parametrik denklemin grafiğini çiziniz diyor. Arkadaşlar, bu hangi...
+
+168
+00:47:30,164 --> 00:47:41,284
+İfadeye benziyor. İşlediğimiz hangi konuya benziyor? X'iştir A, Kostya, Y'iştir A, Sin, D, T'de sıfırla iki pi aralığındaymış. Bu neye benziyor arkadaşlar?
+
+169
+00:47:42,423 --> 00:47:44,204
+Kutupsal koordinatlara benziyor.
+
+170
+00:47:45,124 --> 00:47:56,844
+Güzel, teşekkürler. Bakın, aslında kutupsal koordinatlar da bir çeşit bizim için parametrizasyon arkadaşlar. Bir çeşit parametrizasyon.
+
+171
+00:47:58,099 --> 00:48:20,460
+x kare artı y kare alalım. a kare kos kare t artı a kare sin kare t eşittir a kare olmuş oldu. Yani a yarı çaplı merkezi çember. t eşittir 0'da x eşittir a, y eşittir 0 olur. t eşittir 2 pi'de x eşittir a, y eşittir 0 olur. Bakın.
+
+172
+00:48:25,012 --> 00:48:39,731
+A uzunluklu, yani x kare artı yaklaştır A olduğu için, A uzunluklu, t sıfırla iki pi aralığında, sıfırla iki pi aralığında oluşturulan çemberi elde ederiz.
+
+173
+00:48:41,432 --> 00:48:47,731
+Bakın, x eşitir A koste, y eşitir A sinte denklemleri, dolayısıyla,
+
+174
+00:48:48,211 --> 00:48:53,971
+x kare artı y kare eşitir a kare, çemberi üzerindeki hareketi tanımlarlar.
+
+175
+00:48:57,940 --> 00:49:06,539
+Demek ki bakın, bu çember üzerindeki hareketi, x eşitir a koste ve eşitir a sinte denklemleriyle tanımlıyoruz.
+
+176
+00:49:16,724 --> 00:49:25,244
+x eşitir 1 artı 2 koste, y eşitir 2 sin t parametrizasyonu ile bir eğri verilmiş. Bu eğriyi bulalım arkadaşlar.
+
+177
+00:49:26,704 --> 00:49:34,543
+x eşitir 1 artı 2 koste, y eşitir 2 sin t. Ne yapacağız? Sin t'yi ve koste'yi yalnız bırakmaya çalışacağız.
+
+178
+00:49:34,684 --> 00:49:41,284
+Yani t'yi x veya y cinsinden elde edip diğer denklemde yazmaya çalışacağız. Amacımız bu arkadaşlar.
+
+179
+00:49:43,507 --> 00:50:00,827
+cos t eşittir, x eksi, 1 bölü 2. cos t'yi yalnız bıraktım, 1 bu tarafa gitti, x eksi 1 bölü 2 oldu cos t. sin t nedir? y bölü 2 olur. 2'yi bu tarafa attım.
+
+180
+00:50:02,287 --> 00:50:08,327
+Biraz daha düzenleme yapayım, elimde cos t ve sin t var. Bunları nasıl yok edebilirim?
+
+181
+00:50:10,867 --> 00:50:33,487
+Kos kare t artı sin kare t'nin 1 olduğunu biliyorum. Bunu kullanabilirim aslında. Yani amacım benim burada t'yi yok etmek, x ve y cinsinden denklemi vermek. Bu şekilde parametrizasyonu verilen eğriyi x y cinsinden bulacağım ki denklemlerini elde edebileyim arkadaşlar.
+
+182
+00:50:35,956 --> 00:50:49,756
+Kos kare t artı sin kare t 1'dir. Bunu biliyorum. Aynı zamanda kos kare t artı sin kare t, x eksi 1'in karesi bölü 4'tür. Yani x eksi 1 bölü 2'nin karesidir. Artı y bölü 2'nin karesidir. Yani y kare bölü 4'tür.
+
+183
+00:50:50,336 --> 00:51:03,155
+x eksi 1'in karesi bölü 4 artı y kare bölü 4 eşittir. 1 olur. Buradan da x eksi 1'in karesi artı y kare eşittir. 4 çemberini elde etmiş olurum arkadaşlar.
+
+184
+00:51:06,452 --> 00:51:11,612
+Şimdi parametrik eğrilerin türevlerine bakalım.
+
+185
+00:51:13,072 --> 00:51:30,512
+F ve G fonksiyonları T'de türevlenebilir ise, yani T noktasında türevlenebilirse, X eşittir F, T ve Y eşittir G, T'de türevlenebilirdir.
+
+186
+00:51:32,692 --> 00:51:38,152
+Türevi şu şekilde ifade ediyoruz. Y'nin türevi eşittir. D'ye bölü Dx olduğunu biliyoruz.
+
+187
+00:51:40,152 --> 00:51:44,612
+Yani, Y'nin türevi derken burada aslında D'ye bölü Dx'i ifade ediyorum.
+
+188
+00:51:45,672 --> 00:51:53,131
+Y eşittir, Yx fonksiyonunun ya da Y eşittir, Fx fonksiyonunun türevi demek ne demektir?
+
+189
+00:51:57,268 --> 00:52:08,608
+y'nin türevi, y eşittir, y x'in türevi demektir. Yani x'e bağlı bir fonksiyon türevidir. Bu da aslında dy bölü dx'tir arkadaşlar.
+
+190
+00:52:09,507 --> 00:52:15,847
+Ya da y'nin türevi demek, f x'in türevi demektir. Bu da f x'in x'e göre türevi demektir.
+
+191
+00:52:17,948 --> 00:52:22,007
+Şimdi dy yerine dy bölü dt yazarsam.
+
+192
+00:52:24,500 --> 00:52:50,300
+Burada da dx yerine dx bölü dt yazarsam. Bakın iki tarafında, altın ve üstünde dt ifadesine böldüm. Bu dt'ler birbirini götürür. Ya da bunu ters döndürdüğümde, dx bölü dt yukarı, dt bölü dx olarak götürdüğümde, dt'ler birbirini götürür. Yani bu ifadeyi bu şekilde de yazabilirim.
+
+193
+00:52:50,867 --> 00:53:00,367
+Bu da ne demektir aslında? dy bölü dt, y fonksiyonunun t'ye göre türevdir, dx bölü dt de f fonksiyonunun t'ye göre türevdir.
+
+194
+00:53:00,487 --> 00:53:03,108
+Çünkü x'i f'te, y'yi g't olarak almıştır.
+
+195
+00:53:04,667 --> 00:53:14,867
+Yine ikinci türevlerde, d kare y bölü dx kare de, benzer şekilde dy üstü bölü t, dx üstü bölü t olarak elde edilir arkadaşlar.
+
+196
+00:53:17,172 --> 00:53:18,672
+Burada x üstü unutulmuş.
+
+197
+00:53:27,188 --> 00:53:30,228
+Şimdi türev ile ilgili örneklere bakalım arkadaşlar.
+
+198
+00:53:35,251 --> 00:53:38,791
+x'e sekante, y'eştir, tanjante.
+
+199
+00:53:39,931 --> 00:53:43,931
+t eksi p bölü 2 ile p bölü 2 aralığında,
+
+200
+00:53:45,331 --> 00:53:46,851
+çünkü 2 bölü 1 noktasında,
+
+201
+00:53:48,692 --> 00:53:51,652
+t etinin denklemini elde edelim arkadaşlar.
+
+202
+00:53:52,711 --> 00:53:53,711
+y'eştir fx'in,
+
+203
+00:53:55,091 --> 00:53:56,471
+ab noktasındaki t eti,
+
+204
+00:53:57,251 --> 00:53:58,391
+y eksi b eşittir,
+
+205
+00:53:58,931 --> 00:54:01,831
+f'a'nın türevi çarpı, x eksi a olduğunu biliyoruz.
+
+206
+00:54:02,771 --> 00:54:04,192
+t-et denklemini biliyoruz.
+
+207
+00:54:07,251 --> 00:54:13,851
+AB noktası olarak bize verilen nokta, kök 2'ye bir noktası. Bu noktadaki t-et istiyor.
+
+208
+00:54:14,871 --> 00:54:18,011
+X eşittir sekant t-ymiş, y eşittir tanjant t-ymiş.
+
+209
+00:54:19,011 --> 00:54:23,831
+X noktasında, kök 2, y noktasında bir olarak alın diyor.
+
+210
+00:54:24,431 --> 00:54:26,492
+Kök 2 eşittir sekant t ise,
+
+211
+00:54:27,123 --> 00:54:49,463
+t burada pi bölü 4'tür. 1 eşittir tanjant t ise t eşittir pi bölü 4'tür. Bakın, kök 2 bir noktasında t değeri, t parametrizasyondaki t değeri, t değişkenimiz, kök 2 bir noktasında pi bölü 4 olarak elde ediliyor arkadaşlar.
+
+212
+00:54:50,783 --> 00:54:53,243
+t eşittir pi bölü 4 olarak elde ediliyor.
+
+213
+00:54:54,516 --> 00:54:57,176
+Dolayısıyla, dy bölü dt bölüyor.
+
+214
+00:54:58,056 --> 00:54:59,076
+dx bölü dt.
+
+215
+00:55:03,443 --> 00:55:19,863
+dy bölü dx aldığımda, dy bölü dt, dx bölü dt olarak alıyorum. Ancak bakın, bu türevi nerede istiyor bize? E'ye cisinin kök 2'ye 1 noktasındaki tt'nin denklemini istiyor.
+
+216
+00:55:21,603 --> 00:55:29,923
+Öncelikle türevi alalım. Türev dy bölü dt, dx bölü dt olarak alınır. dy bölü dt nedir? y eşittir.
+
+217
+00:55:30,547 --> 00:55:56,147
+Tanjant t fonksiyonunun t'ye göre türevini alıyorum. Sekant kare t'dir. X eşittir sekant t fonksiyonunun t'ye göre türevini alıyorum. Bu da sekant t çarpı tanjant t'dir. Burada sekantın karesiyle buradaki sekant gitti. Yani sekant t bölü tanjant t olarak d'ye bölü dx'i parametrizasyona göre türevini
+
+218
+00:55:56,980 --> 00:56:04,659
+dy bölü dx'in, sekant t bölü, tancant t olarak, t parametresine bağlı olarak elde ettim.
+
+219
+00:56:05,500 --> 00:56:12,019
+Peki, dy bölü dx'in, bana neredeki değerini istiyor? Kük 2'ye 1 noktasındaki.
+
+220
+00:56:13,059 --> 00:56:17,380
+x ve y, kük 2'ye 1 noktasındayken, t, pi bölü 4'müş.
+
+221
+00:56:18,420 --> 00:56:22,519
+O zaman ben bunu, pi bölü 4 noktasında elde etmem gerekiyor.
+
+222
+00:56:24,947 --> 00:56:45,627
+Kök 2 o zaman, kök 2 olarak elde edilir. Burada t yerine pi bölü 4 yazarsam arkadaşlar, ne olur? Sekant t bölü tanjant t, sekant pi bölü 4 zaten kök 2, sekant pi bölü 4 bölü.
+
+223
+00:56:47,219 --> 00:56:53,880
+Tanjant pi bölü 4, kök 2 bölü 1'den, kök 2 olarak elde edilmiş olur arkadaşlar.
+
+224
+00:56:57,748 --> 00:57:15,408
+Peki, t-et denklemi nedir? y-5'tir, f-a'nın türevi çarpı, x-a'ydı t-et denklemi, b'm ne benim, bir, a'm ne, kök 2. Yani y-1 eşittir, kök 2 çarpı, x-e kök 2 olarak alıyorum arkadaşlar.
+
+225
+00:57:25,619 --> 00:57:48,079
+y eksi 1 eşittir. Kök 2x, eksi 2 olur burası. Bu eksi 1'i de bu tarafa artı 1 olarak attığım zaman, y eşittir. Kök 2x eksi 1 olarak elde edilir. Bu eksi 1'i bu tarafa aldım. Artı 1 olarak attım. y eşittir ne olur? Kök 2x.
+
+226
+00:57:50,547 --> 00:57:55,827
+eksi 1 olarak elde edilir arkadaşlar. Anlaşılmayan bir yer var mı burada?
+
+227
+01:00:50,420 --> 01:00:53,720
+Şimdi ikinci dereceden bir türeve bakalım arkadaşlar.
+
+228
+01:00:55,680 --> 01:00:59,260
+X eşittir t eksi t kare şeklinde parametri edilmiş.
+
+229
+01:00:59,820 --> 01:01:04,000
+Y eşittir t eksi t küp şeklinde parametri edilmiş bir eğri verilmiş.
+
+230
+01:01:05,159 --> 01:01:09,560
+D kare y bölü, d x kare türevini istiyor bizden.
+
+231
+01:01:10,199 --> 01:01:11,640
+T cinsinden bulunuz diyor.
+
+232
+01:01:14,800 --> 01:01:16,220
+Parametrik türevi biliyorum.
+
+233
+01:01:16,628 --> 01:01:30,908
+Y'nin türevi eşittir, dy bölü dx, dy bölü dt bölü, dt bölü dx demiştim. Yukarıda y fonksiyonunun t'ye göre türevini alıyorum, aşağıda x fonksiyonunun t'ye göre türevini alıyorum.
+
+234
+01:01:31,728 --> 01:01:40,387
+Y eşittir, t eksi t küptü, t eksi t küpün türevi, t'nin türevi 1, 1 eksi t küpün türevi 3 dekare, 1 eksi 3 dekare olarak alınır.
+
+235
+01:01:46,771 --> 01:01:53,771
+y'nin türevi t'ye göre, d y bölü d t olarak
+
+236
+01:01:59,188 --> 01:02:22,427
+Bunu da arkadaşlar, t'ye göre türevini, şu şekilde gösteriyoruz. Üstünde noktayla. 1-3t² olarak elde ederim. X'in türevini, x nokta olarak gösteriyoruz. Parametrik türevi, yani dy bölü dx ile karışmasın diye.
+
+237
+01:02:23,219 --> 01:02:26,899
+1 eksi 2 t'dir değil mi? x'in türevde, t'ye göre.
+
+238
+01:02:29,579 --> 01:02:31,139
+Bu d'ye bölü.
+
+239
+01:02:32,279 --> 01:02:33,099
+Şunu yapalım.
+
+240
+01:02:34,460 --> 01:02:34,920
+dt.
+
+241
+01:02:36,920 --> 01:02:40,259
+Bu dx bölü dt'dir.
+
+242
+01:02:47,027 --> 01:02:54,728
+Aşağıda da dx bölgeye t'yi alıyorum. t-t kareni t'ye götürüyorum. 1-2 t olarak elde edilir. Bunu da buraya yazdım arkadaşlar.
+
+243
+01:03:11,635 --> 01:03:20,635
+Şimdi y'nin ikinci türevini alıyorum. Bu da d y'nin türevi bölü dt, bölü dx bölü dt idi. Bunun...
+
+244
+01:03:24,115 --> 01:03:50,775
+Yani dy'nin türevinin, t'ye göre türevini alıyor. Bu ifadenin t'ye göre türevi, yukarısının türevi çarpı aşağısı, yani 1-3t karenin türevi, eksi 6, çarpı, 1-2t, art, eksi, buranın türevi çarpı, burası,
+
+245
+01:03:51,923 --> 01:03:55,944
+eksi, eksi 2 çarpı, 1 eksi 3 tk olarak elde ederim.
+
+246
+01:03:57,384 --> 01:04:01,264
+Aşağısını da karesini alıyorum. 1 eksi 2 t'nin karesi.
+
+247
+01:04:01,623 --> 01:04:10,784
+Bölü, x'in t'ye göre türevini alıyorum. 1 eksi 2 t olarak da bunu yazıyorum arkadaşlar.
+
+248
+01:04:10,984 --> 01:04:18,543
+Burayı düzenlediğim zaman da 6 tk, eksi 6 t artı 2 bölü, 1 eksi 2 t'nin küpü olarak elde ediyorum arkadaşlar.
+
+249
+01:04:49,492 --> 01:04:50,932
+Hocam, bir şey sorabilir miyim?
+
+250
+01:04:51,351 --> 01:04:51,912
+Tabii, buyurun.
+
+251
+01:04:53,472 --> 01:05:00,172
+Önceki şeyde anlatırken, ikinci türevini alırken tekrar DX'in de, LT'ye göre türevini almıştık mı hocam?
+
+252
+01:05:00,851 --> 01:05:06,132
+Burayı yanlış söylemişim ya, pardon. Sadece tek türeviymiş. DX bölü, LT olarak alıyoruz.
+
+253
+01:05:06,752 --> 01:05:07,512
+Tamamdır hocam.
+
+254
+01:05:07,592 --> 01:05:09,452
+Burada açılımını yaptığımız zaman...
+
+255
+01:05:13,139 --> 01:05:14,599
+dy bölü dt'nin
+
+256
+01:05:23,635 --> 01:05:30,576
+Tekrar D, T'ye göre türevini aldığımızda, bu şekilde çıkıyor arkadaşlar. Ondan dolayı.
+
+257
+01:06:00,179 --> 01:06:02,299
+Evet, anlaşılmayan bir yer var mı burada arkadaşlar?
+
+258
+01:09:45,363 --> 01:10:02,243
+Arkadaşlar, şurayı bir açıklığa kavuşturalım. Şurası dx'in türevi bölü dt değil, y'nin türevini aldım, dy bölü dx. Bunu dy bölü dt ve dx bölü dt olarak yazıyorum. Burası tamam. Bu ifade y'nin türevi olarak ifade ediliyor.
+
+259
+01:10:14,228 --> 01:10:35,768
+x'e göre, türevinin alınması değil mi? Dolayısıyla, dy'nin türevi bölü dx bu aslında. dy'nin türevi bölü dx'de, dy'nin türevi bölü dx olmuş oluyor. Bakın, bunun da, parametrik türevini alırsam,
+
+260
+01:10:45,427 --> 01:10:51,347
+dy'nin türev bölü dt çarpı dt bölü dx olarak yazmam gerekir değil mi?
+
+261
+01:10:52,427 --> 01:10:58,708
+dy'nin türev bölü dt bölü dx bölü dt yazacağım.
+
+262
+01:10:59,868 --> 01:11:01,347
+Bölü dx bölü dt yazacağım.
+
+263
+01:11:01,768 --> 01:11:06,028
+Ya da yukarı dt bölü dx olarak yazacağım.
+
+264
+01:11:06,608 --> 01:11:08,347
+Burada dt'ler birbirini götürüyordu.
+
+265
+01:11:08,448 --> 01:11:09,547
+Bununla bu birbirine eşitti.
+
+266
+01:11:10,228 --> 01:11:13,728
+Bunu da aşağıya dx bölü dt olarak atıyorum.
+
+267
+01:11:16,807 --> 01:11:21,368
+Dolayısıyla burası dy'nin türev ve dt, dx bölü dt olmuş oluyor arkadaşlar.
+
+268
+01:11:23,208 --> 01:11:26,108
+Şurada ifade ettiğim şeyi düzeltiyorum.
+
+269
+01:11:26,448 --> 01:11:28,708
+Yani burası bu şekilde doğru olarak yazılmış.
+
+270
+01:11:31,167 --> 01:11:36,347
+Şurası dx'in türev ve dt değil, dx bölü dt olarak doğru ifade edilmiş arkadaşlar.
+
+271
+01:11:40,372 --> 01:11:47,092
+Türev konusu da bu şekilde. Burada denklemlerle oynadığımız zaman rahatlıkla anlaşılabiliyor.
+
+272
+01:11:47,692 --> 01:11:57,672
+Geri gelelim. Yani birinci türevde dy bölü dx, dy bölü dt, dx bölü dt olarak ifade ediyoruz.
+
+273
+01:11:58,172 --> 01:12:04,192
+İkinci türevde de dy bölü dt, dy'nin türev bölü dt.
+
+274
+01:12:08,819 --> 01:12:18,279
+D, Y'nin türev bölü, D, T, D, X bölü, D, T olarak ifade ediyoruz arkadaşlar.
+
+275
+01:12:18,479 --> 01:12:23,719
+Yani birinci türevin T'ye göre türevi, bölü D, X bölü, D, T olarak ikinci türevde bu şekilde alıyoruz.
+
+276
+01:12:23,719 --> 01:12:27,899
+Buna benzer şekilde, aynı mantıkla üçüncü türevde alınabilir arkadaşlar.
+
+277
+01:12:28,899 --> 01:12:34,600
+Dördüncü türevde alınabilir, beşinci türevde bu şekilde tekrarlı türevlere alınabilir arkadaşlar.
+
+278
+01:12:36,884 --> 01:12:45,623
+Herhalde artık parametrik fonksiyonların türevleri anlaşılmıştır. Bundan sonraki konumuzda parametrik eğrinin uzunluğu.
+
+279
+01:13:03,796 --> 01:13:06,416
+Bize parametrik olarak tanımlı bir eğri verilsin.
+
+280
+01:13:07,775 --> 01:13:13,936
+C eğrisi, x'eştir f, t ve y'eştir g, t olarak ifade edilmiş, t, a ile b arasında.
+
+281
+01:13:15,316 --> 01:13:23,195
+T'eştir a'dan, t'eştir b'ye artarken, c eğrisi üzerinden sadece bir kez geçiliyorsa,
+
+282
+01:13:23,195 --> 01:13:30,195
+c'nin uzunluğu, f, t'nin türevinin karesi, artı g, t'nin türevinin karesinin kara kökü,
+
+283
+01:13:30,899 --> 01:13:52,819
+dt integraliyle elde edilir arkadaşlar. Bu bize neyi hatırlatıyor arkadaşlar? 1 artı y'nin türevinin karesi vardı, y uzunluğu. Aslında o denklemden çıkarılmış zaten. Neydi? İntegreli a'dan b'ye, 1 artı y'nin türevinin karesi, dx'di, y uzunluğu. Burada y'nin türevi yerine,
+
+284
+01:13:54,355 --> 01:13:58,735
+Parametrik türevi yazdığımızda zaten bu ifadeyi elde ediyoruz arkadaşlar.
+
+285
+01:13:59,275 --> 01:14:06,496
+Yani gt'nin türevi bölü, ft'nin türevinin karesi yazdığımızda, açtığımızda bunu elde ediyoruz.
+
+286
+01:14:08,275 --> 01:14:15,095
+Şimdi bu parametrik olarak tanıdığı yerin uzunluğunu örnek üzerinde gösterelim.
+
+287
+01:14:16,716 --> 01:14:19,775
+En basit örneğimiz tabii ki çemberin uzunluğu.
+
+288
+01:14:20,340 --> 01:14:25,920
+2 pi r olduğunu biliyoruz zaten. Bunu çıkartalım bildiğimiz yolla.
+
+289
+01:14:27,780 --> 01:14:35,479
+Biz x eşittir r koste, y eşittir r sinte alarak çemberi ifade ediyorduk. Çemberin uzunluğunu hesaplayalım şimdi.
+
+290
+01:14:37,380 --> 01:14:46,119
+F t'nin türevi, eksi r sintedir. Bakın x'in türevini alıyorum. g t'nin türevi, r kostedir. y'nin türevini alıyorum arkadaşlar.
+
+291
+01:14:48,083 --> 01:14:56,623
+Ft'nin türevinin karesi, re kare sin kare t, gt'nin türevinin karesi, re kare kos kare t'dir arkadaşlar.
+
+292
+01:14:59,543 --> 01:15:07,884
+Ft'nin türevinin karesi artı, gt'nin türevinin karesini alıyorum. Eşittir, re kare olarak elde ediyoruz.
+
+293
+01:15:07,884 --> 01:15:14,583
+Çünkü re kare sin kare t'te artı re kare kos kare t'te, sin kare artı kos kare 1 olduğu için re kareyi veriyor bana.
+
+294
+01:15:15,380 --> 01:15:32,340
+Ft'nin türevinin karesi artı gt'nin türevinin karesini yazıyorum kök içerisinde. Dt'yi alıyorum. Uzunluğum nereden nereye? A ve bm ile benim. T sıfırla iki pi aralısındaymış. O zaman integralin sınırları sıfırdan iki piye. Kök içinde r kare dt olarak alıyorum.
+
+295
+01:15:42,547 --> 01:15:57,728
+R çarpı T olarak elde edilir. T'nin sınırları sıfırdan 2P'ye, 2P'yi yazdığımda 2P'ye eksi sıfır çarpı R'den, 2P'yi R olarak, zaten çemberin uzunluğunu biliyordum, çemberin uzunluğunu elde ederim arkadaşlar.
+
+296
+01:15:58,788 --> 01:16:04,667
+Şimdi bu şekilde parametrik eğrileri de görmüş olduk arkadaşlar. Burada sorsa olan var mı?
+
+297
+01:16:16,435 --> 01:16:19,395
+Son kısmı bir daha anlatabilir misiniz hocam? Anlayamadım ben.
+
+298
+01:18:20,724 --> 01:18:34,083
+Şimdi parametrik eğrilerde kullandığımız türeve dair özellikleri kullanarak kutupsal koordinatlarda türevi artık çıkartabiliriz arkadaşlar.
+
+299
+01:18:35,283 --> 01:18:39,963
+Yani R'eştir F theta eğrisinin eğimini nasıl bulacağımızı artık biliyoruz.
+
+300
+01:18:41,463 --> 01:18:46,144
+D'ye bölü Dx türevinin R theta'daki değerine bakalım.
+
+301
+01:18:48,756 --> 01:19:07,376
+dy bölü dx'in, r theta'daki türevi, x eşittir, r cos theta, y eşitir, r sin theta olarak verirsek, r f t idi, f theta çarpı cos theta, f theta çarpı sin theta olarak ifade ettiğimizi varsayalım.
+
+302
+01:19:07,376 --> 01:19:14,355
+dy bölü dx ifadesi, dy bölü dt, dx bölü dt'dir. Yani,
+
+303
+01:19:15,988 --> 01:19:21,368
+y teta'ya bağlı bir fonksiyon, x de teta'ya bağlı bir fonksiyon olarak verilmiş arkadaşlar.
+
+304
+01:19:23,488 --> 01:19:31,668
+dy bölü d teta, y'nin teta'ya bağlı olarak türevi, dx bölü d teta, x fonksiyonunun teta'ya göre türevi.
+
+305
+01:19:32,048 --> 01:19:37,628
+Burası f teta'nın türevi çarpı sin teta, artı f teta çarpı cos teta olarak verilir.
+
+306
+01:19:43,859 --> 01:19:54,859
+Yani, f theta çarpı cos theta'nın türevidir arkadaşlar. Bunu nasıl alırız? Önce yukarısını bir alalım. f theta çarpı sin theta'nın türevini alalım.
+
+307
+01:19:55,760 --> 01:20:07,459
+y'nin theta'ya göre türevini alıyorum. f theta çarpı sin theta'nın türevi arkadaşlar. Bakın bu çarpım şeklinde bir fonksiyondur.
+
+308
+01:20:08,340 --> 01:20:21,500
+Birincinin türevi, yani f tetanın türevi, çarpı sin teta, artı birinci çarpı ikincinin türevidir. Yani sin tetanın türevidir. Bakın burada sin tetanın türevini aldım. Sin tetanın türevi cos teta.
+
+309
+01:20:22,600 --> 01:20:30,600
+Şimdi f teta çarpı sin tetanın, f teta çarpı cos teta'nın türevini alın. Yani x'in kataya göre türevini alın.
+
+310
+01:20:33,747 --> 01:20:36,027
+cos theta'nın türevini alıyorum burada da bakın.
+
+311
+01:20:38,587 --> 01:20:39,347
+Burada da,
+
+312
+01:20:41,087 --> 01:20:42,927
+f theta'nın türevi çarpı cos theta,
+
+313
+01:20:43,547 --> 01:20:46,547
+artı, f theta çarpı cos theta'nın türevi.
+
+314
+01:20:46,827 --> 01:20:50,108
+Yani, eksi sin theta olarak alırım arkadaşlar.
+
+315
+01:20:52,275 --> 01:21:11,476
+R theta noktasında, R'eştir F theta'nın eğimi dolayısıyla, D'ye bölü D'x'eştir R theta'da, F theta'nın türevi sin theta, artı F theta cos theta bölü, F theta'nın türevi cos theta, eksi F theta sin theta, R theta noktasında olarak belirlenmiş olur arkadaşlar.
+
+316
+01:21:13,255 --> 01:21:14,655
+Anlaştırmayan bir yer var mı burada?
+
+317
+01:21:17,971 --> 01:21:22,691
+Bakın, burayı daha anlaşılır kılmak için de parametrik denklemleri işledik.
+
+318
+01:23:06,387 --> 01:23:09,847
+Şimdi kutupsal koordinatlarda bir eğri nasıl çizilir ona bakalım.
+
+319
+01:23:11,547 --> 01:23:15,147
+Diyelim ki R eşli F theta şeklinde bir fonksiyon olarak versin bize.
+
+320
+01:23:17,007 --> 01:23:22,807
+Periyodikse önce periyodunu buluyoruz. Yani 2P'nin katları olarak artıyor mu, azalıyor mu, gidiyor mu?
+
+321
+01:23:24,007 --> 01:23:27,927
+Kaça göre periyodik? Mesela Pi'ye göre mi periyodik? Pi bölü 2'ye göre mi periyodik?
+
+322
+01:23:28,847 --> 01:23:32,967
+Yani ne kadar devamlılığı nasıl, periyodu nasıl onu buluyoruz öncelikle.
+
+323
+01:23:34,292 --> 01:23:50,692
+İkincisi, simetri durumuna bakıyoruz. Yani, kutupsal eksene göre mi simetrik, teta eşittir pi bölü 2'ye göre mi simetrik, yoksa, teta eşittir pi bölü 4'e göre mi simetrik? Bunlara bakıyoruz ve çizim aralığını belirliyoruz.
+
+324
+01:23:52,432 --> 01:23:56,131
+Ve r eşittir f tetanın değişimini türev yardımıyla inceliyoruz.
+
+325
+01:23:56,819 --> 01:24:18,119
+Bazı θ'lar için θ, fθ noktalarını buluyoruz. Yani π bölü 4, π bölü 2, π bölü 6, π bölü 3 olabilir. Bu bilinen bazı noktalar için, yani sinüs ve kosünüs fonksiyonlarının değerlerini bildiğimiz noktalarda noktaları elde ediyoruz. Ve θ, r ve r'nin türevini içeren tabloyu yapıyoruz ve eğriyi çiziyoruz.
+
+326
+01:24:19,019 --> 01:24:22,739
+Cartesian koordinatlardaki eğri çizimine benziyor bu da arkadaşlar.
+
+327
+01:25:00,083 --> 01:25:14,543
+Burada, re-iştir. A çarpı 1 artı kos teta eğrisini çizelim mesela. Önce periyodunu belirliyoruz. 2 pi'ye göre periyodiktir. 0, 2 pi de çizilir bu.
+
+328
+01:25:18,036 --> 01:25:34,476
+Sonra simetrilerini belirliyoruz. Simetrilerini neye göre belirliyoruz arkadaşlar? f eksi teta, f tetaya eşitme. Bunları simetrileri az önce göstermiştik. Hani f eksi teta olduğunda f tetaysa neye göre simetrikli?
+
+329
+01:25:37,300 --> 01:25:47,020
+Eğer f teta eşitse neye göre simetrikti? Ve f p artı teta f teta'ya eşitse ya da eksi re'ye eşitse neye göre simetrikti? Bunlara bakmıştık.
+
+330
+01:25:48,479 --> 01:25:52,420
+Şimdi buna göre simetri eksenlerini belirlemeye çalışıyoruz öncelikle.
+
+331
+01:25:54,620 --> 01:25:56,880
+Ya da bir ara verelim, ondan sonra devam edelim arkadaşlar.
+
+332
+01:26:02,355 --> 01:26:03,175
+Bir ara verelim.
+
+333
+01:26:06,476 --> 01:26:07,815
+Ondan sonra devam edelim.
+
+334
+01:26:14,899 --> 01:26:18,559
+30 dakika ara verelim arkadaşlar. Sonra devam edelim.
+
+335
+01:26:35,796 --> 01:26:37,195
+Sorsa olan var mı bu arada?
+
+336
+02:00:46,131 --> 02:00:50,851
+Reş'tir, A çarpı, bir artı coste eta eğrisinin grafiğini çiziyorduk.
+
+337
+02:00:55,380 --> 02:00:59,479
+Bu eğrinin kutupsal eksene göre simetrik olduğunu gösterelim.
+
+338
+02:01:00,119 --> 02:01:01,340
+Burada teta eşittir.
+
+339
+02:01:03,100 --> 02:01:15,079
+Eksi teta yazdığımızda, yani f fonksiyonunda, f teta yerine f eksi teta yazdığımızda, f eksi teta a çarpı bir artı kosünüs eksi teta'dır.
+
+340
+02:01:17,844 --> 02:01:29,764
+Kosünüs eksi teta'nın, kosünüs fonksiyonu, şift fonksiyondu, kosünüs teta'ya eşit olduğunu biliyoruz. Dolayısıyla a çarpı 1 artı kosünüs eksi teta, a çarpı 1 artı kos teta'ya eşittir.
+
+341
+02:01:30,484 --> 02:01:45,103
+a çarpı 1 artı kos teta da f teta'ya eşittir. f teta da r idi. Bakın f eksi teta, r'ye eşit oldu. Bu durumda ne diyorduk? Bu fonksiyon, kutupsal eksene göre simetri.
+
+342
+02:01:47,699 --> 02:01:55,539
+Şimdi diğer simetrile
+
+343
+02:01:55,539 --> 02:01:59,239
+Diğerine baktığımız zaman
+
+344
+02:01:59,239 --> 02:02:00,920
+Teta yerine pi eksi teta
+
+345
+02:02:08,051 --> 02:02:26,351
+yazdığımız zaman, fp eksi teta, a çarpı, bir artı kosünüs, p eksi teta, a çarpı, bir eksi kos teta eşit. Bakın, kosünüs, p eksi teta. Dolayısıyla ikinci sete yerine, p artı teta yazdığımızda bakalım, durum ne oluyor?
+
+346
+02:02:35,796 --> 02:02:44,796
+F pi artı teta, f tetaya, re'ye ya da eksi f tetaya eşit mi değil mi ona bakalım.
+
+347
+02:02:45,275 --> 02:02:50,736
+Kosünüs pi artı teta yazıyoruz. Kosünüs pi artı teta, eksi kosünüs teta eşit.
+
+348
+02:02:51,476 --> 02:02:56,756
+Dolayısıyla a çarpı bir eksi kosünüs teta elde ettik. Üçüncü simetri özelliği de mevcut değildir.
+
+349
+02:02:56,756 --> 02:03:03,136
+Şu simetri özelliklerine bir kez daha bakalım. Bakın simetri özelliğinde şunları işlemiştik.
+
+350
+02:03:04,948 --> 02:03:05,948
+Evet.
+
+351
+02:03:07,568 --> 02:03:09,628
+Öf, öf, öf, öf, öf, öf, çift edemem.
+
+352
+02:03:14,547 --> 02:03:20,028
+Teta yerine eksi teta ise, ne demiştik? A, kutupsal eksene göre eşit demiştik.
+
+353
+02:03:20,807 --> 02:03:29,487
+F teta yerine eksi teta yazınca, f eksi teta eşittir, eksi re oluyorsa, teta eşittir pi bölü 2'ye göre simetrik olduğunu söylemiştik.
+
+354
+02:03:30,868 --> 02:03:40,487
+Diğer simetrilerde, bakın, re eşittir f teta da, teta yerine pi eksi teta yazdığımızda, f pi eksi teta,
+
+355
+02:03:45,427 --> 02:03:55,427
+teta eşittir, re'ye eşitse, fp eksi teta, f teta eşitse, yine burada da teta eşittir, pi bölü 2'ye göre simetri vardır, demiştik.
+
+356
+02:03:58,387 --> 02:04:06,188
+Teta yerine, pi eksi teta yazdığımızda, eğer eksi re'ye eşitse, kutup eksenine göre simetri vardır, demiştik.
+
+357
+02:04:06,188 --> 02:04:12,827
+Bir diğer simetri özelliğimizde, teta yerine, pi artı teta yazdığımızda,
+
+358
+02:04:13,235 --> 02:04:25,195
+Oluşuyordu. Theta yerine pi artı theta yazdığımızda, f pi artı theta eşittir, f theta eşittir, re ise orjine göre simetri vardır demiştik.
+
+359
+02:04:26,296 --> 02:04:31,575
+R theta eğri üzerindeyken, eksi re theta da eğri üzerindeyse orjine göre simetri vardır demiştik.
+
+360
+02:04:32,036 --> 02:04:38,655
+Bakın bu 3 simetriden 1 var mı yok mu ona bakıyoruz. Bunlardan bir tanesi mevcut.
+
+361
+02:04:39,604 --> 02:04:44,324
+Yani, bu fonksiyon, kutupsal eksene göre simetrik.
+
+362
+02:04:45,443 --> 02:04:47,884
+Şimdi diğer durumlara bakalım.
+
+363
+02:04:49,304 --> 02:04:51,863
+Bir de, fonksiyonun türevini alalım.
+
+364
+02:04:53,443 --> 02:04:55,224
+R teta'nın türevini aldığımızda,
+
+365
+02:04:56,503 --> 02:04:57,943
+R teta eşittir,
+
+366
+02:04:58,684 --> 02:05:01,164
+A çarpı 1 artı, cos teta'ydı.
+
+367
+02:05:02,524 --> 02:05:04,703
+A çarpı 1 artı, cos teta'nın türevini aldığımızda,
+
+368
+02:05:05,555 --> 02:05:08,135
+artı a kos tetadır bu aslında.
+
+369
+02:05:08,735 --> 02:05:13,775
+a'nın türevi sıfır, a kos tetanın türevi, eksi a sin tetadır.
+
+370
+02:05:14,415 --> 02:05:17,036
+Bu da sıfırdan küçük bir ifadedir.
+
+371
+02:05:18,215 --> 02:05:24,135
+Yani teta sıfır pi aralığındaysa, a'nın sıfırdan büyük olduğunu da biliyoruz.
+
+372
+02:05:24,695 --> 02:05:32,615
+Dolayısıyla, eksi artı sin tetada sıfırdan küçükse, fonksiyonun türevi sıfırdan küçükse, fonksiyon nasıl bir fonksiyon olacak?
+
+373
+02:05:57,555 --> 02:06:01,615
+Fonksiyonun türevi sıfırdan küçükse fonksiyon nasıl bir fonksiyon oluyordu arkadaşlar?
+
+374
+02:06:10,387 --> 02:06:24,967
+Teşekkürler. Azalan bir fonksiyon oluyor. Değil mi arkadaşlar? Bu fonksiyon azalan bir fonksiyonmuş. Dolayısıyla bir özelliğin aslında fonksiyonunu yakalamış olduk. Azalanlık özelliğini yakalamış olduk.
+
+375
+02:06:24,967 --> 02:06:30,528
+Şimdi fonksiyonun bazı noktalarına bakalım. Dördüncü adımımız neydi?
+
+376
+02:06:31,731 --> 02:06:43,432
+Eğri periyodik ise periyodu bulunur. Birincisiydi. İkincisi simetrilere bakıyorduk. Üçüncüsü, R f theta'nın değişimini, artış mı, azalış mı, artan mı, azalan fonksiyonunu, türevi yardımıyla inceliyorduk.
+
+377
+02:06:44,372 --> 02:06:53,652
+Ve bazı theta'lar için theta, f theta noktalarını elde ediyorduk dördüncü adımda. Son adımda da theta, R ve R üstü tablosunu yapıyorduk.
+
+378
+02:06:53,652 --> 02:06:58,551
+Şimdi bazı theta'lar için fonksiyonun noktalarını elde edelim.
+
+379
+02:06:59,923 --> 02:07:08,644
+Yani mesela fonksiyon teta eşittir sıfırda, teta eşittir pi'de, teta eşittir pi bölü 2'de hangi değerleri alıyor bakalım.
+
+380
+02:07:09,023 --> 02:07:16,003
+Tabi bunu genişletebiliriz. Teta eşittir pi bölü 2, sıfır pi bölü 2 aralığını genişletebiliriz.
+
+381
+02:07:16,163 --> 02:07:22,423
+Pi bölü 3, pi bölü 6, pi bölü 4 noktalarındaki değerlerine de bakabiliriz.
+
+382
+02:07:23,103 --> 02:07:25,963
+Teta eşittir sıfırda nedir arkadaşlar? R eşittir.
+
+383
+02:07:26,996 --> 02:07:38,435
+a çarpı, bir artı kosünüs teta, iki a olur. Çünkü kosünüs sıfır birdir. Dolayısıyla bir artı kosünüs teta, bir artı kosünüs sıfır, bir artı birden iki olur.
+
+384
+02:07:39,015 --> 02:07:46,735
+a'da başında var, re eşittir, iki a olur. İki a'ya sıfır noktasını elde ediriz. Kutupsal koordinat ekseninde bu nokta.
+
+385
+02:07:51,828 --> 02:08:10,948
+1 artı kosünüs theta, 1 artı kosünüs pi. Kosünüs pi nedir? Eksi 1'dir. 1 artı eksi 1'den 0 olur. Dolayısıyla r 0 olur. 0 pi noktasını elde ederiz ikinci olarak. Üçüncü olarak da theta eşitir pi bölü 2 noktasında kosünüs pi bölü 2 nedir arkadaşlar?
+
+386
+02:08:12,500 --> 02:08:25,819
+Kosinus pi bölü 2 nedir? 0'dır. Kosinus 90 0 olduğu için, re eşittir, a olarak elde ederiz. Dolayısıyla buradan da a pi bölü 2 noktasını elde ederiz.
+
+387
+02:08:26,739 --> 02:08:35,880
+3 tane nokta elde ettik. Bakın, 2a'ya 0, 0pi, a pi bölü 2. 0, pi bölü 2, pi aralığını alalım dolayısıyla.
+
+388
+02:08:38,484 --> 02:09:04,764
+Koordinat ekseninde noktaları belirleyelim. Bir kere, θ, şuradaki noktaları biliyoruz. Hangi noktalar var? 2a'ya 0, 2a'ya 0, 0pi, a'ya pi 1 2 noktası var elimde. 0pi.
+
+389
+02:09:06,068 --> 02:09:09,347
+A'ya P bölü 2 noktası var.
+
+390
+02:09:16,083 --> 02:09:18,164
+eksende yerine koymam gerekiyor.
+
+391
+02:09:18,863 --> 02:09:21,804
+Şimdi kutupsal eksende bu noktaları yerine koyalım.
+
+392
+02:09:22,724 --> 02:09:24,324
+Birincisi, iki aya sıfır noktası.
+
+393
+02:09:24,443 --> 02:09:29,203
+Yani, sıfır derecelik açı varken, teta sıfırken,
+
+394
+02:09:33,076 --> 02:09:59,175
+Fonksiyonum 2A uzunluğundaymış. R'si 2A'mış, R' eşittir 2A'mış ve teta 0'mış. 2A'ya 0 noktasını alıyorum. İkinci noktam, pi derecelik açıda, bakın buradan geldim, pi derecelik açıyı yaptığımda, R'm benim 0'mış. Yani noktaymış R.
+
+395
+02:10:00,000 --> 02:10:10,920
+Bakın, R sıfırmış, pi açısında. Dolayısıyla, bir de pi bölü 2 açılık durumda hangi değeri aldığına bakalım.
+
+396
+02:10:11,079 --> 02:10:24,100
+Bakın, pi bölü 2 açısında ise, A noktasında değer alıyor. Bakın, teta eşitir pi bölü 2 olduğunda, R benim A imiş.
+
+397
+02:10:27,444 --> 02:10:31,524
+90 derecelik açıda, r, a uzunluğundaymış arkadaşlar.
+
+398
+02:10:33,144 --> 02:10:38,344
+Şimdi, türeve göre, aslında ben burada 3 tane noktayı elde ettim.
+
+399
+02:10:38,724 --> 02:10:48,284
+Yani şöyle ki, şurayı silersem, 2a buradaymış, 2a uzunluğu 0 derecede.
+
+400
+02:10:48,916 --> 02:11:03,476
+A noktası, bir de sıfır noktasını elde ettim. Üç tane nokta elde ettim. Bu üç noktadan geçiyormuş bu eğri. Bunu biliyorum şu anda. Daha sonra fonksiyonun azalanlık ve artanlık tablosunu yapacağım.
+
+401
+02:11:04,695 --> 02:11:14,608
+Sıfır pi bölü iki ve pi'yi alıyorum. Çünkü neden sıfır pi bölü iki ve pi noktalarını alıyorum? Zaten bu eğri...
+
+402
+02:11:14,608 --> 02:11:29,807
+Kutupsal eksene göre simetrik de arkadaşlar değil mi? Kutupsal eksene göre simetrik bir eğriydi. Dolayısıyla ben 0P ile çizdiğim zaman, P 2P aralığı da aynı şekilde onun simetri olarak çizilir.
+
+403
+02:11:31,128 --> 02:11:37,868
+Şimdi 0P bölü 2 aralığında, R'nin türevi negatif.
+
+404
+02:11:38,195 --> 02:11:49,115
+Pi bölü 2 de negatif, pi bölü 2 pi aralığında da negatif. Komple bu aralıkta negatif. Bunu nereden elde ettim? Bakın, v'nin türevi, eksi a sinteta, eksi a sinteta.
+
+405
+02:11:53,524 --> 02:12:06,004
+0'dan küçüktür. A sinteta olarak elde edip. Eksi A sinteta negatif bir fonksiyon. Eksi A sinteta negatif değerler alan bir fonksiyon. Dolayısıyla 0'dan küçük bu V'nin türevi.
+
+406
+02:12:07,224 --> 02:12:10,963
+V'nin türevi 0 pi aralığında 0'dan küçükse hep eksidir.
+
+407
+02:12:14,452 --> 02:12:26,452
+Dolayısıyla sıvımlığı da 2a'dan a'ya daha sonra da sıfıra kadar küçülüyordu. Bu aralıkta fonksiyon azalan bir fonksiyon. Bakın değerleri gittikçe azalan bir fonksiyondur. Yani 2a'dan a'ya...
+
+408
+02:12:28,851 --> 02:12:45,851
+R'nin uzunluğu azalır, A'dan sıfıra R'nin uzunluğu azalır. Çünkü fonksiyonun değerleri azalıyor burada. Fonksiyonun değerleri azalıyor. Dolayısıyla bu R'nin uzunluğu da 2A'dan A'ya azalıyor, A'dan sıfıra azalıyor.
+
+409
+02:13:03,988 --> 02:13:08,648
+Fonksiyon sıfır derecelik açıda bu noktayı belirliyorum.
+
+410
+02:13:08,648 --> 02:13:09,548
+Buradan
+
+411
+02:13:31,028 --> 02:13:48,188
+0 derecelik açıdan fonksiyonun değeri 2A'ymış. Ve daha sonra fonksiyon azalan bir fonksiyon olduğu için değerleri azalarak A'ya iniyormuş. Sonra tekrar azalarak azalan bir fonksiyon olduğu için A'dan 0'a iniyormuş arkadaşlar. A'dan 0'a iniyormuş.
+
+412
+02:13:49,188 --> 02:13:51,028
+Şimdi 2A'dan A'ya kat...
+
+413
+02:13:53,587 --> 02:14:04,688
+Bunlar, azalarak giden bir fonksiyon çizeceğiz. 2A uzunluğundan azalarak, azalarak, azalarak A'ya iniyor. A'dan da azalarak, azalarak sıfıra geçecek.
+
+414
+02:14:20,692 --> 02:14:25,791
+a'dan azalarak 0'a giden, uzunlukları azalarak 0'a giden bir fonksiyon çiziyoruz.
+
+415
+02:14:26,332 --> 02:14:27,271
+Bu fonksiyonu da bu şekilde.
+
+416
+02:14:27,572 --> 02:14:31,492
+pi bölü 4'lük açıda ne olur?
+
+417
+02:14:32,112 --> 02:14:35,551
+pi bölü 3'lük açıda ne olur?
+
+418
+02:14:36,332 --> 02:14:43,791
+Bunları da, bu noktalara işaretleyip aslında daha kolay çizebilirsiniz.
+
+419
+02:14:48,083 --> 02:15:04,083
+Uzunluğunun ne olduğunu belirleyip, pi bölü dörtlük açıda uzunluğunun ne olduğunu belirleyip, r'nin, daha sonra da pi bölü üçlük açıda r'nin uzunluğunun ne olduğunu belirleyip, daha kolay görebilirsiniz burayı.
+
+420
+02:15:05,427 --> 02:15:09,608
+0, pi bölü 2, pi noktalarını da belirleyip de çizebilirsiniz.
+
+421
+02:15:10,068 --> 02:15:15,507
+Dolayısıyla bunu çizdiğim zaman 2a'dan a'ya, a'dan 0'a bu şekilde azarak giden bir eğri oluşturdum.
+
+422
+02:15:16,028 --> 02:15:17,307
+Bunun simetriğini de çiziyorum.
+
+423
+02:15:17,487 --> 02:15:19,507
+Çünkü neydi? Simetrileri bulmuştuk.
+
+424
+02:15:19,608 --> 02:15:22,188
+Kutup eksenine göre simetrik bir eğrimiz vardı.
+
+425
+02:15:22,987 --> 02:15:24,387
+Bunun simetriği de bu şekildedir.
+
+426
+02:15:24,507 --> 02:15:27,628
+Bakın bu, bu şekilde bir, kalp şeklinde bir eğri olmuş oldu.
+
+427
+02:15:28,068 --> 02:15:29,987
+Buna da kardiyoid diyoruz.
+
+428
+02:15:35,539 --> 02:15:39,260
+Kalp eğrisi, kardiyoid deniyor buna da.
+
+429
+02:15:40,639 --> 02:15:42,360
+Burada anlaşılmayan bir yer var mı?
+
+430
+02:17:49,843 --> 02:18:04,003
+Şimdi 1-e sin theta eğrisini çizelim. A çarpı 1-e sin theta eğrisini çizelim. D eşittir. A çarpı 1-e sin theta eğrisini çizelim. Periyodu 2 pi, 0-2 pi de oluşturacağız eğriyi. Diğer eğiller gibi.
+
+431
+02:18:07,860 --> 02:18:21,260
+eksi teta olduğunda simetri var mı? Bakalım. F eksi teta, a çarpı bir eksi, sinüs eksi teta. Sinüs eksi teta, eksi sinüs teta eşit olduğu için, zaten artı sin teta oluyor burası.
+
+432
+02:18:21,680 --> 02:18:30,139
+a çarpı bir artı sin teta oluyor. Dolayısıyla, birinci simetri yok. Yani kutupsal eksene göre bir simetri oluşmuyor burada.
+
+433
+02:18:36,275 --> 02:18:48,695
+a çarpı, bir eksi sinüs pi eksi teta, sinüs pi eksi teta, sinüs teta eşit olduğu için, bakın burada, yine aynı şeyi elde ediyoruz, bakın, f teta'yı elde ediyoruz.
+
+434
+02:18:49,995 --> 02:18:55,216
+Dolayısıyla buradan, teta eşitir pi bölü 2'ye göre simetriyi elde ediyorum ben.
+
+435
+02:18:56,456 --> 02:19:02,636
+Bu simetri varsa, pi bölü 2'ye göre simetriyi elde ettim.
+
+436
+02:19:02,899 --> 02:19:07,180
+Şimdi, sol olarak, tete yerine pi artı tete yazıyorum.
+
+437
+02:19:07,680 --> 02:19:11,699
+Pi artı tete, bir eksi sinüs pi artı tete elde ettim.
+
+438
+02:19:19,476 --> 02:19:23,896
+1 artısın teta, ya eşit oldu. Bakın, sinüs pi demedim.
+
+439
+02:19:26,836 --> 02:19:33,156
+Teta eşitir, pi bölü ikiye simetri olduğundan, inceleme aralığı, eksi pi bölü iki, pi bölü iki aralığıdır.
+
+440
+02:19:33,576 --> 02:19:40,256
+Yani bu aralığı incelediğim zaman, eksi pi bölü ikiden pi bölü ikiye kadar, diğer taraf aynı şekilde şekil oluşturacaktır.
+
+441
+02:19:44,147 --> 02:20:07,448
+Şimdi fonksiyonun türevini alalım. Fonksiyonun türevini aldığımızda, Ftetanın türevi eşittir. Eksi Acos tetadır. 1-sin tetanın türevi, 1-sin tetanın türevi, A'nın türevi 0 olduğu için, eksi A sintetanın türevi, eksi Acos tetadır. Eksi Acos tetada,
+
+442
+02:20:08,531 --> 02:20:16,011
+teta eksi pi 1 2 pi 1 2 aralığındayken, posinüs pozitif olduğu için, sıfırdan küçük olacaktır.
+
+443
+02:20:17,351 --> 02:20:19,931
+teta eksi pi 1 2 pi 1 2 aralığında alıyoruz.
+
+444
+02:20:20,931 --> 02:20:28,851
+Dolayısıyla, dördüncü adımda da, burada artık, fonksiyonun belirli noktalardaki değerlerine bakalım.
+
+445
+02:20:29,191 --> 02:20:31,551
+Eksi pi 1 2 pi 1 2 aralığında çiziyorduk.
+
+446
+02:20:31,851 --> 02:20:34,411
+Şimdi fonksiyonun değerine bakalım.
+
+447
+02:20:57,780 --> 02:21:01,060
+Şimdi fonksiyonun noktalardaki değerlerine bakalım.
+
+448
+02:21:01,700 --> 02:21:07,600
+Fonksiyonun noktalardaki değerleri teta eşittir pi bölü 2 noktasında re eşittir sıfır değerini alır.
+
+449
+02:21:12,371 --> 02:21:19,851
+D eşittir 2A olur. Teta eşittir 0 noktasında R eşittir A olur. A çarpı 1 eksi sin tetanın değerlerini alıyoruz.
+
+450
+02:21:19,971 --> 02:21:25,111
+Teta pi bölü 2 olduğunda sinüs fonksiyonu değerine bakıyoruz. Teta eksi pi bölü 2 olduğunda sinüs fonksiyonu değerine bakıyoruz.
+
+451
+02:21:25,231 --> 02:21:32,591
+Teta eşittir 0 olduğunda fonksiyonun değerine bakıyoruz. Bu noktaları elde ettik bakın arkadaşlar.
+
+452
+02:21:32,591 --> 02:21:35,991
+Şimdi fonksiyonun türevine bakalım.
+
+453
+02:22:49,780 --> 02:23:08,460
+Burada noktaları elde ettik. Theta eşitir pi bölü 2 noktasında sinüs theta fonksiyonun değerini biliyorum. Theta eşitir pi bölü 2 noktasında sinüs 1 oluyor. Dolayısıyla 1 eksi sin theta 0 oldu. 1 eksi 1'den 0 oldu. Eksi pi bölü 2'de.
+
+454
+02:23:16,404 --> 02:23:19,024
+Dolayısıyla, burayı da elde ettim.
+
+455
+02:23:25,012 --> 02:23:36,012
+Ve son olarak da teta eşittir sıfır noktasında, sinüs sıfırın sıfır olduğunu biliyorum. Dolayısıyla a çarpı, sinüs sıfır sıfır zaten, a çarpı bir olmuş oldu.
+
+456
+02:23:36,092 --> 02:23:43,132
+1 eksi sin teta, sin teta sıfır, 1 eksi sıfırdan bir oldu. a'yı elde ettim. a noktasını elde ettim.
+
+457
+02:23:49,780 --> 02:23:59,620
+Sonra türevini aldım, re'nin türevini aldım. Eksi pi bölü iki, pi bölü iki aralığında re'nin türevinin değerleri hep negatif arkadaşlar.
+
+458
+02:23:59,780 --> 02:24:10,180
+Burada ne demek? Fonksiyonun azalan olması demek. Fonksiyonun azalanlarından da ben, iki a'dan a'ya azalıyor, a'dan sıfıra azalıyor.
+
+459
+02:24:14,963 --> 02:24:22,403
+Fonksiyonun değerini biliyorum ben. Fonksiyonun değeri, eksi p bölü 2 noktasında 2a'ymış.
+
+460
+02:24:25,403 --> 02:24:33,523
+2a noktasında fonksiyonun değeri, eksi p bölü 2 açısında 2a uzunluğundaymış.
+
+461
+02:24:33,884 --> 02:24:41,423
+Daha sonra sıfıra geldiğimizde, bakın teta'yı sıfır aldığımda ben, önce eksi p bölü 2 alıyorum.
+
+462
+02:24:41,907 --> 02:24:44,347
+Sonra sıfır aldığımda, re'ştir a'ymış.
+
+463
+02:24:45,387 --> 02:24:46,407
+Re'ştir a'ymış.
+
+464
+02:24:46,927 --> 02:24:54,667
+Daha sonra, açıyı, pi bölü 2 aldığımda, fonksiyonun değeri, uzunluğu sıfırmış.
+
+465
+02:24:54,747 --> 02:24:56,227
+Re'ştir sıfırmış. Buraya geliyor.
+
+466
+02:24:57,087 --> 02:24:58,608
+Ve azalan bir fonksiyon olarak gidiyor.
+
+467
+02:24:58,667 --> 02:25:00,847
+Bakın fonksiyonun değeri 2a'dan a'ya azalıyor.
+
+468
+02:25:01,448 --> 02:25:06,547
+A'dan, artık a'ya geliyor, a'dan sıfır azalıyor arkadaşlar.
+
+469
+02:25:06,932 --> 02:25:18,172
+sıfırı da azalıyor. Dolayısıyla böyle bir yine kalp eğrisi elde ettim. Bu eğri, teta eşittir pi bölü 2 doğrusuna göre arkadaşlar, simetrikmiş.
+
+470
+02:25:18,731 --> 02:25:21,708
+Teta eşittir pi bölü 2 doğrusuna göre simetrikmiş.
+
+471
+02:25:26,036 --> 02:25:43,595
+Simetrikmiş. ETT eşitir, pi 1-2 doğrusu zaman ne olur? Burası da benzer şekilde bir kalp eğrisi çiziyor. Buna benzer bir eğrisi çiziyor. Dolayısıyla bakın yine bir kalp eğrisi elde ettik arkadaşlar. Burada da yine kardiyoyit diyoruz ama bu biraz daha farklı bir kardiyoyit oldu. Tam bir kalp oldu gerçekten.
+
+472
+02:25:47,412 --> 02:25:49,592
+İkinci fonksiyonumuz da bu şekilde.
+
+473
+02:25:50,551 --> 02:25:51,832
+Fonksiyon, es çizimimiz.
+
+474
+02:25:52,172 --> 02:25:53,471
+Burada sorusu olan var mı?
+
+475
+02:25:55,531 --> 02:25:56,971
+Anlaşılmayan bir yer var mı?
+
+476
+02:26:00,595 --> 02:26:21,495
+Yani adım adım gidiyoruz. Birinci adım periyot. İkinci adım fonksiyonun değerlerini buluyoruz. Fonksiyonun azalanlığını, artanlığını buluyoruz. Simetrilerini buluyoruz. Birinci adım da periyot. İkinci adım da simetriler bulunuyor. Üçüncü adım da türevini alıyoruz. Dördüncü adım da türevini alıyoruz.
+
+477
+02:26:26,611 --> 02:26:29,871
+Birinci adımda bazı noktalara bakıyoruz, bazı noktalardaki değerlerine bakıyoruz.
+
+478
+02:26:31,031 --> 02:26:33,412
+Beşinci adımda da bir grafik çiziyoruz.
+
+479
+02:26:33,551 --> 02:26:38,752
+Yani azalanlık arkalama göre fonksiyonun türevi ve fonksiyonun arasındaki ilişkiyi bir grafikle gösteriyoruz.
+
+480
+02:26:39,252 --> 02:26:47,031
+Ve sonra da bu grafikteki, bu dördüncü adımdaki noktalara bakarak, bu grafiğe bakarak bir çizim yapıyoruz bir aralıkta.
+
+481
+02:26:47,031 --> 02:26:51,671
+Daha sonra simetrilere bağlı olarak o çizimi genişletiyoruz arkadaşlar.
+
+482
+02:27:01,427 --> 02:27:03,427
+Bakın mesela burada ek...
+
+483
+02:27:03,427 --> 02:27:10,827
+Daha sonra onu, teteştir, pi bölü 2'ye göre simetri olduğu için bu tarafa da genişlettik arkadaşlar.
+
+484
+02:27:20,308 --> 02:27:28,348
+Adım adım gideceğiz. Önce periyodu belirleniyor. Zaten sinüs ve kosinüs fonksiyonları 2 pi periyotlu. Aynı şekilde devam ederler.
+
+485
+02:27:29,228 --> 02:27:43,628
+İkinci adımda simetrilerine bakıyoruz. Eksi teta, pi eksi teta, pi artı teta'ya göre hangi eksene göre, kutsal eksene göre mi, teta işte pi bölü 2'ye göre mi simetrileri var bunlara bakıyoruz.
+
+486
+02:27:44,208 --> 02:27:46,628
+Üçüncü adımda türevini alıyoruz fonksiyonun.
+
+487
+02:27:47,891 --> 02:28:07,891
+Dördüncü adımda noktaları belirliyoruz. Bakın burada da yine noktalar genişletilebilir arkadaşlar. Buraya dikkat edin. Burada da yine noktalar genişletilebilir. Yani nasıl? Teta eşittir 0, teta eşittir, eksi pi bölü 2'den almıştık. Mesela eksi pi bölü 4, eksi pi bölü 6, eksi pi bölü...
+
+488
+02:28:08,531 --> 02:28:31,111
+3 gibi, buralardaki açılar genişletilebilir. Yine pi bölü 2, pi bölü 4, pi bölü 3, pi bölü 6 açılar da buralarda alınarak değerleri belirlenebilir. Daha ayrıntılı bir çizim yapılabilir. Yani noktalar belirlendiği zaman zaten bu şekilde çizilecektir. En azından bu şekilde bakarak da yaptığınız işlemlerden emin olabilirsiniz arkadaşlar.
+
+489
+02:28:33,111 --> 02:28:35,072
+Bunu da söylemiş olayım.
+
+490
+02:28:38,227 --> 02:28:39,067
+Anlaşılmayan
+
+491
+02:29:22,164 --> 02:29:35,084
+Şimdi diğer soruya bakalım. 1-kos teta eğrisin çizim demiş. Ya da buna yarın devam edelim arkadaşlar buradan. 1-kos teta'dan yarın devam edelim arkadaşlar.
+
+492
+02:29:37,084 --> 02:29:44,064
+Bakın, bunu kendiniz evde de yapabilirsiniz. Ya da bir tane eğri çizim yarına kadar. Bir tane eğri çizim yapın muhakkak.
+
+493
+02:29:44,064 --> 02:29:48,564
+Önce periyot belirlendi. Simetrilere bakıldı.
+
+494
+02:29:49,007 --> 02:29:57,268
+Daha sonra artanlık, azalanlığa bakıldı. Noktalardaki değerler belirlendi ve sonra grafik çiziliyor arkadaşlar.
+
+495
+02:29:59,247 --> 02:30:05,547
+Bakın burada bir kardiyot elde edilmiş. Yarın bir eksikostarıdan devam edelim arkadaşlar. Sorusu olan var mı?
+
+496
+02:30:08,587 --> 02:30:12,667
+Ödevlerinizi yapmamışsınız geçen hafta. Bekliyorum ödevlerinizi arkadaşlar.
+
+497
+02:30:16,531 --> 02:30:19,471
+Yarına kadar bir kutupsal eğri çizimi yapın.
+
+498
+02:30:24,340 --> 02:30:27,279
+Çok teşekkürler dinlediğiniz için, derse katılmanız için.
+
+499
+02:30:37,971 --> 02:30:41,752
+Sorusu olan yoksa dersi bitiriyorum arkadaşlar. Kendinize iyi bakın.
+
+500
+02:30:42,871 --> 02:30:43,791
+İyi günler hocam.
