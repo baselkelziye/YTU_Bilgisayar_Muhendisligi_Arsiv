@@ -1,0 +1,603 @@
+1
+00:00:03,540 --> 00:00:05,179
+İçerik bacak mı çalışıyorsunuz?
+
+2
+00:07:44,884 --> 00:07:45,364
+Merhaba hocam.
+
+3
+00:07:48,283 --> 00:07:50,144
+Kayıp tez öğrencimi görünce.
+
+4
+00:07:51,524 --> 00:07:52,604
+Evet hocam benim.
+
+5
+00:07:54,283 --> 00:07:55,124
+Bir bakayım dedim.
+
+6
+00:07:57,244 --> 00:08:01,403
+Bir saniye bana ses mi gelmiyor? Bir şey söylüyor musunuz?
+
+7
+00:08:02,824 --> 00:08:04,364
+Benim sesim geliyor mu hocam?
+
+8
+00:08:04,864 --> 00:08:06,963
+Şimdi geldi. Daha önce gelmiyor.
+
+9
+00:08:09,963 --> 00:08:10,644
+Evet.
+
+10
+00:08:12,723 --> 00:08:15,644
+Seninle bir ara görüşecek miyiz [öğrenci] ders dışı?
+
+11
+00:08:16,663 --> 00:08:26,743
+Hocam, görüşeceğiz evet. [kişisel bilgi] Bu hafta içi olur herhalde.
+
+12
+00:08:26,743 --> 00:08:39,723
+Tamam, okey. Evet, şimdi biliyorsunuz bu hafta yine soru-cevap aklımız var mı soracağınız bir şey?
+
+13
+00:08:40,692 --> 00:08:42,331
+Sormak istediğim bir şey.
+
+14
+00:08:44,532 --> 00:08:45,772
+Benim var hocam.
+
+15
+00:08:46,611 --> 00:08:46,971
+Efendim?
+
+16
+00:08:48,052 --> 00:08:49,231
+Benim var birkaç sorum.
+
+17
+00:08:49,231 --> 00:08:50,152
+Sor bakalım.
+
+18
+00:08:51,312 --> 00:08:52,351
+Ekran paylaşayım mı hocam?
+
+19
+00:08:52,991 --> 00:08:55,451
+Bir saniye, sana hak vermem gerekiyor olabilir.
+
+20
+00:09:01,524 --> 00:09:04,124
+Denedim mi paylaşmayı?
+
+21
+00:09:04,524 --> 00:09:05,323
+Yok denemedim hocam.
+
+22
+00:09:05,524 --> 00:09:08,364
+Dene bakalım. Ayarı yaptım ama.
+
+23
+00:09:18,259 --> 00:09:19,340
+Paylaştım hocam galiba.
+
+24
+00:09:20,059 --> 00:09:20,419
+Aynen.
+
+25
+00:09:21,620 --> 00:09:28,860
+Hocam bizim grubun projesi şey şeydi, bir ara konuşmuştuk, bu Atfa diye bir dataset var, sistem çağırlarını.
+
+26
+00:09:29,759 --> 00:09:33,860
+Ben de onu burada sunayım dedim şey olarak, binbir olarak.
+
+27
+00:09:35,919 --> 00:09:39,720
+Zaten kabul geçti ki şey yapıyorum, sunuyorum.
+
+28
+00:09:41,720 --> 00:09:44,439
+Ben iş paketleri konusunda birkaç soru soracağım.
+
+29
+00:09:45,059 --> 00:09:45,360
+Doğru.
+
+30
+00:09:47,379 --> 00:10:12,480
+Şimdi düşündüm ki iş pakettir. Gerçi şöyle doldurdum da ne kadar doğru diye bir sormak istiyorum. Örneğin bir tane iş paketi var. Veri seti çalışması ve model oluşturulması diye. Veri setinin kendisinde sistem çağırları var. Tam hatırlamamakla beraber galiba sadece zararlı sistem çağırlarıydı. Bunun bir şekilde çalışılıp buradan doğru input verildiğinde
+
+31
+00:10:12,980 --> 00:10:36,519
+Gerekli input verdiğinde bu anomalidir ya da değildir diye bir output alabilecek bir model çıkması lazım oradan. Böyle bir iş paketinin olması lazım. Ve bunun başarısına da şey dedim, %80 en az başarı vermesi lazım ki bu modeli kullanabilelim. Tabi bu bir risk de oluşturuyor. %86'nda ne yapacağız?
+
+32
+00:10:40,467 --> 00:10:58,467
+Yani şimdi %80'nin altında ne yapacaksın? Risk planında açıklaman gereken şey. Yani risk nedir? Senin %80'i başaramaman, yani istenilen hedefi tutturamaman bir şeydir. Ama burada başarı derken ekürüsüden mi bahsediyoruz? Neden bahsediyoruz? Bunu daha iyi...
+
+33
+00:10:58,975 --> 00:11:23,975
+Tanımlamak lazım. Hedef noktasında bunu yazsam bile, başarı ölçütünde vs. de daha açık bir şekilde belirtmekte fayda var. Bu arada veri seti çalışması ve model oluşturulması bana birlikte olması bir değişik geldi ama bu zaten elinizde bir veri seti var anladığım kadarıyla. O veri seti üzerinde...
+
+34
+00:11:25,235 --> 00:11:34,775
+Bir şey yapacak mısınız, yapmayacak mısınız, doğrudan alıp kullanabileceğiniz bir şey mi bilmiyorum. Ona bağlı olarak böyle olması daha uygun olabilir.
+
+35
+00:11:35,675 --> 00:11:45,816
+Şu an bazı söylediğim şeyler varsayımsal. Onu da hatırlatmak isterim. Ama sabit olan kısmı şu, biraz aşağı iner misin?
+
+36
+00:11:47,604 --> 00:12:05,044
+Şimdi eğer senin derdin burada, bu iş paketinde diyelim ki %80 doğrulukla çalışan, yani verdiğin bir sistem çağrısı sekansının zararlı olup olmadığını ya da bir uygulamanın bütün sistem çağrılarını mı vereceksin artık?
+
+37
+00:12:05,204 --> 00:12:11,024
+Nasıl bir şey yapmak istediğinle alakalı ve o uygulamanın zararlı olup olmadığını mı söyleyeceksin?
+
+38
+00:12:14,192 --> 00:12:27,751
+Tariflemen lazım. Bunun için model oluşturulması diyorsun ya, ne modeli, ne ile, ne şekilde bunları anlatman lazım.
+
+39
+00:12:29,491 --> 00:12:38,932
+Anladım hocam. Aslında ben de tam veri setinin kendisinden de emin olmadığım için biraz geniş bir şekilde iş paketini verdim.
+
+40
+00:12:39,360 --> 00:12:44,740
+Hem çalışılsın, ne olduğu ortaya çıksın, hem de bunun sonucu da model oluşturulsun gibisinden. Daha da açayım buraları.
+
+41
+00:12:45,299 --> 00:12:59,180
+Yani şöyle, veri setin üzerinde ne yapacaksınız? Yani veri setinin içerisinde ne var? Siz buna bir şey ekleyecek misiniz? Eklemeyecek misiniz? Yoksa olan veri setini doğrudan kullanacaksınızla sınırlıysa, ikisinin bir arada bir iş vakitinde olması okey de,
+
+42
+00:13:24,288 --> 00:13:36,708
+Ölçüp bir çip takmanız lazım. O sizde. Ama diğer tarafı, yani model oluşturulması kısmında, burada yapacağınız ve deneyeceğiniz şeyleri de belirtiyor olmanız lazım. Misal, biz model oluşturacağız. Peki çok güzel.
+
+43
+00:13:38,168 --> 00:13:48,491
+Farz misal, neyü beyaz kullanarak oluşturacağız. Neden? Çünkü literatüre baktığımız zaman şununla oluşturulmuş, bununla oluşturulmuş, bununla oluşturulan en...
+
+44
+00:13:49,427 --> 00:14:04,768
+Yüksek başarıyı vermiş ya da benzer bir problem için aslında, hani, var bilimsel, şunu düşünebilirsiniz, sistem çağrıları böyle doğrudan, birbirinden bağımsız olarak yapılan işler değiller.
+
+45
+00:14:08,347 --> 00:14:13,768
+Nasıl diyeyim, bir aslında sekans var aralarında. Dolayısıyla...
+
+46
+00:14:14,707 --> 00:14:30,248
+Belli state'ler var, o state'lerden başka state'lere geçiyorsunuz. Dolayısıyla böyle bir algı, bir şey arıyorsanız, bunu belki de işte benzer bir çalışma ya da benzer bir problemi çözmek için Hidden Markov Model kullanılmış. Biz de aynı şeyi kullanmak istiyoruz. Burada onu deneyeceğiz.
+
+47
+00:14:30,707 --> 00:14:37,067
+Ama burada başarının %80 üstü olmasını bekliyoruz. Çünkü diğer çalışmalarda hep böyle şeyler çıkmış.
+
+48
+00:14:37,067 --> 00:14:43,987
+Fakat %86'da kalırsak diye alternatif olarak şu yöntemi de denemek istiyoruz falan şeklinde.
+
+49
+00:14:44,788 --> 00:14:52,567
+Hani iş paketinde sadece şey diyemezsiniz, model oluşturacağız deyip geçmek çok yüzeysel ve şey kalır.
+
+50
+00:14:55,507 --> 00:14:56,607
+Yavan kalır.
+
+51
+00:14:57,844 --> 00:14:58,423
+Aynen.
+
+52
+00:15:00,804 --> 00:15:03,644
+Burayı o şekilde düzelteyim, ilk iş paketinde.
+
+53
+00:15:05,564 --> 00:15:08,444
+Bir tane daha var hocam. Bir de şey olması lazım.
+
+54
+00:15:09,304 --> 00:15:12,024
+Şimdi bir S-Trace mesela bize şeyleri veriyor.
+
+55
+00:15:12,804 --> 00:15:15,644
+Sistem çağrılarını veriyor ya, S-Trace ile çalıştırırsanız bir uygulamayı.
+
+56
+00:15:16,504 --> 00:15:19,844
+Bence benim düşüncem, ilk olarak bu S-Trace çıktılarının...
+
+57
+00:15:20,788 --> 00:15:38,947
+Modele input olarak tabii şeyi de varsayıyorum, modeli karar verdik. İlk iş paketini düzgün yaptım. Modeli karar verdik. Nasıl input aldığını da biliyoruz. Bu S-Trace'in çıktılarını modele, işte sekans olarak diyelim ya da orada şey var, her sistem çarşının ID'si var.
+
+58
+00:15:41,971 --> 00:15:48,451
+Veri setindeki adilerle eşleştirilip bir input sekansı haline getirmesi lazım. Bir iş paketi de bu bence.
+
+59
+00:15:52,467 --> 00:15:54,647
+Bu olur mu böyle bir vakit olmasın?
+
+60
+00:16:13,716 --> 00:16:16,475
+Cihan sen devam ediyor musun konuşmaya? Durdum.
+
+61
+00:16:16,536 --> 00:16:19,435
+Yok hocam ben de sizi meslemiyordum. Sesim geliyor mu?
+
+62
+00:16:19,796 --> 00:16:22,155
+Geliyor şimdi. Bir ara kesildi gibi oldu o yüzden.
+
+63
+00:16:31,195 --> 00:16:39,135
+Orada şöyle bir sıkıntı var. Şimdi S-Tres'e sana sistem çağrılarını söylüyor da, o sistem çağrılarını...
+
+64
+00:16:39,135 --> 00:16:44,536
+Söylerken aslında uygulamanın nasıl çalıştığını belirlemiyorsun.
+
+65
+00:16:45,536 --> 00:16:51,496
+Yani şimdi böyle dümdüz bir uygulamaysa diyelim ki Web Server.
+
+66
+00:16:52,395 --> 00:16:56,115
+Yani doğrudan bir user interaksiyonu yok ama ne yapıyorsun?
+
+67
+00:16:56,735 --> 00:17:00,115
+Dışarıdan bir istek geliyor, o isteği karşılıyorsun, devlet üretiyorsun.
+
+68
+00:17:00,115 --> 00:17:04,355
+O ismin içeriğine bağlı olarak belli dosyalaya erişiyorsun, şey yapıyorsun.
+
+69
+00:17:09,332 --> 00:17:13,412
+Ne durum?
+
+70
+00:17:18,832 --> 00:17:26,332
+Farklı aslında yollar ve şeyler takip ediyorsun, durumlar takip ediyorsun. Çok pardon, bir saniye şey.
+
+71
+00:17:33,044 --> 00:17:33,684
+Hmm.
+
+72
+00:17:37,907 --> 00:18:02,827
+Atlar takip ediyorsun. Yani diyelim ki sen bir web server açtın, o web server'a S-Race'le çağrılarını kaydediyorsun. Adama hiçbir istek gelmezse kaydedeceğin bir çağrı yok. Ama adama gelen istek işte herhangi bir web sayfasına tıkladın, orada belki yüzlerce dosya var. O dosyalara erişmek istediği zaman yapacağı çağrıların sayısı, miktarı ve sırasıyla
+
+73
+00:18:05,428 --> 00:18:14,128
+Farz-i misal, daha basit ya da primitif bir yere yaptığın erişim sırasında oluşacağı çağrılar birbirinden farklı.
+
+74
+00:18:14,288 --> 00:18:26,208
+Yani aslında bence sadece S-Trace'in çıktısını buraya modifiye etmek değil, S-Trace ile bilgi toplama sistematiğiyle ilgili de mesela bir iş paketi olması lazım.
+
+75
+00:18:27,608 --> 00:18:29,048
+Anlatacak değil mi derdimi?
+
+76
+00:18:29,523 --> 00:18:34,903
+Anladım. Estreys nasıl çalışıyor aslında bir ona bakıp bu bizim ihtiyacımızı tam karşılıyor diye mi şey yapmamız lazım?
+
+77
+00:18:36,143 --> 00:18:46,123
+Yani şöyle Estreys sizin ihtiyacınızı karşılar da oradaki sıkıntı şu. Şimdi çalıştırdığın uygulamanın dümdüz olmasını beklemiyorsun. Doğru mu?
+
+78
+00:18:46,579 --> 00:18:53,259
+Yani adam, diyelim ki user input oluyor ya da ekranda bir şeyler yapman gerekiyor.
+
+79
+00:18:53,359 --> 00:18:58,380
+Ambasın şu browser düşün. Ben yeni taba tıkladım, bir şeyler yazdım, bir web sayfasına gittim.
+
+80
+00:18:58,519 --> 00:19:05,679
+Olmayan bir sayfa yazdığım zamanla olanla, olan bir sayfa yazdığım zaman olanlar birbirinden farklı.
+
+81
+00:19:05,839 --> 00:19:10,699
+Sayfaların içeriklerine göre olanlar birbirinden farklı. Yapılan çağrılar birbirinden farklı.
+
+82
+00:19:11,019 --> 00:19:14,579
+Dolayısıyla bir uygulamanın farklı durumlarda...
+
+83
+00:19:14,579 --> 00:19:26,000
+nasıl davrandığını da toplayabilecek S3S loglarına ihtiyacım var. Onunla ilgili de bir yapı ya da bir sistematik bir sandbox vesaire kurmanız lazım. Onun için.
+
+84
+00:19:28,740 --> 00:19:42,059
+Hocam ben de gerçi tam oturmadığı, diyelim gerçi o profesördeki tabların her biri bir trade olarak çalışıyor ya. Her bir trade'i ayrı bir işte sistem çağrısı sekansı olarak bakmamız mı lazım? Örneğin.
+
+85
+00:19:43,476 --> 00:19:48,816
+Taba tıklandığındaki başlangıç tarihini alıp bu adam farklı bir iş yapıyor diye varsaydık.
+
+86
+00:19:50,256 --> 00:20:10,196
+Şimdi şöyle, normal şartlarda hangi browser olduğuna göre değişir ama genelde bir tane arı yüz için var, bir tane şey için var, add-onlar vs. için var, parser'ı var vs. var.
+
+87
+00:20:11,092 --> 00:20:28,432
+Şimdi hangisinin nasıl, nerede, ne yaptığını değerlendirirken bunu bütün olarak da düşünebilirsin. Bunların hepsini ayrı ayrı da düşünebilirsin. Ama bunun için mesela hala hazırda bir veri seti kullanıyorsan sistem çağrıları ile ilgili.
+
+88
+00:20:28,880 --> 00:20:33,220
+Orada adamlar nasıl yapmışa bakıp ona göre karar vermek bir yöntem olur.
+
+89
+00:20:33,800 --> 00:20:44,360
+Yani onlar mesela bir proses'e ait tüm türetlerin çağrılarını ayrı ayrı mı tutmuşlar, hepsini bir arada mı tutmuşlar, ne yapmışlara bakmak lazım.
+
+90
+00:20:44,819 --> 00:21:07,940
+Ama bir taraftan da şey, demek istediğim şey şu, S-Trace ile topladığın bilgiyi sisteme vermek için ne yapman gerektiği bir iş paketi, buradaki iş paketi 2, okey. Ama S-Trace ile bilgi toplamayla ilgili bir otomizasyon yapman lazım. İşi otomatik hale getiren bir şey yapıda kurman, bir formalizasyon yapman lazım.
+
+91
+00:21:09,619 --> 00:21:35,759
+Anladım hocam. Tamam. Gerçi o şekilde yapılsa gerçek hayatta biz zaten implement etmeyeceğiz de baya güzel olur. Veri seti tarafını yanlış hatırlamıyorsam galiba uygulamanın bütün sistem çağrıları şey olarak veriliyor. Sekans olarak veriliyor. Hani farklı threadlerden farklı işleri yapmış browser diyelim. Herhalde öyle değildi ama eğer implement edilecekse bence dediğiniz çok daha müşter.
+
+92
+00:21:38,451 --> 00:21:42,211
+Okey. O zaman. Başka?
+
+93
+00:21:43,172 --> 00:21:44,991
+Bir tane iş paket daha var hocam, benim düşündüğüm.
+
+94
+00:21:46,291 --> 00:21:47,451
+Bu S-Tres'le yaparken...
+
+95
+00:21:48,552 --> 00:21:56,392
+Şimdi bir şey soracağım ama. Benim sizden beklediğim sorular, proje yazımı ile ilgili sorular.
+
+96
+00:21:57,779 --> 00:22:07,599
+Hani iş paketinin hani şurasını şunu yazdık okey mi? Mesela ilk başta sorduğun gibi hani yüzde seksen yazmamızı okey mi? Vesaire diye sordun ya.
+
+97
+00:22:08,559 --> 00:22:12,340
+Senin sorular daha çok hani projenin nasıl yapılacağına kaymaya başlayacak.
+
+98
+00:22:12,340 --> 00:22:13,259
+Kaydettin.
+
+99
+00:22:13,800 --> 00:22:25,460
+Tamam mı? Yani hani bir yere kadar da okey konuşuruz ama hani asıl şu an hani sizden istediğim ve beklediğim hani projelerin yazımıyla ilgili kısım.
+
+100
+00:22:26,516 --> 00:22:34,876
+Anladım hocam. Aslında ben anladım. Yani şu ana kadar tamam ama isterseniz devamında sorabilirim.
+
+101
+00:22:35,396 --> 00:22:38,376
+Yok yani proje yazımı ile ilgiliyse sorma.
+
+102
+00:22:39,220 --> 00:22:45,380
+Yok, projenin kendisiyle ilgili ise sor ama, yazımıyla ilgili ise sor. Pardon, yanlış söyledim.
+
+103
+00:22:46,039 --> 00:22:49,980
+Yok, yazımını anladım. Bundan sonra projenin kendisiyle ilgili olacak sorularım.
+
+104
+00:22:50,300 --> 00:22:52,720
+Bu arada önümüzdeki hafta testim değil mi?
+
+105
+00:22:53,440 --> 00:22:54,579
+Evet hocam önümüzdeki hafta testim.
+
+106
+00:22:54,599 --> 00:22:57,480
+Buraların çoktan dolmuş olması lazımdı sanki gençler.
+
+107
+00:22:58,680 --> 00:23:00,880
+Evet hocam, haklısınız. Biraz zor bir hafta olacak.
+
+108
+00:23:01,460 --> 00:23:07,280
+Hadi Kukum, kolay gelsin. 1 Mayıs işçi bayramı, Allah kolaylık versin.
+
+109
+00:23:08,200 --> 00:23:11,599
+Teşekkürler hocam, benim sorularım bu kadar hocam, teşekkür ettim. Şehri durduruyorum.
+
+110
+00:23:13,360 --> 00:23:15,579
+Var mı başka sorusu olan arkadaşlar?
+
+111
+00:23:19,667 --> 00:23:22,768
+Selamlar hocam. Ben de bir soru soracaktım.
+
+112
+00:23:23,027 --> 00:23:24,228
+Buyur, dinliyorum.
+
+113
+00:23:24,228 --> 00:23:37,007
+Biz de proje konuştuk arkadaşlarla. Bu haftayı tekrardan beraber olup çoğaltacağız. Böyle bir bölgesini yazmamız gerekiyor.
+
+114
+00:23:40,027 --> 00:23:46,688
+Ben de birkaç tane şey çıkardık amaçlar ve hedeflerle ilgili.
+
+115
+00:23:47,412 --> 00:24:05,012
+Onları daha cümleler halinde bir paragraf haline vesaire getireceğiz ama burada amaçlar ve hedeflerdeki çıkardığınız maddelerin uygunluğunu sormak istiyordum ama.
+
+116
+00:24:05,751 --> 00:24:06,192
+Olur.
+
+117
+00:24:06,291 --> 00:24:07,152
+Göstersem.
+
+118
+00:24:07,692 --> 00:24:09,331
+Tabii, ekran paylaşabilirsin.
+
+119
+00:24:10,432 --> 00:24:10,771
+Tabii.
+
+120
+00:24:29,652 --> 00:24:31,652
+Tamam, bir günlük bir günlük.
+
+121
+00:24:40,819 --> 00:25:07,179
+Şimdi burada bizim gelen çağrıları analiz edip doğru şeylere yönlendirmeye çalışıyoruz. 112'ye gelen çağrıları verilen konuya göre çağrı merkezindeki operatörleri aktaracağız. Böylelikle hem yanlış çağrıları düzeltiyoruz bir de
+
+122
+00:25:07,488 --> 00:25:21,108
+İlk başta çağrıları karşılayan bir ekip var. Bu ekip sadece çağrının ne cins bir çağrı olduğunu alıp başka bir ekibe yönlendiriyor, uygun ekibe yönlendiriyor. Bunu otomatik yapmaya çalışıyorum.
+
+123
+00:25:23,248 --> 00:25:26,860
+Analiz edip, burada amacımız işte...
+
+124
+00:25:26,867 --> 00:25:43,827
+Arayan kişinin bilgilerini, mesela her şey vermek, arkadaki operatöre vermek, mesela yangın var diyor, onun adresini otomatik olarak şeye verelim gibi bir amacımız var.
+
+125
+00:25:46,195 --> 00:26:04,596
+Burada arama tespiti, sebebini, konunun tespitini yapıp, işte doğru bir birime yönlendirme gibi bir amacımız var. Bu sayede işte daha az yanlış yapılması, hızlı bir şekilde cevap verilmesi gibi amaçlarımız var. Bunları çoğalacağız.
+
+126
+00:26:13,652 --> 00:26:39,372
+Daha sonradan da işlenebilmesi için vesaire bir şekilde raporlanması, diğer şeylerin de çıkartılması ve böylelikle daha doğru bir personel seçimi ve şey gibi bir amacımız var. Daha az belki personelle bu işi yapabilmek için bir plan gibi bir şeyimiz var. Hedeflerimiz de sahte aramaları düşürmek.
+
+127
+00:26:40,115 --> 00:27:00,435
+Operatör sayısını azaltmak, Afet Savaş gibi olan durumlarda cevapsız çağrıları azaltmak, cevap verebilmek orada. Bir de mesela çağrı sayısını arttırmak gibi bir yüzde vereceğiz buraya gibi hedeflerimiz var.
+
+128
+00:27:00,816 --> 00:27:25,804
+Bir de mesela konu tespitini, şu anda bir operatörle yaptığımızda 30 saniyede bir konu tespiti yapabiliyorsak, onu artık 5 saniyeye düşürmeyi hedefliyoruz gibi böyle hedeflerimiz var. Bunları şey diye konuşmuştuk, hedefler direkt oran vermemiz gerekiyor, daha somut şeyler olacak. Amaçlar da...
+
+129
+00:27:26,003 --> 00:27:28,843
+Bu bir şekilde uygun mudur?
+
+130
+00:27:29,963 --> 00:27:36,703
+Genel olarak uygun. Bir tek şey, üçüncü madde uygun değil. Afet Savaş gibi olan stüdyomlarda cevapsız çağrı bırakmamak.
+
+131
+00:27:37,883 --> 00:27:48,503
+Yani hani o bir amaç olabilir belki ama hani teknik olarak mümkün olmayabilir zaten.
+
+132
+00:27:48,503 --> 00:27:53,143
+Bir de hani cevapsız çağrı bırakmak derken.
+
+133
+00:27:53,503 --> 00:28:09,503
+Yani şu an cevapsız çağrı sayısını biliyor musun? Ya da bir afet durumunda cevapsız çağrı miktarını biliyor musun? Ya da genel çağrılar arasından ne kadar cevapsız kalıyor biliyor musun? Buna bağlı olarak bunu azaltmak olabilir.
+
+134
+00:28:20,756 --> 00:28:36,395
+Nedir o? Adamın konuşmalarından bilgi çıkartıp bu bilgiyi aktarmayı sağlıyorsan, işte adamın normal şekilde sorulara cevap vermesiyle elde edeceğin bilgiyi otomatik söylediğinden çıkartıp dolduruyorsan bir şeyleri, zaten hızlanacaksın.
+
+135
+00:28:36,395 --> 00:28:46,156
+Hızlandığı zaman otomatikman cevaplayabildiğin çağrı sayısı artacak. Bunun üzerinden de cevapsız çağrıları bırakmayacaksın ama yani şunu...
+
+136
+00:28:46,195 --> 00:28:56,776
+Her zaman sağlayamayabilirsin. Nasıl diyeyim? Biri aradı 112'yi, lütfen bekleyin dedi. Adam çat diye kapattı gitti. Bu da cevapsız çağrı.
+
+137
+00:28:56,776 --> 00:29:04,536
+Ya da ne bileyim, zaten ufacık bir deprem olduğunda hatırlayın İstanbul'da.
+
+138
+00:29:04,895 --> 00:29:29,516
+GSM hatları her şey ortadan kalktı gitti. Doğru düzgün hiçbir hat çalışmadı. Zaten ulaşılamadı. Ya da bazı özel durumlarda yani terror saldırısı bilmem ne gibi durumlarda zaten şey yapamıyorsunuz. Hiçbir şeye cevap veremiyorsunuz. Şakır şakır herkes aramaya başladığı zaman yani yığılma çok fazla oluyor. Dolayısıyla gene cevapsız tarih olacaktır. O biraz muğlak yani ölçülebilir değil.
+
+139
+00:29:30,291 --> 00:29:38,351
+açık ve ölçülebilir değil. O tanıma uymuyor, o satır. Onu biraz daha farklı şekilde formülize etmek lazım ya da hiç yazmamak lazım.
+
+140
+00:29:39,311 --> 00:29:46,911
+Yani biraz iddalı bir demek çünkü o belli açılardan. Ama onun için de uygun. Yani bana tek batan yer olarak şu an baktığım zaman.
+
+141
+00:29:48,692 --> 00:29:57,352
+Yani burada bizim zaten amacımız hani şey aslında, belirli bir saniyede cevaplaman çağrı sayısını da arttırmak yani.
+
+142
+00:29:57,352 --> 00:30:07,251
+Hani orada o anlamda aslında. Çünkü normalde işte 200 tane operatör varsa aynı anda 500 çağrı geldiğinde hiçbir şekilde cevaplanamıyor.
+
+143
+00:30:07,352 --> 00:30:16,352
+Onu işte otomatize edip belki saniyede 3000 çağrı alabilecek şekilde getirme gibi bir hedef.
+
+144
+00:30:16,468 --> 00:30:19,188
+Gibi bir şey yazabiliriz o zaman onun yerine tamam mı?
+
+145
+00:30:20,928 --> 00:30:22,008
+Sağ olun, teşekkür ederim.
+
+146
+00:30:22,868 --> 00:30:23,428
+İyi de mutlaka.
+
+147
+00:30:27,571 --> 00:30:29,391
+Var mı başka sorusu olan?
+
+148
+00:30:42,483 --> 00:30:59,903
+Okey, yani şey, testin önümüzdeki hafta biliyorsunuz az zaman kaldı. Umarım yani şuraya, buraya kadar bir kısmımız zaten toparlamıştır ya da bitirmiştir ama bitirmemiş ya da toparlamamış hafta geçildi. Bu bir hafta çok kritik.
+
+149
+00:31:00,339 --> 00:31:16,579
+Upload için bir link paylaşmıştık duyuruda ama aktif değildi. Onu da bugün yarın bir ara açarım kullanımınıza hazır olur diyeyim. O zaman başka sorunuz yoksa da hepinize iyi günler diyeyim gençler.
+
+150
+00:31:17,859 --> 00:31:19,620
+İyi günler hocam.
+
+151
+00:31:20,200 --> 00:31:21,059
+Günler, görüşürüz.
