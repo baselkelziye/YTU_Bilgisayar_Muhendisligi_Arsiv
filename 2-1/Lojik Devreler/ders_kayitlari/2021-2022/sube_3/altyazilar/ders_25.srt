@@ -1,0 +1,2611 @@
+1
+00:05:29,108 --> 00:05:31,028
+Merhaba arkadaşlar, ses geliyor mu?
+
+2
+00:05:31,447 --> 00:05:31,848
+Merhaba.
+
+3
+00:05:42,867 --> 00:05:53,608
+Tamam geliyor diyorlar. Bir iki üç dakika daha hatta iki on geçe başlayalım arkadaşlar. Beş dakika daha duralım sonra başlayalım.
+
+4
+00:10:02,196 --> 00:10:10,636
+Evet arkadaşlar, başlayalım. Herhalde katılım zaten biraz az oluyormuş, Gökhan Hoc'un sözlenmesine göre.
+
+5
+00:10:16,628 --> 00:10:41,628
+Evet, arkadaşlar bundan sonra beraber işleyeceğiz dersi. Online grubu ben devraldım. Beraber dersi yapacağız. Bu hafta ne yapacağız? Bu hafta bir örnek yaparak başlayacağız. Yanlış, yani aynı örnekleri yaparsam söyleyin lütfen. Hani hoca da belki, gök onca da benzer örnekleri çözmüş olabilir.
+
+6
+00:10:42,176 --> 00:11:00,676
+Söylersiniz, onları geçeriz. Geçen haftalarda, Gökhan Hoca'nın söylediği kadarıyla, kombinezonsal devreleri bitirmişsiniz. Bu hafta ardışıl, yani sequential devrelere giriş yapacağız. Eğer örneklerimiz yeterince zamanında biterse ki biter gibi duruyor.
+
+7
+00:11:02,515 --> 00:11:13,815
+ve ardışıl devre tasarımlarına giriş yapacağız. Ama öncesinde bir komünizonsalların ve komünizonsal devre diagramlarında kullandığımız yardımcı entegreler diye tabi ettiğimiz,
+
+8
+00:11:13,975 --> 00:11:20,315
+MOOC, DEMACS, işte decoder ve encoder'e bağlı olan bazı örnekler yapacağız.
+
+9
+00:11:21,427 --> 00:11:26,028
+Hatta belki bu slide'da olmayan birkaç tane daha örnek yazabiliriz kitaptan.
+
+10
+00:11:26,668 --> 00:11:33,627
+Bu şekilde örneklerle başlayıp sonra da konu anlatımı olan Sephian Şimdol Ardaşıl Devre tasarımına geçeceğiz.
+
+11
+00:11:34,148 --> 00:11:41,827
+Burada sizden ricam şu olacak, kesinlikle bir defter kalem yanınıza alıp bu örneklere uğraşmanız çünkü ben çözmeyeceğim.
+
+12
+00:11:42,207 --> 00:11:54,207
+Ben sizi yönlendireceğim. Eğer ki kimse yapmak istemezse, yani daha doğrusu kimse burada birkaç kişiye sen yapar mısın, ben yapar mısın diye söyleyeceğim ama...
+
+13
+00:11:54,644 --> 00:12:04,644
+Yapamayacak durumda olanları ben yardımcı olarak çözdüreceğim. Ben soruyu sıfırdan çözmeyeceğim. Tekrardan söyleyeyim. Zaten sorular zor sorular değil.
+
+14
+00:12:05,104 --> 00:12:12,864
+Sadece aşinalık tekrar hatırlama. Çünkü bir hafta sonra MUX'un ve de Max'ın fonksiyoneli unutulduğunu gözlemliyorum.
+
+15
+00:12:12,864 --> 00:12:22,604
+Yani mesela MUX neydi dediğimde işte decoder anlatanlar oluyor vesaire. Hani bunu önüne geçmek için böyle bir flashback yapacağız bazı şeyler.
+
+16
+00:12:22,644 --> 00:12:43,923
+Bunun için de sizin çözmenizi isteyeceğim. Zaten dediğim gibi sorular atla deve değil. Yani zor değil. Hatta bazı sorular belki ilk haftalardaki basic konulardan olacak. Ama sizin uğraşmanızı, burada sizin yapmanızı ve benim de gerekli noktalarda size yardımcı olacağını söylüyorum.
+
+17
+00:12:44,755 --> 00:12:52,755
+Bu yüzden sizin yapmanızı istiyorum. Birinci sorumuza bakalım. Ekran yansıyor değil mi? Onu sormayı unuttum. Şu an soru geliyor mu sizin ekrana?
+
+18
+00:12:53,495 --> 00:12:53,915
+Evet hocam.
+
+19
+00:12:54,735 --> 00:13:05,395
+Tamam. Şimdi birinci sorumuz şöyle. Aşağıda bir şekil var. Dört giriş mevcut. Dört giriş A, B, C ve K girişleri. Bu E'ymiş pardon.
+
+20
+00:13:06,868 --> 00:13:21,988
+C çıkış, doğru. A, B, E ve K girişleri. İki de çıkışımız var, S ve C çıkışları. K burada bir giriş, yani simgesiyle gösterilen giriş, sıfır ise tam toplayıcı, bir ise tam çıkarıcı olarak çalışacak bu devre.
+
+21
+00:13:21,988 --> 00:13:34,807
+Bunun biz blok diagramını, yani daha doğrusu ben kendi grubumda da Gökhan Hoca da çözdüğü ve online'da da çözüldüğünü düşünüyorum. Hatta hatırlarsanız bir EXOR'lu kontrol ucu vardı ki o burada K.
+
+22
+00:13:34,868 --> 00:13:45,388
+K oluyor ve XOR'un, o K ucunun kontrolücüne göre tam toplayıcı veya tam çıkarıcı olarak çalışma prensibi anlatılmış olması lazım. İlk onu soralım, anlatıldı mı?
+
+23
+00:13:46,676 --> 00:14:09,756
+Evet hocam. Tamam. Burada da aslında aynı problem var ama orada biz blok diyagramları olarak bunu çözmüştük. Biz bu sefer bu soruda şunu soruyoruz. Doğruluk tablosu oluşturacağız. Bu doğruluk tablosuna göre Karnaugh yapacağız ve Karnaugh'dan elde ettiğimiz işlemleri tümleyen V kapıları kullanarak lojik şamasını çizmemizi istiyorum.
+
+24
+00:14:11,016 --> 00:14:12,756
+Yaklaşık olarak size bir...
+
+25
+00:14:13,364 --> 00:14:36,304
+13 geçiyor, 20 geçeye kadar vakit veriyorum. Sonra soruyu beraber çözeceğiz, yapmak isteyen arkadaşımızla. Tamam, başlayabiliriz. Yani yapılacaklar belli. Sorunuz varsa da sorabilirsiniz. Ben de buradayım. Ama 14-14 şu an benim saatim. 14-20'ye kadar uğraşmanızı ve bunu çözünlemenizi istiyorum.
+
+26
+00:14:39,827 --> 00:14:45,607
+Sorunuz varsa dediğim gibi sorabilirsiniz. Soruyu anlayamamış olma durumu var. Yani bunları sorunlukta.
+
+27
+00:15:03,028 --> 00:15:08,867
+Hatta kolaylık olsun diye şuraya doğru tablosunu sığar gibi düşünüyorum yazayım.
+
+28
+00:15:12,563 --> 00:15:16,844
+Hát, şimdi, şöyle, ezer saktan, kalırı, pence, ya?
+
+29
+00:17:00,340 --> 00:17:01,740
+Hocam bir şey sorabilir miyim?
+
+30
+00:17:01,740 --> 00:17:02,740
+Evet.
+
+31
+00:17:02,740 --> 00:17:07,740
+Aslında bu devre toplayıcı-çıkarıcı devrenin üç girişli bir hali değil mi?
+
+32
+00:17:07,740 --> 00:17:08,740
+Evet.
+
+33
+00:17:08,740 --> 00:17:09,740
+Tamamdır.
+
+34
+00:18:58,836 --> 00:19:05,135
+Evet, alıcık, gerçi daha vakit var ama iki dakikanız var, bir sene ne olabilir, yapmak isteyen.
+
+35
+00:20:01,779 --> 00:20:02,900
+Hocam bir şey sorabilir miyim?
+
+36
+00:20:03,360 --> 00:20:03,659
+Evet.
+
+37
+00:20:04,740 --> 00:20:13,619
+Tam çıkarıcıda A0, B1, E1 olduğunda ne oluyordu sonuç ve kere?
+
+38
+00:20:14,639 --> 00:20:16,599
+A0, ne dedim bir daha değerli misin?
+
+39
+00:20:16,900 --> 00:20:18,480
+A0, B1, E1.
+
+40
+00:20:19,124 --> 00:20:33,264
+Şimdi şöyle düşün, 0'dan 1 çıkarttığında bir borç alıyorsun ama o borcu sayma, daha doğrusu borç alıyorsun, o borcu da sıfırlıyorsun. Yani aslında borç bitim 1, 011'i dedim değil mi? Yanlış algılamadım.
+
+41
+00:20:33,556 --> 00:20:34,056
+Evet.
+
+42
+00:20:34,716 --> 00:20:53,816
+Sıfırdan bir çıkmayacağı için borç bitim bir olacak. Ama borç aldığım biti de birden biri çıkarttığım için normal sum veya işte S dediğimiz veya hangisini nasıl atayacağını bilmiyorum da. Hani o birden biri çıktığında da sonucun benim için sıfır olacak. Yani sonuç sıfır, borç bitinin de bir olduğu senaryo.
+
+43
+00:20:59,731 --> 00:21:01,811
+Sonuç sıfır, borç bir.
+
+44
+00:21:02,471 --> 00:21:10,271
+Evet, çünkü sıfırdan bir çıkarttığımızda bir borç almamız gerekiyor ve o borcu birden bir çıkartarak sonucu sıfırlıyoruz.
+
+45
+00:21:15,700 --> 00:21:19,519
+Mesela şu senaryoda 0-1-0 senaryosuna bakalım.
+
+46
+00:21:20,000 --> 00:21:22,519
+Sıfırdan bir çıkarttığımız için yine borç alacağız.
+
+47
+00:21:23,099 --> 00:21:29,940
+Ama bir sıfırlanmadığı için, aldığımız borcu elemediğimiz için, birden bir çıkartmadığımız için eldemizde bir kalacak.
+
+48
+00:21:30,400 --> 00:21:31,400
+Yani bir-bir olacak.
+
+49
+00:21:37,011 --> 00:21:37,611
+Tamam, dranada.
+
+50
+00:21:55,380 --> 00:22:17,380
+Burada tam toplayıcıdaki elde bitiyle tam çıkarıcıdaki borç bitini aynı alarak yapmanız gerekir. Hani o noktada define etmek lazım. Yani C'yeni atadık, S'yeni atadık, ona göre. Çünkü hatırlarsanız derste ben aslında öyle yaptım, yokum hocam bilmiyorum ama geçen haftalarda nasıl yaptı. Farkla borç...
+
+51
+00:22:18,836 --> 00:22:45,956
+Farku solda borç sağdım, MSB, LSB dizaynı da çizdiysen, eldeyi MSB, ötekini, toplamı LSB olarak çizdiğin, dijitlerin yeri farklı olmaması lazım. Eldeyi ile borcun dijitleri aynı dijiti seçmek lazım. Yani LSB mi aldın, C mi aldın, yoksa C mi belirledin, ona göre ayarlamak lazım.
+
+52
+00:23:13,907 --> 00:23:15,407
+Yok mu çözücü arkadaş?
+
+53
+00:23:17,987 --> 00:23:19,247
+Baya süre geçti.
+
+54
+00:24:08,147 --> 00:24:13,467
+Evet arkadaşlar, çözelim artık. Baya bir vakit geçti. Hani çok da kompleks bir soru değil esasında.
+
+55
+00:24:15,747 --> 00:24:19,507
+Şu doğruluk tablosunu yazabilecek veya bana yazdırabilecek biri var mı?
+
+56
+00:24:21,247 --> 00:24:23,147
+Hani daha kolay, daha kurtul bir şekilde.
+
+57
+00:24:32,852 --> 00:24:42,692
+Doğruluk tablosuyla Karnaugh'yı yapayım da hocam, C şıkkı şu anda elime kağıt kalem falan olmadığı için yapamayacağım.
+
+58
+00:24:43,572 --> 00:24:51,972
+Tamam, kağıt kalem alalım olmadı elimize. Sen yani şey olacaksa bilmiyorum, mouse'da kolay yazabilecek misin?
+
+59
+00:24:52,092 --> 00:24:56,912
+Bana da yazdırabilirsin, şu, şu, şu diye. Ama kolayca yazabilirsin.
+
+60
+00:24:56,912 --> 00:24:58,731
+Söyleyeyimdir hocam, söyleyin olmaz mı?
+
+61
+00:24:59,059 --> 00:25:01,179
+Olur. S ile C'yi nasıl atarın?
+
+62
+00:25:02,240 --> 00:25:06,299
+S sonuç C, Kerri. Elde yani. Elde ya da borç.
+
+63
+00:25:07,960 --> 00:25:10,220
+Tamam. Söyle.
+
+64
+00:25:12,159 --> 00:25:15,360
+Bu durumda hocam sıfır. İkisi de sıfır.
+
+65
+00:25:16,579 --> 00:25:21,480
+A, B'yi topluyoruz. Sonuç sıfır. Pardon bir. Elde var bir. Kerimi sıfır.
+
+66
+00:25:23,720 --> 00:25:25,639
+Topluyoruz bir sonuç. Kerimi sıfır.
+
+67
+00:25:26,708 --> 00:25:29,347
+Sonucumuz 0, keyrimiz 1.
+
+68
+00:25:32,884 --> 00:25:59,043
+Sonucumuz bir, kelimiz sıfır. Sonucumuz sıfır, kelimiz bir. Sonucumuz sıfır, kelimiz bir. İkisi de bir. Burada ikisi de sıfır. Burada sonucumuz bir, kelimiz bir. Burada da aynı şekilde bir bir.
+
+69
+00:26:00,756 --> 00:26:02,556
+Burada 0-0.
+
+70
+00:26:04,336 --> 00:26:09,556
+0-0 mı yoksa 0-1 mi?
+
+71
+00:26:12,376 --> 00:26:15,175
+İşte ben bu kısmı hocam karıştırmıştım, zaten sormuştum.
+
+72
+00:26:15,536 --> 00:26:19,615
+Şimdi şöyle düşüneceğiz, 0'dan 1 çıkarttığımda bir elde alıyorum.
+
+73
+00:26:20,736 --> 00:26:21,936
+Yani elde al...
+
+74
+00:26:22,036 --> 00:26:32,776
+Dığım için, yani sıfırdan biri çıkmaz normalde değil mi? Elde alıyorum ve o eldeyi birden bir çıkararak sonucu sıfırlıyorum. Ama elde de aldığımız için elde ettiğimiz bir oluyor.
+
+75
+00:26:33,476 --> 00:26:36,296
+Tamam, eksi iki oluyor. Tamam, doğru, eksi iki oluyor böyle.
+
+76
+00:26:38,056 --> 00:26:43,476
+Evet, o açıdan da düşünebiliriz. Aynen. Dediğin gibi de düşünebiliriz. Tamam, burada.
+
+77
+00:26:44,836 --> 00:26:46,715
+Burada bir sıfır oluyor.
+
+78
+00:26:48,051 --> 00:27:02,152
+Burada 0-0 oluyor. Burada yine 0-0. Burada da 1-0 olması lazım galiba.
+
+79
+00:27:03,152 --> 00:27:09,471
+Şöyle düşüneceğiz, birden 1 çıktı 0. 0'dan 1 çıkarttığımız için elde almamız gerekiyor değil mi?
+
+80
+00:27:09,931 --> 00:27:15,371
+Eldeyi aldık, elde bitim 1 oldu. Birden 1 çıkarttığımda da...
+
+81
+00:27:15,412 --> 00:27:33,332
+Gene burası, şey pardon, elde bitim 1 oldu ama, dur bir dakika, 1'den 1 çıkarttım, 0, 0'dan 1 çıkmayacağı için elde alacağım. Ama o da 1 düşünmesi lazım. Burası 1-1 olacak. Yani, evet evet, bu şekilde olacak.
+
+82
+00:27:34,432 --> 00:27:38,932
+Yani 1'den 1 çıktığımda 0, 0'dan 1 çıkmayacağı için elde aldım.
+
+83
+00:27:39,476 --> 00:27:44,356
+Ama neticede de orijinal rakamda bir kaldığı için de biri buraya yazdı.
+
+84
+00:27:44,996 --> 00:27:50,836
+Tamam, tamam. Yine eksi iki bitiyle bir bitini toplanınca eksi bir çıkıyor, doğrusu doğru.
+
+85
+00:27:50,836 --> 00:27:56,256
+Evet. S ile C'yi yazdın istersen.
+
+86
+00:27:59,356 --> 00:28:01,976
+S için karnağım. Tamam, bir saniye.
+
+87
+00:28:02,476 --> 00:28:04,776
+Hatta sen al istersen, sen yenisin.
+
+88
+00:28:05,491 --> 00:28:07,271
+Söylemesi daha uzun sürecek çünkü.
+
+89
+00:28:08,411 --> 00:28:10,571
+Nerede hocam? Şeye bakıyorum şu anda.
+
+90
+00:28:22,291 --> 00:28:25,572
+Requires Remote Core'la mı basıyorduk, N-O-T-T mi basıyorduk?
+
+91
+00:28:26,831 --> 00:28:27,911
+Şeyde mi?
+
+92
+00:28:28,711 --> 00:28:29,851
+N-O-T-T basıyoruz, evet.
+
+93
+00:28:30,271 --> 00:28:31,371
+N-O-T-T basacaksın.
+
+94
+00:28:41,971 --> 00:28:43,912
+Bir saniye hocam, özür diliyorum.
+
+95
+00:29:16,980 --> 00:29:20,619
+Bir kontrol edeyim hocam. Çünkü kağıtta yazdığımda buradaki aynı olmayabilir.
+
+96
+00:29:22,240 --> 00:29:23,340
+00'da.
+
+97
+00:29:33,683 --> 00:29:36,003
+Galiba doğru geçirdim. Doğru mu istedim yoksa?
+
+98
+00:29:36,403 --> 00:29:40,903
+Şunda bir sıkıntı var herhalde. Mouse gözüküyor mı bilmiyorum da.
+
+99
+00:29:41,744 --> 00:29:42,663
+Gözüküyor hocam.
+
+100
+00:29:49,971 --> 00:29:52,592
+Sıfır bir, sıfır bir, şurda sıfır değil mi?
+
+101
+00:29:57,236 --> 00:29:58,476
+Evet, sıfır orada.
+
+102
+00:30:00,516 --> 00:30:05,476
+Kendi kağıdımdan geçirirken hiç de düzgün geçiremiyorum. Kendim ikisi ara ikramdan geçtiğimden açmışım.
+
+103
+00:30:09,956 --> 00:30:13,916
+İş yerindeyim hocam, ona göre geçiremiyorum. Şu anda tekrar kaleme geçirmedim.
+
+104
+00:30:14,556 --> 00:30:17,016
+Dur, ben yazayım bu zaman, şuraya sıfır.
+
+105
+00:30:18,876 --> 00:30:21,356
+Diğerlerine bakalım, bir sıfır sıfır bire bakalım.
+
+106
+00:30:22,456 --> 00:30:23,356
+Yedeyim buyurun ben de onu.
+
+107
+00:30:24,084 --> 00:30:26,443
+Bence de daha iyi olur öyle.
+
+108
+00:30:27,644 --> 00:30:32,584
+1-0-0-1 de herhalde hatalı. Şunu 1 olacak bu.
+
+109
+00:30:35,804 --> 00:30:37,604
+Şu yani 1-0-0-1.
+
+110
+00:30:38,523 --> 00:30:39,923
+1-0-1-0.
+
+111
+00:30:40,844 --> 00:30:41,503
+Tamam.
+
+112
+00:30:44,503 --> 00:30:47,564
+Şu daha hatalı herhalde. 1-0-1-1.
+
+113
+00:30:48,564 --> 00:30:49,624
+Şu 0 olacak.
+
+114
+00:31:17,172 --> 00:31:44,412
+Bakalım ne demişler? 1-0-1-1'de yok. 1-0-1-1'de 0 yaptım. Evet, 0-1-1-0 demiş. 0-1-1-0 nedir? Bakalım. 1-1-0, 0 işte. Bunda bir problem yok. Böyle olması lazım. Evet, sadeleştirirken nasıl yapıyoruz sadeleştirmeyi peki? [öğrenci].
+
+115
+00:31:45,811 --> 00:31:49,192
+Sadeleştirme hocam kolay. Söyleyeyim mi hocam? Söylesem daha iyi olacak.
+
+116
+00:31:49,211 --> 00:31:50,751
+Söyleyin, tamam olur söyle.
+
+117
+00:31:51,511 --> 00:31:54,631
+Gerçi bunu da kesinlikle almam lazım hocam. Almazsam hiç olmuyor sanki.
+
+118
+00:31:55,511 --> 00:31:56,831
+Şurasına hocam başlıyorum.
+
+119
+00:31:59,111 --> 00:32:01,551
+Burada B ile E değişmemiş.
+
+120
+00:32:02,571 --> 00:32:03,091
+E, E.
+
+121
+00:32:03,871 --> 00:32:05,731
+Bir de A değişmemiş.
+
+122
+00:32:09,268 --> 00:32:10,728
+Ama bu ikisinin değildi tabii.
+
+123
+00:32:13,648 --> 00:32:13,948
+Tamam.
+
+124
+00:32:14,688 --> 00:32:15,347
+Devam ediyorum.
+
+125
+00:32:16,108 --> 00:32:18,588
+Onun dışında bir başka ikili burada var.
+
+126
+00:32:20,367 --> 00:32:22,088
+B ile E değişmemiş yine.
+
+127
+00:32:22,827 --> 00:32:25,468
+Ama pozitifler bir daha değişmemiş.
+
+128
+00:32:27,528 --> 00:32:28,948
+Buradan devam edeceğim.
+
+129
+00:32:29,948 --> 00:32:32,948
+Şu şekil yapabiliyor muyduk? Yapabiliyorduk yanmıyorsa.
+
+130
+00:32:33,528 --> 00:32:33,867
+Evet.
+
+131
+00:32:34,588 --> 00:32:35,048
+Tamamdır.
+
+132
+00:32:36,307 --> 00:32:47,268
+B ile E değişmemiş, B'nin NAT'ı, onun dışında bir de A değişmemiş, onun NAT'ı.
+
+133
+00:32:49,907 --> 00:33:03,847
+Devam ediyorum, bir de, şurasına alacağım, yine B ile E değişmemiş, E'nin NAT'ı, bir de A değişmemiş, A'nın NAT'ı.
+
+134
+00:33:08,211 --> 00:33:10,431
+Ne kadar okunabilir bilmiyorum ama.
+
+135
+00:33:11,571 --> 00:33:11,851
+Tamam.
+
+136
+00:33:14,371 --> 00:33:16,711
+C'yi de yazabiliriz.
+
+137
+00:33:17,311 --> 00:33:18,011
+Yapayım mı hocam?
+
+138
+00:33:18,211 --> 00:33:18,991
+Olur.
+
+139
+00:34:18,835 --> 00:34:19,355
+Burada
+
+140
+00:34:35,251 --> 00:34:45,251
+Bu bayağı bir uzun olacak herhalde hocam. Başka türlü alamıyorum çünkü. Yani şöyle yapsak mantıklı geliyor mu hocam? Yani şu ikisi...
+
+141
+00:34:47,011 --> 00:34:49,511
+Evet, başka türlü zaten olmuyor.
+
+142
+00:34:50,112 --> 00:34:50,351
+Evet.
+
+143
+00:35:13,780 --> 00:35:16,420
+Bu da değişikliğe sadece P var.
+
+144
+00:35:22,900 --> 00:35:23,400
+Teşekkürler.
+
+145
+00:35:47,123 --> 00:35:48,263
+Kalemimi değiştireyim.
+
+146
+00:36:28,659 --> 00:36:29,739
+Bu sadece B.
+
+147
+00:36:32,679 --> 00:36:35,519
+Şimdi numarası da 6'ı var.
+
+148
+00:36:40,532 --> 00:36:41,472
+Bu şekilde oluyor.
+
+149
+00:36:43,572 --> 00:36:47,512
+Tamamdır. Yani bu BE şu yanda değil mi?
+
+150
+00:36:47,992 --> 00:36:54,811
+Tabii asaltı renklerini ayırt etmek için hocam, yani turuncuyu şu satıra yazdın, ben 500 lira yazdın diye koydum bunları.
+
+151
+00:36:56,572 --> 00:36:57,612
+Şöyle sileyim bunları.
+
+152
+00:37:00,252 --> 00:37:04,711
+Tamam, yani beş tane argümenin bulunan bir denklem.
+
+153
+00:37:05,392 --> 00:37:05,692
+Evet.
+
+154
+00:37:06,900 --> 00:37:18,579
+Tamam, kanun diyagramlarını bulduk. Sonra demişiz ki devreyi tümleyen B. Tümleyen B normalde biliyoruz ki A çarpı B'nin değili şeklinde gösterimler. Değil mi?
+
+155
+00:37:18,720 --> 00:37:28,280
+Mesela şu üstteki örneğe bakarsak, burada tümleyen B durumu daha henüz söz konusu değil. Ama biz şöyle bir şey söylemiştik.
+
+156
+00:37:28,280 --> 00:37:34,360
+Bir F'in, yani bir fonksiyonun, değilin değilini almak fonksiyonun kendisine eşittir.
+
+157
+00:37:34,739 --> 00:37:43,659
+Şimdi ben bu, şuradan örnek göstereyim, alttaki de aynısı zaten yapacağımız işlem. Bunun değilin değilini alırsam, yani şu formata getirirsem.
+
+158
+00:37:55,155 --> 00:38:19,576
+Bir değinle aldım, bir tane daha değinle aldım. Şimdi bunu, şu ilk değinle içeriye dağıtırsam, ne olacak? Her biri NAND tümleyen V kapısı haline gelecek mi? Çünkü her birinin kafasında, invert, yani şey olacak, yerde kalmadı da.
+
+159
+00:38:21,396 --> 00:38:32,416
+Şunu kenara aldım, şu şeyin, yolu, şimdi, şöyle, yani şu formata getirecek miyiz biz bunu?
+
+160
+00:38:37,204 --> 00:38:47,884
+içeriye dağıttım ve ayrı ayrı yazalım. Şunu şöyle getirdim. Çarpı oldu burası değil mi?
+
+161
+00:38:51,668 --> 00:38:52,708
+çarpı oldu.
+
+162
+00:39:02,324 --> 00:39:06,484
+Bu da normaldi. Şimdi üstlerine ayırdığım sınırları yazıyorum.
+
+163
+00:39:07,604 --> 00:39:10,204
+Şu an şöyle bir, ha bir de tam var.
+
+164
+00:39:10,724 --> 00:39:15,123
+Bu moda geçtik değil mi? Yani aslında NAND kapıları mevcut.
+
+165
+00:39:15,123 --> 00:39:22,043
+Ve bu NAND kapılarını bir başka NAND ile birleştirmiş durumdayız.
+
+166
+00:39:22,043 --> 00:39:27,123
+Yani aslında şu an sadece tümleyen V kapıları ile kurmuş olduk mu?
+
+167
+00:39:28,755 --> 00:39:53,215
+Değil mi? Kurduk. Bir sıkıntı yok. Yani tümleyen V kapıları da kurduk aynı devreye. Şimdi burada şuradaki invertler ne olacak sorusu soru var. Hani bu invertleri de bilmiyorum. Dürkun Hoca anlatmış olması lazım. Biliyorsunuz ki biz bir, mesela buraya X diyelim, bunu tümleyen V kapısından geçirirsek.
+
+168
+00:39:54,132 --> 00:40:00,931
+X'in D'ini elde ediyoruz değil mi? Yani baktığımızda X 0 0 ise normalde 0 iken 1 oluyor.
+
+169
+00:40:01,427 --> 00:40:08,208
+1-1 ise X, 1-1 normalde, normal V kapısında 1 iken, NAND olduğu için 0 oluyor.
+
+170
+00:40:08,327 --> 00:40:14,587
+Yani aslında yine şu invertleri de kendi içerisinde tümleyen V kapıları ile gösterebiliyoruz.
+
+171
+00:40:14,667 --> 00:40:21,927
+Yani aslında bütün devremizi biz sadece tümleyen V kapıları kullanarak tasarlanmış olduk şu aşamada.
+
+172
+00:40:21,927 --> 00:40:28,927
+Aynı şekilde bunu da NAND'larsak, yani şey, D'nin D'nin'i alırsak, dağıttığımızda aradaki artılar gidecek ve NAND kapılarıyla...
+
+173
+00:40:29,427 --> 00:40:44,148
+göstermiş olacağız. Tamamız herhalde bu soru için. Detaylıca lojik işlemasını çizmeyeceğim. Zaten yerimde kalmadı ama zaten lojik diyagramı çizmekte bir problem görmüyorum.
+
+174
+00:40:44,907 --> 00:40:53,068
+Annotation'ları bir silelim. Evet, bu örneği çözmüş olabilir misiniz derste? Onu bir sorayım.
+
+175
+00:40:54,643 --> 00:40:57,163
+Havaalanı şehir merkezi helikopter sorusu.
+
+176
+00:40:58,283 --> 00:40:59,303
+Anmıyorum, hayır.
+
+177
+00:40:59,963 --> 00:41:02,123
+Tamam, o zaman çözelim.
+
+178
+00:41:02,903 --> 00:41:06,723
+Daha hani MOX'larla ve decoderlerle alakalı örneklerimiz gelecektir.
+
+179
+00:41:06,823 --> 00:41:10,443
+Şu an hani kombinezonsal devrelerin genel örneklerini yapıyoruz.
+
+180
+00:41:11,723 --> 00:41:17,903
+Sorumuzu okuyanım, bir havaalanından şehir merkezine 20 dakikada bir helikopter seferi düzenlenmekteymiş.
+
+181
+00:41:18,563 --> 00:41:20,663
+Helikopterlerde bulunan bir sayıcı.
+
+182
+00:41:21,139 --> 00:41:42,680
+Doğal ikili kodda helikoptere binen yolcuları saymaktadır. Yani bir kişi bindi, 0-0-1. İki kişi bindi, yani biri kişi daha geçti o sensörün altından, 0-1-0. Bir kişi daha geçti, 0-1-1. Yani ikili kodda helikoptere binen yolcular bu şekilde sayılıyor. Böyle bir entegre olduğunu düşünüyorum.
+
+183
+00:41:47,891 --> 00:41:53,291
+Kalkış zamanı henüz gelmediyse helikopterin dolmuş olması gerekmekteymiş.
+
+184
+00:41:54,291 --> 00:41:58,611
+Kalkabilmesi için o sinyali yakacak, ekrana gelecek, pilot da kalkacak.
+
+185
+00:41:59,351 --> 00:42:00,531
+Birinci kaydım şu.
+
+186
+00:42:01,139 --> 00:42:10,840
+Zaman henüz gelmediyse, yani 20 dakikada bir dedik ya, bu zaman daha gelmediyse helikopterlerin dolmuş olması ikinci koşulumuz.
+
+187
+00:42:10,960 --> 00:42:16,599
+Kalkış zamanı geldiyse, içinde en az iki yolcunun bulunması gerekliymiş.
+
+188
+00:42:17,480 --> 00:42:25,639
+Kalkış zamanı geldiğinde helikopterdeki zaman saatinin T çıkışı lojik bir olmakta, aksi durumda T lojik sıfır.
+
+189
+00:42:28,755 --> 00:42:44,815
+Niye yazmıyor? Buradaki 20 dakika süresi geldiğinde, T'im benim bir olan bir led düşünebiliriz. Yukarıda verilen bilgiler uyarınca, Lota kalkışa hazır işareti verecek bir lojik devreyi tasarlayın.
+
+190
+00:42:48,916 --> 00:43:06,396
+Bunun da vakitte veriyorum arkadaşlar, uğraşın diye. Yoksa ben çözer geçerim ama dediğim gibi bu soruları sizin yapmanızı istiyorum. Saat 42 geçiyor, 14.50'ye kadar uğraşmanızı istiyorum. Doğruluk tablosunu en azından çilebiliriz yani o süre zarfında.
+
+191
+00:43:10,735 --> 00:43:13,115
+Sorunuz varsa soru da sorabilirsiniz.
+
+192
+00:44:10,291 --> 00:44:15,751
+Hocam, dört girişi var, bir çıkışı var değil mi? Bir giriş T, bir de A0, A1, A2.
+
+193
+00:44:16,291 --> 00:44:19,431
+Evet, doğru. Ben de öyle gözlemleyorum.
+
+194
+00:44:20,811 --> 00:44:22,591
+O zaman tamamdır, çözdüm.
+
+195
+00:44:23,591 --> 00:44:29,271
+Tamam. Kaleme alabilirsin mi? Kalemle çözebilirsin.
+
+196
+00:44:30,011 --> 00:44:30,251
+Tamam.
+
+197
+00:44:33,711 --> 00:44:37,711
+Lojik devreyi çizmeyeyim, şey yapayım değil mi hocam? VV'larla yazayım sadece.
+
+198
+00:44:38,516 --> 00:44:44,775
+Doğruluk tablosunu bir oluşturur ilk etapta. Sonra Karnaugh'a bakarız.
+
+199
+00:45:20,692 --> 00:45:21,931
+Tekrar kaleme geçemedim.
+
+200
+00:46:08,532 --> 00:46:35,832
+Bu T, burası A0, A1, A2. Kalkış zamanı gelmemişse, sadece dolmuşsa, 1 oluyor. Buraların hepsi 0. Kalkış zamanı gelmişse, 1 olması lazım. Sadece içeride bir kişi varsa.
+
+201
+00:46:36,340 --> 00:46:49,140
+En az iki yolcunu, yani şurasıyla, şurasında, sıfır, gerisinde bir, bir, bir, bir, bir, bir, bir diye devam ediyor.
+
+202
+00:46:50,260 --> 00:46:51,380
+Buraya kadar tamam mıyız hocam?
+
+203
+00:46:52,239 --> 00:46:54,900
+Şurası herhalde bir tane fazladan koydum.
+
+204
+00:46:56,159 --> 00:46:57,780
+Şurası da sıfır olmayacak mı?
+
+205
+00:46:58,739 --> 00:47:00,100
+En az iki yolcunun.
+
+206
+00:47:01,396 --> 00:47:10,456
+Tamam, tamam, en az iki yolcu, tamam, ikide de kalkıyor. Tamam. O zaman dur, şunu sileyim. Evet.
+
+207
+00:47:11,496 --> 00:47:14,476
+Buna göre Karnaugh'in mi çıkaracağım şimdi? Evet.
+
+208
+00:47:18,476 --> 00:47:24,856
+Ne diyoruz? T, A2, A1, A0.
+
+209
+00:47:43,699 --> 00:47:45,019
+Şu kısmı yazmazsam da olur.
+
+210
+00:47:55,635 --> 00:47:59,735
+Şu üst kısmını yazmasam direkt D'leri yazsam olur mu hocam? Siz ona göre doldurursunuz.
+
+211
+00:48:04,275 --> 00:48:04,975
+Şurası bir.
+
+212
+00:48:10,612 --> 00:48:12,891
+Bir, bir, bir.
+
+213
+00:48:14,332 --> 00:48:15,372
+Böyle olması lazım hocam.
+
+214
+00:48:16,771 --> 00:48:24,472
+Sol, yüksek anlamlı, yani yataylar yüksek anlamlı, kolonlar düşük anlamlı iki bitme.
+
+215
+00:48:26,072 --> 00:48:27,692
+Yani TA2 ile...
+
+216
+00:48:27,692 --> 00:48:28,412
+Ha, öyle mi?
+
+217
+00:48:28,412 --> 00:48:31,172
+TA2, A0 ve A1.
+
+218
+00:48:34,172 --> 00:48:36,612
+Bakıyorum, bir, bir, D iken...
+
+219
+00:48:37,748 --> 00:48:39,967
+A1 ve 0, A1, A0.
+
+220
+00:48:43,128 --> 00:48:45,908
+Bir sıfırdayken iki tane 1 var, tamam.
+
+221
+00:48:47,288 --> 00:48:53,868
+Bir de yukarıda var değil mi? 0, 1, 1'de. 0, 1, 1, 1. Tamam, doğru, evet. Sadeleştirelim.
+
+222
+00:48:56,967 --> 00:49:01,688
+Şuradan bir dörtlü var, şuradan bir dörtlü var, bir de şuradan ikili alacağım.
+
+223
+00:49:02,516 --> 00:49:16,876
+Şu dörtlüğü için önce yapacak olursak, T değişmemiş oluyor hocam. Burada pozitif. Onun dışında A2 değişmemiş oluyor, o da pozitif.
+
+224
+00:49:19,876 --> 00:49:26,536
+Zaten A1 ile A0 komple değişmiş oluyor. T ve A2.
+
+225
+00:49:35,603 --> 00:49:51,023
+Onun dışında, şuradan da hocam, A1 değişmemiş oluyor ve T değişmemiş oluyor. İkisi de pozitif. A1, T.
+
+226
+00:49:53,764 --> 00:49:59,983
+Bir de şu var hocam, şuradan T değişiyor, A2 değişmiyor.
+
+227
+00:50:01,204 --> 00:50:03,944
+Onun dışında bir de A1 değişmiyor.
+
+228
+00:50:07,956 --> 00:50:09,336
+A1 ve A0 değişmiyor.
+
+229
+00:50:10,855 --> 00:50:14,556
+A0, A1 ve A2.
+
+230
+00:50:16,336 --> 00:50:17,135
+Tamam.
+
+231
+00:50:18,576 --> 00:50:20,716
+Yani doğru gibi gözüküyor.
+
+232
+00:50:21,076 --> 00:50:23,256
+Peki soruyu şöyle güncelliyoruz.
+
+233
+00:50:23,596 --> 00:50:23,775
+Tamam.
+
+234
+00:50:24,076 --> 00:50:27,556
+Sonuçta neticede bir ev fonksiyonumuz var burada.
+
+235
+00:50:29,056 --> 00:50:30,716
+Ve bunu soruda bir şey dememiş.
+
+236
+00:50:30,836 --> 00:50:32,056
+Herhangi bir kapı vesaire.
+
+237
+00:50:32,496 --> 00:50:34,195
+Kapılarla yapabiliriz, evet.
+
+238
+00:50:35,092 --> 00:50:36,211
+Peki soru şu.
+
+239
+00:50:38,032 --> 00:50:39,711
+Yani güncelliyoruz sorumuzu.
+
+240
+00:50:40,771 --> 00:50:44,752
+4 çarpı 1 mux kullanmak istesem.
+
+241
+00:50:45,992 --> 00:50:48,252
+Hadi bu soru için şeyini de vereyim.
+
+242
+00:50:48,431 --> 00:50:53,632
+Seçme uçlarım T ile A2 olduğunu düşünürsek.
+
+243
+00:50:54,292 --> 00:50:55,692
+Burada da bir F çıkışım var.
+
+244
+00:50:55,851 --> 00:50:58,172
+Zaten sorudaki doğru tablosunu sağlayacak bu.
+
+245
+00:50:58,632 --> 00:51:01,271
+4'e 1 mux olduğu için de 4 tane girişim var.
+
+246
+00:51:01,684 --> 00:51:11,923
+Bu gidişlere ne vermem gerekir? Nasıl bir devre tasarımıyla ben bu doğruluk tablosunu Moxge ile sağlayabilirim? Bunu çözebilir miyiz?
+
+247
+00:51:19,731 --> 00:51:20,851
+Soru anlaşıldı mı?
+
+248
+00:51:22,851 --> 00:51:23,292
+Evet.
+
+249
+00:51:25,592 --> 00:51:26,152
+Tamam.
+
+250
+00:51:27,092 --> 00:51:34,311
+Bu örneği isterseniz ben yapayım. Genel olarak sonraki bir tane daha vardı arada buna benzer. Onu size yaptıralım.
+
+251
+00:51:34,992 --> 00:51:41,212
+Şimdi TA2 seçim orçları ve seçim orçların içerisinde S1, S0 olsun. Yani yüksek anlamda.
+
+252
+00:51:41,592 --> 00:51:45,431
+Yani şiddorlu tablosunda daha anlamlı otursun diye böyle yaptım.
+
+253
+00:51:45,952 --> 00:51:48,811
+A2 de düşük anlamlı seçim orçları.
+
+254
+00:51:48,811 --> 00:51:55,092
+Şimdi TA2'nin 0, 0 olduğu senaryo şu. Değil mi? 0, 1 olduğu senaryo şu.
+
+255
+00:51:55,092 --> 00:52:01,431
+Şu bu lojik içerisi, 1-0 olduğu senaryo, şu bu lojik içerisi, 1-1 olduğu senaryo, bu bu lojik içerisi.
+
+256
+00:52:01,431 --> 00:52:13,431
+Şimdi 0-0 durumunda zaten benim, burası 0'dı. Yani ben aslında, şuraya bir GND'ye bağlayabilirim.
+
+257
+00:52:14,324 --> 00:52:27,384
+Ne demekti? Tekrar Boole'ye bir flashback yapalım. Boole'ye bir tanımı şunu söylüyor. Seçme uçlarıyla seçtiğin girişteki veriyi çıkışa aktarır. Tanımı bu.
+
+258
+00:52:28,623 --> 00:52:42,144
+0-0'da I0'ı seçeceğim. 0-1'de I1, input 1, input 2 ve input 3 diye 1-1'de en son input 300'ü çıkışa aktaracak olan bir entegra sunulmuş.
+
+259
+00:52:42,579 --> 00:53:09,800
+Şimdi bunu hallettik, burası hani şu ikisi kalsın, en son şuna bakıyorum, bir bir deyken de çıkışım benim bir. O zaman ben buraya, nasıl yapayım, tabii bir şey olacak biraz ama artı beş volt veriyorum. Yani GND değil, normal bir gerilim veriyorum. Ki çıkışta bir, lojik bir versin. Şu iki nokta anlaşıldı mı? I0'da 3. Nasıl bağlı olduğumuz. Anlaşıldı herhalde.
+
+260
+00:53:10,867 --> 00:53:33,587
+Sonra I1'de I2'ye bakalım. I1'i 0, 0, 1'i değil mi? Bu şekilde. Şimdi bunu buraya adapte etmek için, yani şuraya I1'e geçirebilmek için bir devre kurmamız gerekecek. Neden? Çünkü burası herhangi bir şeyin simetriği değil.
+
+261
+00:53:34,708 --> 00:54:00,608
+Örnek vermek gerekirse, şu ilk başta isterseniz şu 6 yapalım, sonra 10'a geçelim. 1-0 geldiği senaryoda, 0-0-1-1'miş değil mi? Bu aslında şuradaki A1'in aynısı. Yani A1'deki değeri çıkışa aktarmış. Doğru mudur? O zaman ben buraya A1 verirsem, direkt ben 1-0'da A1'i F'e almış olurum.
+
+262
+00:54:00,980 --> 00:54:13,220
+Böylelikle doğru tablosunu karşılanmış olur. Şimdi şu senaryoya gelelim. Burada belli bir replikasyon yok. Ama bir devre tasarımı yapacağız. Neyle? A1 ve A0 ile Koreli bir devre tasarımı.
+
+263
+00:54:13,220 --> 00:54:21,779
+Şimdi baktığımda bir olan senaryoda aslında istenen şu. A1 ile A0'ın entlenmesi.
+
+264
+00:54:24,943 --> 00:54:34,384
+Anca AND'lediğimde ben bunu elde ederim değil mi? Yani A1, A0, AND'lendiğinde 0, 0 gelirse 0 verecek, F'i sağlayacak.
+
+265
+00:54:35,583 --> 00:54:45,323
+0, 1 de yine 0, 1, 0 da yine 0, 1, 1 de 1 verecek. Yani aslında bu A ile B'nin AND kapısı doğruluk tablosuna uyuyor mu? Uyuyor.
+
+266
+00:54:45,923 --> 00:54:49,724
+Yani ben şuraya, biraz zıplatacağım bu taraftan şöyle.
+
+267
+00:54:50,900 --> 00:55:04,940
+A1, A0'ı getirip, AND, LEYİB, buna verirsen, 0, 1 aşamasında doğruluk tablosunun şuradaki A1, A0 değerine göre çıkması ve bunu oluşturması mümkün mü?
+
+268
+00:55:09,235 --> 00:55:15,915
+Anlaşıldı mı bunun örneği? Yani MOOCs'u şu amaçla kullanıyoruz. Esasında MOOCs'un iç yapısını gördük.
+
+269
+00:55:16,195 --> 00:55:25,015
+Ve iç yapısında aslında T ile I0'ın, işte TA2 I0'ın kapı bağlantıları var.
+
+270
+00:55:25,375 --> 00:55:34,935
+Yani aslında bizim şurada yaptığımız bazı kapı bağlantılarını MOOCs kendisinden otomatikman paket içerisinde getirdiğinden çok daha kolay bir çözüm üretiyor bize.
+
+271
+00:55:36,436 --> 00:55:43,376
+Burada da mesela şu kapıları kurmak, yani bir MOX'da bir V kapısıyla halletmiş oldukça o şey gibi.
+
+272
+00:55:44,456 --> 00:55:48,516
+Karnaugh vs. gerek kalmadan direkt doğrultu tablosunu analiz ettik.
+
+273
+00:55:49,796 --> 00:55:54,296
+Anlaşıldı herhalde. Geçelim. Şu ekrana bir silmemiz lazım.
+
+274
+00:55:58,387 --> 00:56:08,728
+Başka bir kolay bir soru, yani şeylerle alakalı, gene MUX vesaire belki inceleriz oluyor olmuyor bakarız da, kombinezonsal devreler yapılır.
+
+275
+00:56:09,167 --> 00:56:17,127
+Bir başkan, bir başkan yardımcısı ve iki üyeden oluşan bir komisyonun alacağı kararları gösteren bir oylama sistemi yapılacaktır.
+
+276
+00:56:17,867 --> 00:56:24,327
+Başkanın oyu 3, başkan yardımcısının oyu 2, üyelerin oyu ise 1 ağırlığındadır.
+
+277
+00:56:25,492 --> 00:56:30,152
+Bir başkan, niye çiziniyor? Bir başkan yardımcısı, iki üye var.
+
+278
+00:56:31,712 --> 00:56:44,712
+Evet, oyların ağırlık kasteleri fazla ise evet, hayır oyların ağırlık kasteleri yüksek ise hayır, eşitlik halinde başkan yardımcısı ve üyelerinin verdiği çoğunluk oylarına göre karar alınacaktır.
+
+279
+00:56:45,311 --> 00:56:48,952
+Bütün üyeler oy kullanmak zorundadır. Evet, oyu lojik bir.
+
+280
+00:56:49,844 --> 00:56:57,903
+Lojik 1'dir. Bu oylama sistemine ait lojik moksiyonunun doğruluk tablosunu çıkararak moksiyonun karnaugh diyagramı sadece etkisana devreler içeceğiz.
+
+281
+00:56:58,463 --> 00:56:59,123
+Sorusu.
+
+282
+00:57:02,483 --> 00:57:30,483
+Aslında arkadaşlar, lojik devrelere ait, kombinezonsal devre tasarımlarında zor soru diye bir şey çok fazla yoktur. Ne vardır? Detay vardır, koşullar vardır. Bunları step by step analiz etmeniz lazım. Doğruluk tablosu da zaten biliyorsunuz, anlatırken 4-5 aşamadadır bir lojik diagram tasarımı derken, bu kombinezonsal haftanın başında şunu dedik, yani ilk etapta değişkenleri oluşturmak, ya o problemde ne imput?
+
+283
+00:57:30,483 --> 00:57:52,983
+Ne output bunu belirlemek. İkinci etapta o değişkenlerle bir doğruluk tablosu hazırlamak. Üçüncü aşamada bu doğruluk tablosunun birileriyle Karnaugh oluşturmak ve en son Karnaugh'un sadece devreyi kurmak üzerine. Eğer ki TBA falan diyorsa bir de onun tabii bir sitevi daha var işte o moda geçirmek. Bunun doğruluk tablosunu oluşturalım.
+
+284
+00:57:53,492 --> 00:57:58,252
+Saatimiz 14.57, 3'ü 10 yaşaya kadar biraz uğraşalım.
+
+285
+00:59:37,780 --> 00:59:39,820
+Hocam, beraberlik olmuyor ki burada hiç.
+
+286
+00:59:41,880 --> 00:59:42,560
+Bakalım.
+
+287
+00:59:51,635 --> 00:59:57,195
+Toplam değer hocam iyi diye çıkıyor. 3-2-2. Orta değer zaten yok.
+
+288
+00:59:58,956 --> 01:00:13,275
+Ama şöyle bir senaryo olmaz mı? Başkan evet dedi, başkan yardımcısı hayır dedi. Tamam, iki üye olduğu için tamam. Evet, doğru diyorsun.
+
+289
+01:00:17,012 --> 01:00:18,412
+Doğru, Bela-Berifor.
+
+290
+01:01:58,387 --> 01:01:59,407
+Hocam ben çözdüm.
+
+291
+01:02:00,188 --> 01:02:03,288
+Tamam, olur. Doğruluk tablosunu çizebiliriz.
+
+292
+01:02:04,707 --> 01:02:05,807
+Annotate yapayım mı?
+
+293
+01:06:24,884 --> 01:06:48,823
+Tamamdır [öğrenci], sağol. Yine sağlık. Şu hızlıca baktım, doğru gibi zaten. Sadece tekrar soruyu evirelim, MUX'a. 4x1 MUX'a nasıl bir tasarım yaparız? Bu soru için. Aslında çok benzer bir öncek. Neden? Sadece bir de değişik. Sözel söyleyebilirsiniz.
+
+294
+01:06:54,739 --> 01:06:56,839
+Hocam, I0 ucunu toprağa bağladım.
+
+295
+01:06:57,559 --> 01:06:58,039
+Bağladım.
+
+296
+01:06:59,719 --> 01:07:00,439
+Başka?
+
+297
+01:07:01,699 --> 01:07:07,299
+I1 ucunu A1, A0'ın AND olarak bağladım.
+
+298
+01:07:08,979 --> 01:07:12,979
+A1, A0'ın AND bir şeklinde bağladım.
+
+299
+01:07:15,119 --> 01:07:18,459
+I2 ucunu A1, A0'ın OR'u şeklinde bağladım.
+
+300
+01:07:22,003 --> 01:07:24,003
+Birazcık karıştı buralarını.
+
+301
+01:07:25,003 --> 01:07:26,003
+Bağladım.
+
+302
+01:07:26,003 --> 01:07:28,003
+En sonunda,
+
+303
+01:07:28,003 --> 01:07:30,003
+2-5 voltu verdim.
+
+304
+01:07:30,003 --> 01:07:33,003
+Tamam mıyız? Herhalde tamamız.
+
+305
+01:07:33,003 --> 01:07:36,003
+Bu soruda benzer, kolay bir soru. Onu geçiyorum.
+
+306
+01:07:36,003 --> 01:07:39,851
+Biraz daha MUX sorularına gelelim.
+
+307
+01:07:43,476 --> 01:07:50,476
+Ne demişiz? Aşağıdaki blok çizimi verilmiş devre, tablodaki gibi çalışmaktadır.
+
+308
+01:07:51,096 --> 01:08:04,215
+V'si 0 ise X0, Z0'a, V'si 1 ise X0, Z1'e, X1, Z0'a olacak şekilde lojik ifadelerini yanım şekilde yapın.
+
+309
+01:08:05,576 --> 01:08:09,516
+NOR kapıları ile kullanılabilirim, MUX ile gerçekliğindenmiş.
+
+310
+01:08:12,436 --> 01:08:13,596
+Buna biraz uğraşalım.
+
+311
+01:09:01,844 --> 01:09:10,884
+MUX'u herhalde zaten direkt yapmışsınızdır diye düşünüyorum. Değil mi? MUX çocuğunu, C şıkkı için. Direkt kafamızda canlandı mı çözüm?
+
+312
+01:09:20,340 --> 01:09:22,000
+Kaça kaçlık bir mouse kullanacağım?
+
+313
+01:09:29,011 --> 01:09:38,311
+Soruya bakalım. İki giriş var, bir tane V var, daha doğrusu üç girişim var, ikide çıkışım var. Nasıl bir moks kullanırım?
+
+314
+01:09:41,771 --> 01:09:43,211
+Dört çarpı ikilik mi olacak?
+
+315
+01:09:43,691 --> 01:09:44,971
+Dört çarpı?
+
+316
+01:09:45,572 --> 01:09:48,431
+Yok, iki çarpı birlik mi?
+
+317
+01:09:48,431 --> 01:09:54,072
+İki çarpı birlik moks kullanmam mantıklı. İki girişim olacak.
+
+318
+01:09:55,475 --> 01:10:13,215
+Bir seçme ucum olacak ve bir de çıkışım olacak. Değil mi? Soru şeyi bu. Şimdi aslında ben bunu görür görmez zaten burası biraz bir şeyleri fark ettirtiyor. Soruya baktığımda da zaten V'ye bağlı olarak bir şeylerin değiştiğini gözlemliyorum.
+
+319
+01:10:21,779 --> 01:10:46,299
+V0 iken, şuradaki pin'i seçeceğim değil mi? Yani I0'ı seçeceğim. Burası da I1. V0 iken çıkışım X0 olsun diyor. V1 iken çıkışım X1 olsun diyor. Pardon, V0 iken X0 X0 olacak diyor. Z1 X1 olacak diyor. Nasıl bir tasarım yaparız?
+
+320
+01:10:48,020 --> 01:10:49,280
+Söyleyeyim mi hocam?
+
+321
+01:10:49,979 --> 01:10:50,579
+Efendim?
+
+322
+01:10:50,819 --> 01:10:51,860
+Söyleyeyim mi, moks için?
+
+323
+01:10:52,239 --> 01:10:52,659
+Evet.
+
+324
+01:10:53,520 --> 01:10:56,680
+İki tane iki çarpı birlik moksumuz olacak, iki çıkışımız olduğu için.
+
+325
+01:10:57,260 --> 01:10:57,860
+Evet.
+
+326
+01:10:58,720 --> 01:11:01,680
+Buradaki F'nin Z0 temsil etiğim var, sayıyorum.
+
+327
+01:11:03,960 --> 01:11:05,899
+Buraya da bir moks koyayım.
+
+328
+01:11:09,971 --> 01:11:13,731
+Burada da bir frame var. Evet, ne diyorsun?
+
+329
+01:11:14,871 --> 01:11:17,711
+Alttaki Z0 temsil etsin çıkış olarak mesela.
+
+330
+01:11:18,652 --> 01:11:20,311
+Üstteki Z0 temsil etsin.
+
+331
+01:11:20,311 --> 01:11:22,611
+Tamam, üçteki Z0 temsil etsin.
+
+332
+01:11:24,211 --> 01:11:30,371
+I0 ucu, X0, I1 ucu, X1.
+
+333
+01:11:32,451 --> 01:11:33,291
+Tamam.
+
+334
+01:11:36,148 --> 01:11:42,007
+Peki, yani iki moksum var da nasıl yapacağız bunu şu an? Daha bir şeyler eksik gibi.
+
+335
+01:11:42,448 --> 01:11:59,247
+Alttaki şey de işte Z1'i temsil etsin çıkış olarak. Bu durumda I0 ucu X1, I1 ucu X0'ı temsil edecek. Bağlayacağız daha doğrusu. Tamamdır. Bu kadar hocam çıkış. Bunu veriyor.
+
+336
+01:12:03,859 --> 01:12:09,019
+Şimdi, sen iki tane mux, tamam. Evet, evet, tamam. Doğru.
+
+337
+01:12:09,039 --> 01:12:10,099
+İki mux yapmak zorunda değil miyiz hocam?
+
+338
+01:12:10,199 --> 01:12:19,799
+Yok, yok, iki mux da sıkıntı yok da. Tamam, tamam, tamam. Benim aklım başka şey gitti, tek çıkış varmış gibi gitti. Tamam, iki çıkış varmış, iki tane mux olacak. Doğru.
+
+339
+01:12:20,659 --> 01:12:26,739
+Bunda bir problem yok. Diğer kısmında da zaten hani hepsini yapmayalım, boş yere uzatmayalım.
+
+340
+01:12:27,252 --> 01:12:40,252
+X1, X0'ı şöyle çizeyim. Z0'la da Z1'i ayrı ayrı yapacağız değil mi? 0 ise...
+
+341
+01:12:50,195 --> 01:12:52,195
+Sadece bir kısmını yapalım, izin.
+
+342
+01:12:54,095 --> 01:13:00,536
+Ne olacak? V0 ise çıkışımız X0 ve X1 eşit olacak diyor. Aynı aranı buraya yazacağım.
+
+343
+01:13:01,876 --> 01:13:03,716
+Hani A ve B eşitliği için diyorum.
+
+344
+01:13:07,636 --> 01:13:33,836
+Ötekinde de tam zıttını yazacağım. Bunun Karnos'unu yapacağız. Z1'in bir Karnos'u olacak. İşte normal Z0'da olacak. Sonra da Karno'dan sadeleştirdiğimizi zaten devre tasarımını ile gerçekleştireceğiz. Yani bu ilk A ve B şıkkı zaten bizim şimdiye kadar yaptığımız örneklerle aynı. C şıkkı için sadece iki tane mux'un iki çıkış olduğu için önemi var. Bunu kaçırmayacağız.
+
+345
+01:13:36,595 --> 01:13:38,855
+Tamam [öğrenci], DAGB'yi baştan yapmıyorum.
+
+346
+01:13:42,547 --> 01:13:51,467
+8 satın. Pardon, yanlış yaptım. Neymiş? Şu kısmı, pardon. Şöyle bir tekerrür etmiş zaten.
+
+347
+01:13:53,547 --> 01:14:09,327
+Aynen öyle. Birken ne dedik? Hadi yapalım. Z0, X1 eşit olacak dedik yani. Şu olacak. Şurası da şöyle olacak. Z1 ve Z0'ın doğru tablosunu çıkartacağız.
+
+348
+01:14:12,307 --> 01:14:13,208
+Tamamen, dobrze.
+
+349
+01:14:18,100 --> 01:14:30,800
+Bu da basit bir soru arkadaşlar da bunu yani normal kombinezonsal devre tasarın diğer sorulara benziyor. Belki şuna bir bakalım. İki tane seçici yaptı mı Gökhan Hoca? Belki yapmış olabilir bu derste.
+
+350
+01:14:32,460 --> 01:14:32,900
+Yapmıyoruz.
+
+351
+01:14:33,440 --> 01:14:39,760
+İki tane seçici MOX ve bir VEA kapısı içeren devre ilişkin devre saması aşağıda verilmiştir.
+
+352
+01:14:40,435 --> 01:14:58,575
+Devreye ilişkin lojik fonksiyonu belirleyiniz. Yani Z'nin fonksiyonunu istiyoruz. Bir. İkinci B şıkkında fonksiyonu ilişkin doğrult tablosunu oluşturmanızı. C şıkkında da A, B ve C'yi seçme girişleri alarak devreyi 8'e 1, MOKSKİ ile gerçeklemeniz.
+
+353
+01:15:00,155 --> 01:15:07,695
+Bu güzel bir örnek arkadaşlar. Kolay bir örnek ama bunu uğraşmanızı istiyorum. Saatımız 15-14.
+
+354
+01:15:08,176 --> 01:15:11,275
+15-25'e kadar bir 10 dakika uğraşın isterseniz.
+
+355
+01:15:20,659 --> 01:15:27,059
+İsterseniz ilk başta bir doğruluk tablosunu çıkarın, sonra fonksiyonu, lojik fonksiyonu belirleyin.
+
+356
+01:17:14,387 --> 01:17:17,427
+Uğraşıyoruz değil mi arkadaşlar? Boşa beklemeyelim.
+
+357
+01:17:37,908 --> 01:17:42,087
+B, T, U, Çak.
+
+358
+01:19:56,115 --> 01:20:00,235
+Hocam, direkt MOOC sonuçlarını söyleyeyim mi? Yani C şıkkını yapayım mı direkt?
+
+359
+01:20:01,195 --> 01:20:05,536
+Direkt MOOC 8'e 1'i mi? C'yi diyorsun değil mi?
+
+360
+01:20:05,536 --> 01:20:06,815
+Evet hocam.
+
+361
+01:20:07,216 --> 01:20:09,815
+O zaman bir saniye çizeyim.
+
+362
+01:20:12,015 --> 01:20:16,055
+4, 5, 6, 7, 8 liranda.
+
+363
+01:20:25,716 --> 01:20:26,176
+Evet.
+
+364
+01:20:28,515 --> 01:20:31,256
+ABC'yi seçme demiş. Şöyle mi yaptım peki?
+
+365
+01:20:31,435 --> 01:20:32,256
+Seçmeyi yoksa C.
+
+366
+01:20:34,796 --> 01:20:35,836
+Bir hocam.
+
+367
+01:20:37,216 --> 01:20:37,775
+D'nin değili.
+
+368
+01:20:38,396 --> 01:20:39,275
+Neyin değili?
+
+369
+01:20:39,855 --> 01:20:40,695
+D'nin değili.
+
+370
+01:20:41,036 --> 01:20:41,136
+D.
+
+371
+01:20:42,476 --> 01:20:43,156
+Bir, bir.
+
+372
+01:20:45,156 --> 01:20:46,496
+D'nin değili, D'nin değili.
+
+373
+01:20:47,935 --> 01:20:48,716
+Bir, bir.
+
+374
+01:20:51,123 --> 01:20:56,103
+Tamam, bakalım, bakarız yani. Doğruluk tablosunu yapmadan nasıl yaptın?
+
+375
+01:20:56,983 --> 01:21:04,503
+Doğruluk tablosunu yaptım, sadece şu an çizmeye uçandım size. Söylemek zor. İstersen siz çizin, ben söyleyeyim direkt.
+
+376
+01:21:04,683 --> 01:21:14,983
+Tamam, doğruluk tablosunu nasıl şey yaptın? Tamam, [öğrenci] sen. Doğruluk tablosunu nasıl şey yaptın? Yukarıya yerleştin, değişkenlere.
+
+377
+01:21:14,983 --> 01:21:16,423
+A, B, C'de.
+
+378
+01:21:20,372 --> 01:21:21,552
+Zedemiz, pardon.
+
+379
+01:22:10,003 --> 01:22:14,183
+Evet, F nedir? Z nedir yani?
+
+380
+01:22:14,843 --> 01:22:19,783
+Sadece sıfırları söyleyeyim hocam size. Çünkü sıfırlar az. Sıfır sıfır bir bir de sıfır hocam.
+
+381
+01:22:21,903 --> 01:22:35,083
+Onun dışında hocam, bir sıfır sıfır bir de sıfır. Bir sıfır sıfır bir. Gerçi orası da bir sıfır sorun yok. Orası da sıfır. Bir sıfır sıfır bir onun üstünde hocam.
+
+382
+01:22:36,756 --> 01:22:40,216
+Onun dışında zaten başka sıfır yok galiba. Hayim yok, başka sıfır yok.
+
+383
+01:22:45,939 --> 01:22:48,840
+Böyle mi burdun emireceksin sen de, doluk tablosunu?
+
+384
+01:22:50,719 --> 01:23:00,679
+Tamam, o zaman şimdi bu doluk tablosuna göre Z'nin fonksiyonunu yazmak istesek nedir?
+
+385
+01:23:10,547 --> 01:23:26,987
+Burada ufak bir görmek gereken yer var. Görmemiz gereken nedir? Burada sıfırların fazla olduğudur. O yüzden mintermleri yazmak yerine maxtermleri yazabiliriz veya maxtermleri sadeleştirmek için kullanabilirdik karbonistesi.
+
+386
+01:23:27,167 --> 01:23:35,407
+Karbonistemediği için direkt ben Z'yi oluşturmak istiyorum şu an. Nasıl yazarız maxtermü hatırlıyoruz mu?
+
+387
+01:23:39,604 --> 01:23:40,844
+Çarpımlar toplamı.
+
+388
+01:23:41,404 --> 01:23:41,623
+Evet.
+
+389
+01:23:43,304 --> 01:23:47,043
+Şey, yok, çarpımların toplamı mı, toplamların çarpımı mı?
+
+390
+01:23:48,404 --> 01:23:50,703
+Maxterm, toplamların çarpımı değil mi?
+
+391
+01:23:52,584 --> 01:23:53,344
+Evet.
+
+392
+01:23:54,024 --> 01:23:55,524
+Evet, nasıl yazıyorduk?
+
+393
+01:23:58,324 --> 01:23:59,444
+Söyleyeyim mi hocam?
+
+394
+01:24:00,904 --> 01:24:02,064
+Tamam, [öğrenci] söyle.
+
+395
+01:24:02,963 --> 01:24:04,463
+A artı B.
+
+396
+01:24:05,555 --> 01:24:24,055
+Artı C'nin D'li, artı D'nin D'li, A'nın D'li, artı B, artı C, artı D'nin D'li, A'nın D'li, artı B, artı C'nin D'li, artı D'nin D'li.
+
+397
+01:24:25,915 --> 01:24:28,555
+Bu değil mi? Herhalde bu. Evet.
+
+398
+01:24:29,140 --> 01:24:33,220
+Tamam, Z fonksiyonunu çıkardık ve buna göre bir MUX istiyoruz.
+
+399
+01:24:34,700 --> 01:24:40,800
+Bakalım, şimdi MUX'un ilk ABC kısmını seçim yapmışız.
+
+400
+01:24:40,920 --> 01:24:42,739
+0, 0'daki duruma bakacağız.
+
+401
+01:24:43,500 --> 01:24:46,360
+Baktık, ikisi de 1, 1 olduğu için 1 bağladık.
+
+402
+01:24:46,659 --> 01:24:52,079
+0, 1'de 1, 0, D'nin tam tersi olduğu için D'nin D'li şeklinde yazdık.
+
+403
+01:24:52,659 --> 01:24:54,579
+Diğerleri zaten 1, 1 olduğundan.
+
+404
+01:24:55,380 --> 01:25:08,899
+Şu da bir değil mi? Evet, doğru. Ötekine baktık, D'nin değili, D'nin değili, yine aynı şekilde ve en nihayetinde de 1-1 şeklinde seçim uçlarında bir moksoluştu. Herhalde anlaşıldı.
+
+405
+01:25:09,344 --> 01:25:11,084
+Ben bir soru sorabilir miyim hocam?
+
+406
+01:25:11,164 --> 01:25:11,564
+Evet.
+
+407
+01:25:12,004 --> 01:25:20,024
+Bu arada doğrulu tablosunu bulurken bizim burada mesela birinci mukusta AB 1 ve 0 falan vermiş.
+
+408
+01:25:20,024 --> 01:25:26,344
+Biz bu doğrulu tablosunu tamamen Z'deki OR kapısından dolayı mı tahmin edebildik Z'yi?
+
+409
+01:25:27,636 --> 01:25:54,556
+Tahmin değil, doğruluk tablosunu şuradan çıkarttık. Her bir senaryoyu, mesela ABCD'nin 0,0 olduğunu, burada yerine koyduğumuzda AB, 0,0, C'nin değili geldi buraya. Ama C'nin değili de zaten 0'ın değili olduğu için 1 geldi. 1 geldiği için de Z direkt 1 oldu, OR kapısından. Bu şekliyle bu doğruluk tablosunun sol kombinasyonlarının hepsini deneyerek Z'yi oluşturduk.
+
+410
+01:25:55,199 --> 01:25:58,260
+Şey değil, tahmin ettiklerken o kısmı anlamadım.
+
+411
+01:25:59,460 --> 01:26:09,360
+Yani demek istediğim şu mesela, birinci mukustan bir gelse, ikinci mukustan bir gelse, bu birdir, işte bir sıfır gelse gene birdir diyerek mi doldurduk?
+
+412
+01:26:09,520 --> 01:26:12,840
+Evet, evet, evet, öyle doldurduk.
+
+413
+01:26:13,332 --> 01:26:37,352
+Yani işte mesela AB'nin 0-0 senaryolarında en anlamlı yer orası ya, o yüzden oradan başladım. Düşünmesi daha kolay. Yani C'nin değilini direkt 1 olduğu senaryolarda zaten Z'yi 1'leyeceğim. Yani C 0 olduğu senaryolarda, yani şu iki senaryo için direkt zaten Z'yi 1'leyeceğim vs. Yani böyle bazı ufak triklerle.
+
+414
+01:26:39,380 --> 01:26:46,340
+2 moksunda çıkışı ekledim, sorun olmaz deme. Ne demek o? Ben 2 moksunda çıkışı ekledim.
+
+415
+01:26:50,452 --> 01:27:01,152
+Yani şöyle mi diyorsun, Z1, Z2 gibi iki tane müdür çıkışını yaptın, sonra bunu orladın gibi böyle bir daha detaylı bir doğru tablosu yaptığını mı söyledin?
+
+416
+01:27:05,011 --> 01:27:06,391
+Gelmiyoruz, sesen muzan.
+
+417
+01:27:07,796 --> 01:27:20,916
+Evet hocam, böyle düşündüm. Ben direkt olarak bu, MUX'ların çıkışını direkt olarak hesaplayamadığım için, bütün MUX'ların çıkışlarına bir tane doğruluk tablosu oluşturdum. Onun yanında Z'yi ekledim. Ona göre bakarak, oradan bir, bir, ona göre orladım.
+
+418
+01:27:20,916 --> 01:27:35,796
+O da olur ama burada kolaylı bir kapı olduğu için, veya kapısı, hani şöyle de olabilir, aklınızda bulunsun, bir MUX daha koyar adam. Buraya Z der, işte buraya bir F der. Ve bu Z'yi de denkleme alabilir. Ve MUX'un, hani senin yansı...
+
+419
+01:27:35,796 --> 01:27:45,484
+Step by step daha emin adımlarda gitmeyi sağlar. Doğru. Yani kompleks devreler oluşturulabilir daha bunun üzerine. Yani ben...
+
+420
+01:27:45,524 --> 01:28:13,524
+Geçen senelerde Vivize'de 3 tane moks'u arda arda birbirine bağlamıştım. Yani orada belki mantıklı olan senin yaptığın olabilir. Çünkü bir moks'un çıkışı iki seçim ucuna bağlı olarak girişlere göre değişecek. Öteki moks'un çıkışı başka bir moks'un çıkışının seçim ucuyla tetikledikleri girişlere bağlı olacak. Yani adım adım senin yaptığın gibi yapmak daha kolay da olabilir. Daha hata...
+
+421
+01:28:13,524 --> 01:28:14,784
+Ya mahal vermeyebilir.
+
+422
+01:28:19,699 --> 01:28:21,039
+Soru var mı arkadaşlar?
+
+423
+01:28:23,440 --> 01:28:24,219
+Yok, yaralı değil.
+
+424
+01:28:24,960 --> 01:28:31,180
+Bu da gene, hani gerçi burada bir MUX var, MUX sorusu, bunu yapalım olmadı. Neymiş sorumuz?
+
+425
+01:28:31,719 --> 01:28:38,779
+Üç katlı bir apartmanda merdiven aydınlatması şu şekilde yapılmaktadır. Her katta bir anahtar bulunmaktadır.
+
+426
+01:28:39,319 --> 01:28:47,440
+Bu anahtarların konumuna göre katlarda bulunan lambaların hepsi birden yanmakta veya sönmektedir.
+
+427
+01:28:47,440 --> 01:28:52,960
+Bu anahtarlar X1, X2, X3 ile lambalar ise L ile gönderdir.
+
+428
+01:28:52,960 --> 01:29:02,840
+gösterilmektedir. Anahtarın kapalı durumu bir, açık durumu sıfır, lambanın yanma konumu bir, sövme konumu sıfırdır.
+
+429
+01:29:03,399 --> 01:29:10,979
+Çalışma düzeni şöyledir. Bir kere zaten sonra da bize X3 veya X1, X2, X3 şeklinde edelim.
+
+430
+01:29:13,020 --> 01:29:16,920
+Girişlerin ne olduğu ve bir de L'nin ne olduğunu söylemiş.
+
+431
+01:29:19,252 --> 01:29:28,112
+Her üç anahtarda devreyi açık bırakan konumdayken, yani şu konumdayken, lamba yanmamaktadır.
+
+432
+01:29:28,612 --> 01:29:32,952
+Anahtarlardan herhangi bir devreyi kapatırsa lamba yanacaktır.
+
+433
+01:29:33,471 --> 01:29:37,272
+İki anahtar birden devreyi kapatırsa lamba yanmamaktadır.
+
+434
+01:29:37,772 --> 01:29:41,592
+Her üç anahtar da kapalıysa lamba yanacaktır.
+
+435
+01:29:42,260 --> 01:29:52,860
+Bu da vesaire vesaire. Stanlar zaten geldi. Bunu yapalım arkadaşlar son olarak da. Herhalde, ha yok gerçi aslında bir sorun daha var. Sonra da yeni konuya geçeceğiz.
+
+436
+01:29:57,235 --> 01:29:59,876
+Bu da aslında önceki soruya da benzer bir soru.
+
+437
+01:30:17,460 --> 01:30:20,520
+Bir saniye arkadaşlar, siz uğraşadırın.
+
+438
+01:31:32,979 --> 01:31:33,799
+Bir saniye gidiyor.
+
+439
+01:31:45,235 --> 01:31:52,355
+[öğrenci] daha iyi oldu. Nasıl kolaysa bir bakalım. En son kontrol edelim ne yaptı.
+
+440
+01:31:58,420 --> 01:32:00,899
+Herkes böyle mi yaptı? İlk onu bir sorayım.
+
+441
+01:32:05,844 --> 01:32:11,423
+Tamam, o zaman her üç anahtar daha açık, devreyi açık bırakan, açık durumu 0 olduğu için 0.
+
+442
+01:32:12,603 --> 01:32:15,703
+Bu kısmı şey yaptık. Öteki ne demiş bir de?
+
+443
+01:32:16,144 --> 01:32:20,083
+Anahtardan herhangi bir devreyi kapatırsa lamba yanacaktır, yandı.
+
+444
+01:32:20,664 --> 01:32:22,123
+İki anahtar binlerinde kapatırsa lamba yanacaktır.
+
+445
+01:32:22,324 --> 01:32:25,484
+Tamam. İki anahtar, iki anahtar, tamam.
+
+446
+01:32:27,484 --> 01:32:28,863
+Üçü beraber, tamam.
+
+447
+01:32:30,384 --> 01:32:31,363
+Evet, doğru.
+
+448
+01:32:32,851 --> 01:32:41,731
+Şimdi bunu ne demiş? İlk iki kişi geçiyorum. Direkt Moogs'a bakalım isterseniz. Zaten o daha hamımlı oluyor.
+
+449
+01:32:44,731 --> 01:32:54,891
+Ne demiş? X1, X2'yi seçme oyuncu yapalım şöyle. Sordaki gibi olsun. Nasıl yapacağız o zaman? Nasıl olacak?
+
+450
+01:33:02,195 --> 01:33:03,896
+Sırayı da yazdıracak var mı?
+
+451
+01:33:08,532 --> 01:33:09,492
+X3 hocam ilk.
+
+452
+01:33:10,452 --> 01:33:17,192
+X3, X3 değil, X3 değil, X3 demiş [öğrenci], bakalım.
+
+453
+01:33:18,311 --> 01:33:24,272
+Şurası X3 zaten belli, değil, değil ve kendisi.
+
+454
+01:33:25,292 --> 01:33:27,932
+Problem var mı? Yok herhalde, anlaşıldı her şey.
+
+455
+01:33:29,772 --> 01:33:32,391
+Bir soru vardı, bir dakika, bu muydu?
+
+456
+01:33:33,492 --> 01:33:34,772
+Çoğullamayla alakalı.
+
+457
+01:33:36,884 --> 01:33:45,844
+Bu soru yok şu an burada. Neyse, bunu da yapalım arkadaşlar. Sonra yeni konuya geçeceğiz zaten.
+
+458
+01:33:46,515 --> 01:34:12,655
+Bir soruyu okuyalım. BCD kodunda 0-9 arası verilmiş olan bir sayı, sizin bu aslında soru, vizede sorudan bir sorunuz vardı. MOOCsları görmeden önce burada MOOCs var ama o soruda normal lojik devre tasarımı istenmişti sizden. Paratimit ile alakalı onun MOOCslu versiyonu. BCD kodunda 0-9 arası verilmiş olan bir sayı bir sistemden uzakta bulunan bir başka sisteme aktarılacaktır.
+
+459
+01:34:12,916 --> 01:34:20,036
+Herhangi bir hataya sebebiyet vermemek için bu bilgi ile bir de eşlik biti gönderilecektir.
+
+460
+01:34:20,756 --> 01:34:32,916
+Şekilde verildiği üzere, BSD kodunda birilerin sayısını tek yapan eşlik paritabiti üreticini, X1 ve X2'yi seçme girişleri alarak seçici mukşehirmeni gerçekleştir.
+
+461
+01:34:32,916 --> 01:34:39,096
+Şimdi burada bir dipnot var, zaten sınavda size de doküman, kağıdınızda bunu yazmıştık.
+
+462
+01:34:40,096 --> 01:34:47,716
+Bu kısımdan önemli. Neyse, doğruluk tablosunun 4 girişli bir çıkış devre için çıkışta birilerin sayısı tek olacak biçimde oluşturulur.
+
+463
+01:34:48,756 --> 01:34:59,576
+Çarpımlar toplamı, kanım bütün ifade edilir. X1 ve X2 kontrol geçişleri olacağından çarpımlar toplamı ifadesi, X1, X2'nin lojikleşenlerine göre terimleri ayrılarak seçilmiş.
+
+464
+01:35:00,236 --> 01:35:13,056
+Şimdi burada ilk yapacağımız şey şu. Neymiş? Eşlik biti. Tek yapan eşlik biti. Yani şöyle bir sayı geldiğinde. Burası çift değil mi?
+
+465
+01:35:13,652 --> 01:35:29,012
+Yani iki paritibitinin anlamı şu arkadaşlar. Karşıya göndereceğimlerinin bit, bit, kaç adet bu bitlerde bir var, bunların toplamına bağlı olarak bir adet paritibitim var, bunun sıfır veya bir olma durumu.
+
+466
+01:35:30,195 --> 01:35:41,036
+Ne zaman bir olacak? Teklik de, ikisi de farklı çünkü. Teklik paratizde, ki burada tek yapan eşlik paratizliği için, odd paratiz. Yani tek eşlik.
+
+467
+01:35:42,739 --> 01:36:04,739
+Paritibit'i kullanacağız, teknik paritibit'i kullanacağız. Bunun için de içerisindeki, yani sistem ettiğimiz bu veriyi gönderdiğimiz karşı taraf içerisini tek sayı hale getiren paritibit olacak. Şu an çift misal bu. Çift adet, iki adet bir var. Paritibit'in bir olacak. Ama şöyle bir senaryoda...
+
+468
+01:36:05,395 --> 01:36:10,996
+3 tane birim var, paritibitim 0 gönderilecek karşı tarafa.
+
+469
+01:36:11,395 --> 01:36:15,195
+İlk etapta bunu nasıl oluşturacağız, bunu göstermemiz lazım.
+
+470
+01:36:15,435 --> 01:36:21,976
+Yani x1, x2, x3 olarak tasarlayalım biz bunu gene ve paritibit diyelim.
+
+471
+01:36:30,195 --> 01:36:33,335
+Hocam, yorulmamanız için tekst olarak yapıştırayım mı oraya?
+
+472
+01:36:34,655 --> 01:36:35,496
+Doğru tablosunu.
+
+473
+01:36:35,835 --> 01:36:38,496
+Yapıştır, ha, yapıştırsana. Bakalım nasıl olacak?
+
+474
+01:36:39,296 --> 01:36:41,235
+Dört geliş bir çıkışta.
+
+475
+01:36:42,235 --> 01:36:45,675
+Ben de hazırda yok diye. Aslında evet, hazırda tutmak lazım ondan sonra.
+
+476
+01:36:48,235 --> 01:36:49,056
+Heh, tamam.
+
+477
+01:36:54,868 --> 01:36:55,708
+Sizce ödüma mı?
+
+478
+01:37:00,148 --> 01:37:18,347
+Şimdi, bak, parati yazalım. Şu an sıfır, yani hiçbiri yok. Tek göndermemiz için paratiği birlememiz lazım. İki tane birim var. Yine tekletmem lazım, değil mi? Bir saniye ama bu sol taraf yanlış ya.
+
+479
+01:37:19,468 --> 01:37:22,507
+Hocam ben direkt chatten kopyaladım da doğru diye düşünüyorum.
+
+480
+01:37:22,507 --> 01:37:27,007
+O geçen sene çözümüydü. Bu şey değil. Ben düzeltip yazayım hocam isterseniz.
+
+481
+01:37:28,948 --> 01:37:30,828
+Tamam.
+
+482
+01:37:32,268 --> 01:37:33,948
+Yani düzgün olanı varsa...
+
+483
+01:37:36,668 --> 01:37:38,548
+Saman alacak, birazcık yazacağım işte.
+
+484
+01:37:43,315 --> 01:37:46,315
+Bu, bu, kim ya? Zıdavasa?
+
+485
+01:38:13,652 --> 01:38:17,731
+Bunlar da tabii içini doldurmuş, sıkıntılı.
+
+486
+01:38:22,003 --> 01:38:23,243
+Hızlıca zıvıya.
+
+487
+01:38:25,243 --> 01:38:26,384
+Hızlıyorum ben hızlıca.
+
+488
+01:38:56,564 --> 01:39:03,180
+Şimdi bu soruda bir ufak müans var aslında. Yani detaylandırılmamış bir soru. O yüzden bir tıkta...
+
+489
+01:39:04,692 --> 01:39:32,032
+Bir tık da hatal, hatal demeyelim de eksik bir soru. Mesela şöyle BCD denmiş ya, BCD sayısı dışarısında bu paratibiti ne üreteceğine dair bir bilgi verilmemiş. Hani karşı tarafa BCD bir sayı geldiğinde bir şey üretilsin, onun dışında üretilmesin mi demek? O tam belli olmayan bir soru. Öyle olduğu için bir don't care durumunu alalım hani paratinin, X yapalım oraya.
+
+490
+01:39:32,692 --> 01:39:41,692
+Karnaugh'un su rahat olsun diye. Ama normalde belirtmek lazım. Sıfırda bir üretecek, bir tane birim var.
+
+491
+01:39:42,172 --> 01:39:55,652
+Değil mi? O zaman bu sıfır olacak, sıfır olacak. İki birim olduğundan tek diyeceğim. Sıfır olacak, bir olacak, bir olacak, sıfır olacak, sıfır olacak, bir, bir, sıfır.
+
+492
+01:39:55,652 --> 01:39:59,872
+En sonunda da çift olduğu için bir, tek.
+
+493
+01:40:00,212 --> 01:40:22,972
+Tek, çift olduğu için bir. Şimdi bu paletideki durum böyle. Şimdi bunu direkt istersen hani MOOCslara göre bir dizayn edelim. Hiç şeye girmeyelim. Normalde yapılacak olan şu lojik devre tasarımının yapılacağı vakit her bir biri Karmada gösterip sadeleştireceğiz ve ondan sonra da paleti için devre tasarımımız çıkacak.
+
+494
+01:40:23,376 --> 01:40:28,155
+Ama şimdi MOOC'sda bu işler daha kolay demiştik zaten. X1, X2'yi seçme ucu alacağız.
+
+495
+01:40:29,056 --> 01:40:35,136
+Ki mesela şu kısım işte ilk seçme ucumuz. Buradaki 1, 0, 0, 1'i nasıl oluşturabiliriz?
+
+496
+01:40:37,056 --> 01:40:46,056
+Şöyle bir MOOC'unu seçelim. 4x1, X1, X2.
+
+497
+01:40:50,547 --> 01:40:54,147
+Evet, nasibiz, kapı tasarım yapabileceğiz buraya.
+
+498
+01:40:59,604 --> 01:41:10,764
+Evet, XOR denmiş. Neden? Çünkü aynıysa bir, farklıysa sıfır verdiğimiz XOR kapılarıydı. Biraz sığdırmaya çalışacağım buraya ama.
+
+499
+01:41:14,579 --> 01:41:22,639
+Şöyle bağladık. İkinci aşama, yani birinci ne kapısı? XOR kapısı değil mi? X3, X4'ü.
+
+500
+01:41:41,395 --> 01:42:08,195
+Bağladık mı? Evet. Sonraki aşama neydi? Şurası. Bu ne kapısı? Bu da aynısı. Şuradan aldım, buraya verdim. En üsttekinin de aynısı şurada. Şuradan biraz büyükçe zıplayıp verdim. Şu an iki tane, bir izol, iznorla, 4x1 mox da aslında bir paratibit üretici yaptım. Tamam mıyız arkadaşlar?
+
+501
+01:42:10,260 --> 01:42:12,220
+Sorumuz yok herhalde bununla alakalı.
+
+502
+01:42:13,840 --> 01:42:18,800
+Bu kısımlarla geçiyoruz. Bir tane daha sorumuz vardı. Güzel bir soru.
+
+503
+01:42:19,159 --> 01:42:20,360
+Alo sorusu.
+
+504
+01:42:21,300 --> 01:42:34,380
+Şimdi normalde ALÜ dediğimiz yapılar aritmatik lojik birimdir. Yani bir bilgisayar mimarisini, CPU'nun içerisinde belki seneyi göreceksiniz ve SMD'de de anlatıyor olabilir de razıcak.
+
+505
+01:42:34,860 --> 01:42:49,220
+CPU'nun iç yapısı üçe ayrılıyor değil mi? Bir kontrol birimimiz var, bir ALÜ dediğimiz birim var, aritmatik lojik birim var. Bir tane de normalde içerisinde ne var? Gördük mü bunları? Daha görmedik herhalde ikinci sınıf olduğumuz için.
+
+506
+01:42:49,300 --> 01:42:56,260
+Evet, alın içerisinde bir tane de normalde bir bufferlama yapan bir ufak havıza bir durum var. Neyse.
+
+507
+01:42:56,768 --> 01:43:09,247
+ALU dediğimiz birim, aslında matematiksel işlemlerin yapıldığı birim. İçerisinde aritematik dediğimiz şey, toplama, çıkarma, çarpma gibi işlemler, bazı özel enteklilerde olan çarpma gibi işlemler, bölme gibi işlemlerin yapıldığı birim.
+
+508
+01:43:09,608 --> 01:43:19,268
+Lojik birimi, işte bitleri sağa kaydır, sola kaydır, işte ne bileyim, chip, rotate, bit, carry gibi komutların çalıştığı, bunların tanımlı olduğu birim.
+
+509
+01:43:20,404 --> 01:43:24,444
+Genelde matematiksel ve lojik mantıksal işlemlerin yapıldığı birim.
+
+510
+01:43:25,104 --> 01:43:31,024
+Şimdi burada çok ufak bir, yani çok az işlemin tanımlandığı bir alo yapılmak istemiyor.
+
+511
+01:43:32,484 --> 01:43:36,624
+Bunun mentalitesini anlatıyor. Yani bloklik diyagramlar da yapacağız zaten.
+
+512
+01:43:37,324 --> 01:43:43,384
+Şimdi soru şunu söylüyor. Diyor ki iki tane 4 litrelik veri alan, ki aloyu tasarlayalım isterseniz.
+
+513
+01:43:43,384 --> 01:43:47,444
+Şöyledir alınır şamatiği. Genelde böyle gösterilir.
+
+514
+01:43:49,235 --> 01:43:51,235
+Bilgisayar donluğumda da belki göreceksiniz.
+
+515
+01:43:57,076 --> 01:44:01,876
+Şöyle tek bir çizgi ve şöyle 4 yapıyorum. 4 bitlik olduğu belli olsun.
+
+516
+01:44:03,175 --> 01:44:06,615
+A ve B miydelim? Evet, B.
+
+517
+01:44:07,255 --> 01:44:14,315
+Şimdi 4 bitlik A ve 4 bitlik B sayıları, yani inputları ile işlem yapan bir alü birimi bu.
+
+518
+01:44:14,315 --> 01:44:18,915
+Ve bu alü birimi içerisinde 4 işlemi tanımlanmış.
+
+519
+01:44:19,380 --> 01:44:38,100
+Dört işlem tanımlanmış. Nedir bu işlemler? İşte A ile B'yi toplayan bir işlem kodu tanımlanmış. A'dan B'yi çıkaran bir işlem kodu, B'nin tümleyenini alan bir işlem kodu ve A'yı, A'daki dört biti, bir bit sağa öteleyen bir işlem kodu tanımlanmış.
+
+520
+01:44:38,100 --> 01:44:45,220
+Şimdi normalde CQ'nun iç yapısında da şöyle çalışır arkadaşlar. Belki göreviniz var.
+
+521
+01:44:47,380 --> 01:44:54,579
+abstraction, fetch data gibi böyle stepleri var. Şimdi ilk başta kod getirilir. Kod,
+
+522
+01:44:54,975 --> 01:45:04,515
+Anlaşılması için dekod edilir bilgisayar içerisinde ve o kodun yapılacağı şey tablodan aslında seçilmiş, belirlenmiş olur.
+
+523
+01:45:04,515 --> 01:45:10,915
+Şimdi burada da işlem kodu dediğimiz, bunu yakında göreceksiniz belki opcode olarak tanımlayacağız.
+
+524
+01:45:11,376 --> 01:45:16,675
+İşlem kodumuz bu alü için dört tane işlemi içeriyor. Yani dört işlem kodu barınmıyor.
+
+525
+01:45:16,884 --> 01:45:25,604
+Ve bu dört işlem kodundan seçtiğimiz kodu gönderdiğimizde bu aluya o ilgili işlemi yapıyor. Böyle tanımlanmış bir alumuz var.
+
+526
+01:45:26,144 --> 01:45:34,144
+Şimdi ilk başta seçim olduğu için bir kere MOOCs'un yapısı olacak. Bu MOOCs benim için işlem kodunu seçecek.
+
+527
+01:45:34,144 --> 01:45:43,051
+Şimdilik bir blok yapalım. Burada iki tane K1 ve K2'nin birinde işlem kodunu alan bir kısım olacak. Bir tane de...
+
+528
+01:45:43,412 --> 01:45:53,051
+Neyimiz olması lazım? Toplama çıkarma işlemi yapıyorsak elde bitiriyoruz. E, G'ye yatıyorum. Şuraya da E, G, E, Ç diyorum. Yani elde giriş, elde çıkışımız olacak.
+
+529
+01:45:53,592 --> 01:46:02,192
+Bir de bunun 4 bitlik F çıkışı olacak. Yani toplama, çıkarma, öteleme gibi işlemleri aslında bu F biti. F çıkışı olacak.
+
+530
+01:46:02,192 --> 01:46:11,072
+Yani aslında tasarladığımız alü böyle bir şematik yapıda. Şimdi ilk etapta, yani şimdi işlemlere geleceğiz.
+
+531
+01:46:11,412 --> 01:46:30,712
+Burada yanlış yazılmış aslında. Şu 1, 0 ve 1, 1 olacak. Aslında biz bu diagramdan şunu almıyoruz. Bir tane mux olacak ki bu mux işlemleri seçsin. Değil mi? Mux'umu koydum şuraya. 4x1 mux'um var.
+
+532
+01:46:34,355 --> 01:46:38,735
+Ve bu moxun çıkışı, şurada söylediğim gibi F çıkışı olacak. 4 bitlik.
+
+533
+01:46:42,899 --> 01:46:49,639
+Bunun seçim uçları da aynı şeyde olduğu gibi, yani deminki sorularda yaptığımız gibi seçim uçları olacak.
+
+534
+01:46:50,479 --> 01:46:53,260
+Şimdi bunun dört tane girişi olan bir mokslo.
+
+535
+01:46:54,479 --> 01:47:00,939
+Amacımız şu, sıfır sıfır geldiğimde I sıfırı seçiyorsam buradan toplama işlemini yapan sonuç gelecek.
+
+536
+01:47:01,587 --> 01:47:13,087
+K1 yüksek anlamda ise, K1'de ise burada çıkartma işlemini yapan işlemin sonucu gelecek.
+
+537
+01:47:13,608 --> 01:47:20,547
+1-0'da ise burada tümleyen alacak, 1-1'de ise burada bir bit sağ öteleyecek.
+
+538
+01:47:21,547 --> 01:47:23,627
+Bu işlemlerin bloklarını yapalım.
+
+539
+01:47:26,068 --> 01:47:30,168
+Toplama işlemi için ne yapıyoruz? Bir block full adder ekleyelim.
+
+540
+01:47:33,971 --> 01:47:38,971
+Buradan elde girişimiz olacak dedik ve elde çıkışımız olacak.
+
+541
+01:47:40,191 --> 01:47:48,492
+Ve 4 bit A ile B 4 bit girecek FullADER'a değil mi?
+
+542
+01:47:48,492 --> 01:47:55,492
+Şu an 00'da FullADER bloğunun elde girişli itibarlı çıkışına çıkışa yansıttık.
+
+543
+01:47:57,291 --> 01:48:00,492
+1.0'da çıkartma işlemi yapacaktık.
+
+544
+01:48:01,344 --> 01:48:11,504
+Evet, full-safsır diyelim. Şunları, A'yı şuradan çektim şuraya, B'yi de şuradan çektim şuraya.
+
+545
+01:48:12,224 --> 01:48:27,144
+Ve elde girişi şuradan buraya girdi. Şunu zıplatıyorum. Elde çıkışı da şöyle yapalım hatta. Bir tane daha elde çıkışımız var.
+
+546
+01:48:32,787 --> 01:48:40,427
+Ve bunların ikisini orlayabilirim değil mi? Ne de olsa bir sıkıntı yok. Pardon, burayı niye bağlı?
+
+547
+01:48:41,727 --> 01:48:47,887
+Şuradan da bir F gelecek. Burası biraz karışacak. Şöyle yapalım. Elde çıkışları şimdi şöyle açıklayabiliyorsun.
+
+548
+01:48:49,567 --> 01:48:53,131
+Evet, yani aslında 0-1 geldiğinde...
+
+549
+01:48:53,427 --> 01:49:08,847
+Full-substractor gloom'dan bana sonucu verecek. Şimdi gelelim 1-0'da. Tümleyenini almak. Tümleyenini almayı nasıl hallediyorduk arkadaşlar? Hatırlayanınız var mı? B'yi getirdim ben buraya. Nasıl tümleyen olurum?
+
+550
+01:49:09,407 --> 01:49:11,507
+AND veya OR'la kendisine sokarsak.
+
+551
+01:49:12,487 --> 01:49:15,287
+X, ne dedin orayı kaçırdım ben.
+
+552
+01:49:15,887 --> 01:49:18,587
+Kendisiyle ya AND'le ya da OR'la girecek.
+
+553
+01:49:20,083 --> 01:49:22,083
+Yani, doğru.
+
+554
+01:49:22,083 --> 01:49:25,083
+Şunu diyorsun, tamam, anladım.
+
+555
+01:49:25,083 --> 01:49:28,083
+Şurayı ikileyelim.
+
+556
+01:49:28,083 --> 01:49:32,083
+Şimdi burada dört bit ya, dört tane olduğunu düşünüyorum. Ben bir tane çizeceğim de.
+
+557
+01:49:32,083 --> 01:49:41,083
+Şu an tümleyeni geldi mi? Değil mi? Beynin bir tane bitinin tümleyeni geldi. Bundan dört tane olduğunu düşünüyorum.
+
+558
+01:49:41,083 --> 01:49:46,083
+Ve burada da zaten dörder tane bunların her biri.
+
+559
+01:49:47,731 --> 01:49:50,192
+Yani dört tane dörde birlik mux var burada.
+
+560
+01:49:51,391 --> 01:49:56,072
+Her bir bit için, A0 için, A1 veya B0, B1 için vs.
+
+561
+01:49:57,131 --> 01:50:02,152
+Sonra en sağda da 1-1 geldiğinde sağa öteleyecekmişiz. Onu nasıl yapabiliriz?
+
+562
+01:50:04,131 --> 01:50:06,271
+Şuradan bir sayımız gelsin.
+
+563
+01:50:07,051 --> 01:50:08,612
+Hatta şöyle gösterelim.
+
+564
+01:50:09,172 --> 01:50:10,131
+Dört bitlik ya.
+
+565
+01:50:11,931 --> 01:50:13,032
+Bir tane daha yazdık.
+
+566
+01:50:13,427 --> 01:50:33,427
+Amaç sağa ötelemek. Aslında A'nın şuradan getirdiğimiz dört tane verisini ben şöyle bağlasam, yani bir tane sağa doğru kaydırsam fiziksel olarak ve şuraya elde girişini bağlasam, şurada elde çıkışı olsa...
+
+567
+01:50:34,100 --> 01:50:49,159
+Ve her biri içinde MUX'a işte bu kaydıraraktan, yani en anlamlı A4'ü MUX'un 3. MUX'a, işte A3'ü 2. MUX'a bağlasam kaydırmış olur mu?
+
+568
+01:50:51,828 --> 01:51:02,648
+Olurum değil mi? Sağ öteleme yapmış olurum yani. Dördüncü biti, üçüncü muxa bağlayacağım. Normalde A4'ün full edit çıkışını, A4'ü ben dördüncü muxa bağlıyorum.
+
+569
+01:51:04,051 --> 01:51:25,811
+A3'ü 3. muxa, A2'ye 2. A1'e 1. muxa bağlıyordum. Ama öteleme işlemi için A4'ü 3. muxa bağlasam, A3'ü 2. A2'yi 1. A0'ı da normalde elde çıkışına elde girişinde A4'ü yani 4. muxa bağlasam ötelemiş olur muyum? Olur.
+
+570
+01:51:26,707 --> 01:51:49,707
+Yani şu an biz 4 aslında, eski CPU'lar da böyleydi, şimdilikler biraz daha akıllı da, içerisinde pek çok modülü çalıştırıyoruz, sonuçları seçiyoruz. Bu bir yaklaşımdır. Çok eskiden böyleydi, şimdi böyle değil de. Çok eskiden normalde tanımlanmış opcode'lara ait prosesler çalışır, sonuçlar arasından hangisi...
+
+571
+01:51:49,971 --> 01:51:57,252
+Seçildi, hangisi isteniyorsa o, yani o kod dediğimiz kodla ne yapılmak isteniyorsa o sonucuya yansıtılır.
+
+572
+01:51:58,271 --> 01:52:03,591
+Basit anlamlı bir ALU tasarımıdır. Bu anlaşıldı mı arkadaşlar bu soru?
+
+573
+01:52:04,851 --> 01:52:07,671
+Hocam, üçüncü girişte AND'e bağladık ya.
+
+574
+01:52:08,811 --> 01:52:11,291
+Üçüncü girişte AND'e bağladık, evet.
+
+575
+01:52:11,691 --> 01:52:12,992
+NAND ya da NOR olması gerekmiyor mu?
+
+576
+01:52:12,992 --> 01:52:17,431
+Pardon, evet, NAND. Doğrudur.
+
+577
+01:52:19,828 --> 01:52:22,228
+Kaydırmayı vesaire anlaşıldı herhalde.
+
+578
+01:52:24,148 --> 01:52:27,428
+Tamam arkadaşlar, sorularımız bu kadardı şimdilik.
+
+579
+01:52:27,848 --> 01:52:31,888
+Diğerleri zaten çözdüğümüz sorulara çok yakın, o yüzden bir daha çözmedim.
+
+580
+01:52:33,048 --> 01:52:34,448
+Konuya geçeceğiz.
+
+581
+01:52:35,528 --> 01:52:37,928
+Ama ne zaman ara, bir ara versek mi?
+
+582
+01:52:39,648 --> 01:52:44,348
+Şöyle yapalım, bir konuya giriş yapalım, bir 10 dakika sonra ara verelim arkadaşlar.
+
+583
+01:52:46,003 --> 01:52:52,903
+Biraz konuya giriş yapalım. 4'ü 5 geçe 4 gibi ara verelim. Düz hesap olsun.
+
+584
+01:53:16,948 --> 01:53:18,868
+Geliyor mu slide ekrana?
+
+585
+01:53:21,748 --> 01:53:22,608
+Geliyor hocam.
+
+586
+01:53:23,448 --> 01:53:28,908
+Tamam. Şimdi kombinezonsal devreleri anlattık, örnekle bayağı çözdük.
+
+587
+01:53:29,728 --> 01:53:33,988
+Şimdi geldik ardışıl devreler, yani sequential circuit'lara.
+
+588
+01:53:38,163 --> 01:53:44,644
+Şimdi, sequential circuit'ın farkı aslında hafıza veya depolama biriminin bulunması.
+
+589
+01:53:45,184 --> 01:53:53,123
+Şimdi bu tabii fiziksel olarak bir İSAR'daki RAM veya işte hard disk gibi bir şey canlanabilir kafanızda ama öyle bir şey değil aslında buradaki depolama birimimiz.
+
+590
+01:53:53,123 --> 01:54:02,123
+İleride değineceğiz ama normalde sequential devreler yani ardışıl devreler normal kombinezonsal devrelerin bulunduğu.
+
+591
+01:54:02,863 --> 01:54:11,123
+Beysi'de bu devrelerin yer aldığı ama bu devrelerin belli başlı steplere göre durumunun değişeceği.
+
+592
+01:54:11,471 --> 01:54:14,612
+ve hafıza birimiyle bunun sağlandığı devreler.
+
+593
+01:54:15,011 --> 01:54:24,692
+Şimdi kombinezonsal devrelerde hep şunu söyledik, dedik ki T anındaki girişlere göre T anındaki çıkışları üreten devrelerdir dendi.
+
+594
+01:54:24,692 --> 01:54:33,532
+Yani hiçbir zaman T artı birden veya önceki bir süreçteki girişlerin değişiminden sonraki çıkışlar diye bir şey söylenmedi.
+
+595
+01:54:34,032 --> 01:54:39,471
+Yani örneklendirmek gerekirse, işte bu düğmeye butona bastıysa...
+
+596
+01:54:39,471 --> 01:54:47,032
+Işık yandı, basmadıysa yanmadı. Ama sıra sağ, yani ardışıl devreler değilse şöyle örnekler olacak.
+
+597
+01:54:47,591 --> 01:54:55,992
+Bir önceki durumu bilmeden sonraki durumun oluşması bilinmediği için sonucun da ne olacağı bilinmeyecek.
+
+598
+01:54:55,992 --> 01:55:07,452
+Örnek vermek gerekirse insan sayımı var, sensörle yapıyorsunuz bunu. Kaçıncı insan girdi ki bir sonraki bir artsın yani ona bağlı olarak sorunsal.
+
+599
+01:55:07,471 --> 01:55:14,992
+Bu ardışıl devre tasarımını gerektiriyor. Örnek vermek gerekirse gene sayımla alakalı.
+
+600
+01:55:15,492 --> 01:55:22,431
+İşte üçten sonra birden itibaren sayım yapan devre tasarımı olacak veya birden yediye kadar sayılacak.
+
+601
+01:55:22,631 --> 01:55:27,911
+Yediye vardığında işte çıktığında bir lamba led yakacak. Neyse.
+
+602
+01:55:27,911 --> 01:55:29,911
+İşte bu durumda bir...
+
+603
+01:55:30,319 --> 01:55:45,679
+2, 3, 4, 4'ten sonra 5, 5'ten sonra 6 diye bir önceki durumun bilinme gerekliliği, depolanmış bilginin kullanma gerekliliği içeren ardışıl devre tasarımları bunlar.
+
+604
+01:55:45,679 --> 01:55:58,319
+Burada storage element dediğim gibi, hani hava şeyde canlandırırken kafanızda kesinlikle bir işte SSD diyeyim işte veya bir depolama birimiydi gözüyle değil de.
+
+605
+01:55:58,319 --> 01:56:10,559
+Flip-flop ve latch, yani latch'ten kastımız tutucu devreler, bufferlama yapmayan, sadece tutan, değeri tutan devreler, flip-floplar da aynı şekilde aslında.
+
+606
+01:56:11,920 --> 01:56:20,059
+Bu entegrelerden bahsedeceğiz. Yani aslında ardışıl devlet, normalde bir kombinezonsal devrenin beyzinde yine bir lojik kapılar var.
+
+607
+01:56:24,467 --> 01:56:36,267
+Ardışıl devrelerin merkez noktasını oluşturacak. Çünkü bir sonraki stepte ne olacağını, bir önceki stepteki bilgiyi kullanarak karar vereceğimiz devre tasarının olacak.
+
+608
+01:56:37,127 --> 01:56:42,527
+Burada da yine girişler, dış dünyada aldığımız sinyaller, çıkışlar dış dünyaya verdiğimiz sinyaller.
+
+609
+01:56:42,967 --> 01:56:49,687
+Ama bunun dışında başka girişlerimiz olacak. Nedir? Durum, yani o anki durum sinyallerimiz olacak.
+
+610
+01:56:50,163 --> 01:56:55,704
+Ve çıkışlarımızdan bir tanesi de bir sonraki durumu belirten çıkış olacak.
+
+611
+01:57:02,387 --> 01:57:23,887
+Şimdi burada iki mimardan bahsediyoruz. Meli ve Moore. Sadece çıkış fonksiyonunda bir farklılık var. Meli makineleri ve Moore makinelerinin. Girişler aynı. Girişleri bir sonraki durum için, bir sonraki durumu belirleyen şey o anki girişler ve o anki durumlar olacak.
+
+612
+01:57:26,131 --> 01:57:44,111
+Makinenin de bu şekilde. Ama iki makinenin çıkışları, yani çıkışının ne olacağını belirleyen şey, o anki gidişler ve durumlar belli makinelerinde ama mur makinelerinde sadece o anki durumu çıktığı üretmek için kullanıldığını söz edeceğiz.
+
+613
+01:57:45,716 --> 01:58:09,656
+Burada da bir meli ve mur makinesinin diagramı mevcut. Tekrardan belirtelim. Çıkışların oluşmasında bir farklılık var. Yani ben durumların meli ve mur makinelerinde durumların oluşması aynı. Durumların oluşmasının inputları aynı. Ne demek bu? Melide ben giriş alıyorum.
+
+614
+01:58:10,260 --> 01:58:25,659
+Çıkışın oluşabilmesi için giriş ve durumun bir fonksiyonu, yani ZT dediğimiz o durum T andaki durum ile T andaki girişe bağlı bir şeye göre çıkacak.
+
+615
+01:58:25,960 --> 01:58:27,760
+Yani böyle bir fonksiyona göre çıkacak.
+
+616
+01:58:28,579 --> 01:58:36,140
+Ama mur makinelerinde çıkışın sadece ve sadece o anki duruma bağlı olarak oluşacak.
+
+617
+01:58:39,859 --> 01:58:59,519
+Peki, durum analizine gelelim. Sonuçta ne dedik biz? Tamam, girişimiz olacak, çıkışımız olacak ama, sequential, ardışıl devrelerde bir fazladan input, bir fazladan output'um daha var. Nedir? O anki durum ile bir sonraki durum. O anki durum da bir input, bir sonraki durum da bir output. Giriş ve çıkışların yanında.
+
+618
+01:59:07,347 --> 01:59:25,008
+X, T yani girişin beraber bir durumu söz konusu. Yani beraber bu D, bir sonraki T'deki durumun oluşabilmesi, girişin, yani bir önceki girişin ne olduğuna ve bir önceki durumun ne olduğuna bağlı olarak oluşacak.
+
+619
+01:59:25,908 --> 01:59:33,228
+Ama Moore makinelerinde, gene burada da aynı, giriş ve bir önceki duruma bakacak.
+
+620
+01:59:33,448 --> 01:59:39,188
+Yani o anki girişim ne, o anki durumum ne, bir sonraki durumum ona göre oluşacak.
+
+621
+01:59:41,887 --> 01:59:49,908
+Şunu net şey yapalım arkadaşlar, Meli ve Moore arasındaki tek fark, çıkışın nasıl belirleneceği.
+
+622
+01:59:50,176 --> 01:59:55,556
+Meni makinesinde çıkış sadece duruma bağlı.
+
+623
+01:59:57,556 --> 02:00:05,176
+Meni makinesinde çıkış, durum, yani bir önceki T anındaki durum ve T anındaki girişe bağlı.
+
+624
+02:00:05,615 --> 02:00:08,636
+Mur makinesinde çıkış ise sadece duruma bağlı.
+
+625
+02:00:10,456 --> 02:00:12,076
+Geleceğiz, örneklerimiz var.
+
+626
+02:00:13,515 --> 02:00:14,496
+Hepsini açalım.
+
+627
+02:00:15,252 --> 02:00:24,092
+Burada ardışıl devrelerden bahsederken iki tane aslında yapı var. Bilgisayarda da senkron ve asenkron olarak da mikro işlemcilerde de bunu göreceksiniz.
+
+628
+02:00:24,872 --> 02:00:32,332
+Şimdi ardışıl devre gibi devre tasarımlarında yani bir T zamanı ve T artı bir zamandan bahsediyorsak.
+
+629
+02:00:32,787 --> 02:00:41,387
+Senkron dediğimiz yapı, bu devreleri ortak bir senkron sinyaline bağladığımız devreler.
+
+630
+02:00:41,607 --> 02:00:44,047
+Ki biz buna clock pulse dedik diyeceğiz.
+
+631
+02:00:44,047 --> 02:00:46,047
+Çünkü sonuçta...
+
+632
+02:00:47,091 --> 02:00:57,551
+Şöyle düşünün, T anındaki bir sonraki aşama veya bir önceki aşama demek dışarıdan bir sinyalle tetiklenince olan durumlar.
+
+633
+02:00:57,931 --> 02:01:03,591
+Şimdi bir sonraki aşama T artı bir aşamaya geçebilmesi için bir tetik sinyali göndermemiz gerekecek.
+
+634
+02:01:03,931 --> 02:01:10,931
+Ve biz bunu bir clock pi'sine dışarıdan bağlıyorsak bu senkronize edilmiş ardışıl devreler olacak.
+
+635
+02:01:11,431 --> 02:01:15,091
+Asenkronize şöyle, zamanın belli zamanları da belirsiz zamanları.
+
+636
+02:01:15,091 --> 02:01:31,051
+Otomatikman o senkronizasyonu sağlayan sistemler, asenkronlar. Yani ben 5 milisaniyede bir tanımladım, 5 milisaniyede bir clock pass'i gönderiyorum entegreye. Yani bir refreshleme gönderiyorum. Bu senkrondur.
+
+637
+02:01:43,220 --> 02:01:48,300
+Dışarıdan gelen bilgiye bağlı olarak kendinin yenilenme durumu olabilir.
+
+638
+02:01:48,720 --> 02:01:52,820
+Veyahut da saçma sapan aralıklarla bir sinyal ile titiklenme olabilir.
+
+639
+02:01:53,260 --> 02:01:57,900
+Asenkron seri ardışıl devreler deniyor bu tarz devrelere.
+
+640
+02:01:58,300 --> 02:02:01,200
+En güzel örnek aslında senkron için REM örneği.
+
+641
+02:02:01,660 --> 02:02:04,620
+REM'ler arkadaşlar bir diploma birimdir biliyoruz zaten.
+
+642
+02:02:06,195 --> 02:02:24,815
+Ama bu depolamayı sağlayabilmesi için anakart üzerinden refreshlenmesi, yani o elektrik palsinin refreshlenmesi, o reviyi tekrardan clock palsi gibi yenilemesi gerekir. Senkrondur REMler bu yüzden. Asenkron işin örnek ne verilebilir?
+
+643
+02:02:25,747 --> 02:02:34,227
+Şu an aklıma, bakayım geliyor mu? Asenkron bir cihaz. Sizin geliyor mu? Hiç asenkron bir örnek olabileceğini düşündünüz.
+
+644
+02:02:37,076 --> 02:02:47,336
+Aslında şu olabilir, basit bir örnek, USB'yi taktığımızda veya herhangi bir şey çıkarttığımızda bilgisayardaki o ses, drink diye bir asenkron uyarıdır.
+
+645
+02:02:47,796 --> 02:02:52,996
+Çünkü neden? O normalde çalmıyordu, siz bir şey yaptınız, bir interruptla bunu çaldırdınız.
+
+646
+02:02:53,416 --> 02:02:57,996
+Bir senkronize, bir clock policy yoktu gibi bir örnek verilebilir.
+
+647
+02:03:01,043 --> 02:03:20,083
+Asenkron ile senkronun aslında timing diyagramı diyorlar buna, zamanlama diyagramlarını görüyoruz. Giriş ve çıkışlarımız var. Asenkron dediğimiz ardışıl devrede, yani senkrona bakalım isterseniz, senkron dediğimiz ardışıl devrede bir saat paysi, yani bir clock paysi gönderdikten sonra,
+
+648
+02:03:21,140 --> 02:03:48,399
+Aktif olur. Giriş yerim mesela sıfıra düştü. Çıkış da sıfıra düşmek üzereymiş bu devre, ardışıl devre. Bu pals geldikten bir süre sonra, daha doğrusu yükselen kenarındaymış, pardon şöyle anlatalım. Yükselen kenarını izleyen bir pals şeyi üretiyoruz. Şimdi burada yükselen kenarında X-Tame 1'dir. O yüzden 1 kaldı uzun bir süre. Ama bir sonraki clock palsinde X-Tame 0.
+
+649
+02:03:49,011 --> 02:04:14,351
+ve output'um ZTM'de 0'a düşürdü. Yani bu refresh dedi. Girişteki veriyi dışarıya aktaran bir devre bu belli ki. Girişteki değerim 0 iken çıkışta 0'a düşürdü. Ne zaman? Floppy'sinin yükselken aradığı. Ama ardışıl devreler de XT düştü. Bir süre sonra işte şeye göre buradaki gecikme
+
+650
+02:04:14,804 --> 02:04:33,804
+Tamamen işte o sistemin asenkronluğuna alakalı hissedildi. Sonra tekrar yukarı çıkarttım. Ama bu daha farklı bir gecekme ile tekrar yukarı çıktı. Yani burada inter-app'lar veya pool-inkler vesaire farklı yaklaşımlar var. Ama neticede özde, yani aynı anda...
+
+651
+02:04:34,515 --> 02:04:47,336
+bir parase bağlı, dışarıdaki bir senkronizasyon sinyaline bağlı olmayan ve girdiğidekini çıktığıya arttıran bir devre ama bu gecikmeler ne olacağını vs. asinkron bir şekilde değişken.
+
+652
+02:04:53,268 --> 02:05:18,568
+Burada arkadaşlar bir ara verelim. Saatim benim yanlış olmasın. 4'ü 5 geçiyor. 4'ü 20 geçe, 15 dakika, hatta 4, evet 4'ü 20 geçe tekrar başlayalım. Belki 4, 45, 4, 50 gibi bitireceğiz belki ama biraz benim hastalığımdan dolayı biraz ara vermem gerekiyor. 4'ü 20 geçe devam edelim. Olur mu?
+
+653
+02:05:20,148 --> 02:05:22,247
+4.23 geçe görüşmek üzere.

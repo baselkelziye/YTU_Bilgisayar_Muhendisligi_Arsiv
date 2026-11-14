@@ -1,0 +1,2295 @@
+1
+00:01:48,275 --> 00:01:49,804
+Arkadaşlar, merhaba.
+
+2
+00:01:57,140 --> 00:02:09,139
+Şimdi bu hafta geçen kaldığımız yerden devam edeceğiz. En son adresleme modlarını bitirmiştik, uç tanımlarına gelmiştik. Hızlıca adres modlarını tekrar hatırlayarak ilerleyeceğiz.
+
+3
+00:02:09,139 --> 00:02:17,139
+Bu hafta lab saatinde labımız var, onu söyleyeyim.
+
+4
+00:02:17,139 --> 00:02:19,139
+Bir saniye.
+
+5
+00:02:23,731 --> 00:02:31,731
+Hocam, bu haftaki de tanıtım lab olarak duyurulmuş ama bugün not alacak mıyız [öğrenci]'tan yoksa sadece Proteus mu tanıtacak?
+
+6
+00:02:31,731 --> 00:02:48,731
+Katılım zorunlu, birincisi bu. İkincisi, Proteus'la ilgili olarak nasıl kullanacağız, nasıl çalıştıracağız, elemanları nasıl ekleyeceğiz bunları gösterecek. Devamdan da not almanız söz konusu. Yani laba katılın mutlaka.
+
+7
+00:02:51,699 --> 00:02:54,699
+Yani bu hafta quiz gibi bir şey olmayacak mı?
+
+8
+00:02:54,699 --> 00:02:58,699
+Quiz olmayacak. Lab'a devamdan puan alacaksınız bu hafta için.
+
+9
+00:02:58,699 --> 00:03:00,699
+Anladım hocam. Teşekkürler.
+
+10
+00:03:00,699 --> 00:03:01,699
+Rica ederim.
+
+11
+00:03:01,699 --> 00:03:14,699
+Evet, tekrar etmiş olalım yeni gelen arkadaşlar için de. Bu hafta arkadaşlar Lab saatinde asistan arkadaşlarımız Lab'la ilgili kullanacağımız program, simülasyon programı olan Proteus tanıtımını yapacaklar.
+
+12
+00:03:15,219 --> 00:03:19,579
+Katılım zorunlu ve devamla ilgili olarak puan alacaksınız.
+
+13
+00:03:21,360 --> 00:03:27,259
+Şimdi geçen haftadan bıraktığımız yerden biraz geriden alarak başlıyoruz.
+
+14
+00:03:28,539 --> 00:03:35,180
+Arada sorunuz olursa sesli olarak da bölebilirsiniz. Chat ekranına bakmaya çalışıyorum ama gözden kaçabilir. O yüzden
+
+15
+00:03:35,439 --> 00:03:39,019
+dediğim gibi sorunuz olursa sözlü olarak da bölerek sorabilirsiniz.
+
+16
+00:03:42,259 --> 00:03:45,259
+Evet, şunu da şöyle küçültelim.
+
+17
+00:03:46,324 --> 00:04:02,324
+8086 ile ilgili olarak adresleme modları olarak arkadaşlar üç farklı durumu incelemiştik. Bunlardan bir tanesi program hafızasının adreslemesi ile ilgiliydi. İkincisi yığın adresleme ile ilgiliydi. Üçüncüsü ile veri adresleme ile ilgili.
+
+18
+00:04:02,324 --> 00:04:14,324
+Yığın adreslemeden kasıt şu aslında, çeşitli yığın komutları var. Bu yığın komutlarını kullandığımızda varsayılan segment yazmacı olarak stack segment kullanılıyor.
+
+19
+00:04:14,324 --> 00:04:27,151
+Hatırlayacak olursanız, 8086'ya ilişkin olarak herhangi bir fiziki adres hesabı yapmak istediğimiz zaman, fizikal adres hesabı yapmak istediğimiz zaman, bu bir çeşit segment yazmacıyla...
+
+20
+00:04:27,151 --> 00:04:42,751
+Bir offset yazmacının aritmetik bir işleme girmesiyle hesaplanıyordu. Bu segment yazmacını 10 hexadesimalle çarpıp bir offset yazmacı, offset register değeri buraya ekleniyordu. Bunun sebebi neydi hatırlayacak olursanız.
+
+21
+00:04:43,331 --> 00:04:49,312
+8086'da yazmaçlar 16 bit, veri yolu 16 bit. Dolayısıyla bir seferde 16 bit veri tutabiliyorum.
+
+22
+00:04:49,680 --> 00:05:06,156
+Fakat adres yolumuz 20 bit. Bunun anlamı ne? 16 bitlik verilerle 20 bitlik bir değeri oluşturmamız lazım. Bu da offset memory model dediğimiz mantıkla gerçekleşiyordu. Dolayısıyla eğer ki ben push
+
+23
+00:05:07,315 --> 00:05:16,915
+pop gibi komutlar kullanırsam, bunlar varsayılan segment register'ı olarak neyi kullanıyorlarmış? Stag segment değerini kullanıyorlarmış.
+
+24
+00:05:16,915 --> 00:05:27,915
+Dolayısıyla yığın adreslemenin temeli bu. Yığın ile ilgili işlemlerde, komutlarda segment register olarak stag segmentin kullanılması.
+
+25
+00:05:27,915 --> 00:05:31,915
+Program adreslemede farklı bir durum vardı, onunla ilişkin olarak bakalım.
+
+26
+00:05:35,699 --> 00:05:47,699
+Önce programı ilişkin adreslemeye geçelim. Program adreslemede de arkadaşlar aslında bu durum bizim instruction pointer'ımızın değişimiyle ilgiliydi.
+
+27
+00:05:47,699 --> 00:05:58,699
+Şimdi yığın adreslemede stack segment ile birlikte ilgili offset yazmaçları kullanılacak. Program adreslemede ise hangileri kullanılacak?
+
+28
+00:05:58,699 --> 00:06:01,699
+Stack yazmacı olarak stack segment, pardon.
+
+29
+00:06:02,004 --> 00:06:17,604
+Yanlış söyledim. Segment yazmacı olarak kod segment kullanılacak. Bir offset yazmacı kullanmamız gerekiyor. Bunun offset yazmacının ismi de Instruction Pointer'da hatırlayacak olursanız. 8086 ile ilgili girişte bundan bahsetmiştik.
+
+30
+00:06:22,228 --> 00:06:35,508
+Kod segmenti veya Instruction pointer'ı değiştiren komutlar program hafızası adresleme modları olarak ortaya çıkıyor. Bunlardan doğrudan göreli ve dolaylı adresleme modları vardı. Şimdi onlara kısaca bir bakalım.
+
+31
+00:06:38,932 --> 00:07:04,432
+Doğrudan adresleme modu dediğimiz durumda arkadaşlar, benim çağırmış olduğum komutlar, jump ve call gibi koşulsuz dallanma ve fonksiyon çağırma komutları doğrudan parametre olarak iki tane 16 bitlik değer oluyor. Bu 16 bitlik değerler doğrudan kod segment ve instruction pointer değerlerini değiştirebiliyor. Bu doğrudan gideceğim adresi verdiğim için bu yapı doğrudan adresleme olarak isimlendiriliyor.
+
+32
+00:07:04,755 --> 00:07:10,755
+Bu far jump ve far call işlemlerine karşılık geliyor. Ne demek far jump ve far call?
+
+33
+00:07:10,755 --> 00:07:20,755
+Kendi bulunduğum, yani yazmış olduğum programın çalıştığı kod segment içerisinden başka bir kod segmente dallanmamı sağlayan komutlardan bir tanesi bu.
+
+34
+00:07:20,755 --> 00:07:30,719
+Dolayısıyla hem kod segmenti hem de instruction pointer'ı değiştiren komutlar. Temel olarak doğrudan program hafızası adresleme bunu ifade ediyordu.
+
+35
+00:07:30,720 --> 00:07:47,920
+Göreli program hafızası adresleme de şuydu. Bu kendi çalıştığım programımın tanımlı olmuş olduğu kod segment içerisinde belirli bir bulunduğum instruction pointer değerinden biraz ileri veya biraz geri gitmemi sağlayan bir komut grubu.
+
+36
+00:07:47,920 --> 00:07:58,720
+Buradaki temel amaç şu, 8 bitlik veya 16 bitlik bir değer verilebilir burada. 16 bitlik bir değer veya 8 bitlik bir değer dediğimiz yapıda aslında işaretli.
+
+37
+00:07:58,720 --> 00:08:22,720
+Bu sayı, tools complement işaretli bir sayı. Bunun anlamı da ne demek? Ben maksimum 8 bit ile öteleneceksem, 2 üzeri 8, 2 üzeri 7 değeri kadar ileri gidebilirim. Yani 127 kadar ileri gidebilirim, 128 kadar geri gidebilirim. Çünkü 8 bit işaretli sayıları, eksi 128 ile 127 arasında yazabiliyorduk. Aynı şey 16 bit sayılar için de geçerli.
+
+38
+00:08:24,244 --> 00:08:42,663
+Benzer şekilde pozitif veya negatif ilerlememiz söz konusu. Dolayısıyla burada vermiş olduğumuz değer, mesela jump 100 gibi bir değer, doğrudan bulunduğum call segmentin 100 adresine zıplamak demek değil. Bu bulunduğumuz noktadaki instruction pointer'ını 100 miktar arttır demek.
+
+39
+00:08:43,059 --> 00:09:09,939
+Benzer şekilde bu sayı pozitif bir sayı, decimal olarak verildiği için pozitif bir sayı, dikkat edin. Benzer şekilde jump 0, FFH dediğimizde de bu sayı tuz komplement aritmetikte baktığımızda negatif bir sayı ve eksi 1'e denk geliyor. Dolayısıyla bu da bulunduğumuz kod segmentte 255 numaralı satıra veya 255 numaralı offset'e dallanmak demek değil. Bu da bulunduğum instruction pointer'dan bir geri gitmek demek.
+
+40
+00:09:11,059 --> 00:09:24,059
+Bu pointerı bir azaltacak sonuçla çalışan bir durum. Bir de dolaylı program hafızası adresleme mantığı var. Burada dolaylı adresleme verideki gibi benzer bir mantıkla yapılıyor.
+
+41
+00:09:24,207 --> 00:09:32,127
+adres değerim, gideceğim adres değeri doğrudan verilmiyor bir yazmaç ile birlikte bize veriliyor.
+
+42
+00:09:32,127 --> 00:09:39,207
+Dolayısıyla ben bu komutu jump.bx veya call.bx gibi bir komut çalıştırmadan önce bx'de uygun değerleri ayarlamalıyım ki
+
+43
+00:09:39,207 --> 00:09:44,607
+bunlar üzerinden dolaylı olarak gideceğim program hafızası belirlenmiş olsun.
+
+44
+00:09:44,607 --> 00:09:51,687
+Son olarak bir de hafıza adresleme vardı, veri hafızası adresleme vardı.
+
+45
+00:09:52,083 --> 00:10:00,000
+Buna ilişkin olarak da şuraya gelelim. İlk grup yazmaç adreslemeydi. Yazmaç adresleme dediğimiz yapı...
+
+46
+00:10:00,000 --> 00:10:21,680
+Bu yapı yazmış olduğumuz komut, rejistralar üzerinde işlem yapıyorsa bu yazmaç adresleme oluyor. 8086'da 8 bitlik ve 16 bitlik yazmaçlar vardı. Genel amaçlı benim erişip değiştirebildiğim yazmaçlar. Bunları kullanabilirim. Fakat yazmaç adreslemede dikkat etmemiz gereken en önemli nokta, tip uyumuna dikkat etmemiz gerekiyor.
+
+47
+00:10:28,000 --> 00:10:38,320
+8 bitlik erişebileceğim yazmaçlar arasında ancak bir işlem geçerli. 8 bitlik işlem sadece bu 8 bitlik yazmaçlar arasında geçerli.
+
+48
+00:10:38,320 --> 00:10:45,200
+16 bitlik işlemlerde AX, BX, CX, DX, SP, BP, SE ve DÜ yazmaçlarında geçerli.
+
+49
+00:10:46,163 --> 00:11:02,244
+Bunun haricinde şunu yapamayız. Mesela move ax, bl gibi bir komutu çalıştıramayız. Böyle bir komut hata üretecektir. Yani move bx, al gibi bir komut hatalıdır.
+
+50
+00:11:02,964 --> 00:11:18,484
+Derlemeye çalıştığınız zaman hata verecek. Çünkü tip uyumsuzluğu var. Geçerli örnek her ikisi, her iki yazmacın da aynı tipte olduğu durumlardır. Örneğin, movecx, movebx,cx gibi komutlar örneği.
+
+51
+00:11:19,324 --> 00:11:23,764
+Bir başka adresleme yapısı arkadaşlar, hemen adresleme, immediate addressing.
+
+52
+00:11:24,240 --> 00:11:41,940
+Buradaki kasıt ise sabit bir değer atamasına ilişkinliği. Dolayısıyla ben instruction içerisinde, komut içerisinde, yani makine koduna çevrilmiş halinde atamak istediğim sabit değeri kod içerisinde gömebiliyorum. Bunun içerisinde yer verebiliyorum.
+
+53
+00:11:41,940 --> 00:11:52,240
+Dolayısıyla bu hem sabit değer atama olarak da değerlendirilebilecek bir adresleme mantığı. Örneğin, ben move al, 0f2h komutunu çalıştırdıktan sonra
+
+54
+00:11:52,240 --> 00:12:16,240
+Daha sonra AL'nin içerisi vermiş olduğum sabit F2 değeriyle belirlenmiş oluyor. Burada vermiş olduğum sabit değer 16 bit veya 8 bitlik olabilir. Burada dikkat etmek gereken nokta 8 bitlik bir yazmaca, 16 bitlik sabit bir değer, 16 bitle ifade edilmesi gereken sabit bir değeri atamakla ilgili sıkıntı durumu oradan dikkat etmemiz gerekiyor.
+
+55
+00:12:20,240 --> 00:12:34,240
+Aski değer olabilir. Yani tek tırnak içerisinde karakter dahi verebiliriz. Bunlar hemen adreslemeydi. Bir de doğrudan adresleme var arkadaşlar. Doğrudan adreslemede...
+
+56
+00:12:39,220 --> 00:12:52,720
+Şimdi Instruction Pointer'ı değiştiren sadece ve sadece jump gibi komutlar değil, başka işlemler de değiştiriyor. Bir de bu aritmetiği bizim kontrol etmemiz zor.
+
+57
+00:12:54,899 --> 00:12:58,579
+Kod yazdığımız zaman göreceksiniz veya assembly'den hatırlayacaksınız.
+
+58
+00:12:58,579 --> 00:13:03,399
+Jumpt komutunu biz doğrudan adres değeri vererek yaptığımız zaman çok zorlanıyoruz.
+
+59
+00:13:03,939 --> 00:13:05,459
+Bunun yerine bir label veriyoruz.
+
+60
+00:13:05,559 --> 00:13:14,219
+Label verdiğimiz vakit program assembly'den geçtiğinde bunun assembly koduna baktığımızda ilk tur geçtikten sonra ne görüyoruz derlenmiş halinde?
+
+61
+00:13:14,759 --> 00:13:17,240
+Labelların bir takım adreslerle değiştiğini görüyoruz.
+
+62
+00:13:20,192 --> 00:13:30,591
+Adres aritmetiğini veyahut da komutların ne kadar büyüklükte olduğunu hesaplamamız çok gereksiz bir işlem. Bu otomatik olarak Assembler tarafından yapılıyor.
+
+63
+00:13:30,591 --> 00:13:43,391
+Dolayısıyla böyle otomatik bir işlem yapılırken kullanıcından doğrudan Instruction Pointer'a müdahale etmesi istenmeyen sonuçlar doğurabilir. Bundan dolayı böyle bir yapı söz konusu.
+
+64
+00:13:47,220 --> 00:13:51,899
+Programlarken bunu daha net göreceksiniz veya zaten SMD'den hatırlıyorsunuzdur.
+
+65
+00:13:52,480 --> 00:14:02,200
+Doğrudan adres vermek gibi bir durum söz konusu adres değeri vererek ama biz bunu label üzerinden yapıyoruz ki hesap işlemin karmaşıklığıyla uğraşmayalım diye.
+
+66
+00:14:05,980 --> 00:14:10,879
+Doğrudan adreslemeden bahsediyorduk. Doğrudan adreslemede kastedilen şu arkadaşlar.
+
+67
+00:14:11,375 --> 00:14:22,375
+Neticede yine offset memory modeli düşünün. Bu offset memory modelde yine bir data segment olacak ve bir de burada bir offset re yazmacım veya offset değerim olacak.
+
+68
+00:14:22,375 --> 00:14:28,375
+Bunlar bana memorideki hangi veri gözüne erişeceğimi belirleyen 20 bitlik adresi oluşturacak.
+
+69
+00:14:28,375 --> 00:14:33,375
+Dolayısıyla ben bu tür veri aktarım komutlarında mutlaka şunu göreceğim.
+
+70
+00:14:36,240 --> 00:14:50,480
+segment yazmacı data segment olacak. Birincisi bu. Dolayısıyla benim köşeli parantez içerisinde vermiş olduğum dolaylı veya doğrudan adres değerim, bulunduğum data segment içerisindeki hangi offset değerine erişmek istediğimi belirleyecek.
+
+71
+00:14:50,964 --> 00:15:11,844
+Yani dolayısıyla burada eğer ki ben köşeli parantez içerisinde hangi offset'e erişmek istediğimi doğrudan yazmışsam, bu doğrudan adresleme oluyor. Dolayısıyla burada mesela 1, 2, 3, 4, h değerini köşeli parantez içerisinde vererek move bx, 1, 2, 3, 4, h köşeli parantez ile belirtmişsem, bunun anlamı şu.
+
+72
+00:15:12,820 --> 00:15:27,020
+Memory'de, hafızada, data segment ve 1, 2, 3, 4, hash offset değeriyle oluşturacağım 20 bitlik adrese gidiyorum. Oranın içeriğindeki değer neyse onu alıyorum şu anda bilmiyorum onu. Onu bx yazmacının içerisine kopyalıyorum.
+
+73
+00:15:27,412 --> 00:15:33,812
+Neye dikkat etmemiz lazım? Bu tür veri aktarım komutlarında varsayılan segment yazmacı olarak DS kullanılıyor.
+
+74
+00:15:34,432 --> 00:15:45,491
+İkincisi de 1-2-3 köşeli parantez kullandığım için 1-2-3-4H değeri BX'e atanmıyor da data segmentin 1-2-3-4H offsetindeki değer BX'e aktarılıyor.
+
+75
+00:15:46,432 --> 00:15:47,451
+Doğrudan adresleme bu.
+
+76
+00:15:48,052 --> 00:15:59,052
+Dolaylı adreslemede ise köşeli parantez içerisine vermiş olduğum offset değerini bir yazmaç üzerinden verebilirim. Bu mümkün. Bu BX yazmacı olabilir.
+
+77
+00:15:59,052 --> 00:16:01,964
+Veya bu...
+
+78
+00:16:02,100 --> 00:16:27,100
+D, I yazmacı olabilir veya bu S, I yazmacı olabilir. Dolayısıyla köşeli parantez içerisinde B, X, S, I ve D, I geçerli. Bununla birlikte B, X artı bir sabit değer de geçerli. Yani MOV A, X virgül köşeli parantez içerisinde B, X artı 100H. Bu da geçerli. D, I artı 100H da geçerli. S, I artı 100H da geçerli. Dolayısıyla...
+
+79
+00:16:27,248 --> 00:16:32,848
+Bir dolaylı adresleme yazmacı artı offset değeri kullanabilirim. Başka ne yapabilirim?
+
+80
+00:16:33,648 --> 00:16:39,927
+Buz yazmacıyla, base registerla bir index register'ı da birlikte toplayıp aritmetiğe sokabilirim.
+
+81
+00:16:39,988 --> 00:16:47,288
+Yani köşeli parantez içerisinde bx artı si da geçerli, bx artı di da geçerli. Başka ne var?
+
+82
+00:16:47,288 --> 00:16:54,288
+Son olarak da baz adresi, baz yazmacı artı bir index yazmacı artı bir offset değeri de kullanabilirim.
+
+83
+00:16:55,008 --> 00:17:15,288
+Yani BX artı, DI artı 100H da köşeli parantez içerisinde geçerli. Bu veri erişiminde bu şekilde ama bunun dışındaki hiçbir yazmacı bu şekilde dolaylı adresleme için kullanamayız. Örnek, köşeli parantez içerisinde AX, DX gibi yazmaclara izin verilmiyor. Bunlar derleme hatası oluşturur.
+
+84
+00:17:19,923 --> 00:17:35,923
+Şimdi o konuya gelelim. Şimdi soru şu, WordPointer ve BytePointer kullanımıyla ilgili. Bu durum nerede geçerli? Bu durum sadece şurada geçerli. Aktarmak istediğim verinin tipi...
+
+85
+00:17:37,460 --> 00:17:42,579
+Net bir şekilde belirlenemiyorsa, bunu word pointer veya byte pointer ile belirtmemiz gerekiyor.
+
+86
+00:17:42,579 --> 00:17:54,259
+Örneğin, şurada görmüş olduğunuz move ax virgül köşeli parantez içerisinde bx komutunu çalıştırırken pointer ile bunu, ptr ile bunu desteklememe gerek var mı?
+
+87
+00:17:54,740 --> 00:18:00,299
+Bunu sormuş olayım. Bu işlemin 16 bitlik mi, 8 bitlik mi işlem olduğunu anlayabiliyor muyuz?
+
+88
+00:18:01,523 --> 00:18:26,923
+Veyahut da bunu herhangi bir tipte işlem olarak anlamlandırmam söz konusu mu? Evet, AX belirtildiği için burada bunun 16 bitlik bir işlem olduğunu varsayıyorum. Ve Assembler'da buna göre görev yerine getiriyor. Demek ki burada işlem genişliği belli, işlem boyutu belli. Nerede belli değil? Bunu pointer meselesinin belli olmayan noktalarda kullanmalıyız. Örneğin,
+
+89
+00:18:27,476 --> 00:18:32,596
+Şöyle bir komut varsa, bakın, düzeltilmiş hali de yukarıda var.
+
+90
+00:18:33,115 --> 00:18:39,536
+İnkrement, mesela bx dedik. Bakın bu bir dolaylı adresleme.
+
+91
+00:18:39,536 --> 00:18:48,155
+bx yazmacını kullanmış. Ama ben burada bx yazmacının gösterdiği yerdeki word'ü mü artıracağım, byte'ı mı artıracağım? Bu belli değil.
+
+92
+00:18:48,576 --> 00:18:50,576
+Bakın şöyle gösterelim örneğimizi.
+
+93
+00:18:53,172 --> 00:19:11,572
+Burası 101H adresi olsun, şurası da 100H adresi olsun. 101H içerisindeki değerimiz bizim 99H olsun, 100H içerisindeki değerimiz de 0FFH olsun. Tamam mı?
+
+94
+00:19:11,572 --> 00:19:19,531
+Eğer ki ben şu increment BX işleminden önce move BX virgül 100H demişsem
+
+95
+00:19:19,731 --> 00:19:33,731
+Ve daha sonra increment bx diyorsam, bunun iki anlamı olabilir. Eğer ben şu anda belli olmadığı için ya 100h adresini tek başına arttıracağım veya 100h'ların itibaren yerleşik olan word'ı arttıracağım.
+
+96
+00:19:33,731 --> 00:19:43,731
+Bunu net bir şekilde belirtmem lazım. Dolayısıyla buradaki hatalı durum şu increment bx komutunu olduğu gibi vermek. Bunun yerine ne yazacağız öyleyse?
+
+97
+00:19:45,875 --> 00:20:10,875
+byte ptr bx dersem, bu bx'in göstermiş olduğu adres içeriğini 1 artır ve byte olarak artır diyor. O zaman ne oluyor arkadaşlar? Bakın, bu durumda 100h adresinin içeriği 00h oluyor ve carry flag de 1 oluyor. Bu durumda oluşan değer bu. Tamam mı?
+
+98
+00:20:12,243 --> 00:20:36,423
+carry flag de bir oluyor. Bununla birlikte eğer ki ben, bunu da birazcık ayrı yazalım, şuraya yazalım. Eğer ki ben increment wordptr bx komutunu çalıştırırsam burada ne oluyor? Burada da 100h adresinden itibaren yerleşik olan bir word değeri. Bu word değerimiz ne bizim?
+
+99
+00:20:37,107 --> 00:20:48,107
+Aslında baktığımız zaman little ending formatında yerleştiğine göre yüksek anlamlı byte 99H, düşük anlamlı byte da ffh olan bir sayı.
+
+100
+00:20:48,107 --> 00:21:02,107
+Böyle bir 16 bitlik sayı. Elimizdeki word bu. Bunu 1 arttırıyoruz. Bunu 1 arttırdığımız zaman artı 1 eşittir. Ne olacak arkadaşlar? 9a00H değeri olacak.
+
+101
+00:21:02,324 --> 00:21:20,824
+Dolayısıyla bu işlemi çalıştırdığımız zaman şöyle bir durum oluyor. WordPay TRL olanı çalıştırdığımızda 100H içerisindeki değerimiz 00H oluyor ve 101H içerisindeki değerimiz de 9AH oluyor.
+
+102
+00:21:21,652 --> 00:21:31,652
+Word.ptr ile çalıştırırsam. Byte.ptr ile çalıştırmış olsaydım, 100H adresindeki içeriğimiz 00H olacaktı ama 101H'a dokunmayacaktı.
+
+103
+00:21:31,652 --> 00:21:38,412
+Dolayısıyla Word.ptr ve Byte.ptr kullanımının temel amacını da bu şekilde hatırlatmış olalım.
+
+104
+00:21:49,748 --> 00:21:55,268
+Dolaylı adreslemede dizi erişiminde kullanılabileceğini söylemiştik.
+
+105
+00:21:56,208 --> 00:22:00,328
+Base yazmacıyla index yazmaçları kullanılabileceğini söylemiştik.
+
+106
+00:22:00,428 --> 00:22:07,388
+Base yazmacıyla bir offset değeri kullanılabileceğini hatta base artı index artı offset değeri kullanılabileceğini söylemiştik.
+
+107
+00:22:07,388 --> 00:22:10,388
+Bu haliyle arkadaşlar adresleme modlarını...
+
+108
+00:22:10,655 --> 00:22:20,755
+Tamamlamış oluyoruz. Tekrar etmiş olduk daha doğrusu. Şimdi özellikle yeni başladığımız konu 8086'nın uç tanımları.
+
+109
+00:22:20,755 --> 00:22:32,775
+8086'nın uç tanımlarıyla ilgili olarak arkadaşlar özellikle aklımızda kalması gereken noktalardan bir tanesi 8086'ya ilişkin olarak iki ayrı erişim modumuz var arkadaşlar.
+
+110
+00:22:33,335 --> 00:22:38,575
+Bunlardan bir tanesi maksimum mod, diğeri ise minimum mod. Maksimum moddan kastedilen
+
+111
+00:22:38,655 --> 00:22:50,255
+8086 bir takım yardımcı, bir yardımcı mikroişlemci ile birlikte, örneğin matematik işlemcisi 8087 ile birlikte kullanılacağı zaman geçerli bir mod.
+
+112
+00:22:50,255 --> 00:22:57,295
+Bu modu gerçekleyebilmek adına, buradaki geçen hafta bahsetmiştik, minimum maksimum ucuna ne vermemiz gerekiyordu?
+
+113
+00:22:57,295 --> 00:23:01,855
+Sıfır değerini vermemiz gerekiyordu. Ama dersimiz boyunca şöyle bir işlem yapacağız.
+
+114
+00:23:01,855 --> 00:23:05,055
+Biz minimum modda çalışacağız. Yani bizim örneklerimizde hep...
+
+115
+00:23:05,299 --> 00:23:13,400
+Tek bir mikroişlemci olacak. O da 8086 mikroişlemcisi tek başına çalışıyor olacak. Dolayısıyla biz minimum modda çalışıyor olacağız.
+
+116
+00:23:13,400 --> 00:23:23,000
+Bu durumda şu isimlendirmeleri tekrar üzerinden duralım. Minimum, maksimum dediğimiz durumda bunun başka yazılış şekli ne olabilirdi? Şöyle olabilirdi bir de.
+
+117
+00:23:32,596 --> 00:23:42,596
+Maksimum üzerinde bir çizgi olabilir arkadaşlar. Tamam mı? Bu da aynı şekilde minimum ve maksimum fonksiyonlarına sahip olan bir uca karşılık geliyor.
+
+118
+00:23:42,596 --> 00:23:49,596
+Böyle bir uç isimlendirmesi gördüğümüzde herhangi birisi için geçerli bu. Bu ucun fonksiyonunu nasıl anlayacağız?
+
+119
+00:24:00,788 --> 00:24:14,988
+Eğer ki bir değerine sahipse arkadaşlar, şöyle gösterelim hatta, bu uç bir değerine sahipse minimum mod görevini yerine getirir, sıfır değerine sahipse de maksimum mod görevini yerine getiriyor olacak.
+
+120
+00:24:14,988 --> 00:24:27,788
+Dolayısıyla biz kullanmış olduğumuz ve oluşturmuş olduğumuz devrelerde bu uca bir lojik bir değerini bağlayacağız. Bunu elektriksel olarak da 5 volt bağlayarak gerçekleştiriyor olacağız.
+
+121
+00:24:28,051 --> 00:24:39,531
+Bunun dışında neler var bakalım. Adres ve data uçları var. Bu adres ve data uçlarının toplamda ne kadar olması lazım? Toplamda 16 tane adres ucu olması lazım.
+
+122
+00:24:39,531 --> 00:24:49,171
+20 tane de, pardon 16 tane data ucu olması lazım. 20 tane de adres ucu olması lazım. Fakat gördüğümüz zaman, baktığımız zaman neyi görüyoruz?
+
+123
+00:24:49,171 --> 00:24:55,571
+Adres ve data uçlarının aynı, bu fonksiyonların aynı uçlarda oluştuğunu görüyoruz.
+
+124
+00:24:56,051 --> 00:24:59,551
+ADH0 ile ifade edilen adres data 0 ucu.
+
+125
+00:24:59,776 --> 00:25:08,776
+ad15 ile ifade edilen adres data 15 ucu. Bununla birlikte adres 16 ucu, S3 isimli, status 3 bitine bağlı.
+
+126
+00:25:09,376 --> 00:25:17,196
+A17 adres ucu, status 4'e, A18 status 5'e, A19 status 6 ile birlikte fonksiyon gösteriyor.
+
+127
+00:25:17,756 --> 00:25:22,776
+Bu yapı hatırlayacak olursanız neye karşılık geliyordu? Time Multiplexing yapısına denk geliyordu.
+
+128
+00:25:24,832 --> 00:25:37,832
+Aynı fiziki uç, farklı işlem saykıllarında, yani bir komutun yürütülmesi 4 adımda gerçekleşiyor 8086'da. Bu komutun yürütülmesindeki 4 adımda farklı görevler yerine getiriyor.
+
+129
+00:25:37,832 --> 00:25:51,832
+Örneğin T1 anında adres değerini çıkartırken bu uçlar, T2 anında data değerlerini çıkartıyor olacak. Dolayısıyla burada görmüş olduğumuz AD uçları, time multiplexing olarak çalışan adres ve data uçları.
+
+130
+00:25:53,044 --> 00:26:13,664
+Dolayısıyla burada adres ve data değerlerini birbirinden ayırmamız gerekiyor. Bu ayırma işlemlerini nasıl yapacağız? Bu ayırma işlemlerini özellikle adres uçlarını ayırabilmek için kullanacağımız bir fiziki uç var arkadaşlar. Bu ucumuzun adı ale, address, latch, enable ucu. Bunun açık halinde yazalım.
+
+131
+00:26:20,468 --> 00:26:26,508
+Address, latch, enable. Address, latch, enable bu İngilizce terimin Türkçesi ne olarak geçiyor sizce?
+
+132
+00:26:26,508 --> 00:26:31,908
+Latch tutucuydu hatırlayacak olursanız. Latch'ler ve flipflop'lar vardı.
+
+133
+00:26:31,908 --> 00:26:38,988
+Flipflop durum değişimini sadece saat darbesinin yükselen veya kenar tetiklemesinde gerçekleştiriyordu daha kısası.
+
+134
+00:26:38,988 --> 00:26:45,388
+Latch'ler ise bir enable fonksiyonu gibi çalışıyordu, kontrol mantığı.
+
+135
+00:26:45,587 --> 00:26:56,587
+Eğer leçler için değeri kopyalamak veya tutmak mümkün olabiliyordu. Eğer değer tutmasını aktif yapmışsak, giriş ucundaki değer ne kadar değişirse değişsin, çıkışında...
+
+136
+00:26:57,056 --> 00:27:13,455
+En son tutmuş olduğumuz değer saklı kalıyordu. Latch mantığı da buydu. Eğer latch'i disable yaparsak da, tutma fonksiyonunu bıraktırırsak da, giriş ucundaki değer ne olursa çıkış ucunda da aynı değeri üretiyordu. Latch mantığı buydu.
+
+137
+00:27:13,455 --> 00:27:23,476
+Dolayısıyla address latch enable dediğimiz uç da arkadaşlar, AD uçlarında adres değeri olduğunu bize bildiren bir uç. O zaman ben ne yapacağım?
+
+138
+00:27:23,872 --> 00:27:49,471
+Kuracağım bir tutucu devre grubu olacak, yardımcı devre grubum olacak, biraz sonra göreceğiz. Bu devre grubunda tutma işlemini ale ucunun bir olmasıyla sağlayacağım. Demek ki bu kontrol devremde, yardımcı devremde, biraz sonra göreceğimiz devrede, tutma fonksiyonu ale ucunun bir olmasıyla sağlanacak. Dolayısıyla ale ucunu bu tutucu devrenin ucuna, girişine bağlayacağım.
+
+139
+00:27:49,807 --> 00:27:55,307
+Bu giriş kontrol ucuna bağlayacağım. Girişlerimiz de AD uçlarından oluşacak.
+
+140
+00:27:56,307 --> 00:28:02,367
+Ale ucu 1'e çıktığında bu yardımcı devrenin çıkışında hangi değerler oluşacak? Saf adres değerlerim oluşacak.
+
+141
+00:28:02,887 --> 00:28:10,728
+Dolayısıyla AD uçlarından adres değerini ayırmış ve tutmuş olacağım. Bunun nasıl yapıldığını biraz sonra devre üzerinde de göreceğiz.
+
+142
+00:28:11,468 --> 00:28:13,928
+Diğer bir yardımcı ucumuz da arkadaşlar bizim.
+
+143
+00:28:14,319 --> 00:28:35,460
+Hemen şöyle gösteriyorum. Data enable ucu arkadaşlar. Data enable ucu da AD uçlarında veri olduğunu bize gösteren bir uç. Yine AD uçlarını bütün AD uçlarından uç çoğullaması yaparak yani fiziki olarak aynı düğümden iki farklı noktaya uç tel çekerek
+
+144
+00:28:36,019 --> 00:28:51,219
+AD uçlarının aynı kopyasını tekrar başka bir tutucu devre grubuna daha aktaracağım. Bu devre grubu ise, yardımcı devre grubu ise arkadaşlar, AD uçlarından data uçlarının ayrılması için kullanılacak.
+
+145
+00:28:51,219 --> 00:28:56,219
+Ve burada da data enable dediğimiz ucun tam açık halini de yazalım şuraya.
+
+146
+00:29:02,228 --> 00:29:15,828
+Data Enable ucu. Bu Data Enable ucunda ise tekrar söyleyelim. Bakın başında bir slash var. Dolayısıyla ne zaman fonksiyon gösteriyor bu uç? Uç 0 olduğunda burada veri var anlamına geliyor.
+
+147
+00:29:15,988 --> 00:29:37,388
+Dolayısıyla AD uçlarını bağladığım ikinci bir yardımcı devre grubunda data enable ucunun sıfıra düşmesiyle data uçları ayrıştırılabilecek. Bunu nasıl yapacağım? Yardımcı devremin bir kontrolücü var, tutucu devre kontrolücü var. Oraya data enable'ı bağlayacağım. Girişlerime AD uçlarını bağlayacağım. Çıkışta ne oluşacak?
+
+148
+00:29:37,907 --> 00:29:59,907
+Eğer ki data enable ucu sıfıra düşmüş ise çıkışta da data değerleri tutulup saklanacak. Daha sonra bir kere tuttuktan sonra ne oluyordu? Latch mantığı nasıl çalışıyordu? Girişlerim ne kadar değişirse değişsin, çıkış değerim değişmiyordu. Bir kere tuttuktan sonra bu değeri, bir kere latchledikten sonra. Dolayısıyla hem adres uçlarımı, saf adres değerlerimi ve saf data değerlerimi...
+
+149
+00:30:00,000 --> 00:30:06,180
+Bu nokta değerlerimi iki ayrı yardımcı devre grubuyla tutmuş oldum. Şimdi burada çok önemli bir nokta var arkadaşlar.
+
+150
+00:30:06,708 --> 00:30:23,708
+Adres değeri mikroişlemci açısından bir giriş değeri midir, bir çıkış değeri midir? Yani mikroişlemci adres değerini dış dünyaya gönderip dış dünyadaki cihazların adres değerlerini mi belirliyor veyahut da bunları kontrol mü ediyor yoksa dış dünyadan değer mi okuyor?
+
+151
+00:30:23,708 --> 00:30:30,708
+Aynı şey data uçları içinde soruyorum. Mikroişlemci açısından data uçları giriş mi yönündedir, çıkış mı yönündedir?
+
+152
+00:30:45,971 --> 00:30:50,371
+Peki, datanın çıkış olma ihtimali yok mu?
+
+153
+00:30:56,819 --> 00:31:10,159
+Değil mi? Datanın çıkış olma ihtimali var. O zaman şöyle düşüneceğiz. Evet, data uçları iki yönlü, adres uçları sadece çıkış yönlü. O zaman ben AD uçlarından adres değerlerini ayırırken,
+
+154
+00:31:10,511 --> 00:31:36,371
+Sadece mikroişlemciden gelen AD uçlarını, AD uçlarından adres, saf adres değerlerini alıp kopyalamam yeterli. Ama data uçları için dış dünyadan mikroişlemciye doğru gelen data değerlerini de alıp AD uçlarına vermem gerekiyor. O zaman çift yönlü bir kopyalama işlemi yapmam lazım, tutuş işlemi yapmam lazım. Bunu da arkadaşlar data transmit receive ucuyla sağlıyoruz.
+
+155
+00:31:37,279 --> 00:31:46,880
+Ad uçlarından adrese ayırmış olduğum yardımcı devre ile ad uçlarından datayı ayırdığım yardımcı devrenin ufak bir farkı var.
+
+156
+00:31:46,880 --> 00:31:52,480
+Adres uçlarına ayırdığım yardımcı devrede tek yönlü olarak tutma söz konusu.
+
+157
+00:31:52,480 --> 00:31:58,880
+Data uçlarına ayırmış olduğum yardımcı devrede ise çift yönlü latch işlemi gerekiyor.
+
+158
+00:31:58,880 --> 00:32:03,880
+Dolayısıyla önce ben buna data enable kontrolünü vereceğim, bir de datanın yönünü vereceğim.
+
+159
+00:32:05,279 --> 00:32:16,779
+Yani mikroişlemcinin AD uçlarına mı kopyalamalı, yoksa AD uçlarından dış dünyadaki saf data uçlarıma mı veri kopyalamalı? Bunu da data transmit receive ucuyla yapıyoruz. DTR.
+
+160
+00:32:17,556 --> 00:32:34,235
+Yani mikroişlemci dış dünyaya veri gönderirken, DTR ucunda bir değeri oluşturuyor. Dış dünyadan veri okumak istediğinde de DTR ucunda sıfır değerini üretiyor. Bakın, şuradaki mantığın aynısı geçerli. Data, transmit, slash, receive.
+
+161
+00:32:34,483 --> 00:32:41,483
+Bu mikroişlemci dış dünyaya transmit yapmak isterken, veri göndermek isterken bu uçta lojik bir değerini oluşturuyor.
+
+162
+00:32:41,483 --> 00:32:47,483
+Dış dünyadan veri okumak istediğinde de, read işlemi yapmak istediğinde de sıfır değerini üretmiş oluyor.
+
+163
+00:32:48,143 --> 00:32:49,503
+Tamam, bu önemli bir noktaydı.
+
+164
+00:32:50,283 --> 00:32:53,483
+Yine arkadaşlar, başka bir takım kontrolüçlarımız var.
+
+165
+00:32:54,420 --> 00:33:05,099
+Yapmış olduğumuz işlem sonucunda dış dünyaya yazma yapmak istiyorsak mikroişlemci yine bir yazma kontrol ucu içerisinde sıfır değerini üretiyor.
+
+166
+00:33:05,099 --> 00:33:14,980
+Yani eğer mikroişlemci dış dünyaya bir veri gönderiyorsa bu göndermiş olduğu veri için dış çevre birimlerine bağlanmak üzere bir write işareti gönderiyor.
+
+167
+00:33:14,980 --> 00:33:22,019
+Data transmit receive ile write'ın farkı ne? Veyahut da read'in farkı ne? Read'i bir bulabilirsem. Read de buradaymış.
+
+168
+00:33:22,387 --> 00:33:32,867
+Data Transmit Receive ile write ve read komutlarının farkı ne? Read ve write komutları doğrudan dış çevre birimlerine kadar uzanan birer uç.
+
+169
+00:33:32,867 --> 00:33:40,867
+Ama Data Transmit Receive sadece data uçlarını ayırmış olduğumuz yardımcı devreye bağlanıyor, dış dünyaya aktarılmıyor.
+
+170
+00:33:40,867 --> 00:33:44,867
+O yüzden bu ikisi arasındaki farkı da söylememiz gerekiyor.
+
+171
+00:33:46,048 --> 00:34:00,048
+Bununla birlikte başka hangi uçlarımız var? İşte mikroişlemcinin fiziki olarak resetlenmesini sağlayan bir fiziki ucumuz var, reset ucu. Red ucumuz şu anlama geliyor. Mesela bilgisayarı açtınız.
+
+172
+00:34:01,460 --> 00:34:25,460
+Sistemde yardımcı devreler tarafından klok işaretleri üretilmeye başlandı. Bu klok işaretleri başta düzenli değil, stabil değil. Dolayısıyla sistemde enerji olmasına rağmen stabil klok işareti gelene kadar mikroişlemciyi çalıştırmak istemiyorsunuz. Bundan dolayı ready ucunu sıfırda tutarak mikroişlemcinin bütün klok işaretleri stabil hale gelene kadar beklemesini sağlıyorsunuz. Bu bir.
+
+173
+00:34:29,460 --> 00:34:37,780
+Okuma-yazma işlemleri bir okuma veya yazma çevriminde gerçekleşmiyor. Bu gibi yardımcı devreler için veya çevre birimleri için,
+
+174
+00:34:37,780 --> 00:34:46,159
+ready işareti sıfıra düşürülerek mikroişlemci dış çevre biriminden veri gelene kadar bekletilebiliyor. Böyle bir ready ucumuz mevcut.
+
+175
+00:34:46,880 --> 00:34:53,520
+Min-max'ı söylemiştik. Bir bus-high-enable diye ucumuz var arkadaşlar. Bus-high-enable ucunun anlamı şu.
+
+176
+00:34:53,972 --> 00:34:58,372
+Bakın, aktif 0, 1, kontrolücü, mikroişlemci burada değer üretiyor.
+
+177
+00:34:58,372 --> 00:35:01,972
+Statüsleri şimdilik geçebiliriz ama şunu da hatırlayacağız.
+
+178
+00:35:01,972 --> 00:35:09,372
+Burada çift olarak verilmiş her bir uç, time multiplexing olarak sağlanmış fiziki uçlar.
+
+179
+00:35:09,372 --> 00:35:14,572
+Dolayısıyla bunların her birisi address-lech enable ile birlikte ayrılması gereken değerler.
+
+180
+00:35:14,572 --> 00:35:19,572
+Basai enable da bu şekilde. Basai enable'ın açık halini şuraya yazalım.
+
+181
+00:35:22,931 --> 00:35:46,931
+Bus I Enable ucunun yerine getirdiği fonksiyon nedir? Bus I Enable'ın ucunun yerine getirdiği fonksiyon bizim 16 bitlik veri yolumuz olduğunu söylemiştik. Bu 16 bitlik veri yolu içerisinde eğer ki ben sadece tek adresten işlemlerle yapıyorsam, tek adresten işlemler yapıyorsam bu durumda veri yolunun yüksek anlamlı byte'ına yerleşiyor.
+
+182
+00:35:47,603 --> 00:35:56,603
+Bu gibi özel durumlar var. Bu özel durumların ne olduğunu biraz ilerleyen derslerimizde daha net bir şekilde anlatacağım ama şimdi küçük bir örnek vermek açısından söyledim.
+
+183
+00:35:56,603 --> 00:36:01,603
+Bazı özel durumlarda veri sadece veri yolunun yüksek anlamlı bayitine yerleşiyor.
+
+184
+00:36:01,603 --> 00:36:10,539
+Bazı özel durumlarda da veri sadece 8 bitlik bir işlemlerde oluyor bu. Veri sadece veri yolunun düşük anlamlı 8 bitine yerleşiyor.
+
+185
+00:36:10,708 --> 00:36:25,708
+Bu iki durumu birbirinden ayıran kontrol uçlarımız var. Eğer ki sadece veri, veri yolunun yüksek anlamlı 8 bitinde ise bu durumda bas-hyeney bulucu, bakın aktif 0, 1, 3, başında slash var. Bas-hyeney bulucunda 0 değerini mikroişlemci üretiyor.
+
+186
+00:36:25,708 --> 00:36:34,708
+Peki, eğer ki veri yolunun sadece düşük anlamlı 8 bitinde anlamlı veri varsa bunu nereden anlayacağız?
+
+187
+00:36:34,963 --> 00:36:47,304
+Bunu da arkadaşlar A0 ucundan anlayacağız. Eğer ki A0 ucu 0 ise bu durumda veri yolunun sadece düşük anlamlı 8 bitinde veri vardır. Bunu anlamış oluyoruz. Dolayısıyla şunu söyleyebiliriz arkadaşlar.
+
+188
+00:36:47,304 --> 00:36:59,804
+Mikroişlemcinin A0 adres ucu aynı zamanda şuna eşittir. Slash, slash koyamadım. Bus, low, enable'a da eşittir. Böyle de fonksiyon gösterir. Tamam mı?
+
+189
+00:37:01,619 --> 00:37:14,699
+Adı üzerinde veri yolunun, veri yolu bus, bunun yüksek anlamlı 8 bitinde bus high, anlamlı veri varsa bus high enable için burada bir sıfır değeri üretiliyor.
+
+190
+00:37:15,639 --> 00:37:28,480
+Eğer sadece veri yolunun düşük anlamlı 8 bitinde anlamlı veri varsa, yüksek anlamlı bitinde veri yoksa, bu durumda da bus low enable dediğimiz veyahut da A0 olarak fonksiyon gösteren adres 0 ucu,
+
+191
+00:37:28,947 --> 00:37:31,507
+Bu sıfır değerini almış oluyor.
+
+192
+00:37:33,307 --> 00:37:38,927
+Hocam bu A0'cu bus high enable'ın diğer bir adı mı yoksa işlemcide farklı bir uç mu?
+
+193
+00:37:38,927 --> 00:37:46,607
+Şöyle, mikroişlemcide bus high enable, şurada göstermiş olduğum bus high enable fiziki bir uç.
+
+194
+00:37:46,607 --> 00:37:47,887
+Ama
+
+195
+00:37:47,987 --> 00:38:14,027
+bus, low, enable diye bir fiziki uç gösterilmemiş bu fonksiyon olarak geçiyor. Dolayısıyla böyle bir fonksiyon adres 0 ucuyla gerçekleşiyor. Yani şuradaki AD0 ucumuz var ya, bu AD0 ucundan adres değerini ayırdıktan sonra bu artık adres 0, A0 ucu oluyor. Dolayısıyla A0 ucu bus, low, enable fonksiyonunu yerine getirmiş oluyor. Böyle bus, low, enable diye fiziki bir uç yok ama.
+
+196
+00:38:16,916 --> 00:38:32,836
+Oldu mu? Anladım hocam, teşekkürler. Tamam. Bunlar dışında hangi uçlarımız var bakalım. Bir M-I-O ucumuz var arkadaşlar. Bu uç 8086 için aslında şöyle olması lazım. Burada bir küçük hata var, onu düzeltelim.
+
+197
+00:38:34,056 --> 00:38:41,695
+I-O-M diye değil de buradaki uç 8086'da M virgül slash I-O olarak geçiyor.
+
+198
+00:38:42,739 --> 00:38:56,919
+Bu uç, yapmış olduğumuz işlem bir memory işlemi mi yoksa I.O işlemi mi bunu belirtiyor. Nasıl bakalım. Eğer ki ben, siz bana söyleyin bir tane hafıza işlemi veri komutu söyleyin.
+
+199
+00:39:03,155 --> 00:39:07,715
+Bir veri komutu, memori komutu, memoriye erişecek bir komut söyleyin bana.
+
+200
+00:39:14,516 --> 00:39:37,056
+Yani move komutu yapıyor bunu değil mi? Move ax virgül 100h dersem, bu, evet, var dediğimiz değerde bir adres değeri üreteceği için tamam bu da kabul olur. Move ax virgül 100h diye bir komut ürettik, kullandık. Bu bir memory işlemidir. Yani hafızaya erişen bir işlem.
+
+201
+00:39:37,652 --> 00:40:00,771
+Input-Output işlemi için ne kullanacağız? Onun için de in komutunu veyahut da out komutunu kullanacağız. Daha bu mikroişlemci dersinde temel bir konu. I.O işlemlerine girdiğimiz zaman bu komutları daha detaylı bir şekilde bakacağız. Mesela in ax virgül 100h komutu da bu şekilde çalışıyor. Burada bakın bu bir immediate adresleme değil bir port adresleme.
+
+202
+00:40:01,199 --> 00:40:18,199
+Aslında bu da yine 100 adresindeki port'a git demek. 100 değerini kopyalar demek değil. Bu ikisi de aynı şeyi yapıyor. İkisi de mikroişlemcinin adres uçlarında 100 değerinde bir adres değeri üretmekle sonuç buluyor.
+
+203
+00:40:30,099 --> 00:40:43,099
+Bunun aldığı değer 1. Alttaki komutu çalıştırırsam, M.I.O. ucunun aldığı değer 0 oluyor. I.O. işlemlerinde M.I.O. ucu 0, memory işlemlerinde 1 değerini alıyor. Bunun anlamı ne faydası var?
+
+204
+00:40:43,099 --> 00:40:50,099
+Bakın ne demiştik? Her iki komut da adres uçlarında 100 değerini oluşturabilir. Aynı adres değerini oluşturabilir.
+
+205
+00:40:56,128 --> 00:41:22,387
+Farklı birer cihaz olarak veya farklı adres öbeği olarak değerlendirmek istersem, adres çözümleme devresinde MOI ucunu da dahil ediyorum. Eğer ki MOI ucunu adres çözümleme devresine dahil edersem, bu durumda, benim kullanabileceğim iki tane adres aralığı oluyor. Bunlardan bir tanesi,
+
+206
+00:41:23,860 --> 00:41:44,860
+I.O cihazları için kullanabileceğim bir adres aralığı oluyor. Bir de memori cihazları için kullanabileceğim bir adres alanı oluyor. İki tane ayrı alan oluyor. Çünkü MOI'yı adres çözümlemede kullanıyorum. Aynı adres uçlarına çıksa bile bunun bir I.O işlemi mi veya I.O cihazlarına erişen bir işlem mi, memori cihazlarına erişen bir işlem mi olduğunu ayırt edebiliyorum.
+
+207
+00:41:45,268 --> 00:41:53,768
+Şimdi sorum şu olsun size, bu şekildeki bir yapı varken, memori işlemleri için erişeceğin bu hafıza kapasitesi ne kadardır?
+
+208
+00:42:02,228 --> 00:42:27,407
+Toplamda 1 MB. Çünkü benim 20 adet adres ucum var. Ben burada move ax,100h demiş olsam da, burada data segment ve 100h offset değerini birleştirerek 20 bitlik bir değer oluşturacak. Dolayısıyla ben 1 MB'lik alandaki tamamen herhangi bir alana erişme imkanına sahibim. Dolayısıyla burası 1 MB'lik bir alan. Peki size bir ipucu vererek aynı şeyi I.O. içinde soracağım.
+
+209
+00:42:27,807 --> 00:42:38,607
+in ve out komutlarında şuradaki port adresi için ben eğer 8 bite sığabiliyorsa şunu yanlış yazmışım bu 100h buraya yanlış olmuş şimdi düzeltmiş olayım.
+
+210
+00:42:39,607 --> 00:42:52,607
+in ve out komutlarından sonra port adresi olarak 8 bitlik bir değer sığıyorsa onu doğrudan verebilirim veya 8 bite sığmayan bir değer varsa bunu da dx yazmacı üzerinden port adresi olarak verebilirim.
+
+211
+00:42:52,980 --> 00:42:56,480
+İpucu bu. Buna göre, I-O uzayının genişliği nedir?
+
+212
+00:43:04,724 --> 00:43:06,724
+Tekrar ediyorum ipucunu.
+
+213
+00:43:06,724 --> 00:43:17,724
+Input output işlemlerinde port adresi eğer 8 bite sığıyorsa, instruction içerisinde bu 8 bitlik adres değerine port adresini doğrudan komut içinde verebilirim.
+
+214
+00:43:17,724 --> 00:43:26,724
+Ama eğer ki bu port adres değeri 8 bite sığmıyorsa, port adresini dx yazmacına yazıp şöyle bir komut kullanabilirim yani.
+
+215
+00:43:26,724 --> 00:43:31,724
+Mesela in ax virgül dx gibi bir komut geçerli, bu komutu kullanabilirim.
+
+216
+00:43:31,920 --> 00:43:53,856
+Bu komuta göre arkadaşlar, I.O uzayımızın genişliği nedir? Evet, [öğrenci] doğru cevap, [öğrenci] doğru cevap. 2 üzeri 16, yani 64 kilobaytlık bir alan. Çünkü DX yazmacı 16 bitlik bir yazmaç. Verebileceğim maksimum değer 16 bitle yazabileceğim en büyük değer oluyor. Dolayısıyla I.O uzayımızın genişliği de...
+
+217
+00:43:53,856 --> 00:44:09,856
+64 kilobyte olarak verilebiliyor. Bu hangi durum için geçerli? Eğer ben MIO ucunu yapmış olduğum işlem, memori işlemi, IO işlemi diye ayırt etmek için adres çözümleme devresinde kullanırsam, 2 aylı uzayım oluyor.
+
+218
+00:44:09,856 --> 00:44:16,856
+Adres çözümleme devresi neydi onu bir hatırlayalım. Belki geçen hafta konuştuk ama tekrar etmekte fayda olabilir.
+
+219
+00:44:18,996 --> 00:44:39,996
+Bu mikroişlemcinin adres ve data ve kontrol üşleri grubumuz var. Bu uç gruplarını uygun tutucular ve yardımcı devrelerle ayrıştırdığımızı ve tuttuğumuzu varsayalım. Dolayısıyla mikroişlemci ve yardımcı devrelerinden çıktı olarak artık elimizde adres, data ve kontrol üşleri var.
+
+220
+00:44:40,112 --> 00:44:48,112
+Bu uçlar, bu mikroişlemci ne kadar çevre birimiyle, ne kadar hafıza birimiyle haberleşiyorsa hepsine bağlanıyor, hepsine bağlantısı var.
+
+221
+00:44:48,112 --> 00:44:58,112
+Ve mikroişlemci bunlardan herhangi biriyle konuşmak istediğinde bununla ilgili MOVE veri veya INPUT OUTPUT komutunu çalıştırıyor.
+
+222
+00:44:59,891 --> 00:45:09,691
+Cihazların hangi adres aralıklarına yerleştiğinde mikroişlemci bildiği için cihazların aynı anda da hatta çıkmaları lazım.
+
+223
+00:45:09,691 --> 00:45:17,691
+Eğer aynı anda iki tane çevre birimi adres değerine veya data uçlarına değer çıkmaya çalışırsa bir çakışma olur.
+
+224
+00:45:17,691 --> 00:45:24,691
+Bu durumda mikroişlemcinin bildiği, belirlediği adres aralıklarında her bir cihazı enable, disable yapan bir...
+
+225
+00:45:24,884 --> 00:45:48,884
+Yardımcı devre daha gerekli. Bu yardımcı devrenin adı da adres çözümleme devresi. Adres çözümleme devresi ne yapıyor öyleyse? Mikroişlemciden çıkan adres ve data uçlarının bağlı olduğu bütün çevre birimlerinden sadece bir tanesinin aktif olmasını sağlayarak ve bu hangisine göre belirleniyor? Mikroişlemcinin vermiş olduğu adres değerine göre belirleniyor. Dolayısıyla adres çözümleme devresi şu işlemi yapıyor.
+
+226
+00:45:51,983 --> 00:46:03,583
+Sadece o cihazı aktif yapacak bir kontrol ucu işareti üretiyor. Başka bir adres aralığımız gelmişse, içeriden daha önceden bunlar içerisinde programlanmış olacak. Donanımsal olarak programlayacağız bunu.
+
+227
+00:46:03,775 --> 00:46:20,456
+Bu ikinci adres aralığından bir değer gelmişti mikroişlemci tarafından. İkinci cihazı aktif yapıyor, diğerlerini disable yapıyor. Bu durumda ne oluyor? Hatta sadece mikroişlemci ve bir tane çevre birim kalıyor ve ikisi birbiriyle konuşuyor. Bunu sağlayan bir adres çözümleme devresi oluyor yani.
+
+228
+00:46:20,916 --> 00:46:39,436
+Adres çözümleme devresi de buydu. Demek ki M.I.O. ucunu adres çözümleme devresinde kullanırsak, 64 kilobaytlık I.O. uzayıyla 1 megabaytlık bir memori uzayım 2 ayrı uzay olarak ortaya çıkıyor. Eğer ki ben M.I.O. ucunu adres çözümleme devresinde kullanmazsam ne oluyor? Ona bakalım.
+
+229
+00:46:49,460 --> 00:47:14,760
+Düşük anlamlı 64 kilobaytlık alanı sadece IO işlemleri için ayrılıyor. Geri kalan kısmı ise memory işlemleri için ayrılıyor. Burada da aynı şey geçerli. Şurası 64 kilobaytlık bir alan. Şunun tamamı da 1 megabaytlık alan. Demek ki 1 megabaytlık alandan 64 kilobaytlık bir alanı memory için.
+
+230
+00:47:14,963 --> 00:47:25,963
+Harcamak durumunda kalıyorum. Bunun avantajı ne? Bunun avantajı ne? Birinci durumun avantajı daha geniş bir adres uzayı, daha geniş bir hafıza uzayı ve IO uzayı kullanabilirim.
+
+231
+00:47:25,963 --> 00:47:32,963
+Ama bunu yapabilmek için M-IO'yu da adres çözümleme devresine katacağım. Adres çözümleme devrem biraz daha karmaşıklaşıyor.
+
+232
+00:47:33,331 --> 00:47:48,331
+Bunun avantajı ne? Adres çözümleme devresi görece daha basit ama tam adres uzayımı kullanamıyorum. Bunlar iç içe geçiyor ve bu şekilde bir adres uzayından kayıp yaşamış oluyoruz.
+
+233
+00:47:49,331 --> 00:47:52,331
+Emo'yu ucu da bu şekilde ifade edebiliriz.
+
+234
+00:48:01,043 --> 00:48:12,043
+DMA modunda, şimdi veri aktarım için modlar var. Onları dersin son haftalarına doğru kalıyor. Direct Memory Access modlarında veri aktarım yapmak gerekirse mikroişlemci...
+
+235
+00:48:13,331 --> 00:48:21,331
+Veri, adres ve kontrol uçlarını başka yardımcı devrelere devrediyor. O zaman için kullanılan iki uç bunlar.
+
+236
+00:48:21,331 --> 00:48:31,331
+Yani şöyle düşünün, mikroişlemci hattan kendini izole ediyor ve veri aktarımı için başka bir yardımcı devreyi görevlendiriyor.
+
+237
+00:48:31,331 --> 00:48:41,331
+Yardımcı devre veri aktarımını tamamladıktan sonra tekrar hatların kontrolünü mikroişlemciye devrederek işlemini tamamlamış oluyor.
+
+238
+00:48:41,331 --> 00:48:55,731
+Cloud acknowledge bu işe yarıyor. Bir başka uç grubumuz arkadaşlar, interrupt acknowledge ve interrupt request uç ikilisi. Bu iki uç arkadaşlar, dış kaynaklı kesmeler için kullanılan iki uç.
+
+239
+00:48:55,731 --> 00:49:07,731
+Şimdi mikroişlemci de biz temel olarak uzun bir süre boyunca, dersimiz boyunca polling mantığıyla kontrol yapacağız. Polling mantığı nedir? Şurada nasıl yazıldığını ifade edelim.
+
+240
+00:49:10,195 --> 00:49:15,695
+Poling mantığı. Uzun bir süre boyunca bununla ilerliyor olacağız. Poling mantığında
+
+241
+00:49:18,096 --> 00:49:26,695
+PCI gibi mi derken onu kaçırmışım. Yok, PCI gibi değil. Bu Direct Memory Access. PCI bir...
+
+242
+00:49:27,315 --> 00:49:49,315
+Veri aktarım için kullanılan ayrı bir kanal ama DMA özel bir durum, mikroişlemcinin devrede olmadığı bir durum. Normalde herhangi bir veri aktarımında eğer DMA kullanmıyorsak, Direct Memory Access kullanmıyorsak, memoriden okuduğum veri önce mesela mikroişlemciye uğramak zorunda daha sonra IO birimine aktarabiliriz.
+
+243
+00:49:49,523 --> 00:50:04,523
+Direct Memory Access kullandığımızda arada mikroişlemciyi çıkartıyorum. Hafızadan doğrudan IO birimine veri aktarması yapabiliyoruz. DMA'nın özelliği bu. Şimdi tekrar Polink mantığına dönelim. Polink mantığında arkadaşlar...
+
+244
+00:50:05,331 --> 00:50:29,371
+Aktif bekleme şeklinde çalışıyor. Örneğin, benim belirli bir yazmacın, belirli bir bitinin uygun değere gelip gelmediğini kontrol etmem gerekiyor işlemin bittiğini anlamak için. Sürekli olarak gidiyorum, ilgili memori bölgesini veya register'ı okuyorum, ilgili bitini maskeliyorum, o bitin değerine bakıyorum. İstediğim değer değil mi? Hayır. Tekrar başa dön, yazmacı veya hafıza adresini oku, bitini maskele, kontrol et.
+
+245
+00:50:29,679 --> 00:50:53,799
+Oldu mu, hayır, oldu mu, oldu mu diye dönüyorum. Bu aktif bir bekleme. İlgili bit, ilgili kontrol biti istediğim değere ulaştığında bu döngüyü kırıp gidip oradaki veriyi okuyorum. Ne yaptım burada? Polling tabanlı olarak bir veri aktarımı yaptım. Veri hazır olana kadar sürekli olarak kontrol biti üzerinden check yaptım. Veri hazır olduğunu anladıktan sonra da gidip veriyi okudum. Bu polling mantığı.
+
+246
+00:50:54,164 --> 00:51:13,164
+İkinci bir veri aktarım modu, az önce bahsetmiş olduğumuz Direct Memory Access modu. Burada mikroişlemci devrede değil, veri aktarımı ile ilgili yardımcı cihazı programlıyor ve kendini hatlardan izole ediyor. Veri aktarımı otomatik olarak cihazlar arasında gerçekleşiyor. Üçüncü bir yaklaşım ise kesme tabanlı veri aktarımı.
+
+247
+00:51:13,331 --> 00:51:23,571
+Kesme tabanlı veri aktarımında ise mikroişlemci yine bir veri okuyacak, dış dünyadan bir veri okuyacak ama dış dünyadaki cihazın şöyle bir özelliği var.
+
+248
+00:51:23,571 --> 00:51:32,691
+İşlemi bittiği zaman veya verisi hazır olduğu zaman kesme ucu üzerinden bir tetikleme yapabiliyor. Kendi kesme tetikleme ucu var yani.
+
+249
+00:51:33,108 --> 00:51:44,588
+Dolayısıyla mikroişlemci çevre birimine bu şekilde anlaştıktan sonra dönüp diğer işlerle uğraşıyor. Örneğin birtakım hesaplamalar yapması gerekiyor olabilir veya ona o sırada
+
+250
+00:51:44,735 --> 00:52:03,735
+P'nin bilmem kaçıncı basamağını hesaplattırmaya çalışıyor olabiliriz. Bu işle uğraşırken çevre birimi verisinin hazır olduğunu kesme ucu üzerinden bize aktardı. Bu aktarma işini işte arkadaşlar interrupt request ucu üzerinden yapıyor. Intr dediğimiz uç, interrupt request ucu.
+
+251
+00:52:21,811 --> 00:52:29,612
+Ara sıra şöyle bir şey oluyor. Paylaşım ekranı donuveriyor. Tekrar açacağım.
+
+252
+00:52:39,476 --> 00:52:41,476
+Saat...
+
+253
+00:52:42,875 --> 00:52:46,476
+Bir şu uçları bitirelim, ondan sonra ara veririz, olur mu?
+
+254
+00:52:54,900 --> 00:53:00,100
+Bahsetmiş olduğumuz gibi bu chat ekranı da açayım, bu da gözümün önünde dursun.
+
+255
+00:53:02,500 --> 00:53:14,500
+Evet, interrupt kesme tabanlı veri aktarımından bahsediyorduk. Dış çevre birimi verisinin hazır olduğunu bize interrupt request ucu üzerinden bildiriyor. Yani şu uç üzerinden bildiriyor.
+
+256
+00:53:15,600 --> 00:53:21,300
+Mikroişlemci o sırada herhangi bir instrakşının tam ortasında yer alıyor olabilir.
+
+257
+00:53:22,099 --> 00:53:38,739
+O ortasında yer aldığı instrakşını tamamlıyor. Daha sonra kendi program akışında mesela P'nin 100.000. basamağını hesaplamakla ilgili komutu yürütmeyip, kesme isteğiyle ilgili veya dış çevre biriminin kesme isteğiyle ilgili olarak
+
+258
+00:53:38,960 --> 00:53:48,960
+Bir görev yerine getirmek adına kesme alt programına dallanıyor. Kesme alt programında veri okuma işlemi gerçekleştirilip tekrar ana programda kalınan yere dönülüyor.
+
+259
+00:53:48,960 --> 00:53:58,960
+İşte mikroişlemcinin bu dış çevre biriminden gelen kesme isteğini onayladığını anlamak adına da Interrupt Ec-Nollage ucu kullanılıyor.
+
+260
+00:53:58,960 --> 00:54:06,960
+Yani bu iki uç üzerinden gerçekleşen bir Handshaking. Çevre birimi Interrupt Request ucu üzerinden bir istekte...
+
+261
+00:54:06,960 --> 00:54:16,960
+Bu şekilde, mikroişlemci, ben senin göndermiş olduğun kesme isteğini değerlendiriyorum demek adına da Interrupt Econology ucunda sıfır değerini üretiyor.
+
+262
+00:54:16,960 --> 00:54:23,960
+Demek ki Interrupt Econology ucu mikroişlemci açısından bir çıkış ucu iken Interrupt Request ucu bir giriş ucu.
+
+263
+00:54:33,364 --> 00:54:43,364
+IF bayrağının 1'e set edilmesi lazım. Eğer ki interrupt flag bayrağı 0 ise int R'den ne kadar kesme isteği gönderirseniz gönderin, bu bir karşılık bulamıyor.
+
+264
+00:54:43,364 --> 00:54:50,364
+Yine ikinci bir dış kesme isteğimiz de arkadaşlar NMI ucu, non-maskable interrupt ucu.
+
+265
+00:55:04,500 --> 00:55:08,900
+Non-Maskable Interrupt ucu. Bu ucun yapmış olduğu da nedir?
+
+266
+00:55:09,684 --> 00:55:21,884
+Bu herhangi bir bayrakla kontrol edilmiyor. Non-Maskable Interrupt ucu demek ki özel bir takım durumlar için kullanılması gereken bir uç. Yani yazılımsal olarak açıp kapayamadığımıza göre ne olabilir bunlar?
+
+267
+00:55:21,884 --> 00:55:33,524
+Sistemin çalışmasına ilişkin olarak kritik öneme sahip olan bir takım yardımcı devreler NME ucu üzerinde kesme isteği oluşturabilir. Örneğin,
+
+268
+00:55:33,876 --> 00:55:53,876
+Sistemde elektriksel bir dalgalanma varsa veya elektriksel seviye belirli bir an için yeterli değerlere ulaşmıyor ise, bu durumda güç kontrolü ile ilgili devre üzerinden NME ucu üzerine bir kesme isteği gönderilip veya hafızayla, memori ile ilgili, RAM'lerle ilgili de olabilir. RAM'ler hata veriyorsa olabilir.
+
+269
+00:55:54,099 --> 00:56:02,419
+Sistemin zarar görmesi, yazılımların zarar görmesini engellemek adına hızlı bir şekilde kapatma durumuna geçilebilir mesela.
+
+270
+00:56:02,419 --> 00:56:10,500
+Biz örneklerimizde NMA ucunu bu şekilde bir kritik durum için değil ama bir buton okuma için falan kullanıyor olacağız.
+
+271
+00:56:10,500 --> 00:56:13,500
+Burada tabii şu iki farkı da söylememiz lazım.
+
+272
+00:56:13,500 --> 00:56:15,500
+Interrupt request ucu...
+
+273
+00:56:15,987 --> 00:56:22,587
+seviye tetikleme olarak çalışıyor. NMI ucu ise kenar tetikleme olarak çalışıyor. Bu ne demek?
+
+274
+00:56:22,587 --> 00:56:29,788
+Int-R ucunda lojik seviye 1'de kaldığı süre boyunca tekrar kesme isteği çalıştırılabilir, tetiklenebilir.
+
+275
+00:56:29,788 --> 00:56:35,788
+NMI ucunda ise sadece yükselen kenarlarda veya düşen kenarlarda hangisi olduğunu hatırlayamadım.
+
+276
+00:56:36,083 --> 00:56:45,583
+Kenar tetikleme olarak kesme isteği oluşturulabiliyor. Bunlar dışında hangi uçlarımız var? Besleme uçlarımız var, GND, VCC uçlarımız var.
+
+277
+00:56:46,068 --> 00:57:09,468
+Ve son olarak da bir de, nerede görmüştüm onu? Bir de kulak ucumuz var. Kulak ucu da arkadaşlar, neticede bu 8086'ya baktığımız zaman senkron ardışıl devre yapıları var. Dolayısıyla bir senkron kulak işaretine ihtiyaç duyuyor. Bir de dışarıdan yardımcı bir devre vasıtasıyla üretilmiş olan bir de kulak işaretine ihtiyacımız var.
+
+278
+00:57:09,748 --> 00:57:16,387
+Dolayısıyla minimum modda 8086'nın bütün uçları üzerinden kabaca bir geçmiş olduk.
+
+279
+00:57:16,387 --> 00:57:25,427
+Şimdi kısa bir ara verelim. Daha sonrasında da saat 15.10 geçe kaldığımız yerden devam ederiz. Oldu mu?
+
+280
+00:57:25,748 --> 00:57:28,467
+Bu arada herhangi bir sorunuz varsa sorabilirsiniz.
+
+281
+00:57:28,748 --> 00:57:32,447
+İntihar ucunun ne yaptığını bir daha anlatabilir misiniz? Orayı kaçırmışım da.
+
+282
+00:57:33,387 --> 00:57:36,887
+Tabii. İntihar app eknol ucundan bahsediyoruz değil mi?
+
+283
+00:57:37,588 --> 00:57:38,588
+Evet.
+
+284
+00:57:38,588 --> 00:57:54,588
+Tamam. Şimdi kesme isteği, çevre birim bir kesme isteğinde bulunmak istediği zaman bunu intre ucuna bağlı olan fiziki olarak orada bir değer üreterek yapıyor. Yani burada lojik bir değerini dış çevre birimi üretiyor.
+
+285
+00:57:54,867 --> 00:58:04,867
+Mikroişlemci o sırada, bana kesme isteği geldi, ben mikroişlemciyim. Kesme isteği geldi ama ben o sırada 4 cycle'dan oluşan bir komut yürütmenin tam ortasındayım.
+
+286
+00:58:04,867 --> 00:58:14,867
+Bu komutu yarıda bırakmıyorum, komutu tamamlıyorum ama bir sonraki komuta geçmiyorum ve kesme isteğini ilişkin olarak alt programa dallanıyorum.
+
+287
+00:58:14,867 --> 00:58:22,867
+İşte bu aşamada ben artık kesme isteğini değerlendirmeye başladım. Dolayısıyla çevre birimine de ben senin kesme isteğini değerlendirmeye başladım.
+
+288
+00:58:22,867 --> 00:58:46,947
+Bu konuda bir geri bildirimde bulunmam lazım. Onu da interrupt acknowledge ucu üzerinden yapıyorum. Eğer bunu göndermezsem karşı taraf kesme isteğini değerlendirdiğimi bilemeyeceği için ne yapacağını bilemez. Ama ben buna acknowledge gönderirsem bir sonraki veri içinde kendini hazırlayabilir. Böyle bir kullanımı var. Yani çevre birimine bir acknowledge gönderiyor mikroişlemci. Böyle yapısı var.
+
+289
+00:58:47,168 --> 00:58:50,768
+Burası da 0 olduğunda gönderiyor değil mi sinyali?
+
+290
+00:58:50,768 --> 00:59:01,568
+Şöyle söyleyelim, mikroişlemci karşı taraftan gelen kesme isteğini değerlendirirken, interrupt, acknowledge ucunda 0 değerini üretiyor.
+
+291
+00:59:01,568 --> 00:59:09,568
+Mikroişlemci üretiyor ve bu interrupt, acknowledge ucu aktif 0 bir uç. Dolayısıyla burası fonksiyon gösterirken 0 değerini alıyor.
+
+292
+00:59:09,568 --> 00:59:11,968
+Anladım hocam, teşekkür ederim.
+
+293
+00:59:12,916 --> 00:59:20,916
+Başka sorunuz varsa yine sorabilirsiniz arkadaşlar. Yoksa saat 15.10'da devam edeceğiz.
+
+294
+01:10:26,068 --> 01:10:28,068
+Evet arkadaşlar, devam edelim.
+
+295
+01:10:44,467 --> 01:10:51,587
+Adres uçlarıyla ilgili olarak şematik üzerinden oldukça detaylı bir şekilde anlatmaya çalıştım.
+
+296
+01:10:52,627 --> 01:10:57,647
+Atladığımız ufak tefek şeyler olabilir. Onları da şurada formal tanımları üzerinden kontrol edelim.
+
+297
+01:10:57,647 --> 01:11:08,647
+Şimdi öncelikli olarak arkadaşlar ben size bu slide'ları paylaştım. Şöyle bir açıklama var. Bakın her uçtan sonra, her uçtan sonra bunun...
+
+298
+01:11:08,884 --> 01:11:30,384
+Yanında bir parantez var. Parantez içerisinde ne tür fonksiyon görevi görebileceği anlatılıyor. Ne demek bu mesela? Bu AD uçları için bakacak olursak, adres data uçları için. Bu uçlar input yönlü olarak görev alabilirmiş, output yönlü olarak görev alabilirmiş, bir de tristate buffer mantığında görev alabilirmiş.
+
+299
+01:11:36,212 --> 01:11:50,972
+Bir de bu mantıkta fonksiyon gösterebilirmiş. Trisite buffer ne demek arkadaşlar? Trisite buffer dediğimiz durumda sanki bu uçlar hattan koparılmış gibi etki gösteriyor. Nasıl? Şöyle fiziki olarak mümkün mü? Evet.
+
+300
+01:11:50,972 --> 01:12:02,452
+Fiziki olarak da yüksek empedans gösteriyorlar. Yüksek empedans göstermek ne demek? Empedans belki hatırlayacaksınızdır. Devre dersinde konusu geçiyor.
+
+301
+01:12:02,655 --> 01:12:25,876
+AC devrelerdeki direncin eş değeri, empedans da hatırlayacak olursanız, bir ucun yüksek empedans göstermesi ne demek? Bu ucun AC işaretlerde dahi çok yüksek bir direnç benzeri akıma karşı koyma etkisi göstermesi demek. Bu direncin sonsuz olması ne demek? Uç durumda hattın devreden kopartılması gibi bir etki gösteriyor.
+
+302
+01:12:27,188 --> 01:12:37,188
+ad uçları için sanki yani fonksiyona göre değişmekle birlikte örneğin veri aktarımı yapıyorken input veya output yönlü olabilir.
+
+303
+01:12:37,188 --> 01:12:41,188
+Adres uçlarının değerini aktarıyorken output yönlü olabilir.
+
+304
+01:12:41,188 --> 01:12:48,188
+Bir de bakın DMA modunda, Direct Memory Access modunda hattan koparılmış gibi etki gösteriyormuş.
+
+305
+01:12:48,188 --> 01:12:54,155
+Yani tristate buffer gibi bir fonksiyon gösterdiğini buradan anlamış oluyoruz.
+
+306
+01:12:54,452 --> 01:13:18,131
+Burada özellikle genel olarak AD uçlarının fonksiyonlarından bahsetmiştik. Bir de ek olarak bu nasıl çalıştığından bahsetmiş olduk. Input, output veya tri-state hangi tip görevleri yerine getirdiğini. Tri-state buffer örneği olarak da DMA modundaki veri aktarım durumu için bu durumu açıklamış olduk.
+
+307
+01:13:21,716 --> 01:13:34,716
+Bir sonraki gruba geçelim. Burada da adres uçlarının 0'dan 15'e kadar olan 16 tane adres ucumuz data uçlarıyla zaman çoğullamalı olarak çalışıyor.
+
+308
+01:13:34,716 --> 01:13:41,716
+16'dan 19'a kadar olan adres uçları da statüs bitleriyle birlikte zaman çoğullamalı olarak çalışıyor.
+
+309
+01:13:41,939 --> 01:13:52,739
+Bu uçlar adres ve status bitleri ya tri-state buffer gibi çalışıyor veyahut da adres ucu olarak çıkış yönlü olarak fonksiyon gösterebiliyor.
+
+310
+01:13:53,739 --> 01:13:55,739
+Status bitleri temel olarak...
+
+311
+01:13:57,427 --> 01:14:15,587
+Ekstra adres uçları gibi kullanılabiliyor. Normalde hani 1 megabaytlık alanımız var. Bunu şu iki adet adres değerini kullanarak farklı her bir segmenti, 4 farklı segmenti, 4 farklı 1 megabaytlık alana aktarmak mümkün ama bu konumuz kapsamı içerisinde değil.
+
+312
+01:14:15,587 --> 01:14:20,395
+Bir sonraki uç grupu ise...
+
+313
+01:14:21,171 --> 01:14:32,811
+Read ucu ve şöyle şey bir saniye. Read ucu. Şimdi arkadaşlar, biz bu ders boyunca tanımladığımız bütün uçları, bütün fonksiyonları
+
+314
+01:14:33,007 --> 01:14:51,708
+Aslında temel olarak aksi belirtilmediği durumlarda mikroişlemci açısından tanımlayacağız. Yani biz read ucunu gördüğümüz vakit bu mikroişlemci açısından read fonksiyonunu yerine getiren bir uç olacak. Bu uç aynı zamanda dış çevre birimlerine de okuma mı yazma mı yaptığımızı belirtmek adına bağlı.
+
+315
+01:15:01,007 --> 01:15:06,887
+Bu, mikroişlemcinin çevre biriminden okuma yapmak istediği anlamına geliyor.
+
+316
+01:15:06,887 --> 01:15:09,887
+Dolayısıyla aksi belirtilmediği sürece...
+
+317
+01:15:10,612 --> 01:15:22,612
+Buradaki uç tanımlarının hepsinin fonksiyonunu mikroişlemciye göre tanımlıyor olacağız. Zaten oradan isimleri gelmiş olacak. Bunun farkında olalım.
+
+318
+01:15:22,612 --> 01:15:28,112
+Dolayısıyla bu ucumuz ya output yönü veyahut da tristate modunda çalışıyormuş.
+
+319
+01:15:38,260 --> 01:16:04,739
+Beklemesini sağlamasını sağlayan bir uç olduğunu söylemiştik. Test ucu çok konu kapsamımızda değil, detayına bakarsınız. NME ucu, non-maskable interrupt ucu bir input ucuymuş bakın. Önemli kritik kaynaklardan kesme isteğini değerlendirmek için NME ucu kullanılıyor. Herhangi bir bayrakla maskelenip kapatılamıyor ve kenar tetikleme olarak çalışıyor.
+
+320
+01:16:05,619 --> 01:16:28,619
+Reset ucunun fiziki reset ucu olduğunu söylemiştik. Mikroişlemciyi resetleyen bir uç olduğunu söylemiştik. Burada önemli bir ek bilgi de şu. Mikroişlemci için varsayılan reset vektörü FFFF 0 20 bitlik adresi. Bunu da oluştururken arkadaşlar şöyle oluşturuyor. Bu bir fiziki...
+
+321
+01:16:30,612 --> 01:16:35,612
+kod adresi olduğu için, kod segment adresi olduğu için aslında bunu şöyle düşünebiliriz.
+
+322
+01:16:35,612 --> 01:16:37,547
+CS değerinin
+
+323
+01:16:39,283 --> 01:16:50,824
+16 bitlik FFFFH olduğu, instruction pointer'ında 0000H olduğu durum mikroişlemcinin reset vektörü olarak düşünebiliriz.
+
+324
+01:16:50,884 --> 01:17:00,023
+Yani mikroişlemci resetlendiğinde kod segmenti otomatik olarak FFFF değeri yükleniyor, instruction pointer'a da 0000 değeri yükleniyor.
+
+325
+01:17:01,716 --> 01:17:13,896
+Mikroişlemci veya günümüz bilgisayarları içinde düşündüğümüzde reset vektöründe sistemi ayağa kaldıracak ve kontrollerini yapacak BIOS ROM'larının yerleşik olması gerektiğini de anlamış oluyoruz.
+
+326
+01:17:16,476 --> 01:17:25,656
+Bir sonraki adres ucumuz minimum maksimum ucu. Bir input ucu olduğunu anlatmış olduk dolaylı olarak maksimum minimum mod seçimi yapıyor.
+
+327
+01:17:27,796 --> 01:17:46,756
+Veri yolunun yüksek anlamlı 8 bitinde anlamlı veri olduğunu gösteriyor. Yine söylemiştik, bus, low, enable bir fiziki uç olarak ayrı bir şekilde verilmemekle birlikte, A0 adres ucu, bus, low, enable, aktif 0 uç olarak fonksiyonunu yerine getiriyor.
+
+328
+01:17:47,188 --> 01:18:13,887
+m.io ucu detaylı bir şekilde açıklamaya çalışmıştım. Yapılan işlemin memory işlemi mi, I.O. işlemi mi olduğunu ayırt ediyor. Bunu ayırt ederken de bizim çalıştırdığımız komuta bakarak bunu yapıyor. Eğer ki çalıştırdığımız komut move gibi bir komutsa bu durumda bunun bir memory işlemi olduğunu anlıyor. Eğer bu bir in ve out komutuysa bunun I.O. işlemi olduğunu anlıyor. Buna göre m.io ucunda uygun değerleri üretiyor.
+
+329
+01:18:14,304 --> 01:18:28,703
+Yine right ucumuz var. Right ucu da mikroişlemci açısından tanımlı bir uç fonksiyon olarak. Eğer ki mikroişlemci dış dünyaya veri yazmak isterse, right ucunda sıfır değerini oluşturuyor. Dolayısıyla bu uç da output olarak fonksiyon gösteriyor.
+
+330
+01:18:28,703 --> 01:18:39,503
+Interrupt Econology ile ilgili olarak gelen kesme isteklerinin yürütülmekte olduğunu belirtmek adına dış çevre birimlerine bir Econology işareti.
+
+331
+01:18:39,891 --> 01:18:51,391
+Adres Latch Enable ucu, AD uçlarında veyahut da Time Multiplexing olarak kullanılan adres ve diğer uçlarda adres değerinin hazır olduğunu belirten bir kontrol ucu.
+
+332
+01:18:51,391 --> 01:19:05,891
+Ale ucunu yakalayarak yardımcı devrelerle, yardımcı latchlerle, AD uçlarından ve diğer adresle Time Multiplexing olarak verilen uçlardan adres değerlerini çekip tutabiliyorum. Bu amaçla kullanıyor ale ucu.
+
+333
+01:19:06,804 --> 01:19:13,363
+Data Transmit Receive, AD uçlarıyla ilgili yine, AD uçlarında verinin
+
+334
+01:19:13,587 --> 01:19:37,987
+verinin hangi yönde olduğunu belirten bir uç. Yani mikroişlemci dış dünyaya transmit veri mi gönderiyor yoksa dış dünyadan receive yani veri mi alıyor bunu belirten bir uç. Mikroişlemci açısından output yönlü bir uç, çıkış yönlü bir uç ve bu uç veri ayrıştırma yardımcı devrelerine bağlı. Yani AD uçlarından veriyi ayrıştırdığımız uçlara bağlı.
+
+335
+01:19:38,355 --> 01:19:44,876
+Yine AD uçlarında veri olup olmadığını data enable ucu üzerinden anlıyorduk.
+
+336
+01:19:45,475 --> 01:19:48,135
+Database enable olarak açıkladığımız bir uç.
+
+337
+01:19:48,135 --> 01:20:00,000
+Hold ve Hold acknowledge uçları da Direct Memory Access veri aktarım modunda mikroişlemcinin kendini hatlardan izole etmesini ve tekrar daha...
+
+338
+01:20:00,000 --> 01:20:10,399
+Daha sonrasında da hatları devralması için kullanılan karşılıklı istek ve ekne oluş uçları olduğunu söyleyerek uç tanımlarımızı bitirmiş oluyoruz arkadaşlar.
+
+339
+01:20:10,836 --> 01:20:18,436
+Şimdi bu noktadan itibaren 8086 ile ilgili olarak şunu söylemiştik hatırlayacak olursanız, herhangi bir mikroişlemci için de geçerliydi bu.
+
+340
+01:20:18,436 --> 01:20:28,676
+Bir mikroişlemci tek başına enerji verdiğimizde çalışır durumda değildi. Bunun çalışır hale gelebilmesi için çeşitli yardımcı devrelere ihtiyaç vardı.
+
+341
+01:20:28,676 --> 01:20:38,836
+Bunlardan bir tanesi saat darbesi üreten bir yardımcı devre. 8086 ile uyumlu bir şekilde çalışacak olan Clock Generator'ımız
+
+342
+01:20:38,836 --> 01:20:46,516
+82-84 entegresi mikroişlemci ile bağlantısı gördüğünüz şekilde yapılıyor arkadaşlar.
+
+343
+01:20:48,180 --> 01:21:10,980
+Bir tane kristal oscilatör var. Bu kristal oscilatör temel olarak biliyorsunuzdur zaten ama basınç uygulandığı zaman sabit, oldukça stabil bir frekansta titreşim veyahut da bir elektriksel çıktı üretiyor. Bu elektriksel çıktığı bu clock generator alıp kuvvetlendirip
+
+344
+01:21:11,155 --> 01:21:19,655
+Eşitleyip, thresholdlardan geçirip bir kare dalga haline getirdiği vakit artık muntazam stabil bir kare dalga elde etmiş oluyoruz.
+
+345
+01:21:19,655 --> 01:21:27,655
+Bu kare dalgayı da sistemdeki her bir işlem için hassas, gerekli olan zamanlamalar için kullanabiliyoruz.
+
+346
+01:21:27,655 --> 01:21:39,155
+Bu zamanlama yani klok işareti hem mikroişlemci için kullanılabiliyor hem de diğer çevre hafıza birimleri için gerekli klok işaretinde faydalanılabilen bir.
+
+347
+01:21:39,155 --> 01:21:53,155
+Bir saat darbesi üretece. Bununla birlikte hatırlayacak olursanız, farkında olduğunuz üzere bilgisayarlarda bir reset ucu vardı. O reset ucunda aslında bir fonksiyonunda...
+
+348
+01:21:54,068 --> 01:22:22,068
+Sistemi resetlemek olduğunu söyleyebiliriz. Resetleme işlemini de temel olarak, ben reset tuşuna bastıktan sonra, sistemin belirli bir süre boyunca hemen parmağımı çeker çekmez mikroişlemciyi aktif etmemesi lazım. Çünkü hemen anında clock darbesi veyahut da sistemdeki elektriksel seviyeler istediğim stabil durumlara bir anda ulaşmıyor. Belirli bir zaman geçmesi gerekiyor. İşte bu zaman aralığında, şurada...
+
+349
+01:22:22,068 --> 01:22:44,568
+Görmüş olduğunuz RC devresinin zaman sabitiyle sağlıyoruz. Yani ben burada tuşa bastığımda buradaki aktif sıfır res ucuna değer ancak belirli bir süre sonra ulaşıyor ki bu da sistemin elektriksel ve çeşitli dijital kontrol noktalarında stabil hale geldiği andan itibaren olacak şekilde ayarlanıyor.
+
+350
+01:22:44,979 --> 01:22:55,979
+Dolayısıyla birinci göreceğimiz yardımcı devre Clock Generator devresi olmuş oldu. Bunu kabaca bu mantıkta anlatacağız. Yine Clock Generator devresi başka nerede kullanılıyor?
+
+351
+01:22:55,979 --> 01:23:04,779
+Bir de yavaş çevre birimlerinden veri okuma amaçlı olarak mikroişlemcinin bekletilmesinde kullanılıyor.
+
+352
+01:23:04,948 --> 01:23:16,548
+Şöyle düşünün, elimizde bir sayıcı var. Bu sayıcı temel olarak önceden program, önceden belirlediğimiz bir miktarda bekleme sağlamak üzere hazırlanmış durumda.
+
+353
+01:23:16,548 --> 01:23:30,148
+Mikroişlemci çevre biriminden bir veri okuması yapmak istediğinde ve bu çevre birimi belirli bir kat mertebesinde mikroişlemciden yavaşsa, buradaki mikroişlemcide geçen örneğin kaç birim bu?
+
+354
+01:23:30,644 --> 01:23:37,644
+0, 1 toplam 4 kat daha yavaş olduğunu gösteriyor burada. 4 kat daha yavaş olan bu çevre biriminde
+
+355
+01:23:39,155 --> 01:23:46,155
+mikroişlemcinin redi ucunda sıfır değeri üreterek çevre biriminin hazır hale gelmesini bekliyor.
+
+356
+01:23:46,155 --> 01:23:55,155
+Mikroişlemci x frekansında çalışıyorsa, bu çevre birimi x bölü 4 frekansında çalışabiliyorsa, yani bundan 4 kat daha yavaş çalışabiliyorsa,
+
+357
+01:23:55,155 --> 01:24:07,155
+bu tertibat mikroişlemcinin redi ucuna sıfır değeri vererek 4x zaman boyunca mikroişlemcinin çevre biriminin hazır hale gelmesini beklemesi olarak değerlendirilebiliyor.
+
+358
+01:24:07,155 --> 01:24:28,155
+Yani ikinci bir Glock Generator'ın kullanıldığı durumda yavaş çevre birimlerinden verisinin hazırlanıp mikroişlemciye aktarılana kadar geçen sürede mikroişlemcinin beklemesini sağlamak. Bunu donanımsal olarak gerçekleştiriyor. Bu gördüğümüz birinci yardımcı devre arkadaşlar Glock Generator olarak isimlendiriliyor.
+
+359
+01:24:31,380 --> 01:24:40,140
+İkinci bir yardımcı devre grubumuz ise arkadaşlar, bus buffering ve leçing devreleri. Şimdi bus buffering'i nasıl hayal etmeliyiz?
+
+360
+01:24:40,140 --> 01:24:47,140
+Buffer dediğimiz mesele tekrarlayıcı olarak da geçiyor. Temel kullanım amacı şöyle, düşünün ki...
+
+361
+01:24:48,627 --> 01:25:06,307
+PTT'den, EDSL üzerinden internet hizmeti alıyoruz ama evimiz PTT santraline uzak. Dolayısıyla PTT santralinden evimize kadar bakır kablo gelirken arada büyüklü küçüklü çeşitli kutularla aktif bir şekilde bu sinyal kuvvetlendiriliyor.
+
+362
+01:25:06,307 --> 01:25:15,027
+Mesela ne diyelim, bizim evimize kadar, santralden gelene kadar 3 kutudan geçtiğini varsayalım bakır kabloların.
+
+363
+01:25:16,627 --> 01:25:18,627
+kutuya gelene kadar biraz
+
+364
+01:25:18,627 --> 01:25:20,768
+sönümlenmiş oluyor ama hala üzerindeki
+
+365
+01:25:20,768 --> 01:25:22,268
+anlamlı veriyi okuyabiliyorum.
+
+366
+01:25:22,688 --> 01:25:24,627
+Bu noktada veriyi tekrar kuvvetlendirip
+
+367
+01:25:25,327 --> 01:25:26,648
+orijinal haline
+
+368
+01:25:26,648 --> 01:25:28,987
+getirip tekrar iletiyorum
+
+369
+01:25:28,987 --> 01:25:30,487
+ikinci kutuya. İkinci kutuya
+
+370
+01:25:30,487 --> 01:25:31,688
+ulaştığında yine bunu
+
+371
+01:25:31,688 --> 01:25:34,547
+anlamlı bir şekilde okuyabiliyorum ama
+
+372
+01:25:34,547 --> 01:25:36,707
+biraz sönümlenmiş gene. Bu şekilde
+
+373
+01:25:36,707 --> 01:25:38,648
+kuvvetlendirerek ve tekrarlayarak
+
+374
+01:25:38,648 --> 01:25:40,787
+kuvvetlendirerek ADSL
+
+375
+01:25:40,787 --> 01:25:42,407
+modemimize kadar aktarıyoruz.
+
+376
+01:25:42,567 --> 01:25:44,627
+Bu buffering mantığı tam olarak buna ilişkili.
+
+377
+01:25:44,627 --> 01:26:06,827
+Bir örnek, şöyle düşünelim, bir örneğin right işareti ve read işareti. Bu uçlar mikroişlemciden çıkıp bütün çevre birimlerine bağlanması gerekiyor. Dolayısıyla bu uçların uygun elektriksel seviyelerini koruması lazım. Mikroişlemciye baktığımız zaman mikroişlemcinin uçlarında sağlamış olduğu gerilim ve akım değerleri kısıtlı.
+
+378
+01:26:07,380 --> 01:26:15,180
+Bu şekilde buffer devreleri ile bunların daha uzun yollar boyunca stabil bir şekilde kalması sağlanabiliyor.
+
+379
+01:26:15,180 --> 01:26:17,180
+Leçin ne? Tutucu.
+
+380
+01:26:17,180 --> 01:26:22,180
+Tutucular ise şu amaçla kullanılıyor.
+
+381
+01:26:22,180 --> 01:26:25,180
+Zaman çoğullamalı olarak...
+
+382
+01:26:26,195 --> 01:26:37,635
+Mevcut olan bir takım fiziki uçlarımız vardı. Bu uçlarda belirli bir komutun yürültüldüğü T1 anında adres değeri varken T2 anında data değeri oluyordu, veri değeri oluyordu.
+
+383
+01:26:37,635 --> 01:26:51,635
+İşte bu uçlarda değişken olarak mevcut olan değerler aslında komut yürütüldüğü süreç 4 clock cycle boyunca da sistemde sağlanmalı ve korunmalı ki bu komut...
+
+384
+01:26:52,000 --> 01:27:18,960
+Başarılı bir şekilde yürütülebilsen. Dolayısıyla T1 anında adres değerleri bir latch devresinde geçirilerek, tutularak bütün sistemin çalışması süresi boyunca, yani o komutun çalışma süresi boyunca sisteme bu adres değerleri sağlanabilir. Yine benzer şekilde data değerleri de üretildiği anda, 4 clock cycle boyunca komut yürütülüyordu. Bunun T2 anında data değerleri mikroişlemci tarafından üretildi, sisteme verilecek.
+
+385
+01:27:20,000 --> 01:27:23,779
+Yanında da data değerleri bir leç tarafından tutularak
+
+386
+01:27:24,115 --> 01:27:40,115
+Artık AD uçları ne kadar değişirse değişsin, datayı ve adresi ayırdım ve tuttum. Artık bu değerleri sisteme sağlayabilmem mümkün. Bu uçları sisteme sağlıyorum. Ne kadar süre boyunca? Komut yürütülmesi bitene kadar.
+
+387
+01:27:51,359 --> 01:27:57,119
+Komut yürütüldüğü süre boyunca sisteme sağlanması ve stabil bir şekilde sunulması gerekiyor.
+
+388
+01:27:57,119 --> 01:28:08,220
+Dolayısıyla bu işlerden dolayı arkadaşlar, bufferlama ve leçleme yardımcı devrelerine ihtiyacımız var.
+
+389
+01:28:08,659 --> 01:28:32,659
+Şimdi burada kullanacağımız üç çeşit, karşılaşacağımız üç çeşit entegre var. Onlardan bahsedeceğiz. Bunlardan bir tanesi 373. Bu sadece bir leç olarak çalışıyor. 245 transceiver, bir de 244 entegresi var. Bunlar üzerinde nasıl çalıştıklarını inceliyor olacağız.
+
+390
+01:28:34,688 --> 01:28:51,188
+Ve son olarak da mikroişlemcide yolların tekrarlanıp tutulduğu bir tasarım şeklini görüyor olacağız arkadaşlar. Bu yapıda bizim nihai hedefimiz olmuş olacak. Tekrar entegrelerimize gelelim.
+
+391
+01:28:51,188 --> 01:29:01,988
+Birinci entegremiz arkadaşlar, 74373 entegresi. İsmi ne? Octal-Ledge. Yani 8'li bir Ledge.
+
+392
+01:29:02,131 --> 01:29:17,131
+8 bit girişi var ve tutucu olarak görev gösteriyor. Çalışma mantığı bir fonksiyon tablosuyla verilmiş durumda. Bir de bunun size fonksiyonel bir tablosunu çizmeye çalışayım veya şemasını çizmeye çalışayım.
+
+393
+01:29:19,131 --> 01:29:21,003
+Fonksiyonel şemada ise
+
+394
+01:29:25,332 --> 01:29:27,332
+Kabaca kastettiğimiz şu.
+
+395
+01:29:27,332 --> 01:29:29,332
+İmput uçlarımız var.
+
+396
+01:29:33,555 --> 01:29:35,467
+Outputlarımız var.
+
+397
+01:29:38,612 --> 01:29:52,612
+Bir tane output enable, bir tane de latch enable ucumuz var. Fakat output enable ucumuz aktif 0.1 uç.
+
+398
+01:29:55,212 --> 01:30:03,612
+Bu şekilde şematik yapısını gösterebiliriz. Bunlar bizim inputlarımız. Burası output enable ucumuz.
+
+399
+01:30:04,404 --> 01:30:16,404
+Şurası leçeneği bulucumuz, şurası da bizim output ucumuz olacak. Güzel yazamadık. Bu da bizim output ucumuz olacak.
+
+400
+01:30:16,404 --> 01:30:21,404
+Şimdi fonksiyonel gösterimi de bu şekilde. Nasıl çalışıyor?
+
+401
+01:30:27,380 --> 01:30:47,380
+Bu devre nasıl çalışıyor? Entegre nasıl çalışıyor? Şimdi bakın öncelikli olarak arkadaşlar, eğer ki bu entegrenin output enable ucuna logic 1 verirsem, bakın bu uç neydi? Ucunda bir yuvarlak ile gösterilmiş. Hatta şunu da şöyle çizersem daha anlamlı olacak bu.
+
+402
+01:30:49,380 --> 01:30:51,212
+Rengi de mavi yapalım.
+
+403
+01:30:51,891 --> 01:31:08,992
+Output Enable'ın ucunda da bir tane bar var. Yani bunun aktif sıfır, gördüğümüz zaman aktif sıfır olduğunu anlamak için bir gösterge bu da. Eğer ki ben Output Enable ucuna lojik bir değerini bağlarsam, yani tablonun son satırından bahsediyorum.
+
+404
+01:31:09,492 --> 01:31:21,091
+Buradaki input ve latch enable ucum ne olursa olsun çıkış uçları yüksek empedans gösteriyor. Yani hattan koparılmış gibi bir etki gösteriyor. Tamam mı?
+
+405
+01:31:21,091 --> 01:31:25,056
+Eğer ki output enable ucuna logic 1 vermişsem...
+
+406
+01:31:25,055 --> 01:31:34,416
+Aslında entegre disable edilmiş durumda. Disable edilmesi de bu input uçlarıyla output uçlarının aktarımı tamamen engellenmiş durumda.
+
+407
+01:31:34,416 --> 01:31:46,055
+Inputlarla outputlar izole edilmiş. Sanki bu entegre ve ucuna bağlı, inputuna bağlı bütün değerler yüksek empedans gösteriyor ve hattan koparılmış gibi bir etkiye sahip.
+
+408
+01:31:46,055 --> 01:31:52,055
+Eğer ki ben output enable'a logic 0 verirsem, yani bu entegreyi seçersem
+
+409
+01:31:52,884 --> 01:32:11,003
+Yani şu ilk iki satır için bahsediyorum bu arada. Ve latch enable ucuna logic 1 verirsem, latch enable demek ne demek? Girişte hangi değer varsa çıkışa da bunun aynısını kopyala. Ben girişi değiştirdiğimde çıkış değerim de aynı şekilde değişiyor.
+
+410
+01:32:11,184 --> 01:32:23,503
+Ta ki ne zamana kadar? Ben latch enable ucunu sıfıra çektiğimde, şimdi latch enable ucu, logic 1'deydi, girişim neyse çıkışımda aynı şekilde değişiyordu.
+
+411
+01:32:23,503 --> 01:32:34,184
+Latch enable'ı sıfıra çektim, çektiğim andaki değer neyse o kopyalandı, outputta kaldı. Artık girişi ne kadar değiştirirsem değiştireyim, bunun output'a hiçbir etkisi yok.
+
+412
+01:32:37,235 --> 01:32:49,835
+Adres uçlarının ayrıştırılmasında kullanabiliriz. Değil mi? Mantık olarak. Çünkü AD uçlarında data olduğu durumda ben adres uçları olduğunda bunu ayırt edebilirim.
+
+413
+01:32:49,835 --> 01:32:54,115
+Şimdi şu ana kadar gördüklerimizle arkadaşlar, o zaman size sorum şu.
+
+414
+01:32:57,971 --> 01:33:15,971
+Adres değerlerini saf bir şekilde ayrıştırıp tutabilmek amacıyla burada input, output enable, latch enable ve bu giriş değerlerine hangi 8086 uçlarını bağlamalıyım, çıkışta elde ettiğim değer de ne olur? Söyleyebilir misiniz?
+
+415
+01:33:20,115 --> 01:33:21,899
+input'a ne bağlayacağız?
+
+416
+01:33:37,652 --> 01:33:38,771
+Tekrar soruyorum.
+
+417
+01:33:40,532 --> 01:33:48,452
+Şimdi burada görmüş olduğunuz yardımcı devre, Octal-Latch, 8-bitlik bir tutucu.
+
+418
+01:33:48,452 --> 01:33:52,532
+Fonksiyon tablosunu da anlattım. Şurada fonksiyonel çizimini de gösterdim.
+
+419
+01:33:53,172 --> 01:34:01,132
+Eğer ben bu entegreyi seçmezsem, bunun uçları yüksek empedans gösteriyor ve hattan koparılmış gibi bir etkiye sahip.
+
+420
+01:34:01,891 --> 01:34:05,011
+Eğer ben entegreyi seçersem, leçeneği bul...
+
+421
+01:34:05,811 --> 01:34:15,811
+Output Enable ucuna 0 verirsem ve Let's Enable ucuna da 1 verirsem, girişlerde ne varsa çıkışta da aynı değer oluyor. Tamam mı?
+
+422
+01:34:15,811 --> 01:34:24,811
+Bu noktada eğer ki ben herhangi bir anda Let's Enable ucunu 0'a çekersem, çektiğim andaki input değerleri output'a kopyalanıyor ve tutuluyor burada.
+
+423
+01:34:24,811 --> 01:34:31,811
+Artık ben Let's Enable 0 olduğu için girişi ne kadar değiştirirsem değiştireyim, burada outputta oluşan değerler değişmiyor.
+
+424
+01:34:32,500 --> 01:34:56,340
+Çalışma mantığı bu. Buna göre bu 373 entegresini kullanarak ben AD uçlarından adres uçlarını ayrıştırmak istediğim için veyahut da adres uçlarını ayrıştırmak durumunda bu entegrenin, 373 entegresinin kontrol uçlarına neler bağlamalıyım? Sorumuz bu.
+
+425
+01:34:58,899 --> 01:35:04,019
+Adres uçlarını ayrıştırmak istiyorum. Dolayısıyla bu entegrenin uçlarına neler bağlamalıyız?
+
+426
+01:35:04,539 --> 01:35:09,139
+Evet, zaten input uçlarına AD uçlarını bağlayacağız. Bu kesin garanti.
+
+427
+01:35:10,159 --> 01:35:11,699
+Daha sonrasında
+
+428
+01:35:14,519 --> 01:35:17,579
+Ale ucunu, mikroişlemcinin Ale ucunu
+
+429
+01:35:18,859 --> 01:35:19,899
+Doğru
+
+430
+01:35:21,679 --> 01:35:24,759
+Lech Enable'a bağladık. Output Enable'a ne bağlayacağız?
+
+431
+01:35:31,828 --> 01:35:33,828
+Output Enable'a ne bağlayacağız?
+
+432
+01:35:39,859 --> 01:35:53,659
+Bu sürekli olarak aktif olsun. Ben buraya logic 0 bağlayayım. Sürekli olarak bu entegre aktif olsun. Ne zamanki ale ucunda bir değerini gördüğüm, o zaman AD uçlarındaki değeri buraya kopyalasın.
+
+433
+01:35:53,659 --> 01:35:59,260
+Ale ucunun bir olduğu anda AD uçlarında hangi fonksiyonel uç değeri vardır?
+
+434
+01:36:11,539 --> 01:36:16,139
+Evet, adres değerleri vardır. Arkadaşlar, burası çok önemli. Burayı anlayabildik mi?
+
+435
+01:36:18,839 --> 01:36:20,539
+Demek ki ben bu 300...
+
+436
+01:36:21,539 --> 01:36:26,539
+Direkt aktarılıyor. Bunlar asenkron. Burada herhangi bir senkron yapı yok gördüğünüz gibi.
+
+437
+01:36:26,839 --> 01:36:33,139
+Herhangi bir uç değiştiğinde anında kombinasyonel devre direkt çıkışta değer üretiyor.
+
+438
+01:36:34,515 --> 01:36:41,755
+Herhangi bir senkron yapı yok bunda. Direkt kombinasyonel devre olduğu için herhangi bir uç değiştiğinde anında karşılığını görüyoruz.
+
+439
+01:36:43,755 --> 01:36:46,255
+Tamam mı? Burada bir clock işareti yok yani.
+
+440
+01:36:48,076 --> 01:36:50,076
+Dolayısıyla arkadaşlar bu önemli.
+
+441
+01:36:50,076 --> 01:36:54,675
+Demek ki ben 373 entegresini kullanarak AD uçlarından
+
+442
+01:36:54,768 --> 01:37:07,268
+Ale ucu 1 olduğunda zaten AD uçlarında adres değeri olduğunu anlıyordum. Bunu da donanımsal bir 373'den faydalanarak donanımsal bir yapıyla adres uçlarını ayırdım ve tuttum.
+
+443
+01:37:08,768 --> 01:37:16,268
+Ale ucu 1'e çıkıyor ve daha sonra tekrar 0'a düştü. Bakın nasıl çalışıyor sistem. Onu da çizelim.
+
+444
+01:37:19,347 --> 01:37:34,347
+Ale ucu normalde 0'da geziyor. AD uçlarında adres değeri oluştuğunda logic 1'e çıkıyor, belirli bir süre logic 1'de kalıyor, daha sonra tekrar 0'a düşüyor. Bu ale ucunun dalga şekli.
+
+445
+01:37:34,347 --> 01:37:46,347
+Şurada AD uçlarında adres değeri üretiliyor. Dolayısıyla şu noktadan itibaren
+
+446
+01:37:46,640 --> 01:37:56,640
+Outputlarda adres değeri mevcut. Şuraya kadar adres değeri mevcut. Ale değeri sıfıra düştükten sonra, AD uçları farklılaşabilir.
+
+447
+01:37:56,640 --> 01:38:02,640
+Artık data değerini verebilir ama hiç önemli değil. Çünkü ben şu düştüğü anda adres değerini burada tutmuş oldum.
+
+448
+01:38:02,640 --> 01:38:11,640
+Ne yapıyordu bakın? Ale ucu sıfıra düştüğünde en son ki durumunu koruyordu. Bu da adres değerine karşılık gelmiş oluyor.
+
+449
+01:38:11,640 --> 01:38:12,364
+Tamam mı?
+
+450
+01:38:19,956 --> 01:38:25,275
+Bu birinci entegremiz. Bunu anladığımızı varsayıyorum. Bununla ilgili bir sorumuz var mı arkadaşlar burayla ilgili?
+
+451
+01:38:38,515 --> 01:38:57,515
+Tamam, bir sonrakine geçiyorum. İkinci entegre grubumuz arkadaşlar, bakın 245 entegresi, Octal Transceiver. Transceiver'dan neyi anlıyoruz? Hangi iki kelimenin birleşimi bu? Transmit ve Receive kelimelerin birleşimi. Demek ki bu...
+
+452
+01:38:57,971 --> 01:39:06,411
+almak ve göndermek için, veri alma ve gönderme ile ilişkili olarak bir entegre. 8 bitlik, oktal olduğu için 8 bitlik bir entegre.
+
+453
+01:39:06,411 --> 01:39:09,231
+Yine bunun bir fonksiyonel yapısını çizelim.
+
+454
+01:39:17,619 --> 01:39:22,380
+Bu entegreye ilişkin olarak A ve B yolları var.
+
+455
+01:39:23,819 --> 01:39:26,380
+Tabii bunu şöyle yaparsak daha iyi olacak.
+
+456
+01:39:33,011 --> 01:40:00,391
+İkinci olarak bir enable ucumuz var. Aktif 0, 1, 3. Biraz sonra çizeceğim onu. Bir de direction kontrolümüz var. Aktif 0, 1, 3. Olduğu için aslında bunun ucunda bir yuvarlak var gösterim olarak. Devre şemasında eğer bir uç, fiziki uçta bir yuvarlak varsa bu onun aktif 0 olduğunu gösteriyordu. Şimdi uç tanımlarını verelim. Burası A.
+
+457
+01:40:01,876 --> 01:40:20,175
+Burası B tarafı. Bu Enable ucumuz. Yalnız üzerine bir çizgi koyacağım bunun tekrardan karışmaması için. Aktif 0, 1 uç olduğu doğrudan ucun tanımına bakarak da görülebilsin diye. Ve son olarak da bir de Direction kontrolümüz var.
+
+458
+01:40:20,692 --> 01:40:35,032
+Bu fonksiyonel uçları bu şekilde. A uçlarımız A1'den A8'e kadar tanımlanmış. 8 adet uç. B uçlarımız B1'den B8'e kadar tanımlanmış. 8 adet uç bunlar. Az öncekinde de bu şekildeydi.
+
+459
+01:40:35,632 --> 01:40:43,272
+Input tarafı 8 adet telden oluşuyordu. Output tarafı da 8 adet telden oluşuyordu. Bunu göstermek için ne yapıyoruz arkadaşlar?
+
+460
+01:40:45,272 --> 01:40:45,912
+Şöyle.
+
+461
+01:40:47,444 --> 01:40:59,444
+teller üzerine çizgi çekip, bunların 8 bitten ibaret olduğunu belirtiyoruz. Tamam mı? Bu şekilde gösterdiğimiz zaman, bunlar birer basa karşılık geliyor. 8 bitlik basa karşılık geliyor.
+
+462
+01:40:59,444 --> 01:41:11,180
+Önceki çizimde de, 373 çiziminde de, bu entegre bir input ve output açısından 8 bitlik baslara sahipti. Şimdi nasıl çalışıyormuş bakalım.
+
+463
+01:41:11,412 --> 01:41:22,812
+Eğer ki ben Entegre'yi seçmezsem, yani Enable ucuna 1 verirsem, Lojik 1 verirsem, A ve B yolları yüksek empedansla birbirinden koparılmış gibi etki gösteriyor.
+
+464
+01:41:22,812 --> 01:41:35,812
+Eğer ben bu Entegre'yi seçersem, yani bu uca Lojik 0 verirsem, bu durumda da eğer ki Direction ucuna 0 verirsem, Direction ucuna 0 verirsem, ne yapıyor bakın arkadaşlar?
+
+465
+01:41:35,812 --> 01:41:37,812
+B'yi A'ya kopyalıyor.
+
+466
+01:41:38,260 --> 01:41:58,260
+Direction ucuna 0 verirsem, şurayı okuyorum. Direction ucuna 0 verirsem, B tarafındaki değerleri A uçlarına kopyalıyor. Eğer ki Direction'a 1 verirsem, A tarafındaki uçları B tarafına kopyalamış oluyor. Bu durumda bu entegreyi ne için kullanabiliriz?
+
+467
+01:42:00,851 --> 01:42:17,171
+Az önce adres değerlerini ayırdık. Bu entegreyi veri ayırmak için kullanabiliriz. Öyleyse veri ayırmada benim kullanabileceğim uçlar data enable, data transmit receive ve AD uçlarıydı. Bunların nasıl bağlanacağına bakalım şimdi.
+
+468
+01:42:17,171 --> 01:42:26,612
+Doğal olarak AD uçları A yoluna bağlandı. Çıkış tarafında ise artık saf data uçlarım olacak. Bunu bekliyorum.
+
+469
+01:42:26,996 --> 01:42:46,155
+Direction ucuna ne bağlamamız lazım? Direction ucuna sizin de tahmin edeceğiniz üzere arkadaşlar, Data Transmit Receive ucunu bağlayacağız. Şimdi Data Transmit Receive nasıl fonksiyon gösteriyordu? Ben bu uçta bir değerini ürettiğimde mikroişlemci dış dünyaya transmit edecek.
+
+470
+01:42:46,739 --> 01:43:04,599
+Dolayısıyla bir değerini verdiğimizde, bakın nasıl çalışıyormuş bir değerini verdiğimizde, A yolunu B yoluna kopyalıyor. Dolayısıyla mikroişlemcinin AD uçlarını dış dünyadaki veyahut da çevre birimlerine bağlı olan data uçlarını aktarmış oluyor ve bir transmit işlemi gerçekleştiriyor. Doğru, güzel.
+
+471
+01:43:06,019 --> 01:43:13,899
+Peki ben bu uca sıfır değeri verirsem, demek ki mikroişlemci bir receive işlemi yapmak istiyor, dış dünyadan veri okuması yapmak istiyor. Doğru mu? Kontrol edelim.
+
+472
+01:43:14,676 --> 01:43:31,476
+Direction ucunda sıfır değeri varsa, data uçlarını, yani dış dünyada bütün çevre birimlerine bağlanmış olan data uçlarındaki değeri alıp, AD uçlarını aktarıyor. Bu da demektir ki doğrudan mikroişlemci uçlarında bu değerleri oluşturduk demek. Ve bir veri okuması yaptık anlamına geliyor.
+
+473
+01:43:31,923 --> 01:43:53,923
+Son olarak bir de data enable ucumuz vardı. Onu da arkadaşlar sizin de tahmin edeceğiniz üzere enable ucuna bağladığımız vakit bu entegre ile birlikte veri değerlerinin yani data değerlerinin saf bir şekilde üretilip tutulmasını sağlamış oluyoruz. Bu entegre de bu şekilde. Bununla ilgili sormak istediğiniz bir şey var mı?
+
+474
+01:44:04,083 --> 01:44:09,083
+Herhangi bir anda bir sorunuz olursa arkadaşlar bölerek sorabilirsiniz. Hiç sıkıntı yok.
+
+475
+01:44:09,083 --> 01:44:14,083
+Dediğim gibi şu anda da varsa sormak istediğiniz bir şey sorabilirsiniz.
+
+476
+01:44:14,083 --> 01:44:17,931
+Şimdi bir sonraki entegreye geçiyorum.
+
+477
+01:44:21,043 --> 01:44:28,043
+Bir sonraki entegremiz de arkadaşlar, Octal Buffer. Buffer dediğimiz şey veri tekrarlayıcısı.
+
+478
+01:44:29,043 --> 01:44:36,043
+Bakın, bir öncekinden veya ilk gördüğümüz leçten farkı ne? Fonksiyon olarak çizdiğim zaman daha net anlaşılacaktır.
+
+479
+01:44:36,043 --> 01:44:37,867
+Fonksiyon olarak çizelim.
+
+480
+01:44:44,307 --> 01:44:45,788
+Bu entegrenin
+
+481
+01:45:12,372 --> 01:45:14,155
+Bir tane inputu var.
+
+482
+01:45:18,068 --> 01:45:20,968
+1G isimli birinci enable ucu var.
+
+483
+01:45:22,568 --> 01:45:26,268
+Bir de 2G isimli ikinci enable ucu var.
+
+484
+01:45:26,568 --> 01:45:28,568
+Bir de çıkışları var.
+
+485
+01:45:29,468 --> 01:45:33,568
+Bunun arkadaşlar, 373 entegresinden farkı ne?
+
+486
+01:45:33,968 --> 01:45:37,268
+Bir tutma kontrolücü, latch enable ucu yok.
+
+487
+01:45:37,268 --> 01:45:44,368
+Dolayısıyla ben bu entegreyi açtığım zaman, aktif ettiğim zaman inputtaki değerlerin aynısı outputta da oluşacak.
+
+488
+01:45:44,368 --> 01:45:45,668
+Avantajı ne bunun?
+
+489
+01:45:46,068 --> 01:46:05,148
+Bunun avantajı şu, bu yardımcı devre fiziki çıkış uçlarında 8086 mikroişlemcisine göre daha yüksek miktarlarda akım ile bu uçları sürebiliyor. Dolayısıyla ben çeşitli kontrol uçlarına, bunun inputuna bağlayıp,
+
+490
+01:46:05,492 --> 01:46:21,992
+Bu entegreyi açtığım vakit, normalde mikroişlemci örneğin 200 mikroamperle veya 200 miliamperle uçlarını sürerken, bu entegreden geçtikten sonra aynı kontrolüçleri örneğin 500 miliamper'e kadar akım isteklerini karşılayabiliyor olacak.
+
+491
+01:46:21,992 --> 01:46:27,456
+Dolayısıyla bu tamamen hani santralden evimize kadar gelen EDSL hattının...
+
+492
+01:46:27,456 --> 01:46:33,656
+kuvvetlendirile kuvvetlendirile kutular arasında aktarılmasına benzer bir örnek oluşturmuş oluyor.
+
+493
+01:46:33,656 --> 01:46:40,256
+Örneğin bu entegreyi 8086'nın kontrol uçlarının tekrarlanmasında nasıl kullanabiliriz?
+
+494
+01:46:40,256 --> 01:46:45,656
+Şöyle kullanabiliriz. Buradaki kontrol uçlarına lojik sıfır değerleri bağlayarak
+
+495
+01:46:48,659 --> 01:46:53,259
+Logik sıfır değerleri bağladıktan sonra bu sürekli olarak aktif olacak anlamına gelir.
+
+496
+01:46:53,259 --> 01:47:00,259
+Örneğin buraya da gelip, read işaretini bağladığımda çıkış tarafı da yine read işareti olacak.
+
+497
+01:47:00,259 --> 01:47:11,460
+Fakat daha yüksek miktarlardaki akım değeriyle sürme imkanına sahip olmuş olacak. Böyle bir yapı söz konusu.
+
+498
+01:47:14,836 --> 01:47:22,436
+Bu buffer, bir önceki gördüğümüz transceiver, ilk gördüğümüzde latch'ti. Tamam mı? Bunları birbirinden ayıralım.
+
+499
+01:47:23,315 --> 01:47:38,315
+Şimdi gelelim bu entegreleri kullanarak mikroişlencenin, 8086 mikroişlemcisinin bütün uçlarının uygun şekilde tutulup tekrarlandığı bir örnek üzerinde ne ile karşılaşıyoruz? Bunu inceleyelim.
+
+500
+01:47:38,315 --> 01:47:49,315
+Bu devre aslında arkadaşlar burada görmüş olduğumuz yapı aslında bizim için standart bir yapı olacak ve bundan sonrası için dersimizde şunu diyeceğiz.
+
+501
+01:47:51,315 --> 01:48:00,676
+Bu işlemcinin bütün adres ve veri uçlarının uygun şekilde tutulmuş ve tekrarlanmış olduğunu varsayabilirsiniz diyeceğiz. Bu ne demek? AD uçları
+
+502
+01:48:01,087 --> 01:48:25,587
+A0'dan A19'a kadar olan uçlar hazır, mevcut, hesaplanmış, üretilmiş. Benzer şekilde AD uçları yine 245 entegrelerinden geçirilerek saf data uçları da üretilmiş ve hazırlanmış anlamına geliyor.
+
+503
+01:48:25,811 --> 01:48:52,211
+Bütün çevre birimlerine bağlanacak olan çeşitli kontrol uçlarımız var. Bunların da yine daha yüksek sürüş akım kabiliyetleriyle birlikte sistemde hazır olduğu anlamına gelecek. Dolayısıyla biz bundan sonraki bu konuyu geçtikten sonra ders boyunca kullanacağımız tanımlama uygun şekilde adres, data ve kontrol uçlarının tutulmuş ve tekrarlanmış olduğunu varsayabilirsiniz dediğimizde data, adres ve kontrol uçlarının tutulmuş ve tekrarlanmış olduğunu varsayabilirsiniz dediğimizde.
+
+504
+01:48:53,811 --> 01:48:57,811
+Bu kontrol işleri için bu yardımcı devre çıktıları hazır anlamına geliyor.
+
+505
+01:48:57,811 --> 01:49:09,851
+Dolayısıyla bu yapıda, görmüş olduğunuz yapıda mikroişlemciden zaman çoğullamalı olarak kullanılan bütün uçların fonksiyonel olarak ayrıştırılması şeklinde bir sonuç üretiyor.
+
+506
+01:49:10,612 --> 01:49:12,452
+Bakın burada neler ayrıştırılmış?
+
+507
+01:49:13,051 --> 01:49:20,811
+AD uçlarından, ALE ucuyla, ALE kontrolüyle birlikte adres uçları A0'dan A15'e kadar oluşturulmuş.
+
+508
+01:49:21,712 --> 01:49:31,312
+Geri kalan A16'dan A19'a kadar olan adres uçları da bu sefer statüs bitlerinden ayrıştırılarak yine ale kontrolüyle burada üretilmiş.
+
+509
+01:49:31,792 --> 01:49:39,852
+Bus I Enable yine sistemde time multiplexing olarak verilen bir uçtu. Bu da benzer şekilde ale kontrolüyle üretilmiş durumda.
+
+510
+01:49:39,852 --> 01:49:48,952
+Bus I Enable'ı nerede kullanacağız? İlerleyen derslerde göreceğiz, adres çözümlemelerde faydalanacağız tıpkı Emoya'da olduğu gibi.
+
+511
+01:49:49,427 --> 01:50:01,828
+Read, Write ve Emoio için ne yapılmış? Bunlar da her zaman için yardımcı devre aktif olmak üzere sisteme daha yüksek akım kabiliyetiyle sağlanmış durumda uçlar.
+
+512
+01:50:01,828 --> 01:50:14,028
+Şimdi genel olarak bir mikroişlemci yapısını görelim. Bu mikroişlemcimiz Clock Generator yardımcı devremiz.
+
+513
+01:50:14,239 --> 01:50:26,000
+Latch ve transceiver'larla ayrıştırdığımız adres ve data uçları ve yine 244 entegresiyle tekrarlamış olduğumuz kontrol uçları.
+
+514
+01:50:26,127 --> 01:50:42,127
+Dolayısıyla bir mikroişlemcinin yardımcı devreleri ile birlikte kullanıldıktan sonra sahip olduğu fonksiyonel uçlar, saf adres uçları, saf kontrol uçları ve saf veri uçları. Bunları elde ettikten sonra arkadaşlar, bu uçlar
+
+515
+01:50:42,336 --> 01:50:49,516
+Bütün çevre birimlerine iletişimde kullanılıyor. Bunların hepsi çevre birimlerine iletişim için kullanılıyor.
+
+516
+01:50:50,036 --> 01:50:59,655
+Burada görmüş olduğunuz bir takım chip select uçları var veya enable uçları var. Bunların da aslında bir adres çözümleme devresinden geldiğini düşünebilirsiniz.
+
+517
+01:50:59,655 --> 01:51:08,296
+Veya biraz daha şematik bir şekilde göstermek istersek şöyle söyleyebiliriz. Burada bir adres çözümleme devremiz var.
+
+518
+01:51:08,623 --> 01:51:13,224
+Bu adres çözümleme devremize, hatta bunu şöyle bir yere alalım.
+
+519
+01:51:14,123 --> 01:51:16,824
+Bunun yerleşik olduğu yer şurası olsun.
+
+520
+01:51:17,724 --> 01:51:22,524
+Bu adres çözümleme, hatta biraz daha büyük çizelim çünkü bazı kontrol işlerini de alabilir.
+
+521
+01:51:28,851 --> 01:51:54,351
+Adres çözümleme devresi veya İngilizcesi olarak adres decoder diye de geçiyor. Elimizdeki bu lojik yapı ne yapıyor? Bakın girdi olarak adres ve bir takım input kontrol değerlerini alarak bunlara karşılık ne üretiyor? Bir takım chip select değerleri üretiyor. Mesela birinci devre için bir chip select, ikinci devre için bir chip select.
+
+522
+01:51:54,623 --> 01:52:09,864
+Üçüncü devre için bir chip select üretiyor ve öyle bir çıktısı var ki bir seferde bunlardan sadece bir tanesinde lojik bir değer var. Diğerlerinde lojik 0 veya aktif 0 olduğu durum için tekrar etmek gerekirse sadece bir tane entegreyi seçiyor.
+
+523
+01:52:09,864 --> 01:52:21,984
+Özetçe öyle söyleyelim. Diğerleri seçilmiyor. Örneğin sadece ROM'u seçmişse bunlar yüksek empedans gösteriyor. Hem veri yolunda hem adres yolunda yüksek empedans gösteriyor.
+
+524
+01:52:22,256 --> 01:52:35,256
+Dolayısıyla sadece bir tane ROM ve mikroişlemci kontrol, adres ve veri ucu üzerinden bir seferde birbiriyle iletişim halinde kalmış oluyor.
+
+525
+01:52:35,256 --> 01:52:49,119
+Bu yapıda arkadaşlar, en genel anlamda bir mikroişlemci yapısının şematik olarak gösterimi. Bu yapı enerji verdiğimizde fonksiyon gösterebilecek bir yapı.
+
+526
+01:52:49,119 --> 01:53:07,119
+Dolayısıyla bir mikroişlemcinin fonksiyon gösterebilmesi için saat darbesi üreteci, birtakım yardımcı buffer ve latch devreleri, çevre birimleri olarak input output cihazları, ROM ve RAM'e ihtiyacı var. Buradan bunu da görmüş oluyoruz.
+
+527
+01:53:16,692 --> 01:53:43,231
+Yol zamanlamalarından bahsedelim. Örneğin, bir okuma işlemi yapıyorsa mikroişlemci, yani dış dünyadan bir veriyi okuyup kendi içerisindeki yazmacını okuyacak. Yani memoriden veri okurken ne yapıyor? İşlemler 4 clock cycle'da gerçekleşiyor. Bu 4 clock cycle boyunca az önce üretmiş olduğumuz saf adres değerleri bütün bu çalışma süresi boyunca adres uçlarında mutlaka bulunması lazım.
+
+528
+01:53:45,011 --> 01:53:52,931
+Bunun bir kısmı adres data uçlarından geliyor, bir kısmı ise adres status bitlerinden zaman çoğullamalı olarak geliyor.
+
+529
+01:53:52,931 --> 01:53:59,411
+Ama adres uçlarına baktığımız zaman, yani şuraya baktığımız zaman, şuradaki adres değerlerimiz,
+
+530
+01:54:00,771 --> 01:54:09,331
+bütün işlem yürütüldüğü süre boyunca, komut yürütüldüğü süre boyunca adres uçlarında valid değerin hazır olması gerekiyor.
+
+531
+01:54:09,684 --> 01:54:27,684
+Peki adres data AD uçlarımız nasıl çalışıyor? Öncelikli olarak adres değerlerimiz hatta çıkıyor. AD uçlarında adres değerleri hatta çıkıyor ve bu anda da ale ucunda bir değeri üretiliyor. Bu durumda ne olmuş oldu? A uçlarında saf adres uçlarımız kullanılmış oldu.
+
+532
+01:54:27,796 --> 01:54:36,195
+Bir sonraki Clock Cycle'da ise artık AD uçlarından veri, data değerleri çıkartılıyor.
+
+533
+01:54:36,195 --> 01:54:42,796
+Data değerleri çıkartılmakla birlikte Data Enable ucunda 0 ve Data Transmit Receive ucunda da 0 değeri üretiliyor.
+
+534
+01:54:42,895 --> 01:54:52,115
+Bu ne demek? Dış dünyadan veri okuyacak. Dolayısıyla şurada data uçlarında dış çevre biriminin hazırlamış olduğu veri AD uçlarına aktarılmış oluyor.
+
+535
+01:54:52,715 --> 01:54:55,796
+İşte bu süreç içerisinde read ucuda 0'a...
+
+536
+01:54:55,796 --> 01:55:08,836
+İndiği anda okuma işlemi şu T3 düşen kenarda oluyor. Şu noktada dış dünyadan gelen veri mikroişlemci içerisinde okunmuş oluyor.
+
+537
+01:55:09,587 --> 01:55:23,987
+Bu basitleştirilmiş bir okuma cycle. Bunun karmaşık hali gördüğünüz zaman çizelgesinde mevcut. Örneğin, AD uçlarında veri hazırken, ALE ucunun birde hazır olması lazım. Gördüğünüz gibi bire çıkmış.
+
+538
+01:55:23,987 --> 01:55:35,787
+Veya data transmit ve receive uçlarının belirli zamanlarda uygun değerleri alması gerekiyor gibi tam bir zaman diagramı da mevcut. İsterseniz bunu da inceleyin ama ben çok üzerinde durmayacağım şimdi.
+
+539
+01:55:36,115 --> 01:55:54,415
+Benzer bir yapıyı arkadaşlar okuma saykılı için de tanımlayabiliriz. Benzer şekilde mikroişlemciden önce adres değeri AD uçlarında oluşturuluyor. Daha sonra hemen T2 anında mikroişlemcinin dış dünyaya göndermek istediği data değeri AD uçlarında oluşturuluyor.
+
+540
+01:55:54,415 --> 01:56:02,415
+Tabi T1 anında ale ucu, adres değerlerinin çıkmasıyla ale ucu da bire çıktığı için artık şu yukarı çıkayım.
+
+541
+01:56:02,560 --> 01:56:07,960
+Adres uçlarımızda valid adres değerlerini tutmuş olduk. Tekrar geri döndüm.
+
+542
+01:56:07,960 --> 01:56:14,160
+AD uçlarına daha sonra data değerine çıktık ve bununla eşanlı olarak da şuraya geldim.
+
+543
+01:56:14,387 --> 01:56:39,387
+AD uçlarında ikinci adımda data değerlerine çıktım ve eş anlı olarak data enable ucunda 0, data transmit receive ucunda da 1 değerini ürettim. Bu ne anlama geliyor? AD uçlarındaki o anki fonksiyonel değerler data değerleri. Bunları saf data uçlarına çıkmış olduk. Bu uçlar da dışarıda bir çevre birimine bağlı, doğrudan ona bağlı olduğu için onun data uçlarına bu veriyi ulaştırmış olduk.
+
+544
+01:56:42,323 --> 01:57:07,543
+Dış çevre birimine bir de right işaretini göndermemiz lazım. Bu right işaretinin gönderilmesiyle birlikte T3'ün yükselen kenarıyla olacak burada da yükselen kenarıyla birlikte veri okumasını gerçekleştirmiş oluyoruz. Aynı şey yanlış söylemiş olmayayım. Read cycle'ında da yükselen kenarda olacak. Tamam ikisini de bu şekilde düzeltmiş olalım. Hatta şuradan kontrol edelim.
+
+545
+01:57:08,275 --> 01:57:25,395
+İşlemler yükselen kenarlarda gerçekleşiyor gördüğünüz gibi. Dolayısıyla T3'ün yükselen kenarında da dış çevre birimine right işareti gitmiş oldu. Zaten dış çevre biriminin uçlarında verimiz hazır, adres değerimiz hazır.
+
+546
+01:57:25,876 --> 01:57:32,276
+Right işareti de gittiği için çevre birimi uçlarındaki veriyi alıp içerisine kopyalayıp değerlendiriyor.
+
+547
+01:57:32,276 --> 01:57:37,656
+Yine bunun da karmaşık bir dalga şeklini inceleyip görebilirsiniz arkadaşlar.
+
+548
+01:57:37,656 --> 01:57:41,496
+Şimdi bu noktada bu hafta anlatacaklarım bitmiş oluyor.
+
+549
+01:57:41,496 --> 01:57:47,372
+Buraya kadar olan konularla ilgili sormak istediğiniz bir şey var mı?
+
+550
+01:57:51,796 --> 01:58:02,996
+Şimdi arkadaşlar size bir takvim ilan edilmiştir. Herkes mutlaka piyazaya dersin piyaza grubuna kayıt yapacaktı. Bunu söylemiştim. Bunda eksiği olanlar lütfen kayıtlarını yapsınlar.
+
+551
+01:58:02,996 --> 01:58:11,996
+Şimdi bu hafta laboratuvar grubunda ikiye bölünerek dönüşümlü olarak laboratuvarlar yürütülecek.
+
+552
+01:58:16,688 --> 01:58:35,188
+Bizim gruptan toplam 120 kişi miyiz? 60 kişi lap sıfıra girecek. Önümüzdeki hafta geri kalan 60 kişi lap sıfıra girecek. Bu şekilde bir yapı söz konusu. Ben şimdi biraz sonra laboratuvar dersini de açacağım.
+
+553
+01:58:36,688 --> 01:58:42,188
+Şimdi SM'li dilini bilmeyenler için SM'li dersini alıyor musunuz?
+
+554
+01:58:43,060 --> 01:58:49,060
+Eğer SMD dersini alıyorsanız oradaki takvim burayla uyumlu gidecek. Ondan yana bir sıkıntı yok.
+
+555
+01:58:50,060 --> 01:58:52,060
+Kitap bir ay içerisinde çıkacak.
+
+556
+01:58:54,355 --> 01:59:05,955
+Tamam, SM'li diliyle ders alıyorsanız tamam, orayla uyumlu gidiyoruz. Ben de zaten ders içerisinde eksikleri veyahut da açıklamaları yaparak gideceğim. Çok sıkıntı olmaz bu durumda.
+
+557
+01:59:05,955 --> 01:59:18,555
+Bunun haricinde eğer özel durum varsa SM'li dilini almadığı halde hiç almamışken, bu dönemde almamış birileri varsa, onlar yine bildirirlerse özel bir şeyler...
+
+558
+01:59:21,268 --> 01:59:23,827
+Ders eklenmedi ama derse kayıt yaptınız mı?
+
+559
+01:59:25,867 --> 01:59:26,647
+Tamam, peki.
+
+560
+01:59:26,907 --> 01:59:28,687
+Derse devam edin mutlaka.
+
+561
+01:59:29,467 --> 01:59:32,027
+Bu durumda bir sıkıntı olmayacaktır.
+
+562
+01:59:32,787 --> 01:59:40,727
+Öyleyse şimdi arkadaşlar bu haftalık dersimizi bitirelim. Soracağınız bir şey de yok herhalde. Eğer varsa yine mail üzerinden de sorabilirsiniz.
+
+563
+01:59:43,347 --> 01:59:50,728
+Şimdi yeni çıkacak kitap arkadaşlar sadece 8086 SM'li dilini değil aynı zamanda mikroişlemciler dersini de kapsıyor.
+
+564
+01:59:50,728 --> 01:59:59,488
+Dersle yaptığımız bütün örneklere ilişkin konu kapsam dahilinde. Dolayısıyla eğer bekleyebiliyorsanız kitabı alın.
+
+565
+01:59:59,488 --> 02:00:07,608
+Dolayısıyla önceki ikinci basım 8086 SM'li dili kitabından çok farklı bir yapı. Yaklaşık...
+
+566
+02:00:07,636 --> 02:00:15,235
+İki kat hacme çıktı ve mikroişlemci dersinin konuları eklendi. Farklı bir kitap oldu yani şu anda.
+
+567
+02:00:15,235 --> 02:00:29,716
+Bu kişiler nasıl bölüştürdüler bilmiyorum. Belki ilan etmişlerdir arkadaşlar Piyaza'dan. Ben takip edemedim.
+
+568
+02:00:32,051 --> 02:00:37,051
+Bizim grubumuz 4-5 arası diyor. Herhangi bir bölünme yazmıyor.
+
+569
+02:00:37,051 --> 02:00:49,051
+Tamam, tekrar bir bakın arkadaşlar. O şöyleydi. İlk düşünülen haliyle benim gruptan 60 kişi saat 5'te, 60 kişi saat...
+
+570
+02:00:49,108 --> 02:01:02,748
+Saat 4'te girecekti. Onu sonra değiştirdiler. Benim gruptan 60 kişi saat 4'te, Hamza hocanızın grubundan 60 kişi saat 5'te girecek şekilde yarı yarıya dönüşümlü bir hale getirdiler. Bir kontrol edin oldu mu?
+
+571
+02:01:02,748 --> 02:01:06,587
+Hocam şimdi tekrar baktım ama hala öyle piyazada. Bilmiyorum.
+
+572
+02:01:06,587 --> 02:01:07,467
+Öyle mi? Tamam.
+
+573
+02:01:07,828 --> 02:01:17,484
+Peki, bir laboratuvar grubuna girelim, orada kontrol ederiz. Ben şimdi bu dersi sonlandırıyorum. Laboratuvar ders grubunda görüşmek üzere arkadaşlar.
+
+574
+02:01:21,811 --> 02:01:26,811
+Diğer derse de bağlanırsınız. Diğer dersi aktif yapacağım. Ona bağlanırsınız. Tamam.

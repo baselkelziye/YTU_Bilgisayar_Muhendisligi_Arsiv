@@ -1,0 +1,1923 @@
+1
+00:03:05,843 --> 00:03:32,483
+Merhabalar arkadaşlar. Nasılsınız? Mevcudumuz bayağı bir düşmüş. Şey gelmişti değil mi? Mail geldi. Gerek şeyden, classroom üzerinden, gerekse okul hesabından yaptığım mail geldi mi acaba? Okuldaki, yani online yıldız tr hesabından da göndermiştim. O geldi mi ayrıca?
+
+2
+00:03:38,451 --> 00:03:40,972
+Tamam, bir eksiklik yok zannedersem o konuda.
+
+3
+00:03:41,752 --> 00:03:47,591
+Şimdi birkaç dakika daha bekleyelim. Belki bağlanmada sorun yaşayanlar olabilir.
+
+4
+00:03:48,831 --> 00:03:52,171
+O yüzden onları biraz bekleyelim. Ondan sonra devam edelim.
+
+5
+00:03:53,051 --> 00:03:55,051
+Bugün zaten dersimizi sonlandıracağız.
+
+6
+00:03:55,572 --> 00:04:09,231
+Bir örnek sorumuz var, şeylerle JK, D flip-flop ile alakalı olarak. Ondan sonra saklayıcı, sayıcı ve bellekele manla ile alakalı genel bilgileri verdikten sonra dersimizi bitireceğiz arkadaşlar.
+
+7
+00:04:10,012 --> 00:04:13,711
+Birkaç dakika daha bekleyelim, 6-7 geçe gibi dersimize başlarız arkadaşlar.
+
+8
+00:05:29,235 --> 00:05:45,475
+Evet arkadaşlar, demin bir soru da sormuş arkadaşımız, ödev notları açıklandı. Ödev notları ve laboratuvar notları sene başında da açıkladığım gibi, ortaklaşı olarak bir vize notu olarak hesaplanacak onlar, %30 olarak.
+
+9
+00:05:45,475 --> 00:05:56,716
+Şimdi laboratuvar notlarıyla beraber karıştırarak gireceğiz onları. Tabii ağırlıkları değişebilir, %20 laboratuvar olabilir, %10 ödev olabilir gibi.
+
+10
+00:05:57,235 --> 00:06:07,316
+Karnaugh'ndan sonra beraberce hani ödev artı lap notlarının ağırlıklı ortalamalarını beraberce bir vize notu olarak göreceksiniz arkadaşlar.
+
+11
+00:06:08,515 --> 00:06:23,175
+Eğer sistemde geriye doğru bir kapamazlarsa onları ayrıca gireceğim. Olmadı. Final notuna aksettireceğim onları arkadaşlar. Anlaştık mı?
+
+12
+00:06:25,555 --> 00:06:36,615
+Evet, dersimize geçelim. Katılım az. Umarım sizler için de iyi olur bakalım.
+
+13
+00:06:38,815 --> 00:06:50,975
+Şimdi sorumuz şöyle bir soru olsun. Bir havuz var arkadaşlar. Bu JK, Fili, Fili, Fili, bir havuzumuz var. Havuzun yanında da bir tane atlama tahtası var şöyle.
+
+14
+00:06:52,564 --> 00:07:02,044
+Şimdi platform 3 kişi taşıyabilmekte. Platform 3 kişi taşıyabiliyor.
+
+15
+00:07:04,444 --> 00:07:09,924
+Yani bunun içerisinde 3 kişi kadar bulunabiliyor.
+
+16
+00:07:11,164 --> 00:07:17,484
+Dördüncü kişi gelirse platform şu hale geliyor.
+
+17
+00:07:18,612 --> 00:07:24,451
+Yaylı bir sistem varmış gibi herkes havuza dökülüyormuş gibi düşünebilirsiniz.
+
+18
+00:07:25,372 --> 00:07:38,711
+Dördüncü kişiyle platform, herkes havuza açılıyor gibi düşünebilirsiniz.
+
+19
+00:07:45,267 --> 00:07:54,227
+Üstündekiler düştükten sonra üsttekiler düşünce eski haline geliyor.
+
+20
+00:07:58,836 --> 00:08:01,656
+Yani şu mavi pozisyona geçmiş oluyor.
+
+21
+00:08:03,096 --> 00:08:08,375
+Şimdi burası devrenin girişi gibi düşünün.
+
+22
+00:08:08,915 --> 00:08:12,995
+People yani insanların şuradan bir merdiven var diyelim.
+
+23
+00:08:13,576 --> 00:08:15,896
+Sırasıyla gelip bu platforma çıkıyorlar.
+
+24
+00:08:16,436 --> 00:08:19,135
+Burası P girişi diye düşünebilirsiniz.
+
+25
+00:08:20,755 --> 00:08:25,355
+P sıfır ise arkadaşlar P eşittir sıfır ise
+
+26
+00:08:26,355 --> 00:08:36,816
+Platformdaki kişi sayısı değişmiyor.
+
+27
+00:08:38,675 --> 00:08:50,395
+P eşittir 1 ise platforma bir kişi daha çıkıyor.
+
+28
+00:08:57,235 --> 00:09:06,515
+Şimdi, demek ki platforma arka arkaya 3 tane 1 geldikten sonra, 1 tane daha 1 gelirse, ne oluyor?
+
+29
+00:09:06,515 --> 00:09:15,695
+Şu platform açılıyor ve havuza düşüyor kişiler. Ondan sonra tekrar eski haline geliyor.
+
+30
+00:09:16,675 --> 00:09:22,875
+Şimdi, devrenin çıkışı da arkadaşlar, devrenin çıkışı da F olsun.
+
+31
+00:09:23,892 --> 00:09:31,372
+F eşittir sıfır ise platform normal durumda.
+
+32
+00:09:33,372 --> 00:09:42,312
+F eşittir bir olduğunda ise platform düşme konumunda.
+
+33
+00:09:42,312 --> 00:09:47,332
+Düşme konum gibi düşünebilirsiniz.
+
+34
+00:09:50,004 --> 00:09:58,324
+Giriş yaptıkça P eşittir 1 oluyor ve de P 3'e ulaştıktan sonra ne oluyor?
+
+35
+00:09:58,903 --> 00:10:06,604
+F bir kişi daha gelirse F eşittir 1 oluyor ve herkes ne yapıyor? Havuza düşüyor gibi düşünebilirsiniz.
+
+36
+00:10:07,504 --> 00:10:09,903
+Buraya kadar olan problem anlaşıldı mı arkadaşlar?
+
+37
+00:10:12,052 --> 00:10:20,392
+Platformun taşıyabileceği max insan sayısı 3, 4. ile beraber, şuradaki 4. ile beraber ne yapıyor? Açılıyor.
+
+38
+00:10:21,152 --> 00:10:29,152
+Ne yapıyor? Aşağı doğru eğiliyor platform ve de herkes yerine aşağı düşüyor gibi düşünebiliriz.
+
+39
+00:10:31,511 --> 00:10:35,231
+Evet, buraya kadar anlaşıldı mı arkadaşlar?
+
+40
+00:10:37,092 --> 00:10:38,751
+Ses gelebilir, tamam.
+
+41
+00:10:39,220 --> 00:10:47,060
+Şimdi önce bu bir ne problemi? Sentez problemi değil mi? Artık devreye oluşturacağız.
+
+42
+00:10:48,420 --> 00:11:00,320
+Şimdi kaç tane durumumuz var burada bizim? Platforma giriş yapıyoruz. Önce bir kişi olabilir, iki kişi olabilir, üç kişi olabilir. Değil mi arkadaşlar? Veya hiç kimse olmayabilir.
+
+43
+00:11:01,220 --> 00:11:05,860
+Dolayısıyla platformda sıfır kişi varken, değil mi?
+
+44
+00:11:06,676 --> 00:11:15,796
+Platformda bir kişi varken, platformda iki kişi varken ve platformda dört kişi varken.
+
+45
+00:11:15,796 --> 00:11:22,395
+Bu tarz sentez problemlerinde arkadaşlar doğru sayıda stek de oluşturabilmek önemli.
+
+46
+00:11:22,816 --> 00:11:27,196
+Problemi iyi kullanmak için. Platformda sıfır kişi var, bir kişi var, iki kişi var.
+
+47
+00:11:27,936 --> 00:11:31,316
+Pardon şuraya yanlış yazdım değil mi? Hiç uyarmıyorsunuz yani.
+
+48
+00:11:32,875 --> 00:11:33,676
+Ondan sonra.
+
+49
+00:11:34,484 --> 00:11:43,423
+Şimdi platformda sıfır kişi varken şöyle diyelim okları oklar için çizeceğimizi P ve F şeklinde gösterelim.
+
+50
+00:11:44,104 --> 00:11:47,244
+Şimdi şöyle yaparsam ne manaya geliyor?
+
+51
+00:11:48,403 --> 00:11:53,624
+Herhangi biri bilmemiş P sıfırda yani platforma binen kişi yok.
+
+52
+00:11:54,624 --> 00:11:56,264
+F'de sıfırda yani.
+
+53
+00:11:56,788 --> 00:12:02,687
+F neydi? F'nin sıfır olması platformun normal durumda olduğunu gösteriyordu.
+
+54
+00:12:03,427 --> 00:12:05,528
+P, F şeklinde gösteriyoruz bunu.
+
+55
+00:12:07,028 --> 00:12:13,127
+Peki, platforma bir kişi gelirse ne oluyor? Ne diyeceğiz o zaman?
+
+56
+00:12:14,947 --> 00:12:19,468
+P'si bir, F hala sıfırdı.
+
+57
+00:12:20,468 --> 00:12:21,748
+P'şit bir.
+
+58
+00:12:22,292 --> 00:12:41,392
+P hala sıfır. Yani bir kişi gelmiş durumda. Peki burada biliyorsunuz her bir notta ne olması lazım? Hem sıfır yani girişin bütün kombinasyonları, girişte P olduğuna göre onun iki tane kombinasyonu var sıfır ve bir.
+
+59
+00:12:41,751 --> 00:12:48,392
+İki bitlik bir giriş olsaydı dört tane sıfır sıfır sıfır bir, bir sıfır ve birbirinin hepsini kullanacaktık.
+
+60
+00:12:49,683 --> 00:12:54,983
+0 gelirse arkadaşlar, yani P'si 0 olursa herhangi bir durum değişikliği olmuyor.
+
+61
+00:12:55,864 --> 00:12:57,503
+F yine 0.
+
+62
+00:12:59,283 --> 00:13:02,183
+Veya şöyle gösterelim, her seferinde yazmayalım onu.
+
+63
+00:13:02,923 --> 00:13:03,783
+5'tir 0.
+
+64
+00:13:05,183 --> 00:13:11,024
+Bir daha 1 gelirse arkadaşlar, platform yine hala normal konumunda.
+
+65
+00:13:12,343 --> 00:13:16,504
+Ve de kimse gelmezken, bulunduğumuz notla dönüyoruz zaten.
+
+66
+00:13:17,268 --> 00:13:43,528
+Şu şekilde. Bir kişi daha gelirse, platform hala normal durumunda. Üç kişi varız artık. Kimse gelmedi diyelim. Sıfır giriş var. Hala sıfır durumundayım. Burada değişik bir durum oluyor. Bir kişi daha gelirse, değil mi? Platform ne olmuş oluyor?
+
+67
+00:13:44,307 --> 00:14:00,028
+Bir, yani artık açık olup aşağı insanları düşürüyor. Bu durumda ne oluyor arkadaşlar? En başa dönüyoruz bakın. Yani platformda sıfır kişi olma durumuna dönmüş oluyoruz.
+
+68
+00:14:00,368 --> 00:14:08,927
+Ve platform da eski haline geliyor. Yani sıfır haline geliyor. Önce bu diyagramı doğru bir şekilde kurgulamamız lazım.
+
+69
+00:14:10,484 --> 00:14:16,704
+Diyelim ki bunu biz JK flip-floplarıyla gerçekleyin dediler bize.
+
+70
+00:14:16,704 --> 00:14:22,423
+Şimdi kaç tane flip-flop kullanmamız lazım? [öğrenci].
+
+71
+00:14:26,676 --> 00:14:27,936
+Hocam iki tane galiba.
+
+72
+00:14:28,556 --> 00:14:52,775
+Evet. İki flip-flop. Niye? Çünkü dört durum var. Değil mi? Dört durumdan dolayı iki tane kullanırız. Ondan sonra bakalım. Artık burada durumlarımız neler bizim? Q1 öncelikle ve Q0.
+
+73
+00:14:54,772 --> 00:15:02,912
+Q1 ve Q0. Bizim şu andaki durumlarımız, yani flip-floplarımız.
+
+74
+00:15:04,392 --> 00:15:11,192
+Aynı zamanda bir de girişimiz var bizim, giriş. Bu da ne? P girişi.
+
+75
+00:15:12,752 --> 00:15:16,951
+Dolayısıyla kaç tane durumumuz var bizim burada? Önce onu söylemek lazım.
+
+76
+00:15:17,672 --> 00:15:20,312
+0-0 durumunda olduğumuz bir durum var.
+
+77
+00:15:20,884 --> 00:15:28,964
+Yani şu ikisi neyi gösteriyor arkadaşlar? Bizim sıfır ne oldu durumumuzu gösteriyor.
+
+78
+00:15:29,663 --> 00:15:36,244
+Bunun gibi kaç tane durum olacak arkadaşlar? Toplam 4 tane durum olacak şöyle.
+
+79
+00:15:37,923 --> 00:15:46,824
+0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1 şeklinde.
+
+80
+00:15:48,244 --> 00:16:08,244
+Şurası dediğim gibi sıfır durumunu, burası bir durumunu, platformda bir olma durumunu, iki olma. Yani şu nodları aslında ben bunlara yazmış oluyorum. Şurası da bire gelmiş oluyor gibi düşünebilirsiniz. Bu da üç noğlu durumu gösteriyor. Bunun haricinde girişlerimiz neler? Şu platforma...
+
+81
+00:16:08,563 --> 00:16:23,423
+Giriş-çıkış yapma durumu. P0 ise platforma giriş yapmıyor. Sanki burada bir tane giriş kısmı var. Bir kişi girdiği zaman P1 yapıyor gibi düşünebilirsiniz.
+
+82
+00:16:25,076 --> 00:16:33,156
+Ondan sonra kimse girmedi, bir kişi girdi, kimse girmedi, bir kişi, kimse girmedi, bir kişi, kimse girmedi, bir kişi.
+
+83
+00:16:33,476 --> 00:16:39,156
+Dolayısıyla hem giriş hem de durumlardan şöyle neleri oluşturmuş olduk arkadaşlar?
+
+84
+00:16:39,156 --> 00:16:49,156
+Sıralı biçimde toplam 3 değişkenli 0-0-0'dan 1-1-1'e kadar bütün değişkenleri elde etmiş olduk.
+
+85
+00:16:49,736 --> 00:16:49,996
+Peki.
+
+86
+00:16:50,720 --> 00:17:06,079
+Bundan sonra neyi yapmamız gerekiyor? Bir sonraki durumlar. Şurası neydi arkadaşlar? Şimdiki durumlar. Bu da bir sonraki durumlar.
+
+87
+00:17:07,300 --> 00:17:10,760
+Dolayısıyla buraya neleri yazmamız lazım arkadaşlar?
+
+88
+00:17:15,635 --> 00:17:30,496
+Q0 plus yazmamız lazım. Aynı zamanda çıkışımız neydi bizim? Çıkış. Çıkış da F'ti. Öyle değil mi? Buna göre artık bir sonraki durumumuz var.
+
+89
+00:17:30,496 --> 00:17:42,475
+0-0'da durumundayım. 0 kişi gelirse ne alıyorum? Aynı state'de kalıyorum. Öyle değil mi? Yani 0-0'dayım şurada. 0 kişi gelirse 0-0'da kalıyorum.
+
+90
+00:17:43,092 --> 00:17:45,952
+Bir kişi gelirse bir sonraki duruma geçiyorum.
+
+91
+00:17:46,392 --> 00:17:46,852
+Öyle değil mi?
+
+92
+00:17:47,772 --> 00:17:49,211
+01 durumundayım.
+
+93
+00:17:49,312 --> 00:17:51,152
+Yani bir nolu durumdayım, şuradayım.
+
+94
+00:17:51,812 --> 00:17:54,112
+Kimse gelmezse aynı durumda kalıyorum.
+
+95
+00:17:54,692 --> 00:17:57,132
+Bir kişi daha gelirse iki nolu duruma giriyorum.
+
+96
+00:17:58,632 --> 00:17:59,932
+1-0 durumundayım.
+
+97
+00:18:00,472 --> 00:18:02,552
+Kimse gelmezse 1-0'da kalıyorum.
+
+98
+00:18:03,796 --> 00:18:11,115
+Bir kişi daha gelirse, bir sıfır durumuna bir kişi daha gelirse, üç noldu duruma geliyorum.
+
+99
+00:18:11,296 --> 00:18:21,135
+Üç noldu durumdayım. Kimse gelmezken bir birdeyim. Bir kişi daha gelirse, sıfır sıfır noldu duruma geri dönmüş oluyorum arkadaşlar.
+
+100
+00:18:22,355 --> 00:18:27,895
+Şimdi F'e bakalım. F sadece nerede bir oluyor arkadaşlar?
+
+101
+00:18:28,660 --> 00:18:37,580
+Şurada 1 oluyor. Onun dışında her yerde 0. Yani 3 kişi varken, 1 kişi daha gelince platform kapanıyor.
+
+102
+00:18:38,519 --> 00:18:48,660
+Şimdi ne yapmamız gerekiyordu arkadaşlar? Şu anda flip-floplarımın durumlarını, benim flip-floplar...
+
+103
+00:18:50,548 --> 00:19:08,887
+Kaç tane flip-flop kullanıyorum? İki tane flip-flopum var. JK flip-flopu bunlar. Dolayısıyla şöyle yazacağım. Bir tanesi J1, K1, öbürküsü J0, K0 şeklinde.
+
+104
+00:19:08,887 --> 00:19:16,208
+Peki, burada benim yararlanacağım, bu tabloyu doldururken yararlanacağım bıntı neydi arkadaşlar?
+
+105
+00:19:16,884 --> 00:19:27,163
+Y, büyük Y, yani Q'nun şimdiki durumu ve de bir sonraki durumunu gösteren tabloydu.
+
+106
+00:19:28,423 --> 00:19:31,884
+Bunun JK'lı haline bakıyoruz.
+
+107
+00:19:33,703 --> 00:19:40,983
+Şimdiki durumum sıfır, bir sonraki durumum sıfır, şimdiki durumum sıfır, bir sonraki durumum bir.
+
+108
+00:19:43,892 --> 00:19:49,711
+1-0 ve 1-1 şeklinde düşünelim.
+
+109
+00:19:51,012 --> 00:19:56,372
+Şimdiki durumum 0 ise, daha sonra tekrar 0'daysam ne olması gerekiyordu?
+
+110
+00:19:57,452 --> 00:20:00,012
+0, fi durumu değil mi arkadaşlar?
+
+111
+00:20:00,751 --> 00:20:02,311
+Göstermiştim derste bunu.
+
+112
+00:20:03,211 --> 00:20:05,771
+Şimdiki durumum 1'e geçmişsem şayet,
+
+113
+00:20:06,324 --> 00:20:11,604
+Muhakkak J kısmı 1 oluyordu, ikinci kısım K kısmı Fi oluyordu.
+
+114
+00:20:12,784 --> 00:20:20,284
+Fi 1 şeklinde yazıyoruz 1-0 için ve de Fi 0 yazıyorduk burada.
+
+115
+00:20:21,284 --> 00:20:22,844
+Bu uyarma tabularıydı.
+
+116
+00:20:23,043 --> 00:20:24,923
+Dolayısıyla neye bakacağız arkadaşlar?
+
+117
+00:20:25,844 --> 00:20:28,403
+Sıralı sıralı ikillilere bakmış olacağız.
+
+118
+00:20:29,844 --> 00:20:30,644
+Burada.
+
+119
+00:20:31,347 --> 00:20:35,647
+Şimdi ilk bakacağımız değer şu. Onu da şöyle göstereyim.
+
+120
+00:20:36,507 --> 00:20:47,748
+0, 0, Q1 ve Q1'in gelecekteki hali. 0, 0 için ne olması lazım? 0, fi.
+
+121
+00:20:48,915 --> 00:20:51,096
+Daha sonra tekrar bakıyoruz.
+
+122
+00:20:51,295 --> 00:20:56,655
+Q0 için ise 0 ile Q0'ın bir sonraki durumu 0, 0 için.
+
+123
+00:20:57,275 --> 00:21:00,115
+Onun için de 0, fi yazıyoruz.
+
+124
+00:21:00,195 --> 00:21:01,316
+Yine aynı yere baktığımızda.
+
+125
+00:21:01,316 --> 00:21:10,715
+Yani Y, şurası küçük Y durumu, burası ise, şurası ise büyük Y durumu olmuş oluyor.
+
+126
+00:21:12,235 --> 00:21:13,316
+Şimdi...
+
+127
+00:21:13,584 --> 00:21:30,744
+Devam edelim. Değişik bir durum var mı bakalım. 0, 0 için burası yine 0 fi. Ondan sonra 0, 1 için neye bakacağız? 0, 1 için 1 fi imiş. Aynı şekilde.
+
+128
+00:21:31,744 --> 00:21:37,204
+Sıradan soralım bakalım. Yine 0, 0 için onu göster, pardon.
+
+129
+00:21:39,284 --> 00:21:47,404
+0, 0 için, 0, 0 için. Bakın burada doğru yerlere bakmak lazım. 0, 0 için, yine 0, fi.
+
+130
+00:21:48,764 --> 00:21:57,444
+1, 1 için neye bakacağız? Bakın, 1, 1 için. Şuraya bakıyoruz. Orası da fi, 0.
+
+131
+00:22:00,324 --> 00:22:03,524
+Aynı şekilde devam edelim.
+
+132
+00:22:06,163 --> 00:22:08,864
+Evet, [öğrenci]. Şimdi ne yapacağız?
+
+133
+00:22:12,564 --> 00:22:13,584
+Random-an.
+
+134
+00:22:17,907 --> 00:22:20,007
+Yok, mikrofonunu açabilirsin.
+
+135
+00:22:21,907 --> 00:22:23,007
+1 ve fi dedi.
+
+136
+00:22:23,887 --> 00:22:26,787
+0, 1 durumu için ne olacak?
+
+137
+00:22:26,967 --> 00:22:33,267
+Dediği gibi 1 ve, pardon burayı yapıyorduk, 1 ve fi.
+
+138
+00:22:34,027 --> 00:22:35,227
+Yani şurayı yaptık.
+
+139
+00:22:36,367 --> 00:22:37,927
+Ondan sonra yine 1, 0 var.
+
+140
+00:22:38,547 --> 00:22:39,787
+1, 0.
+
+141
+00:22:40,647 --> 00:22:41,467
+Burada ne olacak?
+
+142
+00:22:43,467 --> 00:22:44,227
+[öğrenci].
+
+143
+00:22:44,948 --> 00:22:46,188
+1-0 için.
+
+144
+00:22:48,788 --> 00:22:50,248
+Fi-1 olur hocam.
+
+145
+00:22:51,028 --> 00:22:52,327
+Fi-1 olur. Doğru.
+
+146
+00:22:53,008 --> 00:22:58,948
+Bu şekilde tabloyu dolduruyoruz arkadaşlar. Gerisini hızlı bir şekilde doldurayım ben.
+
+147
+00:22:59,908 --> 00:23:03,888
+Bundan sonra ne var? 1-1-1-1-1 var. En son 1-0 var.
+
+148
+00:23:04,336 --> 00:23:12,736
+Yani, şuralar Fi0, Fi0, Fi0 ve Fi1.
+
+149
+00:23:13,736 --> 00:23:15,276
+Öbür tarafa geçiyorum.
+
+150
+00:23:16,135 --> 00:23:29,296
+Orada da 0 Fi, 1 Fi, ondan sonra Fi0, en son Fi1 olmuş oluyor.
+
+151
+00:23:29,296 --> 00:23:30,716
+Evet.
+
+152
+00:23:32,019 --> 00:23:41,539
+Buraya kadar geldik. Şimdi ne yapmamız gerekiyor arkadaşlar? Bunların tablolarını oluşturmamız gerekiyor.
+
+153
+00:23:41,539 --> 00:23:56,440
+Yani ne yapacağız? Önce J1 için oluşturacağız. J1 için oluştururken ne yapmamız gerekiyor? 3 tane değişkenimiz var. Şöyle yapalım. Şöyle değişkenimi yapalım.
+
+154
+00:23:57,556 --> 00:24:01,836
+Şöyle baktığımızda, J1 için oluşturalım şöyle.
+
+155
+00:24:03,715 --> 00:24:12,096
+Şöyle dörde bölelim. Şurası örneğin P olsun. Şurası, şurayı düzgün yazalım şöyle.
+
+156
+00:24:13,615 --> 00:24:14,975
+J1 için.
+
+157
+00:24:17,299 --> 00:24:42,019
+Şurada, burasını P yapalım, burasını Q1, Q0 yapalım. 0, 0, 0, 1, 1, 1, 0, 0 ve 1. Burada uygun yerleri taşımak çok önemli arkadaşlar. Örneğin 0, 0'ın olduğu yer şu sütun olmuş oluyor. 0 ve 1 alma durumuna göre ne yapıyoruz? Biz C1'i bakın şu sütunlu.
+
+158
+00:24:42,675 --> 00:25:09,995
+Ne yapıyoruz? Çıkarıyoruz öncelikli olarak. Yerini yerleştirelim. 0, 0, Q1, 0. Q0'ın 0 olduğu, P'nin 0 olduğu yer neresi? Şurası. Oradaki değerim neymiş? 0'mış. Yani şu. Şöyle de yazabilirim onu. 0 yapalım. Şöyle siyahla göstereyim. 0.
+
+159
+00:25:11,763 --> 00:25:38,943
+0-0 yine sütunundayım. Şöyle karışmasın. 0-0 sütunundayım. P'nin 1 olduğu durumda, yani şu ikinci satırdayım. Jb kaç oluyormuş? 0 oluyormuş yine. Aynı şekilde. Ne diyebilirim? 0-1. 0-1'deyim. Yani şunları yapacağım bu sefer.
+
+160
+00:25:39,700 --> 00:25:47,320
+Ne olacak arkadaşlar? 0, 1 için 0 ve 1. 0 ve 1'i doldurmuş olduk.
+
+161
+00:25:48,580 --> 00:25:50,220
+Geri kalan hepsi fi.
+
+162
+00:25:56,372 --> 00:26:21,052
+Şimdi sıfır ve pi burada gördüğünüz gibi. Burada hani yapsam ne olacak? En büyük komşuluğu nasıl yapabilirim? Bir burada olduğu için en büyük komşuluğu şuradan alırım. O da ne olacak arkadaşlar? Q sıfır ve P olacak değil mi? Q sıfır ve P. Q sıfır ve P olacak. J bir.
+
+163
+00:26:23,188 --> 00:26:43,388
+Aynı şekilde K1 için olanını bir yapalım arkadaşlar. K1 için olanını yapalım. Tablosunu koyalım. Ben bir soru sorayım. Ben burada J1'i niye Q0 ve P yaptım? Bunu bana bir açıklamak isterim. [öğrenci] açıklar mısın bana?
+
+164
+00:26:44,868 --> 00:26:48,248
+Neden fi'yi dahil ettiğimiz mi yoksa denklemi nasıl yazdığımız mı?
+
+165
+00:26:51,059 --> 00:26:52,359
+Yani ikisini birden.
+
+166
+00:26:53,079 --> 00:26:58,419
+C1'i yazmak için önce karar verdikten sonra daire içine.
+
+167
+00:26:59,859 --> 00:27:03,359
+Neden sadece bu ikisini aldım, sadece şu ikisini aldım?
+
+168
+00:27:03,619 --> 00:27:05,139
+Yani ne yapmış oldum ben burada?
+
+169
+00:27:05,659 --> 00:27:07,059
+Olabildiğince...
+
+170
+00:27:07,059 --> 00:27:09,299
+Şuna 1 vermiş oldum değil mi?
+
+171
+00:27:10,059 --> 00:27:10,359
+Evet.
+
+172
+00:27:11,419 --> 00:27:13,599
+Diğer fiilleri niye 0 yaptın peki?
+
+173
+00:27:15,188 --> 00:27:22,408
+Çünkü eğer bir yaparsak daha fazla denklememi indirgememiş oluruz.
+
+174
+00:27:22,408 --> 00:27:29,468
+Evet, buraları da bir yapsam bir de ne yapacağım? Bir de burada komşuluk alacağım. Ek bir şeyler yazacağım. Zaten bunu yazmışım.
+
+175
+00:27:29,788 --> 00:27:38,508
+Demek ki diğerlerini gerçekten sıfır yapıyorum ben burada. Evet. Ondan sonra, şuna karar verdikten sonra ne olacak onu indirge?
+
+176
+00:27:39,368 --> 00:27:42,568
+P var, bir de ne var? Q sıfır var. Öyle değil mi?
+
+177
+00:27:43,124 --> 00:28:08,504
+Evet. Tamamdır, güzel. K1 için de aynı şekilde hazırlıyoruz arkadaşlar. P ve de Q1, Q0, 00, 01, 11, 10, 01 şeklinde. Artık hangi sütunu dolduruyoruz arkadaşlar? Şu sütunu dolduruyoruz. Bakın, 00'ın olduğu yerde, 00'ın olduğu yerde ne var?
+
+178
+00:28:09,268 --> 00:28:36,167
+0, 0 ne oluyor? Yani şurasını söylüyorum. Fi var. 1 olunca da fi. P eşittir. Nereye bakıyorum? Şuralara bakıyorum ben. Sonra 0, 1 sütununa geçiyorum. Orada da neler var? Yine fiiler var. Onun dışında sıfırlar var. Sadece şurada bir 1 alıyor değil mi? 1, 1, 1. Hepsinin 1 olduğu durum. Neresi? Şurası.
+
+179
+00:28:36,788 --> 00:28:40,008
+Onda şimdi her yerde sıfır oluyor. Peki buna ne yaparım?
+
+180
+00:28:42,128 --> 00:28:46,268
+Buna ne yaparım? Söylesin bakayım kim? [öğrenci] söylesin.
+
+181
+00:28:51,124 --> 00:28:53,003
+Kabir için ne yapalım [öğrenci]?
+
+182
+00:28:58,132 --> 00:28:59,052
+Evet, [öğrenci]?
+
+183
+00:29:06,387 --> 00:29:12,727
+[öğrenci]'nın sesi gelmiyor. Bilgisayarını mı dinletiyor acaba? Ne dersiniz?
+
+184
+00:29:15,387 --> 00:29:16,387
+Evet, [öğrenci].
+
+185
+00:29:19,467 --> 00:29:26,947
+Hocam, şey, birinin yanındaki fi'yi bir yaparız. Oradan ikili bir komşuluk gelir. Oradan da P çarpı Q sıfır olur.
+
+186
+00:29:29,347 --> 00:29:31,607
+Evet, aynı şekilde.
+
+187
+00:29:32,403 --> 00:29:45,124
+P çarpı Q0 geliyor. Demek ki burada J1 ile K1 aynıymış. Yani Q0 ve P girişi. Q0 ile P entleniyormuş.
+
+188
+00:29:46,024 --> 00:29:58,284
+Aynı şekilde arkadaşlar ben şimdi yapmıyorum. J0 ve K0 da birbirine eşit ve P girişi. Sadece P girişi var arkadaşlar.
+
+189
+00:30:00,000 --> 00:30:05,719
+Orayı da yani şu sütunları da sizler yaparsınız, çıkarırsınız defterinizi. O da size ödev olsun.
+
+190
+00:30:05,719 --> 00:30:17,939
+Ben bu devreyi çizecek olursam arkadaşlar, şöyle çizebilirim. İki tane JK, flip-flopu var. Şöyle. Bunların bir ortak saat girişi var şöyle.
+
+191
+00:30:19,539 --> 00:30:27,539
+Şöyle clock diyelim buraya. Ondan sonra. Veya karıştırmak istemiyorsak bunları şöyle sileriz.
+
+192
+00:30:28,019 --> 00:30:54,599
+Şöyle hemen yanlarına şöyle CLK yazalım. Ortak olduğu belli olsun. Üstteki ağırlıklı olan olsun. J1, JK, 1 olsun. JK, 0 flip-flop olsun. Bunların çıkışları ne olacak? Q0, Q0'ın üstü, Q1, Q1'in üstü.
+
+193
+00:30:55,443 --> 00:31:03,064
+Burası J1, burası K1, burası J0, burası K0.
+
+194
+00:31:03,943 --> 00:31:08,324
+Evet arkadaşlar, ne geliyordu J1, K1'in girişine?
+
+195
+00:31:10,263 --> 00:31:20,663
+Q0 ile P'nin, P bir giriş olsun şurada, P geldi, şuradan geldi, şu ucunda ne var?
+
+196
+00:31:20,663 --> 00:31:21,784
+Q0.
+
+197
+00:31:22,548 --> 00:31:38,687
+Bu nereye giriyor? Hem C1'e hem K1'e girmiş oluyor. Peki buradaki P ayrıca nereye gidiyor? Şurada P giriş oluyor. C0 ve K0'a da giriyor.
+
+198
+00:31:40,147 --> 00:31:49,567
+Burada arkadaşlar bir de neyi yapmamız lazım bizim? Şunu değil mi? F çıkışı için. F çıkışı için de.
+
+199
+00:31:49,968 --> 00:32:12,108
+Ne yapmamız lazım? Şöyle, F içinde aynısını oluşturmamız lazım. Burası P olsun, burası Q1, Q0 olsun, 0, 0, 0, 1, 1, 1, 0. Orayı unutmuşuz değil mi? O nerede? Bakıyorum şurada sadece bir yerde bir alıyor. Şöyle.
+
+200
+00:32:12,948 --> 00:32:22,508
+Her tarafta 0 alıyor. Dikkat edin, burada Fi yok. Fi olmayınca direkt tek komşuluktan dolayı F ne olacak arkadaşlar?
+
+201
+00:32:24,307 --> 00:32:35,067
+P, Q1, Q0 olmuş olacak. Yani benim o çıkışımı da ne belirliyor? Buradan alıyorum bunu.
+
+202
+00:32:40,756 --> 00:32:45,316
+Bunlar ortak bir AND ile çarpılıp F oluşturmuş oluyor.
+
+203
+00:32:45,776 --> 00:32:50,076
+Demek ki böyle bir devre yaparsak arkadaşlar, ne olmuş oluyor?
+
+204
+00:32:51,496 --> 00:32:58,036
+F'ye bir bedek platformu ne yapmış oluyoruz? Aşağı doğru eğdirmiş oluyoruz.
+
+205
+00:32:59,284 --> 00:33:07,144
+Bakın böyle bir mantıksal problem var. Bunu bir lojik devre problemi haline getirdik ve bitirmiş olduk.
+
+206
+00:33:07,144 --> 00:33:10,504
+Soru anlaşıldı mı arkadaşlar? Nasıl çözüldü?
+
+207
+00:33:15,155 --> 00:33:16,556
+Sorusu olan var mı?
+
+208
+00:33:19,935 --> 00:33:20,655
+Tamamdır.
+
+209
+00:33:22,316 --> 00:33:25,816
+Şimdi kısa bir genel bilgi vereceğim arkadaşlar.
+
+210
+00:33:25,816 --> 00:33:31,256
+Tabi bilgisayar donanımı dersinde bunları daha böyle ayrıntılı anlayacaksınız.
+
+211
+00:33:31,836 --> 00:33:34,435
+Flip-floplardan bizim nelerimiz oluşuyor arkadaşlar?
+
+212
+00:33:34,635 --> 00:33:36,036
+Flip-floplar bizim için neydi?
+
+213
+00:33:37,135 --> 00:33:38,435
+Temel hafıza birimi.
+
+214
+00:33:40,180 --> 00:33:45,819
+Temel hafıza birimleri olarak neleri gördük biz? Flip-flop ve de tutucuları.
+
+215
+00:33:47,519 --> 00:33:54,860
+Tutucuları anlatmadım ben. Kapılarla yapılan aynı şekilde devre elemanları düşünebilirsiniz.
+
+216
+00:33:54,860 --> 00:34:02,259
+Şimdi bunların birleşmesiyle bunlar bir bitlik birimlerdi. Şu ikisi bir bitlik birimlerdi.
+
+217
+00:34:09,043 --> 00:34:29,443
+Yani register, ondan sonra sayıcı, sayıcı, yani counters, counters, sayıcılar diyelim daha doğrusu ve de bellek elemanları, rem, rom gibi.
+
+218
+00:34:32,179 --> 00:34:43,059
+Bellek elemanları üretiliyor arkadaşlar. İlk önce saklayıcıların genel bir yapısını anlatmak istiyorum. Önce saklayıcılardan bahsedelim.
+
+219
+00:34:45,359 --> 00:34:54,939
+Şimdi saklayıcılar verinin register olarak biliniyor. Bunun mikro işlemciler ve donanım dersini daha iyi olarak göreceksiniz.
+
+220
+00:35:00,115 --> 00:35:15,476
+Bit düzeyinde birimlerle ifade ediliyor. Örneğin 4-bitlik, 8-bitlik, 16-bitlik, yani bir flip-flop buraya, bir flip-flop buraya yan yana koyacak olursak 4 tane flip-flop yapısından oluşan 4-bitlik saklama birimi gibi düşünebilirsiniz bunu.
+
+221
+00:35:16,884 --> 00:35:26,064
+Tuttuğu veri üzerinde öteleme, sıfırlama ve birleme gibi yalın işlemler dışında herhangi bir işlem yapmıyor.
+
+222
+00:35:26,064 --> 00:35:35,503
+Sadece hafızada tutmaya yarıyor. Dolayısıyla bir aritmetik veya mantıksal işlemde palemetlerinin saklanmasında kullanılıyor.
+
+223
+00:35:35,604 --> 00:35:44,884
+Bunlar daha çok mikro işlemcilerin içerisinde. Hani işlem yapıldığında o anda işlem yapan birimin dediğim gibi aritmetik mantıkları.
+
+224
+00:35:44,884 --> 00:35:47,564
+Kısal işlemlerin sonucu burada kullanılıyor.
+
+225
+00:35:49,644 --> 00:35:59,284
+Şimdi basitçe tasarlayacak olursak, örneğin 4 bitlik bir flip-flop saklayıcı nasıl yapılıyor yan yana koyduğumuzda bunları.
+
+226
+00:35:59,284 --> 00:36:02,923
+Şöyle, örneğin bir D flip-flop olsun.
+
+227
+00:36:03,844 --> 00:36:07,884
+Şurada D3, D2.
+
+228
+00:36:08,947 --> 00:36:13,247
+D1, D0 şeklinde.
+
+229
+00:36:14,247 --> 00:36:15,527
+Burada ne oluyor arkadaşlar?
+
+230
+00:36:16,148 --> 00:36:20,047
+Giriş 0, giriş 1, giriş 2, giriş 3.
+
+231
+00:36:20,568 --> 00:36:24,547
+Paralel bir şekilde buradaki D flip-floplarına girmiş oluruz.
+
+232
+00:36:24,547 --> 00:36:28,907
+Tabi bunların hepsini ortak bir klo bağlamak lazım muhakkak.
+
+233
+00:36:29,068 --> 00:36:31,547
+Şöyle aynı hat üzerinde.
+
+234
+00:36:32,500 --> 00:36:53,840
+Bağlamak lazım ki senkron bir şekilde çalışsınlar. Şöyle. Aynı şekilde arkadaşlar bunların ayrıca ne uçları vardı? Şöyle reset uçları vardı. Şöyle reset uçları vardı. Onları da bağlayabiliyoruz. Bir de ayrıca mesela birle gibi.
+
+235
+00:36:54,356 --> 00:36:57,836
+Merkezi bir ucuları varsa ne yapmış oluyoruz?
+
+236
+00:36:58,376 --> 00:37:04,115
+Çıkışlarımızı da arkadaşlar nereden alacağız ortak bir biçimde? Şuralarda.
+
+237
+00:37:05,427 --> 00:37:08,827
+Ne oluyor? Bu paralel bir giriş yapılabiliyor bunlara.
+
+238
+00:37:09,527 --> 00:37:16,307
+Çıkış 3, çıkış 2, çıkış 1 ve çıkış 0 şeklinde yazabiliriz arkadaşlar.
+
+239
+00:37:17,068 --> 00:37:22,427
+Dediğim gibi sadece tuttuğu veri üzerinde öteleme, sıfırlama ve birleme gibi yazısını işlem yapıp,
+
+240
+00:37:22,807 --> 00:37:29,747
+öteleme yapacağımızda ise, bilgiyi her seferinde bir neyil edeceğimiz ise, çıkışı direğe almıyoruz da,
+
+241
+00:37:30,128 --> 00:37:35,007
+Veya şunları iptal ediyoruz seri olarak ileteceğimizi, öteleme yapacağımızda.
+
+242
+00:37:35,608 --> 00:37:41,608
+Bunun çıkışını D2, D2'nin çıkışını devre, D0'ın çıkışını devre bağlıyoruz arkadaşlar.
+
+243
+00:37:41,608 --> 00:37:43,608
+Şimdi...
+
+244
+00:37:44,820 --> 00:37:58,300
+Bunun haricinde, buna da arkadaşlar, hani buna birbirine, hani girişin, mesela burada paralel olarak giriyoruz değil mi? G0, G1, G2, G3 veriliyor, otluyor, belli bir şeyden sonra çıkıştan alınıyor.
+
+245
+00:37:58,300 --> 00:38:11,880
+Ama öbür türlü ne olacaktı arkadaşlar? Seri şekilde birbirine bağladığımızda buna da arkadaşlar ötelemeli kaydedici, saklayıcı, shift-register.
+
+246
+00:38:12,467 --> 00:38:14,608
+Adı veriliyor arkadaşlar.
+
+247
+00:38:16,188 --> 00:38:24,167
+Şimdi, böylece tuttuğu veriyi sağa veya sola öteleyen saklayıcı türü oluşuyor.
+
+248
+00:38:24,167 --> 00:38:34,467
+Dediğim gibi, buna da ötelemeli kaydedici adı veriliyor arkadaşlar.
+
+249
+00:38:35,284 --> 00:38:57,104
+Şimdi saklayıcılar genel olarak, bakın paralel girişlerden var. Paralel giriş ne demek bir şeye? Şöyle, aynı anda P0'dan PN'e kadar veya G0'dan GN'e kadar girişin aynı anda bütün bitleriyle verildiği yapılar. G0'dan G1'e kadar.
+
+250
+00:39:03,188 --> 00:39:11,768
+M'e kadar. Aynı anda bütün bitler çıkışıyorsa bunlara paralel giriş, paralel çıkışlı saklayıcılar deniyor.
+
+251
+00:39:11,768 --> 00:39:21,427
+Fakat biliyorsunuz seri olarak giriş seri verilebilir, çıkış aynı şekilde.
+
+252
+00:39:22,068 --> 00:39:33,108
+Çıkış sıfırdan çıkış M'ye kadar. Bu durumda ne oluyor arkadaşlar? Şu registerların paralel çıkışları anında gözükürken
+
+253
+00:39:34,003 --> 00:40:00,000
+Eğer seri bir input yaparsak, sadece şuradan giriyoruz, G seri diye, her bir saat çevrimde bir sonrakine öteleniyor bu durum. Bu, parallel input, parallel output olarak adlandırılıyor. Bu, serial input, parallel output olarak adlandırılıyor. Aynı şekilde, registerlar başka şekilde de yapılandırılıyor.
+
+254
+00:40:00,000 --> 00:40:15,440
+Serial input, seri output şeklinde. Buna da SISO. Girişlerin her bir saat çevriminde seri olarak girdiği, yani tek bir girişten girdiği ve seri çıktı.
+
+255
+00:40:15,440 --> 00:40:22,960
+Bu sefer paralel çıkışı yok. Sadece her bir saat çevriminde bir bitlik girili giriyor, bir bitlik bilgi çıkıyor.
+
+256
+00:40:24,019 --> 00:40:35,100
+Aynı şekilde başka hangi kombinasyon yapabiliriz? Örneğin, Parallel input yapabiliriz. Parallel input, Serial output.
+
+257
+00:40:36,160 --> 00:40:43,620
+Buna da Parallel input, Serial output. Bu sefer tek bir çıkışı olmuş olacak arkadaşlar.
+
+258
+00:40:44,467 --> 00:41:10,907
+Dediğim gibi, register'ın özel bir kürü ötelemeli saklayıcı. Ne yapıyor ötelemesi saklayıcı aslında? Genel gösterim budur register'ın arkadaşlar. Örneğin, bunun içine bir sayı sakladık. 0, 1, 1, 0, 1, 1, 0. Eğer ötelemeliyse arkadaşlar, sağ ötelemeli veya sola ötelemeli olabilir. Veya ne yapılabilir?
+
+259
+00:41:11,476 --> 00:41:17,695
+En sağdakini en başa yazabilir veya boşluğa düşüp buralarda sıfırlar oluşturabilir.
+
+260
+00:41:17,856 --> 00:41:25,615
+0, 1, 1, 0, 1 şeklinde sağ veya sola bitlerini gönderebiliyor arkadaşlar.
+
+261
+00:41:27,456 --> 00:41:31,376
+Şimdi bunların hepsi ayrı ayrı üretilebildiği gibi aynı şekilde.
+
+262
+00:41:32,019 --> 00:41:42,779
+Şey de olabilirler, universal saklayıcılar var. Yani şu dört tipten birine, örneğin buna PIPO demiştik, SIPO, PISO ve SISO.
+
+263
+00:41:43,480 --> 00:41:51,219
+Hangi şekilde kullanılacağını programlayabildiğimiz universal saklayıcılarda bulunuyor arkadaşlar.
+
+264
+00:41:53,139 --> 00:41:55,639
+Buraya kadar bir sorumuz var mı arkadaşlar?
+
+265
+00:41:57,907 --> 00:42:07,507
+Hocam, ben bu shift-rejister'ı nasıl normal register'dan ürettiğimizi anlayamadım da, yukarıda bir göstermiştiniz.
+
+266
+00:42:08,267 --> 00:42:15,807
+Evet, evet. Normalde ben burada neyi gösterdim? Her birinin girişine bir giriş veriyoruz ve çıkış veriyoruz.
+
+267
+00:42:15,807 --> 00:42:24,007
+Fakat bunun yerine, ben girdiğim seri bilgi belli bir, örneğin 4 saat çevrimde, burada 4 tane şey var ya.
+
+268
+00:42:24,307 --> 00:42:37,348
+Flip-flop var ya, örneğin, 1, 0, 1, 1 bilgisini vermek istiyorum. Ne yapıyorum bu durumda? Önce 1'i veriyorum. Biri önce burada oluşuyor. Sonra bir daha 1'i veriyorum.
+
+269
+00:42:38,088 --> 00:42:47,388
+Tabi bu bir delay ettiği için nereye geçmiş oluyor? Şuraya geçmiş oluyor. Bu buraya geçmiş oluyor. Bir sonraki 1'i vermiş oluyorum. Şurada.
+
+270
+00:42:48,528 --> 00:42:51,388
+Pardon, gecikme oluyor herhalde.
+
+271
+00:42:52,755 --> 00:43:08,516
+Şöyle kaydırayım. Şu 1'i veriyorum. Bu sefer burada 1, 1 var. Şuralarda ne olduğu belirsiz şu anda. Sonra 0'ı veriyorum. Burası 0 oluyor, burası 1. O 1, en başlık bir, bir yana kaymış oluyor. Sonra 1'i veriyorum.
+
+272
+00:43:09,204 --> 00:43:25,063
+Mesela 1'i verdiğim zaman 0 buraya geçiyor, 1 buraya geçiyor, sondaki 1 buraya geçiyor. Dolayısıyla ne olmuş oluyor? 1, 0, 1, 1 bilgisi. 4 saat çevriminde buraya ötelenmiş oluyor.
+
+273
+00:43:25,983 --> 00:43:35,364
+Shift-register'lar bunun genel hali arkadaşlar. Örneğin, şifri, buradaki her bir gözü bir flip-flop olarak düşüneceksen, örneğin,
+
+274
+00:43:36,244 --> 00:43:47,644
+En sağdaki, en anlamsız bitini, less significant bit veya most significant biti, shift-right işlemi yaptın. 1, 0, 1, 1 şeklinde.
+
+275
+00:43:48,684 --> 00:43:56,744
+Örneğin, diyeceksin ki, bir komut kullandı, shift-right 1. Hangi register? Bu A register olsun.
+
+276
+00:43:57,603 --> 00:44:03,264
+A register'ını, veya şöyle yapayım, shift-right, bir birim kaydır diyorsun. Ne oluyor orada?
+
+277
+00:44:04,371 --> 00:44:15,172
+Şimdi bu bir dışarı çıkmış oluyor. Ondan sonraki bir şuraya gelmiş oluyor. Sıfır buraya gelmiş oluyor. Baştaki biri de buraya gelmiş oluyor.
+
+278
+00:44:15,172 --> 00:44:27,172
+Burada çeşitli senaryolar var. Halka şeklinde ise şayet bu şifreci sırı bu en başa gelebilir. Veya halka şeklinde değilse
+
+279
+00:44:27,519 --> 00:44:44,199
+Bu register'ın yapısı. Buradan sıfır bilgisi gelebilir. Yani buradaki bir gider, şu bir gider, baştan da sanki sıfır tamponu girmiş gibi olur. Anlaşıldı mı burası? Kim sormuş soruyu?
+
+280
+00:44:44,740 --> 00:44:48,380
+Ben sormuştum hocam. Evet anladım, teşekkür ederim.
+
+281
+00:44:49,199 --> 00:44:54,539
+Tamamdır. Şimdi bunun gibi arkadaşlar sayıcılar da var.
+
+282
+00:44:55,188 --> 00:45:04,948
+Sayıcılar. Sayıcılar, saklayıcılarla olduğu gibi n-bitlik bilgi, yani bizim burada dörtlü biz yapı kullandık, dört bitlik.
+
+283
+00:45:05,396 --> 00:45:14,216
+Bu genişletilerek n-bitlik yapıya dönüştürülebiliyor. Örneğin 8-bit, 16-bit, 32-bitlik yapılar gibi düşünebilirsiniz.
+
+284
+00:45:15,356 --> 00:45:25,116
+Sayıcılarda, saklayıcılarda olduğu gibi n-bitlik bilgiyi tutmanın yanı sıra her saat çevriminde tuttukları değeri belli bir sırada değiştiren elemanlar.
+
+285
+00:45:26,288 --> 00:45:32,327
+Girişine bağlı değil de içindeki bilgiyi arttırıp azaltmayla ilgili çalışır.
+
+286
+00:45:32,427 --> 00:45:38,107
+Örneğin, 4 bitlik bir yukarı sayıcı denildiğinde, örneğin 0, 0, 0'dan başlıyor.
+
+287
+00:45:38,207 --> 00:45:42,307
+4 bitlik bir sayıcı dediğimizde, sayıcılar da böyle aynı şekilde gösteriliyor.
+
+288
+00:45:43,288 --> 00:45:46,827
+0, 0 sayıcı dediğimizde, bu sefer inputlardan bahsetmiyoruz.
+
+289
+00:45:46,867 --> 00:45:49,687
+Yüklenen bilgiyi arttırıyor veya azaltıyor.
+
+290
+00:45:50,420 --> 00:46:04,619
+Örneğin, yukarı sayıcı dediğimizde 0-0'dan 1-1-1-1'e kadar sayan devre, saklayıcı türleri diye düşünebilirsiniz.
+
+291
+00:46:05,579 --> 00:46:13,019
+Örneğin, bit sayısına göre, bit sayısına göre adlandırılabiliyor. 4-bit, 8-bit'lik sayıcı gibi.
+
+292
+00:46:14,019 --> 00:46:17,819
+Sayma şekline göre, moduna göre, sayma modu.
+
+293
+00:46:19,059 --> 00:46:24,159
+Buna göre yukarı, aşağı, tek sayılar, özel saymak gibi.
+
+294
+00:46:25,220 --> 00:46:35,500
+Çalışma modunda tek modlu, çok modlu gibi adlandırılmalar yapılıyor.
+
+295
+00:46:36,400 --> 00:46:39,900
+Durumların sayısına göre, durumların sayısına göre.
+
+296
+00:46:43,476 --> 00:46:50,376
+Durumların sayısına göre modulo, modulo, 5 durumlu gibi sayıcılar var.
+
+297
+00:46:51,556 --> 00:47:00,976
+Geçiş fonksiyonlarına göre, geçiş fonksiyonlarına göre, geçiş fonksiyonların zamanlamasına göre, zamanlananası göre,
+
+298
+00:47:06,900 --> 00:47:29,500
+Sayıcılar var arkadaşlar. Hani genel olarak göstereceğimizde ise aynı şeylerdeki gibi sayıcı burada N bitlik bir input ve de N bitlik bir output diye düşünebilirsiniz.
+
+299
+00:47:32,659 --> 00:47:57,840
+Reset uçları olabilir. Burasını sıfırla, burasını birle gibi çevirebiliyoruz Türkiye. Ne demekti arkadaşlar şöyle bir işaret yaptığımda N? Aslında bu N tane neydi? Kablo bağlantısıydı. Bunu böyle çok karmaşık çizmemek için şöyle çizik attığımızda bunun N-bit'ten oluştuğunu, N-bit'lik yapıyı taşıdığını göstermiş olabiliyoruz.
+
+300
+00:47:58,675 --> 00:48:22,895
+Örneğin bit sayısına göre anladık. 8 bitlik olabiliyor, 16 bitlik olabiliyor. Sayma süresine göre yukarı aşağı sayabiliyor. Tek modlu, çift modlu da, tek modlu da yalnızca bir çeşit sayma şekli oluyor. Ya yukarı ya da aşağı doğru. Çok modlu da ise birden çok sayma şekli yukarı aşağı veya özel tasarım şeklinde yaptırılabiliyor arkadaşlar.
+
+301
+00:48:23,635 --> 00:48:41,635
+Bilindik sayıcı türleri arkadaşlar, ikili sayıcı yani binary, ondalık sayıcı, ondalık sayıcı, burada da arkadaşlar 0000'dan
+
+302
+00:48:42,208 --> 00:48:47,407
+1, 0, 0, 1 yani 0 ve 9 arasında sayma yapıyor.
+
+303
+00:48:48,127 --> 00:48:51,947
+Gray kod sayıcı var arkadaşlar. Gray kod sayıcı.
+
+304
+00:48:55,067 --> 00:49:05,827
+Bu da örneğin 4 bir gray kod sayıcı verelim. Her seferinde bir biti değişebiliyor. 0, 0, 1. Ondan sonra 0.
+
+305
+00:49:06,963 --> 00:49:25,203
+0, 1, 1 olmuş oluyor grey kodda. Niye? Çünkü buradan 0, 0, 1, 0 yaptığım zaman bakın şöyle şu ikisi birden değişmiş oluyor. Onun yerine onun da değişik bir sayma düzeni var. Her seferinde sayarken 1 bit sayılıyor.
+
+306
+00:49:34,356 --> 00:49:40,076
+2'ye dönebiliyoruz. Bu sefer bakın sadece ne değişti? En ağırlıksız bit değişti.
+
+307
+00:49:40,655 --> 00:49:51,275
+Onun dışında halka sayıcılar var arkadaşlar. Örneğin 0, 0, 0, 0, 0, 1 diyelim. Kaç bit oldu? 8 bitlik oldu.
+
+308
+00:49:52,056 --> 00:49:59,295
+Halka sayıcıda her seferinde belli basamaklara kaydırılır bir sayısı.
+
+309
+00:50:01,588 --> 00:50:02,988
+Burada N tane.
+
+310
+00:50:03,423 --> 00:50:12,183
+Kaç bittikse o kadar durum oluşuyor arkadaşlar. En sonunda 1, 0, 0, 0, 0, 0, sonra başa döner bu gibi düşünemiyorsunuz.
+
+311
+00:50:12,844 --> 00:50:23,083
+Modulo sayıcılar var. Modulo artık kaç ise modulo sayıcılar modulo N diyelim. 8'lik sayıcı ise 0, 7 arasında sayar sonra 0'a düşer.
+
+312
+00:50:23,083 --> 00:50:31,423
+12'lik ise 0, 11 arasında sayar sonra tekrar 0'a döner. Onun sonunda bir de ripple sayıcı var. Bu da asenkron davranış.
+
+313
+00:50:31,423 --> 00:50:43,123
+Bu özelliği gösteren bir sayıcı arkadaşlar. Örneğin, elimizde bir sayıcı olsun. Örnek olarak yazalım.
+
+314
+00:50:58,675 --> 00:51:16,415
+16 sayıcı var. Modül 16 aslında 4 bitlik bir sayıcı, binary sayıcı ile aynı şey değil mi? 0, 0, 0'dan 1, 1, 1, 1'e kadar sayan bir sayıcı aslında. Modül 16 dediğimiz sayıcı.
+
+315
+00:51:17,619 --> 00:51:38,780
+Burada amacımız şu olsun, 3 ile 14 arasında bir sayı yapmak istiyoruz. 3 ile 14 arasında devamlayan 14'ten sonra 3'e gelmek istiyoruz. Bu durumda ne yapmamız gerekiyor? Bu devreyi tasarlamak istiyorsak, örneğin Q3, Q2, Q1, Q0 ve de bunlar şimdiki durumlar.
+
+316
+00:51:40,900 --> 00:51:42,780
+Bir sonraki durumlar.
+
+317
+00:51:48,179 --> 00:51:53,860
+Q3+, Q2+, Q1+, Q0+, olsun.
+
+318
+00:51:54,760 --> 00:51:58,800
+Örneğin, burada ilk başlangıç yapacağımız şey 0011.
+
+319
+00:51:59,079 --> 00:52:00,539
+Yani 3'ten başladık.
+
+320
+00:52:01,199 --> 00:52:05,500
+Bir sonraki durumumuz 01100.
+
+321
+00:52:06,771 --> 00:52:12,271
+Ondan sonra 0, 1, 0, 0'dan sonra 0, 1, 0, 1 şeklini gidiyor.
+
+322
+00:52:13,072 --> 00:52:16,251
+En sonunda şöyle oluyor. Burası 3'tü.
+
+323
+00:52:17,512 --> 00:52:26,231
+14'e geldiğimizde 1, 1, 1, 0'dan sonra nereye gidiyoruz arkadaşlar? 0, 0, 1'e.
+
+324
+00:52:27,152 --> 00:52:29,271
+1, 1'e. Yani 3'e dönmüş oluyoruz.
+
+325
+00:52:30,592 --> 00:52:32,255
+İşte burada...
+
+326
+00:52:32,255 --> 00:52:36,515
+Böyle bir devre yapalım ki bir tetikleme oluşsun şurada, tetikleme.
+
+327
+00:52:37,295 --> 00:52:42,315
+Yani anca şu durumda çıkış bir, diğerlerinde sıfır olsun, tetik elemanı.
+
+328
+00:52:42,315 --> 00:52:50,235
+Bunu nasıl sağlayabiliriz arkadaşlar? Bir sayıcımız var bizim, şöyle sayıcı.
+
+329
+00:52:51,595 --> 00:52:55,895
+Bu modulo N de diyebilirsiniz veya 4 bitlik binary de diyebilirsiniz, modulo.
+
+330
+00:52:57,043 --> 00:53:18,463
+16'da diyebilirsiniz. Ne yapmamız lazım? Önce paralel yükleme yapabileceğimiz inputları yükleyelim de. 0, 0, 1, 1 şeklinde inputlarımızı giriş 0, giriş 1, giriş 2, giriş 3 şeklinde. Saatimiz burada olsun.
+
+331
+00:53:24,019 --> 00:53:29,179
+Q3, Q2, Q1, Q0 şeklinde.
+
+332
+00:53:29,840 --> 00:53:38,880
+Ne yapacağız arkadaşlar? Bir tane burada bizim yükle, yani içerideki register'ın içerisine yükle diyeceğimiz bir tuş olsun örneğin.
+
+333
+00:53:39,400 --> 00:53:42,619
+Bir giriş olsun. Onu tetikletmemiz gerekiyor.
+
+334
+00:53:42,619 --> 00:53:46,579
+Ne yapacağız bu durumda arkadaşlar? Ne demiştik?
+
+335
+00:53:47,411 --> 00:54:05,591
+Anca şu girişte ne olsun? Tetikleme yapabilsin. Bu ne peki arkadaşlar? Q0'ın üstü, Q1, Q2, Q3. Bu hangisi? Tetik. Tetik fonksiyonunun çıkışı.
+
+336
+00:54:06,311 --> 00:54:14,191
+Diğer her taraf sıfır. Yani ben buna bir Karnaugh diyagramı yapsam sadece burada bir alacak. Dolayısıyla ne yapmam lazım benim bunu?
+
+337
+00:54:14,708 --> 00:54:29,807
+Şöyle hemen, şöyle bir değil yapıp, buraya vermem, şunları da şöyle vermem, bunları bir 4 girişli bir, neye vermem lazım? AND'e verip, bunu da yükle yaptığım zaman.
+
+338
+00:54:29,807 --> 00:54:37,407
+Ne yapıyor arkadaşlar? Ancak burasında 0, 1, 1, 1 oluşma durumunda.
+
+339
+00:54:37,811 --> 00:54:55,391
+Bunun ne yapıyor? Çıkışında 1 oluşuyor, o 1 de yükleme yapıyor. Şurası kaç? 14. 14'ten sonra tetikliyor, yükleme yapıyor. 14'ten 15'e geçeceğine buradaki 3 sayısı bakın.
+
+340
+00:54:56,092 --> 00:55:01,471
+Yan yana yazdığında 1, 1, 0, 0. Giriş 0, giriş 1, giriş 2, giriş 3.
+
+341
+00:55:01,940 --> 00:55:13,120
+3 sayısı yükleniyor. Ne zaman? Çıkışında 14'ü gördüğünde. Yani 1, 1, 1, 0'ı gördüğünde. Anlaşıldı mı bu da arkadaşlar?
+
+342
+00:55:16,724 --> 00:55:20,844
+Sorsu olan var mı?
+
+343
+00:55:26,132 --> 00:55:53,311
+Evet, son olarak da bellekler kısmını biraz anlatmakta fayda var. Bunları ayrıntılı göreceksiniz. Bellekler. Şimdi belleklerde arkadaşlar, RAM'leri, ROM'ları, PROM, APROM veya şöyle yazalım bunları. RAM neydi arkadaşlar? RAM. Random Access Memory.
+
+344
+00:55:54,164 --> 00:55:58,824
+Yani, access memory.
+
+345
+00:56:00,524 --> 00:56:07,164
+Rastgele erişimli berlek. Yani hafızanın her bir gözüne rastgele olarak erişebiliyoruz.
+
+346
+00:56:07,724 --> 00:56:09,824
+Peki burada şundan bahsetmek lazım.
+
+347
+00:56:10,664 --> 00:56:11,444
+RAM'ler nasıl?
+
+348
+00:56:12,744 --> 00:56:17,164
+Berlek birimlerinde her bir berlek gözünün kendine ait bir özel berlek adresi.
+
+349
+00:56:17,324 --> 00:56:20,964
+Mesela şöyle bir berlekleri genellikle böyle çizeriz.
+
+350
+00:56:21,684 --> 00:56:26,684
+Şuraya bellek adresi diyelim. Bellek adresi.
+
+351
+00:56:28,144 --> 00:56:36,564
+Bunlar, arkadaşlar, aynı bir register'ların, register'ları sanki Lego gibi üst üste koymuşsunuz gibi düşünebilirsiniz.
+
+352
+00:56:37,604 --> 00:56:44,764
+Örneğin, 8 tanesini üst üste koyduk. 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 1.
+
+353
+00:56:45,331 --> 00:56:59,151
+1, 0, 0, 1, 0, 1, 1, 1, 0 ve de 1, 1, 1. Böylece 8 tane register mi oluştu? Çünkü bunların her birinin içerisinde göz sayısı değişebiliyor.
+
+354
+00:56:59,731 --> 00:57:09,071
+Bakın, kaç tane bloğu üst üste koyduğunuzun haricinde her bir bellek gözünün kaç bit olduğu? Örneğin bunu ben 8 bit yapayım.
+
+355
+00:57:09,876 --> 00:57:17,836
+Dolayısıyla ne olmuş olacak arkadaşlar? 8 bitlik, 8 bitlik bir register burada, 8 bitlik bir register burada.
+
+356
+00:57:17,836 --> 00:57:33,876
+Kalk tam kaç tane var? Bellek adresine göre belirleyebiliyorum. 8 çarpı 8'lik bir ne olmuş oluyor? Hafıza bloğu yapısı olmuş oluyor. Bu ne demek? 8 bitlik 8 gözlü.
+
+357
+00:57:34,612 --> 00:57:59,992
+8 bitlik, 8 gözlü. Yani 8 tane oda var burada. Peki şöyle de yapabilirdik. Şurası bit sayısını veriyor. 8 gözlü, 2 bitlik. O zaman ne olacaktır arkadaşlar? Her birinin içerisinde 0, 1, 1, 1 gibi saklayabildiğimiz toplam 8 tane kattan oluşan bir yapı olacaktır.
+
+358
+00:58:00,563 --> 00:58:22,244
+8'e 2 dediğimizde. Örneğin, 1 Mega çarpı 8 diyelim. Bu nasıl bir RAM olmuş oluyor? 8 bitlik, 1 Mega alana sahip. Ne demek Mega? Örneğin 1024.
+
+359
+00:58:23,315 --> 00:58:45,955
+1 kilo ise ikili sistemlerde. 1 mega nedir? 1 megabyte diyoruz örneğin. 1 megabit diyoruz örneğin. 1 megada arkadaşlar 10.048.576. Yani burada ne olmuş oluyor?
+
+360
+00:58:46,643 --> 00:59:10,583
+Her bir seferinde, örneğin 2 üzeri 0, 1'di. 2 üzeri 1, 2. 2 üzeri 3, 8. 2 üzeri 8, ne demiştik? 128. 2 üzeri 9, kaç olmuş oluyor? 256.
+
+361
+00:59:13,780 --> 00:59:25,420
+Pardon, 2 üzeri 7, 228, 2 üzeri 8, 256, 2 üzeri 9, neydi arkadaşlar? 512, 2 üzeri 10, 1024.
+
+362
+00:59:25,420 --> 00:59:36,300
+Demek ki neymiş arkadaşlar? 1 kilo dediğimizde 1024, 1 mega dediğimizde ise arkadaşlar ne olmuş oluyor?
+
+363
+00:59:40,275 --> 00:59:42,835
+20 olmuş oluyor arkadaşlar.
+
+364
+00:59:44,635 --> 00:59:49,835
+Şimdi bellek türlerimizde remi düşünelim bakalım.
+
+365
+00:59:56,019 --> 01:00:07,660
+Random Access Memory ilk şeyimiz. Sonra Prom, ROM'lar var. ROM'lar ise arkadaşlar Read Only Memory.
+
+366
+01:00:11,411 --> 01:00:23,651
+Demek ki sadece okunabilen memoriler var. Yani burada hafızada gözlerin içerisindeki değerler ne arkadaşlar? Bir kere yazılıyor ve sadece okunuyor demek ki.
+
+367
+01:00:23,651 --> 01:00:32,651
+Random access memorisi bu gözlerin her birine sıralı olarak değil de istediğimiz adresini verdiğimiz gibi içerisindeki bilgiyi...
+
+368
+01:00:33,492 --> 01:00:37,332
+yazıp okuyabildiğimiz yapılar diye düşünebilirsiniz.
+
+369
+01:00:37,952 --> 01:00:42,392
+ROM'da ise yine adres bilgisine veriyoruz ama içindeki bilgi sadece okuyabiliyoruz.
+
+370
+01:00:43,432 --> 01:00:44,132
+PROM var.
+
+371
+01:00:44,872 --> 01:00:45,272
+PROM.
+
+372
+01:00:46,052 --> 01:00:47,812
+Bu da Programmable.
+
+373
+01:00:52,532 --> 01:01:01,951
+Normalde bu yarı yedirken üreticileri bu ROM'ların içerisinde bir kere oluştururlar bu bilgiyi. Ondan sonra hiç değiştirmez.
+
+374
+01:01:02,132 --> 01:01:13,871
+Bazıları ise içerisindeki bilgileri bir seferlik veya bir seferlik yazılabilmesini, kendileri yazmak isterler. İlla fabrikada olmak için bir kere programlanabilen yapılar var.
+
+375
+01:01:13,871 --> 01:01:18,991
+Buna programlanabilir ROM deniyor. Ondan sonra teknoloji gelişiyor tabii.
+
+376
+01:01:19,891 --> 01:01:26,911
+Eprom yani Erasable, Programmable,
+
+377
+01:01:30,483 --> 01:01:41,523
+Yani hem silinebilir hem programlanabilir. Yani bu da REM'e benziyor ama bu tabii çok daha yavaş çalışıyor. Ama silme işlemi yapabiliyoruz. Önemli olan bu.
+
+378
+01:01:42,195 --> 01:02:03,635
+Bu silme işlemi çeşitli böyle mor ışık altında kapalı bir ortamda da yapılabildiği gibi uzun zaman alabilen eski sistemler. Ondan sonra daha hızlıları gelişiyor. E kare, rom yani E karedeki oradaki iki tane E var değil mi? Electrically.
+
+379
+01:02:07,443 --> 01:02:32,503
+Erasable, Programable. Bu elektriksel olarak çalışılıyor. Artık içerisinde bir tuş var. Sil tuşu gibi düşünebilirsiniz şöyle. Sil tuşu gibi bir tuş var. Elektriksel olarak içerisini koyabilirsiniz. Eski yapılarda benim ilk gördüğümde şurasında bir pencere gibi bir şey vardı çipin.
+
+380
+01:02:33,748 --> 01:02:50,028
+Şurasında cam bir yapı var. Bunu böyle bir mor ışık altında bekletirdiniz böyle 10-15 dakika. Ondan sonra içerisi gider. Ondan sonra bir defa tekrar yazabiliyordunuz üstüne. O biraz daha fiziksel yapıları anlatıyor.
+
+381
+01:03:00,596 --> 01:03:08,916
+Kembellik. Bunlar biraz daha farklı çalışıyor. Content, addressable,
+
+382
+01:03:12,659 --> 01:03:14,919
+Memory olarak geçiyor.
+
+383
+01:03:15,999 --> 01:03:18,679
+Şimdi genel bilgileri verecek olursak,
+
+384
+01:03:20,859 --> 01:03:24,939
+RAM'lerde arkadaşlar genel olarak RAM'lerin gösteriliği şu şekilde,
+
+385
+01:03:26,979 --> 01:03:29,819
+en genel yapısından bahsedecek olursak,
+
+386
+01:03:30,899 --> 01:03:31,639
+RAM'ler,
+
+387
+01:03:33,839 --> 01:03:36,379
+her biri blok şeklini düşünecek olursanız,
+
+388
+01:03:36,379 --> 01:03:38,339
+iki üzeri K çarpı N.
+
+389
+01:03:39,099 --> 01:03:40,119
+Buradaki N neydi?
+
+390
+01:03:40,980 --> 01:03:56,840
+Her bir gözdeki veya odadaki bit sayısı. Bu da kaç tane oda olduğunu söylüyor. 2 üzeri K, 2 üzeri 10 ise 1K'lık, 1K tane oda var, 1024 tane oda var demek.
+
+391
+01:03:59,320 --> 01:04:06,740
+Ondan sonra, peki, N ne oluyor? Bit sayısı olmuş oluyor. Aynı şekilde.
+
+392
+01:04:07,603 --> 01:04:20,183
+Peki, bu deme öncelikle ne lazım? Adres, yani hangi bilgiye ulaşmak istediğimize dair bilgi lazım. Dolayısıyla K bilgisini verebilmek lazım.
+
+393
+01:04:22,023 --> 01:04:34,743
+Ben burada K tane giriş yapmam lazım yani. K bitten oluşan hangi adresse? Örneğin 8 bitse 01100100'daki
+
+394
+01:04:35,248 --> 01:04:43,967
+Yani şuradaki bilgiye ulaşmak istiyorum. Okuyacağım veya yazacağım. Onu da belirtmem lazım. Oku, yaz.
+
+395
+01:04:45,387 --> 01:04:57,048
+Niye böyle iki şeye yarıyor bu? Tek bitlik bir şey. Bir verirsen okursun, sıfır verirsen yazarsın manasında. Sıfırda aktif olanın üzeri çiziliyor.
+
+396
+01:04:58,036 --> 01:05:08,396
+Dolayısıyla burasının genişliği ne kadarsa, örneğin mbit'ti bu, çıkışım da aynı şekilde veri çıkışı mbit olabiliyor.
+
+397
+01:05:08,396 --> 01:05:16,516
+Aynı şekilde veri girişi mbit olabiliyor.
+
+398
+01:05:25,972 --> 01:05:35,912
+İki yönlü, enbitlik, giriş-çıkış birimi aynı bacaklardan verilebiliyor arkadaşlar.
+
+399
+01:05:37,912 --> 01:05:40,012
+İki tür REM yapısı var.
+
+400
+01:05:40,512 --> 01:05:44,492
+Statik ve dinamik bellekler.
+
+401
+01:05:45,392 --> 01:05:50,332
+Statik belleklerde arkadaşlar flip-floplar veya tutucular kullanılırken
+
+402
+01:05:51,923 --> 01:06:01,644
+Dinamik belleklerde ise kapasitör, transistör ikisi kullanılıyor.
+
+403
+01:06:02,244 --> 01:06:09,104
+Dinamik bellekler dolayısıyla statik bellekler daha pahalı dinamik belleklere göre.
+
+404
+01:06:09,652 --> 01:06:26,652
+Dolayısıyla daha az kullanılıyorlar arkadaşlar. Dinamik belleklerin belli bir şeyde kapasitör ve transistörden oluştuğu için belli bir miktar elektriksel olarak...
+
+405
+01:06:26,708 --> 01:06:35,708
+Tazelenmeleri gerekiyor. Oysa flip-flop ve tutuculardan oluşan statik belleklerle bilgi tüm devreye elektrik enerjisi uygulandığı sürece orada tutuluyor.
+
+406
+01:06:35,708 --> 01:06:46,048
+Ama kapasitör ve transitör değilse o boşanmaları kapasitörün boşanmalarını engellemek için devamlı refresh etmek gerekiyor.
+
+407
+01:06:46,168 --> 01:06:50,948
+Dolayısıyla belli aralıklarla bilginin tazelenmesi işlemi yapılıyor.
+
+408
+01:06:51,539 --> 01:07:01,559
+Dolayısıyla bizim PC'lerdeki RAM'ler daha çok dinamik bellek yapısında, DRAM derler, DRAM şeklinde bellekler oluyor.
+
+409
+01:07:01,659 --> 01:07:05,099
+Çünkü statik bellekler çok daha pahalı arkadaşlar.
+
+410
+01:07:06,579 --> 01:07:17,099
+Onun dışında eğer bir RAM'in ilk yapısını düşünecek olursak, biraz daha açacak olursak, en temelde bizim hücremiz,
+
+411
+01:07:18,996 --> 01:07:42,476
+Hücre yapımız ne? Baktığımızda giriş, hücremiz yani odamız giriş, burada çıkış, burada seçme ucumuz, enable ucu veya burada oku yaz, yaz şeklinde düşünemez.
+
+412
+01:07:42,931 --> 01:07:50,551
+Bu hücre olarak atlandırıyor arkadaşlar. En temel seviye elemanı olarak düşünebiliriz.
+
+413
+01:07:51,131 --> 01:07:58,271
+Sonuçta bu hücreler nerede yer alıyor? İşte bu binada, bu veya logo blokların üstünde yer alıyor düşünebiliriz.
+
+414
+01:07:58,751 --> 01:08:01,931
+En temel şunlar, işte şu hücreler buralarda bulunuyor.
+
+415
+01:08:03,051 --> 01:08:07,571
+Burada örneğin 2 üzeri K çarpı N'lik bir yapıda.
+
+416
+01:08:08,019 --> 01:08:23,739
+Yani her bir satırda örneğin n tane hücre, bir satır dediğim odada n tane hücre bulunmuş oluyor. Dolayısıyla burası temel saklama hücrelerinden oluşuyor.
+
+417
+01:08:36,051 --> 01:08:46,811
+Ne gerekiyor arkadaşlar? Adresi çözebilecek, adres kabitten oluşan, şurada bir kod çözücü.
+
+418
+01:08:49,492 --> 01:08:55,572
+Bu kod çözücü sadece bir tanesini aktif ediyor bu kaplardan, odalardan.
+
+419
+01:08:56,275 --> 01:09:00,095
+Yani iki üzeri K tane çıkışı vardı hatırlarsanız kod çözüyor.
+
+420
+01:09:00,095 --> 01:09:07,036
+Bir tane saklı oluyor. Biz sadece örneğin o kaktaki bilgiye ne yapıyoruz arkadaşlar?
+
+421
+01:09:08,995 --> 01:09:16,815
+Ya yazacağız ya alacağız. Peki o denetimi nasıl sağlıyoruz? Bununla haberleşen bir denetim birimi var.
+
+422
+01:09:18,376 --> 01:09:20,296
+Bu denetim birimi arkadaşlar.
+
+423
+01:09:21,716 --> 01:09:29,636
+Denetim veya kontrol ünitesi. Buna hangi bilgilerin verilmesi lazım? Oku, yaz bilgilerinin verilmesi lazım.
+
+424
+01:09:31,676 --> 01:09:48,156
+Giriş mi, çıkış mı? Giriş veya çıkış bilgisinin verilmesi lazım. Bu da en bitlik, bir de bunu etkin yapabilecek bir ucun, enable ucunun verilmesi gerekiyor arkadaşlar.
+
+425
+01:09:51,764 --> 01:10:08,424
+Onun haricinde arkadaşlar, dediğim gibi ridonlu memoriler var. Benim bir kez yazıldıktan sonra sinlemedi veya değiştirilemedi yapılar. Onu da anlatmıştım. Eğer bir romun içerisinde gösterecek olursam, aynı şekilde arkadaşlar.
+
+426
+01:10:08,424 --> 01:10:17,703
+2 üzeri K çarpı N tane yapıdan oluşabilir. Sadece okudan da oluşabilir. Sadece oku.
+
+427
+01:10:18,739 --> 01:10:36,500
+Dolayısıyla oku ucu bulunmayabilir. Sadece veri girişini verdiğimizde, daha doğrusu ilk başta bir yazıldığı için sadece belki adres bilgisini verip, adres bilgisini verip, AND bit, veri çıkışı yapılabilir. En temel haliyle.
+
+428
+01:10:36,500 --> 01:10:45,699
+Ama daha sonra problemla beraber ne oluyor? Oku, yaz uçları da gelmeye başlıyor. Öyle değil mi?
+
+429
+01:10:46,131 --> 01:10:54,191
+Aynı zamanda şuraya bir veri giriş çıkışı iki taraflı olmaya başlıyor gibi froglar oluşuyor.
+
+430
+01:10:55,011 --> 01:11:08,171
+Ekarepromlar dediğim gibi bir penceresinden, epromlar pardon, bir pencereden içerisindeki bilgiye, yani o hafıza birimlerinin içerisindeki bilgiyi, şuradaki gözlerdeki hafızadaki bilgileri silebiliyordu.
+
+431
+01:11:08,811 --> 01:11:12,107
+Ekarepromlar bu pencereler kalktı artık basit bir...
+
+432
+01:11:12,340 --> 01:11:19,940
+Sil ucuyla beraber elektriksel olarak yazılıp çizilmeye başlandı içerisine.
+
+433
+01:11:21,659 --> 01:11:25,539
+Asosyatif bellek veya content addressable memorisi.
+
+434
+01:11:27,159 --> 01:11:33,200
+Bunlar bellek gözüne erişebilmek için arkadaşlar adres bilgisine ihtiyaç olmayan bir bellek diyor.
+
+435
+01:11:33,800 --> 01:11:36,059
+İçerikle erişiliyor bunlar arkadaşlar.
+
+436
+01:11:36,927 --> 01:11:45,427
+Burada arayacağımız bilginin bir kısmı, bir token olarak RAM'in içerisine veriliyor.
+
+437
+01:11:45,568 --> 01:11:50,988
+Belli berlek adresi yok. Hem okuma hem yazma için kullanılabiliyor arkadaşlar.
+
+438
+01:11:51,948 --> 01:11:58,907
+Şimdi ROM gibi belleklerin içerdikleri veriler üzerinde bir bilginin varlığını arayıp bilgiye erişmek için
+
+439
+01:11:59,279 --> 01:12:06,299
+Onun bellekte saklı olduğu bellek gözlerine ait adreslerini bilmesi gerekiyor standart romla.
+
+440
+01:12:07,000 --> 01:12:13,579
+Eğer adres bilinmiyorsa, dolayısıyla o bilgiyi teker teker arayacak o gözlerde gerekiyor.
+
+441
+01:12:16,851 --> 01:12:20,731
+Dolayısıyla o her bir odanın, her bir katın içerisine bakması gerekiyor.
+
+442
+01:12:20,731 --> 01:12:22,432
+Eğer belli bir bilgiye arıyorsa.
+
+443
+01:12:23,311 --> 01:12:26,711
+Şimdi, dolayısıyla bu karmaşık bir işlem.
+
+444
+01:12:26,851 --> 01:12:34,832
+Asosyatif belleklerde ise erişilmek istenen gözün içerisindeki verinin bir kısmı, buna etiket olarak, tag olarak adlandırılıyor.
+
+445
+01:12:35,371 --> 01:12:37,572
+Sanki adres bilgisiymiş gibi veriliyor.
+
+446
+01:12:37,891 --> 01:12:40,932
+Verinin genel kısmına bu şekilde erişiliyor.
+
+447
+01:12:41,051 --> 01:12:44,492
+Yani belli bir bilginin içerisinde bir maskeleme yapılarak.
+
+448
+01:12:45,492 --> 01:12:53,371
+Bulunmasın muhtemel odalar bulunup, ondan sonra içerisinde aramalar yapılıyor arkadaşlar.
+
+449
+01:12:54,192 --> 01:13:02,871
+Bulundu, bulunmaz gibi o bilgiler veriliyor. Ondan sonra etiketle daha böyle ayrıntılı bilgilendirme yapılıyor.
+
+450
+01:13:03,131 --> 01:13:06,432
+Biraz daha karışık bir teknoloji. Daha sonra bunları görürsünüz tekrar.
+
+451
+01:13:09,652 --> 01:13:14,032
+Onun dışında ne anlatılabilir? Bir de programlanabilir ardışıl devreler var.
+
+452
+01:13:14,152 --> 01:13:27,432
+Aynı şekilde ardışıl devreli bizim kombinezonsal devrelerde programlanabilir genel bir universal kullanıma ait yapıların haricinde genel kullanım için,
+
+453
+01:13:27,811 --> 01:13:37,051
+hani genel içerisinde JK'nın, D'nin bulunduğu, flip-flopların bir de kombinezonsal devrelerin yani PL'nin bulunduğu kısımlarla beraber programlanabilir.
+
+454
+01:13:37,652 --> 01:13:52,631
+Devreler de oluşturuyor arkadaşlar. Evet, bu dönemlik anlatacaklarımız bunlar arkadaşlar. Sizlerin sormak istediği bu dersle alakalı olabilir veya sınavlarla alakalı bir sormak istediğiniz bir şey var mı arkadaşlar?
+
+455
+01:13:55,211 --> 01:14:00,551
+Hocam, bu oku yaz bacağında yazın üstünde niye çizgi var? Orayı anlayamadım da ben.
+
+456
+01:14:01,108 --> 01:14:19,528
+Şöyle düşün, bir tane genel anlatıyorum. Şurada tek bitlik bir giriş var. Herhangi bir çipe. Bu tek bitlik çipten ne verebilirsin sen? Sıfır veya bir verebilirsin. Öyle değil mi? Dolayısıyla iki tane durumu anlatabilirsin sen buna.
+
+457
+01:14:29,652 --> 01:14:53,391
+Dolayısıyla hani oku ve yaz için ben sana şu bilgiyi vermesem oku ve yaz için hangisini kullanacağını bilebilir misin? Bilemezsin. Ama ben şöyle bir çizgi çiziyorum. Anlıyorsun ki sen oku için bir, yazı ise sıfır da aktifmiş. Dolayısıyla oku için bir, yazı için sıfırı göndermem gerekiyor diye biliyorsun. Anlatıştık mı?
+
+458
+01:14:55,507 --> 01:14:57,887
+Tamamdır hocam, anladım. Teşekkür ederim.
+
+459
+01:14:59,268 --> 01:15:06,208
+Evet arkadaşlar, bu ders anlatacaklarımız bunlar. Artık güzel bir vize sınavı istiyorum.
+
+460
+01:15:07,347 --> 01:15:20,288
+Bu son dersi anlattığım konular hariç tabii ki sentez konusu, ondan sonra indirgemeler, ondan sonra multiplexer gibi kombinezonsal devre yapıları gibi yapılar.
+
+461
+01:15:20,884 --> 01:15:29,403
+İndirgeme, ondan sonra baktım. Sınavlarda arkadaşlar basit bir şeyi bile kaçırmış arkadaşlarımız.
+
+462
+01:15:29,603 --> 01:15:30,743
+Bir misal ettiriyoruz.
+
+463
+01:15:39,283 --> 01:15:56,563
+Mesela, ne demiştim mesela? Mesela, eksi 77. Bunu binary olarak yazın. Yani yazamamış çoğu. Yani öncelikli olarak ne yapıyorduk bu tür yapılarda örneğin?
+
+464
+01:15:57,123 --> 01:16:04,783
+77'yi oluşturuyorduk, öyle değil mi? 77 nasıl oluşuyor? 0, 1, 0, 1, 1, 0, 1.
+
+465
+01:16:05,427 --> 01:16:10,067
+Daha sonra bunun ikiye tümleyenini alıyorduk değil mi? İçeride negatif sayı olduğunu biliyoruz.
+
+466
+01:16:10,648 --> 01:16:15,287
+Veya ne yapıyorduk bunun? Negatif sayı olduğunu biliyoruz.
+
+467
+01:16:15,447 --> 01:16:21,307
+77 komplementini alıyoruz bunun. Buna bir eklediğimiz ikiye tümleyen olmuş oluyor.
+
+468
+01:16:21,387 --> 01:16:22,567
+O da neye dönüşmüş oluyor?
+
+469
+01:16:23,487 --> 01:16:26,148
+1, 0, 1, 1, 0, 0, 1, 1.
+
+470
+01:16:26,560 --> 01:16:50,800
+Yani 77'nin eksili olabilmesi için komplementini almak lazım. Burada da 77'yi yazdım ben. 2'ye tümleyenini aldım. Bak bu eksi 77'nin karşılığı bu. Ondan sonra basitçe buna baktığımda B3. Bu da 16'lık tabandaki karşılığı. Üçlük bölecek olursam şöyle. Üçlük. Ne olacak bu da? 3.
+
+471
+01:16:51,380 --> 01:16:58,560
+6, 2, 268'lik tabanlı, al sana 10 puan. Yani arkadaşların çoğunu yapamamış.
+
+472
+01:17:02,931 --> 01:17:18,271
+Ondan sonra indirgeme işlemi var diyelim. Demişim ki eksik terimlerle verilen fonksiyonu, eksik terimler ne demek bu? Sigma fi'nin içinde. Yani bazı gözlerde fi var demek. O fi'lerin olduğu gözleri yazmışım.
+
+473
+01:17:19,591 --> 01:17:26,051
+İndirgeme yapıyor mesela. İndirgeme yapıyor. Daha bunları yerleştiremeyenler var. Şöyle yapanlar var mesela.
+
+474
+01:17:29,811 --> 01:17:38,391
+Fiilleri sıfır alanlar var. Hani daha büyük şey yapıp burada daha küçük bir indirimi, daha yüksek bir indirimi yapacaksın. Bunu sıfır almış.
+
+475
+01:17:38,871 --> 01:17:46,091
+Ya fiillerinin hepsinin bir alan var. Yani konunun özünü anlamış. İstediğini bir, istediğini sıfır alabilirsin. Anlaştık mı?
+
+476
+01:17:46,692 --> 01:17:54,811
+Burada kaçıranlar var. Dikkat etmeyenler düşük almış. Veya demişim ki fonksiyonun indirgenmiş bir adetiniz sadece iki girişli.
+
+477
+01:17:55,283 --> 01:18:22,783
+İki girişli TV yağ kullanarak yapılırsın demişim. İki girişli. Yani dörtlü kullanan da var. Ondan sonra şeye dikkat etmeyenler otomatik bağlamış birbirinin arkasına. Yani orada bir titik var. Ona dikkat etmemiş. Dolayısıyla o arkadaşlar düşük aldı. Finallerde daha soru çözerek gelirseniz daha başarılı olacağınıza eminim arkadaşlar. Anlaştık mı?
+
+478
+01:18:25,076 --> 01:18:40,832
+Hepinize şimdiden başarılar diliyorum. Umarım lojik dersi sizler için yararlı olmuştur. Sizlere, bilgisayar mühendisine farklı bir bakış açısı kazandırmıştır umarım. Sizler için de verimli olduğunu...
+
+479
+01:18:40,832 --> 01:18:58,511
+Umarak hepinize iyi bir dönem sonu, iyi bir vize final sınavları diliyorum. Güzel bir şekilde bunları halledelim. Sizlerden iyi notlar bekliyorum. Anlaştık mı arkadaşlar? Hepinize şimdiden kolay gelsin.
+
+480
+01:19:00,171 --> 01:19:01,231
+Teşekkür ederim hocam.
+
+481
+01:19:02,372 --> 01:19:05,091
+Sizlere de teşekkürler. Kolay gelsin arkadaşlar.

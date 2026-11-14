@@ -1,0 +1,211 @@
+1
+00:00:47,700 --> 00:00:56,099
+Arkadaşlar merhaba, biraz kişi sayısı artsın diye bekleyeceğim 3-4 dakika başlamak için.
+
+2
+00:02:08,532 --> 00:02:20,071
+5 gece başlayacağım. Kişi sayısı biraz artsın diye bekliyorum. Bugün çok az kişiyle başladık şu anda. 24 kişi gözüküyor. 5 gece, tam 5 gece başlarız derse tamam mı?
+
+3
+00:05:48,435 --> 00:06:06,876
+Peki başlayabiliriz. Şimdi hatırlarsanız ilk derste demiştik ki en az iki defa quiz yapacağız. Bugün quiz günümüz. 12'yi çeyrek geçen, 10 dakika sonra başlayacak. Online yıldız edütör eden soruya erişebilirsiniz.
+
+4
+00:06:06,876 --> 00:06:18,156
+yapmanızı istediğimiz bir tane soru var. Sorunun C kodunu yazarak cevabı sisteme yüklemenizi istiyoruz.
+
+5
+00:06:19,536 --> 00:06:31,355
+Sizden beklentimiz, burada biz esas hedefimiz soruyu ne kadar çözebildiğinizi, şu anda algoritmik olarak ne durumda olduğunuzu aslında
+
+6
+00:06:31,355 --> 00:06:38,535
+hem sizin kendinizin görmesini hem de bizim anlayabilmemizi istiyoruz.
+
+7
+00:06:38,535 --> 00:06:42,535
+O yüzden lütfen kendi başınıza çözüm sorunuzu.
+
+8
+00:06:44,595 --> 00:06:53,215
+Yani bunu tabii söylemek şey değil ama çok da söylemek istediğim bir şey değil ama
+
+9
+00:06:53,215 --> 00:06:57,335
+üç grubun ortak şeyini yapıyoruz.
+
+10
+00:06:58,255 --> 00:07:00,095
+Yani benzerlik kontrolünü yapıyoruz.
+
+11
+00:07:01,355 --> 00:07:16,616
+gelen ödevlerin veya cevapların ve belli bir oranda ödev kontrolünde olduğu gibi belli bir orandan fazla benzerlik olduğunda değerlendirmeyi sıfır olarak yapıyoruz.
+
+12
+00:07:17,435 --> 00:07:26,335
+Lütfen kendi başınıza yapın. Önemli olan sizin şeyinizdir, gelişiminizdir, sizin durumunuzdur.
+
+13
+00:07:26,336 --> 00:07:28,575
+Sizden özellikle bunu rica ediyorum.
+
+14
+00:07:29,456 --> 00:07:33,895
+Şimdi orada bir şey hakkında çok basit bir şey söyleyeceğim.
+
+15
+00:07:35,236 --> 00:07:42,196
+Algoritmayı tasarladıktan sonra hem işlem hem de yer karmaşıklığını söylemeniz isteniyor.
+
+16
+00:07:42,196 --> 00:07:48,336
+Yer karmaşıklığının şeyden bir farkı yok işlem karmaşıklığından.
+
+17
+00:07:48,335 --> 00:08:06,875
+orada da n giriş bilgisine bağlı olarak ne kadar yaptığınız algoritma sonunda ne kadar yer kullandığınızı aslında hesaplamanız isteniyor.
+
+18
+00:08:06,876 --> 00:08:24,495
+dolayısıyla örneğin bir dizilik yer kullanıyorsanız n elemanınız varken bir dizilik yer kullanıyorsanız o zaman yer karmaşıklığı endir gibi yani şeyden çok büyük bir farkı yok.
+
+19
+00:08:24,495 --> 00:08:29,956
+Hem işlem karmaşıklığını hesaplamanız hem de yer karmaşıklığını hesaplamanız isteniyor.
+
+20
+00:08:29,955 --> 00:08:45,895
+olabildiğince soruyu çözerken yeri efektif kullanmanız isteniyor. Değerlendirme hem de zamanı ne kadar efektif kullandığınıza göre yapılacak. Yani değerlendirmede o da etkili olacak.
+
+21
+00:08:45,895 --> 00:08:56,975
+Dediğim gibi lütfen kendi kendinize, arkadaşlarınızla bağlantı kurmadan problemi kendi kendinize çözmeye çalışın.
+
+22
+00:08:58,255 --> 00:09:06,275
+Sormak istediğiniz bir şey var mı? Çeyrek geçe, ben şey şu anda yayınladık, çeyrek geçe görebilir hale geleceksiniz.
+
+23
+00:09:07,095 --> 00:09:10,275
+Burayı şey yapacağım, kapatacağım.
+
+24
+00:09:10,275 --> 00:09:18,395
+kodlarında şeyiniz başlamış olacak 12. çeyrek geçen kuyziniz başlamış olacak. Sorunuz var mı?
+
+25
+00:09:20,575 --> 00:09:22,775
+Hocam kodu sorulacak akış çeşitli.
+
+26
+00:09:23,775 --> 00:09:40,175
+C kodu istedik özellikle. Yani aslında akış yaparak C'ye geçmeniz daha doğrudur ama şeyle vakit harcamayın diye işte yok fotoğraf çektim onu yaptım bunu yaptım orada şu anda bir sıkıntı yaşamayın
+
+27
+00:09:40,175 --> 00:09:44,335
+diye C kodu göndermenizi istedik, akış istemedik.
+
+28
+00:09:46,451 --> 00:10:13,671
+Burada şunu da söylemek isterim. Süreniz 45 dakika. Süreyi hesaplarken sisteme sabit etme zamanınızı da hesapladık. O yüzden e-mail ile gönderirseniz kabul edilmeyecek. Birkaç dakika öncesinden şeye başlayın. Yani yükleme için işleme başlayın. Yani e-mail ile göndermeyin ödevinizde. Var mı başka sorunuz?
+
+29
+00:10:13,671 --> 00:10:19,172
+Hocam sistem daha önceden queue uzantılı dosya kabul etmiyordu.
+
+30
+00:10:19,911 --> 00:10:22,292
+Onun için şey yazdık göreceksiniz.
+
+31
+00:10:22,651 --> 00:10:24,792
+queue zipleyin ve öyle gönderin dedik.
+
+32
+00:10:25,351 --> 00:10:26,031
+Tamamdır hocam.
+
+33
+00:10:27,792 --> 00:10:28,511
+Var mı başka?
+
+34
+00:10:33,132 --> 00:10:37,291
+Numaranızı şey kodu yapın diye yazdık oraya zaten.
+
+35
+00:10:37,812 --> 00:10:41,891
+Dosya adını lütfen şu ordaya ne yazdık şimdi şey yapamadım da.
+
+36
+00:10:41,891 --> 00:10:48,331
+kurala uygun oraya yazdık özellikle dosya adını numara olarak kullanın diye.
+
+37
+00:10:48,331 --> 00:10:55,611
+Çünkü öyle herkes kafasına göre bir isim verirse biz değerlendirirken çok zorluk çekiyoruz.
+
+38
+00:10:55,992 --> 00:11:07,991
+O yüzden dosya adının unik olması bizim açımızdan çok önemli ve mutlaka şey yapın, kodunuzun içine de adınızı yazın lütfen.
+
+39
+00:11:09,271 --> 00:11:10,711
+Hiçbir karışıklık olmasın.
+
+40
+00:11:10,711 --> 00:11:22,711
+Bu arada birden fazla dosya yüklemekle uğraşmayın diye dedik ki karmaşıklığı kodun başında koment satırlarında yazın dedik.
+
+41
+00:11:23,711 --> 00:11:31,891
+Tekrardan söylüyorum şey olmasın diye yer ve zaman karmaşıklığı hesabını istedik soruda.
+
+42
+00:11:31,891 --> 00:11:45,591
+bunun için ayrı bir işte ne bileyim pdf bilmem ne uğraşmayın diye soruda da göreceksiniz dedik ki C kodunuzun başına yani C kodunuz başlamadan önce
+
+43
+00:11:45,591 --> 00:11:52,631
+koment satırı olarak karmaşıklık hesabınızı yazın dedik anlaşıldı mı?
+
+44
+00:12:00,500 --> 00:12:02,879
+Var mı sormak istediğimiz başka bir şey?
+
+45
+00:12:09,364 --> 00:12:12,263
+aklınıza takılan bir şey varsa sorabilirsiniz.
+
+46
+00:12:21,812 --> 00:12:36,111
+Eğer sistemde dediğim gibi bir 5 dakika öncesinde yüklemeye işlemine başlayın ama sistemde bir problem varsa hemen o ekranın fotoğrafını alın lütfen.
+
+47
+00:12:36,111 --> 00:12:51,391
+Yani hata mesajı vesaire bir şey oluyorsa ve yani dediğim gibi maille göndermenizi istemiyoruz ama sizden kaynaklı olmayan bir hatadan ötürü gönderemiyorsanız o zaman lütfen
+
+48
+00:12:51,391 --> 00:13:03,192
+o fotoğrafını da alarak o şekilde ancak gerçekten kanıtlanabilir bir problem olduğunda mailleri kabul ediyoruz.
+
+49
+00:13:03,192 --> 00:13:10,572
+Yoksa çok karışıyor 10 dakika sonra, 20 dakika sonra, 20 saat sonra mailler geliyor ve biz bunları değerlendirmeyeceğiz artık.
+
+50
+00:13:11,532 --> 00:13:12,591
+Var mı başka sorunuz?
+
+51
+00:13:13,431 --> 00:13:16,111
+Peki o zaman hazırlıklarınızı yapabilirsiniz.
+
+52
+00:13:17,492 --> 00:13:21,172
+12'yi çeyrek geçe erişilebilir hale gelecek soru sizin için.
+
+53
+00:13:21,171 --> 00:13:46,471
+hepinize başarılar diliyorum. Kolay bir soru. Dediğim gibi kendinizi böyle şey yapmayın, gerilmeyin. Sadece işte birlikte biz sizin durumunuzu görelim, siz de kendi durumunuzu görün diye orta seviyede zor olmayan bir soru. Karışık bir şey yok. Rahat olun, rahatlıkla yapabilirsiniz. Hepinize başarılar diliyorum. Pazartesi dersinde görüşmek üzere.

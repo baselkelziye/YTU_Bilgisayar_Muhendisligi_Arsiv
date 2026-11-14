@@ -1,0 +1,2355 @@
+1
+00:01:28,074 --> 00:01:35,574
+Merhaba arkadaşlar. Hepinize iyi günler dileyerek başlıyorum. Umarım hepiniz sağlık saat içerisindesinizdir.
+
+2
+00:01:40,139 --> 00:02:06,898
+Evet arkadaşlar, bu hafta biraz hızlıca gitmemiz gerekecek. Gerçi yetişir diye düşünüyorum. 3 saat vaktimiz var. Muhtemelen bir ara veririz, hatta belki iki ara veririz. [kişisel bilgi]. Bu durumda biraz daha ara vererek gidebiliriz.
+
+3
+00:02:07,371 --> 00:02:25,551
+Kutluyorum, tebrik ediyorum. Arkadaşlar, geçen hafta ne yaptık, şu ana kadar ne yaptık, bunlara bir isterseniz kısaca değinelim. Sonra da bu haftaki konumuza geçelim. İlk etapta zaten biz bir Ohm kanunuyla dersimize başlamıştık.
+
+4
+00:02:26,986 --> 00:02:37,326
+Bu On Kanunu'nda bir teorik bezleri, bezik terimleri öğrendik. Sonra bu KCL ve KVL kanunlarına değindik.
+
+5
+00:02:38,946 --> 00:02:47,986
+Ve bundan türetilen Node ve Mesh analizlerini gerçekleştirdik. Şu ana kadar yaptığımız kısımlar bunlardı.
+
+6
+00:02:54,058 --> 00:03:04,198
+Aslında hep bizim devreyi analiz etmemizi sağlayacak olan ek elemanlar. Yani ileride biz hatta süperpozisyonu da şuraya ekleyebiliriz.
+
+7
+00:03:10,025 --> 00:03:18,765
+İleride biz bir fazla iki tane gerilim kaynağı, bir tane akım kaynağı olan bir devrede süperpozisyonla meşeyi uygulayabileceğiz.
+
+8
+00:03:18,886 --> 00:03:29,546
+Daha doğrusu ilk başta süperpozisyon yapıp, hangisi kısa, hangisi açık devre olacak kollardan, bunu belirleyip sonra meş veya not analiziyle analiz yapabileceğiz.
+
+9
+00:03:30,006 --> 00:03:36,046
+Zaten meş ve not da KVL ve KCL'den gelmekteydi. KVL ve KCL'de de Ohm kanunundan türetilmekteydi.
+
+10
+00:03:38,025 --> 00:04:05,025
+Biri birbirine step by step anlattığımız kısımlardı. Bundan sonra ise aslında biz yine bu teknikleri kullanabileceğimiz ama mentalitesinde devreyi simplify etmek için, yani en kestirme bir gerilim veya akım kaynağı ve bir adet direnç, sadece bir adet dirençle devreyi nomine edebileceğimiz, devreyi bir, yani kompleks devreyi.
+
+11
+00:04:05,706 --> 00:04:12,225
+Core haliyle, çekirdek haliyle gösterebileceğimiz formatı getirmeye çalışacağımız konulara başladık.
+
+12
+00:04:12,765 --> 00:04:16,706
+Bunlardan ilkini geçen hafta Source Transformation'a giriş yapmıştık.
+
+13
+00:04:17,326 --> 00:04:22,145
+Source Transformation yani kaynak dönüşümü diye tabir ettiğimiz
+
+14
+00:04:22,953 --> 00:04:36,934
+Bu yaklaşımda da esasında biz devremizi en bezdeye temelde bir adet kaynak ve bir adet de direnç olacak formata getirmek üzere bir şeyler yapmıştık geçen hafta.
+
+15
+00:04:36,934 --> 00:04:50,934
+Bu kısımları anlatmıştık geçen hafta. Dedik ki bir devreyi sadeleştirmek için seri-paralel kombinasyonu olan dirençleri tek bir RTH, pardon R-Equlement dediğimiz
+
+16
+00:04:50,953 --> 00:05:01,594
+Eşdeğer devre direnci haline getirdiğimiz bir yaklaşım vardı. Bu aslında devreyi sadeleştiriyor, doğru ama kaynaklar noktasında herhangi bir sadeleştirme yapmıyor idi.
+
+17
+00:05:02,894 --> 00:05:10,934
+Y ve Delta Transformation'a değinmedik ama değineceğiz. Orada da aslında kompleks yapıda olan dirençlerin
+
+18
+00:05:11,403 --> 00:05:19,323
+Parallel seri yapısından ziyade bir algoritmayla, bir matematiksel formülde birbiri arasındaki transformasyonunu anlatacağız.
+
+19
+00:05:19,703 --> 00:05:25,443
+Ama o da aslında bir dirençlerin kendi içerisinde daha sade formatta getirilmesi üzerine.
+
+20
+00:05:26,263 --> 00:05:30,763
+Source Transformation bir başka yöntem bu sadeleştirme için.
+
+21
+00:05:30,763 --> 00:05:39,203
+Burada bütün bu konseptlerde en etken şey aslında bizim karmaşık devrenin equivalence dediğimiz,
+
+22
+00:05:39,403 --> 00:05:42,301
+Eşdeğer basit devresini üretebilmek.
+
+23
+00:05:43,703 --> 00:05:55,303
+Ve aslında eşitlikten kastımız bizim, yani Equalment Circuit'tan kastımız bizim tamamen karmaşık devredeki bir noktasındaki VI karakteristliğin,
+
+24
+00:05:56,011 --> 00:06:09,270
+Simplify ettiğimiz devrede de aynı olması gerektiğidir. Yani aslında karakteristiklerinin, akım-gerilim karakteristiklerinin identical, birebir benzer olması gerekliliğidir.
+
+25
+00:06:09,690 --> 00:06:22,331
+Equlement circuit'ı, equivalent yapan yani eşdeğer yapan en önemli kayıda, tekrar söylüyorum, devrenin gerilim-akım karakteristiklerinin birbirine aynı olması gerektiğidir.
+
+26
+00:06:24,715 --> 00:06:42,455
+Bunları izah ettik, hani tekrar tekrar üzerinde durmayacağım. Normalde Source Transformation'da yaptığımız şey şuydu, gerilim kaynağına seri bağlı olan bir direnç var ise eğer, ben bunu akım kaynağı ve bir adet paralel olan direnç ile gösterebiliyordum.
+
+27
+00:06:45,095 --> 00:07:07,355
+Ne değiştirirsek, akım kaynağındaki akımın değeri, benim şuradaki zaten Ohm kanununun söylediği kayda binaen gerilimdeki değere göre değişecekti. Yani devrede ben yüksek güçlü bir devre tasarımı, yani daha doğrusu burada R'lerin üzerine düşen gücün daha yüksek olmasını istiyor isem, gerilimin yüksek olmasını sağlamam lazım.
+
+28
+00:07:13,095 --> 00:07:30,014
+Yani dizaynımda daha düşük R'si seçmem gerektiğini bileceğim. Bu da zaten basit, standart. Yani güç P eşittir I çarpı V formülünden gelen veya I kare çarpı R'den veya V kare bölü R'den gelen bir konsept.
+
+29
+00:07:32,953 --> 00:07:36,355
+Bunları analiz etmiştik geçen hafta.
+
+30
+00:07:37,930 --> 00:07:53,390
+Evet, akım kaynağında ise, akım kaynağına paralel olarak bağlı bir direnç var ise, ben bunu Source Transformation'da, kaynak döşümünde, gerilim kaynağı ve ona seri bağlı bir direnç şeklinde getirebiliyor idim.
+
+31
+00:07:55,787 --> 00:08:08,527
+Şurada örnek yapmıştık, buraları izah ettik. Zaten gücün dağılımıyla alakalı analizlerdi bunlar. Hani RSI'yi nasıl oynatırsam, bu akım kaynağında nasıl şey yapar? Örnek verelim.
+
+32
+00:08:17,831 --> 00:08:35,171
+Az RL direnci üzerine, 6 kilo anda daha fazla RL üzerine gitmesinden dolayı aslında benim işte burayı 3 kilo yapmam, yük direnci üzerindeki gücün daha fazla güç yüklenmesine neden olacak.
+
+33
+00:08:40,810 --> 00:08:45,051
+Bunlardan bahsettik, bir örnek yapmıştık herhalde. Bunlar değil.
+
+34
+00:08:51,370 --> 00:09:18,970
+Şu kaydemizi unutmayacağız. Eğer ki RL dediğimiz yük direnci üzerinde soruda %50 yani üreteç gücünün %50'si bu yük direncinde biriksin deniyor ise eğer aslında biz bunun kanıtını bu hafta ilerleyen slaytlarda yapacağız ama aslında RL direncinin %50 maksimum gücün birikmesi demek RL dediğimiz yük direncinin
+
+35
+00:09:19,498 --> 00:09:30,158
+Özümsedikten sonra karmaşık devreyi, R.S. diye nomine edeceğimiz, iç devre direncine eşit olması gerekliliği kaydesini yapacağız.
+
+36
+00:09:33,259 --> 00:09:47,498
+Burada bir sorumuz vardı. Bunu yaptık herhalde geçen hafta. Source Transformation yapmamızı istiyor. Yani en sade formatta Source Transformation yani kaynak dönüşümü tekniğiyle en sade formata getirin diyor bu devreyi.
+
+37
+00:09:47,498 --> 00:09:59,778
+Şimdi şunu biliyorum ki ben akım ve direnç birbirine paralel ise ben bunu gerilim kaynağı, tabii artı eksisi tamamen akımın yönüne göre.
+
+38
+00:10:01,769 --> 00:10:05,951
+ve buna seri bağlı bir direnç şeklinde gösterebiliyordur.
+
+39
+00:10:25,514 --> 00:10:31,574
+Bu formata getirdim. Sonra şurasının zaten eşdeğer devresinin seri olduğu için 6 oldu.
+
+40
+00:10:31,574 --> 00:10:37,574
+Şimdi buradan sonra şunu yapabiliriz. 6 ile...
+
+41
+00:10:37,993 --> 00:10:55,715
+Bu kaçtı? Bunu çevirdiğimizde burası 12 volt olacak değil mi? 6 ile 12 voltu tekrardan akım kaynağı moduna getirip paralel devre yapısına getirebiliriz 8 ile buradaki 6'yı değil mi? Bu bir yöntem. Bunun dışında şunu da yapabiliriz.
+
+42
+00:11:03,531 --> 00:11:08,211
+Buradaki, şu kısmı da akım kaynağı formatına getirebiliriz.
+
+43
+00:11:09,211 --> 00:11:11,650
+Hala hazırda seril ve gerilim kaynağı var.
+
+44
+00:11:12,150 --> 00:11:23,650
+Bu kısmı akım kaynağı 12 bölü 3'ten 4 amperlik, artı eksisi önemli olacak şekilde yukarıya bakan, artı eksisi aşağıya bakan 12'ye 4'lük yapıya getirdik.
+
+45
+00:11:27,147 --> 00:11:39,567
+Sonra burada dirençleri 6 Ohm yaptık ve bunu tekrardan 12 voltu 6 Ohm'a bölerek akım kaynağı ve buna paralel bir direnç moduna getirdik.
+
+46
+00:11:40,087 --> 00:11:45,886
+Bundan sonra şuradaki 8 Ohm'un üzerindeki V0'u sorduğu için bunu şu andaki işleme almıyorum.
+
+47
+00:11:45,886 --> 00:11:48,926
+Bu 3 Ohm'u şu tarafa getirelim.
+
+48
+00:11:50,250 --> 00:12:07,671
+6, 3, 2 kat fark var. Burada bir kestirme yolumuz vardı. Eğer dirençler paralel dirençlerden, 2 kat bir fark varsa, büyük olan direnci, kat artı 1'e, yani 3'e bölerek eşdeğer direncini bulabiliyorduk.
+
+49
+00:12:14,667 --> 00:12:22,506
+Akım kaynaklarının yönlerine göre bir toplama çıkarma yapacağımız için 2 amper yukarı olacak şekilde bir akımımız var.
+
+50
+00:12:23,167 --> 00:12:29,466
+2 onluk bir direncimiz var dedik. Bundan sonra 2 teknikle bu soru çözülebilir.
+
+51
+00:12:29,466 --> 00:12:35,766
+Ya akımın bölünme oranını, yani 2 nasıl bölünecek şu koldan, yani şuradaki i'yi nasıl bulacağız?
+
+52
+00:12:40,614 --> 00:12:45,934
+8 artı 2 şeklinde bir formülümüz vardı. Bu akım bölücü devresiydi hatırlarsanız.
+
+53
+00:12:46,634 --> 00:12:54,873
+Buradan 0,4 amper gelir. 8'lere çarptığında 3.2 voltluk bir V0 geriliminin olduğunu söyleyebiliriz.
+
+54
+00:12:54,873 --> 00:13:02,690
+Veya onun yerine normal paralellikten dolayı paralellik bulup, ana kol...
+
+55
+00:13:02,730 --> 00:13:09,609
+2 amperle çarptığımızda bu 8'in üzerindeki, yine aynı şekilde gerilimden gidiyoruz aslında bu sefer.
+
+56
+00:13:10,130 --> 00:13:18,790
+Şunu gerilim formatına çevirip, şu 8 ile 2'nin eşdeğer devre direnci olacak bu ikisini paralel aldığımızda.
+
+57
+00:13:18,870 --> 00:13:21,649
+Bunu 2 ile çarptığımda ben aslında gerilimi bulacağım.
+
+58
+00:13:21,649 --> 00:13:27,550
+Bu gerilimde nasıl dağılacak? Zaten paralel olduğu için eşit dağılacak. 3.2 volt.
+
+59
+00:13:32,778 --> 00:13:47,318
+Bunu da size biraz uğraşalım arkadaşlar bunu. Bir süre verelim, bir beş dakika. Uğraşıp yaptığınızı bekliyorum. Geçen hafta herhalde bunu yapmadık değil mi? Yaptık mı?
+
+60
+00:13:52,105 --> 00:13:52,866
+Yaptık mı?
+
+61
+00:13:52,866 --> 00:13:55,126
+Bakacağım, siz yaparsınız demiştiniz.
+
+62
+00:13:56,747 --> 00:14:01,866
+Tamam, tamam. O zaman evet, burada hadi biraz uğraşın. Sizden birine yapalım.
+
+63
+00:14:02,647 --> 00:14:03,167
+Yaptırayım.
+
+64
+00:14:09,514 --> 00:14:12,215
+14.20, 14.25'e kadar.
+
+65
+00:14:14,913 --> 00:14:17,014
+LAP takvimi [öğrenci]'e yayınlanmadı mı?
+
+66
+00:14:18,993 --> 00:14:24,314
+Yani bunu sormanın bir anlamı yok açıkçası. LAP takvimi diye bir takvim duyuruldu değil mi?
+
+67
+00:14:26,514 --> 00:14:34,333
+Her hafta bana LAP sormayın arkadaşlar. Bir takviminiz dönem başında yayınlanıyor. Siz de dönem başında o takvime uyuyorsunuz.
+
+68
+00:14:34,333 --> 00:14:36,634
+Aksi belirtilmedikçe duyurularda.
+
+69
+00:14:37,706 --> 00:14:40,605
+Yani bunu her hafta her hafta sormanın anlamı yok.
+
+70
+00:20:05,034 --> 00:20:08,574
+vize gününe kadar işlenen bütün konular dahil olur [öğrenci].
+
+71
+00:20:15,434 --> 00:20:18,534
+Evet, kim yapacak arkadaşlar, yapmak isteyen?
+
+72
+00:20:36,074 --> 00:20:37,715
+İ0 akımı soruluyor.
+
+73
+00:20:41,355 --> 00:20:45,134
+Tamam [öğrenci]. Yetki istiyor mu? İstemiyor herhalde.
+
+74
+00:20:45,855 --> 00:20:50,634
+Bakayım hocam. Yok istemiyor hocam. Şu an çizebiliyorum galiba. [öğrenci] değil mi?
+
+75
+00:20:50,993 --> 00:20:51,675
+Evet, aynen.
+
+76
+00:20:51,974 --> 00:21:07,555
+Tamam. Şimdi hocam şöyle yaptım. Şimdi bunlar birine paralel olduğu için ilk başta bunların önce eşdeğer direncini aldım. Buradan iki çıktı. İki çıktığı için burada bir yakım kaynağı üzerler. Burada da ikimiz olduğunu varsayalım. Bunlar birine paralel olduğu için ben bunu seri olarak yani şeye çevirdim.
+
+77
+00:21:08,202 --> 00:21:10,202
+Gerilim kaynağını çevirdim.
+
+78
+00:21:10,202 --> 00:21:15,202
+İşte şu tarafa doğru 5, şurada bir saniye, şurayı silmem lazım.
+
+79
+00:21:17,202 --> 00:21:18,202
+Şöyle yapalım.
+
+80
+00:21:20,202 --> 00:21:23,202
+Sonra burada bir tane direncimiz var.
+
+81
+00:21:23,202 --> 00:21:25,202
+2'yi buraya yazdım.
+
+82
+00:21:25,202 --> 00:21:29,202
+5, 2 olduğu için burası da o zaman 10 voltlu bir gerilim kaynağımız içerimiz var burada.
+
+83
+00:21:29,202 --> 00:21:31,202
+Sonra bunu tamamladım.
+
+84
+00:21:31,202 --> 00:21:34,179
+Buradan eksi artı...
+
+85
+00:21:34,411 --> 00:21:57,850
+Bu burada gerilim kaynağı olacak. Onu yanlış yapmayalım. Şöyle olacak, şurası eksi, şurası artı. Buradan 5 voltluk bir gerilim kaynağı var. Buradan böyle geliyor. Burası 7. Aynı şekilde burada da, buradaki durum aynısı var. Burada yine bunlar paralel oluşuyor. Burası 5. 3, 5'ten buradan da yine 15'lik bir şey yaptım. Şuraya 5 yazdım gerilim olarak.
+
+86
+00:21:59,434 --> 00:22:26,335
+Buraya da şöyle yukarı yönlü bir gerilim kaynağı yazdım, 15 diye. Sonra hocam ben burada şey uyguladım, mesh analizini uyguladım. Buradan diyorum ki buradan i1 akım geçsin. Şuradan da i2 akım geçsin. Sonra buradaki şeyi uygularsak, x10 buradan gelecek. Sonra artı 2 i1 gelecek buradan.
+
+87
+00:22:27,818 --> 00:22:29,297
+Sonra buradan eksi 5 gelecek.
+
+88
+00:22:31,598 --> 00:22:35,638
+Artı 7, şuradan i1-i2 gelecek şuradan.
+
+89
+00:22:36,978 --> 00:22:41,617
+i1-i2, eşitir 0 olması lazım.
+
+90
+00:22:42,739 --> 00:22:44,739
+Bunu çözdüğümüzde buradan 9 tane i1,
+
+91
+00:22:46,418 --> 00:22:48,377
+eksi 7 tane i2,
+
+92
+00:22:50,377 --> 00:22:53,018
+eşitir 15, bu birinci şeyimiz.
+
+93
+00:22:53,478 --> 00:22:54,877
+İki yirmi beşe baktığımızda,
+
+94
+00:22:54,951 --> 00:22:59,111
+Buradan 7, bunu aldığımız için i2-1 yazıyorum.
+
+95
+00:23:00,970 --> 00:23:05,690
+Sonra artı 5, i2.
+
+96
+00:23:06,690 --> 00:23:12,751
+Ve buradan arttan girdiği için artı 15, işte 0.
+
+97
+00:23:13,631 --> 00:23:18,451
+Buraya düzenlediğimizde bunun altına yazarsam, 7 buradan 12, 12 tane i2.
+
+98
+00:23:20,451 --> 00:23:21,850
+Eksi 7 tane.
+
+99
+00:23:22,698 --> 00:23:43,797
+i1 eşittir eksi 15 oldu. Buradan burayı çözersek, i2 eşittir eksi 0,508, i1 de 1.272 buldum.
+
+100
+00:23:45,019 --> 00:23:47,219
+i0'ımız neydi bizim? Buradaki i0'ımız aslında,
+
+101
+00:23:47,979 --> 00:23:50,479
+Şuraya bakarsak, i1-i2 oluyor.
+
+102
+00:23:53,038 --> 00:23:56,979
+Buradan i1'imiz 1.2'ye pişki, buradan eksi, bunlar artıya döndü.
+
+103
+00:23:57,038 --> 00:23:59,559
+Bunlar x'ini toplarsak da, 1.2'ye pişkiş çıkıyor.
+
+104
+00:24:01,818 --> 00:24:05,898
+Tamamdır, teşekkürler [öğrenci]. Numaranı da alabilir miyim?
+
+105
+00:24:06,759 --> 00:24:07,979
+Çete yazayım mı hocam şöyle?
+
+106
+00:24:08,198 --> 00:24:08,778
+Evet, ben de.
+
+107
+00:24:10,278 --> 00:24:11,398
+Tamam, şöyle yazdım.
+
+108
+00:24:28,810 --> 00:24:40,650
+Teşekkürler, devam edelim. Var mı arkadaşınızın anlattığı kısmında bir sıkıntı? Yok herhalde.
+
+109
+00:24:41,650 --> 00:24:51,810
+Şimdi geldik Thevenin ve Norton'a. Bu iki teknik de aslında devrenin eşdeğer devresini çıkartmak için yapılan yöntemler.
+
+110
+00:24:52,233 --> 00:25:14,835
+Şimdi Source Transformation'ın bazı limitleri var. Misal, bağımlı kaynak olduğunda ne yapacağız vesaire. Orada Source Transformation yapamıyorduk. Ama Thevenin ve Norton bununla başka başka çözümler sunuyor. Thevenin işte bir Fransız mühendismiş vesaire vesaire bir rızalı var orada.
+
+111
+00:25:15,306 --> 00:25:23,306
+Normalde Thevenin ve Norton'un yaptığı şey ki, bizim bir, her zaman diyoruz karışık bir devre tasarımımız var.
+
+112
+00:25:23,966 --> 00:25:27,725
+Biz buna bir yük direnci bağladığımızda bu devre, karmaşık devre.
+
+113
+00:25:28,546 --> 00:25:31,987
+Şuradan okuduğumuz yük direncinin üzerinden sonuçta bir akım geçiyor.
+
+114
+00:25:31,987 --> 00:25:39,645
+İl-A akım diyebiliriz. Ve yük direnci üzerinde bir gerilim oluşuyor. Buna da VL diyelim hadi şimdi.
+
+115
+00:25:40,426 --> 00:25:56,385
+Amaç şu, ben bu kompleks netvördü bir adet kaynak ve dirençten, eğer ki kaynak gerilim kaynağı ise Thevenin, eğer ki kaynak akım kaynağı şeklinde ayarlanırsa Norton.
+
+116
+00:25:57,290 --> 00:26:17,590
+şeklinde yani bir akım kaynağı ve buna paralel bir direnç veya bir gerilim kaynağı ve buna seri bağlı bir direnç olarak kompleks network'ünü kurabilirsem, bu Thevenin eşdeğerliği gerilim için, akım için ise Norton eşdeğer devresi oluyor.
+
+117
+00:26:17,590 --> 00:26:24,590
+Bizim burada bağlayıcı kriterimiz şu, ben Thevenin'de Norton'un da bu devreyi çevirdiğinde,
+
+118
+00:26:24,617 --> 00:26:41,578
+Şuradan RL yükü aynı zaten, hepsinde aynı değer. Bu RL yükü, yük direnci üzerinden geçiş yaparak olan İ ile ve bunun üzerine oluşacak olan V ile gerilimleri 3 devre içinde aynı olmak zorunda.
+
+119
+00:26:42,877 --> 00:26:45,578
+Yoksa zaten eşdeğer devre diyemiyoruz.
+
+120
+00:26:46,957 --> 00:26:50,478
+Burada akım kaynağını biz işte Norton akımı,
+
+121
+00:26:51,275 --> 00:27:08,214
+Norton iç direnci veya Norton eşdeğer direnci, Thevenin ise Thevenin eşdeğer direnci ve Thevenin gerilim kaynağı şeklinde ibarelerle VTH ve RTH, IN ve RN şeklinde gösterilmiş.
+
+122
+00:27:09,578 --> 00:27:33,098
+Burada hani ilk söylemiştik ya, VL ile karakteristiği identical olmalı. İşte bunu kastediyorum. Yani biz bir devreyi Norton devre tasarımı yaptığımızda ve bir şekilde akım kaynamı ve dirençle gösterdiğimizdeki IL ve VL, RL'ye yük direnç üzerinden geçen akım ve üzerinde biriken gerilim bizim orijinal devreyle aynı olmak zorunda.
+
+123
+00:27:35,275 --> 00:27:53,055
+Bunun için dört teknik var. Norton'da da aynı, Thevenin'de de aynı. Dört tane metodu var yani bu yaklaşım çözebilmemiz için. Bir tanesi işte VTH ve RTH'i bulmak hedef burada. Norton'da da I, N ile R, N'yi bulmak.
+
+124
+00:27:53,578 --> 00:28:03,877
+Burada source transformation yaptığımız teknik. Aslında iki, yani source transformation bizim Thevenin ve Norton'un birinci metodunu oluşturuyor.
+
+125
+00:28:03,877 --> 00:28:16,938
+Yani misal demin şu örnekte, eğer ki, kaç bulmuştuk, şey, [öğrenci], şeyi, ha akım kaynağı, şöyle bir şey yazdım misal.
+
+126
+00:28:18,377 --> 00:28:34,558
+Yukarı mı da aşağı mıydı? Onu da unuttum gerçi ama. Yukarıya. Aşağı mıydı ki ya? Neyi hocam tam olarak? Akımın yönü, 1.78'in yönü aşağıya. Aşağıya hocam, aşağıya olması lazım. Zaten pozisyon çıktığı için aşağıya olması lazım.
+
+127
+00:28:40,747 --> 00:28:47,605
+Burada da bir direnç bulduğumuzu düşünelim, kaçtı hatırlamıyorum ama 5, 2 oradan gelecekken bulmadık gerçekten onu.
+
+128
+00:28:48,227 --> 00:28:51,666
+2 paralel, 7 paralel, 5 olacak herhalde.
+
+129
+00:28:52,507 --> 00:28:53,706
+Buradan ne gelir?
+
+130
+00:28:54,645 --> 00:28:56,166
+Tabii biraz birbiri bir şey gelir.
+
+131
+00:28:56,166 --> 00:29:00,406
+Yani şu 2 paralel, 7 paralel, 5.
+
+132
+00:29:03,466 --> 00:29:11,507
+Bu devrenin, şu gördüğümüz devrenin eşdeğerliği, Thevenin'e, Norton'a göre budur.
+
+133
+00:29:12,067 --> 00:29:28,407
+Çünkü bu devredeki şu I0'dan elde ettiğim şu gerilim kaynağı, yani bu akım kaynağı, akımı devreye bu direnç üzerinden verdiğimde, buna bir yük direnci bağladım da şuradan, okuyacağım değer buradaki değerle aynı olacak.
+
+134
+00:29:29,385 --> 00:29:38,046
+Yani Norton'da Thevenin de aslında bizim için sadece gerilim mi yoksa akım mı olduğunu belirten iki kaydı.
+
+135
+00:29:39,546 --> 00:29:47,166
+Birinci yöntemimiz bizim Source Transformation yapmak. Yani kaynakların dönüşümü bu birinci teknik. Şu ana kadar öğrendiğimizde buydu.
+
+136
+00:29:47,826 --> 00:29:50,067
+Örnek verelim bir network'ümüz var.
+
+137
+00:29:51,050 --> 00:30:05,730
+Ve biz buna bir yük direnci bağladık. Soru şu, bu yük direncinden aynı bu kompleks devreden elde ettiğim akım ve gerilim bazında en sade şekilde bu network ayı nasıl gösteririm?
+
+138
+00:30:06,507 --> 00:30:34,507
+Bunun için Source Transformation, yani metot 1'i yapalım. 12-3 birbirine seri olduğundan 4-3 olarak yazdık. 3-6 birbirine paralel direnci olduğundan 2 diye yazacağız. Sonra 4-2 birbirine paralel olduğundan bunu gerilim şeklinde yazabiliriz. 8 yani. 8 voltu da 2 ile 7'yi birbirine seri oldu artık. Bunları toplarsak 9-10 direnç olan...
+
+139
+00:30:34,507 --> 00:30:38,366
+8 voltta gerilim kaynağı olan bir kompleks devre bu.
+
+140
+00:30:39,227 --> 00:30:48,666
+Ve ben aslında bu şu kısmı hesaplayarak Source Transformation ile bu devrinin Thevenin eşdeğer devresini buldum.
+
+141
+00:30:52,394 --> 00:31:01,134
+Buradan gücü de hesaplaracak olursak, bunun üzerinde ne kadar güç birikliğini zaten normal formülden buluyoruz.
+
+142
+00:31:02,534 --> 00:31:12,394
+Şimdi ikinci teknik, üçüncü teknik, dördüncü teknik, toplam dört tekniğimiz var. Bunlar aslında her farklı farklı sorularda uygulanabilecek teknikler.
+
+143
+00:31:13,095 --> 00:31:19,894
+İkinci teknik bize şöyle bir yol sunuyor. Diyor ki, eğer ki devrimizde bir gerilim kaynağı varsa,
+
+144
+00:31:20,873 --> 00:31:31,913
+İkinci teknik bizim devremizin sonundaki şu yük direnci olan kısmını açacağız.
+
+145
+00:31:32,873 --> 00:31:37,034
+Ve biz burayı açtığımızda buradaki gerilime VOC diyeceğiz.
+
+146
+00:31:37,795 --> 00:31:41,894
+Yani Open Circuit gerilim diye bir ibare vereceğiz.
+
+147
+00:31:41,894 --> 00:31:45,835
+Bu aslında bizim Thevenin gerilim olacak.
+
+148
+00:31:47,095 --> 00:31:48,595
+VTH'ımıza eşit olacak.
+
+149
+00:31:50,921 --> 00:31:58,123
+Şey için de, buradan bakarak analiz yaptığımızda da, şurası gitti zaten, 7-10'dan bir şey geçmedi çünkü açık devre.
+
+150
+00:31:58,421 --> 00:32:03,903
+Ve ben nerenin gerilimini ölçüyorum aslında? 6-10'un üzerindeki gerilimi ölçmeye çalışıyorum değil mi?
+
+151
+00:32:04,462 --> 00:32:10,982
+12, 6-10'un üzerine nasıl dağılacak? 12 çarpı 6 bölü 9'dan 8 volt.
+
+152
+00:32:10,982 --> 00:32:18,403
+Yani aslında VOC benim için 8 volt. O da benim aslında Thevenin gerilimim olacak.
+
+153
+00:32:21,098 --> 00:32:31,837
+Akım için ise şurayı kısa devre ediyoruz ve buradan geçen akım benim Norton akımı diye tabir edeceğimiz akımı verici.
+
+154
+00:32:32,899 --> 00:32:45,117
+Buradan da burayı kısa devre ettiğimiz için şuradan baktığımızda 7 ile 6 birbirinden paralel ve paralellikten doğan bir 3-10'la serilik söz konusu.
+
+155
+00:32:45,590 --> 00:33:02,890
+Buradan eşdeğer devresini bulursak, eşdeğer devreleri. Arkadaşlar, şurayı çok karıştırıyorsunuz, onu belirteyim. Burada bulduğum eşdeğer devre direnci, Thevenin veya Norton direnci değildir. Kesinlikle. Bu hatayı yapmayalım.
+
+156
+00:33:04,489 --> 00:33:16,970
+Kısa devre etme mevzusu, sadece buradaki geçen akımı bulacağız ve o bizim akımımız, Norton akımı veya Thevenin gerilimini bulmak için kullanacağımız bir parametre olur.
+
+157
+00:33:18,189 --> 00:33:20,831
+Pardon, RTH'i bulmak için bir parametre olur.
+
+158
+00:33:22,314 --> 00:33:41,275
+Yani short shortcut kısa devre edilmiş olan kısımdan geçen akımı bulurken kullandığımız eşdeğer devre direnci, Thevenin devre direnci demek değildir. Bunu unutmayalım. Mesela burada eşdeğer kaç çıkacak? 7-6 yaparlar oldu.
+
+159
+00:33:42,603 --> 00:33:51,681
+İşte şurası kaç çıkıyor acaba ya? 1 bölü 7, 1 bölü 6, hani 1 çıksa şurası, burası mesela 4-10 gibi bir şey çıkacak maksimum. Değil mi?
+
+160
+00:33:55,462 --> 00:34:09,001
+Pardon, 7 bölü 2, 3 buçuk, 6 buçuk gibi bir şey çıkacak maksimum. 6 buçuk ohmluk bir şey bulduğumuz RTH veya RN Norton direnç olmuyor. Bunu unutmayalım.
+
+161
+00:34:09,705 --> 00:34:31,305
+Bu ikinci metopta akımı bulmamız gerekiyor. Akımı bulurken bizim bakacağımız o yük direnci kısmını kısa devre edeceğiz. Diğer taraftan devreyi analiz edeceğiz ve buradaki akımı bulacağız. Buradaki akımı bulmak için de ne yapmamız lazım? 7-10 koldan geçen akım bu aslında.
+
+162
+00:34:33,675 --> 00:34:40,114
+Normalde ana kolu bir bulup sonra şu noktadan nasıl dağıldığına göre analiz yapabiliriz.
+
+163
+00:34:40,215 --> 00:34:51,794
+Ana kolu bulmak için de 12 volt giriş gerilimim var. Şuradaki R2'un yani bu devrenin eşdeğer devresi 3 artı 7 ile 6'nın birbirine paralel olmasından.
+
+164
+00:34:52,234 --> 00:35:17,234
+Orada 1.92 amperlik bir akım varmış, şu I, N akımı. Bu nasıl dağılacak? 7 çarpı 1.92 bölü 7 artı 6'dan akım dağılacak. Yani aslında 6 bölü 13'ten 1.92 bölü, yani bununla çarpacağız. 0.88'miş I, SC. Şimdi bu I, SC'yi ben R, T, H bulmak için kullanacağım.
+
+165
+00:35:18,090 --> 00:35:32,951
+Zaten VTH'ı biliyorum, VOC'yi yani. O zaman 8 volt bölü 0.88'den RTH'ımı bulmuş oldum. Yani benim üstündeki kompleks devrem 8 volt VTH'ı olan.
+
+166
+00:35:33,322 --> 00:35:54,962
+Thevenin gerilim olan ve 9-10 ile tek bir dirençle ibaret edilebilecek bir devre tasarımı. Buradan elde edeceğim akım yani işte 8 bölü 9'dan gelecek olan 0.88 ise aslında benim şuradan gelen akıma aynı olması gerektiren kaydıyı sağlayacak.
+
+167
+00:35:58,282 --> 00:36:17,421
+Üçüncü teknikte ise bu sefer yükleri, şu örnekle gidelim, yine aynı örnek, bu sefer yine açıyoruz yük direnç kısmını. Bu yük direnç tarafından tekrardan biz baktığımızda VOC dediğimiz gerilim, yine Thevenin gerilini, 2'de ve 3'de aynı şey.
+
+168
+00:36:21,514 --> 00:36:31,274
+Thevenin direnci için ise bu sefer gerilim kaynaklarını kısa devre, akım kaynaklarını ise açık devre yapıyoruz.
+
+169
+00:36:31,894 --> 00:36:42,313
+Open circle. Ondan sonra açık tarafta, yani yük direnci tarafından bakarak RTH'ı hesaplamamız gerekiyor.
+
+170
+00:36:42,313 --> 00:36:46,133
+Yani ben bunu bu hale getirdikten sonra...
+
+171
+00:36:46,134 --> 00:36:51,415
+Kesinlikle, tabii şu an burada ikisi de aynı şekilde ama şuradan bakmıyorum.
+
+172
+00:36:53,195 --> 00:36:55,974
+Her zaman bir açık taraftan bakacağım.
+
+173
+00:36:57,634 --> 00:37:09,495
+Öyle olunca da 3 ile 6 birbirine paralel 7 de bunlara seri olmaktan gelen 9-10'luk bir direncin ve 8-10'luk bir giriş geriliminin olan bir Thevenin eşdeğer devresi olduğunu söyleyeceğiz.
+
+174
+00:37:10,794 --> 00:37:19,294
+Birinci, ikinci, üçüncü teknikler arkadaşlar bağımlı kaynak olmadığı sürece yapılabilir, uygulanabilir teknikler.
+
+175
+00:37:20,015 --> 00:37:23,573
+Bağımlı kaynak varsa dördüncü tekniği uygulayacağız.
+
+176
+00:37:24,374 --> 00:37:30,134
+Burada da bu sefer tek farkı bunu VOC'yi bulmak için ne açacağız?
+
+177
+00:37:30,715 --> 00:37:34,493
+Bir problem yok. Buradan bir VOC yani VTH diyeceğiz.
+
+178
+00:37:36,355 --> 00:37:36,614
+Ama
+
+179
+00:37:37,291 --> 00:38:01,690
+RTH'ı bulmak için bağımlı kaynaklarda, bağımlı olduğu yer önemli olduğu için yine gerilim kaynaklarını kısa devre edeceğiz. Bu sefer buraya, normalde üçüncü metodla RTH'ı buradan bakarak yapıyorduk. İkinci metodla da buradan geçen akımı buluyorduk. Bu sefer buraya bir test gerilimi bağlayacağız.
+
+180
+00:38:02,507 --> 00:38:27,507
+1 voltluk veya Norton yapacaksa 1 amper. Bir test akım veya test gerilimi bağlayacağız. Amaç burada şu, bu test gerilimi bağladıktan sonra, yani işte 1 voltluk bağladık, bu taraftan bakarak bir eşdeğer RT, R-Equiment bulduk. 7 artı 6 bölüm, 6 bölüm, 6 bölüm, 6 bölüm, 7 bölüm.
+
+181
+00:38:28,134 --> 00:38:49,054
+Buradan geçen akımı bulduk şu an. Yani şurada bir voltluk bir akı, gerilim kaynağı, test gerilim kaynağından bu devreyi beslerken şurada oluşan akımı buluyorum. Bu akımı da sonra V testte, yani şuradaki testte böldüğümde benim RTH'ı vermiş oluyor devre.
+
+182
+00:38:50,251 --> 00:39:03,411
+Sonuçta bir gerilim kaynağım var ve bir akım üretti. İkisini de biliyorum gerilimi akıma böldüğümde şu kutu içerisindeki sonuçta olan eşdeğer devresini bana vermesi lazım.
+
+183
+00:39:04,411 --> 00:39:05,811
+Ve eşit, RL çarpı, RL.
+
+184
+00:39:08,090 --> 00:39:10,871
+Burada da 9-10'u yine bulduk.
+
+185
+00:39:11,170 --> 00:39:17,350
+Dördüncü teknik, bağımlılarda uygulayacağımız teknik, bağımlı kaynakları olan sorunlarda uygulayacağımız teknik.
+
+186
+00:39:19,371 --> 00:39:23,170
+Burada var mı 1, 2, 3 ve 4. tekniklerde anlaşılmıyor mu ya?
+
+187
+00:39:27,210 --> 00:39:40,230
+Örnek bir sorumuz var. Diyor ki, 1 kilo ohmluk direnç tarafından bakıldığında, yani bizim bilgilendirdiğimiz RL direnci bu, bunun Thevenin eşdeğerini bulalım diyor.
+
+188
+00:39:41,169 --> 00:39:53,390
+Bir kere, üçüncü teknik dediğimiz, bakılan yerden, eğer bağımlı kaynak yoksa, tekrardan söylüyorum, akım kaynaklarına açık,
+
+189
+00:39:53,782 --> 00:40:13,042
+Gerilim kaynaklarını kısa devre ettiğimiz ikinci metod, pardon üçüncü metod, RTH'i bulmak için çok daha pratik bir metod. Burayı ben kısa devre ettim, burayı açık devrettim. Ne kaldı? 3 ile 2. Birbirine sevin. Yani RTH'im benim 5 kilo olmuş.
+
+190
+00:40:16,523 --> 00:40:22,882
+Şimdi burada iki tane kaynak olduğu için, öteki tarafta şimdi bireride VTH lazım, Thevenin gerilimi lazım.
+
+191
+00:40:23,523 --> 00:40:29,543
+Thevenin gerilimini bulabilmek için ben bu kısmı açık yapacağım ve buradaki VOC'yi bulacağım değil mi?
+
+192
+00:40:29,882 --> 00:40:31,443
+VOC'yi bulmam lazım.
+
+193
+00:40:32,222 --> 00:40:35,882
+Ama burada iki tane kaynak olduğu için süperpozisyon uygulayabilirim.
+
+194
+00:40:36,382 --> 00:40:37,921
+Ne diyordu süperpozisyon bize?
+
+195
+00:40:38,402 --> 00:40:43,802
+Kaynaklar gerilim kaynağı ise pisa devre, akım kaynağı ise açık devre ederek analiz ediyoruz.
+
+196
+00:40:44,297 --> 00:41:09,898
+İşte yani her birini bir seferde. Şu an mesela 4 voltu analiz yapalım. O zaman bunu devreden kaldırdım. Açık devre yaptım yani. O zaman 4 bölü 5'ten benim, pardon 4 volt zaten gerilim kaynağı pardon, 4 volt olduğu için devreyi besleyen V olduğumda yine 4 volt değişti olacak. Değil mi? KBL kanunlarına yani.
+
+197
+00:41:10,411 --> 00:41:30,711
+Burada 4 voltu bulduk bir tanesinde. Ötekisini de bu sefer, burayı kısa devre ediyorum. 2 mA koydum. 2 mA nasıl dağılacak? 3 mA üzerinde. Bu taraf çarpı 2 mA şeklinde dağılacak değil mi? O da 4 volt yaptı.
+
+198
+00:41:33,034 --> 00:41:56,454
+Sonra bu ikisini ne yapıyorduk süperpozisyonuna? Bulduğumuz iki değeri topluyorduk. 4 artı 4'ten 8 volt. Benim bu devrenin VTH'ını bulmuş oluyorum. RTH'ı da 5 kilo ohm. Bu ikisi aslında benim kompleks devrem. Sadece 8 voltluk giriş gelinme sahip ve bir 5 kilo ohm'a sahip bir devrem. Şuradaki devre.
+
+199
+00:42:01,546 --> 00:42:12,567
+Buradan elde edeceğim, yani bu bir kilo 10'u besleyecek olan, üzerinden geçecek olan akım, bu devrede neyse öyle, burada da aynısı öyle.
+
+200
+00:42:16,394 --> 00:42:17,274
+Tamam, nice.
+
+201
+00:42:23,082 --> 00:42:25,421
+Tamamız değil mi arkadaşlar? Bir problem yok.
+
+202
+00:42:28,483 --> 00:42:44,783
+Norton'unu yapmak istesek, teminini bulduktan sonra zaten source transformation yaptığımızda akım kaynağı ve buna bağlı paralel bir akım, direnç yapısı bize Norton yapısını sunuyor bu devre.
+
+203
+00:42:50,987 --> 00:42:53,747
+Buna biraz uğraşalım arkadaşlar. Sizden bekliyorum.
+
+204
+00:43:01,130 --> 00:43:06,451
+Norton ve Thevenin eşdeğer devreleri soruluyor. Zaten açık olan yer belli.
+
+205
+00:46:30,891 --> 00:46:34,291
+Var mı arkadaşlar yapacak? Çok zor bir soru değil.
+
+206
+00:47:12,139 --> 00:47:14,079
+Evet, yapacak var mı arkadaşlar?
+
+207
+00:48:55,371 --> 00:48:57,769
+[öğrenci], sen değil, başka biri varsa
+
+208
+00:49:02,026 --> 00:49:05,885
+Başka biri yoksa geçeceğim soruyu. Ben çözmeyeceğim yani.
+
+209
+00:49:10,347 --> 00:49:18,225
+Hatalı da olsa yapın arkadaşlar. Sonuçta hani deneyip, yani nerede hata yaptığınızı belirtiriz.
+
+210
+00:49:26,059 --> 00:49:33,559
+Yani bir kısım, çözüm göstermiyorum, çözümü siz çözerken ben izah ederim.
+
+211
+00:49:34,659 --> 00:49:38,498
+Yani hatalı yaptığımız kısımda müdahil olup doğruyu buluruz.
+
+212
+00:49:38,838 --> 00:49:42,358
+Ama birinin, hani benim öğrencilerden yapmasını istiyorum.
+
+213
+00:49:51,818 --> 00:49:54,659
+[öğrenci], al kalemi bir nerede hata yaptın bakalım.
+
+214
+00:50:08,970 --> 00:50:23,870
+Ben burada şu 3V2KG şeyleri 1.5 şeklinde yukarı akım olacağını düşündüm. O yüzden şöyle yukarı doğru 1.5 mA şeklinde yazdım.
+
+215
+00:50:27,114 --> 00:50:30,354
+Sonra buraya da 2 kilo onluk direncimizi koydum.
+
+216
+00:50:33,254 --> 00:50:39,034
+Şimdi burada Source Transformation'daki en önemli hassasiyet şu olmalı.
+
+217
+00:50:39,894 --> 00:50:50,293
+Bunu değiştirdiğinde, yani bu ikisini bir Source Transformation'a soktuğunda, akım kaynağına hiçbir zaman seri bir direnç bağlanmıyor.
+
+218
+00:50:56,009 --> 00:50:58,411
+Buna paralel olarak koyman lazım.
+
+219
+00:51:00,829 --> 00:51:02,250
+Şunu aldıracağım.
+
+220
+00:51:02,470 --> 00:51:03,609
+Yukarı isil istersen.
+
+221
+00:51:12,106 --> 00:51:14,106
+Tamam, devam edelim.
+
+222
+00:51:16,106 --> 00:51:22,106
+Şöyle aşağı doğru 7 mA'miz burada duruyor. Bu ikisini birleştireceğiz.
+
+223
+00:51:33,451 --> 00:51:41,430
+İlk başta böyle bir devremiz oluştu. Sonrasında bu 1.5 ile 7 amperi sanırsam aşağı doğru 5.5 yapacağız hocam.
+
+224
+00:51:41,930 --> 00:51:49,189
+Ve burada paralelliklerden 2 ile 5'i birleştireceğiz. Sonrasında 1'e seri yapacağız. Bu şekilde bir devre oluşacak.
+
+225
+00:51:50,029 --> 00:51:51,430
+Devam edeyim mi? Doğru mu düşünüyorum?
+
+226
+00:51:51,669 --> 00:51:57,009
+Doğru düşünüyorsun. Yani şunu düşünüyorsun. Ben hızlıca çizim isterseniz.
+
+227
+00:52:01,451 --> 00:52:04,930
+2 ile 5'in serisi ne oluyor ya?
+
+228
+00:52:06,170 --> 00:52:07,711
+10 bölü 7 hocam.
+
+229
+00:52:08,291 --> 00:52:13,211
+10 bölü 7, o da 1 nokta ne olur?
+
+230
+00:52:15,529 --> 00:52:20,090
+1 nokta 5 mi olur? 4 yapsak şimdilik şöyle.
+
+231
+00:52:20,111 --> 00:52:20,891
+1 nokta 42.
+
+232
+00:52:22,009 --> 00:52:23,611
+42 olsun, tamam.
+
+233
+00:52:24,830 --> 00:52:28,489
+Sonra benim bir de burada 1 filomom var.
+
+234
+00:52:33,835 --> 00:52:36,275
+Şurası da VOC.
+
+235
+00:52:36,974 --> 00:52:39,755
+Şimdi VOC'den kastımız ne burada?
+
+236
+00:52:41,474 --> 00:52:44,374
+Aslında 1 kilo ohmun hiçbir anlamı yok.
+
+237
+00:52:45,215 --> 00:52:49,114
+Şu 1.42 üzerindeki gerilim ve o gerilimde neye eşit olacak?
+
+238
+00:52:50,814 --> 00:52:54,913
+Şu ikisini source transformation yaparsan buna eşit olacak.
+
+239
+00:52:55,634 --> 00:52:56,054
+Değil mi?
+
+240
+00:52:56,413 --> 00:53:00,413
+Yani 5.5 x 1.42 muhtemelen şöyle bir şey gelmiş lazım.
+
+241
+00:53:01,002 --> 00:53:12,702
+7.85 gibi. Ama yönü aşağıda olduğu için, ben VOC'yimi böyle aldığım için negatif olarak göreceğim.
+
+242
+00:53:14,543 --> 00:53:16,342
+Tamam mı? Burası.
+
+243
+00:53:19,222 --> 00:53:25,103
+Bu benim bulmuş olduğum gerilim, VOC gerilimim aslında VTH gerilimim olacak.
+
+244
+00:53:25,770 --> 00:53:44,451
+Direnci nasıl bulacağız? Direnci de en basit yöntem, eğer bağımlı kaynak yoksa şunu demiştim, gerilim kaynaklarını kısa devre yap, akım kaynağının olan kolu açık devre yap ve normalde hesaplamayı yapacağın kısımdan devreye bağ.
+
+245
+00:53:45,130 --> 00:53:51,810
+Böyle baktığımda 5 ile 2 aslında birbirine paralel, bir de bunlara seri olan devre.
+
+246
+00:53:51,910 --> 00:53:54,989
+5 ile 7, bu ikisinin paralelliği 1.42 idi zaten.
+
+247
+00:53:55,810 --> 00:54:02,349
+Bunu 1 ile de topladığımda 2.42, 10'lukta bir RTH'im var.
+
+248
+00:54:03,750 --> 00:54:11,329
+Aslında benim devrem, eksi 7, yani şöyle bir devre bunun eşlenenliği.
+
+249
+00:54:23,947 --> 00:54:37,067
+7.2 Burası da 7.85. Ters yazdım ki yönünü belirtilir. Böyle bir devre.
+
+250
+00:54:39,401 --> 00:54:52,681
+Bu, Thevenin kısmıydı. Bunu zaten Norton'la çevirdiğimizde de 7.85, 2.42'ye böldüğümde Norton okulunu bulacağım. Devremde 3.23'miş herhalde o zaman.
+
+251
+00:55:04,169 --> 00:55:07,451
+olan Norton karşılığı olmuş olacak.
+
+252
+00:55:09,489 --> 00:55:10,411
+Var mı bir sıkıntı?
+
+253
+00:55:14,954 --> 00:55:15,755
+Yok ara orada.
+
+254
+00:55:28,970 --> 00:55:32,871
+Yok değil mi arkadaşlar sorumuz? Yok, gayet basit. Yok hocam, sağ olun.
+
+255
+00:55:35,210 --> 00:55:43,090
+Başka bir örneğimiz var. Bu sefer bağımlı bir kaynak var. Thevenin ekonomatı, Thevenin eşdeğer devreleri soruluyor.
+
+256
+00:55:43,730 --> 00:55:53,451
+Burada bağımlı kaynak, yani şuradaki VX olduğundan, VOC'yi bulmak aslında VX, yani daha doğrusu buraya VX verilmiş.
+
+257
+00:55:53,830 --> 00:55:59,830
+Ve bağımlı kaynakta bu Vx'in 4000'e bölümü gibi bir akım kaynağı.
+
+258
+00:56:00,070 --> 00:56:06,770
+Aslında burada soruda Vx olarak nitelendirilen şey, istenen şey VOC'miz bizim devrede.
+
+259
+00:56:08,470 --> 00:56:13,509
+Ve VOC'yi analiz ederken, bulurken de biz 3 kilo ondan herhangi bir akım geçmeyecek.
+
+260
+00:56:13,590 --> 00:56:14,750
+Çünkü açık devre burası.
+
+261
+00:56:15,270 --> 00:56:18,391
+Ve VOC dediğimiz nokta aslında şurası olmuş oluyor.
+
+262
+00:56:18,954 --> 00:56:29,993
+Yani 2 kilo Ohm'un üzerinden geçen, tabi burası açık devre olduğu için de bu akım nasıl gidecek? Bu 2 kilo Ohm'un üzerinden geçecek.
+
+263
+00:56:30,493 --> 00:56:43,073
+Yani ben buraya bir KBL yazmak istesem, eksi 4 artı 2 kilo Ohm çarpı eksi Vx bölü 4000, şuradaki akım buraya gelecek.
+
+264
+00:56:43,073 --> 00:56:46,133
+Çünkü burası açık zaten, VOC'yi hesaplıyorum şu an.
+
+265
+00:56:46,507 --> 00:56:58,705
+Artı 3x10 üzeri 3, 0. Çünkü neden? Buradan bir akım geçmeyecek ve burası açık olduğu için. Bir de VOC'miz yani VX'mizi belirtiyoruz burada.
+
+266
+00:57:00,026 --> 00:57:08,186
+Bunu çözdüğümüzde VX'in yani şuradaki gerilimin 8 volt. O da VOC'ye eşit olduğunu buluyoruz.
+
+267
+00:57:09,806 --> 00:57:13,466
+Yani bu aslında VOC dediğimiz Thevenin gerilimini.
+
+268
+00:57:14,507 --> 00:57:17,706
+Thevenin gerilimini bulduktan sonra RTH'ı bulmamız lazım.
+
+269
+00:57:17,947 --> 00:57:33,546
+Ama burada RTH da dediğimiz gibi bağımlı bir kaynak olduğu için, bu bağımlı bir kaynak olduğu için SC, yani bunu kısa devre ettiğimizdeki analizi yapabiliriz.
+
+270
+00:57:33,626 --> 00:57:39,747
+Öteki tarafta, hani şunu kısa devre yapalım, buradan bakalım, RTH odur.
+
+271
+00:57:40,139 --> 00:57:45,038
+diyebileceğimiz yapıyı yapamıyoruz. Çünkü burada bir bağımlı kaynak var.
+
+272
+00:57:45,514 --> 00:58:10,954
+Bağımlı kaynağı atamıyoruz. Akım kaynağını açık devre, gerilim kaynağını kısa devre ediyoruz ama bağımlı kaynağı bir şey yapamıyoruz. Öyle olduğu için de birinci teknikte ISC dediğimiz short circuit akımını bulup bu akımdan gidebiliriz. Nasıl gideceğiz? VOC'yi bu akıma böldüğümde ben RTH'i bulmuş olacağım.
+
+273
+00:58:12,489 --> 00:58:29,489
+Burayı kısa devre ettiğimde zaten buradaki akım kaynağı diskalifiye oluyor. Çünkü paralel yapılarda kısa devre olan kısımdan akım geçecek. Buranın bir etkisi olmayacak. Öyle olunca aslında devrem benim 4 volt beslemedi, 5.
+
+274
+00:58:29,930 --> 00:58:42,231
+Kilo Ohm seri bir devreye dönüyor. 4 voltu 5 kilo Ohm'a böldüğümde ben aslında, burası tabi diskalifi oldu, burası artık şöyle dönen bir devre, kısa devre yaptığımız için.
+
+275
+00:58:43,090 --> 00:58:50,830
+Buradan geçen akım 0.8 miliampermiş, tabi her yerden geçen 0.8 miliamper, 8 volt.
+
+276
+00:58:51,755 --> 00:59:02,215
+VOC'mdi, 0,8'de ISC'mdi. Buradan birbirine bölerek VOC bölü ISC'yi, RTH'i 10 kilo ohm şeklinde bulurum.
+
+277
+00:59:02,794 --> 00:59:14,814
+Mesela bu soruda eğer biz burayı kısa devre ettik, buraya açık devre etseydik, yani RTH'i bulurken ki o teknolojik olasaydık, buranın RTH'i 5 kilo ohm çıkacak.
+
+278
+00:59:19,755 --> 00:59:42,335
+Akım kaynağını devreden atamam. Sadece iki teknik de bunu çözebilirim. Ya test akımı göndereceğim ki bu da aslında ona geliyor ve OC'yi 8 volt vererek aynı mantıkla yapmış oluyoruz. Birinci teknikteki ÖSC, yani burayı kısa devre edeyim ki bunu elimine edeyim.
+
+279
+00:59:42,827 --> 00:59:46,206
+Çünkü elimle etmiş oluyorum paralel olduğundan dolayı.
+
+280
+00:59:46,706 --> 00:59:49,046
+Elimle edince bir değişkenden kurtuldum.
+
+281
+00:59:49,186 --> 00:59:50,147
+Ve ilk ise artık yok.
+
+282
+00:59:50,806 --> 01:00:02,087
+4 volt bölü 5'ten ben ISC'mi, yani buradaki short circuit akımını bulup, VOC'yi ISC'ye bölerek de RTH'ımı bulmuş oluyorum.
+
+283
+01:00:08,043 --> 01:00:13,023
+Yani burada bağımlı kaynağını nasıl elimine edebiliriz? Bunu düşünmemiz gerekiyor.
+
+284
+01:00:13,463 --> 01:00:19,103
+Misal, diğer sorularda gerilim kaynağını kısa devre akım kaynağını açık yaparak onları elimine ediyoruz.
+
+285
+01:00:20,103 --> 01:00:22,043
+Ama bağımlı kaynağı elimine etmenin...
+
+286
+01:00:22,231 --> 01:00:29,470
+Yollarına bakmamız lazım. Eğer gerekiyorsa test gerilimi vereceğiz. Bu da test gerilimi vermek bunu yok etmiyor.
+
+287
+01:00:30,009 --> 01:00:41,911
+Dahası işte buraya ben bir test gerilimi verseydim, şöyle, yani dördüncü tekniği uygulasaydım, artı, eksi, bir volt deseydim, şuraya bir bölü dört bin hesabında bir akım işlemini yaptık.
+
+288
+01:00:41,911 --> 01:00:49,791
+Daha da işler karışık bir noktaya gidecekti. Onun yerine biz buraya kısa devre ederek,
+
+289
+01:00:56,937 --> 01:01:15,877
+Başka bir soru, diyor ki, Thevenin devresini soruyor, zaten iyi akımla, burada da bakın bir bağımlı kaynak var ve buradan geçen akıma bağımlı diyor. Ama şunu biliyorum ki ben, devre bu haliyle buradan bir akım geçmez. Akım geçmeyeceği için de burada bir gerilim oluşmayacak.
+
+290
+01:01:16,618 --> 01:01:28,338
+Gerilim oluşmadığı için de VOC, yani Thevenin gerilimini, şurayı hesaplamak istediğimde, aslında 2,10 üzerindeki gerilimi hesaplayacağız.
+
+291
+01:01:28,858 --> 01:01:39,179
+Ama burada bir gerilim iyiye bağlı olarak olmayacağı için bizim gerilim VOC gerilimimiz 0 volt diyeceğiz.
+
+292
+01:01:40,330 --> 01:02:06,109
+Peki, Thevenin eşdeğer devresini nasıl bulacağız? Ya direncini, RTH'i yani. RTH'i de yine aynı şekilde bak bu gerilim kaynardan bunu kısa devre edeyim diyerek yapamıyor. Neden? Bağımlı olduğundan. Peki bunu nasıl ortadan kaldırabiliriz? Ben buraya bir test gelimi, tabii burada akım bağımlı olduğu için akım test, akım kaynağı koyarsam.
+
+293
+01:02:08,169 --> 01:02:09,890
+Buraya bir akım kaynağı koydum.
+
+294
+01:02:13,290 --> 01:02:15,890
+Bir amperlik bir akım kaynağı koydum.
+
+295
+01:02:16,210 --> 01:02:19,029
+Şimdi bu i ne oldu? Eksi bir amper oldu.
+
+296
+01:02:20,109 --> 01:02:26,310
+Burası eksi bir amper olunca burası da eksi bir buçuk voltluk bir gerilim kaynağına dönüştü.
+
+297
+01:02:26,829 --> 01:02:27,269
+Değil mi?
+
+298
+01:02:27,849 --> 01:02:29,609
+Bundan sonra benim amacım şu.
+
+299
+01:02:30,109 --> 01:02:32,090
+Buradaki akım, yani i'yi bulayım.
+
+300
+01:02:32,841 --> 01:02:43,042
+1 amperi i'ye böldüğünde, yani ISC mantığında dediğim olay bu esasında, 1 amperi i'ye böldüğünde şuradaki RTH gelecek bana.
+
+301
+01:02:44,362 --> 01:02:46,582
+Değil mi? Burada bir problemimiz yok.
+
+302
+01:02:49,822 --> 01:02:53,062
+Burada tabii şey yapacağız.
+
+303
+01:02:55,338 --> 01:03:06,538
+Eksi bir, şöyle bir not analizi yapacağız. Şuraya geliyor ya, i'yi bulmak hedef, sonra bir amperi, yani test gerilimini bu i'ye böldüğümde RTH'i vereceğiz.
+
+304
+01:03:06,838 --> 01:03:10,758
+Bu i'yi bulmak için de bir not analizi yazabilirim. Nasıl yazabilirim?
+
+305
+01:03:11,679 --> 01:03:16,559
+Burada, yani şu V test diye belirttiğim yer aslında şurası.
+
+306
+01:03:16,559 --> 01:03:19,679
+Değil mi? V test eksi bir buçuk.
+
+307
+01:03:20,841 --> 01:03:36,581
+Bölü 3, buradan bir akım geliyor. Sonra Vtest bölü 2, şuradan bir akım gidiyor. Eşittir. Burada da tabii eksi biri karşı tarafa atınca bir geldi.
+
+308
+01:03:44,841 --> 01:03:59,602
+VTS'de 0.6 bulduk. Evet, şurasını. 1 amperi de vermiştik zaten. Yani 1 amper, VTS'de 1 amperi böldüğümüzde bizim için RTH çıkmış oluyor.
+
+309
+01:04:01,195 --> 01:04:25,995
+Burada tekrardan belirtiyorum, bağımlı kaynak olduğundan dolayı, bağımlı kaynağı nasıl bağımsız moda getirebilir, bunu bakmamız lazım. Short-Turkut burada çalışmazdı. Neden? Çünkü burayı kısa devre etmek, 2.10'u ortadan kaldıracak. Evet ama iyi bulmamıza hala bir sorun, yani bitmiyor. Hala bir i var, bu 15 iyi nasıl bulacağız? 1.5 iyi pardon.
+
+310
+01:04:26,666 --> 01:04:36,166
+Öyle olduğu için buraya bir test gerilimi vererek test akımı vererek i'yi en azından bir akımmış gibi farz ediyoruz.
+
+311
+01:04:37,166 --> 01:04:46,546
+Ve onu gerilim kaynağına bağlı olduğu için yazıyoruz. Sonra burada not analizinden i'yi çıkartarak v testi bulmaya çalışıyoruz.
+
+312
+01:04:49,447 --> 01:05:06,947
+Akım, yani test akımında test gerilimini böldüğümde benim şuradan geçen akım, daha doğrusu işte bu devrenin iç yapısından oluşan V-test ve akıma akım kombinasyonundaki direnç dağılımını vermiş olacağım.
+
+313
+01:05:09,866 --> 01:05:11,046
+Burası anlaşıldı mı?
+
+314
+01:05:17,643 --> 01:05:19,303
+Anlaşıldı diye düşünüyorum.
+
+315
+01:05:23,529 --> 01:05:35,509
+Yani devrinin eşdeğerliği, altı ohmluk bir direnç istedir. Bu devrede herhangi bir gerilim oluşmuyor şu an. Çünkü iyi şuraya bağlı ve burası açık bir devre zaten.
+
+316
+01:05:40,907 --> 01:06:05,067
+Şimdi güç dediğimiz şey aslında RS ve RL bağlı olarak değişen bir yapıda. Burada sadece şu kaydeyi bileceğiz. Eğer ki benim yük direnci üzerindeki gücü maksimum moda getirebilmem için ne yapmam gerekiyor? RS ile RL'yi eş direnç seçmem lazım.
+
+317
+01:06:06,538 --> 01:06:21,979
+Yani şöyle bir soru sorulabilir. Karmaşık bir devre dizaynı var ve ucunda da bir RL yükü bağlanmış. Soru şu, RL yük direnci üzerinde maksimum güç nasıl elde edilir?
+
+318
+01:06:22,758 --> 01:06:33,258
+Bunu yapabilmen için ilk başta karmaşık devreyi analiz edip bunun Thevenin direncini çıkarmam lazım. Yani karmaşık devreyi tek bir dirençle göstermem lazım.
+
+319
+01:06:33,623 --> 01:06:48,623
+Tek bir dirençle gösterdikten sonra o direnç değeri RL'ye eşitlenirse, benim için RL üzerinde maksimum gücün toplandığı, disiple edildiğini söyleyebilirim, deliberate olduğunu söyleyebilirim.
+
+320
+01:06:51,302 --> 01:06:54,741
+Bu kaideyi unutmuyoruz arkadaşlar, tamam mı?
+
+321
+01:06:59,882 --> 01:07:19,523
+Burada bir ara verelim arkadaşlar. Vakit bayağı geçti. 15-15 benim saatim. 3.30'da geri devam ediyoruz dersimize. O sırada arkadaşlar, uğraşmak isteyenler, şunları açayım size yaptıracağım zaten bunu da, bununla uğraşabilir.
+
+322
+01:21:30,921 --> 01:21:35,741
+Evet arkadaşlar, devam edelim dersimize. Var mı çözecek arkadaş?
+
+323
+01:21:42,346 --> 01:21:57,365
+Bir süperpozisyon sorusu. Geçen hafta işlemiştik. Buna benzer veya birebir aynısı da olabilir o soru ama geçen hafta bir örnek soru yapmıştık. Bunu burada çözecek var mı?
+
+324
+01:22:01,993 --> 01:22:20,774
+O zaman arkadaşlar size şu son 3 soruyu, 23, 24, 25, şu 25 zaten çözümü var bunun, bunu çözeceğiz.
+
+325
+01:22:21,855 --> 01:22:23,835
+Bu 3 soruyu çözmenizi istiyorum.
+
+326
+01:22:23,835 --> 01:22:24,874
+Haftaya.
+
+327
+01:22:25,835 --> 01:22:32,274
+3 tane random şu listeden, participantdan 3 kişiyi seçeceğim, yaptıracağım.
+
+328
+01:22:34,153 --> 01:22:38,813
+Yani kimin olacağını bilemeyeceğiniz için de 3 sorunun 3'ünü de yapmanızı istiyorum.
+
+329
+01:22:39,394 --> 01:22:41,015
+Yapmayanlardan puan kıracağım.
+
+330
+01:22:41,974 --> 01:22:42,774
+Yapamayanlardan.
+
+331
+01:22:42,774 --> 01:22:47,755
+Bu 3 soruyu ciddi anlamda çalışıp yapacaksınız arkadaşlar.
+
+332
+01:22:50,251 --> 01:22:55,189
+Gelelim son sorumuza. Buradaki bunun çözümü yaptıydım.
+
+333
+01:22:55,627 --> 01:23:12,725
+Burada da yine bir Thevenin sorusu. Bu sefer diyor ki, maximum power yapmak için, yani bu RL direnci üzerinde maksimum gücü düşürebilmek için, deliver edebilmek için, iletebilmek için RL'nin değerinin ne olması gerektiği sorulmuş.
+
+334
+01:23:12,927 --> 01:23:23,506
+Esasında RL'nin maksimum olabilmesi için RL direnci üzerinde biz ne dedik? İçerideki RTH'ın diğerine eşit olması gerektiğini söylemiştik.
+
+335
+01:23:23,627 --> 01:23:48,225
+Bunun için ilk başta RTH'ı bulmamız lazım. Bir bağımlı kaynak olmadığı için kısa devre ettim gerilimi. Akım kaynağında açık devre yaptım. Açık devre ve kısa devre yapınca 6-12 birbirine paralel, 3 ile 2 ile birbirine seri olan bir devre diagramı çıktı. Buradan burası 4 geldi, buradan da 5 geldi. 9-0'luk bir RTH'ım var. Dinle.
+
+336
+01:23:48,971 --> 01:24:02,231
+4 geldi, 5, evet 9, 10. Buradan sonra maksimum power'ı, buradaki RTH'i bulduk, 9, 10'muş herhalde. Ben öyle gördüm şu an.
+
+337
+01:24:04,971 --> 01:24:26,631
+Bir de bizim için tabii ki de Maximum Power'ın ne olacağını sormuş. Hani neye eşit olacağı, tamam buradaki RL'nin 9 Ohm'a eşit olacağını çıkartacağız. Ama bir de Maximum Power'ın ne olduğunu bulmamız için zaten buradan geçen akımı veyahut da yani şu VTH'ı bilmek gerekiyor. VTH'ı bulmak için de ne yapacağız burada?
+
+338
+01:24:28,457 --> 01:24:47,698
+Mesh yapılabilir yine aynı şekilde veya Source Transform'la da gidilebilir. Nereye kadar gidilmek lazım? 2 amperin olduğu yere kadar gidilebilir. Burada mesh yapabiliriz. Mesh yaparsak ne çıkar buradan? Şu mesh'i yazarsak eğer, artından çıktığı için direkt şöyle yazacağım ben.
+
+339
+01:24:57,643 --> 01:25:22,722
+Bu birinci formülümüz, bu sıfıra eşit olacak. İkinci meşi yazalım. Nedir ikinci meşimiz? Şuradan şöyle yazabiliriz. 12, 2-1 yazdım. Ters yazdım yani. Sonra eksi, şey R, burası eksi olsa, tamam aynı şekilde 3, 2 yazdım.
+
+340
+01:25:23,338 --> 01:25:43,417
+Bir de eksi 2 amper yazdı. Değil mi? Bu da sıfır eşit olacağı. Bu iki denklemi yerine koyarsak zaten şuradaki kaydıyı da görüyoruz. Hani İ2'nin 2 amperi eşit olması lazım değil mi? Yani tersten eksi 2 olması lazım. İ2 gördüğümüz yere eksi 2 koyarak I1'i buradan çekebiliriz.
+
+341
+01:25:43,797 --> 01:26:09,198
+Veyahut da yukarıdan çekebiliriz. Nihayetinde bizim için önemli olan şu 3 Ohm'un üzerindeki gerilimi bulmak. Yani şu noktaları bulmak. Çünkü bu bir akım kaynağı. Bunu bulduktan sonra VTH'i bulacağız. VTH'i bulunca biz formülden R'yi de biliyoruz zaten. V kare bölü R'den gücü bulmuş oluruz.
+
+342
+01:26:12,747 --> 01:26:27,987
+Şurada 2A mi yazdım? Pardon. 2A yazmayacağız. Doğru diyorsunuz herhalde. Ya burada 2A sadece I2'nin yolunu biliyor zaten. Eksi 2A gelecek. Eksi 2A'ya göre de soruyu çözeceğiz. Aynen.
+
+343
+01:26:29,447 --> 01:26:32,545
+Buradaki 2A ben volt olarak görmüşüm kusura bakmayın. Evet.
+
+344
+01:26:37,930 --> 01:26:38,871
+Tamam mıyız?
+
+345
+01:26:41,430 --> 01:26:53,550
+O diğer üç soruyu haftaya dediğim gibi tekrardan random bir şekilde sizden aranızdan seçeceğim bir şey yapmanızı isteyeceğim. O yüzden üç tanesini de evde lütfen çalışalım.
+
+346
+01:26:54,550 --> 01:26:57,791
+Ve soruların cevabını hazır bir şekilde tutalım.
+
+347
+01:27:02,026 --> 01:27:15,067
+Norton, Thevenin bu kadardı arkadaşlar. İleride tekrardan sorular yapacağız. Ama bu hafta yeni bir konu olan kondansatör ve bobin yapısına geçmemiz lazım.
+
+348
+01:27:29,451 --> 01:27:38,009
+Evet. Yavaş yavaş artık enerji depolayan devre elemanlarına giriş yapacağız. Şimdi ne demek enerji depolayan?
+
+349
+01:27:38,009 --> 01:27:56,150
+Mesela bir direnç üzerindeki, yani tabii gündelik hayatta, gerçek hayatta bir ısınma gibi veya bir şekilde enerji üzerinde biriktiriyor ama depolama anlamında sonra kullanılabilme, yani tekrardan devreyi besleme anlamında bir fonksiyonelliği yok.
+
+350
+01:27:56,617 --> 01:28:04,617
+Ama kapasitör ve indüktör dediğimiz, yani kondansitör ve bobin devre elemanları, enerjiyi depolayarak...
+
+351
+01:28:05,385 --> 01:28:32,645
+Enerjiden kastığımız gerilim ve akım. Yani sadece gerilim olarak düşünmeyeceksiniz, sadece akım olarak düşünmeyeceksiniz. Enerjiyi oluşturan iki şey vardı. Bunlar da gerilim ve akımdı. Bu iki bazlı enerjiyi depolayan, biri gerilim tabanlı depoluyor, bir tanesi de akım tabanlı depoluyor. Enerjiyi sonrasında da devre içerisinde kullanabilmemizi sağlayan devre elemanları.
+
+352
+01:28:38,219 --> 01:28:50,938
+Evet, bu derste biz ilk etapta çok matematiksel bir şeye girmeden biraz iç yapılarından nasıl bu işler, depolama dediğimiz enerjinin korunumu içerisinde saklanması sağlanıyor buna bakacağız.
+
+353
+01:28:50,938 --> 01:28:58,938
+Sonra da işte misal kondansatördeki gerilim ilişkisini, bobinde de...
+
+354
+01:28:59,338 --> 01:29:07,658
+Akım ilişkisini inceleyeceğiz. Kondansatörlerin seri veya paralel bağlanması, bobinlerin seri veya paralel bağlanmasına bakacağız.
+
+355
+01:29:08,377 --> 01:29:12,097
+Ve bunları analiz etmeye çalışacağız dersinde.
+
+356
+01:29:13,457 --> 01:29:16,377
+İlk etapta kondansatörlere bir bakalım.
+
+357
+01:29:17,098 --> 01:29:31,219
+Kondansitör dediğimiz materyal arkadaşlar veya kapasitör veya kapasitans diye de tabir edilen devre elemanları aslında elektrik dediğimiz. Nedir diye elektrik? Elektriği geçirmeyen.
+
+358
+01:29:31,219 --> 01:29:41,319
+Bir materyal bulunduran içerisinde yalıtkan diyebiliriz yani insüleiter diyebiliriz. İnsüle eden bir materyal içeren.
+
+359
+01:29:41,685 --> 01:30:07,667
+Bir devre elemanı. Normalde kenarda, yani şu di elektrik materyatının kenarında plate'ler vardır. Bu plate'lerde yükler birikir ve bu yükler ne kadar di elektrik de olsa bir içeride yavaş da olsa bir akıntıya neden olacak. Bu da bunun içerisinde gerilimi muhafaza edebilmemizi sağlayacak mekanizmayı bize olanak verecek.
+
+360
+01:30:08,203 --> 01:30:15,983
+Burada bir formülü var, kondansatörlerin C olarak belirtilen,
+
+361
+01:30:16,374 --> 01:30:35,855
+Yükü depolama birimi, kolomp diye tabir edilen bir, şu kadar kolompluk yükü tutuyor, şu kadar kolompluk yükü deşarz ediyor vs. diyebileceğimiz bir parametresi var. Bu parametre genelde alan ile doğru, uzaklık ile ters orantılı.
+
+362
+01:30:41,835 --> 01:30:57,715
+Şurada, burada bahsediyordum. Şuradaki alan, yani şu platlerin alanı daha uzun olduğunu düşünelim. Arttıkça bizim depolayacağımız gerilim boyutu da artıyor. Enerji artıyor yani.
+
+363
+01:31:07,913 --> 01:31:13,515
+Bir mesafe olursa, diyelektrik madde azalacağı için daha iyi bir kapasitesi oluyor.
+
+364
+01:31:14,913 --> 01:31:20,973
+Sonra bir diğer parametre ise bir diyelektrik materyelin bir konstantı var.
+
+365
+01:31:21,335 --> 01:31:25,633
+Hangi materyelden yapıldıysa bunun bir kas sayısı var.
+
+366
+01:31:25,794 --> 01:31:30,979
+Aynı rezidive etkide hatırlarsanız bahsettiğimiz bir kas sayı vardı orada da.
+
+367
+01:31:30,987 --> 01:31:46,885
+Pi gibi bir şey. Burada da aynı şekilde diyelektrik materyali iç yapısından doğan, o materyalin özelliğinden doğan, kas sayıya bağlı olarak da kapasitansın artma oranı mümkün.
+
+368
+01:31:48,686 --> 01:31:54,987
+Yani aslında yüze ile doğru orantılı, uzaklık ile ters orantılı ve kapasitanın şu...
+
+369
+01:31:56,266 --> 01:32:06,067
+Parametresi ile de doğru orantılı bir kapasitans kolum değeri elde edebiliyoruz kondansatörlerden.
+
+370
+01:32:08,087 --> 01:32:17,305
+Şimdi iki tarz genelde kondansatörler var. Bir tanesi polerize olmayan, kutupsuz diye tabir ettiğimiz kutupsuz kondansatörler.
+
+371
+01:32:17,770 --> 01:32:26,310
+İzolator yani içerisindeki iç o di elektrik materyal genelde kağıt, mikro, seramik, polimer gibi malzemelerden üretiliyor.
+
+372
+01:32:26,859 --> 01:32:41,859
+Bir de elektrolik diye tabir ettiğimiz bir çeşidi var. Bunların kutupları var. Negatif terminal her zaman düşük voltajlı kısma, pozitif terminal ise pozitif voltajlı kısma değinmesi gerekiyor.
+
+373
+01:32:42,559 --> 01:32:47,339
+Bunun iç yapısında da alüminyum gibi daha advanced materialler var.
+
+374
+01:32:48,523 --> 01:33:11,863
+Polarize olmayan kondansatörler, yani kutupsuz kondansatörlerin herhangi bir yönü yok. Artı, eksi, eksi, artı, nasıl bağlarsanız bağlayın. Bir depolama, bir enerji depolaması var. Ama bunlar genelde çok çok ufaktır arkadaşlar. İşte picoferast seviyelerindedir. Çünkü zaten kağıt gibi çok da advanced olmayan bir teknolojiyle üretiliyor.
+
+375
+01:33:13,643 --> 01:33:38,823
+Bunların üzerini okurken de ilk iki tanesi direkt kendi değerini veriyor, 10. Üçüncüsü 10 üzeri K'yı veriyor. Yani burada 2 ise eğer 100, 10 çarpı 100 dediğimizde 1000. Bu konular üstünün değeri. Şimdi K olması toleransı veriyor ama piko farat olmasını da veriyor esasında.
+
+376
+01:33:39,287 --> 01:33:56,287
+Burada da Pico, Parat-K'dan anlıyoruz ve toleransı da artı eksi %10K olduğundan dolayı veriliyor. Çok önemli bir şey değil ama yarın bir gün işte normalde bizim devre laplarımız şeyde olsa...
+
+377
+01:33:57,291 --> 01:34:07,649
+Laboratuvar ortamında olsa fiziksel olarak malzeme aldıracaktık. Bu malzemenin üzerine okumak bu anlamda faydalı olurdu ama şu etapta en azından simülasyonla yapıyoruz her şeyi.
+
+378
+01:34:08,211 --> 01:34:13,371
+Peel Spice'li kutupsuz kondansütörün sembolü de bu şekilde gösteriliyor.
+
+379
+01:34:14,849 --> 01:34:24,169
+Kutuplu kondansütör, her zaman kutuplu kondansütörlerin uzun bacakları, bir bacağı uzun, bir bacak kısa olur.
+
+380
+01:34:24,587 --> 01:34:39,466
+Uzun bacakları ki, şekilde de zaten uzun bacağını bu şekilde göstermiş. Yani kırmış ve aynı uzunlukta ama genel olarak baktığımızda şeyi daha uzun yani uzun bacak. Uzun bacaklar eksiği, kısa bacakları artıyı gösterir.
+
+381
+01:34:44,907 --> 01:35:02,846
+Beslemenin artı ucuna, eksi bacağı ise voltajı düşük, potansiyeli düşük olan kısma bağlanır. Yani ters bağlanır. Bunu unutmayalım. Yani şöyle bir diagramımız varsa beslememiz, ben bu kondansörü böyle bağlamam lazım.
+
+382
+01:35:08,330 --> 01:35:20,109
+Tamam. Ki şarj olabilsin. Genelde işte biraz daha boyutları büyüktür. Çünkü iç yapısında sarımlı bir de elektrik materyaller var.
+
+383
+01:35:20,291 --> 01:35:28,310
+Ve bunlar da katmanlı alüminyum şeyli bir yapıda. Biraz daha Edmense'd. Ve kutuplu konular süteler genelde tüplü tüp yapısında olur.
+
+384
+01:35:29,090 --> 01:35:33,391
+Ötekiler daha böyle mercimek gibi olurlar. Yeşil mercimek tarzında.
+
+385
+01:35:35,371 --> 01:35:39,551
+Bir de bunların, Rotorlu yani motor,
+
+386
+01:35:40,010 --> 01:36:05,751
+Bu aradaki yüklenme miktarını belirten platlerin hareketli olmasından dolayı değişkenlik gösterebilen ayarlı kondensörler de var. Çok da mühim değil, biz şu an bunu kullanmayacağız. MEMS'ler var, Micro Electromechanical System diye şu an güncel bir çalışma alanları bu da zaten elektronikte. Bu RF sinyal, RF elektronikleriyle alakalı kullanılan bir teknik.
+
+387
+01:36:08,010 --> 01:36:12,810
+Kondansatörün yükleneceği miktarı değiştirebiliyor.
+
+388
+01:36:13,231 --> 01:36:20,150
+RFS'in yerine göre bunlar materyaller değişiyor, substratlar değişiyor, katkılar değişiyor.
+
+389
+01:36:20,670 --> 01:36:24,971
+Öyle olunca da daha farklı bir kondansatör yüklenmesi gerçekleştirebiliyor.
+
+390
+01:36:27,631 --> 01:36:30,310
+Çift katmanlı var kondansatörler.
+
+391
+01:36:30,310 --> 01:36:35,051
+Yani bunlar süper kapasitör veya ultra kapasitör olarak da geçiyor.
+
+392
+01:36:35,498 --> 01:36:52,398
+Bu günümüzde alternatif enerji sistemleri diyorlar, ya mesela şu an yeşil enerji diye tabir ettikleri güneş enerjisinde depolamak vs. bunlar kondansator bazında çok zor şeyler.
+
+393
+01:36:52,578 --> 01:37:00,597
+Yani tutup da işte siz günlerce güneşin altında bir paneli tutmanız size belki de tüketim esasında bir saatlik enerjiyi anca veriyor.
+
+394
+01:37:00,874 --> 01:37:20,774
+Ama bunlar süperkapasitörler sayesinde. Bu bir tık daha iyileşmiş durumda. Hatta batarya modülleri bu şeydeki Tesla araçlarında vesaire çok advanced kondansatör mimarilerindeler, kapasitör mimarilerindeler. Bu yeni yeni çıkmaya başlayan bir teknik.
+
+395
+01:37:24,457 --> 01:37:35,479
+Şimdi kapasitörün elektrik anlamında özelliklerine bakacak olursak, birinci özelliğimiz şu, eğer ki steady state dediğimiz durumdaysa kapasitörün, bu ne demek?
+
+396
+01:37:35,479 --> 01:37:46,179
+Steady state dediğimiz durum, doyum anı, yani duran olduğu an, şarj anı değil, şarj olmuş konulasyon, ondan sonraki an.
+
+397
+01:37:47,051 --> 01:38:12,609
+Olduğunda bizim kondansatörümüz, kapasitörümüz açık devreymiş gibi davranır. Yani daha fazla şarjı almaz o anlamda. Devreyi keser anlamında değil. Bakın, yani şarj olacağına doyduktan sonra devre tekrar akımı içerisinde dolandırır ama şey yani kondansatör kendisi open circuit gibi davranır.
+
+398
+01:38:13,098 --> 01:38:15,159
+Bunu sorularda göreceğiz zaten.
+
+399
+01:38:16,358 --> 01:38:28,319
+Sonra eğer ki konvansitörü biz veya kapasitörü şarj etmek istiyorsak her zaman girişteki voltajın sabit olması lazım.
+
+400
+01:38:28,559 --> 01:38:36,059
+Kontinuyos bir şekilde değişiklik yaşamadan gerilim verilmesi gerekiyor konvansitöre.
+
+401
+01:38:37,059 --> 01:38:38,838
+Ki şarj olabilirsin.
+
+402
+01:38:39,787 --> 01:39:02,907
+Ve de ideal kapasitörler genelde bir enerji üzerinde sömürmez ama tabii gerçekte bu böyle değil. Gerçekte şöyle bir mimarisi vardır. Hani yanında simgeleştirirsek bir R direnci olur. R direnci olduğundan dolayı kondansatör bir power dissipate eder, bir gücü kendi üzerinde sömürür. Ama biz idealde bunu göz ardı ederiz.
+
+403
+01:39:05,515 --> 01:39:18,954
+Evet, kondansörlerin iç yük dağılımında dediğimiz gibi bir pozitif yön yüklemesi, gerilim kaynağının pozitif yönüne, negatif yön yüklemesi de negatif tarafından dolayı oluşacak.
+
+404
+01:39:18,954 --> 01:39:33,515
+Ve bunun içerisinde biz bu şekliyle bağladığımızda bir yük alışverişi, bir yük hareketi olacak. Bu yük hareketinden doğan bir burada gerilim biriktirmesi söz konusu olacak. Bu da tamamen elektriksel alanla alakalı.
+
+405
+01:39:33,515 --> 01:39:45,555
+Bu bir durum yani buradaki gerilimin distansa oranıyla beraber bir elektriksel alan oluşacak. Bu Farad formüllerine çok değinmeye gerek yok.
+
+406
+01:39:52,203 --> 01:40:09,902
+Evet, konular störü şarj ederken şunu bileceğiz. Birinci kayda şu, ilk başta konular stör tamamen boşken, gerilim verildiğinde hızlı bir şekilde, kolay bir şekilde konular stör şarj olmaya başlar.
+
+407
+01:40:10,377 --> 01:40:16,417
+Ama ne kadar çok bu plateler arasındaki yükler sonuçta bir yerde doyuma gelecek.
+
+408
+01:40:16,679 --> 01:40:21,758
+Yani ilk başta içi boştu, sonra o yük değişiminden bir yerde doyuma doğru gidecek.
+
+409
+01:40:22,277 --> 01:40:27,957
+Doyuma doğru gittiğinde artık bu hızlı yüklenme eğrisi daha yavaşlayacak.
+
+410
+01:40:27,957 --> 01:40:34,258
+Ve bir yerde artık bu kesilecek veyahut da çok çok çok artmaya başlayacak.
+
+411
+01:40:36,555 --> 01:40:49,413
+Yani şarj olurken kondansatör çok hızlı bir şarjla başlar ama bir yerden sonra potansiyel fark azalacağı için besleme gerilimiyle bu yüklenme daha yavaş gerçekleşir.
+
+412
+01:40:51,114 --> 01:40:56,555
+Deşarjda da aynı şey. İlk başta çok hızlı bir deşarj olur ama yavaş yavaş...
+
+413
+01:40:58,153 --> 01:41:12,335
+İçerisindeki yüklerle zaten bir besleme olmadığı için gene dediği düşünebiliriz. Grand'daki yüke yakınsayacağı için artık konosütör daha yavaş deşarız olmaya başlayacak.
+
+414
+01:41:14,761 --> 01:41:29,603
+Formüllerine baktığımızda kondansatör akım neydi? Akım aslında zamana bağlı olarak yüklerin değişimiydi. Bu kablo içinde de böyleydi. Kondansatör içinde de böyle. Şimdi burada yük dediğimiz şey...
+
+415
+01:41:30,122 --> 01:41:48,002
+Kondansatörü bazında bakacak olursak ülke, aslında C ile kondansatör üzerindeki uygulanan gerilime bakıyor. C, kondansatörün parametresi. 1 farad, 2 farad, 3 farad diye o kondansatörün spesifik olarak bir parametresi.
+
+416
+01:41:49,830 --> 01:42:01,071
+Giriş beslememiz, yani giriş beslememizin bir kondansatör farat parametresiyle çarpımı bizim bu kondansatör için bir yüklenme parametresini oluşturuyor.
+
+417
+01:42:02,131 --> 01:42:11,810
+Bunun, işte bu yüklenme parametresinin, Q yüklerinin zamana bağlı değişiminde bizim kondansatördeki akımımı bulmamızı sağlayacak.
+
+418
+01:42:11,810 --> 01:42:14,810
+Bu da formülü yerine yazarsak,
+
+419
+01:42:15,595 --> 01:42:21,755
+gördüğüm üzere aslında bizim kondansatörün akım formülü diye tabir ettiğimiz formülümüz çıkıyor.
+
+420
+01:42:22,313 --> 01:42:32,274
+Bu da şu, kondansatörün üzerindeki gerilimdeki değişim zamanla bağlı olarak C parametresiyle çarpılıyor.
+
+421
+01:42:33,385 --> 01:42:43,987
+şeklinde çıkacak. Bunu tersten alırsak, yani VC'yi çekersek buradan, integralini almamız lazım ki, işte VC'yi karşı tarafa sadece VC olarak atalım.
+
+422
+01:42:44,626 --> 01:42:48,466
+Bir bölü C, integral akımdaki değişim.
+
+423
+01:42:51,346 --> 01:42:54,786
+Akımın altındaki alan diyelim.
+
+424
+01:42:58,122 --> 01:43:09,522
+Zaten güçle akım çarpı gerilimdi. Burada akım yerine yazarsak, gerilim zaten veyahut da VC'yi yerine yazarsak aynı şeyi verecek zaten.
+
+425
+01:43:10,341 --> 01:43:18,081
+C çarpı VC benim akımımdı. VC'nin de DVC bölü, DT olduğundan çıkartabiliriz.
+
+426
+01:43:18,081 --> 01:43:23,282
+Onlar sütun üzerindeki gücü. Enerji için de formülümüz bu.
+
+427
+01:43:25,451 --> 01:43:42,131
+DC bir gerilimde, VC'nin yani kondansatör üzerindeki değişimi, yüklenme ve deşarj değişimini görüyoruz. Aşağıda devresi var. Bir VC gerilimimiz var. Bir dirençten geçerek kondansatörü şarj ve deşarj edecek.
+
+428
+01:43:42,810 --> 01:43:50,310
+Şimdi şarj elisine baktığımızda zamana bağlı olarak hep şunu demiştik, kondansatörün şarj olması birden çok hızlı olacak.
+
+429
+01:43:50,794 --> 01:44:12,995
+Ama sonraları yavaşlayacak çünkü bu iki nokta arasında, yani VC ve, pardon VC orasıymış, kondansatörün üzerindeki gerilim ile ana beslemedeki gerilim potansiyel farkı azaldığı için yüklenmesi artık elektromanyetik force ile, güç ile daha az, daha yavaştan olacak.
+
+430
+01:44:17,258 --> 01:44:23,618
+Yavaş yavaş şarj olurken, onların üzerinde şarj eğrisi daha geçikli tamamlanacak.
+
+431
+01:44:24,698 --> 01:44:27,859
+Deşarjı da aynı şekilde birden bunu çıkarttık.
+
+432
+01:44:28,778 --> 01:44:30,778
+Ondan sonra ters yönde deşarj olacak.
+
+433
+01:44:32,170 --> 01:44:50,551
+Deşarj olurken, çünkü şunu biliyorum ki burası artı eksi olduğunu düşünelim şöyle. Deşarj olurken de çok hızlı bir inme söz konusu ama bir süre sonra artık potansiyel forponun içerisinde de çok az yük kaldığı için daha yavaş gerçekleşecek.
+
+434
+01:44:53,310 --> 01:44:55,149
+Tamam mıyız burası arkadaşlar?
+
+435
+01:44:59,113 --> 01:45:06,793
+Kondansatör için bilmemiz gereken şarj ve deşarj formülleri, bu iki tanesi, bunları bileceğiz arkadaşlar.
+
+436
+01:45:08,034 --> 01:45:09,473
+Kesinlikle bunları bileceğiz.
+
+437
+01:45:10,313 --> 01:45:14,554
+Neyi söylüyor? Aslında şöyle de kafamıza canlanabilir iş.
+
+438
+01:45:15,874 --> 01:45:24,674
+Zamana bağlı olarak kondansatörün üzerindeki gerilim, bir neye bağlı? Ana beslememize bağlı değil mi?
+
+439
+01:45:25,675 --> 01:45:42,074
+Ana B dememiz, bunu çarptım da Bc. Sonra zamana bağlı olarak E üzeri eksi T bölü Torluk, şuna Tor parametresi diyoruz arkadaşlar veya Tau diyorlar bazıları.
+
+440
+01:45:49,911 --> 01:45:56,551
+Ta da burada bizim devremizdeki eşdeğer R ve eşdeğer C'nin çarpımı.
+
+441
+01:45:58,770 --> 01:46:09,231
+Bu ikisinin çarpımı, yani R ile C'nin, kapasitör, konular störün farad değeri ve direncin değeriyle bir ta hesaplıyoruz.
+
+442
+01:46:09,231 --> 01:46:12,231
+Bu ta aslında bizim şuradaki...
+
+443
+01:46:12,938 --> 01:46:24,899
+Zaman skalasını belirleyen şey, zaten bizde de burada eksi t bölü tau'dan, e üzeri eksi t bölü tau'dan zamanı bulmamızı sağlıyor.
+
+444
+01:46:25,019 --> 01:46:30,838
+Mesela şarj eğrisinde şurada en nihayetinde bir dediğimiz nokta VC zaten.
+
+445
+01:46:31,659 --> 01:46:35,979
+Yani VT'nin bir olduğu nokta VC'dir. VC bölü VC, bir verecek.
+
+446
+01:46:36,578 --> 01:46:39,519
+Yani VT maksimum VC'ye şarj olabilir.
+
+447
+01:46:41,545 --> 01:47:02,865
+Şunu demeye çalışıyorum. Yani zaman sonsuza giderken burası VC çıkacak zaten. Değil mi? Limitini alırsanız, sonsuza giderse T, T sonsuza giderken, burada sadece E üzeri sonsuzdan, zaten buradan bir şey sıfır gelecek, oradan da VC'nin sadece VT'ye eşit olduğunu söyleyebiliriz. Sonsuzda.
+
+448
+01:47:04,042 --> 01:47:17,081
+Ama hiçbir zaman tabii sonsuza gitmeyecek. Ne kadar da olsa burada bir 1-0.0000001 gibi bir değer de olsa VC'den bir tık altına şart olacak.
+
+449
+01:47:19,221 --> 01:47:26,081
+Bu formül kafaya oturdu mu arkadaşlar? Ezberlemenizi istemiyorum ama...
+
+450
+01:47:27,274 --> 01:47:49,833
+Yani ben hep şununla karşılaştığım için özellikle anlatıyorum bunu. Ya VC1-E-T1-T1 tor muydu? Yoksa VC-E-T1 tor. Bu ikisi karışıyor birbirine. Karışmamasını en büyük sağlayacak olan şey şu, şunu bilmek lazım. Sonsuz da zaten benim kondansiyonun üzerindeki gerilim şarjım VC'ye eşit olması lazım.
+
+451
+01:47:53,194 --> 01:48:00,755
+Şuna bakacak olursak, Deşarj'ın, Deşarj ilk başta, yani T0'an da VC'ye eşit olan demek değil mi?
+
+452
+01:48:01,175 --> 01:48:09,573
+Yani, şuranın, T0'an ne demek? Şurası 0 olursa, E üzeri eksi 0'dan 1 gelecek. Değil mi?
+
+453
+01:48:10,354 --> 01:48:12,973
+E burası 1 gelirse, VT, VC'ye eşit olur.
+
+454
+01:48:15,034 --> 01:48:19,813
+Anlatabildim mi? Ya bu ikisi arasını karıştırmayalım. Bu iki formülü bileceğiz.
+
+455
+01:48:23,721 --> 01:48:28,241
+Burada time constant dediğimiz parametre tau parametresi.
+
+456
+01:48:33,609 --> 01:48:43,951
+Kapasitörler paralel bağlanırsa nasıl işlem yapacağız? Hani dedik ya, mesela Tada, R çarpı C dedi. İyi de bir tane C olmayabilir, birkaç tane olabilir.
+
+457
+01:48:44,529 --> 01:48:54,570
+Buraya işlemdeki Tav parametresine eşdeğer C'yi, işlemdeki R parametresine eşdeğer direnci bağlamamız lazım, belirtmemiz lazım.
+
+458
+01:49:01,098 --> 01:49:10,098
+Eşdeğerini hesaplarken paralellerde arkadaşlar, kestirmeden söyleyeyim şimdi ama ispatına bir sonraki sunumda değineceğiz.
+
+459
+01:49:10,719 --> 01:49:16,118
+C1, C2, C3, C4 paralelde bir bölü değil, direnç gibi değil.
+
+460
+01:49:16,649 --> 01:49:35,330
+Direncin tam tersi, yani toplamı şeklinde, C1 artı, C2 artı, C3 artı, C4 şeklinde eşdeğeri bulunur. Bunun nedeni de şu, normalde nod analizi yaparsak şurayla, buranın akımı I1, I2, I3 ve I4'ün toplamına eşit değil mi?
+
+461
+01:49:35,330 --> 01:49:43,989
+Burada her bir akımı ben yazarsam, C1, C2, bunlar her biri farklı kondansatörün C'leri.
+
+462
+01:49:44,489 --> 01:49:45,131
+Şuradaki.
+
+463
+01:49:49,866 --> 01:49:56,685
+C1 çarpı DV bölü DT, C2 çarpı DV bölü DT her birinin üzerinden geçen akım.
+
+464
+01:49:57,346 --> 01:50:06,987
+Bu akımları topladığımda benim için C-Equlement dediğim kısım şurada gördüğümüz gibi hepsinin normal numarik toplamı oluyor.
+
+465
+01:50:08,846 --> 01:50:17,366
+Yani paralel kondansörler de paralel dirençlerin zıttına toplam şeklinde işlem yapılır.
+
+466
+01:50:19,595 --> 01:50:37,695
+Serilere bakalım. Serilerde ise yine aynı şekilde V'lerin yani o mesh analizinde ve KVL'de olduğu gibi analiz edersek, her bir kondansatör üzerinde biriken gerilimin toplamı benim ana girişteki gerilimime eşit olması lazım değil mi?
+
+467
+01:50:46,407 --> 01:50:56,526
+Şu kısımlar hepsinde ortak olduğu için 1 bölü C1, 1 bölü C2, 1 bölü C3, 1 bölü C4 benim kondansatör eşlenerliğim oluyor.
+
+468
+01:50:57,567 --> 01:51:01,267
+Yani direncin yine tam tersi olduğunu burada vurgulayalım.
+
+469
+01:51:02,046 --> 01:51:12,206
+Seri bir kondansatör mimarisi varsa 1 bölü C1, 1 bölü C2 ve onun da tersi olacak şekilde C'ye kılmıntı vermemiz gerekiyor.
+
+470
+01:51:19,755 --> 01:51:39,415
+Evet, özet olarak kapasitörlerle alakalı zaten o vermiş olduğum soru, matematiksel formül üzerinden çok işlem yapacağız da, şu an kısa bir brief information bu, kısa bir ders giriş nihayetinde olacak bu hafta.
+
+471
+01:51:39,797 --> 01:51:52,858
+Kapasitörler bir enerji deponuma birimi olduğunu, ideal bir kapasitör DC'de open circuit olarak yani açık devre olarak steady state durumunda şey yapar.
+
+472
+01:51:52,858 --> 01:52:01,258
+Yani steady state dediğimiz durumda bunu araştırmışlar ve genelde hep bu bilinen bir kaide.
+
+473
+01:52:02,122 --> 01:52:13,362
+Bir kondansatör kesintisiz bir gerilim, DC gerilim kaynağıyla beslenirse, 5 tağlık, ta neydi? O devredeki R çarpı C idi.
+
+474
+01:52:14,081 --> 01:52:26,761
+5 tağlık süre sonunda stelisteydi geçiyor. Yani 5 tağdan sonra bizim kondansatörümüz açık devre olarak bir şarj almayacak.
+
+475
+01:52:29,545 --> 01:52:41,446
+Evet, continuous olması gerektiğini söyledik. Eğer ki gerilim kesilirse şarj eğrisi durur, şarj olmaz. Ama akım için bir şey, böyle bir gerekli söz konusu değil, akım kesilebilir.
+
+476
+01:52:45,993 --> 01:53:00,734
+Evet, indüktör dediğimiz bobinlere bakacağız. Bu da bir enerji depolama ama farkımız şu, burada akım üzerinden, bir manyetik alan üzerinden, akımın oluşturduğu bir manyetik alan üzerinden enerji depolama söz konusu.
+
+477
+01:53:01,413 --> 01:53:05,675
+Gerilim olan kondansatör, akım olan bobin. Bunu unutmayalım.
+
+478
+01:53:07,081 --> 01:53:17,863
+Fiziksel olarak baktığımızda akım aslında bir kalın bir iletken tel ile sarılmış ve ortası diye elektrik bir materyal olan bir yapıda yapılıyor.
+
+479
+01:53:18,421 --> 01:53:29,761
+Amaç şu, burada bir manyetik alanı oluşturmak ve bu manyetik alanı oluşursa akımın içeride elektrik kesilse bile girişte durmasını sağlamak.
+
+480
+01:53:31,913 --> 01:53:43,774
+Gösterimin sembollerine bakarsak, farklı gösterimleri var. PC, PAI'da genelde şu gösteriliyor veya başka şudur, şu da çok yaygın bir gösterim.
+
+481
+01:53:47,595 --> 01:53:48,474
+Bunlara gerek yok.
+
+482
+01:53:49,874 --> 01:53:52,335
+Evet, dediğimiz gibi bir akım akacak içeriden.
+
+483
+01:53:52,595 --> 01:54:04,313
+Akım akarken bir o kadar kablo, yani kablodan dolayı ve içerisindeki diğer elektrikten dolayı bir akım üzerinde depolayacak.
+
+484
+01:54:07,305 --> 01:54:16,986
+Burada kondansörden farklı olarak arkadaşlar akım devreyi yani bobini beslediği yerde aynı dirençte olduğu gibi bir polarizasyon sağlar.
+
+485
+01:54:16,986 --> 01:54:27,326
+Ve tekrardan iletimi kestiğimizde oluşacak akım, yani buradan bir iğleyi verdikten bıraktık, geri oluşacak akım ise tam tersi ünlü olur.
+
+486
+01:54:27,966 --> 01:54:30,926
+Çünkü artı eksisi artık zaten öyle polarize olmuş.
+
+487
+01:54:32,106 --> 01:54:35,787
+Ya kondansatörle benziyor ama kondansatör gibi bir kutbu yok bunun.
+
+488
+01:54:41,225 --> 01:55:02,526
+Tekrar belirtiyorum, biz bir akımla besledik, bir manyetik alanı oluştu ve bu şarj olduğu akıma. Ondan sonra girişteki akım kaynağını veya akımı kestiğimizde, ki bunun da birinci kaydası akımın kontinüüs olması gerekliliği. Eğer akım devamlı değilse şarj olmayacak.
+
+489
+01:55:02,854 --> 01:55:24,934
+Gerilim devamlı, akım devamlı değil. Yine şarj olmaz. Gerilime bağlı bir şey yok bunda. Akımın devamlı olma kaydesiz çok önemli. Aynı kondansatörde gerilimin devamlı olması gibi. Burada gerilim kesintiye uğrayabilir. Bunun bir sıkıntısı yok ama akımın her daim devrede bobini beslemesi lazım.
+
+490
+01:55:26,537 --> 01:55:33,698
+Akımı kestiğimizde artık bu üzerindeki şarjı ters akım şeklinde deşarj edecek.
+
+491
+01:55:35,377 --> 01:55:36,998
+İşareti değişecek yani akımı.
+
+492
+01:55:37,979 --> 01:55:47,899
+Formülüne baktığımızda Henry bizim için aynı Farad neyse kondansatörde, Henry bobinin değerini belirten birim.
+
+493
+01:55:47,899 --> 01:55:53,826
+Bir Henry'nin bir volt alanla alakalı bir...
+
+494
+01:55:54,153 --> 01:55:56,014
+Şey var ama çok önemli değil bu.
+
+495
+01:55:57,774 --> 01:56:04,754
+Akım formülüne baktığımızda, Herlinin akımın zamanla değişimini bizim için bobin üzerindeki gerilim verecek.
+
+496
+01:56:05,274 --> 01:56:08,374
+Akımına baktığımızda da, tam tersi aslında.
+
+497
+01:56:08,374 --> 01:56:13,214
+Ötekinde hatırlarsanız, I, C, C bölü, D, V, C bölü, D, T'ydi.
+
+498
+01:56:14,413 --> 01:56:18,953
+Hatırlarsak, V, C, 1 bölü, C.
+
+499
+01:56:20,907 --> 01:56:33,106
+İ, C, D, T. İ, C yazmışsak da olur aslında. İ, D, T. Birbiri arasında böyle bir zıtlık var. Bunu karıştırmayalım.
+
+500
+01:56:33,227 --> 01:56:45,427
+Yani bobinde akım integral ile, kondansatörde akım türevi ile, kondansatörde gerilim integral ile, bobinde gerilim akım integral ile.
+
+501
+01:56:49,002 --> 01:56:54,562
+Tamam mıyız? Bunlarla alakalı sorular çözeceğiz.
+
+502
+01:57:01,385 --> 01:57:08,385
+güçte aynı şekilde V çarpı i formülünden V ve i'yi yazdığımızda
+
+503
+01:57:14,091 --> 01:57:15,690
+Kısım ayı da gerek yok.
+
+504
+01:57:18,891 --> 01:57:25,330
+Sağ el kuralı çok bilinmesi gerekli bir kural değil ama anlatalım.
+
+505
+01:57:26,051 --> 01:57:34,911
+Şunu söylüyor, eğer bir kabloyu sağ elimize aldığımızda parmağımızın yönü bizim için orada akımın yönünü gösterir.
+
+506
+01:57:35,350 --> 01:57:38,150
+Kaydesini çıkaran bir teknik.
+
+507
+01:57:41,034 --> 01:57:42,294
+Buradan bahsetmiştik.
+
+508
+01:57:44,747 --> 01:57:54,627
+Burada da aynı kondansatörde olduğu gibi, tabii gerçekte bir dissipation, yani bir enerjinin kaybı söz konusu bobinlerde.
+
+509
+01:57:54,827 --> 01:57:56,966
+Ama biz bunu teoride tabii göz ardı ediyoruz.
+
+510
+01:57:57,427 --> 01:58:04,866
+Gerçekte, hani gerçekteki durumu teoriye yansıtabilmek için bir R direncini seri bağlıyoruz.
+
+511
+01:58:04,866 --> 01:58:12,747
+Çünkü biliyorum ki R akımda, yani daha doğrusu seri bağlanan R direnci akımın bunun üzerinde değil.
+
+512
+01:58:12,747 --> 01:58:17,927
+değişmemesini ama gücün yani gerilimi böldüğü içinde gücün değişmesini sağlayan bir retmen olacak.
+
+513
+01:58:22,059 --> 01:58:44,519
+Seri devrelerde birkaç bobin bağlanabilir. Aynı direnç gibi işlem görüyor. Neden? Çünkü baktığımızda seri bobin yapılarında V'lerini aldığımızda L1 yani ötekisinde 1 bölü C1 var. O yüzden bunda L1, L2, L3, L4 zaten D bölü DT'nin ana.
+
+514
+01:58:44,567 --> 01:59:08,167
+Konstantlık bir bölüsü şeklinde. O yüzden dirençte olduğu gibi seri devre bobinlerinde, seri bağlantı şemalarında bobinlerin direk direnç toplama şeklinde işlem yapıyoruz. Paralellerde de bir bölü D, bir bölü D2 gibi toplanmanın ters alımı şeklinde soruyu çözüyoruz.
+
+515
+01:59:11,211 --> 01:59:23,631
+Bobinin şarjı, deşarjı onlara sonradan değineceğiz ama ilk etapta bizim bu dersimizde bobin hakkında bilmemiz gerekenler bunlar. İleride zaten tekrardan değineceğiz.
+
+516
+01:59:25,810 --> 01:59:27,451
+Sorumuz var mı arkadaşlar?
+
+517
+01:59:39,562 --> 02:00:05,443
+Sorumuz yoksa arkadaşlar, Ramazan için herhalde bu kadarlık bir ders yeterli olacaktır. Ramazan ayındayız. Yani kesinlikle o üç soruyu lütfen çözüyoruz arkadaşlar. Haftaya yaptıracağım size. Bunlara çalışalım. Bunun dışında sorunuz varsa buyurun, yoksa dersi bitirelim.
+
+518
+02:00:13,835 --> 02:00:25,695
+Yok herhalde soru. Arkadaşlar, hepinize sağlıklı günler diliyorum. Bu vesileyle Ramazanınız da mübarek olsun diyorum. İyi günler, iyi çalışmalar.
+
+519
+02:00:25,755 --> 02:00:26,515
+İyi günler hocam.
+
+520
+02:00:28,435 --> 02:00:29,195
+İyi günler.
+
+521
+02:03:03,303 --> 02:03:04,942
+Evet arkadaşlar, sesim geliyor mu?
+
+522
+02:03:07,001 --> 02:03:07,803
+Geliyor hocam.
+
+523
+02:03:11,463 --> 02:03:20,942
+Arkadaşlar, Classroom'dan birazdan hocamız sorunuzu paylaşacak, Kübrü hocamız. Soruyu aldıktan sonra arkadaşlar, şu an paylaştığımı bir bakayım.
+
+524
+02:03:36,743 --> 02:03:40,423
+Evet arkadaşlar, sorunuz Kralcım'da paylaşmış hocamız.
+
+525
+02:03:55,525 --> 02:04:06,365
+Soru arkadaşlar çok açık, net. Ben de baktığımda bir şey yok. O yüzden başlayınız bir şekilde 7,5'a kadar gönderme süreciniz var.
+
+526
+02:04:07,827 --> 02:04:14,566
+Gönderirken arkadaşlar dikkatli olun internetinize falan bakın. Geçen hafta 3 arkadaş ben gönderdim gelmedi diyenler var.
+
+527
+02:04:16,365 --> 02:04:21,425
+Ben açıkçası baktım diğer çoğu arkadaşın gelmişti. Onların muhtemelen internetleriyle ilgili bir problemdi.
+
+528
+02:04:22,597 --> 02:04:25,279
+Bunu dikkat etmenizi istiyorum.
+
+529
+02:04:33,669 --> 02:05:00,091
+Soruyu açıkça önce bir detaylı okuyun arkadaşlar. Okuduktan sonra zaten Emin olun soru sorulacak bir kısım yok. Her şey açık, net, belirtilmiş. Yapmanız gereken şeyleri yapıyorsunuz. Orada da zaten belirtmişiz. Bazı arkadaşlar geçen lapta ekran görüntülerini eksik koyan arkadaşlarımız vardı.
+
+530
+02:05:00,615 --> 02:05:22,774
+Bunların puanları kırıldı. Ya da işte işlemleri net yazmayanlar vardı. Yani işlemini yazmamış, hiçbir şey yapmamış, direkt sonuç yazmış, tablo da olmamış. Onların da puanları kırıldı. O yüzden arkadaşlar bunlara dikkat edelim. Her şeyi net bir şekilde yazın. Sizden orada ne isteniyorsa onu yapmanızı bekliyoruz. Soruları da Kübri hocamız okuyacak.
+
+531
+02:05:24,615 --> 02:05:36,454
+Birazdan, şimdi [öğrenci] arkadaşımız nereye gidiyoruz diyecek dediğim işte, arkadaşlar birazdan onu da paylaşacağız, linkini yine Classroom'dan, geçen sefer yaptığımız gibi oraya yükleyeceksiniz.
+
+532
+02:05:37,014 --> 02:05:39,334
+Ben hocayı arayayım bakayım, paylaştım onu.
+
+533
+02:07:50,791 --> 02:07:58,731
+Arkadaşlar, birazdan hocalar paylaşacak. Onu Classroom'dan, oradan yükleyebilirsiniz. Size iyi çalışmalar dilerim. Kolay gelsin.
+
+534
+02:23:32,711 --> 02:23:53,751
+Arkadaşlar, [öğrenci] arkadaşımız iş dirençleri sıfırlayalım mı demişti. Evet arkadaşlar, sıfırlayabilirsiniz. Hocamızla konuştu. Bunu artık raporunuzda belirtmenize gerek yok. Sıfırlayabilirsiniz. Sorunu, cevabınızı da göndermek için link de şu an klasi ruma konuldu. Oradan bitirenleri gönderebilir arkadaşlar.
+
+535
+03:23:36,710 --> 03:23:37,389
+Arkadaşlar, bu, no?
+
+536
+03:23:52,615 --> 03:24:14,295
+Evet, evet, 7.30'da bitiyor. Yani 7.30'a kadar son gönderebilirsiniz arkadaşlar. 7.30'dan sonra o linki kaldıracak hoca. Yani gönderemeyeceksiniz, haberiniz olsun. O yüzden ne kadar yaptıysanız onu gönderin. Ne yaptıysanız onu gönderin. [öğrenci], senin sorununda da yapabildiğin kadar çözümü yoksa, elde edilmiyorsa orada bırakabilirsin.
+
+537
+03:24:15,527 --> 03:24:17,866
+Not olarak yazarsın, böyle böyle yaptım.
+
+538
+03:24:17,925 --> 03:24:22,347
+Hocam, değeri değiştireyim mi? Veyahut da öyle mi kaldı?
+
+539
+03:24:22,366 --> 03:24:29,347
+Yok, bence değiştirme. Ne gerekiyorsa orada bekletirsin dersin, hocam burada bu değerden dolayı böyle oldu. Bir şey olmaz yani.
+
+540
+03:24:29,947 --> 03:24:30,847
+Tamam, teşekkürler.
+
+541
+03:24:31,347 --> 03:24:31,767
+Rica ederim.
+
+542
+03:24:34,567 --> 03:24:40,626
+Hocam, yine soru 2 için. Matris hesaplama makinesi kullanabilir miyiz, hesap makinesi?
+
+543
+03:24:42,023 --> 03:24:50,482
+Yani, bilmiyorum, onu hoca değerlendirecek de, normal, elinle yazarsın, yapabileceğine kadar yazarsın.
+
+544
+03:24:51,563 --> 03:24:52,023
+Anlıcak.
+
+545
+03:24:54,803 --> 03:25:02,442
+Ama her şeyi arkadaşla açık yazarsanız, ben geçen hafta okuduğum kağıtta mesela, açık yazan arkadaşların notlarını yüksek verdim.
+
+546
+03:25:06,246 --> 03:25:10,866
+Muhtemelen Hoca da onu okurken, Kübra da onu okurken dikkate alacaktır.
+
+547
+03:26:28,741 --> 03:26:35,262
+Evet arkadaşlar, bakın şöyle yapıyoruz. Ben geçen hafta siz yoktunuz benim grupta, o yüzden anlatmıştım.
+
+548
+03:26:36,362 --> 03:26:43,262
+Arkadaşlar, önce yazılar, elinizle yaptığınız işlemlerin fotoğrafını çekiyorsunuz, böyle resim olarak yapıştırıyorsunuz.
+
+549
+03:26:44,383 --> 03:26:47,161
+Bu sizin yaptığınız işlemleri göstermiş olacak, hoca ona bakacak.
+
+550
+03:26:47,501 --> 03:26:51,383
+Yaptığınız yazı, işte formül işlemleriniz neyse onu yapacaksınız.
+
+551
+03:26:52,262 --> 03:26:54,322
+Bir de bu tabloları dolduracaksınız.
+
+552
+03:26:54,951 --> 03:27:02,550
+Aynı zamanda bu ekran çıktılarınızı, yani programdaki ekran çıktılarınızı kağıda yapıştıracaksınız, raporunuza yapıştıracaksınız.
+
+553
+03:27:03,050 --> 03:27:04,250
+Hocam bir sorum olacaksa da.
+
+554
+03:27:06,271 --> 03:27:07,371
+Sesinde bir problem var.
+
+555
+03:27:08,290 --> 03:27:08,970
+Bir de ki de hocam.
+
+556
+03:27:10,571 --> 03:27:11,411
+Sesin gelmiyor.
+
+557
+03:27:17,925 --> 03:27:37,387
+Hocam, ben dirençlerden bir tanesini, sırasını hepsini bir, iki soruda hepsini bir ve bir tanesini, on girdiğim zaman bir tane akım sıfır değerini gösteriyor Amparnet'e de. Ama onu yediden başka bir değer yaptığım zaman ölçülebiliyor. Böyle bir sıkıntı yaşıyorum da acaba onu ne yapmam gerekiyor şu anda?
+
+558
+03:27:37,847 --> 03:27:40,505
+Bence onu raporda belirtiyorum.
+
+559
+03:27:41,607 --> 03:27:45,607
+Peki, 7-10'luk değeri bunun için değiştirebilir miyim? Yani değerin çıkması için.
+
+560
+03:27:45,647 --> 03:27:59,267
+Yani bak şimdi soruyu ben okuyamayacağım için. Ben okusaydım derdim, tamam buraya bir arağın ismini yazayım, not edeyim. Bakardım ama soruyu hoca okuyacağı için bence değiştirmene gerek yok. Ya da değiştirirsen de onu belirt.
+
+561
+03:28:00,166 --> 03:28:00,666
+Tamam.
+
+562
+03:28:01,447 --> 03:28:03,326
+Yani değiştirmeden yapayım.
+
+563
+03:28:03,666 --> 03:28:11,947
+Ya değiştirmeden onu belirtirsin dersin böyle böyle oluyor ya da eğer değiştirmek istiyorsan dersin hocam ben böyle olduğundan dolayı değiştirdim.
+
+564
+03:28:12,326 --> 03:28:20,947
+Örnek olarak onu gösterdim. Geçen lafta da bazı arkadaşlar bazı şeyleri belirtmişler numaraları aklı olan arkadaşlarım.
+
+565
+03:28:21,126 --> 03:28:22,267
+Sıkıntı çıkarmadım.
+
+566
+03:28:24,166 --> 03:28:25,246
+Tamamdır hocam. Sağ olun.
+
+567
+03:28:25,366 --> 03:28:26,286
+Siz de sağ olun.
+
+568
+03:29:03,143 --> 03:29:23,121
+Arkadaşlar, gönderenler çıkabilir. Yani göndermeyenler de çıkabilir. Burada kalmanızın bir anlamı yok. Ben de birazdan zaten bitireceğim. Ben de çıkacağım. 7.30'a kadar süreniz var. Bitirenler çıkabilir. Bitirmeyenler de bu sistemden çıkıp notunuzu bitirdikten sonra 7.30'a kadar gönderebilirsiniz.
+
+569
+03:29:37,862 --> 03:29:47,482
+Valla ben, Korumiller'e genelde el yazısı, yani kendim okurken, yüz alan arkadaş eğer el yazısı ile yazmışsa, her şeyi doğru yapmışsa yüz veriyordum.
+
+570
+03:29:48,102 --> 03:29:54,142
+Ama şeyle yapmışsa beş man kırıyordum çünkü nereden yaptığını, kimin yaptığını bilmediğim için.
+
+571
+03:29:54,801 --> 03:29:58,402
+Beş man kırıyor ama, Kirchhoff bunu göz önüne alır mı, almaz mı bilmiyorum.
+
+572
+03:29:59,581 --> 03:30:05,081
+Yani, [öğrenci] sen nasıl istiyorsan öyle yap. Sonuçta bunu okuyacak olan ben değilim.
+
+573
+03:39:38,567 --> 03:39:57,046
+Evet arkadaşlar, artık kapatalım burayı. Zaten yeterince sorular soruldu. Çok önemli, çok çok önemli bir sorunuz olursa Classroom'da yazarsınız arkadaşlar. Her şey net şu an ortada. 7.30'a kadar da gönderebilirsiniz arkadaşlar. Herkese iyi akşamlar diliyorum.
+
+574
+03:40:15,014 --> 03:40:15,914
+Hocam, bir şey sorabilir miyim?
+
+575
+03:40:16,474 --> 03:40:16,993
+Buyrun.
+
+576
+03:40:17,754 --> 03:40:22,174
+Hocam, ben bu devreyi yaptığım vakit, tabi hep Nanda yerinde gösteriyor hocam.
+
+577
+03:40:23,554 --> 03:40:27,035
+Senin devreyi kurmayla bir problemin vardı muhtemelen.
+
+578
+03:40:27,874 --> 03:40:29,914
+Ben de alakalı bir problem değil mi hocam o zaman?
+
+579
+03:40:29,993 --> 03:40:32,575
+Yani evet, yoksa başka bir şey değil mi?
+
+580
+03:40:33,286 --> 03:40:34,786
+Peki, sağ olun hocam.
+
+581
+03:40:35,246 --> 03:40:39,085
+Birazcık araştır, birazcık sen proteos mu kullanıyorsun?
+
+582
+03:40:39,866 --> 03:40:40,946
+Proteos kullanıyorum hocam.
+
+583
+03:40:41,347 --> 03:40:44,347
+Biraz böyle araştır onunla ilgili şey yapma.
+
+584
+03:40:45,606 --> 03:40:50,706
+Dosya boyutunu arkadaşlar, maksimum kaç olduğunu bilmiyorum yani öyle bir şey orada belirtmemiş herhalde.
+
+585
+03:40:51,446 --> 03:40:52,965
+Sıkıntı olacağını zannetmiyorum yani.
+
+586
+03:40:59,174 --> 03:41:01,374
+Siz bir sorun mu yasadınız gönderirken?
+
+587
+03:41:23,079 --> 03:41:29,737
+Tamam arkadaşlar. Yani bugün bu kadar yeter. Çıkabilirsiniz, oradan gönderebilirsiniz. Tamam mı arkadaşlar?
+
+588
+03:41:35,206 --> 03:41:36,446
+Sorusu olan var mı arkadaşlar?
+
+589
+03:41:41,415 --> 03:41:42,394
+Sorusu olan var mı?

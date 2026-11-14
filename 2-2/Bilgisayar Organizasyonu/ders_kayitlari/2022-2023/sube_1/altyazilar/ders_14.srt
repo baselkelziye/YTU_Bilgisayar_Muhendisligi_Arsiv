@@ -1,0 +1,2583 @@
+1
+00:02:23,475 --> 00:02:41,615
+Arkadaşlar, merhabalar. Bu hafta geçen haftadan kaldığımız haftadan yani cache ile ilgili tasarım yapılarını görmüştük. Daha sonrasında bunlar veri okumaya ilişkin veri erişimler ilişkin veriydi.
+
+2
+00:02:45,168 --> 00:02:53,188
+Ne olacağına ise yazma durumu analiziyle bakacağız. Bir de sanal bellek kısmına bakacağız.
+
+3
+00:02:53,388 --> 00:03:04,468
+Bilgisayar donanım açısından nasıl değerlendirmek gerekiyor. CESC'de bir ilişkisi kurulabilir durumda. Bu ilişkiyi de tanımlayarak dersimizi tamamlamaya çalışacağız.
+
+4
+00:03:05,188 --> 00:03:06,768
+İkinci ödevi ilan ettik.
+
+5
+00:03:08,372 --> 00:03:18,092
+İkinci ödev ilan ettik görmüşsünüzdür. Şeye kadar devam ediyor. İşte final zamanına çok yakın bir tarihe kadar süresi devam ediyor. Oraya kadar yükleyebilirsiniz.
+
+6
+00:03:18,092 --> 00:03:29,132
+Onları koymuştuk. Onun dışında kısa sınav 2 ile ilgili okuma işlemlerimiz devam ediyor. Tamamlanınca onları da ilan ediyor olacağız.
+
+7
+00:03:29,932 --> 00:03:33,612
+Şimdi kaldığımız nokta itibariyle şöyle başlayalım.
+
+8
+00:03:34,163 --> 00:03:37,204
+Kaldığımız nokta itibariyle neredeydik?
+
+9
+00:03:41,043 --> 00:03:43,983
+Kaldığımız nokta itibariyle şu noktadaydık.
+
+10
+00:03:45,863 --> 00:03:54,144
+Farklı cache mimarileri vardı. Cache mimarilerine baktığımızda, işte bunlar DirectMap vardı.
+
+11
+00:03:55,704 --> 00:03:57,024
+PlayAssociative vardı.
+
+12
+00:03:59,764 --> 00:04:02,764
+stk.cf ve stk.cf.c de vardı.
+
+13
+00:04:03,764 --> 00:04:09,764
+Üç farklı mimar görmüştük. DirectMap mimaride fiziki adres,
+
+14
+00:04:11,764 --> 00:04:22,432
+fiziki adresin belirli bir kısmı index alanı olarak ayrılıyordu ve index alanı birer bir adresin hangi cache satırına gideceğini belirliyordu.
+
+15
+00:04:22,432 --> 00:04:33,192
+İlgili cache bellek içerisinde hangi byte ile ilgili işlem yapacağımız ise offset bitleriyle yani word offset ve byte offset bitlerinde edileniyordu.
+
+16
+00:04:33,192 --> 00:04:43,072
+Birden fazla bizi iki adres aynı cache satırına denk geldiği için bunları birbirinden ayırt edebilmek için de bir de tag alanını da cache ile saklıyoruz.
+
+17
+00:04:43,072 --> 00:04:45,392
+Dolayısıyla cache ile sakladığımız şey...
+
+18
+00:04:45,459 --> 00:04:53,620
+DirectMap'te, tag alanının kendisi yani adresin belirli bir parçası. Daha sonra bir valid biti saklıyorduk.
+
+19
+00:04:53,620 --> 00:05:02,339
+Ve daha sonrasında da main memory'den getirdiğimiz data bloğu. Hafızada, cache de saklanıyordu.
+
+20
+00:05:02,339 --> 00:05:06,419
+Plastor Shattered Cache yapısına baktığımızda, bunda bitindex alanı yok.
+
+21
+00:05:06,932 --> 00:05:10,692
+Fiziki adresi parçalarken burada bir index alanı yoktu.
+
+22
+00:05:10,692 --> 00:05:15,252
+Peki herhangi bir fiziki adresine hangi satıra denk geldiğini nasıl tutacağız?
+
+23
+00:05:15,252 --> 00:05:19,172
+İlk yerleştirmede sıradaki boş yere yerleştirebiliriz.
+
+24
+00:05:19,172 --> 00:05:23,652
+Fakat cache'in tamamı doluysa orada replacement policy'lerimiz vardı.
+
+25
+00:05:23,652 --> 00:05:33,492
+Mesela list recently used, first in, first out veya random gibi çeşitli yerleştirme replacement policy'lerimiz vardı. Bunları uyguluyorduk.
+
+26
+00:05:33,779 --> 00:05:48,539
+Bunlar için de donanım karşılıklarının birer sayes olabileceğini söylemiştik. Ne saklanıyor cache'te? Cache'te tag alanı saklanıyor, adrese ilişkin olarak tag alanı saklanıyor ve data saklanıyor.
+
+27
+00:05:48,539 --> 00:05:57,099
+Ayrıca valid bitimiz var. DirectMap'te neydi? Tag alanı saklanıyor, data saklanıyor, biz de valid bitimiz saklanıyor.
+
+28
+00:05:57,204 --> 00:06:01,704
+CETA, CETA, CETA yapı ise bu ikisinin başarılı noktaları birleştiriyordu.
+
+29
+00:06:01,704 --> 00:06:07,204
+DirectMap'te nereye bakacağımız belli CETA, CETA'da bir esneklik var.
+
+30
+00:06:07,204 --> 00:06:12,704
+Yani birebir eşlemlik olmadığı için boş alanları daha akıllı bir şekilde kullanabiliyordu.
+
+31
+00:06:12,704 --> 00:06:17,204
+Dolayısıyla CETA, CETA bunların ikisinin ortak özelliklerini.
+
+32
+00:06:17,812 --> 00:06:30,932
+Birindeks kavramı vardı ama satır bazında da setler vardı. Her bir satırdaki setler kendi içerisinde değişim özelliğine sahipti. Yani şu yönde Kule Söşe'ye çalışırken
+
+33
+00:06:31,312 --> 00:06:39,512
+Bu yönde DirectMap bantında çalışıyordu. Dolayısıyla, DirectMap'e karşılaştırdığımızda aynı cache kapasitesi,
+
+34
+00:06:39,512 --> 00:06:46,512
+ClearTouchyative ve TfTouchyative yapılar için geçerlisi, örneğin TfTouchyative dediğimizde 2 set, 4 set, 8 set gibi durumlar.
+
+35
+00:06:46,512 --> 00:06:52,711
+Dolayısıyla aynı kapasitede dersek, bunun daha az sayıda satırı var. Dolayısıyla index bit sayısı daha azdı.
+
+36
+00:06:53,139 --> 00:06:59,060
+Dolayısıyla buraya yerleştireceğimiz tag alanları, DirectMap'taki tag alanlarına göre birazcık daha büyüktü.
+
+37
+00:07:00,160 --> 00:07:02,720
+Kabaca bu şekilde bir yapıdan bahsedelim.
+
+38
+00:07:02,860 --> 00:07:10,420
+Dolayısıyla bir fiziki adresi cache'i ararken, indeks alanına göre ilgili satıra gidiyordum.
+
+39
+00:07:10,800 --> 00:07:26,800
+Satır boyunca tüm setlerde bizim oluşturduğumuz tag değerinin, fiziki adresine gelen tag değerinin, satırdaki tag alanlarıyla uyuşturuşmanın her birisi için check ederek kontrol etmemiz gerekiyordu. Yapı kabaca bu şekildeydi. Bunlar okuma yönlü cache mimarilerimizdi.
+
+40
+00:07:26,800 --> 00:07:35,800
+Yine cache için şundan bahsetmiştik atılacak olursanız, bir data cache'imiz var, bir de instruction cache'imiz var.
+
+41
+00:07:36,531 --> 00:08:02,111
+Buna ilişkin durumu da aslında ikinci ödevde göreceksiniz. Daha net bir şekilde göreceksiniz. İkinci ödevde bir matriz işlemi var. Matriz işleminde kullanılan döngülerin hangi sırada verildiğinin cache yapısıyla uyumunu inceliyoruz aslında. Dolayısıyla bir fiziki makine üzerinde, eğer Linux kullanıyorsanız, bütün meşhurlarına koyabilirsiniz ama neticede fiziki bir makine üzerinde.
+
+42
+00:08:02,708 --> 00:08:23,648
+Var olan cache özelliklerinin algoritmanın çalışmasına etkisini net bir şekilde görebiliyor olacağız. Dolayısıyla oradaki döngülerin yapısına, işlem hızına etkisine veya nihai durumda da zaman karmaşıklığına bir etkisi var. Onu görmüş olacağız ödevle birlikte.
+
+43
+00:08:25,331 --> 00:08:34,751
+Bunları incelerken yalnız hep veri okumaya, veri erişimine ilişkin olarak inceleme yapmıştık. Peki yazma işlemi sırasında neler yapmak gerekiyor?
+
+44
+00:08:35,951 --> 00:08:51,751
+Bir kere cache ve memory'i iki ayrı blok var. Cache'imiz var ve memory'imiz var. Biz okuduk bir veriyi. Şu anda register'ımızda. Bunu update ettik. Daha sonra...
+
+45
+00:08:52,275 --> 00:09:08,575
+Nasıl yeri yazacağız? Bu konsistensiyi nasıl sağlayacağız? Sağlılığı nasıl sağlayacağız? Örneğin veriyi cache'te güncelledik. Ama memurden bir başka kişi buna erişmek isteyebilir. O zaman nasıl hareket edeceğiz? Cache'te güncellediğimiz zaman memurden de güncellemeli miyiz? gibi konular gündeme geliyor.
+
+46
+00:09:09,535 --> 00:09:18,475
+Ama bunların hiçbirisi okuma yönlü erişimlerde mevcut değil. Okuma yönlü erişimimiz veriyi değiştirmediğimiz için bir kaynaktan birden fazla kişi tüketim yapabilir. Ondan yana çıkartıyor.
+
+47
+00:09:19,700 --> 00:09:45,080
+Fakat yazma işlemleri veriyi güncelleyeceği için güncel veriye bir başka kişi erişmek istese onun memori'deki T-1 anı haline mi erişecek, razmaçtaki en güncel haline mi erişmeli veyahut da zaten cache'e bakıyor bu cache'te mi güncellenmeli, cache de güncellendi, memori de ne zaman güncellendi gibi sonlara bir bakış sağlamaya çalışacağız.
+
+48
+00:09:45,748 --> 00:09:54,788
+Dolayısıyla burada güncellenen verinin tutarlılığının sağlanması açısından iki tip yöntem var. Bunlardan ilki write-through yöntemi.
+
+49
+00:09:55,408 --> 00:10:04,268
+Burada bir güncelleme yaptığımız zaman bu hem cache'de hem de mail memory'de aynı anda güncelleniyor.
+
+50
+00:10:04,268 --> 00:10:13,268
+Yani bir veride güncelleme yapıp bunu cache'de güncellemek istediğimizde memory'de de güncelliyoruz. Bu sayede her güncelleme...
+
+51
+00:10:13,727 --> 00:10:25,527
+Main memory'e kadar yayılmış oluyor. Yenik bir kişi bunu okumak isterse, örneğin cache'teki güncellenmiş veriyi kaldırsak bile, gidip main memory'den güncel haline erişip okuyabilecek bir sıkıntı yok.
+
+52
+00:10:25,527 --> 00:10:32,227
+Right-back yönteminde ise, bu biraz daha karmaşık bir yöntem, güncelleme öncelikli olarak sadece,
+
+53
+00:10:33,011 --> 00:10:44,611
+Cache de yapılıyor. Fakat verinin güncellendiği ayrı bir bit olarak burada da tutuluyor. Cache de ayrı bir bit sunumuz ortaya çıkıyor. 4.1 tutunu.
+
+54
+00:10:44,611 --> 00:10:58,011
+Bu 4.1 tutunuyla birlikte de verinin güncellenip güncellenmediğini anlamaya çalışıyoruz. Eğer veri güncel bir veriyse yani 4.1 olan bir satır veya blok
+
+55
+00:10:58,419 --> 00:11:08,419
+CACH'ten kaldırılacaksa, veri güncellenir kaybolma riski var. Bu durumda verinin main memori'de de güncellenmesi gerekiyor.
+
+56
+00:11:08,419 --> 00:11:21,419
+Dolayısıyla right truth'da bir veri güncellemesi yaptığımız zaman hem CACH'te hem de main memori'de aynı anda güncelleniyoruz. Fakat right back işleminde CACH'te güncellemeyi yapıyoruz.
+
+57
+00:11:22,067 --> 00:11:27,248
+Mesela birden fazla veriyle ilgili güncelleme yapmış olabiliyoruz. Bunları hep cache'te güncelliyorum.
+
+58
+00:11:28,488 --> 00:11:40,908
+Hasbalk kadar bu güncellemeler sonrasında yapacağımız erişim, mevcut cache üzerindeki verilerden güncellenmiş bir veriyi cache'ten kaldıracaksa nasıl anlıyoruz?
+
+59
+00:11:41,008 --> 00:11:46,927
+4.1'e bakıyoruz. 1 ise kaldıracağımız verinin 4.1 ise işte o veriyi memory'de güncelliyorum.
+
+60
+00:11:48,148 --> 00:11:53,148
+Dolayısıyla yaklaşım bu şekilde yerine getirilmiş oluyor diyebiliriz.
+
+61
+00:11:54,248 --> 00:11:56,828
+Bunların hızlıca nasıl çalıştığına bakmaya çalışalım.
+
+62
+00:12:01,076 --> 00:12:18,836
+Dörtte biti olduğunu söylemiştik. İkisi arasında ne tür farklar var? İşte performansla ilgili bir tradeoff var. Rightthrough'da evet konsistansı her zaman için sağlamış durumda ama her güncellemede de main memory erişimi var. Dolayısıyla IO işlemlerin biraz daha fazla zaman oluyor.
+
+63
+00:12:27,220 --> 00:12:38,220
+Ben o veriyi cache'ten kaldırmıyorsam, main memoriye yazmama gerek yok. Dolayısıyla üç güncelleme sonrasında en son, nihayet senaryoda, en son güncellenmiş halini main memoriye yazıyorum.
+
+64
+00:12:38,220 --> 00:12:44,108
+Yani nereden baksanız bu senaryo için üçte bir daha az IO erişimi mevcut olmuş oluyor.
+
+65
+00:12:49,683 --> 00:12:53,884
+Right-to' işlemine baktığımızda bunun şematik gösterimi burada gördüğünüz gibi.
+
+66
+00:12:53,884 --> 00:13:04,884
+Prosesör bir veriye erişiyor. Veriyi aldı, yazmacında bunu güncelledi. Güncelledikten sonra hem cache'de hem de main memory'de bu güncelleme gerçekleşiyor.
+
+67
+00:13:04,884 --> 00:13:16,484
+Onun haricinde burada bir şey var mı? Yaklaşık çarpı iki yazma işlemi var. Çünkü aynı veriyi hem cache'de hem memori'de yazıyorum.
+
+68
+00:13:17,299 --> 00:13:25,579
+Drive-to-R işlemi, ek bufferları kullanarak işlemini yerine getiriyor denmiş.
+
+69
+00:13:25,579 --> 00:13:26,539
+Devam edelim.
+
+70
+00:13:30,067 --> 00:13:49,207
+Writeback işlemine bakacak olursak, veri önce cache'ten aradık. Yani işlemci bir komut bürütüyor. Adresle ilgili veriyi cache'te aradık. Cache'te bulamazsak, main memori'den getirdik. Daha sonra cache'ten prosesörü okuduk. Veriyi güncelledik. Güncellediğimiz veriyi cache'te update ettik.
+
+71
+00:13:49,620 --> 00:13:59,120
+Daha sonra belki aynı veriye tekrar eriştik. Güncel halinde yine cache'den eriştik. Güncelledik. Yine update ettik. Cache'de de update ettik aynı veriye.
+
+72
+00:13:59,120 --> 00:14:14,620
+Daha sonrasında bir başka adrese erişim yapacağız. Hasta kadar bu veride aradığımız vakit cache'te yok. Main memori'den tekrar getiriyoruz ve şansa bakın ki bizim daha önceden update ettiğimiz veriyi kaldıracak.
+
+73
+00:14:14,703 --> 00:14:22,024
+Bu veri cache'te güncel, memory'de eski hali mevzul. Dolayısıyla bu kaldıracağımız verinin 4 iletine bakıyoruz.
+
+74
+00:14:22,024 --> 00:14:32,203
+1- Veri güncellenmiş, cache'teki güncel hali var, memory'de eski hali var. O zaman writeback işlemiyle bu veriyi main memory'de de güncellemiş oluyorum.
+
+75
+00:14:33,491 --> 00:14:38,231
+Burada önemli nokta ne var? Aynı veriyi birkaç kere erişerek güncelledim.
+
+76
+00:14:38,231 --> 00:14:42,611
+RipeKilu'da bu her iki güncellemeyi de memori'de update etmem gerekiyordu.
+
+77
+00:14:42,611 --> 00:14:48,932
+Burada iki update'in sonucunda tek bir kerelik memori'de güncelleme yapmam yeterli oldu.
+
+78
+00:14:55,187 --> 00:15:21,788
+Şimdi, store işlemlerinde, miss durumuna bakacak olursak, yani store miss oluşursa, bunun anlamı ne? Ben bir veriyi aldım, işledim. Daha sonra bunu cache'e yazacağım ama farklı bir adrese yazacağım. Yazacağımız adres cache'te yok. Dolayısıyla bu işlem bir store miss olarak değerlendirilir.
+
+79
+00:15:22,836 --> 00:15:47,275
+Ne demek bu? Yazacağımız veri cache'te yok. Güncelleme yapacağımız için cache'te yok. O zaman ne yapabiliriz? Veriyi cache'e getiririz. Daha sonra cache'te güncelleriz. Ve daha sonrası için bunu tutarız. Veya veriyi memory'de update edebiliriz. Cache'te bu zaten günceller olduğu için onu bırakabiliriz.
+
+80
+00:15:48,316 --> 00:15:50,216
+Storm istediği durum bu şekilde.
+
+81
+00:15:50,803 --> 00:15:54,943
+Şimdi write-through işlemine bakalım. Write-through işlemi neydi?
+
+82
+00:15:54,943 --> 00:16:00,943
+Write-through işlemi, şurada gördüğünüz gibi hem memorinin hem de cache'in aynı anda bildirilenmesi.
+
+83
+00:16:00,943 --> 00:16:10,423
+Yürüteceğimiz komutlar şurada. Dört yazmaçlı bir prosesörümüz var. Yürüteceğimiz komutlar bunlar. Main memory'miz burada.
+
+84
+00:16:10,423 --> 00:16:17,863
+Data alanımız kaç tane veri alıyor? Cache'imize baktığımızda cache'in blok sayısı 2 bay.
+
+85
+00:16:18,580 --> 00:16:25,580
+Dolayısıyla, main memory'den getireceğimiz bloglar iki başka olacak. Şimdi başlayalım komutlarımızı ütmeye.
+
+86
+00:16:25,580 --> 00:16:33,580
+Ve buradaki okuma ve yazma ile ilgili hit or miss durumlarında sistem nasıl davranacak onu görmeye çalışalım.
+
+87
+00:16:34,227 --> 00:16:49,207
+Öncelikli olarak biz birinci komutumuzu yürüteceğiz. Tabi birinci komutu yürütmeden önce listten boş bir cache ile initialize edildi. Dolayısıyla valid bitlerimiz şu anda sıfır. Dolayısıyla burada yazan değerler, mevcut olan değerler geçerli değil. Onu anladık.
+
+88
+00:16:50,127 --> 00:16:56,227
+Daha sonrasında ne yapıyoruz? Log, memory'nin bir numaralı adresini R1 yazmasına aktaracağız.
+
+89
+00:17:01,043 --> 00:17:10,644
+Cache yapısına baktığımızda kaç tane fiziki adresimiz var? 0'da 16'ya kadar. Yani bizim physical adres dediğimiz şey 4 bitten oluşuyor.
+
+90
+00:17:10,644 --> 00:17:13,844
+Bizim cache'imiz iki satırdan oluşmuş.
+
+91
+00:17:13,844 --> 00:17:24,644
+Fully associated cache mantığı. Yanlışsa tekrar dönüp düzeltiriz. Cache'imiz 1, 2, 3, 4, 4 byte kapasitesinde.
+
+92
+00:17:24,644 --> 00:17:28,644
+Fully associated.
+
+93
+00:17:31,988 --> 00:17:40,488
+Yanlış hatırlamıyorsam, list listen to use mantığında replacement polisisi var. Şöyle bir kontrol ederim, yanlış olmasın.
+
+94
+00:17:42,827 --> 00:17:55,307
+LRO ile bu işlemi yapıyormuşum, tamam. Sonrasında bir de şeye bakacağız şimdi, bu bölümlendirmeye göre bizim cache adres parçalama yapımı nasıl olacak?
+
+95
+00:17:58,387 --> 00:18:23,567
+Şöyle başlayalım. Word offset için ne diyeceğiz? Ve offset bitleri için ne diyeceğiz? Byte offset diyelim. Byte offset için bir veriyi attığımız zaman 0 veya birinci byte. Dolayısıyla bir bit bize yeterli olacak. Bu bizim byte offset değerimiz. Word offset değerimiz hiç kullanmıyoruz. Çünkü word genişliği bir byte olarak bunu kabul edebiliriz.
+
+96
+00:18:23,887 --> 00:18:43,887
+Veya Word, ByteOffset'i birleştirip bir bit diyebiliriz. İndeks bit sayısına baktığımızda kaç satırımız var? İki satırımız var. Dolayısıyla indeks içinde bir bit kullanıyor. Dolayısıyla tag alanı içinde bize iki bitlik bir yer kalmış oluyor. Parçalamamız bu şekilde. Şimdi bir numaralı adresle ilgili bir konu söylediğinin hata olmasında...
+
+97
+00:18:52,019 --> 00:18:59,639
+Şimdi bir adresi ile ilgili işlem yaptığımızda bir adresinin byte offset değeri 1, index değeri 0.
+
+98
+00:18:59,639 --> 00:19:09,400
+Yani şuna baktığımızda byte offset 1, index değerimiz 0, tag değerimiz 0.
+
+99
+00:19:09,940 --> 00:19:33,320
+Gidiyoruz, cache'in 0 numaralı satırına bakıyoruz. 0 numaralı satırında varif bitti, 0. Dolayısıyla veri burada yok. Şu anda bir ne oldu? Load işlemi yaptığımız için bir tane load miss oldu. Yani veri yüklerken bir miss işlemiyle karşılaşmış olduk. Ne yapacak bu? İndeks değeri aynı olan, indeks değeri 0 olan adresler nedir?
+
+100
+00:19:33,680 --> 00:19:45,599
+0 ve 1 adresi, 0 ve 1 adresi içeriğini getirecek, buraya koyacak. Dolayısıyla şuraya 78 verisini yazacak, buraya 29 verisini yazacak, tag alanına yazılacak, 0 değerini yazacak.
+
+101
+00:19:46,260 --> 00:19:54,800
+Daha sonrasında da veriyi buradan okuyacak. Okuyacağı değer ne? Byte offset'i 1 olduğu için şu 0 offset'i, bu 1 offset'i, 0 offset'i bu byte olarak.
+
+102
+00:19:54,800 --> 00:19:58,920
+Dolayısıyla okuyacağımız değer buradan cache'den şu gözdeki değeri okuduk.
+
+103
+00:20:00,000 --> 00:20:02,799
+Dolayısıyla artık R1'de 29 değerimiz olacak.
+
+104
+00:20:07,796 --> 00:20:10,036
+Şöyle ilerleyerek gidelim.
+
+105
+00:20:12,836 --> 00:20:21,256
+Değerlerimizi yazdık ve okuduk. Bir sonraki aşamada 7 adresine erişmek istiyoruz. 7 adresine yazmak istediğimizde ne diyeceğiz?
+
+106
+00:20:21,256 --> 00:20:30,056
+Buraya 0, 1, 1, 1 diyeceğiz. Dolayısıyla index değerimiz 1, offset değerimiz 1, tag değerimiz 1.
+
+107
+00:20:31,155 --> 00:20:39,155
+Dolayısıyla 1 numaralı satıra gidiyoruz. ListRiscent'ı 100 burası oldu. Az önce buraya kullandığımız için ListRiscent'ı 100 buraya kaydı.
+
+108
+00:20:39,155 --> 00:20:44,155
+Valide baktık, valid değil. O zaman index değeri 1 olan bütün verileri buraya taşıcam.
+
+109
+00:20:44,155 --> 00:20:46,155
+Index değeri 1 olan veriler hangisi?
+
+110
+00:20:51,763 --> 00:20:56,543
+Şöyle daha doğrusu 0, 1, 1, 0'lar 0, 1, 1, 1 değerleri.
+
+111
+00:21:00,147 --> 00:21:13,488
+6 ve 7 adreslerinin içeriğini cache'e taşımış olacağız. Tag ve index değerleri 0, 1, 1 olan bölgeler. 6 ve 7 adresleri. Dolayısıyla 162'ye 173 değerlerini buraya taşıdık.
+
+112
+00:21:13,968 --> 00:21:20,528
+Buraya tag değer olarak 0, 1'in karşılık 1 yazdık. Valit bitimizi de 1 yaptık. Burada valit bitimizi 1 yapmıştık. Bunu söylemiyor musun?
+
+113
+00:21:21,087 --> 00:21:26,288
+Daha sonra ne işlemi yapıyoruz? Yine bir load miss oluştu. Burada da bir miss oluşmuş olacak.
+
+114
+00:21:26,836 --> 00:21:37,316
+Verimizi nereden istiyoruz? 1 numaralı byte offsetinden yani şuradaki değerden onu da nereye atacağız? V2'ye atacağız. Yani 173 değerimiz buraya yazılmış olacak.
+
+115
+00:21:44,980 --> 00:21:51,980
+Bunları aldık. Fakat bunların ikisi de load mis oldu. Load işlemiyle mis ile karşılaştık.
+
+116
+00:21:51,980 --> 00:22:01,980
+Şimdi bir store işlemiyle karşılaşıyoruz. 0 adresine R2 yazacağız. Yani 173 değerine R2 yazmak içerisindeki değeri M0 adresine göndereceğiz.
+
+117
+00:22:02,640 --> 00:22:09,299
+M0'a baktığımızda tag değeri 0, index değeri 0, byte offset değeri 0. Neyi güncelliyoruz öyleyse biz?
+
+118
+00:22:09,680 --> 00:22:21,680
+Buradaki 173 değerini 0 ırınca satırdaki 0 ofsetindeki değeri güncelleyeceğiz. Yani şunun üzerine 173 yazmaya çalışacağız.
+
+119
+00:22:21,680 --> 00:22:30,079
+Burayı 173 yaptığımız zaman artık burada bir de 4 RISCBilgisayar olduğu için aynı zamanda gidip
+
+120
+00:22:30,516 --> 00:22:38,916
+Memoride de adresimiz belli çünkü. Memoride de güncelliyoruz. 70% olarak bunu da güncellememiz gerekiyor.
+
+121
+00:22:40,916 --> 00:22:42,916
+Erişim yaptığımız vakit şöyle.
+
+122
+00:22:46,316 --> 00:22:48,116
+Hem Memoride hem de
+
+123
+00:22:48,692 --> 00:23:08,172
+Cache'te bu veriler güncellendi. Fakat bununla ilgili olarak bu durum bizde bir hit durumu oluşturdu. Store, R2, M0 dediğimiz durum bir store hit oluşturdu. Neden? Çünkü aradığımız adres değeri cache'te vardı. Cache'te olmasaydı bile cache'e getir, günceller, geri gönder gibi bir süreç olacaktı.
+
+124
+00:23:08,607 --> 00:23:31,907
+Daha sonra devam edecek olursak, 5 adresine ilişkin bir erişim var. 5 adresine ilişkin de yazalım. 0, 1, 0, 1 değerleri. 0.indekste 1. offset'e 1, R1 yazmacının değerini yazacağız. Hangi indeks? 0.indeksinde. Peki geliyoruz. Baktık.
+
+125
+00:23:32,596 --> 00:23:40,996
+0.indekse geldik. Buradaki değerimizi kontrol ettiğimiz zaman bu değer bizim tag değerimizle uyuşmuyor.
+
+126
+00:23:43,796 --> 00:23:58,776
+Bu gerçi şey olduğu için tabii ki list recently yüzde olduğu için her birisine tek tek bakmamız gerekiyordu. Onu yanlış söylemiş olabilirim. List recently yüzde olduğu için her bir satırdaki tag alanlara tek tek bakıp da öyle bulmamız gerekiyordu.
+
+127
+00:23:59,316 --> 00:24:08,276
+Şimdi dolayısıyla mevcutta 0 ve 3 var. Bir değerini arıyoruz. Bunlar da yok. O zaman erişmek istediğimiz veri burada yok. Neyi kaldıracağız?
+
+128
+00:24:11,796 --> 00:24:25,036
+satırı kaldıracağız. Bu satıra ne koyacağız? Tag ve indeks alanının 010 olan yani 4 ve 5 numaralı adresleri getireceğiz. Tag değerinde de 1 yazacağız.
+
+129
+00:24:25,683 --> 00:24:53,683
+4 ve 5 buraya gelecek. Dolayısıyla şuraya 71 gelecek. Daha sonra buraya 150 gelecek. Daha sonra ne yapacağız? Bunları çağırdık. Sonra burada bir mis oldu. Store mis oldu. Daha sonra ne yapacağız? R1'deki değeri 5 değerine, yani bir numaralı offsetine yazacağız. Şuradaki değeri tekrar silip buraya 29 yazmış olacağız. Aynı zamanda cache'deki değerimizi de güncelleyeceğiz. Şurayı da 29 olarak güncelleyeceğiz.
+
+130
+00:24:53,683 --> 00:25:04,683
+Buna ilişkin animasyona bakalım. Verileri getirdik. Daha sonra cache de güncelledik ve main memory de güncellemeyi sağladık.
+
+131
+00:25:04,683 --> 00:25:20,124
+Son olarak log 10 numaralı adresi R2 diyeceğiz. 10 numaralı adrese baktığımızda 1,0, 1,0 değerleri. Tag alanımız 2. Tag alanı 2 olan değer burada var mı?
+
+132
+00:25:20,948 --> 00:25:27,948
+Tüm hepsine baktığımızda var. Demek ki aradığımız veri burada. Bunu niye index ayırdık o zaman?
+
+133
+00:25:27,948 --> 00:25:30,572
+Bir saniye, niye index ayırdık?
+
+134
+00:25:38,259 --> 00:26:02,619
+Evet, bunu anlatırken yanlış anlatmış olduk bir saniye. Problem şuradan çıktı. LISC 100 dedik ama daha sonra bunu full associated dedik ama sanki direct math gibi anlatmış olduk. Dolayısıyla aslında byte offset için bir değer, tag alanı için geriye kalan 4 adresten birini çıkarttık. 3 adres olarak bunu yazmamız gerekiyordu. Bunu böyle düzeltelim.
+
+135
+00:26:03,092 --> 00:26:06,852
+Daha sonrasında gelen her adresi 1'e 3 bit olarak ayıracağız.
+
+136
+00:26:07,352 --> 00:26:28,592
+Oysa 0, 0, 0, 1. Şu adresi ayırırken 0, 1, 1, 1. Şu adresi ayırırken 0, 0, 0, 0. Bu adresi ayırırken 0, 1, 0, 1. Bu adresi ayırırken 1, 0, 1, 0 şeklinde ayırmamız gerekiyor demeliydi bunları.
+
+137
+00:26:29,299 --> 00:26:40,940
+Buna göre 1'e erişmek istediğimizde ne yapacağız? Valid bitleri 0. Dolayısıyla aradığımız veri burada yok. Ne yapacağız? İlk boş yere bunu yerleştireceğiz.
+
+138
+00:26:41,440 --> 00:26:54,860
+O zaman buraya tag alanı 0 olduğu için 0 koyduk, valid bitini 1 yaptık, 78 ve 29 verilerini buraya aldık. Bu şekilde düzeltmiş olalım. Bunu yanlış söylemişim. Birbirine karıştı ben niyeyse.
+
+139
+00:26:55,796 --> 00:27:18,256
+Şimdi devam edelim. İlk veriyi bu şekilde değiştik. Daha sonra ne diyor? 7 değerini yükleyeceğiz. Şimdi baktık burada. Bir boş bölge var. Aradığımız veri burada var mı öncelikli olarak? 0, 1, 1. Yani 3 değeri olan bir tag var mı? Yok. Burası zaten valid değil. O zaman veriyi buraya yazacağım. O zaman bunun valid bitini 1 yaptım. Buraya da 3 değerimizi yazdık.
+
+140
+00:27:21,875 --> 00:27:27,615
+7 ve 6 ve 7 verilerini getireceğiz. Doğruçta 162'ye 170 şükleri getirmemiz lazım.
+
+141
+00:27:33,971 --> 00:27:37,211
+Evet, burada 1 olarak yazmıştık. Bunu düzeltmiş olalım. 3 olacak.
+
+142
+00:27:37,352 --> 00:27:47,672
+Tag alanın. Daha sonrasında ne var? Sıfırda store işlemi var. Sıfırda store işlemine geldiğimiz vakit ne var?
+
+143
+00:27:47,672 --> 00:27:49,291
+Aa, şunu kapatabilirim.
+
+144
+00:27:56,307 --> 00:27:59,947
+Şimdi devam edelim. Sıfırda store işlemine geldiğimiz vakit ne var?
+
+145
+00:28:09,748 --> 00:28:26,387
+0-store işlemine geldiğimizde aradığımız veri burada var. Dolayısıyla hit oluyor. Neyi güncelleyeceğiz? 2. 0 adresindeki verimizi 173 olarak güncelleyeceğiz. Bunu güncellediğimiz zaman şuradakileri de 173 olarak güncelleyeceğiz. Bu bir store hit olacak.
+
+146
+00:28:30,324 --> 00:28:58,324
+Daha sonra 5 adresine erişmek istediğimizde ne olacak? 5 adresini nasıl yarmıştık? 0, 1, 0, 1 şeklinde yarmıştık. Tag alanlarını kontrol ettiğimizde 2 tag değeri hiçbirinde yok. Dolayısıyla aradığımız değeri burada yok. Dolayısıyla RISC, CISC, CISC, CISC da burası. O zaman bu satırı kaldıracağım. Bu satıra neleri getireceğim? Tag değeri 0, 1, 0 olan bütün adresler. Ki onlar da 4 ve 5 numaralı adresler yapan. Dolayısıyla 70 giyip ve 150'yi önce...
+
+147
+00:28:58,324 --> 00:29:10,144
+Buraya getirdim. Daha sonra R1'i 5 numaralı adresi yazacağım. Buranın yerine de 29 değerini yazacağım. Buraya yazmakla birlikte getirip de şurada da 29 değerimizi güncellememiz gerekecek.
+
+148
+00:29:13,144 --> 00:29:13,983
+Güncelledik.
+
+149
+00:29:14,367 --> 00:29:29,788
+Ama burada ne olmuş oldu? Yine bir mis işlemi oldu. Son olarak 10 adresine erişmek istiyoruz. 10 adresine baktığımızda da 101, 0 şeklinde tag ve offset değerlerimiz mevcut. 3 değeri var mı?
+
+150
+00:29:30,804 --> 00:29:43,943
+5 değeri var mı? Yok. Dolayısıyla aradığımız değeri burada yok. Takalanlarına baktık sırayla. O zaman şunu neyi kaldıracağız? Restit 200 burası. Bunu kaldıracağız. Ne getireceğiz buraya? 10 ve 11 adreslerini getireceğiz.
+
+151
+00:29:43,943 --> 00:29:56,443
+Dolayısıyla bundan dolayı da bir miss oluştu. Load miss oluştu. 33 ve 28 değerlerini getirdik ve buradan da 28 değerini R2 yazmacına.
+
+152
+00:29:57,107 --> 00:30:01,647
+Okumuş olduk böyle bir süreçte. Bu okumayı yedik edeceğim.
+
+153
+00:30:04,107 --> 00:30:08,887
+33'ünü neyi okuduk? Ha, 10 ve 11 değerleriymiş, özür dilerim.
+
+154
+00:30:09,707 --> 00:30:15,307
+10 ve 11 değerleriymiş. Dolayısıyla 33 ve 28 getirdikten sonra 33 değerimiz var.
+
+155
+00:30:16,767 --> 00:30:21,867
+33 değerini, 10 adresini yani, R2 yazmacını okumuş oluyoruz. Burada 33 değerimiz.
+
+156
+00:30:22,304 --> 00:30:27,584
+Ama bu da bir load işleminde, ISA işlem olarak karşımıza çıktı.
+
+157
+00:30:29,384 --> 00:30:34,903
+Dolayısıyla bu write to mantığındaki karşılaştığımız senaryo kabaca bu şekilde.
+
+158
+00:30:35,944 --> 00:30:38,584
+Dediğim gibi full attachative olduğu için indeks alamıyor.
+
+159
+00:30:38,704 --> 00:30:43,864
+İlk başta sanki direct map gibi aklıma geldiği için öyle anlatmış oldum.
+
+160
+00:30:44,424 --> 00:30:48,824
+Fakat full attachative olduğu için arada bir indeks alamıyor. Ona göre tekrar yükseldiyim.
+
+161
+00:30:49,203 --> 00:31:15,203
+İkinci kısımda anlatmıştım. Ona göre siz de kontrol edersiniz. Şimdi burada ne kadar erişim yapmak istedik? Toplamda her bir miss ile 2 byte'lik veri okuduk. Her store işleminde 1 byte güncelliyoruz. Bunların toplam 8 tane okuma, 2 tane yazma işlemi gerçekleşti. Bunlara baktığımızda
+
+162
+00:31:15,347 --> 00:31:25,768
+Bizim örneğimizde 4 tane mis durumu oluştu fakat günümüzdeki cache'lerde kabaca bu %20 oranında kalıyor diyebiliriz.
+
+163
+00:31:26,307 --> 00:31:32,567
+RightTurl ile RightPack işlemlerine baktığımızda ek olarak bir 4-bit stonu ortaya çıkıyor.
+
+164
+00:31:32,667 --> 00:31:38,447
+4-bit stonu da cache'te güncellediğimiz veri olup olmadığını belirtmek amaçlı tuttuğumuz bir bayrak.
+
+165
+00:31:41,119 --> 00:31:51,379
+Bir right-back mantığında incelemeye çalışalım. Yani burada da yine örnekleri verecek olursak şöyle ki, işte cache'imiz toplamda 4 byte kapasiteli.
+
+166
+00:31:52,279 --> 00:31:58,460
+Yine full associated bir mantık söz konusu. Dolayısıyla fiziki adrese baktığımızda 4 bitten oluşuyor.
+
+167
+00:31:59,319 --> 00:32:08,559
+4 bitten oluşan fiziki adresin 3 biti tag alanı için kullanılıyor, 1 biti offset değeri için kullanılıyor.
+
+168
+00:32:09,140 --> 00:32:16,720
+Ve daha sonra şu erişimlere bakalım. Önce 1'e erişmek istedik. 1'e erişmek istediğimizde bunun tak alanı 0.
+
+169
+00:32:17,460 --> 00:32:27,139
+offset değeri 1. Aradığımız veri var mı? Valid bitleri 0 olduğu için aradığımız veri burada yok. Dolayısıyla ne yapacağız? Cache'ten ilgili değerleri getireceğiz.
+
+170
+00:32:27,700 --> 00:32:37,379
+Getirdik. 4'ü bitimiz 0. Tag değerimiz 0. Çünkü birin karşılığı 0, 0, 0, 1. Tag değerimizi yazdık ve datalarımızı, 2 byte'imizi yazdık.
+
+171
+00:32:38,000 --> 00:32:42,480
+Okuyacağımız veriler de 1 adresinde. 1 adresi şurada. Yani 29.r1'e okuduk.
+
+172
+00:32:42,867 --> 00:33:10,867
+Daha sonra 7 adresine erişmek istiyoruz. 7 adresine baktığımızda bunun fiziki adres karşımız 0111 şeklinde. Yani tag alanı 3. Aradığımız veri tag alanına baktık. Birinci satırda değil. İkinci satıra baktık. Valid biti 0. Aradığımız veri burada yok. Dolayısıyla bunu buraya yerleştireceğiz. Yerleştirirken ne yapacağız? 4 bitimiz 0. Tag değerimiz 3 olmak üzere. 6 ve 7 numaralı byte'lar buraya gelecek. 162 ve 173. Okuyacağımı veri 7.
+
+173
+00:33:10,867 --> 00:33:22,867
+Yani cache'deki şu satırdaki değerlerden anlıyoruz. Offset değerimiz bir cache koyduğumuz 0 ve 1 offsetlerinden 1 offsetini okuyacağız. Nereye koyacağız? R2 yazmakına. 173 değerini R2 yazmakına koyduk.
+
+174
+00:33:23,987 --> 00:33:32,248
+Bakalım anlarımız uyumlu. Ha bir de valid bitimizi 1 yapacaktık. Onu da söylemiyorum. Bu valid bitimizi de 1 yaptık. Ama şu ana kadar her iki load işlemimiz de bizde 1.
+
+175
+00:33:32,788 --> 00:33:45,208
+Miss durum oluşturdu. Sonra bir store işlemi var. Store işlemin 0 adresi için. Bunun alanına baktığımızda 0, 0, 0. Tag değerimiz 0, offset değerimiz 0. Bir store işlemi yapacağız.
+
+176
+00:33:45,327 --> 00:33:56,847
+Ve 2'deki değeri 0 adresine yazacağız. Sırasıyla tag alanlarına bakıyoruz. Baktığım iç satırda tag alanların bu 3'tü. Dolayısıyla benim geri yazacağım değer burada.
+
+177
+00:33:57,428 --> 00:34:04,428
+O zaman ne yapıyorum? Bunun hangi öpsetisi? Proses. Demek ki şuradaki veriyi kaldıracağım. Bunun yerine 173 yazacağım.
+
+178
+00:34:04,887 --> 00:34:14,127
+Ve artık veriyi güncellediğim için 4 übitimi 1 yapacağım. Tak alanım değişmiyor zaten veriye erişmiştim. Fakat bu bir hit oluşturuyor. Store hit oluşturuyor.
+
+179
+00:34:15,327 --> 00:34:22,807
+Store hit oluştu. 4 übitimi güncelledim. Renkideki değeri buraya yaptım. Fakat memorize bakın. Bu değer daha güncellenmedi.
+
+180
+00:34:24,755 --> 00:34:36,735
+Sonra bir başka store işlemi 5 değeri için. 5 adresine baktığımızda 0, 1, 0, 1, 2 tag değeri. Tag değerlerimize baktığımızda herhangi bir tag eşleşmesi yok. Dolayısıyla burada bir store mis olmuş.
+
+181
+00:34:36,735 --> 00:34:50,635
+Ne yapacağız? Tag değeri 0, 1, 0 olan yani 4 ve 5 adreslerini getireceğiz, cache'e koyacağız. Nereye koyacağız? List recently used burası. Dolayısıyla 4'ü bitti mi tekrar.
+
+182
+00:34:51,251 --> 00:34:58,152
+Kontrol ediyorum. Buraya bir store işlemi yapacağız. Şimdi 4'lü bitim 0 olduğundan dolayı sıkıntı yok.
+
+183
+00:34:59,011 --> 00:35:10,612
+Derlerimi getirdim buraya 71 ve 150. Tag alanımı 2'ye değiştirdim. 4'lü bitim 0, 1'lik bitim zaten 1'dir. Böyle bir geri okuma sağladık. Daha sonra ne yapacağız?
+
+184
+00:35:11,059 --> 00:35:19,559
+Daha sonra da R1 değerimizi 5 hazresine güncelleceğiz. 5'in offseti 1. Oysa 150'nin yerine de 29 değerini yazmış olacağız.
+
+185
+00:35:19,559 --> 00:35:30,559
+Bu değeri güncellediğimiz için de 4 gibi birbirimizin de artık 1 olması gerekiyor. Dolayısıyla baktığımızda 29 değeri buraya yazıldığında 4 gibi bir olgu tak alanımız 2 olarak güncellenmiş oldu.
+
+186
+00:35:30,559 --> 00:35:34,059
+Fakat bu neydi? Bu bir store misti.
+
+187
+00:35:36,436 --> 00:36:02,036
+Bir okuma işlemi yapacağız. Okuma işlemi 10 numaralı adrese ilişkin. Yani 1, 0, 1, 0 adresi için. Tag değerimiz 5. Bakıyoruz. Tag değeri 5 olan değer yok. Dolayısıyla bu da bir load miss oluşturdu. Kimi kaldıracağız? L, R, U, şu satır. Bunu kaldıracağız. Bunu kaldırmak için ama 400'e baktık. 400'e baktık. 400'e 1. O zaman
+
+188
+00:36:02,739 --> 00:36:23,239
+Bu verilerin 4.5 olduğu için bu hangi satıra karşılık geldi? Bizi 2.0 adres tak değerine baktım. 3.0.0.0. Daha sonrasında da offset değerlerim 0.1 olan adresler. Yani şu gözden. Buraları güncelleyecekmişiz bizi 2.0 adres olarak. Neyle güncelleyeceğim? Şuradaki yazan değerlerle güncelleyeceğim. 173.
+
+189
+00:36:23,632 --> 00:36:30,632
+29 değerlerimizi de güncelledik. Çünkü hangi bütünün update olduğunu bilmiyoruz şu aşamada. İkisini de güncelledik.
+
+190
+00:36:30,632 --> 00:36:38,632
+Buraya nereden veri getireceğiz şimdi? 10 ve 11 adreslerinden beri getireceğim.
+
+191
+00:36:55,699 --> 00:37:20,559
+Nereye getirdik? Buraya getirecektik. Tag alanımız 5 oldu. Getireceğimiz veriler bunların yerine 33 ve 28 oldu. 4'ü bitimizi 0 yaptık artık çünkü güncellememizi yapmıştık. Bir de R2'ye okuma yapacağız. Hangisi offset değeri 0'dan yani şuraya da 33 değerini taşımış olacağız. Bakalım. Erişmek istediğimiz veriyi memoriye güncelledik.
+
+192
+00:37:21,108 --> 00:37:29,507
+4 bitimizi 0'ladık, tag alanımızı güncelledik, vergi keşe getirdik ve bu şekilde bu 5 komutu yürütmeyi sağlamış olduk.
+
+193
+00:37:30,887 --> 00:37:43,927
+Buradaki işlemler üzerinde de yine 4'e 1 bit ve miss değeri var ama baktığınız zaman memoriye her güncellemede erişme durumu olmadığı için
+
+194
+00:37:46,900 --> 00:37:52,920
+Daha az sayıda IO işlemi olduğunu söylemek mümkün. Bunlar arasındaki seçim neye göre yapacağız?
+
+195
+00:37:53,059 --> 00:38:00,840
+Toplam mis oranı, kaç kere memoriye güncelleme yapmamız gerekiyor. Çalıştırdığımız algoritmaya göre belki karar vermek gerekir.
+
+196
+00:38:00,920 --> 00:38:11,559
+Ortalama store hit ve store mis değerlerine bakarak karar vermek gerekiyor olabilir. Dolayısıyla burada da bir trade-off yapısı olduğunu söylemek mümkün.
+
+197
+00:38:15,123 --> 00:38:27,543
+Sormak istediğiniz var mı? Right to right back mantığıyla ilgili olarak. Bunlar önemli. En azından mantığı nasıl çalıştığını bilmek gerekiyor. Var mı bunlar bizim sormak istediğiniz?
+
+198
+00:38:28,963 --> 00:38:41,303
+Örnekler full associative olduğu için ona dikkat ederek tekrar çözünleme yapmak gerekebilir. Siz de bilhane bakarsınız. Düzelterek aslında yapmış olduk ama üst başta bir kaçak oldu.
+
+199
+00:38:42,228 --> 00:38:55,668
+Var mı buraya kadar ilgili olanla sormak istediğiniz? Yoksa yeni konuya geçeceğim. Öncesinde de bir 10 dakika ara verebiliriz. Daha tam 3'te yeni konuyla başlarız. O da birçok memori konusu olacak.
+
+200
+00:38:56,887 --> 00:39:06,268
+Soru yoksa arkadaşlar bir ara veriyorum. Şuraya da yazalım. 15'te dönüş diyelim.
+
+201
+00:39:10,931 --> 00:39:13,031
+Aradan sonra kaldığım yerden devam ediyorum.
+
+202
+00:50:20,052 --> 00:50:21,411
+Arkadaşlar, nöbet ekme?
+
+203
+00:50:23,032 --> 00:50:24,492
+Biz üçünün en ölü konusuyla ilgili.
+
+204
+00:50:25,072 --> 00:50:26,371
+Devam edelim, devam edelim.
+
+205
+00:50:31,443 --> 00:50:37,763
+Bizim cache yapısından aklınızda kalması gerektiğin ilerler şunlar.
+
+206
+00:50:41,083 --> 00:50:44,403
+Ödevle ilgili soru olan sorabilirsin şimdi istersen.
+
+207
+00:50:44,523 --> 00:50:45,643
+Dersi başlamadan aralık.
+
+208
+00:50:47,003 --> 00:50:48,343
+Anlılır hocam, teşekkür ederim.
+
+209
+00:50:49,163 --> 00:50:53,223
+Ben esas ikinci soruyla ilgili soracaktım da.
+
+210
+00:50:53,223 --> 00:50:53,903
+Evet.
+
+211
+00:50:54,223 --> 00:50:56,223
+İkinci soruda...
+
+212
+00:50:56,596 --> 00:51:10,135
+Neydi? Komut adresleme kısmında biraz kafam karıştı. Komutların hangi adresi işare ettiğini falan tam olarak nasıl belirlememiz gerekiyor ya da onları bilmeden bir tahmin mi yürütmemiz gerekiyor?
+
+213
+00:51:10,135 --> 00:51:16,215
+Şey yapabilirsin. Kabaca neticede şey yapacağız ya Instruction cache içinde değil mi? Bu kod sözleri değil mi?
+
+214
+00:51:16,980 --> 00:51:17,480
+Evet.
+
+215
+00:51:18,000 --> 00:51:23,560
+Yani şey yapabiliriz, kabaca bir tahmin üzerinden gidebiliriz ve şu varsayımı yapabiliriz.
+
+216
+00:51:24,020 --> 00:51:30,540
+Data Note ve komutlarımız uygun adrese hizalı bir şekilde başlıyor diye kabul edebiliriz.
+
+217
+00:51:30,540 --> 00:51:42,220
+Örneğin sıfır adresinden itibaren başlıyor gibi kabul edip, daha sonraki gelen erişimler neticede bir rize erişimi olacağı için o hizaya göre hitmiş değerlerini hesaplayabiliriz.
+
+218
+00:51:42,280 --> 00:51:44,980
+Yani bu sıfır adresi hizalı bir şekilde...
+
+219
+00:51:44,980 --> 00:52:08,100
+Yaptığında ve örneğin gerçek sistemde sonuç alacağımız valgret çıktısına baktığımızda yakın değerler çıkacak. Bire bir aynısını bulmanızı beklemiyorum ama yakın değerleri çıkartabilmenizi bekliyorum. Dolayısıyla oradaki varsayımımız evet hangi adresten başladığını kesinlikle bilmek gerekiyor uygun hesabı, doğru hesabı yapabilmek için ama bizim oradaki amacımız kaba bir tahmin yapabilmek.
+
+220
+00:52:08,467 --> 00:52:12,807
+Dolayısıyla sıfır adresinden hizalı bir şekilde başlıyor diye varsayabilirsiniz.
+
+221
+00:52:13,587 --> 00:52:15,887
+Main'i mi sıfır kabul edeceğiz hocam?
+
+222
+00:52:16,248 --> 00:52:18,288
+Main'i sıfırdan başlıyor kabul edelim.
+
+223
+00:52:19,027 --> 00:52:20,067
+Hocam peki...
+
+224
+00:52:20,067 --> 00:52:22,047
+Data için de aynı şekilde, data erişiminde.
+
+225
+00:52:22,768 --> 00:52:27,228
+Peki o data erişiminde bazı durumları ele almıştık.
+
+226
+00:52:27,228 --> 00:52:28,467
+Önceki derste.
+
+227
+00:52:28,864 --> 00:52:38,643
+Aynı indekslere denk geliyorsa şu şekilde olur, misler fazla olur, denk gelmezse farklı şekilde olur diye. Onları göz önünde bulundurmalı mıyız analiz yaparken?
+
+228
+00:52:39,804 --> 00:52:47,143
+Bulundurmamız lazım. Neye göre karar vereceğiz buna? Aynı adresine denk geliyor mu gelmiyor mu? Kabaca onu da şöyle yapacağız.
+
+229
+00:52:47,143 --> 00:52:56,864
+Boş bir cache ile başladığınızı varsayıp, şeye baktığınız zaman zaten size vermiş olduğunuz komutları veyahut da internetten işlemlerinizle ilgili...
+
+230
+00:52:56,864 --> 00:53:15,503
+Cache özelliklerini incelediğiniz vakit şunu göreceksiniz. Cache'in mesela 8-way set associate'in bir cache olduğunu görecekse, replacement polisi olarak kabaca ne kullandığını görecekse, dolayısıyla bu bilgiler çerçevesinde kimi nereden kaldırmak gerekiyor, replacement nasıl yapılacak, kabaca belli olmuş olacak.
+
+231
+00:53:16,864 --> 00:53:21,324
+Dediğim gibi orada da boş bir cache ile başladığını varsayarak hesabını yürütebilirsin.
+
+232
+00:53:23,188 --> 00:53:28,268
+Tamamdır hocam. Peki komut boyutunu belli bir boyut belirleyebilir miyiz?
+
+233
+00:53:29,468 --> 00:53:45,468
+Komut boyutunu şeyden bakarak aslında ortalama değer gibi düşünsek. Çünkü farklı boyutlarda şeyler vardır. Komutlarımız olabilir. Kabaca ortalama bir komut boyutu gibi hesap yapalım.
+
+234
+00:53:45,856 --> 00:53:59,256
+Yani atıyorum en uzun komut genişliğine ne olabilir? 64.000 numara olduğu için birden fazla Word içerebilir. Kabaca burada birkaç örneklerini alıp onlar üzerinden ortalama şeyi hesaplayalım.
+
+235
+00:53:59,376 --> 00:54:05,556
+Veyahut da en çok çalıştıracağımız komut hani döngü içerisinde hangisi ise onu referans olarak alalım.
+
+236
+00:54:06,228 --> 00:54:32,648
+Dediğim gibi burada böyle noktası virgülüne birebir Walgreens'ten gelecek sonuçta eş değer bir şey bulmak değil. Ama kabaca ölçek anlamında birinci döngü itibini kullandığında, ikinci döngü itibini kullandığında, üçüncü döngü itibini kullandığında kabaca bunların erişim oranları ve dolayısıyla da hit, miss oranlarına dolaylı olarak oraya bağlı olduğu için aralarında kaç kat fark var? Ölçek itibariyle bunu söyleyelim.
+
+237
+00:54:34,003 --> 00:54:41,603
+Şu kadar kat daha fazla mis oldu. Dolayısıyla kodun çalışması bu kadar daha uzun sürdüğü kabaca söyleyebilmek için.
+
+238
+00:54:41,644 --> 00:54:46,224
+Yani dediğim gibi noktası virgülüne kadar o birinden gelecek şeyin birebir aynısı olması gerekmiyor.
+
+239
+00:54:46,623 --> 00:54:50,244
+Ama yaklaşık kaba bir tahmini yürütebilmemiz gerekiyor.
+
+240
+00:54:52,184 --> 00:54:53,784
+Almadım hocam, teşekkür ederim.
+
+241
+00:54:54,483 --> 00:54:57,983
+Yani böyle çok detay bir hesap yapmanıza gerek yok.
+
+242
+00:54:57,983 --> 00:55:00,971
+Yani hani şey hesabı yaparsın ya bir...
+
+243
+00:55:01,172 --> 00:55:10,731
+Bakkal hesabı yaparsın, bir ürünü alsan bu kadar liraya saksan bu kadar kar yaparım gibi. Onun gibi bir kaba hesap yani.
+
+244
+00:55:16,755 --> 00:55:40,755
+Şimdi virtual memory tarafına geçerken önce cache tarafından aklınızda kalması gereken şeylere bakalım. Bunlardan birincisi cache bir tasarım ihtiyacı olarak bir must değil ama gördüğünüz üzere performansı on katı mertebesinde, beş on katı mertebesinde arttırabiliyor kullandığımız yapı itibariyle.
+
+245
+00:55:43,188 --> 00:55:45,347
+Cache kullanmak avantajlı hale gelir.
+
+246
+00:55:45,876 --> 00:56:13,876
+Bu mantığı tüm memori hiyerarşisine yayabiliriz. Ne demek bu? Şimdi biz main memori ile CPU arasına bir ön bellek koyduk. Fakat buna benzer bir kontrol veya yaklaşımda ikinci hafıda birimleri ile main memori arasında olabilir. Neden buna ihtiyaç var? Belki bizim çalıştıracağımız kod büyüklüğü main memori ile yükleme yapabilir diyebiliriz. Veya bize ayrılan alandan çok daha büyük olabilir. Dolayısıyla oraya parça parça...
+
+247
+00:56:13,876 --> 00:56:26,876
+Bu parçalara ayırmak, veriyi veya yükleyeceğiniz kodu parçalara ayırmak şundan dolayı da önemli. Az önce bahsettiğim gibi kod büyüklüğü main memori'deki boş alandan fazla olabilir.
+
+248
+00:56:26,876 --> 00:56:41,420
+Ve biz aslında veri yönetimini küçük bloklar halinde yürütüyor olabiliriz. Dolayısıyla bir seferinde bütün kodun hepsini yüklemek yerine bunun belirli bloklarını ki bunlara page ismi veriyor, sayfa sayfa yükleyerek ilerleyebiliriz.
+
+249
+00:56:41,811 --> 00:56:51,811
+Dolayısıyla aynı cache'te gördüğünüz mantığın aynısı. Yani temporal ve spatial lokalite mantığını yine ikinci hafıza birimleriyle main memory arasında da...
+
+250
+00:56:52,115 --> 00:57:20,115
+Bu da şu demek, biz ikinci hafıza biriminde yürüteceğimiz kodaf karşılık bir sayfayı, main memory'e yüklediğiniz zaman büyük ihtimalle o sayfa üzerinde olan bir takım kodlara veya verileri tekrar işlemek istediğimiz için temporel lokaliteyden faydalanıyor olacağız. Dolayısıyla veriyi gidip de ikinci hafızadan tekrar okumaya çalışmayacağız. Main memory'de bulabiliyor olacağız veya spatial lokaliteyi kullanabiliyor olacağız. Ona bir dizi matriz gibi.
+
+251
+00:57:20,115 --> 00:57:33,215
+Bu bir erişimlerde veri ve konşuslarına bir sonraki adımda erişme şansımız var. Dolayısıyla aradığımız veriyi aynı patchte, zaten memory yüklenmiş olan patchte kullanmak, bulmak imkanına sahip olacağız.
+
+252
+00:57:33,896 --> 00:57:40,115
+Baktığımız zaman şu nokta da benzeşiyor. Cache ve virtual memory şöyle de birleşiyor.
+
+253
+00:57:45,523 --> 00:57:49,223
+Hafıza alanını, daha küçük bir hafıza alanını
+
+254
+00:57:49,519 --> 00:58:00,120
+Haritalamak için de bir kontrol gerekiyor. Cache de bu şekildeydi. Örneğin Direct Map yapısında adresin belirli bir kısmını alıyorduk. O Cache de nereye karşılık geleceğini veriyordu.
+
+255
+00:58:00,120 --> 00:58:12,300
+Veya LISC, LISC, pardon, PLA SEŞİET'in mantıkları kullandığınızda böyle bir mapleme yapmayıp tüm esneklik kazanmakla birlikte tüm adresler üzerinde aradığımızı verip Cache de var mı yok mu diye kontrol ediyorduk.
+
+256
+00:58:12,640 --> 00:58:16,300
+Dolayısıyla benzer bir durum. Virtual Memory'de de geçerli. Büyük bir...
+
+257
+00:58:17,519 --> 00:58:24,840
+Hafıza alanını kullanacağımız küçük bir takım bloklara adreslememiz gerekecek. Oraya taşıma yapmamız gerekecek.
+
+258
+00:58:27,760 --> 00:58:32,760
+Yine cache ile ilgili olarak aklımıza yer etmesi gereken konulardan.
+
+259
+00:58:33,811 --> 00:58:58,811
+Cache boyutunun erişim hızı ve kapasite açısından ne tür etkiler oluşturduğu, farklı cache mimarilerinin DirectMap, Spill Associated, MVT Associated gibi yapılarda, kaç tane set olması anlamlı, git, miss oranları nasıl değişiyor, bir bloğu kaldırıp yenileyeceksek orada hangi kuralları kullanmalıyız?
+
+260
+00:58:59,152 --> 00:59:09,791
+Birden fazla seviye cache kullandığımızda senaryo nasıl değişiyor? Veri stor yönünde bir değişikliğe tabi tutacaksak veri güncellemesi nasıl olacak?
+
+261
+00:59:09,791 --> 00:59:20,052
+Bunlara yönelik olarak sistemi tekil ve toplam performans açısından değerlendirerek karar vermek gerekli olacak.
+
+262
+00:59:20,820 --> 00:59:27,260
+Şimdi şey tarafına baktığımızda da virtual memory tarafına baktığımızda da temelde şöyle bir durum dönüşmektedir.
+
+263
+00:59:28,320 --> 00:59:39,500
+Yazmış olduğumuz programlar kendi uzayında, kendi yerel uzayında bir adres yapısı veya adres uzayı kullanıyor. Buna virtual memory deniyor.
+
+264
+00:59:40,400 --> 00:59:59,820
+Bir programı çalıştırdığımız zaman aslında o kendi adres uzayı içerisinde bir başlangıç referansına göre adresleri ifade ediyor. Yani genel bir fiziki adresi doğrudan işaret etmesi anlamlı değil. Çünkü bu bir blok kodu ben hangi fiziki adrese yerleştireceğim belli değil daha çalıştırmadan.
+
+265
+01:00:00,000 --> 01:00:10,760
+Dolayısıyla bir programın kendi adres uzayını referans alacak şekilde, oradaki bir sabit başlangıç orijin değerini referans alacak şekilde adresleme yapması mantıklı.
+
+266
+01:00:11,160 --> 01:00:19,579
+Dolayısıyla her bir programın kendine ait bir virtual memory uzayı var. Bu uzay fiziki adres uzayından daha geniş bir uzay da olabilir.
+
+267
+01:00:19,960 --> 01:00:25,539
+Yani öyle bir programla çalışıyor olabiliriz ki bu memoriye bir sefer de sığınmayacak bir program da olabilir veya
+
+268
+01:00:26,036 --> 01:00:35,476
+Memori'ye birden fazla program dediğimizde tek bir bloğar sırabilecek bir program da olabilir. Dolayısıyla bunların hepsini destekleyecek bir sisteme ihtiyacımız var.
+
+269
+01:00:39,395 --> 01:00:45,476
+Ve baktığımız zaman bu boyut meselesinden dolayı ikinci diskte sakladığımız...
+
+270
+01:00:45,715 --> 01:01:05,816
+Enerji kesildiğinde kaybolmaması gereken bir takım verilerimiz veya programlarımız olduğu için ikinci liste saklanan kodların veya programların main memory üzerine aktarılarak çalıştırılması da gerektiği için bu ikisi arasındaki etkileşimi yönetecek bir sisteme ihtiyacımız var.
+
+271
+01:01:07,264 --> 01:01:25,264
+Baktığımız zaman bir tarafta ikinci diskler memoriye taşımayı kontrol eden virtual memory kontrolü, daha sonra da main memori'den CPU'ya taşırken kullandığımız ön bellek kontrol yapısı. Dolayısıyla bir programın kendisine ait virtual memory uzayından
+
+272
+01:01:25,523 --> 01:01:39,804
+Öncelikli olarak bunu fiziki adres olarak parçalamasını gerçekleştireceğiz. Daha sonra elde ettiğim fiziki adresi de cache adreslerimiz açısından parçalayarak bir anlam kazandırmaya çalışacağız yapı olarak.
+
+273
+01:01:44,244 --> 01:02:09,364
+Bunlar, bu mantıklarımız zaten aynı. Yine ikinci hafıza birimlerine baktığımız zaman bizim şu ana kadar gördüğümüz kısım memory ile CPU içerisindeki yazmaçlar arasındaki veri aktarımını sağlayan cache mimarisiydi ve bu işte L1, L2, L3 gibi seviyelerde bu cache'lerin yönetiminin tamamını kapsıyordu.
+
+274
+01:02:10,228 --> 01:02:28,847
+Memorideki adreslerine fiziki adresleme üzerine dayanıyor. Dolayısıyla memori'de ben bir yeri işaret etmek istersen bu benim doğrudan fiziki bir adres vermemle. Yani CPU'nun adres uçlarında belirli bir değeri oluşturmam ve onun da memori'de gerçekten var olan bir adres gözünü işaret etmesiyle ilişkili durum.
+
+275
+01:02:29,684 --> 01:02:53,884
+Bunlara karşılık, bu DKE adrese karşılık bir cache adres bölümlemesi yapıyorduk. Bu cache'te veriyi ararken nereye bakmam gerektiğini, gerektiği noktasında bana yol gösteriyordu. Veriyi ararken ve veriyi yer değiştirirken, cache'te yer değiştirirken bu mantığı kullanıyorduk. Bunun bir benzerini ikinci hafıza birimleriyle memory arasında da kullanıyor olacağım.
+
+276
+01:02:54,804 --> 01:03:01,304
+Şimdi dediğimiz gibi Virtual Memory uzayı çalıştıracağımız programın kendine has bir adres uzayı.
+
+277
+01:03:01,760 --> 01:03:08,260
+Burada kendisine ait bir başlangıç referansına göre erişmek istediği bütün adresleri buna göre yazılır.
+
+278
+01:03:08,619 --> 01:03:19,680
+Ama programımız gelip de fiziki adres olarak belirli bir noktaya yerleştiğinde bu erişmek istediğimiz adreslere bu offset değeri, fiziki adresden gelen offset değeri eklenip ona göre yürüttürecek.
+
+279
+01:03:19,800 --> 01:03:25,800
+O sistem memory management günlüsüyle ilgili ve doğrudan kullanıcıyı ilgilendiren bir durum değil.
+
+280
+01:03:30,228 --> 01:03:48,248
+Az önce bahsettiğimiz mesele, tıpkı cachelerde olduğu gibi, locality özellikleri, spot-iğer ve temporal locality araya main memory ile CPU arasına bir küçük bellek, daha hızlı bir küçük bellek koyduğumuzda erişim süresini kat ve kat arttırıyorsa, benzer bir durum.
+
+281
+01:03:48,248 --> 01:03:58,228
+Bu yönetimi doğrudan ikinci hafıza birimlerinden okuyarak değil de, ikinci hafıza birimleriyle CPU arasına o main memory yerleştirme mantığında da benzer bir faydası.
+
+282
+01:03:58,228 --> 01:04:07,188
+Bu şekilde elde etmeyi bekliyoruz. Dolayısıyla bu az önce yapmış olduğumuz tanımlamalar tekrar üzerinde dönmeye gerek yok. Her bir programın kendine ait virtual uzayı var.
+
+283
+01:04:07,407 --> 01:04:19,327
+Virtual adres uzayı var. Fakat bu program hafızaya yüklendiğinde, main memory'e yüklendiğinde bu virtual adresin belirli bir sayfasına karşılık fiziki adresler oluşturulmuş durumda.
+
+284
+01:04:23,987 --> 01:04:47,987
+Cache'te olduğu gibi durumlar söz konusu. Ne gibi örneğin? Bir seferinde amacımız ne bu da? İkinci bloklardan main memory'e data blokları şeklinde verileri aktarmak. Cache'te bunu yaparken block size genişliği kadar veriyi aktarıyordu. Block size genişliğine nasıl karar veriyordu? İşte ortalama olarak bizim...
+
+285
+01:04:48,384 --> 01:05:04,224
+TPU'muzda koşacak işlemleri kabaca bir statistikini çıkarttığımızda, blok sayısının belirli bir miktara kadar artması avantaj sağlıyordu ama aynı cache kapasitesine sabit kalmak üzere blok sayısımızı arttırmaya devam ettiğinizde de,
+
+286
+01:05:04,224 --> 01:05:16,384
+bir sefer replacement'lar artacağı için ortalama erişimimiz düşmeye başlıyordu. Dolayısıyla orada optimum bir blok genişliği vardı. Benzer bir durum burada da tanımlanabilir. Buradaki bloklara da page ismi veriliyor, sayfa ismi veriliyor.
+
+287
+01:05:16,384 --> 01:05:34,384
+Dolayısıyla biz sayfa boyutumuzu nasıl belirleyeceğiz? İşte main memory'nin boyutu, erişim süresi, 2. hafıza bilimlerinin boyutu, oradaki erişim sürelerini dikkate alarak, koşturulacak ortalama kod çeşitlerine ve yapısına dikkat ederek bir optimal blok genişliği belirlenebilir.
+
+288
+01:05:35,164 --> 01:05:43,344
+Fakat burada şunu söyleyebiliriz, işte kilobaytlar mertebesinde sayfa genişlikleri kullanılıyor genel olarak diyebiliriz.
+
+289
+01:05:47,188 --> 01:05:56,867
+Dolayısıyla birinci bakacağımız şey, optimiz edilmesi gereken şey, page büyüklüğü nasıl belirlenir? Bu dediğimiz gibi erişim süreleri açısından optimiz edilebilecek bir durum.
+
+290
+01:05:56,867 --> 01:06:07,948
+İkincisi, biz bir bloğu getirdik diyelim ve bir yeri işgal ediyor.
+
+291
+01:06:08,947 --> 01:06:15,307
+Virtual Memory'de bu koşturduğumuz sayfayı bitirdikten sonra, page'i bitirdikten sonra yeni bir page'e erişmek istiyoruz.
+
+292
+01:06:15,307 --> 01:06:23,268
+Veya Virtual Memory'de kod akışı öyle bir gidiyor ki, bulunduğumuz page'in ortasındayken başka bir page'in yüklenmesi gerekiyor.
+
+293
+01:06:23,688 --> 01:06:32,447
+Bu durumda biz bu bloğu aldıracağız. Main Memory'de bir sürü bloğu yüktü. Bunlardan hangisini kaldıracağız?
+
+294
+01:06:32,916 --> 01:06:47,756
+Dolayısıyla bir replacement polisi gerekiyor. Veya o sırada memoride bir takım boş gözler var. Oraya bir page yükleyeceğiz. Yani boş olan bir yere yükleme yapacağız. Bunu planlamamız ve yüklememiz lazım.
+
+295
+01:06:48,916 --> 01:06:59,476
+Veyahut da aradığımız veri main memoride yoksa bu durumda yüklenmesi gerekiyor. Yani ikinci lafıda biriminden de bir yükleme gerekiyor.
+
+296
+01:06:59,891 --> 01:07:03,171
+Dolayısıyla işlemleri bu başlıklar altında inceleyebiliriz.
+
+297
+01:07:03,911 --> 01:07:06,751
+Main memory'de boş yer var. Oraya bir veri yükleyeceğiz.
+
+298
+01:07:07,831 --> 01:07:13,331
+Main memory dolu. Bir tane veriyi kaldırmamız gerekiyor. Hangisini kaldıracağız?
+
+299
+01:07:14,571 --> 01:07:20,611
+Ve veriyi ikinci lafıza biriminden main memory'e getirme şeklinde alt adımlarımız mevcut.
+
+300
+01:07:25,172 --> 01:07:43,172
+Ve yine tıpkı cache'de olduğu gibi bazı durumları göz önüne almak lazım. Tıpkı write-through ve write-back işlemlerinde olduğu gibi cache'de bir store, miss durumu varsa veriyi nasıl güncelleyeceğiz? Coherence dediğim tutarlılık meselesini nasıl sağlayacağız?
+
+301
+01:07:43,172 --> 01:07:50,172
+Orada yönetilen süreç vardı cache'de. Write-through her ikisinde de güncelliyordu. Cache'de de güncelliyordu, mail memoriyle de güncelliyordu.
+
+302
+01:07:50,387 --> 01:08:09,588
+Writeback komutu vardı, writeback prosedürü vardı. Writeback prosedüründe ise ekstra bir bit tanımlıyorduk. Donanımsal bir karmaşıklık artıyordu. Ama elde ettiğimiz kazanç her seferinde, her güncelleme yaptığımızda, cache ile her güncelleme yaptığımızda main memory güncellememiz gerekmiyordu. Ne zaman güncelleme yapıyorduk?
+
+303
+01:08:17,235 --> 01:08:22,996
+MIPS oluştuğunda ve 4 biti 1 ise o zaman ancak main memory da güncelleme yapıyoruz.
+
+304
+01:08:24,275 --> 01:08:34,275
+Dolayısıyla benzer bir durumun virtual memory yönetimi içinde sağlanması lazım. Neden? Çünkü artık sistemlerimiz multiproces sistemler.
+
+305
+01:08:34,275 --> 01:08:41,275
+CPU'nun bir tanesi başka bir page ile ilgili işlem yaparken başka birisi multiprocesör...
+
+306
+01:08:41,652 --> 01:08:52,192
+Uyumlu şekilde yazılmış bir program için. Yine güncellenmiş bir veriyi, bir başka işlem tarafından güncellenmiş bir veriye ihtiyaç duyuyor olabilir. Bunun uygun şekilde yönetilmesi gerekiyor.
+
+307
+01:08:58,996 --> 01:09:20,775
+Ayağa kaldırılması veya bir araya geçilmesi veya kullanması açısından da kolaylık sağlayan her programın kendine özel, kendine has bir memory uzayı olması da sistemi hem bir yandan kolaylaştırıyor ama yönetim açısından da işte bir virtual memory yönetiminin gelmesi açısından da bir gereklilik oluşturuyor diyebiliriz.
+
+308
+01:09:27,828 --> 01:09:49,468
+Peki burada şeyi nasıl yapacağız? Programın kendine ait, kendine has bir virtual adres uzayı var. Bunu mecburen main memory'e yükleyeceğiz. Dolayısıyla burada virtual adresi, Fiziki adrese haritalayan bir bloğa ihtiyacı var. Dolayısıyla ne alacak bu?
+
+309
+01:09:50,868 --> 01:10:15,488
+Buradaki komutları veya data adreslemelerini alacak ve bunları fiziki adres karşılıklarına oluşturması gerekiyor. Bunu nasıl yapabiliriz? Şimdi buradaki kabaca bahsetmek gerekirse virtual memory adres uzayının fiziki adres uzayından daha geniş olabileceğini varsayalım. Daha geniş bir uzay olabileceğini varsayalım. Dolayısıyla büyük bir uzayı, küçük bir uzayı adreslememiz gerekiyor.
+
+310
+01:10:16,595 --> 01:10:26,855
+Bu da şunu getirecek. Demek ki buradaki page'lerden belirli bir kısmı fiziki adres tarafında hep aynı satıra veya aynı bloğa karşılık yer.
+
+311
+01:10:27,915 --> 01:10:39,415
+Bundan dolayı zaten büyük bir adresi, küçük bir adresi meflediğimiz için replacement mantıkları veya veriyi aradığınızda nereye bakmalıyız gibi mantıklar yine burada da gündeme geliyor.
+
+312
+01:10:39,515 --> 01:10:42,975
+Peki bunu kim yönetiyor? Bunu yöneten işletim sistemi.
+
+313
+01:10:43,699 --> 01:10:55,899
+İşletim sistemi yönetiyor. Dolayısıyla bazı mantıklarda, bazı işletim sistemleri uygulamalarında her bir program için ayrı bir şuradaki mapping işlemini yürüten tablo ayrı bir tablo oluyor.
+
+314
+01:10:56,579 --> 01:11:05,299
+Veya bunlar ortak bir tablo olabiliyor ama kimin yönetiminde bu? İşletim sisteminin yönetiminde, kernel tarafında. Dolayısıyla kullanıcının doğrudan müdahale edebileceği bir yer değil.
+
+315
+01:11:05,819 --> 01:11:10,059
+Edebiliyor olsa zaten bütün haftaya erişebilir. Onu istemiyorum.
+
+316
+01:11:12,115 --> 01:11:16,056
+Bu aynı zamanda neyi sağlıyor bize bu şekildeki page mantığı?
+
+317
+01:11:16,296 --> 01:11:23,336
+Kullanıcılar arasında tanımlamış olduğumuz onlara izin verilen adres aralıkları dışında çıkmalarını da engellemiş oluyoruz bu sayede.
+
+318
+01:11:23,496 --> 01:11:25,695
+Bu mantık çerçevesinde. Yani ne diyoruz?
+
+319
+01:11:26,136 --> 01:11:33,355
+Her bir programın kendi virtual uzayını, Z2 adresi, mapleme işini, şuradaki kontrolü, işletim sistemi yürüttüğü için
+
+320
+01:11:33,355 --> 01:11:39,615
+kullanıcı ve program bazında bunların birbirine erişmesini de engelleyebilmiş oluyor.
+
+321
+01:11:40,500 --> 01:12:02,159
+Dolayısıyla her bir page için baktığımızda o page'de kullanıcı izinleri, ilgili programa ait bloklar yer almış oluyor. Yani sadece data veya komut değil, kullanıcı izinlerine ilişkin bir takım bilgiler de bu dönüştürücü, şurada dönüştürücü kontrol biriminde dolayısıyla tabloda tutulması gerekiyor diyebilirim.
+
+322
+01:12:05,684 --> 01:12:15,363
+Burada paging işlemine baktığımız zaman kabaca şöyle bir durumdan bahsedebiliriz.
+
+323
+01:12:15,363 --> 01:12:31,363
+Örneğin 1K, 1KB boyutlarda sayfalarımızın olduğunu varsayacak olursak ve örneğin bizim toplamda 8 tane pagingimizin sunabileceği bir fiziki...
+
+324
+01:12:32,692 --> 01:12:38,512
+adres uzayımız olduğunu varsayacak olursak ve ikinci hafızamızın da normalde işte
+
+325
+01:12:38,512 --> 01:12:44,012
+veyahut da bizim çalıştıracağımız programı virtual memory'sinde, virtual adres uzayının da
+
+326
+01:12:44,012 --> 01:12:49,311
+32 page genişliğinde olduğunu varsayacağız. Yani 32 kilobyte'lık bir programı.
+
+327
+01:12:49,391 --> 01:13:15,391
+8 kW'lik bir memoride nasıl adresleyeceğiz? Bu cache'lerin hepsi bizim kullanımımızda olmayabilir. Bir kısmı işletim sistemiyle ilgili, bir kısmı başka kullanıcıların programlarıyla ilgili, bir kısmı yine kendi çalıştırdığımız programlarla ilgili meşgul olabilir. Dolayısıyla bize kalan kısım aslında bu da görünenlerle az. Peki bu çözümlemeyi nasıl yapacağız? Bunlar arasındaki işleyi nasıl kuracağız? Bir kere...
+
+328
+01:13:15,636 --> 01:13:30,536
+Bizim adres uzayımız 31.744 gibi bir sayıya kadar gidiyor. Kaç bitle ifade edebiliriz örneğin bunu? 1K'dan 10 tane adres gelecek. 32 de burada var. 5, 15 bitlik bir adres uzayından bahsediyoruz.
+
+329
+01:13:30,536 --> 01:13:38,756
+Yani buraya baktığımız zaman virtual memory uzayımız bizim 15 bitle ifade edilebilir durumda. Bu tarafa baktığımızda ise
+
+330
+01:13:39,055 --> 01:13:59,975
+10 bit her bir page'den geliyor. 8 tane de page'imiz var. Dolayısıyla burası da 13 bit ile ifade edilebiliyor. Dolayısıyla biz buraya baktığımız zaman, virtual address dediğimiz kısma baktığımız zaman bunun toplamı 15 bit ama bunun 2 tane kısım var. Nedir? Birinci kısım.
+
+331
+01:14:00,351 --> 01:14:16,851
+Hangi page'e erişeceğimizi veriyor. Dolayısıyla bu Virtual Page Number diyeceğimiz bir alana tekabül edecek. Bir de şuradaki kısım, bu da Virtual Page Offset. Şu 15 biti silelim şuradan. Yukarı alalım.
+
+332
+01:14:20,756 --> 01:14:32,195
+Şu 15 bitle ifade edilebilir. Dolayısıyla burası virtual page offset. Dolayısıyla ben bir page'in içerisinde hangi adresteyim? Yani bu 1 kb kalalıkta hangi adresteyim? VPO.
+
+333
+01:14:32,948 --> 01:14:46,747
+VirtualPakeOffset değeriyle. Bu kaç bit? 10 bit. Nereden bildin bunun 10 bit olduğunu? Her bir page'imiz 1K. Oysa 1024 tane göz yapar. 1024 tane göz ifade edebilmek için 10 bite ihtiyacımız var.
+
+334
+01:14:46,747 --> 01:15:00,448
+O zaman VPN kaç bitten oluşuyor? Toplam Virtual Adres genişliğimiz bizim 32 KB'tı. Şöyle de yazalım. Virtual Adres 32 KB. Physical Adresimiz bizim 8 KB.
+
+335
+01:15:01,460 --> 01:15:21,880
+Dolayısıyla 15 bitten geriye kalan 5 bitlik kısım bizim virtual page numberımız. Physical memory'e neye yükleniyor? Page-page yükleniyor. Yani dolayısıyla herhangi bir page'i yüklediğimde bu page içerisindeki 1024 byte'lık veri bir page içerisinde yer alacak. O zaman bizim physical address dediğimiz şey toplamda kaç bit? 13 bit.
+
+336
+01:15:22,880 --> 01:15:27,899
+Buna baktığımızda bu da yine iki parçaya ayrılacak. Nere olacak?
+
+337
+01:15:28,500 --> 01:15:42,300
+Physical page offset kaç bit? Bir page'imiz yine 1K olduğu için 10 bitten oluşacak. Şu tarafa baktığımızda ise 3 bitlik bir neyimiz var? Physical page number değerimiz var.
+
+338
+01:15:42,780 --> 01:15:50,819
+Peki bizim aslında burada address translation map dediğimiz fonksiyon kimi kime mapliyor? Zaten bir page'i istediğimiz için.
+
+339
+01:15:51,264 --> 01:16:15,404
+Şundaki adres değerleriyle buradaki adres değerleri birebir örtüşüyor. Paged adresi, virtual memory'de de, physical adres memory'de de bunlar örtüşüyor. Kimi MAP'lememiz lazım? Bizim şuna ihtiyacımız var. Öyle bir fonksiyona ihtiyacımız var ki VPN'e karşılık bize physical page number değerini üreten bir fonksiyon veya tabloya ihtiyacımız var. Bu şekilde bir tabloya ihtiyacımız var. Dolayısıyla bizim MAP'lediğimiz şey buymuş.
+
+340
+01:16:15,731 --> 01:16:42,891
+Virtual Page Number'ı Physical Page Number'a eşleyen bir tablo. Bu aradaki blog'ın yapmış olduğu işlem bu. Burada bunları görüyorsunuz. Bu tabloya yani Virtual Page Number'ı Physical Page Number'a dönüştüren fonksiyon dediğimiz şey aslında bir tablo demiştik. Bu tabloya arkadaşlar Page Table deniyor.
+
+341
+01:16:43,828 --> 01:16:50,068
+Bu page table'ın içerisinde neler var diye bakacak olursak nasıl bir şey olabilir en temel anlamda?
+
+342
+01:16:53,747 --> 01:17:17,447
+Nasıl olabilir? Bir kere tüm VPN değerlerine karşılık bir VPN değeri üretebileceği için, akla gelebilecek yöntemlerden ilki şu olabilir. Bunun, 2 üzeri VPN kadar satıra olur ve her bir satıra ilişkinde burada VPN genişliğinde bir veri tutarız. Yani benim buradaki page tablomun büyüklüğü,
+
+343
+01:17:19,988 --> 01:17:31,268
+5 table genişliği ne kadar oluyor? 2 üzeri VPN çarpı, VPN bit kadar bir büyüklükte tablo olmuş oluyor. İlk akla gelen bu.
+
+344
+01:17:33,528 --> 01:17:42,368
+Her bir VPN değerine karşılık hangi VPN'in ayarlanmış olduğunu kullanabilir. Fakat burada bir sıkıntı var. Bu tablo çok büyük bir tablo.
+
+345
+01:17:43,060 --> 01:17:48,620
+alan olarak da çok büyük bir alan kaplıyor ve bunun da main memory de tutulması lazım.
+
+346
+01:17:49,340 --> 01:17:52,940
+Baktığımız zaman bunun tüm satırları her zaman aktif değil.
+
+347
+01:17:53,540 --> 01:17:58,940
+Çünkü biz bir seferde ilgili programdan kaç page yüklüyoruz, tamamını yüklemiyoruz zaten.
+
+348
+01:17:58,940 --> 01:18:00,620
+Belirli bir kısmını yüklüyoruz.
+
+349
+01:18:01,739 --> 01:18:08,620
+Ve o anda memoride bu programa ilişkin kaç tane page var? Az sayıda. Dolayısıyla bunun pek çok satırı kullanılmıyor.
+
+350
+01:18:09,363 --> 01:18:12,863
+Dolayısıyla spas bir tablo. Boş bir tablo.
+
+351
+01:18:14,043 --> 01:18:17,583
+Bunun için, bunu iyileştirmek için neler yapılabilir diye bakacağız şimdi.
+
+352
+01:18:21,844 --> 01:18:48,423
+Biraz daha page tablosu üzerine konuşarak ilerliyoruz. Page tablosu içerisinde ne demiştik? 2 üzeri VPN kadar satır var. Her bir satırda da VPN değerini gösteriyor ama bunlar yeterli demiştik. Başka neler lazım? Her bir VPN, VPN arası dönüşüm için ilgili satırın valid olup olmadığının bilgisine ihtiyacımız var. İkincisi bir de access rights dediğimiz erişim izinlerine.
+
+353
+01:18:48,815 --> 01:19:10,315
+tanımlanması gerekiyor. Ne olacak? Yani burada diyecek ki mesela birinci kullanıcının erişimine açılmış bir alan. İkinci kullanıcı buraya erişmek istediğinde bu tablo üzerinden yapılacağı için ikinci kullanıcı bakılacak access right'ı var mı yok dolayısıyla oraya erişim izni verilmeyecek. Dolayısıyla bu da yine bu dönüşümde page tablosu üzerinden yürütülüyor olacak.
+
+354
+01:19:13,268 --> 01:19:37,028
+Tekrar etmek gerekirse Page Table dediğimiz tablomuzun indeksleme işlemini VPN alanıyla yapıyoruz. Virtual adresin VPN alanıyla yapıyoruz. Bu VPN'e karşılık bir physical page number bulunuyor. Mesela az önceki örneğimizde bu 5 bitlik bir şey, burası 3 bitlik bir şey. Buradan gelen 3 bitle.
+
+355
+01:19:38,420 --> 01:20:00,319
+offset değeri birleştiriliyor. Bu da 10 bit. Toplamda 13 bitlik fiziki adres değeri oluşturuluyor. Zaten bizim memorimiz 13 bitlik olduğu için bu doğrudan var olan, erişilebilir memorideki bir alana işaret etmiş oluyor. Burası neydi? Virtual Adres tarafı neydi? Bu sanal bir adres uzayı. Programın kendine has, kendine özel.
+
+356
+01:20:00,467 --> 01:20:10,708
+Tanımlanmış, kendi alanı içerisinde, kendi uzayı içerisinde tanımlamış olduğu bir orijine göre kullandığı offsetleri içeren bir uzaydı.
+
+357
+01:20:17,524 --> 01:20:30,384
+Dediğim gibi, Page Table işletim sistemine ait ve işletim sistemi tarafından verilen bir şey. Çünkü baktığınız zaman hafıza erişimleri işletim sisteminin kontrolünde yürüyen bir şey.
+
+358
+01:20:31,252 --> 01:20:39,252
+Burada neler geçebilir? Erişim izinleri işletim sistemi tarafından kontrol edildiği için yönetimde bu şekilde sağlanması lazım.
+
+359
+01:20:39,252 --> 01:20:50,252
+Kullanıcı Page Table'ı doğrudan değiştirememeli. Değiştirebiliyorsa zaten başkasının program alanlarına erişim hakkı kazanır. Ona izin vermiyorum.
+
+360
+01:20:57,268 --> 01:21:04,967
+Her bir prosesin kendisine ait bir page tablosu olabilir denmiş ama aslında bu tasarımdan tasarıma değişiyor.
+
+361
+01:21:05,087 --> 01:21:10,967
+Bazı mimarilerde tek bir page tablosu üzerinden erişimde kontrol ediliyor.
+
+362
+01:21:12,047 --> 01:21:14,827
+O orada daha genel bir durum söz konusu diyelim.
+
+363
+01:21:16,087 --> 01:21:21,927
+Bu page tablosu ile ilgili durumları işlediğim sistemlerin dersinde belki daha detaylı bir şekilde görmüş olacaksınız.
+
+364
+01:21:22,420 --> 01:21:25,319
+Şimdi biraz daha genel bahsetmiş oluyorum.
+
+365
+01:21:29,059 --> 01:21:31,319
+Page table'a ilişkin olarak...
+
+366
+01:21:31,699 --> 01:21:43,420
+Özel bir takım yazmaçlar da var. Yani güncel işlemcilerde bu tabloların oluşturulması ve tablolar erişim özel yazmaçlarla sağlanıyor.
+
+367
+01:21:44,059 --> 01:21:52,819
+Tabloyu main memory'de bir yerde oluşturduk ama tablonun başlangıç adresi ilgili yazmaçla baz yazmacında tutulduğu için.
+
+368
+01:21:53,296 --> 01:22:04,756
+Ve o bölgeye sadece işletim sistemi erişimi izni olduğu için bu şekilde aktif bir kullanım söz konusu oluyor işletim sistemi tarafından diyebiliriz.
+
+369
+01:22:10,003 --> 01:22:28,963
+Dolayısıyla az önce konusu geçen pek çok konuda bu page tablosunun varlığı fayda sağlamış oluyor. Ortak bir main memory'nin kullanım ve yönetimi sağlanmış oluyor. Farklı kullanıcılar ve farklı programlar arasındaki erişim izinleri düzenlenmiş oluyor.
+
+370
+01:22:29,716 --> 01:22:41,076
+Bir programın kodlanırken veya makine koduna çevrilirken kendine ait bir adres uzayı, virtual adres uzayı sağlanmış oluyor ki bu programlama açısından kolaylık sağlıyor.
+
+371
+01:22:41,456 --> 01:22:48,216
+Şeyi düşünmek zorunda değiliz yani. Biz fiziki adres olarak yazdığımız kod nereye erişecek diye bir düşünceye girmemize gerek yok.
+
+372
+01:22:48,216 --> 01:22:56,476
+Sanki yazdığımız kod kendi o virtual adres uzayı içerisinde tanımladığımız kapasite çerçevesinde erişimlerini sağlıyor.
+
+373
+01:22:57,716 --> 01:23:05,376
+adres dönüşümlerini yine işlemci veya memory management'ı bizim yerimize sağlıyor. Dolayısıyla biz orayla ilgilenmek zorunda değiliz.
+
+374
+01:23:06,636 --> 01:23:13,716
+Dolayısıyla programın uzayıyla, adres uzayıyla, fiziki adres uzayını birbirinden ayırıp ona göre kodlama yapabiliriz.
+
+375
+01:23:21,779 --> 01:23:35,779
+Şimdi az önce gördüğümüz tablonun her bir satırına Page Table Entry dendiğini burada görmüş oluyoruz. Bunun içerisinde valid biti, erişim izinleri ve ilgili VPN'e karşılık PPN değeri var.
+
+376
+01:23:35,779 --> 01:23:47,755
+Sistem ilk defa başlatıldığında veya bir program ilk defa yüklendiğinde ilgili page tablosunun valid bitleri sıfır olarak başlangıç değeri oluşturuluyor.
+
+377
+01:23:48,180 --> 01:23:55,180
+Erişim izinleri kullanıcıya ve programlar arası erişime göre belirlenmiş durumda.
+
+378
+01:23:56,119 --> 01:24:11,220
+Fiziki sayfa numarası da dediğimiz gibi daha küçük olan kapasite olarak daha küçük olan physical page'lerin hangisine erişmeyeceğimizi, hangisine mekleme yapıldığını tutan bir tablo diyebilirim.
+
+379
+01:24:21,300 --> 01:24:41,132
+Şimdi burada kısmen verilmiş bir yapı var. Program açısından biz bir virtual adres çıktığımızda, bu virtual adres bu tablo üzerinden fiziki adrese dönüştürülüyor. Bu fiziki adres eğer main memori'de bulunuyorsa,
+
+380
+01:24:41,268 --> 01:24:57,827
+Cache üzerinden okunarak işlem yürütüyor. Eğer aradığımız page numarası main memory'de yoksa bu durumda işletim sistemi tekrar süreci devralarak verinin main memory'e getirilmesini sağlamış oluyor.
+
+381
+01:24:57,827 --> 01:25:07,528
+Süreç bu şekilde görüyor. Benzer ve yakın noktalarına bakacak olursak cache ve virtual memory arasında.
+
+382
+01:25:08,180 --> 01:25:15,180
+Cache'teki her bir veri genişliğinde block veya line isimleri görüyordu. Bu, virtual memory'de page olarak isimlendiriyor.
+
+383
+01:25:15,180 --> 01:25:22,180
+Cache'te aradığınız veriyi store veya log aşamasında bulamıyorsak buna miss deniliyordu.
+
+384
+01:25:22,180 --> 01:25:32,180
+Virtual memory tarafında bunun ismi page file. Yani biz bir virtual adres oluşturduğumuzda bu tabloya bakıp da aradığımız page'in
+
+385
+01:25:32,532 --> 01:25:40,511
+Main memory'e yüklenmemiş olduğunu anlarsak, daha önceki işlemler sonucunda bu bir page fault oluşturuyor. Page fault oluştuğunda ne oluyor?
+
+386
+01:25:40,652 --> 01:25:50,212
+Hemen şuradan geri dönene. Page fault oluştuğunda işletim sistemi devreye girip page'in main memory'e yüklenmesini sağlıyordu.
+
+387
+01:25:51,132 --> 01:25:57,091
+Baktığımız zaman cache'lerdeki blok genişlikleri 50-100 byte mertebesinde.
+
+388
+01:25:57,555 --> 01:26:05,275
+Virtual memory tarafındaki sayfa genişlikleri ise 8-10 KB mertebesinde değerlere sahip.
+
+389
+01:26:05,908 --> 01:26:16,908
+Baktığımız zaman aradığımız veriyi nasıl bulacağız? Eşleştirme yönteminde DirectMap, Envasive Assertive veya Full Assertive gibi mantıklar söz konusuydu.
+
+390
+01:26:16,908 --> 01:26:28,908
+Ama Virtual Memory'de Full Assertive mantık kullanılıyor. Çünkü hani bahsettiğimiz üzere sparsif bir tablo olduğu için burada şey riski daha fazla. Sürekli olarak bir mapping yapsak, DirectMapping yapsak.
+
+391
+01:26:29,456 --> 01:26:36,456
+Aynı yere denk gelme ihtimali ve çoğunluk kullanmama riski var. Dolayısıyla biraz daha esnek bir şey yapıya ihtiyacımız var.
+
+392
+01:26:36,456 --> 01:26:52,456
+Aradığımız bir page, eğer ki main memory'de yoksa page falan oluştu. İşletim sistemi bir page'i getirecek ve bu page'i nereye koyacak, hangi bloğun yerine koyacak, main memory'deki hangi bloğun yerine koyacak, page'in yerine koyacak.
+
+393
+01:26:52,456 --> 01:26:56,395
+Burada virtual memory tarafında list resimli used mantığı kullanılıyor.
+
+394
+01:26:56,532 --> 01:27:21,772
+Fakat cache'te ne vardı? List recently used, FICO, random gibi seçenekler vardı. Cache yapısında write-through ve write-back mantığı kullanıyorduk. Write-through'da aynı zamanda bir store list oluştuğunda hem cache'i hem de memory'i güncelliyorduk. Write-back mantığında da sadece cache'i güncelliyorduk. Eğer ki veri cache'ten kaldırılacaksa, 4'ü biti 1 ise,
+
+395
+01:27:21,971 --> 01:27:37,792
+O zaman main memory ücretliyorduk. Burada tabi ikinci halde birimlerinde veri erişimimizi çok daha kötü olduğu için write-through doğrudan düşünülen bir süreç olmamıştı. Oradan write-through mantığı burada defak olarak gündeme gelmiş diyebiliriz.
+
+396
+01:27:45,268 --> 01:27:50,268
+Şimdi.
+
+397
+01:27:54,292 --> 01:28:09,432
+Bu page tablosunun çok büyük bir tablo olduğundan bahsetmiştik. Çünkü VPN sayısı kadar, farklı VPN değerleri kadar bunun satır olması lazım.
+
+398
+01:28:09,771 --> 01:28:17,552
+Ve her seferinde burada tüm satırlar aktif olmuyor, aktif kullanılmıyor. O zaman ne yapabiliriz? Bunu biraz daha küçültebiliriz. Nasıl küçültebiliriz?
+
+399
+01:28:20,496 --> 01:28:37,496
+Bu, page tablosunu tıpkı bir cache yapısı gibi düşünüp virtual adresle physical adres arasındaki dönüşümü yapan ayrı bir kontrol ekleyebiliriz. Bu kontrol arkadaşlar Translation Look Asite Buffer ismi veriliyor.
+
+400
+01:28:37,496 --> 01:28:44,496
+Translation Look Asite Buffer aslında virtual memory'nin bir cache'i diyebiliriz.
+
+401
+01:28:45,011 --> 01:29:02,692
+Dolayısıyla aradığımız veri page tablosunda var mı yok mu diye bakmak için gidip page tablosunun bütün satırlarına bakmak yerine bu küçük ara bloğa bakıyoruz. Bu ara blokta verinin olup olmadığını ve dolayısıyla varsa da doğrudan physical page number değerini buradan çekebiliyoruz.
+
+402
+01:29:02,692 --> 01:29:09,471
+Yani Virtual Memory'nin cache'ine Translation LucasArc Buffer, TLB tablosu ismi veriliyor.
+
+403
+01:29:11,572 --> 01:29:13,572
+Bunun içerisinde neler var?
+
+404
+01:29:14,572 --> 01:29:33,572
+Bunun içerisinde hangi virtual adrese karşılık hangi physical adres değerinin tutulduğu, burada bir dirty biti, referans değeri, valid olup olmadığı ve akses right değerleri yani bir page tablosunda olması gereken satırların, verilerin olduğu bir senaryoyu görüyorum.
+
+405
+01:29:34,547 --> 01:29:50,887
+Bunun amacı ne? Dediğimiz gibi büyük page tablosunda tek tek satırlara bakmak yerine TLB tablosundan bunu inceleyip doğrudan bu dönüşüm fonksiyonunun, dönüşüm değerini, VPN'den, VPN'e dönüşüm değerini doğrudan elde edebilmek.
+
+406
+01:30:00,000 --> 01:30:05,399
+Geleşim süremizi arttırıyor. Gidip page tablosundan bunu bulmaktansa TLB'de bunu bulmak daha kolay olmuş oluyor.
+
+407
+01:30:06,199 --> 01:30:11,779
+TLB'ye baktığımızda TLB'yi de sistem eklediğimizde şöyle bir senaryo oluşuyor.
+
+408
+01:30:15,764 --> 01:30:29,363
+TLB biraz daha küçük bir yapı diyebiliriz. Cache mantıklarında küçük bir yapı. Burada TLB'de set-seşi eğitim cache benzeri bir mantıkla kullanabiliriz.
+
+409
+01:30:29,363 --> 01:30:41,523
+Yani bir doğrudan indeksleme aramak kolay olur ama biraz da esneklik sağlamı adına bir satırda farklı setler var. Bu setler arasında değişim özelliğini kabul etmiş oluyoruz.
+
+410
+01:30:41,887 --> 01:30:52,148
+sağlamış oluyoruz. Dolayısıyla orada da bir esneklik oluşturmuş oluyoruz. Sistem nasıl işleyecek bu yapıda? Bir programı çalıştırmak istediğimizde bu virtual bir adres oluşturacak.
+
+411
+01:30:52,228 --> 01:31:00,627
+Gerişmek istediği değere karşılık. Bu virtual adrese karşılık biz TLB'nin hangi satırında, hangi sete bakmamız gerektiğini kabaca
+
+412
+01:31:01,108 --> 01:31:05,467
+Anlamış olacağız veya adres parçalaması gerçekleştireceğiz.
+
+413
+01:31:06,148 --> 01:31:12,047
+Ve ilgili indeks satırında tüm sütunlar için bunlar kendi arasında associated demiştik.
+
+414
+01:31:12,047 --> 01:31:22,127
+Diğer değiştirebilir. Dolayısıyla denk gelen mapping de satıra karşılık tüm sütunlarda aradığımız VPN değeri var mı diye kontrol ediyoruz.
+
+415
+01:31:23,047 --> 01:31:23,487
+Varsa
+
+416
+01:31:24,051 --> 01:31:35,671
+Bunun anlamı şu, TLB'de bir değeri bulursak, bu valid biti de bir ise, cache tablosunda da bu valid olarak mevcut anlamına geliyor. Dolayısıyla bu dönüşümü doğrudan kullanabiliyoruz.
+
+417
+01:31:38,691 --> 01:31:48,171
+Dolayısıyla eğer aradığımız veri TLB tablosunda varsa, bir hit oluştu, oluşan hitle birlikte biz fiziki adresimizi doğrudan hesaplayabildik.
+
+418
+01:31:50,996 --> 01:32:09,396
+Cache partitioning'e dikkat ederek yani cache'e göre adres sözünürmesini yaparak cache'te verimizi arıyoruz. Cache'te veri yoksa main memory'den bunu getirtiyoruz. Eğer aradığımız veri cache'te var ise zaten bunu alıp direkt CPI'ye aktarmış oluyoruz. Ne olmuş oldu arada?
+
+419
+01:32:10,387 --> 01:32:19,387
+bir TLB bloğu koymuş oldu. TLB bloğu olmasaydı ne olacaktı? CPU'nun çıkmış olduğu virtual adres doğrudan page tablosunda aranacaktı.
+
+420
+01:32:21,387 --> 01:32:32,387
+Sadece anlatmadığımız bir senaryo oldu burada. CPU'nun çıkmış olduğu virtual adres değeri TLB'de yoksa, yani TLB'de bir mis durum oluşmuşsa mecburen zaten gidip
+
+421
+01:32:32,532 --> 01:32:47,231
+Bunu page tablosundan getirmemiz gerekiyor. TLB'ye getirmemiz gerekiyor. O zaman baktığımız zaman normalde hani data için ne demiştik cache'i anlatırken veriyi önce cache'te arıyor. Cache'te yoksa neyin memoriden cache'e getirip cache'ten okuyor denir.
+
+422
+01:32:47,492 --> 01:33:00,112
+Burada da virtual adres içinde şöyle bir durum söz konusu. Biz bir komut yüzüteceksek veya bir veri erişimi yapacaksak bunun hangi izli adrese denk geldiğini anlayabilmek için önce TLB'ye bakıyorum.
+
+423
+01:33:00,532 --> 01:33:18,872
+TLB'de yoksa bunu kaiş tablosundan TLB'ye getirip daha sonra fiziki adres hesabını oluşturuyorum. Fiziki adres oluştuktan sonraki süreçte bizim daha önceki derslerde anlattığımız gibi önce cache'e bakmak. Bu fiziki adresi de cache'te yok.
+
+424
+01:33:27,956 --> 01:33:35,695
+Ayrı ayrı düşünebiliriz. Data ve instruction için ayrı bloklar olarak bunları düşünebiliriz. İkisi için de ayrı birer blok olabilir.
+
+425
+01:33:36,475 --> 01:33:37,855
+Hocam bir soru sorabilir miyim?
+
+426
+01:33:38,115 --> 01:33:38,416
+Buyurun.
+
+427
+01:33:38,935 --> 01:33:42,255
+Orada translation kısmı bir page table mu aslında?
+
+428
+01:33:42,255 --> 01:33:44,475
+Bu page table, evet. Burası page table.
+
+429
+01:33:45,095 --> 01:33:46,315
+Tamamdır hocam. Teşekkür ederim.
+
+430
+01:33:50,484 --> 01:33:51,864
+Şimdi bir örneğimiz var.
+
+431
+01:33:55,891 --> 01:33:58,712
+Lera o işin anımsetmiş, şeyde bakım.
+
+432
+01:34:12,692 --> 01:34:24,292
+Bir sistem örneği var. 4KB'lık sayfa genişliği kullanılıyor. 64 bitlik wordlerimiz var. 48 bitlik virtual adres genişliği var.
+
+433
+01:34:24,292 --> 01:34:31,692
+Ve bir programın çalışması için bu kadar bir payca ihtiyacımız var. Burada şu hesapları yapalım.
+
+434
+01:34:40,115 --> 01:34:54,336
+Page genişliğimiz ne kadar? Page genişliğimiz 4K yani Virtual Page Offset ve Physical Page Offset değerlerimiz 4K olduğu için 12 bit ile ifade edilebilir değil mi? Yanlış hesaplamıyorum.
+
+435
+01:34:54,336 --> 01:35:03,336
+48 bit virtual address, 10 buradan, 2 buradan, 12 bit. Dolayısıyla VPN değerimiz bizim 36 bit olmuş oluyor.
+
+436
+01:35:14,868 --> 01:35:22,068
+Bunları hesaplayabiliriz. Buradan bir adım daha ilerle gidebilmek için 64 bitlik word genişliğimiz var.
+
+437
+01:35:22,068 --> 01:35:32,068
+2-2 adres genişliği vermiş olsa oradan ppm yerini de hesaplayabilirdik ama page üzerinden gitmiş. Ona bir bakalım.
+
+438
+01:35:49,876 --> 01:35:59,876
+Biz şu anda şu kısımla ilgileniyor olalım. Bir de şu şeye bakalım burada. TLB'nin nasıl kullanılacağıyla ilgili olan kısma bakalım.
+
+439
+01:36:00,876 --> 01:36:12,876
+Bir başka örnek üzerinden. Burada ikinci örnekte VPN genişliğimizi 20 bit olarak vermiş.
+
+440
+01:36:13,876 --> 01:36:17,516
+VPN değerimiz 20 bit olarak verilmiş.
+
+441
+01:36:18,131 --> 01:36:30,131
+Burada bir TLB'miz var. Physical page number değerimiz 12 bit ile ifade ediliyormuş.
+
+442
+01:36:32,131 --> 01:36:45,131
+Page offset, virtual page offset ve physical page offset değerlerimiz de 12 bit ile ifade ediliyormuş. Dolayısıyla bizim buradan edindiğimiz bilgi, virtual'larda 32 bit ile ifade ediliyor.
+
+443
+01:36:45,652 --> 01:36:50,012
+Fizikal adres genişliğimizde 24 bitre ifade edilir durumda.
+
+444
+01:36:57,460 --> 01:37:20,120
+Bir TLB yapısını görüyoruz burada. TLB'nin iç yapısını. Bir tablomuz yani bu TLB tablomuz. TLB tablosu burada hangi mantıkla çalışıyor? Burada bir tülü etoşeit bir mantık olduğunu söyleyebiliriz. Dolayısıyla bu mimari için sırasıyla şu erişimleri yapacak olursak virtual adres olarak.
+
+445
+01:37:23,507 --> 01:37:36,287
+Virtual Adres olarak bu erişimleri yapacak olacak. Kaç bit? 1, 2, 3, 4, 5, 6, 7, 8, yani 32 bitlik Virtual Adres genişlikleri verilmiş. Bunlara karşılık fiziki adreslerle ilgili neler söyleyebiliriz diye soruyor.
+
+446
+01:37:39,188 --> 01:37:58,188
+Şimdi burada öncelikli olarak buradaki mantık çerçevesinde bu adresleri bölümlendirmemiz gerekiyor. 12 bitimiz offset değeri için kullanılacaksa 12 biti nasıl ayıracağız? 4, 8, 12. Şuradaki son 3 bitimiz bizim her birisi için offset değerlerimize karşılık geliyor.
+
+447
+01:37:59,567 --> 01:38:01,188
+Geri kalan kısımlar ise bizim...
+
+448
+01:38:02,260 --> 01:38:07,900
+VPN ve VPN değerlerimiz. Netice de şunlar da bizim VPN değerlerimiz.
+
+449
+01:38:07,900 --> 01:38:12,060
+BlueSSHT bir cache mantığı düşündüğümüzde ne yapacağız?
+
+450
+01:38:12,060 --> 01:38:19,860
+Gideceğiz, tag alanımızda, yani tag alanımızda burada VPN değeri burada olmuş oluyor.
+
+451
+01:38:19,860 --> 01:38:27,460
+Tag alanında bizim şu VPN değerimizi arıyor olacağız. VPN değerimizi belirli bir satırda bulduk.
+
+452
+01:38:27,667 --> 01:38:43,028
+Bu satıra ilişkin olarak, Wallet B1, 4B0. Dolayısıyla bizim buradaki Virtual Page Number'a karşılık gelen Physical Page Number'ımız, 45C şeklinde verilen adresmiş.
+
+453
+01:38:43,627 --> 01:38:49,148
+Dolayısıyla biz bu Page içerisindeki, Physical Page içerisindeki hangi offset'e erişme istiyoruz?
+
+454
+01:38:55,667 --> 01:39:01,228
+Main memory'dir. Bu adresteki veriye erişmek istediğimizi söylemiş oluyorum.
+
+455
+01:39:02,507 --> 01:39:12,427
+Diğer adrese bakalım. Diğer adresimiz 0E45B. Yine full s-sh-sh-tif bir mantık olduğunu varsayacak olursak aradığımız veri şu satırda mevcut.
+
+456
+01:39:13,167 --> 01:39:17,988
+Fakat bu bitimiz valid değil. Bunun anlamı ne?
+
+457
+01:39:23,764 --> 01:39:50,984
+Bunun anlamı ne? Burada bir page fault oluşur mu? Şuraya yazalım. Burada bir page fault oluşur mu? Ondan sonra burada bir TLB miss oluşur mu? Ne dersiniz? Aradığımız veriyi şu adresi TLB'de bulduk. Ama valid biti 0. Dolayısıyla burada bir TLB miss oluştu.
+
+458
+01:39:51,796 --> 01:40:08,336
+Fakat bu bizim TLB tablomuz, page tablosunun bir özet kısmı, yani sadece belirli bir alanını içeriyor. Dolayısıyla burada page fault ile ilgili olarak bir şey söyleyebilir miyiz? Söyleyemeyiz. Burada page fault ile ilgili bir şey söyleyemeyiz. Soru işareti kalmak zorunda.
+
+459
+01:40:09,136 --> 01:40:17,136
+Bununla birlikte 0D34E bir adresi aradığımızda bulamıyoruz.
+
+460
+01:40:19,539 --> 01:40:34,899
+Yine burada benzer bir varit biti 0 olduğu için, page fault için buraya page fault var diyebilir miyiz?
+
+461
+01:40:45,184 --> 01:41:03,184
+Burada bir page fault olup olmadığıyla ilgili bir şey söyleyemiyor. Asıl burada page fault olup olmadığını söyleyemiyor. Ama yine bir TLB'de miss var. Fakat burada aradığımız yeri yine miss oluyor. Çünkü valid bitir sıfır.
+
+462
+01:41:03,636 --> 01:41:25,636
+Buradaki page fault ile ilgili olarak bu page tablosundan bir özet olarak geldiği için burada bir page fault olduğunu da söyleyebilir durumdayız. Çünkü bu özet, page tablosundan gelen bir özet. Ama burada aradığımız veriyi, yani bizde de bulamadığımız için bununla ilgili bir şey demek mümkün olmuyor.
+
+463
+01:41:25,636 --> 01:41:30,220
+Benzer bir durum şurada için var. Aradığımız veri cache'te var.
+
+464
+01:41:30,452 --> 01:41:54,272
+Valid değil. Çünkü bu değiştirilmiş. Ne demek bu? Page tablosunda bu değer şununla tutarlı değil. Zaten valid biti 0'mış. Valid biti 1 olsaydı ve 4 il 2 1 olmuş olsaydı. Bu durumda page tablosunda bu değer tutarlı değil anlamında bunu değerlendirebiliyor olacaktı.
+
+465
+01:42:01,876 --> 01:42:26,315
+Aradığımız veriyi physical memory'de yoksa, main memory'de yoksa bunları ikinci hafıza biriminden sayfaları getirip içerideki bir glon yerine koymamız lazım. Hangilerini kaldırmamız gerekiyor? Yani tıpkı cache'lerdeki refreshment polisi olduğu gibi burada da farklı fenaryolar söz konusu.
+
+466
+01:42:27,060 --> 01:42:41,060
+Bunlardan birisi yine rastgele bir sayfayı kaldırmak. İkincisi ilk olarak yüklenmiş olan, mevcutlar içerisinde en eski yüklenmiş olan sayfayı kaldırmak. Bir başkası...
+
+467
+01:42:42,836 --> 01:43:02,836
+Bu tam hesaplanamayacak bir şey ama bir tahminle yürütülebilir. Gelecekte uzunca bir süre boyunca ihtiyacımız olmayacak sayfayı kaldırmak olabilir. Mevcut yüklüler içerisinde uzun zamandır kullanmadığımızı kaldırabiliriz.
+
+468
+01:43:09,363 --> 01:43:34,144
+Çok sık kullanmadığımız bir tanesini aldırabiliriz. Bu Not Frequency 100'dan kasıptan bir sayfaya yakın bir zamanda erişmişiz ama kullanım sıklığına baktığımız zaman 100 erişimde 1 buna erişiyoruz. Yani buna 100 erişim boyunca bir daha sıra gelmeyecek anlamına gelebilir.
+
+469
+01:43:34,771 --> 01:43:56,171
+Dolayısıyla bu least recently used değil ama uzunca bir süre kullanmayacağımız için yani bu da minimum veya optimal dediğimiz şeye bir tahmin kapısı açtığı için not frequently used mantığındaki sayfaları da kaldırıp yenileme durumumuz söz konusu.
+
+470
+01:44:05,427 --> 01:44:17,627
+C şıkkında valid biti 1 olsaydı, C şıkkında valid biti 1 olmuş olsaydı, şimdi bu valid biti 1 olmuş olsaydı hit olurdu. Fakat şeye dikkat edeceğiz.
+
+471
+01:44:17,627 --> 01:44:31,007
+Valid biti 1 olduğu vakit buradaki değer page tablosunda güncel değil. Dolayısıyla page tablosunda da güncelleme yapmamız lazım. Bunu kaldırmamız gerekiyorsa bir sonraki aşamalarda.
+
+472
+01:44:31,471 --> 01:44:39,471
+Page tablosuna güncelleme yapmamız gerekecekti. Fakat bu valid biti 1 olduğu vakit bu 1 hit olarak değerlendirecek.
+
+473
+01:44:43,252 --> 01:44:52,252
+Şimdi bu replacement policy'ler üzerinde her birinin nasıl çalıştığını görmeye çalışalım.
+
+474
+01:44:54,252 --> 01:45:06,252
+Sırasıyla bir programa ilişkin olarak gelişilecek olan sayfa referansları bu sırada verilmiş ve replacement policy olarak biz first-in-first-out mantığını kullanıyor olalım.
+
+475
+01:45:06,804 --> 01:45:11,844
+Başta bizim fiziki memorimizde de 3 tane page'li kalan ayrılmış durumda.
+
+476
+01:45:12,623 --> 01:45:22,783
+Buna göre birinci erişimi yapmak istediğimizde, A'ya erişimi yapmak istediğimizde boşta başladığımız için bu bir page fault oluşturacak.
+
+477
+01:45:25,184 --> 01:45:33,884
+A'yı sıradaki boş yere yerleştirdik. Daha sonra B'ye erişmek istiyorum. Bu aşamada frame 2 ve frame 3 boş.
+
+478
+01:45:34,644 --> 01:45:49,344
+B'ye erişmek istedim. B'ye ilişkin VPN araması yaptım. Yok. Dolayısıyla bu da bir mis oldu. B'yi sıradaki boş yere yerleştirdim. Daha sonra C'ye erişmek istiyorum. Frame 3 boş şimdilik.
+
+479
+01:45:49,811 --> 01:46:08,811
+Yani şu cizadayım. Frame 3 boş. C'ye ilişkin arama yaptım. Mevcutlar da yok. Dolayısıyla boş yere onu yerleştirdim. Dolayısıyla şu ilk 3 adımda bir page fault oluşmuş oldu. 3 tane page fault oluşmuş oldu. Daha sonra tekrar A'ya erişiyoruz. A'ya erişmek istediğimizde...
+
+480
+01:46:10,163 --> 01:46:17,203
+A'ya erişmek istediğimizde mevcut physical memory'deki sayfalara baktığımızda A daha önce bir yüklü.
+
+481
+01:46:17,623 --> 01:46:28,884
+Frame 1'de yüklü. Dolayısıyla burada bir hit oluştu. B'ye erişmek istediğimizde B nerede yüklü? Frame 2'de yüklü. Bunda da hit oldu.
+
+482
+01:46:29,583 --> 01:46:36,844
+First to first out mantığını kullandığımızda şu anda sisteme giren ilk değer frame 1. Şunu da şöyle yatayca işaretlemiş olalım.
+
+483
+01:46:37,279 --> 01:47:00,460
+First in, frame 1'imiz. Daha sonra D erişimini sağlamak istiyorum. Şuradayız, şu hizadayız. Bütün physical page'lere baktım, D yok. Dolayısıyla bir Hedge Fault oluştu. Hedge Fault oluştuğu zaman neyi kaldıracağım? First in satırı mengisi ise onu kaldıracağım. Dolayısıyla A değerini sakladım, frame 1'i sakladım.
+
+484
+01:47:01,011 --> 01:47:07,371
+Onun yerine D'yi koydum. D'yi kaldırdığımız zaman bizim artık first in satırımız train 2 olmuş oluyor.
+
+485
+01:47:08,231 --> 01:47:18,491
+Tekrar A'ya erişim yapmak istediğimizde artık ne var sistemde? D, B, A var şuraya geldiğimizde. D, B, C. Pardon. D, B, C değerleri var.
+
+486
+01:47:19,191 --> 01:47:26,911
+A'ya erişmek istediğimde D, B, C aradığım veriyor. Hangisini kaldıracağız? Artık first in olan...
+
+487
+01:47:26,912 --> 01:47:41,612
+A'yı kaldırmıktan sonra B kalmıştı. Dolayısıyla bu ikinci frame'e A'yı yerleştirdik. Tekrar D'ye erişimi yapmak istediğimizde şu aşamada ne var? D var, A var, C var. D'den dolayı bir hit oluştu. Nerede buldum onu? Frame 1'de buldum.
+
+488
+01:47:42,963 --> 01:48:08,003
+A'ya yakın zamanda erişmiştik, A'yı güncellemiştik. Dolayısıyla önce A, sonra B, sonra C'yi koymuştuk. Şu anda C bizim first in değerimiz olarak sıradaki değerimiz olmuş oluyor. Tekrar B'ye erişim yapmak istediğimizde ne vardı? D var, A var, C var. Dolayısıyla first in üçüncü sürelimiz olduğu için kaldırdık. B'ye yerleştirdik. Burada bir page fault oluştu. Dolayısıyla bir, iki, üç.
+
+489
+01:48:08,564 --> 01:48:12,564
+4, 5, 6, şuraya kadar 6, 5, 6 oluştu.
+
+490
+01:48:13,564 --> 01:48:20,064
+Buraya geldiğimizde, yerleşimi yaptığımızda, sıradaki first'in hangisi oluyor?
+
+491
+01:48:20,064 --> 01:48:24,940
+Train 1 oluyor çünkü D'yi yerleştirmekte oraya, bunlar kalktıktan sonra.
+
+492
+01:48:25,427 --> 01:48:46,427
+D var, A var, B var içeride. C'ye erişmek istiyorum. C içeride olmadığı için kimi kaldıracağım? Frame 1 bizim karşısında. D'yi kaldırdım ve artık C, A, B değerlerimiz var. Dolayısıyla burada da bir 5. fault oluştu. 7. fault. B'ye erişmek istiyorum. C, A, B var. Ona da şurada.
+
+493
+01:48:47,091 --> 01:48:54,992
+Erişip hit oluşturmuş oluyoruz. Dolayısıyla bu mantıkta, first to first out mantığında 7 tane page fault gerçekleşmiş oldu.
+
+494
+01:48:56,152 --> 01:49:09,492
+Aynı erişim sırasını şeye bakarak, yani minimal veya optimal, gelecekte uzun bir süre boyunca erişmeyeceğim veriyi kaldırarak yaparsam ne olur?
+
+495
+01:49:10,351 --> 01:49:14,032
+İlk 3 mantık yine aynı boşla başladık, ABC'yi yerleştirdik.
+
+496
+01:49:15,347 --> 01:49:41,927
+ABC'ye yerleştirdik. Uzunca bir süre boyunca erişmeyeceğim veri hangisi diye bakacağız. A'dan B'den hit oldu. Bunlar hit yazalım şunlara. Bunlar fault oldu. Page fault. Daha sonra D'ye erişmek istiyorum. D yok. ABC'ye yüklü şu anda. Bir tanesini kaldıracağım. Hangisini kaldıracağım? A'ya yakın zamanda erişiyorum. B'ye yakın zamanda erişiyorum.
+
+497
+01:49:42,515 --> 01:49:50,756
+En uzun süre boyunca benim erişmeyeceğim veri C. Dolayısıyla C'yi kaldırdım. Geleceğe yönel bir projeksiyon yani.
+
+498
+01:49:54,644 --> 01:50:07,044
+Şuraya kadar gelmiştik, pardon. Uzunca bir süre boyunca A'ya erişeceğim, D'ye erişeceğim, B'ye erişeceğim, C'ye bunlardan sonra erişeceğim. Dolayısıyla A ve B verisi yakın zamanda erişilecek, C'ye erişilecek.
+
+499
+01:50:07,784 --> 01:50:19,804
+Şuradayım çünkü. Uzunca bir süre boyunca C'ye erişilecek. O zaman C'yi kaldırdım. Buraya D'yi yerleştirdim. A, B, D değerlerimiz var. A'dan dolayı şuradan bir mis oldu.
+
+500
+01:50:20,659 --> 01:50:34,520
+Pace valve. Burada hit oldu. A var çünkü sistemde. D de sistemde var. B de sistemde var. C'ye erişmek istediğimde ne yapacağım? Nereye kadar geldik? Şuraya kadar geldik.
+
+501
+01:50:35,859 --> 01:50:44,439
+Şuraya kadar geldik. C'ye erişmek istediğimde yakın zamanda B'ye erişeceğim. Dolayısıyla A ve D'ye uzunca bir süre boyunca erişmeyeceğim. O zaman
+
+502
+01:50:44,895 --> 01:50:56,975
+Frame 1'e de, Frame 3'e de bunu koyabilirim. C'yi koyabilirim. İkisine de koysam bir durum değişmeyecek. Şurada da bir fault oluştu. Ama B'yi aradığımda B, Frame 2'de mevcut. Dolayısıyla ondan erişebiliyorum.
+
+503
+01:50:57,391 --> 01:51:05,832
+Burada da erişim sıramızı şöyle işaretleyelim. A'ya yine buradan eriştim, D'ye buradan eriştim, D'ye buradan eriştim, D'ye buradan eriştim, D'ye yine, R'imki de eriştim, D'ye.
+
+504
+01:51:06,332 --> 01:51:14,271
+Burada baktığımızda 1, 2, 3, 4, 5 tane, şu da hit olmuştu. Toplamda 5 tane page fafı da burayı tamamlamış olduk.
+
+505
+01:51:15,532 --> 01:51:21,971
+LISC, RISC, USE mantığına baktığımızda yine aynı erişim sırasıyla ilgili. Uzunca bir süre boyunca
+
+506
+01:51:22,452 --> 01:51:36,612
+Kullanmadığınız veriyi kaldıracağız. İlk üç değer yine bunlar 3 tane fault oldu. A'ya ve B'ye erişeceğim. Bunlar hit oldu. Birinci fremde de ikinci fremde hit oldu. Daha sonra D'ye erişmek istiyorum.
+
+507
+01:51:36,612 --> 01:51:46,431
+Hangisini kullanmadım uzunca bir süre boyunca? En son olarak B'ye erişmiştim. Daha sonra A'ya erişmiştim daha önce.
+
+508
+01:51:46,931 --> 01:51:55,931
+Bunlardan daha geçmişte C'ye erişmiştim. O zaman C uzunca bir süre boyunca erişmediğim veri. O zaman C'yi kaldıracağım ve D'yi koyacağım.
+
+509
+01:51:55,931 --> 01:52:07,627
+D'den dolayı bir fault oluştu. A birinci frame'de hit oldu. D üçüncü frame'de hit oldu. B ikinci frame'de hit oldu. Şu anda şuradayız.
+
+510
+01:52:07,667 --> 01:52:29,507
+Ben geçmiş zamanda neye erişmiştim? Şimdi C'ye erişmek istiyorum ama ne var? A var, B var, B var. A, B, D var, C yok. Dolayısıyla bir ipteş sınıf yapacağız. Kimi kaldıracağız? Yakın zamanda B'ye ve D'ye erişmiş, A'ya uzunca bir süredir erişmişim için o zaman A'yı kaldıracağım. C'yi yerleştirdim. Burada da bir fark oldu.
+
+511
+01:52:30,547 --> 01:52:36,427
+ve trainki de duruyordu. Oradan dolayı işit oldu. Toplamda 5-6'lı bunu tamamlamış oldu.
+
+512
+01:52:41,876 --> 01:52:53,756
+Bu bir benzer örnek olduğu için bununla değil de ödevdekine benzer bir örnekle ilerlemeye çalışalım.
+
+513
+01:52:53,756 --> 01:52:55,695
+Bir örnek kapatıyorum hemen.
+
+514
+01:53:05,076 --> 01:53:07,235
+Son olarak şuna bakacağız arkadaşlar.
+
+515
+01:53:08,595 --> 01:53:09,675
+Nedir onun adı?
+
+516
+01:53:10,815 --> 01:53:19,475
+Virtual address uzayıyla physical address uzayını birbirine bağladıktan sonra bunları cache'e de bağlayan süreci yürütmeye çalışacağız.
+
+517
+01:53:19,475 --> 01:53:27,615
+Ki bu da TLB'nin kullanılan cache yapısına göre adres bölümlemesi nasıl olacak?
+
+518
+01:53:28,536 --> 01:53:29,675
+Onu görmüş olacağım.
+
+519
+01:53:30,095 --> 01:53:39,376
+Artı oluşan fiziki adrese göre de cache artışının nasıl olacak ona bakıyor olacağız. Buna ilişkin bir tane örnek sorumuz vardı. Onu hemen bir bulayalım.
+
+520
+01:53:40,275 --> 01:53:42,916
+Geçen hafta açtığımız soru oydu aslında.
+
+521
+01:54:39,572 --> 01:54:42,352
+Evet, şöyle bir soru örneği üzerinden ilerleyelim.
+
+522
+01:54:44,512 --> 01:54:48,612
+Bunu çeşit, bu da alt tarafta verilmiş.
+
+523
+01:54:56,243 --> 01:55:01,043
+Bize verilen bir Virtual Memory Control Sistemi var.
+
+524
+01:55:01,843 --> 01:55:12,643
+Burada pH genişliği 1 KB olarak verilmiş. Veri yol genişliği 32 bit, PA 18 bit olarak verilmiş.
+
+525
+01:55:13,443 --> 01:55:16,643
+Buna göre bir kere şeyleri yazabiliriz.
+
+526
+01:55:17,643 --> 01:55:19,643
+Nerede o hesaplar?
+
+527
+01:55:23,188 --> 01:55:25,427
+geldiğiyle ilgili özellikler verilmişim.
+
+528
+01:55:33,076 --> 01:55:36,395
+Bu değerli dolu, bir senemize yaşık. Bakalım.
+
+529
+01:55:37,675 --> 01:55:40,395
+Ama geçmeyeceğim. Şurayı yakabilirsen azından.
+
+530
+01:55:42,675 --> 01:55:45,115
+Buraya yazmışım, arıyorum ama o zaman.
+
+531
+01:55:46,675 --> 01:55:48,675
+Neyse, biz yazarak ilerletelim.
+
+532
+01:55:51,859 --> 01:56:14,840
+Şimdi birinci önceliğimiz şu, Virtual Adres genişliğimiz 20 bit olarak verilmiş bir. Page genişliğimiz 1 kB. Yani bu durumda Virtual Page Offset'imizde, Physical Page Offset'imizde bizim 10 bitle ifade edilebilir durumda. Buna göre Virtual Page Number değerimiz 10 bitle ifade edilebiliyor.
+
+533
+01:56:15,347 --> 01:56:34,947
+Physical page number ise fiziki adresimizden dolayı, fiziki adresimiz kaç bit verilmiş? 18 bit verilmiş. Dolayısıyla Physical page number ise 10 bit buradan gittiği için 8 bit olarak verilmiş. Dolayısıyla bizim page tablomuzda baktığımızda, page tablomuzda kaç bit değerler bunlar?
+
+534
+01:56:35,667 --> 01:56:49,147
+Richard Pech, number 10 bitle ifade edilmiş. Burada hex basamak, mesela Pech tablosuna baktığımızda burada indislerini görüyorsunuz. İngisler kaç bitle ifade edilmiş? Bunlar 10 basamaklı hex değerler.
+
+535
+01:56:49,147 --> 01:57:03,667
+Yani saydığım zaman 4, 8, 12 görünüyor ama bunun her zaman için, bu VPN'in her zaman için en yüksek anlamlı 2 biti 0. Dolayısıyla geriye kalan 10 bit bizim için anlamlı. Yani şurada yazdığımız değerler asla 10 biti geçer.
+
+536
+01:57:03,667 --> 01:57:26,527
+10 biti geçmiyorsa kaça kadar gidelim? Yani hepsini yazmamız zaten. 10 bite kadar gidiyor. Maksimum yani 0'dan 1023'e kadar buradaki tablo satırlarımız bitmiş oluyor. 0'dan ...1023'e kadar toplam 1024 tane satırımız var. 2 üzeri 10 satırı bir değer.
+
+537
+01:57:27,988 --> 01:57:55,587
+Yine bu cache tablosuna baktığımızda arkadaşlar cache tablosunun her bir satırında yani bu arada şey saklanmıyor. VPN değeri saklanmıyor. VPN değeri zaten index. Yani bir memory alanında hangi satıra erişeceksin o VPN'le zaten verilmiştir. Onu saklamıyoruz. Ama PPN değeri saklanıyor. PPN'lerde kaçtı? 8 bit değerler. Dolayısıyla burada 2x basamakla verilmiş. Valid bitimiz var. Bir de burada görmediğimiz access rights.
+
+538
+01:57:56,051 --> 01:57:59,731
+mantığında ilgili sütunlarımız mevcut.
+
+539
+01:58:02,131 --> 01:58:03,252
+Burası bu şekilde.
+
+540
+01:58:12,148 --> 01:58:27,268
+Şimdi biz bir TLB tablomuz da var. TLB tablomuza baktığımızda bunun bir tag alanı var, bir ppn alanı var, bir de valid bit sütunu var. Bu TLB tablomuz nasıl bir tablo?
+
+541
+01:58:38,195 --> 01:58:40,515
+Mışı da ne yapalım, işe de gel.
+
+542
+01:58:42,595 --> 01:58:43,515
+Aşada,
+
+543
+01:58:43,515 --> 01:58:45,835
+Mışı da ne yapalım, işe de gel.
+
+544
+01:58:50,515 --> 01:58:52,035
+Onu biraz sonra geçelim.
+
+545
+01:58:53,595 --> 01:58:59,995
+Şimdi TLB tablosuna baktığımız zaman TLB tablosunda herhangi bir tag alanına baktığımızda tag alanımız 10.000.
+
+546
+01:59:01,095 --> 01:59:03,655
+Verilmemiş bilgi ama ben tek olarak söyleyelim.
+
+547
+01:59:03,735 --> 01:59:07,035
+Buradaki TLB tablonuz fulle et öşeyi bir cache mantığında.
+
+548
+01:59:07,995 --> 01:59:09,315
+O bilgi şurada verilmiş.
+
+549
+01:59:11,195 --> 01:59:15,475
+Toplam 16 tane girdisi var. 16 bloğu var.
+
+550
+01:59:16,340 --> 01:59:23,340
+Bu TLB tablosunda neler saklanıyor? Bu TLB tablosunda tag alanı olarak VPN değerimiz saklanıyor.
+
+551
+01:59:23,340 --> 01:59:30,340
+Plusle şey gibi olduğu için VPN değerimiz tag alanında saklanıyor. Bu bizatihi saklanıyor.
+
+552
+01:59:30,340 --> 01:59:36,340
+Ama burada page tablosunda VPN değeri saklanmıyor demiştik. Bu zaten index'e karşılık geliyor. O ikisini karıştırmıyorum.
+
+553
+01:59:37,203 --> 01:59:54,264
+Başka ne saklanıyor? PPN değer. Yani ilgili VPN'e karşı hangi PPN değeri var? O saklanıyor. 8 bitki bir başka değer. Artı, ilgili satırın valid olup olmadığına dair bir sunumuz var. Artı, burada görülmüyor ama yine access rights ile ilgili kısım mevcut.
+
+554
+01:59:54,884 --> 02:00:00,604
+Şimdi buraya kadar olan kısımla ilgili olarak verilen adresler için erişimlerin nasıl bir sonuç doğurduğuna bakalım.
+
+555
+02:00:01,268 --> 02:00:19,268
+Öncelikli olarak verilen adres virtual adres 04AA4 adresi. Bu adresi banyo olarak yazdığımızda nasıl ayıracağız bunu? Düşük anlamlı 10 bitimiz yani 8, 10 bit. Şurası bizim şuraya kadar olanı.
+
+556
+02:00:36,564 --> 02:00:42,924
+10 bitlik kısım, offset'e karşılık geliyordu. Şöyle offset'imizi ayıralım.
+
+557
+02:00:42,924 --> 02:00:55,004
+8, 10, şöyle 1'i ayırmak istedim. 10 bitlik kısım, virtual page number, page offset ve physical page offset'e karşılık gelecek kısım.
+
+558
+02:00:55,004 --> 02:01:04,364
+Buradaki 4, 8, VPN, VPN, VPN, VPN, orda değerimiz kaçtı 1 kb?
+
+559
+02:01:04,595 --> 02:01:09,595
+10 bit'e ihtiyacımız vardı. Virtual adresimiz kaç bitti? Bir şey yanlış mı yaptı?
+
+560
+02:01:09,595 --> 02:01:15,595
+1 kb, veri yolu genişliği 32. Virtual adres çirme bitti. Tamam.
+
+561
+02:01:15,595 --> 02:01:28,595
+Burada şey kısmına kalan da, Virtual Page Number'a kalan kısmına yine 10 bit'lik bir alan. Dolayısıyla şimdi bu kalan alanları hex olarak yazacak olursak, işte 4 bit.
+
+562
+02:01:30,100 --> 02:01:49,660
+Bunları şöyle farklı bir renk yapalım. Şurada ayırsak. 2A4, hexadesimal değerimiz bizim virtual offset değerimiz. Virtual page number değerine baktığımızda yine dörder dörder ayırdığımızda 0, 1, 2 değerimiz bizim virtual page number'ımızı oluşturuyor.
+
+563
+02:01:49,920 --> 02:01:58,920
+Peki burada TLB tag değerimizi nasıl belirleyeceğiz? TLB tablomuz full associative olduğu için
+
+564
+02:02:06,863 --> 02:02:21,384
+Tablo, özet tablo olmasını bekliyoruz. Full associated olduğu için burada herhangi bir blok bir entry'den uçluğundan dolayı da TAC alanımızın genişliği VPN genişliğinde olacak bu yapı için.
+
+565
+02:02:22,003 --> 02:02:26,543
+Dolayısıyla VPN değerimizin aynısı TLB TAC alanında da saklanıyor olacak.
+
+566
+02:02:26,543 --> 02:02:32,104
+Şimdi 0.12 değerini biz şeyde arayalım. Önce TLB tablosuna bakıyoruz.
+
+567
+02:02:33,076 --> 02:03:00,155
+0.12 değerimiz, bakıyoruz, 0.12 değerimiz, valid biti 1 olmak şartıyla TLB tablosunda var. Bunun karşılığı PPN değeri de A1'miş. Dolayısıyla bu durumda, birazcık daha yukarı kaydıralım. Bu durumda aradığımız veri TLB tablosunda mevcut ve valid biti 1. Dolayısıyla TLB'de hit oldu. Aradığımız verinin valid biti 1 olduğu için, page var mı? Yok. Karşılık gelen PPN değeri A1.
+
+568
+02:03:00,595 --> 02:03:10,595
+Dolayısıyla bu VPN değerini A1 ile değiştirip, Offset değerini, Physical Page Offset değerini de aynen yazarak, Physical Address değerini de hesaplayabiliyor olacağız.
+
+569
+02:03:10,595 --> 02:03:21,595
+Tablodan gördüğümüz değer A1'di. Kaç bit olacaktı? 8 bit ile ifade edilebilecek bir PPN. Yazalım. 1, 0, 1, 0, 0, 0, 0, 1.
+
+570
+02:03:21,595 --> 02:03:23,595
+PPN'den bu geldi.
+
+571
+02:03:24,500 --> 02:03:43,380
+Physical Page Offset'ten gelen değerlerimiz ne? 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0. Şimdi bunları da yine dörder bloklar halinde ele alacak olursak, şuradan ikili blok, şurada dörtlü blok, şurada dörtlü blok ve burada iki bit kaldı.
+
+572
+02:03:48,115 --> 02:03:55,576
+A4 adresimiz bizim bu TLB tablosuna oluşturduğumuz fiziki adrese karşılık gelmiş oluyor.
+
+573
+02:03:56,216 --> 02:04:06,536
+Şimdi şöyle durumlarla karşılaşabiliriz. Örneğin bizim TLB tablomuz full associative değil de örneğin 4-based associative bir cache yapısı olabilir.
+
+574
+02:04:07,283 --> 02:04:20,003
+Bu durumda, bizim VPN adres değerimizin ayrılması lazım. VPN değerimiz kaçmış? 10 bitlik değerimizde. İşte index.
+
+575
+02:04:21,203 --> 02:04:37,203
+ve tag alanlarını ayrıştırarak kullanmamız gerekebilir. O durumda TLB tablosundaki tag alanı VPN ile birebir ayrı olmayabilir. Çünkü bu 10 bitlik değeri, belirli bir kısmı tag alanına, belirli bir kısmı indeks alanına ayrışmış olacak. Buna da dikkat etmek lazım.
+
+576
+02:04:37,203 --> 02:04:41,067
+Bir başka örneğimize bakalım. Bu örnekte ise...
+
+577
+02:04:41,876 --> 02:05:07,956
+07.8.e6 adresine erişmek istiyoruz. Binary olarak yazdık. Binary olarak yazdıktan sonra yine bunu yüksek anlamlı 10 bit, 4, 8, 10 bit olarak ayırdık. Burası bizim hem VPN değerimiz hem de Physical Page Offset değerimiz. Yüksek anlamlı 10 bitimiz ise bizim VPN değerimiz. Biz buna karşılık Physical Page Number'ı arıyoruz. Bu değeri 4 bit 4 bit örneklediğimizde
+
+578
+02:05:08,756 --> 02:05:27,716
+0, 1, 1, 1, 1, 0, o da E. Şu değeri elde ediyoruz. Ve BPO değerine baktığımızda 0, E, 6 değerine erişiyoruz. TLB tablosunda full SSH ekip olduğu için VPN'in kendisi doğrudan tag alanında bulunacak.
+
+579
+02:05:27,716 --> 02:05:36,216
+Dolayısıyla biz TLB tablosunda 0, 1, E değerini arıyoruz. 0, 1, E değeri, valid biti 0.
+
+580
+02:05:37,332 --> 02:05:43,431
+Valid bitinin sıfır olması ne demek? Aradığımız veriyi biz TLB tablosunda bulamadık.
+
+581
+02:05:45,511 --> 02:05:55,492
+TLB tablosunda bulamadık ve dolayısıyla MIS oluştu. Page Fav var mı yok mu? Bunu anlamak için bu sefer gidip Page tablosuna bakacağız. Page tablosunun hangi satırına bakacağız?
+
+582
+02:05:56,051 --> 02:06:09,011
+01E numaralı satırına bakacağız. 01E numaralı satırında bu 1 valid bitiyle mevcut. Dolayısıyla fizik bir adres değerinde 57 olmak şartıyla bu değeri burada okumuş oluyoruz.
+
+583
+02:06:10,071 --> 02:06:21,171
+PageFault var mı dolayısıyla? Burada PageFault yok. Physical PageNumber'da 57 değerimiz. Bu iki değeri birleştirdiğimizde 57H ile 8 bit buradan.
+
+584
+02:06:21,779 --> 02:06:33,019
+Şuradaki değerinde 10 bitlik düşük anlamlı kısmını birleştirdiğimizde elde edeceğimiz 18 bitlik adres değer de bizim fiziki adres değerimizi olup duruyor olacak.
+
+585
+02:06:37,652 --> 02:06:54,172
+Cache ile ilgili biz de bakalım burada. Biz de cache ile ilgili bakalım. Fiziki adresimiz bizim 18. Cache ile ilgili şu bilgiler verilmiş. Toplam 512 word. Bunu kopyalayıp alabilir miyiz?
+
+586
+02:06:56,752 --> 02:07:03,712
+Toplamda 512 word veri saklayabiliyor. Her bir satırda 8 adet küme var.
+
+587
+02:07:04,307 --> 02:07:29,307
+Dolayısıyla her bir blokta da 8 word var. Dolayısıyla bir satırda 64 tane word olmuş oluyor. Her bir wordümüz kaç bayktı? Şurada yukarıda yazıyordu o. Nerede, nerede, nerede? Yerde yazıyordu o bir. Veri yolu genişliği 32 bit olarak verilmiş. Dolayısıyla...
+
+588
+02:07:29,648 --> 02:07:46,528
+Her bir word'ümüz 4 byte'dan oluşuyor. Dolayısıyla 64 x 4, 256 byte. Her bir satırda 8 tane set var. Her bir set 8 word'tan oluşuyor. Her bir word'ümüzde 4 tane byte'dan oluşuyor. O zaman bizim bir cache satırımızın boyutu ne olmuş oluyor?
+
+589
+02:07:48,208 --> 02:07:53,988
+Onu şurada bulalım. Toplamda 512 word vardı. 8 set var.
+
+590
+02:07:54,368 --> 02:07:58,248
+Her bir nette 8 tane word var.
+
+591
+02:08:06,163 --> 02:08:11,603
+Dolayısıyla 512 word'muş. Dolayısıyla bizim cache'miz 8 adet satırdan oluşuyor.
+
+592
+02:08:12,503 --> 02:08:19,163
+Fiziki adresi şimdi parçalamaya çalışıyorlar. Bizim cache'miz 8 satırdan oluşuyor. 512 word'muş. Ben onu barf olarak okumuşum.
+
+593
+02:08:19,283 --> 02:08:31,363
+512 word. Dolayısıyla 8 tane tümemiz var. Her tümede 8 tane word'ımız var. 64 word. Her bir satırda 64 word. 512 bölü 64 bizim.
+
+594
+02:08:32,180 --> 02:08:44,160
+Satır sayımızı verecek. 512 bölü 64, 8 yapıyor. 8 tane satırımız var. Bu satırları intisleyebilmek için bizim cache'te 3 bitlik bir değere ihtiyacımız var. Bu bir.
+
+595
+02:08:44,260 --> 02:08:59,460
+İkincisi, her bir blokta kaç tane word'umuz vardı? 8 tane word'umuz vardı. Dolayısıyla bir set içerisindeki, yani bir blok içerisindeki hangi word ile ilgili işlem yaptığımızı belirleyebilmek için de 3 bite ihtiyacımız var.
+
+596
+02:08:59,872 --> 02:09:09,472
+1 word 4 byte'dan oluşuyor. Yani 1 word içerisindeki hangi byte ile ilgili işlem yaptığımızı vermek için 2 byte'e ihtiyacımız var.
+
+597
+02:09:09,472 --> 02:09:24,352
+Son olarak tag alanı kalıyor. 3 bit index'te, 2 bit byte offset'te, 3 bit word offset'te 6-8 bitimizi kullandık. Toplamda fiziki adresimiz 18 bitti.
+
+598
+02:09:24,431 --> 02:09:27,791
+Geriye 10 bitkik de tag alanı kalmış oldu.
+
+599
+02:09:29,131 --> 02:09:31,251
+10 bitkik tag alanı kalmış oldu.
+
+600
+02:09:31,851 --> 02:09:33,331
+Şimdi burada bize söylenen ne?
+
+601
+02:09:35,011 --> 02:09:45,031
+Bir fiziki adres işlemi yürütmek istediğimizde bunun adres partitioning'i nasıl olur diye soruyor.
+
+602
+02:09:45,851 --> 02:09:50,071
+Yürüteceğimiz ilk adres 00F4 yani 20 bitkik bir değer.
+
+603
+02:09:50,707 --> 02:10:04,807
+Bunun düşük anlamlı 10 biti PageOffset'ti. Yüksek anlamlı 10 biti ise Mutual PageNumber'dı. Şimdi 0 değerini tabloda arıyoruz. Valid biti 1 olacak şekilde gelgide bulduk.
+
+604
+02:10:04,807 --> 02:10:14,028
+Dolayısıyla bu 0, 0, 0, F4'e karşılık bizim erişmek istediğimiz fiziki adres ne olmuş oluyor?
+
+605
+02:10:14,804 --> 02:10:27,484
+8 bit buradan geldi. 0, 0, 0, 1, 1, 1, 1, 1, 1, offset değerimiz de ne? 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0.
+
+606
+02:10:27,484 --> 02:10:37,484
+Şimdi bunları dörderli dörderli aldık. 4, 4, 4, 4, 4, 4, 4.
+
+607
+02:10:39,220 --> 02:10:43,520
+Az önce yapmış olduğumuz partitioning'e göre nasıl ayıracağına bakalım.
+
+608
+02:10:46,560 --> 02:10:47,100
+Şuradan.
+
+609
+02:10:50,680 --> 02:10:52,320
+Bu dörtlük ayırmaya şu anda gerek yok.
+
+610
+02:10:52,320 --> 02:10:57,240
+Zaten alan ayırımı burada yaptı.
+
+611
+02:10:57,980 --> 02:10:59,120
+ByteOffset için 2 bit.
+
+612
+02:11:01,000 --> 02:11:02,660
+Bu ByteOffset için kullandık.
+
+613
+02:11:03,380 --> 02:11:05,200
+WordOffset için 3 bit kullanıyoruz.
+
+614
+02:11:07,859 --> 02:11:32,480
+İndeks için 3 bit kullanıyoruz. Göreye kalan 10 biti de tag alanı için kullanıyoruz. Dolayısıyla şimdi bizim arayacağımız şey tablomuzun kaç satırdan oluşuyordu? 8 satırdan oluşuyordu. 0'dan 1, 2, 0, 7'ye kadar giden satırlarımız vardı. Bunların içerisinde set 0, set 1, 0, 0, 7'ye kadar gidiyorduk.
+
+615
+02:11:32,979 --> 02:11:43,899
+Neyi arayacağız biz şimdi? 1, 1, 1 olan satıra. Yani 7 numaralı satıra gideceğiz. Bu 7 numaralı satır içerisindeki her bir setin valid bitine ve tag alanına bakacağız.
+
+616
+02:11:45,279 --> 02:11:48,759
+Valid ve tag alanı.
+
+617
+02:11:49,759 --> 02:11:53,519
+Tag alanı değeri olarak da, şuradaki değeri okuyalım.
+
+618
+02:11:59,891 --> 02:12:17,091
+07CH değerimiz. 07CH değeri var mı diye bakıyoruz. Şunu kontrol ettik, bunu kontrol ettik. Burada hasbelkader yakaladık. Valid tipimizde bir ise aradığımız veri şu 8 word'lük yani 8 keredak 32 byte'lık veri içerisinde yer alıyor.
+
+619
+02:12:17,411 --> 02:12:26,871
+Bu 32 byte'ın hangi word'ündeyiz? 5 numaralı word'ündeyiz ve bu word'lerden de 0 numaralı byte'a erişmek istiyoruz diye.
+
+620
+02:12:27,572 --> 02:12:35,912
+Virtual address, physical address ve cache partitioning açısından bölümlemeyi bu çerçevede yürütmemiz gerekiyor arkadaşlar.
+
+621
+02:12:37,392 --> 02:12:39,672
+Şimdi burada şey var mıydı onu bir kontrol edelim.
+
+622
+02:12:52,500 --> 02:12:56,500
+Burada data, yani cache'in içeriğini göremiyoruz çünkü datayı vermemişiz.
+
+623
+02:13:04,115 --> 02:13:06,475
+Bu şekilde bir partition yapmak gerekiyor.
+
+624
+02:13:06,855 --> 02:13:09,695
+Dolayısıyla bu örnekle şunu sağlamış olduk.
+
+625
+02:13:10,695 --> 02:13:19,996
+Virtual address uzayı ile Dicle address uzayı arasındaki dönüşümü zaten bu haftanın konusu olan bu translation mantığında görmüştük.
+
+626
+02:13:19,996 --> 02:13:21,996
+Fakat bunun aynı zamanda...
+
+627
+02:13:22,608 --> 02:13:34,408
+Cache adres parçalamasına da bu bir bağlantısı var. Neticede fiziki adres bu cache tablosuna göre oluşuyor. Cache tablosuna göre elde ettiğiniz adresi de veya geldiği tablosuna göre oluşuyor.
+
+628
+02:13:34,988 --> 02:13:44,728
+Elde ettiğiniz fiziki adres de önce cache'te nereye karşılık geliyor diye bulmamız lazım. Onun için de cache yapısına göre fiziki adresi tekrar bölümlememiz gerekir.
+
+629
+02:13:45,235 --> 02:13:54,195
+Dolayısıyla virtual adres, physical adres, cache adres partitioning bunlar hepsi birbirine ilişkili bir şekilde yürüyor diyebiliriz arkadaşlar.
+
+630
+02:13:54,876 --> 02:14:00,275
+Buradaki örneğimizde kabaca bunları birbirine bağlayan bir örnek olması açısından önemli diyeceğim.
+
+631
+02:14:02,315 --> 02:14:08,756
+Kabaca benim hani ödevde de olan konu bu olduğu için kabaca burayı vermek istedim örnekle birlikte.
+
+632
+02:14:09,492 --> 02:14:19,492
+Ödevdeki kısım da buna çok benziyor açıkçası. Ödevin birinci kısmı buna çok benziyor. Benzer yapı çerçevesinde çözülmesi gerekiyor.
+
+633
+02:14:19,492 --> 02:14:28,492
+Ödevdeki ikinci kısım da fiziki olarak sizin sisteminize bulunan cache yapısına bağlı olarak hesaplayacağım bir MIS oranı ile
+
+634
+02:14:29,460 --> 02:14:37,900
+Sistemin gerçekte, istatistik olarak raporladığı MIS oranını ve dolayısıyla erişim sürelerini karşılaştırmış olacaksınız.
+
+635
+02:14:38,940 --> 02:14:49,340
+Walgreens'de size sistemin verdiği şey bir yüzde oran olacak kabaca. Sizinki de sizin hesaplayacağınız değerde bir yüzde oran olursa anlamlı bir karşılaştırma sağlamış olur.
+
+636
+02:14:57,311 --> 02:14:59,912
+Mis oranıyla ilgilendiğimi söyleyebiliriz.
+
+637
+02:15:01,412 --> 02:15:07,572
+Final ile ilgili olarak da arkadaşlar, finali yine çoktan seçmeli bir sınav olarak belirledik.
+
+638
+02:15:08,292 --> 02:15:11,792
+Takribi olarak yüzde tutalım bir sınav olacak.
+
+639
+02:15:12,852 --> 02:15:16,412
+40'a yakın soru var sanırım.
+
+640
+02:15:17,192 --> 02:15:18,072
+Çoktan seçmeli.
+
+641
+02:15:20,692 --> 02:15:25,091
+Ders içerisinde baştan itibaren gördüğümüz tüm konular orada dahil.
+
+642
+02:15:26,152 --> 02:15:34,692
+İlk başta kombinasyonel devlet tasarımından veya blok tasarımından tutun da virtual memory'e kadar olan tüm konular dahil.
+
+643
+02:15:36,072 --> 02:15:38,952
+Çoktan seçmeli bir sınav olacak, onu söyleyebilirim.
+
+644
+02:15:39,032 --> 02:15:42,731
+Onun haricinde sizin sormak istediğiniz bir şey varsa alayım, yoksa dersi bitirelim.
+
+645
+02:15:48,148 --> 02:15:49,688
+Sormak istediğiniz bir şey var mı?
+
+646
+02:16:05,876 --> 02:16:24,135
+Ben katılımınız için teşekkür ediyorum. Sınavlarında başarılar diliyorum. Onun haricinde başka bir konumuz yok. Tersimizi bu dönemde kapatmış oluyoruz. Tekrar teşekkür ederim. Herkese izin ver.

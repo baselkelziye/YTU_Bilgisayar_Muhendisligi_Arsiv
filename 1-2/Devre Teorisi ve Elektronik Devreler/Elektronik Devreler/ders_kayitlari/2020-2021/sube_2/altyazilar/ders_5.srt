@@ -1,0 +1,1187 @@
+1
+00:27:58,516 --> 00:28:04,016
+Merhaba arkadaşlar. Sesim geliyor herhalde. Anormal dikiyor.
+
+2
+00:28:06,016 --> 00:28:08,016
+Hemen sunumumuzu yansıtalım.
+
+3
+00:28:12,627 --> 00:28:13,947
+Sunum ekranı geldi mi?
+
+4
+00:28:15,887 --> 00:28:17,087
+Evet hocam.
+
+5
+00:28:49,748 --> 00:28:55,087
+Merhaba arkadaşlar. Umarım hepiniz sağlıklı saat içerisinde derse katılım sağlıyorsunuzdur.
+
+6
+00:28:55,587 --> 00:28:58,188
+Bu süreçte hepimize sağlıklı günler diliyorum.
+
+7
+00:29:00,208 --> 00:29:07,408
+Biraz geç kaldık. Malumunuz belki, İngilizsiniz belki biraz uzaktan da olsa duyum aldınız.
+
+8
+00:29:07,528 --> 00:29:11,688
+Bir müdek sürecimiz var. Akreditasyon süreci üniversitenin.
+
+9
+00:29:12,339 --> 00:29:35,079
+Onunla alakalı bayağı yoğun işler yapıyoruz. O nedenle biraz sağlık dersimiz zaten herhalde muhtemelen ara vermeden 1 saat 20 dakika gibi bir sürede belki biraz daha kısa bitirebileceğimiz bir ders olacak. Bu hafta ne yaptık geçen haftalarda? Zaten her hafta ben böyle bir özet geçiyorum.
+
+10
+00:29:39,167 --> 00:29:59,587
+Asistan arkadaşlarının size atamasını yapacağı projelerde veya sizin bulduğunuz projelerde gerçekleştireceğiniz sensörlerin ve ilgileyici diye tabir ettiğimiz FJH'ların ne tarz yapıda, ne çeşitlerinin neler olduğundan vs. bahsetmiştik.
+
+11
+00:30:00,587 --> 00:30:06,067
+İşte bu sensörlerle yapılabilecek orası devrelerden bahsetmiştik.
+
+12
+00:30:08,084 --> 00:30:21,584
+Yani geçtiğimiz iki hafta elektronik sistemleri ve sensör ve eyleyeciler hakkında bilgiler vererek biraz daha proje ve lab tabanına bir hafta işledik.
+
+13
+00:30:22,443 --> 00:30:31,963
+İki hafta işledik hatta. Bu hafta ne yapacağız? Bu hafta artık biraz daha elektronik devreleri teorik anlamda giriş yapacağız.
+
+14
+00:30:32,915 --> 00:30:57,056
+Şimdi şunu söylemiştik ilk hafta. Devre teorisi ve elektronik devreler aslında iki farklı konsept barındırıyor. İçeride tabi devre teorisinde gördüğümüz işte KCD, KVD veyahut da Kirşof'un Akınlar 10 Kanunu gibi formülize edebileceğimiz formülleri devre teorisinde basic anlamda size verilmesi hedeflenir.
+
+15
+00:30:57,556 --> 00:31:11,916
+Elektronik Devreler'de aslında artık bundan sonra bu teoremlerin, işte O'nun kanununla en basitinden bilindiği varsayarak bir tık daha ilerisi olan yarı iletkenlerdeki analizlere bakılır.
+
+16
+00:31:12,816 --> 00:31:16,576
+Yani Elektronik Devreler dersinin konsepti yarı iletkenler.
+
+17
+00:31:16,943 --> 00:31:29,083
+Elektrik devrelerinin konsepti de pasif devre elemanları diye tabir ettiğimiz, ana başlıklara bölmek gerekirse devrede kullanılan elemanları böyle ayırdığımız ders katı bölüleri.
+
+18
+00:31:30,023 --> 00:31:32,864
+Yani yarı iletkenleri işleyeceğiz elektronik devrelerde.
+
+19
+00:31:32,864 --> 00:31:40,104
+Bugün yarı iletken dediğimiz konsept nasıl oluşuyor, ne demek bunlara değinip,
+
+20
+00:31:40,384 --> 00:31:52,824
+Bunlar da bu ders kapsamında işleyeceğimiz üç tane yarı iletken diyot, transistör, MOSFET. Bir ihtimal bir tane daha belki işleriz ama o şu an söylemeyelim.
+
+21
+00:31:52,824 --> 00:32:00,903
+MOSFET, transistör ve diyot üzerinde bu yarı iletken mekanizması yani bu yarı iletkenlikten kasıt nedir?
+
+22
+00:32:01,248 --> 00:32:20,067
+Bir elektro, yani kutuplaşma olduğunda, bir elektrik akım oluştuğunda yarı iletkenlerin iç yapısındaki değişim neyi söylüyor bize? Bunlara değineceğimiz ders, zaten elektronik devreler dersi bugün de ilk konumuz diyot. Yarı iletkenlerin ilk konusu diyotları işleyeceğiz.
+
+23
+00:32:21,128 --> 00:32:27,708
+Şimdi diyota ilk baktığımızda aslında iki terminalde bir yapı. Ne demek iki terminalde yapı? Yani iki bacağı var demek.
+
+24
+00:32:28,079 --> 00:32:37,740
+Mesela üç terminalde bir yapı desek ki, üç tane baca olan transistör veya potansiyometre gibi, reosta gibi devre elemanları gelecekti.
+
+25
+00:32:45,332 --> 00:32:50,332
+Diyot iki terminaldi, yani iki bacağı olan bir devre elemanı.
+
+26
+00:32:51,572 --> 00:32:56,792
+Şimdi ilk başta literar anlamda, yani sözlükte geçen tanımlamaları direkt vereceğiz.
+
+27
+00:32:57,072 --> 00:32:58,892
+Yani sunumda böyle yerleştirdim.
+
+28
+00:32:59,532 --> 00:33:05,492
+Yani diyotun ilk bilmeniz gereken şey şu, bir polarizasyon yönü eylemi var.
+
+29
+00:33:06,012 --> 00:33:07,731
+Yani bir tarafı artı, bir tarafı eksiği.
+
+30
+00:33:08,019 --> 00:33:34,759
+Ve bunu doğru polarma yapılırsa, yani diyota doğru bir polarizasyon, doğru bir kutuplaşmayla gerilim verilirse, doğru ne, yanlış ne bunlara deneyeceğiz zaten de, yani doğru polarmalı, doğru düzgün bir elektriksel akım gönderilirse yön bakımında, o zaman diyot kısa devre, yani normal bir kablodan farkı olmayacak bir iletkenlik gösterecek.
+
+31
+00:33:35,700 --> 00:33:51,660
+İlk kaydemiz bu. Yani diyodun çalışma prensibinin birinci prensibi bu. Eğer ki doğru bağlanırsa diyod dediğimiz eleman kısa devre yani kablo varmış gibi respons cevap üretecek olan bir devre elemanı.
+
+32
+00:33:53,044 --> 00:34:15,124
+Velev ki diyota ters bir polizasyon verilirse, yani yönleri dışında bir ters elektriksel akım gönderilirse. Bu noktalarda diyot ise sonsuz direnç dediğimiz, aslında açık devre, açık devre sürecinden, açık devreymiş gibi davranır. Yani iki nokta arasında, terminal arasında.
+
+33
+00:34:15,635 --> 00:34:22,135
+Açık, hiçbir iletimin olmadığı şeklinde bir eylem gösterir, cevap verir.
+
+34
+00:34:24,148 --> 00:34:44,608
+İlk etapta bilmemiz gereken, diyot için teorik anlamda doğru polarmada iletime geçen kısa devre, yani hiçbir şey göstermeyen, direnç göstermeyen devre elemanı ama ters bağladığımızda açık devre, yani sonsuz direnç gösteren devre elemanıymış gibi bunu hesaplamalara katacağız.
+
+35
+00:34:52,148 --> 00:35:18,148
+Yani işte sonsuz demek ne demek pratikte yoktur aslında böyle bir şey. Yani sonsuz direnç dediğimiz şey aslında bir yerden sonra muzuluk veyahut da işte kendi öz maddesinden dolayı işte çok çok yüksek katsaysa sahip de olsa bir yerden sonra iletime geçen alet malzemelerdir. Yani sonsuz dirençten kastımız biraz şey kalır yani.
+
+36
+00:35:18,996 --> 00:35:40,876
+Teorikte uygun ama pratikte imkansız olan bir konsept. Aynı şekilde misal bu dersin ilerleyen sıraklarda göreceğiz. Doğru polarmada diyoruz ki sıfır direnç gösteren kablo gibi gösteriliyoruz. Ama kablonun iç yapısındaki kullanılan materyal ile bunun iç yapısında kullanılan materyal birbirinden farklı.
+
+37
+00:35:46,996 --> 00:35:53,756
+Yani sıfır bir direnç gösteren, hiçbir direnç göstermeyen bir devre elemanı olamaz.
+
+38
+00:35:54,635 --> 00:35:59,135
+Pratik ve teori her zaman ayrıştırılmak lazım.
+
+39
+00:35:59,135 --> 00:36:10,456
+Ama biz yani eğer soruda aksi belirtilmedikçe, ki o aksi noktalarda değineceğiz, belirtilmedikçe biz diyodu ideal kabul edeceğiz.
+
+40
+00:36:12,692 --> 00:36:36,871
+Teorik olan diyot olacak bizim nazarımızda. Burada da belirttiğimiz ideal dediğimiz tabir bu. Yani sonra da size kullanılan şematik figürde, devre figüründe kullanılan diyotlar ideal diyotlu deniyorsa kaydemiz bu. Doğru polarmada kısa devre, açık yani ters polarmada, ters kutuplaşmada.
+
+41
+00:36:37,311 --> 00:36:41,991
+Açık devre olarak çalışan devre elemanı diye canlandıracağız.
+
+42
+00:36:51,476 --> 00:36:59,476
+Tabi bunun iletim akım gerilim eğrisini de çizebiliriz. Bu eğri bize neyi söylüyor?
+
+43
+00:37:00,476 --> 00:37:09,476
+VD dediğimiz diyotun üzerindeki potansiyel fark. Yani şu nokta ile şu nokta arasındaki gerilim ve biz VD diyoruz.
+
+44
+00:37:10,195 --> 00:37:36,795
+Yani diyotun üzerindeki gerilim. Eğer ki diyotun üzerindeki gerilim artıysa, artıya doğru giderse ki artıya doğru gitmesi için artı polarmanın artıdan eksi polarmada eksiden verilmesi gerekiyor. Yani doğru polarmada, doğru bir düzgün bir yerleştirmede akım yani bu diyotun üzerinden geçen akım sonsuz oluyor. Yani kısa devre dediğimiz.
+
+45
+00:37:37,231 --> 00:38:04,512
+Herhangi bir direnç göstermeyen devreyle bunu gösteriyor. Ama ters açıdan bakarsak, yani ben ters olarak eksi artı verirsem bu diyota, diyotun artısı neresi, eksisi neresi orayı daha tartışacağız. Ama ters bir polarizasyon, bir kutuplama verirsem o zaman da ideal diyot akımın hiçbir zaman geçmediği bir yapı olan açık devre gibi davranacak.
+
+46
+00:38:05,715 --> 00:38:17,076
+Ve burada akım sıfır olacak. Burada da akım sonsuz olacak. Yani sıfır direnç ne kadar akım varsa o kadar şey demek.
+
+47
+00:38:17,076 --> 00:38:26,815
+V bölü, V eşitliği çarpı R'den eğer ki R sıfıra doğru giderken I neye gider? Sonsuz da gider değil mi?
+
+48
+00:38:26,935 --> 00:38:27,935
+Üniversitesini alırsanız.
+
+49
+00:38:32,563 --> 00:38:53,623
+Diyotlar 3 farklı malzemeden üretilebiliyor. Daha doğrusu diyot değil, yani bütün yarı iletken dediğimiz, işte bu dersin kapsamında işleyeceğimiz transüstör, mosfet, diyot bunlar 3 farklı materyalden üretilebiliyor.
+
+50
+00:39:04,755 --> 00:39:09,675
+Bu materyaller silikon, germanyum ve gallium arsenide dediğimiz materyaller.
+
+51
+00:39:09,675 --> 00:39:16,915
+Şimdi her birinin kendi içerisinde bir farklılaşmaya neden olan bir yapısı var.
+
+52
+00:39:17,235 --> 00:39:21,775
+Sonuçta bunlar farklı bir yoğunluğa sahip, farklı bir yetim oranına sahip malzeme.
+
+53
+00:39:22,324 --> 00:39:38,003
+Bu materyallerin kullanımıyla biz yarı iletken malzemeleri üretiyoruz. Esas malzemesi yarı iletkenlerin silisyum, germanyum ve garibim arsenik dediğimiz materyaller.
+
+54
+00:39:40,115 --> 00:39:56,836
+Burada semi-kanduktur yani yarı iletken malzemeleri bu üç metalleri kullanarak yapıyoruz dedik. Ama bunları bir de biz N-type ve P-type olarak yani negatifi fazla veya pozitifi fazla olarak nitelendirdiğimiz bir yapıda oluşturuyoruz.
+
+55
+00:40:04,480 --> 00:40:16,099
+Kutuplaştırmasını sağladığımız silisyum veya germanyum kullandık. Bu silisyum ve germanyum'un elektriksel olarak karakteristliğini ek malzemeler ile doping ediyoruz.
+
+56
+00:40:16,099 --> 00:40:21,739
+Yani doping bir Türkçesi tam olarak kafamda canlanmıyor ama muhtemelen aşılama gibi bir şey.
+
+57
+00:40:23,568 --> 00:40:34,788
+Takviye etme, takviyeci gibi bir anlamı var. Aynen işte sporlu doping yaptı vesaire diyorlar ya, takviye ürün kullandı vesaire tarzında.
+
+58
+00:40:34,788 --> 00:40:45,088
+Ve onunla aynı ifadede, yani biz materyali karakteristik özelliğini kutuplaşma anlamında değiştiriyoruz, dop ediyoruz.
+
+59
+00:40:46,068 --> 00:41:13,528
+Bunları da N-type ve P-type olarak iki tipte oluşturabiliyoruz. N-type dediğim şey aslında şu demek. Silisyumun içerisindeki elektron sayısının artı yapılması, yani daha fazla elektron sayısına sahip olma durumu. P-type ise içerisindeki proton veya pozitif yüklerin daha fazla olmasını sağlamak demek oluyor P-type ve N-type.
+
+60
+00:41:14,099 --> 00:41:32,400
+Şimdi bunlar niye önemli? Çünkü Germanyum ve Silisyumlarda bir taraf yarı iletken mentalitesiyle üretilecek olan o malzemenin bir tarafı P-type, bir tarafı da N-type olarak ayarlanır.
+
+61
+00:41:32,400 --> 00:41:40,039
+Yani bir tarafında pozitif yüklerin fazla olması, bir tarafında da negatif yüklerin fazla olması.
+
+62
+00:41:40,692 --> 00:41:57,012
+Bu iki tane metallerin silisyumun, bir tarafta pozitifliklerin fazla olan silisyum metalleriyle bir tarafta negatifliklerin fazla olan silisyum metalleriyle birbirine birleştirerek dopt dediğimiz, işte bu dopingi bu şekilde gerçekleştirilir.
+
+63
+00:41:58,471 --> 00:42:08,192
+Bu neden önemli? Bu aslında yarı iletkenlerin biz farklı gerilim boyutlarında farklı respons üretebilmesini sağlamak için yapacağız.
+
+64
+00:42:08,628 --> 00:42:36,228
+Mesela diyotun çok güzel örneği. Yani dedik ya, bir taraftan eğer doğru polarma yaparsak iletimde olacak ama ters polarma yaparsak kesimde olacak. Bu aslında bir donanımsal programlama gibi bir şey. Normalde siz bir if-else yapısıyla bir değişkeni kontrol ederek yapması gereken şeyi yazılıma nasıl söylüyorsak, burada da aslında donanımsal yani fiziksel olarak bir program yazmış gibi oluyor. Nasıl oluyor? Bu da kimyasallarda.
+
+65
+00:42:36,628 --> 00:42:53,128
+İşte P-Type ve N-Type'ı iki ayrı modül olarak yan yana getirilse biz buna P-N-Junction yani pozitif yüklerin ve negatif yüklerin fazla olduğu iki ayrı modülün birleştirilmesini yapmış oluyoruz.
+
+66
+00:42:53,128 --> 00:42:59,048
+Bunlar doping diyoruz zaten. P-N-Junction yapmış oluyoruz. Şimdi diyotun özünde bu olay var.
+
+67
+00:42:59,048 --> 00:43:00,908
+Yani bakalım.
+
+68
+00:43:02,099 --> 00:43:14,099
+Yani diyot dediğimiz kılıfı olan o devrede kullanılan malzeme bir tarafı P-type, bir tarafı N-type olan bir yarı iletkendir.
+
+69
+00:43:14,340 --> 00:43:18,880
+İçinde germanyum mu silisyum mu kullanıldığı değişkenlik gösterebilir.
+
+70
+00:43:19,159 --> 00:43:23,179
+Yani germanyum da olabilir P-N-type, silisyum da olabilir P-N-type.
+
+71
+00:43:24,083 --> 00:43:42,803
+O Germanyum Müsliüsü'nün nasıl fark ediliyor ona değineceğiz ileride. Ama ilk etapta ne olursa olsun bütün diyotların iç yapısında kesinlikle bir tarafın pi'si fazla, bir tarafın en fazla olan iki tane Germanyum Müsliüsü veya Arsenik olan materyal kullanılır.
+
+72
+00:43:43,507 --> 00:44:05,907
+Şimdi burada mantığı niye peki böyle? Aslında amacımız şu. Biz bir tarafa P'si yüksek, yani pozitif yüklerin yüksek olduğu, daha fazla olduğu. Bir tarafa da negatif yüklerin daha fazla olduğu bir metal yedi. Junction edersek, yani birleştirirsek, şu şekilde olduğu gibi. Ortada Deplation Region dediğimiz.
+
+73
+00:44:06,771 --> 00:44:15,152
+Depleation'ın Türkçesi neydi? Bir bakabilir misiniz arkadaşlar? Depleation herhalde... Tükenme, azalma herhalde hocam.
+
+74
+00:44:16,500 --> 00:44:18,179
+Tükenme gibi bir şey herhalde hocam.
+
+75
+00:44:18,619 --> 00:44:20,139
+Tükenme diye hocam internetten.
+
+76
+00:44:20,760 --> 00:44:42,039
+Tükenen bölge diyelim o zaman. Tamam. Ama depleysin olarak kafanızda canlanması daha mantıklı, daha uyumlu. Çünkü bunun konsepti depleysin diye geçer. Yani Türkçe'ye de böyle geçebilir bazı şeylerde. Dökümanları okursanız. Tükenme noktası aşınma noktası değil de bence zannedersem aşınma da vardı.
+
+77
+00:44:42,320 --> 00:45:00,720
+Bu tarz çevirebiliriz. Yani biz bir tarafın pozitif yükleri fazla, bir tarafın negatif yükleri fazla olunca kendi içerisindeki pozitifler negatif tarafa, negatifler de pozitif tarafa geçer. Bir süre sonra bu arada yükler dengeye gelir.
+
+78
+00:45:01,715 --> 00:45:23,475
+Yani işte atıyorum 10 tanesi ve 10 tanesi de öteki taraftan. Dengeye gelince artık bir potansiyel fark olmayacağı için, yük, çarç anlamında bir fark olmayacağı için iki bölge arasında. Bu aradaki bölge dengede kalır ve bu denge bölgesi bizim için bir bariyer niteliğini taşır.
+
+79
+00:45:25,780 --> 00:45:36,780
+Şu an ilk canksiyon edildiğinde oluşan bölgeye Deplation Regime diyoruz ve burası yüklerin dengede olduğu bir bölgedir diyebilirim.
+
+80
+00:45:37,780 --> 00:45:41,980
+Peki bu bize ne sağlayacak? Bu aslında bize şunu sağlayacak.
+
+81
+00:45:41,980 --> 00:45:44,119
+Bu kısmı bahsettik zaten.
+
+82
+00:45:45,076 --> 00:46:10,796
+İşte pozitif yükler P-type olanlarda hareketli olanlar pozitif yükler olacak. N-type da hareketli olanlar elektronlar yani negatif yükler olacak. İkisini camk ettiğimizde buradan elektrik negatifler bu tarafa, buradan pozitifler bu tarafa gelip bir yerde şu aradaki bölge, Deplation Region dediğimiz bölge oluşacak ve bu bölgede yüklerin dengesi.
+
+83
+00:46:11,443 --> 00:46:14,364
+Oğlundan bir bariyer gibi davranacak.
+
+84
+00:46:21,684 --> 00:46:31,404
+Peki bu bariyer, yani potansiyel bir bariyer gibi davranacak dedik. Bu bariyerin bize faydası ne, eksiği ne? Bunlara değineceğiz.
+
+85
+00:46:31,404 --> 00:46:40,463
+Çünkü aslında bu bariyer sayesinde biz ne yapmak istiyoruz? Tek yönlü iletim sağlayan diyotu üretmek istiyoruz.
+
+86
+00:46:40,604 --> 00:46:49,404
+Veya diyot bu karakteristik üzerine kurularak üretiliyor. Çünkü diyot tek yönlü iletim geçiren bir devre elemanı.
+
+87
+00:46:50,483 --> 00:47:04,264
+Şimdi Diod'un çalışmasına gelelim. Misal bu Diod iç yapısı. Şurası Depthation Region. Yani tamam birbirine bağlıyorum. Burada herhangi bir gerilim vermiyorum şu an. Diod böyle havada duruyor.
+
+88
+00:47:04,264 --> 00:47:16,963
+Havada dururken Diod zaten buna No BIAS deniyor. Yani herhangi bir kutuplaşma olmadığı durum. Diod havada dururken burası bariyer bölgesi yani Depthation.
+
+89
+00:47:19,347 --> 00:47:45,608
+Ve herhangi bir yetim olmuyor. Doğru. Şimdi ben N-type olan yere bir batarya bağlayacağım bu diyota. N-type olan yere pozitif tarafına, P-type olan yere, yani yüklerin, pozitif yüklerin fazla olduğu yere negatif ucunu bağlarsam bu Depleation Regime ne olur sizce? Biraz düşünelim.
+
+90
+00:47:48,371 --> 00:47:53,051
+Yani böyle bir bağlantıda ne olması beklenir? Bu yükler ne tarafa gider?
+
+91
+00:47:54,351 --> 00:47:56,152
+Hocam bölge bence genişler.
+
+92
+00:47:56,152 --> 00:48:06,051
+Evet. Neden? Çünkü negatif şuradaki pozitifleri çekecek veya işte tam tersi olacak. Yani burayı nötrleyecek diyelim.
+
+93
+00:48:06,511 --> 00:48:12,532
+Çünkü negatifler hareket eder aslında. Buradaki negatifler de bu taraftaki pozitifleri nötrleyecek diyelim.
+
+94
+00:48:13,012 --> 00:48:18,792
+E böyle olunca benim denge dediğim bölge artık daha da genişleyecek.
+
+95
+00:48:20,452 --> 00:48:38,351
+Değil mi? Yani aslında ben ters polarma yaptığımda, yani ben diyotun elektronları fazla olan M tip bölgesine pozitif bir polarma, P type yani pozitif yüklerin fazla olduğu.
+
+96
+00:48:38,963 --> 00:48:58,023
+Bölgeye negatif polarma verdiğimde buradaki rejimi büyüterek ben iletimin olmamasını sağlıyorum. Çünkü burada bir fark yok, bir yük farkı yok. Buradaki balans durumu daha çok balans oluyor. Onu destekliyorum.
+
+97
+00:48:58,739 --> 00:49:20,739
+Böyle olduğu için zaten diop dediğimiz yapı ters polarmada açık devre emiş gibi, yani sonsuz direnç gösteriyormuş gibi, yani herhangi bir akımın geçmemesini sağladığı veya geçmesini engellediği için, daha doğrusu herhangi bir akımın oluşmasını engellediği için ters...
+
+98
+00:49:21,568 --> 00:49:48,688
+Olarak diyot açık devreymiş gibi davranır diyot. Mentalite bu. Anlaşıldı mı? Herhalde anlaşılmıştır. Peki doğru polarmada, onun şekli var mıydı? Şuradan anlatalım. Doğru polarmada olay nasıl işliyor? Bakalım. Yani ben p-type'a artı, n-type'a negatif versen.
+
+99
+00:49:49,427 --> 00:49:52,547
+Yani bataryamızı veya şu şekilden gidelim.
+
+100
+00:49:59,443 --> 00:50:16,884
+Buraya artı veriyorum. Buraya da eksi veriyorum. Ne olacak? Bu eksi, bu eksi zaten bitecek. Değil mi? Çünkü artılar burada. Yani daha fazla eksi bu tarafa geçmek isteyecek.
+
+101
+00:50:17,972 --> 00:50:44,692
+Buradaki artı da buradaki artılarla beraber daha fazla bu tarafa geçmek isteyecek. Yani gücü fazla olacak. Elektromanyetik forsu fazla olacak. Böyle olunca buradaki denge bozulacak. Yani denge zaten boştayken, yani nobiastayken bir dengeye oturmuştu bu orta bölge. Artık o dengeyi bozdurduk. İki taraftan da teşvik ederim.
+
+102
+00:50:45,108 --> 00:51:11,068
+Buradaki depresyonun iyice daralacak. Değil mi? Tamamen bittiğinde, yani herhangi bir bölge kalmadığında artık iletim sağlanmış, yani iletimin geçebilmesini sağlamış olacağız. İletim nereden neye geçecek? P-type'dan N-type'a değil mi? Çünkü ben şunu biliyorum, devlet teorisinin ilk dersi.
+
+103
+00:51:11,539 --> 00:51:25,819
+Elektronların hareketinin tam tersi yönüne akım oluşur. M-type bu tarafa, yani elektronlar bu tarafa hareket ediyorsa akım da tam tersine hareket edecektir diyeceğiz.
+
+104
+00:51:27,731 --> 00:51:39,492
+Bu da Forward Bias dediğimiz doğru kutuplaştırma, doğru polarma senaryosunda diyotun neden iletime geçtiği sorusudur.
+
+105
+00:51:41,351 --> 00:51:53,731
+Anlaşıldı mı? Ters polarmada diyot neden kesimde, doğru polarmada diyot neden iletimde ve hiç herhangi bir polarma olmadığında diyot neden dengede,
+
+106
+00:51:54,036 --> 00:51:55,676
+Bu üç konu anlaşıldı mı?
+
+107
+00:51:57,876 --> 00:52:03,256
+Hocam, diyotta akım bir kere geçtikten sonra tekrar düzelebiliyor mu yoksa bozuluyor mu o denge?
+
+108
+00:52:04,216 --> 00:52:05,756
+Bir kere akım sağlandıktan sonra.
+
+109
+00:52:06,195 --> 00:52:12,476
+Eğer ki bu bariyeri kaldırdıysam bir kere, ondan sonra bu bariyer tekrardan gerilim verdikçe oluşmaz.
+
+110
+00:52:13,456 --> 00:52:13,895
+Anladım.
+
+111
+00:52:14,216 --> 00:52:16,796
+Gerilimi kaldırdığımızda bariyer tekrar oluşur.
+
+112
+00:52:17,436 --> 00:52:18,135
+Tamamdır hocam.
+
+113
+00:52:22,195 --> 00:52:47,195
+Evet, bunlardan bahsettik. Zaten burada şekilde de. Şimdi iki tane akımdan bahsedeceğiz esasında burada. Biri dediğimiz gibi iletim akımı. Yani normalde iletime geçtiğinde olan akım, demin anlattığımız elektronun tam tersi olan akım. Bir tane de sızıntı akımı dediğimiz bir akım var. O da şu demek, normalde mesela boşta herhangi bir biyasyon.
+
+114
+00:52:47,552 --> 00:53:06,332
+Bir şey bağlamadım. Ne dedik? Şurada bir Departation Region oluşacak değil mi? Bu region'un oluşabilmesi aslında iki şeye bakıyor. Bir kendi içerisindeki dengeye, bir de buradan basınç kuvvetiyle, buradan basınç kuvvetine. Yani bir iç mihra var, bir dış mihra var diyebiliriz.
+
+115
+00:53:06,496 --> 00:53:14,356
+Şimdi buradaki sızıntı akımı dediğimiz akım, bu kendi içerisindeki dengede oluşan ufacık bir akım.
+
+116
+00:53:14,476 --> 00:53:19,416
+Bu hatta hesaplamaları dahi bile edinmez. Çok ufak bir akımdır.
+
+117
+00:53:19,416 --> 00:53:28,996
+Doğru polarmada biz bu akımın üstüne geçtiğimiz için, çok çok fazla geçtiğimiz için, depreation region ufalıyor.
+
+118
+00:53:29,716 --> 00:53:33,976
+Depreation region ufaldığı için de akımımız bütün hat boyu devam edebiliyor.
+
+119
+00:53:34,291 --> 00:53:40,231
+Ama ters polarmada bu sızıntı akımı ters yönde daha da güçleniyor.
+
+120
+00:53:40,911 --> 00:53:43,991
+Güçlendiği için de Depthation Region'ımızı arttırıyor.
+
+121
+00:53:44,112 --> 00:53:49,491
+Yani şöyle diyebiliriz, Depthation Region'un artmasını sağlayan sızıntı akımıdır.
+
+122
+00:53:49,931 --> 00:53:54,131
+O da aslında kendi içindeki dengeyi sağlayan akım demektir.
+
+123
+00:53:55,315 --> 00:54:18,036
+Bunlar çok böyle hani kesin bilmeniz gereken tabirler değil. Biraz genel kültür bu. Burada bilmemiz gereken nokta şu. P-type ve N-type dediğimiz iki metalyeni eğer ki pozitif bir gerilimle itersek, öteki tarafa da negatif bir gerilimle çekersek diyelim. Bu durumda bizim depilation regionumuz ufalır.
+
+124
+00:54:18,431 --> 00:54:23,931
+Ufaldığı için de akım hatta bir noktadan sonra artık hiç olmaz ve akım geçer.
+
+125
+00:54:25,371 --> 00:54:33,991
+Ters polarmada region'u büyütürüz. Ne kadar fazla gelin verirsek de verelim. Bu region maksimum olur ve akım geçmez.
+
+126
+00:54:36,411 --> 00:54:37,171
+Tamam herhalde.
+
+127
+00:54:39,123 --> 00:54:51,163
+Bu formülleri çok değinmeyeceğim. Hani bu iç dirençleri vesaire işte ters akımlardaki o sızıntı akımı dediğim işte şu akım vesaire bu formüller çok önemli değil arkadaşlar.
+
+128
+00:54:51,163 --> 00:54:57,743
+Bunlar çok detaylı. Biz çok o kadar elektronik detaya girmeden izah etmeye çalışıyoruz.
+
+129
+00:54:58,603 --> 00:55:05,303
+Şimdi tabii bu teorikte böyleydi. Yani şimdi dedik ya, demiş şurada.
+
+130
+00:55:06,483 --> 00:55:31,543
+Doğru polarmada Depthation Region yok olacak ve iletime geçiliyor. Şimdi bu anında olmuyor. Yani ben işte şurada doğru polarma verdim. Bu arka, bu eksi. Hemen ben burayı yok ettim. Olmuyor. Buranın yok olması için bir süre yani gerilimin artması lazım. Sıfırdan.
+
+131
+00:55:32,115 --> 00:55:45,916
+Atıyorum, x değerine kadar gelecek. Ondan sonra burayı tamamen sönümlendirdikten sonra eğer ki v dediğimiz şuradaki gerilim x'den büyükse o zaman akım oluşacak.
+
+132
+00:55:54,815 --> 00:56:12,815
+kullanılan malzeme ile değişkenlik gösteren bir parametre. Mesela silisyumda bu eşit gelimi 0.7 volttur. Yani sen diyotun girişinde 0.7 voltu geçmen lazım ki diyot iletime geçsin.
+
+133
+00:56:13,972 --> 00:56:34,771
+İşte bu germanyumda 1.2 idi herhalde. Veya yok şöyle miydi? 0.3-0.7-1.2 herhalde. Şimdi gelecek durumda. Zaten ezberlemenize gerek yok da. Yani teoride biz bunu direkt sıfırda belki belirtilmediyse germanyum, silisyum veya arsenik olduğu, biz sıfırda iletime geçti varsayacağız.
+
+134
+00:56:41,012 --> 00:56:59,452
+şeyindedir, materyaliyle üretilmiştir. Bu silüsyon diyotların responslarını çizdirin gibisinden bir şey deniyorsa, biz her zaman bir eşiğe kadar, işte şuraya kadar, bir x diyelim.
+
+135
+00:56:59,891 --> 00:57:22,311
+Bu eşiğe kadar direkt iletime geçmeyen, yavaş yavaş iletime geçen, çünkü şu kısımda Depthation Region daha düşüyor, azalıyor. Yani daha sıfıra inmedi. İşte ne zaman birden eksponansiyel üstü böyle çok çok yüksek bir birden akım geçirmeye başlıyor, o zaman artık Depthation Region'ın ortadan kalktığını söyleyeceğiz.
+
+136
+00:57:23,652 --> 00:57:24,811
+Sen bir soru sorabilir miyim?
+
+137
+00:57:24,811 --> 00:57:25,152
+Evet.
+
+138
+00:57:26,164 --> 00:57:40,764
+Diyotları böyle küçük bir batarya gibi de kullanabilir miyiz? Bir tarafı pozitif yüklü, bir tarafı negatif yüklü. O gerilim bağladığımız yere mesela bir tane ışık bağlasak belli bir süre ışığı yakabilir mi? Oradan akım geçer mi?
+
+139
+00:57:41,364 --> 00:57:50,824
+Güzel bir soru. Diyotun kendi içerisinde bir kapasitans dediğimiz yani enerjiyi saklama durumu söz konusu.
+
+140
+00:57:51,199 --> 00:57:54,340
+Ama bu bir ledi yakabilecek kadar yüksek değil.
+
+141
+00:57:55,139 --> 00:57:59,679
+Yani kondansatörü devlet arasında hatırlarsınız.
+
+142
+00:58:00,319 --> 00:58:07,539
+Olayı şuydu kondansatörün. Bir süre gerilim altında maruz kalırsa kendi içerisine bu gerilimi depoluyordu.
+
+143
+00:58:08,260 --> 00:58:10,899
+Enerji yani yükleri orada saklıyordu.
+
+144
+00:58:10,899 --> 00:58:15,899
+Ve ben girişteki bataryayı çıkarttığımda bu kondansatör...
+
+145
+00:58:16,628 --> 00:58:39,948
+Eğer paralel bağlı bir led olsun buna, ledi hala sürmeye devam edebiliyordu. En güzel örneği laptop bataryalara. Misal laptopu şarj ediyorsunuz. Fişten çekin, eğer bataryanın üstünde bir led varsa bir süre daha o led yanmaya devam eder. Çünkü içerisindeki kondansatör mimarileri hala deşarj olmadı. Deşarj olmasını sağlayacak.
+
+146
+00:58:40,659 --> 00:59:04,759
+Şimdi diyotun da bu etkisi söz konusu. Misal örnek verelim. Sunumda vardı herhalde. İleride göreceğiz. Ters polarizasyonun üstünde bir yük birikecek. O depreşinleri açıyor ama o içinde de dediğim gibi bir yük var. Ama bu yükü bir led yakmak için falan kullanamıyoruz pratikte. Öyle bir amacı yok. Ama üstünde bir kapasitans etkisi olacak. Çok çok ufak.
+
+147
+00:59:05,172 --> 00:59:26,751
+Değerleri hatta milivolt falan yani öyle bir şeydi zannedersen. Çok çok ufak da olsa bir yükten dolayı var. Yani bir birikimi kapasitans etkisi var. Doğru polarmada çok çok daha düşük yani çok daha az var. Ama dediğim gibi var ama bunu bir şeyde kullanamayız uygulama olarak. Çok çok az olur.
+
+148
+00:59:27,492 --> 00:59:29,231
+Peki hocam bir şey daha sorsam olur mu?
+
+149
+00:59:29,551 --> 00:59:29,831
+Evet.
+
+150
+00:59:30,511 --> 00:59:32,152
+Bir iki slide geri gider misiniz?
+
+151
+00:59:33,139 --> 00:59:54,059
+Bir daha. Mesela bu ters polarizasyon yaptıktan sonra kaynağın olduğu yere normal bir kabloya yapsak, yani P ucuna, N ucuna bağlasak, bir süre sonra biter mi acaba? İkisi de nötr olur mu iki tarafta?
+
+152
+01:00:00,000 --> 01:00:04,100
+Diyotu havada tuttum ben. Ne olacak? Ona gelmiyor mu zaten?
+
+153
+01:00:04,760 --> 01:00:05,675
+Ama...
+
+154
+01:00:05,844 --> 01:00:08,983
+P ve N ucunu tersten bağlayacağız.
+
+155
+01:00:09,864 --> 01:00:11,543
+Şuraya düz bir kablo çekeceğiz.
+
+156
+01:00:12,824 --> 01:00:18,003
+Zaten yapısı, kılıf bunları bağlamasan bile kılıfın içerisinde de yapılabilirdi o.
+
+157
+01:00:18,163 --> 01:00:21,943
+Yani şu içeriden zaten burada bir dengeye geliyor.
+
+158
+01:00:22,583 --> 01:00:26,644
+Ama işte buna no bias diyoruz. Herhangi bir kutuplaşma olmama durumu.
+
+159
+01:00:26,743 --> 01:00:32,463
+Burayı bağlasan da aynı şey. Bağlamasan da içeride zaten bu yükler değişim yapıyor.
+
+160
+01:00:33,235 --> 01:00:35,496
+Tamam hocam. Teşekkürler.
+
+161
+01:00:37,496 --> 01:00:38,496
+Tamam.
+
+162
+01:00:39,675 --> 01:00:40,555
+O zaman.
+
+163
+01:00:42,135 --> 01:00:52,456
+Evet, burada bahsettiğimiz threshold tamamen materyale göre değişecek. İşte germanyum dedik, silistüm dedik ve arsenik dedik.
+
+164
+01:00:54,155 --> 01:00:57,324
+Buna göre değişecek. Bir de...
+
+165
+01:00:57,331 --> 01:01:14,331
+Şurada çok çok ufak bir akım var. Bahsettiğimiz ters polarizasyonda Depthation Region açıldı ya iyice. Artık akım geçmemesi lazım. Ama teoride biz ideal geyot deyince akımı orada sıfır alacağız. Evet. Ama pratikte...
+
+166
+01:01:16,307 --> 01:01:36,528
+Pratikte bu depreation ne kadar açılsa da kendi içinde bir akım üretiyor. Ters yönde bir akım. Çünkü eksiler artılara her daim bir şekilde bu kendi dinamiklerinde çok çok çok ufak sızıntı dediğimiz işte bu akım oluşuyor. Gerçekte, pratikte.
+
+167
+01:01:37,427 --> 01:01:52,827
+O akımda bizim için burada grafta çok da az olsa gösterilmek için var. Bu pratik diyot karakterisinin gösterilmesidir. Ama ideal diyotun karakter eski demin de göstermiştik. Budur.
+
+168
+01:01:58,420 --> 01:02:10,300
+Yani 0 voltta direkt tavan akım geçirir sonsuz. 0'ın altında yani ters polarmada 0,1 akım geçirecek demek.
+
+169
+01:02:12,916 --> 01:02:29,815
+İdeal ve teorik olan ile pratikteki diyot kullanımları sorularda çeşit, yani eğer ki ideal denmiyorsa, bir germanyomüs düşün diyorsa, o soruda kesinlikle bu eşik gerilimine dikkat edeceğiz. İlerleyen sorularda da göreceksiniz.
+
+170
+01:02:31,596 --> 01:02:40,216
+Üç kullanımı var dedik. Herhangi bir polarizasyon olmama durumu, ileri yönde polarlama veya geriye doğru, yani ters polarlama.
+
+171
+01:02:43,476 --> 01:02:54,716
+Bunlardan bahsettik zaten. Üzerinde herhangi bir gerilimin olmadığı, herhangi bir gerilim verilmediği durumlarda biz içeriden akımın geçmediğini söyleyeceğiz.
+
+172
+01:02:54,716 --> 01:03:03,235
+Ama sadece Modest Deployation Region olduğundan dolayı içinde çok azcık bir IS akımı olacaktır.
+
+173
+01:03:04,176 --> 01:03:09,376
+Göz artı edeceğimiz şekilde. Burada ters polarmada bu IS daha da artacak.
+
+174
+01:03:10,036 --> 01:03:29,195
+Ama yine biz eğer ki hesaplamasını yapmayacağız. Ters polarmada, ılsının değerini bulmuş vs. Bunlar biraz daha advanced, yani daha detaylı analizlere girer. Gerek yok. Biz ters polarmada kesimdeymiş gibi düşüneceğiz diyordu.
+
+175
+01:03:32,307 --> 01:03:54,708
+Burada bahsettiğimiz işte ters polarmada aradaki region'ın artacağından, işte arttığı için de kendi içerisinde bir RSI akımının oluşacağından, işte söylediğimiz kısımlar bunlar. Ama şu yönde bir akım oluşmayacak. Çünkü bu aradaki region bölgesi bunun oluşmasını engelleyecek.
+
+176
+01:03:56,980 --> 01:04:10,960
+Doğru polarizasyonda ise IS akımı daha da düşecek ve şu majorite akımı, yani asıl akım bizim devreden beslenen akım çok rahat bir şekilde Rage'in azaldığı için geçebilecek.
+
+177
+01:04:14,708 --> 01:04:37,588
+Evet, bu deminki karakteristiğin aynısı aslında. Şimdi burada 0.3 ibaresi var, 0.7 ibaresi var, bir de 1.2. Bu üç tane meteryal, işte Germany Üniversitesi, Düsün ve Arsenik. Bu threshold'larda, yani bu 0.3, 0.7 ve 1.2'lerde,
+
+178
+01:04:38,643 --> 01:04:56,003
+İletime geçen materyaller. Yani bunların kendi iç yapısında, teoride değil tabii pratikte, bu materyallerden doğan bir eşik her zaman var. Tahtaki giriş gelinim onu geçene kadar. Geçerse depresi rengi kapanıyor ve iletime geçiyor.
+
+179
+01:04:56,596 --> 01:05:09,536
+ILSS ters akımda her zaman çok çok minimal bir seviyede 0,1 mikro amper seviyesinde yani o derece minimum bir ters polarma da oluşuyor iç yapısıyla ilerler.
+
+180
+01:05:10,996 --> 01:05:15,936
+Hocam bu eşik kalitesini mi gösteriyor yoksa kullanım alanlarını mı farklı kılıyor?
+
+181
+01:05:16,016 --> 01:05:20,656
+Kullanım alanı. Evet, kullanım alanı. Yani bir de tabii şu da var.
+
+182
+01:05:22,164 --> 01:05:34,164
+Fiyatlandırmada da oynuyor. Bir metallerin doğada bulunma oranı ile silücüm daha fazla bulunuyor. Çoğu diyotta zaten silücüm yapılır.
+
+183
+01:05:35,407 --> 01:05:54,748
+Gündelik hayattaki şeylerden. Ama yani belki de çok ideal olmasını istediğimiz bir devre tasarımında, yani sıfırın üstünde direkt geçirsin. Arkadaş 0.3 volt benim için önemli. Yani düşün 20 tane diyot var, her birinde belli bir güç kaybı yaşanır 0.3 voltta gibi.
+
+184
+01:05:54,748 --> 01:06:02,027
+Yani bunların sonuçta 1 volt bir cihazın üstünde birikiyorsa bir güç kaybıdır o genel devre teorisinde.
+
+185
+01:06:02,483 --> 01:06:15,483
+Çünkü kapalı çevrimlerde, devrede gücün korunumu yasası vardır. Ve sen atıyorum 100 vatlık bir elektrik üretiyorsun, bir gerilim üretiyorsun. O diyot...
+
+186
+01:06:15,827 --> 01:06:19,687
+Üzerinde bir kısmı, bir kısmı direncin üzerinde dağılacak.
+
+187
+01:06:19,907 --> 01:06:25,207
+Şimdi zaten direnç vesaire devrede bazı elemanlar için yani devre tasarım için zaten kullanılacak.
+
+188
+01:06:25,207 --> 01:06:29,947
+Ediyotta da bir güç harcamak demek, senin dirençten alacağın güç efektif.
+
+189
+01:06:30,187 --> 01:06:32,067
+Yani efektif güçü daha da azaltacak.
+
+190
+01:06:32,532 --> 01:06:54,192
+Gibi yani aslında ya tabii demek yanlış belki ama düşük olması her zaman iyidir demek yanlış ama bu analizde bunu demek doğru. Ama kullanım alanına göre işte eğer ki silisyumlar daha uygun, silisyum diyot kullanalım. O güç kazancı çok da mühim değil. O zaman ya o kullanımla alakalı yani uzunluğun kısaca.
+
+191
+01:07:00,244 --> 01:07:19,084
+Bunlardan bahsettik. Majority yani çoğunlukla n-type da elektronların, p-type da protonların. İşte minority dediğimiz az yani daha az yüklerin olduğu n-type protonların az olmasından dolayı, p-type da elektronların az olmasından dolayı oluştuğundan bahsettik. Bunları geçtik.
+
+192
+01:07:19,084 --> 01:07:24,404
+Şimdi bir spesifik diyot daha var. Bu da bir diyot. Zenel diyot diye geçer.
+
+193
+01:07:25,556 --> 01:07:52,456
+Şimdi zener diyotun normal diyotdan tek farkı normal diyot ters polarmada, tabii bu yine burada teorik ve pratik ayrımını yapmamız gerekir. Normal diyot ters polarmada, yani ters bağlantıda, reverse biasda hiçbir zaman, teoride hiçbir zaman elektrik akımı geçirmez. Yani açık devre gibi davranır. Her zaman.
+
+194
+01:07:53,139 --> 01:08:17,599
+Yani düşünelim, eksi 100 volt verdik. Buradaki eksiden kastım yönü ters verdiğimizi düşünelim. Eksi 100 volt verdik. Normal bir diyot, eksi 100 voltu da geçirmeyeceğini düşünür eksen işlem yaparsın. Eğer ters polarma yapıldıysa. Ama tabii bu pratikte böyle mi? Değil. Çok güzel kokular çıkar eksi 100 voltta diyotla. Yani diyot bir noktadan sonra breakdown olur.
+
+195
+01:08:18,739 --> 01:08:41,539
+Pratikte ve breakdown etkisi olarak da kısa devreye dönüşebilir. Yani iletime geçebilir o halde. Ama biz diyordu ideal olarak analiz edersek ters polarmada her zaman açık devreymiş gibi yani iletim akım geçirmediği bir yapıda olduğunu söyleyeceğiz.
+
+196
+01:08:45,555 --> 01:09:08,095
+Şimdi zener diyotun farkı ne? Zener diyot aslında diyotu iki yönlü kullanabilmemizi sağlayan bir spesifik diyot. Yani diyor ki zener diyot doğru kolarmada yine diyot gibi davran. İşte neyse metal yölim, silüüsüm, germanyum neyse ona göre bir eşitten sonra iletime geç.
+
+197
+01:09:08,595 --> 01:09:24,695
+Ters polarmada ise zenerin cinsine göre, işte 50 voltluk zenerler var, 25 voltluk zenerler var. İşte o volt değerini geçtikten sonra akımı geç. Yani akımı ilet. Aynı ön şeydeki gibi yani doğru polarma gibi.
+
+198
+01:09:25,939 --> 01:09:52,479
+Bu şu açıdan güzel bir devre elemanı. Ters akımın oluşmasında, mesela bir devre düşünün, ters akım oluştuğunda cihaz yanacak. Bunu korumak için mantıklı. Çünkü kısa da yani ufak gerilim, ters gerilimlerde devreyi koruyabilecek zenerbi. Ama öyle bir devre ki çok çok yüksek ters gerilimlerde de başka bir şekilde çalışmasını istiyoruz devre.
+
+199
+01:09:53,332 --> 01:10:18,051
+Çok yüksek ters gerilim geldiğinde, Zener gerilimi diyoruz. Zener gerilimi geldiğinde bu sefer de diyot gene iletime geçsin istediğimiz. Yani aslında programlama diyoruz ya, bu elektroniksel anlamda bir programlama elemanıdır. Yani bir if else yapısı gibi bu da switch case yapısıdır yani. O öyle bakabiliriz yani. Anlaşıldı mı Zener?
+
+200
+01:10:20,595 --> 01:10:29,435
+Bunlarla alakalı matematiksel sorular çözeceğiz zaten de. Hani şu an konsept konu anlaşılsın diyor. Ne, zener ne, bunları anlaşılsın istiyorum.
+
+201
+01:10:30,707 --> 01:10:49,827
+Evet, burada o eşikleri yazmışız. Germanyum 03, Silikon 07, Gallium Arsenid ise 1.2 voltluk bir eşik. Yani Depthation Layer'ı aşacak gerilimin verildikten sonra doğru polarmada iletime geçen maddeler, maddelerin özellikleri bunlarmış.
+
+202
+01:10:53,716 --> 01:11:19,956
+Sıcaklığın diyot üzerinde etkisi var direkt. Yani mesela ortam çok sıcak olursa ne olur? Doğru polarmada diyotun yani doğru polarmayı yaptığımızda ki o 0.3-0.7 gibi o eşik gerilimini kısaltır yani azaltır. Sıcaklık arttıkça ortamda işte germanyumda 0.3 ise 0.2'lere işte 0.7 ise 0.6'lara düşecektir bu eşik gerilimi.
+
+203
+01:11:20,564 --> 01:11:41,623
+Ters polarmada ise bunu arttırır. Yani tersteki bu sızıntı akımının önüne geçer. Sıcağın arttırılması gibi etkileri var. Germanyum en çok bu sıcaklıktan etkilenen mater gelmiş. Böyle de bir not var.
+
+204
+01:11:43,667 --> 01:12:04,667
+Şimdi tabii diyotların bir de direnç değerlerinin hesaplanması var. Çok detaylıca anlatmayacağım. Sadece DC dediğimiz normal bir batarya bağladığımızda kaydemiz belli zaten. Doğru polarmada direkt iletişime geçecek. Ters polarmada sonsuz direnç. Yani amacımız şuradaki iletime geçtiğindeki direnci bulmaksa,
+
+205
+01:12:05,427 --> 01:12:20,907
+Çok da ufak da olsa bir direnç olacak. Diyot üzerindeki gerilim bölü diyotun o an üzerinden geçen akım yaparsak diyotun iletime geçtiğinde, germanyum silücümün neyse materyalinden kaynaklanan bir direnç etkisini hesaplayabiliyoruz.
+
+206
+01:12:20,907 --> 01:12:33,028
+Çok önemli değil. EC buna hiç değinmeyeceğim. Bunlar çok da önemli değil yani. Şimdi diyotun bir de
+
+207
+01:12:33,460 --> 01:12:41,460
+Yani gösterirken bu germanyum veya silüsyum olmasının bir eşit geriliminden bahsediyoruz ya.
+
+208
+01:12:41,920 --> 01:12:49,460
+Bunu normalde diyotu, tabii şimdi labınız yok sizin, malzeme de aldırmadık gerçi de lab olmadığı için.
+
+209
+01:12:49,600 --> 01:12:51,559
+Belki şu projelerden alacaksınız.
+
+210
+01:12:51,559 --> 01:12:56,559
+Diyot dediğimiz yapı aslında siyah üzeri gri şeritli bir...
+
+211
+01:12:57,460 --> 01:13:19,719
+Devre elemanı, pardon grinin üzerine siyah şerit miydi? Yani neticede bir şerit olan, alt background'ının renginin ne olduğunu çok önemli olmayan ama bir şeridi olan bir devre elemanı. Bu şerit olan kısım aslında diyotun, şöyle çizersek eğer, şuradaki şeridine tekabül gelen kısmı.
+
+212
+01:13:24,819 --> 01:13:41,260
+Ve katod diyoruz arkadaşlar. Anod dediğimiz yer artının gireceği, katod dediğimiz yer ise eksi polarizasyonun, yani negatifliklerin fazla olduğu bölge. Buradaki çizgide katod kısmını, öteki tarafta anod kısmını gösterir.
+
+213
+01:13:41,739 --> 01:13:52,076
+Bunu şimdi modellerken devrelerde, mesela siz simülasyon ortamında germanyum diyot yapmak istiyorsunuz. Şimdi bazı simülasyon bunu söylüyor, veriyor ama...
+
+214
+01:13:52,659 --> 01:14:18,100
+Bazıları vermiyor. İdeal diyot veriyor. Ona yandaki gibi bir devre şeması çizmemiz lazım. Yani germanyum olduğu için 0.7 volt ters polarmalı. Artı eksisi böyle olacak. Çünkü ben buradan artı veriyorum. Yani 0.7 çıkmam lazım. V-0.7 olması lazım bu diyotun ideal kısmına gelmesi. Eğer ki ben V'yi 0.5 veriyorsam zaten bu iletime geçmemeli.
+
+215
+01:14:18,452 --> 01:14:31,152
+Yani gerçek diyor, pratikteki diyot bu mantıkla çalışacak demiştik. Eşik geriliminin için böyle bir VK gerilim, yani batarya iç gerilimi oluşturabiliriz.
+
+216
+01:14:31,152 --> 01:14:42,471
+Bir 10-10'luk direnç de işte deminki VD bölü ID'den, şu VD bölü ID'den genelde diyotlarda çıkan 10-10'luk bir iç direnç konabilir.
+
+217
+01:14:42,996 --> 01:14:55,376
+Böyle modelleyebiliriz. Yani diyotun devre tasarımında eğer ki simülasyon size sunmuyorsa bir ideal olmayan diyotu böyle bir pratik diyot modülüne getirebiliriz.
+
+218
+01:15:03,188 --> 01:15:05,408
+Burası anod, burası katod demiştik.
+
+219
+01:15:07,688 --> 01:15:12,948
+Evet, diyotun kapasitans etkisinden de arkadaşınız bir soru sormuştu. Güzel bir soruydu bence.
+
+220
+01:15:13,847 --> 01:15:28,948
+Evet var, üstündeki yüklerden dolayı bir yük biriktirmesi mevcut ama yani mesela doğru polarmada 0.25 voltlarda yani şu kadar çok fazla olmayan pico faradlar seviyesinde.
+
+221
+01:15:29,460 --> 01:15:42,680
+Buradaki metrek çok önemli. Pico Farad, yani 10 üzeri eksi 12 arkadaşlar. Pico Faradlar seviyesinde bir yük birikimi mevcut. Ama tabii bir işe yarıyor mu? Yaramıyor.
+
+222
+01:15:46,579 --> 01:16:11,579
+Bir konuda şu var arkadaşlar diyotları pratikte kullanırken. Mesela doğru polarmada diyotu kullanıyorsunuz. Evet. Sonra birden akımın yönünü değiştirdiniz, ters polarma yaptınız. Sonra tekrardan gerilimin yönünü değiştirdiniz, doğru polarma yaptınız. Diyot bu kadar kısa bir arada switch yaptığınız durumlarda depreation layer'ı adapte edemiyor. Yani sonuçta yükler...
+
+223
+01:16:11,667 --> 01:16:31,268
+Yani bir arttı sonra tekrar azalacak ve de birleşimleri minimzası, yani gitmesi, kapanması lazım tekrar doğru polarmada. Burada işte normalde iletimde olan diyot birden ters polarmayla zaten kesime gidiyor. Sonra tekrar iletime geçirdiğimizde, yani şey yaptığımızda ters bir akım.
+
+224
+01:16:32,212 --> 01:16:40,692
+Kendi iç yapısından dolayı ters bir akım üretir, bir süre ters bir akım devam eder, sonra tekrardan normale gelir.
+
+225
+01:16:42,391 --> 01:16:49,352
+Böyle bir analizde mevcut. O yüzden çok böyle switchleme yapan devrelerde diyotlar genelde kullanılmaz.
+
+226
+01:16:51,352 --> 01:16:54,852
+Çünkü zaman alıyor yani onun tekrardan normale gelmesini.
+
+227
+01:16:56,627 --> 01:17:15,627
+Diyotların, şimdi size sensör ödevi verdim hatırlarsanız. Bu sensör ödevinde siz data şitleri okudunuz. Data şitlerdeki parametreleri yazdınız. Diyotların da spesifikasyonlarına bakarsak, yani data şitlerine bazı tabirler var. Bir tanesi önemli olan sıcaklık ve akımla beraber...
+
+228
+01:17:15,956 --> 01:17:30,096
+Bu ileri yönlü gerileminin değişme oranı. Yani 0,7 diyorduk ya. Bu 0,7 sıcaklıkta nasıl değişiyor? Bunun bilgisini verirlerdi ataçıdilerden. Başka, işte bazı sıcaklık derecelerinde maksimum geçebilecek akım.
+
+229
+01:17:41,908 --> 01:18:03,828
+Mümkün, yani nasıl diyelim, yüksek akımları geçiremiyor. Duruma gelebilir yüksek sıcaklıktan dolayı. Bu belirtilir. Ters akımla alakalı yine aynı belirtilir gibi kapasitans seviyesi işte deminki şu graf vardı ya, bu grafa benzen bir graf pikofaradlardır gene. Hani çok yüksek değildir ama bu da verilebilir.
+
+230
+01:18:05,460 --> 01:18:27,920
+Böyle işte reverse recovery time dediğim, işte düz bir akım doğru polarmaydı. Siz ters yaptınız. Sonra işte ne derece sonra yani ne zaman o ters akım, yani birden düz polarmadan ters polarma yaptığımızdaki tekrardan düz yaptığımız süre geçen recovery time ne kadar bu da belirtilir.
+
+231
+01:18:28,435 --> 01:18:37,435
+çalışma sıcaklık aralıkları vs. bunlar spesifikasyonlarda, data sheetlerde diyotla alakalı belirtilir.
+
+232
+01:18:38,975 --> 01:18:47,315
+Devrede gösterimleri çok farklı gösterimleri var. İşte PN, Anod, Katos şeklinde yazılabilir veya direkt en çok kullanılan bu zaten.
+
+233
+01:18:47,835 --> 01:18:51,495
+Burada bazı arkadaşlar bazen karıştırabiliyoruz da.
+
+234
+01:18:51,840 --> 01:19:08,460
+Her zaman arkadaşlar şunu bileceğiz. Anot katot burası. Anot artı katot eksi. Bunları karıştırmayacağız. Bu ezbere bilmeniz gereken bir nokta. Sonra da bunları biz yazmayacağız. Polarlar, polarizasyon yönleri nasıl diye.
+
+235
+01:19:09,332 --> 01:19:24,592
+Sonra işte bu çizgiden bahsettik. Eksiği gösteriyor. Burası artı, anotu gösteriyor. Farklı videoya benzeyen diyotlar var. İşte opto diyotlar var. Işıklar üzerine ışık düşünce iletime geçiren vesaire vesaire.
+
+236
+01:19:26,752 --> 01:19:34,912
+Diyotların bozuk olup olmadığını, tabii siz artık lab ortamı yok. O yüzden bu kısım ne derece önemli bilmiyorum ama.
+
+237
+01:19:37,300 --> 01:19:56,760
+Diyotların çalışıp çalışmadığını üç farklı yöntemle öğrenebiliyoruz. Neden bu özellikle sunuma koydum? Çünkü labda, laboratuvarda ikinci deneydeydi herhalde diyot deneyiniz. Çok fazla koku çıkartıyordunuz. Lab kokuyordu buran buran.
+
+238
+01:20:00,000 --> 01:20:07,420
+Acaba çalışıyor mu? Diyot bozuldu mu? Gibi şeyler oluyordu. Bunun için nasıl kontrol edebiliriz? Bu kısımları onu koymuştum.
+
+239
+01:20:08,020 --> 01:20:19,380
+Birincisi zaten şunu, Diyot Checker diye bir alet var. Hani bu alet multimetre gibi bir alet. Multimetrenin üzerinde de var yani.
+
+240
+01:20:19,380 --> 01:20:26,840
+Öyle diyebilirim. Bakayım şeklini koymamışım. Multimetrenin şöyle bir yapısı olsa, şu en altta.
+
+241
+01:20:27,264 --> 01:20:47,824
+Şöyle bir çentikli bir transüktör multimetre bölgesi var. Diyot checker. Buraya iki noktasına diyotu bağladığımızda ölçeceğimiz değerleri görmemizi sağlayan, silisyon bir diyorsa 0.7, germanyomsa 0.3 gibi bir değer görmemizi sağlayan bir checker mekanizması. El bozulmuşsa zaten göstermiyordu.
+
+242
+01:20:48,948 --> 01:20:58,408
+Bir diğeri ise, en basit zaten kullanımda, diyot devreye bağlanmadan havada 10 metre yani direnç ölçer.
+
+243
+01:20:59,123 --> 01:21:03,684
+Avometre gibi veya multimetre gibi, bunlarda 10 metre modülü var içinde.
+
+244
+01:21:04,224 --> 01:21:14,463
+Direnci ölçen modülüne getirilip, işte artı ucunu artı taraftan, kom ucunu eksik taraftan bağladığımızda burada çok çok ufak bir direnç çıkacak.
+
+245
+01:21:14,463 --> 01:21:21,463
+Çünkü aslında artı tarafını buraya bağlamakla siz azıcık akım içerisinden geçirip şuradan ölçüsünü alıyorsunuz.
+
+246
+01:21:22,144 --> 01:21:27,123
+Bu direkt geçtiği için de direnci çok çok ufak bir şey çıkacak 10 metre.
+
+247
+01:21:27,123 --> 01:21:38,184
+Ama ters bağladığınızda buradan akım geçmeyeceği için çok çok yüksek bir direnç değeri göstermesi beklenir. Tahtaki diyot bozulmadıysa.
+
+248
+01:21:39,667 --> 01:22:02,327
+Curve Tracer'lar, Oseloskop tabağında bir analizci. Zaten bizim de deminden anlattığımız çok çok mili amperlerde bir sızıntı var. Onun üstünde zaten 0.7 voltun üstünde birden üretime geçen yapılardır. Bu Curve Tracker'lar, Oseloskop'ta yani bu körü görürse diyoruz o zaman çalışıyordur, bozulmamıştır diyebiliriz.
+
+249
+01:22:03,764 --> 01:22:11,764
+Zenel diyottan bahsetmiştik. Başka diyotlar da var arkadaşlar. Biri led dediğimiz kısalttığımız.
+
+250
+01:22:12,000 --> 01:22:20,619
+LED ekran vesaire dediğimiz aslında arka planda tamamen diyot tabanlı çalışan bir ışıklı sistemi.
+
+251
+01:22:20,719 --> 01:22:25,500
+Aynı ampuller vardı, sarı ampuller. İçerisinde aslında onun bir direnç var.
+
+252
+01:22:26,100 --> 01:22:34,260
+Sıcaklık ve ısı olarak, ışık ve sıcak ısı olarak o direncin üzerinden geçen elektrik bize ışık kaynağı olarak kullanıyor.
+
+253
+01:22:34,260 --> 01:22:38,699
+Light Emitting Diyot da aynı mantık. Bir de diyot array'ler var.
+
+254
+01:22:39,828 --> 01:22:47,927
+Zener diyottan bahsettik. Ters taraftan da verdiğimizde, Zener'in farklı normal diyottan iki tane çentiği var şöyle.
+
+255
+01:22:48,748 --> 01:22:55,028
+Onun dışında bir fark yok. Bu iki çentiği görürseniz, üzerinde bir VZ diye de belirtilir sorularda.
+
+256
+01:22:55,028 --> 01:23:05,007
+Çünkü Zener gerilimini de bilmemiz lazım ki, tersten bir gerilim polarizasyonu verdiğimizde bu IZ geçecek mi geçmeyecek mi onu analiz edelim.
+
+257
+01:23:06,452 --> 01:23:11,051
+1.8 volttan 200 volta kadar farklı zemelen gerilimleri mevcut.
+
+258
+01:23:13,112 --> 01:23:15,672
+LED de de simgesi bu şekilde.
+
+259
+01:23:16,172 --> 01:23:22,332
+Doğru geçtiğimde, doğru polarmada bir ışık yansıtması oluyor.
+
+260
+01:23:23,092 --> 01:23:26,412
+O da bize LED ışığı şeklinde geliyor.
+
+261
+01:23:27,507 --> 01:23:53,728
+Diyot array'leri var. Ne demek oluyor bu aslında? İleride bu derste görecek miydik? Tam hatırlamıyorum ama mikro işlemleri de kesin göreceğiz. Bu seven segmentler vs. olacak. Bunlar aslında kendi içerisinde her biri bir diyot yapısıyla 7 tane diyotun kombinasyonuyla oluşmuş kısımlar. Yani bir diyot maddesi dediğimiz yapılar. Bunu da sonra göreceğiz.
+
+262
+01:23:55,764 --> 01:23:58,344
+Sorumuz var mı arkadaşlar sunumla alakalı?
+
+263
+01:24:04,819 --> 01:24:05,879
+Sorumuz var mı?
+
+264
+01:24:07,119 --> 01:24:11,279
+Hocam, zener diyodun anot ve katotu ters mi burada?
+
+265
+01:24:11,359 --> 01:24:12,859
+Yok, normal. Aynı.
+
+266
+01:24:15,079 --> 01:24:16,359
+Aynı, şöyle.
+
+267
+01:24:21,652 --> 01:24:47,451
+Şurası artı, şey pardon, şurası eksi, şurası artı. Burada şu artı eksi neyi göstermiş? Verdiğimden değil. Zener bu artı eksi polarıma da verildiği zaman. Yani Zener'in çalışma prensibi Zener'e geçmesi gerekli ya. Mesela atıyorum 50 volt Zener yazıyor burada. BZS 50. Bu tarz bir polarizasyon da 50 verirsem bu ıza olacak.
+
+268
+01:24:48,659 --> 01:24:50,559
+Tamam hocam, anladım. Teşekkürler.
+
+269
+01:24:56,083 --> 01:24:57,663
+Başka soru var mı arkadaşlar?
+
+270
+01:25:01,908 --> 01:25:11,808
+Güzel yakaladım ama tebrik ederim. Çünkü güzel bir nokta. Zener, BZ şunlar verildiğinde olacağını gösterdiği için.
+
+271
+01:25:13,007 --> 01:25:13,888
+Ters.
+
+272
+01:25:15,868 --> 01:25:24,408
+Sorunuz yoksa arkadaşlar başka? Bu haftalık kadar olsun. Ben de belki fark ettiğiniz için zaten yolu olduk diyeceğim.
+
+273
+01:25:25,395 --> 01:25:49,475
+Haftaya diyotun kullanım alanlarına bakacağız. En çok sizi ilgilendiren kısım o olacak. Clipperlar, Lamprlar, Cropper. Bunlara bakacağız. Bunlara neyse edeceğiz. Kullanımına bakacağız diyotun devrede. Bu hafta bu kadar yeterli gelir.
+
+274
+01:25:50,836 --> 01:25:52,876
+Teşekkür ederiz hocam. İyi günler.
+
+275
+01:25:53,296 --> 01:25:54,036
+İyi günler hocam.
+
+276
+01:25:54,376 --> 01:25:55,155
+İyi günler.
+
+277
+01:25:57,296 --> 01:25:59,816
+Bugün dabınız var, bilginiz var değil mi?
+
+278
+01:26:02,296 --> 01:26:02,935
+Evet hocam.
+
+279
+01:26:03,015 --> 01:26:04,536
+Evet hocam. Sisteme girilmiş.
+
+280
+01:26:04,536 --> 01:26:12,956
+Saat beşti. Yanlış hatırlamıyorsam. Yine ben başlatacağım. Sercan Hoca veya Alper Hoca'nın gelecek.
+
+281
+01:26:15,572 --> 01:26:25,412
+Size bir uygulama yaptırırlar, yaptırmazlar bilmiyorum ama iki veya üç tane simülasyon programı anlatacaklar diye biliyorum.
+
+282
+01:26:26,112 --> 01:26:30,951
+Fayda da olur size. Çünkü bir proje yapacaksınız. Yüksek aralığı olan bir proje olacak.
+
+283
+01:26:31,672 --> 01:26:40,492
+Ve bu projede ilk etapta tabii sizden bir simülasyon ortamda dönemeniz, sonrasında gerçeğe geçmeniz beklenecek.
+
+284
+01:26:41,043 --> 01:27:07,443
+Ya süreçle alakalı iyi olur. Katılmamız kesin katılın bence. Katılmamazlık yapmayın. Hatta belki yoklamaya göre de bir puanlama yapabilirim. Bu slide'lar belki internette bulursunuz. Zaten hani kaç senedi veriyorum, paylaştım belki sizin gruplarda da vardır diye çok şey yapmadım ama ABC's de değil de şeyde paylaşıyorum, piyazda da. ABC's de çok karışıyor her şey.
+
+285
+01:27:07,956 --> 01:27:09,956
+Piyazda da paylaşacağım.
+
+286
+01:27:15,028 --> 01:27:17,748
+WhatsApp grubunuz varsa bakın arkadaşınız soruyor.
+
+287
+01:27:18,748 --> 01:27:33,768
+Hocam bir şey sorabilir miyim? Normalde ders programımızda lap saatleri 4'den 6'ya kadar gözüküyor ama bu piyazada 17-18, 18-19 olarak gösterilmiş. Program mı değişti yoksa yanlış mı girilmiş?
+
+288
+01:27:35,548 --> 01:27:42,488
+Onunla alakalı bilgim yok ama yanlış girilmiş olma ihtimalim yüksek bence. Ben onu bir şey yaparım.
+
+289
+01:27:42,815 --> 01:27:51,935
+Dörde alabilirsek sizin için daha iyi olur mu? Yoksa herkes şu an beş gibi kendini planladığı için beşte kalsın mı?
+
+290
+01:27:52,876 --> 01:27:59,015
+Hocam sistemde o şekilde kayıtlı olduğu için hani oradan nasıl girilecek o saatten sonra? Çünkü iki tane ayrı oturum var ya.
+
+291
+01:28:01,216 --> 01:28:06,796
+Beş, doğru. Normal saatinde olması gerekiyor olabilir yani, evet.
+
+292
+01:28:07,475 --> 01:28:14,076
+Tamam, tamam. Ayarlayalım. Siz dört grubumuzsunuz, beş grubumuz.
+
+293
+01:28:16,056 --> 01:28:18,255
+Biz beş ilk grubumuz.
+
+294
+01:28:18,615 --> 01:28:20,175
+Dörtte başlayacak grup biziz.
+
+295
+01:28:20,835 --> 01:28:21,076
+Aynen.
+
+296
+01:28:22,835 --> 01:28:28,895
+Tamam, yine siz dört gibi kontrol edin, dörtte gelin yani. Muhtemelen dörde alıyorsunuz.
+
+297
+01:28:31,828 --> 01:28:37,588
+Tamamdır arkadaşlar. Hepinize iyi günler, iyi çalışmalar. İyi haftalar hocam. Görüşmek üzere.

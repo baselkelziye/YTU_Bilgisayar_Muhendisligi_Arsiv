@@ -1,0 +1,1615 @@
+1
+00:01:54,260 --> 00:02:16,040
+Bakmanır Hocam, merhaba. Merhabalar Hocam. Şu an post durumundasınız. Bir şey olursa Whatsapp'tan haberleşiriz. Tamam hocam. Tamam, teşekkür ederim hocam. Sağ olun. Normal zamanında başlarsınız zaten. Arkadaşlar henüz gelmemiş. Tamam hocam. Kolay gelsin hocam. Elinize sağlık. Sağ olun hocam. İyi günler.
+
+2
+00:03:36,436 --> 00:03:38,256
+Evet [öğrenci], lütfen iletse.
+
+3
+00:10:26,964 --> 00:10:37,124
+Merhabalar arkadaşlar. Bir beş dakika daha bekleyelim. Ders saati geldikçe katılımcı artıyor. Bir beş dakika daha arkadaşlarınızı bekleyelim. Beş geçe başlayacağız.
+
+4
+00:14:18,899 --> 00:14:40,500
+Artık başlayalım. Merhaba arkadaşlar. İlk öncelikle kendimi tanıtayım sizlere. Ben araştırdığım göreviz Fatma Hırk Arapçak. Bu dönem uygulamalarda, bugünkü sağ programlama dersinde birlikte olacağız inşallah. İlk uygulamamıza başlayalım.
+
+5
+00:14:41,235 --> 00:14:51,456
+Şimdi iki tane soru hazırladık sizler için. Bunları birlikte kodlayacağız. Nasıl düşünüyoruz, nasıl hareket etmeliyiz, bir problemi çözerken nasıl yaklaşmalıyız bunları size aktarmaya çalışacağız.
+
+6
+00:14:52,296 --> 00:15:01,635
+Kafanıza bir soru takılırsa mutlaka sorun çekilmenize gerek yok tamam mı? Birlikte uygulama yapıyoruz. Sınav gibi bir şey değil.
+
+7
+00:15:03,056 --> 00:15:04,056
+Şimdi ilk sorumuz.
+
+8
+00:15:05,056 --> 00:15:06,415
+Merhaba hocam.
+
+9
+00:15:07,860 --> 00:15:29,799
+Şimdi arkadaşlar, hocalarımızın soruları derste bazı hızlıca geçtiğimiz konuları içeriyor. Bu önemli değil. Derste görmüş olmamız mühim değil. Sadece burada aşinal kazanmanız için bu sorular hazırlandı. Zaten çok uzak olmadığınızı göreceksiniz. Daha bu konuya gelmedik tarzında bazı şeyler söyleyebilirsiniz. Normaldir. Tamam mı?
+
+10
+00:15:31,155 --> 00:15:34,096
+Kolay gelsin arkadaşlar. Hocam kolay gelsin. Ben buralardayım.
+
+11
+00:15:34,096 --> 00:15:36,096
+Sağ olun hocam. Teşekkürler.
+
+12
+00:15:37,135 --> 00:15:48,675
+Şimdi birinci sorumuz temel matematik işlemlerini yapabilen bir program kodlamak aslında. Bunları adım adım neler gerektirdiğini belirttik burada.
+
+13
+00:15:50,515 --> 00:15:55,135
+İçermeliymiş bizim yazacağımız program. Öncelikle bir menü içermeliymiş.
+
+14
+00:15:55,668 --> 00:16:05,467
+Toplama için 1'e, çıkartma için 2'ye, çıkış için Enter'a ya da 7'e, 8'e basın gibi bir menü tasarlayacağız. Daha sonra...
+
+15
+00:16:05,875 --> 00:16:28,956
+Her işlemin sonunda kullanıcı yeni bir işlem seçebilmelidir ya da program sonlandırılabilmelidir. Yani bu menü, programı kullanan kişi bu menüden çıkış yapmak isteyene kadar sürekli bir işlem bittikten sonra tekrar bu menü aktif olmalı. Yani ben başka bir işlem seçip işlemime devam etmeliyim. Her seferinde programı egzeküt edip tekrar çalıştırmak zorunda kalmak istemiyoruz demek ki.
+
+16
+00:16:29,631 --> 00:16:47,911
+Bu bunu istiyor. Bu ikinci madde. Üçüncü madde de ne diyor? Menüde geçerli bir sayı girilmediğinde kullanıcıdan yeni bir input istenmedir. Yani kullanıcı yanlışlıkla bizim üç tane işlemimiz var atıyorum. Dört girdi ama biz o dört için bir şey tanımlamamışız.
+
+17
+00:16:54,067 --> 00:17:21,447
+Case hazırlamamız gerekiyor. Bu üçüncü adımda da bunu istiyor bizden. Dördüncü adımda ne istiyor? Seçilen işlem için değerler kullanıcıdan input olarak alınmalıdır. Yani statik bir program değil. Kullanıcının kendi inputlarını girerek dinamik olarak kullanabileceği işlemlerini yapabileceği bir program istiyoruz. Ve bu işlemleri de makrolar tanımlayarak yapacağız. Şimdi bu makroları yaparken göreceğiz zaten. İlk olarak menüyle başlayalım o zaman biz.
+
+18
+00:17:22,771 --> 00:17:28,391
+Şimdi yeni bir dosya açıyoruz. Bunu da kaydedelim.
+
+19
+00:17:35,188 --> 00:17:37,108
+Proje dosyası oluşturayım.
+
+20
+00:17:42,067 --> 00:17:43,167
+Tüm vashmallows.
+
+21
+00:17:55,892 --> 00:18:17,892
+Şunları için şu anda gerek yok. Şimdi birden ne istiyor? Bir menü istiyor. Şimdi bunu bir tanımlayalım bakalım. Sonra hangi parametrelere ihtiyacımız olacak? Nelere ihtiyacımız olmayacak? Bunları tanımlayacağız yukarıda.
+
+22
+00:18:20,500 --> 00:18:33,860
+Menüyü hangi adını seçtiğimi benim bu switch'in içine vereceğim parametrede belirtmem gerekiyor. Yani kullanıcının yaptığı seçim bir parametrenin içerisinde olacak. Efendim [öğrenci], söyleyebilirsin.
+
+23
+00:18:34,160 --> 00:18:38,680
+Hocam yazılarınızın putusunu biraz büyütebilirseniz onun için biraz sattım ama.
+
+24
+00:18:39,900 --> 00:18:41,539
+Tamam. Şu anda iyi mi?
+
+25
+00:18:43,139 --> 00:18:44,160
+Şu an gayet iyi hocam.
+
+26
+00:18:44,559 --> 00:18:44,819
+Tamam.
+
+27
+00:18:45,683 --> 00:19:05,723
+Şimdi Switch Case'de ne dedik? Seçimlerimizi tutan bir parametreye ihtiyacımız var dedik. O zaman biz Selection diyebilir miyiz buna? Selection diye bir değer tanımlayacağız. O zaman buraya biz Selection diye bir değeri şimdiden tanımlamış olalım. Bunu kullanıcıdan henüz almadık ama onu yapacağız.
+
+28
+00:19:12,211 --> 00:19:27,291
+Kendi içinde case'lerini bize atacak. Mesela birinci için toplama case'i yapalım. Biz dört işlemi yapacaktık değil mi? O zaman kaç tane case'e ihtiyacım var benim? Dört tane değil mi?
+
+29
+00:19:29,076 --> 00:19:39,135
+Dört tane Keyz'e ihtiyacım var benim. Bunların her bir işinde toplama için biri, çıkartma için ikiyi, çarpma için üçü, bölme için de dördü tanımlayacak olalım.
+
+30
+00:19:39,816 --> 00:19:41,956
+Şimdi Keyz'in içerisinde şöyle bir yapı var.
+
+31
+00:19:41,956 --> 00:19:43,956
+Burada Keyz, mesela...
+
+32
+00:19:44,339 --> 00:19:57,339
+Selection 1 olduğunda bu case 1'in içerisine girecek ve bunun altındaki işlemleri yapacak. Ama buradan bu switch case yapısında bu case işlemini tamamladıktan sonra break komutu yazmamız gerekiyor.
+
+33
+00:19:59,000 --> 00:20:08,839
+Her bir case'in altında işlemleri tamamladıktan sonra break komutu olması gerekiyor ki switch case'den çıkabilsin.
+
+34
+00:20:12,051 --> 00:20:36,551
+Şimdi bu şekilde kalsın, adım adım ilerleyelim. Menü içermelidir dedik. Toplama için bir, çıkarma için iki ve çıkış için Enter'a basın gibi. Şimdi dört tane işlemimiz olduğuna göre o zaman bir tane daha işlemim olacak benim. Bu da ne olacak? Çıkış işlemi değil mi? Case 5 olacak. Bunu istediğimiz şeyi yapabiliriz, input yapabiliriz.
+
+35
+00:20:37,875 --> 00:20:43,635
+Tamam, bunu tasarladık. Menümüzü tasarladık. Şimdi içini dolduracağız yavaş yavaş.
+
+36
+00:20:43,635 --> 00:20:49,235
+Her işlemin sonunda kullanıcı yeni bir işlem seçebilmeli ya da programı sonlandırabilmelidir diyor.
+
+37
+00:20:50,056 --> 00:20:58,415
+Biz çıkış için beşe basın komutunu buraya yazdık. Ama şimdi bu switch'in sürekli çalışabilir olması için bizim ne yapmamız gerekiyor?
+
+38
+00:20:59,375 --> 00:21:00,235
+Bir düşünün bakalım.
+
+39
+00:21:04,564 --> 00:21:14,423
+Yani bunun dışına ne tanımlamamız gerekiyor ki biz bu switch case'i sürekli çalışabilir tutalım.
+
+40
+00:21:16,644 --> 00:21:22,604
+Bizim döngülerimiz vardı biliyorsunuz. Hem while hem de for. Bunun için hangisi uygun sizce?
+
+41
+00:21:24,064 --> 00:21:31,624
+Ben çıkmak isteyene kadar çalışmasını istediğim bir döngü istiyorum. Hangisiyle tanımlayabilirim?
+
+42
+00:21:33,299 --> 00:21:56,859
+while'la tanımlayabilirim değil mi? Şimdi while'ın içine eğer bir yazarsam bu döngü ne olacak? Sonsuza kadar çalışacak değil mi? Ama ben sonsuza kadar çalışsın istemiyorum. Bu while'ın koşulunu değiştirebilmek istiyorum. O zaman biz run diye bir parametre tanımlayalım.
+
+43
+00:22:00,084 --> 00:22:01,244
+Biri eşit olsun.
+
+44
+00:22:04,788 --> 00:22:16,288
+Run'ı da bu while'ın içine yazayım. Ben bu while'ın içerisinde bir koşul altında bu run'ın değerini sıfıra çekersem bu while artık bir sonraki döngüde çalışmaz değil mi?
+
+45
+00:22:16,288 --> 00:22:27,427
+Yani ben çıkış için beşe basın dediğimde eğer kullanıcı beşe bastıysa run değerini sıfıra çekersem bu while bir sonraki adımda çalışmaz.
+
+46
+00:22:30,291 --> 00:22:36,271
+Şartı sağlayan durumu yakaladık demektir. Switch case'i de bu Biden'ın içerisine aldığımız zaman
+
+47
+00:22:47,700 --> 00:22:49,000
+Bu şartı sağladık.
+
+48
+00:22:50,780 --> 00:22:54,680
+Şimdi case 5 toplama, şuraya da yorum olarak yazalım.
+
+49
+00:22:54,680 --> 00:22:59,640
+Bu toplama için, bu çıkarma için olsun.
+
+50
+00:23:01,700 --> 00:23:11,180
+Çıkarma, çarpma, 4'te bölme için tanımlanmış olsun.
+
+51
+00:23:15,476 --> 00:23:18,376
+Çıkış komutumuz olsun. Çıkış için.
+
+52
+00:23:22,228 --> 00:23:43,827
+Tamam, bu çıkışı biz şimdi tanımlayalım. Çıkmak için ne istiyordum ben? Eğer kullanıcı 5'e bastıysa programı sonlandıracağım. O zaman burada ben run değişkenini ne yapacağım? Sıfır eşit diyeceğim değil mi? O zaman run işlemi sıfır olduğu zaman bu program sonlanır mı?
+
+53
+00:23:45,811 --> 00:24:12,111
+Sonlanır değil mi? Artık while'a çünkü run dedim, sıfıra eşit dedim. Break dedim, switch'ten çıktı. İşleteceği satır yok, bu bitirecek ve while'ın başına gelecek. Bu koşulu kontrol edecek. Run'da sıfıra eşit. O zaman bu while çalışmayı bitirecek ve artık 25-26. satırları işlemeye başlayacak program. Tamam, bunu yaptık.
+
+54
+00:24:14,036 --> 00:24:34,556
+Menüde geçerli bir sayı girilmediğinde kullanıcıdan yeni bir input istenmelidir diyor. Bunu da artık 1, 2, 3, 4, 5 dışında geçersiz ne girerse girsin sağlayacak bir case yaranmamız lazım. Bu case de, switch case de default diye bir case tanımlayabiliyoruz.
+
+55
+00:24:39,215 --> 00:24:46,535
+Tanımlı olan inputların dışında bir input girerse tekrar kullanıcıdan bir giriş yapmasını isteyeceğiz.
+
+56
+00:24:46,535 --> 00:24:47,535
+Burada da...
+
+57
+00:24:51,955 --> 00:24:53,135
+Doğru yazdım değil mi?
+
+58
+00:24:55,476 --> 00:25:01,355
+Burada da kullanıcıya bir uyarı metni yayınlamamız gerekir.
+
+59
+00:25:01,355 --> 00:25:09,355
+Çünkü nasıl programa devam edeceğini anlaması için geçerli bir giriş yapmadınız.
+
+60
+00:25:11,336 --> 00:25:18,355
+Lütfen tekrar, tekrar deneyiniz dersek.
+
+61
+00:25:19,827 --> 00:25:41,127
+Sonra da slash'ını koyarsak bu işlemi gerçeklemiş oluruz. Şimdi şöyle bir şey var. Türkçe karakterler normalde konsolda çalışmıyor. Ama bunu aktif edebilmek için şu kütüphaneyi eklersek eğer include local olması lazım.
+
+62
+00:25:44,276 --> 00:25:52,556
+lokal hash fonksiyonunu eklersek ve mean'de set lokal
+
+63
+00:25:56,019 --> 00:26:22,159
+LC All ve hangi kütüphaneyi kullanacağımızı burada belirtirsek şu andan itibaren Türkçe karakterleri çalıştırabiliyor olmamız gerekiyor. Tamam mı? Şimdi bunu da tamamladık. Üçüncü adımımız neydi? Menüde geçerli bir sayı girilmediğinde tekrar input istemelidir. Tamam input istemeyi eklemedik ama onu ekleyeceğiz.
+
+64
+00:26:22,867 --> 00:26:31,528
+seçilen işlem için değerler kullanıcıdan input olarak alınmalıdır ve her bir işlem için makro tanımlanmalıdır.
+
+65
+00:26:31,947 --> 00:26:39,008
+Şimdi biz makro tanımlamadan önce case'lerin içinde yapalım. Sonra makrolarımızı tanımlarız olur mu? Adım adım gidelim.
+
+66
+00:26:40,107 --> 00:26:48,168
+Şimdi toplama, çıkartma, çarpma, bölme için bizim kaç tane input'a ihtiyacımız var? İkişer tane en az değil mi?
+
+67
+00:26:50,003 --> 00:26:57,403
+O zaman biz önce kullanıcıdan bu inputları alalım.
+
+68
+00:27:01,652 --> 00:27:06,532
+Kısa yoldan şu anda detaylı yazmıyorum toplama için şu bilmem ne.
+
+69
+00:27:06,532 --> 00:27:12,971
+Input bir diyelim ve kullanıcıdan değer alalım tamam mı?
+
+70
+00:27:14,412 --> 00:27:15,532
+Birinci inputu alalım.
+
+71
+00:27:18,512 --> 00:27:20,412
+Burada nasıl alacağız biliyorsunuz değil mi?
+
+72
+00:27:22,032 --> 00:27:28,871
+Yüzde de sonra buraya alacağımız ifadeyi yazacağız.
+
+73
+00:27:33,683 --> 00:27:45,103
+X diyelim ve yukarıda bu X'i tanımlamamız gerekecek. Şimdi bizim iki tane değişkene ihtiyacımız var. X ve Y. Bunların ilk değerlerinin olmasına gerek yok. Çünkü biz zaten bu değerleri kullanıcıdan alacağız.
+
+74
+00:27:45,103 --> 00:27:59,463
+Şimdi birinci inputumuzu aldık. İkinci inputumuzu alalım. Bu da Y olsun. Toplama için ne yapacağız? Sonuç diyelim.
+
+75
+00:28:01,140 --> 00:28:02,140
+Eşittir.
+
+76
+00:28:03,220 --> 00:28:06,180
+İngilizce yazalım. Result eşittir.
+
+77
+00:28:06,640 --> 00:28:09,019
+X artı Y olacak değil mi?
+
+78
+00:28:09,079 --> 00:28:11,220
+Toplamma işlemi yapıyoruz çünkü.
+
+79
+00:28:11,539 --> 00:28:14,720
+Buraya da result değişkenimizi tanımlayalım.
+
+80
+00:28:15,940 --> 00:28:17,620
+O zaman bir tane de
+
+81
+00:28:17,620 --> 00:28:22,539
+mesaj yayınlayacağız kullanıcıya.
+
+82
+00:28:23,440 --> 00:28:24,260
+Ne diyeceğiz?
+
+83
+00:28:26,400 --> 00:28:27,120
+Şöyle diyelim.
+
+84
+00:28:27,120 --> 00:28:28,620
+Bu rakamla
+
+85
+00:28:29,779 --> 00:28:31,099
+Bu rakam arttı.
+
+86
+00:28:33,240 --> 00:28:36,000
+Bu rakam. Bu rakamları tabii atacağız içerisine.
+
+87
+00:28:36,740 --> 00:28:38,940
+Eşittir diyeceğiz. Sonucunda da şu çıktı.
+
+88
+00:28:41,539 --> 00:28:43,159
+Ona da sılaşan ekleyelim.
+
+89
+00:28:44,079 --> 00:28:47,779
+Şimdi ilk terimimiz neydi? X. İkincisi Y'ydi.
+
+90
+00:28:48,500 --> 00:28:51,380
+Üçüncüsü de result olacak. Değil mi?
+
+91
+00:28:54,179 --> 00:28:54,860
+Tamam.
+
+92
+00:28:55,667 --> 00:28:58,307
+Şimdi şuraya bir de menü tasarlayalım.
+
+93
+00:29:00,167 --> 00:29:03,207
+Ki bir tanesini deneyelim artık. Toplama işlemi çalışıyor mu?
+
+94
+00:29:05,707 --> 00:29:08,647
+Ne diyeceğiz? Toplama için.
+
+95
+00:29:12,276 --> 00:29:24,416
+Bire basınız diyelim. Slash end'i ekleyelim. Sonra Selection'ımız vardı bizim. Artık onu okuyacağız. ScanF dedik.
+
+96
+00:29:28,243 --> 00:29:35,403
+%d dedik çünkü integer bir değer alacağız. Ve Selection'ı artık kullanıcıdan okuyabiliriz.
+
+97
+00:29:40,627 --> 00:29:51,667
+Şimdi biz hangilerini tanımladık? Neleri deneyebiliriz? Buna bakalım. Selection'la sadece toplama için bir evasın. Yani sadece toplama fonksiyonunu tanımladık. Seçeneğini tanımladık.
+
+98
+00:29:51,667 --> 00:30:05,047
+Ve birinin dışında, iki, üç, dört, beş dışında başka bir şey tanımlarsa eğer bu ifadeyi yaptık. Geçerli bir giriş yapmadınız. Lütfen tekrar deneyin dedik ama bu sekenef.
+
+99
+00:30:05,395 --> 00:30:13,435
+Değişkenini, okuma şeyini buraya almadık. Şu başa alabiliriz. Şunu da şuradan sileyim.
+
+100
+00:30:15,576 --> 00:30:19,336
+Her seferinde okuma yapacağım çünkü dışına bir de buraya yazmama gerek yok.
+
+101
+00:30:19,336 --> 00:30:27,096
+Run, Vy'nin içine girdiği zaman ilk okuma yapacak. Sonra Switch'in içerisinde hangi case'i seçtiysem ona göre işlemini yapmaya devam edecek.
+
+102
+00:30:28,435 --> 00:30:33,475
+Menümüzü de her seçenekte tekrar tekrar yazmamıza gerek yok. Buraya alabiliriz.
+
+103
+00:30:35,615 --> 00:30:42,775
+Eksiz satırlarımızı silelim. Toplum için bire basın dedik. Diğerlerini ekleyeceğiz. Geçersiz giriş yaparsa tekrar seçim yapacak.
+
+104
+00:30:43,775 --> 00:30:48,535
+Şuraya bireyi eklememiz gerekiyor. Switch'in içinden çıkabilmesi için.
+
+105
+00:30:50,915 --> 00:30:55,835
+Şimdi bir de çıkışı tanımlamışız. Çıkış için beşe basınız. Onu da yazalım.
+
+106
+00:31:09,715 --> 00:31:17,036
+Çıkış içinde 5'e basacak. Bakalım bu program şu anda doğru çalışacak mı?
+
+107
+00:31:31,571 --> 00:31:35,371
+O zaman da olan yataylar, de bir saniye.
+
+108
+00:32:23,188 --> 00:32:26,748
+Hocam, 21. satırda printf yazmamışsınız. Print yazmışsınız.
+
+109
+00:32:28,688 --> 00:32:29,408
+Ah, tamam.
+
+110
+00:32:32,408 --> 00:32:36,468
+Ben de yerden dolayı sıkıntı veriyor gibi gördüm de o yüzden teşekkür ederim.
+
+111
+00:32:37,388 --> 00:32:42,288
+Şimdi, şurada da bir nokta fazla mı yazdık?
+
+112
+00:32:45,940 --> 00:33:13,299
+Şu var. Şu var. Tamam. Toplama için 1'e bastığımızda input 1'i istiyor. 5 diyelim. Diğerine de 5 diyelim. 10 sonucunu gördük ve menümüz tekrar geldi. Çıkış için 5'e bastığımızda program sonlandı. Şu andaki adımlarımız doğru şekilde çalışıyor değil mi? Evet, şimdi devam edelim. Çıkarmayı tanımlayalım.
+
+113
+00:33:14,579 --> 00:33:34,939
+Şu işlemi aynen kopyalıyorum. Çıkarma için uyarlama yapalım. Yine input 1, input 2'yi alacağız. Sadece çıkarma işlemi olacak. Değil mi? İşlemimiz değişti. Çarpma için de aynı şekilde. İşlemimiz çarpma oldu.
+
+114
+00:33:41,971 --> 00:33:44,532
+Bölme için de bir bölme işlemini tanımlayalım.
+
+115
+00:33:49,748 --> 00:33:51,107
+Çıkışı tanımadık, tamam.
+
+116
+00:33:51,347 --> 00:33:52,488
+Bir şey sorabilir miyim?
+
+117
+00:33:53,167 --> 00:33:53,768
+Tabii ki.
+
+118
+00:33:54,447 --> 00:33:57,947
+Çıkış için 5 değil de Enter'a basılmasını nasıl yapabiliriz acaba?
+
+119
+00:33:59,607 --> 00:34:13,788
+Enter'ın ASCII karakterlerinde hangi değer olduğunu tablodan okuyup ona göre o değeri eğer şuraya yazarsan o zaman Enter olduğu zaman çıkış işlemi yapar.
+
+120
+00:34:14,068 --> 00:34:15,228
+Anladım, teşekkür ederim.
+
+121
+00:34:15,988 --> 00:34:16,707
+Rica ederim.
+
+122
+00:34:22,867 --> 00:34:38,467
+Çıkarma, çarpma ve böyle. Şimdi bunları makro olarak tamamlayacağız. Birazdan. İki, üç, dört.
+
+123
+00:34:41,972 --> 00:34:43,252
+Şu anda tamamız.
+
+124
+00:34:47,443 --> 00:35:14,224
+İşlemini deneyelim. Beş diyelim, üç diyelim, on beş oldu. Tamam. Şu anda işlemlerimiz gayet güzel çalışıyor. Çıkış için beşe basalım. Şimdi tanımlanmamış değerlerden bir tanesini deneyelim. Dokuz tanımlı değil. Geçerli bir giriş yapmadınız. Lütfen tekrar deneyelim. Bize meyve tekrar bastı. Buralara kadar bir sıkıntı yok değil mi? Şu anda doğru bir şekilde çalıştırdık.
+
+125
+00:35:14,900 --> 00:35:19,400
+Şimdi bizden ne istiyor? Her bir işlem makro olarak tanınmalıdır diyor.
+
+126
+00:35:19,880 --> 00:35:25,940
+Tabi de buraya yazmayı unutmuşuz ama makroları da başka bir kütüphane sınıfından, yani biz kendi kütüphanemizi tanımlayacağız.
+
+127
+00:35:26,920 --> 00:35:31,059
+Oradan çağıracağız. Bunu nasıl yapacağız?
+
+128
+00:35:32,059 --> 00:35:34,380
+File diyoruz, new source file diyeceğiz.
+
+129
+00:35:37,659 --> 00:35:39,440
+Save diyelim direkt.
+
+130
+00:35:41,907 --> 00:35:49,127
+Calculations diyelim. Artık bizim header'ımız bu oldu.
+
+131
+00:35:53,588 --> 00:36:17,807
+Şimdi bir fonksiyonlarımızı tanımlamamız için şu ifadeleri yazmamız gerekiyor. Normalde bu başka kompilerlarda tanımlı geliyor. Ama devside gelmiyor. O yüzden calculations ismine göre büyük harflerle otomatik bunu bu şekilde yapıyor.
+
+132
+00:36:24,724 --> 00:36:26,724
+Tekrar.
+
+133
+00:36:28,724 --> 00:36:30,724
+Bir de en sonunda...
+
+134
+00:36:34,228 --> 00:36:47,788
+Endif komutumuz var. Bu kadar. Şimdi bu aralara biz kendi makrolarımızı tanımlayacağız. Makro tanımlarken arkadaşlar, yine şu define ifadesini kullanıyoruz. Mesela bizim ilk makromuz neydi? Toplamaya.
+
+135
+00:36:47,788 --> 00:36:58,028
+Sun fonksiyonu olsun. Parantezle içerisinde alacağı parametreleri giriyoruz. Bizim parametremiz iki tane vardı. X ve Y değil mi?
+
+136
+00:36:59,284 --> 00:37:09,564
+Burada tek satırda yazıyorsak eğer hiç paranteze gerek kalmadan yapacağı işlemini tek satırda ifade edebiliyoruz. Eğer birden fazla satıra ihtiyacımız olursa onu da nasıl yapacağımızı göstereceğim.
+
+137
+00:37:11,795 --> 00:37:22,875
+Şurada sadece sayıların daha sonradan sıkıntı çıkarmaması için ifadelerimizi işlemde kullanacağımız X ve Y parametrelerini parantez içerisinde kullanacağız.
+
+138
+00:37:22,875 --> 00:37:32,015
+Mesela burada toplama yapacağız ve X parantez içerisinde artı yine Y parantez içerisinde yazarsak sıkıntı çıkarmayacaktır.
+
+139
+00:37:34,735 --> 00:37:37,095
+Sama bu şekilde ifade ettik.
+
+140
+00:37:39,987 --> 00:37:52,148
+Şimdi çıkartmayı ifade edelim. Aynı şekilde. Çarpmayı ifade edelim.
+
+141
+00:38:00,500 --> 00:38:02,500
+Bir de bir miyim fadet.
+
+142
+00:38:19,251 --> 00:38:25,832
+Doğru ifade ettik. Şimdi bunu kendi main fonksiyonumuza include edeceğiz.
+
+143
+00:38:27,612 --> 00:38:30,231
+Kütüphanemizin adı neydi? Calculation.
+
+144
+00:38:31,891 --> 00:38:42,351
+Calculation.h. Pardon, buradaki kendi tanımlıysa kütüphanemizi çift tırnak içerisinde yazıyoruz. Köşeli parantez değil. Tamam mı?
+
+145
+00:38:46,036 --> 00:38:49,676
+Şimdi biz makroları burada nasıl çağıracağız? Buna bakacağız.
+
+146
+00:38:51,516 --> 00:38:55,676
+Normalde biz işlemimizi burada yaptık ya, bu işlemi buradan siliyoruz.
+
+147
+00:38:57,136 --> 00:39:01,496
+Şu result kısmına direkt toplama işlemi için sanmaydı.
+
+148
+00:39:01,496 --> 00:39:08,556
+O zaman buraya parametrelerimizi giriyoruz xp'ye. Direkt bu işlemin sonucunu buraya getiriyor.
+
+149
+00:39:09,115 --> 00:39:10,496
+Biz de...
+
+150
+00:39:10,900 --> 00:39:15,279
+Eşlemimizi makro ile yapmış oluyoruz. Tamam mı? Mesela bunu deneyelim.
+
+151
+00:39:19,347 --> 00:39:31,667
+Bu main yeri neresi buna bakalım. Yeni klasör 3 içinde. Yeni klasör 3 şurada. Calculation'ı da buraya atacağız. Şimdi çalışacak.
+
+152
+00:39:35,667 --> 00:39:39,947
+Toplamayı tanımlamıştık. Dire basıyoruz.
+
+153
+00:39:40,403 --> 00:39:47,203
+Beş diyelim, iki diyelim. Toplama işlemimizi makroyla gerçekleştirmiş olduk. Tamam mı? Şimdi diğerlerini dönüştürelim.
+
+154
+00:39:47,203 --> 00:39:50,203
+Sam'ı yaptık.
+
+155
+00:39:53,203 --> 00:39:55,264
+Direkt şöyle popyalayacağım.
+
+156
+00:40:03,539 --> 00:40:21,399
+Ne işlemini yapacağız? Şu anda karışıklık yok değil mi arkadaşlar? Anlıyorsunuz. Yani işte benim aklıma çok basit bir soru geldi. Çekiniyorum sormaya gibi bir şey yaşamayalım. Şimdi burada ne yapmayı unuttuk? Tabii ki konuşabilirsin [öğrenci].
+
+157
+00:40:22,452 --> 00:40:33,952
+Hocam, sum xy yerine mesela ab deseydik de aynı şekilde çalışır mıydı? Yani oradaki xy'lerin birbirini dengeleyip dengelemediğini karşılıklı olarak nasıl bulduklarını merak ettim.
+
+158
+00:40:34,952 --> 00:40:36,072
+Kesin olamadım.
+
+159
+00:40:37,012 --> 00:40:48,792
+İsimlerin pek bir önemi yok. Burada x ve y olarak tanımladığımız için ben orada x ve y yaptım. Mesela burada deneyelim.
+
+160
+00:40:49,184 --> 00:40:51,724
+A ve B diyelim. Bunu soruyorsun değil mi?
+
+161
+00:40:53,884 --> 00:40:55,184
+Aynen hocam bunu soruyorum.
+
+162
+00:40:56,524 --> 00:41:01,304
+Tamamdır, deneyelim. A ve B yaptık. Şimdi şurada şunları silmeyi unuttuk. Şunları silelim.
+
+163
+00:41:01,704 --> 00:41:05,124
+Resulta yani sıkıntı çıkarmaz ama bunlara ihtiyacımız yok artık.
+
+164
+00:41:07,064 --> 00:41:10,884
+Resulta kullanmıyoruz. Bu şekilde bir deneyelim bakalım.
+
+165
+00:41:18,804 --> 00:41:28,804
+Her şekilde çalıştı. Yani isimlerden bağımsız. Ama tabii ki aynı fonksiyonun içinde, aynı makronun içinde parametreyi x y deyip a artı b yaparsan çalışmaz. Tamam mı?
+
+166
+00:41:29,804 --> 00:41:34,764
+Çette de sorular var. Tamam hocam çok teşekkür ediyorum. Onlara bakalım. Rica ederim.
+
+167
+00:41:37,824 --> 00:41:40,144
+Şimdi bu makrolarımızı tanımladık.
+
+168
+00:41:42,867 --> 00:41:57,148
+Şimdi menümüzü makro şekilde yazalım. Burada da makroyu birden fazla satırda nasıl yazarız onu göstereceğiz. Şimdi calculation hash dedik ya bir de menü için bir sayfayı yaratalım.
+
+169
+00:42:03,539 --> 00:42:07,639
+Şurayı tekrar kopyalayacağım. Tekrar yazmak istemiyorum.
+
+170
+00:42:21,715 --> 00:42:32,876
+Menü harç dedik. Bunu kaydedelim. Masaüstü yeni klasör 3D'di. Menü nokta. H uzantısıyla kaydetmem gerekiyor sadece.
+
+171
+00:42:34,876 --> 00:42:49,235
+Şimdi menümüzü şey yapalım. Tanımlayalım. Tek farkı yine define ile başlıyoruz. Fonksiyonun ismini yazıyoruz. Ondan sonra
+
+172
+00:42:49,615 --> 00:42:51,215
+Köşeli parantez açtık.
+
+173
+00:42:56,692 --> 00:43:05,471
+Burada slash koyacağız. Yani her bir satır için slash koyacağız. Menüde nasıl tanımlamıştık main'de? Şunu alalım.
+
+174
+00:43:08,372 --> 00:43:10,132
+Bundan komple aldım.
+
+175
+00:43:16,371 --> 00:43:19,271
+Eş, burtufu kompileler donluyuz.
+
+176
+00:43:25,268 --> 00:43:31,207
+Burada görmesi için yine slash yapmamız gerekiyor. Tek farkı bu.
+
+177
+00:43:38,387 --> 00:43:46,408
+Tamamdır. Çıkışçı meşapasınızı tanınadık. Şuraya da bunu koyuyoruz. Buna gerek yok.
+
+178
+00:43:50,132 --> 00:43:54,692
+Kaydedelim. Şimdi buraya Include edeceğiz.
+
+179
+00:44:00,211 --> 00:44:06,792
+Menü nokta, haş şeklinde. Şimdi burada direkt menü olarak çağırıyorum değil mi?
+
+180
+00:44:08,872 --> 00:44:15,612
+Tabii ki cümle sonumuzu unutmayalım. Şimdi bir çalıştıralım bakalım.
+
+181
+00:44:17,471 --> 00:44:20,052
+Şurada boşluk bıraktığım için görmedi.
+
+182
+00:44:28,148 --> 00:44:33,387
+Bakın menümüz tekrar aynı şekilde çalıştı. Sadece makro kullandık. Değil mi?
+
+183
+00:44:36,387 --> 00:44:42,248
+Şimdi hepsini yaptık. Kontrol ediyorum. Her bir adamımızı yaptık.
+
+184
+00:44:45,811 --> 00:45:04,131
+Tekrar bakıyorum. Şimdi bir tane faktöriyel hesabı ekleyeceğiz. Menüye faktöriyel hesaplama seçeneği ekleyelim. Konsol ekranında da şurada input dosyası burada da açıktı. Menüye faktöriyel hesaplaması ekleyeceğiz.
+
+185
+00:45:14,643 --> 00:45:22,623
+Yaptığı bütün işlemi bize gösterecek şekilde bir çıktı hazırlamamız.
+
+186
+00:45:26,483 --> 00:45:31,623
+Bunu nasıl yapacağız şimdi? Öncelikle faktörüyle eklemeyi yapalım.
+
+187
+00:45:38,612 --> 00:45:55,192
+Case 5 diyeceğim buna, diğerine 6 yapacağım. Bu 6 olsun. Artık çıkış için 6'ya basılsın. Menüden değiştiriyorum. Şuraya da bir faktöriyel ekleyelim.
+
+188
+00:46:01,300 --> 00:46:07,199
+Beşe basın diyeceğiz. Tamam. Neyine geldik?
+
+189
+00:46:09,900 --> 00:46:14,140
+Üç, dört, beşteyiz. Şimdi faktörüyle hesap.
+
+190
+00:46:14,140 --> 00:46:23,860
+Şuraya black satırımızı ekleyelim. Sonradan unutmayalım.
+
+191
+00:46:27,315 --> 00:46:37,715
+Ne alacağımızı soracağız değil mi? En farklı bölge için n değerini birini diyelim.
+
+192
+00:46:43,476 --> 00:46:48,235
+Ya da hızlıca sılaşana gerek yok. Direkt aynı satırda alalım. İkisi kopyalıyor.
+
+193
+00:46:50,556 --> 00:46:52,096
+Ekran gitti mi sizlere ya?
+
+194
+00:46:54,096 --> 00:46:55,176
+Evet, şu an bende de gitti.
+
+195
+00:47:09,844 --> 00:47:12,224
+Sesimi alıyorsunuz değil mi? Sıkıntı yok şu anda.
+
+196
+00:47:21,300 --> 00:47:25,199
+Bunu hemen kabloluya dönüştüreyim, daha hızlı kullanalım.
+
+197
+00:48:03,539 --> 00:48:04,739
+Bağlantı mı koparıyor?
+
+198
+00:48:09,492 --> 00:48:10,552
+Şu an bağlantı yok.
+
+199
+00:48:37,108 --> 00:48:39,288
+Şu anda duyabiliyorsunuz değil mi? Sıkıntı yok.
+
+200
+00:48:42,328 --> 00:48:43,288
+Evet, sıkıntı yok şu an.
+
+201
+00:48:43,288 --> 00:48:44,048
+Tamam.
+
+202
+00:48:46,008 --> 00:48:48,387
+Şimdi faktörel hesabı yapacağız.
+
+203
+00:48:49,048 --> 00:48:53,108
+Faktörelini hesaplayacağımız değeri x'in içerisinde tutuyoruz şu anda. Aldık.
+
+204
+00:48:55,807 --> 00:49:00,387
+N faktörel eşittir şeklinde tutacağız ya.
+
+205
+00:49:01,408 --> 00:49:04,387
+O yüzden ben y değerini
+
+206
+00:49:05,684 --> 00:49:23,724
+x'e eşit diyeceğim. Çünkü x'in değerini ben azaltacağım aşağıda. y değerini de ben n faktöriyel eşittir. n çarpı n eksi 1 çarpı n eksi 2 çarpı 1'e kadar giden o print yeri var ya. Orada kullanacağım n faktöriyel işi için.
+
+207
+00:49:24,079 --> 00:49:37,599
+X değerini, yani kullanıcı ne girmiş, hangi faktör ile hesaplamak istiyor onu tutmak istiyorum. Çünkü bu X değerini ben değiştireceğim. O yüzden X'in ilk halini Y'nin içerisinde tuttum. Tamam mıyız bu araya kadar?
+
+208
+00:49:41,715 --> 00:50:06,735
+Neyse bunu kullanalım. Ondan sonrasında şey yaparız. Ekleriz ihtiyaç oldukça. Şimdi bir while döngüsüne ihtiyacım var. Neden while? Orada yapılabilir mi? Bunu soracağım size. Nereye kadar ben hesaplama işlemi yapacağım? Onu sormak istiyorum size. Ya da şunu result diye değiştirelim. Onu daha sonrasında yaparız.
+
+209
+00:50:14,579 --> 00:50:20,180
+Nereye kadar bu işlem dönecek? Yani şurada result'ı hesaplayacağım. Sonuç, işlemin sonucunu hesaplayacağım.
+
+210
+00:50:20,180 --> 00:50:27,659
+Diyeceğim ki, şurayı açalım. Diyeceğim ki result eşittir diyeceğim.
+
+211
+00:50:31,155 --> 00:50:40,056
+Result çarpı x-x-x diyeceğim. Neden böyle söyledim?
+
+212
+00:50:42,975 --> 00:50:47,935
+Ya da şöyle mi demem gerekiyordu? x-x mi demem gerekiyordu? Bunların arasındaki farkı öğrendiniz mi?
+
+213
+00:50:55,923 --> 00:51:08,264
+Evet, verdiğimiz sayı 1'e ulaşana kadar diyebiliriz. Doğru. 1 olana kadar. Çünkü 1 ile çarpmanın pek bir anlamı yok.
+
+214
+00:51:09,583 --> 00:51:15,104
+Evet, peki bu eksi eksi x ile x eksi eksi arasındaki farkı öğrendiniz mi?
+
+215
+00:51:16,943 --> 00:51:17,443
+Öğrendim.
+
+216
+00:51:18,867 --> 00:51:25,527
+Tamam, burada sizce hangisini kullanmalıyız? Şurayı yazalım. White içerisinde ne diyeceğiz?
+
+217
+00:51:26,648 --> 00:51:31,268
+Biz x'i azalttığımıza göre x küçüktür bir olana kadar değil mi?
+
+218
+00:51:32,847 --> 00:51:33,987
+Ay, büyüktür.
+
+219
+00:51:36,507 --> 00:51:43,667
+x büyüktür bir olana kadar değil. Mesela 5 girdim buraya. 5, 1'e kadar bu işlem gerçekleşecek.
+
+220
+00:51:43,768 --> 00:51:45,847
+Şimdi burada x, x mi yapmalıyız?
+
+221
+00:51:46,228 --> 00:52:12,048
+X eksi eksi mi yapmalıyız? Result'ın değeri X'e eşit. Şu ne demek? Mesela şurada çizim yapabiliyorum ben. X eşittir 5 diyelim. Tamam mı? Result'ın değeri de 5'e eşit oldu değil mi? Result eşittir 5 çarpı. Ne olacak burada? X'in değeri de 5'e eşit biliyoruz.
+
+222
+00:52:12,367 --> 00:52:37,367
+Eksi eksi beş dediğim zaman önce azaltacak, sonra kullanacak değil mi? Yani beş çarpı dörde hesaplamak istiyorum zaten. Ama x eksi eksi deseydim, önce beşi yazacaktı bu işlemi beş çarpı beş yapacaktı. Sonra x'in değeri artık şu satırda, x'in değeri artık dört olacaktı. Yine azaltacaktı ama öncelikle kendi değerini kullanacaktı. Sonrasında...
+
+223
+00:52:38,579 --> 00:53:02,920
+Azaltma yapacaktı. Şu anda o zaman bizimki doğru değil. Eksi eksi x dediğine göre result'ı ben beşe eşitlemiştim. Yani x'e de eşitlemiştim. İlk değeri çarpı ilk değeri eksi bir değerini hesaplamış oluyoruz. Sonra result'ı eşitliyoruz. Bu işlem devam edecek. Artık result da benim sonucum. Şu adımla ben faktörüyle hesaplamış oldum.
+
+224
+00:53:03,188 --> 00:53:06,868
+Tamam. Faktörüyle hesapladık ama bizden ne istiyor?
+
+225
+00:53:10,088 --> 00:53:14,307
+Beş faktörüyle eşittir. Şu ifadeyi benden görmek istiyor.
+
+226
+00:53:15,488 --> 00:53:19,688
+Şurayı görmek istiyor. Bunun için şöyle bir şey yapacağız.
+
+227
+00:53:22,368 --> 00:53:24,528
+For döngüsü açacağız değil mi?
+
+228
+00:53:31,251 --> 00:53:42,591
+Y diyeceğim. Y büyüktür. Sıfırdan. Bunu niye yapıyoruz sizce? Y eksi eksi.
+
+229
+00:53:45,411 --> 00:53:49,711
+Şimdi bu y değeri neye eşitti? Beşe değil mi?
+
+230
+00:53:50,483 --> 00:54:06,103
+Şimdi beşi sıfırdan büyük olana kadar, yani bir değerini görene kadar azaltıyorum. Yani burada bir print işlemine ekleme yapacağım. Şimdi bizim burada printte iki tane koşulumuz olacak. Bu da aynı çıktığı elde etmek için. Yoksa başka bir şey yok.
+
+231
+00:54:07,323 --> 00:54:09,103
+Eğer i'yim.
+
+232
+00:54:12,596 --> 00:54:39,376
+Eşittir 1 ise artık bu printin şu son kısmını yazacak değil mi? Ama 1 olmadığı zamanlarda şu işlem hep aynı şeyi tekrar ediyor fark ettiniz mi? Ama 1 olduktan sonra eşittir 120 diyeceğim. Yani 1'e kadar aynı şeyleri tekrar ediyor olacağım ben. O zaman ne yapacağız? Şu for'un dışında da o faktör yerli kısmı ekleyebiliriz. Printf dedik.
+
+233
+00:54:39,775 --> 00:54:46,735
+Burada ne diyecektik? M faktörüel. Yani yüzde de faktörüel eşittir diyeceğim.
+
+234
+00:54:49,876 --> 00:55:07,996
+Yüzde D ne koyacağız buraya? Yüzde D n faktörü yani buraya girdiğim X değeri ama X değerinin orijinal değerini hangi değişken tutuyordu? Y'yi kaydetmiştik. Çünkü biz X'in değerini burada azaltıyoruz. Y'ye kaydettik. Y'yi vereceğiz burada değil mi?
+
+235
+00:55:17,811 --> 00:55:35,371
+Burada ne olmuş olacak? Şurada bir boşluk bırakmıştım. Direkt sayıyı yazabilirim. Yüzde D çarpı diyorum. Olur mu böyle? Ama bu eşittir 1 demiştim. Bu else koşulu olacak değil mi?
+
+236
+00:55:38,132 --> 00:55:40,011
+Şunu şuradan alalım.
+
+237
+00:55:41,460 --> 00:55:48,260
+Yani bir değilse, bire kadar olacak ifadede yüzde d çarpı diyeceğim. Şuraya da bir boşluk koyayım.
+
+238
+00:55:49,500 --> 00:55:53,720
+y değerini yazacağız değil mi? Doğru mu şu anda?
+
+239
+00:56:11,795 --> 00:56:32,755
+Tamamdır. Soruları geriden okuduğum için o anda fark etmemişim. Çete baktım da. Tamam. Else yaptık. Şimdi ifin içerisine artık eşittir ifadesini koyacağımız yeri yazıyoruz. Yüzde d diyoruz. Y değeri yani bir. Artık burası yıldız değil de eşittir olacak. Neye eşit olacak?
+
+240
+00:56:33,215 --> 00:56:49,675
+Yine integer bir sayı olacak. Şurada artık slash'a atabiliriz. Y ve result'ımız var değil mi? Bu arada biz result değişkenini tanımlamıştık. Tamam. Şu anda var mı bir sıkıntı sizce?
+
+241
+00:56:49,675 --> 00:56:53,435
+Hocam if'in içinde y eşit eşittir 1 dememiz gerekiyor.
+
+242
+00:56:54,963 --> 00:56:56,384
+İ yeşittir demişiz.
+
+243
+00:56:57,183 --> 00:57:11,683
+Doğru söylüyorsun. Y üzerinden gidiyoruz çünkü. Normalde i hep döngü ifadesi oluyor ya o yüzden iyi yazmışım. Doğru söylüyorsun. Y'yi koyduğumuz için y yazacağız. Tamamdır. Şu anda sıkıntı var mı?
+
+244
+00:57:17,235 --> 00:57:19,555
+Yok gibi duruyor. Bir çalıştırıp deneyelim bakalım.
+
+245
+00:57:20,255 --> 00:57:24,335
+5, direkt 5 yazalım. 5 faktörüyle hesaplayalım.
+
+246
+00:57:25,575 --> 00:57:27,135
+Evet, doğru şekilde hesapladık.
+
+247
+00:57:29,175 --> 00:57:31,135
+Sorunuz var mı bu konuyla alakalı?
+
+248
+00:57:33,315 --> 00:57:35,615
+Çıkış içinde 6'ya basalım, çıkış yaptık.
+
+249
+00:57:38,867 --> 00:57:42,207
+Bu soruyla alakalı bir sıkıntımız var mı?
+
+250
+00:57:45,907 --> 00:58:07,827
+Bunları nasıl ekleyeceğimizi öğrendik. Makro nasıl tanımlanır onu gördük. İki ayrı HFON dosyasını include ettik. While döngüsü gördük, for döngüsü gördük. Sıkıntı yok değil mi?
+
+251
+00:58:09,139 --> 00:58:15,900
+Sorunuz yoksa bir beş dakika ara verelim. Sonra ikinci soruya geçeceğiz. Onu biraz daha hızlı çözeriz. Çok farklı hızlanmayalım.
+
+252
+00:58:17,099 --> 00:58:18,719
+Menü noktaların sosyası açabilir misiniz?
+
+253
+00:58:28,371 --> 00:58:31,191
+Ben ders sonunda size dosyaları chatten atarım isterseniz.
+
+254
+00:58:34,171 --> 00:58:43,291
+Siz de kendiniz çalıştırabilirsiniz. Hatta bizimle birlikte kodluyor olsanız, benimle birlikte kodluyor olsanız da sizin için daha iyi olur. En de siz de eğlenirsiniz.
+
+255
+00:58:45,011 --> 00:58:50,291
+Tamam bir 5 dakikada verelim o zaman. 50 oldu zaten. 55 geçe burada olalım. Diğerini de çabucak bitiririz.
+
+256
+00:58:55,668 --> 00:58:56,288
+Tamam mı?
+
+257
+00:58:59,188 --> 00:59:00,367
+Bir de eşit geçe görüşürüz.
+
+258
+01:04:24,115 --> 01:04:36,076
+Evet, merhaba tekrardan. Şimdi ikinci sorumuza geçelim. Ben birazcık beklerken böyle vakit olacak şeyleri yazdım. Anlatacağım ama.
+
+259
+01:04:36,755 --> 01:04:45,016
+Şimdi ikinci soru için bir karakter dizisi içerisinde kullanıcıdan alınan bir kelimeyi aramaya işlemi yapacağız. Aşağıdaki şartları sağlayarak.
+
+260
+01:04:53,844 --> 01:05:13,503
+Öncelikle arama yapılacak karakter dizisinin boyutu hesaplanmalıdır diyor. Yani bizim bir tane tekstimiz var. Onun içerisinde arama yapacağımız için o tekstin boyutunun ne kadar olduğunu hesaplamamız gerekiyormuş. Bunu hesaplayacağız. Sonra daha arama yapacağımız kelimeyi yani arayacağımız kelimeyi daha doğrusu onun boyutunu da hesaplayacağız.
+
+261
+01:05:14,228 --> 01:05:27,988
+Ve bu iki tekstide, yani arayacağımız ve aranacak olan tekstleri küçük harflere çevireceğiz. Neden? Çünkü ASCII tablosunda, hiç kontrol ettiniz mi bilmiyorum, her bir karakterin bir ASCII kodu var.
+
+262
+01:05:29,508 --> 01:05:41,448
+Büyük harflerle küçük harfler birbirinden farklı. Büyük B ile küçük B'nin kodları birbirinden farklı. Bunları ayırt edebilmek için, sonuçta bunlar aynı harf, ayırt edebilmek için büyük olanları küçük olanlara çeviriyoruz.
+
+263
+01:05:42,516 --> 01:06:10,456
+Ki yanlış hesaplama yapmayalım diye. Dördüncü adımda ne diyor? Onu da küçük harfa çevirin diyor. Tamam. Beşinci adımda eğer aranan kelime karakter dizisi içerisinde varsa hangi indeks aralığında olduğu belirtilmelidir diyor. Yani atıyorum üçle beş indeksinin arasında şu kelimeyi buldum diye program çifti vermesi gerekiyor. Son olarak da o aradığınız kelimeyi kaç kere bulduğunu bize söylemesi gerekiyor. Aradığınız kelime iki kere tekrar.
+
+264
+01:06:10,516 --> 01:06:38,076
+gibi bir çıktı üretmemiz gerekiyor. Şimdi başlayalım buna. Ben önce şu Türkçe karakter için olan fonksiyonumuzu ekledim. Bunu zaten görmüştük. Main text olarak da birazcık da şey tatlı olsun diye aliyata bak, dön git bir daha bak diyeceğiz. Şimdi bak dediğim, yani burada tekrar ettirdim. Bak aradığımız zaman bize iki tane bak kelimesi bulduğunu
+
+265
+01:06:38,516 --> 01:07:01,416
+Göstermesi gerekiyor programın. Search karakter eriği de bizim arama yapmak istediğimiz kelimeyi tutacak. Yani bunu kullanıcıdan alacağız. Search kelimesini. Şimdi bunlar için de biz hani boyutlarını hesaplayın dedi ya bize hem arananın hem aranacak olanın boyutlarını hesaplayın dedi. O yüzden main text land ve search text land olarak iki tane.
+
+266
+01:07:02,356 --> 01:07:23,856
+İntijer bir değişkene ihtiyacım var. Bu i ve j'yi döngülerde kullanacağız. İndeks olarak. O yüzden tanımladık. Kontrolde kaç tane kelime bulduğumuzu hesaplamamızı istediler ya. O yüzden şimdi bu kontrol sıfırsa hiç bulamadı demek. Birse bir tane buldu, iki ise iki tane buldu demek. O yüzden bu değişkene de ihtiyacımız var. Tanımladık.
+
+267
+01:07:23,856 --> 01:07:29,856
+Şimdi kullanıcıdan aramaya yapmasını istediğimiz kelimenin girişini alıyoruz. Burada get fonksiyonuyla...
+
+268
+01:07:30,356 --> 01:07:54,076
+stringleri alabilirsiniz. Bunu da ilk defa gördüyseniz kullanımını öğrenmiş olacaksınız. Şimdi bize ne diyor? Main Text Lent'in uzunluğunu bulalım. Hadi onu bulalım. Burada şimdi uzunluğu hesaplayacağım bir indeks, bir parametreye ihtiyacım var. İ eşittir sıfır dedim.
+
+269
+01:07:55,092 --> 01:08:04,172
+Why'ın içerisindeyim. Kelimenin sonuna geldiğimi ben nereden anlıyorum karakterler dizisinde? Yani cümlenin sonuna geldiğimi ben şundan anlıyorum.
+
+270
+01:08:04,172 --> 01:08:16,172
+Main Text, Ereğ'in içerisindeki i indeksi eğer eşit değilse...
+
+271
+01:08:16,448 --> 01:08:22,728
+Neye? Değil eşitse. Neye? Cümle sonunu ifade eden terimi. Ne olduğunu bilen var mı?
+
+272
+01:08:24,608 --> 01:08:26,108
+Ters slaş end sanırım.
+
+273
+01:08:27,007 --> 01:08:28,568
+Ters slaş sıfır.
+
+274
+01:08:28,728 --> 01:08:29,587
+End sıfır pardon.
+
+275
+01:08:29,828 --> 01:08:39,408
+Aynen. Bu olana oluncaya dek biz bu döngü devam edecek yani her seferinde. Ne yapacak bu döngünün içinde? Biz neyi istiyoruz?
+
+276
+01:08:39,855 --> 01:09:06,136
+Hem boyutunu öğrenmek istiyoruz hem de büyük harfleri küçük harfleri çevirmek istiyoruz. İkisi için farklı döngü yazmaya gerek yok. Aslında öyle de yapabiliriz. Şimdi bir ilk önce öyle yapalım. Sonra kısaltmayı görelim. Bu olana kadar indeksi arttıracağım. Yani i artı artı yapacağım. En sonunda ne olacak? Bu dizinin boyutunu bana verecek değil mi? Şimdi bir de ben bu büyük harfleri küçük harfe çevirmek istiyorum.
+
+277
+01:09:06,931 --> 01:09:08,211
+Onu da şöyle yapacağım.
+
+278
+01:09:11,672 --> 01:09:16,771
+Main text i eşittir diyeceğim. Şurada i'yi sıfırlamam gerekiyor bu arada.
+
+279
+01:09:18,891 --> 01:09:28,231
+O yüzden i'yi sıfırlamadan önce lentil tuttuğum değişkeni, bunu onun için ayırmıştık ya, main text'in uzunluğunu tutacak değişken bu.
+
+280
+01:09:28,231 --> 01:09:34,391
+O yüzden buraya i'yi attığım zaman, burada i'yi sıfırladığım zaman bu değişkeni kaydetmiş oldum.
+
+281
+01:09:34,612 --> 01:09:41,532
+Ereğimizin uzunluğunu kaydetmiş olduk. Şimdi burada tekrar buraya gelene kadar kontrol edeceğiz.
+
+282
+01:09:42,032 --> 01:09:47,252
+Main text i'yi lowercase yapacağız. Onun için de şöyle bir fonksiyonumuz var.
+
+283
+01:09:49,512 --> 01:09:56,131
+To lower diye bir fonksiyonumuz var. Bunu derste gördünüz mü bilmiyorum. Gördünüz mü?
+
+284
+01:09:58,231 --> 01:09:59,032
+Evet.
+
+285
+01:09:59,032 --> 01:09:59,672
+Hayır.
+
+286
+01:10:01,235 --> 01:10:02,895
+Tamam, şimdi öğrenmiş olun.
+
+287
+01:10:02,975 --> 01:10:06,995
+Tool over dediğimiz zaman burada eğer büyük harf verirsek bu fonksiyonun içerisine,
+
+288
+01:10:08,015 --> 01:10:09,675
+büyük harfi küçük harfe dönüştürecek.
+
+289
+01:10:09,796 --> 01:10:11,716
+Küçük harf verirsen hiçbir değişiklik olmayacak.
+
+290
+01:10:11,835 --> 01:10:13,275
+Küçük yine küçük olarak kalacak.
+
+291
+01:10:13,395 --> 01:10:14,796
+Şimdi bunun açıkçası mı göreceğiz?
+
+292
+01:10:16,735 --> 01:10:18,135
+Main text i dedik.
+
+293
+01:10:18,135 --> 01:10:20,175
+Çünkü aynı indeksi şey yapacağız.
+
+294
+01:10:20,335 --> 01:10:22,315
+Sonra burada arttırma yapacağız.
+
+295
+01:10:25,075 --> 01:10:26,716
+Burada printf diyelim.
+
+296
+01:10:29,332 --> 01:10:52,132
+%S dediğim zaman buraya main text'i verelim. Küçük halini görelim. Büyük halini zaten biliyoruz. Ali Atabak dön bir daha bakın. Hatta şurada birkaç tane büyük harf atayım. Değişmiş olsun. Şu anda göze çarpan bir şey yok.
+
+297
+01:11:06,195 --> 01:11:08,136
+Bu biraz uzun sürüyor nedense.
+
+298
+01:11:22,836 --> 01:11:28,136
+Niye böyle oldu? Şunları alıp tekrar deneyim. Ondan ne sıkıntı ne oldu acaba?
+
+299
+01:11:32,148 --> 01:11:32,568
+Piş.
+
+300
+01:11:38,899 --> 01:11:39,739
+Teşekkürler.
+
+301
+01:11:43,315 --> 01:12:05,315
+Tamam, kompa ile uzun sürmüş. Aramak istediğimiz kelime Ali olsun. Ama biz şu an işlemi bitirmedik zaten. Sadece büyük harfleri küçük harflere çevirdik. Gördüğünüz gibi bizim orijinal cümlemiz Ali ve dön büyük harfliydi. Şimdi hepsi küçük harf şeklinde. Tamam mı?
+
+302
+01:12:08,307 --> 01:12:26,368
+Ama şimdi şöyle bir şey var. Biz burada while'ı iki kere kullandık. Aynı indekse kadar çalışıyor, aynı işi yapıyor. Burada da arttırıyorum, burada da arttırıyorum. Sadece şu farklı. Bunu sırayla yapmak yerine bunu alıp şuraya eklediğim zaman hiçbir değişiklik olmayacak ve ben şu while'dan kurtulmuş olacağım. Anladık mı?
+
+303
+01:12:27,923 --> 01:12:41,623
+Zaten bu basit bir şey, siz anlarsınız bunu. Uzunluğunu bulmuş olduk. Sonra küçük olduğunu da göstermiş olduk. Burada main text. Küçük harf diye yazalım çıktısında.
+
+304
+01:12:46,484 --> 01:13:10,484
+Görmüş olduk. Şimdiki sıradaki işlemimiz ne bakayım? Arama yapılacak karakterler dizisinin boyutu hesaplanmalıdır. Şimdi bunu aynı şekilde şey için yapacağız. Arama yapacağımız kelime için yapacağız. I eşittir sıfır olacak. Main text değil search olacak. Aynı döngünün içine koyamıyoruz. Şu şartta.
+
+305
+01:13:11,123 --> 01:13:18,623
+Main Text'i lowercase'a çevirecek. Şurası da Main Text değil, Search Text olacak. Doğru mu?
+
+306
+01:13:33,492 --> 01:13:47,952
+Aramamız, bunu da yaptık. Aranan kelimenin harfleri de küçük harfler çevirmelidir. Bunu da yaptık. Eğer aranan kelimede karakteristik varsa. Şimdi arama yapacağımız yere geldik.
+
+307
+01:13:49,852 --> 01:13:54,452
+Öncelikle ben cümlenin ve arama yapılacak kelimenin boyutunu print etmek istiyorum.
+
+308
+01:14:19,155 --> 01:14:21,996
+Yeni verges, main text verges.
+
+309
+01:14:26,387 --> 01:14:28,307
+Şimdi Search için yapalım.
+
+310
+01:14:37,619 --> 01:14:44,619
+Boyutlarını bir görelim. Şuraya da sılaşan atalım ki birbirine katıp karıştırmayalım.
+
+311
+01:14:47,520 --> 01:14:59,619
+Şuraya da atalım. Tamam. Boyutlarını burada görmüş olacağız. Çünkü hesaplama yaparken nereye kadar gitmemiz gerektiğini neden...
+
+312
+01:15:01,011 --> 01:15:09,611
+Bazı işlemler yapacağız, neden bunları yaptığımızı görmek için. İndekslerin boyutunun nasıl olduğunu hayal etmeniz gerekiyor. O yüzden boyutlara bakmak güzel bir şey olabilir.
+
+313
+01:15:10,791 --> 01:15:16,091
+Şimdi boyutları hazırladık hepsini. Bir döngüye ihtiyacımız var.
+
+314
+01:15:18,551 --> 01:15:25,751
+İ diyelim buna da. Sıfırdan başlasın. Artık İ ile bir işim kalmadı. Hepsini kaydettim. İ'yi sıfırlayabilirim tekrar.
+
+315
+01:15:26,771 --> 01:15:30,771
+İyi nereden nereye kadar arayacak? Şimdi bunu şey yapacağız sizinle.
+
+316
+01:15:33,172 --> 01:15:49,992
+Şimdi Ali Atabak üzerinden anlatacağım. Ali Atabak. Kaç parça bu? Ali şu her biri bir indeks değil mi? Boşluk da var. Onu da sayıyoruz. O da bir karakter.
+
+317
+01:15:51,028 --> 01:15:54,368
+Burada bir boşluk var, B var, A var, K var.
+
+318
+01:15:58,836 --> 01:16:17,216
+Burası sıfırıncı indeks. 1, 2, 3, 4, 5, 6, 7, 8, 9, 10. Ama biz bunu sıfırdan başlattığımız için indeksli size'ını saydırdığımız zaman main text için kaç alırız? 11 alırız değil mi?
+
+319
+01:16:17,216 --> 01:16:24,136
+Peki arama yapacağım şey de Ali olsun. Ali için kaç alacağım? Size'ını 3 alacağım değil mi?
+
+320
+01:16:25,300 --> 01:16:47,020
+Şimdi biz burada arama yaparken Ali'yi arayacağım ya, bakacağım, diyeceğim ki burada A buldum. O zaman bundan üç adım sonrasını yani hangi harf kelimeyi arıyorsam onun boyutu kadar sonraki adıma gideceğim değil mi? Yani bir, iki gideceğim şu üçüncüye kadar. Çünkü bir, iki, üç. Üç tane, üç uzunluğunda bir şey arıyorsam iki adım ileri gideceğim.
+
+321
+01:16:51,539 --> 01:17:02,860
+Ben diyeceğim ki, ha bak ben buradayım ama bak bu kelime bitiyor. Bu cümle bitiyor. Yani ben buradan, artık 9'a geldiğim zaman ben buradan 3 adım ilerisini arayamam değil mi?
+
+322
+01:17:04,680 --> 01:17:16,460
+3 adım ilerisini arayamayacağım. O yüzden burada bir kontrol yapacağız. Şimdi şurayı, şunu kapatayım, şuraya kontrolü yazayım, üzerinden konuşalım.
+
+323
+01:17:16,851 --> 01:17:19,931
+Ne yapacağız burada? İyi diyeceğiz. Küçüktür.
+
+324
+01:17:22,752 --> 01:17:23,871
+Main Text Land
+
+325
+01:17:23,871 --> 01:17:26,252
+Eksi
+
+326
+01:17:26,252 --> 01:17:34,391
+Search Text Land. Bu arada bu nasıl çıkıyor diye eğer bilmiyorsanız.
+
+327
+01:17:35,131 --> 01:17:41,332
+CTRL'e Space yaparsanız, mesela ben burada S'ye bastım. S ile benim yazabileceğim
+
+328
+01:17:42,931 --> 01:17:44,931
+şeyleri bana öneriyor. Tamam mı?
+
+329
+01:17:44,931 --> 01:17:45,931
+S dedim.
+
+330
+01:17:46,631 --> 01:17:47,751
+C çıktı.
+
+331
+01:17:55,636 --> 01:18:06,716
+Search geldi gördünüz mü? Main textland eksi search dediğim zaman bir de buraya artı bir koyuyorum. Şimdi nedenini birlikte sorgulayacağız. I artı artı diyorum.
+
+332
+01:18:10,771 --> 01:18:30,012
+Ve döngüyü başlatıyorum. Burada sizce bu artı birinin anlamı ne? Buradaki search'ü neden çıkardığımızı söyledim zaten. Şimdi buraya artı bir eklemeseydik ne olurdu? Bu artı biri çıkarmam için bu satırda neyi değiştirmem lazım? Bunu soruyorum size. Bir önerisi olacak olan var mı?
+
+333
+01:18:38,195 --> 01:18:39,256
+Çetede bakıyorum.
+
+334
+01:18:41,115 --> 01:18:47,416
+Şimdi Main Text Lent'ten Search'ta çıkardığım zaman benim şu anda Main Lent'imin uzunluğu diyelim ki on bir.
+
+335
+01:18:47,887 --> 01:19:13,847
+Ali Atabak için konuşuyorum şu anda. Ali Atabak, dön bir daha bakı dahil etmiyorum. Ali Atabak için konuşuyorum. Uzunluğu on bir. Çünkü sıfırdan başladık ya ona kadar artı bir ekliyoruz. İndeksi değil. Size'ını, boyutunu konuşuyorum. On bir. Söğürcün boyutu kaç? Üç. On birden üç çıkardığım zaman kaç yapıyor? Sekiz değil mi? Yani burada ben iyi, küçüktür, sekizi sorguluyorum.
+
+336
+01:19:14,515 --> 01:19:28,715
+8 neresi? Burası. Yani i küçüktür. 8 dediğim zaman i sıfırdan kaça kadar gidebilecek? 7'ye kadar gidebilecek değil mi? Yani ben şuraya kadar geleceğim.
+
+337
+01:19:29,755 --> 01:19:40,355
+Ve diyeceğim ki buradan sonra artık 7'de ise ne yer? 3 adım sonrası şey nasıl diyeyim? 1, 2'ye geldim. 3 kelime sonrası bitiyor mu? Bitmiyor değil mi?
+
+338
+01:19:40,948 --> 01:19:42,148
+Fark ettik mi burayı?
+
+339
+01:19:44,828 --> 01:19:53,248
+Yediye kadar, şu an yedideyim. Yediden iki adım gittiğimde sanki cümle bitiyormuş gibi bir hareket olur değil mi burada?
+
+340
+01:19:53,408 --> 01:19:58,847
+On bir eksi üç yaptığım zaman. Sekizi elde ediyorum. İ küçüktür. Sekiz dediğim için.
+
+341
+01:20:00,347 --> 01:20:02,708
+İ sıfırdan yediye kadar artacak.
+
+342
+01:20:03,539 --> 01:20:27,279
+Yedi de olacak yani değeri. Yedi olduktan sonra, iki adım sonrasında benim cümlem bitmiyor. O yüzden artı bir koyuyoruz. Bu da bir size, biri indeks olduğu için aradaki fark bundan kaynaklanıyor. Ama ben bu artı biri yapmak istemiyorum diyelim. O zaman ne yapacağım? Bu artı biri buradan kaldıracağım. Temiz hesap olsun diyeceğim. O zaman buraya küçük eşitleri koyacağım. Değil mi?
+
+343
+01:20:29,684 --> 01:20:42,203
+Çünkü 8, burası 8 ediyor. 8'e de gelsin istiyorum ben. Şu indekse de gelsin istiyorum. O yüzden küçük eşit 8 yapacağım. Tamam mıyız burada? Anlaştık mı?
+
+344
+01:20:47,155 --> 01:20:50,655
+Soru sormadığınız için anlaşmışız gibi düşünüyorum.
+
+345
+01:20:56,787 --> 01:20:58,787
+Buraya kadar geldik.
+
+346
+01:21:01,108 --> 01:21:05,268
+Şimdi şunu şöyle yapalım. Yine gözümüzün önünde dursun. Aynı şey.
+
+347
+01:21:10,739 --> 01:21:25,199
+Nasıl devam edeceğiz? Ne diyorsunuz? Burada bir J'ye ihtiyacım olacak diyorum ben. J'ye eşittir sıfır diyorum çünkü bunu kullanacağım. Şimdi burada bir vay döngüsüne ihtiyacım var. Ama hangi koşulla? Süzce nasıl?
+
+348
+01:21:38,579 --> 01:22:00,139
+Karakterlerin aynı olması gerekiyor değil mi? Bir bu şart var. İkinci şart ne? Uzunluk. Eğer benim aradığım mesela Ali boşluk, ata boşluk bak var ya. Mesela bakı arıyorum ama cümlenin içerisinde bakabilir misin var. Şimdi baka kadar uyduğu için gerisi de aynım diye kontrol etmeye devam ederse.
+
+349
+01:22:01,043 --> 01:22:22,583
+Uzunluğu birbiriyle aynı mı diye bunun da kontrolünü yapmam gerekiyor. Yani bu ne demek oluyor? J benim aradığım kelimenin uzunluğunu ifade eden şey. J küçüktür. Search Text Length ifadesini sağlaması gerekiyor.
+
+350
+01:22:27,956 --> 01:22:52,076
+Search'ın o anki indeksi eşit olması gerekiyor. Main Text'in o anki i ifadesi artı j kadar. Tamam mı? Arama yapıyoruz, kaydıra kaydıra gidiyoruz ya. O j onun arttırma.
+
+351
+01:22:53,844 --> 01:22:56,484
+Bunu da sağladık mı? Şuraya da parantez atalım.
+
+352
+01:23:05,171 --> 01:23:11,731
+Bunun içine de girdik mi? Burada yapacağımız tek şey j artı artı olacak. Tamam mı?
+
+353
+01:23:22,131 --> 01:23:36,831
+Ve burada neyi istiyordu bizden? Count'u yani kaç tane kelime buldum onu bulmamı istiyor. O yüzden buradan eğer diyorum J eşittir.
+
+354
+01:23:40,979 --> 01:24:00,719
+Search Text Blend'in uzunluğuna eşitse ne yapacağım ben burada? Hem ben bunu buldum, bunu ifade edeceğim. Bizden ne istemişti bakalım? Eğer aranan kelime karakterisinde varsa hangi indeks aralığında olduğunu belirtmen gerekiyor diyor. O zaman diyeceğim ki ben printf diyeceğim.
+
+355
+01:24:09,427 --> 01:24:14,548
+Şunla şu arasında bulundu.
+
+356
+01:24:16,728 --> 01:24:19,467
+Ne ile ne arasında sizce?
+
+357
+01:24:22,467 --> 01:24:24,203
+İ ile...
+
+358
+01:24:27,828 --> 01:24:28,768
+J arasında.
+
+359
+01:24:29,228 --> 01:24:30,328
+E ile J arasında.
+
+360
+01:24:31,828 --> 01:24:33,148
+E artı J arasında.
+
+361
+01:24:37,619 --> 01:25:05,619
+Buna bakalım. Eğer indeksle, yani mesela biz sıfırıncı indeksi A harfine sıfır diyoruz ya, bir mi dedik, sıfır mı diyeceğiz? Onu print ederken bakarız, yanlışlık oluştu düzeltiriz. Bunu söyledik. Bir de ne dedik? Kaç tane kelime bulduk? Bunu sayalım dedik. Onu hangi değişkende şey yapmıştık? Bakalım. Kontrol diye bir değişkenimiz vardı. Count da diyebilirmişiz. Direkt aklıma geldi. Kontrolü de bir arttırıyoruz. Çünkü bir tane buldu değil mi? Kontrolü arttırıyoruz.
+
+362
+01:25:05,619 --> 01:25:09,579
+Bu döngüyü tamamladık. Burada eksik yaptığımız düşlem var mı?
+
+363
+01:25:14,484 --> 01:25:30,864
+Çalıştırdığımız zaman göreceğiz zaten. Bir sıkıntı olursa bakarız. Şimdi bir de en son olarak şunu print edelim. Eğer kontrol sıfırsa diyeceğiz ki.
+
+364
+01:25:35,572 --> 01:25:38,551
+Aradığımız kelime bulunamadı.
+
+365
+01:25:51,188 --> 01:26:15,747
+Eğer sıfırdan farklı herhangi bir şeyse zaten eksi olamaz. Artırıyoruz. Direkt şunu kopyalayayım. Aradığımız kelime şu kadar adet bulundu. Diyeceğiz ve bitireceğiz.
+
+366
+01:26:22,036 --> 01:26:23,476
+Şöyle de bir temizleyelim.
+
+367
+01:26:26,736 --> 01:26:27,916
+Çalıştığımda bakalım.
+
+368
+01:26:32,787 --> 01:26:34,028
+Evet, hatası geliyor.
+
+369
+01:26:43,764 --> 01:26:57,244
+Bu search blend olacak. O yüzden hata verdi. Tamam. Bizim cümlemiz neydi? Ali Atabak, dön git bir daha bak. O zaman Ali'yi arayalım önce.
+
+370
+01:27:03,828 --> 01:27:15,587
+Şurada bir sıkıntı olmuş. Tekrar bakalım. Metin boyutu çok abuk olmuş. Bir ona bakalım.
+
+371
+01:27:20,083 --> 01:27:29,183
+Çünkü kelimeyi vermişiz. Lenti vereceğiz. Şuraya da lenti vereceğiz. O yüzden saçma olmuş.
+
+372
+01:27:38,804 --> 01:27:41,224
+Şu 97 neden çıkıyor? Bir de ona bakalım.
+
+373
+01:27:49,300 --> 01:27:51,300
+En son da Elseblood'un içinde hocam.
+
+374
+01:27:52,399 --> 01:27:54,420
+Çünkü buraya değerini vermemişiz.
+
+375
+01:27:55,619 --> 01:27:56,460
+Kontrol.
+
+376
+01:27:58,780 --> 01:28:04,420
+Tamamız değil mi şimdi? Şu küçükleri de kaldırabiliriz aslında. Kontrolleri yaptık artık.
+
+377
+01:28:04,739 --> 01:28:06,479
+Şunları yorum satırı yapalım.
+
+378
+01:28:11,139 --> 01:28:14,260
+Boyutları da şey yapıyorum, yorum satırı yapıyorum.
+
+379
+01:28:15,444 --> 01:28:17,283
+İstediğimiz çıktıları alalım.
+
+380
+01:28:22,387 --> 01:28:27,807
+Ali arıyoruz. 0 ile 3 arasında bulundu diyor. Bir tane bulduk diyor.
+
+381
+01:28:30,968 --> 01:28:32,448
+Burada ne var?
+
+382
+01:28:34,667 --> 01:28:37,268
+Şu 0 ile 3 arasında buldu diyor.
+
+383
+01:28:40,007 --> 01:28:45,208
+Şurada indeks hesapladığımız için eksi 1 dersek 0 ile 2 arasında indeksini veriyor.
+
+384
+01:28:45,208 --> 01:28:49,048
+Eğer buna eksi 1 demeyeceksek şu.
+
+385
+01:28:49,716 --> 01:28:58,036
+İyi artı bir dersek bu sefer A'ya bir demiş oluyoruz. İyi'ye de Ali ona da üç demiş oluyoruz. Böyle dengeleyebiliriz. Tamam mı?
+
+386
+01:28:59,836 --> 01:29:04,976
+Şurada bir silaşen daha atalım. Hepsini tek satırda görelim.
+
+387
+01:29:07,976 --> 01:29:08,656
+Tamam.
+
+388
+01:29:10,771 --> 01:29:27,291
+Büyük harfle aratalım. Yine buldu. 1 ile 3 arasında 1 adet buldu. Şimdi hangisinden 2 tane vardı? Baktan. Bunu aratalım. Baktan da 2 tane buldu. 9, 11 ve 31, 33 arasındaymış. Zaten uzunluğu 33. Şunu doğru bulduysa diğeri de doğrudur.
+
+389
+01:29:28,652 --> 01:29:32,692
+İzimlemiş olduk. Sorunuz var mı bu soruyla alakalı?
+
+390
+01:29:33,747 --> 01:29:38,967
+Hocam bir yerde koptum da, to lower fonksiyonu hangi şeyin altındaydı?
+
+391
+01:29:38,967 --> 01:29:43,227
+Hangi kütüphane öyle gelmişti hocam?
+
+392
+01:29:43,467 --> 01:29:47,527
+Söylüyorum hemen C type olmasa. Hatta şuraya da yapalım.
+
+393
+01:29:49,087 --> 01:29:56,167
+To lower fonksiyonu için. Bu da Türkçe karakter için.
+
+394
+01:29:59,007 --> 01:30:00,587
+Diğerleri zaten fix.
+
+395
+01:30:05,555 --> 01:30:18,815
+Şimdi bunları ben kaydediyorum zaten de. Şuna bir işimiz yok. Şimdi ben bunları size chatten atayım. Ne diyor? 51. satır.
+
+396
+01:30:21,315 --> 01:30:31,815
+Tamam. Yorumları geç bakınca errorların sonuçlarını orada görüyoruz. Şimdi chat'e ben atıyorum şu şeylere.
+
+397
+01:30:33,171 --> 01:30:35,171
+Şu anda kullandığımız...
+
+398
+01:30:40,051 --> 01:30:50,891
+Dosyaları. Siz de bunları evde şöyle yapsam şurası nasıl olurdu diye deneyebilirsiniz. Sorunuz var mı?
+
+399
+01:31:00,692 --> 01:31:03,752
+Bütün dosyalar ulaştı mı? Ulaştı gibi görünüyor.
+
+400
+01:31:05,371 --> 01:31:09,311
+Soru da yoksa arkadaşlar dersi bitirebiliriz. Uygulamamızı bitirebiliriz.
+
+401
+01:31:12,092 --> 01:31:14,931
+Şeyi de atayım hatta size. Dökümanı.
+
+402
+01:31:30,644 --> 01:31:35,543
+Rica ederim. Soru yoksa artık yayını kapatıyorum. Tamam arkadaşlar.
+
+403
+01:31:41,108 --> 01:31:48,847
+Bütün dosyaları bir kişi aldıysa ben aldım yazsın. Ona göre kapatınca şimdi dosyalara erişimimiz gitmesin.
+
+404
+01:31:52,819 --> 01:32:04,500
+Tamam, alan biriniz varsa arkadaşlarınızla paylaşırsınız. Zaten ben duyuru olarak da ekleyebilirim. Bir Ahmet Hoca'yla görüşeyim. Tamamdır, hepinize iyi günler.

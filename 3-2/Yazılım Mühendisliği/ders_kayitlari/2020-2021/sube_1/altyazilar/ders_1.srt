@@ -1,0 +1,1571 @@
+1
+00:02:23,474 --> 00:02:32,836
+Evet, ben şimdi konuşmaya başlıyorum. Biraz daha katılım olması için bekliyordum. Şu anda sesimi duyuyor musunuz?
+
+2
+00:02:38,610 --> 00:02:44,412
+Şimdi katılımcı sayısını kontrol ediyorum.
+
+3
+00:02:51,187 --> 00:03:02,526
+Evet, şimdi ekran paylaşacağım tekrar. Tüm anlattıklarımı tekrar üzerinden geçeceğim. Herkes duyuyor mu şu anda beni?
+
+4
+00:03:05,526 --> 00:03:07,526
+Şu an sağlıklı geliyor ses hocam.
+
+5
+00:03:07,526 --> 00:03:12,567
+Tamam, teşekkür ederim. Şimdi ekran paylaşıyorum.
+
+6
+00:03:19,282 --> 00:03:31,402
+Evet, en son kullandığımız kaynakları geçmiştik, Pressman'ın ve Summerwood'ın kitabını ve daha sonra yazılım mühendisliği tanımını yapmıştım.
+
+7
+00:03:31,402 --> 00:03:43,203
+Yazılım mühendisliği için kaliteli yazılımı en ekonomik olarak hazırlamak üzere mühendislik araçlarını ve yeteneklerini kullanan bilim dalı tanımını vermiştim.
+
+8
+00:03:47,282 --> 00:04:10,304
+Temel alt başlıkları da bu özet tanıma uyarak yazılım geliştirme süreçleri, yazılım kalite ve test kavramları, yazılım proje yönetimi ve mühendislik araç ve yeteneklerini daha fazla ortaya çıkarmak olacaktı.
+
+9
+00:04:15,378 --> 00:04:21,379
+Tasarım kavramını biraz daha genişleterek hem de ölçüm...
+
+10
+00:04:27,826 --> 00:04:31,706
+Güvenirliği açısından ve başka açılardan
+
+11
+00:04:40,884 --> 00:04:52,264
+gerçekleştirdiğimiz üzerinde durmamız gerekiyor. Yani bu alt başlıkları bu derste daha ayrıntılı olarak öğreneceğiz.
+
+12
+00:04:56,591 --> 00:05:04,610
+Üzerinde çalıştığımız, geliştireceğimiz yazılım konusunda bir tanım birliğine varmamız gerekiyor.
+
+13
+00:05:04,610 --> 00:05:07,610
+Burada da yazılım...
+
+14
+00:05:10,004 --> 00:05:18,903
+Tamam, bir bilgisayar programı, bir donanım üzerinde çalışan bir bilgisayar programı ama sadece program değil.
+
+15
+00:05:18,903 --> 00:05:34,884
+Yazılım dediğimizde yazılımla ilişkili her tür döküman, belge, bu kullanıcı belgesi olabilir, yazılımın bakımını yapacak diğer kullanıcılara bilgi veren belgeler de olabilir.
+
+16
+00:05:38,004 --> 00:05:44,644
+İlişkili veri hakkında da bilgi içeren bir ürün.
+
+17
+00:05:47,168 --> 00:06:06,127
+Yaşam döngüsü dediğimizde, software life cycle dediğimizde yazılım gereğinin doğmasından itibaren yapılan işlemler ve yazılımın kullanım dışı kalmasına kadar geçen süreçtir.
+
+18
+00:06:11,699 --> 00:06:33,120
+Geliştirme süreci, yazılımın kullanım aşaması, tam anlamıyla kullanımı, belgeleriyle güncel olarak kullanımı, daha sonra bakımı olmadan kullanımı gibi ve son buluşu gibi.
+
+19
+00:06:34,399 --> 00:06:39,459
+Yazılım türlerine baktığımızda, ki bunları siz diğer derslerinizden biliyorsunuz.
+
+20
+00:06:39,699 --> 00:06:53,899
+Sistem yazılımı, mühendislik yazılımı, gömülü yazılım gibi farklı tipleri var. Bunların aslında işletim sistemi derslerine almış birisi olarak sistem yazılımlarını biliyorsunuz.
+
+21
+00:07:03,507 --> 00:07:17,026
+Yazılımlar, işletmecilik yazılımları dediğimizde yönetim bilgi sistemleri dersinde daha ayrıntılı olarak göreceğimiz yazılımlar, ERP gibi, CRM gibi.
+
+22
+00:07:18,187 --> 00:07:27,286
+Gömülü embedded yazılımlar, donanımla sıkı ilişkisi olan ve araçların içinde çalışmasını sağlayan yazılımlar gibi.
+
+23
+00:07:27,860 --> 00:07:31,379
+Birkaç örnek verdik sadece.
+
+24
+00:07:46,932 --> 00:08:07,012
+Çevrenizde gördüğünüz bütün uygulamalarda kullanılan yazılımlar, kurumsal yazılımlarda işletmecilik yazılımları gibi, ERP gibi veya eski veritabanı kullanılarak yapılan yazılımlar gibi yazılımlardan söz etmemiz mümkün.
+
+25
+00:08:07,012 --> 00:08:12,192
+Bir de bir kavram olarak geçer.
+
+26
+00:08:37,331 --> 00:08:38,471
+Tabii ki.
+
+27
+00:09:13,427 --> 00:09:14,220
+Bu da.
+
+28
+00:09:55,892 --> 00:09:59,772
+Şu anda ses yok dediğiniz için konuşmadım bir süredir.
+
+29
+00:10:07,892 --> 00:10:17,532
+Şu slide'ları kullandığımızda ses gelmedi mi? Uygulama yazılımı, kurumsal yazılım tanımlarında.
+
+30
+00:11:13,331 --> 00:11:22,912
+6. slide'dan sonra konuşmadım, arkadaşlarınız duyamadık dediği için. Şu anda sesimi duyuyor musunuz?
+
+31
+00:11:28,884 --> 00:11:30,364
+Evet, devam ediyorum o zaman.
+
+32
+00:11:36,466 --> 00:11:48,687
+Bu slide sırasında uygulama yazılımlarının genellikle işletmecilik yazılımlarında ya da mühendislik yazılımlarında kullanıldığını görüyoruz.
+
+33
+00:11:51,058 --> 00:12:12,058
+İş gereksinimleri için ve sürekli olarak bakım halinde tutulduğunda kullanılan ama zamanla legacy software haline dönüştüğünde de zor da olsa kullanımı gerçekleştirilen yazılımlar, yenilik yapılması zor olduğu için.
+
+34
+00:12:12,464 --> 00:12:19,323
+Bu noktada legacy software kavramı ortaya çıkıyor.
+
+35
+00:12:19,964 --> 00:12:26,464
+Legacy software kavramında iş sürecinin önemli bir...
+
+36
+00:12:30,292 --> 00:12:43,591
+Bu yazılımda bazı olumsuzluklar var. Eski kullanılan yazılım olduğu için kodda düzeltmeler yapılarak karmaşıklaştırılmış.
+
+37
+00:12:44,082 --> 00:13:00,962
+Esnek olmayan bir yapı, donanımla daha sıkı ilişkili ve yazılım mühendisliğindeki gelişmeleri takip edemeyen yazılım. En önemli kötü tarafı da eksik ve hatalı dokümentasyonun olması.
+
+38
+00:13:03,200 --> 00:13:15,200
+İş alanında yeni gereksinimler olduğunda, güncel sistemlerle çalıştırılması gerektiğinde, bunlar da güncelleme yapmak gereklidir.
+
+39
+00:13:15,200 --> 00:13:22,019
+Ama bu güncellemeyi yapmak da zor olabilir bazen şirketlerde.
+
+40
+00:13:31,200 --> 00:13:46,759
+Alt yapısını daha az kişi bildiği için bu tür yani legacy software kavramı, eski yazılım kavramı kurumun önemli işlemlerini yürüten ama hantal kalmış yazılımlar olarak.
+
+41
+00:13:50,322 --> 00:13:56,322
+Yazılımı bazı alt yapı...
+
+42
+00:14:05,812 --> 00:14:08,932
+Bilgi işlem
+
+43
+00:14:16,500 --> 00:14:19,960
+Bilgi işlem uygulamalarında
+
+44
+00:14:25,875 --> 00:14:47,934
+Yazılımı etkileyen eğilimler dediğimizde yaygınlaşan bilgi işlem uygulamaları, özellikle hesaplama gücünün artması, bu daha fazla yazılımın kullanılmasına ve yaygınlaştırılmasına neden oldu.
+
+45
+00:14:53,875 --> 00:15:05,706
+kitlelere yansıması söz konusu oldu. Özgür yazılım ya da açık kaynaklı yazılım bu...
+
+46
+00:15:06,580 --> 00:15:24,940
+Yine yaygınlaşmasına neden olmuştur. Küreselleşme, ekonomik krizler ve ekip çalışması gibi yazılım geliştirmeyi de etkileyen, yazılımın kullanımını da etkileyen faktörlerden söz edebiliriz.
+
+47
+00:15:28,562 --> 00:15:48,562
+Yazılım geliştirme sırasında bir müşteri tarafı var. Bir yazılım geliştirme birimindeki yöneticiler var.
+
+48
+00:15:53,940 --> 00:16:07,639
+Kullanıcılar var. Bunların farklı açılardan bakıldığında bunlara ait bazı yanılgılardan söz edebiliriz.
+
+49
+00:16:09,559 --> 00:16:17,200
+Müşteri açısından, müşteri tarafı dediğimizde müşteriden ne kastediyoruz?
+
+50
+00:16:18,772 --> 00:16:36,850
+Yazılım Mühendisliğindeki bilgilerimize dayanarak, müşteri dediğimizde biz bu yazılımı kullanacak kişiler,
+
+51
+00:16:39,124 --> 00:16:50,091
+Örneğin bir yazılım evinde geliştirilen genel amaçlı yazılımı alıp kullanan kişiler ya da bir işletmede...
+
+52
+00:16:50,196 --> 00:17:16,855
+Yazılım geliştirme biriminden hizmet alan diğer departmanlar, bunlar her iki tipte de müşteri olarak tanımlanıyorlar. Müşteri bazen doğrudan kullanıcı olabilir, işkisi eş anlamda olabilir ya da müşteriye genel olarak bütün departmanı, departmanın yönetim birimini söyleyebiliriz.
+
+53
+00:17:18,194 --> 00:17:36,634
+Doğrudan o yazılımı kullanan kişiler olarak karşımıza çıkar. Mesela bir yazılım firması bir bankaya yazılım geliştiriyorsa bu banka yönetimi, banka
+
+54
+00:17:36,818 --> 00:17:55,298
+Müşteri olarak tanımlanacaktır. Kullanıcılar ise, buna end user, uç kullanıcı da diyebiliriz. Kullanıcılarsa o programı özel olarak kullanacak olan banka memurları olacaktır ya da o bankanın müşterileri olacaktır.
+
+55
+00:17:56,530 --> 00:18:17,510
+Müşteri açısından programın yazılmasına başlanması için amaçları genel olarak belirlemek yeter. Ayrıntılar sonra kararlaştırılabilir. İşte bu bir yanılgı. Yani ilk başta bütün kullanım ayrıntılarının verilmesi gerekiyor.
+
+56
+00:18:22,270 --> 00:18:48,672
+Daha sonra iyi bir temele oturmamış olacak yazılım. Yani yazılım esnektir. Benim gereksinimlerim değiştikçe kolayca yazılım da bu değişimlere uyar diye bakabilirler. Oysa yazılım geliştiriciler olarak sizler de bunu çok iyi biliyorsunuz ki.
+
+57
+00:18:49,086 --> 00:18:57,567
+Sonradan gereksinimleri eklemek yazılımdaki iş gücünü arttıracaktır.
+
+58
+00:19:05,490 --> 00:19:07,830
+Evet, seste bir problem var mı şu anda?
+
+59
+00:19:16,434 --> 00:19:24,434
+Sonuç olarak yazılım ne kadar...
+
+60
+00:19:25,010 --> 00:19:42,790
+Esnek olsa da değişiklikler yapılabilse de bu değişikliklerin gerçekleştirilmesi ilk baştaki gereksinimler değişiyorsa baştan itibaren gözden geçirilecek ya da yeniden yapılacak bir süreç.
+
+61
+00:19:53,010 --> 00:20:14,270
+İşin zorluğu hafifletilmeyecektir. Değişmeyecektir yani bu. Programcı açısından da bazı yanılgılar var. Programcı açısından da yazılımı teslim edip müşteriye bitirdiğimizde işimiz de biter.
+
+62
+00:20:19,412 --> 00:20:32,290
+Geliştirmek için harcadığımız çabanın yarısından fazlası müşteriye teslimden sonra alıştırma ve daha sonra bakım sürecinde harcanmaktadır.
+
+63
+00:20:32,290 --> 00:20:36,412
+Yazılımı tamamlamadan kalitesini ölçemem.
+
+64
+00:20:36,788 --> 00:21:04,788
+Kalite güvencesi için gözden geçirme her aşamasında vardır. Her aşamasında kalite ile ilişkili, işte gerek program kod karmaşıklığı, gerekse güvenirlik ölçüsü gibi yani bitirmeden de yazılım üzerinde gerçekleştireceğimiz metrikler, ölçütler var ve bunları dikkate alarak ölçme.
+
+65
+00:21:04,788 --> 00:21:12,488
+işlemi yapabiliriz. Tabii ki yazılım eşittir, program değil.
+
+66
+00:21:14,708 --> 00:21:33,768
+Gereksinim analizinden başlayarak bütün süreç boyunca hazırladığımız dökümanlar ve test işi hepsi programa ek olarak yazılımı tamamlayan maddeler.
+
+67
+00:21:35,268 --> 00:21:42,468
+Bazı durumlarda bunları bütünleştirme çalışması gerçekleştirmek gerekir.
+
+68
+00:21:42,708 --> 00:21:51,407
+Yani programcı açısından bir de şöyle bir yanılgı var.
+
+69
+00:21:52,448 --> 00:22:04,688
+Yazılım mühendisliğinin gerekleri, yani her aşamada dokümentasyon ve tasarımı, gereksinim analizini iyi yaparak biz boş yere işimizi uzatıyoruz yanılgısı.
+
+70
+00:22:04,688 --> 00:22:07,988
+En önemli yanılgılardan bir tanesi.
+
+71
+00:22:11,988 --> 00:22:25,688
+Bunun ilk başta sağlam kurulmaması sonucunda projelerinin başarısız olduğunu görebiliyoruz.
+
+72
+00:22:35,954 --> 00:22:49,934
+Bakış açısı da, şimdi ilk müşteri açısından dedik, farklı yanılgılar var. Yani bakış açıları yazılımı geliştirirken,
+
+73
+00:22:55,442 --> 00:22:58,502
+Programcı var ve yönetici var.
+
+74
+00:23:04,084 --> 00:23:11,084
+Yöneticinin bakış açısından bakıldığında yönetici, idareci tarafından...
+
+75
+00:23:42,900 --> 00:23:47,180
+Ses de yok, ekran da yok değil mi şu anda? Hiçbir şey yok.
+
+76
+00:23:56,756 --> 00:24:00,576
+Ekranda ne var [öğrenci]? Siyah bir görüntü yok mu? Ben mi yanlış görüyorum?
+
+77
+00:24:02,556 --> 00:24:04,516
+Hocanın kamerası kesildi.
+
+78
+00:24:07,756 --> 00:24:11,836
+Sesi yok, sesi yok, sesi yok. Bende ekranda yok. Siyah bir görüntü var.
+
+79
+00:24:13,036 --> 00:24:16,996
+Ha benim internetten de unstable olmuş lan.
+
+80
+00:24:58,228 --> 00:25:00,906
+Ekranı yeniden paylaştım. Görebiliyor musunuz?
+
+81
+00:25:06,770 --> 00:25:12,250
+Şu anda bir öncekine gittim tekrar.
+
+82
+00:25:20,948 --> 00:25:40,028
+En son, yazılım hakkında farklı paydaşlar var yazılım geliştirme sırasında ve yazılım hakkındaki yanılgılar müşteri açısından, yönetici açısından,
+
+83
+00:25:40,403 --> 00:25:48,503
+Ve programcı açısından farklı bakış açıları var ve bu bakış açılarındaki yanılgılardan bahsediyoruz.
+
+84
+00:25:48,503 --> 00:25:58,683
+En son müşteri açısından olan yanılgılardan bahsettik ilk olarak.
+
+85
+00:26:06,740 --> 00:26:26,019
+Ne için istendiğini belirttiğimde işim biter. Bundan sonrasını yazılımcı halleder gibi düşünebilir. Her adımında müşterinin bilgi vermesi, gerekli ürünleri, yarı ürünleri kontrol etmesi gerekir. Bu çerçevede işim bitmeyecektir.
+
+86
+00:26:34,740 --> 00:26:52,459
+Yanlış olarak düşünebilirler. Bunun için müşteriyi doğru olarak yönlendirmemiz gerekir. Çevik süreçlerle sonradan da müşteriyi ilk başta işin içine katıp sürece dahil edebiliriz.
+
+87
+00:26:52,980 --> 00:27:20,720
+Diğer bir yanılgı programcı açısındandı. Programcı açısından olan yanılgı da yazılımı tamamlayıp müşteriye teslim edince işimiz biter, bitmiyor. Müşteriyi alıştırma ve teslimat sırasını doğru yapma, yani release aşamasını doğru yapmak gerekiyor. Yazılımı tamamlamadan kalitesini ölçemem diyebilir programcı.
+
+88
+00:27:20,980 --> 00:27:43,559
+Her aşamada, review aşaması sırasında hem kontrol hem de ölçme işlemi gerçekleştirebilir. Yazılım eşittir, program değildir. Dokumentasyon ve veri bilgisi hepsi birlikte yazılımı oluşturuyor. Daha önce de belirttiğimiz gibi.
+
+89
+00:27:48,980 --> 00:28:13,579
+Bir bakış açısında işler yetişmiyorsa takıma yeni bir programcı ekleriz. Yazılım hayat döngüsü içinde proje yönetiminin baştan proje planlamayla başlaması gerekiyor ve plana göre yeni eleman eklemek gerekiyor.
+
+90
+00:28:15,442 --> 00:28:21,584
+Yazılım hakkındaki yönetim tarafının yanılgılarından bir tanesi bu.
+
+91
+00:28:23,323 --> 00:28:30,682
+Bir de geliştirmesini üstlendiğim yazılımın tamamını veya kısmını fason olarak yaptırabilirim.
+
+92
+00:28:30,682 --> 00:28:32,022
+Burada
+
+93
+00:28:33,268 --> 00:28:56,807
+Tabii ki alt yükleniciler kullanılabilir ama bunların ilk başta planlanarak ve bunların takibinin, kontrolünün iyi yapılması gerekli. Bir de açık kaynaklı yazılım konusunda da yöneticiler konusunda bazı yanılgılar söz konusu olabilir.
+
+94
+00:29:01,268 --> 00:29:15,428
+paydaşlar, yazılım geliştirme sırasındaki paydaşlar ve bunların bir takım yanılgılarından söz ettik.
+
+95
+00:29:26,482 --> 00:29:44,343
+Programcı, yani yazılımı geliştiren ekip, teknik ekip ve müşteri. Bunları çok genel kullandık bu isimleri. Daha alt başlıklara da ayrılabilir. Her biri farklı bakacaktır yazılım geliştirme işine diye tanımladık.
+
+96
+00:29:44,692 --> 00:29:58,090
+Şimdi, yazılım geliştirme süreci diyoruz. Bu süreci biz sistem analizinden de biliyoruz ama bu adımları tekrar gözden geçirelim.
+
+97
+00:30:00,290 --> 00:30:06,632
+Buraya kadar sorunuz var mı veya bir anlaşılma takip problemi var mı şu anda?
+
+98
+00:30:19,923 --> 00:30:32,923
+Hocam, benim kendi adıma şu ana kadar maalesef sizinle alakalı bir şey değil. Yani bugünkü ders ama...
+
+99
+00:30:33,694 --> 00:30:48,016
+Herhalde okuyarak veya slide'ları kendimiz takip ederekten bir toparlarız diye düşünüyorum ama yani fiziksel sebeplerden ötürü çok aşırı derecede bugünkü ders yani bu sabahki ders ben kendi adıma kendim için memnunum.
+
+100
+00:30:57,298 --> 00:31:01,439
+Şu ana kadar slide'lardan takip ettiğinizle sorunuz var mı?
+
+101
+00:31:16,692 --> 00:31:18,971
+Bana sormuyorsunuz, genel anlamda soruyorsunuz.
+
+102
+00:31:19,412 --> 00:31:21,332
+Genel anlamda herkese soruyorum.
+
+103
+00:31:37,556 --> 00:31:38,220
+Altyazı Mühendisliği
+
+104
+00:31:42,420 --> 00:31:45,019
+Yazılım geliştirme süreci içinde
+
+105
+00:31:49,490 --> 00:32:05,750
+Çözümleme, analiz aşamasında gerçekleştirdiğimiz nedir? Bir şeyi anlayabilmek için parçalara ayırmak, analiz, çözümleme. Gerçeklenecek sistemi anlamaya yönelik çalışmalardan.
+
+106
+00:32:06,194 --> 00:32:18,595
+Ve üst düzey planlama aşamasından. Hatta bunu proje planlamaya da ayrı bir yere koyarak proje planlama, sonra analiz, sonra tasarım diyebiliriz.
+
+107
+00:32:18,595 --> 00:32:34,194
+Ama Presma'nın kitabında da şöyle bir tanım var. Analiz, tasarım, gerçekleme ve test temel adımlar. Bir de bunları destekleyecek...
+
+108
+00:32:34,194 --> 00:32:44,015
+Bu destek aktiviteleri de planlama, proje planlama, proje yönetimi, konfigürasyon yönetimi,
+
+109
+00:32:44,530 --> 00:33:03,030
+Risk analizi, risk yönetimi yazılım için, kalite yönetimi, bunlar da yazılım geliştirme sürecinin temel adımlarını iyileştirecek destek aktiviteleri.
+
+110
+00:33:07,030 --> 00:33:07,502
+Çözümleme...
+
+111
+00:33:07,502 --> 00:33:33,742
+Sistem analizinde de tanımladığımızın üzerine ekleyerek uygulama alanını, kullanıcı gereksinimlerini, program parçaları arasındaki etkileşim ve ilişkileri anlama yolu, yani ne sorusuna, ne yapıyoruz, problem nedir sorusuna cevap aradığımız aşama.
+
+112
+00:33:36,115 --> 00:33:37,654
+Tasarım aşaması
+
+113
+00:33:42,516 --> 00:34:08,655
+Baktığımızda diğer adım, çözümlemeden sonraki. Burada yazılımı hazırlarken model oluşturma, aldığımız gereksinim analizinde aldığımız veriye göre sorunu, çözümünü planlama.
+
+114
+00:34:09,652 --> 00:34:28,291
+ve model oluşturma. Yazılımda tasarıma ait planlar, şemalar hazırlanıyor ve gerçekleme aşamasında da elimizdeki tasarımı programlama diliyle kodluyoruz.
+
+115
+00:34:30,356 --> 00:34:46,695
+Test sırasında da gerçeklemeden sonraki adım, test sırasında yazılım sürecinde ilerledikçe ortaya çıkabilecek hataların giderilme maliyeti artacaktır.
+
+116
+00:34:46,695 --> 00:34:56,695
+Bu yüzden yazılımın arada gözden geçirmelerle test edilmesi ve daha sonra da...
+
+117
+00:34:57,619 --> 00:35:07,619
+Daha sonra da yazılımın bakım aşamasında da...
+
+118
+00:35:08,210 --> 00:35:33,931
+Bu bakım aşamasını faaliyete geçirerek hataların düzeltilmesi, kod hatası, tasarım hatası veya analiz hatası gibi ya da bakım aşamasında sistemin değişen işlevlerine uyum sağlamak, yazılımın daha etkin hale gelmesini sağlamak şeklinde gerçekleştirilebilir.
+
+119
+00:35:35,987 --> 00:35:49,467
+Bakım sırasında, evet işte bu bahsettiğim re-engineering'den de bahsetmek istiyorum bu dönem içinde dediğimde, yeniden mühendislikle re-engineering, refactoring,
+
+120
+00:35:51,219 --> 00:36:10,880
+Teknik bakış açısıyla işlevi değiştirmeden iç yapıyı değiştirmek, ya belgeleme yapmak, tasarımı iyileştirmek, farklı bir ortam üzerine taşımak gibi re-engine'lik aşamalarından da geçebilir.
+
+121
+00:36:17,108 --> 00:36:33,228
+Bugün için planladıklarım bunlardı. Önümüzdeki hafta yazılım geliştirme süreçleri üzerinde duracağız. Yazılım geliştirme süreci dediğimizde adımlarımız bunlar. Çözümleme.
+
+122
+00:36:33,844 --> 00:36:48,844
+Tasarım, gerçekleme ve test ve bakım aşaması. Ama bunlar waterfall'a göre sırayla dizilmiş olabilir ya da başka modellere göre hazırlayabiliriz.
+
+123
+00:37:01,844 --> 00:37:18,422
+Bu hafta gördüklerimizle ilişkili sorunuz var mı? Veya dersin genel işleyişi ile ilişkili sorunuz var mı?
+
+124
+00:37:27,059 --> 00:37:28,539
+Slide by the check misiniz hocam?
+
+125
+00:37:29,639 --> 00:37:30,059
+Evet.
+
+126
+00:37:35,987 --> 00:37:36,827
+Teşekkürler.
+
+127
+00:37:42,195 --> 00:37:46,735
+Evet, Avesiz'den paylaşacağım. Ama birkaç hafta geçtikten sonra.
+
+128
+00:37:48,474 --> 00:37:53,996
+Hocam, sorum yok. Galiba sizin internetin zarar kalbi sıkıntı var. Onu çözürseniz çok iyi olur ya.
+
+129
+00:37:58,132 --> 00:38:00,172
+Evet ona baktıracağım tekrar.
+
+130
+00:38:04,692 --> 00:38:06,510
+Başka sorusu olan var mı?
+
+131
+00:38:08,771 --> 00:38:13,050
+Yok hocam, çok teşekkür ediyoruz. Her şey çok güzeldi. Ağzınıza vermenize sağ olun.
+
+132
+00:38:19,922 --> 00:38:34,782
+Evet, spesifik bir yazılım dilinden sorumlu değilsiniz. Burada önemli olan yazılımın geliştirilmesi proje hazırlarken.
+
+133
+00:38:35,539 --> 00:38:49,539
+Nesneye yönelik olarak geliştirilecek analiz ve tasarımınız bu şekilde olacak. Analizi tasarımı yaptıktan sonra da nesneye yönelik olarak geliştireceksiniz.
+
+134
+00:38:49,539 --> 00:39:03,300
+Ama şey değil, özellikle şu dili konuşacaksınız, şu dili kullanarak yazılımı geliştireceksiniz şeklinde değil.
+
+135
+00:39:13,652 --> 00:39:15,972
+Bu tamamen bir...
+
+136
+00:39:19,315 --> 00:39:42,934
+Programlama dili dersi değil, şimdiye kadar gördüğünüz programlama dili derslerinde aldığınız bilgilere dayanarak grup olarak sizin karar vereceğiniz ve paylaşımı da sizin yapacağınız, yani görev paylaşımı da sizin yapacağınız bir proje olacak.
+
+137
+00:39:50,164 --> 00:39:51,664
+Başka sorunuz var mı?
+
+138
+00:39:51,804 --> 00:39:58,422
+Hocam şu anda da sesiniz kesiliyor, bilginiz olsun. Yani anlık olarak bilirsiniz, neden kaynaklandığını anlayabilirsiniz diye.
+
+139
+00:39:59,143 --> 00:40:01,804
+Evet, evet. Teşekkür ederim.
+
+140
+00:40:09,844 --> 00:40:18,684
+Hocam dersin başını ben birazcık kaçırdım. Birazcık da ses sorunu vardı. Projelerin oluşturulması nasıl olacak? Onları tekrar özetleyebilir misiniz?
+
+141
+00:40:18,684 --> 00:40:33,684
+Proje teklifini biz vereceğiz konuyu. Bu konulardan seçeceksiniz grup olarak. Projeyi diğer gruptaki arkadaşlarınızla ortak olarak yapamıyorsunuz.
+
+142
+00:40:41,364 --> 00:40:45,543
+Yani proje grup değil, kişisel mi olacak? Herkes kendisini yapacak, öyle mi anlattı?
+
+143
+00:40:46,764 --> 00:40:53,184
+Hayır, arkadaşınız soru sormuş, diğer gruptaki arkadaşlarla ortak yapabiliyor musunuz diye.
+
+144
+00:40:54,764 --> 00:41:08,943
+Grubunuz 4 ya da 5 kişiden oluşacak. Bu 5 kişi içinde grup çalışmasını siz yapacaksınız. Siz belirleyeceksiniz gruplarınızı.
+
+145
+00:41:10,708 --> 00:41:12,188
+Anlaşıldı hocam, teşekkürler.
+
+146
+00:41:12,487 --> 00:41:24,068
+Arkadaşlarınız bazı chat adresleri verdiler bir araya gelip konuşabilmeniz için. Önümüzdeki haftada ayrıca vereceğiniz gruplar olursa verebilirsiniz.
+
+147
+00:41:36,052 --> 00:41:39,791
+Evet, başka sorunuz yoksa dersi bitiriyorum.
+
+148
+00:41:52,724 --> 00:41:54,463
+Teşekkür ederiz her şey için hocam.
+
+149
+00:41:56,043 --> 00:41:57,164
+Ben teşekkür ederim.
+
+150
+00:46:33,778 --> 00:47:01,039
+Merhabalar, günaydın. Bu dönem yazılım mühendisliği dersinde 80 kişi var lisans öğrencisi. Şu anda 16 kişi de lisansüstü öğrencilerinden var. Lisansüstü öğrencilerinden şu anda katılan var mı?
+
+151
+00:47:11,123 --> 00:47:25,382
+Evet, merhabalar. Herhalde hazırlık sınıfı dersi olarak alıyorsunuz değil mi? Evet, bilimsel hazırlık.
+
+152
+00:47:29,715 --> 00:47:44,596
+Evet, bu dersi alan arkadaşlar lisansüstü dersi haricinde sistem analizi dersine geçmiş olanlar ön koşul olarak var çünkü.
+
+153
+00:47:53,108 --> 00:48:18,086
+ve yazılım geliştirme süreçlerine daha bütünsel bakıp bilgi sistemi geliştirme süreçleri, bilgi sisteminin yerleştirilmesi, kullanıma alınmasına kadar fizibilite çalışmasından, ön incelemeden, fizibilite çalışmasından.
+
+154
+00:48:18,835 --> 00:48:41,954
+itibaren olan işlemlere bir giriş, bir tanıtım yapmıştık ve bu dersin öncesinde bütün uygulamayı grup halinde gerçek hayata benzer şekilde geliştirme adına bir projede geliştirmiştiniz.
+
+155
+00:48:42,431 --> 00:48:52,364
+Bu derste de bir projeniz olacak, bu projeniz sunumları olacak. Fakat biraz daha...
+
+156
+00:48:52,467 --> 00:49:15,608
+Analiz ve tasarıma ağırlık vererek, proje yönetimini biraz daha geniş çaplı gerçekleştirerek, sistem analizinde test tarafına hiç girmiyorduk. Biraz testle ilgili işlemler de yaparak, biraz daha geliştirerek.
+
+157
+00:49:16,659 --> 00:49:41,840
+Şimdi öncelikle dersle ilişkili planı vereceğim. Öncelikle dersin başında bir sorunuz ya da bir yorumunuz var mı?
+
+158
+00:49:49,427 --> 00:49:59,467
+Evet, o zaman ders planı üzerinden konuşalım bu derste hangi şeyler olacak diye.
+
+159
+00:50:21,556 --> 00:50:42,914
+Bugünden itibaren bakarsak, öncelikle giriş ders planı, genel bilgiler dersle ilişkili, yazılım mühendisliğinin tanımı, biraz da sistem geliştirme sürecine giriş.
+
+160
+00:50:43,378 --> 00:50:58,219
+Ve yazılımla ilişkili genel bilgiler kapsamında da yazılım tipleri, bunu diğer derslerinizden biliyorsunuz ama şöyle bir üzerinden geçmek anlamında.
+
+161
+00:50:58,219 --> 00:51:02,219
+Yazılım geliştirme sürecinde kimler var?
+
+162
+00:51:04,914 --> 00:51:22,175
+Yöneticiler var, yazılımı geliştiren teknik kişiler var, kullanıcılar var. Bunlar bakımından acaba yazılım geliştirme nasıl bir yankı uyandırıyor? Bunları değerlendireceğiz.
+
+163
+00:51:22,559 --> 00:51:49,159
+Önümüzdeki hafta yazılım sistemi, geliştirme süreci adımlarını bugün hepsini tanıdıktan sonra modeller üzerinde duracağız. Modelleri ayrıntılı olarak göreceğiz. Özellikle önümüzdeki hafta klasik modeller üzerinde duracağız. Bir sonraki haftaya da çevik modelleri ayıracağız.
+
+164
+00:51:49,938 --> 00:52:04,998
+Bu arada yazılım geliştirme sürecini tanıtımı sırasında sistem analizinde belki isim olarak bahsettiğim case araçlarında tanımını yapacağım.
+
+165
+00:52:06,480 --> 00:52:11,818
+31 Mart'ta 4. haftamızda gereksinim mühendisliği.
+
+166
+00:52:12,306 --> 00:52:22,106
+Bu derste biz Pressman'ın kitabını kullanacağız. Requirement Engineering diye geçen bölüm üzerinde duracağız.
+
+167
+00:52:22,106 --> 00:52:28,106
+Burada geçen sene sistem analizi dersinde...
+
+168
+00:52:28,947 --> 00:52:48,567
+Analiz aşamasını daha düz bir bakış açısıyla görmüştük. Geleneksel ve nesne yönelik yaklaşımı da görmüştük. Bu dönem projelerinizde nesne yönelik yaklaşımı uygulamanızı isteyeceğim ve gereksinim anlamında
+
+169
+00:52:50,675 --> 00:52:54,514
+Bilgi toplama aşamasından sonra modellemeyi nasıl yapıyoruz?
+
+170
+00:52:55,514 --> 00:53:07,855
+Gereksinimleri belirlemekte biraz daha geniş bakarak, yani sistem analizinde önce bilgi toplarız, sonra modelleriz, sonra da bunu raporlarız demiştik.
+
+171
+00:53:07,974 --> 00:53:18,654
+Burada biraz daha kapsamlı bakarak alt başlıklara böleceğiz bu gereksinim analizi, requirement analiz aşaması.
+
+172
+00:53:18,675 --> 00:53:32,914
+Bu oldukça önemli ve sektörde de artık çok önem veriliyor. Requirement analiz ya da sistem analizi denildiğimiz adıma.
+
+173
+00:53:34,195 --> 00:54:00,275
+Aslında sistem analizi biraz daha geniş kapsamlı kullanıcıyla ara adım gibi tanımlanabilir. Requirement analizde tamamen ayrıntılı olarak yazılım sisteminin bütün gereksinimlerini ortaya koyduğumuz, daha ayrıntılı olarak ortaya koyduğumuz bir başlık.
+
+174
+00:54:00,884 --> 00:54:02,364
+Ayy...
+
+175
+00:54:03,411 --> 00:54:27,770
+Bir çözeceğimiz problemi öncelikle gereksinimleri nelerdir? Çözeceğimiz problem nedir? Bunu ortaya koyuyoruz. Bunun için de problemi alt başlıklara ayırıyoruz. Bu problem üzerinde çalışan kişileri, tarafları inceliyoruz. Her bir taraftan baktığımızda bu problem nasıl görünüyor ona bakıyoruz.
+
+176
+00:54:31,411 --> 00:54:38,570
+Aslında başka bir takım bakış açıları var gereksinim analizini gerçekleştirirken.
+
+177
+00:54:55,827 --> 00:55:06,587
+Her birinin bu problemi nasıl anlattıklarıyla ilgilenme ve bunların kesişim noktalarını yakalayabilme.
+
+178
+00:55:07,047 --> 00:55:10,027
+Buna neden önem veriliyor gereksinim mühendisliğine?
+
+179
+00:55:10,027 --> 00:55:15,947
+Çünkü hazırlayacağınız yazılımda...
+
+180
+00:55:16,179 --> 00:55:42,019
+Hangi problemi çözecekseniz, o problemi yanlış anlamanız durumunda çözümünüz de yanlış olacaktır, tasarımınız da yanlış olacaktır. Bu nedenle öncelikle doğru anlamayı sağlamamız gerekiyor ve doğru alt başlıklara ayırmamız gerekiyor.
+
+181
+00:55:44,338 --> 00:56:02,018
+Nisan'da ilk dersimizde yazılım tasarımı üzerinde duracağız. Yine sistem analizinden tasarım kavramını biliyoruz. Burada tasarım da aslında yazılım mimarisi tarafına.
+
+182
+00:56:02,414 --> 00:56:22,027
+Biraz daha geçeceğiz. Hatta 5 Mayıs'ta yazılım mimarisi demişim. Orada biraz değişiklik yapabiliriz. Çünkü son haftaya yazılım proje yönetimini, yazılım risk yönetimi, yazılım konflikasyon yönetimini yerleştirdim. Biraz zaman kalırsa…
+
+183
+00:56:22,099 --> 00:56:45,219
+Bahsedeceğim başka şeyler de var. Yeniden mühendislik, tersine mühendislik, reverse engineering gibi kavramlar. Bu nedenle yazılım mimarisi haftasına geldiğimizde belki test tekniklerini yukarıya çekip
+
+184
+00:56:47,987 --> 00:56:52,447
+Bu son 26 Mayıs haftasını biraz daha rahatlatabiliriz.
+
+185
+00:56:52,886 --> 00:56:54,407
+Evet, bir soru var galiba.
+
+186
+00:57:12,594 --> 00:57:37,094
+[öğrenci] ders 9.30'da başlamayacak her zaman. 9'u çeyrek geçe başlarız derse. 9'dan itibaren açacağım. Katılanlar yavaş yavaş katılacak ve çeyrek geçe derse anlatmaya başlayacağım. Bugün sadece buçuğu buldu başlayışımız.
+
+187
+00:57:37,907 --> 00:57:42,126
+Yani 9'u çeyrek geçeğe kadar katılmamız gerekecek.
+
+188
+00:57:48,659 --> 00:57:52,639
+Hocam, grubumuz vardı da bahsettiğiniz gibi sansüs öğrenci için paylaştım.
+
+189
+00:57:53,858 --> 00:57:57,920
+Evet, evet. Bu iyi olur.
+
+190
+00:58:07,699 --> 00:58:13,199
+Tabii ki şimdi bu özel dönem nedeniyle.
+
+191
+00:58:23,284 --> 00:58:39,063
+Evet, bu özel dönem nedeniyle her zaman yaptığımız gibi derslerde birbirinizi tanıyorsunuz, grubunuzu oluşturun cevabını bulmak biraz daha.
+
+192
+00:58:46,867 --> 00:58:49,068
+çalışma grubunuzu oluşturup
+
+193
+00:59:00,242 --> 00:59:14,362
+Bende böyle bir şey vardır. Evet, bu hep soruluyor. Hüman'ın sorusu. [öğrenci], [kişisel bilgi].
+
+194
+00:59:18,962 --> 00:59:19,962
+Evet hocam.
+
+195
+00:59:22,123 --> 00:59:31,103
+Şimdi onu söyleyecektim. Lisans öğrencileri için de bir grubunuz varsa paylaşabilirsiniz.
+
+196
+00:59:32,743 --> 00:59:37,163
+Daha rahat grup oluşturmanız için. Şimdi senin soruna geleyim.
+
+197
+00:59:37,163 --> 00:59:40,163
+Diğer grupla...
+
+198
+00:59:45,618 --> 00:59:47,278
+Hocam sesiniz gitti de.
+
+199
+00:59:47,798 --> 00:59:49,078
+Evet, tamam.
+
+200
+00:59:54,900 --> 01:00:18,118
+Biliyor musunuz şimdi? Evet hocam. Tamam. Bu gruptan sadece oluşturmanız gerekecek. İki grup projede karışması zor olacak. O yüzden tümüyle bu gruptan kurmanız gerekecek.
+
+201
+01:00:19,699 --> 01:00:29,639
+Ona göre grup oluştururken arkadaşlarınızla grubu belirleyin.
+
+202
+01:00:45,938 --> 01:01:00,679
+paylaşacağım. Hani hangi belgeleri mutlaka istiyoruz gibi. Yalnız burada sistem analizi dersinden farklı olarak projede şöyle bir şey olacak.
+
+203
+01:01:00,679 --> 01:01:09,858
+Şimdi farklı öneriler verip bu önerileri değerlendiriyorduk.
+
+204
+01:01:10,132 --> 01:01:30,811
+Yazılım Mühendisliği'nde ise biz 3 farklı konu proje adı verip bunların içinden bir tanesini seçerek bize grup üyelerini ve hangi projeyi seçtiğinizi belirtmenizi isteyeceğiz.
+
+205
+01:01:37,746 --> 01:01:46,367
+ve tanıtımlarını biz vereceğiz. Sizin öneri yapmanız gerekmeyecek.
+
+206
+01:01:50,996 --> 01:02:10,194
+Burada şey koymadım, sadece ara sınav koydum 28 Nisan'a ama bir test sınavı şeklinde.
+
+207
+01:02:12,083 --> 01:02:23,043
+Proje sunumları için belirlediğimiz 13. haftaya bir ikinci vize sınavı da yerleştirmeyi düşünüyoruz.
+
+208
+01:02:24,764 --> 01:02:30,264
+Bu vize sınavlarıyla ilişkili, daha sonra ara sınavlarla ilişkili.
+
+209
+01:02:48,530 --> 01:02:50,291
+Hocam sesiniz yine kesildi.
+
+210
+01:05:49,748 --> 01:05:51,608
+Ses geliyor mu can canlar?
+
+211
+01:05:54,228 --> 01:05:55,188
+Geliyor abi.
+
+212
+01:05:57,927 --> 01:05:59,827
+Eyvallah [öğrenci], sağ olasın.
+
+213
+01:07:31,443 --> 01:07:32,804
+Şu anda konuşuyorum.
+
+214
+01:07:38,547 --> 01:07:39,528
+Geliyor mu ses?
+
+215
+01:07:42,528 --> 01:07:45,347
+Abi [öğrenci], çok güzel adamsın sen ya.
+
+216
+01:07:52,466 --> 01:08:13,827
+[kişisel bilgi] Tost makinesine gidince kulaklık gitti. Ama ondan önce masanın oradayken güzeldi. Demek ki neymiş? Benim çalışma alanım masaya kadar abi. Tost makinesine gitmemiş.
+
+217
+01:09:46,739 --> 01:09:52,920
+Hoca hala gelmedi değil mi arkadaşlar? Yani çıt yok. Ortalıkta öyle bekleniyor sadece değil mi?
+
+218
+01:10:17,268 --> 01:10:30,307
+Evet, fark ettim. [öğrenci], host olarak sen gözüküyorsun. Hadi bakalım. Bundan sonraki kısım sana ait. Özellikle projelerden sonraki kısmı sen bir anlatıver bize. Madem hostsun abi.
+
+219
+01:16:27,220 --> 01:16:36,840
+Oğlum ben anlatayım diyeceğim ama ben de bilmiyorum konuyu. Bilsem yemin ederim anlatırım ama bilmiyorum yani.
+
+220
+01:16:42,323 --> 01:17:08,323
+Öyle bir mail gelmemiş bana hoca. Yeni bir Zoom toplantısı oluşturup orada bizi bekliyor olabilir mi? Olabilir abi. Bizim hissetmemizi bekliyor olabilir yani. Ben düşünüyorum öyle bir şey. Öğrenciysek hissedip gelsinler diye düşünüyor olabilir. Hatta Zoom odasının ID'sini falan da söylemeye gerek yok. İşte hissetmeniz lazım falan diye olabilir.
+
+221
+01:17:11,412 --> 01:17:31,711
+Öyle bir mail gelmemiş bana. Bana geldi diyormuş. Dur bakayım. Olabilir [öğrenci], belki seni sevmiyor oyuncağı, istemiyor gelmeni. Direkt bana demiş olabilir. Hayatta birkaç arkadaşı, arkadaşlar siz gelin ama [öğrenci]'nın haberi olmasın diye. Olabilir abi, her şey mümkün.
+
+222
+01:17:51,604 --> 01:17:54,743
+Ben de tam ağlıyordum. Artık üzülmüyorum.
+
+223
+01:18:05,940 --> 01:18:12,819
+Ben biraz kahvaltı ediyorum. Hoca gelirse [öğrenci] abi diye bağırın. Haberiniz olsun. Öpüyorum sizi. Hadi dikkat edin.
+
+224
+01:21:26,228 --> 01:21:45,347
+Evet, herkes bilgisayarın başında mı bir problem olduğu için ara vermek zorunda kaldık. Ders yönetim sisteminde bağlantım kesildi az önce. Şu anda herkes beni duyabiliyor mu?
+
+225
+01:21:46,847 --> 01:21:47,567
+Duyuyoruz hocam.
+
+226
+01:21:48,083 --> 01:21:55,163
+Tamam, teşekkür ederim. O zaman kaldığımız yerden devam edelim. Tekrar ekran paylaşıyorum.
+
+227
+01:22:05,235 --> 01:22:20,795
+Az önce de söylediğim gibi tekrar toparlayayım. Bugün için yazılım mühendisliğinin tanımı ve yazılımla ilişkili temel kavramlar aslında bildiğiniz ama birliktelik sağlamak için tekrar edeceğimiz kavramlar.
+
+228
+01:22:20,795 --> 01:22:24,795
+Önümüzdeki hafta sistem geliştirme süreç modelleri.
+
+229
+01:22:24,911 --> 01:22:40,871
+Ve daha sonraki hafta çevik ecel modeller üzerinde duracağız. Gereksinim mühendisliği ve tasarım üzerinde sistem analizinden bildiğimiz kavramları biraz daha profesyonel hale getireceğiz.
+
+230
+01:22:48,020 --> 01:22:57,078
+Analiz ve tasarımı nesneye yönelik olarak biraz daha genişleterek bahsedeceğiz.
+
+231
+01:22:57,899 --> 01:23:07,940
+Yazılım kalite özellikleri ve ölçütleri, yazılım mimarisini yazılım tasarımı haftasına alarak biraz daha özetleyebilirim.
+
+232
+01:23:08,020 --> 01:23:10,739
+Çünkü son hafta çok fazla oldu demiştim.
+
+233
+01:23:11,219 --> 01:23:17,360
+19 Mayıs'ta tatile geldiği için biraz daha haftalarımız kısalıyor.
+
+234
+01:23:22,612 --> 01:23:25,331
+Ses geliyor mu şu anda?
+
+235
+01:23:26,351 --> 01:23:27,192
+Bana geliyor hocam.
+
+236
+01:23:27,192 --> 01:23:45,192
+Tamam, teşekkürler. Artık Evhamoğlu'nun böyle bir bağlantı sorunu yaşayınca test teknikleri üzerinde biraz daha geniş duracağız ve özellikle de proje yönetimi, risk yönetimi, konfigürasyon yönetimi ve...
+
+237
+01:23:45,652 --> 01:24:07,110
+Gerekli gördüğüm re-engineering ve reverse engineering kavramlarını da eklemeye çalışacağım. Bir de 2. sınav içinde şurada 2 Haziran'a 2. sınavı da yerleştireceğiz.
+
+238
+01:24:11,315 --> 01:24:33,636
+Birinci sınava göre, ikinci sınavda biraz daha kısa kısa, yani test de olsa daha az soru soracağız, test yaparsak da birincisini. O yüzden yüzde on beş ve yüzde yirmi gibi olacak ara sınav notlarımız. Onları daha sonra tam olarak yazarım.
+
+239
+01:24:35,572 --> 01:24:44,131
+Birinci arasına, yüzde on beş ikinci arasına ve bir de projede notunuz oldu.
+
+240
+01:24:47,092 --> 01:24:51,810
+Yüzde kırk zorunlu olarak bu şekilde tanımlandı.
+
+241
+01:25:13,586 --> 01:25:14,586
+Esas istedim.
+
+242
+01:25:20,692 --> 01:25:46,192
+Esas istediğimiz dört kişilik ama beş kişiye de çıkabiliriz belki. Proje tadımını iki hafta sonra falan vereceğiz. Şu anda şeyimiz bu şekilde. Projelerinizin sunumları olacak. Seste bir problem var mı hala?
+
+243
+01:25:47,451 --> 01:25:48,192
+Güzeldi hocam.
+
+244
+01:25:48,563 --> 01:25:56,983
+Tamam, teşekkür ederim. Şimdi bir başlangıç yapalım.
+
+245
+01:26:03,092 --> 01:26:12,172
+Ders planıyla ilişkili sorunuz var mı? Yani bu derste şu konuda var mı, dahil mi diye bir sorunuz var mı?
+
+246
+01:26:15,172 --> 01:26:23,172
+Kitaplar için Presman'ın kitabını söyleyeceğim. Onu da zaten bir sonraki sunumumda göreceksiniz.
+
+247
+01:26:26,643 --> 01:26:45,283
+Yani şu anda bu ders planıyla genel olarak burada bazı haftalardaki şey genel olarak kapsamını görmüş olduk dersin. Bir projemiz olduğunu görmüş olduk.
+
+248
+01:26:47,764 --> 01:27:01,783
+sunumları var. İki test sınavımız olacak ve sunumlarından not alacaksınız.
+
+249
+01:27:06,228 --> 01:27:22,628
+Hayır, çünkü gördüğünüz gibi zaten nesneye yönelimli çözümleme ve tasarımla ilişkili kavramlar üzerinde de bu derste duruyoruz.
+
+250
+01:27:22,628 --> 01:27:28,628
+Bunlarla ilişkili sınavda...
+
+251
+01:27:29,523 --> 01:27:50,523
+Bu derste gördüklerinizi kullanmış olacaksınız. Ayrıca sistem analizi dersinde de bir giriş yapmış olduk. O yüzden yani nesne yönelik programlamada da zaten bu kavramlarda da bu dönem içinde de ilerlemiş olacaksınız.
+
+252
+01:27:54,324 --> 01:28:01,523
+Evet, bu haftalarla ilişkili sorunuz yoksa bunu değiştireceğim.
+
+253
+01:28:30,324 --> 01:28:30,863
+Ses.
+
+254
+01:28:31,804 --> 01:28:32,703
+Konuşmadınız.
+
+255
+01:28:32,703 --> 01:28:33,783
+Hocam, sesim geliyor mu?
+
+256
+01:28:35,003 --> 01:28:35,264
+Evet.
+
+257
+01:28:37,904 --> 01:28:41,483
+Şu anda bir problem var mı ses konusu?
+
+258
+01:28:41,483 --> 01:28:42,043
+Ben duruyorum.
+
+259
+01:28:42,663 --> 01:28:43,143
+Maalesef.
+
+260
+01:28:43,943 --> 01:28:44,283
+Evet.
+
+261
+01:28:44,764 --> 01:28:49,443
+Şimdi öncelikle kitaplardan bahsedelim.
+
+262
+01:28:53,384 --> 01:28:55,824
+Hangi kitapları kullanacağız?
+
+263
+01:28:58,643 --> 01:29:01,483
+Buraya isimlerini getirdim.
+
+264
+01:29:03,702 --> 01:29:05,702
+Görebiliyorsunuz değil mi slide'ı?
+
+265
+01:29:09,460 --> 01:29:10,460
+Görebiliyoruz hocam.
+
+266
+01:29:10,460 --> 01:29:24,059
+Tamam. Software Engineering kitapları temel olarak iki tane, yani çok sayıda Software Engineering ders kitabı var.
+
+267
+01:29:24,679 --> 01:29:36,239
+Ama temel olarak dünyadaki tüm üniversitelerin birçoğunda Ayn Summerville'in ve Pressman'ın kitapları okutulmuş.
+
+268
+01:29:37,907 --> 01:29:43,367
+Biz ağırlıklı olarak Presma'nın kitabından gideceğiz bu derste.
+
+269
+01:30:03,411 --> 01:30:26,530
+Ek kitap olarak kullanmanızı isteyeceğim. Teorik olarak kullandığımız kavramları anlatacağımız konularda Ayn Summerville'in ve Presban'ın kitapları ama en üstte yazdığımız Presban'ın kitabını bütün kavramlarımızda daha ağırlıklı olarak takip ediyoruz.
+
+270
+01:30:32,340 --> 01:30:38,799
+Şimdi yazılım mühendisliği kavramına bakalım.
+
+271
+01:30:38,799 --> 01:30:56,559
+Yazılım mühendisliğinin çok farklı anlatılmış, işte Pressman'ın Summer Blink'inde ve diğer kitaplarda çok ayrıntılı,
+
+272
+01:30:59,572 --> 01:31:10,271
+Analiz, tasarım, test konuları kapsıyor, hangi bilim dallarıyla ilişkili olduğunu belirten çok değişik tanımları vardır.
+
+273
+01:31:12,755 --> 01:31:29,454
+Yazılım Mühendisliğinin altındaki bütün konuları kısaca üstü kapalı olarak belirten bir tanımı size yazdım.
+
+274
+01:31:29,454 --> 01:31:34,534
+Kaliteli yazılımı en ekonomik olarak hazırlamak üzere.
+
+275
+01:31:35,027 --> 01:31:42,527
+Mühendislik araçlarını ve yeteneklerini kullanan bilim dalıdır yazılım mühendisliği.
+
+276
+01:31:44,186 --> 01:31:50,726
+Şimdi burada bu kelimeleri açalım. Önce kaliteli yazılım diyoruz.
+
+277
+01:31:50,726 --> 01:31:58,387
+Kaliteli yazılımda, şunun bir altını çizelim.
+
+278
+01:32:02,708 --> 01:32:06,847
+En ekonomik olarak, bunun da altını çizelim.
+
+279
+01:32:11,122 --> 01:32:27,483
+Hazırlamak üzere mühendislik araçlarını ve yeteneklerini kullanan bilim dalı. Burada bir de mühendislik kelimesinin altını çiziyorum.
+
+280
+01:32:27,967 --> 01:32:45,766
+Kaliteli yazılım dediğimiz zaman, yani ne olursa olsun yazılım üretmek, kullanılır hale getirmek değil, kullandığımız sürece hatayı en aza indiren yazılımı hazırlamak.
+
+281
+01:32:47,807 --> 01:33:01,087
+Ve istenileni gerçekleştiren, kullanıcının istediğini gerçekleştiren ve kaliteli, kalite özelliklerini sağlayan yazılım.
+
+282
+01:33:12,148 --> 01:33:17,007
+ve yazılım kalite ölçütleri diye bir konu vardı.
+
+283
+01:33:17,007 --> 01:33:22,007
+Kalite ölçütlerinde farklı...
+
+284
+01:33:22,606 --> 01:33:33,667
+Tanımlamalara göre, farklı yerlerin, kişilerin tanımlamalarına göre kalite kavramı, kalite özelliklerinden bu derste bahsedeceğiz.
+
+285
+01:33:33,806 --> 01:33:42,686
+Hem IEEE'nin belirttiği, hem McColl'un belirttiği daha sonra.
+
+286
+01:33:44,686 --> 01:33:47,027
+Kaliteli yazılım dediğimizde ne anlıyoruz?
+
+287
+01:33:49,615 --> 01:33:56,255
+İşin içine testi de daha iyi yapmamız gerektiği bunun altında anlaşılıyor.
+
+288
+01:33:56,255 --> 01:34:03,576
+Test ettiğimiz, yeterince test yaptığımız bir yazılımda hataları da arındırmış oluruz.
+
+289
+01:34:03,655 --> 01:34:06,355
+Büyük ölçüde tamamen yok etmek mümkün değil.
+
+290
+01:34:15,764 --> 01:34:24,764
+Dediğimizde bu dersin bir şeyin...
+
+291
+01:34:31,059 --> 01:34:53,878
+Bu dersin alt başlıklarına baktığımızda bir, yazılım mühendisliği ve yazılımla ilişkili kavramlar, yazılım geliştirme süreçleri, yazılımı nasıl geliştirmemiz gerekiyor, bütün alt başlıkları gördüğünüz ders içeriğinde.
+
+292
+01:34:58,835 --> 01:35:22,654
+Üçüncüsü, yazılım kalitesi ve test teknikleri. Üçüncüsü, en ekonomik olarak demişiz. En ekonomik olarak dediğimizde yine yazılımı, kaliteli yazılımı hazırlayalım ama nasıl olursa olsun, kaça çıkarsa çıksın.
+
+293
+01:35:23,039 --> 01:35:48,639
+Hangi yolla hazırlarsak hazırlayalım. Değil, en ekonomik olarak. Ekonomiğin anlamı en ucuza olan da değildir. Gelir, pardon harcamalar ve fayda anlamında en uygun olanıdır ekonomiğin karşılığı.
+
+294
+01:35:49,139 --> 01:36:15,139
+Bunu da biz sistem analizinde görmüştük. Sistem analizi dersinden hatırladığımız hangi işlemde bu en ekonomik halini gerçekleştiriyorduk? Bunu hatırlayan var mı?
+
+295
+01:36:16,115 --> 01:36:25,174
+Şimdi [öğrenci], duyabiliyor musun?
+
+296
+01:36:31,059 --> 01:36:32,039
+[öğrenci] şey de
+
+297
+01:36:35,506 --> 01:36:36,407
+Buyurun hocam.
+
+298
+01:36:37,166 --> 01:36:46,327
+Tamamdır. Sistem analizinden hatırlıyor musun bu ekonomik olup olmadığına baktığımız çalışma neydi?
+
+299
+01:36:48,208 --> 01:36:49,186
+Fizibilite.
+
+300
+01:36:49,186 --> 01:37:00,127
+Evet, ekonomik fizibilite. Fizibilite analizi yapıyorduk. Farklı şekilde teknik olurluluğu, teknik olarak bu problem çözülebilir mi?
+
+301
+01:37:00,788 --> 01:37:21,307
+Aynı şekilde ekonomik olarak bu problem çözülebilir mi şeklinde. Burada ekonomik olarak hazırlanıp hazırlanmaması bizim iyi bir planlama yapabilmemize de bağlı. Hem zaman planlaması hem kaynak planlaması.
+
+302
+01:37:21,779 --> 01:37:39,818
+Hem kaynak planlaması dediğimizde zaten bizim en önemli kaynağımız çalışanlar, yazılım geliştiriciler, test gerçekleştirenler, analistler. Bunları en iyi şekilde kullanabiliyor muyuz?
+
+303
+01:37:47,155 --> 01:38:00,136
+Bir alt başlığı da yazılım proje yönetimi ve planlaması. Yazılım proje yönetimi genel olarak dediğimizde bunların hepsi anlaşılıyor.
+
+304
+01:38:02,136 --> 01:38:04,755
+Daha sonra geliyoruz.
+
+305
+01:38:06,738 --> 01:38:16,719
+Kaliteli yazılımı en ekonomik olarak hazırlamak üzere mühendislik araçlarını ve yeteneklerini kullanmak.
+
+306
+01:38:16,719 --> 01:38:29,719
+Mühendislik dediğimiz zaman, biz başka birçok dersinizi aldınız mühendislik 3. sınıftasınız.
+
+307
+01:38:35,027 --> 01:38:49,208
+Nedir? Yani mühendislikte öne çıkan kavramlar, bir mühendisin yapması, kullanması gereken en önemli yetenekler nelerdir?
+
+308
+01:38:49,887 --> 01:38:51,747
+[öğrenci], söyleyebilir misin?
+
+309
+01:39:01,268 --> 01:39:02,208
+[öğrenci] [öğrenci].
+
+310
+01:39:14,674 --> 01:39:15,354
+[öğrenci].
+
+311
+01:39:17,034 --> 01:39:17,954
+Efendim hocam.
+
+312
+01:39:18,476 --> 01:39:38,454
+Şimdi mühendis olarak, mühendislik yetenekleri ve araçları, mühendisin en fazla problem çözerken, bir ürün geliştirirken, yapması gereken en önemli öne çıkan iki şey var. Söyleyebilir misin?
+
+313
+01:39:41,652 --> 01:39:53,692
+Bilmiyorum ama tahmin edecek olursam beklenen performansı gerçekleştirmek olabilir. Bir de bütçeyi aşmamak olabilir. Ama emin değilim.
+
+314
+01:39:54,911 --> 01:40:01,152
+Evet, onları söyledik ama hangi araçları kullanıyoruz?
+
+315
+01:40:07,476 --> 01:40:09,056
+Hıcağıt o zaman bilmiyorum.
+
+316
+01:40:09,136 --> 01:40:12,095
+Tamam, dur bakalım başka birisine daha soralım.
+
+317
+01:40:15,215 --> 01:40:18,835
+[öğrenci].
+
+318
+01:40:41,490 --> 01:40:43,230
+Cevap verecek olan var mı?
+
+319
+01:40:59,411 --> 01:41:00,512
+Herif, yağmur, duran,
+
+320
+01:41:06,036 --> 01:41:07,916
+[öğrenci] duyabiliyor musun?
+
+321
+01:41:36,244 --> 01:41:39,003
+Mehra, duyabiliyor musun?
+
+322
+01:41:39,884 --> 01:41:42,462
+Hocam duyabiliyorum ama fikrim yok maalesef.
+
+323
+01:41:43,523 --> 01:41:51,244
+Tamam. Üçüncü sınıfa kadar mühendislikle ilişkili dersler okudunuz. Bir tahmin yürütmeniz...
+
+324
+01:41:56,211 --> 01:42:01,211
+Mühendislik uygulamalarında en önemli şeyler...
+
+325
+01:42:04,532 --> 01:42:09,092
+Sesiniz kesiliyor hocam. Bir tek bana mı kesiliyor? Bende mi bir sıkıntı mı var?
+
+326
+01:42:09,092 --> 01:42:12,032
+Ben yine sonunu söyleyecektim hocam. Kesildi sonunu söyledik genç.
+
+327
+01:42:16,788 --> 01:42:21,467
+Şu anda hiç sesiniz gelmiyor hocam. Bilginiz olsun. Bana gelmiyor.
+
+328
+01:42:22,747 --> 01:42:23,788
+Şu anda gelmiyor.
+
+329
+01:42:23,926 --> 01:42:26,327
+[öğrenci] geliyor mu sana? Yok gelmiyor. Tamam.
+
+330
+01:42:44,595 --> 01:42:47,735
+[öğrenci], sen mi söyleyeceksin? Söyle dinliyoruz.
+
+331
+01:42:53,056 --> 01:43:03,375
+Olsun sen, Allah Allah. Abi benim şimdi hocanın sorduğu sorunun cevabını, yani öğrenmem için hocanın olması mı gerekiyor? Söyle dinliyorum ben hacı. Söyle.
+
+332
+01:43:04,014 --> 01:43:05,136
+Hocam olsa daha iyi olur.
+
+333
+01:43:06,451 --> 01:43:11,192
+Vay, pirim kasacağım diyorsun, helal olsun, yakışır.
+
+334
+01:43:11,431 --> 01:43:13,231
+Desene oğlum [öğrenci] abiye de pirim.
+
+335
+01:43:13,951 --> 01:43:17,011
+Ya bırak sen var ya, hoca olsa daha iyi olurmuş.
+
+336
+01:43:17,150 --> 01:43:20,091
+El kaldırmışsın, ben de elini gördüm bir büyüğün olarak da.
+
+337
+01:43:20,570 --> 01:43:21,890
+Söyle kardeşim dedim yani.
+
+338
+01:43:23,672 --> 01:43:25,911
+Ama seviyorum seni, özledim çok, yemin ederim.
+
+339
+01:43:26,252 --> 01:43:32,871
+Yani bir sarılasın var sana ama artık 6 ay, bir sene sonra bu korona mahvettim.
+
+340
+01:43:32,871 --> 01:43:33,911
+Çok tırt tırt tırt.
+
+341
+01:43:34,996 --> 01:43:36,136
+KURTULURSAK AĞIN
+
+342
+01:43:36,136 --> 01:43:41,855
+Bir şey olmaz Hacı, kötüye bir şey olmaz. Sana ne olsun? Hiçbir şey olmaz.
+
+343
+01:43:42,235 --> 01:43:44,095
+Bana bir şey olmaz mı? Dünyaya bir şey olabilir.
+
+344
+01:43:45,416 --> 01:43:51,195
+Hacı, dünya giderken arada biz de gidersek sorun yok yani. Boşver o kadar.
+
+345
+01:46:01,619 --> 01:46:02,619
+Bu...
+
+346
+01:46:22,003 --> 01:46:25,342
+Kesildi değil mi? Evet bu dediği kesildi. Ondan sonrası yok.
+
+347
+01:47:23,923 --> 01:47:25,163
+Şu anda siz...
+
+348
+01:47:29,202 --> 01:47:32,122
+Şu anda ses dediniz, sesten sonrası yok hocam.
+
+349
+01:47:45,331 --> 01:47:54,890
+Büyük ihtimalle tahminim öyle hocam, nacizaneye bilmiyorum anlamam ama kullandığınız portlarla alakalı bir şey var.
+
+350
+01:47:54,890 --> 01:48:03,490
+Port yani makine ses portunu gördüğü anda ya direkt onu kesiyor veyahut da siz açıyorsunuz tekrardan kesiliyor bilginiz olsun.
+
+351
+01:48:16,884 --> 01:48:20,064
+Ya da arada komple hattan düşüyorsunuz. O da olabilir.
+
+352
+01:49:44,435 --> 01:49:57,215
+Yazılım kavramı, yazılım hazırlamada da, diğer alanlarda da, mühendislikte önemli kavramlardan bir tanesidir.
+
+353
+01:50:18,738 --> 01:50:22,578
+Hocam henüz ekran paylaşımınız gelmedi. Bilmiyorum farkındasınız belki.
+
+354
+01:50:23,318 --> 01:50:25,978
+Evet, tekrar paylaşıyorum ekranı.
+
+355
+01:50:27,099 --> 01:50:27,439
+Tamam.
+
+356
+01:50:35,027 --> 01:50:36,426
+Evet, şimdi görebiliyor musunuz?
+
+357
+01:50:37,747 --> 01:50:38,606
+Evet hocam, evet.
+
+358
+01:50:38,606 --> 01:50:55,166
+Evet, mühendislik için tasarım ve ölçüm kavramlarını söylemiştim. Ölçme önemi, bitirdiğimiz bir ürünü ölçtüğümüzde daha sonra geliştirdiklerimizi bunlarla kıyaslayabiliyoruz.
+
+359
+01:51:04,884 --> 01:51:06,244
+Hocam, sözünüz gitti yine.
+
+360
+01:51:07,023 --> 01:51:10,183
+Hocam, ayrıca sonrası gitti, tekrardan bilginiz olsun.
+
+361
+01:51:10,183 --> 01:51:11,224
+Evet, evet.
+
+362
+01:51:12,063 --> 01:51:12,423
+Değerli.
+
+363
+01:51:12,983 --> 01:51:17,003
+Hem bir dakika, tekrar devam edelim.
+
+364
+01:51:25,844 --> 01:51:37,283
+değerlendirmek için hem de o anda geliştirdiğimiz ürünün maliyetini daha sonra yeni başlayacağız.
+
+365
+01:51:45,395 --> 01:51:45,954
+Ölçümü
+
+366
+01:51:53,940 --> 01:51:57,219
+Hem ekrana hem de sesimi duyabiliyor musunuz?
+
+367
+01:51:57,699 --> 01:51:59,639
+Hocam sesiniz çok fazla kesiliyor.
+
+368
+01:52:00,539 --> 01:52:00,979
+Evet.
+
+369
+01:52:04,979 --> 01:52:07,979
+Bu tasarım ve...
+
+370
+01:52:16,724 --> 01:52:27,564
+Yok hocam, yok. Yani siz bilirsiniz ama bu şekilde yani 10 saniye duyup son 20 saniye hiç almıyoruz. Yani bu 2 dakika içerisinde en az 5-6 kere oldu böyle bilginiz olsun.
+
+371
+01:52:28,224 --> 01:52:30,724
+Evet, evet. O zaman…
+
+372
+01:52:32,863 --> 01:52:38,724
+Yani herhangi bir verim alamıyoruz hiçbir şey. Yani sadece ekranı görüyoruz.
+
+373
+01:52:39,404 --> 01:52:40,344
+Evet, evet.
+
+374
+01:52:43,539 --> 01:52:53,000
+Biraz daha devam edeyim. Eğer yine aynı şekildeyse biraz daha iyileştirmeye çalışacağım.
+
+375
+01:52:56,658 --> 01:52:57,119
+Ok.
+
+376
+01:53:07,027 --> 01:53:07,426
+Ön.
+
+377
+01:53:15,764 --> 01:53:17,003
+Sorunuz var mı?
+
+378
+01:53:21,298 --> 01:53:27,440
+Hocam ben kendi adıma son 10 dakikadan bir şey anlamadığım için soracak bir şeyim de yok. Kendi adıma.
+
+379
+01:53:29,440 --> 01:53:38,440
+Evet. Kavramlar açısından yazılım mühendisliğinin alt başlıklarını bu şekilde tanımladık.
+
+380
+01:53:39,155 --> 01:53:59,155
+Ve alt başlıklarını yazılım kalitesi, yazılım proje yönetimi, yazılım geliştirme süreçleri ve yazılım tasarımını biraz daha genişleterek yazılım mimarisi olarak yazılım mühendisliğinin alt başlıkları.
+
+381
+01:54:00,148 --> 01:54:09,807
+Sürmamız mümkün ve derste de yine bu alt başlıkları anlatacak konulara yer veriyoruz.
+
+382
+01:54:09,807 --> 01:54:18,847
+Şimdi, yazılımla ilişkili hep kullanıyorsunuz.
+
+383
+01:55:00,211 --> 01:55:03,290
+Gelecek ve yazılımı geliştirme dediğimiz zaman...
+
+384
+01:55:03,290 --> 01:55:06,411
+Sesi ne gitti, geldi. Anlamıyoruz yani.
+
+385
+01:55:07,111 --> 01:55:08,152
+Hocam, cidden böyle olmuyor.
+
+386
+01:55:08,172 --> 01:55:10,252
+Yaklaşık bir dakika gittik hocam.
+
+387
+01:55:15,700 --> 01:55:22,379
+Yani tekrar kaydını dinlediğiniz zaman, seyrettiğiniz zaman anlayacaksınız. Şu anda bile sesiniz gelmiyor. Bilginiz olsun Oya Hanım.
+
+388
+01:55:38,195 --> 01:55:39,056
+Yazılımın
+
+389
+01:55:43,027 --> 01:55:49,406
+Deliştirmesinden, kullanımının son bulunmasına kadar olan geçen süreci anlıyoruz.
+
+390
+01:55:51,947 --> 01:56:00,807
+Zaman içinde kullanılmaz hale gelebilir. Hataları düzeltmek gerekir.
+
+391
+01:56:10,995 --> 01:56:17,815
+Gömülü yazılım gibi farklı yazılım türlerini söyleyebiliriz.
+
+392
+01:56:44,819 --> 01:56:46,819
+O zaman bir...
+
+393
+01:58:18,963 --> 01:58:22,602
+Evet, az önce chatten de yazdığım gibi 15 dakika ara veriyorum.

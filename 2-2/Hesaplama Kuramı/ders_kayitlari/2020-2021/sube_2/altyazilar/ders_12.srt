@@ -1,0 +1,1947 @@
+1
+00:06:04,115 --> 00:06:06,115
+Arkadaşlar günaydın sesim geliyor mu?
+
+2
+00:06:09,971 --> 00:06:11,111
+Geli hocam.
+
+3
+00:06:25,172 --> 00:06:27,172
+Sesim geliyor mu arkadaşlar?
+
+4
+00:06:27,172 --> 00:06:28,811
+Evet hocam.
+
+5
+00:06:34,675 --> 00:06:35,675
+Okay, so we were looking to Turing machines and
+
+6
+00:06:52,851 --> 00:07:02,451
+Let's look at, let's repeat what we have seen last week. So Turing machines are these
+
+7
+00:07:08,564 --> 00:07:16,064
+these new kind of machines that has more power than context-free languages or regular languages
+
+8
+00:07:16,064 --> 00:07:23,863
+they can accept languages that context-free languages cannot accept for something for
+
+9
+00:07:23,863 --> 00:07:33,703
+example something like that and the new thing with turing machines is that they have this input tape
+
+10
+00:07:33,703 --> 00:07:46,703
+And then initially the input string is in the middle of the tape.
+
+11
+00:07:46,703 --> 00:07:57,703
+And there is a read-write head that shows the beginning of the input, the first character or symbol of the input.
+
+12
+00:07:57,703 --> 00:08:02,703
+And the tape is infinite on both sides.
+
+13
+00:08:03,703 --> 00:08:08,703
+So, and except the initial input,
+
+14
+00:08:09,703 --> 00:08:11,703
+everywhere you have the blank symbol.
+
+15
+00:08:12,703 --> 00:08:14,703
+Okay. Everywhere you have your blank symbol.
+
+16
+00:08:18,703 --> 00:08:23,703
+And the rest is similar to the other finite automata.
+
+17
+00:08:23,703 --> 00:08:36,703
+You have your states, transitions, non-accepting states, accepting states.
+
+18
+00:08:36,703 --> 00:08:42,703
+Very similar to other automata.
+
+19
+00:08:42,703 --> 00:08:54,464
+uh now at each time step a turing machine reads a symbol writes a symbol and moves to left or right
+
+20
+00:08:57,104 --> 00:09:05,744
+so those things are shown this way there's an arrow between the symbols that will be read and
+
+21
+00:09:05,744 --> 00:09:18,864
+written and then there is the left right now instantaneous descriptions show the current
+
+22
+00:09:19,903 --> 00:09:28,384
+input contents or current tape contents and current state so you have your
+
+23
+00:09:28,383 --> 00:09:40,383
+let's say you have this situation where head shows d here then we write the current state
+
+24
+00:09:41,103 --> 00:09:49,983
+q0 between in front of d okay so if it is showing d we write it in front of d
+
+25
+00:09:49,983 --> 00:10:01,504
+and uh and symbols after d are written here symbols before sorry before they are written here
+
+26
+00:10:03,823 --> 00:10:07,743
+here so this is instantaneous description
+
+27
+00:10:10,224 --> 00:10:14,224
+and the turing machines are deterministic
+
+28
+00:10:14,223 --> 00:10:18,463
+for the same input
+
+29
+00:10:21,103 --> 00:10:25,503
+there can be only one thing happening and there is no null transitions
+
+30
+00:10:28,383 --> 00:10:32,383
+there will be non-deterministic turing machines later in the course
+
+31
+00:10:32,943 --> 00:10:38,623
+but they will be called non-deterministic turing machines these are deterministic
+
+32
+00:10:38,623 --> 00:10:48,623
+drink machines or just drink machines
+
+33
+00:10:46,548 --> 00:10:53,548
+Even though these two machines are non deterministic, we don't write everything.
+
+34
+00:10:53,548 --> 00:10:55,548
+So if.
+
+35
+00:10:55,548 --> 00:11:07,548
+Remember that in deterministic finite machines, we needed to show on the diagrams every symbol.
+
+36
+00:11:07,548 --> 00:11:10,548
+What happens to every.
+
+37
+00:11:10,548 --> 00:11:14,988
+all symbols you need to show on that kind of diagram.
+
+38
+00:11:14,988 --> 00:11:19,068
+But in Turing machines, even though they are deterministic,
+
+39
+00:11:19,068 --> 00:11:20,548
+we don't do that.
+
+40
+00:11:20,548 --> 00:11:26,147
+It kind of messes up the diagram too much.
+
+41
+00:11:26,147 --> 00:11:32,347
+So we just show the symbols that has a transition.
+
+42
+00:11:35,067 --> 00:11:39,268
+Now, the Turing machine holds in a state
+
+43
+00:11:39,267 --> 00:11:47,427
+if there is no transition to follow so this that can be for example if there's no transition
+
+44
+00:11:48,867 --> 00:11:59,987
+out of a state that means the machine will halt in the state or there might be some transitions
+
+45
+00:12:00,867 --> 00:12:09,747
+for some symbols but we are on a symbol that that that has no transition from from this state then
+
+46
+00:12:09,747 --> 00:12:18,707
+again the turing machine will stop on this state it will stop working and we will say the machine
+
+47
+00:12:18,707 --> 00:12:22,147
+halt halted at that state
+
+48
+00:12:22,147 --> 00:12:36,147
+and now the two in the three machines the accepting states have no out no outgoing connections or
+
+49
+00:12:36,147 --> 00:12:45,988
+transitions okay so the machine halts and accepts at that point because we just said that if there
+
+50
+00:12:45,987 --> 00:12:55,988
+is no transitions out of a state the machine halts and in the accepting states there are no transitions
+
+51
+00:12:56,627 --> 00:13:05,908
+to that goes out so the machine halts there and since since the state is accepting it accepts
+
+52
+00:13:05,908 --> 00:13:11,908
+So if we summarize accepting and rejecting.
+
+53
+00:13:11,908 --> 00:13:16,908
+These are the cases that can happen.
+
+54
+00:13:16,908 --> 00:13:21,908
+If the machine holds an accept state.
+
+55
+00:13:21,908 --> 00:13:25,908
+The machine accepts the input string.
+
+56
+00:13:25,908 --> 00:13:29,908
+If the machine holds in an accept state.
+
+57
+00:13:29,908 --> 00:13:31,908
+The machine rejects the input.
+
+58
+00:13:31,908 --> 00:13:36,467
+input. Now there is a third possible thing.
+
+59
+00:13:36,667 --> 00:13:40,708
+And that is if the machine enters an infinite loop.
+
+60
+00:13:40,908 --> 00:13:45,747
+We say that the machine rejects the input string to in that case.
+
+61
+00:13:45,947 --> 00:13:49,307
+So if the machine because there is an infinite loop,
+
+62
+00:13:49,508 --> 00:13:53,708
+the machine cannot accept, so it rejects.
+
+63
+00:13:57,427 --> 00:14:04,427
+Now the input is not necessarily consumed. Remember that, uh,
+
+64
+00:14:04,427 --> 00:14:22,427
+read right head reads a symbol and then writes back something to it. So basically, and it can go to left. So right. Can go to left. Uh, so that means
+
+65
+00:14:22,427 --> 00:14:49,427
+at the end of the computation, there might be some input in the tape. So, and all the strings, all the symbols may not be touched either. Maybe a Turing machine can start here. And before going there, up to here, the machine can accept and halt. It's possible.
+
+66
+00:14:49,427 --> 00:14:56,427
+So we have seen some Turing machine examples.
+
+67
+00:14:56,427 --> 00:15:01,427
+And
+
+68
+00:15:10,899 --> 00:15:18,899
+So we came to this kind of a little more complicated example. Let's look at this example.
+
+69
+00:15:22,676 --> 00:15:52,655
+I told you to do that at home, but let me work on this here too. So this is a Turing machine that accepts language of this pattern. So it accepts A to the N, B to the N, where N is larger than one. So it should be accepting things like this. A, B or A, A, B.
+
+70
+00:15:52,676 --> 00:16:04,356
+B, B, or A, A, A, B, B, B, that kind of language or strings are accepted.
+
+71
+00:16:08,179 --> 00:16:14,419
+So, let's see, let's try on AABB.
+
+72
+00:16:18,995 --> 00:16:20,995
+Let's try on AABB.
+
+73
+00:16:24,115 --> 00:16:28,035
+At time zero, what is the situation?
+
+74
+00:16:30,395 --> 00:16:33,235
+We are on Q zero, we are in Q zero.
+
+75
+00:16:35,955 --> 00:16:41,575
+And input is AABB, right?
+
+76
+00:16:44,655 --> 00:16:45,655
+Now,
+
+77
+00:16:48,995 --> 00:16:55,995
+Before looking at it, this string machine is like an algorithm.
+
+78
+00:16:55,995 --> 00:17:00,995
+Just a minute.
+
+79
+00:17:36,915 --> 00:17:50,235
+So basically, this Turing machine actually is equivalent or similar to this algorithm.
+
+80
+00:17:59,955 --> 00:18:03,955
+The basic idea is, uh,
+
+81
+00:18:05,955 --> 00:18:17,955
+The problem here is to matching these numbers. So the Turing machine will need to see whether the number of A's and the number of B's are same, right?
+
+82
+00:18:17,955 --> 00:18:26,955
+So somehow it needs to match each A, each A with a corresponding B.
+
+83
+00:18:26,955 --> 00:18:54,955
+each A with a corresponding B. So if you think about here is the start of A's and here is the start of B's, the starting A must be matched by starting B and the A next to it must be started by the next B. And we don't have, we can do it, but for the time being, we don't have numbers.
+
+84
+00:18:54,955 --> 00:19:12,955
+So to match the number of some symbol, we kind of match each symbol here. We don't have, we can't store number of A's somewhere and we can store number of B's somewhere, at least in this diagram.
+
+85
+00:19:12,955 --> 00:19:23,955
+Normally, Turing machines are very strong. We can actually do that, but it will be a very complicated Turing machine.
+
+86
+00:19:23,955 --> 00:19:42,955
+So for this Turing machine, we will try to match A's and B's to make sure number of A's and number of B's are same. So basic idea is
+
+87
+00:19:47,476 --> 00:19:48,476
+match A's with B's. And if all A's match with a B and there are no more B's, then number of A's and number of B's are same. So the idea is, so the algorithm is, if you will, you repeat,
+
+88
+00:20:17,476 --> 00:20:24,476
+replace leftmost A with X.
+
+89
+00:20:42,036 --> 00:20:51,036
+So you placed leftmost A with X. How is that done? Can you see it?
+
+90
+00:20:51,988 --> 00:21:09,988
+It's done here, right? So, for this AAB at the beginning, we will make it an X. So input will be XABB.
+
+91
+00:21:16,660 --> 00:21:19,299
+and the...
+
+92
+00:21:25,236 --> 00:21:41,236
+Then we will find leftmost B. So we need this X. Now we will find leftmost B. So that means read, write, head will go to the right until they find, until it finds a B.
+
+93
+00:21:41,236 --> 00:21:47,236
+And it's done here, right? After writing the first X,
+
+94
+00:21:47,236 --> 00:22:05,236
+Sankar Kauru, here on this Q1, there is this loop and this loop says that if you see an A or Y, go to right until when? Until you find a B. So find a B.
+
+95
+00:22:15,380 --> 00:22:16,380
+So we find left most B. And now since we want to replace or match that B with the initial A, we replace A with X. Now if we replace with B,
+
+96
+00:22:45,380 --> 00:23:11,619
+with Y, that will mean that this was a B and it matched with an A. So we'll find the leftmost B here and then we will replace it with a Y. Okay, and it's done here. You find a B and replace it with a Y.
+
+97
+00:23:25,619 --> 00:23:38,859
+and we want to repeat this. Okay. We want to repeat this. Until. There are no more A's or B's. So we want to repeat this until.
+
+98
+00:23:42,675 --> 00:23:58,675
+There are no more A's or B's. And at the end, if there is a remaining A or B, we won't reject.
+
+99
+00:24:02,259 --> 00:24:07,539
+if there is a remaining.
+
+100
+00:24:13,652 --> 00:24:17,652
+A or B, reject.
+
+101
+00:24:22,036 --> 00:24:51,355
+and the, so, the repeat until loop here. Where is it? It's here, right? So, we, we replace the Y with a B. Okay. Now here, what does this Q2 do? There's a loop here. It says, go back to left.
+
+102
+00:24:51,355 --> 00:25:20,175
+So remember we are here. So we have some A's, B's, right? And we replace this first A with an X and replace this first B with a Y. Okay. And the right head shows this, actually shows here because there's a left here.
+
+103
+00:25:21,355 --> 00:25:46,896
+Now it says that as long as you see an A, go to left. So it will go to left. It will come here. And this here says that if you see an X, an X, don't change it and go to right. So it will come back to the first A.
+
+104
+00:25:46,896 --> 00:25:57,896
+and then we start the loop again. So here we have a we have this repeat until loop, right? This here is the repeat until loop.
+
+105
+00:26:27,251 --> 00:26:33,811
+So let's see, let's see how this works on
+
+106
+00:26:37,491 --> 00:26:40,371
+Where does it insert that page?
+
+107
+00:26:48,180 --> 00:26:58,180
+So I will try to work on this a little here. So let's try on AABB.
+
+108
+00:27:03,955 --> 00:27:04,955
+We are on time zero. We have. We are on Q zero. And input is a, a, b, b. I was right. Time time one there. So let me just. Right. This the computation.
+
+109
+00:27:32,243 --> 00:27:59,443
+So replace A with an X and go to right. So, and state is Q1. So this A becomes X. We go to right. So we write the current state there and it's one. And ABB is not reached yet. So we are in Q1.
+
+110
+00:27:59,443 --> 00:28:21,924
+and then it says if you see an A go to right so we won't skip all A's so X, X remains X this A is skipped because A don't do with an A so A Q1 B B
+
+111
+00:28:25,523 --> 00:28:53,523
+and now here we see a B. So when we see a B, we write Y and go to the left. So this B will become a Y now. And we will go to the left and state will be Q2. So we have X, A, sorry, X, Q2.
+
+112
+00:28:55,523 --> 00:29:02,523
+A, Y, B. So this B became a Y here.
+
+113
+00:29:06,036 --> 00:29:08,036
+and the
+
+114
+00:29:10,036 --> 00:29:16,036
+Now we are on Q2 and if on Q2
+
+115
+00:29:17,235 --> 00:29:24,036
+If we have an A, we go to left. We don't do anything but we go to left. So this is for
+
+116
+00:29:24,835 --> 00:29:34,036
+This is a kind of small example, but if you it is better shown, you can we could better understand it with a larger example.
+
+117
+00:29:34,036 --> 00:29:54,036
+This kind of goes back to the start, to the first A. And here we have a single A, but if we had more than one A, it would skip all of the A's. And this goes to first X.
+
+118
+00:29:54,036 --> 00:29:56,036
+So,
+
+119
+00:30:17,683 --> 00:30:19,683
+So this becomes Q
+
+120
+00:30:23,683 --> 00:30:24,683
+0
+
+121
+00:30:25,683 --> 00:30:29,683
+X, so we will use this transition
+
+122
+00:30:30,683 --> 00:30:31,683
+Q 0
+
+123
+00:30:32,683 --> 00:30:34,683
+and X
+
+124
+00:30:37,683 --> 00:30:39,683
+A Y B
+
+125
+00:30:40,683 --> 00:30:41,683
+Right?
+
+126
+00:30:42,683 --> 00:30:46,683
+And we kind of, this was a one iteration of the loop.
+
+127
+00:30:47,683 --> 00:30:56,683
+We are, we come to the beginning of the, beginning of the loop here. We are on Q0.
+
+128
+00:31:00,403 --> 00:31:18,403
+and now, if we now, remember that if we see x, we go to right. So this was wrong, right? Q0 must be, hmm.
+
+129
+00:31:21,172 --> 00:31:41,571
+because I went to the left. So Q2 must go to right here. So this should be, let me try again, XAQ0YB. Okay.
+
+130
+00:31:51,571 --> 00:32:21,011
+Burayı karıştırdım galiba ya. Şuradan devam edeyim. Ne durumdayız? So we are on Q2, we have an A, we will go to left. So this will be Q2 X A Y B.
+
+131
+00:32:21,571 --> 00:32:50,112
+We will be staying in Q2. Now we have this transition. We saw an X, we write an X and we go to right. So we see an X, we go to right and state will be Q0. And then we don't change anything. So we have A, Y, B.
+
+132
+00:32:51,571 --> 00:32:54,932
+Now this is the start of the loop, right?
+
+133
+00:32:56,311 --> 00:33:01,311
+And now we're on Q0, we see an A.
+
+134
+00:33:02,652 --> 00:33:06,271
+So what we can do is we can write an X there.
+
+135
+00:33:06,271 --> 00:33:08,351
+So this A will be X.
+
+136
+00:33:09,792 --> 00:33:12,491
+And we will go to write.
+
+137
+00:33:12,491 --> 00:33:24,292
+So, x, x, q0, y, b, and the state will be q1, so this will not be q0, but q1.
+
+138
+00:33:31,220 --> 00:33:57,779
+Am I doing right? X, X, right, Q1. Now here says that if you see an A, go to right, but we consumed all A's. But also says if you see a Y, go to right too. So we will go to the right. And what happens here is we are looking for a B.
+
+139
+00:33:57,779 --> 00:34:19,459
+we are finding the leftmost B and replace it, we will replace it with Y. So we are looping until we come to this transition. So it's kind of this, this is finding, find a B. So we go to the right.
+
+140
+00:34:29,652 --> 00:34:38,652
+So we go to the right and to do that we do X, sorry for that.
+
+141
+00:34:42,051 --> 00:34:52,652
+And Y stays as Y and we are, where are we? We are here so this will stay as Q1 and we will have a B.
+
+142
+00:34:52,652 --> 00:35:00,451
+Now we found a B, and with this transition, we will replace that B with a Y.
+
+143
+00:35:01,451 --> 00:35:04,451
+So let's do that, and we will go back to left.
+
+144
+00:35:05,732 --> 00:35:16,531
+So that means, since we are going back to left, state will be before this Y.
+
+145
+00:35:16,531 --> 00:35:31,731
+So, X, X, Q2, and this B will be Y, this is always Y, Y, Y.
+
+146
+00:35:34,571 --> 00:35:42,611
+Okay, I hope that I am doing right. You need to be very careful about this thing, and you need to be very focused.
+
+147
+00:35:47,092 --> 00:36:14,391
+Let's see. Where are we? We are on Q2. And now we have a Y in front of the, under the red light head. So if we see Y, we go to left. Okay. So we have a Y here. We go to left. X, Q2, X, Y, Y.
+
+148
+00:36:14,391 --> 00:36:38,992
+and when we are on Q2, there is no A's or Y's now, but there is an X. If we see an X, we go to the Q0 and go to the right. So now this will be X, go to the right. So
+
+149
+00:36:38,991 --> 00:36:46,871
+So, X, Q to Y, Y, but Q must be zero, sorry.
+
+150
+00:36:46,871 --> 00:36:48,871
+So,
+
+151
+00:36:53,300 --> 00:36:55,300
+Q must be zero.
+
+152
+00:36:59,188 --> 00:37:00,387
+state is zero.
+
+153
+00:37:05,588 --> 00:37:33,588
+Now we are here and we kind of matched all X's and all Y's to each other. And now what will we do? We are on Q0. If there is any more A's, we will do another loop for that. We will check whether for that we have a Y or not. We have a B or not.
+
+154
+00:37:33,588 --> 00:38:00,588
+But there are no more A's here. Okay. And so we need to kind of, we are getting out of this transition, this larger loop now, until there are no more A's or B's. That happens because there are no A's clearly.
+
+155
+00:38:00,588 --> 00:38:06,588
+and this the things that we have done here kind of matches all of them.
+
+156
+00:38:06,588 --> 00:38:08,588
+Now, if you have.
+
+157
+00:38:12,083 --> 00:38:40,083
+So you will go to the so since we have a Y here, we will use this transition. And what this does is kind of we have already finished all A's. We know that because there are no more A's here. What we need to check is, is there any more B's? Is there more B's?
+
+158
+00:38:40,083 --> 00:38:50,703
+S, like if is this something like a, a, b, b, b, do we have any more, like the number of, is the number of b is larger.
+
+159
+00:38:53,083 --> 00:38:56,804
+And so if there is a b somewhere here.
+
+160
+00:38:57,903 --> 00:38:59,203
+We want to find it.
+
+161
+00:39:01,023 --> 00:39:02,844
+So we go to this Q3.
+
+162
+00:39:03,183 --> 00:39:05,344
+Now, this is a new state.
+
+163
+00:39:06,723 --> 00:39:07,363
+And
+
+164
+00:39:10,083 --> 00:39:25,204
+For the y, read it and go to the right. So x, x, y, q, 3, y. So q became 3. And this loop says that as long as there is a y, go to the right.
+
+165
+00:39:28,384 --> 00:39:37,683
+So since there is a y, let's go to the right. x, x, y, y, q, 3.
+
+166
+00:39:37,683 --> 00:39:57,743
+Now at this point, if there is a B here, what will happen? If there is a B here, on Q3, there are no transitions for B. So the machine will halt on Q3 and reject, because Q3 is a reject state.
+
+167
+00:39:57,743 --> 00:40:16,743
+But if there is no B, the next thing on the input will be a diamond or a blank symbol. And using that blank symbol transition, we will go to Q4, which is an accepting state.
+
+168
+00:40:16,743 --> 00:40:46,723
+and we will accept. So in this case, that's the case. We don't have a B. So number of Bs is not greater. So we do x, x, y, q3 goes to left. So we have q3, y. At this point, this is q4, sorry.
+
+169
+00:40:46,744 --> 00:40:59,744
+So this is Q4. And that's it. We came to Q4 and Q4 is accepting state.
+
+170
+00:41:03,092 --> 00:41:31,092
+And since we reached to an accepting state, we don't do anything anymore because once we reach to an accepting state, in the Turing machines, we halt and we accept. Or the machine halts and accepts. So that's, that one was a little more complicated example.
+
+171
+00:41:31,923 --> 00:41:46,923
+and notice that it shouldn't be too hard to modify this Turing machine to accept something, something more.
+
+172
+00:41:48,115 --> 00:41:50,915
+something more
+
+173
+00:41:53,523 --> 00:41:54,523
+complicated. So let's say this in this example, this is more like a homework. I will not do but try that later. Modify. Previous. Turing machine M.
+
+174
+00:42:20,596 --> 00:42:22,596
+to accept
+
+175
+00:42:26,596 --> 00:42:27,596
+the language
+
+176
+00:42:30,596 --> 00:42:32,596
+A to the N, B to the
+
+177
+00:42:34,596 --> 00:42:37,596
+B to the N, C to the N
+
+178
+00:42:38,596 --> 00:42:44,596
+where N is larger than or greater to equal to one.
+
+179
+00:42:46,596 --> 00:42:50,315
+So this is like a do-yourself,
+
+180
+00:42:53,331 --> 00:43:14,331
+later. Okay. So think about it. How can you construct, how can you modify this so that you can, it can accept things like A, A, A, B, B, B, C, C, C. Okay.
+
+181
+00:43:17,331 --> 00:43:21,331
+Orsadaki Y mi olacak, B mi dediniz?
+
+182
+00:43:23,764 --> 00:43:25,764
+e, bem, até a próxima.
+
+183
+00:43:38,099 --> 00:43:40,659
+Okay, um...
+
+184
+00:43:45,715 --> 00:44:10,295
+Bugün zamanlamayı nasıl yapalım? 11.25'te quiziniz var. 11.10 gibi bir bitireyim dersi ben. Onun için de bir 10 dakika daha ders yapayım. Sonra bir ara veririz.
+
+185
+00:44:25,396 --> 00:44:36,396
+So, let's look at some formalities. So, formalities for Turing machines.
+
+186
+00:44:37,972 --> 00:44:46,972
+So we have seen enough examples. Let's see some formalities of them.
+
+187
+00:45:01,139 --> 00:45:01,899
+machines.
+
+188
+00:45:08,692 --> 00:45:15,692
+Now, transition function is like we have seen.
+
+189
+00:45:23,603 --> 00:45:24,603
+So, let's say you are on in Q1, you go to Q2, you read something, you write something and you go left or right. So, similar to other
+
+190
+00:45:48,244 --> 00:45:50,244
+automata we have seen.
+
+191
+00:45:53,244 --> 00:45:58,244
+We will write this as delta Q1.
+
+192
+00:45:58,244 --> 00:46:10,244
+When we are on Q1, if we read an A, if we can read an A, then we can go to Q2.
+
+193
+00:46:10,244 --> 00:46:16,244
+And we need to tell the B and R2, right?
+
+194
+00:46:16,244 --> 00:46:33,644
+so B and R. So a transition is shown like this in the, if you want to write a transition function, a single transition will look like this.
+
+195
+00:46:36,703 --> 00:46:37,084
+And
+
+196
+00:46:43,476 --> 00:46:47,795
+Turing machine is seven tuples.
+
+197
+00:46:55,027 --> 00:46:56,027
+So we will have a machine will be having Q, which is states, input alphabet, tape alphabet, transition function, initial state. We need to show what is the blank symbol and accept states. So these are all
+
+198
+00:47:25,027 --> 00:47:37,507
+usual stuff. So Q is the set of states. Sigma is the input alphabet.
+
+199
+00:47:41,876 --> 00:47:55,876
+So it's set of input symbols. And gamma is the set of tape symbols. So you can see tape alphabet.
+
+200
+00:47:57,748 --> 00:48:02,748
+and Delta is the transition function.
+
+201
+00:48:07,539 --> 00:48:10,739
+choose yours, the initial state.
+
+202
+00:48:14,771 --> 00:48:18,771
+This symbol here is the blank symbol.
+
+203
+00:48:23,795 --> 00:48:29,075
+and F is the set of accepting states.
+
+204
+00:48:44,307 --> 00:48:59,747
+Okay, so this is usual now. There is nothing new here. And we already talked about instantaneous description.
+
+205
+00:49:13,907 --> 00:49:19,227
+So if you have a tape like this,
+
+206
+00:49:22,675 --> 00:49:40,995
+C, A, B, A and rewrite it is here. Once we are on Q1, we write this as C, A, Q1, B, A.
+
+207
+00:49:45,748 --> 00:49:48,267
+and a computation is these
+
+208
+00:49:54,195 --> 00:50:22,195
+A computation is these, these instantaneous descriptions. So something like Q2 X A Y B, X Q0 A Y B, like that. So this kind of, this list is the computation.
+
+209
+00:50:23,956 --> 00:50:50,956
+And now as usual, we have a shortcut notation for this. So let's say, let me write this a little, one more, two more steps. So let's say we here, we have something like XXQ1YB and let's say XXYQ1B.
+
+210
+00:50:50,956 --> 00:51:00,956
+Now, we can write this in an equivalent way.
+
+211
+00:51:11,380 --> 00:51:16,380
+this way, Q2, X, A, Y, B.
+
+212
+00:51:18,939 --> 00:51:26,139
+And then the final thing that we want, X, X, Y, Q1, B.
+
+213
+00:51:26,139 --> 00:51:32,019
+So basically, these are same for all the automata we have seen.
+
+214
+00:51:32,019 --> 00:51:38,060
+So we can kind of skip the intermediate steps
+
+215
+00:51:38,060 --> 00:51:42,619
+and we can just write the resulting state that we want to write.
+
+216
+00:51:45,339 --> 00:51:49,260
+And initial configuration is...
+
+217
+00:51:54,132 --> 00:51:58,632
+Remember that initial configuration
+
+218
+00:52:03,956 --> 00:52:12,956
+So initial configuration is you write the initial state and the string that you want to read.
+
+219
+00:52:14,956 --> 00:52:16,956
+So
+
+220
+00:52:19,827 --> 00:52:28,827
+You have blank. So you might have something like AABB. You have again blanks.
+
+221
+00:52:36,244 --> 00:53:02,883
+and Q0 shows the first element. So now that means we can write the accepted language in terms of these transitions of these computations. So the accepted language
+
+222
+00:53:10,420 --> 00:53:20,420
+The accepted language is for any Turing machine.
+
+223
+00:53:22,835 --> 00:53:29,835
+machine, and the language of M is,
+
+224
+00:53:32,436 --> 00:53:37,436
+strings, set of strings such that
+
+225
+00:53:39,595 --> 00:53:44,195
+when we give the initial configuration,
+
+226
+00:53:44,195 --> 00:53:49,196
+so initial configuration or instant, instantaneous description
+
+227
+00:53:52,995 --> 00:53:54,995
+are the same thing.
+
+228
+00:53:54,995 --> 00:54:00,835
+So we can say configuration.
+
+229
+00:54:09,043 --> 00:54:17,043
+current configuration or current instantaneous description. It should be the same thing.
+
+230
+00:54:24,724 --> 00:54:53,724
+So, so we can write the accepted language in terms of these, this computation. So for the accepting string, how will the computation be? Well, sorry. Well, we will be on Q0 at the beginning.
+
+231
+00:54:53,724 --> 00:55:04,724
+and we will have the string and then after some computations, there will be some string.
+
+232
+00:55:04,724 --> 00:55:16,724
+Let's say that's X1 and then we will be on a final state QF and there might be some other string to after QF.
+
+233
+00:55:16,724 --> 00:55:29,724
+Okay, and this is initial, initial state, and QF is one of the final accepting states.
+
+234
+00:55:29,724 --> 00:55:36,724
+So, and any accepting state.
+
+235
+00:55:42,452 --> 00:55:58,452
+So these are formalities, formal definitions, these were. Do you have any questions? I'll give a break now.
+
+236
+00:56:00,980 --> 00:56:08,980
+Okay, let's have a 10 minutes break. Let's have a break till 10, 10.
+
+237
+00:56:14,579 --> 00:56:23,859
+Birileri quiz tanımlı gözükmüyor ama bazı arkadaşlar da görünüyormuş sanırım demiş. Bu durumda başka kimse var mı?
+
+238
+00:56:25,639 --> 00:56:30,359
+Hocam şu an ana sayfada yok ama dersin raporunda gözüküyor.
+
+239
+00:56:30,359 --> 00:56:30,879
+Yayınlamanız gerekiyor.
+
+240
+00:56:33,420 --> 00:56:34,559
+Yayınlamamış mı?
+
+241
+00:56:36,139 --> 00:56:43,379
+Yok hayır. Yani yayınlamazsanız çünkü süresi geldiğinde 15 dakika bekleriniz gerekiyor yayınlamak için.
+
+242
+00:56:43,379 --> 00:56:46,079
+geciktirmeniz gerekiyor da doğrusu.
+
+243
+00:56:46,079 --> 00:56:49,280
+Onu atlamışım ben. Hemen yayınlayayım bir bakalım.
+
+244
+00:57:09,043 --> 00:57:13,043
+Evet, yayınladım. Görüyor musunuz şimdi?
+
+245
+00:57:22,387 --> 00:57:25,747
+Yes, it's not coming, it's not coming.
+
+246
+00:57:29,204 --> 00:57:31,263
+Tamam, 10 dakika ara verelim, sonra devam edelim.
+
+247
+01:09:10,515 --> 01:09:14,515
+Evet merhabalar arkadaşlar tekrar. Sesim geliyor değil mi?
+
+248
+01:09:35,636 --> 01:09:50,995
+Okay, so there is a very important definition. Let's write that.
+
+249
+01:09:52,979 --> 01:09:57,979
+the word Turing recognizable.
+
+250
+01:10:17,811 --> 01:10:32,011
+So if a language, if a language L is accepted,
+
+251
+01:10:36,692 --> 01:10:41,692
+by a Turing machine.
+
+252
+01:10:47,155 --> 01:10:54,155
+by a Turing machine M. We say that...
+
+253
+01:10:59,475 --> 01:11:01,475
+language L is
+
+254
+01:11:03,475 --> 01:11:04,475
+Turing
+
+255
+01:11:06,475 --> 01:11:07,475
+recognizable
+
+256
+01:11:21,140 --> 01:11:39,140
+sometimes equivalently instead of Turing recognizable, you can see the word string acceptable, acceptable.
+
+257
+01:12:08,979 --> 01:12:09,979
+teams.
+
+258
+01:12:21,716 --> 01:12:23,216
+and acceptable.
+
+259
+01:12:28,787 --> 01:12:31,467
+recursively enumerable.
+
+260
+01:12:44,148 --> 01:12:47,148
+Turing recognizable languages.
+
+261
+01:12:51,283 --> 01:13:10,283
+for the time being it's not that important but later this will be important. We will have Turing decidable languages that will be a little different from this. It should be that.
+
+262
+01:13:16,372 --> 01:13:42,372
+for the time being, we will not use, this will not be very important, but later it will be important. So, Turing machines are very strong. They are like computers. So, we can use, we can use them to compute functions. So, let's look at that.
+
+263
+01:13:43,475 --> 01:13:46,716
+computing functions.
+
+264
+01:13:50,452 --> 01:13:53,452
+with Turing machines.
+
+265
+01:14:03,412 --> 01:14:07,651
+remember that a function has a
+
+266
+01:14:07,651 --> 01:14:09,731
+a function has a
+
+267
+01:14:14,452 --> 01:14:17,672
+e domen, DFA,
+
+268
+01:14:24,532 --> 01:14:26,532
+and
+
+269
+01:14:28,787 --> 01:14:32,787
+result region S.
+
+270
+01:14:35,891 --> 01:14:40,852
+It's called it S. And
+
+271
+01:14:42,739 --> 01:14:45,939
+a function
+
+272
+01:14:53,140 --> 01:15:04,899
+a function f when given the parameter v, what does it do?
+
+273
+01:15:06,996 --> 01:15:36,475
+It takes that V and that W, sorry, W must be in its domain. And it takes that W and maps to some other value. And that value is we call F of W. And F of W must be in its result region.
+
+274
+01:15:40,051 --> 01:15:43,051
+Um,
+
+275
+01:15:44,916 --> 01:15:52,275
+obviously a function might have more than one parameters. So,
+
+276
+01:16:00,948 --> 01:16:05,587
+So you might have something like
+
+277
+01:16:13,171 --> 01:16:18,171
+f of x, y is x plus y.
+
+278
+01:16:21,747 --> 01:16:31,747
+So, now, in this case, we have more than one parameters.
+
+279
+01:16:50,131 --> 01:17:04,451
+Now, on the integer domain, there are possible ways to show these parameters. So,
+
+280
+01:17:07,123 --> 01:17:17,123
+If we look at integer domain parameter representation,
+
+281
+01:17:23,028 --> 01:17:24,028
+So for the time being, you will just work on integers to make things to keep things simpler. And the domain is integers. So a decimal representation is, let's say five. And we can represent the same value in a binary representation.
+
+282
+01:17:55,347 --> 01:18:22,347
+So if you will, these are bases on the binary base, base of two with this. Now something, a new representation we will use here is called unary. And in the unary, there is only one symbol and that will be one.
+
+283
+01:18:22,804 --> 01:18:26,103
+and the length will be in this case,
+
+284
+01:18:30,003 --> 01:18:31,003
+length will be the value. So if you, if we have five ones, that's five. This is the unary representation. Now we will, we prefer this because it is easier.
+
+285
+01:18:53,587 --> 01:19:08,587
+We prefer unary representation because it's easier to manipulate with Turing machines.
+
+286
+01:19:12,692 --> 01:19:15,692
+So kind of, we will use this.
+
+287
+01:19:19,731 --> 01:19:21,731
+Now, uh...
+
+288
+01:19:29,844 --> 01:19:39,844
+We will say that a function is computable if we can compute it with a Turing machine.
+
+289
+01:19:46,836 --> 01:19:52,035
+computability. So,
+
+290
+01:19:53,587 --> 01:19:55,587
+We say that
+
+291
+01:19:59,587 --> 01:20:01,587
+a function
+
+292
+01:20:03,587 --> 01:20:07,587
+f is computable
+
+293
+01:20:09,876 --> 01:20:10,876
+If there is a Turing machine such that initially you give the Fs parameters to the Turing machine. So for the initial configuration,
+
+294
+01:20:39,876 --> 01:20:44,876
+you have the string W and obviously blanks.
+
+295
+01:20:47,896 --> 01:20:54,896
+And the Q0 points to the beginning of the string.
+
+296
+01:20:56,876 --> 01:20:59,376
+So this is your initial configuration.
+
+297
+01:21:09,939 --> 01:21:37,939
+Now, it will take this and after the Turing machine works, what should happen is on the final configuration of the tape or the machine,
+
+298
+01:21:40,756 --> 01:22:08,756
+We want to see f of w as a string. OK. And the read-write head must be at the beginning of this new value. And the state must be an accepting state. So q0 is the initial state.
+
+299
+01:22:10,836 --> 01:22:19,836
+and QF must be an accepting, an accept state.
+
+300
+01:22:21,492 --> 01:22:35,492
+and this must be the case for all strings w in the domain D.
+
+301
+01:22:44,372 --> 01:22:47,431
+So here, D is the domain.
+
+302
+01:23:02,068 --> 01:23:09,068
+So what this is is, so let's say,
+
+303
+01:23:11,315 --> 01:23:14,315
+Let's say we want to do
+
+304
+01:23:22,515 --> 01:23:23,515
+the summation. So we must be able to give parameters to it. Or size double. So let's say F is. To FX is 2X, let's say. OK, let's say. So we want to be able to give.
+
+305
+01:23:47,315 --> 01:23:57,315
+like this. And at the end of the computation we must get
+
+306
+01:24:00,051 --> 01:24:05,051
+one, one, one, and this must be some Q finite.
+
+307
+01:24:10,707 --> 01:24:17,707
+And again, I am using unary notation here. So this is unary too.
+
+308
+01:24:22,003 --> 01:24:23,943
+and this is unary 4.
+
+309
+01:24:27,667 --> 01:24:32,667
+So two times two is four.
+
+310
+01:24:45,555 --> 01:24:51,555
+We can write the same thing, same thing like this. So let me
+
+311
+01:24:55,091 --> 01:24:57,091
+insert
+
+312
+01:24:59,636 --> 01:25:04,116
+So, in other words,
+
+313
+01:25:09,844 --> 01:25:28,003
+The same thing, function f is computable. I think I am missing an is here. A function f is computable. A function f is computable.
+
+314
+01:25:29,524 --> 01:25:30,524
+If there is a Turing machine such that you will start with this instantaneous description Q0 and W. And after some computation, you must reach to Q final and
+
+315
+01:25:59,524 --> 01:26:07,924
+result of the function. So this is the initial configuration.
+
+316
+01:26:11,572 --> 01:26:13,572
+and this is the final configuration.
+
+317
+01:26:21,524 --> 01:26:31,524
+and this should be the case for all W in the domain D.
+
+318
+01:26:34,707 --> 01:26:38,707
+Let's look at an example.
+
+319
+01:26:43,347 --> 01:26:47,587
+and we will work on this example a little more.
+
+320
+01:26:47,587 --> 01:26:50,268
+So...
+
+321
+01:26:59,283 --> 01:27:17,283
+The function we will work is f of xy equals to x plus y. And we say that this is computable.
+
+322
+01:27:20,212 --> 01:27:25,212
+where here x and y are integers.
+
+323
+01:27:34,579 --> 01:27:55,579
+And now, since there are two parameters, we need to find a way to separate them, right? So remember that we will use unary description. So in the Turing machine, input string will be
+
+324
+01:27:59,091 --> 01:28:12,091
+will be x, sum 0 and y. And 0 will be separate x and y. And the output string will be
+
+325
+01:28:15,188 --> 01:28:21,188
+x, y and zero. And again, these are unary.
+
+326
+01:28:25,908 --> 01:28:30,908
+and then, you know, the first thing I would like to say is that,
+
+327
+01:28:31,091 --> 01:28:51,091
+The zero here may or may not be needed depending on your needs. Here we will assume that we can use the result of this computation for another function later. So we will add a zero at the end. Okay.
+
+328
+01:28:51,091 --> 01:29:14,091
+So that means in this unit language zero is not counted. So if you have 110 that means this is two. One one is two again. So basically zero is just a separator in unit representation.
+
+329
+01:29:37,140 --> 01:29:41,459
+So, zero here is
+
+330
+01:29:49,939 --> 01:29:50,939
+will help in the successing, succeeding or following.
+
+331
+01:30:06,068 --> 01:30:09,068
+computations.
+
+332
+01:30:16,564 --> 01:30:26,123
+So the idea is we will have at the beginning our input here some ones.
+
+333
+01:30:31,315 --> 01:30:35,315
+and we will have a zero and some other ones.
+
+334
+01:30:42,355 --> 01:31:09,355
+and then blank symbol. And this first part will be X. The second part will be Y. At the beginning, we want the state will be on Q0 and the first one. And after the computation,
+
+335
+01:31:09,619 --> 01:31:14,100
+after the Turing machine runs on that string,
+
+336
+01:31:16,851 --> 01:31:18,851
+we will have some ones
+
+337
+01:31:21,851 --> 01:31:22,851
+and a zero.
+
+338
+01:31:23,851 --> 01:31:24,851
+Sorry, zero.
+
+339
+01:31:37,876 --> 01:32:03,876
+and the state must be back at the first symbol and must be some final state, Q final. So an example, Turing machine that can does this computation is here. So Turing machine
+
+340
+01:32:07,444 --> 01:32:10,323
+for function.
+
+341
+01:32:12,692 --> 01:32:15,091
+f of x, y
+
+342
+01:32:22,195 --> 01:32:40,195
+equals to x plus y. Let's try to write that. So it has four states. Q0 to Q4. So it has five states. So we have, um,
+
+343
+01:32:43,507 --> 01:32:44,507
+Q0,
+
+344
+01:32:47,507 --> 01:32:48,507
+Q1,
+
+345
+01:32:50,507 --> 01:32:51,507
+Q2,
+
+346
+01:32:55,028 --> 01:32:59,267
+Q3, and Q4.
+
+347
+01:33:03,028 --> 01:33:06,627
+and the fourth is an accepting state.
+
+348
+01:33:08,907 --> 01:33:12,328
+And so we have a loop here.
+
+349
+01:33:15,747 --> 01:33:20,427
+It reads one, writes one, and moves to the right.
+
+350
+01:33:20,427 --> 01:33:25,587
+So basically it skips once, isn't it?
+
+351
+01:33:25,587 --> 01:33:33,028
+And when we get to a zero now, so at the beginning we will have these ones.
+
+352
+01:33:33,028 --> 01:33:40,028
+So we will skip it until we get to a zero.
+
+353
+01:33:40,028 --> 01:33:42,028
+Okay.
+
+354
+01:33:42,028 --> 01:33:54,028
+So in this kind of computation, if you think about it, you are not summing up your all we need to do is replace this last one with a zero.
+
+355
+01:33:54,028 --> 01:34:00,028
+In a way, we want to write one here, we want to write zero here.
+
+356
+01:34:00,028 --> 01:34:05,028
+and that will be our computation if you think about it.
+
+357
+01:34:05,028 --> 01:34:16,028
+So when we get a zero, we will write a one there.
+
+358
+01:34:16,028 --> 01:34:18,028
+And we will move to the right.
+
+359
+01:34:18,028 --> 01:34:23,028
+So we will kind of make this zero into one.
+
+360
+01:34:23,028 --> 01:34:27,028
+Right.
+
+361
+01:34:27,028 --> 01:34:40,028
+Then we will have other ones for Y. So we will need to skip them too. So we will do that on this loop. Read once, write once, move to the right.
+
+362
+01:34:42,028 --> 01:34:56,028
+And we should come to the end of these ones too. So we should come here after that loop. And we will be on a blank. Now for this blank,
+
+363
+01:34:57,028 --> 01:35:16,028
+What do we want? We want to go back one step and delay this one here, right? So we want to delete the last one. And to understand that we are on the last one, we first need to see a blank.
+
+364
+01:35:18,028 --> 01:35:22,028
+And we do that with this transition.
+
+365
+01:35:23,028 --> 01:35:25,028
+If we see a blank.
+
+366
+01:35:27,028 --> 01:35:34,307
+We write it back and go back to left.
+
+367
+01:35:44,948 --> 01:36:13,347
+um, go back to left. So, we came here. Now, since we see a blank, we go back to left. And that left will be the last one we want to replace with zero. So, we will replace this one with a zero now. And Q2 does that.
+
+368
+01:36:14,948 --> 01:36:32,288
+If we see a 1, we replace it with 0 and go back to left. So this last one became a 0 now and we go back to left. So here there will be another one.
+
+369
+01:36:32,288 --> 01:37:00,147
+and now we want to go back to the beginning of the computation. So remember, we want to be at the first symbol at the end of the computation. So we need to move left. We need to skip everything and move left. And we need here, since we changed this zero to one,
+
+370
+01:37:00,147 --> 01:37:16,227
+we only have one seer so as long as we see once we go to left and how will we do that? We do that with this loop. As long as we see a one we go to left.
+
+371
+01:37:19,988 --> 01:37:39,387
+until when? Until when we see a blank now. If we see a blank, that means we reached to the beginning of the string, but still we are not on the place we want. We want to go one right to be on the first symbol.
+
+372
+01:37:39,387 --> 01:37:51,387
+and also at this point we want to be on final state. So we need to go to the final state Q4.
+
+373
+01:37:55,347 --> 01:38:01,987
+So if we see a blank, we write another blank.
+
+374
+01:38:13,363 --> 01:38:16,363
+and go to right.
+
+375
+01:38:18,363 --> 01:38:20,363
+Go to right.
+
+376
+01:38:25,268 --> 01:38:33,268
+I think you see how this goes. This is quite straight forward for me.
+
+377
+01:38:39,507 --> 01:38:46,507
+And since we are on Q4 now, this is an accepting state. We say that we finish the computation.
+
+378
+01:38:50,195 --> 01:39:00,195
+Let's look at a simple input and let's work on that. So...
+
+379
+01:39:04,435 --> 01:39:05,435
+Let's see our input is, let's say our input is, x is 2 and y is 2. So that means at the beginning, we will have this situation.
+
+380
+01:39:42,195 --> 01:39:43,195
+this will be our time zero. And the final, at the final configuration, final result will be
+
+381
+01:39:57,395 --> 01:40:02,055
+1, 1, 1, 1 and a 0.
+
+382
+01:40:06,452 --> 01:40:25,452
+and the final accepting state is Q4. So this must be Q4. And we should have that here. So let's see how this works in a little bit.
+
+383
+01:40:27,604 --> 01:40:31,604
+So let's look at the computation.
+
+384
+01:40:35,796 --> 01:40:45,796
+So the first configuration we have is Q011011.
+
+385
+01:40:47,155 --> 01:41:16,595
+and then we are on Q0, we see a one, we go to right. So one Q0, one, zero, one, one. We are still on Q0, we see a one, we go to right. One, one, Q0, zero, one, one. Now we see a zero. We go to state Q1 and we change that zero with one.
+
+386
+01:41:16,595 --> 01:41:36,935
+and we go to right. So this will be 1, 1, 1, Q1, 1, 1. So this used to be a zero. We changed it to one. And now we are on Q1.
+
+387
+01:41:36,935 --> 01:41:57,575
+was there a mistake here? I think there is a mistake here. No, we are on Q1 and now as long as we see these ones, we go to write until we see a blank. So we will first
+
+388
+01:42:01,492 --> 01:42:17,492
+So we will read this one, go to right, one, one, one, one, one, Q1. And we will read this one and go to right, one, one, one, one, one, Q1.
+
+389
+01:42:20,467 --> 01:42:47,107
+Okay. And now after the Q1 there is blank. So this we can now go to Q2. And left. So this will be one, one, one, one, Q2, one. Okay. You go to Q2.
+
+390
+01:42:51,028 --> 01:43:15,028
+and Q2 if it sees a one, it writes back a zero. So we need to make this a zero because we have five ones now. We want four ones. So Q2 does that. So we have, let me write here.
+
+391
+01:43:14,036 --> 01:43:38,036
+So Q2 writes a 0 to 1 and go to left. So this will be a 0 and we will go left. So 1, 1, 1, Q and we go to Q3. Q3 and then we have a 1 and we have a 0.
+
+392
+01:43:38,003 --> 01:44:05,003
+Now, we are on Q3 and as long as we see once, we go to left. So, 1, 1, Q3, 1, 1, 0. 1, Q3, 1, 1, 1, 0. Q3, 1, 1, 1, 0.
+
+393
+01:44:05,003 --> 01:44:10,503
+Now, still, it doesn't know it's at the end.
+
+394
+01:44:10,503 --> 01:44:17,163
+So it needs to go one more to the left.
+
+395
+01:44:17,163 --> 01:44:21,643
+So it will still go to left because it's seeing a one.
+
+396
+01:44:21,643 --> 01:44:29,044
+So we will have Q3 blank.
+
+397
+01:44:29,043 --> 01:44:31,643
+one, one, one, one, zero.
+
+398
+01:44:34,043 --> 01:44:34,643
+This is zero.
+
+399
+01:44:36,443 --> 01:44:40,143
+Now we are on Q3 and we see a blank.
+
+400
+01:44:40,743 --> 01:44:42,243
+We go to right.
+
+401
+01:44:43,843 --> 01:44:47,643
+So this blank now, we go back to the right.
+
+402
+01:44:47,743 --> 01:44:49,043
+It will be to the left.
+
+403
+01:44:49,843 --> 01:44:51,343
+We don't need to write it.
+
+404
+01:44:51,443 --> 01:44:57,443
+So Q3, one, one, one, one, zero.
+
+405
+01:44:57,443 --> 01:44:59,443
+sorry, this should be Q4.
+
+406
+01:45:03,252 --> 01:45:12,252
+So since we are on Q4, we are on an accept state.
+
+407
+01:45:13,971 --> 01:45:20,971
+We will finish the computation. And the resulting
+
+408
+01:45:23,028 --> 01:45:30,028
+The resulting configuration is x plus y just like we want.
+
+409
+01:45:32,340 --> 01:45:36,840
+I hope this is clear.
+
+410
+01:45:46,068 --> 01:45:51,068
+Let's look at the, let's look at another example.
+
+411
+01:46:14,163 --> 01:46:18,283
+So let's say,
+
+412
+01:46:30,771 --> 01:46:44,451
+f of x equals to 2x is computable. We will show this. And here x is an integer.
+
+413
+01:46:53,395 --> 01:46:58,395
+and what is the input to the Turing machine?
+
+414
+01:47:05,652 --> 01:47:33,652
+It will be some ones and that will be X. And it's unary. Now output will be. These are strings. So this string. But the function we are here talking is like a number, but the representation is a string. So it will be X, X, right?
+
+415
+01:47:43,188 --> 01:47:48,188
+So initially we will have a
+
+416
+01:47:55,283 --> 01:48:00,283
+this situation, someone's
+
+417
+01:48:05,395 --> 01:48:14,196
+and the first one will be shown by the read-write head. We will be on initial state.
+
+418
+01:48:18,515 --> 01:48:37,515
+and after the computation, we want to see again some ones, but if we have x ones here, we want to have 2x ones here.
+
+419
+01:48:41,971 --> 01:48:53,731
+and again we want to be at the beginning of the string on a final accept state.
+
+420
+01:48:56,180 --> 01:49:25,180
+in an accepted state. Now, what could be a pseudo code for this? And we are going to pseudo slowly. And at some point in this course, I don't know if we will have time for that, but we will stop working on finite automata or automata.
+
+421
+01:49:25,180 --> 01:49:33,459
+and we will start thinking about, we will start thinking in terms of pseudo-codes or algorithms.
+
+422
+01:49:34,739 --> 01:49:38,040
+So that's why we are now introducing algorithms here.
+
+423
+01:49:38,979 --> 01:49:43,200
+So what is the pseudo-code for this year?
+
+424
+01:49:48,659 --> 01:49:49,659
+So,
+
+425
+01:49:56,243 --> 01:50:03,243
+the pseudo code for this Turing machine.
+
+426
+01:50:05,747 --> 01:50:07,747
+Let me write this way.
+
+427
+01:50:10,247 --> 01:50:12,747
+Turing machine pseudo code.
+
+428
+01:50:16,275 --> 01:50:23,595
+force the function fx equals to 2x.
+
+429
+01:50:31,636 --> 01:50:57,755
+Well, there might be, obviously, there might be different ways to do this. What I see in these sources, resources, you first replace every one with a dollar. So let's say you have some ones here.
+
+430
+01:50:57,755 --> 01:51:12,755
+Let's say you have three ones and you want to obtain six ones. First, you replace everyone with a dollar.
+
+431
+01:51:18,228 --> 01:51:20,228
+replace
+
+432
+01:51:21,667 --> 01:51:23,668
+every one
+
+433
+01:51:33,684 --> 01:52:02,684
+with a dollar. Then we go into a loop and we repeat this until we will find the rightmost dollar, replace it with one and go to the right and insert with a one.
+
+434
+01:52:06,260 --> 01:52:19,260
+So, find the rightmost dollar.
+
+435
+01:52:22,484 --> 01:52:28,243
+replace it with one.
+
+436
+01:52:32,435 --> 01:52:54,675
+go to the right end and insert a one. We will do this until no more dollars remain.
+
+437
+01:53:00,756 --> 01:53:29,756
+So, let's say we have one, one, one. First, we replace everything with dollars. So, these will be dollars, dollars, dollar, dollar, dollar. And now, we will find the rightmost dollar, this guy. Replace it with one. So, we rewrite it one with one back.
+
+438
+01:53:37,811 --> 01:54:07,031
+and go to the right end. So we go back to here and insert L1 in the repeat loop. And then again, we will change this into L1. Find the rightmost dollar. So this is the rightmost dollar. This was. Change it back to one and go to the end and replace another one here.
+
+439
+01:54:07,811 --> 01:54:17,111
+and then find the rightmost dollar, which is this guy, write a one there, go to the end, insert a one there.
+
+440
+01:54:18,012 --> 01:54:32,691
+So it's kind of starting from the end dollar, first changing into dollar and going to the right and inserting.
+
+441
+01:54:32,691 --> 01:54:46,691
+notice that each of these lines can be done in Turing machines somehow. So let's see how this can be done.
+
+442
+01:54:52,916 --> 01:55:22,895
+First of all, we need to replace everything with a one. So we have here Q0, Q1, Q2, and Q3. Okay. And Q3 is the acceptance state. And we start with Q0.
+
+443
+01:55:27,667 --> 01:55:51,667
+Now, first thing we do is replace every one with a dollar. And this is easy, right? So remember that at the beginning, in our input, there will be some ones and we will be at the beginning.
+
+444
+01:55:51,667 --> 01:56:12,907
+So as long as there are some ones, we want to convert it into a special symbol, in this case, a dollar. So we will just, when we see a one, we will replace it with a dollar and go to right. So convert this to dollar, convert this to dollar, convert this to dollar.
+
+445
+01:56:12,907 --> 01:56:41,907
+at some point we will come to here which is a blank symbol right so when we see a blank symbol that means this first line is computed right so when we see a blank that means we can return back
+
+446
+01:56:42,907 --> 01:56:56,827
+So we will be here. Now, find the rightmost dollar. We are on the rightmost dollar here already.
+
+447
+01:57:00,787 --> 01:57:25,787
+and replace it with one. So we will replace it with one. And if you look at the execution, this is like at some point it will be something like this. We will see we will have some dollars. We will have some ones.
+
+448
+01:57:25,787 --> 01:57:53,787
+and we will have a diamond. So this is start of a loop actually. So starting from Q1, we are entering this loop. So we will be, we might have some ones initially.
+
+449
+01:57:55,787 --> 01:58:25,767
+So we will put that here. So if we have some ones, we will go to left. And one thing I will write here is, let me introduce an easier notation for you.
+
+450
+01:58:25,787 --> 01:58:53,368
+and
+
+451
+01:58:47,220 --> 01:58:50,220
+just to make sure I am checking the book.
+
+452
+01:59:37,076 --> 01:59:41,076
+So let me introduce a short notation.
+
+453
+01:59:47,380 --> 01:59:57,739
+If you have something like one, one right, you can just write one R.
+
+454
+02:00:01,108 --> 02:00:19,108
+So that means if we see an R, we just go to write. We read it, we write it back and go to R. It's just a simple notation. So here I will write one R.
+
+455
+02:00:19,108 --> 02:00:32,108
+means I will, if I see everyone, I read it, I write it back and go to right. Okay. So, in this case, obviously I need to go to left.
+
+456
+02:00:44,115 --> 02:01:06,755
+I need to go to left. And I go to left until I find a dollar, right? And if I find a dollar now, that means I found the rightmost dollar. And I can replace it with a one. So let's do that here.
+
+457
+02:01:06,755 --> 02:01:16,755
+If I find a dollar, replace it with a one and go to right.
+
+458
+02:01:19,675 --> 02:01:26,075
+So I placed it with a one and go to right. I am here and this is one now.
+
+459
+02:01:26,075 --> 02:01:44,075
+Now again, I will go to right and insert a one for this, right? For this guy, now I want to insert one at the end. So I will need to add that loop.
+
+460
+02:01:48,467 --> 02:01:50,467
+So...
+
+461
+02:01:52,467 --> 02:02:10,467
+As long as I see a one, I go to right now. And at that I should see a blank. And if I see a blank, I will insert.
+
+462
+02:02:13,779 --> 02:02:17,779
+A1 and go to left.
+
+463
+02:02:21,395 --> 02:02:37,395
+So this is go to the right and insert one. So second, second line of pseudo code is done in this, in this area, let's say.
+
+464
+02:02:37,395 --> 02:02:51,395
+Now, this is the loop. So this loop will work. How are we going to get out of this loop? Well,
+
+465
+02:02:51,395 --> 02:03:18,976
+and
+
+466
+02:02:55,699 --> 02:03:13,699
+We will go back to here and there will be no more dollars. And there will be no more ones too. So we will be on Q1 and there will be no more ones, no more dollars. So...
+
+467
+02:03:28,020 --> 02:03:57,999
+So we will get out of the loop. And that will happen when we see a blank on Q1. In that case, we will write back the blank and we will go to right and we will enter the state Q1, Q2.
+
+468
+02:03:58,020 --> 02:04:00,020
+3.
+
+469
+02:04:12,819 --> 02:04:23,459
+So this is the Turing machine for this.
+
+470
+02:04:30,868 --> 02:04:33,868
+let me write it here.
+
+471
+02:04:42,996 --> 02:04:46,996
+This is just a notation for
+
+472
+02:04:51,667 --> 02:04:54,787
+take over to one.
+
+473
+02:05:04,307 --> 02:05:07,087
+So this is the Turing machine for this guy.
+
+474
+02:05:10,899 --> 02:05:20,899
+Now, we will see this working on an example.
+
+475
+02:05:28,243 --> 02:05:33,644
+But you can work on yourself on that.
+
+476
+02:05:33,644 --> 02:05:40,363
+So work on input.
+
+477
+02:05:51,764 --> 02:06:21,083
+yourself. So see how this takes 1-1 and outputs 1-1-1. So let's finish here today. At 11.25, you have a quiz. I'll give you some time to refresh. Do you have any question?
+
+478
+02:06:21,764 --> 02:06:25,764
+Thank you, Christians.
+
+479
+02:06:29,716 --> 02:06:32,315
+Hocam kat soru olduğunu quizde mi görelim? Belli mi?
+
+480
+02:06:32,735 --> 02:06:36,835
+Beş soru var. 25 dakika. Soru başına 5 dakika.
+
+481
+02:06:39,216 --> 02:06:40,995
+Bugünkü konular dahil mi hocam?
+
+482
+02:06:41,835 --> 02:06:47,415
+Her şey dahil. Tüm sınavlarda işlediğimiz tüm konular dahil arkadaşlar.
+
+483
+02:06:50,716 --> 02:06:52,216
+Teşekkür ederim. İyi günler.
+
+484
+02:06:52,216 --> 02:06:53,295
+İyi günler.
+
+485
+02:06:55,035 --> 02:06:59,375
+Bu haftadan sonra iki haftamız daha mı var?
+
+486
+02:06:59,716 --> 02:07:02,035
+Ay, lo'jama after eso
+
+487
+02:07:06,323 --> 02:07:22,863
+Haftaya son. Bitti dönem öyleyse. İyi bakalım. Evet, evet. Hadi bakalım. O zaman başarılar diliyorum. Kapatıyorum arkadaşlar. Teşekkürler. İyi günler. İyi günler.

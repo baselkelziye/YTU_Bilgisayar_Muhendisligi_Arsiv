@@ -1,0 +1,3407 @@
+1
+00:17:02,227 --> 00:17:03,187
+Günaydın arkadaşlar.
+
+2
+00:17:08,723 --> 00:17:09,423
+Günaydın, hocam.
+
+3
+00:17:47,251 --> 00:17:53,751
+Bu hafta 6. haftadayız. Bir 10 Kasım sabahlı beraber ders yapıyoruz.
+
+4
+00:17:56,831 --> 00:17:58,711
+Derse biraz geç başladı.
+
+5
+00:18:01,991 --> 00:18:06,751
+9'u 5 geçe ders yapmak istedim. O yüzden şimdi derse başlayacağım.
+
+6
+00:18:09,491 --> 00:18:14,751
+Geçen hafta sevgili arkadaşlar, ilk...
+
+7
+00:18:15,476 --> 00:18:19,676
+sınıflama algoritması olarak naive Bayes Classifier'ı gördük.
+
+8
+00:18:22,116 --> 00:18:30,596
+Bu hafta ise bir sınıflama yöntemi olarak karar ağaçlarının nasıl çalıştığını göreceğiz.
+
+9
+00:18:31,756 --> 00:18:37,196
+Yeni bir konuya başlıyoruz. Bu arada geçen hafta ödevi verdim, görmüşsünüzdür.
+
+10
+00:18:38,416 --> 00:18:40,616
+Ödev hakkında küçük bir açıklama yapayım.
+
+11
+00:18:43,508 --> 00:19:10,508
+Jüpiter Notbook'ta ödevi yapmanızı istiyorum. Size bir veri seti, telekomla ilgili bir veri seti verdim. Müşterileri dört farklı sınıfa ayırmışlar. Etiketli bir veri var elimizde. Bin tane sample vardı yaklaşık yanlış hatırlamıyorsam. Bu veri seti üzerinde sizden istediğim...
+
+12
+00:19:10,963 --> 00:19:21,403
+naive Bayes'i zaten çalıştırıp sonucunu ekranda gösteren kodu bulabilirsiniz.
+
+13
+00:19:25,140 --> 00:19:51,640
+Sizin dikkatinizi çekmek istediğim birinci nokta şu, naive Bayes ile classification yaparken bütün öz nitelikleri nümerik gibi kabul etmiş ve ona göre verilmiş olan aslında kategorik bir değeri temsil eden nümerik değeri de bir sayısal değer olarak kabul edip normal dağılım ile olasılık hesaplatmış.
+
+14
+00:19:52,064 --> 00:20:11,744
+Çalışmayı biraz farklılaştırmak adına sadece nümerik olan öz nitelikleri seçip, bu nümerik öz nitelikler için normal dağılımdan faydalanarak olasılıkları siz kendiniz hesaplayın ve Bayes Classifier'ın sonucunu bulun diye verdim ödevi.
+
+15
+00:20:12,256 --> 00:20:19,936
+Tabii öz nitelik sayısını azalttığımız için başarıda düşecek bu beklendik bir durum.
+
+16
+00:20:21,203 --> 00:20:47,783
+Belki ekstradan bir bonus olarak şunu yapabilirsiniz. Kategorik öz nitelikler için de ama kategorik değerlendirerek bu öz nitelikleri olasılıklarına hesaplatıp bütün öz nitelikleri bir arada, kategorik ve nümerik bir arada değerlendirerek de naive Bayes için bir sınıflama sonucu hesaplayabilirsiniz.
+
+17
+00:20:48,352 --> 00:21:03,912
+Ödevle ilgili böyle bir açıklama yapmaya ihtiyacı duydum. Bu birinci ödeviniz her anlattığım konuyla ilgili böyle küçük egzersizler vermek istiyorum sizi ısındırmak için.
+
+18
+00:21:07,731 --> 00:21:20,672
+Konu ilginizi çekecek diye düşünüyorum. Özellikle uygulama kattığımızda, değişik veri setleriyle işlemler yaptığınızda bu işten daha çok keyif alacaksınız, daha merakınız artacak diye düşünüyorum.
+
+19
+00:21:21,460 --> 00:21:43,820
+Ödevi, online Yıldız Edyo TRD'deki ödev sınav modülünün altına upload ediyorsunuz. Öyle bir opsiyon var. Geçen sene ben derste Edmodo diye ayrı bir uygulama kullanıyordum ama üniversitemiz böyle bir ödev yükleme modülü de hazırlamış. Orayı kullanacağız.
+
+20
+00:21:47,728 --> 00:22:06,948
+Çalışma yapmadım. Belki bir tane vizeyi kaldırıp onun yerine ödev yapabiliriz. Yani daha çok ödev ağırlıklı gitmemiz, özellikle online ders yaparken, sınavların da online yapıldığı bir platformda ödevin daha öğretici olduğuna inanıyorum.
+
+21
+00:22:10,291 --> 00:22:16,791
+Jüpiter notbook uzantısını kabul etmiyorsa zipleyip yükleyebilirsiniz.
+
+22
+00:22:18,071 --> 00:22:32,611
+Yani kullandığınız dosyayı da yine aynı klasörün altına koyarak, klasörün adına da numaranızı ya da adınızı vererek zipleyin, zipli dosya olarak yükleyin.
+
+23
+00:22:33,907 --> 00:22:44,827
+Çünkü ben de size ödevi zipli olarak gönderdim. Yani zipli bir dosya olarak göreceksiniz. Onu o şekilde yükleyebilirsiniz.
+
+24
+00:22:47,007 --> 00:22:49,567
+Evet, başka sorunuz var mı ödevle ilgili?
+
+25
+00:22:52,487 --> 00:22:54,487
+Hocam ben bir şey sorabilir miyim?
+
+26
+00:22:54,987 --> 00:22:55,407
+Buyurun.
+
+27
+00:22:57,048 --> 00:23:00,447
+Veriyi neden normalize etmemiz gerekiyor burada?
+
+28
+00:23:02,675 --> 00:23:13,635
+Yatılışmada çok da gerekli değil. Çünkü naive Bayes classification istatistiksel bir yöntem. Distance-based yapı olmadığı için normalizasyon işlemine gerek yok.
+
+29
+00:23:14,295 --> 00:23:22,355
+Sadece veriyi, hani preproses adımı uyguladığımızda neler yaparızı göstermek için koydum.
+
+30
+00:23:30,675 --> 00:23:39,935
+Aniris Neighbor ya da clustering yöntemlerinde göreceğimiz k-means, clustering gibi yöntemlerde olmazsa olmaz.
+
+31
+00:23:40,115 --> 00:23:44,835
+Yani mutlaka normalizasyon yapmalısınız derim. Ama bunda şart değil açıkçası.
+
+32
+00:23:45,235 --> 00:23:48,675
+Evet hocam, ben de öyle düşündüm de çok anlayamadım sebebi.
+
+33
+00:23:48,675 --> 00:23:57,655
+Evet, gerek yok. Yani orada biraz veriyi analiz edelim. Pre-process'te neler yapılıyor bunları açıklayalım diye koyduğum bölümlerde onlar.
+
+34
+00:23:58,708 --> 00:24:03,847
+Her hafta farklı bir veri setiyle basit böyle bir takım uygulamalar yapmaya başlayacağız.
+
+35
+00:24:03,988 --> 00:24:07,708
+Dediğim gibi daha çok ilginizi çekeceğini imit ediyorum.
+
+36
+00:24:08,708 --> 00:24:15,708
+Python daha önce kullanmayan arkadaşlarımız varsa yavaş yavaş böylece ısınmış olur.
+
+37
+00:24:16,228 --> 00:24:21,108
+Ama zannediyorum ki herkes bir yerde bir şekilde başladı Python kullanmaya.
+
+38
+00:24:23,347 --> 00:24:34,507
+Kaç ödev vermeyi planlıyorsunuz? Kısmet diyeceğim ama herhalde 5 falan olabilir. Yani bugün naive Bayes, bugün decision tree vereceğim. Geçen hafta naive Bayes'i anlatmıştık.
+
+39
+00:24:34,507 --> 00:24:49,307
+D, k-NN olabilir. Arkasından k-means, hierarşik clustering. En az 5 görünüyor şu anda. Recommendation systems var. Oradan da ödev gelebilir.
+
+40
+00:24:50,036 --> 00:24:55,716
+Böyle şimdilik minimum 5 gibi düşünebiliriz ödev sayısını.
+
+41
+00:24:58,115 --> 00:25:00,716
+Evet, bu hafta da ödev geliyor [öğrenci].
+
+42
+00:25:05,107 --> 00:25:31,768
+Biz yapmayalım diyorsunuz. İşte o olmuyor. Maalesef üniversite en az bir tane vize yıl içi sınavı, bir tane yıl sunuşu yapmayı zorunlu tutuyor. Ben şuna inanıyorum, gerçekten ödevden daha çok şey öğreneceksiniz. Aklınızda daha çok şey kalacak. O yüzden ödev ağırlıklı gidelim. Bu dönem bakalım ne oluyor.
+
+43
+00:25:35,347 --> 00:25:37,087
+Proje iptal mi?
+
+44
+00:25:38,447 --> 00:25:41,087
+Yo, değil. Henüz öyle bir şey söylemedim.
+
+45
+00:25:43,167 --> 00:25:45,667
+Ödevdeki veri setini nasıl açabiliyoruz?
+
+46
+00:25:46,627 --> 00:25:52,567
+Excel'de açabiliyorsunuz. TXT dosyası olarak bir notpad de açabilirsiniz.
+
+47
+00:25:53,907 --> 00:25:56,235
+Başka, yani...
+
+48
+00:25:57,076 --> 00:26:03,855
+Zaten Jüpiter Notbook'ta onu okutup işlem yapıyoruz. Nasıl bir açma işlemini sorduğunuzu anlamadım.
+
+49
+00:26:22,932 --> 00:26:24,271
+[öğrenci] anlamadım sorunu.
+
+50
+00:26:33,299 --> 00:26:38,440
+Peki, veri setini nerede bulabilirim?
+
+51
+00:26:41,240 --> 00:26:49,579
+Şimdi verdiğim zipli dosyanın içinde, yani bir klasör verdim. Zipi açtığımız zaman iki ya da üç tane dosya çıkacak.
+
+52
+00:26:49,720 --> 00:26:58,900
+Biri Jupiter notebook dosyası, biri veri seti olacak. Bir tane de bir PNG resmi koymuşum galiba, öyle hatırlıyorum.
+
+53
+00:27:00,243 --> 00:27:05,203
+Hocam, ilk başta biz de bulamamıştık da, ödevi tamamla diyorsunuz.
+
+54
+00:27:05,203 --> 00:27:17,563
+Onu soruyorsunuz. Evet, öğrenci modülünde öyle bir durum var arkadaşlar. Ödevi indirebilmek için tamamla diye bir buton varmış. Oraya basınca ödev görünüyormuş öğrenciye.
+
+55
+00:27:19,983 --> 00:27:26,003
+Yani hem Jüpiter notluk dosyası var, orada zipli bir dosya bulacaksınız. Onun içinde hepsi.
+
+56
+00:27:28,019 --> 00:27:33,619
+Daha ödevi görmeyen arkadaşlar var demek ki. Niye sormuyorsunuz arkadaşlar ya?
+
+57
+00:27:37,779 --> 00:27:45,960
+Bu kadar sohbet yeter. Konuyu geleceğim o zaman. Başka sorunuz yoksa?
+
+58
+00:28:13,428 --> 00:28:17,608
+Mail adresimi üniversitenin web sitesinde görebilirsiniz arkadaşlar.
+
+59
+00:28:32,468 --> 00:28:42,728
+Teşekkürler [öğrenci], [öğrenci]. Ben daha soruyu anlamadım. Cevap yazmış. Evet, Jüpiter Notepad kendisi oluşturuyor. Checkpoint istediğimiz şeyi. Doğru.
+
+60
+00:28:46,867 --> 00:28:52,887
+Peki, şu chat ekranını da çekelim.
+
+61
+00:28:55,187 --> 00:29:06,268
+Evet, bugün 10 Kasım ve Ulu Önderimiz Mustafa Kemal Atatürk'ü saygı ve minnetle anıyorum ben de.
+
+62
+00:29:07,307 --> 00:29:14,248
+Sabah dersi 9-10 geçe başlattım bu sebeple. Şimdi derse geçebiliriz.
+
+63
+00:29:20,372 --> 00:29:23,231
+Bu haftaki konu başlığımız karar ağaçları.
+
+64
+00:29:23,231 --> 00:29:30,612
+Yes, Biken'le sesin, şu anda ses kötü mü geliyor arkadaşlar?
+
+65
+00:29:31,132 --> 00:29:32,612
+Mouse hareket ettirdiğimde.
+
+66
+00:29:33,832 --> 00:29:34,892
+Sesin kötü mü geliyor?
+
+67
+00:29:36,012 --> 00:29:37,412
+Biraz kısılıyor hocam.
+
+68
+00:29:37,972 --> 00:29:40,552
+Kısılıyor. Peki ben bir kontrol yapayım o zaman.
+
+69
+00:29:46,996 --> 00:29:58,675
+sorun yok gibi görünüyor. Yani sistemin şeyini değil, bir kafa mikrofonu aldım, onu kullanıyorum. Daha iyi çalışıyor diye ümit ediyorum.
+
+70
+00:30:00,615 --> 00:30:11,776
+We can switch to English. In this week, we will talk about the decision trees and also overfitting.
+
+71
+00:30:14,291 --> 00:30:36,771
+At the beginning, I will explain the structure of supervised methods. In supervised classification methods, we need a training dataset and test dataset. That's why when we start to study in data mining,
+
+72
+00:30:37,364 --> 00:30:46,044
+Bu da bu tarifte bir tarifte ve test setiyle bir tarifte bir tarifte.
+
+73
+00:30:46,044 --> 00:30:52,364
+Bu tarifte bir tarifte bir tarifte bir tarifte bir tarifte.
+
+74
+00:30:52,364 --> 00:30:59,604
+Ve bu tarifte bir tarifte bir tarifte bir tarifte.
+
+75
+00:31:00,084 --> 00:31:07,244
+Ama aslında, in our dataset, we have a class label as a ground truth in a test set.
+
+76
+00:31:07,244 --> 00:31:09,244
+Ama we will...
+
+77
+00:31:11,923 --> 00:31:38,892
+ve test
+
+78
+00:31:39,827 --> 00:31:59,307
+ve bu bölümde kullanmanızı kullanmak için kullanmanızı kullanmak için kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı kullanmanızı
+
+79
+00:31:59,508 --> 00:32:03,508
+bu model olarak bu model olarak
+
+80
+00:32:03,508 --> 00:32:06,508
+ve bu model olarak
+
+81
+00:32:06,508 --> 00:32:09,508
+bu model olarak
+
+82
+00:32:09,508 --> 00:32:11,508
+ve bu model olarak
+
+83
+00:32:11,508 --> 00:32:17,508
+bu model olarak
+
+84
+00:32:17,508 --> 00:32:19,508
+ve bu model olarak
+
+85
+00:32:19,508 --> 00:32:21,508
+bu model olarak
+
+86
+00:32:26,259 --> 00:32:48,659
+When we look at the decision trees, decision trees, decision tree algorithm is a supervised classification algorithm, and we need a class labeled training instances in this method. And the decision trees looks like a flowchart.
+
+87
+00:32:48,980 --> 00:32:54,019
+ve bu tree, internal nodes,
+
+88
+00:32:54,019 --> 00:32:57,980
+test attributes ve
+
+89
+00:32:57,980 --> 00:32:59,980
+leaf nodes
+
+90
+00:32:59,980 --> 00:33:03,980
+will be our class labels in this tree.
+
+91
+00:33:03,980 --> 00:33:06,980
+And in a decision tree,
+
+92
+00:33:06,980 --> 00:33:09,932
+root node
+
+93
+00:33:10,163 --> 00:33:20,284
+ROOTNODE, or topmost node in this tree, will be called as ROOTNODE.
+
+94
+00:33:28,147 --> 00:33:32,587
+To explain the decision trees, I will use an example again.
+
+95
+00:33:32,587 --> 00:33:36,367
+Here we have a credit card promotion data set.
+
+96
+00:33:36,847 --> 00:33:41,807
+In this data set, output variable will be life insurance promotion.
+
+97
+00:33:42,367 --> 00:33:48,447
+And the remaining columns will be our input variables.
+
+98
+00:33:49,107 --> 00:33:51,047
+It means futures.
+
+99
+00:33:51,748 --> 00:33:53,567
+And we have income range.
+
+100
+00:33:54,963 --> 00:34:20,652
+Bu da bu
+
+101
+00:34:21,076 --> 00:34:47,596
+Bu da kestimde de kestimde de kestimde de kestimde de kestimde de kestimde de kestimde de kestimde de kestimde de kestimde de kestimde de kestimde de kestimde de kestimde de kestimde de kestimde de kestimde de kestimde de kestimde de kestimde de kestimde de kestimde de kestimde de kestimde de kestimde de kestimde de kestimde de kestimde de kestimde de kestimde de kestimde de kestimde de kestimde de kestimde de kestimde de kestimde de kestimde de kestimde de kestimde de kestimde de kestimde de kestimde de kestimde de kestimde de k
+
+102
+00:34:47,668 --> 00:35:12,684
+Bu, bu
+
+103
+00:35:12,980 --> 00:35:25,360
+ve 30 ve 40.
+
+104
+00:35:25,360 --> 00:35:29,360
+Bu da anual incomelerle paylaştırma.
+
+105
+00:35:29,360 --> 00:35:33,360
+Ve anual incomelerle paylaştırma.
+
+106
+00:35:39,668 --> 00:36:07,148
+Bir, bir
+
+107
+00:36:07,443 --> 00:36:15,443
+And the third one here belongs to Yes Class and the fourth one belongs to Yes Class.
+
+108
+00:36:16,744 --> 00:36:22,663
+Hocam, bölüyorum kusura bakmayın ama sesiniz çok gidip geliyor. Arkadaş da yazdı şimdi.
+
+109
+00:36:23,284 --> 00:36:27,864
+Öyle mi? Okey. Peki, bir daha kontrol ediyorum.
+
+110
+00:36:35,027 --> 00:36:42,507
+Mikrofonu aslında sorun yok gibi görünüyor burada. Çünkü sistemi değil, şeyi kullanıyorum. Bir saniye.
+
+111
+00:36:44,407 --> 00:36:47,167
+Bir denetim masasından bir de kontrol edelim.
+
+112
+00:41:46,387 --> 00:41:51,728
+Şu anda düzelmiş olması gerekiyor. Mouse'u hareket ettirdiğimde ses düzgün geliyor mu acaba?
+
+113
+00:41:54,728 --> 00:41:55,827
+Geliyor sanki.
+
+114
+00:41:55,827 --> 00:42:02,047
+Tamam. Şimdi ses ayarlarıyla biraz oynadım. Sanıyorum düzelttim.
+
+115
+00:42:09,876 --> 00:42:11,036
+Bu yüzden devam edebiliriz.
+
+116
+00:42:20,659 --> 00:42:21,659
+Tamam.
+
+117
+00:42:25,588 --> 00:42:34,068
+Here we use income range as a root node in our decision tree.
+
+118
+00:42:34,068 --> 00:42:42,708
+And each branch of the node, we place the values of the income range.
+
+119
+00:42:43,508 --> 00:42:51,448
+And the samples belongs to this income range.
+
+120
+00:42:52,028 --> 00:42:53,588
+Here we can see we have...
+
+121
+00:42:53,588 --> 00:43:01,588
+2 yes class and 2 no class samples in our subset.
+
+122
+00:43:01,588 --> 00:43:08,588
+And in the second branch we can see income range between 30 and 40K.
+
+123
+00:43:08,588 --> 00:43:13,588
+We have 4 yes and 1 no class samples.
+
+124
+00:43:13,588 --> 00:43:17,484
+We have 5 samples in this range.
+
+125
+00:43:18,260 --> 00:43:22,420
+Bu bir parçal decision tree.
+
+126
+00:43:22,420 --> 00:43:24,700
+Bu parçal decision tree.
+
+127
+00:43:24,700 --> 00:43:28,020
+Bu bir parçal decision tree.
+
+128
+00:43:28,020 --> 00:43:29,900
+Ve
+
+129
+00:43:29,900 --> 00:43:32,220
+if we
+
+130
+00:44:00,307 --> 00:44:08,867
+Çünkü majority, we can select the class label as a yes class.
+
+131
+00:44:10,387 --> 00:44:23,347
+Because when we put the yes label on this leaf node, in this case, we will have one misclassified samples.
+
+132
+00:44:24,052 --> 00:44:33,692
+In the next one, in this range between 40k and 50k, we have one yes and three no class samples.
+
+133
+00:44:34,251 --> 00:44:44,771
+And if we accept that this will be a leaf node, in this case we need to select a class label for this leaf node.
+
+134
+00:44:44,771 --> 00:44:49,811
+And the class label should be no.
+
+135
+00:44:50,255 --> 00:45:06,187
+Bu, bu
+
+136
+00:45:06,643 --> 00:45:22,903
+And the next one, we have two yes class samples. In this case, we can put a class label as yes for this part and we don't have any misclassified samples in this branch.
+
+137
+00:45:24,115 --> 00:45:49,099
+Bu bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir ör
+
+138
+00:45:49,907 --> 00:46:05,907
+Here, you can see that if we use credit card insurance attribute as root node, we have no and yes values.
+
+139
+00:46:05,907 --> 00:46:09,448
+And in no branch,
+
+140
+00:46:09,907 --> 00:46:22,827
+ve en no-branchi, 12'e, ve en half of them from yes-class ve en half is from no-class.
+
+141
+00:46:24,628 --> 00:46:39,048
+In this case, if we have equal number of samples in each class, there is no majority and it is difficult to select the class or class label for this leaf node.
+
+142
+00:46:39,048 --> 00:46:51,908
+And our aim is to generate a purity.
+
+143
+00:46:52,628 --> 00:47:16,620
+bu bölümde
+
+144
+00:47:20,211 --> 00:47:43,551
+In this example, the last column shows the age and this attribute is the numerical attribute in this data set. And for numeric values, we need a split point.
+
+145
+00:47:44,692 --> 00:48:04,751
+ve bu dağıtta bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir değerli bir
+
+146
+00:48:04,751 --> 00:48:16,351
+Age lower than or equal to 43 will be on the left hand side and greater than 43 will be on the right hand side.
+
+147
+00:48:16,628 --> 00:48:30,948
+Bu, bu, standard usage for splitting value. Always we need to use lower than or equal to values on the left hand side.
+
+148
+00:48:30,948 --> 00:48:44,628
+Okay. And greater than splitting value will be right hand side. And here when we look at the subset on left hand side,
+
+149
+00:48:44,628 --> 00:48:50,408
+We have nine yes class and three no class samples.
+
+150
+00:48:52,436 --> 00:49:06,676
+Actually, there is no equal distribution to classes, that's why it's easy to select a class label if we think that this is a leaf node.
+
+151
+00:49:06,676 --> 00:49:15,676
+We will put the class label as yes class and if the left branch is...
+
+152
+00:49:16,659 --> 00:49:23,659
+Evet, bu
+
+153
+00:49:26,643 --> 00:49:33,403
+On the right-hand side, we have three no-class samples and we don't have any samples from yes-class.
+
+154
+00:49:33,403 --> 00:49:45,804
+And we can select the class label as no and there is no misclassified samples because there is a purity on this part.
+
+155
+00:49:46,867 --> 00:50:04,427
+And in decision trees to measure the purity, we can use entropy. You know the entropy, we talked about it in our previous sections.
+
+156
+00:50:06,568 --> 00:50:07,568
+Okay.
+
+157
+00:50:10,568 --> 00:50:11,207
+Here.
+
+158
+00:50:12,788 --> 00:50:34,219
+Bu, bu
+
+159
+00:50:41,396 --> 00:50:54,896
+Ok, decision 3 is developed in 1970s and the first algorithm is called as ID3.
+
+160
+00:50:58,255 --> 00:51:01,815
+Bu algoritma erken ve
+
+161
+00:51:01,815 --> 00:51:05,255
+ve
+
+162
+00:51:05,255 --> 00:51:08,015
+C4.5
+
+163
+00:51:08,015 --> 00:51:08,915
+ve
+
+164
+00:51:08,915 --> 00:51:09,895
+bu
+
+165
+00:51:09,895 --> 00:51:11,996
+bençmark
+
+166
+00:51:11,996 --> 00:51:12,755
+for
+
+167
+00:51:12,755 --> 00:51:13,415
+new
+
+168
+00:51:13,415 --> 00:51:14,795
+supervised
+
+169
+00:51:14,795 --> 00:51:15,695
+learning
+
+170
+00:51:15,695 --> 00:51:16,556
+algorithms
+
+171
+00:51:16,556 --> 00:51:19,355
+bu
+
+172
+00:51:19,355 --> 00:51:20,255
+base
+
+173
+00:51:20,255 --> 00:51:20,735
+learner
+
+174
+00:51:20,735 --> 00:51:21,496
+or
+
+175
+00:51:21,496 --> 00:51:22,036
+base
+
+176
+00:51:22,036 --> 00:51:23,255
+classifier
+
+177
+00:51:23,255 --> 00:51:23,675
+in
+
+178
+00:51:23,675 --> 00:51:24,036
+data
+
+179
+00:51:24,036 --> 00:51:24,576
+mining
+
+180
+00:51:24,576 --> 00:51:25,536
+and
+
+181
+00:51:26,255 --> 00:51:31,255
+Eğer bir algoritma bir algoritma başlayalım,
+
+182
+00:51:31,255 --> 00:51:36,255
+bu algoritma başlayalım.
+
+183
+00:51:36,255 --> 00:51:40,255
+Bu algoritma başlayalım.
+
+184
+00:51:40,255 --> 00:51:44,255
+Bu bir algoritma başlayalım.
+
+185
+00:51:48,532 --> 00:52:11,612
+Ok, in decision trees, we have some test attributes, and their values can be discrete valued, their values can be continuous value, or their values can be discrete valued as binary.
+
+186
+00:52:12,436 --> 00:52:32,012
+Bu, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde
+
+187
+00:52:32,083 --> 00:52:45,063
+We have, for example, here, how many distinct values. That's why we have branches according to these values.
+
+188
+00:52:46,183 --> 00:52:59,063
+As an example here, we have a color feature. If in our data set we have five different colors, in this case we need five branches.
+
+189
+00:53:00,083 --> 00:53:07,083
+ve bu noktada ve bu noktada
+
+190
+00:53:07,083 --> 00:53:12,083
+eğer, bir noktada bir noktada
+
+191
+00:53:12,083 --> 00:53:20,083
+ve bu noktada bir noktada
+
+192
+00:53:20,083 --> 00:53:25,083
+bu noktada bir noktada
+
+193
+00:53:29,003 --> 00:53:31,563
+Ve bu bölümde de
+
+194
+00:53:31,563 --> 00:53:33,003
+tabelde
+
+195
+00:53:33,003 --> 00:53:34,003
+ve
+
+196
+00:53:34,003 --> 00:53:36,003
+continuuvalu.
+
+197
+00:53:36,003 --> 00:53:38,003
+Eğer
+
+198
+00:53:38,003 --> 00:53:39,003
+A'ı
+
+199
+00:53:39,003 --> 00:53:40,003
+ve
+
+200
+00:53:40,003 --> 00:53:41,003
+ifade etrafi
+
+201
+00:53:41,003 --> 00:53:43,003
+continuuvalu.
+
+202
+00:53:43,003 --> 00:53:44,003
+Bu
+
+203
+00:53:44,003 --> 00:53:45,003
+bu
+
+204
+00:53:45,003 --> 00:53:55,003
+bir
+
+205
+00:53:54,003 --> 00:54:04,923
+We will select a split point value and we will compare the attribute with this splitting point.
+
+206
+00:54:05,463 --> 00:54:13,903
+If the values lower than or equal to split point, they will be on left hand side of the tree.
+
+207
+00:54:14,708 --> 00:54:21,448
+And the greater than splitting point will be on right hand side.
+
+208
+00:54:21,648 --> 00:54:24,867
+We have two branches from this node.
+
+209
+00:54:25,268 --> 00:54:28,208
+If we have continuous values.
+
+210
+00:54:29,367 --> 00:54:31,948
+And in the third row.
+
+211
+00:54:32,532 --> 00:54:47,112
+3rd row, this row shows the discrete values, but their values are binary, like 0 or 1, or yes and no we can use.
+
+212
+00:54:47,771 --> 00:54:53,552
+In this case also we have two branches from this node.
+
+213
+00:54:59,572 --> 00:55:00,572
+Dekisi 3.
+
+214
+00:55:02,572 --> 00:55:07,572
+Ve bu algoritma, bu algoritma, bu algoritma.
+
+215
+00:55:24,480 --> 00:55:35,840
+And in the second step it says, choose an attribute that best differentiates the instances in t, data t.
+
+216
+00:55:38,291 --> 00:56:06,291
+We showed some examples in our previous slides. We need to select best classifier, which one differentiates the classes in this dataset. We need to check. And we will use entropy to decide the best differentiating features. Okay. And think that we select one of them from our
+
+217
+00:56:06,291 --> 00:56:08,291
+asa root node.
+
+218
+00:56:08,291 --> 00:56:12,072
+Bu üçe
+
+219
+00:56:12,072 --> 00:56:14,231
+birçok
+
+220
+00:56:14,867 --> 00:56:42,867
+ve bu adıları adı
+
+221
+00:56:42,867 --> 00:56:48,867
+ve en
+
+222
+00:56:48,867 --> 00:56:49,867
+birçok
+
+223
+00:56:49,867 --> 00:56:50,867
+ok?
+
+224
+00:56:50,867 --> 00:56:52,867
+Step 4
+
+225
+00:56:52,867 --> 00:56:53,867
+for each
+
+226
+00:56:53,867 --> 00:56:54,867
+subset
+
+227
+00:56:54,867 --> 00:56:54,976
+ok
+
+228
+00:56:54,976 --> 00:56:56,976
+İstediğiniz için, birçok birçok var.
+
+229
+00:56:56,976 --> 00:57:00,976
+İstediğiniz için, birçok var.
+
+230
+00:57:00,976 --> 00:57:04,976
+Birçok var.
+
+231
+00:57:04,976 --> 00:57:06,976
+Ve buçok var.
+
+232
+00:57:06,976 --> 00:57:14,976
+Birçok var.
+
+233
+00:57:17,492 --> 00:57:34,292
+ve if we don't have any other attributes in our dataset, it means, think that we have three different attributes in our dataset. In this case, we can obtain three levels.
+
+234
+00:57:34,771 --> 00:57:44,152
+If we don't have any other attributes to divide the dataset, we will stop this operation.
+
+235
+00:57:45,072 --> 00:57:53,492
+Otherwise, we will continue to divide the data by selecting some other attributes as a test node.
+
+236
+00:57:57,172 --> 00:58:13,311
+Okay, we said that we will use entropy for measuring the purity. And I will explain the entropy again.
+
+237
+00:58:15,539 --> 00:58:24,139
+To calculate the entropy, think that we have a data set with positive and negative samples.
+
+238
+00:58:24,139 --> 00:58:34,659
+In this case, we can calculate the probability of positive class and also we can calculate the probability of negative class.
+
+239
+00:58:35,539 --> 00:58:40,480
+By using these probabilities, we can calculate the entropy.
+
+240
+00:58:49,076 --> 00:58:54,155
+Ok, entropi will be with a minus sign in front of the equation.
+
+241
+00:58:56,115 --> 00:59:14,735
+Probability of positive class times log base 2 probability of positive class and plus probability of negative class times log base 2 probability of negative class.
+
+242
+00:59:14,735 --> 00:59:23,895
+This is the equation of entropy for two classes. You know this calculation.
+
+243
+00:59:24,115 --> 00:59:28,115
+Çünkü bunu kullanmadık, bu kadar önceki bu konuda kullanmadık.
+
+244
+00:59:31,860 --> 00:59:55,039
+Ok, if we need to select root node, we need an attribute selection measure. And in this section, to select the attributes, we will use information gain.
+
+245
+00:59:55,476 --> 01:00:20,356
+ve, at the beginning, I will explain some symbols here. P i represents the probability of class i. And in our dataset, we have dataset D. And in this dataset, we have some classes.
+
+246
+01:00:21,780 --> 01:00:48,460
+like ci. And here, this sign represents the cardinality of set. It means, for example, here, the lines around the d represents the cardinality of
+
+247
+01:00:49,748 --> 01:01:12,907
+Dataset D, it means the number of elements in this dataset. Okay? How many samples we have on this dataset. And also here, CID represents the number of elements in CIClass in this dataset.
+
+248
+01:01:18,771 --> 01:01:31,731
+And the ratio of the numbers gives the probability of class E, Ci.
+
+249
+01:01:35,668 --> 01:01:59,548
+At the beginning, before the splitting operation, we need to calculate the entropy of the dataset. InfoD represents the entropy of the dataset. You can see here we have a minus symbol and with a sigma from 1 to m, probability of class I.
+
+250
+01:02:02,867 --> 01:02:28,768
+log Bayes 2, probability of class I. This is the entropy of the dataset D. And think that in this dataset we have some attributes and one of them is A. This is the attribute A. And when we use this attribute as a root node,
+
+251
+01:02:29,364 --> 01:02:50,364
+We will separate the data into some branch. In this case, think that we have y different branch on this attribute. In this case, sigma...
+
+252
+01:02:51,188 --> 01:03:16,428
+J from 1 to V, Y, sorry, D, J represents the number of elements on this branch, and D represents the number of elements in data set times entropy of subset D, J.
+
+253
+01:03:19,219 --> 01:03:34,519
+Entropi of the attribute A. When we use the attribute A to separate the data, in this case, the entropy will be info A, D.
+
+254
+01:03:34,519 --> 01:03:46,519
+And to calculate the information gain, gain A represents the information gain of attribute A.
+
+255
+01:03:47,507 --> 01:04:07,208
+And it is represented with a subtraction from info D. We will subtract the info A, D. This is the information gain equation for decision trees.
+
+256
+01:04:09,347 --> 01:04:13,088
+Hocam, ortadaki formüle I neydi? Tekrar söyler misiniz?
+
+257
+01:04:14,260 --> 01:04:17,340
+Çarpımın yanındaki.
+
+258
+01:04:19,080 --> 01:04:22,480
+Şöyle açıklayalım, bir Türkçe'de geçeyim.
+
+259
+01:04:24,080 --> 01:04:27,840
+Lütfen şeyi düşünün, az önce yaptığımız örneklerde...
+
+260
+01:04:29,664 --> 01:04:47,604
+Income Range vardı, gelir aralığı. Dört farklı değer alıyordu. Kişilerin gelir aralığı 20-30 bin olabilir, 30-40 bin arası olabilir, 40-50 bin veya 50-60 bin olabilir. Dört tane farklı aralık vardı, o düğümden çıkan.
+
+261
+01:04:57,664 --> 01:05:15,064
+D, J dediğim birinci koldaki bu kola düşen sample sayısı bölü toplam sample sayısı. Bu ne demek? Bu orantı aslında ağacın o kolunun olma olasılığı demek.
+
+262
+01:05:24,211 --> 01:05:27,692
+örneklerin, yani o sapsetin, o kümenin
+
+263
+01:05:27,827 --> 01:05:51,967
+entropisini gösteriyor. I, D, J dediğimiz burada o subsetin entropisini gösteriyor. Bu entropiyi nasıl hesaplayacağız? Bu artık bir alt küme. Mesela o alt küme içerisinde iki tane yes sınıfından, iki tane no sınıfından sample var. Bu durumda bu dört tane sample için tekrar bir entropi hesaplayacağım. Yani bu alt kümenin entropisini gösteriyor.
+
+264
+01:05:54,099 --> 01:06:04,480
+Ve buradan bulduğumuz işte J eşit birden dörde kadar her ağacın her kolu için bu işlemi yapıp bu işlem sonuçlarını üst üste topluyoruz.
+
+265
+01:06:04,480 --> 01:06:17,079
+Böylece A öz niteliğinin dört tane kolunda oluşan entropilerin toplamını hesaplamış oluyoruz. Bu da info AD dediğimiz değer olmuş oluyor.
+
+266
+01:06:18,175 --> 01:06:26,175
+Bilgi kazancı dediğimiz kazanç ise verinin bütününden hesapladığımız entropi eksi...
+
+267
+01:06:26,452 --> 01:06:35,032
+Bu öz nitelik için hesapladığımız entropi, bu ikisinin farkı bize A öz niteliğinin bilgi kazancını veriyor.
+
+268
+01:06:35,032 --> 01:06:52,172
+Biz bu işlemi veri setindeki her öz nitelik için tekrarlıyoruz ve hangi öz nitelik için en büyük kazanç sağlanıyorsa onu kök düğüm olarak ağacın en üst noktasına yerleştiriyoruz.
+
+269
+01:06:52,980 --> 01:06:55,920
+Özetle bu şekilde açıklayabiliriz.
+
+270
+01:06:58,000 --> 01:07:11,760
+Şimdi, evet saat 10 oldu. Bir 10 dakika ara vereceğim. 10 dakika ara, ondan sonra bir örnekle devam edeceğiz. Sorularınız varsa aradan sonra alacağım.
+
+271
+01:18:41,363 --> 01:18:45,123
+Evet, sevgili arkadaşlar, ara bitti, derse başlayabiliriz.
+
+272
+01:18:46,203 --> 01:18:48,064
+Yoklama alayım bakayım, kimler burada?
+
+273
+01:18:51,083 --> 01:18:51,843
+Elleri görelim.
+
+274
+01:19:00,564 --> 01:19:01,064
+Evet.
+
+275
+01:19:04,595 --> 01:19:11,956
+Kimler burada, kimler uyumaya gitti acaba? Bilgisayarın başında olmayanları olanları bir görelim.
+
+276
+01:19:25,300 --> 01:19:42,260
+43 olduk. 43 kişi buradayım dedi. Diğerleri yok ama henüz. Evet, sevgili arkadaşlar, derse başlayacağım. Çayımızı, kahvemizi aldık. Bilgisayarın başındayız.
+
+277
+01:19:45,492 --> 01:19:59,272
+Evet, teşekkür ediyorum sevgili arkadaşlar. 48 kişi burada, 50 olduk ama sınıfın 3'te 1'i hala yok burada. Umarım onlar da katılırlar aramıza.
+
+278
+01:20:00,792 --> 01:20:11,512
+Evet, şimdi bir örnek yapacağım. Örnekle devam edeceğim. Sınavlarla ilgili henüz bir açıklama yapamıyorum.
+
+279
+01:20:12,020 --> 01:20:14,640
+[öğrenci]...
+
+280
+01:20:14,640 --> 01:20:42,579
+O yüzden en erken 8. hafta gibi olabilir. Şu anda biz 6. haftadayız. Ama size mutlaka tabii ki öncesinde bilgi vereceğim. Bu ödev işi güzel gidiyor gibi geliyor bana. Eğer ödev ağırlıklı yaparsak dersi sadece bir tane sınav yapmam yeterli olur. O sınavı da işte hani yine 10. haftaya doğru yapmak daha mantıklı olur.
+
+281
+01:20:42,640 --> 01:21:04,200
+diye düşünüyorum. Ama sınav haftasıyla ilgili size mutlaka açıklama yapacağım. Belki bölüm bir sınav haftası tanımlayabilir. Onu da henüz bilmiyorum. O yüzden biraz bekleyelim. Sınavdan en az bir iki hafta önce size bununla ilgili zaten bilgi vereceğim. Endişe etmeyin o yüzden.
+
+282
+01:21:10,579 --> 01:21:25,059
+Şimdilik ödev ağırlıklı gidelim. Bakalım ne oluyor? Tabii bu ödevlerle ilgili bu açıklamayı yapmam beni üzüyor aslında ama yine de söylemek zorundayım.
+
+283
+01:21:26,579 --> 01:21:38,020
+Ödevleri lütfen kendiniz yapın. Başkasının yaptığı ödevi bana getirmeyin. Anladığınızı, anladığınız kadarıyla ödevde yazıp gönderin.
+
+284
+01:21:38,484 --> 01:21:46,924
+Bunu eğer sağlayabilirsek, bu dersten en yüksek verimi alacağımıza inanıyorum.
+
+285
+01:21:49,744 --> 01:21:58,543
+Evet, sevgili arkadaşlar, şimdi dersi devam edeceğim. Teorik bölümle ilgili açıklamaları yaptıktan sonra bir örnek vereceğiz demiştim.
+
+286
+01:22:00,004 --> 01:22:01,564
+Örneğimizi açalım.
+
+287
+01:22:16,404 --> 01:22:42,704
+Evet.
+
+288
+01:22:42,703 --> 01:22:49,403
+We have attributes as age, income, student and credit rating.
+
+289
+01:22:50,203 --> 01:22:56,623
+In this data set, we have four attributes.
+
+290
+01:22:57,903 --> 01:23:01,483
+All of the attributes are categorical.
+
+291
+01:23:02,384 --> 01:23:07,603
+And we have how many samples we have in this data set.
+
+292
+01:23:25,171 --> 01:23:26,051
+Are you sure?
+
+293
+01:23:33,011 --> 01:23:36,092
+Evet, 14 samples.
+
+294
+01:23:37,391 --> 01:23:51,871
+And please take a note or you can take a photo of the data set and I will use the board.
+
+295
+01:23:52,971 --> 01:24:00,051
+And in this case you cannot see the slide again.
+
+296
+01:24:01,403 --> 01:24:04,403
+Evet.
+
+297
+01:24:01,203 --> 01:24:18,956
+Bu konuda bir soru sor
+
+298
+01:24:33,747 --> 01:24:35,647
+or age attribute, year.
+
+299
+01:25:26,484 --> 01:25:26,804
+Ok.
+
+300
+01:25:35,859 --> 01:25:41,920
+In this dataset, we have how many distinct values we have.
+
+301
+01:25:42,819 --> 01:26:03,219
+It can be lower than or equal to 30, between 31 and 40, and can be greater than 40.
+
+302
+01:26:04,564 --> 01:26:19,784
+And for each subset here, how many samples we have on this dataset in this branch?
+
+303
+01:26:20,784 --> 01:26:24,463
+Lower than or equal to 30.
+
+304
+01:26:33,332 --> 01:26:39,332
+Evet, evet.
+
+305
+01:26:39,332 --> 01:27:00,332
+Evet,
+
+306
+01:27:00,659 --> 01:27:11,579
+31 ve 40, we have 4 samples, and all of them belong to the Yes class.
+
+307
+01:27:15,731 --> 01:27:20,771
+ve 40'e,
+
+308
+01:27:20,771 --> 01:27:25,771
+we have 5 samples, 3'e,
+
+309
+01:27:25,771 --> 01:27:28,771
+from Yes class,
+
+310
+01:27:28,771 --> 01:27:32,771
+and 2'e, from No class.
+
+311
+01:27:32,771 --> 01:27:33,932
+Okay?
+
+312
+01:27:33,932 --> 01:27:37,771
+And for this dataset,
+
+313
+01:27:37,771 --> 01:27:43,692
+we need to calculate the info age,
+
+314
+01:27:48,231 --> 01:27:49,231
+Evet,
+
+315
+01:27:46,515 --> 01:27:50,515
+Bu da setiçler için bir şey var.
+
+316
+01:28:04,180 --> 01:28:24,280
+On each branch, how many samples we have, we will write it and the total number of samples in this data set and entropy of each branch, entropy of each branch, dj.
+
+317
+01:28:24,280 --> 01:28:30,360
+This is the equation and we will use.
+
+318
+01:28:30,899 --> 01:28:37,899
+Ve bu şekilde, bu birçok
+
+319
+01:28:43,923 --> 01:29:03,703
+We have 5 samples, that's why the total number of samples in this branch is 5, and the total number of samples in this data set is 14, and the entropy of dj.
+
+320
+01:29:27,347 --> 01:29:52,332
+ve bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu böl
+
+321
+01:29:54,771 --> 01:29:55,332
+Okay.
+
+322
+01:29:57,031 --> 01:30:02,031
+We can calculate the entropy of age attribute by this way.
+
+323
+01:30:02,031 --> 01:30:03,311
+And
+
+324
+01:30:09,555 --> 01:30:10,055
+Ok.
+
+325
+01:30:13,536 --> 01:30:15,796
+According to this dataset,
+
+326
+01:30:17,796 --> 01:30:21,796
+we have in this dataset, D dataset,
+
+327
+01:30:26,804 --> 01:30:33,644
+We have 14 samples. Total number of samples, 14.
+
+328
+01:30:37,332 --> 01:30:44,152
+Ve bu işe
+
+329
+01:30:44,152 --> 01:30:48,412
+Evet
+
+330
+01:30:48,412 --> 01:30:52,152
+ve bu işe
+
+331
+01:30:52,152 --> 01:31:02,792
+Bu işe
+
+332
+01:31:03,188 --> 01:31:11,068
+Eğer bir şirketlerimizin, biz de yasınıza
+
+333
+01:31:11,068 --> 01:31:14,148
+bu klası için bu klası için
+
+334
+01:31:17,203 --> 01:31:18,663
+The other one is negative.
+
+335
+01:31:22,323 --> 01:31:38,163
+And here I will ask a question. How many positive samples we have in this dataset? How many positive samples? Number of yes.
+
+336
+01:31:46,131 --> 01:31:51,652
+Evet, in positive class, we have 9 samples.
+
+337
+01:31:53,711 --> 01:32:00,251
+And in negative class, in this case, we have 5 samples.
+
+338
+01:32:02,411 --> 01:32:10,671
+And we need to calculate in for the entropy of the data set.
+
+339
+01:32:10,671 --> 01:32:13,671
+We can represent this data.
+
+340
+01:32:14,292 --> 01:32:18,112
+9 ve 5.
+
+341
+01:32:20,272 --> 01:32:33,112
+And if we want to write the entropy, the probability of positive class will be 9 over 14.
+
+342
+01:32:40,212 --> 01:32:58,192
+times log base to 9 over 14 plus probability of negative class 5 over 14 times log base to 5 over 14.
+
+343
+01:33:07,539 --> 01:33:08,539
+40.
+
+344
+01:33:08,539 --> 01:33:12,539
+This is the entropy of data set.
+
+345
+01:33:12,539 --> 01:33:18,539
+At the beginning, we calculate the entropy of the data set.
+
+346
+01:33:18,539 --> 01:33:30,539
+Now, I will calculate the information gain of the age attribute.
+
+347
+01:33:34,707 --> 01:33:44,387
+We can calculate the probabilities according to this equation.
+
+348
+01:33:44,387 --> 01:33:46,967
+Okay, I will write it again.
+
+349
+01:33:46,967 --> 01:34:01,707
+Info HD equal to 5 over 14.
+
+350
+01:34:03,507 --> 01:34:19,927
+3, 2, 4, over 14, 4, 0, plus 5, over 14, 2, 3.
+
+351
+01:34:23,380 --> 01:34:40,559
+I think they are two, three, not important. I changed the place of them, but not important. We will add them up. Okay.
+
+352
+01:34:45,939 --> 01:34:47,819
+Bu nasıl yazabiliriz?
+
+353
+01:34:55,252 --> 01:34:56,391
+İkincisi, bir şey.
+
+354
+01:34:59,988 --> 01:35:04,988
+Entropi of the subset 3, 2.
+
+355
+01:35:05,888 --> 01:35:10,448
+We can calculate the total number of samples are 5.
+
+356
+01:35:10,448 --> 01:35:27,328
+3 over 5 times log base 2, 3 over 5, plus 2 over 5 log base 2.
+
+357
+01:35:27,764 --> 01:35:29,244
+2 over 5
+
+358
+01:35:33,108 --> 01:35:52,108
+Okay. And what about this one? The probability of the first class is one. The probability of next class is...
+
+359
+01:35:52,756 --> 01:35:59,496
+Sorry, we have four samples in the first class and zero samples from the second class.
+
+360
+01:35:59,496 --> 01:36:14,636
+In this case, probabilities will be 4 over 4, it means 1, log base 2, 4 over 4, plus zero times.
+
+361
+01:36:20,243 --> 01:36:22,243
+Bu konuda bu konuda bir konuda bilgilerin.
+
+362
+01:36:22,243 --> 01:36:24,243
+Bu konuda bilgilerin.
+
+363
+01:36:24,243 --> 01:36:26,243
+Bunu bilgiyle ilgili bilgilerin.
+
+364
+01:36:26,243 --> 01:36:29,483
+Bu konuda bilgilerin.
+
+365
+01:36:43,636 --> 01:36:57,136
+Bu, bu, 0.
+
+366
+01:36:59,136 --> 01:36:59,516
+Ok.
+
+367
+01:37:01,096 --> 01:37:04,156
+At the end of this calculation,
+
+368
+01:37:04,416 --> 01:37:05,836
+we can find
+
+369
+01:37:05,836 --> 01:37:08,976
+info HD.
+
+370
+01:37:10,323 --> 01:37:18,483
+0.694.
+
+371
+01:37:20,483 --> 01:37:27,163
+This is the result of the entropy for age attribute.
+
+372
+01:37:27,163 --> 01:37:27,884
+Okay.
+
+373
+01:37:29,443 --> 01:37:36,783
+And we can calculate the info gain.
+
+374
+01:37:43,380 --> 01:37:44,800
+For age attribute.
+
+375
+01:37:48,979 --> 01:37:57,479
+Entropy of data set minus Entropy of age attribute.
+
+376
+01:38:03,444 --> 01:38:16,404
+Entropi of the dataset was 0.940-infoH 0.694.
+
+377
+01:38:17,404 --> 01:38:27,484
+That's why the gain will be 0.246.
+
+378
+01:38:28,484 --> 01:38:30,364
+This is the gain.
+
+379
+01:38:46,836 --> 01:38:47,836
+Okay.
+
+380
+01:38:49,396 --> 01:38:54,996
+We can see the calculations for age attribute.
+
+381
+01:38:55,716 --> 01:39:02,615
+And in a similar way, we can calculate the next one.
+
+382
+01:39:03,036 --> 01:39:09,396
+The next one is income, student and credit rating.
+
+383
+01:39:09,396 --> 01:39:10,576
+We can calculate.
+
+384
+01:39:15,923 --> 01:39:28,084
+Do you have any questions? Do you want to solve other attributes? Or we can skip to another example?
+
+385
+01:39:32,963 --> 01:39:34,484
+Buyurun.
+
+386
+01:39:38,996 --> 01:39:43,195
+Bakabilir mi acaba? İkinci slide'aydı galiba şey, tahtadaydı sonra.
+
+387
+01:39:43,216 --> 01:39:46,376
+Evet, tabii ki. Şurada.
+
+388
+01:39:48,775 --> 01:39:51,735
+Hocam şey, screenshot alacağım da yazamadım o yüzden.
+
+389
+01:39:53,315 --> 01:39:54,956
+Size bir iyilik yapayım.
+
+390
+01:39:57,015 --> 01:40:02,036
+Sayfanın üstünde gördüğünüz room kodunu alın, bu sayfaya bağlanın.
+
+391
+01:40:03,667 --> 01:40:13,167
+Online'da bu whiteboardta yazdıklarımı size push edeceğim. Ama tabii yazmanızı ayrıca isterim. O da güzel olur.
+
+392
+01:40:14,287 --> 01:40:15,347
+Teşekkür ederim hocam.
+
+393
+01:40:17,268 --> 01:40:21,427
+Bakayım derse kimse bağlanmış mı? Şu an kimse bağlanmamış derse.
+
+394
+01:40:23,947 --> 01:40:30,027
+Buradan push butonuna bastığım zaman size bunları gönderebiliyorum.
+
+395
+01:40:33,203 --> 01:40:35,523
+Rum kodu yukarıda görünüyor.
+
+396
+01:40:36,343 --> 01:40:38,043
+Evet, sorumu tekrarlıyorum.
+
+397
+01:40:38,783 --> 01:40:45,884
+Bu örnekte gördüğümüz diğer bir öz nitelik için aynı işlemleri birlikte yapalım mı?
+
+398
+01:40:45,984 --> 01:40:47,703
+Yoksa anladık, devam edelim.
+
+399
+01:40:49,323 --> 01:40:50,743
+Gerek yok mu diyorsunuz?
+
+400
+01:41:01,427 --> 01:41:02,868
+Yapsak iyi olur hocam bence.
+
+401
+01:41:05,448 --> 01:41:08,327
+Peki bir tane daha özüntelik için yapalım o zaman.
+
+402
+01:41:14,195 --> 01:41:19,675
+Evet, bağlanmaya başladınız. 2-4-6 kişi şu anda bağlandı.
+
+403
+01:41:20,675 --> 01:41:22,515
+[öğrenci] altyazı uygulamasına.
+
+404
+01:41:25,456 --> 01:41:35,036
+Buradan push dediğim zaman sadece push to students current page only, all pages. Bütün sayfaları paylaş.
+
+405
+01:41:36,775 --> 01:41:40,515
+Şimdi bağlananlarla bunları paylaşmış oldum.
+
+406
+01:41:46,323 --> 01:41:46,804
+Okay.
+
+407
+01:41:49,443 --> 01:41:55,963
+But in this part, you will help me because I don't have the numbers.
+
+408
+01:41:59,963 --> 01:42:04,763
+We can use income.
+
+409
+01:42:13,587 --> 01:42:27,448
+For income attribute, we have low, medium, and high alternatives.
+
+410
+01:42:27,448 --> 01:42:34,507
+And how many samples we have in low branch?
+
+411
+01:42:37,627 --> 01:42:39,627
+Dört yes, sıfır no.
+
+412
+01:42:44,787 --> 01:42:51,327
+Öyle mi gerçekten? 1, 2, 3, 4, 4, hayır değil.
+
+413
+01:42:53,587 --> 01:43:04,887
+In law, we have one yes, two yes and three one. Is that right?
+
+414
+01:43:09,684 --> 01:43:12,484
+Income, low branch,
+
+415
+01:43:18,484 --> 01:43:22,704
+Evet, pardon hocam, ben öğrencimi, sekmesi şey, kolumuna bakıyormuşum orada.
+
+416
+01:43:22,704 --> 01:43:44,804
+Okay. We have three, three yes, is that right? Yes, no, yes, yes. We have three yes and one no class. Is that right?
+
+417
+01:43:46,003 --> 01:43:49,503
+Please, give me a response.
+
+418
+01:43:50,083 --> 01:43:50,404
+Okay.
+
+419
+01:43:50,943 --> 01:43:59,283
+In medium part, we have six samples.
+
+420
+01:43:59,844 --> 01:44:02,724
+And how many of them belongs to yes class?
+
+421
+01:44:03,603 --> 01:44:04,123
+Dirt yes.
+
+422
+01:44:04,123 --> 01:44:04,683
+Four of them.
+
+423
+01:44:07,423 --> 01:44:08,263
+Okay.
+
+424
+01:44:08,943 --> 01:44:11,943
+Four yes and two no.
+
+425
+01:44:12,064 --> 01:44:12,804
+Is that right?
+
+426
+01:44:15,859 --> 01:44:23,779
+Okay, in high branch, how many samples we have?
+
+427
+01:44:30,292 --> 01:44:32,172
+Total, 4 samples?
+
+428
+01:44:33,212 --> 01:44:36,032
+2, yes, 2, no.
+
+429
+01:44:36,231 --> 01:44:37,311
+Okay, thank you.
+
+430
+01:44:42,931 --> 01:44:52,811
+Okay. In this case, how can we write the entropy? It means info...
+
+431
+01:44:59,764 --> 01:45:01,884
+info, income
+
+432
+01:45:05,587 --> 01:45:17,407
+I will write. And the probability of the low branch will be, what is the probability of this branch?
+
+433
+01:45:25,908 --> 01:45:29,568
+In a chat screen, I can see your answers.
+
+434
+01:45:34,579 --> 01:46:01,880
+Evet, thank you. 4 over 14, times, entropi of low branch, and entropi of the low branch, we have 3 yes and 1 no class samples. I will calculate it. And for the next one, for medium branch,
+
+435
+01:46:02,579 --> 01:46:07,440
+We have six samples, six over 14.
+
+436
+01:46:09,319 --> 01:46:21,699
+And the entropy or data is distributed to classes 4, 2, plus the probability of high class.
+
+437
+01:46:26,515 --> 01:46:52,075
+ve 4'e 14'e
+
+438
+01:46:54,963 --> 01:46:57,963
+If we want to calculate the...
+
+439
+01:47:00,963 --> 01:47:01,963
+here...
+
+440
+01:47:02,963 --> 01:47:04,963
+Entropy 2,2.
+
+441
+01:47:06,963 --> 01:47:10,963
+If the data is equally distributed to classes,
+
+442
+01:47:11,963 --> 01:47:15,963
+this is called as disordered configuration.
+
+443
+01:47:15,963 --> 01:47:18,963
+And for disordered configurations,
+
+444
+01:47:19,963 --> 01:47:21,963
+Entropy is...
+
+445
+01:47:22,836 --> 01:47:30,596
+Maximum value, and it should be 1, if we have two classes. If we have two classes, okay?
+
+446
+01:47:33,596 --> 01:47:49,236
+Please remember this equally distributed samples, and its probability will be 1. You can calculate it.
+
+447
+01:47:50,484 --> 01:48:02,064
+We used it in our previous lectures, and it will be 1. The unit is bit for the entropy.
+
+448
+01:48:03,344 --> 01:48:18,104
+And for the remaining part, you should calculate the probabilities, and then you can calculate the information gain.
+
+449
+01:48:18,739 --> 01:48:25,739
+ve
+
+450
+01:48:39,956 --> 01:49:01,655
+info d, minus info, income, d. And the result is, for income 0.029.
+
+451
+01:49:04,340 --> 01:49:10,579
+0.029, sorry, I will put a 0 here.
+
+452
+01:49:12,840 --> 01:49:14,180
+That's the idea.
+
+453
+01:49:25,811 --> 01:49:51,811
+You can calculate the information gain for the remaining attributes. I can write their values here. You can see it also in slide, but the info gain for age attribute was 0.2.
+
+454
+01:49:52,243 --> 01:49:55,724
+292.46
+
+455
+01:50:43,828 --> 01:51:03,828
+Okay. When we calculate the information gain of attributes, we can find the maximum gain for age attribute here, the maximum gain.
+
+456
+01:51:04,435 --> 01:51:14,515
+in age attribute. That's why we will use the age attribute as a root node in our decision tree.
+
+457
+01:51:14,515 --> 01:51:19,975
+And we will draw the tree here.
+
+458
+01:51:37,587 --> 01:51:39,403
+Yine aynı şeyi oluyor. Ne oluyor?
+
+459
+01:51:44,020 --> 01:51:46,960
+Çok basıyorum, ondan oluyor. Maviye geçmiş zaten.
+
+460
+01:51:46,960 --> 01:51:47,360
+Ok.
+
+461
+01:51:51,159 --> 01:51:54,280
+Ok. Our root node will be H.
+
+462
+01:51:57,876 --> 01:52:01,895
+Bu, a root node ve test node var.
+
+463
+01:52:03,036 --> 01:52:06,676
+We will separate the data and we will write
+
+464
+01:52:06,676 --> 01:52:15,496
+the subset of each branch.
+
+465
+01:52:16,556 --> 01:52:23,456
+Lower than or equal to 30, between 31 and 40.
+
+466
+01:52:24,020 --> 01:52:28,180
+ve 40.
+
+467
+01:52:31,699 --> 01:52:43,699
+İlk başta, bir süreçten, bir süreçten, kestimlerden ve kestimlerden ve kestimlerden ve 30'e kadar.
+
+468
+01:52:56,467 --> 01:53:24,395
+İki adım, İki adım, İki adım, İki adım, İki adım, İki adım, İki adım, İki adım, İki adım, İki adım, İki adım, İki adım, İki adım, İki adım, İki adım, İki adım, İki adım, İki adım, İki adım, İki adım, İki adım, İki adım, İki adım, İki adım, İki adım, İki adım, İki adım, İki adım, İki adım, İki adım, İki adım, İki adım, İki adım, İki adım, İki adım, İki adım, İki adım, İki adım, İki adım, İki adım, İki adım, İki adım, İki adım, İki adım, İki ad
+
+469
+01:53:24,532 --> 01:53:42,032
+Read them to me. I will write here. For example, the first one is, hi, no, fair, no. Hi, no, fair, no.
+
+470
+01:53:51,220 --> 01:53:53,319
+Excellent, no.
+
+471
+01:53:56,819 --> 01:53:58,199
+And the third one.
+
+472
+01:53:59,399 --> 01:54:00,680
+Love, yes. Excellent.
+
+473
+01:54:02,899 --> 01:54:03,579
+Yes.
+
+474
+01:54:03,579 --> 01:54:07,939
+Love, yes. Excellent. Yes. Thank you. And then.
+
+475
+01:54:15,380 --> 01:54:18,619
+Bunu hangi sıradan söylediniz şimdi siz bana?
+
+476
+01:54:19,680 --> 01:54:21,220
+Galiba yanlış söyledim.
+
+477
+01:54:21,460 --> 01:54:24,619
+Evet, medium, no, fair, no olacakmış.
+
+478
+01:54:25,840 --> 01:54:29,319
+Medium, no, fair, no olacakmış.
+
+479
+01:54:30,399 --> 01:54:31,420
+Kontrol ettim.
+
+480
+01:54:33,099 --> 01:54:36,199
+Bir saniye, medium, no, fair, no.
+
+481
+01:54:41,844 --> 01:54:47,324
+Ok, and the next one, low yes, fair yes.
+
+482
+01:54:53,108 --> 01:55:05,268
+And the last one, medium, yes, excellent, yes. Medium, yes, excellent, yes. Is that okay? Please check it.
+
+483
+01:55:07,188 --> 01:55:11,188
+Evet.
+
+484
+01:55:32,979 --> 01:55:36,819
+And for the last column I will write.
+
+485
+01:55:36,959 --> 01:55:45,719
+But for the first branch, our aim is to separate the no class and yes class.
+
+486
+01:55:45,859 --> 01:55:48,719
+That's why I will ask a question to you.
+
+487
+01:55:49,716 --> 01:56:15,276
+Şimdi, bu konuda bir nol bir n
+
+488
+01:56:43,667 --> 01:57:03,915
+bir adet veren bir adet veren bir adet veren bir adet veren bir adet veren bir adet veren bir adet veren bir adet veren bir adet veren bir adet veren bir adet veren bir adet veren bir adet veren bir adet veren bir adet veren bir adet veren bir adet veren bir adet veren bir adet veren bir adet veren bir adet veren bir adet veren bir adet veren bir adet veren bir adet veren bir adet veren bir adet veren bir adet veren bir adet veren bir adet veren bir adet veren bir adet veren bir adet veren bir adet veren bir adet veren bir adet veren bir adet veren bir adet veren bir adet veren bir adet veren bir adet veren bir adet veren bir adet veren bir adet veren bir adet
+
+489
+01:57:04,787 --> 01:57:28,867
+Actually, you can see here, if we select the student attribute, if a customer is a student, they buy a computer, but if they are not a student, they don't buy a computer.
+
+490
+01:57:28,867 --> 01:57:30,327
+We can see here.
+
+491
+01:57:32,787 --> 01:57:33,047
+Evet.
+
+492
+01:57:38,387 --> 01:57:42,487
+New test attribute here, student.
+
+493
+01:57:46,899 --> 01:57:52,559
+If the student is no, class label will be negative.
+
+494
+01:57:58,228 --> 01:58:07,608
+If the student question is yes, class label will be positive.
+
+495
+01:58:11,220 --> 01:58:32,180
+Okay. And for the third branch, I will add a subset here, income, student, credit rating, and class.
+
+496
+01:58:33,684 --> 01:58:48,604
+We have five samples again here, age is greater than 40. Age is greater than 40. We have medium, no, fair, yes.
+
+497
+01:58:50,604 --> 01:58:54,204
+Medium, no, fair, yes.
+
+498
+01:58:56,404 --> 01:59:05,724
+And the remaining values, could you give me the values for the remaining samples on this branch?
+
+499
+01:59:08,484 --> 01:59:10,244
+Greater than 40.
+
+500
+01:59:13,564 --> 01:59:15,444
+Low, yes. Fair, yes.
+
+501
+01:59:17,444 --> 01:59:20,583
+Thank you. And the next one.
+
+502
+01:59:22,420 --> 01:59:24,500
+Low, yes. Excellent, no.
+
+503
+01:59:28,692 --> 01:59:33,791
+Thank you. And we have two more values.
+
+504
+01:59:35,531 --> 01:59:37,551
+Medium, yes. Fair, yes.
+
+505
+01:59:43,091 --> 01:59:47,652
+And the last one. Medium no, excellent no.
+
+506
+01:59:51,252 --> 02:00:07,172
+Thank you. Yes, that's the subset for this branch. And in this branch, again our aim is to separate the yes and no classes.
+
+507
+02:00:07,680 --> 02:00:15,680
+ve ne ve ne ve ne.
+
+508
+02:00:19,891 --> 02:00:41,675
+İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngiliz
+
+509
+02:00:43,315 --> 02:00:49,836
+If the student is yes here, you can see class labels yes, no, yes, it's not suitable.
+
+510
+02:00:49,836 --> 02:00:54,076
+And for credit rating, what about credit rating?
+
+511
+02:00:55,475 --> 02:01:02,376
+If the credit rating is excellent, it gives no class.
+
+512
+02:01:03,775 --> 02:01:09,635
+And the fair gives the yes class.
+
+513
+02:01:10,163 --> 02:01:18,163
+Bu yüzden bu kredi ratingi seçtiği gibi bir test attribute.
+
+514
+02:01:23,315 --> 02:01:31,775
+ve if the credit rating is fair, class will be positive.
+
+515
+02:01:37,908 --> 02:01:46,648
+If the credit rating is excellent, class label will be negative.
+
+516
+02:01:48,807 --> 02:02:02,328
+And in this decision tree, we should write a number of instances for each branch.
+
+517
+02:02:03,091 --> 02:02:13,011
+For example, here for credit rating positive, credit rating is fair, credit rating is fair.
+
+518
+02:02:13,311 --> 02:02:16,951
+We have three samples and their class labels are yes.
+
+519
+02:02:17,271 --> 02:02:19,091
+We have three samples.
+
+520
+02:02:19,231 --> 02:02:23,231
+That's why we will write the number of samples on this branch.
+
+521
+02:02:23,931 --> 02:02:31,072
+And credit rating negative, we have or credit rating excellent, we have negative.
+
+522
+02:02:54,100 --> 02:02:59,100
+Tamam, tamam.
+
+523
+02:03:03,604 --> 02:03:10,824
+I will explain another idea here.
+
+524
+02:03:19,315 --> 02:03:25,795
+Why we select the Bayes Computer equal to yes as positive class.
+
+525
+02:03:26,935 --> 02:03:32,536
+And Bayes Computer no as a negative class.
+
+526
+02:03:33,935 --> 02:03:44,275
+If you have an electronic company and if you have a class labeled data, your aim
+
+527
+02:03:45,939 --> 02:03:51,851
+Bu, BAYS Computer Group'un
+
+528
+02:03:52,372 --> 02:03:55,072
+Buysa komputeri equal to yes group.
+
+529
+02:03:55,352 --> 02:04:03,092
+And you need to understand which customers buys computer.
+
+530
+02:04:03,752 --> 02:04:11,352
+That's why we will call this class as class positive on this example.
+
+531
+02:04:11,352 --> 02:04:18,412
+If you are studying for churn analysis.
+
+532
+02:04:19,507 --> 02:04:38,407
+You need to understand the customers who want to leave from your company. That's why your main concentration will be on churn class. And churn class becomes our positive class.
+
+533
+02:04:39,539 --> 02:05:03,779
+In a similar way, we are living in a pandemic days. And if you have a COVID virus in this case, this class is called as positive. That's the idea. The main concentration on which group? This will be our positive group. Okay?
+
+534
+02:05:05,171 --> 02:05:15,431
+Now, we completed an example. If you don't have any questions, I will give a break. Do you have any questions?
+
+535
+02:05:22,260 --> 02:05:24,620
+Okay, 10 minutes break.
+
+536
+02:18:31,763 --> 02:18:35,963
+Evet, merhaba arkadaşlar. Tekrar derse dönebiliriz.
+
+537
+02:18:41,716 --> 02:18:46,136
+Kimler burada? Bilgisayarın başında olanları görelim.
+
+538
+02:19:00,948 --> 02:19:17,448
+Şu an derste 75 kişiyiz. Henüz sınıfın üçte biri bilgisayarın başına gelmemiş. Geri kalan, yani gelen arkadaşlarıma teşekkür ediyorum öncelikle.
+
+539
+02:19:17,448 --> 02:19:22,128
+Az önce [öğrenci] bir soru sormuştunuz.
+
+540
+02:19:24,115 --> 02:19:34,376
+InfoDey'i nerede kullanıyoruz diye. Slide'da size onu açtım. Bilgi kazancını hesaplarken kullanıyoruz InfoDey'i.
+
+541
+02:19:43,252 --> 02:20:00,072
+Şurada her öz nitelik için bilgi kazancı hesaplarken verinin bütünü için hesapladığımız entropiden bu öz nitelik için hesapladığımız entropiyi çıkartarak aradaki farkı kazanç olarak ifade etmiştik.
+
+542
+02:20:01,072 --> 02:20:08,772
+Bu kazancı en büyük yapan öz niteliği de kök düğme yerleştirdik.
+
+543
+02:20:11,412 --> 02:20:26,952
+Dolayısıyla nerede kullanıldığı anlaşıldı herhalde. Burada az önce size hangi sınıfa pozitif, hangi sınıfa negatif isim vereceğimizi açıkladım. Bu da önemli bir konu.
+
+544
+02:20:38,804 --> 02:20:46,184
+İlgi alanınız ve incelemek istediğiniz grup hangisiyse ona pozitif isim vermeniz gerekiyor.
+
+545
+02:20:47,763 --> 02:20:57,484
+Ve bunu dikkatli kullanmanızı tavsiye ederim. Gelişi güzel seçilmediğini bilmenizi isterim. Bu da önemli bir konu yine.
+
+546
+02:20:59,484 --> 02:21:00,524
+Evet arkadaşlar.
+
+547
+02:21:06,675 --> 02:21:09,815
+Epey bir şey yaptık, örneği tamamladık.
+
+548
+02:21:11,815 --> 02:21:12,695
+Şimdi
+
+549
+02:21:17,907 --> 02:21:20,507
+Yeni bağlanan arkadaşları da push ettik.
+
+550
+02:21:23,647 --> 02:21:34,667
+Slide'dan devam edeceğim. İki tane daha örneğimiz var. Örneklerden bir tanesi, iki değil dört tane sınıf olması durumunda bu sistem nasıl çalışıyor onu gösteriyor.
+
+551
+02:21:36,907 --> 02:21:40,987
+Tamamını çözmeyeceğim. Sadece çözümlü örneğin üzerinden geçeceğiz.
+
+552
+02:21:44,531 --> 02:21:56,991
+Bir de nümerik öz nitelik üzerinde split point dediğimiz değeri nasıl seçiyoruz? Onunla ilgili bir örnek yapacağım. Slide üzerinden takip edebilirsiniz.
+
+553
+02:22:13,203 --> 02:22:38,883
+Okay, we have a second example here. This is a weekend example. And in this data set, we have 10 weekends. And for each weekend, according to weather conditions, parents with you or not, and according to money conditions,
+
+554
+02:22:41,043 --> 02:22:51,263
+There is a decision here, some weekend activities on this decision category we have.
+
+555
+02:22:51,263 --> 02:23:02,564
+And these can be go to cinema, play tennis, or stay in and shopping.
+
+556
+02:23:02,783 --> 02:23:06,583
+These are the decisions on this column.
+
+557
+02:23:09,043 --> 02:23:27,564
+Bu da 10 adet ile 10 adet ile 10 adet ile 10 adet ile 10 adet ile 10 adet ile 10 adet ile 10 adet ile 10 adet ile 10 adet ile 10 adet ile 10 adet ile 10 adet ile 10 adet ile 10 adet ile 10 adet ile 10 adet ile 10 adet ile 10 adet ile 10 adet ile 10 adet ile 10 adet ile 10 adet ile 10 adet ile 10 adet ile 10 adet ile 10 adet ile 10 adet ile 10 adet ile 10 adet ile 10 adet ile 10 adet ile 10 adet ile 10 adet ile 10 adet ile 10 adet ile 10 adet ile 10 adet ile 10 adet ile 10 adet ile 10 adet ile 10 adet ile 10 adet ile 10 adet ile 10 adet ile 10 adet ile 10 adet ile 10 adet ile 10 adet ile 10 adet ile 10 adet ile 10 adet ile 10 adet ile 10 adet ile 10 adet ile 10
+
+558
+02:23:27,860 --> 02:23:33,420
+...estimations for new test samples.
+
+559
+02:23:34,180 --> 02:23:34,540
+Okay.
+
+560
+02:23:35,220 --> 02:23:39,239
+You know, in this example, there is a difference
+
+561
+02:23:39,239 --> 02:23:42,260
+because we have four different classes.
+
+562
+02:23:42,460 --> 02:23:45,940
+This is the different way of this example.
+
+563
+02:23:45,940 --> 02:23:47,940
+If we have...
+
+564
+02:23:48,595 --> 02:24:12,216
+More than two classes, if we have four classes like this, we will use this situation on entropy calculations. At the beginning,
+
+565
+02:24:15,572 --> 02:24:28,211
+Maybe we can write here how many samples in cinema class and how many samples we have in tennis class.
+
+566
+02:24:29,492 --> 02:24:38,031
+Please take a note or take a screenshot for this data set. I will switch to boards.
+
+567
+02:24:45,907 --> 02:24:47,948
+Okay, for weekend example.
+
+568
+02:24:57,427 --> 02:25:01,187
+Cinema, we have
+
+569
+02:25:01,187 --> 02:25:05,087
+Cinema Klaus
+
+570
+02:25:15,603 --> 02:25:24,804
+We have tennis, stay in and shopping.
+
+571
+02:25:30,772 --> 02:25:46,152
+How many samples we have in cinema, tennis, staying and shopping classes? How many samples we have in cinema class? How many samples we have?
+
+572
+02:25:48,711 --> 02:25:49,472
+Six.
+
+573
+02:25:50,612 --> 02:25:55,372
+Okay, thank you. We have six samples. In tennis class?
+
+574
+02:25:56,372 --> 02:25:56,632
+Two.
+
+575
+02:26:27,188 --> 02:26:36,487
+Ama bu entropi ile bu formu göstereceğim.
+
+576
+02:26:41,459 --> 02:27:06,500
+Okay, and then I will write their probabilities and according to these probabilities and through P I can write the probability of cinema class 6 over 10 log base to 6 over 10 plus 2 over 10.
+
+577
+02:27:28,020 --> 02:27:35,500
+Okay, this is the entropy of the data. And if we have four classes.
+
+578
+02:27:40,884 --> 02:28:01,164
+In this case, by using information theory, you can think about the entropy, and the entropy is used for coding.
+
+579
+02:28:01,843 --> 02:28:16,043
+ve 4 farklı bir klasi ve if we use fixed lang kodin, in this case, we need 2 bits to represent these klasi.
+
+580
+02:28:16,595 --> 02:28:42,835
+Okay, that's why the maximum entropy can be 2, if we have 4 classes. Okay. And in this calculation, the entropy is, I can write it from here, 1.571.
+
+581
+02:28:43,763 --> 02:28:47,983
+Bir bit will be our entropy.
+
+582
+02:28:48,703 --> 02:28:49,023
+Okay.
+
+583
+02:28:49,384 --> 02:28:51,323
+It can be maximum 2.
+
+584
+02:28:51,323 --> 02:29:01,363
+If you find greater than 2, there is a mistake.
+
+585
+02:29:01,804 --> 02:29:05,063
+Please check your calculations.
+
+586
+02:29:05,903 --> 02:29:06,103
+Okay.
+
+587
+02:29:06,783 --> 02:29:11,083
+The entropy for four classes can be maximum.
+
+588
+02:29:11,600 --> 02:29:36,076
+Bu, bu
+
+589
+02:29:36,948 --> 02:30:00,000
+Burada da bilgi verenlerden bir şekilde verenlerden bir şekilde verenlerden bir şekilde verenlerden bir şekilde verenlerden bir şekilde verenlerden bir şekilde verenlerden bir şekilde verenlerden bir şekilde verenlerden bir şekilde verenlerden bir şekilde verenlerden bir şekilde verenlerden bir şekilde verenlerden bir şekilde verenlerden bir şekilde verenlerden bir şekilde verenlerden bir şekilde verenlerden bir şekilde verenlerden bir şekilde verenlerden bir şekilde verenlerden bir şekilde verenlerden bir şekilde verenlerden bir şekilde verenlerden bir şekilde verenlerden bir şekilde verenlerden bir şekilde verenlerden bir şekilde verenlerden bir şekilde verenlerden bir şekilde verenlerden bir şekilde verenlerden bir şekilde verenlerden bir şekilde verenlerden bir şekilde verenlerden bir şekilde verenlerden bir şekilde verenlerden bir şekilde verenlerden bir şekilde verenler
+
+590
+02:30:00,000 --> 02:30:07,000
+ve
+
+591
+02:30:07,000 --> 02:30:20,876
+bu
+
+592
+02:30:25,363 --> 02:30:32,743
+You can see here for sunny branch, the next test attribute will be parents.
+
+593
+02:30:33,384 --> 02:30:39,023
+But here, this can be different one in this decision tree.
+
+594
+02:30:39,023 --> 02:30:44,283
+Okay, this is a second example for decision trees.
+
+595
+02:30:44,723 --> 02:30:49,824
+In this example, we saw that more than two classes.
+
+596
+02:30:50,664 --> 02:30:53,363
+And now, if you don't...
+
+597
+02:30:53,363 --> 02:30:58,144
+If you don't have any questions, I will give another example. Do you have any questions?
+
+598
+02:31:06,611 --> 02:31:23,611
+No questions? Okay. The next one, the next example is numerik, includes a numerik attribute. You can see here we have a small data set again. We have three attributes.
+
+599
+02:31:24,308 --> 02:31:28,568
+ve a class label on last column.
+
+600
+02:31:29,208 --> 02:31:33,247
+And the name of the classes are class 1 and class 2.
+
+601
+02:31:33,368 --> 02:31:35,247
+We have two different classes.
+
+602
+02:31:36,348 --> 02:31:39,407
+And in this data set, we have...
+
+603
+02:31:44,003 --> 02:31:50,003
+bu
+
+604
+02:31:43,379 --> 02:31:45,379
+14 samples.
+
+605
+02:31:45,379 --> 02:31:47,379
+Ve
+
+606
+02:31:47,379 --> 02:31:49,379
+ve
+
+607
+02:31:49,379 --> 02:31:51,379
+class 1 and class 2
+
+608
+02:31:51,379 --> 02:31:53,379
+samples,
+
+609
+02:31:53,379 --> 02:31:55,379
+you can see class 1
+
+610
+02:31:55,379 --> 02:31:57,379
+we have
+
+611
+02:31:57,379 --> 02:31:59,379
+9 samples from class 1
+
+612
+02:31:59,379 --> 02:32:01,379
+and
+
+613
+02:32:01,379 --> 02:32:03,379
+the remaining 5
+
+614
+02:32:03,379 --> 02:32:05,379
+samples from class 2.
+
+615
+02:32:05,379 --> 02:32:07,379
+That's why we can
+
+616
+02:32:07,379 --> 02:32:09,379
+calculate
+
+617
+02:32:13,363 --> 02:32:15,363
+We can calculate the...
+
+618
+02:32:18,363 --> 02:32:20,783
+Here, I will use it.
+
+619
+02:32:21,644 --> 02:32:28,903
+We have nine samples from class one and five samples from class two.
+
+620
+02:32:29,423 --> 02:32:31,363
+That's why we can calculate the...
+
+621
+02:32:35,796 --> 02:32:42,716
+Entropi of the given dataset is 0.94.
+
+622
+02:32:43,515 --> 02:32:46,216
+Here, entropy of the dataset.
+
+623
+02:32:47,015 --> 02:32:51,536
+And we have two categorical attributes here.
+
+624
+02:32:52,636 --> 02:32:54,236
+This one.
+
+625
+02:32:54,804 --> 02:33:09,023
+And this one, these are categoric attributes and we know how to calculate the information gain for categoric attributes.
+
+626
+02:33:09,023 --> 02:33:19,443
+We can calculate their entropy and also we can calculate their information gain.
+
+627
+02:33:19,796 --> 02:33:29,216
+You can see here for attribute 1, information gain is 0.246.
+
+628
+02:33:29,216 --> 02:33:41,095
+And for the next categoric attribute A3, here we have information gain as 0.048.
+
+629
+02:33:41,876 --> 02:33:44,296
+Okay, and we have another one.
+
+630
+02:33:44,736 --> 02:33:47,216
+We have a...
+
+631
+02:33:47,796 --> 02:33:57,815
+Bu numarik attribute here, and for this numarik attribute, we need to find a splitting point.
+
+632
+02:33:58,536 --> 02:34:15,796
+Okay, how can we find this splitting point? At the beginning, we will analyze the attribute, and we can see here, we have a smaller value as 65, and the max...
+
+633
+02:34:15,796 --> 02:34:41,868
+Bu nelerde de bu nelerde de bu nelerde de bu nelerde de bu nelerde de bu nelerde de bu nelerde de bu nelerde de bu nelerde de bu nelerde de bu nelerde de bu nelerde de bu nelerde de bu nelerde de bu nelerde de bu nelerde de bu nelerde de bu nelerde de bu nelerde de bu nelerde de bu nelerde de bu nelerde de bu nelerde de bu nelerde de bu nelerde de bu nelerde de bu nelerde de bu nelerde de bu nelerde de bu nelerde de bu nelerde de bu nelerde de bu nelerde de bu nelerde de bu nelerde de bu nelerde de bu nelerde de bu nelerde de bu nelerde de bu nelerde de bu nelerde de bu nelerde de bu nelerde de bu nelerde de bu neler
+
+634
+02:34:51,763 --> 02:34:54,963
+You can see here, we have H attribute.
+
+635
+02:34:56,043 --> 02:35:05,783
+And we ordered this numeric attribute from smallest value to largest one.
+
+636
+02:35:05,783 --> 02:35:09,343
+And we put their class labels.
+
+637
+02:35:09,903 --> 02:35:13,463
+For example, H.
+
+638
+02:35:14,420 --> 02:35:30,059
+65'e bir
+
+639
+02:35:30,164 --> 02:35:44,176
+Yani, bu
+
+640
+02:35:44,175 --> 02:35:52,075
+Burada görmek için, bu bölümde 65, 70, 75.
+
+641
+02:35:52,075 --> 02:35:59,275
+Bu bölümde bu bölümde de altyazıları var.
+
+642
+02:35:59,275 --> 02:36:05,575
+Bu bölümde 95, ama 96'a kullanıyoruz.
+
+643
+02:36:05,716 --> 02:36:24,780
+Bu da 96'e 96'
+
+644
+02:36:25,876 --> 02:36:53,876
+96, we have all values, but on the right-hand side of the tree, we don't have any samples. That's why it's not possible to select the maximum value as a split point. But the remaining values can be our splitting value. And for each splitting value, we can calculate the information gain. But I will calculate only one for...
+
+645
+02:36:53,876 --> 02:36:54,876
+bir değer.
+
+646
+02:36:54,876 --> 02:37:05,644
+I think that if we select the splitting value as 80, in this case...
+
+647
+02:37:05,971 --> 02:37:28,011
+h'ı daha az 0.80'ye kadar 0.80'ye kadar 0.80'ye kadar 0.80'ye kadar 0.80'ye kadar 0.80'ye kadar 0.80'ye kadar 0.80'ye kadar 0.80'ye kadar 0.80'ye kadar 0.80'ye kadar 0.80'ye kadar 0.80'ye kadar 0.80'ye kadar 0.80'ye kadar 0.80'ye kadar 0.80'ye kadar 0.80'ye kadar 0.80'ye kadar 0.80'ye kadar 0.80'ye kadar 0.80'ye kadar 0.80'ye kadar 0.80'ye kadar 0.80'ye kadar 0.80'ye kadar 0.80'ye kadar 0.80'ye kadar 0.80'ye kadar 0.80'ye kadar 0.80'ye kadar 0.80'ye kadar 0.80'ye kadar 0.80'ye kadar 0.80'ye kadar 0.80'ye kadar 0.
+
+648
+02:37:29,556 --> 02:37:42,556
+7 samples, and from class 2, we have 2 samples on the right hand side of the data on this subset. On the right hand side...
+
+649
+02:37:42,879 --> 02:37:52,559
+We have 1, 2, 3, class 2, samples, and we have 2, class 1, samples.
+
+650
+02:37:53,619 --> 02:38:04,559
+According to these values, we can calculate the entropy for...
+
+651
+02:38:05,332 --> 02:38:11,452
+Numerik attribute A2, for age attribute.
+
+652
+02:38:12,272 --> 02:38:27,051
+And for this attribute, you can see here, on the left-hand side, we have nine samples.
+
+653
+02:38:31,855 --> 02:38:41,056
+3, the probability of the left branch is 9 over 14, and the probability of right branch is 5 over 14.
+
+654
+02:38:41,596 --> 02:38:52,396
+And on the left-hand side, we have 9 samples, 7 of them belong to class 1, and 2 of them belong to class 2.
+
+655
+02:38:52,396 --> 02:38:58,315
+That's why we write the entropy for 7-2.
+
+656
+02:38:59,855 --> 02:39:27,736
+On the right-hand side, we have five samples and their distributions to classes 2, 3. That's why we can write this equation. And the entropy for attribute 2 here, you can calculate it as 0.837. And we can calculate the information gain for
+
+657
+02:39:27,855 --> 02:39:35,175
+A2, the gain will be 0.103.
+
+658
+02:39:35,175 --> 02:39:46,296
+And we can compare this information gain for the other splitting values.
+
+659
+02:39:47,015 --> 02:39:51,175
+We calculate this value for...
+
+660
+02:39:53,523 --> 02:39:55,523
+0.80
+
+661
+02:39:55,523 --> 02:39:58,423
+But in a similar way
+
+662
+02:39:58,423 --> 02:39:59,963
+You can calculate the
+
+663
+02:40:00,180 --> 02:40:15,979
+information gain for 78, 75, or 90. You can calculate the info gain for each candidate of the splitting points.
+
+664
+02:40:15,979 --> 02:40:26,299
+And then you can select the maximum gain, which one gives the maximum gain.
+
+665
+02:40:28,084 --> 02:40:29,444
+Okay, but
+
+666
+02:40:30,644 --> 02:40:57,144
+In examinations of the course, it's not possible to calculate information gain for every candidate of the splitting point. In this case, you should decide which one is the better separation on this data set.
+
+667
+02:40:58,644 --> 02:41:16,644
+If we divide the data from 65, in this case, we will get one sample on the left hand side and all of them, the remaining of them will be on the right hand side. It is not a good selection.
+
+668
+02:41:16,644 --> 02:41:26,644
+What about 70? You will think about it. When we separate the data from 70, in this case, actually...
+
+669
+02:41:26,644 --> 02:41:43,324
+On the right-hand side, there is a big disorder, or there is a big confusion. There is no purity on the right-hand side. It's not a good separation.
+
+670
+02:41:44,324 --> 02:41:50,903
+If we look at 78, and we can separate the data from here.
+
+671
+02:41:51,412 --> 02:41:58,912
+Bu durumda, bu birçok birçok birçok birçok birçok birçok birçok.
+
+672
+02:41:58,912 --> 02:42:01,112
+Birçok birçok birçok birçok.
+
+673
+02:42:01,112 --> 02:42:13,112
+Ve birçok birçok birçok birçok birçok.
+
+674
+02:42:13,843 --> 02:42:29,824
+Ama, if it is not possible to decide for yourself which value is suitable, in this case you should calculate the info gain for each candidate.
+
+675
+02:42:30,899 --> 02:42:33,239
+On this set.
+
+676
+02:42:33,860 --> 02:42:38,459
+This is the idea for this numeric attribute.
+
+677
+02:42:38,459 --> 02:42:49,540
+And we will compare the information gain 0.103 with the previous values.
+
+678
+02:42:59,347 --> 02:43:16,407
+Veya, we can see here the maximum gain can be obtained for attribute 1. That's why the root node of the decision tree will be A1 in this example.
+
+679
+02:43:16,407 --> 02:43:26,948
+But we saw also how can we calculate the information gain for numeric attribute and how can we decide the
+
+680
+02:43:27,347 --> 02:43:29,347
+birçok sorunu yapabilirsiniz.
+
+681
+02:43:29,347 --> 02:43:31,347
+Tamam, do you have any questions?
+
+682
+02:44:07,924 --> 02:44:25,963
+Okay, if you don't have any questions, I will give another presentation related with overfitting, because it is related with decision trees.
+
+683
+02:44:27,564 --> 02:44:35,283
+I will give an example for decision trees and I will explain what is overfitting.
+
+684
+02:44:50,164 --> 02:44:56,283
+This presentation is taken from another source.
+
+685
+02:44:57,463 --> 02:45:04,884
+This is a well-known textbook in data mining, Introduction to Data Mining.
+
+686
+02:45:04,884 --> 02:45:09,423
+These are the authors of the textbook.
+
+687
+02:45:12,755 --> 02:45:17,135
+Model overfitting, our subject will be model overfitting.
+
+688
+02:45:24,244 --> 02:45:33,804
+In a classification problem, we said that we need a training data set and test data set.
+
+689
+02:45:34,144 --> 02:45:42,084
+For training data set, we have an error on training data set.
+
+690
+02:45:42,443 --> 02:45:51,943
+And also, we can get, when we apply the test data to developed model, we can get
+
+691
+02:45:52,244 --> 02:45:57,164
+Test error, according to this data.
+
+692
+02:45:57,164 --> 02:46:00,684
+And we need to calculate generalization error.
+
+693
+02:46:01,204 --> 02:46:10,923
+Generalization error of a model over random selection of records from same distribution.
+
+694
+02:46:11,623 --> 02:46:17,164
+Here, random selection of records means that this is a...
+
+695
+02:46:17,536 --> 02:46:27,436
+test data, ve bu dağılıklar ve bu dağılıklar.
+
+696
+02:46:28,436 --> 02:46:36,916
+Bu bir example, bu bir bir bir example, bu bir bir bir example.
+
+697
+02:46:42,420 --> 02:47:04,000
+plus sign, I will call it blue class and red class. In blue class, we have 5200 instances. And these instances are generated, these samples are generated by using
+
+698
+02:47:04,432 --> 02:47:11,012
+5000 of the instances are generated by using Gaussian distribution.
+
+699
+02:47:11,672 --> 02:47:19,992
+And the mean value or center of the Gaussian distribution is 10 by 10.
+
+700
+02:47:20,252 --> 02:47:24,012
+It means we have two-dimensional data set.
+
+701
+02:47:24,312 --> 02:47:27,912
+Okay, you can see here we have a dimension.
+
+702
+02:47:28,172 --> 02:47:29,252
+This is x1.
+
+703
+02:47:29,252 --> 02:47:32,412
+And we have another dimension in vertical.
+
+704
+02:47:32,432 --> 02:47:48,752
+We have x2. Okay. It starts from 0 to 20 in each direction, in each dimension. We have a range from 0 to 20. And
+
+705
+02:47:50,000 --> 02:48:11,000
+mean value 10 by 10 means we are here. And this is the center of Gaussian distribution or mean value of Gaussian distribution. This is the center. I will use this. Okay.
+
+706
+02:48:13,459 --> 02:48:16,479
+This is the center of the distribution.
+
+707
+02:48:20,595 --> 02:48:23,855
+Okay, 10 by 10, it means we are here.
+
+708
+02:48:24,404 --> 02:48:52,404
+Bu, bu
+
+709
+02:48:52,404 --> 02:49:18,224
+Bu nesilindeki nesilindeki nesilindeki nesilindeki nesilindeki nesilindeki nesilindeki nesilindeki nesilindeki nesilindeki nesilindeki nesilindeki nesilindeki nesilindeki nesilindeki nesilindeki nesilindeki nesilindeki nesilindeki nesilindeki nesilindeki nesilindeki nesilindeki nesilindeki nesilindeki nesilindeki nesilindeki nesilindeki nesilindeki nesilindeki nesilindeki nesilindeki nesilindeki nesilindeki nesilindeki nesilindeki nesilindeki nesilindeki nesilindeki nesilindeki nesilindeki nesilindeki nesilindeki nesilindeki nes
+
+710
+02:49:18,224 --> 02:49:24,703
+A uniform distribution, uniform distribution, not a Gaussian distribution.
+
+711
+02:49:24,703 --> 02:49:35,463
+It means we have uniformly distributed red class samples on this plane. You can see.
+
+712
+02:49:36,468 --> 02:49:48,468
+Ok, there is a restriction between 0 to 20. We have many red class samples uniformly distributed on this area.
+
+713
+02:49:49,468 --> 02:49:58,468
+Ok, our aim is to separate the blue and red classes.
+
+714
+02:49:58,468 --> 02:50:00,000
+Ok, and...
+
+715
+02:50:00,000 --> 02:50:16,060
+We will use decision trees for this operation. And there is a small explanation here. 10% of data used for training and 90% of data used for testing.
+
+716
+02:50:17,876 --> 02:50:27,816
+Okay, 10% of data will be used for training. To generate a model, we will use 10% of the data.
+
+717
+02:50:35,283 --> 02:50:39,184
+Ok, if we use a decision tree.
+
+718
+02:50:39,796 --> 02:50:48,355
+If we use a decision tree, horizontal axis shows the number of nodes on decision tree.
+
+719
+02:50:49,315 --> 02:50:57,756
+Actually, instead of number of nodes, we can use number of levels of the decision tree.
+
+720
+02:50:58,556 --> 02:51:05,195
+And vertical axis shows the error. This is a training error.
+
+721
+02:51:05,780 --> 02:51:08,380
+Error for training dataset.
+
+722
+02:51:09,200 --> 02:51:29,700
+If we increase the number of levels in decision tree, you can see that at the beginning we have a dramatical decrease, but from this point the slope reduced.
+
+723
+02:51:32,371 --> 02:51:44,851
+We will check the trees. This place, you can see here, number of levels in decision tree is 4.
+
+724
+02:51:45,332 --> 02:52:06,332
+4-4
+
+725
+02:52:05,236 --> 02:52:23,396
+Dataset. Root node checks the x1 attribute, and if x1 is lower than 6.45, x1 attribute here, lower than 6.45.
+
+726
+02:52:26,868 --> 02:52:29,087
+I will use annotation tool.
+
+727
+02:52:36,691 --> 02:53:02,603
+This is the tested X1 value. X1 lower than 6.45. In this case, it says that I will describe this area. And this area is...
+
+728
+02:53:04,343 --> 02:53:10,343
+4-4
+
+729
+02:53:02,739 --> 02:53:28,427
+Bu, bu
+
+730
+02:53:29,396 --> 02:53:45,355
+But I will check here, greater than 13. This is the true site, this is the false site. In this case also, we call this area as circle.
+
+731
+02:53:58,899 --> 02:54:02,360
+It is here, you can see.
+
+732
+02:54:03,360 --> 02:54:21,619
+And if it is lower than 7.03, but we are coming from this upper part, in this case, we describe this area, sorry, describe this area.
+
+733
+02:54:22,260 --> 02:54:26,619
+As, circle class or red class.
+
+734
+02:54:27,799 --> 02:54:31,260
+And, this describes the red class.
+
+735
+02:54:31,939 --> 02:54:35,079
+And, it compares the X2,
+
+736
+02:54:35,939 --> 02:54:38,459
+lower than 14.
+
+737
+02:54:39,020 --> 02:54:39,420
+Okay.
+
+738
+02:54:40,260 --> 02:54:41,700
+Lower than 14.
+
+739
+02:54:42,619 --> 02:54:45,579
+It means here, we can see X2.
+
+740
+02:54:45,579 --> 02:54:48,299
+And, we describe this area.
+
+741
+02:54:50,324 --> 02:55:07,644
+If it is greater than 14, this will be circle class or red class. Otherwise, the remaining part will be blue class.
+
+742
+02:55:13,620 --> 02:55:40,044
+Bu, bu
+
+743
+02:55:42,164 --> 02:55:45,564
+Bu, sizlere, sorunlarınız var mı?
+
+744
+02:55:50,260 --> 02:56:02,520
+Okay. And if we increase the number of levels in this example, in this decision tree.
+
+745
+02:56:03,092 --> 02:56:12,092
+İstediğe 4-level, belki 40-50 nötes, bu konuda kullanılıyor.
+
+746
+02:56:12,092 --> 02:56:15,092
+Ve bir complex decision tree var.
+
+747
+02:56:24,948 --> 02:56:29,948
+Bu bir problemi bir problemi çünkü
+
+748
+02:56:29,948 --> 02:56:33,948
+bu bir klası,
+
+749
+02:56:33,948 --> 02:56:41,948
+bu klası,
+
+750
+02:56:41,948 --> 02:56:43,948
+ve bu modelden
+
+751
+02:56:43,948 --> 02:56:51,819
+bu klası,
+
+752
+02:56:51,891 --> 02:57:08,551
+ve, to increase the, or to decrease the training error, it includes some other areas for noisy signals, and it cause a overfitting problem.
+
+753
+02:57:09,912 --> 02:57:13,391
+This is a overfitting problem. You can see here,
+
+754
+02:57:19,412 --> 02:57:44,592
+50 nötes, we can decrease the training error here, but when we decrease the training error, we can generate a complex model, and this complex model cause a more test error.
+
+755
+02:57:45,108 --> 02:57:48,268
+You can see it on the next slide.
+
+756
+02:57:53,652 --> 02:57:56,432
+Bu soru, bu soru, bu soru.
+
+757
+02:57:58,311 --> 02:58:01,051
+Ve bu soru, bu soru, bu soru.
+
+758
+02:58:07,092 --> 02:58:07,452
+Hımm!
+
+759
+02:58:10,835 --> 02:58:18,095
+When the model is too complex, training error is small, but test error is large.
+
+760
+02:58:19,095 --> 02:58:21,067
+Here we can see...
+
+761
+02:58:21,427 --> 02:58:25,427
+Bu bir renkliğe görebilecek bir renkliğe görebilecek.
+
+762
+02:58:25,427 --> 02:58:30,427
+Ve bu renkliğe görebilecek bir renkliğe görebilecek.
+
+763
+02:58:30,427 --> 02:58:36,427
+Bu renkliğe görebilecek bir renkliğe görebilecek.
+
+764
+02:58:36,427 --> 02:58:44,427
+Bu renkliğe görebilecek.
+
+765
+02:58:44,852 --> 02:58:51,212
+That's the idea for overfitting. Or we can talk about the underfitting.
+
+766
+02:58:53,532 --> 02:59:01,932
+If our model is too simple, too simple, in this case, both training and test errors are large.
+
+767
+02:59:03,072 --> 02:59:08,032
+Okay, that's the idea for underfitting and overfitting.
+
+768
+02:59:11,156 --> 02:59:24,076
+Türkçe açıklamak gerekirse underfitting yetersiz öğrenme denebilir. Overfitting ise aşırı öğrenme olarak isimlendirilebilir.
+
+769
+02:59:25,216 --> 02:59:32,236
+Aşırı öğrenmede düğüm sayısını arttırarak daha kompleks bir model oluşturuyorsunuz.
+
+770
+02:59:32,236 --> 02:59:39,156
+Bu sayede belki training error azalıyor ama test hatasının büyük olduğunu.
+
+771
+02:59:39,156 --> 02:59:59,756
+Bunu görüyoruz. Böyle kompleks bir model yerine aslında daha basit bir model seçerek test hatasını azaltmamız mümkün. Bu overfitting'den kaçınmanın bir yolu. Başka bir yolu daha var. O da bir sonraki slide da geliyor.
+
+772
+03:00:06,675 --> 03:00:19,056
+Okay. To avoid the overfitting problem, we can increase the number of samples in training dataset.
+
+773
+03:00:24,084 --> 03:00:41,584
+Here, using twice the number of data instances, if we increase the samples in training data set, in this case, you can see here, training error and also test error becomes too near.
+
+774
+03:00:42,584 --> 03:00:52,084
+When we increase the training data samples, we can avoid the overfitting problem or we can-
+
+775
+03:00:52,084 --> 03:00:58,892
+ve modelin
+
+776
+03:01:14,548 --> 03:01:23,548
+If we increase the number of samples in training dataset, you can see here, we can get a...
+
+777
+03:01:27,603 --> 03:01:34,603
+Bu da bu
+
+778
+03:01:34,603 --> 03:01:37,384
+50 nötes
+
+779
+03:01:37,384 --> 03:01:39,543
+also looks like this
+
+780
+03:01:39,543 --> 03:01:42,644
+and the overfitting problem
+
+781
+03:01:42,644 --> 03:01:44,963
+we can avoid the overfitting problem
+
+782
+03:01:44,963 --> 03:01:47,384
+with a large number of
+
+783
+03:01:47,384 --> 03:01:49,683
+training samples
+
+784
+03:01:49,683 --> 03:01:50,923
+because
+
+785
+03:01:50,923 --> 03:01:53,403
+we have at the beginning
+
+786
+03:01:53,403 --> 03:01:55,023
+of the study
+
+787
+03:01:55,603 --> 03:02:16,171
+Bu da
+
+788
+03:02:27,156 --> 03:02:34,156
+Ve bu bir araçlarına baktığımızda
+
+789
+03:02:34,156 --> 03:02:53,152
+ve bu araçlarına baktığımızda
+
+790
+03:02:53,152 --> 03:03:04,332
+Generalization Error, instead of dividing data into two parts, like training and test set, we will divide the data set into three parts.
+
+791
+03:03:04,731 --> 03:03:14,752
+At the beginning, we divide the data as training and test set, but for training set, we will divide the data training and validation set.
+
+792
+03:03:15,156 --> 03:03:32,116
+In this way, we will get three separate parts of the data, training dataset, validation dataset, and test dataset. Validation dataset is used to estimate the generalization error.
+
+793
+03:03:32,116 --> 03:03:39,716
+And then, when we decide the model according to low generalization error, we can test the data.
+
+794
+03:03:40,211 --> 03:03:43,992
+We can test model with test samples.
+
+795
+03:03:44,471 --> 03:03:52,631
+But in this solution, when we use validation set, there is a drawback here.
+
+796
+03:03:53,351 --> 03:04:04,011
+If we have actually very low number of samples in our data set, less data available for training.
+
+797
+03:04:04,612 --> 03:04:05,731
+That's the problem.
+
+798
+03:04:09,203 --> 03:04:23,324
+And generalization error can be calculated in this way. Generalization error of the model equal to training error plus alpha times complexity of the model.
+
+799
+03:04:24,103 --> 03:04:36,324
+And you can see here generalization error equal to error rate of the training data plus omega times k over N train.
+
+800
+03:04:37,012 --> 03:04:42,592
+K here represents the number of leaf nodes in decision tree.
+
+801
+03:04:43,632 --> 03:04:48,051
+And N train represents the total number of training records.
+
+802
+03:04:49,292 --> 03:04:56,191
+Omega here, like alpha, similar to alpha, this is a trade-off hyperparameter.
+
+803
+03:04:58,528 --> 03:05:05,528
+Buna baktığınızda,
+
+804
+03:05:05,528 --> 03:05:16,811
+hala baktığınızda,
+
+805
+03:05:17,971 --> 03:05:33,932
+We have an example here. In this example, we have two decision trees and we will decide their generalization error. We will estimate their generalization error. Okay. I will ask a question.
+
+806
+03:05:34,708 --> 03:06:00,688
+We have two trees, you can see here. This is the TL, decision tree TL, left decision tree. This is the right decision tree, TR. Okay, and you can see here some leaf nodes. And according to these leaf nodes, can you give me the total number of misclassified samples on left tree?
+
+807
+03:06:05,644 --> 03:06:08,644
+hala baktığınızda,
+
+808
+03:06:05,427 --> 03:06:07,307
+Oyuncu?
+
+809
+03:06:11,252 --> 03:06:21,011
+Can you find the total number of misclassified samples on the tree, on the left tree?
+
+810
+03:06:31,092 --> 03:06:31,632
+No
+
+811
+03:06:33,620 --> 03:07:00,180
+How many misclassified? Misclassified. Thank you, [öğrenci]. We have four misclassified samples on this decision tree. Because for each leaf node, we will look at the number of samples for each class and the majority of the classes here, the class label will be positive.
+
+812
+03:07:01,620 --> 03:07:22,680
+A positive class label on this leaf node, we have one misclassified sample. In a similar way, we have one misclassified sample here. We get two. And what about this one? We don't have any misclassified samples, but here we have one misclassified sample.
+
+813
+03:07:23,667 --> 03:07:38,427
+Here, if we select the positive class label, we have one misclassified sample. That's why on the left-hand side, we have four misclassified samples.
+
+814
+03:07:38,427 --> 03:07:47,387
+What about the next one, the next three? How many misclassified samples we have?
+
+815
+03:07:56,948 --> 03:08:20,587
+Thank you. We have six misclassified samples on the right tree. And this is a more complex model. This is a, for this tree, the complexity is low. And we will calculate the generalization error of the tree.
+
+816
+03:08:27,443 --> 03:08:51,064
+Okay, you can see here, error of training dataset for the left one, 4 over 24. And for the right one, the error rate is 6 over 24. And omega is accepted as 1. In this case, generalization error.
+
+817
+03:08:54,943 --> 03:08:58,943
+hala baktığınızda,
+
+818
+03:08:53,108 --> 03:09:05,108
+For the left tree, the training error plus omega times number of leaf nodes over total number of samples.
+
+819
+03:09:05,108 --> 03:09:09,108
+Okay, for the first tree we have...
+
+820
+03:09:09,876 --> 03:09:37,855
+7 leaf nodes. You can see here 2, 4, 6, and 7 leaf nodes. That's why this is 7 over 24. And omega is accepted as 1. And the generalization error of the tree will be 0.458. On the right-hand side, we have 6.
+
+821
+03:09:37,876 --> 03:09:56,536
+misclassified sample, ve sınırı rate 6 over 24, plus omega times, leave not over total number of samples, and it gives generalization error as 0.417.
+
+822
+03:09:57,256 --> 03:09:58,756
+That's the idea.
+
+823
+03:10:06,291 --> 03:10:15,612
+We can prefer to use lower error rate on the right tree.
+
+824
+03:10:16,511 --> 03:10:24,311
+This tree can be preferred because of its generalization error.
+
+825
+03:10:24,311 --> 03:10:30,092
+Okay, that's the idea for generalization error.
+
+826
+03:10:31,891 --> 03:10:37,171
+Okay, do you have any questions on this part?
+
+827
+03:10:41,843 --> 03:10:47,903
+Evet, [öğrenci]. Yanlış sınıflandırmayı nasıl anladık? Bir daha anlatır mısınız demiş.
+
+828
+03:10:48,804 --> 03:10:59,423
+Şöyle arkadaşlar, sol tarafta ve sağ tarafta iki tane ağaç verilmiş. Ağaçları karşılaştırırken her bir ağacın hata oranına bakıyoruz.
+
+829
+03:11:00,023 --> 03:11:09,843
+Ağaçta başka seviye eklemeyeceğiz. Ağacın son şekli buysa eğer, mesela ağacın şu yaprağında üç tane pozitif, bir tane negatif sınıfta.
+
+830
+03:11:09,843 --> 03:11:30,484
+Bu sınıf etiketi atamak zorundayım. Bu sınıf etiketini nasıl seçerim? Çoğunluk hangi sınıftansa onun etiketini atarım ve bu leaf node için, yani ağacın bu yaprağı için seçeceğim sınıf etiketi pozitif olur. Çünkü pozitif örneklerin sayısı daha fazla.
+
+831
+03:11:30,843 --> 03:11:37,843
+Buraya pozitif etiketi koyarsam eğer, burada dört tane sample vardı. Bu dördün üçü sadece pozitif.
+
+832
+03:11:37,843 --> 03:12:04,603
+Bir tanesi negatif sınıfa aitti. Dolayısıyla burada bir tane hata yapmış olurum. Bu bir hata. İkinci ağacın bu ikinci yaprağında ise yine çoğunluk pozitif sınıftan olduğu için ağacın bu yaprağına pozitif sınıf etiketi atadım. Bu durumda negatif sınıfa ait burada bir tane örnek vardı. Bu da yanlış sınıflandırılmış olur. İkinci yanlış oldu.
+
+833
+03:12:05,843 --> 03:12:16,811
+Ağacın bu yaprağına negatif sınıf diyeceğim. Burada herhangi bir hata yapmamış oluyorum. Çünkü pozitif sınıftan hiç örnek yok. Bir sonraki yaprakta...
+
+834
+03:12:17,012 --> 03:12:38,752
+Üç tane sample varmış. Bunların ikisi negatif sınıfa aitmiş. Çoğunluk negatif olduğu için ağacın bu yaprağına sınıf etiketi olarak negatif atadım. Burada da bir tane hatam var. Toplam üç oldu ve sağ tarafta bir tane daha buraya pozitif etiket atadığımda burada bir tane hatalı sınıflanmış örnek çıkıyor.
+
+835
+03:12:38,752 --> 03:12:44,852
+Toplamda dört tane örneği hatalı sınıflamış oluyor. Bu sol tarafta verilen.
+
+836
+03:12:45,012 --> 03:13:04,472
+Sağ taraftakinde ise yanlış sınıflanmış örneklerin sayısı burada iki tane, burada bir tane, burada üç tane, toplam altı tane. Hata oranı nedir diye bakacak olursak toplam yirmi dört tane örneğin altı tanesini yanlış sınıflamış diyebiliriz.
+
+837
+03:13:06,164 --> 03:13:22,603
+Evet, yanlış sınıflandırmayı bu şekilde hesapladık. Yani ağaç yaprağında kaç tane sample var, çoğunluk hangi sınıftan buna göre, hangi sınıf etketini atarsam daha az hata yapmış olurum mantığından yola çıkıyoruz.
+
+838
+03:13:23,044 --> 03:13:33,324
+Evet, ders biraz uzattım, farkındayım ama bu konuyu bitirmemiz gerekiyordu. Daha bu konuyla ilgili söylenecek şeyler var, slidelerde bunları da görebilirsiniz.
+
+839
+03:13:34,164 --> 03:13:39,164
+Şimdilik bu kadarını anlatmamız yeter diye düşünüyorum.
+
+840
+03:13:40,864 --> 03:13:48,544
+Teşekkür ediyorum arkadaşlar. Beni sabırla dinlediğiniz için sorunuz var mı? Tekrar sorayım.
+
+841
+03:13:49,544 --> 03:13:53,804
+Genelleme hatası nasıl hesaplanıyor? Bunu öğrenmenizi isterim.
+
+842
+03:13:54,963 --> 03:14:04,644
+Peki, bana el sallayarak çıkabilirsiniz. Ben de size el sallayarak iyi haftalar diliyorum. Sağlıkla kalın sevgili arkadaşlar.
+
+843
+03:14:06,063 --> 03:14:12,203
+Evet, bana el sallayarak çıkıyorsunuz. Çıkmayan arkadaşlara dersin sonunda soruyorum neredesiniz diye.
+
+844
+03:14:13,144 --> 03:14:15,963
+Teşekkür ediyorum derse katıldığınız için. Tekrar.
+
+845
+03:14:35,347 --> 03:14:40,387
+Evet, hoşçakalın. Hepinize iyi haftalar. Sağlıkla kalın arkadaşlar. Görüşürüz.
+
+846
+03:15:03,379 --> 03:15:09,119
+Evet, bana el sallayıp çıkabiliyorsunuz dersten. Geriye kalan arkadaşlar, şimdi burada 17 kişi var.
+
+847
+03:15:10,680 --> 03:15:14,479
+Eli kaldıramadım hocam, bulamadım demişsiniz.
+
+848
+03:15:17,779 --> 03:15:21,360
+Participants'ın altında olması lazım, oradan gidebilirsiniz.
+
+849
+03:15:22,279 --> 03:15:27,039
+Şimdi geriye kalan 14 arkadaş beni görüyor ve dinliyorsanız eğer.
+
+850
+03:15:28,884 --> 03:15:33,943
+Derse bağlanıp nereye gittiniz diye soracağım. Bir daha böyle olmasın lütfen.
+
+851
+03:15:33,943 --> 03:15:51,263
+[öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci] ve [öğrenci].
+
+852
+03:15:51,827 --> 03:16:03,207
+Dersi dinlediğinizde tekrar bu mesajımı unutmayın. Lütfen derse geldiğinizde bana bir respons verin. Hoşçakalın.

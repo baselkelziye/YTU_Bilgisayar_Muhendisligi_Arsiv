@@ -1,0 +1,1087 @@
+1
+00:01:08,947 --> 00:01:10,187
+Evet, günaydın arkadaşlar.
+
+2
+00:01:12,547 --> 00:01:19,067
+Bir üç beş dakika bekleriz arkadaşların da gelmesini.
+
+3
+00:01:19,387 --> 00:01:20,947
+Sonrasında başlarız.
+
+4
+00:01:22,307 --> 00:01:29,768
+Zaten geçen hafta perşembe en son bir matriz çarpımı konusuna bakmıştık.
+
+5
+00:01:30,627 --> 00:01:33,768
+Bugün de onun kod kısmını yazacağımızı söylemiştim.
+
+6
+00:01:34,159 --> 00:01:49,459
+Ona girişeceğiz. Onun dışında beklerken sormak istediğiniz bir şeyler varsa, aklınıza takılan bir şeyler varsa onları buyurun sorun. Aradan onları çıkartalım. Boşa beklemeyelim.
+
+7
+00:01:51,539 --> 00:01:52,659
+Hocam ben bir şey sorabilir miyim?
+
+8
+00:01:53,659 --> 00:01:54,399
+İsim?
+
+9
+00:01:54,700 --> 00:02:00,259
+Muhammed Kayra Hocam. Sınav için. Şöyle hocam, hani demiştiniz ya, SİİD'e sorabilirim diye.
+
+10
+00:02:00,915 --> 00:02:05,055
+Biz bu dosyaları nasıl dışarı aktaracağız? Bunu gösterme imkanınız var mı hocam?
+
+11
+00:02:06,415 --> 00:02:08,115
+Dosyaları dışarı aktarmak derken?
+
+12
+00:02:08,656 --> 00:02:11,656
+Hani şeyde ya, Ubuntu'nun içinde ya, bunu normal...
+
+13
+00:02:11,656 --> 00:02:13,175
+Bir yandan dışarı çıkartmaya mı?
+
+14
+00:02:13,496 --> 00:02:13,996
+Evet hocam.
+
+15
+00:02:14,276 --> 00:02:21,015
+Yani onu birkaç türlü şekilde yapabilirsiniz. Bir, bir tane USB stick alın, tamam mı?
+
+16
+00:02:22,235 --> 00:02:23,616
+PC'nize bağlayın.
+
+17
+00:02:23,987 --> 00:02:33,987
+PC'nize bağladığınız zaman, by default, bu zaten Windows işletim sistemi kullanıyorsanız, Windows tarafından mount ediliyor ve hani görüyorsunuz, erişilebilir oluyor.
+
+18
+00:02:33,987 --> 00:02:46,987
+Bunu taktığınız zaman, aynı zamanda VM Player kullanıyoruz ya, VM Player'ın içerisinde şeyde de bu nasıl diyeyim...
+
+19
+00:02:47,520 --> 00:03:13,520
+üst taraftaki bar da şeyde çıkıyor, removable device'ler arasında çıkıyor. Onu gidip seçtiğiniz zaman host'a pardon guest'e bağla diyorsunuz. Yani içeride çalışan Linux işletim sistemine bağla diyorsunuz. Tık bağlanıyor. Dolayısıyla erişebileceğiniz bir alan oluşuyor. Buraya dosyalarınızı atabilirsiniz. Sonra benzer şekilde o removable device tarafından disconnect diyorsunuz.
+
+20
+00:03:14,228 --> 00:03:26,588
+Çıkartıyorsunuz. Böylece artık Windows'a bağlı oluyor ve içerisinde de istediğiniz dosya oluyor. Bu yöntemlerden bir tanesi. Biraz daha uğraştıran bir yöntem. Bunun dışında şansı var.
+
+21
+00:03:27,635 --> 00:03:49,635
+VMware'ın kendi içerisinde bir tools şeyi var. Zaten VMware kurulumunu yaptıktan hemen sonra aslında bu pop-up şeklinde devamlı suratınıza suratınıza vurur. Hani bunu yükleyeyim mi, yükleyeyim mi, yükleyeyim mi, yükleyeyim mi, yüklemek ister misin falan diye böyle insanı gıcık eden şekilde. Hani onu yüklerseniz o size şansını da veriyor.
+
+22
+00:03:50,836 --> 00:03:57,075
+Copy-paste'i bile aslında iki işletim sistemi arasında paylaştırmış oluyorsunuz.
+
+23
+00:03:57,651 --> 00:04:25,651
+Çok kötü bir şekilde ifade ettim ama hani rahat anlayın diye. Şöyle ki aslında masa üstünde copy paste yaptığınız alan her iki işletim sistemi içinde ortak hale geliyor. Yani VM içerisinde bir dosyayı copy diyorsunuz. Dışarıda işletim sisteminiz olan Windows'da paste edebiliyorsunuz ya da tam tersi. Aynı şekilde bir dosyanın içeriğinden bir yerden bir şey copy ettiğiniz zaman onu içeri ya da dışarı yani içerideki
+
+24
+00:04:25,651 --> 00:04:40,271
+işletim sistemine ya da dışarıdaki işletim sistemine yapıştırabiliyorsunuz. Böyle şeyler var. Bu toollara bir bakarsanız zaten görürsünüz. Bunların da haricinde tabii ki her zaman şey mümkün. Sonuçta içerideki işletim sisteminizin interneti var.
+
+25
+00:04:41,588 --> 00:04:59,588
+Sınava doğrudan oradan bağlanabilirsiniz. O da bir seçenek. O da browserlarda var. Kullanmaya, zaten keşfetmeye çoktan başlamış olmanızı bekliyorum. Dolayısıyla oradan da bağlanıp ilgili şeyleri yapabilirsiniz. Ya da tam...
+
+26
+00:05:00,048 --> 00:05:26,788
+Hani oradan bağlanıp bunu yapmasanız bile, orada yazdığınız dosyayı, browser üzerinden Gmail, Hotmail neyse hangisini kullanıyorsanız ona bağlanıp kendinize mail olarak da atabilirsiniz. Dışarıda da o mail adresi üzerinden bakarsanız yani dosya transferinin Binbir Yolu isimli kitabımızda şimdilik bu dört seçenek var. Tamam mı? Hani hangisini uygulayacağınız, hangisi kolayınıza geliyor, hangisi de rahat ediyorsunuz sizin bileceğiniz iş.
+
+27
+00:05:28,819 --> 00:05:33,300
+Hocam soru soracağım da, benim adım [öğrenci].
+
+28
+00:05:33,300 --> 00:05:34,699
+Evet.
+
+29
+00:05:34,699 --> 00:05:45,939
+Hocam, Dev C++'dan yapıyorum ben kodları yazıyorum da Ubuntu'dan şart mı yani yapmamız şart mı?
+
+30
+00:05:52,468 --> 00:05:54,288
+Peki niye Ubuntu'da yazmıyorsun?
+
+31
+00:05:55,688 --> 00:06:00,488
+Hocam Ubuntu'da yazıyorum zaten ilk başlangıçta siz
+
+32
+00:06:00,488 --> 00:06:06,648
+Vallahi ben şöyle söyleyeyim, yazdığınız şey, bana son noktada gönderdiğiniz kod
+
+33
+00:06:06,648 --> 00:06:11,888
+compile edilir olmazsa Ubuntu ortamında, kurduğumuz ortamda
+
+34
+00:06:12,468 --> 00:06:26,928
+Benim için çöp olacak. Tamam, değerlendirmesi bu. Ha ben Dev C'de yazarım, ben işte Xcode'da yazarım, bilmem nerede yazarım, orayla da uyumlu olur, hiçbir sıkıntı da olmaz diyorsanız yazın kendinize güveniyorsanız.
+
+35
+00:06:28,028 --> 00:06:33,168
+Tamam hocam deneyeceğim, ben Dev C plus'la deneyeceğim, hem de Ubuntu'da deneyeceğim çünkü...
+
+36
+00:06:33,168 --> 00:06:36,468
+Valla [öğrenci], senin neyi denediğin hiçbir önemi yok.
+
+37
+00:06:36,980 --> 00:07:02,980
+Ben hani senin kodunu indirip kendi ortamında size gösterdiğim, nasıl kurduğumu, nasıl yaptığımı gösterdiğim, hangi işletim sistemi, hangi vesaire tool'u kullanarak oluşturduğum ortamı gösterdim. O ortama koyacağım. Normal compilation satırını yazacağım. Çalıştı çalıştı. Çalışmadı çöp. Benim değerlendirmem bu. Bunun üstüne de daha fazla yorum istemiyorum. Bitti. Tamam anladım hocam. Teşekkür ederim. Tamam mı?
+
+38
+00:07:05,204 --> 00:07:14,204
+Çünkü ben herkesin farklı ortamda yaptığını, ettiğini kendi ortamında çalıştırmak için tekrar tekrar kurmak, düzeltmek, değiştirmek durumunda değilim.
+
+39
+00:07:15,204 --> 00:07:22,204
+Size bir ortam, bu ortamın nasıl kurulacağı tek tek adım adım defalarca gösterildi.
+
+40
+00:07:22,343 --> 00:07:26,983
+Herkesin sorularına da mail üzerinden cevap verdim. Buna hala zorlamanın da bir esprisi yok.
+
+41
+00:07:28,824 --> 00:07:31,444
+Evet, yeter miktar katılım oldu bence zaten.
+
+42
+00:07:32,372 --> 00:07:34,672
+Dolayısıyla asıl yapacağımız kısmı görelim.
+
+43
+00:07:42,196 --> 00:08:06,196
+[öğrenci], bu oldukça saçma bir soru oldu. Daha ortada soru yok, hangi dosyasını yollamalıyız gibi bir soru durumu yok ortada. Yani eğer bu bir sınavsa, Executable dosyasının bana bir faydası zaten olmaz. Kodu isteyeceğimdir. Ama bir ödevse belki binaries'in de isteyeceğimdir. Dolayısıyla hani...
+
+44
+00:08:08,596 --> 00:08:11,636
+Soruda bunu anlarsınız, hangi dosyayı istediğimi?
+
+45
+00:08:17,076 --> 00:08:17,576
+Evet.
+
+46
+00:08:21,363 --> 00:08:45,103
+Şimdi gençler, dersin başında söyledim ama sonra katılanlar için tekrar edeyim. Perşembe günü yaptığımız derste en son bir matriz çarpımından bahsetmiştik. Şimdi o matriz çarpımını yapabilmemiz için gerekli olan kod kısmını yazacağız. Zaten bunu da konuşmuştuk.
+
+47
+00:08:48,947 --> 00:08:51,327
+Bu kadar bir konu biz tanımlayacağız.
+
+48
+00:09:07,764 --> 00:09:23,436
+Şimdi, matrislerimizin boyutları var. Bir de o boyutlarda gezinmek için kullanacağımız indislerimiz var. Zaten 3 farklı boyut olacak. Yani N'e M'lik bir matrisimiz olacak. Bir de eee
+
+49
+00:09:23,508 --> 00:09:50,628
+Bir boyutunun M olma şartı var. İki maddesi çarpıyorsak yani birinin sütun sayısı ile diğerinin satır sayısının aynı olması lazım. Dolayısıyla aslında iki maddes ikişer boyuttan dört boyut gibi düşünsek de biri ortak olduğu için ayrı ayrı değişken tanımlamaya gerek yok. Dolayısıyla aslında üç boyutu tanımlıyor olacağız. Dolayısıyla her bir boyutta gezinmek için de birer indis değişkeni tanımladık.
+
+50
+00:09:51,187 --> 00:09:54,908
+Matrisin boyutlarında N, M ve L diyelim.
+
+51
+00:09:56,867 --> 00:09:57,627
+Bir tane
+
+52
+00:09:57,627 --> 00:10:01,367
+TMP değişkenimiz vardı hatırlayın.
+
+53
+00:10:01,367 --> 00:10:02,648
+Şeyden dolayı
+
+54
+00:10:02,648 --> 00:10:09,347
+Devamlı indisleme yapmak yerine
+
+55
+00:10:14,035 --> 00:10:18,535
+şey yapabilmek için, geçici değişken üzerinden ulaşabilmek için.
+
+56
+00:10:40,851 --> 00:10:44,711
+Yine matrislerimizi tanımladık ama matrisleri nasıl tanımlıyoruz?
+
+57
+00:10:44,711 --> 00:10:56,091
+Hani dynamic memorial equation yapmayacağımız için şu an, yapamadığımız için şu an, statik şekilde olası durumdan biraz daha büyük olacak şekilde tanımlıyoruz.
+
+58
+00:11:30,580 --> 00:11:36,460
+Şimdi önce sıtır sayısını aldık, sonra kolon olacak.
+
+59
+00:11:42,419 --> 00:11:43,403
+Um diye.
+
+60
+00:11:54,772 --> 00:11:56,991
+Ondan sonra bir daha kalım soracağız ama
+
+61
+00:12:06,388 --> 00:12:18,148
+Zaten matriz B için soruyoruz. Şimdi unutmamamız gereken şeylerden bir tanesi boyutları düzeltmek yaptık. Şimdi
+
+62
+00:12:18,148 --> 00:12:22,148
+üç şeyinde
+
+63
+00:12:25,107 --> 00:12:50,447
+boyutunda bilgisini aldık inşallah doğru şekilde. N'i, M'i ve L'yi sorarken de satır sayısı, kolon sayısını soruyoruz A maddesi için. Sonrasında B maddesi için zaten satır sayısını sormaya gerek yok. A'nın kolon sayısıyla aynı. Dolayısıyla B'nin kolon sayısını soruyoruz. Onları alıyoruz. Şimdi buradan sonra yapacağımız ne?
+
+64
+00:12:55,475 --> 00:12:57,475
+i art artı
+
+65
+00:13:06,451 --> 00:13:07,192
+bir foto
+
+66
+00:14:11,379 --> 00:14:36,379
+Şimdi, ne yapıyoruz? Tek tek A-Mark's'in elemanlarını okuyoruz. Sorarak okuyoruz. Yani önce A sıfıra sıfır yanına iki nokta üstte çıkacak. Bir değer alacağız. Sonra sıfır bir, sonra sıfır iki vesaire bu şekilde gidecek. Bakalım döngüde bir hata var mı? Bir, iki, üç, dört, beş, altı, altı, sıfır.
+
+67
+00:14:39,091 --> 00:15:02,591
+Şimdi, gene copy paste ile yapıyoruz. O yüzden biraz tehlikeli olabilir. B matrisini okuyacağız. Orada boyutumuz M'ye L olacak. Önce onları düzeltelim, bu sınırları. Ondan sonra okuduğumuz şey A matrisi değil, B matrisi artık. İ, J doğrudur. Okuduğumuz yer de B matrisi.
+
+68
+00:15:05,971 --> 00:15:10,471
+Birinci matrisi okuduk hatta şöyle yapalım ne yaptığımızda anlaşılsın.
+
+69
+00:15:27,091 --> 00:15:28,632
+Öncü matbüsü okuduk.
+
+70
+00:15:32,596 --> 00:15:34,275
+İkinci ama, akış s-ı kodak.
+
+71
+00:15:40,628 --> 00:15:42,548
+Şimdi ne yapacağız? Bir adım sonra.
+
+72
+00:15:50,515 --> 00:15:55,635
+Bir adım sonra ortalık iyice karışmadan hemen önce bir atlama işi yapacağım.
+
+73
+00:15:55,635 --> 00:16:01,155
+Yazdığımız şeyin ne kadar doğru olduğunu görmek için
+
+74
+00:17:35,380 --> 00:17:36,660
+Şimdi öncelikle
+
+75
+00:17:38,700 --> 00:17:44,340
+Buraya kadar yazdım, yani çarpma işlemini gerçekleştirmedim. Sadece iki maddesi dışarıdan okuduk.
+
+76
+00:17:44,600 --> 00:17:52,540
+Son olarak da aslında sonuç maddesini yazdıracağız ve fakat sonuç maddesi yerine şimdilik sadece A maddesini yazdırıyorum. Neden böyle bir şey yaptım?
+
+77
+00:17:54,580 --> 00:18:01,740
+Öncelikle bilgileri doğru alıp almadım, her şeyin yoğunda olup olmadığını kontrol etmek için. O yüzden mat şeyini çalıştıralım.
+
+78
+00:18:01,935 --> 00:18:28,355
+kaç? 3'e 4 olsun öbürü de 2 olsun. 0, 1, 2, 3, 4, 5, 6, 7, 8, 9. 0, 1, 2, 3, 4, 5, 6, 7, 8, 9. Bakalım 0, 1, 2, 3, 4, 5, 6, 7, 8, 9. Bakalım 0, 1, 2, 3, 4, 5, 6, 7, 8, 9. Tamam. Okey. Madrası düzgün şekilde görüyoruz. Dolayısıyla
+
+79
+00:18:29,011 --> 00:18:31,132
+Okumamızda bir sıkıntı yok.
+
+80
+00:18:31,132 --> 00:18:33,932
+Şimdi
+
+81
+00:18:33,932 --> 00:18:36,251
+Asıl
+
+82
+00:18:36,251 --> 00:18:38,971
+İşin yapılacağı yere
+
+83
+00:18:38,971 --> 00:18:41,051
+Geliyoruz. Yani ne yapıyoruz?
+
+84
+00:18:41,051 --> 00:19:01,579
+Eee
+
+85
+00:18:57,395 --> 00:19:00,476
+Nasıl çarpacağız? Nasıl çarpacağız? Şuradan hazır.
+
+86
+00:19:08,387 --> 00:19:09,803
+Eee
+
+87
+00:19:07,571 --> 00:19:09,571
+Sıtırı, copy paste yapayım.
+
+88
+00:19:24,072 --> 00:19:27,072
+Eee
+
+89
+00:19:23,988 --> 00:19:25,307
+play, akış
+
+90
+00:19:29,076 --> 00:19:29,836
+kartı
+
+91
+00:20:02,255 --> 00:20:06,175
+Eee
+
+92
+00:20:01,619 --> 00:20:06,619
+Burada tabi in yani sınırlar yanlış oldu ikincisinden kopladığım için.
+
+93
+00:20:06,619 --> 00:20:15,619
+I sıfırdan N'e kadar, K, L'ye kadar, J'de M'ye kadar olacak. Bunu da düzelttik.
+
+94
+00:20:15,619 --> 00:20:24,523
+Döngü tamam. Şimdi burada ne yapacağız? Her seferinde TMP'yi sıfırlıyoruz. Çünkü TMP'yi aslında
+
+95
+00:20:24,788 --> 00:20:28,788
+o satırdaki tüm çarpımlarla birleştireceğiz.
+
+96
+00:20:28,788 --> 00:20:30,788
+i'in çarpımı ile
+
+97
+00:20:30,788 --> 00:20:32,779
+a i
+
+98
+00:20:45,395 --> 00:21:12,855
+i j ile b'nin j k'sını çarpacağız. Bu iş, diğinde de bu artık c maddesinin elemanlarını oluşturacak. Nasıl oluşturacak? Zaten tmp'de toplam var bu döngüden çıktığı zaman. Bunun i ye k'ıncı elemanı haline.
+
+99
+00:21:14,099 --> 00:21:17,939
+Gelecek. Şimdi yazdıracağımız şey de artık A değil.
+
+100
+00:21:21,259 --> 00:21:25,619
+C maddesi. C maddesinin de boyutları aslında artık
+
+101
+00:21:28,179 --> 00:21:28,939
+N'e
+
+102
+00:21:33,332 --> 00:21:34,052
+en elle
+
+103
+00:21:37,587 --> 00:22:03,947
+O için de compile edelim bakalım. İyi, hiç hata vermedi. Şimdi gene 3'e 4'lük ve 4'e 2'lik bir matris olsun. 1, 2, 3, 4, birinci satırı, 5, 6, 7, 8, ikinci satırı, 9, 0, 1, 2, 3. satırı,
+
+104
+00:22:05,076 --> 00:22:15,576
+Diğer matrisi de gene benzer şekilde bir, iki, üç, dört, beş, altı, yedi, sekiz şeklinde giriyorum.
+
+105
+00:22:15,576 --> 00:22:23,076
+Sonucumuz da bu çıkıyor. Doğru mu? Ufak bir kontrol yapıyor olmamız lazım.
+
+106
+00:22:23,076 --> 00:22:30,956
+Matris formatını ve girdiğimiz değerlere bakacak olursak ne olması lazım?
+
+107
+00:22:31,443 --> 00:22:58,824
+A madresimiz ilk satırında 1, 2, 3, 4 var. İkinci satırında 4, 5, pardon 5, 6, 7, 8 var. Son satırında da 9, 0, 1 ve 2 var. Diğer madresimiz ise B madresimiz ise birinci satırda 1, 2, ikinci satırda 3, 4, üçüncü satırda 5, 6, dördüncü satırda 7, 8. Dolayısıyla önce 1, 2, 3 ve 4 yani birinci satır
+
+108
+00:22:59,279 --> 00:23:14,659
+B'nin birinci sütununu çarpıyorum. 1 ile 1'i, 2 ile 3'ü, 3 ile 5'i, 4 ile 7'yi çarpacağım. 1, 6, 15, 28. Topladığım zaman 50. Okey.
+
+109
+00:23:15,119 --> 00:23:39,639
+Aynı satırı, yani A'nın birinci satırı, 1, 2, 3, 4'ü, B'nin ikinci sütunuyla 2, 4, 8, pardon 2, 4, 6 ve 8 ile çarpacağım. Bu şekilde çarptığım zaman da 2, 8, 18 ve 32 edecek toplamları da 60. Doğru. Aynı hesabı, aynı aritmetiği şey içinde yapalım.
+
+110
+00:23:40,084 --> 00:24:04,604
+İkinci satır içinde 5, 6, 7, 8'i 1, 3, 5, 7 ile çarpacağız. 1, 5, 5, 18, 35, 56 topladığınız zaman 20, 58, 114 doğru. Aynı satırı yani 5, 6, 7, 8'i bu sefer ikinci sutunda B'nin ikinci sutunuyla 2, 4, 6 ve 8 ile çarpacağız.
+
+111
+00:24:05,652 --> 00:24:21,652
+O zaman da 10, 24, 42 ve 64 çıkıyor. Topladığımız zaman da 68, ok, 98, 130, 140. 140 çıkıyor, o da doğru.
+
+112
+00:24:23,155 --> 00:24:42,056
+9, 0, 1, 2, zaten şeyle çarptığımız zaman, 1, 3, 5, 7 ile çarptığımız zaman, 9, 5, 14, 14 daha, 28 çıkıyor. Tamam yani hesapta bir sıkıntı yok. Her şey yolunda. Doğru kodlamışız, doğru çalışıyor gibi gözüküyor.
+
+113
+00:24:42,420 --> 00:24:54,100
+Bir maksede daha deneyip bir daha bakmak lazım. Garanti tam yüzde yüz emin olmak için ama indisleri vesaireyi doğru yazmışız her şey yerli yerinde gibi gözüküyor.
+
+114
+00:24:54,100 --> 00:25:00,900
+Var mı kafasına takılan bir şey olan sorusu olan şurada kod kısmını açayım bir daha.
+
+115
+00:25:16,019 --> 00:25:17,299
+Hocam, bir şey sorabilir miyim?
+
+116
+00:25:17,299 --> 00:25:18,099
+Tabi.
+
+117
+00:25:18,099 --> 00:25:19,299
+Atım [öğrenci].
+
+118
+00:25:19,299 --> 00:25:21,299
+Hıh, efendim [öğrenci].
+
+119
+00:25:21,299 --> 00:25:29,939
+Hocam, Performing Matrix Multiplication altında for i0 sonra k'dan 0'a gittik ya.
+
+120
+00:25:29,939 --> 00:25:33,379
+i0, k'dan 0'a gitmedik, k'dan 0'a gitmedik.
+
+121
+00:25:33,379 --> 00:25:41,779
+Yok, ikinci for dongesinde k yaptınız ya, onun j olması gerekmiyor mu? Yani j ile k'nın geri değişmesi gerekmiyor mu?
+
+122
+00:25:43,028 --> 00:25:45,668
+Ben de sana soruyorum, niye değişmesi gerekiyor?
+
+123
+00:25:47,108 --> 00:25:52,508
+Şey, yani order olarak ilk i, j, sonra kala gelecek. Öyle değil mi?
+
+124
+00:25:59,220 --> 00:26:04,940
+Yani bütün mantık bu mu sence? Ne yaptığımızın bir önemi yok mu?
+
+125
+00:26:07,259 --> 00:26:11,539
+Yani işte anlamaya çalışıyorum. Oradaki...
+
+126
+00:26:11,539 --> 00:26:24,680
+Tamam, anlamaya çalışıyorsun da hani sen bu i, j, k'ya takılmadan önce yani bir şey ezberlemeye çalışmadan önce ne yaptığımızı anlamaya çalıştın mı?
+
+127
+00:26:25,428 --> 00:26:26,848
+Şimdi bak, derdimiz ne?
+
+128
+00:26:28,308 --> 00:26:34,468
+Şu an maalesef şey yanımda değil, iPad yani tablet yanımda değil.
+
+129
+00:26:34,968 --> 00:26:36,788
+O yüzden çizerek size gösteremiyorum.
+
+130
+00:26:37,368 --> 00:26:39,988
+Ve fakat şöyle bir şey yapacağım.
+
+131
+00:26:40,288 --> 00:26:42,528
+Daha rahat görebilmeniz adına.
+
+132
+00:26:51,763 --> 00:26:55,763
+Şimdi bizim derdimiz de
+
+133
+00:26:56,763 --> 00:26:59,763
+Demin ekrana girdiğim örnek üzerinden
+
+134
+00:26:59,763 --> 00:27:03,763
+Pardon ekrana demeyeyim, şeye girdiğim örnek üzerinden konuşalım
+
+135
+00:27:05,763 --> 00:27:07,763
+Tam olarak da böyle değildi gerçi ama dur
+
+136
+00:27:10,763 --> 00:27:11,763
+Tam birebirini gireyim
+
+137
+00:27:13,763 --> 00:27:14,763
+6, 7
+
+138
+00:27:15,220 --> 00:27:19,819
+Sekiz, dokuz, sıfır, bir, iki. Bir matriz buydu, doğru mu?
+
+139
+00:27:19,819 --> 00:27:25,720
+Diğer matriz de neydi?
+
+140
+00:27:26,740 --> 00:27:30,580
+Dörde ikilik bir matriz. Yani bir, iki.
+
+141
+00:27:34,195 --> 00:28:02,091
+4, 5, 6, 7, 8. Şimdi biz istiyoruz ki ne olsun? 1 çarpı 1 artı hatta şöyle yapayım 2 çarpı 3 artı 3 çarpı 5 artı
+
+142
+00:28:02,099 --> 00:28:04,539
+4x7
+
+143
+00:28:04,539 --> 00:28:12,259
+Bunu yapalım. Bir tarafa yazalım. Bu hani şeyin matrix'in bir gözü olsun.
+
+144
+00:28:14,739 --> 00:28:27,179
+Yeni oluşacak matrix. Sonra ikinci gözüne ne yazacağız? 1x2
+
+145
+00:28:28,500 --> 00:28:52,759
+2 x 4, 3 x 6, 4 x 8. Doğru mu? [öğrenci]? Evet hocam. İstediğimiz bu değil mi? Şimdi bir şey daha yapacağız.
+
+146
+00:28:59,923 --> 00:29:10,683
+Şöyle ki, şunu değiştireceğiz. Burada 5 olsun, burada 6 olsun, burada 7 olsun, burada 8 olsun.
+
+147
+00:29:14,548 --> 00:29:29,107
+5, 6, 7, 8, burada da 9,
+
+148
+00:29:32,435 --> 00:29:59,435
+1, 2, 9, 0, 1, 2. Şimdi elde etmeye çalıştığımız şey bu iki madresin çarpımından bu. Bunları bu şekilde çarpmamız lazım elemanları. Şimdi bunu şöyle formüle edersek ne olur peki? Şimdi bir ile biri çarpmak için aslında neyi çarpıyorsun?
+
+149
+00:30:00,243 --> 00:30:13,864
+A pardon, A sıfıra sıfır ile değil mi? B'nin sıfıra sıfırını çarpıyoruz.
+
+150
+00:30:19,155 --> 00:30:45,155
+Sonra, neyi çarpacaksın? A, sıfır, şey sayısı değişmeyecek, sütunun ilerleyecek. 1 ile, burada da tam tersi yer ilerleyecek. Yani B'nin bu sefer birinci satırındaki ama sıfırınca sütundaki yeri alacaksın.
+
+151
+00:30:48,788 --> 00:30:51,187
+bu ikisini çarpacaksın. Sonra
+
+152
+00:30:52,627 --> 00:30:55,187
+bu işin içerisine ne gelecek?
+
+153
+00:30:58,932 --> 00:31:10,932
+A'nın sıfırıyla ikisine B'nin ikisiyle sıfır gelecek. Sonra buna neyi ekleyeceksin?
+
+154
+00:31:10,932 --> 00:31:14,932
+A'nın sıfırı...
+
+155
+00:31:14,932 --> 00:31:18,932
+...şöyle yapayım ondan sonra söyleyeyim.
+
+156
+00:31:22,804 --> 00:31:33,663
+A'nın 0'a 3'ü ile B'nin 3'e 0'ını yapacaksın. Bu aslında ne oldu şu ana kadar yazdığımız kısımla?
+
+157
+00:31:36,903 --> 00:31:43,304
+Daha yeni maddesin ilk gözünü oluşturduk. Doğru mu?
+
+158
+00:31:50,836 --> 00:31:57,556
+Şimdi, bunu bir de ne yapıyor olman lazım? Benzer bir şeyine.
+
+159
+00:32:01,491 --> 00:32:05,851
+Bir daha yazacağız. Ekrandı biraz büyütmem lazım ki sırasın.
+
+160
+00:32:34,195 --> 00:32:48,375
+Şimdi aynı şeyleri nedir o? A'nın aynı satırını bu sefer B'nin bir sonraki sutunuyla çarpacağım. Bir sonraki sutunuyla çarpmam için de ne lazım? Buraların 1 olması lazım.
+
+161
+00:32:51,796 --> 00:32:55,116
+Arada B'nin ismini yazmamışım.
+
+162
+00:33:00,115 --> 00:33:02,092
+Burada koyalım eksik olmasın.
+
+163
+00:33:13,907 --> 00:33:25,747
+Bir adım sonrasında ise yapacağım şey ne? Bu sefer A'nın birinci satırıyla başlayacağım ve devam edeceğim.
+
+164
+00:33:47,124 --> 00:34:01,524
+Sonra da haliyle anın son satırı için bu işleri yapacağım. Şimdi bu işi böyle yapabilmen için indislerin değişim şekillerine bir bakalım.
+
+165
+00:34:10,579 --> 00:34:13,460
+İnşallah bu kadar copy paste'den sonra bir şeyleri yanlış yazmadım.
+
+166
+00:34:25,139 --> 00:34:27,699
+Şimdi ilk satıra bak, ne görüyorsun?
+
+167
+00:34:31,279 --> 00:34:33,380
+A'nın ilk indisi sıfır.
+
+168
+00:34:34,880 --> 00:34:37,399
+Sıfıra sıfır, ilk satır olacağı için.
+
+169
+00:34:37,460 --> 00:34:41,000
+İlk satır olacağı için ilk indis her yerde sıfır aslında.
+
+170
+00:34:42,880 --> 00:34:50,679
+Dolayısıyla A'nın bu satır boyutunu en olarak düşündüğümüze göre, bunu da i ile eğer yönlendiriyorsak.
+
+171
+00:34:52,500 --> 00:35:00,420
+Bu, her çarpma satırında en son değişen şey olduğunu görüyorsun. Diğer indisler değişiyor ama o değişmiyor.
+
+172
+00:35:01,559 --> 00:35:13,880
+Buradaki derdimiz ne? J'nin devamlı ilerliyor olması. Bak, A00'la başlıyorsun, A01 yapıyorsun. Yani aslında J diyorum ama şunu demek istiyorum, kolonlarda ilerliyorsun.
+
+173
+00:35:14,579 --> 00:35:20,059
+Oradaki boyutu M demiştik, indisi olarak da J'yi kullanacağız. Devamlı orası ilerleyecek.
+
+174
+00:35:21,619 --> 00:35:23,619
+B'de ise
+
+175
+00:35:23,619 --> 00:35:28,480
+aynı boyuta sahip olan bu satır sayısında ise
+
+176
+00:35:28,480 --> 00:35:32,960
+orada ilerliyor. Yani hep J değişiyor. Peki, bir alt satıra
+
+177
+00:35:32,960 --> 00:35:36,539
+geçtiğin zaman ne oluyor? Gene J değişiyor.
+
+178
+00:35:39,800 --> 00:35:42,439
+Dikkat ediliyor musun? Ya da takip edebiliyor musun?
+
+179
+00:35:43,239 --> 00:35:45,639
+Ya da kafana yattı mı? Yani öyle sorayım.
+
+180
+00:35:45,639 --> 00:35:48,639
+Ve fakat
+
+181
+00:35:49,780 --> 00:36:16,840
+Dikkat et, bu iki satır arasındaki farka bakarken, hani B tarafındaki farka bakarken, her seferinde aslında ne yapıyoruz? Tekrarlıyoruz. Aynı şeyi tekrarlıyoruz. Önce J indisi değişiyor. Daha doğrusu kolonda, A'nın kolonunda ve B'nin satırında ilerliyoruz. Ve bunu her seferinde bir daha yapıyoruz.
+
+182
+00:36:20,019 --> 00:36:24,079
+Yani önce sol tarafta yapıyoruz, sonra sağ tarafta yapıyoruz. Dikkat et.
+
+183
+00:36:25,579 --> 00:36:40,039
+Yani iki kere yapıyoruz. Neden iki kere yapıyoruz? Çünkü B'nin kolon sayısı iki. B eğer üç kolonlu bir matriş olsaydı bunu üç kere yapıyor olacaktık. Çıkan sonuçta üçe üç olacaktı.
+
+184
+00:36:40,884 --> 00:36:57,884
+Dolayısıyla J bu iki hesabın her seferinde değişmesi gerekiyor. Yani J diyorum ama aslında J üzerinde düşünme. Yani A'nın satırlarıyla B'nin satırlarının devamlı...
+
+185
+00:36:58,483 --> 00:37:25,323
+çarpıştırılarak gitmesi gerekiyor. Dolayısıyla o boyuttaki o indisin devamlı değişmesi gerekiyor. Ne kadar süre? Öncelikle B'nin sütun sayısı kadar, sonrasında da A'nın satır sayısı kadar. Dolayısıyla bu yüzden hani şey içeride, J içeride, K dışarıda. Ben o K boyutu kadar bu işi yapmak zorundayım.
+
+186
+00:37:25,695 --> 00:37:39,255
+Yani şeye baktığın zaman, şuradaki duruma, burada 1, 2, 3, 4, 5, 6, 7, 8 diye gidiyor. Her satırda iki eleman var. O yüzden de benim sonuç maddesim 3'e 2.
+
+187
+00:37:40,083 --> 00:38:02,783
+Ortadaki boyut uçtu, dikkat et. 3'e 2. Eğer bu 4'e 2 değil de 4'e 3 olsaydı B madresi, bu sonuç madresi de 3'e 3 olacaktı. Ve ben her seferinde buradaki şey A'nın kolon indisiyle B'nin satır indisini yeniden döndürerek hesaplamam gerekiyordu. Bunu yapabilmek için de ne yapıyorum?
+
+188
+00:38:06,963 --> 00:38:25,403
+K ile gösterdiğimiz indisi dışarı alıyorum. Neden? Çünkü K aslında B'nin kolon sayısı üzerinde ilerleme şeyimiz. Her kolon için bir kere daha çarpma işlemi yapacağım çünkü. Çarparak toplayacağım daha doğrusu. Yapmaya çalıştığımız şey de o zaten.
+
+189
+00:38:26,739 --> 00:38:53,439
+Yoksa hani her zaman o gördükleriniz şey olmak zorunda değil. A, İ, J ve K var. Dolayısıyla sırayla bunları çarpmak lazım falan gibi bir durum yok. Yani işlemin ne olduğu önemli. Biz onları boyutları ve o boyutlar üzerindeki hani gezinmek için kullandığımız indisleri sembolize etmek için öyle isimlendiriyoruz. Ama yapacağınız iş bunu gerektiriyorsa
+
+190
+00:38:54,164 --> 00:38:56,463
+yerleri şekilleri değişecek tabiki.
+
+191
+00:38:58,764 --> 00:39:00,564
+Bilmiyorum kafana yattı mı ama.
+
+192
+00:39:01,556 --> 00:39:03,815
+Birazcık yattı hocam, teşekkür ederim.
+
+193
+00:39:03,815 --> 00:39:26,815
+Tamam. Üzerine biraz daha düşün bence. Hani düşün derken böyle hani ekrana ve monitöre sadece bakarak değil, bir matriz koy. Ya da bu kodu koy. I, J ve K'nın tek tek hangi değerleri aldığını analiz et. Tamam mı? Yani bu döngü içerisinde hangisini alıyor? Ha, o zaman A, I, J işte buna denk geliyor. A...
+
+194
+00:39:27,956 --> 00:39:42,395
+B, J, K buna denk geliyor. O zaman ha bu da bu oluyor. Ha evet oturuyor, oturmuyor. Terslik var, düzlük var. Hani terse çevir. Önce İ, sonra J, sonra K olsaydı ne olurdu, nasıl olurdu? Ona bak. Tamam mı?
+
+195
+00:39:45,516 --> 00:39:48,176
+Hocam bir şey daha sorabilir miyim? Sor.
+
+196
+00:39:49,096 --> 00:39:52,216
+TMP artı eşittir A, Y, J dedik ya.
+
+197
+00:39:53,440 --> 00:40:03,440
+Orada TMP eşittir, TMP artı ile TMP artı eşittir çok mu farkı oluyor? Compile sırasında.
+
+198
+00:40:03,440 --> 00:40:09,440
+Nasıl farkı olsun anlamadım? Ne demek istediğin? Yani hız sırasında çok mu daha yavaş oluyor?
+
+199
+00:40:09,440 --> 00:40:19,440
+Neye göre oluyor onu anlamadım ki? TMP artı eşittir direkt yazdınız ya TMP eşittir, TMP artı yazmak yerine.
+
+200
+00:40:20,052 --> 00:40:21,752
+Bir farkı yok ki ne farkı olsun?
+
+201
+00:40:22,992 --> 00:40:23,612
+Anlatılım
+
+202
+00:40:23,612 --> 00:40:28,352
+Yani onu operatörleri konuşurken konuştuk, bunun ikisinin arasında bir fark yok?
+
+203
+00:40:29,731 --> 00:40:31,032
+Hiçbir farkı yok yani?
+
+204
+00:40:31,392 --> 00:40:32,992
+Yok, niye olsa aynı şey.
+
+205
+00:40:37,172 --> 00:40:44,052
+Yani bunun özel bir operatör diye altında özel bir instruction yok, bir şey yok vesairesi yok. Aynı şey.
+
+206
+00:40:45,792 --> 00:40:46,552
+Tamam.
+
+207
+00:40:47,271 --> 00:41:03,092
+Yani oraya tmp eşitir tmp artı aij çarpı bjk yazsaydım aynıydı. Yani bir değişiklik olması durumu yok orada. Evet başka sorusu olan var mı gençler?
+
+208
+00:41:07,411 --> 00:41:13,612
+Hocam ben Kayra'da, şu sonuçta hani Martlis'e benzettik ya, çıktığı, onu hocam nasıl yapıyoruz?
+
+209
+00:41:14,451 --> 00:41:15,351
+Ekranda görüyorsun.
+
+210
+00:41:16,411 --> 00:41:20,451
+Hocam işte, neye göre böyle EN'i kullanacağız, neye göre T'yi kullanacağız?
+
+211
+00:41:22,231 --> 00:41:23,391
+Ne demek neye göre kullanacağız?
+
+212
+00:41:23,391 --> 00:41:27,971
+Hocam, T shift atıyordu da, N de boşluk veriyordu. Ama işte, burada nasıl...
+
+213
+00:41:27,971 --> 00:41:29,471
+Ne? Bir daha söyle bakayım.
+
+214
+00:41:30,471 --> 00:41:32,231
+Hocam, T boşluk ver...
+
+215
+00:41:32,467 --> 00:41:38,827
+Nasıl söyleyeyim? T aradaki boşluğu artırıyordu. Öyle değil miydi? End herhalde şey yapıyordu, Enter koyuyordu.
+
+216
+00:41:40,407 --> 00:41:44,927
+İşte burada üç defa Enter koymuş ya, ondan dolayı diyorum. Yani anlamadım da ben orayı.
+
+217
+00:41:46,487 --> 00:41:48,887
+Ekranda kodu görüyorsun değil mi? Evet hocam.
+
+218
+00:41:50,787 --> 00:41:52,027
+Newline nerede yazıyor?
+
+219
+00:41:57,172 --> 00:41:59,672
+Hee, for'un içinde, tamam hocam. Doğru.
+
+220
+00:42:01,992 --> 00:42:20,912
+Slash t de top karakteri. Ben size ne dedim? Bunlara bakın dedim. Hani orada başka escape karakterleri vesaireler var. Printf'in dokumentasyonuna bakın. Yüzde d gibi format spesifier'ler de var ama diğer escape karakterler de var. Bunların ne olduğuna bakın dedim.
+
+221
+00:42:21,556 --> 00:42:25,256
+Dolayısıyla bakın dediğim şeylerden de sorumlusunuz, bunu unutmayın.
+
+222
+00:42:27,536 --> 00:42:28,556
+Tamam hocam.
+
+223
+00:42:31,056 --> 00:42:32,315
+Evet, başka?
+
+224
+00:42:40,659 --> 00:42:45,059
+Okey, o zaman başka bir şey yoksa, perşembe günü, he söyle.
+
+225
+00:42:45,319 --> 00:42:56,739
+Bir şey sorabilir, en sonunda yazdığımız Printf'in içindekini niye yazdık hocam? Ben onu anlayamadım.
+
+226
+00:42:57,500 --> 00:42:59,220
+Bu satırdan mı bahsediyorsun?
+
+227
+00:42:59,220 --> 00:43:01,399
+Evet, slash n'i neden yazdık hocam?
+
+228
+00:43:04,760 --> 00:43:06,019
+Şurayı görüyorsun değil mi?
+
+229
+00:43:07,380 --> 00:43:08,099
+Evet hocam.
+
+230
+00:43:08,659 --> 00:43:10,603
+Orada ne yapıyoruz?
+
+231
+00:43:15,987 --> 00:43:19,547
+Oranın değerleri alt alta yazması için mi yazdık?
+
+232
+00:43:20,487 --> 00:43:33,947
+Orada ne yapıyoruz sorusunun cevabı soru olmamalı bu arada. Orası burası, doğru mu? Print matrix dediğimiz yer. Resulting matrix'in ne olduğunu yazdığımız. Printf'ini buraya koymuşuz, doğru mu?
+
+233
+00:43:34,268 --> 00:43:34,887
+Evet hocam.
+
+234
+00:43:35,367 --> 00:43:39,827
+Dolayısıyla altında çıkanlar da burası. Şimdi matrix dediğimiz şey nedir? İki boyutlu bir dizi, doğru mu?
+
+235
+00:43:40,927 --> 00:43:41,307
+Evet.
+
+236
+00:43:41,972 --> 00:43:52,592
+Her seferinde aslında satır satır ne yapmamız lazım? İki tane eleman yazmamız lazım. Bu elemanları ben şöyle yazabilir miydim? Hemen yapayım.
+
+237
+00:44:00,884 --> 00:44:04,724
+Önce şöyle yazayım. Daha güzel olsun.
+
+238
+00:44:15,603 --> 00:44:17,983
+3, 4, 2
+
+239
+00:44:17,983 --> 00:44:24,503
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
+
+240
+00:44:29,492 --> 00:44:31,012
+Sonuç çok okunaklı değil mi?
+
+241
+00:44:33,231 --> 00:44:35,172
+Şu an. Gördün değil mi matrisi?
+
+242
+00:44:37,552 --> 00:44:39,752
+Hocam sonuç göremiyorum şu an de.
+
+243
+00:44:40,352 --> 00:44:43,832
+Göremezsin. Ama dikkatli bakarsan orada sonuç. Sonuç bu.
+
+244
+00:44:44,752 --> 00:44:45,112
+Doğru mu?
+
+245
+00:44:46,231 --> 00:44:47,192
+Matrise benziyor mu?
+
+246
+00:44:48,092 --> 00:44:49,092
+Benzemiyor hocam.
+
+247
+00:44:49,092 --> 00:44:56,432
+O zaman biz bu satırları niye yazdırıyoruz?
+
+248
+00:44:57,300 --> 00:45:25,196
+Bu Krintev, neyin içerisinde? Dıştaki for döngüsünün içerisinde. Yani satır satır, matrisin elemanlarını yazdırır. Yazdırırken, her satırda bir for döngüsü içerisinde dönüyor. Dikkat et bak, dıştaki for satırlar, içteki for sutunlar. Yani her seferinde o satırdaki birinci, ikinci, üçüncü, kaç tane eleman varsa her birini yazdırıyorum. Şimdi o satırların...
+
+249
+00:45:26,579 --> 00:45:50,579
+Her birinde ne yapıyorum? Slash d diyorum, yani bir tab bırakıyorum, yani bir boşluk atılmasını sağlıyorum. İki karakter arasında, iki eleman arasında. Satırı bitirdikten sonra en sona new line koyuyorum ki, bir satırdaki iki elemanı ya da üç elemanı ya da beş elemanı neyse yazsın aynı satıra, sonra yeni satıra gezsin. Bunu böyle yapmazsam...
+
+250
+00:45:51,411 --> 00:46:01,411
+Her birinden sonra Neil Line koyarsam, sadece tek boyutlu bir dizi gibi görürüm. Onu da pars edemem, anlayamam. Pars edemem derken yani gözümle pars edemem. Bunu böyle yaptığım zaman
+
+251
+00:46:17,331 --> 00:46:20,672
+Neyi görüyorsun? Sonucu doğru düzgün görüyorsun.
+
+252
+00:46:21,451 --> 00:46:25,311
+Yaptırma amacımız ya da hedefimiz ya da şeyimiz bu.
+
+253
+00:46:26,031 --> 00:46:26,711
+Gayemiz bu.
+
+254
+00:46:28,471 --> 00:46:29,152
+Netleşti mi?
+
+255
+00:46:30,152 --> 00:46:30,692
+Anlayabilir mi?
+
+256
+00:46:30,692 --> 00:46:32,192
+Evet hocam, anladım, teşekkür ederim.
+
+257
+00:46:32,192 --> 00:46:32,831
+Okey.
+
+258
+00:46:35,011 --> 00:46:40,391
+Evet, o zaman başka bir şeyiniz yoksa, sorunuz yoksa gençler.
+
+259
+00:46:41,076 --> 00:47:07,436
+Perşembe sınavda görüşmek üzere. Dediğim gibi saati ve süresi konusunda yani süresini sınav başladığı zaman görürsünüz. Saati konusunda da yani dersimiz normalde dokuzda başlıyor ama ben hani sıkıntı olmaması ya da şey olmaması adına sınavı onda başlatırım. Süresini de sınava başladığınız zaman görürsünüz. Çünkü şu anda şeyimiz yok. [öğrenci] sen bir şey soracaksın sanki.
+
+260
+00:47:07,987 --> 00:47:21,607
+Mi? Evet hocam, benim aklıma bir şey takılmıştı da. Söyle. Hocam, bu print matrix'te C, I, I, J yaptınız. Hani o C, I, K olsa daha düzgün olmaz mıydı? Ya yine aynı sonucu verecek de.
+
+261
+00:47:23,027 --> 00:47:32,327
+O İK olsaydı aynı sonucu vermeyecekti. Çünkü onun aynı sonucu vermesi için Ford öngüsündeki J'nin de değiştirilmesi lazım.
+
+262
+00:47:32,347 --> 00:47:39,567
+Onu da diyecektim hocam. J yerine K yazardık. Çünkü hani İJ, JK olduğu için İK oluyor ya yeni Matrix. O yüzden dedim ben de.
+
+263
+00:47:39,887 --> 00:47:46,487
+Bu birbirine bağlama ve sanki başka türlü olmaz mı düşüncesinden vazgeçiyor olmanız lazım.
+
+264
+00:47:46,963 --> 00:48:13,963
+Daha doğru diye bir şey yok. Yani bu ekrana bastırıyor ve gereksiz yere başka indis kullanmıyorum. İhtiyacım olduğu zaman ihtiyacım olanı kullanıyorum. Senin bu mantığınla gidecek olursak, benim B maddesini okuturken de iyiceyle okutmamam gerekir. Doğru mu? Evet. Ve fakat öyle bir şey yok. Yani iyi bir değişkendir ve...
+
+265
+00:48:14,547 --> 00:48:35,647
+A matrisiyle, B matrisiyle ya da C matrisiyle bir ilişkisi yoktur. O ilişkiyi sen oluşturuyorsun, sen şekillendiriyorsun. İstiyorsan, psikopatsan, bu çıktı döngüsü, bu çıktı döngüsünde iyi kullanılmaz, buraya X yazacağım falan diyorsan yazarsın ama saçma bir hareket olur.
+
+266
+00:48:36,851 --> 00:48:44,811
+Tamam mı? Peki hocam, tamam, sağ olun. Yani hani bir şey yok, mantığı yok o anlamda, bir bağlılık yok. Teşekkürler.
+
+267
+00:48:49,076 --> 00:49:00,175
+[öğrenci], niye sesli sormuyorsun bilmiyorum ama niye Türkçe yazayım? Türkçe mi yazmamı istiyorsun, sen mi Türkçe yazmak istiyorsun anlamadım.
+
+268
+00:49:04,211 --> 00:49:12,751
+Orada yazabilir miyim? E yaz. Yani nasıl istiyorsan öyle yaz. Ama kalkıp Türkçe karakter yazarsan içerisine, oradan da bir şey olur, sıkıntı olur.
+
+269
+00:49:19,635 --> 00:49:20,096
+Okey.
+
+270
+00:49:21,436 --> 00:49:28,556
+O zaman başka sorunuz yoksa gençler, bugünlük bu kadar. Perşembe sınavda görüşeceğiz.
+
+271
+00:49:33,268 --> 00:49:34,107
+İyi günler hocam.
+
+272
+00:49:34,707 --> 00:49:37,728
+İyi günler. Hepinize iyi günler gençler. Kolay gelsin.

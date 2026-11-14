@@ -1,0 +1,3179 @@
+1
+00:08:20,884 --> 00:08:23,384
+Günaydın arkadaşlar. Sesim geliyor mu?
+
+2
+00:08:25,963 --> 00:08:26,644
+Geliyor hocam.
+
+3
+00:08:28,024 --> 00:08:46,224
+Güzel. Evet. Şu an 41 kişi olduk. 10. haftaya başlıyoruz. Yeni bir hafta. Dönemin sonu hızla yaklaşıyor. Nasılsınız arkadaşlar? Sağlığınız, saatiniz iyi mi?
+
+4
+00:08:49,652 --> 00:08:55,052
+Evde sıkıldınız mı? Nasıl durumlar?
+
+5
+00:08:56,652 --> 00:08:57,912
+Biraz sıkıldık tabii.
+
+6
+00:09:00,492 --> 00:09:13,772
+Hafta sonu evden çıkamamak biraz kötü geliyor tabii. Ama evde olunca da çok fazla iş yapabiliyorsunuz. O da güzel bir taraf belki. Siz ne düşünüyorsunuz bu konuda?
+
+7
+00:09:18,995 --> 00:09:30,895
+Artıları, eksileri var diyelim. Yani çok iş yapabiliyor muyuz? Ben kendi adıma konuşayım. Evde çok kolay dikkat dağılıyor hocam. Yoğunlaşması biraz daha zor olabiliyor.
+
+8
+00:09:32,515 --> 00:09:45,255
+Evet, orası öyle doğru. Şuradan chat'i de açayım. Mikrofonunu açıp konuşmak istemeyen chatten de yazabilir. Biraz sohbet ederek başlayalım.
+
+9
+00:09:48,820 --> 00:10:00,360
+Şey soracağım size, daha önce VEKA kullandınız mı? Kaç kişi VEKA kullandı daha önce? Şöyle bir elleri göreyim.
+
+10
+00:10:04,692 --> 00:10:10,372
+Veka Data Mining Toolbox'ını kullanan var mı daha önce? Bir kişi mi?
+
+11
+00:10:14,611 --> 00:10:20,991
+Anladım. Bugün size hiyerarşik clustering yönteminden bahsedeceğim.
+
+12
+00:10:23,011 --> 00:10:29,531
+Biliyorsunuz geçen hafta eğiticisiz kümeleme algoritmalarına başlamıştık.
+
+13
+00:10:29,531 --> 00:10:33,432
+Yani ne demek eğiticisiz, sınıf etiketi olmayan.
+
+14
+00:10:33,727 --> 00:10:46,647
+veriyi nasıl gruplayabiliriz? Sample'ların birbirlerine olan benzerliklerine bakarak bunları gruplamaya çalışıyoruz eğiticiz, kümeleme yöntemlerinde.
+
+15
+00:10:46,647 --> 00:10:51,927
+Ve geçen hafta ilk olarak K-Means, k-means, klastring yöntemini gördük.
+
+16
+00:10:57,556 --> 00:11:06,176
+İkinci bir yöntem, eğiticiziz kümeleme yöntemlerinden bir ikincisini, hiyerarşik kümeleme yöntemini göreceğiz.
+
+17
+00:11:07,696 --> 00:11:20,676
+Çok uzun değil aslında, bir slide üzerinden önce teorik olarak konuyu anlatacağım. Arkasından da bir tane yine örnek, soru çözümü yapacağım.
+
+18
+00:11:21,235 --> 00:11:28,355
+Ve 3 saatlik dersin 2 saati bu iş için yeterli olacak.
+
+19
+00:11:29,556 --> 00:11:32,235
+Geriye kalan 1 saatte ise planım...
+
+20
+00:11:34,484 --> 00:11:56,084
+Veka kullanımıyla ilgili kısa bir tur yapmak. Böyle bir 40 dakikada size Vekayı nasıl kullanırsınız, nelere dikkat etmeniz gerekir? Bununla ilgili bir 40 dakikalık bir ders yapacağım. Bu haftaki planım bu şekilde.
+
+21
+00:11:59,347 --> 00:12:24,467
+Yine tabii tahtayı da kullanacağız. Evet, bugün hiç sesiniz çıkmıyor. Uykulu musunuz? Yoksa bilgisayarın başında mı değilsiniz? Yoksa böyle ben şimdi kendi kendime bir takım teoriler üretiyorum. Bakayım ses kimler bilgisayarın başında? Bir de onun için elleri yürüyeyim.
+
+22
+00:12:25,587 --> 00:12:37,107
+Gerçekten şüpheye düşüyorum. Sizden tepki gelmeyince ekran açıldı. Neredesiniz? 23 kişi bilgisayarın başındayız dedi.
+
+23
+00:12:39,327 --> 00:12:49,127
+Evet. Peki, yarıyı geçtik en azından. 28 kişi oldu şu an el kaldıranların sayısı.
+
+24
+00:12:49,807 --> 00:12:51,408
+Peki, teşekkür ediyorum.
+
+25
+00:12:51,748 --> 00:12:52,048
+Olmamıştır.
+
+26
+00:12:52,048 --> 00:12:53,248
+Burada izliyorsunuz.
+
+27
+00:12:54,967 --> 00:12:58,847
+Bazen oluyor, ben çay koymaya gidiyorum arada, kaçırıyorum hocam.
+
+28
+00:12:59,168 --> 00:13:02,028
+Öyle denk gelebiliyor diyorsunuz, tamam peki.
+
+29
+00:13:02,387 --> 00:13:05,827
+Bu da aslında herhalde evden ders dinlemenin güzel tarafları.
+
+30
+00:13:06,827 --> 00:13:09,168
+Daha rahat oluyorsunuz.
+
+31
+00:13:09,728 --> 00:13:10,008
+Peki.
+
+32
+00:13:10,836 --> 00:13:22,736
+Sevgili arkadaşlar, 10. haftaya başlıyoruz. Bu haftayı da tamamladığımızda geriye 4 haftamız kalacak. Bir hafta bir kısa sınav daha yapacağım size.
+
+33
+00:13:24,236 --> 00:13:34,336
+3 kaldı. Proje vermem gerekiyor. Biliyorsunuz bunu da konuşmuştuk. Bu hafta içinde size proje konularının dağıtımını yapacağım.
+
+34
+00:13:34,932 --> 00:13:41,612
+Böyle bir dönemi kapatacağız. Az kaldı sürenin bitmesine.
+
+35
+00:13:41,751 --> 00:13:43,272
+Başka bir ödev olacak mı?
+
+36
+00:13:43,731 --> 00:14:05,051
+Başka bir ödev ver, yani vermeyi çok istiyorum ama değerlendirme süreci çok zor oluyor arkadaşlar. O yüzden çok düşünmüyorum yeni bir ödev vermeyi. Ama egzersiz olsun yapmak istiyoruz derseniz yine ben bu şekilde bir Jüpiter ödev veririm ama değerlendirme şeyini almam.
+
+37
+00:14:06,100 --> 00:14:15,080
+Hocam, ilk ödevle ilgili size mail atmıştım ama ödevde hazır kütüphane kullanmıştık. Yanlış bir anlaşılma olmuş.
+
+38
+00:14:15,764 --> 00:14:23,663
+Onun gibi birçok arkadaş var benimle aynı yapan, hazır kütüphane kullanan, tamamlayamayan. Onunla ilgili bir karar değerlendirme yapacak mısınız?
+
+39
+00:14:24,743 --> 00:14:43,663
+Arkadaşlar, orada derste de söylemiştim. Kodun içinde de yazdım. Yani ben zaten orada size Gaussian naive Bayes fonksiyonuyla bir örnek yaptım. Ödev o kadar kolay olamazdı.
+
+40
+00:14:43,764 --> 00:14:59,203
+Değil mi? Sizden istediğim o dağılımları tek tek sizin hesaplamanızdı. Yine aynı fonksiyonu kullanarak bana ödev teslim edenlere maalesef tam not veremedim. Baya düşük kaldı.
+
+41
+00:15:01,844 --> 00:15:07,584
+Ne diyeyim, bundan sonraki aşamada daha dikkatli okumanızı tavsiye ediyorum. Yani açıklamaları.
+
+42
+00:15:08,403 --> 00:15:22,004
+Şeyde hocam, o hafta dersi dinledim ama bilmiyorum söylediğiniz herhalde bir kaçırdım. Hazır fonksiyonu bilmiyordum yani açıkçası. Ödevin içeriğinde de pdf'sinde de olmayınca öyle bir açıklama. Yanlış anlaşılma oldu herhalde.
+
+43
+00:15:22,004 --> 00:15:32,884
+Bu practice yazan blogun içinde kendi kodunuzu hani yazacaksınızdan kastım. Hazır fonksiyon kullanılmayacak anlamındaydı.
+
+44
+00:15:35,475 --> 00:15:39,475
+Dediğim gibi aksi takdirde çok kolay olacaktı zaten ödev değil mi?
+
+45
+00:15:40,395 --> 00:15:57,076
+İşte onu bir grubumuz var, orada da konuşmuştuk da hocam bir arkadaş sordu böyle mi diye. Ben de yanlış bir bilgilendirme yaptım onunla ilgili. Onun sorumluluğu falan da bende. Acaba ikinci bir ödev verip, ilk ödevin yerine geçebilecek bu yanlış anlaşılmaları kaldırabilecek bir şey yapabilir miyiz?
+
+46
+00:15:57,971 --> 00:16:20,331
+İlk ödevin yerine geçmez. Çünkü onu yapan epey bir arkadaşımız da var bir tarafta. Bir düşüneyim ikinci bir ödev için. Önce şu elleri indirelim, ikinci ödevi isteyenlerin ellerini tekrar görelim bakalım. Bir sınıf içi anket yapalım.
+
+47
+00:16:21,748 --> 00:16:32,028
+Tamam, önceleri indiriyoruz. Ondan sonra tekrar sıfırdan bir anket yapıyoruz. Diyorum ki, ikinci ödev istiyor musunuz derste?
+
+48
+00:16:35,067 --> 00:16:40,128
+Evet, şimdi ikinci ödev isteyenleri görelim. Kimler istiyor? Kaç kişi?
+
+49
+00:16:43,728 --> 00:16:45,708
+On kişi istiyor sadece.
+
+50
+00:16:49,491 --> 00:16:50,591
+Oldukcağız.
+
+51
+00:16:52,271 --> 00:16:52,631
+Evet.
+
+52
+00:16:57,716 --> 00:17:04,195
+Peki, şunu sorayım. Proje mi, ödev mi? Yani proje yerine geçecek bir ödev de olabilir.
+
+53
+00:17:08,819 --> 00:17:10,599
+Proje yerine geçecek derken hocam?
+
+54
+00:17:11,679 --> 00:17:19,240
+Yani ekstra proje vermeyeceğim ama o puana sahip bir ödev olacak.
+
+55
+00:17:21,599 --> 00:17:26,399
+Kaç kişi bu şekilde bir ödev ister?
+
+56
+00:17:29,039 --> 00:17:32,339
+Hocam bunların yüzdeleri nasıl olacak ödev proje bize?
+
+57
+00:17:33,720 --> 00:17:35,939
+Onları size dönem başında vermiştim.
+
+58
+00:17:36,339 --> 00:17:40,619
+Course syllabus dağıtmıştım, orada yazıyordu. Bakalım ne yazmışız.
+
+59
+00:17:44,619 --> 00:17:50,019
+Veri Madenciliği, lisans, course syllabus.
+
+60
+00:17:54,099 --> 00:18:19,460
+Proje yüzde on. Proje yüzde on. Proje yüzde on gözüküyor. Yani zaten burada ödeve şey vermemişim. Ara sınav bu anından bir parça ödeve aktarabiliriz. Proje yüzde on. İşte o yüzde onluk kısım için bir ödev ister misiniz proje yerine? Sorun bu.
+
+61
+00:18:22,163 --> 00:18:24,043
+12 kişi el kaldırdı.
+
+62
+00:18:24,064 --> 00:18:26,003
+Projenin notunu bölelim diyorsunuz değil mi hocam?
+
+63
+00:18:26,003 --> 00:18:31,663
+Evet, %10'luk bir proje yerine %10'luk bir ödev ister misiniz?
+
+64
+00:18:34,443 --> 00:18:41,104
+17 kişi, 18 kişi isteriz diyor.
+
+65
+00:18:41,284 --> 00:18:42,084
+19 oldu.
+
+66
+00:18:43,764 --> 00:18:47,604
+20 artıyor.
+
+67
+00:18:49,683 --> 00:18:54,203
+Birdenbire bu ilginç, cazip bir hale geldi galiba.
+
+68
+00:18:57,523 --> 00:18:59,864
+Başka projelerimiz de var da hocam.
+
+69
+00:18:59,864 --> 00:19:03,503
+O yüzden üst üste binecekler.
+
+70
+00:19:03,523 --> 00:19:07,183
+Tahmin ediyorum, zaten onun için ödev istemediğinizin farkındayım.
+
+71
+00:19:07,563 --> 00:19:11,284
+27 kişiye el kaldırdı. Tamam, bunu değerlendireceğim arkadaşlar.
+
+72
+00:19:12,372 --> 00:19:21,811
+Hocam bir de derse başlamadan önce ödevi neye göre değerlendirdiniz tam olarak? Bir derse ödevde ona göre şey yapalım.
+
+73
+00:19:22,451 --> 00:19:36,831
+Açıklamaları iyi okursanız arkadaşlar sorun olmayacak. Yani hani böyle çok yüksek bir başarı ortalaması yakalamış olmanız değil. Kod içerisinde istenen şekilde kodu yazmış olmanız benim için önemli.
+
+74
+00:19:37,395 --> 00:19:42,655
+Tabii hatalı yapanları da ayrıca puan kırdım.
+
+75
+00:19:43,215 --> 00:19:52,316
+Ben mesela test ve data şeylerini bölen kütüphaneye kullanmıştım sizin kullandığınız. Acaba bunu da mı kullanmamalıydık?
+
+76
+00:19:52,675 --> 00:20:00,000
+Hayır, hayır. Onu kullanabilirsiniz. Orada sorun şey, ben size karşılaştırma yapın dedim. Benim verdiğim %20...
+
+77
+00:20:00,000 --> 00:20:15,480
+20'ye %80 bölme durumu için karşılaştırma yapın dedim. Zaten ben datayı bölüp verdim size. Sizin bir daha bölmeniz gerekmiyor ki. Yukarıda çalıştırdığınız kod bloğunun ürettiği değişkenleri aşağıdaki kod bloğunun içerisinde kullanabiliyorsunuz.
+
+78
+00:20:16,211 --> 00:20:17,512
+Tamam hocam, anladım.
+
+79
+00:20:17,672 --> 00:20:30,392
+Ama karşılaştırma yapabilmeniz için aynı datayı kullanmanız ya da aynı oranda tekrar bölmeniz gerekir ki başarılarını kıyaslayabilelim. Öyle değil mi?
+
+80
+00:20:31,711 --> 00:20:35,971
+Mesela şöyle bir şey gördüm, beni çok şaşırttı ödevde gördüğüm hatalar.
+
+81
+00:20:39,635 --> 00:20:54,916
+Split Data işlemini tekrar kendisi uyguluyor arkadaş. %25'e %25 test seçiyor galiba ya da %30. Fakat ECURY ise hesaplarken toplam doğru sayısını 200'e bölüyor.
+
+82
+00:20:56,339 --> 00:21:15,539
+Yani başta benim verdiğim sayılar yüzde yirmi oranı için doğru. Yüzde yirmisini test alırsanız iki yüz tane sample'ınız oluyor test kümesinde. Ama oranı değiştiriyor ve yine iki yüze bölüyor. Bu yaptığı işten hiç haberi olmadığını gösteriyor. Yani böyle bayağı bir şeyler.
+
+83
+00:21:15,539 --> 00:21:17,039
+O bendim hocam.
+
+84
+00:21:17,980 --> 00:21:18,759
+Sen miydin o?
+
+85
+00:21:19,139 --> 00:21:21,359
+Evet. Şeyi sormadan oynadım.
+
+86
+00:21:23,092 --> 00:21:29,952
+%25'i ilk önce %20'ydi. Sonra o 200'e bölmeyi düzeltmek aklıma gelmedi.
+
+87
+00:21:30,644 --> 00:21:33,144
+Ya ben görünce çok üzüldüm.
+
+88
+00:21:34,304 --> 00:21:39,664
+Yok hocam yani farkındayım ama unutmuşum yani öyle değil.
+
+89
+00:21:39,983 --> 00:21:42,804
+Tamam peki yoksa biliyordum diyorsunuz peki.
+
+90
+00:21:42,864 --> 00:21:43,503
+Evet hocam.
+
+91
+00:21:52,180 --> 00:22:13,840
+X ve Y label'ları ya da değişkenleri, X öz nitelikleri, her sample'ın sahip olduğu öz nitelikleri tutar, Y ise o sample'lara ait class label'ını tutar. Bu bir kuraldır artık. Yani her kitapta, her kaynakta bu şekilde anlatılır.
+
+92
+00:22:14,451 --> 00:22:33,291
+Ne demek istedim? Ben data'yı bölerken mesela X-train, Y-train dedim. X-train bloğu içerisinde 800 tane sample, 4 tane öz nitelik var diyelim ki Y ise bunların hangi sınıfa ait olduğunu gösteriyor.
+
+93
+00:22:33,907 --> 00:22:50,207
+Bu dediğim gibi bir kural. Ben datayı bu şekilde vermiş olmama rağmen mesela şöyle bir şey gördüm. X-Train nasıl yapmıştı onu?
+
+94
+00:22:53,395 --> 00:23:10,536
+Yani Y etiketlerini de X label'ıyla tutan bir arkadaş gördüm. Ya dedim bu kadar nasıl karıştırmış konuyu. Böyle bir problem vardı. Yine accuracy hesaplamada karşılaştırma yaparken hata yapanlar vardı. Bilmiyorum yani baya böyle karıştırmış.
+
+95
+00:23:12,468 --> 00:23:20,628
+Olanlar olduğunu gördüm. Ödevlerin o yüzden konuyu öğrenmeye çok faydası var ama tabii ben size çok geri bildirim döndüremiyorum.
+
+96
+00:23:22,128 --> 00:23:30,668
+Kendime bazı notlar aldım yapılan hatalarla ilgili ama sonra onu hani böyle sayfada çarşaf gibi paylaşmak da istemedim.
+
+97
+00:23:32,288 --> 00:23:36,148
+Evet ama genel olarak bahsetmiş oldum.
+
+98
+00:23:38,708 --> 00:23:39,307
+Pekala.
+
+99
+00:23:42,099 --> 00:23:43,419
+24 geçiyor.
+
+100
+00:23:45,519 --> 00:23:48,719
+Slide'lar üzerinden başlayabiliriz.
+
+101
+00:23:54,644 --> 00:23:55,963
+Çete ekranım nereye gitti?
+
+102
+00:24:08,596 --> 00:24:25,496
+Evet, bu haftaki konu başlığımız yerarşik kümeleme olacak. Lütfen soru sormaktan çekinmeyin. Çünkü ders içinde bir etkileşim olmadığında anlaşılıp anlaşılmadığı konusunda fikir yürütemiyorum.
+
+103
+00:24:28,819 --> 00:24:34,719
+Okay, we can switch into English and we will start with hierarchical clustering.
+
+104
+00:24:35,619 --> 00:24:47,219
+In this solution, our aim will be group all the subjects, all the samples into clusters.
+
+105
+00:24:48,039 --> 00:24:54,099
+And in hierarchical clustering methods, we will use two different solutions.
+
+106
+00:24:54,380 --> 00:24:56,799
+One of them is agglomerative.
+
+107
+00:24:56,819 --> 00:24:59,900
+ve diğer birisi, devisive solutions.
+
+108
+00:25:00,900 --> 00:25:08,159
+Aglomerative method uses bottom-up strategy ve devisive method uses top-down strategy.
+
+109
+00:25:08,980 --> 00:25:12,480
+I will explain both of them here.
+
+110
+00:25:15,604 --> 00:25:19,664
+Evet, bir diagram var.
+
+111
+00:25:20,544 --> 00:25:22,544
+Hierarki clustering var.
+
+112
+00:25:22,544 --> 00:25:24,463
+İçerideki bir solucu var.
+
+113
+00:25:25,264 --> 00:25:30,423
+İçerideki, bir aglomeratörle altyazı.
+
+114
+00:25:37,236 --> 00:25:44,256
+Aglomerative method can be divided into three.
+
+115
+00:25:45,635 --> 00:25:53,476
+Here we have linkage methods, we have variance methods, and we have centroid methods.
+
+116
+00:25:54,276 --> 00:26:03,296
+We will start with linkage methods, and we have three different alternatives in linkage methods.
+
+117
+00:26:04,036 --> 00:26:05,236
+Single linkage methods.
+
+118
+00:26:05,236 --> 00:26:08,635
+Average, Complete Linkage ve Average Linkage.
+
+119
+00:26:13,011 --> 00:26:19,492
+Okay, here it explains the agglomerative hierarchical clustering.
+
+120
+00:26:19,492 --> 00:26:22,052
+This is a bottom-up strategy.
+
+121
+00:26:22,851 --> 00:26:29,052
+And in this solution, we will start with some atomic clusters.
+
+122
+00:26:30,032 --> 00:26:36,112
+The mean of atomic cluster, we have only one sample in each cluster.
+
+123
+00:26:36,911 --> 00:26:40,612
+If we have a data set with 10 samples,
+
+124
+00:26:41,011 --> 00:26:45,131
+10 atomik clusters.
+
+125
+00:26:45,791 --> 00:26:46,892
+We have
+
+126
+00:26:46,892 --> 00:26:49,751
+clusters
+
+127
+00:26:49,751 --> 00:26:51,152
+with one sample
+
+128
+00:26:51,152 --> 00:26:53,231
+inside these clusters.
+
+129
+00:26:53,672 --> 00:26:55,731
+These are called as atomic clusters.
+
+130
+00:26:56,652 --> 00:26:57,932
+At the beginning
+
+131
+00:26:57,932 --> 00:26:59,851
+we will assume that
+
+132
+00:26:59,851 --> 00:27:01,031
+each sample
+
+133
+00:27:01,031 --> 00:27:03,432
+will be in
+
+134
+00:27:03,432 --> 00:27:05,652
+atomic clusters and then
+
+135
+00:27:05,652 --> 00:27:07,412
+we will compute
+
+136
+00:27:07,412 --> 00:27:08,771
+the similarities
+
+137
+00:27:09,471 --> 00:27:10,471
+Bu, 1 atomik klasi, ok?
+
+138
+00:27:09,011 --> 00:27:20,651
+ve bu
+
+139
+00:27:35,731 --> 00:27:40,231
+Bu operasyon, bir dendogramı var.
+
+140
+00:27:40,231 --> 00:27:44,412
+Bu bir ligere bir diagramı var.
+
+141
+00:27:44,412 --> 00:27:48,112
+Bu da next slide.
+
+142
+00:27:50,251 --> 00:27:51,251
+Ok.
+
+143
+00:27:52,692 --> 00:27:56,971
+Öncelikle agglomeratör ve divisive solutions
+
+144
+00:27:56,971 --> 00:27:58,971
+bu bir example.
+
+145
+00:27:59,188 --> 00:28:09,348
+In this example, we have a data set with five samples. These are A, B, C, D, E.
+
+146
+00:28:09,348 --> 00:28:19,828
+And in agglomerative solution, agglomerative solution is called as agglomerative nesting.
+
+147
+00:28:25,587 --> 00:28:34,908
+Ağnız'ın, diğer birisi, Divisive Analysis'ı, bu Diyana'ın, bu Diyana'ın.
+
+148
+00:28:35,220 --> 00:28:42,799
+And in agglomerative solution, you can see step 0, step 1, step 2.
+
+149
+00:28:43,279 --> 00:28:46,419
+These are the steps of agglomerative solution.
+
+150
+00:28:46,419 --> 00:28:53,659
+And in the starting point at step 0, we have atomic clusters.
+
+151
+00:28:54,240 --> 00:28:54,439
+Okay.
+
+152
+00:28:54,639 --> 00:29:02,799
+If we have five samples in our data set, at the beginning, we have five, five.
+
+153
+00:29:03,220 --> 00:29:04,599
+Atomic Clusters.
+
+154
+00:29:07,968 --> 00:29:29,888
+Actually, in this example, we don't have any numeric values of the attributes, but think that we compute a similarity or distance between these atomic clusters, and then we find the most similar clusters as A and B.
+
+155
+00:29:35,968 --> 00:29:43,968
+birçok birçok birçok birçok birçok birçok birçok birçok birçok.
+
+156
+00:29:43,968 --> 00:29:51,968
+Birçok birçok birçok birçok birçok birçok birçok.
+
+157
+00:29:51,968 --> 00:29:59,968
+Ve buçok birçok birçok birçok birçok.
+
+158
+00:30:00,852 --> 00:30:27,820
+Ve bu,
+
+159
+00:30:27,859 --> 00:30:31,859
+Ve devam edebilecek bu çalışma,
+
+160
+00:30:31,859 --> 00:30:34,859
+ve bu çalışma kestiklerine
+
+161
+00:30:34,859 --> 00:30:37,859
+bir kestiklerine
+
+162
+00:30:37,859 --> 00:30:42,859
+ve bu çalışma kestiklerine
+
+163
+00:30:42,859 --> 00:30:45,859
+bu çalışma kestiklerine
+
+164
+00:30:45,859 --> 00:30:55,859
+ve bu çalışma kestiklerine
+
+165
+00:30:55,859 --> 00:31:01,359
+5 samples will be in the same cluster at the end of this operation.
+
+166
+00:31:02,900 --> 00:31:22,000
+Actually, we will obtain this diagram in hierarchical clustering, but we will use a threshold value or termination condition.
+
+167
+00:31:23,080 --> 00:31:29,020
+And for example, we can say we will get only two clusters.
+
+168
+00:31:30,900 --> 00:31:35,280
+We will stop this operation at the end of step 3.
+
+169
+00:31:35,980 --> 00:31:39,860
+And by the way, we can get two clusters.
+
+170
+00:31:39,860 --> 00:31:51,060
+One of them is a cluster with samples A and B, and another cluster with samples C, D, and E.
+
+171
+00:31:54,900 --> 00:32:02,900
+Terminasyon konusunu bulunduğumuz için, başka bir örneğe veriyorum.
+
+172
+00:32:02,991 --> 00:32:08,711
+to show the termination conditions in hierarchical clustering.
+
+173
+00:32:08,711 --> 00:32:11,031
+This is agglomerative solution.
+
+174
+00:32:11,851 --> 00:32:13,451
+And we have another one.
+
+175
+00:32:13,672 --> 00:32:15,432
+This is a divisive solution.
+
+176
+00:32:16,051 --> 00:32:22,152
+And you can see here in divisive solution, we have step zero here.
+
+177
+00:32:22,831 --> 00:32:30,711
+It means the divisive solution uses the reverse operation of...
+
+178
+00:32:30,991 --> 00:32:32,751
+Aklama bir solucu.
+
+179
+00:32:33,491 --> 00:32:37,652
+Ve bu bir kısımda bir kısımda bir kısımda.
+
+180
+00:32:37,652 --> 00:32:39,652
+İkisi de bu kısımda.
+
+181
+00:32:40,948 --> 00:32:49,827
+And we will separate these samples into smaller groups.
+
+182
+00:32:50,468 --> 00:33:00,968
+And at the end of the divisive solution, at step four, we will get atomic clusters by this splitting operation.
+
+183
+00:33:08,948 --> 00:33:35,852
+Bazen bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, bazıları, baz
+
+184
+00:33:38,483 --> 00:33:40,523
+Do you have any question at this part?
+
+185
+00:33:45,364 --> 00:33:46,084
+No question?
+
+186
+00:33:50,259 --> 00:33:54,200
+Okay, this is dendrogram.
+
+187
+00:33:54,200 --> 00:34:06,960
+And at the end of this merging operation, for example, in agglomerative solution, we are using atomic clusters here.
+
+188
+00:34:07,476 --> 00:34:16,855
+You can see at the bottom, these are the atomic cluster with single samples.
+
+189
+00:34:17,635 --> 00:34:34,456
+And we merge these atomic clusters according to their similarities and add some other samples and we will get larger clusters.
+
+190
+00:34:35,476 --> 00:34:45,396
+end of this operation and in hierarchical clustering we will draw the endrogram to show
+
+191
+00:34:45,396 --> 00:34:53,796
+the merge operation in a specific similarity levels.
+
+192
+00:34:58,739 --> 00:35:13,679
+Okay, in agglomerative nesting, it places each object into a cluster and into a cluster of its own.
+
+193
+00:35:14,036 --> 00:35:21,036
+ve
+
+194
+00:35:21,036 --> 00:35:32,204
+bu
+
+195
+00:35:32,467 --> 00:35:50,907
+If you are using the distance measure for the criteria, we can select some different distance measures, but here
+
+196
+00:35:54,068 --> 00:36:08,427
+We will use some other solutions because it is very simple to measure the similarity between samples or distance between two samples.
+
+197
+00:36:08,427 --> 00:36:09,427
+But here...
+
+198
+00:36:09,775 --> 00:36:20,975
+We have clusters. We have some clusters and in each cluster we have many samples inside these clusters.
+
+199
+00:36:21,675 --> 00:36:32,375
+Okay, how can we measure the similarity between clusters? Or how can we measure the distance between these clusters?
+
+200
+00:36:32,375 --> 00:36:36,695
+Okay, this is an important question here.
+
+201
+00:36:38,107 --> 00:36:49,107
+bu
+
+202
+00:36:37,775 --> 00:36:44,775
+Bu yüzden bu
+
+203
+00:36:44,775 --> 00:36:59,083
+bir
+
+204
+00:36:59,155 --> 00:37:09,956
+Here, to represent the distance between clusters, we will give four widely used measures.
+
+205
+00:37:10,855 --> 00:37:17,335
+These are minimum distance, maximum distance, mean distance, and average distance.
+
+206
+00:37:17,335 --> 00:37:18,135
+Okay.
+
+207
+00:37:19,155 --> 00:37:26,275
+And to represent this solution here, for example, cluster Ci.
+
+208
+00:37:27,155 --> 00:37:34,155
+bir
+
+209
+00:37:26,963 --> 00:37:35,403
+Yani, birçok birçok birçok birçok birçok birçok.
+
+210
+00:37:40,628 --> 00:37:51,908
+Okay, this is the n represents the number of objects in cluster CI.
+
+211
+00:37:58,036 --> 00:37:59,275
+Um...
+
+212
+00:38:02,420 --> 00:38:20,519
+We have, if we have used minimum distance to measure the distance between clusters, this solution will be called as single linkage approach.
+
+213
+00:38:20,519 --> 00:38:24,199
+And if we use maximum distance,
+
+214
+00:38:24,659 --> 00:38:31,659
+ve bu
+
+215
+00:38:33,012 --> 00:38:39,832
+Ve bu
+
+216
+00:38:39,832 --> 00:39:02,492
+bu
+
+217
+00:39:00,496 --> 00:39:11,056
+...ve
+
+218
+00:39:11,056 --> 00:39:25,200
+...
+
+219
+00:39:25,199 --> 00:39:53,179
+between the samples in cluster two, and then we will get the minimum distance. These are the nearest samples in each clusters to represent the distance between clusters. Okay? If we use minimum distance in our solution, the hierarchical clustering method will be called as single linkage cluster.
+
+220
+00:40:16,768 --> 00:40:21,847
+Bu yüzden bu solution, maksimum distance,
+
+221
+00:40:22,487 --> 00:40:24,887
+is called as complete linkage.
+
+222
+00:40:26,608 --> 00:40:28,688
+Ve bir diğer bir,
+
+223
+00:40:28,748 --> 00:40:30,728
+bu average distance.
+
+224
+00:40:31,668 --> 00:40:35,268
+Ve iki sampleri
+
+225
+00:40:35,268 --> 00:40:41,347
+ve iki sampleri
+
+226
+00:40:45,076 --> 00:40:49,576
+2x2, we need to calculate 4 distances.
+
+227
+00:40:50,476 --> 00:41:02,976
+And to calculate the average distance, we will get the average of these 4 distances in this solution.
+
+228
+00:41:03,496 --> 00:41:03,735
+Okay.
+
+229
+00:41:04,195 --> 00:41:06,476
+Do you have any idea, any other idea?
+
+230
+00:41:07,195 --> 00:41:11,036
+How can we measure the distance between clusters?
+
+231
+00:41:18,835 --> 00:41:29,935
+I gave three solutions here, but at the beginning we said that we have four widely used measures.
+
+232
+00:41:31,576 --> 00:41:40,135
+Okay, centroid points we can use. That's another idea. Yes, thank you.
+
+233
+00:41:42,739 --> 00:42:08,739
+We can find the centroid of each cluster, and then we can measure the distance between the centroid. It is called as mean distance. You can see here, we have minimum, maximum, average and mean distance. Mean distance used centroid points to calculate the distance between clusters.
+
+234
+00:42:15,188 --> 00:42:15,668
+Okay.
+
+235
+00:42:18,168 --> 00:42:25,188
+What about the disadvantages of the minimum and maximum distance?
+
+236
+00:42:26,612 --> 00:42:35,931
+Evet, aslında, birçok kullanımda, minimum ve maximum ve maximum kullanımda,
+
+237
+00:42:35,931 --> 00:42:41,931
+çok kullanımda, çünkü,
+
+238
+00:42:44,436 --> 00:42:59,500
+Bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle
+
+239
+00:43:05,907 --> 00:43:21,587
+Okay, we can see here, minimum and maximum measures uses extreme points in each cluster.
+
+240
+00:43:21,867 --> 00:43:26,507
+That's why they are very sensitive to outliers or noisy data.
+
+241
+00:43:29,507 --> 00:43:30,507
+And...
+
+242
+00:43:31,603 --> 00:43:36,523
+Bu problemi, minimum ve maximum distances.
+
+243
+00:43:37,243 --> 00:43:52,764
+To avoid this sensitivity to outliers, we can prefer to use mean and average distance, instead of using minimum or maximum distances.
+
+244
+00:43:55,251 --> 00:44:01,131
+Çünkü, you can see here, when we use the maximum distance, these points can be,
+
+245
+00:44:02,835 --> 00:44:24,799
+Bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle
+
+246
+00:44:24,800 --> 00:44:33,180
+It gives us a not realistic solution.
+
+247
+00:44:33,180 --> 00:44:37,120
+Okay.
+
+248
+00:44:42,612 --> 00:45:06,612
+Okay. At the beginning, we gave a diagram here. You can see. For hierarchical clustering, we said that in agglomerative clustering, we have a linkage methods. We talk about them.
+
+249
+00:45:06,943 --> 00:45:11,623
+Sinklet, Average Linkage, ve Average Linkage.
+
+250
+00:45:11,623 --> 00:45:16,103
+Ve Varian method ve Centroid method.
+
+251
+00:45:16,103 --> 00:45:19,864
+Ama burada, bir örnek vereyim.
+
+252
+00:45:19,864 --> 00:45:24,623
+Bir örnek vereyim.
+
+253
+00:45:30,036 --> 00:45:30,596
+Okay.
+
+254
+00:45:32,116 --> 00:45:37,676
+We'll use the board again.
+
+255
+00:46:55,476 --> 00:46:55,916
+Okay.
+
+256
+00:47:14,739 --> 00:47:17,659
+Okay, we can use this whiteboard again.
+
+257
+00:47:22,867 --> 00:47:35,027
+To show this single linkage and complete linkage hierarchical solutions, I will give an example.
+
+258
+00:47:35,807 --> 00:47:48,047
+In this example, we have a distance matrix, and it's given to us at the beginning of this problem.
+
+259
+00:48:04,884 --> 00:48:06,704
+We have a distance matrix.
+
+260
+00:48:07,963 --> 00:48:12,864
+This matrix shows the distance between samples.
+
+261
+00:48:13,083 --> 00:48:17,264
+And in this example, we have five samples in this data set.
+
+262
+00:48:19,244 --> 00:48:22,724
+That's why the matrix size is five by five.
+
+263
+00:48:23,724 --> 00:48:28,583
+And this is a symmetric matrix, you know.
+
+264
+00:48:48,851 --> 00:48:57,471
+This is the symmetric matrix, the distance matrix, and it shows the distance between five samples.
+
+265
+00:49:40,755 --> 00:49:55,635
+In the first one, in the first solution, we will use single linkage, agglomerative clustering, and the other one is...
+
+266
+00:49:59,635 --> 00:50:01,396
+Complete Linkage
+
+267
+00:50:08,980 --> 00:50:11,420
+Bu problem, bu problem.
+
+268
+00:50:14,300 --> 00:50:16,539
+Bu problem, 10 minutes'a bir problem.
+
+269
+00:50:16,539 --> 00:50:20,460
+Ben 10 minutes'a bir durdur.
+
+270
+00:50:20,460 --> 00:50:23,820
+Ve sonra, bu problem'a bir durdur.
+
+271
+00:50:23,820 --> 00:50:24,820
+Tamam.
+
+272
+00:50:26,659 --> 00:50:28,500
+Bir durdur.
+
+273
+00:50:28,500 --> 00:50:29,900
+10 minutes'a bir durdur.
+
+274
+00:50:30,619 --> 00:50:31,739
+İzlediğiniz için.
+
+275
+01:00:41,748 --> 01:00:53,967
+Evet, tekrar merhaba arkadaşlar. Derse başlayacağım. Burada mısınız? Sınıf 68 kişi olmuş. Bakalım kaç kişi bilgisayarın başında?
+
+276
+01:01:11,251 --> 01:01:15,371
+Evet.
+
+277
+01:01:35,699 --> 01:01:43,399
+Peki, sınıfın yarısı en azından benimle birlikte devam edebiliriz.
+
+278
+01:02:25,012 --> 01:02:35,432
+Şimdi bize verilen bir distance matris var. Görebiliyorsunuz değil mi şu an ekranda whiteboard'u?
+
+279
+01:02:37,012 --> 01:02:38,092
+Görüyoruz hocam.
+
+280
+01:02:38,835 --> 01:02:47,075
+Tamam, peki. İlk olarak single inkçı yöntemini kullanarak bir kümeleme yapacağız.
+
+281
+01:02:47,855 --> 01:02:54,535
+Adım adım şöyle ilerliyoruz. Bu matriz bize sample'lar arasındaki uzaklığı gösteriyor.
+
+282
+01:02:56,535 --> 01:03:03,735
+Ben sample ID'lerinin numaralarını da matrizinin üzerine ekliyorum ki değerlendirirken daha rahat edelim.
+
+283
+01:03:05,331 --> 01:03:15,831
+Bu matriste, bu bir distance matrisi olduğu için ana köşegen üzerinde sıfırları görüyorum. Her örneğin kendi kendisine olan uzaklığı sıfır.
+
+284
+01:03:15,831 --> 01:03:22,711
+Bunun dışında, şöyle baktığımda, şurası.
+
+285
+01:03:23,827 --> 01:03:43,088
+ana köşegeni ve bu matriz içerisinde en kısa mesafeyi arıyorum. Minimum distance için bu bana gerekli. En kısa mesafede sample 3 ile
+
+286
+01:03:44,403 --> 01:03:55,124
+Sample 5 arasındaki mesafe 2 birinmiş. En kısa mesafe bu çıkıyor. Dolayısıyla ben ilk birleştireceğim atomik klaster'ım bu olacak.
+
+287
+01:03:55,124 --> 01:04:01,867
+Çünkü biliyorum ki başlangıçta single linkage dediğimiz yöntemde...
+
+288
+01:04:06,900 --> 01:04:09,980
+Ne kullanıyorduk? Minimum distance kullanıyorduk.
+
+289
+01:04:11,299 --> 01:04:14,599
+Kümeler arasındaki mesafeyi ölçmek için.
+
+290
+01:04:15,219 --> 01:04:21,960
+Ve elimde sample 3 ve sample 5 iki atomic cluster var.
+
+291
+01:04:22,579 --> 01:04:26,239
+Bunları belli bir mesafede birleştiriyorum.
+
+292
+01:04:26,239 --> 01:04:30,279
+Yukarıda çizdiğim eksen distance'ı gösterecek.
+
+293
+01:04:33,907 --> 01:04:50,347
+Başlayarak ben iki mesafesinde bu örnekleri birleştirdiğim için iki mesafesinde bunları dendograma yerleştiriyorum.
+
+294
+01:04:53,168 --> 01:04:55,527
+Bunlar iki mesafesinde birleşti.
+
+295
+01:04:56,371 --> 01:05:06,531
+Şimdi bu birleştirme adımı ile beraber S3 ve S5'ten oluşan iki elemanlı bir cluster oluşmuş oldu.
+
+296
+01:05:08,391 --> 01:05:19,191
+Benim bundan sonraki adımda bu matris üzerinde, mesafe matrisi üzerindeki bir sonraki en küçük sayıyı aramam gerekiyor.
+
+297
+01:05:19,191 --> 01:05:23,191
+Bir sonraki en küçük sayı 3. Bu da...
+
+298
+01:05:23,603 --> 01:05:31,943
+Sample 3'ün, Sample 1 ile arasındaki mesafe 3-1'inmiş.
+
+299
+01:05:37,300 --> 01:05:54,680
+Sample 3 ile Sample 5 aynı kümenin içinde. Dolayısıyla Sample 1'in bir atomik klastır. Bunun bu kümeye olan mesafesini ölçerken her iki Sample'a olan uzaklığına bakıp hangisi minimumsa onu almam gerekiyor.
+
+300
+01:05:55,140 --> 01:06:05,300
+Birin 3'e olan uzaklığı 3 birim, birin 5'e olan uzaklığı 11 birim. Demek ki benim bu ikisi arasındaki minimum distansı alacaksam eğer bunu...
+
+301
+01:06:05,300 --> 01:06:07,980
+3 olarak göstermem gerekiyor.
+
+302
+01:06:08,900 --> 01:06:18,840
+Dolayısıyla bu matristeki en küçük ikinci sayı 3 olduğu için ben birinci sample'ı bu kümeye dahil edeceğim.
+
+303
+01:06:18,840 --> 01:06:21,940
+Hangi mesafede? 3 mesafesinde.
+
+304
+01:06:22,740 --> 01:06:32,600
+Sample 1'i 3 mesafesinde bu kümeye dahil edeceğim.
+
+305
+01:06:40,980 --> 01:06:58,200
+Evet, şimdi adım adım dendogram da ortaya çıkıyor. Şu an elimde 3 elemanlı bir küme var. Sample 1, Sample 3 ve Sample 5'ten oluşan bir klastırım var.
+
+306
+01:07:05,492 --> 01:07:17,132
+Atomic cluster'larım var. Üç tane cluster var elimde. Şimdi matristeki bir sonraki en küçük sayıya bakıyorum. Matristeki bir sonraki en küçük sayı kaç?
+
+307
+01:07:22,516 --> 01:07:24,996
+Beni dinliyor mu acaba öğrencilerim?
+
+308
+01:07:24,996 --> 01:07:26,256
+Harcısı galiba hocam.
+
+309
+01:07:26,956 --> 01:07:28,496
+Evet, teşekkür ediyorum.
+
+310
+01:07:28,496 --> 01:07:32,536
+5. Nelerin arasındaki uzaklıkmış?
+
+311
+01:07:32,655 --> 01:07:34,696
+2'nin 4'e olan uzaklığıymış.
+
+312
+01:07:35,016 --> 01:07:37,236
+2'nin 4'e olan uzaklığı 5 birim.
+
+313
+01:07:37,748 --> 01:07:46,588
+Matristeki en küçük sayı zaten 2 ve 3'den sonra bu olduğu için aslında demek ki bu ikisinin birleştirileceği anlamına geliyor.
+
+314
+01:07:46,588 --> 01:08:01,847
+Hemen de endograma gidiyorum ve 5 mesafesinde sample 2 ile sample 4'ü birleştiriyorum.
+
+315
+01:08:06,900 --> 01:08:08,739
+küme oluşturuyorum.
+
+316
+01:08:11,059 --> 01:08:18,399
+Şimdi, tekrar bakacak olursam, şimdi elimde iki tane küme var.
+
+317
+01:08:19,680 --> 01:08:23,219
+Şurayı silerek bunu gösterebilirim.
+
+318
+01:08:42,387 --> 01:08:57,887
+Sample 2 ve Sample 4'ten oluşan iki elemanlı bir klastırım var. Bir de üç elemanlı bir, üç ve beşten oluşan bir klastırım var. Bu ikisi arasındaki uzaklığı ölçmek istiyorum.
+
+319
+01:08:57,887 --> 01:09:03,768
+Yine matristen gidebilirim. Matriste beşten sonraki en küçük sayı.
+
+320
+01:09:04,083 --> 01:09:09,543
+6, 6 neyi gösteriyormuş? 1'in 4'e olan uzaklığını gösteriyormuş.
+
+321
+01:09:10,304 --> 01:09:15,443
+1, sol taraftaki kümede, 4, sağ taraftaki kümede.
+
+322
+01:09:15,583 --> 01:09:28,763
+Demek ki bu ikisi arasındaki uzaklık birbirine en yakın iki nokta, bu kümenin içerisinde birbirine en yakın iki sampel 1 ve 4 olduğu için bu ikisinin arasındaki uzaklığın 6 olduğunu söyleyebilirim.
+
+323
+01:09:32,083 --> 01:09:34,863
+Bu iki klasterı birleştirebilirim.
+
+324
+01:09:35,683 --> 01:09:45,863
+4, 5, 6, 6 uzaklığında bu iki klasterı şurada birleştirebilirim.
+
+325
+01:09:48,863 --> 01:09:59,683
+Evet, bu kolay olan single linkage kullanan yöntemin çözümünü gösteriyor.
+
+326
+01:10:00,595 --> 01:10:05,715
+Diğer yönteme geçeceğim. Bununla ilgili sorunuz var mı?
+
+327
+01:10:07,795 --> 01:10:08,555
+Minimum disuz.
+
+328
+01:10:08,555 --> 01:10:10,535
+S0 olması da gerekmiyor mu?
+
+329
+01:10:12,455 --> 01:10:13,255
+Efendim?
+
+330
+01:10:14,375 --> 01:10:15,355
+Tamam hocam.
+
+331
+01:10:16,095 --> 01:10:20,615
+S0'dan başlamadım. Matris'te 1'den 5'e kadar numaralandırmıştım.
+
+332
+01:10:21,355 --> 01:10:21,935
+Yeni çok iyi.
+
+333
+01:10:21,935 --> 01:10:22,255
+Evet.
+
+334
+01:10:26,515 --> 01:10:35,255
+Peki, o zaman ikinci çözüme geçiyorum. Sorunuz var mı? Çete de bakayım soru soran var galiba.
+
+335
+01:10:35,255 --> 01:10:38,475
+Ama yokmuş.
+
+336
+01:10:42,795 --> 01:10:44,695
+Diğer çözüm,
+
+337
+01:10:47,755 --> 01:10:51,595
+complete linkage.
+
+338
+01:10:59,956 --> 01:11:25,775
+Maximum Distance kullanıyor, biliyoruz. Ekranda yazmak da zor ama neyse buna da şükür. Mouse ile yazmıyorum en azından. Maximum Distance kullanacak. Bu çözüm için de aynı matriz üzerinden gideceğim ve sample'lar arasındaki uzaklığa bakacağım ama şöyle.
+
+339
+01:11:31,572 --> 01:11:35,791
+Biraz tahtayı temizlemem gerekiyor ki şu alanı kullanacağım.
+
+340
+01:11:43,764 --> 01:11:50,904
+Silginin boyutunu büyütüyorsun. Daha büyük alanı siliyor. Çok güzel yapmışlar.
+
+341
+01:12:15,028 --> 01:12:35,268
+Şimdi yine bu distance matriz üzerinde birbirine, bakın Complete Linkage'in çalışma mantığı şöyle, kümeler arasındaki uzaklığı tayin ederken, kümelerin içerisinde birbirine en uzak olan iki nokta arasındaki uzaklığı kullanıyorum.
+
+342
+01:12:36,815 --> 01:12:51,355
+Birleştirme işlemini yaparken, yani bütün bu distance'ları yazdıktan sonra hangi iki kümenin birleştirileceğine karar verirken birbirine en benzeyeni, yani birbirine en yakın olanı önce birleştiriyorum.
+
+343
+01:12:51,355 --> 01:12:58,895
+Yani o distance'lar içerisinden en küçük olanı seçiyorum. Lütfen dikkat. Böyle bir şey var, trik var burada.
+
+344
+01:12:59,328 --> 01:13:08,708
+O yüzden bu distance matriz üzerinde birleştirme işlemini yaparken en benzer olanlar merge edilecek, birleştirilecek.
+
+345
+01:13:08,708 --> 01:13:21,648
+O nedenle gene aslında en küçük sayıyı seçiyorum. Yani sample 3'ün 5'e olan uzaklığı 2 birim, ilk birleştirilecek olanlar bunlar oluyor.
+
+346
+01:13:24,787 --> 01:13:37,807
+Sample 5'e olan uzaklığı, yukarıya distance eksenini çiziyorum ve 2-2 gideyim.
+
+347
+01:13:37,807 --> 01:13:41,768
+2-4-6-8-10
+
+348
+01:13:47,028 --> 01:13:54,948
+Buna göre iki mesafesinde bu iki kümeyi, atomik klasterı birleştiriyorum.
+
+349
+01:13:55,587 --> 01:13:57,868
+İki mesafesinde burası sıfır noktası.
+
+350
+01:13:59,308 --> 01:14:10,208
+Şimdi elimde S3 ve S5'ten oluşan bir küme var.
+
+351
+01:14:11,048 --> 01:14:12,328
+S1 var.
+
+352
+01:14:13,395 --> 01:14:16,475
+S2 var, S4 var.
+
+353
+01:14:17,235 --> 01:14:24,615
+Şimdi bunların birbirlerine olan uzaklıklarını yazarken, atomik klasterlar arasındaki uzaklık zaten aynı mantıkla çalışıyor.
+
+354
+01:14:24,615 --> 01:14:40,615
+Birin ikiye olan uzaklığı 9 birim, ikinin dörde olan uzaklığı 5 birim, birin dörde olan uzaklığı 6 birim.
+
+355
+01:14:42,163 --> 01:14:56,783
+Mesela şu kümeye olan uzaklıklarını, 3 ve 5'ten oluşan kümeye olan uzaklıklarını yazarken, birinci sample'ın 3'e ve 5'e olan uzaklığına bakıyorum.
+
+356
+01:14:57,323 --> 01:15:06,283
+Birin 3'e olan uzaklığı, 3, 5'e olan uzaklığı, 11. O zaman diyorum ki bu ikisi arasında maksimum olan uzaklık 11 olması lazım. 11 yazıyorum.
+
+357
+01:15:08,115 --> 01:15:23,756
+S1'in, S1'in, 3'e ve 5'e olan uzaklıklarına baktım. 3'e olan uzaklığı 3, 5'e olan uzaklığı 11. O yüzden maksimum olanı seçtim. Mesela S4'ün bu kümeye olan uzaklığını yazacağım.
+
+358
+01:15:33,939 --> 01:15:47,059
+Kenara not alayım. Bir de 4'ün 5'e olan uzaklığına bakıyorum. 8 birim. Demek ki bu ikisi arasındaki uzaklık maksimum olanı olacak. Yani 9 birim olacak diyorum.
+
+359
+01:15:50,228 --> 01:16:06,488
+Ve bir de neye bakmam lazım? S2'nin bu iki sampıldan oluşan kümeye olan uzaklığına bakmam lazım. S2'nin 3'e olan uzaklığına bakıyorum. 2'nin 3'e olan uzaklığı 7 birim.
+
+360
+01:16:18,323 --> 01:16:21,644
+İkisi arasındaki uzaklık 11'inmiş diyorum.
+
+361
+01:16:22,543 --> 01:16:26,203
+Ve bu bütün mesafeleri yazdıktan sonra ne yapıyorum?
+
+362
+01:16:26,623 --> 01:16:30,523
+Arkadaşlar, en yakın olanı birleştiriyorum.
+
+363
+01:16:30,763 --> 01:16:33,384
+En yakın olan hangisi? 2 ile 4.
+
+364
+01:16:33,943 --> 01:16:38,843
+2 ile 4, 2 ile 4, 5 mesafesinde birleşecek.
+
+365
+01:17:03,859 --> 01:17:27,939
+Evet, şu an elimde üç tane klaster var. S1 atomik klaster. Şurada S3 ve S5'ten oluşan bir tane klaster var. Burada baktığımızda S2 ile S4'ten oluşan bir klaster var. Bir de bu var. Üç tane klasterım var.
+
+366
+01:17:30,163 --> 01:17:47,384
+Uzaklıklarına bakacağım. S3, S5 sampullarından oluşan bir klastırım var. S2 ve S4'den oluşan bir klastırım var. Bir tane de S1 tek atomik klastırım var.
+
+367
+01:17:47,384 --> 01:17:52,463
+Şimdi bu üç klastır arasında mesafe ölçmek istiyorum.
+
+368
+01:17:53,140 --> 01:17:59,000
+Birin, zaten buna olan uzaklığını az önce ölçmüştüm, 11 birimdi.
+
+369
+01:17:59,780 --> 01:18:05,780
+Ve yine birin, şu kümeye olan uzaklığını ölçmem lazım.
+
+370
+01:18:06,220 --> 01:18:09,659
+Birin ikiye ve birin dördü olan uzaklıklarına bakacağım.
+
+371
+01:18:10,200 --> 01:18:13,159
+Birin ikiye olan uzaklığı 9, 9.
+
+372
+01:18:14,100 --> 01:18:19,200
+Birin dördü olan uzaklığı 6, maksimum olan 9.
+
+373
+01:18:22,068 --> 01:18:27,488
+Şimdi şu iki küme arasındaki uzaklığa bakacak olursak.
+
+374
+01:18:34,547 --> 01:18:44,047
+Bu nedir? En büyük sayıya bakarak gitmeye çalışıyorum. 2'nin 5'e olan uzaklığı 11'im olduğu için, burası 10 olacak, doğru mu?
+
+375
+01:18:45,047 --> 01:18:59,108
+2'nin 5'e olan uzaklığı 11'im olduğu için, matristeki en büyük ikinci sayı, 1'in 5'e olan uzaklığıydı.
+
+376
+01:18:59,636 --> 01:19:02,736
+Bunun uzaklığı on birim olduğu için burası on olacak.
+
+377
+01:19:03,156 --> 01:19:05,416
+Şimdi bakın bütün mesafeleri buldum.
+
+378
+01:19:05,936 --> 01:19:07,256
+Bütün mesafeleri buldum.
+
+379
+01:19:07,355 --> 01:19:09,176
+Şimdi birleştirme işlemini yapacağım.
+
+380
+01:19:09,816 --> 01:19:11,436
+Hangilerini birleştiriyorum?
+
+381
+01:19:12,296 --> 01:19:16,676
+Birleştirirken en küçük olanı seçip onu birleştireceğim.
+
+382
+01:19:16,676 --> 01:19:19,596
+Dokuz mesafesi en benzer olanıdır.
+
+383
+01:19:20,596 --> 01:19:25,536
+S1'i 2 ve 4'e katacağım.
+
+384
+01:19:28,243 --> 01:19:29,804
+9 mesafesinde.
+
+385
+01:19:46,515 --> 01:20:06,515
+Son aşamaya geldik. Artık elimizde iki tane küme var. Burada birleştirme sonucu S1, S2 ve S4 bu kümenin içinde. Burada ise 3 ve 5'ten oluşan bir küme var. Şimdi bunların uzaklıklarını hesaplayacağım.
+
+386
+01:20:14,515 --> 01:20:32,435
+S5'ten oluşan bir küme, bir de S1, S2 ve S4'ten oluşan bir küme var. Bu ikisi arasındaki uzaklığı yazmam gerekiyor. Bu da nedir? 11'dir zaten.
+
+387
+01:20:40,979 --> 01:20:56,500
+Buradaki uzaklık 11 birim olacak. Demek ki 11 mesafesinde, pardon, 11 mi 10 mu? 11 değil mi? Bir daha bakıyorum. Birim 5'e olan uzaklığı.
+
+388
+01:20:56,500 --> 01:21:07,659
+11. Evet 11. 11 mesafesinde bu ikisi birleşiyor.
+
+389
+01:21:10,836 --> 01:21:16,336
+Ve tek bir küme oluyor. Dendogramı bu şekilde oluşturmuş oluyor.
+
+390
+01:21:16,336 --> 01:21:22,275
+Şimdi burada durma koşulunu da gösterelim.
+
+391
+01:21:22,275 --> 01:21:24,015
+Durma koşulu için.
+
+392
+01:21:28,787 --> 01:21:36,827
+Varsayalım ki 5.5 benzerlik değerini biz durma koşulu aldık.
+
+393
+01:21:36,827 --> 01:21:49,487
+Yani şuradaki distance'ı, distance ekseninde 5.5 bizim threshold değerimiz olsa bu şekilde bir kabul yaptık durma koşulu olarak.
+
+394
+01:21:51,123 --> 01:22:01,623
+Bu threshold değerinden aşağıya doğru bir çizgi çekiyorum ve dendogram üzerinde kestiği tüm noktalar bana oluşan kümeleri gösteriyor.
+
+395
+01:22:02,663 --> 01:22:09,724
+Üç tane yerden kesti dendogramı. Bu üç tane küme oluşturduğu anlamına gelir.
+
+396
+01:22:10,323 --> 01:22:22,763
+S3 ve 5'ten oluşan bir küme, S2 ve 4'ten oluşan bir küme ve bir de S1 Atomic Cluster'ından oluşan bir küme, 3 tane küme elde etmiş oluyoruz.
+
+397
+01:22:22,763 --> 01:22:27,463
+Eğer threshold değerini 5.5 seçersem,
+
+398
+01:22:33,876 --> 01:22:55,536
+diyebilirim. Üç tane küme çıktı. Single linkage için aynı eşik değerini kullanarak, 5.5 eşik değerini kullanarak bir durma koşulu tanımlarsam eğer, dendogramı iki noktadan kesti ve iki tane küme oluşturdu.
+
+399
+01:23:01,524 --> 01:23:21,264
+iki tane cluster oluşturduğunu söyleyebilirim. Zaten oluşan kümeleri de buradan görebiliyoruz. Şuradaki küme S1, S3 ve S5'ten oluşuyor. Buradaki küme ise 2 ve 4'ten oluşuyor.
+
+400
+01:23:25,939 --> 01:23:29,559
+Bu şekilde iki tane küme oluşmuş oluyor.
+
+401
+01:23:30,779 --> 01:23:34,420
+Evet, böyle bir çözüm.
+
+402
+01:23:34,819 --> 01:23:42,219
+Single linkage ve complete linkage için çözümü bu şekilde açıklayabiliriz.
+
+403
+01:23:42,519 --> 01:23:43,859
+Sorunuz var mı acaba?
+
+404
+01:23:49,395 --> 01:23:54,575
+Hocam, mesafeler aynı olmuş olsaydı nasıl karar vermeliydik?
+
+405
+01:23:56,536 --> 01:24:01,956
+Aynı olsaydı derken yani aynı mesafede birden fazla küme mi olsaydı?
+
+406
+01:24:02,755 --> 01:24:08,255
+Evet, yani ben mesela şey yaparken, sizi çözerken yanlış okudum galiba.
+
+407
+01:24:11,315 --> 01:24:13,815
+Mesela şu, şuraya bakın.
+
+408
+01:24:14,292 --> 01:24:21,252
+Mesela şurada 2 ile 4'ün birbirine olan mesafesi de 3 olsaydı, şununki gibi.
+
+409
+01:24:22,372 --> 01:24:30,432
+Öyle değil hocam. Şöyle diyeyim. 1'in 2 ile 4'e mesafesi de 10'du ya.
+
+410
+01:24:31,952 --> 01:24:37,952
+Şey için mi bakıyoruz? Complete linkage için. Complete linkage. Bunda. Evet.
+
+411
+01:24:39,663 --> 01:24:47,064
+10 muydu, 9 muydu? Yani 1 hem 3-5'e hem 2-4'e eşit mesafede olmuş olsaydı?
+
+412
+01:24:47,644 --> 01:24:49,344
+Hepsi aynı noktada birleşirdi.
+
+413
+01:24:50,564 --> 01:24:51,363
+Tamam.
+
+414
+01:24:51,564 --> 01:24:55,644
+Değil mi? Hepsi aynı noktada birleşirdi. O çıkıyor bazen.
+
+415
+01:24:58,163 --> 01:24:59,863
+Yani öyle bir ihtimal var tabii ki.
+
+416
+01:25:01,943 --> 01:25:06,064
+Sorunuz var mı arkadaşlar? Sorunuz yoksa ben size bir soru soracağım.
+
+417
+01:25:08,916 --> 01:25:10,376
+Önce sizinkileri alalım.
+
+418
+01:25:20,467 --> 01:25:33,007
+Peki, sorunuz yok. Sorum şu. Soruda size bir distance matriz vermiştim ve buna göre bir çözüm yaptık.
+
+419
+01:25:37,507 --> 01:25:42,807
+Eğer verdiğim matriz distance matriz değil de similarity matriz olsaydı,
+
+420
+01:25:44,595 --> 01:25:50,755
+Yani elimde nümerik değil de kategorik öz nitelikler var ve binary sayılarla verilmiş.
+
+421
+01:25:51,536 --> 01:25:58,975
+Ben bu binary sayılar, biliyorsunuz 0, 1, 1, 0 gibi öz nitelikler varsa,
+
+422
+01:26:01,075 --> 01:26:08,835
+Simple Matching Coefficient Similarity ya da Jakarta Similarity gibi değişik benzerlik ölçüleri kullanabiliyoruz.
+
+423
+01:26:10,271 --> 01:26:20,851
+örnekler arasında bir D matrisi değil de S matrisi tanımlardım. Yani similarity matrisi oluşurdu.
+
+424
+01:26:22,971 --> 01:26:28,351
+Eğer kategorik, yani binary öz niteliklerimiz varsa.
+
+425
+01:26:35,956 --> 01:26:47,416
+Simularity, mesela SMC diye bir yöntem var. 1 ile sample 3 arasında böyle bir değer hesaplıyorum.
+
+426
+01:26:48,676 --> 01:26:57,595
+Benzer mantıkla işte birin dörde benzerliği falan diye. Simularity hesapladım ve benim bir similarity matrisim oldu.
+
+427
+01:27:00,692 --> 01:27:05,051
+Bu similarity matriz yine varsayalım ki 5'e 5 olsun.
+
+428
+01:27:05,731 --> 01:27:09,372
+Ana köşegen üzerindeki değerler bu defa 1 oluyor.
+
+429
+01:27:09,372 --> 01:27:13,811
+Kendi kendisine olan uzaklığı benzerliği 1 ya.
+
+430
+01:27:14,731 --> 01:27:16,372
+Buna göre işlem yaparken...
+
+431
+01:27:21,108 --> 01:27:26,548
+Mesela Single Linkage kullanacaksınız. Single Linkage kullanmak demek.
+
+432
+01:27:31,028 --> 01:27:34,747
+Minimum mesafeyi kullanmak demekti mesafe matrisinde.
+
+433
+01:27:38,868 --> 01:27:40,667
+similarity madresinde ne demek?
+
+434
+01:27:45,300 --> 01:27:47,500
+En yüksek similarity'yi kullanmak mı olur?
+
+435
+01:27:48,119 --> 01:27:52,340
+Evet, similarity'de böyle bir yaklaşım değişiyor.
+
+436
+01:27:56,739 --> 01:27:58,860
+Değişik sorular var. Bir dakika.
+
+437
+01:27:59,239 --> 01:28:03,699
+Kümelerken, yine bakarak yapsaydık, komple link aç mı olurdu? Hayır.
+
+438
+01:28:04,440 --> 01:28:06,300
+Kümeleme yaparken yani bu...
+
+439
+01:28:07,091 --> 01:28:21,091
+Kümeler arasındaki mesafeyi ölçmek için merkez noktası bulup merkezler arası uzaklık kullansaydık mean distance oluyordu. Complete linkage, maximum distance kullanıyor, farklılaşıyor.
+
+440
+01:28:22,211 --> 01:28:26,811
+[öğrenci], sizin sorunuza cevap olarak söylüyorum.
+
+441
+01:28:27,811 --> 01:28:31,091
+[öğrenci], similarity yapıp D matrisini...
+
+442
+01:28:33,332 --> 01:28:36,092
+Oluşturur aynı işlemleri onun üzerinden.
+
+443
+01:28:39,092 --> 01:28:49,131
+D matrisi anladım. Şöyle demek istiyorum. Similarity'yi hesapladıktan sonra bunların hepsini birden çıkartıp distance'a dönüştürüp ondan sonra çözerim diyor [öğrenci].
+
+444
+01:28:49,672 --> 01:28:56,811
+Güzel o da olabilir ama similarity matrisi üzerinden de çözülebilir.
+
+445
+01:28:57,811 --> 01:29:06,291
+Similarity'yi eğer Single Linkage Minimum Distance kullanıyorsak en büyük değerleri birleştiririz. [öğrenci] dediğiniz doğru.
+
+446
+01:29:07,672 --> 01:29:11,072
+Ama size sadece düşündürmek istedim.
+
+447
+01:29:14,355 --> 01:29:25,855
+Eğer nümerik öz niteliklerimiz yoksa, kategorik öz niteliklerimiz varsa bu matriz değişecek ve bir similarity matrizi olacak.
+
+448
+01:29:26,295 --> 01:29:32,295
+Similarity matriz üzerinden az önce yaptığınız mantığı burada uygulayabilmelisiniz.
+
+449
+01:29:33,495 --> 01:29:40,675
+Single linkage'ı kurgulamak kolay similarity matriz üzerinde.
+
+450
+01:29:41,171 --> 01:30:02,231
+Ama Komplit Link'ci kurgulamak çok zor bence. O yüzden o konuya hiç girmiyorum. Şimdiden söyleyeyim. O gerçekten biraz gereksiz gibi görünüyor bana. Peki, anlaşıldı mı? Anlattığımız konular, sorunuz var mı acaba?
+
+451
+01:30:08,948 --> 01:30:19,068
+Çette sorularınıza bakıyorum. Şu an soru yok galiba. Peki, kullanışıldı o zaman. Slide'larla devam edeceğim.
+
+452
+01:30:43,028 --> 01:30:43,548
+Şimdi
+
+453
+01:30:51,539 --> 01:31:02,920
+Dersin teorik kısmında linkage metodları anlattık. Varyans metod için konuşacağız. Varyans metod ve Vartz metod nedir, nasıl çalışır ona bakacağız.
+
+454
+01:31:02,920 --> 01:31:12,600
+Bu da centroid metod dediği metod da aslında mean distance ile yapılan çözümü kastediyor.
+
+455
+01:31:14,036 --> 01:31:20,636
+Varyans metod da aslında ilginç ama biraz karmaşıklığı, işlem karmaşıklığı fazla gibi görünüyor.
+
+456
+01:31:21,935 --> 01:31:26,775
+Hierarchic Agglomerative Clustering Variance and Centroid Methods demiş.
+
+457
+01:31:27,935 --> 01:31:34,115
+Varyans metod için generate clusters to minimize the within cluster variance.
+
+458
+01:31:36,692 --> 01:31:51,351
+Kümeleri birleştirdiğimizde oluşacak olan yeni kümenin kendi içindeki within cluster varyans dediği küme içi varyansının minimize etmeye çalışıyor.
+
+459
+01:31:51,695 --> 01:32:04,296
+Küme içi varyans nasıl ölçülür? Önce onu sormak istiyorum size. Bana ne diyebilirsiniz? Küme içi varyans nasıl ölçülür? Bakayım, anlıyor musunuz? Aynı dili konuşuyor muyuz bu kısımda?
+
+460
+01:32:04,296 --> 01:32:09,396
+Niye sizin chat ekranımı göremiyorum yine?
+
+461
+01:32:26,420 --> 01:32:40,840
+Çet ekranı kayboldu. Yakalayamıyorum çet ekranı. Bazen böyle görüntülenemiyor. Niye öyle oluyor? Çözemedim. Stop sharing yapalım. Şimdi geldi.
+
+462
+01:32:46,292 --> 01:32:52,592
+Evet, sınıf içi varyans nasıl ölçülür? Within class varyans ya da within cluster varyans diyor.
+
+463
+01:32:53,292 --> 01:32:56,592
+Yani kolay arkadaşlar, çok şey yok, basit bir şey.
+
+464
+01:33:22,836 --> 01:33:26,576
+Sınıf içi varyansı ölçmek için şöyle yapmamız gerekiyor.
+
+465
+01:33:26,756 --> 01:33:33,515
+Bir ya da küme içi varyansı ölçmek için kümenin içerisindeki sampılları biliyorsunuz.
+
+466
+01:33:33,515 --> 01:33:40,515
+Kümenin içerisindeki sampıllarla önce bir küme merkezi yani mean hesaplamamız gerekiyor.
+
+467
+01:33:41,496 --> 01:33:48,876
+Kümenin içerisindeki elemanların ortalamasını aldığınız zaman mean değerini yani küme merkezini bulmuş oluyorsunuz.
+
+468
+01:33:50,836 --> 01:33:55,275
+Her bir sampelın bu merkeze olan uzaklıklarının kareleri toplamının,
+
+469
+01:33:58,195 --> 01:34:07,396
+Sample sayısına bölümün kare kökünü aldığımız zaman standart sapmasını ya da kare kökü almazsanız varyansı hesaplamış oluyorsunuz.
+
+470
+01:34:07,716 --> 01:34:15,036
+Ve bunun küçük çıkması ne anlama gelir arkadaşlar? Yani küme içi varyansının küçük çıkması ne anlama gelir?
+
+471
+01:34:15,376 --> 01:34:21,076
+Aklınızda nasıl bir şekil canlanıyor bu durumda?
+
+472
+01:34:22,275 --> 01:34:23,796
+Bak şimdi yine gitti bu.
+
+473
+01:34:23,796 --> 01:34:25,456
+Daha çok dağınık olur.
+
+474
+01:34:27,091 --> 01:34:28,771
+Hangi durumda dağınık oluyor?
+
+475
+01:34:29,611 --> 01:34:32,471
+Varyansının yüksek olması durumunda daha düzensiz oluyor.
+
+476
+01:34:33,351 --> 01:34:38,911
+Evet, düzensiz, dağınıktan kastımız daha merkezden uzaklaşmış demek istiyorsunuz değil mi?
+
+477
+01:34:38,911 --> 01:34:46,851
+Yani merkez noktasından daha açıkta, daha böyle dışarıya saçılmış, bu merkezden uzaklaşmış olduğu anlamına gelir.
+
+478
+01:34:48,692 --> 01:35:07,412
+Bir kümenin iyi bir küme olduğunu göstergesi aslında varyansın küçük olmasıdır. Yani derli toplu birbirine yakın olan örnekleri içine alan bir küme oluşturmuşsak eğer bu bizim için daha ideal bir durumdur. Mantık buna dayanıyor, güzel yorumladınız.
+
+479
+01:35:09,076 --> 01:35:29,836
+Amacımız bu vitin cluster varyansı minimize etmek ve bunu sağlamak için de Wart's Prosedür diyor ki her cluster için iki tane kümeyi birleştirdiğim zaman elde edeceğim yeni kümenin küme içi varyansı ne olur diye hesaplıyor.
+
+480
+01:35:29,836 --> 01:35:36,836
+Biz az önce iki tane kümenin arasındaki uzaklığı hesaplıyorduk ya, o bu iki kümeyi birleştirdiğini...
+
+481
+01:35:37,076 --> 01:35:55,115
+varsayıyor, birleştirdiğinde oluşacak küme için varyansını hesaplıyor, koyuyor kenara. Sonra birleştirme yapabileceği diğer bir alternatif iki kümeyi karşılaştırıyor. Bunu birleştirseydim ne olurdu diye bakıp yine bir varyans hesaplıyor. Birleştirme sonunda varyans ne çıkar diye bakıyor.
+
+482
+01:35:55,536 --> 01:36:06,376
+Ve nihai durumda en küçük, yani birleştirme işlemin sonunda en küçük varyansı verecek olan kümeler hangisi ise bu ikisini birleştiriyor.
+
+483
+01:36:07,416 --> 01:36:14,235
+Fakat tabii ki yöntem bayağı bir işlem karmaşıklığı, yüksek bir çözüm.
+
+484
+01:36:14,876 --> 01:36:18,615
+Ama mantığı kesinlikle güzel bir çözüm.
+
+485
+01:36:19,539 --> 01:36:27,840
+Centroid metod için ise burada belirtilmiş kümeler arasındaki uzaklık kontrol ediliyor diyor.
+
+486
+01:36:29,539 --> 01:36:37,840
+Wartz metod ve centroid metodun çalışma şekli burada şekil ile gösterilmiş.
+
+487
+01:36:43,188 --> 01:36:57,768
+Şimdi geçtik bir başka aşamaya. Şu ana kadar biz iki tane kümeleme algoritması öğrendik. Biri k-means clustering, öbürü hiyerarşik clustering yöntemi.
+
+488
+01:36:58,688 --> 01:37:07,087
+Bu iki yöntemin sonunda acaba biz bu kümeleme işlemini ne kadar doğru yaptık, bunu nasıl ölçeceğiz diye bir soru var.
+
+489
+01:37:07,456 --> 01:37:12,936
+What is a good clustering? Yani iyi bir kümeleme ne demek ve nasıl olur?
+
+490
+01:37:14,496 --> 01:37:27,636
+Aslında az önce konuştuğumuz bir konu, intra-class similarity, inter-class similarity diye iki tane ölçüm var.
+
+491
+01:37:27,636 --> 01:37:33,596
+Bunlar internal criteria olarak geçiyor. Yani dahili kriterler.
+
+492
+01:37:35,283 --> 01:37:42,223
+Nasıl ölçüyor? Intra-class dediği klas içi ya da küme içi değişime bakıyor.
+
+493
+01:37:42,643 --> 01:37:48,623
+Ya da küme içerisindeki elemanların birbirlerine olan benzerliğinin ölçümüne dayalı.
+
+494
+01:37:49,203 --> 01:37:54,583
+Intra-class similarity is high, inter-class similarity is low.
+
+495
+01:37:54,583 --> 01:37:56,583
+Yani beklediğimiz şey...
+
+496
+01:37:57,235 --> 01:38:06,515
+Küme içindeki benzerliğin yüksek olması, iki küme arasındaki benzerliğin ise düşük olmasıdır diyor.
+
+497
+01:38:06,876 --> 01:38:17,475
+Nihai durumda oluşturduğumuz kümeler arasında böyle bir ölçüm yapıp başarıyı ölçebiliriz.
+
+498
+01:38:18,595 --> 01:38:22,376
+Bunlar internal criterion diye geçiyor.
+
+499
+01:38:23,828 --> 01:38:29,248
+External Criteria for Clustering Quality diye bir bölüm var.
+
+500
+01:38:33,248 --> 01:38:40,248
+Bunun için, bunu değerlendirebilmemiz için elimizdeki örneklerin…
+
+501
+01:38:41,268 --> 01:38:57,148
+Biz kümeleme işlemi yapma ihtiyacımız nereden doğmuştu? Elimizdeki örneklerin class label'larının olmadığını söyledik ve bu durumda kümeleme algoritmalarına ihtiyaç duyarız dedik.
+
+502
+01:38:57,148 --> 01:39:08,948
+Ama aslında şöyle çalışıyoruz, kümeleme yöntemlerinde de bir alan uzmanı tarafından etiketlenmiş bir veri bazı durumlarda elimizde oluyor.
+
+503
+01:39:09,268 --> 01:39:33,347
+Bu alan uzmanı tarafından yapılmış olan etiketlemelere Grand Truth deniyor arkadaşlar. Yani işte bizim Labeled Data dediğimiz etiketli verileri oluşturan bir alan uzmanı varsa bunlar Grand Truth. Yani ne diyoruz buna? Gerçek doğru. Gerçek doğru.
+
+504
+01:39:33,971 --> 01:39:58,351
+Bu işlemlerimizi biliyoruz ve bu gerçek doğruları son aşamada bakın sadece oluşan kümelerin doğru gruplanıp gruplanmadığını ölçmek için sadece bu aşamada sınıf etiketlerini açıp kontrol ediyoruz.
+
+505
+01:40:01,844 --> 01:40:18,884
+etiketleri, sınıf etiketlerini kullanma izni veriyor bize. Çünkü sadece evaluation, yani oluşan kümelerin değerlendirmesini yapmak için kullanacağız. O nedenle sınıf etiketlerini burada açabiliyoruz.
+
+506
+01:40:27,412 --> 01:40:40,112
+Purity dediğimiz saflık değerini ölçüyoruz. Ne kadar aynı tip örnekler, aynı kümenin içine konmuş bunu görmek amaç.
+
+507
+01:40:41,431 --> 01:40:52,532
+Purity nasıl ölçülür? Purity'yi daha önce derste entropi kullanarak aslında ölçebileceğimizi söylemiştik.
+
+508
+01:40:52,880 --> 01:41:04,460
+Bir yol bu. Bir diğer yöntem de basit bir sayma yöntemiyle de aslında küme içi saflığı ölçebiliyoruz. Nasıl çalışıyor yöntem bakalım.
+
+509
+01:41:07,280 --> 01:41:15,640
+Bu aşama tüm kümeleme işlemlerini değerlendirme anlamında bence çok önemli. Lütfen iyi dinleyin.
+
+510
+01:41:15,952 --> 01:41:22,152
+Yani ben bu konuların hiçbirini sizin gibi bir hocadan dinleyerek öğrenmedim.
+
+511
+01:41:22,652 --> 01:41:27,492
+Hepsini kendi tecrübelerimizle, yaptığımız çalışmalarla öğrendik.
+
+512
+01:41:27,492 --> 01:41:34,492
+Dolayısıyla bu benim çalışmalar sırasında en fazla aklımı kurcalayan kısımlardan biri olmuştur.
+
+513
+01:41:36,931 --> 01:41:40,792
+Eğer unsupervised learning yapıyorsak,
+
+514
+01:41:40,880 --> 01:41:58,320
+Sınıf etiketlerini bilmiyoruz. Bunları bilmeden kümeliyoruz. Ama bakın son aşamada, değerlendirme aşamasında etiketler açılıyor. Yani hangi sample'ın hangi sınıfa ait olduğunu biliyorum ve buna göre bir değerlendirme yapıyorum.
+
+515
+01:41:58,320 --> 01:42:07,640
+Ama her data sette tekrar söylüyorum, elimde aslında bu etiketler olmayabilir. Mesela ben bir customer segmentation işiyle uğraşıyorsam,
+
+516
+01:42:07,699 --> 01:42:14,539
+Bu müşterilerin segmentini bana kimse başta söylemiyor. Dolayısıyla böyle bir etiket yok.
+
+517
+01:42:15,420 --> 01:42:24,600
+Ama bazı uygulamalarda, mesela bir tıbbi data setiyle uğraştığımda, alan uzmanına bir doktor tarafından etiketlenmiş bir veri var elimde.
+
+518
+01:42:25,000 --> 01:42:26,920
+Dolayısıyla sınıf etiketlerini biliyorum.
+
+519
+01:42:26,920 --> 01:42:29,140
+Şimdi, lütfen dikkat.
+
+520
+01:42:33,524 --> 01:42:42,264
+6, 6, 12, 17 tane sample'dan oluşan bir veri seti var ve biz bir clustering yöntemi kullandık.
+
+521
+01:42:42,384 --> 01:42:45,684
+Bu bir k-means clustering yöntemi olabilir mesela.
+
+522
+01:42:46,764 --> 01:42:51,204
+Ve nihai durumda elimizde 3 tane küme oluştu.
+
+523
+01:42:51,204 --> 01:42:57,744
+Fakat ben sadece, bakın k-means clustering algoritmasının sonunda sadece şunu biliyordum.
+
+524
+01:42:58,484 --> 01:43:12,243
+Birinci kümenin içerisinde 6 tane sample var. İkinci kümenin içerisinde 6 tane sample var. Üçüncü kümenin içinde ise 5 tane sample var. Hangi sampleları hangi kümeye koyduğunu da biliyorum.
+
+525
+01:43:13,144 --> 01:43:26,104
+Bu işlem bittikten sonra sınıf etiketlerini açıyorum ve birinci kümenin içerisindeki 6 tane sampleın kaçı kırmızı sınıftan, kaçı mavi sınıftan, kaç tanesi yeşil sınıftan bunları görüntülüyorum.
+
+526
+01:43:26,996 --> 01:43:39,916
+Ve şu çıkıyor karşıma, diyorum ki bu sınıf etiketlerini açtığımda birinci kümenin içerisinde 6 tane sample var ve bunun 5'i, bakın lütfen dikkat, purity'yi hesaplıyorum aynı zamanda.
+
+527
+01:43:40,516 --> 01:43:48,716
+5 tanesi kırmızı sınıftan, 1'i mavi sınıftan, yeşil sınıftan hiç örnek yok. Bunların içerisinde maksimum olan nedir? 5.
+
+528
+01:43:54,996 --> 01:44:02,896
+Purity'si kırmızı sınıftan olduğu için kırmızı diyeceğim. Artık cluster 1'in label'ı kırmızı sınıf olacak.
+
+529
+01:44:03,476 --> 01:44:19,796
+Ve bunun purity'si, saflık derecesi 6'da 5 olacak. 6 tane sample'dan 5'i kırmızı sınıftan olduğu için cluster 1 için saflık 5 bölü 6 olarak hesaplanacak.
+
+530
+01:44:19,796 --> 01:44:22,216
+İkinci kümeye geçiyorum.
+
+531
+01:44:22,676 --> 01:44:28,796
+İkinci kümenin içinde 6 tane sample var ve bunların sınıflara dağılımlarına bakıyorum.
+
+532
+01:44:29,256 --> 01:44:35,496
+Kırmızı sınıftan 1 tane, maviden 4 tane, yeşilden 1 tane var.
+
+533
+01:44:37,336 --> 01:44:39,396
+Toplamda yine 6 tane.
+
+534
+01:44:39,996 --> 01:44:44,496
+Maksimum olan sınıf, mavi sınıf ve bunun...
+
+535
+01:44:45,684 --> 01:44:57,944
+Bu klasterın etiketi mavi olacak ve mavi kümenin saflık derecesi 6'da 4 olacak.
+
+536
+01:44:58,384 --> 01:45:00,484
+Saflığı 6'da 4 olacak.
+
+537
+01:45:01,944 --> 01:45:08,004
+Üçüncü klaster için bakacak olursak, bunun için purity hesaplayacağım yine saflık.
+
+538
+01:45:08,784 --> 01:45:10,764
+Her sınıftan kaç tane sample var?
+
+539
+01:45:11,167 --> 01:45:30,807
+Kırmızı iki tane, mavi hiç yok. Üç tane de yeşil var. Bunların maksimumu üçtür ve üçüncü kümenin etiketi yeşil olacak. Üçüncü kümenin saflık değeri beşte üç olacak.
+
+540
+01:45:38,671 --> 01:45:44,431
+yaptığınız kümeleme işlemi o kadar başarılıdır anlamına gelir.
+
+541
+01:45:44,431 --> 01:45:49,671
+Mesela bu üç tane Cluster Impurity değerlerinin bir ortalaması alınabilir.
+
+542
+01:45:52,331 --> 01:45:58,851
+Toplamda bir başarı ölçmek istiyorsak bu şekilde bir yol izleyebiliriz.
+
+543
+01:46:01,471 --> 01:46:02,811
+Buraya kadar sorunuz var mı?
+
+544
+01:46:13,043 --> 01:46:14,863
+Çette bir şey yazılmadı galiba.
+
+545
+01:46:16,203 --> 01:46:16,764
+Diyok hocam.
+
+546
+01:46:17,884 --> 01:46:18,163
+Peki.
+
+547
+01:46:21,903 --> 01:46:25,644
+Şimdi siz soru sormuyorsunuz, ben soru soracağım o zaman.
+
+548
+01:46:27,604 --> 01:46:41,144
+Ekranda bu manzara çok güzel geldi tabii. Birinci kümede beş tane kırmızı olması, ikinci kümede mavi olması, üçüncü kümede de yeşil, derin çoğunlukta olması iyi.
+
+549
+01:46:41,144 --> 01:46:44,144
+Fakat öyle bir dağılım olsaydı ki…
+
+550
+01:46:50,484 --> 01:47:03,684
+Cluster 2'nin içerisindeki 6 tane sample'dan, 3'ü kırmızı, 2'si mavi, 1'i yeşil olsaydı.
+
+551
+01:47:08,212 --> 01:47:13,452
+Üçü kırmızı, ikisi mavi, biri yeşil olsaydı.
+
+552
+01:47:15,852 --> 01:47:18,672
+Labeling işleminde ne yapardık?
+
+553
+01:47:22,739 --> 01:47:36,559
+Yorum. Karşılaştığım sorunlardan biri. Bunlar hepsi gerçekten bir uygulamanın içine girdiğinizde görüyorsunuz. Benim aslında üç tane sınıfım var. Mesela bir dataset vardı.
+
+554
+01:47:42,868 --> 01:47:53,908
+Hormonu, çok olanlar, az olanlar ve normal olanlar diye üç tane sınıf vardı veri setinde. Ben bunları kümeleme işlemine aldım sınıf bilgilerini kapatarak.
+
+555
+01:47:54,323 --> 01:48:20,223
+Ve veriyi üç tane kümeye ayırdım. Fakat kümelerden bir tanesi kayboluyor. Değil mi? Eğer böyle bakacak olursam, mesela bunun içerisinde kırmızılar çoğunlukta olduğu için cluster bire kırmızı dediniz. Ama ikinci kümenin içerisinde de üç tane kırmızı, iki tane mavi, bir tane yeşil varsa buna da kırmızı etiketi veriyorsunuz. İki tane kırmızı küme oldu ama mavi küme hiç yok.
+
+556
+01:48:21,811 --> 01:48:22,752
+Ne yapacağız?
+
+557
+01:48:25,112 --> 01:48:41,372
+Eğer o kümeyi de oluşturmam gerekiyorsa, aslında hata yüksek de olsa, şurada sadece iki tane mavi, üç tane kırmızı olmasına rağmen benim ikinci kümeye mavi etiket vermem gerekir.
+
+558
+01:48:41,912 --> 01:48:47,192
+Anlayabiliyor musunuz ne demek istediğimi? Bakın bu gerçekten karşılaştığımız problemlerden biri.
+
+559
+01:48:50,131 --> 01:48:58,051
+Ve bu durumda o kümeyi öldüremem, o kümeyi yok edemem. Yani şunu söylemek istiyorum, mavi sınıfı yok sayamam.
+
+560
+01:48:59,475 --> 01:49:09,055
+Hata yüksek de olsa, şuradaki kümeye etiket verirken, bunun içerisinde varsayalım ki üç tane kırmızı var, iki tane mavi var dedim.
+
+561
+01:49:09,475 --> 01:49:20,795
+Bu durumda bu kümeye etiket verirken, çoğunluğun etiketini değil, yok olmasını istemediğim klasın etiketini, yani mavi etiketi vermem gerekir.
+
+562
+01:49:23,859 --> 01:49:27,999
+Bu durumda tabii saflık anlamında baktığımızda ciddi bir bozulma da var.
+
+563
+01:49:29,079 --> 01:49:39,259
+Ama veri demek ki çok bir biri içerisine girift olmuş, rahat ayrılamıyorsa böyle bir manzarayla karşılaşabiliyoruz arkadaşlar.
+
+564
+01:49:43,091 --> 01:49:51,211
+Evet, bu kümeleme algoritmaları için böyle insanı düşündüren noktalardan.
+
+565
+01:49:53,011 --> 01:49:55,671
+Hocam, maviyi yok etmenin zararı ne?
+
+566
+01:49:57,251 --> 01:50:00,000
+Maviyi yok etmenin zararı...
+
+567
+01:50:00,000 --> 01:50:13,619
+Bundan sonra veri setinin içerisinde doğasında zaten üç tane sınıf var ve siz bir tane sınıfı yok etmiş oluyorsunuz. O sınıfı hiç tanımıyorsunuz. Öyle bir zararı olmuş oluyor.
+
+568
+01:50:18,131 --> 01:50:20,511
+Ama daha yüksek doğruluğunuz oluyor hocam.
+
+569
+01:50:21,311 --> 01:50:27,091
+Evet, daha yüksek doğruluğunuz oluyor ama dediğim gibi onu yok sayamazsınız.
+
+570
+01:50:28,511 --> 01:50:36,971
+Amacınız eğer orada, mesela ben az önce hastalıkla ilgili örnek verdim, tiroidi normal çalışan grubu mesela yok ediyor.
+
+571
+01:50:37,555 --> 01:50:48,075
+Çok çalışan, az çalışan diye hep o aradaki sınıfı her iki tarafa dağıtmış oluyorum. Ama ben normal olanları da görmek istiyorum.
+
+572
+01:50:52,979 --> 01:50:58,979
+Belli bir hatayla da olsa, o sınıfı da görmek istiyorsam eğer, onu yok etmiyorum.
+
+573
+01:51:00,219 --> 01:51:05,920
+İşte yani dediğim gibi uygulamaya özgü şeyler bunlar ve karşılaştığımız problemler.
+
+574
+01:51:09,920 --> 01:51:10,379
+Şimdi...
+
+575
+01:51:13,747 --> 01:51:26,387
+Evet, chat ekranım açıldı. Şimdi tabii yazdıklarınızı yeni görebiliyorum. Uçuk kırmızı olduğundan maksimum hepsini kırmızılarız. Evet, tabii ki eğer öyle yaparsak bunu yok etmiş oluyoruz.
+
+576
+01:51:28,207 --> 01:51:33,367
+Kırmızı gibi geliyor ama klaster ve kırmızı ile ilgili hafla sahip.
+
+577
+01:51:35,507 --> 01:51:52,108
+[öğrenci], hocam mavi verirsek de kırmızı yok olmaz mı diyor ama yok olmuyor. Zaten kırmızı sınıfı cluster 1'de tanımladığım için o zaten mevcut. Onu yok etmiyorum. Yani yanlış anlaşılmasın söylediğim şey.
+
+578
+01:51:52,587 --> 01:51:58,667
+Cluster 1'in etiketi zaten kırmızı ama cluster 2'ye de kırmızı demem.
+
+579
+01:51:59,444 --> 01:52:23,884
+Mavi sınıfı tamamen yok etmem anlamına geliyordu. O yüzden ikinci kümeye koyduğu sample'lara ben mavi etiketi veriyorum. Labeling aşamasında mavi etiketi veriyorum. Neden? Çünkü dediğim gibi 3, 2, 1 şeklinde düştüğünde mavilerin sayısı az olmakla birlikte yok olmaması için böyle bir yol izliyorum.
+
+580
+01:52:27,859 --> 01:52:39,239
+Evet, umarım anlaşılmıştır ne demek istediğim. Çünkü bu uygulama tarafından baktığımızda karşılaştığımız sorunlardan biri.
+
+581
+01:52:41,259 --> 01:52:49,539
+Hocam, böyle bir durumla karşılaştığımızda etiket değiştirmek mi mantıklı yoksa yöntem değiştirip başka bir şekilde yaklaşmak mı mantıklı?
+
+582
+01:52:50,639 --> 01:52:54,199
+Yani öbür türlü bu sefer saflığı bozmuş olacağız.
+
+583
+01:52:56,819 --> 01:53:18,140
+O yüzden hani outliner analiz tarzı bir yöntemle üçüncü bir sınıfa yaklaşmak daha mantıklı mı? Yöntemi değiştirmekten kastınız. Mesela k-means kullandık, onun yerine gidip hiyerarşik kullanabilirsiniz veya başka bir takım çözümler kullanabilirsiniz. Evet, bu mümkün.
+
+584
+01:53:21,939 --> 01:53:31,819
+Ama onları da birbiriyle karşılaştırabilmek için sonuçta bu yorumu katmak zorundasınız.
+
+585
+01:53:31,979 --> 01:53:34,559
+Yani o sınıfı yok etmiyoruz.
+
+586
+01:53:34,679 --> 01:53:41,019
+Ama diyebilirim ki mesela o verdiğim örnekte ile ilgili konuşacak olursam.
+
+587
+01:53:45,779 --> 01:53:55,799
+Yani bu örnekle ilgili konuşacak olursam, burada mavi sınıfı yok etmek yerine hatası yüksek de olsa mavi sınıfı korumuş oluyorum.
+
+588
+01:53:55,799 --> 01:54:10,039
+Çünkü benim verimin doğasında o üçüncü grup var ve ben bunu başarısı düşük de olsa tahminlemek istiyorum. O yüzden böyle bir yorum yapıyorum.
+
+589
+01:54:13,235 --> 01:54:14,195
+Anladım hocam.
+
+590
+01:54:16,695 --> 01:54:31,775
+Peki, sevgili arkadaşlar, 10 dakika ara verelim. Aradan sonra Veka nasıl kullanılır, neler yaparız, onunla ilgili bir 40 dakikalık bir sunum yapacağım.
+
+591
+01:54:32,695 --> 01:54:40,296
+Veka bilen arkadaşlar varsa katılmak mecburiyetinde değil. Şu an 72 kişi var.
+
+592
+01:54:40,884 --> 01:54:47,163
+Sonraki ders kim burada soracağım tekrar. Peki. 10 dakika ara.
+
+593
+02:06:11,060 --> 02:06:12,640
+Tekrar merhaba arkadaşlar.
+
+594
+02:06:24,532 --> 02:06:40,131
+Çette yazdığınız sorulara bakıyordum. Bir tanesi gözümden kaçmış. [öğrenci], VARS prosedürü Big Data'da uygulanabilirliği düşük o zaman diye yorum yapmış.
+
+595
+02:06:40,131 --> 02:06:47,211
+Evet, işlem karmaşıklığı yüksek fakat şöyle bir çözüm var aslında.
+
+596
+02:06:48,948 --> 02:06:52,208
+KD3 diye bir yöntem var ve
+
+597
+02:06:54,579 --> 02:07:07,680
+Bu uzayı aynı hani binary search'te olduğu gibi bir sayı tutarız ve işte sıfırla yüz arasında bir sayı tutarız, sorarız 50 mi diye.
+
+598
+02:07:07,840 --> 02:07:13,360
+50'den küçük derse hemen sıfırla 50 arasında 25 deriz.
+
+599
+02:07:22,579 --> 02:07:30,380
+Hiç gerek olmayan alanları search etme mecburiyetinden kurtuluyor.
+
+600
+02:07:30,800 --> 02:07:34,500
+KD3 diye bir yöntem var. KD3 diye yazılıyor.
+
+601
+02:07:34,500 --> 02:07:40,500
+Bu işlemleri aslında büyük ölçüde...
+
+602
+02:07:44,275 --> 02:07:53,275
+İşlem karmaşıklığını büyük ölçüde azaltmış oluyor. Ondan da bahsedeyim. Yani aslında bu yöntem...
+
+603
+02:07:53,524 --> 02:08:05,344
+Mesafe ölçüsü hesaplarken de, mesela K-NN'de, tüm ne bileyim siz düzlemde mesela işlem yaptığınızı düşünün.
+
+604
+02:08:05,344 --> 02:08:13,364
+Arama uzayının çok uzak bir noktasındaki sample ile distance hesaplamanıza gerek yok aslında.
+
+605
+02:08:14,024 --> 02:08:19,423
+Bunu büyük ölçüde azaltmayı başarıyor KD3 dediğimiz yöntem.
+
+606
+02:08:19,923 --> 02:08:36,583
+Bakmanızı tavsiye ederim. Yani bu tür bir takım çözümlerle aslında WARTs prosedürün ya da distance hesaplama işlemlerinin maliyetini düşürmek mümkün.
+
+607
+02:08:36,583 --> 02:08:39,144
+Peki.
+
+608
+02:08:44,083 --> 02:08:48,463
+Şimdi Veka ile ilgili açıklamalarıma geçeceğim.
+
+609
+02:08:50,344 --> 02:08:52,583
+Şu an 68 kişi var derste.
+
+610
+02:08:54,743 --> 02:08:57,663
+Kimler burada? 22 kişi el kaldırmış.
+
+611
+02:09:02,836 --> 02:09:11,816
+30, 30, 36, 37, 38 kişi.
+
+612
+02:09:15,956 --> 02:09:26,695
+40 kişi olduk. Evet, yarıyı geçtik çok şükür. Evet, peki arkadaşlar. O zaman başlayalım.
+
+613
+02:09:28,756 --> 02:09:37,336
+Bazı ekranlar pop-up açıldığında ekran paylaşımında görünmeyebiliyor. Lütfen beni uyarın o zaman.
+
+614
+02:09:38,916 --> 02:09:39,956
+Veka'yı...
+
+615
+02:09:44,916 --> 02:10:03,096
+Çalıştırdığımda böyle bir ekran gelecek. VEKA burada gördüğünüz gibi The University of Waikato, New Zealand, Yeni Zelanda'da bir üniversitede geliştirilmiş, açık kaynak kodlu.
+
+616
+02:10:03,536 --> 02:10:11,256
+Java platformunda geliştirilmiş bir veri madenciliği uygulaması.
+
+617
+02:10:11,376 --> 02:10:19,636
+Vykado Environment for Knowledge Analysis Version 3.8.1. Benim şu an bilgisayarımda yüklü olan sürüm bu.
+
+618
+02:10:21,315 --> 02:10:27,016
+Explorer'ı çalıştırdığınız zaman burada şöyle bir ekran açılıyor.
+
+619
+02:10:32,307 --> 02:10:33,847
+Böyle bir ekran açılıyor.
+
+620
+02:10:35,847 --> 02:10:37,688
+Ne oldu? Ekran gitmiyor.
+
+621
+02:10:40,427 --> 02:10:41,868
+Göremiyorsunuz değil mi ekranımı?
+
+622
+02:10:42,688 --> 02:10:45,247
+Bloklar, heh şimdi göründü mü?
+
+623
+02:10:46,747 --> 02:10:47,768
+Şimdi göründü hocam.
+
+624
+02:10:48,368 --> 02:10:51,667
+Tamam. Bende de biraz aksadı. Neden olduğunu bilmiyorum ama
+
+625
+02:10:51,667 --> 02:10:56,408
+arkada çalışmayan şeyleri kapatabilirim belki.
+
+626
+02:10:58,028 --> 02:10:58,747
+Kullanmadıklarımızı.
+
+627
+02:11:07,060 --> 02:11:17,180
+Burada ben Open File diyerek VK'yı kurmuş olduğum klasörün altında
+
+628
+02:11:19,764 --> 02:11:39,103
+Veka ile birlikte gelen hazır veri setleri var. Bu veri setlerinden birini açtım. Bu hazır veri setlerinin uzantıları ARFF dosyası olarak kaydedilmiş. ARFF dosyasının yapısı hakkında ayrıca konuşuruz.
+
+629
+02:11:47,764 --> 02:12:07,184
+Evet ki ve bu bitkinin 3 farklı çeşidi var. Bu 3 farklı çeşit ile ilgili ekranda, klas bilgisinde bunu görebiliyoruz. Bu 3 farklı çeşit çiçek, çiçeğin 3 farklı çeşidi, Iris, Setosa, Versicolor ve Virginica diye geçiyor.
+
+630
+02:12:07,699 --> 02:12:29,500
+Meraklı arkadaşlar için söyleyeyim. Ben biraz bitkilere ve doğaya meraklıyım. Bu çiçek Türkçe'de süsen diye geçiyor. Süsen bitkisi daha çok mezarlıklara ekiliyor, dikiliyor ve bu çiçeğin üç farklı türü var.
+
+631
+02:12:31,579 --> 02:12:33,500
+Hemen size...
+
+632
+02:12:45,108 --> 02:12:47,408
+Bugün benim internetim çok yavaş galiba.
+
+633
+02:12:53,395 --> 02:13:06,875
+Hemen size süsen çiçeğinin görsellerini açtım. Bunlar belki görmüşsünüzdür. Özellikle şuradaki yeşil yapraklarının şekli vesaireden hatırlayabilirsiniz belki.
+
+634
+02:13:08,095 --> 02:13:12,115
+Dediğim gibi daha çok mezarlıklara dikilen bir çiçek.
+
+635
+02:13:13,235 --> 02:13:27,635
+Bu çiçeği araştıran biyologlar diyelim, çiçekle ilgili dört farklı ölçüm yapmışlar.
+
+636
+02:13:28,355 --> 02:13:32,195
+Çanak yapraklarının boyu ve eni.
+
+637
+02:13:32,627 --> 02:13:56,648
+Taç yapraklarının boyu ve enine bakarak bu çiçeğin üç farklı türünü birbirinden ayırt etmeye çalışmışlar. Burada çiçeğin türü, ekranda da görüyorsunuz, üç farklı renkle ifade edilmiş. Birinci sınıf olan Iris Setosa'da 50 tane sample var ve mavi ile gösteriliyor.
+
+638
+02:13:57,876 --> 02:14:06,376
+İkinci sınıf olan Iris Versicolor kırmızı ile ifade ediliyor. 50 tane sample da bunun için var.
+
+639
+02:14:07,156 --> 02:14:18,856
+Ve üçüncü türü çiçeğin Iris Virginica. Bunun da 50 tane sample var bu sınıftan ve bunu da turkuaz rengi ile gösteriyor.
+
+640
+02:14:19,615 --> 02:14:24,636
+Böylece klasları aslında bir renk atamış oluyor, renk kodu vermiş oluyor.
+
+641
+02:14:25,779 --> 02:14:37,079
+Şimdi yukarıda da data ile ilgili açıklama var. Datanın adı iris. Instances, veri seti içerisinde toplam 150 tane sample var.
+
+642
+02:14:37,503 --> 02:14:43,943
+Class'lara düzgün dağılmış her bir Class'tan 50 tane toplam 150 tane sample var.
+
+643
+02:14:44,684 --> 02:14:53,503
+Attribütler için de bakıyoruz 5 demiş. Yani aslında 5.sı Class Label'ı. 4 tane öz nitelik var diyebiliriz.
+
+644
+02:14:53,876 --> 02:15:05,135
+Şimdi her bir öz niteliği bu ekranda görebiliyoruz. Mesela birinci öz niteliği seçtiğimde yukarıda Selected Attribute ile ilgili istatistiksel bir analiz var.
+
+645
+02:15:06,355 --> 02:15:15,416
+Bu öz niteliğin minimum ve maksimum değeri nedir? Ortalaması nedir? Standart sapması nedir? Bunları ekranda görebiliyorum.
+
+646
+02:15:16,948 --> 02:15:29,608
+Ve aşağıda da görüyorsunuz 4.3 ile 7.9 arasında değer alıyor. Bu aralıklarda hangi sınıftan sample'lar bu aralıklarda nasıl dağılmış bunu da gösteriyor.
+
+647
+02:15:30,668 --> 02:15:39,368
+İlk iki öz nitelik sample'ları yani klasları birbirinden ayırt etmede çok etkin gözükmemekle birlikte üçüncü öz nitelik.
+
+648
+02:15:39,368 --> 02:15:43,188
+Bakın klasları birbirinden ayırt etmede çok etkin görünüyor.
+
+649
+02:15:44,979 --> 02:16:06,460
+Bu üçüncü öz nitelik petal length minimum bir maksimum 6.9 değerini alıyormuş. Fakat bir ile üç arasında değer aldığında tümüyle birinci sınıfa ait sampullar bu aralıkta toplanıyor. Mavi sınıfa ait 50 tane sampulları buradan ayırt edebiliyorsunuz.
+
+650
+02:16:07,091 --> 02:16:15,231
+Sonra kırmızı ile turkuaz sınıflarını birbirinden ayırt etmek için tabii ekstra bazı öz nitelikler kullanmak gerekir.
+
+651
+02:16:16,171 --> 02:16:19,291
+Petal renk de aynı şekilde çok ayırt edici görünüyor.
+
+652
+02:16:19,291 --> 02:16:25,131
+Hatta kırmızıyı turkuazla ayırt etmede de etkin olduğunu söyleyebiliriz.
+
+653
+02:16:25,891 --> 02:16:31,271
+Verinin dağılımından bunu görebiliyoruz. Sınıflara dağılımını burada görüntülüyor çünkü.
+
+654
+02:16:34,100 --> 02:16:49,700
+Evet. Şimdi veriyi biraz analiz ettikten sonra burada neler yapabilirim? Veri üzerinde edit işlemi yapabilirim. Edit tuşuna bastığımda açılan pop-up görünüyor mu?
+
+655
+02:16:51,840 --> 02:16:53,159
+Evet, görünüyor hocam.
+
+656
+02:16:53,159 --> 02:16:56,159
+Tamam. Weaver'da...
+
+657
+02:16:56,884 --> 02:17:12,063
+Tüm sampulların değerlerini burada görebiliyoruz. Hatta bunları girip edit edebiliyorum. Değiştirip tekrar kaydedebiliyorum. Save tuşuna basarak bunları kaydedebiliyorum.
+
+658
+02:17:12,843 --> 02:17:17,304
+Belli öz nitelikleri seçip veri setinden remove edebiliyorum.
+
+659
+02:17:18,420 --> 02:17:29,819
+Geriye kalan öz niteliklerle çalışmak için, mesela feature selection yaptınız ve belli öz nitelikleri kullanmak istemiyorsunuz. Onları data setinden silebiliyorsunuz.
+
+660
+02:17:30,835 --> 02:17:45,295
+Şu an elimde 4 tane öz nitelik var. Neler yapabiliriz? Yukarıda VEKA Explorer'ın üst tarafında değişik tablar var. Pre-process tabındayım ben şu anda.
+
+661
+02:17:55,860 --> 02:18:04,260
+alternatiflerimiz. Classify tabuna girdiğim zaman bu veri seti üzerinde sınıflama işlemi yapacağım diyorum.
+
+662
+02:18:04,260 --> 02:18:15,139
+Choose butonuna bastığım zaman bana seçenekler geliyor. Seçenekler Bayes altında.
+
+663
+02:18:15,600 --> 02:18:27,659
+Naive Bayes çözümü var mesela. Bunu kullanabilirim. Onu seçtim. Aşağıda ise Test Options kısmında veriyi nasıl bölmek istediğimi soruyor.
+
+664
+02:18:28,120 --> 02:18:37,000
+Cross Validation yöntemini kullanacağım ve veriyi 5'e katlayacağım. 5'te birini test, 5'te dördünü train için kullanacağım.
+
+665
+02:18:37,396 --> 02:18:52,916
+Ve buna göre veriyi dağıtacağım. Hangi öz nitelik bizim output variable'ımız olacak? En sondaki class bizim output variable'ımız olacak. Start butonuna bastığım zaman yöntemi uygulayacak.
+
+666
+02:18:53,695 --> 02:19:03,256
+Yöntem uygulandı. Bakın diyor ki 150 tane sample'ın 144 tanesini doğru sınıflamış. Correctly classified instances.
+
+667
+02:19:04,020 --> 02:19:15,400
+Bu %96 yapıyor. Tüm sınıflar için True Positive Rate, False Positive Rate, Precision Recall değerlerini vermiş.
+
+668
+02:19:16,060 --> 02:19:20,780
+Üç tane sınıf için ayrı ayrı ve bunların Weighted Average'ını vermiş.
+
+669
+02:19:20,780 --> 02:19:30,380
+Bir de Class Confusion Matris üretmiş. Class Confusion Matris aynı bizim derste kullandığımız gibi yatayda.
+
+670
+02:19:30,995 --> 02:19:35,635
+Actual Class, dikeyde ise Predictive Class yer alıyor.
+
+671
+02:19:36,275 --> 02:19:47,675
+Buna göre baktığımda B sınıfına ait 50 tane sample'ın 48'ini doğru sınıflamış, 2 tanesini B yerine C'ye koymuş.
+
+672
+02:19:47,675 --> 02:19:55,595
+Yani B sınıfı demek Iris Versicolor demek, C sınıfı demek Iris Virginica demek.
+
+673
+02:19:55,987 --> 02:20:11,128
+Şurada iki tane hatalı sınıflanmış örnek olduğunu görüyorum. Üçüncü satırda ise 50 tane sample'ın 46'sını C iken C demiş, doğru sınıflamış ama 4 tanesini C olması gerekirken
+
+674
+02:20:11,924 --> 02:20:24,463
+B sınıfına yerleştirmiş. O yüzden burada da 4 tane hata var. Toplamda 6 tane sample'ın yanlış sınıflandığını görebiliriz.
+
+675
+02:20:25,544 --> 02:20:37,943
+Yine yöntem değiştirelim. Lazinin altında k-nearest neighbor yöntemi var. K en yakın komşu algoritmasında K sayısını 5 vereceğim.
+
+676
+02:20:38,304 --> 02:20:42,324
+Beş komşuya bakarak sınıflama yapmasını isteyeceğim.
+
+677
+02:20:45,203 --> 02:20:50,763
+Distance'lara weight verebiliyorsunuz. Bakın böyle bir seçenek var. Şu anda kapalı.
+
+678
+02:20:54,644 --> 02:21:01,263
+Mesafe ölçümü için kullanılan algoritmayı değiştirebiliyorsunuz.
+
+679
+02:21:01,587 --> 02:21:06,487
+Bakın burada ID3 ile hızlandırmak için bir çözüm de eklenmiş.
+
+680
+02:21:16,884 --> 02:21:31,884
+Okey deyip yöntemi uygulayacağım. Start butonuna bastığımda, 5 en yakın komşuya göre yaptığı sınıflamada 145 tane sample'ı doğru sınıflamış oldu.
+
+681
+02:21:32,763 --> 02:21:41,263
+Hatalı sınıflanan örnek sayısı 5'e düştü. Daha başarılı bir çözüm olduğunu söyleyebiliriz.
+
+682
+02:21:46,291 --> 02:21:58,252
+Wait by bir bölü de bu olabilir. Acaba daha iyi mi çalışır? Hayır, sonucu değiştirmedim.
+
+683
+02:22:00,112 --> 02:22:05,072
+Derste öğrendiğimiz yöntemlerden bir diğeri karar ağaçları burada var.
+
+684
+02:22:08,531 --> 02:22:16,791
+Karar ağaçlarıyla sınıflama yöntemini çalıştırıyorum. Karar ağaçları yönteminin parametreleri bunlar.
+
+685
+02:22:32,435 --> 02:22:42,155
+Bunu uygula dediğimde, karar ağaçları ile yaptığımız sınıflama işleminde 6 tane örneğin yanlış sınıflandığını görüyoruz.
+
+686
+02:22:43,495 --> 02:22:49,916
+Karar ağacının, şeyi de burada verilmiş, J483'nin,
+
+687
+02:22:53,940 --> 02:23:21,040
+Kurallarını çıkartmış ve vermiş ama ağacı da görüntüleyebiliyoruz. Ağacı görüntüleme işini şöyle yapıyoruz arkadaşlar. Mouse ile ekranda sol tarafta gördüğünüz trees, J48, karar ağaçları yönteminin üstüne gidip mouse'un sağ tuşuna basıyorum. Mouse'un sağ tuşuna bastığım zaman visualization seçenekleri geliyor. Visualize Tree dediğim zaman.
+
+688
+02:23:21,780 --> 02:23:42,440
+Bana karar ağacını görüntülüyor. Ama siz göremediniz. Ben onu hemen şer edeyim sizinle. Şimdi göreceksiniz. Evet, karar ağacını bu şekilde çiziyor. Ben bunu tam ekrana genişlet dediğimde bu şekilde açıyor. Kök düğme petal vit yerleştirmiş.
+
+689
+02:23:43,092 --> 02:24:01,912
+Daha sonra ağacın ikinci seviyesindeki düğümü görüyorsunuz. Üçüncü seviyedeki test düğümünü görüyorsunuz. Aynı öz niteliğin tekrar kullanıldığını görüyorsunuz. Biz mesela derste böyle kullanmadık hatırlarsanız. Ama bu da bir seçenek. Yine böyle kullanabiliyoruz.
+
+690
+02:24:14,227 --> 02:24:20,007
+Evet, classification yöntemlerini denedik. Şimdi clustering yöntemlerine bakalım.
+
+691
+02:24:22,187 --> 02:24:29,467
+Clustering yöntemlerinde, derste öğrendiklerimizle ilk etapta gidelim. Simple K-Means var.
+
+692
+02:24:30,608 --> 02:24:39,847
+Kümeleme yöntemi olarak K-Means clustering seçtiğimde, lütfen dikkat. Veri seti içerisinde 3 tane sınıf vardı.
+
+693
+02:24:40,404 --> 02:24:46,763
+Üç tane sınıf olduğu için kümeleme işleminde de veriyi üç tane kümeye ayırmasını isteyeceğim.
+
+694
+02:24:46,884 --> 02:24:51,404
+Number of cluster'ı bu veriye özgü olarak üç yaptım.
+
+695
+02:24:57,123 --> 02:24:59,484
+Ve tamam dedim.
+
+696
+02:25:00,304 --> 02:25:02,804
+Buna göre bir şey daha var.
+
+697
+02:25:03,423 --> 02:25:05,724
+Burası, bunu iyi dinleyin lütfen.
+
+698
+02:25:06,739 --> 02:25:15,299
+Kümeleme işlemi, k-means yöntemi çalıştığında bana bu veriyi üç tane kümeye ayıracak.
+
+699
+02:25:15,299 --> 02:25:25,039
+Ama az önceki derste de anlattığım gibi kümeleme işleminin sonunda bir labeling işlemi yapmam gerekiyor.
+
+700
+02:25:25,180 --> 02:25:29,291
+Yani bu kümenin içine düşen sample'ların ne kadar...
+
+701
+02:25:35,540 --> 02:25:46,280
+Bunu değerlendirmeye alması için Cluster Mode'da Cluster to Cluster Evaluation seçeneğini işaretlemem gerekiyor.
+
+702
+02:25:47,360 --> 02:25:56,580
+Bakın bunu işaretlemeden işlem yaparsam eğer, veriyi sadece 3 tane kümeye ayırdı.
+
+703
+02:32:07,731 --> 02:32:09,171
+Sesiniz gelmiyor hocam.
+
+704
+02:32:11,072 --> 02:32:18,112
+Zoom erişimi gitti az önce maalesef. Siz kopmadınız mı? Bir tek bana mı oldu bu?
+
+705
+02:32:18,752 --> 02:32:19,652
+Sadece siz oldu.
+
+706
+02:32:20,831 --> 02:32:22,211
+İnternetinizden olabilir hocam.
+
+707
+02:32:22,471 --> 02:32:27,451
+Herhalde doğru. Wi-Fi yerine kablolu bağlanacağım galiba artık. Çok kötü bu.
+
+708
+02:32:29,051 --> 02:32:34,432
+Evet, teşekkür ediyorum beklediğiniz için erişim sağlanana kadar.
+
+709
+02:32:39,123 --> 02:33:03,123
+Şimdi en son clustering konusunu anlatıyordum. Kümeleme ile ilgili bir düzenleme yapıyorum ve Classes to Cluster Evaluation seçeneğini işaretlediğim zaman bu kümeleme işlemini tekrar başlattığımda
+
+710
+02:33:06,579 --> 02:33:18,440
+Gördüğünüz gibi bana değerlendirme yaptı ve bir klas konfijin matris de üretti ve etiketleme yaptı.
+
+711
+02:33:18,440 --> 02:33:29,200
+Dedi ki, cluster 0, sıfır numaralı küme, içinde 50 tane sample olan bu kümenin etiketine iris versikolor demiş.
+
+712
+02:33:30,131 --> 02:33:38,492
+Şurada görüyorsunuz 47 ve 3 için toplamda 50 tane.
+
+713
+02:33:39,652 --> 02:33:46,992
+Cluster 1'e, bir saniye, şurada sayıyı tekrar açtım. Özür diliyorum.
+
+714
+02:33:49,108 --> 02:33:58,108
+Üç tane küme var. Birinci kümeye 61, ikinci kümeye 50, üçüncü kümeye 39 tane sample koydu.
+
+715
+02:33:58,648 --> 02:34:02,907
+Ve bunların aşağıdaki tabloda nasıl dağıldığını görüyoruz.
+
+716
+02:34:03,288 --> 02:34:07,368
+Şöyle okumam gerekiyor. Sıfırıncı kümenin içinde 61 tane sample var.
+
+717
+02:34:07,788 --> 02:34:14,188
+Yukarıdan aşağıya doğru sıfırıncı klastra baktığım zaman 47 artı 14, 61 tane sample var.
+
+718
+02:34:14,188 --> 02:34:17,108
+Bunlardan 47 tanesi...
+
+719
+02:34:17,108 --> 02:34:26,727
+Aynı tür, aynı sınıftan ve bunlar iris versikolor'a ait. O yüzden klaster 0'ya, burada 0'a iris versikolor demiş.
+
+720
+02:34:28,168 --> 02:34:35,368
+Benzer şekilde bir numaralı klasterın içinde 50 tane sample var. Yukarıdan aşağıya bir sütununa bakıyorum, 50.
+
+721
+02:34:35,368 --> 02:34:41,608
+Hepsi iris setosa. Dolayısıyla klaster 1'e iris setosa etiketini vermiş.
+
+722
+02:34:43,763 --> 02:34:58,463
+İki numaralı klasterın içinde 39 tane sample var. Bu 39'dan 36'sı, şu iki numaralı sütuna bakıyorum, 36 artı 3, 39, 36 tanesi Iris Virginica.
+
+723
+02:34:59,183 --> 02:35:05,324
+Dolayısıyla çoğunluk aynı sınıftan olduğu için buna da Iris Virginica etiketi vermiş.
+
+724
+02:35:06,388 --> 02:35:10,128
+Ama class confusion matrisi aslında tabii doğru yerleştirilmemiş.
+
+725
+02:35:10,248 --> 02:35:16,488
+Çünkü henüz etiketleme yapmadığı için o yerleştirmeyi okumak biraz zor.
+
+726
+02:35:16,488 --> 02:35:20,688
+Ama yukarıdaki sayılara bakarak bu değerlendirmeyi yapmanız daha kolay.
+
+727
+02:35:21,228 --> 02:35:26,648
+O zaman yanlış kümelenmiş örnek sayısı kaç çıkar arkadaşlar?
+
+728
+02:35:28,368 --> 02:35:30,648
+Kaç tane örnek yanlış kümelenmiş oluyor?
+
+729
+02:35:37,587 --> 02:35:41,567
+Çeti göremiyorum. Mikrofonla söylerseniz iyi olur.
+
+730
+02:35:42,427 --> 02:35:42,887
+17
+
+731
+02:35:42,887 --> 02:35:54,628
+14 artı 3, 17 tane sample'ın yanlış kümelendiğini görebiliyoruz bu matrise baktığımızda.
+
+732
+02:35:55,347 --> 02:36:10,548
+Ama tek başına şuna baktığımızda, yani şuradaki kümelere ve bu kümelerin içindeki eleman sayılarına baktığımızda bu bize bir anlam ifade etmiyor. Yanlış kümelenmiş örneklerin sayısını vermiyor. Ona dikkatinizi çekmek istiyorum.
+
+733
+02:36:10,808 --> 02:36:22,488
+Bu değerlendirmeyi yapabilmek için şurada Cluster Evaluation seçeneğinin işaretli olması gerekiyor ki bu değerlendirme ekranını bize oluştursun.
+
+734
+02:36:24,084 --> 02:36:32,524
+Kümeleme yöntemlerinde bir de hiyerarşik kümelemeyi çalıştıracağım.
+
+735
+02:36:32,923 --> 02:36:41,564
+Hiyerarşik kümelemenin parametrelerini, bakın her yöntemin parametrelerini görmek için bu yöntemi seçtikten sonra bunun üzerine tıklıyorum.
+
+736
+02:36:41,844 --> 02:36:43,263
+Parametreleri açılıyor.
+
+737
+02:36:43,984 --> 02:36:48,404
+Parametrelerde number of cluster kaç tane küme var?
+
+738
+02:36:49,423 --> 02:36:51,384
+Üçe ayıracağım. Üç küme olacak.
+
+739
+02:36:51,888 --> 02:36:52,888
+Evet.
+
+740
+02:36:56,819 --> 02:37:03,860
+Distance olarak, Euclidean Distance kullanıyorum ve Linkage Type olarak Single Linkage kullanıyorum.
+
+741
+02:37:04,159 --> 02:37:07,559
+Şimdi bakın bunu böyle bir çalıştıralım, sonucunu görelim önce.
+
+742
+02:37:10,299 --> 02:37:14,360
+Yine Classes to Cluster Evaluation'ı açtım. Start dedim.
+
+743
+02:37:15,619 --> 02:37:20,719
+Bana değerlendirme yaptı. Lütfen dikkat.
+
+744
+02:37:22,195 --> 02:37:31,315
+0 numaralı klastra 49 tane sample, birinci kümeye bir tane sample, ikinci kümeye 100 tane sample düşmüş.
+
+745
+02:37:33,935 --> 02:37:43,815
+49 tane sample'ın olduğu klastra 0'a, bunun sınıfı Iris Setosa olduğu için Iris Setosa dedi.
+
+746
+02:37:45,299 --> 02:38:08,459
+Bakın burada bir numaralı klastır kayboldu, no klas, görüyor musunuz? Kayboldu çünkü bir tane ve o da Iris Setosa'da ve ben Iris Setosa'yı zaten etiketledim. Dolayısıyla bu klas kayboldu. Hangisi Iris Virginica klastırını ayırt edememiş oldu.
+
+747
+02:38:08,459 --> 02:38:11,879
+Şimdi yöntemde bir değişiklik yapacağım.
+
+748
+02:38:12,819 --> 02:38:25,319
+Hierarchic Clustering yönteminde Link Type'ı Linkage seçmek yerine Average ya da Mean seçeceğim. Hadi Average olsun.
+
+749
+02:38:29,556 --> 02:38:32,396
+Ve bu yöntemi tekrar çalıştıracağım.
+
+750
+02:38:33,796 --> 02:38:39,036
+Bu defa, bakın bu defa daha iyi bir yerleştirme yaptı.
+
+751
+02:38:40,076 --> 02:38:45,236
+0, 1, 2 numaralı klasterlarda 50, 67 ve 33 tane sample var.
+
+752
+02:38:54,191 --> 02:39:00,851
+Birinci sütuna bakıyorum. 50 artı 17, 67 tane. İkinci sütunda 33 tane var.
+
+753
+02:39:01,311 --> 02:39:06,171
+Ve bunların etiketlemelerini altta gördüğümüz gibi yaptı.
+
+754
+02:39:06,591 --> 02:39:13,611
+Buna göre yanlış kümelenen sample sayısı 17 sample yanlış kümelenmiştir dedi.
+
+755
+02:39:22,191 --> 02:39:26,671
+Yönteminin üstüne gittim mouse'a, sağ tuşa bastım.
+
+756
+02:39:27,631 --> 02:39:29,211
+Visualize Tree dedim.
+
+757
+02:39:31,111 --> 02:39:36,412
+Ve bana oluşan dendogramı gösterdi.
+
+758
+02:39:36,412 --> 02:39:41,291
+Dendogram bu şekilde çıktı.
+
+759
+02:39:43,476 --> 02:39:54,396
+Tabii 150 tane sample var. Dolayısıyla bunların atomik klasterı yapısından başlayarak nasıl gruplandığını görmek bu grafikte çok kolay değil.
+
+760
+02:39:54,396 --> 02:39:59,396
+Ama hiyerarşik kümelemede iyi sonuç almak istiyorsanız...
+
+761
+02:40:00,000 --> 02:40:16,020
+Burada az önce yaptığımız örnekte de gördüğümüz gibi linkage type'ı mean ya da average linkage seçmenizi tavsiye ederim. Daha iyi sonuç verecektir.
+
+762
+02:40:16,740 --> 02:40:25,420
+Bunların parametreleriyle burada değiştirerek sonuçların nasıl değiştiğini görebilirsiniz.
+
+763
+02:40:27,763 --> 02:40:36,223
+Evet, benim VEKA ile ilgili söyleyeceklerim bunlar. Burada select attribute kısmı da belki sizin için faydalı olabilir.
+
+764
+02:40:36,223 --> 02:40:41,763
+Öz nitelikleri gruplamamızı sağlıyor.
+
+765
+02:40:52,719 --> 02:41:02,559
+seçici öz nitelikler olduğunu belirleyebiliriz. Bakın bu yöntemi uyguladığımda info gain'e göre attribute evaluation yapıyorum.
+
+766
+02:41:03,259 --> 02:41:07,719
+Dört tane öz nitelik vardı. Dört tane öz niteliğin...
+
+767
+02:41:09,843 --> 02:41:26,863
+ayırt ediciliklerini puanlamış. Diyor ki, 3 numaralı öz niteliğin puanı 1.41'dir diyor. Yani en iyisi bu. 4 numaralı öz niteliğin puanı 1.37, yine birinciye yakın.
+
+768
+02:41:27,283 --> 02:41:30,283
+Birinci sıradakine yakın.
+
+769
+02:41:31,623 --> 02:41:36,203
+Bir ve iki numaralı öz niteliklerin ayırt edicilikleri ise oldukça düşük.
+
+770
+02:41:36,203 --> 02:41:44,383
+Ve burada selected attributes'ü en iyisi 3, sonra 4, sonra 1 ve sonra 2 diye vermiş.
+
+771
+02:41:46,804 --> 02:41:54,903
+Biz bunlardan sadece mesela 3 ve 4'ü kullanalım, 1 ve 2'yi hiç kullanmayalım diyebiliriz.
+
+772
+02:41:55,324 --> 02:42:09,743
+Pre-process adımına gidip 1 ve 2 numaralı öz nitelikleri remove edip, geriye kalan öz niteliklerle classification işlemini mesela tekrar uygulayabilirim.
+
+773
+02:42:11,963 --> 02:42:13,743
+Sonuç çok değişmedi ama...
+
+774
+02:42:14,355 --> 02:42:33,855
+6 tane sample'ı yine yanlış sınıflandırdı fakat sadece 2 tane öz nitelikle bunu yaptı. Bu ne demek? Daha karmaşıklığı düşük bir model üretmiş olduk. Daha az öz nitelikle aynı sonucu elde etmiş olduk.
+
+775
+02:42:35,092 --> 02:42:49,092
+Evet, bunlar Veka'da hazır. Bu Java'da geliştirilmiş platformda Java kod parçalarını alıp kendi uygulamalarınıza da entegre edebiliyorsunuz.
+
+776
+02:42:50,371 --> 02:43:02,192
+Dünyanın her tarafından araştırmacılar bu platform için kod yazıp ekliyorlar. Her gün yeni bir sürümünü çıkartıyorlar. Güzel bir platform aslında.
+
+777
+02:43:05,843 --> 02:43:16,163
+Evet arkadaşlar, bu haftalık bu kadar diyelim. Dersle ilgili veya ders dışı sorunuz var mıdır?
+
+778
+02:43:22,420 --> 02:43:40,540
+Peki, soru yoksa dersi bitireceğim. Hepinize sağlıklı, güzel bir hafta diliyorum. Hepinize el sallıyorum. Siz de bana el sallayarak dersten çıkabilirsiniz. Hoşçakalın, iyi haftalar.
+
+779
+02:43:44,540 --> 02:43:45,639
+İyi haftalar.
+
+780
+02:43:47,827 --> 02:43:53,667
+Teşekkürler hepinize. İyi günler arkadaşlar. Bakalım kim kalacak geriye.
+
+781
+02:43:54,407 --> 02:43:55,108
+İyi günler hocam.
+
+782
+02:43:57,007 --> 02:43:58,387
+İyi günler. Hoşçakalın.
+
+783
+02:44:10,451 --> 02:44:12,351
+Görüşürüz arkadaşlar. Hoşçakalın.
+
+784
+02:44:36,211 --> 02:44:36,611
+Evet.
+
+785
+02:44:39,611 --> 02:44:42,151
+Şu an ekranda 22 kişi kaldı.
+
+786
+02:44:42,391 --> 02:44:43,291
+Hocam, vallahi tek...
+
+787
+02:44:43,291 --> 02:44:43,912
+İyi haftalar.
+
+788
+02:44:44,431 --> 02:44:45,811
+İyi haftalar hocam, ses...
+
+789
+02:44:45,811 --> 02:44:48,651
+El sallamayı bulamadım tekrardan.
+
+790
+02:44:48,951 --> 02:44:52,431
+Peki, sesli de yapabilirsiniz. Hoşçakalın.
+
+791
+02:44:52,971 --> 02:44:54,072
+Sağ olasınız, kolay gelsin.
+
+792
+02:44:54,811 --> 02:44:56,051
+Teşekkürler, hoşçakalın.
+
+793
+02:44:56,072 --> 02:44:56,811
+İyi günler hocam.
+
+794
+02:44:57,531 --> 02:44:58,511
+İyi günler arkadaşlar.
+
+795
+02:45:04,788 --> 02:45:06,847
+Evet, hepinize iyi haftalar diliyorum.

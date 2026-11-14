@@ -1,0 +1,3739 @@
+1
+00:01:22,548 --> 00:01:23,668
+Arkadaşlar, merhaba.
+
+2
+00:01:27,956 --> 00:01:33,036
+Geçen hafta hatırlayacak olursanız, prosedürler üzerinden ilerlemiştik.
+
+3
+00:01:34,816 --> 00:01:50,635
+Prosedürlerle ilgili olarak, aynı dosya içerisinde yeni bir prosedür tanımlama, farklı bir dosyadan prosedür tanımlama, far tipinde prosedür tanımlama, near tipinde prosedür tanımlama gibi konuları görmüştük.
+
+4
+00:01:52,180 --> 00:02:16,259
+en büyük ortak bölen hesabını yapan bir fonksiyonu farklı şekillerde kullanmıştık. Burada parametre aktarımı olarak da örneğin ana yordam, alt yordama parametre aktarımını yaz maçlar üzerinden yaptığı bir örnekle bütün görmüş olduğumuz konular üzerinde durmuştuk. Kabaca bir hatırlamak gerekirse.
+
+5
+00:02:17,683 --> 00:02:39,163
+Aynı dosya içerisinde egze tipi bir program için konuşuyor isek, ana yordam far tipinde olmalıydı. Yardımcı yordam ise veyahut da alt yordamlarımız ise near tipinde olabiliyordu aynı dosyada olduğu için. Bu durumda bu fonksiyonu çağırmak için sadece call deyip etiketini vermek yeterliydi. Near tipinde aynı dosyada tanımlıysa.
+
+6
+00:02:40,084 --> 00:03:05,644
+Aynı dosyada FAR tipinde tanımlı olan bir alt yordam ise çağırabilmek için call FAR PTR etiket şeklinde bir çağırma yolumuz vardı. Bunların etkisini debugda baktığımız zaman görmüştük. Near tipinde çağırdığımız zaman vermiş olduğumuz komut, call'dan sonra mutlak bir offset değeri olarak makine koduna çevriliyordu.
+
+7
+00:03:06,228 --> 00:03:18,048
+call far ptr dediğimizde ise bu call kelimesinden sonra bir segment, iki nokta üst üste ve bir offset şeklinde çağrılmış oluyordu hatırlayacak olursanız.
+
+8
+00:03:19,048 --> 00:03:26,487
+Aynı işlemi yani modüler bir takım modüler kod geliştirme ile ilgili olarak yapabileceğimiz işlemleri bir adım daha ileri götürdüğümüz şekliyle.
+
+9
+00:03:27,348 --> 00:03:50,428
+Alt yordamları farklı dosyalarda tanımlamak aslında izleyeceğimiz bir yol olabiliyordu. Bununla ilgili olarak da farklı dosyalardan alt yordam kullanımı söz konusuysa ana yordamın olduğu dosya içerisinde yani iki tane dosyamız vardı. Bunlardan bir tanesi ana yordamın olduğu egze programımız bir de alt yordamın olduğu dosyaydı.
+
+10
+00:03:51,187 --> 00:04:04,987
+Bunlara ana.asm ve alt.asm diyelim şimdilik. Ana.asm dosyasının içerisinde dışarıdan kullanacağımız fonksiyona ilişkin olarak bir extern tanımını yapmamız gerekiyordu.
+
+11
+00:04:05,087 --> 00:04:11,647
+Extern tanımıyla birlikte de bu fonksiyonun tipini belirtmemiz gerekiyordu. 2.3 üst üste koyarak far diye de bunu belirtiyorduk.
+
+12
+00:04:12,387 --> 00:04:18,408
+Daha sonra ana yordam içerisinde bu alt yordamımızı çağırırken call deyip etiketini kullanmak yeterliydi.
+
+13
+00:04:19,091 --> 00:04:30,351
+Fakat SMDR bunu derlerken, extern tanımındaki far işaretinden dolayı bunu call far PTR'ye çevirip bu şekilde çağırıyordu, hatırlayacak olursanız.
+
+14
+00:04:31,432 --> 00:04:38,451
+Yine alt yordam tarafında da benzer bir şekilde dışarıya kullandırılacak fonksiyonların public tipinde tanımlanması gerekiyordu.
+
+15
+00:04:39,312 --> 00:04:42,091
+Dolayısıyla public etiket diye de orada bir tanım vardı.
+
+16
+00:04:45,267 --> 00:04:53,827
+iki tane tanımlamadan, extern ve public tanımlamalarından herhangi birisi eksik olduğunda çıkacak hataları adım adım derleyerek geçen hafta bakmıştık zaten.
+
+17
+00:04:55,247 --> 00:05:01,387
+Yine alt yordam içerisinde fonksiyonumuz ana yordamda far tipinde kullanılacağı belirtmişti.
+
+18
+00:05:01,487 --> 00:05:07,187
+Dolayısıyla tanımlanırken de far tipinde tanımlanması gerekiyor kendi tanımlandığı alt nokta asm dosyasında.
+
+19
+00:05:07,795 --> 00:05:13,895
+tanımlamamızı yapıp fonksiyonumuzu gerçekleştirdikten sonra, tabi bu arada şu önceden belli yani.
+
+20
+00:05:14,483 --> 00:05:28,123
+Ben öyle bir alt yordam yazıyorum ki bunun açıklaması belli, girdisi çıktısı belli. Diyorum ki baştan anlaşıyoruz ki işte bu fonksiyonun girdileri AX ve DX yazmaçları çıktısı ise AX yazmacında olacak diye baştan belirliyoruz bunu.
+
+21
+00:05:28,583 --> 00:05:38,223
+Ve bu prototipi ana yordamda da benzer şekilde fonksiyona parametre aktarırken ve fonksiyondan parametre çekerken benzer mantık çerçevesinde kullandığımızı hatırlıyorsunuzdur.
+
+22
+00:05:38,867 --> 00:06:03,187
+Daha sonrasında derleme aşamasında ise şöyle yapıyorduk. Öncelikli olarak işte ana.asm7'yi Assembler'dan geçilerek bir obje dosyası oluşturuyorduk. Daha sonra alt yordamın içerisinde olduğu dosyayı Assembler'dan geçirerek bir obje dosyası oluşturuyorduk. Daha sonra bu iki obje dosyasını birlikte linkliyorduk. Burada da hani oluşabilecek hata şuydu.
+
+23
+00:06:04,084 --> 00:06:11,524
+eğer public tanımında bir sıkıntı varsa bu linkleme aşamasında bir problem olarak ortaya çıkıyordu.
+
+24
+00:06:12,103 --> 00:06:17,184
+Çünkü anayordan dışarıdan bir etiket bekliyor, belirli bir isimdeki etiketi bekliyor.
+
+25
+00:06:17,843 --> 00:06:23,163
+Fakat bunu dışarı sunan hiçbir fonksiyon yok ise, hiçbir dosya yok ise, hiçbir obje dosyası yoksa,
+
+26
+00:06:23,624 --> 00:06:26,983
+bu durumda da linkleme hatası verdiğini hatırlıyorsunuzdur diye düşünüyorum.
+
+27
+00:06:27,603 --> 00:06:31,983
+Son olarak da bu debug yaparak işlemi nasıl...
+
+28
+00:06:32,084 --> 00:06:41,144
+çalıştığını görmeye çalışmıştık. Bir adım daha ilerleyerek yazmış olduğumuz fonksiyonu recursive bir fonksiyon olarak yazmıştık.
+
+29
+00:06:41,824 --> 00:06:47,764
+Recursive olarak yazmış olduğumuz fonksiyonda aslında kendini çağıran bir fonksiyon yapısı oluşturmuştuk.
+
+30
+00:06:48,211 --> 00:07:11,831
+Tabi recursive bir fonksiyonun sonlandırma koşulu olması lazım. Sonsuza kadar devam etmesi mümkün değil. Dolayısıyla sonlandırma koşulumuzu belirlemiştik. Örneğin en büyük ortak bölen durumunda sonlandırma koşulumuz x ve herhangi bir x değeriyle sıfır değerinin en büyük ortak böleninin x'e eşit olduğunu belirterek bir sonlandırma durumu oluşturmuştuk. Zaten recursive adımlarda da.
+
+31
+00:07:12,307 --> 00:07:30,907
+X ve Y'nin en büyük ortak böleni, Y'nin ve X'in Y'ye bölümünden kalanın en büyük ortak bölümü şeklindedir diye bir yineleme adımı tanımlamıştık ve bu şekilde sonlandırma adımıyla birlikte fonksiyonu nasıl çalıştığını izlelemiştik.
+
+32
+00:07:30,907 --> 00:07:38,668
+Burada özellikle recursive fonksiyonla ilgili olarak her seferinde alt yordamın çağrıldığı durum için
+
+33
+00:07:39,507 --> 00:07:52,487
+yığına atılan değerleri incelemiştik. Kaç kere yığına değer atıldığını ve dolayısıyla kaç kere bu alt yordamın peş peşe veya iç içe çağrıldığını irdelemiştik.
+
+34
+00:07:53,788 --> 00:08:02,887
+Bununla ilgili olarak belki bir zaman sonra karşımıza çıkabilecek durum şu. Bu şekildeki recursive bir fonksiyon çağrımı söz konusu iken,
+
+35
+00:08:03,252 --> 00:08:16,591
+yığının en dolu olduğu andaki içeriği nedir? Böyle bir şeyle karşılaşabiliriz. Bununla ilgili olarak vermiş olduğumuz örnek çerçevesinde veya kendi oluşturacağınız örnekler çerçevesinde deneme yapabilirsiniz. Faydalı olur.
+
+36
+00:08:18,231 --> 00:08:27,252
+Kabaca bunları görmüştük geçen hafta. Bir de geçen hafta içerisinde aynı işlemlerin makroyla da yapılabileceğini, makroyla alt yordam arasındaki farklardan da bahsetmiştik.
+
+37
+00:08:28,079 --> 00:08:34,359
+Şimdi tekrar bu makro tarafını hatırlayarak örneklerimizi yapmaya çalışalım. Bununla ilgili örnekleri yapalım.
+
+38
+00:08:42,035 --> 00:08:44,596
+Şimdi temel olarak hatırlayacağımız nokta şuydu.
+
+39
+00:08:47,915 --> 00:08:49,975
+Şuradan anlatmaya çalışayım.
+
+40
+00:08:51,975 --> 00:08:59,295
+Makro ve prosedür tanımı aslında modüler kod geliştirmeye ilişkin olarak kullanabileceğimiz tool'lardan iki tanesi.
+
+41
+00:09:00,355 --> 00:09:06,855
+Prosedür dediğimiz şey aslında program akışının kırılarak prosedür call olduğu vakit.
+
+42
+00:09:07,283 --> 00:09:33,524
+çağrıldığı vakit, call fonksiyonuyla çağrıldığı vakit, normal ana program akışının kırılarak, bu prosedürün tanımlı olduğu noktaya, instruction pointer'ın giderek buradaki kodları yürütmesi şeklinde tanımladığımız bir durum. Dolayısıyla ben bir kere prosedür tanımı yaptığım vakit, bu prosedürü ilişkin, alt prosedürü ilişkin birkaç call işlemi yaptığım zaman, geçişecek işlem şudur.
+
+43
+00:09:34,035 --> 00:09:41,875
+ana kod akışı çağrılma noktasında kırılıp, alt prosedüre gidilip, alt prosedürdeki fonksiyonlar yerine getirilecek.
+
+44
+00:09:42,515 --> 00:09:50,975
+Daha sonra geri dönüş olarak da, o call işleminin bir sonraki satırı, hangi komuta karşılık geliyorsa, o bir sonraki satırdan itibaren,
+
+45
+00:09:51,596 --> 00:09:54,655
+ana yordam devam edecek şekilde geri dönüş değeri de belirleniyordu.
+
+46
+00:09:54,755 --> 00:10:00,495
+Yine biraz sonra tekrar aynı fonksiyonun, alt yordamın call işlemi varsa, yine akış kırılıp,
+
+47
+00:10:00,768 --> 00:10:14,808
+yine alt yordama gidilip, alt yordamdaki kodlar yürütülüp, ilgili parametrelerle yürütülüp, yeni parametrelerle yürütülüp, elde edilen sonuçla birlikte tekrar geri dönülmesi şeklinde tanımlayabileceğimiz bir durum.
+
+48
+00:10:15,348 --> 00:10:26,508
+Dolayısıyla prosedür her çağrıldığında kodumuz büyümüyor. Ama prosedürün tanımlı olduğu yerde koda karşılık, makine kodu karşılığı üretiliyor.
+
+49
+00:10:27,124 --> 00:10:48,563
+Böyle bir durum var. Makroya geldiğimizde ise makro bir tanım olarak dosyamızda mevcut. Her makro çağrıldığı vakit o kod bloğu makro tanımına ilişkin kod bloğu alınıp o çağrıldığı bölgeye yapıştırılıyor. Dolayısıyla birkaç defa çağırdığım zaman aynı kod parçasının birkaç defa daha tekrar ettiğini görmüş oluyoruz.
+
+50
+00:10:49,124 --> 00:10:52,644
+Burada özellikle şunu söylemek ve hatırlamak lazım.
+
+51
+00:10:53,043 --> 00:11:05,524
+Ne anlama geliyor bu çalışma mantığı? Makro her çağrıldığında kod büyüklüğünü kendi büyüklüğü kadar genişletiyor. Her makro çağırdığında kod bu kadar daha büyüyor. Bu anlama geliyor.
+
+52
+00:11:06,584 --> 00:11:14,504
+Diğer taraftansa makronun tanımlı olduğu bölgede, makro tanımını yaptığımız bölgeye karşılık herhangi bir makine kodu karşılığı üretilmiyor.
+
+53
+00:11:14,995 --> 00:11:26,415
+Bu şu demek, eğer ben bir prosedür tanımı yaptım ve bunu hiçbir şekilde çağırmadıysam, yine de bu tanımlamadan dolayı makine kodu karşılığı üretilecektir.
+
+54
+00:11:27,115 --> 00:11:37,015
+Ama ben makro tanımı yaptım ve bunu içeride hiç çağırmıyorsam, bu durumda makro koduna karşılık herhangi bir makine kodu da üretilmediği için kod büyüklüğüm değişmeyecektir.
+
+55
+00:11:37,844 --> 00:11:48,304
+Önceki örnekte nasıldı? Prosedür büyüklüğü kadar kod boyutu genişlemiş olacaktı. Tabaca bu şekilde bir yapı vardı ikisinin arasında karşılaştırmak istediğimizde.
+
+56
+00:11:49,464 --> 00:11:53,924
+Prosedür tanımı ile ilgili olarak bunu artık kullandığımız için siz de aşinasınızdır.
+
+57
+00:11:55,764 --> 00:12:00,304
+Prosedür tanımı bir başlangıç ve bitiş...
+
+58
+00:12:01,235 --> 00:12:26,096
+kelime grubu içerisinde tanımlı olması gerekiyor. Yani bir etiket, prosedür olduğuna dair proc kelimesi. Eğer far tipindeyse far tipini belirtmemiz gerekiyor. Eğer belirtmezsek near tipinde anlaşılacaktır. Yine bitişinde aynı etiket ve end prosedür kelimeleriyle birlikte yapmamız gerekiyor. Prosedürün dönüşünde mutlaka bir return fonksiyonu olması lazım.
+
+59
+00:12:26,772 --> 00:12:33,532
+Eğer far tipinde ise redfaya yazacağız. Near tipinde ise return olarak bunu yazmamız yeterli.
+
+60
+00:12:33,532 --> 00:12:39,272
+Biz kendi aramızda anlaşalım. Eğer far tipinde ise mutlaka redfaya olarak döndürelim.
+
+61
+00:12:39,272 --> 00:12:46,172
+Normalde assemblerların birtakım hazır işlemleri var.
+
+62
+00:12:46,172 --> 00:12:52,772
+Far tipinde tanımladığımız zaman siz buraya red yazsanız bile redfaya olarak döndürüyor ama biz kendi aramızda anlaşalım.
+
+63
+00:12:53,043 --> 00:12:57,124
+far tipinde ise mutlaka RET-F olarak dönüş değerimizi belirtmemiz lazım.
+
+64
+00:12:58,183 --> 00:13:05,944
+Ve daha sonrasında da prosedür yapacağımız iş bu iki etiket arasındaki bölgede yazacağımız kısımda olması gerekiyor.
+
+65
+00:13:07,024 --> 00:13:08,344
+Bir de makroyu hatırlayalım.
+
+66
+00:13:10,604 --> 00:13:20,464
+Makro tanımında ise arkadaşlar bir makro ismi etiket, bunun bir makro tanımı olduğuna dair makro kelimesi ve daha sonra parametre listesi geliyordu.
+
+67
+00:13:21,235 --> 00:13:28,115
+Daha sonra bitişimizi ise end-make kelimesiyle gerçekleştiriyorduk. End-make makro kelimesiyle gerçekleştiriyoruz.
+
+68
+00:13:29,035 --> 00:13:33,895
+Arada makro kodumuz yazıyoruz. Yalnız dikkat edeceğimiz bir nokta.
+
+69
+00:13:34,436 --> 00:13:41,355
+Kod içerisinde bir takım döngüler veyahut da koşullu koşulsuz dallanmalar varsa, yani etiket kullanımı varsa,
+
+70
+00:13:41,355 --> 00:13:47,355
+bu durumda ben bunu makroyu her çağırdığımda aynı kod tekrarlanacağı için
+
+71
+00:13:47,923 --> 00:14:08,543
+eğer dikkat etmezsem aynı etiket her çağırdığım vakit tekrarlanmış olacak. Yani şunu diyorum, kod içerisinde L1 diye bir etiket varsa ben ilk çağırdığım zaman bir L1 etiketini koyacak. İkinci çağırdığımda tekrar bir L1 etiketi koyacak. Bu etiketlerden hangisi L1? Bunu netleştirmek adına şöyle bir şey yapmamız lazım.
+
+72
+00:14:14,803 --> 00:14:19,583
+makro kodu her kopyalandığında, her tekrarlandığında unique olarak değiştiriliyor.
+
+73
+00:14:20,903 --> 00:14:24,723
+Örneğin buradaki L1 etiketimiz vardı.
+
+74
+00:14:24,883 --> 00:14:28,503
+Makro'yu ilk çağırdığımızda L1 yerine unique bir şeyle değiştiriyor.
+
+75
+00:14:29,183 --> 00:14:32,183
+Koşulsuz dallandığımız noktayı da aynı etiketle değiştiriyor.
+
+76
+00:14:32,283 --> 00:14:35,303
+Yani L1, loop L1 diye bir komutumuz olsun burada.
+
+77
+00:14:35,827 --> 00:15:01,367
+L1 unique, loop, L1 unique şeklinde değişti. İkinciye geldiğimizde L1 unique 2, loop, L1 unique 2 şeklinde etiketleri unikleştiriyor. Bunun için de lokal kelimesinden sonra mutlaka ve mutlaka burada unik olarak kullanmak istediğimiz etiketleri vermemiz gerekiyor. Eğer bunu vermezsek dediğim gibi aynı etiketin birden fazla tanımı olmuş oluyor.
+
+78
+00:15:02,163 --> 00:15:13,543
+Şimdi makro ile ilgili olarak her çağrılma anında bunların yeniden kod içerisinde kopyalandığını söylemiştik.
+
+79
+00:15:13,824 --> 00:15:19,124
+Ama tanımlı olan bölge için herhangi bir makine kodu üretilmediğini söylemiş oluyordu.
+
+80
+00:15:19,744 --> 00:15:22,884
+Şimdi bununla ilgili olarak örnekler bakacağız şimdi makro ile ilgili.
+
+81
+00:15:22,984 --> 00:15:24,783
+Buraya kadar sormak istediğiniz bir şey var mı?
+
+82
+00:15:40,371 --> 00:15:43,531
+varsa sorabilirsiniz. Ben şu örneklerimi bir arıyorum.
+
+83
+00:15:44,891 --> 00:15:45,451
+Bakalım.
+
+84
+00:16:51,764 --> 00:16:54,244
+Şöyle bir örnek kodumuz var.
+
+85
+00:16:55,784 --> 00:16:56,403
+Burada
+
+86
+00:16:56,403 --> 00:17:01,584
+üst hesaplamaya yönelik bir işlem yapmak istiyoruz.
+
+87
+00:17:01,784 --> 00:17:04,963
+Öncelikli olarak bunun şöyle bir şey yapayım. Daha iyi olacak.
+
+88
+00:17:19,763 --> 00:17:25,763
+Öncelikli olarak tek bir dosya içerisinde bu üst alma işlemini nasıl gerçekleştirebiliriz diye bakalım.
+
+89
+00:17:30,003 --> 00:17:30,884
+Bunları uçuruyorum.
+
+90
+00:17:32,463 --> 00:17:38,563
+Şu anda elimizde olan nokta sadece şablon dosya halindeki yapımız.
+
+91
+00:17:39,223 --> 00:17:41,344
+Şunları da üst 1, üst 2 diye değiştirelim.
+
+92
+00:17:42,183 --> 00:17:44,783
+Çok karışmasınlar. Aynı şekle gelsinler.
+
+93
+00:17:46,864 --> 00:17:50,163
+Şimdi bu bizim şablon kodumuz.
+
+94
+00:17:50,163 --> 00:17:51,663
+Yapmak istediğimiz işlem.
+
+95
+00:17:52,016 --> 00:18:00,276
+Mesela üst ve taban denmiş 2 üzeri 3 değerini hesaplamak ve 3 üzeri 2 değerlerini hesaplamak. Bunları yapmak istiyoruz.
+
+96
+00:18:01,396 --> 00:18:07,215
+Bununla ilgili olarak da sonuçları şurada görmüş olduğunuz sonuç dizisine yazmamız gerekiyor.
+
+97
+00:18:07,855 --> 00:18:15,396
+Tabi burada word ve sonucu da double word olarak yazdık ama bu tüm word değerler için sağlanacak bir durum değildir.
+
+98
+00:18:15,396 --> 00:18:16,396
+O yüzden dolayı bunu...
+
+99
+00:18:16,915 --> 00:18:25,536
+düşük değerler için çalışan bir kod gibi düşünelim şimdilik. Çok yüksek değerler için siz de tahmin edersiniz ki DoubleWord'a da sığmayabilir.
+
+100
+00:18:27,155 --> 00:18:38,336
+Bundan dolayı ona dikkat ediyoruz bu noktada. Elimizdeki örnek kod parçası bir egze şablonu. Bu şekilde görüyorsunuz.
+
+101
+00:18:40,660 --> 00:18:52,180
+Şimdi burada ilk başta yapacağımız işlemler hatırlayacak olursanız şurada tanımlamış olduğumuz segmentin data segment olarak kullanılabilmesi için bir takım işlemler yapmamız lazımdı.
+
+102
+00:18:52,720 --> 00:19:04,059
+Bunun sebebi de şuydu, işletim sistemi bizi çağırdığı vakit, bizim yazdığımız fonksiyonu çağırdığı vakit geri dönüş için segment değerini DSD döndürüyordu ve bu DSD'nin 0 offsetine dönmemizi istiyordu.
+
+103
+00:19:05,567 --> 00:19:10,867
+pushladıktan sonra bir de 0 değerini pushluyorduk. Hatırlayacak olursanız bunu defartle söylüyorum.
+
+104
+00:19:11,668 --> 00:19:22,807
+Ana yordam dönüşünde de REDF işlemini çalıştırdığımızda da sırasıyla 0 offsetini ve ilgili segment değerini yığından çekerek işletim sisteminin kaldığımız yerine dönmemiz mümkün oluyordu.
+
+105
+00:19:24,168 --> 00:19:31,508
+Bunu bu şekilde yapabiliyorduk. Dolayısıyla bu işlem işletim sistemi, bu 3 satır işletim sistemi geri dönüş değeriydi. Şu 2 satır ise
+
+106
+00:19:31,920 --> 00:19:55,580
+DSD hala şu satırları yazdıktan sonra dahi işletim sistemine geri dönüş segment değeri vardı. Data segment içerisindeki değerin bu segmenti gösterebilmesi için bu iki satır işlemi yapmamız gerekiyordu hatırlayacak olursanız. Bunları yaptıktan sonra artık data segment DS yazmacımız burayı gösteriyor, bu segmentin başlangıcını gösteriyor ve hazır hale gelmiş oluyor.
+
+107
+00:19:56,051 --> 00:20:08,511
+Şimdi burada üst alma işlemini yapıp sonucu tekrar ilgili satırlara yazacağız. Bununla ilgili olarak iki tane değişkenimiz olduğu için bunları sırasıyla yapmaya çalışalım. Öncelikli olarak bu üst alma işlemini nasıl yapabiliriz?
+
+108
+00:20:08,511 --> 00:20:14,891
+İşte tabandaki değeri üst sayısı kadar.
+
+109
+00:20:15,412 --> 00:20:30,111
+kendisiyle çarpmak şeklinde tanımlayabiliriz. Dolayısıyla burada bir sonuç isimli değişken tanımlayacaksak, mesela bu word, double word dediğimiz şey, DX ve AX'de olabilecek değerler şeklinde düşünelim.
+
+110
+00:20:31,172 --> 00:20:42,591
+Çarpma işlemi sonucu, sonuç 1'de saklanacak. Yapmamız gereken işlemde ne? 2 çarpı 2 çarpı 2. 2 üzeri 0, 1.
+
+111
+00:20:43,796 --> 00:20:53,316
+2 üzeri 0'dan itibaren başlayarak her üst kadar, üst sayısı kadar bu sonuç değerini kendisiyle çarpmamız lazım.
+
+112
+00:20:54,076 --> 00:20:56,875
+Dolayısıyla bunu yapabilmek için yani kaç kere döngü yapacağız?
+
+113
+00:20:56,976 --> 00:20:59,756
+Aslında bir döngü var. Bu döngüden dolayı biz şunu anlıyoruz.
+
+114
+00:21:00,415 --> 00:21:02,476
+MOV, CX, ÜS, 1.
+
+115
+00:21:03,412 --> 00:21:29,412
+üst bir defa tabanı kendisiyle çarpacağız. Ama üst sıfır olduğunda, yani iki üzeri sıfır değerinde, taban değerimiz ne olacak? Sonuç değerimiz bir oluyordu. Dolayısıyla burada da ilk initial değer için MOV, AX virgül bir diyerek başlayabiliriz. Daha sonrasında yapacağımız işlem ise, taban değerimizi aldık mı? Taban değerimizi...
+
+116
+00:21:31,443 --> 00:21:35,023
+Almadık ama şöyle yapabiliriz. Her seferinde
+
+117
+00:21:35,023 --> 00:21:44,063
+Burada bir çarpma işlemi yapmamız lazım. Bu taban değerinde BX almış olalım.
+
+118
+00:21:48,276 --> 00:21:52,596
+taban 1 diyelim. Daha sonrasında yapacağım işlem bir döngü içerisinde
+
+119
+00:21:59,955 --> 00:22:04,275
+kaç kere dönüyoruz? Üst sayısı kadar dönüyoruz. Yapacağımız işlem nedir burada?
+
+120
+00:22:08,596 --> 00:22:11,835
+MOV, BX işlemi. Temel olarak bu şekilde.
+
+121
+00:22:12,935 --> 00:22:18,935
+Üç kere döneceğimiz için ilk başta AX değerimiz 1 ile başladık.
+
+122
+00:22:20,675 --> 00:22:24,655
+İlk çarpma sonucunda 2 üzeri 1'den dolayı 2 oldu.
+
+123
+00:22:25,415 --> 00:22:30,675
+İkinci değerden dolayı 4 oldu. Üçüncü değerden dolayı 8 oldu ve çıkışı gerçekleştirdik.
+
+124
+00:22:32,915 --> 00:22:40,635
+İşlem sonucu nerede birikti? DX ve AX de birikti. Dolayısıyla buradan çıktığımız vakit işlem sonucunu nereye yazmalıyız?
+
+125
+00:22:42,175 --> 00:22:50,596
+AX'deki değer bizim LOV kısmımız. Dolayısıyla bunu nereye yazacağız? Sonuç isimli değişkenin düşük anlamlı wordüne yazmalıyız.
+
+126
+00:22:51,336 --> 00:22:56,515
+DX'deki değeri de sonuç isimli değişkenin yüksek anlamlı wordüne yazmamız gerekiyor. Bunu nasıl yapacağız?
+
+127
+00:22:57,735 --> 00:23:00,355
+Bunun için şunu yapabiliriz. Load Effective Address.
+
+128
+00:23:01,523 --> 00:23:25,923
+sonuç 1'i nereye atalım? SE yazmacını atalım. Daha sonrasında da şunu yapabiliriz. MOV, SE'nin göstermiş olduğu yere düşük anlamlı kıs, byte'ı, şey word'ü. Daha sonra da SE'nin iki ötesindeki, yani bir sonraki word değerine de DX'deki değeri yazmamız mümkün.
+
+129
+00:23:27,635 --> 00:23:33,475
+Bu şekilde bir işlem yapmamız mümkün. Şuradan bir kopya çekeyim daha önce nasıl yapmışız diye bakalım.
+
+130
+00:23:39,443 --> 00:24:05,419
+AX, DX, D, B. Direkt fonksiyon çağırarak yapmış bunu. Tamam, bizimki de benzer şekilde aynı bir, aynı fonksiyonu yapacağımız için bu şekilde yapmak mümkün. Yine aynı işlemi bu sefer gelip ÜS2 ve Taban2 içinde tekrarlamamız gerekecek. Dolayısıyla biz bakın modüler kullanıma ilişkin bir
+
+131
+00:24:05,844 --> 00:24:27,744
+durum gerektiren örneğimiz var. Bu L2 olsun. Bu arada bunları da değiştirelim. Aynı mantıkla, aynı işlemde, aynı görevi yerine getiren kod bloğunu tekrarlamak durumunda kaldık burada. Gördüğünüz üzere modüler kullanıma ilişkin bir örnek. Şimdi bunun çalışmasıyla ilgili olarak bir deneme gerçekleştirelim.
+
+132
+00:24:33,332 --> 00:24:35,852
+belki değerlenmeyebilir, kontrol etmedik çok.
+
+133
+00:24:42,355 --> 00:24:45,435
+Sonucu da sonuç 2 yapmamışız. Evet, tamam. Onu da düzelttim.
+
+134
+00:24:47,475 --> 00:24:48,536
+Deneyelim bakalım.
+
+135
+00:25:21,811 --> 00:25:25,811
+Şimdi LSTM'si üretelim.
+
+136
+00:25:33,460 --> 00:25:40,460
+üst, al, alt, antre, ana.asm. Bu dosyamız yok mu daha? Niye yok?
+
+137
+00:25:43,667 --> 00:25:44,907
+Anlaşmıyor abi.
+
+138
+00:25:54,836 --> 00:25:58,516
+dosya ismi uzun olduğu için problem çıkardı.
+
+139
+00:26:06,420 --> 00:26:07,319
+Şimdi
+
+140
+00:26:20,339 --> 00:26:21,839
+Bakla da bakalım şimdi.
+
+141
+00:26:33,011 --> 00:26:41,551
+Şimdi birkaç adım yürütelim. DS'yi aldık. Şimdi yapacağımız işlemler kodda şöyle yanımızda dursun. Neredeydi o?
+
+142
+00:26:41,551 --> 00:26:43,071
+Şu an.
+
+143
+00:26:43,071 --> 00:26:45,951
+Nerede gitmiş o? Kapatmışız.
+
+144
+00:26:58,579 --> 00:27:23,420
+CX'e 3 değerini atadık. Daha sonra şöyle birazcık aşağı inelim. Daha sonra AX'i birliyoruz. Daha sonra BX'de taban değerimiz var 2. Daha sonra 3 defa bu AX'deki değeri 2 ile çarpıyoruz. İlk çarpım sonucu, ikinci çarpım sonucu ve üçüncü çarpım sonucunu elde ettik.
+
+145
+00:27:25,076 --> 00:27:29,875
+Daha sonrasında da CX'imiz 0 olduğu için döngüden çıktık.
+
+146
+00:27:30,615 --> 00:27:33,936
+Şu anda DX'de 0 değerimiz var, AX'de 8 değerimiz var.
+
+147
+00:27:34,556 --> 00:27:39,756
+İlk değerimizi alıp ilgili double word'un, düşük anlamlı word'unu yazıyoruz.
+
+148
+00:27:39,916 --> 00:27:43,196
+İkinci değerimizi de alıp yüksek anlamlı kısmına yazıyoruz.
+
+149
+00:27:43,196 --> 00:27:45,196
+Bu noktada data segmentin...
+
+150
+00:27:45,491 --> 00:27:54,192
+0'dan itibaren baktığımızda 3 değeri, 2 değeri ve 8 değerini burada 4 byte'lık bir değer olarak görmüş oluyoruz.
+
+151
+00:27:54,772 --> 00:28:00,451
+Burada en düşük anlamlı byte'dan itibaren başladığımız için de bunu tersten okuyacağız tabii.
+
+152
+00:28:01,231 --> 00:28:08,971
+08, 0, 0, 0, 0, 0, 0 değil de bu bir double word olarak 0, 0, 0, 0, 0, 0, 0, 0, 0 olarak okuyacağımız değer.
+
+153
+00:28:09,407 --> 00:28:34,127
+İkinci parametrelerde ikiye üç wordleri. Bunlarla ilgili işlem yapacağız. Şimdi trace edelim. CX'e iki değerini atadık. AX'de bir değeri var. BX'e üç değerini atadık. Bu işlemi çarpma işlemini iki kere yapmamız gerekiyor. İlk çarpım işlemi, ikinci çarpım işlemi. Daha sonrasında döngüden çıktık.
+
+154
+00:28:34,675 --> 00:28:51,735
+9 değeri AX'de var, DX'de 0 değeri var. Yine sonuç 2'nin efektif adresini aldı. Yüksek anlam, düşük anlamlı Word'ü yazdım. Daha sonra yüksek anlamlı Word değerini yazdım. Tekrar data segmentin 0'ından dump ederek de.
+
+155
+00:28:52,692 --> 00:29:04,792
+Şuradan itibaren 0, 9, 0, 0, 0, 0, 0 değerleriyle birlikte düşük least significant byte'den itibaren little and in formatında 9 değerinin hafızaya yazılmış olduğunu görmüş olduk.
+
+156
+00:29:04,792 --> 00:29:08,792
+Şimdi bu noktada şunu yapmaya çalışalım.
+
+157
+00:29:09,236 --> 00:29:24,236
+Bu fonksiyonu da kullanmış olduğumuz işlemi bir prosedüre çekmeye çalışalım. Bunun için ne yapmamız gerekecek? Şu işlem aynısı bir prosedüre olarak bulunacak. Bu prosedürümüzün ismi şuradan bakalım ne olarak yapmışız bunu.
+
+158
+00:29:32,084 --> 00:29:38,663
+Şurada, üstal isimli bir fonksiyon olarak bunu yazacağız. Bunun için şöyle yapıyoruz.
+
+159
+00:29:44,627 --> 00:30:10,347
+Şimdi bakın parametreler nasıl aktarılmış? Parametreler nerede? CX'de üst değeri var, BX'de taban değeri var, AX'de de bir değeri var. Sizce AX'de bir parametre midir? Yoksa AX her zaman bir olarak başlayacağı bir değer midir? Her zaman bir olarak başlayacağı bir değer. Dolayısıyla AX aslında fonksiyonun içerisinde set edilecek bir değer. O zaman şöyle bir kurgu yapabiliriz. Bir kara kutu düşündüğümüz vakit.
+
+160
+00:30:14,099 --> 00:30:27,559
+bir kare kutu olarak düşündüğümüzde buna girdi olarak vereceğimiz değerler. İki tane değer var. Üreteceğimiz çıktı, bir tane de çıktığımız üretici olacak. Bu fonksiyon
+
+161
+00:30:27,559 --> 00:30:37,819
+üst al fonksiyon olacak. Girdilerimiz ise kabaca üst ve taban olacak.
+
+162
+00:30:39,827 --> 00:30:42,367
+Çıktı olarak da sonuç değeri elde edeceğiz.
+
+163
+00:30:43,268 --> 00:30:46,807
+Biz burada üst değerini hangi yazmaçta saklıyoruz?
+
+164
+00:30:47,067 --> 00:30:49,748
+Üst değerini CX yazmacında vereceğiz.
+
+165
+00:30:49,988 --> 00:30:53,807
+Taban değerini ise BX yazmacında aktörü olacağız.
+
+166
+00:30:54,867 --> 00:30:56,508
+Çıktı sonucumuz nerede çıkacak?
+
+167
+00:30:56,667 --> 00:31:00,468
+Sonuç değerimiz ise bu fonksiyon çerçevesi, nereye yazacağımızı bilmediğimiz için
+
+168
+00:31:00,468 --> 00:31:06,228
+aslında çıkış değerlerimiz de DX ve AX yazmaçlarında üretilmiş olacak.
+
+169
+00:31:07,667 --> 00:31:11,427
+Gördüğünüz gibi AX aslında aktarılan bir parametre değil.
+
+170
+00:31:12,028 --> 00:31:19,927
+Fonksiyon içerisinde initial değeri 1 olarak set edildikten sonra bu parametreler çerçevesinde değeri güncellenen bir değer aslında.
+
+171
+00:31:20,147 --> 00:31:24,248
+AX ve DX'deki değerler. O zaman AX ve DX parametre değil. Bunu anlamış oluyoruz.
+
+172
+00:31:25,048 --> 00:31:28,187
+Şimdi fonksiyonun girdisi yazmaç, çıktısı yazmaç.
+
+173
+00:31:28,187 --> 00:31:33,268
+Dolayısıyla çıktı işlemlerinden sonra, pardon şunu şöyle kapatalım tekrar.
+
+174
+00:31:34,740 --> 00:31:58,740
+Çıktı işlemlerinden sonra, fonksiyon bu değeri bize döndükten sonra elde ettiğimiz değerleri tekrar bu satırlarla ilgili sonuç bölgesinde yazmamız gerekiyor. Bir. İkincisi, bir de şuradaki parametreleri yazmaçlara aktarmamız gerekiyor. Bu ikisini yapmamız lazım. İçeride döngüde yapmış olduğumuz bu işlemi fonksiyon çağrısı olarak değiştirebiliriz. O zaman şunları yapacağız bu çerçevede.
+
+175
+00:32:00,096 --> 00:32:01,636
+kalıyor. Şunu
+
+176
+00:32:01,636 --> 00:32:03,936
+gönderdik. Buna gerek yok.
+
+177
+00:32:04,956 --> 00:32:08,756
+Bu kalıyor. Daha sonra şu fonksiyon içerisinde biz şunu yapacağız.
+
+178
+00:32:09,556 --> 00:32:09,876
+COL
+
+179
+00:32:09,876 --> 00:32:13,016
+neydi fonksiyonu da? Üst al mıydı?
+
+180
+00:32:14,896 --> 00:32:15,956
+Bakayım şuradan tekrar.
+
+181
+00:32:18,256 --> 00:32:23,116
+Üst al isimli bir fonksiyon yazacağız. Evet. Üst al isimli fonksiyonla bunu çağırdık. Daha sonra
+
+182
+00:32:23,604 --> 00:32:28,403
+Aynı elde ettiğimiz sonuçları, yani DX ve AX'deki sonuçları geri yazacağız.
+
+183
+00:32:28,524 --> 00:32:31,624
+Aynı işlemi ikinci değer grubu içinde yapacağız.
+
+184
+00:32:33,484 --> 00:32:36,824
+Fonksiyon burada karşılık buluyor.
+
+185
+00:32:38,344 --> 00:32:39,084
+Çağırdık.
+
+186
+00:32:39,324 --> 00:32:41,244
+Elde ettiğimiz sonuçları geri yazmış olduk.
+
+187
+00:32:41,284 --> 00:32:45,084
+Bu zaten daha önce prosedür mantığında gördüğümüz bir yapıydı.
+
+188
+00:32:45,523 --> 00:32:56,303
+geldiğimiz vakit bunun alt yordam olarak kullanabilmesi için, farklı bir dosyadan kullanılabilmesi için bir tanımlama yapmamız gerekiyordu. O tanımlamayı şurada yapacağız.
+
+189
+00:32:59,503 --> 00:33:00,803
+extern diyoruz.
+
+190
+00:33:01,643 --> 00:33:05,163
+üst dal isimli bir fonksiyon tipinin de far olduğunu belirtmiş oluyoruz.
+
+191
+00:33:05,923 --> 00:33:11,323
+şimdi ana yordam için bu şekildeyken alt yordam için ne yapacağız ona bakalım.
+
+192
+00:33:16,692 --> 00:33:24,951
+Ana yordam için yapacağımız işlem aslında burada az önce fonksiyonla yaptığımız işlemin aynısı. Burada XOR satırına DX'i sıfırlamamıza gerek yok. Bunu sildim.
+
+193
+00:33:25,652 --> 00:33:36,172
+Aynı işlemleri yapıyoruz. AX'i 1 olarak initialize ediyoruz. Üst sayısı kadar. Zaten CX'e bu. Dolayısıyla loop dediğim zaman loop'un kaç kere döneceği de belli. Üstten dolayı geliyor.
+
+194
+00:33:36,640 --> 00:33:50,740
+Bu kadar defa çarpma işlemi yapıyor. İşlem sonucu AX ve DX'de birikecek. DX yüksek anlamlı word'u, AX düşük anlamlı word olmak üzere bu kadar tanımlayabileceğim bir işlem. Bunun için işte segment tanımımız var. Dikkat edin.
+
+195
+00:33:52,051 --> 00:34:03,831
+Burada çok önemli bir nokta, geçen hafta söyledim mi hatırlamıyorum ama, buradaki AND kelimesinden sonra herhangi bir etiket yok dikkat edecek olursanız ama ana yordam da var.
+
+196
+00:34:04,351 --> 00:34:12,112
+Dolayısıyla bu program için, EXE programı için herhangi bir entry point oluşturmadığını belirtmek adına AND'den sonra herhangi bir kelime yok.
+
+197
+00:34:12,672 --> 00:34:16,371
+Buraya dikkat edelim. Geri kalan işlem zaten tahmin edeceğiniz üzere.
+
+198
+00:34:16,931 --> 00:34:18,692
+Kod segment tanımı var.
+
+199
+00:34:19,155 --> 00:34:26,735
+segment tanımının sonu var. Tek bir segment olduğu için Assembler'a sadece CS'nin burası, bu etiket olduğunu belirtiyoruz.
+
+200
+00:34:27,695 --> 00:34:35,036
+Fonksiyon tanımımız far tipinde dışarıya kullandırdığımız için public kelimesi var. Dolayısıyla bu şekilde bunu kullanabilir hale gelmiş oluyoruz.
+
+201
+00:34:35,096 --> 00:34:40,855
+Şimdi tekrar bu derleme işlemlerimizi yapalım ve birlikte linkleyerek bunlara bakalım.
+
+202
+00:34:41,695 --> 00:34:45,456
+Şimdi tekrar şunun adı değişecekti, bu şekilde olacak.
+
+203
+00:34:48,148 --> 00:34:50,007
+derledikten sonra bir de
+
+204
+00:34:50,007 --> 00:34:52,288
+üst al
+
+205
+00:34:52,288 --> 00:34:54,347
+asm isimli fonksiyonumuz vardı.
+
+206
+00:35:02,547 --> 00:35:05,567
+Bunu da derledik. Daha sonra ikisini birlikte linkleyeceğiz.
+
+207
+00:35:07,887 --> 00:35:11,367
+Artı üst al nokta obje.
+
+208
+00:35:12,148 --> 00:35:13,148
+Göründü tamam.
+
+209
+00:35:15,127 --> 00:35:19,587
+Bu ikisini de birleştikten sonra egzemiz oluştu. Şimdi egzeyi de bakla bakalım, kontrol edelim.
+
+210
+00:35:26,835 --> 00:35:29,655
+hangisiyle başladık? XOR, AX, AX neymiş?
+
+211
+00:35:37,492 --> 00:35:39,851
+Bu hangi kod? Ha bizim kodumuz zaten herhalde.
+
+212
+00:35:41,492 --> 00:35:43,712
+Tamam. DS'yi kullandık.
+
+213
+00:35:44,372 --> 00:35:48,012
+Şimdi aktaracağımız parametreleri oluşturduk CX ve BX'de.
+
+214
+00:35:48,132 --> 00:35:51,632
+Daha sonra farklı bir dosyadaki, far tipindeki fonksiyonu çağırdık.
+
+215
+00:35:52,212 --> 00:35:55,271
+AX'i birliyor. Yani şuradaki işlemleri yapıyoruz şu anda.
+
+216
+00:35:56,311 --> 00:35:57,132
+AX'i birledi.
+
+217
+00:35:57,992 --> 00:36:01,492
+Göndermiş olduğumuz CX parametresi kadar döngüde kalıyoruz.
+
+218
+00:36:02,387 --> 00:36:18,827
+Daha sonra return ediyoruz. Ana programı döndük. Tekrar load efektif adres satırındayız. Şuradaki satırdayız. Buradaki işlemlerimizi yürütüyoruz. Tekrar yerine yazdık. Daha sonra aynı prosedürü.
+
+219
+00:36:19,347 --> 00:36:42,668
+Farklı parametrelerle tekrar çağırıyoruz. Bakın bu sefer parametre olarak fonksiyonun içerisine girdiğimizde, yani şu satıra geldiğimizde, cx'de 2 var, bx'de 3 var. Az önce bx'de 2, cx'de 3 değerleri vardı. Yani farklı parametrelerle aynı fonksiyonu çağırmış oluyoruz. İki kere çarpım döngüsünde döndükten sonra geri dönüp bu değerleri yerine yazmış oluyoruz ve programdan çıkmış oluyoruz.
+
+220
+00:36:44,371 --> 00:36:53,291
+Bu fonksiyonun prosedürü olarak nasıl tanınlandığını böyle görmüş olduk. Şimdi aynı işlemi bir makro ile gerçekleştirmeye çalışsak bunu nasıl yapacağız?
+
+221
+00:36:53,871 --> 00:37:00,171
+Şimdi öncelikli olarak buradaki işlem bütününü makroda yapmak istersek şunlara dikkat etmemiz lazım.
+
+222
+00:37:00,671 --> 00:37:06,971
+Makronun bir takım parametreleri olacak değil mi? Bu parametrelere dikkat etmemiz lazım. Bu parametreleri vereceğiz.
+
+223
+00:37:08,152 --> 00:37:10,171
+Şimdi makro olan satıra gelelim.
+
+224
+00:37:10,804 --> 00:37:38,064
+Bakın şimdi makro tanımında, bu makro örneği şöyle indirelim. Makro örneğinde arkadaşlar, etiketim var, üst al makrosunu belirtmek üzere, üst al M. Makro kelimesi var, bu bir makro tanımının olduğunu gösteriyor. İki tane parametremiz var. Normalde parametre satırı opsiyoneldir. Burada da makro tanımında da yapacağımız işlem, hangi yazmaçları kullanacağımız bunların hepsi baştan belli.
+
+225
+00:37:38,835 --> 00:37:44,255
+Bunlar baştan belli olmakla birlikte karşı taraf bunu çağırırken de benzer şekilde çağırıyor olacak.
+
+226
+00:37:45,076 --> 00:37:53,355
+Şimdi burada yalnız bu etiketler, burada vermiş olduğumuz label'lar daha etkin bir şekilde parametreyi aktarmamızı sağlayacak.
+
+227
+00:37:53,355 --> 00:38:03,215
+Çünkü buraya label verirken veya üst al makrosunu çağırırken üst bir ve taban bir hafıza bölgesi adresleriyle birlikte bu makroyu çağıracağız.
+
+228
+00:38:03,635 --> 00:38:09,315
+Az önceki örnekte ne yapmıştık? CX ve BX yazmaçları üzerinden parametre aktarmıştık.
+
+229
+00:38:09,395 --> 00:38:14,576
+Ana yordam üzerinde CX ve BX'e önce parametrelerimizi yükleyip ondan sonra fonksiyon çağırıyoruz.
+
+230
+00:38:15,255 --> 00:38:23,115
+Burada ise doğrudan doğruya hafıza bölgesi adreslerini yani etiketleri buraya vererek makroyu çağırmış olacağız.
+
+231
+00:38:23,795 --> 00:38:30,836
+Makro tanımı bu şekilde. Makro kelimesi opsiyonel olarak parametre listesi vardı. Biz burada parametre listesi ürettik.
+
+232
+00:38:31,199 --> 00:38:39,460
+Daha sonra Macron'un kendisi ve en son olarak da Macron'un bitişini belirten AND M kelimesi burada mevcut.
+
+233
+00:38:39,860 --> 00:39:07,360
+Şimdi burada şu lokal satırını ne işe yaradığını hatırlıyoruz. Makroyu birden fazla çağırdığım vakit bu L1 etiketi tekrarlı olarak kodumuza yapıştırılmış olacaktı. Bunu unique hale getirebilmek için burada lokal L1 kelimesiyle birlikte bunu kullandığımız vakit bu makro her çağrıldığında L1 etiketini gördüğü yere unique bir değer atacak. Şimdi burada da yine DX'i sıfırlamamıza gerek yok onu kaldırdım.
+
+234
+00:39:07,795 --> 00:39:10,715
+Daha sonra yaptığımız işlemler AX'i 1'ledik.
+
+235
+00:39:11,755 --> 00:39:15,175
+Bu bir şey üzeri 0'ın 1 olmasından kaynaklı durum.
+
+236
+00:39:16,095 --> 00:39:20,695
+Daha sonra ilk parametremiz üst parametresiymiş.
+
+237
+00:39:20,875 --> 00:39:23,835
+Üst parametresini CX yazmacına atadık.
+
+238
+00:39:24,855 --> 00:39:28,955
+Daha sonra taban değerini, makronun taban parametresini BX'e atadık.
+
+239
+00:39:28,955 --> 00:39:30,576
+Burada döngü içerisinde döndük.
+
+240
+00:39:30,996 --> 00:39:42,556
+çarparak. Çıktığımızda, DX ve AX'de çarpım sonucu mevcut olacak. Bunu biliyoruz. Buna göre işlem yapacağız. O zaman burada yine şu kol fonksiyonunu kapattım.
+
+241
+00:39:44,496 --> 00:39:53,996
+Üst alı da kapattım. Tekrar C'den parametre aktarımı ve B'den parametre aktarımı kapattım. Kolu kapattım. Burada nasıl işlem yürüteceğiz?
+
+242
+00:39:54,775 --> 00:39:55,996
+Fonksiyonumuzun adı neydi?
+
+243
+00:39:56,480 --> 00:40:12,159
+üst, al, m fonksiyonu. Bunu çağırdıkken, önceki parametremiz, üst, üst, bir, virgül, taban, bir diyerek bu makroyu çağıracağız. Daha sonra, tekrar çağırmak istediğimizde, üst, al, makro.
+
+244
+00:40:12,851 --> 00:40:24,291
+üst 2, taban 2 diye bu makroyu da çağırmamız mümkün olacak. Şimdi bu makronun buradaki makroyu dosyamıza ekleyebilmek için ne yapmamız gerekiyor?
+
+245
+00:40:24,991 --> 00:40:32,211
+include işlemi yapmamız lazım. include deyip dosyamızın adı ne? üst al alttan treme.
+
+246
+00:40:32,211 --> 00:40:40,351
+üst al alttan treme nokta m'yi include etmek istediğimizde belirtmiş oluyoruz.
+
+247
+00:40:40,820 --> 00:40:44,320
+Şuradan tekrar bir kopyasını bir çekeyim, yanlışlık olmasın.
+
+248
+00:40:46,599 --> 00:40:49,260
+Evet, tamam, aynı şeyi. .meyi veriyoruz.
+
+249
+00:40:50,940 --> 00:40:53,300
+Şimdi bakın ne yaptık, tekrar görelim.
+
+250
+00:40:54,460 --> 00:41:02,460
+Makro tanımında, demek ki vereceğim etiketler veya parametreler, hafıza adresleri, label'lar olabiliyormuş.
+
+251
+00:41:02,599 --> 00:41:05,700
+O zaman ben burada doğrudan label'ın kendisini verdiğim vakit,
+
+252
+00:41:06,164 --> 00:41:16,264
+yazmaç üzerinden parametre aktarmama gerek yok. Yazmaç üzerinden bu değerleri kullanmak istediğimde makronun içinde bunu yapabiliyorum. Dolayısıyla böyle bir imkanımız var.
+
+253
+00:41:17,124 --> 00:41:23,244
+Dolayısıyla makro çağırma işleminde parametre ayarlama kısmı oldukça basitleşmiş oldu gördüğünüz gibi.
+
+254
+00:41:23,244 --> 00:41:31,764
+Makroyu çağırdım, çağırırken hangi parametre kullanacağımı verdim. Parametreyi registerda hazırlama ihtiyacı giderilmiş oldu. Dönüş sonrasında ise
+
+255
+00:41:32,436 --> 00:41:57,096
+belki onu da yapabiliriz. Öyle yapalım hatta. Bir de üçüncü bir parametre yapalım. Önce bunu deneyelim. Daha sonra sonuç değerini de parametre vererek görelim. Şimdi buradan kod değerlerimizi tekrar değerleyelim. Birinci dosyamız anayordan buydu. Değerledik. Şimdi bir de buradaki LST dosyasına da bakalım.
+
+256
+00:41:58,867 --> 00:42:22,127
+üst, al, ana diyelim buna. Daha sonra, burada bakın, farklı bir obje dosyası oluşturmamıza gerek yok. Yani şuradaki makro dosyasından dolayı ayrı bir obje dosyası oluşmayacak. Dolayısıyla doğrudan bunu ben linkleyebilirim. Linkledim, bir exe dosyası oluşturdum. Şu aşamada gidip lst dosyasına bakmak istiyorum.
+
+257
+00:42:27,188 --> 00:42:30,268
+ana dosyasının LST'sine bir bakalım.
+
+258
+00:42:31,688 --> 00:42:40,327
+Şimdi bakın arkadaşlar, burada az önce bahsetmiş olduğumuz işlemlerin gerçekleştiğini göreceğiz.
+
+259
+00:42:41,548 --> 00:42:48,048
+include ile eklemiş olduğumuz makrodan dolayı bu satırlar bizim dosyamıza yapıştırıldı.
+
+260
+00:42:48,048 --> 00:42:53,327
+Gördüğünüz gibi. Fakat bunlara karşılık herhangi bir makine kodu karşılığı üretilmedi.
+
+261
+00:42:53,708 --> 00:42:54,327
+Burada bunu
+
+262
+00:42:54,612 --> 00:43:02,731
+görüyorsunuz. Include'dan dolayı gelen satırlar bunlar. Fakat diğer taraftan kod içerisinde
+
+263
+00:43:06,867 --> 00:43:11,427
+Neredeydi şeyimiz? Şuraya kadar devam eden durum. Şurası bakın.
+
+264
+00:43:11,807 --> 00:43:33,467
+makro tanımı, şuydu ya makro tanımımız, üst al makro tanımı vardı. Çağrılması da herhangi bir makine kodu karşılığı yok. Halbuki hatırlayın, fonksiyon çağırırken call satırına karşılık bir makine kodu karşılığı üretiyordu. Demek ki call bir 8086 instruction'ıydı. Ama üst al diye bir makine kodu yok veyahut da bir instruction yok.
+
+265
+00:43:39,807 --> 00:43:49,807
+makro çağırırken bunun bir makine kodu karşılığı yok. Ne yapıyor? Bu satır yerine makro tanımını olduğu gibi koyuyor. Şurada bunu yerleştirdi.
+
+266
+00:43:50,387 --> 00:43:59,708
+Bakın burada yapmış olduğu işlem lokal L1'den dolayı yaptığı işlemi görebildiniz mi? Bakın soru işareti soru işareti 0000 diye bir label oluşturmuş.
+
+267
+00:44:00,487 --> 00:44:04,748
+Aynı label'ı Loop için kullandığını burada görüyoruz. Bakın bu işlemleri yapmış.
+
+268
+00:44:05,396 --> 00:44:19,056
+Yine bu makro ikinci defa çağrıldığı için burada da kullandığı L1 etiketine karşılık bu sefer soru işareti soru işareti 0, 0, 0, 1 isimli bir etiket oluşturmuş.
+
+269
+00:44:19,056 --> 00:44:32,896
+Niye soru işaretiyle başlamış? Çünkü burada etiketlerin bir alfabetik bir karakterle başlaması gerekiyor. Ondan dolayı soru işareti koyarak bunu başlatmış. Dolayısıyla bunu tekrarlamış burada.
+
+270
+00:44:33,300 --> 00:44:35,300
+Biz bu kodu çalıştırdığımızda
+
+271
+00:44:41,940 --> 00:45:08,719
+Makine kodu karşılığını çalıştırdığımızda bakın neyle karşılaşıyoruz? Tıpkı sanki biz bu kodu ana yordam içerisinde yazmışız gibi hiçbir dallanma yok, bir şey yok. Ana yordam içerisinde yazdığımız ilk örnekteki gibi yürüttüğünü görüyoruz. Üç defa bu döngüyü sağladı. Daha sonra sonucu yazmış oldu. Diğer ikinci çağrılma zamanında iki kere döngüden döndü ve sonucu geri yazdı.
+
+272
+00:45:09,108 --> 00:45:31,088
+Dolayısıyla bu makro kullanımda sanki ana yordam içerisinde ben bu komutları eklemiş olduğum ilk örneğimiz vardı ya ana yordam içerisinde yazdım. Oradaki gibi bu işlemleri yürüttüğünü görmüş oluyoruz. Şimdi son bir ekleme daha yapalım buraya. Madem makro, bu makroya bir üçüncü parametre daha aktaralım. O da sonuç olsun.
+
+273
+00:45:31,668 --> 00:45:38,968
+Dolayısıyla burada da aslında kod içerisinde çıktıktan sonra yapmış olduğumuz işlemleri burada sonlandırmış olalım.
+
+274
+00:45:43,284 --> 00:45:57,284
+Burada M sonuç isimli bir parametre daha alacaktık. Bunun efektif adresini aldım. AX'deki değeri SI'ye, DX'deki değeri SI artı ikiye yazdım. Dolayısıyla şunlara da gerek kalmamış oldu burada makro çağırdığım vakit.
+
+275
+00:45:59,524 --> 00:46:03,284
+Eğer ki ben makroyu, makro yazdığım makroyu şöyle tanımlamış olursam.
+
+276
+00:46:05,300 --> 00:46:22,779
+Vermiş olduğum ilk parametre üst değeri kadar taban değerinin kuvvetini hesaplayıp elde ettiği sonucu da sonuç üçüncü parametre olarak vermiş olduğumuz double word'a yazar şeklinde tanımlarsak ve bu şekilde kullanırsak bakın kod parçamız ana yordamımız ne kadar basit etmiş oluyor.
+
+277
+00:46:22,779 --> 00:46:27,360
+Şimdi aynı kod derlemesini burada da tekrarlamaya çalışalım.
+
+278
+00:46:28,400 --> 00:46:29,940
+Şimdi LST dosyamızı da.
+
+279
+00:46:39,315 --> 00:46:40,755
+Bir soru vardı galiba.
+
+280
+00:46:46,260 --> 00:46:48,220
+Evet, doğru. Sonucu eklemedik.
+
+281
+00:46:50,099 --> 00:46:54,640
+Şuraya ikinci, üçüncü parametre olarak sonuç iki.
+
+282
+00:47:00,371 --> 00:47:02,851
+sonuç biz değerlendir. Parametre olarak verelim.
+
+283
+00:47:19,380 --> 00:47:24,759
+bu debug için beklesin. Tekrar buradaki LST dosyamıza bakalım.
+
+284
+00:47:33,204 --> 00:47:58,764
+Gördüğünüz gibi bu yapmış olduğumuz tanımlamayı birebir olarak kullanıyoruz. Şunun araya girmesinin sebebi şu. Bir sonraki dosyaya geçti. Ondan dolayı bunu yapıyor ama çok önemli değil. Onu görmezden gelebiliriz. İkinci tanımlı olduğu yerde de benzer şekilde üst dalın ikinci parametrelerle çağrıldığı yerde de aynı işlemleri yaptığını görüyoruz. Dolayısıyla burada ana yordamımız aslında neye araya düştü?
+
+285
+00:47:59,284 --> 00:48:01,824
+Fonksiyon başlıyor, parametreler tanımlı.
+
+286
+00:48:02,584 --> 00:48:06,504
+Biri makroyu bir kere çağırıyor, makroyu iki kere çağırıyor ve işlemi sonlandırıyor.
+
+287
+00:48:06,604 --> 00:48:09,504
+Şimdi bunun çalıştığını da buradan görmeye çalışalım.
+
+288
+00:48:11,004 --> 00:48:13,564
+Data segmenti kullanabilir hale geldik.
+
+289
+00:48:13,884 --> 00:48:16,324
+Birinci makroyla ilgili işlemleri yaptık.
+
+290
+00:48:16,444 --> 00:48:18,064
+Üç kere loopta döndük.
+
+291
+00:48:18,704 --> 00:48:21,764
+Sonucu aldık ve yerine yazdık.
+
+292
+00:48:21,764 --> 00:48:25,824
+İkinci parametre grubu için iki kere loopta döndükten sonra
+
+293
+00:48:26,208 --> 00:48:46,748
+sonucu alıp tekrar geri yazdık. Şimdi bu aşamada bir kontrol edelim herhangi bir kaçak var mı diye. 8 değerini yazmış, 9 değerini yazmış. Dolayısıyla aynı mantık çerçevesinde çalıştığını da görmüş olduk. Bu yapı arkadaşlar söylediğimiz gibi makro kullanımına ilişkin örneği ifade eden bir durum.
+
+294
+00:48:47,315 --> 00:48:54,576
+Dolayısıyla modüler olarak kod geliştirme yapmak istediğimiz zaman, şurada da Anayorda'mı açalım.
+
+295
+00:48:58,547 --> 00:49:22,527
+Modüler bir şekilde kod geliştirme yapmak istediğimiz zaman burada önümüze iki alternatif çıkıyor. Bunlardan bir tanesi prosedür, bir tanesi makro. Makroya parametre aktarımı söz konusu tıpkı prosedürde olduğu gibi ama makroya aktardığımız parametreler bir etiket şeklinde gerçekleşmiş oluyor. Etiket değerleri verebiliyoruz yani data segmente tanımlı değerler.
+
+296
+00:49:23,027 --> 00:49:38,668
+bunlar olabiliyor. Bununla birlikte prosedüre farklı parametre aktarım yöntemleri var. Biz şu ana kadar bunlardan sadece yazmaç üzerinden parametre aktarımı üzerinde durduk. Biraz sonra bunların daha farklı yöntemlerine de bakıyor olacağız.
+
+297
+00:49:39,380 --> 00:49:47,280
+Dolayısıyla modüler program geliştirimi aslında kod sürekliliğini sağlama ve bakım çalışmalarını kolaylaştıran bir yapı.
+
+298
+00:49:48,019 --> 00:50:00,000
+Neden kolaylaştırıyor? Siz de tahmin edeceğiniz üzere sadece belirli bir işe odaklanmış bir fonksiyon, girdisi çıktısı belli, çok tanımlı bir yapı varsa burada bir hata olduğu zaman uç durumda...
+
+299
+00:50:00,000 --> 00:50:06,099
+Bunlarla ilgili bir özel durum olduğu vakit bunları düzeltmek, yeniden düzenlemek daha pratik olacaktır.
+
+300
+00:50:06,599 --> 00:50:11,260
+Çağırırken de bunları hangi mantık çerçevesinde çağıracağız?
+
+301
+00:50:12,119 --> 00:50:18,000
+Eğer ki işlemimiz çok basit, çok kısa süreli bir işlemse, bu durumda...
+
+302
+00:50:19,092 --> 00:50:45,032
+bir prosedürü, alt prosedürü, çağırma ve buradan geriye dönüşlerle ilgili overheadlerden kurtulmak adına bu tür işlemleri makro ile yapmak daha faydalı olabilir. Yani kısa, hızlı işlemleri makro ile yapmak daha pratik olabilir. Ama bunun yanında daha uzun, daha karmaşık ve ayrı bir mantık çerçevesinde işlenmesi gereken kolt parçaları varsa,
+
+303
+00:50:45,619 --> 00:50:47,759
+Bu durumda, yani şunu demek istiyoruz.
+
+304
+00:50:49,279 --> 00:51:05,920
+Call ve return işlemleri yapmış olduğu ana gövde içerisindeki, fonksiyonun ana gövdesi içerisindeki işlemlere göre, görece çok daha kısa vakit kaplıyorsa, daha az yer kaplıyorsa, bu durumda bu işlemi prosedür olarak yapmak daha anlamlı olabilir.
+
+305
+00:51:06,452 --> 00:51:13,272
+Dediğim gibi ikisi arasındaki temel fark da alt prosedür olarak yazdığımız vakit bir yapıda.
+
+306
+00:51:14,852 --> 00:51:27,312
+Kod akışı kırılarak prosedürün tanımlı olduğu noktadan itibaren kod akışı devam edecek şekilde bir aslında alt iç yapısında yığına bir değerler atıp koşusuz dallanma söz konusu.
+
+307
+00:51:27,775 --> 00:51:46,775
+Makrolarda ise az önce de gördüğümüz gibi makro kodu her çağrıldığı bölge içerisinde kopyalanıp yapıştırılıyor. Dolayısıyla her çağrıldığı durumda kod boyutunu da büyütmüş oluyor. Buna da dikkat etmemiz lazım. Bu iki kavram içerisinde hangisini kullanacağımıza karar verir durumda olabiliyoruz.
+
+308
+00:51:46,775 --> 00:51:52,516
+Şimdi bu noktada arkadaşlar bir ara vereceğim. Bu noktaya kadar sormak istediğiniz bir şey var mı?
+
+309
+00:52:06,387 --> 00:52:09,268
+sormak istediğimiz bir şey yoksa arkadaşlar. O zaman şöyle yapalım.
+
+310
+00:52:11,907 --> 00:52:14,867
+10-15'te devam edecek şekilde ayarlayalım. Olur mu?
+
+311
+00:52:15,628 --> 00:52:16,847
+10-15'te devam edeceğiz.
+
+312
+01:11:36,916 --> 01:11:38,916
+Arkadaşlar, tekrar merhaba.
+
+313
+01:11:38,916 --> 01:11:43,916
+Şimdi chat ekranı üzerinden bir tane dosya paylaştım. Onu bir inceleyelim.
+
+314
+01:11:43,916 --> 01:11:54,916
+Somut olarak tekrar bu makrolar ile yordamlar arasındaki farkı tekrar bir şey, tekrar üzerinden geçmiş olalım.
+
+315
+01:11:58,868 --> 01:12:02,628
+Dediğim gibi chat ekran üzerinden paylaştım. Oradan indirebilirsiniz.
+
+316
+01:12:04,488 --> 01:12:11,948
+Şimdi yordam ve makro arasındaki karşılaştırma yaparken bunların çalışma şekli üzerinden bir karşılaştırma yapacak olursak
+
+317
+01:12:11,948 --> 01:12:19,028
+burada yordam ne zaman işlenir?
+
+318
+01:12:21,168 --> 01:12:23,288
+Ne zaman devreye girer?
+
+319
+01:12:23,488 --> 01:12:26,488
+Call fonksiyonuyla ilgili yordamı çağırdığımızdan.
+
+320
+01:12:27,507 --> 01:12:30,427
+Bu süre zarfında devreye girer.
+
+321
+01:12:31,967 --> 01:12:37,227
+Ve dolayısıyla bu derleme sırasında aktif olmadı.
+
+322
+01:12:37,827 --> 01:12:42,327
+Çalıştırma sırasında yani runtime sırasında aktif oldu diye bunu söyleyebiliriz.
+
+323
+01:12:43,167 --> 01:12:47,288
+Makro koduyla ilgili olarak bu ne zaman devreye girer, ne zaman çalışır?
+
+324
+01:12:47,907 --> 01:12:52,727
+Bu ise derleme sırasında devreye girmiştir diye söyleyebiliriz.
+
+325
+01:12:53,587 --> 01:13:04,108
+kopyalanıp ana program içerisine konulduğu için ve orada derlendiği için bu derleme aşamasında devreye alınmış bir kod parçası olarak düşünülebilir.
+
+326
+01:13:05,167 --> 01:13:15,688
+Çalışma süreleri açısından karşılaştırdığımızda her ikisinde de ana temel lojik fonksiyonlar olarak aynı şeyler olduğunu varsayacak dahi.
+
+327
+01:13:16,148 --> 01:13:23,888
+yordamda bir call işlemi, bir de return işleminden dolayı ekstra işler var. Bunları söylememiz gerekiyor.
+
+328
+01:13:26,968 --> 01:13:34,168
+Özellikle mesela çağırdığımız fonksiyon near tipinde ise sadece instruction pointer'ın yığına atılması söz konusu.
+
+329
+01:13:34,408 --> 01:13:38,388
+Daha sonra alt yordamdan dönerken return ile bunun çekilmesi söz konusu.
+
+330
+01:13:39,604 --> 01:13:54,503
+Dolayısıyla böyle bir overhead'i var. Far tipinde ise tanımlamamız. Bu durumda ise hem segment hem de Instruction Pointer'ın yığına atılması. Red F ile dönerken de bu ikisinin çekilmesi söz konusu olacak.
+
+331
+01:13:56,943 --> 01:14:04,543
+Makrolarda ise herhangi bir çağırma ve dönüş overhead'i yok. Yani bunlarla ilgili ekstra olarak yapmamız gereken bir takım işlemler yok.
+
+332
+01:14:05,011 --> 01:14:12,851
+Kod büyüklüğü açısından değerlendirdiğimizde her yordam çağrılması kodu büyütmüyor.
+
+333
+01:14:13,811 --> 01:14:22,731
+Her yordam çağrıldığında sadece ve sadece Instruction Point veya o anda çalıştırılacak kod için ilgili yordama dallanıyoruz ve oradaki kodu yürütüyoruz.
+
+334
+01:14:23,152 --> 01:14:32,072
+Makrolar için bu şekilde değil de her makro çağrıldığında ilgili kod parçası ana kod içerisinde kopyalandığı için kod büyüklüğü makro kadar artıyordu.
+
+335
+01:14:32,756 --> 01:14:54,036
+Parametre aktarımı için makrolarda az önce gördüğünüz gibi etiketler verebiliyorduk. Bu etiketlerin birbiriyle virgülle ayrılmış bir liste olması da söz konusuydu. Fakat yordamlara yazmaç üzerinden, yığın üzerinden veya ortak veri kesimi üzerinden parametre aktarımı söz konusu olabiliyordu.
+
+336
+01:14:54,868 --> 01:15:05,308
+Şimdi bu noktada bu tanımlamayı da verdikten sonra makrolarla ilgili olarak bir tane hiç DOS kesmesi kullanan bir örnek yapmamıştık.
+
+337
+01:15:05,308 --> 01:15:14,368
+COM tipi programları anlatırken de yapmamıştık. Bundan dolayı buna ilişkin bir örnek bakıyorum şimdi hemen bulabilirsem.
+
+338
+01:16:27,060 --> 01:16:37,280
+Şimdi arkadaşlar, COM tipi programların böyle temelde kullanıldığı yerlerden birisi de işletim sistemine dair kesmelerin kullanıldığı bir yapı.
+
+339
+01:16:38,140 --> 01:16:41,840
+Bu tür kesmeleri aslında biz liste olarak şöyle görebiliriz.
+
+340
+01:16:43,220 --> 01:16:44,739
+Listeyi göstereyim şimdi bir de.
+
+341
+01:17:19,699 --> 01:17:22,699
+çeşitli kesmeler var. Bunlardan bir kısmı
+
+342
+01:17:25,500 --> 01:17:27,500
+BIOSA ilişkin kesmeler.
+
+343
+01:17:27,699 --> 01:17:28,699
+Mesela
+
+344
+01:17:29,399 --> 01:17:30,699
+ilgili bir
+
+345
+01:17:30,699 --> 01:17:34,699
+kesme numarasıyla bunu çağırdığımızda, yani bunu aslında şöyle düşünün.
+
+346
+01:17:35,252 --> 01:17:50,471
+Daha kesme konusunu görmedik ama kesmeleri biz bir fonksiyon çağırır gibi çağırabiliriz. Bunun için de int özel kelimesi var. Int kelimesinden sonra herhangi bir interap numarası verdiğimiz zaman bu ilgili kesmeyi çalıştırmak anlamına geliyor.
+
+347
+01:17:50,931 --> 01:18:04,451
+Bu noktada şunu söyleyebiliriz. Kullanıcıya özel olarak ayrılmış bir takım kesme numaraları olmakla birlikte bu kesmelerin belirli bir kısmı BIOS için ayrılmıştır. Bir kısmı da işletim sistemi tarafından kullanılmaktadır, ayrılmıştır.
+
+348
+01:18:05,152 --> 01:18:17,231
+Burada görmüş olduğunuz kesme numarası ve fonksiyon şu anlama geliyor. Biz mesela int 0,0'ı çağıracağız veya int 0,1'i çağıracağız ama bunu çağırırken bir parametre aktarımı da yapabiliriz.
+
+349
+01:18:18,931 --> 01:18:25,332
+x86 çağırırken parametre olarak 0-0 gönderdiğimizde video moduyla ilgili bir ayarlama yapıyor.
+
+350
+01:18:26,011 --> 01:18:31,691
+Veyahut da ekrana bir şeyler yazdırmak istediğimizde yine buradaki parametreleri kullanabiliriz.
+
+351
+01:18:31,752 --> 01:18:33,271
+Mesela 21H için bakalım.
+
+352
+01:18:35,444 --> 01:18:40,884
+Tabi bu DOS kesmesini, yani demek istediğim şu, bir kısmı BIOS kesmesi için, bir kısmı DOS kesmesi için.
+
+353
+01:18:41,444 --> 01:18:54,024
+Örneğin DOS kesmelerinden 21H kesmesi için, örneğin 09H numaralı fonksiyonla bunu çağırmak komut satırına bir şeyler yazdırıyor.
+
+354
+01:18:56,944 --> 01:19:10,043
+mesela 0AH ile 21H fonksiyonu çağırırsak, bu da ekrandan bir takım okuma input işlemleri yapmamıza sağlıyor.
+
+355
+01:19:10,043 --> 01:19:12,084
+Veya bununla birlikte şu da olabilir.
+
+356
+01:19:13,807 --> 01:19:18,927
+komut satırından bir şeyler yazdık, bunları okumak için bu kesmeleri kullanmamız mümkün.
+
+357
+01:19:19,368 --> 01:19:26,247
+Şimdi bu açıklama sonrasında, yani biz tıpkı COL gibi INT fonksiyonunu da kullanabiliriz kesmeleri tetiklemek için.
+
+358
+01:19:26,387 --> 01:19:35,948
+Kesmelerde aslında birer fonksiyon olmakla birlikte kesme bir fonksiyon çağrılmasından farklı olarak yığına bir de bayrak değerlerini atıyor.
+
+359
+01:19:35,948 --> 01:19:41,247
+Dolayısıyla geri dönerken de farklı bir return komutuyla dönmemiz lazım. O da interrup return.
+
+360
+01:19:41,807 --> 01:19:53,247
+komutu. Şimdi bu aşamada şu örneği göstereceğim. Bir COM tipi program için bu örneği söylüyorum. Daha sonrasında da bunu bir makro haline getirmeye çalışırız.
+
+361
+01:19:54,188 --> 01:19:59,467
+COM tipi şu anda bunu görebiliyor musunuz? Tam emin değilim. Şöyle tam ekran paylaşımı yapayım tekrardan.
+
+362
+01:20:01,171 --> 01:20:16,011
+Bir kom tipi program örneğini görüyoruz. Burada 21H kesmesini 0.9 parametresiyle çağırdığımız zaman, bu parametreyi de AH ile bekliyor. Bunu açtığımız zaman ilgili fonksiyon tanımını da görebiliyoruz.
+
+363
+01:20:16,467 --> 01:20:40,528
+Bu şu işlemi yapıyor. DX'de de bir adres değeri vermiş isek, bir dizinin, text aski karakter dizisinin başlangıç adresini vermiş isek, DX'deki başlangıç adresinden itibaren sonlandırma karakterini görene kadar ekrana vermiş olduğumuz adresten itibaren karakterleri ekrana yazdır anlamında bir fonksiyon bu.
+
+364
+01:20:40,916 --> 01:20:44,816
+Şimdi bu fonksiyonu kullanmaya ilişkin örneğimizi görelim.
+
+365
+01:21:05,332 --> 01:21:07,952
+Daha sonra bunu bir makro haline getirmeye bakacağız.
+
+366
+01:21:21,043 --> 01:21:24,363
+bunu derledik. Daha sonra linkliyoruz.
+
+367
+01:21:33,427 --> 01:21:39,427
+bir hata veriyor COM tipi program olduğu için. Bunun önüne geçmek için de şunu yapıyorduk hatırlayacak olursanız.
+
+368
+01:22:40,692 --> 01:22:42,131
+sizle ilgili olan
+
+369
+01:22:46,804 --> 01:22:51,244
+bir 01 ile deneyelim, bir de 02 ile deneyelim, nasıl değiştiğini görelim.
+
+370
+01:23:01,332 --> 01:23:07,552
+parametre olarak hemen şöyle bir şeye bakayım. Parametre olarak nasıl okuyorduk noktasına.
+
+371
+01:23:38,163 --> 01:23:49,144
+AH'da bir değeriyle çağırdığımız zaman bunu AX atan bir kod varmış. Şimdi ona ilişkin örneğimizi de şöyle geliştirelim ve bunun ismini şöyle yapalım.
+
+372
+01:23:49,144 --> 01:23:51,783
+Bunu aldım.
+
+373
+01:24:11,188 --> 01:24:17,368
+Şimdi basit bir kodumuz var yine. Bu şöyle siz görmüyorsunuz. Şuradan açalım tekrar.
+
+374
+01:24:20,948 --> 01:24:34,048
+Yazma işlemi içinde, A, H'ta 0, 1 parametresiyle, biz fonksiyonu çağırdığımız zaman, dönüş işlem sonucu AL'de saklanıyor.
+
+375
+01:24:34,148 --> 01:24:36,268
+Okuduğumuz değer AL'de saklanıyormuş.
+
+376
+01:24:36,968 --> 01:24:41,868
+Dolayısıyla biz bu değeri de alıp, AL'deki değer olarak göreceğiz şimdi.
+
+377
+01:24:42,108 --> 01:24:47,288
+Şimdilik bunu bu şekilde saklayıp, tekrar bunu bir derlemeye çalışalım.
+
+378
+01:25:15,828 --> 01:25:17,328
+daha sonra linkleyelim.
+
+379
+01:25:22,836 --> 01:25:24,076
+Daha sonra da bunu
+
+380
+01:25:24,076 --> 01:25:26,896
+COMTP programına çevirelim.
+
+381
+01:25:31,636 --> 01:25:35,896
+Şimdi bu noktada bunu debugla bakarak inceleyelim.
+
+382
+01:25:48,948 --> 01:26:09,328
+Şimdi neredeyiz? Buradayız. İlk başta 0,1 değerini atadı. 21H'ı çağırdı. Şu anda bizden bir karakter bekliyor. O karaktere girdikten sonra da bunu AL'ye atamış olacak. Tekrar şuradan bir kontrolümüzü de yapalım. Bu bir prosedür olarak kullandık.
+
+383
+01:26:13,235 --> 01:26:14,675
+cool'unu çağırırken
+
+384
+01:26:14,675 --> 01:26:21,815
+return ettiği değer olarak bunu kullanalım diyor. Tamam. Peki şöyle yapalım o zaman.
+
+385
+01:26:28,756 --> 01:26:30,756
+bunun ismini şöyle değiştirelim.
+
+386
+01:26:32,356 --> 01:26:34,516
+Read isimli bir prosedürümüz olsun.
+
+387
+01:27:00,020 --> 01:27:01,720
+Daha sonrasında bunu
+
+388
+01:27:02,800 --> 01:27:05,420
+bir de WRITE isimli bir prosedürümüz olsun.
+
+389
+01:27:15,091 --> 01:27:17,971
+write prosedürü ile ilgili olarak da şuna bakalım.
+
+390
+01:27:21,203 --> 01:27:24,243
+Şimdi bir karakter okuduk. Bunu ekrana basabilmek için
+
+391
+01:27:24,243 --> 01:27:32,144
+02'yi kullanmamız gerekiyormuş. Biraz sonra onu deneriz o zaman. 02 için aklımızda kalsın.
+
+392
+01:27:36,948 --> 01:27:44,968
+başlığı içerisinde, call, read deyip, ondan sonra burada da bir return'e bekleyelim.
+
+393
+01:27:47,188 --> 01:27:58,347
+Dolayısıyla, 0, 1, AH'da 0, 1 değeriyle 21H kesmesini çağırdığımızda, biz de komut satırından bir şey bekleyip bunu okumuş olacağız.
+
+394
+01:28:00,268 --> 01:28:03,347
+Tekrar aynı kodumuzu derleyerek bir daha deneyelim.
+
+395
+01:28:07,252 --> 01:28:08,252
+linkleyelim.
+
+396
+01:28:14,132 --> 01:28:16,252
+I useh not converted var.
+
+397
+01:28:23,572 --> 01:28:26,072
+Şunun yukarıda olması gerekecek herhalde.
+
+398
+01:28:45,492 --> 01:28:53,811
+karakter bekliyor. Bu karakteri aldıktan sonra da ana program üzerinden sonlandırıyor. Yalnız burada kullanmış olduğumuz fonksiyonun özelliğine bakın arkadaşlar.
+
+399
+01:28:54,412 --> 01:29:05,872
+Read character from standard input with echo. Dolayısıyla okuduğu değeri aynı zamanda da ekrana yazdıran bir fonksiyon. Dolayısıyla şimdi biz bunu debugla incelemek istediğimiz zaman
+
+400
+01:29:19,956 --> 01:29:23,175
+Şimdi fonksiyonumuz girer girmez, alt yordamı çağırıyor.
+
+401
+01:29:27,988 --> 01:29:30,228
+Neden sürekli alt oradan açabiliyorlar?
+
+402
+01:29:30,307 --> 01:29:36,827
+Ha, şu anda ekrandan bir karakter beklediği için, komut satırından bir karakter beklediği için, şu anda orada takılık aldık.
+
+403
+01:29:37,007 --> 01:29:45,048
+O karakteri verdiğimizde ise, bunu alıp, şimdi demek ki ilk de bak ekranda bunu yapamıyormuşuz, komut satırından bir şey beklediği için.
+
+404
+01:29:45,188 --> 01:29:46,568
+Aslında onu göstermek istemiştim ama.
+
+405
+01:29:47,208 --> 01:29:51,268
+Neyse, şu aşamada nereye gelmiş olduk?
+
+406
+01:29:55,155 --> 01:29:57,476
+şu read'imiz, write'imiz da bulalım.
+
+407
+01:30:05,684 --> 01:30:28,744
+COM tipi bir program için bu şekilde iki ayrı fonksiyon kullanabiliyoruz. Bunlardan bir tanesi ekrana verilen metni yazdırıyor. Bir tanesi ise komut satırından bir tane karakter okuyan kod örneği. Şimdi bunları makroyla birleştirmek istesek nasıl hareket edeceğiz onu görmeye çalışalım. Yeni bir kod oluşturalım şurada.
+
+408
+01:30:39,028 --> 01:30:42,528
+readwrite.asml dosyamız olsun.
+
+409
+01:30:44,328 --> 01:30:47,668
+Şimdi bunları birer makro olarak tanımlamaya çalışacağız.
+
+410
+01:30:50,087 --> 01:30:53,148
+Mesela şu karakter okumamız nerede?
+
+411
+01:30:54,507 --> 01:30:55,748
+Karakter okuma şuydu.
+
+412
+01:30:56,628 --> 01:30:56,948
+Burada
+
+413
+01:30:56,948 --> 01:31:04,408
+ahaşa 0, 1 atıp int 21'i çağıran bir fonksiyon parçası aslında bu.
+
+414
+01:31:04,408 --> 01:31:06,208
+Burada bunu
+
+415
+01:31:08,020 --> 01:31:20,380
+read char isimli bir makro olarak tanımlayabiliriz. Makro olduğunu belirtmek için bunu yazıyorduk. Makroyu bitirirken de end m kelimesiyle bunu bitiriyorduk.
+
+416
+01:31:22,239 --> 01:31:30,200
+Arasında ise yapacağımız işlem yazacaktı. Bu da a h'a 0 1'e atayıp daha sonra buradan gelen değeri
+
+417
+01:31:30,612 --> 01:31:38,672
+AL'de döndürmek şeklinde çalışan bir fonksiyondu. Tekrar bir kontrol edelim. AL'den mi döndürüyorduk?
+
+418
+01:31:43,188 --> 01:31:48,948
+AL yazmacını da döndürüyorduk. Tamam. Bunu bu şekilde bir makro haline getirdik. Aynı şekilde
+
+419
+01:31:48,948 --> 01:31:59,427
+write işlemini de bir makroya dönüştürelim. Write karakter. Write karakter makrosu olsun.
+
+420
+01:32:01,667 --> 01:32:07,167
+Bunun içinde yapacağımız işlemler neydi? Hemen şuradan yine kesme tablosundan kontrol edelim.
+
+421
+01:32:07,551 --> 01:32:12,172
+write character to standard output. O da 0.2 ile çağırdığımız durummuş.
+
+422
+01:32:14,351 --> 01:32:20,871
+0.2 ile aynı kesmeyi çağırdığımızda da bu durumu elde etmiş oluyoruz.
+
+423
+01:32:21,391 --> 01:32:24,951
+Şimdi bu ana fonksiyon içerisindeki bu mesaj kısmını, data kısmını sildim.
+
+424
+01:32:25,692 --> 01:32:29,492
+İki tane makromuz var. Bu iki tane makroyu çağırarak çalıştırmaya çalışacağız.
+
+425
+01:32:29,492 --> 01:32:33,211
+Bunlardan bir ilki için birinci makromuz neydi?
+
+426
+01:32:35,380 --> 01:32:59,220
+Ekrandan bir şeyi çağıran makroyu, okuyan makroyu kullandım. Daha sonra da ekrana yazdırma makrosunu kullandım. Ekrana yazdırma makrosu neyi kullanıyormuş onu da kontrol edelim şuradan. Yine bu da AL'deki değeri ekranda gösteren bir yazmaç. Dolayısıyla bakın burada yapmış olduğumuz makroları birlikte çalıştırdığımızda.
+
+427
+01:33:00,532 --> 01:33:18,211
+Komut satırından bir değer okudum. Sonuç ALD saklanıyor. Komut satırında bir değer yazdırıyorum. Hangi değeri? ALD'deki değeri. Dolayısıyla bunlar birbiriyle uyumlu bir şekilde çalışmış olacak. İki tane makro örneğini bu şekilde yapmış olacağız ve kom tipi bir programda bunu yapmış olacağız. Bu arada dikkat etmemiz gereken nokta.
+
+428
+01:33:18,612 --> 01:33:29,551
+ana prosedürümüzün, COM tipi programdaki ana prosedürümüzün 100 haçtan sonra başlıyor olması bizim dikkat edeceğimiz nokta. Şimdi buna ilişkin olarak da değerlememizi yapalım.
+
+429
+01:33:40,756 --> 01:33:43,195
+Bunun adı neydi? ReadWrite.asm
+
+430
+01:33:47,859 --> 01:33:50,619
+oluşan obje noktasını linkleyeceğiz.
+
+431
+01:33:54,387 --> 01:33:55,887
+Daha sonra çıkan
+
+432
+01:33:55,887 --> 01:33:57,988
+exe'yi comma çevireceğiz.
+
+433
+01:34:22,771 --> 01:34:25,412
+AL yazma için de ekranda gösterir.
+
+434
+01:34:37,171 --> 01:35:03,331
+DL'deki değerimi yazdırıyormuş bu. Bakalım, kontrol edelim. Evet, doğrudan DL'den sonra AH2'ye atayarak bunu yaptığı için tamam. Şöyle bir işlem yapmamız lazım bu noktada. Kodda bir değişiklik yapacağız. AL'deki değeri değil, DL'deki değeri atıyormuş. O yüzden dolayı şurada MOV DL, AL işlemini yapmamız gerekecek. O zaman şöyle yazıyoruz.
+
+435
+01:35:05,684 --> 01:35:07,304
+int21h
+
+436
+01:35:07,304 --> 01:35:12,604
+0.2h fonksiyonunda
+
+437
+01:35:12,604 --> 01:35:18,203
+dl'deki
+
+438
+01:35:18,203 --> 01:35:21,283
+değeri yazdırır.
+
+439
+01:35:23,764 --> 01:35:26,184
+Yine benzer şekilde şurası içinde
+
+440
+01:35:26,184 --> 01:35:28,623
+int21h
+
+441
+01:35:30,996 --> 01:35:33,556
+0, 1, H fonksiyonuyla
+
+442
+01:35:33,556 --> 01:35:36,915
+bu da
+
+443
+01:35:36,915 --> 01:35:38,675
+AL'ye okur.
+
+444
+01:35:41,235 --> 01:35:42,195
+Değer okur.
+
+445
+01:35:47,475 --> 01:35:50,595
+Tekrar bu haliyle tekrar değerleyelim.
+
+446
+01:36:02,163 --> 01:36:07,744
+Bu şekilde düzeltmiş olduk. Doğrudan nasıl çalıştığını ezberden bilmiyordum. Deneyerek biraz bulduk.
+
+447
+01:36:09,203 --> 01:36:20,163
+Netice itibariyle ilk bastığımız karakter, ilk gördüğümüz bir değeri bizim şu ekrana, ekrandan veya komut satırından karakter okuyan makromuzun karşılığı.
+
+448
+01:36:20,264 --> 01:36:27,264
+Çünkü bu makro çağrıldığı vakit okunan karakteri aynı zamanda ekrana echo ettiriyor. Yani ekrana bastırıyor.
+
+449
+01:36:27,796 --> 01:36:30,896
+Bunun ekosuz bir versiyonu var mı? Bakalım.
+
+450
+01:36:37,363 --> 01:36:41,083
+Character output without echo var. Mesela bu olabilir.
+
+451
+01:36:43,683 --> 01:36:50,423
+Mesela 09H ile direkt text string bastırılabiliyor ama string için bir sonlandırma karakterine ihtiyaç var.
+
+452
+01:36:51,763 --> 01:36:56,543
+Dolayısıyla buradakileri, yani siz de internetten bakabilirsiniz, dos kesme listesi diye,
+
+453
+01:36:57,304 --> 01:37:00,243
+bu kesme listesine göre fonksiyonlar gerçekleştirebilir.
+
+454
+01:37:00,243 --> 01:37:02,743
+Yani bu bir işletim sistemi ile ilgili durum olduğu için,
+
+455
+01:37:03,315 --> 01:37:22,895
+Bu işletim sisteminde komut satırına bir şey yazma ve okuma işlemleri zaten işletim sistemi üzerinden kontrol ediliyor. Dolayısıyla o tür işlemleri, dosyaya yazdırma, bir printera yazdırma gibi işlemler yine bu dos kesmeleri üzerinden kontrol ediliyor. Dolayısıyla burada görmüş olduğumuz örnekte arkadaşlar.
+
+456
+01:37:23,391 --> 01:37:36,172
+COM tipi bir program kullanarak, çünkü bu COM tipi bir program gördüğünüz gibi, burada makrolar nasıl tanımlanır onu görmüş olduk. İkinci olarak da, doz kesmelerini nasıl değerlendirebiliriz?
+
+457
+01:37:36,543 --> 01:38:02,304
+Onları birer makroya çevirerek ekrandan karakter okuyan, komut satırından karakter okuyan ve komut satırına karakter basan örnekleri üretmek adına bunları da görmüş olduk. Bunlar nerede faydalı olacak? Ödev zamanında biz sizden komut satırından parametre girmenizi ve parametre okumanızı isteyeceğiz. Bu gibi durumlarda bu makrolar veya makro demişim daha doğrusu DOS kesmeleri faydalı olacak. Siz de bu DOS kesmelerini burada yaptığımız gibi birer.
+
+458
+01:38:02,771 --> 01:38:11,652
+makro tanımlamasına dönüştürerek kullanabilirsiniz. Tabi burada bunları kullanabilmek için, tanımlarını görebilmek için
+
+459
+01:38:11,652 --> 01:38:17,631
+DOS kesmelerini ve fonksiyonlarını aramakta fayda var. Örneğin yani şöyle bir şey yapmanız faydalı olacaktır.
+
+460
+01:38:40,692 --> 01:38:44,292
+Mesela şurada parametrelerin olduğunu varsayabilir miyiz bakalım?
+
+461
+01:38:45,292 --> 01:38:51,692
+Mesela bu şekilde hangi parametrelerin kullanıldığında mutlaka siz de bir kontrol etmiş olun.
+
+462
+01:38:51,692 --> 01:39:03,092
+Mesela DOS kesmeleri ile ilgili örnek de varsa eğer bunu Option 1 ekrandan karakter okuyor. Ekrana bastırıyor, 2.
+
+463
+01:39:04,307 --> 01:39:13,788
+Evet, tamam. Güzel açıklaması da mevcut. Bunu bir kaynak olarak şöyle vermiş olayım. Buradaki kaynak üzerinden şeyleri kullanabiliriz. Yani fonksiyonları kullanabiliriz.
+
+464
+01:39:34,547 --> 01:40:00,608
+Bu kaynak üzerinden de kesmelere bakabiliriz. Dolayısıyla bu haliyle makroları da tamamlamış olduk. Ben bu örnekleri şimdi şeyden koyacağım ama nedir onun adı? Online Yıldız Edüter'den koyacağım ama iki grubun sınavına ortak yaptığımız için şeyleri göremiyorum sanki şu aşamada. Bu ders duyurularını göremiyorum. Onunla ilgili iki hafta önceki örnekleri de koyamadım ama bir bakacağım nasıl olduğunu.
+
+465
+01:40:01,268 --> 01:40:08,887
+Dolayısıyla bu haliyle arkadaşlar makroları tamamlamış olduk. En son görmüş olduğumuz noktada da komut satırından
+
+466
+01:40:09,268 --> 01:40:18,387
+bir karakter okuma komut satırına, bir karakter yazma komut satırına bir string yazdırma işlemlerinin nasıl olduğunu COM tipi program üzerinden de görmüş olduk.
+
+467
+01:40:18,887 --> 01:40:29,247
+Bu COM tipi programı özelinde sınırlı bir şey değil. İsterseniz EXO tipi programınızla da ilgili interrup çağrımlarını yaparak ekrana bir şey yazdırıp ekrandan bir şeyler okumanız mümkün.
+
+468
+01:40:29,327 --> 01:40:32,667
+COM satırından bunu da bir örnek olarak vermiş olalım şimdilik.
+
+469
+01:40:32,667 --> 01:40:37,268
+Şimdi bu noktada yordamlara ilişkin olarak parametre aktarımını...
+
+470
+01:40:37,268 --> 01:40:42,387
+yordamlara parametre aktarımında arkadaşlar 3 farklı yöntem kullanımı var.
+
+471
+01:40:42,987 --> 01:40:48,868
+Bahsetmiştim. Bunlardan bir tanesi yazmaç üzerinden bunların aktarımı. İkincisi yığın üzerinden aktarımı.
+
+472
+01:40:48,967 --> 01:40:56,268
+Üçüncüsü ise ortak veri kesimi üzerinden bunların external public olarak tanımlanarak aktarılması da söz konusu.
+
+473
+01:40:56,720 --> 01:41:07,540
+Şimdi zaten yazmaç üzerinden parametre aktarımını bu iki hafta boyunca yapmış olduğumuz örneklerde gördük. En büyük ortak bölen örneğinde bu işlemi yapmış olduk.
+
+474
+01:41:09,971 --> 01:41:29,172
+Aynı zamanda şöyle de düşünebilirsiniz. Az önce görmüş olduğumuz bu kesme örnekleri için de bakın mesela burada yazmaç değerlerini ayarlayıp yazmaçlara değer ayarlayıp daha sonra kesme fonksiyonunu çağırıyoruz. Aslında bu da yazmaç üzerinden parametre aktarımına bir örnek olarak düşünülebilecek bir yapı. Bu noktada arkadaşlar
+
+475
+01:41:31,412 --> 01:41:51,391
+Nedir onun adı? Yığın üzerinden parametre aktarımı nasıl oluyor? Ona bakacağız. Bir de veri kesiminin ortak olarak kullanımında parametre aktarımı nasıl oluyor? Onları inceleyeceğiz. Haftaya da bu veri kesimlerinin ve kod kesimlerinin birleştirilmesiyle ilgili olarak durumları ele almaya çalışacağız. Şöyle bunları kapatalım.
+
+476
+01:42:33,076 --> 01:42:46,275
+Şimdi geçen haftalarda yapmış olduğumuz örnek üzerinden hareket edelim. Bu hatırlayacak olursanız GCG'de bulma işlemiydi. Oradaki parametre aktarımına bakıyor olacağız.
+
+477
+01:42:52,692 --> 01:42:56,372
+Örneği arıyorum da şu anda bulamadım bir saniye.
+
+478
+01:43:24,692 --> 01:43:34,292
+Parametre üzerinden aktarımı burada. Şeyi hatırlayalım bir, yazmaç üzerinden aktarım nasıl oluyordu onu hatırlayarak başlayalım.
+
+479
+01:43:37,363 --> 01:43:42,423
+Yazmaç üzerinden parametre aktarımı yaparken kullandığımız örnek bu şekilde bir örnekti.
+
+480
+01:43:43,604 --> 01:43:47,923
+Fonksiyon için tanımımızı yaparken şunu diyorduk hatırlayacak olursanız.
+
+481
+01:43:47,923 --> 01:43:52,083
+Bu fonksiyon. Önce fonksiyon tanımına gitmiş olalım.
+
+482
+01:43:52,787 --> 01:44:08,847
+Bu fonksiyon kendi içerisinde AX ve DX yazmaçları üzerinde parametre kabul edip işlem sonucunu döngüsel veya recursive bir şekilde hesapladıktan sonra tekrar işlem sonucunu AX yazmacı üzerinden dönüyor şeklinde bir kabulümüz vardı.
+
+483
+01:44:09,279 --> 01:44:27,619
+Daha sonrasında ise ana programda bu fonksiyonu kullanmak istediğimizde ilgili yazmaçlarda istedilen değerleri oluşturup fonksiyonumuzu çağırıyorduk. Bu standart yazmaç üzerinden parametre aktarımıydı. Yine dönen sonucu da yazmaç üzerinden alıp işlemimizi devam ettiriyorduk.
+
+484
+01:44:33,600 --> 01:44:42,220
+yazmaç üzerinden parametre aktarımını ve yazmaç üzerinden değer döndürmeyi gerçekleyen bir örnek olarak ortaya çıkıyordu.
+
+485
+01:44:42,720 --> 01:44:49,020
+Şimdi aynı örneğin bir farklı yaklaşımıyla ele alınmasına bakacağız.
+
+486
+01:44:49,020 --> 01:44:51,020
+Bunun için de...
+
+487
+01:44:55,604 --> 01:44:56,964
+şu örneğimiz ve
+
+488
+01:44:56,964 --> 01:45:00,124
+şu örneğimiz olsun.
+
+489
+01:45:08,467 --> 01:45:14,987
+Bu sefer aynı işlemi yığından aktararak yapmaya çalışacağız.
+
+490
+01:45:16,187 --> 01:45:19,527
+Bunun için arkadaşlar farklı durumlar söz konusu.
+
+491
+01:45:19,607 --> 01:45:20,707
+Şimdi şöyle ele alalım.
+
+492
+01:45:22,247 --> 01:45:25,347
+Bu bir kara kutu olarak biz fonksiyonumuzu çizelim.
+
+493
+01:45:26,427 --> 01:45:31,287
+Biz bu fonksiyona parametre aktarırken bunları yığın üzerinden de aktarabiliriz.
+
+494
+01:45:31,367 --> 01:45:33,027
+Şurası bizim fonksiyonumuz olsun.
+
+495
+01:45:34,100 --> 01:45:59,039
+fonksiyonumuz. Burası da bizim stay'imiz olsun. Şimdi biz fonksiyonu çağırmadan önce, fonksiyonu çağırmadan önce şöyle yapacağız. Yığına bir takım değerler atacağız. Değerler attıktan sonra fonksiyonu çağıracağız. Fonksiyon bize bir değer döndürecek ve bu şekilde bir işleyiş var. Eğer ki biz yığına
+
+496
+01:46:00,724 --> 01:46:26,123
+bir değer atmışsak ve işlem sonucunu yazmaçtan döndürüyorsak yani burada input'umuz yığından geldi çıkışımız register'dan geldi. Bu durumda yığında ekstradan bir değer kalmış oluyor dikkat edecek olursanız. Yığında ekstradan bir değer kalmış oluyor. Bu durumda yığındaki bu ekstra değeri kim çekecek? Bunu tanımlamamız lazım.
+
+497
+01:46:26,579 --> 01:46:29,380
+Yani bunu fonksiyon tarafında da tanımlayabiliriz.
+
+498
+01:46:29,920 --> 01:46:32,099
+Ana prosedür tarafında da tanımlayabiliriz.
+
+499
+01:46:32,779 --> 01:46:33,720
+Böyle bir işlem olabilir.
+
+500
+01:46:35,199 --> 01:46:36,519
+Varyasyon böyle oluşuyor.
+
+501
+01:46:36,619 --> 01:46:40,439
+İkinci bir yaklaşım ise dönüşü.
+
+502
+01:46:41,479 --> 01:46:43,899
+Tek bir parametreyi yığından göndeririz.
+
+503
+01:46:44,019 --> 01:46:45,260
+Fonksiyonda bunu işleriz.
+
+504
+01:46:45,380 --> 01:46:47,819
+Dönüş işlemimizi yine yığından yapabiliriz.
+
+505
+01:46:50,452 --> 01:46:59,132
+Dönüş işlemimiz yığından olduğu vakit zaten bu değeri yığından çekmek işlemi mutlaka ve mutlaka ana prosedürün işlemi olması gerekiyor.
+
+506
+01:46:59,832 --> 01:47:07,692
+Ne yaptık? Bir tane parametreye yığını attık, bir tane word değeri, fonksiyonu çağırdık, fonksiyon da aynı değeri yığın üzerinden döndürüyor.
+
+507
+01:47:07,771 --> 01:47:10,632
+Dolayısıyla ana prosedüre kadar bu yığın değerinin gitmesi lazım.
+
+508
+01:47:11,372 --> 01:47:17,712
+Yığındaki bu dönüş değerine ana prosedür çekecek ve yığını temizleme işlemi de yine ana prosedürün görevi.
+
+509
+01:47:18,047 --> 01:47:19,627
+Bir başka durum şu olabilir.
+
+510
+01:47:21,207 --> 01:47:26,927
+Biz yığından veri aktarırken iki tane belki parametre aktaracağız.
+
+511
+01:47:27,127 --> 01:47:27,667
+Şöyle yapayım.
+
+512
+01:47:29,487 --> 01:47:31,847
+İki tane parametreyi yığından aktaracağız.
+
+513
+01:47:32,027 --> 01:47:36,467
+Ama dönüş değerimiz bir tane yığından geri dönüş değerimiz var.
+
+514
+01:47:36,607 --> 01:47:38,607
+Bu durumda da farklı bir durum oluştu.
+
+515
+01:47:40,180 --> 01:47:58,840
+dönüş değeri yığında kaldığı için kesinlikle bu dönüş değerini yığından okumak ve yığından kaldırmak fonksiyonun görevi, alt programın görevi, pardon yanlış söyledim, ana programın görevi dönüş değerini iki parametre aktardık, bir tane dönüş yapıyoruz.
+
+516
+01:47:59,264 --> 01:48:04,163
+Bu durumda geri dönüş değerini okumak ve yığından kaldırmak ana fonksiyonun görevi.
+
+517
+01:48:04,663 --> 01:48:08,283
+Ama aktarmış olduğumuz ikinci parametreyi kim yığından kaldıracak?
+
+518
+01:48:08,884 --> 01:48:12,203
+Bu fonksiyonun kendisi de olabilir, ana prosedürün kendisi de olabilir.
+
+519
+01:48:12,943 --> 01:48:14,743
+Bu da farklı bir varyasyon.
+
+520
+01:48:14,823 --> 01:48:16,644
+Dolayısıyla varyasyonlarımız bu şekilde.
+
+521
+01:48:16,844 --> 01:48:18,623
+Baştan itibaren ele alacak olursak,
+
+522
+01:48:19,703 --> 01:48:23,564
+mesela iki tane tek bir parametreyi yazmaçtan aktarabilirim,
+
+523
+01:48:23,903 --> 01:48:26,144
+tek bir parametreyi yazmaçtan döndürebilirim.
+
+524
+01:48:26,579 --> 01:48:32,079
+iki tane parametreyi yazmaçtan aktarabilirim, bir tane değeri yazmaçtan döndürebilirim. Burada sıkıntı yok.
+
+525
+01:48:32,780 --> 01:48:38,920
+Yığına geldiğimizde yığından bir tane parametre aktarabilirim, dönüşüm yazmaç üzerinden olabilir.
+
+526
+01:48:39,220 --> 01:48:46,140
+Bu durumda yığından aktarmış olduğum veriyi alt yordamda kaldırabilir, ana prosedürde kaldırabilir.
+
+527
+01:48:47,140 --> 01:48:50,619
+Yığından bir tane parametre gönderdim.
+
+528
+01:48:51,155 --> 01:49:14,496
+geri dönüş değerim de yığından. Bu durumda bu geri dönüş değerini ana prosedürün yığından kaldırması gerekiyor ve okuması gerekiyor. Yine bir başka örnek. Yığından iki tane parametre aktardım ama geri dönüş için bir tane parametre yığından geri döndürüyorum. Bu durumda döndürdüğüm değeri okumakla görevli ve yığından kaldırmakla görevli olan ana prosedürdür.
+
+529
+01:49:16,815 --> 01:49:33,176
+ikinci ekstra parametreyi yığından kaldırmak alt prosedür veya ana yordamın görevi olabilir. Böyle bir varyasyondan bahsetmiş olalım. Şimdi arkadaşlar, bu durumda her birisini gerçeklemek üzere neler yapmamız gerektiğine şöyle bir bakalım.
+
+530
+01:49:43,252 --> 01:50:00,952
+Şimdi onu şimdi göreceğiz. Şimdi şuradaki örneğe bakın mesela. Şuradaki örneğe bakın. Bakın fonksiyonu çağırmadan önce yığına bir takım değerler attık. Şurası da ana prosedüre dönüş, işletim sistemine dönüş için yığına attığım değerler.
+
+531
+01:50:01,395 --> 01:50:10,456
+ana prosedüre dönüş değerleri duruyor. Yığına iki tane parametre attım. Fonksiyonu çağırdım. Çağırdığım için IP ve CS değeri de yığına atıldı.
+
+532
+01:50:11,135 --> 01:50:21,235
+Alt prosedüre gittiğim vakit bu göndermiş olduğum parametrelerin yığının en üstünden itibaren nerede olduklarını hesaplayacağım, bulacağım ve onlara doğrudan erişeceğim.
+
+533
+01:50:21,716 --> 01:50:44,315
+Alt prosedür, şurada alt prosedürü görelim. Alt prosedür, return fonksiyonuyla döndüğü vakit, REDF ile döndüğü vakit daha doğrusu, yığının en üstündeki değerleri kaldıracak. Yığının en üstünde hangi değerler var? IP ve CS değerleri var. Onları alarak geri döndü. Ana prosedüre döndüğün vakit yığının en üstünde hangi değerler kaldı? Şu aşamada.
+
+534
+01:50:44,948 --> 01:51:04,387
+A ve B sayısına ilişkin attığım değerler. Eğer bu attığım değerleri yığından kaldırmazsan ve ana prosedürden dönüş yapmak istersen, ana prosedür işletim sistemine dönerken sırasıyla şu atmış olduğum iki tane Word değerini EUP ve CS'ye yüklemeye çalışacak.
+
+535
+01:51:04,387 --> 01:51:12,787
+İşte temizlemekten kastımız bu. Return etmeden önce şunların temizlenmesi gerekiyor. Bunlar temizlendikten sonra Redway'i çağırırsan,
+
+536
+01:51:12,948 --> 01:51:26,507
+sırada şu atmış olduğum iki tane değer var. Bunlar da zaten işlemi tim sistemine dönüş değerleriydi. Dolayısıyla birbirini doğrulamış oluyor. Birbirini takip etmiş ve doğrulamış olan bir durum elde etmiş oluyoruz. Tamam mı?
+
+537
+01:51:27,948 --> 01:51:35,007
+Şimdi bu ikisini alt prosedür ve ana prosedürü şu şekilde yan yana alalım ve bu ikisi üzerinde işlem yapmaya çalışalım.
+
+538
+01:51:35,007 --> 01:51:37,787
+Şimdi öncelikli olarak şöyle yapalım.
+
+539
+01:51:41,140 --> 01:52:06,079
+Burada A ve B sayı değerlerimiz var. Bunları yığına atalım. Şimdi ilk yapacağımız işlem şu olsun. Parametre aktarımı yığından iki tane parametre aktarıyoruz. Geri dönüş değeri yazmaç üzerinden olsun. Tamam mı? İlk yapacağımız işlem bu. Programlarımızı nasıl onlara bakalım. Bizim şu anda kullanacağımız programlar arkadaşlar.
+
+540
+01:52:06,676 --> 01:52:21,115
+exe tipi bir programda dışarıdan far tipi bir fonksiyon kullanacağız. Dolayısıyla bir başka dosyamızda bu far tipi olarak dışarıdan kullanacağımız fonksiyonun tanımı var. Burada public olarak verilmiş.
+
+541
+01:52:22,796 --> 01:52:28,916
+Yapılan işlem aslında daha önceden yapmış olduğumuz işlem gibi düşünebilirsiniz.
+
+542
+01:52:28,916 --> 01:52:33,456
+Şimdi öncelikli olarak şu tanımlamayı yapalım.
+
+543
+01:52:34,771 --> 01:52:46,152
+parametre aktarımı iki tane değer aktaracağız. Yığın üzerinden yapılacak ve geri dönüş değerini yazmaç üzerinden tutacağız. Yazmaç üzerinden geri dönüş yapacağız.
+
+544
+01:52:46,152 --> 01:52:49,411
+Şimdi bunun için
+
+545
+01:52:51,347 --> 01:53:18,427
+İlk yapacağımız işlem, işletim sistemine geri dönüş değerlerini attık. Data segmenti kullanacak şekilde, şuradaki data segmenti kullanacak şekilde ayarlama yaptık. Daha sonra yığına göndermek istediğimiz iki tane değeri atıyoruz ve fonksiyonumuzu çağırıyoruz. Fonksiyon bittikten sonra geri dönüş değerimiz nerede olacak arkadaşlar? Geri dönüş değerimiz bizim AX yazmacı üzerinde olacak. Dolayısıyla şunları kapattım.
+
+546
+01:53:18,868 --> 01:53:39,368
+AX yazmacı üzerinden geri dönüş elde etmeyi amaçlıyoruz. Tamam mı? Bununla ilgili olarak da, bakın yığına iki tane değer atmıştık. Yığına atmış olduğumuz değerleri kim çeksin? Ana prosedür çeksin. Onun için de şu iki satırı açık bırakıyorum. Şimdi bu durumda işlem nasıl çalışacak bakalım.
+
+547
+01:53:44,275 --> 01:54:04,396
+Şuraya çizeyim. Bu bizim yığınımız. Yığının en altında işletim sistemine dönüş CS değerim var. Onun bir üst sırasında işletim sisteme dönüş IP değeri var. Daha sonra ben yığına A sayısını attım. Daha sonra yığına B sayısını attım.
+
+548
+01:54:04,916 --> 01:54:19,376
+Daha sonra da bu ilgili fonksiyonu çağırdım. Yalnız bu bizim fonksiyonumuz da far tipindeydi. Dolayısıyla yine cs değerini atacak bir tane ana prosedürün geri dönüş cs değeri ve IP değerini atacak. Yığınımız bu kadar dolu oluyor. Şimdi buradaki değerleri yazalım.
+
+549
+01:54:32,659 --> 01:54:35,899
+B sayısını attım. Daha sonra
+
+550
+01:54:35,899 --> 01:54:41,500
+Ana yordam CS değeri var. En üstte de
+
+551
+01:54:41,500 --> 01:54:43,779
+Ana yordam IP değeri var.
+
+552
+01:54:46,760 --> 01:54:50,819
+Bu haldeyken ben alt prosedürüme gelmiş oluyorum.
+
+553
+01:54:50,819 --> 01:54:52,699
+Alt prosedürüme geldim.
+
+554
+01:54:53,587 --> 01:55:18,967
+Şimdi alt prosedür işlemi, gerçi şu anda daha koda bakmıyoruz arkadaşlar. Alt işlem, alt işlem, alt yordam bu işlemleri gerçekleştirdikten sonra, fonksiyonda değerleri hesapladıktan sonra, geri dönüş değerini AX'de tutacak. Ve en son olarak RedFay'i çalıştırdı. RedFay'i çalıştırdığı vakit, yığının en üstündeki değeri alıp, Instruction pointer'a kopyalayacak.
+
+555
+01:55:19,988 --> 01:55:24,688
+sıra sonra gelen değeri de alıp kod segmente yükleyecek. Bunun sonucunda ne oldu?
+
+556
+01:55:25,228 --> 01:55:28,968
+COL satırına, ana programda COL satırından sonraki satıra düşmüş oldum.
+
+557
+01:55:29,868 --> 01:55:35,988
+Bu fonksiyonu bitirirken REDF ile dönebilmek için sırasıyla Y'nın en üstünde kalan değeri alıp
+
+558
+01:55:36,508 --> 01:55:42,568
+ÜP'ye daha sonra da CS'ye yazmam gerekiyor. Ama şu anda burada doğru dönüş değerleri yok.
+
+559
+01:55:42,688 --> 01:55:45,328
+Dolayısıyla bunları kaldırmam gerekiyor. Nasıl kaldırabilirim?
+
+560
+01:55:45,716 --> 01:55:47,096
+Şu şekilde kaldırıyoruz.
+
+561
+01:55:47,576 --> 01:55:50,996
+Yığının en üstündeki değer için bir kere boş POP işlemi yapıyorum.
+
+562
+01:55:51,896 --> 01:55:56,695
+Bu yığına atmış olduğum, en son olarak atmış olduğum B sayısını yığından çekti.
+
+563
+01:55:57,779 --> 01:56:14,199
+Daha sonra yine bu haliyle return yapabilir miyim? Hayır. Şu anda çünkü yanının üstünde A sayısı kaldı. Dolayısıyla tekrar bir tane daha dummy pop işlemi yapıyorum. Bunu da yaptıktan sonra B ve A sayılarını da okuduktan sonra artık return işlemi anlam kazanmış oluyor.
+
+564
+01:56:14,644 --> 01:56:24,604
+Şu aşamada iki tane daha POP işlemi yaptıktan sonra veyahut da zaten call fonksiyonunun hemen dönüşünde AX yazmacında bizim istediğimiz değer mevcuttu.
+
+565
+01:56:24,684 --> 01:56:27,804
+Bunu alıp ilgili sonuç yazmacını aktarmış oluyoruz.
+
+566
+01:56:29,003 --> 01:56:34,704
+Dolayısıyla yığına koyduğumuz parametreleri yığından çekmekle görevli olan kişi kim oldu burada?
+
+567
+01:56:34,704 --> 01:56:36,704
+Burada bu görevli kişi...
+
+568
+01:56:37,104 --> 01:56:52,524
+ana prosedürün kendisi oldu. Tamam mı? Ana prosedürün kendisi yığına parametre koydu, yığından parametreleri çekti. Şimdi gelelim, şeyi nasıl yapacağız? Bu aktarmış olduğumuz parametreleri nasıl alabiliriz? Şimdi ona bakalım.
+
+569
+01:56:53,664 --> 01:57:00,104
+Şimdi, biz burada alt yordamın içerisine girdik ama burada alt yordamda...
+
+570
+01:57:00,756 --> 01:57:05,756
+aynı yığın kullanılıyor. İkisinde de stack segment değeri aynı olduğu için aynı yığın kullanılıyor.
+
+571
+01:57:06,296 --> 01:57:15,756
+Fakat burada ben alt yordam içerisindeyken işletim sisteminden dolayı bir kesme gelse, bir şey olsa farklı bir donanımsal veya yazılımsal kesme gelebilir.
+
+572
+01:57:16,195 --> 01:57:24,996
+Bunu işletim sistemi çünkü planlıyor. Böyle bir kesme geldiği zaman benim stack pointer değerim otomatik olarak değişecek değil mi?
+
+573
+01:57:28,756 --> 01:57:55,016
+global bir referans değeri değil. O zaman benim şu haliyle, yığının şu haliyle aktarmış olduğum parametreye global bir adres referansı tutmam lazım. Bunu nasıl yapıyorum? Girer girmez, alt yordama girer girmez, stack pointer değerini base pointer yazmacına aktarıyoruz. Bu bizim için bir referans oluşturmak için elde ettiğimiz durum.
+
+574
+01:57:56,212 --> 01:58:12,872
+Şimdi, eğer ki başka programların da BP'yi kullanma ihtimali varsa ve programlar bir scheduled mantık çerçevesinde çalışıyorsa, bu durumda aslında ben şu atamayı yaparak BP yazmacının orijinal değerini bozmuş oluyorum. Dikkat edin.
+
+575
+01:58:13,752 --> 01:58:15,731
+Herhangi bir alt prosedür yazarken,
+
+576
+01:58:16,115 --> 01:58:36,695
+tanımlamış olduğumuz parametre aktarım ve parametre dönüş yazmaçları haricinde genel veyahut da geçici işlemler için bir yazmacı kullanıyorsak arkadaşlar, bu bizim temel bir kuralımız olacak bundan sonra, herhangi bir yazmaç değerini bozuyorsak, hangi durum için ama dikkat edin, parametre aktarımı için olan değil,
+
+577
+01:58:37,119 --> 01:58:57,039
+parametre dönüşü için olan değil, bunlar haricinde genel veyahut da geçici işlemler için kullandığım bir yazmaç varsa ve bu değer yazmacımızı bozuyorsa, atladığımız değer yazmacı bozduğu için mutlaka ve mutlaka program dönüşünde, alt program dönüşünde orijinal değerini geri yüklememiz gerekiyor. Bunun için
+
+578
+01:58:57,439 --> 01:59:08,699
+Biz niyet olarak BP yazmacını bozmaya karar verdiğimizden dolayı BP yazmacını korumak adına öyleyse alt programa girer girmez BP değerini pushluyoruz.
+
+579
+01:59:09,359 --> 01:59:15,199
+Her push değerine karşılık return'dan önce ilgili pop işlemini de yapmamız gerekiyor arkadaşlar.
+
+580
+01:59:15,919 --> 01:59:23,939
+Return'dan önce neyi pushladıysak bunu poplayacağız. Bu şu anlama geliyor. Yani şu aradaki bütün işlemleri görmezden gelin.
+
+581
+01:59:25,619 --> 01:59:44,359
+Bunları görmeyin şimdilik. Her push işlemine karşılık ben bir tane pop işlemi koymam lazım ve ters sırada ilerleyecek. Mesela ben buraya başka bir push işlemi yapacak olsam, push AX diyecek olsam, aynı sırada tersten AX'i de çekmem lazım.
+
+582
+01:59:45,203 --> 01:59:50,543
+Şu anda yığının en üstünde AX var, AX'i çekiyorum ve orijinal değerini korumuş oluyorum.
+
+583
+01:59:51,083 --> 01:59:59,284
+Diğer fonksiyonların, anayordamın, işletim sisteminin kullanacağı bu tür değerler varsa bunları mutlaka korumamız gerekiyor.
+
+584
+01:59:59,284 --> 02:00:02,284
+Bu konu çok önemli. Dolayısıyla ben içeride...
+
+585
+02:00:02,868 --> 02:00:13,088
+BP için, bu aktarmış olduğum A ve B parametreleri için global bir referans oluşturmak adına stack pointer değerini base pointer yazmacına kopyaladım.
+
+586
+02:00:13,628 --> 02:00:15,388
+Buradaki amaç şuydu, tekrar edelim.
+
+587
+02:00:15,891 --> 02:00:31,431
+Ben Alt Yordam içerisindeyken, belki işletim sisteminin scheduling işlemlerinden dolayı veyahut da bir donanımsal veya yazılımsal kesme gelmesinden dolayı SP değeri otomatik olarak değişiklik gösterebilir.
+
+588
+02:00:31,431 --> 02:00:41,251
+Bu durumda ben Alt Yordam'a aktarmış olduğum parametreler için eğer SP'yi global bir referans olarak kullanmak istersem, burada bu referansı kaybediyorum.
+
+589
+02:00:41,583 --> 02:01:05,783
+Bunun için global referans oluşturmak adına stack pointer SS yazmacıyla birlikte kullanılabilecek iki tane offset yazmacı vardı. Bunlar stack pointer ve base pointer yazmaclarıydı. Burada base pointer tam olarak amacına uygun olacak şekilde global referans oluşturup stack segmentle birlikte offset değeri oluşturmak için kullanılacağımız bir değer oluyor. Dolayısıyla BP değerini bozacağım için
+
+590
+02:01:06,260 --> 02:01:33,479
+Başka programlarda BP değeri belki kullanılıyordur. Onun için bunu yığına atıp orijinal değerini koruyorum. Geri dönerken de POP BP yaparak bu değeri geri yüklüyorum. Öyleyse bizim yığınımızda PUSH BP işleminden sonra yine bir değerimiz daha oluştu. Bakın burada bir değerimiz daha oluştu. Bu değerimiz de BP'nin orijinal değeri oldu.
+
+591
+02:01:34,484 --> 02:01:49,824
+Dolayısıyla şu anda geldiğimiz nokta, yığının içeriği bu. Bu noktada bizim erişmek istediğimiz değişkenler B ve A sayıları, bakın BP bir sonraki neyi gösteriyor? Dolu gözü gösterecek. BP ve SP şöyle gösterelim.
+
+592
+02:01:51,424 --> 02:02:00,064
+Bu yazmaçlar sıradaki dolu gözü gösterirler. Dolayısıyla ben bu atamayı yaptıktan sonra, MOV, BP, SP yaptıktan sonra
+
+593
+02:02:00,532 --> 02:02:23,132
+SP ve BP yazmaçları bu gözü gösteriyor. Adres nasıl ilerliyordu hatırlayalım. Yığında en yüksek adres değerine değer atıyordum. Burası yığının dibiydi. Yığına bir şeyler attıkça adres değeri küçülüyordu. Dolayısıyla adres değeri olarak baktığımızda aşağı doğru şöyle düşünelim.
+
+594
+02:02:25,652 --> 02:02:33,832
+adres değeri büyüyor. Onu da şöyle temsil etmiş olalım. Buralar küçük adresler, buralar büyük adresler. Tamam mı?
+
+595
+02:02:34,631 --> 02:02:47,711
+Dolayısıyla artık ben şu atamayı yaptıktan sonra, MOV, SP, BP virgül, SP atamasını yaptıktan sonra, ne kadar kesme girerse girsin araya, benim BP değerim bu referansı gösterecek.
+
+596
+02:02:48,372 --> 02:02:52,251
+İçeride ben belki yine bir başka işlemde şu olabilir tabii.
+
+597
+02:02:53,300 --> 02:03:15,139
+Belki ben ALT prosedürün fonksiyonel kısmı içerisinde, yani şu kısım içerisinde, belki yığına başka şeyler atıp da çekeceğim. Onlar da var. Dolayısıyla SP değeri yine fonksiyonun kendindeki işlemlerden dolayı bile değişiyor olacak. BP'nin burada referans olması önemli. Şimdi bizim B ve A parametrelerimiz ne kadar ötede?
+
+598
+02:03:15,796 --> 02:03:38,936
+1, 2, 3 tane göz ötede. Ama bu 3 tane göz olmakla birlikte burası kaç adres ötede? 6 adres ötede. Bu BP artı 6 burası yani şu adres. Şuradaki içerik hangi adres burası? BP artı 6 numaralı adres. A'nın olduğu gözde BP artı 8 numaralı adres. Tamam mı?
+
+599
+02:03:39,475 --> 02:04:00,875
+BP'yi global referans yaptım. Ben kod içerisinde push, pop kullansam SP değişecek. Dolayısıyla SP'ye göre A'yı ve B'yi tanımlayamıyorum. Girer girmez bir referans oluşturdum BP ile. BP ile hiç oynamayacağım. Dolayısıyla bu BP'ye göre 6 offset ötede ve 8 offset ötede benim A ve B sayılarım mevcut olmuş oluyor.
+
+600
+02:04:00,875 --> 02:04:06,175
+Şimdi ana kodun akışı nasıldı? Onu şöyle yapalım şimdi şuradan.
+
+601
+02:04:06,707 --> 02:04:08,107
+geri getireyim şunları.
+
+602
+02:04:16,083 --> 02:04:19,763
+Şimdi bir akış içerisinde bunu yaptığımız için hatırlayın nasıl yapıyorduk?
+
+603
+02:04:20,384 --> 02:04:23,783
+AX, BX ve DX yazmaçlarını kullanıyorduk bu akış içerisinde.
+
+604
+02:04:23,884 --> 02:04:26,163
+Önceki fonksiyonumuzu hatırlayalım. Şöyle görelim.
+
+605
+02:04:40,851 --> 02:04:47,152
+Bu recursive olmayan fonksiyonumuzdu. Hatırlayın, içeride hangi yazmaçları kullanıyorduk? Bu geçen hafta yaptığımız örnek.
+
+606
+02:04:47,912 --> 02:04:56,292
+AX yazmacını, DX yazmacını kullanıyorduk, bir de BX yazmacını kullanıyorduk. Bunlardan parametre dönüşünü neyle yapıyorduk?
+
+607
+02:04:56,292 --> 02:05:03,431
+AX yazmacıyla yapıyorduk. Dolayısıyla parametre dönüşünü AX'den yapacağımız için BX ve DX yazmaçlarını
+
+608
+02:05:03,956 --> 02:05:09,096
+olduğu gibi koruyacağız. Ve şunu söyleyeceğiz biz. Eğer siz bu fonksiyonu kullanmak istiyorsanız
+
+609
+02:05:09,716 --> 02:05:16,076
+Burada AX yazmacında geri dönüş fonksiyonu olduğu için AX üzerinde bir parametre bulundurmayın.
+
+610
+02:05:16,176 --> 02:05:20,695
+Bu fonksiyonu kullanmak istiyorsanız fonksiyon dönüşünde AX yazmacı bozulacaktır.
+
+611
+02:05:20,775 --> 02:05:25,695
+Bunu belirtiyoruz, baştan tanımlıyoruz. Bu fonksiyonu kullanacak olanlar buna göre kullanıyorlar.
+
+612
+02:05:25,695 --> 02:05:35,695
+Ama DX ve BX fonksiyon içerisinde geçici olarak değerler yüklediğimiz yazmaçlar olduğu için bunlara ilgili bir kısıtlama koymuyoruz ve şunu diyoruz.
+
+613
+02:05:37,716 --> 02:05:52,435
+çiçeriğini korumalıyız. Bunu diyoruz. Bunu yapabilmek adına da fonksiyona girer girmez, AX'den geri dönüş yapacağımız için onu sildim, BX ve DX yazmaçlarını tuşladık, yığını attık. Şimdi bakın, bu işlem sonucunda
+
+614
+02:05:57,140 --> 02:05:58,680
+BP'miz şurada kalsın.
+
+615
+02:06:00,300 --> 02:06:02,880
+Push, BX ve DX işlemlerini de yaptık ya.
+
+616
+02:06:08,948 --> 02:06:19,468
+Şunlar da yığına atıldı. Şurada BX var. Şurada da DX var. Ve dikkat edin arkadaşlar, SP yazmacı şuraya kadar gitti.
+
+617
+02:06:24,372 --> 02:06:42,912
+SP yazmacı buraya kadar gitti. Dolayısıyla ben parametrelerimi okurken SP'ye göre bir referans koyduğum vakit bunun bir anlamı olmuyor. Çünkü SP içeride değişebilir. Dolayısıyla girer girmez BP için bir global referans oluşturdum ve oluşturmuş olduğum bir referansa göre aktarmış olduğum parametreleri alıyorum.
+
+618
+02:06:49,663 --> 02:07:07,144
+koruyacağım, değerler olacak. En son DX'e attığım için, yığından, şöyle şunu kapatalım, yığından çekeceğim değer DX olacak. En üstte DX vardı, çektim. Sırada BX kalıyor, BX'e atmıştım çünkü. Öyleyse sırada BX'i de çekeceğim. AX için POP işlemi yapmayacağım şimdilik.
+
+619
+02:07:11,539 --> 02:07:12,259
+silenim.
+
+620
+02:07:32,372 --> 02:07:34,452
+Şimdi geri kalan kısımlarda ne yapacağız?
+
+621
+02:07:35,891 --> 02:07:39,492
+Bozmadan dışarıya aktaracağımız parametreleri de düzenledik.
+
+622
+02:07:40,011 --> 02:07:44,072
+Bunlar BP, BX ve DX yazmaçları. Bunları korumak üzere aldık.
+
+623
+02:07:46,591 --> 02:07:54,632
+Yığında fonksiyona girer girmez bir referans değeri oluşturup ona göre erişmek istediğimiz yığından aktarılacak parametreleri belirledik.
+
+624
+02:07:55,072 --> 02:07:57,632
+Ve şimdi bu parametreleri kullanmak üzere işlem yapıyoruz.
+
+625
+02:07:57,632 --> 02:07:58,811
+Artık bakın arkadaşlar.
+
+626
+02:07:59,315 --> 02:08:10,235
+Şu fonksiyonu kullansam, şu MOV komutunu kullansam, BP'nin artı altı offsetindeki değeri al, bunu BX'e ata dediğimiz zaman şu işlem gerçekleşiyor.
+
+627
+02:08:10,876 --> 02:08:17,256
+BP artı altı olduğu için burada varsayılan segment değeri olarak stack segment kullanılıyor.
+
+628
+02:08:17,956 --> 02:08:24,536
+BP burayı gösterdiğine göre, bu adresi gösterdiğine göre, buradan altı offset öte, bakın zaten B'nin kendisiydi.
+
+629
+02:08:24,880 --> 02:08:40,880
+Dolayısıyla ben şu işlemi yaptığım zaman, bunun arka planında gerçekleşen işlem şu, stack segmentin BP artı 6 offsetindeki değeri alıp, bunu alıp, AX'e atamış oluyoruz.
+
+630
+02:08:42,640 --> 02:08:44,520
+Şöyle yapacaktık onu, yanlış yaptık.
+
+631
+02:08:48,916 --> 02:08:56,715
+Bu komutu çalıştırdığımızda, bakın varsayılan segment değeri data segment değil artık. Çünkü içeride BP yazmacını kullanıyorum.
+
+632
+02:08:57,007 --> 02:09:04,988
+eğer ki içeride BX, SI veya DI kullanmış olsaydım, varsayılan segment yazmacı olarak DS kullanılacaktı.
+
+633
+02:09:05,028 --> 02:09:09,247
+Ama BP kullandığım için içeride varsayılan segment değeri stack segment.
+
+634
+02:09:09,367 --> 02:09:13,047
+Dolayısıyla stack segmentin BP artı 6 offsetine gidiyor.
+
+635
+02:09:13,167 --> 02:09:15,407
+O da B değerimize karşılık geliyor.
+
+636
+02:09:15,507 --> 02:09:17,547
+B değerimizi biz BX'de barındırıyorduk.
+
+637
+02:09:18,612 --> 02:09:27,891
+Diğer parametremiz ise BP artı 8'de. Dolayısıyla stack segmentin BP artı 8 offsetindeki değeri de AX parametresi olarak aldık.
+
+638
+02:09:27,992 --> 02:09:32,771
+Bundan sonra yaptığımız işlemler GCD işleminin aynısı. Şunları yapıyoruz.
+
+639
+02:09:33,851 --> 02:09:40,331
+A ve B parametrelerini birbiriyle karşılaştırıyoruz. Eğer ki A parametresi daha büyük ise
+
+640
+02:09:41,171 --> 02:09:47,791
+işlemlerimize devam ediyoruz ama A'daki parametre daha küçükse A ile B'nin yerini değiştiriyoruz.
+
+641
+02:09:48,411 --> 02:09:53,152
+A parametresinde her zaman yüksek değer olsun istiyoruz. Şurada exchange işlemi yaptık.
+
+642
+02:09:53,671 --> 02:09:58,131
+Daha geçen haftaki yaptığımız işlemin aynısı. Daha sonra sonlanma koşulunu kontrol ediyoruz.
+
+643
+02:09:58,131 --> 02:09:59,451
+Sonlanma koşulu neydi?
+
+644
+02:10:00,000 --> 02:10:10,039
+iki tane işaretsiz A ve B sayısı girdiğimiz varken, B sayısı 0 olduğu durumda, greatest common divisor dediğimiz durumda, A, 0, A'ya eşit.
+
+645
+02:10:10,559 --> 02:10:20,199
+Dolayısıyla ikinci parametre 0 mı diye kontrol ediyoruz. Eğer ikinci parametre 0 ise, bu durumda doğrudan exit işlemine gidiyoruz.
+
+646
+02:10:20,199 --> 02:10:24,199
+Exit işleminde de zaten AX'de dönüş değerim var.
+
+647
+02:10:24,564 --> 02:10:32,444
+yığında korumak için attığım değerleri çekip geri dönüyorum. Eğer ki BX 0 değilse, bu durumda ne yapmam lazım?
+
+648
+02:10:33,104 --> 02:10:40,644
+GC'de A virgül B eşittir, GC'de B virgül A'nın B'ye bölümünden kalan. Bunları hesaplayacağım.
+
+649
+02:10:41,384 --> 02:10:49,224
+Bu durumda DX yazmacını sıfırlıyorum. BX'de B değerim var. AX'de de büyük sayım vardı. A parametrem var.
+
+650
+02:10:50,355 --> 02:10:55,756
+a'yı b'ye bölüyorum. Kalan değerimiz dx'de. Zaten orada olmasını istiyorduk.
+
+651
+02:10:56,195 --> 02:11:00,115
+a parametresinde ise bx'deki değeri atamam lazım. Onu da atıyorum.
+
+652
+02:11:01,011 --> 02:11:06,611
+dx'deki değerimizde BX'de olacak şekilde tekrar döngümü devam ettiriyorum.
+
+653
+02:11:06,711 --> 02:11:09,431
+Ta ki ne zamana kadar? B parametresi sıfır olana kadar.
+
+654
+02:11:10,011 --> 02:11:14,871
+Dolayısıyla bu işlemi bitirdiğimizde arkadaşlar, şu return satırına geldiğimizde,
+
+655
+02:11:15,451 --> 02:11:21,871
+içeride geçici olarak kullanmış olduğumuz dx, BX ve BP yazmaçlarını geri çekip orijinal değerlerini yükleyip,
+
+656
+02:11:22,331 --> 02:11:26,791
+AX'de işlem sonuç değerimiz olacak şekilde geri dönmüş oluyoruz. Şuraya döndük.
+
+657
+02:11:27,572 --> 02:11:31,811
+Dönme işlemi sırasında neler oldu bakalım. Tekrar onları da üzerinden geçelim.
+
+658
+02:11:33,132 --> 02:11:35,472
+Şuraya kadar geldik. Exit işleminde.
+
+659
+02:11:36,492 --> 02:11:40,192
+Yığın'ın en üstünden DX'i çekti. DX orijinal değerini atadı.
+
+660
+02:11:41,032 --> 02:11:42,432
+İçeride bozduk ya DX'i.
+
+661
+02:11:43,052 --> 02:11:45,132
+Fonksiyona girerken ki DX değerini çekti.
+
+662
+02:11:45,632 --> 02:11:48,672
+Yine fonksiyona girerken ki orijinal BX değerini geri çekti.
+
+663
+02:11:49,432 --> 02:11:52,892
+Alt yordama girerken ki orijinal BP değerini çekti.
+
+664
+02:11:53,012 --> 02:11:54,811
+Daha sonra RETV satırına geldi.
+
+665
+02:11:55,188 --> 02:12:16,567
+REDF satırında, yığının artık en üstündeki değer, SP artık şurayı gösteriyor, bakın. SP bu satırı gösteriyor. En üstündeki değeri çekti ve Instruction pointer'a yükledi. Sıradaki değeri çekti ve kod segment değeri olarak yükledi. Artık şu satırı gösteriyoruz. Ana yordamda POP AX ile gösterdiğimiz satırı gösteriyoruz.
+
+666
+02:12:17,043 --> 02:12:24,723
+Bu noktada yığını atmış olduğumuz iki tane parametreyi dummy POP işlemleriyle okuyacak olduk.
+
+667
+02:12:25,344 --> 02:12:30,083
+İlk okuduğumuz değer boş olarak şu aşamada bir hatamız oldu tabii onu söylemek lazım.
+
+668
+02:12:31,323 --> 02:12:35,663
+Burada bir boş okuma yapıyoruz ama AX'de dönüş değerimiz vardı.
+
+669
+02:12:35,663 --> 02:12:43,063
+AX'deki dönüş değerini alıp da eğer ki biz onu POP'la bozarsak dönüş değerimizi bozmuş oluyoruz.
+
+670
+02:12:44,595 --> 02:12:45,995
+Yukarıda olması lazım.
+
+671
+02:12:48,855 --> 02:12:51,395
+Şuraya yazalım. Bunu da koment alt edelim.
+
+672
+02:12:52,675 --> 02:12:55,455
+Dolayısıyla şimdi en son şeye gelmiştik şurada.
+
+673
+02:12:56,315 --> 02:13:00,415
+Return işlemini çalıştırdık. Return işlemini çalıştırdığımızda şu satırı gösteriyor.
+
+674
+02:13:00,535 --> 02:13:01,535
+Daha yürütmedik bunu.
+
+675
+02:13:02,195 --> 02:13:04,855
+Ama yığının en üstünde B ve A değerleri var.
+
+676
+02:13:05,655 --> 02:13:07,035
+AX'de dönüş değerimi tutuyor.
+
+677
+02:13:07,155 --> 02:13:09,435
+AX'deki dönüş değerini sonuç olarak yazdım.
+
+678
+02:13:09,844 --> 02:13:34,744
+Daha sonra yığının en üstünde B değerim var. 60 olduğum B değeri var. Onu bu dummy bir POP işlemiyle okudum. Yine ikinci bir dummy POP işlemiyle bu sefer yığının 60 olduğumuz A değerini okuduk. Şurada bu A değerini de dummy olarak okuduk. İkinci satır. Son olarak da REDV yapıyoruz. REDV yaptığımızda yığının en üstündeki değeri alıp İP'ye yüklüyor.
+
+679
+02:13:35,188 --> 02:13:41,967
+Daha sonra yığının en üstündeki değeri alıp CS'ye yüklüyor. Bu da bizim işletim sistemimize dönüşümüzü sağlamış oluyor.
+
+680
+02:13:42,648 --> 02:13:58,007
+Bu örnek arkadaşlar, yığından iki adet parametre aktarıp yazmaçtan bir tane parametre döndüğümüz durumda yığına atılan parametrelerin ana fonksiyon tarafından kaldırıldığı duruma bir örnek oluşturmuş oluyor.
+
+681
+02:13:59,387 --> 02:14:02,028
+Burayla ilgili sormak istediğiniz bir şey var mı?
+
+682
+02:14:12,435 --> 02:14:14,395
+Şimdi bu iki fonksiyonu değerlemeye çalışalım.
+
+683
+02:14:47,667 --> 02:14:49,487
+Daha sonra ikisini birlikte linkleyelim.
+
+684
+02:15:13,684 --> 02:15:19,684
+egzemizin ismi ana programa ilişkin olarak ana olsun. Daha sonrasında da bunu
+
+685
+02:15:19,684 --> 02:15:34,684
+bir inceleyelim. DEVAP'da inceleyelim. Şimdi neredeyiz bir bakalım. Şurada yana alacağım bunları.
+
+686
+02:15:42,387 --> 02:15:47,287
+Şimdi bakın, ilk başta yaptığımız işlem, şurada yığına atacağımız işlemler.
+
+687
+02:15:48,667 --> 02:15:51,967
+Sıfır değerini de attık. Dolayısıyla şu anda şu iki satır yığında var.
+
+688
+02:15:52,448 --> 02:15:54,188
+Hemen kontrol edelim. Dovam edelim.
+
+689
+02:15:54,188 --> 02:15:57,608
+Stack segmentin, SP'miz kaç? 3C.
+
+690
+02:15:58,747 --> 02:16:06,068
+Bakın, OS CS değerimiz 0.75A'mış. OS IP değerimiz 0.00. Tamam, güzel.
+
+691
+02:16:06,608 --> 02:16:08,367
+Şimdi tekrar nerede kaldığımızı görelim.
+
+692
+02:16:08,916 --> 02:16:15,315
+Data segment değerimizi ayarladık. Şimdi yığına iki tane değer atacağız. A sayısı ve B sayısını yığına atacağız.
+
+693
+02:16:16,275 --> 02:16:21,996
+Push fonksiyonu yazmaç kullanabilir, memory adres kullanabilir. Şu anda bir memory adres kullanıyor.
+
+694
+02:16:21,996 --> 02:16:28,855
+Push, köşeli parantez 0 ne demek? Data segmentin 0 numaralı offsetindeki word değerini yığına at demek.
+
+695
+02:16:29,596 --> 02:16:30,536
+Trash ettik bunu.
+
+696
+02:16:31,572 --> 02:16:45,231
+Şu anda tekrar stack segmentin artık 3A'ya düştü adres değeri bakın. 3A'sına bakalım. 12 değerini yığını attık. Bizim ilk parametremiz 12'ydi zaten. Onun yığını attık. Daha sonra tekrar nerede kaldığımıza bakalım.
+
+697
+02:16:45,592 --> 02:16:58,971
+Şimdi de data segmentin 2 numaralı offsetindeki değeri attık. Şimdi tekrar stack segmentin 3, kaç oldu? 3.8 olması lazım. 3.38 numaralı adresine bakalım. 12 ve 8 değerleri artık yığında mevcut.
+
+698
+02:17:00,147 --> 02:17:04,307
+Şimdi bu noktada dışarıdan kullandığımız bir fonksiyon çağırıyoruz.
+
+699
+02:17:04,467 --> 02:17:07,288
+Call, GC, D, Prokis'in bir fonksiyon çağırıyoruz.
+
+700
+02:17:07,367 --> 02:17:09,147
+Bu fonksiyon bu dosya içerisinde yok.
+
+701
+02:17:09,768 --> 02:17:10,427
+Nerede varmış?
+
+702
+02:17:10,547 --> 02:17:11,987
+External olarak tanımlanmış.
+
+703
+02:17:12,507 --> 02:17:15,747
+External olarak bunun tam olarak tanımlı olduğu yeri nerede bulduk?
+
+704
+02:17:16,147 --> 02:17:19,487
+Linkleme aşamasında iki tane obje dosyasını verdiğimiz anda bulmuştuk.
+
+705
+02:17:19,487 --> 02:17:20,487
+Şimdi orayı...
+
+706
+02:17:21,587 --> 02:17:36,368
+oraya dallandık. Bakın, yığına içeride kullanıp bozacağımız, geçici olarak bozacağımız BP değerini yığına atarak başlıyoruz. Daha sonra bu SP değerimiz, yani 32H değerini BP'ye attık ve sabit bir referans oluşturduk.
+
+707
+02:17:37,268 --> 02:17:57,007
+BP değerimiz artık bakın şu BP değerine göre B ve A sayılarının yeri belli. Ama biz içeride tekrar dummy olarak kullanacağımız Push BX ve Push DX işlemleri var. Onları yaptığımız zaman bakın SP değeri bozuluyor. Dolayısıyla SP'ye göre bir referans tutmamız mümkün değildir zaten. Şu aşamada
+
+708
+02:17:57,523 --> 02:18:14,723
+yığının en dolu olduğu ana ulaştık. Buna tekrar bakalım. Stack, segment, virgül. Kaç oldu artık? 2E oldu adresimiz. Bakalım. Bakın. Şu yapıyı görüyoruz burada. En altta şu iki değer. Şöyle yapabilir miyiz acaba bakalım.
+
+709
+02:18:20,788 --> 02:18:46,388
+Bu iki değer, yani 075A, işletim sistemi CS değeri. Şu işletim sistemi IP değeri. Şu 12 değerimiz 0000C. Dikkat edin, Lidlendiğim formatında olduğu için. Bu A parametresi, yığına attığım A parametresi. 00008, yığına attığım B parametresi. Şuradaki değer
+
+710
+02:18:47,028 --> 02:19:04,488
+Ana yordamda alt fonksiyonu çağırdığım anda bir de geri dönüş değerim olması lazım. Bu ana yordama geri dönüş kod segment değerim şu, şuradaki değer. Ana yordam offset değerim, geri dönüş offset değerim.
+
+711
+02:19:04,979 --> 02:19:12,899
+Şu, yığını attığım BP, şu anda tek bir fonksiyon kullandığım için kimse bunu boz, yani orijinal değeri yokmuş zaten ama olabilirdi de.
+
+712
+02:19:13,479 --> 02:19:18,000
+Bu, yığını attığım BX değeri, şu ise yığını attığım DX değeri.
+
+713
+02:19:18,539 --> 02:19:22,139
+Şu an arkadaşlar, bu fonksiyon içerisinde
+
+714
+02:19:22,512 --> 02:19:43,352
+yığının en dolu olduğu an. Eğer burada alt yordamımız recursive bir fonksiyon olmuş olsaydı, kendis kendini çağırdığı durumları da düşünecek olursak, yığının en dolu olduğu an recursive zincirin en uç durumu olacaktı. Ama şu anda iç içe çağırmadığımız için, döngüsel olarak çağırdığımız için yığının en dolu olduğu an burası olmuş oluyor.
+
+715
+02:19:50,420 --> 02:19:52,739
+Nerede kaldığımızı hatırlayalım tekrardan.
+
+716
+02:19:55,739 --> 02:20:05,060
+Şimdi BX yazmacını aktarmış olduğumuz B parametresini aktarmaya, göndermiş olduğumuz B parametresini kopyalamaya çalışacağız.
+
+717
+02:20:05,159 --> 02:20:10,180
+Bakın BX'e bakın, BX'deki değer 0.8 oldu. B parametresini kopyalayabildik.
+
+718
+02:20:10,600 --> 02:20:12,939
+Bu sabit referans işlemiyle yapabildiğimiz bir durum.
+
+719
+02:20:13,500 --> 02:20:17,299
+Tekrar Y'ın üzerinden aktardığımız A parametresini de AX'e aldık.
+
+720
+02:20:17,940 --> 02:20:25,100
+AX'deki değeri kontrol edebilirsiniz. Şimdi bu noktada birbirlerine göre küçüklük, büyüklük durumlarına bakıyoruz.
+
+721
+02:20:25,680 --> 02:20:38,560
+A daha büyük olduğu için swap işlemini geçtik. B'deki değerim sıfır mı? Hayır. O zaman DX'i sıfırlıyorum ve DX, AX, 32 bitlik sayısını BX'e bölüyorum.
+
+722
+02:20:42,835 --> 02:20:54,876
+bölüm değerim 1, kalan değerim 4, 4, DX'de duruyor. Dolayısıyla bir sonraki döngüde B parametresi olarak 4'ü kullanacağım.
+
+723
+02:20:55,095 --> 02:21:02,955
+A parametresi olarak da az önce B'deki olan değer yani 8 değerini kullanmam lazım. Bunun için MOV AX, BX işlemini yapıyorum.
+
+724
+02:21:02,955 --> 02:21:08,915
+AX'de 8 oldu, BX'de 4 oldu. Tekrar döngünün başına döndüm.
+
+725
+02:21:09,075 --> 02:21:33,015
+B parametrem sıfır mı? Hayır. Tekrar böl. Kalan değerini dx'de tut. B değerini a'ya ata ve tekrar başa dön. Bu durumda a'da 4, b'de sıfır değeriyle kaldık. B'deki değerim sıfır mı? Evet.
+
+726
+02:21:35,507 --> 02:21:47,487
+Exit'e git, Exit'e gittiğimiz anda, JIN'da bu alt fonksiyonda geçici olarak kullanmış olduğumuz parametreler, yazmaçları, orijinal değerleriyle geri yüklüyoruz.
+
+727
+02:21:47,587 --> 02:21:54,608
+Dx'in orijinal değeri sıfırdı, Bx'in orijinal değeri sıfırdı, BP'nin orijinal değeri sıfırdı. Bunları geri yükledik.
+
+728
+02:21:54,608 --> 02:21:59,608
+Daha sonra RETF ile şu aşamada nereye kadar geldik? Bakın arkadaşlar, şu aşamada.
+
+729
+02:22:00,399 --> 02:22:12,439
+Şu satıra kadar geldik. Artık stack pointer şurayı gösteriyor. Bu satırı gösteriyor. Üç tane değer yığından çektim. Yığına da tekrar bakmış olalım. Stack segmentin 34 numaralı adresine baktık.
+
+730
+02:22:14,067 --> 02:22:18,608
+Ana yordama dönüş offset ve ana yordama dönüş CS değerleri var sırasıyla.
+
+731
+02:22:19,147 --> 02:22:30,067
+RETF işlemini çalıştırdıktan sonra tekrar dump edip stack segmentin 38'ine baktığımız zaman sıradaki değerlerim yığını atmış olduğum parametreler var artık.
+
+732
+02:22:31,219 --> 02:22:37,680
+Bunları, yığın atmış olduğum bu parametreler yığında durması sıkıntı çünkü işletim sisteme geri dönüş değerimi bozacak.
+
+733
+02:22:38,099 --> 02:22:41,159
+Ama AX yazmacı üzerinden de ben bir parametre dönüşü yaptım.
+
+734
+02:22:41,239 --> 02:22:46,319
+Dolayısıyla döndüğüm değeri data segmentte uygun şekilde sakladım.
+
+735
+02:22:46,459 --> 02:22:48,419
+Data segmentin sıfırından itibaren bakalım.
+
+736
+02:22:49,279 --> 02:22:52,979
+A parametrem, B parametrem ve G, C, D değerim burada mevcut.
+
+737
+02:22:53,340 --> 02:22:54,379
+Dört değerini yazdım.
+
+738
+02:22:55,092 --> 02:23:05,952
+Dolayısıyla şimdi yığının en üstünde B ve A parametreleri var. Bunları yığından çekmem lazım ki ana yordamı return işleminde sıkıntı olmasın.
+
+739
+02:23:07,032 --> 02:23:14,812
+Yığından dummy bir çekme yaptım, tekrar dummy bir çekme yaptım. Artık yığına bakacak olursak arkadaşlar, stack segment 3C.
+
+740
+02:23:15,731 --> 02:23:23,371
+Yığın'ın en üstünde işletim sistemine dönüş offset değeri ve işletim sistemine dönüş segment değeri var. Dolayısıyla doğru yerdeyim.
+
+741
+02:23:24,072 --> 02:23:33,531
+RETFE yaptığım zaman işletim sistemine dönmüş oldum. Tamam. Bu örneğimiz bu şekilde bir örnek. Dolayısıyla ne yapmış olduk?
+
+742
+02:23:34,992 --> 02:23:40,792
+Yığın üzerinden iki tane Word aktardık. Geri dönüş değerimiz yazmaç üzerinden döndü.
+
+743
+02:23:41,459 --> 02:23:48,059
+ve yığını atılan parametreleri kaldıran ana yordamın kendisi oldu. Değil mi? Bu şekilde bir örnek var.
+
+744
+02:23:48,180 --> 02:23:56,919
+Şimdi, aynı örnekte, yığından parametre kaldırma işlemini, ana, alt yordama yükleyelim.
+
+745
+02:23:57,379 --> 02:23:59,099
+Tamam mı? Bunu yapmak için ne yapacağız?
+
+746
+02:24:01,419 --> 02:24:05,459
+Bunu yapmak için, şimdi ne dedik? Parametre dönüş işlemi...
+
+747
+02:24:06,164 --> 02:24:12,884
+Alt yordamda olacak. Dolayısıyla ben ana yordama geri döndüğüm zaman artık yığında çöp veri kalmaması lazım. Değil mi?
+
+748
+02:24:14,904 --> 02:24:18,764
+Dolayısıyla bu çekme işlemini alt yordamda. Bunu alt yordam nasıl yapıyor arkadaşlar?
+
+749
+02:24:19,524 --> 02:24:21,244
+Bunu alt yordam şöyle yapıyor.
+
+750
+02:24:21,963 --> 02:24:31,664
+RETF veya Return komutundan sonra yazmış olduğumuz bir çift değer sayı varsa, bu çift değer sayı, SP değerini geri dönüşte
+
+751
+02:24:32,147 --> 02:24:43,827
+o kadar daha arttırıyor. Mesela buraya 4 dediğimiz vakit, bunun anlamı şu, RETF4 dediğimizde, bakın bu satıra kadar geldiğimizde en son BP de yığından çekildi.
+
+752
+02:24:44,288 --> 02:24:49,647
+Stack pointer şurayı gösteriyor, ana CS'yi gösteriyor, pardon ana IP'yi gösteriyor, burayı gösteriyor.
+
+753
+02:24:50,567 --> 02:24:55,387
+Ve ben RETF4 şeklinde çalıştırırsam gerçekleşecek işlem şu.
+
+754
+02:24:56,884 --> 02:25:23,563
+yığının en üstündeki değeri Instruction Pointer'a atıyor. Bir sonraki değeri CS'ye atıyor. Daha sonra bunları yığından çekmeden SP değerini 4 arttırıyor. 2, 4. Yani nereye geldi? SP değerimiz, işletim sistemi Instruction Pointer değerine geldi. Bu iki değeri hiç kullanmadan, onlar yığında kaldı ama çöp olarak kaldı. Stack Pointer'ı 4 arttırarak
+
+755
+02:25:23,855 --> 02:25:47,995
+otomatik olarak bunları boş geçmiş oluyor, boş okumuş oluyor. Bu durum, dediğim gibi, yığında iki tane parametre aktarıp, ana yordamdan, alt yordama, geri dönüş değerini yazmaçla sağlayıp, yığında kalan boş veya çöp değerleri kaldırma görevinde alt yordama yüklediğimiz bir durum örneği olmuş oluyor. Şimdi bunları tekrar değerleyerek bakalım.
+
+756
+02:25:53,780 --> 02:25:55,780
+Tekrar bunları derleyerek bakacağız.
+
+757
+02:25:58,120 --> 02:25:59,260
+Şöyle bunu ama
+
+758
+02:25:59,260 --> 02:26:04,000
+save edelim. Bunu da save edelim.
+
+759
+02:26:07,796 --> 02:26:11,155
+Ana yordamımızın olduğu dosyayı derledik.
+
+760
+02:26:12,636 --> 02:26:16,315
+Alt yordamımızın olduğu dosyayı derledik.
+
+761
+02:26:17,376 --> 02:26:19,236
+Bu ikisini birlikte linkliyoruz.
+
+762
+02:26:19,416 --> 02:26:22,076
+Ama dosya ismi olarak yine ana ismini verdim.
+
+763
+02:26:23,976 --> 02:26:25,376
+Derleme sonucum gerçekleşti.
+
+764
+02:26:25,476 --> 02:26:27,315
+Şimdi bunları debug ile bir inceleyelim.
+
+765
+02:26:29,155 --> 02:26:30,296
+Şimdi trace ediyorum.
+
+766
+02:26:30,296 --> 02:26:32,796
+İşletim sistemine geri dönüş değerlerini.
+
+767
+02:26:33,236 --> 02:26:59,236
+attık, data segmenti kullanır hale geldik. Yığına A parametresini attım, yığına B parametresini attım. Alt yordamı çağırdım. Alt yordam içerisinde, şöyle gösterelim. Şuradayız şu anda. Alt yordamda BP'yi yığına attık. Sabit bir referans oluşturduk. İçeride geçici olarak kullanacağım BX ve DX'i attım. Daha sonra A yazmacını eriştim. A değerimizi A...
+
+768
+02:27:00,628 --> 02:27:10,228
+B değerimizi BX'e kopyaladık, A değerimizi AX'e kopyaladık, birbirlerine göre küçüklük büyüklüklerini kontrol ettik. Büyük olarak A sayısı var, devam ediyoruz.
+
+769
+02:27:11,168 --> 02:27:24,968
+İkinci parametre sıfır mı? Hayır. Bölme işlemi yap, değerleri güncelle. İkinci parametre sıfır mı? Hayır. Bölme işlemi yap, değerleri güncelle. İkinci parametre sıfır mı? Evet.
+
+770
+02:27:26,164 --> 02:27:35,123
+Exit'e gel. Exit etiketimizde ne var? Exit etiketimizde geçici olarak kullandığımız yaz maçlarının orijinal değerlerini yüklediğimiz iki satır var.
+
+771
+02:27:36,283 --> 02:27:42,864
+Ve RETF4'e kadar geldik. Şimdi arkadaşlar bu durumda stack segmenti kaçtaymışız? 34'üne bakalım.
+
+772
+02:27:43,924 --> 02:27:44,564
+Bakın ne var?
+
+773
+02:27:46,864 --> 02:27:51,424
+İşletim sistemin şey ana yordama, diğeri dönüş, offset diğeri, ana IP var.
+
+774
+02:27:51,987 --> 02:27:57,687
+Daha sonra ana CS var, B parametresi var ve A parametresi var.
+
+775
+02:27:58,567 --> 02:28:04,667
+Fakat biz şu aşamada RETV04'ü çalıştırdığımızda nereye geldik? Bakın arkadaşlar.
+
+776
+02:28:05,459 --> 02:28:30,819
+geri dönüş değerimize geldik. Bu zaten problem olacağını zannetmiyorduk. Çünkü yığının en üstünde ana yordama dönüş, IP ve CS değerleri vardı. Dolayısıyla şu satıra döndük. Ama bu aşamada yığına bir bakalım arkadaşlar. Yığın ne olmuş? Dump edip stack segmentin 3C'sine baktığımızda bakın arkadaşlar aktarmış olduğumuz parametreler SP değerinin 4 arttırılmasıyla birlikte çöp oldu. Ama şuna bakalım.
+
+777
+02:28:31,263 --> 02:28:57,984
+Dump edip stack segmentin 3A, 3.8'inden itibaren bir bakalım. Oradaki değerler çöp olmuş zaten. Geri dönünce onları bozmuş. Aslında bunları bozmayada bilirdi. Orijinal değerleri kalmış olabilirdi ama onları da bozmuş. Gördüğünüz gibi. Dolayısıyla şu anki halimizde, orijinal durumumuzda dump edip stack segmentin stack pointer adresinden itibaren, yani 34'ünden itibaren, 34 değildi pardon.
+
+778
+02:28:58,772 --> 02:29:24,072
+Neydi onu unuttum? 3C pardon. Dump edip stack segmentin 3C'sinden itibaren baktığımızda, yığının artık en üstünde işletim sistemine dönüş offset değeri ve sonrasında da işletim sistemine geri dönüş segment değeri mevcut. Dolayısıyla ben burada geri dönüş değerimi de tekrar AX'deki değerimi de yerine yazdığımda, dump edip data segmentin sıfırından itibaren baktığımda, bakın burada.
+
+779
+02:29:24,595 --> 02:29:33,615
+hesaplamış olduğumuz GCD değeri yazılmış durumda. Tekrar bu noktada da trace ettiğimizde de işletim sistemine geri dönmüş oluyoruz.
+
+780
+02:29:33,615 --> 02:29:36,427
+Tamam. Bu örnekte...
+
+781
+02:29:41,492 --> 02:29:59,492
+Bu da geçerli. Bu geçerli. Bunu da nerede kullanacağız? Bunu da şu ana kadar hangi örnekleri yaptık? Değer yazmaç üzerinden döndürülürse bu şekilde ilerledik. Fakat eğer ki geri dönüş değerimizi yine yığın üzerinden aktarmak istersek...
+
+782
+02:30:00,000 --> 02:30:02,659
+Bu durumda da senin vermiş olduğun örneği yapmamız gerekecek.
+
+783
+02:30:02,819 --> 02:30:06,020
+Yığının belirli bir gözüne değer yazmamız gerekecek.
+
+784
+02:30:06,560 --> 02:30:11,860
+Aynen bu kullanımda geçerli olacak ve bunun amacı da yığın üzerinden parametre dönüşü içinde.
+
+785
+02:30:12,400 --> 02:30:15,920
+Birden fazla değer dönüşü içinde kullanabiliriz ama burada bir kısıtımız var.
+
+786
+02:30:16,780 --> 02:30:23,880
+Yığına kaç tane parametre atarak alt fonksiyona gittiysek ancak ve ancak o kadar parametre yığından dönebiliriz.
+
+787
+02:30:24,404 --> 02:30:34,043
+Yani biz yığına iki tane word attıysak yığından üç tane word dönemeyiz. En fazla iki tane word değeri dönebiliriz. Bu şekilde bunu kullanmak mümkün.
+
+788
+02:30:34,804 --> 02:30:41,344
+Şimdi zaten bir sonraki aşamada bunları yapacağız. Yine kodumuzu şu şekilde güncelleyeceğiz.
+
+789
+02:30:42,824 --> 02:30:51,703
+Bu sefer yığına atmış olduğumuz iki tane parametreye karşılık geri dönüş değerini de yine yığından kullanmak istiyoruz. Tamam mı?
+
+790
+02:30:52,564 --> 02:30:58,184
+geri dönüş değerimizi yine yığından kullanacağız. Peki yığının neresinde kullanmak bunu mantıklı?
+
+791
+02:31:00,943 --> 02:31:09,984
+Yığından değerleri çekmek eğer ki ana yordamın işi ise bunu herhangi bir göze yaparak yapabiliriz. Yani şunu demek istiyorum.
+
+792
+02:31:11,476 --> 02:31:13,496
+Birinci varsayımımız şu.
+
+793
+02:31:13,916 --> 02:31:20,536
+Yığından iki tane parametre aktarıyorum ve yığından yine bir tane parametre word değeri geri döndüreceğim.
+
+794
+02:31:21,156 --> 02:31:26,876
+Bu word değerini aktarırken ki B parametresinin olduğu göze de yazabilirim.
+
+795
+02:31:27,396 --> 02:31:29,476
+A parametresinin olduğu göze de yazabilirim.
+
+796
+02:31:30,496 --> 02:31:36,996
+Çünkü yığından göndermiş olduğumuz parametreleri çekme görevini ana yordama verdik bu örnekte.
+
+797
+02:31:37,476 --> 02:31:38,656
+Tamam mı?
+
+798
+02:31:39,412 --> 02:31:44,391
+Şimdi bu durumda bizim alt yordamımızın template'i ne yapacak?
+
+799
+02:31:45,351 --> 02:31:49,152
+Yığından iki tane parametre kabul edecek ve yığına bir tane değer yazacak.
+
+800
+02:31:49,811 --> 02:31:54,152
+Yığına atılan değerlerin çekilmesi ve okulmasıyla ilgili ana yordam görevli.
+
+801
+02:31:54,511 --> 02:31:55,772
+O zaman şöyle yapmamız lazım.
+
+802
+02:31:57,351 --> 02:32:04,412
+Ben bu ana yordama fonksiyonu çağırdıktan sonra döndüğüm vakit
+
+803
+02:32:05,459 --> 02:32:07,219
+Ne olacak arkadaşlar? Bakın.
+
+804
+02:32:08,579 --> 02:32:12,000
+Yığında iki tane çöp değerim olacak. B ve A değerlerim olacak.
+
+805
+02:32:12,000 --> 02:32:23,319
+Eğer ki ben B'nin yerine geri dönüş değerini yazmışsam, yapmış olduğum ilk POP işleminden sonra şunu çalıştırmam gerekiyor.
+
+806
+02:32:25,539 --> 02:32:29,819
+İlk POP değerinden sonra geri dönüş değerimi eğer B'nin yerine yazmışsam,
+
+807
+02:32:30,355 --> 02:32:46,095
+Bu şekilde bir işlem yapmam lazım. Şu POP'u da açacağız. POP AX, MOV, sonuç virgül AX demem lazım. Ve daha sonrasında da yine POP AX diyerek A'nın dummy olarak okunmasını gerçekleştirmem lazım.
+
+808
+02:32:46,708 --> 02:33:12,768
+Eğer ki geri dönüş değerimi A'nın yerine yazacak olursam, ilk yapacağım POP işlemi B'yi okuyacak. Dolayısıyla dummy okuma olacak. İkinci yapmış olduğumuz POP işlemi de geri dönüş değeri için A'nın yerine yazmış olduğum değeri okuyacak. Dolayısıyla bu iki alternatifimiz mümkün. Şu aşamada örnek olması açısından geri dönüş değerini A parametresinin yerine yazdığımızı varsayalım.
+
+809
+02:33:13,299 --> 02:33:20,099
+tabi burada alt yordamı yazarken, alt yordamın geri dönüşünün nasıl olduğuna karar verdikten sonra ilerleyeceğiz tabi ama
+
+810
+02:33:20,099 --> 02:33:25,279
+burada bu şekilde bir sonuç elde etmiş olmak açısından böyle bir işlem yapalım.
+
+811
+02:33:26,700 --> 02:33:29,119
+Dolayısıyla burada başka yapacağımız bir şey yok.
+
+812
+02:33:29,299 --> 02:33:32,939
+Bu tarafa geldiğimizde ise REDF ile dönüş yapacağız.
+
+813
+02:33:33,879 --> 02:33:38,259
+Bakın arkadaşlar, yalnız bu noktada artık içeride
+
+814
+02:33:39,412 --> 02:33:56,891
+yığından parametre aldığım için, geri dönüş değerini de yığından kullandığım için, artık AX yazmacı da burada geçici olarak kullanarak değerini bozduğum bir yazmaç haline geliyor. O yüzden dolayı A yazmacını da AX yazmacını da pushlayacağım.
+
+815
+02:33:56,891 --> 02:33:57,971
+Tamam mı?
+
+816
+02:33:59,132 --> 02:34:04,011
+Dolayısıyla BP'den sonra AX'i pushladığım için, şurada
+
+817
+02:34:04,011 --> 02:34:05,792
+POP
+
+818
+02:34:06,388 --> 02:34:08,168
+AX'i de eklemem gerekiyor.
+
+819
+02:34:09,008 --> 02:34:10,388
+Tabi buradaki çizim bozuldu.
+
+820
+02:34:10,468 --> 02:34:11,808
+Şimdi onu değiştirelim şöyle.
+
+821
+02:34:14,748 --> 02:34:15,888
+Değiştireceğiz şimdilik.
+
+822
+02:34:18,408 --> 02:34:20,288
+Şimdi ilk değeri BX'i okudum.
+
+823
+02:34:20,588 --> 02:34:21,748
+B'den attığım diye.
+
+824
+02:34:21,848 --> 02:34:24,308
+Önce A sayısını atıyordum.
+
+825
+02:34:24,408 --> 02:34:26,508
+Dolayısıyla yığının altında kalıyordu A sayısı.
+
+826
+02:34:26,628 --> 02:34:30,028
+B sayısı daha düşük bir offsette kalıyor.
+
+827
+02:34:30,128 --> 02:34:33,088
+Dolayısıyla ilk okuduğum BP artı altı ile okuduğum
+
+828
+02:34:33,620 --> 02:34:51,260
+BX olacak. Tabi bunları yapabilmek için size tavsiyem bu şekilde bir stack çizimi yaparak ilerleyin. En altta CS değerimiz var işletim sistemine. Onun üzerinde IP değerimiz var. Onun üzerinde A sayısını attık.
+
+829
+02:34:51,603 --> 02:35:12,783
+Onun üzerinde B sayısını attık. Daha sonra kol işlemi vardı. Far tipinde olduğu için CS ve IP değerleri atıldı. Daha sonra alt yordama girdik. BP değerini attık. AX değerini attık. Daha sonra DX değerini attık. Dolayısıyla bayağı buralar karıştı. Şöyle yazalım şimdi baştan. En altta yazmıyor.
+
+830
+02:35:14,611 --> 02:35:26,651
+En altta işletim sistemine CS dönüş değerim var. Bunun üzerinde işletim sistemine dönüş IP yani 0000 değerimiz var. Daha sonra ne yaptık? Bakın A sayısını attık.
+
+831
+02:35:27,511 --> 02:35:39,391
+Yığına. Daha sonra B sayısını attık. Bu arada şunu da tekrar hatırlatmış olalım. Yığının ilk kullandığım gözü adres değeri olarak yüksek bir adres değeriydi.
+
+832
+02:35:40,147 --> 02:35:47,427
+En son pushladığım satırlar ise daha düşük adres değerleri. Bunu da mutlaka gözden kaçırmamamız lazım.
+
+833
+02:35:48,487 --> 02:35:49,487
+Devam edelim şimdi.
+
+834
+02:35:51,087 --> 02:35:54,007
+A ve B'yi attık. Daha sonra call fonksiyonu çağrıldı.
+
+835
+02:35:54,787 --> 02:35:59,907
+Call yaptık. Dolayısıyla ana yordama dönüş CS değeri yığını atıldı.
+
+836
+02:35:59,907 --> 02:36:04,547
+Koldan dolayı ve yine ana yordama dönüş IP değeri yığını atıldı.
+
+837
+02:36:05,075 --> 02:36:11,075
+Alt yordama geldim. Alt yordamda şurası artık benim BP değerini yazıp yığına attım.
+
+838
+02:36:11,075 --> 02:36:14,075
+Ve MOV BP, SP dedim.
+
+839
+02:36:14,075 --> 02:36:20,875
+Şu aşamada yığına BP'yi dağıttıktan sonra SP değerim burayı gösteriyordu.
+
+840
+02:36:20,915 --> 02:36:29,835
+Bu noktada, SP değeri buraya gösterirken, bunu BP'ye kopyaladığım için, artık burası bizim aynı zamanda BP değerimiz, BP referansımız burası oldu.
+
+841
+02:36:30,415 --> 02:36:40,115
+Ama SP diğer pushlarla birlikte ilerleyecek. Bakın, push AX demişiz. Dolayısıyla içeri girerken ki AX değerimizi kopyaladık, orijinal değerini.
+
+842
+02:36:40,815 --> 02:36:45,215
+BX değerini kopyaladık. Daha sonra DX değerini kopyaladık.
+
+843
+02:36:45,567 --> 02:36:50,287
+ve şu noktaya kadar geldik. Artık SP değerimiz bizim. Şurayı gösteriyor.
+
+844
+02:36:54,579 --> 02:37:03,139
+dikkat edeceğimiz bir nokta şu, push ve pop işlemlerinde SP'nin göstermiş olduğu adrese göre işlem yapılır otomatik olarak.
+
+845
+02:37:03,139 --> 02:37:09,459
+Ama biz burada BP'yi manuel olarak fixlediğimiz için bu referansa göre hesap yapabiliyor olacağız.
+
+846
+02:37:10,399 --> 02:37:15,139
+Bakın arkadaşlar, siz de bu şablonu inceleyecek veya kullanacak olursanız,
+
+847
+02:37:15,924 --> 02:37:38,684
+içeri girer girmez BP'yi puşladıktan sonra fonksiyonlara erişmek istediğinizde bunların referansı hızlıca hesaplanabilir. Eğer ki siz buradaki MOV BP, SP satırını şuraya taşımış olsaydınız, bu durumda ise 2, 4, 6, 8, 10, 12, 14 ve 16 offset ötede A ve B sayısına erişecektik. Buna dikkat ederek
+
+848
+02:37:39,040 --> 02:37:47,180
+siz de ilgili şekilde kodlarınızı geliştirebilirsiniz ama girer girmez SP'yi, BP'yi almak da bir kolaylık oluşturabilir.
+
+849
+02:37:49,220 --> 02:37:50,980
+Geri dönüş için ne demiştik?
+
+850
+02:37:51,720 --> 02:37:55,140
+Yüksekteki parametre, yani düşük adreçteki parametre çöp olacak.
+
+851
+02:37:56,520 --> 02:37:59,020
+A sayısının yerine geri dönüş değerini yazacağız.
+
+852
+02:37:59,860 --> 02:38:05,500
+Şimdi burada standart işlemlerimizi, parametreleri okuduk yine 2, 4, 6.
+
+853
+02:38:06,451 --> 02:38:25,511
+2, 4, 6 ve 8 adreslerinde A ve B parametrenini okuduk. İşlemlerimizi gerçekleştirdik. Şu noktaya geldiğimizde artık AX yazmacında geri dönüş değerimiz mevcut. Bu AX geri dönüş değerini şurada görmüş olduğunuz göze yazmamız lazım. Şöyle işaretleyelim.
+
+854
+02:38:27,796 --> 02:38:42,855
+şuradaki gözün yerine yazmamız lazım. Bu göz hangi offsette? BP artı 2, 4, 6, 8 offsetinde. O zaman geri dönerken MOV BP artı 8 offsetine
+
+855
+02:38:48,371 --> 02:38:57,331
+BP artı 8 offsetine, AX değerini kopyalayıp, şu göz üzerinden geri dönüşü sağlayabilirim. Dolayısıyla şuraya bir virgül koyup,
+
+856
+02:38:59,131 --> 02:39:05,651
+şuraya bir virgül koyup, return değeri de burada saklanmış olacak diye söyleyebiliriz.
+
+857
+02:39:06,739 --> 02:39:26,239
+Şimdi, bu şekilde yaptığımızda, hani tekrar şunu söyleyebilirsiniz, AX'de değer vardı, bunu yığına attık ve tekrar AX'den okuyoruz ama, bunu genelleştirdiğimiz bir durum için illa aynı yazmaçta olup da aynı yazmaç üzerinden okumak zorunda değiliz. Dolayısıyla böyle bir örnek için olduğunu varsayalım bunun. Yani genelleştirdiğimiz durumu düşünün, hiç fark etmez.
+
+858
+02:39:31,891 --> 02:39:36,432
+A parametresini aktarmış olduğumuz yığın satırını ezerek yazdık.
+
+859
+02:39:37,551 --> 02:39:38,971
+A'nın yerine bunu yazdık.
+
+860
+02:39:39,332 --> 02:39:41,131
+A ve B return değeri yok.
+
+861
+02:39:41,231 --> 02:39:41,612
+Dikkat edin.
+
+862
+02:39:41,752 --> 02:39:43,551
+A'nın üzerine ezerek bunu yazdık.
+
+863
+02:39:44,592 --> 02:39:47,211
+Şimdi tekrar derleme işlemlerimizi gerçekleştirelim.
+
+864
+02:39:52,915 --> 02:39:59,655
+linkleme işlemini yapalım. Ana, egze olarak çıktı üretsin. Daha sonrasında da debug işlemimizi yapalım.
+
+865
+02:40:05,620 --> 02:40:27,340
+yığına değerleri attık, ds kullanımını sağladık, a parametresini yığına attık, b parametresini yığına attık, başka bir dosyadaki fartipindeki fonksiyonu çağırdık, girer girmez bp'yi puşladık, bsp'yi bp'ye kopyaladık, artık bizim için bir referans oluştu.
+
+866
+02:40:33,167 --> 02:40:55,887
+başka diğer programlara uygun şekilde sunabilmek adına onları da bozmadan, koruyarak ilerledik. Bu genel düsturumuz bu şekilde olacak. Eğer bir alt programda aktarım olarak kullanmadığımız yaz maçlar olup da bunları geçici işlemler için kullanıyorsak mutlaka ve mutlaka bunları korumak adına girer girmez pushluyoruz. Çıkarken de uygun sırada poplamamız gerekiyor. Tekrar tekrar söylüyorum.
+
+867
+02:40:56,564 --> 02:41:09,244
+Daha sonra B parametresini BX'e attık, A parametresini AX'e attık, AX'e BX'i karşılaştırdık. İkinci parametremiz 0 mı? Hayır. Bölme işlemini gerçekleştirdik.
+
+868
+02:41:10,024 --> 02:41:23,904
+12'ye 8'in GCD'si, 8'e 4'ün GCD'si aynı zamanda. Tekrar bunun için de işlemimizi yürüttük. 8'e 4'ün GCD'si, GCD işlemi de 4'e 0'ın GCD'si. İkinci parametre 0 mı? Evet.
+
+869
+02:41:25,683 --> 02:41:38,484
+AX'de dönüş değerim var. Yani GC'de 12'ye 8'in geri dönüş değeri 4'tü. 4 değerim AX'de. Bunu yığının içerisindeki bir değeri ezeceğiz. Ezmeden önce bir bakalım.
+
+870
+02:41:40,984 --> 02:41:52,423
+Dump edelim stack segmentin 2C'sine bir bakalım. 2C içerisinde neler var? AX değerimiz var. BX değerimiz var.
+
+871
+02:41:55,219 --> 02:41:56,099
+Şu neydi?
+
+872
+02:42:00,020 --> 02:42:01,620
+En üstte DX değerimiz var.
+
+873
+02:42:02,080 --> 02:42:02,280
+Evet.
+
+874
+02:42:02,780 --> 02:42:03,920
+DX değerimiz var.
+
+875
+02:42:04,479 --> 02:42:05,659
+BX değerimiz var.
+
+876
+02:42:06,299 --> 02:42:07,500
+AX değerimiz var.
+
+877
+02:42:08,440 --> 02:42:09,659
+BP değerimiz var.
+
+878
+02:42:10,420 --> 02:42:13,100
+İşletim, ana yordama dönüş offset değerimiz var.
+
+879
+02:42:13,240 --> 02:42:16,080
+Ana yordama dönüş segment değerimiz var.
+
+880
+02:42:16,860 --> 02:42:20,139
+Aktarmış olduğumuz B parametresi var.
+
+881
+02:42:20,920 --> 02:42:23,860
+Aktarmış olduğumuz A parametresi var.
+
+882
+02:42:23,860 --> 02:42:25,840
+Şimdi nerede kalmıştık?
+
+883
+02:42:26,195 --> 02:42:31,536
+A parametresinin yerine geri dönüş değerini ezip yazacağız. Yazdık. Tekrar bakalım.
+
+884
+02:42:33,315 --> 02:42:38,155
+Dump edip, stack segmentin 2, ne olduğunu değer, 2C mi oldu?
+
+885
+02:42:40,195 --> 02:42:45,795
+Bakın, artık A parametresinin yerinde geri dönüş değerimiz mevcut.
+
+886
+02:42:45,915 --> 02:42:47,736
+Şimdi bunları nerede kaldığımıza bakalım.
+
+887
+02:42:48,876 --> 02:42:50,155
+D-i popladık.
+
+888
+02:42:51,295 --> 02:42:52,495
+B-i pop ettik.
+
+889
+02:42:52,948 --> 02:43:17,747
+AX'i popladık, BX, BP'yi popladık ve return satırına kadar geldik. Return ettiğimiz vakit, şu anda bir bakalım tekrar stack segmentin 34 adresine. Ana yordama dönüş değerleri, B parametresi, geri dönüş değerimiz, işletim sisteminde geri dönüş değerlerimiz var. Return ettik. Return ettiğimiz zaman dump edip stack segmentin 3.8'ine bakalım.
+
+890
+02:43:18,739 --> 02:43:38,380
+B parametresi, A parametresi yerinde artık return değerim var. Trace ettim. Bir tane boş POP işlemi yaptım. Şu B parametresini boş olarak okudum. Tekrar POP satırındayım. Bunu da POP'ladıktan sonra artık okuduğum değer, yani şuradan okuduğum değeri AX'e kopyalamış oldum.
+
+891
+02:43:38,772 --> 02:44:00,692
+Bu AX'deki değerimiz de bizim aslında geri dönüş değerimizdi. Bu geri dönüş değerini sonuç yazmacına yazdık. Dump edip data segmentin sıfırından itibaren bakacak olursak, bakın burada A parametresi, B parametresi ve sonuç değerini uygun şekilde yazmış olduk. Return ettiğimizde de işletim sistemine uygun şekilde döndüğümüzü görmüş oluyoruz.
+
+892
+02:44:01,363 --> 02:44:09,203
+Şimdi bu örnekte, yapmış olduğumuz bu örnekte, geri dönüş işleminin yükü tamamen ana yordamdaydı.
+
+893
+02:44:09,984 --> 02:44:20,164
+Ve ekstradan şuradaki bir tane çöp değer, işlemi yaptıktan sonra çöp haline gelen B değerini yığından kaldırmak işlemi görevi de yine ana yordama verilmişti.
+
+894
+02:44:26,868 --> 02:44:43,247
+boş işlemden kurtulmamız mümkün arkadaşlar. Bunun anlamı da şu. Ana yordama geri dönerken, REDV2 ile dönersem, dönüş anında şu satırındayım. Yığının şu gözünü gösteriyorum.
+
+895
+02:44:43,664 --> 02:45:11,664
+ilk değeri çektim, instruction pointer'a yükledim. İkinci değeri çektim, kod segmente yükledim. Ama RETV artı iki olduğu için bu durumda sıradaki stack pointer şu B satırını göstermekle birlikte iki arttırıyorum stack pointer'ı geri dönerken ana yordamın ve artık geri dönüş değerim burayı gösteriyor. Pardon, SP değerim şu satırı gösteriyor. Dolayısıyla ben bu satıra geldiğimde geri dönüş değerim Y'nin en üstündeki değer. Bunu popluyorum, AX'e popluyorum ve
+
+896
+02:45:11,664 --> 02:45:18,103
+okuduğum değeri götürüp sonuca yazıyorum. Burada belki şu da olabilirdi. Bunu tekrar uzatmaya da gerek yoktu.
+
+897
+02:45:20,584 --> 02:45:25,783
+Şunu da yapabilirdik. Tamam. Şimdi bir bunu deneyelim.
+
+898
+02:45:35,572 --> 02:45:42,572
+İkisini birlikte linkleyelim. Çıkan sonuç ana dosyası ana nokta egze olsun. Şimdi bunu debuglayalım. Trace edelim.
+
+899
+02:45:44,312 --> 02:46:01,391
+Değerleri attık, fonksiyonu çağırdık, BPSP referansı oluşturduk. Parametreleri yığından okuduk. Büyük küçüklük karşılaştırması yaptık. İkinci parametre sıfır mı? Hayır. Öyleyse bölme işlemini yap. İkinci parametre sıfır mı? Hayır. Bölme işlemini yap.
+
+900
+02:46:03,507 --> 02:46:29,067
+üçüncü kere aynı işlemi yapıyoruz ve bu durumda ikinci parametremiz sıfır, exit'e gidiyoruz. Burada geri dönüş değerimizi yığına yazdık. Bir bakalım şimdi yığının son durumuna. Bunu zaten daha önce gördüğümüz durumdu. 2C. Yığın dolu. DX var, BX var, AX var, BP var.
+
+901
+02:46:29,652 --> 02:46:51,731
+Ana yordama dönüş, offset değeri, ana yordama dönüş, segment değeri, A parametresi, geri dönüş değerimizi yazmışız burada bakın geri dönüş değerimiz. İşletim sistemine offset, işletim sistemine segment değerlerim mevcut. Şimdi DX'i çektim, BX'i çektim, AX'i çektim, BP'yi çektim. Şimdi RETF2 satırındayım.
+
+902
+02:46:52,180 --> 02:47:02,940
+Tekrar stack segmenti 34 adresinden itibaren görecek olursak, şunu çekecek, IP'ye yükleyecek, şunu çekecek, CS'ye yükleyecek ve SP'yi 2 arttıracak.
+
+903
+02:47:03,040 --> 02:47:07,139
+2 arttırdığı zaman stack pointer burayı göstermek yerine burayı gösterecek.
+
+904
+02:47:07,360 --> 02:47:14,659
+Hemen bunu görelim şimdi. Trace ettim. Nereye geldik? Şu satıra geldik arkadaşlar. Bu satıra geldik.
+
+905
+02:47:15,667 --> 02:47:34,427
+doğrudan çıkan sonucu, yığındaki değeri, sonuç isimli değişkene atamamız mümkün. Yalnız bu aşamada tekrar stack segmentin 3A adresinden itibaren bakalım. Bakın, yığının en üstünde geri dönüş değerim var. Dolayısıyla ben bunu popladığım zaman geri dönüş değerini sonuca yazmış olacağım. Trace edelim.
+
+906
+02:47:34,816 --> 02:47:43,636
+Şimdi de data segmentin sıfırından itibaren dump edelim. Bakın A sayısı, B sayısı geri dönüş değerim uygun şekilde yazılmış oldu.
+
+907
+02:47:44,816 --> 02:47:49,515
+İşletim sistemine geri dönüş de başarılı bir şekilde gerçekleşti. Dolayısıyla bu işlemi de yapmış oldum.
+
+908
+02:47:51,076 --> 02:47:56,116
+Dolayısıyla arkadaşlar burada yığın üzerinden bir değer döndürürken
+
+909
+02:47:56,531 --> 02:48:02,331
+Uygun bir pratik, az önce anlattığım yöntemlerin hepsi geçerli ama uygun bir pratik şu olabilir.
+
+910
+02:48:03,011 --> 02:48:17,171
+Geri dönüş değerini adres olarak yüksek olan parametreye yaparsam, şu aradaki çöp değerleri RETV yanına bir sayı yazarak otomatik olarak SP değerinin arttırılmasıyla fazladan POP işlemlerinden kurtulabiliriz ana yordam tarafından.
+
+911
+02:48:17,671 --> 02:48:21,731
+Dolayısıyla siz de bunu bir şablon uygulama olarak kendiniz tarafında belirleyin.
+
+912
+02:48:22,227 --> 02:48:31,907
+Geri dönüş değerlerimiz yığından aktarılan parametreler içerisinde en yüksek adreste olandan itibaren yerleştirilsin.
+
+913
+02:48:32,288 --> 02:48:47,788
+Düşük adresleri REDF'nin yanında veya RETUR'nun yanında vermiş olduğumuz çift sayı parametresiyle birlikte onları boş döndürerek, POP yapmadan direkt SP değerini arttırarak onları, o çöp değerleri geçmiş olabiliriz.
+
+914
+02:48:47,788 --> 02:48:50,207
+Dolayısıyla bu yaklaşım çerçevesinde.
+
+915
+02:48:50,227 --> 02:49:08,727
+siz de ilerlemenizi, kod gerçeklemenizi gerçekleştirmiş olursunuz, yaparsınız. Dolayısıyla bu haliyle arkadaşlar yığın üzerinden parametre aktarımının pek çok boyutunu görmüş olduk. Bunlar nelerdi? Yığın üzerinden bir veya iki parametre aktarıp
+
+916
+02:49:09,363 --> 02:49:29,543
+yazmaç üzerinden değer döndürmekti. Bu durumda yığındaki parametreleri kaldırmak alt yordam tarafından veya ana yordam tarafından gerçekleştirilebilirdi. Bu durumda ana yordam yığından parametre kaldırmak isterse iki tane dummy POP işlemi yapabilir veya SP değerini dört arttırabilir. Bu da mümkün.
+
+917
+02:49:30,100 --> 02:49:41,460
+Diğer taraftan alt yordam kaldırıyorsa, REDF yanında kaç tane çöp parametre varsa çarpı 2 kadar bir değerle REDF'in yanında bunu yazarsa alt yordam bunu kaldırmış olabilir.
+
+918
+02:49:42,880 --> 02:49:46,600
+İkinci bir örnekte yığın üzerinden parametre aktarıp yığın üzerinden okuduk.
+
+919
+02:49:47,360 --> 02:49:56,960
+Bununla ilgili olarak yığından kaldırma görevini hangi tarafa yüklediğimize göre farklı işlemler olabileceğini gördük.
+
+920
+02:49:57,556 --> 02:50:22,256
+Eğer yığın üzerinden bir parametre aktarımı varsa, geri dönüş değeri varsa, bu geri dönüş değeri kadar yığından okuma işlemi ana yordam tarafından yapılmak zorunda. Boşta kalan çöp işlemler varsa, eğer ki geri dönüş değerlerimizi yüksek adresten itibaren vermişsek, geri kalan boş değerleri ana alt yordam tarafında, REDF'nin yanına yazmış olduğumuz şuradaki sayıyla yapabiliyoruz.
+
+921
+02:50:23,188 --> 02:50:29,128
+Dolayısıyla bunlar yığın üzerinden parametre aktarımıyla ilgili bütün alternatiflerimizi oluşturmuş oluyor.
+
+922
+02:50:30,368 --> 02:50:41,927
+Bundan sonraki dersimizde ise extern ve publik kelimeleriyle yığın üzerinden veri kullanımına bakacağız ve kesim birleştirmeye bakıyor olacağız.
+
+923
+02:50:42,708 --> 02:50:46,688
+Şu ana kadar anlatmış olduklarımızla ilgili arkadaşlar sormak istediğiniz bir şey var mı?
+
+924
+02:50:52,691 --> 02:50:53,572
+[öğrenci] buyur.
+
+925
+02:50:54,471 --> 02:51:03,451
+Hocam, benim derseye geldiği de, bugün ben dersin başını kaşırdım. Geçen hafta maille cevap yollayanlar hakkında böyle duyuru yapacağım demişiniz ama onun akıbeti belli oldu mu?
+
+926
+02:51:04,592 --> 02:51:07,371
+Yani maille gelenleri değerlendirmemeyi düşünüyoruz.
+
+927
+02:51:07,831 --> 02:51:08,871
+Tamam, teşekkür ederim.
+
+928
+02:51:09,871 --> 02:51:18,551
+Yani yine de bir bakayım yani ne yapmışsınız diye bakacağım ama geri dönüş yaparım maille gelen cevaplarla ilgili ama yani
+
+929
+02:51:19,252 --> 02:51:22,832
+değerlendirme taraftarı değiliz. Tamam. Tamam. Sağ olun hocam.
+
+930
+02:51:23,832 --> 02:51:26,412
+Bunun haricinde bir sormak istediğiniz var mı arkadaşlar?
+
+931
+02:51:35,092 --> 02:52:00,932
+Peki, yoksa dersimizi böyle bitirmiş olalım. Haftaya dediğim gibi, ekstern ve publik kelimeleriyle parametre paylaşımını anlatıyor olacağız ve kesim birleştirme konusundan bahsediyor olacağız. Bu örnekleri de nasıl duyururum bilmiyorum ama belki Drive üzerinden paylaşabilirim. Şu anda ortak sınav yaptığımız için o duyuru ekleme kısmı benden çıktı.
+
+932
+02:52:01,427 --> 02:52:09,927
+Tekrar bir kontrol edeceğim. Olmazsa Drive üzerinden, UCC üzerinden mesaj atarak bu ders örneklerini ve ders konularını sizle paylaşacağım.
+
+933
+02:52:11,108 --> 02:52:13,427
+Teşekkür ediyorum arkadaşlar. Haftaya görüşmek üzere.
+
+934
+02:52:20,020 --> 02:52:24,500
+Slide'lar da dahil. Evet, hepsini göndereceğim. Slide'lar, örnekler, hepsini koyacağım.
+
+935
+02:52:27,079 --> 02:52:29,040
+Herkese iyi günler. Görüşmek üzere.

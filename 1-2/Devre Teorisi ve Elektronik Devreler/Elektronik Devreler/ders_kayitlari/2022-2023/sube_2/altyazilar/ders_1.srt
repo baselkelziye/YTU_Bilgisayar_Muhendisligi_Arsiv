@@ -1,0 +1,1047 @@
+1
+00:05:44,339 --> 00:05:50,519
+Merhabalar arkadaşlar. Seste bir problem var mı? Ses geliyor muhtemelen.
+
+2
+00:05:51,000 --> 00:06:05,339
+Günaydın hocam. Günaydın arkadaşlar. Öncelikle tabii bizi bu online eğitime zorunlu kılan, mevcut yaşadığımız deprem durumundan mütevellit hasar görmüş veya zarar görmüş veya...
+
+3
+00:06:06,708 --> 00:06:27,648
+Kendisi sağlık, sıhhat durumunu sıkıntılı veya akrabalarını, sağlık sıkıntısı olan veya akrabalarını kaybeden herkese geçmiş olsun, başımız sağ olsun deyip inşallah bu bilim durumunda ders çıkarabilmeyi Allah bize nasip etsin diyorum. Başka da bir şey diyemiyorum.
+
+4
+00:06:28,148 --> 00:06:44,108
+Hepimize geçmiş olsun öncelikle. Varsa ki belki bilginiz var zaten ama çoğu yerde duyulmaya çalıştık bölüm olarak. Hani bu durumdan bir şekilde etkilenmiş olan öğrencilerimiz varsa veya yakınları varsa.
+
+5
+00:06:44,819 --> 00:06:55,959
+Bizim Burs Komisyonumuzdan veya işte herhangi bir [öğrenci], Elif Karstegil hocamızdan bu durumla alakalı irtibata geçebilirler.
+
+6
+00:06:56,947 --> 00:07:16,007
+Bunu çoğu yerde duyurduk zaten ama yine de bir ihtiyacı olan, zaruri durumda olan, zaruriyet içerisinde bulunan varsa yardımcı olmaya çalışmak da bizim bölüm noktasında irtibata geçmeniz beklenir. Aklınızda bulunsun.
+
+7
+00:07:17,427 --> 00:07:37,087
+Evet, bunu belirttikten sonra dersimiz online olarak başladı. Online olarak gider gitmez soru işareti ama en azından şu an karara göre Mart ayı içerisinde online yapacağız. Nisan'dan sonra uygulamalar ne olacak veya işte dersin süreci ne olacak? Bununla alakalı biz de tam bir bilgiye sahip değiliz.
+
+8
+00:07:39,636 --> 00:07:55,336
+Online de olsa bir şekilde, zaten pandemi döneminde de bu durumu yaşamıştık. Laboratuvarlar vesaire bir şekilde gerçekleştirebiliyoruz yüz yüzeye gelmeden. Zaten bu haftada bunları biraz konuşacağız. Dersin içeriğinden bahsedeceğiz.
+
+9
+00:07:55,987 --> 00:08:03,108
+Ufak bir giriş yapacağız. Genel olarak elektronik devreler veya elektronik sistem yapılatısı ne demek?
+
+10
+00:08:03,427 --> 00:08:10,468
+Kontinuyus yani sürekli değişen sinyal analizi ne demek? Bunlara bir giriş yapacağız ve bitireceğiz.
+
+11
+00:08:12,148 --> 00:08:20,588
+Dersimizi detaylıca elektronik devreler dersi konusu, diyot vs. bunlara başlamayacağız bu hafta.
+
+12
+00:08:21,396 --> 00:08:28,896
+Evet arkadaşlar, şöyle bir ufak giriş sunumu var. Hatta onu da yansıtalım dersin içeriğiyle alakalı.
+
+13
+00:08:48,692 --> 00:08:57,012
+İki grup şeklinde açılan bir ders. Grup 1 olanlar Gökhan Bilgin Hoca ile grup 2 olanlar benimle devam edecek.
+
+14
+00:08:57,491 --> 00:09:25,491
+Sınıf en son baktığımda 90 kişi kadar bir kalabalığa sahipti. Yani aslında bir tık daha fazla oldu beklediğimizde. Bu nedenle ödev sayısı vs. azalması olmayacak tabii ki de. Ama işte birazcık sınavlarda vs. daha düzenli kiyat hazırlamanızı zaten her sene istediğim bir şey bu benim. Her sınavda daha düzenli okunaklı.
+
+15
+00:09:25,491 --> 00:09:27,551
+Bu da bir kağıt hazırlamanızı isteyeceğiz.
+
+16
+00:09:28,980 --> 00:09:38,240
+Gruplar arasında change olmayacak arkadaşlar. Yani Gökhan Hoca'nın grubu benim dersime veya benimdeki grup onun dersine girdiğinde,
+
+17
+00:09:38,240 --> 00:09:49,120
+hani yoklamadan veya işte burada zaten online kayıt altında log kayıtlarımız da tutuluyor. Log kayıtlarına baktığımızda yoklama istenirse eğer benim dersimdekiler,
+
+18
+00:09:49,279 --> 00:09:56,860
+yani benim ders sistemde kayıtlı olan öğrencilerin benim dersimde grup 2 olarak girmesi beklenir. Hani Gökhan Hoca'nın grubuna alayım.
+
+19
+00:09:56,980 --> 00:10:06,059
+Oradaki yoklamadan buraya geçireyim. Bunlarla uğraşmayacağız. Başta bunu söylemek lazım. Herkes kendi grubunda girmesi bekleniyor.
+
+20
+00:10:08,820 --> 00:10:36,820
+Dersin dili İngilizce değil herhalde. Türkçe'ye çevirdiler son dakika. O yüzden ben Türkçe anlatacağım ama sunumlar, slide'lar İngilizce olacak. Genelde zaten bir kitap var. Bahsedeceğim şimdi kitaptan da. O kitabın içeriğinden sunumlar hazırladık. Gerekirse İngilizce bir kitap zaten. Oradan da tedarik edebilirsiniz. Veya işte hocam önemli bir kısmı İngilizce anlatırsın, anlatabilirim.
+
+21
+00:10:36,820 --> 00:10:45,040
+Derseniz de o kısmı İngilizce olarak tekrar edebiliriz. Herhalde bu yeterli gelecektir.
+
+22
+00:10:46,759 --> 00:10:56,800
+Şimdi değerlendirmelerde biz arkadaşlar elektronik devrelerde ikinci vize haftasında bir kere vize yapacağız. Bunu net olalım. Bunu karıştırmayalım.
+
+23
+00:10:57,556 --> 00:11:19,236
+Birinci vize haftasında vize yapılmayacak. Kimlere yapılmayacak? Normal süresinde olanlara yapılmayacak. Yani mesela elektronik devreleri ilk defa alıyorsunuz. İlk aldığınız, yani birinci alıştırdığınızdaki durumda siz sınava ikinci vize haftasında gireceksiniz. Peki birinci vize haftasında biz ne sınavı yapıyoruz?
+
+24
+00:11:22,580 --> 00:11:45,900
+Bu laboratuvar notlarına itirazı neticesinde. Yani işte labdan 60'ına muaf olmuş. Lab'a da girmek istemiyor. Muaf olmuş çünkü. Ama bu 60 puanı da arttırmak istiyor puanını. Bunu da bir sınav hakkı tanıyoruz. Zaten bu lojik devreler geçen dönem almışsınızdır muhtemelen. Oradaki senaryoy da aynı.
+
+25
+00:11:49,395 --> 00:12:13,855
+Lab puanı, 60 puan örnek verdim. Muaf sayıldı. Lablara girmiyor ama lab puanını da arttırmak istiyor. Bunlara ait, bunlara özel birinci vize sınavı yapıyoruz. Bu vize sınavı, yani birinci vize sınavı, lab yükseltme sınavı da diyebiliriz. Lab notu yükseltme sınavı. Genelde laboratuvardaki ekipmanlarla alakalı olabiliyor.
+
+26
+00:12:14,240 --> 00:12:37,019
+Veya işte normal yine teorik olarak derste işlenen bir sorunun çözümü de olabiliyor. Yani bir laboratuvar uygulamalarıyla dersteki teorinin karıştırılmış bir sınavı oluyor. Genelde tavsiye etmiyorum labnotunu yükseltmek isteyen arkadaşlar. Muaf sayılsa bile bir diğer opsiyonları daha var bu sınava girmemek.
+
+27
+00:12:37,019 --> 00:12:42,240
+Yani sınava girmek istemeyenler için ve labnotunu yükseltmek isteyenler için.
+
+28
+00:12:42,240 --> 00:13:03,460
+Bu örneğe bakalım isteyenler için lablara girmek istemesi. Yani asistan eğer ki kontenjan ve ayarlama yeri müsaitse rica edildiğinde asistan size bir grup arkadaşıyla beraber atama yapıyor. Yani labını tekrardan muhafaza yazabilirler. Laba girmek isteyerek de lab notunu yükseltme opsiyonu tanıyoruz.
+
+29
+00:13:04,563 --> 00:13:22,963
+Laplar ve işte bu sınav neyse artık eğer laplara girmek istemeyen varsa alttan alanlardan %21 etkiye sahip olacak. Mid-Term dediğimiz yani ikinci vize haftasındaki bizim vize sınavımız ve herkesin zorunlu olarak girmesini beklediğimiz sınav %31 ağırlığa sahip olacak.
+
+30
+00:13:23,443 --> 00:13:39,723
+Ödev vereceğiz. Benim kafamda şu an iki tane ödev var vermek istediğim. Belki bu üç olur, belki dört olur, belki bire düşer. Ama yüzde onluk bir etkiye sahip olacak bu ödevler. Ödevler özellikle buraya altını çizelim. El yazısı olacak arkadaşlar.
+
+31
+00:13:40,307 --> 00:14:01,288
+Tabii ki de şimdi farklı yöntemler var. Siz daha iyi biliyorsunuz bu ödevleri yaptırmanın. Bunları bir tek en azından onlara yaptırsanız bile el yazısıyla yazarak sizin de öğrenmenizi sağlamaktan başka çok da aslında bir şeyimiz yok. Kontrolümüz söz konusu değil.
+
+32
+00:14:01,288 --> 00:14:05,627
+Ve de ki ödevleri el yazısı isteyeceğim.
+
+33
+00:14:06,388 --> 00:14:09,768
+Ve el yazısıyla teslim etmenizi bekleyeceğim.
+
+34
+00:14:10,847 --> 00:14:13,468
+Tabii şu an dediğim gibi daha net bir durum yok.
+
+35
+00:14:13,788 --> 00:14:19,688
+[kişisel bilgi] Mart ayı içerisinde ödev verecek misiniz gibi sorular oluşabilir.
+
+36
+00:14:20,548 --> 00:14:23,748
+Muhtemelen Mart ayı içerisinde bir tane ödev evet vereceğim.
+
+37
+00:14:24,275 --> 00:14:47,835
+Ama onun teslimini belki online alıp sonra elden alabilirim. Hani online şu mail adresini gönderin derim deadline'da. O deadline yani son tarih bitince ondan sonra artık almam ve o son tarihi öncesi gönderenlerin listesinden artık yüz yüze eğitime geçtiğimizde toplayabilirim, ödebilirim. Böyle bir opsiyon olabilir ama bir şekilde bu kısmı da çözeliz.
+
+38
+00:14:48,659 --> 00:15:04,559
+Final dediğimiz yüzde kırklık bir etkisi olacak. Zaten bununla oynama yapamıyoruz. Bazı durumlar oluşuyor. Şöyle, burada da yeri gelmişken bahsedelim. Mesela vize sınavına girmiyor. Lab notu çok yüksek öğrencim.
+
+39
+00:15:04,947 --> 00:15:29,008
+Finale girebilir mi? Evet girebilir. Ama o durumda finalde sınırda olan öğrencilere hiçbir şekilde kanaat kullanmıyoruz arkadaşlar. Bunu net söyleyelim. Yani mesela işte 100 almış laplardan %20 etkiliyor. İşte homeworkten de 100 almış, %10 etkiliyor. Neyse neyse neyse işte finalden de aldığın notla 38-39 da kalıyor gibi düşünelim.
+
+40
+00:15:32,947 --> 00:15:44,908
+Kesinlikle kanaat kullanmıyoruz. Bunu da net söyleyelim. Başka burada belirteceğim yok herhalde. Laplarla alakalı konuşalım biraz da.
+
+41
+00:15:44,908 --> 00:15:57,908
+Tabii dediğim gibi şu an normalde Nisan'a kadar uygulamalar yüz yüze yapılmayacak dendi. Böyle olunca Mart içinde herhalde iki deney...
+
+42
+00:15:58,740 --> 00:16:12,219
+Bitebilecek bir durumda. Yani bir ay içerisinde iki deneyin bitmesi bekleniyor muhtemelen. Programa tabii asistanlar yapıyor da. Yani şöyle düşünelim. Bugün Club Hadi yapmadık.
+
+43
+00:16:12,607 --> 00:16:28,668
+Yedisi, on dördü, yirmi biri. Yani bir grubun belki iki tane, bir grubun bir tane labının bitme senaryosu söz konusu. Yani Mart ayında yapılmamış lablar ne olacak sorusu var şu an. Arkadaşlar onda da şöyle bir durum söz konusu.
+
+44
+00:16:30,004 --> 00:16:48,664
+Pandemi döneminde şöyle yapmıştık ve öyle yapmayı tekrardan düşünüyoruz. Bu bir aylık süreç için. Bazı bizim online tasarladığımız laplar var. Nasıl bir online bu? İşte Circuit Designer gibi böyle bir online web arayüzü üzerinden yapılabilecek bazı deneyler tasarlamıştık.
+
+45
+00:16:58,004 --> 00:17:19,943
+Önceden tabii lab veriliyor. Şu tarihe kadar yapın deniyor. Siz diagramı çiziyorsunuz, ölçümleri alıyorsunuz, raporunuzu hazırlıyorsunuz. Zoom üzerinden asistan sizi özel odaya çekme usulüyle lab kontrolünü gerçekleştirebiliyor dedi. Bunu biz pandemide yaptık. Burada da muhtemelen böyle bir şey yapabiliriz.
+
+46
+00:17:26,003 --> 00:17:54,003
+Bu lab sınavlarından daha düşük oluyor. O yüzden lab'ın olması aslında size avantajlı. Bu yüzden yaptırmak istiyorum. Muhtemelen online bir şekilde bu lab'ı Nisan'a kadar, Mart ayı içerisinde olan bir lab olur veya iki lab olur.
+
+47
+00:17:54,003 --> 00:18:00,003
+Bunu sizlerle online şekilde ayarlamaya çalışacağız asistanlarla.
+
+48
+00:18:00,307 --> 00:18:10,248
+İlk Lab muhtemelen size bir multi-sim olabilir veya başka bir tane elektronik designer programı olabilir, simulation programı olabilir.
+
+49
+00:18:10,867 --> 00:18:14,268
+Simülasyon programını size tanıtmakla geçecektir.
+
+50
+00:18:14,268 --> 00:18:21,407
+Lab 0 dediğimiz, yani asistanın size vereceği, şu programı şu şekilde kullanabilirsiniz, yönergesi olabilir.
+
+51
+00:18:22,027 --> 00:18:25,807
+Lab 1'den itibaren de deneylere başlanabilir.
+
+52
+00:18:27,471 --> 00:18:32,411
+Ama bir ayarlama yapacağız. Şu an tabii kararlar çok hızlı alındığı için.
+
+53
+00:18:33,875 --> 00:18:43,115
+Biz de açıkçası online için pandemi döneminde yaptığımız şekliyle yapmayı şöyle söz gelimi ayaküstü konuştuk.
+
+54
+00:18:43,655 --> 00:18:48,875
+Onu bir netleştireceğiz. Zaten ilk hafta zaten lab yapılmıyordu. Ders de adam gibi yapılmadığı için.
+
+55
+00:18:48,875 --> 00:18:54,036
+En erken labımız bizim haftaya veya ondan sonraki haftaya başlayacaktır diye düşünüyorum.
+
+56
+00:18:54,155 --> 00:18:59,715
+Veya lab sıfır haftaya başla, ondan sonraki haftada artık lab birle başlayabiliriz.
+
+57
+00:19:00,980 --> 00:19:24,420
+Bu lablar dışında arkadaşlar buraya yazılmamış ama bir bakalım. 30-30-60 evet. Burada bir ayarlama hatası olmuş. Midterm %20 olacak arkadaşlar. Öteki lab %20 olacak. Homework dediğimiz şeyin yanına bile projede gelecek. Projeler zevkli oluyor arkadaşlar. Yani genelde öğrencilerin...
+
+58
+00:19:25,715 --> 00:19:43,175
+Geçmiş dönemden beri yapıyoruz biz bu proje işini elektronik devrelerde. Öğrenciler bazı sensörler veya bazı eyleyiciler ki bu hafta onlara sensör ne, eyleyici ne, bunlara bakacağız. Bunlar üzerinden bir devre tasarımı gerçekleştiriliyor.
+
+59
+00:19:44,455 --> 00:19:49,915
+Bunun proje yönelgesi diyebileceğimiz bir pdf sizinle paylaşılacak.
+
+60
+00:19:50,740 --> 00:20:00,000
+Orada deadline'lar olacak. Üç kere olması lazım. Ben asistanken en azından öyle hazırlamıştım. Şu anki asistanlar değiştirir bilmiyorum. Minimum üç kere bir...
+
+61
+00:20:00,000 --> 00:20:15,500
+Süreç aralarında göstermeler var. Asistanlara getirip projenin outputlarını gösteriyorsunuz. Örnek verecek olursak proje anlamında alkışla yanan lamba dediğimiz bir devre olsun. Veyahut da yangın alarmı dediğimiz bir devre olsun.
+
+62
+00:20:16,179 --> 00:20:27,539
+Tabii ki bunu internetten tasarımını buluyorsunuz. Bulabilirsiniz. Bunda bir sıkıntı yok. Kendiniz de tasarlayabilirsiniz. Bunda hiç sıkıntı yok. Nasıl siteler var?
+
+63
+00:20:28,000 --> 00:20:33,320
+Bu sitelerden.
+
+64
+00:20:34,016 --> 00:20:49,296
+Projeyle alakalı, çünkü projenin belli başlı şeyleri olacak. Yönergede yazacak bunlar. Şu olması gerekiyor, bu olması gerekiyor. Projenin içerisinde iki direnç bir led ile led yakma söndürme sayılmayacak tabii ki de.
+
+65
+00:21:02,016 --> 00:21:13,196
+Yağmur sensörünü hisseden ve sileceği çalıştıran mekanizmayı tutup da 30 kişi ben bunu yapacağım diyemeyecek.
+
+66
+00:21:14,036 --> 00:21:30,596
+Ondan bir Google Sheet açılacak ve bu Google Sheet üzerine siz bulduğunuz grup arkadaşınızla beraber bulduğunuz projeyi yapacağınızı beyan edeceğiniz ve maksimum 2 veya 3 artık asistanların kararına kalacak.
+
+67
+00:21:41,519 --> 00:21:48,000
+Baskı devreye lehimleyerek getirip gösterme süreci var.
+
+68
+00:21:48,336 --> 00:22:10,195
+Bu proje şu açıdan güzel oluyor arkadaşlar. Bir kere hani biz mesela Diyod'u anlatırken diyeceğiz ki işte 0,7'nin üstünde iletime geçecek, şu akımı 0 olacak vesaire vesaire anlatacağız ama hani bunu gerçekte görmek ve uygulama içerisinde Diyod'un tam olarak nasıl işlevsellik kazandığını anlamak daha verimli oluyor.
+
+69
+00:22:10,195 --> 00:22:16,195
+Ve keza transistör içinde bu çok önemli. Transistörü tamam biz burada hesaplamak...
+
+70
+00:22:16,336 --> 00:22:41,795
+Ama en nihayetinde göreceksiniz ki çok basit bir anahtarlama elemanı olarak kullanılması çok anlamlı oluyor diye böyle projede de size faydası olacak. Yani burada yazılmayan bir projeniz olacak. Bir ödev vereceğim, ödevler olacak. Lab olacak ve en sonunda bir vize yapıp bir de final yapıp dersini değerlendirmesini bunlar üzerinden gerçekleştireceğiz.
+
+71
+00:22:43,476 --> 00:22:54,136
+Proje şu sorulabilir. Ders alttan alıyorum. Laptan muafım. Projeden de muaf olacak mıyım? Hayır arkadaşlar, projeyi herkes yapacak.
+
+72
+00:22:54,548 --> 00:23:12,647
+Daha bunu dediğim gibi çok apar topar olduğundan online'dan vs. konuşamadık ama bu karara varacağımızı düşünüyorum. Yani labdan muaf olan projeyi yapmak zorunda olacak, yapmalıdır diyeceğiz. Projenin not ayrımı çünkü farklı lab notum var.
+
+73
+00:23:22,016 --> 00:23:23,776
+Sohbeti açmamışım bu arada.
+
+74
+00:23:29,748 --> 00:23:47,948
+Evet, [öğrenci]'in bir sorusu var. Evet [öğrenci], senin vize 1 sınavına girecek miyim sorusunun cevabı şu, eğer ki lab notunu geçen sene aldığın ve lablara girdiğini düşünürsek, lab notunu yükseltmek istiyorsan sınava gireceksin.
+
+75
+00:23:50,163 --> 00:24:11,463
+Eğer lab notunu yükseltmek istemiyorsan ve muafsan labdan sınava girmeyeceksin. Ama lab notunu, yani muaf değilsin, lab notun 30 gibi bir şey ama muaf listesinde değilsin. Orada eğer ki lablara girmez isen ve lab sınavına da girmez isen puanın 0 olarak işlenecek lab notun.
+
+76
+00:24:12,243 --> 00:24:24,903
+Çünkü o 30'u kullanmayacak. Laplara girmediysen iki opsiyonun var. Ya laplara gireceksin ya da laplara da giremiyorsan veya uğraşmak istemiyorsan diyelim bazıları öyle diyor. Sınava gireceksin.
+
+77
+00:24:27,383 --> 00:24:31,383
+Yarın lapl olmayacak, haftaya başlar dedim [öğrenci].
+
+78
+00:24:33,172 --> 00:24:49,152
+Eğer dersler online olarak devam edeceği kararı çıkmadığı için [öğrenci], hani Nisan'a kadar şu an bir karar var benim bildiğim kadarıyla. O noktayı sonra konuşalım.
+
+79
+00:24:50,099 --> 00:25:17,059
+Çünkü daha önce uzaktan projede verdiğimiz oldu. O evreye geçebiliriz. Yani Proteos üzerinden veyahut da herhangi bir simülasyon arayüzü üzerinden devreyi, bir proje devresini anlattırdığımız ve soruları cevaplandırdığımız yağmur sensöründe şuradaki D2 diyotu tam olarak ne işlevi var? Örnek veriyorum. Böyle gelebilir. Bu D2 diyotunun yerine alternatif ne takarsak bu devre çalışmaya devam eder gibi.
+
+80
+00:25:18,099 --> 00:25:35,180
+Böyle kritik noktalarda sorular sorulabiliyor. Yani bir projeniz kesin olacak. Bunu gerçek fiziksel tasarıma dönüştürme eylemi online olursa eğer sistem devam ederse olmaz. Yani fiziksel bir devlet tasarımı istenemez sizden.
+
+81
+00:25:36,051 --> 00:25:46,051
+Ama Nisan'a kadar dedi ki tamam artık normalleşelim. Bu durumda sizden o zaten...
+
+82
+00:25:46,516 --> 00:26:04,316
+Proje dokümanı paylaşınca muhtemelen Nisan'a kadarki evre sizin projeyi bulmanız, raporunu hazırlamanız vesaireyle geçecek. Yani donanımsal bir şey, fizikçi olarak bir şey sizden istemeyeceklerdir Nisan'a kadar. O yüzden şu an erken bunu konuşmak için.
+
+83
+00:26:10,387 --> 00:26:33,227
+Projeyi lab partnerinizle proje partneriniz aynı olmak zorunda mı? Muhtemelen kendiniz seçmenizi isteriz diye düşünüyorum. Çünkü projelerdeki performansları anlayız ettiğimizde, benim zamanımda ben öyle bir çalışma yapmıştım. Bir sene atama yapmıştık otomatikman. Bir senede herkesin kendi arkadaşıyla olmasını, kendisinin seçmesini sağlamıştık.
+
+84
+00:26:38,387 --> 00:26:53,323
+Grupların projeyi bitirme oranı daha fazlaydı. Yüzde doksan altı gibi, yani yüz projeden doksan altısı bitmişti. Bunun nedeni şu, aslında yorumladığımızda, yani tanınmadığın grup arkadaşına güvenmeyip...
+
+85
+00:26:53,715 --> 00:27:21,215
+Gruplar kendisi daha iyi çalışıyordu bireysel olarak. Tamam, bunun dezavantajı yok muydu? Tabii ki vardı. Grup arkadaşı yatıyorsa maalesef o da onun üzerinden bir şekilde sorularda tamam puanı kırılıyordu arkadaşına ama sonuçta bir şekilde geçmiş bulunan oldu. Bunun avantajı, dezavantajı bu. Öteki tarafta sizin seçmenizi istediğimiz grup arkadaşı gibi bir senaryosunda ise bitirme oranı %82 idi.
+
+86
+00:27:21,715 --> 00:27:49,715
+Yani 100 projeden 82'si anca bitti. Tamam bu devirlerden dönemlerdeki öğrenci kalitesi değişkenlik gösterebilir. Ama nihayetinde ben şöyle yorumluyorum. Grup arkadaşı eğer çok samimi arkadaşınız olduğunda yaparız, ederiz, sonra bakarız vs. olayına dönüştüğünde süreç pek de sağlıklı işlemiyor esasında. Ama tabii bitiren arkadaşlar da ikisi beraber çok iyi çalışan arkadaş grubu da olduğunu gösteriyor.
+
+87
+00:27:49,715 --> 00:28:06,675
+Yani bunu bir tartışacağız ama muhtemelen pandemi, uzaktan eğitim vesayet dediğimiz bu süreçten dolayı muhtemelen sizin grup arkadaşı olmanızı isteriz diye düşünüyorum.
+
+88
+00:28:06,836 --> 00:28:15,135
+Yani herkes kendi arkadaşına sessiz deriz diye düşünüyorum. Ama dediğim gibi net bir iyi değil, bir toplanalım, bir konuşacağız biz asistanlarla.
+
+89
+00:28:17,523 --> 00:28:19,467
+Başkan edinmiş.
+
+90
+00:28:23,155 --> 00:28:48,155
+Proje yüzde kaç etkileyecek? Demiştim aslında. Yüzde yirmi, yirmi, yirmi. Yani homework yüzde o, proje yüzde on gibi düşünebilirsiniz. Şu etapta böyle ama biz tabii şöyle de yapıyoruz arkadaşlar. Genel puana bakarak da bunları biraz onlatabiliyoruz. Sizin lehiniz olacak şekilde. Genelin lehini olacak şekilde diyelim.
+
+91
+00:28:49,811 --> 00:28:54,951
+Yani şu an %20, 20 Homework artık projede %20 diye bakabilirsin.
+
+92
+00:28:57,991 --> 00:29:03,331
+Evet, başka sorumuz var mı bu notlandırma ve ders işleyişiyle alakalı?
+
+93
+00:29:04,291 --> 00:29:06,432
+[öğrenci] bir el kaldırıyor zannedersem.
+
+94
+00:29:07,471 --> 00:29:09,192
+Hocam merhaba, sesim geliyor mu acaba?
+
+95
+00:29:09,671 --> 00:29:10,331
+Geliyor, evet.
+
+96
+00:29:11,028 --> 00:29:22,468
+Hocam ben şöyle genel bir soru soracaktım. Malum devlet örtüsü dersi aldık. Bu dersi devlet örtüsünden ayıran konular nedir? Genel olarak dönem sonunda kazanımlarımız ne olacak bu dersin sonunda?
+
+97
+00:29:23,028 --> 00:29:49,647
+Onu bahsedecektim sunumda. Aslında devre teorisinden nerede farkındalık gösteriyor bunlara değinecektim ama yeri geldi hemen konuşalım o zaman. Sunumda aslında öyle bir kısımda vardı. Tam course outline kısmında bahsedecektim ama şimdi devre teorisiyle aynı dönem açılan bir ders bu. Devre teorisini alttan alan kaç kişi var? Bir el kaldırabilir mi?
+
+98
+00:29:50,195 --> 00:29:56,535
+Veya şöyle soralım. Devre teorisiyle beraber bu dersi alan kaç kişi var şu an 56 katılımcı içerisinde?
+
+99
+00:30:00,115 --> 00:30:08,375
+Bir el görüyorum şu an. Hadi [öğrenci], sen de el kaldırdın düşünelim istersen. Demin soruyu soran.
+
+100
+00:30:09,435 --> 00:30:13,976
+Hocam ben geçen dönem almıştım devre teorisini. Bu dönemde bunu alıyorum.
+
+101
+00:30:14,576 --> 00:30:18,236
+Yani sen almadın aslında devreyi beraber. Sadece öyle soruyorsun.
+
+102
+00:30:18,796 --> 00:30:20,956
+Devreyi bir önceki sene almıştım hocam.
+
+103
+00:30:21,435 --> 00:30:23,556
+Tamam. Bu dönem yani sadece elektroniği aldın sen.
+
+104
+00:30:23,635 --> 00:30:24,236
+Evet hocam.
+
+105
+00:30:24,236 --> 00:30:24,736
+Tamam.
+
+106
+00:30:25,203 --> 00:30:42,583
+Yani evet bahsedecektim gerçi ama şu an üç kişi görüyorum. Yani soru şu, belki yeni duyanlar olur. Devre teorisiyle elektronik devreler dersini bu dönem açılıyor ikisi de. Biri birinci sınıf dersi, biri ikinci sınıf dersi.
+
+107
+00:30:43,087 --> 00:30:59,807
+Belki hani biriler üstten elektroniği almış olabilir veyahut da ikiler alttan devreye almış olabilir. Neyse ne. Bu dönem ikisinde paralel aynı alan kaç kişi var? Herhalde çok yokuzdur diye düşünüyorum. İki kişi görüyorum. Üç olduk.
+
+108
+00:31:00,564 --> 00:31:23,184
+Yani tabii 56-90 oranlarsak hadi olsun 3-6 doğru orantı yaparsak 6-7 kişi vardır. Şimdi arkadaşlar orada şöyle bir bazı şeyleri anlamak lazım. Devreyi geçen dönem, yani geçen sene pardon, birinci sınıfta alan arkadaşlar bazı şeyleri zaten biliyor olacak bu ders için. Örnek verelim. KCL.
+
+109
+00:31:23,663 --> 00:31:39,783
+Kürşof'un Akımlar Kanunu veya KV'yle Kürşof'un Gelimler Kanunu. Bunları biz burada anlatmıyoruz. Elektronikte bu basic terimleri, yani işte V eşittir I çarpı R 10 kanunu. Bunları biz elektronikte anlatmıyoruz.
+
+110
+00:31:43,567 --> 00:32:11,567
+Akımla gelelim, direncin üzerinden vs. diye böyle o kanunu nedenselleştirerek, senaryolaştırarak anlatmıyoruz. Yani aslında elektronik devrelerde devre teorisi veya elektrik sistemlerinin bazı konularını anlatmıyoruz. Bu konuların işlendiği yer devre teorisi. Yani o kanunu nedir? V-I-R ilişkisi nedir? Direnç ne isim geliyor? Direncin üzerinden akım ne kadar zorlukla geçirirse o kadar çok gerilir.
+
+111
+00:32:11,567 --> 00:32:20,087
+Elim üzerinde birikiyor gibi bu formalizasyonları veya bu bağıntıları biz devlet teorisinde inceliyoruz.
+
+112
+00:32:20,087 --> 00:32:29,847
+Ve devlet teorisinde aktif ve pasif elemanlar vardır devrede bir sistemde. Bir de yarı iletkenler vardır.
+
+113
+00:32:30,687 --> 00:32:37,747
+Aslında devlet teorisi aktif ve pasif elemanları işler. Örnek verecek olursak gerilim kaynağı, direnç.
+
+114
+00:32:38,420 --> 00:32:54,220
+Akım kaynağı veya kondansör tör bunlar bizim için bobin. Bunlar bizim için aktif ve pasif devre elemanları. Direnç pasif bir devre elemanı. Akım aktif bir devre elemanı.
+
+115
+00:32:54,579 --> 00:33:12,880
+Bunlar devre teorisinin konuları. Elektronik devrelerin konuları ise ve size kazandığım kısım ise yarı iletken elektroniğine ilgilendiriyor. Yani semiconductans dediğimizi yapalım. Nedir bunlar? Diyot mesela veya transistör.
+
+116
+00:33:13,263 --> 00:33:30,564
+Veya MOSFET'ler. Yani bir kısım eğer o elektronik devre ekipmanını havada tuttuğumda yalıtkandır ama ufacık bir polarizasyon farkı yarattığımda iletken duruma geçer. Biz buna yarı iletken diyoruz.
+
+117
+00:33:30,564 --> 00:33:37,323
+İşte elektronik devrelerin ilgileneceği konu bunlar olacak. Mesela devre teorisini...
+
+118
+00:33:38,099 --> 00:33:51,819
+Yani ilk defa alıp da, aslında soru şöyle olmalı. Devre teorisini ilk defa alıp da elektroniği de üstten alan var mı? [öğrenci], acaba önceden mi kaldı, şu an mı kaldı?
+
+119
+00:33:53,879 --> 00:33:58,667
+Şu an. [öğrenci], o zaman senin biraz daha devre teorisinde...
+
+120
+00:33:58,740 --> 00:34:23,199
+Sunumlar vs. paylaşıyoruz zaten paylaşacağız. Onlara biraz daha bakman gerekecek. Yani diğerlerinden bir tık daha fazla çalışman gereken bir durum söz konusu. Çünkü dediğim gibi biz elektronikte bir akım hesabı yaparken akım buradan gelir buraya gitmez dememizin bir nedeni var. Ve bu nedeni biz devre terapisinde anlatmış olduğumuzdan dolayı çok detaylı girmiyoruz.
+
+121
+00:34:23,568 --> 00:34:39,467
+Ben yeri geldiğinde anlatmaya çalışıyorum aklıma geldiğince ama elektronik devrelerin konsepti bu değil. Elektronik devrelerin konsepti biraz daha analog elektroniğe giriyor. Yani biraz daha yarı iletkene giriyor işte.
+
+122
+00:34:40,179 --> 00:35:05,739
+Ama devre teorisinin biraz da basic tabirleri işte KCL'deydi, KB'deydi, işte veyahut da Mesh Current Analizi'ydi veya işte Node Analizi'ydi. Bunları devre teorisinde, yani aslında bir devrenin nasıl çözümleneceğini anlattığımız ders devre teorisi. Elektronik ise yarı iletkinin nasıl çözümlendiğini anlattığımız bir ders.
+
+123
+00:35:07,251 --> 00:35:20,971
+Aradaki fark bu asasına baktığımızda. Yani sizin elektronikteki kazancınız yarı iletkenlerin iletim veya elektronik devrelerdeki responsları, cevapları nasıl olur bunu öğreneceğiz. Ve nasıl kullanılmalı bunu öğreneceğiz.
+
+124
+00:35:21,440 --> 00:35:44,940
+Devre teorisinde ise normal elektrik artı elektronik sistemler, ki çünkü elektrik sistemlerinde de çok büyük yüksekli bobinler, dirençler vesaire kullanılıyor. Bunlar arasındaki elektronik ve elektrik devre elemanlarının, devre ekipmanlarının aslında responslarını, iletken ve yalıtkan olma durumlarına göre nasıl cevap ürettiğini analiz ettiğimiz kısım oluyor.
+
+125
+00:35:47,956 --> 00:36:12,956
+İkisi aslında birbirinin devamı noktasında. Zaten biri birinci sınıf, ötekide ikinci sınıf dersi. Şimdi devlet teorisini tabii bitirip bunu almak lazım esasında ama ikisini aynı anda alıp da ilk defa alacak olan kişiler varsa da, hani şu an bir kişi var ama belki videoyu izleyen olursa, başka da çıkarsa diye diyorum. İkisini ilk defa alacak olanı da çok çok böyle...
+
+126
+00:36:13,652 --> 00:36:30,912
+Ben eksiğim var şu noktada diyebileceğimiz bir yapısı yok. Çünkü aslında devlet örisinin bir kısmı da sizin, belki üniversitesi hazırlık sınavında istediğiniz fizik derslerine değiniyor. O yüzden çok da endişelenmeye gerek yok.
+
+127
+00:36:33,972 --> 00:36:36,752
+Tamam mıyız arkadaşlar? Var mı sormuş başka?
+
+128
+00:36:38,291 --> 00:37:04,251
+Yoksa burada da, şurada da bahsettim, elektrik veya elektronik dersinin içeriğiyle alakalı. Aslında bizim ilk etapta, bakın, ilk etapta bugün işte göstereceğimiz şu iki yapının ne olduğunu anlatmaya çalışacağım bugün. Çünkü bu iki yapı, ki Türkçesi zaten sensörü biliyorsunuz, bunun da Türkçesi eyleyici demek. Bu iki yapıyı siz projelerde kullanacaksınız.
+
+129
+00:37:04,672 --> 00:37:06,112
+Projeler için önemli.
+
+130
+00:37:07,431 --> 00:37:16,512
+Ve zaten bunların iç yapısına girdiğimizde de bizim yarı iletken elektroniği dediğimiz işte diyotlu, transistörlü yapılarının bulunduğunu göreceğiz.
+
+131
+00:37:17,672 --> 00:37:23,592
+Ama biraz hani elektrik şorkut dediğimiz kısımda işte yukarı şu kısım devre teorisine giriyor.
+
+132
+00:37:25,396 --> 00:37:50,655
+Nedir bunlar? Voltaj nasıl ölçülür? Akım nasıl ölçülür? Bir DC devrede, ki DC-AC farkına biraz belki bu hafta değiliz. DC devrede direnç nasıl hesaplanıyor? Kapasitans dediğimiz gibi kondansütördür. Kondansütör mimarisinin izahı. Bunlar hep devre teorisinin konuları. Çünkü bunlar iletken ve yalıtkan olarak nitelendirdiğimiz devre ekipmanları.
+
+133
+00:37:51,572 --> 00:38:08,592
+Öteki tarafta bu elektronik dediğimiz kısımda ise semikondaktör, yarı iletken diye tabir ettiğimiz, opamp diye yükselteş devreleri veyahut da sensörler, eyleyiciler, bunların içerisinde semikondaktörler var.
+
+134
+00:38:10,172 --> 00:38:14,832
+İşte bu derste de biz semikondaktör, yarı iletkenin arasında Giot'u göreceğiz.
+
+135
+00:38:15,443 --> 00:38:30,604
+Diyot uygulamalarını göreceğiz. BGT diyoruz buna bipolar. Türkçesini bilmiyorum. Ne diyorlar buna? Beslemeli diyorlar arasında. BGT transistörü göreceğiz. FET'leri göreceğiz.
+
+136
+00:38:32,532 --> 00:38:45,552
+Sonra bir de opamp, burada da var yine opamp, aynen. Yani şurada da gördüğümüz bir kısım vardı ama bu elektronik ile ayrıca göreceğiz. Bunları işleyeceğimiz ders olacak elektronik.
+
+137
+00:38:48,403 --> 00:38:54,224
+Ders için bir kitap derseniz, Boştad'ın aslında bir kitabı. Bizim de sunumlarımız oradan alındı.
+
+138
+00:38:54,903 --> 00:38:59,863
+Elektronik Devices and Circuit Teori. Bunu aslında, Boştad'ın sadece elektronik devreleri.
+
+139
+00:38:59,863 --> 00:39:05,804
+Dedim ya, aslında bizim bu devre teorisi ve elektronik devreler birbiri içerisinde devam eden bir konu.
+
+140
+00:39:06,644 --> 00:39:10,163
+Biz birinci sınıfta devre teorisini veriyoruz. O da aynı kitaptan.
+
+141
+00:39:10,783 --> 00:39:16,304
+Bu sınıftan, ikinci sınıfta da elektronik devreleri yine aynı kitaptan sunumlarını faydalandırıyoruz.
+
+142
+00:39:16,403 --> 00:39:26,543
+Yani bu kitap yeterli gelecektir. Örnek soruları vesaire de var içinde zaten. Diğerleri de yardımcı kitap olarak kullanılabilir.
+
+143
+00:39:30,804 --> 00:39:32,104
+Hatta koymuşuz.
+
+144
+00:39:37,623 --> 00:39:47,324
+Evet, dersin genel iç içeriğiyle alakalı veya işte lab notlandırma onunla bununla alakalı sorumuz var mı arkadaşlar?
+
+145
+00:39:56,563 --> 00:40:17,743
+Yok herhalde. O zaman bu haftaya kısa bir giriş yapalım. Ara vermeyeceğim. Zaten online. Zaten derslerimiz arkadaşlar online'de bir tık daha hızlı bir şekilde bitiyor. Çok soru gelmiyor. İşte benim öğrenciyle zaten çok şey olamıyoruz online'e. Biliyorsunuz online'ın bazı sıkıntıları var.
+
+146
+00:40:19,092 --> 00:40:35,511
+O yüzden ara vermemeyi düşünüyorum. Derslerde de vermeyeceğim muhtemelen. Bir buçuk saat gibi bir aralıkta muhtemelen normal dersimizde. Bu hafta belki biraz daha erken bitecektir ama normal dersimizde bir buçuk saat gibi bir sürede biterliği düşünüyorum.
+
+147
+00:40:36,851 --> 00:40:48,851
+Evet, bir elektronik sistem nedir? İşerinde neler barındırır? Ve bu elektronik sistemin aslında, yani tabii teoride her şeyi bir...
+
+148
+00:40:49,268 --> 00:41:00,288
+Gürültüden ve bozuntudan aylık saha hesaplıyoruz ama biz bunu bir elektronik sistem dizaynına gittiğimizde projelerinizde göreceksiniz.
+
+149
+00:41:00,428 --> 00:41:04,128
+Mesela hiç unutmam, genelde şu projede çok büyük problem yaşıyoruz.
+
+150
+00:41:04,307 --> 00:41:15,628
+Çünkü hesaplanan ve planlanan devreyi yaptığımızda etrafın gerçek hayatı, fiziksel hayatın etkilerini tabii göz ardı etmiş oluyoruz teorik hesaplarken.
+
+151
+00:41:15,628 --> 00:41:17,268
+Ama fiziksel hayat...
+
+152
+00:41:17,268 --> 00:41:25,008
+Etkilerin işte havadaki farklı mikro, farklı sinyallerin etkilemesiyle çalışmayan devreler var.
+
+153
+00:41:25,468 --> 00:41:32,448
+Pardon, doğru. Ekran paylaşımına. Ben de bitiyorum. Evet. Doğru.
+
+154
+00:41:35,219 --> 00:41:51,380
+Gürültü ve dış bozuntu diye tabir ettiğimiz distorsiyon efektlerini biz pek işin içerisine teorite katmıyoruz. Ama bir elektronik sistem dediğimizde bu sistem tasarımda bunların katılması gerekiyor.
+
+155
+00:41:52,960 --> 00:42:00,219
+Bu örnek bir proje var demiştim. Bu sıkıntıyla çok cevelleştiğimiz. Mesela kesinlikle bence eğer ki projeler...
+
+156
+00:42:00,320 --> 00:42:28,240
+Yapılacak diye duyuruldu. Siz de artık proje arayısına geçtiniz ve bulduğunuz projeleri yazdığınızda egzersizde yazacaksınız. Orada mesela kesinlikle FM Transmitter'ı almayın. Eğer ki yüz yüce teorikte kalmayacaksa, pratiğe geçilecekse eğer, onun projesini yapmakta çok zorlanacaksınız. Niye bunu diyorum? FM Transmitter dediğimiz yapı şu. Bir müzik çalıyorsunuz. Radyo bantından 86.2 radyo kanalı.
+
+157
+00:42:28,320 --> 00:42:52,800
+86.2 yakınlarında, FM Transmitter'ın yakınlarında, yani o tasarladığınız projenin yakınlarında ben herhangi bir radyodan 86.2 ayarladığımda sizin çalgınız müziği duymam gerekiyor. FM Transmitter bu. Yani Frequence Modulation diye tabir ettiğimiz o bantta bize sinyal göndermesi, yani müziği veya ne çalıyorsanız onun iletilmesi gereken bir proje mesela.
+
+158
+00:42:56,320 --> 00:43:20,320
+86.2 dediğimiz kanal, asıl 86.2 MHz bir kanal. Şimdi Kilohertz, MHz, MHz bunları biraz diye devre teorisinden bilmemiz lazım. En azından haşı neşir olmuş olmamız lazım. MHz dediğimiz yapı 10 üzeri 6. GHz 10 üzeri 9 mesela. Yani 10 üzeri 6 saniyede...
+
+159
+00:43:21,012 --> 00:43:41,792
+86 dedik. 86 milyon tane farklı frekansın, yani periyodunun 86 milyon olan saniyede 86 milyon tane periyot değiştiren bir sinylden bahsediyoruz. Ki sinyaller ne kadar saniye içerisindeki periyot değişimi yaparsa, yani yüksek frekanslı olursa o kadar çok gürültüden etkilenir.
+
+160
+00:43:49,012 --> 00:44:06,552
+120 Hz diyoruz. Aslında bir yenileme hızı var. O hız bizim burada bir manyetik an oluşturuyor. Bunun bile o arkadaşların yaptığı projede etkisi söz konusu. Aslında dışarıdan farklı etrafımız sinyallerle.
+
+161
+00:44:06,931 --> 00:44:34,451
+Dolu zaten. Wi-Fi sinyalleri olur, mikrodalga sinyaller olur veyahut da güneşin ultraviyola ışıkları olur. Hepsi aslında bir gürültü. Ve bu gürültü modellenemedikten sonra böyle hassas projelere çok girmemek lazım. Başka bir örnek verelim. Hani FM Transmitter demiştik. Ne verebiliriz? Mesela uzaktan kumanda tamam onlar öyle megahertz seviyesinde olmuyor. Daha kilohertz seviyesinde oluyor ama.
+
+162
+00:44:34,931 --> 00:44:39,431
+Uzaktan kumanda uygulamaları yine çok az etkileniyor ama etkilenebiliyor.
+
+163
+00:44:40,711 --> 00:44:43,651
+Veya başka ne diyebiliriz?
+
+164
+00:44:44,891 --> 00:44:46,391
+Aklıma şu an gelmiyor ama.
+
+165
+00:44:47,291 --> 00:44:58,951
+Yani yüksek frekanslarda çalışan sistemler tabii modellenirken, elektronik sistem tasarımına gidilirken bu distortion ve noise dediğimiz yapıların düşünülmesi gerekiyor.
+
+166
+00:44:58,951 --> 00:45:02,051
+Bizim projelerde de böyle.
+
+167
+00:45:03,219 --> 00:45:05,960
+Bu tarz projelerden kaçınmakta fayda var.
+
+168
+00:45:07,159 --> 00:45:12,000
+Şimdi burada elektronik sistemlerin içerisinde biz elektronik sistem nedir ile başlayacağız.
+
+169
+00:45:12,779 --> 00:45:17,779
+Ve bu sistemi tanımlandırırken elektronik sistemi oluşturan ara aparatlara bakacağız.
+
+170
+00:45:17,779 --> 00:45:25,960
+Sonra bu gürültü ve etki dedim ya bunlar nedir ve nasıl sinyali bozuyor bunlara değinip bitireceğiz dersimizi.
+
+171
+00:45:29,907 --> 00:45:46,488
+Sistem veya ne diyebiliriz? Elektronik sistem diye tabi ettiğim bir şey şunu içeriyor. Bir girdisi olan ve bu girdiğe göre bir aksiyon alarak çiftliğe ileten yapılara biz elektronik sistem diyoruz.
+
+172
+00:45:47,248 --> 00:45:57,688
+Yani mesela yağmur yağdı, sensör yağmuru okudu, yani input aldı, silecekler otomatik çalıştı, output üretti. Yani kontrol üretti, kontrol sinyali üretti.
+
+173
+00:45:58,324 --> 00:46:16,884
+Veya işte ne örnek verebilir? Yangın sensörü değil mi? Dumanı tespit etti. Duman kontrol sinyali ürettirdi sisteme ve kontrol sinyali benim için yağmuru söndürücü olan neyse artık fiskiye mi olur veya başka bir şey mi olur onu çalıştırdı.
+
+174
+00:46:17,364 --> 00:46:44,139
+Bu sistemlere biz elektronik sistem diyoruz ve bu sistemlerin üzerinde dayandığı tek şey şu aslında. Bir sens yani duyum. Yani bir ortamı, fiziksel ortamı algılayabilecek bir yapı lazım. Zaten sens de buradan geliyor, algıdan geliyor. Sensör yapısı sensten gelir. Algılayıcı demektir Türkçesi değil mi? Ve bu algıya binayı...
+
+175
+00:46:44,371 --> 00:47:06,271
+Sistemin belli başlı kontrol mekanizmalarıyla, mesela transütör yapısıyla anlatacağız nasıl çalıştığını veya diyot yapısıyla bir şeyi tetiklemesi. Aslında elektronik sistemden kastımız bu. Tetiklediğimiz şey de bizim için aslında kontrol sinyalimizi oluşturuyor. Yani sense, process, control. Üç yapımız var.
+
+176
+00:47:06,271 --> 00:47:10,271
+Yani duyma, dış dünyayı...
+
+177
+00:47:11,668 --> 00:47:17,608
+Veri olarak alabilecek boyuta getir, veriyi işle ve bir kontrol sinyali üret.
+
+178
+00:47:17,608 --> 00:47:22,316
+Tabii burada...
+
+179
+00:47:22,675 --> 00:47:32,335
+O sens noktasında, yani veriyi duyarlama noktasında veya algılama noktasında kullandığımızı yapılan sensörler. Yani algılayıcılar Türkçe şeyler.
+
+180
+00:47:32,335 --> 00:47:40,335
+Şimdi bu algılayıcılığı tanımlandıracak olursak da aslında fiziksel özellikleri biz veyahut da nicelikleri...
+
+181
+00:47:42,099 --> 00:48:09,660
+Nitelik boyutuna getiriyoruz. Pardon, nitelikleri nicelik boyutuna getiriyoruz. Yani nümerik dizayna geçiriyoruz. Mesela sıcaklık. Biz havanın sıcak soğuk olduğunu hissedebiliriz değil mi? Ama biz bunu nümerikleştirmemize gerek yok. Yani mesela kar yağın bir havada dışarıda üşüdüm dersin. Ama işte ya 8 derece üşüdüm, 8.2 derece üşüdüm demezsin. Çünkü nümerikleştirmeye ihtiyaç duymadığımız bir analog sistemimiz var bizim.
+
+182
+00:48:10,452 --> 00:48:24,588
+Yani nümerikleştirmeye, ayrılık sağlaştırmaya gerek yok insan vücudunda. Ama elektronik sistemler için, analog sistemler var tabii ki de ama onlar da nihayetinde ne kadar analog da olsa bir kısım...
+
+183
+00:48:24,628 --> 00:48:38,768
+Aylık sağlaştırıyor. Ne demek istiyorum? Aslında fiziksel özellikler dünyada iki şekilde nitelendiriliyor. Biri, fortunius nitelikler, öteki de discrete yani ayrık nitelikler.
+
+184
+00:48:40,148 --> 00:48:46,828
+Yani örnek verelim. Şu an ortamın oturduğumuz ortamda şunu diyemezsiniz. Burası 25 derece.
+
+185
+00:48:47,315 --> 00:49:07,635
+Bunu diyebilmenizin nedeni aslında siz onu ayrıksağlaştırıyorsunuz. Yani diskret duruma getiriyorsunuz. Çünkü o an 25.282 bin bilmem kaç olabilir. Bir sonraki an 25 virgül bilmem kaç virgülden sonra hanesi olabilir. Yani aslında hep değişen bir sıcaklık var ortamda.
+
+186
+00:49:08,019 --> 00:49:18,819
+Ama biz bunu belirtirken ayrıksağlaştırıyoruz. Neyden ayrıksağlaştırıyoruz? Bu değişimi aslında çözünürlüğünü kısarak değişim olmayan hale getiriyoruz.
+
+187
+00:49:18,819 --> 00:49:31,819
+İşte sensörlerde ayrıksa olan, sürekli devamlı değişen bu dünya değerlerini, sıcaklık olur, nem olur, basınç olur veya işte...
+
+188
+00:49:32,628 --> 00:50:00,000
+Karanlık, aydınlık durumu olur. Bunların hepsini sensörler, kontinüüs formda olan bu değerleri diskretize ederler. Yani diskret forma getirirler. Ki elektronik sistemdeki kontrol birimi işte ne kararı verecekse klimayı aç diyecek belki, belki işte silecekleri çalıştır diyecek. Bunu belli bir diskret seviyesinde yapabilir. Düşünsenize yani...
+
+189
+00:50:00,000 --> 00:50:23,940
+Mesela diskreti etmedim. Belli bir yağmur şiddetini de sevecek çalışsın dedim. O yağmur şiddeti anlık değişiyor. Yani sensörün hissettiği değerler hep değişiyor. Bir çalışacak, bir çalışmayacak, bir çalışmayacak gibi bir duruma sürecek. Yani rezonansa götürecek sistemi. Hiçbir şekilde stable bir sistem, kararlı bir sistem olamayacak. İşte bu yüzden continuous.
+
+190
+00:50:24,659 --> 00:50:40,939
+Sürekli değişen bu metrikler, bu değerleri biz elektronik sistemlerde diskretize ederiz. Ama insan vücudu dediğim gibi buna gerek kalmıyor. Bunu zaten işleyebilecek kapasiteydeyiz. Çünkü çok hassas şeylere de gerek kalmıyor.
+
+191
+00:50:42,675 --> 00:50:58,135
+Kontinyüs sinyallerden kastımız aslında bizim analog sinyaller. Bunu devlet teorisinde dijital ve analog olarak ikiye ayrıldığımız sinyal şekli vardı. Analog işaret dediğimiz işaretin tersten çevrimini yaparsak şunu kastediyoruz.
+
+192
+00:51:10,675 --> 00:51:21,436
+Her zaman aralığında değişkenlik gösteriyor. Biz buna kontinuyuz ya da sürekli değişken sinyaller veya analog sinyaller diyoruz.
+
+193
+00:51:21,536 --> 00:51:31,096
+Ve dünyada fiziksel olarak bütün nitelikler aslında değişken kontinuyuz formattadır diyebiliriz.
+
+194
+00:51:32,851 --> 00:51:39,231
+Peki biz bunu ne yapıyoruz elektronik sistemlerde? Zaten biraz da geçen dönem lojik de almışsınızdır diye düşünüyorum.
+
+195
+00:51:39,391 --> 00:51:43,371
+Lojik devrelerde de yaptığımız, biz bu analog sinyali digitalize ediyorduk.
+
+196
+00:51:43,371 --> 00:51:50,031
+Yani aslında örnekliyorduk veya tabirini hatırlarsak kuantalama yapıyorduk.
+
+197
+00:51:50,331 --> 00:51:59,851
+Quantization dediğimiz bir süreç işitliyordu. Amacımız ise şu, bu sinyalin, analog sinyalin, tamam bu şekle
+
+198
+00:52:01,139 --> 00:52:11,139
+Özetçesini yansıtabilecek bir dijital forma sokabilmek. Çünkü mesela şu zaman aralığında...
+
+199
+00:52:11,311 --> 00:52:37,071
+Bütün V değerleri sabit. Ki bu sabit değere göre ben sensör verisini içeride elektronik sistemim işleyebilir. Hep değişken bir sinyali burada işlemek zor olacaktır. İşte bu yüzden de dijitalize ediyoruz. Bu dijitalleştirmeyle alakalı zaten başka derslerde de nasıl yaptığımızı görmüştük. Hatırlarsanız, lojiklerde biz bunu işlemiştik.
+
+200
+00:52:37,715 --> 00:52:49,915
+Tabii bir de binary sinyalı var. Bazı sistemler, binary dediğimiz sistemler şöyle çalışıyor. Ya açıktır, ya kapalıdır. Mesela klimayı aç, kapa. Binary bir sistemdir.
+
+201
+00:52:50,456 --> 00:53:02,496
+Veya klimayı eğer derecelendir, şurada 3 derece, şurada 2 derece, şurada daha yavaş çalışsın dediğimizde dijital sinyal oluyor. Yani binary sinyal olmuyor. Çünkü ara katmanları var demek oluyor.
+
+202
+00:53:03,248 --> 00:53:29,907
+Binary sinyal yani ikili sinyaller de genelde 1 ve 0'dan bahsedilir. Şimdi bir sinyali dijitalize ettiğimizde aslında hedef şuradaki orijinal sinyali kaybetmemek üzerine baktığımızda. Ama kayıplarımız var mı? Tabii ki de var. Mesela burada bir daha şurada bir dalgalanma var mesela. Biz burada aynı sinyal değil gerçi ama bu dalgalanmayı göremeyiz.
+
+203
+00:53:30,483 --> 00:53:57,083
+Neden? Çünkü bazı veriler kaybolacaktır. Yani ne zaman biz kontinuyuz, sürekli değişen bir sinyali dijitalize ettiğimizde her zaman orada bir kayıp vardır. Ve bu kayıp şu an mesela şey üzerine çalışıyorlar. Takip edeniniz var mı bilmiyorum ama Quantum Bilgisayar diyoruz değil mi? Quantum Bilgisayar bu kayıpların önüne geçmek için var. Çünkü aslında veri çok değerli. Veri mesela işte roket atıyorlar.
+
+204
+00:53:57,780 --> 00:54:25,560
+Amerika, Washington'dan. Ta Çin'in bir yerini vuracak örnek verelim. Şimdi Washington'daki bir milimetre bile değil. Belki milimetrinin onda biri açı, o roketin çıktığı açısının kaymış olması. Kontrol var ya altta mesela motor döndürüyor vakiti. Ama döndürürken dijitalize ettik tabii ki de. Dijital bir şekilde sinyalde döndürüyoruz. Oradaki 0.00 artık onun üzeri eksi.
+
+205
+00:54:25,780 --> 00:54:52,840
+Kaç olursa olsun o kadarlık bir milim kayması vuracağı yerin belki de 10 metre ötesine atmasına neden oluyor. Belki de 100 metre ötesine atmasına neden oluyor. Yani hassas targeting sistemlerde mesela çok hassas bir şekilde dijitalleştirme yapmak lazım. Ama bu dijitalleştirme hassasiyeti yani kontinüüs formdaki sürekli değişen bir sinyali dijital hale getirirken elbette bir kayıp olacak.
+
+206
+00:54:53,300 --> 00:55:19,699
+İşte bu kaybı önlemek için de kuantum bilgisayarlar vesaire çalışmaları sürüyor şu an. Yani bunu analog üzerinden yapabilir miyiz sorusuna bakıyorlar. Ama dijitalleştirilen sinyalde bir kayıp erdaim olacak. Ki binary sinyalde bu kayıp zaten en alasıyla var. Çünkü bir threshold belir diyorsunuz. Diyorsunuz ki bu threshold'un 6 0 üstü 1. Mesela şöyle bir threshold belirledim. İşte burayı 1 yap dedim. Şuralara 1 oldu.
+
+207
+00:55:20,563 --> 00:55:46,903
+Şurası 0 oldu. Tabii bunun bir görseli değil ama, yani şöyle yapılabilir. Şurada mesela ben binary threshold yaptım. Yani binary klasifikasyon, binary system üretmek istiyorum. Şöyle çizdim threshold ayarladım. Bu çizginin üstünü bir yap dedim. Altını 0 yap dedim mesela şöyle.
+
+208
+00:55:47,731 --> 00:55:54,052
+Burada çok büyük kayıt var mesela. Sadece sistemim şurada çalışıyor.
+
+209
+00:55:56,052 --> 00:56:01,692
+Gibi arkadaşlar. Bunun detaylarını logikte vermiştik zaten.
+
+210
+00:56:02,311 --> 00:56:11,192
+Elektronik sistemlerinde aslında sensör dediğimiz tabirler fiziksel kontinu sinyali diskret ederek kontrol sistemi oluşturmayı hedefliyor.
+
+211
+00:56:13,043 --> 00:56:40,643
+Peki, kontrol sistemi oluşturduktan sonra bir de şöyle bir yapımız var. Eğleyiciler. Nerede onu? Evet. Eğleyiciler'larımız var. Ne demek? Bu Türkçesi eyleyici. Herhalde yanlış olmasın. Eyleyiciler. Nedir bunlar? Motor olabilir veya işte bir elektronik kilit olabilir, manyetik kilit olabilir. Yani kontrol singelin çalıştıracağı kısım diyebiliriz yani.
+
+212
+00:56:41,780 --> 00:57:08,780
+Mesela şu örnekte olduğu gibi, eski pick-up'ları tabii ki de bu konsepte ayrı tutmak lazım. Çok eski. Şu an hani Diyanlar'da satılan 300-500 liraya satılan pick-up'ları kastetmiyorum. USB takıp da çalabildiğiniz. Çok eski pick-up'lar. Bu saksa, pongo, kocaman şey olan pick-up'ları. Pick-up diyorlar yanlış hatırlamıyorsam onlara. Onları da işte müzik şeyleri…
+
+213
+00:57:08,980 --> 00:57:22,940
+Diskleri demmiyor, ne deniyor bilmiyorum ama onları falan özel olarak oluşturmuş bu pick-up'lar analog sinyali direkt analog amplifier'larla yükselterek çalışıyor. Ki zaten ses kalitesi o yüzden çok daha temiz ve güzel.
+
+214
+00:57:23,860 --> 00:57:41,579
+Ama normal bir CD-ROM sürücü de siz CD yazdınız, bilgisayara taktınız veya başka bir CD player'a. Bu tabii ki de buradaki dijitali okuyarak bana dijitalden analoga çeviriyor ve analogdaki sinyali bana yükselterek veriyor.
+
+215
+00:57:41,579 --> 00:57:51,740
+Yani aslında burada da bir kayıp söz konusu. O yüzden de zaten bu kısımda şöyle geçer müzikler. 512 KVPS miydi? Bit per second değil mi?
+
+216
+00:57:51,860 --> 00:58:03,599
+Yani her saniyede 512 kilobyte ile örneklendirilmiş müzik ki bu ne kadar yüksek o kadar kaliteli müzik demek oluyor. Bu örneklem aralarını, tantalamayı veriyor.
+
+217
+00:58:04,659 --> 00:58:28,440
+Ve işte kuantalaması ne kadar iyiyse, ne kadar yüksek per sekundes ise o zaman daha iyi bir ses çıkartıyor. Daha pürüzsüz bir ses çıkıyor. Burada tabii ki de sensör dediğimiz kısım şu kısım oluyor. Bunda da burada. Ama ekçe eşli dediğimiz kısım ise hoparlör oluyor. Çünkü bizim bir kontrol sinyalini fiziksel sinyale çevirmiş oluyoruz.
+
+218
+00:58:35,123 --> 00:58:58,703
+Distortion ve Noise'a da bakacağız arkadaşlar. Distortion dediğimiz bozuntu, Noise dediğimiz gürültü. Distortion'lar arkadaşlar, bozuntular sistematik ve tekrar edilebilir olur. Yani örnek verelim, burada birkaç tane, bu sinüs dalgası orijinal. Mesela clipping bozuntusu var. Yani işte buralar tepe noktaları biraz içeriye doğru büzüşmüş.
+
+219
+00:58:59,284 --> 00:59:10,923
+Ama bu sistematiktir. Yani hepsinde bütün sinyal boyunca bu creeping gibi gözüküyordur. Bunun çözümü basit. Veya işte crossover dediğimiz şurada kayınmalar yani tam böyle.
+
+220
+00:59:11,539 --> 00:59:17,620
+Hat geçişlerinde kaymaların olduğu bozuntu şekli. Sistematiktir ve repeat, yani tekrar eder.
+
+221
+00:59:18,200 --> 00:59:35,620
+İşte bunun da çözümü basittir. Ve harmonik distorjinler var. Hani ikisinin beraber karıldığı, işte beraber oluşan farklı ağırlıklarla farklı katkıların sunulduğu ve nihayetinde farklı bir etkin oluştuğu bozuntular çözümü oluştu.
+
+222
+00:59:35,620 --> 00:59:38,900
+Bunun da bir tık çözümü basit. Çünkü tekrar edilebiliyor.
+
+223
+00:59:39,539 --> 01:00:00,000
+Paterni öğrenebilirsiniz. Ve bu paterni geriye dönüp sinyali düzenleştirebilirsiniz. Yani distorsiyonlara bir şekilde çözüm var. Örnek verelim güncel hayattan. Örneğin siz bir, ta eskilerden vardı belki hatırlamazsınız ama kasetten düğün çekimleri.
+
+224
+01:00:00,000 --> 01:00:11,300
+Bu çiziklerini CD'ye aktarırlardı ve bazen kasetten çekim yaparken o kasete çekim yapan cihazlar belli başlı zaman aralıklarında tıkır tıkır.
+
+225
+01:00:11,731 --> 01:00:39,731
+Tıkırt tıkırt diye sesler dolandırırdı. Yani o da sesin içine girmiş oluyor kayıt alırken. Şimdi bunu tabii ki de elimine etmek çok basit. Çünkü o frekansı biliyoruz. Yani kaç saniyede bir bu yaşanıyor mesela. Yaşanan şeyin aralığı ne kadar? Hep aynı. Bu bir distorsiyon. Yani belli bir paten çıkıyor ve bu paten elimine edebiliyorsunuz sinyal işlemeyene. Distorsiyonlara bir çözüm var. Yani bozuntulara bir çözüm var. Ama gelelim.
+
+226
+01:00:39,731 --> 01:00:43,731
+Diyelim ne istediğimiz, hani güncel hayatta, gündelik hayatta, çevreden...
+
+227
+01:00:44,467 --> 01:01:10,267
+Bir sistematik olmayacak şekilde ve repeat olmayan veya olabilir bir şekilde sinyali üzerine binen gürültüler. İşte bu asıl problem. Yani mesela bu normal bir distort olmuş bir sinyal değil mi? Yani bir bozun sinyalinden daha farklı. Buna bir de gürültü biniyor. Ama bu aralardaki her bir binme oranı gördüğümüz gibi birbirinden farklı.
+
+228
+01:01:10,963 --> 01:01:22,963
+Böyle olunca bunu döndürebilmek yitik daha zor. İmkansız mı değil. Ortalamasını alıyorsun ama yine veriler kayıp oluyor. Gürültü daha baskın çıkıyor. Yani böyle böyle şeyler.
+
+229
+01:01:24,596 --> 01:01:39,135
+Dijital sinyale de gürültü binebilir vesaire gibi. Yani gürültü aslında fiziksel hayatta en problematik olarak görülen sinyale üzerine en problematik olarak görülen bir yapı.
+
+230
+01:01:39,695 --> 01:01:43,135
+Evet, sistem dizaynı işte bunlara göre yani...
+
+231
+01:01:43,539 --> 01:02:03,467
+Bu modellemeyi yapacağımız vakit siz de projelerinizde bir sensör seçimi yapacaksınız. Bir akşe içeri yani eğleyici seçimi, motor olabilir, başka bir şey olabilir, ısıtıcı olabilir gibi. Bunları seçerken öncelikli dış dünyada ne kadar etkileniyor buna bakmak lazım. Mesela bir ısı sensörü var. Diyor ki...
+
+232
+01:02:03,635 --> 01:02:29,715
+İşte tabi data sheet diye tabir ettiğimiz viri kataloguna bakıyorsunuz sensörün. Diyor ki işte 270 dereceden kadar okuyabilirim diyor. İyi de siz ortamın hassas ısı dere değişimini gözlemlemek istiyorsunuz. Bu anlamlı değil çünkü 270 çok geniş bir skala. Onun yerine 0-35 derece arasında ölçüm yapabilen bir sensör kullanmak daha mantıklı.
+
+233
+01:02:30,164 --> 01:02:37,324
+Veya işte tabii onun da zematacı şu olacak 0.35 olan sensörün yürültüden etkilenme oranı daha yüksektir.
+
+234
+01:02:38,044 --> 01:02:46,804
+Bunlarla veri katı olana bakarak karar vermeniz ve projenizde bunlara özgü yani güzel bir şekilde kullanmanız gerekiyor.
+
+235
+01:02:52,947 --> 01:02:54,608
+Plaka doğru plaktı.
+
+236
+01:02:57,307 --> 01:03:00,967
+Evet arkadaşlar, genel olarak bu haftanın kısımları bu.
+
+237
+01:03:00,967 --> 01:03:05,947
+Şimdi şu PCP veya VSI dediğimiz yapılara biz çok girmeyeceğiz.
+
+238
+01:03:06,847 --> 01:03:08,487
+Bunlar şu demek oluyor.
+
+239
+01:03:08,648 --> 01:03:12,508
+Baskı devreye çıktığınızda şey yani vehimlediniz.
+
+240
+01:03:12,943 --> 01:03:24,983
+Delikli Pertinax dediğimiz yapıda projenizi sundunuz. Ondan sonra PCP'ye geçmenize gerek yok. Zaten raporda yazacak bunlar. Asistanlar da bahsedecek. O yüzden çok da üzerinde durmuyorum.
+
+241
+01:03:26,764 --> 01:03:32,503
+Evet, bunlardan da bahsetmiş olduk bu hafta. Sorumuz var mı arkadaşlar?
+
+242
+01:03:34,996 --> 01:03:58,096
+Slide'ları paylaşacağım ama önce asistanların Google Classroom'u açmasını bekliyorum. Oradan zaten duyuları vesaire Google Classroom üzerinden yapacaklar sizlerle. Lab duyuları, işte Lab programı, kimin ne zaman gireceği, hangi grupta olacağınız bunları Classroom açıp oradan paylaşacaklar. Ben de sunumları Classroom'dan paylaşacağım.
+
+243
+01:04:03,092 --> 01:04:13,472
+Var mı arkadaşlar sorumuz? Yoksa bu hafta bitirebiliriz bu kadar kafidir. Genel olarak dersin işleyişi vesaire anlaşıldıysa.
+
+244
+01:04:16,307 --> 01:04:38,748
+Ayrıca bir tane ödevi bu noktada sensör ve eyleyicilerle alakalı vereceğim ama öncesinde hangi projeyi gerçekleştireceğinizin belirlenmesi gerekiyor. Bunu belirledikten sonra kullanacağınız sensör ve iç diagramda başka ne devre elemanı varsa onlarla alakalı bir ödev vereceğim.
+
+245
+01:04:41,940 --> 01:04:45,519
+Evet, sorumuz yoksa arkadaşlar, dersi bitireceğim.
+
+246
+01:04:46,000 --> 01:04:47,300
+Hocam ben bir şey sorabilir miyim?
+
+247
+01:04:47,640 --> 01:04:48,060
+Evet.
+
+248
+01:04:48,539 --> 01:04:52,480
+Bu konularla ilgili olanlara önerebileceğiniz bir YouTube kanalı falan var mı acaba?
+
+249
+01:04:53,480 --> 01:04:55,480
+Yani şimdi...
+
+250
+01:04:57,235 --> 01:05:25,155
+Ne baktığına önemli. Mesela soru çözümü üzerine ise zaten internette, YouTube'da her kanal var. Ama ben genelde şunu öneriyorum. Soru çözümü vesaire onları zaten bulabilirsiniz ama enteresan, ilginç elektronik devre tasarımları yapan, deneyler yapan bazı kişiler var. Mesela Elektro Boom diye bir kanal var. Hintli bir adam yapıyor ama Amerika'da herhalde.
+
+251
+01:05:25,235 --> 01:05:33,555
+Mesela onu bakabilirsiniz. O enteresan deneyler yapıyor. Yani şunu sorgulattırıyor. Mesela diyotun.
+
+252
+01:05:34,003 --> 01:05:40,563
+En yüksek kaç amperde acaba iletime geçebileceğini veya bozuntuya gidebileceğini gibi testler yapıyor.
+
+253
+01:05:40,724 --> 01:05:47,623
+Bu aslında size o kısımda, o videoyu izlerken, diyotun bir kısım ek bilgilere öğrenmeniz neden oluyor.
+
+254
+01:05:47,724 --> 01:05:55,224
+O açıdan benim hoşuma gidiyor ve onu da öneriyorum genelde. Elektroboom. Yanlış olmasın ama elektroşok da olabilir.
+
+255
+01:05:55,403 --> 01:05:57,103
+Kanalı ismi şu an hatırlayamadım.
+
+256
+01:05:57,123 --> 01:05:59,704
+Elektroboom hocam, bu sürekli elektrik çarpan adamdı.
+
+257
+01:05:59,963 --> 01:06:00,744
+Evet, evet, o.
+
+258
+01:06:01,856 --> 01:06:02,856
+Evet.
+
+259
+01:06:03,123 --> 01:06:31,123
+Mesela değişik o var. Veya işte soru çözümleri vesaire zaten derste yapacağız ama onu yeterli gelmediği durumlarda onları yapan yabancı kanallar vesaire çok fazla kaynak var. Yani şimdiki nesil tabii kitap okumuyor. Ben buraya kitapları koydum ama kitaplara baksanız bence daha faydalı olabilecektir ama yani YouTube'da da yazdığınızda Electronic Circuits Analysis, Circuit Analysis Electronics bunları yazdığınızda zaten.
+
+260
+01:06:31,123 --> 01:06:32,123
+Teşekkürler.
+
+261
+01:06:38,483 --> 01:06:56,644
+Tamam mıyız arkadaşlar? Sorumuz var mı? Yoksa haftaya labın olup olmayacağıyla alakalı size duyuru yapılır zaten. Haftaya görüşmek üzere. Hepinize iyi günler, iyi çalışmalar, iyi dersler.
+
+262
+01:06:57,304 --> 01:06:58,043
+İyi günler hocam.

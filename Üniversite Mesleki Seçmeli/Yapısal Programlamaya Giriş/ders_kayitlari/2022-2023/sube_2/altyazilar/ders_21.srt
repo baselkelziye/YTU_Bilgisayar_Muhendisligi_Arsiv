@@ -1,0 +1,2543 @@
+1
+00:01:39,700 --> 00:01:41,484
+Merhabalar arkadaşlar.
+
+2
+00:01:47,219 --> 00:01:51,219
+Hocam, ben şimdi yetki tanımlıyorum.
+
+3
+00:01:51,219 --> 00:01:52,219
+Tamamdır.
+
+4
+00:01:52,219 --> 00:01:58,219
+Ben geri geleceğim ama, siz devam edin herhalde yarım saat 40 dakikaya geri gelmiş olalım.
+
+5
+00:01:58,219 --> 00:02:02,219
+Dersin bitişine göre de proje safhasına geçerim.
+
+6
+00:02:02,219 --> 00:02:03,219
+Tamamdır.
+
+7
+00:02:03,219 --> 00:02:04,219
+Kolay gelsin, görüşürüz.
+
+8
+00:02:04,219 --> 00:02:06,219
+Sağ olun, görüşürüz.
+
+9
+00:09:32,596 --> 00:09:35,155
+Evet arkadaşlar, istiyorsanız yavaş yavaş başlayalım.
+
+10
+00:09:37,255 --> 00:09:44,515
+Bugünkü uygulamada vizelerdeki dört tane sorudan çözeceğiz.
+
+11
+00:09:45,036 --> 00:09:47,275
+Daha sonra iki tane de algoritmik soru çözeceğiz.
+
+12
+00:09:48,796 --> 00:09:51,855
+Recursive ile ilgili bir soru çözeceğiz bugün.
+
+13
+00:09:54,056 --> 00:09:59,556
+İstiyorsanız başlayalım genel olarak. Bir sorunuz var mı? Dersten önce sormak istediğiniz.
+
+14
+00:10:04,275 --> 00:10:05,275
+Yok sanırım.
+
+15
+00:10:08,596 --> 00:10:12,596
+Ekran paylaşımı yapalım. Tamamdır.
+
+16
+00:10:13,596 --> 00:10:22,735
+Şimdi, ilk olarak vizeye çıkmış olan bu olasılık sorusunu çözeceğiz.
+
+17
+00:10:25,096 --> 00:10:26,995
+Bu soruyu yapabildiniz mi?
+
+18
+00:10:41,364 --> 00:10:52,864
+Tamam, bir başlayalım. Şimdi soruda bir püsta kod verilmiş ve soruda bize sayı bölü n'i bulmamız söyleniyor.
+
+19
+00:10:52,864 --> 00:11:03,364
+Tabi burada n'in büyük değerleri için kaça yakınsadığını soruyor. Neden burada n'in büyük değerleri için olduğunu özel olarak belirtmiş?
+
+20
+00:11:09,683 --> 00:11:11,683
+Eklif belirsiz olacak.
+
+21
+00:11:11,683 --> 00:11:19,683
+Evet, yani büyük sayılar için rastgele artık eşit dağılıma doğru gidiyor.
+
+22
+00:11:19,683 --> 00:11:28,683
+Burada random 0 ile 1 arasında bir değer ürettiği verilmiş ve burada bize de bir integral verilmiş bir yardım olarak.
+
+23
+00:11:29,971 --> 00:11:51,831
+Şimdi koda bakalım. Kodumuz 1 ile n arasında, n kere, S1 ve S2 random sayılarını üretiyor, sıfırla bir aralığında. Daha sonra eğer S1'in karesi S2'den küçük ve eşitse sayıyı bir arttırıyor. O zaman bizim sayı bölü n'imiz burada.
+
+24
+00:11:53,460 --> 00:12:06,460
+ortalama olarak şu koşulun sağlanma olasılığını veriyor bize değil mi? Bunu da n'in büyük değerleri için yaptığımız için eşit dağılımda bu olasılığı bulmamız isteniyor.
+
+25
+00:12:06,460 --> 00:12:17,163
+Şimdi, biz olasılık bulurken ne yapıyoruz arkadaşlar? Yani olasılığın genel formülü nedir?
+
+26
+00:12:25,203 --> 00:12:27,963
+İstenen durum bölü tüm durumlar.
+
+27
+00:12:28,543 --> 00:12:45,963
+Evet, istenen durum bölü tüm durumlar. Şimdi peki bizim tüm durumlarımız neyi kapsıyor? Yani normal olarak siz mesela yazı turu attığınız zaman genel durumlarınız nedir? Yazı ve turadır değil mi? Peki buradaki genel durumumuz bizim ne?
+
+28
+00:12:54,644 --> 00:13:12,644
+Şimdi 0 ve 1 aralığında sonsuz sayı üretildiği için bizim aslında genel uzayımız sonsuzdur. Öyle değil mi? Çünkü 0 ile 1 arasında sonsuz tane sayı vardır. Bizim aslında burada istenilen durumumuz da sonsuzdur.
+
+29
+00:13:21,203 --> 00:13:27,203
+Sonsuz durumlar olsaydı, bizim uzayımız nasıl temsil edilirdi?
+
+30
+00:13:30,644 --> 00:13:35,203
+Sonsuz noktalar bir düzlemde birleştiğinde ne ifade eder?
+
+31
+00:13:41,491 --> 00:13:58,491
+Alan iki tane düzlemde olunca, şimdi tek düzlemde aslında bir çizgi olurken, iki tane değişkenimiz olduğu için burada bir alan ifade ediyor değil mi? Üç tane olsaydı hacim ifade edecekti.
+
+32
+00:14:04,783 --> 00:14:29,743
+Bulunan bölgenin, çünkü istenilen durumumuz bir bölge olacak, bir alan olacak, genel uzaya bölümünü istiyor. Bizim olasılığımız bu olacak. Şimdi, bunun için ilk başta bizim istenilen durumu çözmemiz gerekiyor, yani bulmamız gerekiyor. Bizim düzlemimiz böyle olsun. Ve bunlar da eksenlerimiz olsun.
+
+33
+00:14:30,803 --> 00:14:37,803
+Bizim burada istenilen alanı bulmamız için bunu çizmemiz gerekiyor. Değil mi?
+
+34
+00:14:37,803 --> 00:14:51,803
+Şimdi S1'in karesi küçük eşittir S2. Şimdi eşitsizliklerde liseden hatırlıyorsanız, böyle bir eşitsizliği çizmek için ilk başta neyi çiziyorduk?
+
+35
+00:14:58,004 --> 00:15:01,683
+S2'ye şu S2 öyle değil.
+
+36
+00:15:07,475 --> 00:15:16,475
+Eşit olduğu durumu çiziyorduk değil mi? Şimdi bizim burada x karenin şeklini hatırlarsanız
+
+37
+00:15:21,395 --> 00:15:33,895
+Şöyle bir şekli vardı x kare, x karenin. Öyle değil mi? Şimdi bizim buradaki random sayımız sıfırla bir arasında üretiyor.
+
+38
+00:15:33,895 --> 00:15:46,395
+Doğal olarak bizim sınırlarımız her zaman bir ve s2 bir alanında olması gerekir. Bu alanın dışı bizim uzayımızda değil.
+
+39
+00:15:46,580 --> 00:15:56,580
+Doğal olarak şu bölge zaten tamamen gidiyor. Şimdi burada bir eşitsizlik var. Ki eşitsizliklerde bildiğiniz gibi bir alan ifade ediyor.
+
+40
+00:15:56,580 --> 00:16:02,580
+S1'in karesi küçüktür esikiden. E şimdi bunu nasıl deneyebilirsiniz?
+
+41
+00:16:02,580 --> 00:16:12,580
+S2 1, S1 0 iken 0 küçük eşittir 1 mi? Doğru, değil mi? O zaman bizim istediğimiz alan
+
+42
+00:16:14,292 --> 00:16:16,292
+Bu bölge olacak.
+
+43
+00:16:17,292 --> 00:16:20,292
+Şimdi biz bu bölgeyi nasıl bulabiliriz arkadaşlar?
+
+44
+00:16:22,292 --> 00:16:30,292
+Biz toplam alanı bildiğimiz için, eğer şu bölgenin, diyelim buraya A diyelim, buraya da B diyelim.
+
+45
+00:16:30,292 --> 00:16:37,292
+Eğer biz A'yı 1-A dersek, B'yi bulabiliriz değil mi?
+
+46
+00:16:38,292 --> 00:16:40,292
+Şimdi A'yı nasıl bulacağız?
+
+47
+00:16:40,511 --> 00:16:48,831
+İntegral de bulacağız. Zaten sorun işı kısmında bunu söylemiş hocalarımız size. Bu integral'ı nasıl bulacağız?
+
+48
+00:16:48,831 --> 00:17:05,391
+İntegral fx dx alanımız ne? 0'da 1. Şimdi bunu fx'imiz bizim x kare.
+
+49
+00:17:06,771 --> 00:17:31,871
+x karenin integrali de x küp bölü 3. Bunun 0 ve 1'i de nedir? a eşittir, 1 bölü 3 oluyor. Bizim toplam alanımız 1'di, o zaman b 2 bölü 3 olur. Yani şu koşulu sağlayan ortalama ihtimalimiz 2 bölü 3'müş.
+
+50
+00:17:35,284 --> 00:17:36,784
+Sorusu olan var mı?
+
+51
+00:17:44,243 --> 00:18:06,563
+Şimdi bunu bir de kodlanmış haline bakalım. Burada gördüğünüz yani koduna çok girmiyorum zaten pistokodu koda aktarmak basit. İşte n sayısını alıyor ve daha sonra bu n sayısı kadar random sayı üretiyor. Daha sonra bu karesi eğer eskiden küçük eşitse bir tane sayıcı arttırıyor ve en sonunda da sayı bölü n yapıyor.
+
+52
+00:18:07,284 --> 00:18:14,060
+Şimdi burada dikkat etmeniz gereken nokta bir şu, niye burada 1.0 çarpı yaptım bunu?
+
+53
+00:18:27,155 --> 00:18:29,475
+Integer bölmesi olmasın diye mi?
+
+54
+00:18:29,475 --> 00:18:50,435
+Aynen öyle. Burada bir typecasting yaptım. Şimdi eğer ben bunu yapmasaydım, burada sayı integer, n integer olduğu için, bunları ikisi de integer bölmesi yapıp hiç bize float vermeyecekti. Biz burada aslında float yazdırmaya çalışsak da.
+
+55
+00:18:50,644 --> 00:18:55,644
+Doğal olarak ben bu işlemi bir tane float katarak işlemi typecast yaptım.
+
+56
+00:18:55,644 --> 00:18:58,644
+In float'a.
+
+57
+00:18:58,644 --> 00:19:10,644
+Şimdi bunu çalıştırdığımız zaman, küçük bir n sayısı için baktığımız zaman 0.70, 0.60.
+
+58
+00:19:10,644 --> 00:19:13,644
+Yani bunun ne geleceğini bilemiyoruz ama...
+
+59
+00:19:14,900 --> 00:19:30,900
+1 milyon gibi bir sayı yaptığımız zaman 0.66 tekrar 1 milyon için yaptığımız zaman 0.66 geliyor.
+
+60
+00:19:30,900 --> 00:19:36,900
+Yani n sayısı büyük olduğu zaman, küçük olduğu zaman sonucun ne çıkacağını tahmin edemeyiz.
+
+61
+00:19:36,900 --> 00:19:41,900
+Ama büyük olduğu zaman yakın sanıca sayıyı bu şekilde bulabiliyoruz.
+
+62
+00:19:46,740 --> 00:19:48,683
+Sorusu olan var mı?
+
+63
+00:19:54,291 --> 00:20:16,391
+Tamamdır, geçiyorum. Şimdi burada da yine aynı mantıkla bir soru sorulmuş. Yine 0,1 alanında değer üretiliyor ve sayı bölü n'i bulmamız isteniyor. Burada da koşulumuz, iki tane koşulumuz var. Bir tanesi S2 0.5'ten küçük olacak, bir tane de S1 büyüktür, 1-S2 olacak.
+
+64
+00:20:22,132 --> 00:20:45,632
+Eksenlerimizi çiziyoruz. Tabii daha iyi çiziyoruz. S1 ve S2 dedik. Yine 1 de üretileceği için birileri işaretliyoruz. Ve burada çizeceğimiz koşul S1 büyüktür, 1-S2.
+
+65
+00:20:46,036 --> 00:21:11,416
+Tabii bunu yine çizgiyi çizmek için ilk başta eşit olduğu koşulu çiziyoruz. Burada S1, 1, S2, 0 olduğunda doğru mu çıkıyor? Yani S2, 0 olduğunda S1 kaç çıkıyor? 1. Tamam, buradan geçiyormuş demek ki. S1, 0 olduğunda S2 nereden geçiyor? 1'den geçiyor.
+
+66
+00:21:11,955 --> 00:21:21,355
+Demek ki bir de buradan geçiyor. Bu iki nokta arasından geçen doğru bizim istediğimizmiş.
+
+67
+00:21:21,355 --> 00:21:37,996
+Şimdi eşitliğe bakıyoruz. Eşitliği bulmak için de 0-0 noktasına bakalım. S1-0, S2-0 iken 0 büyük müdür birden? Değildir. O zaman diğer taraf bizim istediğimiz alanmış.
+
+68
+00:21:39,604 --> 00:21:49,264
+Şimdi burada şu alan içerisinde ki şu alan isteyen dili bulduk.
+
+69
+00:21:49,264 --> 00:21:58,264
+Ama bizim bir de ikinci koşulumuz vardı. S2 küçüktür 0.5'ten. Şimdi 0.5 burası olsun.
+
+70
+00:21:58,264 --> 00:22:07,204
+Buradan geçen bir doğru çektiğimiz zaman bu doğrunun bizim fonksiyonumuzu kesen noktası S1'de kaç olur?
+
+71
+00:22:07,443 --> 00:22:11,443
+S2-05 olduğu zaman S1 de 05 olur.
+
+72
+00:22:13,943 --> 00:22:19,443
+Ve doğal olarak şu alan isteniyor bizden demek ki değil mi?
+
+73
+00:22:20,743 --> 00:22:23,443
+İki koşulu sağlayan tek bölge burası.
+
+74
+00:22:25,443 --> 00:22:31,443
+Bu bölgenin alanı bize istediğimiz alanı verecek.
+
+75
+00:22:33,443 --> 00:22:34,443
+İstediğimiz...
+
+76
+00:22:35,124 --> 00:22:52,224
+olasılıksal sonucu verecek. Tabanı 0.5 ve yüksekliği 0.5 olan üçgenin alanı nedir? 1 bölü 2 çarpı, 1 bölü 2 çarpı, üçgenin alanından gelen bir 1 bölü 2 daha var. Bu da 1 bölü 8 eder.
+
+77
+00:22:58,483 --> 00:22:59,983
+Sorusu olan var mı?
+
+78
+00:23:06,355 --> 00:23:16,355
+Şimdi bunu da bir kod üzerinde görelim. Nasıl çalıştığını. Kod yine basit. Kodun üzerinde çok durmayacağım.
+
+79
+00:23:19,355 --> 00:23:27,355
+Burada 10 verdiğimiz zaman 0 çıktı. Yani 10 tanenin içinden bu koşulu sağlayan hiçbir tane yokmuş.
+
+80
+00:23:29,355 --> 00:23:31,355
+Bir daha deneyelim.
+
+81
+00:23:33,332 --> 00:23:46,332
+0.1 çıktı mesela. Bir de büyük bir n sayısıyla denediğimiz zaman 0.12 bu da 1.8'e denk geliyor.
+
+82
+00:23:53,715 --> 00:23:55,307
+Sorusuz olan var mı?
+
+83
+00:24:00,531 --> 00:24:01,531
+Geçiyorum.
+
+84
+00:24:04,531 --> 00:24:12,531
+Şimdi bu soruda, fej'nin döndürdüğü sonucu bulmamız isteniyor.
+
+85
+00:24:12,531 --> 00:24:15,531
+Şimdi ilk başta bu kod ne yapıyor ona bir bakalım.
+
+86
+00:24:15,531 --> 00:24:20,531
+Burada bir i ve j tanımlanmış. Daha sonra bu i ve j f fonksiyonuna gönderilmiş.
+
+87
+00:24:20,531 --> 00:24:25,531
+f fonksiyonu bir recursive fonksiyon, kendi içinde kendini çağırıyor.
+
+88
+00:24:28,339 --> 00:24:52,339
+i'nin 0 olması. Şimdi recursive'lerdeki en önemli konu durma koşuludur. Durma koşulu i eşittir 0 ise, eğer i 0 değilse, o zaman i'yi c'ye bölüp bir daha kendini çağırıyor ve bunun sonucuna bir ekleyerek yukarıya döndürüyor.
+
+89
+00:24:58,132 --> 00:25:02,311
+i ve j olsun ve burada da iterasyonumuz olsun.
+
+90
+00:25:06,195 --> 00:25:10,515
+Şimdi birinci iterasyon bizim main'den çağırdığımız iterasyon olacak.
+
+91
+00:25:10,515 --> 00:25:16,795
+Burada i 82 ve j de 3'tür.
+
+92
+00:25:16,795 --> 00:25:22,795
+Şimdi bunu çağırdıkları zaman i sıfıra eşit mi? Değil.
+
+93
+00:25:22,795 --> 00:25:31,995
+O zaman i bölü j'yi, i'yi j'ye bölüp, bu da 27 virgür küsur ediyor.
+
+94
+00:25:34,579 --> 00:25:43,940
+1 ekleyeceğiz sonucuna. Yani buraya dönecek olan sayı, bu fonksiyonun return'ının bir fazlası olacak.
+
+95
+00:25:45,059 --> 00:25:52,719
+27 geldi tekrar fonksiyona. 0'a eşit mi? Değil. O zaman tekrar C'ye böldük. 9.
+
+96
+00:25:55,219 --> 00:25:59,639
+Bunu gönderdiğimiz zaman 0'a eşit mi? Değil. 3.
+
+97
+00:26:00,980 --> 00:26:04,980
+Bunu gönderdiğimiz zaman 1, 5 olacak.
+
+98
+00:26:04,980 --> 00:26:15,980
+Ve 1'i 3'e böldüğümüz zaman teknik olarak 0.33 çıkıyor ama bunu C mantığıyla çalıştığını düşüneceğiz bu soruda.
+
+99
+00:26:15,980 --> 00:26:19,980
+Ve 0 olarak gönderilecek buraya.
+
+100
+00:26:19,980 --> 00:26:26,980
+Bu 6. iterasyonda 0, i eşit midir 0'a? Evet. O zaman 0 döndürdük.
+
+101
+00:26:30,516 --> 00:26:57,016
+Şimdi burdaya geldik, burası 0 oldu. 0 artı 1, 1. Buraya 1 gönderdik. 1 artı 1, buradan 2 geldi. 2 artı 1, 3 geldi. 3 artı 1, 4 geldi.
+
+102
+00:26:58,259 --> 00:27:07,259
+Ve en son ilk main'e 4 artı 1'den 5 gönderilir.
+
+103
+00:27:08,259 --> 00:27:10,259
+Cevabımız da 5.
+
+104
+00:27:12,259 --> 00:27:14,259
+Sorusu olan var mı?
+
+105
+00:27:21,044 --> 00:27:28,044
+Şimdi bunu da bir kod üzerinde görelim. Burada integer i ve j'miz tanımlı.
+
+106
+00:27:28,044 --> 00:27:37,044
+Ve burada üçüncü soruda bu fonksiyonda da sonuç ürettik.
+
+107
+00:27:37,044 --> 00:27:48,044
+Aynısını yapıyor, i eşittir 0 ise 0 döndürüyor. Eğer değilse de j'ye bölüp yukarıya döndürüyor. Return yapıyor.
+
+108
+00:27:48,403 --> 00:27:49,403
+Bir fazlasını.
+
+109
+00:27:49,403 --> 00:28:02,403
+82.27 bu ilk gönderilen değer, ikincisi de yeni fonksiyona bir sonraki adımdaki değerimiz.
+
+110
+00:28:02,403 --> 00:28:12,403
+82.27.9.3.1 en son 0 gönderiliyor ve 0'dan da şuradan geri döndürüyor ve sonuç olarak da 5 buluyoruz.
+
+111
+00:28:18,740 --> 00:28:20,240
+Sorsa olan var mı?
+
+112
+00:28:25,779 --> 00:28:30,139
+Şimdi, burada başka bir recursive fonksiyonumuz var.
+
+113
+00:28:32,180 --> 00:28:37,380
+Fonksiyon, durma koşulu yine n'in 0 olması.
+
+114
+00:28:38,980 --> 00:28:43,180
+Daha sonra fonksiyon kendini n-1 ile yeniden çağırıyor.
+
+115
+00:28:45,180 --> 00:28:53,163
+Ve, n-1 ile çağırırken 0 olana kadar aşağıya iniyor değil mi?
+
+116
+00:28:53,332 --> 00:29:10,732
+Şimdi bu ne yapıyordu? Adım adım gidip en son sıfır olunca yukarıya çıkıyordu. Burada artık işlemi en aşağıya indikten sonra yapmaya başlıyor.
+
+117
+00:29:14,291 --> 00:29:15,291
+Şimdi bu N.
+
+118
+00:29:25,619 --> 00:29:29,619
+3'te başladı, 0 mı değil, 2 gönderildi.
+
+119
+00:29:31,619 --> 00:29:40,619
+2, 0 mı değil, 1, 4'e geldi, 0 mı? Evet, yukarıya geldi.
+
+120
+00:29:40,619 --> 00:29:46,619
+Üçüncü iterasyondayız şu anda. Üçüncü iterasyonda en kaç? 1.
+
+121
+00:29:53,236 --> 00:30:10,736
+Print yıldız yazdırdık. Sonra da bir tane aşağıya indik. Kaç tane yıldız yazdı bu iterasyonda? Bir tane yıldız yazdı. Sonra fonksiyon bittiği için yukarıya döndük. Biz önceki iterasyona döndük.
+
+122
+00:30:19,188 --> 00:30:25,188
+Yıldız yazdırdı, burada kaç yıldız yazacak? İki tane yıldız yazacak.
+
+123
+00:30:25,188 --> 00:30:34,188
+Fonksiyon sonunda bir sonraki iterasyona gidip, n üçgen üç tane yıldız yazdırıp çıkacak.
+
+124
+00:30:34,188 --> 00:30:46,188
+O zaman bizim sonucumuz nasıl olur? Yıldız, yıldız, yıldız, yıldız, yıldız ve yıldız olur.
+
+125
+00:30:46,644 --> 00:30:48,044
+Değil mi arkadaşlar?
+
+126
+00:30:52,019 --> 00:30:53,519
+Sorsu olan var mı?
+
+127
+00:31:00,980 --> 00:31:01,980
+Yok sanırım.
+
+128
+00:31:01,980 --> 00:31:07,980
+Şimdi bunu da kod olarak gösterirsek.
+
+129
+00:31:15,763 --> 00:31:40,384
+Şimdi kod olarak yine püsto kodun aynısı, n0 ise geri dön dedik. 0 değilse o zaman kendini yeniden çağır, n-1 ile. En sonunda da i eşittir n0'dan büyükken i, yıldız yazdır dedik. Bunu çalıştırdığımız zaman 1, 2, 3 yıldızı görebiliriz.
+
+130
+00:31:47,604 --> 00:32:09,604
+Şimdi ilk algoritmik sorumuzu çözüyoruz. Size bir dizi veriliyor. Bu dizinin sıralı olmadığını varsayın. Bu sıralı olmayan dizide devam eden en uzun sıralı diziyi bulmanız isteniyor.
+
+131
+00:32:15,571 --> 00:32:27,275
+Bu sıralı diziyi bulmanız isteniyor. Yani şurada şöyle bir dizi verildiği zaman sizden 0, 1, 2, 3'ü bulmanız isteniyor.
+
+132
+00:32:31,508 --> 00:32:45,420
+Şimdi burada bir beş dakika size düşünme izni vereceğim. Ya da beş dakika belki bu soru için biraz fazla olur. İki üç dakika düşünün. Ondan sonra soruyu birlikte çözeceğiz.
+
+133
+00:34:35,603 --> 00:34:50,603
+Evet arkadaşlar, istiyorsanız yavaş yavaş başlayalım. Zaten çok karmaşık bir soru değil. Bu soruyu en basit yoldan nasıl çözebiliriz? Yani hiç karmaşıklaştırmadan brute force olarak.
+
+134
+00:35:09,268 --> 00:35:29,747
+Sıralı hale sokarız. Şimdi bu evet bir çözümdür. Aslında en basit çözümlerden bir tanesi bu. Eğer diziyi sıralı hale soktuğumuz zaman zaten ardışık olanlar yan yana gelecek. Sadece bir sonrakine bakarak diziyi gezebiliriz. Peki sıralamadan yapmanız istenirse nasıl yaparsınız?
+
+135
+00:36:01,907 --> 00:36:22,667
+Her eleman için arasında fark bir olan diğer elemanları buluruz demişiz. Doğru, yani biz her eleman için diğer elemanlara bakıp arasında bir tane fark var mı diye bakacağız. Peki bunu nasıl yaparız? Yani mesela kaç tane döngü kullanırız bunun için?
+
+136
+00:36:43,059 --> 00:36:57,460
+Enkara karmaşıklığı verdi. Evet, Enkara karmaşıklık oluyor. İki tane döngü tutacağız. Bir tanesinde bütün elemanları gezecek ilk başta. Diğerinde de her eleman için bütün diziyi gezmesi gerekecek.
+
+137
+00:36:57,460 --> 00:37:09,420
+Şimdi isterseniz bunu bir kodlayalım. Kodun üzerinden geçerken de sorunuz varsa sorabilirsiniz.
+
+138
+00:37:19,411 --> 00:37:30,811
+Şimdi kütüphanelerimizi yazdık. Int main'imizi yazdık. Şimdi burada bizim bir tane dizi tanımımız olsun.
+
+139
+00:37:33,091 --> 00:37:41,611
+Ve bu dizinin örnekteki gibi 7 tane elemanı olsun. Ve biz bir diziyi initialize edelim.
+
+140
+00:37:46,420 --> 00:38:03,420
+Daha sonra bu dizinin uzunluğunu tutan bir len değişkenimiz olsun. Daha sonra da bunu en uzun sıralı şeyi bulan bir tane fonksiyon yazalım.
+
+141
+00:38:03,420 --> 00:38:10,420
+Şimdi ilk başta bunu bir brute force ile çözen fonksiyonu yazalım.
+
+142
+00:38:12,947 --> 00:38:17,347
+Array aldık, bir de int len aldık.
+
+143
+00:38:19,847 --> 00:38:28,347
+Daha sonra şimdi bir şeyi gezeceğimiz için i ve j indislerimizi tanımlayalım.
+
+144
+00:38:29,148 --> 00:38:39,947
+Daha sonra aşağıda bir for ile gezerken, i eşittir 0, i küçüktür len.
+
+145
+00:38:43,251 --> 00:38:45,751
+i artı artı dedik.
+
+146
+00:38:48,452 --> 00:38:51,251
+Şimdi burada ikinci bir
+
+147
+00:38:55,027 --> 00:38:57,027
+fonksiyonumuz olacak.
+
+148
+00:38:59,027 --> 00:39:02,027
+Şimdi bunu for ile de yapabiliriz değil mi arkadaşlar?
+
+149
+00:39:13,588 --> 00:39:15,588
+Ne diyorsunuz? Bunu forla yapabilir miyiz?
+
+150
+00:39:21,492 --> 00:39:25,892
+Ya da forla yapmanın bize ne gibi bir yararı olur?
+
+151
+00:39:31,188 --> 00:39:48,188
+Aynen, for gereksiz işlem sağlar değil mi? Aslında burada var kullanmak daha iyi. Çünkü biz eğer bulursa, yani kendi içinde bir şeyi bulduğu zaman çıkmasını istiyoruz bir noktada.
+
+152
+00:39:50,188 --> 00:39:53,188
+Şimdi o zaman C'ye küçüktür, sıfır dedik.
+
+153
+00:39:57,940 --> 00:39:59,940
+Ve aşağıya geldik.
+
+154
+00:40:01,940 --> 00:40:03,940
+While dedik.
+
+155
+00:40:03,940 --> 00:40:06,940
+Şimdi buradaki ilk koşulumuz ne olacak?
+
+156
+00:40:06,940 --> 00:40:09,940
+J küçüktür, run olacak.
+
+157
+00:40:10,940 --> 00:40:12,940
+Ve
+
+158
+00:40:13,940 --> 00:40:15,940
+Diyeceğiz ki
+
+159
+00:40:16,940 --> 00:40:18,572
+Array, j
+
+160
+00:40:21,940 --> 00:40:46,940
+Eksi bir, eşit eşittir. Şimdi burada baktığımız koşul değişecek teknik olarak. Öyle değil mi? Yani eğer bizim sıralı dizide ilerliyoruz ya, ilk elemana hep bakmayacağız.
+
+161
+00:40:47,507 --> 00:40:52,007
+İlk elemandan daha iyisini bulursak, onun üzerinden devam edecek.
+
+162
+00:40:56,371 --> 00:41:08,371
+O yüzden bizim burada bir tane current number diye değişkenimizin olması gerekiyor. Bunu da yukarıda tanımlamamız gerek.
+
+163
+00:41:13,268 --> 00:41:31,768
+CurrentNumber'mız ilk başta bizim array imiz olacak. Daha sonra biz bunu şurada kontrol edeceğiz. CurrentNumber.
+
+164
+00:41:43,476 --> 00:41:53,324
+Ama bunu buraya koyamayız. Çünkü aslında bizim iki tane durumumuz var. Niye bunu buraya koyamayız?
+
+165
+00:41:56,371 --> 00:42:00,371
+Çünkü eğer bu buna eşitse...
+
+166
+00:42:03,827 --> 00:42:09,708
+Biz ne yapacağız? Yeniden başlayacağız değil mi? Diziyi tekrar başlatmamız gerekiyor.
+
+167
+00:42:14,291 --> 00:42:19,671
+Current number'ımız artık bizim rc olacak.
+
+168
+00:42:24,788 --> 00:42:41,788
+Bir de tabii maksimumu tuttuğumuz için, burada ikinci bir değişkenimiz olacak. Current seconds. Bu da 1 olarak başlasın. Bunu da 1 arttıracağız.
+
+169
+00:42:45,619 --> 00:42:57,619
+Şimdi burada niye while'ın içinden çıkarttık onu? Çünkü eğer current seconds ise ne yapması gerekiyor? Yeniden en baştan bakması gerekiyor değil mi?
+
+170
+00:42:59,619 --> 00:43:07,243
+O zaman c eşittir 0 olacak. Eğer değilse, c artı artı olacak.
+
+171
+00:43:14,291 --> 00:43:15,791
+Şimdi bu kısmı anladınız mı?
+
+172
+00:43:19,219 --> 00:43:35,219
+Yani bu var döngüsü diziyi bir kez gezmiyor. Her bulduğu zaman diziyi yeniden geziyor. Her yeni eleman bulduğu zaman sequence'da diziyi yeniden gezmeye başlıyor.
+
+173
+00:43:41,012 --> 00:43:58,012
+En sonunda, bunu gezdikten sonra, if-max dedik, tabii bizim bir de şurada, maksimum sequence'u tutacağımız bir değişkenimiz olması gerekiyor.
+
+174
+00:43:58,012 --> 00:44:06,012
+Bir de, bu maksimumun başlangıç noktasını tutan bir değişkenimiz olması gerekiyor.
+
+175
+00:44:13,364 --> 00:44:27,864
+current sequence'a O zaman, max eşittir current sequence ve start da eşittir re.
+
+176
+00:44:31,155 --> 00:44:56,155
+Şimdi, şimdi bu kısımda ne yaptık? Geldik, bütün dizinin elemanlarını birer birer gezmeye başladık. Her gezdiğimizde aslında neye bakıyoruz? Şu anda bulunduğumuz eleman, en uzun seconds'ın başlangıç noktası mı diye bakıyoruz. Yani burası önemli.
+
+177
+00:44:57,331 --> 00:45:07,331
+Ç'ye bakmıyoruz, baktığımız sayı, longest seconds'ın içinde mi diye bakmıyoruz, başlangıç noktası mı diye bakıyoruz.
+
+178
+00:45:10,331 --> 00:45:21,331
+Daha sonra geliyoruz, burada bir current number atıyoruz, current seconds atıyoruz ve diziyi en baştan gezmeye başlıyoruz.
+
+179
+00:45:23,987 --> 00:45:34,987
+Ve sequence'a dahil olan, yani aralarında bir fark olacak şekilde olan sayıları bulduğumuz zaman, current sequence'u bir arttırıyoruz.
+
+180
+00:45:34,987 --> 00:45:44,987
+Ve j'yi sıfırlıyoruz. Yani bu while artık, ne yapıyor? Yeniden baştan bakmaya başlıyor.
+
+181
+00:45:44,987 --> 00:45:51,884
+Her yeni bulduğumuz elemanda, baştan kontrol etmeye başlıyoruz.
+
+182
+00:45:56,788 --> 00:45:58,288
+Anlaşıldı mı bu kısım?
+
+183
+00:46:09,972 --> 00:46:13,472
+Peki bunu yazdırmak istediğimizde nasıl yazdırırız?
+
+184
+00:46:36,500 --> 00:46:42,900
+Aslında bir daha baştan gezmemiz gerekiyor değil mi? Yani çünkü bunu başka bir şey tutmadığımız için, teknik olarak.
+
+185
+00:46:42,900 --> 00:46:45,699
+J eşittir sıfır deyip...
+
+186
+00:46:49,235 --> 00:46:53,335
+CurrentNumberStart olacak şekilde.
+
+187
+00:46:57,396 --> 00:47:08,396
+while, C küçüktür, landen. Şu kısmı yeniden geziyoruz.
+
+188
+00:47:11,827 --> 00:47:19,827
+Ancak, Gezerken artık ne yapacağız? Printf.
+
+189
+00:47:28,371 --> 00:47:30,371
+Current number diyeceğiz.
+
+190
+00:47:34,643 --> 00:47:36,643
+Current number'ı 1 arttıracağız.
+
+191
+00:47:38,643 --> 00:47:45,643
+Ve C'yi, C eşittir 0 diyeceğiz. Yeniden baştan bakışlasın bakmaya.
+
+192
+00:47:49,811 --> 00:48:05,811
+Eğer değilse bu sequence'in bir elemanı, başa devam edeceğiz dizide ve en sonundaki currentNumble'ı bulmak için de böyle yazdırıyoruz.
+
+193
+00:48:05,811 --> 00:48:12,683
+Şimdi istiyorsanız bir çalıştıralım. Sizin sorularınız var mı?
+
+194
+00:48:31,635 --> 00:48:33,387
+Niye hata ver burada?
+
+195
+00:48:51,860 --> 00:48:53,860
+Sizce niye hata verdi arkadaşlar?
+
+196
+00:48:55,860 --> 00:48:58,860
+Hocam yukarıda erayı, erayı olarak tanımlamadığınız.
+
+197
+00:48:58,860 --> 00:49:01,860
+Evet, erayı olarak tanımlamadığımız için.
+
+198
+00:49:01,860 --> 00:49:04,860
+Peki erayı olarak nasıl tanımlarız?
+
+199
+00:49:05,860 --> 00:49:07,860
+Şöyle tanımlayabiliriz.
+
+200
+00:49:11,860 --> 00:49:16,860
+Bir de tabii şunu da değiş, tanımlamamız gerekiyor.
+
+201
+00:49:19,027 --> 00:49:22,027
+Evet, 0, 1, 2, 3.
+
+202
+00:49:25,027 --> 00:49:26,027
+Şimdi buraya mesela...
+
+203
+00:49:29,492 --> 00:49:37,892
+201 ve 202 ekleseydik ve bunu da 9'a çıkarsaydık. Tabi şunu da 9'a çıkaralım.
+
+204
+00:49:37,892 --> 00:49:41,892
+Hımmmm.
+
+205
+00:49:41,892 --> 00:49:48,692
+He, özür dilerim şu, 199 olsun.
+
+206
+00:49:48,692 --> 00:49:53,804
+99, 200, 201, 202.
+
+207
+00:49:57,940 --> 00:50:08,220
+Şimdi tanımlarken max değeri koymadık array demiş. Şimdi array'de buraya max değeri koymamız gerekiyor mu? Array tanımlarken.
+
+208
+00:50:14,483 --> 00:50:16,483
+Büyük boyutlu da gerekmiyor olabilir.
+
+209
+00:50:16,483 --> 00:50:28,483
+Gerekmiyor değil mi? Yani şeyde, array'in içine koymamız gerekmiyor. Nerede gerekiyor? Böyle bir tanım yapmamız?
+
+210
+00:50:28,483 --> 00:50:31,483
+Daha büyük boyutlu dizilerden.
+
+211
+00:50:31,483 --> 00:50:38,483
+Evet, matris gibi iki boyutlu ya da üç, dört boyutlu dizilerde koymamız gerekiyor. Bunun nedenini biliyor musunuz?
+
+212
+00:50:42,260 --> 00:50:51,260
+Çünkü her parantezde farklı bir atlama miktarı var. Bu atlama miktarlarını bilmesi için.
+
+213
+00:50:51,260 --> 00:51:02,260
+Evet. Yani siz bir satır atlarken sütün boyutunu bilmesi gerekiyor ki o kadar atlayıp diğer satıra geçsin diye. Ama array tek boyutlu olduğu için bunu tanımlamanıza gerek yok.
+
+214
+00:51:02,260 --> 00:51:08,972
+Bunu ayrıca şöyle de tanımlayabilirdiniz. Bunu gördünüz mü? Şu yıldız işaretini.
+
+215
+00:51:12,083 --> 00:51:14,083
+Evet hocam.
+
+216
+00:51:16,083 --> 00:51:18,083
+Görmemişsiniz daha tamamdır.
+
+217
+00:51:18,083 --> 00:51:21,083
+Tam değil yani bir grup görmüştür diğer grup görmemiştir.
+
+218
+00:51:22,083 --> 00:51:25,083
+Şey bu sadece sizin grubunuz değil mi hocam?
+
+219
+00:51:25,083 --> 00:51:33,083
+Burası benim grubumda yani burada odak noktamız tam o değil. Pointer'ları ufak bir anlattık sadece.
+
+220
+00:51:35,083 --> 00:51:38,795
+Hocam dizinin bittiğini nasıl anlıyor? Aslında anlamıyor.
+
+221
+00:51:39,027 --> 00:51:48,387
+Yani bunun kendi içinde memory access hatası veriyor eğer diziyi aşarsanız. Ama onun dışında bir kontrolü yok.
+
+222
+00:51:56,403 --> 00:52:04,903
+Çünkü zaten burada yaptığı işlemi daha ileride göreceksiniz. Orası zaten direkt memora adresiyle şey yapıyor.
+
+223
+00:52:06,903 --> 00:52:12,235
+Tamamdır. Arkadaşlar, burada anlamadığınız bir kısım var mı çözümle ilgili?
+
+224
+00:52:23,443 --> 00:52:30,943
+Şimdi peki dizi sıralı olsaydı demiştiniz. Dizi sıralı olsaydı nasıl bunu bulurduk?
+
+225
+00:52:45,331 --> 00:52:52,331
+Kaç tane döngümüz olurdu burada? ON olacaktı. Peki, ON mi olurdu bu çözüm sizce?
+
+226
+00:52:56,820 --> 00:53:20,579
+Ya da aslında şöyle bir soru sorayım. Şimdi biz burada iki tane döngü içinde diziyi gezdik. Değil mi? Sonra geldik şurada da aynı işlemi yaptık. Şimdi burada o en kare olmuştu çözümümüz. Burada peki çözüm ne?
+
+227
+00:53:22,324 --> 00:53:26,324
+Yani şuranın eklenmesi karmaşıklığı arttırdı mı sizce?
+
+228
+00:53:35,380 --> 00:53:52,120
+Arttırmadı değil mi? Peki, biz diziyi bu sırada haliyle versek ama dizimiz sırasız olsa ve biz bunu sıralasak ve ondan sonra bu işlemi yapsak, o zaman O.N. mi olur karmaşıklık?
+
+229
+00:54:04,275 --> 00:54:25,475
+Nlogan ya da sıralama algoritmanızın karmaşıklığı neyse aslında o olur. Niye? Çünkü artık işlem çözümünüzde en karmaşık adım bu en uzun sequence'u bulmak değil, sıralamak olacak. Bu yüzden sıralama algoritmanız ne kadar kötüyse karmaşıklığınız da o kadar artacak.
+
+230
+00:54:25,811 --> 00:54:33,811
+Burada bir bubble sword ya da daha farklı selection sword gibi bir sword kullandığımız zaman en kare olacaktı.
+
+231
+00:54:35,811 --> 00:54:47,627
+Bu yüzden zaten çoğu çözümde sıralamak, sıralamanın diziye değmesi gerekiyor. Çözümü basitleştiriyor ama…
+
+232
+00:54:48,083 --> 00:54:56,543
+Eğer diğer karmaşıklık daha iyi bir çözüm varsa sizin sıralama algoritmanınızdan, sıralama kötü bir sonuç oluyor.
+
+233
+00:54:58,603 --> 00:55:05,963
+Şimdi, biz yine burada ON olduğu için ne yapacağız? Bir tane değişkenimiz var çünkü bir tane.
+
+234
+00:55:06,452 --> 00:55:20,692
+Bir kere gezeceğiz dizinin üzerinde. Ama bir kere gezsek de yine de bizim emrimizde bir maximum sequence number'u tutacağımız ve bir de start değişkenini tutacağımız bir değişkenler olması gerekiyor.
+
+235
+00:55:20,692 --> 00:55:26,692
+Burada tabii bir de bitişi tutabiliriz. Böylece...
+
+236
+00:55:26,992 --> 00:55:37,992
+Zaten bunlar sıralı olduğu için, diğer tarafta bitişin bir önemi yok çünkü başlangıç ve bitiş noktasının nerelerde olacağını bilmiyoruz ama burada sıralı olduğu için bitiş noktası da aslında belirli.
+
+237
+00:55:37,992 --> 00:55:52,992
+Ve bir de int current sequence tutacağımız bir değer olacak. Daha sonra diyeceğiz ki for, i eşittir 0, i küçüktür len.
+
+238
+00:55:54,579 --> 00:56:16,268
+ve i artı artı iken, bunun üzerinden geçiyoruz. Bir kere geçeceğiz. Burada geçerken neye bakacağız sadece? Array i artı bir eşit midir? Array...
+
+239
+00:56:17,331 --> 00:56:42,331
+i artı bir. Bir tanesinde parantezin içinde, bir tanesi parantezin dışında olacak. Eğer böyleyse, current sequence'u bir kere arttırıyoruz. Eğer değilse, o zaman artık sıralı dizi bozulmuş oluyor. Burada o zaman soruyoruz, current sequence büyük müdür? Max'dan. Eğer büyükse,
+
+240
+00:56:45,076 --> 00:57:01,576
+end'imiz eşittir i olacak, max eşittir current sequence olacak ve current sequence'umuzda 1'e eşit diyeceğiz.
+
+241
+00:57:01,576 --> 00:57:06,275
+Tabi bunu bulduktan sonra da yazdırmamız gerekiyor.
+
+242
+00:57:06,275 --> 00:57:08,576
+Aynı şekilde.
+
+243
+00:57:10,996 --> 00:57:24,296
+Şunu yazdırırsak, for i eşittir, 0, i küçüktür, i artı artı. Yazdırırken aslında artık neyi biliyoruz?
+
+244
+00:57:28,019 --> 00:57:52,420
+Bizim başlangıç ve bitiş noktalarını aslında biliyoruz. Yani aslında şuraya start, start'ı nasıl yapabiliriz? i-currentSequence yapabiliriz aslında.
+
+245
+00:57:54,771 --> 00:58:19,531
+Ya da şöyle yapabiliriz, yani burada indisleri vererek for'un içinde dönebiliriz. Ya da, i eşittir 0 deyip, i küçüktür max iken, yani bu kadar seconds içindeyken, şuraya printf %d
+
+246
+00:58:21,844 --> 00:58:47,844
+array, int, eksi, max, yani bu ilk birinci adıma gidiyor. Artı i, artı bir. Çünkü şurada birden başlatmıştık, görünsü, ikinimus'u. Yaparsak da bunu yazdırır. Şimdi burada tabi bu sıralı bir dizi değil. O yüzden...
+
+247
+00:58:49,012 --> 00:58:52,211
+Bunun sıralı bir dizi tanımlayalım.
+
+248
+00:58:55,987 --> 00:59:18,487
+Diyelim ki 6 olsun. 1, 2, 3, 4, 100, 200 olsun. Lanimiz artık 6 olacak. Ve burada Brut değil de, sorted olacak.
+
+249
+00:59:24,851 --> 00:59:31,171
+Böylece 1, 2, 3, 4'ü buldu. Tamamdır. Sıralı çözüm ile ilgili bir sorusu olan var mı?
+
+250
+00:59:40,115 --> 01:00:02,596
+Tamamdır. O zaman şöyle ikinci sorumuza geçelim. Bu soru için de size bir zaman vereceğim. Şimdi size bir char set veriliyor, char array veriliyor ve bu array'den tekrarlı olarak bütün permutasyonları bulmanız isteniyor.
+
+251
+01:00:06,260 --> 01:00:10,580
+Kaç elemanlı olacağını bu permitasyonların söylüyor.
+
+252
+01:00:10,580 --> 01:00:16,860
+4 olduğu zaman işte AA, AAB, AAC diye gidecek.
+
+253
+01:00:16,860 --> 01:00:22,460
+Ta ki işte bunlar bittikten sonra AAABA olacak.
+
+254
+01:00:22,460 --> 01:00:28,860
+Sonra A'lar bitince işte A, B, AA olacak.
+
+255
+01:00:28,860 --> 01:00:31,460
+Daha sonra işte bunlar bitince...
+
+256
+01:00:31,699 --> 01:00:38,419
+B, A, A, A olacak. Bunu recursive olarak çözmeniz gerekiyor.
+
+257
+01:00:42,804 --> 01:00:47,204
+Şimdi size bir 4 dakika veriyorum düşünmeniz için.
+
+258
+01:04:45,043 --> 01:04:49,043
+Evet arkadaşlar, nasıl çözebiliriz sizce biz bu soruyu?
+
+259
+01:05:16,052 --> 01:05:23,872
+Peki, K4 değil de 5 olsaydı ya da K değişken olsaydı, kullanıcıdan alsaydınız K'yı?
+
+260
+01:05:36,532 --> 01:05:38,812
+For içinde çağıracaktık her birini.
+
+261
+01:05:40,252 --> 01:05:42,252
+Şimdi böyle aslında düşünmeyelim.
+
+262
+01:05:44,612 --> 01:05:56,412
+Şimdi Recursive'in aslında önemli bir kısmı dallanarak gidiyor ama her adımda aslında kendi içeriğini koruyor.
+
+263
+01:05:56,412 --> 01:06:03,452
+Şimdi diğer vizedeki sınavlarda bu çok kullanılmadı çünkü sadece tek bir adımda gitti.
+
+264
+01:06:03,856 --> 01:06:07,856
+Ama burada biraz o özelliği kullanmamız gerekiyor değil mi?
+
+265
+01:06:07,856 --> 01:06:21,856
+Şimdi biz şöyle düşünelim. Bizim bir fonksiyonumuz olsun ve bu fonksiyon ilk bütün char setleri gezsin. Tamam mı?
+
+266
+01:06:21,856 --> 01:06:29,836
+Bu gezdiği char setleri diyelim ağlı olan kombinasyonları ya da işte permutasyonları üretmek istiyoruz.
+
+267
+01:06:31,027 --> 01:06:39,027
+Şimdi ağlı permitasyonları gezerken neleri gezecek? Bütün setteki...
+
+268
+01:06:42,324 --> 01:06:58,251
+elemanları gezecek değil mi? Daha sonra, yani bunu biraz iteratif olarak düşünelim. Daha sonra bu A'ya geldiği zaman tekrar, diyelim buraya geldi, burada bütün hepsini gezecek.
+
+269
+01:07:01,844 --> 01:07:07,344
+Sonra buraya A'ya geldiği zaman, burada bütün hepsini gezecek.
+
+270
+01:07:08,844 --> 01:07:16,344
+Sonra burada A'ya geldiği zaman, duracak. Niye? K eşittir 4.
+
+271
+01:07:18,344 --> 01:07:24,344
+Şimdi ne olmuş oldu? Bunu sanki böyle bir 4 tane for içinde gezseydik,
+
+272
+01:07:25,844 --> 01:07:44,844
+Bunu böyle sağlamış olacaktık. Peki bunu recursive'de yaptığımızda nasıl olacaktı? Bir fonksiyona gelecektik. A ile tekrar çağıracaktık fonksiyonu. Sonra bu geldiği zaman kendi içinde bir A olacaktı. Değil mi?
+
+273
+01:07:45,844 --> 01:07:51,844
+Daha sonra bu kendi içindeki A'ya geldiğinde burada, burada tekrar A'ya gidecek ya.
+
+274
+01:07:52,175 --> 01:07:55,175
+Bu A'ya bir tane daha A eklemiş olacak.
+
+275
+01:07:56,675 --> 01:07:59,175
+Ya da burada zaten A ile gelmiş olacaktı ama...
+
+276
+01:08:00,675 --> 01:08:02,175
+Yani şöyle yapalım.
+
+277
+01:08:02,675 --> 01:08:04,675
+Şuradan bir tane daha gitsin.
+
+278
+01:08:09,235 --> 01:08:11,235
+Bunun da içi boş olsun.
+
+279
+01:08:12,235 --> 01:08:15,235
+Burada a, a olacaktı.
+
+280
+01:08:15,235 --> 01:08:18,235
+Burada tekrar a'ya gittiği zaman ne olacaktı?
+
+281
+01:08:19,235 --> 01:08:21,235
+a, a, a olacaktı.
+
+282
+01:08:21,235 --> 01:08:28,235
+Ve burada tekrar a'ya gittiği zaman da a, a, a, a olacaktı.
+
+283
+01:08:29,235 --> 01:08:36,235
+Şimdi eğer siz bu soruyu iteratif olarak yapsaydınız, ne gibi bir sorunla karşılaşırdınız?
+
+284
+01:08:42,163 --> 01:09:06,343
+Her geri gittiğiniz zaman karmaşıklık aslında aynı kalıyor. Niye aynı kalıyor? Çünkü zaten yapmanız gereken adımlar belli. Ama şöyle bir sorunla karşılaştırdınız. Siz her aşağıya indiğiniz zaman yukarıya çıkmak için bazı şeyleri kaydetmeniz gerekiyordu.
+
+285
+01:09:07,060 --> 01:09:28,876
+Değil mi? Yani aşağıdan yukarıya çıkmak aslında iteratifte biraz zor. Bir de bunun tabii şöyle bir sıkıntısı da olacaktı. K4 değil de, baştaki gibi, K3 olsaydı şuralarda durmanız gerekecekti. Değil mi? Ama buralarda durmanız gerektiğini...
+
+286
+01:09:29,011 --> 01:09:40,331
+Kodda yapmanız çok zor. Çünkü bunu yapmak için iç içe 4 tane for gerekecekti. 3'te durması için ne olacaktı? 5'te durması gerektiği zaman ne olacaktı?
+
+287
+01:09:40,331 --> 01:09:56,251
+Şimdi iteratifin böyle bir sorumluluğu var. Ama recursive'de ne yapıyor? Şimdi geldi, A için çağırdı, A için çağırdı, A için çağırdı ve 4 tane A için burada çağırdı. Ne oldu? Burada bitti. Geriye gittiğinde nereye gidiyor? Yani
+
+288
+01:09:56,884 --> 01:10:02,884
+Kendi içindeki state bir adım otomatik geriye gidiyor değil mi? Üç tane A'ya gidiyor direktman.
+
+289
+01:10:02,884 --> 01:10:11,884
+Burada siz B için çağırdığınız zaman aslında o state'i bir daha kendinizin değiştirmesine gerek kalmıyor.
+
+290
+01:10:11,884 --> 01:10:21,872
+Zaten kendi içinde değişmiş durumda. Böyle olunca aslında işleminiz de basitleşiyor. Yani kod karmaşıklığınız azalıyor.
+
+291
+01:10:21,872 --> 01:10:32,012
+Çünkü yaptığınız işlem hep aynı. Bakın şu adımlarda gördüğünüz gibi, bütün harfler için geziyorum ve bir altını çağırıyorum. Bütün harfler için geziyorum ve bir altını çağırıyorum.
+
+292
+01:10:33,452 --> 01:10:45,811
+Bu işlem hepsi için aynı. Ama siz bunu iteratif olarak yapsaydınız, bunların hepsini kendi içinde tanımlamak zorunda kalacaktınız. Ama recursive'de yaptığınız için aslında sizin tanımlayacağınız fonksiyon basit.
+
+293
+01:10:47,091 --> 01:10:54,091
+Daha az kodla tanımlıyorsunuz ve bazı işlemleri kendi içinde otomatik yapıyor. Recursive'ın aslında özelliği bu.
+
+294
+01:10:54,091 --> 01:11:02,091
+Şimdi bunu bunu da gözüyorsunuz ama bunun belki daha iyi bir örneği bir Rabirent'te gezmek olabilirdi.
+
+295
+01:11:02,091 --> 01:11:09,091
+Yani siz Rabirent içinde geziyorsunuz ve Rabirent içinde işte dedentler var.
+
+296
+01:11:09,971 --> 01:11:15,971
+Şimdi siz burada geldiğiniz zaman sizin iki tane seçeneğiniz var. Bir yukarı git, bir aşağı git değil mi?
+
+297
+01:11:15,971 --> 01:11:24,971
+Şimdi siz burada iteratif olarak gezince her bulduğunuz dedentte geriye doğru bir sarma yapmak zorundasınız.
+
+298
+01:11:24,971 --> 01:11:34,971
+Ama recursive'de zaten her adım için ayrı fonksiyon çağırdığınız için dedentte bulduğunuz zaman buradan geriye gitmek çok daha basit.
+
+299
+01:11:37,619 --> 01:11:47,115
+Kod karmaşıklığınız, şimdi kodunuzun bir okunma karmaşıklığı var, bir de işlem karmaşıklığı var değil mi? Bu işlem karmaşıklığını azaltır mı?
+
+300
+01:12:06,387 --> 01:12:25,467
+Azaltmaz. Yani çünkü yapacağımız işlemler belli. Bu işlemlerin yapılması gerekiyor ve bu bunu azaltmıyor. Neyi azaltıyor? Sizin bu işlemi yaparken yazdığınız kodunuzun karmaşıklığını azaltıyor. Okunma karmaşıklığını azaltıyor. Daha basit okumanızı sağlıyor.
+
+301
+01:12:33,887 --> 01:12:51,887
+Daha önemli. Şimdi sizin burada ilk başta kullanacağımız bir utility function var. Bu da string concat olacak. Bunun C'de de bir karşılığı var. Ama biz daha basit bir şey istediğimiz için onu kullanmıyoruz.
+
+302
+01:12:51,887 --> 01:13:01,707
+Ve böyle bir utility function yazdık. Şimdi hem burada içerini de görmüş olacaksınız burada.
+
+303
+01:13:01,908 --> 01:13:16,908
+Şimdi ilk başta bizim bir nereye ekleyeceğimizi bulmamız gerekiyor yeni harfi. Asıl string de. Yani bir stringe harf ekleme fonksiyonu bu.
+
+304
+01:13:16,908 --> 01:13:26,908
+Şimdi burada strlen diye bir fonksiyon kullanıyoruz. Bu fonksiyon verilen bir stringin boyutunu buluyor.
+
+305
+01:13:27,764 --> 01:13:35,623
+Boyutunu tabi şeyde bulmuyor, sıfırda hani indeksini bulmuyor, sondaki harfin indeksini bulmuyor, direkt boyut buluyor birden başlamış gibi.
+
+306
+01:13:35,623 --> 01:13:41,324
+Bu yüzden eğer son harfe erişmek istiyorsanız bu first len eksi bir yapmanız gerekiyor.
+
+307
+01:13:41,324 --> 01:13:45,324
+Ama biz aslında son harfe erişmek istemiyoruz.
+
+308
+01:13:45,324 --> 01:13:52,324
+Biz sonuna yeni bir harf eklemek istiyoruz.
+
+309
+01:13:53,268 --> 01:13:58,467
+Bu da bizim bir tane char, bir karakter. Peki burada çıkmamız doğru mu?
+
+310
+01:14:06,355 --> 01:14:08,755
+Burada başka bir işlem yapmamız gerekiyor mu?
+
+311
+01:14:23,507 --> 01:14:30,807
+Gerekiyor değil mi? Yani bu string olduğu için stringin bittiği yeri göstermemiz gerekiyor.
+
+312
+01:14:30,807 --> 01:14:36,007
+Şimdi biz burada bu stringin bittiği noktayı sildik teknik olarak.
+
+313
+01:14:36,007 --> 01:14:42,007
+Doğal olarak artık yeni bir string bitiş noktası belirlememiz gerekiyor.
+
+314
+01:14:42,007 --> 01:14:50,208
+Daha sonra int'in içerisinde bizim değişkenlerimizi tanımlayalım hemen hızlıca.
+
+315
+01:14:51,731 --> 01:15:03,731
+set1 diyelim ve bu bir array ve bu array'in içerisinde şöyle harfler var. Şunları hemen kopyalayalım hızlıca.
+
+316
+01:15:06,731 --> 01:15:18,671
+Böyle harflerimiz var. Biz k olarak şimdilik 4 deneyelim. Slide'daki örnek de oydu. int de n eşittir 7.
+
+317
+01:15:18,671 --> 01:15:27,671
+7 tane eleman var. Şimdi, burada bizim fonksiyonumuz nasıl çalışacak?
+
+318
+01:15:28,671 --> 01:15:36,671
+Kendi içinde bir string olacak ve bu string'e her adımda fonksiyon içerisinde bir harf ekleyecek. Öyle değil mi?
+
+319
+01:15:36,671 --> 01:15:45,515
+Böylece her adımda bir harf eklenerek ilerleyecek kendi içinde. Şimdi burada, diyelim ki print...
+
+320
+01:15:45,876 --> 01:15:50,876
+All Permutations diyelim.
+
+321
+01:15:51,876 --> 01:15:57,876
+Buraya ilk başta bir char set alacak. Bu bizim kullanacağımız harfler olacak.
+
+322
+01:15:57,876 --> 01:16:01,876
+Ve buraya bir prefiks alacak.
+
+323
+01:16:01,876 --> 01:16:05,876
+Şimdi bu prefiks nedir?
+
+324
+01:16:05,876 --> 01:16:12,876
+Bu prefiks bizim önceki adımda eklenen harfler.
+
+325
+01:16:14,707 --> 01:16:21,108
+Bu harflere yeni harf ekleyeceğiz. Yani bizim aslında yazdıracağımız string ne olacak? Prefix olacak değil mi?
+
+326
+01:16:21,108 --> 01:16:27,307
+Ve int k. Bunlar da bizim array'imizin değişkenleri.
+
+327
+01:16:27,307 --> 01:16:34,707
+Şimdi burada tabii bir gezme işlemi yapacağız. Bütün karakterler için işlemi yapacağız.
+
+328
+01:16:34,707 --> 01:16:37,307
+Burada...
+
+329
+01:16:38,036 --> 01:16:49,036
+Eğer durma koşulumuz, şimdi bütün recursive fonksiyonlardaki en önemli koşul, en önemli konu durma koşuludur. Bizim burada durma koşulumuz ne?
+
+330
+01:16:53,300 --> 01:17:07,300
+4 tane eleman eklemiş. Yani ağaçta gezerken 4 tane adım attık. 4 tane adım attığı zaman dur diyeceğiz.
+
+331
+01:17:07,300 --> 01:17:17,300
+Şimdi onu da nasıl yapacağız? Bunu farklı bir hani attığımız adım sayısı ya da ağaçtaki derinliğimiz olarak koyabiliriz.
+
+332
+01:17:18,815 --> 01:17:38,975
+Şurada gönderdiğimiz int k ile de gösterebiliriz. Bu int k'da biz eğer kalan eklenecek sayıyı tutarsak, ki o zaman burada k eşittir 0 olur, o zaman biz k 0 olduğu zaman artık 4 tane eklemiş olacağız. Değil mi?
+
+333
+01:17:38,975 --> 01:17:45,275
+O zaman burada ilk başta yazdırma işlemini yapıyoruz.
+
+334
+01:17:47,347 --> 01:18:09,747
+prefix yazdırıyoruz. Daha sonra da geri dön diyoruz. Eğer k sıfıra eşit değilse, o zaman dizi içinde gezip, her yeni karakteri ekleyip recursive olarak kendimizi çağırmamız gerekiyor.
+
+335
+01:18:15,507 --> 01:18:37,483
+Şimdi burada ilk başta bizim bir yeni değişkene ihtiyacımız var. Bu yeni değişkenimiz bize aşağılara göndereceğimiz şeyleri tutması gerekiyor. Böylece biz bize gelen, fonksiyona gelen prefiksi değiştirmemiş olacağız.
+
+336
+01:18:37,716 --> 01:18:46,416
+Bunu değiştirirsek, eğer önceki sonuçları, önceki stake'leri kaybetmiş oluruz. O yüzden yeni bir tane üretiyoruz.
+
+337
+01:18:46,416 --> 01:18:59,716
+Bu yeni ürettiğimiz string'e, değişken'e eskisini kopyalıyoruz.
+
+338
+01:19:03,252 --> 01:19:09,252
+Daha sonra yazdığımız utility function'u çağırıyoruz.
+
+339
+01:19:11,252 --> 01:19:21,252
+Buraya set bize gönderilen karakter setindeki ince harfi koyuyoruz.
+
+340
+01:19:22,252 --> 01:19:27,252
+Ve daha sonra kendimizi tekrar çağırıyoruz.
+
+341
+01:19:27,252 --> 01:19:29,932
+Şimdi burada çağırırken setimiz aynı.
+
+342
+01:19:30,195 --> 01:19:33,195
+Prefiximiz artık new prefix.
+
+343
+01:19:36,195 --> 01:19:38,195
+Enimiz aynı.
+
+344
+01:19:39,195 --> 01:19:42,195
+K'ımız ama artık k-1.
+
+345
+01:19:44,195 --> 01:19:46,195
+Ve böylece çıkıyoruz.
+
+346
+01:19:48,195 --> 01:19:52,195
+Şimdi burada ilk başta çağırırken de bir tane prefix göndermemiz gerekecek.
+
+347
+01:19:53,195 --> 01:19:57,195
+O yüzden bunu da burada tanımlıyoruz. Main içinde tanımlıyoruz.
+
+348
+01:19:58,228 --> 01:20:01,427
+Bu şimdilik sadece boş kalsın.
+
+349
+01:20:05,203 --> 01:20:18,203
+Ve daha sonra fonksiyonumuzu ilk defa çağırıyoruz. Set1 dedik, prefix dedik, n dedik ve k dedik.
+
+350
+01:20:20,203 --> 01:20:32,203
+Şimdi bunu çağırdığımız zaman gördüğünüz gibi 4 harfli bütün permitasyonlarını burada yazdırıyor.
+
+351
+01:20:35,315 --> 01:20:37,315
+Şimdi ikinci olarak,
+
+352
+01:20:41,315 --> 01:20:46,315
+Tekrarsız olursa, yani aslında kombinasyonlarını nasıl yaparız?
+
+353
+01:20:51,412 --> 01:21:13,412
+Buradaki kombinasyonları da aslında aynı mantık olacak. Yani prefiksimiz yine bir boşluktan başlayacağız. Daha sonra bu her bir harfi gezecek. Her bir harfi gezerken ama artık geldiği noktadan sonrakilere bakacak.
+
+354
+01:21:18,195 --> 01:21:20,195
+Burada tekrar A'ya gitmeyecek.
+
+355
+01:21:23,572 --> 01:21:25,572
+B'ye gidecek artık.
+
+356
+01:21:27,572 --> 01:21:33,572
+Burada artık tekrar A'ya da gitmeyecek, B'ye de gitmeyecek, C'ye gidecek artık.
+
+357
+01:21:36,572 --> 01:21:38,412
+Bunu nasıl yaparız arkadaşlar?
+
+358
+01:22:13,811 --> 01:22:25,811
+Şimdi bunu da aslında geldiği noktayı tutarsak ve sadece o noktadan sonrakileri gönderirsek aslında bunu da başarmış olabiliriz değil mi?
+
+359
+01:22:25,811 --> 01:22:37,452
+Eğer biz buraya yeni bir argüman eklersek ve buraya last edit dersek biz bundan sonra gelenleri yazdırdığımızda aslında
+
+360
+01:22:37,619 --> 01:22:50,619
+Sonucu ulaşırız. Şimdi burada tekrar int i diye bir index tanımlayacağız. Burada tekrar bir char new prefix'ımız olacak.
+
+361
+01:22:53,619 --> 01:22:59,435
+Ve burada durma koşulumuz yine aynı şekilde k eşittir 0.
+
+362
+01:23:00,756 --> 01:23:07,416
+Ve bunun içinde de aynı şekilde şuradaki printimizi yapmış olacağız. Bunlar değişmedi.
+
+363
+01:23:07,416 --> 01:23:19,956
+Nerede, neresi değişti? For'un içi değişti değil mi? Artık i sıfırdan başlamayacak da, rest edit artı birden başlayacak.
+
+364
+01:23:19,956 --> 01:23:24,556
+Yani son ekledik, son eklediğimizden sonrasına bakacağız.
+
+365
+01:23:26,579 --> 01:23:38,579
+Küçükten küçükse devam ediyoruz ve i artı artı dedik. Şimdi buradaki işlemler de değişmiyor. Yalnız değişen tek şey ne?
+
+366
+01:23:40,579 --> 01:23:50,579
+Burada artık k-1 ve last edit olarak neyi ekledik? i'yi ekledik değil mi? i'yi göndereceğiz.
+
+367
+01:24:10,836 --> 01:24:18,836
+Buraya, şuraya artı bir dediğimiz için ve ilk başta sıfıra ekleyeceğimiz için eksi bir gönderdik.
+
+368
+01:24:20,836 --> 01:24:29,836
+Böyle yaptığımız zaman gördüğünüz gibi abc, abc diye tekrarsız olarak kombinasyonları bulur.
+
+369
+01:24:32,836 --> 01:24:34,836
+Bu örnekle ilgili sorusu olan var mı?
+
+370
+01:24:42,739 --> 01:24:45,739
+Genel olarak uygulamayla ilgili sorusu olan var mı?
+
+371
+01:24:56,819 --> 01:25:17,819
+Tamamdır o zaman arkadaşlar. Uygulama bu kadar. Dinlediğiniz için teşekkür ederim. Şimdi Ahmet Hoca yalnız çıkmayın. Ahmet Hoca projeyi anlatacak. Birazdan.
+
+372
+01:25:24,051 --> 01:25:28,652
+Hocam iki tane soruyu animasyon olarak göstereceğini söylemişti.
+
+373
+01:25:29,351 --> 01:25:32,252
+Ahmet Hoca gelince onu gösterir.
+
+374
+01:25:33,652 --> 01:25:35,652
+Tamam, sadece hatırlatma olarak şey yapmıştım da.
+
+375
+01:26:13,043 --> 01:26:15,043
+Merhaba, Mustafa Hocam.
+
+376
+01:26:15,043 --> 01:26:16,043
+Evet.
+
+377
+01:26:16,043 --> 01:26:18,043
+Gitti herhalde, ağzınıza sağlık.
+
+378
+01:26:18,043 --> 01:26:19,043
+Evet, sağ olun.
+
+379
+01:26:19,043 --> 01:26:22,043
+Tamam, bana bir yetki verebilirseniz siz...
+
+380
+01:26:23,043 --> 01:26:24,043
+Tamamdır.
+
+381
+01:26:24,043 --> 01:26:29,043
+...buçuğa kadar, iki üç dakika bir de ben bir şey anlatayım, bu random ile alakalı.
+
+382
+01:26:30,043 --> 01:26:33,043
+Sonra bir ara veririz, on yedi otuzunda devam ederiz.
+
+383
+01:26:34,043 --> 01:26:40,043
+Ağzınıza sağlık Hocam, isterseniz siz ayrılabilirsiniz, hani başka bir şey yok herhalde anlatıyanız.
+
+384
+01:26:40,275 --> 01:26:44,275
+Yok hocam. Tamamdır, görüşürüz. Görüşürüz.
+
+385
+01:26:44,275 --> 01:26:55,275
+Şimdi arkadaşlar, bu random kısımla alakalı şöyle bir şey yapmıştım. Şu an ekranım geliyor değil mi?
+
+386
+01:27:01,811 --> 01:27:03,092
+Görüyor musunuz?
+
+387
+01:27:06,412 --> 01:27:20,252
+Birinci soru, önce şöyle düşünelim, rastgele noktalar üretiyoruz, 0-1 aralığında sayılar üretiyoruz. Bu sayılardan iki boyutlu sistemde işlemler yapıyoruz.
+
+388
+01:27:21,011 --> 01:27:28,371
+Ben tabi burada ekrana çizdirme lot işlemi yapacağımız için 0-1 aralığı diye bir şey yok.
+
+389
+01:27:28,595 --> 01:27:38,595
+Ekranın içerisinde sığdıracağız. Ben burada hani rahat anlaşılsın diye 100 aralığında, 100'e kadar olsun diye, 0'dan 100'e kadar 100 dahil.
+
+390
+01:27:38,595 --> 01:27:44,595
+Bu JavaScript kodu, bunu çalıştırmak için şöyle yapacağım.
+
+391
+01:27:44,595 --> 01:27:52,595
+Şu an şey, N'in sonsuza giden değerleri için sayfa çalıştığı sürece
+
+392
+01:27:52,948 --> 01:28:03,748
+Ne oluyor? Bakın bu aralıkta yani bu alanı dolduracak kadar işte taban çarpı yükseklik diyeceğimiz bir yeri dolduruyoruz.
+
+393
+01:28:04,748 --> 01:28:12,148
+Bu sorunun iki sorunun da bir kısmı yani n dediğimiz şey buna bu değere yaklaşacak sonsuzda.
+
+394
+01:28:13,347 --> 01:28:18,748
+Yani kodu çalıştırdığımızda, C kodunu çalıştırdığımızda bunları çizme imkanımız yok ama
+
+395
+01:28:18,899 --> 01:28:22,979
+Böyle bir görsel bir şey yaptığınızda bunu rahatlıkla çizdirebilirsiniz.
+
+396
+01:28:22,979 --> 01:28:28,019
+Diğer sorulardan bir tanesi de şu, önce rastgele sayıları üretiyoruz.
+
+397
+01:28:28,019 --> 01:28:34,019
+Neydi? x büyüktür, 1-y idi. Yani s1 büyüktür, 1-y.
+
+398
+01:28:34,019 --> 01:28:40,579
+s2 küçük eşittir, 0.5 gibi bir şeydi. Bunu da aynı şekilde çizdi.
+
+399
+01:28:40,579 --> 01:28:44,019
+Şu şarta göre ekrana nokta koy diyorum.
+
+400
+01:28:47,283 --> 01:28:58,783
+Şöyle çalıştıralım. O ne yapıyor? Bu ikinci soru herhalde. Bugün çözülen ikinci soru. Bakın şöyle üçgensel bir bölge en sonsuza gidene kadar dolduracak.
+
+401
+01:29:00,183 --> 01:29:06,783
+Tabi burada ilk önce hızlı doluyor. Bir yerden sonra bakın bu ne kadar çalışsa çalışsın belli bir yerden sonra.
+
+402
+01:29:07,283 --> 01:29:12,783
+Üst üste noktalar koyduğu için bazı noktalara ulaşmak çoktur. Ama bunu sonsuz defa yaparsanız
+
+403
+01:29:13,235 --> 01:29:21,556
+Limitini en eşit fonksiyonlara giderken şeklinde düşünürseniz, bu alanı kapsayacak bir şey olacaktır.
+
+404
+01:29:21,556 --> 01:29:34,755
+Herhalde bu ikinci sorunun çözümü. Bilmiyorum bugünkü çözülen sorulardan. Gerçi hepinize sorular karışık geldiği için hangisi hangisidir tam şey değil ama bakın ne oluyor bu bölgeyi oluşturuyor.
+
+405
+01:29:34,755 --> 01:29:39,636
+Bunun cevabı 1 bölü 8 miydi neydi öyle hatırlıyorum. Ömürde 2 bölü 3'tü ben ne diyorum.
+
+406
+01:29:40,404 --> 01:29:44,904
+Durum böyle. Sorunuz var mı burada size?
+
+407
+01:29:50,323 --> 01:30:03,323
+Peki, saat 17.30'a kadar bir ara verelim. Geldiğimizde, hem de bir dinlenmiş olun, 15-20 dakika kadar bu projeyi anlatıp, sorularınızı alıp dersi kapatacağız.
+
+408
+01:30:03,323 --> 01:30:11,323
+O sırada da diğer gruptan arkadaşlar katılabilirler. WhatsApp grubunuz kalan varsa 17.30'da başlıyoruz diye yazabilirsiniz.
+
+409
+01:36:27,923 --> 01:36:29,923
+Yeniden merhaba arkadaşlar.
+
+410
+01:36:32,623 --> 01:36:39,923
+Evet, şu ekran paylaşımı... Bakın baya dolmuş, çok az bir şey kalmış.
+
+411
+01:36:40,423 --> 01:36:45,923
+Şimdi proje hakkında size bir döküman online yıldız sistemi paylaştık.
+
+412
+01:36:46,423 --> 01:36:51,423
+Bu dökümanı açtığınızda şuradaki linke tıklarsanız güncel versiyon bilgisini kontrol edebilirsiniz.
+
+413
+01:36:51,423 --> 01:36:55,275
+Ben şu an bunun üzerinden anlatacağım. Bir güncelleme yaptım çünkü.
+
+414
+01:36:57,140 --> 01:36:58,140
+Şöyle...
+
+415
+01:36:59,140 --> 01:37:01,100
+Şu an görüyorsunuz herhalde.
+
+416
+01:37:06,515 --> 01:37:17,195
+Tamam. Şimdi burada ilk kısımda şuradaki şeyleri okursunuz. Yani buradaki her bir kural sizi bağlıyor. Onun için bunları uzun uzun anlatmayacağım. Şuna kısaca değinelim.
+
+417
+01:37:17,195 --> 01:37:23,915
+Proje teslimi gününe kadar, ne zaman? 30 Mayıs 2023-23.E9.
+
+418
+01:37:24,659 --> 01:37:36,059
+Programlama ile alakalı sorularınız varsa ilgili lap hocanıza, şimdi size bir duyuru yapmıştık, orada isimleriniz var, lap hocalarınız, gruplar A, B, C şeklinde verildi.
+
+419
+01:37:36,059 --> 01:37:50,460
+O hocanızla irtibat kurabilirsiniz veya derste grup hocalarınıza sorabilirsiniz. Onun dışında ayrıca bir mail ile hani hocam şöyle bir sıkıntım var diye gelirse elbette cevap veririz ama
+
+420
+01:37:50,676 --> 01:37:57,756
+Burada belli bir düzen olması gerekiyor. Herkes öncelikli olarak labgrup hocasıyla irtibatta olacak.
+
+421
+01:37:57,756 --> 01:38:07,275
+Bir de 15 Mayıs'a kadar projeyle alakalı sorunuz. Hocam, şurada şunu mu demek istediniz, burada bu mu anlaşılıyor gibisinden bir sorunuz olursa,
+
+422
+01:38:07,275 --> 01:38:15,756
+Burada Classroom üzerinde şu an bir projeyle alakalı duyuru var, o duyurunun altına yazıyorsunuz. Bunu kesinlikle mail'de sormuyoruz.
+
+423
+01:38:17,076 --> 01:38:24,475
+sorulan bir sorunun cevabını herkes görmesi hem tekrara düşmeyelim hem de tutarlı olalım. Gelelim konuya.
+
+424
+01:38:24,475 --> 01:38:31,076
+Şimdi n çarp n'lik matriz üzerine n değerini burada define ile tanımlayabilirsiniz.
+
+425
+01:38:31,076 --> 01:38:38,076
+Veya n değeri kullanıcıdan alınıp matrizin boyutları define ile maksimum olacak şekilde tanımlanabilir.
+
+426
+01:38:38,076 --> 01:38:44,076
+İşte siz 20'lik tanımlarsınız, onun daha küçüğünü, 5'ini, 6'sını, 7'sini kullanabilirsiniz.
+
+427
+01:38:44,819 --> 01:38:52,260
+Burada sayılar, birden n'e kadar olan sayılarımız ikişerli olarak matrise rastgele yerleştiriliyor.
+
+428
+01:38:52,260 --> 01:38:59,460
+Herhangi iki sayı üst üste gelmeyecek. Yani hepsi birbirinden farklı yerlerde olacak. Bu kurala dikkat edelim.
+
+429
+01:38:59,460 --> 01:39:06,500
+Bu oluşturma iki şekilde. Birincisi, yazdığınız kodla rastgele dağıtım yapacaksınız.
+
+430
+01:39:06,500 --> 01:39:11,539
+İşte n sayısına girdiniz, matris oluşturuldu, boş oluşturuldu. Sonra...
+
+431
+01:39:11,796 --> 01:39:18,396
+Bunun iki en kadarlık yerine önce iki tane bir, iki tane iki, iki tane üç rastgele dağıtıyorsunuz.
+
+432
+01:39:18,396 --> 01:39:25,796
+Sonra size verilen dosyalar var. Bu dosyaların nasıl okunacağına dair burada kod da verildi.
+
+433
+01:39:25,796 --> 01:39:36,588
+Şurada bir örnek datamız var, bir de ayrıca datalarımız var. İşte şu txt uzantılı dosyalar, örnek datalar bunları kullanabilirsiniz. Bunlar üzerinden de
+
+434
+01:39:36,724 --> 01:39:43,724
+Okuma yaparak matriz doldurulabilmeli. Bunun menüsü aşağıda zaten size açıkça söylenmiş durumdadır.
+
+435
+01:39:43,724 --> 01:39:57,724
+Bu eşleştirilmiş hallerin sonuçları da test verileri içinde dediğimde bunların sonuçları da belki şu biraz kalabalık da bazıları burada var.
+
+436
+01:39:57,724 --> 01:39:59,724
+Şu an hepsini açamıyorum gerçi.
+
+437
+01:40:01,724 --> 01:40:02,724
+Neredeydi o?
+
+438
+01:40:04,724 --> 01:40:07,924
+Şu an belki bununki yok da, onu ayrıca gerekirse yükleriz.
+
+439
+01:40:07,924 --> 01:40:13,123
+Yani eşleştirme sonucunda ne olacak? Bunun görselinde yükleriz.
+
+440
+01:40:13,123 --> 01:40:15,924
+Evet, iki şekilde matrisi dolduruyoruz.
+
+441
+01:40:15,924 --> 01:40:19,324
+İstediğimizden, yani menüde bu ikisi de olabilir.
+
+442
+01:40:19,324 --> 01:40:24,324
+Şimdi eşleştirme ne olacak? Aynı sayıları birbiriyle eşleştiriyoruz.
+
+443
+01:40:24,724 --> 01:40:34,043
+Birbiriyle kesişmeyecek şekilde eşleştirme yapıyoruz. Yani 4'ün kesişmesi ile 5'in kesişmesi veya bir başka şeyin kesişmesi mümkün değil.
+
+444
+01:40:34,043 --> 01:40:40,043
+Bir de oyun bittiğinde boş hücre kalmayacak. Yani burada boş hücreleri sıfır olarak ifade edebilirsiniz.
+
+445
+01:40:40,043 --> 01:40:47,404
+Tamamen bütün matris dolmuş olacak ve buna göre kesişmeler ayarlanmış olacak ikinci maddeye göre.
+
+446
+01:40:48,051 --> 01:41:08,251
+Şimdi bu eşleştirmede de hamle yapmalar iki farklı şekilde. Otomatik modda eşleştirme için bir kod yazmanız, bir algoritma geliştirmeniz gerekiyor. Şuradaki kurallara dikkat ederek bu algoritma otomatik olarak yani kendi kendine oyun oynayacak sizin yazdığınız kod sayesinde eşleştirmeyi yapacak.
+
+447
+01:41:08,251 --> 01:41:11,451
+Soru sorabilir miyim hocam yoksa en son mu sorayım?
+
+448
+01:41:11,451 --> 01:41:12,451
+Buyurun.
+
+449
+01:41:12,532 --> 01:41:33,652
+Bu bir üstteki, biraz yukarı gelebilir misin hocam? Burada mesela ilk de rastgele yazma modu var. Mesela dosyada okuma modunda İ'sini, J'sini veriyoruz. Ama rastgele yazma modunda mesela bir sayıya ya da bir karakteri köşeye sıkıştırabiliriz. Mesela birin dört tarafı da dolu olsa o bir asla ilerleyemeyecek. Yani o şekilde...
+
+450
+01:41:33,652 --> 01:41:40,532
+Çünkü öyle bir rastgele pek mümkün değil. Matrice dağıtıldığında elbette, yani olasılıklardan biri olasılık da...
+
+451
+01:41:40,532 --> 01:41:47,592
+5 dediğinde 1 buraya, 2 buraya, 3 buraya, 4 buraya, 5 buraya gelecek veya 1, 1, 2, 2.
+
+452
+01:41:47,592 --> 01:41:57,291
+Oyunun çözümsüz olma durumu da var. Zaten oyun çözümsüz oluyorsa bunu sizin özellikle otomatik modda söylemeniz gerekiyor.
+
+453
+01:41:57,291 --> 01:41:58,971
+Tamam, sağ olun.
+
+454
+01:41:58,971 --> 01:42:04,372
+Şimdi eşleştirme için yapacağımız hamleler birincisi...
+
+455
+01:42:04,532 --> 01:42:30,612
+Otomatik modda dedik. Burada kendiniz bir kod yazıyorsunuz. Burada ipucu olarak şunu verebilirim. Bizim Connected Component geçen derste anlattığımız, Hatil Hocam da ben de anlatmıştık, anlattım. Retrusive bir algoritmamız var. Onu düşünebilirsiniz, onu revize edebilirsiniz veya kendiniz farklı bir algoritma yazabilirsiniz. Bu şekilde olacak. Veya Manuel modda, Manuel modda normal, kendiniz birazcık brute force.
+
+456
+01:42:31,091 --> 01:42:39,591
+Tek tek işlemleri yaparak ilerleyeceğiz. Örneğin, bir ile biri birleştirmek istiyorum. Hani baktım oyunda onu gördüm.
+
+457
+01:42:39,828 --> 01:43:00,328
+3'e 2'den, şu 3'e 2'ye mouse'un olduğu yerden 1'e 2'ye bir şey yapacağım. Sonra 1'e 2'den 1'e 4'e şey yapacağım. Pardon 5'i eşleştiriyorum. Önce 5'i bağladım. Sonra 1'e 2'den 1'e 4'e şu arayı bağladım. Sonra 1'e 4'ten 0'a 4'e o arayı bağladım. İşte 5 numarayı eşleştirmiş oldum.
+
+458
+01:43:07,828 --> 01:43:17,828
+3'e 2 ile 1'e 2 arasını doldur dediğimde burayı 5-5 yapacak. Bu arada buradaki renkler tamamen rahat anlamanız için.
+
+459
+01:43:18,176 --> 01:43:26,736
+Program yazarken, burada kendinizi renklendirebilirsiniz ama rengi tamamen göz ardı etmekte serbest. O konuda sıkıntı yok.
+
+460
+01:43:26,736 --> 01:43:36,176
+İşte buradan buraya geldik, sonra ikinci adımda buradan şuraya geldik, üçüncü adımda da beşte bunu birleştirdik ve sayılar tamamen eşleştirildi diyoruz.
+
+461
+01:43:36,176 --> 01:43:41,616
+Bu manuel modda veya otomatik modda herhangi bir işlemi yanlış yapmış olabilirsiniz.
+
+462
+01:43:41,716 --> 01:43:53,316
+Yanlış yapınca çözümsüz bir duruma gitmeniz söz konusu. Bu çözümsüz durum sonunda program kapanmasın diye, oyun kesinlikle sonlanmasın diye yanlış yapılan işlemi geri alma.
+
+463
+01:43:53,316 --> 01:44:02,916
+Ben buradan buraya, ne bileyim burada ne dedik mesela 3'e 2'den 1'e 2'ye git demek yerine 3'e 2'den 0'a 2'ye git dedim ve tamamen buraya geldim.
+
+464
+01:44:02,916 --> 01:44:06,856
+Buraya geldiğinde yanlış bir şey yapmış olduğumu eğer hak edersen
+
+465
+01:44:06,895 --> 01:44:12,895
+Bir adım geri veya iki adım geri yapacak şekilde bir geliştirme buraya eklemeniz gerekiyor.
+
+466
+01:44:12,895 --> 01:44:20,895
+Oyunun sonlanmaması adına. İşte bir geri aldık. Daha sonra yeni hamle ile şuradaki işlemleri yaptığınızı düşünün, oyunu tamamlamış olabiliyorsunuz.
+
+467
+01:44:20,895 --> 01:44:22,895
+Ha bu arada şunu da söyleyelim.
+
+468
+01:44:23,028 --> 01:44:28,547
+Bu bağlama işlemleri 4 komşuluk üzerine yani sağa, yukarı, sola veya aşağıya.
+
+469
+01:44:28,547 --> 01:44:36,148
+Kuzey-doğu, kuzey-batı, güney-doğu, güney-batı gibi 8 yönlü düşünmüyoruz. 4 yönlü, 4 komşuluk dediğimiz şeye bakacağız.
+
+470
+01:44:37,427 --> 01:44:40,627
+Oyunu oynama kuralları, şunu şöyle aşağıya indirelim.
+
+471
+01:44:41,028 --> 01:44:46,547
+Bu ilk 3 maddede verilen kurallara göre, m tane oyuncu için bu oyun başlıyor.
+
+472
+01:44:46,547 --> 01:44:50,068
+İşte programı açıyorsunuz, oyuncu sayısına gir diyorsunuz.
+
+473
+01:44:50,271 --> 01:44:55,952
+Oyuncunun birazdan söyleyeceğimiz şeyleri, M tane oyuncu için bu oyun oynanabilecek.
+
+474
+01:44:55,952 --> 01:45:02,112
+Her oyuncu istediği kadar oyunu oynayabilecek ve her oyuncunun bir skoru, her bir oyun için skoru olacak.
+
+475
+01:45:02,112 --> 01:45:08,992
+İşte 5 kişi, her bir kişi mesela birisi 2 defa oynadı, birisi 5 defa oynadı, birisi 1 defa oynadı.
+
+476
+01:45:08,992 --> 01:45:13,551
+Bunların her bir oyun oynama skorları tutulacak ve daha sonra listelenilecek.
+
+477
+01:45:13,551 --> 01:45:18,032
+Program arayüzü, program çalışınca şunu istiyoruz. Bir kere ana menümüz olacak.
+
+478
+01:45:18,452 --> 01:45:46,452
+Aşağıdaki kravlara göre demişiz, rastgele matriz oluştur veya dosyadan matriz oluştur kodu. Eğer ben rastgele seçersem kullanıcından bir n sayısı alacağım. Ona göre n sayısına göre bir matriz olacak. Veya dosyadan matriz oluştur dersen, şuradaki size verdiğimiz kodun ikinci kısmı çalışacak. Burada hazır fonksiyonu var. Bu fonksiyonu çok fazla değiştirmenize gerek yok. Read for file demişiz. İşte burada dosyadan alınan...
+
+479
+01:45:46,452 --> 01:46:10,131
+veriler görünüyor. Siz sadece şurada menünün ilgili kısmında işte burada switch mi yazarsınız, if mi yazarsınız, ne? Eğer ikiyi seçtiysek bu şey çağırılacak. Draw board'u da size verdim. Hani matriz doldurulduktan sonra ekrana yazılacak şey var. Zaten bunu çalıştırmışsınızdır. İşte bir ekrana basit bir şekilde board bastırılıyor diyebiliriz.
+
+480
+01:46:10,739 --> 01:46:17,559
+Bunlardan hangisi seçilirse, iki veya üç, bir veya iki seçildiğinde kullanıcının adını alıyoruz.
+
+481
+01:46:17,559 --> 01:46:26,059
+Ve aşağıdaki şekilde üç şeyden birimi seçiyoruz. İşte manuel mod da oynayabiliriz, otomatik mod da oynayabiliriz.
+
+482
+01:46:26,059 --> 01:46:32,380
+Eğer bu ikisinden birisiyle oynarsak, skor hesabı yapıp oyun bitene kadar bu işlem yapılacak.
+
+483
+01:46:32,380 --> 01:46:36,179
+En sonunda skor hesabı yapıp tekrar buraya döneceğiz.
+
+484
+01:46:36,368 --> 01:46:46,368
+Buradan ana menüye dön diyebiliriz. Ana menüye dönünce tekrar işte rastgele matriz oluşturma, dosyadan matriz oluşturma, kullanıcıların skorlarını göster diyebiliriz.
+
+485
+01:46:46,368 --> 01:46:57,168
+En sonunda da çıkış diyeceğiz ve tamamlayacağız. Bu arada detaylarla alakalı şeyleri size bırakıyoruz. Bu genel yapıyı bozmadan kendiniz ayrıca şeyler yazabilirsiniz.
+
+486
+01:46:57,167 --> 01:47:02,167
+Arkadaşlar, soruları en son cevaplayalım, birikmesin şimdi, yoksa sorular kesilmez.
+
+487
+01:47:02,167 --> 01:47:06,167
+Şimdi kullanıcı skoru, puan hesabını size bırakıyoruz.
+
+488
+01:47:06,167 --> 01:47:10,167
+Bunun için az çok çoğunuz sayısal analiz dersi gördünüz.
+
+489
+01:47:10,167 --> 01:47:17,167
+İşte nelere göre puan oluşturulabilir? Bunları düşünerek, hepsini düşünmeniz gerekmiyor, bunlardan bazılarını düşünebilirsiniz.
+
+490
+01:47:17,167 --> 01:47:19,167
+Bir formül tasarlayıp...
+
+491
+01:47:19,503 --> 01:47:29,703
+Bu formüle göre her bir kullanıcının ne kadar sürede oyun puanını hesaplamanız gerekir. Bunları basit bir dizide tutmanız yeterli. Ayrıca bir dosyaya yazmanız gerekmiyor.
+
+492
+01:47:29,703 --> 01:47:33,703
+Şimdi eklediğimiz, bugünkü versiyon 1'de eklediğim şey şuydu.
+
+493
+01:47:33,703 --> 01:47:40,863
+İki mod var. Manuel mod ve otomatik mod için geliştirdiğiniz algoritmanın zaman karmaşıklığı nedir?
+
+494
+01:47:41,043 --> 01:47:59,863
+Burada enle enlik bir matris var. Bunun üzerinde siz bir işlem yapıyorsunuz bu oyunu oynamak için. Bunun TN'ini analitik olarak yazıp, bunu raporunuza sonucu yazmıyor diyelim.
+
+495
+01:48:08,404 --> 01:48:25,324
+P'ni gösteriyoruz. Bu algoritminin karmaşıklığı budur şeklinde. Değerlendirmemiz şu şekilde, her bir barım için işte anamoni ile alakalı kodlar için, pardon şöyle, rapor için 100 puan, kod için 100 puan vereceksiniz.
+
+496
+01:48:32,243 --> 01:48:39,003
+Ana menü ile alakalı genel kodlarımız yani grafik arayüzü kullanıcıya sunulan kolaylık falan bunlar 15 puan.
+
+497
+01:48:39,003 --> 01:48:43,243
+Manuel oynama modülünün kodlanması ile alakalı kısım 65 puan.
+
+498
+01:48:43,243 --> 01:48:48,443
+Oyunu otomatik oynama modülü 20 puan olacak şekilde düzenlendi.
+
+499
+01:48:48,443 --> 01:48:50,443
+Şey de bu şekilde.
+
+500
+01:48:50,443 --> 01:48:58,043
+Şimdi size kodu da verdik, örnek datalar da var. Bu datalardan istediğinizi
+
+501
+01:48:58,195 --> 01:49:07,915
+Test olan dataları önce kendiniz elle çözüp, şu şekilde bunların isimlerini girersiniz veya bunların isimlerini değiştirip sadece kod içerisinde.
+
+502
+01:49:07,915 --> 01:49:12,915
+Kullancıdan mesela dosya adı alabilirsiniz, dosyanın adını giriniz dediniz.
+
+503
+01:49:12,915 --> 01:49:18,275
+Hatta ben çalıştırayım, şu ana kadar belki hiç kodu çalıştırmamış olan arkadaşlarım vardır.
+
+504
+01:49:18,275 --> 01:49:24,355
+Mesela buradaki data txt'yi alalım, bir de şu 5.5 txt'yi şuraya alayım.
+
+505
+01:49:32,627 --> 01:49:44,627
+Böyle aldığında o kısımdaki veriler buraya yazılıyor. Öbürünü de çalıştıralım. Tekrar şöyle bakayım. 5x5txt.
+
+506
+01:49:48,307 --> 01:50:02,988
+Bu da böyle bir dosyaymış. Hani içerisinde belki aynı olabilir ama böyle dosyayı okuyup kullanabilirsiniz. Yani bu iki moda da şey, isterseniz kendiniz de bir dosya oluşturabilirsiniz. Bu dosyanın yapısının mantığını söyleyeyim.
+
+507
+01:50:03,184 --> 01:50:14,184
+Yani dosyaya veriler nasıl yazıldı? İşte 0'a 0, Max'in 0'a 0'ında 1 olacakmış, 1'e 4'ünde 1 olacakmış, 1'e 0'ında 2 olacakmış, 3'e 3'ünde 2 olacakmış.
+
+508
+01:50:14,184 --> 01:50:25,184
+Bunlar böyle 1, 2, 3, 4, 5 sıralı gibi ama sıralı gitmesine gerek yok. İstersek bunları işte ne bileyim şu şekilde şurada da verebiliriz. Yani karışık da verebiliriz. Hiçbir şeye fark etmez.
+
+509
+01:50:25,184 --> 01:50:29,184
+Kendiniz bununla alakalı isterseniz ayrıca data oluşturup böyle dosyaları kaydedip...
+
+510
+01:50:29,652 --> 01:50:39,652
+kullanabilirsiniz ama dikkat edin, oluşturduğunuz şeyin bir çözümü olsun. Bunu dosyadan okuma modunda ayrıca veri olarak kullanabilirsiniz.
+
+511
+01:50:39,652 --> 01:50:56,587
+Şimdi sorularınızı önce okuyacağım. Maddesin çözümlü olup olmadığını kontrol etmeniz zaten şimdi şey, eğer çözümü yoksa
+
+512
+01:50:56,948 --> 01:51:05,108
+Yoktur. Yani bunu oynamadan çözümünü bulamazsın. O kolay bir şey değil. Çünkü problem nasıl kontrol edeceksin ki?
+
+513
+01:51:07,507 --> 01:51:13,667
+Dolayısıyla oyun ya oynanabiliyordur, yani bir çözümü vardır ya da yoktur, onu da oynarken sonucu gitmen gerekiyor.
+
+514
+01:51:15,747 --> 01:51:21,188
+En kısa yol değil, sağ-sol, yukarı-aşağı. Yani şimdi en kısa yol istemiyoruz.
+
+515
+01:51:21,587 --> 01:51:29,987
+En kısa yol bazen istenen çözüm olmayabilir. Öyle durum vardı ki en uzun yoldan yapmanız gerekir. Öyle bir kısıtımız yok.
+
+516
+01:51:31,587 --> 01:51:36,188
+Structure kullanabilir miyiz? Structure'ı ne için kullanacaksın onu söylersen.
+
+517
+01:51:38,087 --> 01:51:39,916
+Burada çünkü matris var.
+
+518
+01:51:41,716 --> 01:51:45,716
+Matris'in dışında nasıl bir anayapıyı bozacak bir şey ise kullanamazsınız.
+
+519
+01:51:45,716 --> 01:51:46,716
+Ama anayapıyı bozmamak.
+
+520
+01:51:46,716 --> 01:51:53,716
+Hocam mesela kişilerin isimlerini ve puanlarını beraber tutmak için bir kişi struktürü gibi bir şey söylüyoruz.
+
+521
+01:51:53,716 --> 01:51:55,716
+O tarz şeyler sporlar için olabilir.
+
+522
+01:51:55,716 --> 01:52:02,716
+Ama algoritmik olarak diğer şeylerde biz matris dışında bir şey istemiyoruz. O tarz şeyler de kullanabilirsiniz.
+
+523
+01:52:05,108 --> 01:52:16,108
+Hangi kütüphaneleri kullanma yetkiniz var? Yani STD-Ion'un içerisindeki matematiksel işlemleri, string ile alakalı, string uzunluğu, string'i büyük harf, küçük harf çevir, onları kullanabiliriz.
+
+524
+01:52:16,108 --> 01:52:26,108
+Onun dışında kullanmanız gereken hazır bir kütüphane yok. Mühim olan şey, oyunu manuel modda ve otomatik modda, ki işin ana teması şu iki maddedir.
+
+525
+01:52:26,108 --> 01:52:32,043
+Bunları kendi tasarladığınız algoritma arayla tasarlayacaksınız. Otomatik oyun modu dediğim şey,
+
+526
+01:52:32,243 --> 01:52:38,844
+Oyun otomatik modda başlayınca bir noktadan başlayacak, aynı bizim connected component gibi.
+
+527
+01:52:38,844 --> 01:52:46,443
+İşte önce birileri birleştireyim, sonuçta n tane sayma gider, birilerden birinin yerini bulur, bu birilerinin yollarını arar.
+
+528
+01:52:46,443 --> 01:52:54,644
+Eğer yanlış bir şey yaptıysa geri alır. Bu şekilde siz müdahale etmeden tabii kodunuzu ona göre yazmanız gerekiyor. Tamam mı?
+
+529
+01:52:58,996 --> 01:53:04,996
+5 yol olması gerekirken maksimum 3 yol çizilebilir. 3 yol çizilebiliyorsa zaten oyun yanlıştır.
+
+530
+01:53:06,296 --> 01:53:15,496
+5 tane şey için 5 tane kesişmeyen yol olması lazım. İşin sonunda elde edeceğiniz çözüm birbirine kesişmeyen 5 tane yol olacak.
+
+531
+01:53:15,496 --> 01:53:23,996
+Şimdi bir saniye bunun bir çözüm şeyi vardı. Bir dakika arkadaşlar hemen onu bulabilirsem klasörde bulmaya çalışayım.
+
+532
+01:53:45,395 --> 01:53:48,215
+Çözüm dosyası var da ama onları yıkmış.
+
+533
+01:53:49,995 --> 01:53:51,275
+Mesela şu.
+
+534
+01:53:53,076 --> 01:54:04,595
+Bakın örnek bir çözüm. Burada nokta sayısını pek sayamıyorum da, hani şu kırmızı bir, turkuaz iki, yeşil üç, şuradaki sarı dört, şu öbür sarı beş.
+
+535
+01:54:07,675 --> 01:54:09,975
+Şöyle bir iki.
+
+536
+01:54:10,452 --> 01:54:31,252
+3, 4, 5, 6, 7, 8, 9, 10, 11, herhalde 11 tane şey var. Bakın bu şekilde bütün hücreler dolu ve bu, en son mesela şurayı birleştirdiğim için, şurayı şey yapamamışım hani tam, çünkü bunu yapınca oyun bitiyor. Bu şekilde bütün yolların doldurmuş olmasını geliyoruz.
+
+537
+01:54:34,323 --> 01:54:46,723
+Oyun, şimdi [öğrenci]'in sorusunu cevaplayalım. Eğer oyun bitmiyorsa oyun tamamlanamaz gibisinden bir şey uyarı verilir ama onun dışında oyun bitene kadar devam etmesi gerekiyor.
+
+538
+01:54:46,723 --> 01:54:55,523
+Onu mesela test ederken çok büyük matrislerle değil, işte 4, 5, en fazla 6 gibi matrislerle test etmenizi tavsiye ederim.
+
+539
+01:54:55,988 --> 01:55:02,648
+Matrisleri birbirine eşitlemek için memcopy. Şimdi memcopy fonksiyonunu dinamik matrislerde kullanırsın [öğrenci].
+
+540
+01:55:02,648 --> 01:55:10,828
+Biz burada dinamik matrisleri size anlatmadık. İsteyen kullanılabilir. Yani mallocla oluşturulmuş matrisler için kullanılabilir.
+
+541
+01:55:10,828 --> 01:55:17,748
+Normal, sabit uzunluklu matrislerde, örneğin size verilen koddaki matrislerde memcopy kullanamazsın.
+
+542
+01:55:17,748 --> 01:55:21,988
+Yani şey olarak kullanamazsın, dil olarak.
+
+543
+01:55:22,996 --> 01:55:40,756
+[öğrenci], şurada herhalde dinlemedim veya tekrar söyleyeyim. Eğer ben hamle yaparken, birinci başlangıç noktasına giriniz diyeceksiniz, bitiş noktasına giriniz, 3'e 2 ile 1'e 2 arasını birleştir dediğinde.
+
+544
+01:55:40,979 --> 01:55:51,479
+Burada 3'e 2'de ne değeri varsa 1'e 2'ye aynı değerleri yazacak. 1'e 2'ye kadarki yerlere de aynı değerleri yazacak. Sonra 1'e 2'den 1'e 4'e kadar aynı değerleri yazacak. Bu şekilde gideceğiz.
+
+545
+01:55:55,796 --> 01:55:57,796
+[öğrenci]'in sorusuna bakalım.
+
+546
+01:56:02,707 --> 01:56:11,927
+Rastgele oluştur dedi, sonra otomatik modda oyna dedi, bu tahtanın çözümü yoksa otomatik mod ne yapabilir ki? Çözümü yoksa çözümü yoktur diye ekrana bastıracak.
+
+547
+01:56:14,487 --> 01:56:20,627
+Yani rastgele oluşturduğum şeyin çözümü vardır diye kontrol etmeyeceğiz. Çözümü varsa çözümü bulacak, çözümü yoksa çözümü yok dedi.
+
+548
+01:56:22,167 --> 01:56:30,347
+Mallock Free STD'li serbest, yani isteyen kullanabilir, yani elemanlı matriz veya dizi oluşturabilirsiniz.
+
+549
+01:56:30,644 --> 01:56:32,644
+Onlar, this continue.
+
+550
+01:56:36,948 --> 01:57:00,408
+Çalışır hali diye bir şey yok. Bunun oyun arkadaşlar, yani bu oyunu isterseniz internette aratabilirsiniz ama biz bunu biraz daha farklı şekilde uyarladık. Yani bu daha önce hani internette veya mobil inklulamlarda olan benzer bir oyun adını da unuttum. Number Magic mi? Öyle bir şeydi. Sıfırdan çalışabilir şey yok. Hani bende C kodu olarak yok.
+
+551
+01:57:01,908 --> 01:57:12,408
+Otomatik modda hamleleri rastgele değil tabii ki. Yani bir şekilde bir noktasını, örneğin birileri birleştirmek için bakarken işte bir biri bulursunuz.
+
+552
+01:57:12,408 --> 01:57:22,408
+İşte örneğin tahtta bir burada. Bu birin sağına, soluna, yukarısına, aşağısına, ondan sonra Connected Component ile Recursive düşünüp noktaları birleştirmeye çalışırsınız.
+
+553
+01:57:22,671 --> 01:57:32,671
+Fazla detaylar vermiyorum çünkü çözümle alakalı yapışları aşırı artması gerekiyor. Bir yerden sonra sorularınızı kısıtlayacağım.
+
+554
+01:57:37,043 --> 01:57:53,283
+Kullanıcı buradan neye puan kazanacak? Senin yazdığın algoritma örneğin 100 dakikada bitiriyor. Başka bir algoritma daha kısa sürede bitiyor. Yani sistem bunu ne kadar süre üzerinden bir otomatik modda puanlama istiyoruz.
+
+555
+01:57:56,659 --> 01:57:59,979
+Boş yüce kalmaması gerekiyor [öğrenci].
+
+556
+01:58:04,148 --> 01:58:13,148
+Rastgele modda oyun oynamak elbette zor. Çünkü kör arama yapıyorsunuz. Yani bir nokta elbette zor bir şey.
+
+557
+01:58:13,148 --> 01:58:19,148
+Kodlaması elbette zor değil. Connected Component gibi düşün veya işte Flat 1 gibi düşün.
+
+558
+01:58:19,148 --> 01:58:25,003
+Ama rastgele modda oynaması yani şeyin bir sürü karmaşıklık içeren bir kod olacak.
+
+559
+01:58:25,747 --> 01:58:35,747
+undo sistemi yapılan her işlemi kaydetmekten kastım şu, yani matrisin state'ini, önceki state'lerini belli bir şekilde kaydedebilirsin.
+
+560
+01:58:35,747 --> 01:58:48,747
+Örneğin 5 state'e kadar kaydedin veya state kullanarak başka şekillerde kaydedin. Eğer ben yanlış bir şey yaptıysam, çözümsün bir duruma geldiysam, yani bunu genellikle şey için düşünmeniz daha şey.
+
+561
+01:58:48,787 --> 01:58:56,507
+Manuel modda burayla şurayı birleştirecektim, halbuki burayla burayı birleştirdim. Bir geri alayım, ihtiyacı olur.
+
+562
+01:58:56,507 --> 01:59:04,387
+O tarz durumda geri almanın faydasını Manuel modda çok rahat göreceksiniz. Otomatik modda da aynı şey söz konusunda ama
+
+563
+01:59:06,771 --> 01:59:17,011
+Birazcık kontrol etme imkanı yok. Eğer yol bulamadığınız zaman da gidecek bir ihtimal kalmadıysa, o zaman geri almalardan faydalanacaksınız.
+
+564
+01:59:17,011 --> 01:59:19,011
+Ki buna da backtrack diyoruz.
+
+565
+01:59:21,411 --> 01:59:29,011
+Connected component'i derste anlattık [öğrenci]'ın. Sen hangi gruptasın bilmiyorum da, bunun kodu da sizin ders nütlarınızda var.
+
+566
+01:59:30,644 --> 01:59:38,844
+Bilmiyorum, Fatih Hoca'nın grubundaysan Fatih Hoca da anlattı, hani, flowchart olarak. Size paylaşılan ders notlarında ayrıca C kodu olarak da var.
+
+567
+01:59:39,844 --> 01:59:46,644
+Benim şu an sıfırdan onu anlatmam çok kolay bir şey değil, hemen iki dakikada anlatılacak bir şey değil. Çok kısa değil çünkü o.
+
+568
+01:59:48,819 --> 01:59:54,819
+Otomatik notta sadece sonucu göstersek yeterli mi yoksa adım adım gösterebilirsiniz.
+
+569
+01:59:54,819 --> 01:59:59,819
+Ama tabii o bir yerde çok uzayabilir. Onun için küçük verilerde...
+
+570
+02:00:00,000 --> 02:00:05,239
+Ben mesela kodu kontrol ettirirken derim ki yani burada yapılan her bir işlemi bastır.
+
+571
+02:00:05,239 --> 02:00:14,559
+Yani burada bir debug yapma mekanizması gibi araya yapılan printflerle işte bu noktadan bu noktaya gidildi, bu noktalar birleştirildi gibi bir ekrana yazdırma şeyi yapın.
+
+572
+02:00:14,559 --> 02:00:17,000
+Bununla alakalı buralarda bir yerde açıklama var.
+
+573
+02:00:21,000 --> 02:00:22,000
+Bakayım neredeydi?
+
+574
+02:00:24,083 --> 02:00:30,083
+Bakın, matris iki şekil gibi ekrana...
+
+575
+02:00:30,083 --> 02:00:37,083
+İşlemler ekrana raporlanmalı diyoruz. Geri alma, yani bu tarz şeyleri ekrana bastırmak gerekiyor.
+
+576
+02:00:41,332 --> 02:00:47,332
+Başka sorumuz var mı? Bir arkadaşımız bir şey söyler gibi oldu ama biraz önce...
+
+577
+02:00:52,595 --> 02:01:00,115
+Peki hocam, şey olarak, bu zamana göre dediğiniz şeyi biz aşamalara göre mi ayarlayacağız?
+
+578
+02:01:00,115 --> 02:01:03,155
+Zamana göre, yani biraz daha şey soralım.
+
+579
+02:01:03,155 --> 02:01:04,155
+Puan sisteminde.
+
+580
+02:01:04,155 --> 02:01:11,155
+Ya şimdi puan sisteminde hangi modda oynuyorsak, sonuçta oyunun başlangıcı var, bitişi var.
+
+581
+02:01:11,216 --> 02:01:17,735
+Kaç tane hamle yapıldığına veya şuradaki parametrelere göre, sen kendin kafandan bir score formü üretebilirsin.
+
+582
+02:01:17,735 --> 02:01:26,416
+Oyunun zorluğu burada belirleyici bir şeydir bu anda. Oyun ne kadar zorsa ve ne kadar kısa sürede bitiyorsa, o kadar yüksek puan vermen gerekir. Öyle değil mi?
+
+583
+02:01:26,416 --> 02:01:30,576
+Şey olarak hocam, tamamlanma süresini time.haşlıkla mı ölçelim yoksa...
+
+584
+02:01:30,576 --> 02:01:37,615
+Tabii tabii, o şey direkt başlangıç ve bitiş aralıklarını alıp tamamlanma süresini öyle ölçebilirsiniz.
+
+585
+02:01:38,323 --> 02:01:46,523
+O skorda şeyi yani algoritma karmaşıklığını TN kullanmayacaksınız. TN bunun asimptotik analizi için geçerdi.
+
+586
+02:01:46,523 --> 02:01:51,723
+Algoritmik analizi. Bu tamamen kullanıcının skoru ile alakalı bir şey. Orada bir süre bir parametre.
+
+587
+02:01:53,123 --> 02:01:55,323
+Şimdi herhalde cevap vermiş olduk.
+
+588
+02:01:57,523 --> 02:02:04,123
+Kullanıcının herhangi bir şeye giriş yapmaması söz konusu değil. Sen 5 girersin. 5'e 5'lik alan oluşur.
+
+589
+02:02:04,500 --> 02:02:14,100
+Otomatik modda ona göre örneğin ne kadar sürede tamamlanacağını ölçersin. Bu biraz önce de söylediğim bir şey. Başka sorunuz var mı?
+
+590
+02:02:15,300 --> 02:02:22,900
+Bir de hocam otomatik modda direkt görsel olarak mı çıktı alalım yoksa çizdiği çizgileri mi çıktı alalım?
+
+591
+02:02:22,900 --> 02:02:25,500
+Çizdiği çizgiler derken bak şurada söylüyoruz.
+
+592
+02:02:27,283 --> 02:02:39,243
+Yazacağınız algoritma, birinci ve ikinci maddelerdeki kurallara göre otomatik olarak bulacak. Bu işlem sırasında oluşturulan yollar, aşağıda açıklanan manuel nokta olduğu gibi yapılan hataların geri alınması gibi işlemler ekranın raporlanacak.
+
+593
+02:02:39,636 --> 02:02:56,876
+Örneğin, 1'e 1'e 1'e 1'e 2'ye birleştirildi gibi bunları raporluyoruz. Bu işin sonunda da oyun tamamlanınca elde edilen yolları gösteren matriz şekil 2'deki gibi. Şekil 2 nerededir? Şuradaki gibi.
+
+594
+02:02:57,203 --> 02:03:06,203
+Ekrana gösterilecek. Bakın bu tamamlanmış bir oyunun şeyi. En son bunu gösteriyorsunuz. Ara adımları doldururken isterseniz gösterebilirsiniz.
+
+595
+02:03:06,203 --> 02:03:20,203
+Bir ile biri dolduruldu, matrisin güncel hali budur. İki ile iki doldurdu, matrisin güncel hali budur. Ara adımları yazabilirsiniz ama asıl ara adımlardan kastımız hangi noktalarla birleştirildi, bunu görüyor olmalısınız.
+
+596
+02:03:22,163 --> 02:03:36,923
+Zaten şu şeyin zorluğu, yani hesapsal zorluğundan ziyade, programlama zorluğundan kastetmiyorum. Otomatik oynama, bu biraz daha sizi algoritma tasarımı konusunda belki uğraştırabilir.
+
+597
+02:03:36,923 --> 02:03:43,644
+Çünkü bir sürü alternatif düşünüp, bir de rekürsif düşünmeniz gerekiyor. Onun için puan ağırlığı biraz daha az.
+
+598
+02:03:43,644 --> 02:03:49,524
+Şunun puan ağırlığını bilerek, yani 80 puan buradan geliyor, 20 puan buradan geliyor. Bunu da buna göre ayarladık.
+
+599
+02:03:50,836 --> 02:03:52,836
+Evet, başka sorumuz?
+
+600
+02:03:57,332 --> 02:04:19,891
+Peki arkadaşlar, dediğim gibi kurallar önemli. Bu kuralların önemi için şuraya ayrıca bir doküman koyduk. Sadece bu ders için değil, burayı açtığınızda birden fazla sizin önümüzdeki dönem dersiniz olacak. Şu derslerinizin hepsi. Bunların hepsini de takip etmeniz gereken genel bir kurallar dizisidir. Bunlara dikkat etmeniz gerekiyor.
+
+601
+02:04:19,891 --> 02:04:24,972
+Örneğin burada video diye bir şey var ama sizden video istenmiyor. Yani bunu sormanıza ileride gerek yok.
+
+602
+02:04:25,363 --> 02:04:29,363
+Genel şablon diyebileceğimiz kurallar.
+
+603
+02:04:29,363 --> 02:04:38,363
+Kuralların özel halleri, bu projeye ilişkin özel halleri de, bu kurallara ek olarak görüyoruz. Şurada, sınırlı ilişkiler.
+
+604
+02:04:38,363 --> 02:04:41,363
+Burada bazıları oradakilerin kopyalı yapıştırı hali olabilir.
+
+605
+02:04:41,363 --> 02:04:48,363
+Önemine bir naim burada yazıldı. Örnek olarak laboratuvarda şöyle bir şey yaşamış arkadaşımız.
+
+606
+02:04:48,851 --> 02:04:54,991
+Kodun C dosyasını yüklememişler. Şimdi C dosyası olmadan bizim bir şeyi değerlendirmemiz mümkün değil.
+
+607
+02:04:54,991 --> 02:05:02,931
+Exes'ini veya proje dosyasını. Bunları artık CPP dahil hiçbir dosyayı biz kabul etmiyoruz.
+
+608
+02:05:03,451 --> 02:05:09,331
+Exe çalışan program benim için önemli değil. Ben o kodu açıp inceleyip gerekirse sizinle iletişim halinde olur.
+
+609
+02:05:09,331 --> 02:05:15,211
+Belki gönderdiğiniz kodu bile çalıştıramayacağız. Onun için hocalarımız sizinle iletişim projeler var.
+
+610
+02:05:15,247 --> 02:05:42,467
+Buradaki kuralları lütfen okuyun, anlayın. Yüklenecek yer, işte nereden, ne zamana kadar yüklenecek, bunların hepsi burada detaylı olarak var. Tekrar bir güncelleme yapacak olursak, şurada 2'yi görürseniz, kabul edin ki şurada demek ki bir değişiklik oldu. Burada versiyon 2 diye şu tarihli güncellemeyle şu şu yapılmıştır gibisinden şey yapacağım. Mesela burada şu an eklenen şey algoritmak. Onları da şöyle kırmızıya boyayalım.
+
+611
+02:05:43,123 --> 02:05:46,443
+Bunun üzerinden takip edersiniz.
+
+612
+02:05:49,003 --> 02:05:53,884
+Evet, sorunuz yoksa benim anlatacaklarım özet olarak bu kadardı.
+
+613
+02:05:54,903 --> 02:06:03,863
+Yeterliğiniz zaman var. Yani normalde üç haftayla bile bitecek bir proje. Bazı kısımları kolay, bazı kısımları elbette biraz düşünmeye sevk ediyor.
+
+614
+02:06:03,863 --> 02:06:07,703
+Bilgisayar mühendis için bu derste zaten biraz düşünmeyi...
+
+615
+02:06:07,828 --> 02:06:17,148
+Amaçlayan, analitik program, analitik düşünmeyi amaçlayan, algoritmik düşünmeyi amaçlayan bir ders. Bu da sizin için bir pratik olacaktır.
+
+616
+02:06:17,148 --> 02:06:22,748
+Öyle projelere önümüzdeki zamanlarda hazır olun. Meslek hayatımız boyunda.
+
+617
+02:06:22,748 --> 02:06:29,307
+Evet, sorunuz yoksa hepinize iyi akşamlar, çarşamba günü derslerde görüşmek üzere.
+
+618
+02:06:30,131 --> 02:06:38,131
+Global statik değişken kullanmıyorsunuz. Bunun bir sebebi yok. Sadece bizim kuralımız. İlla bunun sebebini açıklamamız gerekmiyor.
+
+619
+02:06:38,131 --> 02:06:47,131
+Sebebini illa söylemem gerekirse şu, statik her şeyde kullanılmaz. Özel kullanım alanları vardır. Aklımızda her eski de statik değişken kullanamayız.
+
+620
+02:06:47,131 --> 02:06:56,131
+Global değişken de programlama yeteneğimizi doğru kullanmanız için geçerli. Bazı şeyleri kolaylaştırıp olabilir ama biz kesinlikle istemiyoruz.
+
+621
+02:06:59,283 --> 02:07:04,283
+Statik kullanmadan da yapılabiliyor. Yani yapılamıyor diye bir şey yok, sen yanlış biliyorsun.
+
+622
+02:07:06,283 --> 02:07:21,195
+Main fonksiyonun temizliğinden kastın nedir bilmiyorum ama bir fonksiyon, matrisi ilklendirmekten bahsediyorsan, statik kullanınca doğrudan dizi veya matris ilklendiriliyor dersen, bak şurada gördüğün gibi ekranı paylaşayım tekrardan.
+
+623
+02:07:25,908 --> 02:07:34,468
+Yani matrisi statik yapınca doğrudan içeriği sıfırlanıyor mu? Evet, sıfırlanıyor. Ama statik başka yan etkileri olan da bir şey.
+
+624
+02:07:34,468 --> 02:07:39,508
+İşte şöyle yaptığında doğrudan diziyi veya matrisi tamamen bütün değerlerini sıfırlarsın.
+
+625
+02:07:39,508 --> 02:07:44,468
+Onun için biz ne statik değişken ne de global değişken kullanımını istemiyoruz.
+
+626
+02:07:44,468 --> 02:07:52,148
+İşte aynı şekilde break, continue da geçerli. Bu sadece bu ders için değil, biraz önce söylediğimiz, şurada bahsedilen bütün dersler de geçerli.
+
+627
+02:07:52,271 --> 02:08:03,771
+Bu kısıtlar altında program yazmanız sizin daha çok dile hakim olmanızı ve algoritmik olarak düşünmenizi geliştiren şeyler. Yoksa hani eziyet olsun diye yaptığımız bir şey değil.
+
+628
+02:08:08,500 --> 02:08:12,500
+Peki, hepinize iyi günler arkadaşlar. Görüşmek üzere. Kendinize iyi bakın.
+
+629
+02:08:14,500 --> 02:08:15,500
+İyi günler hocam.
+
+630
+02:08:22,068 --> 02:08:31,427
+Classroom'a erişim sağlayamamınız benimle alakalı bir şey değil arkadaşlar. Bu link kaç defa paylaşıldı. Yani şu ana kadar neden erişim sağlayamadınız bunu kendiniz bir sorgulayın lütfen.
+
+631
+02:08:40,500 --> 02:08:49,000
+Drive dosyası diye bir şey yok. Yani proje bütün dosyaları nerede paylaşıldı? Online Yıldız üzerinde paylaşıldı.
+
+632
+02:08:51,000 --> 02:08:55,000
+Fahat Hoca'nı da benim bildiğim kadarıyla paylaştı, kendisi bana mail de yazdı.
+
+633
+02:08:55,500 --> 02:09:03,000
+Bu konuda herhalde siz bir şeyleri takip etmiyorsunuz. Ben size yeterince duyuruyu yaptığımı düşünüyorum.
+
+634
+02:09:03,000 --> 02:09:05,836
+Maillerle gitti, başka şekiller de gitti.
+
+635
+02:09:05,939 --> 02:09:10,939
+Daha ne yapabiliriz bilmiyorum yani eve posta falan gönderme imkanımız yok malum olsun.
+
+636
+02:09:12,939 --> 02:09:14,939
+Görüşmek üzere hoşçakalın arkadaşlar.

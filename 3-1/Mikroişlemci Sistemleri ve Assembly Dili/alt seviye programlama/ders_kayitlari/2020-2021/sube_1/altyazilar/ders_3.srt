@@ -1,0 +1,4531 @@
+1
+00:09:50,868 --> 00:09:52,108
+Arkadaşlar, günaydın.
+
+2
+00:09:58,100 --> 00:10:03,279
+Dersimizde geçen hafta kaldığımız yerden bir hatırlatma yapıp daha sonra bu haftanın konusuyla başlayalım.
+
+3
+00:10:12,115 --> 00:10:13,255
+Günaydın tekrardan.
+
+4
+00:10:14,415 --> 00:10:26,096
+Geçen hafta hatırlayacak olursanız arkadaşlar, gördüğümüz konular temel olarak 8086 komut yapısını genel olarak görmüştük.
+
+5
+00:10:26,336 --> 00:10:31,635
+Daha sonrasında da veri aktarım komutları ile ilgili olarak başlamıştık.
+
+6
+00:10:31,696 --> 00:10:36,515
+Veri aktarım komutları nelerdi diye bakacak olursak, şurada listesi vardı.
+
+7
+00:10:37,107 --> 00:10:48,807
+MOV komutu herhangi iki hafıza birimi arasında register olabilir, memori olabilir, iki register olabilir gibi bunun arasında veri aktarımında.
+
+8
+00:10:49,367 --> 00:10:54,087
+Load efektif adres bir pointer dönüyordu, adres değeri dönüyordu hatırlayacak olursanız.
+
+9
+00:10:54,907 --> 00:10:57,107
+LDS data segment ve...
+
+10
+00:10:58,100 --> 00:11:04,759
+ilgili yazmacı, istediğimiz değerle vermiş olduğumuz adres değerleri dolduran bir komuttu.
+
+11
+00:11:05,320 --> 00:11:08,519
+L, E, S aynı işlemi ekstra segmentli yapıyordu.
+
+12
+00:11:09,160 --> 00:11:11,259
+Exchange swap işlemini yerine getiriyordu.
+
+13
+00:11:11,399 --> 00:11:20,580
+Translate ise bir tablo içerisinde kaçıncı değerle ilgileniyorsak o değere ilişkin olarak bir dönüşüm değerini bize oluşturup sağlıyordu.
+
+14
+00:11:21,279 --> 00:11:22,440
+Kabaca bunları görmüştük.
+
+15
+00:11:22,440 --> 00:11:23,440
+Şimdi bu hafta...
+
+16
+00:11:25,076 --> 00:11:42,776
+aritmetik komutlarla ilerleyeceğiz. Temel olarak aritmetik komutlarımız neler diye bakacak olursak arkadaşlar, bunlardan birincisi add, toplama işlemi. Diğeri add with carry, carry ile birlikte toplamayı yapan bir komut. Subtract komutu.
+
+17
+00:11:43,168 --> 00:11:51,048
+subtract with bar of, çıkartma işlemini yine borç üzerinden veya elde üzerinden yapan bir komut.
+
+18
+00:11:51,607 --> 00:11:54,587
+Increment komutu, artırma, bir birimlik artırma.
+
+19
+00:11:55,107 --> 00:11:56,367
+Decrement komutumuz var.
+
+20
+00:11:57,148 --> 00:12:03,327
+Negate, verilen bir değer sayının negatifini alan bir komut.
+
+21
+00:12:04,008 --> 00:12:06,307
+Bu işlemi tools complement mantığına göre yapıyor.
+
+22
+00:12:06,799 --> 00:12:25,860
+Compare işlemimiz var. Compare işlemi aslında karşılaştırmalarda kullanılıyor. Fakat bunu arkasında yatan komut ise çıkartma işlemi. Yani biz iki tane değeri Compare etmek istediğimiz zaman mikro işlemci bunu aslında iki tane değeri birbirinden çıkartıp bayrakları değerlerini değiştirerek işliyor.
+
+23
+00:12:26,388 --> 00:12:42,128
+çarpma komutumuz var, multiplication. Bir de işaretli sayılarda çarpma yapan IMUL komutumuz var. Bu işaretli sayılarla ilgili işlem yapıyor. Yani bunun sonucu veya bunun girdisindeki sayılar işaretli sayı olarak değerlendiriliyor.
+
+24
+00:12:43,228 --> 00:12:46,768
+Benzer şekilde bölme komutumuz var. Bölme komutunda
+
+25
+00:12:47,251 --> 00:13:00,911
+iki değeri bölüyor. İşaretsiz sayı olarak, yani burada MUL ve DIV işaretsiz sayı işlemleri, IMUL ve IDV ise işaretli sayılar üzerinden işlem yapan komutlar olarak ortaya çıkıyor. Bunu söyleyebiliriz genel olarak.
+
+26
+00:13:03,311 --> 00:13:04,651
+Şimdi sırayla başlayalım.
+
+27
+00:13:04,651 --> 00:13:05,651
+ADD komutu.
+
+28
+00:13:06,451 --> 00:13:32,692
+addition adı üzerinde toplama işlemi. İki parametre alıyor. Destination ve source olarak iki parametre alıyor. Yaptığı işlem destination ve source parametrelerini toplayıp sonucu tekrar destination'da oluşturuyor. Bu standart olarak 8086'da gördüğümüz bir durumda. Eğer iki tane parametremiz varsa aksi belirtilmediği sürece bu iki parametreyi toplayıp işlem sonucunu ilk parametreye atıyordu. Bu ilk parametremiz bizim dolayısıyla destination olarak isimlendiriliyordu.
+
+29
+00:13:33,152 --> 00:13:35,372
+Valid kullanımlar neler?
+
+30
+00:13:36,652 --> 00:13:38,532
+Add, register, idata.
+
+31
+00:13:39,812 --> 00:13:44,752
+Şimdi geçen haftaki açıklamalardan hatırlayacak olursak, register dediğimiz herhangi bir register olabilir.
+
+32
+00:13:45,412 --> 00:13:47,652
+Idata ise immediate data.
+
+33
+00:13:47,652 --> 00:13:50,612
+Şimdi buna ilişkin örnek olarak ne verebiliriz arkadaşlar?
+
+34
+00:13:51,532 --> 00:13:55,552
+Örneğin, buna ilişkin bir örnek.
+
+35
+00:13:56,512 --> 00:13:59,072
+Add, AX, 0.
+
+36
+00:14:00,916 --> 00:14:10,916
+ffh mesela. Burada bir registerla bir sabit değeri toplamış olduk. Vermiş olduğumuz sabit değer hexadecimal gösterime sahip.
+
+37
+00:14:10,916 --> 00:14:18,916
+Burada ax yazmacımız bizim 16 bitlik bir yazmaç. Vermiş olduğumuz sabit değer
+
+38
+00:14:19,187 --> 00:14:24,788
+8 bit gibi görünüyor ama mikro işlemci bunu 16 bit'e tamamlayarak AX yazmacına toplayacak.
+
+39
+00:14:25,307 --> 00:14:26,867
+Veyahut da burada şunu da yapabiliriz.
+
+40
+00:14:26,967 --> 00:14:28,908
+İşte 8 bit'lik işlem yapmak da mümkün.
+
+41
+00:14:29,707 --> 00:14:31,408
+Onu da örnek olarak yazalım.
+
+42
+00:14:38,196 --> 00:14:40,115
+Mesela böyle bir işlem de geçerli.
+
+43
+00:14:41,016 --> 00:14:44,115
+Burada A karakteri immediate bidata olarak geçiyor.
+
+44
+00:14:44,196 --> 00:14:52,756
+Bunun ASCII karşılığı neyse o değeri CH'daki 8 bitli yazmaç değeriyle toplayıp sonucu tekrar CH'da biriktiriyor.
+
+45
+00:14:54,276 --> 00:14:55,796
+Bu bizim birinci örneğimiz.
+
+46
+00:14:56,395 --> 00:14:57,816
+Valit olan örneklerden.
+
+47
+00:14:57,816 --> 00:15:02,756
+İkinci valid yapımız ise add memory idata şeklinde bir yapı.
+
+48
+00:15:03,135 --> 00:15:09,395
+Şimdi burada bir memori adresi ve bir sabit değer toplayacağımız için bunun nasıl değerlendirileceği çok önemli.
+
+49
+00:15:10,275 --> 00:15:15,596
+Ve burada 8 bit mi 16 bitlik mi işlem yapacağımız bunu mutlaka belirtmemiz gerekiyor.
+
+50
+00:15:16,515 --> 00:15:20,435
+Bunu yine örnek üzerinden görmek için şöyle şey açayım.
+
+51
+00:15:26,484 --> 00:15:29,683
+MU8086 üzerinden görmeye çalışalım bunu.
+
+52
+00:15:32,504 --> 00:15:33,504
+Nerede? Şöyle.
+
+53
+00:15:35,024 --> 00:15:36,884
+Evet, yapacağımız işlem neydi arkadaşlar?
+
+54
+00:15:38,324 --> 00:15:38,683
+Evet.
+
+55
+00:15:40,804 --> 00:15:41,403
+Mesela
+
+56
+00:15:41,403 --> 00:15:44,584
+10H adresinin içeriğini
+
+57
+00:15:48,980 --> 00:16:11,240
+10H değerinin içeriğini, 11'i marttıracağım. Şimdi bunu çalıştırdığımız zaman varsayılan olarak bir şey çalıştırılıyor ama biz bu varsayılan çalışan haline güvenmeyeceğiz. Tamam mı? Burada mutlaka bunun nasıl bir işlem olduğunu göstermemiz lazım. Burada şimdi emulate işlemine, pardon şeyi yazmayı unuttuk. Önce şuraya.
+
+58
+00:16:17,299 --> 00:16:28,679
+byte.ptr şeklinde bunu belirttikten sonra şimdi emulate deyip burada biz memory alanına bir bakalım. Şu anda bütün ekranı göremiyor olabilirsiniz. Ben şöyle bunu değiştireyim.
+
+59
+00:16:29,679 --> 00:16:37,419
+Screen olarak değiştirelim. Buradaki view deyip memory alanına gidelim. Şu anda bakın bizim
+
+60
+00:16:39,796 --> 00:16:55,576
+Şu anda bu data segmentteki bir değer olacak ya 10H değerimiz. DS değerimiz kaç? Şuradan kontrol edelim. 100. 100'ün 0'ı. 0, 10'u nerede? 100'ün 10'u nerede? 100'ün 10'u da şurası. Değil mi? Şuradaki değerlerimiz.
+
+61
+00:16:56,076 --> 00:17:07,016
+Burada varsayılan değer olarak şu anda 0 değeri var. Komutumuzu bir adım yürüttükten sonra bakın memori içerisindeki değerimiz nerede güncellendi?
+
+62
+00:17:08,276 --> 00:17:09,900
+Yüzere
+
+63
+00:17:16,051 --> 00:17:18,611
+Yanlış yerimi oynattık bir saniye.
+
+64
+00:17:26,932 --> 00:17:27,432
+yapalım.
+
+65
+00:17:32,596 --> 00:17:41,976
+100, evet, data segment değerimiz 100, 100'ün kaçıncı offsetine gidecek? 10 numaralı offsetine gidecek.
+
+66
+00:17:43,276 --> 00:17:57,115
+Buradaki offsetlerimize bakacak olursak, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F. Şuradaki değere dikkat ediyoruz, tamam mı? Şuradaki değere dikkat ediyoruz.
+
+67
+00:17:57,776 --> 00:17:59,195
+Şimdi bunu bir adım yürütelim.
+
+68
+00:18:01,364 --> 00:18:25,723
+Bakın, buradaki değerimiz 9A olarak güncellendi. Şimdi buradaki toplama değerimiz biraz yüksek bir şey verelim. 0FFH şeklinde bir şey verelim. Tekrar emulate çalıştıralım. Şimdi bakın, yine byte pointer olarak çalışıyorum. Arttırdım. Burada bir 8F değeri gördüm. Bu ne demek? 8 bitlik toplamadan taştı. Burada view deyip,
+
+69
+00:18:28,051 --> 00:18:55,271
+bayraklarımıza baktığımızda bakın burada carry flag değerinin bir olarak oluştuğunu görüyoruz. Tekrar görelim bunu, reload edelim. Değerim 0. Toplama yaptığım değerde 90H değeri var. Ben buna FFH değerini byte pointer olarak ekliyorum. Bir adım yürüttüğümde sadece 10H offsetindeki değer FF ile toplandı ve bundan dolayı bir carry değeri oluştu. Bunu gördük. Şimdi aynı işlemi arkadaşlar WordPtr ile yapalım.
+
+70
+00:18:59,316 --> 00:19:21,755
+Aynı işlemi WordPtre ile yapalım. Tekrar emulate diyelim. Bakın, şimdi bizim on offsetimizden itibaren mevcut olan 16 bitlik değerimiz, yani biz şu onh ds, onh içerisindeki bizim tutmuş olduğumuz sayı 90-90h.
+
+71
+00:19:22,355 --> 00:19:34,576
+Biz bunu FFH ile toplarsak, şuradan bir elde olacak ve artı 0 FFH dediğimizde, bunun sonucunda ne olması bekliyoruz?
+
+72
+00:19:34,576 --> 00:19:43,936
+91, 8, 7 miydi? 8, F. 8, FH şeklinde bir değer görmeyi bekliyoruz.
+
+73
+00:19:43,996 --> 00:19:47,115
+Şimdi bu eldenin bir sonraki basama geçmesini bekliyoruz.
+
+74
+00:19:50,451 --> 00:20:16,892
+bayraklara da bakalım. Bir adım yürüttüğümüz vakit, bakın gene neyle ilgileniyoruz? Şuradaki word değeriyle ilgileniyoruz. Şurası bunun düşük anlamlı bayti, burası yüksek anlamlı bayti. Toplama işlemimizi yaptıktan sonra, bakın 8F91 oldu. Kerry flag'te bir bozulma yok. Yine o sıfır olarak kaldı çünkü yapmış olduğumuz 9090H artı FFH toplama değeri bir elde üretmiyor.
+
+75
+00:20:17,296 --> 00:20:37,695
+Burada tekrar neye dikkat etmemiz lazım? 8F9.1 adreslerinde sırasıyla 10H ve 11H'a yerleştirilmiş olan 8F ve 91H hexadesimal değerleri Little Ending formatında yerleştirilmiş olduğu için asıl bizim toplam sonucumuz 91.8FH şeklinde bir sonuç.
+
+76
+00:20:38,355 --> 00:21:01,135
+byte pointer veya word pointer şeklinde bunu çalıştırdığımızda elde ettiğimiz sonuç bu şekilde. Tekrar ediyorum, burada varsayılan değer şudur diye bir kabulümüz yok. Eğer burada örneğin PTR gerekli olan işlemlerde tipi belirtmezseniz bunu hatalı olarak kabul edeceğim.
+
+77
+00:21:02,420 --> 00:21:18,559
+Mutlaka pointer ile ifade edilmesi gerekiyor. Bunu da tekrar belirtmiş olayım. Bir başka yapabileceğimiz valid işlem arkadaşlar. İki tane register'ı toplamak. Herhangi iki register olabilir. Fakat burada dikkat edeceğimiz nokta register'ların uyumlu olması gerekiyor.
+
+78
+00:21:29,779 --> 00:21:45,539
+d, x, d, l, valid bir işlem değil. Bunun hatalı olduğunu söylememiz gerekiyor. Çünkü burada bir boyut uyumsuzluğu, tip uyumsuzluğu mevcut olmuş oluyor. Peki bir başka valid olan yapımız nedir arkadaşlar? Ona bakalım.
+
+79
+00:21:48,200 --> 00:21:51,440
+Kerili olana geçmişiz. Bir saniye onu tekrar yukarı alalım.
+
+80
+00:21:54,163 --> 00:21:58,244
+Aynı şey burası için de geçerli. O yüzden silmeye gerek yok.
+
+81
+00:21:59,923 --> 00:22:02,724
+AddRegisterRegister işlemi mevcut. Sağlanabiliyor.
+
+82
+00:22:03,304 --> 00:22:07,683
+Peki, AddRegisterMemory işlemi yaparken örnek bir durum oluşturalım.
+
+83
+00:22:08,683 --> 00:22:11,144
+Bunun için örnek bir durum arkadaşlar şu olabilir.
+
+84
+00:22:12,463 --> 00:22:16,304
+AddBX, 10H
+
+85
+00:22:16,304 --> 00:22:18,443
+Şimdi buradaki işlemimiz
+
+86
+00:22:18,900 --> 00:22:37,660
+nasıl tanımlanıyor? Buradaki işlemimiz, BX yazmacına, BX'in mevcut değeri ile bizim data segment içerisinde onhash offsetindeki word değerimizin alınıp toplanması.
+
+87
+00:22:37,660 --> 00:22:45,240
+Yani bunun başına zimni olarak word ptr'e geldiğini bilmemiz gerekiyor. Tamam mı?
+
+88
+00:22:46,804 --> 00:23:07,704
+WordPtr otomatik olarak geliyor. Neden? Çünkü bu işlem BX üzerinden dönen bir işlem. BX 16 bitlik bir yazmaç olduğu için bu ilgili data segmentin 10 hash offsetindeki Word değerini alarak toplama işlemini yapıyor. Burada buna dikkat etmemiz lazım. Benim burada WordPtr'yi vermeme gerek yok. Otomatik olarak bu işlem
+
+89
+00:23:08,339 --> 00:23:16,139
+Bunu çalıştırdığım zaman bu işlemi yapıyor. Bu görmüş olduğunuz komut, valid bir komut, BX, 10H, valid bir komut.
+
+90
+00:23:16,579 --> 00:23:26,019
+Yaptığı iş ise BX ile data segmentin 10H offsetinden itibaren yerleşmiş olan 16 bitlik Word değerini toplayarak tekrar işlem sonucunu BX'e atıyor.
+
+91
+00:23:26,279 --> 00:23:29,639
+Dolayısıyla zıbmi olarak WordPayTR'e buraya gelmiş oluyor.
+
+92
+00:23:30,239 --> 00:23:31,339
+Aynı işlemi Memory Registers...
+
+93
+00:23:33,339 --> 00:23:34,379
+Pardon.
+
+94
+00:23:34,963 --> 00:23:58,563
+Memory register sırasında da yapabiliriz. Bunu da add 10h, virgül, BX şeklinde tanımlayabiliriz. Bu komutun karşılığı da, şu noktalı virgül biliyorsunuz zaten komente karşılık geliyordu. Bu komutun karşılığı da şöyle zimmi olarak word.ptr, data segment ve 10h.
+
+95
+00:23:59,092 --> 00:24:21,771
+Dolayısıyla, data segmentin 10H adresinden itibaren yerleşik olan 16 bitlik değere, buradaki yine WordPtr 10H artı BX değerini atayarak sonuç elde ettiğimiz bir örnek oluşturmuş oluyoruz burada da.
+
+96
+00:24:24,884 --> 00:24:26,884
+Böyle bir örnek oluşturmuş oluyoruz.
+
+97
+00:24:29,524 --> 00:24:36,884
+Buralarla ilgili sormak istediğiniz bir şey var mı arkadaşlar? Herhalde net sizin içinde net bir şekilde konu canlanıyordur.
+
+98
+00:24:36,884 --> 00:24:38,884
+Dolayısıyla bu işlemlerimiz böyle.
+
+99
+00:24:38,884 --> 00:24:43,884
+Soru olursa yine chat ekrandan sorarsanız veya sözlü olarak sorarsanız cevaplamaya çalışırım.
+
+100
+00:24:43,884 --> 00:24:47,692
+Bir sonraki komutumuz arkadaşlar, add with carry.
+
+101
+00:24:49,011 --> 00:25:16,491
+ADD, Cary komutu. Bu işlem, bakın nasıl tanımlanmış. Bir öncekinde nasıldı? Edition'da destination ile source'u toplayıp destination'a atıyordu. Fakat ADD, Cary, destination ve source'u toplayıp buna carry flag değerini ekleyip öyle destination'a atıyor. Mantık olarak add komutuyla aynı. Fakat bu komutta tek fark carry flag değerini alıp işleme sokmak. Şimdi bu komut nerede lazım olabilir? Şöyle düşünelim.
+
+102
+00:25:16,915 --> 00:25:24,596
+8086 mikro işlemcisi varsayılan olarak 8 bit veya 16 bitlik toplama çıkartma işlemlerini destekliyor.
+
+103
+00:25:25,355 --> 00:25:32,536
+Ama ben bir kütüphane yazarak 32 bitlik toplama işlemi tanımlamak istersem bunu nasıl yapabilirim?
+
+104
+00:25:32,995 --> 00:25:34,695
+Yani şöyle bir örnek sorumuz oldu şimdi.
+
+105
+00:25:50,067 --> 00:25:51,788
+sayılarımız da işaretsiz olsun.
+
+106
+00:26:00,692 --> 00:26:03,791
+Böyle bir işlemi yapmak istiyorsam bunu nasıl gerçekleyeceğim?
+
+107
+00:26:13,236 --> 00:26:19,296
+Hayır, şöyle, source veyahut da, şimdi sorumuz ne?
+
+108
+00:26:21,836 --> 00:26:36,976
+Memory işleminin, memory parametresi destination veya source'da olursa, bu durumda word.ptr veya byte.ptr koyduğumuz durum değişiyor mu diye bir sorumuz var.
+
+109
+00:26:36,976 --> 00:26:39,276
+Bakın, şöyle açıklamaya çalışayım.
+
+110
+00:26:39,827 --> 00:27:04,168
+Şu iki komut grubu için, bunlar da mutlaka memory kullanıyoruz. Source'da da olsa, destination'da da olsa hiç önemli değil. İkinci bir parametremiz register olduğundan dolayı, bu işlemin word mü yoksa byte mi olacağı belli. Çünkü ben buraya hangi register yazmış isem, onun boyutunda işlem yapılacak. Bu, bu şekilde çalışıyor.
+
+111
+00:27:04,496 --> 00:27:32,036
+Ama şu tip işlemlere baktığımızda, bakın böyle bir işleme baktığımızda, iData ve Memory. Şimdi ben bir sabit değer ekleyeceğim. Sabit değer eğer ki 8 bite sığan bir sabit değerse, bu durumda ben Memory'de yapmak istediğim işlemin 16 bitlik mi 8 bitlik mi olduğunu anlayamıyorum. İşte bu durumda PTR lazım, pointer lazım. Burada da Word PTR veya Byte PTR vermem gerekiyor. Ama diğer durumda, şu aşağıki durumda.
+
+112
+00:27:32,468 --> 00:27:37,228
+ADD, Cary, Register, Memory veya ADD, Cary, Memory, Register işlemlerinde.
+
+113
+00:27:37,768 --> 00:27:42,928
+Register olduğundan dolayı burada kesinlikle PTR pointer belirtmeme gerek yok.
+
+114
+00:27:43,028 --> 00:27:45,708
+Çünkü register işlem genişliğini belirlemiş oluyor.
+
+115
+00:27:46,387 --> 00:28:10,007
+sorunuza bu şekilde cevap verebilirim. Şimdi geri gelelim. Örnek sorumuz, 32 bitlik iki işaretsiz sayıyı toplayan assembly kodunu yazınız diyoruz. Burada aslında şunu yapmaya çalışıyoruz. 8086'nın donanımsal olarak destekleyemediği 32 bitlik bir toplama kütüphanesi yazmamız gerekiyor. Kabaca bunu böyle düşünün. Bunu nasıl yapabiliriz?
+
+116
+00:28:15,316 --> 00:28:23,315
+Bunu nasıl yapabiliriz? Fikri olan var mı? Doğal olarak ADD, Cary komutuna geldiğimiz için bundan alakalı bir şey olması lazım.
+
+117
+00:28:23,315 --> 00:28:26,315
+Ama nasıl olacak? Mantık olarak nasıl ilerlemeliyiz?
+
+118
+00:28:30,387 --> 00:28:31,687
+Var mı fikri olan?
+
+119
+00:28:50,324 --> 00:29:13,844
+Evet, şimdi doğru. Şöyle bir gösterim yapalım. Bizim şöyle diyelim hatta. Evet, kesinlikle bu şekilde. Şimdi bizim birinci sayımız ve ikinci sayımız var. Bunların her birisini 32 bitlik değerler olduğunu biliyoruz. Dolayısıyla ben bunları ifade ederken şöyle ifade edeceğim.
+
+120
+00:29:16,660 --> 00:29:26,840
+Şu sayımızın yüksek anlamlı 16 biti birinci sayımızın. Bu da birinci sayımızın düşük anlamlı 16 biti. Burası rengini de değiştirelim.
+
+121
+00:29:32,660 --> 00:29:53,960
+yüksek anlamlı ve düşük anlamlı 16 bitlerimizi burada elde ettik. Şimdi buraya mesela ne diyelim? Most significant byte'ımız, least significant byte'ımız, burası da yine aynı sayının most significant byte'ı, hatta rengimizde mavi yapacaktık.
+
+122
+00:29:58,132 --> 00:30:08,072
+Bu da yine sayımızın least significant byte'ı. Şimdi [öğrenci]'in dediği gibi ilerlememiz mümkün. Yani ne yapacağız burada?
+
+123
+00:30:09,012 --> 00:30:14,352
+Öncelikli olarak şuradaki düşük anlamlı 8 bit değerlerini toplayacağız. Elde ettiğimiz sonuç
+
+124
+00:30:14,352 --> 00:30:23,032
+doğru Word olması gerekiyor. Haklısın. Dolayısıyla bunları Word'e değiştiriyorum.
+
+125
+00:30:32,339 --> 00:30:33,640
+Bunları Word yaptık.
+
+126
+00:30:36,160 --> 00:30:38,960
+Şuradaki 16 bitlik değer toplamını elde ettik.
+
+127
+00:30:39,079 --> 00:30:42,279
+Buradan 16 bitlik bir toplam değerimiz oluştu.
+
+128
+00:30:44,559 --> 00:30:51,140
+Bu bizim yapmak istediğimiz 32 bitlik toplamın düşük anlamlı 16 bitini oluşturuyor.
+
+129
+00:30:51,779 --> 00:30:56,119
+Burada bir de yalnız bir carry flag oluşabilir bu 16 bitlik toplama sonucunda.
+
+130
+00:30:56,559 --> 00:31:10,859
+bir de carry flag oluşabilir. Yani bu ikisinin her iki sayında düşük anlamlı wordlerini topladığımız zaman bir carry flag oluşabilir. O zaman şuradaki toplamı bu carry flag ile birleştirmek istiyorsam yapacağımız işlem burada.
+
+131
+00:31:12,307 --> 00:31:26,667
+ADD, VIT, CERI işlemi olacak. Dolayısıyla biz, düşük anlamlı wordler için ADD komutunu çalıştırırken, yüksek anlamlı taraf için ADD, CERI komutunu çalıştırdığımızda aslında 32 bitlik bir toplam değeri elde etmiş olacağız.
+
+132
+00:31:27,347 --> 00:31:35,447
+Bunun dışında ADD komutuyla çok benzer durumlar var. Orada açıkladığımız için tekrar burada açıklama ihtiyacı duymuyorum.
+
+133
+00:31:35,907 --> 00:31:46,287
+Tek farkımız işlem tanımlanırken nasıl tanımlanıyor? İşlem tanımlanırken arkadaşlar destination, source ve carry flag değeri toplanarak destination'a atılıyor.
+
+134
+00:31:47,007 --> 00:31:52,107
+Carry flag'in alabileceği değerler 0 veya 1. Başka bir değer ama çünkü tek bitlik bir.
+
+135
+00:31:52,564 --> 00:32:01,124
+bayrak değeri olarak bunu düşünmemiz gerekiyor. Benzer bir işlem, subtract komutu için de geçerli. Subtract komutunda
+
+136
+00:32:01,875 --> 00:32:29,875
+Destination, Subtraction komutunda, Destination ve Source parametreyle var, iki adet parametre var. Destination'dan Source'u çıkartıp sonucu tekrar Destination'a yazıyoruz. Register'dan Immediate Data çıkartıp işlem yapabiliriz. Memory ve iData arasında işlem yapabiliriz. Fakat burada mutlaka yine az önce açıklamış olduğum sebeplerden dolayı PTR eklemek gerekli. Register'lar arasında veya Register ile Memory arasında işlem yapmak gerekir.
+
+137
+00:32:29,875 --> 00:32:30,355
+mümkün.
+
+138
+00:32:33,652 --> 00:33:00,531
+Tıpkı ADD, WIT, GERİDE olduğu gibi, subtraction with bar of işlemi de tanımlı. Buradaki amaç yine az önce tanımladığım gereksinimden dolayı ortaya çıkıyor. Örneğin, 8086 default olarak varsayılan olarak 8 bit ve 16 bitlik çıkartma işlemlerini destekliyor. Ama ben bir kütüphane olarak 32 bitlik sayılar üzerinde çıkartma işlemi tanımlamak istersem, bu durumda benim subtraction with bar of şeklinde bir komuta ihtiyacım var.
+
+139
+00:33:01,652 --> 00:33:04,951
+Aynı şekilde çalışıyor örneğin elimizde.
+
+140
+00:33:06,132 --> 00:33:32,832
+16 bitlik high ve 16 bitlik low kısımları olan 32 bitlik bir sayı var. Bununla 32 bitlik bir başka sayıyı çıkartmak istediğim vakit, yani burada bir çıkartma işlemi yapacaksam, öncelikli olarak şu oluyor. Sayının öncelikli olarak düşük anlamlı 16 biti üzerinden çıkartma işlemi yapıyoruz. Daha sonra eğer elde bir carry flag durumu oluşmuşsa, şimdi şöyle düşünelim carry flag durumunda.
+
+141
+00:33:34,132 --> 00:33:40,692
+Çıkartma işlemlerinde carry flag bar of görevini yerine getiriyor. Dolayısıyla bu şekilde bir çalışması söz konusu.
+
+142
+00:33:41,332 --> 00:33:47,292
+32 bitlik sayılarda bu işlemi yapmak istediğimde düşük anlamlı 16 bitle çalıştıracağım komut SAP komut oluyor.
+
+143
+00:33:47,292 --> 00:33:55,692
+Ama buradan bir bar of flag diyeceğim, bar of flag veyahut da carry flag değeri oluşabilir.
+
+144
+00:33:56,147 --> 00:34:13,047
+Çıkartma işlemlerinde carry flag değerinin bir değerini alması küçük sayıdan büyük sayıyı çıkarttığım anlamına geliyor. Küçük sayıdan büyük sayıyı çıkarttığımda da yine buradan yüksek anlamlı 16 bitten buraya bir hexadecimal değerinin aktarıldığı şeklinde bunu düşünebiliriz.
+
+145
+00:34:13,652 --> 00:34:34,412
+Yani çıkartma işlemini hexadecimal olarak yapıyorsak. Daha sonrasında ise buradaki subtract işleminin carry flag ile birlikte tekrar ele alınması lazım. Onu da şöyle göstereyim. Buradaki işlem ile carry flag'in işleme sokularak bir sonuç elde edilmesi lazım. Burada yürüteceğimiz komut da subtract with bar of komutu olmuş oluyor.
+
+146
+00:34:34,931 --> 00:34:41,791
+Mantık aynı şekilde. Daha yüksek bit genişliklerinde sayılarla ilgili işlem yapmak istediğimde bu komutu kullanmam gerekiyor.
+
+147
+00:34:43,211 --> 00:34:50,951
+Yine valid parametreler görüldüğü gibi. Register ile IDATA olabilir, Memory ile IDATA olabilir, Register ile Register arasında işlem olabilir.
+
+148
+00:34:51,631 --> 00:34:58,971
+Register ile Memory arasında veya Destination ile Sources'u Memory Register arasında değişerek işlem yapmamız mümkün oluyor.
+
+149
+00:34:59,971 --> 00:35:02,051
+Bir sonraki komut grubuna bakalım.
+
+150
+00:35:05,172 --> 00:35:14,492
+İnkrement komutu arkadaşlar. İnkrement komutumuz bir birim arttırma şeklinde tanımlayabileceğimiz bir komut.
+
+151
+00:35:14,612 --> 00:35:19,391
+İnkrement tek parametre alıyor. Bakın tek parametre alan bir komut operant olarak.
+
+152
+00:35:20,011 --> 00:35:26,231
+Yaptığı işlem destination değerimiz yani vermiş olduğunuz parametreyi bir adet arttırarak tekrar geri yazmış oluyor.
+
+153
+00:35:26,992 --> 00:35:29,652
+Şimdi burada birkaç örnek üzerinde durmaya çalışalım.
+
+154
+00:35:30,692 --> 00:35:31,492
+Şöyle.
+
+155
+00:35:33,427 --> 00:35:34,927
+ESC ile çıkalım.
+
+156
+00:35:36,347 --> 00:35:37,967
+Nerede bizi? Kapatmışım biz onu.
+
+157
+00:35:43,027 --> 00:35:44,667
+Şimdi bakın arkadaşlar, burada
+
+158
+00:35:44,667 --> 00:35:47,487
+MOV
+
+159
+00:35:47,487 --> 00:35:52,027
+BL, 0FFH yaptıktan sonra
+
+160
+00:35:52,027 --> 00:35:53,688
+Hatta önce
+
+161
+00:35:53,688 --> 00:35:56,327
+normal bir şekilde başlayalım
+
+162
+00:35:56,327 --> 00:36:02,228
+İnkrement BL dediğimde elde edeceğim değer
+
+163
+00:36:03,795 --> 00:36:11,175
+Nasıl çalışıyor? Basit bir şekilde. Şurada register değerlerini kontrol edeyim. BH, BL şeklinde tanımlı.
+
+164
+00:36:12,076 --> 00:36:19,956
+İlk komutu çalıştırdığım zaman BL'ye F0 değeri yüklendi. Şimdi bir birim arttırıyorum. F1 olarak sonucu elde ettim.
+
+165
+00:36:20,036 --> 00:36:26,515
+Peki benim buradaki değerim FF olmuş olsaydı ne olacaktı? Önce şeyi durdurmamız lazım.
+
+166
+00:36:28,500 --> 00:36:38,920
+Yazdığımız değer, ff olmuş olsaydı ne olacaktı? Şimdi bakın, ilk komutu çalıştırdım, bhf değeri yüklendi. Şimdi bunu bir birim arttırıyorum. Buradan flaglerimize de bakalım.
+
+167
+00:36:40,000 --> 00:36:52,380
+Flaglerimizi de görelim şurada. Bir bir, şimdi komutu yürüttük, bl'yi bir arttıracağım. Arttırdığım zaman bakın tekrar 0, 0'a düştü. Gördünüz mü? 0, 0'a düştü ve carry flag değerim değişmedi.
+
+168
+00:36:52,380 --> 00:36:55,840
+Tamam mı? Tekrar geri alalım bakın. Bir birim.
+
+169
+00:36:56,500 --> 00:37:21,239
+yürüttüm. Böyle bir bayrak durumu oluştu. Benim burada özellikle göstermek istediğim, ff değerinden sonra, carry filleyi de dikkate almazsam, bir birim arttırdıktan sonra tekrar 8 bite sıhan değer 0, 0 olmuş oluyor. Özellikle bunu göstermek istedim burada. Komutun kullanım şekillerinden bir tanesi de increment memory idi. Aynı işlemi burada da yapalım şimdi.
+
+170
+00:37:24,820 --> 00:37:25,900
+sonlandıralım.
+
+171
+00:37:28,039 --> 00:37:28,440
+MOV
+
+172
+00:37:28,440 --> 00:37:30,240
+10H
+
+173
+00:37:30,240 --> 00:37:32,400
+virgül
+
+174
+00:37:48,403 --> 00:38:00,583
+ABC'de olduğu için başına 0 koyarak bunu tanımlıyorum. Ha, increment yapacaktık, pardon. Bu şekilde tanımlayalım. Daha sonra, increment byte PTR.
+
+175
+00:38:04,083 --> 00:38:06,384
+onhash komutunu bir çalıştıralım.
+
+176
+00:38:07,943 --> 00:38:11,663
+Şimdi burada memory adresine de bakmayı hem de görmüş oluyoruz.
+
+177
+00:38:11,723 --> 00:38:12,783
+Şimdi memory'e tıkladım.
+
+178
+00:38:13,523 --> 00:38:15,884
+Memory'de bakın bizim data segment değerimiz neymiş?
+
+179
+00:38:15,884 --> 00:38:16,423
+100h.
+
+180
+00:38:16,963 --> 00:38:17,603
+100h burası.
+
+181
+00:38:17,683 --> 00:38:19,283
+Bunun on offset'i neresi?
+
+182
+00:38:19,443 --> 00:38:20,763
+Şu 2 byte'ımız bizim.
+
+183
+00:38:21,483 --> 00:38:24,943
+İlk değer olarak oraya bir abffh değerlerini atacağız.
+
+184
+00:38:25,043 --> 00:38:26,063
+Bir adım çalıştıralım.
+
+185
+00:38:26,400 --> 00:38:34,400
+Bakın buradaki değerin ABFF olarak güncellendiğini görüyoruz. Şimdi buradaki komutumuzu bir birim daha yürüttüğümüz zaman yine
+
+186
+00:38:34,400 --> 00:38:43,720
+Weave'dan flaglere de bakarak bunu görelim. Bir adım yürüttüğümüz arkadaşlar sadece 8 bitlik işlem yapacağımız için burada
+
+187
+00:38:43,720 --> 00:38:53,760
+memory değerinin sıfırlandığını gördük. Peki aynı işlemi WordPtr olarak yaparsak ne oluyor? Aynı işlemi WordPtr olarak yapalım.
+
+188
+00:38:54,420 --> 00:39:00,139
+Şimdi bir adım attık. Memory'den hemen değerimize bakalım. Bakın şu ne oldu?
+
+189
+00:39:05,780 --> 00:39:32,440
+Şurada FFAB sırasıyla gördüğümüz aslında ABFF 16 bitlik sayısı var. Bunu bir birim arttırdığımızda 0, 0 ama bir sonraki yüksek anlamlı byte'ımızdaki değerin bir birim elde dolayısıyla bir birim arttığını görmüş oluyoruz. Dolayısıyla burada da arkadaşlar, increment komutu çalıştırırken burada pointer'ın gerekli olduğunu görmüş oluyoruz.
+
+190
+00:39:37,012 --> 00:40:00,432
+Şimdi ben şöyle açıyorum. Mesela bakın, MUL 8086. Açtım. Eğer ki buradan new deyip, com tipi bir program seçerseniz, burada org 100H değeri ortaya çıkmış oluyor. Bu org 100H tipi aslında, bakın tekrar göstereyim, com template programlar bu şekilde yazılıyor. Yani biz önümüzdeki derslerde göreceğiz.
+
+191
+00:40:04,255 --> 00:40:26,835
+Program kendi bulunduğu data segmentin 100H offsetinden itibaren yerleşik olmalı. Onun için bu 100H değeri orada yazıyor. Benim yazmış olduğum programda herhangi bir program tipi belirtmiyorum ilk açtığım halde. Sırasıyla komutları yürütüyor. Şöyle düşünelim, bir işletim sistemindeki derlemiş olduğumuz programın çalışması aşamasında
+
+192
+00:40:28,052 --> 00:40:55,452
+Ben işletim sisteminin komut satırındayım. Kendi yazdığım, derlediğim programı çalıştırıyorum. O zaman bir egze programsa bu. Bunun bir takım headerları falan var. Geri dönüş değerleriyle ilgili, programın özellikleriyle ilgili. Bu header bunları tutuyor. Aynı şekilde COM tipi programlar da bu şekilde headerlar tutuyor. Bunlar da 0 ile 100 haş arasındaki bölgede yazılıyor. Buradaki davranışı COM tipi programın farklı, egze tipi programın farklı.
+
+193
+00:40:56,052 --> 00:41:00,372
+Dolayısıyla aslında orada görmüş olduğunuz 100H, ORC 100H varsa bu şu anlama geliyor.
+
+194
+00:41:00,492 --> 00:41:03,291
+COM tipi bir program template üzerinde ilerliyorsunuz.
+
+195
+00:41:03,791 --> 00:41:11,011
+Hepsini silip, bütün mevcut şeyi silip, hatta NIV demeden başlarsanız, yani benim yaptığım gibi NIV demeden başlarsanız,
+
+196
+00:41:11,851 --> 00:41:12,971
+şöyle göstereyim.
+
+197
+00:41:14,092 --> 00:41:17,052
+Burada herhangi bir template seçmeden...
+
+198
+00:41:17,940 --> 00:41:26,199
+komut satırına gelirsem direkt burada yazarak başlayabiliyorum. Siz de bu şekilde ilerleyebilirsiniz. Çünkü kom tipi ve egze tipi programları görmedim.
+
+199
+00:41:31,251 --> 00:41:34,092
+Bir sonraki komut grubu arkadaşlar, decrement komutu.
+
+200
+00:41:34,632 --> 00:41:39,912
+Dcrement komutu bir değer azaltarak tekrar destination değerini belirtiyor.
+
+201
+00:41:41,351 --> 00:41:44,412
+Register üzerinden ve memory üzerinden işlem yapabilir.
+
+202
+00:41:44,592 --> 00:41:47,431
+Memory erişiminde geçen hafta bahsetmiştik.
+
+203
+00:41:47,912 --> 00:41:50,931
+İşte memory adreslemede doğrudan adresleme olabilir.
+
+204
+00:41:51,443 --> 00:42:09,323
+Dolaylı adresleme tipleri olabilir. Bunların herhangi birisi kullanılarak yapılabilir. Ama biz memory adresi verdiğimiz zaman mutlaka ve mutlaka bunun Word mü byte işlemi olduğunu mutlaka belirteceğiz. Eğer belirtmek gerekirken belirtmiyorsanız bunu yanlış olarak kabul edeceğim. Onu söyleyeyim tekrardan.
+
+205
+00:42:09,323 --> 00:42:11,743
+Mesela burada şunu da görelim.
+
+206
+00:42:17,619 --> 00:42:20,420
+Mesela, MOV, nereye gitmiş o ya?
+
+207
+00:42:22,300 --> 00:42:24,819
+MOV, BL, 0,
+
+208
+00:42:26,019 --> 00:42:29,300
+0H, hatta şöyle 0 diyelim.
+
+209
+00:42:30,132 --> 00:42:52,891
+Daha sonra dikrement, BL diyelim. Bu BL'den değerimi sıfırken bir azalttığımızda ne oluyor bakalım? Bakın ilk değer olarak yüklendi. Zaten varsayılan değeri de buymuş. Şurada görüyorsunuz. Değeri bir azalttığımda FF'e dönüyor. Buna dikkat edelim. 8 bitlik bir yazmaç olduğu için tekrar FF değerine dönmüş oluyor. Bunu biz BX üzerinden yapmış olsaydık ne olacaktı?
+
+210
+00:42:56,820 --> 00:43:13,500
+Şu anda BX yazmacımızda 0, 0 var. Buradan biz değer azalttığımda bakın 16 bit FFFF oldu. 16 bit FFFF'in karşılığı ne? Şöyle düşünün. 0 FFFFH değeri işaretli sayı olarak.
+
+211
+00:43:18,804 --> 00:43:25,483
+neye eşittir? Eksi 1'e eşittir. Sıfırdan 1 çıkarttığım zaman eksi 1. Bunu bu şekilde de görmüş olalım.
+
+212
+00:43:27,524 --> 00:43:33,623
+Bir sonraki komut grubumuz arkadaşlar negate komutu. Bu negate komutu tuz komplement olarak işlem yapıyor.
+
+213
+00:43:33,623 --> 00:43:38,564
+Yani elimizde bir sayı varsa bunun tuz komplement olarak
+
+214
+00:43:39,059 --> 00:43:55,920
+negatifini alıyor. Bakın bu şundan farklı. Her bir bitin değilini almaktan yani logical not işleminden farklı. Bitwise not işleminden farklı. O zaman şunu şuraya belirteyim. Sizin içinde not olmuş olsun. Negate işlemi
+
+215
+00:44:05,876 --> 00:44:31,996
+farklı arkadaşlar. Yani bu buna eşit değil. Şöyle kırmızıyla yapalım. Bu buna eşit değil. Tamam mı? Bu çok önemli bir nokta. Negate işlemi ne yapıyor? Negate işlemi sayının tuz komplementini alıyor. Tuz komplement olarak negatifini alıyor. Logical bitwise not ne yapıyor? Her bir bitin bire göre tümleyenini alıyor. Bu ikisi birbirinden farklı. Buna dikkat ediyoruz.
+
+216
+00:44:32,659 --> 00:44:43,659
+Örneğin, register üzerinden veya memory üzerinden işlem yapabiliriz de gate işleminde. Örnek üzerinden bakacak olursak.
+
+217
+00:44:50,835 --> 00:44:57,916
+örnek üzerinden bakacak olursak, MOV BL, 0FFH diyelim.
+
+218
+00:44:59,715 --> 00:45:01,536
+Annotation'ları da silelim.
+
+219
+00:45:02,996 --> 00:45:08,115
+Daha sonrasında NEC BL diye bir komut çalıştıralım.
+
+220
+00:45:09,215 --> 00:45:10,935
+Şimdi ilk yükleme değerimizi attık.
+
+221
+00:45:10,935 --> 00:45:14,775
+Bakın BH'da, BL'de FF değerimiz mevcut.
+
+222
+00:45:15,255 --> 00:45:18,076
+Şimdi BL'nin negatifini aldığımızda,
+
+223
+00:45:18,804 --> 00:45:41,764
+bir değerini elde etmiş olduk. Çünkü yazmış olduğumuz sayı, ff değeri, bir bit dizisi aslında. Hepsi birlerden oluşan bir bit dizisi. Fakat negate işlemini çalıştırdığımızda bu sayıyı, bu bit dizisini daha doğrusu işaretli sayı olarak değerlendiriyor. İşaretli sayı olarak değerlendirdiğimizde en yüksek anlamlı bitimiz bir. Demek ki bu sayı negatif. Geri kalan bütün genlik değerlerimiz bir.
+
+224
+00:45:42,228 --> 00:46:09,347
+buradaki sayının genlik değerini hesaplayabilmek için TUS komplementa ne yapıyorduk? İlk biri olduğu gibi bırakıp diğerlerinin hepsini bire göre tümleyeni alıyorduk. İlk biri olduğu gibi bıraktığımız zaman bir değerimiz var, diğerlerinin hepsinin dönüşümünü aldığımız zaman sıfır. Dolayısıyla bu sayı eksi bire eşit. Demek ki bizim buradaki bit dizimiz, FFH şeklinde vermiş olduğumuz bit dizimiz işaretli sayı olarak değerlendirildiğinde eksi bire eşitmiş. Bunun negatini aldığımızda da sonuç
+
+225
+00:46:09,972 --> 00:46:13,792
+1 olarak elde edilmiş oluyor. Aynı işlemi
+
+226
+00:46:13,792 --> 00:46:21,891
+logical not ile yapsak bu durumda elde edeceğimiz değer 0 olurdu. Tamam mı? Buna dikkat edin. Yani şöyle göstereyim size.
+
+227
+00:46:22,932 --> 00:46:24,332
+Şöyle ifade etmeye çalışalım.
+
+228
+00:46:26,612 --> 00:46:34,771
+0 ffh. Bu değeri binary olarak yazmak istemez mi? 1, 1, 1, 1, 1, 1, 1, 1, binary sayısını elde ediyoruz.
+
+229
+00:46:35,251 --> 00:46:52,992
+Bu sayıya ilişkin olarak eğer ki negate yapacaksak, negate işlemini yaparsak, birazcık kenardan yazalım, negate işlemini yapacak olursak bu durumda ne oluyordu arkadaşlar? 0, 0, 0, 0, 0, 0, 0, 1 binary sayısını elde ediyoruz.
+
+230
+00:46:52,992 --> 00:47:00,992
+Ama logical not yaparsak, hatta logical bitwise not yaparsak, bu durumda bir tane şöyle kaydıralım.
+
+231
+00:47:02,835 --> 00:47:04,195
+Bir tane daha kaydıralım.
+
+232
+00:47:05,855 --> 00:47:06,715
+Bu durumda ise,
+
+233
+00:47:07,255 --> 00:47:08,915
+1, 1, 1, 1, 1, 1, 8 tane 1.
+
+234
+00:47:08,975 --> 00:47:11,595
+Her birisinin 1'e göre tümleyenini alacağız.
+
+235
+00:47:11,775 --> 00:47:14,075
+Yani 1 gördüğümüz yere 0 yazacağız.
+
+236
+00:47:15,435 --> 00:47:16,415
+Elde edeceğimiz değer.
+
+237
+00:47:20,628 --> 00:47:21,628
+bu olmuş oluyor.
+
+238
+00:47:23,028 --> 00:47:30,048
+Evet, negate işleminin eş değeri sizin de söylemiş olduğunuz gibi NAT artı 1.
+
+239
+00:47:30,808 --> 00:47:32,968
+Bu zaten TUS komplementin tanımıydı.
+
+240
+00:47:33,448 --> 00:47:36,348
+Bir önce bire göre tümleyen al, daha sonra 1 ekle.
+
+241
+00:47:36,548 --> 00:47:37,908
+Aynı işleme karşılık geliyor.
+
+242
+00:47:39,348 --> 00:47:39,908
+Tamam.
+
+243
+00:47:45,844 --> 00:47:46,344
+devam edelim.
+
+244
+00:47:50,579 --> 00:48:03,639
+Şimdi, çok önemli bir komut arkadaşlar, Compare komutu. Compare komutuyla, Subtract komutunu birbiriyle karşılaştırarak inceleyelim. Compare komutu yine iki tane parametre alıyor. Bu parametreler de destination ve source.
+
+245
+00:48:04,052 --> 00:48:15,892
+yapmış olduğu işlem, destination'dan source'u çıkartıyor. Subtract'a ne yapıyordu? Destination'dan source'u çıkartıp işlem sonucunu tekrar destination'a yazıyordu. Demek ki Compale ile
+
+246
+00:48:15,892 --> 00:48:22,912
+Subtract'lar arasındaki en önemli fark, işlem sonucu hesaplanıyor fakat herhangi bir destination değerine yazılmıyor.
+
+247
+00:48:23,392 --> 00:48:29,492
+Hani sonuç saklanmıyor. E sonuç saklanmazsa bunun anlamı ne? Sadece ve sadece bayraklar etkileniyor.
+
+248
+00:48:30,195 --> 00:48:58,195
+Bayraklar ne için etkileniyor? O da bu komutun, Compare komutun kullanımından geliyor. Compare komutu arkadaşlar, koşullu dallanma komutları için bayrak koşulları oluşturan bir komut. Yani biz burada Compare komutlarının hangi durumda çalıştığını görüyoruz veya koşullu dallanmaların. Sadece mesela örneklerden birisi, iki tane sayının birbirine göre, farkına göre koşullu dallanma yapabilirim. Ne deriz burada? Birinci sayı, ikinci sayı.
+
+249
+00:48:58,195 --> 00:49:06,336
+sayıdan büyükse, eşitse, büyük eşitse, küçükse, küçük eşitse, işlem sonucu sıfırsa gibi koşullu dallanma durumları üretebiliriz.
+
+250
+00:49:06,396 --> 00:49:17,056
+Onlar da bakın şurada. İşte destination source'dan büyük mü, büyük eşit mi, eşit mi, küçük eşit mi, küçük mü gibi durumları sorgulayabilmek için Compare komutunu kullanıyoruz.
+
+251
+00:49:17,492 --> 00:49:27,152
+Yine koşullu dallanma komutları aritmetik işlemlerin yanında, lojik işlemler yanında da hesaplanabilir.
+
+252
+00:49:28,112 --> 00:49:31,132
+Dolayısıyla tek başına şunu söylemek doğru değil.
+
+253
+00:49:31,872 --> 00:49:36,132
+Koşullu dallanma komutları sadece ve sadece Compare komutlarıyla oluşturulur.
+
+254
+00:49:36,472 --> 00:49:42,791
+Hayır. Koşullu dallanma durumları oluşturabileceğimiz komutlardan bir tanesi Compare işlemidir.
+
+255
+00:49:43,168 --> 00:49:59,108
+Subtract da kullanabiliriz. Aynı işlemi gerçekleştirir. Ama ben işlem sonucunu saklamak istemiyorsam, sadece büyüklük-küçüklük karşılaştırması yapmak istiyorsam Compare komutunu kullanacağım. Aradaki farkı net olarak anlatabildiğimi düşünüyorum.
+
+256
+00:50:00,000 --> 00:50:03,340
+Compare ile Subtract arasındaki en önemli fark bu.
+
+257
+00:50:03,900 --> 00:50:11,940
+Subtractta işlem sonucu destination'da saklanır ama Compare'de işlem sonucu saklanma sadece bayraklar etkilenerek sonuç elde edilmiş olur.
+
+258
+00:50:12,940 --> 00:50:16,099
+Şimdi Compare'ı hangi durumlarda kullanabiliyoruz?
+
+259
+00:50:16,659 --> 00:50:34,599
+Register ile Immediate Data arasında bir Compare yapabiliriz. Memory ile Immediate Data arasında bir işlem yapabiliriz. Tabi burada otomatik olarak burada bir pointer gerektiğini hatırlatmam gerekiyor. Compare, Memory, iData dediğimizde mutlaka bir pointer.
+
+260
+00:50:35,023 --> 00:50:51,623
+ön eki gerekiyor. Register'lar arasında Compare yapabilirim. Register'la Memory arasında Destination ve Source'u değiştirerek de Compare işlemi yapabiliriz. Compare işlemi için arkadaşlar şöyle bir örnek durumları üretelim.
+
+261
+00:51:04,467 --> 00:51:29,467
+Mesela MOV AL'ye virgül 40H, MOV BL'ye virgül 20H. Şimdi burada CMP, önce bir CMP'ye bakalım, AL'ye virgül BL işlemini çalıştıralım. Daha sonra da CMP BL'ye virgül AL'ye çalıştıralım.
+
+262
+00:51:35,443 --> 00:52:01,344
+emulate diyelim. View. Flaglere de bakalım. Şurada flaglerimiz de var. Şimdi bakın tek adım adım yürüttüm. AL'ye initial değerimizi ve BL'ye initial değerimizi yükledik. 40 ve 20H değerleri yüklendi. AL,BL dediğimiz zaman bunun yapacağı işlem nedir? AL'den BL'yi çıkartıp AL'yi ve BL'yi bozmadan sadece bayrakları etkileyerek işlem sonucu elde etmek.
+
+263
+00:52:01,780 --> 00:52:05,260
+Bakın burada daha geçen hafta anlattığımız bir konu vardı.
+
+264
+00:52:05,960 --> 00:52:08,099
+Veri aktarım komutları bayrakları etkilemiyordu.
+
+265
+00:52:08,219 --> 00:52:11,740
+MOV'ları çalıştırdığım halde bayrakların hiçbirinin değişmediğini gördük.
+
+266
+00:52:11,980 --> 00:52:13,019
+Değer yüklediğimiz halde.
+
+267
+00:52:13,679 --> 00:52:16,360
+Şimdi tek adım alarak bu Compare işlemini çalıştıralım.
+
+268
+00:52:16,360 --> 00:52:24,199
+Bakın büyük sayıdan küçük sayıyı çıkarttığım için Compare, Sign Fillet'e bakabilirsiniz, Overflow'a bakabilirsiniz.
+
+269
+00:52:24,628 --> 00:52:46,668
+zero fill'e bakabilirsiniz. Bunlarda herhangi bir değişiklik olmadı. Çünkü büyük sayıdan küçük sayıyı çıkarttım, elde oluşmadı. İşlem sonucu sıfır değil, zero fill'e sıfır kaldı. Büyük sayıdan küçük sayıyı çıkarttım, işlem sonucu pozitif bir değer, sign fill'e sıfır kaldı. Overflow bayrağına bakıyoruz. Büyük sayıdan küçük sayıyı çıkarttığım için
+
+270
+00:52:47,039 --> 00:52:54,980
+ve bu işlem sonucu da 8 bit işaretli sayı olarak saklayabildiğimizden dolayı overflow bayrağı da 0 olarak kalmış oldu.
+
+271
+00:52:55,599 --> 00:53:03,039
+Peki aynı işlemi, bakın şu anda Compare komutunu çalıştırdığımız için ilk yüklediğimiz değerler bozulmadı.
+
+272
+00:53:03,159 --> 00:53:10,400
+40 ve 20 olarak kaldı. Ben bu komut üzerine veya bu initial değerler üzerine yine bu sefer Compare BL,AL çalıştırabilirim.
+
+273
+00:53:10,771 --> 00:53:13,672
+Bu sefer Compare, BL, AL ne işlemi yapacak?
+
+274
+00:53:13,831 --> 00:53:17,991
+BL'den AL'yi çıkartıp bayrak durumlarını değiştirecek.
+
+275
+00:53:18,092 --> 00:53:19,112
+Şimdi bunu çalıştıralım.
+
+276
+00:53:20,083 --> 00:53:41,563
+Bakın bunları çalıştırdığımız zaman yine register değerlerim değişmiyor. Bu Compare komutunun çok önemli bir özelliği. Compare komutu tekrar söylüyorum, duymayan kalmasın. Compare komutu iki operandı birbirinden çıkartıyor, destination'dan source'u çıkartıyor, işlem sonucunu saklamıyor, sadece ve sadece bayrakları güncelliyor.
+
+277
+00:53:43,188 --> 00:54:03,168
+Küçük sayıdan artık 20 haçtan 40 haçı çıkarttığımız için, 20 haçtan 40 haçı çıkarttığımız için bir bar of durumu oluştu. Bu bar of durumunu biz carry flag'te bir değeri olarak gördük. Bakın burada mevcut. Başka ne var? İşlem sonucu 0 mı? Hayır. Dolayısıyla 0 flag 0 kaldı. Bir de sign flag'e bakıyoruz. Sign flag 1 olarak oluşmuş.
+
+278
+00:54:03,572 --> 00:54:19,532
+Neden böyle oluştu? 20H'dan 40H'ı çıkartırsak, işlem sonucumuz eksi 20H. Eksi 20H'da artık ne olacak tahmininiz üzerine? En yüksek anlamlı biti 1 olacak. Dolayısıyla sayı artık sign filleyi 1 olarak elde etmiş olduk.
+
+279
+00:54:20,072 --> 00:54:31,372
+İşlem sonucunda arkadaşlar, bakın işlem sonucunda 20H'dan 40H'ı çıkarttığım zaman, işlem sonucu eksi 20H. Eksi 20H'ı 8 bit tuz komplement işaretli sayı olarak
+
+280
+00:54:31,572 --> 00:54:54,832
+8 bit de temsil edebiliyorum. Dolayısıyla bundan dolayı da bir overflow bayrağı oluşmadı. Bayrakların oluşma durumlarını bu şekilde incelemiş olduk. Şimdi değişik bir işlem yapalım. BL'de vermiş olduğumuz değer negatif, çok küçük negatif bir değer olsun. Bunu nasıl yapabiliriz? Negatif, çok küçük bir değer olabilmesi için.
+
+281
+00:54:55,956 --> 00:55:01,436
+Aklınıza gelen TUS komplement 8 bit negatif en küçük değeri söyleyin.
+
+282
+00:55:02,436 --> 00:55:03,756
+Ne çıkıyor bakalım.
+
+283
+00:55:05,696 --> 00:55:08,356
+İşaretli sayı olarak bir karşılığı olsun.
+
+284
+00:55:09,316 --> 00:55:15,776
+Ve 8 bit ile temsil edebileceğimiz işaretli sayılardan en küçük negatif sayıyı söyleyin.
+
+285
+00:55:17,516 --> 00:55:18,536
+Onu kullanalım burada.
+
+286
+00:55:21,576 --> 00:55:22,416
+FFH
+
+287
+00:55:23,123 --> 00:55:31,463
+FFH mı? Az önce gördük ya FFH'ı. FFH'ı yazdığınız zaman bu eksi bir yapıyor. Negatif sayıların en büyüğünü buldunuz.
+
+288
+00:55:32,884 --> 00:55:37,344
+FFH, TUS komplement işaretli sayılarda en büyük negatif sayıdır.
+
+289
+00:55:44,980 --> 00:55:46,100
+Tekrar söylüyorum.
+
+290
+00:55:47,720 --> 00:55:56,420
+Değer olarak soruyorum. Değer olarak negatif, TUS komplement işaretli aritmetikte yazılabilecek en küçük negatif sayıyı soruyorum.
+
+291
+00:56:01,748 --> 00:56:04,967
+Mutlak değer olarak da eksi bir yazılabilecek.
+
+292
+00:56:05,728 --> 00:56:07,208
+Aradığımız değer değil yine.
+
+293
+00:56:07,367 --> 00:56:08,748
+Bu da kurtarmadı.
+
+294
+00:56:09,907 --> 00:56:11,307
+Mutlak değer de kurtarmadı.
+
+295
+00:56:12,128 --> 00:56:12,708
+Sekiz bit.
+
+296
+00:56:12,988 --> 00:56:13,168
+Evet.
+
+297
+00:56:13,988 --> 00:56:17,608
+Sekiz bit olarak yazılabilecek en küçük negatif sayı arkadaşlar.
+
+298
+00:56:17,768 --> 00:56:18,588
+Seksen haş.
+
+299
+00:56:18,947 --> 00:56:19,088
+Evet.
+
+300
+00:56:19,748 --> 00:56:22,488
+Bunun nasıl en küçük sayı olduğunu bir görelim.
+
+301
+00:56:24,148 --> 00:56:50,708
+80H sayısını bir binary olarak yazalım. 1, 0, 0, 0, 0, 0, 0, 0, binary sayımız. Bu sayıda bakıyoruz en yüksek anlamlı bitimiz 1 olduğuna göre bu sayı negatif bir sayı. Demek ki bu sayımız negatif bir sayı. Sonra ne yapacağız? Tuz komplement geri kalan kısım. Şöyle yapalım. Tuz komplement.
+
+302
+00:56:51,135 --> 00:57:00,016
+1, 2, 3, 1, 2, 3, 4. Bu geri kalan kısmın tuz komplement olarak hesabını alacağız. Ne yapıyor öyleyse bu sayı bakalım.
+
+303
+00:57:00,016 --> 00:57:06,255
+0, 0, 0, 0, 0, 0, 0, 0'ın tuz komplementini aldığımızda
+
+304
+00:57:06,255 --> 00:57:10,096
+bütün
+
+305
+00:57:10,512 --> 00:57:20,752
+ilk bir görene kadar olduğu gibi bırakacağız gibi bir mantık vardı. Veyahut da bire göre tümleyen alıp bir ekleyeceğiz. Her bir sayının bire göre tümleyenini aldıktan sonra bir ekleyeceğiz. Increment.
+
+306
+00:57:25,012 --> 00:57:26,692
+once complement
+
+307
+00:57:31,443 --> 00:57:34,003
+Bu şekilde bir işlem yaparız.
+
+308
+00:57:35,423 --> 00:57:35,763
+Burada
+
+309
+00:57:35,763 --> 00:57:41,283
+birinci parantez içinden çıkan değerimiz 1, 1, 1
+
+310
+00:57:41,283 --> 00:57:43,203
+binder olur.
+
+311
+00:57:44,324 --> 00:57:46,083
+Bunu da bir birim arttırdığımızda
+
+312
+00:57:50,452 --> 00:58:05,751
+olur. Bu sayıda neye eşit? Eksi 128'e eşit. Demek ki yazabileceğimiz, tuz komplement aritmetikte 8 bit ile yazabileceğimiz en küçük sayımız arkadaşlar, eksi 128'miş. O zaman buradan hareketle devam edelim.
+
+313
+00:58:06,972 --> 00:58:15,092
+BL değerimiz için, buraya gelip 80H değerimizi yazacak olursak.
+
+314
+00:58:15,092 --> 00:58:16,172
+Şimdi,
+
+315
+00:58:17,588 --> 00:58:18,827
+Bayrakları da açalım.
+
+316
+00:58:24,436 --> 00:58:51,356
+Initial değerlerimizi yükledik. Daha sonra şu ana kadar bakın hiç herhangi bir compare işlemi de dahil olmak üzere gösterimin işaretli veya işaretsiz olarak herhangi bir değerlendirmesini yapmadık. Bunların işaretli veya işaretsiz değerlendirilmesi kullanacağımız koşulu dallanma komutuyla ortaya çıkacak. Şu ana kadar herhangi bir koşulu dallanma komutu kullanmadığımız için burada işarete değinmiyoruz. Sadece
+
+317
+00:58:52,148 --> 00:59:13,407
+yapmış olduğumuz işlemlerin bit dizisiymiş gibi değerlendirerek işlem yapıyor mikro işlemci. Eğer ki ben koşulu dallanma komutunu işaretli sayı olarak kullanırsam o zaman işaretli sayı olarak değerlendirilecek. Şu anda ama sadece bit dizisilerinden işlem yapıyorum. Şimdi compare AL, BL diyeceğim. Bakın.
+
+318
+00:59:15,284 --> 00:59:23,844
+40H'dan 80H'ı çıkartacağız. 40H kaça karşılık geliyor? 4 kere 16, 64'e mi karşılık gelir?
+
+319
+00:59:26,724 --> 00:59:30,844
+4 kere 16, 64'e karşılık gelecek. Hemen görelim onu da. Bakın.
+
+320
+00:59:32,324 --> 00:59:35,244
+Hesap makinesinde programlayıncı moduna geçip.
+
+321
+00:59:35,603 --> 00:59:43,063
+hex değer olarak 40 yazdığım zaman decimal karşılığının 64 olduğunu görüyoruz. Bundan bu şekilde siz de faydalanırsınız.
+
+322
+00:59:44,043 --> 00:59:51,263
+64'den eksi 128'i çıkartacağım. Yani ne olmuş oldu? 64 artı 128'lik bir işlem oldu.
+
+323
+00:59:51,963 --> 00:59:59,963
+Şimdi düşünelim mantık olarak. Bu işlem sonucu 8 bit tuz komplement aritmetikte taşmadan saklanabilir mi?
+
+324
+01:00:02,420 --> 01:00:28,320
+işaretli sayı aritmetiğinde temsil edebileceğimiz sayılar arkadaşlar, eksi 128 ile 127 arasındaki sayılardır. Bunun dışına taşan herhangi bir değer varsa, bu temsil edemeyeceğimiz anlamına gelir ve overflow oluşur. Tamam mı? Şimdi, bu overflow'u incelerken demek ki overflow bayrağı neye göre oluşuyormuş? İşaretli sayı işlemi için oluşturuluyor.
+
+325
+01:00:28,724 --> 01:00:36,403
+Carry flag işaretsiz sayı işlemi için oluşturuluyor. Zero flag işlem sonucu sıfırsa, sign flag sadece en yüksek anlamlı bite bakıyor.
+
+326
+01:00:37,403 --> 01:00:44,224
+Demek ki işaretli sayı olarak ilgili genişliğe sığmıyorsa işlem sonucu overflow bayrağı 1 olacak.
+
+327
+01:00:45,224 --> 01:00:49,084
+İşaretsiz sayı olarak belirtilen aralığa sığmıyorsa da carry flag 1 olacak.
+
+328
+01:00:49,556 --> 01:01:15,975
+Tekrar gelelim. İşaretsiz sayı olarak 8 bit bir aralığa yazabileceğimiz değerler nedir? 0, 0, 0, 0 olabilir. Bu 0'a karşılık gelir veya hepsi 1, 1, 1, 1, 1 olur. Bu da 255'e denk gelir. Demek ki işaretsiz sayı olarak benim range'im 0, 255. İşaretli sayı olarak 8 bit range'im eksi 128 ve 127 aralığındaki bölge olacak. Tamam mı?
+
+329
+01:01:16,563 --> 01:01:36,083
+Şimdi, yapacağımız işlem ne? 64-128. Overflow için bakıyorum. 64-128. Kerry flag için bakarken ne olacak bu? 40H artı 120 artı 80H. 80H neye karşılık gelir? Bakalım.
+
+330
+01:01:39,795 --> 01:01:44,795
+80H 128, pozitif 128'e karşılık geliyor. Tekrar ediyorum.
+
+331
+01:01:45,675 --> 01:01:52,935
+İşaret, carry fly'i hesaplamak istiyorsam, bu işlemin işaretsiz sayı karşılığını hesaplayacağım.
+
+332
+01:01:55,355 --> 01:01:59,635
+Overflow bayrağı ile ilgili işlemde işaretli sayıymış gibi değerlendireceğim. Tamam.
+
+333
+01:01:59,635 --> 01:02:03,500
+Şimdi bir adım yürüttük. Bir adım yürüttüğümüzde...
+
+334
+01:02:07,123 --> 01:02:13,743
+Bakın, signflake'in 1 olması mantıklı mı? En yüksek anlamlı bitimiz buradan 1 gelecek. Dolayısıyla signflake 1.
+
+335
+01:02:14,523 --> 01:02:28,923
+40H ile x128'i birbirinden çıkarttık. Yani 40H artı 64 artı 128 oldu. İşlem sonucu artı 127'yi taştığı için overflow bayrağımız 1.
+
+336
+01:02:29,683 --> 01:02:34,363
+İşlem sonucu 0 değil, onu da belirttik. Şuna gelelim şimdi.
+
+337
+01:02:34,847 --> 01:02:41,867
+40H artı 80H dediğimizde işlem sonucu 8 biti taşırıyor değil mi arkadaşlar?
+
+338
+01:02:42,668 --> 01:02:47,528
+Yok taşırmıyor pardon. 8 biti taşırmıyor ama işlem yaptığımızda
+
+339
+01:02:54,099 --> 01:02:57,500
+Şuradan, hemen şuna bir bakarak söyleyeceğim şimdi.
+
+340
+01:03:02,779 --> 01:03:05,440
+Birebir instructionlarımız neredeydi?
+
+341
+01:03:13,588 --> 01:03:15,028
+işleminden bakalım.
+
+342
+01:03:49,331 --> 01:03:50,911
+Buradan subtract işlemine bakalım.
+
+343
+01:03:52,012 --> 01:03:53,891
+En genel anlamda nerede yazılmış?
+
+344
+01:03:56,592 --> 01:03:57,911
+Compare de olabilir.
+
+345
+01:04:02,867 --> 01:04:04,867
+Sotra, tümününün, AV.
+
+346
+01:04:08,916 --> 01:04:09,416
+Sure.
+
+347
+01:04:16,340 --> 01:04:23,780
+Şimdi bakın burada, subtract işleminin, tuz komplement aritmetikte işlem yaptığını görüyoruz.
+
+348
+01:04:23,780 --> 01:04:34,619
+Öyleyse, herhangi bir subtract işlemi için, sayıları mutlaka ve mutlaka, tuz komplement aritmetikte değerlendirmemiz gerektiğini anlamış oluyoruz.
+
+349
+01:04:34,699 --> 01:04:35,340
+Geldik şimdi.
+
+350
+01:04:35,795 --> 01:04:54,455
+yürüttüğümüz işlemi. Yürüttüğümüz işlemde 40 ve 80H var. Tuz komplementte biz bunları çıkartma işlemine tabi tuttuğumuzda bu işlem sonucu ne olacak? Yine 64 ile 128 değerinin toplamına karşılık gelecek.
+
+351
+01:04:58,579 --> 01:05:08,820
+elde ettiğimiz değer 192 gibi bir şey oluyor. Yanlış mı hesapladım? 12, 8, 9, 192 gibi bir değer elde etmiş oluyoruz.
+
+352
+01:05:10,384 --> 01:05:17,543
+AL'den BL'yi çıkartınca bu işlem sonucunun yine tuz komplement aralığa sığıp sığmadığını kontrol ediyoruz.
+
+353
+01:05:17,764 --> 01:05:23,023
+Bu aralık yine tuz komplemente sığdı mı veya işlem sonucunda bir elde oluştu mu diye bakıyoruz.
+
+354
+01:05:23,604 --> 01:05:25,784
+Elde oluştuğu durumla karşılaşmış oluyoruz.
+
+355
+01:05:25,884 --> 01:05:35,284
+Aynı işlemi bakın, aynı işlemi diğer ters yönde yapacak olursak, şu anda hangisindeydik?
+
+356
+01:05:35,731 --> 01:05:40,951
+Bunu yürüttük. Şimdi şu satırdayız. Aynı işlemi ters yönde yapacak olursak ne oluyor bakalım.
+
+357
+01:05:41,851 --> 01:05:47,111
+Bu durumda 80H'dan 40H'ı çıkarttık. 80H değerimiz bizim.
+
+358
+01:05:47,539 --> 01:05:49,320
+hangi değerimiz?
+
+359
+01:05:49,639 --> 01:05:54,039
+Eksi 128. Eksi 128'den 64 değerini de çıkartmış oluyoruz.
+
+360
+01:05:54,039 --> 01:05:56,719
+Bu sefer negatif yönde bir taşma var.
+
+361
+01:05:56,820 --> 01:06:00,300
+İşlem sonucumuz eksi 128'in ötesine taşmış oluyor.
+
+362
+01:06:00,400 --> 01:06:04,079
+Yine overflow bayrağımız bir değerini elde etmiş oluyor.
+
+363
+01:06:04,219 --> 01:06:05,840
+Fakat bakın, burada
+
+364
+01:06:06,612 --> 01:06:13,211
+eksi 128 ile eksi 64'ün toplam olarak da düşünebilirsiniz bunu, subtract işlemini.
+
+365
+01:06:13,672 --> 01:06:20,231
+İki tane negatif sayının işlemi sonucunda overflow olduğu durumda işlem sonucu pozitif gibi görülüyor.
+
+366
+01:06:20,731 --> 01:06:23,192
+Bunları binary olarak yazacak olursak şöyle görelim.
+
+367
+01:06:24,271 --> 01:06:26,352
+Binary değerler üzerinden işlem yapalım.
+
+368
+01:06:32,436 --> 01:06:35,655
+40 kaç değerini topluyoruz? 0, 1, 0, 0.
+
+369
+01:06:39,396 --> 01:06:41,735
+Bu eksi 128'imiz.
+
+370
+01:06:43,295 --> 01:06:44,295
+Şöyle yapalım.
+
+371
+01:06:45,695 --> 01:06:47,096
+Eksi 128.
+
+372
+01:06:47,996 --> 01:06:49,695
+Bu değerimiz bizim 64.
+
+373
+01:06:50,315 --> 01:06:53,916
+Bu 64 olduğuna göre bunun eksi 64'ü nasıl hesaplarız?
+
+374
+01:06:54,416 --> 01:06:56,235
+İlk bir görene kadar olduğu gibi bırak.
+
+375
+01:06:56,235 --> 01:06:59,295
+Daha sonra bire göre tümleyenini alarak gel.
+
+376
+01:07:02,483 --> 01:07:04,224
+Bu değerimizde eksi 64.
+
+377
+01:07:04,644 --> 01:07:09,584
+Şimdi 128, eksi 128 ile eksi 64'ü topladığımızda ne oluyor bakalım?
+
+378
+01:07:12,084 --> 01:07:17,224
+Bunun ile 1, 1, 0, 0, 0, 0, 0, 0 değerlerini toplayacağız.
+
+379
+01:07:17,923 --> 01:07:23,023
+En düşük anlamlı bitten itibaren geldiğimizde 0 değerlerimiz var.
+
+380
+01:07:25,023 --> 01:07:26,584
+Burada bir 0.
+
+381
+01:07:30,324 --> 01:07:32,324
+şurada bir sıfır var.
+
+382
+01:07:34,324 --> 01:07:36,324
+burada bir var.
+
+383
+01:07:36,324 --> 01:07:41,324
+en yüksek anlamlı değerimize de baktığımızda da bunun sıfır olduğunu görüyoruz.
+
+384
+01:07:41,324 --> 01:07:46,324
+diğer tarafa ise bir de bir değeri gelecek ama onu overflowda belirttik.
+
+385
+01:07:46,324 --> 01:07:50,324
+dolayısıyla bakın en yüksek anlamlı bit açısından bakıyoruz şu anda sadece.
+
+386
+01:07:50,639 --> 01:08:06,739
+iki tane negatif sayı topladığımız halde işlem sonucu en yüksek anlamlı bitimiz sıfır olarak oluştu. Bu yine overflow durumunun bir karşılığı olarak belirlenmiş oluyor. Bu overflow için özellikle bunu göstermek istedim.
+
+387
+01:08:07,699 --> 01:08:09,039
+Hocam bir şey sorabilir miyim?
+
+388
+01:08:09,359 --> 01:08:09,639
+Buyurun.
+
+389
+01:08:10,068 --> 01:08:25,448
+Bu belirlediğimiz sayıların sign mı, unsigned mı olduğunu ne zaman karar veriyoruz? Bu sadece compare işlemi için mi öyle olduğuna karar veriyor? Yani işaretli mi işaretsiz mi olduğuna direkt neden bakılıyor? Orayı tam anlamadım.
+
+390
+01:08:26,668 --> 01:08:30,228
+Şöyle şimdi bakın, burada da belirtiyor bakın, subtract komutuna bakın.
+
+391
+01:08:32,271 --> 01:08:45,951
+Tools Komplement Aritmetik kullanarak işlem yapıyor. Tools Komplement Aritmetik'te bu subtract işlemi sayının işaretli veya işaretsiz olup olmadığını neye göre karar veriyormuş?
+
+392
+01:08:46,431 --> 01:08:50,672
+Subtract komutu kullanmak demek Tools Komplement Aritmetik kullanmayı gerektiriyor.
+
+393
+01:08:51,291 --> 01:08:57,351
+Fakat çıkan işlem sonucunun da yine çıkartma işlemi yaptık ya Compare'de çıkartma işlemi yapıyor.
+
+394
+01:08:57,775 --> 01:09:25,216
+elde ettiğimiz sonucun yine işaretli veya işaretsiz sayı olarak değerlendirilme imkanı var. O da bu komutlardan sonra eğer ki ben mesela JMP, EBO gibi bir komut kullanırsam veya JMP, GREATER gibi bir komut kullanırsam bu sayının değerlendirilmesi, işlem sonucunun değerlendirilmesi yine değişiyor. İki durum var. Bunlardan birincisi Compare işlemi, Subtract işlemi yapıyor.
+
+395
+01:09:25,971 --> 01:09:31,971
+Tekrar onu da net olarak görelim şuradan. Yanlış olmasın tekrar. Compare komutumuz.
+
+396
+01:09:33,971 --> 01:09:35,971
+Compare'in ilkinler de...
+
+397
+01:09:42,228 --> 01:10:00,000
+subtract işlemi yaptığını görüyoruz burada. Dolayısıyla Compare komutu sayıları tuz komplement olarak değerlendiriyor. Birinci işaret değerlendirmesi burada. İkinci işaret değerlendirmesi ise işlem sonucuna göre. Yani bayrakları artık belirledik ya işlem sonucuna göre. İşlem sonucunu ben işaret...
+
+398
+01:10:00,000 --> 01:10:04,619
+işaretsiz sayı olarak almak istiyorsam ona göre bir dallanma komutu veriyorum.
+
+399
+01:10:04,719 --> 01:10:13,159
+Koşullu dallanma. Yani buradaki jump above komutu bu işlem sonucunda çıkan bit dizisini işaretsiz sayı olarak değerlendir diyor.
+
+400
+01:10:13,659 --> 01:10:20,399
+Veyahut da ben işlem sonucunu işaretli sayı olarak kullanmak istersem işaretli sayı koşullu dallanma komutları var.
+
+401
+01:10:20,539 --> 01:10:24,760
+Onlardan bir tanesini kullanmam gerekiyor. İki durumda bu işaretsiz sayı değerlendiriyor.
+
+402
+01:10:25,460 --> 01:10:43,460
+Compare işlemi, çıkartma işlemini, TUS Komplement aritmetikte yapıyor. İkincisi, çıkan işlem sonucunu ben yine koşulu dallanma komutuyla birlikte işaretli veya işaretsiz olarak da değerlendirmiş oluyorum. İki durum var yani. Peş peşe gerçekleşecek. Şimdi birinciyi...
+
+403
+01:10:49,619 --> 01:10:51,920
+İki durum da bu şekilde. Başka bir soru var.
+
+404
+01:10:55,923 --> 01:10:59,644
+Hayır, ADD işlemi işaretsiz sayılarda işlem yapıyor.
+
+405
+01:11:00,684 --> 01:11:01,664
+ADD işlemine bakın.
+
+406
+01:11:02,523 --> 01:11:06,123
+Bununla ilgili herhangi bir TUS komplement aritmetik durumu belirtilmemiş.
+
+407
+01:11:06,844 --> 01:11:11,083
+Ama subtract işlemi TUS komplemente göre yapıyor diye özellikle belirtilmiş durumda.
+
+408
+01:11:11,164 --> 01:11:12,164
+Bakın tekrar görelim.
+
+409
+01:11:12,948 --> 01:11:18,628
+şurada TUS komplement aritmetik olarak bunu yaptığını bütün Subtract komutlarında görüyoruz.
+
+410
+01:11:18,628 --> 01:11:21,708
+Subtract with Barov'da da aynı şekilde TUS komplemente göre yapıyor.
+
+411
+01:11:22,167 --> 01:11:24,528
+Ama ADD komutu işaretsiz sayı olarak işlem yapıyor.
+
+412
+01:11:27,188 --> 01:11:30,268
+Tekrar söylüyorum. Compare komutu çıkartma işlemi yapıyor.
+
+413
+01:11:30,408 --> 01:11:32,408
+Bu TUS komplement aritmetikte gerçekleşiyor.
+
+414
+01:11:33,408 --> 01:11:36,148
+Ve çıkan sonucun ne şekilde değerlendiriyor?
+
+415
+01:11:36,268 --> 01:11:40,228
+Bir bit dizisi çıkacak. Bu bit dizisinin bir de bayrakları etkilediği durum var.
+
+416
+01:11:40,851 --> 01:11:57,871
+Sadece bayraklara bakmam yeterli. O çıkan bit dizisini incelememe gerek yok artık. O bit dizisinin işaretli sayımı, işaretsiz sayımı olarak değerlendirilecek kullanıcıdan koşullu dallanma komutuna belirlenmiş oluyor. İşaretsiz sayı kabul eden SAP komutu yok. Hepsi TUS komplement aritmetiğe göre çalışıyor.
+
+417
+01:12:07,283 --> 01:12:10,603
+Dolayısıyla Compare komutunu bu şekilde düşünmemiz gerekiyor.
+
+418
+01:12:11,384 --> 01:12:19,323
+Bir sonraki komut grubumuz arkadaşlar, eğer burayla ilgili soru varsa yine sorarsanız chat ekrandan veya sesli olarak cevaplamaya çalışayım.
+
+419
+01:12:24,212 --> 01:12:29,632
+Bir sonraki komutumuz arkadaşlar çarpma, multiplication, bu bakın unsigned multiplication.
+
+420
+01:12:30,632 --> 01:12:32,632
+Bu işaretsiz sayı çarpması yapıyor.
+
+421
+01:12:33,752 --> 01:12:36,192
+MUL komutundan sonra bir tane parametre alıyor.
+
+422
+01:12:36,192 --> 01:12:40,212
+Fakat bunun iki tane daha gizli operandı var.
+
+423
+01:12:40,392 --> 01:12:43,032
+Bunlar AX ve DX yazmaçları.
+
+424
+01:12:44,655 --> 01:12:52,576
+vermiş olduğumuz bit genişliğine göre değişiyor. Bunu ne şekilde ifade edebiliriz? Burada yok, şurada yazarak yapacağım bunu.
+
+425
+01:12:54,336 --> 01:13:07,355
+Şimdi, biz MUL'dan sonra bir SRC parametresi veriyoruz. Eğer ki SRC parametresi 8 bitlik bir değerse, bu durumda arkadaşlar, şurada yazan şeyin aynısını yazacakmışım, onu tekrar yazmaya gerek yok o zaman.
+
+426
+01:13:08,115 --> 01:13:19,355
+Eğer ki vermiş olduğumuz source parametresi 8 bitlik bir değerse arkadaşlar, bu durumda gizli operant olarak AL'yi kullanıyor ve AX'i kullanıyor.
+
+427
+01:13:20,155 --> 01:13:24,515
+AL'deki değer neyse onu source ile çarpıp işlem sonucunu AX'e atıyor.
+
+428
+01:13:25,675 --> 01:13:31,796
+Veyahut da 16 bitlik bir source vermişsem, bu sefer gizli operantlar AX ve DX oluyor.
+
+429
+01:13:32,500 --> 01:13:37,840
+AX'de o andaki değer neyse onu source ile çarpıp işlem sonucumuz 32 biti sağabilir.
+
+430
+01:13:38,399 --> 01:13:41,100
+32 bitlik sanal bir register oluşturuyor.
+
+431
+01:13:41,200 --> 01:13:43,720
+DX yüksek anlamlı 16 biti içeriyor.
+
+432
+01:13:44,220 --> 01:13:46,260
+AX düşük anlamlı 16 biti içeriyor.
+
+433
+01:13:46,380 --> 01:13:50,680
+Bunlardan 32 bitlik bir yazmaç değeri belirlemiş oluyor.
+
+434
+01:13:50,860 --> 01:13:53,540
+Sanki 32 bitlik bir yazmaç elinde varmış gibi bunu kullanıyor.
+
+435
+01:13:54,068 --> 01:13:59,568
+iki farklı şekilde kullanılabilir bir komut. Register ile birlikte veyahut da memory ile birlikte kullanılabilir.
+
+436
+01:14:00,167 --> 01:14:05,528
+Aldığımız memory adresinin Word mi, Byte mi olduğunu mutlaka pointer ile belirtmemiz gerekiyor.
+
+437
+01:14:06,407 --> 01:14:07,868
+Örnek üzerinden inceleyelim.
+
+438
+01:14:12,627 --> 01:14:13,627
+met selah.
+
+439
+01:14:22,163 --> 01:14:24,663
+Böyle bir değer atmış olalım AX'e.
+
+440
+01:14:31,220 --> 01:14:33,220
+bx'de de böyle bir değerimiz olsun.
+
+441
+01:14:35,000 --> 01:14:37,100
+Hatta şöyle olursa daha iyi olacak.
+
+442
+01:14:41,363 --> 01:15:04,384
+BX'de de böyle bir değerimiz olsun. Ben şimdi bu işlem sonucunda eğer MUL, BL dersem ne olacak? Bakın. MUL, BL dersem arkadaşlar, yapılacak işlem. Bir kere vermiş olduğum sor, 8 bitlik bir değer olduğu için, yazmaç değeri olduğu için, 8 bitlik çarpma yapacak. 8 bitlik işaretsiz çarpma. İşlem sonucu 16 bite.
+
+443
+01:15:08,020 --> 01:15:11,400
+1, 2, 3, 4. AX'e vermiş olduğum değer şu.
+
+444
+01:15:13,480 --> 01:15:17,320
+Doğru, haklısın. En baştaki sıfırı silebiliriz.
+
+445
+01:15:19,800 --> 01:15:21,760
+Bu sayede 16 bite sığdı.
+
+446
+01:15:22,360 --> 01:15:27,760
+Şimdi MUL, BL dediğimiz zaman işlem sonucu 8, 16 bitlik bir sonuç üretebilir en fazla.
+
+447
+01:15:27,760 --> 01:15:31,340
+Dolayısıyla AX'e değer atanacak. AX'e atanacak değer nedir?
+
+448
+01:15:32,040 --> 01:15:35,159
+AL'deki o andaki değer neyse bunu
+
+449
+01:15:35,551 --> 01:16:01,671
+vermiş olduğumuz parametre, o da ne? BL değeriyle çarparak verecek. Şimdi bu aşamada AL'deki değerimiz kaç bizim? Şöyle aşağı gelerek ilerleyelim. Şu anda AL'deki değerimiz ne? 0FH. Bunu neyle çarpacak? 10H değeriyle çarpacak. İşlem sonucu ne çıkacak bu durumda? İşlem sonucumuz?
+
+450
+01:16:02,644 --> 01:16:08,463
+f0, h olarak yine 8 biter bir değer olacak ama
+
+451
+01:16:08,463 --> 01:16:12,804
+ax'daki yüksek anlamlı 0, f'i bozacak.
+
+452
+01:16:13,004 --> 01:16:14,844
+Tamam mı? Bunu şöyle görelim. Bakın.
+
+453
+01:16:18,123 --> 01:16:19,584
+Şöyle değerleri de görebilelim.
+
+454
+01:16:26,195 --> 01:16:52,136
+A'ya değer yükledik, B'ye değer yükledik. Çarpma işlemi sonucunda işlem aslında bakın 8 bite sığıyor ama işlem sonucu 16 bitlik olabileceği için AX'in tamamını bozuyor. İşlem sonucunu yaptığımız zaman bakın AH kısmı da bozuldu. Buna mutlaka dikkat edin arkadaşlar. Bu sınavlarda, ödevlerde gözden kaçan bir durum olarak ortaya çıkıyor. Onun için özellikle bunu bahsetmek istedim.
+
+455
+01:16:52,692 --> 01:17:03,891
+Yani işlem sonucu 8 biti sığıyor olsa da 8 bitlik çarpım sonucu AX'e saklanır. Tamam mı? Peki şimdi burada bir başka örnek üzerinden gidelim.
+
+456
+01:17:10,420 --> 01:17:12,059
+DX'de de bir değerimiz var.
+
+457
+01:17:13,520 --> 01:17:17,559
+Ve ben bu çarpma işlemini BX şeklinde değiştirdim.
+
+458
+01:17:17,680 --> 01:17:21,319
+Bu durumda 16 bitlik bir çarpma yapıyorum.
+
+459
+01:17:21,399 --> 01:17:24,479
+16 bitlik çarpma yaptığımız için arkadaşlar şunu kapatabiliriz.
+
+460
+01:17:24,559 --> 01:17:28,340
+16 bitlik bir çarpma yaptığımız için işlem sonucu 32 bite taşabilir.
+
+461
+01:17:28,500 --> 01:17:31,960
+Bu durumda benim değerleri saklayacağım yazmaçlar DX ve AX olur.
+
+462
+01:17:32,692 --> 01:17:57,992
+Burada çarpma işlemi AX varsayılan bir gizli operant ve vermiş olduğum source değeri. O da BX. Bu ikisinin çarpımıyla gerçekleşecek. Şu anda AX'de ne var? 0F, 0FH değeri var. BX'de de 10H, 10H değeri var. Bu ikisini çarptığımız zaman işlem sonucu nasıl oluşuyor? Bakalım. Birincide F0 olacak.
+
+463
+01:18:00,159 --> 01:18:03,659
+Ondan sonra, bir birim kaydır.
+
+464
+01:18:04,860 --> 01:18:09,260
+F, 0, F, F, F, F, F, F gibi bir değer olacak.
+
+465
+01:18:10,159 --> 01:18:11,659
+Yanlış yapmadıysam.
+
+466
+01:18:12,360 --> 01:18:14,659
+F, F, F, F gibi bir değer olması lazım.
+
+467
+01:18:14,659 --> 01:18:16,659
+Şimdi değerlerimizi yükledik.
+
+468
+01:18:16,948 --> 01:18:26,347
+Şimdi dx'de de değer var. Bunun niçin özellikle dx'e değer yükledim? Multiplication işleminden sonra dx'in değerinin de bozulduğunu göstermek için bu değeri yükledim.
+
+469
+01:18:26,788 --> 01:18:37,768
+İşlem sonucumuzu yaptık. Çarpmayı yanlış yapmışım. İşlem sonucunda çıkan değerimiz ne oldu bakalım?
+
+470
+01:18:39,188 --> 01:18:40,868
+Çıkan değerimiz şöyle bir şey oldu.
+
+471
+01:18:44,148 --> 01:18:45,507
+Şuraya yazabiliyoruz.
+
+472
+01:18:47,368 --> 01:18:57,148
+Çıkan değerimiz 00F1, geri kalanı da AX'de E0F0H değeri oldu.
+
+473
+01:18:57,927 --> 01:19:02,108
+Çarpma işlemimizin sonucu burası olmuş oldu.
+
+474
+01:19:02,188 --> 01:19:03,708
+Bunu bir doğrulamaya çalışalım.
+
+475
+01:19:07,859 --> 01:19:33,180
+Görelim, hexadecimal olarak, F0F çarpı işlem sonucunu gördük. Bakın, şurada yüksek anlamlı 16 bit, ilk iki basamağı 0, 0 olmak üzere 0, 0, F1 değeri, DX'de belirdi. Geri kalan kısmı ise AX'de belirdi. DX'e yazmış olduğum 1, 2, 3, 4, H değeri override oldu, üzerine yazıldı.
+
+476
+01:19:35,891 --> 01:19:51,891
+Vermiş olduğum AX değeri de bozuldu. Çünkü işlem sonucu yine oraya saklanıyor. Sadece BX değeri bozulmadı. Diğerlerinin hepsi uygun işleme göre değiştirilmiş oldu. Tamam mı? Bu işlem Multi-Cash'in işlemi bu şekilde çalışıyor.
+
+477
+01:19:52,891 --> 01:20:00,000
+Vermiş olduğum parametrenin boyutu çok önemli. Eğer 8 bitlik bir parametre vermişsem işlem sonucu AX'de saklanıyor.
+
+478
+01:20:00,000 --> 01:20:25,159
+çarpanlardan birisi AL oluyor. Dolayısıyla AL'deki değer bozulacaktır. Yine 16 bitlik işlem yapıyorsam, çarpma işlemi sonucu, AX'deki değer ve DX'deki değer bozulacaktır. Çünkü çarpma işlemi bu ikisine değer yazıyor. Bir de IMUL komutu var. IMUL komutu arkadaşlar, Integer Signed Multiplication, yani işaretli sayılar üzerinde işlem yapıyor.
+
+479
+01:20:25,631 --> 01:20:36,631
+Ben burada artık eksi 2 ile 4'ü çarpabilirim. Tamam mı? Eksi 2 ile 4'ü çarpabilirim. Aynı koşullar burası için de geçerli. Vermiş olduğum source değeri 8 bitikse...
+
+480
+01:20:37,184 --> 01:20:43,164
+AL'deki değerle vermiş olduğum parametre operant source değerini çarpıp işlem sonucunu AX'e atıyor.
+
+481
+01:20:43,824 --> 01:20:51,644
+Eğer vermiş olduğum source değeri 16 bitlikse ne olursa olsun kaç bite sığıyorsa sığsın DX ve AX'e çarpım sonucunu atıyor.
+
+482
+01:20:51,644 --> 01:20:55,184
+Dolayısıyla AX'deki gizli operant değerini yine bu da bozmuş oluyor.
+
+483
+01:20:55,636 --> 01:20:59,476
+Sonuç işaretli sayı, işlem işaretli sayı olarak gerçekleştiriliyor.
+
+484
+01:20:59,976 --> 01:21:02,716
+Register'dan veya memoriden parametre alabilir.
+
+485
+01:21:03,236 --> 01:21:06,976
+Memoriden işlem yapıyorsam mutlaka pointer gerekli olmuş oluyor.
+
+486
+01:21:07,096 --> 01:21:10,536
+Şimdi bunu yine bir örnekle zenginleştirmeye çalışalım.
+
+487
+01:21:12,176 --> 01:21:16,775
+Mesela arkadaşlar hatırlıyorsunuz, eksi bir değeri ff olarak ifade edilebiliyordu.
+
+488
+01:21:21,268 --> 01:21:35,788
+AL, 0FFH dersem ve MOV, BL, 4 dersem, bu durumda eğer ben MUL işlemi yaparsam, MUL, BL işlemi yaparsam, burada beklediğimiz nedir?
+
+489
+01:21:36,368 --> 01:21:46,528
+AX'e FFH değeriyle 4 değerini çarparak işlem sonucunu atamasa. Bunu bekliyoruz. Bu işlemi yürütelim.
+
+490
+01:21:49,460 --> 01:21:55,420
+Bak, ff değerini yükledim, 4 değerini yükledim. Çarpma işlemi sonucunda 0,3, fc gibi bir değer oluştu.
+
+491
+01:21:59,315 --> 01:22:26,036
+Onu da tekrar görelim. Hexadesimal olarak FF çarpı 4, 3FC değeri yani 1020 değerini oluşturmuş olduk. Yani 8 bite sığmayan bir değer. İşlem sonucu 16 bite sığdı ve bu işlem sonucumuz 1020 olarak bir işaretsiz sayı olarak değerlendiriliyor. Eşittir 1020 decimal değerimiz. Tamam mı? Bu. Peki aynı işlemi ben bunu aşağı hatta sil edebiliriz.
+
+492
+01:22:26,676 --> 01:22:47,636
+Aynı işlemi ben eğer ki I MUL komutuyla çalıştırırsam ne olacak? I MUL BL dersem. Bu durumda arkadaşlar yine AX'e bir değer atayacağız ama atayacağımız değer yine AL çarpı BL olacak ama AL'deki değerimiz artık işaretli sayı. Hem AL'deki hem de BL'deki değerimiz işaretli sayı olarak değerlendirilecek.
+
+493
+01:22:56,180 --> 01:23:00,640
+4 değerini çarparak, eksi 4 sonucu elde edeceğim. Eksi 4 sonucunun da,
+
+494
+01:23:01,600 --> 01:23:03,659
+HEX karşılığı nasıl oluşur?
+
+495
+01:23:04,980 --> 01:23:05,680
+Onu bulalım.
+
+496
+01:23:06,760 --> 01:23:07,860
+Eksi 4 değeri için,
+
+497
+01:23:08,380 --> 01:23:09,900
+F, E,
+
+498
+01:23:10,500 --> 01:23:11,700
+D,
+
+499
+01:23:12,079 --> 01:23:15,040
+C. F, C olarak oluşması gerekiyor.
+
+500
+01:23:16,659 --> 01:23:17,659
+Yanlış yapmadıysak.
+
+501
+01:23:17,659 --> 01:23:20,860
+Aynı komutu, bu şekilde elde edelim.
+
+502
+01:23:22,228 --> 01:23:30,487
+Yine attığımız değerler aynı. FF değerini attık, 4 değerini attık. Daha sonra bunları işaretli sayı olarak çarpıyoruz.
+
+503
+01:23:31,228 --> 01:23:40,768
+Elde ettiğimiz değer FFFC oldu. Bakın AX'deki değer FFFC oldu. Bizim bulduğumuz değer FC idi. Bu ikisi arasındaki ilişki nedir söyleyebilir misiniz?
+
+504
+01:23:43,587 --> 01:23:48,108
+8 bit olarak yazdığımda, eksi 4 değeri FC olarak yazılıyor ama
+
+505
+01:23:48,756 --> 01:23:51,076
+Burada bulunan değer FFC oldu.
+
+506
+01:23:51,496 --> 01:23:53,736
+AX'deki yazılan değer FFC oldu.
+
+507
+01:23:53,796 --> 01:23:54,576
+Yani şu olmadı.
+
+508
+01:23:56,935 --> 01:23:57,996
+Şundan yazayım.
+
+509
+01:23:57,996 --> 01:23:58,916
+Buradan yazalım.
+
+510
+01:23:59,015 --> 01:24:01,316
+00FFC olmadı.
+
+511
+01:24:03,876 --> 01:24:05,436
+İşlem sonucumuz
+
+512
+01:24:05,436 --> 01:24:08,655
+FFCH oldu.
+
+513
+01:24:13,332 --> 01:24:15,276
+Neden bu şekilde oldu?
+
+514
+01:24:18,996 --> 01:24:41,975
+Evet. Şimdi 0FFC olmuş olsaydı işlem sonucumuz arkadaşlar, bu işlem sonucu en yüksek 16 bitliye saklıyor ya işlem sonucunu. En yüksek anlamlı biti 0 olduğundan dolayı sanki pozitif bir değer üretmiş gibi sanal olarak bunu anlamış oluyoruz. Burada aslında 16 bit TUS komplement olarak eksi değeri nasıl ilerletiriz onu görmüş olduk.
+
+515
+01:24:42,323 --> 01:25:09,583
+8 bitlik sayımız şu ya, bu sayının en yüksek anlamlı bitine 1111 boşluk 1100 binder olarak yazdım bu sayı. Eğer ki ben bu sayıyı işaretli sayı olarak 16 bit'e tamamlamak istersem, bunun işaret bitini alıp 16 bit'e tamamlıyorum. İşaret bitin 1 olduğuna göre 16 bit'e tamamlarken bu işaret bitini tekrarlıyorum. Dolayısıyla sayı buna dönüşüyor. Negatif olarak yazmak istediğimde. Bu da F.
+
+516
+01:25:09,935 --> 01:25:34,795
+F, F, C olarak sonucu üretmiş oluyor. Tamam mı? Buna da dikkat etmiş olalım. Aynı işlemi kalkulatorda görebilir miyiz? Aynı işlemi kalkulatorda görebiliriz arkadaşlar. Bakın, eğer ki ben işlemimi hexadesimal olarak ama byte tipinde yaparsam, byte tipinde yapacak olursam, neydi bizim değerlerimiz?
+
+517
+01:25:35,923 --> 01:25:38,443
+1, 1 yazamıyorduk pardon.
+
+518
+01:25:39,443 --> 01:25:40,623
+Byte olarak geldik.
+
+519
+01:25:41,884 --> 01:25:44,884
+FF çarpı 4 dediğimiz zaman
+
+520
+01:25:44,884 --> 01:25:48,604
+Neyi yanlış yaptık?
+
+521
+01:25:50,604 --> 01:25:52,543
+FF çarpı 4
+
+522
+01:25:53,684 --> 01:26:07,083
+ff çarpı 4 dediğimizde bakın desimal karşılığı eksi 4 ama bir byte'a sığacak şekilde yaptığımız zaman bu sonuç fc olarak değerlendiriliyor. En yüksek biti 1. Ama ben bu işlemi word olarak yaparsam
+
+523
+01:26:07,391 --> 01:26:24,511
+İşaret bitini 16 bite tamamlayacak şekilde sola doğru genişletti. İşaret bitim FC'de 1 olduğu için diğer bitlere de bunu yaydı. Dolayısıyla Word olarak baktığımda FFFC olarak bunu görmüş oluyoruz. Bu da bu şekilde.
+
+524
+01:26:25,971 --> 01:26:32,692
+Peki, devam edelim. Bir de DIV komutumuz var arkadaşlar. DIV işaretsiz sayılarda bölme yapıyor.
+
+525
+01:26:33,152 --> 01:26:35,152
+İşaretsiz sayılarda bölme yapıyor.
+
+526
+01:26:37,032 --> 01:26:39,291
+Source değeri, bir tane parametre alıyor.
+
+527
+01:26:40,291 --> 01:26:43,631
+İşlem sonucunda iki değer üretilebilir. Bir, kalan.
+
+528
+01:26:44,231 --> 01:26:47,532
+İki, bölüm sonucu. Yani şurada göreceğiniz üzere, bakın.
+
+529
+01:26:48,692 --> 01:26:49,231
+Kalan.
+
+530
+01:26:50,068 --> 01:27:06,708
+ve bölüm sonucu üretilebilir. Bu eğer 8 bitlik bir operantla işlem yapıyorsam, işlem sonuçları her ikisi de 8 bite sığabilir. Kalanı da bölümü de. Dolayısıyla 8 bitlik işlem yapıyorsam,
+
+531
+01:27:07,039 --> 01:27:21,039
+gizli operant olarak AX'i kullanıp bunu vermiş olduğum parametreye bölüyor, integer bölmesi yapıyor. Bölüm sonucunu AL'ye işaretsiz sayı bölmesi yaparak AL'ye atıyor. Yine AX'i alıp
+
+532
+01:27:21,876 --> 01:27:36,235
+Sorsa bölümünden kalanını, yani modülünü aldığı vakitte bunu da AH register'ına atıyor. Kalan değeri AH'da, bölüm değeri AL'de üretilmiş oluyor. 8 bitlik bölmede, işaret sayı bölmesinde, NIV komutunda yani.
+
+533
+01:27:37,516 --> 01:27:48,475
+Eğer ki 16 bitlik bir işlem yapıyorsam, bu durumda aslında bölebileceğim sayı için 32 bitlik bir sanal yazmaç değeri oluşturuyor.
+
+534
+01:27:49,011 --> 01:27:59,671
+Dolayısıyla ben bu bölme işlemini çalıştırmadan önce mutlaka DX ve AX'de istediğim değerleri üretmem lazım, yazmış olmam lazım ki bu çalışabilsin.
+
+535
+01:28:01,031 --> 01:28:09,571
+Oluşturulan sanal 32 bitlik yazmacı vermiş olduğumuz 16 bitlik parametreye operanda bölüp işlem sonucunu AX yazmacına atıyor.
+
+536
+01:28:10,452 --> 01:28:30,872
+Mantıklı mı? Mantıklı. Çünkü 32 bitlik bir değeri 16 bitlik bir değere böldüğümde benim ihtiyaç duyduğum yazmaç genişliği 16 bit olarak ortaya çıkmış oluyor. Aynı şey kalan için de geçerli. Oluşturmuş olunan 32 bitlik sanal değer için DX ve AX yazmaçlarından oluşan gösterimi bu şekilde. Anlamı ne bunun?
+
+537
+01:28:31,380 --> 01:28:38,340
+32 bitlik bir sayı tanımladım. Bu sayının yüksek anlamlı 16 biti DX'de, düşük anlamlı 16 biti AX'de olmak üzere.
+
+538
+01:28:39,019 --> 01:28:44,579
+Bunun sorsa bölümünden kalanı, modülü yani, DX yazmacına atanıyor.
+
+539
+01:28:44,939 --> 01:28:50,559
+Demek ki eğer 16 bitlik bir işlem yapıyorsam, bölüm AX'de, kalan DX'de.
+
+540
+01:28:51,019 --> 01:28:56,659
+8 bitlik bir bölüm yapıyorsam, bölüm AL'de, kalan AH'da oluşmuş oluyor.
+
+541
+01:28:57,460 --> 01:29:03,560
+Bu komutun demek ki iki tane gizli operanda var. Geçen hafta konuştuğumuzda bunun üzerinde de durmuştuk.
+
+542
+01:29:04,960 --> 01:29:09,420
+8086'da üç operandlı hiçbir komut yok. Açıktan üç operandlı hiçbir komut yok.
+
+543
+01:29:09,820 --> 01:29:22,159
+Fakat gizli operanda sahip olan bazı komutlar verilen operandla birlikte, açık olarak verilen operandla birlikte toplam üç farklı register'a değer yazıp okuyabildiğini söylemiştik.
+
+544
+01:29:22,240 --> 01:29:23,700
+Bu ona örneklerden birisi.
+
+545
+01:29:24,467 --> 01:29:28,868
+parametre olarak register verebiliyoruz veya bir memory bölgesi verebiliyoruz.
+
+546
+01:29:29,408 --> 01:29:36,127
+Memory bölgesi verdiğimizde mutlaka pointer kelimesiyle bunun byte mı, word mı olduğunu belirtmemiz gerekiyor.
+
+547
+01:29:37,648 --> 01:29:39,587
+Şimdi buna ilişkin örnek bakmaya çalışalım.
+
+548
+01:29:53,300 --> 01:29:54,060
+Mesela
+
+549
+01:29:54,060 --> 01:29:57,619
+yapacağımız işlem neydi?
+
+550
+01:30:02,771 --> 01:30:07,991
+Önce 8 bitlik bir işlem yapmak istiyorsak, bunun için örneğin AX'e bir değer yükledik.
+
+551
+01:30:08,611 --> 01:30:12,151
+Bunu BL'ye böleceğiz. Hatta bölme işlemini şöyle de tanımlayalım.
+
+552
+01:30:14,291 --> 01:30:16,751
+Bu iki değeri birbirine bölmek istiyoruz.
+
+553
+01:30:17,311 --> 01:30:21,451
+8 bitlik bir bölme yapacağım ve işaretçi sayı olarak bunu gerçekleştirmek istiyorum.
+
+554
+01:30:22,251 --> 01:30:24,011
+Bu komutu çalıştırdığımızda arkadaşlar,
+
+555
+01:30:28,051 --> 01:30:29,231
+Başına sıfır yazmıyor.
+
+556
+01:30:30,971 --> 01:30:34,371
+Bu komutu çalıştırdığımızda, şöyle biraz kaydıralım.
+
+557
+01:30:35,951 --> 01:30:40,631
+Initial değerlerimizi yükledik. Daha sonra bölme işlemini gerçekleştireceğiz. Şurada flaglere de bir bakalım.
+
+558
+01:30:41,791 --> 01:30:44,951
+Bölme işlemini gerçekleştirdiğimizde beklediğimiz değer nedir?
+
+559
+01:30:47,131 --> 01:30:48,351
+Bölüm işlemi sonucunda.
+
+560
+01:30:50,951 --> 01:30:52,311
+Elle yapsak bunu ne yaparız?
+
+561
+01:30:52,916 --> 01:30:57,096
+İşte F0, F0, H bölü, F0, H yapıyoruz.
+
+562
+01:30:58,176 --> 01:30:59,695
+Birinci F0'dan bir kere var.
+
+563
+01:30:59,976 --> 01:31:00,996
+F0 çıkarttım.
+
+564
+01:31:01,136 --> 01:31:02,155
+Bir tane 0 geldi.
+
+565
+01:31:02,636 --> 01:31:03,876
+Birinin yanına 0 koydum.
+
+566
+01:31:06,636 --> 01:31:08,355
+Bir daha F0 gelecek.
+
+567
+01:31:09,336 --> 01:31:12,296
+Dolayısıyla elde edeceğimiz sonuç, şuradan da görelim bakın.
+
+568
+01:31:15,028 --> 01:31:27,028
+Hex olarak, F0, F0, bölü, F0 değeri, bölme işlemi sonucunda, 101H değerini elde ediyoruz. Değil mi? 101H değerini elde ediyoruz.
+
+569
+01:31:27,828 --> 01:31:30,108
+Yani elle de yapacak olsak, şöyle göstereyim.
+
+570
+01:31:34,612 --> 01:31:36,912
+Yanlış tuğla almışız da.
+
+571
+01:31:43,028 --> 01:31:56,348
+bir kere var işte F0 çıkart. F'de F0 yok. Bunu da indir bir kere var. F0 çıkarttın 0 yani 101 gibi bir değer oluşacak değil mi?
+
+572
+01:31:56,348 --> 01:32:04,028
+Buraya kadar tamam herhalde değil mi? Burada bir sıkıntı yok gibi görünüyor. Şimdi işlemimizi yapalım.
+
+573
+01:32:09,268 --> 01:32:24,927
+ALD saklanması gerekiyor. Kalan sonucunda AH'da saklanması gerekiyor değil mi? Biz bu işlemden kalan olmadığını biliyoruz. AH'da 0 olması lazım. ALD'de bölüm sonucu olacak. Yani 101H olacak değil mi? Böyle mi çalışacak?
+
+574
+01:32:31,123 --> 01:32:33,724
+Komutun çalıştırılmasında bir sıkıntı var mı sizce?
+
+575
+01:32:34,724 --> 01:32:36,224
+Çalıştıralım bakalım.
+
+576
+01:32:39,507 --> 01:33:01,407
+değer yükledik. Ne oldu? Bu değer bir yerlere gitti. Reload yapalım. Değer yükledik, değer yükledik. Bölme işlemini yaptık. Değişik bir yere gidiyor. Nereye gidiyor acaba? Ne oldu? Garip bir şeyler oldu. Ne olmuş olabilir? Evet. Bakın burada şu flag'lerden de kontrol edebiliriz. Bakın.
+
+577
+01:33:02,804 --> 01:33:16,703
+değerleri yükledim. F0, F0'a, AX'e yükledim. B, L'ye de F0'a yükledim. Bölme işlemini yaptığım zaman işlem sonucunda bir overflow üretiliyor arkadaşlar. İşlem sonucu şeye sığmıyor. Nedir onun adı?
+
+578
+01:33:17,140 --> 01:33:31,400
+8 bite sığmıyor. Dolayısıyla buradan, bu gittiğimiz yer ilgili overflowla ilgili kısım, overflowla ilgili, bayrak kısım, overflowla ilgili işletim sistemin yapacağı işlemi kesme programına gittik.
+
+579
+01:33:31,764 --> 01:33:58,444
+Fakat sıkıntının nereden çıktığını tekrar söylemiş olalım. İşlem sonucu 8 bite sığmadığı için, bölüm sonucu 8 bite sığmadığı için böyle bir durumla karşılaşmış olduk. Bunun yerine mesela B0 gibi bir şey çalıştırmış olsaydık, çalışan bir durumu görelim. Bu az önceki örnek tamam değil mi herkes için? F0, F0'ı F0'a böldüğümüzde 101H çıkıyor. 101H değeri de 8 bite sığmıyor.
+
+580
+01:33:58,880 --> 01:34:11,680
+Ben burada div, BL dediğim zaman 8 bitlik bir bölme yapıyorum. Bölüm sonucunu sığmıyor işte yani 8 bite sığması lazım ve sığmıyor. Sığdırmak zorunda değiliz.
+
+581
+01:34:12,000 --> 01:34:36,379
+sığmadığını bilerek ona göre bu işlem sonucu hatalıdır şeklinde bir aksiyon alacağız. Ama onu daha sonraki haftalarda alacağız. Şu anda sığmadığını bilmemiz yeterli. Sığdırmak zorunda değiliz yani. Zaten mikro işlemci bu işi yapıyor. O da sığdıramadığı için bir sıkıntı yok. Ama sığmadığını bilmemiz gerekiyor. Böyle bir işlem yapacak olursak şimdi onu geçtik. B0, F0'ı F0'a bölüyoruz.
+
+582
+01:34:36,851 --> 01:34:43,752
+Buradaki işlem sonucumuzu yürüttüğümüzde initial değerleri yükledik. Bölme iş sonucunu gerçekleştirdik. Bakın burada
+
+583
+01:34:47,315 --> 01:35:06,256
+AL'deki değerimiz BC, AH'daki değerimiz B0. Şimdi bunu da tekrar kalkülatordan görelim. Hexadesimal olarak B0, F0 değerimizi F0'a bölelim. Eşittir. İşlem sonucu BC çıktı.
+
+584
+01:35:14,131 --> 01:35:18,311
+F0 diyelim, eşittir, bu çıktı, B0, 4, 0.
+
+585
+01:35:18,963 --> 01:35:32,304
+Bunu da B0, F0'dan çıkarttığımızda kalan yine B0 oluyor. Demek ki kalan değerimiz de B0 değeri olarak üretiliyor. O da AH'a yazılmış. Standart bir bölme işlemini bu şekilde örneklemiş oluyoruz.
+
+586
+01:35:32,824 --> 01:35:43,184
+Tekrar dikkatinizi çekmek istiyorum. Bazı durumlarda gördüğünüz örnekteki gibi işlem sonucu 8 bitlik işlemde sığmayabilir. 8 bite sığmayabilir. Buna dikkat ediyoruz.
+
+587
+01:35:46,963 --> 01:35:53,564
+100 haşın karesini almak istiyorum. 100 haşın karesini. Bunu nasıl yaparım? Sorumuz şu.
+
+588
+01:36:06,579 --> 01:36:10,000
+Şimdi bu Multiplication ile ilgili bir örnek ama
+
+589
+01:36:10,000 --> 01:36:15,079
+100H'ın karesini nasıl alırız?
+
+590
+01:36:19,252 --> 01:36:21,811
+kaç bitlik bir çarpma işlemi yapmamız lazım.
+
+591
+01:36:34,323 --> 01:36:54,323
+Evet, kesinlikle bu şekilde yapmamız yeterli. Görelim. Neden AL'ye 100H demedik? Çünkü 100H değerimiz 8 bitten daha fazla yer kaplıyor. Dolayısıyla AL'ye sığmaz. Dolayısıyla yapacağımız işlem...
+
+592
+01:36:56,435 --> 01:36:58,375
+16 bitlik çarpma olması lazım.
+
+593
+01:36:59,035 --> 01:37:03,835
+Ve burada da MUL AX dediğimizde, şimdi çarpma işleminin sonucunu kalkülatordan da görelim.
+
+594
+01:37:15,475 --> 01:37:17,635
+doğal olarak böyle bir sonuç gelmesi lazım.
+
+595
+01:37:21,268 --> 01:37:48,168
+İşlem sonucumuz nerede saklı? İşlem sonucumuz arkadaşlar DX ve AX yazmaçında. Yani bu işlem sonucumuz nerede oluyordu? DX ve AX 32 bitlik yazmaç değerinde oluyordu. Buradaki değerlerimiz 00, 01 ve devamında da 00, 00, H şeklinde bir değer. 100 H'ın karesi 100, 2 tane 0 ve 2 tane 0 şeklinde belirlenmiş oluyor.
+
+596
+01:37:48,724 --> 01:38:11,084
+Böyle bir yaklaşım sonucu elde edebiliyoruz. Bir de şuna bakalım. 16 bitlik bir bölme işlemi yapalım. Bu az önceki örnekti. 16 bitlik bir bölme işlemi yapabilmek için mutlaka DX ve AX yazılmacında uygun değerleri oluşturmamız gerekiyor. Burada az önceki üretmiş olduğumuz
+
+597
+01:38:12,307 --> 01:38:18,867
+10.000 haş, okuması bu şekilde olmazdı, 10.000 haş değerinin 100 haşa bölünmesini üretelim.
+
+598
+01:38:18,867 --> 01:38:22,907
+Yani yapmak istediğimiz değer şu olsun.
+
+599
+01:38:28,819 --> 01:38:34,079
+Bu değeri hesaplamak istiyoruz. Bu değeri hesaplayabilmek için SM'de de ne yapmamız lazım?
+
+600
+01:38:35,019 --> 01:38:42,479
+Öncelikli olarak bu i divi bitirelim ondan sonra ara vereceğim. Biraz sonra da i divi var ondan sonra vereceğim.
+
+601
+01:38:43,879 --> 01:38:53,879
+Şimdi 10.000 haş bölü 100 haş yapacağım. Bunun için elimizdeki sayıyı 10.000 haşı yüksek anlamlı ve düşük anlamlı kısımlar olarak ayırmamız lazım.
+
+602
+01:38:54,515 --> 01:39:04,955
+düşük anlamlı 16 bitini alıp AX'e atacağım. Bu AX, 1, 2, 3, 4, H. Şimdi bu noktada küçük bir şeye bakmamız lazım.
+
+603
+01:39:07,435 --> 01:39:09,475
+Şimdi MOV komutu nerede?
+
+604
+01:39:16,532 --> 01:39:21,931
+Bakın arkadaşlar, MOV, IMMEDIATE arıyorum şu anda. Nerede onlar?
+
+605
+01:39:36,756 --> 01:39:45,616
+Bakın, şuradaki komuta bakın. MOV, bir yazmaca, 16 bitlik sabit bir değer atadığımız durum. Yani MOV, AX, 0'a karşılık gelen durum.
+
+606
+01:39:46,496 --> 01:39:51,596
+4 clock cycle sürüyormuş. Aklımızda tutalım. Bir de şuna bakalım.
+
+607
+01:39:57,043 --> 01:39:58,283
+XOR'umuz nerede?
+
+608
+01:40:09,492 --> 01:40:11,811
+bir saniye hemen buluyorum onu da.
+
+609
+01:40:15,347 --> 01:40:16,587
+x86
+
+610
+01:40:21,076 --> 01:40:25,195
+Registerler üzerinden x-order'ı arıyorum şu anda. Bir saniye hemen bulacağım.
+
+611
+01:40:32,243 --> 01:40:33,923
+XOR, bu da değil.
+
+612
+01:40:35,363 --> 01:40:36,663
+Bir sonrakine bakıyorum.
+
+613
+01:40:39,663 --> 01:40:40,583
+Buldum.
+
+614
+01:40:50,452 --> 01:41:00,172
+Şu duruma bakın, bakın, xor, 16 bitlik yazmaç ve 16 bitlik yazmaç. Bu 3 clock cycle sürüyor. Tamam mı?
+
+615
+01:41:00,452 --> 01:41:14,412
+Az önce neye bakmıştık? MOV, AX, 00, 00, 00, haşa baktık. Bir de xor, 16 bitlik yazmaç, 16 bitlik yazmaç. Bu 3 clock cycle sürüyor. MOV komutu 4 clock cycle sürüyor.
+
+616
+01:41:15,220 --> 01:41:26,200
+buradan faydalanarak arkadaşlar, şu komutun aynı fonksiyonunu gösteren ama 3 clock cycle'da gerçekleşen bir aynı fonksiyoneliteyi sağlayabilir miyiz?
+
+617
+01:41:27,200 --> 01:41:30,840
+Şimdi baktık, şu komut 4 clock cycle sürüyormuş.
+
+618
+01:41:32,660 --> 01:41:39,700
+XOR komutlarını R16, R16 ile kullanmak.
+
+619
+01:41:41,140 --> 01:41:43,039
+Bu, 3 clock cycle sürüyor.
+
+620
+01:41:52,115 --> 01:42:01,096
+Dolayısıyla şu XOR komutunda faydalanarak, 3 clock cycle sürmesinden faydalanarak, şuradaki fonksiyonelitenin aynısını sağlayabilir miyiz?
+
+621
+01:42:05,492 --> 01:42:07,712
+Gerçi xor komutunu daha görmedik ama
+
+622
+01:42:07,712 --> 01:42:09,992
+xor ax, ax
+
+623
+01:42:09,992 --> 01:42:11,532
+evet
+
+624
+01:42:11,532 --> 01:42:17,032
+xor ax, ax dediğimiz vakit bu ax'ı sıfırlayan bir komut.
+
+625
+01:42:17,931 --> 01:42:22,192
+xor komutuna geçtiğimiz zaman daha detaylı bir şekilde bit bazında inceleriz.
+
+626
+01:42:22,731 --> 01:42:24,631
+Ama şunu yapmak yerine
+
+627
+01:42:28,787 --> 01:42:46,647
+Evet, sıfırla xorlarsak, yani şunu yapsak, sonuç ax çıkar. Ama ax'ı kendisiyle xorlarsak, işlem sonucunda, işlem sonucunda ax'e sıfır değeri atanmış olur. Yani yukarıdaki fonksiyonelitenin aynısı olmuş olur.
+
+628
+01:42:46,647 --> 01:42:55,447
+Xor komutuna geçtiğimiz zaman daha detaylı bakarız buna. Ama şu durum var, aynı işçiyi yapan farklı komutlar olabilir.
+
+629
+01:42:55,904 --> 01:43:00,364
+Bunlar içinden clock cycle değeri daha düşük olanları tercih etmeliyiz.
+
+630
+01:43:00,684 --> 01:43:03,384
+Buradan buna geldik. Böyle bir örneğe geldik.
+
+631
+01:43:04,264 --> 01:43:05,184
+Şimdi bu da kalsın.
+
+632
+01:43:06,384 --> 01:43:08,764
+Yapmak istediğimiz neydi? 10.000H bölü 100H.
+
+633
+01:43:09,204 --> 01:43:12,364
+Bu işlemi yapabilmek için AX'i sıfırladık.
+
+634
+01:43:12,524 --> 01:43:15,944
+DX'e de bu 10.000H'in yüksek anlamda 16 bitini atıyoruz.
+
+635
+01:43:16,104 --> 01:43:19,684
+Ona da MOV DX, 10H değerini atadık.
+
+636
+01:43:20,051 --> 01:43:30,051
+Daha sonra MOV, BX, 100H diyerek bölüm işlemimizi hazırladık. Burada da DIV, BX dediğimizde işlem sonucu oluşacak.
+
+637
+01:43:30,912 --> 01:43:40,371
+DX, AX, 32 bitlik değerini 100H'a bölerek, yani 10.000H'ı 100H'a bölerek işlem sonucunu AX'de, kalan sonucunu DX'de oluşturacak.
+
+638
+01:43:40,371 --> 01:43:45,791
+Bunun işlem sonucunda AX'de 100H oluşacak.
+
+639
+01:43:46,707 --> 01:44:00,527
+DX'de ise sıfır değerimiz oluşacak. Bakalım. İlk iki adım zaten AX'i sıfırlayan değerlerdi. DX'e değeri atadık, BX'e değeri atadık, bölme işleminizi gerçekleştirdik.
+
+640
+01:44:06,868 --> 01:44:13,588
+1000 mi geldi? Neyi yanlış yaptık burada? Bir şeyi yanlış yaptık herhalde. 1, 2, 3, 4.
+
+641
+01:44:16,248 --> 01:44:33,208
+Atarken bir şeyi yanlış mı atadım? Evet, şu DX'e atadığımız değeri olması gerekenden bir büyük atamışız. 4, 0 burada. DX'de de 10 haş koyarsak 100.000 haş olur. Ondan dolayı hatalı olmuş. Evet, haklısınız.
+
+642
+01:44:35,572 --> 01:44:42,952
+Initial değerleri atadık, bölme işleminizi gerçekleştirdik. AX'de 100H, DX'de 0 değerimiz oluşmuş oldu.
+
+643
+01:44:45,011 --> 01:44:59,231
+Şunu da söyleyelim, ondan sonra ara vereceğim. Son olarak. Bir de integer signed divide var. Bu da işaretli sayılarda bölme yapıyor. Mantık aynı. Eğer 8 bitlik bir sorsun varsa
+
+644
+01:44:59,796 --> 01:45:16,655
+AX yazmacını vermiş olduğum parametreye bölüyor, işlem sonucunu AL'de saklıyor, işlemde kalan sonucunu AH'da saklıyor. Eğer 16 bitlik bir bölme yapacaksam, DX ve AX'de oluşturmuş olduğu 32 bitlik değeri sorsa bölüp, bölüm sonucunu AX'e atıyor.
+
+645
+01:45:17,171 --> 01:45:22,251
+kalan sonucunda DX'e atıyor. Bu işlemde 16 bitlik görme işlemini yapabilmek için mutlaka
+
+646
+01:45:22,251 --> 01:45:28,491
+DIV, IDIV komutundan önce mutlaka DX'e ve AX'e uygun değerleri hazırlamış olmam gerekiyor.
+
+647
+01:45:29,491 --> 01:45:34,091
+İşaretli sayılarda işlem yapar, register üzerinden veya memory parametresi alabilir.
+
+648
+01:45:34,651 --> 01:45:40,631
+Memory parametresi veriyorsan bu memory parametresinin 8 bitme, 16 bitme olduğunu mutlaka belirtmem gerekiyor.
+
+649
+01:45:41,844 --> 01:45:57,664
+Bu şekilde arkadaşlar, aritmetik komutları bitirmiş oluyoruz. Daha sonraki dersimizde dallanma komutlarına geçeceğiz. Bu noktada bir 15 dakika kadar ara verelim. 40-50 geçe devam edeceğiz. Tamam mı?
+
+650
+01:45:58,944 --> 01:46:00,324
+Hocam bir şey sorabilir miyim?
+
+651
+01:46:01,423 --> 01:46:01,724
+Buyur.
+
+652
+01:46:02,264 --> 01:46:06,764
+Hocam bu 4 clock cycle dediğimiz yaklaşık kaç saniyeye denk geliyor onu hesaplayabiliyor muyuz?
+
+653
+01:46:09,011 --> 01:46:10,832
+Evet, onu hesaplayabiliyoruz.
+
+654
+01:46:11,511 --> 01:46:18,872
+Şimdi, 8086 maksimum 2 MHz'e kadar clock cycle saat darbesi veya kristal kabul ediyor.
+
+655
+01:46:19,992 --> 01:46:23,132
+2 MHz saniyede 2 milyon işlem demek.
+
+656
+01:46:24,051 --> 01:46:28,372
+Her bir komutun yürültülmesi 4 clock cycle sürüyor.
+
+657
+01:46:29,920 --> 01:46:50,819
+Bu da ne demek? 2 x 10-6, 1 bölü, 2 x 10-6 ne yapacak? 10-6 milyon, pardon 10-6, 0.2 mikrosaniyede bir, ben bir komutun dörtte birini yürütüyorum.
+
+658
+01:46:51,444 --> 01:47:19,424
+bunu 4 adımda gerçekleştiğime göre her bir komut 0.8 mikrosaniyede yürütülüyor. Her bir komutun yürütülme adımı, birim yürütülme adımı. Buna göre 4 tane vakit alıyorsa 0.8'i de 4 ile çarpmam lazım. 3 birim vakit alıyorsa 3 ile çarpmam lazım. Bu 4 ile çarpma meselesi şu aslında. Geçen hafta hatırlayacak olursanız bir komutun yürütülmesi T1, T2, T3, T4 şeklinde 4 adıma bölünmüştü. Buradaki 4 kere
+
+659
+01:47:19,444 --> 01:47:43,824
+saat darbesinin yükselen kenar vermesi gerekiyor. Her bir komut için bunu hesapladım yani. Bu bir işlem zamanı. Bunu da dörtle çarptığımız zaman bir komutun gerçekleşme zamanını bulmuş oluyoruz. Dört clock cycle'lık bir işlemin. Dolayısıyla bu çarpma komutun veya XOR'un MOV komutunun ne kadar zaman aldığını bulmuş oluyoruz. Bu şekilde hesaplanabiliyor.
+
+660
+01:47:44,404 --> 01:47:47,784
+İlla ki 2 MHz'lik kristal bağlamak zorunda değilim.
+
+661
+01:47:48,044 --> 01:47:49,964
+Daha düşük kristaller de bağlayabilirim.
+
+662
+01:47:50,064 --> 01:47:52,004
+Ama maksimum 2 MHz'e kadar çıkabiliyor.
+
+663
+01:47:53,404 --> 01:48:00,044
+Bu frekans, bir saat darbesi ne kadar süre alıyor diye bulmak istersek, bir bölü frekans yapmamız lazım.
+
+664
+01:48:00,044 --> 01:48:05,844
+Yani bir bölü 2x10 üzeri 6 saniyede bir kulok darbesi yükselen kenar veriyor.
+
+665
+01:48:05,944 --> 01:48:06,944
+Buradan hesaplayacağız.
+
+666
+01:48:10,644 --> 01:48:19,084
+Bu özellikle nerede kullanılıyor? Bu özellikle yazılımsal bekleme işlemlerinde kullanılabilir.
+
+667
+01:48:19,764 --> 01:48:27,884
+Hassas bir şekilde değil. Mesela bir fonksiyon yazdık. Bu fonksiyonun ne kadar zamanda geri döneceğini bulmak istiyorsak bu ince hesaba girmemiz gerekiyor.
+
+668
+01:48:28,824 --> 01:48:32,664
+Yine zannedersem bu şeyde de gösterilmesi lazım. Bunu kapatmışım ama.
+
+669
+01:48:35,544 --> 01:48:37,664
+Şurada da görünmesi lazım diye düşünüyorum.
+
+670
+01:48:43,444 --> 01:48:57,104
+Tamam, bu şurada görmüş olduğunuz süreler bunun ne kadar Clockcycle aldığını gösteriyor. Bazılarında efektif adres var. Bu efektif adres de şöyle hesaplanıyor. Yapmış olduğumuz işlem, birazcık yukarı gitmem lazım.
+
+671
+01:49:09,524 --> 01:49:10,724
+düzeltelim.
+
+672
+01:49:12,003 --> 01:49:14,823
+Bakın burada efektif adres kalkülasyon var.
+
+673
+01:49:15,483 --> 01:49:19,323
+Eğer ki ben doğrudan displacement veriyorsam,
+
+674
+01:49:20,583 --> 01:49:23,323
+clock cycle değerine bu d şeyi hesaplayabilmek için,
+
+675
+01:49:23,564 --> 01:49:27,703
+memori adresini hesaplayabilmek için 9 clock cycle daha eklemem lazım.
+
+676
+01:49:28,212 --> 01:49:51,492
+Eğer ki baz ve indisi birlikte veriyorsam, 7 birim daha ekleniyor. Sadece BX, S, I, D, bunlardan tek bir tanesini veriyorsam, 5 clock cycle daha eklenem lazım. Yani bazılarının yanında efektif adres hesabı katılıyor. O clock cycle'ları burada verilmiş olan sütün kadar daha arttırıyor. O hesap yapmak için bunları da göz önüne bulundurmak gerekiyor.
+
+677
+01:49:53,684 --> 01:49:57,184
+Tamam. Şimdi dediğim gibi 50 geçe devam edeceğiz.
+
+678
+01:49:58,224 --> 01:50:04,083
+Bir şey diyebilir miyim? Slide'dan div komutunu tanımladığımız kısmı gösterebilir misiniz bir tekrar?
+
+679
+01:50:09,555 --> 01:50:13,415
+div komutu, evet burası. Teşekkürler, sağ olun. Bakayım.
+
+680
+01:50:27,220 --> 01:50:31,579
+Sorunuz olursa gene sorarsınız. Ben bilgisayar başındayım. 50 geçe devam edeceğiz.
+
+681
+01:51:10,420 --> 01:51:13,000
+İki slide önceki XOR meselesi şu.
+
+682
+01:51:13,587 --> 01:51:38,347
+Biz ne yapmak istiyorduk amaç olarak? Hani 10.000 haşı 100 haşa bölecektik. Bunu yaparken de AX yazmacında sıfır değerini oluşturmamız gerekiyordu. Bütün gerekçeleri bir kenara bırakırsak olursak da AX yazmacında sıfır değerini üretebilmek için elimizdeki iki alternatiften bahsettik. Bunlardan bir tanesi MOV AX, 0 haş olabilir. Yani AX'e doğrudan immediate 0 haş değerini atamak olabilir diye söyledik.
+
+683
+01:51:38,676 --> 01:51:50,216
+Bunu Instruction Set'e giderek baktık. Instruction Set'te MOV deyip 16 bitlik bir yazmaç virgül, immediate data satırını bulduğumuzda bunun 4 clock cycle sürdüğünü gördük.
+
+684
+01:51:51,235 --> 01:51:56,275
+Aynı fonksiyonu XOR AX virgül AX işlemiyle gerçekleştirebiliriz.
+
+685
+01:51:56,275 --> 01:52:01,996
+XOR AX virgül AX işlemindeki durumu şöyle düşünün mesela. Şöyle yazmaya çalışayım.
+
+686
+01:52:06,131 --> 01:52:15,771
+1, 0, 0, 1, 0, 1, 0, 1 şeklinde olsun. Bu sayıyı kendisiyle xorlayacak olursak, bitwise xorluyorum tabii.
+
+687
+01:52:18,251 --> 01:52:21,651
+Burayı xorlayacak olursak, hatta şöyle de çizelim bunu.
+
+688
+01:52:33,011 --> 01:52:37,511
+Bu x'ini xorlayacak olursak bitwise olarak elde edeceğimiz işlem nedir? Ona bakalım.
+
+689
+01:52:38,471 --> 01:52:39,591
+Şöyle birazcık daha aşağıya.
+
+690
+01:52:40,111 --> 01:52:43,591
+Şimdi bitwise xorlayacağımıza göre bir ile birin xoru nedir?
+
+691
+01:52:43,711 --> 01:52:47,291
+Sayılar birbiriyle eşit olduğunu yani xorun tablosunu çizelim isterseniz.
+
+692
+01:52:48,111 --> 01:52:51,551
+xorun tablosunda şöyle.
+
+693
+01:53:00,212 --> 01:53:26,732
+x, y, z diyecek olursak, bunun tablosuna baktığımızda şuraya yazalım. x değerim, y değerim ve z değerim için, eğer x0, y0 ise z ne oluyor? x zorladığımız zaman 0 oluyor. x0, y1 ise x zorladığımız zaman 1 oluyor çıkış. x1, y0 ise z1 oluyor. Eğer x1 ise y de 1 ise z yine 0 oluyor.
+
+694
+01:53:27,220 --> 01:53:39,399
+Demek ki xor işleminde, xor işleminde girdilerim ve çıktılarımı incelediğim vakit, eğer ki girdilerim bit bazında aynıysa çıkışım sıfır oluyor. Tamam mı?
+
+695
+01:53:40,739 --> 01:53:52,559
+Şuradaki iki değer bizim için önemli. O zaman ben burada bitwise xor yaptığım vakit, sayıyı kendisiyle xorlarsak işlem sonucu bu oluyor.
+
+696
+01:53:53,171 --> 01:53:55,791
+Demek ki sıfırlamaya eşdeğer oluyormuş.
+
+697
+01:53:58,911 --> 01:54:05,511
+Evet, kesinlikle. Dolayısıyla, xor'u kullandığımız zaman bu sayıyı sıfırlamak da mümkün oluyor.
+
+698
+01:54:05,571 --> 01:54:11,011
+Yani xor, ax, ax komutu da aslında fonksiyonelite olarak ax'ı sıfırlıyor.
+
+699
+01:54:11,591 --> 01:54:13,791
+Ax'ı sıfırlamak için ikinci bir yol daha bulduk.
+
+700
+01:54:16,307 --> 01:54:35,368
+16 bitlik iki yazmaçla çalışan versiyona gidip baktığımda bunun 3 clock cycle sürdüğünü gördüm. Öyleyse aynı görevi, aynı fonksiyonu yerine getiren farklı fonksiyonlar varsa, komutlar varsa bunlardan daha düşük clock cycle'a sahip olanları tercih etmeliyiz. Sizin için de aynı şey geçerli.
+
+701
+01:54:36,083 --> 01:54:41,003
+Yani çok büyük bir kod yazdığınızı düşünün, structural bir kod yazdığınızı düşünün.
+
+702
+01:54:41,503 --> 01:54:51,903
+Burada çokça defa tekrarlanan bir MOV komutu yerine XOR kullanarak register'ı sıfırlamayı hızlandırırsanız bu durumda zamandan kazanmış oluyoruz.
+
+703
+01:54:52,023 --> 01:54:53,963
+Evet, kesinlikle zamandan kazanmış oluyoruz.
+
+704
+01:54:56,303 --> 01:54:57,903
+Onun açıklaması bu olmuş oluyor.
+
+705
+02:01:08,020 --> 02:01:11,200
+Evet arkadaşlar, tekrar merhaba, devam edelim kaldığımız yerden.
+
+706
+02:01:13,080 --> 02:01:17,860
+Şimdi aritmetik komutları bu şekilde bitirmiş olduk. Şimdi dallanma komutlarına bakacağız.
+
+707
+02:01:18,060 --> 02:01:32,600
+Dallanma komutları temel komut gruplarından bir tanesi. Mesela bilgisayar donanım dersine geçtiğimizde de bir mikro işlemci tasarlıyorken mutlaka sahip olunması gereken komut gruplarından bir tanesi olarak ortaya çıkıyor.
+
+708
+02:01:32,600 --> 02:01:34,540
+Buna özel tasarım yapmamız gerekiyor.
+
+709
+02:01:34,931 --> 02:01:35,851
+Bunu göreceğiz.
+
+710
+02:01:36,411 --> 02:01:39,771
+Dallanma komutları aslında arkadaşlar programlamanın gereği.
+
+711
+02:01:39,891 --> 02:01:45,811
+Bir takım şartları oluşturup bunları kontrol ederek programlar oluşturuyoruz.
+
+712
+02:01:46,711 --> 02:01:51,491
+Günümüzdeki değişik konseptlerden bir tanesi de dallanmasız programlar.
+
+713
+02:01:52,051 --> 02:01:53,791
+Branchless program yazımı.
+
+714
+02:01:54,551 --> 02:01:56,111
+Belki ilginizi çeker.
+
+715
+02:01:56,211 --> 02:01:58,071
+İnternetten bir bakın, tavsiye ederim.
+
+716
+02:01:58,612 --> 02:02:08,811
+dallanmasız komutlar veya branchless programming şeklinde tanımlanıyor. Bunu bir kontrol edersiniz. Dersimiz kapsamında olmadığı için ben bunu geçiyor olacağım şimdilik.
+
+717
+02:02:10,311 --> 02:02:22,791
+Dallanma komutlarına baktığımız zaman arkadaşlar bunları dört başlık altında göreceğiz. Dallanmaktan kasıt şu, instruction pointer değerimizi
+
+718
+02:02:23,636 --> 02:02:36,976
+Normalde herhangi bir koşullu veya koşulsuz dallanma yoksa çalışma mantığı şu. Her bir komuttan sonra Instruction pointer'ımız o komutun hafızada kapladığı byte genişliği kadar yer.
+
+719
+02:02:37,344 --> 02:02:58,103
+neyse bu kaç byte'a denk geliyorsa o miktar artıyor. O miktar artması ne demek? Bir sonraki instruction'ı işaret ediyor olması demek. Her seferinde normalde bu şekilde çalışıyor. Ama instruction pointer'ın bu şekildeki artımlı aritmetiğini bozan herhangi bir komut dallanma komut olarak isimlendiriliyor veya tanımlanıyor. Bunları
+
+720
+02:02:58,496 --> 02:03:08,215
+Koşulsuz dallanma komutları, koşullu dallanma komutları, call fonksiyonları ve return fonksiyonları olarak dört başlık altında inceliyor olacağız.
+
+721
+02:03:09,036 --> 02:03:20,956
+Koşulsuz dallanma komutu, doğrudan jump komutu, koşullu dallanma komutları ise sadece bir tane bayrağın değerine bakan basit koşullu dallanma komutları.
+
+722
+02:03:21,652 --> 02:03:41,051
+işaretsiz sayılar üzerinde yapılan aritmetik işlemlere göre dallanma yapan işaretsiz sayı dallanmaları ve işaretli sayılarda yapılmış olan işlemleri veyahut da yapılan işlem sonucunu işaretli sayı sonucu olarak değerlendirerek dallanma yapan komutlar olarak 3 alt başlık açısında inceleyeceğiz.
+
+723
+02:03:46,612 --> 02:04:05,472
+çağırma fonksiyonları olarak geçecek. Return ve IRED, yani Interrupt Return fonksiyonları da dönüş fonksiyonları olarak isimlendirilecek. Şimdi bunlara bakalım. Bunları toplu olarak bu slide'da görebilirsiniz. Şu anda koşullu dallanma komutlarını inceliyoruz.
+
+724
+02:04:12,851 --> 02:04:37,572
+karmaşık olarak isimlendirebileceğim iki ana alt başlık altında basit dallanma komutları arkadaşlar sadece bir bayrağa bakıyor. Örneğin, jump0 dediğimiz komut sadece 0 bayrağına bakıyor. Eğer 0 bayrağımızın değeri 1'e eşitse vermiş olduğumuz label'a dallanma gerçekleşiyor. Tamam mı? Çok önemli. Tekrar ediyorum.
+
+725
+02:04:38,131 --> 02:04:58,811
+sadece 0 bayrağına bakıyor. Şu anda sadece JMP size 0 için konuşuyorum. Bu komut 0 bayrağına bakıyor. 0 flag eğer 1 ise vermiş olduğumuz, komutun yanında vermiş olduğumuz parametre olarak vermiş olduğumuz etikete dallanma gerçekleştiriyor. Bu komut aynı zamanda JMP equal komutunun da eş değer.
+
+726
+02:04:59,475 --> 02:05:13,235
+JMP EQUIL komutu da bir önceki satırda yapmış olduğumuz Compare veyahut da aritmetik işlem sonucuna göre eğer 0 bayrağı eşittir 1 ise o iki sayının birbirine eşit olduğu anlamında bir sonuç çıkartıyor.
+
+727
+02:05:13,295 --> 02:05:18,255
+Yani JMP EQUIL eşittir, JMP 0, ikisi de 0 bayrak eşit 1 ise dallanıyor.
+
+728
+02:05:19,295 --> 02:05:25,515
+Bir başka komutumuz JMP NOT 0, işlem sonucu 0 değilse verdiğimiz etikete dallanıyor.
+
+729
+02:05:27,475 --> 02:05:33,655
+işlem sonucunda negatif değer üretilmiştir. Yani sign flag 1 ise dallanma gerçekleştiriyor.
+
+730
+02:05:34,975 --> 02:05:41,256
+Jump not sign işlem sonucunda sign flag eşittir 0 ise dallanma üretiyor.
+
+731
+02:05:42,176 --> 02:05:51,536
+Jump overflow, overflow bayrığı eşittir 1 ise, jump not overflow, overflow bayrığı 0 ise dallanma gerçekleştiriyor.
+
+732
+02:05:51,988 --> 02:05:56,748
+JMP parity, parity bayrağı 1 ise dallanma gerçekleştiriyor.
+
+733
+02:05:57,368 --> 02:06:01,408
+JMP not parity, parity bayrağı 0 ise dallanma gerçekleştiriyor.
+
+734
+02:06:02,148 --> 02:06:08,788
+Bu komutları sadece tek bir bayrak değerine bakarak dallanma gerçekleştirdiğini görmüş oluyoruz.
+
+735
+02:06:09,568 --> 02:06:12,108
+Peki, diğer komutlar nasıl?
+
+736
+02:06:12,108 --> 02:06:15,108
+Diğer komutlar arkadaşlar, iki sayının birbirine göre...
+
+737
+02:06:16,051 --> 02:06:38,231
+Birinci sayının daha küçük olduğu durum, BLOW veya LESS, BLOW veya LESS. İki sayımız var. Bunlardan birinci operant. Hemen bunların öncesinde bir Compare çalıştırdığımızı düşünün. Compare A, B dedik. A, B'den küçük ise, JUMP LESS, JUMP BLOW. İki ayrı komut var, aynı işe bakan.
+
+738
+02:06:43,091 --> 02:06:46,311
+Jump greater, jump above, jump greater.
+
+739
+02:06:46,931 --> 02:06:53,631
+A sayısı B sayısından büyükse, jump above or equal, jump greater or equal.
+
+740
+02:06:55,051 --> 02:06:59,311
+A sayısı B sayısından büyük eşitse, jump below or equal,
+
+741
+02:06:59,796 --> 02:07:25,956
+JMP, LESS, RECOLE, bunlar birbirine eşit, eşdeğer komutlar gibi ortaya çıkıyor. Bu saymış olduğum komutlar arasındaki fark nedir? Eğer ki ben A ve B sayılarını işaretli sayı olarak değerlendirip bunlar arasındaki çıkartma işlemi sonucuna bakmak istiyorsam, bu durumda işaretsiz sayı komutlarının JMP, BELOW, JMP, ABOVE, JMP, ABOOR, RECOLE, JMP, BELOW, RECOLE komutlarını kullanmalıyım.
+
+742
+02:07:26,292 --> 02:07:39,572
+Eğer ki A ve B sayılarının işlem sonucunu ben işaretli sayı olarak değerlendirmek istiyorsam, bu durumda JMP Less, JMP Greater or EQUAL, JMP Less or EQUAL veya JMP Greater komutlarını kullanmam gerekiyor.
+
+743
+02:07:39,672 --> 02:07:52,772
+Bu ikisi, iki grup arasındaki fark bu. Birbirlerine göre büyüklük, büyük eşitlik, küçüklük, küçük eşitlik veya eşitlik. Eşitlik durumunda zaten JMP EQUAL'da mevcut. Bunları karşılaştıran komut grupları bunlar.
+
+744
+02:07:54,260 --> 02:08:11,980
+ve iki gruba ayrılmış durumdalar. Sonucu işaretsiz sayı olarak değerlendirdiğim komut gruplarında above veya below kelimesi kullanılırken, işaretli sayı olarak değerlendirdiğim grupta less veya greater kelimeleri kullanılıyor.
+
+745
+02:08:11,980 --> 02:08:21,480
+Tamam mı? Şimdi bu basit komutlara tekrar bakmış olalım. Jump zero veya jump equal ikisi de aynı şeyi yapıyor. Sadece zero filayın bir olup olmamasına bakıyor.
+
+746
+02:08:22,323 --> 02:08:43,203
+Sign flag için jump sign var. Jump overflow, overslow bayrağının 1 olmasına bakıyor. Jump parity, parity bayrağının 1 olmasına bakıyor. İşaretsiz sayılarda compare işlemi sonrasında koşullu dallanma üretmek için kullanılan komutlar bunlar. Compare A, B dedik. Mesela.
+
+747
+02:08:51,028 --> 02:08:57,088
+A ve B herhangi birer Compare komutuyla birlikte kullanabildiğimiz iki parametre olsun.
+
+748
+02:08:57,088 --> 02:09:12,788
+Bu komutu kullandığımızda eğer ki A sayısının B sayısından küçük olduğu durumu kontrol etmek istiyorsak, o durum oluşmuşsa dallanma yapmak istiyorsak bu durumda JumpBlog komutunu kullanacağız.
+
+749
+02:09:14,468 --> 02:09:16,408
+Tamam. İşaretsiz sayılarla.
+
+750
+02:09:16,819 --> 02:09:25,979
+Eğer A sayısının B sayısından büyük olduğu durumda işlem yapmak istiyorsak, bu durumda da Jump Above komutunu kullanacağız.
+
+751
+02:09:26,579 --> 02:09:40,359
+A sayısının B'den büyük eşit olduğu durumda dallanmak istiyorsak, Jump Above or Equal, A sayısının B'den küçük eşit olduğu durumda dallanmak istiyorsak, Below or Equal komutunu kullanmamız lazım.
+
+752
+02:09:40,692 --> 02:09:51,331
+Burada verilen, slash'dan sonra verilen komutlar da geçerli, 8086 komutları ama eşdeğer olarak çalışıyor. Yanında verilmiş olanla eşdeğer olarak çalışıyor.
+
+753
+02:09:52,032 --> 02:10:00,652
+Mesela A sayısının B sayısına göre below or equal olması, A sayısının B sayısına göre not above olmasıyla eşdeğer.
+
+754
+02:10:07,952 --> 02:10:12,731
+A sayısının B sayısına göre, not below or equal olmasıyla eşdeğer.
+
+755
+02:10:14,032 --> 02:10:17,692
+Biz hangi komuta ihtiyacımız varsa onu kullanacağız.
+
+756
+02:10:17,831 --> 02:10:22,412
+Yani bizim eğer ki A'nın B'den büyük olduğu durumu kestirmemiz gerekiyorsa,
+
+757
+02:10:22,412 --> 02:10:25,291
+o anda, o durumda bir işlem yapmamız gerekiyorsa,
+
+758
+02:10:25,912 --> 02:10:28,591
+JMP above komutunu kullanacağız işaretsiz sayılarda.
+
+759
+02:10:29,108 --> 02:10:38,608
+Eğer ki biz A'nın B'den büyük olmadığı durumu el almak istiyorsak, JMP NOT ABOV komutunu kullanacağız. Şunu kullanacağız.
+
+760
+02:10:39,708 --> 02:10:50,688
+Yani bunun buna eşdeğerliliğini bile karıştırmaya gerek yok. Neye ihtiyacımız varsa geçerli komutlardan onu alıp kullanabiliriz. Buna dikkat ediyorsunuz arkadaşlar. Bu önemli bir nokta.
+
+761
+02:10:53,300 --> 02:11:04,200
+Yine eğer ki sayılarımız, sonuç, işlem sonucu, işaretli sayı olarak değerlendirilmek isteniyorsa, bu durumda kelimelerimiz less veya greater olarak değişiyor.
+
+762
+02:11:04,280 --> 02:11:06,080
+Less ve greater olarak değişiyor.
+
+763
+02:11:06,940 --> 02:11:10,680
+Eğer compare yine A virgül B yaptığımızı düşünelim.
+
+764
+02:11:10,680 --> 02:11:12,520
+Tekrar yazmak gerekiyor.
+
+765
+02:11:15,604 --> 02:11:35,463
+Compare A, B işlemi yaptığımızı düşünelim. A ve B Compare komutunun alabildiği valid operantlardan herhangi ikisi olsun. Eğer A sayısının B sayısından işlem sonucu olarak, işaretli sayı olarak büyük olduğu durumları ele almak istiyorsan, Jump Greater komutunu kullanmam lazım.
+
+766
+02:11:39,412 --> 02:11:45,032
+Mesela bunu nasıl işaretli ve işaretsiz sayı olarak nasıl göz önüne alalım arkadaşlar? Şöyle düşünelim.
+
+767
+02:11:45,752 --> 02:11:53,832
+Mesela A sayısındaki değerimiz FFH olsun. B sayısındaki değerimiz de 1 olsun.
+
+768
+02:11:54,832 --> 02:11:56,052
+Tamam mı? Böyle bir durum olsun.
+
+769
+02:12:07,188 --> 02:12:13,948
+etiket demişsem, bu durumda etikete dallanma gerçekleşir mi? Bunu sormuş olayım.
+
+770
+02:12:19,283 --> 02:12:24,103
+Compare A, B diyorum. A ve B herhangi bir register memori olabilir. Hiç önemli değil.
+
+771
+02:12:25,523 --> 02:12:29,103
+A'da FFH var. B'de de 1 değerim var.
+
+772
+02:12:31,043 --> 02:12:34,283
+Compare A, B deyip Jump Above etiket diyorum.
+
+773
+02:12:35,183 --> 02:12:37,703
+A, B'den şimdi Jump Above dediğimiz zaman
+
+774
+02:12:37,703 --> 02:12:44,344
+bakın Compare A, B işlem sonucu olarak düşünün bunu.
+
+775
+02:12:45,283 --> 02:12:46,783
+Doğrudan şöyle düşünelim.
+
+776
+02:12:47,152 --> 02:13:13,831
+Jump above diyoruz ya, dolayısıyla bu bunu işaretsiz sayı olarak ele alacak. İşaretsiz sayı olarak. Dolayısıyla FF'i 255 gibi anlayacak. B zaten 1. 255 birden büyük olduğu için burada dallanma gerçekleşir. Tamam mı? Ama aynı işlemi, aynı işlemi bu sefer, CMP A virgül B deyip, Jump greater,
+
+777
+02:13:14,484 --> 02:13:35,204
+etiket 2 dersem, bu durumda etiket 2'ye dallanma gerçekleşir mi? Bakın, bu sefer Jump Greater komutunu kullanıyorum. Jump Greater komutuna baktığımız zaman bunun işaretli sayılarla ilgili işlem olduğunu görüyoruz. Birinci sayımızı da, birinci sayımızı FF...
+
+778
+02:13:35,796 --> 02:13:55,256
+işaretli sayı olarak ele aldığı için bu eksi bir olarak değerlendirecek bunu. B sayısı bir, eksi bir birden büyük mü? Değil. O zaman büyük olmadığı için bu koşullu dallanma gerçekleşmez. Tamam mı? Peki koşullu dallanma komutları nasıl çalışıyor? Hemen şöyle göstermeye çalışayım.
+
+779
+02:13:59,859 --> 02:14:02,139
+Mesela bunun altında hemen NOP olsun.
+
+780
+02:14:03,039 --> 02:14:04,259
+Bir tane daha NOP yazalım.
+
+781
+02:14:05,179 --> 02:14:06,779
+Şurada bir yerde de arkadaşlar,
+
+782
+02:14:07,979 --> 02:14:10,799
+etiket 2 NOP olsun.
+
+783
+02:14:10,959 --> 02:14:11,319
+Tamam mı?
+
+784
+02:14:12,319 --> 02:14:13,759
+Şu komut grubunu inceliyoruz.
+
+785
+02:14:13,759 --> 02:14:17,979
+Şimdi ben Compare komutunu çalıştırdım.
+
+786
+02:14:18,139 --> 02:14:20,339
+Sonra Jump Grater'a geldim.
+
+787
+02:14:21,479 --> 02:14:24,799
+Koşul sağlanmadığı için bir alttaki satıra gideceğim.
+
+788
+02:14:25,555 --> 02:14:32,635
+Bunu işledim. Bir alt satıra gideceğim. Daha sonra yine bir alt satıra gideceğim. Dolayısıyla burada şunu görüyoruz.
+
+789
+02:14:33,355 --> 02:14:46,775
+Muntazam bir if, then, else mantığı oluşturmak istiyorsam, bu structural yapıdan dolayı etiketi verdiğim yere de ulaşmam söz konusu olabilir. Yanlış bir şekilde bunu bağlamışsam.
+
+790
+02:14:47,283 --> 02:15:13,043
+Tamam mı? Böyle bir durum olabilir. Buna dikkat etmemiz lazım. Biraz sonra bunları if'ten else'leri gördüğüm zaman daha net söyleyeceğim. Ama şurası için önemli olan nokta bu. Koşulu dallanma komutunda koşul gerçekleşmiyorsa bir alttaki komuta gidiyorum. Koşul sağlanmışsa direkt etikete gidiyorum. Koşul sağlanmamışsa bir alt satırdaki komuta gidiyorum. Mantığımız bu şekilde çalışacak.
+
+791
+02:15:17,716 --> 02:15:19,716
+Şimdi burada mikro işlemci
+
+792
+02:15:19,716 --> 02:15:27,916
+jump greater, jump less, jump above, jump below durumlarını nasıl anlıyor?
+
+793
+02:15:28,796 --> 02:15:34,476
+Neye göre karar veriyor? Bunları arkadaşlar saf bir şekilde bayraklara bakarak karar veriyor.
+
+794
+02:15:35,076 --> 02:15:43,436
+Örneğin işaretsiz sayılarda compare A, B yaparken A'dan B'yi çıkartacak ya, şöyle gösterelim yine.
+
+795
+02:15:48,340 --> 02:15:50,119
+A'dan B'yi çıkartacağız.
+
+796
+02:15:51,039 --> 02:15:55,019
+A'nın B'den büyük olduğu durumda bunu nasıl anlayabiliriz?
+
+797
+02:15:55,219 --> 02:16:05,179
+A, B'den büyükse arkadaşlar, çıkartma işlemi sonucunda işaretsiz sayılarda carry flag değeri kesinlikle 0 olur ve zero flag 0 olur.
+
+798
+02:16:05,460 --> 02:16:07,719
+İşlem sonucu birbirine eşit olmadıkları için 0 olacak.
+
+799
+02:16:07,719 --> 02:16:13,159
+Dolayısıyla bir compare işlemi çalıştırdıktan sonra mikro işlemci gidip de
+
+800
+02:16:13,171 --> 02:16:40,631
+CF bayrağı 0 iken ve de 0 flag 0 ise bu x'i birden sağlanıyorsa A'nın B'den büyük olduğuna karar veriyor. Benzer şekilde işaretsiz sayılarda büyük eşitlik için iki durum var. Bakın ya A B'den büyüktür. Bu durumda keri flag eşit 0 olur ve 0 flag eşit 0 olur veya A B'ye eşittir. Bu durumda da 0 flag 1 olur.
+
+801
+02:16:41,332 --> 02:16:41,952
+Değil mi?
+
+802
+02:16:43,592 --> 02:16:46,452
+Eşit oldukları durumda da Carry Flag de 0'dır.
+
+803
+02:16:48,192 --> 02:16:51,752
+Bu ikisi birbirine, bu iki satır birbirine V'ya ile bağlı.
+
+804
+02:16:53,752 --> 02:17:01,371
+Carry Flag'in 0, 0 Flag'in 0 olduğu durumla, Carry Flag'in 0, 0 Flag'in 1 olduğu iki durumu birleştiren örnek nedir?
+
+805
+02:17:01,852 --> 02:17:03,231
+Carry Flag'in 0 olmasıdır.
+
+806
+02:17:03,352 --> 02:17:07,272
+Dolayısıyla, Carry Flag'in 0 olduğu duruma bakar, görürse,
+
+807
+02:17:07,700 --> 02:17:29,740
+A'nın B'den büyük eşit olduğuna karar veriyor. Eşitlik için sadece zero file'ye bakmak yeterli. Destination ve source arasında küçük eşit gibi bir durum varsa ne olacak? Küçük eşitlik için bakalım. İki durum olabilir. Ya A, B, G eşit olabilir. Bu durumda carry flag eşittir sıfır ve zero flag eşittir bir olur. Değil mi?
+
+808
+02:17:30,227 --> 02:17:55,967
+İkinci durumda AB'den küçük olabilir. AB'den küçükse Kerifilek bir değerini alır ve Zerofilek sıfır değerini alır. Bu iki durum olabilir. Bu iki satır birbirine orla bağlı. Bunun lojik karşılığı nedir? Bunun lojik karşılığı Kerifilek'in veya Zerofilek'in bir olması. Yani bir başka deyişle Kerifilek or Zerofilek.
+
+809
+02:17:57,268 --> 02:17:59,827
+Burada da kelime olarak V ile birleştirilmiş.
+
+810
+02:18:00,968 --> 02:18:05,167
+Eğer destination source'dan küçükse, zero flag kesinlikle sıfır olacak.
+
+811
+02:18:05,288 --> 02:18:07,768
+Yani şurada yazmış olduğumuz ikinci satıra karşılık geliyor.
+
+812
+02:18:08,327 --> 02:18:14,927
+Carry flag'in 1 olması, işaretsiz sayı olarak A'nın B'den küçük olduğunu anlamamıza yarıyor.
+
+813
+02:18:15,988 --> 02:18:19,847
+Şimdi diğer tarafa gelelim. İşaretli sayılar için bunları nasıl anlıyoruz?
+
+814
+02:18:20,227 --> 02:18:23,468
+Eğer ki A ve B işaretli sayılar ise,
+
+815
+02:18:25,203 --> 02:18:27,703
+A-B'nin, şunu şöyle koyalım,
+
+816
+02:18:30,043 --> 02:18:36,083
+A-B'nin işlem sonucunu yaptığımızda A'nın B'den büyük olduğunu nasıl anlayabiliriz?
+
+817
+02:18:37,183 --> 02:18:42,623
+Bunlardan birinci durum, A ve B aynı işarette sayılar olup,
+
+818
+02:18:43,423 --> 02:18:45,984
+A ve B, ikisi de pozitif veya ikisi de negatif olur.
+
+819
+02:18:45,984 --> 02:18:47,915
+İşlem sonucu,
+
+820
+02:18:48,051 --> 02:19:11,531
+8 bitlik aritmetiğe sığabilir. Bu durumda zero flag kesinlikle sıfır olacak değil mi? Diğer durumda ne oluyor bakın arkadaşlar? Diğer durumda AB'den hangi durumda büyük olabilir? A çok büyük bir pozitif sayı, B çok küçük bir negatif sayı olabilir. A büyük bir pozitif sayı, B küçük bir negatif sayı.
+
+821
+02:19:11,987 --> 02:19:30,807
+Bu durumda A-B yaptığımda A'da pozitif sayı oluyor, B'de büyük bir pozitif sayı. İki tane büyük sayının toplamı gibi bir durum olabilir. Bu durumda 8 bite sığmayan bir toplam üretebilirim ve overflow'um ne olacak arkadaşlar? Overflow'um 1 olacak.
+
+822
+02:19:31,891 --> 02:19:36,291
+Ama iki tane pozitif sayıyı topladığımda taşma oluyorsa bunun anlamı neydi aynı zamanda?
+
+823
+02:19:37,051 --> 02:19:38,671
+Sign flag'in de bir olması demek.
+
+824
+02:19:38,891 --> 02:19:43,731
+Demek ki overflow bayrağı ile sign flag aynı değeri almalı taşma olduğu durumda.
+
+825
+02:19:44,491 --> 02:19:47,432
+Taşma olmadığı durumda zaten overflow bayrak sıfır olacak.
+
+826
+02:19:48,331 --> 02:19:48,991
+Taşma yok ya.
+
+827
+02:19:49,651 --> 02:19:55,131
+Sign flag ile iki tane pozitif sayıyla işlem yaptığımda yine pozitif değer çıkması lazım.
+
+828
+02:19:55,504 --> 02:20:05,364
+Dolayısıyla o da sıfır olması lazım. Her halükarda sign flag ile overflow bayrağının eşit olması ve zero bayrağının da sıfır olması gerekiyor. Böyle bir sonuç.
+
+829
+02:20:06,004 --> 02:20:08,623
+Dolayısıyla işaretli sayılarla ilgili işlem yaparken
+
+830
+02:20:09,075 --> 02:20:14,075
+Compare A, B dediğimde A'nın B'den büyük olduğunu anlamak istiyorsam mikro işlemci gidiyor.
+
+831
+02:20:14,695 --> 02:20:17,355
+Zero flag'deki değerin sıfır olduğunu kontrol ediyor.
+
+832
+02:20:17,915 --> 02:20:24,235
+Sign flag'in de overflow bayrağına eşit olduğunu kontrol ediyor ve buna göre koşul doğrudur diye bir sonuç üretiyor.
+
+833
+02:20:25,335 --> 02:20:29,175
+Büyük eşitlik için sign flag ile overflow bayrağının eşit olması yeterli.
+
+834
+02:20:29,255 --> 02:20:31,655
+Zero flag'in sıfır olma durumu ortadan kalkıyor.
+
+835
+02:20:31,655 --> 02:20:34,355
+Eşitlik için zero flag'in zaten bir olması yeterli.
+
+836
+02:20:34,899 --> 02:20:38,379
+Küçük olma durumu, x satırın D'li olarak düşünün.
+
+837
+02:20:39,119 --> 02:20:41,439
+Yani ne dedik? Şöyle gösterelim.
+
+838
+02:20:47,603 --> 02:20:49,603
+zero flag eşittir, sıfır,
+
+839
+02:20:51,023 --> 02:20:51,383
+AND
+
+840
+02:20:51,383 --> 02:20:55,324
+S eşittir,
+
+841
+02:20:56,144 --> 02:20:58,263
+OF, tam isimlerini yazalım da karışmasın.
+
+842
+02:21:02,644 --> 02:21:04,364
+Böyle bir koşulumuz. Bu neydi?
+
+843
+02:21:06,043 --> 02:21:08,043
+A'nın B'den büyük olduğu durumu tanımlıyor.
+
+844
+02:21:09,324 --> 02:21:10,884
+Dördüncü satırda ne istiyoruz?
+
+845
+02:21:11,164 --> 02:21:12,943
+A'nın B'den küçük eşit olduğu durumu.
+
+846
+02:21:13,004 --> 02:21:14,684
+Yani bunun değilini istiyoruz.
+
+847
+02:21:14,844 --> 02:21:17,623
+Logikteki mantık, içeri dağıtıyorsun.
+
+848
+02:21:17,824 --> 02:21:19,064
+İçeri dağıttığında ne olur?
+
+849
+02:21:20,524 --> 02:21:23,724
+Zero filayın sıfıra eşit olmasının tersi, zero filayın bire eşit olması.
+
+850
+02:21:24,543 --> 02:21:27,763
+Aradaki AND, demorgan kuralından OR'a dönüşür.
+
+851
+02:21:28,819 --> 02:21:35,200
+diğer koşulumuz ise eşit olma durumuydu. Bu sefer de bunların eşit olmama durumuna karşılık geliyor.
+
+852
+02:21:37,379 --> 02:21:43,599
+Bu şekilde tanımlanabilir. Tamam mı? Buradan bunu çıkartabiliriz.
+
+853
+02:21:44,200 --> 02:21:47,340
+Yine son satırda ikinci satırın değili.
+
+854
+02:21:48,020 --> 02:21:50,540
+Sign flag ile overflow bayrağının birbirine eşit olma durumu.
+
+855
+02:21:50,619 --> 02:21:55,000
+Bunun değilini alırsak komple demorgan kuralı. Eşit olmama durumunu üretmiş oluyoruz.
+
+856
+02:21:55,507 --> 02:22:07,867
+Dolayısıyla mikro işlemci verilen bayraklara bakarak A ve B arasındaki işlemi işaretli veya işaretsiz sayı büyüklük, küçüklük, eşitlik açısından değerlendirilmiş oluyor.
+
+857
+02:22:13,396 --> 02:22:18,096
+Bunlar bizim koşullu ve koşulsuz dallanma komutlarımızı üretmiş oluyor arkadaşlar.
+
+858
+02:22:18,315 --> 02:22:22,396
+Şimdi koşulsuz dallanmalara baktığımızda bunlar JMP komutu.
+
+859
+02:22:22,495 --> 02:22:28,896
+Bu NIRJMP sadece bulunmuş olduğum kod segment içerisindeki bir noktaya benim dallanmamı sağlıyor.
+
+860
+02:22:28,976 --> 02:22:30,376
+Vermiş olduğum adrese gidiyorum.
+
+861
+02:22:31,175 --> 02:22:35,775
+Bir de JMPFARPTR var. Bunları bakın şöyle aklımızda hayal edelim.
+
+862
+02:22:38,291 --> 02:22:43,551
+Benim çalıştığım bir tane segment var. Bu segment benim çalıştığım mevcut kod segmentim.
+
+863
+02:22:46,511 --> 02:23:01,271
+Dolayısıyla 64 kilobaytlık bir alana tekabül ediyor. Bir de şunu düşünelim. Benim kod segmentim yanında programımın yer alabileceği ikinci ayrı bir segment daha var. Başka bir segment.
+
+864
+02:23:03,860 --> 02:23:09,640
+mevcut durumda şuradaki kodlarımı yürütüyorum ve şuraya dallanmak istersem, aynı segment içerisinde kalacaksam,
+
+865
+02:23:10,680 --> 02:23:19,260
+burada JMP komutunu kullanmam yeterli. Sadece intra segment, yani segment içi bir dallanma yapıyorum. O zaman JMP komutu yeterli.
+
+866
+02:23:19,920 --> 02:23:26,520
+Ama eğer ki ben farklı bir segmentteki, farklı bir offset'e gitmek istiyorsam, yani buradan buraya atlamak,
+
+867
+02:23:26,520 --> 02:23:31,000
+mesela şu küçüktür, 64K diyeceğiz.
+
+868
+02:23:31,476 --> 02:23:46,896
+Burası büyüktür, 64K diyeceğiz. 64K'dan daha yüksek bir alana zıklamak istersek, o zaman hem segment değerimin değişmesi gerekiyor, hem de offset değerimin değişmesi gerekiyor. O zaman JMP, FAR, PTR kullanacağım.
+
+869
+02:23:49,416 --> 02:23:55,355
+Çağırma komutlarına baktığımızda da arkadaşlar, call fonksiyonu az önce anlattığım mantık gibi.
+
+870
+02:23:55,956 --> 02:24:14,376
+Burada birinci fonksiyonum var, F1. Şurada da F2 fonksiyonum var. Fonksiyonlar label olarak belli. Ben F1 fonksiyonu içerisinde F2'yi çağırmak istersen ve F1 ile F2 aynı segment içerisindeyse sadece call fonksiyonu ve etiketi vermem yeterli.
+
+871
+02:24:16,956 --> 02:24:17,675
+Ama
+
+872
+02:24:19,667 --> 02:24:32,788
+Mesela ben F1 fonksiyonu içerisinde F3 fonksiyonunu çağırmak istiyorsam, bu durumda farklı bir segmentin farklı bir offsetindeki değeri çağıracağım için call farptr komutunu kullanmam gerekiyor.
+
+873
+02:24:35,128 --> 02:24:38,448
+INT ve INT-O komutları ise kesme komutları.
+
+874
+02:24:39,347 --> 02:24:46,367
+Bu kesme komutlarıyla da farklı bir segmente, farklı bir instruction pointer değerine gidebiliyoruz.
+
+875
+02:24:46,835 --> 02:24:53,615
+temel olarak şöyle söyleyelim. Bu çağırma komutları InstructionPointer veya
+
+876
+02:24:53,615 --> 02:25:04,076
+pardon yanlış oldu. InstructionPointer veya kod segment değerini değiştiren komutlar. O yüzden dolayı bu başlık altında inceliyoruz.
+
+877
+02:25:04,675 --> 02:25:12,036
+Şimdi biz bir fonksiyona gittik. O fonksiyondan dönüşler de var. Onlar da InstructionPointer ve kod segmenti değiştiriyor. Örneğin
+
+878
+02:25:12,435 --> 02:25:37,175
+Ben intra segment bir fonksiyon çağırması yaptıysam, yani call ile gittiysem return ile dönüyorum. Call ile gittiysem return ile dönüyorum. Call far ile gittiysem redf ile return far ile dönüyorum. Eğer interrup veya interrup overflow ile gitmişsem interrup return ile dönüyorum. Bunların hepsini uygun karşılıklarıyla kullanmalıyız. Çünkü
+
+879
+02:25:37,811 --> 02:25:41,351
+call fonksiyonunu çağırdığımızda arkadaşlar, şöyle diyelim,
+
+880
+02:25:44,112 --> 02:25:51,772
+call fonksiyonunu çağırdığımızda, bu aynı segment içerisindeki farklı bir fonksiyona gittiğinde,
+
+881
+02:25:52,500 --> 02:25:56,700
+O fonksiyon, çağırdığımız fonksiyon bittiğinde tekrar kaldığımız yere geri dönmeliyiz.
+
+882
+02:25:56,799 --> 02:26:01,619
+Kaldığımız yeri ayırt eden sadece eski programın Instruction Pointer değeridir.
+
+883
+02:26:02,139 --> 02:26:05,680
+Dolayısıyla ben call fonksiyonunu çağırdığımda yığına IP değeri atılır.
+
+884
+02:26:09,399 --> 02:26:13,540
+Fonksiyondan geri dönerken yığından IP'yi çekmem yeterli.
+
+885
+02:26:14,279 --> 02:26:19,540
+Ama call far dediğimde farklı bir segmentin içerisinde yer alan
+
+886
+02:26:21,108 --> 02:26:33,968
+farklı bir segmentin içerisinde yer alan, farklı bir offset'e gidiyorum. Dolayısıyla call far çağırdığımda, hem mevcut code segmentim, hem de mevcut instruction pointer'ım yığına atılır.
+
+887
+02:26:34,468 --> 02:26:45,688
+Fonksiyondan geri dönerken, redfeyle dönersen, bu yığından hem instruction pointer'ı, hem de code segmenti çekip, ilgili yazmışlara geri yazdığı için, ana programda kaldığım yerden devam edebilirim.
+
+888
+02:26:46,100 --> 02:26:51,060
+Bu yüzden önemli. Peki, Interrupt çağırmaları ne yapıyor? Int fonksiyonları ne yapıyor?
+
+889
+02:26:51,860 --> 02:27:01,440
+Interrupt'larda arkadaşlar, ben bir kesme alt programına gittiğim zaman, bayrakları da Interrupt Alt Kesme Programı içerisinde değiştirebilirim veya bunlardan faydalanabilirim.
+
+890
+02:27:01,500 --> 02:27:08,860
+Dolayısıyla, kod segmenti, instruction pointerı ve flag yazmaçlarının yığına atıyor Interrupt çağrıları da.
+
+891
+02:27:09,240 --> 02:27:13,940
+Dolayısıyla, buna karşılık gelen IRED veya Interrupt Return komutu da,
+
+892
+02:27:14,067 --> 02:27:33,167
+yığından flag yazmacını, instruction pointer ve kod segmenti çekerek ilgili registerları geri yüklüyor. Dolayısıyla neyle gidiyorsan fonksiyona onun karşılığı olan return fonksiyonuyla dönmemiz gerekiyor. Burası net olduğunu düşünüyorum. Yine fonksiyon çağırmalarda bunları detaylı olarak inceleyeceğiz.
+
+893
+02:27:34,087 --> 02:27:39,067
+Bir de koşulsuz dallanma komutları var arkadaşlar. Koşulsuz dallanma komutu JMP olduğunu söylemiştim.
+
+894
+02:27:39,667 --> 02:27:43,727
+CAM komutu ile ilgili olarak 3 farklı kullanım var.
+
+895
+02:27:44,268 --> 02:27:45,727
+Bir displacement verebiliriz.
+
+896
+02:27:45,808 --> 02:27:50,948
+Bu displacement 8 bit veya 16 bit tuz komplement aritmetikte bir değer.
+
+897
+02:27:51,087 --> 02:27:55,887
+Yani eğer 8 bit bir tuz displacement veriyorsam, vermişsem,
+
+898
+02:27:55,887 --> 02:28:03,268
+eksi 128 adım geri, eksi 128 adım veyahut da 120 adım, 127 adım ileri gidebilirim.
+
+899
+02:28:03,347 --> 02:28:26,148
+veya bir registerdaki değeri kullanabilirim, Jump register. Bu durumda registerdaki değer Instruction Pointer'ın kendisine yükleniyor. Bakın burada neydi ilkinde? İlkinde Instruction Pointer'ın çevresinde bir ötelemen vardı, ileri veya geri ötelemen vardı. İkinci örnekte ise, ikinci kullanım şeklinde ise Instruction Pointer doğrudan registerdaki değeriyle yükleniyor.
+
+900
+02:28:26,835 --> 02:28:40,036
+Peki, buradaki sıkıntı ne olabilir? Buradaki sıkıntı şu olabilir. Mesela komutlarımız birden fazla byte yer kaplıyor ya, ben yanlışlıkla herhangi bir komutun ortasından bir yere denk getirebilirim. O yüzden bu kullanıma dikkat ediyoruz.
+
+901
+02:28:40,815 --> 02:28:47,896
+Aynı şey, JMP memory için de geçerli. Bu da bakın ilk örnekten farklı olarak, instruction pointer'e doğrudan değer yükleyen bir komut.
+
+902
+02:28:48,195 --> 02:28:54,135
+Buradaki sıkıntı da şu olabilir. Benim memory gözü içerisindeki vermiş olduğum değer,
+
+903
+02:28:54,772 --> 02:29:05,112
+Instruction pointer'a yüklenecek ama bu değer öyle bir şey olabilir ki, denk gelen hafıza gözü herhangi bir komutun tam ortasına denk gelebilir, dikkat etmemiz gerekiyor.
+
+904
+02:29:06,512 --> 02:29:14,952
+Bir de bunun aynı segment içerisinde olmayan, farklı bir segmentteki noktasına dallanmamızı sağlayan komut örnekleri var.
+
+905
+02:29:18,899 --> 02:29:27,559
+Onlar da JumpFar komutu şeklinde gerçekleşmiş oluyor. İki farklı yaklaşım var. Bunlardan birisi doğrudan immediate data olarak değer verebilirim.
+
+906
+02:29:28,039 --> 02:29:37,459
+Veyahut da bir memory adresini işaret ederim. Memory adresindeki peş peşe gelen iki tane word, instruction pointer ve code segment değerlerine yüklenmiş olabilir.
+
+907
+02:29:37,459 --> 02:29:40,399
+Mesela bir örnek üzerinden görecek olursak.
+
+908
+02:30:02,195 --> 02:30:03,876
+Neyini yanlış aldık?
+
+909
+02:30:19,956 --> 02:30:25,596
+Şuradan bakalım, bir saniye hemen hazırda bir DOS box'ım var, oradan da göstereyim.
+
+910
+02:30:27,876 --> 02:30:30,675
+DEBAC komutu, burada bunu daha görmedik ama,
+
+911
+02:30:31,396 --> 02:30:33,036
+Assemble yapacağız.
+
+912
+02:30:33,855 --> 02:30:34,436
+Neyi çalıştılar?
+
+913
+02:30:34,576 --> 02:30:35,156
+CMP,
+
+914
+02:30:37,076 --> 02:30:40,495
+100, mesela 200 şeklinde çalıştırdık.
+
+915
+02:30:41,536 --> 02:30:42,995
+Daha sonrasında bu komutu,
+
+916
+02:30:44,020 --> 02:30:47,979
+run etmek istediğimiz zaman, şimdi öncelikli olarak bir
+
+917
+02:30:47,979 --> 02:30:51,340
+registerlara bakalım. Register değerleri bunlar.
+
+918
+02:30:52,420 --> 02:30:55,319
+Bakın, mevcut durumda Instruction Pointer değeri 100,
+
+919
+02:30:55,979 --> 02:30:57,979
+Code Segment değeri 07.3f.
+
+920
+02:30:58,611 --> 02:31:04,011
+Ben burada bir adım çalıştırırsam, yani trace edersem, JMP komutunu çalıştırırsam ne oldu bakın?
+
+921
+02:31:04,531 --> 02:31:07,211
+Code segment değeri vermiş olduğum ilk değerle yükleniyor.
+
+922
+02:31:07,671 --> 02:31:10,271
+Instruction pointer vermiş olduğum ikinci değerle yükleniyor.
+
+923
+02:31:10,771 --> 02:31:16,551
+Ama bunu EMU8086'da çalıştırdığımızda bir hatayla karşılaştık.
+
+924
+02:31:17,831 --> 02:31:21,131
+Bu yine bunun emülatör olmasından kaynaklı bir durum olabilir.
+
+925
+02:31:21,231 --> 02:31:23,111
+Aynı değerleri burada da bir vermeye çalışalım.
+
+926
+02:31:24,451 --> 02:31:24,991
+YUSH
+
+927
+02:31:30,644 --> 02:31:53,564
+Evet, bunu kabul etmedi. Yani varsayılan olarak Dostbox'ı kullanacağımızı söylemiştik. Dolayısıyla Dostbox'da çalıştığı için bu geçerli bir komut olarak bunu varsayıyoruz. Tamam mı? Bunun örneğini bu şekilde vermiş olduk. MOV 8086'da çalışmıyor ama Dostbox'da çalıştığı için geçerli bir komut olarak değerlendiriyoruz. Şimdi arkadaşlar, şöyle kaydıralım.
+
+928
+02:31:54,324 --> 02:32:01,724
+Bu koşullu dallanma komutlarıyla ne sağlayabiliriz? Koşullu dallanma komutlarıyla arkadaşlar if'ten else mantıkları oluşturabiliriz.
+
+929
+02:32:01,844 --> 02:32:07,544
+If'ten else mantıklarını bu mantıkla oluşturmuş oluyoruz.
+
+930
+02:32:08,364 --> 02:32:10,144
+Örneğin şöyle bakalım.
+
+931
+02:32:11,024 --> 02:32:12,144
+Üç farklı yapı olabilir.
+
+932
+02:32:13,940 --> 02:32:35,619
+Koşul kontrol ediyorum. Bu kontrol etmiş olduğum koşulun doğru olmasına veya yanlış olmasının her iki kolunda da, doğru veya yanlış her iki kolda da bir işlem yürütüyor olabilirim. Sonrasında da bu if-then-else bile ondan çıktıktan sonra da bir başka üçüncü bir işlemim var. Bir yapı bu şekilde olabilir. If-then-else mantığı yani bu maviyle işaretlemiş olduğumuz if-then-else.
+
+933
+02:32:37,523 --> 02:32:52,923
+if null else mantığı var, şu turuncu ile ifade edilen. Burada koşul kontrol ettikten sonra true kolu doğru, false kolu boş, if'ten else'ten çıktıktan sonra da bir tane sırada işleyeceğim bir komutum var.
+
+934
+02:33:01,203 --> 02:33:11,064
+bir paralel kenarla burada göstermiş olduk. Koşullar bu şekilde veriliyor. Yürütülecek işlemler ise dikdörtgen şeklinde tanımlanmış oluyor. Zaten
+
+935
+02:33:13,236 --> 02:33:39,596
+algoritma derslerinden hatırladığınız durum. Bir de if null then mantığı var. O da yeşile gösterilen duruma karşılık geliyor. Bir koşulumuz var. Bu koşulu kontrol ediyoruz. Koşulun sağlanmadığı durumda bir işlem yürüteceğiz. Yani false callu dolu, true callu boş. If den aslen çıktıktan sonra da yürüteceğim bir komut var. Şimdi arkadaşlar, bir hafızamızda tutmamız gereken temel bir kural olarak
+
+936
+02:33:40,115 --> 02:34:05,056
+şimdiden söylemiş olayım bunu. If, then, else mantıklarında 8086'nın koşullu dallanma komutlarının yapısı gereği, eğer ki bir kolu boş if, then, else'imiz varsa, yani if, null, else veya if, null, then gibi, bunlardan birisi varsa, koşulu, yani şuradaki koşulu kontrol edeceğiz ya, jump, greater, jump, evolve, less or equal gibi kontrol edeceğimiz komut durumun,
+
+937
+02:34:06,388 --> 02:34:16,608
+boş olan kol için yazılması daha az satırla işlemimizi gerçeklememizi sağlayacak. Hafızamızda tutmamız gereken bir kural tekrar söylüyorum.
+
+938
+02:34:17,407 --> 02:34:28,288
+IF, THEN, ELSE bloklarında TRUE veya FALSE kolu boş ise koşulu boş kol için yazdığımızda kodlarımız daha az yer kaplayacak. Nasıl olduğuna şimdi örneklerle bakalım.
+
+939
+02:34:28,288 --> 02:34:29,708
+Örneğin
+
+940
+02:34:30,932 --> 02:34:45,832
+AX'de 0 değeri var mı diye kontrol ediyorum. Varsa BX'e 2 atayacağım, yoksa BX'e 1 atayacağım. Çıktıktan sonra da CX'e 5 değerini atayacağım. Bu komutu nasıl yazabiliriz? Bu kontrolü nasıl yazabiliriz?
+
+941
+02:34:51,924 --> 02:35:18,904
+Şu noktaya geldiğimde AX'de bir değer var. Kabul ediyorum bunu. AX'deki değerimin sıfır olması durumunda BX'e 2 atayacağım. AX'deki değerimin sıfır olmadığı durumda BX'e 1 atayacağım. If, Deners, Kollarım bunlar. Bu koşul kontrolünden çıktıktan sonra da CX'e 5 atayacağım. Bunu 8086 SMC ile nasıl yapabiliriz? Fikri olan var mı arkadaşlar?
+
+942
+02:35:42,515 --> 02:35:47,315
+COM isimli komutun, CMP olduğunu varsayıyoruz değil mi? Compare.
+
+943
+02:35:55,987 --> 02:35:59,067
+Evet, AX'i sıfırla karşılaştırdık.
+
+944
+02:36:00,847 --> 02:36:01,627
+Sonra
+
+945
+02:36:16,308 --> 02:36:18,948
+Şimdi işaretsiz sayılar üzerinden ilerleyelim.
+
+946
+02:36:20,828 --> 02:36:22,668
+JMP equal kabul edilebilir.
+
+947
+02:36:25,308 --> 02:36:29,087
+JMP equal ne demek? Etiket 1 olsun bu.
+
+948
+02:36:29,971 --> 02:36:44,971
+Bu durumda demek ki aşağılarda bir yerlerde etiket 1 var. Etiketten sonra mutlaka iki nokta üst üste koyuyorduk hatırlayacak olursanız. Etiket 1'e gittiğimde ne var? Burada MOV, BX, 2 komutum var. Eğer ki...
+
+949
+02:36:50,579 --> 02:37:08,360
+Eğer ki koşul sağlanmıyorsa, false call'ındaysak ne olacak? False call'ındaysa, jump equal'dan bir sonraki satıra gerçekleyecektik. O da hemen şu anda imlecin olduğu satır. Burada da, yani false call'um şu anda benim yazdığım satır. Burada da MOV, BX, bir değerini kullanacağım.
+
+950
+02:37:08,691 --> 02:37:32,683
+Şimdi dikkat edelim. Eğer ben FOS koluna düşmüşsem, BX'e 1 atadıktan sonra, eğer ki araya bir şey yazmazsam, etiket 1 ile tanımladığım noktaya da gidiyorum. Çünkü strakçıdır bir yapı var. Dolayısıyla ben buraya geldikten sonra, mutlaka FOS kolundan sonra etiket 3 isimli bir yere gitmem lazım. Etiket 3'te ne var? Etiket 3'te de...
+
+951
+02:37:33,620 --> 02:37:39,100
+MOV, CX, 5 değerim var. Değil mi? Bakın, eğer FOS koluna düşmüşsem,
+
+952
+02:37:40,120 --> 02:37:42,159
+CMP, AX, 0 dedim,
+
+953
+02:37:42,960 --> 02:37:51,300
+Jump, Ecul, Etiket 1 dedim. Eğer AX, 0'a eşitse, Etiket 1'e gideceğim. Ama eşit değilse, BX'e 1 atamam lazım. Atadım.
+
+954
+02:37:51,920 --> 02:37:59,640
+Eğer burada Jump satırını yazmazsam, MOV, BX'den sonra MOV, BX, 2 geliyor. Gene True koluna düşüyorum yani. O zaman,
+
+955
+02:38:00,084 --> 02:38:08,204
+MOV, BX, 1 dedikten sonra etiket 3'e gideceğim ki MOV, CX, 3 yani if denersin çıkışındaki işlemi gerçekleştireyim. Bu haliyle bitti mi arkadaşlar?
+
+956
+02:38:12,435 --> 02:38:13,615
+bir eksiğimiz var mı?
+
+957
+02:38:20,084 --> 02:38:21,824
+True kolunu tekrar kontrol edelim.
+
+958
+02:38:22,724 --> 02:38:23,564
+True kolunu kontrol edelim.
+
+959
+02:38:23,744 --> 02:38:29,364
+Eğer eşitse, etiket 1'e gidiyorum, BX'e 2 atadım ve sonrasında CX'e 5 atıyorum.
+
+960
+02:38:29,584 --> 02:38:31,084
+Zaten bu kol bunu gerektiriyordu.
+
+961
+02:38:31,304 --> 02:38:31,943
+Takip edelim.
+
+962
+02:38:32,504 --> 02:38:38,463
+BX'e 2 ata, çıktıktan sonra da CX'e 5 ata şeklinde bunu gerçekleştirmiş oluyoruz.
+
+963
+02:38:38,463 --> 02:38:42,844
+Peki aynı komutu bu sefer ters kontrolle çalıştırabilir miyiz?
+
+964
+02:38:43,123 --> 02:38:43,884
+Ona bakalım mı?
+
+965
+02:38:44,783 --> 02:38:46,156
+Yani CMP...
+
+966
+02:38:46,260 --> 02:38:50,080
+ax, 0 dedik. Ama bu sefer JMP,
+
+967
+02:38:52,080 --> 02:38:53,840
+not equal ile kontrol edelim.
+
+968
+02:38:55,340 --> 02:38:56,880
+Bu şekilde yapsak ne olur?
+
+969
+02:38:58,159 --> 02:39:03,400
+JMP, not equal kolu aslında bizim burada çizmiş olduğumuz false koluna karşılık geliyor değil mi?
+
+970
+02:39:03,540 --> 02:39:04,500
+Hemen şuraya gidelim.
+
+971
+02:39:05,760 --> 02:39:06,780
+Etiket 1'i yazalım.
+
+972
+02:39:08,520 --> 02:39:10,700
+Şurada etiket 3 olsun.
+
+973
+02:39:23,252 --> 02:39:50,312
+Şimdi bir sorumuz var. Az önceki örnekte, JMP satırı yerine, yani şuranın yerine, eğer ki biz MOV CX 5 yazarsak, MOV CX 5'ten sonra tekrar alt satıra geçeceği için MOV BX 2 değeri atar yine. Ama bu akışı kontrol ettiğimiz zaman, AX 0 mı? Değilse BX 1 ata, sonra CX 5 ata ve buradan devam et diyor.
+
+974
+02:39:50,963 --> 02:40:14,703
+Demek ki buraya MOVCX5 yazmak, işaretlediğim yere MOVCX5 yazmak, ekstradan istemediğimiz ve planlamadığımız halde BX'e de iki değerini atamış olur. Bu yüzden dolayı mutlaka hem bu kodun daha az bir kodla istediğimiz fonksiyonun yerine getirilmesine de karşılık geliyor. Burada da belirttiğimiz şekilde yazmalıyız.
+
+975
+02:40:15,700 --> 02:40:42,380
+Şimdi jump not equal durumu için bakalım. Jump not equal ise etikete gittim. Yani eşit değil ise false callundayım yani. Etiket 1'de bu sefer false callunun karşılığı var. False callunda MOV BX virgül 1 değerimiz vardı. MOV BX birden sonra da CX'e 5 atayacağım. Demek ki burada da etiket 3'den sonra mutlaka noktalı bir 2 nokta üst üsteyi unutmuyoruz.
+
+976
+02:40:42,804 --> 02:40:53,263
+cx, 5 değerimi atadım. Eğer ki Jump Not Equal etiket 1, yani Jump Not Equal yanlış ise, yani eşit ise bu sefer True koluna geliyoruz.
+
+977
+02:40:53,363 --> 02:41:02,943
+True kolunda yapacağımız işlem MOV, BX, 2 ve sonrasında da mutlaka Jump Etiket 3 demeliyiz.
+
+978
+02:41:03,443 --> 02:41:20,884
+Yine burada jump etiket 3 demezsek, BX'e 2 atadıktan sonra alt satıra geçecek. O da MOV BX, 1. Dolayısıyla BX'de istediğimiz kontrolü bozan bir durum oluşmuş olacak. Dolayısıyla bunu iki farklı şekilde yapabiliriz. Demek ki şunu görmemiz lazım.
+
+979
+02:41:21,523 --> 02:41:48,323
+Kontrol koşulunu true koluna veya false koluna göre tanımlayabiliyorum. Bu benim elimde. Az önce söylediğim, aklımızda kalması gereken örnek üzerinden de tekrar bunu söyleyecek olursak, eğer ki, biraz sonra örneğini yapacağız, eğer ki true veya false kolu boş olan bir if'ten else yazıyor isek assembly'de, burada koşulumuzu boş kola göre yazarsak,
+
+980
+02:41:48,628 --> 02:41:50,808
+daha az satırda
+
+981
+02:41:50,808 --> 02:41:53,528
+o fonksiyoneliteyi sağlamış olacağız.
+
+982
+02:41:54,028 --> 02:41:57,188
+Bunu da tekrar aklımızda tutarak şimdi ilerleyelim.
+
+983
+02:42:03,412 --> 02:42:18,752
+Bakın buradaki işlemi bu şekilde tanımlayabiliriz. Jump Zero, Jump Equal, bunlar ikisi birbirine eşit de hatırlayacak olursanız. Dolayısıyla burada bir şekilde yazılmış ama biz bunun iki farklı yazılış şeklini de belirtmiş olduk.
+
+984
+02:42:18,752 --> 02:42:27,252
+Şimdi gelelim false call'u boş olan bir if'ten else mantığına. Yapacağımız işlem yine aynı.
+
+985
+02:42:29,716 --> 02:42:47,496
+AX, 0 ile başlıyoruz. Burada öncelikli olarak koşulu burada verildiği haliyle düşünelim. Yani Jump Equal veya Jump Zero durumunda etiket 1'e gidelim. Yani bizim True kolumuz etiket 1'de.
+
+986
+02:42:51,188 --> 02:42:58,948
+false call'umuz etiket 3'te olacak. Belki buranı silmemiz gerekecek. Bakacağız. Şurada iki nokta üst üste olmaması lazım.
+
+987
+02:43:01,108 --> 02:43:09,427
+Evet. Jump Zero etiket 1. AX 0'a eşitse etiket 1'e gidiyor. Etiket 1'de ne yapacağız?
+
+988
+02:43:14,611 --> 02:43:39,811
+etiket 3 ile birlikte iftenas'tan çıkacağımız için CX, 5 dememiz gerekiyor. Peki, FOS kolunda ne var? FOS kolunda hiçbir şey yok. Dolayısıyla FOS kolu doğrudan CX'in 5'e atandığı duruma gitmesi lazım. Yani CMP etiket 3. Buna niye 3 demişiz? Tam 2 olarak değiştirelim.
+
+989
+02:43:41,556 --> 02:43:44,015
+etiket 2'ye gitmemiz lazım. Tamam.
+
+990
+02:43:45,615 --> 02:43:47,956
+Burada az öncekinden farklı olarak ne var?
+
+991
+02:43:48,615 --> 02:43:50,536
+Az önceki yapmış olduğumuz örnekte
+
+992
+02:43:50,536 --> 02:43:53,315
+şurada fos kolu doluydu.
+
+993
+02:43:53,876 --> 02:43:54,576
+Dolayısıyla
+
+994
+02:44:01,139 --> 02:44:20,420
+Şimdi bakın, sorumuz ne? Hemen soruya döneceğim şimdi bir saniye. Neden böyle yapmalıyız öncelikli olarak onu söyleyelim. Bir önceki örnekten farkı ne? Bir önceki örnekte false kolonda bir işlem vardı. Dolayısıyla JMP'dan önce bu işlemi yazmıştık. Şimdi bu işlem olmadığı için direkt bu şekilde yazabiliriz.
+
+995
+02:44:22,939 --> 02:44:26,420
+Etiket 2'yi direkt JMP 0'nun altına koysak.
+
+996
+02:44:27,763 --> 02:44:30,243
+Bu durumda ama şöyle bir şey oluyor. Bakın.
+
+997
+02:44:33,971 --> 02:44:38,952
+her halükarda CX'e 5 atacağımız için olabilecek bir durum.
+
+998
+02:44:39,871 --> 02:44:45,891
+Şimdi az önce söylemiş olduğum kural uyarınca yaparsak sizin dediğinize denk gelecek zaten.
+
+999
+02:44:46,012 --> 02:44:48,211
+Şimdi de onu yapacağız. Aynı şey olacak göreceksiniz.
+
+1000
+02:44:48,711 --> 02:44:50,592
+Şimdi burada koşulu neye göre yazdık?
+
+1001
+02:44:51,332 --> 02:44:53,092
+Dolu olan göze göre yazdık.
+
+1002
+02:44:53,092 --> 02:44:56,092
+Yani AX'in sıfıra eşit olmasında...
+
+1003
+02:44:56,275 --> 02:45:20,956
+kontrol ettiğimiz durumda dolu olan göz koşulunu yazdık. Eğer ki boş olan göze göre koşul yazarsak ne oluyor? Şimdi ona bakalım. Bu aynı zamanda [öğrenci] sizin vermiş olduğunuz örneğin birebir karşılığı olmuş olacak. Yine CMP AX, 0 dedik. Bu sefer boş kolun koşulunu yazıyoruz. Jump Not Zero, etiket.
+
+1004
+02:45:23,059 --> 02:45:23,819
+1 olsun.
+
+1005
+02:45:28,659 --> 02:45:32,340
+Jump Not Zero etiket 1. Eşit değilse etiket 1'e git.
+
+1006
+02:45:34,680 --> 02:45:39,520
+Etiket 1'in içerisinde ne var? Direkt MOV, CX, 5 değeri var.
+
+1007
+02:45:40,459 --> 02:45:46,319
+Eğer bu koşul sağlanmıyorsa, yani turu koluna düşeceksek ne yapacağız?
+
+1008
+02:45:46,479 --> 02:45:50,220
+O zaman da MOV, BX, 1 diyeceğiz.
+
+1009
+02:45:51,092 --> 02:46:03,972
+Bu bakın sizin dediğiniz [öğrenci], senin demiş olduğun durumun farklı bir şekilde yazılmış hali. Burada çıkartacağımız kural veyahut da mantık ise şu olacak arkadaşlar.
+
+1010
+02:46:05,092 --> 02:46:13,332
+Bir kolu boş if then else bloğumuz varsa, burada boş olan kol için koşulu yazarsak,
+
+1011
+02:46:13,683 --> 02:46:38,523
+Bakın ekstradan bir etiket ve altındaki komuttan kurtulduk. Böyle bir durumla karşılaşmış oluruz. Şimdi ilk örneğimizde, yani şurada eğer ki etiket 2'yi doğrudan Jump Zero'nun altına koyarsak, etiket 2'yi buraya koyarsak, bu durumda da şunun bir muadili olmuş oluyor.
+
+1012
+02:46:40,979 --> 02:46:43,619
+O yüzden dolayı bunu anlattıktan sonra aynı şey olmuş.
+
+1013
+02:46:49,492 --> 02:46:53,672
+Biz neyi eksik verdik o zaman MOV8086'da tekrar kontrol edelim.
+
+1014
+02:47:02,644 --> 02:47:04,064
+Mesela bu neden çalışmıyor?
+
+1015
+02:47:05,564 --> 02:47:06,343
+Ha bu çalıştı.
+
+1016
+02:47:07,564 --> 02:47:09,763
+Peki, şöyle yapalım.
+
+1017
+02:47:12,003 --> 02:47:14,343
+Bu da çalıştı. Ne çalışmıyor? F yapalım.
+
+1018
+02:47:15,884 --> 02:47:17,203
+Yanlış mı yazdık acaba az önce?
+
+1019
+02:47:18,783 --> 02:47:19,543
+Bu da çalışıyor.
+
+1020
+02:47:20,123 --> 02:47:23,984
+Az önce far ve ptr yazmıştık hocam fazladan, JMP'dan sonra.
+
+1021
+02:47:24,523 --> 02:47:25,603
+Ha tamam, okey.
+
+1022
+02:47:25,603 --> 02:47:26,523
+Tamam.
+
+1023
+02:47:28,084 --> 02:47:29,724
+Bu şekilde düzeltmiş olalım mesela.
+
+1024
+02:47:38,131 --> 02:47:52,631
+Evet, dolayısıyla şimdi dallanmalarda iftheners bloğunda bir kolumuz boş ise koşulu ona göre yazdığımızda daha az satırla, daha az assembly komutuyla aynı fonksiyonu yerine getirebilir oluyoruz. Buna çok dikkat ediyoruz arkadaşlar.
+
+1025
+02:47:52,631 --> 02:47:58,492
+Şimdi diğer örneğimize geçelim. Diğer örneğimizde bunu yaptık zaten.
+
+1026
+02:48:02,036 --> 02:48:10,036
+Diğer örneğimizde ise bu sefer, bakın neresi boş? Bu sefer true call'u boş. Şimdi önce false call'una göre yazalım.
+
+1027
+02:48:10,835 --> 02:48:23,235
+CMP AX, 0. False call'una göre yazarsak, jump not zero, etiket bir. Etiket birimiz burada. Etiket bire gittiğimizde ne yapacağız?
+
+1028
+02:48:28,084 --> 02:48:33,744
+Sonra da etiket 2, MOV, CX, 5 diyeceğiz.
+
+1029
+02:48:34,924 --> 02:48:43,484
+Şimdi burada koşul sağlanırsa, yani FOS koluna girmişsem, etiket 1'e gittim, BX'e 1'e atadım, çıktıktan sonra da CX'e 5 atadım.
+
+1030
+02:48:43,484 --> 02:48:49,804
+Eğer ki koşul sağlanmıyorsa ne yapmam lazım? Bu durumda CMP doğrudan etiket 2 demem gerekiyor.
+
+1031
+02:48:53,747 --> 02:49:09,868
+kola göre koşulu yazdığım durumda, karşılaştığım durum. Bir de aynı komutu, boş olan kola göre yazarsam, AX, 0, bu sefer boş olan kolun koşulu ne? Jump, 0, etiket 1. Etiket 1'e gittiğimde,
+
+1032
+02:49:11,316 --> 02:49:34,136
+o kol boş, doğrudan iften as'ten çıkıyorum. O zaman MOV, CX, 5 değerle karşılaşıyoruz. Eğer koşul sağlanmıyorsa, false kolunda bir işlem var, onu yapalım. MOV, BX, 1 işlemi. Daha sonrasında da zaten otomatik olarak MOV, CX, 5 komutuna gitmem gerekiyor. Dolayısıyla aynı işlemi gerçeklemiş oluyoruz arkadaşlar.
+
+1033
+02:49:36,659 --> 02:49:40,840
+Yine aklımıza kalması gereken kuralı tekrar hatırlatıyorum.
+
+1034
+02:49:41,340 --> 02:49:50,520
+Bir if-then-else koşulu varsa ve bir kol boşsa, koşulu boş olan kola göre yazarsak işlemlerimiz daha kısalmış oluyor arkadaşlar.
+
+1035
+02:49:51,520 --> 02:49:52,639
+Devam edelim.
+
+1036
+02:49:58,515 --> 02:50:05,175
+Çağırma komutlarına biraz daha detaylı bir şekilde bakıyoruz. Bunların aslında üzerinde durmuştuk.
+
+1037
+02:50:06,075 --> 02:50:10,095
+Detaylı hallerini, fonksiyonlara da tekrar bakarız. O yüzden geçiyorum şimdi.
+
+1038
+02:50:11,375 --> 02:50:14,555
+Burada kesmelerle ilgili önemli olan bir işlem var.
+
+1039
+02:50:15,555 --> 02:50:20,135
+Kesme işlemlerinde, şurada saymış olduğumuz, bakın şurada saymış olduğumuz işlemler var ya,
+
+1040
+02:50:22,772 --> 02:50:48,772
+mikro işlemci otomatik olarak yapıyor. Yani bizim bunları tek tek çalıştırmamız gerekmiyor. Ama mikro işlemcinin otomatik olarak çalıştırmış olduğu işlemlerin assembly komut karşılıkları da bunlar. Bunları yaparak mikro işlemci kesme çağırıyor. Ne demiştik? Bayrakları yığını atıyor. Code segment değerini yığını atıyor. Instruction pointerı yığını atıyor. İki tane bayrağı sıfırlıyor. Daha sonra verilmiş olan...
+
+1041
+02:50:49,268 --> 02:50:57,228
+bir adres içeriğinden, bir tablodan diyelim, bir tablodan instruction pointer ve kod segment değer, yeni değerlerini yüklüyor.
+
+1042
+02:50:57,708 --> 02:51:02,268
+Ve kesme af programı neredeyse onu çalıştırıp geri dönmüş olacak.
+
+1043
+02:51:03,308 --> 02:51:06,448
+Bunu da yine kesme af programlarında detaylı bir şekilde inceleyeceğiz.
+
+1044
+02:51:06,448 --> 02:51:08,528
+O yüzden şimdilik geçiyorum.
+
+1045
+02:51:09,012 --> 02:51:17,552
+INT komutlarının iki çeşidi vardı. Bunlardan bir tanesi INT komutunu yazıp yanına bir 8 bitlik hexadesimal değer yazmak bu.
+
+1046
+02:51:18,112 --> 02:51:22,992
+Az önce bahsetmiş olduğum tablonun kaç numaralı gözündeki adres değerlerini alacağımı belirtiyor.
+
+1047
+02:51:23,572 --> 02:51:28,152
+Veyahut da tek başına INT O, Interrupt Overflow komutunu kullanabilirim.
+
+1048
+02:51:28,152 --> 02:51:30,512
+Interrupt Overflow şuna eşit aynı zamanda.
+
+1049
+02:51:30,963 --> 02:51:40,083
+4 numaralı tablo gözündeki kesme ye eşit. Bunlar daha sonraki konular olduğu için şu anda sadece ön bilgi gibi düşünün bunları.
+
+1050
+02:51:44,948 --> 02:51:48,648
+benzer bir şeyi return komutları içinde söyleyeceğiz.
+
+1051
+02:51:49,347 --> 02:51:59,468
+Call, Interrupt, Jump değil de Call, Interrupt komutları, Code Segment ve Instruction Pointer'ı değiştirme kabiliyetine sahip komutlar.
+
+1052
+02:52:00,148 --> 02:52:06,128
+Bunlar yığına bir takım değerler atıyor ki, bir alt fonksiyon çağırdığımda veya kesme alt programı çağırdığımda,
+
+1053
+02:52:06,128 --> 02:52:10,528
+gideceğim yeni adresten sonra işlemin bitip de geri dönebilmek için,
+
+1054
+02:52:10,995 --> 02:52:35,635
+o anda, çağırdığım andaki segment ve Instruction Pointer değerlerini yığını atıyor. Dolayısıyla, gittiğim yerdeki bir call fonksiyonuyla gitmiş olabilirim veya bir interrup fonksiyonuyla gitmiş olabilirim. İşlemin bittikten sonra geri dönebilmek için ilgili karşılığını kullanmam lazım. Örneğin, call fonksiyonu çağırmışsam return kullanacağım. Çünkü call, yığına sadece Instruction Pointer değerini atar.
+
+1055
+02:52:35,956 --> 02:53:01,075
+Eğer call far pointer ile gitmişsem, bu durumda call far pointer yığına hem instruction pointer hem de kod segment değerini atar. Dolayısıyla dönerken return far kullanmam lazım. Eğer interrupt fonksiyonuna gitmişsem, yani int ile gitmişsem, int komutu yığına hem flag hem kod segment hem de instruction pointer'ı atar. Dolayısıyla bu üçünü birden yığından çeken interrupt return komutunu kullanmam gerekiyor.
+
+1056
+02:53:03,924 --> 02:53:27,504
+Saatle tekrar bakalım. Şimdi burada ek olarak metin içerisinde veya slide içerisinde geçmiş olan bir takım kontrol komutları ve bunlara karşılık gelen bayrak koşullarını verdim. Detaylı bir şekilde incelemek isterseniz buna bakabilirsiniz. İkinci olarak da birbirine eşdeğer olan komutları verdim. Bunları da burada görebilirsiniz.
+
+1057
+02:53:28,180 --> 02:53:43,539
+Şimdi bu konuyla ilgili olarak sormak istediğiniz bir şey var mı arkadaşlar? Yoksa, 13 geçiyor, bir sonraki hafta anlatacağımız konuya küçük bir giriş. İçinde neler var? Sadece onlardan bahsedip dersi bitireceğim. Buraya kadar olanlarla ilgili sormak istediğiniz var mı?
+
+1058
+02:53:46,291 --> 02:53:55,791
+İlk haftadan çok net hatırlamıyorum da, yığın dediğimiz şey işlemciye yakın bir register gibi memori gibi davranan bir şey miydi, bir alan mıydı?
+
+1059
+02:53:55,791 --> 02:54:14,291
+Bir register değil, memoriden bir alan. Yığın dediğimiz şey, memoride bir alan. Örneğin biz ilerleyen aşamalarda egze tipi ve kom tipi programlar göreceğiz. Özellikle egze tipi programda şu olacak, biz kodumuzu çalıştırabilmemiz için 3 tane hafıza bloğunu...
+
+1060
+02:54:14,291 --> 02:54:33,471
+buna ihtiyaç duyuyor. Bunlardan bir tanesi yığın bloğu, bir tanesi data bloğu, bir tanesi de kod bloğu. Kod bloğunun içerisinde bizim yazmış olduğumuz komutlar yer alıyor. Veri bloğunda yapmış olduğumuz tanımlamalar, dizi tanımlaması, değişken tanımlamaları bunlar yer alıyor. Yığın ise
+
+1061
+02:54:35,412 --> 02:54:42,132
+Yine adı üzerinde yığın veri yapısını kullanan, bu mantıkla çalışan bir hafıza bölgesi. RAM içerisinde yer alıyor.
+
+1062
+02:54:42,852 --> 02:54:50,912
+Çalışma mantığı şu, ben yığına bir şeyler attıkça yığını gösteren, yığının en üst değerini gösteren bir stack pointer değerim var.
+
+1063
+02:54:51,012 --> 02:54:57,152
+Bu ikişer ikişer küçülüyor. Demek ki ne olacak? Yüksek adresten düşük adrese doğru gelecek, düşüyor.
+
+1064
+02:54:57,792 --> 02:55:01,132
+Yığından bir şeyler çektiğimde de o adres 2-2 artıyor.
+
+1065
+02:55:01,620 --> 02:55:11,420
+Dolayısıyla tek bir pointerla bir hafıza bölgesi, yığın mantığında, yığın veri yapısında çalışan bir bölge. Yer aldığı yer, REM'de bir...
+
+1066
+02:55:11,424 --> 02:55:39,024
+tanımlama bir bölge. Kullanım amacı bir alt fonksiyona gittiğimde veya bir interrup fonksiyonuna gittiğimde geri dönüş değerlerimi tuttuğum bir bölge olmuş oluyor. Yığını atıyorum çünkü geri dönüş değerlerini. İkinci bir kullanım alanı da fonksiyonlar arası parametre aktarımı yapmak istersen bunu yığın üzerinden yapabilirim. Yani ne yapacağım? Yığına bir takım değerler basacağım. Daha sonra fonksiyon çağıracağım. Fonksiyona gittiğim zaman, alt fonksiyona gittiğim zaman
+
+1067
+02:55:39,424 --> 02:55:53,543
+yığının tepesinden itibaren ne kadar uzaklıkta benim göndermiş olduğum parametreler var bunları biliyor olacağım. Dolayısıyla yığından bu parametreleri çekeceğim. Yığın dediğimiz şey özel kullanımı olan bir remde hafıza bölgesi. Böyle tanımlıyoruz.
+
+1068
+02:56:04,852 --> 02:56:32,832
+Şimdi yığın segment değerini biz kendimiz atamıyoruz. Özellikle bir işletim sistemi söz konusuysa bunu biz atamıyoruz. Bunu mesela programı biz harddisten çektik, RAM'e yüklenecek. Bu program RAM'e yüklenirken sıradaki boş segment değerlerimiz bize otomatik olarak atanıyor. Bu hem kod segment için geçerli, hem data segment için geçerli, hem de veri segmenti için geçerli. Bu üçü için de geçerli.
+
+1069
+02:56:32,852 --> 02:56:59,972
+biz kendimiz atamıyoruz. Biz kendimiz atadığımızda ne olur? Mesela programı çalıştırdık. Debug ortamını gördünüz. Debug ortamında ben girip stack segment değerini değiştirebilirim. Bunu değiştirdiğim zaman başka bir programın kod segmentine denk gelebilir ben değiştirirsem. Bu imkan var ama sıkıntısı var bunun. Başka bir programın kod segmentine denk gelebilir ve ben orayı istemesem de bozmuş olabilirim. O yüzden stack segmenti biz kendimiz
+
+1070
+02:57:00,852 --> 02:57:06,252
+işletim sistemi varsa işletim sisteminin atadığı değer olarak kullanıyoruz. Yoksa da
+
+1071
+02:57:06,252 --> 02:57:12,232
+hayır, segment değerleri üzerinden manuel oynama yapmamıza kesinlikle gerek yok.
+
+1072
+02:57:16,115 --> 02:57:17,556
+Kesinlikle yok. Evet, şimdi
+
+1073
+02:57:17,556 --> 02:57:29,075
+önümüzdeki hafta neleri göreceğiz? Onlara bir kısa giriş yapalım. Yiyin komutlarını göreceğiz arkadaşlar. Yiyin komutları push ve pop şeklinde. İki komut.
+
+1074
+02:57:29,755 --> 02:57:36,796
+Eğer bir 16 bitlik yazmaç veya memori değeri atmak istiyorsan, pop veya çekmek istiyorsan push komutu kullanıyorum.
+
+1075
+02:57:37,299 --> 02:57:44,880
+Eğer bayrak registerini atmak istiyorsam, yığına ve yığından bayrak registerini çekmek istiyorsam da, PUSH ve POP komutlarını kullanıyoruz.
+
+1076
+02:57:46,620 --> 02:57:53,399
+Ben bu slide'ları online yıldız edi.tr'de paylaştım. Yani dersin online yıldız edi.tr sayfasında.
+
+1077
+02:57:54,139 --> 02:57:57,139
+Ders duvarında veya dokümanlarda görebiliyor olmanız lazım.
+
+1078
+02:57:57,780 --> 02:58:03,620
+Dersi takip eden arkadaşlara da sormuş olayım. Erişebilen oldu mu? Genel olarak erişemiyor muyuz?
+
+1079
+02:58:04,435 --> 02:58:06,355
+Onu da bir cevap verseniz, sevinirim.
+
+1080
+02:58:13,268 --> 02:58:29,827
+Tamam. Ders duvarında varsa, tamam. Kim sormuştu? [öğrenci]'e söyleyelim. Ders duvarından erişebiliyoruz [öğrenci]. Biraz belki pull down menülerden konular şeklinde seçmen gerekebilir ama genel olarak indirebiliyoruz.
+
+1081
+02:58:31,208 --> 02:58:35,788
+Daha sonra arkadaşlar döngü komutlarına bakacağız. Döngü komutlarıyla şunları yapabileceğiz.
+
+1082
+02:58:36,399 --> 02:58:50,260
+koşullu dallanma komutlarıyla if, then, else gibi komutları gerçekledik ya, döngü komutlarıyla da for, while, do, while, repeat, until gibi işlemleri gerçekleştireceğiz. Şurada hemen kısacık göstereyim.
+
+1083
+02:58:52,000 --> 02:58:57,319
+Örneğin, for işlemini nasıl yaparız?
+
+1084
+02:59:00,531 --> 02:59:23,592
+for down to you nasıl yaparız, while komutunu nasıl yaparız, repeat until, iç içe iki for gibi işlemleri nasıl yürüteceğimizi önümüzdeki haftada döngü komutlarında göreceğiz. Bunun için loop isimli bir komut grubumuz mevcut olacak. Daha sonrasında da arkadaşlar bayrak komutlarımız var. Sonrasında da logical operator.
+
+1085
+02:59:24,275 --> 02:59:45,736
+logical operators var. Yani logic komutlara bakacağız. Burada test komutu bizim için önemli. Biz şuradaki her bir komutun ne işe yaradığını zaten tahmin edebileceğinizi düşünüyorum. Test komutu özelinde ise durum biraz daha kritik. Tıpkı compare komutunda olduğu gibi. Compare'de ne yapıyorduk?
+
+1086
+02:59:46,048 --> 02:59:52,347
+iki register'ın değerlerinin birbirine göre büyüklük küçüklük karşılaştırmasını yapabiliyorduk.
+
+1087
+02:59:52,808 --> 02:59:59,548
+Subtract işlemi çalıştırıyordu arka tarafta. İşlem sonucu register'da saklanmıyordu. Fakat bayraklar etkileniyordu.
+
+1088
+03:00:00,228 --> 03:00:10,108
+Şimdi test işlemi de, önümüzdeki hafta daha detaylı üzerinde duracağız ama, test işlemi de bir register'daki bitwise kontrolümüzü sağlayan bir yazmaç olacak.
+
+1089
+03:00:12,435 --> 03:00:30,735
+Zaten test işlemi arka planda AND komutunu çalıştıracak. Tıpkı Substack'da Compare'de olduğu gibi. AND komutunu çalıştıracak. Ama registerlar etkilenmeyecek. Sadece bayraklar etkilenecek. Ve herhangi bir bitin 1 veya 0 olma durumunu buna göre kontrol ediyor olacağız.
+
+1090
+03:00:36,020 --> 03:00:52,539
+Önümüzdeki hafta iç, evet tekrar JMP'la gitmemiz lazım. İç içe iki tane if olduğunda da birinci ifin ve ikinci ifin boş kollarına göre varsa, kontrollerimizi yazarsak, daha az satırla komutumuzu gerçekleyebiliyor olacağız.
+
+1091
+03:00:53,079 --> 03:00:57,039
+Önümüzdeki hafta dersin başında iç içe iki tane if örneği de yaparız, daha netleşir.
+
+1092
+03:00:57,039 --> 03:01:04,020
+Ama dediğim gibi, eğer varsa iç içe iki tane ifin de boş kollarına göre komutlarımızı, koşullarımızı...
+
+1093
+03:01:04,020 --> 03:01:09,639
+yazarsak, daha az sayıda satırla bunu gerçeklemiş olacağız. Şimdi teste tekrar geri dönelim.
+
+1094
+03:01:24,180 --> 03:01:27,780
+Çağırma tipi iki tip aslında. Birden fazla tip yok.
+
+1095
+03:01:28,580 --> 03:01:34,020
+Fonksiyonu aynı segmentimizin içerisinde tanımlamışsak bu near function oluyor.
+
+1096
+03:01:34,700 --> 03:01:40,080
+Farklı bir dosyada, farklı bir segmentte tanımlamışsak far call olacak. Bu kadar. İki tip bunlar.
+
+1097
+03:01:40,880 --> 03:01:41,960
+Bunun haricinde bir tip yok.
+
+1098
+03:01:42,580 --> 03:01:48,280
+Eğer tanımlamayı near tipinde yapıp çağırmayı far tipinde yapmaya çalışırsak uyumsuzluk verecek.
+
+1099
+03:01:48,948 --> 03:02:02,708
+tanımlamayı da, çağırmayı da uyumlu olarak yapmamız zaten biz kendimiz tanımladığımız için fonksiyonun tipini, far mı, near mi olacağını, aynı dosyayı yazıyorsak, aynı kod segmentin içine ne yazıyorsak, bu near call zaten.
+
+1100
+03:02:03,368 --> 03:02:10,007
+Farklı bir dosya, farklı bir segmentte yer alan dosya içerisinde yazıyorsak fonksiyonu, bu far call olmuş oluyor.
+
+1101
+03:02:12,927 --> 03:02:14,927
+Test komutuna tekrar geri dönelim.
+
+1102
+03:02:15,311 --> 03:02:33,031
+Test komutu dediğim gibi çağrıldığında end işlemi yapıyor arka planda ve herhangi bir bitin bir olup olmadığını kontrol etmemizi sağlıyor. Bir veya birden fazla bitin bir olup olmadığını kontrol etmemizi sağlayan bir komut. Bu da yine koşullu dallanma komutu üretiyor.
+
+1103
+03:02:35,379 --> 03:02:45,579
+Daha sonrasında ise arkadaşlar öteleme ve döndürme komutlarımız var. Yani shift ve rotate komutları. Bunların nasıl çalıştığını inceleyeceğiz ve dersimizi tamamlamış olacağız.
+
+1104
+03:02:46,439 --> 03:02:50,699
+Bu haftayla ilgili olarak arkadaşlar genel olarak bir sorumuz var mı? Bakalım.
+
+1105
+03:02:53,139 --> 03:02:59,760
+Bakıyorum şimdi soruya. Int fonksiyonu tüm mikro işlemcilerde mevcut mu? Evet, tüm işlemcilerde mevcut.
+
+1106
+03:03:02,835 --> 03:03:14,515
+Mesela, klavyeden bir şey yazdığımız zaman, bunun el alınması yine interrup tabanlı olarak gerçekleşiyor veya mouse oynattığımızda, interrup tabanlı olarak mouse değerimiz kontrol edilmiş oluyor.
+
+1107
+03:03:19,283 --> 03:03:21,523
+Mesela bunu şöyle görebiliriz.
+
+1108
+03:03:38,131 --> 03:03:39,871
+Kitabımızda da vardı bu zaten.
+
+1109
+03:03:41,531 --> 03:03:45,351
+Burada belirtmemiş. Kitaptaki örnek üzerinden bakayım şimdi.
+
+1110
+03:03:45,891 --> 03:03:47,571
+Hemen kitapta şeyler vardı çünkü.
+
+1111
+03:03:48,471 --> 03:03:51,771
+Hangi instruction, hangi işlemcide var onlar yazıyor.
+
+1112
+03:03:52,691 --> 03:03:54,271
+110 numara sayfadaymış.
+
+1113
+03:03:56,111 --> 03:03:58,971
+Burada belirtildiğine göre yani bu kitap
+
+1114
+03:03:58,971 --> 03:04:03,191
+486'ya kadar olan komutları incelemiş durumda.
+
+1115
+03:04:03,731 --> 03:04:12,911
+8086'da, 286'da, 386'da, 486'da in komutu mevcut. Diğerlerinde de mevcuttur diye söyleyebiliriz.
+
+1116
+03:04:15,231 --> 03:04:21,231
+Üçüncü sunumu birazdan yüklerim arkadaşlar. Ders bitince yüklerim. Yine online yıldız edi tereye yükleyeceğim.
+
+1117
+03:04:29,971 --> 03:04:54,951
+büyük bir sayıdan küçük bir negatif sayı çıkartırken yani pozitif eksi negatif diyelim. Yani bunu pozitif artı pozitif olarak düşünebiliriz. Çok küçük bir negatif sayının işaretini döndürdüğümüz zaman bu da pozitif bir sayı yapacak değil mi? İki tane büyük pozitif sayıyı topluyorum yani. İki tane pozitif büyük sayıyı topladığımızda şöyle bölmeye çalışalım.
+
+1118
+03:04:56,979 --> 03:05:00,799
+İki tane pozitif büyük sayıyı topladığımızda arkadaşlar ne olabilir mesela?
+
+1119
+03:05:08,371 --> 03:05:10,371
+8 bit üzerinden hareket edelim.
+
+1120
+03:05:11,571 --> 03:05:14,371
+Bunları toplayacağız tamam mı? Bunları toplarken
+
+1121
+03:05:14,971 --> 03:05:18,371
+hatta şunları da 0 yazalım da biraz daha toplamamız kolay olsun.
+
+1122
+03:05:20,731 --> 03:05:24,371
+Bunları toplayacağız. Şimdi bunları topladığımız zaman ne çıkacak sonuç?
+
+1123
+03:05:31,123 --> 03:05:36,704
+Böyle bir sonuç çıkacak değil mi? Bak, iki tane pozitif sayı topladığım halde sonuç negatif çıkıyor.
+
+1124
+03:05:37,844 --> 03:05:44,564
+Gördük mü? Bu işte şu anlama geliyor. Yapmış olduğum toplama sonucu tuz komplement aritmetiğe sığmamış oluyor.
+
+1125
+03:05:49,203 --> 03:06:16,043
+Bu da overflow demek. Yani bu aralığa sığmayan bir toplam. Normalde buraya 0, 1, 1, 1 yazabileceğim en büyük sayı şu zaten. En üstte vermiş olduğumuz değer. Zaten overflow'u şöyle tanımlayacağız arkadaşlar. Neyi yanlış yazdım gene? Ha evet. 1, 1, 1, 1, 1, 0, 1, 1. Tamam. Bu şekilde. Evet. Sonucu da eşaretli gibi oluyor. Aklımıza tutmamız gereken bir nokta da şu var.
+
+1126
+03:06:16,755 --> 03:06:38,635
+İki tane pozitif sayıyı topluyorsam, tuz komplement aritmetikte ve işlem sonucu negatif çıkıyorsa, overflow var. İki tane negatif sayıyı topluyorsam, işlem sonucu pozitif çıkıyorsa, tuz komplement aritmetikte yine overflow var. Tamam mı? Overflow olduğu durumda, işaret biti...
+
+1127
+03:06:39,476 --> 03:06:44,996
+İki pozitif sayının toplamında işaret bitinin negatif çıkması, iki pozitif sayının toplamında işaret bitinin negatif çıkması,
+
+1128
+03:06:45,756 --> 03:06:52,616
+overflow, iki tane negatif sayının toplamında işaret bitinin pozitif çıkması da overflow olarak ortaya çıkıyor.
+
+1129
+03:06:58,548 --> 03:07:02,147
+Bunların haricinde arkadaşlar sorunumuz varsa alabilirim.
+
+1130
+03:07:09,940 --> 03:07:35,699
+başka sorunuz yoksa. Ben de herkese teşekkür ediyorum. İyi günler dilerim herkese. Yine herhangi bir sorunuz olursa arkadaşlar mail üzerinden veyahut da başka kanallardan da sorabilirsiniz. Yine görüşme saatleri tanımladım. Onu da Avesis'ten duyurdum. Bu saatlere göre de randevu olarak.
+
+1131
+03:07:36,948 --> 03:07:42,708
+sormak istediklerinizi sorabilirsiniz yine. Herkese iyi günler diliyorum. Kolay gelsin.
+
+1132
+03:07:45,228 --> 03:07:54,408
+Hafta, evet haftaya bakalım haftaya kaçı oluyor? Haftaya tam 29'u dersimiz yok. Haftaya ders yok. Resmi takl.
+
+1133
+03:07:59,731 --> 03:08:01,664
+Görüşmek üzere herkese iyi günler.

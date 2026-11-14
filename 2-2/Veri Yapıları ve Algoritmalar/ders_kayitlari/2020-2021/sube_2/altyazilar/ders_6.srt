@@ -1,0 +1,251 @@
+1
+00:03:23,443 --> 00:03:24,524
+Evet, merhaba arkadaşlar.
+
+2
+00:03:30,003 --> 00:03:45,763
+Kaç kişiyiz? 39 katılım. Peki. Uygulama laboratuvar saatimize yine hoş geldiniz. Geçen hafta verdiğim açık uçlu bıraktığım problemleri çalıştınız mı? Var mı çalışan?
+
+3
+00:03:46,228 --> 00:03:56,548
+Hocam, ilk problem için optimal bir çözüm bulamadım. Çözüm buldum ama biraz brute force'tu. İkinci problem zaten bir matematik problemi gibi. Yani paterne bulduğunuz zaman çıkıyor.
+
+4
+00:03:56,948 --> 00:03:58,408
+Aynen. Ne buldun paterne?
+
+5
+00:03:58,748 --> 00:04:07,108
+Hocam, eğer ki bir sayının tam karası ise ilk başta olanın tersi oluyor. Çünkü 3-2 defa olduğu için bir kere sayıyoruz aynı kişiye olarak.
+
+6
+00:04:08,500 --> 00:04:13,139
+şey değilse, sayının karesi değilse, o zaman ne başladıysa o çıkıyordu sanırım.
+
+7
+00:04:13,579 --> 00:04:14,860
+Yani bu şekilde paterniz vardı.
+
+8
+00:04:14,919 --> 00:04:20,139
+Aynen o şekilde. Tam kareler şey yapıyor değil mi? Tam kareler kurtuluyor.
+
+9
+00:04:20,139 --> 00:04:24,100
+Çıkıyorsa ilk açık bırakırsa ilk açık kalıyor.
+
+10
+00:04:25,716 --> 00:04:50,216
+Okey. Yani başta kapalı ile başlamıştık ya. Hani birinci herkesi açmıştı. Sonuçta tam kare olanlar dolapları kurtarıyor. Kapılar açık kalmıyor. Ama tam kare olmayan herkesin dolabı açık kalıyor. Evet, bir matematik problemi tabii bu aslında ama en azından bir düşünce, bir problemi çözüm yaklaşımı getirirken acaba beni neler bekliyor, nasıl bir süreç bekliyor şeklinde güzel bir yaklaşım.
+
+11
+00:04:51,216 --> 00:04:53,716
+Okey. Diğer problem, ilk problem.
+
+12
+00:04:53,716 --> 00:04:57,256
+Bu problem hakkında ne optimal çözüm bulamadım dedin onu biraz açıyorum.
+
+13
+00:04:57,256 --> 00:05:03,276
+Hocam yani karmaşıklık her türlü Ankara oluyor. Dizi üzerine gezmek dışında bir yöntem bulamadım. Farklı bir dizi oluşturmak var.
+
+14
+00:05:03,656 --> 00:05:09,656
+Ama o zaman da eğer ki integer bir sayıdan bahsediyoruz. Yani yüksek şeyli sayılar gelebilir. Çok büyük bir yer ayınmamız gerekiyor.
+
+15
+00:05:10,076 --> 00:05:19,376
+O yüzden direkt brute force olarak aramak dışında belli şeylerle işte kısıtlayabiliriz wild kontrolleriyle gibi ama yine dediğim gibi Ankara çıkıyor karmaşıklık.
+
+16
+00:05:19,376 --> 00:05:21,076
+Peki, peki. Okey.
+
+17
+00:05:21,716 --> 00:05:43,836
+Ama mesela şunu tartıştın ve bu çok güzel bir şey. Evet mesela bir dizi kullanabilirim ya da yedek dizi kullanabilirim ya da yedek veri yapısı kullanabilirim gibi. O zaman da işte ne oldu? Space kompleksi artmış oldu. Ama ben time ve space kompleksliği bazen dengelemek zorunda kalabilirim ya da bazen space kompleksliği tercih edebilirim değil mi?
+
+18
+00:05:44,307 --> 00:06:01,347
+kısıtlı kaynaklarım vardır mesela. O zaman ne yapacağız? Tabii ki ona uygun, oradaki kompleksliği, hani bir gola gördük ya bu hafta, bu notasyondaki karmaşıklığı mümkün olunca azaltma yoluna gitmeye gayret edeceğiz demektir. Bu tabii ki.
+
+19
+00:06:02,067 --> 00:06:04,307
+Şey peki, bu hafta pazartesi...
+
+20
+00:06:04,660 --> 00:06:12,019
+En son hatırlarsanız böyle bir sequential ya da linear search ve binary search'tan bahsettik. Bunları denediniz mi?
+
+21
+00:06:13,560 --> 00:06:18,400
+Hocam dizi sıralı değil demiştik. O yüzden binary search pek mantıklı değil.
+
+22
+00:06:18,840 --> 00:06:21,780
+Tamam. Yani onun için önce bir diziyi sıralamamız lazım o zaman değil mi?
+
+23
+00:06:22,860 --> 00:06:30,740
+Ya da dizinin bir şekilde sıralı olmasını garanti etmemiz lazım. Hani böyle insertion sort'a benzer bir mantıkla belki. Olabilir mi?
+
+24
+00:06:32,723 --> 00:06:37,484
+Yani gelen, biz bir dizi olarak mı alacağız, sırayla mı alacağız verileri ona bağlı olarak?
+
+25
+00:06:38,364 --> 00:06:48,364
+İşte yani o tabii değişir, problemin doğasına göre değişir. Hani bazı problemlerde siz verileri aldığınız için onları zaten sıralı olarak hani insertion sort ede ede tutabilirsiniz.
+
+26
+00:06:48,364 --> 00:06:55,744
+Ya da karışık bir sırada geliyorsa evet o zaman yapamazsınız. Önceden bir sıralama yapmanız gerekir.
+
+27
+00:06:55,823 --> 00:07:00,723
+Şey için nedir? Binary search yapabilmek için. Ama nihayetinde eğer...
+
+28
+00:07:00,723 --> 00:07:15,323
+Eğer sıralı olduğunu biliyorsanız dizinin binary search kullanabilirsiniz. Hani ne bileyim oturup yazdınız mı, denediniz mi? Hani low, mid, high konusunda bir çekinceleri olanlar ya da kafası karışık olanlar vardı. Baktılar mı acaba diye merak ettim.
+
+29
+00:07:22,163 --> 00:07:33,063
+Öyle mi? Peki. Okey. Başka var mı? [öğrenci]'den başka söz almak isteyen?
+
+30
+00:07:41,204 --> 00:08:04,704
+Başka? Yok. Peki. Okey. Oldu o zaman arkadaşlar. Bu haftaki mevzuya geçelim o zaman. Evet. Şimdi saatimiz kaçı gösteriyor? Saat 12.10 geçiyor. Üçüncü haftadayız. Değil mi? Üçüncü haftamız ve üçüncü uygulama dersimiz.
+
+31
+00:08:09,588 --> 00:08:18,108
+Top sizde olacak. Yani ben uygulama yapmayacağım ya da ben örnek çözmeyeceğim. Fakat size bir challenge vereceğim.
+
+32
+00:08:18,968 --> 00:08:29,708
+Ki hatta az önce şey yaptım. Online Yıldız'da yayını aldım kendisini. Bunun adı aslında quiz olacak. Öyle söyleyebiliriz.
+
+33
+00:08:29,708 --> 00:08:34,148
+İlk quizimizi bugün olacağız. Bu ders içinde olacağız.
+
+34
+00:08:34,740 --> 00:08:44,740
+Saatimiz 12.10 geçiyor. 12.15 de aktif hale gelecek. Belki şu anda görebiliyorsunuzdur yayınlandığını. Bir kontrol edin bakayım.
+
+35
+00:08:51,379 --> 00:09:06,799
+Gözüküyor. Tamam, çok güzel. İşte dört dakika sonra buna bağlanabilirsiniz ve orada yazan quizdeki problemi istenenleri verecek şekilde çözmenizi isteyeceğim.
+
+36
+00:09:07,316 --> 00:09:25,836
+Bunun dışında ekstradan şu anda farklı bir şey söylemeye gerek yok. Siz de son 4 dakikada gerekli hazırlıklarınızı yapın. Çıkarın kağıtları gibi oldu biraz. Çıkarın kağıtları, kalemleri, klavyeleri, neyse her şeyi hazır edin.
+
+37
+00:09:26,207 --> 00:09:34,127
+Saat 12'yi çeyrek geçe quiz sizi karşılayacak. Daha doğrusu siz kuize erişebilir olacaksınız.
+
+38
+00:09:34,687 --> 00:09:38,347
+Süresi de 45 dakika olacak. Bakın bu 45 dakikaya her şey dahil.
+
+39
+00:09:38,607 --> 00:09:59,367
+Yani, hocam yüklerken kapandığı kabul etmiyoruz artık. Mail ile yollamayı kabul etmiyoruz. Bunları zaten başta hatırlarsanız, ödev kuralları, genel ödev ya da proje kuralları şeklinde bunları sizle tanıttık. Ve dersin duvarında da zaten paylaştık. Hani orada yazan temel prensiplere her zaman uymanız gerekiyor. Burada da uymanız gerekiyor.
+
+40
+00:10:00,532 --> 00:10:06,852
+Bu şekilde bir şey, yine aslına bakarsanız hani bir ısınma olsun, bir ısınma turu, bir düşünün.
+
+41
+00:10:06,852 --> 00:10:15,211
+Acaba nasıl çözebilirim? Özellikle de işte bu karmaşıklıklar açısından nasıl bir çözüm geliştirmeliyim?
+
+42
+00:10:15,332 --> 00:10:19,992
+Benden isteneni nasıl karşılamalıyım? Şeklinde biraz kafa yormanızı istiyorum.
+
+43
+00:10:20,492 --> 00:10:20,852
+Ve tabii ki...
+
+44
+00:10:21,620 --> 00:10:46,819
+En önemlisi mutlaka tekil çalışın, ekip çalışması yapmayın. Kodların hepsini şeyden geçireceğiz. İki ayrı programımız var. Bunlardan benzerlik kontrollerinden geçireceğiz. O yüzden hani döngüyü değiştirdim, değişkeni değiştirdim, işte o while'la yapmıştı, ben for'la yaptım falan bunlar yemiyor. O yüzden herkes kendi çözümünü geliştirirse daha iyi olacaktır diyoruz.
+
+45
+00:10:49,620 --> 00:10:59,519
+Instagram olmadan C kodu olur mu? Kod yazabilir misiniz? Önce bir düşünmek lazım değil mi? Bir algoritma tasarlamak lazım. Bakalım burada sizi neler karşılayacak bu ödevde ya da bu quizde diyelim.
+
+46
+00:11:01,460 --> 00:11:17,620
+Sistemde tabii kısa sınav olarak seçtik. Hani quiz eşittir kısa sınav ama türü olarak ödev seçtik. Çünkü dosya yüklemeniz gerekecek ya. O yüzden ödev olarak görmeyin. Bunu quiz olarak görün. Bu ilk quiziniz olacak. Böyle bir bakalım ne kadar...
+
+47
+00:11:17,620 --> 00:11:24,579
+Şu algoritma olaylarına kendimizi alıştırabildik ya da ne kadar böyle bir çözüm geliştirebiliyoruz.
+
+48
+00:11:24,879 --> 00:11:26,980
+Kısıtlı zamanda basit bir problem olacak zaten.
+
+49
+00:11:27,460 --> 00:11:30,139
+Onları hep birlikte bir görmek istiyoruz.
+
+50
+00:11:31,279 --> 00:11:32,480
+Evet, soru var mı başka?
+
+51
+00:11:44,692 --> 00:11:48,851
+Yok, teki, o zaman.
+
+52
+00:11:53,299 --> 00:11:57,299
+Bir dakika sonra artık erişebilir halde olacaksınız.
+
+53
+00:12:02,163 --> 00:12:04,384
+Size başarılar diliyorum.
+
+54
+00:12:05,983 --> 00:12:06,844
+Elle mi yazacağız?
+
+55
+00:12:07,344 --> 00:12:11,003
+Hayır, tabii ki C kodunu bir editörde yazacaksınız.
+
+56
+00:12:11,003 --> 00:12:14,344
+Yani herhalde derleyeceksiniz bir şeyleri deneyeceksiniz değil mi?
+
+57
+00:12:14,803 --> 00:12:17,663
+Bunları doğal olarak elle, kağıda yazmayın.
+
+58
+00:12:18,032 --> 00:12:39,192
+Sizden kaynak kod dosyası zaten ödevde şimdi göreceksiniz. Kaynak kod dosyasını isteyeceğiz. Aman öyle sakın fotoğrafını falan çekip yollamaya çalışmayın. Onlar değerlendirme dışı kalır. O konuda dikkat edin yani sizden eğer C kodu isteniyorsa kaynak dosyası isteniyor demektir. ANSIC standartlarında yazmayı da unutmayın. Bunu da tekrardan hatırlatmış olayım.
+
+59
+00:12:42,152 --> 00:12:42,912
+Evet.
+
+60
+00:12:44,755 --> 00:12:48,215
+Şöyle ben de sisteme doğru geçiş yapıyorum.
+
+61
+00:12:53,107 --> 00:12:53,899
+Evet.
+
+62
+00:12:57,043 --> 00:13:02,043
+Şu an itibariyle evet katılımlar başladı. Güzel.
+
+63
+00:13:08,340 --> 00:13:09,459
+Başarılar arkadaşlar.

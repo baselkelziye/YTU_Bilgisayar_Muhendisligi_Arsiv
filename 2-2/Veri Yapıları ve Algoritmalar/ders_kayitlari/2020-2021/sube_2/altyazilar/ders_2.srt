@@ -1,0 +1,1419 @@
+1
+00:05:35,220 --> 00:05:36,800
+Evet, merhaba arkadaşlar.
+
+2
+00:05:39,560 --> 00:05:43,780
+Veri Yapıları Algoritmalar'ın uygulama saatine hoş geldiniz.
+
+3
+00:05:44,320 --> 00:05:45,920
+Laboratuvar uygulama saati.
+
+4
+00:05:46,840 --> 00:05:51,880
+Şimdi bugün yaklaşık bir saat kadar sanıyorum bir ders planladım.
+
+5
+00:05:52,700 --> 00:05:53,820
+Yetiştiği kadar yapacağım.
+
+6
+00:05:54,000 --> 00:05:58,040
+Çünkü saat 1'de fakülte yönetim kurulu toplantısı var.
+
+7
+00:05:58,100 --> 00:05:59,160
+Ona katılmam gerekiyor.
+
+8
+00:05:59,760 --> 00:06:02,660
+Bu nedenle dersi orada kesmek durumunda kalacağız.
+
+9
+00:06:03,827 --> 00:06:13,827
+O zaman hızlıca başlayalım. Pazartesi günkü teorik dersimizde hatırlarsanız önce bir dersimizi tanıdık. Ondan sonra da...
+
+10
+00:06:14,612 --> 00:06:42,612
+Neler yapacağımızdan bahsettik. Kaynaklarımız ve kendimizi nasıl değerlendireceğiz. Bunlara üzerinde durduk ve bir giriş yaptık. Özellikle de veri nedir? Veri yapısı ne demektir? Algoritma ne demektir? Algoritma nasıl ifade edilir? Sözde kodla nasıl gösteririz? Akış diagramıyla nasıl gösteririz? Nelere dikkat etmemiz gerekli? Bunların üzerinden geçtik. Tanımlarıyla birlikte ve bir algoritmanın taşıması gereken özelliklerimiz.
+
+11
+00:06:42,612 --> 00:06:57,312
+Sonrasında da C dili ile alakalı bu ders kapsamındaki geliştirmelerimizi C ile yapacağımız, düz ansisi ile yapacağımız için oradaki hatırlatmaları ince noktaların üzerinden biraz geçtik.
+
+12
+00:06:58,687 --> 00:07:07,467
+Sizlerle basit, aslında çok basit değil ama zor bir problemin basit bir çözümünü birlikte tasarlamaya çalışacağız.
+
+13
+00:07:08,007 --> 00:07:11,367
+Yani bir algoritma geliştireceğiz aslında bakarsanız ilk başta.
+
+14
+00:07:11,927 --> 00:07:17,788
+Sonra da nasıl işlediğini, bu algoritmanın nasıl bir tasarıma sahip olduğunu beraber bakacağız.
+
+15
+00:07:19,267 --> 00:07:25,587
+Daha sonra da yine C ile alakalı birkaç ufak tefek kod parçası paylaşacağım.
+
+16
+00:07:26,687 --> 00:07:28,807
+Özellikle pointer konusu.
+
+17
+00:07:30,228 --> 00:07:43,687
+Function pointer ya da pointerlarla dizi oluşturmak gibi dinamik bellek alokasyonu gibi konuların üzerinden bir hatırlamak için yine tekrar hızlıca kodlarla geçeceğiz.
+
+18
+00:07:44,408 --> 00:07:49,587
+İşte type defter, structure bunlar nedir, nasıl kullanılır gibi ufak tefek örneklere bakacağız.
+
+19
+00:07:50,128 --> 00:07:57,908
+Sonrasında da yine bazı ödevlerde ya da uygulamalarda çeşitli simülasyonlar yapmanız gerekebilir.
+
+20
+00:07:58,228 --> 00:08:12,728
+ile ilgili çok basit yine bir örnek nasıl bir şey yapabiliriz bunları C ile nasıl gerçekleştirebiliriz konusunda bir örnek yaparak bugünü tamamlayacağız. Peki şimdi algoritma geliştirmek böyle
+
+21
+00:08:13,151 --> 00:08:31,031
+Hani kitapta işte açın, şu chapter'ı okuyun, bunu yaptıktan sonra da şu chapter'ı okuyun, hadi bakalım şu soruları çözün, aferin size algoritma geliştirmeyi öğrendiniz diyebileceğimiz bir konu değil maalesef. [öğrenci] bir soru sormuş, her hafta laboratuvar dersi işlenecek diyebilir miyiz? Şöyle.
+
+22
+00:08:31,519 --> 00:08:37,559
+Genellikle ders olmasa bile soru cevap sorularınız olabilir diye ben burada olacağım.
+
+23
+00:08:37,659 --> 00:08:41,259
+Artı biliyorsunuz, geçen pazartesi söyledik.
+
+24
+00:08:42,659 --> 00:08:49,700
+Bazı haftalarda quizler, bazı haftalarda bu uygulama saatlerinin içinde tamamlamanız gereken ödev çalışmaları olacak.
+
+25
+00:08:49,700 --> 00:08:53,259
+Bu nedenle katılırsanız sizin adınıza iyi olur.
+
+26
+00:08:53,679 --> 00:08:56,360
+Bu değerlendirmeleri kaçırmamış olursunuz.
+
+27
+00:08:56,860 --> 00:08:58,799
+Kaçırırsanız yapacak bir şey yok tabii ki bu konuda.
+
+28
+00:09:00,211 --> 00:09:07,531
+Hani vizelin mazereti var ama pop quizlerin ya da ödevlerin malum biliyorsunuz böyle şeylerin mazereti zaten olmaz.
+
+29
+00:09:08,532 --> 00:09:21,572
+Peki, şimdi biz algoritma geliştirirken ne yapmaya çalışıyoruz? Elimizde bir tane problem var ve bu problemi verilen kısıtlara göre mümkün olan en iyi şekilde çözmeye çalışıyoruz.
+
+30
+00:09:21,572 --> 00:09:36,211
+Ama bu işi böyle bir kerede yapmak, bir adımda muhteşem bir çözüm üretmek, bütün kısıtları karşılayan güzel bir yöntem ortaya koymak her zaman mümkün olmuyor maalesef.
+
+31
+00:09:36,532 --> 00:09:38,872
+O zaman ne yapmalıyız ya da nasıl yaklaşmalıyız?
+
+32
+00:09:38,971 --> 00:09:47,352
+Bir kere, zaten böl ve yönet de bunu bol bol yapacağız ama çiğneyebileceğimiz bir boyutta lokmalar ağzımıza almaya çalışacağız.
+
+33
+00:09:47,532 --> 00:09:49,912
+Nasıl yapalım? O zaman problemi belki ufaltabiliriz.
+
+34
+00:09:49,912 --> 00:09:59,872
+Ya da önce çok karmaşık ya da çok efektif bir algoritma, mesela haftaya görmeye başlarız, yavaş yavaş algoritmik karmaşıklık.
+
+35
+00:10:00,000 --> 00:10:21,059
+kavramlarını böyle çok karmaşık bir şey yapmadan ya da çok efektif, zaman efektif çalışan bir algoritma yapmadan önce bir düzgün çalışan, problemi doğru çözen, en önemli şey doğru çözmesi. Yani yanlış çözüyorsa istediği kadar efektif olsun benim için değerli bir yöntem değildir. Doğru çözen ve basit.
+
+36
+00:10:21,620 --> 00:10:28,180
+Hem gerçekleştirmesi hem de düşünmesi basit. Belki bildiğimiz adımları işleterek bir algoritma tasarlarız.
+
+37
+00:10:28,579 --> 00:10:33,099
+Bu algoritma ilk çözümümüz diyelim hani böyle bir initial solution diyelim buna.
+
+38
+00:10:33,779 --> 00:10:36,180
+Bu ilk çözüm bize ne sağlıyor peki?
+
+39
+00:10:36,659 --> 00:10:39,680
+Mesela elimizde küçük veriler var, küçük veri kümeleri var.
+
+40
+00:10:39,680 --> 00:10:45,440
+İşte 100 örnek, 1000 örnek gibi. Bunlar üzerinde hızlı analizler yapabiliriz.
+
+41
+00:10:45,620 --> 00:10:47,200
+Gerçekten doğru çalışıyor mu?
+
+42
+00:10:47,635 --> 00:10:52,635
+uç nokta problemlerini test edebiliriz ve böylece yöntemimizin doğru çalıştığını gösterebiliriz.
+
+43
+00:10:53,975 --> 00:10:54,096
+Ve
+
+44
+00:10:54,464 --> 00:11:05,264
+Aynı zamanda bu çok karmaşıklığı düşürülmüş olmayan ama hızlı bir şekilde geliştirilmiş olan basit algoritmamız bizim için bir temel oluşturur.
+
+45
+00:11:05,604 --> 00:11:11,824
+Bir baseline oluşturur. Nedir bu baseline? Performans ölçümü için mesela temel bir seviye.
+
+46
+00:11:12,124 --> 00:11:16,403
+10 saniyede mi çalışıyor? 1000 tane örnek için 10 saniyede mi çalışıyor örneğin?
+
+47
+00:11:16,788 --> 00:11:24,567
+Belki ben onun sonrasında daha güzel, daha efektif bir algoritma tasarımıyla 5 saniyeye indireceğim. Belki de 1 saniyeye indireceğim.
+
+48
+00:11:24,908 --> 00:11:28,827
+Yani böyle logaritmik olarak 10 kat daha hızlı çalışmasını sağlayacağım.
+
+49
+00:11:29,148 --> 00:11:39,148
+Ama en azından ben bu problemi öyle ya da böyle şu kadar zamanda, şu performansla çözebiliyorum şeklinde bir karşılaştırma temeli oluşturmamızı sağlar.
+
+50
+00:11:39,148 --> 00:11:44,148
+Sonrasında da bu algoritmayı üzerinde oturup gerçekten de iyi düşünmek.
+
+51
+00:11:44,788 --> 00:12:10,508
+İyileştirmek ve yapılabilecek bütün hem algoritmik yaklaşımlarla, algoritmik çözüm yöntemlerinin denenmesiyle hem de belki de alternatif veri yapılarının kullanılmasıyla bu algoritmamızı iyileştirerek, mesela daha iyi zamanda çalışan, daha kısa zamanda ya da daha az bellek kaplayan bir hale getirerek böyle iterasyonda daha sonra daha iyi bir çözüm oluşturmamız daha doğru olacaktır.
+
+52
+00:12:10,831 --> 00:12:18,812
+Şimdi burada dediğim gibi algoritma bir çözüm yöntemi, bir probleme çözüm getirme tasarımı, bir yolu.
+
+53
+00:12:18,932 --> 00:12:22,011
+Ama her zaman tek başına algoritma yeterli değil.
+
+54
+00:12:22,152 --> 00:12:23,372
+Veri yapıları da çok önemli.
+
+55
+00:12:23,491 --> 00:12:29,971
+Veri yapıları ve algoritmalar zaten bu yüzden derslerde veri yapıları ve algoritmalar bütün kör kılımlarda bu şekilde yer alıyor.
+
+56
+00:12:30,312 --> 00:12:31,412
+Bunlar her zaman el ele.
+
+57
+00:12:31,852 --> 00:12:34,632
+Yani ayrılmaz parçalar gibi düşünebilirsiniz.
+
+58
+00:12:38,355 --> 00:12:54,695
+İyi bir çözüm getiren, çok basit bir algoritma olabilir. Ya bu ne? İki tane for, bir tane if yazmışlar falan diyebilirsiniz. Ya da basit bir karşılaştırma, sonra da bir döngüyle işi bitiriyor diyebilirsiniz. Ama belki de o gücünü karmaşık ya da efektif çalışan bir veri yapısından almaktadır.
+
+59
+00:12:55,039 --> 00:13:07,220
+Ya da tam tersi olabilir. Acayip karmaşık bir algoritma. Okuduğunuzda anlayamıyorsunuz belki ya da çok zorlanıyorsunuz ama sadece dizi kullanıyor. Çok basit veri yapısı kullanıyor. Başka hiçbir şey kullanmıyor. Olabilir.
+
+60
+00:13:07,220 --> 00:13:23,039
+Yani burada bir şey yok. Kesin hani illa şuna yüklenin, öbürüne boşverin gibi bir durum söz konusu değil. Duruma göre, probleme göre, ortama göre veri yapılarını ve algoritmaları birlikte el ele düşünerek birlikte...
+
+61
+00:13:23,039 --> 00:13:30,019
+Bir çözüm, yani bütünleşik bir çözümü kurgulamanız aslında performansı arttırmak için daha iyi bir yol olacaktır.
+
+62
+00:13:30,519 --> 00:13:38,379
+Başka ne yapabilirim? Şey yapabilirim, parambol benim. Düz bir mesela sıralama algoritmasını yazdım.
+
+63
+00:13:38,379 --> 00:13:40,379
+Böyle yine.
+
+64
+00:13:41,139 --> 00:14:09,139
+Şey yapalım, hani karmaşıklık olarak n tane eleman varsa bu n tane elemanın karesi mertebesinde ki biz buna kuadratik karmaşıklık diyoruz. Yani üstsel karmaşıklık. Üsten mertebede bir karmaşıklıkla çalışıyor. Benim elimde diyelim ki işte 100 milyon tane örnek var sıralamam gereken. Elimdeki bilgisayarla bunları işte 10 dakikada yapabiliyorum. Şöyle bir şey yapabilirim. Mesela para harcarım. Giderim işte bilmem kor iyi bilmem kaç işlemcili Zeyong.
+
+65
+00:14:09,139 --> 00:14:36,500
+Gold bilmem ne. Bütün veriyi bellekle saklayabilecek kadar büyük belleği olan, osu olan, busu olan ve 10 kat güçlü, 100 kat güçlü bir bilgisayar alabilirim. Ondan sonra da aynı algoritmamı, aynı programımı ya da gerçekleştirmemi o güçlü bilgisayarda da çalıştırabilirim. Ne oldu? Benim işte 10 kat ya da 100 kat algoritmam hızlandı. Program hızlandı. Çok güzel. Aferin. Harikasın. Ama bunun için de bilmem kaç binlerce dolar harcamak zorunda kaldınız. Ya da
+
+66
+00:14:37,011 --> 00:14:51,991
+Bunun yerine sadece biraz çözümü modifiye ederek, algoritmanızı elden geçirerek, dediğim gibi belki algoritmik çözüm yaklaşımlarında farklı şeyleri ya da farklı veri yapılarını kullanarak algoritmanızı 10 kat hızlı çalışacak şekilde tasarlayabilirsiniz.
+
+67
+00:14:52,631 --> 00:15:03,211
+Ve o 10 binlerce, binlerce neyse harcadığınız dolar, o güçlü bilgisayar yatırımı tasarruf olarak cebinizde kalır ya da o kaynakları başka yerlerde, başka şekillerde kullanabilirsiniz.
+
+68
+00:15:03,711 --> 00:15:18,511
+Yani özetle üzerinde düşünerek iyileştirmemiz gerekiyor. Bir anda pat diye doğru ve en iyi çözümü bulamayız ama en azından doğru bir çözümle, basit de olsa doğru bir çözümle yola çıkmakta fayda vardır.
+
+69
+00:15:20,052 --> 00:15:41,432
+Algoritma analizine çok fazla girmeyeceğiz ama temellerini öğreneceğiz en azından önümüzdeki iki hafta içinde. Belirli bir iş için ya da belirli bir problem için en iyi algoritma hangisidir? Bu en iyi algoritmayı seçmek, birbirleriyle karşılaştırmak bazen çok fazla matematik gerektirebilir. Matematik formülleri falan yazmanızı oldukça karmaşık bir iş yapmanızı gerektirebilir.
+
+70
+00:15:46,484 --> 00:15:58,063
+ucu ucuna nokta nokta incelemeniz zor olabilir. O zamanlarda da mesela daha basit zaman ölçümü gibi daha ne derler gündelik hayatta hızlı çözebileceğiniz şeyler kullanılabilir.
+
+71
+00:15:59,251 --> 00:16:06,812
+Gördüğünüz gibi algoritma tasarlama konusunda önce şunu yapın, sonra bunu yapın demek maalesef söz konusu değil.
+
+72
+00:16:07,072 --> 00:16:23,751
+Sadece analitik düşünce diyoruz ya, düzgün bir şekilde, sakin ve düzgün bir şekilde düşünerek problemi anlayıp, belki problemi değiştirip, sonrasında problemi biraz modifiye edip, ona uygun bir algoritma tasarımı yapmamız gerekecek.
+
+73
+00:16:23,751 --> 00:16:24,751
+Peki, şimdi...
+
+74
+00:16:25,331 --> 00:16:34,432
+Dediğim gibi bilgisayar bilimlerinin aslında temel problemlerinden, temel çalışma alanlarından biri olan bağlantı problemine bakacağız.
+
+75
+00:16:34,572 --> 00:16:36,572
+Connectivity problem olarak geçer bu.
+
+76
+00:16:37,232 --> 00:16:42,152
+Şimdi bağlantı problemi deyince şey oluyor hani hocam bağlanamıyorum, internet koptu falan gibi anlamayın.
+
+77
+00:16:42,152 --> 00:16:45,872
+Ama bir şekilde aslında o da bu problemin içinde yer alıyor.
+
+78
+00:16:46,331 --> 00:16:46,512
+Şimdi.
+
+79
+00:16:47,059 --> 00:16:55,219
+Problem şu şekilde. Basitleştirerek anlatmaya çalışacağım. Daha doğrusu kavramları biraz daha böyle basit hale getirmeye çalışacağım.
+
+80
+00:16:56,039 --> 00:17:05,980
+Bize bağlantılı varlık çiftleri veriliyor, tanımlanıyor. Tamam mı? Mesela işte p-q şeklinde bir input bize sağlanıyor. Ne demektir bu?
+
+81
+00:17:06,420 --> 00:17:26,284
+P varlığı ile Q varlığı birbirlerine bağlıdır. Tamam mı? Böyle hakikaten belki kablo ile bağlı. Ya da belki Facebook'ta birbirini takip ediyor. Anlatabiliyor muyum? İşte bu şekilde. Ve bu şimdi işi biraz daha dediğim gibi kolay hale getirmek için çift yönlü okunabilsin. Yani eğer P-Q verildiyse...
+
+82
+00:17:26,516 --> 00:17:29,196
+Aynı zamanda Q ile P de bağlıdır.
+
+83
+00:17:29,356 --> 00:17:33,956
+Hani ben seni takip ediyorum, sen beni takip etmiyorsun şekerim gibi bir şey yok.
+
+84
+00:17:34,476 --> 00:17:35,956
+Direkt bağlandıysak bağlandık.
+
+85
+00:17:36,056 --> 00:17:38,836
+Yani P ile Q çift yönlü olarak birbiriyle bağlıdır.
+
+86
+00:17:38,836 --> 00:17:46,476
+Ve bunları yine kodlarken, algoritma geliştirirken değil ama programlamasını yaparken.
+
+87
+00:17:47,155 --> 00:17:54,255
+Biraz daha basit olsun diye böyle C ile daha da hızlı yapabilelim diye her bir varlık unique böyle benzersiz bir tam sayı ile ifade edilsin.
+
+88
+00:17:54,316 --> 00:18:04,155
+Bu ne demek mesela? Şurada bakalım 3-4 denmiş. Tamam mı? Mesela kimlik numarası 3 olan kişiyle kimlik numarası 4 olan kişi arkadaş Facebook'ta.
+
+89
+00:18:05,336 --> 00:18:11,895
+Ya da kimlik numarası 4 olan IDC 4 olan kişiyle IDC 9 olan kişi birbiriyle arkadaş gibi gibi. Tamam mı?
+
+90
+00:18:12,627 --> 00:18:15,027
+Böyle böyle ikili bağlantı çiftleri veriliyor.
+
+91
+00:18:15,167 --> 00:18:16,227
+Şimdi amacımız şu.
+
+92
+00:18:17,527 --> 00:18:28,087
+Ben bana verilen ikili arasında yani çift arasında önceden bir bağlantı var ise bunu bir daha bağlamak istemiyorum.
+
+93
+00:18:28,587 --> 00:18:30,867
+Oraya bir daha kablo harcamak istemiyorum.
+
+94
+00:18:31,187 --> 00:18:35,487
+Ya da işte orada Facebook'ta yeni bir database'de yeni bir satır açmak istemiyorum.
+
+95
+00:18:35,923 --> 00:18:59,963
+Bu adamlar zaten birbiriyle bağlı. Örneğin şu satıra bakalım. 3 ile 4 bağlı, 4 ile 9 bağlı. Hemen buradan 3 ile 9'un da aslında birbirine bağlı olduğunu görebiliyoruz. Neden? 3, 4, 9 diye ilerleyebilir. O yüzden 3 ile 9'u bir daha böyle kendi içinde bağlamak doğru olmaz. Tam bir küme mantığı. Öyle düşünebilirsiniz. Yani birbiriyle bağlantılı olan her şey bütün elemanlar bir kümededir.
+
+96
+00:19:00,339 --> 00:19:05,179
+O yüzden de birden fazla bağlantı aralarında tanımlanması doğru değildir.
+
+97
+00:19:05,339 --> 00:19:14,079
+Yani benim amacım burada bağlantı problemindeki çözmeye çalıştığım şey sadece yeni bağlantıları bulmak ve önceden bağlı olanlar hakkında bir şey yapmamak.
+
+98
+00:19:14,799 --> 00:19:21,000
+Burada tabii problemi büyütebilirsiniz. Ben şey yapmak istiyorum diyebilirsiniz.
+
+99
+00:19:22,099 --> 00:19:27,299
+Bütün yolları da bulmak istiyorum diyebilirsiniz. Onlar ayrı problemler. Onların da üzerinden hızlıca konuşacağız.
+
+100
+00:19:27,728 --> 00:19:33,327
+[öğrenci] ders işliyorum. Şöyle örnek çözüyorum. Uygulama yapıyorum.
+
+101
+00:19:35,028 --> 00:19:35,248
+Okey.
+
+102
+00:19:38,248 --> 00:19:41,508
+Ses gelmiyor mu? Bir test edeyim.
+
+103
+00:19:44,428 --> 00:19:46,208
+Geliyor. Tamam. Okey.
+
+104
+00:19:46,592 --> 00:20:12,612
+Güzel. Peki. Şimdi örnek şöyle olsun arkadaşlar. Dediğim gibi 3-4 geldi. Bunlar bağlı değil. Şu anda zaten boş, her şey boş. Çok güzel. Geldi. Ben bunları aynı kümeye koydum. 4 ile 9 geldi. 4 ile 9'u da bağladım birbirine. 8 ile 0 geldi. Birbirine 8 ile 0'ıncı kişileri bağladım ya da bilgisayarları bağladım. 2 ile 3'ü bağladım. 5 ile 6'yı bağladım. Sonra 2 ile 9 geldi.
+
+105
+00:20:13,332 --> 00:20:40,832
+Ben burada yeni bir bağlantı kurmamalıyım. Neden? Çünkü ben aslında şöyle bir bağlantıya sahibim. 2'den 3'e gidiyorum. 3'den 4'e gidiyorum. 4'den 9'a gidiyorum. Demek ki aslında 2 ile 9 birbirine zaten bağlı. Bunlar zaten aynı kümedelerdi. Yani bir şekilde hani Facebook'ta bunlar zaten arkadaş grubundaydı. Bir daha bağlamak istemiyorum. Bu şekilde düşünün. Sonra 5-9 geldi. Bağlı değil. Güzel. Onları da aynı kümeye koydum.
+
+106
+00:20:41,332 --> 00:21:06,132
+3 bağladım. 4 ile 8'i bağladım. 0 ile 2 geldi. Şimdi şunu fark edebilmem lazım. Şimdi burada 8 0 vardı ama 0 ile 8 zaten birbiriyle bağlı. 0 8'e bağlı. 8 4'e bağlı. 4 3'e bağlı. 3 de şurada 2'ye bağlı. Demek ki ben zaten 0 ile 2'yi birbiriyle aynı kümeye koymuşum. Bir daha bunlar arasındaki yeni bir kablo çekmek istemiyorum.
+
+107
+00:21:06,516 --> 00:21:29,436
+Tamam, 6 ile 1 geldi, onu da bağladım. Ben tabii burada şunu söylemeye çalışmıyorum. Bunlar yüzünden bağlı demek istemiyorum şu anda. Sadece zaten bunlar birbirini görüyordu. Bunlar birbiriyle zaten kontak kurabiliyordu. Bir daha kurdurmayacağım demeye çalışıyorum. O yüzden bunlar kırmızı, diğerleri siyah. Alın size problem. Nasıl çözeriz? Var mı fikri olan?
+
+108
+00:21:39,796 --> 00:21:41,516
+Yok. Peki.
+
+109
+00:21:43,395 --> 00:21:46,816
+Hocam, bir tane linkli liste yapmaya çalışırız.
+
+110
+00:21:47,476 --> 00:21:55,496
+Bağlamaya çalıştığımız sayının bağlı olduğu elemanları işte nal görüne kadar gezmeye çalışırız.
+
+111
+00:21:55,596 --> 00:21:59,956
+Eğer bağlamaya çalıştığımız sayıya herhangi bir şekilde bağlı değilse o zaman bağlarız gibi.
+
+112
+00:22:00,115 --> 00:22:02,076
+Tamam. Ama daha biz linkli listeleri öğrenmedik.
+
+113
+00:22:03,936 --> 00:22:04,596
+Değil mi?
+
+114
+00:22:05,779 --> 00:22:06,740
+O zaman bilmiyorum.
+
+115
+00:22:08,259 --> 00:22:10,820
+Daha öğretmedim ya, dur. Hemen atlama öyle.
+
+116
+00:22:11,159 --> 00:22:14,299
+Ya elimizde ne var? Biz sadece şu anda dizi kullanabiliyoruz.
+
+117
+00:22:14,440 --> 00:22:15,579
+Matris ya da hadi bakalım.
+
+118
+00:22:16,259 --> 00:22:18,880
+Bağlantı matrisinde bağlantı gördükçe işaretlemek olabilir.
+
+119
+00:22:19,480 --> 00:22:21,079
+Mantıklı. Neden mantıklı?
+
+120
+00:22:21,679 --> 00:22:23,259
+Bu bununla bağlı mı diye bakabilirsiniz.
+
+121
+00:22:23,259 --> 00:22:29,240
+Çok güzel ama buradaki şöyle önceki şeye baktığımızda şu iki dokuzu yakalayabilecek miyiz?
+
+122
+00:22:30,195 --> 00:22:35,056
+Çünkü 2, 3'e, 3, 4'e, 4, 9'a bağlıydı. O yüzden 2 ile 9 birbirine bağlıydı.
+
+123
+00:22:36,835 --> 00:22:42,215
+Bunu matriste yakalayabilecek miyiz? Matriste ikilleri yakalarız ama böyle zincirleri nasıl yakalayacağız?
+
+124
+00:22:43,235 --> 00:22:46,115
+Tamam. Biraz zor gibi.
+
+125
+00:22:46,815 --> 00:22:49,056
+While ile. [öğrenci] güzel yazdı. While ile.
+
+126
+00:22:49,755 --> 00:22:53,416
+While ile yapabilirsin ama ben while, tabii while ile yapacağım.
+
+127
+00:22:57,491 --> 00:23:03,171
+İkili yani bir çift bilgi gelmeye devam ettiği sürece kontrol edeceğim. O yüzden bir while kullanacağım.
+
+128
+00:23:04,011 --> 00:23:10,151
+Yani biraz önce sözde söyledim. Bu bağlantı problemi. Aslında gündelik hayatta da işte karşımızda birçok yerde var.
+
+129
+00:23:10,991 --> 00:23:14,491
+Çok geniş bir network düşünün. Mesela internet gibi bir ortamı düşünün.
+
+130
+00:23:16,339 --> 00:23:23,279
+Bilgisayarlar var, node'lar var diye düşünüyorum. Bunlar birbiriyle bağlı. Yani P bilgisayarı var, Q bilgisayarı var, Q node var.
+
+131
+00:23:23,279 --> 00:23:32,579
+Bu P ile Q'yu bir şekilde paket yollaması için network üzerinde yeni bir bağlantı mı kuracağım ona, yeni bir hat mı çekmem gerekiyor?
+
+132
+00:23:33,119 --> 00:23:38,799
+Yoksa zaten bunlar birbirine bağlı. Gördüğünüz gibi 2-3-4-9 yoluyla zaten veriyi yollayabiliyor mu?
+
+133
+00:23:39,124 --> 00:23:47,064
+Bu kolay. Buluruz bir şekilde ama milyonlarca ya da milyarlarca cihaz olduğunu, düğüm olduğunu düşünün.
+
+134
+00:23:47,483 --> 00:23:53,264
+İşte o zaman böyle bir matriz yaptığınızda milyon çarpı milyon tane yer kaplayacak.
+
+135
+00:23:54,324 --> 00:23:57,624
+Onu düşünün. Yani trilyon tane yer tutmanız gerekecek.
+
+136
+00:23:58,223 --> 00:24:00,703
+Bu da bir problem olarak karşımıza çıkacak.
+
+137
+00:24:03,124 --> 00:24:04,384
+[öğrenci], tamam.
+
+138
+00:24:04,960 --> 00:24:22,559
+Biz de sana teşekkür ediyoruz. Bunlar şey olabilir, bir elektrik baskılı devre düşünün. Üzerinde komponentler var. Bu komponentlerin çeşitli sayılarda iki ya da üç kontakları olabilir ya da mikroçip gibi ise daha fazla kontağı olabilir ve bunları biz birbirine biliyorsunuz devrede yollarla bağlıyoruz.
+
+139
+00:24:23,028 --> 00:24:44,867
+Acaba bunlar birbirine bağlı mı? Hangileri bağlı? Gereksiz bir bağlantı ya da kısa devre var mı? Bütün uçları birbirine düzgün bir şekilde bağladık mı? Bunları kontrol etmek için kullanabiliriz. Alın size elektronikte bir kullanım. Altında aslında bağlantı problemini çözmek için tasarlayacağımız algoritma çalışacak. Başka hiçbir şey değil. Ya da dediğim gibi bir networkdeki routerda.
+
+140
+00:24:45,183 --> 00:25:05,203
+şeyi bulmak için, yolu bulmak için, bu buna bağlı mı, iki node birbirine bağlı mı diye bulmak için, işte router'ın işletim sistemindeki algoritma aslında bunu yapacak. Temel olarak yaptığı şey bu buna bağlı mı diye bir şey tutmak. Yani acaba onu nasıl kontrol ederim algoritması ile çözmek olacak.
+
+141
+00:25:05,584 --> 00:25:14,864
+Sosyal ağda, Facebook'tan demin örnekler verdim işte şu kişiyle bu kişi bağlı, Twitter'da bunu takip ediyor falan. Böyle bir şey olabilir. Acaba burada ne gruplar var?
+
+142
+00:25:15,796 --> 00:25:41,736
+Kim kimle arkadaş? Ya da bu bununla arkadaşlık bağı var mı? Bilmem kaçıncı dereceden de olsa bir şekilde kesişiyor mu yolları? Yoksa bunlar tamamen bağımsız, hiçbirbirleriyle görüşmemiş kişiler mi? Durun siz kardeşsiniz, muhabbeti olmasın diye belki. Böyle şeyler gördüğünüz gibi çok farklı aslında gerçek dünya problemleri. Ama aslında ben onu modellerken, algoritmasını tasarlarken aslında aynı şeyi.
+
+143
+00:25:42,163 --> 00:25:44,163
+Biraz değiştirerek yapıyorum.
+
+144
+00:25:44,624 --> 00:25:49,024
+Fortran'daki değişken isimleri, Fortran'da aynı değişkene farklı isimler verebiliyorsunuz falan.
+
+145
+00:25:50,144 --> 00:25:51,403
+Neyse, oraları boşverin şimdi.
+
+146
+00:25:51,663 --> 00:25:53,704
+Bunun gibi pek çok problem aslında aynı şey.
+
+147
+00:25:53,944 --> 00:25:56,364
+Gerçek dünya problemini aynı şekilde modelleyebiliyorum.
+
+148
+00:25:58,663 --> 00:26:00,544
+İşte size bir fotoğraf.
+
+149
+00:26:01,284 --> 00:26:03,124
+Böyle bir şey var elimizde.
+
+150
+00:26:03,244 --> 00:26:06,044
+Artık kaç bin tane node, kaç yüz tane node var burada bilmiyorum.
+
+151
+00:26:06,480 --> 00:26:32,080
+Birbiriyle bağlı olan bir sürü düğüm var. Şuradan bir tane düğüm seçtim. Mesela bu bir bilgisayar ya da bir kişi olabilir. Burada da bir tane düğüm var. Bu ikisi birbirine bağlı mı? Şey gibi bu. Gazetelerin pazar ekinde hani dört sayfa bulmaca verirler ya. Labirentten bilmem neden çıkma falan böyle kurcalayıp bağlı mı değil mi diye bulursunuz. Onun gibi bir şey. Bu iki düğüm birbirine bağlı mı değil mi? Buyurun çözün.
+
+152
+00:26:33,748 --> 00:26:57,427
+Ben bakıyorum şöyle. Şuradan şöyle mi gitsem, böyle mi gitsem, ona mı gitsem, buna mı gitsem, her yere doğru gitmeye çalışıyorum. Zor değil mi? Yani o kadar böyle hani ilk bakışta çözemeyeceğimiz bir problem. Bunu matrisi çok daha büyüttüğünüzü düşünün. Matris olmak zorunda değil ama hani görsel kolay olsun diye matris burada. Her biri bir düğüm. Evet. Bağlı mı sizce?
+
+153
+00:27:01,460 --> 00:27:04,420
+Bu kadar şey varsa kesin bağlıdır diyorsunuz. Olabilir.
+
+154
+00:27:05,280 --> 00:27:07,620
+Evet, bunlar birbirine bağlı ve yol da şöyle.
+
+155
+00:27:07,960 --> 00:27:12,100
+Gördüğünüz gibi şu düğümler üzerinden birbirleriyle aslında bağlılar.
+
+156
+00:27:12,620 --> 00:27:17,140
+Yani ben buradan P'den bir paketi yolladım mı Q'ya kadar gönderebiliyorum.
+
+157
+00:27:17,380 --> 00:27:20,300
+Onlar arasında yeni bir hat çekmeme gerek yok.
+
+158
+00:27:21,420 --> 00:27:23,240
+Peki, nasıl çözeceğiz?
+
+159
+00:27:24,260 --> 00:27:25,920
+Gördüğünüz gibi problem ortada.
+
+160
+00:27:26,304 --> 00:27:28,224
+Gerçek dünya problemleri ortada.
+
+161
+00:27:29,144 --> 00:27:36,104
+Şimdi ilk önce bu problemi makul bir şekilde, yani anlaşılır ve açıklanabilir bir şekilde tanımlamamız gerekiyor.
+
+162
+00:27:36,224 --> 00:27:39,184
+Algoritmamızı tasarlarken aslında yapmamız gereken ilk iş bu.
+
+163
+00:27:39,184 --> 00:27:40,184
+Ve bazen...
+
+164
+00:27:40,819 --> 00:28:00,819
+Önerileri siz de verdiniz. Matris kullanalım hocam ya da linked listeyi öyle yapalım, böyle yapalım, onu görüyorsa burada tutalım, bilmem ne yapalım. Bir şeyler kafada uçuştu. Ama bunların hepsi gördüğünüz gibi bazen çok maliyetle trilyonlarca megabayt yer kaplavası gereken şeyler olabilir. Oldukça zor çözümler haline gelebilir. Bu durumda bazen...
+
+165
+00:28:01,491 --> 00:28:06,311
+İşte orijinal problem tanımını biraz böyle modifiye etmek zorunda kalabiliriz.
+
+166
+00:28:06,371 --> 00:28:19,571
+Orijinal problem tanımından biraz farklı da olsa işe yarayan, çözüm üreten ya da bizi o problemi çözmek için çok daha iyi bir noktaya getiren bilgi üretebilen algoritmaları
+
+167
+00:28:19,903 --> 00:28:33,743
+Bunları kullanarak ya da bunları modifiye ederek problemin tanımını biraz değiştirip, hani değiştirilmiş problemi çözüp sonrasında da oradaki değişimden yola çıkıp gerçek probleme uyarlama yapabiliriz.
+
+168
+00:28:34,103 --> 00:28:37,843
+Anlatabildim mi? Yani iyi çalıştığını bildiğimiz bir algoritmamız olsun.
+
+169
+00:28:37,843 --> 00:28:43,823
+Bu algoritmayı kullanarak problemin modifiye halini de biraz değiştirilmiş halini çözeriz.
+
+170
+00:28:43,923 --> 00:28:47,843
+Ondan sonra da o değiştirilmiş halinden elde ettiğimiz bilgiyle ya da o çözüm...
+
+171
+00:28:47,903 --> 00:28:52,303
+Bu konuda gerçek problemi ikinci aşamada belki daha rahat çözebiliriz.
+
+172
+00:28:52,803 --> 00:29:02,103
+Şimdi mesela ben burada zaten o kırmızı işaretlediğim iki taneyin olmamasını onların bunlar bağlıdır diye bağırmasını istiyordum sistemin.
+
+173
+00:29:02,823 --> 00:29:05,263
+Burada mesela ben bir PQ çifti veriliyor bana.
+
+174
+00:29:06,003 --> 00:29:30,263
+Bu PQ çifti için bunlar bağlıdır ya da bunlar değildir diye bir cevap vermeye çalışıyorum. Bakın şeyi söylemiyorum, 2, 3, 4, 9 üzerinden bağlı olduğunu söylemiyorum. Bu ayrı bir şey. Mesela bu short spot problemine gidiyor. Zaten söyledim. Ama bu tabii ki şu anda tasarlamaya çalıştığımız kadar basit bir algoritma olmayacak. Orada farklı şeyleri biliyor olmamız lazım.
+
+175
+00:29:30,640 --> 00:29:38,400
+Farkında ders önceden alan arkadaşlar varsa da aslında böyle bir problemi modellemek için en uygun veri yapısı graftır.
+
+176
+00:29:39,100 --> 00:29:45,080
+Ve aslında biz burada bir grafta connected component arıyoruz. Bağlantı problemi çözmeye çalışıyoruz aslında.
+
+177
+00:29:45,760 --> 00:29:49,740
+Bunun yolu yordamı algoritmaları var evet ama daha karışık algoritmalar.
+
+178
+00:29:49,740 --> 00:29:58,520
+Ben şu anda sadece verilen iki nokta bağlı mıdır değil midir? Yani yes or no şeklinde ya da true or false döndürecek bir function yazmaya çalışıyorum belki.
+
+179
+00:29:58,640 --> 00:30:02,100
+O kadar algoritmayı basitleştirmeye çalışıyorum benim için çözümü.
+
+180
+00:30:03,660 --> 00:30:06,800
+Bunu biraz daha da değiştirebilirsiniz mesela problemi.
+
+181
+00:30:07,320 --> 00:30:11,140
+N tane nesne var elimde. N tane o biraz önceki düğün var diyelim.
+
+182
+00:30:11,720 --> 00:30:15,700
+Bunları birbirine bağlamak için M tane bağlantı yeterli mi diye bir soru geldi.
+
+183
+00:30:15,700 --> 00:30:16,700
+Esasen...
+
+184
+00:30:17,556 --> 00:30:31,756
+n-1 tane bağlantıyla bunları birbirine bağlayabilirsiniz. Yani verilen m sayısı n-1'den küçükse true'u direkt döndürebilirsiniz ya da büyükse ya büyükse false döndürebilirsiniz.
+
+185
+00:30:33,268 --> 00:30:47,587
+Belki dersi önceden alan arkadaşlar hemen hatırlar. Aa bu tam evet hatırladım. Grafta biz minimum spanning tree'yi buluyorduk. Minimum spanning tree'de zaten n tane node için n-1 tane edge olur. Bundan fazlası zaten minimum spanning tree'yi bozar.
+
+186
+00:30:48,051 --> 00:30:52,031
+Diyerek hemen çat diye bu cevabı yapıştırabilir ama şu anda biz o seviyede değiliz.
+
+187
+00:30:52,112 --> 00:30:56,711
+Tabi orayı geçiyoruz. Bizim için hala dediğim gibi PQ bağlı mıdır değil midir?
+
+188
+00:30:56,811 --> 00:31:01,511
+True or false döndürecek bir çözüm yöntemi ortaya koymaya çalışıyorum.
+
+189
+00:31:02,172 --> 00:31:03,072
+Evet, nasıl yaparız?
+
+190
+00:31:05,572 --> 00:31:09,231
+Şimdi aslında yol kolay. Bana sırayla geliyor değil mi?
+
+191
+00:31:10,223 --> 00:31:17,884
+Sürekli veri geliyor. Yani veriyorlar. 3 ile 4 diyorlar. 5 ile 7 diyorlar. 4 ile 9 diyorlar. Sürekli böyle soruyorlar aslında bana bir şeyleri.
+
+192
+00:31:18,604 --> 00:31:28,284
+Şimdi her yeni çift geldikçe, acaba benim ilk bakmam gereken şey şu. Acaba bunlar önceden birbirleriyle bağlı mıydı değil miydi?
+
+193
+00:31:28,980 --> 00:31:35,160
+Eğer önceden zaten aynı kümedelerdiyse, bağlılardıysa ben zaten orada false diyeceğim.
+
+194
+00:31:35,320 --> 00:31:38,059
+Hani ben bunu bağlamam. Bunlar zaten birbiriyle bağlı diyeceğim.
+
+195
+00:31:39,000 --> 00:31:44,400
+O zaman benim bir şekilde önceki bağlantıları tutabiliyor olmam lazım.
+
+196
+00:31:44,580 --> 00:31:48,779
+Kim kimle bağlı bunu bir yerde saklamam lazım. Değil mi? Bu kesin.
+
+197
+00:31:48,900 --> 00:31:54,140
+Bunu yapmadan zaten bağlı mıydın önceden sorusunun cevabını veremem.
+
+198
+00:31:54,140 --> 00:31:55,080
+Şimdi.
+
+199
+00:31:56,180 --> 00:31:58,039
+Yeni bir çift geldi.
+
+200
+00:31:58,759 --> 00:32:08,600
+Eğer bu çiftin bir ucu, bir şey içinden bir tane düğüm önceden bağlı olan bir gruba değiyorsa, örneğin şurada göstereyim.
+
+201
+00:32:09,440 --> 00:32:12,860
+Burada 0, 5, 6, 1, 1'ine bağlanmış.
+
+202
+00:32:13,715 --> 00:32:26,135
+Tamam mı? Bunlar işte şey sayılar. Sırasıyla gelmiş. 2, 7 gelmiş. 8, 3 gelmiş. 4, 3 gelmiş. 6, 5 gelmiş. Ne bileyim 4, 9 gelmiş. 0, 5 gelmiş. Tamam mı? Bunlar birbirine bu şekilde bağlanmış.
+
+203
+00:32:26,875 --> 00:32:38,675
+Şimdi diyelim ki 1 ile 6 geldi. Ben neyi biliyorum? 1 başka bir kümede. 6 başka bir kümede. Yani bunlar birbirine bağlı değil.
+
+204
+00:32:40,564 --> 00:32:47,984
+Artık bağlanacaklar. Çünkü bunu bağlamam gerekiyor. İki bilgisayarı birbiriyle konuşturmam gerekiyor. Ne yapacağım?
+
+205
+00:32:48,664 --> 00:32:59,604
+Benim önce bir tanesinin kümesini biliyor olmam lazım, buluyor olmam lazım. Sonra bunu bağlayınca diğer kümedeki bütün elemanları da o kümeye bağlamam.
+
+206
+00:32:59,744 --> 00:33:06,084
+Yani birleştirmem lazım. Ne yapacağım? Önce bulacağım. Bulduktan sonra da iki kümeyi birleştireceğim.
+
+207
+00:33:06,644 --> 00:33:09,544
+Ve o küme tek küme halinde yoluna devam edecek.
+
+208
+00:33:10,184 --> 00:33:11,564
+Okey? Bu kadar.
+
+209
+00:33:12,024 --> 00:33:13,524
+Ne yapmam lazım o zaman benim?
+
+210
+00:33:13,984 --> 00:33:18,764
+Önceden kim kimle bağlı diye bir şekilde bir yerlerde tutmam lazım.
+
+211
+00:33:19,464 --> 00:33:28,844
+Bunu tutmak için de ID diye, hani IDet anlamında ID olsun, kimlik anlamında küme numaraları oluştururum.
+
+212
+00:33:29,004 --> 00:33:31,364
+Ve bunların her biri hangi kümede diye tutarım.
+
+213
+00:33:31,680 --> 00:33:38,000
+Şimdilik şey sayılara çok takılmayın. Biraz sonra nasıl oluştuklarını ne kadar aslında çok kolayca oluşturulabildiğini göreceğiz.
+
+214
+00:33:38,500 --> 00:33:46,200
+Ama şu diziyi okuduğumda şuralar indis tamam mı? Kırmızılar. 0. indis, 1. indis. 10 tane eleman var.
+
+215
+00:33:47,140 --> 00:33:58,520
+Ne diyorum ben burada? Bakın 0, 5 ve 6. indislerdeki nodlar yani 0. 5. ve 6. id'ye sahip olan nod 0 numaralı kümededir diyorum.
+
+216
+00:33:59,251 --> 00:34:04,352
+Yani aslında görselleştirirsen bir şekilde tık tık bu bağlantılar birbirlerinin arasında var.
+
+217
+00:34:05,031 --> 00:34:06,912
+Değil mi? Bu kümede üç tane eleman var.
+
+218
+00:34:08,311 --> 00:34:13,011
+Birinci, ikinci ve yedinci elemanlar ayrı bir kümede.
+
+219
+00:34:13,672 --> 00:34:16,011
+Bir ID'li kümedeler buradalar.
+
+220
+00:34:16,820 --> 00:34:24,300
+3. 4. 8. ve 9. elemanlar ise 8 ID'li kümedeler. Bakın, görselleştirdim. 3, 8, 4, 9 burada.
+
+221
+00:34:24,800 --> 00:34:31,440
+Tabii 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 diye bunlar hani böyle daha temiz gözüksünler diye böyle iki satır halinde dizilmişler.
+
+222
+00:34:31,980 --> 00:34:34,940
+Şimdi ben gidip de 6 ile 1'i bağlarsam ne yapmam lazım?
+
+223
+00:34:34,940 --> 00:34:36,716
+O zaman...
+
+224
+00:34:37,043 --> 00:34:57,264
+Mesela 1-6 ya da 6-1 gelmesine göre değişir. Gidip ya bütün 1'leri 0 haline getirmem lazım ya da bütün 0'ları 1 haline getirmem lazım. Önceki sonraki sizin implementasyonuza göre değişebilir. Birinciyi mi ikinciye, ikinciyi mi birinciye bağlıyorsunuz problemi.
+
+225
+00:34:57,264 --> 00:35:05,043
+Hadi ben şey yapayım. 6'yı 1'e bağlamış olayım. O zaman ne oldu? 1, birinci kümedeydi ya. 6 da birinci kümeye geçmiş.
+
+226
+00:35:05,043 --> 00:35:29,543
+Bu şekilde çalışmak zorunda kaldı. Şu bağlantı yüzünden, şurada hatta çizelim. Şuraya yeni bir bağlantı yaptım. Tamam. Şimdi ne oldu o zaman? Ben buraya altının yerine sıfır yerine artık bir yazdım. Sen birinci kümedesin. Ama bu ne demek? Altının bağlı olduğu başka arkadaşları da var. Onları da bir yapmalıyım.
+
+227
+00:35:31,411 --> 00:35:55,112
+Böyle. Ne oldu? Elimde iki tane bağlı ayrık küme oldu. Birinci ve sekizininci kümeler. Bu kadar. Problemi çözdük. Herkesin birbiriyle önceden bağlı olup olmadığını çok kolay bir şekilde takip edebiliyoruz yani. Şimdi adım adım işleyelim. Bakalım nasıl gidecek bu iş. Şimdi ilk başta herkes kendi kümesinde. Hani herkes tekil takılıyor. Tamam.
+
+228
+00:35:55,827 --> 00:36:06,967
+0'dan 9'a kadar ID'lerim var. ID'lere de her bir gözüne kendi değerini atadım. Ne demek? Herkes kendi kümesinde. Elimde 10 tane küme var. 10 tane düğümüm olduğu için.
+
+229
+00:36:08,547 --> 00:36:18,387
+4 ile 3'ü bağla diye bir şey geldi. Hani ikili ikili yolluyorlar ya. 4'ü 3'e bağla diye okuyalım bunu. Tamam.
+
+230
+00:36:19,307 --> 00:36:23,207
+Şimdi ne yapacağım? 4 ile 3 arasında hiçbir bağlantı yoktu. Nereden anlıyorum?
+
+231
+00:36:23,615 --> 00:36:47,195
+Biri üçüncü kümede, biri dördüncü kümedeydi. O zaman dördü bunun kümesine atmam lazım. Yani ID 3'deki değer neyse onu atamam lazım. Yani ben buradaki dördü siliyorum. Şöyle dört yerine, bunun yerine buna üç yazıyorum. Niye üç yazıyorum? Çünkü bu üç. Tamam. Üçüncü gözdeki.
+
+232
+00:36:47,860 --> 00:37:12,480
+değer 3. O yüzden buraya 3'ü getirdim. Ne yapmış oldum aslında? Şuraya bir çizgi çekmiş oldum. Bakın bu üçüncü kümede ikisi de. Şu bir küme oluşturdu burada. Artık bundan sonra 4 ile 3 bir şey geldiğinde ben bunların aynı kümede olduğunu çok rahatlıkla görebiliyorum. Çünkü aynı küme id'sine sahipler. Sonrasında 3'ü 8'e bağla diye bir şey geldi.
+
+233
+00:37:12,916 --> 00:37:38,556
+Komut. Tamam mı? Ya da sırada bu ikili yollandı. Bakıyorum 8'e. 8. kümede. Bakıyorum 3'e. 3. kümede. Aa bunlar ayrıkmış. Hadi ben bunları bağlayayım dedim. Şuradaki yani çizgiyi, sanal çizgiyi çizmiş oldum. O zaman ne yapmam lazım? 3'ün yerine bunun 8. indisteki değeri yazmam lazım. Yani 8.
+
+234
+00:37:39,411 --> 00:37:49,511
+Yeter mi? Hayır. Bu 3 zaten 4'e bağlıydı. O yüzden bunda peşinden buradaki 3'lerin hepsini 8 yapmam gerekir.
+
+235
+00:37:50,951 --> 00:38:04,311
+Tamam. Böylece bakın burada 3 tane bilgisayarı birbirine bağlı olduğunu takip edebiliyorum. Neden? Çünkü hepsi 8 numaralı kümedeler artık.
+
+236
+00:38:05,043 --> 00:38:29,903
+6'yı 5'e bağla diye bir komut geldi. 6'ya bakıyorum 6. kümede, 5'e bakıyorum 5. kümede, aynı değiller. O zaman ne yapacağım? 6'yı sileceğim, yerine bunun değerini yazacağım. Yani 5 yazacağım. Ne oldu? 1, 2, 8, 8, 5, 5, 7, 8, 9. Görselleştirirsek burada bir connected component, burada da bir ikinci connected component oluştu. Güzel.
+
+237
+00:38:33,523 --> 00:38:52,103
+Şu anda kaç küme var? 1 küme, 2 küme, 3 küme, 4 küme, 5 küme, 6 küme, 7 küme var elimde. Sayalım. 1, 2, 3, 4, 5, 6 ve 7. Unique değer olarak 7 tane Unique değere sahibim. Güzel. Peki. Şimdi devam edelim.
+
+238
+00:39:00,532 --> 00:39:26,372
+Niye gitmiyor? Hah gitti, tamam. 9'u 4'e bağla diye bir komut geldi. 9'a gittim baktım, yani şöyle geri geleyim. 9, 9'daydı. 4, 8. kümedeydi. O zaman ne yapacağım? 9'u gelip 4'ün kümesine bağlamam lazım. Yani şuradaki değeri 8 haline, pardon, getirdim. Ne demek oldu bu?
+
+239
+00:39:26,867 --> 00:39:31,188
+4 ile 9 arasında şuradaki çizgiyi çektim ve buradaki komponentler birleşti.
+
+240
+00:39:31,247 --> 00:39:33,047
+2 küme birleşti, tek küme haline geldi.
+
+241
+00:39:34,007 --> 00:39:35,707
+2'yi 1'e bağla diye bir şey geldi.
+
+242
+00:39:36,268 --> 00:39:37,948
+2'deydi, 1'deydi.
+
+243
+00:39:38,528 --> 00:39:40,247
+O zaman bunu 1 yapmam lazım.
+
+244
+00:39:40,467 --> 00:39:43,507
+Buradaki değeri alıp buraya yazmam lazım ve bütün 2'lere de onu yapmam lazım.
+
+245
+00:39:43,667 --> 00:39:44,307
+Başka 2 yok.
+
+246
+00:39:45,047 --> 00:39:50,688
+Ve 0, 1, 1, 8, 8, 5, 8, 7, 8, 8 diye bunları takip edebiliyorum.
+
+247
+00:39:51,507 --> 00:39:53,988
+Baktığımda şurada 0 tek başına.
+
+248
+00:39:54,367 --> 00:40:13,968
+1 ile 2, 1 id'li kümedeler. 5 ile 6, şurada şeyi yanlış mı yaptık? 5, 5, şunlar 5 olacak arkadaşlar. Şurayı hemen düzeltin. Kopyalarken yanlış kalmış. Şu 5 olacak, şu da 5 olacak. Tamam. Onlar şey kalmış.
+
+249
+00:40:14,579 --> 00:40:32,079
+Siz onları elinizde bir daha üzerinden geçin. Analiz olur. Daha da güzel olur. Şunları kopyalarken yanlış yapmışım. Şurada hatırlarsanız bir önceki slide'da, eğer gidebilirsem, şurada zaten 5-5 haline gelmişlerdi. Tamam.
+
+250
+00:40:33,268 --> 00:40:36,127
+8 eskiden kopyalayınca geri kalmış.
+
+251
+00:40:36,728 --> 00:40:39,768
+Evet, yani ben burada bunu bağladım.
+
+252
+00:40:39,887 --> 00:40:42,248
+2 ile 1'i bağladım, şu işlemi yapmış oldum.
+
+253
+00:40:42,607 --> 00:40:44,447
+Kaç tane şeyim var, komponentim var?
+
+254
+00:40:44,527 --> 00:40:47,367
+1, 2, 3, 4, 5 tane komponentim var.
+
+255
+00:40:47,467 --> 00:40:50,307
+1, 2, 3, 4, 5 tane komponent.
+
+256
+00:40:50,427 --> 00:40:51,547
+Evet, 5 tane unique değer.
+
+257
+00:40:52,127 --> 00:40:54,427
+8'i 9'a bağla diye bir istek geldi.
+
+258
+00:40:54,728 --> 00:40:56,127
+İşte bakın Zurnanın Zürt Dili.
+
+259
+00:40:56,228 --> 00:40:58,288
+Aslında en güzel örneğimiz burası olacak.
+
+260
+00:40:58,639 --> 00:41:04,440
+Ne diyorum? 8'i 9'a bağlayayım. Normalde ne yapmam gerekirdi? Şak diye şuraya bir çizgi çekmem gerekirdi.
+
+261
+00:41:04,559 --> 00:41:18,079
+Ama ben tabloma baktığımda, aidiyet tabloma, 8, 8. kümede, 9 da 8. kümede, arkadaş bunlar zaten bağlı, önceden bağlamışım dedim ve false döndürdüm.
+
+262
+00:41:18,279 --> 00:41:19,940
+Yani ben burada hiçbir işlem yapmadım.
+
+263
+00:41:20,219 --> 00:41:25,779
+İşte gördüğünüz gibi hızlı bir şekilde şeyi önceden kimin kime bağlı olduğunu artık bulabiliyorum.
+
+264
+00:41:26,612 --> 00:41:29,472
+Yeni geldikçe de modifiye etmeye devam edebiliyorum.
+
+265
+00:41:30,311 --> 00:41:32,351
+5'i 0'a bağla diye bir istek geldi.
+
+266
+00:41:32,632 --> 00:41:33,972
+Yani şurayı bağlayacağız.
+
+267
+00:41:34,072 --> 00:41:35,012
+Evet, bağlanabilir.
+
+268
+00:41:35,132 --> 00:41:35,331
+Neden?
+
+269
+00:41:35,791 --> 00:41:37,992
+Bu 5, bu da 0 değerini taşıyor.
+
+270
+00:41:38,512 --> 00:41:40,152
+Şuranın hala 5 olduğunu unutmayın.
+
+271
+00:41:40,980 --> 00:42:03,440
+Şunu da 5 olarak şurada şöyle üzerine yazayım. Tamam. Ne yapacağım yani? Ben bu 5'i silip buraya 0 yazacağım. Tabii ki bu 5'i de silip buraya 0 yazacağım. Yani bunlar 0, 5 ve 6. Şurada gördüğünüz gibi 0 ID'li kümeye aitler. 1 ile 2, 1 ID'li kümeye ait. 3, 4, 8, 9, 8 numaralı kümedeler.
+
+272
+00:42:03,871 --> 00:42:08,572
+7'de hala kendi başına 7 numaralı kümede durmaya devam ediyor.
+
+273
+00:42:12,467 --> 00:42:26,747
+7'yi 2'ye bağla diye bir komut geldi. Bakıyorum, şuradan geri geleyim. 7 idi bu. Bu da 1 idi. O zaman 7'lerin hepsini 1'e yapmam lazım. Yaptım. Şurayı 1 haline getirdim. Yani 2 ile 7'yi birbirine bağladım.
+
+274
+00:42:27,284 --> 00:42:47,563
+Şimdi burada durursak eğer mesela 3 tane connected componentim var. 3 tane küme oluştu. Hani bunu bir matematik problemi olarak bile modelleyebilirsiniz. Elimde 3 tane küme var diyebilirsiniz. Bakın 0. kümede 3 eleman var. 1. kümede 3 eleman var. 8. kümede de 4 eleman var burada. Sonra 6'yı 1'e bağla dedi.
+
+275
+00:42:48,052 --> 00:43:11,412
+İlk hani böyle şeyde verdiğim örnek vardı ya, tek örnek. İşte bu. Ne yaptım? Şurayı bağlamak istiyorum. O zaman 6'ya gidip bakıyorum, sıfırıncı kümede. 1'e gidip bakıyorum, birinci kümede. Ne yapacağım? Bütün sıfırları 1 yapmalıyım. O zaman hemen şunu 1 yaptım, bunu 1 yaptım, 6'yı da 1 yaptım.
+
+276
+00:43:11,744 --> 00:43:34,984
+Elimde ne var? Bakın bir numaralı küme var. 6 elemandan oluşuyor. Bir de 8 numaralı küme var. 4 elemandan oluşuyor. Bundan sonra mesela gittim 7 ile 3'ü bağla diye bir stack geldi. Ne olacak? O zaman hepsi 8 haline gelecek. Hepsi tek bir bağlı şey. Zaten bütün hepsi birbirine bağlandı demiş olacağım. Bu şekilde.
+
+277
+00:43:35,668 --> 00:43:44,408
+Ne yaptım? Kim kime bağlı? Bunları adım adım değiştirebilir ve geçmişteki hallerinde takip edebilir oldum.
+
+278
+00:43:44,688 --> 00:43:50,548
+Ne kullandım veri yapısı olarak? Sadece tek boyutlu bir dizi kullandım. Başka hiçbir şey kullanmadım.
+
+279
+00:43:52,748 --> 00:43:58,968
+Evet, bu da kodu. İnanmayan yazsın baksın diyeceğim şimdi. Şöyle üzerinden hızlıca geçeceğim.
+
+280
+00:44:00,628 --> 00:44:25,588
+Bu tabii ki iyi bir çözüm değil. Bunu daha efektif, daha güzel, daha okunaklı sizler yazarsınız. Ama burada slide'a sığması için böyle yaptım. Mesela burada statik bir boyut tanımı var. Bu ne demek? 100 düğümden fazlasını zaten alamıyorum bu sisteme. Normalde hani pratikte bunların dinamik olması beklenir tabii ki. İdare edin. Dediğim gibi basit olsun diye şurada eni elimle çaktım.
+
+281
+00:44:26,003 --> 00:44:49,083
+Şimdi ne var? İki tane iteratörüm var. p ve q benim çiftlerim. id de biraz önce gördüğümüz dizi. Yani aslında yararlandığım tek şey veri yapısı olarak bu. Bunun ikisi iyi zaten döngü değişkeni. Şu geçici değişken. Şu döngü değişkeni. Şunlar da bana verilenler zaten. p ve q. Yani scanf ile okuyacaklarım. Ya da bir yerden dosyadan bana gelecekler sırayla.
+
+282
+00:44:52,115 --> 00:45:16,295
+0'dan n'e kadar id i eşittir i atamasını yapmam lazım. Ne yapmıştık? Hatırlayalım, geri gelelim. İşte burası. Şöyle şey alayım. Şu atamayı yaptım. Her indise kendi değerini atadım. Bu kadar. Sonra geri geldik.
+
+283
+00:45:16,724 --> 00:45:37,004
+Neredeyiz? Bu ilk değer atamalarını gerçekleştirdik. Sonra ikişer ikişer, yani iki değer okumaya devam ettiğim sürece, skenefeşleşti iki olduğu sürece dedik buna. Ne okuyorum? İki tane inticir okuyorum. p ve q'ya okuyorum bunları. p ve q adreslerindeki bellek gözlerine bunların yazılmasını sağlıyorum.
+
+284
+00:45:44,400 --> 00:45:48,539
+Bir sonraki adımına geç. Yani while'ı boş geç anlamına geliyor bu.
+
+285
+00:45:50,360 --> 00:45:58,119
+P indisindeki küme değeri ile Q indisindeki küme değeri aynıysa benim burada normalde ne yapmam lazım?
+
+286
+00:45:58,759 --> 00:46:01,819
+Bunlar zaten bağlıdır diye bir mesaj falan oluşturmam lazım.
+
+287
+00:46:01,819 --> 00:46:05,079
+Yani ben direkt kontinüle dedim. Hiçbir şey yapma. Devam et yoluna.
+
+288
+00:46:05,588 --> 00:46:10,048
+Bu hani böyle bir şey, prototip kod gibi düşünebilirsiniz.
+
+289
+00:46:10,728 --> 00:46:15,328
+Sonrasında bunu döngünün içinde de, pardon bir ay öncesinde de yapabilirsiniz.
+
+290
+00:46:15,468 --> 00:46:18,408
+Hani t eşittir idp, temporary bir değişkene atayabilirsiniz.
+
+291
+00:46:18,568 --> 00:46:22,448
+Ya da ilk değer ataması yaparken bunu da for'un içinde yazabilirsiniz.
+
+292
+00:46:23,048 --> 00:46:29,568
+Algoritmayı tasarlarken, akış diagramını çizerken şunu öncesinde atamanız daha doğru olacaktır.
+
+293
+00:46:29,708 --> 00:46:31,108
+Daha okunaklı olacaktır.
+
+294
+00:46:31,108 --> 00:46:33,588
+Burada çok yer kaplamasın diye içine koydum.
+
+295
+00:46:33,588 --> 00:46:56,588
+T eşittir ilk elemanın küme değeri. Sonrasında ne yapıyorum? I eşittir sıfırdan n'e kadar hepsine teker teker bakıyorum. Aynı değere sahip ise öbürüyle değiştiriyorum. Hani bütün sıfırları bir yapıyordum ya ya da bütün beşleri iki yapıyordum ya. İşte buradaki atamayı burada yaptım. Eğer...
+
+296
+00:46:57,364 --> 00:47:07,603
+Birinin değerine eşitse diğerlerin hepsini o iyinci gözdeki değeri teker teker öbür kümenin değeriyle değiştir diyorum.
+
+297
+00:47:08,224 --> 00:47:12,284
+Sonrasında da hani değiştirdiğimi göstermek için basit bir printf buna da gerek yok.
+
+298
+00:47:12,443 --> 00:47:15,103
+Burada da bağlandı mağlandı gibi bir şey diyebilirsiniz.
+
+299
+00:47:15,644 --> 00:47:17,423
+Bu kadar. Bitti. Nasıl?
+
+300
+00:47:18,063 --> 00:47:21,184
+Evet, hakikaten de while'la yaptık ama sadece while değil tabii ki.
+
+301
+00:47:21,184 --> 00:47:24,224
+Önce bir ilklendirme, bir for.
+
+302
+00:47:24,659 --> 00:47:37,099
+Sonrasında da girdi döngüsü olsun diye bir variable. Yani verildiği sürece. Ya da bana zaten 5000 tane değer gelecekse ben burada 5000'lik bir döngü de yapabilirdim.
+
+303
+00:47:37,820 --> 00:47:45,099
+Eğer bağlıysa, daha önceden aynı hükümeledelerse, aynı hükümededirler de ya da hiçbir şey yapma. Eğer değillerse...
+
+304
+00:47:45,715 --> 00:48:06,495
+Bunları birbirine bağlamak için öbür hükümenin değerlerinin hepsini değiştir. Bütün sıfırları 8 yap, bütün ikileri 5 yap gibi değişikliği yaptık. İşte bu kadar. Nasıl? O kadar karmaşık problemlerin, hani bu bilgisayar buna bağlı mı? Bu iki arkadaş Facebook'ta birbirleriyle öyle hani network üzerinde birbirleriyle görüşebiliyorlar mı?
+
+305
+00:48:07,059 --> 00:48:25,740
+Gibi ya da işte bu iki komponent ne bileyim bu direnç ile şuradaki transistörün bacağı birbiriyle bağlı mı, tek yolla mı bağlı gibi mesela problemleri çözerken alın size bağlantı problemini çözmek için inanılmaz basit ama çok efektif bir algoritma.
+
+306
+00:48:26,420 --> 00:48:32,680
+Daha iyi yapabilir miyiz? Evet yapabiliriz. Ama bu basit çözüm. Hani hızlı çözüm. Hızlı bir şekilde bulabiliyorum.
+
+307
+00:48:33,108 --> 00:48:36,228
+Böyle bir ilk çözüm gerçekleştirebilirim.
+
+308
+00:48:37,868 --> 00:48:43,528
+Evet, gördüğünüz gibi algoritma tasarlarken şeyi bir arada düşünmeniz gerekiyor.
+
+309
+00:48:43,528 --> 00:48:48,088
+Yani hem ne yapmalıyım, iki ben bu yaparken neler kullanmalıyım.
+
+310
+00:48:48,807 --> 00:48:50,508
+Hani bu değerleri bir yerde tutacağım.
+
+311
+00:48:51,268 --> 00:48:51,968
+Dizide tutayım.
+
+312
+00:48:52,168 --> 00:48:53,048
+Neden dizide tutuyorum?
+
+313
+00:48:53,168 --> 00:48:56,868
+Çünkü ben aslında tek boyutlu bir veriyle baş başayım.
+
+314
+00:48:57,204 --> 00:48:59,724
+Tek küme değerlerini tutmaya çalışıyorum.
+
+315
+00:49:00,264 --> 00:49:04,603
+Eğer ikili ilişkiler benim için önemli olsaydı o zaman evet belki matriz kullanacaktım.
+
+316
+00:49:04,704 --> 00:49:14,063
+Ya da bunu dinamik yapmak için linkli listeler falan kullanacaktım ki önümüzdeki haftalarda böyle problemler ya da bunlara uygun algoritmalarda görmeye başlayacağız.
+
+317
+00:49:15,804 --> 00:49:19,284
+Evet, saatimiz 12.48 olmuş. Tamam.
+
+318
+00:49:19,956 --> 00:49:40,016
+Şey yapayım, hemen bir örnek kod daha paylaşayım. Dediğim gibi ondan sonra saat 1'de fakültyö yönetim kurulu toplantısı olduğu için bugün bu kadar yapacağım. Geri kalanları da zaten teorik derste devam ederiz, sorun değil. Yani kod örnekleri paylaşacağım sizinle burada. Şöyle, dinamik dizi yaratma. Eminim hepiniz biliyorsunuz ama.
+
+319
+00:49:40,467 --> 00:50:02,007
+Bazen unutabiliyoruz, bazen şaşırabiliyoruz. O yüzden bu ilk haftada üzerinden bir daha geçmekte fayda var. Mesela şurada gördüğünüz gibi bir double pointer görüyorsunuz ve bu bir function pointer. Bu bir imza. Neden? Çünkü main'den önce yazılmamış, çağrıldığı yerden önce yazılmamış. O zaman şuraya bunun imzasını atmamız gerekiyor.
+
+320
+00:50:02,007 --> 00:50:04,447
+Şimdi ne yapıyorum?
+
+321
+00:50:04,980 --> 00:50:09,679
+Bir matris yaratmak istiyorum ama bu matrisi dinamik olarak yaratmak istiyorum.
+
+322
+00:50:10,400 --> 00:50:13,739
+Ne yapacağım? n ve m değerlerini kullanıcıdan aldım.
+
+323
+00:50:13,739 --> 00:50:20,739
+Tamam mı? Yani n satır m sütun değeri olacak şekilde ve bunu bir...
+
+324
+00:50:21,204 --> 00:50:30,684
+Double pointer A'ya atıyorum, integer double pointer'ına. Create matrix n, m diyorum. Neden? Integer, integer. Bunlar da integer zaten. n ve m'ye de çağırabilirim.
+
+325
+00:50:31,224 --> 00:50:41,684
+Ve burası da tamamen i eşittir sıfırdan n'e, j eşittir sıfırdan m'e, printf a, i, j. Matrisi yazdırıyorum. Satır satır, her satırın sonunda da bir enter.
+
+326
+00:50:42,364 --> 00:50:48,164
+Bildiğimiz düz, böyle dikdörtgen şekilde matrisi yazdırmak. Create matrix'e gidelim.
+
+327
+00:50:48,480 --> 00:50:56,480
+Ne verdim? N ve M değerlerini yani n satır m sütundan oluşan boş bir basit bir matriz yaratacağım inticirlardan oluşan.
+
+328
+00:50:57,179 --> 00:51:03,299
+Evet int int demiştim. Şimdi burada satır ve sütun diye daha okunaklı hale getirdim. nm diye de kullanabilirdiniz.
+
+329
+00:51:03,299 --> 00:51:05,299
+Şimdi önce...
+
+330
+00:51:05,940 --> 00:51:20,800
+Bunun bellekte başlangıç adresini tutan bir pointer'a ihtiyacım var. O da iki boyutlu olduğu için şu şekilde. Neden? Çünkü önce satırlar sonra sütunları tutan iki boyutlu diziler oluştur. Dizinin dizisi şeklinde yapı kurgulamam gerekecek.
+
+331
+00:51:20,800 --> 00:51:29,480
+Nasıl yapacağım alokasyonu? Bu iki boyutlu olduğu için pointer pointer, integer pointer pointer'ı
+
+332
+00:51:29,556 --> 00:51:35,416
+kesti ile birlikte dinamik alokasyon için kullandığımız malloc'u çağıracağım.
+
+333
+00:51:35,416 --> 00:51:38,695
+Malloc'da peki ne kadar yer ayırmam lazım?
+
+334
+00:51:39,496 --> 00:51:43,135
+rows kadar yer ayırmam lazım ama her rowda ne kadar veri tutacağım?
+
+335
+00:51:44,056 --> 00:51:49,615
+integer pointer kadar tutacağım ve bu sayede her bir rowun başı aslında bir integer pointer olacak.
+
+336
+00:51:50,916 --> 00:51:51,096
+Tamam.
+
+337
+00:51:51,715 --> 00:51:56,695
+integer pointer'ın sizeof'u çarpı row kadar bir alan burada tuttum.
+
+338
+00:51:56,831 --> 00:52:13,731
+Sonrasında sıfırdan rows'a kadar her bir adımda şu kaymış şeyden, tek satır bu tabii ki, dizinin i'inci gözü yani aslında birinci satır, ikinci satır, üçüncü satır hepsini teker teker yaratmaya başlıyorum.
+
+339
+00:52:13,731 --> 00:52:23,592
+Artık tek satır olduğu için tek pointer integer gösterecek. Size of int çarpı kolon sayısı kadar. Ne yaptım?
+
+340
+00:52:23,923 --> 00:52:27,923
+Kolon sayısı kadar integerlık bir yer ayırdım kendime.
+
+341
+00:52:28,503 --> 00:52:35,783
+Önce sütun sayısı, satır sayısı kadar yani n kadar böyle aşağı doğru bir pointer dizisi ayarladım.
+
+342
+00:52:36,596 --> 00:53:04,596
+Sonra da her biri için kolon sayısı kadar, sütun sayısı kadar ikinci bir şey ayarladım. Pointerlar. Ve sonrasında da artık bunlara sahibim. Yani row pointer'a ve kolon pointer'ına sahibim. Row pointer'ı boyunca i ile gezerim. Kolon pointer'ı boyunca da j ile gezerim. Araya iyice eşittir. İstediğiniz herhangi bir değer. Sıfır da yazabilirsiniz. Ya da random mod 9. Hani sıfırla 9 arasında sayı.
+
+343
+00:53:04,596 --> 00:53:30,836
+Yıllar oluştursun diye böyle basit bir şey de yapabilirsiniz. Geriye erayı döndürdüm. Nasıl döndürebiliyorum geriye erayı? Şu yüzden. Burada gördüğünüz gibi pointer'ımız bu. Tanımımız da buydu. Ve döndürdüğüm değer de A. A da zaten aynı şekilde tanımlanmış bir pointer pointer'ı. Okey. Hani bazen karışabiliyor. Ne kadar yer ayırmıyor. Burada şey yok.
+
+344
+00:53:31,315 --> 00:53:52,336
+Eksik olarak söyleyeyim hemen. Eğer yer ayrılmazsa hata kontrolü yok. Onları eklemeniz gerekir. Tabii ki. Hani şuralarda malloklarda bellek yetersiz gibi şeyler, kontroller yapmanız tabii ki gerekir. Bu kodun basit ve slide'a sığması açısından onlar atılmış hali. Ona da dikkat edin tabii ki.
+
+345
+00:53:57,715 --> 00:54:04,076
+5 dakika sonra benim toplantı başlıyor. O yüzden bu uygulamayı bu kadar yapalım.
+
+346
+00:54:05,356 --> 00:54:10,536
+İşte bu çarşamba öğleden sonraları bazen birden sonrası işte böyle şey toplantıya gidebiliyor.
+
+347
+00:54:11,215 --> 00:54:13,815
+O zaman bu gibi günlerde bir saat yaparız.
+
+348
+00:54:15,795 --> 00:54:37,495
+Eğer bir şey eksik kalırsa diğer saatlerde zaten tamamlıyoruz merak etmeyin. Şimdilik bu noktada kesebiliriz. Buradan sonra vereceğim iki örnek daha vardı çok basit. Biri örnek bir de simülasyondu. Dediğim gibi onları da haftaya pazartesi başka örneklerle daha büyük örneklerle birlikte üzerinden geçmeye devam ederiz. Sorunuz var mı?
+
+349
+00:54:42,579 --> 00:54:58,579
+İyi günler geliyor. Peki, sizlere de iyi günler. Umarım algoritmik düşünme, algoritma tasarımında probleme yaklaşım, bakış açısı diyoruz ya, nasıl bakalım, problemi nasıl acaba biraz değiştirip mi okusak?
+
+350
+00:54:59,059 --> 00:55:15,139
+Onun yerine şöyle bir çözümü yapıp da biraz değiştirsek, şunu uydursak nasıl olur gibi yönlerin hepsini düşünmeniz gerektiğini aslında basit bir örnek ama çok güzel, hızlı anlatılabilen bir örnek üzerinden göstermeye çalıştım.
+
+351
+00:55:15,139 --> 00:55:25,839
+Bu problemin farklı farklı çözüm algoritmaları da var tabii ki. Bunu unionla falan da yapacağız. Şimdi bu quick findla yapıldı, quick unionla da yapılır, union findla da yapılır.
+
+352
+00:55:27,059 --> 00:55:29,579
+Dediğim gibi graf algoritmalarıyla da bunları yapabilirsiniz.
+
+353
+00:55:31,000 --> 00:55:45,379
+Ama temeli gördüğünüz gibi aslında bağlı mı değil miyi kontrol etmek için bir dizi tutmak ve çok basit bir kontrol yapmak ya da basit bir değişim yapmak işi, yani find and union yapmak işi çözebiliyor.
+
+354
+00:55:46,319 --> 00:55:51,419
+En azından doğru çalışan bir algoritmik çözüm oluşturmuş oluyoruz.
+
+355
+00:55:52,083 --> 00:56:02,963
+Peki, o zaman dediğim gibi ben toplantıya sizler de dinlenin. İyi haftalar. Pazartesi 10'da görüşmek üzere. Hoşçakalın.

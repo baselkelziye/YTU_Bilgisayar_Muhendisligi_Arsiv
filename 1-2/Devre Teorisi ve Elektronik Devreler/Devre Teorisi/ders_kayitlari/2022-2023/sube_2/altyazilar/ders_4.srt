@@ -1,0 +1,2519 @@
+1
+00:00:28,692 --> 00:00:30,911
+Bir beş dakika sonra başlayacağız arkadaşlar.
+
+2
+00:06:24,627 --> 00:06:35,947
+Evet, merhabalar arkadaşlar. Geçen hafta dersi Erkan Hoca'nın grubuyla beraber yaptınız. Bu hafta devam edeceğiz.
+
+3
+00:06:38,087 --> 00:06:50,947
+En son zannedersem Erkan Hoca ile görüştüm ben. Parallel seri direnç yapılarını anlatmış. Bu kısım bitmiş. Sonrasında...
+
+4
+00:06:51,603 --> 00:06:58,183
+Delta konfigürasyonu, Y konfigürasyonu, bunlara bakmışsınız. Bunlar da bitmiş.
+
+5
+00:06:58,803 --> 00:07:03,923
+Ve şu an Bridge, yani köprü tipi yapılarına bakacağız ve bu haftaki konuya geçeceğiz.
+
+6
+00:07:07,463 --> 00:07:17,363
+Haftaya da zaten söylemiştik, quiz var, DUR'da yaptık. Bu haftayı ertelemek durumunda kaldık. Erasmus'la alakalı bir durumdan dolayı.
+
+7
+00:07:29,235 --> 00:07:31,815
+Hocam, yani bugün kısa sınav yok mu?
+
+8
+00:07:32,336 --> 00:07:43,915
+Yok, bugün kısa sınav yok. Haftaya. Google Classroom'da duyurulmuş olması lazım size ama bir bakayım. Kontrol edelim.
+
+9
+00:07:46,156 --> 00:07:55,696
+Hafta yapacağımızı duyurduk diye aklımda ama. Evet, bak duyurmuşuz. Evet, iki gün önce duyurmuşuz.
+
+10
+00:07:56,980 --> 00:08:23,840
+Evet, kısa sınav haftaya olacak arkadaşlar. Zaten konularda biraz sıkışacaktı. İyi oldu aslında bir tıkla haftaya olması. Çünkü bugün mesela meşle, yani çevre akımları ile düğüm gerilimi, not-voltaj konularına giriş yapacağız. Onlarla alakalı örnekler yapacağız. Haftaya da bunlar özelliğinde zaten sınav olacak. Konuları bu haftanın sonuna kadar olacak haftaya.
+
+11
+00:08:24,255 --> 00:08:26,575
+Evet, yani bugünkü konular dahil olacak.
+
+12
+00:08:28,435 --> 00:08:37,535
+Evet, en son Bridge'te kalmışsınız. Bridge devreleri, yani köprü tipi devreler arkadaşlar, aslında bir denge devresi.
+
+13
+00:08:38,067 --> 00:08:51,827
+Bu genelde sensör mimarisinde veya sensörden okunan veriler, fiziksel dünyadaki sıcaklık, nem gibi veya basınç gibi değerlerle alakalı devre tasarımı yapılacağı vakit kullanılan bir devre yapısı.
+
+14
+00:08:51,827 --> 00:09:05,067
+Amaç burada şu, amaç burada bir dengeyi sağlayabilecek dirençler bütünlüğünü sağlamak.
+
+15
+00:09:05,344 --> 00:09:15,144
+Yani bir direncin eşdeğer devre direncini sağlayacak, dengede tutacak bir yapıyı kurgulamak.
+
+16
+00:09:15,644 --> 00:09:24,304
+Köprü tipi de olay tamamen dört adet direncimiz var ve bu dört adet direncin birbiri arasında şöyle bir bağlantısı var.
+
+17
+00:09:24,864 --> 00:09:29,564
+Amaç burada R A, R B, R C ve R'de yani dört tane.
+
+18
+00:09:30,388 --> 00:09:37,927
+Bu dirençlerin değerlerinin eşit olduğu noktada, işte birer onluk, ikişer onluk, beşer beş kaldık vs.
+
+19
+00:09:38,628 --> 00:09:50,128
+Hepsi aynı seviyede bir direnç kullanıldığı vakit, aradaki potansiyel fark, yani C ve D noktası dersek şuralara, düğümleri dersek,
+
+20
+00:09:50,248 --> 00:09:55,028
+C ve D düğüm arasındaki bu potansiyel farkın sıfır olduğunu savunur.
+
+21
+00:09:56,067 --> 00:09:57,567
+Köprü devreler budur.
+
+22
+00:09:57,971 --> 00:10:16,211
+Ya şöyle, bunlar nerelerde kullanılıyor tekrar belirtileceksek. Buraya mesela RD direnci yerine bir sensör konuluyor. Bu sensör mesela sıcaklık sensörü. İlgili sıcaklık derecesinde bize, pardon arkadaşlar biraz gripim.
+
+23
+00:10:16,692 --> 00:10:36,831
+Bunun biraz akıyor, böyle ara ara keseceğim derse. İlgili durumlarda, mesela buradan okumuş olduğumuz sensörden gelecek olan resistif etkiye bağlı olarak buradaki direnç değişiyor. Aslında sensörün mantığı buradaki direncin değiştirmesi. Neye göre? Sıcaklığa göre olur veya başka bir duruma göre.
+
+24
+00:10:37,251 --> 00:10:44,572
+Buradaki direnç değeri değiştiği vakitte bu denge sağlanmıyor. Denge sağlanmadığı için de burada bir gerilim düşümü oluşuyor.
+
+25
+00:10:44,692 --> 00:11:00,211
+İşte bu gerilim düşümü oluşması bizim işte belki de şeylerde, klimalarda işte havanın, ortamın soğutulmasını sağlayacak olan çalışmayı sağlıyor. Yani bir kontrol devresi anlamında da sağlanabilir.
+
+26
+00:11:01,364 --> 00:11:06,784
+Bu direnç değerleri öyle iyi ayarlanıp işte 25 derecede klima çalışmasın diyoruz.
+
+27
+00:11:07,284 --> 00:11:20,584
+25 dereceye tekabül gelen sensör outputundaki direncin bütün 3 dirençte eşit olarak dağıtılması neticesinde 25 derecede bilgi gerilim üretilmeyecek ve devre çalışmayacak gibi düşünebiliriz.
+
+28
+00:11:21,183 --> 00:11:28,584
+Yani burada köprü tipi devrelerde genelde beklenen BCD'yi sıfır yapan değerlerin bulunmasıdır.
+
+29
+00:11:29,011 --> 00:11:39,791
+C ve D noktalar arasındaki potansiyel farkı sıfır yapabilecek bir direnç dağılımının aslında ayarlanması üzerine kurgulanmış devrelerdir.
+
+30
+00:11:40,991 --> 00:11:45,231
+Dediğim gibi çok fazla sensörlerde vesaire kullanılan bir yapımı köprü devreleri.
+
+31
+00:11:46,259 --> 00:11:57,640
+Bunu tabii geçen hafta gördüğünüz Y dönüşümü veya delta dönüşü, delta direnç devre, delta diagramındaki direnç devre tasarımlarında da görebiliriz.
+
+32
+00:11:57,759 --> 00:12:03,819
+Y'da da. Mesela iki tane Y yapının, işte burada tabii 6 tane direnç var.
+
+33
+00:12:05,011 --> 00:12:28,271
+Bu iki tarafında, iki okla gösterilen tarafında aslında eş devre olması, yani buradaki Y konfigürasyonundan çıkan R eşin, yukarıdaki R eşe eşit olduğu durumda bizim buradaki VCD dediğimiz gerilimin, potansiyel farkın oluşmayacağını savunan devreler, yani oluşmayacağını gösteren devreleri gösteriyor bu köprü tipi devreler.
+
+34
+00:12:32,340 --> 00:12:54,539
+Evet. Veyahut da delta olabilir. Delta diagramında. Bu delta'da da bir ortakta bir direnç oluşacak. Çünkü delta'nın gösteriminde üçer tane direnç olduğunu düşünürsek, işte bu ortadaki direncin aslında maksimum olmasını sağlamamız lazım ki, hani maksimum olursa gerilim oluşmaz. Yani bu maksimumdan kastım sonsuz yani.
+
+35
+00:12:54,964 --> 00:13:03,844
+Herhangi bir akımın geçmeme durumu, yani açık devre olma durumu. Bunu kastediyoruz değil mi? Maksimum direnci. Biz açık devre, open circuit'ta gösteririz.
+
+36
+00:13:05,043 --> 00:13:28,203
+Sıfır direnç ise kısa devreyi göstermek için gösterilir. Burada şimdi maksimum sonsuz bir direnç yapısında bir, ya buranın çok önemi yok işte, RB'de, RA, RB, 2, RA, 1'in dengesi sağlandığı koşulda, burası zaten açık devre gibi herhangi bir gerilimin oluşmayacağını savunan devre tasarımları bunlar.
+
+37
+00:13:29,364 --> 00:13:54,943
+İkisi beraber de kullanılabilir. Burada da RC'nin, yani burada bir gerimin oluşmaması için, bu eşdeğer devresi, alttaki eşdeğer kırmızıyla gösterilen delta gösteriminin, yukarıdaki y gösteriminin, yukarıdaki delta gösterimindeki eşdeğerle eşit olması ve eşit olduğu durumda da buradaki VCD geriminin oluşmayacağını savunuyor.
+
+38
+00:13:57,107 --> 00:14:04,307
+Evet, genelde geçen haftada biraz tabii Bridge Soru'na girmeden önce siz bu dönüşümleri zaten gördünüz.
+
+39
+00:14:04,307 --> 00:14:11,727
+Y, Y, Delta, Delta. Bunlar aynı yapıda olan devrelerin Bridge anlamında kullanılması da mümkün.
+
+40
+00:14:12,187 --> 00:14:25,007
+Tekrar edelim, burada esas olan şey şu, ortak direnç dediğimiz o direnç yapısı üzerinde maksimum bir direnç rezidif etkiyi gösterebilecek ki bu aslında açık devre olduğunu gösteriyor.
+
+41
+00:14:25,107 --> 00:14:29,567
+Yani gerilim üzerinde herhangi bir gerimin oluşmayacağını gösteriyor.
+
+42
+00:14:29,987 --> 00:14:35,887
+VCD'yi sıfır yapacak bir köprü tipi devre tasarımı söz konusu olabiliyor.
+
+43
+00:14:36,027 --> 00:14:39,627
+Bunun için de sensörlerde çok sıkça kullanılan bir yapı bu.
+
+44
+00:14:42,007 --> 00:14:45,067
+Evet, bu konuyla alakalı sorumuz var mı?
+
+45
+00:14:49,235 --> 00:14:54,576
+Yok herhalde, tamam. O zaman asıl bu haftaki konumuza geçelim.
+
+46
+00:15:08,244 --> 00:15:21,244
+Bridge yapısıyla alakalı labınız olacak arkadaşlar. Yani ben yanlış hatırlamıyorsam öyle bir labınız çok kısa bir lab da olsa olacak. Bridge yapıları dediğim gibi tekrar etmek gerekirse...
+
+47
+00:15:21,524 --> 00:15:44,443
+Bizim için bir eşdeğer devrenin dengede olma durumunu gösteriyor. Dengeyi sağlayabilmek için gerekli olan dördüncü direncin ne olması gerektiği veya başka o yapıda, bridge yapısında, Y yapısında, delta yapısında ne olması gerektiğini aslında biz sensörlerden alıyoruz güncel hayatta ama işte normal hesaplamalarda oraya bir reox da konabilir mesela.
+
+48
+00:15:46,803 --> 00:16:13,163
+Evet, bu haftaki konumuz, not ve yani not dediğimiz düğüm, düğüm ve çevre analizi. Meş çevre demek, not da düğüm demekti. Aslında bunlar şimdi biz daha bir devre çözümünde bunları yapacağız ama temel aldığı şey şu, not dediğimiz KCL'yi, meş dediğimiz de KBL'yi aslında hedef alıyor. Yani kullanıyor diyelim, hedef alalım, yanlış oldum.
+
+49
+00:16:13,775 --> 00:16:32,956
+KCL denklemlerini kullanarak biz NOT yani düğüm analizi yapacağız. KVL eşitleşikliklerini kullanarak da biz çevre akımlar veya çevre analizi yapacağız devrelerde. Bu KCL ile KVL'yi zaten yeri geçince bir daha anlatacağız sunumda.
+
+50
+00:16:35,475 --> 00:17:01,056
+Öncesinde tabii hızlı bir şekilde aslında denklemleri çözmende kullandığımız, devletif şeyler, maddissel formatlı eşitlikleri çözmek için de kullandığımız yaklaşımlar var. Normalde biz bir matematik olarak iki bilinmeyenliği iki tane denklem olduğunda bunu çözebiliyoruz değil mi? İşte yerine koyma metodu var, substitution metodu.
+
+51
+00:17:01,748 --> 00:17:05,628
+Birinci denklemi yalnız bırakıyoruz. Mesela ihsi.
+
+52
+00:17:06,195 --> 00:17:14,215
+Ve ikinci denklemde X'in yerine, yani denklemdeki şu X'in yerine birinci denklemde yalnız bırakılan X'i koyuyoruz.
+
+53
+00:17:14,596 --> 00:17:19,275
+Yerine yerleştirme, yer değiştirme, yerine koyma dediğimiz yöntem.
+
+54
+00:17:19,275 --> 00:17:25,615
+Ve nihayetinde Y'ye ait denklem çıkıyor. Sonra da Y'yi bulduktan sonra X'i de buradan çıkartabiliyoruz.
+
+55
+00:17:25,695 --> 00:17:31,275
+Bu aslında bildiğimiz bir matematiksel eşitsizlik veya denklem çözme yöntemi.
+
+56
+00:17:32,788 --> 00:18:00,788
+Bir de determinant yöntemi var. Aslında elektrik devrelerinde veya simülasyon ortamlarında, MATLAB gibi yazılımlarda aslında determinant tabanlı. Biz MATLAB'e bir veya yazılıma bir input veririz ve output'unu, çıktısını, akımını, hesabını vs. aslında determinant usulüyle buluruz. Bunu da anlatalım. Determinantla da çönebiliriz soruları. Normal başta sizlik...
+
+57
+00:18:00,788 --> 00:18:02,807
+Denklem çözmeyle de yapabiliriz.
+
+58
+00:18:03,628 --> 00:18:14,608
+Determinatı almayı hatırlarsak arkadaşlar, normalde bizim A1X artı B1Y eşitli C1, iki tane denklememiz vardı.
+
+59
+00:18:14,748 --> 00:18:19,168
+A2X artı B2Y eşitli C2 değil mi?
+
+60
+00:18:19,448 --> 00:18:22,927
+Bu iki denklemde aslında biz bunu maddis formatına getirebiliyoruz.
+
+61
+00:18:23,528 --> 00:18:24,988
+Kat sayıların başları.
+
+62
+00:18:26,420 --> 00:18:37,500
+A1, A2, B1, B2, 2'ye 2'lik, ya tabii bu 2 denklem ise 2'ye 2'lik, 3 denklem 3'in mi yani ise 3'e 3'lük bir formatta olacak.
+
+63
+00:18:38,260 --> 00:18:43,800
+Çarpı, maddis çarpımını biliyorsunuz zaten, X'in, şu buraya da yani.
+
+64
+00:18:45,460 --> 00:18:55,200
+Şu 2 çarpı 2, 2 çarpı 1 dediğimiz yapıda. Şunların zaten çarpım olabilmesi için eşit olması lazım hatırlarsanız.
+
+65
+00:18:55,779 --> 00:19:01,639
+Burada da yani A1 ile X'in aslında çözümleme usulüyle yazma şeklimiz bu.
+
+66
+00:19:02,099 --> 00:19:11,039
+B1'in kasası da Y olduğu için, yani Y'lerin sabiti B1, B2 olduğu için de ikinci tabirde ikinci çarpım alınıyor.
+
+67
+00:19:12,051 --> 00:19:34,692
+Karşısında da C1 ve C2 var zaten. Şimdi bu yapıya getirdikten sonra denklemlerimizi aslında determinantla çözmek çok daha basit. Nasıl yapıyoruz? İlk başta bir ana determinantı hesaplama yöntemimiz var. Bunda herhangi bir outputları dahil etmeden beni ilgilendiren kendi kat sayılarım arasında bir determinant yapmam.
+
+68
+00:19:35,059 --> 00:19:58,980
+A1 çarpı B2 eksi A2 çarpı B1 veya tam tersi B1 çarpı A2 neyse. Yani A1 ile B2'yi çarparak öteki köşegen çarpımından çıkartıyor. Bu ana determinantını veriyor. Sonra bir de değişkene yani bizim X ve Y iki tane bilinmeyenimiz var. X ve Y'ye bağlı bilinmeyene bağlı olarak determinant.
+
+69
+00:20:00,000 --> 00:20:05,259
+Bu arada kat sayıları olan sabitleri, outputlarla, yani çıktılarla değiştiriyoruz.
+
+70
+00:20:05,980 --> 00:20:11,920
+Mesela X'in kat sayısı ve X'i bulmak istiyorsam, X'in kat sayısı olan sabitler A1 ve A2.
+
+71
+00:20:12,980 --> 00:20:21,800
+Bu C1 ve C2'yi A1 ve A2'ye ne yazdığımda ve tekrar bir determinant yaptığımda, C1 çarpı B2, C2 çarpı B1.
+
+72
+00:20:23,599 --> 00:20:27,320
+Yaptığımda benim X'e göre bir determinant almış oluyorum.
+
+73
+00:20:27,700 --> 00:20:38,079
+Y'nin kat sayıları olan işte B1 ve B2 yerine de koyduğumda çıktılarımı C1, C2 yerleri, bu sefer de Y'ye göre bir determinant almış oluyorum.
+
+74
+00:20:40,079 --> 00:20:44,720
+Bunu zaten muhtemelen biliyorsunuz, daha önceden yapmışsınızdır.
+
+75
+00:20:50,099 --> 00:21:04,480
+Evet, şimdi bu iki determinatı aldıktan sonra, yani denklemin genel determinatıyla değişkene bağlı determinantını birbirine oranladığımda ben X'i, yani basit anlamda şöyle D ile determinatı ortadan kaldırır gibi düşünebiliriz.
+
+76
+00:21:04,480 --> 00:21:12,219
+X'i buluyorum veya Y'yi buluyorum tam tersini yaptığımda. Y'ye göre determinantları oranladığımda.
+
+77
+00:21:14,228 --> 00:21:19,827
+Elde ettiğimiz sonuçta zaten bizim iade işlemiyle elde ettiğimiz sonucunun aynısı olacaktır.
+
+78
+00:21:23,988 --> 00:21:44,048
+Peki, 3 değişken 3 denklem olduğunda nasıl yapıyoruz? Burada da yine zaten bunun yazılmasını aynı şekilde A1, A2, A3, B1, B2, B3, C1, C2, C3 çarpı bizim bilinmeyenlerimiz.
+
+79
+00:21:45,236 --> 00:21:55,516
+Eşiktir, D1, D2, D3 konuşacak değil mi? Şimdi burada ilk başta determinata aldığımız senaryoda üçlük olduğu için bir yerde kesiliyor.
+
+80
+00:21:56,076 --> 00:22:06,816
+Tekrar mesela ilk ana determinant için konuşursak tekrarlı bir şekilde yazıyoruz. A1, A2, A3, B1, B2, B3.
+
+81
+00:22:07,700 --> 00:22:17,660
+C1, C2, C3 yazdık. Şimdi normalde şunu bulabiliyoruz, evet. Ama bunu mesela şuradaki değer eksikliğinden dolayı bulamıyoruz.
+
+82
+00:22:18,039 --> 00:22:27,160
+Bu bütün hepsinin köşegenleri ilerletmemiz lazım. A1, A2, A3'ü bir daha yazdım. B1, B2, B3'ü bir daha yazdım.
+
+83
+00:22:27,160 --> 00:22:33,160
+Ve böyle yaptığımda şu köşegenler artı diye gösterebilirim.
+
+84
+00:22:34,099 --> 00:22:42,019
+Öteki tarafta şu köşegenleri ise, eksi işlem olarak gösterebilirim.
+
+85
+00:22:42,019 --> 00:22:57,619
+Ve bunları denklem olarak yazıyorum. Yani neyi yazıyorum? A1 çarpı B2 çarpı C3 artı B1 C2 C3, A3.
+
+86
+00:23:02,612 --> 00:23:08,632
+Artı, C1A2B'lik.
+
+87
+00:23:12,115 --> 00:23:18,615
+Bunlar artıları gösteriyor. Bir de eksilerimiz olacak. Ters yerinde yazdıklarım.
+
+88
+00:23:18,615 --> 00:23:34,915
+C1, B2, A3, Eksi, C1, C2, B3, Eksi, En sonunda B1, A2, C3.
+
+89
+00:23:37,779 --> 00:23:45,319
+Sonra bunları kendi içerisinde topladım. Bunları kendi içerisinde toplayıp çıkarttığımda determinatı elde etmiş oluyorum.
+
+90
+00:23:46,059 --> 00:23:56,779
+Dx için de hiçbir şey değişmiyor. Sadece benim D1, D2, D3'lerimi x'e tekrar gelen ağların özelini yazıp tekrar bunu yapıyorum.
+
+91
+00:24:01,364 --> 00:24:11,024
+B kat sayısına ait olan yere yazarak aynı şeyi yapıyorum. Nihayetinde böyle bir soru çocuğu mümkün hale geliyor daha basit bir anlamda.
+
+92
+00:24:16,884 --> 00:24:17,384
+Teşekkürler.
+
+93
+00:24:28,339 --> 00:24:34,899
+Evet, baktığımızda anlattığımız şekilde denklemeyi nihayetinde oluşturuyoruz.
+
+94
+00:24:37,395 --> 00:25:04,775
+Şimdi bu basit giriş seviyesindeki bir matematiği niye döndük? Çünkü aslında bizim not analizinde bir tane akımımız yok. Birden fazla akımımız olacak. Eşitlikler birden fazla olabilir. 2, 3, 4 tane eşitlik olabilir. Bunları not analiziyle yapmak, demin anlattığımız determinat usulüyle yapmak bir tık daha kolay olabiliyor. İkisini de yapacağız biz bu ders kapsamında.
+
+95
+00:25:05,395 --> 00:25:15,875
+Substitution da yapabilirsiniz, hiç problem değil. Ama sanki matsel gösterim, determinate almayan daha kolay bir yöntem olabilir.
+
+96
+00:25:17,535 --> 00:25:20,735
+Şimdi not analizine girelim. Not analizindeki hedef şu.
+
+97
+00:25:23,092 --> 00:25:33,892
+Biz notlar arasında, not neydi? Not aslında bir elektronik devre elemanı, elektrik devre elemanı, direnç olabilir, akım, kaynağı, güç kaynağı, kondans, stör, neyse.
+
+98
+00:25:34,492 --> 00:25:42,692
+Yani bir komponentin aslında bulunma durumunda iki terminali, iki bacak bağlantısı arasında bir not oluşuyor.
+
+99
+00:25:42,692 --> 00:25:44,972
+Yani bir direnç yapısını gösterelim.
+
+100
+00:25:46,996 --> 00:25:59,896
+Hatırlarsanız, biz buraya ve buraya iki tane not diyorduk. Ta ki başka bir yapı, işte bir başka direnç yapısı daha varsa. Bunları biz not olarak gösteriyorduk. Yani düğüm.
+
+101
+00:25:59,896 --> 00:26:09,856
+Şimdi bu not analizindeki hedefte şu, düğüm gerilimlerini bulmak. Yani buradaki düğümdeki gerilimin ne olduğunu bulmak.
+
+102
+00:26:10,324 --> 00:26:29,764
+Ama bu düğüm gerilimini bulmak için aslında biz KCL'den devam edeceğiz. Çünkü ben şunu biliyorum. Bu düğüme giren akımların çıkan akımlara olan eşitliği, bir eşitlik yazabiliyoruz burada. Ve bu akımlar üzerinden bir eşitlik yazarak biz düğümdeki gerilimi bulmayı hedefliyoruz.
+
+103
+00:26:31,584 --> 00:26:32,644
+Özetçe bu.
+
+104
+00:26:37,044 --> 00:27:00,484
+Evet, ilk düğüm gerilim, sonra da akımlara gideceğiz. Mesela adım adım nodanez yapalım. Böyle bir örneğimiz var. Ve bu örnekte, şimdi notları bir tayin ederim, düğümleri yani. Mesela burada bir düğüm var değil mi? Çünkü gerilim kaynaydı, direnç arası iki farklı terminal, bir düğüm. Burası bir düğüm, burası bir düğüm, başka bir düğüm, başka bir düğüm.
+
+105
+00:27:01,107 --> 00:27:15,227
+Başka düğüm, yani burası da var, hatta şu aşamada. Ama ilk etapta biz şunu şey yapıyoruz, düğüm ve meşanizinde ikisinde de ortak, bir referans noktası belirliyoruz. Başlangıç noktası.
+
+106
+00:27:15,227 --> 00:27:24,227
+Bu genelde, hani daha işlem kolay olsun diye gerilim kaynağı bulunan tarafı olur. Yani gerilim kaynağının...
+
+107
+00:27:24,864 --> 00:27:37,184
+tarafında yaparız. Mesela ben buraya bir GND koyabilirim. Ve bu GND'yi koyduğumda zaten bu düğümün eşdevselliği kalmıyor. Düğüm gerilim olduğu için buradaki gerilim sıfır mı oturuyor GND'den.
+
+108
+00:27:38,036 --> 00:27:56,576
+Ve şöyle de bir durum var. Buraya ben bu güç kaynağının bir bacağına gene de bağlayarak aslında güç kaynağının direnç ile olan öteki düğüm parçasının da aslında gerilimini tayin etmiş oluyorum. Ne olacak buradaki gerilim?
+
+109
+00:28:00,756 --> 00:28:02,056
+Ne olabilir sizce?
+
+110
+00:28:08,692 --> 00:28:31,831
+Var mı canım? Çekil açmamışım. Evet, V in olacak değil mi? Çünkü şöyle düşünün, multimetre ile bildiğinizde problar var. Bir prob GND'de, öteki probda işte bir gerilim kaynağının bir ucunda. Neyi ölçmüş olurum? V in ölçmüş olurum. Yani bu aralıktaki gerilim V in olacak değil mi?
+
+111
+00:28:32,692 --> 00:28:42,372
+Böylelikle aslında biz bir denklem, denklemler yazacağız biraz sonra. Bir bilinmeyeni ortadan kaldırmış oluyor. Ve in biliniyorsa tabii.
+
+112
+00:28:44,352 --> 00:28:53,731
+Şimdi bunlar düğüm. Bunları bahsettik. Hatta sunulur da vardı herhalde. Evet, referans noktasını belirledik ve bu referans noktasına göre düğümleri yazdık.
+
+113
+00:28:54,387 --> 00:29:08,528
+Şimdi hedef tekrardan aynı şeyi değiniyorum. Not analizinde düğüm gerilimleri üzerinden gideceğiz. Tamam mı? Bak, düğüm gerilimleri. Meşte ise çevre akımları üzerinden gideceğiz. Aradaki fark bu.
+
+114
+00:29:08,528 --> 00:29:19,528
+Düğüm gerilimleri, yani buralara V1, V2, birinin olduğuyum, ikinin olduğuyum ama düğümdeki gerilimi kasteliyoruz. Ve düğüm gerilimini ben...
+
+115
+00:29:20,531 --> 00:29:37,692
+Nasıl yazabilirim? V1 için, mesela direk sıfır burada olduğu için V1 eşittir, VIN yazabilirim. Değil mi? Veya V2 için nasıl yazabilirim? V2'deki gerilimi. Veya şöyle bir grafımız vardı, orada daha iyi olacak.
+
+116
+00:29:44,372 --> 00:30:06,432
+Bahsediyorum değil mi? Yani VA-VB gerilim farkı I çarpı R'ye eşit. Şimdi burada KCL'yi kullanıyoruz esasında. Yani biz bu düğüm gerilimini yazabilmemiz için akım ile bu düğüm gerilimini oluşturan direncin rezitif etkisinin birlikte 10 kanlında yazılması söz konusu.
+
+117
+00:30:09,044 --> 00:30:14,403
+Mesela bir akım çıkacak buradan değil mi? Şöyle bir akım. I1 diyelim.
+
+118
+00:30:18,867 --> 00:30:31,247
+Pardon arkadaşlar, dediğim gibi biraz neyse durumu var. Böyle arada sizin de uykunuzu açar belki.
+
+119
+00:30:35,087 --> 00:30:41,807
+Evet, yani düğümlerin gerilimlerini bulacağız ve bu gerilimleri bulabilmemiz için bir akım ile
+
+120
+00:30:42,740 --> 00:31:04,860
+Direncin üzerinden geçen akımın hesaplanması lazım. Yani aslında düğüme giren akımları bulmam lazım. Yani aslında KCL yapmam lazım. Şimdi V2 düğümüne giren akım I1 desek, çıkan akım da zaten I1 veya hepsine farklı isimlendireyim, sonra eşitlik kuralım. Buna I2 dedim.
+
+121
+00:31:05,364 --> 00:31:23,244
+Sonra burada ikiye ayrılacak akım değil mi? Bu I3 olacak. Burası I4 olacak. İşte burası da hatta I5 olsun. Sonrasında tabii isimlendirmeyi belki dirençlerle alakalı yaparsak sonradan daha karışmaz.
+
+122
+00:31:23,244 --> 00:31:31,923
+Buna I4 diyelim, buna I3 diyelim, buna I2 dedik zaten, I1 demiştik, buna I5 diyelim.
+
+123
+00:31:32,531 --> 00:31:58,112
+Şuraya I6 diyelim, değil mi? En sonunda da buraya da hani I7 diyelim şimdilik. Şöyle döndüğünü düşünelim. Şimdi bu normalde akımın, bu devredeki bütün akımları yazdık. Ve bu akımları KCL ile eşitleyebiliriz esasında. KCL bize ne diyordu? Düğme girenler çıkanlara eşit olacak. Mesela I1, I2'ye eşit olmak zorunda değil mi? V2 düğümün azarında.
+
+124
+00:31:59,188 --> 00:32:09,548
+Sonra şu V3 düğümü nazarında I2'nin I3 artı I4'e eşit olması lazım. Doğru mu? Değil mi?
+
+125
+00:32:10,468 --> 00:32:20,828
+Veya I2'nin I3 artı I5'e de eşit olmak zorundadığı var. Hatta I4'ün I5'e eşitliği var.
+
+126
+00:32:21,308 --> 00:32:25,808
+Çünkü aynı yerde, yani şuradaki düğme göre yazdım. I4 giriyor, I5 çıkıyor.
+
+127
+00:32:26,644 --> 00:32:44,683
+Başka ne yazabiliriz? I6'nın I3 artı I5 veya I6'nın I3 artı I4 eşitliği var mesela değil mi? Bunları hepsini yazdık. Bunlar bizim düğme giren akımları gösteriyor.
+
+128
+00:32:51,988 --> 00:33:10,508
+Düğümdeki V2'yi nasıl hesaplayabiliriz? V2 aslında nedir arkadaşlar? Akım buradan giriyor. Artı, eksi. R1 direnç üzerinde. Değil mi? Yani şöyle ki deminki grafikte de gösterebilirdik ama şöyle buraya özel çilelim.
+
+129
+00:33:13,087 --> 00:33:16,228
+Burası V1 kısmı, burası da V2 kısmı olsun.
+
+130
+00:33:17,172 --> 00:33:21,132
+Bu da R1 direnci ve buradan da I1 akımı geliyor.
+
+131
+00:33:22,132 --> 00:33:32,852
+Şimdi bu yapıda, bunun denklemini yazmak istediğimizde bir kere akımın yönü artı eksi polarizasyon uygulayacak değil mi buna?
+
+132
+00:33:39,059 --> 00:33:47,435
+V2'den daha yüksek bir gerilim seviyesinde olması, potansiyel farkı V1'in oluşturması lazım. Doğru mu? Yani...
+
+133
+00:33:48,403 --> 00:34:07,303
+Akımın yönünü böyle tayin ettim diye ben şu an yapıyorum. Böyle çıkmayabilir. En nihayetinde bir işlemleri yaptıktan sonra sonuçlar negatif çıkabilir. Geçen haftalarda bunu çok üzerinde durmuştuk. Sonucun negatif çıkması, sonucun yanlış olduğunu değil, akımın tayin edilen yönünün ters olduğunu gösterecek bize.
+
+134
+00:34:08,692 --> 00:34:16,971
+Velev ki, yani böyle bir senaryoda ben I1 akımını böyle kabul ettiğimde, mesela bu, o zaman şunu diyebiliriz.
+
+135
+00:34:17,072 --> 00:34:24,112
+V1 potansiyel farkı V2'den daha yüksek ki ben I1 akımını bu yönde kabul ettim.
+
+136
+00:34:24,832 --> 00:34:30,931
+Çünkü akımın oluşabilmesi için yüksek potansiyelten düşük potansiyele gitmesi lazım değil mi?
+
+137
+00:34:36,371 --> 00:34:42,091
+Çünkü V1 daha yüksek V2'den, bu bir potansiyel farkı oluşturuyor.
+
+138
+00:34:42,612 --> 00:34:45,751
+Aslında I1 çarpı R1'e eşittir diyebilirim.
+
+139
+00:34:46,971 --> 00:34:53,192
+Çünkü Ohm kanununda bu direncin üzerine düşen gerilim nasıl hesaplanıyor?
+
+140
+00:34:53,831 --> 00:34:56,891
+Direncin üzerindeki akım ile direncin değeri ile.
+
+141
+00:34:57,364 --> 00:35:22,203
+R10 değeri de hesaplanıyor değil mi? I1 çarpı R1 bu direncin üzerindeki gerilim gösteriyor. Ama bu gerilim benim iki not anlamında şöyle yazabilirim buradaki gerilim. Buna VR gerilim diyelim. VR gerilim esasında iki nodun birbirinden çıkartma ama V2-V1 değil. Çünkü akımın yönünü ben böyle kabul ediyorum.
+
+142
+00:35:23,699 --> 00:35:27,319
+Öyle olduğu için de V1-V2'dir diyebilirim.
+
+143
+00:35:29,179 --> 00:35:32,300
+Ve buna göre böyle bir hesap, böyle bir eşitlik kurabilirim.
+
+144
+00:35:32,380 --> 00:35:40,679
+Yani ben aslında V2 düğümünü, gerilimini, R1 direnci üzerindeki gerilim ile V1'e bağlıyorum.
+
+145
+00:35:40,679 --> 00:35:47,659
+Şöyle de anlatabiliriz. V1-I1-R1, V2'yi verecek.
+
+146
+00:35:48,307 --> 00:35:51,827
+Böyle de bakabiliriz. Çünkü burada bir sömürülme söz konusu olacak.
+
+147
+00:35:52,947 --> 00:35:55,547
+V2 gerilimini böyle hesaplayabiliyorum.
+
+148
+00:35:55,547 --> 00:36:01,827
+Şimdi bu durumda ben bütün, bakayım vardı herhalde, bu eşitlikleri yazdık.
+
+149
+00:36:01,927 --> 00:36:06,068
+Hani biz demin de yazmıştık akım eşitlikleri. Yani aslında KCL yazdık.
+
+150
+00:36:06,608 --> 00:36:08,547
+Bu eşitliklerden sonunda...
+
+151
+00:36:09,492 --> 00:36:19,972
+Şuradaki, şu yapıda VA-VB bölü R'nin aslında I eşit olması, bizim deminki yazdığımızın tam tersi, I çarpı R, VR'di değil mi?
+
+152
+00:36:20,332 --> 00:36:29,032
+R direnç üzerindekini gösteriyordu. VR'de akımın yönünden dolayı VA-VB olarak tanımlandı.
+
+153
+00:36:29,032 --> 00:36:34,932
+Bunları birbiri içerisine girdiğimde I çarpı R eşittir, VA-VB dedik.
+
+154
+00:36:36,755 --> 00:36:56,795
+KCD ile şurada akıma ait bir eşitlik yazdık. Ama elimizde hala gerilimler var. Bunları akım moduna getirebilmemiz için aslında akımı yalnız bırakıyoruz. Buradan da I eşittir, VA-VB bölü R geliyor. Değil mi? Normalde bu.
+
+155
+00:36:56,795 --> 00:37:04,115
+Şimdi ben her bir oluşturduğum akım için I1, I2, I3, I4, I5 bunu yazabilirim.
+
+156
+00:37:04,179 --> 00:37:20,219
+Mesela I1 için aslında yazmam gereken şey şu, V2 düğümü, V1 düğümü. Akımın yönü böyle, hani ilk böyle kabul edildiği için, V1-V2 bölü R1. Bu I1'i gösteriyor.
+
+157
+00:37:20,219 --> 00:37:30,300
+I2 için de yazabilirim. Akımın yönü böyle gösterildiği için, V2-V3 bölü R2.
+
+158
+00:37:31,539 --> 00:37:53,079
+I3 için ne yazacağım? V3-V5 bölü R3, I4 için V3-V4 bölü R4 gibi gibi bütün akımları böyle aslında gerilim tabanında göstermiş oluyorum.
+
+159
+00:37:53,739 --> 00:37:57,659
+Tekrar ediyorum amaç notta düğüm gerilimini bulmak.
+
+160
+00:37:58,164 --> 00:38:02,384
+Ama biz KCL'de düğme giren akım denklemlerini yazdık.
+
+161
+00:38:03,064 --> 00:38:06,144
+Ve biz bunları aslında yer yerine değiştiriyoruz.
+
+162
+00:38:06,284 --> 00:38:08,744
+Yani denklemleri yazıyoruz akım bazında.
+
+163
+00:38:09,404 --> 00:38:17,584
+Ama akım bazında yazdığımız denklemlerin eşitliğini kullanarak biz gerilimleri eşitleyerek bir şeyler bulmaya çalışacağız.
+
+164
+00:38:19,504 --> 00:38:20,644
+Anlaşıldı mı?
+
+165
+00:38:21,076 --> 00:38:31,195
+Yani burada bunları yazdık, I1, I2, I3 neyse yazıldı böyle. Sonra elimizde KCL denklemleri de var, akımın denklemleri yani.
+
+166
+00:38:37,876 --> 00:38:58,275
+Akım denklemleri de var. Biz artık R1 eşittir R2 mesela burada değil mi? Aslında bu V1-V2 bölü R1 eşittir V2-V3 bölü R2 şeklinde yazabilmemize olmak sağlıyor. Buradan da aslında iki bilim yerine denklem oluyor. Çünkü V1'i zaten biliyoruz.
+
+167
+00:38:59,572 --> 00:39:10,832
+Mesela örnekte demiş ki, burada demin anlattığımız alt referans ise zaten, V1'in V'ine eşit olduğunu söyleyebiliriz diyoruz.
+
+168
+00:39:15,860 --> 00:39:33,000
+O eşitlikleri kullanarak biz V'leri bulduktan sonra, yani gerilimleri bulduktan sonra artık akımları da çıkarabiliriz. Nasıl? V2'yi biliyorum, V1'i de biliyorum. İkisini çıkartıp 9K'ya böldüğümde mesela I1 akımını bulmuş olacağım.
+
+169
+00:39:33,820 --> 00:39:40,460
+Aynı şekilde V2-V3 böyle 2K'dan, ikinin o gerilimini bilirsem, bulursam.
+
+170
+00:39:40,851 --> 00:39:53,851
+Akımını, yani ilk etapta biz not gerilimini buluyoruz. Sonra not geriliminden bulduğumuz düğümlerdeki gerilimlerden aslında akımı buluyoruz. Devredeki bütün akımın analizini yapmış oluyoruz.
+
+171
+00:39:55,731 --> 00:40:00,000
+Evet, eşitliklerimiz KCL'de çıkarttıklarımız bunlardı hatırlarsınız.
+
+172
+00:40:00,000 --> 00:40:22,819
+İki dediğimiz, yani şuradan gelen akımın, I3 ile I4'ün toplamını eşit olmadır mı? Yani buradaki noda göre yazdığımız denklemlerdi. Bu denklemleri, gerilimleri, yani her bir akıma aslında gerilim seviyesinde yazdık ve bu gerilimleri birbirine eşitlemeyi yapacağız. Yani mesela V1 10 voltsa,
+
+173
+00:40:24,115 --> 00:40:44,395
+Şuradaki diğer anlamına, şuraya 10 volt alırsak, V1 10 olacak. Ve benim için I1'i gösteren değer V2-10 bölü 9 kilo. 10-V2 bölü 9 kilo olacak değil mi? Aklımın yönü yukarıya doğru çünkü. 10-V2 bölü 9K.
+
+174
+00:40:44,884 --> 00:41:02,983
+Burası V2-V3 bölü 2K. En sonunda bu tarafa bakarsak eğer V5, V5-0 bölü 7K. Yani V5 bölü 7K'da I6'yı gösterecek. I6, I1'e eşit olduğu için, hani buradan bir şeyler çıkartabileceğiz.
+
+175
+00:41:10,068 --> 00:41:18,967
+Ohm kanununa göre yazmış olduğumuz bu akımları birbirini eşitleyerek bizim elimizde mesela şu an bir üçlü denklem var.
+
+176
+00:41:19,408 --> 00:41:30,307
+Bu denklemlerden bazılarını kullanarak birbiri içerisinde veya determinantını alarak aslında V2, V3, V4, V5 ve işte beş tane var zaten bunları bulabiliyoruz.
+
+177
+00:41:31,408 --> 00:41:33,927
+Hedef yani şu özetçe tekrar belirteceksek.
+
+178
+00:41:35,987 --> 00:41:45,187
+Bizim elimizdeki KCL eşitliklerini kullanarak gerilim bulmak. KCL eşitliklerini nasıl yazıyoruz? Düğümlere giren akımlar üzerinden.
+
+179
+00:41:52,019 --> 00:41:59,960
+Nihayetinde bu deminki 10-10'luk ve dirençlerin üzerinden bir işlem yapıldığında V1 mesele 10 volt çıktı zaten.
+
+180
+00:42:01,295 --> 00:42:15,895
+V1 burası zaten. Sonra V2, 5.5, 5.55 volt çıkıyor. V3, 4.56, V4, 3.74 ve V5'in 3.46 çıktığını bulmuşuz.
+
+181
+00:42:16,395 --> 00:42:23,495
+Şimdi bu zaten böyle olmak zorunda, sönümlenerek gidecek değil mi akım bunları şey yapacak? Öyle de olmuş zaten.
+
+182
+00:42:28,659 --> 00:42:40,300
+Burada mesela belki eksi çıkabilirdi. O durumda eksi çıktığında şunu diyecektik. Biz referans noktasını veyahut da akımın yönünü ters aldık, yanlış yerde aldık.
+
+183
+00:42:43,480 --> 00:42:55,420
+Sonrasında mesela bu not gerilimleri bulunduktan sonra dirençlerin üzerindeki gerilimler de bulunabilir. Nasıl? V2-V1 bu direncin üzerindeki gerilim gösterecek.
+
+184
+00:42:56,724 --> 00:43:11,503
+V1-V2, pardon. Ötekisi V2-V3 bu direnç üzerindeki gerilimi gösterecek. V3-V4, R4 direnç üzerindeki gerilimi gösterecek. Nihayetinde baktığınızda bunları işte...
+
+185
+00:43:11,827 --> 00:43:18,248
+Çıkartarak direnç üzerindeki değerleri ölçtüğümüzde zaten onu sağlamış oluyor.
+
+186
+00:43:18,367 --> 00:43:21,508
+Ve bunları topladığımızda da 10 voltu bulması lazım.
+
+187
+00:43:21,648 --> 00:43:24,907
+Çünkü şunu da biliyoruz, burada bir 10 voltluk gerilim var.
+
+188
+00:43:25,387 --> 00:43:31,447
+Bu dirençlerin üzerine her birinin üzerindeki gerilimin, düşümün toplamı 10 voltu vermesi lazım.
+
+189
+00:43:35,987 --> 00:43:42,728
+Akımları da tabii artık direncin üzerindeki gerilimi biliyoruz, direncin değerini de biliyoruz, böldüğümüzde akım da bulabiliriz.
+
+190
+00:43:43,987 --> 00:43:54,768
+Ve bu akımları da bulduğumuzda 495 mikroamperle başlayan bir değer. Burada da gördüğümüz gibi I1, I2.
+
+191
+00:43:55,347 --> 00:44:12,547
+I6 ve I7 zaten ana kol akımı bunlar. Ana kol akımı birbirine eşit bir şekilde çıkmış. I4 ile I5 ile yine kendi alt subsurkutta, alt devrede seri yapıda oldukları için birbirine eşit çıkmış. I3 de bunlara paralelde hatırlarsınız.
+
+192
+00:44:14,147 --> 00:44:17,187
+I4 ile I5 birbirine eşit.
+
+193
+00:44:20,019 --> 00:44:23,199
+Ö6, Ö1, Ö7 ve Ö2.
+
+194
+00:44:26,867 --> 00:44:28,327
+Bunlar da birbirine eşit.
+
+195
+00:44:32,724 --> 00:44:54,503
+Eşdeğer devreleri zaten geçen hafta her altı sıkça anlattı, görmüşsünüzdür. Paralel yapılar bir bölü şeklinde seri devreler toplama usluğuyla bulunuyor. Eşdeğerli bulduktan sonra 10 volta böldüğümüzde de ana kol akımı zaten bulmuş olacak. O da zaten bizim bulduğumuz 495'i veriyor.
+
+196
+00:44:58,452 --> 00:45:05,552
+Evet, yani not analizinin adım adım bir bakacak olursak neydi adımları? Birincisi bir referans noktası seç.
+
+197
+00:45:06,260 --> 00:45:27,260
+Bu referans noktası tabii iki tane güç kaynağı olan durumlar gelecek, göreceğiz onu göre. Süperpozisyon diye tarif ettiğimiz bir pozisyona sokacak bunu. Yani bir ekstra bir işlem yapmamızı gerektirecek ama nihayetinde bir tane biz referans noktası belirlememiz lazım devrede. O referans noktasına göre biz...
+
+198
+00:45:27,679 --> 00:45:45,019
+Düğümlerin gerilimlerini isimlendiriyoruz, etiketliyoruz. V1, V2, V3, V4, dördüncü düğümün gerilimi, beşinci düğümün gerilimi vs. diye. Sonra bunların üzerinden geçen akımlar, yani düğümlere giren ve çıkan akımların eşlenerliğini KCL'den çıkartıyoruz.
+
+199
+00:45:54,452 --> 00:46:07,152
+olarak yazdığımız akımların bu KCL denklemlerindeki eşitliğini kullanarak gerilimleri de eşitlemiş oluyoruz. Yani gerilim denklemini çıkarmış oluyoruz. En nihayetinde de bu gerilim denklemini çözüyoruz ve
+
+200
+00:46:07,891 --> 00:46:35,891
+Düğüm gerilimlerini bulmuş oluyoruz. Düğüm gerilimini bulduktan sonra da düğümler arasındaki, aradaki devre ekipmanı üzerinden geçen akımı, düğümlerin, akımın tayin ettiğimiz düğününe göre, düğümlerden çıkartım yaparak, yani V2-V3 gibi, V3-V4 gibi, oradaki potansiyel farkı buluyoruz ve onu dirence böldüğümüzde zaten, Ohm kanununun söylediği gibi, oradan geçen akım.
+
+201
+00:46:35,891 --> 00:46:37,291
+Bu konuda bulmuş oluyoruz.
+
+202
+00:46:39,791 --> 00:46:42,131
+Evet arkadaşlar, sorumuz var mı?
+
+203
+00:46:44,271 --> 00:46:46,911
+Node analizi ile alakalı sorumuz var mı?
+
+204
+00:46:51,443 --> 00:47:19,103
+Yoksa bir örnek, biraz uğraşmanızı istiyorum. Soru şu, V1-V2 arasındaki 15-10'lu üzerinden geçen akımı soruyoruz. Ama düğüm gerilimi, düğüm analizine göre yapılacak. Biraz uğraşmanızı istiyorum. Bir 5 dakika vereceğim. Saat 2-2'yi 5 geçe gideceğim buraya. Hatta 2-3 geçe vesaire geleceğim.
+
+205
+00:47:21,588 --> 00:47:23,507
+Uğraşmanızı istiyorum arkadaşlar.
+
+206
+00:47:26,108 --> 00:47:29,947
+Denklemleri çıkartalım, adım adım referans noktası belirtelim.
+
+207
+00:47:29,947 --> 00:47:47,067
+Referans noktası belirttikten sonra KCL'yi yazalım, KCL'den sonra düğümleri yazalım, düğümlerden sonra düğümlere ait KCL'leri yazalım, KCL'lerden sonra on kanunla ait gerilimleri yazalım, akım ve gerilim bağlantısını ve bu gerilimler bazında eşitlikleri kullanılarak.
+
+208
+00:47:47,539 --> 00:47:50,359
+Bize V1 ve V2 arasındaki akımı bulalım.
+
+209
+00:52:20,884 --> 00:52:24,083
+Evet arkadaşlar, var mı çözüm yapan, eden?
+
+210
+00:52:30,452 --> 00:52:48,452
+KCL'leri yazabildik mi? Mesela V1'in KCL'si ne olabilir? Cevabı ezberimde değil. Uğraşıyorsak güzel, uğraşalım böyle şeyleri arkadaşlar. Nerede hata yaptığımızı en azından daha net anlayabiliriz. Mesela V1'in KCL'sini yazarken...
+
+211
+00:52:50,324 --> 00:52:56,483
+Ne diye yazabiliriz? Mesela okunu direkt yönü belli diye böyle yazabiliriz.
+
+212
+00:52:57,083 --> 00:53:05,963
+2 amper giriyor desek ve bunları da çıktı olarak göstersek, 2 amper, direkt yazdık, eşittir. Neye eşit olacak?
+
+213
+00:53:07,224 --> 00:53:13,344
+Burada aşağı doğru yazdığım ve oku ölü gösterdiğim için V1, buraya bir referans noktası koyalım.
+
+214
+00:53:18,643 --> 00:53:44,083
+10 olacak değil mi? 7 artı 3 daha 10. Artı, ötekisinde de V1-V2 bölü 15 olacak. Bu birinci KCL, V1'e ait KCL bölü yazılabilir değil mi? İkincisini de yazalım. Yani V2'ye göre KCL yazmak istesek. Ona da 4 giriyormuş gibi gösterelim.
+
+215
+00:53:44,820 --> 00:54:05,000
+Çıktıları da şöyle gösterelim. 4 amper eşittir. V2 eksi 0 bölü 5 artı V2 eksi V1 bölü 15 diyebiliriz değil mi? Şimdi bu ikisini tabii yerine koymayla da yapılabilir veya işte
+
+216
+00:54:07,123 --> 00:54:17,083
+Anlattığımız determinantla da yapılabilir. Yapabiliriz yani. Biraz daha düzenleyelim hatta. Bakayım düzenlenmiştir muhtemelen. Evet bunu bulmuştuk zaten.
+
+217
+00:54:18,463 --> 00:54:27,764
+İşte bunu düzenlersek 5V1-2V2 60 denklemek çıkıyor. Ötekini düzenlersek o da eksi V1 artı 4V2 60 çıkıyor.
+
+218
+00:54:28,264 --> 00:54:32,523
+Ya bunu işte basit bir denklem aslında. İki tane iki bilim yani denklem.
+
+219
+00:54:33,139 --> 00:54:48,139
+Bunu direkt V1'i yalnız bırakarak yaparsak ne çıkıyormuş? V1, 20, V2, 20, 0 çıkıyormuş. 8 bulmuşsun ama yanlış buldum herhalde. 0 çıktığından dolayı da,
+
+220
+00:54:54,260 --> 00:55:00,659
+Yerine koyarak bulduğumuzda, V1'i yalnız bıraktığımızda, buraya koyduğumuzda, V1 20, V2 20 volt.
+
+221
+00:55:00,780 --> 00:55:06,840
+Yani şuradaki notlardaki not düğüm gerilimlerimiz 20 volta 20 volt çıkmış.
+
+222
+00:55:07,740 --> 00:55:12,900
+Her iki nokta arasında bir potansiyel fark yoksa eğer, zaten buradan akım geçmeyecek.
+
+223
+00:55:13,280 --> 00:55:16,760
+Akım geçmediği için de bir gerilim düşümü olmayacak diyoruz.
+
+224
+00:55:18,199 --> 00:55:21,300
+Ve öyle olduğu için de 0 akım geçiyor.
+
+225
+00:55:22,260 --> 00:55:49,639
+Ayrıca, determinantla da yapabiliriz. Nasıl yapacağız? Kat sayılarını yazdım, V1'in kat sayısını yazdım. 5, eksi 2, eksi 1, 4, çarpı V1, V2 eşittir. 60'a 60. Değil mi? İlk başta determinantını alalım.
+
+226
+00:55:52,788 --> 00:56:07,407
+5 çarpı 4, 20, eksi, 2 çarpı 1, 2, orası da 20-2'den 18 çıkacak değil mi? Bu ana determinal. Bir de dx'ini alalım.
+
+227
+00:56:08,268 --> 00:56:11,668
+dx'ini yazacağımız vakitte de 60'ları şöyle yazacağız.
+
+228
+00:56:13,128 --> 00:56:14,327
+Eksi 2'ye 4.
+
+229
+00:56:16,211 --> 00:56:22,612
+Bunun determinantını alacağız değil mi? X için. 240-120 daha 360 yapacak.
+
+230
+00:56:24,371 --> 00:56:38,552
+DX 360 bölü 20, yani X'i arıyoruz. DX bölü D, o da 360 bölü 18 var, 20'ler açıkta. O da 20'ye eşit olacak. X için değer 20. Bu da X'imiz ne? V1.
+
+231
+00:56:39,476 --> 00:56:48,596
+V1'imiz 20. Ötekisini yapalım, D'yi bulalım. Hatta D, V2 yazayım. İkisler karışmasın. Şurada D, V1 yazalım.
+
+232
+00:56:51,056 --> 00:56:58,576
+D, V2'yi bulmak istediğimizde de bu sefer 5, eksi 1, 60. 60 determinantını çözeceğiz.
+
+233
+00:57:00,256 --> 00:57:05,376
+D, V2, eksi 60, eksi 300'de 240 yapacak.
+
+234
+00:57:07,987 --> 00:57:11,728
+300-60, bana 360 yapacak.
+
+235
+00:57:13,728 --> 00:57:17,947
+Bunu da hesapladığımızda, yine 360 bölü 18'den 20 gelecek.
+
+236
+00:57:19,347 --> 00:57:27,728
+İki tarafta, V1 ve V2 20'şer olduğu için, çıkarttığımda, bu arada herhangi bir potansiyel farkı oluşmadığından, akım oluşmayacak diyeceğiz.
+
+237
+00:57:27,867 --> 00:57:34,587
+Eğer ki işte bu 30 olsaydı, 30-20, 10 yapacaktı. 10 bölü 15'den akımı belirtecektik.
+
+238
+00:57:34,996 --> 00:57:39,115
+Ama 20 çıktığı için bir potansiyel fark yok diyoruz.
+
+239
+00:57:40,956 --> 00:57:42,716
+Anlaşıldı mı arkadaşlar?
+
+240
+00:57:45,396 --> 00:57:46,776
+Sorunuz var mı?
+
+241
+00:57:54,963 --> 00:58:07,384
+4 Amper kaynağın ve 5 Ohm direncin arasında KCL uygulanırsak olur mu? Zaten uyguladım ya, burayı kastetmiyor musun acaba?
+
+242
+00:58:08,284 --> 00:58:14,143
+4 Amper kaynağın KCL'si mesela buradan giriyor, buradan da çıkıyor şeklinde uyguladım.
+
+243
+00:58:16,143 --> 00:58:20,143
+O da şöyle, 4 eşittir, V2-0.
+
+244
+00:58:22,068 --> 00:58:29,848
+Bölü 5 artı, B2x'i B1 bölü, 15 şeklinde oldu.
+
+245
+00:58:36,307 --> 00:58:37,728
+Anlaşıldı mı acaba?
+
+246
+00:58:45,172 --> 00:58:47,771
+Herhalde bir problem yok diye düşünüyorum.
+
+247
+00:58:50,132 --> 00:58:56,952
+Evet, bir yer değiştirme ile çözme veyahut da determinant ile çözme. Zaten tahtta da çözmüştük.
+
+248
+00:59:01,652 --> 00:59:16,292
+Evet, şimdi gelelim süpernot diye bir tabir var arkadaşlar. Burada sıkıntı şu, mesela iki tane gerilim kaynağı var. Gördük değil mi? V1 ve V2. Şimdi bir noktayı referans noktası aldık mesela.
+
+249
+00:59:16,831 --> 00:59:22,351
+Ve bu noktayı referans noktası aldığımızda düğümleri yazdım. Buraya bir düğüm. Buraya bir düğüm.
+
+250
+00:59:22,831 --> 00:59:27,951
+Şimdi bununla bu direnç arasına da bir düğüm koymam lazım. İkisi farklı komponans sonuçta.
+
+251
+00:59:28,871 --> 00:59:36,131
+Bu düğümleri yazdık. Şimdi düğümleri yazdıktan sonra şu VA düğümünün zaten neye tekabül geldiğini biliyoruz.
+
+252
+00:59:36,651 --> 00:59:40,071
+Burası referans noktası olduğu için V1 eşit olacak.
+
+253
+00:59:40,563 --> 01:00:06,403
+Bunda bir soru işareti yok ama soru şurada. VC'yi veyahut da VB'yi fark etmez. VB'ye bakalım. VB'yi yazmak istesem. Akım geliyor. Akım çıkıyor. Hatta buradaki de giriyor olsun. Çok önemli şimdi. Şimdi bunun akımlarını yazacağım ya akım eşitliklerini. Mesela buraya I2 diyeyim. Buraya I3 diyeyim. Buraya da IV2 diyeyim.
+
+254
+01:00:07,731 --> 01:00:27,332
+Şimdi, I3 eşittir, I2 artı IV2 olacak değil mi? Ama burada problem şu, IV2'yi nasıl bulacağım? Çünkü bir akımın, yani bir akım olması için burada veya bir gerilim var ama bir direnç yapısı yok.
+
+255
+01:00:27,764 --> 01:00:54,744
+Burada ben bu denklemin I, V ikisini yazamıyorum. Bunu yazabilmek için şöyle bir çözüm üretiyorum. Diyorum ki, burada zaten bir tane akım var. Mesela yukarı doğru ikisini, hani şimdi böyle şey yapalım, I, R1 yazdım. Bu araya kadar akım var. Ve bu akımı, yani gösterebilirim. Bu akımın karşılığı nedir I, R1'in? Şu alan için konuşuyorum.
+
+256
+01:00:56,307 --> 01:01:06,347
+Yani yönünü böyle yazdığım için V1-VC bölü R1'dir değil mi? Şu kısmın karşılığını.
+
+257
+01:01:07,148 --> 01:01:14,788
+Şimdi ben bu kısmı yazabiliyorum çünkü yazabilmemin nedeni aslında bir akım hesabını, Ohm kanununda akımı bulabiliyor olmam.
+
+258
+01:01:14,788 --> 01:01:23,987
+Ama buraya yazamıyorum I, V2'yi çünkü şöyle bir tabir yok mesela, VC-VB bölü direnç değil bu.
+
+259
+01:01:24,980 --> 01:01:49,480
+Anlatabildim mi? Burada bir akımı belirtebileceğim değer yok. İşte süperpozisyon burada şöyle bir öneri sunuyor. V2'yi sen buradan kaldır. V2'deki değeri zaten VC'yi eklersem, şurada belirttiğim şu kısmı eklersem, ben V2'yi yedirmiş olurum ve IR1'i VA-V2'yi yedirmiş olurum.
+
+260
+01:01:50,068 --> 01:02:16,927
+VC artı V2 bölü R1 gibi bir denklemle yazabilirsin. Yani ben aslında buradaki gerilim sonuçta bu ve buradaki düğme etkisi olacak. Yani normalde düğümdeki gerilme katkısı veya ters varolun ise ters olacak. Yani buradaki değeri ben VC'ye yedirerek bu düğümü tek düğüm haline getiriyorum. Yani bunu aşağıya kaydırmış oluyorum.
+
+261
+01:02:18,164 --> 01:02:33,963
+Nedenini tekrardan anlatayım mı, anladık mı, neden bunu yapma gereksinimim var? Çünkü benim şurada oluşan iki düğüm arasında, Ohm kanunu nispetinde bir akımı yazabilmem söz konusu değil. Bir direnç yapısı yok çünkü.
+
+262
+01:02:33,963 --> 01:02:43,164
+İşte bunu önlemek için de buradaki gerilimi ben düğüm gerilimine taşıyorum. Hatta şu yolları açalım.
+
+263
+01:02:52,467 --> 01:03:07,007
+Mesela VA'ya V1 dedik, evet, I, R2, yani şöyle geldiğini düşünelim, I, R3 ve I, V, tam ters yazdık gerçi ama şöyle olsun.
+
+264
+01:03:09,268 --> 01:03:15,628
+Şöyle yazılıyor, şu denklemi sağlaması lazım ya, nottan girenlerin veya çıkanların toplamının sıfır olduğu.
+
+265
+01:03:16,208 --> 01:03:23,907
+İşte bunu sağlayabilme yapısında, ben bunu yazmaya çalıştığımda, VA-VB bölü R2, yani şöyle bir akım tanımladım,
+
+266
+01:03:24,648 --> 01:03:32,648
+eksi demiş, demek ki çıkıyor, VB-0 bölü R3, artı bir giren daha olması lazım.
+
+267
+01:03:33,204 --> 01:03:41,144
+Çünkü o düğüme girecek ki, şu ikisi girecek, bu çıkışa eşit olacak. Artı IV2 yazabilmem lazım ama bunu yazamıyorum işte.
+
+268
+01:03:42,064 --> 01:03:52,744
+Bunu yazamadığım için de ben aslında şuradaki C'yi, C'nin odundaki gerilimi, VB'deki değer artı V2 şeklinde yazabilirim.
+
+269
+01:03:53,748 --> 01:04:15,927
+Çünkü VB'de bir değer var, X voltaj, örnek veririm mesela 10 volt olsun, bu da 5 volt olsun. Aslında VC'de ölçtüğümde eğer şuradan şuraya prob tutarsam, burada zaten 10 vardı, 5 daha 15 volt ölçeceğim. Değil mi? Yani aslında ben VB artı V2 seviyesini VC'ye eşitleyebilirim.
+
+270
+01:04:17,076 --> 01:04:30,056
+Ve ben bundan sonra, bunu yaptıktan sonra, VA-VC bölü R1 yazdığım yere, aslında VA-VB artı V2 bölü R1 yazabilirim.
+
+271
+01:04:30,875 --> 01:04:39,056
+Yani şu kısmı, ben aslında şuradan alıyorum, VC olduğundan dolayı alıyorum.
+
+272
+01:04:40,395 --> 01:04:43,895
+Çünkü VC, VB artı V2'ye eşit olacak burası.
+
+273
+01:04:45,043 --> 01:05:00,243
+Ve ondan sonra akımı ben, VA- tabii yönü böyleyse, VA-V1 olduğu için, V1-VC idi. V1-VC'nin de derecesi VB artı V2 olarak yazdım.
+
+274
+01:05:00,903 --> 01:05:09,063
+V1-V, parantez aç, VB artı V2 bölü R1'den ben buraya gelen şu akımı modellemiş oldum.
+
+275
+01:05:11,507 --> 01:05:25,067
+Ve bundan sonra denklemi yazabiliyorum. Yani denklemi baştan alırsak, V1-VB bölü R2, VB bölü R3, artı, işte buraya girecek ya, gireni de,
+
+276
+01:05:25,715 --> 01:05:27,936
+Bu R1 bağıntılı yazmam lazım.
+
+277
+01:05:28,735 --> 01:05:30,755
+Gerilimi, yani V1-
+
+278
+01:05:30,755 --> 01:05:32,856
+Yukarı doğru alıyorum çünkü.
+
+279
+01:05:33,036 --> 01:05:34,016
+V1-
+
+280
+01:05:34,016 --> 01:05:39,615
+Vc bölü R1 ama Vc'yi de Vb artı V2 şeklinde yazabiliyorum.
+
+281
+01:05:41,331 --> 01:05:53,892
+Süper not önemli bir konu arkadaşlar. Böylelikle ben aslında şu kısımda, yani şu nalil okta gösterilen akımı, yani şu kısmın akımını bu gerilim buraya taşıyarak genellemiş oluyorum.
+
+282
+01:05:56,711 --> 01:05:57,711
+Anlaşıldı mı?
+
+283
+01:06:01,460 --> 01:06:09,800
+Arkadaşlar, var mı bir problem? Yok herhalde. Bir ürünü de alamıyorum.
+
+284
+01:06:09,800 --> 01:06:17,699
+Evet, başka bir süpernot örneği. Bakalım. Şimdi bir referans alacağız. Mesela buraya referans aldım.
+
+285
+01:06:18,440 --> 01:06:26,240
+Buraya referans aldığımda bu notta problem yok. Zaten bu notun değeri buradaki değer olacak değil mi? 4 volt.
+
+286
+01:06:27,411 --> 01:06:47,403
+Ama bu noda geldiğinde, mesela buraya tabii artı eksisi aşağı doğru alalım bu sefer, akım böyle gitsin. Buradan da akım geliyor değil mi? Bir de aşağı yasın. Mesela bu nodun denklemini yazarken ben işte buraya V...
+
+287
+01:06:47,795 --> 01:07:02,775
+1 diyelim, ne yazacağım? V1-4 bölü 6 Ohm, şuradaki akım, işte buna ne diyelim? I1 diyelim, buna I2 diyelim, buna da I3 diyelim.
+
+288
+01:07:04,475 --> 01:07:11,795
+Bu çıkandı, bir çıkan daha var, şu I2 ile çıkan olarak yazmışız. Ne olacak o da? V1...
+
+289
+01:07:12,371 --> 01:07:36,251
+Bölü 12, neye eşit olması bekleniyor? Girene. İşte girende I3'ün nasıl V modülünde yazacağım muamma. Yazamıyorum şu an değil mi? Bunu ben şuradaki nodun artısı şeklinde yazabilirim ama. Yani şunu demeye çalışıyoruz. Buraya da V2 diyelim mesela. Normalde V2-V1.
+
+290
+01:07:37,715 --> 01:08:03,496
+Pardon, V1-V2 eşittir 8 volt değil mi? Şuna baktım da, V1-V2'nin 8 volt olması lazım. Şimdi bunu taşıyabilmek için V1 artı 8 diye buraya yazabilirim esasında. Yani V2 dediğimiz yapı ne olacak bu durumda? V1-8 olacak pardon. V1-8 volt olarak yazabileceğim. Değil mi?
+
+291
+01:08:04,115 --> 01:08:16,296
+Yani ben buraya artık V1-8 bölü 12'den şuradaki akımı modelleyebilirim. Tabii bir de burada 2 amperi var bunun. Artı 2 amperini de koyacağım.
+
+292
+01:08:17,575 --> 01:08:28,835
+Yani V2 bölü 12, şunu da giren, artı 2 amper, şuradan çıkanı gösteriyor. Değil mi? Burası.
+
+293
+01:08:29,300 --> 01:08:39,880
+Ama bunu da artı şey, şu V1-8'deki denklemdeki 8 voltu da katmam lazım. İşte o yüzden bu 8 voltu şu V2-8'de yazıyorum.
+
+294
+01:08:40,920 --> 01:08:46,560
+V1-8 şeklinde yazıyorum. Ve böylelikle denklemi bu 8 voltu kaydırmış oluyor.
+
+295
+01:08:48,979 --> 01:08:55,380
+Anlatabildik mi? Yani burada amaç şu, bu iki not arasında bir gerilim kaynağı varsa bunun akımını,
+
+296
+01:08:55,775 --> 01:09:04,716
+Akım eşitliğini çıkarmamız zor. Bu akım eşitliğini çıkarabilmemiz için bunu 8 voltu V2 noktasına kaydırıyorum.
+
+297
+01:09:05,235 --> 01:09:09,895
+Ve V2'ye yazacağım bütün denklemleri aslında V1 artı 8 şeklinde yazıyorum.
+
+298
+01:09:11,075 --> 01:09:12,475
+Veya V1 eksi 8 pardon.
+
+299
+01:09:13,435 --> 01:09:14,755
+Bu da çünkü çıktısı şeklinde.
+
+300
+01:09:16,995 --> 01:09:21,995
+Başka örneğimiz var. Bunu biraz uğraşmanızı istiyorum yine aynı şekilde.
+
+301
+01:09:23,456 --> 01:09:49,115
+Saat 20 geçiyor. 2.30'a kadar uğraşmanızı istiyorum. Lütfen uğraşın. Biraz üzerinde duralım. Amaç ne, soru ne, soruya da gelelim. Bir kere notlar ve süpernotlar nereler, buraları bir göreceğiz. Sonra KCN'lerini yazacağız ve işte notların işte V1'in, V2'nin, V3'ü ve V4'ü çözmeye çalışacağız.
+
+302
+01:09:53,779 --> 01:09:57,940
+Biraz uğraşmanızı istiyorum. Belki 35'e kadar da uzatabiliriz.
+
+303
+01:20:03,988 --> 01:20:09,228
+Every time you go mining, a bat will knock you into lava. Every time you build a house, a bat will knock you into lava.
+
+304
+01:20:09,228 --> 01:20:15,788
+Every time you try to do anything productive, the fucking bats will knock you into fucking lava.
+
+305
+01:20:17,788 --> 01:20:20,188
+A despair, but also an erection.
+
+306
+01:22:46,387 --> 01:22:48,567
+Evet arkadaşlar, var mı çözüm?
+
+307
+01:22:49,907 --> 01:22:50,528
+Uğraşan,
+
+308
+01:22:51,787 --> 01:22:52,747
+ulan, eden.
+
+309
+01:23:00,243 --> 01:23:01,923
+Evet, başlayabiliriz herhalde.
+
+310
+01:23:03,783 --> 01:23:11,243
+Şimdi referans alınan nokta burada zaten orta nokta olarak belirtilmiş. Bunun iki nedeni var esasında. Birinci nedeni...
+
+311
+01:23:11,828 --> 01:23:21,328
+İşte buradaki referans noktasındaki bu gerilim kaynağının aslında daha basit bir şekilde bir nodu çözümsemesini sağlamak.
+
+312
+01:23:21,468 --> 01:23:24,488
+Yani bir noda direkt bir değer atayabilmemizi sağlaması.
+
+313
+01:23:25,188 --> 01:23:32,508
+Bir diğer noktada zaten düğümü orta yere alarak aslında çoğu denklemi yazacağımız vakit sıfırlamış oluyoruz.
+
+314
+01:23:32,508 --> 01:23:38,428
+Yani işte bu taraftan veya işte başka bir tarafı yazacağımız vakit V4X.
+
+315
+01:23:38,944 --> 01:23:49,264
+Eksi sıfır gibi bir akım tanımlaması yaptığımızda bize kolaylı bir yol sunuyor. Bu yüzden orta nokta almak daha mantıklı bu tarz olardı.
+
+316
+01:23:50,923 --> 01:24:05,863
+Evet, bir kere öncelikle şuradan başlayabiliriz. Mesela V1 dediğimiz değişik. Yani not, düğüm. Düğümleri bir tanımlayalım. V1 var, V2 var. Sonra V3 düğümü var, V4 var.
+
+317
+01:24:06,420 --> 01:24:29,739
+Başka da düğüm yok herhalde, evet. Ortaya referans dedik, o yüzden ona bir düğüm ataması yapmıyorum. Şimdi bu ters bağlandığı için bir kere V1-12V diyeceğiz. Çünkü ters bir bağlantı var, artı eksisi gibi değil. Sonra biz V2'yi, yani şu noda göre bir deklem yazdığımızda,
+
+318
+01:24:30,163 --> 01:24:57,804
+Buradaki artı eksiği gördüğüm için, yani direkt soruda verildiği için, şöyle bir akım tanımlayabilirim değil mi? Sonuçta direncin artısı ve eksisinden böyle bir referans noktası verilmiş. Böyle giden bir akım olduğunu söyleyebilirim. Böyle zaten direkt buradan verilen bir akım, kaynağından gelen akım var. Bir tane de burada gidenler, çıkanlar eşit olsun diye, yani bunu da çıkıyormuş gibi yapabilirim mesela değil mi? Böyle tanımlayabilirim.
+
+319
+01:24:58,163 --> 01:25:12,904
+Ve bu noda göre ben bir denklem yazabilirim. Ne yazabilirim? 14 amper giriyor. Eşittir. Çıkanlar ne? V2-V1. Yani V2-V1'i bildiğim için bunu direkt yazacağım.
+
+320
+01:25:13,824 --> 01:25:22,264
+Yani buradaki V1'i eksi 12 veya neyse ayrı ayrı yazayım sonra birleştiririz. V2-V1 bölü 0,5.
+
+321
+01:25:24,979 --> 01:25:36,699
+Artı diğer çıkan yer V2-V3 bölü 2 Ohm şeklinde yazdım. Bu birinci denklemi olabilir. Yani V2 için not denklemi yazılabilir.
+
+322
+01:25:38,452 --> 01:25:42,492
+Bunda bir yanlışlık yok değil mi? Bu kısımlar anlaşılıyor.
+
+323
+01:25:43,072 --> 01:25:47,211
+V3 için yazalım. V3'e de girenleri ve çıkanları gözlemleyelim.
+
+324
+01:25:47,211 --> 01:25:51,551
+Mesela giren, burada bir akım kaynağı var. Bağımda ama bir akım kaynağı.
+
+325
+01:25:51,992 --> 01:25:58,292
+Çıkanları da bu taraftan V3-V2 şeklinde yazalım. Zaten bir şey değişmiyor.
+
+326
+01:25:58,891 --> 01:26:04,311
+Sonra bulacağımız akımın yönünün eksi çıkması vs. sonra tayin edilebilir.
+
+327
+01:26:04,432 --> 01:26:06,372
+Yani bunu çıkıyor olarak yazabilirsin.
+
+328
+01:26:06,452 --> 01:26:27,532
+Bu V3 pointinde. Bunu da böyle çıkıyor şeklinde yazalım. Ne yazacağız o zaman? 0, 5, Vx giren akım kaynağı eşittir. V3-V2 bölü 2 artı V3-V4.
+
+329
+01:26:31,988 --> 01:26:37,188
+Bir gerilim kaynağı olduğundan yazamıyorum. Bu kısmı gördük, değil mi?
+
+330
+01:26:37,827 --> 01:26:45,548
+Burada aslında yazamamamın nedeni, burada bir akım olarak belirtebileceğim bir yapı yok.
+
+331
+01:26:46,408 --> 01:26:53,827
+Ama bunu ben sonra bir yerlere taşıyarak şuradaki bilgiyi yazabilirim.
+
+332
+01:26:54,452 --> 01:27:00,291
+Yani buradaki V4'ü buraya taşımak için sonradan kullanacağım. Şu anlık bir V4'ü yazayım.
+
+333
+01:27:00,992 --> 01:27:05,852
+Mesela V4'ü yazmak istesem, akımda şöyle geldiğini düşünelim. Yani şöyle.
+
+334
+01:27:07,131 --> 01:27:14,551
+Ne yazmam gerekiyor? Gerçi şöyle de yazabiliriz. Fark etmez. Şöyle yazsak daha V4 nazarında olur.
+
+335
+01:27:15,315 --> 01:27:31,015
+Bu şekilde yazdığımızda, şunu da şöyle aşağıya yazalım. Ne yazmam lazım V4'e? V4-0 bölü 1 artı V4-V1 bölü 2,5.
+
+336
+01:27:36,180 --> 01:27:46,380
+Bu kısım, bu V4'ü ilgilendiren kısım ama ben bunu buraya ekleyebilirim taşımak için.
+
+337
+01:27:47,440 --> 01:27:57,059
+Şimdi buradaki 0, 2 ve sonuçta şuradaki iki tanesi buradaki akımı eşit olacak ve ben buradaki akımı yazmak istiyordum.
+
+338
+01:27:57,819 --> 01:28:00,840
+Hani şu an taşımış olduk, anlatabildim mi?
+
+339
+01:28:01,587 --> 01:28:09,327
+Yani bir şeyle yapmadık esasında. Sadece buradaki akımın zaten bu iki akımı eşit olmasından dolayı buradaki nolu buraya yazdık.
+
+340
+01:28:11,167 --> 01:28:20,327
+Sonrasında bu denklemleri yazdıktan sonra şunu şimdi yazabiliriz. Mesela şuradaki 0,2 V, Y kısmı.
+
+341
+01:28:21,268 --> 01:28:35,667
+V3-V4 aslında 0,2V'ye eşit değil mi? Bu çünkü bir gerilim kaynağı. Yani V3-V4 iki not arasındaki potansiyel fark.
+
+342
+01:28:36,435 --> 01:28:49,255
+Ne olduğunun önemi yok. Bu ikisinin çıktısının çıkartısını aldığımda, aslında gerilim bazında bir bilgi de bana şunu söylüyor. 0.2 VY'ye eşitliyor. Çünkü buradaki bir gerilim kaynağı.
+
+343
+01:28:50,056 --> 01:29:01,335
+Buradaki 0.2 VY'yi de şöyle yazabilirim. Değil mi? 0.2 V4-V1 şeklinde yazabilirim.
+
+344
+01:29:04,020 --> 01:29:12,700
+Çünkü bu demiş ya, Vy'nin 0,2 katı. Buradaki Vy'de aslında nedir bu gerilim? V4-V1'dir.
+
+345
+01:29:14,080 --> 01:29:24,460
+Yani şurada bir bağımlı kaynak var diye diyorum. Bu aslında 0,2 Vy'de demiş ki, V4-V1'in üzerindeki bu Vy'nin 0,2 katı.
+
+346
+01:29:24,960 --> 01:29:30,660
+Yani aslında ben şuradaki 0,2 Vy'yi şuraya eşitleyebilirim. V3-V4.
+
+347
+01:29:33,043 --> 01:29:47,043
+0.2, V4-V1 eşit. Çünkü bu bağımlı kaynağı. Bunu da elde ettikten sonra aslında denklemleri yerine koyacağız. Bundan sonrası artık denklem çözme işlemleri dönüyor.
+
+348
+01:29:48,484 --> 01:29:59,344
+Bir tane daha bağımlı kaynağımız vardı. O da Vx değil mi? Şuradaki kısım. Hatta şurayı daha açmadık mesela. Burada da Vx'in 0.5 katılıyor. Vx neresi?
+
+349
+01:30:00,000 --> 01:30:08,539
+Aslında V2-V1. Yani burada da aslında Vx'i biz şöyle 05, V2-V1 şeklinde yazabiliriz.
+
+350
+01:30:10,559 --> 01:30:17,700
+Bu eşitliği, ya bütün bu 3-4 tane denklem oldu. Kare için alalım. Birinci denklemimiz bu.
+
+351
+01:30:19,300 --> 01:30:24,739
+Pardon, birinci denklemimiz bu. İkinci denklemimiz bu. Üçüncü denklemimiz şu.
+
+352
+01:30:27,444 --> 01:30:29,224
+Ve dördüncü denklemimiz de bu.
+
+353
+01:30:31,963 --> 01:30:42,463
+Değil mi? Bu dört denklemi, yazarsak dört denklemi, işte birinci denklemimiz buydu hatta, V1 eşittir, eksi on iki.
+
+354
+01:30:44,115 --> 01:30:55,896
+Sonra düzenlersek tabii yazdığımız kısımları, bu 3 bilinmeyenli, ya da bazısında 3 bilinmeyen, bazısında tek bilinmeyen olan 4 tane denklem çıkacak.
+
+355
+01:30:56,476 --> 01:31:02,855
+Bunu determinantla da çözebiliriz, yerine koymada da çözebiliriz ama determinant daha hızlı bir çözüm olacaktır.
+
+356
+01:31:03,855 --> 01:31:06,036
+Hatta çözmüş müyüz, burada çözmemişiz ama.
+
+357
+01:31:06,036 --> 01:31:11,056
+V1'i zaten biliyoruz, V2, V3, V4 nezdinde determinant yaparsak üçlü.
+
+358
+01:31:11,471 --> 01:31:15,152
+Devreyi çözmüş oluruz veya yerine koyarak da çözülebilir.
+
+359
+01:31:16,211 --> 01:31:19,251
+İşte V1'i koyarsanız V2, V3 elde edilir.
+
+360
+01:31:19,251 --> 01:31:20,351
+Bakayım başka.
+
+361
+01:31:21,412 --> 01:31:24,311
+Şurada V3, V4 var. V3'ü oradan yok edersiniz.
+
+362
+01:31:24,931 --> 01:31:29,652
+V2, V4 gelir. V2, V3, V4'ü de sonra beraber yok edilebilir.
+
+363
+01:31:31,731 --> 01:31:53,551
+Nihayetinde bu denklemi çıkarttıktan sonra zaten iş denklem çözmeye geçiyor. Denklemi de determinatta da çözülebilir. V1'i bildikten sonra üçlü determinat yapılabilir. Determinatta belki biliyorsunuz zaten eğer ilgili kastayı yoksa çarpımda sıfır yazılacak. Determinatında o kısmı, o çarpazlama kolonu zaten sıfırlanmış olacak.
+
+364
+01:31:56,819 --> 01:32:10,139
+Anlaşıldı mı arkadaşlar? Şu kısım buradan çıkan akımı burada yazamamamız bu noktayı aslında süperpozisyona götürüyor. Biz şuradaki çıkan iki akımın toplamını buraya yazdık yani.
+
+365
+01:32:14,452 --> 01:32:15,391
+Anlaşıldı mı?
+
+366
+01:32:17,032 --> 01:32:18,471
+Soru sorabilir miyim?
+
+367
+01:32:18,772 --> 01:32:19,012
+Evet.
+
+368
+01:32:20,311 --> 01:32:25,152
+Hani 14 amperlik akım var da yukarı doğru giden, V2'nin oraya.
+
+369
+01:32:25,912 --> 01:32:28,032
+Oradan sağa doğru bir akım geliyor demiştik.
+
+370
+01:32:28,891 --> 01:32:30,231
+Şöyle yazılabilir, evet.
+
+371
+01:32:30,891 --> 01:32:35,391
+Bir de sağda 0,5 VX var. Oradan da yukarı giden bir akım var demiştiniz.
+
+372
+01:32:36,092 --> 01:32:36,912
+Şöyle mi diyorsunuz?
+
+373
+01:32:36,912 --> 01:32:37,152
+Aynen.
+
+374
+01:32:38,068 --> 01:32:41,847
+Bir sıkıntı yaratmaz değil mi? İki akım böyle göstermek.
+
+375
+01:32:41,868 --> 01:32:49,648
+Yok, bu akımların yönü hiç önemli değil. Önemli olan şuraya yazdığım denklemin doğru olması.
+
+376
+01:32:50,048 --> 01:32:59,568
+Mesela sen akımı şöyle gösterdin, denklemi ama öyle yazmadın. Yani 14 eşittir, bu ikisinin toplamı dedin. O olmaz işte.
+
+377
+01:32:59,988 --> 01:33:13,868
+14 artı bu buna eşittir diye denklemi yazarsan yine aynı şey çıkacaktır. Ama işte biz mesela böyle yazdık, akımda buradan böyle yazdık. Biz bu noda göre yazdık ve nodu bulduk. Dedik ki mesela kaçmış? V3, V3.
+
+378
+01:33:14,292 --> 01:33:33,572
+Ne demişiz? 0 volt. Bak bazıları eksi çıktı. V2 eksi 4 volt çıkmış mesela. Bu eksi 4 volt diyor. Aslında eksi 4 volttan kastımız bizim burada oluşan artı eksiliğin, yani akımın ters olduğunu gösteriyoruz. Nasıl onu da anlatalım. V1 mesela eksi 12 idi değil mi?
+
+379
+01:33:34,003 --> 01:33:48,283
+Şimdi biz bu kabule göre, şurada belirtilen akım yönünü böyle aldığıma göre hesaplarsak, ne yapmam lazım? V2-V1, yani eksi 4, eksi eksi 12, bölü 05.
+
+380
+01:33:49,324 --> 01:33:58,804
+Buradan ne gelecek? Artı bir değer gelecek. Ne geliyor? 12, şey, 8 geliyor değil mi? 8 bölü 05'ten.
+
+381
+01:34:00,051 --> 01:34:00,652
+16.
+
+382
+01:34:00,971 --> 01:34:11,131
+16 amper geldi. Akımın yönü doğruymuş. Hiç problem yok. Ama vererek mesela böyle bir denklemde sen oraya eksi 4 buldun, bu da artı 12 olsun.
+
+383
+01:34:11,971 --> 01:34:17,851
+Artı 12 senaryosunda mesela böyle bir şey gelmiş olsa ne olması lazım bunun?
+
+384
+01:34:19,851 --> 01:34:21,912
+Eksi 32 amper çıkıyor.
+
+385
+01:34:23,060 --> 01:34:39,640
+Eksi 4 eksi 12'den, eksi 16 bölü 05'den, eksi 32 amper çıkacak değil mi? Şu kısım. İşte eksi 32 amper bize şunu söylüyor esasında. Burada referans olarak verdikleri şey böyle değil, akım böyle gidiyor, artı eksi olacak.
+
+386
+01:34:40,960 --> 01:34:48,020
+Yani bu akımın yönü, bizi denklemleri doğru yazdıktan sonra zaten kendini doğrultacak işaretleriyle.
+
+387
+01:34:49,460 --> 01:35:14,819
+Yani o şey önemli değil. Misal V3'te ne bulmuşuz? 0 volt bulmuşuz. Şimdi biz akımın yönünü aşağıda, burası eksi 4 ya, normalde akımın yönü ne olması lazım? 0 ve eksi 4 olan iki not arasında böyle olması lazım. Değil mi? 0 eksi eksi 4 bölü 2'den aslında akım çıkacak. Yani akımın yönü böyleymiş bu hat için. Biz böyle kabul etmemiz bir şey değiştirmedi yani.
+
+388
+01:35:16,199 --> 01:35:17,079
+Teşekkür ederim.
+
+389
+01:35:20,500 --> 01:35:41,239
+Arkadaşlar, bu örnek güzel bir örnektir. Bu örneği evde muhakkak kendinizce de bir daha çözmenizi istiyoruz. Biraz sonuca bakmadan aynı şeyleri bulabiliyor musunuz? Bunun üzerinde, bu örnek üzerinde evde lütfen biraz uğraşalım. Başka bu örnek ne izlediğinde soru var mı?
+
+390
+01:35:45,171 --> 01:35:58,291
+Biz mümkün olduğunca denklem üretip, denklem çıkartıp, KCL olur veyahut da KCL olmasaydı ki aslında KCL, V3, V4, V0, V2, V7 ile alakalı bir denklem, şurada yazdık mesela.
+
+391
+01:35:58,871 --> 01:36:05,751
+Bunu yazmanın nedeni aslında ne kadar çok değişkenli denklem varsa o kadar çözümü daha basit hale getiriyoruz.
+
+392
+01:36:09,395 --> 01:36:20,655
+Evet. Soru yoksa devam edeceğim. Meş analizine giriyoruz arkadaşlar. Demin hani biraz ara verdim diye derste ara vermeyi düşünmüyorum ama.
+
+393
+01:36:21,203 --> 01:36:47,443
+Belki biraz sonra veririz. Meş analizinde arkadaşlar, aslında biz KVL'yi yapıyoruz. Ama bu sefer akımı bulmak üzerine KVL'yi yapıyoruz. KVL'nin ana teorimi şuydu. Bizim bir meşimiz, bir loopumuz varsa, bir çevrim, işte devrede bir loop oluşuyorsa, o loopu oluşturan devre elemanlarının üzerindeki gerilim birikimlerinin toplamı sıfır der.
+
+394
+01:36:48,180 --> 01:36:56,800
+Demek yani üreteçler ve tüketeçlerin aynı lopta bulunma durumunda enerjinin korunma yasası bize bunun sıfır enerji üretecek.
+
+395
+01:36:57,000 --> 01:37:01,519
+Yani toplamda sıfır voltluk bir durumun oluşmasını söylüyor, gerilimin oluşmasını.
+
+396
+01:37:02,319 --> 01:37:08,180
+Şimdi böyle bir durumda burada aslında biz gerilimler üzerinden denklem, bağıntılar çıkartacağız.
+
+397
+01:37:08,180 --> 01:37:12,399
+Ama bağıntıyı çıkarttıktan sonra gerilim bazında çıkartacağız.
+
+398
+01:37:12,640 --> 01:37:15,340
+Aynı öteki nod anasını da akım bazında çıkartıyorduk.
+
+399
+01:37:15,420 --> 01:37:16,180
+Burada gerilim bazı.
+
+400
+01:37:16,180 --> 01:37:24,819
+Ve gerilim bazında çıkarttığımız noktada biz bunları akım cinsinden eşitliğe dahil edeceğiz.
+
+401
+01:37:25,439 --> 01:37:36,140
+Mesela örnekten gidelim. Burada bir devre var ve bu devrede looplarımız var, meşlerimiz var, çevrelerimiz var. İki tane çevrem var.
+
+402
+01:37:37,800 --> 01:37:41,840
+Bu iki tane çevrede iki tane akım oluşuyor. I1 ve I2.
+
+403
+01:37:43,859 --> 01:38:10,239
+Not analizi yapmıyoruz. Bakın, hani I1, I2'nin neresinde aynıdır, değil, toplamadır, çıkartımadır, bu değil. Not değil, mesh analizi bu. Mesh analizinde iki tane akım bu çevrede yer alıyor. KVL'sini bu akım hatları boyunca yazıyoruz. Mesela I1 için, I1 akımının gezdiği, dolandığı yer için yazdığımda, V in, üreteç, negatif koydum.
+
+404
+01:38:10,739 --> 01:38:27,560
+Tüketeçleri yazdım. R, V1, V2, V3 ve V6'nın toplamı V'nin eşit olmalı diyor. Bu loop zaten, K, V, L yazıyorum. Sonra ikincisi için de bu sefer bire göre bir polarizasyon yaptığımızda
+
+405
+01:38:31,796 --> 01:38:48,176
+I1 akımına göre bir polarizasyon yaptık mesela. Bu polarizasyona göre V'in üreteç, R1, V1, V2, V3 ve V6 da aslında bu dirençlerin üzerinde biriken üreteçteki enerjiyi tüketen tüketeçler.
+
+406
+01:38:48,935 --> 01:38:59,235
+Şimdi bu durumda I2'ye göre yazmak istediğimde bu sefer kaydemiş şu, hiçbir polarizasyonu referans olarak aldığımız polarizasyonu değiştirmiyoruz.
+
+407
+01:38:59,891 --> 01:39:10,032
+Burada V3, yani R3 direnci üzerinde biriken gerilim üreteç moduna geçiyor. I2'nin oluşmasına neden olan yapı noktasına geliyor.
+
+408
+01:39:11,132 --> 01:39:21,672
+I2 bazında yazdığımda bu R3'ün üstündeki V3 üreteç oluyor. Diğerlerini buna göre polarizasyon yapılmadığı için yapıyorum. Bunlar da tüketeç oldu.
+
+409
+01:39:22,387 --> 01:39:31,787
+Şimdi V4 ve V5'in toplamı V3'e eşit olacak. İki tane loop'a ait KVL yazdım. Kirchhoff'un gerilimler kanununu yazdım.
+
+410
+01:39:33,688 --> 01:39:45,068
+Ve bu KVL üzerinde, polarizasyonları zaten biz göstermiştik, polarizasyonları oluşturdum ve buna göre ben şimdi akım cinsinden bu eşitlikleri yazacağım.
+
+411
+01:39:45,684 --> 01:39:54,163
+Akımı nasıl dönüştürüyorum? Aslında akım dediğimiz şey, artı-eksi olma durumunda bir polarizasyon yaşandı burada.
+
+412
+01:39:54,243 --> 01:40:00,423
+Mesela bir artı-eksi oldu. IA'nın IB'den çıkartımının R ile çarpımı.
+
+413
+01:40:00,423 --> 01:40:07,423
+Değil mi? Yani bunun üzerindeki artı-eksilik gerilimini ne oluşturuyor? IA tersten de akım olabilir.
+
+414
+01:40:07,804 --> 01:40:12,104
+Ama sonuçta bu polarizasyonu oluşturan buradaki akımın daha fazlalığı söz konusu.
+
+415
+01:40:12,659 --> 01:40:24,159
+Buraya da IB diyelim. IA-IB, artısı burası olduğu için, IA-IB çarpı R1 benim aslında buradaki V1'imi gösteriyor. Değil mi?
+
+416
+01:40:25,779 --> 01:40:33,940
+Ve bizim bütün bu denklemlerin oluşmasını sağlayan V gerilimlerini I şeklinde böyle ifade edebiliriz.
+
+417
+01:40:37,747 --> 01:40:44,927
+Bağıntılarını gerilim şekline çevirme işlemi, burada gerilim bağıntılarını akıma çevirme işlemi dönüyor.
+
+418
+01:40:48,948 --> 01:41:10,168
+V1'i yazmak istesem, I1 çarpı R1 yazacağım. V2, I1 çarpı R2. Bu noktada işte karşıda ters akım olduğu için, I1 eksi, çünkü ben akımı şöyle gösterdim, burada da böyle geliyor, ters geliyor. I1 eksi I2 çarpı R3 şeklinde.
+
+419
+01:41:10,804 --> 01:41:28,123
+Bakın, artı polarizasyonu yaptım diye yukarıdan I1-I2 yazıyorum. Burada şey önemli arkadaşlar, I2-I1 yazarsak soru değişik yerlere gider. Çünkü benim için I1'i referans aldıysam ve buna göre yaptıysam diğer kısımları,
+
+420
+01:41:28,511 --> 01:41:37,612
+O zaman I2-I1'de I1-I2 bölü R3 yazmam lazım. Öteki taraftan bu da yine I1 bölü R6 şeklinde yazdık.
+
+421
+01:41:37,811 --> 01:41:52,671
+Buna bakarsak burada da zaten I2 bölü R4, I2 bölü R5, bu V4, V5'leri I2 çarpı R4, I2 çarpı R5, V4 ve V5'i söyleyecek bize.
+
+422
+01:41:53,731 --> 01:41:55,391
+Zaten bunu yazmıştık bu taraftan.
+
+423
+01:41:57,811 --> 01:42:07,572
+Bunları yazdıktan sonra bu akımları aynı şeyde, KC, D'de olduğu gibi K, V, L'deki eşitlikleri birbirine eşitleyeceğiz ve denklemi çözeceğiz.
+
+424
+01:42:08,292 --> 01:42:17,612
+Direkt örnekten gidelim, yani nümerik değerden. İki tane I akım tanımladım. Artı, eksi, artı, eksi, artı, eksi, artı, eksi yazdım.
+
+425
+01:42:17,967 --> 01:42:28,347
+Bunun denklemi 12 volt eksi şeklinde de yazabiliriz veya eksi 12 artı V şeklinde de yazabiliriz. Böyle oluşturduğumuz bir KVL'si var değil mi?
+
+426
+01:42:29,788 --> 01:42:43,028
+Şimdi ben bunları 4 çarpı I1 ile 8 çarpı I1 ile 5 çarpı I1 eksi I2 ile denklemi yazacağım. Yani 12 volt.
+
+427
+01:42:44,051 --> 01:42:47,391
+Eşittir koyuyorum, eksi koymuyorum, öteki tarafa attığımızı düşünelim.
+
+428
+01:42:48,032 --> 01:43:04,692
+4 çarpı I1 artı, 8 çarpı I1 artı, 5 çarpı I1 eksi I2 artı, 1 çarpı, K'ları hani en son koyarız diye şey yapmadım.
+
+429
+01:43:05,391 --> 01:43:10,532
+1 çarpı I1, bunun hatta K'sını da yazalım, 10 üzeri 3.
+
+430
+01:43:11,828 --> 01:43:24,427
+Böyle yazdığımda bir denklem, hani bunu isterseniz biraz düzenleyelim, 4, 12, 13, 5 daha, 18, I1, 5, I2.
+
+431
+01:43:26,007 --> 01:43:32,728
+Bölü işte veya mili amper, mili volt diyelim buna daha, şuradaki 13'e, x360 olalım.
+
+432
+01:43:33,648 --> 01:43:36,368
+Bu birinci denklemi, geliyorum ikinciyi yazmaya.
+
+433
+01:43:36,783 --> 01:43:56,363
+İkinciyi yazarken bu sefer bu taraf üreteç oluyor. Üreteç olduğu için öteki tarafa yazacağım. Yani 5, I1-I2 eşittir. 6, I2, hatta direkt toplumunu yazayım. 9, I2'ye eşit olacak değil mi? Mesela bu da ikinci denklem. Bu iki denklemin üzerinden
+
+434
+01:44:00,115 --> 01:44:11,435
+Yazmış, şimdi iz bırakıyorum. Hesaplamaya I1 ve I2'yi çekersek, elde edeceğimiz işte iki bilim yani denklem olduğu için I1 ve I2'yi çekeceğiz. Değerlerimiz 740'a 264 çıkmış.
+
+435
+01:44:12,995 --> 01:44:25,495
+Ve bundan sonra, bu iki I2'yi bulduktan sonra arkadaşlar, yani V1'i arıyorsak mesela, O I1 çarpı 4 kilo on, V2'yi arıyorsak tek tek birbirini bulabiliyoruz, bulabiliriz.
+
+436
+01:44:34,195 --> 01:44:40,895
+Ne çıkıyormuş? 2.96, 5.92 gibi değerler. Topladığımızda zaten 12 voltu vermesi lazım.
+
+437
+01:44:46,899 --> 01:44:59,619
+Evet, burada da demin bahsettiğimiz, yani şurada tabii paralel hatları toplanmayacağız boş yere, sadece seri hat ve çünkü şuradaki gerilimin düşümü zaten buradaki gerilim düşmüne eşit olması lazım.
+
+438
+01:44:59,739 --> 01:45:07,219
+Yani V4 artı V5'in şu ikisinin toplamının V3'e eşit olması lazım zaten.
+
+439
+01:45:10,659 --> 01:45:11,960
+Anlaşıldı mı arkadaşlar?
+
+440
+01:45:16,659 --> 01:45:17,599
+Soru var mı?
+
+441
+01:45:23,028 --> 01:45:29,328
+Bunları eşdeğer devre direncini bulmak, sonra 12 volta bölerek ana kulu bulmak vs.
+
+442
+01:45:30,388 --> 01:45:36,148
+Adım adım anlatacak olursak, tekrar da notdaki gibi bir kere biz meshleri belirleyeceğiz.
+
+443
+01:45:36,148 --> 01:45:41,688
+Yani çevreler nereler, bunları belirleyeceğiz. Bu çevrelerde biz bir akım tanımlayacağız.
+
+444
+01:45:41,828 --> 01:45:45,408
+Akımın yönü belirlenecek. Sağdan sola veya soldan sağa.
+
+445
+01:45:50,271 --> 01:45:56,311
+Bütün hepsinde aynı yönde o akımı tanımlamamız lazım. Burası kritik öneme sahip.
+
+446
+01:45:56,311 --> 01:46:02,391
+Çünkü artı eksilik polarizasyon ikinci meşte üretiş noktasına getirebilir.
+
+447
+01:46:03,071 --> 01:46:08,671
+Aynı demin örnekte olduğu gibi. Sonra kalbeyle denklemlerini yazıyoruz.
+
+448
+01:46:09,395 --> 01:46:19,295
+Ondan sonra KBL denklemlerini aslında biz akım bazına çevirebilmemiz için, o 1 ve 2 yani çevre akımları bulabilmemiz için akıma çevirmemiz lazım.
+
+449
+01:46:19,835 --> 01:46:27,755
+Akım için Ohm kanuna nazaran aslında akımlarını yazıyoruz ve KBL'de çıkan denklemleri akım şekilde deviriyoruz.
+
+450
+01:46:28,456 --> 01:46:35,695
+Sonrasında da meş akımlarını buluyoruz ve her bir komponent üzerindeki meş akımın ilgili direnç değeriyle çarpıldığında
+
+451
+01:46:36,275 --> 01:46:39,515
+Direnç üzerindeki düşen gerilimi bulmuş oluyoruz.
+
+452
+01:46:40,975 --> 01:46:45,315
+Bir örnek daha var arkadaşlar. Biraz uğraşalım. Uğraşmanızı istiyorum.
+
+453
+01:46:46,376 --> 01:46:47,376
+5 dakika kadar.
+
+454
+01:46:48,395 --> 01:46:51,895
+I1 ve I2'yi nasıl buluruz? Örneğin.
+
+455
+01:49:17,971 --> 01:49:21,231
+Evet arkadaşlar, umarım uğraşmışsınızdır. Var mı sonuç?
+
+456
+01:49:25,043 --> 01:49:32,003
+Aslında Mesh daha öğrencilerin kafasına daha çok basan diyebileceğimiz bir yöntem.
+
+457
+01:49:32,923 --> 01:49:36,844
+Notan izinden daha çok kullanıldığı söylenebilir.
+
+458
+01:49:37,743 --> 01:49:41,123
+Aslında yaptığımız şey sadece KVL yazmak.
+
+459
+01:49:41,123 --> 01:49:42,643
+Mesela bu bir üreteç.
+
+460
+01:49:43,543 --> 01:49:47,043
+Eksi 42 volt yazdım.
+
+461
+01:49:48,063 --> 01:49:49,203
+Sonra artı dedim.
+
+462
+01:49:52,435 --> 01:50:18,835
+Polarizasyonu sağladım. Bu böyle I1'den gideceğim ilk etapta. I1 çarpı 6,10 kadar 6 I1 yazdım. Artı 3 I1-I2 yazdım. Bu kurulumdan dolayı sıfır eşitlenmek değil mi? Bu birinci denklemimiz. İkinci denklem I2'yi yazıyorum. Bu sefer bu üreteş noktasına girdi. Eksi 3.
+
+463
+01:50:19,699 --> 01:50:42,460
+I1-I2 dedim. Bu kısmı arkadaşlar şöyle de yazanlar olabiliyor. Fark etmiyor zaten ama dikkat etmekte fayda var. Kafanız karışmasın. Bunu eksi yazmıyorlar. I2 nezdinde yazıyorlar. Yani 3, I2-I1 de yazan var. İkisi de aynı şeyi söylüyor zaten. Hani buradaki eksiliği dışarı alırsanız aynı şeyi söylemek.
+
+464
+01:50:43,028 --> 01:50:52,608
+Ama ben genelde hani kayda bozulmasın diye normal bir de belirledim polarizasyonda üretece geçtiği için bu üreteç noktasında eksi koydum.
+
+465
+01:50:52,608 --> 01:51:00,328
+Buradan eksi yazıyorum. Artık bunları polarizasyon yapalım. 4I2.
+
+466
+01:51:01,427 --> 01:51:04,208
+Şimdi burada artı mı diyeceğiz, eksi mi diyeceğiz, o önemli.
+
+467
+01:51:04,768 --> 01:51:08,908
+Bakın, normalde bizim için tüketeşler artıdan girmesi lazım akımların.
+
+468
+01:51:09,788 --> 01:51:12,368
+Üreteşlerinde artıdan çıkması gerekiyordu.
+
+469
+01:51:12,368 --> 01:51:17,588
+Ve bu artıdan çıktığı için bir üreteş, buna direkt eksi 10 volt şeklinde yazdım.
+
+470
+01:51:19,328 --> 01:51:22,268
+Şimdi bu iki denklemi çözdüğümüzde biraz düzenleyelim.
+
+471
+01:51:22,988 --> 01:51:28,828
+6'ı, 3'ı daha, 9'ı, 1, eksi, 3, 2 eşitti, 42 volt değil mi?
+
+472
+01:51:29,268 --> 01:51:39,207
+Öteki tarafa bakarsak, 4, I2, 7, I2, eksi 3, I1, eşittir 10 volt.
+
+473
+01:51:40,527 --> 01:51:50,387
+Herhalde böyle bir şey olacak. Direkt hani determinantını alalım isterseniz. I2'ler, I1'leri ters yazdık ama düzeltelim olmadı.
+
+474
+01:51:55,347 --> 01:52:12,228
+3'e 4'e, evet. Böyle yazarsak, şimdi 9 kereli 42, eksi, eksi 3, eksi 3, 9 yapar. O da ne yapar? 33 mü yapıyor? Değil mi? 33, bu genel determinant.
+
+475
+01:52:13,307 --> 01:52:20,167
+X'ini yazmak istediğimizde, yani I1'i bulmak istediğimizde, ne olacak? 42 ile 10'u oraya yazacağız.
+
+476
+01:52:20,819 --> 01:52:45,319
+42 çarpı 7 artı, 10 çarpı, eksi 3, eksi 30. Ne gelecek buradan? Ne gelir arkadaşlar? 3'e bölünse 12 gelir herhalde. 14 gelir. 14, 7, virgüllü bir sayı geliyor herhalde.
+
+477
+01:52:46,515 --> 01:52:48,456
+Muhtemelen virgülü bir sayı var.
+
+478
+01:52:51,956 --> 01:52:54,095
+Bir yerde belki yanlış da yapmış olabiliriz.
+
+479
+01:52:57,095 --> 01:52:58,876
+Bir yerde yanlış mı yaptık?
+
+480
+01:53:03,796 --> 01:53:14,676
+Yok, tamam, doğru, 42, evet. Tamam, çarptığımızda 42, ya evet arkadaşlar, biraz kusura bakmayın, 9 kere 7, 63 yapar, değil mi?
+
+481
+01:53:15,596 --> 01:53:22,016
+Eksi 3 kere 3, 9'dan bu artı 9 gelecek, eksi 9 çıkartırsak, 54 gelecek, değil mi?
+
+482
+01:53:22,815 --> 01:53:30,056
+54 diskriminatı, öteki tarafta da ne yapacağız? 42, 42 çarpı 7.
+
+483
+01:53:31,283 --> 01:53:37,543
+Ötekisi ne yapacak? 10 olacak, 30 yapar, eksi 30 gelecek. Tamam, orada bir yanlışlık yok.
+
+484
+01:53:38,543 --> 01:53:44,003
+Buradan da 3'e böldüğümüz şey, ne yapacak burada topladığımızda?
+
+485
+01:53:44,823 --> 01:53:53,103
+Bir kere geliyor ki, 294 eksi 30'dan ne gelir? 264.
+
+486
+01:53:53,103 --> 01:53:55,883
+Bu da dx'imiz.
+
+487
+01:53:56,724 --> 01:54:00,063
+Bunu 54'e böldüğümüzde 6 mı geliyor?
+
+488
+01:54:01,163 --> 01:54:02,423
+Yok, 6 gelmiyor.
+
+489
+01:54:03,623 --> 01:54:04,423
+Ne geliyor?
+
+490
+01:54:08,979 --> 01:54:10,559
+Şunu yanlış mı çıkarttık gibi.
+
+491
+01:54:16,275 --> 01:54:17,716
+Hocam bir şey sorabilir miyim?
+
+492
+01:54:17,956 --> 01:54:18,336
+Evet.
+
+493
+01:54:18,916 --> 01:54:25,855
+İkinci loopta 3 ohmluk direnci i2 eksiden girdiği için eksi olması gerekmiyor mu?
+
+494
+01:54:26,395 --> 01:54:28,395
+Biz denklemde onu artı olarak aldık.
+
+495
+01:54:28,735 --> 01:54:29,076
+Yok.
+
+496
+01:54:29,515 --> 01:54:30,956
+Başına eksi koyduğumuz için.
+
+497
+01:54:32,435 --> 01:54:34,735
+Nasıl? İşte eksi yazmışız ya.
+
+498
+01:54:35,735 --> 01:54:42,496
+Dekleme açtığımız zaman artı 3 i2 oluyor ama i2 3 ohmluk direnci eksi taraftan girmiyor mu?
+
+499
+01:54:44,948 --> 01:54:55,688
+Şimdi, normalde I2'nin girdiği taraf eksi olduğu için bu tamam üreteç ve üreteç olduğu için de eksi koymuşum işte.
+
+500
+01:54:57,748 --> 01:55:01,208
+Genel toplamda açtığımız zaman artı 3 I2 oluyor.
+
+501
+01:55:01,971 --> 01:55:17,332
+Tamam olsun. Bu kısım tanımladığım şey, yukarıdakiyle aynı açıdan tanımlamamız gerekiyor ya, bu kısmı değiştiremeyiz. Değiştireceksek başını 3, 2-1 yazabiliriz.
+
+502
+01:55:17,572 --> 01:55:24,051
+Yani içerisini değiştireceğimiz vakit, başındaki yapıyı da değiştirmemiz lazım.
+
+503
+01:55:25,211 --> 01:55:28,851
+Anladım hocam, üretici olarak düşündüğümüz için eksik oluyoruz. Teşekkürler.
+
+504
+01:55:30,387 --> 01:55:39,868
+Şurada bir işin içinden çıkamadık ama 294, 264, böyle 54 ne geliyor ya sanki?
+
+505
+01:55:40,627 --> 01:55:42,507
+Diğeri yanlış yaptık burada ama.
+
+506
+01:55:42,667 --> 01:55:46,967
+Hocam, determinant hesabında artı otuz yapmamız gerekmiyor mu?
+
+507
+01:55:47,207 --> 01:55:47,847
+Ha, dur, dur.
+
+508
+01:55:47,868 --> 01:55:48,608
+Eksi oturuyor.
+
+509
+01:55:48,667 --> 01:55:53,488
+Doğru, doğru, artı otuz olacak değil mi? Pardon ben, mağruz görünün arkadaşlar.
+
+510
+01:55:53,707 --> 01:55:55,547
+Biraz kafamız, sabahta ders vardı.
+
+511
+01:55:55,707 --> 01:55:58,847
+Artı otuz yaptığımızda ne olacak buradan gelecek?
+
+512
+01:56:00,568 --> 01:56:02,368
+292, 324 mü yapıyor?
+
+513
+01:56:04,408 --> 01:56:08,028
+Herhalde öyle. O da ne yapıyor? O da altı yapıyor herhalde.
+
+514
+01:56:08,595 --> 01:56:29,076
+Mesela I bir akımı 6'ymış ve 6'nın hani eksi 6 çıkmadığı için bunda bir yanlışlık yok diyoruz. Yani yönünü doğru almışız. 6'yı koyduğumuzda I2'de ne gelir? 6 geliyor herhalde değil mi? Evet, I2'de 4 gelecek.
+
+515
+01:56:30,579 --> 01:56:34,640
+Ve o da artı çıktığı için onun da yönünde bir normallik yok.
+
+516
+01:56:34,640 --> 01:56:38,579
+Yani 6 Amper bu taraftan, 4 Amper o taraftan.
+
+517
+01:56:39,300 --> 01:56:42,159
+Yani bu 3 Ohm'un üzerinden geçen akım ne o zaman?
+
+518
+01:56:42,600 --> 01:56:47,420
+2 Ohm'luk yukarıdan aşağı bir akım, 2 Amper'lik yukarıdan aşağı bir akım gelecek diyeceğiz.
+
+519
+01:56:49,000 --> 01:56:51,159
+Çünkü 6-4'den 2 Amper olacak.
+
+520
+01:56:53,119 --> 01:56:53,779
+Anlaşıldı mı?
+
+521
+01:56:56,300 --> 01:56:57,560
+Herhalde tamamımız.
+
+522
+01:56:59,188 --> 01:57:00,627
+Zaten çözümleri de var.
+
+523
+01:57:01,347 --> 01:57:02,528
+Burada başka bir soru.
+
+524
+01:57:02,788 --> 01:57:06,427
+2 voltun üzerindeki gücü soruyoruz.
+
+525
+01:57:07,188 --> 01:57:10,328
+Burada loopları oluşturalım, yazalım hatta.
+
+526
+01:57:10,328 --> 01:57:12,148
+Eksi 5 olacak.
+
+527
+01:57:12,788 --> 01:57:15,028
+Artı 4I1.
+
+528
+01:57:16,547 --> 01:57:18,307
+Hatta şuraya şöyle koyalım.
+
+529
+01:57:21,228 --> 01:57:24,207
+Bu tarafta olduğu için bunu da artı eksi şeklinde yazdım.
+
+530
+01:57:25,268 --> 01:57:26,448
+Sonra artı.
+
+531
+01:57:27,220 --> 01:57:38,439
+2, Ohm var, 2, I1-I2 yazdım. Şimdi bir de eksiden girdiği için ne olacak? Üreteç olacak, 2 voltu yazdım. Bu sıfıra eşit dedik.
+
+532
+01:57:39,260 --> 01:57:49,460
+Sonrasında bu sefer buradaki üreteç olma durumu burada tüketeç durumunda. Yani normalde 2 volt şeklinde yazacağım yine.
+
+533
+01:57:50,484 --> 01:57:58,704
+Sonra ötekisi eksiden artıdan çıktığı için üreteç konumunda, eksi 2, I1, eksi I2 yazdım.
+
+534
+01:57:59,964 --> 01:58:08,924
+Sonrasında artı 5, I2 yazdım. En sonunda artıdan girdiği için artı 1 volt yazdım.
+
+535
+01:58:10,264 --> 01:58:17,284
+Bu iki denklemi oluşturup çözelim biraz. Ne gelecek? Eksi 7, 7 volt olacak öteki taraf.
+
+536
+01:58:18,707 --> 01:58:39,268
+Burada 4I1, 6I1, eksi 2I2. Bu birinci denklememiş zannedersem. Yanlış yapmadıysak bir yere. 1V, 2V, 3V, eksi 3V yapar. 5I2 var, eksi 7I2 olacak.
+
+537
+01:58:46,036 --> 01:58:55,036
+D-2, E-1 herhalde. Bu da ikinci denklemimiz. Değil mi? Yanlış yapmadıysak eğer, siz kontrol edin de.
+
+538
+01:58:59,188 --> 01:59:02,387
+Evet, burada yine determinattan gidebiliriz.
+
+539
+01:59:04,368 --> 01:59:12,988
+6 çarpı 7, 42, eksi, 2 kere 2, 4, ne gelecek buradan 38 mi?
+
+540
+01:59:14,568 --> 01:59:15,507
+D'si bu.
+
+541
+01:59:16,688 --> 01:59:23,608
+7 ile eksi 3'ü oraya koyduğumuzda 7 kere 7, 49, eksi, eksi 3,
+
+542
+01:59:24,500 --> 01:59:43,180
+Çarpı eksi 2, 6, 6 yapacak. O da 43 yapıyor herhalde. Bu da dx. Bu virgüllü bir şey gelecek muhtemelen. 43 bölü 38'den ne gelir? Yapmışızdır herhalde bunu. Evet, 43 bölü 38'den 1.132.
+
+543
+01:59:46,239 --> 01:59:48,319
+1.132'yi bulduk.
+
+544
+01:59:48,671 --> 02:00:07,431
+I1'i bulduktan sonra yerine yazarak I2'yi de bulduk. Burada enteresan bir durum var. I2 eksi çıktı. Bak I1 artı çıktı. Yani kabul ettiğimiz bu okey, bunda bir yanlışlık yok ama I2'nin bu kabulümüz ters çıktı. Yani aslında I2'miz böyle değil, böyle olmak zorunda.
+
+545
+02:00:07,923 --> 02:00:11,663
+Ve böyle bir akımda I2'miz 0.10 ampermiş.
+
+546
+02:00:12,104 --> 02:00:15,563
+Şimdi istenen şey 2 voltun üzerindeki gücü soruyoruz.
+
+547
+02:00:15,663 --> 02:00:18,043
+Yani aslında akımla gerilimi çarpacağım değil mi?
+
+548
+02:00:18,543 --> 02:00:24,243
+Şimdi buradaki akımı siz yönünü böyle alarak bunları çıkarırsanız yanlış bir iş olur.
+
+549
+02:00:24,523 --> 02:00:29,743
+Çünkü aslında akımın yönü böyle ve aslında not analizinde akımlar böyle gelip bunu oluşturuyor.
+
+550
+02:00:30,884 --> 02:00:32,764
+I1 artı I2 yapmam lazım.
+
+551
+02:00:33,403 --> 02:00:35,384
+Ondan sonra 2 volt da çarpmam lazım.
+
+552
+02:00:36,435 --> 02:00:43,536
+Burada 1.132, 0.105 dersek topladığımızda 1.237 yapıyor.
+
+553
+02:00:44,336 --> 02:00:46,355
+Bu şuradaki koldaki akım.
+
+554
+02:00:46,815 --> 02:00:48,435
+Bunu 2 voltla da çarptığımızda...
+
+555
+02:00:48,880 --> 02:00:55,739
+Biz bunun gücünü bulacağız ama çarptığımızda akımın yönü eksiden girdiği için bunun bir üreteç olduğunu görüyorum.
+
+556
+02:00:55,739 --> 02:01:04,720
+Ve bu aslında bir 2.4 wattlık bir supplier olarak yani eksisini yazıyorum başına.
+
+557
+02:01:06,500 --> 02:01:07,639
+Anlaşıldı mı?
+
+558
+02:01:11,699 --> 02:01:14,859
+Var mı soru arkadaşlar? Yok herhalde.
+
+559
+02:01:18,079 --> 02:01:21,659
+Şimdi aynı süpernotta olduğu gibi süpermeş de var burada.
+
+560
+02:01:22,000 --> 02:01:27,779
+Buradaki süpermeş mevzumuzda aslında akım kaynağı olduğunda gözünde bulunduruyoruz.
+
+561
+02:01:27,859 --> 02:01:30,119
+Çünkü biz akıma nasıl yazıyoruz?
+
+562
+02:01:30,639 --> 02:01:33,859
+Buradaki akım denklemini çevirirken şurada gördüğümüz gibi.
+
+563
+02:01:34,579 --> 02:01:46,639
+Yani gerilimler üzerinde eşitlik kuracağız ya, gerilimi yazabilmemiz için biz şuradaki I1 çarpı direnç lazım. I1 çarpı başka direnç lazım. Veya gerilim hattında KBL'de direkt yazıyoruz.
+
+564
+02:01:46,639 --> 02:01:57,039
+Ama akım kaynağı olduğunda burada bu akım kaynağının KBL'ye etkilenmesini belirtemiyoruz, yazamıyoruz. O durumda biz şöyle bir durum söylüyorsunuz.
+
+565
+02:02:02,579 --> 02:02:07,239
+Bir de kendi ufağını alıyoruz. Ben örneki vardı şurada, örnekten gidelim direkt.
+
+566
+02:02:08,799 --> 02:02:19,439
+Evet, mesela burada. Şimdi KBL'sini yazacağım ve loopları çıkarttığımda, meshleri çıkarttığımda, I1 var, I2 var, I3 var değil mi?
+
+567
+02:02:29,939 --> 02:02:57,019
+1 çarpı I1-I2 artı 2 çarpı I1-I3 artı ne yazacağım? Gerilim değil bu. Bu bir akım. Hani KVD'de yazacağım, denklemde bunu buraya oturtturmam mümkün değil. İşte bunu ben I1, yani 2 on yazarken 2 çarpı I1-I3 artı 7 amper gibi yazacağım. Bunu buradan kaldırmam gerekecek.
+
+568
+02:02:58,739 --> 02:03:16,739
+Evet, polarizasyonu sağladım. I1 için bu, polarizasyon sağlandı. I2 için yine aynı yönle tanımladığım, başka işte polarizasyon sağlamadığım yerler, yerleri geçtim. Ama burada I3 daha öncelikle alınmış ve o yüzden hani 3 amper ona göre.
+
+569
+02:03:16,739 --> 02:03:22,739
+Bu, dediğim gibi bunun bir önemi yok. Önemli olan zaten I3 negatif çıkarsa bunları hep değiştirecek.
+
+570
+02:03:24,467 --> 02:03:50,487
+Denklemde yani denklemi düzgün yazabilmemiz önemli. Süpermeş'te işte bu açıdan bir meş yapalım. Eksi yedi, bir çarpı bir eksi iki şurayı yazdım. Şu tarafta üç çarpı üç eksi iki yazdım. Çünkü bunu yazamıyorum. Tekrar edeceğim olursam. Bu üçü direkt yazdım zaten döndürdüm. Birinci meşimi bu. İkinci meş.
+
+571
+02:03:51,475 --> 02:04:01,955
+Şu kısımdaki meşgen, I2 yazıyorum. Bu 1x2-I1 şeklinde yazılmış ama dediğim gibi ben genelde eksi 1, I1, eksi I2 şeklinde yazıyorum.
+
+572
+02:04:02,095 --> 02:04:06,855
+Hani aynı şeyi kastediyoruz. Burada bu üreteş noktasına geçiyor.
+
+573
+02:04:08,735 --> 02:04:11,935
+Sonra artı 2, I2, artı 3.
+
+574
+02:04:12,532 --> 02:04:29,771
+Burada da yine ters çevirmiş içeriğini ama aslında bu eksi 3, I, 3 eksi I, 2 şeklinde yazılabilir. Çünkü burada I, 3 bu polarmayı sağlıyor. İkinci meşhide yazdım. Bu iki meşhide aslında biraz düzenlediğimizde şöyle bir reklam geliyor.
+
+575
+02:04:30,804 --> 02:04:43,604
+Şimdi bu bağımsız, hani şu kısmı nasıl dahil edeceğiz, buradaki amperi, I1'in I3'ü çıkarttığım noktada bir denklem sunacak bu bana. Yani I1-I3 aslında 7 amper.
+
+576
+02:04:44,824 --> 02:04:48,923
+İşte bu eşitliği kullandığımda aslında ben burayı kullanmasam da,
+
+577
+02:04:49,844 --> 02:05:14,423
+Denklem çözmüş oluyorum. Çünkü sonuçta üç tane bilinmeyen ve üç tane denklemi meddedilmiş oluyor. I1, I2 ve I2'yi bulduktan sonra da I3'ü bu vesileyle. Yani aslında süpermeşte bir akım kaynağı varsa I1, I2 bağıntılı bir şekilde o akım kaynağı kullanılarak o kolun bu koldaki gerilimleri hesaplayamadığım için bu kolu iptal edebiliyoruz.
+
+578
+02:05:15,123 --> 02:05:21,344
+Ama buradaki veriyi yani 7 amperlik veriyi I1, I3 üzerinden bir eşitlikle kullanabiliyoruz.
+
+579
+02:05:24,724 --> 02:05:26,043
+Anlaşıldı mı arkadaşlar?
+
+580
+02:05:30,292 --> 02:05:31,152
+Soru var mı?
+
+581
+02:05:36,212 --> 02:05:48,852
+Neden süpermeş yapmamız gerekiyor? O anlaşıldı mı? Mesela bunu niye yazamadık? O anlaşıldı mı? Herhalde anlaşıldığını düşünüyorum. Çünkü KVL'de bu bir gerilim hattı vermiyor bizim.
+
+582
+02:05:54,036 --> 02:06:07,475
+Bundan sonraki çok da önemli değil arkadaşlar. Not analizi yapabiliriz. Burada bir örnek var. Not analizinde biraz uğraşın arkadaşlar. Hadi 10 dakikada bununla uğraşalım.
+
+583
+02:09:14,996 --> 02:09:17,735
+Evet arkadaşlar, var mı? Uğraşıyor muyuz?
+
+584
+02:09:20,456 --> 02:09:33,695
+Hem nodu hem meşe yapalım. Hem ikisi arasındaki farkı, fark değil esasında, ikisi de aynı şeyi söyleyecek ama herhalde virgüllüydü. O yüzden direkt açacağım arkadaşlar. Vakit de bayağı sıkışığa girdi.
+
+585
+02:09:35,355 --> 02:09:40,015
+Şimdi arkadaşlar, not anezinde V1, V2, V3 noktalarımızı gördük. Değil mi?
+
+586
+02:09:40,627 --> 02:09:58,887
+V1 noduna göre denklem yazacağız. V2 ve V3'e göre de denklem yazacağız. V1 noduna göre yazdığımda, yani V1'e göre yazmak istediğimde akımlara giren ve çıkan şeklinde, mesela girsin, çıksın, çıksın, girsin, çıksın, çıksın.
+
+587
+02:09:58,887 --> 02:10:07,127
+Yani bu şekilde bir şey yazılabilir. V1'e göre yazdığımızda işte 100-V1 bölü 8 eşittir. V1 bölü 0.
+
+588
+02:10:07,764 --> 02:10:27,144
+V1-0 bölü 4, V1-V2 bölü 2 yazabiliriz değil mi? 100-V1 bölü 8 eşittir. V1-0 bölü 4 artı çıkanları eşit olacak.
+
+589
+02:10:27,859 --> 02:10:44,579
+V1-V2 bölü 2. Bu birinci de eklem olur. Ötekisine gelelim. Ix'i soruyor zannedersem soruda. Yani bizim için ilgilendiğimiz V1-V2'yi bulmak. V2 için yazalım. V2 için de V1-V2 bölü 2.
+
+590
+02:10:49,779 --> 02:11:10,500
+Artı, artı demeyelim, çıkar şeklinde yazalım, eşittir. V2-V3 bölü 10, artı V2-0 bölü 3, bir de şurada, tabii ki de bu da giren olduğu için, 8 amper var.
+
+591
+02:11:11,699 --> 02:11:16,260
+Bu da bir diğer denklemimiz. V3'ü de yazabiliriz, V3.
+
+592
+02:11:17,076 --> 02:11:43,456
+Noktasında da çıkanlar, girenler diye yazarsak, hatta bunu da çıkan olarak yazalım. Girenle V2-V3 bölü 10 eşittir. Çıktığı için 8 amperi direkt yazdım. Artı V3 bölü 5 bizim öteki tarafın denklemi olacak. Bunları düzenlediğimizde, tabii biraz mülbüllüydü herhalde bunun cevabı.
+
+593
+02:11:44,692 --> 02:11:45,431
+Bakalım.
+
+594
+02:11:50,387 --> 02:12:09,347
+Evet, düzenlediğimizde işte ne gelmiş? Daha düzenlenmemiş burası. V1 25.89V bulunmuş. V2'de 20.31VX'de o zaman V1-V2'den 5 küsür 5.5 gibi bir değer çıkması bekleniyor.
+
+595
+02:12:11,423 --> 02:12:18,503
+Buradaki değer, gerilim 5.5, böyle 2'den 2.79 gibi bir değer çıkıyormuş mesela bunun odanlar için.
+
+596
+02:12:20,244 --> 02:12:28,244
+Meşini yapalım aynı sorunu. Meşleri çizdim. Denklemi yazıyorum. 100 volt üretici olduğu için eksi olarak yazalım.
+
+597
+02:12:28,244 --> 02:12:38,404
+100 artı 8 çarpı I1 artı 4 çarpı I1 eksi I2. Değil mi?
+
+598
+02:12:38,608 --> 02:12:39,688
+Eşik de sıfır.
+
+599
+02:12:41,368 --> 02:12:42,788
+Ötekisi şimdi üreteç oldu.
+
+600
+02:12:42,908 --> 02:12:45,488
+Eksi dört, I bir eksi I iki.
+
+601
+02:12:46,708 --> 02:12:47,887
+Yazdım şurayı.
+
+602
+02:12:48,688 --> 02:12:53,128
+Artı iki I iki, artı iki.
+
+603
+02:12:53,528 --> 02:12:55,248
+Tabi polarizasyonunu şöyle yazalım.
+
+604
+02:12:55,908 --> 02:12:57,048
+Olduğunu düşünürsek.
+
+605
+02:13:01,811 --> 02:13:21,492
+Ne oldu? 2I2 yazdık. Sonra 3, I2-I3 şeklinde yazdım. Sonra I3'ü yazıyorum. Bu üretici oldu artık. Eksi 3, I2-I3.
+
+606
+02:13:22,676 --> 02:13:49,856
+Artı, şimdi bu tarafta bir I4 daha var ama şunu biliyorum ben, burada bir süperpozisyon da var zaten. I4, eksi 8 amperi eşit değil mi? Tersinden. Tersinden düşünürsek çünkü yönleri değiştiremem. Eksi 8 amperi eşit. Şimdi I4, buraya şunu yazacağım. 10, I3, eksi I4 yazmam lazım. 10, I3, eksi I4'ten dolayı artı 8.
+
+607
+02:13:50,579 --> 02:14:17,939
+Yazdım. Artı 5, I3 şeklinde yazdım. Bu da sıfır eşit. Burada da bu denklemi de çözebiliriz. Çözdüğümüzde nihayetinde bize aynı şeyleri çıkartacak. Ix yani şuradaki I2'nin karşılığı, Ix eşli olduğundan dolayı, I2'yi bulmayı hedefleyeceğiz. I2, Ix'e 2.79'da benzeyecek. 2.79 çıkacak.
+
+608
+02:14:18,547 --> 02:14:22,228
+Sorumuz var mı arkadaşlar?
+
+609
+02:14:23,268 --> 02:14:25,867
+Hocam, buradaki süperpozisyon bize nasıl sağladı?
+
+610
+02:14:26,947 --> 02:14:30,768
+Buradaki süperpozisyon bir şey sağlaması değil, şöyle düşünmeniz lazım.
+
+611
+02:14:31,467 --> 02:14:35,167
+Bunun KBL'si, yani bu gözün KBL'sini yazamayız.
+
+612
+02:14:35,167 --> 02:14:37,167
+Yani süperpozisyon...
+
+613
+02:14:37,427 --> 02:14:53,427
+KBLS'i yazılmayan gözü yazabilme moduna getirmek. Yani süperpozisyon tam olarak hani deminki örnek gibi değil ama I4'ün 8 Ampere eşit olduğunu, 8-8 Ampere eşit olduğu bilgisini aslında bize şey yapıyor. Yani süperpozisyon...
+
+614
+02:14:53,939 --> 02:15:17,319
+Tam olarak süpermeş değil aslında, dediğin doğru. Tam olarak bir süpermeş yapmıyoruz burada. Senin dediğin mesela burada olsaydı bir akım kaynağı, bu kolu almayıp şöyle yaparsak süpermeş yapacaktık ya, tam olarak süpermeş değil ama sonuçta buraya bir denklem yazmamamız da bize süpermeş anlamında bir ifade katıyor akım olduğu için.
+
+615
+02:15:18,439 --> 02:15:19,359
+Tamam.
+
+616
+02:15:20,115 --> 02:15:29,115
+Normalde arkadaşınızın sordu, süpermeş yapabilmemiz aslında bir gözü iptal edip daha genel gözden almayı çalışmamız.
+
+617
+02:15:29,296 --> 02:15:38,436
+Aslında süpermeş bu. Burada tam olarak uygulanmasa da süpermeşteki o zorluk var diye burada bunu yazamıyoruz. Öyle anlatayım yani.
+
+618
+02:15:43,988 --> 02:15:45,228
+Soru var mı arkadaşlar?
+
+619
+02:15:50,163 --> 02:16:14,263
+Sorumuz yoksa, dersimizde bu haftalık bu kadar yeter diyelim. Haftaya 3-4 arası diye duyurulmuş, kısasına bulacak. Süper KCL, KVL, Süper Not, Süper Meş, Not Analiz, Meş Analiz, bunlar çokça sevdiğimiz konular. Bunlara bu sunumlardaki soruların üzerinden veya dışarıdaki başka soruların üzerinden alıştırmalar yapalım.
+
+620
+02:16:16,787 --> 02:16:18,947
+Tamam, hazırlıklı gelelim.
+
+621
+02:16:20,147 --> 02:16:23,147
+Sözlü listesi ne zaman duyurulacak biliyor musunuz?
+
+622
+02:16:23,967 --> 02:16:29,007
+Muhtemelen bir beş on dakikaya duyurulur. Yani hemen dersin akabinde duyurulacak.
+
+623
+02:16:29,667 --> 02:16:29,887
+Tamam.
+
+624
+02:16:32,268 --> 02:16:36,887
+Tamamdır arkadaşlar. O zaman hepinize iyi laplar, iyi dersler.
+
+625
+02:16:39,167 --> 02:16:43,587
+Sıradaki dersten sorumlu muyduk hocam? Sıradaki derken önümüzdeki mi?
+
+626
+02:16:45,683 --> 02:16:54,963
+Önümüzdeki hafta süpernot ve süpermeşle alakalı biraz bir şeyler daha gösterdiklerimizi pekiştirmek anlamında göstereceğiz.
+
+627
+02:16:55,683 --> 02:17:01,683
+Hani tabii konu çok değişik değil, sorumlu derken yeni bir konuya geçmeyeceğiz ama. Konular buraya kadar.
+
+628
+02:17:03,363 --> 02:17:07,683
+Tekrar ediyorum, KCL, KVL, paralel direnç, seri direnç, akım...
+
+629
+02:17:08,288 --> 02:17:25,368
+Bölünme oranı, voltage divider'lar, current divider'lar, geçen hafta bunları işlemiş olmanız lazım. Evet, geçen hafta. Veya işte mesh analizi veya node analizi bunlardan sormuşsunuz. Yani yeni bir konu olmayacak.
+
+630
+02:17:28,247 --> 02:17:35,148
+Tamamdır arkadaşlar, hepinize iyi çalışmalar, iyi dersler. İyi günler. İyi günler, haftaya görüşmek üzere.

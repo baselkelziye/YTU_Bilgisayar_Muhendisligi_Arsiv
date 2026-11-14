@@ -1,0 +1,1791 @@
+1
+00:05:24,884 --> 00:05:26,104
+Evet, merhaba arkadaşlar.
+
+2
+00:05:27,903 --> 00:05:29,463
+Şu mikrofonu alalım.
+
+3
+00:05:33,043 --> 00:05:52,043
+Yedinci haftadayız nde. Şimdiye kadar ne yaptığımızın üzerinden yine hızlıca bir geçelim. Genel tanımlarımızı, sınıflandırmamızı, bilgi sisteminin taraflarını, rollerini.
+
+4
+00:05:52,531 --> 00:06:11,012
+Bilgi Sistemi geliştirme sürecinin genel adımlarını öğrendik. Sonrasında ön inceleme nedir? Fizibilite çalışması nedir? Bu aşamalarda neler yapılır? Nelere dikkat edilmesi gerekir? Hangi fizibilite neden yapılır? Ne çıkar? Bunlar nasıl karşılaştırılır? gibi konulara eğildik.
+
+5
+00:06:11,572 --> 00:06:20,031
+Sonrasında da sistem analizi safhasına geçiş yaptık. Sistem analizi safhasını aslında temelde ikiye ayırmıştık.
+
+6
+00:06:20,531 --> 00:06:30,911
+Sistem analizi, diğeri de sistem analizi ya da gereksinim analizi şeklinde. Ama nihayetinde hepsini sistem analizi ya da gereksinim analizi başlığı altında da barındırabileceğimizi söyledik.
+
+7
+00:06:31,371 --> 00:06:40,451
+Önce iş nasıl yapılır, nasıl öğrenilir, veri nasıl toplanır, kaynağından verilere nasıl ulaşılır bu konulara baktık.
+
+8
+00:06:40,451 --> 00:06:48,091
+Ve bunların nasıl raporlanmaları ya da nasıl bir çıktı üretilmesi gerektiğiyle alakalı, business requirement document nedir ve ne içerir?
+
+9
+00:06:48,531 --> 00:06:49,932
+Bu yüzden bahsettik.
+
+10
+00:06:50,644 --> 00:07:09,604
+Daha sonra da artık biraz daha teknik altyapıyı oluşturacak şekilde, yani teknik konuşan yazılım dünyasındaki insanların çözmeleri gereken, bilgi sistemiyle çözmeleri gereken problemi anlamalarını sağlayacak dönüşüm ya da çeviri diyelim nasıl yapılır?
+
+11
+00:07:09,704 --> 00:07:18,624
+İşte sistem analizi ya da gereksinim analizi dediğimiz aşamaya geçtik. Bunun temellerini öğrendik. İlk olarak işlevsel çözümleme ne demektir ya da işlevsel modeller.
+
+12
+00:07:18,644 --> 00:07:19,423
+Ne demektir?
+
+13
+00:07:21,939 --> 00:07:38,580
+Tam olarak bir gereksinim analizi modeli oluşturmak için neler yapmamız gerekir, süreçleri nasıl modellemeliyiz, veriyi nasıl modellemeliyiz, kontrolü nasıl modellemeliyiz, bunlardan bahsettik ve özellikle süreç modellemesine yani veri akış diyagramlarına ağırlık verdik.
+
+14
+00:07:38,580 --> 00:07:49,819
+Bununla beraber veri ya da nesne modelimizi, dönüşüm modelimizi oluşturacak olan varlık ilişki modelini de daha sonra özellikle tasarımla beraber işleyeceğimizi söyledik.
+
+15
+00:07:49,939 --> 00:07:55,920
+Kontrol spesifikasyonuyla alakalı detaylara bu ders kapsamında eğilmeyeceğimizi de söyledik.
+
+16
+00:07:56,680 --> 00:08:07,860
+Ve bu şekilde özellikle de veri akış diyagramları ve veri akış diyagramlarının sonrasındaki süreç formları ve içindeki pseudokot, algoritma ya da karar ağacı, karar tablosu gibi yapılarla
+
+17
+00:08:07,860 --> 00:08:17,819
+buradaki işin ne olduğu ve nasıl bir şekilde gerçekleştirilmesi gerektiğiyle alakalı böyle tekniğe dönüştürülmüş.
+
+18
+00:08:17,939 --> 00:08:21,259
+tanımlamaları nasıl yapacağımızı öğrendik.
+
+19
+00:08:21,747 --> 00:08:34,987
+Bu bir yoldu. Fakat bir yol daha var. İşlevsel çözümleme yerine nesne yönelik bir çözümleme de yapabiliriz. Yani bir nesne yönelik modelleme de kullanabiliriz. Bu da bir diğer alternatif.
+
+20
+00:08:49,748 --> 00:09:07,148
+Dünyasına yakın olsun diye özellikle gereksinim analizini, işin anlaşılmasını ve dönüştürülmesini, yani tercüme edilmesini bir problemin modellenmesi ya da bir problem uzayının modellenmesi şeklinde de isimlendirebiliriz.
+
+21
+00:09:07,148 --> 00:09:17,748
+Yani ben böyle dediğimde özetle nesnenin yönelik konuştuğumu anlayabilirsiniz. Ama işlevsel dediğimde de veri akış diyagramları üzerinden bir şeyler söylemeye çalıştığımı anlayabilirsiniz.
+
+22
+00:09:17,748 --> 00:09:37,927
+İzlediğiniz için anahtar kelimelerini bu şekilde tercüme edelim. Peki biz problem uzayını modellerken ne yapmaya çalışıyoruz? Ne demektir bu? Nesne yönelik bir çözümleme ya da modelleme ya da nesne yönelik bir analiz ve ne ortaya koymaya çalışıyoruz? Şimdi bunlara bakalım. Amacımız şu.
+
+23
+00:09:38,707 --> 00:09:50,847
+Veri akış diyagramlarına baktığımızda işlevsel parçalara bölmeye çalışıyorduk. Hani bunlara modül demiştik kabaca hatırlarsanız. Belirli işlev gruplarını süreçler halinde tanımlamıştık.
+
+24
+00:09:50,847 --> 00:10:00,000
+Mesela kayıt işlemleri, hesaplama işlemleri, fatura oluşturma işlemleri, hastak ne bileyim işte tahlil işlemleri.
+
+25
+00:10:00,000 --> 00:10:07,759
+Ya da muayene işlemleri gibi gibi hastane bilgi sisteminden ya da öğrenci bilgi sisteminden verilebilecek çeşitli örnekler.
+
+26
+00:10:09,319 --> 00:10:14,700
+Buradaysa biraz daha farklı bir mantık ile problemi çözmeye çalışırız.
+
+27
+00:10:15,359 --> 00:10:16,740
+Amacımız şu olması lazım.
+
+28
+00:10:16,899 --> 00:10:26,440
+Yani eğer ben nesneye yönelik bir çözümleme yapıyorsam, benim temel amacım gerçek dünyanın doğru, anlaşılır ve sınanabilir bir yazılım modelini oluşturmak olmalı.
+
+29
+00:10:26,759 --> 00:10:27,980
+Haydi ne yapacağız?
+
+30
+00:10:28,000 --> 00:10:54,240
+Yani demek ki ben aslında yazılımdaki nesneleri gerçek hayattan bulup çıkartmalıyım. Yani gerçek hayat nesnelerini yazılımın içine koymalı ve onları o şekilde gerçek hayatta çalıştıkları halleriyle kullanmaya gayret etmeliyim. Modellemenin temeli bu olması lazım. Yani işlev bazlı değil, nesne bazlı. Gerçek dünya nesneleri bazında bir çözümleme yapmamız gerekir.
+
+31
+00:10:56,000 --> 00:11:16,559
+analiz aşamasındayken sadece problemi anlıyoruz ve problemi tanımlıyoruz. Burada daha çok yine müşteri ön planda, müşteri istekleri ön planda. İlk başta hani use case'lerden bahsetmiştim ya, isteklerin modellenmesi, business requirement'ları yazarken kullanabileceğimiz iyi bir yöntem demiştik.
+
+32
+00:11:24,000 --> 00:11:29,419
+Soslayarak nesneye dayalı bir çözümleme yapabiliriz. Bunun da nasıl yapılacağını bugün öğreneceğiz.
+
+33
+00:11:31,412 --> 00:11:40,231
+Mümkün olduğunca dediğim gibi gerçek dünyadaki kavramları, kavramsal sınıfları, yani kavramsal sınıf olarak modellemeye gayret etmemiz gerekir.
+
+34
+00:11:40,692 --> 00:11:47,612
+Ve doğal olarak gerçek dünyadaki bu sınıfların türetilmiş nesnelerini aslında yazılımda yaşatmaya gayret edeceğiz.
+
+35
+00:11:48,231 --> 00:11:57,471
+Nesne dediğimizde aslında bir sınıf şablondan türettiğimiz görünen özellikleri ve aralarında ilişkiler olan yapısal birimler.
+
+36
+00:11:57,471 --> 00:11:58,251
+Başka bir şey değil.
+
+37
+00:11:59,412 --> 00:12:21,491
+Yazılım nesnelerini düşünmüyoruz. Peki ne düşünüyoruz? Tekrar söylüyorum. Kavramsal nesnelere bakıyoruz. Kavramsal nesneleri de tanımlamak için kavramsal sınıfları bulup ortaya çıkartmaya çalışıyoruz. Yani bir iş analizi yaptık, işte use case'lerimizi bulduk, use case dokümanlarımızı, kullanım senaryosu dokümanlarımızı oluşturduk.
+
+38
+00:12:27,412 --> 00:12:28,991
+Adarımızın üzerinden geçerek
+
+39
+00:12:29,652 --> 00:12:37,172
+Gerçekten işleyen parçaları, yani gerçek nesneleri bulup ortaya çıkartmaya çalışırız.
+
+40
+00:12:37,511 --> 00:12:41,812
+Ve bunun için de yine doğal olarak bir görselleştirme, bir diagram çizimine ihtiyaç duyacağız.
+
+41
+00:12:42,231 --> 00:12:48,471
+Bunun için kullanacağımız dil, modelleme dili UML olacak.
+
+42
+00:12:48,792 --> 00:12:57,652
+Yani Unified Modeling Language kullanarak biz nesne yönelik analizimizi, kavramsal modelimizi, kavramsal sınıflarımızı gösteriyoruz.
+
+43
+00:12:57,652 --> 00:13:18,312
+Öncelleştirebiliriz. Özellikle biz burada yine problemi anlıyoruz. Problem sonucunda nasıl bir sistem üretmeliyiz? Bu sistemde ne gibi kavramlar olmalı, kavramsal parçalar olmalı ve bunların aralarındaki ilişkiler neler olmalı? Bu kavramların ne gibi özellikleri olmalı? Bunları ortaya çıkartmaya çalışırız.
+
+44
+00:13:25,652 --> 00:13:38,872
+gerçek hale getirecekler. Bu da tamamen tasarım aşamasında çözeceğimiz problem olacak. Yani özetle biz burada ne sorusunun cevabını buluyoruz? Ne var? Ne oluyor? Ne kavramlar var?
+
+45
+00:13:39,764 --> 00:13:56,864
+Gibi soruların cevabını veriyoruz. Ama tasarım aşamasına geçtiğimizde de artık bunlar bu neylerin nasıllarını çözmeye başlıyoruz. Yani nasıl çalışır, nasıl yapar, nasıl hizmet sunar, bu problemi nasıl çözer şeklindeki cevabı tasarım aşamasında çözmeye çalışıyoruz.
+
+46
+00:13:56,864 --> 00:14:07,764
+Ki bunu aynı zamanda sorumlulukları ilgilerine atamak da diyebiliriz. Yine bu şekilde bir isimlendirme de yapılabilir. Şimdi hemen KÜT diye bir tane örnek bir sınır.
+
+47
+00:14:07,764 --> 00:14:12,460
+Sınıf diyagramıyla karşınızda şöyle bir...
+
+48
+00:14:12,659 --> 00:14:38,339
+Slide göstermek istiyorum. Nedir bu? Şimdi tekrar üzerinden geçiyoruz. Neden kavramsal? Bir kere bu bir sınıf diyagramı. Neden sınıf diyagramı? Çünkü ben nesne yönelik olarak bir modelleme yapıyorsam doğal olarak yazılım sınıflarına ulaşmaya çalışıyorum. Yazılım sınıflarına ulaşmak istiyorsam da ve aralarındaki ilişkileri de göstermek istiyorsam UML'deki sınıf diyagramını kullanmalıyım. Tamam, peki, okey. Bu bir sınıf diyagramı o zaman.
+
+49
+00:14:40,659 --> 00:14:50,299
+Sıfatı var, kavramsal sınıf diyagramı. O zaman bu sınıf diyagramın bir alt hükümesi, özel bir hali. Nasıl? Analiz modelini gösteren hali diyebiliriz.
+
+50
+00:14:50,299 --> 00:15:03,959
+Bakın burada mesela bir satış sistemimiz var. Bir işte market şeyi düşünün. Markette kasa var. Biz gittik, tamam marketin çalışma şeklini inceliyoruz.
+
+51
+00:15:04,579 --> 00:15:08,659
+Ve bir satış senaryosunun nasıl olduğunu gözlemleyerek yazmıyoruz.
+
+52
+00:15:08,659 --> 00:15:24,819
+çalışıyoruz. Bakıyoruz bir kere işte bir dükkan var yani market var mesela şurada duruyor. Ondan sonra kasa var ve onu görüyoruz. Böyle bir nesne varmış burada ve bu gerçekten satış senaryosunda önemli bir nesne rol alıyor. Ürünler varmış.
+
+53
+00:15:25,556 --> 00:15:47,276
+Ondan sonra satış, burada tabii ki bunun detaylarına gireceğiz. Bir, satışın kendine has demek ki özellikleri varmış ki onu ayrı bir kavram olarak modellemişim. Yani bu bir satış kavramı senaryonun içinde yer alıyor. Ödeme diye bir kavram var. Neden? Çünkü mesela ödemenin tutarı varmış en azından.
+
+54
+00:15:47,276 --> 00:15:53,556
+Ve şuraya henüz daha detayına girmeyelim ama satışla ürünler aslında birbiri.
+
+55
+00:15:53,556 --> 00:15:59,796
+Ne yapıyoruz? Burada müşteri de koyabilirdik ama müşteriyi aktör olarak buradaki sınıf diyagramın dışında tuttuk.
+
+56
+00:16:00,356 --> 00:16:09,336
+Şimdiden hemen söylemekte fayda var. Aktörleri de genellikle biz, yani primary aktörlerimiz falan vardı ya, işte senaryolardaki.
+
+57
+00:16:09,816 --> 00:16:18,716
+Bu aktörleri de genellikle biz yazılımda sınıf olarak modelleriz. O yüzden hani büyük bir ihtimalle şurada bir müşteri sınıfı da yer alacaktır.
+
+58
+00:16:21,556 --> 00:16:29,256
+Açımın senaryodaki kavramların anlaşılır olarak kalmalarını sağlamak adına aktörleri burada göstermiyoruz.
+
+59
+00:16:29,456 --> 00:16:32,556
+Yani kavramsal sınıf diagramında genellikle aktörleri koymayız.
+
+60
+00:16:33,056 --> 00:16:40,896
+Ama nihayetinde yazılım sınıfları oluştuğunda büyük bir ihtimalle onlar da dediğim gibi yazılım sınıfları olarak uygulamamızda yer alacaktır.
+
+61
+00:16:40,896 --> 00:16:48,596
+Ne yaptım? Ben gözledim marketi. İşte bir şey geliyor, müşteri geliyor. Elinde ya da sepetinde ürünler var.
+
+62
+00:16:49,556 --> 00:16:55,696
+Sepet kavramını da burada mesela koyabiliriz mesela. Müşteri sepet buraya kavramlarını ekleyebiliriz.
+
+63
+00:16:56,696 --> 00:17:01,056
+İşte ürünler sepetin içindedir gibi bir ilişkiyle birbirlerine bağlı olabilirler.
+
+64
+00:17:02,515 --> 00:17:29,735
+Nihayetinde işte ne oluyormuş? Mesela ben işte kasiyer var, kasada oturuyor. Kasiyer işte ürünü okutuyor. Ürünü okuttuktan sonra işte mesela 3 çarpı diye bir şey basıyor klavyeden. Barkod okuyucudan okutuyor. Ben bunları gözledim ve işte şeyde de senaryoda da yazıyorum diye düşünelim. Hani bir satış senaryosunu yazıyorum. Ondan sonra bu bir işte fatura şeyi olarak böyle ekranda işte 3 tane Çoco Prens diye çıkıyor.
+
+65
+00:17:30,516 --> 00:17:37,476
+Ya da ne bileyim, beş tane probis diye çıkıyor böyle. Bisküvilerden örnek vereyim. Ya da işte ne bileyim.
+
+66
+00:17:37,920 --> 00:18:05,800
+Ne olsun? Ekmek. Tamam. Ve bu şekilde çıkıyor ekranda. Bunları görüyorum. Demek ki bunların hepsinin bir şeyi var. Kendine has özellikleri var. Bunlar sonrasında işte vergi hesabısı bilmem nesi de olduğu için, KDV'leri bilmem neleri. Bunların kendine has özelliklerinde tutulması gerekiyor. Ekranda bunlar satır satır. Fişte de en sonunda satır satır çıkıyor. Peki bunları görüyorum. Bunların oluşturulduğunu görüyorum. Okutma yapıldıkça.
+
+67
+00:18:05,920 --> 00:18:18,920
+Ürünlerin. Sonrasında ne oluyor? İşte bitti. Kasiyer bir tuşa basıyor. Genel toplam ya da kapat tuşuna basıyor. Ondan sonra da işte ödeme alınıyor. Ödeme alındıktan sonra müşteri ürünleri...
+
+68
+00:18:19,476 --> 00:18:46,516
+Torbaya koyup götürüyor. Ben burada mesela böyle bir senaryoyu incelediğimde ya da iş ortamını gözlemledimde bulduklarımı aslında ve aralarındaki ilişkileri basit bir sınıf diagramı ile ortaya koymaya çalışırım. Peki neler olur? Doğal olarak kavramsal sınıflarımız olur. Bunlara conceptual class ya da domain object adını verebilirsiniz. Yani domain class da diyebilirsiniz. Dediğim gibi bunlara kavramsal sınıflar diyoruz.
+
+69
+00:18:47,476 --> 00:19:02,635
+Bunlar bizim adaylarımız. Aslında yazılım bunların üzerine kurulmaya başlanacak. Bunlar değişebilir. Burada olmayanlar gelebilir. Yazılım sınıflarında çok daha fazlası gelir. Hiçbir şey yoksa arayüzler yüzünden gelir gibi.
+
+70
+00:19:03,347 --> 00:19:14,208
+Ya da işte veri tabanı haberleşmesi için başka nesneler yaratmanız gerekir gibi. Ama şu anda bizim problem uzayımızda onlar yok. Onlar yazılım uzayının detayları. Oralara girmiyoruz.
+
+71
+00:19:14,748 --> 00:19:18,208
+Bağlantılar. Gördüğünüz gibi. Mesela burada.
+
+72
+00:19:19,028 --> 00:19:46,407
+Satış ile ödeme arasında bir birebir ilişki var. Bunlar da çoğullama diyoruz. Ne demektir bu? Demek ki bir satışta bir ödeme varmış. Ben bir satışı iki farklı ödeme ile alamıyormuşum bu dükkanda. Diyeceksiniz hocam nasıl olur? Ben 10 lirayı nakit ödüyorum, kalan 5 lirayı da kredi kartından çektiriyorum. Evet doğru. O ayrı bir senaryo. Benim gözlemlediğim basit bir dükkanmış. Sadece nakit ödeme alıyor diye düşünelim. Bakkal var. Bakkal bizimki.
+
+73
+00:19:47,028 --> 00:19:49,528
+O zaman her bir satış bir ödemeyle alınıyormuş.
+
+74
+00:19:50,067 --> 00:19:56,067
+Ondan sonra bir satışın içinde bir ya da daha fazla satır oluşuyormuş.
+
+75
+00:19:56,288 --> 00:19:58,067
+Satış satırı. Ne demek bu?
+
+76
+00:19:58,067 --> 00:20:00,000
+Demek ki faturanın içinde...
+
+77
+00:20:00,000 --> 00:20:10,220
+En az bir kalem olması lazım, bir satır olması lazım ama en tane de olabilir. İşte böyle çoğullamalar burada gösterilebilir. O anda gördüğümüz, anlayabildiğimiz kadarıyla.
+
+78
+00:20:10,900 --> 00:20:25,200
+Başka nesnelerimizin ya da kavramsal sınıflarımızın yani kavramsal şablon ya da varlıklarımızın o anda görebildiğimiz, kullanabildiğimiz ya da senaryonun işletilmesi için gerekli olan çeşitli özellikleri.
+
+79
+00:20:28,000 --> 00:20:43,740
+Miktarı varmış. Bir satış satırında, bir satış kaleminde miktar varmış. Hani üç tane çoko prens demiştik ya, demek ki orada üç önemli. Bunun hakkında veri tutmam gerekiyor. O yüzden kullanıyorum da senaryoda. O zaman ben bunu buraya eklerim.
+
+80
+00:20:44,180 --> 00:21:05,780
+İşte satışın tarihi zamanı biliyorsunuz o fatura tarih zaman falan filan yazılıyor ya. Böyle detaylar görülebildiği kadarıyla sınıf diagramında yer alır. Tabi bu son hali değil anlattığım senaryonun. İlerleyen slide'larda bunu olgunlaştıracağız ve tam olarak nasıl olması gerektiğini bulmaya çalışacağız.
+
+81
+00:21:06,963 --> 00:21:11,083
+Bunlar kavramsal sınıflar, tekrar üzerine basarak söylüyorum.
+
+82
+00:21:11,523 --> 00:21:18,244
+Ve aslında benim tasarımımı, ondan sonra da yazılım gerçekleştirmeme temel oluştursun diye yapıyorum bunları.
+
+83
+00:21:18,764 --> 00:21:25,203
+Yani bir analist olarak aslında yazılım dünyasına bir çıktı üretmeye çalışıyorum.
+
+84
+00:21:25,804 --> 00:21:28,503
+Peki ne bu? Yani ne olur burada?
+
+85
+00:21:28,503 --> 00:21:33,804
+Mesela biz bir öğrenci bilgi sistemini analiz etmeye çalışmışız, öğrenci sistemini.
+
+86
+00:21:34,963 --> 00:22:02,604
+Öğrenci diye bir kavram bulmuşuz, bir de ders diye bir kavram bulmuşuz. Bir öğrencinin en tane ders aldığını biliyormuşuz, tamam mı? Mesela bu şeyin numarası var diyelim, şey kodu var dersin, course number diyelim buna. Öğrencilerinde adları varmış. Tabii ki öğrenci numarası bilmemesi falan filan olacak da şimdilik çok basit olsun diye. Ben yarın öbür gün böyle bir analiz modeliyle ortaya çıktıysam,
+
+87
+00:22:02,963 --> 00:22:22,043
+Yazılımı geliştirirken yani tasarım aşamasında büyük bir ihtimalle student diye gerçek bir yazılım sınıfı üreteceğim. Ve bunun işte name özelliği string olacak, private olacak. Ondan sonra bunun artık davranışları olacak. Mesela öğrenci ortalamasını hesaplayabilecek. Kendisi hesaplayabiliyormuş.
+
+88
+00:22:30,963 --> 00:22:51,303
+ilişkisini problem uzayındaki gördüğüm öğrenciler dersleri alıyor şeklinde modellediğim ilişkiyi şurada tek bir çizgiyle. Yarın öbür gün ben böyle bir bağlantıya dönüştüreceğim. Ne demek olacak bu bağlantı aslında? Şimdiden söyleyebiliriz. Get Average davranışının çalışması için benim
+
+89
+00:22:52,051 --> 00:23:20,011
+Başka bir sınıftan türeyen nesnelerle ilgili bilgi toplamam lazım. My courses diye bir liste toplamam lazım. Tamam. Yani bu listenin her birindeki, her bir ders için get great metodunu çağırmam lazım. Aldığım bütün derslerdeki notlarımı teker teker alıyorum. Ondan sonra da hepsini toplayıp ders sayısına, listenin boyuna bölüyorum ve bu sayede get average'ı hesaplayabiliyorum. İşte bunlar davranış. Davranış detaylarını şu anda görmüyoruz dediğim gibi.
+
+90
+00:23:20,051 --> 00:23:32,211
+Biz daha hala analiz aşamasındayız ama büyük bir ihtimalle tasarımı gerçekleştirdiğimde benim bir de course diye bir klasım olacak, sınıfım ve büyük bir ihtimalle bir course number string olacak.
+
+91
+00:23:32,392 --> 00:23:42,051
+Neden string? İşte bizim mesela BLM2042 doğal olarak bir string yapısında. Sadece sayılardan oluşan bir yapı değil. O yüzden böyle modellemişiz.
+
+92
+00:23:42,051 --> 00:23:48,051
+Dediğim gibi her dersin notları var. Tabii burada grade diye başka bir özelliğin de olması lazım.
+
+93
+00:23:48,051 --> 00:23:55,451
+Bunun private olması lazım. Get grade ile bunu dış dünyaya hizmet olarak verebiliyor, sunabiliyor olmam lazım.
+
+94
+00:23:56,071 --> 00:24:07,011
+Bu grade belki içeride yüzlük sistemde tutuluyordur. Ondan sonra get grade'i çağırma şekillerinize göre harf karşılığı ya da ikili harf karşılığı,
+
+95
+00:24:07,011 --> 00:24:16,011
+hani A, A, B, A şu anda kullanmakta olduğumuz harf karşılığı değil de A, A, B, C, C, C, C falan diye eskiden...
+
+96
+00:24:16,051 --> 00:24:42,112
+notlar kullanıyorduk. Böyle bir karşılık da almak isteyebilirsiniz. Onluk düzene çevirip almak isteyebilirsiniz. Dörtlük düzene çevirip almak isteyebilirsiniz. Yani bu get grade'in de farklı farklı davranışlarının olmasını isteyebilirsiniz. Ama ben onu içeride mesela hep 100 üzerinden tutuyorumdur. Veri gizli, özel ama davranışlar, dış dünyaya verdiğim hizmetler farklılaşabilir. Bu detayları tabii tasarım aşamasında geçeceğiz.
+
+97
+00:24:44,051 --> 00:24:56,211
+Analiz modelini kullanarak ileride tasarımı yaparken ve yazılımı gerçeklerken kullanacağım gerçek dünya nesnelerini ve sınıf çablonlarını ortaya koymaya, şimdiden bulmaya çalışıyorum.
+
+98
+00:24:56,352 --> 00:25:00,991
+Bir yol gösterici olması için. Peki, nasıl bulacağım?
+
+99
+00:25:01,619 --> 00:25:20,279
+Yani böyle gözleyeceğiz dedik, tamam, senaryoları yazıyoruz dedik, tamam ama nasıl bulabiliriz? Şimdi mümkün olduğunca gerçek dünyadaki somut ve soyut, hani her şey illa somut varlık olmak zorunda değil, soyut varlıklar da olabilir. Bunları bulup ortaya çıkartmaya çalışırız. Burada çeşitli yaklaşımlar olabilir.
+
+100
+00:25:29,619 --> 00:25:36,159
+Mesela öğrenci, üniversite bilgi sistemlerinde, hastane bilgi sistemlerinde sık sık karşılaşılan kategoriler vardır.
+
+101
+00:25:36,159 --> 00:25:45,259
+İşte ders, öğrenci, not, ne bileyim sınıf gibi kavramlar, kategoriler. Bunlar zaten görünen sınıfları bulur, doğru.
+
+102
+00:25:45,839 --> 00:25:52,279
+Ama uygulama uzayına özel olan sınıfları, gözden kaçırma olasılıkları da yüksektir.
+
+103
+00:25:52,739 --> 00:25:56,299
+Mesela işte ben bir önceki, şuraya geri geleyim, iki önceki pardon.
+
+104
+00:25:57,619 --> 00:26:25,219
+Bir satış kalemi ya da satış satırı diye bir şey bulmuşum, bir kavram bulmuşum. Bu standart bir şey değil. Bunu bulamam hazır listeleri kullanırsam. Evet, dükkanı, ürünü, kasayı bulurum belki ama ödemeyi bulurum belki ama böyle özel kavramları, domain spesifik olan kavramları kategori listeleri üzerinden bulamam. Yani belli kavramları ve gerekli, önemli kavramları gözden kaçırabilirim. Peki ne yapalım o zaman?
+
+105
+00:26:25,619 --> 00:26:34,819
+Bizim elimizde senaryolar var. Biz bir iş analizi yaptık, bunları raporladık, müşteriyle el sıkıştık. Evet, gerçekten biz bu işleri böyle yapıyoruz dediler.
+
+106
+00:26:35,279 --> 00:26:44,279
+Ya da yok bu iş böyle olmaz, şöyle akması lazım, bu sürecin böyle işletilmesi lazım diye güncellettiler. Yani benim elimde bir sürü use case var, kullanım senaryoları var.
+
+107
+00:26:44,279 --> 00:26:53,279
+İşte ben aslında bu senaryoları işleyerek ve ortaokuldaki dil bilgisi derslerimize geri dönerek senaryolardaki isimleri...
+
+108
+00:26:53,619 --> 00:27:00,239
+ve isim tamlamalarını bulursam ve işaretlersem, bunların hepsi aslında benim uygulama uzayımda, problem uzayımda.
+
+109
+00:27:00,915 --> 00:27:18,316
+Aday sınıflarımdır. Bunların hepsini sınıf haline getirebilirim. Bunların hepsi sınıf evet olabilir ama genellikle olmaz. Genellikle burada çok fazla sınıf çıkar. Bunları elemek gerekir. Çünkü senaryoları yazarken her şeyi böyle kıtı kıtına tam olarak net yazamayabiliriz.
+
+110
+00:27:18,316 --> 00:27:28,375
+İşte bazen müşteri deriz, bazen kişi deriz. Hani kişi kasaya gelir de yazabilirim ya da işte müşteri ödemeyi yapar diye de yazmış olabilirim.
+
+111
+00:27:28,915 --> 00:27:47,115
+Bir kavram, müşteri de bir kavram ama sonrasında bir inceleyip okuyup tekrar değerlendirdiğinizde göreceksiniz ki aslında ikisi aynı kavram. O zaman hangisini kullanayım? Daha özel tanımlayanı kullanayım. İşte müşteri benim için önemlidir diyeyim. Kişileri atayım ya da kişi olanların hepsini müşteri haline senaryolarımda güncel diyeyim.
+
+112
+00:27:49,460 --> 00:28:11,859
+Kasa ödemenin tutarını gösterir dedik. Ne bu? Ödemenin tutarı. Tutar. Hemen böyle o isim buldum, hemen bunu bir sınıf yapayım diyebilirim ama büyük bir ihtimalle o aslında yarın öbür gün, bir iki iterasyon sonra çalışırken bir ödeme nesnesine ait bir özellik haline gelecek.
+
+113
+00:28:11,859 --> 00:28:16,339
+Her şeyde illa isim diye kavramsal sınıf olmak zorunda değil.
+
+114
+00:28:17,460 --> 00:28:32,559
+İyi bir yöntemdir ve sizin problem uzayınıza has olan kavramları da kaçırmadan yakalamanızı ve problem modelinde, yani bir kavramsal sınıf diyagramında doğru düzgün görünmelerini sağlar.
+
+115
+00:28:33,491 --> 00:29:01,491
+Bir yaklaşım daha var olan model güncellemesi. Bu da önceden yaptığınız işler vardır ya da yayınladığınız kavramsal modeller vardır. Bunları uyarlarsınız. Ya şey gibi hani biz iki sene önce şu firmaya şöyle bir çözüm geliştirmemiş miydik? Getirin onun analizini. Ondan sonra evet tamam bunların istediği de buna çok benziyor. Şunu değiştir, şunu çıkart, şunu ekle olsun bitsin. Hani böyle bir şey var olanı değiştirme şeklinde ya da yayınlanmış bir iki modeli belki bir araya geliştirme.
+
+116
+00:29:01,491 --> 00:29:08,491
+şeklinde bir uyarlamada yapılabilir. Ama bu da bir emek tabii ki. Her zaman için bizim hani...
+
+117
+00:29:08,980 --> 00:29:12,419
+Çalışmalarımızı kolaylaştıracak diye bir şey de söz konusu değil.
+
+118
+00:29:12,419 --> 00:29:23,779
+Peki, biz ne yapacağız o zaman? En iyi bir yöntem şu anda karşımızda ilk defa gördüğümüz, tanımadığımız bir iş uzayı olduğunu, bir problem uzayı olduğunu da düşündüğümüzde,
+
+119
+00:29:24,159 --> 00:29:32,799
+biz senaryolarımızdan yola çıkarak buradaki kavramsal sınıfları senaryolardan başlayıp da bulmak daha doğru olacaktır diyoruz.
+
+120
+00:29:33,639 --> 00:29:36,980
+Dediğim gibi hani domain spesifik kavramları.
+
+121
+00:29:36,980 --> 00:29:54,539
+Aslında, işaretleri de kaçırmamak için. Şimdi, nasıl yapacağız? İsimleri işaretleyeceğiz dedik. Nasıl işaretleyeceğiz? İşte böyle. Yani çok zor bir şey değil. Oturup, elinize kalem alacaksınız, altını çizeceksiniz. Bu tabii bu İngilizce. Kitaptan, İngilizce kitabından aldığım için böyle oldu.
+
+122
+00:30:04,948 --> 00:30:12,248
+Kasa, with goods and services to purchase, purchase eylem.
+
+123
+00:30:13,607 --> 00:30:17,508
+Cashier starts eylem, new sale.
+
+124
+00:30:17,844 --> 00:30:45,584
+Mesela new sale diyebilirsiniz. Ama zaten new sale, yani new onun zaten sıfatı. O yüzden sale sadece şey yapalım, işaret diyelim. Ondan sonra yaptıktan sonra bir daha işaret demenize gerek yok. Hani burada da kasiyer varmış, bunu da işaretleyeyim demenize gerek yok. Item identifier, yani barcode numarasını şey giriyormuş kasiyer. Neden böyle? Bizim sistemimiz, hani burada incelediğimiz sistem çok basit.
+
+125
+00:30:45,844 --> 00:31:08,203
+Hiçbir okuyucu falan da yok. Ben ürünün barcode numarasını nümerik keyboarddan şak şak şak giriyorum. 869 ile başlayan kodları biliyorsunuz o 8 haneli. Elimle giriyormuşum ve Enter'a basıyormuşum mesela öyle düşünün. Sonra sistem, sistem değil mi? Sistem de isim.
+
+126
+00:31:08,564 --> 00:31:20,604
+Ama yani sistemi de işaretleyebilirsiniz de sistem zaten çözmeye çalıştığınız problemin kendisi. O yüzden hani illa bunu da bulundurayım demenize pek gerek yok.
+
+127
+00:31:20,864 --> 00:31:29,943
+İleride bu sistem dediğimiz şey zaten büyük bir ihtimalle sizin o main var ya, hani statik main, onun duracağı yer olacak, merak etmeyin.
+
+128
+00:31:30,983 --> 00:31:42,663
+Records, tamam geç. Sale line item, aha satış satırı. Şimdi buradaki sale budur deyip line item'ı ayrı da çizebilirsiniz, hani şöyle çizeyim, tamam mı? Bu da olabilir.
+
+129
+00:31:43,384 --> 00:31:47,884
+İlla böyle birinci şeyde tak diye bütün hepsini doğru bulacaksınız diye bir şey söz konusu değil.
+
+130
+00:31:48,864 --> 00:32:10,703
+System Presence Item Description, bu da bir isim. Price, bu da isim. Running Total, şu Running Total bir arada olsa da olur, totalı ayrı da yapsak olur, fark etmez. Price'ı işaretledik. Price Rules, şunu da işaretleyebiliriz mesela. Sonrasında 3 ve 4 bütün ürünler için tekrar ediliyormuş. System Presence Total.
+
+131
+00:32:11,188 --> 00:32:34,748
+Total, bu da işaretleniyor. Total'ı işaretlemişiz ya. Tamam, geri al. Taxes. Tamam. Ondan sonra, customer, the total, ask for payment. Payment, tamam. Customer'ı işaretlemiştik. Sistemi zaten söyledim, işaretlemenize gerek yok dedim. System logs completed sale.
+
+132
+00:32:35,152 --> 00:32:44,791
+Sale zaten. Send sale and payment information to external accounting system. Bir yerlere bir şey yolluyormuşuz.
+
+133
+00:32:45,203 --> 00:33:01,443
+Şey gibi hani belki Ikea'da falan görmüşsünüzdür. Böyle fatura ya da bir şeyi, formu böyle bir tüpün içine koyup bir boruyla yolluyorlar bakımlı bir sistemle. Onun gibi hani burada da alıp bir şeyi bir yere yolluyormuş gerçekten kasiyer mesela.
+
+134
+00:33:02,723 --> 00:33:13,104
+For accounting and commissions. Accounting muhasebe yaptık. Commissions, komisyon varmış. Envanter sistemine şey yapıyormuş. Demek ki bir stok sistemine de bilgi yolluyor.
+
+135
+00:33:13,203 --> 00:33:16,803
+Yani ben bu üç tane çoko prensi sattım diye bir yerlere bir bilgi daha yolluyor.
+
+136
+00:33:16,803 --> 00:33:19,323
+Ve faturayı sistem veriyor.
+
+137
+00:33:19,923 --> 00:33:22,203
+Customer leads with receipt and goods.
+
+138
+00:33:22,323 --> 00:33:24,124
+Goods'u da yukarıda işaretlemiştik.
+
+139
+00:33:24,283 --> 00:33:24,583
+Bitti.
+
+140
+00:33:25,323 --> 00:33:26,923
+Extension'lar 7a.
+
+141
+00:33:28,884 --> 00:33:30,104
+Nakit ödeme.
+
+142
+00:33:30,663 --> 00:33:31,303
+Tamam, cash.
+
+143
+00:33:32,864 --> 00:33:35,303
+Cash amount tendered.
+
+144
+00:33:35,803 --> 00:33:36,583
+Miktar.
+
+145
+00:33:37,144 --> 00:33:38,803
+Ondan sonra da kavan tutar.
+
+146
+00:33:39,284 --> 00:33:56,284
+Bunlar da işaretlenebilir. Ne yaptık? Bakın bir sürü şey işaretledik. İşaretle bütün senaryoların üzerinden geç, bütün her şeyi böyle işaretle. Oldu mu? Oldu. Çok güzel. Peki nasıl devam edeceğiz? Sonrasında ben burada aslında bir sürü...
+
+147
+00:33:56,980 --> 00:34:10,899
+Yani şu anda altını çizdiklerim kırmızı kaldı, onları bir temizleyeyim şöyle. Bir süre aslında gereksiz sınıf bulacağım. Dedim ya bazıları özellik olacak, bazıları aslında beni ilgilendirmeyecek, bazıları aynı kavramı tanımlayan şeyler olacak gibi.
+
+148
+00:34:10,899 --> 00:34:24,899
+Şimdi neler olabilir? Onlara bakalım. Yani gereksiz sınıf dediğimiz kavramlar nelerdir? Bir, fazlalık sınıflar. Aynı şey, aynı kavram fakat farklı kelimeler kullanmışız. Birinde müşteri demişiz, birinde...
+
+149
+00:34:24,980 --> 00:34:40,539
+Birinde kişi demişiz, birinde ziyaretçi demişiz gibi düşünün. Bunların hepsini aslında müşteri, daha tanımlayıcı olanla ifade etsem daha doğru olacaktır. Mümkünse senaryolarda da bu güncellemeyi yapın tabii ki daha iyi olur. Geri dönüp de bir update yapmanızda fayda var.
+
+150
+00:34:42,003 --> 00:35:02,123
+İlgisiz sınıflar. Şimdi çözümle ilgisi olmayan ya da benim o iterasyonda, o aşamada çözmeye çalışmadığım, yani benim ilgimin dışında kalan sınıflar olabilir. Senaryonun sınırları dışında diyelim. Mesela işte ben demin dedim ya sadece nakit ödeme vardı. Orada kredi kartıyla ilgili bir şeyler de var. Ben şimdi o kredi kartı işaretlediklerimi silebilirim.
+
+151
+00:35:02,123 --> 00:35:10,003
+Hani ben şu anda nakit ödeme senaryosunu çözmeye çalışıyorum çünkü diyebilirim. Bunlara ilgisiz sınıf yani bu aşamada ilgisiz.
+
+152
+00:35:10,003 --> 00:35:25,003
+Başka bir senaryo için ilgili olabilir. Bunu şu anda söyleyemem, bilemem. Ama benim şu anda çalıştığım senaryo için ilgisizdir diyebilirim. Belirsiz sınıflar. Bunlar şimdi genellikle aslında...
+
+153
+00:35:25,344 --> 00:35:30,443
+Kompozit yapılardır ve aslında kendi içinde de bileşik kavramlar barındırır.
+
+154
+00:35:31,123 --> 00:35:33,203
+Örneğin, muhasebe sistemi dedik ya demin.
+
+155
+00:35:33,604 --> 00:35:35,724
+Muhasebe sistemi aslında koskoca bir sistem.
+
+156
+00:35:35,903 --> 00:35:37,083
+İçinde pek çok parça var.
+
+157
+00:35:37,083 --> 00:35:42,564
+Yani ben belki bu muhasebe sisteminin geneliyle değil de oradaki belli bir arayüzle konuşuyorumdur.
+
+158
+00:35:42,884 --> 00:35:45,284
+Bunu biraz daha iyi belirlemem gerekebilir.
+
+159
+00:35:45,784 --> 00:35:53,243
+Yani kaba, sınırları iyi çizilmemiş, geniş tanımlı sınıflar benim için kötüdür diyebilirim ya da bunlar gereksizdir.
+
+160
+00:35:53,344 --> 00:36:06,983
+Bunları şu anda kullanmayayım diyebilirim. Sonrasında özellik ya da nitelik ya da öz nitelik yani attribute dediğimiz kavram bunların tek başına var olmalarının bir anlamı yoktur. Yani siz şeye geri dönüp şöyle.
+
+161
+00:36:08,244 --> 00:36:22,864
+Miktar demiştik, mesela amount tendered. Kendi başına miktar bir anlam ifade ediyor mu? Hakkında veri tutmam gerekiyor mu? Bundan birden fazla nesnet üretebilir miyim? gibi soruları sorarak aslında bunu cevaplayabilirsiniz.
+
+162
+00:36:22,864 --> 00:36:30,444
+Bu zaten bir ödemeyle alakalı, değil mi? Ödemenin bir özelliği, bir niteliği deyip bunları da elemek gerekiyor.
+
+163
+00:36:31,572 --> 00:36:45,152
+Bunlar, işlemler, bunlar sınıf olmamalıdır. Zaten bunlar bir ileride yani tasarımda bunların hepsi davranış haline gelecek. Yani bunlar metot haline gelecekler. O yüzden bunları da sınıf haline getirmek doğru olmaz.
+
+164
+00:36:46,132 --> 00:37:04,811
+Roller var. Sınıfların arasındaki ilişkileri sınıf yapmamak lazım. Tabi bazen yapılabilir, çok nadiren. Hani turning relation'ları çözmek için yapabilirsiniz. Ama şimdilik yani rol dediğimiz kavramında bizim için sınıf olarak modellenmemeleri gerektiğini bilelim.
+
+165
+00:37:14,132 --> 00:37:23,112
+İnterfesle alakalı bilmem ne butonunun burada şu anda yer almaması gerekir. Biz sadece problemi işi modelliyoruz. Unutmayalım, kavramları modelliyoruz.
+
+166
+00:37:23,952 --> 00:37:33,412
+Bu şekilde bunlar gereksiz sınıflar olacaktır. Yani her isim mutlaka kavramsal sınıf olmayacaktır. Elemek için de bunlara dikkat etmemiz gerekecek.
+
+167
+00:37:33,412 --> 00:37:42,032
+Şu soruları sorarsanız aslında sınıf gerekli mi değil mi öğrenebilirsiniz. Bir, kavramla ilgili hani çizdim ya altını.
+
+168
+00:37:42,132 --> 00:38:01,172
+Bu kavramla ilgili veri saklamam gerekiyor mu? Yani aslında şey demek bu. Bu kavramın kendine has nitelikleri, özellikleri var mı, yok mu? Eğer yoksa zaten o tekil bir niteliktir. Değişik değerler alabilecek farklı özellikleri var mı? Tek bir özellik değil birden fazla özellik içermesi lazım.
+
+169
+00:38:02,356 --> 00:38:24,016
+Ben bundan pek çok nesne türetebilir miyim? Yani yarın öbür gün işte mesela müşteri dedim. Değil mi? Müşteriyi ilk önce işaretlemiştim. Ben birden fazla müşteri nesnesiyle muhatap olabilir miyim? Evet olabilirim. Ben birden fazla ürün ile muhatap olabilir miyim? Böyle farklı farklı ürün nesnelerine ihtiyaç duyar mıyım? Evet duyarım.
+
+170
+00:38:30,356 --> 00:38:33,276
+Toplam tutarlar. Acaba tutacak mıyım?
+
+171
+00:38:33,619 --> 00:38:55,239
+Hayır, çünkü onun hepsi aslında o anda oluşan ve hangi üründen kaç tane aldığına göre değişen bir miktar. Yani bu üzerinden kendisinden pek çok nesne türüyebilecek bir kavram değil. O zaman ben buradaki toplam tutarı ayrı bir sınıf olarak modellemeye ihtiyaç duymam.
+
+172
+00:39:01,619 --> 00:39:29,619
+Alakalı bir şeylerden bahsettik ve muhasebeyle alakalı. Bunlar benim dışımda aslında. Bu detayları da kendi modelimin içine koymamam beklenir. Gidip de orada bir inventory bilmem ne item falan görmemem gerekir. Neden? Sadece ben satış senaryosunu modellediğim için. Belki başka senaryolarda bir araya geldiğinde, bütün sistemin, bütün kavramlarını bir araya getirdiğimde belki olacak ama şu andaki benim odak noktamda...
+
+173
+00:39:29,619 --> 00:39:31,000
+Böyle bir şey söz konusu değil.
+
+174
+00:39:31,860 --> 00:39:45,059
+Ve yine belirsiz sınıf olmaması, sınırlarının iyi çizilmiş olması ve tanımının yapılabiliyor olması esas bu sorunun da cevabını alamıyorsanız bu gereksiz ve belirsiz bir sınıftır diyebilirsiniz.
+
+175
+00:39:45,860 --> 00:39:48,819
+Tanımını düzgün yapabiliyor musunuz? Muğlak bir ifade mi?
+
+176
+00:39:50,291 --> 00:40:05,071
+Bu sayede ben senaryolardaki isimlerin üzerinden geçip, gereksiz olanları da, ya bunlar benim için kavram değildir diye silip, daha temiz bir model, bir kavram uzayı oluşturmaya çalışıyorum.
+
+177
+00:40:05,071 --> 00:40:10,059
+Şimdi burada çalışıyorum, çalışıyorum da bazen...
+
+178
+00:40:10,643 --> 00:40:38,623
+Gerçek dışı ya da hayali kavramlar yaratmak zorunda kalabilirim. Nedir bu? Şimdi bunlara genellikle description ya da specification class deriz. Yani betimleme, tanımlama sınıfları. Bunlara ihtiyaç duyarız. Şöyle ki, şimdi ben senaryoda işaretledim ya item vardı hani ürün dedik. Şimdi ürün benim için nesne hakikaten. Evet nesne'yi türeteceğim. İşte mesela Choco Prens ürün.
+
+179
+00:40:38,643 --> 00:40:53,043
+ProBiz ürün, makarna ürün, süt ürün, marketteyim ya, işte sabun ürün gibi şeyler ya da ne bileyim bulaşık deterjanı ürün. Bunların her birinden bir nesnet üretebilirim.
+
+180
+00:40:53,043 --> 00:41:00,263
+Hepsinde kendine has özellikleri olur. Ağırlığı olur, boyutu olur, kilosu olur, tutarı olur, KDV oranı olur.
+
+181
+00:41:00,851 --> 00:41:28,851
+Olur da olur. Yani bu benim için bir kavram ve kavramsal bir sınıf haline gelmesi çok büyük olasılık ya da evet ben bunu hakikaten modellemeliyim diyorum. Fakat şöyle düşünüyorum. Şimdi ben dükkanda işte bütün ürünler için birer nesne yarattım. Çok güzel. İşte bütün ekmekler için diyelim. Tamam mı? Kaç tane ekmek var dükkanda? Diyelim işte 50 tane ekmek var. Şeyde dolapta duruyor. 50 tane ekmek nesne.
+
+182
+00:41:28,851 --> 00:41:52,652
+Niye çekiyor? Hep her biri unique. Tamam, çok güzel. Şimdi ben bunları sattım, sattım, sattım. Hani satışla beraber bunları şey yapıyorum, envanterden de düşüyorum. Nihayetinde 50 tane ekmek sattım. Bitti. Elimde nesne var mı? Nesne kalmadı. Ben ekmeği ne yapacağım şimdi? Ekmek şeyi yok. Ekmeği tanımlayan herhangi bir veri kalmadı elimde.
+
+183
+00:41:53,108 --> 00:42:07,988
+Kaybettim, yok ettim. İşte böyle durumlar olacaksa buralarda tanımlaması sınıfları kullanmak gerekebilir. Yani bilgi kaybı olacağı durumlarda böyle bir şablon sınıfı kullanmaya ihtiyaç duyabiliriz. Ne yapacağız? Bir ürün tanımı.
+
+184
+00:42:08,596 --> 00:42:17,576
+Yaratacağız. Gerçek dünyada ürün tanımı diye bir kavram var mı? Bir sınıf var mı? Yok. Ama biz burada bunu maalesef kullanmak zorunda kalacağız.
+
+185
+00:42:17,576 --> 00:42:34,576
+Yani ilk başta şurada gördüğümüz gibi item ile modellemişken ve item'ın tanımı, fiyatı, bar kod numarası, belki de işte benim envanter kod numaram gibi şeyleri tanımlamışken,
+
+186
+00:42:36,244 --> 00:42:46,483
+Uygulamada bütün esnelerin yok olması sebebiyle veri kaybı olmasın diye ben burada bir ürün tanımı haline getirdim ve ürün tanımı, tanımlar, ürünleri dedim.
+
+187
+00:42:46,483 --> 00:42:59,583
+Peki ben burada üründe ne tutabilirim? Ürünün seri numarasını tutabilirim. Ama bunun dışındaki bütün kaybolursa benim için veri kaybına sebep olacak özelliklerin hepsini de şu tarafa ekleyebilirim.
+
+188
+00:42:59,844 --> 00:43:03,864
+Yani ürünün tanımı, ürünün fiyatı, ürünün kodu.
+
+189
+00:43:04,244 --> 00:43:32,244
+Stock kodum, neyse bunları burada tutabilirim. Ama ürünün seri numarası artık benim için önemli bir şey değil. Hani bu item satıldığında bu seri numarası ile benim bir işim kalmayacak. O yüzden bunun burada kalmasını tercih ederim diyebilirim. Şimdi bu %100 her satış sisteminde böyle olacak diye bir şey değil. Bunun belki başka türlü modellenmesi de gerekebilir. Tamamen sizin karşınızda olan probleme özel olarak buradaki kavramları modellemeyiz.
+
+190
+00:43:32,244 --> 00:44:00,244
+Yani birisi de çıkıp şey diyebilir, hocam biz bunları aslında işte garantileri var. Ben bilgisayar satıyorum ya da ne bileyim işte elektronik eşya satıyorum. Bunları 3 yıl boyunca seri numaralarıyla takip etmem lazım. İşte ne oldu? O zaman ben bunları başka bir şey daha modellemek zorunda kalabilirim. Belki bir hani servis takip diye bir kavram oluşturmalıyım ve o seri numarasını orada da tutmalıyım. Bilmiyorum şu anda. Hani senaryolar neyse.
+
+191
+00:44:00,244 --> 00:44:13,703
+Çözdüğünüz iş neyse, problem neyse ona göre farklı şekillerde farklı kavramlar bulmanız gerekebilir. İlla ben burada bu örneği verdim diye bütün hepsinin böyle olması gerekmez.
+
+192
+00:44:15,155 --> 00:44:28,976
+Evet, mümkün olduğunca ama gerçek dünyaya yakın olacak, gerçek kavramlarınızı yazılımda sürdürmeye, tutmaya devam edecek şekilde bunları belirlemeye gayret edin.
+
+193
+00:44:28,976 --> 00:44:37,096
+Peki, şimdi ne kaldı geriye? Kavramsal sınıflarımı buldum diyelim, tamam mı? O dikdörtgenleri, isimleriyle beraber yazdım.
+
+194
+00:44:43,155 --> 00:44:46,016
+Sınıf diagramlarını biz genellikle şöyle çizeriz.
+
+195
+00:44:47,679 --> 00:45:06,719
+sınıf diagramlarındaki sınıfları pardon, genellikle üçlü çizeriz ve yukarıda isim, sınıfın ismi olur. Ondan sonra şurada özellikler olur. Yazmaya çalışalım, özellik diyelim. Burada da metotlar olur.
+
+196
+00:45:15,679 --> 00:45:35,539
+Sadece iki bölmeli kullanıyorum. Şu şekilde sınıflar yazıyorum. Çünkü ben henüz daha bunların davranışlarını eklemedim. Yani şuradaki üçüncü tarafı eklemedim. O yüzden kavramsal sınıf diagramları isim ve öz nitelikler şeklinde iki kutulu olarak karşımıza çıkar.
+
+197
+00:45:35,539 --> 00:45:43,679
+Bir ekstra bilgi olarak duymuş olun şimdiden diye söyleyeyim. İlla sınıf diagramları üç bölmeli olmak zorunda.
+
+198
+00:45:43,679 --> 00:45:47,839
+Bu sorunda değildir. 5 bölmeli de yapabilirsiniz. O ne demek hocam?
+
+199
+00:45:50,739 --> 00:46:18,079
+Yazarsınız yine. Burada öz niteliklerini yazarsınız. Burada metotlarını yaparsınız. Burada exception'ları verirsiniz. Burada başka yapması gereken, tetiklemesi gereken şeyler varsa bunları verebilirsiniz gibi. Yani UML esnek bir dildir. Tamamen şablonunu da siz belirleyebilirsiniz. De facto herkesin standart olarak kullandığı üçlü sınıf yapısını kullanabileceğiniz gibi.
+
+200
+00:46:18,739 --> 00:46:46,739
+Bunu 5'liye de çıkartabilirsiniz ya da 4'liye de çıkartabilirsiniz. Bu da bir modeldir. Tamam mı? UML bu şekilde farklı modellemelerin de yapılmasına olanak sağlayacak esnekliktedir. O yüzden böyle yarın öbür gün bir class görürseniz, burada ne yapmış böyle şey mi olur demeyin, olur. Böyle farklı şeyler tanımlayabilirsiniz. UML'in şemasını da değiştirebilirsiniz özetle. Yani UML'e de eklenti yapabilirsiniz. Tamam, devam edelim.
+
+201
+00:46:46,739 --> 00:46:48,980
+Nerede kaldık? Bağlantılardaydık.
+
+202
+00:46:49,588 --> 00:46:57,867
+Şimdi bu tamamen nesneler arasındaki ilişki. Yani kavramsal sınıflarınız birbirleriyle nasıl bağlı olacak bunları bulmamız lazım.
+
+203
+00:46:59,228 --> 00:47:12,867
+Bağlantılarda aslına bakarsanız, senaryoya geri gelelim. Şuradaki fiiller, hani onları da gidip başka bir renkli kalemle ne bileyim işte ne alalım şöyle koyu yeşil bir kalem alalım.
+
+204
+00:47:12,867 --> 00:47:16,447
+Koyu yeşil bir kalemle altlarını işaretlediğinizi düşünün tamam mı?
+
+205
+00:47:17,588 --> 00:47:36,168
+Müşteri ve kasa arasında bir ilişki var diyebiliriz. Çünkü müşteri kasaya gider. Ondan sonra kasiyer başlatır satış. Demek ki kasiyer ile satış arasında bir bağlantı var. Ondan sonra işte şu şunun zaten özellikleri başka başka başka.
+
+206
+00:47:41,300 --> 00:47:47,880
+Müşteri arasında bir anlatma ilişkisi var, söyleme ilişkisi ve bir ödeme alma ilişkisi var.
+
+207
+00:47:48,140 --> 00:47:52,260
+Şöyle az kıs, pardon şurayı işaretecektik, yanlış oldu. Şurayı işareteyeceğiz.
+
+208
+00:47:52,660 --> 00:48:03,560
+Tamam, bu şekilde aslında hangi kavram hangi kavramla bağlantıda? Bunları da fiilleri işaretleyerek yine senaryolarda bulabilirsiniz.
+
+209
+00:48:04,820 --> 00:48:09,260
+Genellikle tip, fiil, tip şeklinde bunları isimlendirmek daha doğru olur.
+
+210
+00:48:09,300 --> 00:48:26,100
+Öğrenci alır ders şeklinde. Hepsini bulamayabilirsiniz. Olabilir. Tabii yine fazla gereksiz bağlantılar da çizebilirsiniz. Ama ne kadar fazla çizerseniz anlaşılırlık, modelin anlaşılırlığı o kadar azalacaktır.
+
+211
+00:48:27,188 --> 00:48:32,268
+Bağlantılardan çok kavramları aslında bulmaya daha çok özen gösterseniz daha iyi olur.
+
+212
+00:48:32,768 --> 00:48:40,467
+Bazılarını dediğim gibi unutabilirsiniz ama bunlar şu anda sizin tasarımızı da bunu unutmuş, yanlış oldu kadar etkilemez.
+
+213
+00:48:40,467 --> 00:48:42,927
+İleride zaten bunları yine güncelleyebilirsiniz.
+
+214
+00:48:43,967 --> 00:48:54,607
+Yine ne yapacağız? Yaygın bağlantı listesinden yararlanabiliriz ya da kullanım senaryonundaki daha doğru olan yol bizim yine kendi problemimize özel.
+
+215
+00:48:55,188 --> 00:49:00,228
+fiilleri işaretleyerek buradaki bağlantıları ortaya çıkartabiliriz.
+
+216
+00:49:01,556 --> 00:49:28,156
+Tabii bir sürü gereksiz bağlantı yine bulunacağız. Elenen sınıflarınız arasındaki bağlantıları da elersiniz. Bunlara ihtiyacınız yok. Amaç dışındaki bağlantıları kullanmaya gerek yok. Yani illa müşteriyle kasiyer konuştular diye bu ikisini böyle ilişki halinde göstermeye gerek yok. Çünkü ne kadar çok bağlantı o kadar çok yüksek bağımlılık. Biz az bağımlılık olmasını tercih ederiz halbuki.
+
+217
+00:49:29,556 --> 00:49:52,356
+Bir işi yapmak için de mümkün olduğunca az haberleşme yaparsak daha faydalı olacaktır. Bir de çok alakasız işler yapmamızı sebep olabilir. Çok alakasız işler yapmamak için de bağlantılarımızı sınırlı tutmakta fayda vardır. Bunlar da yine tasarım konseptleri, tasarım varsayımları olarak düşünülebilir.
+
+218
+00:49:53,907 --> 00:50:01,688
+Şu anda ilgilenmediğimiz mesela yine implementasyon yönelik bağlantılar varsa bunlar da gereksizdir. Bunları da elememiz gerekir.
+
+219
+00:50:03,539 --> 00:50:12,779
+faaliyetler de aslında birer etkileşim olarak modellenmelidir. Ne demek bu? Mesela ATM kredi kartı kabul eder diye bir şey gördünüz.
+
+220
+00:50:13,139 --> 00:50:22,659
+Aslında bu bir şey, ATM ile kredi kartı arasında bir şey olacak. İleride bir metot çağırsa haline gelecek büyük bir ihtimalle.
+
+221
+00:50:22,739 --> 00:50:30,779
+Burada bir iş var. O yüzden iş yerine direkt şu şunu yani fiil tip, fiil tip şeklindeki...
+
+222
+00:50:31,539 --> 00:50:42,219
+Üçlüleri bulmaya gayret etseniz daha iyi olur. Üçlü bağlantılar olabilir. Bu da aslında bizim senaryoları düzgün yazmamamızdan kaynaklanabilir.
+
+223
+00:50:42,699 --> 00:50:49,940
+Örneğin, memur hesapla ilgili işlemleri girer diye bir ifade var, bir cümle var diyelim.
+
+224
+00:50:49,940 --> 00:50:53,940
+Şimdi burada memur var, hesap var, işlem var.
+
+225
+00:50:54,516 --> 00:51:15,996
+Üç tane kavram bir arada. Bu üçü birbirine nasıl bağlanacak? Yani şöyle çizecek olursak, şurada bir memur var, şurada bir hesap var, ondan sonra şurada da bir işlemler var. Ben bunu o zaman nasıl bağlayacağım? Şöyle mi bağlayacağım?
+
+226
+00:51:16,436 --> 00:51:44,396
+Böyle bir şey olacak. İşte bu sevilen bir durum değil. Onu aslında benim bir şekilde şöyle neye çevirmem lazım? Memur işte şey yapar, işlem pardon bunu aşağıya çizmiştik. Memur işlemleri girer, işlemler hesapla ilgilidir şeklinde iki ayrı cümle halinde yazmalıyım ve bağlantılarında aslında şu şöyledir, bu da öyledir diyerek.
+
+227
+00:51:44,436 --> 00:52:11,215
+bağlamam daha doğru olacaktır. Bunu şu anda tabii yapabilmek çok kolay değil. Başlangıçta bunları görebilmek ya da bunları düzgün bir şekilde yazabilmek kolay değil. Zaman içinde ama bunları fark etmeye başlarsınız ve hep böyle iki şey olmasına gayret edersiniz. Yani X, Eylem, Y şeklinde diyelim cümleler kurmak daha doğru olacaktır senaryoları yazarken.
+
+228
+00:52:12,436 --> 00:52:14,436
+Evet, hop şeyi kaybettik.
+
+229
+00:52:16,476 --> 00:52:18,556
+Şunları da temizleyelim.
+
+230
+00:52:20,076 --> 00:52:24,815
+Evet, gereksiz bağlantılarımızı da bu şekilde elememiz gerekir.
+
+231
+00:52:25,715 --> 00:52:27,375
+Bağlantılara bir örnek vereyim.
+
+232
+00:52:27,375 --> 00:52:35,195
+İşte mesela, store contains register, yani dükkan barındırır kasa.
+
+233
+00:52:35,755 --> 00:52:38,375
+Kasa kaydeder satışı.
+
+234
+00:52:39,231 --> 00:52:56,231
+Satış ödenir ödeme ile. İngilizcesi daha güzel oluyor da burada Türkçe'de kullanabilirsiniz. Mesela bir havayolu bir ve en kişiyi...
+
+235
+00:52:56,467 --> 00:53:20,607
+Hava yolu çalıştırır kişileri. Kişiler ilişkilidir uçuşlarla. Ondan sonra uçak atanmıştır uçuşa. Bir kişi yönetir başka kişiyi. Aslında bu person aynı zamanda manager da olabilirmiş. Böyle bir bağlantıdan bunu anlayabiliyoruz.
+
+236
+00:53:22,996 --> 00:53:41,196
+Şimdi şöyle buna geçmeden önce saat kaç oldu? 54 geçiyor. Bir ara vereyim. 5 gece, saat 2'yi 5 gece dersimizin ikinci saatiyle yola devam edelim. Tamam, 5 gece görüşüyoruz.
+
+237
+01:06:07,347 --> 01:06:10,727
+Evet arkadaşlar, aradan sonra yine birlikteyiz.
+
+238
+01:06:13,367 --> 01:06:24,447
+Evet, burada yani bağlantılar konusunda tekrar edecek olursak, bir şu anda bizim odak noktamız her neyse onunla ilgili bağlantıları bulmamız gerekiyor.
+
+239
+01:06:29,172 --> 01:06:43,772
+Belirlememiz ya da göstermememiz gerekiyor. Ve mümkün olduğunca bizim uygulamamızın daha sonra gerçeğe dönüşecek tasarımına yönelik bağlantıları ortaya çıkacak. Bunları belirlememiz gerekiyor.
+
+240
+01:06:53,139 --> 01:07:02,139
+Mouse bazen ters çalışıyor. Gariplik var. Neyse. Dediğim gibi burada da en önemli şeylerden biri...
+
+241
+01:07:02,643 --> 01:07:24,643
+Mümkün olduğunca, yani her bir bulduğunuz bağlantının ne olduğunun isminin de atamasını yapsanız iyi olur. Yani ben sadece dükkanla kasayı birbirine bağladım, bitti değil. Bu bağlantı neden var? Yani bunun eylemi ne, bunun fiili ne? İleride tasarımda bize yardımcı olacak çünkü. Bu yüzden mutlaka...
+
+242
+01:07:25,076 --> 01:07:35,396
+Bağlantıların isimlerini de düzgün bir şekilde tanımlamamız, vermemiz, yapmamız gerekiyor. Bunu da söylemeden geçmeyelim bağlantılar konusunda.
+
+243
+01:07:35,396 --> 01:07:48,576
+Peki sonuçta, sonuçta ben nasıl bir ilerleme kat edeceğim? Şimdi bakalım ne yaptık?
+
+244
+01:07:49,940 --> 01:08:17,700
+Önce senaryoların üzerinden geçerek isimleri çizdik, isimlerin altını çizdik. Sonra dedik ki ya biz çok çizdik, bunların bir kısmı gereksiz. Hangileri acaba gereksiz deyip bunlar üzerinde bir çalışma yapıp bir eleme yaptık. Sonra ikinci adım olarak tamam ben bu kavramları buldum ama bu kavramlar benim için şu anda yeterli değil. Bunların bir de birbirleriyle olan bağlantılarını bulmam gerekiyor.
+
+245
+01:08:17,939 --> 01:08:22,939
+kavram bağlantılarını da belirlemem gerekiyor deyip, bunun için de senaryolardaki...
+
+246
+01:08:23,279 --> 01:08:38,859
+Eylem ya da fiillerden yola çıktım. Fiillerden yola çıkarak da mümkün olduğunca bütün hepsini ne olduklarını da yazarak, eğer yazamıyorsam o bağlantı gereksizdir diyebiliriz, yazarak bu şekilde bir model oluşturdum.
+
+247
+01:08:38,939 --> 01:08:49,899
+Şimdi bakalım, burada karşımızda neler var. Şimdi nereden başlayalım? İşte merkeze dükkanı almışız mesela. Şurada bizim bir storumuz var. Tamam mı?
+
+248
+01:08:51,279 --> 01:09:11,500
+Daha başka ne görmüştük store ile alakalı? Bakın store, stocks, item. Demek ki benim dükkanımda ürünler var. Ama bu ürünlerle birlikte, şöyle baktıklarımızı yeşille şöyle çizelim, item. Bu ürünler aynı zamanda belirli tanımlara sahipti. Yani bir specification describes item.
+
+249
+01:09:11,500 --> 01:09:16,859
+Ve burada bire en bir ilişki söz konusu. Nedir bire en ilişki buradaki?
+
+250
+01:09:18,228 --> 01:09:35,247
+Bu çoğullama nereden geliyor? Bir tane tanım ile ben raftaki en tane çoko prensi tanımlayabilirim. Peki ne farklı olacak? Hepsinin mesela seri numaraları farklı olacak diyebilirim. Dükkanda ürünlerin durduğunu stokta beklediklerini söyledik.
+
+251
+01:09:35,247 --> 01:09:46,228
+Tamam, şimdi mesela ben burada yine tamamen bu problemin uzayına özel olarak şey tanımlamışım.
+
+252
+01:09:46,228 --> 01:10:07,568
+Demişim ki, direkt olarak dükkan tekil product specification'lara yani ürün tanımlarına erişmesin. Normalde ben bu ürün tanımlarının hepsini bir katalogda tutayım. Böyle bir ürün katalogum olsun, bir şey gibi böyle ne diyorlar ona, klasör gibi bir yapım olsun. Hepsi onun içinde dursun ve ben dükkan olarak buna sahip olayım.
+
+253
+01:10:11,699 --> 01:10:37,079
+Bir kavram da bulmuş olabiliriz. Dediğim gibi bu tamamen uygulamanın doğasına göre değişebilecek bir kavram. Ben bunu kullanabilirim, kullanmayabilirim. Büyük bir ihtimalle senaryolarda bununla alakalı bir şeyler görmüşüm ya da hissetmişim ya da ürün tanımlarının mutlaka bir yerde bütün halinde saklanmaları gerektiğiyle alakalı bir gereksinim var. O yüzden ben böyle bir kavramı buraya eklemişim.
+
+254
+01:10:39,699 --> 01:10:57,860
+Datalo'da konuştuk. Dediğim gibi olmaya da bilirdi. Alternatifi neydi? Ben direkt olarak işte şu store, contains ya da uses, product specification diyebilirdim. Böyle bir bağlantı da olabilirdi. O zaman ben bunu çizmezdim. Böyle bir kavram bulmazdım.
+
+255
+01:10:57,860 --> 01:11:07,699
+Ve bu hani bulmadığım şekilde de ooo ben yanlış analiz yaptım demezdim. Farklı bir çözüm getirmiş olabilirim. Bunlar yani bu kesin kurallar.
+
+256
+01:11:07,699 --> 01:11:35,699
+Val değil, illa böyle olacak değil. Problemin uzayına göre, problemin çeşidine göre, sizin çözmeye çalıştığınız problemin barındırdığı kavram ailesine göre bunlar değişebilir. Tamam, bunu da yaptık. Başka? İşte mesela şey vardı, muhasebeci varmış mesela. Hani senaryolarda okuduk da bir muhasebe sistemiyle bilmem neyle konuştuğumuzu söylemiştik. Mesela bizim için bir şey var, muhasebeci diye bir...
+
+257
+01:11:35,699 --> 01:12:03,639
+Kavram varmış. Demek ki ben bununla ilgili başka işler daha yapmışım. Başka senaryolarda da yer almış mesela. O yüzden ben buraya bu modele, bütün sistemin modeline bu muhasebeciyi de eklemişim. Başka ne var demiştik? İşte şeyler var. Kasamız var demiştik. Kasalarımız varmış hatta. Yani bir dükkanda bir ya da en tane kasa barındırmaktaymışız. Kasiyerimiz vardı hatırlarsanız. Kasiyer çalışır kasada. Yönlü olarak bakın böyle göster.
+
+258
+01:12:03,699 --> 01:12:14,119
+Öncemişiz. Özellikle okumanın yönünü de, ilişkinin yönünü de söylemek istiyorsanız, şurada gördüğünüz oku kullanabilirsiniz. Daha iyi olacaktır.
+
+259
+01:12:14,539 --> 01:12:18,239
+Kasiyerden de bahsettik. Demek ki onunla ilgili de belki veri tutmamız gerekiyormuş.
+
+260
+01:12:18,779 --> 01:12:24,159
+Hatırlayacak olursanız, işte mesela kasiyer müşteriyle konuşuyordu. Şöyle.
+
+261
+01:12:24,756 --> 01:12:32,016
+Ve ona fiyatı falan söylüyordu. Şimdi o zaman fiyatı da buna bağlamam gerekecek. Şöyle çizelim.
+
+262
+01:12:33,716 --> 01:12:58,676
+Çünkü kasiyerin fiyatı da biliyor olması gerekecek. Müşteriye bunu söylüyor olması gerekecek. Böyle çizmeye bir başlarsanız her şeyi birbirine bağlayıp bu kadarı da fazla hale gelir. O yüzden bu detaya gerek yok. Zaten kasa ve satış üzerinden bunlar birbirleriyle konuşabilirler deyip, buradaki ekstra gereksiz bağlantıyı kullanmadan şu şekilde modelimi biraz daha sadeleştirmeye de gayret ediyorum.
+
+263
+01:13:01,716 --> 01:13:18,936
+Satış vardı. Sıfırla bir demişiz bakın. Mesela olmaya da bilirmiş satış. Her satışın bir ödemesi vardı. Her satışın tek bir müşterisi vardı. Her satışta bir ile en arasında satış kalemi vardı.
+
+264
+01:13:18,936 --> 01:13:29,716
+Şimdi ben peki satış kalemi ile item'i birbirine nasıl bağlayacağım? Şöyle, biraz uzun oldu ama yukarıdan hani satış kalemleri item'ları içeriyordu ya. İşte böyle record.
+
+265
+01:13:29,716 --> 01:13:35,216
+Salesforce, sale of şeklinde bir bağlantıyla item ve sales line item'ı da birbirine bağladım.
+
+266
+01:13:35,520 --> 01:13:51,820
+Burada ne görüyorum ben şimdi? Aslında bir problem uzayı görüyorum ve bu problem uzayında benim işte dükkan gibi, kasa gibi, kasiyer gibi, müşteri gibi, satış gibi, muhasebeci gibi, ürün tanımı gibi kavramlarım olduğunu görüyorum.
+
+267
+01:13:52,560 --> 01:14:03,520
+Sonrasında bu kavramların hangilerinin birbirleriyle bağlantılı olduğunu, birbirleriyle ilişki halinde olduklarını yine senaryolardan yola çıkarak buluyorum ve görüyorum.
+
+268
+01:14:03,520 --> 01:14:22,360
+Ve bununla birlikte çoğullamalarını görüyorum. Yani işte hangisi kaç tane şey yapar? Bir muhasebeci en tane satışın kaydını tutar gibi böyle bağlantılarımın da çoğullamalarını gösteriyorum.
+
+269
+01:14:31,520 --> 01:14:52,440
+Bu dünyayı, kavramlarını, gerçek dünyayı, kavramları ile diyeyim daha doğru olsun, bir şekilde resmetmeye çalışıyorum. Yani bunlar nelerdir bu kavramlar ve bu kavramların aralarındaki bağlantılar yani aralarındaki ilişkiler nelerdir? Bunların resmini çizmeye çalışıyorum aslına bakarsanız.
+
+270
+01:14:59,520 --> 01:15:13,360
+Gerçekleştirme aşamasında bizim için gereksiz sınıflar var demiştik. Mesela buradaki muhasebeci satış için şu anda belki gerekmiyordu ama başka senaryoları da okuduğumuzda bunun mutlaka olması gerektiğini gördük.
+
+271
+01:15:13,360 --> 01:15:24,240
+Onun kayıtlarıyla ilgili başka belki sorumluluklar olduğunu gördük. O yüzden bütün uzayımda bunu da buraya ekleme ihtiyacı hissettim diyebilirim.
+
+272
+01:15:24,564 --> 01:15:33,584
+Bu şekilde bütün senaryoların üzerinden geçersiniz ve bulabildiğiniz kavramları ve aralarındaki ilişkileri belirtirsiniz.
+
+273
+01:15:34,284 --> 01:15:39,924
+Çoğullamalarını da ortaya koyarsınız. Sonrasında bir daha üzerinden geçersiniz senaryolarınızın.
+
+274
+01:15:40,324 --> 01:15:46,684
+Atladığınız bir şey var mı? Eksik kalan var mı? Ya da yanlış olarak belki modellediğiniz bir şeyler var mı?
+
+275
+01:15:47,104 --> 01:15:51,824
+Birlikte senaryoları üstüne koya koya gittiğinizde bunu daha rahat anlayabilirsiniz tabii ki.
+
+276
+01:15:52,564 --> 01:16:16,604
+Böyle bir iterasyon, iki iterasyon, üç iterasyon, belki dört iterasyon tekrar tekrar bakarak buradaki analiz modelinizi, yani kavramsal modelinizi ya da kavramsal sınıflarınızı düzgün bir şekilde, mümkün olduğunca gerçek hayatı yansıtacak şekilde, senaryolardaki akışları gösterecek şekilde resmetmeye çalışırız.
+
+277
+01:16:20,564 --> 01:16:30,784
+Bir diagramı. Teknik olmayan birisine de göstersem bir şeyler anlayabilir. Ha evet bu kavramlar var. Ha evet bu kavramlar. En fazla belki yıldız ne demek diye sorar.
+
+278
+01:16:30,784 --> 01:16:44,043
+İşte en demek. Bir ya da en tane ilişkisi olabilir. Ha tamam diyebilir. Belki düzeltebilir. Ya olur mu diyebilir. İşte bizim kasalarımızda mesela iki kasiyer çalışıyor atıyorum diyebilir.
+
+279
+01:16:44,787 --> 01:17:11,787
+Ben aslında ödemeyi tek çeşit almıyorum, aynı anda birkaç çeşit ödeme alabiliyorum diyebilir. O zaman burası belki değişecek. Payment'ın da çeşitleri olacak. Kredi kartı ödemesi, nakit ödeme, çekle ödeme, kuponla ödeme atıyorum şu anda. Bir sürü farklı farklı ödeme olabilir. Demek ki bunun özelleşmiş halleri olabilir. O zaman ne yapacağım mesela ben buraya böyle bir şey olsaydı hemen gelir. Şuraya bir tane genelleştirme ilişkisi koyardım.
+
+280
+01:17:12,787 --> 01:17:29,147
+Şöyle, ondan sonra işte cash derdim, cash payment, yanlış oldu, şöyle yapalım, cash payment, P'si büyük olsun, tamam mı? İdare edin.
+
+281
+01:17:29,147 --> 01:17:38,707
+Şöyle bir tane sınıf yapardım, ondan sonra işte credit card payment yapardım, şöyle yapalım.
+
+282
+01:17:39,315 --> 01:17:41,935
+Ondan sonra işte kupon payment yapardım.
+
+283
+01:17:47,296 --> 01:17:51,415
+Bakın, böyle modelimi biraz daha güncelleyebilirdim.
+
+284
+01:17:51,796 --> 01:17:56,595
+Bunları açığız. Bunları da eklemeye, bu modeli aslında biraz da onun için görselleştiriyoruz.
+
+285
+01:17:56,956 --> 01:18:03,735
+Bunları da yapmaya açık olmak için ya da atladığımız yerler varsa bunları eklemek ya da yanlış fazla bulduklarımız varsa çıkartmak için.
+
+286
+01:18:04,608 --> 01:18:29,188
+Bunu teknik bir adama gösterdiğinizde, yani mesela bir yazılımcının önüne bunu koyduğunuzda da, burada bir hemen kafasında şeyler oluşmaya başlar. Ben bunu şöyle yaparım, şu sınıf şöyle. Zaten çoğu bitmiş. Ama şurada şunlar eksik. Ben bunu böyle yapmak için, mesela şu kayıtları tutmak için, burada bilmem ne bilmem ne sınıflarına da ihtiyaç duyarım. Oradan bilmem ne şeyinden okuyan, bir veritabanına yazan.
+
+287
+01:18:29,619 --> 01:18:34,780
+Bir şeylere ihtiyaç duyarım deyip hemen buralara başka yazılım sınıfları eklemeye başlarım.
+
+288
+01:18:34,780 --> 01:18:38,780
+Bu bağlantı aslında...
+
+289
+01:18:43,188 --> 01:18:49,327
+Şöyle başka sınıflarla yapılması gerekir falan diye böyle hemen ilaveler yapabilir gördüğünüz gibi.
+
+290
+01:18:49,327 --> 01:19:07,327
+Yani hem teknik tarafa hem de teknik olmayan tarafa konuşmamızı sağlayan aradaki geçişi, dönüşümü ya da işte çeviriyi yapmamızı ve iki tarafı da bir yere kadar memnun edecek, ortak payda da buluşturacak bir diagram ortaya çıkartmaya çalışırız.
+
+291
+01:19:08,327 --> 01:19:11,188
+Yetti mi, bitti mi? Hayır. Şimdiye kadar ne yapalım?
+
+292
+01:19:11,188 --> 01:19:12,807
+Kavramları belirledik.
+
+293
+01:19:13,395 --> 01:19:19,456
+Kavramların bağlantılarını belirledik, çoğullamaların göstermeleri gerektiğinden bahsettik.
+
+294
+01:19:19,895 --> 01:19:21,095
+Geriye bir şey daha kaldı.
+
+295
+01:19:21,615 --> 01:19:27,915
+Son noktamız ya da son belirleyeceğimiz, bulacağımız kısımda özelliklerin belirlenmesi olacak.
+
+296
+01:19:28,175 --> 01:19:34,296
+Yani özellik, nitelik, öz nitelik bunların hepsi kullanılabiliyor biliyorsunuz farklı kaynaklarda.
+
+297
+01:19:34,735 --> 01:19:36,636
+Attribute dediğimiz kavram aslında.
+
+298
+01:19:37,415 --> 01:19:38,796
+Şimdi bu nedir?
+
+299
+01:19:38,796 --> 01:19:41,376
+Aslında bir nesnenin veri depoları.
+
+300
+01:19:41,395 --> 01:19:45,755
+Yani nesneye özgü değer alabilen verilerine özellik adını veriyoruz.
+
+301
+01:19:46,095 --> 01:19:50,255
+Bir nesne yönelik çözümlemede özelliklere verdiğimiz isim.
+
+302
+01:19:51,136 --> 01:20:00,255
+Tabii ki burada yine incelediğimiz senaryolardaki nitelikleri bulmalıyız ve bunlara mümkünse basit veri tipleriyle ifade etmemiz gerekir.
+
+303
+01:20:00,255 --> 01:20:03,255
+Yani eğer bir birimi varsa...
+
+304
+01:20:03,539 --> 01:20:22,799
+Büyük bir ihtimalle o da başka bir sınıftır, başka bir kavramdır. Yani sizin mesela para gibi bir sınıfınızın, mesela currency gibi bir kavramınızın olması gerekir. Onu aslında o cinsten ifade etmelisiniz. Yani kavramı tanıtmadan, kavramı ortaya koymadan onu kullanmanız ya da diagramınızda barındırmanız da doğru olmaz.
+
+305
+01:20:29,876 --> 01:20:46,796
+Bu yüzden birden fazla alan mesela telefon numarası at soyat bir arada tek bir özellik gibi duruyor olabilir. Fakat bu aslında gördüğünüz gibi birden fazla özellik taşıyor. Demek ki bunun kendine has özellikleri var. Bu büyük bir ihtimalle ayrı bir sınıf olarak modellenmesi gerekli.
+
+306
+01:20:46,796 --> 01:20:56,496
+Bir işlem yapıyorsa bu da başka bir sınıftır. İşte kredi kartı ve doğrulama. Doğrulama büyük bir ihtimalle başka bir sınıfın işi olacaktır.
+
+307
+01:20:57,876 --> 01:21:25,636
+Kendi nitelikleri varsa, mesela bir fiyat var ama fiyatın geçerlik tarihi var diyelim. Fiyat nerede vardı? İşte item da vardı hatırlayalım. Itemların şey, pardon, product specification da vardı. Değil mi? Şey vardı. İşte bu ürünün tutarı nedir diye bir alan tutuyoruz. Bu alan iyi güzel de mesela bunun geçerlik tarihi var dediğimde o zaman aslında fiyat da hemen buradan çıkartılıp kenara şöyle
+
+308
+01:21:25,876 --> 01:21:42,396
+Ayrı bir şey olarak, hatta şöyle içine yazacak olursak, şöyle işte ne bileyim price olacak. Ondan sonra içinde de işte ne bileyim valid date gibi bir şey olacak.
+
+309
+01:21:49,391 --> 01:22:09,891
+Böyle kesişmesi sevilmez ama şimdilik idare edin. Şöyle çizeyim. Normalde bunu şuraya falan çizsem daha iyi olurdu. Bu da böyle işte mesela buraya da ne bileyim describes falan gibi bir şey yazıp şöyle tabii bu.
+
+310
+01:22:10,387 --> 01:22:37,927
+Çok yakın oldu. Böyle bir, tabii birini, bir işte bir bir de yazabiliriz oralara, onu da elle yazayım. Bir tarafına bir, bir tarafına da bir yazdık diyelim. Bakın ne oldu? Hemen, ben aslında orada birleşik bir kavram vardı. Kendi özelliği olan, bunun içinde fiyat demiştim. Ya da bunun içinde fiyat demiştim. Hemen onu ayrı bir kavramsal sınıf olarak modelledim. Kendi özelliğini buraya belirttim. Ve onu da ilgili olan sınıfla bağladım, bağlantısını da gösterdim.
+
+311
+01:22:38,387 --> 01:22:40,347
+Böyle modeliniz büyüyebilir.
+
+312
+01:22:40,547 --> 01:22:42,067
+Tabii tamamen probleme özel.
+
+313
+01:22:42,227 --> 01:22:44,247
+Yani bu olabilir, olmaya da bilir.
+
+314
+01:22:45,047 --> 01:22:47,448
+Tamamen size kalmış ya da probleme kalmış.
+
+315
+01:22:47,907 --> 01:22:49,067
+Onu tekrar belirteyim.
+
+316
+01:22:49,507 --> 01:22:50,507
+Belirtmekte fayda var.
+
+317
+01:22:50,827 --> 01:22:52,487
+Mesela kasiyer diyelim adı var.
+
+318
+01:22:52,587 --> 01:22:54,087
+Kasiyer'in bir de kasası var demişiz.
+
+319
+01:22:54,147 --> 01:22:56,907
+Bu kasa zaten büyük bir ihtimalle kendine has özellikleri var.
+
+320
+01:22:56,907 --> 01:23:01,407
+Ve bir ay önceki fiyat örneğinde olduğu gibi, şuradaki fiyat örneğinde olduğu gibi.
+
+321
+01:23:02,100 --> 01:23:13,100
+Ben esasen burada şuradaki karmaşık öz niteliği ya da özelliği alıp şurada başka bir şey olarak...
+
+322
+01:23:13,779 --> 01:23:29,099
+Nesne olarak modellemeliyim ve aradaki bağlantıyı şurada gördüğünüz gibi kurmalıyım, tanımını yapmalıyım, çoğullamalarını koymalıyım. Bunları yaptığımızda daha doğru bir kavramsal modelleme yapmış oluruz.
+
+323
+01:23:41,235 --> 01:23:51,716
+modelleneceklerdir ve sizin uzayınızda, problem uzayınızda yer alacaklardır. Bunları da belirlemek önemli.
+
+324
+01:23:51,716 --> 01:23:55,716
+Şimdi bu özelliklerde bir...
+
+325
+01:23:56,787 --> 01:24:14,047
+İlave daha yapalım ya da bir detaylı elinizde bilgi varsa, yani analiz yaparken kavramsal sınıflarınızın öz nitelikleri hakkında detaylı bilgi sahibiyseniz bunları
+
+326
+01:24:14,560 --> 01:24:32,180
+Tasarıma yol göstersin, tasarıma kaynak olsun diye burada belirtebilirsiniz. Neresi burası? Analiz modeli. Normalde bu kadar detay çok fazla burada söylenmez ya da söylenmesi beklenmez. Çünkü biz burada problemi modellemeye çalışıyoruz.
+
+327
+01:24:32,180 --> 01:24:42,560
+Fakat elinizde eğer şey varsa, bunlarla ilgili kesin bilgiler varsa ve bunu yansıtmak istiyorsanız ekleyebilirsiniz. Hani bu da çok bir problem.
+
+328
+01:24:42,560 --> 01:24:47,960
+Bu problem yaratmayacaktır. Neler olabilir bunlar? Mesela görünürlükler. Bakın.
+
+329
+01:24:48,851 --> 01:25:15,291
+Burada ikisinin başında da eksi var. Bunlar nedir? İşte private attribute. Yani bunlar dışarıya sunulan, verilen ve gösterilen öz netelikler değildir. Bunlar benim tamamen içimde, iç yapılarımda ya da kendi metotlarımda kullandığım ya da ancak metotlarım üzerinden bir şekilde insanlara sunabileceğim özelliklerimdir diye bunlar hani böyle private features ya da private attributes olarak karşımıza çıkar.
+
+330
+01:25:16,851 --> 01:25:24,851
+Bakın burada mesela date ve money demişiz. Bunu normalde yapmamamız gerektiğini söyledik. Bazen bunları...
+
+331
+01:25:24,916 --> 01:25:37,195
+Ayrı bir yerde, bir kenarda şöyle gösterebilirsiniz ve sürekli her şeyi de birbirine bağlayıp, hani dedim ya şuradaki olduğu gibi mümkün olduğunca da sade tutmakta fayda var.
+
+332
+01:25:37,876 --> 01:25:46,695
+Aman şurada para, aman burada para, bilmem nereye bağla, oraya bağla, buraya bağla göstermemek için biraz daha basitleştirmek adına diagramı.
+
+333
+01:25:47,283 --> 01:26:09,443
+Bu şekilde kullanabilirsiniz. Fakat dediğim gibi bu bir yerde date nesnesini göstermeniz lazım. Bir yerde money nesnesini göstermeniz lazım. Fakat bunların tiplerini özellikle söyleyebilirsiniz. Yani bu bir date klasından olacaktır. Buradaki total özelliği money cinsinden olacaktır diye söyleyebilirsiniz. Money nesnesi de belki currency'si bilmem nesi de olacaktır.
+
+334
+01:26:10,387 --> 01:26:30,144
+Başka bölü koyabilirsiniz, mesela görebilirsiniz başında. Bu ne demektir? Bu da türetilmiş nitelik demektir, türetilmiş özellik demektir. Bu hesaplanmış bir özelliktir. Ne demek bu? Başka özelliklerimi ya da başka hesapladığım...
+
+335
+01:26:30,144 --> 01:26:47,604
+Yani direkt olarak elimde olan değil ancak hesapla elde edebildiğim bir öz nitelik ya da özellik demektir. Başında şöyle bir bölü görürseniz bu da derived attribute adına ya da anlamına gelir. Başka artı koyabilirsiniz bu da public visibility demektir.
+
+336
+01:26:51,091 --> 01:27:01,431
+Şöyle stereotip'lar verebilirsiniz, özel tanımlamalar, tip tanımlamaları. Mesela burada read only demişim. Ne demiş oluyorum? Ben bunu aslında sabit tanımladım.
+
+337
+01:27:02,032 --> 01:27:16,612
+Hani bir dilde final dersiniz, başka bir dilde const dersiniz, başka bir dilde başka bir şey dersiniz. O yüzden hani UML'de bunun daha böyle jenerik olması adında burada stereotip'lar kullanılır ve read only mesela buradaki ifade.
+
+338
+01:27:16,612 --> 01:27:19,091
+Ne demek bu? Bu sabit bir değerdir.
+
+339
+01:27:19,091 --> 01:27:46,831
+değiştirilemez anlamını taşır. İmplementasyonda ben bunun sabit olarak tanımlanması gerektiğini anlarım bu analiz modeline bakarak. Bir de publicmiş, herkes görebiliyormuş. Tipi de realmiş, bir gerçek sayı tipindeymiş. Değeri de 3.14'müş mesela. Bu ne demek? Herkes her zaman piye math.py diye erişebilir. Math.py diye eriştiğinde de alacağı değer 3.14 olacaktır demiş oluruz. Hani şu anda analiz modelindeyiz. Fakat yine de
+
+340
+01:27:47,091 --> 01:27:53,671
+Bunu da şimdiden ekleyebiliriz eğer biliyorsak ve bunu gerçekten söylemek, göstermek, yönlendirmek istiyorsak.
+
+341
+01:27:58,871 --> 01:28:09,671
+Seçime bağlı öz nitelikler olabilir. Burada da o zaman şöyle çoğullamaları gösterebilirsiniz. Mesela 0-1 ne demek istiyorum? Ben bir kişi kavramı tanımladım.
+
+342
+01:28:12,020 --> 01:28:39,420
+Bu tanımladığım kişi kavramının bir ilk adı var, bir orta adı var, bir de son adı var, soy adı var diyelim. Last name son ad ama soy ad desek daha doğru. Ama middle name opsiyonel. Yani middle name'i tanımlamayabilirsiniz. Middle name tanımlamasak da ben çalışırım, sorun etmem bunun şeklindeki detay tanımınızı da verebilirsiniz. Bunlar yine tasarıma kaynak olacak. Diğer detay, attribute.
+
+343
+01:28:40,020 --> 01:28:41,080
+Bu konularla ilgili bilgiler.
+
+344
+01:28:44,115 --> 01:28:57,136
+İlla olacak diye bir şey yoktu tekrar söylediğim gibi ama eğer görüyorsanız ve eğer mutlaka göstermek istiyorsanız bu detayları da kavramsal dahi olsa sınıf diagramınızda barındırabilirsiniz.
+
+345
+01:28:57,895 --> 01:29:11,176
+Peki nereye vardık? Önce ne yaptık? Senaryolardan yola çıktık. Şuradaki sınıflarımızı aday sınıflardan süzerek bulduk. Sonrasında bunların aralarındaki bağlantıları keşfettik.
+
+346
+01:29:11,568 --> 01:29:16,967
+Mümkün olunca sade ve tasarıma yönelik bağlantılar bulmaya özen gösterdik.
+
+347
+01:29:17,948 --> 01:29:25,488
+Sonrasında bunların çoğullamalarını yine görebildiğimiz, anlayabildiğimiz ya da bilebildiğimiz kadarıyla ifade etmeye çalıştık.
+
+348
+01:29:26,668 --> 01:29:39,448
+Bunları da yaptıktan sonra son olarak özellikleri, yani görebildiğimiz analiz aşamasında bu uzaydayken görebildiğimiz bütün özelliklerimizi belirttik.
+
+349
+01:29:39,568 --> 01:29:52,148
+Varsa eğer tasarıma yönelik çeşitli tavsiyelerimiz ya da yönlendirmelerimiz bunları da yine modelin içinde söyleyebileceğimizi belirttik.
+
+350
+01:29:52,148 --> 01:29:59,448
+Nihayetinde mesela deminki senaryodan yola çıkarak bir satış senaryosuna baktığımızda
+
+351
+01:30:00,000 --> 01:30:21,560
+Ben problemi bu şekilde modelledim diyebilirim. Ne var burada? İlave olarak biraz öncekine biraz daha büyük çizilmiş hali tabii ki. Bir de biraz daha net koyulmuş hali. İlave olarak işte şeyler gelmiş. Mesela product specification içinde, ürün tanımlarında ID'si var, tanımı var, fiyatı var.
+
+352
+01:30:22,868 --> 01:30:50,708
+Tekrar dediğim gibi, fiyat kompozit bir yapı olabilir. Bu ayrı bir nesneyse, onu ayrı bir nesne olarak modelleyebilirim. Ya da bunu price money diye burada mutlaka belirtebilirim. Kasaların ID'leri benim için önemliymiş. Kasiyerin ID'si benim için önemliymiş. Ödemelerin miktarını görmüşüm. Çünkü zaten senaryoda da bunlar hatırlarsanız geçiyordu. Dükkanımın adının ve adresinin olması önemliymiş. Başka?
+
+353
+01:30:50,868 --> 01:31:01,148
+Ürün satış kalemlerinde, satış satırlarında da miktar önemliymiş. Ben bunu aslında kullanacağım. Mesela nerede kullanacağım?
+
+354
+01:31:01,148 --> 01:31:17,008
+Tabii ki buradan gelen item product specification'dan gelen price bilgisini item üzerinden aslında şuraya taşımış olacağım. Neden? Çünkü bağlantıdalar ve sonrasında burada işte mesela bir total hesaplanacak.
+
+355
+01:31:18,868 --> 01:31:46,868
+En tane bu nesneden var. En tane nesnen içinde de belirli miktarda, belirli fiyatta ürün var. Bunların hepsini aslında bir şekilde buradaki totalı hesaplayabilmek için, şurada başındaki bölüden de bunu anlıyorum, hesaplayabilmek için ihtiyacım var. Ben bunları yapmak için, senaryolardaki söylenenleri yerine getirmek için kullanmam gerekenler, kullanmam gereken özellikler neyse, onları da burada belirtiyorum.
+
+356
+01:31:46,868 --> 01:31:50,808
+Yani onları burada görmemiz doğru olacaktır.
+
+357
+01:31:51,848 --> 01:31:53,048
+Görmezsek ne olur?
+
+358
+01:31:53,988 --> 01:31:56,848
+Hoca puan kırar diye özetleyebiliriz.
+
+359
+01:31:57,168 --> 01:31:59,068
+Şöyle olur, modeliniz eksik kalabilir.
+
+360
+01:31:59,628 --> 01:32:07,548
+İlla ki her seferinde tam doğru, düzgün ve her şeyiyle böyle hani dört başı mağrumu denir ne?
+
+361
+01:32:07,928 --> 01:32:10,708
+O şekilde bir model bulmanız olası değil.
+
+362
+01:32:11,148 --> 01:32:12,868
+Bu yapa yapa alışılacak bir şey.
+
+363
+01:32:13,844 --> 01:32:32,423
+Ne kadar yapsanız bile hala yine farklı görüşler, farklı analistler, farklı kavram çıktıları elde edebilir. Burada tek bir doğru yok maalesef. Birden fazla çözüm de aynı problemi çözebilir, aynı problemi modelleyebilir.
+
+364
+01:32:33,344 --> 01:32:41,844
+Varsayımlarınız, gördükleriniz, görmedikleriniz ya da sisteminizin içinde bıraktıklarınız ya da dışına attıklarınız bile bu varsayımlar bile modeliniz.
+
+365
+01:32:41,844 --> 01:32:43,543
+doğal olarak değiştirecektir.
+
+366
+01:32:43,864 --> 01:32:45,743
+Şuradaki mesela muhasebeci örneğinden
+
+367
+01:32:45,743 --> 01:32:47,564
+giderek belki bir başkası,
+
+368
+01:32:47,703 --> 01:32:49,604
+bir başka arkadaş, ya bu benim
+
+369
+01:32:49,604 --> 01:32:51,444
+benim sistemini ya da
+
+370
+01:32:51,444 --> 01:32:54,024
+implementasyonumu ilgilendirmiyor
+
+371
+01:32:54,024 --> 01:32:56,123
+deyip şu kısmı
+
+372
+01:32:56,123 --> 01:32:57,384
+mesela komple atabilir.
+
+373
+01:32:58,384 --> 01:32:59,064
+Şöyle.
+
+374
+01:32:59,823 --> 01:33:01,003
+Yani bu da olası.
+
+375
+01:33:01,484 --> 01:33:02,804
+Ya da böyle yapmayalım da.
+
+376
+01:33:03,423 --> 01:33:05,484
+Dur bakayım nasıl yapabiliriz? Şöyle yapalım.
+
+377
+01:33:07,923 --> 01:33:08,764
+Hop.
+
+378
+01:33:12,148 --> 01:33:12,947
+Şöyle yapayım.
+
+379
+01:33:17,140 --> 01:33:37,760
+Şurayı da boyayalım. Tamam. İşte böyle. Şimdi bu yanlış mı? Hayır, değil. Ya da birisi ya bu müşteri başka sadece bir satışta adı geçiyor kadar başka hiçbir şey yapmıyor. Boş ver bunda modelimizi çok karıştırıyor diyebilir. Kasiyerin yaptığı hiçbir iş yok ki. Sadece ürün okutuyor, tuşa basıyor diyebilir.
+
+380
+01:33:38,420 --> 01:34:02,380
+Ne oldu? Ben burada da başka bir tane model çıkarttım size. Biraz önceki modelden farklı. Ya da birisi diyebilir, yok yok kasiyer önemli, kasiyer kalsın diyebilir. Ya da yok yok kalmasın diyebilir. Bunların hepsi varsayımlar altında doğru olabilir, doğru sayılabilir ya da sayılamaz. Ama ben biliyorsam ki senaryolarda böyle kasiyerin yaptığı bazı sorumluluklar var.
+
+381
+01:34:02,931 --> 01:34:22,372
+Belli böyle ana roller üstleniyor. Yani böyle aktör olarak rol alıyor. O zaman ben bunu modelimde aslında barındırmalıyım. Ya da müşterinin rolleri var. Mesela ödemeyi yapıyor, bir şeyler yapıyor. Belki hani ürünleri alıyor, koyuyor. Fiziki temasla bir şeyler yaptığını biliyoruz. O zaman benim bunu burada barındırmam daha doğru olacaktır.
+
+382
+01:34:22,372 --> 01:34:30,431
+Yine muhasebe sistemiyle ya da bir şeyle konuşup da vergilerle alakalı bir hesaplar, kitaplar yapmam gerekiyor olabilir.
+
+383
+01:34:30,931 --> 01:34:35,711
+O zaman benim bunları burada göstermem daha doğru olacaktır.
+
+384
+01:34:35,711 --> 01:34:52,271
+Yani gördüğünüz detayı gerekliyse kavramsal modelinizde barındırmak zorundasınız diyerek bu modeli ya da bu kavramsal problem uzayının modellenmesinin sonuna gelelim.
+
+385
+01:34:52,271 --> 01:34:54,771
+Şimdi ne yaptık?
+
+386
+01:34:55,188 --> 01:35:23,188
+Use case'lerden, yani kullanım senaryolarından yola çıktık ve karşımızda bir tane sınıf diyagramı oluştu. Bu sınıf diyagramı dediğim gibi hem iş birimi ya da müşteri tarafına bakın ben böyle kavramları böyle gördüm, böyle modelledim diye gösterebileceğiniz hem de yazılım tarafına döndüğünüzde, hani IT'ye geri döndüğünüzde işte arkadaşlar analiz modelimiz budur, problem uzayının modeli budur ya da işte gereksinim analizinin sonucunda ben bu kavramsal sınıf diyagramı...
+
+387
+01:35:23,188 --> 01:35:41,188
+Geksinim analizi, gereksinim analizi yapıyorsam ya da nesneye yönelik bir analiz ve tasarım gerçekleştiriyorsam,
+
+388
+01:35:42,036 --> 01:35:47,296
+Önce bir use case'lerden başlamalıyım, use case'leri koymalıyım, use case diyagramımı da çizmeliyim.
+
+389
+01:35:47,756 --> 01:35:59,036
+Sonrasında da bugün konuştuğumuz, öğrendiğimiz yolu yorduğumu kullanarak, isimler, ispatlar ve fiiller diye giderek...
+
+390
+01:35:59,311 --> 01:36:08,811
+Bunların neler, kavram öz niteliklerini ortaya koymalıyım ve bunu yaparken de bir UML sınıf diagramı kullanmalıyım.
+
+391
+01:36:08,811 --> 01:36:26,652
+Burada ne yok? Gördüğünüz gibi şey yok. Şu işte şeylerin üçüncü gözü, pardon beyazda kalmış, siyah nerede? Şöyle, aslında bunu buradan çizmeseydik daha iyiydi. Şuradaki üçüncü gözü yok.
+
+392
+01:36:27,155 --> 01:36:53,095
+Bunun üçüncü gözü yok. Değil mi? Şunun yok. Bunun yok. Metotlar yok, özetle. Davranışlar yok. Neden yok davranışlar? Çünkü ben burada daha ne olduklarını bulmaya çalışıyorum. Yani kavramlar neler? Bağlantıları neler? İlişkileri neler? Bakın hep ne, ne, ne diye gidiyorum. Bunlarsa nasıllar? Mesela şurada şunun hesaplanacağını söyledim ya.
+
+393
+01:36:53,492 --> 01:37:04,892
+Bunun işte getTotal diye bir tane metot olacak aslında şurada. Fakat bunu daha bilmiyorum. Çünkü getTotal işin nasıl yapılacağının detayı. Yani benim onun için de bir algoritma oluşturmam lazım.
+
+394
+01:37:05,492 --> 01:37:18,052
+Algoritmanın çalışması için de benim gidip birilerine bir şeyler sormam. Hani get bilmem ne, get bilmem ne diye bir şeyler belki döngü içinde. For each line item getTotal gibi bir şey yapmam lazım. GetSubTotal gibi.
+
+395
+01:37:21,492 --> 01:37:49,472
+ihtiyaç duyacağım. Tamam. Bunlar işin nasıl yapılacağının detayları. Ben burada toplam tutarı hesaplamak için her satırın alt toplamlarına ihtiyaç duyarım. Alt toplamları hesaplamak için işte get price diye şuradan şey alalım. Ben bunların fiyatlarını alabiliyor olmam lazım. Bakın ne oldu? Çat çat çat üç tane metot koydum. Tek bir hesap işinin yapılabilmesi için. İşte bunlar nasıl yapılacağını. Belki de ben bunu böyle yapmayacağım.
+
+396
+01:37:49,492 --> 01:38:04,812
+Buraya başka bir şey koyacağım. Yani bu başka bir yerden, belki bir liste üzerinden bir şeyleri süzerek alacak. Bilmiyorum. Şu anda o nasıl yapılacağıyla alakalı detayları şu anda bilmiyorum, ilgilenmiyorum. Şu anda ilgilenmek de istemiyorum özetle diyebiliriz.
+
+397
+01:38:05,452 --> 01:38:17,492
+Evet, işte bu şekilde olmayanları tekrar sildim, tamam mı? Çıkarttım. Yani metot ya da davranış ya da nasıl sorusunun cevabı yok. Ama bunun dışında kalan nedir ya bu problem? Bu problem uzayında ne?
+
+398
+01:38:17,492 --> 01:38:29,172
+Neler var? Bu problem uzayındaki kavramlar birbiriyle nasıl bağlantılı acaba? Ne kadar bağlantılı acaba? Sorularının hepsini burada cevaplarını görsel olarak alabiliyorum.
+
+399
+01:38:30,072 --> 01:38:38,352
+Benim için şu anda yeterli. Yani böyle bir modeli ifade etmek için problem modelini, bu sınıf diagramı yeterli olacaktır.
+
+400
+01:38:41,427 --> 01:38:53,128
+Bir de böyle hani iyice kafamızda otursun diye son olarak bu model ve uzaylılar arasındaki bağlantıyı bağıntıyı bir şekilde resmetmeye çalıştım.
+
+401
+01:38:53,128 --> 01:38:58,608
+Şimdi ortada, şurada şöyle şeyle çizelim.
+
+402
+01:38:59,091 --> 01:39:27,091
+Neyle çizelim? More'la çizelim. Şöyle, şu alan benim, bakın, use case modelim. Şurada başında use case model diyor ya. Bu mor alan iş analizi. Yani business requirement'lar. Ne yapıyoruz burada? Aslında biz use case'leri yazıyoruz değil mi? Yani use case'leri. Şimdilik sekans diagramları falanları falanları burada katmadım. Özellikle katmadım. Ama buradaki temel use case'lerim,
+
+403
+01:39:27,091 --> 01:39:39,951
+İlk olarak benim için, şu şeyi aşağıya alayım, toolbox'ı. Benim için ilk olarak yukarıdaki analiz modelimin oluşmasını sağlayacak.
+
+404
+01:39:39,951 --> 01:39:43,591
+Tamam mı? Şuradaki domain object diyor ya, işte bu şunlardan.
+
+405
+01:39:44,307 --> 01:39:58,927
+Bunlar oluşacak. Ben bunları okudup işleyeceğim. İşledikten sonra bir kavramsal model ortaya koyacağım. Diyeceğim ki arkadaşlar, bu problemin modeli budur. Bu problemin çözümü için gereken kavramlar bu şekilde modellenmiştir.
+
+406
+01:40:00,083 --> 01:40:04,463
+Satış, satış kalemi, bilmem ne, ıvır kıvır biraz önce gördük.
+
+407
+01:40:04,963 --> 01:40:15,744
+Sonrasında ne olacak? Bu domain model gelecek şu sol tarafta gördüğünüz ok ile en alttaki, onu da bordo ile boyayalım.
+
+408
+01:40:17,484 --> 01:40:20,384
+Bordo böyle yapınca değişik bir renk oldu, idare edin.
+
+409
+01:40:20,384 --> 01:40:25,224
+Şey, bunu beğenmedim ya. Kırmızıyla mı yapsak?
+
+410
+01:40:26,420 --> 01:40:27,599
+Şimdi daha iyi oldu.
+
+411
+01:40:29,479 --> 01:40:33,199
+Alt tarafta tasarım modeli. Yani tasarım uzayını besleyecek.
+
+412
+01:40:33,199 --> 01:40:39,739
+Ben buradaki kavramsal sınıflarımdan yola çıkarak gerçek yazılım sınıflarımı oluşturacağım.
+
+413
+01:40:40,724 --> 01:40:52,044
+Ki onları da en son aslında şurada gördüğünüz gibi, onu da şöyle şey alalım, şöyle şeyler halinde mesela operasyonlar bilmem ne halinde yapmışım.
+
+414
+01:40:52,044 --> 01:40:55,044
+Ve ben burada sistem gerçek yazılım...
+
+415
+01:40:55,136 --> 01:41:16,456
+nesnelerimi oluşturacağım. Design modelde nereden gelerek? Domain modelden gelerek. Bunları da yine göreceğiz. Aslında mesela sequence diagramlar kullanarak, activity diagramlar kullanarak ifade edeceğim. Bakın mesela kasiyer enter item identifier diyor ya, enter item diye bir metot haline gelecek.
+
+416
+01:41:17,011 --> 01:41:27,411
+Ve bu enter item'ın içinde doğal olarak kasaya, kasiyerin ID'sini, barcode numarasını ve kaç tane olduğunu, 3 tane ChocoPrens diye okutması gerekecek.
+
+417
+01:41:27,491 --> 01:41:29,811
+Yani bunları parametre olarak vermesi gerekecek.
+
+418
+01:41:29,951 --> 01:41:37,091
+Sonra kasa alacak bunları, biliyorum, kavramsal modelimde çünkü kasa ilişkiliydi bu satışla.
+
+419
+01:41:37,091 --> 01:41:39,916
+Ondan sonra işte kasa gelip...
+
+420
+01:41:40,180 --> 01:42:01,540
+Product Catalog'a, ya arkadaş şunun bilgilerini bana ver diyecek. Ondan sonra bilgileri aldı ya, neyi biliyor artık? Mesela adını, sanını, tutarını, vergisini biliyor. Mesela gidip satışa bunları ekleyecek. Diyecek ki, 3 tane çoco prens, ne bileyim işte 2'şer liradan 6 lira.
+
+421
+01:42:08,180 --> 01:42:09,780
+Çocopanelsin Kakaoğlu'su.
+
+422
+01:42:10,355 --> 01:42:38,275
+diye böyle bütün özellikleri de buraya verecek. Onu yapacak, bunu yapacak, bilmem ne yapacak. Bakın burada artık gerçek nesnelerim var. Buradan katalog bir nesne haline gelmiş. Satış bir yazılım nesnesi haline gelmiş. Kasa bir yazılım nesnesi haline gelmiş. Kasanın bir metodu var. Onu bir aktör mesela çağırıyor. Başka birisi mesela kasiyer bunu çağırıyor. Bunu çağırınca bu da kendi içinde gidip oradan şu bilgiyi alıyor, gidip oraya bilmem neyi yazıyor, onu yapıyor, bunu yapıyor, bir sürü iş yapıyor.
+
+423
+01:42:38,355 --> 01:42:50,836
+Farklı nesneler bir arada etkileşime geçerek, şuradaki temel üzerinden, domain modeldeki temel üzerinden etkileşime geçerek gerçekten çalışan bir nesneye yönelik yazılım haline geliyor.
+
+424
+01:42:50,836 --> 01:43:01,487
+Bu tabii tek bir, bakın şuradaki şey, eylem. Bir senaryonun içinde bunlardan birkaç tane olabilir. Demek ki benim pek çok...
+
+425
+01:43:01,488 --> 01:43:07,387
+Her bir sorumluluğum için ayrı bir diagram da şurada çizmem gerekecek.
+
+426
+01:43:07,927 --> 01:43:16,587
+Nihayetinde ben aslında hani use case modeli geri dönecek olursak böyle sistemde çeşitli akış diyagramları, sequence diyagramları da oluşturmuş olacağım.
+
+427
+01:43:17,043 --> 01:43:44,984
+Bu da bir gösterim fakat bunu ben kullanmıyorum, kullanmayacağım kafanız karışmasın diye. O yüzden hani use case modelde şurada biz use case'lerden yola çıkacağız. Use case'lerden yola çıkarak domain modeli oluşturacağız. Domain modelden yola çıkarak tasarım modelini oluşturacağız. Tasarım modeli bir yandan şey use case'ler tabii ki doğal olarak burada yine bizi besleyecek çünkü sorumluluklarımız orada yazıyor. Ve bir yandan da böyle use case modeli de geri çıktı.
+
+428
+01:43:45,043 --> 01:44:08,024
+üretebileceğiz. Sonuçta ben bu süreci işleterek kavramdan çözüme, daha doğrusu şöyle bir iş analizinden kavram oluşturmaya, kavram oluşturmadan çözüm geliştirmeye, çözüm geliştirdikten sonra da bunu kodlamaya, yani gerçekleştirmeye doğru yoluma devam edeceğim.
+
+429
+01:44:10,996 --> 01:44:15,536
+O haftalık, şimdi şunları temizleyelim, söyleyeceklerimiz bu kadar.
+
+430
+01:44:16,036 --> 01:44:33,136
+Ve bu sayede nesneye yönelik bir sistem analizi safhası nasıl gerçekleştirilir, hangi adımlar işletilmelidir, use case'ler nasıl proses edilmelidir, nasıl üzerinden geçerek işlenmelidir ve bunun sonucunda nasıl bir domain model ortaya koyulur,
+
+431
+01:44:33,136 --> 01:44:38,996
+bu domain modelinin kavramsal sınıf diagramında hangi bilgiler yer alır ve bu bilgiler bizim...
+
+432
+01:44:38,996 --> 01:44:42,976
+Zineyi anlatır. Bunları tanımaya, öğrenmeye çalıştık.
+
+433
+01:44:43,615 --> 01:44:56,655
+Şimdi haftaya gelecek dersimize baktığımızda, ara sınavı görüyorum. Ne güzel, harika. Haftaya sınav var. Bilgilendireyim. Program açıklandı değil mi?
+
+434
+01:44:59,836 --> 01:45:04,655
+Okey. Ne zaman bizim sınav? Ben daha bakamadım.
+
+435
+01:45:31,347 --> 01:45:34,748
+Salı. Tamam. Büyük ihtimalle yine ders saatinde.
+
+436
+01:45:36,307 --> 01:46:02,188
+Ara sınavı haftaya bakacağız. Sonra da tasarım aşamasına geçeceğiz ve sistem tasarımında yine böyle hani DFD'lerden ya da veri akış diyagramlarından başlayarak gittiğimizde neler yapıyoruz, neler çıkartmalıyız ve nesneye yönelik devam ediyorsak işte bugün aslında biraz gördüğünüz işte bu sequence diagramlarında nedir, nasıl yapılır, neler yapılmalıdır bunların detaylarını öğreneceğiz.
+
+437
+01:46:04,307 --> 01:46:19,347
+Çıktı tasarımı nedir? Veri yapısı tasarımı nedir? Bu da işte varlık ilişki diagramlarına geri dönüş yapacağız. Ara birim tasarımı nedir? gibi tasarım, farklı tasarım alt başlıklarını da göreceğiz ve buralarda nedere dikkat etmemiz gerektiğini de tartışacağız.
+
+438
+01:46:19,347 --> 01:46:31,828
+Bu şekilde yolumuza daha sonra da gerçekleştirme, test, bakım, devreye alma ve bakım gibi aşamalarla sürecin geri kalanını da dönemin sonuna kadar tamamlamış olacağız.
+
+439
+01:46:32,307 --> 01:46:33,347
+Sorunuz var mı?
+
+440
+01:46:36,007 --> 01:46:39,828
+Gant için önerdiğim program MS Project.
+
+441
+01:46:41,167 --> 01:46:43,627
+Yazayım şuraya. Microsoft Project.
+
+442
+01:46:45,627 --> 01:46:47,728
+Ay, yandı ki şeyti.
+
+443
+01:46:49,408 --> 01:46:49,908
+Bir dakika.
+
+444
+01:46:54,547 --> 01:46:56,188
+Tamam, yazdım.
+
+445
+01:46:57,908 --> 01:47:05,568
+Burada şey silebiliyor muyuz yazdığımız mesajı? Neyse silemiyormuşuz. Okey. Var mı soru? Başka?
+
+446
+01:47:12,115 --> 01:47:12,835
+Sorunuz yok.
+
+447
+01:47:17,652 --> 01:47:23,712
+Peki. O zaman haftaya sınavda görüşürüz diyelim.
+
+448
+01:47:28,467 --> 01:47:32,927
+İyi günler, kendinize iyi bakın. Şimdiden başarılar.

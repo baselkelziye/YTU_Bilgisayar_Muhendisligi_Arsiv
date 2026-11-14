@@ -1,0 +1,515 @@
+1
+00:01:38,579 --> 00:01:41,280
+Merhabalar arkadaşlar. Sesim geliyor mu?
+
+2
+00:01:43,920 --> 00:01:45,099
+Geliyor hocam.
+
+3
+00:01:45,759 --> 00:01:46,340
+Tamamdır.
+
+4
+00:01:48,019 --> 00:01:51,319
+Şimdi biraz daha bekleyelim. 30 kişi bağlanmış gibi gözüküyor.
+
+5
+00:01:52,780 --> 00:01:56,739
+Dersimizde normalde 30 kişi kadar bulunuyor.
+
+6
+00:01:57,560 --> 00:01:58,640
+Onlara bir bakalım.
+
+7
+00:01:58,640 --> 00:02:03,140
+Beğen dersler. En son listeyi bir alalım.
+
+8
+00:02:06,772 --> 00:02:23,752
+En son. Evet, buradan da göreceğiniz gibi yaklaşık tam olarak 90 kişi var. Bir iki dakika daha bekleyelim, ondan sonra dersimize başlayalım arkadaşlar.
+
+9
+00:03:47,219 --> 00:04:09,879
+Evet, merhabalar tekrar arkadaşlar. Şu anda dersimiz 32 kişiye katılmış durumda. Ama normalde 90 kişiyiz. Bu hafta temel bir girişi yaparız. Ondan sonra önümüzdeki haftada gerçek manada derslerimize başlamış oluruz arkadaşlar.
+
+10
+00:04:11,027 --> 00:04:39,028
+İsmim Gökhan Bilgin. Az çok tanıyorsunuzdur. Lisansta elektronik ve lojik devreler dersiyle erken yüksek lisans ve doktora seviyesinde sinyal işleme, görüntü işleme, yapay zeka uygulamaları, yapay öğrenme, örüntü tanıma, veri madenciliği ve de veri mühendisliği konuları ve bunların akademik tarafta daha çok...
+
+11
+00:04:39,028 --> 00:05:01,448
+Bu da biyomedikal uygulamaları, biyomedikal işaret ve görüntü uygulamaları ve de uzaktan algılamayla alakalı çalışma arıyoruz. Bunun haricinde görüntü işleme ile alakalı olarak, veri mühendisliği ile alakalı olarak, müşteri davranışlarından ve bölüklemesinden tutun da zaman serileri analizlerine kadar.
+
+12
+00:05:02,100 --> 00:05:15,620
+Geniş bir spektrumda çalışıyorum arkadaşlar. Şimdi sizlere ders hakkında genel bir bilgi vermek amacıyla bu dersi başlatıyorum. Biliyorsunuz ekle kayıtlar hala sürüyor.
+
+13
+00:05:15,620 --> 00:05:25,939
+Şimdi elektronik devreler dersimiz 2 saat teorik kısım var, 2 saatte uygulama kısım var. Uygulamalarla alakalı olarak arkadaşlar,
+
+14
+00:05:26,516 --> 00:05:47,676
+Nisan ayını bekleyin diyorlar ama en azından biz bir, şimdi asistan arkadaşlar da görevlendirilecek bu derste. İki asistan arkadaşımız olacak. Emre Parlak ve Ahmet Burak Özden arkadaşlarımız yardımcı olacaklar. Laboratuvar gruplarını onlar düzenleyecekler.
+
+15
+00:05:48,115 --> 00:06:16,115
+Onlar sizlere bu konuda bilgilendirme yapacaklardı. Büyük ihtimalle sizlere Google Classroom üzerinde yeniden bu duyuruları yapabilmek, ondan sonra herhangi bir şekilde online yıldız et, tr'de bağlantı koptuğunda bizlerin de en azından sizlere link göndermesi amacıyla alternatif bir sistem olarak Classroom.
+
+16
+00:06:16,115 --> 00:06:35,596
+Klaslumada üye olmanızı bekleyeceğiz arkadaşlar. Şimdilik buna üye olmayın. Biz arkadaşlarla bir konuşalım. Şu sınıf kodundan ve de linkleri size göndeririz. Sizler hızlıca bu şeye, Elektronik Devreler Bahar klaslumuna üye olmuş olursunuz arkadaşlar.
+
+17
+00:06:36,627 --> 00:06:50,408
+Dersimizin içeriğinden biraz bahsedecek olursak arkadaşlar, dersimizin temel amacı gördüğünüz gibi temel elektronik devreler olan diyot, ondan sonra transistör, fetler ve opamplı yapıları anlatmak olacak.
+
+18
+00:06:50,408 --> 00:06:59,627
+Burada temel ders kitabımız arkadaşlar, ilk sırada görmüş olduğunuz Elektronik Devreler ve Devre Teorisi kitabı.
+
+19
+00:07:04,627 --> 00:07:26,567
+Temel elektronik bilgisinin oluştuğu için çok farklı kitaplardan, web sitelerinden yararlanabilirsiniz arkadaşlar. Örneğin şurada bir tane şey yapmıştım. Kitaplar var, pdf'ler var internetten bulunabileceğiniz. Elektronik Devreler ve Devre Töjisi. Bolstet'in kitabı. Şöyle biraz daha yaklaştırırsam.
+
+20
+00:07:26,995 --> 00:07:51,696
+Robert Bolstet ve Louis Neshelstin'in kitabı. Çok çeşitli baskıları var. Siz herhangi birini internetten de bulabileceğinizi düşünüyorum. Ayrıca derslerle aklı olarak bu kitaptan alınan slide'ları da sizlerle paylaşacağız arkadaşlar. Dolayısıyla kitaba ihtiyacınız olmayabilir ama pdf'lerde rahatlıkla bulunabiliyor.
+
+21
+00:07:54,995 --> 00:08:07,536
+YouTube'da Electronic Devices Circuits diye yazdığınızda güzel kurslar da var. Alternatif olarak yabancı üniversitelerin anlatımlarından da yararlanabilirsiniz. Aynı şekilde.
+
+22
+00:08:08,915 --> 00:08:20,336
+Dersimizle alakalı olarak temel bilgileri verelim. Derste şöyle bir yıl içi diyelim buraya. Yıl içi ve de yıl sonu.
+
+23
+00:08:22,132 --> 00:08:36,291
+Yıl içimiz arkadaşlar %60 notumuzu belirleyecek. Yıl sonu ise %40'ı belirleyecek. Böyle bölersek şayet. Yıl içinde bizim notlarımız neler olacak?
+
+24
+00:08:36,291 --> 00:08:46,731
+Biliyorsunuz normalde 8. hafta bizim için sınav haftası olacak ama biz bu hafta yapmayacağız. Biraz daha konuların olgunlaşmasını bekleyeceğiz.
+
+25
+00:08:50,131 --> 00:09:08,511
+Veya 12. hafta şeklinde olacaktır. Onu daha sonra duyurusunu yaparız. Bu %60 notu neler belirleyecek? Bir tane vizemiz olacak. Yani yıl içerisinde bir tane vize olacak. Bir tane diyelim buraya. Bu da 11 veya 12. haftada olacak.
+
+26
+00:09:13,683 --> 00:09:34,144
+Aynı şekilde laboratuvarlar. Şimdi burada bir belirsizlik var tabii. Online laboratuvar tecrübemiz var pandemiden dolayı. Online laboratuvarlar yapabiliriz. Bu nasıl olacak diyecek olursanız simülasyon programları üzerinden size verilen devreleri gerçekleştirip çıkları almanız şeklinde.
+
+27
+00:09:34,576 --> 00:09:59,796
+Laboratuvar kısmı arkadaşlar, laboratuvar asistanları tarafından yönetilecek. Biz bunları karışmıyoruz. Onlar grupları oluşturacaklar, lab duyurularını yapacaklar demin size bahsettiğim classroomlar üzerinden. Aynı şekilde bizim tarafta ise vize ve ödevler bulunacak. Vize ve ödevler kısmından biz sorunluyuz.
+
+28
+00:10:00,083 --> 00:10:09,963
+Tabi bu %60'ın içerisinde vize, ödevler ve labın ağırlığı, vize biraz daha ağırlıklı olmak ise ödevler ve lab da gerçekten ağırlıklı olacak arkadaşlar.
+
+29
+00:10:09,963 --> 00:10:17,923
+Yıl sonunu ise final ve bütünleme şeklinde düşünebilirsiniz.
+
+30
+00:10:18,683 --> 00:10:21,843
+Finallerimiz bizim.
+
+31
+00:10:22,255 --> 00:10:38,535
+İki hafta kadar sürüyor. Bütünlemeler ise bir hafta kadar sürüyor. Ama kesinlikle finaller bütünlemelerden çok daha kolay oluyor. Bütünlemelerde daha zorluyunuz. Dolayısıyla herkes finalde geçmeyi hedeflesin.
+
+32
+00:10:39,539 --> 00:11:07,539
+Peki ödevlerimizde neler olacak? Ödevlerimizde aynı şekilde simülasyon programlarımız var elektronik devreler üzerinde. Bunlarla alakalı olarak temel giriş seviyesinde bilgilendirmeyi lojik devrelerden de az çok biliyorsunuzdur diye tahmin ediyorum. Simülasyon yapmışsınızdır. Ona benzer o programları kullanarak alternatif birkaç programı daha söyleyeceğim.
+
+33
+00:11:07,539 --> 00:11:21,279
+Herhangi bir simülasyon programı olabilir. Multisimi vardı, proteosum vardı. Onun dışında daha basit, temel şeyleri, elektronik devre analizlerini yapabileceğiniz simülatörlerle ödevler vereceğiz arkadaşlar.
+
+34
+00:11:21,279 --> 00:11:35,279
+Ve de bazen konu özetleme kısımları olacak. Vizeler, ödevleri nereye yükleyeceksiniz? Ödevler arkadaşlar burada sizlere tanımlayacağız. Ders esnasında tanımlayacağız.
+
+35
+00:11:35,539 --> 00:12:02,919
+Ödevler ve sınavlar kısmında, lojik devrelerden de bildiğiniz gibi ödevi tanımlayacağım. Size verilen bitiş tarihi içerisinde kesinlikle sistemi yüklemeniz bekleniyor. Bunların haricinde e-mail olarak ödevleri toplayacağız. Derli toplu hepsi, bütün verilen ödevler resmi olarak burada ödevler kısmında gönderilmesi gerekiyor arkadaşlar.
+
+36
+00:12:05,683 --> 00:12:26,343
+Dediğim gibi ödevler sistemi online yıldızı TR'ye yüklenecek. Vizelerimiz ise dediğim gibi orada bir belirsizlik var. Acaba yüz yüze mi yapacağız? Nisan ayında alınacak kararlara göre tekrar onları konuşacağız sizlerle beraber. Ve de final sınavımız da yüzde kırk olacak.
+
+37
+00:12:26,783 --> 00:12:29,484
+Buraya kadar bir sorumuz var mı arkadaşlar?
+
+38
+00:12:32,851 --> 00:12:35,892
+Sizlerin sorusu var mı? Aklıma takılan.
+
+39
+00:12:38,355 --> 00:12:53,495
+Bu hafta bu online lise TRS sistemi üzerinden derslere katılım takip edilebiliyor. Ne kadar süre girilmiş, ne kadar yapılmış. Dolayısıyla dersten kopmamanız için dersi ders zamanında izlemenizi öneriyorum.
+
+40
+00:12:54,076 --> 00:13:01,596
+Bırakılan her ders belli bir noktadan sonra kopuşlara neden olduğu için herkesin girmesini bekliyorum arkadaşlar.
+
+41
+00:13:06,580 --> 00:13:14,360
+Dersin içeriğinden biraz devam edelim. Kitabını bahsetmiştik. Slide'larını vereceğiz dedik aynı şekilde.
+
+42
+00:13:15,155 --> 00:13:21,195
+Dediğim gibi burada biraz daha dersin içeriğiyle alakalı temel şeyler var.
+
+43
+00:13:21,195 --> 00:13:32,195
+Diyotlardan başlayacağız. Önce yarı iletken kısımlarından başlayacağız. Arkasından transistörler, transistörlerde uygulamalar yapacağız.
+
+44
+00:13:33,295 --> 00:13:43,155
+Ondan sonra transistörlerin gelişmiş versiyonu olan FET'ler yani alan etkili transistörlere geçeceğiz. Bunlarla da alakalı derste uygulamalarımız, soru çözümlerimiz.
+
+45
+00:13:43,155 --> 00:13:53,475
+Yararlı sizde için özellikle bu ders nerelerde yararlı olacak derseniz arkadaşlar özellikle gömülü sistemler.
+
+46
+00:13:53,475 --> 00:14:03,755
+Gömülü sistemler. Ondan sonra kısmı için önemli bir girdi. Aynı zamanda temel elektronik.
+
+47
+00:14:05,076 --> 00:14:23,436
+Bilgisayar Mühendisliği, Bilgisayar Mühendisliği, Bilgisayar Mühendisliği, Bilgisayar Mühendisliği, Bilgisayar Mühendisliği, Transistörler, Bafurlar, Çişli, RAM Yapıları, ROM Yapıları,
+
+48
+00:14:33,076 --> 00:14:48,756
+Devreleri yapabilir, motorları sürebilir hale geleceksiniz arkadaşlar. Laboratuvarlar içerisinde bir tane de proje görevi verilecek. Onların da sizin için yararlı olmasını bekliyoruz.
+
+49
+00:14:50,644 --> 00:14:57,283
+Onun dışında bu dersin temeli nereden geliyor şeklinde temel bir giriş yapayım.
+
+50
+00:14:57,884 --> 00:15:06,604
+Katılım gördüğüm kadarıyla yarı yarıya bir katılım var. Ekresil haftası olduğundan dolayı asıl şeye önümüzdeki hafta başlarız.
+
+51
+00:15:07,903 --> 00:15:14,604
+Şimdi bizim için elektronik devreler ve sayısal elektronik devreler niçin önemli diyecek olursak,
+
+52
+00:15:16,724 --> 00:15:35,124
+Bilgisayarda işlemeye kadar bir sürü mühendislik adımları var. Diş dünya derken, gerçek anlamda kıtalarla beraber bir dünya çizeyim. Dış dünyayı temsil etsin. Bu dünyaya analog dünya diyoruz veya sürekli.
+
+53
+00:15:37,908 --> 00:15:50,727
+Dünya diyelim buraya. Çünkü bu çevremizdeki dünyada hemen hemen her işaret, görüntü, insan görme sistemi sürekli verilerden oluşuyor.
+
+54
+00:15:51,247 --> 00:16:01,288
+Örneğin bir sınıf ortamında sizlerle beraber konuşurken benim sesim, sizin kulaklarınız sürekli, zamanın her anında tanımlı olacak şekilde.
+
+55
+00:16:01,759 --> 00:16:11,740
+Allıyor ve işliyor. Şöyle T'ye göre çizecek olursak, bir boyutlu işaretten çizecek olursak, zamanı her anında bu şey tanımlı.
+
+56
+00:16:11,740 --> 00:16:24,524
+Tabi bu bir boyutlu işareti oluştururken, insan görme sistemini düşünelim şöyle. Siz doğayı veya gözleriniz, beyniniz piksel şeklinde...
+
+57
+00:16:24,596 --> 00:16:34,135
+Algılıyor mu? Hayır. Piksel şeklinde algılamıyor. Tamamıyla sürekli bir görüntüden bahsediyoruz insan görme sisteminde.
+
+58
+00:16:34,135 --> 00:16:40,475
+Öyle değil mi arkadaşlar? Biz sürekli bir görüntü algıyoruz veya analog fotoğraf makinelerini düşünün.
+
+59
+00:16:40,815 --> 00:16:49,456
+Bu fotoğraf filmi üzerinde sürekli bir görüntü parlaklık değerlerinden bahsedebiliyoruz arkadaşlar.
+
+60
+00:16:52,275 --> 00:16:58,075
+Şimdi burada bir tane soru var. Onu kaçırmışım. Onu da geri geldiği zaman söyleyeyim.
+
+61
+00:16:58,855 --> 00:17:08,056
+Alttan alanlar dersi lap notlarından memnunsalar ve projelerden memnunsalar. Geçmiş dönemki lap ve proje notlarını biliyorlar.
+
+62
+00:17:08,056 --> 00:17:18,995
+Memnunsalar herhangi bir şey yapmalarına gerek yok. Ama düşükse şayet şu 8. haftada
+
+63
+00:17:19,284 --> 00:17:36,764
+Bir tane vize yapacağız. Vize demeyelim de ona. Laboratuvar notlarını belirleyebilmek için genel aynı final gibi bütün elektronik konularını kapsayan bir sınav olacak.
+
+64
+00:17:36,764 --> 00:17:42,884
+Birinci vize haftası burası. Birinci vize haftası biliyorsunuz. İkinci vize haftası tanımlanmadı.
+
+65
+00:17:43,604 --> 00:17:49,683
+Biz ama kendi vizemizi, herkesin gireceği vizeyi 11 veya 12. haftada yapacağız.
+
+66
+00:17:50,264 --> 00:18:02,503
+Demin dediğim gibi. Şu 1. vize haftası, yani 8. haftaya denk gelen kısımda sadece laboratuvar notundan memnun olmayan için bir sınav yapacağımızı söyleyebilirim.
+
+67
+00:18:02,503 --> 00:18:10,324
+1. vize haftasında. O da not yükseltmek veya not belirlemek için yapılıyor.
+
+68
+00:18:10,740 --> 00:18:12,799
+Anlaşıldı mı [öğrenci]?
+
+69
+00:18:19,124 --> 00:18:21,963
+Ses geliyor mu? Tamamdır.
+
+70
+00:18:23,844 --> 00:18:28,784
+Şimdi biz burada analog dünyadayız.
+
+71
+00:18:30,644 --> 00:18:35,884
+Dediğim gibi burada da herhangi bir şekilde baktığımızda pikselizasyon kavramı yok.
+
+72
+00:18:41,107 --> 00:18:51,107
+Domeyne geçtiğimizde, yani bilgisayarla işleyeceğimiz kısma geçtiğimizde, bilgisayar, biz buna İngilizcesi kompütür biliyorsunuz.
+
+73
+00:18:51,228 --> 00:18:57,107
+Yani hesap yapabilen herhangi bir şey. Sizin cep telefonlarınızdan tutun da destek, laptoplarınız veya...
+
+74
+00:18:57,392 --> 00:19:21,892
+Sizin akıllı TV set tak baktığına kadar dış dünyadan alınan veriyi işleyip mikroprosesörlerinde, mikrocontrollerlerinde, belli hafıza birimlerinde alıp işleyebilen yapılar bizim için dış dünya verisini ayrıklaştırarak inceleyen her yapı ise
+
+75
+00:19:23,028 --> 00:19:46,927
+Bizim için kompütür olarak geçiyor. Dediğim gibi buradan buraya geçmek için yani şu arayol üzerinde ne var? Demek ki dış dünya verisi sürekli olduğu için ne yapılması lazım? Bizim burada kaynaklarımız yani diskret yani ayrık tarafta ise bizim kaynaklarımız sınırlı.
+
+76
+00:19:49,587 --> 00:20:05,447
+İşlem gücü olarak sınırlı. Burada ne yapmamız gerekiyor? Herhangi bir dış dünya verisini, dış dünya verisini uydan örnekler almamız gerekiyor. Bu işleme arkadaşlar, sampling, örnekleme adı veriliyor.
+
+77
+00:20:07,027 --> 00:20:15,447
+Demek ki biz orijinal işaret değil de ne yapmış oluyoruz? Onun örneklerinden yola çıkıyoruz. Daha sonra...
+
+78
+00:20:15,763 --> 00:20:28,803
+Bu ayrık örnekleri alacağımız devre sistemleri, yani bu ayrık örnekleri örnekle daha sonra bunu sayısallaştır. Sayısallaştırmamız gerekiyor öncelik olarak.
+
+79
+00:20:28,803 --> 00:20:37,803
+Buradan aldığımız örnekler artık bizim için iksel ayrık örnekler hale gelmiş oluyor. Artık zamanda...
+
+80
+00:20:38,132 --> 00:20:52,612
+Öyle değil mi? Biz şu iki örneğin arasına diyelim ki T zamanı diyelim, S de indis olsun, sampling zamanı olsun. Belli periyotta örnekler alıyoruz.
+
+81
+00:20:56,468 --> 00:21:10,307
+Bir sürü örnek var. Öyle değil mi? Sonsuz sayıda var. Biliyorsunuz sürekli olunca şu görmüş olduğunuz T düzleminde sonsuz sayıda örneğin şurası sıfırıncı, şurası birinci saniye olsun.
+
+82
+00:21:10,548 --> 00:21:22,307
+Burada sıfırla bir saniye arasında sonsuz sayıda örneka almamız mümkün, sıklaştırmamız mümkün. Ama tabii ki bunun da bir sınırı.
+
+83
+00:21:23,087 --> 00:21:27,008
+Çünkü bizim kaynaklarımız sınırlı.
+
+84
+00:21:27,359 --> 00:21:47,899
+Sonuçta biz tamamıyla bir işareti inceleyeceğiz. Ama diğer taraftan bizim hafızamız da sınırlı. Sonuçta alıp bunları sensörlerden gelen bilgiler buralara kaydedilmiş olması lazım. Artı bu bilgiler 1-0-1-0-1-1-1 şeklinde binary şekilde tutuluyor.
+
+85
+00:21:52,736 --> 00:22:04,855
+Burada artık birinci örnek, şöyle yapalım, sıfırıncı örnek, ikinci, üç, dört şeklinde. Artık sonsuz değiliz. Aldığımız örnekleri bir indis gibi düşünecek olursak.
+
+86
+00:22:05,523 --> 00:22:26,303
+Farklı indislerde ayrık örneklerden oluşuyor. Ama dikkat edin arkadaşlar, bunlar hala sonsuz sayıda değer alıyorlar. Öyle değil mi? Yani burası 0.5 alırken, şurası 0.555 sonsuza kadar gidebilir. Demek ki bunların da aynı şekilde genliklerinin de sınırlandırılması lazım.
+
+87
+00:22:33,523 --> 00:23:01,104
+Örnek sayısı, örnek sayısı oradaki her bir örnek için ayrılmış hafıza odacığının da belli bir genişliği var. Yani bu 8 bit olabilir, 16 bit olabilir, öyle değil mi? 32 bit olabilir, 64 olur, hadi 128 olsun. Yani onun da belli bir sınırı var. Artı bunların işleneceği mikroprosesörler, mikrokontrollerler var. Alıp bunları işlemenin her biri bir maliyet.
+
+88
+00:23:01,779 --> 00:23:29,779
+Peki buradaki yapıdan bahsederken bu arada ne vardı? Örnekleme yapan aynı zamanda sensör. Yani benim ses bilgimi elektriksel işaretle dönüştürecek. Yani şuradaki işarete dönüştürecek bir yapı. Mesela bunlar neler olabilir? Bir mikrofon değil mi? Bir mikrofon oluyor elektriksel bilgi haline getiriyor. Burada örnekleniyor. Sensörlerde sayısallaştırılıyor.
+
+89
+00:23:29,779 --> 00:23:55,799
+Ve en sonunda 1-0-1 şeklinde binary dizleri oluşturuyor. Bu bir boyutlu işaret için. Peki iki boyutlu işaretler için ne yapıyoruz arkadaşlar? İki boyutlu işaretlerde de T zaman işareti artık X ve Y'ler şeklinde uzamsal değişkenimiz oluyor. T değişkenimiz yerine uzamsal değişkenlik oluyor.
+
+90
+00:23:57,011 --> 00:24:22,831
+Uzamsal değişkenler ne olmuş oluyor arkadaşlar? X ve Y'de İngilizcesi Spatial diye geçiyor arkadaşlar. Uzamsal değişkenler. Biz burada örneklemi nasıl yapıyoruz? Bütün sonsuz sayırdaki alana uzama yayılmış bilgilerden buradan da örnekler alıyoruz aynı şekilde. Öyle değil mi?
+
+91
+00:24:23,347 --> 00:24:36,347
+Buradan da örnekler alıyoruz. Görüntünün de örnekleri. İki boyutta da aynı şekilde. Bu iki boyutta aldığımız örneklere ne hak veriliyor? Arkadaşlar, iki boyutta aldığımız örneklere ne deniyor?
+
+92
+00:24:39,527 --> 00:24:50,287
+Yazabilirsiniz. Mikrofonunu açıp izin isteyebilirsiniz. Parmak kaldırma gibi şeyler var herhalde burada. Onları da aktif kullanalım yavaştan artık. Online'e alışalım birazcık.
+
+93
+00:24:50,771 --> 00:24:56,831
+Evet, ne deniyor arkadaşlar? Piksel. Evet, burada da pikselizasyon kavramı var.
+
+94
+00:24:57,203 --> 00:25:25,203
+Dış dünya verisi illa bir boyut, iki boyutlu olmak zorunda değil. Örneğin farklı sensör tipleriyle beraber, örneğin bir hasta yatıyor diyelim şöyle. MR cihazlarında ne yapıyor? Bunlardan kesitler alıyor. Yani ne yapıyor? İnsan vücudunun kesitlerini alarak saklıyor. Bu sefer verimiz ne olmuş oluyor? Üç boyutlu hale gelmiş oluyor. En boyutlu veriye kadar, yani sensörün tipine kadar.
+
+95
+00:25:25,203 --> 00:25:31,144
+En boyutlu veriye kadar bunları alıp incelememiz mümkün arkadaşlar.
+
+96
+00:25:33,144 --> 00:25:35,203
+Aynı şekilde...
+
+97
+00:25:36,051 --> 00:25:56,912
+Burada diskript tarafa geldiğimizde artık burada bir örneklenme ve sensör sisteminden sonra, burada biraz daha önümüzdeki hafta bunların içerisine geçen ayrıklaştırma işleminden sonra binarizasyon yani binar ihale getirip artık hafızaların içerisinde, artık bu görmüş olduğumuz şeyleri hafızaya atıyoruz.
+
+98
+00:25:56,912 --> 00:26:04,031
+Ve burada işlemeye başlıyoruz. Bakın şurada görmüş olduğunuz elektronik devreler, şuradaki sensör sistem.
+
+99
+00:26:04,051 --> 00:26:07,152
+Sistemlerinden tutun. Sensör sistemlerinden tutun.
+
+100
+00:26:07,731 --> 00:26:32,951
+Embedded sistemler, yani bizim dış dünyayla, yani bilgisayardaki dünyanın haricinde bilgi alabileceğimiz her şeyi sıcaklık verilerinden tutun da, kan içerisindeki glikoz miktarından tutun da, hava sıcaklığından tutun da, uydu görüntülerine kadar her türlü işleyeceğimiz veri için elektronik sistemler oluşturuyoruz.
+
+101
+00:26:33,748 --> 00:26:54,248
+Aynı zamanda geldiğimiz zaman şu bilgisayarın içerisine bu hafıza sistemleri bile transistörlerle, elektronik devrelerle, diyotlarla oluşturulan, bunların tasarımında ayrı mühendislik dalları olan, yani mikro işlemci dizayndan FPGA'ya kadar, GPU'lara kadar.
+
+102
+00:26:54,804 --> 00:27:18,624
+Burada donanımsal tarafta temel işlemleri anlayabileceğiniz bir görüyü elektronik devrelerde biraz daha vermeye çalışacağız. Sizler için de yararlı bir ders olacağını düşünüyorum arkadaşlar. Temel şeyleri öğrenebileceğimiz. Önümüzdeki hafta biraz daha bu örnekleme, dış dünyadan alışla alakalı olarak.
+
+103
+00:27:19,316 --> 00:27:39,316
+Derslerimize başlayacağız. Asistan arkadaşlarla görüştükten sonra size toplu olarak mail atıp size öncelikli olarak duyuruların yapılacağı BLM 2032 Elektronik Devreler Bahar dersinin öncelikli olarak Google Classroom'una iyi olduktan sonra...
+
+104
+00:27:39,711 --> 00:28:02,692
+Burak, Ahmet Özden ve Emre Parlak arkadaşlarımız sizlerle alakalı onlara sınıf listelerini de yollayacağız. Bir sınıf listeleri bir kesinleşsin. Ondan sonra onlarla beraber artık laboratuvarları nasıl yapabiliriz, simülasyonları nasıl yapacağız gibi şeyleri artık lap kısmı onlarla olacak dediğim gibi.
+
+105
+00:28:03,443 --> 00:28:19,143
+Hemen dersi değerlendirme kısmına girelim. Lab asistanlarda olacak. Ödevler her derslerde tanımlanacak ve de belli süreler verilecek. Derse katılım zorunlu arkadaşlar.
+
+106
+00:28:19,859 --> 00:28:47,660
+Dediğim gibi yılıçı %60, %40 dersin slide'larını ben vereceğim sizlere. Dersle alakalı slide'ları. Ama takip etmek isterseniz de Robert Bollestet'in Elektronik Devreler. Bir de bunun Türkçesi vardı. Elektronik Devreler ve Devre Teorisi diye Türkçesi de var isteyenler için. Ama kitap almak zorunda değil zaten. Temel PDF'ler şeylerde bulunabiliyor benim bildiğim kadarıyla.
+
+107
+00:28:47,859 --> 00:29:15,019
+Umarım bu dönem hepimiz için güzel bir dönem olur. Online olmasını biz de istemezdik. Yüz yüze sınıfta yapmak her zaman etkileşim açısından iyi. Bizler açısından zor olan tarafı sizlerin tepkilerini göremiyoruz veya sizlere soru sorduğumuzda feedback alamıyoruz veya arka sıralarda uykulayanlardan seçemiyoruz. O bizim için kötü oluyor. Ama bu dönemi de güzel bir şekilde atlatacağımızı umuyorum arkadaşlar.
+
+108
+00:29:15,700 --> 00:29:24,779
+Evet, slide'ları paylaşacağım. Her ders işledikçe temiz slide'ları sizlerle paylaşacağım. Onların üzerinden devam edeceğiz filan.
+
+109
+00:29:26,160 --> 00:29:35,460
+Sorusu olan varsa sesli olarak da sorabilir. Mikrofonunu açıp sorabilir. Buyurunuz, bir el kaldıran vardı. [öğrenci].
+
+110
+00:29:37,120 --> 00:29:38,299
+Hocam, sesim geliyor mu?
+
+111
+00:29:38,660 --> 00:29:39,200
+Geliyor, evet.
+
+112
+00:29:39,920 --> 00:29:42,259
+Google Group henüz açılmadı galiba.
+
+113
+00:29:42,740 --> 00:30:00,000
+Deminkine girdim de geçen... Var olan eski grup var. Önce onların temizlenmesi lazım. Temizlendikten sonra ben sizlere linkleri bizim OBS üzerinden gönderdim.
+
+114
+00:30:00,000 --> 00:30:08,660
+OBS üzerinden de mailleri göndereceğim. Veya biliyorsunuz daha kolay katılım kodları falan da var. Şu anda girmeyin, boşuna girmeyin.
+
+115
+00:30:09,259 --> 00:30:16,140
+Silinir, adlarınız silinir çünkü. Çünkü kişilerin silinmesi gerekecek öncelikli olarak. Öyle değil mi?
+
+116
+00:30:16,140 --> 00:30:22,980
+Buranın silinmesi lazım. Hatta biz bunları bir silelim bakalım. Çıkartayım.
+
+117
+00:30:26,579 --> 00:30:35,679
+Bunları bir kaldıralım. Tekrar eski dönemlerden alanları varsa da onlar tekrar üye olurlar buralara arkadaşlar.
+
+118
+00:30:36,468 --> 00:30:50,468
+Ondan sonra en azından alternatif, online ZTR'de bir sorun olduğunda, kuzum üzerinde veya başka kaynaklar üzerinde, Teams üzerinde sınıf açabiliyoruz.
+
+119
+00:30:51,567 --> 00:30:58,268
+En azından yedekleme olarak veya toplu okulun OBS sisteminde de bazen sorunlar olabiliyor mail.
+
+120
+00:30:58,748 --> 00:31:02,488
+Sizlere duyuru yapabilmek için herkes c-mail ile buraya üye olsun.
+
+121
+00:31:05,748 --> 00:31:16,268
+Başka sorusu olan var mı? Dersin işlenişi ve puanlama içerikle veya teknik açıdan sormak isteyen arkadaşlarımız var mı?
+
+122
+00:31:21,107 --> 00:31:36,027
+Evet, bu hafta derste katılım yarı yarıya olmuş oldu. Önümüzdeki hafta ekle sil de bittikten sonra umarım daha geniş katılımda derslerimize devam edeceğiz. Şimdilik bu haftalık bu kadar arkadaşlar. Herkes kendisine iyi baksa.
+
+123
+00:31:49,140 --> 00:31:54,680
+Olayımız olacak mı? Hangi simülasyon ortamı kullanacağımız veya herhangi bir lab öncesi örnek?
+
+124
+00:31:54,680 --> 00:32:12,556
+Zaten online'ına geçtiğimizde simülasyon ödeme olacak biliyorsun. Öncelikle simülasyon programlarında nasıl yapılıyor, nelere dikkat edilmesi gerekiyor? Bunlarla alakalı asistan arkadaşlarımız sizleri bilgilendirecektir. Ama şu anda...
+
+125
+00:32:12,564 --> 00:32:40,564
+Bir şey var, derslerin uygulama kısımlarının hemen mi başlatacağız yoksa Nisan ayında mı başlatacağız? O konuda bir belirsizlik var. Onu bir çözelim. O ana kadar da şey yaparız. Bizim bu klasör üzerinden sizleri de duyuru yapabiliriz. Orada duyurular üzerinden artık siz laboratuvarda asistanlar üzerinden artık haberleşmeye başlayacaksınız. Onun bir netleşmesi lazım. Onları bekliyoruz.
+
+126
+00:32:40,564 --> 00:32:43,124
+Sağ olun hocam.
+
+127
+00:32:43,124 --> 00:32:47,144
+Tamamdır. Başka sorusu olan?
+
+128
+00:32:51,124 --> 00:33:10,663
+Başka sorusu olan yoksa bu haftalık bu kadar diyelim. Önümüzdeki hafta tekrar görüşmek üzere. Kendinize çok iyi bakın arkadaşlar. Dediğim gibi skolar kısmında, pardon klas sonu, skolara gidiyor aklım. Burada sorular var mı acaba? Tamamdır.
+
+129
+00:33:11,476 --> 00:33:26,476
+Hepinize iyi günler. Kendinize iyi bakın. En güzel şekilde dönemi rahatlıkla geçebileceğiniz, sıkı tuttuğunuz şekilde ağıyla geçmeniz için hiçbir sorun yok arkadaşlar. Güzel, zevkli bir dönem olmasını dilerim. Hepinize iyi günler. Kolay gelsin diyorum.

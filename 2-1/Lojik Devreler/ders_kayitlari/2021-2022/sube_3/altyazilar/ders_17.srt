@@ -1,0 +1,2535 @@
+1
+00:06:20,755 --> 00:06:21,955
+Merhabalar arkadaşlar.
+
+2
+00:06:26,004 --> 00:06:27,124
+Sesim geliyor mu?
+
+3
+00:06:28,644 --> 00:06:29,604
+Merhaba hocam, geliyor.
+
+4
+00:06:30,624 --> 00:06:35,564
+Evet, şöyle bir iki dakika daha bekleyelim. Katılım biraz az olduğu gibi sanki.
+
+5
+00:06:35,744 --> 00:06:39,524
+Yedi kişi bağlanırken bir sorun yaşadınız mı sistemle alakalı olarak?
+
+6
+00:06:43,252 --> 00:06:54,052
+Tamam o zaman. Şey yapalım, ne derler ona? Bir iki dakika daha bekleyelim. Şöyle 6-7 geçe gibi başlayacağız dersimiz. Anlaştık mı?
+
+7
+00:08:41,331 --> 00:08:46,611
+Tekrar merhabalar arkadaşlar. Biz dersimize başlayalım. Şu anda 6 geçiyor.
+
+8
+00:08:47,951 --> 00:08:53,812
+Geçen hafta hatırlarsanız en son eksik bul işlevlerini yapmıştık.
+
+9
+00:08:54,292 --> 00:08:56,871
+Fonksiyonlarda indirgemeyi yapmıştık.
+
+10
+00:08:57,552 --> 00:09:06,331
+Bu haftada fonksiyonlarla ilgili tabii ki amacımız, hani maliyet kavramından bahsederken geçen...
+
+11
+00:09:07,124 --> 00:09:13,244
+Olabildiğince aynı kapıları kullanmak bizim için avantajlı hale geliyor.
+
+12
+00:09:13,244 --> 00:09:20,384
+Örneğin, bir AND kapısı var diyelim. Biliyorsunuz bu AND kapısından bir çipin içerisinde çok miktarda oluyor.
+
+13
+00:09:21,903 --> 00:09:32,803
+Dolayısıyla bir VIA işlemini farklı tür kapılarla, aynı tür kapılarla gerçekleştirirsek bir çipin içindeki bütün elemanları kullanma şansımız oluyor.
+
+14
+00:09:33,908 --> 00:09:43,827
+Dolayısıyla içerisinden bir tane VIA'yı kullanmak yerine, içindeki diğer VIA'ları da kullanmak bizim için avantajlı hale geliyor.
+
+15
+00:09:43,827 --> 00:09:57,108
+Bu sebeple burada türetilmiş kapılarla temel lojik kapıların yapılması.
+
+16
+00:09:57,668 --> 00:09:59,248
+Peki niye türetilmiş kapılar?
+
+17
+00:10:00,000 --> 00:10:24,220
+Kapılardan kastım neydi arkadaşlar? Bizim NAND ve NOR gibi kapılarla biz bunları gerçekleştirmek istiyoruz. Bunların yapılışı nispeten maliyet olarak normal AND OR'lara göre daha uygun olduğu için NAND ve NOR yapıları tercih edilebiliyor.
+
+18
+00:10:24,947 --> 00:10:32,467
+Şimdi çeşitli temel kapıların, temel lojik fonksiyon kapılarının gerçekleştirilmesini göreceğiz.
+
+19
+00:10:34,147 --> 00:10:37,587
+Ses geliyor mu bu arada? Seste sorun yoksa devam ediyorum.
+
+20
+00:10:41,460 --> 00:10:59,019
+İlk önce tümleme kapısından bahsedelim. Yani NOT kapısının ses geliyor değil mi? Bakayım. Sorun yok. Tamam. Tümleme, NOT kapısını nasıl gerçekleştirebiliyoruz? Özellikle NAND ve NOR olarak nasıl gerçekleştireceğiz? Buna bakacağız.
+
+21
+00:11:08,403 --> 00:11:22,984
+Bu temelde hangi işlemi veriyordu bize? F, A ve B'nin, şurada A ve B diyelim, burası da F olsun, A ve B'nin değilini veriyordu.
+
+22
+00:11:22,984 --> 00:11:28,984
+Eğer biz burada F, hem A girişini hem B girişini A yaparsak,
+
+23
+00:11:31,059 --> 00:11:38,299
+Şu şekilde. Ne olmuş olacak bu arkadaşlar? A'nın değil. Hem A'yı hem B'yi aynı giriş yapmak ne demek?
+
+24
+00:11:38,719 --> 00:11:44,199
+Aslında her ikisini de bir girişten beslemek demek. Yani bunu düşünmeseniz de olur.
+
+25
+00:11:44,859 --> 00:11:49,279
+Hem B girişine hem A girişine, yani iki girişe de.
+
+26
+00:11:49,631 --> 00:11:57,071
+Biz burada tek bir değişkeni sokarsak, çıkışta bunun değilini elde ediyoruz.
+
+27
+00:11:57,651 --> 00:12:00,831
+Şuradaki işlem neydi? A ile A'nın entlenmesi neydi?
+
+28
+00:12:01,231 --> 00:12:10,951
+Boole işlevlerinde. Örneğin 0 ile 0'ın entlenmesiyle 1 ile 1'in entlenmesi yine A'nın kendisine eşitti hatırlarsanız.
+
+29
+00:12:10,951 --> 00:12:12,391
+Şu şekilde.
+
+30
+00:12:13,460 --> 00:12:22,940
+Dolayısıyla biz sonuç olarak neyi elde etmiş olduk? Eğer girişi böyle kısa devre yaparsak birbirine, bunun değilini elde etmiş olduk.
+
+31
+00:12:23,900 --> 00:12:33,980
+Aynı şekilde arkadaşlar, aynı şekilde düşünelim. Bu NOR kapısıyla yaptığımız işlemde, NAND kapısıyla da aynı işlemi yapabiliriz.
+
+32
+00:12:36,788 --> 00:12:51,827
+Girişimiz bu şekilde olsun. Çıkışımız neydi bizim NAND kapısında? Tabii şuraya değilini koymamız lazım. A ile, pardon burada ben şeyi yaptım. Yanlış yaptım. Hiç uyarmıyorsunuz arkadaşlar.
+
+33
+00:13:03,988 --> 00:13:29,188
+NAND kapısına göre yapmıştım. Önce burada NAND'i anlatmış olayım. Burada NOR'u anlatmış olayım. Çizecek olursam şu şekilde yaptığım işlem şu kısa devre yapıp bir A girişi vermiş oluyorum. Burada ise tam tersi NOR işlemine bakacağım.
+
+34
+00:13:29,748 --> 00:13:38,548
+NOR işleminde de aynı şekilde girişi kısa devre yaparsam, ikisine de A girişini verirsem, normalde neydi bizim çıkışımız?
+
+35
+00:13:40,248 --> 00:13:45,528
+A artı B idi. Eğer A artı B'nin değiliydi.
+
+36
+00:13:46,548 --> 00:13:51,548
+Veya şu şekilde de gösterebiliriz. A artı B'nin değil şeklinde de gösterebiliriz.
+
+37
+00:13:52,428 --> 00:13:55,248
+Şimdi burada ikisini de aynı verdiğimizde...
+
+38
+00:13:56,500 --> 00:14:02,319
+A artı A'nın değili, A artı A neydi arkadaşlar? Aynı şekilde.
+
+39
+00:14:02,740 --> 00:14:10,740
+Yine kendisine eşitti, Boole cebri'nde. Bu da A'nın değili olarak görecek.
+
+40
+00:14:11,039 --> 00:14:21,259
+Gördüğünüz gibi gerek NAND, gerek elimizde NAND veya NOR devreleri varsa, şurada çizeceğim gibi mesela, NAND ve NOR devreleri varsa şöyle.
+
+41
+00:14:21,971 --> 00:14:41,051
+Elimizde, mesela burada bir NOR devresi olsun. Bunlar bu şekilde çipe verilmiş, çiftleri alınmış. Bir kısmını kullandık diyelim bizim ve bir tane NAT kapısına ihtiyacımız var. Bu durumda ne yapabiliyoruz arkadaşlar?
+
+42
+00:14:41,683 --> 00:14:52,124
+Şöyle, bunlar çipin dışına çıktığında, bunları kısa devre edip bir tane A girişi verdiğimizde, bunun çıkışında A'nın değilini elde etmiş oluyoruz arkadaşlar.
+
+43
+00:14:53,943 --> 00:14:55,303
+Bu anlaşıldı mı?
+
+44
+00:15:00,371 --> 00:15:03,392
+Anlaşıldı mı arkadaşlar? Herhangi bir sorun yok herhalde.
+
+45
+00:15:06,551 --> 00:15:21,531
+Tamamdır. Şimdi gelelim bizim V kapısı gerçekleştirmemize, V veya AND kapısının gerçekleştirilmesi nasıl olacak arkadaşlar?
+
+46
+00:15:22,731 --> 00:15:27,831
+Burada da iki türlü gerçekleştirebiliyoruz bunu.
+
+47
+00:15:28,563 --> 00:15:36,783
+Bunlardan ilki örneğin F eşittir, AND kapısı neydi arkadaşlar? A ile B'nin AND'lenmesi şeklinde.
+
+48
+00:15:37,543 --> 00:15:45,983
+Bunu şu şekilde de gösterebilir miyiz? A, B'nin değilinin değili, bir şeyinin değilinin değili kendisiydi arkadaşlar hatırlarsanız.
+
+49
+00:15:46,903 --> 00:15:53,923
+Peki şu içerideki devreyi nasıl çalıştırabiliriz? Şu içerisini nasıl değerlendirebiliriz? Şöyle.
+
+50
+00:15:55,668 --> 00:16:16,067
+Aslında burada bir ne var? NAND var değil mi? NAND'in DE'li gibi düşünebiliriz. İçeride aslında şöyle baktığımızda A ile B'nin bir NAND ifadesi var. Şöyle yaparsak belki daha anlaşılır gözükecek. DE'linin DE'lini almak.
+
+51
+00:16:16,500 --> 00:16:37,940
+Zaten kendisi demekti. Şuradaki ifade NAND'ti. Eğer bunu gerçekleştirecek olursam, şöyle yapayım. Bir A girişim var, B girişim var. Öncelikli olarak ne yapılıyor bu? Bir NAND'e sokuluyor. Daha sonra bir şurayı gerçekleştirdim. Bakın kırmızıyla çektiğim kısmı.
+
+52
+00:16:38,740 --> 00:16:46,680
+Bir işlem daha yapmam gerekiyor. Bir tane de NOT yapmam gerekiyor. Bir önceki şeyde NOT yapmayı öğrenmiştik. Öyle değil mi?
+
+53
+00:16:47,340 --> 00:17:02,839
+NOT yapabilmek için ne yapıyoruz? Bunun çıkışını alıyoruz. Bir kısa devre şeklinde yine bir NAND kullanarak NAND tasarımıyla bu işlem ne sağlıyor bize?
+
+54
+00:17:06,099 --> 00:17:16,739
+AND'lenmiş halini sağlıyor. Demek ki elimizde iki tane NAND kapısı varsa, birini A ve B'ye girdikten sonra çıkışını gerçekleştirdiğimizde NAND'imizi elde ediyoruz.
+
+55
+00:17:17,739 --> 00:17:26,159
+Peki, şuradan devam edelim. Şuradan devam edelim. Farklı bir şekilde de yapabiliriz bunu. Ne demiştik?
+
+56
+00:17:26,528 --> 00:17:28,988
+A ile B'nin değilinin değilini almıştık.
+
+57
+00:17:29,088 --> 00:17:36,128
+Peki, şu gördüğümüz kısımda demorganı uygulayacak olursak, nasıl yapabiliriz bunu?
+
+58
+00:17:37,128 --> 00:17:43,168
+A'nın değili artı B'nin değili şeklinde.
+
+59
+00:17:43,168 --> 00:17:45,588
+Şu en dışarıdaki değil şurada.
+
+60
+00:17:46,588 --> 00:17:49,847
+İçerideki değili ise demorganla beraber.
+
+61
+00:17:50,192 --> 00:17:55,771
+Hem işaret işlemini değiştirdim hem de A'nın değerlerini aldım. Şu hale gelmiş oldum.
+
+62
+00:17:56,771 --> 00:17:59,432
+Bakın burada da ne var arkadaşlar?
+
+63
+00:18:00,152 --> 00:18:08,592
+Baktığımızda, bizim burada baktığımızda A ile B'nin en temelde baktığımızda şuradaki işlem nedir?
+
+64
+00:18:09,472 --> 00:18:15,652
+Aslında bir C işleminin, daha doğrusu şöyle diyelim.
+
+65
+00:18:17,395 --> 00:18:27,335
+Şuraya A üstüne X dersek, art B üstüne de Y dersek, bir NOR işlemine dönmüş oluyor.
+
+66
+00:18:28,576 --> 00:18:36,855
+Peki, ben şu içerideki A üstü ve B üstünde yine NORlarla gerçekleştirirsem, yapayım onu.
+
+67
+00:18:36,855 --> 00:18:43,935
+Örneğin şurası, şöyle baktığımda A'nın, şurada şöyle.
+
+68
+00:18:44,367 --> 00:18:58,487
+A'nın, şurayı güzelce yapayım. Şöyle, şurada A üstü, aynı şekilde yine, ne gerçekleştirmesi yapıyorum?
+
+69
+00:18:58,607 --> 00:19:08,768
+NOR gerçekleştirmesi, şöyle, B üstü de buraya gelmek üzere şöyle, şuradan da B'yi verdim. İçerideki ifadeyi yaptım.
+
+70
+00:19:09,332 --> 00:19:18,332
+Daha sonra zaten bunları birleştirdiğim zaman X'i NOR'la, Y'yi de NOR'la gerçekleştirdim.
+
+71
+00:19:18,432 --> 00:19:23,012
+Yani A üstü ve B üstünü gerçekleştirdim. İçerideki ifade zaten bir NOR ifadesiydi.
+
+72
+00:19:23,852 --> 00:19:29,572
+Onları da birleştirdiğim zaman yine bir NOR'la neyi elde etmiş oluyorum?
+
+73
+00:19:29,952 --> 00:19:31,652
+Çıkış ifadesini elde etmiş oluyorum.
+
+74
+00:19:31,652 --> 00:19:34,152
+Bu da gördüğünüz gibi arkadaşlar.
+
+75
+00:19:35,667 --> 00:19:56,807
+Neyle gerçekleştirdi bunu? NOR'la. Bu da aynı şekilde A ile B'nin AND'lenmesini veriyor. Yani bu iki devre aslında birbirine eşit. Birini NAND ile birini NOR'la gerçekleştirmiş oluyor. Artık tasarımda siz hangisini tercih ederseniz.
+
+76
+00:19:58,447 --> 00:20:02,627
+Sorsa olan varmış şimdiye kadar olan kısımla alakalı olarak arkadaşlar.
+
+77
+00:20:05,748 --> 00:20:10,648
+Sorumuz yoksa şayet devam edelim.
+
+78
+00:20:11,708 --> 00:20:16,788
+Şimdi de V-YA kapısına geçelim.
+
+79
+00:20:17,648 --> 00:20:17,988
+V-YA.
+
+80
+00:20:18,928 --> 00:20:22,988
+Bakın aslında yaptığım V-YA OR kapısına geçelim.
+
+81
+00:20:23,148 --> 00:20:25,088
+Aslında temelde yaptığım iş benim.
+
+82
+00:20:25,668 --> 00:20:26,608
+Hep aynı şey.
+
+83
+00:20:27,488 --> 00:20:29,887
+F eşittir, A artı B dedim.
+
+84
+00:20:30,483 --> 00:20:42,243
+Aslında Boole işlemlerinden yararlanarak temel yapıyı manipüle edip ondan NOR veya NAND kapısı yapıyorum.
+
+85
+00:20:42,483 --> 00:20:52,283
+Aynı şekilde A artı B'nin değilinin değilini alsam, en basitinden, şu içerideki kapı neydi?
+
+86
+00:20:52,683 --> 00:20:57,843
+İçerideki kapı X artı Y'nin D'li. Zaten bir NOR yapısı var.
+
+87
+00:20:58,291 --> 00:21:08,551
+Dışarıdaki NOT'ı da NOR'la yaparsam, dolayısıyla ben basit bir V-YA işlemini veya OR işlemini basitçe gerçekleştirebiliyorum.
+
+88
+00:21:09,011 --> 00:21:09,851
+Ne yaparım burada?
+
+89
+00:21:10,851 --> 00:21:25,132
+A ile B'nin çıktısını alıp A ile B'nin NOR'lanmış halini bir de şuradaki D'yi gerçekleştirecek şekilde
+
+90
+00:21:25,599 --> 00:21:30,079
+Bir daha şu şekilde bir NOR'a verirsem, burada da NAT'ını almış oluyorum.
+
+91
+00:21:31,259 --> 00:21:34,159
+Böylece neyi gerçekleştirmiş oldum burada arkadaşlar?
+
+92
+00:21:35,159 --> 00:21:45,000
+Sadece NOR'ları kullanarak benim AND veya kapımı gerçekleştirmiş oldum.
+
+93
+00:21:46,480 --> 00:21:52,339
+Bir aşağı ineyim, aynı buradaki yapıdan yararlanarak bir aşağı ineyim, eşittir.
+
+94
+00:21:53,299 --> 00:21:57,059
+A artı B'nin değili ifadesini şu şekilde yazabilirim.
+
+95
+00:21:57,179 --> 00:22:00,099
+A artı B'nin değillinin değili.
+
+96
+00:22:00,360 --> 00:22:00,960
+Aynı şey.
+
+97
+00:22:01,900 --> 00:22:06,579
+Bu A artı B'nin değili dem organını da açtığımda ne olacak?
+
+98
+00:22:07,420 --> 00:22:13,659
+A üstü B üstünün değili şekline gelecek.
+
+99
+00:22:14,799 --> 00:22:16,500
+Peki bu ne arkadaşlar?
+
+100
+00:22:17,039 --> 00:22:43,019
+X ile Y'nin değili. Yani A üstünü bir X olarak gösteriyorum, karışıklığı engellemek için. X ile Y'nin değili. Yani bu ne kapısı baktığımızda? Bu bir NAND kapısı. Peki bu NAND kapısı ise şayet bu A üstü ve B üstünü de NAND'lerle yaparsam? Şöyle NAND'lerle yapayım bunu da. Şöyle.
+
+101
+00:22:44,660 --> 00:22:57,860
+Bu örneğin A'nın değilini alsın. Şurası A'nın değilini. Aynı şekilde burası da B'nin değilini alsın. Şöyle içeriği yani şuraları gerçekleştirdim.
+
+102
+00:22:59,320 --> 00:23:06,840
+Bir de içerideki ifade zaten bir NAND ifadesiydi. Bu içerideki NAND ifadesini de
+
+103
+00:23:06,867 --> 00:23:16,687
+bir değil yapmak için pardon özür dilerim A ile B'nin evet NAND ile beraber sonuçta fonksiyonu elde etmiş oldum.
+
+104
+00:23:16,687 --> 00:23:29,587
+NAND'i kullandım. Dolayısıyla benim buradaki işlemimde bana neyi verecek? Bu sefer NAND kullanarak yine benim
+
+105
+00:23:30,324 --> 00:23:43,923
+OR işlemi gerçekleştirmiş olacağım. Şu iki devre de birbirine eşit arkadaşlar. Aynı çıkışları veriyor. Farkı kim birisinde NOR, birisinde ise NAND kullanılmış olması arkadaşlar.
+
+106
+00:23:45,864 --> 00:23:50,183
+Bu kısım anlaşıldı mı? Sormak istediğiniz soru var mı?
+
+107
+00:23:54,132 --> 00:23:57,612
+Bunlar temel kapıların gerçekleştirilmesiydi arkadaşlar.
+
+108
+00:23:58,751 --> 00:24:06,132
+Şimdi indirgenmiş ifadelerin aynı tür kapılarla gerçekleştirilmesine giriyoruz.
+
+109
+00:24:06,132 --> 00:24:16,132
+İndirgenmiş ifadelerin aynı tür kapılarla...
+
+110
+00:24:21,428 --> 00:24:23,048
+gerçeklenmesi diyelim.
+
+111
+00:24:27,476 --> 00:24:36,476
+Şimdi burada da yine geçen hafta hatırlarsanız kanonik biçimlerin lojik kapılarla gerçekleştirmesini anlatmıştık.
+
+112
+00:24:37,856 --> 00:24:42,056
+Olabildiğince iki tane temel ifademiz vardı bizim arkadaşlar.
+
+113
+00:24:42,976 --> 00:24:44,196
+Çarpımlar toplamı.
+
+114
+00:24:48,915 --> 00:24:51,175
+Ve toplamlar çarpımı.
+
+115
+00:24:55,347 --> 00:25:10,168
+Yani bir fonksiyonu biz örneğin ABC artı B üstü C artı C D gibi şöyle çarpım şeklindeki ifadelerle ifade edebiliyorduk.
+
+116
+00:25:22,324 --> 00:25:29,724
+Artı A gibi C artı D üstü gibi ifadelerle görüşüyoruz.
+
+117
+00:25:29,804 --> 00:25:33,464
+Şurada görmüş olduğunuz temeldeki yapı şunlar mintermlerimiz bizim.
+
+118
+00:25:34,004 --> 00:25:36,204
+Mintermlerimiz değil, özür dilerim.
+
+119
+00:25:36,903 --> 00:25:40,724
+Bizim indirgenmiş ifadedeki çarpım şeklindeki ifadelerimiz.
+
+120
+00:25:40,724 --> 00:25:45,204
+Bunlar da toplamlar, toplam şeklindeki ifadelerimiz.
+
+121
+00:25:45,652 --> 00:25:58,972
+Ne yapıyorduk arada? Bunları çarpıyorduk. Yani toplam şeklindeki ifadeleri şöyle şunlarla çarpıyorduk. Peki burada ne yapıyorduk? Çarpım şeklindeki ifadeleri topluyorduk şöyle.
+
+122
+00:25:58,972 --> 00:26:09,272
+Şimdi şurası kafayı karıştırmasın. Şurayı düzeltelim şöyle.
+
+123
+00:26:12,051 --> 00:26:15,911
+Şurada da çarpım şeklindeki yani entlemeler var.
+
+124
+00:26:16,571 --> 00:26:24,151
+Şimdi bu tarz ifadelerin en genel gösterimi arkadaşlar çarpımlar toplamının en genel ifadesi şu şekilde arkadaşlar.
+
+125
+00:26:25,071 --> 00:26:35,231
+İçeride aslında biz X, Y denilen değişkenlerimiz var. Bunlar A, B, C olabilir veya X, Y, Z olabilir.
+
+126
+00:26:35,988 --> 00:27:02,708
+X, İ ile gösterelim değişkenimizi. X, İ dediğimiz şey, sırasıyla X, 1 değişkeni, X, 2 değişkeni. Yani bizim ABC'mize denk geliyor. Şöyle. Bunlar içeride çarpılıyor. Bunlar P dediğimiz şey ise bunların çarpımlarını, kombinasyonlarını gösteriyor. Bu çarpımları şu şekilde topluyoruz. En genel ifadesi bu.
+
+127
+00:27:04,051 --> 00:27:11,111
+Hangi i'ler toplanıyorsa, şimdi o i'lerin değeri gösteriyor. En genel gösterimi çarpımlar toplamında bu şekilde.
+
+128
+00:27:12,111 --> 00:27:26,932
+Toplamlar çarpımında ise fonksiyon arkadaşlar, içeride toplam varsa şayet, çeşitli x, i değişkenleri, yani binary değer alan değişkenler, abc, x, y nasıl yaparsanız.
+
+129
+00:27:29,971 --> 00:27:32,032
+Dan oluşan bir ifadeye dönüşüyor.
+
+130
+00:27:32,432 --> 00:27:36,852
+Bu da toplamlar çarpımının genel gösterimi olmuş oluyor arkadaşlar.
+
+131
+00:27:37,731 --> 00:27:46,832
+Şimdi bu genel gösterimleri gördükten sonra sırasıyla önce çarpımlar toplamı
+
+132
+00:27:46,832 --> 00:27:55,512
+Çarpımlar toplamının neyle tasarımına bakacağız arkadaşlar?
+
+133
+00:27:56,819 --> 00:28:06,679
+Çarpımlar toplamının NAND tasarımı veya TVE NAND tasarımına bakacağız.
+
+134
+00:28:09,079 --> 00:28:16,519
+İlki bu. Hatta buna şöyle diyebiliriz. Çarpımlar toplamı olduğu için A1 diyeceğiz.
+
+135
+00:28:17,299 --> 00:28:20,919
+Bunun ikincisinde çarpımlar toplamının NORLA tasarımı.
+
+136
+00:28:21,715 --> 00:28:29,715
+A2 olarak. Daha sonra toplamlar çarpımının NAND, toplamlar çarpımının NOR tasarımlarına bakacağız.
+
+137
+00:28:30,715 --> 00:28:35,715
+Şimdi basitçe burada şöyle diyebiliriz.
+
+138
+00:28:37,295 --> 00:28:45,675
+F üstü örneğin ben işareti manipüle ederek tekrar çarpımlar şeklindeki ifadenin nasıl olduğunu anlatıyorum aslında.
+
+139
+00:28:45,675 --> 00:28:47,155
+F üstü eşittir.
+
+140
+00:28:47,604 --> 00:28:55,844
+İki tarafında çarpımlar toplamı şeklindeki ifadenin, yani şunun, değini alsam şöyle.
+
+141
+00:28:58,784 --> 00:29:00,504
+İki tarafında değini alsam.
+
+142
+00:29:01,824 --> 00:29:06,744
+Daha sonra biliyorsunuz çarpım şeklindeki ifadeye şöyle baktığımızda,
+
+143
+00:29:06,744 --> 00:29:11,464
+benim şöyle A artı, pardon üzülüyorum.
+
+144
+00:29:11,551 --> 00:29:22,631
+AB artı CD şeklindeki çarpımlar şeklindeki ifadem olsa, bunun değilini alsam, bunun değilini alsam, ne hale getirmiş oluyorum aslında ben bunu?
+
+145
+00:29:22,831 --> 00:29:29,831
+AB'nin D ile çarpı demorguna göre CD'nin D'li haline getirdim.
+
+146
+00:29:29,831 --> 00:29:38,771
+Ne oluyor aslında? Benim içerideki çarpımlar şeklindeki ifade, içindeki çarpımlar şeklindeki ifadenin D'li olup,
+
+147
+00:29:39,316 --> 00:29:43,475
+İfade toplam şeklinden çarpım şekline geçti.
+
+148
+00:29:44,056 --> 00:29:47,596
+Bunu kastederek şuradaki değil ifadesi ne olacak?
+
+149
+00:29:48,195 --> 00:29:59,235
+İçerideki çarpım şeklindeki ifadenin değili olup, ondan sonra işlem de çarpmaya dönüyor.
+
+150
+00:30:00,155 --> 00:30:02,496
+Bunu da şu şekilde gösterebiliriz.
+
+151
+00:30:06,003 --> 00:30:11,303
+En dışarıdaki sigma toplama işlemi ise ne olmuş oluyor arkadaşlar?
+
+152
+00:30:13,943 --> 00:30:16,963
+Pi'ye yani çarpıma dönmüş oluyor.
+
+153
+00:30:17,723 --> 00:30:28,583
+Şimdi bu ifadenin tekrar tümleyenini alırsak, yani bu f üstüydü, bir daha f üstünün değinin değini alsak, bu durumda ne olacak arkadaşlar?
+
+154
+00:30:33,875 --> 00:30:39,056
+P, X, Y dediğimiz şeyin değiliydi. Bir daha bunun da değilini alırsak şayet.
+
+155
+00:30:39,836 --> 00:30:47,895
+Aslında baktığımda ben, şuradaki ifadeler neydi arkadaşlar? İki ifadenin çarpımının değili, yani X, Y'nin değili şeklindeydi.
+
+156
+00:30:48,816 --> 00:30:51,895
+Yani içerideki ifadeler aslında...
+
+157
+00:30:52,147 --> 00:30:56,467
+NAND'e dönüşmüş haldeydi.
+
+158
+00:30:57,067 --> 00:30:59,967
+Ben bir daha AND aldığımda ne olacak arkadaşlar?
+
+159
+00:31:00,667 --> 00:31:04,187
+Bir daha bu ifadelerin bir daha değilini alırsam şahit.
+
+160
+00:31:04,747 --> 00:31:10,927
+Şurada bir X, şunu bir Y kabul edersek, ifade F'ye dönmüş olacak.
+
+161
+00:31:10,927 --> 00:31:12,007
+Değil mi?
+
+162
+00:31:12,967 --> 00:31:19,707
+Ama benim şu şekilde ki işlemim sonucunda
+
+163
+00:31:21,940 --> 00:31:26,620
+NAND'lerle gerçekleştirebileceğim yapılara dönmüş olacak.
+
+164
+00:31:27,340 --> 00:31:30,340
+Hemen bir örnekle bunu anlatmaya çalışalım.
+
+165
+00:31:30,720 --> 00:31:32,080
+Örneğimiz de şu olsun.
+
+166
+00:31:33,620 --> 00:31:46,100
+A üstü, B üstü, C, artı A üstü, B, C, artı A, B, C üstü, artı A, B, C, şeklinde bir ifade olsun.
+
+167
+00:31:46,100 --> 00:31:49,380
+Gördüğünüz gibi burada çarpımlar şeklinde.
+
+168
+00:31:50,228 --> 00:31:58,648
+İfade. Peki bunu ne diyor bize? NAND ile gerçekleştiriniz. NAND ile gerçekleyiniz.
+
+169
+00:32:00,708 --> 00:32:10,348
+NAND ile gerçekleyiniz. Tamam, gerçekleyelim. Normalde biz bunu önce indirgeyeceğiz bakalım.
+
+170
+00:32:10,348 --> 00:32:14,908
+Biz bunu önce indirgeyelim. İndirgenmiş halini bir bulalım.
+
+171
+00:32:15,380 --> 00:32:33,800
+NAND'lerle bakalım indirgeme yaptığımızda ne olacak arkadaşlar? Karnaugh'larla biz bunu normalde A, B, C, D şeklinde yapıp buradaki 16 tane 0, 0, 0'dan 1, 1, 1, 1'e kadar bütün karşılıklarını yazmamız gerekir.
+
+172
+00:32:34,800 --> 00:32:37,060
+Bunları bulduktan sonra
+
+173
+00:32:37,748 --> 00:32:45,687
+Bu kısmı siz gerçekleştiniz veya şuradaki işlemlerden yararlanarak bir Karnaugh haritasını yapalım bunu.
+
+174
+00:32:48,248 --> 00:32:53,427
+Şimdi burada 3 tane değişken var görüyorsunuz. A, B, C.
+
+175
+00:32:53,727 --> 00:33:02,227
+Dolayısıyla ben bunu şu şekilde 2'ye 4 bir matrisle gerçekleştirebilirim.
+
+176
+00:33:02,900 --> 00:33:17,000
+0, 0, 0, 1, 1, 1, 0, 0 ve 1 şeklinde. Peki nerelerdir? A üstü BC, yani A'nın 0, B'nin 0, C'nin 1 olduğu yer. Neresi? Burada bir 1 veriyor.
+
+177
+00:33:18,804 --> 00:33:24,223
+A üstü BC, yani A'nın sıfır, B ve C'nin bir olduğu yerde bir verecek.
+
+178
+00:33:24,784 --> 00:33:28,703
+Çünkü burası bir aldığında gerisine bakmaya gerek yok.
+
+179
+00:33:29,284 --> 00:33:31,604
+Orada zaten fonksiyon bir verecektir.
+
+180
+00:33:32,544 --> 00:33:38,503
+ABC üstü, yani A ile B'nin bir olduğu, C'nin ise sıfır olduğu yer.
+
+181
+00:33:39,263 --> 00:33:41,084
+Neresi arkadaşlar? Burası bir.
+
+182
+00:33:42,263 --> 00:33:45,304
+ABC, hepsinin bir olduğu yerde de bir verir.
+
+183
+00:33:45,779 --> 00:33:53,799
+Eğer bir indirgeme yapacak olursam, bakalım yapabileceğim en büyük komşuluklara bakıyorum.
+
+184
+00:33:54,299 --> 00:33:56,100
+Bir şunu alırım, bir şunu alırım.
+
+185
+00:33:56,759 --> 00:33:58,880
+Ekstradan şunu almama gerek var mı arkadaşlar?
+
+186
+00:33:59,299 --> 00:34:00,039
+Gerek yok.
+
+187
+00:34:00,420 --> 00:34:03,299
+Zaten bütün birileri kapsamış oldum burada.
+
+188
+00:34:04,660 --> 00:34:08,920
+Dolayısıyla bu fonksiyonu yazacak olursam fonksiyon hangi hale gelmiş oluyor arkadaşlar?
+
+189
+00:34:09,519 --> 00:34:10,500
+Şu ifade neydi?
+
+190
+00:34:12,083 --> 00:34:21,943
+A üstü değil mi? A üstü C. Şu ifadeyi indirgecek olursam, siz söyleyin arkadaşlar.
+
+191
+00:34:25,163 --> 00:34:35,423
+AB. Evet, AB. Yani fonksiyonum AB artı AC üstü. Pardon. A üstü C'ye dönmüş oldu.
+
+192
+00:34:38,003 --> 00:35:04,603
+Bakın bir önceki konudan da birleştirmiş olduk. Şimdi burada ilk yapacağım şey neydi? Çarpımlar toplamı şeklinde bir ifade değil mi bu? Çarpımların toplamı şeklinde. Ne yapıyorum? Bir kere AND alıyorum, bir daha NOT alıyorum, bir daha NOT alıyorum şeklinde yapabiliyorum. Yani burada ne yapmam gerekiyor benim arkadaşlar? Değilinin değilini almam gerekiyor değil mi?
+
+193
+00:35:05,139 --> 00:35:17,239
+F, iki tane değil alacağım. AB artı A üstü C'nin değili haline getiriyorum. Bir daha değili haline getirirsem kendisi olmuş oluyor burada.
+
+194
+00:35:18,119 --> 00:35:27,239
+Peki burada ne yapmam gerekiyor arkadaşlar? İçerideki yani yeşille çizmiş olduğum değili bir kullanayım öncelikli olarak.
+
+195
+00:35:32,340 --> 00:35:36,579
+çarpı A üstü C'nin D'li.
+
+196
+00:35:38,220 --> 00:35:43,940
+Dışarıdaki, pardon, dışarıdaki NOT duruyor zaten.
+
+197
+00:35:44,920 --> 00:35:46,100
+Mavi olarak çizdiğim ben.
+
+198
+00:35:46,820 --> 00:35:52,840
+Şuna baktığımızda, şu iki ifadede X çarpı Y'nin D'li şeklinde ifadeler.
+
+199
+00:35:53,520 --> 00:35:56,200
+Onlar NAND'lerle gerçekleştiriliyor.
+
+200
+00:35:56,200 --> 00:35:58,892
+Dolayısıyla şu...
+
+201
+00:35:59,315 --> 00:36:00,655
+Şu yapıya bakayım.
+
+202
+00:36:01,427 --> 00:36:12,567
+Şuradaki yapıya düşüneyim. Burada da şurası ve şurasını bu sefer X ve Y olarak kabul edersem, X ve Y'nin değili şeklinde bir ifade.
+
+203
+00:36:12,667 --> 00:36:17,728
+Yani o da NAND ile gerçekleştirilebilir bir halde. Öyle değil mi arkadaşlar?
+
+204
+00:36:18,527 --> 00:36:23,407
+Dolayısıyla sadece NAND'leri kullanarak ben artık bu devreyi gerçekleştirebilirim.
+
+205
+00:36:29,139 --> 00:36:34,439
+Değilini aldığımızda zaten NAND'lerle yapılabilecek hale geliyor.
+
+206
+00:36:34,920 --> 00:36:42,059
+Ben bunu gerçekleştirecek olursam hemen bir tane ne var arkadaşlar?
+
+207
+00:36:42,380 --> 00:36:45,500
+A girişi, bir B girişi var.
+
+208
+00:36:46,139 --> 00:36:48,000
+Bunu NAND'le gerçekleştirdim.
+
+209
+00:36:48,099 --> 00:36:49,340
+Yani şunu yaptım.
+
+210
+00:36:50,980 --> 00:36:52,000
+Onu kırmızıyla yapayım.
+
+211
+00:36:52,099 --> 00:36:53,099
+Belki daha güzel olacak.
+
+212
+00:36:53,539 --> 00:36:55,779
+Gerçekleştirdiğim yerleri kırmızıyla yapayım.
+
+213
+00:36:56,436 --> 00:37:17,176
+Evet, NAND ile gerçekleştirdim. Önce bir A üstü elde etmem lazım. A üstünü nasıl elde edelim? Şuraya bir A veririm. Şurada bir A üstü oluşur. A üstüyle C'yi verdiğim zaman bu da A üstü C'nin değili.
+
+214
+00:37:18,356 --> 00:37:35,836
+Tamam, bu da gerçekleşti. Daha sonra bu iki ifadeyi AND'leyip DEEL'ini alıyorum. Yani şunu yapıyorum. Sonuçta fonksiyonumu elde ettim. Gördünüz mü arkadaşlar? Çarpımlar toplamı şeklindeki ifade bu. A üstü C'ye dönmüş oldu.
+
+215
+00:37:37,976 --> 00:37:44,016
+Şimdi gelelim. Neyi görmüştük burada?
+
+216
+00:37:44,563 --> 00:37:49,623
+Çarpımlar toplamı NAND tasarımını görmüştük.
+
+217
+00:37:49,623 --> 00:37:54,243
+Şimdi çarpımlar toplamı şöyle yazalım.
+
+218
+00:37:55,683 --> 00:37:57,804
+A2 diyelim.
+
+219
+00:37:58,663 --> 00:38:00,043
+Çarpımlar toplamı.
+
+220
+00:38:04,148 --> 00:38:11,807
+Bu sefer tümleyen veya NOR tasarımı.
+
+221
+00:38:13,188 --> 00:38:18,748
+Demek ki NOR tasarımı yapacaksak şöyle bir şey yapmaya çalışacağız arkadaşlar.
+
+222
+00:38:18,948 --> 00:38:22,368
+İfadeyi bu hale getirmeye çalışacağız.
+
+223
+00:38:23,588 --> 00:38:24,708
+Şimdi düşünelim.
+
+224
+00:38:25,528 --> 00:38:28,748
+Benim çarpımlar toplamı, genel ifadem neydi?
+
+225
+00:38:28,748 --> 00:38:31,748
+Şu şekildeydi.
+
+226
+00:38:31,956 --> 00:38:47,416
+İçeride çarpımlar var, dışarıda toplanıyordu arkadaşlar. Şuradaki PXI ifadesi yerine, PXI ifadesi yerine şunu yazabilir miyiz? XI'nin değilinin değil'i şeklinde.
+
+227
+00:38:55,507 --> 00:39:07,407
+İçerideki ifade neydi? Bir çarpımdı. Hemen bir örnekle size anla. Gözünüzde çoğu bucak canlandıralım veya şuraya yapayım. Çarpım şeklindeki ifadeyi nasıl ifade edebilirim başka ben?
+
+228
+00:39:09,407 --> 00:39:20,367
+Bunun değilinin değilini alırsam, içeride demorgun uygularsam, A üstü artı B üstünün değili.
+
+229
+00:39:20,947 --> 00:39:25,307
+Aslında ben ne yapmış oldum çarpım şeklindeki bir ifadeyi?
+
+230
+00:39:26,148 --> 00:39:31,847
+İçerideki değişkenlerin değilini aldım ve de bunlara not ekledim.
+
+231
+00:39:31,847 --> 00:39:47,987
+Dolayısıyla çarpım şeklindeki bir ifade, bakın içerideki değişkenin değilinin alınmış ve de bu toplam şeklindeki ifadenin, bakın burada toplam şeklinde hale gelmişti.
+
+232
+00:39:48,596 --> 00:40:06,735
+Bunun değilinin alınmış hali. Öyle değil mi? Çarpım şeklindeki bir ifade, şu içerideki ifade aslında şu şekilde ifade edilebilir mi? Ben bunu anlamaya çalışıyorum. Yani çarpım şeklindeki ifade içerideki.
+
+233
+00:40:07,119 --> 00:40:12,099
+İki defa değilini aldığımız zaman toplam şeklinde demo organına gerçekleştirilir.
+
+234
+00:40:12,340 --> 00:40:15,519
+Ama içerideki değişken ise değilinin alınması lazım.
+
+235
+00:40:16,300 --> 00:40:18,480
+Bu durumda bu kısım anlaşıldı mı arkadaşlar?
+
+236
+00:40:24,467 --> 00:40:26,007
+Anlaşılmayan bir şey var mı?
+
+237
+00:40:33,235 --> 00:40:34,275
+Tamam, güzel.
+
+238
+00:40:35,975 --> 00:40:41,335
+Bundan sonra yapacağım işlem, artık px'i gördüğüm yere şöyle şunu yazıyorum.
+
+239
+00:40:41,335 --> 00:40:43,376
+Şu sigma'yı yazdım.
+
+240
+00:40:44,255 --> 00:40:50,235
+Sigma, px'i'nin değilinin değili şeklinde yazabilirim ifadeyi.
+
+241
+00:40:51,135 --> 00:40:58,435
+Dikkat edin, ben burada bunu yaparken arkadaşlar f'i yazmış oldum.
+
+242
+00:40:59,076 --> 00:41:00,175
+Amacım neydi benim?
+
+243
+00:41:00,659 --> 00:41:04,759
+A artı B'nin değili şeklindeki ifadeler yapmaktı.
+
+244
+00:41:05,219 --> 00:41:15,920
+Hakikaten baktığımda şu içerideki ifade, bakın bir toplam ifadesinin, şurada üstünün olduğunu düşünmeyin, burayı böyle bir genel bir X şeklinde düşünün.
+
+245
+00:41:15,920 --> 00:41:23,539
+Toplam şeklindeki bir ifadenin değili, yani içerideki tasarım zaten noru gerçekleştiriyor.
+
+246
+00:41:26,483 --> 00:41:51,863
+Değilinin alınması lazım. Dolayısıyla buradaki fonksiyon F ise, Değilini gerçekleştirirsem bu sigma'nın da, yani toplam şeklindeki bir ifadenin de Değilini almış olurum. Daha sonra tabii ki bu şekilde bir ifade, daha sonra nasıl kendi haline döndürülür arkadaşlar? Bir daha bunun Değilinin Değilini alırsanız ne yapmış oluruz arkadaşlar?
+
+247
+00:41:53,076 --> 00:41:56,655
+İstediğimiz F fonksiyonunu elde etmiş oluruz.
+
+248
+00:41:57,416 --> 00:42:03,076
+Hemen bir örnek yaparak kafamızda nasıl yapıldığını görelim.
+
+249
+00:42:03,076 --> 00:42:05,996
+Ne yapıyorduk buradaki işlemde?
+
+250
+00:42:06,836 --> 00:42:16,076
+Öncelikli olarak içerideki çarpım şeklindeki ifadeleri toplam şekle demorgunla dönüştürüp,
+
+251
+00:42:20,083 --> 00:42:32,543
+F üstü gibi değerlendireceğiz. Demin verdiğimiz örnekte indirgediğimiz fonksiyon neydi bizim? ABC. AB artı A üstü C idi değil mi arkadaşlar?
+
+252
+00:42:33,963 --> 00:42:47,123
+Peki ben bunu NOR haline getirmek istiyorsam şayet ne diyordum? A üstü artı B üstünün değili artı öyle değil mi?
+
+253
+00:42:49,172 --> 00:43:11,472
+İçeride A üstünün değili artı C'nin değili, nin değili. Şu şekle getiriyor bunu. Peki ifade hangi hale gelmiş oldu? A üstü artı B üstünün değili artı. Şu değiller birbirlerini götürecekler.
+
+254
+00:43:12,148 --> 00:43:35,268
+A artı C üstünün değili şeklinde gelmiş olur. Bakın, bu ifade ne? İçerideki ifadelere bakalım. Sadece önce kahverengi kalem. X artı Y'nin değili şeklinde bir ifade. Burası da aynı şekilde. X artı Y'nin değili şeklinde bir ifade. Yani bunlar noru gerçekleştirebiliyorlar.
+
+255
+00:43:39,476 --> 00:43:47,996
+Baktığımda, şurası X ifadesi ise, artı Y. Bunu ne yapmam lazım? Burası da F ifadesi.
+
+256
+00:43:48,756 --> 00:43:54,236
+X artı Y'nin değili haline getirmek istiyorum. O durumda ne yapmam lazım?
+
+257
+00:43:55,516 --> 00:44:04,916
+F üstünü yapıp, bir de bunların, yani F üstü ifadesinde, değilini almam gerekiyor arkadaşlar.
+
+258
+00:44:05,588 --> 00:44:11,188
+Bunu nasıl yapacağım arkadaşlar? Şöyle yapalım.
+
+259
+00:44:14,008 --> 00:44:27,828
+Bu F ifadesi ise F üstü ifadesi A üstü artı B üstünün değili artı A artı C üstünün değili bir tane de değil eklemiş olalım.
+
+260
+00:44:27,828 --> 00:44:30,728
+Yani şuradaki değili buraya koymuş oldum.
+
+261
+00:44:31,315 --> 00:44:52,215
+Yani bakın bu durumda ne hale gelmiş oluyor? Bakın burası bir X ifadesi. Artı Y. Şu dıştaki Y'de bizim yani şu olmuş oluyor. Şunu o hale getirmiş oluyor. Daha sonra bu F üstünü biliyorsunuz çıkışı bir fonksiyonun çıkışını değillemek kolay. Öyle değil mi? Şöyle bir.
+
+262
+00:44:54,452 --> 00:45:01,992
+F üstü ifadesini verdiğimde buradan zaten bir NOR kullanarak F'yi tekrar elde edebiliyorum.
+
+263
+00:45:03,172 --> 00:45:06,512
+Bu durumda çizeyim arkadaşlar. Bakalım ne diyeceğim?
+
+264
+00:45:07,232 --> 00:45:11,112
+Önce A üstü ile B üstünü elde etmem gerekiyor.
+
+265
+00:45:21,940 --> 00:45:25,240
+B üssü, şuradan da B'yi verdim diyelim.
+
+266
+00:45:26,320 --> 00:45:32,140
+Aynı şekilde başka ne lazım bana arkadaşlar? Buradan gördüğünüz gibi bir de C üssü lazım değil mi?
+
+267
+00:45:33,080 --> 00:45:36,120
+Şimdi mesela A üssü artı B üssünün değilini yapayım.
+
+268
+00:45:37,460 --> 00:45:40,840
+Bakın, kırmızıyla göstereyim onu. Önce şunu yaptım.
+
+269
+00:45:42,100 --> 00:45:43,820
+Daha sonra B üssünü yaptım.
+
+270
+00:45:44,211 --> 00:45:51,972
+Şimdi A üstü ile B üstünün toplamının değilini yapıyorum. Yani şunu yaptım. Şu fonksiyon gerçekleşti.
+
+271
+00:45:53,192 --> 00:46:02,532
+Şimdi bana bir A lazım. Bir de C üstü lazım. C üstünü de aynı şekilde şuradan elde edeyim.
+
+272
+00:46:05,291 --> 00:46:08,452
+A'yı da şuradan alayım.
+
+273
+00:46:10,068 --> 00:46:23,408
+Neyi gerçekleştiriyorum şimdi? A'yı aldım, C üstünü devlettim. A ile C üstünün değilini, A ile C üstünün değilini, toplamının değilini aldım. Burayı gerçekleştirdim.
+
+274
+00:46:24,448 --> 00:46:35,528
+Peki, daha sonra ne yapacağım? Bir de bunların bu iki ifadeyi toplayacağım ve değilini alacağım. Bu iki ifadeyi toplayacağım ve değilini alacağım.
+
+275
+00:46:36,692 --> 00:47:02,331
+Fakat bu elde ettiğim şey ne benim arkadaşlar? F üstü değil mi? Evet bu F üstü, bu elde ettiğim şey. Bir daha bunun D'ini alabilmek için ne yapmam lazım? Şöyle, şunu F haline getirmem gerekiyor.
+
+276
+00:47:04,244 --> 00:47:09,564
+Çünkü ben burada f üstünü hesaplamıştım.
+
+277
+00:47:09,984 --> 00:47:14,964
+Tekrar f üstünden f'e dönebilmek için bir daha bunun değilini almam gerekiyor.
+
+278
+00:47:17,324 --> 00:47:22,384
+Bunu yapmamın nedeni de biliyorsunuz f üstünü başlamanın nedeni de
+
+279
+00:47:22,384 --> 00:47:31,584
+şuradaki x artı y'li ifadenin bir NOR formunda olmasını sağlamaktı.
+
+280
+00:47:33,235 --> 00:47:41,476
+Evet, bu anlaşıldı mı arkadaşlar? Çarpımlar toplamı, NAND ve NOR tasarımı anlaşıldı mı?
+
+281
+00:47:41,476 --> 00:47:44,596
+[öğrenci]?
+
+282
+00:47:48,244 --> 00:47:49,484
+Anlaşıldı mı [öğrenci]?
+
+283
+00:47:54,739 --> 00:47:58,280
+Evet. [öğrenci].
+
+284
+00:48:00,280 --> 00:48:01,239
+Anlaşıldı hocam.
+
+285
+00:48:01,759 --> 00:48:02,599
+Tamamdır.
+
+286
+00:48:06,099 --> 00:48:07,440
+[öğrenci] anlaşıldı mı?
+
+287
+00:48:12,179 --> 00:48:15,260
+[öğrenci], bu kısım anlaşıldı mı?
+
+288
+00:48:25,844 --> 00:48:28,463
+Evet, şimdi geldik.
+
+289
+00:48:29,923 --> 00:48:30,644
+Bu konu.
+
+290
+00:48:34,068 --> 00:48:37,788
+Önce bir silelim bakalım yaptıklarımı. Tuvaletimizi temizledik.
+
+291
+00:48:42,963 --> 00:48:49,523
+Şimdi B1, yani bu sefer toplamlar çarpımı
+
+292
+00:48:54,003 --> 00:49:00,364
+Toplamlar çarpımı, NAND tasarımı.
+
+293
+00:49:01,804 --> 00:49:06,704
+Bu neydi? Tümleyen B tasarımı aslında.
+
+294
+00:49:08,063 --> 00:49:15,164
+En genel ifadeyi yazıp bulursak arkadaşlar, ben burada F eşittir.
+
+295
+00:49:17,164 --> 00:49:19,563
+En genel hali buydu hatırlarsanız.
+
+296
+00:49:21,012 --> 00:49:31,971
+Şimdi toplamlar çarpımının NAND tasarımı, NAND tasarımı yapıyorsam şayet şu şekle dönüştürmem gerekiyor demek ki.
+
+297
+00:49:32,751 --> 00:49:40,052
+A çarpı B'nin değili veya X çarpı Y'nin değili şeklinde bir ifade olması lazım.
+
+298
+00:49:40,831 --> 00:49:46,711
+Peki benim buradaki ifadem ne? Şu yeşille gösterdiğim bir toplam ifadesi var.
+
+299
+00:49:47,072 --> 00:49:50,512
+Deminki işlemlerin aslında tam tersi, aynısını yapacağım.
+
+300
+00:49:51,291 --> 00:49:56,431
+Toplam şeklindeki ifadeyi bir kere çarpımın değli haline getirmem gerekiyor.
+
+301
+00:49:57,112 --> 00:50:01,871
+Dolayısıyla önce şuradaki toplamsal ifadenin yerine ne koyabilirim?
+
+302
+00:50:03,351 --> 00:50:13,172
+Bu şekildeki ifadeyi arkadaşlar, P, X, Y'nin değlinin değli haline getirebilir miyim?
+
+303
+00:50:16,371 --> 00:50:28,672
+Pi'yi X'i'nin değillinin değili haline getirebilirim. Ne demek istiyorum burada? Toplam şeklinde bir ifade var diyelim. Yani şunu kastediyorum.
+
+304
+00:50:31,012 --> 00:50:34,271
+Toplam şeklinde, affedersiniz, şöyle.
+
+305
+00:50:36,992 --> 00:50:40,412
+A artı B şeklinde bir ifade var.
+
+306
+00:50:42,579 --> 00:50:47,960
+Nasıl çarpımsal hale getiririm? İki defa D'ini alayım. Kendisi yine bu.
+
+307
+00:50:49,179 --> 00:50:55,019
+Şu içteki NAT'la bir demorgan uygulasam neye dönüşecek bu?
+
+308
+00:50:55,859 --> 00:50:58,980
+A üstü çarpı B üstünün D'i.
+
+309
+00:51:00,219 --> 00:51:04,460
+Aslında şu görmüş olduğunuz kısım da onu gösteriyor.
+
+310
+00:51:04,460 --> 00:51:08,519
+Yani içerideki değişkenlerin D'ini al.
+
+311
+00:51:09,652 --> 00:51:17,612
+Ve de bu değişkenlerin değilini aldıktan sonra çarpım şeklindeki ifadenin de değilini koy yerine.
+
+312
+00:51:18,172 --> 00:51:25,312
+Çarpım şeklini. Önce içerideki değişkenlerin değilini al. Çarpım şeklinde gelen bu ifadelerin de değilini al.
+
+313
+00:51:25,751 --> 00:51:32,192
+Aslında burada yapılan işlem, ne derler, sembolik gösterimi bu şekilde.
+
+314
+00:51:33,076 --> 00:51:50,996
+Buradan devam edecek olursak artık Pi'yi ne koyacağız yerine? Artık Sigma Xi'nin yerine Pi'nin D ile X'nin yani içerideki değişkenlerin D ile haline getirmiş olacağız arkadaşlar.
+
+315
+00:51:53,076 --> 00:51:59,775
+Şeyi kaçırmayalım, NAND şeklinde yapılıyordu. Gerçekten şu içeriye baktığımda
+
+316
+00:52:00,371 --> 00:52:02,131
+Ne halde işlem?
+
+317
+00:52:03,931 --> 00:52:06,951
+Çarpım şeklindeki değişkenler var.
+
+318
+00:52:07,571 --> 00:52:11,671
+Yani şurayı genel olarak şöyle değişkenler gibi görün.
+
+319
+00:52:11,971 --> 00:52:15,231
+X çarpı Y gibi bir ifade.
+
+320
+00:52:15,791 --> 00:52:18,691
+Aslında X şöyle düşünmek lazım bunu.
+
+321
+00:52:19,551 --> 00:52:24,551
+X1 çarpı, X1'in değili çarpı, X2'nin değili.
+
+322
+00:52:26,739 --> 00:52:41,699
+X2'nin D'li gibi düşünün. Bir çarpım şeklindeki ifade var. Onun D'li gibi düşünün. Ne bu baktığımızda? A çarpı B'nin D'li gibi. Yani benim NAND tasarımma uyuyor.
+
+323
+00:52:43,699 --> 00:52:51,380
+Ama şimdi bunu yaptım ama dışarıdaki ifade ne olacak?
+
+324
+00:52:52,820 --> 00:52:57,260
+Buradan bir değer gelecek. Örneğin şuradan bir X değeri oluştu.
+
+325
+00:52:59,440 --> 00:53:04,200
+Onun da değilini, bakın dışarıdaki pi'nin de ne yapması lazım?
+
+326
+00:53:05,700 --> 00:53:13,460
+Çarpım şeklindeki ifadelerde dışarıdaki değerin de bir daha değilinin alınması lazım.
+
+327
+00:53:14,019 --> 00:53:19,460
+Dolayısıyla burada da bir F üstüne dönüşümü gerçekleştirmek lazım.
+
+328
+00:53:20,211 --> 00:53:45,392
+F üstü eşitti. Şöyle yapalım. Kırmızıyla devam edelim. P, P, X, Y'nin değili. Şuraya da bir NAT kapısı eklemiş olalım. Daha sonra bu F üstünü nasıl dönüştüreceğiz? Siz de biliyorsunuz. Şöyle kullanacağım bir, şöyle burada bir F değeri var.
+
+329
+00:53:46,164 --> 00:53:51,164
+Şöyle bir F üstü değeri varsa buradan F'e dönüştürebilirim.
+
+330
+00:53:53,924 --> 00:53:58,504
+Aynı örneği vereceğim arkadaşlar şimdi. Aynı örnekten devam ediyoruz.
+
+331
+00:54:00,104 --> 00:54:04,764
+Örneğimizde bu sefer yine toplamlar çarpımı şeklinde olsun.
+
+332
+00:54:04,764 --> 00:54:08,364
+A, B, C değişkenlerim olsun.
+
+333
+00:54:14,099 --> 00:54:23,979
+Çarpımlar toplamının, ne yapıyorduk burada biz? İlkinde, B evrede toplamlar çarpımının, NAND'lerle yapımını gerçekleştirdik.
+
+334
+00:54:24,039 --> 00:54:36,279
+Bakın burada, toplamlar çarpımı şeklinde bir ifade veriyorum. A üstü, artı C. Ne diyor bize burada bir? Bunu NAND'leyimiz.
+
+335
+00:54:37,279 --> 00:54:41,379
+Biz bunları bilmesek bile, içerideki ifadenin bir kere çarpımın değili.
+
+336
+00:54:42,739 --> 00:54:50,839
+haline getirmemiz gerektiğini, veya şöyle yapayım, X, Y'nin değili şekline getirmemiz gerektiğini biliyorsunuz.
+
+337
+00:54:51,460 --> 00:55:09,639
+Bu durumda ne yapabiliriz? A artı B'nin değilini, değilini alsak. Bunu ne yapıyoruz? A üstü çarpıp B üstü. İçerideki, AND. Bir de bunun, değilini alıyoruz. Öyle değil mi? İçerideki, yani,
+
+338
+00:55:10,079 --> 00:55:13,219
+Şu kırmızıyla gösterdiğim, şu demorganı sağlıyor.
+
+339
+00:55:14,559 --> 00:55:16,159
+Demorganı sağlıyor.
+
+340
+00:55:16,460 --> 00:55:20,380
+Dışarıdaki, NOT da yerinde duruyor.
+
+341
+00:55:21,099 --> 00:55:23,679
+Demek ki ben bunu, şöyle yazabilirim.
+
+342
+00:55:24,319 --> 00:55:28,400
+A üstü çarpı B üstü, değil mi?
+
+343
+00:55:29,460 --> 00:55:33,960
+A üstü çarpı B üstünün, D'li şekline getirebilirim.
+
+344
+00:55:35,299 --> 00:55:38,000
+Aynı şekilde burada da,
+
+345
+00:55:38,996 --> 00:55:46,696
+A üstünün değili, artı C'nin değilinin değili haline getirdim.
+
+346
+00:55:47,636 --> 00:55:50,976
+Peki, benim ifadem ne hale geliyor arkadaşlar?
+
+347
+00:55:50,976 --> 00:56:03,396
+A üstü çarpı B üstünün değili, çarpı A üstü A artı C üstü.
+
+348
+00:56:05,972 --> 00:56:13,752
+Baktığımda burası bir X şeklinde ifade ise, burası da Y şeklinde ifade ise, burası normal bir AND işlemi.
+
+349
+00:56:14,692 --> 00:56:17,732
+Bunu dönüştürmek için ne yapmam lazım? Değilini almam lazım.
+
+350
+00:56:18,332 --> 00:56:24,072
+O yüzden, değilli bir ifade haline getirebilmek için şöyle yapıyorum.
+
+351
+00:56:24,072 --> 00:56:31,372
+F üstü eşittir, A üstü, B üstünün değili.
+
+352
+00:56:31,891 --> 00:56:44,111
+A artı C üstünün D ile bir de bunlara şu genel D ile yazmış olayım.
+
+353
+00:56:45,931 --> 00:56:51,031
+Peki, bunu gerçekleştirecek olursam arkadaşlar, nasıl yapmam lazım?
+
+354
+00:56:51,672 --> 00:56:55,132
+Öncelikli olarak A üstünün alalım bir.
+
+355
+00:56:56,172 --> 00:56:57,771
+Şuradan bir A üstü gelsin.
+
+356
+00:56:59,795 --> 00:57:01,935
+Şuradan da bir V üstü gelsin.
+
+357
+00:57:05,588 --> 00:57:22,688
+Şimdi bunu gerçekleştirelim. Ne yapıyor burada? A üstü artı B üstünü alıyor. Bir de bunların değilini alıyor. Yani şu kısmı, kırmızıyla çizdiğim kısmı gerçekleştirmiş oldum.
+
+358
+00:57:23,768 --> 00:57:32,407
+Şimdi bir de C üstü, ikinci ifadeye geçeyim. Şuradan bir A gerekiyor bana. A tamam. C üstü lazım.
+
+359
+00:57:33,619 --> 00:57:59,260
+Şöyle, C'yi buradan vereyim. Şöyle bir kısa devre yapayım bunun bacaklarını. Şurada C üstü var. Burada ne olacak? Şu kısmı. A üstü C'nin, A üstü artı C üstünün değilini gerçekleştirmek. Daha sonra bunları çarpıp değilini alıyorum. Bakın. Bunları çarpıp değilini alıyorum. Bunları çarpıp değilini aldım.
+
+360
+00:57:59,664 --> 00:58:12,764
+Elde ettiğim ifade F üstü yalnız. Dikkat edin. Daha sonra bunu değiştirme, döndürmek için F'e ne yapmam lazım? Bunları bir kısa devre yapıp bir daha NAND'e koyduğum zaman F'e elde etmiş olurum.
+
+361
+00:58:14,104 --> 00:58:26,264
+Gördünüz mü? Hepsinde artık bütün 1, 2, 3, 4, 5, 6, 7 tane NAND ile. 7 NAND. Oysa ben bu ifadeyi gerçekleştirecek olsaydım.
+
+362
+00:58:26,655 --> 00:58:48,655
+Bakın ne gerekiyordu bana? A, B. A üstü için şöyle yapayım. A üstü için şöyle bir ifade gerekecekti. Burada A üstü olacaktı. Daha sonra bir de C olacaktı. Bunlar da toplanacaktı. Daha sonra bunlar...
+
+363
+00:58:49,460 --> 00:58:58,559
+çarpılacaktı ve de F'yi elde edecektim. Bakın kaç değişik kapı kullandım burada? 1, 2, 3 değişik kapı kullandım.
+
+364
+00:58:59,119 --> 00:59:09,240
+Oysa bu ve bu aynı sonucu üretiyor. Burada biraz daha fazla sayıda NAND kullandım ama hepsi eğer bir çipin içinde 8 tane NAND var, tek çiple halletmiş olurum.
+
+365
+00:59:09,240 --> 00:59:14,680
+Ama bunu yapabilmek için 3 tane çip kullanmam gerekiyor arkadaşlar.
+
+366
+00:59:17,300 --> 00:59:26,660
+Şimdi buradaki son örneğim olarak B2 toplamlar çarpımı
+
+367
+00:59:32,275 --> 00:59:33,596
+NOR tasarımı
+
+368
+00:59:37,492 --> 00:59:42,092
+Yani T veya T veya tasarım.
+
+369
+00:59:43,672 --> 00:59:47,192
+Toplamlar çarpımını nasıl gösteriyordum arkadaşlar?
+
+370
+00:59:49,371 --> 00:59:50,251
+F eşittir.
+
+371
+00:59:51,592 --> 00:59:56,751
+Şu şekilde toplam şeklindeki ifadeleri içe yazıyordum ve bunların çarpımını gösteriyordum.
+
+372
+00:59:57,692 --> 01:00:00,912
+Şimdi NOR yapacağıma göre ne olması lazım?
+
+373
+01:00:01,612 --> 01:00:03,512
+Şu şekilde bir yapı olması lazım.
+
+374
+01:00:04,724 --> 01:00:10,364
+Yani A ile B'nin toplamının değili şeklindeki bir ifade olması lazım.
+
+375
+01:00:10,964 --> 01:00:12,704
+İçeride bir toplam ifadesi var.
+
+376
+01:00:13,744 --> 01:00:15,884
+Bunu nasıl dönüştürebilirim şeye?
+
+377
+01:00:15,884 --> 01:00:19,364
+Önce bir F üstü alsam ne olmuş olur?
+
+378
+01:00:20,204 --> 01:00:24,004
+P, X, Y, D ile haline.
+
+379
+01:00:24,384 --> 01:00:29,984
+Çarpım şeklindeki bir ifadenin, çarpım şeklindeki bir ifadenin değilini almış olursam şayet.
+
+380
+01:00:30,452 --> 01:00:56,392
+Demorgan uyguladığımızı düşünün. Burası sigma. İçerideki değişkenlerinde nesi olacak? Deilo haline gelmiş olacak. Burası da f üstü tabii ki. Daha sonra bu f üstünü f'e dönüştürecek olursam, yani bir daha değilini alacak olursam, şöyle bakın içerideki ifade toplamların değili.
+
+381
+01:00:57,427 --> 01:01:11,147
+Buradan bir tane daha AND koyduğumuz zaman, öyle değil mi? Ki buna dönüşmüş oluyor. F üstünün DE'li, şu DE'li ifadesini, onu da buraya yerleştiriyorum.
+
+382
+01:01:13,268 --> 01:01:22,387
+Böylece ne elde etmiş oldum arkadaşlar? Bir toplamın DE'li almış olmak demek, NOR kullanmış demek.
+
+383
+01:01:22,387 --> 01:01:24,467
+NOR kullanmak demek.
+
+384
+01:01:25,652 --> 01:01:45,591
+Hemen örnek üzerinden gerçekleştirecek olursak, örnek, örneğimiz standart kullandığımız örnek ABC A artı B çarpı A üstü C şeklindeki ifade.
+
+385
+01:01:45,591 --> 01:01:51,211
+Ne yaptık burada? İki defa değilini aldık ifadenin. İki defa değilini aldık.
+
+386
+01:01:52,563 --> 01:02:12,363
+F üstüne alalım. F üstüne alırsak şahaya, A artı B'nin değili, artı değil mi? Yani A üstü C'nin değili haline getirmiş olduk.
+
+387
+01:02:19,795 --> 01:02:29,415
+X artı Y'nin değli, X artı Y şekline gelmiş oldu.
+
+388
+01:02:30,495 --> 01:02:31,735
+F üstü ifadesi.
+
+389
+01:02:32,455 --> 01:02:35,375
+Bunu da ne hale getirmem lazım benim arkadaşlar?
+
+390
+01:02:36,735 --> 01:02:41,735
+Bunu tekrar X artı Y'nin değli şekline getirmem lazım.
+
+391
+01:02:43,115 --> 01:02:45,415
+Bir daha F üstünü alırsam şayet.
+
+392
+01:02:46,804 --> 01:03:05,384
+F üstünün D'li ifadesini alırsam, A artı B'nin D'li artı A üstü artı C'nin D'li, şu dışarı çizmiş olduğum NOT da şuraya gelmiş oluyor.
+
+393
+01:03:07,384 --> 01:03:13,384
+Bu durumda bunu çizecek olursam, önce şunu çizeyim.
+
+394
+01:03:14,483 --> 01:03:26,344
+Bir A ile B'nin toplamının değili var. Yani şurası, şurası A, şurası B. Yani şunu gerçekleştirdim.
+
+395
+01:03:29,403 --> 01:03:40,403
+Bunu gerçekleştirdim burada. Bir de A'nın değili, şurada A'nın değili. A'nın değilini yapabilmek için neye ihtiyacım var?
+
+396
+01:03:40,884 --> 01:03:42,123
+Geliyorum şöyle.
+
+397
+01:03:45,003 --> 01:03:47,864
+Şurada A'nın değeri oluştu bir nor kapısıyla.
+
+398
+01:03:48,483 --> 01:03:50,083
+Bir de C'ye ihtiyacım var.
+
+399
+01:03:50,724 --> 01:03:56,784
+Bu ikisini toplayıp değilini aldığım zaman zaten şurası gerçekleşmiş oluyor.
+
+400
+01:03:58,724 --> 01:04:02,623
+Bir de bu iki ifadeyi X ile Y'yi toplayıp değilini alırsam.
+
+401
+01:04:03,072 --> 01:04:10,032
+X'e, Y toplayıp, D'ini alırsam, zaten bana F'i vermiş oluyor arkadaşlar.
+
+402
+01:04:11,411 --> 01:04:17,092
+Gördüğünüz gibi, D Morgan ve de, basitçı, sadece D Morgan'dan yerlidir.
+
+403
+01:04:19,251 --> 01:04:23,931
+Düşmesi gerektiğinden bahsediyoruz. Başka da bir şey yok arkadaşlar.
+
+404
+01:04:26,012 --> 01:04:28,152
+Sizden sormak istediği bir soru var mı arkadaşlar?
+
+405
+01:04:32,115 --> 01:04:43,476
+Sormak istediğiniz bir soru yoksa yaklaşık 10 dakika sonra dersimize başlıyoruz. Kısa bir ara veriyoruz. Saat 15 çeyrekte görüşmek üzere.
+
+406
+01:17:21,555 --> 01:17:38,815
+Evet arkadaşlar, şimdi elde ettiğimiz bu kapı bilgileriyle beraber artık kombinezonsal devrelerin tasarımına geçeceğiz. Daha önceki kısımlarla alakalı herhangi bir sorunuz var mı?
+
+407
+01:17:45,235 --> 01:17:47,996
+Evet, ikinci dersimize de başlayalım.
+
+408
+01:17:50,275 --> 01:17:52,815
+Herhalde bir soru yok. Öyle değil mi?
+
+409
+01:17:54,435 --> 01:17:55,636
+Ses gelsin bakalım.
+
+410
+01:17:59,572 --> 01:18:10,032
+Şimdi, şimdiki dersimizin konusu arkadaşlar, kombinezonsal devreler.
+
+411
+01:18:17,716 --> 01:18:30,516
+Şimdi, kombinezonsal devreler deyince, çıkışı yalnızca o andaki giriş değerlerine bağlı olan ve bilinen kapıların bir araya getirilmesiyle oluşan lojik devreler.
+
+412
+01:18:30,516 --> 01:18:41,756
+Bir fonksiyonu gerçekleştiriyoruz. Bunların X1, X2, X3, Xn girişleri var.
+
+413
+01:18:42,228 --> 01:18:46,628
+Yani bildiğiniz ABC şeklindeki değişkenler aslında.
+
+414
+01:18:47,448 --> 01:18:51,087
+Bir çıkış fonksiyonu, çıkışta bu fonksiyon değerleri var.
+
+415
+01:18:51,688 --> 01:19:01,408
+Ve burada oluşturduğumuz, bu sistem içerisinde oluşturduğumuz çıkış, bunların T anındaki girişlerine bağlı.
+
+416
+01:19:07,796 --> 01:19:17,136
+Gerek yok. Hafıza yapısına gerek yok. Çıkış anında, T anındaki girişlerden, T anındaki çıkış üretiliyor arkadaşlar.
+
+417
+01:19:17,936 --> 01:19:22,376
+Peki, kombinezonsal devrelerle biz neleri göreceğiz arkadaşlar?
+
+418
+01:19:23,836 --> 01:19:33,136
+Öncelikli olarak aritmetik toplama-çıkarma devrelerini, toplama-çıkarma devreleri.
+
+419
+01:19:36,051 --> 01:19:38,971
+Bunun altında öncelikle yarı toplayıcı,
+
+420
+01:19:43,380 --> 01:19:45,579
+Ve de çıkariciyi göreceğiz.
+
+421
+01:19:46,819 --> 01:19:54,720
+Bunların haricinde tam toplayıcı ve de çıkariciyi göreceğiz.
+
+422
+01:19:57,720 --> 01:20:03,739
+Bunun haricinde arkadaşlar özelleşmiş bazı kombinezonsal devreler var.
+
+423
+01:20:04,480 --> 01:20:08,000
+Örneğin ilk önce multiplexer yapısını göreceğiz.
+
+424
+01:20:08,000 --> 01:20:09,520
+Multiplexer.
+
+425
+01:20:10,260 --> 01:20:31,680
+Şuna A diyecek olursak B, multiplexer, Türkçesi seçiciler, daha sonra dağıtıcılar, bunun tersi şeklinde çalışan, demultiplexer, yani seçiciliğin tam tersi dağıtıcılar.
+
+426
+01:20:37,492 --> 01:20:46,952
+Kod çözücüler, yani decoderleri göreceğiz. Bu kod çözücü olarak adlandırılıyor.
+
+427
+01:20:49,532 --> 01:20:56,471
+Kod çözücü. Ondan sonra kodlayıcılar, yani encoders.
+
+428
+01:21:01,235 --> 01:21:05,376
+Bunlar da arkadaşlar kodlayıcı olarak adlandırılıyor.
+
+429
+01:21:07,876 --> 01:21:14,675
+Ondan sonra bunları birleştirerek arkadaşlar alü tasarımına gireceğiz.
+
+430
+01:21:14,836 --> 01:21:24,836
+Bu alü'lar aritmetik, lojik, unit şeklinde.
+
+431
+01:21:29,747 --> 01:21:33,327
+Seven Segment Display yapısını anlatacağız.
+
+432
+01:21:37,427 --> 01:21:43,167
+En sonunda çıkış bağlantı şekillerinden bahsederek konumuzu bitireceğiz arkadaşlar.
+
+433
+01:21:44,887 --> 01:21:59,867
+Şimdi dediğim gibi kombinezonsal devrelerin gerçekleştirilişinde de aynı şekilde arkadaşlar AND, OR, NAND, NOR, XOR veya XNOR yapılarını kullanacağız.
+
+434
+01:21:59,867 --> 01:22:04,647
+Yani temel kapıları ve türetilmiş kapıları kullanacağız.
+
+435
+01:22:05,076 --> 01:22:09,456
+Peki, kombinezonsal devre tasarımı nasıl gerçekleştiriliyor?
+
+436
+01:22:10,655 --> 01:22:14,095
+Kombinezonsal devre tasarımı.
+
+437
+01:22:15,675 --> 01:22:18,355
+Bunların adımları var arkadaşlar.
+
+438
+01:22:19,815 --> 01:22:24,155
+İlk adımda arkadaşlar, problem sözle tanıtılıyor.
+
+439
+01:22:24,155 --> 01:22:28,155
+Problem tanımı yapılıyor sözler olarak.
+
+440
+01:22:28,335 --> 01:22:31,935
+Yani biz şu kutucuğun ne yapmasını istiyoruz.
+
+441
+01:22:32,564 --> 01:22:37,963
+Bu kutunun görev yerine kaç input alacak, kaç output alacak şeklinde.
+
+442
+01:22:38,684 --> 01:22:45,144
+Eğer biz bunu daha genel bir biçimde gösterecek olursak şöyle de gösterebiliriz.
+
+443
+01:22:45,144 --> 01:22:48,043
+Şunu kombinezonsal devre diyelim.
+
+444
+01:22:52,659 --> 01:23:09,039
+Girişinde X1'den XN'e kadar girişler var. Kaç çıkış istediğimizi de aynı şekilde tanımlamamız lazım. Z1'den ZN'e kadar kaç çıkış olması gerektiğini.
+
+445
+01:23:09,408 --> 01:23:13,568
+ZN demeyelim de buna aynı sayıda olmayacak çünkü ZM diyelim.
+
+446
+01:23:14,268 --> 01:23:21,108
+En genel gösterişi burada. Öncelikle bu kombinezonsal devre ne yapacak? Bunun tanımını yapmamız lazım.
+
+447
+01:23:22,728 --> 01:23:28,048
+İkinci olarak arkadaşlar, giriş ve çıkış değişkenlerinin sayısı.
+
+448
+01:23:36,916 --> 01:23:45,476
+sayısı ve de varsa isimlendirmesi yapılıyor.
+
+449
+01:23:47,175 --> 01:23:54,636
+Üç, üçüncü adımda arkadaşlar artık probleme ilişkin doğruluk tablosu.
+
+450
+01:23:58,387 --> 01:24:00,427
+Doğruluk tablosu oluşturulacak.
+
+451
+01:24:04,851 --> 01:24:31,391
+Dördüncü olarak arkadaşlar, her bir çıkışa ait lojik fonksiyon, her bir çıkışa ait lojik fonksiyon bilinen yöntemlerden biriyle her bir çıkışa ait lojik fonksiyon, çünkü her bir çıkış farklı çıkışlar oluşturacağı için ayrı fonksiyon olarak değerlendiriliyor.
+
+452
+01:24:32,212 --> 01:24:39,132
+Lojik fonksiyon, minimum maliyet olması için ne yapılıyor? İndirgeniyor.
+
+453
+01:24:41,132 --> 01:24:44,272
+Peki, neylerle ilgilenecek?
+
+454
+01:24:45,051 --> 01:24:55,532
+Bir, görüşe dayalı, Karnaugh haritaları veya Queen-McLawas yöntemi.
+
+455
+01:24:59,252 --> 01:25:01,792
+Yöntemiyle indirgeniyor arkadaşlar.
+
+456
+01:25:03,932 --> 01:25:10,272
+Beşinci olarak arkadaşlar, kullanılacak lojik devre elemanları belirleniyor.
+
+457
+01:25:10,932 --> 01:25:19,532
+Olabildiğince tek tip kapılar kullanılacaksa indirgenmiş, geçen ders gördüğümüz indirgenmiş çıkış fonksiyonları tekrar düzenleniyor.
+
+458
+01:25:20,152 --> 01:25:26,432
+Eğer tek tip bir kapı kullanılmayacaksa da aynı şekilde bu indirgenmiş haller kullanılıyor.
+
+459
+01:25:27,028 --> 01:25:34,708
+En sonunda tek tip kapı kullanımı isteniyorsa
+
+460
+01:25:39,572 --> 01:25:41,952
+Dönüşümler gerçekleştirilir.
+
+461
+01:25:47,956 --> 01:25:53,275
+En son adım arkadaşlar, artık devre ilişki.
+
+462
+01:25:57,652 --> 01:26:02,572
+Devre aşaması çizilir.
+
+463
+01:26:05,152 --> 01:26:13,172
+Şimdi buna basit bir örnek vererek yolumuza devam edelim.
+
+464
+01:26:14,231 --> 01:26:19,572
+Örneğin, şöyle bir şeydensin, problemdensin.
+
+465
+01:26:21,011 --> 01:26:33,731
+İki girişli, bir çıkışlı bir kombinezonsal devre isteniyor. İki girişli, X1 ve X2, iki girişli ve bir çıkışlı bir kombinezonsal devre olsun.
+
+466
+01:26:33,731 --> 01:26:47,891
+Ve bu kombinezonsal devrede girişlerin her ikisi de sıfır ise devrenin çıkışında lojik sıfır, aksi durumda
+
+467
+01:26:47,935 --> 01:26:51,735
+Devrenin çıkışında lojik 1 olması isteniyor.
+
+468
+01:26:52,136 --> 01:26:52,835
+Tekrar ediyorum.
+
+469
+01:26:53,296 --> 01:27:01,395
+Girişlerin her ikisinde 0 ise, bunu doğruluk tablosuna da yazabiliriz arkadaşlar.
+
+470
+01:27:01,576 --> 01:27:07,216
+Girişlerin her ikisi de X1, X2 ve de çıkış.
+
+471
+01:27:07,415 --> 01:27:10,235
+Bakın burada önce problemi tanımlıyorum sözler olarak.
+
+472
+01:27:10,804 --> 01:27:18,484
+Daha sonra doğruluk tablosunu yapıyorum. Yani 1 ve 2 nolu adımları yaptım. Giriş-çıkış sayısını belirledim. Problemi tanımlıyorum.
+
+473
+01:27:19,004 --> 01:27:30,884
+Ve probleme ilişkin doğruluk tablosunu veriyorum. Girişlerin her ikisi de 0 ise. Çıkış 0. Bunun haricindeki çıkışlar da 1 versin.
+
+474
+01:27:32,104 --> 01:27:35,564
+Şu anda siz bunun hangi eleman olduğunu biliyorsunuz ama...
+
+475
+01:27:35,828 --> 01:27:44,927
+Biz sadece problem olarak verdik şu anda. Bunun haricindeki yerlerde bir olan bir yapı olsun.
+
+476
+01:27:44,927 --> 01:27:52,208
+Yani bunun içeriğindeki çizilecek yapı ne? Daha sonra bunun bir karnom yapını oluşturuyoruz.
+
+477
+01:27:52,347 --> 01:27:59,948
+Karnom yapı ne olacak arkadaşlar? İki değişken olduğu için X1, X2, 0, 1, 0, 1.
+
+478
+01:28:01,492 --> 01:28:14,372
+Ne diyoruz arkadaşlar? Şuralarda birler var. Dolayısıyla ne yapmamız lazım? İndirgemiyi yapalım. Birincisi bu, ikincisi bu. Buradan ne olacak arkadaşlar?
+
+479
+01:28:16,112 --> 01:28:27,932
+X2 gelecek. Bundan ne gelecek? X1 gelecek. Fonksiyonumuz neymiş? X1 artı X2 şeklindeymiş. Demek ki bunu açacak olursak biz
+
+480
+01:28:29,235 --> 01:28:39,335
+X1 alıyor. Şöyle. Hangi tür elemanla gerçekleştirebiliriz bunu? OR elemanıyla gerçekleştiririz.
+
+481
+01:28:40,876 --> 01:28:50,335
+Demek ki bunun en basit yapıda bir OR elemanıyla gerçekleşecek bir problem tanımı yapmış oluyoruz.
+
+482
+01:28:52,036 --> 01:28:56,415
+Peki, şöyle bir problem verilse bize Şahit.
+
+483
+01:28:57,203 --> 01:29:11,823
+Örneğimiz şu olsa, örnek, iki girişli, bir çıkışlı, bir kombinezonsal devre istiyorlar. Yine iki girişli ve bir çıkışlı kombinezonsal devre.
+
+484
+01:29:13,543 --> 01:29:16,743
+Girişler birbirine eşitse devrenin çıkışı lojik bir.
+
+485
+01:29:18,323 --> 01:29:25,724
+Girişler birbirinden farklı ise devrenin çıkışı lojik sıfır. Problemin tanımını yaptık, giriş çıkışları belirledik.
+
+486
+01:29:26,503 --> 01:29:36,963
+Şimdi doğruluk tablosunu yapalım. Ne diyor burada? Girişler birbirine eşitse, önce bütün giriş kombinasyonlarını yazalım.
+
+487
+01:29:38,143 --> 01:29:43,083
+Girişler birbirine eşitse sıfır versin, bunun haricindeki yerlerde bir versin.
+
+488
+01:29:44,532 --> 01:29:46,712
+Dördüncü adımımız neydi? İndirgeme.
+
+489
+01:29:47,412 --> 01:29:57,952
+Hemen Karnaugh mapini bu doğruluk tablosuna göre yaptığımızda, X1 ve X2 yaptığımızda, neyi elde edeceğiz arkadaşlar?
+
+490
+01:29:59,311 --> 01:30:02,231
+Sadece şuralarda bir veren bir devre var.
+
+491
+01:30:03,131 --> 01:30:07,112
+Eğer biz bunu yazacak olursak, nasıl yazmamız lazım?
+
+492
+01:30:07,112 --> 01:30:09,112
+F fonksiyonu.
+
+493
+01:30:09,811 --> 01:30:17,931
+X1'in değili, X2'nin değili, artı, X1, X2, şeklinde bir fonksiyon.
+
+494
+01:30:18,431 --> 01:30:21,752
+Bu neydi arkadaşlar, eğer biz bunu gerçekleştirecek olursak?
+
+495
+01:30:22,451 --> 01:30:24,592
+İki türlü gerçekleştirebiliriz.
+
+496
+01:30:25,192 --> 01:30:28,351
+Aynen burada bir değilini alan ve çarpan.
+
+497
+01:30:28,979 --> 01:30:33,059
+Ve girişleri çarpan, ANDleyen bir fonksiyonla yapabiliriz.
+
+498
+01:30:33,659 --> 01:30:38,459
+Yani X1'in değilini alan, eğer bunun içini dolduracak olursak şöyle.
+
+499
+01:30:46,036 --> 01:31:11,595
+Tabloyu mu yanlış geçirdim? Pardon, evet. Doğru söylüyorsunuz. Girişler aynıysa bir verecekti değil mi? Girişler aynıysa, bir daha probleme bakayım. Yanlışmış yaptım. Girişler birbirine eşit değilse, birbirine eşitse devrenin çıkışında lojik bir olacak. Girişler birbirine eşitse bir verecek, birbirine eşit değilse sıfır verecek. Onu düzelteyim.
+
+500
+01:31:12,627 --> 01:31:19,227
+Bunu bu şekilde gerçekleştirebiliriz. Ne diyeceğiz önce? Bu yapının içerisini çizebilmek için.
+
+501
+01:31:20,387 --> 01:31:31,188
+X1 buradan girecek, X2 buradan girecek. Öncelikli olarak X1'in bir değilini alacağız. Daha sonra X2'nin değilini alacağız.
+
+502
+01:31:39,828 --> 01:31:51,648
+X2'nin AND'lenmesi, arkasından bu ikisinin OR'lanmasıyla çıkış oluşturulacak.
+
+503
+01:31:52,488 --> 01:31:56,828
+Fakat bunun yerine ne kullanabiliriz arkadaşlar?
+
+504
+01:31:57,788 --> 01:32:03,568
+Bunların yerine, bunların denge olan EXOR.
+
+505
+01:32:03,904 --> 01:32:15,464
+X-NOR kapısını da tek başına kullanabiliriz. Veya şu şekilde sadece bir X-NOR ile gösterebiliriz. Bu ikisi birbirine muadiller arkadaşlar.
+
+506
+01:32:16,844 --> 01:32:27,824
+İki türlü tasarım yapılabilir. Elimizde hangi çip varsa burada tabii ki daha fazla bir NOT kapısı, AND kapısı bir de VIA kapısı, OR kapısı kullanmamız gerekecek.
+
+507
+01:32:29,652 --> 01:32:34,891
+Şimdi bunlar bildiğimiz tek kapılarla gerçekleştirilen yapılardı.
+
+508
+01:32:35,632 --> 01:32:39,091
+Şimdi biraz daha farklı bir fonksiyon tanımlayalım.
+
+509
+01:32:40,351 --> 01:32:47,332
+Şimdi 2 bitlik örneğimiz bu örneğimizde 2 bitlik 2 sayı olsun.
+
+510
+01:32:47,652 --> 01:32:50,452
+2 bitlik 2 sayı olsun.
+
+511
+01:32:52,672 --> 01:32:55,551
+Ve bunlar şu şekilde tanımlansın.
+
+512
+01:32:56,020 --> 01:33:07,600
+A1, A0, ilk dijit, en anlamsız dijit, least significant bit, A0, most significant bit ise A1 ile tanıtılsın.
+
+513
+01:33:22,420 --> 01:33:24,159
+Genlik karşılaştırıcı.
+
+514
+01:33:28,916 --> 01:33:37,556
+Yani Amplitude Comparator
+
+515
+01:33:41,076 --> 01:33:46,036
+Genlik karşılaştırıcı, amplitude comparator'ı gerçekleştirelim bakalım.
+
+516
+01:33:47,235 --> 01:33:51,015
+Şimdi, tutanım verildi, iki bitlik, iki sayı var.
+
+517
+01:33:51,756 --> 01:33:55,735
+Demek ki benim burada, önce neyim gerekiyor?
+
+518
+01:33:55,735 --> 01:34:01,155
+Bu kapalı kutunun içerisine baktığımda, ne diyecekmiş?
+
+519
+01:34:02,115 --> 01:34:08,216
+Birbirine eşit, küçük ve büyük olduğu yerleri bulalım.
+
+520
+01:34:08,659 --> 01:34:18,760
+Örneğin A sayısı B'den büyükse şayet A sayısı A ile B birbirine eşitse bir tane eşit çıktısı üretelim.
+
+521
+01:34:19,059 --> 01:34:22,039
+Z eşit çıktısı üretelim.
+
+522
+01:34:22,039 --> 01:34:31,800
+Bir tane A sayısı B sayısından büyükse Z A büyük B.
+
+523
+01:34:32,756 --> 01:34:46,155
+Hemen alalım. A'nın B'den büyük olduğu zaman 1 veren, bir tane de A küçük, B'den, A'nın B'den küçük olması durumunda 1 üreten.
+
+524
+01:34:46,155 --> 01:34:59,115
+Yani bu 3 çıkıştan sadece biri 1 olacak, diğerleri 0 olacak. Giriş olarak ne alacak arkadaşlar? A1, A0, B1, B0.
+
+525
+01:35:01,332 --> 01:35:09,132
+Şimdi bu kombinezonsal devreyi, genlik karşılaştırıcı, genlik karşılaştırıcı devresini yapalım.
+
+526
+01:35:11,272 --> 01:35:18,792
+Şimdi doğruluk tablosunu yapacak olursak bunun şahit, şöyle dememiz lazım.
+
+527
+01:35:19,172 --> 01:35:25,692
+A0, A1, B, pardon, büyükleri başa yazalım.
+
+528
+01:35:28,404 --> 01:35:43,804
+A1, A0, B1, B0. Burası bizim girişlerimiz. İkinci yapacağımız şey, çıkışlar.
+
+529
+01:35:55,699 --> 01:36:01,599
+A' çıkışlarımız veya A küçük B durumu olmasına bakalım.
+
+530
+01:36:03,420 --> 01:36:11,920
+Şimdi biz burada bu tabloyu şöyle kendi içerisinde dörde ayırabiliriz. Şu şekilde.
+
+531
+01:36:15,956 --> 01:36:18,176
+Kendi içerisinde 4 ayırabiliriz.
+
+532
+01:36:18,935 --> 01:36:23,655
+Şöyle deriz, önce A1A0'ın 0,0 olduğu bir durum.
+
+533
+01:36:27,155 --> 01:36:31,175
+Daha sonra A1'in A1, A0 sayı değeri 0 oldu.
+
+534
+01:36:31,256 --> 01:36:34,595
+Yani A değerinin şu ikisi A sayısını veriyor.
+
+535
+01:36:36,095 --> 01:36:40,315
+Şu ikisi birleşip B sayısını veriyor.
+
+536
+01:36:41,695 --> 01:36:44,775
+Daha sonra A1, A sayısının 1 oldu.
+
+537
+01:36:49,076 --> 01:36:50,556
+Durumları yazacağız.
+
+538
+01:36:51,676 --> 01:36:55,615
+Daha sonra 2 olduğu durumları yazacağız.
+
+539
+01:36:57,456 --> 01:37:01,096
+Daha sonra da 3 olduğu, değil mi?
+
+540
+01:37:01,716 --> 01:37:03,976
+Sırasıyla 3 olduğu durumları yazacağız.
+
+541
+01:37:06,836 --> 01:37:11,115
+Tabii B1, A0 olduğunda B1 hangi değerleri alabilir?
+
+542
+01:37:11,115 --> 01:37:13,615
+0, 0, 0, 1.
+
+543
+01:37:14,452 --> 01:37:31,632
+Aynı şekilde 0 0 0 1 1 0 1 1 0 0 0 1 1 0 0 1 1 0 0 1 1 0 1 1 1
+
+544
+01:37:31,632 --> 01:37:39,672
+Gördüğünüz gibi arkadaşlar bu 16 tane 16 inputun hepsini yazmış olduk.
+
+545
+01:37:40,595 --> 01:38:05,555
+Şu ilkinde ne arkadaşlar? İkisi de 0 değeri verdiği için eşit olan 1. Şu ikinci satırda ise hangisi büyük? P sayısı büyük. Şurası 0 üretirken burada P sayısı 1, diğerleri 0. Sadece biri hangi çıkış durumunu gösteriyorsa o 1 olacak.
+
+546
+01:38:06,387 --> 01:38:33,328
+Daha sonra yine B büyük, 1, 0, 0. Yine B büyük, 1, 0, 0. 3 büyüktür 0'dan. Burada da Hakeza ne yapılıyor? Anca şurada eşitlik durumu var. Şurası 1. Burada A, B'den büyük. 1 büyüktür 0'dan. Burası 1, buralar 0. Ondan sonra 2.
+
+547
+01:38:35,667 --> 01:39:02,947
+Burada yanlış mı yaptık? 2 büyüktür birden, 3 büyüktür birden, şuralarda 1. Bunları oluşturmuş olduk. Tam şurada eşitlik durumu var. Şurada 1, diğerleri 0. Burada daima A büyük. Bakın 2 daima 0'dan da 1'den de büyük. 1, 1, diğerleri 0. En sonucunda 3 büyüktür 2'den. Şu 3 büyüktür 2'den.
+
+548
+01:39:03,731 --> 01:39:22,832
+Şeklinde. Burada ise eşitlik durumu şu en sonda. Bunun dışındaki herhalde A büyük 1, 1, 1 şeklinde doğruluk tablomuzu oluşturmuş olduk arkadaşlar.
+
+549
+01:39:23,492 --> 01:39:30,752
+Buraya kadar anlaşıldı mı? Burayla alakalı bir sorunuz var mı? Problem.
+
+550
+01:39:31,315 --> 01:39:36,556
+Artı, doğruluk tablosunun oluşturmasıyla alakalı tamamdır.
+
+551
+01:39:38,115 --> 01:39:42,076
+Şimdi bizim elimizde kaç tane fonksiyon var?
+
+552
+01:39:42,496 --> 01:39:49,275
+Çıkış fonksiyonu. Bakın, birinci çıkış, ikinci çıkış, üçüncü çıkış olmak üzere üç tane fonksiyon var.
+
+553
+01:39:49,396 --> 01:39:56,115
+Sırasıyla bunları ele alarak, bunların karnomeplerini alarak ayrı ayrı ne yapacağız?
+
+554
+01:39:56,636 --> 01:39:57,976
+Fonksiyonları oluşturacağız.
+
+555
+01:39:58,579 --> 01:40:12,760
+Önce A büyük B, yani ZAB'yi oluşturalım. Yani A'nın B'den büyük olduğu şu ilk sütunu bir karnomepe yerleştirelim.
+
+556
+01:40:13,900 --> 01:40:19,920
+Bunu karnomepe yerleştirdiğimizde arkadaşlar, şu şekilde ayarlamamız lazım.
+
+557
+01:40:21,699 --> 01:40:24,340
+Benim değişkenlerim ne olacak arkadaşlar burada?
+
+558
+01:40:26,068 --> 01:40:39,148
+A1, A0, B1, B0 şeklinde 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0 şeklinde getirmiş oldum.
+
+559
+01:40:40,568 --> 01:40:47,347
+Ben bunları hızlıca yerine kaç tane 1 olacak? 1, 2, 3, 4, 5, 6 tane 1 olacak.
+
+560
+01:40:48,387 --> 01:40:50,728
+Yerleştirdiğimde arkadaşlar şunu elde ediyorum.
+
+561
+01:40:50,728 --> 01:40:51,747
+Şöyle.
+
+562
+01:40:53,555 --> 01:40:57,015
+Ve de burada bir 1 var. Diğer her yer 0 arkadaşlar.
+
+563
+01:40:57,815 --> 01:41:01,456
+En büyük komşulukla başlayayım. En büyük komşuluğa bunu aldım.
+
+564
+01:41:02,755 --> 01:41:08,555
+Bunu kenarda bırakmamak için şu komşuluğu aldım. Bir de şu komşuluğu almış oldum. Şöyle.
+
+565
+01:41:10,635 --> 01:41:17,076
+Bunun durumunda, bu durumda Z, A, B durumunda.
+
+566
+01:41:17,076 --> 01:41:20,395
+Eğer ben bunları indirgeyecek olursam,
+
+567
+01:41:20,819 --> 01:41:23,319
+Şurada ne verecek? Şunu söyleyin siz bana.
+
+568
+01:41:25,119 --> 01:41:32,180
+A1, B1 üstü. Öyle değil mi? A1, B1 üstü.
+
+569
+01:41:33,300 --> 01:41:35,859
+Şurada ne var? Şununla ne diyeceğim arkadaşlar?
+
+570
+01:41:38,600 --> 01:41:39,920
+Siz söyleyin.
+
+571
+01:41:42,680 --> 01:41:47,279
+B1 üstü, B0 üstü. Başa ne gelecek?
+
+572
+01:41:48,180 --> 01:41:51,600
+A0 üstü. Öyle değil mi?
+
+573
+01:41:54,260 --> 01:41:55,900
+A0 gelmeyecek mi hocam?
+
+574
+01:41:56,100 --> 01:42:02,039
+A0 doğru. Tamamdır. Şuna bakalım bir. Burada ne olacak?
+
+575
+01:42:03,860 --> 01:42:13,740
+A1, A0 ve de B0'ın üstü. Değil mi?
+
+576
+01:42:14,260 --> 01:42:19,180
+Bu durumda bu fonksiyon ne olacak? Aslında bu bir fonksiyon. Fonksiyon bir desek de olur.
+
+577
+01:42:21,220 --> 01:42:35,800
+A1, B1 üstü artı A0, B1'in değili B0'ın üstü artı A1, A0, B0'ın üstü şekline gelecek.
+
+578
+01:42:37,420 --> 01:42:40,539
+Şimdi sırasıyla gidelim.
+
+579
+01:42:40,948 --> 01:42:51,528
+İkinci olarak yazacağımız şey Z eşittir, A eşittir, B durumu. Yani benim F2 durumum.
+
+580
+01:42:53,388 --> 01:42:56,268
+Bunun karnım ipini çizecek olursam arkadaşlar,
+
+581
+01:42:58,408 --> 01:43:01,088
+bunun karnım ipini çizecek olursam,
+
+582
+01:43:02,355 --> 01:43:14,235
+Burada da A1, A0, B1, B0, 00, 01, 11, 10, 00, 01, 11, 10 şeklinde getirdim.
+
+583
+01:43:15,135 --> 01:43:18,416
+Bunun da ikinci sütünde kaç tane 1 var? 1.
+
+584
+01:43:18,996 --> 01:43:23,895
+Hancı eşitlik durumunda. Yani iki sayının birbirine eşit olduğu durumlarda var.
+
+585
+01:43:24,496 --> 01:43:27,796
+İki sayının birbirine eşit olduğu durumlar neresi arkadaşlar? Şuralar.
+
+586
+01:43:30,420 --> 01:43:45,779
+Bunlarda en büyük komşuluk alınmıyor. Maalesef tek başlarına alınıyor. Komşuluk hiç oluşmuyor. Köşegenlerden de oluşmuyor. Bu durumda ben ne yazmam lazım? Z eşittir, Z A eşittir, B durumunda.
+
+587
+01:43:58,547 --> 01:44:18,587
+A1 üstü, A0, B1 üstü, B0 artı, şuna geldiğimiz zaman, A1, A0, B1, B0 artı, A1, A0 üstü,
+
+588
+01:44:19,764 --> 01:44:31,923
+B1, B0, 3. Gördüğünüz gibi oldukça uzun bir fonksiyon çıkmış olacak. Dört girişli bir AND ile beraber bunu gerçekleştirebileceğiz.
+
+589
+01:44:33,604 --> 01:44:43,563
+Şimdi son adımda, bu da ikincisiydi. Son adımda arkadaşlar şunu gerçekleştirmemiz lazım.
+
+590
+01:44:46,292 --> 01:44:55,812
+küçük B'den, yani benim şu üçüncü F, üçüncü çıkışım olmuş oluyor arkadaşlar.
+
+591
+01:44:57,632 --> 01:45:01,372
+Burada bunu yazacak olursak, önce bunun bir karnım yapını oluşturalım şöyle.
+
+592
+01:45:01,372 --> 01:45:01,452
+Şöyle.
+
+593
+01:45:07,252 --> 01:45:20,712
+Bunun Karnaugh'i için A1, A0, B1, B0, 00, 01, 11, 10, 00, 01, 11, 10.
+
+594
+01:45:21,752 --> 01:45:27,552
+Bununkini yerleştirecek olursak arkadaşlar, 1, 1, 1, 1, 1.
+
+595
+01:45:28,884 --> 01:45:36,963
+Burada da aynı benzer şekilde şununla bir komşuluk kurduk. Bununla bunun en büyük komşuluğu bu. Bununki de burası şeklinde.
+
+596
+01:45:38,284 --> 01:45:51,244
+Bunu yazacak olursak arkadaşlar, şunun için ne yazacağız arkadaşlar? A1'in D'li B1. Şunun için ne yazacağız arkadaşlar?
+
+597
+01:45:53,284 --> 01:45:54,884
+Siz söyleyin.
+
+598
+01:45:56,020 --> 01:46:03,199
+Bir kere buradan gözüküyor. B1, B0 olacak. A ne olacak arkadaşlar?
+
+599
+01:46:07,731 --> 01:46:27,971
+B0, A1 üssü, A0 üssü, evet, şunu söyleyecek olursak, A1'in değili, A0'ın değili, ortak B'de ne var? B0'ın değili şeklinde.
+
+600
+01:46:29,911 --> 01:46:32,511
+B0'ın değili değil, B0.
+
+601
+01:46:34,836 --> 01:46:59,136
+Bunu da yazacak olursak, burada Z, A küçük, B olması durumunda, A1 üstü, B1 artı, A1 üstü, A0 üstü, B0 artı,
+
+602
+01:47:00,532 --> 01:47:07,212
+A0 üstü, B1, B0 şeklinde gelecek.
+
+603
+01:47:08,212 --> 01:47:24,832
+Gördüğünüz gibi arkadaşlar, şu 3'ü, şu 3 fonksiyon, yani şu, şu fonksiyon ve şu fonksiyon oldukça büyük bir alan kaplayacak.
+
+604
+01:47:26,707 --> 01:47:51,607
+A1, A0 girdilerimizin gerekli değilleri filan alınacak. Ondan sonra bu bizim A sayımız. B sayımız B1, B0 şeklinde olacak. 3 tane çıkışımız olacak. F1, F2, F3 çıkışımız olacak. Burası aynı şekilde Z, A büyük B.
+
+605
+01:47:52,000 --> 01:48:18,620
+çıkıp sıcağı diyebiliriz. Veya Z, A eşittir, B çıkısı da diyebiliriz. Şuna da Z, A küçük, B çıkısı da diyebiliriz. Şuradaki bütün elemanları değilleriyle beraber gerçekleştirip ne yapacağız? Şuraya bağlayacağız. Şu yapıdaki dört girişli AND'leri de yapıp F2'ye bağlayacağız. Bir de şuradaki
+
+606
+01:48:19,604 --> 01:48:43,724
+Lojik işlemleri gerçekleşip şurada bağlayacağız. Karmaşık bir iç yapısı var bunun. Ama ne yapıyor? Ağının değerlerini karşılaştırıp çıkışta ilgili yerde bir oluşturabiliyor arkadaşlar. Benim size tavsiyem bu devreyi. Bu devreyi ne yapın arkadaşlar? Simülatörde gerçekleştiririz diyelim.
+
+607
+01:48:45,908 --> 01:48:49,488
+Hatta onu ödev olarak verelim arkadaşlar.
+
+608
+01:48:51,327 --> 01:48:54,927
+Şöyle kontrol panelimize girelim.
+
+609
+01:48:58,963 --> 01:49:07,123
+Derslerim, lojik devre, 3. grubu, ödevler ve sınavlar diyelim, yeni.
+
+610
+01:49:31,252 --> 01:49:48,392
+2 bitlik genlik karşılaştırıcı devreyi simülatör vasıtasıyla
+
+611
+01:49:52,148 --> 01:49:53,508
+Gerçekleyiniz.
+
+612
+01:50:00,000 --> 01:50:02,900
+Gerçekliğimiz
+
+613
+01:50:02,900 --> 01:50:09,140
+Bir yer diyelim. Ödevler önemli biliyorsunuz arkadaşlar.
+
+614
+01:50:10,920 --> 01:50:16,240
+Bizim yıl içi notumuzu belirleyecek.
+
+615
+01:50:16,240 --> 01:50:22,620
+Bugün ayın 8'i saat kaçtan itibaren diyelim.
+
+616
+01:50:23,280 --> 01:50:25,260
+Buna saat
+
+617
+01:50:28,916 --> 01:50:39,235
+17'den itibaren, başlangıç zamanı vermemiz gerekiyor. Kaça kadar? Önümüzdeki hafta 15 oluyor.
+
+618
+01:50:41,376 --> 01:50:53,815
+15 Kasım değil mi? Tamamdır. Burada 15 Kasım, saat 23.45'e kadar.
+
+619
+01:50:57,716 --> 01:50:59,236
+Kaydediyorum arkadaşlar.
+
+620
+01:51:03,091 --> 01:51:17,131
+Güzel. Şöyle diyelim, 2 bitlik, 2 sayıyı, sayıyı karşılaştıran,
+
+621
+01:51:20,595 --> 01:51:24,956
+Genlik karşılaştırıcı devri simülatör vasıtasıyla gerçekleştirilmesin.
+
+622
+01:51:26,115 --> 01:51:27,076
+Kaydettim.
+
+623
+01:51:28,655 --> 01:51:29,536
+Yayınladım.
+
+624
+01:51:29,855 --> 01:51:33,295
+Evet, ödev kısmında gözüküyor mu?
+
+625
+01:51:38,676 --> 01:51:43,296
+Ödev kısmında gözüküyor mu arkadaşlar? Bir kontrol eder misiniz online Yıldız'ı TRD'den?
+
+626
+01:51:51,731 --> 01:52:04,072
+Tamamdır. Evet, bir haftalık zamanınız var. Hem simülatör kullanma bilginizi. Devreyi zaten çizdim arkadaşlar. Yapacağınız şeyler, fonksiyonlar, şunları gerçekleştirmek.
+
+627
+01:52:04,491 --> 01:52:15,371
+NOT'larını alıp sadece ilgili iki kapılı, üç kapılı veya dört kapılı AND'lerle birleştirip, şu çıkışına da LED varsa veya şey varsa, şöyle.
+
+628
+01:52:16,243 --> 01:52:31,423
+Yanan bir devre elemanı. Bir geldiğinde bunu diğer ayağını toprağa bağlayın. Bir geldiğinde bu yansın. İlgili siz denemelerinizi A1, B1, B0 ile gerçekleştirirsiniz. Karşılaştırıp çıkışlarına bakarsınız.
+
+629
+01:52:31,783 --> 01:52:42,423
+Bunu da arkadaşlar PDF şeklinde iki tane örnek yapın. İki tane örnek karşılaştırın. Pardon üç tane. Bir büyük olması, bir eşit olması, bir de...
+
+630
+01:52:43,412 --> 01:52:50,731
+Küçük olması durumuna göre, üçünde de ayrı birilerinin yandığını gösteren bir pdf sisteme yükleyin.
+
+631
+01:52:51,572 --> 01:53:02,591
+Sistem en son tarihimiz, gördüğünüz gibi 15'i, orada niye şey yaptı? 15'i akşam oldu, 16'sı akşam olması lazım.
+
+632
+01:53:06,771 --> 01:53:08,091
+Şeyde mi bir sorun var?
+
+633
+01:53:12,884 --> 01:53:36,304
+Sunday göstermiş. 16'sı yapıyorum arkadaşlar. Kaydet, yayınla. Evet. 16'sına kadar diyelim. 16'sı salı günüymüş. 16'sı salı gününe kadar bunu yapıyorsunuz arkadaşlar. Anlaştık mı? Sizin sormaksızınız bir soru var mı?
+
+634
+01:53:40,340 --> 01:53:58,940
+Sormak istediğiniz bir soru yoksa arkadaşlar, bu haftalık bu kadar. Hepinize iyi haftalar diliyorum. Kendinize çok iyi bakın. Lütfen en son güne bırakmayalım ödevlerinizi. Rahatlıkla gerçekleştireceğinizi. Sizin el alışkanlığınız için verilmiş bir ödev bu zaten. Kendinize çok iyi bakın. Tekrar görüşmek üzere.

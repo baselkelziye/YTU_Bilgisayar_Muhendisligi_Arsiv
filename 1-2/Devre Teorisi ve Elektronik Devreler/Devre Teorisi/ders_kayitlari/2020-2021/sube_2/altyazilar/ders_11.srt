@@ -1,0 +1,2963 @@
+1
+00:00:35,746 --> 00:00:39,746
+Merhaba arkadaşlar. Herhalde artık başlayabiliriz.
+
+2
+00:00:43,427 --> 00:00:52,726
+Hepinize sağlıklı günler dileyerek başlayalım. Bu hafta ses geliyor mu? Bir kontrol edelim. Geliyor herhalde.
+
+3
+00:00:54,287 --> 00:00:54,867
+Geliyor hocam.
+
+4
+00:00:55,805 --> 00:01:01,647
+Evet. Geçen hafta ne yapmıştık? Onlardan birazcık tekrar eder gibi bir bahsedelim.
+
+5
+00:01:02,082 --> 00:01:11,963
+RL, RLC devrelerini iki hafta önce mi, daha mı önce artık bir analiz etmiştik. Orada en önemli etken neydi? Bir noktada sönümlenmesiydi.
+
+6
+00:01:12,963 --> 00:01:21,183
+İşte RL devresi de, RLC devresi de enerji devre eramanı bulundurduğu için işte birinde bobin, birinde kondansör.
+
+7
+00:01:30,082 --> 00:01:48,942
+Yatıldığı anda o gerilim kaynağının bir konastör ve bobin üzerinde, indüktör üzerinde bir enerji değişimi yaşanması söz konusuydu ki biz buna transition dediğimiz geçiş evresinin analizini yapmıştık.
+
+8
+00:01:49,502 --> 00:01:56,842
+RL, RLC yani sadece bir adet enerji depolayan elemanlara biz birinci dereceden devreler demiştik ve bunlar da
+
+9
+00:01:57,698 --> 00:02:17,758
+Bu analizlerimizde şu vardı, 5 ta'lık ta diye tabi ettiğimizde, Bölü R veyahut da işte R çarpı C parametresine bağlı olarak üzerinde kondansatör veya bobin enerjiyi sönümlendirecek veyahut da gerilim kaynağı bağlıysak üzerine enerjiyi depolayacaktı.
+
+10
+00:02:18,110 --> 00:02:37,350
+Bunun analizini yapmıştık. Geçen hafta ise biz bunları beraber kullanıldı. RLC diye tabir ettiğimiz, yani iki tane enerji depolama evremanı bulunduran devrenin analizine baktık. Burada farklılık neydi aslında RL ve RC'den?
+
+11
+00:02:37,695 --> 00:02:48,695
+Farklılık şuydu, RLC devrelerinde tamam yine bir sönümlendirme olacak veyahut da işte devreye yeni bir gerilim kaynağı bağladığında bir stable...
+
+12
+00:02:49,135 --> 00:03:15,855
+dediğimiz transition'dan sonra bir duran duruma geçme söz konusuydu. Çünkü devreye bir DC gerilim bağlanmaktaydı. İşte 5 volt bağlandı misal. Bir süre sonra 5 volta geçecek ve stable olarak kalacaktı devre. RL ve RC yapılarında böyleydi. Ancak RLC'de şarj olurken de, 5 şarj olurken de, işte 5 voltu devreden söktüğümüzde de
+
+13
+00:03:16,833 --> 00:03:24,014
+Bir süre kendi içerisinde kondansatör bobin ikileminin birbirini besleme durumundan bahsetmiştik.
+
+14
+00:03:24,674 --> 00:03:31,573
+İşte buna 3 farklı senaryoda yani 3 farklı kriterde bunların analiz edilmesi gerekiyordu.
+
+15
+00:03:31,714 --> 00:03:35,854
+Birincisi şuydu, under damp dediğimiz sönüm altı kalmış.
+
+16
+00:03:36,322 --> 00:03:57,642
+analiz vardı. Over-damped, aşırı sünümlenmiş analiz vardı ve bir de critical damped dediğimiz, kritik seviyede sünümlenmiş bir devre analizine giriyordu. Burada tabii bu üç farklı parametreydi, yani bu üç farklı durumu da belirleyen şey, devrenin bünyesinde kullandığımız R, L ve C parametreleriydi.
+
+17
+00:03:58,031 --> 00:04:11,011
+Bunları da biz alfa ve omega diye tabir ettiğimiz bu iki değişkene atamıştık ve bu alfa ve omegadan büyükse şu olacak gibisinden izah etmiştik geçen hafta.
+
+18
+00:04:11,850 --> 00:04:22,690
+Şimdi aslında şimdi RL, RC ve RLC devrilerini analiz ederken biz hep DC analiz, yani giriş gerilimli DC kaynak varken analizini gerçekleştirdik.
+
+19
+00:04:25,890 --> 00:04:28,910
+Devreye bağlansa da veya devreden sökülse de,
+
+20
+00:04:29,635 --> 00:04:35,595
+DC akım olduğu için bir yerde stable duruma geçmesi söz konusuydu.
+
+21
+00:04:36,394 --> 00:04:41,935
+İşte biz bunu 5 tağlık dedik RL, RLC'de. Ötekinde de yine 5 tağ sonrasında.
+
+22
+00:04:42,475 --> 00:04:49,975
+Tamam o arada bir transiyasında salınım yapacaktı vesaire falan ama sonuçta bir yere stable duruma geçmesi söz konusuydu.
+
+23
+00:04:49,975 --> 00:04:56,975
+Yalnız şimdi bir de bizim alternatif akım diye tabir ettiğimiz zaten elektrik sörkütlerden.
+
+24
+00:04:57,635 --> 00:05:15,714
+En çok kullanılan bir akım şeklimiz daha var. Bu akım şeklinin özelliği neydi? Stable olma durumunun olmaması. Yani bir T-Domeyni'nde zaman skalasında analiz ettiğimizde bu akımı farklı zamanlarda farklı değerlerin elde edilmesiydi.
+
+25
+00:05:24,514 --> 00:05:28,314
+Tesla'ya AC akımın babası derler vesaire. Bunları...
+
+26
+00:05:28,546 --> 00:05:48,346
+Araştırırsınız ama AC akım arkadaşlar elektrik devrelerinin çok hızla ilerlemesini sağlayan en önemli parametrik öneme sahip en değerli akım şeklidir. Neden? Çünkü AC akım değişkenlik gösterdiği için bir refreshment yani bir yenilenme gösterir.
+
+27
+00:05:56,546 --> 00:06:05,166
+elektriğin transferi için çok büyük bir replikatörler gerekir, ara devreler gerekir o akımı yenileyen.
+
+28
+00:06:05,854 --> 00:06:18,134
+gibi AC günümüzde pek çok gündelik hayatta kullandığımız cihazlar zaten AC circuit analize girer. Yani AC ile alternatif akımla işlem yapan devrelerdir.
+
+29
+00:06:18,134 --> 00:06:27,054
+Ve biz de şu an bu hafta AC akım doğrultusunda devreyi beslenen devrelere bakacağız.
+
+30
+00:06:27,555 --> 00:06:34,654
+Şimdi AC akımda, tekrardan belirtelim, RL, RLC yapılarında bir doyuma erişme,
+
+31
+00:06:35,151 --> 00:06:41,350
+Yani stable olacak ama o stable olunan noktada da gene bir salınım söz konusu olacak.
+
+32
+00:06:41,750 --> 00:06:45,671
+Çünkü bir AC devresi, bir AC akımı ile devreyleşliyoruz.
+
+33
+00:06:47,250 --> 00:06:52,951
+Bunun analizi içinde biz farklı bir domeyne geçeceğiz hesaplamalarımızı yaparken.
+
+34
+00:06:53,350 --> 00:06:55,091
+Bu hafta da bunları anlatacağız.
+
+35
+00:06:57,537 --> 00:07:14,797
+Şimdi tekrardan burada belirtmişiz zaten, hani 3 farklı durumun analizini gerçekleştiriyoruz ama bu analizleri aslında yaparken dayanak noktamız şu, tamam bir geçişle değişimi analiz edeceğiz ama nihayetinde bir yere varacak ve orada stable duruma gelecek.
+
+36
+00:07:14,797 --> 00:07:22,399
+Yani final ve initial state'lerden bahsediyorum, geçen hafta işlediğimiz gibi. Bu final ve initial condition'lar,
+
+37
+00:07:22,786 --> 00:07:39,187
+Bir yerde stable durumda. Ama tabii ki AC Circuit'te bunlar bir yerde stable olamayacak. Çünkü alternatif bakımdan bahsediyoruz. Bunlar yine kendisini belli bir frekansa sahip sinyal şeklinde gösterecek.
+
+38
+00:07:40,962 --> 00:08:06,522
+Bu tarz analizlerde de normalde hesaplama yaptığımız hesaplamalarda türev hesabı var. Yani deriyatif hesabı var. Biz bunu discrete noktada linear algebraya çevirebilmemiz gerekli. Yani biz türevi her zaman işte stable duruma geldiğinde de analizini yapacağımız şekilde yapmak çok güç ve zor.
+
+39
+00:08:08,962 --> 00:08:21,822
+AC devrelerde, bu özellikle AC devreler için, çünkü DC'de sonuçta bir yerde 5 volta sabitlenecek veyahut da 0 volta sönümlenecek bir şey diyebiliyoruz final veya initial stateler için.
+
+40
+00:08:22,242 --> 00:08:36,922
+Ama AC ile beslenen bir devre veya AC gerilimi çıkartılmış ve kondansatör bobin üzerinde bir, yani o devre içerisinde AC akımın dolandığı senaryolarda biz bunun türev olarak hesabını yapmamız mümkün.
+
+41
+00:08:36,962 --> 00:08:51,222
+Bunu biz farklı bir domeyne getirip, lineer matematikle, yani lineer bir algebrayla bunu çözmeyi hedefleyeceğiz. Yani başka bir uzaya değiştireceğiz matematiksel fonksiyonlarımızı.
+
+42
+00:08:52,803 --> 00:09:01,001
+Ve bu uzayda tabii ki de karmaşık sayılar tabanlı bir uzay olacak. Bu karmaşık sayılara bu anlamda ihtiyaç var.
+
+43
+00:09:01,143 --> 00:09:18,162
+Çünkü aslında taşıyacağımız o fazor gösterim diye tabir ettiğimiz, faz gösterimiyle Türkçeleştirdiğimiz o gösterime geçebilmek için aslında devredeki bütün devre elemanlarını bir kompleks sayıyla göstermemiz lazım.
+
+44
+00:09:18,162 --> 00:09:20,761
+Yani karmaşık sayı formatına geçirmemiz lazım.
+
+45
+00:09:20,803 --> 00:09:30,722
+Karmaşık sayıları ilk başta bu ders kapsamında en temelden başlayacağız, nasıldı ne değildi. Sonra bu dönüşümlere değineceğiz.
+
+46
+00:09:31,746 --> 00:09:48,485
+Burada misal bir AC'nin etkisini, AC analizin etkisini göstereceğimiz bir örnek var. Diyoruz ki misal soldaki bir devremiz var, 235 ohm direnç, 4.7 nano farad kondansatör ve bir miliherni bobin bağlanmış.
+
+47
+00:09:54,499 --> 00:10:09,499
+Giriş gerilimimiz sinüs sinyaliyle beslenecek. İşte iki bir FT diye bir parametresi olsun. Bunu izah edeceğiz ne anlama geldiğini. Ama sonuçta bir sinüs sinyali. Yani sinüs sinyalinden kastımız bizim...
+
+48
+00:10:25,827 --> 00:10:38,927
+Sinüs sinyalinden kastımız bu devrede aslında her bir T zaman domeninde farklı gerilimlerin olduğu bir değer dolanıyor demek.
+
+49
+00:10:39,846 --> 00:10:48,427
+Değil mi? Sinüsten kastımız bu veyahut da kosinüs de olabilir. Ama devrede sonuçta her bir T zamanda farklı bir değer var.
+
+50
+00:10:49,154 --> 00:11:01,335
+Bunu analiz ettiğimizde arkadaşlar, mesela şu V0 mavi olan çizgi ve Vs'de girişteki sinyalimiz, gördüğünüz gibi her bir T zamanında farklı bir değer üretilmiş.
+
+51
+00:11:01,935 --> 00:11:10,755
+Ve bu devreyi analiz ettiğimizde çıkışımızın da aslında her bir T zamanında farklı bir çıkışa tekabül geldiğini göreceğiz.
+
+52
+00:11:15,297 --> 00:11:29,578
+İmkansız gibi bir şey. Bunu biz başka bir formata, yani fazor formata getirerek daha bir lineer alcebra mantığında açısal olarak belirtebileceğimiz bir formata getireceğiz.
+
+53
+00:11:30,858 --> 00:11:33,078
+Velev ki işte buradaki...
+
+54
+00:11:33,506 --> 00:11:51,026
+Bir sünüs sinyalindeki en anlamlı parametre F parametresidir. Bu F parametreyi daha arttırdığımızda, ki frekans demek, frekans parametresini daha da arttırdığımızda, gene girişteki gerilimimiz değişti, frekans arttığı için.
+
+55
+00:11:51,786 --> 00:11:58,886
+Ve çıkışımız da genlik bazında da olsa değişen farklı bir yapıya üründü. Yani pardon, frekans bazında.
+
+56
+00:11:59,554 --> 00:12:16,734
+Frekansı daha da sık hale geldi. Yani girişteki sinüs de, yani alternatif akım veya alternatif gerilimle beslenen devrelerde girişteki frekans bilgisi benim çıkışımda bambaşka değerleri elde etmeme neden oluyor.
+
+57
+00:12:17,394 --> 00:12:23,695
+Yani bir DC gerilim gibi değil. Sonuçta DC gerilimin bir frekans bilgisi yok. Yani değişimi yok.
+
+58
+00:12:24,322 --> 00:12:41,761
+Öyle olduğu zaman devreyi beslediğimizde elde edeceğimiz amplitude aynıdır zaten. Onda bir problem yok ama frekans bilgimiz de girişle aynı olacak. Yani yok. Ama normalde bir sinüs dalgası verdiğimizde çıkış tamamen girişteki frekansa göre değişiyor.
+
+59
+00:12:42,369 --> 00:12:51,570
+İşte bunu analiz edebilmek, bu farkındalığı görebilmek için biz bir uzay değişikliği, bir hesaplama uzayını değiştireceğiz ve karmaşık sayılara geçeceğiz.
+
+60
+00:13:09,985 --> 00:13:14,266
+Fazor diye nitelendirilmemiz formata geçirmek için.
+
+61
+00:13:15,506 --> 00:13:23,645
+Bu sinyal, mesela bu giriş gerilimine sahip, bu parametreyle verilmiş olan sinyal, aslında fazor gösteriminde bir E üzeri J,
+
+62
+00:13:24,645 --> 00:13:31,207
+işte açısal, neyse açısı hesaplanan, o açıyla verilmiş bir sinyal olarak bu uzaya taşınmış olacak.
+
+63
+00:13:32,418 --> 00:13:40,438
+Ve biz bu uzaya geçtikten sonra normal işlemlerimiz neyse işte KCLM yapacağız, KBLM yapacağız, Onkanunum yapacağız.
+
+64
+00:13:40,899 --> 00:13:45,918
+Tamamen bunun üzerinde işlemimizi yapıp işte çıkış gerilimimi bulmak istiyoruz.
+
+65
+00:13:46,797 --> 00:13:48,918
+Bu formatta çıkış gerilimini bulacağız.
+
+66
+00:13:48,918 --> 00:13:50,554
+Ve burada...
+
+67
+00:13:50,595 --> 00:14:00,855
+Farklı bir açığı bulmamız bizim çıkıştaki geriliminde, girişteki gerilimle bağlı olarak farklı bir frekansa sahip olduğunu gösteriliyor.
+
+68
+00:14:03,010 --> 00:14:23,189
+Yani biz frekans düzleminden, yani zaman aslında bir nevi zaman domeninden kurtarıp işimizi, çünkü frekans bir zaman domeni birleşeni, zaman domeninden kurtarıp işi daha az karmaşıklık olan, daha az işlem gerektiren bir domenine geçireceğiz.
+
+69
+00:14:25,698 --> 00:14:33,537
+Bu hesaplamalara değineceğiz. İlk başta bir karmaşık sayılara bir hızlıca giriş yapacağız. Neydi, nasıl toplama yapıyorduk, bunlara bakacağız.
+
+70
+00:14:34,198 --> 00:14:45,998
+Karmaşık sayıları hatırlayacağımızı düşünüyorum. Neydi? Bir gerçek, real diye tabir ettiğimiz, gerçek diye mi Türkçe'ye çekiyorlar bilmiyorum.
+
+71
+00:14:52,303 --> 00:14:59,883
+Nary Part dediğimiz J ile gösterilen partının bulunduğu iki tane sayının toplamı şeklinde gösteriyorduk.
+
+72
+00:15:00,403 --> 00:15:03,403
+Şimdi burada J aslında kök içerisinde eksi bir demekti.
+
+73
+00:15:04,903 --> 00:15:06,943
+Imaginary Part'ı oluşturan kısımdı.
+
+74
+00:15:08,023 --> 00:15:18,543
+Bunu, bu karışık, karmaşık sayıyı biz aslında kutuplu veyahut da polar formatta veya eksponensiyel E üzeri şeklinde de yazabiliyorduk.
+
+75
+00:15:19,010 --> 00:15:33,010
+Ne demekti? İşte ZX artı JY gibi bir infadeyi biz polar formatta yazacaksak, ilk başta bu Z'yi şu şekildeki polar formatta da yazabiliyorduk.
+
+76
+00:15:33,269 --> 00:15:36,790
+Buraya bir sayı gelecek. Bunun içerisine de açısal bilgi gelecek.
+
+77
+00:15:37,601 --> 00:15:50,982
+Veya eksponansiyel olarak da yazabileceğiz. Şimdi bu hesaplamalara ileride değineceğim. Ama şunu bileceğiz. Polar formatta dediğimizde örnek verelim. X, gerçi oradaki X, buradaki X ile karışacak.
+
+78
+00:15:55,811 --> 00:16:15,171
+B gibi B'nin bir teta açısı olduğunu, A'nın da bir sayı olduğunu bileceğiz. Bir de eksponensyal olarak gösterebiliriz dedik. A, E üzeri, J, B gibi eksponensyal formatta da karmaşık sayıları çevireceğiz ve göstereceğiz.
+
+79
+00:16:16,002 --> 00:16:25,803
+Biz işlemlerimizi aslında fazor dediğimiz noktada, fazor şu polar formla aynı oluyor, fazor dediğimiz noktada bu şekilde göstereceğiz.
+
+80
+00:16:26,622 --> 00:16:31,043
+Karmaşık sayıları bu yüzden geçiş yapacağız normal sinüs sinyalinden.
+
+81
+00:16:33,183 --> 00:16:35,043
+Şimdi normalde...
+
+82
+00:16:36,226 --> 00:16:41,466
+Koordinat düzeninde, Imaginary Part ve Real Part eksenlerini biliyoruz zaten.
+
+83
+00:16:42,626 --> 00:16:48,547
+Bir noktayı gösterirken, bir tane Real Part'ının, bir tane de Imaginary Part olduğunu söyledik.
+
+84
+00:16:48,927 --> 00:16:52,027
+Başka bir noktayı da gösterirken aynı şekilde göstereceğiz.
+
+85
+00:16:52,747 --> 00:16:55,226
+Bunlar arasında, bu vektörler arasında işlemler...
+
+86
+00:16:55,747 --> 00:17:17,067
+yapacağız. İşte birincisi misal, konjükyot dediğimiz tersini nasıl alırız? A-B-J şeklinde, yani sadece imaginary partının negatifini şeklinde bir konjükyotini alma işlemi var. Bunu biliyoruz zaten muhtemelen. Çünkü bölme işlemlerini de kullanmışızdır garanti.
+
+87
+00:17:17,583 --> 00:17:21,261
+Toplama işlemleri nasıl yapılıyordu karmaşık sayılarda?
+
+88
+00:17:44,802 --> 00:17:57,522
+Zaten bunu summing veya işte subtraction'ı veya adding ve subtraction'ı tip to tail, yani ucuca ekleme diye tabir ettiğimiz metotla da yapabiliyorduk koordinat düzleminde.
+
+89
+00:17:59,341 --> 00:18:01,282
+Aynı şeye tekabül geliyordu.
+
+90
+00:18:02,601 --> 00:18:06,022
+Çarpma ve çarpma işlemine bakan ilk etapta.
+
+91
+00:18:11,919 --> 00:18:19,419
+diyoruz esasında. Rectangular gösterim diyoruz. Karmaşık sayı düzlemindeki bu şekilde gösterme. Şimdi
+
+92
+00:18:19,419 --> 00:18:28,179
+rektangular koordinat düzleminde biz çarpma işlemini işte bütün parametreleri kendi içinde çarpma ile alakalı
+
+93
+00:18:28,179 --> 00:18:38,555
+yapıyorduk değil mi? Bunun bir kısa yolu da var ama çok da önemli değil. Hani x, y'yi çarpma istesem, a çarpı c, a artı j'de ve j'de
+
+94
+00:18:38,595 --> 00:18:52,055
+Artı J, B, C. Yani şu B ile C'nin J paranızın da çarpımı ve işte şuradan J kare geleceği için J karenin de ben ne olduğunu biliyorum. Eksi olduğunu biliyorum.
+
+95
+00:18:52,855 --> 00:19:05,894
+B ile D'yi çarpıp buradan çıkartma. Yani A ile C'den çıkartma şeklinde. Yani aslında genel olarak formülümüz şu ama hani ezbere de gerek yok. Normal içler dışlar çarpımıyla yaptığınız bir işlemdi.
+
+96
+00:19:08,035 --> 00:19:21,675
+Burada da bir örneğimiz var zaten. 5 ile 2'yi, 3 ile şöyle birbirine çarpıp işlemleri yaptığımız bir işlemdir. Yani kartmaşık sayılarda çarpma.
+
+97
+00:19:21,675 --> 00:19:33,675
+Şimdi bu aslında bir tek karışık bir mevzu. Çünkü yani içler dışlar çarpma yapacağız vesaire. Bunun yerine biz rectangular gösterim olan şu gösterimden.
+
+98
+00:19:34,754 --> 00:19:56,594
+Polar forma geçerek, polar form hangisiydi? Şöyle bir teta'mızın olduğu, şurada da bir R katsiyemizin olduğu gösterim. Bu gösterime geçerek çok daha rahat, çok daha basit bir çarpma bölme işlemi yapacağız. Neden bizim için çarpma bölme önemli? Çünkü en basitinden bir devrede ve eşittir I çarpı R yapıldığımızı düşünelim.
+
+99
+00:19:57,219 --> 00:20:14,198
+Şimdi buradaki akımı biliyorsun, direnci biliyorsun. Bu iki karmaşık sayı şeklinde gösterdikten sonra çarpma işlemini yapmaktan ziyade bunları polar formatta gösterip polar formattaki çarpma işlemini yapmak daha basit olacak bizim için.
+
+100
+00:20:19,042 --> 00:20:30,903
+Evet, bölme işlemi de zaten konjüge etini alarak böldüğümüz bir süreçte hatırlarsanız, genelde bilinen formüze etmeye gerek yok aslında.
+
+101
+00:20:32,482 --> 00:20:37,001
+Şöyle bununla çarptığımızda buradaki J kat sayesine gidermek de hedef.
+
+102
+00:20:37,310 --> 00:20:46,850
+Bununla bunu çarparken de normal çarpma işlemi, içler dışlar çarpımı şeklinde çarpıyordu. Pardon, içler dışlar diyorum, dağıtma şeklinde çarpıyordu.
+
+103
+00:20:47,451 --> 00:20:49,810
+Vesai, bölme işlemini gerçekleştiriyordu.
+
+104
+00:20:50,222 --> 00:20:57,222
+Bunun formülü de var aşağıya yazdım ama normalde işlemin yapılması gerektiği formülü bu.
+
+105
+00:20:57,603 --> 00:21:00,422
+Ama çok erzerliği zaten biliyorsunuzdur diye düşünüyorum.
+
+106
+00:21:00,742 --> 00:21:04,302
+Örnek olarak da bakayım koymamışım hiç ama örnek verelim.
+
+107
+00:21:04,683 --> 00:21:08,083
+3 artı J 2 olsun A X sayımız.
+
+108
+00:21:08,802 --> 00:21:11,883
+Y sayımız da 2 artı J 5 olsun.
+
+109
+00:21:12,383 --> 00:21:13,722
+Böyle iki sayıyı bölelim.
+
+110
+00:21:14,583 --> 00:21:17,123
+Gerçi şimdi tabii tam bölünmeyecek uzayabilir ama.
+
+111
+00:21:17,535 --> 00:21:32,014
+3 artı j 2, böyle 2 artı j 5'i, böyle derken 2 eksi j 5 ile çarpıyorduk değil mi? Yani aslında benim nihayetimde bulmak istediğim şey,
+
+112
+00:21:35,014 --> 00:21:42,074
+böyle, 6'ı direkt yazacağım, 2'nin karesi, diğer tarafı hani,
+
+113
+00:21:42,595 --> 00:21:55,935
+Şu konjügüt birbirine götüreceği için artı 25 diyeceğim. Bu şekilde yapıyorduk. Yani bu normalde şu alttaki formülün de aslında çıktığı nokta bu, aynı yer.
+
+114
+00:22:01,346 --> 00:22:21,067
+Bölme işlemi de zor bir işlem. Normalde konjugatini alacaksın, çarpma yapacaksın, sonra birbirinden çıkartacaksın falan vesaire. Bunu yapmaktan ziyade biz yine polar forma geçerek aslında çok daha basit bir çarpma bölme işlemi gerçekleştireceğiz.
+
+115
+00:22:22,818 --> 00:22:42,198
+Burada bir özetimiz var. Fazorlarda, yani polar veya fazor, ikisi de aynı şeye tekabül gelir arkadaşlar. Fazorlarda toplama ve çıkarma işlemini yaparken genelde kompleks formata geçirip toplama çıkarma yapılır.
+
+116
+00:22:44,866 --> 00:22:53,846
+Çarpma ve bölmelerde ise bu işlem fazor gösterimlerde çok daha basit olduğu için fazor gösteriminde gerçekleştirilir.
+
+117
+00:22:54,746 --> 00:23:00,645
+Misal çarpma işlemi I çarpı V denen iki yani şey misal power'ı hesaplayacağız.
+
+118
+00:23:00,645 --> 00:23:02,666
+V çarpı I devrede değil mi?
+
+119
+00:23:03,166 --> 00:23:11,006
+V çarpı I'yi fazor formata getirdikten sonra yani şöyle diyorum V değerimiz
+
+120
+00:23:13,987 --> 00:23:15,987
+Şöyle bir fazorda
+
+121
+00:23:19,875 --> 00:23:24,993
+i değerimizde, pardon büyük iyi yapalım, şöyle bir fazor formata getirmişiz.
+
+122
+00:23:27,074 --> 00:23:39,993
+Bunu yaptıktan sonra bunların çarpımı, direkt şuradakilerin birbirine çarpımı, içerideki fazor açılarının da toplamı şeklinde gösterilme oluyor.
+
+123
+00:23:45,411 --> 00:23:50,511
+Kompleks sayıları fazor formatına getireceğiz. Daha göstermedim nasıl getireceğimizi.
+
+124
+00:23:51,011 --> 00:23:58,190
+Fazor formatına getirdikten sonra normal açıları toplama, şuraya fazor açıları diyeceğiz.
+
+125
+00:23:58,571 --> 00:24:02,491
+Fazor açılarını toplama, kas sayılarını da çarpma şeklinde yapacağız.
+
+126
+00:24:02,631 --> 00:24:08,651
+Bölme işleminde de tam tersi kas sayılarını böleceğiz, fazor açılarını da çıkartacağız.
+
+127
+00:24:09,250 --> 00:24:13,731
+Yani çarpma ve bölmede fazor gösterimi çok daha etkili.
+
+128
+00:24:15,211 --> 00:24:24,651
+Toplama çıkarmada ise Rectangular gösterimi, yani karmaşık sayı gösterimi çok daha etkili, daha kestirme işlem sunuyor bize.
+
+129
+00:24:25,891 --> 00:24:30,911
+Şimdi bu değişimleri nasıl yapıyoruz onu izah edelim.
+
+130
+00:24:31,631 --> 00:24:33,951
+Normalde dediğimiz gibi kompleks sayılar,
+
+131
+00:24:34,350 --> 00:24:53,250
+İşte J parametresinin bulunduğu sayılar, yani aslında benim nihayetinde kompleks sayı dediğim şöyle bir yapı. Ama ben bunu eksponansiyel olarak göstermek istesem, şu kısma bir eksponansiyel desem, şu kısmı da öteki J ile katsıyla olan kısım desem.
+
+132
+00:25:00,386 --> 00:25:12,666
+Şu parametre neydi? Kosünüs omega artı J sinüs omega. Değil mi? Ve bunun başında herhangi bir kastayı olması buradaki kosünüsü sinüsü tabiri değiştirmiyor.
+
+133
+00:25:12,666 --> 00:25:19,666
+Buraya da bir kastayı koyalım. Nihayetinde ben şu kısma kompleks sayılarda...
+
+134
+00:25:20,386 --> 00:25:36,827
+A diye gösterdiğim kısmı atasam, şu kısmı da J'li olduğu için, yani şu kısmı sadece, B olarak denen sayıyı atasam, tersten düşünerek A artı J, mesela 3 artı J 2.
+
+135
+00:25:37,310 --> 00:25:44,430
+Aslında yazabilirim değil mi? Yani 3 olarak gösterdiğim yer benim için ne olacak bu denklemde?
+
+136
+00:25:44,430 --> 00:25:55,250
+İşte şurası tabii bir fiy açısını belirtmek lazım. Şu an burada yok. Burası ne olacak? 3, yani şöyle de yazabiliriz, cos.
+
+137
+00:25:55,934 --> 00:26:08,154
+Feta'ya denk gelecek. O açıyla, yani öyle bir açıyla çarpacağım ki bir kas sayıyı, bu üçü vermesi lazım. Şurası da normalde sinüs bilgisini içeren kısım olacak.
+
+138
+00:26:10,355 --> 00:26:15,815
+Kompleks sayıyı tersten E üzeri J omega şeklinde yazabiliriz.
+
+139
+00:26:16,515 --> 00:26:25,494
+Şimdi burada omeganın bulunması mevzusu var. Hani bu omegayı bulmamız lazım. Çünkü A ve B'ye bağlı bir değer aslında omega.
+
+140
+00:26:25,494 --> 00:26:39,454
+Bunu da aslında şöyle trigonometrik gösterimde normalde biliyorum ki ben A artı B, J bir nokta ve bu noktanın reelle olan açısıdır omega dediğimiz parametre.
+
+141
+00:26:40,413 --> 00:26:41,494
+Bunu bulmak için de...
+
+142
+00:26:42,242 --> 00:26:50,802
+Ne yapıyoruz normalde trigonometriklerde? Sinüs theta bölü kosünüs theta benim bu noktadaki eğimi veriyor.
+
+143
+00:26:51,222 --> 00:27:05,122
+Bunu ters tanjantını alırsanız, yani şuradaki B bölü A parametresini art tanjantı veyahut da direkt şöyle yazabiliriz, tanjant eksi bir.
+
+144
+00:27:06,179 --> 00:27:25,179
+ters tanjantını alırsak, ben buradaki teta açısını bulmuş olacağım. Değil mi? Yani şuradaki teta açım benim, eksi b bölü a'nın art tanjantı olacak. Bu z ve şuradaki z parametreleri de zaten benim...
+
+145
+00:27:26,242 --> 00:27:32,422
+Şurada hesaplayacağım gene A ve B'nin karelerinin toplamının kare kökünden gelecek.
+
+146
+00:27:32,922 --> 00:27:36,562
+Bunu nereden çıkartıyoruz? Bunu da aslında gene Stoegonometri'den çıkartacağız.
+
+147
+00:27:36,562 --> 00:27:49,222
+Eğer ki ben işte bu A ve B'nin karelerini alırsam, yani veyahut da şöyle diyelim, şu taraftaki şu ibarenin karesini alırsam ben,
+
+148
+00:27:52,930 --> 00:28:11,971
+Ne gelecek? İşte Z'nin kare ortak parantezini aldığımda kosünüs teta kare artı sinüs teta kare gelecek. Burası bir zaten. Bir olduğu için Z'nin karesi gelecek. Aslında benim A kare artı B kare parantez karakök içerisinde Z'ye eşit olacak.
+
+149
+00:28:12,993 --> 00:28:36,993
+Yani ben kompleks sayıda şu 3 artı J 2'den gidelim. Hesaplarken theta dediğim noktayı, yani açıyı, tanjan eksi 1, 2 bölü 3'den, baş kat sayısı yani Z dediğimiz parametreyi de kök içerisinde 3'ün karesi artı 2'nin karesinden bulacağım.
+
+150
+00:28:38,754 --> 00:28:50,635
+Ve bu bulmuş olduğum Z ve FI, Teta diyoruz ama Teta açısı benim için eksponansiyel gösterimde kullanabileceğim kat sayılımlı olacak.
+
+151
+00:28:51,493 --> 00:28:58,295
+Şöyle yapalım isterseniz, hani 3-2 olmaktan, örnek vardı gerçi herhalde bir dakika, koymuştum aynen.
+
+152
+00:28:58,875 --> 00:29:03,095
+Mesela örnekten gidelim, 4 artı 3J diye bir karmaşık sayım var.
+
+153
+00:29:04,131 --> 00:29:13,769
+Burayı da yazmışız, şeyini göstermişiz. Zaten 3, 4, 5 üçgeninden, yani şurada Z'nin 5 olduğu, bari sen trigonometrik olarak ama hesaplayalım.
+
+154
+00:29:14,471 --> 00:29:27,250
+Tanjantı ilk başta bakalım. Ne olacak tanjantımız? 3 bölü 4'ten arktanjantını hesaplayacağız. Arktanjantı bununla 37 çıkar. Yani buradaki fiim benim 37 dereceymiş.
+
+155
+00:29:31,087 --> 00:29:45,947
+Gösterirken ben E üzeri şeklinde ne gösteriyorum? Z, E üzeri J, Omega diyoruz değil mi? Şimdi burası 37'yi bulduk. Yani E üzeri J, 37 gelecek burası.
+
+156
+00:29:46,466 --> 00:29:52,126
+Şimdi Z'yi de bulurken de A kare artı B karenin kare kökünden çıkartacağım. O da 5 gelecek.
+
+157
+00:29:52,687 --> 00:30:00,007
+Aslında benim karmaşık sayım, şu gösterdiğim karmaşık sayım, eksponel şah formatta bu şekli de yazabilirim.
+
+158
+00:30:01,987 --> 00:30:05,147
+Ayrıca bunu fazor formatta da yazabilirim.
+
+159
+00:30:05,886 --> 00:30:13,607
+Fazor dediğimde şöyle 5, 37 yazarak gösterdiğim bir gösterim.
+
+160
+00:30:13,954 --> 00:30:36,174
+İkisi de aynı şey esasında. Sadece E üzeri şeklinde değil, daha sade bir gösterim oluyor. Burada herhangi bir açı, yani frekans bilgisi yok bakın. Yani işte bu sinyal seyer, kaç hertzli, ne olduğunu ait bir bilgi içermiyor. Yani bizi o frekans domenindeki hesaplamalardan kurtarıyor.
+
+161
+00:30:39,330 --> 00:30:41,990
+Evet, burada da zaten fazoru göstermişiz.
+
+162
+00:30:44,250 --> 00:30:50,109
+Buradaki fazor veya polar form ikisi de aynı göstermiyor ama polar daha yaygın kullanılıyor arkadaşlar.
+
+163
+00:30:51,150 --> 00:30:53,670
+Polar gösterim de aklınızda bulunsun.
+
+164
+00:30:53,830 --> 00:30:57,750
+Yani rectangular bizim normal karmaşık sayı gösterimi oluyor.
+
+165
+00:30:58,275 --> 00:31:10,475
+Exponential, işte Z, E üzeri J omega gösterimi. Polarda E'yi ortadan kaldırıp, J'yi ortadan kaldırıp, Z açısal omega şeklinde gösterimi.
+
+166
+00:31:15,297 --> 00:31:24,858
+Evet, burada yine çarpma işleminin normalde nasıl bulunduğuna ait bir izah söz konusu.
+
+167
+00:31:25,358 --> 00:31:30,938
+A1 artı B1J diye bir kompleks sayımız var. Burada da başka Z1, Z2, Z2 kompleks sayı var.
+
+168
+00:31:30,938 --> 00:31:39,938
+Bu kompleks sayıları E üzeri eksponansiyel gösterim şeklinde hesapladığımızda çarpma işlemine baktığımızda zaten...
+
+169
+00:31:40,047 --> 00:32:01,466
+Bu fazordaki avantajı görebiliyoruz. Normalde kompleks sayılarda her birini birbirine çarpacaktık. Ama fazor gösterime geçersek veya polar forma geçersek, bu gösterimde sadece fi açılarının toplanması ve anakasyaların çarpımı bizim için yeterli olacak.
+
+170
+00:32:02,567 --> 00:32:04,987
+Yani şuraya gireceğim. Aynı şey zaten.
+
+171
+00:32:06,466 --> 00:32:14,667
+Örnekte de 3 artı 4C bir karmaşık sayı var. 3 bölü kök 2 artı 3 bölü kök 2C de başka bir karmaşık sayı.
+
+172
+00:32:14,667 --> 00:32:23,787
+Şimdi bunun zaten demin hesaplamıştık 3 4 5'ten gelecek 5. olacak. Ötekisi de eksi B bölü ötekinden farklı bu neden.
+
+173
+00:32:24,087 --> 00:32:28,767
+Bunda 4 artı 3 olduğu için bu 3 artı 4 oradaki farkı şey yapamayan şuradaki.
+
+174
+00:32:29,377 --> 00:32:46,918
+Açı ne olacak? Tangent eksi birin 4 bölü 3'ü şeklinde hesaplamın açı 53 derece. Buna baktığımızda da gene ne olacak? Burası da 3 bölü 3, 1 gelecek değil mi? Tangent eksi bir, biri ne olur? 45 olur.
+
+175
+00:32:47,330 --> 00:32:55,029
+Öteki tarafta da zaten karalarının toplamı 9, 9, 18, 2'den 9, onun da kara kökü 3 çıkıyor.
+
+176
+00:32:56,109 --> 00:33:09,350
+Bu iki tanesini çarpma işlemi yaparsak mesela 3 çarpı 5, 15, 53 ile 45'i topladığımız 98 bir faz açısına sahip gösterimi elde ediyoruz.
+
+177
+00:33:09,529 --> 00:33:11,769
+Hiç birbiriyle çarpmaya uğraşmıyoruz.
+
+178
+00:33:14,242 --> 00:33:22,062
+Bölmede de tek farkımız, kat sayıları birbirine böleceğiz. Fazor gösterimdeki açıları ise birbirinden çıkartacağız.
+
+179
+00:33:27,010 --> 00:33:50,170
+Burada da örnek bir sorumuz var. Karmaşık sayı mimarinde verilmiş ikisi de. Yani burada bir akım geçiyor. L akımının değeri bu. Bir gerilimimiz var. Bunları işte normalde VL bölü İL'yi bulmak istediğimizde ki bu ne demek aslında? Devredeki direnç yapısını söylüyor bize.
+
+180
+00:33:54,877 --> 00:34:00,538
+Birbirinden sadece açılarını çıkartıp birbirinin kas yedanı bölerek yapabileceğimiz bir gösterim olacak.
+
+181
+00:34:01,478 --> 00:34:10,759
+Bunu da fazöre geçmek için de ne yapacaktık? Z'yi bulmak için, şuraya Z1 diyelim. Bunların karesi 3 kere 3, 9, 9 kere 3, 27 yapacak değil mi?
+
+182
+00:34:11,198 --> 00:34:20,478
+27 artı 9, bu da 36 mı yapıyor? Evet. O da 6 yani, 36'nın kökü o da o.
+
+183
+00:34:21,987 --> 00:34:34,547
+Şöyle 6, ötekisi açısal olarak da ne yapacağız? 3 bölü, eksi 3, kök 3. O da ne yapar? Aktanjan, 1 bölü, kök 3 ne yapar bilmiyorum ama 150 yapıyormuş herhalde.
+
+184
+00:34:35,507 --> 00:34:47,866
+150 derece diyelim direkt. Hesaplayıp birbirine bölmek için de 6 bölü 2, 3 faz açısı da eksisi olacak şekilde 90 olacak diyeceğiz.
+
+185
+00:34:51,170 --> 00:35:04,250
+Başka bir örnek, yine hani V çarpı I'nın konjugüetini çarpsak diye bir örnek. Burada da I'yı vermişiz, hani konjugüeti için artı eksi 7J olduğunu söylemiştik.
+
+186
+00:35:06,391 --> 00:35:10,250
+Hani bunları böyle çarptığımızda, işler...
+
+187
+00:35:11,106 --> 00:35:26,427
+Her bir değeri başka bir değere çarpacağımız için biraz daha fazla işlem var. Onun yerine hani direkt polar formata geçirte devrede bütün değerlerin polar formatta veya işte polar formatta gösterilmesi bütün işlemleri daha basit hale getirecek.
+
+188
+00:35:29,538 --> 00:35:46,297
+Özet olarak bakacaksak, işte normalde karmaşık sayıların gösteriminde toplama çıkartmanın basit ama çarpma bölmenin polar formatta daha kolay olduğunu söyleyebiliriz. Fazor veya polar x-tahili şey. Bunları bu şekilde hesaplayacağız.
+
+189
+00:35:48,358 --> 00:35:50,619
+Var mı bir karışıklık arkadaşlar?
+
+190
+00:35:56,706 --> 00:36:10,645
+Karmaşık sayılardaki bu fazor ve eksponensel gösterimlerin nasıl yapıldığıyla alakalı bir problem yoksa eğer, şimdi sinüs dalgaları veya alternatif akımla alakalı parametrelere değineceğiz.
+
+191
+00:36:10,786 --> 00:36:17,266
+Yani başlayacağız. Alternatif akım nedir, gerilimler nedir, buradaki karakteristik parametreler nedir, bunlara bakalım.
+
+192
+00:36:21,474 --> 00:36:32,175
+Evet, yani bir sinüs dalgasının karakteristiklerini tartışacağız. Bunun matematiksel olarak işte periyot, frekans, açısal frekans gibi değerlerin ne olduğunu tanımlayacağız.
+
+193
+00:36:32,954 --> 00:36:44,994
+İşte nasıl geldiğinin hesaplandığını, nasıl işte faz açısı ne demek işte. Hatta şu iki parametre kesinlikle öğrenmeniz, çok iyi öğrenmeniz gereken iki parametre.
+
+194
+00:36:45,730 --> 00:36:58,070
+Bir sinyalin başka bir sinyale nazaran kıyaslandığında önde mi, geride mi olduğu ile alakalı nasıl bir faz açısına bağlı yorum yapabileceğiz? Bunlara bakacağız.
+
+195
+00:37:00,810 --> 00:37:02,990
+Şimdi alternatif akım dediğimiz,
+
+196
+00:37:12,034 --> 00:37:20,514
+Değişken bir gerilim, zamana bağlı değişken bir gerilim gösteren, gerilim karakteristiği gösterilen bir gerilim demek değil.
+
+197
+00:37:20,734 --> 00:37:30,413
+Ayrıca akımın yönünün de belli bir zaman sonra kendini replike ederek ters yönde aktığını gösteren bir gösterim.
+
+198
+00:37:34,690 --> 00:37:50,210
+A diye gösterdiğimiz, yani şu yandaki nomination var, akımın yönü bu şekilde ise, T bölü 2'den öteki bir T bölü 2 zaman aralığı kadar, tam simetrik, akımın yönü tam ters yöne doğru olacak.
+
+199
+00:37:51,470 --> 00:37:56,250
+Böyle olduğu için de zaten, hani bu RLC devrelerinde,
+
+200
+00:37:57,347 --> 00:38:06,907
+Sinüs dalgası bir taraftan düz geliyor, sonra ters gelecek vesaire birbirini osilasyona götüren devre analizine girecek.
+
+201
+00:38:08,335 --> 00:38:15,635
+Burada tekrardan söylüyorum, Initial ve Final State'leri, Condition'ları belirlemek çok daha zor olacak.
+
+202
+00:38:15,795 --> 00:38:25,494
+Çünkü türevini almak vs. bu işler birbirini beslediği için daha zor oluyor ve biz de bunu puzzle formata getirerek analizlerini sağlayacağız.
+
+203
+00:38:28,255 --> 00:38:31,954
+Şimdi burada birkaç karakteristik var. Bunların her birine değineceğiz.
+
+204
+00:38:32,375 --> 00:38:35,494
+Period nedir, Frekans nedir, bunlara şimdi bakacağız.
+
+205
+00:38:37,059 --> 00:38:49,179
+Evet, bir sinüs dalgasının karakteristikleri, period frekans ve açısal frekans, bizim zaman domenindeki analizleri, yani bir karakteristiklerini belirleyen parametreler zaman domenine bağlı.
+
+206
+00:38:49,634 --> 00:39:07,333
+Amplitude, yani genlik, tepeden tepeye genlik, işte RMS diye tabir ettiğimiz root min square değeri, bunlar da tamamen y eksenindeki, yani genlikle alakalı değerlerini, karakteristlerini belirleyecek sinüs dalgasının.
+
+207
+00:39:08,333 --> 00:39:14,634
+Ayrıca bir ortalama sinüs dalgasının gerilimini hesaplayacağımız bir...
+
+208
+00:39:14,655 --> 00:39:27,935
+karakteristiği var. Bir de işte sinyalleri birbirine kıyaslarken sinüs dalgalarında nasıl bir kıyaslama yaparız, faz açısı farkı nedir? Bunlar bir karakteristini belirleyecek sinüs dalgası.
+
+209
+00:39:29,215 --> 00:39:36,994
+Evet, başta da çizmiştik sinüs dediğimiz dalga zamanla değişen ve yönü de akımın yönünün de zamanla değiştiği bir dalga şekli.
+
+210
+00:39:41,347 --> 00:39:50,007
+İbare mevcut bu dalga, bu sinyali matematiksel formülü. Bir kere ilk etapta şu kısım bize sinyalin genliğini söylüyordu.
+
+211
+00:39:50,427 --> 00:40:05,107
+Magnitude diyeceğiz buna değil mi? Magnitude kısmı veya Amplitude kısmını belirtiyor ve biz de gördüğümüz gibi artı 5, eksi 5 aralığında sanırım gösteren bir sinyal.
+
+212
+00:40:07,971 --> 00:40:17,930
+T'ye bağlı olarak bu sinyalin frekans bilgisini verecek. Ne demek frekans? Buna geleceğiz şu an. Hatta ilk frekanstan önce periyodu izah edelim.
+
+213
+00:40:18,471 --> 00:40:26,490
+Periyot dediğimiz yapı, saniyede kaç adet sinyal kendini replike etmiş? Ona bakacağız.
+
+214
+00:40:27,490 --> 00:40:31,150
+Yani şunu demeye çalışıyorum. Misal bir cycle.
+
+215
+00:40:31,683 --> 00:40:39,743
+Başlangıçtan bitiş. Bir sinyalin, bir paternin oluştuğu zaman aralığına biz periyot diyeceğiz.
+
+216
+00:40:40,822 --> 00:40:48,662
+Tamam. Yani işte örnek verelim. Bu sinyal 16.7 milisaniye periyoda sahip.
+
+217
+00:40:48,662 --> 00:40:53,143
+Yani bir cycle'ı ben 16.7 milisaniyede tamamlıyorum.
+
+218
+00:40:54,818 --> 00:41:08,139
+Bu bize aslında bir sonraki parametre olan frekans bilgisini verecek. Neden? Frekansın kelime manası şu, saniyede kaç periyot var? Bunu bana söyle diyor.
+
+219
+00:41:09,139 --> 00:41:18,958
+Yani bir periyodum benim 16.7 milisaniyesi, bir saniyede kaç adet periyot var? Bunu söyler bize frekans.
+
+220
+00:41:21,059 --> 00:41:29,299
+Burada da hesaplarsak bu örnek için 16.7 milisaniyeydi bir periyodun oluşması için geçen zaman.
+
+221
+00:41:29,299 --> 00:41:43,219
+Bir saniyede kaç periyod var dersek 60 adet 16.7 milisaniyeye sahip zamanlarda geçen periyodun mevcut demek. Frekans.
+
+222
+00:41:45,570 --> 00:41:51,570
+Bizim kaç adet o paten bir saniyede kendini tekerrür ediyor, bunu söyler.
+
+223
+00:41:52,530 --> 00:41:55,010
+O zaman şöyle söyleyelim, soralım.
+
+224
+00:41:56,330 --> 00:42:01,269
+Bu artarsa, yani frekansın artması ne demek olabilir?
+
+225
+00:42:08,802 --> 00:42:10,122
+Uyuyor muyuz arkadaşlar?
+
+226
+00:42:13,062 --> 00:42:14,262
+Buradayız hocam.
+
+227
+00:42:15,362 --> 00:42:18,962
+Evet. Frekansın artması ne demek olabilir?
+
+228
+00:42:22,947 --> 00:42:24,286
+Periyodun azalması.
+
+229
+00:42:25,606 --> 00:42:26,186
+Yani?
+
+230
+00:42:31,683 --> 00:42:33,502
+Periyodun azalması ne demek?
+
+231
+00:42:45,123 --> 00:43:09,062
+Yani kendini tekrar eden dalgaların artması, adedinin artması, daha sık dalga oluşması. Evet. Çünkü burada bir yanlış anlaşılma oluyor. Misal şöyle, 100 Hz'lik bir sinyal ile 1 kHz'lik sinyali kıyasladığımızda, geninlikle alakalı hiçbir şey söylemiyoruz. Bakın, 5 volt, 10 volt demiyoruz.
+
+232
+00:43:11,234 --> 00:43:23,115
+Sinyal ne kadar sıklıkla geliyor? 100 kHz dediğimiz çok sık bir sinyaldir. 50 Hz dediğimiz çok seyrek bir sinyaldir. Değil mi? Bunu söyleyeceğiz.
+
+233
+00:43:24,695 --> 00:43:25,195
+Tamam.
+
+234
+00:43:25,726 --> 00:43:50,106
+Normalde Amerika'da 60 Hz'dir, Türkiye'de veya Avrupa, Asya'da 50 Hz'dir. Çoğu cihaz bunu zaten komponze edecek şekilde ayarlanıyor ama gerekli noktalarda belki adaptörler var bu aradaki frekans değişimini zarar gösterecek cihazlar için. Bunun için de bu adaptörler tasarlanıyor aradaki farkı önlemek için.
+
+235
+00:43:50,659 --> 00:44:02,358
+Bir diğer parametremiz şey, bir sinüs dalgasını belirleyen, bir genlik dedik, iki time period dedik, periodun da neticesinde oluşan frekans dedik.
+
+236
+00:44:03,119 --> 00:44:07,619
+Şimdi bir de bu frekansa bağlı açısal frekans var.
+
+237
+00:44:08,858 --> 00:44:16,219
+Açısal frekans aslında sinyalin başka bir sinyal ile kıyaslayabilmemizi sağlayacak olan parametre bizim için.
+
+238
+00:44:16,994 --> 00:44:38,695
+Ve bunun da formülü 2PF diye geçer. Omega ile gösterilir. Frekansa bağlıdır ve 2PF ile gösterilir. Bu frekans yerine 1 bölü T yazabileceğimiz için aslında 2P bölü T de benim omegayı belirleyen öteki bir parametrem olur.
+
+239
+00:44:43,523 --> 00:44:46,002
+377T yazıyordu.
+
+240
+00:44:46,722 --> 00:44:47,603
+Şimdi burası,
+
+241
+00:44:49,983 --> 00:44:52,523
+Omega'yı gösteriyor şu an.
+
+242
+00:44:54,002 --> 00:44:54,563
+Aslında,
+
+243
+00:44:56,002 --> 00:44:59,603
+2PF'i gösteriyor.
+
+244
+00:45:00,822 --> 00:45:04,063
+Şimdi bu şeyde de, yazarsak eğer,
+
+245
+00:45:04,243 --> 00:45:04,702
+yani şu,
+
+246
+00:45:05,422 --> 00:45:07,322
+P yerine 3,14 yazın,
+
+247
+00:45:08,162 --> 00:45:15,802
+2, 3 çarpı 3,14 çarpı F eşittir 377 dersek zaten 60 Hz'i bulacağız.
+
+248
+00:45:16,562 --> 00:45:22,722
+Veyahut da 2 çarpı 3,14 çarpı 60 Hz dersek de 377 Omega'yı bulacağız.
+
+249
+00:45:23,962 --> 00:45:26,001
+Şimdi burada şu iki parametre de önemli.
+
+250
+00:45:26,222 --> 00:45:29,123
+Bir radyan, normalde bunun değeri radyandır arkadaşlar.
+
+251
+00:45:29,262 --> 00:45:30,802
+377 radyan mesela.
+
+252
+00:45:33,443 --> 00:45:41,841
+Bu 377 radyan gösterimi açı olarak biz bir sinüs dalgasını hesap makinesinde yazarsak aynı şeyi vermez.
+
+253
+00:45:41,983 --> 00:45:48,702
+Yani şunu demeye çalışıyorum. Sinüs siz 377 yazdınız ama ben buraya radyan bölü saniye yazmışım.
+
+254
+00:45:49,422 --> 00:45:57,963
+Bunun elde ettiğiniz değerle sinüs, tabii böyle bir şey yok ama 377 derece diye bir şey aynı şey demek değil.
+
+255
+00:45:58,851 --> 00:46:10,010
+Bu radyanı sizin derece cinsine çevirip öyle hesap makinesini de hesaplamanız lazım. Eğer ki radyan bölü saniye verildiyse. Çünkü omega genelde radyan bölü saniyedir.
+
+256
+00:46:12,151 --> 00:46:20,331
+Ve bir radyan 57.3 dereceymiş, iki pi radyan 360 dereceymiş. Bunlar hani iki pi dediğimiz zaten.
+
+257
+00:46:20,930 --> 00:46:39,231
+Veya şöyle de diyebiliriz, 1 radyan 77.3 ise 377 radyan x'dir deyip oradan derece girecek, tabii çok büyük bir derece çıkacak, onu da 360 ile limitleyeceksiniz, o sizin açınız olacak, yani başa dönmüş olacak. 360'da bir tekerrür eden açı oluyor.
+
+258
+00:46:41,770 --> 00:46:48,231
+Evet, genliklerle alakalı parametrelere bakalım. İki tane parametremiz var, biri tepe genliği.
+
+259
+00:46:48,322 --> 00:47:00,382
+Bu referans, yani bu normaldeki sinyalin orta noktasını olan uzaklığı bizim için tepe genliğidir.
+
+260
+00:47:01,282 --> 00:47:08,123
+Ama genelde bu tarafta yazılan peak to peak value'dir. Yani tepeden tepeye genliğidir.
+
+261
+00:47:09,242 --> 00:47:11,463
+Pardon, yani şu tepe genliğidir.
+
+262
+00:47:11,875 --> 00:47:18,094
+Ama burada yazılan bizim için artı eksi beş şeklindedir. Yani iki buçuk, iki buçuk diye görmeyeceğiz bunu.
+
+263
+00:47:19,674 --> 00:47:23,454
+Burası tepedir yani. Tepe, evet böyle demek daha mantık. Karışmasın.
+
+264
+00:47:24,534 --> 00:47:28,694
+Tepe genliğidir ama eksi beşi de mevcuttur diyeceğiz.
+
+265
+00:47:28,694 --> 00:47:35,514
+Yani beş ve sinüs demek, artı eksi beş ve arasında savunum gösteren bir sinüs dargasını söyleyecek bize.
+
+266
+00:47:39,266 --> 00:47:48,366
+Bir de anlık değerler var. Zaten anlık değer dediğim şey T'ye bağlı olarak o anki değeri gösteren gerilim benim için.
+
+267
+00:47:48,366 --> 00:48:05,186
+Şimdi burada yine aynı şeye geleceğim. Misal burada örnek yapalım isterseniz. Misal, gerçi burası sıfırmış. Şu alttaki 0, 0, 1 yani 10 milisaniye için bir analiz yaparsak, 10 milisaniye sonuna bu gerilim kaynağındaki gerilim ne olur dersek.
+
+268
+00:48:05,666 --> 00:48:19,027
+5V sinüs 377T olduğu için formülümüz, buraya 001 saniye yazdım. Bunu çarptığımda da 0 ne geliyor? 3.77 mi? 3.77 geliyor.
+
+269
+00:48:19,226 --> 00:48:29,027
+Şimdi siz sinüs 3.77 yazarsanız elde edeceğiniz değer doğru bir değer değil. Hesap makinesi eğer radyal olarak almıyorsa sinüsün içerisine.
+
+270
+00:48:29,262 --> 00:48:37,282
+Çoğu hesap makinesi sinüsün içerisinde açı olarak alır. Mesela sinüs 37. Yazabilirsiniz, 37 bir açıdır. Eğer açıysa soruna.
+
+271
+00:48:37,282 --> 00:48:51,103
+Şimdi burada sinüs 3.77 hesaplanmak için bu içerisine eğer açı kabul ediyorsa sizin sinüs hesap makinesi radyan olarak ayarlamadıysanız bunun içerisine açı olarak vermeniz lazım.
+
+272
+00:48:52,002 --> 00:49:02,583
+Yapılan hatalardan bir tanesi bu da, o yüzden üzerinde duruyor. Bunun içinde bir radyan 53 dereceyken, 53.7 mi kaçtı? 57.3 pardon.
+
+273
+00:49:05,063 --> 00:49:17,922
+57.3 dereceyken, 3.77 x derecedir gibisinden ne çıkıyordu burada? 160 mi çıkar, ne çıkar? Bilmiyorum. Buradan bir derece gelecek.
+
+274
+00:49:18,530 --> 00:49:21,330
+Bu dereceyi sinüsün içerisine koyacaksınız.
+
+275
+00:49:22,730 --> 00:49:27,150
+Eğer kullandığınız hesap mekinci tekrardan söylüyorum, radyan olarak ayarlamadıysanız.
+
+276
+00:49:29,190 --> 00:49:38,250
+5V sinüs, bu içerisindeki değer, hesapladıktan sonra çarptığınızda, misal 10 milisaneye sonra, 0 milisaneye de 0 iken,
+
+277
+00:49:38,250 --> 00:49:45,990
+yani şöyle bir sinüs dalgamız var, şurası 0 saniye zaten 0 iken, işte eksik.
+
+278
+00:49:46,851 --> 00:49:48,010
+Şuralarda herhalde.
+
+279
+00:49:51,587 --> 00:49:54,987
+Şuralar 10 milisaniyede böyleymiş.
+
+280
+00:49:57,047 --> 00:49:57,707
+Tamam mıyız?
+
+281
+00:49:59,707 --> 00:50:02,067
+Bir sıkıntı yok değil mi?
+
+282
+00:50:07,875 --> 00:50:32,413
+Average Value diye bir parametre karakteristiği var. Nedir bu? Sinüs dalgasının, normalde, normal bir sinüs dalgasının orta noktası neresidir? Sıfırdır, değil mi? Yani bir alternatif geriliminin orta noktası her zaman sıfırdır. Ama bazı durumlarda DC Offset, yani DC bir bileşen daha bu sinyale verilebilir.
+
+283
+00:50:32,930 --> 00:50:43,811
+Bu da aslında sinüs dargasının veya kosmüsüne eski de alternatif gerilimin shift etmesini ama genlikle shift etmesini sağlayan parametredir.
+
+284
+00:50:44,791 --> 00:50:46,951
+Eğer ki average volume sıfır değilse.
+
+285
+00:50:49,471 --> 00:50:55,430
+Root, mean, square, error genelde cihazlar tarafından okunan değerdir diye çevrilir.
+
+286
+00:50:56,706 --> 00:51:10,026
+Tepe noktasının, bir sinüs dargasının tepe noktasının 0.707 katıdır. Örnek verelim, şöyle bir sinyalimiz var. 10 sin, 677 t diye bir şey. Salladım şu içeriği, önemli değil.
+
+287
+00:51:11,106 --> 00:51:18,766
+Eğer ki bunun piktupik'i 10'sa, piktupik tabii 20 oluyor, artı eksi 10'dan dolayı.
+
+288
+00:51:23,523 --> 00:51:30,103
+RMS değerinde 7 sinüs, 677T'dir diyeceğim. Yani 7.07.
+
+289
+00:51:34,275 --> 00:51:53,954
+Açısal faza gelelim, faz açısına gelelim. Faz açısı iki sinyali, üç sinyali, ne kadar sinyal varsa birbiri üzerinde kıyaslama yapabilmemiz için gerekli olan önemli bir parametre. İsterseniz burada bir ara verelim arkadaşlar. Sonra devam edelim. Saatimiz kaç?
+
+290
+00:51:56,867 --> 00:51:59,507
+10 geçiyor, 20 geçe devam ediyoruz.
+
+291
+00:52:00,106 --> 00:52:02,206
+Tamam mı? 20 geçeye kadar bir ara verelim.
+
+292
+01:03:41,538 --> 01:03:42,759
+Devam edelim arkadaşlar.
+
+293
+01:03:49,987 --> 01:03:55,407
+Evet, faz açısı arkadaşlar, faz açısı karakteristiğini biz ne için kullanacağız?
+
+294
+01:03:55,907 --> 01:04:02,867
+Sinyallerin, birden fazla AC sinyalin birbirine göre durumlarını tayin etmek için kullanacağız.
+
+295
+01:04:03,106 --> 01:04:16,145
+Tabi burada en önemli, en kritik şeyimiz, yani en önemli deneyeceğimiz nokta, iki sinyalin veya üç sinyalin, bütün kıyaslanacak sinyallerin
+
+296
+01:04:16,226 --> 01:04:30,706
+Aynı frekansa sahip olması gerekli. Yani bir sinyalimiz var 50 Hz frekansa sahip, bir sinyal var 100 Hz frekansa sahip. Bu iki sinyali faz açısı anlamında kıyaslayamayız.
+
+297
+01:04:31,666 --> 01:04:38,786
+Tamam, bu önemli bir nokta sinyalleri kıyaslamak için aynı frekansa sahip olması gerekir.
+
+298
+01:04:40,898 --> 01:04:52,759
+Örnekten gidelim. Misal burada 3 tane sinyalimiz var. Referansı ben mavi sinyal aldım. Ve diğer 2 sinyalin durumunu bu maviye göre kıyaslayacağım.
+
+299
+01:04:53,318 --> 01:05:03,797
+Ve ben bakıyorum ki hepsinde de frekans bilgisi aynı. Mavinin frekansına bakıyorum 500 değil mi? 500 saniyede bir periyot atmış.
+
+300
+01:05:04,291 --> 01:05:16,251
+Yani aslında 2 Hz'lik bir sinyal, gerçi bu saniyede 500 saniyeymiş de, bunun T domeni 500 saniye yani. Ötekisinin de aynı şekilde, onun da aynı.
+
+301
+01:05:16,351 --> 01:05:27,911
+Yani hepsinde de bir yerde belirtilmesi de lazım eğer sorda yoksa. Bunların üçünün de F bilgisi, yani frekans bilgisinin aynı olduğu senaryolarda biz kıyaslama yapabiliriz.
+
+302
+01:05:30,947 --> 01:05:56,686
+Kıyaslamadan kastımız ise şu, bu sinyale göre yeşilin veya kırmızının durumunu yorumlama. Nasıl yorumlayacağız? Yeşil, mavinin önünde mi veya arkasında mı? Leading mi yapıyor, önünde mi gidiyor, yoksa lagging mi, geriden mi takip ediyor? Lead ve lag tabirlerinden bahsedeceğiz burada.
+
+303
+01:05:56,994 --> 01:06:16,393
+Ve bu leading yapıyorsa veya legging durumundaysa, ileride veya gerideyse, kaç derece açıyla, faz açısıyla, burada phase angle buradan geliyor, kaç derecelik faz açısıyla bu leading veya legging olma durumu var? Bunu yorumlamak.
+
+304
+01:06:18,466 --> 01:06:39,667
+Örnekten gidelim. İşte 500 saniyede bir örnekleme olan bir sinyal var. Ötekiler de aynı olduğunu düşünüyoruz. Ve baktığımızda sıfır noktasında referans aldığımızda yeşil sinyalin 40 derece, yani 40 saniye bir farkı var şurada. 40 saniyede.
+
+305
+01:06:45,570 --> 01:06:49,369
+Tersten baktığımızda 480'lik bir farkı var.
+
+306
+01:06:51,490 --> 01:07:00,411
+Yani arada sinyallerin arasındaki zaman skalası fiyasına baktığımızda biri 40 saniye, biri de 480 saniyelik bir farktan bahsediyoruz.
+
+307
+01:07:00,590 --> 01:07:03,411
+Yani bir faz açısı farklı söz konusu.
+
+308
+01:07:05,150 --> 01:07:10,310
+Bu saniye bazındaki farklılıkları biz tabii açısal farklılıklara getirmemiz lazım.
+
+309
+01:07:10,722 --> 01:07:29,802
+Bunun için de normalde ilk başta orijinal sinyalin, yani sinyal birin, şuradaki orijinal sinyal dediğimiz sinyal bir o tabirlerde mavi olan, sinyal birin bir radyen cinsinden ne olduğuna bir bakmak lazım, Omega T'sine.
+
+310
+01:07:30,242 --> 01:07:52,342
+Omega'yı biliyorum zaten, 2PF demekti ama burada F'imiz yok, frekanstan değil, bölüden gidelim. 2PT'den ben radyanını hesapladım. Yani benim aslında orijinal sinyelim, 5'i nereden öğrendik? 5'te zaten sorunun şurasında 5V, eksi 5V olduğu gözüküyor.
+
+311
+01:07:54,691 --> 01:08:11,511
+Benim orijinal sinyelim 5V sin 12.6 miliradyan cinsinden bir değer. Şimdi sinyal 2V3'ü buna göre kıyaslayacağız. Kıyaslamak için de aradaki zaman farkı yani kıyaslarken kastımış şu.
+
+312
+01:08:21,923 --> 01:08:40,022
+Buna göre ne durumda olduğunu ben gene 5 sin, tabi bu 5 şu anki örnekte 5 olduğu için, 5 sin, 12.6 bu orijinal sinyalim, artı veya eksi fi açısıyla göstereceğim.
+
+313
+01:08:40,463 --> 01:08:43,022
+İşte bu fi açısını bulmak benim için önemli.
+
+314
+01:08:43,906 --> 01:08:53,427
+Demin söylediğimiz 40 saniye ve 480 saniyelik önde veya arkada olma durumu, burada fi açısı şeklinde ibarat edilmesi lazım.
+
+315
+01:08:54,066 --> 01:08:55,145
+İbraz edilmesi lazım.
+
+316
+01:08:55,965 --> 01:09:02,587
+Buradaki fi açısını bulmak için ise, en temel bilinen teknik şudur.
+
+317
+01:09:10,785 --> 01:09:35,645
+Dertte o değişimdi, 40 saniye, öteki bir sinyalde 40 saniyede hatırlarsanız, bölü 500 den. Ben açısal olarak açıyı bulurum, hani normal açı derecesini. Radyan olarak bulacaksam da, eksi 2 pi, 40 bölü 500 den, radyan cilsinden değerini bulacağım. Pi yerine 3 uygunu 14 yazabiliriz.
+
+318
+01:09:37,089 --> 01:09:57,330
+Bizim bu örnekte de hesaplarsak, eğer şu 28.8 derece şeklinde gösterilmiş gördüğünüz gibi, yani aslında bu eksi 360, 40 bölü 500 demek, şurası da eksi 360, 480 bölü 500'den gelen değerler.
+
+319
+01:09:59,234 --> 01:10:22,234
+Yani şu an şunu diyebilirim ben. Sinyal 2, sinyal 1'e nazaran 28.8 derecelik bir farka sahip. Sinyal 3 ise sinyal 1'e nazaran 14.4 derecelik bir farka sahip. Faz açısı bunlar arkadaşlar. Farktaki faz açıları. Tamam. Phase angle'lar yani. Şimdi burada...
+
+320
+01:10:22,434 --> 01:10:43,594
+Dediğimiz gibi iki tabir var. Bir, Legging, Leg yapma, geriden takip etme, bir de Leads, önde olma durumu. Bunu şimdi graf olursa eğer elinizde, graftan analiz etmek kolay. Şöyle ki, ben şu noktaya bir çizik attım. Şöyle düzgünlemesini çizebilirsem tabii.
+
+321
+01:10:48,449 --> 01:11:09,790
+Daha sinyal 2, 0 olamamış. Ama sinyal 3 çoktan 0 olmuş ve geçmişte bile. Değil mi? Hani böyle düz bir T domeninde çizgi atarak analiz yapılabilir. Şu an sinyal 3, sinyal 2'den, pardon sinyal 1'den daha önde. Yani lead yapıyor diyebiliriz. Graf'tan.
+
+322
+01:11:16,482 --> 01:11:26,582
+Mavi sıfıra geldiğinde daha hala gelmediği için, geriden takip ediyor diye yorumlayabiliriz. Yani lagging durumunda, legs durumunda diyebiliriz.
+
+323
+01:11:27,303 --> 01:11:32,142
+Tabii bunun bir de şöyle bir matematiksel formülü var. Dur bakayım şuraya koymuştum.
+
+324
+01:11:33,662 --> 01:11:41,582
+Referans sinyalinden o anki sinyalin fi derecesi, ki bizim örnekte 28'di, yanlış hatırlamıyorum, eksi 28'miş.
+
+325
+01:11:42,785 --> 01:12:07,625
+Eksi 28, eksi 0. Ne gelir? Eksi 28 gelecek değil mi? Yani 0'dan ufak olduğu için şu an bu analiz ettiğim sinyale ait değer late durumundadır. Geriden geliyordur diyeceğim ki öyle de bulduk zaten. Öteki tarafta, 14.4'da herhalde.
+
+326
+01:12:08,079 --> 01:12:14,537
+0 dediğimde 0'dan büyük çıktığı için de bu analiz ettiğim sinyal lead yapıyor diyeceğim.
+
+327
+01:12:14,919 --> 01:12:21,239
+Şimdi referansımız 0 olduğu için basit gibi gözüküyor ama referansımız her daim 0 olmayabilir.
+
+328
+01:12:21,662 --> 01:12:39,502
+Yani buraya farklı bir açısal değer gelebilir. Yani şuraya illa orijinal sihirimizin sıfırı almayabiliriz. O noktada şu mantığı oturtturmak, biraz sonra yapacağımız örneklerde olumsuz olan örnekler olacak. Bunu oturtturmak daha mantıklı.
+
+329
+01:12:47,619 --> 01:12:53,759
+Artı pozitif çıkıyorsa çıkartma işlemin sonucu ileridedir diyeceğiz.
+
+330
+01:12:57,731 --> 01:13:03,651
+Evet, genel olarak bir sinüs gerilimini veya sinüs dalgasının waveformunu,
+
+331
+01:13:04,514 --> 01:13:22,295
+Tabir eden parametreleri analiz ettik. Vm dediğimiz bir genlik belirtisi, peak veri değerini gösteriyor dedik. Ama işte 5 volt diyorsak eğer peak to peak olarak çizilir, artı eksi 5 volt arasında değişim gösteren sinyali söyleyeceğimizi söyledik.
+
+332
+01:13:31,779 --> 01:13:34,959
+İşte burayı da yazmışız zaten, gösterebilirdik dedik.
+
+333
+01:13:36,478 --> 01:13:38,818
+F'i bir bölü T şeklinde gösterebiliyoruz.
+
+334
+01:13:38,818 --> 01:13:48,638
+T'yi de 2P omega şeklinde, ki buraya da zaten 2P'yi F yazarsanız, 2P'ler gidecek, bir bölü F şeklinde gösterebiliyoruz diyeceğiz.
+
+335
+01:13:50,898 --> 01:13:51,978
+Tamam mıyız?
+
+336
+01:13:56,162 --> 01:14:04,563
+Buradaki fiyatçımız bizim bir başka sinyali, mevcut olan sinyali olarak kıyasladığımız ibadet.
+
+337
+01:14:08,066 --> 01:14:31,485
+Örnek verelim. İki sinyalimiz var. Biri V1, biri V2. V1 sinyalimiz 6V sinüs 20T artı 40 denen bir sinyal. Bakın, şimdi normalde 0 burada bir şey ibare olmasaydı bu şu demektir. Benim öyle bir sinüs dalgam var ki, başlangıç noktası 0.
+
+338
+01:14:32,866 --> 01:14:35,985
+İşte artı eksi altı volt da sanım yapıyor.
+
+339
+01:14:38,326 --> 01:14:45,766
+Ve bir, tabii tam yamuk yamuk çizdim ama, bir frekans bilgisi var.
+
+340
+01:14:46,186 --> 01:14:47,645
+İşte burada 20T imiş.
+
+341
+01:14:48,927 --> 01:14:50,587
+Değil mi? Bunu söylüyor burası.
+
+342
+01:14:51,446 --> 01:14:56,026
+Ama işte her daim böyle sıfırdan başlayan bir sünüs olmasına gerek yok.
+
+343
+01:14:56,026 --> 01:14:57,266
+Şimdi artı kırk dedi.
+
+344
+01:14:57,647 --> 01:15:02,927
+Yani 40 derecelik bir kayma yapılmış bir sinüs dalgası bu.
+
+345
+01:15:04,187 --> 01:15:08,166
+Öteki tarafta ikinci sinyalimiz ise kosünüs sinyali.
+
+346
+01:15:08,966 --> 01:15:12,187
+Eksi 4 ve 20t artı 20 oldu.
+
+347
+01:15:12,306 --> 01:15:14,647
+Şimdi sinüsle kosünüs arasındaki bir farka bakalım.
+
+348
+01:15:15,746 --> 01:15:17,507
+Sinüsümüz hatırlıyoruz, böyle bir şey.
+
+349
+01:15:18,387 --> 01:15:20,306
+Kosünüsümüz ise ne olacak?
+
+350
+01:15:22,487 --> 01:15:24,147
+Şöyle bir şey olacak değil mi?
+
+351
+01:15:24,147 --> 01:15:24,767
+Tabii tamam.
+
+352
+01:15:25,315 --> 01:15:29,174
+Denk getirebilir miyim bilmiyorum ama karıştı biraz. Şurası maksimum o.
+
+353
+01:15:30,054 --> 01:15:34,615
+Yani sinüsü 0 olduğu yerde kosünüs 1 olan bir sinyal.
+
+354
+01:15:36,074 --> 01:15:41,315
+Şimdi aslında 90 derece bir farktan söz ediyoruz. Bunu nereden anladık?
+
+355
+01:15:41,615 --> 01:15:46,955
+Çünkü işte bu kosünüs 0'a geldiğinde sinüs 1'i 90'da oluyor.
+
+356
+01:15:49,054 --> 01:15:52,514
+Değil mi? 90 derece bir faz farkı olan bir sinyal.
+
+357
+01:15:52,995 --> 01:16:04,234
+Şimdi o zaman sinüsle kosünüsü ben kıyaslayacağım vakitlerde veya iki alternatif gerilimi kıyaslayacağım durumda bir kere aynı domeyne getirmem lazım.
+
+358
+01:16:04,455 --> 01:16:09,295
+Sinüsse sinüs, kosünüse kosünüse getireceğim ki aynı domeynde konuşalım.
+
+359
+01:16:09,975 --> 01:16:15,855
+İlk başta hani sinüsü kosünüse getirdiğimizi varsayalım. Bu böyle kalsın.
+
+360
+01:16:16,706 --> 01:16:25,587
+Şunu biliyorum ki ben sinüsü, sinüs bir sinyali, kosünüs formata getirmek için içerisine 90 derecelik fazı çıkarmam lazım.
+
+361
+01:16:26,767 --> 01:16:31,326
+Çünkü kosünüs 90 derece ileride olan bir şeydir.
+
+362
+01:16:31,805 --> 01:16:41,285
+Yani ben sinüsü kosünüs şeklinde göstereceksem 90 derece geriye almam lazım sinyalimi ki 90 derece ilerisi sinüs olsun.
+
+363
+01:16:42,659 --> 01:16:57,659
+Anlaşabildik mi burayı? O yüzden 90 derece çıkartıyorum içeriden, orijinal sinirimden. Hesaplamayı yaptığımızda zaten 6 volt kosünüs 20T-50 oldu. Şu an kosünüs...
+
+364
+01:16:57,731 --> 01:17:23,550
+Bazında iletişik, yani aynı domenindeyiz. Ama bu sefer bir de eksilik var. Yani şeyler, magnitude'lar tutmuyor. Bunu da pozitif hale getirmem lazım. Şunu biliyorum ki, kosünüs veya sinüs fark etmez. Kat sayısının artısını eksi, eksisini artı yapmak, içerideki açıyı 180 derece değiştirmeye geçer, değil mi? Onu nereden anlıyoruz? Çizelim tekrar. Şurası 1,180.
+
+365
+01:17:25,123 --> 01:17:33,681
+Şurası da öteki 180. Yani şuradaki sinyalin birebir replikasyonu 180 derece sonraki kısımdır değil mi?
+
+366
+01:17:35,923 --> 01:17:44,022
+Bu ibareyle biz aslında şuradaki eksi 4'ü, yani şuradaki tabii ters çizdim ama artı 4'e, eksi 4'e getirdik şu an.
+
+367
+01:17:44,403 --> 01:17:50,642
+Eksi 4'ü artı 4'e yapabilmek için 180 derece kaydırıyoruz. Bu ileri de olur, geri de olur. Fark etmez.
+
+368
+01:17:52,162 --> 01:18:00,543
+Bir şeye bakaraktan bunu, yani artım yazacağım, eksim yazacağım diye karar vereceğiz. İleride anlatacağım onu. Ama 180 derece kaydıracağız şu an.
+
+369
+01:18:01,681 --> 01:18:09,782
+180 derece çıkarttım. Ne oldu? Artık eksilik kalktı. Artı 4 volt. Cosunus 20 t-160 geldi.
+
+370
+01:18:10,623 --> 01:18:17,282
+Şimdi ben buraya yer gelmişken de in dedim. Artı 180 deseydim ne olacaktı? Bu 200 olacaktı değil mi?
+
+371
+01:18:18,883 --> 01:18:34,723
+İyi de 200-180'lik baremin üstü. Böyle olunca bunu analiz etmek daha zor. O yüzden her zaman biz burayı 180 içerisinde, daha doğrusu birbiriyle alan ilişkisini 180 içerisinde tutmak lazım.
+
+372
+01:18:36,702 --> 01:18:42,223
+Şu an burada çok anlaşılmıyor ama ileride onunla ait bir örnek gelecek. O zaman daha iyi anlayacaksınız.
+
+373
+01:18:42,223 --> 01:18:43,099
+Şu an...
+
+374
+01:18:43,107 --> 01:18:57,867
+Kosyüse getirdik. İkisi de pozitif kas sayıya sahip. Şu an şu içerideki açıları ben kıyaslayabilirim ve buna göre bir sinyal, iki sinyalin birbiri arasındaki iletişimine bakabilirim. Yani etkileşimine bakabilirim.
+
+375
+01:18:59,547 --> 01:19:05,446
+Ne dedik? Mesela V1 seçelim. V2'de referans alalım.
+
+376
+01:19:07,887 --> 01:19:09,446
+Şöyleydi formülümüz.
+
+377
+01:19:09,985 --> 01:19:26,145
+Selected diyelim, Q dedik ya, P diyelim ya, eksi, referans, sıfırdan ufaksa lag yapar dedik, sıfırdan büyükse lead yapar dedik.
+
+378
+01:19:26,145 --> 01:19:32,686
+Eksi 50 aldım, eksi, eksi 160.
+
+379
+01:19:33,442 --> 01:19:35,463
+Ne yapar burası? 110 mu yapıyor?
+
+380
+01:19:36,022 --> 01:19:38,303
+Değil mi? 110. Artı çıkıyor yani.
+
+381
+01:19:38,303 --> 01:19:42,922
+O zaman diyeceğim ki ben selected olan V1'i almıştım 50 değerken.
+
+382
+01:19:43,841 --> 01:19:47,543
+V1, Lead, V2.
+
+383
+01:19:50,022 --> 01:19:50,982
+Tamam.
+
+384
+01:19:52,035 --> 01:20:13,014
+Şimdi kosünüs formatta hesapladık. Şimdi şu sinüsü kosünüse getirelim. Tam tersini yapalım. Sinüs aynen kaldı. Şu kosünüsü sinüse getireceğiz. Şimdi kosünüsü sinüse getirirken bu sefer eksi 90 yazmam lazım değil mi?
+
+385
+01:20:14,655 --> 01:20:32,615
+Pardon, daha doğrusu artı 90 yazmam lazım. Ama şunu biliyorum, bir de buradaki eksilik var. Yani şöyle bir şey yazmam lazım. Artı 90, eksi 180 yazacağım. Eksiliği de gidermek için. İkisini tek seferde eksi 90 şeklinde yazdım. Aynı şey zaten.
+
+386
+01:20:33,857 --> 01:20:42,517
+Ve kosinüsü sinüse getirdik, eksi 90 ile sonra da eksideki kas sayıyı artı hale getirmek için 180 ekledim.
+
+387
+01:20:44,938 --> 01:20:52,058
+Pardon, artı 90 ile sinüse getirdim. Sonra eksi 180 çıkardım. Eksi 90 şeklinde hesapladım burayı.
+
+388
+01:20:52,706 --> 01:21:02,107
+Şu an benim şuradaki 4V kosünüs 20T 20 derece artık 4V sinüs 20T 70 derece formatına getirdik.
+
+389
+01:21:02,687 --> 01:21:03,785
+Şimdi kıyaslayacağım.
+
+390
+01:21:04,927 --> 01:21:08,466
+Yine aynı mantıkla işte V1'i refera alalım isterseniz.
+
+391
+01:21:08,726 --> 01:21:16,746
+40-70 gene zaten 110 geleceği için benim V1'im V2'nin önündedir.
+
+392
+01:21:17,166 --> 01:21:20,066
+110 derecelik faz farkı ile diyebilirim.
+
+393
+01:21:21,282 --> 01:21:24,501
+Burası önemliydi arkadaşlar. Var mı sorunuz?
+
+394
+01:21:29,379 --> 01:21:30,099
+Yok mu?
+
+395
+01:21:31,178 --> 01:21:33,058
+O zaman devam ediyorum.
+
+396
+01:21:38,915 --> 01:21:47,995
+Başka örneklere bakalım. Sinüs ve kosünüs örneği. Burada kırmızı olan sinüsü ve bir mavi olan da kosünüsü gösteriyor.
+
+397
+01:21:51,855 --> 01:21:58,834
+Kosünüsten 90 derecelik bir faz farkı var. Bu yüzden sinüs 90 derece geriden geliyor esasında.
+
+398
+01:21:59,374 --> 01:22:06,014
+Bunu analiz içinde sıfıra, bu burada erirken, sinüs 90 derece sonra sıfıra eriyor diye de görebiliriz, bakabiliriz.
+
+399
+01:22:06,455 --> 01:22:09,315
+Yani sinüs 90 derece geride kosünüsün.
+
+400
+01:22:09,763 --> 01:22:19,522
+Bunu birbiri arasında değiştirmek için de, misal sinüsü kosünüs formatına getirmek için, eksi 90 yazmamız gerekiyor.
+
+401
+01:22:20,195 --> 01:22:39,255
+Kosünüsü sinüs formatına getirmek için de artı doksan yazmamız gerekiyor. Bunu bileceğiz. Bu kesinlikle lazım olacak. Çünkü biz bunu neden yapıyoruz bu dönüşümü? Fazor formata getirdiğimizde biz karmaşık sayıyı kosünüs formatına getirmeyi hedefleyeceğiz.
+
+402
+01:22:42,785 --> 01:22:54,746
+Eksi olduğunda da zaten 180 derece eklediğimizden bahsetmiştik. Değerin 180 derece ötelenmişi zaten benim aynı değerin negatif veya pozitif olma durumunu gösterecekti.
+
+403
+01:22:58,851 --> 01:23:07,050
+Başka bir örneğimiz var. Bu sefer 10 derece sinüs V1 kaydırılmış. 30 derece de öteki kaydırılmış.
+
+404
+01:23:08,731 --> 01:23:15,071
+Birbiri arasındaki durumun izahını yapacağız. İlk etapta isterseniz sinüsü kosünüse çevirelim.
+
+405
+01:23:15,351 --> 01:23:22,089
+Genelde zaten bizim bütün, tekrardan söylüyorum, sinüs sinyallerini kosünüse geçirmek hedefimiz olacak.
+
+406
+01:23:22,691 --> 01:23:40,791
+Burada da sinüsü kosinüse geçirirken 90 derece çıkartmamız gerekiyordu. Söylemiştik. Ne olacak? Eksi 80 olacak. Ama burada da bir eksi olduğu için buna artı veya eksi 180 eklemem lazım. Şimdi buna eksi 180 eklersem burası eksi 210 olacak.
+
+407
+01:23:41,282 --> 01:23:56,161
+Eksi 80 ile eksi 210 arasında mantıklı bir çevrim var. Yani ikisini beraberinde 360'ı geçmeyen bir derece var. Ama ben buraya artı 180 yazsaydım, artı 150 gelecekti.
+
+408
+01:23:57,062 --> 01:24:03,161
+150 eksi 80, benim 180 derece o limitin çok dışında kalacağı için.
+
+409
+01:24:03,714 --> 01:24:12,374
+Ben buraya eksi 180 yazdım. Çünkü bir şey değiştirmiyor. Eksi 180 de yazmak, artı 180 de yazmak, bunu artı 1 volt yapacak.
+
+410
+01:24:13,334 --> 01:24:21,774
+Ama kıyasladığımda, yani şununla 80 ile kıyasladığımda, kıyas limitlerim 180 dereceyi geçmemesini istiyorum.
+
+411
+01:24:22,814 --> 01:24:31,053
+Bu anlamda ona göre ben buraya eksi 180 yazdım. Burası 150 kalsın ki, pardon eksi 210 kalsın ki.
+
+412
+01:24:32,963 --> 01:24:57,062
+Şu ikisini kıyasladığımda, eksi 80, eksi 210, bunu da işte V1'in durumuna baksak, V2'ye göre, nasıl yazacağız? Eksi 80, eksi, eksi 210'dan 130 gelecek. O da artı çıktığı için V1 lead yapıyor diyebiliriz, değil mi? Artı çıktığı için. V1, V2'nin önündedir diyebiliriz.
+
+413
+01:24:59,142 --> 01:25:00,242
+Tamam mıyız?
+
+414
+01:25:03,587 --> 01:25:05,366
+Herhalde tamamız.
+
+415
+01:25:07,906 --> 01:25:09,906
+Başka bir örneğimiz var.
+
+416
+01:25:13,602 --> 01:25:22,602
+Burada da yine kosünüs formatına getirelim. Kosünüsü, sinüsü kosünüse getirirken, eksi 90'dan burası ne olacak? VT eksi 80 olacak.
+
+417
+01:25:22,602 --> 01:25:33,602
+Ama eksi ise de var. Buraya bir 180 eklemem lazım. Şimdi eksi 180 eklersem, burası 260 olacak. Eksi 260 ile eksi 30'u kıyaslarken
+
+418
+01:25:33,955 --> 01:25:55,634
+Daha da artacak aradaki fark. Onun yerine ben buraya artı 180 yazarsam, burası artı 100 gelir. Artı 100 ile V1'i alırsam eğer 100-30'dan 130 yapar. Ve bu 130'da artı olduğu için zaten V1'im lead yapıyor derim V2'ye.
+
+419
+01:25:59,010 --> 01:26:15,990
+Bu konseptleri bileceğiz arkadaşlar. Hani sinüsü eksi 90 ile kosinüse getirmeyi, kosinüsü artı 90 ile sinüse getirmeyi, burası tabi işaretiyle alakalı bir örnek olmuş da, 180 derece örneği, sinüsle de aynı şey var zaten, 180 derece.
+
+420
+01:26:17,270 --> 01:26:23,270
+360 derece zaten artı veya eksi direkt kendisine verecek, bunları bileceğiz.
+
+421
+01:26:26,306 --> 01:26:38,491
+Evet, iki sinyali kıyaslayacaksak ilk basama bizim bu kıyaslamanın şu olmalı, bu iki sinyallerin frekansları aynı frekansa sahip mi? Buna bakmam lazım.
+
+422
+01:26:38,946 --> 01:26:49,305
+Sonra ikinci etapta aynı trigonometrik fonksiyona sahip olma olmadığı, yani sinüs mü, iki sinyal veya kosünüs mü, bunları aynı domeyne almamız lazım.
+
+423
+01:26:50,046 --> 01:27:06,546
+Üçüncü etapta da gerilim, magnitude değerinin işaretini negatif veya pozitif olma durumunu kontrol etmemiz ve aynı domeyne de ikisi de negatifse negatif, ikisi de pozitifse pozitif olarak
+
+424
+01:27:06,946 --> 01:27:11,426
+Bunu ayarlamayı 180 derece ekleme veya çıkarma ile yapmamız gerekiyor.
+
+425
+01:27:12,846 --> 01:27:19,026
+Sonra da faz farkını, bu iki sinyale ait olan faz açılarını çıkartarak bulacağız.
+
+426
+01:27:23,746 --> 01:27:25,767
+Arkadaşlar, 2 dakikaya gidiyorum hemen.
+
+427
+01:28:01,123 --> 01:28:07,242
+Evet, fazör gösterimle devam edelim. Zaten bahsetmiştik ama tekrardan burada bir flashback yapalım.
+
+428
+01:28:08,342 --> 01:28:18,383
+İşte karmaşık sayılarda x, niye yazmıyor? x, işte z diyelim buna, x artı j diye bir sayımız olsun.
+
+429
+01:28:26,942 --> 01:28:45,362
+Fazol gösteriminde işte VM dediysek, VM kısmını oluşturacak. Şurayı açısal kısmını da ters tanjantı y bölü x'ten bulacağız. Şurasını fi diyeceğiz ve bu fi'nin de tanjant eksi bir y bölü x olduğunu söylemiştik.
+
+430
+01:28:45,615 --> 01:28:57,714
+Bu zaten fazör gösterimini eksponansiyel olarak da gösterebiliriz demiştik. Yani E üzeri J fi buydu, Vm de burasıydı. Aynı şeyden bahsetmiştik.
+
+431
+01:28:59,294 --> 01:29:04,615
+Bir de tabii kosünüs ve sinüs şeklinde de yazabilirdik aynı şeyi. Yani x'ini...
+
+432
+01:29:05,315 --> 01:29:09,955
+Vm cos omega, işte omegayı bulduğumuz şekilde yazabilirdik.
+
+433
+01:29:10,355 --> 01:29:15,495
+Ysini de işte Vm sinüs omega şeklinde yazabiliyorduk. Bunları bahsetmiştik.
+
+434
+01:29:18,275 --> 01:29:31,087
+Sadece hani imajin partı olmayan bir şeyi, fazor gösterimine değinirsek, herhangi bir imajin partı yoksa, zaten benim için ya eksi 180'dir negatif bir.
+
+435
+01:29:31,087 --> 01:29:51,027
+B sayıysa veya pozitif bir sayıysa normal 180'dir. Zaten bu da arktancan eksi B bölü A'dan gelen değer bir farkı yok. Öteki taraftan koordinatları da normal, hani değerin kendisi de PM, işte normal real değerinin kendisi de eksi PM şeklinde olacaktır.
+
+436
+01:29:51,811 --> 01:30:04,311
+İmecin kısmı varsa sadece, fazor gösterimi de 90 ve eksi 90 olacaktır. Eksi 90 ne zamanki real yani imacin kısmı negatifse eksi 90, pozitifse 90 olacaktır.
+
+437
+01:30:10,017 --> 01:30:22,779
+Polar gösterimi, Rectangle gösterimi, daha doğrusu işte karmaşık sayıların kosinus ve sünus şeklinde gösterimi diyebiliriz.
+
+438
+01:30:24,279 --> 01:30:27,138
+En sonunda da eksmonansal gösterimini izah ettik.
+
+439
+01:30:27,971 --> 01:30:43,191
+Sinusoidal bir sinyalin bir sinyale olarak kıyaslanda da ise bir FI, işte Angular Phase diye bahsettiğimiz bir FI ile ötelenmesini bahsetmiştim.
+
+440
+01:30:46,691 --> 01:30:49,550
+Bunları zaten değindik, tekrardan aynı şeyler.
+
+441
+01:30:56,195 --> 01:30:58,035
+Evet, bunlar daha nişey.
+
+442
+01:31:01,507 --> 01:31:07,847
+Örnekten gidelim. Misal sinüs bir fonksiyonumuz var. 3V sin 100T artı 20.
+
+443
+01:31:08,579 --> 01:31:16,038
+Bunu kosünüs formata getirmek için hep diyoruz, eksi 90 ile toplayacağız. Eksi 90 bir şekilde kosünüse getirdik.
+
+444
+01:31:16,459 --> 01:31:20,579
+Şimdi kosünüse getirmemizdeki neden şundan dolayı önemli arkadaşlar.
+
+445
+01:31:20,898 --> 01:31:27,079
+Çünkü kosünüs domenindeki bir sinyali, fazör şeklinde göstermek direkt kendisi.
+
+446
+01:31:27,079 --> 01:31:33,079
+Yani kat sayısı, fazördeki bizim real part şey...
+
+447
+01:31:34,306 --> 01:31:36,226
+Magnitude kısmını oluşturacak.
+
+448
+01:31:38,178 --> 01:31:50,058
+Öteki taraf ise, şuradaki aradaki 70 derece ise, bizim phase angel'ımızı oluşturacağı için, Kosinus formata getirmek çok daha rahat bir işlem yapıyor.
+
+449
+01:31:50,058 --> 01:32:04,638
+Yani sizin üstten biz Kosinus'a getireceğiz. Kosinus'taki fazör açısı ve kendi gerilim genliği, benim magnitude'umu ve phase angel'ımı direkt oluşturacak.
+
+450
+01:32:05,891 --> 01:32:30,891
+Öteki başka bir sinüs dalgası. 7 amper bu, akım kaynağı demek ki. 7 amper sinüs 350T-100 diye bir akım kaynağımız olsun. Bunu kosünüze getirdik. 90 çıkarttık, x-190 şeklinde. Şimdi bu x-190'ı tabii yazamam. Çünkü 180 ile limitlemem lazım orayı. Yani 180, artı x-180 yazılabilir maksimum.
+
+451
+01:32:31,299 --> 01:32:50,178
+Şu kısma. Bunun için de ilk etapta bir 180 ekledim. Eksi 7 amper oldu. Bir 180 daha ekledim veya direkt 360 eklemek de kendisine vermek olduğu için 360 ekleyerek 170'e limitledim. Bu 170 benim için şuradaki faz açısı bilgisi olacak.
+
+452
+01:32:50,959 --> 01:32:58,239
+Tekrardan söylüyorum, şu ibarede bu sinyale ait herhangi bir frekans bilgisi yok. Gördüğümüz üzere.
+
+453
+01:32:58,670 --> 01:33:16,330
+Çünkü burası aslında şunu söylüyor bize. Benim 7 amperlik veya 3 voltluk gelene sahip bir gerilimim ve akım neyse işte var. Ve bu timescale'da 70 derece kaydırılmış durumda. Bunu söylüyor bize.
+
+454
+01:33:23,619 --> 01:33:28,978
+T dediğimiz veyahut da 2PFT dediğimiz şuradaki parametre ben gelecek.
+
+455
+01:33:29,579 --> 01:33:33,079
+Burası zaten bütün sinyalde eşit olmak zorunda o devrede.
+
+456
+01:33:33,798 --> 01:33:37,798
+Devrede farklı olması noktasında fazor notasyon çalışmaz.
+
+457
+01:33:38,739 --> 01:33:41,758
+Tamam mı? Burası 350T misal.
+
+458
+01:33:42,178 --> 01:33:45,459
+2PFT analizi yaparsak ne gelir buradan?
+
+459
+01:33:46,398 --> 01:33:48,418
+Gerçi çoktan manalı bir şey gelmiyor herhalde.
+
+460
+01:33:49,418 --> 01:33:50,459
+350 bölü.
+
+461
+01:33:51,202 --> 01:34:07,162
+6,28 ne yapar? 50 Hz yapıyor mu? Herhalde 50 Hz gibi bir şey oluyor. Yanlış olmadıysa burada. Ne oluyor bir hesaplayalım.
+
+462
+01:34:12,898 --> 01:34:15,578
+55 Hz'lik bir sinyalmiş misal durası.
+
+463
+01:34:21,985 --> 01:34:25,785
+Tamam. Yani her bilgisini söyleyen şey bizim bu taraf.
+
+464
+01:34:28,406 --> 01:34:29,607
+55.7 der.
+
+465
+01:34:30,946 --> 01:34:36,087
+Bizim için fazor notasyon devrede şu kabule göre çalışıyor.
+
+466
+01:34:36,227 --> 01:34:39,985
+Devredeki bütün gerilim ve akım kaynaklarının frekansları eşit zaten.
+
+467
+01:34:40,406 --> 01:34:42,887
+Ben bu frekans bilgisini atıp hesaplama yapmak istiyorum.
+
+468
+01:34:43,366 --> 01:34:44,026
+Mevzumuz bu.
+
+469
+01:34:48,419 --> 01:35:06,099
+Burada da normal rektanglerden fazora geçişleri göstermişiz. Formül hep aynı. Eksi, art tanjant 3 ve b bölü a'dan faz açısı bilgisi. A kare artı b kareden kara kök içerisinde de magnetik bilgisini elde ettiğimiz rektangler gösterim var.
+
+470
+01:35:09,857 --> 01:35:20,259
+Evet, yani sinyali tabii kosünüs sinüsleşenleriyle de gösterebiliriz. Hani bu da mümkün. Fazla notasyon değil de kosünüs sinüsleşenleriyle de gösterilebilir.
+
+471
+01:35:21,339 --> 01:35:35,259
+Normalde işte PMI'yi zaten Real ve Imagine kısmıyla, yani şunu demeye çalışıyorum. 5 artı 3J, mesela örneğimiz 5 artı 3J. Bunu kosünüs sinüs olarak da gösterebiliriz.
+
+472
+01:35:36,803 --> 01:36:03,523
+5.83'miş, 5.83 tm'miz, bunun şuraya direkt yazarsam eğer, 5.83 kosinus, baktan ya da 31'de, artı J 5.83 sinus, 30, girmedi ki, girmedi ki, 31.
+
+473
+01:36:04,195 --> 01:36:09,094
+şeklinde de gösterebiliriz. Aynı gösterim bir farkındalığı yok.
+
+474
+01:36:11,695 --> 01:36:15,734
+Tabii biz işlemlerimizi her zaman dediğim gibi polar gösterimde yapacağız.
+
+475
+01:36:18,155 --> 01:36:30,634
+Bu konu, bu kısmı zaten daha önceki dersimizde biz değindik ama girişte kondansörlerde arkadaşlar, hani illa bir siviş anahtarı olmasın gerek yok.
+
+476
+01:36:31,170 --> 01:36:56,550
+Biz hani girişteki gerilimi fonksiyon ile de gösterebiliriz dediğimiz noktaydı burası. Burada tabi webletleri yani bu sinyal dalgacıkları, sinyallerin pek çok sinyal iç içe girerek oluşturabiliyoruz. Bunları da tabi fonksiyonlarına buna göre direkt fonksiyondan bunu anlayabilmemiz lazım.
+
+477
+01:36:57,058 --> 01:37:08,438
+Zaten bunu işlemiştik hatırlarsanız. V0, U, Tx, T0 bize şunu söylüyordu. Genliği V0 olan bir gelilim uygula ama T0 anında başlasın demiştik değil mi?
+
+478
+01:37:09,217 --> 01:37:19,498
+Bu başka bir örnekti. Genliği V0 olan bir sinyal, gerçi burası V0 mi bilmiyorum ama V0 olsun. Genliği V0 olan bir sinyal uygula ama T0 anında başlasın.
+
+479
+01:37:19,870 --> 01:37:26,870
+Ta ki T1 anında genle yine V0 olan negatif bir sinyal uygula ki sönümlensin.
+
+480
+01:37:28,490 --> 01:37:31,210
+Yani, gerçi bununkini yazmamışsın ama yazalım.
+
+481
+01:37:31,790 --> 01:37:35,170
+V0, T0 eksi, pardon şuraya T diyelim.
+
+482
+01:37:36,609 --> 01:37:38,270
+Uyguladık, değil mi?
+
+483
+01:37:38,550 --> 01:37:40,830
+T0 anında başlayan bir V0 uyguladık.
+
+484
+01:37:40,830 --> 01:37:45,550
+Eksi, V0, T, eksi.
+
+485
+01:37:47,842 --> 01:37:48,522
+T1.
+
+486
+01:37:48,862 --> 01:37:50,782
+Ve çıkarttık ve bitti.
+
+487
+01:37:51,321 --> 01:37:53,043
+Puls bu olacak değil mi?
+
+488
+01:37:54,162 --> 01:37:56,683
+T0 anında baştan bir V0 uyguladım.
+
+489
+01:37:56,683 --> 01:38:02,383
+Sonra da V0'ı geri kendi üzerinden T1 anında bitirdim.
+
+490
+01:38:07,010 --> 01:38:16,211
+Başka tabi sinyaller üretilebilir. Burada da bir örnek var. Bir square wave, kare dalga sinyali üretsek bu şekilde nasıl formülize edebiliriz?
+
+491
+01:38:16,811 --> 01:38:22,891
+3, U, T, yani şu T0 anında 3 U'luk bir sinyelim var.
+
+492
+01:38:24,589 --> 01:38:32,471
+Ta ki T1 anına kadar. Ama T1 anında 6 U'luk sinyali çıkarmam lazım. Çünkü aşağıya, eksi 3'e kadar gelmiş.
+
+493
+01:38:34,050 --> 01:38:48,870
+Sonra da en nihayetinde de 2U'nun sadece, yani ne de olsa 6U çıkardım, bir 3U daha eklersem 0 olacak. 3U'luğu geri eklediğimde T2 anında benim için bir square wave sinyali oluşturmuş oluyor.
+
+494
+01:38:51,630 --> 01:38:53,690
+İmpalsı bahsetmiştik zaten.
+
+495
+01:38:54,239 --> 01:39:01,659
+Rampa fonksiyonunda da, bunu da bahsetmiştik, T0 anından sonra R ile gösterdiğimiz diagramdı bu.
+
+496
+01:39:01,659 --> 01:39:09,318
+Tabi rampa fonksiyonunu normal U ile de gösterilmiş söz konusu. T yani çarpma işlemi var burada önemli olan.
+
+497
+01:39:10,079 --> 01:39:20,799
+T0 anında bir birim sinyali, T0 anında yani bunun türevini alarak yazılmış olan bir formül. Sonuçta bir değişim bu gösterdiğimiz değer.
+
+498
+01:39:22,466 --> 01:39:28,347
+Mesela örnek bir rampa yanına testere dişi sinyal diyorlar arkadaşlar.
+
+499
+01:39:39,438 --> 01:39:57,138
+Çarpım işaretiyle gösterebileceğimiz bir ibare yapabiliriz. Ne demek bu? Şuralar sıfır olduğu için, zaten şu T0'a kadar bir birim impals, şey, pas verirsek, yani buraya bir darbe sinyal verirsek bir anlamı yok.
+
+500
+01:39:57,938 --> 01:40:05,098
+Çarpma işaremi olduğu için. Şu kısım zaten direkt burası bir olduğu için kendisini veriyor.
+
+501
+01:40:05,763 --> 01:40:17,942
+Ta ki ben T1 anında öteki tarafı sıfırlayarak burayı kapatıyorum ve sıfır sadece şöyle bir testler edişi sinyal üretmiş oluyor.
+
+502
+01:40:17,942 --> 01:40:19,103
+Şuradaki sinyali.
+
+503
+01:40:20,982 --> 01:40:25,821
+Bu şekil çarpma işlemiyle de gösterilebilecek sinyallerimiz mümkün.
+
+504
+01:40:27,842 --> 01:40:30,583
+Başka bir sinyal örneği.
+
+505
+01:40:30,942 --> 01:40:32,982
+T0 anında başladık.
+
+506
+01:40:33,602 --> 01:41:00,161
+Bir rampaya, T1'e kadar, T1'de iki rampa seviyesinde indirdik. Neden? Çünkü bir tane indirseydik eğer bu düz devam ederdi. Bir tane daha indirdik ki aşağı doğru rampa gitsin. Sonra en sonunda da zaten T2 andan sonra sıfırlamak için geri kalan şu eksiği R'den bir tanesini R diyerek sıfırladık. Burada artık bir sinyal gelmiyor.
+
+507
+01:41:04,995 --> 01:41:09,553
+Bunlar da önemli arkadaşlar. Herhalde bir problem yok değil mi?
+
+508
+01:41:10,955 --> 01:41:17,795
+Tabi bu basit waveformların dışında çok daha karışık kompozit waveformlar üretmek mümkün.
+
+509
+01:41:17,795 --> 01:41:28,835
+İşte bunlara Harmonic waveform diyorlar. Örnek verelim. Normalde sinyalimiz şu olsun, hani kırmızıyla gösterilen.
+
+510
+01:41:29,246 --> 01:41:37,727
+Bunun içerisinde aslında bileşen olarak pek çok farklı harmonik sinyaller mevcut ama nihayetinde bu sinyal üretilmiş, oluşmuş.
+
+511
+01:41:38,547 --> 01:41:44,706
+Bu tarz içerisinde çok farklı fazla sinyalin bulunduğu sinyal çeşitleri mümkün.
+
+512
+01:41:48,482 --> 01:41:50,242
+Evet, burada bahsettik.
+
+513
+01:41:55,267 --> 01:42:08,667
+Arkadaşlar, bir 10 dakika daha ara verelim. Sonra derse zaten çok az bir kısmı kaldı ama bir 10 dakika bir ara vermem gerekiyor. Bir telefon etmem lazım. 10 dakika sonra tekrardan görüşelim.
+
+514
+01:49:32,641 --> 01:49:42,222
+Evet arkadaşlar, biraz az bir kısmımız kaldı. İsterseniz bitirelim. Sonra babınız var mı bugün?
+
+515
+01:49:48,002 --> 01:49:50,002
+Hocam, var da kimse bir şey demiş.
+
+516
+01:49:52,002 --> 01:49:56,002
+Nasıl, yani takvimde var mı yok mu?
+
+517
+01:49:57,002 --> 01:50:01,002
+Hocam takvimde var ama şeyden, Classroom'dan duyuru oluyordu genelde.
+
+518
+01:50:04,002 --> 01:50:06,002
+Tamam, ne duyurusu oluyor genelde?
+
+519
+01:50:07,002 --> 01:50:12,002
+Yani işte, hocam herkes Windows kullanmıyor ya, Mac kullananlar var yani.
+
+520
+01:50:13,155 --> 01:50:17,315
+Windows falan bilgisayarı tahmin edin falan diyorlar.
+
+521
+01:50:17,315 --> 01:50:18,634
+Böyle bir şey demek lazım.
+
+522
+01:50:21,294 --> 01:50:27,194
+Yani Windows kurmak çok problem değil de, duyuru labla alakalı mı yoksa,
+
+523
+01:50:29,115 --> 01:50:34,393
+yani labba ait bir bilgiler verilecek lisede verilmedi mi, onu mu demeye çalışıyorsun?
+
+524
+01:50:36,834 --> 01:50:37,874
+Yani evet.
+
+525
+01:50:39,971 --> 01:50:46,430
+Normalde Lab'ın ilk saatinde size LabSor'un ekrana yansıtılmıyor mu? Daha önceden mi veriliyordu?
+
+526
+01:50:47,110 --> 01:50:57,110
+Hocam, şey için söylüyorlar sanırım. Mac kullanan arkadaşlarımız Proteos'u kullanamıyorlar. O yüzden bilgisayar temin etmeyi falan düşünüyorlardır belki. Onu birisi de sormuş ama yanıt alamamış Classroom'da.
+
+527
+01:50:57,891 --> 01:51:03,991
+Tamam canım, o başka bir şey. Ben Lab'la alakalı bugün bir doküman paylaşılacak da size o mu paylaşılmadı diyorum.
+
+528
+01:51:04,290 --> 01:51:12,071
+Yok hocam, dokümanları işte lab sırasında paylaşıyorlar. Ama işte bilgisayar temin edecek arkadaşlar işte sormuş herhalde birisi. O yanıt alamamış, onu söylüyorlar herhalde.
+
+529
+01:51:13,130 --> 01:51:30,151
+Tamam yani o herkesin kendi PCC ile alakalı bir problem. Yani onu düşünemezdik asistanlar. Herkese sonuçta bir program kararttı olurdu. Proteus. Yani virtual işlediğim sistemi mi kurarsın yoksa başka bir şekilde mi çözersin?
+
+530
+01:51:30,430 --> 01:51:41,430
+Her öğrencinin kendi sorumluluğunda. Ona bir şey yapamaz ki asistanlar. Sonuçta bütün platformlarda çalışabilecek bir uygulamayı bulmak…
+
+531
+01:51:42,017 --> 01:52:05,317
+Bu noktada, yani biz bir karar kıldık, proteoluz, ona uymak lazım. Öğrencilerin sanal işletim sistemi vesaire kurarak bunu halletmesi lazım. O noktayı bilmiyorum ama ne dediğinden ne diyecekler. Hem şahsi görüşüm, her öğrencinin kendi PC'sini sonuçta karar kılınan o sisteme adapte etmesi gerekiyor.
+
+532
+01:52:07,811 --> 01:52:16,089
+Neyse, tamam. Bugün labınız var yani, uzun labın kısası. Tamam, ona da biraz vakit bırakalım size. Öncesinde şey olmasın.
+
+533
+01:52:16,811 --> 01:52:28,811
+Şimdi, baştan beri anlattığımız neden polar forma veya fazor forma geçme nedenimize bakacak olursak, şimdi şöyle bir RL devremiz olsa ve girişte...
+
+534
+01:52:31,299 --> 01:52:38,759
+Girişte bir sinüs veya kosünüs, neyse yani bir alternatif akım veya gerilim kaynağı ile bunu beslesek.
+
+535
+01:52:38,759 --> 01:52:45,119
+Bu durumda yandaki şu formülü hatırlarsınız ki bu formül KVL asıl var.
+
+536
+01:52:45,259 --> 01:52:54,038
+Yani V0 kosünüze R çarpı İ'nin ve L çarpı DI bölü DT'nin
+
+537
+01:52:55,010 --> 01:53:01,351
+Yani, volüm üzerindeki gerilim, artı direnç üzerindeki gerilim toplamının girişlik gerilme eşde olma kaydısı.
+
+538
+01:53:01,742 --> 01:53:15,502
+Buna göre yazarsak ve buna göre işlemleri T-domeninde deterministlik çözersek, differential equation'a yani süremini alarak, bu tamamen sonsuza kadar osyliasyon yapan bir devre analizine verir.
+
+539
+01:53:15,723 --> 01:53:29,742
+Neden? Çünkü sinüs dalgasının işareti değişecek, bu ne zaman şey olacak, yani doyuna ulaşmadan tekrar farklı bir polarizasyonla karşılaşacak, ya bu sonsuza kadar osile olan, savunum gösteren bir devre.
+
+540
+01:53:29,742 --> 01:53:44,043
+Biz bunu çözebilmek için tabii ki de fazor formatı getirerek çözmeyi hedefliyoruz. Neden? Çünkü bir frekans, Omega T'nin sadece L'ye olan etkisine bakacağız.
+
+541
+01:53:45,742 --> 01:53:48,662
+Burada da örnek verici kurarsak bu aynı devre.
+
+542
+01:53:52,463 --> 01:54:05,383
+Mikro, hendilik bir değerde. Şunu biliyoruz ki biz 5 tau dediğimiz, tau burada V1, V1 hatırlarsanız, yani 1 mikrosaniye sonra bu devrenin bir şeye erişmesi lazım.
+
+543
+01:54:05,383 --> 01:54:11,583
+Ama burada tabii bir sinüs dalgası olduğu için 5 tau'dan sonra sinüsse,
+
+544
+01:54:12,227 --> 01:54:30,727
+Devam eden bir yapıya yürüneceğiz. Yani bir stable olma durumu söz konusu değil. Ama ne zaman 5 tağdan sonra, 5 tağya kadar geçilir, yine biz analiz edeceğiz. Transierd analizi mevcut, yapacağız. Ama 5 tağdan sonra biz üst dalgasıyla devam ettiğini varsayacağız.
+
+545
+01:54:33,107 --> 01:54:39,166
+Öteki RC devresinde de yine aynı 5 tağlı bir dönemde transierd analizi yapılacak.
+
+546
+01:54:39,906 --> 01:54:49,187
+Ama geçiş analizi, onun sonrasında ne olacağına dair fikri bize polar formatta yaptığımız sinisoidal analizi verildi.
+
+547
+01:54:50,946 --> 01:55:00,887
+RLC devresinde de yine aynı transiyer geçiş kısmının analizi işte under damped mı, critical damped mı, over damped mı bunun analizi yapılacak.
+
+548
+01:55:01,315 --> 01:55:08,115
+Ama sonunda, 5 tağlık zaman sonrasında yapacağımız analiz, simsoydar analizi olacak.
+
+549
+01:55:08,413 --> 01:55:11,275
+Bu da bizim polar formattaki analizler.
+
+550
+01:55:14,817 --> 01:55:36,817
+Buralarda çokça bir şeyler yazılmış, çilmiş ama bahsedilen şey şu, girişe uyguladığımız bir gerilim kaynağının devreye olan etkisi iki şekilde olacak. Eğer ki girişimiz sinüs veya kosünüs bir alternatif akımsa. Nedir? Devreye bir imaging partıyla, bir de real partıyla, yani bir sanal...
+
+551
+01:55:37,347 --> 01:55:44,366
+Sayı, dediğimiz o kompleks sayı konulmakla düşündüğünüzde, sanal kısmıyla ve bir de gerçek kısmıyla etkisi olacak.
+
+552
+01:55:44,526 --> 01:55:49,387
+Ve bu iki etki, farklı farklı devre elemanlarında reaktif gösterecek.
+
+553
+01:55:50,147 --> 01:55:57,985
+Yani, işte sinüstri dalga ürettik, benim için real part, direnç olan etkisini gösterecek,
+
+554
+01:55:58,507 --> 01:56:03,026
+imagine part ise, bobin ve kondansör üzerindeki olan etkisini gösterecek.
+
+555
+01:56:07,811 --> 01:56:13,331
+Tabi biz bunları ayrı ayrı, fazor formada notasyonu götürerek çok daha rahat bir şekilde yapacağız.
+
+556
+01:56:15,586 --> 01:56:38,706
+Burada da misal, normalde girişli bir kosünüs var, VM, Piktupik gerilimine sahip, işte Theta 1 açısal, angular phase, açısal faza sahip olan bir gerilim. Akımımız da aynı şekilde. Bir RLC devresi ve ben bunu analize edeceğim vakit bunları bir kere fazora getireceğim. Fazor pomazı var.
+
+557
+01:56:39,074 --> 01:57:06,014
+Neden? Çünkü şuradaki omega t'yi ben akım ve gerilim hesabında atmak istiyorum. Bu omega t'nin etkisini sadece neyi etkiliyor bu omega t? Frekans olduğu için ve ben hatırlarsanız süreğini alırken LBC'nin süreği hesabında bu frekansın yani şeyin etkisi vardır. Bunları kondansör ve bobinin parametrelerinde işleme dahil ediyoruz.
+
+558
+01:57:07,202 --> 01:57:12,602
+Ondan sonra, pazar gösteriminde normal yapacağımız işlemleri yapacağız.
+
+559
+01:57:18,017 --> 01:57:33,717
+Tabii, işte, R direnci üzerinde herhangi bir frekans bilgisinin etkisi olmadığından dolayı, akım, gerilim, iki değerde de herhangi bir faz farkı olmadan aynı fazda olduğunu söyleyebiliriz.
+
+560
+01:57:33,717 --> 01:57:43,717
+Ama bobin de, misal, gerilim akımdan 90 derece daha ileride. Neden? Çünkü buradaki omega L, yani buradaki omega...
+
+561
+01:57:44,130 --> 01:57:58,970
+Tamamen o 2PF'den gelen değer. 2PF'deki değerden dolayı bobinin katı etkisi daha fazla oluyor gerilim üzerinde. Yani gerilim 90 derece daha önde bobinli devrelerde.
+
+562
+01:57:59,299 --> 01:58:09,459
+Akım işeği konular sütörlü devrelerde ise akım 90 derece daha önde olacak gerilimden ve ben işte konular sütörün akımına şey yaptım.
+
+563
+01:58:09,538 --> 01:58:15,158
+Yani şu omega c'yi konular sütörün üzerinde bu devre ana izlerinde kullanacağım.
+
+564
+01:58:15,999 --> 01:58:24,678
+Direkt bir örnekten gidelim. Bir örneğimiz var. Girişte bir akım kaynağım var. 8 kosinus 2 pi 10 üzeri 6 t artı 30.
+
+565
+01:58:25,122 --> 01:58:32,502
+Bir kere şunu bileceğiz. Bu neydi? Bu fi dediğimiz parametre phase angel değil mi? Angol.
+
+566
+01:58:34,183 --> 01:58:46,702
+Burası ise benim bu devredeki sinüs ve kosünüs parametreleri. Yani iki fi f t'den gelen bir değer.
+
+567
+01:58:46,862 --> 01:58:50,523
+Şimdi baktığımızda o zaman önemli değil ama bunu bir analiz edelim.
+
+568
+01:58:51,553 --> 01:58:59,514
+Bu öyle bir akım kaynağıymış ki, 10 üzeri 6 frekansa sahip. Ne demek 10 üzeri 6?
+
+569
+01:59:00,995 --> 01:59:01,634
+Fluorazmi.
+
+570
+01:59:06,402 --> 01:59:17,942
+8, cos, ne demek arkadaşlar? Burada değiliz herhalde, megahertz, neyse.
+
+571
+01:59:18,602 --> 01:59:23,281
+Bir megahertz'lik bir frekansa sahip sinyal olduğunun bilgisini buradan alıyorum.
+
+572
+01:59:23,923 --> 01:59:30,522
+Ama benim bu devrede kullanacağım bilgi, giriş gerilimi için sadece şuradaki pazar formattaki 30'u açtı.
+
+573
+01:59:31,722 --> 01:59:32,562
+Yazdım.
+
+574
+01:59:32,910 --> 01:59:39,391
+8 cos, cos olduğu için direkt geçiriyoruz dedik ama şimdi bunu cos formatına getirdiğimizden bahsetmiştik.
+
+575
+01:59:40,391 --> 01:59:47,490
+8, angler, faz açısı olarak da 30 derece sahip bir akım kaynağı modülüne getirdik.
+
+576
+01:59:48,490 --> 01:59:51,709
+Art etmen işlemlerimi tamamen bunun üzerinden devam ettireceğim.
+
+577
+01:59:53,290 --> 01:59:58,010
+Kcr yazıyoruz, yani bir noda girenler, çıkanlara eşde olan akımını yazıyoruz.
+
+578
+01:59:58,370 --> 01:59:59,569
+V'yi soruyoruz da ayrıca.
+
+579
+01:59:59,966 --> 02:00:22,686
+Yazdığımızda Is-V bölü R, şuradaki direnç üzerindeki bir R akımı, sonra V bölü, işte buradaki değer, işte burada faz bilgisi, yani frekans bilgisini, yazacağız demiştik ya, frekans bilgisinin katkısını bobin üzerinde yazacağız.
+
+580
+02:00:22,686 --> 02:00:24,387
+J omega R.
+
+581
+02:00:25,249 --> 02:00:33,749
+Konar süreli de aynı şekilde J omega C şeklinde yazdık. Burayı, I, C ve Ö, R'yi bulmak için.
+
+582
+02:00:34,451 --> 02:00:38,571
+Neden V bölü şeklinde? Bu da V çarpı şeklinde arkadaşlar.
+
+583
+02:00:43,681 --> 02:00:49,942
+Neyse, artık bunu öğrenirsiniz kendiniz. Sorun olmadığı için devam ediyorum.
+
+584
+02:00:51,202 --> 02:00:53,522
+Nihayetinde V'yi çekmemiz gerekiyor.
+
+585
+02:00:54,370 --> 02:01:02,749
+V bölü 70 dirençin değeri. Burası J omega L'yi frekans bilgisini katarak hesaplayacağımız kısım.
+
+586
+02:01:03,609 --> 02:01:10,350
+Omegamız zaten şuradaki omega 2P on üzeri 6. L'nin değeri de zaten soruda verilen her devri.
+
+587
+02:01:11,109 --> 02:01:21,709
+Öteki tarafta da yine yazıyoruz. Ve artık bizim elimizde fazor formatta gösterimi ve rektangular parametrelerinin olduğu bir denklem oldu.
+
+588
+02:01:22,306 --> 02:01:31,547
+En nihayetinde çözdüğümüzde, şurada, o rektangler gösterimi de fazora geri çevirdiğimizde, çevirdikten ne yapıyorduk?
+
+589
+02:01:31,987 --> 02:01:36,406
+Şunun karesi çaldı, bunun karesi burayı verecek, karelerini toplama.
+
+590
+02:01:36,847 --> 02:01:48,047
+Burayı verecek, B bölü A'nın 0.0033 bölü 0.00143'ün art tanjantıda açısal bilgiyi veren bir şekilde ayarladık.
+
+591
+02:01:48,366 --> 02:02:01,847
+Bunu da birbirine böldüğümüzde V parametresinin 8 faz açısı 30 bölü 0.00147 bölü elde ettiğimiz değer bizim için şuradaki VT denen kısmı
+
+592
+02:02:02,223 --> 02:02:05,103
+Fazer gösterimi şeklinde oldu.
+
+593
+02:02:06,183 --> 02:02:07,342
+Faz gösterimi şeklinde.
+
+594
+02:02:07,822 --> 02:02:10,162
+Burada soru bu. Bunu araştırmanızı istiyorum.
+
+595
+02:02:10,723 --> 02:02:13,183
+Ben bunu T domenine nasıl çekerim?
+
+596
+02:02:13,622 --> 02:02:15,563
+Zaman domenine nasıl geçerim?
+
+597
+02:02:22,115 --> 02:02:31,115
+Bu önemli arkadaşlar. Bunu bilmeyeceğiz, bunu öğreneceğiz. Tamam. Sizden ekstra bir dökman istemiyorum. Öğrenmenizi bekliyorum.
+
+598
+02:02:33,934 --> 02:02:36,194
+Sorumuz yoktur muhtemelen. Var mı?
+
+599
+02:02:41,122 --> 02:02:57,562
+Sorumuz yoksa arkadaşlar, kritik öneme sahip bir ders, kesinlikle soru gelecek olan bir ders, haftaya örnek çözeceğiz ama tabii ki de bu konuyu öğrenmeniz, öğrenmiş olmanız bekleniyor o örnekleri çözmek için.
+
+600
+02:03:02,083 --> 02:03:06,722
+Tamamsak dersimiz bu kadar arkadaşlar. Soru da yoksa dersi bitireceğim.
+
+601
+02:03:09,562 --> 02:03:10,842
+İyi günler hocam.
+
+602
+02:03:11,181 --> 02:03:13,222
+İyi günler, iyi laflar.
+
+603
+02:03:32,226 --> 02:03:33,827
+Evet arkadaşlar, hoş geldiniz.
+
+604
+02:04:52,833 --> 02:04:56,455
+Evet arkadaşlar, soruyu paylaştım Google'dan arkadaşlar.
+
+605
+02:04:58,234 --> 02:05:01,595
+Classroom'dan paylaştım. Bakabilirsiniz, indirebilirsiniz.
+
+606
+02:05:12,034 --> 02:05:14,354
+Saat 7'ye kadar süreniz var arkadaşlar.
+
+607
+02:05:36,451 --> 02:05:42,811
+Soruya ulaşabiliyor musunuz arkadaşlar? İndirebildiniz mi? Sesim geliyor mu?
+
+608
+02:05:44,190 --> 02:05:44,971
+İndirdik hocam.
+
+609
+02:05:46,131 --> 02:05:47,151
+Evet hocam.
+
+610
+02:06:54,978 --> 02:07:03,337
+Arkadaşlar, soruyu okuyabilirsiniz. Soru çok açık, net. Yine öğrenci numarası, endekselenmiş değerleri kullanacaksınız.
+
+611
+02:07:06,419 --> 02:07:11,219
+Soruda şunu belirtmek istiyorum arkadaşlar. Her şey düzgün bir şekilde cevap verin arkadaşlar.
+
+612
+02:07:11,790 --> 02:07:28,589
+Belki işlem hatası yapabilirsiniz. O yüzden işlem hatası yaptığınızda puanınızın fazla kırılmaması için bütün formülleri bence açık yazın, o değerleri yerine koyun. Böyle bir durumda en azından ben sizin puanınızı kırmayayım. Tamam mı arkadaşlar?
+
+613
+02:07:29,970 --> 02:07:37,589
+Soruya arkadaşlar bakarken geçen sene bu tarz bir soru sorduğumuzda, benzer bir soru sormuştum, şey yapılmıştı.
+
+614
+02:07:37,998 --> 02:07:50,538
+Birinci soru ve ikinci soru diye soru var. Bazıları ikinci soru görmemişler arkadaşlar. Tamamen pdf'in altına kadar bakın. İki sayfa olması lazım. Ona göre cevaplarınızı, ikinci soruyu da göz önünde bulundurun.
+
+615
+02:10:00,001 --> 02:10:06,781
+Arkadaşlar, siz bu RLC devrelerini hoca anlattı mı? Konuşabilir misiniz?
+
+616
+02:10:13,890 --> 02:10:14,811
+Anlattı hocam.
+
+617
+02:10:15,089 --> 02:10:21,151
+Tamam. Herhalde geçen diğer gruba anlatılmamış olabilir. Çünkü orada bir itiraz edenler var da.
+
+618
+02:10:29,026 --> 02:10:45,026
+Önce de konuşayım. Ama arkadaşlar, siz yapabileceğinizi yapın. Yani anlatılmış diye. Çünkü geçen hafta da konuştuğumda, biz işlemiştik dedi. DC ile şey arasında çok bir fark yok arkadaşlar. AC ise sadece voltajda frekans kavramını kullanacaksınız. Bir şey yok yani.
+
+619
+02:10:48,993 --> 02:11:03,415
+Yani bu deneyde öyle bir detay yok arkadaşlar. Sadece DC ya da AC olarak bir detay yok anladınız mı? Sadece frekansını değiştireceksiniz.
+
+620
+02:15:13,954 --> 02:15:23,894
+Arkadaşlar, ben sizin lafta, size mi diğer gruba mı bilmiyorum, alternatif akım nasıl, alternatif voltajı nasıl kullandığımızı anlatmıştım.
+
+621
+02:15:23,974 --> 02:15:29,873
+Orada bir frekans değeri nasıl veriliyor? Benim anlattığım derste muhtemelen sizdiniz.
+
+622
+02:15:31,373 --> 02:15:38,853
+Anlatmıştım, bu çok zor değil arkadaşlar. Soruyu bence bir güzelce okuyun, anlamaya çalışın, soru çok zor değil.
+
+623
+02:15:42,018 --> 02:16:01,578
+Birkaç, bir cümlelik yani bir şey açıklama. O açıklamalara dikkat edin arkadaşlar. Ve hangi elemanı seçeceğinizi kendiniz artık belirleyeceksiniz. Bu dördüncü labımız. Burada artık bu kadar net cevap vermeyeceğim arkadaşlar. Şunu seçelim, ekran görüntüsü göstermeyeceğim.
+
+624
+02:17:54,723 --> 02:18:03,761
+Arkadaşlar, Kirchhoff şimdi katılacak. Ben diğer gruba bakacağım. Diğer grupta ilgileneceğim. Sizin Kirchhoff'la sizinle ilgilenecek.
+
+625
+02:18:22,541 --> 02:18:23,800
+Arkadaşlar, merhaba.
+
+626
+02:18:27,628 --> 02:18:29,029
+Beni duymuyor musun?
+
+627
+02:18:35,724 --> 02:18:37,883
+Duyuyoruz hocam.
+
+628
+02:18:39,983 --> 02:18:42,983
+Tamam. Mecid hocanın da ben yer değiştim.
+
+629
+02:18:51,245 --> 02:18:52,684
+Bilginiz olsun.
+
+630
+02:18:54,165 --> 02:18:56,544
+Soruyu koydu galiba Mecit.
+
+631
+02:18:57,885 --> 02:18:59,044
+Gördünüz mü soruyu?
+
+632
+02:19:05,867 --> 02:19:07,848
+Gençler, bir tepki verir misiniz?
+
+633
+02:19:08,908 --> 02:19:12,048
+Hocam, dosyayı aldık hocam.
+
+634
+02:19:14,128 --> 02:19:23,089
+Tamam, çözmeye başlayın. Eğer takıldığınız bir durum olursa, elimden geldiğince size yardım etmeye çalışırım.
+
+635
+02:19:24,408 --> 02:19:25,029
+Teşekkürler hocam.
+
+636
+02:19:25,929 --> 02:19:32,628
+Sorulara göz gezdirin. İlk 45 dakika canlı olarak cevap vereceğim. Yoksa çete yazarsınız.
+
+637
+02:19:33,261 --> 02:19:33,699
+Tamam.
+
+638
+02:19:35,220 --> 02:19:40,321
+Ben buralarda bekliyor olacağım ama hani sizi duymayabilirim bazen.
+
+639
+02:19:41,441 --> 02:19:44,360
+O yüzden çete yazarsanız size tek tek cevap veririm.
+
+640
+02:19:44,899 --> 02:19:45,119
+Tamam.
+
+641
+02:19:48,280 --> 02:19:52,401
+Minit hocanız söylemiştir mutlaka. Ben bir daha tekrar edeyim.
+
+642
+02:19:53,080 --> 02:19:56,101
+Şey, adı nedir?
+
+643
+02:19:58,839 --> 02:20:00,660
+Sona bırakmayın yüklemeyi.
+
+644
+02:20:01,131 --> 02:20:01,773
+Lütfen.
+
+645
+02:20:04,732 --> 02:20:06,333
+Sıkıntı oluyor çünkü.
+
+646
+02:20:06,872 --> 02:20:09,452
+Yüklediğinizde mail almadığınızda panik olmayın.
+
+647
+02:20:10,753 --> 02:20:14,633
+Ben biraz sonra yükleme linkini de koyacağım Google Classroom'a.
+
+648
+02:20:16,173 --> 02:20:19,811
+Dediğim gibi başka bir sıkıntı olursa ben buradayım.
+
+649
+02:20:23,151 --> 02:20:25,752
+Hepinize başarılar diliyorum gençler.
+
+650
+02:20:34,797 --> 02:20:38,517
+Gençler, sesim geliyor değil mi?
+
+651
+02:20:39,936 --> 02:20:40,797
+Geliyor hocam.
+
+652
+02:20:41,537 --> 02:20:41,775
+Tamam.
+
+653
+02:20:43,175 --> 02:20:45,055
+Hadi bakalım, kolay gelsin size.
+
+654
+02:20:46,977 --> 02:20:47,835
+Sağ olun.
+
+655
+02:22:53,133 --> 02:22:54,244
+Arkadaşlar,
+
+656
+02:22:57,869 --> 02:23:07,929
+Yani standart açıklama yaptım. Soruları geç yüklemiyorsunuz. Soruları zaten Mecit hocanız koydu. Ben de biraz önce şey koydum.
+
+657
+02:23:16,109 --> 02:23:27,349
+Formları yükleyeceğiniz linki koydum, raporu. Google Classroom'dan bunu da bulabilirsiniz. Son ana bırakmayın, yüklemeyi.
+
+658
+02:23:27,349 --> 02:23:29,285
+Yükleme...
+
+659
+02:23:33,484 --> 02:23:51,563
+Artık görmediğiniz şeyleri çözebileceğiniz kadarıyla çözün. Labdan sonra da hocaya mail atarsınız. Mecid hocanız okuyacak çünkü bu labları. Mecid hocanıza mail atarsınız. O da ona göre okur.
+
+660
+02:23:55,309 --> 02:24:00,349
+Son saati daha kararlaştırmadık. Kararlaştırınca size söyleyeceğiz gençler.
+
+661
+02:24:04,876 --> 02:24:06,756
+Başka sorusu olan var mı?
+
+662
+02:24:11,821 --> 02:24:21,501
+Yani mail alacaksınız bu arada, yükleme yaptığınızda mail gelecek size. Haberiniz olsun.
+
+663
+02:24:31,181 --> 02:24:33,261
+O şekilde. Tamam.
+
+664
+02:24:35,419 --> 02:24:40,261
+Herkese başarılar diliyorum. Kolay gelsin herkese.
+
+665
+02:24:48,333 --> 02:24:51,333
+Derste not almadınız mı formüllerinizi?
+
+666
+02:24:58,797 --> 02:25:23,736
+Gençler, dediğim gibi, bize hocalardan gelen gerilim bildirim şu, o konuları işledik, bu hafta yapabilirsiniz dediler. Biz de ona göre yaptık. Sizin için şu anda yapabileceğimiz tek şey şu, lab bitiminde bize mail atarsınız, hocam böyle böyle bu konuları görmedik diye. Biz de görüp görmediğinize bakarız.
+
+667
+02:25:24,780 --> 02:25:27,979
+ders sunumlarından, hocalara da sorarız.
+
+668
+02:25:29,340 --> 02:25:30,261
+Ondan sonra,
+
+669
+02:25:35,724 --> 02:25:39,645
+Yaptığınız şeye göre de, revize bir not veririz.
+
+670
+02:25:44,972 --> 02:25:51,292
+Yani gerçekten bunu, yani kısıtlı olarak yaptığımızı düşünmeyin kesinlikle.
+
+671
+02:25:52,272 --> 02:25:55,212
+Geçen haftaki labda o yüzden erteledik zaten.
+
+672
+02:25:56,573 --> 02:25:59,011
+Artık labımız var bu hafta.
+
+673
+02:25:59,111 --> 02:26:01,453
+Bu sorunlara siz bakın, yapın.
+
+674
+02:26:02,251 --> 02:26:03,953
+Yapabildiğiniz kadarını yapın.
+
+675
+02:26:05,011 --> 02:26:06,972
+Mecit hocanıza mail atın sonradan.
+
+676
+02:26:07,871 --> 02:26:08,833
+Lab bitiminde.
+
+677
+02:26:09,421 --> 02:26:15,700
+Hocam böyle böyle biz bunları bunları işlemedik, bunları bunları işledik diye ona göre yaptık değil.
+
+678
+02:26:16,741 --> 02:26:21,761
+O da zaten onu göz önünde bulundurarak o ödevlerinizi okur.
+
+679
+02:26:23,140 --> 02:26:23,720
+Tamam mı?
+
+680
+02:26:24,481 --> 02:26:28,121
+Şu anda size bunu yapabiliriz yani sizin için.
+
+681
+02:26:28,321 --> 02:26:30,881
+Başka bir çare ben bulamıyorum.
+
+682
+02:26:33,720 --> 02:26:34,681
+Tamam mı?
+
+683
+02:26:37,804 --> 02:26:41,004
+Hadi bakalım. Kolay gelsin hepiniz de.
+
+684
+02:32:36,557 --> 02:33:02,155
+Arkadaşlar merhaba, beni iyi dinleyin. Herkes beni duysun lütfen. Önemli bir konu çünkü. Sorunuzu güncelliyoruz şu anda. Size daha uygun hale getiriyoruz. Güncellediğimiz zaman tekrar yükleyeceğiz. Şu anda bir şey yapmanıza gerek yok. Yüklediğimiz zaman da haber vereceğiz size.
+
+685
+02:33:05,771 --> 02:33:07,011
+Beni duydunuz mu?
+
+686
+02:33:08,871 --> 02:33:10,151
+Duyduk hocam.
+
+687
+02:33:11,072 --> 02:33:11,352
+Tamam.
+
+688
+02:33:12,732 --> 02:33:15,092
+Böyle yapmaya karar verdik.
+
+689
+02:33:16,531 --> 02:33:18,193
+Şu anda bir şey yapmanıza gerek yok.
+
+690
+02:33:18,411 --> 02:33:23,953
+Zaten soruyu bizden biri koyacak Google Classroom'a.
+
+691
+02:33:24,953 --> 02:33:27,052
+Biz de buradan duyurusunu yapacağız.
+
+692
+02:33:28,271 --> 02:33:28,472
+Tamam.
+
+693
+02:33:30,092 --> 02:33:31,852
+Şimdi şu anda beklemede kalın.
+
+694
+02:33:33,063 --> 02:33:47,184
+Zaten soruyu koyduğumuz andan itibaren de şey olacak, eğer ekstriye ihtiyaç duyulursa verilecek size. Tamam mı? Tamamdır hocam.
+
+695
+02:33:48,583 --> 02:33:52,943
+Lütfen beklemede kalın ama bir yere sakın ayrılmayın. Tamam mı?
+
+696
+02:34:01,837 --> 02:34:06,136
+Şete de yazıyorum, duymayanlar olmuştur diye.
+
+697
+02:55:07,788 --> 02:55:10,049
+Tamam, tamam, tamam, ne diyoruz, bye bye.
+
+698
+02:55:13,869 --> 02:55:17,029
+Gençler, soru güncellenmiş. Devre var.
+
+699
+02:55:18,748 --> 02:55:19,588
+Konuda.
+
+700
+02:55:21,429 --> 02:55:23,808
+Nasıl devre yok diyorsun, onu anlayamadım.
+
+701
+02:55:25,708 --> 02:55:28,567
+Artık bu soruyu bu haliyle yapın lütfen.
+
+702
+02:55:39,757 --> 02:55:41,717
+Devre var, ben görüyorum.
+
+703
+02:55:55,949 --> 02:55:59,268
+Benim gördüğüm spor da vardı devre.
+
+704
+02:56:03,052 --> 02:56:05,012
+Evet, DC olduğunu düşünün.
+
+705
+02:56:12,875 --> 02:56:15,576
+Anladım, Maneski halini görmedim demek ki.
+
+706
+02:56:19,661 --> 02:56:21,440
+Benim gördüğüm halde vardı.
+
+707
+02:56:34,157 --> 02:56:41,737
+Bence DC'yi yapın ama diğer arkadaş Mecit ne dedi diğer öğrencilere ben mi sorayım ve dönüş yapacağım tekrardan.
+
+708
+02:57:30,349 --> 02:57:37,148
+Arkadaşlar, DC olarak kabul edeceksiniz. AC değil. Zaten soruyu değiştirme amacımız buydu.
+
+709
+02:57:39,108 --> 02:57:50,549
+Bir de süreniz 2 saat, süreniz 6'da başladığımızı fard edersek, tam 8'de sistemi kapatacağım. Haberiniz olsun.
+
+710
+02:57:53,869 --> 02:58:00,588
+Sormanızı bekliyoruz. [öğrenci], dedim ya, lise düşüneceksiniz diye.
+
+711
+02:58:06,733 --> 02:58:15,132
+Sormak değil, sormaktan kastım şu, diğer grupla aynı, paralel gidebilmek için bazı soruların cevaplarını.
+
+712
+02:58:16,913 --> 02:58:21,572
+Diğer grupla paralel gidiyoruz ya, onlar da bize soruyor. O yüzden.
+
+713
+02:58:28,844 --> 02:58:29,443
+Hmm.
+
+714
+02:58:36,717 --> 02:58:37,976
+[öğrenci].
+
+715
+02:58:41,549 --> 02:58:43,449
+Bence bu soruyu yap.
+
+716
+02:58:46,549 --> 02:58:50,969
+Çünkü iki saat geçkin bir süren var.
+
+717
+02:58:53,567 --> 02:58:57,449
+Herkese beraber yaptığın için yetiştirebilirsin bence.
+
+718
+02:59:00,268 --> 02:59:02,929
+Ama [öğrenci], ben duyuru yaptım.
+
+719
+02:59:05,049 --> 02:59:06,268
+Dedim ki bekleyin.
+
+720
+02:59:06,697 --> 02:59:12,277
+Benim yapabileceğim bir şey yok. Bekleyin dedim. Size de yaranılmıyor. Gerçekten yaranılmıyor.
+
+721
+02:59:14,217 --> 02:59:18,657
+Soruyu haklı olarak iyi. İsyan ettiniz, biz de düzelttik.
+
+722
+02:59:24,556 --> 02:59:25,556
+Allah Allah
+
+723
+02:59:52,429 --> 02:59:52,808
+Anlı mısın?
+
+724
+03:00:02,541 --> 03:00:13,581
+Ona göre hazırlarım, hiç problem değil. Hayır efendim, bu labın sorularını yapacaksın. Sana da ayıp ettiğimi düşünmüyorum. Zaten saygıyı hak eden bir öğrenci de değilsin bence.
+
+725
+03:02:07,308 --> 03:02:26,447
+Gençler, soru EC'ye göre çözülecek. Hocalardan haber geldi şimdi. Biz Mecid Hoca'nın adı da DC'yi biliyorduk ama diğer dersin hocaları EC dedi. Bilginiz olsun.
+
+726
+03:03:21,132 --> 03:03:22,732
+Sonlar zaten çok açık.
+
+727
+03:03:34,893 --> 03:03:36,713
+Hepinize başarılar diliyorum.
+
+728
+03:19:06,925 --> 03:19:31,585
+[öğrenci] sormuş, demiş ki yeni form linkini ne zaman atacaksın? [öğrenci]'ciğim yeni form linkini paylaştım Google Classroom'dan. Görmüş olman lazım. Rapor yüklemesine de açtım. Meclis hocanızın paylaştığı sorunun sorudan bir önceki mesaj.
+
+729
+03:19:33,293 --> 03:19:34,933
+O link var şu anda.
+
+730
+05:02:29,579 --> 05:02:31,659
+Arkadaşlar, sistemi kapattım.
+
+731
+05:02:35,339 --> 05:02:37,239
+Hepinize iyi akşamlar diliyorum.
+
+732
+05:02:54,157 --> 05:03:03,157
+Meclis gelmeyenler, Meclis Hoca'nın mailine mail atsınlar hemen.
+
+733
+05:03:06,157 --> 05:03:08,516
+Gelmesi lazım normalde.
+
+734
+05:03:21,355 --> 05:03:33,535
+Gerçekten hocaların mail adresleri, dersini ilk baştaki sunumunda verdik ve o mail adreslerinin size lazım olacağını söyledik.
+
+735
+05:03:58,477 --> 05:04:05,637
+Maili çok geciktirmeden atın. Çok gecikirseniz kabul etmemiz zor olur. Tamam.
+
+736
+05:04:08,455 --> 05:04:13,477
+Mesela 10 dakika gecikirseniz kabul etmez muhtemelen Mecit hocanız.
+
+737
+05:04:14,195 --> 05:04:15,035
+Bilgiler olsun.
+
+738
+05:04:16,875 --> 05:04:17,477
+Tamam.
+
+739
+05:04:25,261 --> 05:04:28,720
+Başka sorusu olan yoksa dersi bitiriyorum ben.
+
+740
+05:05:20,781 --> 05:05:31,060
+[öğrenci] bana mail atabilirsin, ben ona yönlendiririm, öyle yapalım. Bir dahakine de hocalarınızın mailine edinin. İlk destekimizin de mailini vermiştik zaten.
+
+741
+05:06:10,477 --> 05:06:16,137
+Başka sorunu veya sorusu olan yoksa kapatıyorum. Herkese iyi akşamlar diliyorum.

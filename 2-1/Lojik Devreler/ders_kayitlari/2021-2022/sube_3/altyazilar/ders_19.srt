@@ -1,0 +1,2123 @@
+1
+00:05:33,396 --> 00:05:40,475
+Merhabalar arkadaşlar, kolay gelsin. Sesim geliyor mu, sesle bir problem var mı?
+
+2
+00:05:42,096 --> 00:05:43,355
+Geriye hocam sesiniz.
+
+3
+00:05:43,816 --> 00:05:50,115
+Tamamdır, dersimize başlıyoruz. Geçen hafta hatırlarsanız kombinezonsal devrelere giriş yapmıştık.
+
+4
+00:05:50,115 --> 00:05:55,316
+Şimdi bu derste kombinezonsal tümleşik devrelere devam edeceğiz.
+
+5
+00:06:00,783 --> 00:06:18,363
+Ve daha özel amaçlara yönelik bir fonksiyon gibi düşünecek olursak bir kombinezonsal devreyi, X, Y diyelim, Z, Y çıkışı, Z, Y çıkışı diyelim, çeşitli devreler oluşturulmuş durumda arkadaşlar.
+
+6
+00:06:19,423 --> 00:06:24,543
+Burada hazır kullanım için aynı bir yazılımdaki fonksiyon gibi düşünecek olursak böyle,
+
+7
+00:06:26,208 --> 00:06:34,968
+Aritmetik toplama çıkarma devreleri. Aritmetik toplama ve çıkarma devreleri gibi.
+
+8
+00:06:35,927 --> 00:06:50,408
+Çıkarma devreleri. Nasıl ki geçen haftaki örneğimizde genlik karşılaştırıcı yaptıysak, eğer bunu bir çip içerisine sokacak olursak, sadece inputları veriyoruz.
+
+9
+00:06:53,247 --> 00:07:00,847
+Yani büyüktür, küçüktür, eşittir gibi çıkışı sadece bize lazım olan yapıyı okuyabildiğimiz bir çip şeklinde sokabiliyoruz.
+
+10
+00:07:01,087 --> 00:07:02,827
+Buradaki kombinezonsal devreleri.
+
+11
+00:07:03,707 --> 00:07:06,847
+Aynı bunun gibi arkadaşlar hazır yapılmış devreler var.
+
+12
+00:07:06,967 --> 00:07:09,747
+Bunlara MSI devreler deniyor.
+
+13
+00:07:10,647 --> 00:07:17,168
+Bunlar Medium Scale Integration.
+
+14
+00:07:19,636 --> 00:07:24,236
+Yani orta ölçekli entegre devreler olarak geçiyor arkadaşlar.
+
+15
+00:07:24,236 --> 00:07:29,696
+İlki aritmetik toplumayı çıkarma devrede neleri göreceğiz arkadaşlar?
+
+16
+00:07:30,376 --> 00:07:32,796
+Yarı ve tam toplayıcılar.
+
+17
+00:07:35,256 --> 00:07:40,336
+Ondan sonra aynı şekilde yarı ve tam çıkarıcılar.
+
+18
+00:07:43,956 --> 00:07:50,896
+Ve de toplama çıkarma devresi. Toplama ve çıkarmayı beraber yapan devre.
+
+19
+00:07:52,576 --> 00:08:08,316
+Devreleri göreceğiz. Bunun haricinde arkadaşlar, burada multiplexer veya Türkçesi seçiciler veya MOOCs olarak kısaltılıyor.
+
+20
+00:08:13,939 --> 00:08:24,759
+Bunlar da arkadaşlar dağıtıcı olarak adlandırılıyor. Dağıtıcılar veya D-Max olarak adlandırılıyor. Kısaltması.
+
+21
+00:08:25,759 --> 00:08:28,399
+Dördüncüsü, kod çözücüler.
+
+22
+00:08:32,467 --> 00:08:35,947
+Bunlar decoderler olarak adlandırılıyor arkadaşlar.
+
+23
+00:08:35,947 --> 00:08:37,307
+Dekoderler.
+
+24
+00:08:38,707 --> 00:08:42,187
+Bunun haricinde kodlayıcılar,
+
+25
+00:08:43,087 --> 00:08:44,587
+kodlayıcılar,
+
+26
+00:08:46,227 --> 00:08:48,227
+encoderlar,
+
+27
+00:08:49,683 --> 00:09:00,384
+Encoder'lar arkadaşlar. Onun dışında aritmetik, lojik unit, yani aritmetik ve lojik işlemlerin birbirine beraber yapıldığı işlemler.
+
+28
+00:09:00,864 --> 00:09:04,963
+Ve en son seven segment display'i göreceğiz arkadaşlar.
+
+29
+00:09:07,783 --> 00:09:15,543
+Şimdi bu dersimizde öncelikli olarak aritmetik toplama çıkarma devrelerinden girelim.
+
+30
+00:09:18,580 --> 00:09:24,220
+Toplama ve çıkarma devrelerinden başlayalım.
+
+31
+00:09:25,620 --> 00:09:27,900
+Bakalım bunlar nasıl oluşturuluyormuş.
+
+32
+00:09:27,900 --> 00:09:29,540
+İlk göreceğimizi yapar arkadaşlar.
+
+33
+00:09:30,620 --> 00:09:32,040
+Bir A diyelim şöyle.
+
+34
+00:09:32,700 --> 00:09:34,740
+Yarı toplayıcı.
+
+35
+00:09:37,340 --> 00:09:43,100
+Veya half-adder olarak adlandırılıyor arkadaşlar.
+
+36
+00:09:44,244 --> 00:09:48,364
+Şimdi bunlarda yarı toplayıcı temel olarak şunu yapıyor.
+
+37
+00:09:48,444 --> 00:09:50,964
+Önce doğruluk tablosundan bahsedecek olursak.
+
+38
+00:09:52,464 --> 00:09:54,064
+İki tane girdisi var.
+
+39
+00:09:55,683 --> 00:10:03,464
+Ve de bunun haricinde çıkışında toplam ve elde çıkışları bulunuyor arkadaşlar.
+
+40
+00:10:04,820 --> 00:10:10,780
+Yani tek dijitlik toplama yapabiliyor arkadaşlar. Yarı toplayıcı tek dijitlik toplama yapıyor.
+
+41
+00:10:11,700 --> 00:10:18,720
+Daha önceden gelen elde varsa, yani aradaki dijitleri tam toplayıcı yapıyor.
+
+42
+00:10:18,720 --> 00:10:26,340
+Bu tek dijitlik bir toplama yapıyor. 0-0, 0-1, 1-0 ve 1-1 şeklinde düşünebiliriz.
+
+43
+00:10:27,300 --> 00:10:32,020
+Toplamlarına baktığımız zaman 0-0, hani bir de toplama yapıyoruz ya şöyle.
+
+44
+00:10:32,500 --> 00:10:46,200
+A, B, C, D, E, F, G, H. Normalde biz toplama yaptığımızda şu dijit toplarız. Elde varsa bu tarafa aktarırız. Eldesini.
+
+45
+00:10:47,059 --> 00:11:12,839
+Normalde şuraya baktığımızda ise aradaki dijitlerde ise neyi de elde eklememiz lazım? C artı G'ye bir de elde'yi eklememiz lazım. Bunu tam toplayıcı yapıyor. Bu sadece tek dijitlik eldesini üreten, daha önceki elde'yi işe katmadan yapan bir toplayıcı elemanı. O yüzden yarı toplayıcı olarak adlandırılıyor arkadaşlar.
+
+46
+00:11:14,004 --> 00:11:16,884
+Dediğim gibi toplamları ne bunların baktığımızda?
+
+47
+00:11:18,384 --> 00:11:22,124
+0, 1, 1, 0.
+
+48
+00:11:22,923 --> 00:11:26,784
+Ama birbirinin toplamından bir tane elde oluşuyor.
+
+49
+00:11:27,384 --> 00:11:29,464
+Diğerlerinden herhangi bir elde oluşmuyor.
+
+50
+00:11:29,464 --> 00:11:38,464
+Eğer bu devreyi beraberce, geçen hafta öğrendiğimiz yöntemlerle beraber, iki çiftılı bir...
+
+51
+00:11:39,379 --> 00:11:43,539
+Devre haline getirecek olursak ne yapmamız gerekiyor?
+
+52
+00:11:44,359 --> 00:11:47,679
+Input olarak A'yı ve B'yi alıyor.
+
+53
+00:11:48,460 --> 00:11:48,659
+Değil mi?
+
+54
+00:11:49,240 --> 00:11:52,720
+Çıkışta toplam ve eldeyi üretiyor.
+
+55
+00:11:53,299 --> 00:11:55,740
+Bu half-adder devresi.
+
+56
+00:11:56,659 --> 00:11:58,500
+Bakalım bunu nasıl yapacak arkadaşlar?
+
+57
+00:11:58,500 --> 00:12:04,279
+Baktığımızda şuradaki fonksiyon ne arkadaşlar?
+
+58
+00:12:04,440 --> 00:12:06,559
+T fonksiyonuna baktığımızda.
+
+59
+00:12:06,611 --> 00:12:24,151
+Böyle bir Karnaugh haritasına koyduğumuzda A ve B'leri alıyor. 0, 1, 0, 1 şeklinde. Nereleri yerleştiriyoruz burada? 1, 1, burada. Buna baktığımızda bu hangi devre elemanı arkadaşlar?
+
+60
+00:12:25,791 --> 00:12:33,511
+A üstü B artı B üstü A. Yani A ile B'nin egzoru aslında.
+
+61
+00:12:34,388 --> 00:12:40,567
+Demek ki T'yi biz A ile B'nin EXOR'u şeklinde düşünebiliriz.
+
+62
+00:12:41,348 --> 00:12:44,548
+Peki E'yi nasıl düşünebiliriz E'yi?
+
+63
+00:12:45,548 --> 00:12:49,968
+Baktığımızda E'de artık açıkça gözüküyor zaten burada.
+
+64
+00:12:51,608 --> 00:12:54,988
+Evet, AND işlemini doğru söylüyorsun.
+
+65
+00:12:55,728 --> 00:12:58,548
+A ile B'nin AND'lenmişi halinde yazabiliyoruz.
+
+66
+00:12:58,628 --> 00:12:59,988
+O zaman devremizi çizelim.
+
+67
+00:13:00,596 --> 00:13:23,016
+Demek ki bir tam toplayıcı yapmak için şöyle bir XOR'a ihtiyacımız var. Bu XOR çıkışı toplama gidiyor. Bir de neye ihtiyacımız var? Aynı şekilde baktığımızda A ve B girişlerini alan bir AND işlemine ihtiyacımız var. Basitçe yarı toplayıcının içinde bir XOR, bir tane de AND elemanı bulunuyor.
+
+68
+00:13:29,203 --> 00:13:31,703
+Bir B diyelim, tam toplayıcı.
+
+69
+00:13:32,644 --> 00:13:34,763
+Tam toplayıcı.
+
+70
+00:13:36,263 --> 00:13:42,003
+Yani full-adder olarak adlandırılıyor bu da arkadaşlar.
+
+71
+00:13:42,003 --> 00:13:47,823
+Öncelikle, demin anlattığım gibi, bu sadece neyi amaçlıyordu?
+
+72
+00:13:48,763 --> 00:13:52,403
+Elde almayan bir dijit toplamını.
+
+73
+00:13:57,779 --> 00:14:00,460
+Hem de normal toplamayı yapacak.
+
+74
+00:14:01,519 --> 00:14:10,279
+Bu durumda arkadaşlar doğruluk tablosunu oluşturacak olursak, bir elde girişimiz öncesinde A ve B olup,
+
+75
+00:14:11,500 --> 00:14:17,319
+çıkışında toplam ve de elde.
+
+76
+00:14:19,000 --> 00:14:22,160
+Yani T ve E çıkışları olacak.
+
+77
+00:14:23,028 --> 00:14:40,708
+Bunu yapacak olursak toplam 3 giriş olmuş olacak. 0, 0, 0. Şu yarıya kadar bir kere şöyle çizecek olursak şöyle 0, 0, 0. Eldenin olmadığı ve eldenin olduğu toplamlardan bahsederiz.
+
+78
+00:14:41,448 --> 00:14:48,868
+0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0 ve 1, 1 şeklinde.
+
+79
+00:14:49,460 --> 00:14:55,220
+Şimdi elde girişe gelince artık 3 tane binary sayıyı toplar hale geldik arkadaşlar.
+
+80
+00:14:56,180 --> 00:15:02,480
+Toplamlarına baktığımızda burada aynı birebir elde girişi yoksa şayet birebir neyin aynısı olacak?
+
+81
+00:15:03,060 --> 00:15:07,039
+Yarı toplayıcının aynısı olacak. 0, 1, 1, 0.
+
+82
+00:15:07,960 --> 00:15:10,480
+Burada bir elde oluşacaktı. Bunlar 0.
+
+83
+00:15:11,764 --> 00:15:27,504
+Peki, 1-0'a geldiğimizde toplamda ne olacak arkadaşlar? 1-0-0, elde girişi 1 olan 0-0 toplamı 1. Burada ne olacak arkadaşlar? Eldesi olmayacak. 1-1 toplanınca toplam 0, elde 1 oluşuyor.
+
+84
+00:15:28,467 --> 00:15:40,668
+1-1-0 yine toplam 0, elde 1 oluşuyor. 1-1-1 toplamında hem elde var hem de toplam 1'de. 3 tane 1'in toplamından dolayı.
+
+85
+00:15:42,087 --> 00:15:49,888
+Şimdi bunun kombinezonsal devresini yapacak olursak bir T'ninkini bir de E'ninkini yapmamız lazım.
+
+86
+00:15:53,524 --> 00:15:56,684
+T'si için ne yapmamız lazım arkadaşlar?
+
+87
+00:15:57,803 --> 00:15:58,384
+Hep beraber.
+
+88
+00:15:58,864 --> 00:16:00,303
+Önce T'yi bir yapalım.
+
+89
+00:16:01,303 --> 00:16:03,244
+T için Karno mapini oluşturalım.
+
+90
+00:16:03,903 --> 00:16:07,484
+Üç tane giriş olacak burada baktığımızda.
+
+91
+00:16:08,824 --> 00:16:11,604
+Bizim, şöyle bakalım.
+
+92
+00:16:13,764 --> 00:16:17,444
+Burası elde girişi, burası A ve B olsun.
+
+93
+00:16:18,323 --> 00:16:23,864
+A ve B'nin 0, 0, 0, 1, 1, 1, 0 şeklinde olacak.
+
+94
+00:16:24,864 --> 00:16:28,303
+Peki, burada ne olacak? Elde girişinde 0 ve 1.
+
+95
+00:16:28,303 --> 00:16:34,423
+Eğer bunu yerleştirecek olursak, arkadaşlar, nerelerde 1 var?
+
+96
+00:16:35,524 --> 00:16:39,923
+0, 1'de 1 var, 1, 0'da 1 var.
+
+97
+00:16:40,467 --> 00:16:47,048
+Peki, elde girişinin 1 olduğu yerlerde nerelerde 1 var? 0, 0'da 1 var, bir de burada 1 var.
+
+98
+00:16:47,867 --> 00:16:56,888
+Bakacak olursak, T, T için çıktığımız, teker teker, kendi içerisinde komşuluk kavramı yok.
+
+99
+00:17:07,284 --> 00:17:18,804
+A'nın D'li B, artı, elde girişi A, B, veya elde girişine C derseniz C olarak da çözebilirsiniz.
+
+100
+00:17:18,804 --> 00:17:30,384
+Artı, elde girişinin D'li A ve B'nin D'li şeklinde. Bu arkadaşlar, aslında 3 değişkenli bir XOR olmuş oluyor.
+
+101
+00:17:34,708 --> 00:17:40,148
+ve C demeyelim de elde girişinin ortak hali.
+
+102
+00:17:41,228 --> 00:17:45,268
+Demek ki bir tane üç girişli XOR'a ihtiyacımız var.
+
+103
+00:17:45,807 --> 00:17:57,748
+Geldik eldenin, elde fonksiyonunu yapacak olursak arkadaşlar, elde fonksiyonu için yine aynı şekilde K-maritamızı oluşturuyoruz.
+
+104
+00:18:00,948 --> 00:18:15,388
+Mesela bu sefer farklı yapalım. A, B, C diyelim. Buradaki C'miz elde girişi olsun. Buna göre tekrar düzenliyoruz. 0, 0, 0, 1, 1, 1, 0, 0 ve 1 şeklinde.
+
+105
+00:18:17,811 --> 00:18:36,411
+Nerelerde var arkadaşlar 1'ler? Ben hızlı bir şekilde yazıyorum. Toplam 1, 2, 1, 2, 3, 4 tane birimiz var. Buraya yerleşiyor. Biz bunların karnomeplerini alacak olursak arkadaşlar, şöyle ikili ikili öyle değil mi?
+
+106
+00:18:42,355 --> 00:18:51,655
+artı elde giriş parantezinde veya C parantezinde A artı B şeklinde yazılabilir.
+
+107
+00:18:53,115 --> 00:18:58,375
+Demek ki full adder yapacak olursam şu iki tane fonksiyona bakacağım.
+
+108
+00:18:58,915 --> 00:19:01,415
+Bir şu, iki şunu çizdireceğim.
+
+109
+00:19:01,415 --> 00:19:08,596
+Demek ki benim şu kapalı kombinezonsal devre kutumda öncelikli olarak
+
+110
+00:19:08,928 --> 00:19:14,367
+A ve B girişine karşılık, pardon, burada bir geri alayım.
+
+111
+00:19:15,807 --> 00:19:19,168
+3 tane değil, 2 tane değil, 3 tane girişim olacak.
+
+112
+00:19:20,347 --> 00:19:22,988
+Bir, elde girişi.
+
+113
+00:19:24,628 --> 00:19:27,288
+Şurası A, şurası B girişi olsun.
+
+114
+00:19:28,367 --> 00:19:31,968
+Bir kere bunlar, 3'ü birleşip, şöyle,
+
+115
+00:19:34,804 --> 00:20:00,963
+EGZOR'umu oluşturuyor. Bu benim toplamım. Toplamımı veriyor. Aynı zamanda bakın burada iki tane şey var. A ve B'nin değili. Yani şuradan alayım. A ve B'nin endi özür dilerim. Ondan sonra A ve B'nin aynı şekilde nesi arkadaşlar?
+
+116
+00:20:02,003 --> 00:20:07,343
+Toplamı, onu da farklı bir kalemle alayım şöyle, aynı yerden alayım.
+
+117
+00:20:08,063 --> 00:20:13,364
+A ve B'nin, OR'u ve bu neyle çarpılıyor arkadaşlar?
+
+118
+00:20:14,243 --> 00:20:17,703
+Çıkışta EG ile çarpılıyor.
+
+119
+00:20:18,223 --> 00:20:20,943
+Yani şu ifadeyi tamamlıyorum.
+
+120
+00:20:22,183 --> 00:20:26,063
+Şöyle çarpıldığı zaman ne yapılıyor?
+
+121
+00:20:26,063 --> 00:20:29,563
+Bu iki ifade geliyor, toplanıyor.
+
+122
+00:20:30,612 --> 00:20:36,172
+Şöyle, bu da benim elde çıkışım olmuş oluyor.
+
+123
+00:20:36,731 --> 00:20:41,352
+3 girişli, 2 çıkışlı bir devrelemanı oluşmuş oldu.
+
+124
+00:20:42,972 --> 00:20:45,251
+Buraya kadar olan kısım anlaşıldı mı arkadaşlar?
+
+125
+00:20:46,892 --> 00:20:48,692
+Hocam ben bir şey sorabilir miyim?
+
+126
+00:20:48,692 --> 00:20:49,412
+Tabii ki.
+
+127
+00:20:50,372 --> 00:20:55,872
+Bu üstte toplamın XOR olduğunu hemen görebildiniz ya siz bunu nasıl anladık?
+
+128
+00:20:56,915 --> 00:20:58,735
+3 girişli XOR mu?
+
+129
+00:20:59,635 --> 00:21:00,135
+Evet.
+
+130
+00:21:00,995 --> 00:21:08,395
+3 girişli XOR'un yapısı sırasıyla bütün elemanların bir kombinasyon şeklini düşüneceksin.
+
+131
+00:21:08,395 --> 00:21:13,235
+Bu yapı aslında A'nın değili ve D sırasıyla.
+
+132
+00:21:14,895 --> 00:21:17,855
+Ben daha önce size XOR'un tanımını vermiştim.
+
+133
+00:21:18,375 --> 00:21:19,035
+Şu şekilde.
+
+134
+00:21:19,635 --> 00:21:29,016
+EXOR tanımına baktığımızda A'nın değili B, B artı B'nin değili C, A şeklindeydi. Hatırladınız mı?
+
+135
+00:21:30,235 --> 00:21:34,516
+3-2 EXOR'un girişi de bu şekilde yazılıyor arkadaşlar.
+
+136
+00:21:36,275 --> 00:21:45,495
+A'nın değili, B'nin değili C artı A'nın değili B, A'nın değili B.
+
+137
+00:21:46,644 --> 00:21:54,264
+Bir de C'nin değili, artı, bu şekilde devam ediyor. Aynı buradaki ifade gibi arkadaşlar.
+
+138
+00:21:55,064 --> 00:22:07,923
+A, B, C, artı, A, B üstü, C üstü şeklinde yapılan ifadeler, bakın A'nın değili, B'nin değili.
+
+139
+00:22:08,844 --> 00:22:11,764
+Aynı ifadeyle C'li bir ifade var.
+
+140
+00:22:14,067 --> 00:22:26,327
+A'nın değil, B'nin değil, A'nın değili B ve A'nın A ve B'nin değilinin C ile çarpıldığı bir yapı var. Bu XOR'un tanımsal olarak ifadesi bu şekilde arkadaşlar.
+
+141
+00:22:29,487 --> 00:22:30,268
+Anlaştık mı?
+
+142
+00:22:31,288 --> 00:22:32,628
+Teşekkür ederim hocam.
+
+143
+00:22:32,708 --> 00:22:40,307
+Geldelim. Şimdi bu biraz karmaşık bir devre gördüğünüz gibi. İki tane OR. Bakın şurada iki tane OR.
+
+144
+00:22:41,203 --> 00:22:45,043
+İki tane de AND var baktığınızda.
+
+145
+00:22:46,183 --> 00:22:47,804
+Bu şekilde de gerçekleştirebilirsiniz.
+
+146
+00:22:47,923 --> 00:22:55,603
+Peki, yarı toplayıcılar kullanarak yapabilir miyiz bunu?
+
+147
+00:22:56,344 --> 00:22:58,483
+Tam toplayıcıyı düşünelim.
+
+148
+00:22:59,264 --> 00:23:02,123
+Öncelikli olarak neye ihtiyacımız var?
+
+149
+00:23:02,223 --> 00:23:07,723
+Tam toplayıcıyı hatırlarsanız arkadaşlar, şöyle bir kapalı kutu şeklinde çizelim.
+
+150
+00:23:08,339 --> 00:23:33,639
+Bir EXOR yapımız vardı. Buradan bir T çıkışımız vardı. Burası A, burası B olsun. Artı ne vardı burada? Bir AND'i vardı. Burası da AND çıkışı. Dolayısıyla bu toplama neyi eklemek lazım arkadaşlar? A ile B'yi topluyoruz. Bir de elde girişini eklemek lazım değil mi?
+
+151
+00:23:34,228 --> 00:23:51,848
+Bu nereye ekleniyor? Toplama etki edecek. O toplamı nereden alacağız arkadaşlar? Daha doğrusu bu toplamı bir de elde girişiyle bir half-adder'la tekrar ne yapmak lazım? Toplamak lazım.
+
+152
+00:23:52,088 --> 00:23:59,168
+Şu half-adder 1, şu half-adder 2, bunları topladığımızda şöyle.
+
+153
+00:24:01,107 --> 00:24:24,227
+Şöyle geldiğimizde bu asıl toplam olmuş oluyor. Bir de bunun eldesi var tabii ki. Bir de bunun eldesi oluşuyor. Peki ilkinden bir elde var, ikincisinden bir elde var. Şayet. Bunların ne yapılması lazım?
+
+154
+00:24:25,236 --> 00:24:35,175
+Hem kendinden elde, hem de bir öncekinden varsa bunları da şöyle çıkışta ne yapmak lazım?
+
+155
+00:24:35,336 --> 00:24:38,695
+Toplayıp asıl eldeyi bulmak lazım.
+
+156
+00:24:38,695 --> 00:24:45,096
+Bakın, bu da bizim, baktığımızda kırmızıyla çizeyim onları.
+
+157
+00:24:47,256 --> 00:24:51,776
+Şöyle, hop, şunu da şöyle alayım.
+
+158
+00:24:52,756 --> 00:24:57,716
+Şöyle aslında kutuyu biraz daha değiştirerek çizdim.
+
+159
+00:24:58,556 --> 00:25:04,456
+1, 2, 3 girişli ve 2 çıkışlı tam toplayıcı.
+
+160
+00:25:04,456 --> 00:25:07,816
+Şimdi ilk ödeviniz şu arkadaşlar.
+
+161
+00:25:09,196 --> 00:25:17,456
+Tam toplayıcıyı ve de önce bir yarım toplayıcıyı gerçekleştiriyorsunuz.
+
+162
+00:25:18,556 --> 00:25:19,456
+Daha sonrasında...
+
+163
+00:25:20,115 --> 00:25:22,895
+İlk ödev 1.
+
+164
+00:25:25,476 --> 00:25:37,375
+Tam toplayıcıyı, pardon, half-adderı, yarı toplayıcıyı kullanarak her iki çeşitli de tam toplayıcının aynı çıkışlar verdiğini görünüz.
+
+165
+00:25:38,375 --> 00:25:39,756
+Yazalım onu da.
+
+166
+00:25:40,976 --> 00:25:43,756
+Bunun aynısını ne yapalım arkadaşlar?
+
+167
+00:25:43,756 --> 00:25:45,816
+Tam toplayıcı.
+
+168
+00:25:48,180 --> 00:25:50,380
+Şöyle, birazdan yazalım.
+
+169
+00:25:51,559 --> 00:25:52,200
+Efendim?
+
+170
+00:25:53,019 --> 00:25:57,100
+Ödev 1 dediniz de, ödev 2 hocam. Bir tane ödev tanımlamıştınız ya.
+
+171
+00:25:57,640 --> 00:26:03,580
+Evet, evet. Bu ikinci, yani bu dersteki ilk ödevim aslında diye düşünüyorum.
+
+172
+00:26:04,500 --> 00:26:12,700
+Şimdi, hemen onu yapacak olursak, hatta hemen ekleyelim onu. Bir saniye arkadaşlar.
+
+173
+00:26:20,531 --> 00:26:29,431
+Onu dersin sonunda yapacağım. Şimdi o portu network için kullanıyorum. Dersin sonunda eklerim arkadaşlar. Size yarım.
+
+174
+00:26:30,831 --> 00:26:39,511
+Ama ilk ödevimiz şu olacak. Bir half-edder. Bir half-edder ile tam toplayıcıyı gerçekleştireceksiniz.
+
+175
+00:26:40,991 --> 00:26:45,651
+Şöyle yapayım. Bir half-edder ile.
+
+176
+00:26:47,380 --> 00:27:08,000
+Birinci ödemiz normal şu devreyi gerçekleştireceksiniz. İkinci kısımda şu kırmızıyla çizmiş olduğum yapıyı gerçekleştireceksiniz. Burada birincisinde normal tam toplayıcı, ikincisinde ise half-adderlar ile tam toplayıcı.
+
+177
+00:27:11,443 --> 00:27:18,503
+gerçekleştirip karşılaştıracaksınız. Bakalım aynı sonuçları elde edebiliyorsunuz. Simülasyon ortamında yeterli bu arkadaşlar.
+
+178
+00:27:19,804 --> 00:27:35,443
+Şimdi bakacak olursak devam edelim. Bir de tam toplayıcıları kullanarak bir örnek yapalım. Örneğin, örnek bu da ödevin üçüncü kısmı olacak. Bunu da simülasyonda gerçekleştirmenizi istiyorum arkadaşlar.
+
+179
+00:27:40,276 --> 00:27:44,576
+4 bitlik, 2 sayının
+
+180
+00:27:48,084 --> 00:27:49,324
+Toplamını bulan
+
+181
+00:27:54,355 --> 00:27:56,135
+Bir paralel toplayıcı.
+
+182
+00:27:58,016 --> 00:28:06,195
+Paralel toplayıcının devre tasarımını gerçekleştiriyoruz.
+
+183
+00:28:09,844 --> 00:28:17,324
+Neleri kullanacağız arkadaşlar? Tam toplayıcılar kullanacağız. 4 bitlik devre. Ne demek bu?
+
+184
+00:28:19,483 --> 00:28:31,144
+A3, A2, A1 ve A0. B3, B2, B1, B0.
+
+185
+00:28:32,531 --> 00:28:50,451
+Bunları gerçekleştiren devreyi kuracağız arkadaşlar. Ne gerekiyor bize? 4 tane tam toplayıcı gerekiyor. Çizelim onları. Şöyle bir tam toplayıcı, ikinci tam toplayıcı, üçüncü ve dördüncü tam toplayıcımız.
+
+186
+00:28:53,652 --> 00:28:58,091
+Birinci tam toplayıcıda, arkadaşlar en düşük bit burada olmak üzere.
+
+187
+00:28:58,632 --> 00:29:06,311
+Tam toplayıcı 0, tam toplayıcı 1, tam toplayıcı 2, tam toplayıcı 3 şeklinde yapalım.
+
+188
+00:29:06,392 --> 00:29:12,692
+Bunlara ne girecek arkadaşlar? En düşüğüne, en düşük bitler girecek.
+
+189
+00:29:12,692 --> 00:29:20,372
+Yani A0, B0. Buna ne girecek? A1, B1. Buna ne girecek arkadaşlar?
+
+190
+00:29:21,428 --> 00:29:44,268
+A2, B2, buna A3, B3 girecek. Bir de şu tabii ki lazım. Bir de bunların elde girişleri var. Yani şurası elde girişi 0. Şurası ne? Elde girişi 1. Şurası ne? Elde girişi 2. Ve şurası elde girişi 3.
+
+191
+00:29:45,203 --> 00:29:53,243
+Elde giriş sıfıra ne girmesi gerekiyor arkadaşlar? Şuradan elde giriş sıfır. Bu ne olmalı?
+
+192
+00:29:57,907 --> 00:29:59,867
+Sıfır hocam, bir şey olmamalı.
+
+193
+00:30:00,267 --> 00:30:06,767
+Bir şey olmayacak değil mi? Yani buraya sıfır koyacağız veya direkt gramda bağlayacağız. Sıfır olacak.
+
+194
+00:30:07,627 --> 00:30:20,367
+Peki bunun elde ve toplam, şöyle yapalım onu da, elde ve toplam şeklinde iki tane çıkışı olacak.
+
+195
+00:30:21,556 --> 00:30:41,875
+Toplam 0, şurası olmuş olacak aslında. Toplam 0, ilk dijiti. Toplam 1, toplam 2, toplam 3. Peki, bunun elde 0 çıkışı nereye gidecek arkadaşlar? Bir sonraki dijite geçmiş olması lazım. Bir sonraki dijitin toplamına gidecek.
+
+196
+00:30:48,799 --> 00:31:11,440
+Bir sonraki eldeye gidiyor. Burası T2. Elde 2 nereye gidiyor arkadaşlar? Şuraya gidiyor. En sonunda da benim toplam 3'üm ve de asıl burada oluşuyorsa elde 3'üm. Varsa elde, elde 3'üm de burada oluşuyor arkadaşlar.
+
+197
+00:31:12,435 --> 00:31:18,276
+4 bitlik toplamadan oluşan bir elde varsa bir de onu hesaba katıyorum.
+
+198
+00:31:19,135 --> 00:31:24,195
+Ödevin üçüncü kısmında arkadaşlar aslında ne yapmış oluyoruz biz?
+
+199
+00:31:24,655 --> 00:31:28,175
+Tam toplayıcıları kullanarak bir devreyin tasarımını yapmış olduk.
+
+200
+00:31:28,627 --> 00:31:43,548
+Kullandığınız herhangi bir bloj, ister biri kullanın, ister ikinoğlu bloğu kullanın, ister orijinal tam toplayıcıyı, isterseniz yarı toplayıcılardan elde ettiğiniz şeyi kullanın.
+
+201
+00:31:44,587 --> 00:31:52,267
+Ama bu 4 bitlik, 4 bitlik tam toplayıcı devri, paralel toplayıcıyı.
+
+202
+00:31:55,955 --> 00:32:10,536
+gerçekleştiriyorsunuz arkadaşlar. Anlaştık mı? Evet. Bunu da simülasyon şeklinde. Ödevin üçüncü kısmı. Buraya kadar anlaşıldı mı ödev arkadaşlar?
+
+203
+00:32:17,107 --> 00:32:21,107
+Evet, [öğrenci], anlaşıldı mı ödev?
+
+204
+00:32:22,067 --> 00:32:23,087
+Anlaşıldı hocam.
+
+205
+00:32:24,087 --> 00:32:24,587
+Büyü [öğrenci].
+
+206
+00:32:28,307 --> 00:32:29,307
+[öğrenci]?
+
+207
+00:32:31,707 --> 00:32:33,307
+Ötev anlaşıldı mı [öğrenci]?
+
+208
+00:32:38,900 --> 00:32:46,660
+[öğrenci] aramızda değil anladığım kadarıyla. Bilgisayara mı dinlettiriyorsun [öğrenci] dersi? [öğrenci]?
+
+209
+00:32:50,516 --> 00:32:51,716
+[öğrenci] burada mısın?
+
+210
+00:32:55,251 --> 00:32:56,991
+[öğrenci] de uykularda.
+
+211
+00:32:57,811 --> 00:32:58,351
+[öğrenci]?
+
+212
+00:33:04,723 --> 00:33:06,243
+[öğrenci] dersi dinliyor musun?
+
+213
+00:33:09,323 --> 00:33:10,483
+[öğrenci] burada mı?
+
+214
+00:33:11,463 --> 00:33:12,364
+Evet hocam buradayım.
+
+215
+00:33:12,983 --> 00:33:13,783
+Alışıda ödeyledi.
+
+216
+00:33:14,443 --> 00:33:15,023
+Tamamdır.
+
+217
+00:33:15,644 --> 00:33:16,263
+[öğrenci], ben.
+
+218
+00:33:16,523 --> 00:33:18,183
+Hocam, ben birazcık geç yaparım.
+
+219
+00:33:18,923 --> 00:33:19,644
+[öğrenci] ver.
+
+220
+00:33:20,483 --> 00:33:21,124
+Tamamdır.
+
+221
+00:33:21,543 --> 00:33:21,943
+[öğrenci].
+
+222
+00:33:22,675 --> 00:33:24,415
+Evet hocam, gayet iyi anladım.
+
+223
+00:33:24,935 --> 00:33:25,735
+Tamamdır.
+
+224
+00:33:26,235 --> 00:33:27,096
+Şimdi devam ediyoruz.
+
+225
+00:33:27,255 --> 00:33:32,755
+Aslında bu ana kadar anlattıklarımızın bir de çıkarma versiyonlarını anlatacağız şimdi.
+
+226
+00:33:34,096 --> 00:33:36,576
+Önce 2'den devam edelim.
+
+227
+00:33:36,715 --> 00:33:38,875
+2A diyelim, yarı çıkarıcı.
+
+228
+00:33:42,291 --> 00:33:51,051
+Bu da, ARF Subtractor olarak geçiyor arkadaşlar.
+
+229
+00:33:52,231 --> 00:33:54,571
+Aynı mantıkla ilerliyoruz burada da.
+
+230
+00:33:54,871 --> 00:33:58,631
+Önce bir doğruluk devresini, doğruluk tablosunu yapalım.
+
+231
+00:33:58,631 --> 00:33:59,471
+Affedersiniz.
+
+232
+00:34:00,192 --> 00:34:00,711
+A, B.
+
+233
+00:34:01,771 --> 00:34:03,432
+Tabi bunda artık ne var?
+
+234
+00:34:05,011 --> 00:34:05,412
+Fark.
+
+235
+00:34:07,471 --> 00:34:08,291
+Şuraya yazalım.
+
+236
+00:34:08,452 --> 00:34:08,871
+Fark.
+
+237
+00:34:09,588 --> 00:34:11,387
+B'de ne var? Borç.
+
+238
+00:34:14,007 --> 00:34:17,408
+Yani biliyorsunuz ne yapıyorduk?
+
+239
+00:34:18,467 --> 00:34:26,108
+A, B, C, D şeklindeki sayıları çıkarıyorsak şayet, yandan borç alma şeklimiz de var, fark da var.
+
+240
+00:34:26,108 --> 00:34:29,568
+Borç aldığımızda ne yapılıyordu arkadaşlar?
+
+241
+00:34:30,788 --> 00:34:32,108
+Bir borç alınmışsa...
+
+242
+00:34:32,351 --> 00:34:39,591
+Mesela ondalık basamakta, daha önce borç alınmışsa onları çıkarıyoruz mesela.
+
+243
+00:34:40,492 --> 00:34:51,911
+Mesela sıradan girelim. 0-0, 0-1, 1-1, 1-0. 0 ile 0'ın farkı 0. Borç alınıyor mu? Hayır.
+
+244
+00:34:53,891 --> 00:34:57,931
+0'dan 1 çıkma durumunda. 0'dan 1 çıkıyor muydu arkadaşlar?
+
+245
+00:34:58,963 --> 00:35:12,003
+Ne yapmamız lazım? Yandan bir borç almamız lazım, öyle değil mi? Borç aldığımızda değerimiz ne olacak? İkilik tabağındayız. 2-1, 1, fark 1, 1 de borç aldık.
+
+246
+00:35:12,663 --> 00:35:24,324
+Yani burada 1-1, farkımız 1, 0'dan 1 çıktı. Borç aldığımız için yandan borç aldığımızı belirten bir, şurası.
+
+247
+00:35:25,619 --> 00:35:50,259
+Dolayısıyla 2, 2'den 1 çıktı, 1 kaldı, farkımızda 1. 1'den 1 çıktı, arkadaşlar, 1-0 niye öne yazdım ki ben buraya, normal gideyim. 1-0 diyelim, farkımız 1, borç almıyoruz, 1'den 1 çıktı, 0, borç almadık, 0 kaldı. Bu kısım anlaşıldı mı arkadaşlar?
+
+248
+00:35:52,244 --> 00:35:53,404
+Hocam bir şey sorayım.
+
+249
+00:35:53,844 --> 00:35:54,104
+Tabii.
+
+250
+00:35:54,963 --> 00:35:57,003
+Hocam bu ikinci dijitten alıyoruz ya biri.
+
+251
+00:35:57,724 --> 00:35:58,043
+Evet.
+
+252
+00:35:58,963 --> 00:36:00,484
+Orada iki olmuyor mu yani borç?
+
+253
+00:36:00,824 --> 00:36:01,503
+İki aldık çünkü.
+
+254
+00:36:03,984 --> 00:36:05,344
+Şeyi anlayamadım.
+
+255
+00:36:06,684 --> 00:36:14,684
+Mesela bir var, sıfır var, sıfır var, bir var.
+
+256
+00:36:15,304 --> 00:36:17,744
+Çıkarma yaptığımız an, buradan aldığımız an ne oluyor?
+
+257
+00:36:18,931 --> 00:36:30,931
+Burası 2-1-1, burası fark. Şurası yani. Doğru değil mi? Borç aldığımızı belirten bit de burası. Yani borç alın...
+
+258
+00:36:31,451 --> 00:36:33,771
+Miktarı göstermiyor yani değil mi hocam?
+
+259
+00:36:33,871 --> 00:36:36,911
+Hayır, hayır. Borç alındığını gösteriyor sadece.
+
+260
+00:36:37,511 --> 00:36:37,771
+Tamam.
+
+261
+00:36:38,351 --> 00:36:44,931
+Borç alındığını belirtiyor. Şimdi bunu farkı ve borçu yapacak olursak, farkın...
+
+262
+00:36:45,556 --> 00:37:02,596
+Karnaugh tablosunu çizecek olursak, şöyle bir şey yazabiliriz, AB01, 01. Nereye yerleştireceğiz şimdi? 1-1. Bu da bildiğiniz fark demiş ki, demek ki aynen A ile B'nin XOR'uymuş zaten. Buradan belli oluyor.
+
+263
+00:37:03,596 --> 00:37:11,596
+Peki borç ne? Baktığımızda borç. Onu da şöyle gösterebiliriz aslında.
+
+264
+00:37:12,884 --> 00:37:22,104
+Önce bir yarı çıkarıcıyı bir çizeyim size. Burası A, burası B olsun. Burası fark, burası borç olsun.
+
+265
+00:37:23,324 --> 00:37:30,324
+Şimdi burada şöyle baktığımızda şurası benim farkıma gidiyor.
+
+266
+00:37:37,972 --> 00:37:48,812
+Bakın ne vardı burada? Borcu çizecek olursam, borç baktığımızda A'nın değili B şeklinde ifade edilebilir.
+
+267
+00:37:49,592 --> 00:37:56,032
+A'nın değili B, tek bir tane 1 olduğunu düşünün. Aynı şekilde aynı Karnaugh tablosunu düşünün.
+
+268
+00:37:56,712 --> 00:38:03,332
+Nerede? 0, 1'de. Yani A'nın 0, B'nin 1 olduğu yerde. Sadece şu siyah kısımda olacak.
+
+269
+00:38:04,179 --> 00:38:10,840
+Ben bunu yazacak olursam B ne çıkacak? A'nın de değil'i B şeklinde ifade ediliyor.
+
+270
+00:38:11,319 --> 00:38:18,979
+Onun da şu şekilde yazabiliriz arkadaşlar. A'nın de değil'i B şeklinde bir eleman gibi tanımlayabiliriz.
+
+271
+00:38:18,979 --> 00:38:27,340
+Bu ne demek aslında? Şurada çizmiş olduğum eleman şöyle. Aslında şuna eşit.
+
+272
+00:38:28,319 --> 00:38:30,460
+Baktığımda bir NAT işlemi yapılıyor.
+
+273
+00:38:31,347 --> 00:38:58,807
+Ve de şöyle A, B değil mi? Şuradan da A veriliyor, şuradan da B veriliyor. Aslında bu şu kapının kısaltması diyebilirim. Yani A'ya gelen işaretin NAT'ını alıyor gibi düşünebilirsiniz. Anlaştık mı? Ekstradan bir NAT kapısı koymamak için bazen böyle bir kapının ayağını değillerler.
+
+274
+00:39:00,052 --> 00:39:01,432
+Bu anlaşıldı mı arkadaşlar?
+
+275
+00:39:03,532 --> 00:39:04,891
+Şu kısım.
+
+276
+00:39:10,003 --> 00:39:12,523
+Evet, şimdi devam edelim.
+
+277
+00:39:14,264 --> 00:39:14,543
+B
+
+278
+00:39:14,543 --> 00:39:16,483
+Şöyle
+
+279
+00:39:16,483 --> 00:39:20,264
+2B mi? Nasıl adlandırıyorduk?
+
+280
+00:39:21,463 --> 00:39:24,703
+2B
+
+281
+00:39:24,703 --> 00:39:27,403
+Bu sefer tam çıkarıcı.
+
+282
+00:39:31,188 --> 00:39:35,168
+Yani Full Subtractor.
+
+283
+00:39:39,268 --> 00:39:42,448
+Bunun önce bir doğruluk tablosunu yapalım arkadaşlar.
+
+284
+00:39:43,587 --> 00:39:47,907
+A, B, bir de aralardaki dijitlerdeyiz tabii.
+
+285
+00:39:48,668 --> 00:39:52,768
+A, B, C, D, E, F, G, H.
+
+286
+00:39:53,668 --> 00:39:55,188
+Öncelikli olarak buradan bir...
+
+287
+00:39:55,956 --> 00:40:17,016
+Borç alınmış mı? Yani şuradan borç alınmış mı? Değil mi? Bir borç girişi, ondan sonra diğer tarafta fark, fark ve de bir saniye arkadaşlar.
+
+288
+00:40:20,724 --> 00:40:27,524
+Fark ve borç çıkışımız var.
+
+289
+00:40:29,144 --> 00:40:40,944
+Şimdi bunları yazacak olursak 0000, 001, 001, 001, 001, 001.
+
+290
+00:40:44,851 --> 00:40:52,591
+1, 0, 0, 1, 0, 1, 1, 1, 0. Bir saniye arkadaşlar, önden örüyorum.
+
+291
+00:41:09,684 --> 00:41:13,024
+1, 1, 1 şeklinde getirdik.
+
+292
+00:41:14,144 --> 00:41:31,624
+Şimdi, bunları yazacak olursak, eğer bir, şunları 0, 0, 1, 1 hızlı bir şekilde yazacak olursam, 1, 1, 0, 1 şeklinde yazabilirim.
+
+293
+00:41:31,624 --> 00:41:35,724
+1, 0, 0.
+
+294
+00:41:36,820 --> 00:41:55,760
+0, 0, 0, 1, 1 şeklinde. Yani borç girişi eğer varsa, eğer bir devrunda, ne yapılması lazım? Demek ki değeri bir azaltıyor oradan. Demek ki bir sonrakinden borç alınması gerekiyor. Mantığını şöyle çıkarın arkadaşlar.
+
+295
+00:42:04,175 --> 00:42:07,996
+Bir sonraki dijita aktarılmıştır demekti. Öyle değil mi arkadaşlar?
+
+296
+00:42:08,976 --> 00:42:13,635
+Dolayısıyla 0-0 olduğuna göre 0-0'dan bir sonrakine aktarılmışsa şayet.
+
+297
+00:42:13,715 --> 00:42:17,476
+Demek ki bir sonraki şuradaki elemandan alınıp aktarılmıştır.
+
+298
+00:42:18,235 --> 00:42:31,596
+Dolayısıyla fark baktığımızda bir borç alma durumu varsa, pardon özür dilerim, borç alınmışsa şayet, borç alınmışsa kendinden, borç alma durumu varsa değeri neye çıkacak arkadaşlar?
+
+299
+00:42:32,179 --> 00:42:42,979
+Fark bir ve borçta verilmiş manasında bunlar bir bir şekline getirilmiş oluyor arkadaşlar.
+
+300
+00:42:43,599 --> 00:42:45,259
+Temel mantık bu burada.
+
+301
+00:42:47,619 --> 00:42:51,239
+Şimdi burada sıfırdan biri çıkarıyoruz örneğin.
+
+302
+00:42:51,239 --> 00:42:55,559
+Normalde sıfırdan biri çıkarılabilmesi için.
+
+303
+00:42:56,179 --> 00:43:22,259
+Neye ihtiyaç var arkadaşlar? Bir borç alınmasına ihtiyaç var. Demek ki bu borç almamış ama ne yapılmış? Bir borç girişi, daha doğrusu ondan borç alınmamış bir dijitte kendisi borç alacaktır ve farkı bire indirecektir. Ama kendisinden borç alınma durumu yok.
+
+304
+00:43:22,963 --> 00:43:43,824
+Aynı şekilde 0-1 kendisinden mesela borç alınmışsa şayet, bakın kendisinden borç alınmışsa, kendisi borç almışsa affedersiniz. Ne yapacak o zaman? Durun bakayım. 0-1 kendisinden borç girişi.
+
+305
+00:43:46,739 --> 00:43:58,940
+Çıkarma işlemi sırasında bir önceki halinden bir borç biti geldiği düşünürse, bu durumda bir borç girişinin yarı çıkarıcıya eklenmesi gerekiyor.
+
+306
+00:43:59,619 --> 00:44:07,639
+Yani çıkarmada bir önceki halinden bir borç biti gelip gelmediğini belirtiyor şuradaki borç girişi.
+
+307
+00:44:07,952 --> 00:44:24,412
+Bir önceki aneden borç gelip gelmediğini belirtiyor. Borç gelmişse şayet, borç gelmişse şayet ne olacak arkadaşlar? Sıfır ve borç aldım demektir burası borç girişi.
+
+308
+00:44:25,712 --> 00:44:27,952
+Şimdi bununla alakalı...
+
+309
+00:44:28,792 --> 00:44:34,552
+Özür dilerim hocam, veriyorum da. Fark aralarında bir. Şu an A ile B arasında fark bir.
+
+310
+00:44:35,027 --> 00:44:41,047
+Borcu hesaba katınca sıfır oluyor tamam mı? Borcuna sıfır olması gerekmiyor mu? Sıfırlanması gerekmiyor mu burası?
+
+311
+00:44:42,128 --> 00:44:54,447
+Bu borç aldı. Bir önceki dijitten borç aldım demek. Öyle değil mi? Bir önceki dijitten borç aldım demek. Dolayısıyla tamam mı?
+
+312
+00:44:56,288 --> 00:44:57,507
+Tamamdır hocam, anladım.
+
+313
+00:44:59,168 --> 00:45:04,827
+Yani bir önceki halinden bir borç bitti, gelip gelmediğini gösterir şuradaki BG.
+
+314
+00:45:07,347 --> 00:45:08,487
+Tamamdır.
+
+315
+00:45:09,148 --> 00:45:16,088
+Şimdi bunların fark üstünlüğün ve borç üstünlüğün durumuna bakacak olursak arkadaşlar.
+
+316
+00:45:18,487 --> 00:45:20,827
+Önce F için yapalım.
+
+317
+00:45:22,628 --> 00:45:23,307
+Şöyle.
+
+318
+00:45:24,507 --> 00:45:25,867
+F için yapalım.
+
+319
+00:45:26,675 --> 00:45:42,195
+Burada 8 tane giriş olacak. Dolayısıyla burası A, B, burası da borç girişi olsun. Borç girişi bir tohum. 0-0, 0-1, 1-1, 1-0, 0-1.
+
+320
+00:45:42,835 --> 00:45:57,155
+Burada nerelerde birileri olacak? Şuralarda biri olacak. Bu da aynı şekilde arkadaşlar A'nın değil, A ile B'nin bir de C'nin ortak 3 girişli egzoru olmuş olacak.
+
+321
+00:45:57,155 --> 00:46:07,036
+Peki, benim borç B için, borç için baktığımda, borç için bakıyorum.
+
+322
+00:46:09,396 --> 00:46:20,135
+Aynı şekilde A, B, borç girişi için 00, 01, 11, 10, 01 şeklinde veriyorum.
+
+323
+00:46:20,976 --> 00:46:24,796
+Burada da arkadaşlar, nerelerde oluşmuş?
+
+324
+00:46:25,396 --> 00:46:29,556
+1, 1, 1, 1, şuralarda oluşmuş.
+
+325
+00:46:29,556 --> 00:46:31,596
+Bakacak olursak,
+
+326
+00:46:32,436 --> 00:46:37,496
+Şu, bir, iki, üç tane tek komşulukla bunu yapabileceğiz.
+
+327
+00:46:37,496 --> 00:46:52,496
+B eşitti, A'nın değili B, artı A'nın değili borç girişi, artı B, borç girişi.
+
+328
+00:46:53,156 --> 00:46:54,416
+Veya bunu böyle de yapabilirsiniz.
+
+329
+00:46:57,619 --> 00:47:02,439
+Borç girişinde A üstü artı B şeklinde de yazabilirsiniz.
+
+330
+00:47:03,859 --> 00:47:13,239
+Şimdi buna göre yapacak olursak arkadaşlar, bir tam çıkarıcıyı yapalım.
+
+331
+00:47:13,239 --> 00:47:15,379
+Tam çıkarıcıyı şöyle.
+
+332
+00:47:17,219 --> 00:47:19,519
+Öncelikli olarak neyi çizmemiz lazım?
+
+333
+00:47:21,059 --> 00:47:24,459
+A, B ve borç girişi.
+
+334
+00:47:26,579 --> 00:47:30,420
+Şöyle getirdim.
+
+335
+00:47:31,759 --> 00:47:38,480
+Ve EXOR'umla beraber neyi elde etmiş oldum? Şuradaki farkı. Şu farkı elde ettim.
+
+336
+00:47:39,559 --> 00:47:41,840
+Peki neye ihtiyacım var burada?
+
+337
+00:47:43,460 --> 00:47:51,380
+Baktığımda A, baktığımda şurada A'nın değili B.
+
+338
+00:47:54,099 --> 00:48:18,740
+B, burası A'nın değili, burasını da B'den alacağım. Artı A'nın değili BG. Şöyle yapayım onu da. A'nın değili BG. A'nın değili BG. Bunu da buradan aldım. Şöyle de A'nın değilini yapmış olayım.
+
+339
+00:48:20,275 --> 00:48:47,056
+En sonuncusunda ne var? B ve BG var. Onları da şöyle alayım. B ve BG'yi de buradan alayım. Ne elde etmiş oldu arkadaşlar? 3 tane AND. Şuralarında yalnız bir naklama işlemi var. Bunları 3 girişli bir ne ile birleştireyim? XOR ile birleştireyim. Bu da benim.
+
+340
+00:48:48,148 --> 00:48:50,427
+Borcum olmuş oluyor.
+
+341
+00:48:51,547 --> 00:48:55,107
+Bu da, dediğim gibi şu kapıları nasıl gerçekleştirebilirsiniz?
+
+342
+00:48:55,107 --> 00:48:56,208
+Şöyle bir kapıyı.
+
+343
+00:48:56,708 --> 00:48:58,188
+Aslında bu kapı şudur.
+
+344
+00:48:59,007 --> 00:49:01,387
+A, B, C diyeyim.
+
+345
+00:49:01,567 --> 00:49:02,987
+Veya Z diyeyim çıkışa.
+
+346
+00:49:03,807 --> 00:49:06,387
+Şöyle bir NAT kapısı.
+
+347
+00:49:08,188 --> 00:49:11,327
+Beraber, özür dilerim şu sondaki olmayacak.
+
+348
+00:49:12,628 --> 00:49:17,048
+Bunlar birbirlerine eşittir arkadaşlar. A, B, Z şeklinde.
+
+349
+00:49:19,088 --> 00:49:25,728
+Şimdi, deminki toplama 4 bitlik çıkarma yapıyorduk. Hatırladınız mı arkadaşlar?
+
+350
+00:49:26,588 --> 00:49:29,548
+Örnek, 4 bitlik çıkarma.
+
+351
+00:49:32,288 --> 00:49:35,596
+Bu sefer, A, B.
+
+352
+00:49:35,764 --> 00:49:59,864
+0, A3, A2, A1, A0'dan B3, B2, B1, B0'ı çıkaralım. Bu devreyi yapacağız arkadaşlar. Bunun için neye ihtiyacımız var bizim? Burada fark 0, fark 1, fark 2 ve fark 3'ümüz oluşacak.
+
+353
+00:50:00,211 --> 00:50:03,891
+En sonunda da borç alıp almadığımız görüntüden bitimiz olacak.
+
+354
+00:50:04,692 --> 00:50:07,931
+Bunun için kaç tane tam çıkarıcı kullanmamız lazım arkadaşlar?
+
+355
+00:50:09,251 --> 00:50:20,440
+Toplam 4 tane tam çıkarıcı kullanmamız gerekiyor.
+
+356
+00:50:21,279 --> 00:50:37,559
+Şimdi buradan bakacak olursak, A3, B3, A2, B2, A1, B1, A0 ve B0.
+
+357
+00:50:38,579 --> 00:50:42,079
+Bir de ne gerekiyor arkadaşlar? Borç girişi.
+
+358
+00:50:42,804 --> 00:51:10,264
+Borç girişi baktığımızda, şurası da borç girişi 0, şurası borç girişi 1, şurası borç girişi 2, şurası da borç girişi 3. Bunlar tam çıkarıcı 3, şurası tam çıkarıcı 2, tam çıkarıcı 1, tam çıkarıcı 0 devreleri.
+
+359
+00:51:11,476 --> 00:51:22,776
+Evet, bunların çıkışlarına baktık olursak, önce bir fark sıfır, yani A'dan B'ye. Ama borç alınmış mıdır buradan? Oraya ne yapmamız lazım arkadaşlar?
+
+360
+00:51:23,456 --> 00:51:38,136
+Borç girişi sıfır, herhangi borç alınmayacağı için o dijitten, çünkü en sondaki dijit daha öncesinden borç alınmamıştı. Oraya sıfırı koyduk veya toprağa bağladık bu şekilde.
+
+361
+00:51:38,867 --> 00:51:52,768
+Buradan bir ne çıkacak arkadaşlar? Borç sıfır çıkacak. Bu borç sıfır alınıyorsa yandan alınıyor. Öyle değil mi? Bir borç durumu alınıyorsa yandan alınıyor.
+
+362
+00:52:03,936 --> 00:52:16,916
+2, eğer bir borcumuz varsa alınıyorsa, borç, 2, borç girişi 3, 3'e bağlanıyor. Yan taraftan borç alınıp alınmadığını gösteren.
+
+363
+00:52:17,996 --> 00:52:25,516
+Artı F3, şurada da borç 3. Bir önceki deşikten alıp alınmadığını gösteriyor.
+
+364
+00:52:31,539 --> 00:52:33,539
+Tam çıkarıcıya
+
+365
+00:52:37,235 --> 00:52:41,235
+Tam çıkarıyıcıyı da simülasyon ortamında...
+
+366
+00:52:46,324 --> 00:52:47,644
+gerçekliğiniz.
+
+367
+00:52:50,104 --> 00:52:57,924
+Her ikisinde de arkadaşlar iki farklı örnek oluşturun. İki farklı örnek için deneyiniz.
+
+368
+00:53:04,211 --> 00:53:11,251
+Buraya geçmeden bir örnek yapabilir miyiz? Mesela 0-0-0-0'dan 1-1-1'i çıkarabilir miyiz?
+
+369
+00:53:14,452 --> 00:53:20,052
+0-0-0-0'dan 1-1-1'i çıkaracaksın. Ne yapman lazım?
+
+370
+00:53:22,632 --> 00:53:29,392
+Öncelikle orada yok, orada yok, orada yok. Değil mi? Ne yapman lazım?
+
+371
+00:53:31,731 --> 00:53:34,572
+En sonunda buradan borç alman lazım. Öyle değil mi?
+
+372
+00:53:35,572 --> 00:53:36,532
+Baktığın zaman.
+
+373
+00:53:37,192 --> 00:53:39,632
+Sıfır sıfırdan çıkaralım teker teker.
+
+374
+00:53:40,492 --> 00:53:43,872
+İkiden bir çıktı.
+
+375
+00:53:45,211 --> 00:53:45,852
+Bir kaldı.
+
+376
+00:53:46,072 --> 00:53:47,771
+Burada bir kalmış olması lazım.
+
+377
+00:53:48,172 --> 00:53:48,312
+Değil mi?
+
+378
+00:53:49,192 --> 00:53:49,711
+Sıfır.
+
+379
+00:53:50,072 --> 00:53:51,211
+Bir kalmış olması lazım.
+
+380
+00:53:51,372 --> 00:53:51,692
+Sıfır.
+
+381
+00:53:51,812 --> 00:53:53,012
+Bir kalmış olması lazım.
+
+382
+00:53:53,231 --> 00:53:53,612
+Sıfır.
+
+383
+00:53:54,251 --> 00:53:55,731
+Matematikçi olarak çözmek değildi hocam.
+
+384
+00:53:55,812 --> 00:53:58,711
+Mesela şu anda sıfırdan biri çıkardığımızda fark bir.
+
+385
+00:53:59,168 --> 00:54:01,088
+Borcumuz 1.
+
+386
+00:54:01,188 --> 00:54:02,408
+Ama borcumuz 1.
+
+387
+00:54:02,928 --> 00:54:09,948
+Evet. Şimdi daha sonra sıfırdan 1 çıkaracağız. Elde de 1 var hocam. Fark bir, elde 1 mi oluyor yine?
+
+388
+00:54:11,448 --> 00:54:12,388
+Elde yok burada.
+
+389
+00:54:13,327 --> 00:54:14,688
+Yani borç olarak yani şöyle.
+
+390
+00:54:14,688 --> 00:54:21,268
+Sonuçta sen matematiksel olarak ne yapıyorsun mesela? Şöyle diyelim 12'den.
+
+391
+00:54:24,244 --> 00:54:31,384
+11'i şöyle diyelim, 11'den diyelim ki kaçı çıkaralım, daha büyük bir şeyi yapalım.
+
+392
+00:54:31,764 --> 00:54:32,804
+22 olabilir mi hocam?
+
+393
+00:54:32,963 --> 00:54:35,403
+11'den 22'yi çıkarıyorum desen.
+
+394
+00:54:37,064 --> 00:54:38,784
+Yandan ne alman lazım?
+
+395
+00:54:39,524 --> 00:54:41,024
+Biraz cebir çalışalım.
+
+396
+00:54:41,864 --> 00:54:44,224
+11'den 2 çıktı, 9 değil mi?
+
+397
+00:54:44,923 --> 00:54:46,264
+Nereden aldın sen o 1'i?
+
+398
+00:54:47,824 --> 00:54:48,443
+1 üst.
+
+399
+00:54:49,644 --> 00:54:51,764
+Dijitten aldın değil mi? Hatırlayalım.
+
+400
+00:54:52,143 --> 00:55:17,483
+Ne oldu? Senin sıfır kaldı. Peki, baktığında aradaki farkına bakıyorsun aslında burada. Aralarındaki farka bakıyorsun. Ne yapmış oluyorsun? Buradan da bir alırsan, yani pardon ondan, şimdi burada birden, bak pardon şöyle düşüneceksin burada.
+
+401
+00:55:20,115 --> 00:55:42,415
+Değil mi? 1'den, 11'den, 2 çıktı, 9 kaldı. Burada 0 kalmıştı. 0'dan, 0'dan, ne almış olmuş? Eğer binary bir işlem gibi düşünecek olursak, burada ne kalmış olması lazım arkadaşlar? 1'den.
+
+402
+00:55:44,415 --> 00:55:46,315
+Şöyle diyelim, şurayı silleyim.
+
+403
+00:55:48,724 --> 00:56:11,324
+11'den diyelim şöyle. 11'den diyelim. 11'den 2 çıktı. 11'den 2 çıktı. 10 almıştık çünkü şuraya alarak. Burada 0 kaldı. Öyle değil mi? Eğer sen alacaksan öbür taraftan 10'dan 2 çıkarsa 89 kalmış oldu.
+
+404
+00:56:11,583 --> 00:56:17,083
+Ama bir de elden varsın. Sanki bir şey gibi düşüneceksin bunu.
+
+405
+00:56:17,664 --> 00:56:23,423
+89'u. Aslında 100 birimlik bir yuvarlak döngüde, öyle değil mi?
+
+406
+00:56:24,143 --> 00:56:31,384
+Senin 11'den 22 çıkardığında 89'a doğru geri gitmişsin gibi düşünüyorsun burada.
+
+407
+00:56:31,384 --> 00:56:38,443
+Şöyle düşün. Sıfırdan başlıyorsun. Sıfır sıfırdan başlıyorsun.
+
+408
+00:56:38,927 --> 00:57:01,248
+99'a kadar gidiyorsun. Öyle değil mi? Sen 11'den, şuradaki 11'den 22 gittiğin zaman aslında tersten 89'a varmış oluyorsun. Bunu da biz eksi diye yazıyoruz mesela. Sanki böyle bir dönerli bir sistem varmış gibi düşüneceksin. Aynısı burada da geçerli.
+
+409
+00:57:05,907 --> 00:57:08,807
+Peki hocam, bir soru sorabilir miyim?
+
+410
+00:57:09,588 --> 00:57:09,847
+Evet.
+
+411
+00:57:10,527 --> 00:57:20,927
+Mesela tam farkın doğruluk tablosunda ikinci sıradaki hanede biz yazdığımız değerleri yorumlayabilir miyiz acaba?
+
+412
+00:57:22,927 --> 00:57:28,547
+Şimdi tam çıkarmada bir borç ne yapılmış? Bir borç alınmışsa şayet.
+
+413
+00:57:30,195 --> 00:57:35,195
+Bir borç alınmışsa şayet kendisi üzerinden ve değeri sıfırsa.
+
+414
+00:57:37,096 --> 00:57:40,175
+Demek ki borç bunun üzerinden geçmiştir, öyle değil mi?
+
+415
+00:57:41,775 --> 00:57:42,076
+Evet.
+
+416
+00:57:42,635 --> 00:57:48,135
+Öyle değil mi? Dolayısıyla borç onun üzerinden geçmiştir. İkiden bir çıkarırsan ne kalır? Bir.
+
+417
+00:57:48,735 --> 00:57:52,015
+Birden sıfır çıkarırsan bir. Peki borç almış mıdır bu yan taraf?
+
+418
+00:57:53,695 --> 00:57:54,935
+Almıştır ki bir olsun.
+
+419
+00:57:57,684 --> 00:58:03,083
+Yani farkın bir olması nasıl tanımlanıyor orada hocam? Neyle neyin farkı bir oluyor orada?
+
+420
+00:58:04,003 --> 00:58:15,224
+Ya şimdi arkadaşlar, ben buradan mesela burada sıfır kalmıştı değil mi? Veya buradan şöyle değer alıyorum. Mesela burada bir olsun.
+
+421
+00:58:16,244 --> 00:58:20,824
+Bir, sıfır, sıfır, bir, bir, bir çıkarıyorum diye. Şöyle.
+
+422
+00:58:21,715 --> 00:58:43,755
+Ben bunu sıfırdan biri çıkaramadığım zaman buradan alacağım veya onun üzerinden geçireceğim. Buradan bir borç aldığımız zaman burası iki oluyor. Buradan bir borç aldığımız zaman bir kalıyor. İki kalıyor değil mi? İkiden bir çıktı, bir. Buradan da borç alındığı için ne oluyor aslında? Birden bir çıkarsa sıfır kalır ama burası aşağısı sıfırsa bir kalır öyle değil mi?
+
+423
+00:58:44,755 --> 00:59:05,016
+Üzerinden alınan borcun geçtiği dijitmiş gibi düşüneceksin onu. Siz onun üzerine biraz düşünün arkadaşlar. Çıkarma işlemini ondalık tabanda nasıl yapıyorduk onu bir gözden bir geçirin. Ondan sonra tekrar ona göre bir yorumlayın. Anlaştık mı?
+
+424
+00:59:05,016 --> 00:59:08,815
+Şimdi
+
+425
+00:59:09,588 --> 00:59:15,188
+Üçüncü kısma gelelim. Toplama çıkarma devresi.
+
+426
+00:59:16,608 --> 00:59:28,327
+Toplama çıkarma devresi. Yani bu işlemde de toplama çıkarma devresinde ise ikisini birlikte yapıyoruz.
+
+427
+00:59:28,327 --> 00:59:33,588
+Yani adder, subtractor devresi.
+
+428
+00:59:39,476 --> 00:59:41,576
+Adder, subtractor devresi.
+
+429
+00:59:42,476 --> 00:59:53,236
+Şimdi burada arkadaşlar hem toplamayı hem çıkarmayı beraber yapmak istiyoruz.
+
+430
+00:59:53,236 --> 00:59:57,736
+Hem toplama hem çıkarmayı beraber yapmak istiyoruz.
+
+431
+00:59:59,096 --> 01:00:03,176
+Burada en önemli şey bizim için ne olacak arkadaşlar?
+
+432
+01:00:03,296 --> 01:00:06,276
+Bir toplama devresi yaptığımızda.
+
+433
+01:00:08,467 --> 01:00:10,627
+Hem çıkarmayı yapmak istiyoruz.
+
+434
+01:00:11,247 --> 01:00:19,227
+Peki çıkarma yaptığımızda şöyle A, B, C, D, E, F, G, H.
+
+435
+01:00:20,947 --> 01:00:22,607
+Toplamada herhangi bir sıkıntı yok.
+
+436
+01:00:22,607 --> 01:00:27,567
+Ama çıkarma yaptığımızda aslında ne yapıyoruz biz bu işlemde?
+
+437
+01:00:28,727 --> 01:00:33,847
+İkinci sayının, şu ikinci sayının ikiye tümleyinini alıyoruz.
+
+438
+01:00:35,284 --> 01:00:58,804
+E üstü, F üstü, G üstü, T üstü, artı ne ekliyoruz ona? İkiye tümleyen yapabilmek için onu. Artı bir ekliyoruz. Böylece şurada oluşan sayı ikiye tümleyeni, ikiye tümleyen haline gelmiş oluyor.
+
+439
+01:01:00,532 --> 01:01:03,892
+2'ye tümleyen haline gelmiş oluyor.
+
+440
+01:01:04,812 --> 01:01:08,052
+Demek ki çıkarma işlemi de aslında bir toplama işlemi.
+
+441
+01:01:09,052 --> 01:01:10,711
+Neyle toplama işlemi?
+
+442
+01:01:10,711 --> 01:01:17,711
+Şu ikinci sayının ikinci 2'ye tümleyeniyle beraber topluyoruz.
+
+443
+01:01:17,872 --> 01:01:24,912
+Yani A, B, C, D, 2'ye tümleyen.
+
+444
+01:01:26,387 --> 01:01:31,648
+E, F, G, H. Bunların toplam işlemi haline gelmiş oluyor.
+
+445
+01:01:33,407 --> 01:01:36,807
+Peki, ikiye tümleme işlemi yapmak ne demek?
+
+446
+01:01:37,588 --> 01:01:44,487
+Bakın burada yapılan işlem. İkinci sayının bütün dijitlerinin deyimini alıp bir ekliyorsunuz.
+
+447
+01:01:44,487 --> 01:01:45,427
+Temel olarak.
+
+448
+01:01:46,527 --> 01:01:48,487
+Şimdi, şöyle bir...
+
+449
+01:01:48,884 --> 01:02:03,643
+Devre kuracağız arkadaşlar. Demek ki temelde biz tam toplayıcıları kullanacakmışız. 4 tane tam toplayıcımız var. Bu devre için. 4 tane tam toplayıcıyı oluşturuyoruz. Şöyle.
+
+450
+01:02:13,748 --> 01:02:40,228
+Eğer çıkarma işlemi yapılıyorsa, çıkarma ve toplama işlemini belirtecek, şöyle diyelim, A3, A2, A1, A0, B3, B2, B1, B0.
+
+451
+01:02:40,947 --> 01:02:58,867
+Bir tane seçim ucumuz olsun M. M eğer sıfırsa toplama, M eşittir birisi çıkarma yapsın.
+
+452
+01:03:00,547 --> 01:03:07,667
+Şimdi burada arkadaşlar öncelikle A'da hiçbir değişiklik olmayacak.
+
+453
+01:03:09,492 --> 01:03:16,092
+A2, A1, A0'ı kullandık.
+
+454
+01:03:17,232 --> 01:03:25,352
+Şimdi ben eğer toplama yapıyorsam, B dijitinde herhangi bir çıkış ve değişiklik olmaması lazım.
+
+455
+01:03:25,352 --> 01:03:36,352
+Eğer çıkarma yapıyorsam, bakın 0, şimdi ben baktığımda A ve B'ye baktığımda.
+
+456
+01:03:37,972 --> 01:03:46,072
+Ve çıkışa baktığımda, 0, 0, 0, 1, 1, 0, 1, 1.
+
+457
+01:03:47,372 --> 01:03:53,132
+Eğer, şu iki tane, isterseniz AB yapmayayım şurayı da, XY yapayım.
+
+458
+01:03:53,811 --> 01:03:55,492
+Daha güzel anlaşılacak, XY.
+
+459
+01:03:56,771 --> 01:04:02,152
+M eşittir 0 yapıyorsa, herhangi bir değişikliğin, yani X'i M gibi kabul edin.
+
+460
+01:04:03,507 --> 01:04:29,507
+Herhangi bir değişiklik yapmasın. 0, 1. Ondan sonra 1 ise ne yapıyor arkadaşlar? Tersini alıyor. 1, 0. Bakın, X yani M, 0 ise Y'nin aynısını yazıyoruz. Eğer X 1 ise...
+
+461
+01:04:30,132 --> 01:04:32,012
+Y'nin değilini alıyor.
+
+462
+01:04:34,012 --> 01:04:36,652
+Y'nin değilini çıkış olarak veriyor.
+
+463
+01:04:37,312 --> 01:04:39,012
+Bu hangi devre elemanı arkadaşlar?
+
+464
+01:04:39,912 --> 01:04:40,332
+XOR.
+
+465
+01:04:40,992 --> 01:04:48,872
+Evet, yani Z eşittir, şöyle, X ile Y'nin XOR'u.
+
+466
+01:04:49,012 --> 01:04:51,732
+Aynı buradaki o mantığı kullanacağız arkadaşlar.
+
+467
+01:04:53,204 --> 01:04:56,503
+B girişine bir tane XOR bağlayacağız.
+
+468
+01:04:57,104 --> 01:05:01,423
+B girişine sırasıyla şöyle göstereyim.
+
+469
+01:05:02,563 --> 01:05:07,963
+B girişi yerine XOR bağlıyorum şu şekilde.
+
+470
+01:05:10,704 --> 01:05:12,184
+Şurayı da düzelteyim.
+
+471
+01:05:16,947 --> 01:05:42,807
+Şu şekilde. Benim B3 girişim, bir de şöyle genel bir çıkışım. Şurası B2, şurası B1, şurası B0 olsun. Benim şu ortak bir ucum olsun hepsiyle. Burası da benim M ucum.
+
+472
+01:05:44,916 --> 01:06:00,916
+Şimdi bu M ucu sıfırsa B3 ucunu ne yapıyor arkadaşlar? Aynen geçiriyor. Yani şu durum. M sıfırsa şöyle şeyle göstereyim şurada.
+
+473
+01:06:02,396 --> 01:06:09,636
+Biraz tıkandı galiba. Evet. Bakın şurası sıfırsa ne yapıyor arkadaşlar?
+
+474
+01:06:11,539 --> 01:06:16,880
+Aynen Y'yi geçiriyor. Yani bizim buradaki Y değerim B3, B2, B1, B0.
+
+475
+01:06:17,780 --> 01:06:26,200
+Şu demek ki M0'a 0 verdiğinde burada B3 oluşuyor, burada B2 oluşuyor gibi düşünebilirsiniz.
+
+476
+01:06:28,099 --> 01:06:35,619
+Peki M'ye 1 verdiğimde ne yapıyor? B3'ün değili, B2'nin değili, B1'in değili, B0'ın değili.
+
+477
+01:06:37,059 --> 01:06:37,659
+Evet.
+
+478
+01:06:38,675 --> 01:06:48,655
+Peki, çıkarma işleminde ikinci sayının değerini aldık. Ama başka bir işlem daha yapmamız gerekiyor. Ne yapmamız gerekiyor?
+
+479
+01:06:51,055 --> 01:06:51,855
+Evet arkadaşlar.
+
+480
+01:06:54,003 --> 01:07:03,943
+İkinci sayının ikiye tümleyeni alırken değilini yapmayı becerdim. Başka ne yapmam gerekiyor tam anlamıyla ikinci ikiye tümleyenin oluşması için?
+
+481
+01:07:04,304 --> 01:07:06,223
+Bir de birle toplamamız gerekiyor.
+
+482
+01:07:06,344 --> 01:07:20,864
+Evet. Bu durumda. Bunda neyden yararlanabiliriz arkadaşlar? Mensur veya bir vercih. En alttaki bite, değil mi? Most significant, pardon, least significant bite.
+
+483
+01:07:21,972 --> 01:07:23,692
+1 eklememiz gerekiyor.
+
+484
+01:07:24,072 --> 01:07:24,952
+Onu ne yapacağız?
+
+485
+01:07:25,392 --> 01:07:36,152
+Bakın bunlar tam toplayıcı 3, tam toplayıcı 2, tam toplayıcı 1'di, tam toplayıcı 0 burası da.
+
+486
+01:07:37,672 --> 01:07:42,412
+Dolayısıyla tam toplayıcının elde girişi 0'a.
+
+487
+01:07:42,412 --> 01:07:44,112
+Elde girişi 0'a.
+
+488
+01:07:44,672 --> 01:07:48,532
+Şu şekilde bir bağlantı yaparsam.
+
+489
+01:07:49,619 --> 01:07:56,039
+Ne olur? Çıkarma durumunda buraya ekstradan bir gelmiş oluyor.
+
+490
+01:07:56,499 --> 01:08:08,559
+Aynı zamanda B0'ın değili, B1'in değili, B2'nin değili, B3'ün değili geleceği için bir toplama işimi gerçekleştirecek ama ikinci sayının ikiye tümleyeniyle toplama yapılmış olacak.
+
+491
+01:08:09,299 --> 01:08:11,519
+Çıkışları toplama sıfır.
+
+492
+01:08:12,211 --> 01:08:39,307
+Bu eldesi sıfır. Bu eldeler nereye gidecek arkadaşlar? Bir sonrakine gidecek. Elde girişi 1'e. Burası T1, elde girişi 1. Bu da buradaki elde girişi 2'ye. Burası T2, burası da elde girişi 3.
+
+493
+01:08:40,020 --> 01:09:02,020
+3, burası da E2 idi. En sonunda T2 ve E3 şekline gelmiş oluyor. Bir taşla iki kuşu vuracağımız bir devre. M eşittir sıfırsa, aynen buradakiler standart bir 4 bitlik toplama devresine dönüşüyor.
+
+494
+01:09:02,020 --> 01:09:07,159
+Bir verdiğimizde ise ikinci sayının ikinci tümleyeni nelerle alıyoruz arkadaşlar?
+
+495
+01:09:07,859 --> 01:09:17,719
+Şuradaki XOR yapısı ve en alttaki bite bir 1 eklemekle gerçekleştirmiş oluyoruz arkadaşlar.
+
+496
+01:09:21,524 --> 01:09:30,524
+Ödevin dördüncü kısmında arkadaşlar, ödevin dördüncü kısmında toplama çıkarma devresini...
+
+497
+01:09:35,923 --> 01:09:37,243
+Gerçekleyiniz.
+
+498
+01:09:39,463 --> 01:09:43,783
+Peki bunun için ne kadar zaman verelim arkadaşlar?
+
+499
+01:09:44,743 --> 01:09:49,283
+Bunun için önümüzdeki haftası, sınav haftası, ne diyelim?
+
+500
+01:09:50,343 --> 01:09:52,323
+29'una kadar zaman verelim.
+
+501
+01:09:53,023 --> 01:09:54,543
+2 haftanız var bu iş için.
+
+502
+01:09:56,224 --> 01:10:02,763
+29'u saat, 29, saat 29 Kasım.
+
+503
+01:10:03,923 --> 01:10:27,923
+Saat 23.59'a kadar bu dörte de gerçekleşmiş olacak arkadaşlar. Ben şimdi bu tabletten yayın yaptığım için biraz USB eksikliği var bunda. Bunu gidermemiz lazım. Ondan sonra...
+
+504
+01:10:28,148 --> 01:10:32,827
+Arkadaşlar, ben birazdan ödevi de girip yayınlarım.
+
+505
+01:10:35,648 --> 01:10:38,927
+Evet, sizlerin sormak istediği bir soru var mı arkadaşlar?
+
+506
+01:10:40,884 --> 01:10:43,324
+Hocam, ben bir şey bulmak istiyorum da.
+
+507
+01:10:43,923 --> 01:10:44,203
+Evet.
+
+508
+01:10:44,203 --> 01:10:54,203
+Şimdi ödev olarak mesela dijital ortamda bunları gerçekleştirdikten sonra SS'ini alıp mı atacağız yoksa böyle bir...
+
+509
+01:10:54,203 --> 01:10:59,003
+PDF şeklinde gönderin arkadaşlar. Ekran çıklarını PDF olarak gönderin.
+
+510
+01:10:59,583 --> 01:10:59,923
+Tamam.
+
+511
+01:11:00,904 --> 01:11:07,603
+Yani buradaki dijitlere de biliyorsunuz şey bağlayın. Ne derler? LED bağlayabilirsiniz. Örneğin.
+
+512
+01:11:08,212 --> 01:11:14,332
+LED bağladığınızda, yandığında kırmızı oluyor, koyu oluyor filan. Ben anlarım oradan, ben ne verdiğimizi.
+
+513
+01:11:14,992 --> 01:11:19,072
+Bit girişleri içinde şey var mı, anahtarlar var mı şu şekilde arkadaşlar?
+
+514
+01:11:20,092 --> 01:11:24,172
+Kullandığınız programda. Yani sıfır, bir verdiğimiz bir anahtar.
+
+515
+01:11:25,512 --> 01:11:27,512
+Evet hocam, benim kullandığım da var.
+
+516
+01:11:27,952 --> 01:11:35,012
+Tamam, onları gönderip örnekleri doğru bir şekilde vermen, o simülasyonun sonucunu göstermen benim için yeterli.
+
+517
+01:11:36,467 --> 01:11:37,927
+Tamam hocam, teşekkürler.
+
+518
+01:11:37,948 --> 01:11:38,807
+Bir şey sorabilir miyim?
+
+519
+01:11:39,407 --> 01:11:39,728
+Evet.
+
+520
+01:11:40,567 --> 01:11:48,807
+Ben ikisinde, geçen haftaki verdiğiniz ödevde, son ikisinde simülasyonu çalıştırdım, doğruluk tablosunu da verdim.
+
+521
+01:11:48,807 --> 01:11:56,747
+Ama ilkinde simülasyonu çalıştırdıktan sonra doğruluk tablosunu istediğim için simülasyon yine gitti, onun ekran görüntüsünü almıştım. Sıkıntı olur mu sizin için?
+
+522
+01:11:57,167 --> 01:11:59,368
+Sorun olmaz. Yükledin mi sistemi ödevine?
+
+523
+01:11:59,927 --> 01:12:00,467
+Yükledim.
+
+524
+01:12:01,067 --> 01:12:02,247
+Tamam, sorun olmaz.
+
+525
+01:12:06,931 --> 01:12:15,011
+Başka bir sorunuz var mıydı arkadaşlar? Bu haftalık ben bunu işleyeceğim. Önümüzdeki hafta devam ederiz tekrar.
+
+526
+01:12:15,871 --> 01:12:17,992
+Hocam, sınavda buraya kadar mı sorun olacağız?
+
+527
+01:12:18,211 --> 01:12:20,191
+Evet, evet. Multiplexer'lere kadar.
+
+528
+01:12:24,884 --> 01:12:28,104
+Sınavda multiplexer'lere kadar sorumlusunuz arkadaşlar.
+
+529
+01:12:32,083 --> 01:12:32,943
+Anlaştık mı?
+
+530
+01:12:38,292 --> 01:12:43,811
+Tamamdır. Kendinize iyi bakın arkadaşlar. Tekrar görüşmek üzere. Kolay gelsin sizlere de.
+
+531
+01:12:48,692 --> 01:12:49,532
+Teşekkürler, [öğrenci].

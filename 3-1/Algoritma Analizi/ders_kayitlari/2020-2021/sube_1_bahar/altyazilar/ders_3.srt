@@ -1,0 +1,4599 @@
+1
+00:06:32,468 --> 00:06:34,708
+Evet, merhabalar arkadaşlar. Hoş geldiniz.
+
+2
+00:06:40,435 --> 00:06:40,995
+Salaştırma.
+
+3
+00:07:20,211 --> 00:07:21,812
+Ekranım geldi mi arkadaşlar şu an?
+
+4
+00:07:27,923 --> 00:07:28,883
+Evet geldi hocam.
+
+5
+00:07:29,603 --> 00:07:30,283
+Tamamdır.
+
+6
+00:07:35,540 --> 00:07:40,980
+Geçen hafta algoritma analizi ile alakalı asimptotik notasyonlara bir giriş yapmıştık.
+
+7
+00:07:41,980 --> 00:07:47,460
+Hatta şunu silmedim. Kısaca bunun üzerinden bir özet geçelim. Ondan sonra detaylarına gireceğiz.
+
+8
+00:07:48,580 --> 00:07:51,640
+Asimptotik notasyonları ne için kullanıyorduk?
+
+9
+00:07:51,640 --> 00:08:01,800
+Bir algoritmanın zaman veya bellek analizini gerçekleştirirken, çalışma zaman analizi veya bellek analizini gerçekleştirirken,
+
+10
+00:08:03,220 --> 00:08:22,840
+Makineler arası etkileşimden, makineye bağımlılıktan kurtulmak veya farklı efektlere bağımlılıktan kurtulmak için daha genel, herkes tarafından genel geçer, kabul edilen bir sistem, bir ölçme sistemi üzerinde duralım demiştik.
+
+11
+00:08:23,600 --> 00:08:26,060
+Burada da asimptotik notasyonlara kadar geldik.
+
+12
+00:08:26,920 --> 00:08:28,200
+Bunun çıkış noktası neydi?
+
+13
+00:08:28,639 --> 00:08:46,600
+Bir algoritmada, algoritmadaki temel operasyonlar, toplama, çıkarma veya atama veya comparison işlemlerinin maliyetlerinin belirlenip, bu maliyetlere göre ve frekanslarının belirlenip toplam bir cost belirleme işiydi.
+
+14
+00:08:49,331 --> 00:08:55,812
+yine makineden makineye değişeceği için tek bir operasyonla ve temel operasyonla bu işi yapalım dedik.
+
+15
+00:08:56,611 --> 00:09:11,611
+En son elde ettiğimiz çalışma zamanı fonksiyonunu da asimptotik notasyonlarla, yani daha anlaşılır, daha sade, alt ve üst sınırları gösteren notasyonlarla yapalım demiştik.
+
+16
+00:09:11,611 --> 00:09:12,971
+Şimdi herhalde şuydu.
+
+17
+00:09:14,707 --> 00:09:18,387
+Bir tane daha bir doküman var, onu da açacağım arkadaşlar. Birazdan ondan da bakacağız.
+
+18
+00:09:19,767 --> 00:09:25,147
+Evet, bu derse daha önceden ilk defa katılan var mı aranızda?
+
+19
+00:09:26,127 --> 00:09:29,347
+Geçen hafta katılmayan veya ondan önceki hafta katılmayan?
+
+20
+00:09:29,847 --> 00:09:32,407
+Ben dilekçeyle aldım hocam, o yüzden ilk defa katılıyorum.
+
+21
+00:09:34,207 --> 00:09:39,467
+Yani şu an dersin listesinde misiniz? Yani bu sizde eklenmiş görünüyor musunuz?
+
+22
+00:09:40,408 --> 00:09:41,007
+Evet, aynen.
+
+23
+00:09:41,587 --> 00:09:44,788
+Geçen haftada o zaman herhalde eklenmiştiniz.
+
+24
+00:09:45,788 --> 00:09:49,607
+Birinci videoda kurallarla alakalı bilgilendirmeler var.
+
+25
+00:09:50,747 --> 00:09:51,707
+İşte quizler vs.
+
+26
+00:09:51,867 --> 00:09:56,028
+Oradaki videodaki şeyleri ve ders duvarına bir link yükledim.
+
+27
+00:09:56,028 --> 00:09:59,987
+O linkten de dersle alakalı kaynaklara erişim sağlayabilirsiniz.
+
+28
+00:10:00,000 --> 00:10:14,000
+normalde quizlere dair, yani dersin bitmesine göre quiz yapacağım. Ama bugün biter bitmez diye bir de yeni eklenenler, sizler yeni eklendiğiniz için mağdur olmayın diye onun için mail gönderdim.
+
+29
+00:10:14,000 --> 00:10:21,000
+Ama normalde quiz dediğimiz şey dersin devamında, uygulama saatinde yapacağımız bir uygulama olacak.
+
+30
+00:10:21,000 --> 00:10:26,668
+Onun haricinde genel kuralları o birinci videodan takip edersiniz arkadaşlar.
+
+31
+00:10:27,283 --> 00:10:28,663
+Var mı sorunuz başka?
+
+32
+00:10:30,663 --> 00:10:30,923
+Evet.
+
+33
+00:10:31,703 --> 00:10:35,604
+İlk defa benim listemde bir daha bakayım da kontrol edeyim.
+
+34
+00:10:37,624 --> 00:10:43,244
+Yani bugün eklenmediniz herhalde değil mi USİS'e veya işte bu online yıldıza?
+
+35
+00:10:44,163 --> 00:10:47,604
+USİS'e geçen hafta eklenmiştim ama online yıldıza yeni geldi.
+
+36
+00:10:47,803 --> 00:10:49,764
+Yani geçen haftaki dersi gelmemiştim.
+
+37
+00:10:49,783 --> 00:10:50,644
+O yüzden gelmemiştim.
+
+38
+00:10:50,923 --> 00:10:51,923
+Hemen bir daha bir bakayım.
+
+39
+00:10:56,659 --> 00:11:01,460
+Çünkü bir liste indirdim, ondan sonra güncelleme olduysa onu da bir toparlayalım.
+
+40
+00:11:05,587 --> 00:11:06,467
+Kersin, nabij.
+
+41
+00:11:11,572 --> 00:11:17,572
+Tamam, ders listesinde geçen haftadan bu zamana bir değişiklik yok. 30 kişiyiz, 31 kişiyiz.
+
+42
+00:11:20,072 --> 00:11:31,072
+Evet, birinci videoda yapılacaklar ve bu kurallar, Google Drive'daki ödevle alakalı kurallar, her şey oradakilerden sorumlusunuz. Tekrardan aynı şeyleri defa söylemeye gerek yok.
+
+43
+00:11:32,340 --> 00:11:39,840
+Asimptotik notasyonlardan geçen hafta Big-O ile alakalı şey bakmıştım ama kısaca bir özet geçelim, tekrar detaydan alacağım.
+
+44
+00:11:39,840 --> 00:11:58,060
+Bu asimptotik notasyonlar dediğim gibi çalışma zamanı fonksiyonunuzu veya aslında bellekdeki işgal ettiğiniz yere ait fonksiyonunuzu daha anlaşılır, daha sade bir şekilde yazmak ve algoritmanızın alt limiti veya üst limiti veya
+
+45
+00:11:59,347 --> 00:12:03,727
+Sıkı limit dediğimiz, tight bound dediğimiz limit hakkında bilgi veriyor bize.
+
+46
+00:12:04,627 --> 00:12:14,147
+İşte burada Big-O, Little-O, Big-Omega, Little-Omega, Big-Theta, aslında bir de Tilda sembolü var da Tilda'yı çok anlatmıyoruz.
+
+47
+00:12:15,087 --> 00:12:17,387
+Bu 5 tane sembolden bahsetmiştik.
+
+48
+00:12:18,707 --> 00:12:37,627
+Upper bound ve Little O'nun da upper bound söylediğini, farkının birisi bir Fn fonksiyonundan küçük veya eşit olduğunu Big O için, Little O için küçük olduğunu, Big Omega lower boundını, en az, en olası, en iyi durumu bize söylüyor aslında.
+
+49
+00:12:38,627 --> 00:12:40,267
+Tn'in...
+
+50
+00:12:40,467 --> 00:12:45,528
+Big-Omega-N'den, Big-Omega-F'n'den büyük veya eşit olduğunu söylerken kullanıyoruz.
+
+51
+00:12:45,627 --> 00:12:48,947
+Veya işte küçük Omega olursa büyük olduğunu söylüyoruz.
+
+52
+00:12:49,607 --> 00:12:56,147
+Yaklaşık olarak eşitliği de veya tight bound'ı da Big-Theta ile göstereceğiz demiştik.
+
+53
+00:12:56,147 --> 00:13:03,147
+Şimdi Big-Omega'nın tanımına baktık geçen hafta.
+
+54
+00:13:06,580 --> 00:13:15,200
+Tekrar edelim, hem de doğru düzgün tekrar bir üstünden geçmiş oluruz. Sonra kaldığımız yerden devam edeceğiz.
+
+55
+00:13:17,620 --> 00:13:20,220
+Tekrardan asimptotik notasyonlar diyelim o zaman.
+
+56
+00:13:34,100 --> 00:13:55,960
+Genellikle çok slide kullanmayacağım ama kullandığım bazı yardımcı slide'ları onları size o drive'a ekliyorum. Oradan görebilirsiniz. Ders sonunda falan eklemiş oluyorum. Şimdi Big-O bize upper bound'u veriyordu arkadaşlar. Biz birazdan yine gün içinde algoritmaları iteratif ve rekürstif olarak analiz edeceğiz.
+
+57
+00:13:56,820 --> 00:14:06,820
+Yani bir TN fonksiyonu bulacağız. O elde ettiğimiz TN fonksiyonunu, hangisi uygunsa bu asimptotik notasyonlarla ifade edeceğiz.
+
+58
+00:14:06,820 --> 00:14:11,820
+Bu upper bound veren Big-O notasyonunun kuralı neydi?
+
+59
+00:14:11,820 --> 00:14:19,820
+FN fonksiyonu elemanıdır. Big-O, GN diyorduk.
+
+60
+00:14:25,427 --> 00:14:32,228
+0 büyüktür. 0'ın büyük olması eşittir. Fn çok önemli değil aslında.
+
+61
+00:14:33,307 --> 00:14:44,208
+Büyüktür eşittir. C çarpı, gn şartı sağlanıyorsa, for all n büyük.
+
+62
+00:14:46,947 --> 00:14:49,668
+Belli bir n sıfır, onu şimdi söyleyeceğiz.
+
+63
+00:14:52,052 --> 00:15:12,912
+C büyük sıfır için. Buna Big-O, Gn diyorduk. Bu şartımız olması gerekiyordu. Ne demek bu? Bir algoritmamız var. Bunun n değerine göre execution time'ı veya tn fonksiyonu çizdirdiniz.
+
+64
+00:15:13,491 --> 00:15:39,192
+İlk zamanlar şöyle bir ne olduğu belli olmayan bir şey oldu. Daha sonra bir dizilim şey yaptı, bir patern, bir fonksiyona ulaştı. Bu bizim n0 noktamız. Bu n0 noktasından büyük değerler için algoritmamızı en sade bir şekilde üst sınırını ifade eden notasyon, ya olmadı bile açız edelim.
+
+65
+00:15:57,268 --> 00:16:05,268
+Şöyle bir şey olsun. Temas etmesi de gerekmiyor ama belli bir noktadan sonra aslında şeye temas ettirmek iyi olurdu. N0'a.
+
+66
+00:16:09,716 --> 00:16:10,496
+Şöyle bir şey olsun.
+
+67
+00:16:11,456 --> 00:16:24,796
+İşte C çarpı Gn şeklinde yazılan bu ikinci fonksiyonumuza Big-O bu şartı sağlıyorsa Big-O Gn diyeceğiz.
+
+68
+00:16:25,496 --> 00:16:29,155
+Peki burada şu N sıfırı ne için yazmış olabiliriz?
+
+69
+00:16:31,395 --> 00:16:32,875
+Niye böyle bir şey var?
+
+70
+00:16:52,244 --> 00:17:01,264
+Şartı sağlayan n sayısı. Şartı sağlayan n sayısı derken, n bizim eleman sayımız. Yani n bütün değerleri sağlaması gerekiyor bir kere burada.
+
+71
+00:17:03,884 --> 00:17:12,724
+Hocam şeyden dolayı olabilir mi? Belli bir, yani fonksiyonun düzgün bir hal alması için belli bir şey.
+
+72
+00:17:12,724 --> 00:17:18,344
+Evet. Yani bir anlamda converginess dediğimiz, bir şekilde dediğim doğru.
+
+73
+00:17:19,059 --> 00:17:32,099
+Bazı algoritmalar vardı ki N'in küçük değerleri için çok böyle analiz etmeye gerek yoktur ve GN belki GN'den daha iyi davranış gösterebilir veya çok gerekli değildir.
+
+74
+00:17:32,719 --> 00:17:39,759
+Belli bir N noktasından sonra N'in sonsuza giden değerleri için bunun davranışı bizim adımıza önemli.
+
+75
+00:17:42,963 --> 00:18:05,103
+n-kare algoritma arasında bir kıyaslama yapacaksak, n'in ilk değerleri küçük değerler içindeydi. Belli bir n-sıfır noktasından sonra o değişimi izlemek daha doğru. Mesela n-küp ve n-kare diyelim. n-küp de n eşittir bir için birdir, n-kare de n eşittir bir için birdir. Onun için bir elemanlı bir şeyde n-küp ve n-kareyi karşılaştırmanın bir mantığı pek olmaz.
+
+76
+00:18:05,584 --> 00:18:11,044
+Ama baktığınız zaman işte iki ve daha sonrası orada N0 bir dönüm noktası oluyor gibi.
+
+77
+00:18:11,624 --> 00:18:14,443
+Senin söylediğinde üç aşağı başı yukarı bunu ifade ediyor. Teşekkür ederim.
+
+78
+00:18:15,144 --> 00:18:18,124
+Şimdi C, G, N gibi bir durumu sağlayacak.
+
+79
+00:18:18,124 --> 00:18:25,124
+O zaman biz bu eşitliği, şu eşitsizliği ifade eden bir N0...
+
+80
+00:18:25,215 --> 00:18:31,655
+ve C değeri gösterebiliyorsak, bir şahit witness dediğimiz şeyi gösterebiliyorsak, bir tane değer bulabiliyorsak,
+
+81
+00:18:32,315 --> 00:18:37,695
+diyeceğiz ki bu Big-O, G-N'dir. Yani bu bize asimptotik olarak upper bandımızı verebilecek.
+
+82
+00:18:38,575 --> 00:18:50,215
+Bu upper band bir anlamda nedir? Bizim algoritmamızın olabilecek en kötü karmaşıklığı, yani olsa olsa bu kadar olur diyebileceğimiz
+
+83
+00:18:50,804 --> 00:19:16,524
+bir karmaşıklığı ifade ediyor. Bundan daha fazlası olamıyor çünkü arkadaşlar. Bundan daha fazlası olamıyor derken, bunu Big-O notasyonu ile gösterirken daha büyük dereceli GN fonksiyonları kullanarak yapabilir miyiz? Yapabiliriz. Ama o da biraz mütevazi davranmak gibi oluyor. Yani bu şeye yakın, bilinen en yakın fonksiyonlar neyse onlardık onları kullanmak en iyisi. Yani bu
+
+84
+00:19:16,915 --> 00:19:34,076
+n kareli bir şeyse biz onu Big-O n kare olarak ifade etmemiz yeterli. Big-O n küp olarak ifade etmemize gerek yok. O zaman algoritmamızın üst limitini n küpmüş gibi göstermiş oluruz. Matematiksel açıdan doğru, mantıksal açıdan pek doğru değildi. Onu söylemiştik.
+
+85
+00:19:35,596 --> 00:19:39,875
+Şimdi bununla alakalı soru mu var?
+
+86
+00:19:42,228 --> 00:19:47,988
+Bir, şöyle bir örnek yapalım. Herhalde bunun tanımı anlaşılmıştır.
+
+87
+00:19:50,468 --> 00:19:51,668
+Şöyle yapayım.
+
+88
+00:19:54,407 --> 00:19:57,807
+Mesela fn eşittir.
+
+89
+00:19:59,268 --> 00:20:00,927
+n kare artı n.
+
+90
+00:20:02,008 --> 00:20:05,608
+Fonksiyonumuz verilmiş. Pardon, n kare artı n değil, bu diğer örnekti.
+
+91
+00:20:07,088 --> 00:20:08,168
+10n artı 30.
+
+92
+00:20:10,259 --> 00:20:31,539
+Bu fonksiyon acaba Big-O, n ile gösterilebilir mi? Şimdi size böyle bir soru verilirse, quiz'de de verilebilir. Bunu tanımdan yola çıkarak yapın denmişse, o zaman şuradaki tanımı işletmek gerekiyor. Veya şöyle bir şey olabilir, 10n artı 30.
+
+93
+00:20:32,660 --> 00:20:40,480
+Şuraya elemanıdır veya elemanı değildir. İkisinden birini yazın. Karşısına da bunu verdik.
+
+94
+00:20:42,324 --> 00:20:45,463
+Şu kısmı sorabiliriz veya bu kısmı sorabiliriz.
+
+95
+00:20:45,564 --> 00:20:48,903
+Yani bunu verdik, bunu verdik, elemanıdır veya elemanı değildir.
+
+96
+00:20:49,024 --> 00:20:54,403
+Bu tanımdan yola çıkarak işte bu nedir? Big-O, onendir diyebilirsiniz.
+
+97
+00:20:55,284 --> 00:20:58,344
+Veya elemanı olmayan bir şeyse elemanı değildir'ı seçebilirsiniz.
+
+98
+00:20:58,963 --> 00:21:03,403
+Veya onend artı otuz elemanıdır Big-O, n veya Big-O, n.
+
+99
+00:21:03,403 --> 00:21:09,443
+İşte bunu sorabiliriz. Bunları şu tanımdan yola çıkarak çok rahat elde etmek mümkündür.
+
+100
+00:21:09,811 --> 00:21:20,531
+Bakalım, tanımdan yola çıkarak, acaba bu eşittir diyebilecek miyiz, elemanıdır diyebilecek miyiz veya elemanı değildir diyecek miyiz, onu kontrol etmemiz gerekiyor.
+
+101
+00:21:20,931 --> 00:21:29,331
+Şimdi tanım bize diyor ki, 10n artı 30, küçüktür, eşittir, c çarpı gn olacak.
+
+102
+00:21:30,031 --> 00:21:35,071
+Yani burada gn yerine direkt yazıvereyim, n dediğim şey, farintez içerisindeki n şeyi.
+
+103
+00:21:36,756 --> 00:21:43,756
+Bu eşitsizliği sözen bizim bir C ve N0 gibi bir değer bulmamız gerekiyor.
+
+104
+00:21:43,756 --> 00:21:48,756
+Mesela N0'a 1 verirsek ne oluyor?
+
+105
+00:21:48,756 --> 00:21:53,756
+30 eşittir, pardon 40 eşittir.
+
+106
+00:21:55,756 --> 00:21:58,756
+Şuradan eşittir diyorum.
+
+107
+00:21:58,996 --> 00:22:07,036
+C, C gibi bir şeye ihtiyacımız var. C'yi de buradan 40 verebiliriz. Doğrudan bir deneme yanılma yöntemine.
+
+108
+00:22:07,816 --> 00:22:17,736
+Ve bu 1 ve 40 değerleri için, bu eşitsizlik doğru olacağı için, mesela bir tane değer sağ olun. O nedenle biz bunu O üzeri ON diyebiliyoruz.
+
+109
+00:22:18,736 --> 00:22:25,476
+Veya bunu biraz daha eşitsizlik çözme mantığıyla yapalım dersek, 10 N'i karşıya atarsak ne olur?
+
+110
+00:22:26,708 --> 00:22:43,988
+Şuradan gidelim. Küçüktür, eşittir. N parantezinde c-10 olacaktır. Buradan yola çıkarak mesela bir n'e bir değer ve c'ye bir başka değer verdiğimizde, mesela n'e 2 verirsek buradan kaç gelmesi lazım?
+
+111
+00:22:46,036 --> 00:22:52,655
+Yani önemli de değil ne oldu? İşte 10 versek mesela ne olacak? Burası 0 olacak. 11 versek 11.
+
+112
+00:22:53,276 --> 00:22:56,256
+Enin değerine de işte 30 gibi bir değer veririz. Yine sağlar.
+
+113
+00:22:56,896 --> 00:23:01,376
+Dolayısıyla her şartta dikkat ederseniz şu C sabit.
+
+114
+00:23:02,963 --> 00:23:26,283
+Şuradan çıkarmak daha kolay. Sabitten bir şey çıkarınca yine bir sabit oluyor. Sabit olan bir şeyi değişken bir şeyi de çarpıyorum. O zaman burası değişken bir şey olacak. Çünkü n dediğimiz eleman sayısı artıp giden bir şey. Karşı taraf da sabit. Şimdi 30'dan burası sürekli, yani bu sabitin karşısında burası sürekli artacaktır ve bu eşitsizlik doğru olacaktır. Dolayısıyla bizim burada
+
+115
+00:23:27,251 --> 00:23:42,172
+Bu ifadeye, yani 10N artı 30, şöyle diyelim, hatta şöyle yazmak daha doğru, therefore, 10N artı 30 elemanıdır, Big-O, N diyeceğiz arkadaşlar.
+
+116
+00:23:42,672 --> 00:23:44,031
+Burada anlaşılmayan bir şey var mı?
+
+117
+00:23:48,243 --> 00:23:52,003
+Eğer ispatını yapın dersek böyle bir çözüm bekliyorum.
+
+118
+00:23:52,723 --> 00:23:57,884
+Hocam, bu C ile alakalı herhangi bir kural var mı? Yani tam sayı, rasyon sayı vs.
+
+119
+00:23:58,023 --> 00:24:01,583
+Tabii tabii, bunların hepsi tam sayı. Yani C'ye de tam sayı olacak, N0 da tam.
+
+120
+00:24:01,663 --> 00:24:08,463
+Çünkü N0 dediğimiz şey bir eleman, dizideki eleman sayısı veya ne bileyim, graftaki eleman sayısı, köşe sayısı gibi düşüneceğiz.
+
+121
+00:24:09,063 --> 00:24:15,643
+Bunların hepsi sabit bir sayı. C ve N0 integer.
+
+122
+00:24:20,115 --> 00:24:21,315
+Var mı başka sorumuz?
+
+123
+00:24:23,355 --> 00:24:33,036
+Bir tane sağlayan bulmamız yeterli ama o bir tane sağlayan şu, yani eşitsizliği çözerken dikkat etmek gerekiyor.
+
+124
+00:24:33,036 --> 00:24:40,036
+Mesela burada eşitsizlik yerine, enin yerine...
+
+125
+00:24:40,319 --> 00:24:45,900
+Bütün n değerleri için, yani şurada n'in bütün sıfırdan büyük olan değerleri için diyeceğiz.
+
+126
+00:24:46,719 --> 00:24:49,199
+Mesela biz burada c'nin yerine 1 verdik.
+
+127
+00:24:50,599 --> 00:24:53,099
+Burası 1n oldu, burası 10n artı 30.
+
+128
+00:24:53,679 --> 00:24:55,839
+Şimdi n'in bütün değerleri için bu sağlamaz.
+
+129
+00:24:57,519 --> 00:24:58,059
+Şöyle diyelim.
+
+130
+00:24:59,500 --> 00:25:01,239
+c'ye 1 verdiğimizde n oldu.
+
+131
+00:25:02,839 --> 00:25:04,639
+Bu n'in bütün değerleri için sağlamıyor.
+
+132
+00:25:04,639 --> 00:25:05,639
+Ancak n'in...
+
+133
+00:25:05,695 --> 00:25:31,655
+Belli bir noktadaki değerleri için sağlıyor. Bir tane C bulacaksınız, bir de buna uygun, sabit bir değer. Şimdi bu C değeri mesela en eşittir hiçbir değer için sağlamıyor. Çünkü 10N daima 10N artı 30 şundan büyüktür. Dolayısıyla bu eşitsizlik sağlamaz. Dolayısıyla bu C ve N ikilisi uygun değil. Başka bir C ve N ikilisi bulmak gerekiyor.
+
+134
+00:25:32,084 --> 00:25:55,344
+Buna dikkat edelim. Genelde hatalar buradan yapılıyor. Yani n'in yerine 2 verdik. Ne oldu? 10n artı 30, 2n. Şimdi bunun üzerinden acaba bulabilir miyiz? Olmadı başka türlü. Bunun daha kolay yolu var. C'nin kısa yoldan bulunması için onu da söyleyeyim. Sonuçta rastgele bir değer vermemiz gerekir dedi ki 10n artı 30.
+
+135
+00:25:56,084 --> 00:26:03,744
+Küçük eşittir, C, N olacaksa, o zaman ben şunu da N gibi düşünürsem, 10N, 30N de buradan 40N gibi olur.
+
+136
+00:26:03,964 --> 00:26:13,244
+Yani şunu ayrıca ekledik. 40N, küçük eşittir, C, N. O zaman ben şu C'ye en az 40 dersem, N'e de en az 1 dersem, bakın böyle bir şey sağlamış oluyor.
+
+137
+00:26:14,684 --> 00:26:19,124
+Buradan da yola çıkarak, hani eşitliğin, bu ikiliyi bulmak gerekiyor.
+
+138
+00:26:22,644 --> 00:26:29,864
+Bu eşitsizlik doğru oluyor ve Big-O, End diyebiliyorum. Şimdi biraz daha oturmuştur diye tahmin ediyorum.
+
+139
+00:26:34,204 --> 00:26:36,044
+Evet, ikinci bir örnek yapalım.
+
+140
+00:26:39,796 --> 00:26:43,156
+Bir de bu tarz örnekleri kendinizle araştırın.
+
+141
+00:26:43,336 --> 00:26:51,696
+Yaparken mesela 10n artı 30, acaba Big-O bundan bir alt seviyede bir fonksiyon olabilir mi?
+
+142
+00:26:51,776 --> 00:26:52,896
+Mesela O1 olur mu?
+
+143
+00:26:53,916 --> 00:26:55,656
+O1'in olmayacağı zaten açık da.
+
+144
+00:26:56,396 --> 00:26:58,436
+Veya ne olur mu? O log n olur mu?
+
+145
+00:26:59,096 --> 00:27:00,636
+Mesela buna bir bakın.
+
+146
+00:27:02,856 --> 00:27:05,216
+Yani ne diyeceğiz? C'ye çarpı log n diyeceğiz.
+
+147
+00:27:06,387 --> 00:27:10,048
+Şimdi logaritma n ile buraya bir c sayısı bulabilir miyim?
+
+148
+00:27:10,427 --> 00:27:15,307
+Bu fonksiyon, biliyorum ki şundan onen'den daima yavaş büyüyor.
+
+149
+00:27:15,407 --> 00:27:20,927
+O zaman hiçbir şekilde hiçbir sabit sayı bunu bundan daha hızlı büyür gösteremez.
+
+150
+00:27:21,427 --> 00:27:23,627
+Çünkü logonin kendisi zaten yavaş büyüyor.
+
+151
+00:27:23,968 --> 00:27:27,347
+O zaman burada hiçbir zaman Big-O log n diyemeyiz onen için.
+
+152
+00:27:27,728 --> 00:27:32,087
+Bu tarz aksine bazı örnekler de yaparsanız anlaşılması daha kolay olur.
+
+153
+00:27:34,291 --> 00:27:51,011
+2N artı 1, acaba Big-O n kare midir? Bakalım. Yazdığımız an, yazı anlaşılıyor değil mi arkadaşlar? Biraz benim grafik tablet problemli ama anlaşılmayan bir şey varsa söyleyin tekrar temizden yazarız.
+
+154
+00:27:52,471 --> 00:27:59,551
+n kare artı 2N artı 1 küçüktür, eşittir. C çarpı n kare şartını sağlayan bir.
+
+155
+00:28:00,115 --> 00:28:05,836
+Yani C'miz burada sıfır, N sıfırımız burada sıfırdan büyük olmak zorunda.
+
+156
+00:28:06,696 --> 00:28:14,896
+Mesela yine burada N sıfır yerine, N sıfır dediğim yani N yerine bir verirsem ne oluyor?
+
+157
+00:28:15,716 --> 00:28:20,875
+1 artı 2 artı 1 küçüktür eşittir, C çarpı birin karesi 1.
+
+158
+00:28:20,875 --> 00:28:26,696
+Ve buradan da ben C'ye 4 verebilirsem,
+
+159
+00:28:27,028 --> 00:28:39,468
+En az, mesela burası 4'tü. C'ye 4 verdiğinde 1 ve 4 ikilisi bulabildik. Mesela n'e 2 verdiğimde de ne olacak? 2'nin karesi?
+
+160
+00:28:41,468 --> 00:28:49,828
+4 artı 4 artı 1 küçüktür. Ne oluyor? 2, 8, 9.
+
+161
+00:28:50,336 --> 00:28:53,836
+Mesela burada 4 verince olmuyor, buna en az 5 verebilirim.
+
+162
+00:28:53,836 --> 00:28:56,836
+Ama en az bir tane şunu bulmuş olmam,
+
+163
+00:29:00,136 --> 00:29:08,336
+bütün n değerleri için 4n²'nin, şuradaki c eşittir 4 için baktığımızda 4n²,
+
+164
+00:29:09,836 --> 00:29:13,836
+her zaman için şuradaki fonksiyondan daha büyük veya eşit.
+
+165
+00:29:13,836 --> 00:29:15,836
+Aslında burada eşit gibi.
+
+166
+00:29:16,276 --> 00:29:20,855
+Çünkü burada n kareli bir şey var, burada 4n kareli bir şey var.
+
+167
+00:29:21,036 --> 00:29:25,316
+4n kareli olan şey her zaman bundan daha fazla değere ulaşacaktır.
+
+168
+00:29:25,875 --> 00:29:31,816
+Yandaki 2n artı 1'in de 4n kare karşısında çok fazla bir hız yaklaşma imkanı yoktur.
+
+169
+00:29:32,236 --> 00:29:35,756
+Onun için bundan yola çıkarak bu bizim için yeterlidir diyeceğiz.
+
+170
+00:29:37,896 --> 00:29:40,855
+Peki, bir de şöyle farklı bir örnek yapalım.
+
+171
+00:29:42,483 --> 00:29:45,083
+Ondan sonra diğer notasyona geçeceğim.
+
+172
+00:29:47,183 --> 00:29:48,583
+Fn eşittir.
+
+173
+00:29:49,743 --> 00:29:50,743
+N kare artı n.
+
+174
+00:29:52,003 --> 00:29:55,963
+Acaba Big-O n küp olur mu?
+
+175
+00:29:57,903 --> 00:30:02,523
+Bir de acaba Big-O n olur mu?
+
+176
+00:30:03,803 --> 00:30:09,343
+Eğer ispat edin dersek yine aynı şekilde bu ispat yönteminden yola çıkarak bunu yapmamız gerekiyor.
+
+177
+00:30:14,195 --> 00:30:41,275
+A artı N, küçüktür, eşittir, C şarpı N küp. Benim bir tane buradan ne bulmam lazım? C ve C değeri bulmam lazım. Şimdi bir verdiğimde bile, yani bir verirsem, N'in yerine de bir verirsem ne olur? Burası bir, burası bir, iki. Burası mesela C'ye bir verdiğimde, N sıfıra bir verdiğimde oluyor mu? Olmuyor.
+
+178
+00:30:42,036 --> 00:31:08,355
+Burası çünkü 1 oldu, burası 2 oldu. O zaman böyle bir şey olamadı. Ama C'ye 2 verdiğimizde, 2'nin karesi artı 2, 6, N0'a da 1 verdiğimizde, mesela N0'a 1 verdiğimizde oluyor mu? 6 burada, şöyle diyelim, 6, 3 eşittir, 2.
+
+179
+00:31:09,203 --> 00:31:21,683
+Pardon, evet 2, bu da olmadı. O zaman şöyle bir şey düşüneceğiz. Şurayı n küp gibi düşünürsek, şunu da n küp gibi düşünürsek, buradan 2 n küp gibi bir değer geliyor arkadaşlar.
+
+180
+00:31:22,023 --> 00:31:23,523
+Yo aslında 2, 2 olur ya.
+
+181
+00:31:25,344 --> 00:31:27,003
+Hocam siz, n sıfara.
+
+182
+00:31:28,443 --> 00:31:29,743
+Bir dakika arkadaş, şöyle.
+
+183
+00:31:32,051 --> 00:31:49,867
+C'ye 2 verdiğimizde, n'in bir değeri değil de, n'in daha büyük değerlerini verelim. Mesela 5 verelim. 5 verdiğimde 5'in kalitesi 25, 5 de bundan 30. Burada 125, ne oldu? 250. Daima büyük çıktı. Mesela 4 verdiğimizde, 4'ün küpü...
+
+184
+00:31:49,907 --> 00:32:14,207
+işte 16-64 neyse, 4'ün karesi artı 4, 20. Yani buradan da çıkıyor. Ve n'in bütün değerleri için, hatta c'ye 1 verdiğimizde, n'in büyük değerlerine baktığımızda, 3 verdiğimizde, 3'ün karesi 9, 12, 3'ün küpü 27. Yani c'nin de bütün değerleri için böyle bir şey sağlıyor. Dolayısıyla biz, zaten mantıken de bunu söyleyebiliriz.
+
+185
+00:32:14,579 --> 00:32:19,039
+n² artı n gibi bir fonksiyon, Big-O n³ olur.
+
+186
+00:32:21,099 --> 00:32:26,859
+Böyle bir, en azından şu ikili bile bunu söylememize, ispat etmemize yeterli şeylerdir.
+
+187
+00:32:28,339 --> 00:32:31,180
+Şimdi geldik bu kısma, şuna gelelim.
+
+188
+00:32:32,839 --> 00:32:39,299
+Aynı şekilde diyeceğiz ki n² artı n küçüktür, eşittir, c çarpı n olacak.
+
+189
+00:32:39,440 --> 00:32:40,700
+Böyle bir n sıfır bulacağız.
+
+190
+00:32:41,268 --> 00:32:52,468
+Şimdi n'in yerine 1 versek, ne olur burası? C'ye öyle bir değer vermemiz gerekiyor ki eşitliği sağlayacak.
+
+191
+00:32:53,067 --> 00:32:56,947
+n'in yerine 1 verdiğimizde, tabii bir de bütün n değerleri için sağlayacak.
+
+192
+00:32:57,788 --> 00:33:00,468
+1 artı 1, 2, şurası 1.
+
+193
+00:33:01,044 --> 00:33:21,243
+Yani burası C'nin 2 olması demektir. Ama N'in diğer değerleri için böyle bir şey sağlamıyor. Yani bu şu an için sağlıyormuş gibi görünüyor. Artan N değerleri için sağlamıyor. Bunun daha kolay yolu eşitsizlik çözme yoluyla yapılabilir. N kare küçüktür eşittir. C N eksi N diyelim. Bunu karşıya atalım.
+
+194
+00:33:28,660 --> 00:33:44,720
+n-1 gelecek. Şimdi n'lerimiz daima pozitif olduğu için, pardon n-1 değil, c-1. n'lerimiz daima pozitif olduğu için ben bunları sadeleştirirsem, şurada c-1 gibi bir şey kalıyor, burada n gibi bir şey kalıyor.
+
+195
+00:33:45,580 --> 00:33:50,440
+Sürekli artan bir şey hiçbir zaman sabit bir şeyden küçük olamaz. Bakın burada bir çelişki var.
+
+196
+00:33:50,932 --> 00:33:57,051
+Dolayısıyla, hiçbir zaman böyle bir şey gösteremeyeceğiz diyeceğiz ve bu mümkün olmayacak.
+
+197
+00:33:57,152 --> 00:34:01,112
+Yani buraya bir şey yazmak gerekirse elemanı değildir dememiz lazım.
+
+198
+00:34:01,692 --> 00:34:03,692
+Şuna elemanıdır diyebiliriz artık.
+
+199
+00:34:05,892 --> 00:34:10,192
+Değer vererek, tabii biraz şey ilk başta varmış gibi görünüyor.
+
+200
+00:34:10,192 --> 00:34:13,271
+Mesela n eşittir 1 verdiğimizde, c'ye de 2 verdiğimizde.
+
+201
+00:34:14,003 --> 00:34:35,043
+uygunmuş gibi görünüyor. Ama N'in diğer değerleri için bu C'ye sağlayacak mı, sağlamayacak mı? Buna bakalım. Mesela N'e 2 verdiğimizde, burada C'ye eşittir 2 iken N'e 2 sağlamadı. N'e 3 verdiğimizde sağlamadı. İşte bu sağlamı sağladığı durumla sağlamadığı durum arasındaki fark da şu. Şurada göstermiş oldum. [öğrenci]'un da biraz önce söylediği şu aradaki.
+
+202
+00:34:35,987 --> 00:34:48,447
+algoritmanın o ilk küçük değerler için belirsiz demeyen de kurallara uymayan durumu. Ama bize N'in sonsuza giden değerleri için bu asimptotik notasyon lazım olduğundan bunu kullanmamız yeterli.
+
+203
+00:34:49,967 --> 00:34:52,527
+Evet, var mı burada bir soru arkadaşlar?
+
+204
+00:34:59,923 --> 00:35:01,083
+Şöyle çete bakalım.
+
+205
+00:35:05,652 --> 00:35:08,092
+Geliyorum Big Omega Notation'a.
+
+206
+00:35:14,996 --> 00:35:31,876
+Bu Lower Bound diye ifade edilen bir notasyon, sizin algoritmanızın en iyi ihtimalle bu şekilde, bu fonksiyonla gösterileceğini, ifade edileceğini söylüyor.
+
+207
+00:35:31,876 --> 00:35:39,936
+En iyi. Mesela, arama algoritması yaparken sıralı bir dizide arama yapıyoruz. Bunun Lower Bound'ı ne olur?
+
+208
+00:35:46,739 --> 00:35:47,760
+Biri olmaz mı hocam?
+
+209
+00:35:48,279 --> 00:35:56,739
+Evet, en iyi ihtimalle bir defada budur. O zaman bunun asimptotik notasyonla gösterirken mesela bunu kullanabiliriz.
+
+210
+00:35:57,420 --> 00:36:01,939
+Veya Insertion Sort'la veya Selection Sort'la sıralama yapacağız.
+
+211
+00:36:03,300 --> 00:36:07,599
+Veya Bubble Sort'la. Gerçi Bubble Sort'u geçen hafta konuşmuştuk, ondan girebiliriz.
+
+212
+00:36:08,119 --> 00:36:11,699
+Bubble Sort'la sıralama yaparken en iyi ihtimalimiz nedir?
+
+213
+00:36:13,300 --> 00:36:14,380
+en iyi durumumuz.
+
+214
+00:36:15,340 --> 00:36:16,360
+Bubble Sort'u hatırlayın.
+
+215
+00:36:21,940 --> 00:36:45,699
+n olabilir mi? Olabilir. Neden olmasın? Ne yapıyorduk BubbleSort'ta? Elemanları işte 1 ile 2'yi, 2 ile 3'ü, 3 ile 4'ü, 4 ile 5'i, n-1. elemanla n. elemanı kontrol ediyorduk değil mi? Şimdi bu kontrol sırasında eğer küçükten büyüğe veya büyükten küçüğe nasıl sıralıyorsak, kurala uymayan bir durum varsa swap yapıyorduk. Şimdi bu swap sonucunda
+
+216
+00:36:47,668 --> 00:37:08,528
+Swap yapmak için önce bir kontrol yapmak lazım. Bir tur boyunca yaptığımız bütün kontrollerde eğer hiç swap yapacak bir durum yoksa dizi zaten sıralı demektir. Ama ben en azından bir tur diziyi gezmem gerekiyor başından sonuna kadar. O zaman bakın ne oluyor? En az, en defa bu kontrol işlemini, basic operasyonu yapmamız lazım.
+
+217
+00:37:08,528 --> 00:37:14,768
+Ve buradan yola çıkarak diyoruz ki en iyi durumu mesela N'dir. Ve bunun lower bandı N oluyor işte.
+
+218
+00:37:15,476 --> 00:37:19,496
+Şimdi şöyle yapalım. Önce grafik çizelim, ondan sonra tanımı vereyim.
+
+219
+00:37:21,655 --> 00:37:34,856
+Bir n ve tn arasında bir şey var. Şöyle yine buralarda belirsiz bir davranış gösteren bir fonksiyon olsun. Şurası o kadar değil de. Şöyle diyelim.
+
+220
+00:37:39,603 --> 00:37:51,323
+Önemli olmayan ama N0 noktasından sonra bizim algoritmamızı alt taraftan, yani fonksiyonumuzun altından ifade eden fonksiyonu arayacağız aslında biz.
+
+221
+00:37:51,463 --> 00:37:58,783
+Bir başka fonksiyon, N0 noktası. Bu bizim Fn'imiz. Belli bir C çarpı Gn olacak.
+
+222
+00:37:59,083 --> 00:38:07,003
+Aslında bu Gn belki daha aşağıda ama ben onu C ile çarpacağım ve bu algoritmamın alt sınırını gösterecek.
+
+223
+00:38:07,411 --> 00:38:33,871
+Lower-Bank dedik. Kuralımız da şu şekilde arkadaşlar. Aslında Big-O'nun tam tersi. Fn büyüktür, eşittir. C çarpı gn şartını sağlıyorsa bir c büyüktür sıfır integer için, n sıfır büyüktür sıfır için ve for all bütün n büyük sıfır değerler için, bütün değerlerimiz için sağlayacak.
+
+224
+00:38:34,291 --> 00:38:37,211
+N0'dan, N0'mız da büyük olacak.
+
+225
+00:38:38,091 --> 00:38:38,851
+Örnek olarak,
+
+226
+00:38:41,211 --> 00:38:42,351
+5N kare,
+
+227
+00:38:44,311 --> 00:38:45,632
+acaba elemanı mıdır?
+
+228
+00:38:47,771 --> 00:38:51,152
+Big Omega N karenin dersek,
+
+229
+00:38:52,072 --> 00:38:53,331
+tanımı çalıştırdığımızda,
+
+230
+00:38:53,551 --> 00:38:55,992
+5N kare büyüktür, eşittir,
+
+231
+00:38:56,211 --> 00:38:57,992
+C çarpı N kare diyeceğiz.
+
+232
+00:38:58,572 --> 00:39:00,051
+Çünkü G n'imiz N kare.
+
+233
+00:39:00,755 --> 00:39:15,416
+Buradan mesela şunu yapabiliriz, hani biraz daha eşitsizlik çözelim diye düşünürsek, 5n²- hatta direkt ortak parantez alalım, 5-cn² büyüktür, eşittir, sıfır olacak.
+
+234
+00:39:16,376 --> 00:39:23,935
+Buradan n'in yerine 1 verdiğimde, c'ye de 1 verebilir miyim? Verebiliyorum.
+
+235
+00:39:24,851 --> 00:39:30,851
+Ne oluyor? CH1'ye verdim de n'in yerine bir verimde. 4 büyüktür eşittir, 0 oluyor. Ve sağladım.
+
+236
+00:39:30,851 --> 00:39:35,851
+n'in yerine 2 verirsek, 2'nin karesi işte 4.
+
+237
+00:39:36,083 --> 00:40:00,000
+C'nin yerine yine bir verdik, 16. N'in artan bütün değerleri için, şu içerideki de yani bir içeriği negatif yapmayacak şekilde, 1, 2, 3, 4 gibi bir değer, bir tane bulabildik mesela bakın. Ama mesela negatif yapan bir durumda olsaydık, o zaman olmazdı. Yani burada bir sıkıntı var derdik. Ne oluyor? Bütün değerler olabiliyor. C ve N değerleri. C 1 olur, 2 olur, 3 olur.
+
+238
+00:40:00,000 --> 00:40:22,099
+5 olur, 4 olur, hatta 5 de olur, 0 olursa o da olur. Enin artan değerler için bu sol taraf daima büyük olacak. Büyük olduğu için diyoruz ki bunu biz söyleyebiliriz. Yani 5n² elemanıdır. Şey diyebiliriz. Big-O, Omega, n² diyebiliriz. Peki şunu diyebilir miyiz örnek olarak?
+
+239
+00:40:26,003 --> 00:40:32,563
+Acaba elemanı mıdır? Big-O, Omega n diyebilir miyiz? Buna ne dersiniz?
+
+240
+00:40:34,983 --> 00:40:38,523
+Tanımdan yola çıkarak direkt evet veya hayır diyebilirsiniz arkadaşlar.
+
+241
+00:40:40,523 --> 00:40:48,903
+Evet, zaten n kareyi alttan, alt sınırdan kapsayan bir fonksiyon.
+
+242
+00:40:49,663 --> 00:40:51,863
+N'i hayli hayli. Yani o da şu demektir.
+
+243
+00:40:53,108 --> 00:40:55,788
+Belki bunu hayli hayli sağlayacaktır.
+
+244
+00:40:56,488 --> 00:41:02,428
+İşte 5N kare, eğer ispat edelim dersek, C çarpı N diyeceğiz.
+
+245
+00:41:03,508 --> 00:41:11,408
+Yine aynı şekilde eşitsizlik çözebiliriz ama mesela direkt N sıfır yerine, efendim sorum var,
+
+246
+00:41:11,408 --> 00:41:19,628
+N sıfır yerine 1 verdiğimizde, C'yi de 5'ten küçük bir değer seçersek, mesela 3 seçelim,
+
+247
+00:41:22,036 --> 00:41:23,416
+Ne oluyor? Bu değer sağlanıyor.
+
+248
+00:41:24,655 --> 00:41:29,436
+Hatta bu daha böyle algoritmanın şeyini daha küçük göstermek.
+
+249
+00:41:29,516 --> 00:41:32,195
+Biraz öncekinde Big-O'da biraz mütevazi davranıyorduk.
+
+250
+00:41:32,996 --> 00:41:34,815
+Aslında burada da biraz kornaz davranıyoruz.
+
+251
+00:41:34,936 --> 00:41:36,496
+Algoritmanın en iyi hali budur.
+
+252
+00:41:37,155 --> 00:41:39,256
+Hani ben bir sıralama algoritması yaptım.
+
+253
+00:41:40,076 --> 00:41:45,176
+En iyi durumu işte O1 veya ON diyebiliyorsunuz.
+
+254
+00:41:46,164 --> 00:41:51,804
+en iyi durumu veya O1 diyelim, ON demeyelim de zaten en iyi durumu sıralamada ON'dir.
+
+255
+00:41:52,564 --> 00:41:56,404
+Halen sıralı bir dizi varsa elinizde, o şartı söyleyelim.
+
+256
+00:41:56,923 --> 00:42:00,503
+Evet, Big Omega bu şekilde arkadaşlar. Soru var mı burada?
+
+257
+00:42:04,659 --> 00:42:05,500
+Şimdi...
+
+258
+00:42:05,500 --> 00:42:07,439
+Aperbounds'lar neden en kötü durum oluyor?
+
+259
+00:42:08,899 --> 00:42:10,099
+Anlamadım sorunuzu.
+
+260
+00:42:10,579 --> 00:42:13,960
+Aperbounds neden en kötü durum senaryosunu oluyor da orasını almıyorum.
+
+261
+00:42:14,639 --> 00:42:19,960
+Yani şimdi sen sıralama yapıyorsun. Bunun en kareden daha şey olma ihtimali var mı? Yok.
+
+262
+00:42:21,179 --> 00:42:27,519
+En elemanlı bir dizi için. O zaman bunu göstermek adına en üst Aperbounds'unu söylemen lazım.
+
+263
+00:42:28,403 --> 00:42:38,724
+Yani o n kareli bir fonksiyonu, en az neyle, big-o, big-o veya başka bir fonksiyonu nasıl gösterirsin? n kareli gösterirsin. O zaman buna upper bound diyoruz.
+
+264
+00:42:41,443 --> 00:42:55,324
+Evet, big-theta, şimdi konuşacağımız. Little-Omega ve little-o çok farklı, küçük olduğu için onları üzerinde durmuyorum arkadaşlar.
+
+265
+00:42:57,844 --> 00:42:59,844
+Big Data
+
+266
+00:43:04,980 --> 00:43:08,440
+Bu da Tight Bound dediğimiz bir şey.
+
+267
+00:43:09,320 --> 00:43:10,680
+Şimdi bu nereden geliyor?
+
+268
+00:43:10,900 --> 00:43:12,840
+Şimdi bir algoritma tasarladınız.
+
+269
+00:43:13,159 --> 00:43:18,739
+Upper bound'ını, n karelik bir algoritma diyelim.
+
+270
+00:43:19,039 --> 00:43:23,079
+Upper bound'ını n küpte yazılabilir, en üzeri 4 de yazılabilir.
+
+271
+00:43:23,159 --> 00:43:24,239
+Tabi bu gereksiz bir yazım.
+
+272
+00:43:24,380 --> 00:43:25,880
+Yani n kare ise n kare demek lazım.
+
+273
+00:43:25,880 --> 00:43:26,880
+Ama...
+
+274
+00:43:27,795 --> 00:43:35,775
+n küp olan bir algoritma veya n kare diye Big-O ile ifade edilen bir algoritmana aklınıza şöyle soru gelebilir.
+
+275
+00:43:35,855 --> 00:43:41,495
+Ya bu Big-O'su n kare ise belki algoritma ondan daha düşük olabilir diyoruz değil mi?
+
+276
+00:43:41,615 --> 00:43:46,675
+Çünkü tanımından gereği Daim dedi ki n karelik bir şeye n küp diyebiliriz.
+
+277
+00:43:46,975 --> 00:43:49,655
+Yani ben n dediğim bir şey belki daha küçüktür.
+
+278
+00:43:50,016 --> 00:43:53,855
+Aynı şekilde lower bound'a baktığımızda lower bound da
+
+279
+00:43:54,324 --> 00:44:17,083
+olası en iyi durumu söylüyor. Yani şurada söylediğimiz Big Omega N karelik bir şeyi Big Omega N ile de ifade edebiliyoruz. İşte bu upper bound'ın daha yüksek tarafa gitmemesi, lower bound'ın daha aşağı seviyelere gitmemesini daha böyle kesin, sıkı bir şekilde ifade eden
+
+280
+00:44:17,684 --> 00:44:37,684
+asimptotik notasyonumuz Big-Theta notasyonu. İkisinin kesişimi aslında. Yani siz diyeceksiniz ki benim algoritma, bu algoritma Big-Omega n², Big-Theta n² ikisinin kesişimi. Yani Big-Omega n², Big-O n² ikisi de n² hem upper bound hem...
+
+281
+00:44:37,972 --> 00:44:41,831
+Low-bant'dan, yani sıkı bant'dan Big Theta n kare diyeceğiz.
+
+282
+00:44:42,432 --> 00:44:52,872
+Ve bu bize algoritmanın karmaşıklığı hakkında hem Big Omega'ya göre hem de Big O'ya göre daha kesin bir bilgi vermeyi sağlıyor, edinmeyi sağlıyor.
+
+283
+00:44:53,472 --> 00:45:00,872
+Şimdi birinci fonksiyonumuz şu olsun, buna C1 çarpı Gn diyeceğim.
+
+284
+00:45:02,872 --> 00:45:05,372
+Diğer fonksiyonumuz mesela şu olsun.
+
+285
+00:45:06,547 --> 00:45:09,167
+Buna da C2 çarpı GN diyelim.
+
+286
+00:45:10,407 --> 00:45:12,967
+Demek ki bir C1, C2 kat sayısı burada da bulacağız.
+
+287
+00:45:13,047 --> 00:45:15,047
+Şu da benim kendi algoritmam olsun.
+
+288
+00:45:17,767 --> 00:45:18,407
+FN.
+
+289
+00:45:19,887 --> 00:45:25,567
+Böyle bir GN fonksiyonu var ki, bunu C1 kat sayısıyla çarpınca ve C2 kat sayısıyla çarpınca,
+
+290
+00:45:26,447 --> 00:45:28,687
+belli bir N0 noktasından sonra,
+
+291
+00:45:29,887 --> 00:45:32,207
+en iyi şekilde algoritmayı bu ifade ediyor.
+
+292
+00:45:33,139 --> 00:45:37,659
+O zaman aslında biz Big Omega ile Big O'yu birleştiriyoruz.
+
+293
+00:45:37,940 --> 00:45:39,319
+Kural olarak da şöyle birleşiyor.
+
+294
+00:45:40,400 --> 00:45:44,539
+Yine sıfırdan büyük değerler için öyle bir C1 değeri bulacağız ki
+
+295
+00:45:44,539 --> 00:45:53,199
+C1 değeri ile Gn'i çarpınca Fn'den küçük olacak.
+
+296
+00:45:59,764 --> 00:46:16,964
+Pardon, Fn'den büyük olacak C1 ile. C2 ile Gn'i çarpınca ne olacak? Fn'den küçük olacak. Pardon, büyük olacak. Bu C1 küçüktür, eşittir, C2 gibi bir sayı için, tabii aynı zamanda sıfırdan büyük olacaklar.
+
+297
+00:46:25,972 --> 00:46:51,712
+Fn için diyeceğim şey, Fn, Big-Teta, Gn'dir diyeceğiz. Yani bunun bir anlamı da, Fn is asimptotik, equal to Gn. Yani burada n karelik bir algoritmaya n küp diyemiyoruz.
+
+298
+00:46:53,043 --> 00:47:15,783
+Theta n'de. Çünkü bunun Big O'su da n kare, Big Omega'sı da n kare. Dolayısıyla kendisi daha böyle sıkı bir bağında ifade ediyor. Ayrı ayrı bir şey ispat yapar gibi aslında. Hem Big O'yu hem Big Omega'yı ispat ediyoruz. Ama bu bize diyor ki yani bu üst sınırından ve alt sınırından bakılınca bir
+
+299
+00:47:16,275 --> 00:47:21,915
+değişmeyen, böyle bir yorum gerektirmeyen, daha sıkı bir aralığı ifade eden bir algoritma diyeceğiz.
+
+300
+00:47:22,615 --> 00:47:24,375
+Şimdi bir örnek yapalım, ondan sonra ara vereceğim.
+
+301
+00:47:26,415 --> 00:47:32,395
+Burada yapacağımız şey, iki taraftan hem Big-O'ya göre bir ispat, hem de Big-Teta'ya göre bir ispat yapmak.
+
+302
+00:47:32,995 --> 00:47:39,295
+Fn eşittir, 2n artı 5. Acaba elemanı mıdır? Big-Teta n.
+
+303
+00:47:39,596 --> 00:47:43,395
+O zaman önce bakacağımız şey, Big-O'ya göre bir şey bakmak.
+
+304
+00:47:44,019 --> 00:47:48,379
+FN önce niye kontrol edeceğiz?
+
+305
+00:47:48,379 --> 00:47:50,139
+Acaba şöyle diyelim.
+
+306
+00:47:52,139 --> 00:47:54,639
+Elemanı mıdır? Big-O, N.
+
+307
+00:47:55,579 --> 00:48:00,579
+Şimdi 2N artı 5, küçüktür eşittir, C1 çarpı N.
+
+308
+00:48:01,779 --> 00:48:04,379
+Buradan şu şekilde...
+
+309
+00:48:05,396 --> 00:48:30,956
+C1N'i iki N'e karşı atarsak veya direkt değer verelim, C1 eşittir 7, N0 eşittir 1 desek bu eşitsizliği sağlıyor. Şöyle diyebiliriz, C1-2N parantezinde ne olur? Küçüktür, büyüktür.
+
+310
+00:48:31,507 --> 00:48:37,567
+eşittir 5 olacak değil mi? Eşitsizliği şunu bu tarafa attık. N'de zaten pozitif sayılardı.
+
+311
+00:48:38,407 --> 00:48:49,387
+Şimdi buradan baktığımızda C1'e 7 versek, N1'e 1 versek 5 ve büyük. C1'in mesela N'in değerlerini arttıralım. N değerleri 2 olur, 3 olur, 4 olur, 5 olur.
+
+312
+00:48:49,387 --> 00:48:53,907
+Hep artıp gidiyor buradaki de sabit değerler. Arkadaşlar bir saniye.
+
+313
+00:50:45,619 --> 00:50:50,039
+Evet, devam edelim, bitirelim, öyle araya vereceğim arkadaşlar. Kusura bakmayın, bir bölümden aradılar.
+
+314
+00:50:52,539 --> 00:50:58,479
+Burada, verdiğimiz C değeri için bütün N0 değerleri sağlıyor mu? Sağlıyor.
+
+315
+00:50:58,479 --> 00:51:07,739
+O zaman diyeceğiz ki, bu doğrudur. Yani Fn, şu şartı sağladı. Big-O, N'dir.
+
+316
+00:51:08,359 --> 00:51:11,239
+Aynısını bir de Big-Omega için yapacağız.
+
+317
+00:51:13,876 --> 00:51:39,956
+C1 ve C2 kas sayıları, bakın burada birbirinden aynı olacak tipçok, hatta farklı olması olası daha yüksek. Big Omega n midir? Bunu soruyoruz. Burada da 2n artı 5, büyüktür, eşittir, C2n dedik. Şurada 2n'i karşıya atarsak 5 büyüktür, Cn parantezinde C2-2 diyelim.
+
+318
+00:51:41,728 --> 00:51:56,388
+durumda, N0 yerine mesela N'e 1 verdiğimizde, C2'ye de 4 verdiğimizde, bu ne olur? İşte burası 2, şuradaki N'in 1 değeri için sağlıyor. Böyle bir şey bulabildik mi? Bulabildik.
+
+319
+00:51:59,088 --> 00:52:04,748
+Bu şartı bulmuş olmamız bize bunu sağladı. Mesela C1'in de
+
+320
+00:52:05,204 --> 00:52:10,704
+C2'den büyük olduğunu burada yukarıdaki tanıma göre söyleyebiliyoruz.
+
+321
+00:52:11,364 --> 00:52:17,244
+Tabi buradaki C1 arkadaşlar şey şunlar, şurayı C1 diyelim, burayı C2 diyelim.
+
+322
+00:52:18,604 --> 00:52:23,003
+Şu C1 olacak, şurası C2 olacak.
+
+323
+00:52:26,043 --> 00:52:29,364
+Buradan itibaren de tabi şu C2, şu C1 olacak.
+
+324
+00:52:29,364 --> 00:52:31,364
+Aşağıdaki örnekte...
+
+325
+00:52:32,148 --> 00:52:37,368
+belki farklı. C1'in de C2'den büyük olduğunu gösteriyoruz. Bu da doğru.
+
+326
+00:52:43,635 --> 00:52:50,955
+ne dedik? Elemanıdır Big Omega N. Bu ikisinden yola çıkarak diyoruz ki
+
+327
+00:52:54,387 --> 00:53:18,288
+fn elemandır big data. Biz bunu birçok algoritmada, mesela sıralama algoritmasında en iyi durum, en kötü durum birazdan geleceğiz. Bazı algoritmalarda en iyi durum, en kötü durum ve ortalama durum hepsi birbirine eşit oluyor. Mesela birden n'e kadar olan sayıları toplamak. Burada herhangi bir if kullanıyor muyuz arkadaşlar?
+
+328
+00:53:19,092 --> 00:53:42,092
+Yok, direkt toplayıp gidiyoruz. Yani en defa bu işlem yapılacak. O zaman Big-Teta'yı doğrudan yazabileceğiz. Çünkü doğrudan o kendisi, o algoritmanın sonucu gereği herhangi bir if gibi, herhangi bir değişiklik yok. Doğrudan kullanabileceğiz. Burası anlaşıldı mı? Big-Teta. Şimdi ara verelim. Geldikten sonra...
+
+329
+00:53:43,092 --> 00:53:51,872
+Birkaç tane daha örnek bakarız. Ondan sonra dersimize devam ederiz. 52 geçiyor. 15.05'de görüşmek üzere.
+
+330
+01:05:31,476 --> 01:05:32,675
+Sesim geliyor mu arkadaşlar?
+
+331
+01:05:40,307 --> 01:05:41,307
+Duyuyor musunuz?
+
+332
+01:05:41,307 --> 01:05:42,307
+Gülüyoruz.
+
+333
+01:05:47,699 --> 01:06:04,179
+Şimdi kısaca bir de şu slide'daki farklı örneklere bakalım. İşte Big-O'nun definition'ından falan bahsetmiş. Kuralımız neydi? Big-O'da bir C sayısıyla Big-O içindeki fonksiyonu gösterip işte efendim daha küçük veya eşit olduğunu göstereceğiz.
+
+334
+01:06:04,179 --> 01:06:07,299
+Burada 2n artı 10 fonksiyonu için
+
+335
+01:06:07,860 --> 01:06:11,440
+Acaba Big-O, N olur mu? Bunu test etmeye çalışıyoruz.
+
+336
+01:06:11,560 --> 01:06:14,400
+Big-K, N artı 10, küçük eşittir C, N.
+
+337
+01:06:14,980 --> 01:06:17,620
+Yani bizim Big-K, N artı 10 dediğimiz şu yeşil olan.
+
+338
+01:06:18,068 --> 01:06:26,448
+n dediğimiz şey bu alttaki olan. Ben bunu bir c gibi bir sayıda çarpınca acaba bunu üstten kapsayacak mı? Bunu bulacağız.
+
+339
+01:06:27,488 --> 01:06:38,648
+2n artı 10 küçük eşittir cn dedi. İşte cn'i bu tarafa attı, diğerini bu tarafa attı. Buradan c eşittir 3 ve n sıfır eşittir 10 gibi bir değer buluyor.
+
+340
+01:06:43,219 --> 01:06:54,619
+C-sharp-and ne oluyor? Bizim fonksiyonumuzu üstten kapsıyor. Dolayısıyla bunu Big-go-and diyebiliriz. Özet olarak güzel bir örnek olmuş.
+
+341
+01:06:57,043 --> 01:07:02,083
+Bu fonksiyon n kare ise, bunu acaba Big-O n ile gösterebilir miyiz diye bakacağız.
+
+342
+01:07:02,503 --> 01:07:05,123
+Şimdi n kare dediğimiz fonksiyon şu yeşille gösterilen.
+
+343
+01:07:05,623 --> 01:07:08,523
+n dediğimiz fonksiyon da nisbi olarak burada çizilmiş.
+
+344
+01:07:09,204 --> 01:07:10,704
+Hemen hemen şurada çok yakın bir yer.
+
+345
+01:07:10,824 --> 01:07:13,483
+Çünkü n kareye baktığımızda n'in çok büyük değerleri için ne oluyor?
+
+346
+01:07:13,563 --> 01:07:14,643
+100 bin lira falan çıkıyor.
+
+347
+01:07:15,304 --> 01:07:18,523
+Ölçekli çizildiği için buradaki n fonksiyonu çok düşük kalıyor.
+
+348
+01:07:23,155 --> 01:07:40,195
+sayısını gösteremeyiz yani n olur. Tabi c'nin n gibi bir değer olmayacağını biliyoruz. c sabit. 100 de olsa, 1000 de olsa, 1 milyon de olsa, hiçbir zaman bir sabitle n'in çarpımı n kareden büyük olamayacak.
+
+349
+01:07:40,596 --> 01:07:48,915
+O zaman ne oluyor? n² en fazla, pardon cn dediğimiz şey en fazla şuralarda kalacak. Yani bir altta kalma durumu var. Onun için yazamıyoruz.
+
+350
+01:07:49,576 --> 01:08:03,135
+Burada başka örnekler de var. Bunlara bakabilirsiniz. Mesela 3n³ artı 20n² artı 5. Mesela böyle bir soru gelirse, polinomlu bir soru gelirse size kolay olarak c ve n değerleri seçmeniz için şunu tavsiye ederim.
+
+351
+01:08:03,135 --> 01:08:05,235
+Neydi bunun şartı şu.
+
+352
+01:08:08,179 --> 01:08:09,179
+yazamadık.
+
+353
+01:08:15,380 --> 01:08:20,840
+C çarpı, işte bunun ne cinsinden yazmaya çalışıyor? Muhtemelen n küp cinsinden yazmaya çalışıyor.
+
+354
+01:08:21,492 --> 01:08:28,912
+Çünkü bunun yazılabilecek en alt limiti, en üst dereceli polinoma bakarsak Big-O, n küptür.
+
+355
+01:08:29,391 --> 01:08:36,072
+Şimdi burada C'yi bulmak için bunu n küp olarak, şunu n küp olarak, bunu n küp olarak düşündüğümüzde 20 n küp, 5 n küp, 3 n küp.
+
+356
+01:08:36,711 --> 01:08:41,391
+Ne oluyor? N'in bütün değerleri için 25, 28 n küp gibi bir şeye ihtiyacım var.
+
+357
+01:08:43,636 --> 01:08:52,636
+ve n'in de bütün değerleri için, bu eşitlik sağlanacağı için, hatta 29 verirsiniz daha iyi sağlar. Böyle bir c'ye değeri buluyorsunuz. Dolayısıyla burayı o n küp verebiliyoruz.
+
+358
+01:08:52,636 --> 01:09:03,536
+Şimdi bazı sorularda da size şu gelecek arkadaşlar, tn'i, sonuçta biz bilmiyoruz, siz kendiniz algoritmamızda hesapladınız. En üzeri 4 artı 3 n küp gibi bir şey böyle gidiyor.
+
+359
+01:09:04,979 --> 01:09:12,579
+Hiç ispat etmeden yazın dersek, bir polinomsa, bunu konuştuk ve veri yapılarında, herisinde de bunun detaylarını anlatılıyor.
+
+360
+01:09:13,039 --> 01:09:17,319
+En yüksek dereceli terimi alıp direkt Big-O, en üzeri 4 demek yeterli.
+
+361
+01:09:18,019 --> 01:09:21,639
+Şimdi log n artı 5 diye bir şey var. Acaba bu ne demiş?
+
+362
+01:09:22,644 --> 01:09:46,363
+Bunun bir log n mi olup olmadığını ispat edelim diyor. Çünkü log n dediğimiz şey n'e bağlı, diğer sabitler ondan küçük kas sayılarda ihmal ediliyor. Ne oluyor? 3 log n artı 5 is big o log n demiş. Buradan baktığı zaman eşitliği şurada yerine koyduğunda ne oluyor? c'ye yerine 8 verirsem diyor, n0 yerine de 2 verirsem diyor.
+
+363
+01:09:47,060 --> 01:09:50,340
+Ne yapabilirim? Bu soruyu çözebilirim ve buna log-end diyebilirim.
+
+364
+01:09:50,420 --> 01:09:59,180
+Zaten içindeki şu sabit terimlerin ve başkas sayıların silinip kalan n'e bağlı değişkenlerin kullanılması lazım.
+
+365
+01:09:59,280 --> 01:10:05,220
+Burada maksat n'in artan değerleri için fonksiyonun büyümesine bakmak, growth'una bakmak.
+
+366
+01:10:06,020 --> 01:10:12,060
+Şimdi fn bir go gn ise şunu diyebiliriz.
+
+367
+01:10:13,268 --> 01:10:37,128
+Fn'in büyümesi, gn'in büyümesinden daha azdır. Yani daha fazla değildir diyeceğiz. O zaman Fn eşittir gn, fn is Big-O gn dediğimizde, burada gn'in daha hızlı büyüdüğünü söyleyeceğiz. Fn'in daha yavaş büyüdüğünü, daha hızlı büyüdüğünü söyleyemeyiz. Tamam mı?
+
+368
+01:10:38,131 --> 01:10:49,631
+Aynı şekilde büyüdüğünü söyleyebiliriz? Evet, söyleyebiliriz. Yani n² artı 3n gibi bir şey, o n² diyoruz. O zaman ikisi birbirine aynı şekilde büyüyebilir. Same growth'u söyleyebiliriz.
+
+369
+01:10:50,711 --> 01:11:04,251
+Ama her zaman, yani bu örnek, bazı örnekler o da mesela n, fn'e n² dedik. Şöyle diyelim, birisine n² dedik, birisine n³ dedik. O zaman şu üçüncü satır.
+
+370
+01:11:04,640 --> 01:11:29,059
+Doğrulmaz. Bu N kareyken, bu N küpken, bu satır doğru. Ama şu satır yanlış olur. Şimdi GN eşittir Big-O, Fn diyorsak, GN daha yavaş büyüyordur. Yani şu tam tersi, Fn daha hızlı büyüyordur. Eğer böyle bir tanım ortaya çıkmışsa. Veya ikisi birbirine yakın büyüyordur. Same growth'u vardır. Tabii fonksiyonların değerlerine de bakmak gerekiyor.
+
+371
+01:11:31,188 --> 01:11:34,907
+Kurallarını tekrar hatırlayalım. Dediğim gibi bunlar veri yapılarında da anlatılıyor arkadaşlar.
+
+372
+01:11:36,007 --> 01:11:39,987
+Lower order term dediğimiz düşük dereceli terimler iptal ediliyor.
+
+373
+01:11:39,987 --> 01:11:44,567
+Yani n kare artı n gibi bir şey varken sen orada n'in kontrol etmene gerek yok.
+
+374
+01:11:44,688 --> 01:11:51,528
+Zaten n kare yükü çeken şey. Bir de constant factor dediğimiz işte 2n kare, 5n kare gibi şeyden ne yapacağız?
+
+375
+01:11:52,307 --> 01:11:58,708
+Doğrudan 3'leri, 5'leri sileceğiz. Mesela 2n is bigo n midir?
+
+376
+01:11:59,412 --> 01:12:11,612
+Bunu söyleyebilir miyiz? Söyleyebiliriz. Ama iki en is, bir go, iki en demeye gerek yok. Çünkü zaten biz bunu en temel şeyler cinsinden yazacağız. Bu kural, şu ilk kural bununla alakalı örnektir.
+
+377
+01:12:11,612 --> 01:12:12,612
+Şimdi diyor ki...
+
+378
+01:12:13,300 --> 01:12:27,300
+Big-O'da possible olan, mümkün olan en kısa, en küçük sınıfları yazmamız gerekiyor. Yani iki-enlik bir algoritman varsa bunu O-enle söyleyeceğiz upper bound'unu. Kalkıp O-en kareyle de söyleyebilirsin ama...
+
+379
+01:12:27,551 --> 01:12:43,311
+mantıksal açıdan doğru olmaz. Bu baştan beri konuştuğumuz şey. Yine n-simple expression'ı söylememiz lazım. 3n artı 5 diye bir şey var. Tamam bu Big-O, n'dir. Kalkıp da bunu Big-O, 3n diye yazmaya gerek yok. O 3'ü de kat sayılarda kaldırıyoruz.
+
+380
+01:12:43,871 --> 01:12:49,871
+Eğer bir polinomumuz varsa ne yapacağız? O polinom içerisindeki en yüksek dereceli
+
+381
+01:12:49,904 --> 01:12:59,704
+terime bakacağız. Daha düşük tercihli terimler ve kat sayılar polinomdan gidecek. Efendim eğer polinomsa ne demek polinom? İşte en üzeri 4, en üzeri 3, en kare gibi şeyler.
+
+382
+01:13:07,764 --> 01:13:24,619
+Şimdi burada önemli, geçen derste de konuştuk, ikinci videoda bunları görebilirsiniz, yeni katılan arkadaşlar izleyebilirler. Önemli import fonksiyonlarımız sabit fonksiyon, onun üzerine logaritmik fonksiyon, onun üzerine lineer fonksiyon, onun üzerinde...
+
+383
+01:13:24,979 --> 01:13:39,179
+Linear aritmik dediğimiz n-logenler, onun üzerine k-dritik n-kare, sonra n-küp, sonra eksponansiyel, eksponansiyellar işte n-faktöreyle kadar gidiyor, ondan sonra da n-n gibi fonksiyonlar karşımıza geliyor.
+
+384
+01:13:39,699 --> 01:13:42,299
+Bunlar mesela yukarıdan aşağıya baktığımız zaman,
+
+385
+01:13:42,996 --> 01:13:47,595
+eksponansiyel bir fonksiyon, kubik bir fonksiyonun upper bound'dır diyebiliriz.
+
+386
+01:13:48,076 --> 01:13:53,835
+Veya aşağıdan yukarıya baktığımız zaman, işte şu fonksiyon, şunun lower bound'dır diyebiliriz.
+
+387
+01:13:54,095 --> 01:13:55,835
+Yani bir algoritma olarak düşüneceksek.
+
+388
+01:13:59,539 --> 01:14:05,260
+Tabii biz buraya nereden geldik? Kısaca buradan da tekrar diyeyim, ondan sonra diğer kısma geçeceğiz.
+
+389
+01:14:05,879 --> 01:14:10,859
+Bir algoritmayı analiz ederken en sade notasyonları bulmaktan geldik.
+
+390
+01:14:11,420 --> 01:14:13,659
+Ne yapıyorduk ilk başta algoritmayı analiz ederken?
+
+391
+01:14:14,399 --> 01:14:17,879
+Yapılan her bir işlemin maliyetinin kaç defa yapılacağını buluyorduk.
+
+392
+01:14:17,879 --> 01:14:18,879
+İşte burada...
+
+393
+01:14:18,996 --> 01:14:41,855
+n elemanlı bir integer'ın atanması var. Daha sonra bu döngü dönecek, n defa dönecek. İşte buraya n yazdık. Sonra işte şurada bir atama işlemi var. Bu atama bir defa ama döngü n defa dönecek için n defa. Şurada bir döngü bir daha çalışıyor. İşte n-1 defa bir işlem var. Burada başka bir işlem var. Bunların hepsinin cost'larını toplayıp bir t n'e bağlı fonksiyon elde ediyorduk.
+
+394
+01:14:42,355 --> 01:14:51,275
+Bu n'i de ne yapacağız? En sade bir şekilde yazacağız. Şimdi ben onun için şunu göstereyim. Neredeydi o?
+
+395
+01:14:57,619 --> 01:15:01,760
+Ayrık Matematik dersinde anlatmıştım, oradaki slide'ımı getirdim.
+
+396
+01:15:03,100 --> 01:15:08,100
+Yani asıl eğer detaylı analiz dersek yapılacak şey şudur.
+
+397
+01:15:08,760 --> 01:15:14,280
+İşte burada birinci satırdaki işleme, şu değişken tanımlamaları göz ağrıda edersek,
+
+398
+01:15:14,280 --> 01:15:20,479
+bir tane atama var, sonra en defa karşılaştırma var, sonra en defa arttırma işlemi var.
+
+399
+01:15:20,884 --> 01:15:25,024
+O zaman burada toplamda 2n artı bir tane işlem yapılacak, n'in değerine göre.
+
+400
+01:15:25,664 --> 01:15:29,304
+Sonra burada n defa atama yapılacak, döngü içinde olduğumuz için.
+
+401
+01:15:29,463 --> 01:15:32,224
+Sonra şurada n defa bu atama yapılacak.
+
+402
+01:15:32,844 --> 01:15:36,863
+n çarpı n artı bir bölü iki defa burada bu karşılaştırma yapılacak.
+
+403
+01:15:36,963 --> 01:15:40,104
+Çünkü i'ye göre değişiyormuş bu da, i sıfırdan i'ye kadar.
+
+404
+01:15:40,703 --> 01:15:43,224
+Şurada da n çarpı n artı bir bölü iki defa yapılacak.
+
+405
+01:15:43,224 --> 01:15:44,876
+Toplam bu satırda n...
+
+406
+01:15:44,884 --> 01:16:09,904
+Artı 2N çarpı N artı 1 bölü 2'lik aslında N çarpı N artı 1 bölü 2'lik. Sonra diğer satırlar da bu şekilde hesaplanıyor. Ve total olarak ne geliyormuş? 2N kare artı 6N artı 5. Bu İnSelection Sort algoritması. Buradaki kodun analizi sonunda elde edilen bir şey. Bunu elde edip detaylı analizden sonra elde edip bunu Big-O ile göstermeye kalkarsak ne gelir bunun sonucu? Direkt söyleyebilirsiniz.
+
+407
+01:16:14,996 --> 01:16:16,256
+ON kare mi hocam?
+
+408
+01:16:16,396 --> 01:16:19,296
+ON kare, güzel. [öğrenci] de yazdı, teşekkür ederiz.
+
+409
+01:16:20,296 --> 01:16:29,876
+Bunun ispatı dersek, bir tane ON'in durumuna göre, çalışma şeyine göre, bir C ve N sayısı göstermemiz gerekiyor.
+
+410
+01:16:32,336 --> 01:16:39,876
+Demek ki, algoritma, yani size verilen ödevlerde de yapacağınız şey, bir algoritma geliştirip, bu algoritmadaki...
+
+411
+01:16:40,159 --> 01:17:03,359
+Eğer detaylı analiz dersek bu şekilde yapmak. Şimdi detaylı analiz olmadan yapılacak iş de var. Ona birazdan geleceğiz. Şu asimptotik notasyonlarla alakalı kısmı tamamlamış olalım. Başka burada ne örnek var? Bir de algoritmaların iki algoritmayı karşılaştırırken
+
+412
+01:17:04,532 --> 01:17:27,652
+kullanacağımız Big-O'larla beraber bir diğer yöntem de limit kullanmak. Limit biliyorsunuz bir değişkenin işte bir noktaya ulaşırken bağımsız değişkenin bir noktaya ulaşırken bağımlı değişkendeki ulaşılan nokta. Yani y eşittir fx fonksiyonu dersek x bir noktaya yaklaşırken y hangi noktaya yaklaşıyor? Bunun analizi yapılıyordu.
+
+413
+01:17:32,212 --> 01:17:54,852
+bir Tn ve gn fonksiyonlarımız olsun. Şimdi bu ikisini birbirine oranlayıp n'e göre limitini alırsak, üç farklı durum çıkıyor. Şimdi yukarısı aşağıdan büyük olabilir. Sayı bölü sıfır, sayı bölü sıfır olursa sonsuz olur veya yukarısı sayı bölü sonsuz olursa sıfır olur veya ikisi de sayı olursa
+
+414
+01:17:55,188 --> 01:18:02,087
+Belli bir sabit olur. Üç farklı durum çıkıyor arkadaşlar. Burada ya sıfır çıkacak, ya constant bir şey çıkacak, ya da sonsuz çıkacak.
+
+415
+01:18:03,068 --> 01:18:10,228
+Buna göre biz algoritmalarımızın growth'unu söyleyebiliriz. Yani burada sıfır çıkması ne demek?
+
+416
+01:18:11,467 --> 01:18:16,887
+Sayı bölü sonsuz durumunda sıfır çıkar ya limit. Demek ki yukarısı sabit bir şey, aşağısı sonsuza gidiyor.
+
+417
+01:18:16,887 --> 01:18:20,688
+Yani aşağısı daha fazla hızlı büyüyor demektir.
+
+418
+01:18:21,076 --> 01:18:36,855
+O zaman şöyle bir şey diyebiliriz. TN büyüktür, GN gibi bir şey söyleriz. Hatta bunu asimptotik notasyonla göstermek istesek, TN elemanıdır, Big-O, GN diyebiliriz. Tamam mı?
+
+419
+01:18:37,363 --> 01:18:43,923
+Eğer sabit bir şeyse, yani burası da sabit, burası da sabit bir şeyse, işte 1 bölü 2 veya 5 bölü 8 gibi bir şey çıkacak.
+
+420
+01:18:44,403 --> 01:18:48,203
+O zaman bunların growth'ları ikisi de aynı ayarda bir algoritma.
+
+421
+01:18:48,263 --> 01:18:50,343
+Yani yukarısı n kare ise aşağısı da n kare.
+
+422
+01:18:50,963 --> 01:18:53,243
+Bunların sonsuza limitlerini aldığımızda ne oluyor?
+
+423
+01:18:53,724 --> 01:18:56,943
+Sonsuz bölü sonsuz. Mesela n kare bölü n kare, 2n kare diyelim.
+
+424
+01:18:57,623 --> 01:19:00,363
+Şimdi sonsuz bölü sonsuz belirsizliği.
+
+425
+01:19:00,363 --> 01:19:04,003
+Türevini aldınız. 2n bölü 4n.
+
+426
+01:19:04,368 --> 01:19:29,688
+Yine sonsuz, bölü, sonsuz. Bir daha türevini aldınız, iki bölü dört. Yani bir bölü iki gibi sabit bir sayı çıktı. Zaten bakıldığında bu en kareli bir şey, bu da en kareli bir şey. O zaman bunlar birbirine aynı ayarda algoritmalar deyip TN yaklaşık olarak eşittir diyelim GN'e ve buradan yola çıkarak TN ne diyebiliriz buna? Neyin elemanıdır? Şuraya notasyon olarak ne yazacağım?
+
+427
+01:19:35,315 --> 01:19:36,415
+Çetten var.
+
+428
+01:19:38,296 --> 01:19:45,335
+Evet, Big-Teta yazacağız değil mi arkadaşlar? Çünkü Big-Teta bu eşitliği gösteren bir şey Gn diyeceğiz.
+
+429
+01:19:46,935 --> 01:19:57,876
+Aynısını şu Big-O'nun tam tersi olarak düşürsek bu zamanda Tn bu Gn'den daha büyük olduğunu söyleyeceğiz ve burada da Tn elemanıdır.
+
+430
+01:19:57,876 --> 01:20:00,876
+Big-O Omega Gn diyebiliriz.
+
+431
+01:20:01,492 --> 01:20:09,731
+Birbirlerine olan kıyaslamaları. Mesela siz çalışırken bir bakın 2 üzeri n ile n faktoriyeli kıyaslayın.
+
+432
+01:20:10,692 --> 01:20:15,932
+Yani size çalışma sorusu olsun. 2 üzeri n mi daha büyük bir, n faktoriyel mi daha büyük bir?
+
+433
+01:20:17,152 --> 01:20:24,152
+2 üzeri n daha büyük bir. O zaman şurada limit alarak bunu yapabilirsiniz veya buna fn dersiniz.
+
+434
+01:20:24,819 --> 01:20:31,019
+Buna GN dersiniz. Big-O'nun tanımından veya Big-Omega'nın tanımından C kas sayılarını bulabilirsiniz.
+
+435
+01:20:32,799 --> 01:20:37,379
+Bu şeye alıştırma olarak bakarsanız güzel olur, çalışmış olursunuz.
+
+436
+01:20:38,340 --> 01:20:44,799
+Şimdi algoritmaların analizine başlıyoruz.
+
+437
+01:20:46,179 --> 01:20:52,079
+Öncelikle algoritmalar nasıl ifade edilir? Yani nasıl yazılabilir kodlama yaparken?
+
+438
+01:20:53,300 --> 01:21:02,300
+Bu soruyu dikkate alacak olursak, birincisi algoritmalar, iteratif yazılan algoritmalar, bir de rekürsif olarak yazılan algoritmalar diye ikiye ayıracağız.
+
+439
+01:21:03,020 --> 01:21:10,020
+Çünkü biz iteratif algoritmaları yukarıdan aşağıya, ilk satırından son satırına kadar adımlarını sayarak yapabiliyoruz.
+
+440
+01:21:10,800 --> 01:21:14,700
+Ama diyeceğiz ki iteratif algoritmalarda her adımı da saymaya gerek yok.
+
+441
+01:21:15,828 --> 01:21:21,528
+Belli işleri saysak yeterli. Çünkü her şey, ne bileyim, okuma yazmalar veya atamalar çok önemli değil.
+
+442
+01:21:22,488 --> 01:21:25,128
+Ağır, önemli yükü çeken tarafı yazmamız lazım.
+
+443
+01:21:25,628 --> 01:21:31,108
+Rekürsif algoritmalarda şöyle bir problem var. Bir yere kadar iteratif geliyor, bir yerden sonra kendisini tekrar ediyor.
+
+444
+01:21:31,648 --> 01:21:34,528
+Bu biraz daha farklı bir analiz gerektiren bir şey.
+
+445
+01:21:35,188 --> 01:21:40,968
+O zaman iki farklı başlıkta bugün dersin içerisinde bunları bitirip, inşallah quiz'e kadar yetiştireceğim herhalde.
+
+446
+01:21:40,968 --> 01:21:42,888
+Üçüncü saatin ortasında.
+
+447
+01:21:43,475 --> 01:21:48,595
+konuları bitirmiş oluruz. Şimdi bunu yapmak için, analizi yapmak için arkadaşlar,
+
+448
+01:21:48,595 --> 01:21:56,536
+bazı kullanışlı lazım olan formüller var. Bunlara bakalım. Özellikle logaritma ile
+
+449
+01:21:59,923 --> 01:22:02,463
+Properties of logaritms diyebiliriz.
+
+450
+01:22:02,523 --> 01:22:08,283
+Bir, logaritma x üzeri y ne eşitti?
+
+451
+01:22:08,523 --> 01:22:09,564
+Bu y başa geliyordu.
+
+452
+01:22:09,684 --> 01:22:12,203
+Y çarpı logaritma x'e karşılık geliyor.
+
+453
+01:22:13,203 --> 01:22:17,923
+İki, logaritma x çarpı y eşittir nedir?
+
+454
+01:22:18,984 --> 01:22:22,164
+Logaritma x artı logaritma y'dir.
+
+455
+01:22:22,884 --> 01:22:25,484
+Üç, bunun tam tersi.
+
+456
+01:22:28,083 --> 01:22:31,523
+Logoritma x eksi, logaritma y olacak.
+
+457
+01:22:33,583 --> 01:22:47,224
+Taban değiştirme kuralı var. Logoritma a tabanında x'i şöyle yazabiliriz. Logoritma a tabanında b, çarpı logaritma b tabanında x olarak yazabiliriz.
+
+458
+01:22:47,343 --> 01:22:53,564
+Bir de şunu çok kullanıyoruz. Bana en çok hangisi lazım olur derseniz şunlar.
+
+459
+01:22:54,131 --> 01:22:57,511
+Şu ikisi, bir de şu üçüncü, beşincisi lazım.
+
+460
+01:22:58,271 --> 01:23:03,211
+A üzeri logaritma B üzeri X.
+
+461
+01:23:03,851 --> 01:23:09,631
+Eşittir X, logaritma B üzeri A olacak.
+
+462
+01:23:10,771 --> 01:23:14,492
+Mesela iki üzeri İ, eşittir K dedik.
+
+463
+01:23:15,211 --> 01:23:20,551
+Bunu hesap ederken, K eşittir iki tarafında logaritmasını alırsak.
+
+464
+01:23:21,716 --> 01:23:30,996
+İki tarafında logaritmasını, logaritma K eşittir, logaritma 2 üzeri İ, yine iki tabanında logaritma alalım.
+
+465
+01:23:31,656 --> 01:23:37,056
+İşte bu İ başa geliyordu, bu da iki şey oluyordu, ne oluyordu?
+
+466
+01:23:37,456 --> 01:23:43,615
+K'nın logaritma İ'ye eşit olacağını söyleyeceğiz mesela.
+
+467
+01:23:44,020 --> 01:24:04,400
+Bununla alakalı örnekler yaptıkça daha fazla şey olur. Zamanı gelince bunları konuşacağız. Ama bu kurallar lazım olacak şeyler. Özellikle logaritma işte i üzeri 3 eşittir k. Buradan i'nin değerini bulmak gibi şeylere bakacağız. Şimdi bazı kombinatörikle
+
+468
+01:24:08,148 --> 01:24:09,887
+alakalı hatırlatmalar yapalım.
+
+469
+01:24:10,827 --> 01:24:11,048
+Şimdi
+
+470
+01:24:11,048 --> 01:24:12,488
+bir
+
+471
+01:24:12,488 --> 01:24:14,568
+number of
+
+472
+01:24:14,568 --> 01:24:17,608
+permutations
+
+473
+01:24:22,515 --> 01:24:23,175
+of
+
+474
+01:24:23,175 --> 01:24:26,115
+an element.
+
+475
+01:24:27,835 --> 01:24:34,515
+Yani en elemanlı bir kümedeki permutasyonların sayısı PN nasıl bir formüle hesap ediliyordu?
+
+476
+01:24:44,692 --> 01:25:06,091
+n elemanlı, n faktöryel değil mi arkadaşlar? Demek ki n faktöryel defa bir algoritma adımı koşacak. Yani öyle bir karmaşıklığı var. Sonra gelelim, number of k combinations
+
+477
+01:25:09,939 --> 01:25:14,279
+of n element set.
+
+478
+01:25:14,979 --> 01:25:24,340
+n elemanlı bir kümenin k'lı kombinasyonu n! bölü, k! çarpı n-k!
+
+479
+01:25:25,920 --> 01:25:27,239
+Başka ne vardı?
+
+480
+01:25:28,979 --> 01:25:33,539
+Bir de şunu çok kullanırız, özellikle number of subset dediğimiz.
+
+481
+01:25:40,467 --> 01:25:46,427
+n elemanlı bir kümenin, alt kümelerinin sayısı ne oluyordu? 2 üzeri n oluyor değil mi burada?
+
+482
+01:25:47,087 --> 01:25:53,387
+Eksponansiyel bir şey, bakın faktöriyel bir şey var, burada da faktöriyel bir şey var. Bunları çok çok kullanacağız.
+
+483
+01:25:55,467 --> 01:25:59,807
+Şimdi gelelim bir de algoritma analizinde kullanacağımız summation formülalar.
+
+484
+01:26:06,771 --> 01:26:13,311
+i eşittir, l'den u'ya kadar, bir l noktasından u noktasına kadar, birleri hesap edince ne demektir bu?
+
+485
+01:26:13,371 --> 01:26:19,152
+1 artı, 1 artı, 1 artı bu. Bu kadar tane birin toplamı. Yani burada kaç tane bir var?
+
+486
+01:26:19,951 --> 01:26:25,551
+u'dan l'yi çıkarttık, artı bir tane, terim sayısı kadar birin toplamı. Bu da ne olacak?
+
+487
+01:26:26,471 --> 01:26:33,211
+u-l artı bir. Burada dikkat etmemiz gereken l'nin u'dan küçük veya eşit olacağını söylemek.
+
+488
+01:26:35,923 --> 01:26:38,623
+Bunu daha genel yazarsak, aslında bu nedir?
+
+489
+01:26:40,144 --> 01:26:45,224
+Gauss formülünden biliyorsunuz, direkt bu çarpım kuralıdır.
+
+490
+01:26:45,963 --> 01:26:49,963
+Birden n'e n tane birin toplamı n demektir, n çarpı 1'e karşılık gelecek.
+
+491
+01:26:51,064 --> 01:26:59,384
+Şuna baktığımız zaman, i eşittir birden n'e kadar, i'ler nedir arkadaşlar?
+
+492
+01:26:59,384 --> 01:27:02,384
+1 artı 2 artı nokta nokta n demektir.
+
+493
+01:27:02,420 --> 01:27:16,799
+Bu da n çarpı n artı 1 bölü 2. Şimdi böyle bir fonksiyon elde ettiğinizde bunun yaklaşık olarak karmaşıklığı nedir dersek işte 1 bölü 2 n kare veya bunu Big-O n kare diye yaklaşık olarak söyleyeceğiz.
+
+494
+01:27:18,260 --> 01:27:19,119
+Şuna bakalım.
+
+495
+01:27:23,315 --> 01:27:26,395
+1'den n'e i'lerin karesi.
+
+496
+01:27:27,695 --> 01:27:32,355
+Buna baksana, 1'in karesi artı 2'nin karesi artı nokta nokta n'in karesi.
+
+497
+01:27:33,435 --> 01:27:41,735
+Neydi bu? n çarpı n artı 1 çarpı 2n artı 1 bölü 6.
+
+498
+01:27:42,075 --> 01:27:45,376
+İşte yaklaşık olarak burada da n küplük bir durum var.
+
+499
+01:27:45,536 --> 01:27:49,015
+İşte 1 bölü 3 n küp diyebiliriz burada da.
+
+500
+01:27:51,923 --> 01:28:16,804
+Şuna baktığımız zaman, i eşittir birden n'e, i üzeri k'lar, yani birin k'ıncı kuvveti artı, ikinin k'ıncı kuvveti artı nokta nokta n'in k'ıncı kuvveti dersek, k bir sayı, bir bölü k yaklaşık olarak n üzeri k artı bire geliyor.
+
+501
+01:28:16,804 --> 01:28:18,884
+Bakın, eksponansiyel bir durum oldu.
+
+502
+01:28:20,340 --> 01:28:21,119
+Şuna bakalım.
+
+503
+01:28:25,171 --> 01:28:46,492
+i eşittir 1'den n'e kadar, a üzeri i eşittir, 1 artı, pardon bunu sıfırdan başlatalım, 1 artı, a artı nokta nokta, a üzeri n, a üzeri n artı 1, eksi 1, bölü, a olacak.
+
+504
+01:28:54,323 --> 01:28:56,823
+farklı olması şartıyla diyoruz.
+
+505
+01:28:58,823 --> 01:29:00,243
+Başka ne varmış?
+
+506
+01:29:00,903 --> 01:29:01,763
+Ha, şuna bakalım.
+
+507
+01:29:03,603 --> 01:29:05,843
+Daha bir sürü formül var da, hepsine gerek yok arkadaşlar.
+
+508
+01:29:07,183 --> 01:29:07,983
+i eşittir,
+
+509
+01:29:09,043 --> 01:29:10,323
+birden n'e kadar
+
+510
+01:29:10,323 --> 01:29:12,463
+bir bölü i'ye
+
+511
+01:29:12,463 --> 01:29:14,203
+bakarsak,
+
+512
+01:29:14,683 --> 01:29:17,463
+bir artı, bir bölü iki artı nokta nokta, bir bölü
+
+513
+01:29:17,463 --> 01:29:18,683
+n
+
+514
+01:29:18,683 --> 01:29:20,843
+dediğimizde
+
+515
+01:29:22,003 --> 01:29:25,503
+1 artı 1 bölü 2, 1 bölü 3, 1 bölü 3. Buna da
+
+516
+01:29:25,503 --> 01:29:27,503
+elen
+
+517
+01:29:27,503 --> 01:29:39,503
+n artı 0.5772 yani buna to denen bir sayı var. Ona karşılık geliyor.
+
+518
+01:29:40,595 --> 01:29:48,595
+Yani en fazla kullanacağımız ilk üçü. Ondan sonrakilerin çok fazla belki ihtiyacımıza gerek duymayacağız ama bilmekte fayda var.
+
+519
+01:29:48,595 --> 01:29:54,595
+Şimdi bunları kullanırken bir de bazı manipülasyonları bilmek gerekiyor.
+
+520
+01:29:56,595 --> 01:30:00,000
+i eşittir L'den U'ya kadar.
+
+521
+01:30:00,180 --> 01:30:08,420
+C çarpı Aİ diye bir şey verildi. Şimdi İ'ye bağlı olan şeyler burada kalır, C'ye İ'ye bağlı olmayanlar dışarıya atılır.
+
+522
+01:30:08,960 --> 01:30:14,620
+Dolayısıyla C çarpı İ eşittir L'den U'ya kadar Aİ'yi hesap edebiliriz.
+
+523
+01:30:15,780 --> 01:30:21,120
+Aynı zamanda toplama ve çıkarma gibi bir şey varsa bu lineer bir işlemdir, ayırabiliriz.
+
+524
+01:30:24,180 --> 01:30:28,260
+A'nın İ'si artı eksi veya eksi B'nin İ'si dedik.
+
+525
+01:30:28,940 --> 01:30:42,180
+Bunu iki ayrı sembol ile İ eşittir L'den U'ya, Aİ, artı eksi İ eşittir L'den U'ya, Bİ şeklinde yazabiliriz.
+
+526
+01:30:44,860 --> 01:30:50,720
+Başka söyleyeceğimiz, ha bir de sınır değiştirme işlemi var.
+
+527
+01:30:53,171 --> 01:31:14,412
+i eşittir l'den u'ya kadar a i'yi, i eşittir l'den m'ye kadar a i, artı yine i eşittir m artı birden u'ya kadar a i şeklinde yazacağız.
+
+528
+01:31:14,412 --> 01:31:18,691
+Bu da l, küçüktür eşittir m, küçüktür u olacak.
+
+529
+01:31:23,315 --> 01:31:26,195
+Bir de şu vardı, bunu örnek üzerinde söyleyeyim.
+
+530
+01:31:28,695 --> 01:31:32,456
+Mesela i eşittir 2'den 5'e kadar, a i'yi.
+
+531
+01:31:34,435 --> 01:31:39,076
+Ben şöyle bir şey yapmak istesem, bunu 0'a çekmek istiyorum.
+
+532
+01:31:41,556 --> 01:31:43,695
+Bunu 0'a çekince ne olacak?
+
+533
+01:31:44,415 --> 01:31:46,755
+Bu 2 birim düşecek, 3'e gelecek.
+
+534
+01:31:47,515 --> 01:31:48,755
+Şu şekilde yazabiliriz.
+
+535
+01:31:50,868 --> 01:31:58,368
+2, 0'dan 3'e kadar. Yalnız, i ile 1 ne yapmamız lazım? Ne olacak burada i'nin yerine?
+
+536
+01:32:01,939 --> 01:32:03,180
+i'nin yerine ne olacak?
+
+537
+01:32:04,539 --> 01:32:06,180
+Önceden A2'yi topluyordum.
+
+538
+01:32:06,279 --> 01:32:13,859
+Şimdi A0'ı toplamamak için, yani düşürdüğüm terimi burada şöyle yazacağız.
+
+539
+01:32:13,859 --> 01:32:16,039
+Veya tam tersinden de yapabilirsiniz bunu.
+
+540
+01:32:21,971 --> 01:32:31,551
+Evet, bir de arkadaşlar yuvarlama ile alakalı kısımlara bakalım. Ondan sonra algoritma analizi tarafından devam edeceğiz.
+
+541
+01:32:31,551 --> 01:32:45,731
+Şimdi biliyorsunuz ki şu floor dediğimiz, floor zemindir. Şu fonksiyon işte bir x6 yuvarlama.
+
+542
+01:32:49,939 --> 01:32:51,939
+Bu da üste yuvarlamadır.
+
+543
+01:32:52,999 --> 01:32:54,179
+Örneklerine bakalım.
+
+544
+01:32:55,479 --> 01:32:57,159
+İşte 3.8
+
+545
+01:32:57,159 --> 01:33:01,059
+Nedir bu? Aşağıya yuvarlayacağımız 3 olacak.
+
+546
+01:33:01,719 --> 01:33:02,879
+Round değil, dikkat edin.
+
+547
+01:33:03,759 --> 01:33:05,259
+Veya eksi 3.8
+
+548
+01:33:05,259 --> 01:33:07,399
+Aşağıya yuvarlayacağımızın eksi 4 olacak.
+
+549
+01:33:09,059 --> 01:33:09,699
+Aynısını
+
+550
+01:33:09,699 --> 01:33:13,379
+şey için yapalım. 2.7
+
+551
+01:33:13,379 --> 01:33:15,339
+eşittir 3
+
+552
+01:33:16,627 --> 01:33:23,807
+2.7, eşittir, eksi 2. Bunları bilmek iyi olur.
+
+553
+01:33:23,807 --> 01:33:30,347
+Şunu da söyleyeyim.
+
+554
+01:33:34,868 --> 01:33:39,868
+Üste yuvarlarken logaritma n artı bir.
+
+555
+01:33:39,868 --> 01:33:49,868
+Niye eşit oluyor? Logaritma alta yuvarlama, logaritma n artı bir.
+
+556
+01:33:49,868 --> 01:33:56,868
+Şu binary search de çok karşımıza gelecek. Onun için bunu fark etmekte bilincinde olalım.
+
+557
+01:34:02,003 --> 01:34:14,183
+Bu derse bu ana kadar konuştuğumuz bilgi olarak ne var? Asimptotik notasyonlar diye bir şey öğrendik. Bu asimptotik notasyonlar bir fonksiyonu en sade bir şekilde alt sınırları, üst sınırları göstermek maksadıyla kullanılıyordu.
+
+558
+01:34:15,183 --> 01:34:16,363
+Veya tight bandı.
+
+559
+01:34:17,723 --> 01:34:28,963
+Bu çalışma zamanı analizini yapmamız için bir anegoritmada maliyet oluşturan şeyleri saymamız gerekiyordu. N cinsinden, verinin boyutuna göre.
+
+560
+01:34:29,395 --> 01:34:34,995
+ve daha sonra asimptotik notasyonlarla en sade şekilde saydıktan sonra bunu yazıyoruz.
+
+561
+01:34:34,995 --> 01:34:40,195
+Buraya kadar konuştuğumuz şey bu işin altyapısını oluşturmak.
+
+562
+01:34:40,195 --> 01:34:46,995
+Şimdi geldik non-recursive yani iteratif olan algoritmaların analizine.
+
+563
+01:34:46,995 --> 01:34:49,395
+Soru var mı buraya kadar anlattığım şeyden?
+
+564
+01:35:00,243 --> 01:35:05,643
+Analysis of Non-Recursive Algorithms.
+
+565
+01:35:06,043 --> 01:35:21,603
+Şimdi, algoritma analizi yaparken bütün adımları saymak yerine, bu bütün adımların hepsinin yükünü çeken, yani algoritmanın yükünü çeken en temel operasyonu saymanın en doğru olacağını söylemiştik.
+
+566
+01:35:27,475 --> 01:35:45,655
+tn, işte n'e bağlı bir fonksiyonla ifade edeceğiz ve bu bizim basic operasyonun bu algoritmada kaç defa işletileceğini, yürütüleceğini söyleyecek. Ondan sonra ne yapacağız bundan? Nereye geçiş yapacağız? Asimptotik notasyonlara geçiş yapacağız.
+
+567
+01:35:49,844 --> 01:36:01,824
+Hatta arada şunu da söyleyeyim, eğer TN dediğimiz şey, if, TN, lower than, polynomial,
+
+568
+01:36:05,587 --> 01:36:21,447
+Times, polinom zamanlı algoritmalardan küçükse buna tractable veya solvable algoritmalar daha büyükse intractable veya non-solvable diyoruz.
+
+569
+01:36:21,847 --> 01:36:28,768
+Çözülebilir bir problem veya izlenebilir bir problem olduğunu söyleyeceğiz. Bu yorumda yapılabilir.
+
+570
+01:36:29,199 --> 01:36:50,880
+Ama bizim için önemli olan bir algoritmanın, non-recursive bir algoritmanın analizini yapacaksak, burada en temel operasyon nedir? Önce bunu belirliyoruz. Şimdi bunu örnekler üzerinde bakalım. En dediğimiz şey zaten bizim elemanımız. Birincisi, birinci örneğimiz Maximum Element of Array.
+
+571
+01:36:52,212 --> 01:36:56,172
+Çok bilinen örneklerden giderek bunu daha rahat anlıyoruz arkadaşlar.
+
+572
+01:36:57,052 --> 01:36:58,212
+Bir fonksiyonumuz var.
+
+573
+01:36:59,392 --> 01:37:04,312
+Function, ne diyelim, max element diyelim.
+
+574
+01:37:07,432 --> 01:37:12,852
+Burada bir a dizi gelecek, n elemanına, n-1'e kadar.
+
+575
+01:37:14,579 --> 01:37:20,619
+Ne yaparız? Öncelikle max dediğimiz şey sıfırıncı eleman olsun deriz. Böyle bir fonksiyon yazınca.
+
+576
+01:37:21,500 --> 01:37:31,979
+Sonra for döngüsüyle i1'den n-1'e kadar ne yapacağız?
+
+577
+01:37:40,756 --> 01:38:07,956
+A'nın iyinci elemanı diyeceğiz. Bu if ve for tamamlandığında return max diyeceğiz. Şimdi bu algoritmayı göz önüne alındı. İsterseniz flowchart'ın da çizebilirim ama gerek yok. Anlaşılabilir bir algoritma. Var mı? Flowchart'ın da çizin diyen var mı aranızda arkadaşlar? Bu algoritma bu derse gelindiğine göre herhalde herkes bunun kodunu da yazabilir durumdadır diye.
+
+578
+01:38:08,500 --> 01:38:35,800
+Tahmin ve ümit ediyorum. Peki, analizi nasıl yapacağız arkadaşlar? Bir, bizim kaç tane elemanımız var? Number of elements. Çünkü acaba algoritmamızın çalışması n'e bağlı olarak değişiyor mu? Bu bizim için önemli. Evet, burada n tane elemanımız var. Bunu gördük. n dedik. Bundan sonra basic operation nedir diyeceğiz.
+
+579
+01:38:38,195 --> 01:38:45,516
+Eğer size soruda Basic Operation kullanarak yapın derse, algoritmadan Basic Operation'ı çıkartmanız lazım.
+
+580
+01:38:46,416 --> 01:38:55,796
+Bakıyoruz ki burada, şimdi bu her zaman olacak bir şey, bu döngü her zaman dönecek, if diye bir şey var, bir de şurada bir atama var.
+
+581
+01:38:55,895 --> 01:39:00,716
+Şimdi atama her zaman olmaz ama if her zaman kesin kes olacak bir şeydir.
+
+582
+01:39:01,275 --> 01:39:04,596
+O zaman burada Basic Operation'ımız Comparison olacak.
+
+583
+01:39:07,060 --> 01:39:24,060
+Ha, şunları da Basic Operation olarak söyleyebiliriz. Bakın, şurada bir atama yapılmış bir defa. Sonra şurada işte bir ayrı bir şey var veya ne bileyim, i artı artı diyoruz değil mi? Döngünün değişkenine bir artırken orada bir şey var. Onları da dahil edebiliriz ama bizim için...
+
+584
+01:39:24,180 --> 01:39:51,019
+Şuradaki tek bir basic operasyon yeterli. Yani for'un içerisindekiler de bir basic operasyon. Evet, basic operasyon. Ama yani ben maksimum elemanı bulacaksam illa ki for döngüsüyle döneceğim. Nasıl bulacağım burada işin yükünü daha çok kapsıyor. Buradaki comparison işlemi dedik. Sonra buradan yola çıkarak diyeceğiz ki inner most loop'lara çok dikkat edeceğiz.
+
+585
+01:39:52,212 --> 01:40:01,271
+Niye bu inner most loop'a dikkat ediyoruz? Çünkü basic operasyon en fazla en iç döngüden dış döngüye doğru yapılan operasyondur.
+
+586
+01:40:01,931 --> 01:40:07,792
+Bu kıstaslar etrafında giderek algoritmamızın t n'ini bulacağız arkadaşlar.
+
+587
+01:40:08,672 --> 01:40:17,592
+Ve daha sonra diyeceğiz ki bu algoritmanın t n'inden Big-O veya Big-O veya Big-Theta gibi durumlara gidelim.
+
+588
+01:40:19,444 --> 01:40:25,664
+Şimdi, maksimum elemanı bulurken, o zaman bizim basic operasyonumuz burada ne? Şuradaki işlem.
+
+589
+01:40:25,664 --> 01:40:36,844
+Şimdi diyoruz ki, tn gibi bir fonksiyonum olsun. Bu tn bana neyi gösterecek? Number of comparison işlemini gösterecek.
+
+590
+01:40:38,452 --> 01:40:42,431
+Geçen hafta Selection Sort'ta ve Bubble Sort'ta bunu farklı şekillerde yaptık.
+
+591
+01:40:42,551 --> 01:40:43,751
+Yani toplam sembolü.
+
+592
+01:40:43,831 --> 01:40:48,072
+Diyoruz ki, burada bu işlemin yükü bir tane bir işlemdir.
+
+593
+01:40:48,251 --> 01:40:50,652
+Ben bunu i eşittir birden başlatıyormuşum.
+
+594
+01:40:52,032 --> 01:40:54,912
+Ve n-1. elemana kadar.
+
+595
+01:40:55,032 --> 01:40:59,011
+n. eleman dahil değil ama ben burada n-1. eleman dahil.
+
+596
+01:40:59,612 --> 01:41:00,612
+n-1'i yazdım.
+
+597
+01:41:01,108 --> 01:41:07,748
+Ve toplamda bir birimlik bir işi olduğunu söylüyoruz. Bunun sonucunda gelen şey ne olacak arkadaşlar? n-1.
+
+598
+01:41:08,988 --> 01:41:16,568
+Demek ki benim tn eşittir, n-1'lik bir algoritma yüküm var burada karmaşıklık açısından.
+
+599
+01:41:17,368 --> 01:41:26,648
+Ve bu algoritmanın karmaşıklığını temel operasyona bakarak, temel operasyona bakarak ne kadar diyorum n-1 olacağını söyleyebiliyoruz.
+
+600
+01:41:29,844 --> 01:41:37,344
+Buradan sonra ne yapacağız? Artık bunu asimptotik notasyonlarla yazacağız. Şimdi bunu nasıl bir asimptotik notasyonla yazarız?
+
+601
+01:41:46,836 --> 01:41:48,416
+[öğrenci] olur mu?
+
+602
+01:41:49,556 --> 01:41:49,956
+O, N.
+
+603
+01:41:51,736 --> 01:41:58,336
+Şimdi bakın arkadaşlar, bunu N-1'li bir şeyi, O, N diyebilir miyim diyebilirim. İspatıda uğraşmıyoruz. Uzun uzun şey yaptık.
+
+604
+01:41:59,036 --> 01:42:02,536
+Peki burada başka ne diyebiliriz?
+
+605
+01:42:07,123 --> 01:42:11,683
+Bu karşılaştırma işlemi, bakın atama işleminden bahsetmiyorum.
+
+606
+01:42:12,683 --> 01:42:18,623
+Bu karşılaştırma işlemi N defa olacaksa kesinlikle O-N'lik bir şey var.
+
+607
+01:42:18,783 --> 01:42:20,443
+Yani low upper bandımız bu.
+
+608
+01:42:21,083 --> 01:42:23,523
+Peki Big Theta N diyebilir miyiz burada?
+
+609
+01:42:25,363 --> 01:42:27,543
+Veya Omega N diyebilir miyiz?
+
+610
+01:42:32,148 --> 01:42:35,467
+Basic Operasyon cinsinden böyle bir yorumda bulunabilir miyiz?
+
+611
+01:42:35,467 --> 01:42:36,528
+Siz hocam.
+
+612
+01:42:38,507 --> 01:42:39,247
+Kim söyledi?
+
+613
+01:42:41,467 --> 01:42:42,228
+Bulunabiliriz.
+
+614
+01:42:44,688 --> 01:42:47,728
+Neden peki? Gerekçesini de söyleyeyim de.
+
+615
+01:42:48,028 --> 01:42:51,127
+Her defa aslında çünkü birine kadar sayısı.
+
+616
+01:42:51,967 --> 01:42:54,807
+Kesin kes bu karşılaştırma işlemi yapılacak.
+
+617
+01:42:54,807 --> 01:42:56,627
+Yani en ne olursa olsun.
+
+618
+01:42:57,203 --> 01:43:05,344
+Atama işlemi kesin kes olmayacak ama karşılaştırma kesin kes olacak. Onun için zaten algoritmaların yükünü çeken Basic Operasyon odur diyoruz.
+
+619
+01:43:05,943 --> 01:43:12,243
+Yani bu işlem Basic Operasyon olduğu için O n defa da olur. Theta n de diyebilirim, Omega n de diyebilirim.
+
+620
+01:43:12,323 --> 01:43:16,384
+Yani bunun alt sınırı, üst sınırı ve tight boundı hepsi birbirine eşit.
+
+621
+01:43:16,903 --> 01:43:23,803
+Yani üst sınır için biz bir kelime kullanmıştık. Ne demiştik buna? En kötü durum. Yani bu en kötü durumda da
+
+622
+01:43:24,212 --> 01:43:25,632
+N defa çalışacak.
+
+623
+01:43:26,752 --> 01:43:29,012
+N iyi durumda da N defa çalışacak.
+
+624
+01:43:29,112 --> 01:43:31,912
+Yani mutlaka N defa karşılaştırma yapacak.
+
+625
+01:43:33,252 --> 01:43:35,032
+Pardon, şunu besleyeceğiz.
+
+626
+01:43:36,312 --> 01:43:37,912
+N iyi durumda da N defa çalışacak.
+
+627
+01:43:38,432 --> 01:43:40,772
+Ortalama durumda da aslında N defa çalışacak.
+
+628
+01:43:41,592 --> 01:43:42,632
+Hepsi birbirine eşit çünkü.
+
+629
+01:43:43,592 --> 01:43:46,172
+Dolayısıyla biz bu algoritmanın karmaşıklığı için
+
+630
+01:43:46,543 --> 01:44:03,064
+ON diyebiliyoruz. Hocam şuradaki N-1 desek, ON-1 diyebilir miyiz? Hayır. Bu asimptotik bir notasyondur. Bunlar en sade, N, N-kare, N-küp veya log N, N-log N gibi fonksiyonlarla ifade edilir. İçeriye başka öyle ikili, üçlü bir şeyler yazılmaz.
+
+631
+01:44:04,163 --> 01:44:12,963
+Aslında burada baktığımızda, bunun best case'i, average case'i ve worst case'i N oluyor. Çünkü işlem karşılaştırma.
+
+632
+01:44:14,515 --> 01:44:20,275
+Ama mesela şey deseydik, şimdi birazdan Insertion Sort algoritmasını da göreceğiz.
+
+633
+01:44:21,475 --> 01:44:29,635
+Max eşittir şu atama işlemi için deseydik, o zaman bunun best case'i, worst case'i ve average case'i farklı olur değil mi?
+
+634
+01:44:29,635 --> 01:44:36,635
+Best case ne demektir? Bir dizinin en büyük elemanını bulmaya çalışıyoruz, atama yapacağız.
+
+635
+01:44:36,635 --> 01:44:39,563
+Şimdi best case diye bir şey olmaz atamada.
+
+636
+01:44:39,636 --> 01:44:46,576
+En kötü durumda ancak bir şey diyemiz. Yani en sonuncu elemanda atamayı bulduk. O worst case olur.
+
+637
+01:44:47,252 --> 01:45:09,932
+Hani atama işlemini bir defa yapmış olmak, belki ilk elemanda bir atama yaptık, daha sonra yapmadık. Yani 100 tane elemanımız var. Birinci elemanda en büyüğü tesadüfen bulduk, diğer elemanlarda herhangi bir atama yapmadık. Swap gibi bir şey olmadı. O zaman ona hani best case denebilir, o o bir. Average case çok daha farklı bir şey ama burada atama için. Niye?
+
+638
+01:45:10,579 --> 01:45:33,380
+100 tane elemanım var, birinci de atayabilirim, ikinci de atayabilirim, üçüncü de atayabilirim. O zaman 1 bölü 100 her biri için bir atama olasılığım var. Bir de hiç bulamam olasılığım. Gerçi en sonunda, en kötü ihtimal en sonucu da bulacağız. O zaman her birinin olasılığıyla buna bakacağız ve ona göre bir case çıkaracağız ve o da n gibi bir şey çıkaracak.
+
+639
+01:45:37,779 --> 01:45:54,659
+Bütün durumlar aynı olduğundan worst case, average case ve best case ayrı ayrı analiz yapmadık dikkat ederseniz. Birazdan ona da geleceğiz. Eğer ayrı ayrı analiz yapsaydım, belki worst case'e n², average case'e n² veya best case'e n gibi bir farklı durumlar elde edecektim.
+
+640
+01:45:56,339 --> 01:46:03,059
+Evet, burası time kompleksiyle alakalı söyleyeceğimiz iteratif algoritmalarını da konuşacağım ilk kısımda.
+
+641
+01:46:03,059 --> 01:46:04,819
+Şimdi
+
+642
+01:46:09,140 --> 01:46:11,539
+FindMax budur dedik.
+
+643
+01:46:14,963 --> 01:46:20,003
+Bir şeyin listedeki Unique elemanların sayısı. Farklı bir örnek yapalım.
+
+644
+01:46:21,443 --> 01:46:22,923
+Number of Unique Elements.
+
+645
+01:46:30,195 --> 01:46:54,195
+Yani dizi var, dizideki elemanların unique olup olmadığına bakacağız. Şimdi burada ne var? Birinci elemandan, tabii brute force bir algoritma düşünelim şimdi, daha ileri seviye algoritmaları düşünmeyin arkadaşlar. Ne yapıyorum? Birinci elemana bakıyorum, birden sonra 2, 3, 4, 5 eninci elemana kadar, son elemana kadar gideceğim. Acaba eşit mi? Eşitse...
+
+646
+01:46:54,528 --> 01:46:58,328
+bir counter değişkeni kullanırız mesela, ona göre bir şey yaparız.
+
+647
+01:46:59,048 --> 01:47:02,148
+Veya dizide unique elemanlar var mı?
+
+648
+01:47:04,108 --> 01:47:06,728
+Veya dizi sadece unique elemanlardan oluşuyor.
+
+649
+01:47:06,828 --> 01:47:09,308
+Aynı iki tane eleman varsa öyle bir şey.
+
+650
+01:47:09,428 --> 01:47:10,768
+Şimdi şöyle bir kod yazalım.
+
+651
+01:47:10,768 --> 01:47:13,768
+For, i0'dan başlasın.
+
+652
+01:47:15,636 --> 01:47:24,896
+n-2. elemana kadar gideceğim. Çünkü n-1. elemanı içteki döngüde kontrol edeceğiz. Dizi de n elemanlı. 0'dan n-2'ye kadar diyorum.
+
+653
+01:47:24,896 --> 01:47:36,136
+For, j küçük 0, 0 değil i artı 1. 0. eleman ise bunun bir sonrakinden, birinci eleman ise 2'den gideceğiz. Onun için i artı 1 dedik.
+
+654
+01:47:42,484 --> 01:48:09,543
+Şimdi if a dizimin i inci elemanı, eşit eşit a'nın j inci elemanı. Eğer böyleyse mesela dizi unique elemanlardan mı oluşuyor yoksa değil mi? Bu öyle bir şart versek. Burada da oradan return false diyebiliriz. Eğer bir tane böyle bir şey bulacaksak diyebiliriz. Eğer yoksa return true diyebiliriz.
+
+655
+01:48:10,484 --> 01:48:26,444
+Veya işte kaç tane şey var, eleman var. Bir counter değişkeni sıfıra atarız. İşte burada return false'un yerine j++ yaparız. Bunları sayabiliriz. Ama önemli olan bizim için şu algoritmanın döngüsel yapısı.
+
+656
+01:48:27,644 --> 01:48:36,184
+Şimdi buradan yola çıkarak biz algoritmayı analiz ederken bir, neyi biliyoruz? En tane eleman var. Number of elements.
+
+657
+01:48:36,756 --> 01:48:38,756
+Sonra Basic Operation.
+
+658
+01:48:40,756 --> 01:48:43,692
+Bunu bulmamız gerekiyor. Basic Operation'ımız ne burada?
+
+659
+01:48:51,220 --> 01:48:54,400
+Olmazsa olmaz. Basic Operasyon ne?
+
+660
+01:48:56,480 --> 01:48:57,620
+Başlığı eşitliği var.
+
+661
+01:48:58,120 --> 01:48:59,600
+Evet, yani eşittir eşittir.
+
+662
+01:49:00,180 --> 01:49:01,000
+Comparison işlemi.
+
+663
+01:49:01,760 --> 01:49:04,880
+O zaman bu comparison işleminin maliyetini bir kabul edelim.
+
+664
+01:49:04,980 --> 01:49:10,160
+Bir birimlik bir maliyet kabul edip, bütün algoritmanın yükünü buna yükleyeceğiz.
+
+665
+01:49:10,160 --> 01:49:11,020
+Şimdi TN.
+
+666
+01:49:15,028 --> 01:49:16,768
+i'miz sıfırdan başlıyor.
+
+667
+01:49:18,927 --> 01:49:20,488
+n-2'ye kadar.
+
+668
+01:49:22,528 --> 01:49:27,068
+Buradan j eşittir, i artı 1'den başlıyor.
+
+669
+01:49:28,668 --> 01:49:29,587
+n-1'ye kadar.
+
+670
+01:49:30,868 --> 01:49:33,128
+Şurada da 1, bir birimlik bir işlem var.
+
+671
+01:49:33,652 --> 01:49:40,992
+Eğer burada başka bir daha maliyetli bir işlem olsaydı, yani oraya i birim, j birim veya n birim yazabiliriz.
+
+672
+01:49:41,051 --> 01:49:44,591
+Ama şu an bir birimlik bir karşılaştırma işlemi yapıyoruz karşılaştırma adına.
+
+673
+01:49:45,692 --> 01:49:49,331
+İçteki şeyi önce çözmemiz lazım.
+
+674
+01:49:49,711 --> 01:49:52,952
+i eşittir sıfırdan n-2'ye.
+
+675
+01:49:52,952 --> 01:49:59,011
+Şimdi burada n-1, eksi i, eksi 1, artı 1.
+
+676
+01:50:01,652 --> 01:50:07,751
+çarpı bir dersek, kaç tane bilimsel işlem var? n-1-i tane işlem yapılıyor.
+
+677
+01:50:08,671 --> 01:50:13,371
+Son terimden ilk terimi çıkardığınız, bir eklediğiniz, bu kadar terim var, bu kadar çarpı birlik bir işlem var.
+
+678
+01:50:13,991 --> 01:50:15,211
+Aşağıdan devam edelim.
+
+679
+01:50:17,371 --> 01:50:24,091
+Şimdi n-2, sıfırdan n-2'ye toplam kaç tane işlem var? n-1 tane değil mi?
+
+680
+01:50:24,771 --> 01:50:28,364
+O zaman şunu şöyle açarsak, ilk başta...
+
+681
+01:50:29,332 --> 01:50:50,572
+n-1, yani şurası i'ye bağlı değil, i eşittir sıfırdan n-2'ye n-1 tane, eksi i eşittir sıfırdan n-2'ye i tane işlem olacak. Bunu da düzeltirsek,
+
+682
+01:50:52,724 --> 01:51:20,144
+n-1'i dışarıya alırız. n-1'i dışarıya alırsak 1 kalır. Yani buradan n-1 çarpı aslında n-1 tane değiştirm var. n-1 çarpı n-1 geleceğiz. Şurada eksi, burada da n-1 tane i var. Yani sıfırdan n-1'e n-2'ye kadar olan sayıların toplamı. Bu da nedir? n-2 çarpı n artı 1 bölükten n-1 bölü 2 gelir.
+
+683
+01:51:21,460 --> 01:51:35,359
+Şurayı, işte n-1'in karesi, n-2 çarpı n-1 bölü 2 diye hesap ettiğinizde, buradan gelen sonuç n çarpı n-1 bölü 2 imiş.
+
+684
+01:51:36,880 --> 01:51:42,960
+Detayına girmiyorum. Şimdi buna baktığımız zaman yaklaşık olarak bunun 1 bölü 2 n kare olduğunu görüyoruz.
+
+685
+01:51:43,880 --> 01:51:46,759
+Peki bunu asimptotik olarak neyle gösteririz?
+
+686
+01:51:49,395 --> 01:51:52,576
+Bunu hangilerini söyleyebiliriz?
+
+687
+01:51:58,547 --> 01:51:59,447
+Big-Teta n².
+
+688
+01:52:01,307 --> 01:52:02,467
+Kim söyledi?
+
+689
+01:52:03,907 --> 01:52:04,807
+[öğrenci], yok.
+
+690
+01:52:05,407 --> 01:52:05,987
+Ben söyledim.
+
+691
+01:52:06,547 --> 01:52:06,807
+Tamam.
+
+692
+01:52:08,327 --> 01:52:12,547
+Basic operasyon, yani burada da yine bu işlem kesin kes yapılacak.
+
+693
+01:52:12,687 --> 01:52:14,947
+Onun için Big-Teta n² diyebiliriz.
+
+694
+01:52:15,347 --> 01:52:21,667
+Aynı şekilde Big-O n² veya, çünkü bunu bu şekilde bulduk.
+
+695
+01:52:22,931 --> 01:52:32,692
+Big-O, Omega, N² de diyebiliriz. Ama Big-Teta, N² zaten bunu söyleyince diğerlerine kapsadığı için ekstra söz söylemeye gerek kalmıyor.
+
+696
+01:52:33,032 --> 01:52:39,171
+Yani artık arkadaşlar biz şöyle bir şey diyeceğiz. Burada bizim buna T-Total diyelim.
+
+697
+01:52:40,572 --> 01:52:45,811
+Base operasyonumuz Tn diye bir şeyden oluşuyor. Bu Tn algoritmamızın yükünü kapsıyor.
+
+698
+01:52:45,811 --> 01:52:49,051
+Bunun bilgisayarımızda bir maliyeti var. C diyelim buna.
+
+699
+01:52:49,363 --> 01:52:58,463
+Yani şu karşılaştırmak için bilgisayarda ne kadar süre geçiyor, birim saniye cinsinden bunu hesap edersek, ne var?
+
+700
+01:52:58,803 --> 01:53:08,143
+C çarpı n karelik bir running time'ı buluyoruz. Bakın bu tam bir running time. Bu basic operasyon cinsinden yazan adım sayısı.
+
+701
+01:53:08,143 --> 01:53:13,903
+Bu bir running time ve bu her zaman olacak olan işlemleri söylüyor.
+
+702
+01:53:16,627 --> 01:53:39,347
+Bu da işte şuradaki C değeri de bir unit time, bir makinedeki koşma zamanını söyleyen, bu işlemin gerçekleştirmesi için koşma zamanını söyleyen şey. Bu da bizim bulduğumuz T'niz. Basic operasyonun aslında bir frekansını söylüyor. Bu sayede algoritmamızı analiz etmiş oluyoruz.
+
+703
+01:53:44,884 --> 01:53:56,764
+Bütün durumlar birbirine ne oldu? Best case, average case ve mid-ro, worst case birbirine eşit oldu.
+
+704
+01:53:57,823 --> 01:54:03,323
+Peki, biraz daha bunun farklı bir analizini yapalım dersek ne olacak?
+
+705
+01:54:04,283 --> 01:54:10,083
+Örneğin, bir dizideki eleman bulma işlemi, eleman arama.
+
+706
+01:54:12,532 --> 01:54:20,351
+arayıp bulma durumunu bir basic operasyon şeklinde ele alalım. Basic operasyon olarak ele almamız gerekiyor.
+
+707
+01:54:22,072 --> 01:54:27,792
+İşin içine bu sefer best case, worst case ve average case böyle burada olduğu gibi doğrudan yazılamıyor.
+
+708
+01:54:27,792 --> 01:54:36,511
+Tamam bu genel bir yaklaşım ama burada biraz daha detaya gireceğiz. Bu sıralama algoritmalarının şeyi var.
+
+709
+01:54:38,355 --> 01:54:54,795
+Wikipedia'da geçenlerde göstermiştim, karşılaştığımı. Orada baktığımızda her bir algoritmanın best case'i, worst case'i ve average case'i var. O zaman dikkat etmemiz gereken algoritma aslında bir analiz yaparken best case analizi mi yapacağız, worst case analizi mi yapacağız?
+
+710
+01:55:06,644 --> 01:55:08,244
+53 geçiyor arkadaşlar.
+
+711
+01:55:08,784 --> 01:55:10,384
+03 geçe veya 05 geçe.
+
+712
+01:55:10,524 --> 01:55:13,404
+12 dakika sonra görüşelim, oradan devam edelim.
+
+713
+01:55:14,184 --> 01:55:15,444
+Çok fazla sıkmak istemiyorum.
+
+714
+01:55:16,624 --> 01:55:17,164
+Görüşmek üzere.
+
+715
+02:05:29,779 --> 02:05:30,499
+Evet arkadaşlar.
+
+716
+02:05:37,908 --> 02:06:02,847
+iteratif algoritmalardan iki örnek daha yapıp, sonra recursive algoritmalara gideceğim. Zannediyorum, beşe kadar bitiririz. Orada da bir iki örnek çözeceğim. Bittikten sonra, quiz başlar. Quiz normalde bir saat ama belki bir saat, on dakika falan süre verebilirim. Biraz daha yükleme vs. sıkıntı olmasın diye. Şimdi hızlıca başlayalım. Sequential Search algoritmamız.
+
+717
+02:06:05,235 --> 02:06:08,695
+Bir tane search diyelim mesela.
+
+718
+02:06:10,695 --> 02:06:12,195
+Bir end sayısı geliyor.
+
+719
+02:06:13,936 --> 02:06:17,476
+Bir tane integer dizi geliyor. Bir tane de key geliyor.
+
+720
+02:06:20,979 --> 02:06:33,179
+x diyelim. Ne yapacağız? 0. elemandan başlayıp gideceğiz. Bir kere burada yazılacak olan döngü veri yapılarından da öğrenmişsinizdir.
+
+721
+02:06:33,299 --> 02:06:40,843
+i küçüktür n, while döngüsü olacak. Öncelikle son elemana ulaşıp ulaşmadığına bakacağız. Ondan sonra...
+
+722
+02:06:41,779 --> 02:06:47,479
+Bir diğer kıstasım, A, İ'den aranan eleman farklı olduğu müddetçe arama yapacağız. Böyle bir şey.
+
+723
+02:06:48,539 --> 02:06:50,179
+Burada İ artı artı diyeceğiz.
+
+724
+02:06:51,339 --> 02:07:00,199
+Eğer bu döngü sonunda, eğer eninci elemandan daha küçük bir yerdeysek, yani son elemana ulaşmayızsek bulduk demektir.
+
+725
+02:07:02,199 --> 02:07:03,519
+Bir döndürelim.
+
+726
+02:07:04,139 --> 02:07:04,799
+Değilse,
+
+727
+02:07:07,347 --> 02:07:13,048
+veya i döndürürsek, i'nin durumuna göre bir şey de olabilir. Pozisyon bilgisini de döndürebiliriz.
+
+728
+02:07:14,188 --> 02:07:20,448
+Bu algoritmayı analiz etmek istiyoruz. Bizim dizimizde bir tane en alibanlı dizi.
+
+729
+02:07:21,168 --> 02:07:28,028
+Tamam, temel işlemimiz, basic operasyonumuz karşılaştırma işlemi. Bunu da biraz önce konuştuk.
+
+730
+02:07:28,847 --> 02:07:32,048
+Bu karşılaştırma işlemi nerede? Mesela şurada yapılacak.
+
+731
+02:07:35,828 --> 02:07:58,328
+sayısını, çünkü işlemin kendisi karşılaştırma ama karşılaştırma işlemi while döngüsünde olduğu için kaç defa yapılacağı belli değil. Biraz öncekinde for döngüsündeydi değil mi? Yani kesin kes yapılıyordu ama burada muğlak bir durum var. İşte böyle bir durumda
+
+732
+02:07:59,091 --> 02:08:05,131
+doğrudan tek bir analizle bunu yapamıyoruz. Best case, worst case ve average case analizi yapmak lazım.
+
+733
+02:08:05,771 --> 02:08:10,531
+Algoritma analizinde best case ve average case nispeten kolay yapılan şeyler.
+
+734
+02:08:10,651 --> 02:08:15,731
+Average case birazcık şey, best case ve worst case kolay, average case biraz zor.
+
+735
+02:08:16,531 --> 02:08:17,931
+Neden zor olduğunu şimdi konuşacağız.
+
+736
+02:08:19,551 --> 02:08:24,671
+Şimdi öncelikle elemanın varlığından ve yokluğundan söz ediyoruz.
+
+737
+02:08:25,587 --> 02:08:43,787
+O zaman yapacağımız şey şu olması lazım arkadaşlar. Eleman varlığı, yokluğu söz konusu olduğu için biz worst case'i ve best case'i çok rahat söyleyebiliriz. Yani hiç basic operasyon hesaplamaya gerek yok. Yani hesaplamaya kalksak işte sıfırdan n'e kadar diyeceğiz, bir denklem kuracağız worst case için.
+
+738
+02:08:44,627 --> 02:08:46,908
+Base case için hiç yani onu bile yapmaya gerek yok.
+
+739
+02:08:48,435 --> 02:08:54,076
+Şimdi en kötü durumda kaç defa işlem yapmamız gerekiyor burada arkadaşlar? Karşılaştırma işlemi.
+
+740
+02:08:56,475 --> 02:09:01,456
+En defa değil mi? Yani bu dizinin son elemanına gelene kadar olacak bir şey bu.
+
+741
+02:09:02,095 --> 02:09:08,796
+O zaman doğrudan buna n dersek, bunun en kötü durumu hiç şükhe yok.
+
+742
+02:09:09,796 --> 02:09:14,395
+Theta n diyebiliriz. Yani alt şey de böyle, alt limit de, üst limit de böyle.
+
+743
+02:09:15,891 --> 02:09:21,771
+Best case'de yapacağımız şey nedir? En iyi durumda ne yapabiliriz?
+
+744
+02:09:24,531 --> 02:09:25,131
+Bir olalım.
+
+745
+02:09:25,531 --> 02:09:31,531
+Bir defada. Evet, güzel. Yani buna da Theta bir diyebiliriz. Bakın bu kadar kolay.
+
+746
+02:09:32,491 --> 02:09:34,831
+Ama şimdi average case'e gelelim.
+
+747
+02:09:36,011 --> 02:09:42,071
+Average case, birincide baktım bulamadım acaba ikincide bulabilir miyim? İkincide bulamadım, üçte olabilir mi?
+
+748
+02:09:43,828 --> 02:10:05,868
+Bir şey yapacağız. Şimdi Eulich Keyes'e baktığımız zaman şöyle bir, yine n'e bağlı bir şey çıkacaktı. Önce bir olasılık belirliyorum. Bu eleman bu dizinin içinde ya vardır ya yoktur. Bir kere ben p olasılığıyla sıfırla bir arasında var olduğunu kabul ediyorum. Bu successful durumunda.
+
+749
+02:10:11,699 --> 02:10:16,059
+Olasılığın nedir? 1-P, unsuccessful değil mi?
+
+750
+02:10:18,179 --> 02:10:27,459
+Peki, her bir elemanın olma olasılığını dikkate alarak, bir elemanın 2. pozisyondaki olma olasılığına bakacağız.
+
+751
+02:10:30,039 --> 02:10:37,939
+1. pozisyonda olma olasılığı, 2. pozisyonda olma olasılığı, burada elemanları yerleştirirken herhangi bir ayrıcalık tanınmıyor pozisyonlara.
+
+752
+02:10:39,796 --> 02:10:44,356
+ilgili bir pozisyonda olma olasılığı bir eleman, bir pozisyonda olma olasılığı P bölü N'dir.
+
+753
+02:10:44,536 --> 02:10:48,816
+N tane elemanım var. Şuradaki P olasılığından yola çıkarak P bölü N'dir diyorum.
+
+754
+02:10:49,816 --> 02:10:54,836
+O zaman diyeceğiz ki, EurichCase'im P bölü N defa karşılaştırma yapacağım.
+
+755
+02:10:56,156 --> 02:11:00,836
+Ve bu yaptığım karşılaştırmanın sonucunda bulamama ihtimalimi ekleyeceğim.
+
+756
+02:11:01,492 --> 02:11:05,851
+Bulabilme ihtimalinde şu Basic operasyonu kaç defa yapacağım? Onu hesap edeceğiz.
+
+757
+02:11:06,751 --> 02:11:11,831
+Yani şu C-Average-N'i biraz daha aşağıya alayım. Şöyle yazmam lazım.
+
+758
+02:11:14,231 --> 02:11:24,072
+Nedir? Birinci işlemde bir tane karşılaştırmayı yaptım. P bölü n olma olasılığında olabilirdi.
+
+759
+02:11:24,532 --> 02:11:30,372
+Burada bulamadım, ikinci elemana bakacağım. Yani iki defa karşılaştırma yapmış olacağız.
+
+760
+02:11:31,011 --> 02:11:39,311
+Çarpı P bölü N, nokta nokta nokta, eninci elemana kadar gidiyorum. Bütün elemanlara bakacağım sonuçta.
+
+761
+02:11:40,271 --> 02:11:42,591
+Her birinde olma olasılığı P bölü N diyorduk.
+
+762
+02:11:43,391 --> 02:11:48,652
+İşte bu bize successful durumda, yani elemanı bulabildiğim durumda
+
+763
+02:11:49,268 --> 02:12:04,148
+ki olasılıksal değeri, karmaşıklık değeri verecek. Artı, bir de bulamama durumu var. N çarpı, 1-P. Çünkü en defa baktım, bulamadım, o da bulamamamın durumu. Burası successful.
+
+764
+02:12:07,859 --> 02:12:09,359
+Burası Unsuccessful.
+
+765
+02:12:12,884 --> 02:12:20,743
+Ve buradan yola çıkarak, şurayı P bölü N parantezine alırsak, yukarıdan ne gelecek arkadaşlar?
+
+766
+02:12:20,904 --> 02:12:26,783
+Birden N'e kadar olan sayıların toplamı gelecek. Yani N çarpı N artı 1 bölü 2.
+
+767
+02:12:27,984 --> 02:12:32,783
+Artı, şu taraftan da N çarpı 1 eksi P gelecek.
+
+768
+02:12:41,779 --> 02:12:44,939
+artı N çarpı 1 eksi P.
+
+769
+02:12:45,999 --> 02:12:46,759
+Eurich case.
+
+770
+02:12:47,399 --> 02:12:51,399
+Şimdi P'nin 1 olması durumu, yani bulabildiğimi kabul ettiğimizde,
+
+771
+02:12:52,319 --> 02:12:54,759
+P 1 iken, bu successful'dur.
+
+772
+02:12:59,220 --> 02:13:03,940
+1 iken burası 0 olacağı için ne oluyor? n artı 1 bölü 2 defada bulmuş oluyoruz.
+
+773
+02:13:05,619 --> 02:13:09,060
+p eşittir 0 iken, yani bulamadık.
+
+774
+02:13:14,460 --> 02:13:17,400
+0 iken burası 0 oluyor, buradan da ne gelecek?
+
+775
+02:13:17,939 --> 02:13:45,539
+N girecek. Zaten en kötü ortalama durumda da şeyi bulamadığımızda N defayı bulacağımızı söylemiştik. Buradan yola çıkarak baktığımızda bu ikisinin de bize gösterim nedir arkadaşlar? Big-O, N şeklindedir. Successful durum ve unsuccessful durum. Tabi ikisini ayrı ayrı successful için Big-O şey içinde ayrı yazabilirsiniz. İkisi de bu şekilde çıktı. Buradan yola çıkarak da diyoruz ki bunun average case'i de O-N'miş. Bakın, best case'e
+
+776
+02:13:46,036 --> 02:14:12,595
+Theta n dedik. Buna Theta 1 dedik ama buna o n dedim. Niye? Çok küçük bir şeyde yani ilk seferde de bulabilirim. Son seferde de bulalım ama olabilecek en şey, nihai durum şeydir. Big o n'dir. Şimdi Theta n deseydim, Theta n'den daha az seferde bulunma olasılığı var.
+
+777
+02:14:13,140 --> 02:14:17,500
+Onun için θ-n'in altına düşme durumundan dolayı θ-n diyemem.
+
+778
+02:14:18,100 --> 02:14:20,619
+Çünkü θ-n beni aşağıya düşmeye sınırlıyor.
+
+779
+02:14:21,180 --> 02:14:22,880
+Yani θ-1 gibi bir şey olamaz.
+
+780
+02:14:23,619 --> 02:14:25,239
+Bir defa da bulabileceğim için.
+
+781
+02:14:25,739 --> 02:14:27,800
+Onun için n demiyorum. Burası bir go n oluyor.
+
+782
+02:14:28,579 --> 02:14:32,039
+Üç şekilde karmaşıklık böylece ortaya çıkmış oluyor.
+
+783
+02:14:32,220 --> 02:14:32,779
+Var mı sorun?
+
+784
+02:14:39,091 --> 02:14:46,712
+Peki. Şimdi bir algoritma daha çalışalım. Ondan sonra rekürsif algoritmaların analizine gireceğiz.
+
+785
+02:14:48,672 --> 02:14:57,692
+Insertion Sort. Bu Insertion Sort aslında çok kullanışlı bir algoritma. Bunun bir de Shell Sort diye farklı bir versiyonu var.
+
+786
+02:14:58,372 --> 02:15:01,952
+Önce kısaca bir algoritmayı hatırlayalım. Bunu da veri yapılarında anlatıyorlar.
+
+787
+02:15:04,756 --> 02:15:14,416
+9, 2, 1, 7, 4, 5. Insertion Sword hangi elemandan başlıyordu kontrol etmeye?
+
+788
+02:15:16,155 --> 02:15:23,095
+Hani bunu günlük hayatımızda işte kart karma veya ne bileyim bir şeyleri mesela sınav kağıtlarını sıralarken biz yapıyoruz.
+
+789
+02:15:23,695 --> 02:15:28,176
+Veya oyun kağıtlarında kullanılıyor. Bir kağıdı alıyorsun araya ekliyorsun değil mi?
+
+790
+02:15:28,176 --> 02:15:31,716
+Bu diskambil kağıdı mı diyor? 52 tane olan orada falan kullanılıyor.
+
+791
+02:15:32,692 --> 02:15:34,311
+Bu da onu benzeten bir algoritma.
+
+792
+02:15:35,551 --> 02:15:39,891
+Şimdi bakıyoruz, kaçıncı elemandan başlayacağımızı bilen var mı?
+
+793
+02:15:41,091 --> 02:15:47,731
+Bu algoritmada. Geçen dönem gördünüz arkadaşlar veya veri yapıları dersinde hangi dönem aldıysanız anlatılmış bir şey var orada.
+
+794
+02:15:47,731 --> 02:15:48,711
+İkinci eleman.
+
+795
+02:15:49,612 --> 02:15:52,072
+Bir daha alamadım sesi.
+
+796
+02:15:52,411 --> 02:15:53,311
+İkinci eleman.
+
+797
+02:15:53,411 --> 02:15:58,152
+İkinci eleman, evet. Çünkü birinci elemanı
+
+798
+02:15:59,091 --> 02:16:18,591
+Evvela en küçük kabul ediyoruz ama 2 ile bir kontrol ediyoruz. Şimdi bakacağız, ikinci elemanla bu düzen bozuluyor mu? Evet, bozuluyor. O zaman diyeceğiz ki bununla bunu yer değiştirelim. 2, 9, 1, 7, 4, 5. Şimdi 2'ye baktıktan sonra 1'e bakacağız.
+
+799
+02:16:19,572 --> 02:16:45,791
+Birinci eleman buraya mı gelir? Yok, buraya gelmez. Buraya mı gelir? Buraya gelebilir. O zaman bunun yerini burası alıyoruz, değiştiriyoruz. Sonra diğer elemanlar için buraya mı olur? Buraya mı olur? Kendisinden önceki elemanları. Bu şekilde kontrol ediyoruz. Aslında bir öncekine bakmak yeterli oluyor. Şöyle diyeyim. Bunun için buraya baktık. Şimdi burada bundan daha küçük eleman var ya, artık bunu biliyoruz. Şunun için şuraya bakacağız.
+
+800
+02:16:46,548 --> 02:16:54,208
+Buraya. Bir de tabii geriye geleceğiz. Artık bu burada. İlerledikçe şu bakma sayıları, geriye doğru gitme sayıları azalacak.
+
+801
+02:16:54,208 --> 02:16:58,168
+Şimdi hızlıca flow şartını çizeyim bunun da.
+
+802
+02:17:01,652 --> 02:17:28,952
+N eleman var, bir de AN elemanımız var. Bir kere burada baştan sona, yani ikinci elemandan başladık, sona doğru en az bir defa bir kontrol yapmak gerekiyor. Eğer dizi sıralıysa şanslıyız, çok fazla, yani sadece bir kontrol yapıp işi bitireceğiz. Ama sıralı değilse, işte dizinin durumuna göre bir de swap işlemleri yapılacak. Hatta swap değil de shift işlemleri yapılacak, araya ekleme işlemleri.
+
+803
+02:17:32,500 --> 02:17:34,500
+i eşittir birden
+
+804
+02:17:38,355 --> 02:17:42,275
+Birer artarak n artı birinci elemana kadar gidiyoruz.
+
+805
+02:17:44,115 --> 02:17:45,315
+Pardon, n. elemanı ne?
+
+806
+02:17:45,855 --> 02:17:47,275
+n. elemana doğru gidiyoruz.
+
+807
+02:17:48,315 --> 02:17:50,135
+Şimdi baktığımız eleman,
+
+808
+02:17:51,416 --> 02:17:53,896
+önce tmp olarak bir yedek alınıyor.
+
+809
+02:17:56,236 --> 02:17:58,296
+tmp eşittir a'nın iyisi.
+
+810
+02:17:59,896 --> 02:18:03,135
+Sonra bu yer bilgisinde bir değişkeni alıyoruz.
+
+811
+02:18:03,796 --> 02:18:19,636
+Sonra diyoruz ki bu elemandan geriye doğru gidelim ve kuralı bozan bir durum var mı? Yani ben şunu geriye doğru alacağım, ekleyebileceğim yeri arıyorum. O zaman ekleyebileceğim yeri ararken burada bir while döngüsü lazım. Çünkü nereye ekleyeceğim belli değil.
+
+812
+02:18:33,683 --> 02:18:34,683
+Küçüktür.
+
+813
+02:18:36,023 --> 02:18:37,183
+Şöyle yapalım.
+
+814
+02:18:37,183 --> 02:18:38,984
+A'nın c eksi birinden.
+
+815
+02:18:46,675 --> 02:18:54,635
+Olduğu müddetçe, şimdi geleceğiz, burada j-1. elemana, j. elemana yer değiştireceğiz.
+
+816
+02:18:55,135 --> 02:18:56,695
+Bakacağız eğer bu şart sağlanıyorsa.
+
+817
+02:18:58,576 --> 02:19:11,615
+A'nın j'sine, A'nın j-1'ini al ve j'yi de bir azalt diyoruz.
+
+818
+02:19:16,020 --> 02:19:18,020
+Onu da şuraya...
+
+819
+02:19:18,020 --> 02:19:21,680
+Grafik tablet maalesef yazmada sıkıntı çıkarıyor bana.
+
+820
+02:19:22,779 --> 02:19:24,100
+J eşittir, J eksi bir.
+
+821
+02:19:26,060 --> 02:19:30,899
+Bu işlem yapıldıktan sonra, bu döngü böyle devam edecek, yeri bulana kadar.
+
+822
+02:19:31,680 --> 02:19:37,760
+En son TMP'ye aldığımız elemanı da, ne yapacağız? A'nın J'inci hücresine yazacağız.
+
+823
+02:19:42,131 --> 02:19:46,631
+Ondan sonra yapacağımız şey dizinin bir sonraki elemanına bakmak.
+
+824
+02:19:50,644 --> 02:19:51,584
+Genel olarak böyle.
+
+825
+02:19:53,804 --> 02:20:05,283
+Şimdi, burada bu algoritmayı analiz ederken, yine worst case, best case ve average case analizlerine bakacağız.
+
+826
+02:20:05,443 --> 02:20:07,504
+Şimdi, best case'e ve worst case'e bir bakalım.
+
+827
+02:20:08,344 --> 02:20:12,564
+Worst case'imiz nasıl olur? Dizi tersten sıralıdır arkadaşlar.
+
+828
+02:20:13,363 --> 02:20:18,403
+Her defasında bir elemanı alıp, en başa veya eklenecek yerine götürmek.
+
+829
+02:20:18,623 --> 02:20:20,683
+Bunu al, oraya götür, bunu al, oraya götür.
+
+830
+02:20:21,343 --> 02:20:24,123
+Yani şu iç döngü, dış döngümüz kaç tane?
+
+831
+02:20:24,743 --> 02:20:26,383
+Birden n'e kadar dönecek.
+
+832
+02:20:26,943 --> 02:20:28,183
+İçteki döngü kaç tane?
+
+833
+02:20:29,603 --> 02:20:32,543
+O da sıfırdan i. elemana kadar gelecek.
+
+834
+02:20:33,664 --> 02:20:39,363
+O zaman, bu analizi yaparken, dıştaki döngünün
+
+835
+02:20:41,012 --> 02:20:42,332
+Şurada
+
+836
+02:20:42,332 --> 02:20:46,192
+Average Case'ı yazmışız da
+
+837
+02:20:46,192 --> 02:20:48,312
+bir saniye
+
+838
+02:20:48,312 --> 02:20:51,452
+Average Case üzerinden analiz detayları götürelim.
+
+839
+02:20:52,072 --> 02:20:55,692
+Worst Case'e baktığımda dıştaki döngü en defa kesin dönecek.
+
+840
+02:20:56,632 --> 02:21:00,452
+Çünkü dağılım bir kere şey, tersten sıralı bir dizi var elimizde.
+
+841
+02:21:01,532 --> 02:21:02,092
+Ondan sonra
+
+842
+02:21:02,772 --> 02:21:26,632
+İçteki döngü de her defasında alacak başa alacak ilgili yere götürecek. Çünkü hatta başa doğru götürecek. O zaman n çarpı n'lik içteki de n defa dönüyor, dıştaki de n defa işlem yapıyor diyoruz. Worst case'imiz burada n kare oluyor. Hatta burada asimptotik olarak bunu söyleyecek olursak Theta n kare diyebiliriz.
+
+843
+02:21:29,139 --> 02:21:35,700
+Bunun Big Omega n kare veya Big O 10 kare n kare olarak da söylememiz mümkün.
+
+844
+02:21:36,920 --> 02:21:38,279
+Üçü de mümkün burada.
+
+845
+02:21:38,920 --> 02:21:42,939
+Çünkü yaptığımız şey, şu worst case'i şöyle yapalım.
+
+846
+02:21:44,979 --> 02:21:49,239
+Biliyoruz ki dıştaki döngü i eşittir birden n'e kadar.
+
+847
+02:21:50,360 --> 02:21:52,040
+İçteki döngüde buraya da j diyelim.
+
+848
+02:21:53,427 --> 02:22:02,007
+birden i'ye kadar, işte bir tane işlem yapıldığını, kontrol işlemini yapıldığını kabul edelim. Bu birden i'ye kadar i'lerin toplamı
+
+849
+02:22:02,007 --> 02:22:13,327
+i çarpı i artı 1 bölü 2. Şuradan da i'ye bağlı bir şey var. Ne olacak? Şöyle diyelim hatta.
+
+850
+02:22:21,236 --> 02:22:25,836
+Veya burada şunu desek, bir dakika, şurada bir tane işlem var, i tane işlem yok arkadaşlar.
+
+851
+02:22:26,376 --> 02:22:29,675
+Burada i artı bir tane, yani i tane işlem olduğunu kabul edelim.
+
+852
+02:22:30,175 --> 02:22:38,596
+Buradan da n çarpı n artı bir bölü ikilik, yani yaklaşık olarak Theta n karelik bir işlem karmaşıklığı geliyor.
+
+853
+02:22:39,236 --> 02:22:40,936
+Şuradaki işlemi bir birim işlem alacağız.
+
+854
+02:22:41,596 --> 02:22:44,996
+Burası birden i'ye kadar, burası birden n'e kadar.
+
+855
+02:22:46,675 --> 02:22:48,436
+Karmaşıklık bu şekilde, worst case'de.
+
+856
+02:22:49,940 --> 02:22:52,100
+Burada sıkıntı var mı anlaşılmayan bir şey?
+
+857
+02:22:54,340 --> 02:22:56,260
+Best case'e baktığımızda,
+
+858
+02:22:57,780 --> 02:22:59,460
+Best case nasıl olur bunun?
+
+859
+02:22:59,940 --> 02:23:01,940
+Zaten sıralanmış bir dizidir.
+
+860
+02:23:02,659 --> 02:23:04,659
+Sıralanmış bir dizide,
+
+861
+02:23:05,700 --> 02:23:07,060
+işlem yaparken,
+
+862
+02:23:07,620 --> 02:23:11,780
+birden n-1'e kadar bir defa kontrol kesinlikle olacak.
+
+863
+02:23:11,940 --> 02:23:15,060
+Bu kontrollerin hiçbirisinde,
+
+864
+02:23:15,827 --> 02:23:20,987
+Hiçbir swap yapmayacağız. Hiçbir swap yapmadığımız için birden n'e kadar kontrol ettik, ettik, ettik.
+
+865
+02:23:21,387 --> 02:23:27,687
+Yani şu işteki döngüye hiçbir zaman girmedik. O zaman sadece şuradaki bir işlem yapıldı.
+
+866
+02:23:28,547 --> 02:23:35,827
+i eşittir birden n'e kadar bir tane işlem dersek, burada da işte n-1 tane veya n tane işlem diyoruz.
+
+867
+02:23:36,207 --> 02:23:41,268
+O zaman burada da Big Theta n'lik bir karmaşıklık çıkıyor. Bu ikisini anladık mı?
+
+868
+02:23:44,659 --> 02:23:45,959
+Geldik Average Case'e.
+
+869
+02:23:47,399 --> 02:23:53,340
+Average Case, işte random bir şekilde dağıtılmış bir dizi düşünelim.
+
+870
+02:23:53,880 --> 02:24:03,340
+Bu dizide yapacağımız iş, herhangi bir noktadaki elemanı daha alt seviyede bir noktaya getirmek.
+
+871
+02:24:04,639 --> 02:24:08,079
+N tane, K tane elemanımız var, öyle düşünelim.
+
+872
+02:24:08,939 --> 02:24:09,840
+Şöyle bir dizi.
+
+873
+02:24:13,108 --> 02:24:36,648
+K noktasından, J noktasına bir elemanı getirmeye çalışacağız. Şimdi getirirken tek tek bakıyoruz, kontrol ediyoruz. Dolayısıyla burada kaç tane kontrol yapılır? İşte şurası birinci eleman, average case diyelim. Burası birinci eleman, burası eninci eleman. K noktasından J'ye getirmek için bir kontrol yapmamız lazım. Burada kaç tane kontrol yapacağız? K-J.
+
+874
+02:24:37,427 --> 02:25:04,207
+artı bir tane kontrol yapılıyor değil mi? Ve J'de de getireceğimiz yeri bulduk. Ve bunu her bir eleman için yapacağımızı düşünelim. O zaman içerideki döngüde, yani şu iç döngüde olacak olay nedir? K tane eleman için bu işlem yapılacaksa, işte J eşittir birden K'ya kadar diyorum. K eksi J artı bir defa
+
+875
+02:25:04,308 --> 02:25:08,427
+Bu taşıma iş, kontrol işlemi yapılacak. Number of comparison'e bakıyoruz.
+
+876
+02:25:09,008 --> 02:25:10,747
+Şimdi burada yapacağımız average case,
+
+877
+02:25:12,448 --> 02:25:14,888
+average case,
+
+878
+02:25:19,603 --> 02:25:28,384
+K tane elemanın her birisi için bölü olma olasılığı var. Ben bunların ortalamasını alırsam, yani K'ya bölersem, ortalama bir değer bulacağım.
+
+879
+02:25:28,384 --> 02:25:44,283
+Şimdi şurayı hesapladığımızda, içteki taraf ne giriyor? 1 bölü K. Şimdi birden K'ya kadar K'ların toplamı K'nın karesidir. Birden K'ya kadar J'lerin toplamı K çarpı K artı 1 bölü 2'dir.
+
+880
+02:25:47,379 --> 02:25:50,079
+Birden K'ya kadar birlerin toplamı K'dır.
+
+881
+02:25:51,759 --> 02:25:53,040
+Burada başka bir şey yok.
+
+882
+02:25:53,879 --> 02:25:59,899
+Şimdi şu K ile şunu götürürüm, bunu götürürüm, bunu da bir yaparım.
+
+883
+02:26:01,020 --> 02:26:01,399
+Ne oldu?
+
+884
+02:26:03,939 --> 02:26:08,799
+K eksi K artı bir bölü iki artı bir.
+
+885
+02:26:09,700 --> 02:26:11,040
+2K eksi 2K.
+
+886
+02:26:12,755 --> 02:26:21,095
+eksi 2k da eksi k, pardon 2k eksi k da k, eksi 1 de k eksi 1 bölü 2.
+
+887
+02:26:21,295 --> 02:26:24,355
+Bununla da 2 artı 1 ile çarparsak k artı 1 bölü 2 geliyor.
+
+888
+02:26:25,695 --> 02:26:26,675
+Tamam, matematiksel işlem.
+
+889
+02:26:26,675 --> 02:26:33,195
+Bu içerideki döngü için, dıştaki döngü için bunu yaptığımızda, average case, buraya iç döngü diyelim.
+
+890
+02:26:35,355 --> 02:26:36,955
+Average, iç.
+
+891
+02:26:38,227 --> 02:26:44,907
+average dış döngüyle bunu kontrol ettiğimizde, k ikinci elemandan başlamıştık, n. elemana kadar.
+
+892
+02:26:46,087 --> 02:26:49,707
+İçteki döngüde k artı 1 bölü 2 defa işlem yapılıyor. Bu da nedir?
+
+893
+02:26:50,887 --> 02:27:02,288
+1 bölü 2'yi dışarıya atarsak, k bölü 2 artı 1 bölü 2 diye düşünürsek, 1 bölü 2 çarpı n artı 1 çarpı n artı 2 bölü 2 gelir.
+
+894
+02:27:03,547 --> 02:27:05,707
+Bunu da düzeltirsek, 1 bölü 4.
+
+895
+02:27:07,283 --> 02:27:19,144
+n kare artı, şurası n kare artı, 3n artı 2'dir arkadaşlar, şu açılım geliyor. Yani Big-O n kare. Bakın buna Big-O n kare dedim, niye?
+
+896
+02:27:21,324 --> 02:27:28,783
+Çünkü her zaman kesin kes n kareye ulaşacağız diye bir şey yok. En fazla olabilecek durum Big-O n kare. Bakın, average case'ini de bulduk.
+
+897
+02:27:34,675 --> 02:27:56,475
+n olur. Worst case'i ve average case'i n². Tabi birisinde Big-O, öbüründe de Big-O yazabilir. Onlar problem değil. Ama n² işlem kesin kes var. Anlaşılmayan bir şey var mı? Şimdi gelelim, burada bir sorun yoksa, rekürsif algoritmaların analizine.
+
+898
+02:28:01,172 --> 02:28:05,652
+Şimdi rekürsif algoritmalar, en basitinden faktöriyelden örnek verecek olsak ne yapıyorduk?
+
+899
+02:28:05,711 --> 02:28:11,211
+Kendi kendini çağıran, kendini defalarca çağıran bir şey. n için n-1'i çağırıyorduk.
+
+900
+02:28:13,252 --> 02:28:19,711
+İteratif bir algoritmayı analiz ederken Basic operasyonu buluyoruz. O Basic operasyon kaç defa tekrar edecek onu hesap ediyoruz.
+
+901
+02:28:19,832 --> 02:28:23,132
+Fakat burada Basic operasyonu bulduktan sonra fonksiyon baştan başlıyor.
+
+902
+02:28:27,188 --> 02:28:49,427
+bize söyleyen bir Recurrence Relation kurmamız lazım. Mesela faktöriyel için bakalım, faktöriyel algoritması fn eşittir, if n eşittir 0 ise return 1 diyoruz, değilse return fn-1 şarpı n diyoruz.
+
+903
+02:28:49,427 --> 02:28:53,968
+Şimdi burada analiz yaparken basic operasyonumuz ne?
+
+904
+02:28:59,796 --> 02:29:00,523
+Evet.
+
+905
+02:29:05,203 --> 02:29:05,743
+Çarpma işlemi.
+
+906
+02:29:06,644 --> 02:29:20,524
+Çarpma işlemi, güzel. O zaman Basic Operasyon çarpma işlemi üzerinden yürüyecek. Ama yürüyen bu çarpma işlemi içerisinde öncesinde bir tane fonksiyon çağrısı var.
+
+907
+02:29:20,524 --> 02:29:32,224
+İşte Recurrence Relation'ı kurarken şeyin temel durumunu, Recursive Algorithma'nın temel durumunu dikkate alarak temel durumunda acaba Basic Operasyon var mı?
+
+908
+02:29:32,755 --> 02:29:39,635
+Yoksa, kaç defa bu Basic Operasyon yapılacak, bunun analizini yapmamız lazım.
+
+909
+02:29:40,955 --> 02:29:47,155
+Şimdi, buna mesela ben Basic Operasyon çarpma dedik, maltıklı eşit dedik.
+
+910
+02:29:47,915 --> 02:29:53,815
+Aslında bizim fonksiyonumuz şu, fn eşittir, fn-1 çarpı n'den oluşuyor.
+
+911
+02:30:01,299 --> 02:30:06,879
+yazarken bu eşitlikten yaralanır. Ama diyorum ki basic operasyonumuz şurada da söylediğim gibi çarpma işlemi.
+
+912
+02:30:07,599 --> 02:30:11,699
+Şimdi algoritmanın temel durumunda çarpma işlemine dair bir şey var mı?
+
+913
+02:30:14,019 --> 02:30:24,340
+Yok. Yani ben m'in sıfırı için buna şey diyelim, mn diyelim, şey karışmasın veya tn diyelim ne olacak tn diyelim buna da.
+
+914
+02:30:25,780 --> 02:30:52,080
+tn'i bulmaya çalışacağım. Ama bunu bulurken bir şeyler yazacağız. t'nin sıfırı için, yani buraya sıfır girerse, hiçbir yerde çarpma yapacak mıyım? Yapmayacağım. Çünkü şurada yazacağım şey n eşittir sıfır için sadece bir döndürecektim. O zaman basic operasyon t'nin sıfırı durumunda sıfır oluyor. Dikkat ederim. Peki t'nin sıfırı olmadığı durumda ne yapacağım? Bir tane çarpma yapacağım. Artı bir de
+
+915
+02:30:52,852 --> 02:31:18,632
+tn-1 defa fonksiyonumu tekrar çağıracağım. Böyle bir yapıya biz Recurrence Relation diyoruz arkadaşlar. Şu bizim Initial Condition'ımız. Initial Condition'a göre elde ettiğim başlangıç durumunda bu. Dikkat edin bunu çarpma üzerinden yapıyorum. Şimdi geldik bunu çözmeye. Bunun çözümünde
+
+916
+02:31:20,244 --> 02:31:40,024
+Forward Substition, Backward Substition, işte master metot var. İlk önce biz Backward Substition ile bunu çözeceğiz. Bunun mantığı da şudur arkadaşlar. Elimizde tn diye bir şey varsa, yani şöyle bir çalışma zamanı şey var, Recurrence Slation var.
+
+917
+02:31:48,211 --> 02:32:07,831
+t n-2 artı 1 yazsam, bir de burada yukarıda kendisinden artı 1 gelecekti, ne oldu? t n-2 artı 2 yazabilirim. t n-2 yerine t n-3 artı 1, bir de artı 2 vardı, yani t n-3 artı 3 yazabilirim.
+
+918
+02:32:15,763 --> 02:32:30,043
+1'den i'ye kadar, pardon, i tane 1 dediğimiz, i çarpı 1 diyelim. Yani i gibi bir şey gelecek. O zaman i yerine öyle bir şey vereyim ki şu temel durumu elde edebileyim.
+
+919
+02:32:30,883 --> 02:32:37,903
+i yerine n verirsem ne olur? t, n-n, artı, i yerine n verdik, n'i bulduk.
+
+920
+02:32:38,963 --> 02:32:43,103
+ve bu n-n t0'ı verdi bana, artı n'den.
+
+921
+02:32:43,243 --> 02:32:47,504
+t0 dediğim şeyde ben yukarıda hiçbir işlem yapılmayacağını söylemiştim.
+
+922
+02:32:48,363 --> 02:32:50,203
+Yani buradan neyi buluyorum? n'i buluyorum.
+
+923
+02:32:50,923 --> 02:32:54,523
+Bu n işte bizim çalışma zamanımızın sonucunu gösteriyor.
+
+924
+02:32:54,623 --> 02:33:01,123
+Ve bu Big Omega n'dir, Big Theta n diyebiliriz.
+
+925
+02:33:01,523 --> 02:33:05,963
+Peki burada en iyi durum, en kötü durum diye bir şey var mı çarpma için?
+
+926
+02:33:09,971 --> 02:33:11,371
+Bunu söyleyebilir miyiz?
+
+927
+02:33:14,672 --> 02:33:14,971
+Hayır.
+
+928
+02:33:14,971 --> 02:33:17,432
+Baktığımız zaman yok arkadaşlar. Niye?
+
+929
+02:33:18,231 --> 02:33:24,292
+Bu çarpma işlemi yapılırken öncesinde yani çarpma sadece şurada herhangi bir if gibi bir şey yapılmıyor.
+
+930
+02:33:24,811 --> 02:33:27,672
+Hani şu burada zaten çarpma hiç yok şu kısımda.
+
+931
+02:33:28,332 --> 02:33:32,031
+Dolayısıyla big-tata-m diye ifade edebiliriz.
+
+932
+02:33:33,652 --> 02:33:38,472
+Bu işlem backward substitution. Bunun birkaç farklı şeyini de anlatacağım birazdan.
+
+933
+02:33:41,412 --> 02:33:46,452
+Bunu forward substitution ile çözme şeyi var. Bir de kısaca ona bakalım.
+
+934
+02:33:48,952 --> 02:33:52,391
+Ayrık matematikte ben anlatıyordum. Burada pek hocalar anlatmamışlar.
+
+935
+02:33:52,391 --> 02:33:54,452
+Recursing Tree metodu var.
+
+936
+02:33:56,012 --> 02:34:00,632
+Veya birazdan göreceğimiz başka yöntemlerde kullanılan metotlar da var.
+
+937
+02:34:01,043 --> 02:34:11,704
+Ama en fazla biz burada backward substitution'u kullanıyoruz. Şimdi backward substitution'u kullanırken şu pattern, şu düzen çok rahat karşımıza çıkabiliyor.
+
+938
+02:34:11,943 --> 02:34:19,864
+n-1'de 1 vardı, n-2'de 2 vardı, n-3'de 3 var, n-n'de yani t0'da n'e ulaşacağım demektir.
+
+939
+02:34:20,423 --> 02:34:26,283
+Demek ki bu algoritmanın karmaşıklığı Big-O veya Big-Theta n diyebiliriz. Hatta Big-Omega'da denir.
+
+940
+02:34:26,639 --> 02:34:33,299
+3'ü de çünkü burada herhangi bir best case, worst case, average case aynı. Yani en defa çarpma yapılacak demektir.
+
+941
+02:34:34,360 --> 02:34:47,479
+Forward substitution da şu, tn eşittir, tn-1 artı 1 için, mesela t0'ı biz biliyoruz, işte 0 olduğunu, t1'i bulalım diyoruz.
+
+942
+02:34:47,479 --> 02:34:54,099
+t1 nedir? t0, 0'dı, 0 artı 1'den 1 geliyor. t1'e 2'ye bakıyoruz.
+
+943
+02:34:56,051 --> 02:35:18,752
+ne oluyor? İşte T1'in değeri 1, bir de oradan 2 geliyor. Ondan sonra T3'e bakıyoruz. Bu ileride Tn'e gidince ne olacak? 1, 2, 3, 4, böyle n-1, n diye devam edip gelecek. Buradan biz n'i çıkaracağız. Ama şu düzenin çıkması biraz daha zor oluyor orada. Onun için Backward Substitution daha mantıklı bir yöntem.
+
+944
+02:35:21,075 --> 02:35:25,075
+Şimdi gelelim bir örnekte hatta iki örneğimiz daha varmış onlara bakalım.
+
+945
+02:35:28,075 --> 02:35:31,075
+Number of binary digits in a number
+
+946
+02:35:41,075 --> 02:35:45,075
+Yani bir sayı gireceğiz. O girdiğimiz sayıda kaç tane binary digit var?
+
+947
+02:35:46,795 --> 02:35:51,275
+İşte mesela 13 dedik. 13'ü 2'ye böleriz 6. Bir tane bulduk.
+
+948
+02:35:52,135 --> 02:35:55,236
+2'ye böldük 3. Bir tane daha bulduk. 2'ye böldük 1.
+
+949
+02:35:56,635 --> 02:35:59,815
+Şu mu oluyordu? 4 tane digit var. Bunu bulacağız.
+
+950
+02:36:02,515 --> 02:36:08,216
+Şimdi şöyle bir fonksiyon. Integer binary digit yazalım.
+
+951
+02:36:10,036 --> 02:36:34,755
+integer n. If n eşittir eşittir birse doğrudan return bir yaparım. Yani gelen sayı birse değilse diyeceğim şey return binary digit n bölü 2
+
+952
+02:36:35,667 --> 02:36:39,227
+Yarısını çağıracağım, artı bir diyeceğim. Çünkü bir tane daha bulduk, sayacağız.
+
+953
+02:36:40,448 --> 02:36:43,108
+Birleri saymıyoruz arkadaşlar, dijitleri sayıyoruz, sıfırda olabilir.
+
+954
+02:36:45,007 --> 02:36:52,028
+Şimdi, öncelikle bizim diğer şeylerden farklı olarak, recursive algoritmalar, Recurrence Relation'ı kurmamız lazım.
+
+955
+02:36:52,887 --> 02:36:54,148
+Nedir bunun Recurrence Relation'ı?
+
+956
+02:36:56,028 --> 02:36:59,368
+Bunu kurmak için de yine Basic Operasyon'u tespit etmemiz gerekiyor.
+
+957
+02:37:03,379 --> 02:37:30,459
+kullanabiliriz. Veya şuradaki toplama işlemini kullanabiliriz. Çünkü fonksiyon çağrısı, gerçi toplama işlemini kullanmak daha doğrusu. Yani her dijit bulduğumuzda bir tane toplayacağız. Yani veya bir tane fonksiyon çağıracağız diyebiliriz. O zaman bizim işte AN diyelim buna. AN için AN bölü iki defa bir işlem yapacağız. Artı bir tane
+
+958
+02:37:31,092 --> 02:37:47,092
+eleman bulduğunu söyleyeceğiz. Aslında bu Recurrence Relation şu demek arkadaşlar. Bir işlem için, yani tek bir durum için, n diye bir sayı girdi. Kaç defa işlem yaptık, toplama yaptık, bit bulduk, bir tane. Yani şurada 13'ü 2'ye böldüm, bir tane bit buldum.
+
+959
+02:37:48,020 --> 02:38:04,200
+Kalan durumlardan acaba ne kadar daha aşağıya inersem bir hesaplarım artı bir artı bir kaç tane gelebilir? O n bölü iki bana burada bunu söylüyor. Ne kadar derinleşmem gerektiğini söylüyor. Bunun Recurrence Slash'ında burada ne oldu? n bölü iki oldu.
+
+960
+02:38:15,956 --> 02:38:20,216
+Şu toplama açısından hesap yaparken.
+
+961
+02:38:23,095 --> 02:38:24,095
+Yapıyor muyuz?
+
+962
+02:38:24,456 --> 02:38:26,175
+Yapmıyoruz.
+
+963
+02:38:26,595 --> 02:38:29,376
+Yapmadığımız için, toplama yapmadığımız için burada maliyetimiz sıfır oluyor.
+
+964
+02:38:29,495 --> 02:38:30,975
+Yani böyle bir yapımız var.
+
+965
+02:38:31,635 --> 02:38:36,175
+Şimdi geldik bu ifadenin Recurrence Slation'ını artık çözmeye.
+
+966
+02:38:36,175 --> 02:38:37,796
+Yine Backward Substitution ile.
+
+967
+02:38:42,420 --> 02:39:05,319
+çözelim. Yalnız burada, biraz öncekinden farklı, bu bir divide and conquer gibi, yani yarı yarıya giden bir arı görüyorum. Biraz önce birer azaltarak diyordu. O decrease, conquer gibi bir şey yapıyordu. Biraz daha, hani belki zor görülebilir ama çok da zor değil. n bölü 2 artı 1. Şimdi ben bu n bölü 2 yerine, a n bölü 4,
+
+968
+02:39:06,355 --> 02:39:13,076
+artı bir, artı bir yazsam yani A n bölü dört, artı iki yazacağım.
+
+969
+02:39:14,595 --> 02:39:21,376
+n bölü dört yerine, çünkü bir eleman verince yarısını alıyor, bir tane de bir ekliyor.
+
+970
+02:39:21,536 --> 02:39:28,376
+A n bölü sekiz, artı bir, artı bir, artı bir, hatta artı bir, artı iki diyelim.
+
+971
+02:39:30,155 --> 02:39:33,915
+A n bölü sekiz, artı üç oldu.
+
+972
+02:39:34,772 --> 02:39:56,192
+Peki, bu böyle ilerleyecek. Öyle bir noktaya gelecek ki, A, N bölü, İ gibi bir şey olacak. Artı, 1 artı, 2 artı, yani İ eksi 1 artı, 1 diyelim. Yani İ kadar bir şey olacak. Önceden 2 idi, 1 artı, 3 oldu. Toplam İ'ye kadar geleceğiz.
+
+973
+02:40:01,332 --> 02:40:05,952
+Benim elde etmem gereken A1'i bulabilecek bir duruma gelmem lazım.
+
+974
+02:40:06,471 --> 02:40:14,652
+Şimdi, şu içerinin 1 olması için, tabii burası şu arkadaşlar, i değil de, 2 üzeri i diye gidiyor.
+
+975
+02:40:14,871 --> 02:40:20,792
+2'nin karesi, 2'nin küpü, 2'nin i'inci kuvveti, i'inci iterasyonda, i'inci defada ne yaptık?
+
+976
+02:40:20,792 --> 02:40:22,443
+2 üzeri i'ye geldi. O zaman...
+
+977
+02:40:23,987 --> 02:40:50,747
+n bölü 2 üzeri i'yi bir yapan bir duruma gelmemiz gerekiyor. O dallanma sayımız. Şimdi n eşittir 2 üzeri i. Burada i'yi bulmak için iki tarafında logaritmasını alırsak, logaritma 2 üzeri i dediğimiz şey, iki başa bu iki tabanında logaritma alacağız iki olduğu için. i başa geliyor, i eşittir logaritma n buluyoruz.
+
+978
+02:40:51,443 --> 02:40:56,843
+Peki, logaritma N'i de bulduktan sonra, şurada da İ diye bir şeyimiz vardı.
+
+979
+02:40:59,363 --> 02:41:16,683
+Evet, İ diye bir sayımız var. Ne oldu? Bu İ de, logaritma N artı, geç bir dakika, şurada 1, 2, 3, 4, N defa, İ defa yapınca, ikinci de iki tane. Evet, burada da iki tane.
+
+980
+02:41:17,103 --> 02:41:21,783
+logaritma N dedik. N diye bir sayımız olacak değil mi arkadaşlar burada?
+
+981
+02:41:23,144 --> 02:41:26,183
+Bunu da, eğer ki N olmaz pardon ya.
+
+982
+02:41:26,703 --> 02:41:31,664
+Hocam birinci şey, yani sıfır olacak aslında. A1'i bulmuş oluyoruz.
+
+983
+02:41:31,664 --> 02:41:32,723
+Evet, evet, pardon.
+
+984
+02:41:35,283 --> 02:41:36,883
+Şurayı artık bulduk.
+
+985
+02:41:39,164 --> 02:41:42,843
+A1'i bulduk. Artı İ yerine de log N'i bulduk.
+
+986
+02:41:44,211 --> 02:42:00,311
+Bir dediğimiz şeyde yukarıda sıfır demiştik, temel durumda onu atladım. Sıfır artı logaritma n. Yani bizim bu algoritmamız kabaca, aslında kabaca da değil, log n olarak işlem yapıyor.
+
+987
+02:42:01,652 --> 02:42:08,652
+Temel durumda dikkat edelim toplama yapmamız gerektiğini ve sıfır tane eğer bir girersek işlem yapacağımızı unutmayalım.
+
+988
+02:42:09,811 --> 02:42:11,231
+Herhangi bir sorun mu var mı burada?
+
+989
+02:42:13,523 --> 02:42:20,243
+Şimdi şu işlemde backward substitution yaparken şöyle bir şey de kullanılabilir.
+
+990
+02:42:23,603 --> 02:42:26,963
+a n eşittir.
+
+991
+02:42:27,183 --> 02:42:30,824
+a n bölü 2 artı 1 yazdık ya.
+
+992
+02:42:31,163 --> 02:42:33,804
+n yerine başta 2 üzeri k gibi bir şey verirsiniz.
+
+993
+02:42:35,123 --> 02:42:38,023
+Yani burası a 2 üzeri k eşittir.
+
+994
+02:42:38,739 --> 02:43:05,479
+A2 üzeri k-1 artı 1 olur. Şimdi 2 üzeri k-1 yerine A2 üzeri k-2 artı 1 artı 1 artı 2 yazarsınız. Sonra bu A2 üzeri k-3 artı 3 olur. Aşağıya kadar indirdiğinizde ne oluyor? A2 üzeri 0
+
+995
+02:43:08,020 --> 02:43:15,360
+sıfıra kadar geldin, artı, işte n gibi bir şey, hatta iki üzeri sıfır deyince sıfıra gelecek, hiçbir işlem yapılmayacak.
+
+996
+02:43:16,799 --> 02:43:22,319
+Veya şey diyelim, iki üzeri k olması ne demek? k-k olacak, k tane değer olacak demektir.
+
+997
+02:43:22,920 --> 02:43:31,720
+Ben iki üzeri sıfırın a1 olduğunu ve burada da k kadar bir işlem olduğunu biliyorum.
+
+998
+02:43:33,492 --> 02:43:42,032
+K değerini öyle bir noktaya getireceğim ki, yine buradan K eşittir. Şu başlangıçta verdiğim N eşittir, iki üzeri K demiştik.
+
+999
+02:43:44,231 --> 02:43:49,952
+Çünkü bizde K diye bir şey yok. K'yı geçici değişken diye kullanalım. Buradan K'yı yine log n bulacağız.
+
+1000
+02:43:51,592 --> 02:43:54,871
+A1'de zaten sıfırdı. K yerine de log n yazabileceğiz.
+
+1001
+02:43:57,612 --> 02:43:59,871
+Anlaşıldı mı burası arkadaşlar?
+
+1002
+02:44:04,211 --> 02:44:05,092
+Anlaşıldı hocam.
+
+1003
+02:44:06,592 --> 02:44:08,731
+Şimdi bir şey daha bakayım.
+
+1004
+02:44:08,731 --> 02:44:10,171
+Burada söylenecek.
+
+1005
+02:44:12,252 --> 02:44:15,011
+Şöyle bir recurrence relation'ımız olsaydı.
+
+1006
+02:44:19,092 --> 02:44:20,592
+Yeni bir sayfaya geçelim.
+
+1007
+02:44:22,632 --> 02:44:34,452
+xn eşittir, xn-1 artı n tarzında bir algoritmamız olsaydı ve x'in sıfırıncı değeri sıfır olarak verilsin.
+
+1008
+02:44:34,572 --> 02:44:37,012
+Sadece recursion verilmiş, algoritması verilmemiş.
+
+1009
+02:44:37,612 --> 02:44:39,152
+Ne yapacağız? Yine açacağız arkadaşlar.
+
+1010
+02:44:40,072 --> 02:44:42,711
+xn-1'de n tane ekleniyormuş.
+
+1011
+02:44:46,227 --> 02:44:49,687
+xn'de xn-1 çağırıyoruz, n tane işlem yapıyoruz.
+
+1012
+02:44:50,448 --> 02:44:54,887
+Yani öyle bir kod ki bu f fonksiyonu var, bir şeyler bir şeyler n defa yapılıyor şurada.
+
+1013
+02:44:55,847 --> 02:44:57,487
+Yani hiç sıfır defa da şey de değil.
+
+1014
+02:44:58,507 --> 02:45:04,807
+Pardon, fonksiyonu çağırana kadar n defa işlem yapıyorsun, bir de fonksiyonu çağırıyorsun tekrardan.
+
+1015
+02:45:05,811 --> 02:45:10,031
+Biraz öncekinde biz ne yaptık? Sadece bir tane toplama yapmıştık şurada yukarıdakinde.
+
+1016
+02:45:10,491 --> 02:45:14,311
+Ama bir tane değil, birden fazla işlem yapıyorduk. Mesela bir döngü çalışıyor olabilir.
+
+1017
+02:45:16,491 --> 02:45:23,671
+Bu duruma göre bunu çözeceğiz. Şimdi n'de n tane işlem yapılıyor. n-1 çağırıyoruz.
+
+1018
+02:45:25,051 --> 02:45:31,811
+Şimdi n-2'de n-1 yerine ne yazabiliriz? n-2 artı...
+
+1019
+02:45:32,275 --> 02:45:56,835
+n-1 tane işlem yapılacak, bir de kendinden artı n vardı. Burada getirdiğimizde n-2 yerine x n-3 artı n-2 defa x n-2 yapılacak demektir. Şurayı şöyle üstten alalım, birbirine yazalım. Şurada da x n-2'nin karşılığı var. Artı n-1 artı n.
+
+1020
+02:45:57,172 --> 02:46:00,112
+Şimdi bakın, yine düzeni görüyoruz arkadaşlar.
+
+1021
+02:46:00,871 --> 02:46:13,292
+xn-3 yazınca, hatta şuraya toparlayalım, xn-3 artı n-2 artı n-1 artı n diye gidiyoruz.
+
+1022
+02:46:13,292 --> 02:46:21,051
+Peki ben bunu ilerlettim. Yeteri kadar ilerletince xn-i'ye geldim.
+
+1023
+02:46:21,780 --> 02:46:40,780
+n-i'ye gelince ne olacak? İlk terim n-i artı 1 olacak. Sonra n-i artı 2 olacak. Nokta nokta nokta n'e kadar gelecek. Yani burası i öyle bir değere gelecek ki burası 1 olacak, sonra 2 olacak, sonra n'e kadar toplayacağız.
+
+1024
+02:46:49,343 --> 02:47:11,644
+Burası 2, nokta nokta nokta, burası n. Bunu bulmuş olacağız. X0'ın, R'ye ne vermiştik? Başta 0 vermiştik. Artı, burada da kaç tane işlem var? n çarpı n artı 1 bölü 2 tane işlem var. Yani kabaca, buna da ne diyebiliriz? Theta n kare diyebiliriz.
+
+1025
+02:47:16,211 --> 02:47:30,011
+Herhalde anlaşılmıştır diye düşünüyorum. Şimdi arkadaşlar, bu özellikle divide and concurre, yani n bölü ikili bir şey kullanırken, daha böyle zor şeylerle karşılaşabiliriz mesela.
+
+1026
+02:47:31,671 --> 02:47:37,912
+Bir de bazı algoritmalar, mesela F algoritması diyelim, F'i bir yerde bir çağırıyor, sonra bir daha çağırıyor.
+
+1027
+02:47:37,912 --> 02:47:42,011
+O zaman bunun Recurrence Stirlation'ı iki tane, şöyle diyelim buna.
+
+1028
+02:47:42,131 --> 02:47:45,951
+R, N eşittir. Burada da N ve N'e bağlı şeyler olsun.
+
+1029
+02:47:46,891 --> 02:47:55,311
+R, iki tane R, N bölü, işte bir şey gibi bir şeyler olacak veya N- gibi bir şey olacak.
+
+1030
+02:47:55,412 --> 02:48:02,131
+Yani içinde iki tane Recurination çağrısı var ve bunlar birbiriyle aynı dereceli diyebileceğimiz.
+
+1031
+02:48:02,211 --> 02:48:05,331
+N'den mesela N-1'i çağırıyorsun, sonra bir N-1 daha çağırıyorsun.
+
+1032
+02:48:06,191 --> 02:48:07,131
+İşte bu tarz şeyler de...
+
+1033
+02:48:08,115 --> 02:48:34,795
+Backward Substitution bir yerden sonra zor gelebiliyor. Bir de analiz etmesi güç. Eğer sizin şu şekilde, yani önünde iki gibi değil de genel bir kas sayı A, sonra T, N bölü B, yani bir N elemanlı şey yerine N bölü B bir bölme yaparak bir şey yapıyorsunuz. Böyle bir recurrence slash'ınız varsa ve bu adımlara gelene kadar
+
+1034
+02:48:35,540 --> 02:48:41,340
+fn kadar işlem yapıyorsanız buna genel bir hal diyoruz ve buna master teorem deniyor arkadaşlar.
+
+1035
+02:48:44,240 --> 02:48:48,819
+Bunu analiz etmek daha kolay. Bir de t1'in mesela değerini verecek size.
+
+1036
+02:48:49,020 --> 02:48:53,240
+İşte t1 mesela nedir olsun, işte c olsun gibi bir şey, sabit bir sayı verecek.
+
+1037
+02:48:54,000 --> 02:48:56,840
+Bu master teoremle hiç backward substitution'a gerek kalmadan
+
+1038
+02:48:57,971 --> 02:49:19,051
+Bu işi yapabiliriz. Aslında bunun yaptığı şey şu, şimdi şu fn'in mesela ne olur? 1 olur, n olur, n kare olur gibi fn'den aşağıya doğru kaç defa bu işlem yapılacak? Normalde bir işlemde n kare defa yapılıyor. Eğer ben şunun aşağıya ne kadar derinleşeceğini de bilirsem, mesela 2 olursa aşağıya kaç defa derinleşir?
+
+1039
+02:49:19,443 --> 02:49:21,443
+log n defa derinleşir.
+
+1040
+02:49:21,443 --> 02:49:26,443
+log n tane buradan gelecek, bir tane de n buradan gelecek, n log n bir karmaşıklık bulacağım.
+
+1041
+02:49:26,443 --> 02:49:29,443
+Veya n kare karmaşıklığı var şu f'nin.
+
+1042
+02:49:29,647 --> 02:49:38,788
+Öyle bir algoritma olabilir, ne bileyim bir fonksiyon çağırıyorsunuz, iç içe iki tane döngü döndürüyorsunuz, ondan sonra fonksiyonun alt tarafını tekrar çağırıyorsunuz, geri kalan kısmı.
+
+1043
+02:49:39,087 --> 02:49:44,507
+O zaman n kare aşağıya ne kadar derinleşecek? İşte n defa derinleşiyorsa o zaman n küp olur.
+
+1044
+02:49:44,667 --> 02:49:52,847
+Veya n bölü iki gide gide yapa yapa derinleşecekse o zaman n kare log n gibi bir şey olacaktır.
+
+1045
+02:49:52,847 --> 02:49:57,327
+Bunu daha teorem haline getiren işte master teorem diyor ki,
+
+1046
+02:49:58,772 --> 02:50:07,592
+Şu fn'imiz şey olsun, Theta en üzeri d gibi bir fonksiyon olsun.
+
+1047
+02:50:07,592 --> 02:50:12,492
+Yani polinom bir fonksiyon. En üzeri 1, en üzeri 2, en üzeri 0 gibi bir şey olsun.
+
+1048
+02:50:13,372 --> 02:50:16,632
+O zaman diyor ki tn arkadaşlar şu şekilde hesaplanacak.
+
+1049
+02:50:20,659 --> 02:50:24,020
+Aslında üçü de aynı da, sadece case'ler birazcık.
+
+1050
+02:50:25,819 --> 02:50:31,399
+N üzeri D'dir diyor, if A küçüktür, B üzeri D ise.
+
+1051
+02:50:33,279 --> 02:50:39,779
+Şu durumda, yine N üzeri D, çünkü şu N üzeri D'ye her türlü gelecek, log N.
+
+1052
+02:50:40,059 --> 02:50:44,760
+Yani burada aslında bir, bir var, aşağıya bir defa dallanıyor.
+
+1053
+02:50:44,760 --> 02:50:47,260
+Burada log N defa dallanıyor bu N üzeri D.
+
+1054
+02:50:48,180 --> 02:51:06,420
+Bunun için şart, A eşittir B üzeri D olması, Theta, en üzeri D bu sefer yok oluyor, en üzeri logaritma, aslında var da kendiliğinden yok oluyor, en üzeri logaritma B tabanında A.
+
+1055
+02:51:16,244 --> 02:51:19,424
+Big-O veya Big-O-Omega için de düşünebilirsiniz.
+
+1056
+02:51:20,344 --> 02:51:22,704
+Şimdi basit bir örnekle bunu hızlıca izah edelim.
+
+1057
+02:51:23,864 --> 02:51:31,604
+A n eşittir. Biraz önceki örneğimiz 2A n bölü 2 artı bir ona benziyor.
+
+1058
+02:51:32,304 --> 02:51:34,963
+Şimdi A dediğimiz şey burada 2, şuradaki kaç sayı.
+
+1059
+02:51:35,783 --> 02:51:37,204
+B dediğimiz şey de burada 2.
+
+1060
+02:51:37,204 --> 02:51:41,424
+Şimdi 1 dediğimiz şey nedir? 1 üzeri 0. Yani D.
+
+1061
+02:51:42,131 --> 02:51:59,611
+B üzeri D'yi kabul edersek, D de burada sıfırdır arkadaşlar. Şimdi burada yerine koyduğunuzda şu üçüncü duruma geliyorsunuz. İki büyüktür, iki üzeri sıfır oluyor değil mi? Yani A büyüktür, B üzeri D şeklinde. O zaman karşısındaki ifade neymiş?
+
+1062
+02:52:09,043 --> 02:52:19,664
+n üzeri logaritma 2 tabanında 2. Logaritma 2 tabanında 2 de 1 olduğu için doğrudan n buluyoruz. Ve bu elemanıdır, Theta n diyeceğiz.
+
+1063
+02:52:20,783 --> 02:52:32,743
+Aslında yapılan şey, dediğim gibi, şurada yapılan şu işlemin aşağıya kaç defa gitmesi. Şimdi n bölü 2 aşağıya gidiyor ama ikişerli ikişerli gidiyor, n defa gidecek.
+
+1064
+02:52:34,255 --> 02:52:52,735
+N defa gidince yine N'i bulacağız. Hesaplama buradan da çıkar. Ama en kolayı, kas sayıları bulup, işte şu dediğimiz A idi, şuradaki B idi, şuradan 1'den de bunu B üzeri D1 olarak kabul edip D'yi 0 olacağız. Çünkü bu sabittir şey. Buradan çıkarabiliriz.
+
+1065
+02:52:54,536 --> 02:53:00,915
+Herhangi bir problem var mı burada? Master teorem. Bakayım birkaç tane de örnek var mıymış?
+
+1066
+02:53:02,388 --> 02:53:04,188
+Ha, şunu yapalım mesela bir de.
+
+1067
+02:53:06,208 --> 02:53:07,288
+Tn eşittir.
+
+1068
+02:53:09,248 --> 02:53:14,028
+Üç tane tn bölü 2. Yani algoritmanın içinde üç tane çağrı var.
+
+1069
+02:53:14,808 --> 02:53:19,548
+Ama bakın dikkat edin, bu çağrılar n bölü 2, n bölü 3. Yani bir şeyi bir şeye bölme şeklinde arkadaşlar.
+
+1070
+02:53:20,348 --> 02:53:21,288
+Ha, bunun bir de...
+
+1071
+02:53:22,004 --> 02:53:28,984
+n-1, n-2'li çağrılar var. Onlara şu an girmeyeceğiz. Fibonacci'de mesela n-2, n-1 diye var. Onlara daha sonra geleceğiz.
+
+1072
+02:53:29,764 --> 02:53:38,164
+A dediğimiz şey buradan 3 gelir. B, 2 gelir. Şimdi n üzeri 2. D dediğiniz nedir arkadaşlar? N üzeri D formatında D, 2'dir.
+
+1073
+02:53:39,264 --> 02:53:44,604
+Şimdi 3 küçüktür 2'nin karesi. A ile B üzeri D'ye bakıyoruz.
+
+1074
+02:53:45,363 --> 02:54:02,083
+Çünkü asıl bizim fn dediğimiz şey b üzeri d formatında. Yani ne demek? n kareli fonksiyonumuz acaba kaç defa tekrar edecek? n verince n bölü 2. Burada kaç defa derine inersek o kadar bunu bulabiliriz şeklinde bakıyoruz.
+
+1075
+02:54:13,556 --> 02:54:18,556
+En üzeri D dediğim şey n-kare, yani elemanıdır Theta n-kare diyebiliriz.
+
+1076
+02:54:20,556 --> 02:54:23,556
+Bir de şu n-loganli bir şeye bakalım.
+
+1077
+02:54:27,283 --> 02:54:29,923
+2N bölü 3, artı 1.
+
+1078
+02:54:30,824 --> 02:54:33,683
+A dediğimiz şey 1 bakın, bir tane fonksiyon içerisinde var.
+
+1079
+02:54:33,804 --> 02:54:35,263
+B dediğimiz şey 3 bölü 2.
+
+1080
+02:54:35,943 --> 02:54:37,224
+D de nedir? 0'dır.
+
+1081
+02:54:38,123 --> 02:54:38,884
+1 eşittir.
+
+1082
+02:54:39,603 --> 02:54:42,384
+3 bölü 2'nin sıfırıncı kuvveti midir? Evet.
+
+1083
+02:54:43,243 --> 02:54:44,863
+O zaman ne yapacağız? Hangi kukuk case?
+
+1084
+02:54:45,824 --> 02:54:46,263
+Şurada.
+
+1085
+02:54:47,064 --> 02:54:49,443
+N üzeri D log N.
+
+1086
+02:54:49,564 --> 02:54:50,623
+Şimdi N üzeri D.
+
+1087
+02:54:51,623 --> 02:54:52,904
+T N için yazalım.
+
+1088
+02:54:52,904 --> 02:54:54,644
+N üzeri D dediğimiz şey 0.
+
+1089
+02:54:55,572 --> 02:54:58,451
+log n dediğim şey de burada zaten.
+
+1090
+02:54:58,451 --> 02:55:01,731
+n üzeri 0 ne oluyor? 1. Buradan da neyi buluyoruz?
+
+1091
+02:55:01,731 --> 02:55:03,731
+log n'i bulacağız.
+
+1092
+02:55:03,731 --> 02:55:05,731
+log n
+
+1093
+02:55:09,780 --> 02:55:14,460
+Bu da elemanıdır. Theta, log n diyebiliriz.
+
+1094
+02:55:17,400 --> 02:55:21,960
+Evet, benim anlatacağım kısım buraya kadar arkadaşlar. Sizin sorunuz var mı bu konuda?
+
+1095
+02:55:23,280 --> 02:55:30,700
+Hocam, ben şeyi taşıdım. Burada 172 büyük tür 3'ten orada D'yi hesap verken onu nasıl şey yapmıştık?
+
+1096
+02:55:32,520 --> 02:55:33,060
+Şunda mı?
+
+1097
+02:55:33,523 --> 02:55:35,383
+2 bölü 3 hangi örnekte?
+
+1098
+02:55:35,723 --> 02:55:38,983
+Yok, bu n artı n karede.
+
+1099
+02:55:40,563 --> 02:55:43,923
+Yani 3t n bölü 2 artı n karede.
+
+1100
+02:55:44,263 --> 02:55:44,963
+Evet, aynen.
+
+1101
+02:55:45,123 --> 02:55:50,683
+Tamam. Şimdi n kare dediğimiz şey bir kere b üzeri d olacak.
+
+1102
+02:55:52,463 --> 02:55:52,903
+Tamam mı?
+
+1103
+02:55:53,823 --> 02:55:56,763
+Şuradaki fn dediğimiz şey b üzeri d formatında.
+
+1104
+02:55:57,583 --> 02:55:59,223
+d dediğimiz şey buradan 2 geliyor.
+
+1105
+02:56:00,723 --> 02:56:01,103
+Tamam mı?
+
+1106
+02:56:01,747 --> 02:56:08,307
+Tabii buradaki B, şuradaki B değil. Yani bunu bir en üzeri D ya. Buna niye B üzeri D dedim ki?
+
+1107
+02:56:10,087 --> 02:56:13,407
+Şurada B üzeri D mi dedik? Şu en üzeri D olacak arkadaşlar.
+
+1108
+02:56:15,027 --> 02:56:17,247
+Yoksa diğer B ile karışır. En üzeri D.
+
+1109
+02:56:17,847 --> 02:56:23,007
+En kare dediğimiz şey, burada en üzeri D ise D'mizin değerini 2 bulduk.
+
+1110
+02:56:23,827 --> 02:56:27,747
+A dediğimiz sayı kaç defa recursive çağrı olacağını söylüyor? 3.
+
+1111
+02:56:28,595 --> 02:56:33,036
+Her bir çağrıda ne kadar elemanı böleceğiz? O da B'yi gösteriyor, 2.
+
+1112
+02:56:33,816 --> 02:56:36,695
+Ben o B ile beni karıştırıyorum.
+
+1113
+02:56:36,855 --> 02:56:41,155
+Tamam, onu karıştırmakta haklısın çünkü orada öyle yazmışız.
+
+1114
+02:56:42,615 --> 02:56:48,615
+Şimdi arkadaşlar, saat 17. Ben 17.0 olarak şey yapmıştım ama 17.10 yapalım, bir dinlenmiş olun.
+
+1115
+02:56:49,427 --> 02:57:03,148
+Dinlenmeye geçmeden önce kısaca soruları, gerçi dinlenin gelin, ben de o arada şu ayarlamaları yapayım, süreyi güncellemem lazım, ondan sonra yayınlayacağım. Saat 17.05'te görüşelim.
+
+1116
+02:57:05,528 --> 02:57:06,968
+Notlar serbest mi sınavda?
+
+1117
+02:57:06,968 --> 02:57:08,388
+Evet.
+
+1118
+03:03:33,940 --> 03:03:37,320
+Arkadaşlar, şu an ödevi görebiliyor musunuz sistemde?
+
+1119
+03:03:38,520 --> 03:03:39,480
+Evet hocam, gözüküyor.
+
+1120
+03:03:40,159 --> 03:03:56,440
+Tamamdır. 17.05 başlangıç, 18.30 bitiş. Ben önce size soruları kısaca söyleyeyim. Ondan sonra sistemi kapatabiliriz. Şunu bir açayım hemen. Sürenizden gitmemesi adına hemen şu ödevi bulmam lazım. Evet, buldum.
+
+1121
+03:04:00,308 --> 03:04:23,988
+Yani bu ödev sizin derste yaptığımız şeyleri, kuralları hatırlayıp bir pratik yapmanız için kendiniz yapın. Kaynak açık kullanabilirsiniz. Şu an ekranım geldi herhalde. Belli bir yüzdesi vardı. Bu yüzdeler hakkında sizinle dönem başında konuşmuştuk. Onlar geçerli. Birbirinizden yardım almanıza gerek yok.
+
+1122
+03:04:25,587 --> 03:04:28,288
+Yanlış yaparsanız hepiniz yanlış yapıyorsunuz. Dikkat edin.
+
+1123
+03:04:28,828 --> 03:04:33,507
+Şimdi aşağıda bir algoritma verilmiş. Bunun TN'ini basic operasyon kullanmadın.
+
+1124
+03:04:33,587 --> 03:04:38,628
+Yani her bir işlemden ne kadar oluyor? Toplam, total running olacak işlemi yapacaksınız.
+
+1125
+03:04:38,748 --> 03:04:41,628
+TN belirleyeceksiniz. Tüm işlemlere dikkat alacaksınız.
+
+1126
+03:04:42,148 --> 03:04:45,268
+Bu TN'i uygun bir asimptotik notasyonla göstereceksiniz.
+
+1127
+03:04:46,288 --> 03:04:47,188
+Tamam mı? Bu kadar basit.
+
+1128
+03:04:48,048 --> 03:04:52,028
+Dolayısıyla bir toplam sembollik aslında çok bir işiniz yok. Kaç tane operasyon olduğunu saymanız.
+
+1129
+03:04:52,659 --> 03:04:56,652
+yeterli. Burada anlaşılmayan bir şey var mı bu soruda?
+
+1130
+03:05:01,012 --> 03:05:10,012
+İkinci soru, bunların asimptotik gösterimlerle ifade ediyorsunuz ve bunların kurallara uygunluğunu ispat ediyorsunuz.
+
+1131
+03:05:11,212 --> 03:05:14,912
+Kuralı kullanarak, yani doğrudan şu şudur, bu budur demiyorsunuz.
+
+1132
+03:05:15,636 --> 03:05:22,595
+En sonunda da Tn eşittir, Big-O-N veya Tn eşit değildir, Big-O-N gibi bir çıkarımda bulunacaksınız her birisi için.
+
+1133
+03:05:22,695 --> 03:05:30,915
+T1 eşittir, Big-O-N olmaz, ondan sonra Big-O-N olur gibi her birini söylüyorsunuz ama ispat ediyorsunuz önce.
+
+1134
+03:05:32,948 --> 03:05:36,368
+Verilen rekürans bantlı olan 3 tane var burada, aşağıdaki yanlış çıkmış.
+
+1135
+03:05:36,608 --> 03:05:41,927
+Backward Substation ile eğer uygunsa master teorem ile ayrı ayrı çözeceksiniz ve sonuçları karşılaşacaksınız.
+
+1136
+03:05:42,507 --> 03:05:46,868
+Yani bir tanesi hem master teorem ile hem normal çözülüyorsa sonucun aynı olmasına gerekir.
+
+1137
+03:05:47,388 --> 03:05:52,368
+Sonra elde ettiğiniz bu şeyleri asimptotik notasyonlarla ifade ediyorsunuz.
+
+1138
+03:05:53,308 --> 03:05:58,987
+Doğrudan yazılan çözümler hiçbir zaman geçerli değil. Tüm durumlar için T0'a 1 alıyorsunuz.
+
+1139
+03:06:01,172 --> 03:06:02,072
+Soru var mı burada?
+
+1140
+03:06:07,987 --> 03:06:29,147
+Merak ettiğiniz şey. Evet, şimdi sisteme girip, bunları elle yazdınız, tarıyorsunuz, her sayfaya at suyat imza ekleniyor, sisteme yüklüyorsunuz. Ben bunları değerlendirip, ben kısa sürede ilan edeceğim puanlarınızı. Herhangi bir sorunuz yoksa 2-3 dakikada açık bırakacağım, ondan sonra sistemi kapatabilirim.
+
+1141
+03:06:32,020 --> 03:06:54,920
+18.30'a kadar süreniz var. Bunu da şöyle ayarladım. Sistem üzerinden yükleniyor. Bana mail ile gelen ödevler hiçbir şekilde kabul değil. Burada bir mazeret bildirmenize de gerek yok. Mail gelirse doğrudan bakmıyorum. Bunu da söyleyeyim arkadaşlar. Çünkü sistemden gelmeyen mail daha sonra bize problem oluşturuyor. Her şey sistem üzerinden. Geç kalmayın. Süre de bunun için yeterli.
+
+1142
+03:06:58,004 --> 03:07:00,684
+Var mı istediğiniz, sormak istediğiniz bir şey? Merak ettiniz.
+
+1143
+03:07:06,164 --> 03:07:29,384
+Peki, herkese iyi hafta sonları, iyi akşamlar. Kendinize iyi bakın. Haftaya anlatacağım konu üzerinden ödev vereceğim. Yani Divayden Conqueror'a başlayacağız. Ödev de onun üzerinden olacak. Haftaya da katılın, anlamadığınız yerleri öğrenmeye çalışın. Onun için önemli bir şey hafta. Hepinize iyi akşamlar. Buyurun.
+
+1144
+03:07:30,067 --> 03:07:37,067
+Ben ilk soruyu kaçırdım da şey, temel operasyona göre değil, tüm işlemlere göre derken ne demek istiyordu orada?
+
+1145
+03:07:37,567 --> 03:07:43,187
+Yani temel operasyona göre analiz nasıl yapılır veya tüm işlemlere göre analiz nasıl yapılır onu bileceksiniz.
+
+1146
+03:07:43,607 --> 03:07:49,067
+Burada temel operasyon kullanmayın diyorsak her şey işleme dahil edilecek demektir.
+
+1147
+03:07:50,707 --> 03:07:51,067
+Bütün operasyonlar.
+
+1148
+03:07:53,267 --> 03:07:54,367
+Tamam, teşekkür ederim.
+
+1149
+03:07:58,963 --> 03:08:01,623
+Evet, herkese başarılar, kolay gelsin arkadaşlar.
+
+1150
+03:08:03,384 --> 03:08:03,764
+Sağolun.

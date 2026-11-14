@@ -1,0 +1,2091 @@
+1
+00:01:16,659 --> 00:01:18,316
+Evet arkadaşlar, merhaba.
+
+2
+00:01:42,867 --> 00:01:44,867
+Hocam, bir şey sorabilir miyim?
+
+3
+00:01:44,867 --> 00:01:45,867
+Buyur.
+
+4
+00:01:45,867 --> 00:01:51,867
+Sınav haftasında bizim mikroişlemciler birinci vize haftasından olacak mı, ikinci vize haftasından? O belli mi acaba?
+
+5
+00:01:51,867 --> 00:01:52,867
+Bir de olur.
+
+6
+00:01:52,867 --> 00:01:54,867
+Tamam, teşekkür ederim.
+
+7
+00:01:54,867 --> 00:01:55,867
+Geçen.
+
+8
+00:02:04,212 --> 00:02:14,651
+Evet arkadaşlar, hatırlayacak olursanız, geçen hafta, 8255'in, It's At Reset, Mod 1 ve Mod 2 durumlarını incelemiştik.
+
+9
+00:02:19,812 --> 00:02:24,451
+Mod 0, Mod 1 ve Mod 2'yi birbirinden nasıl ayırmamız gerekiyordu?
+
+10
+00:02:24,891 --> 00:02:29,651
+Mod 0, Basic I.O işlemleriydi. Yani herhangi bir Handshake işlemi gerektirmeyen,
+
+11
+00:02:32,532 --> 00:02:42,132
+Haliyle karşı tarafın bunu aldığını kabul edebileceğim, varsayabileceğim serbestlikte bir veri alışverişini kastediyorduk.
+
+12
+00:02:43,252 --> 00:02:56,332
+Hatırlayacak olursanız. Bunlar temel olarak LED, buton gibi doğrudan değer olarak sürülen veya değer olarak okunan uçlara karşılık geliyordu Basic IOModları.
+
+13
+00:02:56,979 --> 00:03:08,579
+Dolayısıyla biz bir port ucuna LED buton bağladığımız zaman ilgili port uçlarının mod 0'da ayarlanması gerektiğini doğrudan çıkartabiliyorduk kabaca.
+
+14
+00:03:10,579 --> 00:03:12,899
+Mod 1 ise daha çok...
+
+15
+00:03:13,779 --> 00:03:16,579
+Mod 1 için neredeydi? Şöyle gelelim.
+
+16
+00:03:17,659 --> 00:03:19,500
+Buradan bakabiliriz.
+
+17
+00:03:19,979 --> 00:03:21,979
+Mod 1 ise...
+
+18
+00:03:22,163 --> 00:03:48,363
+Handshaking tabanlı yani el sıkışma tabanlı bir veri iletişimi mantığıydı. Burada veri uçları haricinde bir de Handshaking uçları vardı. Örneğin input yönlü olarak mod 1 yönünde ayarlanmış port için dış dünyadan bize hatta veya veri uçlarında veri hazır anlamında bir strob işareti geliyordu.
+
+19
+00:03:48,723 --> 00:03:52,803
+Biz de karşı tarafa input buffer full işaretiyle cevap veriyorduk.
+
+20
+00:03:52,803 --> 00:04:09,203
+Ters yönden düşünecek olursak, mod 1 output yönünde çalışıyorsa bir portumuz, bu durumda veri uçlarında hazırladığı haliyle bu sefer dış dünyaya bir output buffer full işareti gönderiyordu.
+
+21
+00:04:09,203 --> 00:04:14,323
+Dış dünyadan da acknowledge işareti bekliyordu. Kabaca bu şekilde bir mantıktı.
+
+22
+00:04:14,804 --> 00:04:25,403
+Mod 1 ve Mod 2 aslında ikisi de hand-shaking mantığı içeriyordu içerilerinde. Mod 1 ayarlandığı haliyle tek bir yönde çalışabiliyordu.
+
+23
+00:04:25,403 --> 00:04:34,204
+Mod 2 ise ayarlandığı haliyle verilen komuta göre o port adresinden out komutu çalıştırmışsam output yönlü olarak çalışıyordu.
+
+24
+00:04:34,204 --> 00:04:41,004
+In komutu çalıştırmışsam input yönlü olarak çalışan bir hand-shaking haberleşme mantığını oluşturmuş oluyorduk.
+
+25
+00:04:41,620 --> 00:04:58,740
+Kabaca böyle bir yapı vardı. Bir de bunlar haricinde bit set reset modumuz vardı. Bit set reset modu doğrudan doğruya port C'nin herhangi bir ucunu çıkış yönlü olarak 0 veya 1 olarak ayarlayabilmek için kullanabildiğimiz bir mod idi.
+
+26
+00:04:58,740 --> 00:05:08,980
+Bu şekilde bir yapıydı. Doğrudan bunu IO mantığında kullanabiliyorduk. Ama bunun yanında bit set reset modları
+
+27
+00:05:09,363 --> 00:05:19,363
+Mod 1 ve Mod 2'de ilgili enable bitleri, interrupt enable bitleri içinde kullanılıyordu. Bunların nasıl olduğunu hatırlayalım şimdi.
+
+28
+00:05:24,531 --> 00:05:26,991
+Örneğin, grup A için bakacak olursak,
+
+29
+00:05:28,596 --> 00:05:56,596
+Burada dış dünyadan strop işareti geldiğinde veri uçları içeri örnekleniyordu. Veri okuması bittiğinde de dış dünyaya input buffer full işareti gönderiliyordu. Fakat bu sinyalleşme mantığı 8086'nın kesme istek ucu için uygun değildi. Dolayısıyla ekstradan bir kesme istek ucumuz daha vardı. Bu da port C'nin 3 numaralı ucu olarak ortaya çıkıyordu. Fakat interrupt request oluşturabilmek için bu şekilde input yönünü haberleştirmek istiyordu.
+
+30
+00:05:56,596 --> 00:06:00,096
+interapt enable A'nın set edilmesi gerekiyordu.
+
+31
+00:06:00,196 --> 00:06:06,675
+Interapt enable A aslında dışarıdan erişilebilen bir konfig biti gibi düşünecek olursak
+
+32
+00:06:06,675 --> 00:06:11,756
+port C4'ün bit set reset moduyla ayarlanmasına karşılık geliyordu.
+
+33
+00:06:12,656 --> 00:06:15,495
+Dolayısıyla dışarıdan bit set reset modda bunu ayarladığımızda
+
+34
+00:06:15,495 --> 00:06:22,636
+interapt request sinyali uygun strobe ve input buffer full anında elde ediliyordu.
+
+35
+00:06:23,411 --> 00:06:31,811
+Şimdi output yönlü olarak çalışan halinde bakalım. Bu şekil referans olarak kullanacaksınız zaten arkadaşlar.
+
+36
+00:06:31,811 --> 00:06:43,911
+Output yönlü çalıştığında ise dış dünyaya biz verimizi hazırladığımız zaman, uçlarda veri uçlarında verimizi hazırladığımız zaman, dış dünyaya output buffer full işareti gönderiyorduk.
+
+37
+00:06:43,911 --> 00:06:49,911
+Ve dış dünyadan da acknowledge işareti gelmesiyle bir sonraki veri gönderim cycle'ın başlıyordu.
+
+38
+00:06:50,163 --> 00:07:07,963
+Burada eğer ben bu işlemi polling mantığında output buffer full veya input buffer full bir önceki anlattığım yapıda da input buffer full işaretiyle değil de doğrudan interrupt kesme veyahut da kesme isteğiyle değerlendirmek istiyorsam da bu durumda şu ortaya çıkıyordu. Yine aynı şey.
+
+39
+00:07:07,963 --> 00:07:13,963
+Output buffer full işareti tek başına bir kesme isteği oluşturabilecek sinyal yapısında değildi.
+
+40
+00:07:14,004 --> 00:07:24,244
+Bundan dolayı burada uygun acknowledge ve output buffer full anında interrupt request oluşturacak bir ayrı ucumuz oluşturulmuştu.
+
+41
+00:07:24,244 --> 00:07:33,124
+Bu ise doğrudan yine port C'nin 3 numaralı ucuna bağlı fiziki olarak 3 numaralı ucundan çıkan bir sinyaldi.
+
+42
+00:07:39,444 --> 00:07:58,844
+bit set reset modunda set edilmesi gerekiyordu. Aynı durum input yönünü ayarlanmış grup B için geçerliydi. Burada inter-app'ları açabilmek için, inter-app enable B bitini set edebilmek için port C2'yi B-SR modunda set etmemiz gerekiyordu.
+
+43
+00:08:06,483 --> 00:08:07,483
+Gerekiyordu.
+
+44
+00:08:09,384 --> 00:08:11,384
+Burada bir de son olarak
+
+45
+00:08:14,836 --> 00:08:24,436
+Status Word kavramından bahsetmiştik. Status Word aslında port.j'den yapılan okumalara karşılık geliyor.
+
+46
+00:08:24,436 --> 00:08:35,436
+Ve eğer kesme tabanlı olarak portları kullanacaksam, interrupt request uçları aynı zamanda register'da birer bit olarak da saklı, oradan okuyabilirim.
+
+47
+00:08:40,467 --> 00:08:56,967
+bitlerde bu status yazmacında birer bit olarak, status bit olarak mevcuttu. Dolayısıyla port C adresinden yapılan okumalarda interrupt request, input buffer full veya output buffer full gibi bitlere erişim mümkün oluyordu.
+
+48
+00:09:00,820 --> 00:09:10,980
+Örneğin, input yönünü aralar grup A veya grup B ayarlanmışsa, hangi bitlerde, status word'un hangi bitlerinde hangi elemanlar var burada görebiliyoruz.
+
+49
+00:09:11,640 --> 00:09:19,540
+Aynı şekilde output yönünü ayarlandığında da grup A veya grup B bunların ne yönünü olarak çalıştıklarını buradan görebiliyoruz.
+
+50
+00:09:24,211 --> 00:09:38,211
+Interapp request ucu üzerinden veri aktarımının tamamlanıp tamamlanmadığını kontrol etmek istiyorsak, burada 08H ile entleyerek bir maskeleme yapmamız gerekiyordu.
+
+51
+00:09:38,751 --> 00:09:50,312
+08 nereden çıkıyor? D7'den D4'e kadar olan bitleri 0 ile maskeleyeceğim. D3'ü olduğu gibi korumak istiyorum. Yine D2'den D0'a kadar olanları da 0 olarak maskelemek istiyorum.
+
+52
+00:09:51,919 --> 00:10:10,440
+0, 0, 0, 0, 1, 0, 0, 0, yani 08H değeriyle endlemeye karşılık geliyordu. Benzer şekilde interrupt request B'yi maskelemek istiyorsam da 0, 1H ile maskeleme yapmam gerekiyordu input yönünü ayarlanmış olduğu vakit.
+
+53
+00:10:19,440 --> 00:10:25,120
+Interrupt Request A veya Interrupt Request B uçlarını polling mantığında okumamız mümkün.
+
+54
+00:10:25,120 --> 00:10:40,120
+Yine bu işlemi Output Buffer Full veya Input Buffer Full üzerinden de yürütmek istiyorsak, ilgili IBFA, IBFV, OBFA ve OBFV bitlerini uygun şekilde maskelememiz gerektiğini söyleyebiliriz.
+
+55
+00:10:40,120 --> 00:10:45,799
+Bunun haricinde modiki bidirectional bir haberleşme mantığıydı.
+
+56
+00:10:46,740 --> 00:10:56,652
+Mod 2 üzerinde çok durmadık galiba, öyle hatırlıyorum. Değil mi? Bunun üzerinde durmadık.
+
+57
+00:10:56,820 --> 00:11:16,320
+Modiki yapısı arkadaşlar sadece grup A tarafından desteklenir. Dolayısıyla burada port A'nın kendisi veri alışverişinden görevli olarak çalışan porttur. Bununla birlikte port C'ye ilişkin 5 tane uç ise hand-checking ve kontrol işaretleri olarak kullanılır.
+
+58
+00:11:16,692 --> 00:11:27,692
+Buradaki genel yapıyı ve kontrol word'ünü görebilirsiniz. Örneğin kontrol word'ün en yüksek anlamlı bitinin 1 olması burada mod set işlemi yapacağımız anlamına geliyor. Yani bir mod ayarı yapacağız.
+
+59
+00:11:27,692 --> 00:11:35,692
+D6'nın 1 olması, D5 don't care olarak yani 1'e x olması bunun mod 2'de çalışacağı anlamına geliyor.
+
+60
+00:11:36,436 --> 00:11:58,436
+Daha sonra grup A ve port C'nin ilgili kısmına ilişkin olarak yön ayarlamaya gerek yok çünkü mod 2'ye de ayarladık. Bununla birlikte grup B'yi ise ister mod 0'da ister mod 1'de giriş veya çıkış yönlü olarak ayarlama ve çalıştırma imkanına sahip oluyoruz.
+
+61
+00:12:02,419 --> 00:12:20,819
+Şimdi burada yine dikkat etmek gerekirse, mod 2'de kullanıldığı vakit, 8255, port C3 bir config biti olarak veya kontrol biti olarak görev gösteriyor. Benzer şekilde başka ne var? 0, 1, 2.
+
+62
+00:12:21,491 --> 00:12:36,491
+3 burada bir kontrol biti olarak görev alıyor. Dolayısıyla port C'nin low kısmının sadece 3 bitlik kısmı, 0'dan 2'ye kadar olan kısımlarını input veya output yönlü olarak ayarlama imkanına sahip olmuş oluyoruz.
+
+63
+00:12:36,491 --> 00:12:46,475
+Genel yapısı bu şekilde. Burada bir directional bir mantık olduğu için port A'yı giriş ve çıkış yönlü olarak, iki yönlü olarak çizdik. Buna dikkat etmek gerekiyor.
+
+64
+00:12:46,548 --> 00:13:03,548
+Yine bir taraf tek başına, örneğin burası input yönlü olarak çalışıyor, burası output yönlü kontrol işaretleri.
+
+65
+00:13:03,548 --> 00:13:05,548
+Dolayısıyla ben...
+
+66
+00:13:06,772 --> 00:13:17,772
+Hem input işlemlerinde hem de output işlemlerinde kesme isteği oluşmasını istiyorsam sırasıyla Interrupt Enable 1 ve Interrupt Enable 2 bitlerini bit set reset modunda ayarlamam gerekiyor.
+
+67
+00:13:18,432 --> 00:13:24,711
+Interrupt Enable 1 bitini ayarlayabilmek için Port C'nin 6 numaralı bitini bit set reset modunda set etmem lazım.
+
+68
+00:13:25,432 --> 00:13:31,252
+Port C'nin 4 numaralı bitini de bir BSR modda set ettiğimde bu da Interrupt Enable 2'yi set etmiş oluyor.
+
+69
+00:13:34,000 --> 00:13:48,000
+Veri gönderdikten sonra, yani veri gönderme işi tamamlandığında veya veri alma işlemi tamamlandığında, interrupt request ucu üzerinden, bu da port.jn'in 3 numaralı biti, bir kesme isteği oluşturabilmiş oluyoruz.
+
+70
+00:13:48,000 --> 00:13:54,500
+Yapısı genel olarak bu şekilde. Config Word yapısı burada, iç yapısı da gördüğünüz gibi.
+
+71
+00:13:54,500 --> 00:14:01,500
+Interrupt Enable bitlerinden bahsetmiştik. Buradaki sinyalleşme yapısına bakacak olursak,
+
+72
+00:14:01,683 --> 00:14:17,363
+Burada şu örnek, dış dünyaya bir şey gönderip, dış dünyadan bir şey okuma sırasında birbirini tetikleyen, önce yazma, sonra okuma işlemleri sırasıyla gerçekleşen sinyalleşme yapısı.
+
+73
+00:14:17,363 --> 00:14:26,363
+Öncelikli olarak yazma işlemiyle birlikte, biz 8255'e değerimizi gönderdik. Dolayısıyla bu değer bir zaman sonra...
+
+74
+00:14:28,244 --> 00:14:43,604
+8255, port A'da data olarak çıkıyor. Daha sonrasında veriyi 8255'e yazdığımız ve veri ucuna çıktığımız için Output Buffer Full ucu aktif oluyor ve sıfıra düşüyor.
+
+75
+00:14:49,951 --> 00:15:01,951
+dış cihazdan bir acknowledge işareti geliyor. Bu acknowledge işaretinin gelmesiyle output buffer full ucu bire çıkıyor ve buradaki yazma saykılını tamamlamış oluyor.
+
+76
+00:15:01,951 --> 00:15:10,764
+Okuma tarafında ise dış dünyadan bir veri port ağ uçlarına yazılıp strop işareti gönderildiğinde
+
+77
+00:15:10,803 --> 00:15:24,803
+Bunun strob ucunun sıfıra düşmesiyle birlikte verinin içeriye okunması başlanıyor. Veri okunması bittiğinde ise IBF biti bire çekilerek verinin artık okunmuş olduğu anlaşılmış oluyor burada.
+
+78
+00:15:33,587 --> 00:15:41,268
+Okuma saykılı için kesme tabanlı bir kontrol çalıştırılmış oluyor. Kabaca yapısı da bu şekilde diyebiliriz.
+
+79
+00:15:41,268 --> 00:15:50,388
+Benzer şekilde mod 2'de ayarlandığında, 8255, buradaki status word'ün görevleri ise şu şekilde oluyor.
+
+80
+00:15:50,740 --> 00:16:00,039
+Interrupt Enable 1 ve Interrupt Enable 2 ile birlikte ikisinin birlikte enable ettiğimizde Interrupt Request A ucuna ilişkin olarak,
+
+81
+00:16:00,039 --> 00:16:10,740
+statüs D3 numaralı bitte, Input Buffer Full ve Output Buffer Full ile ilişkinde D5 ve D7 numaralı bitleri, statüs için kontrol edebiliyoruz.
+
+82
+00:16:10,740 --> 00:16:15,740
+Bu şekil ise bize kabaca şunu gösteriyor.
+
+83
+00:16:17,460 --> 00:16:25,460
+Mod 0, Mod 1 ve Mod 2'de biz bu portlarımızı nasıl kullanabiliriz?
+
+84
+00:16:25,711 --> 00:16:38,432
+Alternatiflerden birisi, eğer ben port A'yı mod 0'da input yönünü ayarlamışsam, 8 bitin 8'i de input yönünü. Eğer port A'yı mod 0'da output olarak ayarlamışsam, 8 tanesi de output yönünü olarak çalışıyor.
+
+85
+00:16:38,432 --> 00:16:49,711
+Aynı şeyler port B ve port C için de geçerli. Ama burada port C'nin yüksek anlamlı kısmıyla düşük anlamlı kısmını 4 bitlik birer portmuş gibi kullanabileceğimizi de unutmayalım.
+
+86
+00:16:50,100 --> 00:17:01,860
+Bununla birlikte eğer ki ben mod 1 kullanıyor isem, input yönlü olarak çalıştırdığımda sadece ve sadece port C'nin 6 ve 7 numaralı bitleri boşa çıkıyor.
+
+87
+00:17:01,860 --> 00:17:09,460
+Eğer output yönlü çalıştırırsam da bu durumda da sadece port C'nin 4 ve 5 numaralı bitleri boşa çıkmış oluyor.
+
+88
+00:17:09,460 --> 00:17:16,820
+Mod 1'de ya input yönlü yahut da output yönlü olarak grup A veya grup B'yi ayarlayarak kullanabiliyorum.
+
+89
+00:17:17,907 --> 00:17:23,427
+Mod 2'ye baktığımızda port A'nın kendisi bidirectional modda çalışıyor.
+
+90
+00:17:23,427 --> 00:17:30,387
+Grup B'ye baktığımızda veya port B'ye baktığımızda mod 0 veya mod 1 olarak çalışıyor.
+
+91
+00:17:34,291 --> 00:17:41,612
+ve Grup B'nin mod 1 ayarlarına ilişkin port C uçlarının kullanımını sağlamış oluyoruz.
+
+92
+00:17:42,612 --> 00:17:47,851
+Bu mod 2'yi anlatmamıştık herhalde, onu böylelikle tamamlamış olduk.
+
+93
+00:17:47,851 --> 00:17:52,652
+Yine geçen hafta içerisinde yaptığımız bir örnek vardı arkadaşlar, hatırlayacak olursanız.
+
+94
+00:17:52,652 --> 00:17:56,652
+Mod 1 örneği. Bu örneği inceleme fırsatı buldunuz mu?
+
+95
+00:18:16,819 --> 00:18:20,259
+Evet, bu örneği inceleme fırsatı bulduk mu arkadaşlar?
+
+96
+00:18:25,587 --> 00:18:27,147
+Bu örnek...
+
+97
+00:18:32,372 --> 00:18:39,972
+Bir sonraki deney konusu olarak da gündeme gelecek. Vakitlice incelemenizde fayda var.
+
+98
+00:18:40,972 --> 00:18:45,172
+Burada aslında yapmaya çalıştığımızı önce çalıştırıp gösterelim.
+
+99
+00:18:45,172 --> 00:18:50,172
+Hatırlayalım biz de tekrardan. Örneği paylaşmadık mı?
+
+100
+00:18:50,972 --> 00:18:53,372
+Paylaşmış olmam lazım, hemen bakayım.
+
+101
+00:19:05,907 --> 00:19:07,907
+Evet, örneği paylaşmamışım.
+
+102
+00:19:16,435 --> 00:19:18,435
+Hemen paylaşalım bunu da.
+
+103
+00:20:01,428 --> 00:20:08,148
+Evet, örneği online yıldız edi TR tarafına ekledim. Paylaşmamışız.
+
+104
+00:20:08,980 --> 00:20:23,980
+Şimdi burada yapmak istediğimiz burada 4x4 tuş tarama takım var. Bunu low seviyede sürmeyeceğiz. Bunu bir yardımcı devre vasıtasıyla süreceğiz. Bu yardımcı devre sütunları sürüp satırlardan okuma işlemini otomatik olarak gerçekleştiriyor.
+
+105
+00:20:31,183 --> 00:20:48,063
+Daha sonra satırlardan okuma yapıyorduk. Eğer ben herhangi bir tuşa basmışsam, varsayılan değer haricinde satırların birinde bir değişim görmeyi bekliyorum. Bu değişimi gördüğüm anda hasbelkader benim bastığım tuşun sütunu sürülmüştür.
+
+106
+00:20:48,240 --> 00:21:10,539
+Dolayısıyla hangi sütuna bastığım belli. Satırda olması gerekenden farklı olan satır hangisi ise benim bastığım tuşun satırı da oydu. Bu taramayı, sütunlardaki taramayı baştan sona sürekli olarak döndürmem gerekiyordu sonsuz döngü içerisinde. Bu şekilde çok hızlı bir döngü sağlandığı için aslında ben tuşa çok kısa bir süre basıyor olsam bile.
+
+107
+00:21:10,976 --> 00:21:23,176
+Sütunların tarama mantığından dolayı eninde sonunda illaki benim bastığım sütuna karşılık o sütün tarama sayesinde aktif olacaktır.
+
+108
+00:21:23,176 --> 00:21:30,176
+Dolayısıyla bu şekilde bir mantık vardı. Bunu otomatik olarak yapan bir entegremiz vardı, tuş tarama entegresi.
+
+109
+00:21:30,367 --> 00:21:39,967
+Buradaki etiketler haricinde 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 diye numaraların olduğunu varsayalım şimdilik.
+
+110
+00:21:41,307 --> 00:21:47,288
+Buradaki yardımcı devrenin data available ve output enable şeklinde iki tane ucu var.
+
+111
+00:21:47,867 --> 00:21:54,947
+Ben buradan bir tuşa bastığımda bakın data available ucunda lojik bir değeri oluşuyor gördüğünüz gibi.
+
+112
+00:21:57,503 --> 00:22:16,183
+dışarıdan kontrol edilen output enable ucuna da 0 verilmişse yani data available'da bir gördüğümüz anda biz output enable'a 0 verirsek bastığım tuşa karşılık binary değerler şurada d, c, b, a sırasında uçlara çıkıyordu. Bu devre bu şekilde çalışıyordu.
+
+113
+00:22:16,884 --> 00:22:25,884
+Diğer tarafta ise Seven Segment Display'leri sürmek için kullandığımız ikinci bir yardımcı devre vardı. Bu da 4511 entegresi.
+
+114
+00:22:25,884 --> 00:22:37,884
+Burada ortak katotlu olarak çalışan bir Seven Segment Display'imiz var. Dolayısıyla bu devre ortak katotlu Seven Segment Display süren bir yardımcı devremiz.
+
+115
+00:22:43,476 --> 00:22:58,236
+7-segment gösterim binary karşılığı ne ise onu şurada görmüş olduğunuz QG, QA uçları arasında oluşturup 7-segment display'de ilgili segmentlerin yanmasını sağlayan bir devre.
+
+116
+00:22:58,236 --> 00:23:09,476
+Bu devreye ilişkin olarak giriş uçlarındaki değerin tutulup içeride saklanmasını sağlayan bir latch enable veya strobe işaretimiz mevcut.
+
+117
+00:23:09,748 --> 00:23:22,048
+Bu uçtan faydalanarak uçlardaki değerin Seven Segment Display'de yakılmasını sağlayabiliyoruz. Eğer Let's Enable ucunda ben 0 değeri verirsem, bu durumda da şöyle bir şey oluyor.
+
+118
+00:23:22,048 --> 00:23:35,748
+Giriş değerleri ne kadar değişse de değişse buna karşılık Seven Segment Display'lerde herhangi bir değişiklik olmuyordu. Dolayısıyla bu yapıda Seven Segment okuma yardımcı devresiydi. Şimdi tekrar yukarı çıkalım.
+
+119
+00:23:36,084 --> 00:23:47,684
+Ben bu tuş tarama takımına ilişkin yardımcı devreyi mod 1'de kullanmak istediğimde, data available ve output enable uçlarını uygun şekilde kullanabilmem lazım.
+
+120
+00:23:47,684 --> 00:23:57,684
+Mod 1'in mod 1 ile birlikte, ben çünkü mod 1'de bu devreyi süreceğim ve benzer şekilde mod 1'de de semi-segmenti sürmek istiyorum.
+
+121
+00:23:57,684 --> 00:24:03,884
+Bir kere şuna karar verelim, burada da bir tuşa bastığımızda ben buradan bu tuşun değerini okuyacağıma göre
+
+122
+00:24:04,276 --> 00:24:09,876
+Ben burada grup A'yı aslında mod 1 input yönünde kullanmak istediğim anlamına geliyor.
+
+123
+00:24:09,876 --> 00:24:16,476
+Input yönlü olarak çalışıyorsa burada strobe ve acknowledge işaretlerinden bahsedebiliriz.
+
+124
+00:24:16,476 --> 00:24:18,276
+Değil mi?
+
+125
+00:24:18,276 --> 00:24:27,276
+Strobe ve acknowledge işaretlerinden bahsedebiliriz. Çünkü input yönlü olarak çalışacağımız için bu konfigürasyon söz konusu.
+
+126
+00:24:27,276 --> 00:24:29,276
+Burada...
+
+127
+00:24:32,115 --> 00:24:41,115
+Sizce strobe işaretini data available mı yoksa output enable mı üretir, kullanır? Ne dersiniz?
+
+128
+00:24:53,044 --> 00:25:00,183
+Şimdi, output enable dış dünyadan sürülen bir uçtu. Data available dış dünyaya veri gönderen bir uç.
+
+129
+00:25:00,183 --> 00:25:11,284
+8255 tarafından baktığımızda ise, data available'dan buraya bir sinyal geliyor ve buna karşılık da 8255 o sinyale karşılık cevap veriyor.
+
+130
+00:25:11,284 --> 00:25:18,844
+Bu şekilde düşünebiliriz. Böyle düşündüğümüzde, data available aslında 8255 için strob işareti gibi çalışıyor.
+
+131
+00:25:19,539 --> 00:25:29,139
+Karşı taraftan ise input buffer full dediğimizde ise bu durumda da output enable'ı tekrar 1 yapmamız gerekiyor.
+
+132
+00:25:29,139 --> 00:25:36,139
+Tekrar 0 yapmamız gerekiyor daha doğrusu. Dolayısıyla strop işareti data available'dan gelecek.
+
+133
+00:25:36,139 --> 00:25:41,139
+Input buffer full işaretine karşılıkta output enable'dan değer çıkmış olacağız.
+
+134
+00:25:43,539 --> 00:25:45,539
+Bir soru mu vardı acaba?
+
+135
+00:25:52,276 --> 00:25:53,276
+Tamam, devam edelim.
+
+136
+00:25:56,276 --> 00:26:06,276
+Benzer şekilde Seven Segment Display süren yardımcı devre için baktığımızda bunun etkileşim sağlamak adına iki tane ucu yok. Tek bir ucu var. O da Latch Enable dediğimiz uç.
+
+137
+00:26:07,276 --> 00:26:16,276
+Dolayısıyla burada bir Seven Segment Display süreceğimiz için aslında bu uçlardan yani ABCD uçlarını 8255'in değer göndermesi lazım. Bu da demek oluyor ki
+
+138
+00:26:16,884 --> 00:26:21,584
+8255, grup B, mod 1'de output yönlü olarak çalışacak.
+
+139
+00:26:22,403 --> 00:26:29,104
+Output yönlü olarak çalışan mod 1'de hangi uçlar vardı? Output buffer full ve acknowledge işaretleri vardı.
+
+140
+00:26:29,844 --> 00:26:38,144
+Dolayısıyla mikroişlemci 8255'e, dış dünyaya gönderilmek adına bir veri yazdığında mod 1'de bir output yönlü olarak,
+
+141
+00:26:38,923 --> 00:26:43,524
+bu durumda output buffer full işareti right işleminden sonra sıfıra düşüyordu.
+
+142
+00:26:44,435 --> 00:27:02,935
+Dolayısıyla biz burada strob işaretinde, yani buradaki şunun 4511'in strob işaretinde biz bunu kullanmak durumundayız. Fakat bunun bir acknowledge üretecek ucu yok. O yüzden bunu şöyle dolanarak bir sonuç elde etmiştim.
+
+143
+00:27:02,935 --> 00:27:12,135
+İki tane peş peşe nat kapısından geçirdiğimiz zaman yeteri miktarda bir gecikme sağlayabiliyoruz. Bu kapıların birer gecikmesi var. Bakın onları şöyle görebiliriz.
+
+144
+00:27:12,500 --> 00:27:20,500
+Burada özelliklerine girdiğimizde bu kapıların 100 milisaniyelik gecikmesi var. Dolayısıyla buraya output full...
+
+145
+00:27:20,723 --> 00:27:38,803
+Output Buffer Full işareti geldikten sonra, 200 milisaniye sonra şu uçta istediğim değer oluşuyor. Ecnoloj'a karşılık değer oluşuyor. Tabi bu arada bu Ecnoloj işaretini 4511 üretmiyor ama simüle bir mantıkla zaten bunu kabul edebilir durumdayız.
+
+146
+00:27:38,803 --> 00:27:47,683
+Dolayısıyla 200 milisaniye gecikmeli olarak bize karşı taraftan bir cevap geliyor. Bu cevabı da Ecnoloj olarak ele almış oluyorduk.
+
+147
+00:27:47,955 --> 00:27:58,435
+Kod kısmına baktığımızda, kod kısmına geçmeden önce geçen hafta yine şunu yapmıştık. Bu devre hangi adres aralığına yerleşmiş diye bakmıştık.
+
+148
+00:28:00,435 --> 00:28:12,435
+Adres değeri 8 bite sığınmadığı için DX üzerinden vermek gerektiği anlaşılıyordu ama burada bazı uçları boşta bırakmıştık. Siz bu şekilde yapmıyorsunuz. Siz eğer 16 bit olarak sadece 4 bit olarak...
+
+149
+00:28:13,172 --> 00:28:23,172
+4 byte'lık bir aralığa yerleştirilecekse, bunun sadece o 4 byte'lık adres aralığı olmasını garanti ediyorsunuz. Ama biz burada kolaya kaçarak onu koymadık.
+
+150
+00:28:23,172 --> 00:28:37,172
+Yani bu örneğin burada D8'den D3'e kadar olan uçlar ve de D0 numaralı uç ne olacağını belirlemediğimiz için aslında pek çok aralıkta, pek çok adres için bu devre çalışır durumda.
+
+151
+00:28:37,423 --> 00:28:53,423
+Bunlardan en düşük adresli olanı ben burada örnek adres olarak verdim. Ama siz bu şekilde yapmıyorsunuz. Bu cihazın fix 4 byte'lık adres aralığını başka hiçbir adres değeriyle çalışmayacak şekilde adres çözümleme devresini oluşturmanız gerekiyor.
+
+152
+00:28:53,423 --> 00:29:05,132
+Dolayısıyla bu pek çok adres aralığından 200H'dan itibaren ardışık olarak gelen çift adreslere cihazın yerleştirildiğini görüyoruz o adres çözümleme devresinden.
+
+153
+00:29:05,268 --> 00:29:16,868
+Bunun anlamında neydi? 206'da control word var, 204'de port C var, 202'de port B var, 200'de de port A olduğu anlamına geliyordu.
+
+154
+00:29:18,268 --> 00:29:27,868
+Şuradaki iki tane işlem, peş peşe iki tane işlem aslında neleri açmak içindi? Port A ve port B'nin
+
+155
+00:29:28,276 --> 00:29:52,855
+Interrupt Enable bitlerini set etmek için de buradaki iki bitimiz, iki ayarlamamız. Şurada göndermiş olduğumuz değer ise, grup A'yı input yönlü, grup B'yi ise output yönlü olarak ayarlayan Control Word değerimizdi. Daha sonrasında yaptığımız işlem, şu anda daha interruptları görmediğimiz için Poling mantığında çalışıyorduk hatırlayacak olursanız.
+
+156
+00:29:53,299 --> 00:30:09,299
+Port G'den okuma yapıyorduk. Şurada Port G'den okuma yaptık. Yani status word'ı okuduk. 08 ile maskeledik. 08'de ne vardı arkadaşlar? Interrupt A kesme istek biti, status biti mevcuttu.
+
+157
+00:30:09,299 --> 00:30:17,299
+Dolayısıyla Interrupt Request A biti 1 olana kadar burada dönüyoruz. Bunun anlamı ne? Ben bu döngüyü kırdığımda
+
+158
+00:30:17,491 --> 00:30:39,612
+Dış dünyadan okuduğum veri artık 8255'in port A yazmacında mevcut anlamına geliyor. Daha sonrasında ise ben gidip, veri madem hazır gidip port A'dan okuma yapıyorum ve okuduğum değeri geçici olarak bir BLE yazmacında saklıyorum. Daha sonra yine aynı işlemi bu sefer yazma yönlü olarak yapacağım.
+
+159
+00:30:40,019 --> 00:30:49,220
+Dolayısıyla yine port.j'den bir okuma yapıyorum. Interrupt enable B bitini maskeliyorum. En düşük anlamı bitteydi ya bu.
+
+160
+00:30:49,220 --> 00:31:05,195
+Dolayısıyla bunu maskeliyorum ve bunu bir olana kadar, interrupt enable B biti, interrupt request B biti, yanlış söyledim, interrupt request B biti, bir olana kadar bekliyorum.
+
+161
+00:31:05,619 --> 00:31:22,619
+Burada dönüyorum. Bunun anlamı ne? Ben yeni veri göndermek için hazırım anlamına geliyor. Ben bu veriyi, döngüyü kırdığım zaman artık port B'ye okumuş olduğum değeri gönderiyorum. Out'la gönderiyorum. Bunun anlamı ne? Şurada...
+
+162
+00:31:24,660 --> 00:31:35,660
+Port A'nın hazır olmasını bekledim, Port A'yı okudum, Port B'nin hazır olmasını bekledim, şurada Port B'nin hazır olmasını bekledim ve Port B'ye okuduğum değeri olduğu gibi yazdım.
+
+163
+00:31:35,660 --> 00:31:42,660
+Dolayısıyla hangi tuşa basmışsam ona karşılık 7 segment display görüntüsünü elde etmiş oluyordum.
+
+164
+00:31:42,660 --> 00:31:51,660
+Kabaca örneğimiz bu şekildeydi. Siz de tekrar bu örnek üzerinden inceleme yaparak nasıl çalıştığını net bir şekilde...
+
+165
+00:31:51,988 --> 00:32:01,168
+Bir inceleyin arkadaşlar. Yine sorunuz olursa önümüzdeki haftada bakarız. Bu noktada yeni konumuza geçeceğiz. Onu açayım.
+
+166
+00:32:04,788 --> 00:32:08,188
+Mod 1 ve Mod 2 ile ilgili sormak istediğiniz bir şey var mı?
+
+167
+00:32:24,051 --> 00:32:25,251
+Şimdi bakalım.
+
+168
+00:32:27,411 --> 00:32:30,411
+Jump equal ile jump zero aynı şeyler.
+
+169
+00:32:31,291 --> 00:32:32,291
+Değil mi?
+
+170
+00:32:37,140 --> 00:32:49,380
+Burada niye böyle yaptık? Böyle de olabilir. Şimdi bir bakalım. Evet, aynen bu şekilde de kullanabiliriz. Çünkü
+
+171
+00:32:49,380 --> 00:33:02,579
+Compare işlemi bu sefer AL'yi sıfırdan çıkartıyor. Yani aslında bunun yerine test de yapabiliriz. Evet, doğru, mantıklı. Eğer AL'ye sıfır olmuş olsaydı, ilgilendiğimiz bit sıfır olmuş olsaydı
+
+172
+00:33:02,784 --> 00:33:22,943
+Endleme işlemi sonucunda sonuç, compare işlemi sonucu equal üretmeyecekti ve dolayısıyla dallanma olmayacaktı. Aynı şey burada oluyor mu bakalım. AL'deki değer sıfırdan farklı ise dallanma yapmayacaktık. Eğer sıfır olmuş olsaydı dallanma yapacaktık. Evet, tamamen aynı sonucu üretiyor. Doğru. Bu şekilde de kullanabiliriz.
+
+173
+00:33:31,604 --> 00:33:48,604
+Bir sonraki konumuza geçiyoruz arkadaşlar. Bu konumuz seri haberleşme ve seri haberleşme yardımcı devresi olan 8251 üzerine olacak. Bu konuyla ilgili olarak...
+
+174
+00:33:49,140 --> 00:33:57,140
+Paralel ve seri haberleşme arasındaki farkları görsel ve tanımsal olarak vermeye çalışacağız.
+
+175
+00:33:57,140 --> 00:34:03,140
+Daha sonra seri haberleşmeye ilişkin olarak bir takım kavramlar var, onlardan bahsedeceğiz.
+
+176
+00:34:03,140 --> 00:34:10,140
+Seri haberleşmeyi donanımsal olarak yapabiliyoruz ama bunu yazılımsal olarak yapmak istediğimizde nelerle karşılaşıyoruz, onu inceleyeceğiz.
+
+177
+00:34:10,140 --> 00:34:14,140
+Sonrasında da 8251 yardımcı entegresini inceleyeceğiz.
+
+178
+00:34:14,771 --> 00:34:25,771
+Buna ilişkin blok diagram, yazmaçlar ve ilgili fonksiyonel yazmaçların görevleri ve çalışma mantıkları nelerdir diye inceliyor olacağız.
+
+179
+00:34:35,092 --> 00:34:45,092
+Evet, öncelikli olarak arkadaşlar, seri ve paralel haberleşme arasındaki veri iletişimindeki farkları bir incelemeye çalışalım.
+
+180
+00:34:45,092 --> 00:34:59,092
+Veri iletişiminde paralel ve seri olmak üzere iki farklı iletişim mantığı var. Bunlardan seri olan ise yine benzer şekilde senkron ve asenkron olmak üzere iki alt başlık altında incelenebiliyor.
+
+181
+00:34:59,764 --> 00:35:12,764
+Paralel veri iletişiminde kastedilen birden fazla kanal elemanı üzerinden verinin farklı kısımlarının gönderilmesi ama aynı anda gönderilmesi kastediliyor.
+
+182
+00:35:12,764 --> 00:35:25,708
+Seri haberleşmede ise gönderilmek istenen verinin önce serileştirilmesi söz konusu, serileştirildikten sonra da karşı tarafa bit bit gönderilmesi söz konusu.
+
+183
+00:35:25,748 --> 00:35:37,748
+Bu işlemi yaparken seri haberleşmede yani her iki terminalde ortak bir saat işareti kullanıyorsa burada senkron bir haberleşme mantığı kullanılabilir.
+
+184
+00:35:37,748 --> 00:35:47,748
+Ama karşılıklı olarak iki terminal arasında bir ortak saat işareti yoksa bu durumda iki tarafta kabaca bir saat frekansında anlaşıp
+
+185
+00:35:47,795 --> 00:35:58,295
+Bu saat frekansından dolayı veri iletişimini bozmayacakları genişliklerde paketler halinde veri aktarımlarını sağlıyor olacaklar.
+
+186
+00:35:58,295 --> 00:36:12,795
+Dolayısıyla paralel haberleşmede birden fazla kanalın aynı anda kullanımı söz konusu. Bu anlaşılıyor. Yani birden fazla tel döşeli olması lazım iki terminal arasında.
+
+187
+00:36:12,927 --> 00:36:37,047
+Dolayısıyla paralel haberleşme kısa mesafeler için çok daha hızlı ve maliyet açısından uygun bir yapı olurken, mesafe uzadıkça o kadar yüksek mesafelere, uzun mesafelere paralel olarak döşenmiş kanal veya terlerin aktarılması maliyeti yükseltiyor. Bu durumda seri haberleşme düşük maliyetiyle ön plana çıkıyor.
+
+188
+00:36:37,556 --> 00:36:53,015
+Tabi birim zamanında aktarılan veri miktarı paralel haberleşmede bir seferde bütün bitler karşı tarafa aktarılabilir. Örneğin 8 bitlik bir verinin bütün bitleri bir seferde aktarılabilir. Ama seri haberleşmede veriyi serileştirdiğimiz için
+
+189
+00:36:53,235 --> 00:37:08,235
+En yüksek anlamlı bitinden itibaren karşı tarafa aktarılacağını düşünelim örneğin. Bu durumda 8 adımda verinin aktarımı söz konusu olmuş olacak. Bu da bu aktarım mantığının yavaş olarak çalıştığı anlamına geliyor.
+
+190
+00:37:20,335 --> 00:37:46,755
+Veri gönderirken ilk olarak paralel olarak hafızada saklanan verinin serileştirilmesi gerektiğini görüyoruz. Yani paralel to serial bir conversion gerekiyor bu durumda. Karşı tarafta da bitler yani veri tek tek bit bit biriktiği için gelen seri bilginin de bu sefer paralel bir mantığa dönüştürülmesi gerekiyor. Yani serial to paralel conversion mantığının da bu sefer karşı terminalde gerçeklenmesi lazım.
+
+191
+00:37:47,315 --> 00:37:59,615
+Paralel veri iletişiminde ise veri aktarılacak her bir anlam bitine karşılık bir tane kanal mevcut olduğu için bunlar doğrudan karşı tarafa bir seferde aktarılmış olacaklar.
+
+192
+00:38:03,215 --> 00:38:10,715
+Senkron ve asenkron haberleşme arasındaki farkı ortaya koymak açısından ise şunları söyleyebiliriz.
+
+193
+00:38:14,420 --> 00:38:22,920
+Alıcı ve verici kendi aralarında eğer ki ortak bir saat darbesine sahipse bir soru var herhalde onu alabiliriz varsa.
+
+194
+00:38:39,059 --> 00:38:44,059
+Yok herhalde. Sorunuz varsa arada kesip sorabilirsiniz.
+
+195
+00:38:51,443 --> 00:39:14,443
+Şimdi senkron haberleşme olduğu vakit aslında bu durumda gönderilen ve alınan verinin senkron arasında bir senkronlanmasıyla ilgili bir sıkıntı oluşmayacaktır. Her iki tarafta da çünkü ortak saat darbesi var. Her ikisi de aynı anda veriyi alıyor veya gönderiyor. Dolayısıyla burada bir...
+
+196
+00:39:14,447 --> 00:39:24,447
+Kaçak söz konusu değil veyahut bir kayma söz konusu olmayacaktır. Dolayısıyla buralarda senkron haberleşmede daha geniş paket boyutları kullanılıyor.
+
+197
+00:39:24,755 --> 00:39:45,755
+Dolayısıyla birden fazla paket de bir arada bir veri paketini oluşturduğu için bu veri paketlerinin bu sefer veri bloklarının diyelim başlangıç ve bitişini işaretlemek adına özel çok birden fazla bit genişliğine sahip başlangıç ve bitiş işaretleri oluyor.
+
+198
+00:39:45,755 --> 00:39:52,755
+Dolayısıyla senkron haberleşmeye baktığımız zaman geniş bir bit dizisi halinde başlangıç, paket başlangıç...
+
+199
+00:39:52,755 --> 00:40:16,456
+Bu anlamlı bir veri bütünü olduğunu gösteriyor. Daha sonrasında da yüksek paketler halinde, geniş paketler halinde karşı tarafa veri aktarımını görüyoruz. Daha sonra karşı taraf almış olduğu bu seri bilgileri birleştirerek anlamlı veri paket bütününü tekrar değerlendirebilir hale geliyor.
+
+200
+00:40:17,204 --> 00:40:42,204
+Bu durumda her bir byte için bir işaretleme yapmama gerek kalmadığından dolayı, yani göndermiş olduğum birim veri miktarının başını ve sonunu işaretlememe gerek yok. Geniş, daha büyük veri bloğunun başını ve sonunu işaretliyorum. Dolayısıyla burada overhead daha az, yani ekstra benim işaretlemeler için ayırmış olduğum...
+
+201
+00:40:42,608 --> 00:40:51,528
+bit alanları daha az sayıda olmuş oluyor. Fakat bu durumda senkron haberleşmeyi sağlamak adına ortak klok işareti gerekli.
+
+202
+00:40:51,528 --> 00:41:02,608
+Zaten bu uzun mesafeler için gerekli bir seri haberleşme mantığından bahsettiğimiz için görece daha pahalı bir haberleşme mantığı olarak ortaya çıkmış oluyor.
+
+203
+00:41:02,608 --> 00:41:09,007
+Asenkron haberleşmede ise arkadaşlar, her iki terminal arasında ortak bir saat işareti yok.
+
+204
+00:41:09,204 --> 00:41:15,204
+Fakat her iki terminalde kabaca veri gönderme frekansında baştan anlaşıyorlar.
+
+205
+00:41:15,204 --> 00:41:29,856
+Örneğin, birinci terminaldeki kristalimiz örneğin 2 MHz'de çalışırken, ikinci terminaldeki kristalimiz 2 MHz üzerinde yazıyor olmasına rağmen 1.8 MHz'de çalışıyor olsun.
+
+206
+00:41:29,856 --> 00:41:38,536
+Bu durumda dahi veri kaybının çok yüksek miktarda olmayacağını, yani veri kaybı olmadan seri haberleşme yapılabileceğini söyleyebiliriz.
+
+207
+00:41:39,316 --> 00:41:48,096
+Burada her iki taraf baştaki veri aktarım frekansında anlaşıyorlar. Veriler daha düşük paketler halinde gönderiliyor.
+
+208
+00:41:48,096 --> 00:41:53,976
+Bu daha düşük paketlerin her birisinin başına ve sonuna başlangıç ve bitiş işaretleri ekleniyor.
+
+209
+00:41:54,400 --> 00:42:07,400
+Herhangi bir ana paket senkronizasyon stringine ihtiyacımız yok. Çünkü küçük paketler haline başlanmış ve bitişler işaretlenmiş durumda.
+
+210
+00:42:07,795 --> 00:42:26,795
+Yine her iki taraf aktarılacak veri genişliği ile ilgili olarak baştan anlaşmış durumda. Örneğin, 9600 Bout Rate'de 8 data biti ile veri iletişimi yapılacak. Stop biti sayısı 2 olacak ve parity bit kullanılacak. Başta bu ikisi de bu konuda anlaşmış durumda.
+
+211
+00:42:26,795 --> 00:42:32,795
+Ve buna göre hat varsayılan durumda, üzerinde veri yokken, logic 1'de geziyor.
+
+212
+00:42:33,619 --> 00:42:52,619
+Eğer ki iletişim başlatılacaksa veriyi gönderen taraf hattı sıfıra çekiyor. Bu bir start bit olarak karşı taraftan algılanıyor. Daha sonrasında ise sırasıyla bitlerini tek tek gönderiyor gönderen taraf. İşlem bittikten sonra varsa parity bitini ekliyor ve bu sefer de stop bitlerini ekliyor.
+
+213
+00:42:56,880 --> 00:43:05,380
+gönderen tarafından ve alıcı tarafından eğer clock frekansları farklıysa, ufak farklılıklarla da olsa kabaca yakalanabiliyor.
+
+214
+00:43:05,380 --> 00:43:11,680
+Ama örneğin burada 8 bit yerine 20 bit, 50 bitlik paketler halinde veri iletişimi olmuş olsaydı,
+
+215
+00:43:11,923 --> 00:43:21,604
+Bu durumda büyük ihtimalle aradaki mesela 2 MHz, 1.8 MHz'lik veri iletişim her iki terminaldeki frekans, saat frekansından bahsediyordu.
+
+216
+00:43:21,604 --> 00:43:31,164
+Bu frekanslar arasındaki bu küçük kayıklık 50 bitte bir sonraki veya bir önceki bitin yanlışlıkla okulmasıyla sonuçlanabilecek durum oluştururdu.
+
+217
+00:43:31,164 --> 00:43:36,764
+O yüzden dolayı asenkron haberleşmede her iki taraf üzerinde bir ortak saat darbesi olmadığı için
+
+218
+00:43:36,947 --> 00:43:40,627
+Daha küçük paketler halinde veri aktarımı söz konusu oluyor.
+
+219
+00:43:45,715 --> 00:43:51,275
+Burada senkron ve asenkron haberleşmeye ilişkin şematik yapıları görebilirsiniz.
+
+220
+00:43:52,895 --> 00:43:59,695
+Asenkron haberleşmede biz verilerimizi gönderirken küçük paketler halinde göndermek durumundayız.
+
+221
+00:43:59,795 --> 00:44:05,375
+Dolayısıyla her bir data paketinin başında ve sonunda başlangıç ve bitişler işaretlenmiş oluyor.
+
+222
+00:44:06,235 --> 00:44:11,115
+Senkron haberleşmede ise her iki taraf terminal için bir ortak saat işareti var.
+
+223
+00:44:12,724 --> 00:44:19,724
+Data paketlerimiz birleştirilerek daha yüksek paketler halinde karşı tarafa gönderilebilmiş oluyor.
+
+224
+00:44:22,024 --> 00:44:31,344
+Asenkron haberleşme için yine bakacak olursak arkadaşlar, toplamda 3 tane tel gerekli bu haberleşmeyi sağlamak adına.
+
+225
+00:44:32,344 --> 00:44:33,724
+Örneğin...
+
+226
+00:44:33,907 --> 00:44:44,148
+Bir noktadan bir noktaya, bunları hep transmit ve receive uçlarını sistem 1'e göre tanımlamış olalım şimdilik. Sistem 2'den baktığımızda farklı şekilde değerlendirmek gerekecek.
+
+227
+00:44:45,947 --> 00:44:59,508
+Sistem 1 tarafından baktığımız vakit sistem 1'in sistem 2'ye veri aktardığı bir tane veri hattının olması lazım. Yani bir tane transmit ucunun veya transmit bağlantısının olması gerekiyor.
+
+228
+00:44:59,711 --> 00:45:13,872
+Yine terminal 1'in terminal 2'den veri aldığı receive ucuna karşılık bir de receive teli var. Bir de her iki sistem arasında ortak bir ground sağlanmak durumunda.
+
+229
+00:45:14,260 --> 00:45:28,260
+Bunun anlamı şu, örneğin Sistem 1 tarafında Grant ve Logic 1 bu şekilde tanımlı iken, Sistem 2 tarafında Grant ve Logic 1 eğer bu şekilde tanımlıysa, bu ikisi arasında bir anlamlı iletişim kuramayız veya bağlantı kuramayız.
+
+230
+00:45:28,260 --> 00:45:41,072
+Ama her iki terminal arasında ortak Grant bağlandığı anda, terminal 2'nin referansı da terminal 1'in referansına çekileceği için, bu ikisinin de 1 dediği değer,
+
+231
+00:45:41,072 --> 00:45:58,552
+anlamlı bir değer olmuş olacaktır. Her ikisi, her iki terminal içinde. Yine asenkron haberleşme için arkadaşlar, bir sinyalleşme yapısından bahsedebiliriz. Dolayısıyla gönderilecek veriye ilişkin olarak,
+
+232
+00:46:08,659 --> 00:46:09,659
+Bir saniye.
+
+233
+00:46:11,659 --> 00:46:24,659
+Örneğin gönderilecek veriye ilişkin olarak burada normalde hat boştayken, lojik birde, veri gönderilmek istendiği vakit transmit eden kısım hattı sıfıra çekiyor.
+
+234
+00:46:25,659 --> 00:46:30,659
+Alıcı taraf ise bu hattı her verinin hatta kalma süresi boyunca.
+
+235
+00:46:31,443 --> 00:46:43,723
+Periyotlar boyunca hattı iki kere örnekliyor. Bu iki örneklemede de aynı değeri okumuşsa bu veri, o bit örneklediği değer neyse bu şekilde okunmuş oluyor.
+
+236
+00:46:43,723 --> 00:46:53,203
+Örneğin, karşı tarafta, receive eden tarafta öncelikle start biti bekliyor. Burayı iki kere örnekledi. Dolayısıyla ikisinde de sıfır gördüğü için start bitin geldiğini kabul etti.
+
+237
+00:46:59,668 --> 00:47:11,348
+bitlerini tek tek hatta koyuyor ve bu her bir bitin de hatta kalma süresi her iki terminalin de anlaşmış olduğu bar rate'e uygun bir şekilde gerçekleşmiş oluyor.
+
+238
+00:47:11,348 --> 00:47:20,788
+Örneğin burada sırasıyla 1, 1, 0, 1, 1, 1, 1 değerleri gönderdikten sonra toplamda 1, 2, 3, 4, 5, 6, 7
+
+239
+00:47:21,268 --> 00:47:27,507
+8, bir de 0 da göndermişiz, 2, 4, 6, 8. 0 ile birlikte 8 bittik bir veri gönderdik.
+
+240
+00:47:29,076 --> 00:47:45,076
+Sonrasında ise her iki taraf 8 bit konusunda anlaştığı için şimdi artık alıcı taraf stop bitlerinin gelmesini bekliyor. Eğer ki her iki taraf da iki stop bitin de anlaşmışsa baştan, birinci stop biti için hattı iki kere örnekliyor, hat birde mi? Evet.
+
+241
+00:47:45,076 --> 00:47:53,476
+Daha sonra yeniden bir sonraki cycle için hattı yine iki kere örnekliyor, hat yine birde mi? Evet. Dolayısıyla iki tane stop bitin de aldığını görerek
+
+242
+00:47:53,940 --> 00:48:02,940
+Bu frame'i başarılı bir şekilde kabul ettiği haliyle bu veri alışverişini tamamlamış oluyor.
+
+243
+00:48:04,940 --> 00:48:11,940
+Senkron haberleşmeye geldiğimizde ise arkadaşlar, senkron haberleşme de yine Sistem 1 tarafından tanınlayacağımız haliyle,
+
+244
+00:48:11,940 --> 00:48:20,652
+yine bir veri aktarım ucu, veri alma ucu, ortak grant bir de clock, ortak clock işareti mevcut.
+
+245
+00:48:22,036 --> 00:48:30,195
+Bu durumda gönderilen ve alınan verilere ilişkin olarak farklı data paket yapıları olabilir, frame yapıları olabilir.
+
+246
+00:48:30,195 --> 00:48:41,536
+Mesela Bysync isimli senkron haberleşme mantığında iki tane senkronizasyon işaretinden sonra
+
+247
+00:48:43,827 --> 00:48:58,428
+Verilerin büyük bir paket halinde yerleştirilmesi, daha sonrasında gerekli error check byte'larının yerleştirilmesi ile birlikte tamamlanan büyük bir veri paket yapısını görebiliyoruz.
+
+248
+00:48:59,188 --> 00:49:07,867
+Veyahut da IBM tarafından geliştirilmiş olan Serial Data Link mantığında ise başlangıç ve bitiş için 8'er bitlik birer parantez var.
+
+249
+00:49:08,340 --> 00:49:31,139
+Daha sonrasında çeşitli kontrol ve adres bitleriyle birlikte doldurulduktan sonra, datanın kendisi ve son olarak da frame check hatalara ilişkin olarak kontrolleri içeren, bitleri içeren bir kontrol grubu daha eklenerek yine büyük bir paket oluşturulup karşı tarafa gönderilebilmiş oluyor.
+
+250
+00:49:31,380 --> 00:49:38,380
+Biz dersimiz kapsamında arkadaşlar asenkron yapıyla ilgileneceğiz. Dolayısıyla senkron yapıyı kullanmayacağız.
+
+251
+00:49:38,380 --> 00:49:48,380
+Senkron yapıya ilişkin olarak parametrelerimiz temel olarak bir bough rate konusu önemli. İkincisi kaç tane data biti olacağı, bunu anlaşmamız lazım.
+
+252
+00:49:48,380 --> 00:49:58,380
+Üçüncüsü kaç tane stop biti olacak, bununla ilgili bir her iki terminalinde anlaşma sağlamasını kontrol ediyor olacağız dolayısıyla.
+
+253
+00:49:59,251 --> 00:50:11,251
+Bir de haberleşme ile ilgili olarak seri haberleşme ile ilgili olarak simplex ve dupleks yapıları var. Bu kavramlar var. Bu kavramlar üzerinde duralım.
+
+254
+00:50:14,324 --> 00:50:25,204
+Simplex dediğimiz yapı aslında hattın sadece tek yönlü olarak veri transferine izin verdiği durumlar.
+
+255
+00:50:29,427 --> 00:50:33,028
+Verinin tek yönlü olarak veri transferine izin verdiği durumlar.
+
+256
+00:50:34,028 --> 00:50:46,327
+Örneğin, bir bilgisayardan printer'a veri gönderdiğimiz zaman, burada veri aktarımı da söz konusu olduğu için tek yönlü olarak simplex bir yapı olduğunu söyleyebiliriz.
+
+257
+00:50:46,327 --> 00:50:50,088
+Veya dupleks yapıyı örnek vermek gerekirse, dupleks yapıdan kastedilen ne?
+
+258
+00:50:52,275 --> 00:51:12,155
+Hem receive hem de transmit yönünde aktarılabilmesi mümkün. Bunun iki farklı örneği var. Half duplex ve full duplex. Half duplex normalde verinin çift yönlü olarak aktarılması destekleniyor ama bir seferde tek bir yönde veri iletişimine izin veren bir kanal yapısı var.
+
+259
+00:51:12,512 --> 00:51:20,912
+Yani birinci sistem ikinci sisteme veri gönderiyorsa ikinci sistem bire veri gönderebilmek için bunun bitmesini beklemek zorunda.
+
+260
+00:51:20,912 --> 00:51:30,752
+Öyle bir yapı. Full dupleksde ise eş anlı olarak her iki terminal birbirine veri gönderip veri alabilir bir halde olmuş oluyor.
+
+261
+00:51:30,752 --> 00:51:35,472
+Mesela bunları biraz daha görsel olarak daha anlamlı bir şekilde görmek istersek.
+
+262
+00:51:37,300 --> 00:52:03,740
+Alıcı ile verici arasında tek bir kanal varsa ve bu kanalı biz bu veri iletişimine tek yönlü olarak adamışsak, bu simplex yapıya karşılık geliyor. Sizce simplex yapıya ilişkin olarak, simplex veri aktarımına ilişkin olarak bir örnek geliyor mu aklınıza? Sizin aklınıza bu sadece tek yönlü olarak veri iletişimini içeren bir yapı yani.
+
+263
+00:52:03,903 --> 00:52:29,704
+Alıcı taraftan, yani terminal 2'den terminal 1'e herhangi bir veri aktarım yok. Broadcasting, evet ama mesela daha spesifik bir şekilde bunu verecek olsak, örneğin karasal TV yayınları, radyo yayınları bu şekilde biliyor. Biz radyoyu dinleyebiliyoruz ama bizim sesimiz karşı tarafa ulaşmıyor. Dolayısıyla bu simplex yapıya örnek olarak radyo ve televizyonu verebiliriz.
+
+264
+00:52:30,036 --> 00:52:37,536
+Yine half duplex yapısında arkadaşlar bakın, aslında sistem hem receive hem de transmit yönünde imkana sahip.
+
+265
+00:52:37,536 --> 00:52:50,036
+Fakat kanal eşyalı olarak bunlara izin veremiyor. Tek bir kanal var. Dolayısıyla bu tek bir kanalı o anda hangi yönlü olarak kim aktif etmişse o yönde çalışıyor.
+
+266
+00:52:50,036 --> 00:52:55,536
+Bu iletişim bittikten sonra diğer yönlü olarak hat meşgul edilebilir.
+
+267
+00:52:55,891 --> 00:53:00,891
+Bu yapıdaki, half duplex yapıdaki haberleşmeye bir örnek geliyor mu aklınıza?
+
+268
+00:53:03,891 --> 00:53:07,891
+Evet, bu telsiz mantığı bu şekilde bir yapı.
+
+269
+00:53:07,891 --> 00:53:13,891
+Bastığımız zaman, örneğin telsizin tuşuna bastığımızda hatta çıkma hakkını kazanıyoruz.
+
+270
+00:53:14,891 --> 00:53:21,891
+Ve bizim söylediğimiz karşı tarafa iletilmiş oluyor. Bu sırada karşı tarafın söylediği hatta çıkamıyor.
+
+271
+00:53:23,923 --> 00:53:36,324
+Son olarak full duplex yapısı. Burada birden fazla kanal var. Dolayısıyla bir kanal ileri yönünde çalışırken bir kanal geri yönde veya veri alma veya veri gönderme yönünde çalışıyor.
+
+272
+00:53:36,324 --> 00:53:46,884
+Bu yapıda işte bizim cep telefonlarında veyahut da sabit telefonlarda karşılaştığımız yapıya örnek olarak verilebilir.
+
+273
+00:53:51,572 --> 00:54:03,572
+Bu noktada arkadaşlar bir ara verebiliriz. Bu noktaya kadar sormak istediğiniz bir şey var mı? Varsa onlara bakalım. Bu noktadan itibaren biraz daha seri haberleşmenin...
+
+274
+00:54:03,603 --> 00:54:20,803
+Daha biraz daha teknik özelliklerine bakıyor olacağız. Yazılımsal olarak seri haberleşme yapmaya çalışacağız. Daha sonra da yardımcı 8251 entegresinin uç tanımlarıyla fonksiyon tanımlarını inceliyor olacağız. Bu noktaya kadar sormak istediğiniz bir şey var mı?
+
+275
+00:54:29,652 --> 00:54:38,092
+Eğer yoksa arkadaşlar, saat 15.10'da devam edecek şekilde bir ara veriyorum.
+
+276
+01:08:27,188 --> 01:08:30,268
+Evet arkadaşlar, tekrar merhaba. Kaldığımız yerden devam edelim.
+
+277
+01:08:34,836 --> 01:08:48,036
+Bu seri haberleşmede biz dersimiz boyunca asenkron haberleşme ile ilgileneceğimizi söylemiştik. Burada her iki terminalin kendi arasında anlaştırmış olduğu bir haberleşme frekansı var. Bu, bowd-rate olarak isimlendiriliyor.
+
+278
+01:08:50,036 --> 01:08:57,036
+Bu aynı zamanda sinyalin saniyedeki değişim miktarında, maksimum değişim miktarında da karşılık gelmiş oluyor.
+
+279
+01:09:02,752 --> 01:09:12,231
+Bir saniyede ifade etmiş olmakla birlikte testten düşünürsek, sinyanın belirli bir değerinin, 0 veya 1 değerinin hattı ne kadar kalması gerektiğini de buradan çıkartmış oluruz.
+
+280
+01:09:13,352 --> 01:09:17,872
+Örneğin burada 1200 WD'den bahsediyorsak, bunun anlamı şudur.
+
+281
+01:09:18,472 --> 01:09:27,152
+Saniyede 1200 tane bit aktarabiliriz. Bu da her bir bitin hatta kalma süresinin 0.7.
+
+282
+01:09:27,283 --> 01:09:32,884
+Sekreç bir saniye gibi bir değere karşılık geldiğini ifade etmiş oluyor.
+
+283
+01:09:39,796 --> 01:09:47,796
+Mesela bir örnek üzerinden netleştirecek olursak, bir soru var galiba.
+
+284
+01:10:03,604 --> 01:10:07,203
+GoAd'un açılımı ile ilgili olarak sorulmuş. Bakalım.
+
+285
+01:10:12,115 --> 01:10:28,716
+Bu bir aslında birim gibi düşünebiliriz bunu. Doğrudan bir birime karşılık gelmiş oluyor. Yani bir şeyin kısaltması gibi değil de birim olarak düşünebiliriz.
+
+286
+01:10:42,260 --> 01:10:48,020
+Doğrudan kelime gibi, bir kelime karşılığı gibi bunu düşünebiliriz.
+
+287
+01:10:52,340 --> 01:10:54,340
+Örneğimize bakacak olursak,
+
+288
+01:10:57,300 --> 01:10:58,100
+burada
+
+289
+01:11:00,260 --> 01:11:06,980
+verinin hatta kalma süresi 3.33 milisaniye olan bir haberleşme mantığından bahsediyor.
+
+290
+01:11:07,347 --> 01:11:26,347
+Bu haberleşme mantığında asenkron bir haberleşme olduğu için her bir bitin hakta kalma süresiyle ilgilendiğimiz gibi bir veri paketinin başlangıç ve bitiş overhead ile de ilgilenmemiz gerekiyor asenkron haberleşme olduğu için.
+
+291
+01:11:26,347 --> 01:11:29,347
+Burada ifade edilen veri haberleşmesinde
+
+292
+01:11:29,716 --> 01:11:45,956
+Bir tane start biti, iki tane stop biti ve sekiz tane de data biti olduğu verilmiş. Burada bir start biti başlangıcın parantezi gibi düşünebilirsiniz. Stop bitleri de bitişin işareti olarak düşünebilirsiniz, parantezi gibi düşünebilirsiniz.
+
+293
+01:11:45,956 --> 01:11:56,435
+Burada bize sorulan bir karakteri saniyede kaç karakter göndeririz veya saniyede gönderebileceğimiz data miktarı nedir?
+
+294
+01:11:56,692 --> 01:12:03,771
+Bunu bulmamız isteniyor. Dolayısıyla periyoddan frekansa doğru ilerlememiz gerekecek.
+
+295
+01:12:05,231 --> 01:12:16,871
+Verinin veya bitin hatta kalma süresi 3.33 milisaniye ise bu durumda saniyede 1 bölü 3.33 milisaniyeden 300 bit saniyede gönderebilme imkanımız var.
+
+296
+01:12:17,460 --> 01:12:29,460
+Toplamda bir data paketi için 8 tane veri bitimiz var. 2 stop biti, 1 start biti olduğu için 11 tane 11 bitten oluşan paketlerimiz var. Dolayısıyla bir...
+
+297
+01:12:30,484 --> 01:12:43,604
+Data paketinin gönderilmesi veya bunu bir karakter olarak düşünecek olursak, bir karakterin gönderilmesi ise 36.63 milisaniye kadar vakit alıyor. Çünkü 11 ile 3.33 çarparak elde edeceğimiz sonuç budur.
+
+298
+01:12:44,744 --> 01:12:58,304
+Sonrasında ise bu bir veriyi göndermek için, bir anlamlı veriyi gönderebilmek için, 8 bitlik bir veri paketini gönderebilmek için geçerli süre. O zaman bir saniyede bu paketlerden kaç tane gönderebiliriz?
+
+299
+01:12:58,484 --> 01:13:08,204
+Yine frekans gibi düşünecek olursak, bunun bir bölüsünü hesapladığımızda da saniyede 27.3 adet karakteri karşı tarafa aktarabileceğimiz anlamına geliyor.
+
+300
+01:13:10,764 --> 01:13:17,764
+Bir başka örnekle ilerleyecek olursak, 9600 Baht'ta çalışan bir...
+
+301
+01:13:20,564 --> 01:13:30,963
+Veri iletişimi ile ilgili seri haberleşme sağlayan yapıyla ilgili olarak, 1 MB boyutundaki bir veriyi karşı tarafa aktarabilmek için ne kadar süre gerekir? Şeklinde bir soru.
+
+302
+01:13:30,963 --> 01:13:37,363
+Tabi burada 9600 ve 28800 bağıtlarda bunun karşılaştırması verilmiş.
+
+303
+01:13:37,587 --> 01:13:49,907
+Veri paketimiz ise bir start biti, bir tane stop biti, 7 data biti, bir tane de parity bitinden oluşuyor. Yani burada da 10 bitlik bir paket genişliğinden bahsedebiliriz.
+
+304
+01:13:54,771 --> 01:14:01,771
+Toplamda 1 MB'lik bir kapasite varsa buradaki bit sayısını şu şekilde hesaplayabiliriz.
+
+305
+01:14:02,612 --> 01:14:16,252
+Burada toplamda her bir karakter için konuşacak olursak her bir karakter için 10 tane bite ihtiyacımız var.
+
+306
+01:14:16,252 --> 01:14:19,752
+Kaç tane karakterimiz var 1 MB'lik bir kapasitede toplam?
+
+307
+01:14:23,123 --> 01:14:31,443
+1 milyondan biraz daha fazla, 2 üzeri 20'den hesaplayacağımız vakit elde edeceğimiz değere karşılık böyle bir değer var.
+
+308
+01:14:31,443 --> 01:14:41,523
+Burada veri gönderme hızımız 9600 olduğu için bu verilerin tamamını göndermemiz toplamda 1092 saniye kadar bir vakit alıyor.
+
+309
+01:14:41,523 --> 01:14:50,323
+1092 saniyeyi hesapladığımızda ise 18 dakikayı aşkın bir süreye bunun karşılık geldiğini görmüş oluyoruz.
+
+310
+01:14:50,547 --> 01:15:04,547
+Eğer veri aktarımımız 9600 değil de 28800 bu hatta o ise bu durumda da 6 dakikanın üzerinde bir veri aktarım süresinde 1 megawaitlik dosyayı karşı tarafa aktarmış oluyoruz.
+
+311
+01:15:04,547 --> 01:15:15,547
+Bir de seri haberleşme için önemli noktalardan birisi arkadaşlar hatanın bulunması ve tespiti. Hatanın nerede olduğunun bulunması ve hatanın tespiti önemli bir konu.
+
+312
+01:15:16,051 --> 01:15:39,351
+Veri bit bit karşı tarafa aktarıldığı için ve hatta ilgili bit belirli bir süre kaldığı için, ilgili bitin hatta kaldığı an süresince ortaya çıkabilecek elektromanyetik bir girişim sonucunda göndermek istediğimiz veride farklı bir değer elde ederek karşı tarafa aktarmış olma durumu söz konusu olabiliyor.
+
+313
+01:15:42,387 --> 01:15:50,587
+Hata olup olmadığını anlamak başlı başına bir konuyken, hatanın nerede olduğunu anlamak da ikinci bir konu olarak ortaya çıkmış oluyor.
+
+314
+01:15:50,587 --> 01:15:56,387
+Örneğin, hata olup olmadığını anlamak için uygulanabilecek yöntemlerden birisi parity check.
+
+315
+01:16:07,631 --> 01:16:32,631
+Bir değerli bitlerin sayısını çift olmasını sağlayacak şekilde bir kural koymuşsam, bu even parity check olarak geçiyor. Eğer ki parity biti ve veri bitleri dahil olmak üzere bunların hepsindeki bir olan bir değerli bitlerin sayısını tek sayıda tutacak şekilde bir kural koymuşsam da bu error check için, bu da odd parity kontrolü olarak geçiyor.
+
+316
+01:16:36,467 --> 01:16:53,467
+Dolayısıyla parity check ile ilgili olarak eğer bir bitte bozulum varsa, bunu tek sayıda bitte bozulum varsa bunu anlamak mümkün ama çift sayıda bitte bozulum varsa bunu tespit etmek mümkün olmuyor. Özel belirli durumlar için hatayı tespit etmek mümkün oluyor.
+
+317
+01:17:03,231 --> 01:17:29,731
+Özel CRC paketleri verinin ardına eklenerek karşı tarafa gönderiliyor. Bu şekilde karşı tarafta veriyi aldığında, gelen paketler bütün için kendi CRC'sini hesapladığında, örneğin hata olup olmadığını ve bu hatanın nerede olduğunu hesaplama veya tespit etme imkanına sahip oluyor.
+
+318
+01:17:31,956 --> 01:17:38,256
+Asenkron haberleşme ile ilgili olarak parity tarafını örneklerimizde kullanıyor olacağız.
+
+319
+01:17:40,855 --> 01:17:50,855
+Bu noktada seri veri haberleşmesine ilişkin olarak bir yazılımsal transmitter nasıl yapılabilir ona bakacağız şimdi.
+
+320
+01:17:56,155 --> 01:17:57,456
+Bununla ilgili olarak
+
+321
+01:17:57,844 --> 01:18:17,844
+Biz yazımsal olarak karşı tarafa gönderiyoruz. Veriyi alan tarafında bizim veri gönderme frekansımızı bildiğini varsayıyoruz. Veri genişliğimizi bildiğini varsayıyoruz. Başlangıç ve bitiş bit sayılarını karşı tarafında bildiğini varsayıyoruz. Bu çerçeve üzerine öncelikli olarak...
+
+322
+01:18:23,507 --> 01:18:34,907
+Göndereceğimiz veri genişliği çerçevesinde bir sayıcı set ediyoruz ve hatta 0 değerini gönderiyoruz.
+
+323
+01:18:34,907 --> 01:18:51,007
+Bunu yapabilmek için örneğin şurada bakacak olursak, 8255'in bir tane port ucunu kullanabiliriz. Dolayısıyla bu port ucunu mod 0'da 0 veya 1 olarak set edebildiğimizi düşünelim. Böyle bir yapı çerçevesinde ilerliyoruz.
+
+324
+01:18:51,699 --> 01:19:08,099
+Start bitini göndermek demek, hattı sıfıra çekmek demek. Hattı sıfıra çektikten sonra belirli bir süre boyunca bu değerin hatta kalmasını sağlıyor. Bu süre her iki terminalin de anlaşmış olduğu bağdureyte ile alakalı olarak hatta kalma süresine karşılık gelen bir süre.
+
+325
+01:19:08,099 --> 01:19:11,099
+Daha sonra...
+
+326
+01:19:14,644 --> 01:19:17,043
+göndermek istediğimiz karakteri
+
+327
+01:19:19,028 --> 01:19:37,028
+Örneğin, 8255'in bir portundan göndereceğimizi varsaymıştık. 8255'in ilgili portuna yazdık. Bunu yazdığımız vakit, D0 ucunda bizim en düşük anlamlı bitimiz var demek oluyor bu. Dolayısıyla artık seri olarak göndereceğimiz verinin en düşük anlamlı bitini hatta koymuş oluyoruz.
+
+328
+01:19:37,028 --> 01:19:47,028
+Zaten asenkron haberleşmede, veri aktarımında en düşük anlamlı bitten itibaren veriler karşı tarafa gönderilmiş olması lazım. Bunu sağlamış oluyoruz.
+
+329
+01:19:47,028 --> 01:19:58,548
+yazdık. D0 değeri, en küçük anlamda bitimiz D0 ucunda mevcut. Yine hatta kalma süresi kadar bekliyoruz. Daha sonrasında tekrar ilgili
+
+330
+01:19:58,548 --> 01:20:04,128
+portta yazacağımız değeri 1 bit sağ öteleyerek yeniden ilgili portta yazıyoruz.
+
+331
+01:20:04,692 --> 01:20:19,372
+Ve bunun anlamı şu, sıradaki anlam sırasındaki anlam sırası olarak D0'ı göndermiştik, 0 numaralı biti. Şimdi 1 numaralı biti göndereceğiz. Bu 1 numaralı bit de bir kere sağ ötelediğimiz için artık portun D0 ucunda.
+
+332
+01:20:19,699 --> 01:20:25,699
+Örneğin port A ile ilgili çalışıyorsak, port A0 ucunda sırada göndermek istediğimiz veri mevcut.
+
+333
+01:20:25,699 --> 01:20:33,699
+Ve az önce en düşük anlamlı biti gönderdiğimiz için de göndereceğimiz miktarı bir adet düşürdük.
+
+334
+01:20:33,699 --> 01:20:42,699
+Bunu bütün veri bit sayısı kadar tekrarladıktan sonra verimizi göndermiş oluyoruz bu döngü içerisinde.
+
+335
+01:20:44,543 --> 01:20:51,023
+Eğer gerekliyse göndereceksek parity bitini hesaplayıp hatta bunu koyuyoruz ve bunun içinde belirli bir süre bekliyoruz.
+
+336
+01:20:51,023 --> 01:20:58,064
+Ve son olarak da stop bit sayısı kaçsa bu kadar stop bit'i göndererek yazılımsal veri göndermeyi tamamlamış oluyoruz.
+
+337
+01:20:58,064 --> 01:21:08,463
+Buna ilişkin olarak bir örneğimiz var. Bu örnek az önce dediğim gibi, şu tarafı özellikle şöyle düşünebilirsiniz.
+
+338
+01:21:10,100 --> 01:21:17,700
+İşte burada bir, işte 8255 var. Bu 8255'in portlarından bir tanesine karşılık geliyor.
+
+339
+01:21:18,700 --> 01:21:24,700
+Örneğin, port A'nın 0 numaralı ucu olsun bu. Bunu şöyle yazalım.
+
+340
+01:21:26,300 --> 01:21:30,700
+Port A'nın 0'ı. Burası olsun.
+
+341
+01:21:31,700 --> 01:21:36,899
+Dolayısıyla burada D port ile ifade ettiğimiz şey aslında
+
+342
+01:21:37,140 --> 01:21:49,640
+Port A'nın adresi olmuş olacak. Tamam mı? Port A'nın adresi olmuş olacak. Şimdi burada gerçekleşecek işlem 8 tane data biti göndereceğiz. Bir tane start bitimiz var, bir tane de stop bitimiz var.
+
+343
+01:21:49,640 --> 01:22:02,140
+Şimdi bunları nasıl işleyeceğiz bakalım. Bir fonksiyonumuz var. Bu fonksiyona AL içerisindeki saklı datayı
+
+344
+01:22:02,612 --> 01:22:29,912
+kabul eden bir fonksiyon bu. AL'deki datayı ilgili asenkron haberleşme ilişkin parantezlerle birlikte karşı tarafa yazılımsal olarak gönderen bir kod parçası. Şimdi baktığımız zaman 8 tane data bitimiz var. Bir tane start bitimiz, bir tane de stop bitimiz. Toplamda 10 tane bit göndermemiz gerekiyor. Bundan dolayı öncelikli olarak fonksiyon içerisinde CX'i 10'a set ettik.
+
+345
+01:22:30,292 --> 01:22:40,292
+Daha sonrasında ise, carry bayrağını sıfırladık. CLC komutu, clear carry flag anlamına geliyor.
+
+346
+01:22:40,292 --> 01:22:53,292
+Şimdi toplamda 9 tane biti, AL artı carry ile birlikte 9 biti sağladık ama 10 tane bit gönderebilmek için.
+
+347
+01:22:53,391 --> 01:23:14,631
+Son göndereceğimiz stop biti ile ilgili özel bir işlem yapmamız gerekecek. Şimdi bunu da göz önüne alarak şimdi kodun akışını inceleyelim. Öncelikli olarak carry bitini sıfırladım ve daha sonra da rotate carry left yaptık. Rotate carry left fonksiyonu arkadaşlar AL'deki değeri bir kere sola doğru öteleyerek çalıştı.
+
+348
+01:23:14,847 --> 01:23:22,448
+Bunun anlamı ne? Az önce sıfırlamış olduğumuz keri biti artık AL'nin en düşük anlamlı bitinde yerleşik olmuş oldu.
+
+349
+01:23:22,448 --> 01:23:31,448
+AL'deki en yüksek anlamlı bit ise keriye dönmüş oldu. Döndürdüğümüz için AL'nin en yüksek anlamlı biti keriye döndü.
+
+350
+01:23:31,448 --> 01:23:35,847
+Kerideki sıfır değeri ise AL'nin en düşük anlamlı bitine geldi.
+
+351
+01:23:36,020 --> 01:23:45,020
+Daha sonrasında örneğin port A ile ilgili işlem yapacaksak, biz eğer ki port A'ya AL değerini output komutuyla gönderdiğimizde,
+
+352
+01:23:45,020 --> 01:23:52,020
+bu durumda az önce 0 olarak set etmemiş değer port A'nın 0 ucunda oluşmuş oluyor.
+
+353
+01:23:52,020 --> 01:23:55,020
+Port A'nın 0 ucunda oluşmuş oluyor.
+
+354
+01:23:56,020 --> 01:24:00,020
+Bunun hatta belirli bir süre boyunca kalması gerekiyor.
+
+355
+01:24:00,372 --> 01:24:14,772
+Bunun hatta kalabilmesini sağlamak adına da bir tane hazır bir delay fonksiyonu kullanıyoruz. Bu delay fonksiyonu hazır derken şunu kastediyorum. Daha önceden tanımlanmış ve belirli bir süre boyunca boş döngü sağlayan bir fonksiyon.
+
+356
+01:24:26,292 --> 01:24:46,292
+104 mikrosaniyelik bir süreyi sağlaması gerekiyor. 9600 bu hatta, 104 mikrosaniye boyunca hatta verinin kalması lazım. Demek ki bu delay fonksiyonu 9600 bu hatta, 104 mikrosaniyelik çağrılmasından geri dönüşüne kadar süreyi kapsayan bir fonksiyon. Boş bir döngü aslında.
+
+357
+01:24:46,292 --> 01:24:53,228
+Daha sonrasında ne yapıyoruz arkadaşlar? Bakın, rotate, carry, write yaparak
+
+358
+01:24:53,779 --> 01:25:00,180
+AL'nin en düşük anlamlı bitindeki start bitini tekrar carry'e attık.
+
+359
+01:25:00,180 --> 01:25:10,680
+Ve AL'nin orijinal en yüksek anlamlı bitini tekrar geri A7 numaralı bite yüklemiş olduk.
+
+360
+01:25:10,680 --> 01:25:17,079
+AL'nin en düşük anlamlı bitinde şu anda göndermek istediğimiz verinin en düşük anlamlı biti de yerleşmiş oldu.
+
+361
+01:25:17,079 --> 01:25:20,079
+Her seferinde de carry'i sıfırlıyoruz.
+
+362
+01:25:20,787 --> 01:25:33,787
+Bu aşamada şu ana kadar sadece start biti, carry'den AL'ye gitti, tekrar AL'den carry'e geldi ve carry'deki bu sıfır olan değil yine sıfırladı. Daha sonra tekrar loop'la...
+
+363
+01:25:34,260 --> 01:25:48,760
+Bir sonraki bit için tekrar output komutuna geldik. Şimdiki output komutuyla AL'deki en düşük anlamlı biti, yani göndermek istediğimiz verinin en düşük anlamlı bitini hatta koymuş olduk.
+
+364
+01:25:48,760 --> 01:26:00,260
+Yine örneğin 104 mikrosaniye boyunca bekledik. Bu verinin karşı taraftan alınmasını sağladı. Yine AL'deki veriyi bir bit sağ öteliyoruz.
+
+365
+01:26:00,692 --> 01:26:18,692
+Az önceki adımda keredeki değeri sıfırlamıştık. Dolayısıyla iki numaralı bit, en düşük anlamlı bit sırasına gelirken, AL ise soldan itibaren sıfır değerleriyle doldurulmaya başlandı, dikkat edecek olursanız.
+
+366
+01:26:18,692 --> 01:26:26,591
+Dolayısıyla ben burada her adımda sıradaki anlam sırasındaki biti hatta koyup belirli bir süre beklerken,
+
+367
+01:26:26,591 --> 01:26:49,511
+AL yazmacı soldan sıfırlarla doluyor. Ben start bitini gönderdim. 8 adet data bitini de gönderdim. Şu anda 10. bit ile ilgiliyim. 10. bit olarak AL'nin en düşük anlamlı bitine gelecek değer zaten şu. Rotate, pardon burada STC'miş, set carry flag'miş, onu yanlış söyledim.
+
+368
+01:26:49,876 --> 01:27:14,496
+Set, carry, flag olduğu için soldan hep 1 ile doluyor. Dolayısıyla 10. bite geldiğimiz vakit sürekli olarak carry biti set edip soldan AL'ye döndürdüğümüz için 10. biti gönderirken AL'nin en düşük anlamlı biti ve diğer bütün bitlerinde hep 1 yerleşik olacaktır. Dolayısıyla 10. bit değerim kesinlikle 1 oluyor. Bunun anlamı da şudur.
+
+369
+01:27:14,863 --> 01:27:29,064
+Zaten hat boştayken logic 1'deydi. Start bitiyle 0'a çektim. Datalarımı gönderdim, data bitlerimi gönderdim D0'dan D7'ye kadar. Daha sonra 10. biti gönderiyorum. 10. bitimde 1 değerinde.
+
+370
+01:27:29,684 --> 01:27:54,683
+Dolayısıyla bu da stop bitine karşılık gelmiş oluyor. Son olarak göndereceğimiz stop bitine karşılık gelmiş oluyor. Dolayısıyla 10 tane biti bu şekilde göndermiş oluyoruz. Tekrar şurayı söylemiş olayım. Yanlışlıkla burayı clear olarak söylemiştim. Set carry flag. Yani her seferinde carry'i bir yapıyor ve aleyi soldan bir ile döndürüyoruz. Dolayısıyla 10. bitimiz...
+
+371
+01:27:55,123 --> 01:28:03,123
+Sıra 10. bite geldiğinde 10. bitimiz AL'de en düşük anlamlı bit olarak bir lojik değerine sahip olmuş olacak.
+
+372
+01:28:03,123 --> 01:28:05,123
+Aynı işlemi...
+
+373
+01:28:10,323 --> 01:28:16,003
+Aynı işlemi arkadaşlar seri veri gönderirken de yapabiliriz. Seri veri alırken de yapabiliriz. Pardon.
+
+374
+01:28:16,003 --> 01:28:26,083
+Öncelikli olarak yapacağımız işlem start biti geldi mi diye bir döngü içerisinde kontrol yapmak. Yani hattın sıfıra geldiğini kontrol etmek.
+
+375
+01:28:26,083 --> 01:28:37,283
+Hatırlayacak olursanız donanımsal olarak seri veri alışverişinde hattaki verinin iki kere örneklendiğini söylemiştim. Burada da benzer bir örnek var.
+
+376
+01:28:37,555 --> 01:28:52,555
+Start biti iki kere örneklenerek Start bitinin gelip gelmediği kontrol ediliyor. Daha sonrasında ise Start bitini almışsak, sırasıyla bize gelecek veriler D0'dan itibaren, verinin en küçük anlamı bitinden itibaren geliyor.
+
+377
+01:28:52,555 --> 01:29:03,555
+Dolayısıyla veriyi okuyup, belirli bir süre bekleyip, bütün veriyi sağa doğru öteleyip, daha sonra yeni gelen veriyi alıp, yine carry üzerinden alabiliriz bunu.
+
+378
+01:29:04,000 --> 01:29:09,760
+Alıp sürekli olarak AL yazmacını soldan sağa doğru öteleyerek veriyi biriktirebiliriz.
+
+379
+01:29:09,760 --> 01:29:17,599
+En son gelen stop bitini kontrol ederek varsa keri bitini de kontrol ederek veri alışverişini tamamlamış oluyoruz.
+
+380
+01:29:17,599 --> 01:29:26,800
+Bu mantık çerçevesinde de bunu almış oluyoruz. Bununla ilişkili bir kod örneğimiz yok ama veri göndermeye benzer bir şekilde bunu da sağlamak mümkün.
+
+381
+01:29:27,220 --> 01:29:36,220
+Şimdi bu noktaya kadar anlatmış olduklarımız genel anlamıyla seri haberleşmeye ilişkin kavramlardı. Bu noktadan itibaren programlanabilir.
+
+382
+01:29:37,844 --> 01:29:49,324
+Seri olarak senkron ve asenkron mantıklı veri transferini ve veri göndermeyi destekleyen 8251 yardımcı devresi ile ilgili olarak konuşuyor olacağız.
+
+383
+01:29:49,324 --> 01:29:57,923
+8255 öncesinde de hatırlayacak olursanız Custom IO cihazı yapmıştık. Yani kendimiz donanımıyla ve yazılımıyla böyle bir cihaz yapmıştık.
+
+384
+01:29:57,923 --> 01:30:05,004
+Buradaki akış da benzer bir şekilde gelişti. Kendimiz 8255 kullanarak bir yazılımsal
+
+385
+01:30:05,199 --> 01:30:14,599
+seri port oluşturduk ve bir yandan da bunun donanımsal karşılığı olan 8251'i inceliyor olacağız.
+
+386
+01:30:14,599 --> 01:30:24,599
+8251 dediğimiz gibi USART entegresi, evrensel, senkron, asenkron alıcı, gönderici mantık olarak isimlendiriliyor.
+
+387
+01:30:24,884 --> 01:30:34,483
+İç yapısı ve 8086 ile olan bağlantısı için arkadaşlar bu bağlantı şemasını inceliyor olacağız.
+
+388
+01:30:35,923 --> 01:30:41,483
+Şimdi incelediğimiz vakit arkadaşlar bakın bunun bir önce şu taraftaki uçlarla ilgilenelim.
+
+389
+01:30:41,483 --> 01:30:47,483
+Bunun bir kere bir klok işareti var. Bu klok işareti bu devrenin
+
+390
+01:30:47,488 --> 01:31:09,488
+Kendi çalışması için dışarıdan sağlanmış olan bir clock işareti. Bu aynı zamanda içerideki kontrol ve geçişleri de tetikleyen bir saat giriş darbesi olarak kullanılıyor. Bunun haricinde cihaz yine 8 bitlik bir cihaz. Dolayısıyla 8 adet data ucuna sahip.
+
+391
+01:31:09,779 --> 01:31:27,779
+Bu 8 adet data ucu doğrudan 8086'nın data basına bağlı. Eğer ki biz bu cihazı ardışık çift adreslere yerleştirmişsek, 8251'in data uçları 8086'nın düşük anlamlı D0, D7 data uçlarına bağlı olacak.
+
+392
+01:31:27,779 --> 01:31:34,779
+Eğer tek adreslere yerleştirmişsek de D8, D15 uçlarına bağlı olması gerekiyor.
+
+393
+01:31:35,408 --> 01:31:43,648
+Yine bunun bir reset ucu mevcut. Sistem resetlendiğinde bunu da resetlemek için kullanabileceğimiz bir uç.
+
+394
+01:31:43,648 --> 01:32:02,368
+Burada iki tane kontrol ucumuz var. RX-REDI ve TX-REDI uçları. Bu uçlar gördüğünüz gibi 8086'da kesme isteği, interrupt request üreten kaynaklar olarak fonksiyon gösterebiliyor.
+
+395
+01:32:02,515 --> 01:32:17,515
+Bunlar şu anlama geliyor. Biz 8086 gibi düşünelim. 8086 dış dünyaya veri göndermek istiyorsa, 8251'in veri göndermek açısından hazır olmasını kontrol etmeliyiz.
+
+396
+01:32:17,515 --> 01:32:24,515
+Bu da transmit ready ucunun 1 olmasıyla sağlanabilir veya transmit ready bitinin 1 olmasıyla sağlanabilir.
+
+397
+01:32:24,884 --> 01:32:35,484
+Eğer ben bunu istersem, aynı zamanda donanımsal bir kesme isteği olarak da kullanabilirim. Yani ben sürekli peş peşe pek çok veriyi dış dünyaya seri olarak göndermek istiyorsam,
+
+398
+01:32:35,796 --> 01:32:42,796
+Her seferinde TX, Red'i 1'e çıktığında, ben bir sonraki veriyi 8251'e yazabilirim.
+
+399
+01:32:42,796 --> 01:32:49,796
+Ve bu da otomatik olarak, ben yazdıktan sonra zaten otomatik olarak bunu dış dünyaya bit bit gönderiyor olacak.
+
+400
+01:32:49,796 --> 01:32:54,796
+Veya benzer şekilde ben dış dünyadan pek çok veriyi okumak istiyorsam, peş peşe veri okumak istiyorsam,
+
+401
+01:32:55,220 --> 01:33:16,979
+8251 seri olarak gelen bir paketin hazır olduğunu nereden anlayacak? RX Ready bitinin, statüs bitinin 1 olması ile anlayabilir. Bu bit, statüs biti aynı zamanda fiziki bir uç olarak da 8086'da kesme isteği, interrupt request isteği üreten bir uç olarak da fonksiyon gösterebiliyor.
+
+402
+01:33:18,100 --> 01:33:30,820
+RX Red'i ve TX Red'inin fonksiyonel anlamları bu. Bunlar hem statüs biti olarak mevcut, hem de fiziki birer uç olarak mevcut. Dolayısıyla ben bununla fiziki uçları kesme isteği üretmek için kullanabilirim.
+
+403
+01:33:30,820 --> 01:33:39,860
+Veya polink mantığında gidip bu bitlerin statüs yazmacından bu bitleri okuyarak bunları polink mantığında kontrol edebilirim.
+
+404
+01:33:40,180 --> 01:34:01,579
+Yine 8251'in read ve write uçları var. Bu read ve write'lar yine 8086 açısından tanımlı. Yani 8086, 8251'e bir değer yazmak istediğinde buna write işaretini aktif yaparak bir değer gönderiyor. Yani bu write işareti 8086'nın buraya yazma yapmak istediği anlamına geliyor.
+
+405
+01:34:08,180 --> 01:34:23,680
+Bu birimleri istediği anlamında değerlendirilmesi gerekiyor. Bir başka ucumuz arkadaşlar, chip select ucu. 8251'de bir tane chip select ucu var. Yani bu cihazı aktif etmek istiyorsak, chip select ucunda sıfır değerini üretmemiz gerekiyor.
+
+406
+01:34:27,891 --> 01:34:45,652
+Bu RX Reddy ve TX Reddy uçları arkadaşlar, bunlar bir kesme kontrolcü yardımcı devremiz var. Onun girişlerine bağlı oluyor. O entegre üzerinden 8086'nın interrupt request ucuna bağlanıyor.
+
+407
+01:34:46,515 --> 01:34:56,615
+Normalde 8086 mikroişlemcisinde donanımsal dış kesmeler için bir tane giriş var. O da interrupt request ucu. Daha önceki haftalarda görmüştük bunu.
+
+408
+01:34:56,884 --> 01:35:07,324
+Tek bir uç var. Dolayısıyla birden fazla kaynaktan kesme isteğini değerlendirmek istiyorsam, ya bunu ben bir öncelik enkoderüyle çözeceğim veya öncelik vererek çözeceğim.
+
+409
+01:35:07,324 --> 01:35:19,604
+Veyahut da, yani custom bir cihaz yaptım yani. Veyahut da kesme isteklerini değerlendirmek için hazır olarak mevcut olan 8259 kesme kontrolcüsüne bağlayıp, bunun girişlerine bağlayıp,
+
+410
+01:35:19,828 --> 01:35:31,228
+Öncelikleri ve sinyalleşmeleri burada programlayıp, buradan 8086'nın tek olarak mevcut olan interrupt request ucuna bağlanmazlarını sağlıyoruz.
+
+411
+01:35:31,228 --> 01:35:35,228
+Yani o seçimi 8259 bizim yerimize yapmış oluyor.
+
+412
+01:35:35,228 --> 01:35:40,228
+8086'da bir tane kesme istek ucu var, o da int-r ucu.
+
+413
+01:35:40,228 --> 01:35:47,228
+Birden fazla kaynağa bağlamak için bunu 8259 üzerinden bağlayarak çalışıyoruz.
+
+414
+01:35:49,203 --> 01:36:10,203
+8251'in bir diğer ucu ise arkadaşlar C-D ucu. Bu kontrol veyahut da data anlamına gelen bir uç. Aslında bu uç 8251'in tek adres ucu. 8251'in bir tane adres ucu var, o da CD ucu.
+
+415
+01:36:10,579 --> 01:36:24,340
+Bu uç aynı zamanda şöyle fonksiyon gösteriyor. Bu adres ucuna sıfır değerini vermişsem, yani sıfır değeriyle ben adreslemişsem bu cihazı, bu data yazmaçlarına erişim anlamına geliyor.
+
+416
+01:36:24,340 --> 01:36:31,340
+Ben bu adres ucunu 1 ile sürmüşsem bu da kontrol yazmaçları anlamına geliyor.
+
+417
+01:36:31,444 --> 01:36:39,644
+Demek ki ben burada adres ucuna 0 vererek data yazmaçlarına erişiyorum. Adres ucuna 1 vererek de kontrol yazmaçlarına erişmiş oluyorum.
+
+418
+01:36:39,644 --> 01:36:50,244
+Yalnız dikkat edin, bu cihazın bir tane adres ucu mevcut. Şimdi diğer taraftaki uçlara bakalım. Diğer taraftaki uçlara bakacak olursak besleme uçları var.
+
+419
+01:36:56,884 --> 01:37:21,503
+Receive Data ve Transmit Data uçları. Yani dış dünyadan seri olarak gelen veriler, RxD ucu üzerinden buradaki veri okuma bufferında toplanıyor. Dışarıya gönderilecek olan veriler ise öncelikli olarak Transmit bufferında biriktiriliyor. Daha sonra buradan seri olarak Bitbit karşı tarafa gönderilmiş oluyor.
+
+420
+01:37:26,292 --> 01:37:41,712
+Bununla birlikte modem kontrol uçları var. Bu modem kontrol uçlarıyla ilgilenmeyeceğiz. Bununla ilgili bir kontrolümüz olmayacak. Bir de RXC ve TXC uçları var. Bunlar arkadaşlar Kulok uçları.
+
+421
+01:37:42,068 --> 01:38:04,068
+Receive ve Transmit için iki farklı Kulok girişim var. Bunun anlamı şu, ben veri almayı ve veri göndermeyi farklı saat frekanslarında gerçekleştirebilirim. Örneğin 9600'de veri gönderirken 28800'de veri alıyor olabilirim. Buna ilişkin bir Kulok girişi. Şimdi içerideki yapıya bakalım.
+
+422
+01:38:04,239 --> 01:38:31,140
+İçerideki yapıyı incelediğimizde arkadaşlar bakın şu sol taraftakiler dışarıdan erişilebilir yazmaçları gösteriyor. Sağ taraftaki bu iki yazmaç ise dışarıdan erişilemeyen iki tane iç yazmacı belirtiyor. Şimdi bu kontrol edelim. Modre yazmacı, senkronizasyon 1, senkronizasyon 2, kontrol, data in, data out, statüs. Toplamda 1, 2, 3, 4, 5, 6, 7 tane yazmaç dışarıdan erişilebiliyor.
+
+423
+01:38:31,572 --> 01:38:50,271
+Halbuki bir tane adres ucu var. Bu nasıl oluyor? Normalde 8255'te incelemiştik. İki tane adres ucuna karşılık 2 üzeri 2. Dört tane yazmaç vardı ve bu cihaz 4 byte'lık yer kaplıyordu IO uzayında.
+
+424
+01:38:50,452 --> 01:39:07,452
+Şimdi bu cihazı da aynı mantık çerçevesinde değerlendirmemiz lazım. Bu cihazın bir tane adres ucu olduğu için ayı uzayında 2 byte'lık yer kaplamakla birlikte bizim ardışık şekilde bu cihazı adresleme yapımız farklı yazmaçlara erişimimize sebebiyet verecek.
+
+425
+01:39:07,731 --> 01:39:22,731
+Yani ben bu cihaza ilk erişimde mod yazmacına erişeceğim. Mod yazmacına yazmış olduğum değer eğer senkron haberleşme ise tekrar buna kontrol yazmacı üzerinden eriştiğimde senkronizasyon 1, senkronizasyon 2 karakterlerine erişmiş olacağım.
+
+426
+01:39:22,731 --> 01:39:32,492
+Eğer ki ben asenkron haberleşmeyi tercih etmişsem mod yazmacına yazdığım kontrol değeriyle bir sonraki kontrol erişimiminde kontrol yazmacına erişiyorum.
+
+427
+01:39:32,532 --> 01:39:42,532
+gibi bir mantık söz konusu. Veyahut da ben bunu adres ucuna 0 vererek yazma yaptığımda data out bufferına erişiyorum.
+
+428
+01:39:42,532 --> 01:39:53,532
+Adres ucuna 0 vererek okuma işlemi yaptığımda da data in bufferına erişmiş oluyorum. Dolayısıyla burada bir akış üzerinden yazmaçlara erişim söz konusu olacak.
+
+429
+01:40:00,000 --> 01:40:02,000
+Cihazın veri uçları
+
+430
+01:40:06,771 --> 01:40:14,771
+Cihaz seçilmemiş, en şu satırdan bahsediyorum. Eğer cihaz seçilmemişse, cihazın veri uçları hattan koparılmış gibi etki gösteriyor.
+
+431
+01:40:14,771 --> 01:40:26,771
+Eğer cihaz seçilmiş olmasına rağmen herhangi bir okuma veya yazma işareti gelmemişse, yine cihazın veri uçları hattan, veri yolundan koparılmış gibi bir etki gösteriyor.
+
+432
+01:40:26,771 --> 01:40:32,771
+Daha sonraki anlamlı okuma ve yazmalar geliyor. Cihaz seçildikten sonra
+
+433
+01:40:33,076 --> 01:40:42,475
+Kontrol yazmaçları üzerinde, yani adres ucuna bir vererek ben bir okuma işlemi yapmışsam, yani kontrol yazmaçlarından okuma yaptığımda,
+
+434
+01:40:42,475 --> 01:40:50,076
+statüs yazmacı mikroişlemciye aktarılıyor, mikroişlemcinin veri uçlarına aktarılıyor. Tekrar edelim.
+
+435
+01:40:50,076 --> 01:40:55,576
+Cihaz üzerinde kontrol yazmaçları, kontrol adreslerinden diyelim buna.
+
+436
+01:40:55,828 --> 01:41:05,828
+Çünkü adres ucuna bir verdiğimizde bu kontrol yazmaçlarına karşılık geliyor. Kontrol yazmaçları adresinden okuma yaptığımda bu status word'e erişmemi sağlıyor.
+
+437
+01:41:05,828 --> 01:41:21,828
+Eğer ki ben kontrol yazmaçlarına yazma işlemi yaparsam, burada sırasıyla aslında mikroişlemciden mod, kontrol ve senkronizasyon yazmaçlarına, içerideki erişebilir yazmaçlara belirli bir sırada erişim sağlayacağım.
+
+438
+01:41:22,228 --> 01:41:32,228
+Eğer ki ben adres ucuna 0 veriyorsam, yani data yazmaçlarına yönelik olarak bir okuma işlemi yapmışsam, bu data in bufferını okuma anlamına geliyor.
+
+439
+01:41:32,228 --> 01:41:47,083
+Eğer ki ben adres ucuna 0 vererek data yazmaçlarında bir yazma işlemi yapmışsam, bu da data out yazmacına, data out bufferına bir mikroişlemciden değer gönderdiğim anlamına gelmiş oluyor.
+
+440
+01:41:47,091 --> 01:42:00,652
+Şimdi burada karmaşık olan yapı kontrol yazma işlemleri. Kontrol yazma işlemlerinde mod kontrol ve senkronizasyon yazma işlemlerine erişim nasıl oluyor ona bakalım.
+
+441
+01:42:00,652 --> 01:42:05,532
+Buradaki bir akış diagramını takip ediyoruz.
+
+442
+01:42:11,572 --> 01:42:29,572
+Yapmış olduğumuz ilk kontrol yazmacı şurada kontrol yazmacına yapılan ilk yazma işlemi, 8251 resetlendikten sonra kontrol yazmaclarına yapılan ilk yazma işi sonucunda veri mod yazmacına aktarılır.
+
+443
+01:42:31,171 --> 01:42:37,572
+Demek ki resetten sonra adres ucuna bir vererek yazma yaparsan bu değer mod yazmacına gidiyor.
+
+444
+01:42:37,908 --> 01:42:49,908
+Mod yazmacını ben eğer ki asenkron modda ayarlamışsam, bu durumda iki tane veya bir tane senkronizasyon karakteri gönderme hakkı kazanıyorum.
+
+445
+01:42:49,908 --> 01:42:57,908
+Dolayısıyla yapacağım ilk veri göndermesi, ilk veri yazması yine kontrol yazmaçlarına senkronizasyon bir karakterine yazıyor.
+
+446
+01:42:57,908 --> 01:43:01,908
+Eğer ben mod yazmacında iki tane senkronizasyon karakteri seçmişsem,
+
+447
+01:43:02,547 --> 01:43:19,347
+Mod yazmacından sonra yapacağım ilk adres değeri 1ken yazma senkronizasyon 1, ikinci yazma ise senkronizasyon 2 karakterine değer göndermemi sağlıyor. Eğer ki ben asenkron haberleşmeyi seçmişsem, akışın şuradaki kolunu takip ediyorum.
+
+448
+01:43:27,252 --> 01:43:33,252
+Ve bu işlem bir reset işlemi değilse bu sefer de kontrol yazmacına erişmiş oluyorum.
+
+449
+01:43:34,452 --> 01:43:44,252
+Yani dolayısıyla bizim en çok karşılaşacağımız yapı şu, cihazı resetleyeceğiz. Daha sonra ilk değer olarak mod yazmacına değer yazacağız.
+
+450
+01:43:44,252 --> 01:43:51,252
+Cihazı asenkron modda ayarlayacağız. Tekrar kontrol adres değeri 1 ile cihazı adresleyip
+
+451
+01:43:51,572 --> 01:43:56,332
+Reset olmayan bir komut gönderdiğimizde bu da kontrol yazmacı olacak.
+
+452
+01:43:56,332 --> 01:44:02,072
+Cihaz herhangi bir anda çalışıyor iken, bakın cihaz herhangi bir anda çalışıyor iken,
+
+453
+01:44:02,072 --> 01:44:13,872
+ben cihaza reset kontrol işaretini gönderdiğimde başa dönüyorum ve buradan itibaren bu akışın neresinde olduğum kesinlik kazanmış oluyor.
+
+454
+01:44:14,644 --> 01:44:30,003
+Cihaz herhangi bir andayken ben buna reset kontrol işareti gönderdiğimde cihaz sırasıyla mod ve kontrol akışını veya senkron modda da çalışacaksa mod senkron bir senkron iki kontrol akışını sağlamış oluyor.
+
+455
+01:44:30,003 --> 01:44:36,963
+Dolayısıyla mod senkronizasyon ve kontrol karakterlerine erişim bu akış çerçevesinde gerçekleşmiş olacak.
+
+456
+01:44:38,323 --> 01:44:44,083
+Şimdi bu 8251 üzerindeki mod yazmacının görevlerine bakalım.
+
+457
+01:44:46,523 --> 01:45:04,163
+Mod yazmacına eğer ki arkadaşlar yazmış olduğumuz kontrol işaretini, kontrol byte'ının son 2 biti 0 ise bu cihazı senkron moda sokuyor. Bakın son 2 bit 0 ise 8251 senkron moda giriyor. Senkron moda girdiği vakit
+
+458
+01:45:04,948 --> 01:45:08,548
+Akışımız şuradan itibaren ilerliyor. Tamam.
+
+459
+01:45:10,148 --> 01:45:12,868
+Eğer ki son iki bitimiz sıfır değilse,
+
+460
+01:45:13,588 --> 01:45:21,148
+1, 2 veya 3'e karşılık gelen binary değerlerse, bu cihazın asenkron modda çalışacağını ifade ediyor.
+
+461
+01:45:21,148 --> 01:45:27,348
+Ve bunlar aynı zamanda saat frekans faktörü olarak kullanılıyor. Nasıl kullanılıyor?
+
+462
+01:45:28,148 --> 01:45:31,148
+Buraya yazmış olduğumuz değer eğer 1 ise,
+
+463
+01:45:32,692 --> 01:45:40,891
+RXC ve TXC değerleri örneğin olduğu gibi, bowdread için kullanılıyor, 0, 1 için.
+
+464
+01:45:40,891 --> 01:45:46,891
+2 için, clock işaretleri 16'ya bölünerek kullanılıyor.
+
+465
+01:45:47,060 --> 01:46:02,060
+Eğer 3 değerini vermişsem de yani 1-1 değerini vermişsem de faktör değer olarak 64'e bölünerek RxC ve TxC işaretleri 64'e bölünerek frekansları bu şekilde boundary rate üretimi için kullanılıyor.
+
+466
+01:46:02,060 --> 01:46:14,060
+Devam edecek olursak asynkron mod için bir sonraki iki anlamlı bitimiz kaç tane veri biti göndereceğimizi belirliyor. 5, 6, 7 veya 8 data biti gönderebiliriz.
+
+467
+01:46:14,192 --> 01:46:21,791
+0, 0 için 5, 0, 1 için 6, 1, 0 için 7, 1, 1 için 8 tane data biti göndereceğim anlamına geliyor.
+
+468
+01:46:21,791 --> 01:46:32,192
+Bir sonraki mod yazmaç bitimiz parity enable biti. Parity enable biti ile birlikte ben parity biti gönderip göndermeyeceğimi set ediyorum.
+
+469
+01:46:32,192 --> 01:46:37,192
+0 ise parity biti kullanmayacağım, 1 ise parity biti kullanacağım anlamına geliyor.
+
+470
+01:46:37,619 --> 01:46:48,619
+Bir sonraki bitimiz, eğer ben parity biti kullanmayı seçmişsem, bunun odd parity mi, even parity mi olacağını parity control bitinden yine sağlamış oluyorum.
+
+471
+01:46:48,619 --> 01:47:03,619
+EP bitiyle sağlamış oluyorum. Eğer ki ben parity biti dahil olmak üzere, data bitleri ve parity bitinde toplam bir sayısının tek olduğu durumu kural olarak koymuşsam,
+
+472
+01:47:04,372 --> 01:47:22,872
+Bu durumda odd parity'yi seçmiş oluyorum. Eğer ki data ve parity bitleri ile birlikte birilerin sayısının çift olmasını kural olarak koşmuşsam, bu da çift parity, even parity, Türkçesi de eşlik olarak geçiyor. Çift eşlik kuralını benimsemiş oluyorum.
+
+473
+01:47:22,872 --> 01:47:29,872
+Son olarak en yüksek anlamda 2 bitimiz ise şunu söylemiş oluyor.
+
+474
+01:47:32,372 --> 01:47:39,771
+Bir tane stop biti mi kullanacağım, iki tane stop biti mi kullanacağım yoksa bir buçuk stop biti mi kullanacağım bu anlama geliyor.
+
+475
+01:47:39,771 --> 01:47:53,972
+Bir buçuk stop biti diye bir şey aslında fizik olarak yok ama bir buçuk bit süresi boyunca hattın en az birde kalması sonucunda kapatma parantezini değerlendirmiş olacağım anlamına geliyor bu da.
+
+476
+01:47:54,872 --> 01:47:59,072
+Dolayısıyla biz asenkron modla ilgileneceğimiz için bunun üzerinde durmuş oldum.
+
+477
+01:48:00,756 --> 01:48:18,756
+Peki kontrol yazmacına gelelim. Kontrol yazmacında neler var bakalım. Bundaki kontrol yazmacındaki değerlerden bir kısmı modem uçlarıyla alakalı. Onları kullanmayacağımızı söylemiştim. Şimdi de üzerlerinde detay olarak durarak ilerleyeceğim.
+
+478
+01:48:18,756 --> 01:48:23,756
+En düşük anlamlı kontrol bitimiz Transmitter Enable.
+
+479
+01:48:23,988 --> 01:48:30,988
+Eğer 8251'in dış dünyaya veri göndermesini istiyorsak, transmitter enable'ı 1 olarak set etmemiz gerekiyor.
+
+480
+01:48:30,988 --> 01:48:47,988
+DTR biti modemle ilgili onu geçiyorum. RXE biti receive enable biti. Eğer 8251'in dış dünyadan veri alıp bunu biriktirmesini istiyorsak, receive enable bitini 1 olarak set etmemiz gerekiyor.
+
+481
+01:48:50,931 --> 01:49:00,531
+Seri haberleşmeyi kesmek adına bir tane kontrol bitimiz var. Buraya bir yazdığımız vakit seri haberleşme kesiliyor, kesintiye uğruyor.
+
+482
+01:49:01,531 --> 01:49:15,331
+Bir başka kontrol bitimiz, hataları temizlemeye ilişkin bir kontrol bitimiz, error bitlerini clear eden bir bayrağımız var burada veya kontrol bitimiz var.
+
+483
+01:49:15,667 --> 01:49:38,787
+Daha önceden gönderdiğimiz ve hatalı bir şekilde sonuçla dönen bir veri iletişimi var ise, yeni bir iletişim başlatacaksam, bunun öncesinde hata bitlerine ilgili kontrol bitini bir yaparak sıfırlamam uygun olacaktır. Bunun için kullanılıyor. RTS modemle ilgili uçlar, onu da geçtik.
+
+484
+01:49:39,188 --> 01:49:52,667
+UR internal reset'e karşılık geliyor. Dolayısıyla arkadaşlar bakın, 8251'i resetleyebilmek için elimde iki tane imkan varmış. Bunlardan bir tanesi fiziki olarak reset ucuna bir göndermekle bu sağlanabilir.
+
+485
+01:49:52,667 --> 01:50:02,427
+İkincisi yazılımsal olarak kontrol bitinin D6 numaralı bitine bir yazarak bunu kontrol yazmacına aktarmak şeklinde olabiliyormuş. Dolayısıyla...
+
+486
+01:50:02,899 --> 01:50:16,460
+Şu akışta görmüş olduğunuz reset işlemi aslında şuna karşılık geliyor. Kontrol yazmacının 6 numaralı bitine 1 yazarak, yani 40H yazarak bunu kontrol yazmacına aktarmak bu anlama geliyor.
+
+487
+01:50:17,739 --> 01:50:27,380
+Hunt mod ile ilgili olarak da bunu da 0 olarak kullanacağımızı söyleyip, daha detay bilgi vermeye gerek olmadığını söyleyebilirim.
+
+488
+01:50:29,395 --> 01:50:42,275
+Dolayısıyla burada vermiş olduğumuz akışa göre bizim çalışacağımız mantıkta, 8251'in mod yazmacını asenkron modda çalışacak şekilde bir faktör değeri yazıyoruz.
+
+489
+01:50:42,275 --> 01:50:49,475
+Bunu clock girişlerine bağlamış olduğumuz değerle orantılı olacak şekilde faktör değerini belirledik.
+
+490
+01:50:49,475 --> 01:50:55,475
+Asenkron modu seçmiş olduk. Adres değeri 1 olarak yeniden cihazı adresleyip
+
+491
+01:50:55,699 --> 01:51:03,020
+Resetledikten sonra bütün bu yazma işlemlerini baştan başlayarak ilerlemiş olacağız.
+
+492
+01:51:03,020 --> 01:51:08,180
+Son olarak bir de status bitimiz vardı. Bu status bitine bakalım.
+
+493
+01:51:08,180 --> 01:51:12,020
+Status bitini ne zaman kullanabiliyorduk, ne zaman erişiyorduk?
+
+494
+01:51:12,020 --> 01:51:18,060
+Adres ucu 1 iken yapmış olduğumuz okumalar status biti olarak anlam kazanıyordu.
+
+495
+01:51:18,060 --> 01:51:22,659
+Şimdi buradaki status bitini inceleyelim. Statüs yazmacını inceleyelim.
+
+496
+01:51:22,804 --> 01:51:37,203
+En düşük anlamlı bitimiz arkadaşlar TX Ready biti. Bunu az önce de söylemiştim. Transmit Ready anlamındaki bu kontrol hem bir statüs biti hem de fiziki bir uç olarak mevcut.
+
+497
+01:51:37,203 --> 01:51:43,804
+Eğer ben kesme isteğiyle, donanımsal kesme ile bu kontrol ucunu yürütmek istiyorsam,
+
+498
+01:51:44,112 --> 01:51:51,112
+Bu durumda gidip statüs bitinin en düşük anlamlı biti 1 mi değil mi diye kontrol etmem lazım.
+
+499
+01:51:51,112 --> 01:52:00,112
+Eğer bu bit 0 ise bunun anlamı şudur, 8251 hala az önceki göndermiş olduğum veriyi dış dünyaya aktarmakla meşgul.
+
+500
+01:52:00,112 --> 01:52:06,923
+Yani o işlemi bitmedi. Ben bunun üzerine yeni veri yazarsam az önceki veriyi ezmiş olabilirim.
+
+501
+01:52:07,283 --> 01:52:19,963
+Dolayısıyla TxRed'i 1 olana kadar polling yapıp bekliyorum. TxRed'i 1'e çıktığında yeni göndermek istediğim veriyi 8251'in Data Out Buffer'ına yazıyorum.
+
+502
+01:52:21,103 --> 01:52:27,923
+Aynı şey RxRed'i için de geçerli. Ben dış dünyadan veri okumak istiyorsam bunun anlamı şu.
+
+503
+01:52:28,404 --> 01:52:48,404
+Rx-ready ucunun 1'e çıkması lazım. 1'e çıkmışsa dış dünyadan bit bit gelen, seri olarak bit bit gelen veri tamamen alındı ve biriktirildi, paralelleştirildi. Artık 8251'in data in bufferında bu mevcut. Artık mikroişlemci bunu gidip 8251'in data in bufferından okuyabilir.
+
+504
+01:52:51,488 --> 01:52:57,668
+RxR de biti 1'e çıkana kadar bekliyorum. Polink ile sürekli bunu kontrol ediyorum.
+
+505
+01:52:57,668 --> 01:53:10,028
+1 numaralı biti kontrol ediyorum. 1'e çıkmadığı süre boyunca bekliyorum. 1'e çıktığında artık veri hazırdır diye bunu anlıyorum ve gidip 8251'in data in bufferını okuyorum.
+
+506
+01:53:17,300 --> 01:53:30,300
+Eğer ki veri aktarılırken, bize gelen veri için bahsediyorum, bize gelen veri de, şimdi karşı taraf veriyi gönderirken sonuna bir paritibiti ekledi, hesaplayıp bir paritibiti ekledi.
+
+507
+01:53:30,300 --> 01:53:37,231
+Veri bize geldi, verinin data kısmıyla ilgili olarak ben data kısmını aldım.
+
+508
+01:53:37,231 --> 01:54:00,231
+Kendim bir pariti hesapladım. Benim hesapladığım pariti bitiyle aldığım pariti bitini karşılaştırıyorum. Eğer bunlarda bir uyumsuzluk varsa pariti error oluşturuyorum. Yine overrun error, veri gönderimi daha bitmeden üzerine veri yazılmışsa ilgili hata biti set ediliyor. Framing error.
+
+509
+01:54:00,595 --> 01:54:20,595
+Örneğin ben start ve stop bitlerini uygun şekilde almayı bekliyordum ama, iki bit bekliyordum ama bir bitten sonra stop biti bitti. Örneğin bu bir framing error. Dolayısıyla böyle durumlarda framing error biti bir olarak set ediliyor. Daha önceki veri alışverişlerinde eğer burada hata kalmışsa bunları temizleyebilmek için...
+
+510
+01:54:22,963 --> 01:54:48,304
+Şuradaki ER bitini bir yaparak önceki işlemlerden kalan hata bitlerini topluca sıfırlama imkanımız mevcut. Burada diğer bitler asenkron ve modem işlemleriyle ilgili olduğu için onları da şu anda konu kapsam dışında olduğundan onları da anlatmamış olacağım. Bu sayede arkadaşlar 8251 için...
+
+511
+01:54:48,564 --> 01:55:12,564
+Uç tanımları, yazmaç tanımları ve bununla birlikte statüs bitinin ve erişim kurallarının tanımını yapmış olduk. Önümüzdeki hafta 8251'e ilişkin örneklerimiz var. O örnekleri yapıp 8254 entegresine geçiyor olacağız. Bu noktaya kadar sormak istediğiniz bir şey var mı konuyla ilgili?
+
+512
+01:55:16,595 --> 01:55:18,595
+Lab uygulamamız olacak.
+
+513
+01:55:21,395 --> 01:55:23,395
+Orada tekrar bağlantı sağlayacağız.
+
+514
+01:55:24,996 --> 01:55:26,996
+Sormak istediğiniz bir şey var mı arkadaşlar?
+
+515
+01:55:32,819 --> 01:55:39,899
+Ben bu slide'ı da yine online yıldız edi.tr'ye koyacağım. Oradan siz de indirip bakabilirsiniz tekrardan.
+
+516
+01:55:41,159 --> 01:55:45,619
+Bunun haricinde sormak istediğiniz bir şey yoksa arkadaşlar dersi sonlandırıyorum.
+
+517
+01:55:46,079 --> 01:55:50,399
+Laf seansında tekrar bağlantı sağlarsınız.
+
+518
+01:55:53,099 --> 01:55:54,599
+Evet, soruyor.
+
+519
+01:55:55,619 --> 01:55:59,619
+Bugün yok mu programda? Ben var diyebiliyorum ama.
+
+520
+01:56:09,555 --> 01:56:19,555
+Tabii, yani labı şöyle yaptık zaten arkadaşlar. Mesela bizim grubumuz ikiye bölündü, A ve B grubu. Bir hafta A grubu giriyor, bir hafta B grubu giriyor.
+
+521
+01:56:19,555 --> 01:56:30,555
+Dolayısıyla eğer A grubu zaten laba girdi, şu anda B grubunun labı, A grubunun lab seansına girmesine gerek yok. Sadece ilgili arkadaşlar girse yeterli olacak.
+
+522
+01:56:37,268 --> 01:56:46,567
+Lab'ın işleyişi bu şekilde. Bunun haricinde başka bir sorunuz yoksa arkadaşlar, herkese iyi günler dilerim. Haftaya görüşmek üzere arkadaşlar.
+
+523
+01:56:55,796 --> 01:56:56,796
+İyi günler.

@@ -1,0 +1,2079 @@
+1
+00:02:05,459 --> 00:02:06,619
+Arkadaşlar, merhaba.
+
+2
+00:02:12,020 --> 00:02:14,020
+Merhaba hocam. Merhaba.
+
+3
+00:02:14,020 --> 00:02:16,020
+Merhaba.
+
+4
+00:02:16,020 --> 00:02:22,020
+Hatırlayacak olursanız, geçen hafta 82-54 ile ilgili olarak ilerlemiştik. Modları görmüştük.
+
+5
+00:02:22,020 --> 00:02:30,020
+Sonrasında konuyla ilgili olarak örneklerimiz kalmıştı. Bu örneklere bakacağız şimdi.
+
+6
+00:02:30,020 --> 00:02:32,020
+Şöyle...
+
+7
+00:02:34,020 --> 00:02:35,212
+Önceyeyim ekranı.
+
+8
+00:02:42,867 --> 00:03:06,067
+Şimdi ilk örneğimiz, 8254 kullanarak bir saniyede bir puls işareti üreten bir donanım ve yazılımı ayarlamak. Bunun için verilenleri kullanacağız. İşte nelere dikkat etmemiz lazım? Öncelik olarak bir saniyede bir puls işareti üretmemiz gerekiyor.
+
+9
+00:03:06,963 --> 00:03:19,764
+8254 için kullanabileceğimiz clock girişi, 2 MHz'lik bir saat girişimiz var. Bunu kullanarak 1 saniyede bir full seyretten mantığı elde etmemiz lazım.
+
+10
+00:03:19,764 --> 00:03:27,659
+Son olarak da 8254 A9H adresinden itibaren ardışık tek adreslere yerleştirilmiş durumda.
+
+11
+00:03:28,116 --> 00:03:43,295
+Şimdi bu analizi, bu soruyla ilgili analizi şu şekilde yürütmemiz lazım. Elimizde 2 MHz'lik bir sinyal varken, saat işareti varken, bir saniyede bir puls üretmek istediğimiz zaman ne yapmalıyız? Önce onu bir çıkartmaya çalışalım.
+
+12
+00:03:43,295 --> 00:03:45,295
+Şimdi öncelikli olarak...
+
+13
+00:03:47,219 --> 00:04:06,780
+Sayıcının aslında bir frekans bölücü olarak çalıştığını düşünecek olursak, saniyede bir puls üretmek demek, bunun frekansının işte bir saniye periyot olduğuna göre frekansının bir hertz olduğunu söyleyebiliriz. Yani 2 MHz'den bir hertz'e düşmemiz lazım. Demek ki kaç adımlık bir bölüm işlemi gerekiyor?
+
+14
+00:04:08,788 --> 00:04:18,788
+İşte 2 milyon bölü 1, 2 milyon adet bölüm işlemi yapmamız gerekiyor. Frekansın 2 milyona bölünmesi gerekiyor.
+
+15
+00:04:19,788 --> 00:04:25,788
+Şimdi 2 milyon bizim elde edebileceğimiz bir bölüm mü? Tek bir sayıcı ile ona bakalım.
+
+16
+00:04:25,788 --> 00:04:30,788
+Bir sayıcıya yazabileceğimiz maksimum değer banyarı durum için, şöyle gördüğünüz gibi...
+
+17
+00:04:34,548 --> 00:04:44,548
+Bir sayıcıya yazabileceğimiz maksimum değer, binary durum için 65536 olabilir. Bu da tek bir sayıcı kullandığım zaman 2 MHz'lik bir sinyali
+
+18
+00:04:44,851 --> 00:04:56,851
+65536'ya bölmek anlamına geliyor. Yazabileceğim maksimum değer 65535 ama sıfırda dahil ederek toplamda 65536 adım bölme işlemi yapabileceğiz anlamına geliyor.
+
+19
+00:04:56,851 --> 00:05:06,851
+Yaklaşık böldüğümüz vakit 30 Hz'lik bir sinyal elde etmiş oluyoruz. Yani tek bir sayıcı kullandığımızda elde edilebileceğimiz minimum frekans 30 Hz oluyor. Bu ne demek?
+
+20
+00:05:06,851 --> 00:05:12,399
+Demek ki ikinci bir sayıcıyı daha kullanmam lazım. İki sayıcıyı birlikte kullanacağım.
+
+21
+00:05:12,399 --> 00:05:24,399
+Bu durumda nasıl bir yapı oluşturmam lazım? Birinci sayıcının clock işaretine 2 MHz'lik sinyali bağlayacağım. Evet, buradan elde edebileceğim maksimum şey, en düşük frekans 30 Hz civarında olacak.
+
+22
+00:05:24,399 --> 00:05:31,399
+Bunu uygun şekilde ayarlayacağım. Artık ne kadar bir frekansa denk gelecekse sayma değeriyle birlikte makul bir değeri ayarlayacağım.
+
+23
+00:05:31,399 --> 00:05:39,399
+Buradan elde etmiş olduğum çıktığı da çıkış işaretini de out işaretini alıp bir sonraki sayıcının clock işaretine bağlamam lazım.
+
+24
+00:05:39,764 --> 00:05:45,403
+Dolayısıyla kaskat bir yapı elde etmiş olacağız. Kabaca söylemek gerekirse şöyle bir şey olacak şekil itibariyle.
+
+25
+00:05:46,683 --> 00:05:48,204
+İki tane sayıcımız var.
+
+26
+00:05:49,244 --> 00:05:55,124
+Bu sayıcıların işte kulak işaretlerine CLK ucu var ve burada da bir
+
+27
+00:05:56,923 --> 00:05:58,444
+CLK ucu var.
+
+28
+00:05:58,963 --> 00:05:59,984
+Bir de bunların
+
+29
+00:06:00,504 --> 00:06:01,783
+A uçları var.
+
+30
+00:06:05,492 --> 00:06:07,492
+Bir de A tuşları var.
+
+31
+00:06:09,091 --> 00:06:11,091
+Bu durumda biz
+
+32
+00:06:13,172 --> 00:06:14,860
+2 MHz'lik
+
+33
+00:06:18,387 --> 00:06:32,447
+2 MHz'lik sinyali alıp birincisinin klok işaretine bağladığımızda, burada örneğin makul bir bölme değeri elde ettik. Bunun çıkışını, çıkış değerini elde etmiş olduğumuz çıkış değerini diğerinin klok işaretine bağlayacağız.
+
+34
+00:06:32,447 --> 00:06:43,847
+Öyleyse burada birinci sayıcıda elde etmek istediğimiz değer periyodik bir sinyal olması lazım. Bunun periyodik bir sinyal olması lazım, çıkışının.
+
+35
+00:06:44,627 --> 00:06:49,627
+Bu periyodik sinyallerden bir tanesi işte mod 2'ydi hatırlayacak olursanız. Mod 2 nasıl çalışıyordu?
+
+36
+00:06:50,627 --> 00:06:55,563
+İşte çıktısını çizecek olursak kabaca şöyle bir şeydi.
+
+37
+00:06:58,932 --> 00:07:07,932
+Uzun bir süre boyunca birde kalıyor, anlık olarak bir puls işareti geliyor. Daha sonra yine uzun bir süre boyunca birde kalıyor.
+
+38
+00:07:07,932 --> 00:07:20,932
+Tekrar kısacık bir puls işareti veriyor ve yine bu şekilde ilerliyordu. Buradaki süremiz, şu ikisi arasındaki süremiz temel olarak baştan sona kadar dediğimiz sürede aslında
+
+39
+00:07:21,427 --> 00:07:26,927
+Bunun sayma değeriyle alakalıydı. Dolayısıyla burada bir pariyadık çıktı elde etmemiz gerekiyor.
+
+40
+00:07:26,927 --> 00:07:40,927
+Bununla birlikte yine sistemin birinci sayıcıdan elde etmiş olduğu çıkışı, ikinci sayıcının clock işaretine bağlayacaktık ve son aşamada elde etmiş olduğumuz frekansımız bizim ne kadar olmasını istiyoruz.
+
+41
+00:07:40,927 --> 00:07:42,927
+1 Hz'lik bir şey olmasını istiyoruz.
+
+42
+00:07:43,507 --> 00:07:49,327
+1 Hz'lik bir değer olmasını istiyoruz. Bu durumda sayma değerlerini uygun bir şekilde yazmamız lazım.
+
+43
+00:07:49,327 --> 00:07:54,907
+Demek ki buradaki sayma değeriyle, birinci sayıcının sayma değeriyle, ikinci sayıcının sayma değerinin çarpımı,
+
+44
+00:07:54,907 --> 00:07:58,067
+2 milyon olacak şekilde bir ayarlama yapmamız gerekiyor.
+
+45
+00:07:58,067 --> 00:08:02,747
+Bunu da yapmak için elde edebileceğimiz yuvarlak değerler gibi düşünecek olursak,
+
+46
+00:08:02,747 --> 00:08:08,267
+işte bu 2000 adıma bölse, diğeri de 1000 adıma bölmüş olsa,
+
+47
+00:08:08,495 --> 00:08:21,215
+İlk sayıcıdan çıkış frekansımız bizim ne kadar olacak? 2 milyon bölü 2000, 1000 Hz'lik bir işaret olacak veya bir başka de işte buradaki çıkış frekansımız, 1 kilo Hz'lik bir işaret olacak.
+
+48
+00:08:21,215 --> 00:08:32,975
+Yine bunu da 1000 adıma böldüğümüzde 1 Hz'lik işaret elde ediyor olacağız. Çıktığı işaretimizin şu şekilde olması gerekiyor, puls izletmemizi istemiş bizden. Aynı şekilde buradaki yapıyı da...
+
+49
+00:08:33,268 --> 00:08:59,388
+mod 2 kullanarak elde etmemiz mümkün. Yani her ikisinde de mod 2 çalıştırsak istediğimiz sonucu elde edebiliyoruz. Çünkü birincide de şu şekilde bir full işareti varken, bunun da yine düşen kenarında ikinci sayıcının sayma değeri biraz alacak. Dolayısıyla istediğimiz zincir yapısını, kaskat bağlantı yapıyı elde etmiş olacağız. Demek ki burada hesaplayacağımız yapı kabaca.
+
+50
+00:08:59,648 --> 00:09:08,807
+Bu yapı olmuş olacak. Şimdi burada iki tane sayıcı kullanmamız gerektiğini söylemiştik. Bu sayıcılar hangileri olsun? Örneğin counter 0 ve counter 1 olsun. Buna göre
+
+51
+00:09:12,008 --> 00:09:16,008
+Counter 1 adresimiz ne olacak? A9H adresi olacak.
+
+52
+00:09:17,448 --> 00:09:24,807
+Ve bununla birlikte diğer kullanacağımız counter 2'nin adresi de bundan sonraki tek sayı olan ABH değeri olacak.
+
+53
+00:09:25,011 --> 00:09:32,011
+Counter 1 ve Counter 0 ile ilgili çalışıyoruz. Counter 2 ile bir işlemimiz yok. Bir de Control World'a ihtiyacımız var.
+
+54
+00:09:32,011 --> 00:09:37,011
+Control World'ümüzde hangi adreste? O da AH adresinde olmuş olacak.
+
+55
+00:09:39,011 --> 00:09:48,011
+Control World'ümüzde AFH adresinde olmuş olacak. Demek ki yazma işlemlerimizi bu adrese yapmamız gerekiyormuş. Bunu anlamış olduk.
+
+56
+00:09:50,899 --> 00:09:58,899
+Burada işte verilen frekans değerleriyle ve ilgili değerlerle ilgili işlemleri yaptığımızda verilen sonucu almış oluyoruz.
+
+57
+00:10:02,899 --> 00:10:09,899
+Şimdi aynı örneği bir simülasyon örneği olarak inceleyecek olursak ne ile karşılaşıyoruz ona bakalım.
+
+58
+00:10:11,899 --> 00:10:14,899
+Elimizde bir simülasyon örneği var. Bu simülasyon örneğinde
+
+59
+00:10:15,764 --> 00:10:22,364
+Az önce verilen soruya ilişkin olarak bir takım çıktılar elde etmemiz gerekiyor. Bunu şöyle düşünebilirsiniz.
+
+60
+00:10:22,364 --> 00:10:36,163
+Bize, şurada bir 3x8 dekoder verilmiş, 8254 verilmiş. Bunların bağlantısının yapılmamış olduğunu varsayalım şimdilik. Bunları nasıl oluştururuz diye bakıyor olacağız.
+
+61
+00:10:37,748 --> 00:10:48,668
+Bir de bu 8254'ün iki tane sayıcısını kullandığımızı varsayalım. Az önce dediğimiz gibi birinci sayıcının clock işaretine bağladığımız değere bakalım.
+
+62
+00:10:48,916 --> 00:10:57,596
+2 MHz'lik bir sinyal bağlı. Benzer şekilde birincisinin çıktısı out'u, ikincisinin clock işaretine bağlı.
+
+63
+00:10:57,596 --> 00:11:09,916
+Ve bu iki işareti gözlemleyebilmek adına 0'ın out'unu ve 1'in out'unu, şuradaki 1'in out'unu bir lojik analizöre bağladığımızı varsayalım veya osiloskopa bağladığımızı varsayalım.
+
+64
+00:11:10,144 --> 00:11:27,144
+Mod 2'de çalıştırmayı hedeflediğimize göre, Mod 2'de gate uçları eğer sıfırdaysa sayma inhibe ediliyordu. Dolayısıyla bunun önüne geçmek adına da, yani bu normal fonksiyonu göstersin diye de, her iki sayıcının da gate uçları logic 1 ile sürülmüş durumda. Burada 5 volt ile bunlar sürülmüş durumda.
+
+65
+00:11:27,144 --> 00:11:36,076
+Şimdi gelelim 8254'ün bağlantılarına. Burada 8253, 8254 aynı şekilde çalışacak. Dolayısıyla oradan yana bir sıkıntı yok.
+
+66
+00:11:36,275 --> 00:11:49,275
+A9H adresinden itibaren ardışık tek adreslere bağlamak gerektiği için arkadaşlar, bir kere data uçlarına bağlantının veri yolunun yüksek anlamlı kısmından olması lazım.
+
+67
+00:11:49,275 --> 00:12:02,275
+Onu görüyoruz. Dolayısıyla data uçlarının 8'den 15'e kadar olan uçları, 8254'ün D0'dan D7'ye kala olan uçlarına bağlı olması gerekiyor. Bir kere bu bağlantıyı yapmamız lazım.
+
+68
+00:12:02,740 --> 00:12:09,940
+Diğer yandan, bunun adres çözümleme devresini şurada oluşturmaya çalışalım. Hızlı bir şekilde.
+
+69
+00:12:12,420 --> 00:12:23,060
+Bu cihazın bağlı olduğu adresler nelerdi? İşte A9H, bu counter 0'mız, ondan sonra ABH.
+
+70
+00:12:24,563 --> 00:12:32,264
+ADH ve AFH değerleri olacak. Bunlara karşılık gelecek şekilde, binary olarak bunları da yazacak olursak,
+
+71
+00:12:32,264 --> 00:12:44,123
+1, 1, 0, 0 değil mi? 8, 12 oldu, öyle değil. 1, 0, 1, 0, 10. Sonra 9 için 1, 0, 0, 1 değeri var binary olarak.
+
+72
+00:12:45,403 --> 00:12:50,483
+ABH için 1, 0, 1, 0. Sonrasında da 1, 0.
+
+73
+00:12:51,152 --> 00:12:53,552
+1, 1 değerine sahip olacağız.
+
+74
+00:12:53,552 --> 00:13:01,752
+ADH için 1, 0, 1, 0, D içinde yazacağımızda 1, 1, 0, 1 şeklinde bir sonucumuz var.
+
+75
+00:13:15,988 --> 00:13:28,268
+harç değerine sahip oluyor olacağız. Bunlar bizim adres değerlerimiz. Şimdi bu adres değerlerine baktığımızda, sadece bu adres değerleri değil tabii, bir de şunu da sağlamamız lazım.
+
+76
+00:13:28,268 --> 00:13:41,388
+Bunlarla birlikte, işte M-I-O ucunun da sıfır değerini alması lazım. Burada M-I-O'dan kastımız bir I-O cihazı olarak çalışacak ve varsayılan olarak biz separate...
+
+77
+00:13:42,259 --> 00:13:52,500
+MOI ucunda adres çözme devresinde kullanacaktık. MOI ucunda in ve out komutlarında sıfır değeri verildiği için, oluşturulduğu için MOI ucunda sıfır olması gerektiğini söyleyebiliriz.
+
+78
+00:13:52,500 --> 00:14:01,500
+Burada şimdi değerlerimizi inceleyelim. Burada özellikle şurada görmüş olduğunuz iki değer, A9'dan...
+
+79
+00:14:01,812 --> 00:14:11,812
+AF'ye kadar olan 4 farklı kombinasyonu oluşturmak için ürettiğimiz değerler. Dolayısıyla bunlar aslında cihazın adresleri olmuş oluyor.
+
+80
+00:14:11,812 --> 00:14:17,812
+Bu şekilde düşündüğümüzde ise, şuradaki adres ucumuz ve buradaki adres uçlarımız neydi?
+
+81
+00:14:21,011 --> 00:14:34,811
+Mikroişlemcinin A2 numaralı adres ucuyla mikroişlemcinin A1 numaralı adres uçları aslında bir kombinasyonu belirleyen değerlermiş. Öyleyse bunları alıp, şuradaki mikroişlemcinin A1 ucunu götürüp nereye bağlayacağız?
+
+82
+00:14:34,811 --> 00:14:42,811
+8254'ün A0 numaralı düşük anlamlı adres ucuna bağlayacağız. Yine mikroişlemcinin A2 adres ucunu da götürüp,
+
+83
+00:14:43,028 --> 00:15:06,668
+8254'ün A1 numaralı adres ucuna bağlamamız gerekecek. Onu şurada görebiliriz. Şuradaki bağlantılardan görebilirsiniz. Düşük anlamlı olan A0'a, yüksek anlamlı olan A1'e bu iki uç üzerinden kombinasyonu oluşturan üç uçlar üzerinden bağlamamız gerektiğini anladık. Bununla birlikte geri kalan...
+
+84
+00:15:07,635 --> 00:15:21,395
+A0, A3, A4, A5, A6, A7 ve MIO uçlarıyla fix değerler üretmemiz lazım. Bunları alırken de oluşturabileceğimiz yapıyı bir dekodere nasıl bağlarız diye bakalım.
+
+85
+00:15:21,395 --> 00:15:31,956
+Biz bir tane kombinasyon üretmeye çalışalım burada. İşte seçim uçlarının anlam sırasında baktığımızda C, B, A anlam sırasında gidecek. Enable 1, Enable...
+
+86
+00:15:32,307 --> 00:15:51,668
+2A ve Enable 2B şeklinde uçlarımız vardı. Bunlardan şu Enable 2'ler aktif 0 uçlardı. Dolayısıyla bunların üzerinde çizgi var diye hatırlayabiliriz. Aynı zamanda da fiziki olarak gösterimlerinde bunların uçlarında birer tane yuvarlak var diye hatırlayabiliriz.
+
+87
+00:15:55,572 --> 00:16:00,851
+Yine benzer şekilde çıkış tarafımızdaki bütün çıkışlarımız da aktif sıfır çıkışlardı.
+
+88
+00:16:02,932 --> 00:16:06,772
+Onları da bu şekilde işte nokta nokta gittiğini varsayalım şimdilik.
+
+89
+00:16:06,772 --> 00:16:16,772
+Bu durumda bakalım. A0, A3, A4, A5, A6 ve M-A-O toplamda 6 tane uca ihtiyacımız var.
+
+90
+00:16:17,772 --> 00:16:19,772
+Şöyle bir daha kontrol edelim.
+
+91
+00:16:21,971 --> 00:16:23,971
+Yukarıdaki ne bakacağız?
+
+92
+00:16:29,844 --> 00:16:54,124
+Hangisini atladık? Sanki bir tanesini atladık mı? A0 var, A3 var, A4, A5, A6, A7, M1. Tamam. Toplamda 7 tane ucumuz var ve 6 tane girişimiz var. Bunları nasıl kullanacağız? Bu demek oluyor ki bir tanesini, girişlerden bir tanesine bizim normalde mevcut iki tane değişkenimizi birleştirip sokmamız gerekecek.
+
+93
+00:16:57,043 --> 00:16:58,043
+Açalım.
+
+94
+00:17:02,676 --> 00:17:05,596
+Bu zaten baştan beri standart olarak yaptığımız işlem.
+
+95
+00:17:06,163 --> 00:17:18,483
+Şimdi, M-I-O sıfır olması gerekiyor, A4 de sıfır olması gerekiyor. Bunların ikisi de sıfır olduğunda sistemin çalışması gerekiyor. Dolayısıyla bunları enable ucu gibi düşünebiliriz.
+
+96
+00:17:18,943 --> 00:17:30,223
+Aktif sıfır bir enable ucu olarak düşündüğümüzde de M-I-O sıfır olduğunda ve A4 sıfır olduğunda sıfır üreten bir lojik alıyoruz. Bu doğal olarak sizin de tahmin edeceğiniz üzere bir OR kapısıdır.
+
+97
+00:17:30,223 --> 00:17:32,123
+Şöyle çizmeye çalışalım.
+
+98
+00:17:35,380 --> 00:17:42,380
+Or kapısı olarak bunu çizebiliriz. Or kapısı olarak çizdiğimizde de, işte Aktif 0 uca bunu bağladığımızda,
+
+99
+00:17:48,372 --> 00:18:12,452
+MOI ucuyla A4 ucunu bu şekilde bağlayıp sisteme dahil etmiş olduk. Bununla birlikte bakın başka aktif 0 olarak değer alan hangisi var? A6 numaralı uç var. A6 numaralı ucu da doğrudan aktif 0 bir uca bağlamış olalım yine benzer şekilde. Geriye değeri 1 olan değerler kaldı. İşte A0, A3,
+
+100
+00:18:13,299 --> 00:18:36,920
+A5 ve A7 şeklinde değerlerimiz kaldı. Bunları da anlam sırasıyla C, B, A diye bağlamış olalım. A7'yi C'ye bağlamış olalım. Ondan sonra A5'i B'ye bağlamış olalım. A3'ü sıradankine bağlamış olalım ve son olarak da A0'ı bağlamış olalım. Dolayısıyla bu şekilde bir bağlantı yaptığımızda
+
+101
+00:18:37,428 --> 00:18:58,268
+Bizim istediğimiz adres aralığı geldiğinde hangi çıkış aktif olur onu belirleyelim. Şimdi bunu da şöyle belirleyeceğiz. Bizim istediğimiz değerler için A71'dir, A51'dir, A31'dir, bu 1, bu 1, bu 0, bu 0, or sonucu 0. Dolayısıyla cihaz A60 mıydı bakalım? A60'dı tamam.
+
+102
+00:18:59,347 --> 00:19:26,547
+Dolayısıyla, ikinci, birinci seçim ucu aktif, ikinci seçim ucu aktif, üçüncü seçim ucu aktif, seçtirilen değer, 111'in lojik karşılığı 7. Demek ki bizim istediğimiz değer, Y7 numaralı çıkıştan elde edeceğimiz, chip select, 8254 değeri olacak. Buradan elde edeceğimiz, uygun seçim ucu, Y7'den çıkıyor olacak. Bizim yaptığımız bu tasarıma göre.
+
+103
+00:19:26,771 --> 00:19:35,771
+Şimdi gelelim simülasyondaki nasılmış kontrol edelim. Bizim istediğimiz aralık için hemen yazalım.
+
+104
+00:19:35,771 --> 00:19:44,771
+A0'ın ne olması gerekiyordu? 1 olması gerekiyordu. A5'in alması gereken değer 1'di. A7'in alması gereken değer 1'di. Tıpkı bizim yaptığımız gibi.
+
+105
+00:19:45,364 --> 00:20:00,963
+Daha sonrasında A3 ve A4 değerleri var. A3'ün 1 olması gerekiyordu, A4'ün 0 olması gerekiyordu, A6 ve M1'in de 0 olması gerekiyordu ki da aktif 0 ucu seçtirsin. Dolayısıyla bizim yaptığımız tasarımın aynısı burada da mevcut durumda olmuş oluyor.
+
+106
+00:20:04,948 --> 00:20:08,548
+Dolayısıyla cihazın seçtirmesi bu şekilde mümkün olmuş olacak.
+
+107
+00:20:10,548 --> 00:20:20,548
+Adres çözümleme devresi, bağlantılar yapıldıktan sonra artık sıra geldi. Bunun yazılımı olarak ne yapabileceğimiz noktasını incelememiz gerekiyor.
+
+108
+00:20:20,548 --> 00:20:22,548
+Bununla ilgili olarak da...
+
+109
+00:20:39,796 --> 00:20:42,596
+Bunun source kodu nasıl görüyorduk?
+
+110
+00:20:45,556 --> 00:20:46,556
+Şu muydu?
+
+111
+00:20:48,836 --> 00:20:53,676
+Şimdi burada görmüş olduğumuz source kodumuz mevcut. Bu bir değişik şekilde gelmiş ama.
+
+112
+00:20:55,436 --> 00:20:57,156
+Neyse şöyle, dostum aşağıdaki.
+
+113
+00:21:06,132 --> 00:21:12,932
+Kullandığımız kod bu şekilde. Baktığımız zaman ExeTip'inde bir kod olduğunu görüyoruz.
+
+114
+00:21:14,932 --> 00:21:19,732
+Tabi bunun data segmentinde bir değerler tanımlanma bunları kullanmayacağız zaten.
+
+115
+00:21:20,732 --> 00:21:27,132
+Yığın tanımlaması var. ExeTip'i bir program olduğu için şimdi ilk yapacağımız işler bakın arkadaşlar.
+
+116
+00:21:27,476 --> 00:21:38,476
+İki tane counter kullanıyorduk. Bu iki tane counter ilişkin olarak bir değer ataması, konfig ataması buralarda mevcut. Şimdi bu konfig atamalarının neye karşılık geldiğini bulmaya çalışalım.
+
+117
+00:21:38,476 --> 00:21:54,476
+Burada ilk iki tane değerimiz counter seçimiyle ilgiliydi. Demek ki bu counter sıfırla ilgili bir işlem yapıyor. Counter 2'ye bir sonraki 2 bitimiz 16 bit değer yaz, 16 bit sayma değeri.
+
+118
+00:21:54,900 --> 00:22:05,660
+Ve buna ilişkin olarak da aslında önce LSB, sonra MSB olacak şekilde değer göndereceğimizi belirtmiş oluyoruz.
+
+119
+00:22:05,660 --> 00:22:18,299
+Mod olarak modiki de çalıştıracakmışız, onu anladık modiki ve sayma değeri olarak da burada BCD formatında sayacağımızı anlamış oluyoruz. BCD olarak saydıracağız.
+
+120
+00:22:18,483 --> 00:22:37,284
+Dolayısıyla bu config değerini alıp afh adresine atıyoruz. afh adresinde bizim 8254 config control word'ümüz var. Dolayısıyla bu control word'e ilgili değeri atmış olacağız. İlk kullanmak istediğimiz counter 0 ile ilgili işlem yani bu.
+
+121
+00:22:45,875 --> 00:23:11,435
+Sonrasında 2 biti tekrar kontrol ettiğimizde 16 bitlik bir sayma. Bunu görüyoruz. 16 bitlik sayma derken tabii yine 1-1 olduğu için önce LSB, sonra MSB olacak şekilde bu değer atmış oluyoruz. Mod olarak hangi modda sayacağız? 1-0, 0-1-0 mod 2'yi elde ediyoruz yine. Mod 2'de saydırma yapacağız.
+
+122
+00:23:12,180 --> 00:23:25,980
+Bu tasarımı az önce konuşmuştuk. Yani mod 2 olacağını orada karar vermiştik. Son olarak da sayma işleminin BCD olacağını buradan ayarlamış oluyoruz. Burada sayma değeri olarak hangi değeri set etmiştik hatırlayacak olursanız.
+
+123
+00:23:36,596 --> 00:23:55,996
+Buradaki counter 1'deki sayma değeri olarak da 1000 değerlerini set etmek için bir tasarım yapmıştık. Fakat BCD modda bu sayma işlemini gerçekleştireceğimiz için counter'lara atmamız gereken değerler 2000 hash ve 1000 hash şeklinde hexadesimal değerler olması gerekiyor.
+
+124
+00:23:55,996 --> 00:24:04,195
+Counter bunları sayarken BCD olarak sayacak yalnız. Ne demek bu? 2000'den sonra gelen değer bir adım azalttığında 1999 olacak.
+
+125
+00:24:05,076 --> 00:24:24,115
+Hexodesimal olarak yine ama. 2000H'dan sonra 19999H değeri olacak. Eğer binary saydırmış olsaydık, 2000H'dan sonra gelecek değer, 1FFFH değeri olacaktı. Bu da BCD'yi binary saydığında elde edeceğimiz duruma karşılık geliyordu.
+
+126
+00:24:31,087 --> 00:24:43,207
+Her iki değerinde 1000, 2000 ve 1000 değerlerinin düşük anlamlı değerleri 0, 0H. Dolayısıyla her iki counter'a da ben sayma değerini LSB'si olarak 0 değere atmam uygun olur.
+
+127
+00:24:43,207 --> 00:24:55,207
+O zaman geliyorum AL değerini XOR'layıp sıfırlıyorum. Burada XOR'lamak demek sıfırlamak anlamına geliyor. Dolayısıyla AX XOR, AX dediğim zaman bu durumda...
+
+128
+00:24:57,652 --> 00:25:11,731
+AX'e atanan değer 0 olmuş olur. Pardon, AL'ymiş. Düzeltelim. AL'leri X zorlamak demek, AL'ye 0 atamak demek. Bu aynı zamanda şu anlama da gelir tabii.
+
+129
+00:25:12,403 --> 00:25:27,444
+MoveAl, 0. Bundan aynı şey. Niye XOR'u tercih ediyoruz? Data sheeti açıp baktığımızda MoveAl işlemi 4 clock cycle sürerken, XORAl, AL işlemi 2 clock cycle sürüyor. Dolayısıyla bunu yapmayı tercih ediyoruz.
+
+130
+00:25:27,444 --> 00:25:37,444
+Daha sonrasındaki her iki sayıcının adresine, yani Counter1 ve Counter1 adreslerine,
+
+131
+00:25:37,488 --> 00:25:47,088
+Bu 0.0 LSB değerini gönderiyorum. İlla ki bir sayıcıya değeri 16 bit olarak gönderip daha sonra ikincisini beklememe gerek yok.
+
+132
+00:25:47,088 --> 00:26:02,088
+Her counter birbirinden bağımsız bir şekilde çalışabiliyor. Bu ne demek? Önce counter 0'ın LSB'sini göndersem, daha sonra counter 1'in LSB'sini göndersem, sonra dönüp counter 0'ın tekrar MSB'sini göndersem problem olmuyor.
+
+133
+00:26:04,339 --> 00:26:19,339
+BCD bizim için yeterli olduğundan dolayı BCD kullandık. Evet, eğer BCD'ye sığınmayan bir sayma değeri olmuş olsaydı, yani 9999'dan daha fazla bir sayma değeri olmuş olsaydı orada mecbur binary kullanmak zorundaydık.
+
+134
+00:26:19,339 --> 00:26:26,339
+Ama burada hem BCD'nin nasıl çalıştığını da örneklemek adına ve bizim için yeterli olduğundan dolayı bu şekilde tercih etmiş olduk.
+
+135
+00:26:28,051 --> 00:26:50,551
+Daha sonrasında LSB'leri gönderdik. MSB'leri gönderirken işte Counter 0'a MSB değerimiz kaç? 20H. O zaman geliyoruz AL'ye 20H'e atayıp Counter 0 adresine MSB'yi göndermiş oluyoruz. Bu işlem sonucunda Counter 0 MSB gönderilmiş oluyor. Şuradaki işlemimiz neydi?
+
+136
+00:26:50,991 --> 00:27:10,132
+Counter 0, LSB işlemini yazmaktı. Bu satırdaki işlemimiz ise Counter 1'e LSB değerini yazmaktı. Son olarak Counter 1 içinde sayma değeri olarak MSB değeri 10'du, 10H'dı. Onu da burada Counter 1 içinde
+
+137
+00:27:10,675 --> 00:27:38,675
+MSB değerini göndermiş oluyoruz. Dolayısıyla bu aşamaya geldiğimizde her iki sayıcımız da, şunları da seçmiş olayım, her iki sayıcımız mod 2'de ayarlı, birinci sayıcımız 2000 sayma değeriyle yüklü, diğer sayıcımız 1000 sayma değeriyle yüklü, bunlar birbirine kaskat bağlı, ne demek bu? Bir tanesinin out'u diğerinin klok işaretine bağlı, en baştakinin klok işaretine de 2 MHz'lik bir işaret bağlı.
+
+138
+00:27:38,675 --> 00:28:06,675
+Bu işaretler işe başlandığı için ve bunlar mod 2'de çalışacağı için counter 1'in yani uçtaki counter'ın çıkışı 1 Hz olarak elde edilecek. Nasıl yaptık? 2 milyon Hz'lik bir işaret vardı. Birinci counter bunu 2000'e böldü. Elde ettiğimiz değer 1 kHz'lik bir işaret. İkinci sıradaki counter'ımızda sayma değeri 1000'di. Bu da 1 kHz'i 1000'e böldüğümüz zaman 1 Hz'lik bir sinyal elde etmiş olduk. Her iki sayıcı da mod 2'de ayarlandığı için zaten bizim istediğimizde bir pulse işaret.
+
+139
+00:28:06,675 --> 00:28:33,076
+Bu işaretiydi. Son sayıcıdan elde etmiş olduğumuz işaret yine bir puls işareti olmuş oluyordu. Puls işareti nasıl görecektik? Uzun bir süre boyunca bir de geziyor. Daha sonra bir sayma değeri boyunca sıfırdan bir puls veriyor ve bu periyodik olarak tekrarlanıyor. Böyle bir sayma işlemi. Daha sonra bakın counter'ları ayarladıktan sonra sayıcı ile veya zamanlayıcı ile ilgili hiçbir işlem yapmamıza gerek yok. Boş döngüde bekliyoruz.
+
+140
+00:28:34,451 --> 00:28:44,451
+Periyodik olarak 1 Hz'deki puls ciharetinin üretilmesi tamamen 8254 tarafından idare edilecek bir iş haline gelmiş oluyor.
+
+141
+00:28:44,451 --> 00:28:51,451
+Şimdi burada tekrar kodumuza geri döndüğümüzde veya simülasyonumuza geri döndüğümüzde tekrar hatırlayalım.
+
+142
+00:28:51,451 --> 00:28:56,451
+A30 ve A31'ler osiloskoba bağlıydı. Şimdi bunların çıktılarını da görelim.
+
+143
+00:28:59,451 --> 00:29:00,451
+Şimdi bakın.
+
+144
+00:29:00,564 --> 00:29:08,564
+Mavi ile gördüğümüz aslında counter 1, sarı ile gördüklerimiz ise counter 0'ın çıktıları. Şöyle birazcık zoomlayalım buraya.
+
+145
+00:29:10,564 --> 00:29:24,564
+Ve anlık olarak durduralım. Bu durdurma anında cursorlarımız var bizim. Bu cursorlar vasıtasıyla bunların ne kadar bir sürede gerçekleştiğini görmeye çalışabiliriz. Bakın birinci ile ikinciye yaklaştıramadım.
+
+146
+00:29:26,900 --> 00:29:37,519
+Bakın, birinci ile ikinci arasında, bu iki counter, 0, auto'nun tikleri arasında, 4 milisaniye ve 5 milisaniye, arada 1 milisaniyelik bir zaman var.
+
+147
+00:29:37,620 --> 00:29:46,700
+1 milisaniyelik bir zaman, bir periyot olarak düşündüğümüzde, 1 milisaniyelik periyot aslında 1 bölü 10 üzeri eksi 3. Ne demek bu?
+
+148
+00:29:46,700 --> 00:29:53,860
+1000 Hz'lik bir işaret demek. Saniyede 1000 kere salınım gösteren bir işaret demek. Bunu yine şöyle yaparsak.
+
+149
+00:30:00,403 --> 00:30:04,604
+Tabi pass olduğu için bu şekilde devam ettirecek olursak.
+
+150
+00:30:11,571 --> 00:30:13,071
+Çalışmıyor mu bu?
+
+151
+00:30:28,915 --> 00:30:30,915
+Sinyalin gelmesini bekliyorum.
+
+152
+00:30:39,955 --> 00:30:41,955
+Yani daha küçüksem herhalde ekrana sığacak.
+
+153
+00:31:01,428 --> 00:31:06,748
+Hangi kanaldı? Kanal B. Kanal B'yi tetikleme kaynağı olarak bıraksak.
+
+154
+00:31:11,059 --> 00:31:14,259
+Channel Position'ları aynı değil miymiş bakalım.
+
+155
+00:31:15,859 --> 00:31:17,460
+İkisi de 5'te.
+
+156
+00:31:19,259 --> 00:31:21,460
+A ile B'ye bakacağız zaten.
+
+157
+00:31:26,771 --> 00:31:42,892
+Çok yavaş işaretlediği için göremedik herhalde. Şöyle birazcık büyütelim. Tekrar bunu bir daha doldurması vakit alacak. Tekrar başlatayım. O doldursun bu arada.
+
+158
+00:32:08,596 --> 00:32:24,596
+Şöyle durdurdum. Şimdi bir de diğer kanaldan çıkan sinyalin frekansına bakalım. Yine cursorları kullanarak bunlara bakacağız. Birinci işaretimiz üçüncü saniyede. İkinci işaretimiz ise tam net olarak gelmeye çalışayım.
+
+159
+00:32:24,596 --> 00:32:34,596
+Hassas bir şekilde dördüncü saniyede. Tam kenarına geldi şu anda. Üçüncü saniye ve dördüncü saniye. Şöyle birazcık belki kaydırabilirsek.
+
+160
+00:32:35,796 --> 00:32:38,395
+Tam gerisine koydum, şu anda kaymıyor.
+
+161
+00:32:45,971 --> 00:32:56,971
+Dolayısıyla çok ufak bir kayıklık oldu. Yani bu yavaş çalıştığı için tam denk getiremedim. Curser'ları kaldırmaya çalışıyorum ama kalkmıyor.
+
+162
+00:32:58,971 --> 00:33:08,971
+Neyse, işte şu kabaca şöyle söyleyebiliriz. Üçüncü saniye ve dördüncü saniye. Burada iki puls arasında bir saniyelik net bir süreyi elde etmiş.
+
+163
+00:33:08,976 --> 00:33:20,615
+Oluyoruz bu sinyalle. Bu da bizim istemiş olduğumuz mantık çerçevesinde bir helslik bir sinyal olarak ortaya çıkmış oluyor. Dolayısıyla bu örnekte tekrar ele alacak olursak.
+
+164
+00:33:20,884 --> 00:33:30,644
+Bazı durumlarda bir tane sayıcının yapmak istediğimiz işlemi yerine getirmek açısından yeterli olmayabileceği bir durumla karşılaşabiliriz.
+
+165
+00:33:30,644 --> 00:33:37,284
+Bu durumda iki sayıcıyı kas kat bağlayarak istediğimiz sonucu, istediğimiz frekansı elde etmemiz mümkün.
+
+166
+00:33:37,284 --> 00:33:44,084
+Bunu yaparken birinin out'u diğerinin clock işaretine bağlı bir şekilde çalışması mümkün olmuş oluyor.
+
+167
+00:33:44,211 --> 00:33:58,331
+Bu birinci örneğimiz bu şekilde arkadaşlar. Bununla ilgili sormak istediğiniz bir durum var mı? Kabaca nasıl çalıştırıldığını ve işte çıktığını nasıl izlenebileceğini görmüş olduk. Bununla ilgili bir sorunuz var mı? Yoksa bir sonraki örneğe geçeceğim.
+
+168
+00:34:14,612 --> 00:34:21,332
+Bir soru yok herhalde. Bir sonraki örneğimize bakalım. Bir sonraki örneğimiz frekans metre sorusu.
+
+169
+00:34:26,260 --> 00:34:31,600
+Bunu bir kod üzerinden anlamaya çalışacağız veya yürütmeye çalışacağız.
+
+170
+00:34:31,600 --> 00:34:38,980
+Şimdi burada öncelikli olarak bir frekans metre yapmak istiyorsak arkadaşlar, frekans metre dediğimiz şey nedir?
+
+171
+00:34:38,980 --> 00:34:45,039
+Bir işaretin, herhangi bir işaretin bir saniyede kaç kere değişim gösterdiğini saymaktır aslında değil mi?
+
+172
+00:34:45,039 --> 00:34:49,539
+Dolayısıyla bir saniyelik bizim hassas bir süreye ihtiyacımız var.
+
+173
+00:34:49,844 --> 00:35:09,043
+Dolayısıyla baktığımız zaman bunun için frekansı 0.5 Hz olan bir kare dalga kullanmam mümkün olabilir. 0.5 Hz'lik kare dalgadan kastımız ne? Az önce dedik ya, bizim hassas bir şekilde bir saniye ihtiyacımız var diye tam sayabilmek için.
+
+174
+00:35:18,612 --> 00:35:26,612
+Sıfırda kaldığı sürede yine bir saniye olacak şekilde ayarlanmışsa arkadaşlar, biz şöyle bir işlem yapabiliriz.
+
+175
+00:35:26,612 --> 00:35:38,612
+Bu kare dalganın işte birde kaldığı süre boyunca biz ikinci bir sinyalin ne kadar değişim gösterdiğini sayabiliriz.
+
+176
+00:35:38,643 --> 00:35:48,183
+Daha sonrasındaki kalan 1 saniyemizde de buna ilişkin hesaplarımızı yaparız. Dolayısıyla 2 saniyede bir hassas bir ölçüm değeri üretmemiz mümkün olur.
+
+177
+00:35:48,183 --> 00:35:56,703
+O zaman burada kullanacağımız referans işarete baktığımız zaman 2 saniyede bir kendini tekrarlayan bir kare dalga gibi bir yapı görmüş olacağız.
+
+178
+00:35:56,703 --> 00:36:04,143
+O zaman bunun frekansı 2 saniyelik bir periyoda sahipse 0.5 Hz'lik bir işaret olmuş olacak.
+
+179
+00:36:04,335 --> 00:36:07,795
+Öncelikli olarak böyle bir referans değer üreteceğiz kendimize.
+
+180
+00:36:08,307 --> 00:36:32,307
+Dolayısıyla bir saniyede bir sayma işlemi yapan bir değer. Az önceki örneğe benziyor bu, dikkat edecek olursanız. Eğer elimizde yüksek frekanslı bir işaret varsa, sinyal de varsa, yine burada da benzer bir mantık çerçevesinde iki tane counter'ı birlikte kullanıp 0.5 hz'lik bir kare dalga üretmek durumunda kalabiliriz. Bu ortaya çıkmış oldu. İki counter'ı böyle harcadık. Üçüncü counter'ı ise,
+
+181
+00:36:32,576 --> 00:36:49,576
+Harici işaretimizin kaç kere değişim gösterdiğini saymak için kullanabiliriz. Yani bunu da kullanmadığımız, şu işareti üretmek için kullandığımız iki tane counter var ya, bunlar haricinde kalan counter'ın clock işaretine de harici sinyallimizi doğrudan bağlayarak bunu yapabilmemiz mümkün.
+
+182
+00:36:49,576 --> 00:36:53,576
+Dolayısıyla bu üç sinyali bu şekilde kullanıyor olacağız.
+
+183
+00:36:53,576 --> 00:37:00,204
+Bununla ilgili yapıyı şöyle oluşturabiliriz, bakın.
+
+184
+00:37:03,380 --> 00:37:12,739
+Yine işte mikroişlemci tarafıyla bağlantıyı yaptığımızı varsayalım. Elimizde yine 2 MHz'lik bir sinyal olduğunu varsayarsak eğer.
+
+185
+00:37:13,331 --> 00:37:32,931
+Az önce söylemiş olduğum mantık çerçevesinde 0.5 Hz'lik bir kare dalga üretmek istiyorsan bir counter yetmeyecektir. İki tane counter kullanmam lazım. Bu iki tane counter'dan out çıkışı bizim az önceki üretmek istediğimiz referans 0.5 Hz'lik işarete karşılık gelecek.
+
+186
+00:37:41,331 --> 00:37:47,811
+2000 adım sayacak şekilde ayarlarsak bu durumda elde edeceğimiz sinyal 0.5 Hz'lik bir sinyal olur.
+
+187
+00:37:49,171 --> 00:37:55,572
+Ölçmek istediğimiz frekansını ölçmek istediğimiz işareti counter 2'nin clock işaretine bağlayabiliriz. Güzel.
+
+188
+00:37:55,971 --> 00:38:03,811
+Az önce söylemiş olduğumuz mantıkta bir saniye boyunca sayıp geri kalan bir saniyede de işlemimizi, hesaplarımızı yapacağımızı söylemiştik.
+
+189
+00:38:03,811 --> 00:38:08,451
+Bunun için de hassas bir şekilde bunu yapabilmek için counter 1 çıkışını
+
+190
+00:38:08,639 --> 00:38:17,399
+Counter 2'nin gate ucuna bağlıyoruz. Bu ne demek? Counter 2, 1 saniye boyunca gate ucundaki kontrolle birlikte sayma işlemini gerçekleştirsin.
+
+191
+00:38:17,399 --> 00:38:27,639
+Ama daha sonraki 1 saniye boyunca da bu sayma işlemi inhibe olsun, devam etmesin. Net 1 saniye boyunca bunu saymış olalım. Bu anlama geliyor gate ucuna bağlamak.
+
+192
+00:38:27,639 --> 00:38:34,639
+Buradaki bu bağlantıyı yapmış oluyoruz. Örneğin buradaki yapıyı gördük.
+
+193
+00:38:37,940 --> 00:38:54,440
+Ön bilgi olarak şu anda biz bu şekilde kullanmıyoruz ama counter'lığın F0H adresinden itibaren ardışık adreslere yerleştiğini varsayacak olursak ilerleyeceğiz.
+
+194
+00:39:00,596 --> 00:39:13,796
+Şimdi kod kısmına bakalım. Şurada ama elde etmiş olduğumuz sonuç neydi? Şu uçta, out 2 ucunda bir kare dalga elde etmek istiyorsan, counter 1, mod 3'de ayarlanacak.
+
+195
+00:39:13,796 --> 00:39:23,996
+Benzer şekilde counter 0'da, mod 3'de ayarlarsan, sayma değerli olarak da 2000'er verirsem her ikisi için de istediğim değeri elde etmiş olurum. Yani buna göre hareket edeceğiz.
+
+196
+00:39:27,956 --> 00:39:38,195
+4 satırda görmüş olduğunuz üzere, counter 0 ve counter 1'i mod 3'de kare dalga üretecek şekilde ayarlamak.
+
+197
+00:39:38,195 --> 00:39:43,436
+Sayma değerleri olarak da 2000 sayma değerlerini yükleyeceğiz. Tamam mı?
+
+198
+00:39:43,436 --> 00:39:50,436
+Yani şu 4 tane değerimiz bizim, burada görmüş olduğunuz işaretli satırlar.
+
+199
+00:39:50,576 --> 00:40:00,576
+Counter 0'ı ve Counter 1'i mod 3'te kare dalga üretecek şekilde yani ve sayma değeri olarak da 2000 değerleriyle yükleyen kod parçası.
+
+200
+00:40:00,576 --> 00:40:17,195
+İşlem sonucunda biz bunları birbirine kas kat bağladığımız için yani Counter 0'ın Out'u Counter 1'in clock işaretine bağlı olacak şekilde bağlayacağımız için Counter 1'in Out değeri 0.5 Hz'lik bir kare dalga olarak elde ediliyor olacak.
+
+201
+00:40:18,068 --> 00:40:23,068
+Şimdi belki gözümüzde canlanması için şöyle de söyleyebiliriz.
+
+202
+00:40:28,500 --> 00:40:54,780
+Şimdi counter 1 için bir de counter 2 için bir sayma değeri de yükleyeceğiz. Bir saniye içerisinde bizim işaretimizdeki değişimleri sayıyor olacağız. Bu sayma işlemi eğer ki counter 2'nin depolayabileceği sayma değerinden yüksekse, en uç durumu düşünelim, en uç durumu, yani 65536'dan daha fazla salınım sağlıyorsa ne ile karşılaşırız?
+
+203
+00:40:55,284 --> 00:41:16,284
+Bu durumda counter 2'nin out'unda bir çıkış işlemi olacak değil mi? Tekrar ediyorum. Eğer ki counter 1'in 1'de kaldığı süre boyunca counter 2'ye bağlamış olduğumuz sinyal, maksimum durumu için söylüyoruz yine, 65536'dan daha fazla salınım gösterirse biz bunu ölçemeyiz.
+
+204
+00:41:16,659 --> 00:41:26,380
+Veyahut da bir başka deyişle, burada bir saniye süresi geçmeden önce, bunu farklı bir renkle yapalım, şuradaki bir saniye süresi bitmeden...
+
+205
+00:41:26,804 --> 00:41:36,304
+Counter 2'nin bir çıkış işlemi gerçekleşecek. Out'unda bir değişiklik gerçekleşecek. Biz bunu biraz daha bir formal hale sokmak adına şunu yapıyor olacağız.
+
+206
+00:41:36,304 --> 00:41:43,804
+Counter 2'de ayarlamış olduğumuz sayma değeri bizim ölçebileceğimiz maksimum bir frekans değerine karşılık gelecek.
+
+207
+00:41:43,804 --> 00:41:52,804
+Eğer bizim ölçebileceğimiz, yani yazılımsal olarak desteklediğimiz maksimum ölçme frekansından daha yüksek bir frekansta değer ölçmeye çalışıyorsak,
+
+208
+00:41:54,804 --> 00:42:10,884
+Out değerini kontrol ederek, bu değere bakarak bizim range'imiz içerisinde bir frekans var mı yok mu onu da anlamaya çalışacağız. Ek bir nokta olarak da onu şimdiden söylemiş olayım. Şimdi gelelim tekrar yukarı.
+
+209
+00:42:12,019 --> 00:42:24,019
+Buradaki işaretli olan satırlar arkadaşlar, dediğim gibi mod 3'de counter 0 ve counter 1'i sayma değeri 2000'li ayarlayacak olan kod parçası.
+
+210
+00:42:24,019 --> 00:42:36,019
+Bakalım şimdi. Counter 0, önce lsb, sonra msb, mod 3'de binary olarak ayarlamak istiyoruz. Bu değerimizi config world'a attık.
+
+211
+00:42:38,739 --> 00:42:46,739
+Önce lsb, sonra msb olmak şartıyla yine mod 3'te binary olarak ayarlamak istiyoruz. Bunu config world'a attık.
+
+212
+00:42:46,739 --> 00:43:00,739
+Daha sonra sayma değerleri 2000'di. Bu sayma değerinin 2000 olması için göndereceğimiz değer 07d0h olabilir veya doğrudan 2000 değerinin kendisi olabilir.
+
+213
+00:43:05,076 --> 00:43:10,736
+Ve şurada MOV AL, AH desek aynı işleme karşılık gelmiş olacak.
+
+214
+00:43:11,336 --> 00:43:15,756
+Burada yapılan işlem 2000'e karşılık gelen binary karşılığı hesaplıyoruz.
+
+215
+00:43:15,756 --> 00:43:27,096
+Ve bu binary karşılığı önce LSB'sini her iki sayıcıya da daha sonra da MSB'sini, şurada MSB'sini de yine her iki sayıcıya sırayla göndermiş oluyoruz.
+
+216
+00:43:31,476 --> 00:43:46,076
+Counter 0'a gönderdik ve Counter 1'e gönderdik. LSB değerleri attık. Daha sonra MSB değerimiz 0,7'ydi. Set ettik AL'e de. Önce Counter 0, daha sonra Counter 1'e de bunları göndermiş olduk. Ve şu noktaya geldiğimizde...
+
+217
+00:43:46,356 --> 00:44:10,756
+Her iki sayıcı da 2000 sayma değeriyle modüçte ayarlanmış oldu. Şimdi counter 2'yi nasıl ayarlayacağız? Counter 2 için bir maksimum sayma değeri planlayacaktık. Bu sayma değerimiz 9999 Hz olsun. Yani 10 kHz'lik bir işareti ölçemeyecek seviyede bir yazılımsal desteğimiz mevcut olacak olsun. Bunun için ne yapmamız lazım?
+
+218
+00:44:12,211 --> 00:44:22,211
+Counter 2'yi önce LSB sonra MSB olacak şekilde mod 0'da ayarlıyoruz ve BCD formatında saydırmak istiyoruz.
+
+219
+00:44:22,211 --> 00:44:31,211
+Mod 0 nasıl çalışıyordu arkadaşlar? Mod 0, count değerimiz yüklendiği andan itibaren 0'da oluyordu.
+
+220
+00:44:31,211 --> 00:44:39,980
+Sayma değeri kadar azalttıktan sonra sonuç 0'a ulaştığında 1'e çıkıp 1'de kalıyordu. Hatırlayacak olursanız.
+
+221
+00:44:40,083 --> 00:44:42,083
+Hemen onu da görelim.
+
+222
+00:44:44,083 --> 00:44:46,083
+Mod 0'ı görelim tekrardan.
+
+223
+00:44:50,324 --> 00:45:05,264
+Mod 0 ile ilgili olarak sayma değerimizi yükledikten sonra out ucumuz 0'a düşüyor. Sayma değeri boyunca 0'da kalıyor. Sayma değeri bittiğinde de 1'e çıkıp 1'de kalıyor. Tekrarsız bir seferlik bir mod. Demek ki...
+
+224
+00:45:05,264 --> 00:45:24,464
+Biz 9999 BCD sayma değerini yükleyecek olursak, burada şu anlama geliyor. Eğer ki ben herhangi bir anda counter 2'nin out ucunu 1'de görecek olursam, bunun anlamı şu, ölçmeye çalıştığım frekans 9999'dan fazla. Bunu anlamış oluyoruz.
+
+225
+00:45:25,904 --> 00:45:27,504
+Gelelim tekrar örneğimize.
+
+226
+00:45:29,884 --> 00:45:32,224
+BCD modda ayarlayacağımızı söyledik.
+
+227
+00:45:32,559 --> 00:45:52,319
+Öncelikli olarak bu kontrol değerini config word'a attık. Daha sonra 99h değerlerini iki kere counter 2 adresine gönderdik. İki kere göndermek demek 99h, 99h. Ama BCD olacak. 9999h BCD olarak 9999 adım sayacağı anlamına geliyor.
+
+228
+00:45:58,835 --> 00:46:01,835
+Counter 2'nin out ucunun ne olduğu?
+
+229
+00:46:03,335 --> 00:46:15,835
+Counter 2'nin ucu eğer ki 1'e gitmiş olursa sayma işlemi taşırmış olacağız.
+
+230
+00:46:16,835 --> 00:46:18,835
+Bununla birlikte Counter...
+
+231
+00:46:21,204 --> 00:46:27,204
+2'nin 0'da olması sayma işlemini yaptığımız durumlara karşılık gelmiş olacak.
+
+232
+00:46:27,764 --> 00:46:40,044
+Bunu tetikleyen neydi? Bunu tetikleyen, şurada göstereceğimiz, counter 1'in çıkışı, counter 1'in çıkışı, counter 1'in çıkışı 1 olduğu zaman bu sayma işlemini yapacağız.
+
+233
+00:46:40,044 --> 00:46:48,404
+Sıfıra düştüğü zaman da otomatik olarak işlemlerimizi yapacağız. İlk yakalayacağımız iş öyleyse, bu sistem otomatik olarak çalışıyor yani.
+
+234
+00:46:48,404 --> 00:46:55,764
+Kurduk, bu ayarlamayı yaptık, sistem çalışmaya başladı. İlk yakalamak istediğimiz işlem, counter 1'in out ucunu.
+
+235
+00:46:55,764 --> 00:47:04,364
+Bunun sıfıra düştüğü anı yakalamak. Bunu yakalarsak, bu anda yani şu düşüş anında bunu yakalarsak gideceğiz.
+
+236
+00:47:04,364 --> 00:47:14,164
+Counter 2'nin out ucuna bakacağız. Eğer oradaki uç 1 değilse sayma değeri valid bir değerdir. Bu sayma değerini alıp frekans hesabı yapıyor olacağız.
+
+237
+00:47:14,164 --> 00:47:20,164
+Dolayısıyla ilk kontrol edeceğimiz out 1'in sıfır olması değeri. Bunu nasıl yapıyoruz?
+
+238
+00:47:21,876 --> 00:47:32,376
+Öncelikli olarak bir readback komutu çalıştırıyoruz. Bu readback komutunu counter 1 için çalışacak. Readback komutları ne şekilde çalışıyordu hatırlayalım.
+
+239
+00:47:32,376 --> 00:47:34,376
+Sayıcının...
+
+240
+00:47:34,376 --> 00:47:40,376
+Şimdi readback komutunu da şöyle açarak göstereyim tekrardan.
+
+241
+00:47:46,420 --> 00:48:13,619
+Bakın, readback komutu ne yapıyordu? Herhangi bir counter'a ilişkin olarak gerekirse üçü içinde sayma değeri ve statüs değerlerini kopyalayabildiğim bir işlemdi. Eğer ki ben bir sayıcıya ilişkin statüs değerini almak istiyorsam, mecburen bunu readback komutuyla yapıyorum. Çünkü ikinci kullanabileceğim bir leçleme komutu counter leçti. Burada sadece sayma değerini alabiliyorum.
+
+242
+00:48:13,775 --> 00:48:25,775
+Eğer ki statüse bakmak istiyorsam mutlaka readback komutu çalıştıracağım. Şimdi biz ne istiyoruz? Counter 1'in statüsünü okumak istiyoruz. O zaman göndereceğimiz komut ne olması lazım? Belirlemeye çalışalım buradan.
+
+243
+00:48:26,775 --> 00:48:39,615
+Zaten en yüksek iki anlamlı bitimiz 1 olacak. Count değerini leçlemek istemiyorum, gerek yok. Dolayısıyla bunu 1 olarak bırakıyorum. Statüsü leçlemek istiyorum, 0 yazdım. Bu niye 0 yazıyorum? Çünkü aktif 0, 1, control biti burası.
+
+244
+00:48:39,615 --> 00:48:55,816
+0 yazdığım zaman aktif oluyor. Kimi örnekleyeceğim? Counter 1'i örnekleyeceğim. O zaman, Counter 1'i seçmek istediğimi belirtiyorum. O zaman elde ettiğimiz değer, e4, h olmuş oluyor.
+
+245
+00:49:05,423 --> 00:49:10,804
+Bunun anlamı, counter 1'in statüsünü leçle demek. Bu anlama geliyormuş.
+
+246
+00:49:12,083 --> 00:49:14,124
+Gidelim tekrar kodda bakalım.
+
+247
+00:49:15,923 --> 00:49:27,184
+E4H değerini F3'e yani config world'e gönderdik. Bu ne demek oldu? Sadece counter 1'in statüsünü leçle demek oldu. Daha sonra gidip
+
+248
+00:49:27,507 --> 00:49:49,188
+Counter 1'in adresinden okuma yapıyorum. Counter 1'in adresinden yapacağım okuma direkt olarak Status Word'e karşılık gelir. Şimdi Status Word'ümüze bakalım. Status Word'ümüzün en yüksek anlamlı biti bizim output'umuz. Biz ne istiyoruz? Output'un sıfıra düştüğü anı yakalamak istiyoruz. Bunun için kontrolümüzü nasıl yapmışız? Bakın.
+
+249
+00:49:49,907 --> 00:50:14,907
+Okuduğumuz değeri, yani status word'u bir kere sola doğru rotate ettik. Rotate işlemlerinde arkadaşlar nasıl çalışıyordu? Bir tane de carry bitimiz vardı. En yüksek anlamlı bit carry'e aktarılıyordu. Carry'deki değer de işte en düşük anlamlı biti aktarılıyordu. Dolayısıyla artık bizim rotate left işleminden sonra output değerimiz bizim carry flag'te.
+
+250
+00:50:15,092 --> 00:50:31,431
+Dolayısıyla biz ne istiyoruz? Carry flayın 0 olduğu anı yakalamak istiyoruz. Öyleyse carry flay 1 ise tekrar başa dönüp leçleme yapacağım ve yaptığım leçleme sonucunda da tekrar rotate edip carry flay'e bakacağım. O zaman döngümüz şu şekilde çalışıyor.
+
+251
+00:50:33,652 --> 00:50:48,331
+Status Word'ü AL'ye okuduktan sonra AL'yi sola doğru bir kere döndürdüm ve artık output bitim benim carry'de. Carry 1 olduğu süre boyunca burada bekliyorum, dönüyorum.
+
+252
+00:50:49,331 --> 00:50:56,331
+Şu noktaya geçtiğimde ne demek bu? Carry biti 0'a düştü, counter 1'in out ucu 0'a düştü anlamına geliyor.
+
+253
+00:50:56,331 --> 00:51:01,172
+Yani bir saniye boyunca counter 2'de sayma işlemi yaptım.
+
+254
+00:51:02,356 --> 00:51:20,636
+Bu noktada artık kontrol etmem gereken bir saniye boyunca Counter 2'deki oluşan sayma miktarı 9999'u aştı mı aşmadı mı bunu anlamak. Eğer aşmadıysa biz mod 0'da ayarlamıştık ya Counter 2'yi. Şöyle tekrar başa dönelim.
+
+255
+00:51:21,916 --> 00:51:23,916
+Mod 0'da ayarlamıştık ya.
+
+256
+00:51:24,916 --> 00:51:37,916
+Eğer ki 9999 adım ve daha az sayıda sayma işlemi varsa, counter 2'nin out değeri zaten gate ucundan bunu inhibe ettik, artık sayamayacak o bir saniye boyunca, ikinci bir saniye boyunca.
+
+257
+00:51:37,916 --> 00:51:42,916
+Out değeri sıfırda kalması lazım. Eğer ki ben counter 2'nin...
+
+258
+00:51:43,536 --> 00:51:53,135
+Out ucunu kontrol ettiğinde bu değer 0 ise bu bir overflow anlamına geliyor. Yani benim ölçmeye çalıştığım frekans 9999'dan fazladır anlamına geliyor.
+
+259
+00:51:53,135 --> 00:52:05,936
+Şimdi burada da yapacağımız işlem counter 2'nin Out ucu 1 mi 0 mı onu anlamak. Bunun için yine readback komutu çalıştıracağız. Readback komutuna tekrar geri dönelim şuradan.
+
+260
+00:52:08,500 --> 00:52:12,960
+Hangi counter için istiyoruz? Bu sefer bunu counter 2 için istiyoruz. Yazmaya çalışalım.
+
+261
+00:52:14,080 --> 00:52:19,780
+En yüksek 2 anlamlı bitimizin 1 olması lazım. Sayma değerini istemiyorum. Yine 1 olarak kalacak.
+
+262
+00:52:19,920 --> 00:52:25,019
+Statüs istiyorum. Kimin statüsünü istiyoruz? Bu sefer counter 2'nin statüsünü istiyoruz.
+
+263
+00:52:26,519 --> 00:52:30,300
+O zaman burada göndermemiz gereken değer arkadaşlar artık bakın ne oldu?
+
+264
+00:52:33,300 --> 00:52:35,460
+E8H değeri olmuş oldu.
+
+265
+00:52:35,840 --> 00:52:46,240
+Counter 2'nin status'unu leşlemek istersem E8H komutunu ConfigWord'e aktarmam gerekiyor. Buna bakalım.
+
+266
+00:52:48,740 --> 00:52:51,539
+C8 demiş. Neden C8 demiş?
+
+267
+00:52:53,440 --> 00:53:02,039
+C8 de şundan dolayı. Aynı zamanda biz sayma değerini de alacağız. Eğer ki taşmamışsa sayma değerini de almak istiyoruz. Bunun için
+
+268
+00:53:02,675 --> 00:53:17,435
+count değerini de leçlemişiz. Dolayısıyla 0, 0, 1, 1, 1, 0, 0, 0 olarak buradaki değeri okumamız mümkün. Öyleyse hem sayma değerini hem de statüsü kontrol edeceğim.
+
+269
+00:53:17,435 --> 00:53:26,675
+Statüsten outputuna bakacağım. Outputu 1'deyse gelen değer overflow çöpe atıyorum. Eğer ki output'i
+
+270
+00:53:27,059 --> 00:53:35,059
+1 değilse 0 ise bu durumda da sayma değerini okuyup sayma değerine göre frekans hesabı yapmaya çalışacağım.
+
+271
+00:53:38,059 --> 00:53:40,059
+Bir de şunu hatırlayalım.
+
+272
+00:53:42,059 --> 00:53:51,059
+Readback komutuyla hem statüs hem de sayma değerini leçlersem gidip counter'ın adresinden okuduğumda bunları hangi sırada okuyorum?
+
+273
+00:53:51,059 --> 00:53:53,059
+Bakın o madde şurası.
+
+274
+00:53:53,748 --> 00:54:16,748
+Bir counter'a ilişkin hem sayma değeri hem de durum okumak için readback komutu verilirse, yapacağım ilk okuma statüse ilişkin bir okumadır. Daha sonra yapacağım ikinci ve üçüncü okumalarsa, işte 16 bit mi yazılmış, 8 bit mi yazılmış buna göre değişiyor. Bunlar da leçlenen sayma değerleridir. Tamam, bu aradığımız cevap da burada var. Öyleyse geliyoruz.
+
+275
+00:54:19,699 --> 00:54:32,699
+Bu Out'unu, Counter 2'nin Out'unu bir kere kontrol etmem yeterli. Çünkü o ikinci bir saniye boyunca, yani şurada gördüğümüz ikinci bir saniye boyunca, Gate ucumuz...
+
+276
+00:54:33,331 --> 00:54:50,331
+Gate ucumuz 0'a düştü zaten. Gate ucumuz 0'a düştüğü için sayma inhibe edilmiş durumda. Ben şu anda, herhangi bir anda, counter 2'nin out değeri 1 ise, sonuç overflow'dur diye değerlendireceğim. Bu arada herhangi bir anda bu işlemi yapabilirim anlamında bunu söylüyorum.
+
+277
+00:54:51,331 --> 00:54:58,831
+Halbuki biz nasıl yapıyoruz? Değer 0'a düşer düşmez bu işlemi başlattık ve ölçmeye çalışıyoruz.
+
+278
+00:54:59,572 --> 00:55:22,332
+Counter 1'in out'u 0'a düştüğünde gidip Counter 2'yi okuyoruz. Counter 2'nin output'u 1 ise overflow var. Counter 2'nin output'u 0 ise sayma değerini çekiyoruz. Kaçtan kaça kadar saydığımızda, hesapladığımızda da bu da bize frekans değerini verecek. Çünkü bir saniye boyunca kaç kere salınım yaptığını bulmuş oluyoruz zaten. Gelelim tekrar yukarı.
+
+279
+00:55:24,332 --> 00:55:25,052
+C8.
+
+280
+00:55:25,440 --> 00:55:33,320
+Readback komutu, hem sayma değerini hem de status değerini leşliyoruz. Kimin? Counter 2'nin.
+
+281
+00:55:33,960 --> 00:55:42,079
+Control Word'üne bunu attık. Daha sonra Counter 2'nin adresinden okuma yaptık. Bu okuma işlemi Status Word'e okuduk.
+
+282
+00:55:42,079 --> 00:55:45,079
+Status Word'ün en yüksek anlamlı biti.
+
+283
+00:55:45,556 --> 00:56:01,556
+Output'tu. Bir kere Rotate Left yaptığımızda bu Output biti Carry'e çıktı. Eğer Carry'deki değerimiz bir ise, yani Carry'de oluşan değerimiz bir ise, bunu Jump Carry ile kontrol ediyoruz. Overflow isimli bir etikete gidiyoruz.
+
+284
+00:56:19,603 --> 00:56:24,324
+Bir tane display de bunların overflow ile ilgili işlemlerini yapmış oluyoruz.
+
+285
+00:56:24,324 --> 00:56:32,803
+Sayma değerlerini okuyup, ondan sonra bu ff değerini alıp ekranda göstermeye çalışıyoruz.
+
+286
+00:56:32,803 --> 00:56:46,083
+Bu şurada görmüş olduğunuz işlemler aslında tam olarak sistemin diğer kısımlarını görmediğimiz için anlamlı değil ama bir tane display de ff değerini gördüğümüz şekliyle bunu düşünebilirsiniz.
+
+287
+00:56:46,708 --> 00:56:53,708
+Bir başka display de ff değerlerini görecekmişiz gibi bunu hayal edebilirsiniz. Şimdi gelelim tekrar.
+
+288
+00:56:53,708 --> 00:57:07,708
+Overflow yoksa o zaman şuraya doğru ilerlememiz gerekiyor. Bu ne demek? Counter 2. Counter 1, 0'a düştüğünde bu counter 2'nin out'u hala 0'da bu anlama geliyor.
+
+289
+00:57:07,760 --> 00:57:21,800
+Öyleyse gidiyorum, counter 2'nin sayma değerini okudum. İlk okuduğum değer, LSB değeri olacak. Neden? Çünkü ayarlarken bunu zaten önce LSB, sonra MSB diye ayarlamıştım. Dolayısıyla bu değeri aldım, okudum.
+
+290
+00:57:22,620 --> 00:57:33,400
+LSB değerini okudum ve adjust isimli fonksiyonu çalıştırdım. Adjust fonksiyonu ne yapıyor? Bakın arkadaşlar, okuduğum sayma değerini, leçlediğim sayma değerini alıp
+
+291
+00:57:35,059 --> 00:57:48,840
+99'dan bu sayma değerini çıkartıyor. Neden böyle yapıyoruz? Çünkü sayıcılarımız down counter. Counter 2, 9999'dan itibaren başladı, geriye doğru sayıyor. Ama kaç adım saydı?
+
+292
+00:57:58,036 --> 00:58:04,036
+Bites'ını elde edeceğim. Bunun için BCD olarak gösterimdeki karşılığını elde edeceğim. Düşük anlamlı kısmı.
+
+293
+00:58:04,036 --> 00:58:10,036
+Bu yüzden dolayı 99'dan çıkartıyoruz. Aynı işlemi yüksek anlamlı basamaklar içinde yapacağız.
+
+294
+00:58:10,036 --> 00:58:12,036
+Onu nasıl yapıyoruz bakalım.
+
+295
+00:58:20,179 --> 00:58:27,179
+Bu, increment al şeklinde bir komut. Burada yanlış kalmış. Daha önceden bozmuşum herhalde.
+
+296
+00:58:32,788 --> 00:58:44,788
+Çıkarttık, bu 99'dan çıkarttık, ilk değer 0 ile başladı. O da bir adım olarak değerlendirdiğimiz için. Onu da bir adım arttırdık. Daha sonra bunu frekansı gösterdiğimiz 0 numaralı bir portumuz var.
+
+297
+00:58:44,788 --> 00:58:53,788
+Yani 0 numaralı adresli bir tane 8255 bağlı, ona da bir tane 7 segment display sürücü bağlı olduğunu düşünün.
+
+298
+00:58:53,788 --> 00:59:00,652
+Out 0'a bu değeri göndermek, sayma değerinin düşük anlamlı BCD basamaklarını ekranda göstermeye karşılık gelsin.
+
+299
+00:59:00,916 --> 00:59:26,396
+Bu ilk okuduğumuz counter 2'nin LSB'siydi. Daha sonra tekrar gidip counter 2'den bu sefer MSB değerini okuyoruz. Yine adjust fonksiyonunu çalıştırıyoruz. Adjust fonksiyonu yine yüksek anlamlı basamak için 99'dan itibaren başlamıştı. Belliri bir değere kadar saydı biz. Bu belirli bir değeri biliyoruz. Arada ne kadar basamak geçti? 99 eksi okuduğumuz değerdir. Bundan dolayı yine bununla da ilgili işlem yapıyoruz.
+
+300
+00:59:26,867 --> 00:59:36,867
+A60'da bir basamak var, A61'de bir başka basamak var. Bu ikisini ekrana yazdırıp, frekans değerlerimizi yazdırıp tekrar bu cycle'ı baştan başlatıyoruz.
+
+301
+00:59:38,867 --> 00:59:48,867
+Tekrar Counter 2'ye. Counter 2 hangi modda ayarlanmıştı? Mod 0'da ayarlıydı. Dolayısıyla mod 0 tekrarlı bir durum değil, yazılımsal olarak tekrarlanabilir bir yapı.
+
+302
+00:59:53,748 --> 01:00:00,000
+Tekrar değer yüklemem gerekiyor. Ondan dolayı bu işlemi burada tekrarlamış oluyoruz. Belki
+
+303
+01:00:00,000 --> 01:00:10,680
+Mod atma kısmını şeyin dışında bırakabilirdik, döngünün dışında bırakabilirdik ama değer yazmalar mutlaka ve mutlaka döngü içerisinde kalması gerekiyor.
+
+304
+01:00:10,680 --> 01:00:15,880
+Mutlaka ve mutlaka şu iki değer, üç satır döngü içinde kalması gerekiyor.
+
+305
+01:00:15,880 --> 01:00:26,119
+Dolayısıyla bu mantıkla bu şekilde verebileceğimiz bir mantık. Tekrar etmek gerekirse, özetlemek gerekirse, elimizde 2 MHz'lik bir sinyal var.
+
+306
+01:00:26,291 --> 01:00:32,172
+Bunu kullanarak 2 saniyede bir periyodik kare dalga üretmek istiyoruz.
+
+307
+01:00:32,172 --> 01:00:39,251
+Bundaki amacımız da şu, 1 saniye boyunca counter 2'ye bağlı işaretin frekansını sayacağım.
+
+308
+01:00:39,251 --> 01:00:46,092
+Bu değer 0'a düştüğü anda counter 2'nin saymasını durduracağım. Bunu gate ucuyla inhibe ederek yapabilirim.
+
+309
+01:00:46,384 --> 01:00:54,784
+Dolayısıyla counter 0 ve counter 1 kare dalga üretecek şekilde çalışırsa, counter 2 de mod 0 da çalışacak olursa tam olarak istediğimi yapabilirim.
+
+310
+01:00:55,384 --> 01:01:02,304
+Counter 1'in out'ı 0'a düştüğünde, bunu kontrol ediyorum readback komutuyla, gidip counter 2'nin out'una bakıyorum bu sefer.
+
+311
+01:01:02,903 --> 01:01:11,643
+Counter 2'nin out'u hala 0 ise, 9999'dan daha düşük bir frekans saymışım demektir. Yani anlamlı bir frekans var.
+
+312
+01:01:12,115 --> 01:01:32,516
+9999 veyahut da daha fazla bir değer olmuşsa zaten, counter 2'nin out değerini biz 1'de göreceğiz. Dolayısıyla kaça kadar saydığını bilemeyeceğiz. 9999'u ne zaman devirde bunu bilemeyeceğiz. Bu yüzden dolayı overflow olmuş oluyor.
+
+313
+01:01:39,603 --> 01:01:50,603
+Bu sefer sayma değerlerini, mevcut counter 2'deki sayma değerlerini okuyup, bunu 9999'dan çıkartıp, frekans değerimizi net bir şekilde elde etmiş olacağız.
+
+314
+01:01:50,603 --> 01:02:02,603
+Örneğin burada biz counter 2'yi 9999'dan başlatmışsak ve count değerini leşlediğimizde 3275 değerini görüyorsak, bunun anlamı şu.
+
+315
+01:02:02,655 --> 01:02:21,655
+Counter, 9999'dan 3275'e kadar saymış. Yani arada 6724 adım geçmiş demektir. Bu da Counter 2'nin clock işaretine bağlı sinyalin 6.724 kHz'lik bir sinyal olduğu anlamına gelmiş oluyor.
+
+316
+01:02:22,195 --> 01:02:34,275
+Bu örnek kapsayıcı ve bütüncül bir örnek. Anlamak önemli. Sistemin nasıl çalıştığını gösteriyor. Readback komutları var. İşte statusleş diyoruz, output'u kontrol ediyoruz.
+
+317
+01:02:34,275 --> 01:02:49,155
+Sayma değerlerini alıp bunlarla ilgili işlem yapabildiğimiz komple bir örnek. Bunu da yine sizlerle paylaşacağım. İnceleyin. Mümkün olduğunca bununla ilgili üzerinde işlem yapıp, denemeler ve değişiklikler yaparak.
+
+318
+01:02:49,684 --> 01:02:54,684
+Farklı sonuçlar elde etmeye çalışın. Bu örnekle ilgili sormak istediğiniz bir şey var mı?
+
+319
+01:02:58,036 --> 01:03:08,036
+Hocam, şimdi bu örnekte yüksek anlamlı kısımla düşük anlamlı kısmı en son da ayrı şekilde yazdırıyoruz değil mi ekranı?
+
+320
+01:03:08,036 --> 01:03:13,036
+Evet, evet. Ama BCD olduğu için sıkıntı yok zaten.
+
+321
+01:03:13,036 --> 01:03:14,796
+He, tamam.
+
+322
+01:03:15,284 --> 01:03:35,384
+Yani düşük anlamlı kısmı çıkarttıktan sonra zaten eldesiz veyahut da barovsuz diyelim, barovsuz bir çıkartma işlemi olduğu kesin bunun. Çünkü 9999'dan bir sayıyı çıkarttığımız zaman kesinlikle ve kesinlikle elde barov olmaz. Ondan dolayı ayrı ayrı yapmakta bir sıkıntı yok.
+
+323
+01:03:36,284 --> 01:03:37,724
+Tamam hocam, teşekkür ederim.
+
+324
+01:03:37,724 --> 01:03:38,724
+Rica ederim.
+
+325
+01:03:39,984 --> 01:03:41,932
+Başka bir sorumuz var mı arkadaşlar?
+
+326
+01:03:47,956 --> 01:03:56,956
+Yok herhalde, tamam. Şimdi bir 15 dakika... Bu örneğin simülasyonu bende yok. Siz yaparsanız herkeste olur.
+
+327
+01:03:58,256 --> 01:04:01,256
+Yapan birisi çıkarsa ekstradan 5 puan veririm.
+
+328
+01:04:04,316 --> 01:04:05,316
+Sene sonunu.
+
+329
+01:04:12,916 --> 01:04:13,916
+İlk gönderene.
+
+330
+01:04:15,056 --> 01:04:16,276
+İlk gönderene, evet.
+
+331
+01:04:23,092 --> 01:04:33,892
+Tamam, başka bir sorumuz yoksa arkadaşlar, bu durumda bir 15 dakika kadar ara verelim. Saat 5.10, 20 geçe devam ederiz. Tamam.
+
+332
+01:20:00,979 --> 01:20:02,979
+Evet, arkadaşlar merhaba tekrardan.
+
+333
+01:20:04,479 --> 01:20:19,979
+Şimdi bu geçen derste yapmış olduğumuz iki örnekle 82.54 konusunu tamamlamış oluyoruz. Bir sonraki konumuza geçeceğiz şimdi. Bir sonraki konumuzun teorik kısmıyla ilgili ilerleyeceğiz. Yine önümüzdeki haftada buna ilişkin olarak örnek çözümlerimizi yapmaya çalışacağız.
+
+334
+01:20:22,479 --> 01:20:27,979
+Şimdi bu haftanın temel ana konusu ADC ve DAC sistemleri.
+
+335
+01:20:36,435 --> 01:20:43,855
+ADC ve DAC sistemleri dediğimiz zaman bundan kasıt aslında şu, analog digital converter'lar ve
+
+336
+01:20:43,855 --> 01:20:57,195
+digital analog converter'ların yapısını inceliyor olacağız. Bunlara ilişkin olarak, her birisine ilişkin iki tane şematik örnek var, iki yapı var.
+
+337
+01:20:57,195 --> 01:21:02,675
+Yapıyı inceliyor olacağız. İşte bir tanesi binary weighted digital analog converter.
+
+338
+01:21:03,347 --> 01:21:17,868
+R2R merdiven DAC'si, paralel ADC, RAMM Converter ADC şeklinde her birisine ilişkin iki tane örneğimiz olacak. Daha sonrasında DAC yardımcı entegresi olan DAC0830'a bakacağız.
+
+339
+01:21:18,647 --> 01:21:27,268
+ADC tarafında da ADC0804 entegresi var. Bunlara bakacağız. Ve ADC'ye DAC'ye ilişkin örnekler çözerek bu konuyu tamamlayacağız.
+
+340
+01:21:28,884 --> 01:21:38,884
+Şimdi neden bizim analog digital converter veya analog digital converter'a ihtiyacımız var? Bunu bir ele alalım.
+
+341
+01:21:38,884 --> 01:21:56,716
+Bir kere mikroişlemci tarafı bir sayısal sistem. Bununla birlikte bu sayısal sistemin dış dünyayla etkileşim halinde bulunmasını istiyorsak buna uyumlu bir hale gelmemiz lazım. Fiziki dünya, dış dünya, analog bir dünya.
+
+342
+01:21:57,043 --> 01:22:16,724
+Buradaki sıcaklık, basınç, nem, hız ve benzeri değerler bunlar analog değerlerdir. Dolayısıyla analog fiziki bir dünyayla sayısal bir mikroişlemci sistem arasındaki bağlantıyı kurabilmek için dışarıdan bir şey okumak istediğimde, bir input almak istediğimde mikroişlemci sistemime.
+
+343
+01:22:16,895 --> 01:22:27,895
+Bunun mutlaka analoglu dijital converterdan geçmesi lazım. Benzer şekilde dış dünyaya bir çıktı üretmek istiyorsan mikroişlemci sistemi olarak bu durumda da dijital...
+
+344
+01:22:28,275 --> 01:22:45,675
+Analog Converter'ın bir çıktığı üretimi için kullanılması gerekiyor. Dolayısıyla bu sebeplerden dolayı, fiziki dünyanın bir analog dünya olmasından dolayı bir DAC, ADC grubuna ihtiyacımız var. Bunu da kullanmamız gerekiyor.
+
+345
+01:22:51,444 --> 01:23:09,444
+Dış dünyadan okuduğumuz bir değere göre bir kontrol işlemi yaptığımızı düşünelim. O da şöyle bir yapı olsun, örnek olsun. Oda sıcaklığını ayarlamaya çalışalım. Oda sıcaklığını bir fan vasıtasıyla ayarlamaya çalışalım. Bu durumda dış dünyadan okumuş olduğumuz değer bir sıcaklık analog değeridir.
+
+346
+01:23:09,444 --> 01:23:19,404
+Dış dünyaya kontrol işareti olarak ilettiğimiz değer ise arkadaşlar, bu durumda bir motor hız kontrol değeridir. Bu motor hız kontrol değeri aslında
+
+347
+01:23:19,475 --> 01:23:33,296
+motorun uçlarına uygulanacak olan analog gerilim değeridir. Böyle düşünebilirsiniz bunu örneğimizi. Şimdi bu kontrol sisteminin çalışabilmesi için arada bir takım yardımcı sistemlere ihtiyacımız var.
+
+348
+01:23:33,296 --> 01:23:45,655
+Bir mikroişlemcili kontrol sistemi yapmak istesek bile arada çeşitli dönüştürücülere ve işlemlere ihtiyacımız var. Hatta şöyle başlayabiliriz buna.
+
+349
+01:23:46,068 --> 01:24:05,068
+Bir kere fiziki dünyada algılamak istediğimiz değer bir sıcaklık değeri ve bu sıcaklık değeri analog bir değer. Mikroişlemci tarafında yani sayısal bir değere bunu dönüştürebilmek için öncelikli olarak bir gerilim değerini, elektriksel bir analog değere bunun dönüştürülmesi gerekiyor.
+
+350
+01:24:05,068 --> 01:24:11,007
+Şimdi doğrudan sıcaklığı algılayabilecek, sıcaklığı örnekleyebilecek bir değerimiz yok.
+
+351
+01:24:11,007 --> 01:24:26,007
+Veya sıcaklığı algılayıp bunu sayısal bir sisteme aktaracak yapı sadece ve sadece analog sıcaklık değerinin elektriksel bir analog gerilim değerine çevrildikten sonraki kısmında mümkün oluyor.
+
+352
+01:24:26,007 --> 01:24:37,728
+O zaman bir enerji tipini, örneğin burada sıcaklık, bunu elektriksel bir sinyale çeviren bir transducer dediğimiz sisteme ihtiyacımız var. Dönüştürücü bir sisteme ihtiyacımız var.
+
+353
+01:24:37,728 --> 01:24:47,028
+Ancak bundan sonra elektriksel olarak elde etmiş olduğumuz analog değer ADC devresinden geçerek sayısal bir elektriksel sinyal halinde kullanılabilir.
+
+354
+01:24:47,028 --> 01:24:58,528
+Dolayısıyla fiziki dünyada gelen değer bir transducer dönüştürücüden geçirilecek, elektriksel bir analog değer elde edilecek. Daha sonra bu elektriksel analog değer sayısala çevrilebilir.
+
+355
+01:24:58,703 --> 01:25:14,183
+Mikroişlemci içerisinde bu gelen sayısal değere göre bir karar verdik. Ortam istediğimizden daha sıcak. Dolayısıyla fanı hızlandırmamız lazım veya ortam beklediğimizden threshold değerimizden daha soğuk durumda fanı tekrar durdurmamız gerekebilir. Bununla ilgili bir karar verdik.
+
+356
+01:25:26,292 --> 01:25:34,492
+Dijital analog converterdan geçirerek motorun uçlarına uygulanmasını isteyeceğimiz elektriksel bir değer elde etmemiz mümkün.
+
+357
+01:25:34,492 --> 01:25:42,992
+Yine bu elektriksel gerilim değerinin, yine transduyseri, burada motorun kendisi olacak, buradaki transduyserimiz motorun kendisi olabilir.
+
+358
+01:25:42,992 --> 01:25:53,192
+Bununla birlikte fanın hızı, bir hız değeri, analog bir fan hız değerini üretmiş olmakta kullanıyor olacağız bu akışı.
+
+359
+01:25:53,359 --> 01:26:00,579
+Örneğin, buradaki fiziki dünyadaki sıcaklık değerini elektriksel değere çevirmek adına kullanabileceğimiz transducer nasıl bir şey olabilir?
+
+360
+01:26:02,019 --> 01:26:13,739
+Ters taraftakini söyledim. Sayısal bir değerin, işte dijital analog converter'dan sonra bir gerilim değerine dönüştürdük bunu. Analog bir gerilim değerimiz var.
+
+361
+01:26:13,739 --> 01:26:19,079
+Bunun motor hızına dönüştürülebilmesi için kullanılacak transducer motorun kendisi.
+
+362
+01:26:20,467 --> 01:26:36,067
+Oraya bir elektriksel sinyal uyguladığımız zaman motor ucunda bir açısal hız elde ediyoruz. Bu transducer motorun kendisi. Ama ters tarafta sıcaklık değerini elektriksel analog bir değere çevirmek istediğimizde nasıl bir devre veya eleman kullanabiliriz? Nasıl bir sensör işte?
+
+363
+01:26:46,484 --> 01:26:47,543
+Nasıl bir şey olabilir?
+
+364
+01:26:51,828 --> 01:26:53,828
+Daha spesifik bir örnek olarak.
+
+365
+01:26:57,939 --> 01:27:11,939
+Mesela devre deneylerinde kullandığınız bir tane direnç yapısı vardı. Bu direnç yapısı sıcaklıkla birlikte, direnci ısınmasıyla birlikte, kendi sıcaklık değeri arttıkça direnç değeri değişen bir elemandı.
+
+366
+01:27:11,939 --> 01:27:23,939
+NTC diye geçer. Sıcaklık değeri değiştikçe, belki deneyi şöyle yapmışsınız, bir çakmakla, evet mesela bunlar.
+
+367
+01:27:24,467 --> 01:27:51,227
+Termistor gibi. Dolayısıyla sıcaklık değeri arttıkça kendi iç direnci değişen elemanlar var. Biz bu elemanın üzerindeki geçen akımı veyahut da bunu bir gerilim bölücü olarak kullanarak bir analog gerilim değeri elde etmemiz mümkün olabilir. Dolayısıyla buradaki Transdüüsör örneği bir sıcaklıkla iç direnci değişen bir yapı olarak söyleyebiliriz. Bu örneği de bu şekilde ifade edebiliriz.
+
+368
+01:27:52,148 --> 01:28:00,148
+Şimdi bir başka kavram ise arkadaşlar, analog işaret nedir, sayısal işaret nedir bunları kavrayabilmek gerekiyor.
+
+369
+01:28:00,148 --> 01:28:14,148
+Şimdi analog dediğimiz işaretler, her T anı için sürekli olarak herhangi bir T anı için bir karşılık çıktısı olan bir değer.
+
+370
+01:28:19,507 --> 01:28:43,628
+Zaman domeninde yani bağlı olduğu değişkene göre süreklilik arz ediyor. Hem de çıktısı itibariyle veya göstermiş olduğu fonksiyon itibariyle yani dikey eksende karşılık geliyor. Bu da dikey eksende de süreklilik gösteriyor. Hem dikey eksende hem yatay eksende yani zamanda süreklilik gösteriyorsa bu işaret bir analog işarettir.
+
+371
+01:28:43,920 --> 01:28:58,920
+Dolayısıyla şu sol üstteki işaret, analog işaret özelliği ne? Zamanda sürekli, genlik olarak da sürekli. Yani zamana bağlı olarak genlik değişimi sürekli bir fonksiyon şeklinde değişiyor. Bu öyleyse sürekli işaret.
+
+372
+01:28:59,920 --> 01:29:04,920
+Şu altta görmüş olduğumuz işarete bakacak olursak arkadaşlar, üsttekinden farkı bunun.
+
+373
+01:29:05,376 --> 01:29:13,376
+Bu genlik değerleri olarak kuantalı değerler alabiliyor. Yani sadece belirli değerleri alabiliyor. Ara değerleri alamıyor. Ama zamanda sürekli bakın.
+
+374
+01:29:13,376 --> 01:29:27,376
+Zamanda sürekli bir işaret. Bununla birlikte genlik olarak sadece belirli değerleri alabiliyor. Bu işaret arkadaşlar zamanda sürekli olmasına rağmen ayrık genlikli işaret olarak isimlendiriliyor.
+
+375
+01:29:31,315 --> 01:29:40,315
+Genlik değerleri sadece belirli değerleri ve belirli kuantalarda değer alabiliyor. Bunun haricinde ara değer alamıyor. Böyle düşünelim.
+
+376
+01:29:40,315 --> 01:29:49,315
+Sağ üstte görmüş olduğumuz işaret ise bu işaretin genliği sürekli, genlik değeri sürekli olabilir, continuous.
+
+377
+01:29:49,315 --> 01:29:57,315
+Ama zamanda ayrık işaret. Bu işaret sadece zaman belirli periyotlarında ölçüm değeri veriyor.
+
+378
+01:29:57,524 --> 01:30:07,724
+Ayrık bir işaret, yani zamanda ayrık bir işaret. Sağ altta görmüş olduğunuz işaret ise hem zamanda hem genlikte ayrık bir işaret.
+
+379
+01:30:08,180 --> 01:30:16,180
+İşte bu yapıdaki örnek ise sayısal işaret olarak isimlendiriyor. Dijital veya sayısal dediğimiz işaret böyle bir yapı.
+
+380
+01:30:16,180 --> 01:30:26,180
+Hem zaman olarak belirli periyotlarda örneklenmiş hem de genlik değeri sadece belirli kuantalarda değer alabiliyor. Ara değer alamıyor. Bu da sayısal bir işaret.
+
+381
+01:30:26,180 --> 01:30:33,180
+Bunu şöyle düşünebiliriz. Mesela 8 bitlik integer değerleri tutabiliyoruz.
+
+382
+01:30:34,515 --> 01:30:42,195
+integer değer olarak düşünecek olursak. Dolayısıyla buna benziyor yapı olarak bir dizi şeklinde düşünün.
+
+383
+01:30:42,195 --> 01:30:50,355
+Mesela sadece int değerleri tutan 100 elemanlı bir dizi. Bu tam olarak sayısal bir işarete karşılık gelmiş oluyor.
+
+384
+01:30:50,355 --> 01:30:59,315
+E float olarak tutsak bu sayısal değil mi? O da gösterim itibariyle sayısal olarak ifade edebileceğimiz bir değer tabi.
+
+385
+01:30:59,891 --> 01:31:17,391
+Dolayısıyla analog işaret hem zamanda hem genlikte. Kontinyüs, sürekli. Sayısal işaret, zamanda ve genlikte ayrık işaret. Belirli periyotlarda sadece genlik olarak da belirli kuantalarda değer alabiliyor. Bunun haricinde değer alması mümkün değil.
+
+386
+01:31:17,391 --> 01:31:27,032
+Şimdi arkadaşlar, dijital analog converter'ın temel olarak iki farklı örneğini vereceğiz.
+
+387
+01:31:28,819 --> 01:31:47,760
+Bunlardan ilki, binary olarak ağırlıklandırılmış DAC örneği. Bu yapı aslında arkadaşlar, devre teorisi dersinden hatırlayacağınız üzere, bir toplama devresi, opamplı toplama devresi aslında bu.
+
+388
+01:31:48,595 --> 01:31:56,835
+Buradaki yapı OPAMP'lı bir toplama devresi. Bu OPAMP'lı toplama devresi nasıl çalışıyordu onu bir hatırlamaya çalışalım. Öncelikli olarak OPAMP'ın tanım bağıntısını verelim.
+
+389
+01:31:56,835 --> 01:32:07,275
+OPAMP'ın tanım bağıntısında arkadaşlar şunlar vardı. Bir kere şu VP ve VN olarak isimlendirmiş olduğumuz
+
+390
+01:32:10,547 --> 01:32:36,248
+V, P, V, N. Burası da V, P isimli düğümler. O pump'ın V, N ve V, P düğümlerindeki gerilim eşit olacak. Birincisi bu. Yani ilk tanım bağıntımızı yazacak olursak, V, N eşittir, V, P yazabiliriz. İkinci tanım bağıntımız da arkadaşlar, buradan,
+
+391
+01:32:37,043 --> 01:33:04,463
+Eksi uca ve artı uca giden, ideal opamp için bahsediyoruz tabii ki. İğne akımı ile IP akımı bunlar sıfır değerine sahip. İdeal opamp için tabii yine. IP değeri, iğne değerine o da sıfıra eşit olacak şekilde bir tanım bağıntısına sahip. Buradaki kullanmış olduğumuz opampın tanım bağıntıları bunlar. Böyle bir opamp olduğu vakit arkadaşlar şunu yani.
+
+392
+01:33:05,587 --> 01:33:12,347
+OPAMP'ın tanımantısı bu. OPAMP'ın böyle bir devredeki çalışmasını inceleyeceğimiz zaman da şunu söyleyebiliriz.
+
+393
+01:33:21,811 --> 01:33:42,572
+Şunu söyleyebiliriz. Bu VP düğümü ground'a bağlı. Gördüğünüz gibi ground ucuna bağlı. Demek ki, şu tanım bağıntısı haricinde böyle bir bağlantı yaptığımız için, gördüğümüz bağlantı yaptığımızdan dolayı, VP geriliminin 0 olduğunu söyleyebiliriz. VP gerilimi 0 ise,
+
+394
+01:33:42,739 --> 01:33:53,239
+Bu durumda VN gerilimi de sıfırdır. İlk tanım bağıntısından dolayı. O zaman buraya ek bir bilgi daha ekleyebiliriz. Bu değerler sıfıra eşitmiş.
+
+395
+01:33:53,239 --> 01:34:07,539
+Öyleyse bakın şuradaki uçlardan bu düğme gelen akımı gerilim sıfır olduğu için yazabilirim. Benzer şekilde bu düğme göre şu Vout gerilimini de hesaplayabilirim.
+
+396
+01:34:07,699 --> 01:34:22,699
+Ortadaki düğüm 0 olduğu için gerilimi bildiğimden dolayı, şuradaki input tuşlarından 0 olan düğüme doğru akım değerlerini, gerilim değeri 0 olduğu için benzer şekilde Vout'un buraya göre olan gerilim değerini de hesaplaman mümkün oluyor.
+
+397
+01:34:22,699 --> 01:34:34,604
+Önce akım değerlerini yazalım. Mesela sadece şunların isimlerini şöyle verelim. Mesela V1 diyelim.
+
+398
+01:34:35,604 --> 01:34:50,064
+V2 diyelim ve V3 gerilimleri diyelim. Bunlar V1, V2 ve V3 bizim dijital değerlerimiz. Yani bunlar ya lojik 0 ya lojik 1 alabiliyor. Karşılıkları ne? Ya 5 volt ya 0 volt.
+
+399
+01:34:50,064 --> 01:35:01,644
+O zaman V1, V2 ve V3 için alabilecek analog değerler karşılıkları 0 volt veya 5 volt olarak değerlendirebiliriz. Şimdi burada şu düğüm 0 geriliminde olduğu için
+
+400
+01:35:02,068 --> 01:35:09,368
+Bu, en üstteki uçtan akacak gerilim için ne diyebiliriz arkadaşlar? V1 bölü R akımı diyebiliriz.
+
+401
+01:35:10,628 --> 01:35:22,927
+İkinci, ortadaki bağlantıdan akacak akım nasıl tanımlıyoruz? V2 bölü, burada yine 2R değeri var.
+
+402
+01:35:28,115 --> 01:35:32,715
+Burada da 4R değerinden bahsedebiliriz. Akacak akımlar bunlar.
+
+403
+01:35:32,715 --> 01:35:42,955
+Şimdi dolayısıyla bu akım toplamı bu düğme kadar geldi. Yalnız bakın, bu düğümden, şuradaki düğümden içeri doğru akacak akımın 0 olması lazım.
+
+404
+01:35:42,955 --> 01:35:54,235
+O zaman şu üç kolda oluşan akımın hepsi bu tarafa doğru gidecek. Yani çizecek olursak, şuraya doğru gidecek akım 0 olduğu için, şuradan oluşan
+
+405
+01:35:55,091 --> 01:36:05,091
+Bunların hepsinin toplamı şeklindeki akım değerim buradan devam etmesi lazım. Çünkü aşağı doğru akım değerim 0. O zaman ben Vout'u şöyle yazabilirim.
+
+406
+01:36:23,155 --> 01:36:37,756
+4R şeklinde bunu yazabilirim. Bu buradan geçen akım. Bir de direnç değerimiz var. Bu akımı dirençle de çarptığımızda, yani 4R bölü 7 ile çarptığımızda buradaki Vout gerilimini de elde etmiş oluruz.
+
+407
+01:36:40,736 --> 01:36:50,356
+1, V2 ve V3 gerilimleri 0 veya 5 volt olabileceğinden dolayı bunları V değeri olarak dışarı alabiliriz. Yani bunlar ya 0 ya V olacak.
+
+408
+01:36:51,060 --> 01:37:05,820
+O zaman şu alttaki gerilim değerlerini topladığımızda 4, 2, 1 de buradan 7. Burayla çarptığımız zaman bir sonucu elde edemiz. Yani şunu demek istiyorum. İki alternatif var.
+
+409
+01:37:09,108 --> 01:37:20,708
+Şimdi V1, V2 ve V3'ün hepsi birden eğer ki 5 voltsa bu durumda Vout değerimiz eksi 5 volt oluyor. Hangi durumda?
+
+410
+01:37:21,908 --> 01:37:30,548
+V1, V2 ve V3 hepsi 5 voltsa bu durumda Vout değerimiz eksi 5 volt oluyor.
+
+411
+01:37:31,588 --> 01:37:33,708
+Eğer ki hepsi 0 ise
+
+412
+01:37:34,707 --> 01:37:45,207
+V1, V2 ve V3 sıfırsa, bu durumda elde edeceğimiz değer, şunu seçeyim, sıfır volt oluyor.
+
+413
+01:37:53,203 --> 01:38:02,203
+Hepsi 0 ise 0 volt oluyor ve son olarak bunların kombinasyonlarında 0 ile eksi 5 volt arasında değer alıyor.
+
+414
+01:38:02,203 --> 01:38:07,659
+V1'in 5 volt olduğu diğerlerinin 0 olduğu durumda ne olur bakalım.
+
+415
+01:38:15,188 --> 01:38:21,188
+V1 5V, V2 ve V3
+
+416
+01:38:25,908 --> 01:38:49,908
+0 volt olduğu durumda ne oluyor bakalım? 5 bölü R, R'ler gitti. 20 bölü 7 gibi bir değer mesela. Değil mi? Yanlış hesaplamadıysam. Bunlar 0. 20 bölü...
+
+417
+01:38:50,515 --> 01:39:12,815
+7 oluyor. V2'nin 5 volt olduğu duruma bakalım şimdi. V2 5 voltsa, V1 ve V2, pardon V3 eşittir 0 ise ne oluyor? Bu duruma bakalım. Bu durumda 5 bölü 2 R, yani ne olacak?
+
+418
+01:39:14,387 --> 01:39:21,647
+10 bölü 7 olur değil mi? 10 bölü 7. Tabi bu değerler eksisi var. Onu yazmayı unutmayalım. Bir eksi de şurada var.
+
+419
+01:39:28,212 --> 01:39:37,812
+Eksi değerimiz orada var. V2 5 volt olduğunda böyle bir değer oluyor. Bir de son olarak sadece V3'ün 5 olduğu duruma bakalım. V3 eşittir 5 volt.
+
+420
+01:39:37,812 --> 01:39:52,612
+Bununla birlikte V1 ve V2 eşittir 0 volt olduğu durumda ne oluyor? 5, 4'ler gitti. Bu durumda da 5 bölü 7 mi olur? Eksi 5 bölü 7 olur.
+
+421
+01:39:55,796 --> 01:40:18,768
+En düşük dirençle sürülen kol gerilime en fazla katkıyı yapıyor. Eksi 20 bölü 7 ile. Ortadaki kol bunun yarısı kadar. En alttaki kol da ortadakinin yarısı kadar. Dolayısıyla 4 kat, 2 kat, 1 kat. Bu demek oluyor ki...
+
+422
+01:40:18,768 --> 01:40:39,768
+Ben buradaki direnç dizisini 2R, 2R, 4R, 8R gibi hep iki üzeri şeklinde arttırırsam, aslında girişlere uygulamış olduğum binary değere karşılık olarak en uçta R, en küçük dirençte sürmüş olduğum giriş, çıkışa en fazla katkıyı yapan olmuş oluyor. Dolayısıyla burada...
+
+423
+01:40:39,828 --> 01:40:49,308
+Bir binary sayı gibi bunu değerlendirecek olursak, R direnci ile sürülen most significant bit gibi fonksiyon göstereceğim.
+
+424
+01:40:49,308 --> 01:41:00,308
+O zaman elimdeki herhangi bir binary sayıyı, dijital değeri, ben bu binary weighted digital analog converter girişlerine uygun sırada verirsem,
+
+425
+01:41:00,308 --> 01:41:05,808
+vermiş olduğum gerilim değerine karşılık olarak uygun çıkışı elde etmiş olurum.
+
+426
+01:41:07,699 --> 01:41:19,699
+eksi 5 ile 0 volt arasında gelen uygulamış olduğum sayının binary karşılığı olacak şekilde bir analog değer elde ederek, gerilim değeri elde ederek bunu sağlamış oluruz.
+
+427
+01:41:19,699 --> 01:41:34,699
+Dolayısıyla buradaki yapı kabaca bu anlama gelmiş oluyor. Bu binary weighted digital analog converter yapısının nasıl çalıştığını açıklamasına yönelik olarak bu şekilde söyleyebiliriz.
+
+428
+01:41:36,724 --> 01:41:54,224
+Bir sonraki örneğimiz ile yine benzer bir mantık baktığımız zaman aslında bakın yine bir opamp kullanıyoruz ama aralarındaki fark nedir burada arkadaşlar? Aralarındaki fark görebiliyor muyuz?
+
+429
+01:42:06,644 --> 01:42:08,644
+Görümüyormuş. Çok net halbuki.
+
+430
+01:42:14,676 --> 01:42:23,976
+Yani bu tasarımın, bu tasarıma göre avantajı ne olabilir sizce? İkisini de aynı genlikte bir Binary sayı kabul edecek gibi ayarlamışız.
+
+431
+01:42:23,976 --> 01:42:31,176
+Ama bu tasarımın bir kötü yanı var. Burada da bu iyileştirilmiş durumda. Ne farkı olabilir?
+
+432
+01:42:48,212 --> 01:43:13,091
+Evet, direnç değerleri büyüyor. Bu örnekte büyümüyor ama bu örnekte büyüyor. Yani şunu söyleyebiliriz aslında. Bir direnç için, mesela bunlar da bu örneklerde tolerans çok önemli. Yani mutlaka R2R'lik bir katkı olması lazım dirençlerden. Yoksa bu toleransları çok hassas bir şekilde ayarlanamıyor ise bu sistemin doğru çalışmayacağını söyleyebiliriz değil mi?
+
+433
+01:43:13,471 --> 01:43:26,591
+Burada ben mesela 8 bitlik bir sayıyla çalışmak istersen, bu durumda 8 farklı direnç değeri elde etmem lazım. Dolayısıyla 8 farklı seviyede tolerans değerini çok hassas bir şekilde ayarlanmış olması gerekiyor.
+
+434
+01:43:26,931 --> 01:43:53,431
+Buradaki örneğe geldiğimizde ise, buradaki örnekte sadece iki çeşit direnç yapısı var. Bu iki direnç yapısını da renç olarak birbirlerine yakınlar. Yani öyle seçerim ki toleransın çok hassas bir şekilde ayarlanabileceği bir seviyede olur bu dirençler. Dolayısıyla sadece iki tane tolerans hassas ayarıyla daha güzel bir sonuç elde etmem mümkün. Bu ikisi arasındaki fark temel olarak bu. Bu ikisi ikinci yapı nasıl çalışıyor ona bakalım.
+
+435
+01:43:53,872 --> 01:44:14,872
+Şimdi ikinci yapı şöyle çalışıyor arkadaşlar. Bu R2R merdiven şeklinde ifade ettiğimiz bir yapı. Şimdi devreyi ele alırken şöyle ele alacağız ve aslında buna burada bir tevenin eş değeri kullanarak bu devreyi çözmeye çalışacağız. Şunu demek istiyorum. Devrenin şu kısmı için.
+
+436
+01:44:17,076 --> 01:44:37,395
+Bir TV'nin eş değeri yazacağız. TV'nin eş değeri yazmak ne demek? Bakın, bir kaynak var, iki tane direncim var, ground'a gidiyor. Bunların ortasındaki düğüm benim görmek istediğim gerilim değeri veya hesaplamak istediğim referans gerilim değerini içeriyor. Buna göre nasıl hareket edeceğiz? TV'nin eş değerini nasıl hesaplarız?
+
+437
+01:44:37,876 --> 01:45:01,016
+Şu nokta için TV'nin eş değerini hesaplamak demek, bu noktanın sadece bu kaynaktan dolayı oluşan gerilimini bulmak demek. O da LSB bölü 2'dir. Şuradaki gerilim değerimiz, işte V1, V2, V3 diyecek olursak, V3 bölü 2 gerilimine sahiptir. Çünkü bakın, kaynak var.
+
+438
+01:45:01,492 --> 01:45:24,612
+Direnç var, aynı dirençten geçip gronda gidiyor. Demek ki bir gerilim bölücü, hatta tam ikiye bölüyor. V3 bölü iki değeri var. Peki bu tevenin eş değeri için eş değer direnç ne olur? Eş değer dirence bakmak istediğimiz zaman, şu noktaya göre bakmak istediğimizde ne yapıyorduk içeride? Kaynakları sıfırlıyorduk. Şu kaynağı sıfırlayalım.
+
+439
+01:45:25,844 --> 01:45:32,083
+Bu noktadan bakılan eşdeğer direnci söyleyin bana. Artık elimizde şöyle bir şey var. Bu noktaya göre bakıyorum.
+
+440
+01:45:39,123 --> 01:45:45,123
+Bu noktadan baktığım zaman benim göreceğim eşdeğer direnç ne olur? Şuraya göre.
+
+441
+01:45:50,612 --> 01:45:59,292
+Bakın dirençlerin bir uçları aynı düğümde, ikinci uçları da grandda. Demek ki bunlar da aynı düğümde. Bu ikisi birbirine paralel olmaz mı bu durumda?
+
+442
+01:45:59,292 --> 01:46:14,492
+İkisi paralel olacağına göre burada elde ettiğimiz VTH, V3 bölü 2 olmakla birlikte RTH değerimiz 2R, 2R birbirlerine paralel 2R bölü 2. Yani R değerini verir.
+
+443
+01:46:14,963 --> 01:46:20,344
+Demek ki biz şu devre yerine, buradaki görmüş olduğumuz devre yerine şunu koyabiliriz.
+
+444
+01:46:21,704 --> 01:46:23,364
+Şunu şöyle tekrar çizeyim.
+
+445
+01:46:24,364 --> 01:46:26,844
+Bunun yerine şunu koyabiliriz.
+
+446
+01:46:30,899 --> 01:46:44,579
+V3 bölü 2, direnç, direncimiz R ve bu noktaya geliyor. Yani bunun eşdeğeri olarak bunu koyabiliriz. Burada bir kaynak var. Artı, eksi diyelim. Bu şekilde.
+
+447
+01:46:45,579 --> 01:46:54,539
+Bunun, şu devrenin yerine bunu koyabiliriz. Bu R direnci, bu R direnci ile seri olacak. Bu ikisini birleştirdiğimizde ise elde edeceğimiz durum.
+
+448
+01:46:55,412 --> 01:47:22,011
+Artı, eksi, V3 bölü 2, direncim 2R ve şu düğme geliyorum. Bakın ilk başladığım anın aynısı oldu. 2R, 2R. Şimdi şunu da yazdığımız zaman buradan da bir 2R gelecek. 2R'lik direnç var. Şimdi şunu yazıyorum. Bu da artı, eksi, V2 gerilimi.
+
+449
+01:47:22,612 --> 01:47:37,612
+Bunu da bir adım yürüttüğümüz zaman, hep bu şekilde R, 2R dirençleri şeklinde bu hareket edeceği için arkadaşlar, her seferinde mesela en düşük anlam sırasındaki gerilim değeri bir üst seviyeye gittiğimde hep ikiye bölünecek, hep ikiye bölünecek.
+
+450
+01:47:37,612 --> 01:47:47,408
+Dolayısıyla bunun katkısı 2 üzeri, işte kaç bittikse o seviyede olacak. O kadar düşük olacak. Bunun katkısı...
+
+451
+01:47:47,408 --> 01:48:05,007
+Binary yazılıştaki sırası mertebesinde olacak. Dolayısıyla sadece R ve 2R mertebelerinde dirençler kullanarak, sadece iki farklı tip direnç kullanarak, burada bir toplayıcı opamp devresi elde etmemiz mümkün.
+
+452
+01:48:12,115 --> 01:48:28,735
+V3 bölü 8 kadarlık bir katkı yapacak. Şuradan gelen katkı V2 bölü 4 kadarlık bir katkı yapacak. Şuradan gelen katkı da V1 bölü 2 kadarlık bir katkı yapmış olacak.
+
+453
+01:48:29,104 --> 01:48:39,104
+Bu durumda da zaten bu işte least significant bit, most significant bit şeklinde V out'a katkısı 2 R ile çarptığımız zaman elde edilmiş olacak.
+
+454
+01:48:39,104 --> 01:48:50,860
+Bunun avantajı dediğim gibi sadece iki farklı direnç değeri kullandığımız için iki farklı tolerans değeriyle bu işlemi çözmemiz mümkün olur. O yüzden daha avantajlı bir yapı olarak ortaya çıkmış oluyor.
+
+455
+01:48:51,956 --> 01:49:11,456
+Devrelerimizde kullanacağımız DAC entegresi, yardımcı entegre, DAC0830 entegresi arkadaşlar. Bu entegreyi, entegre dediğimiz şey şurada görmüş olduğunuz yapı. Ama size derslerde ve deneylerde bu bağlantı yapısıyla veriyor olacağız.
+
+456
+01:49:12,148 --> 01:49:16,548
+Bağlantı yapısıyla veriyor olacağız. Dolayısıyla tekrar bununla ilgili işlem yapmanız gerekmeyecek.
+
+457
+01:49:16,548 --> 01:49:24,868
+Burada referans değeri için eksi 5 volt bağladığımızda çıktı değerlerimiz pozitif olacak. Bunu bu şekilde sağlamış oluyoruz.
+
+458
+01:49:25,868 --> 01:49:31,427
+Bu cihaza baktığımız zaman, uçlarına baktığımız zaman bu bağlantı yapısını direkt kullanacağımızı söylemiştim.
+
+459
+01:49:32,128 --> 01:49:36,548
+Bu cihazın 8 bitlik bir cihaz olduğunu görüyoruz. Dolayısıyla...
+
+460
+01:49:37,427 --> 01:50:03,047
+16 bitlik bir arayüze bağlanacak, 8 bitlik bir yardımcı devre olarak yine fonksiyon gösterecek. Bu cihazın bir tane chip select ucu var. Bu uca adres çözümleme devresinden gelen çıktığı bağlamamız gerekiyor. Bunun bir tane right ucu var dış dünyayla ilişkili olarak. Dış dünyaya giden uçlarını düşünecek olursak. Aslında bunu, bu çizmiş olduğumuz yapıyı şöyle bir black box olarak düşünebilirsiniz. Eksi 5 volt içeride.
+
+461
+01:50:03,796 --> 01:50:08,916
+Bunlar içeride. Şuradaki analog çıktığımız var.
+
+462
+01:50:10,452 --> 01:50:30,452
+Siz dışarıdan bu entegreyi veyahut da bu yapıyı sadece bu şekilde göreceksiniz. Ne var? Data uçları var, chip select ucu var, write ucu var, bir de output analog değeri var. Bu. Başka hiçbir şey yok. Diğerlerinin hepsinin verildiğini varsayalım. Diğerlerinin hepsi sistemin çalışmasıyla alakalı olarak hazır bir şekilde size verilmiş olacak.
+
+463
+01:50:36,340 --> 01:50:38,340
+Bunun anlamı nedir?
+
+464
+01:50:43,220 --> 01:50:49,100
+Bunun anlamı nedir? Bu cihaz, IO uzayında kaç byte yer kaplar? Bu cihazın kaç tane adres ucu var?
+
+465
+01:50:50,900 --> 01:50:56,780
+Şurada açık mavi ile çizmiş olduğumuz black box içeride ne anlama geliyor?
+
+466
+01:50:56,780 --> 01:51:05,340
+Ben bu cihazın data uçlarından göndermiş olduğum 8 bitlik binary değere karşılık olarak analog değeri şuradaki analog output değerini de üretecek.
+
+467
+01:51:05,340 --> 01:51:09,460
+Bununla ilgili olarak chip select ve write uçlarını uygun şekilde kullanmam gerekecek, evet.
+
+468
+01:51:09,583 --> 01:51:14,283
+Ama baktığımız zaman bu cihaz, I.O uzayında kaç byte'ler kaplıyor?
+
+469
+01:51:17,619 --> 01:51:19,619
+Kaç tane adres ucu var bunun?
+
+470
+01:51:22,619 --> 01:51:23,619
+0 byte?
+
+471
+01:51:26,619 --> 01:51:31,619
+Çok enteresan cevaplar geldi. 0 byte olmaz arkadaşlar.
+
+472
+01:51:32,619 --> 01:51:38,619
+Şu ana kadar kullanmış olduğumuz mesela, 8254 vardı.
+
+473
+01:51:39,619 --> 01:51:43,619
+2 tane adres ucu vardı ama o cihaz bile 252, 4 byte yer kaplıyordu.
+
+474
+01:51:44,916 --> 01:51:52,596
+8255, iki tane adres ucu vardı. Yine o da IO uzayında 4 bayk yer kaplıyor. Bu cihazın kaç tane adres ucu var şimdi?
+
+475
+01:51:55,916 --> 01:51:59,756
+O adres ucundan hareketle de IO uzayında kaç bayk yer kapladığını söyleyelim.
+
+476
+01:52:03,572 --> 01:52:13,572
+Bu cihazın arkadaşlar hiçbir adres ucu yok. Dolayısıyla 0 tane adres ucu var ama 2 üzeri 0 bu cihaz IO uzayında 1 byte'lık yer kaplıyor.
+
+477
+01:52:13,572 --> 01:52:24,572
+Yani biz şöyle diyeceğiz. 8086'lı mikroişlemci sistemde IO uzayında 100H adresine bir tane DAC entegresi yerleştirilmiştir diyeceğiz.
+
+478
+01:52:24,572 --> 01:52:30,188
+Bu cihaz IO uzayında 1 byte'lık yer kaplacak. Bir tane adreslik yer kaplayacak yani.
+
+479
+01:52:30,420 --> 01:52:40,899
+ve bu cihazın hiçbir adres ucu yok, fiziki bir adres ucu yok. Sadece vermiş olduğumuz adres değerine karşılık chip select üretilecek. Bunu da adres çözümleme devresi yapacak.
+
+480
+01:52:40,899 --> 01:52:51,899
+Herhangi bir, mesela 8254'te 4 tane ardışık adres değeri yazıyorduk. Bunda tek bir adres değeri var. Adres ucu olmadığı için bunda...
+
+481
+01:52:52,404 --> 01:53:17,404
+IA uzayında bir byte'lık yer kaplamış olacak. Tamam mı? Bu cihaz bu şekilde çalışıyor. Nasıl çalışacakmış yani? Bu cihazı chip select ettikten sonra, data uçlarına bir yazma işlemini yaptığım zaman, belirli bir süre sonra analog output ucunda bizim göndermiş olduğumuz veriye karşılık olarak bir analog gerilim değeri üretilecek. Devre bu şekilde çalışıyor.
+
+482
+01:53:20,724 --> 01:53:23,624
+Bununla ilgili sormak istediğiniz bir şey var mı? Burası önemli çünkü.
+
+483
+01:53:38,836 --> 01:53:50,176
+Şimdi bunun uçlarına bakacak olursak, dediğim gibi Black Box gibi düşündüğümüz vakit bizim için önemli olan uçlar, chip select ucu cihazı aktif yapıyor.
+
+484
+01:53:51,028 --> 01:54:01,428
+Diğer uçları da ilgili şekilde biz zaten baştan koşullandırdık. Yani o black box içerisinde açık mavi ile çizdiğim alan için düşünün. Oradaki bütün sinyal koşullandırmalarını yapmış durumdayız.
+
+485
+01:54:01,428 --> 01:54:10,228
+Dolayısıyla mesela right 1 ve right 2 uçları var ama biz bunları uygun şekilde birleştirip dışarı tek bir right ucu olarak çıktığımız için
+
+486
+01:54:10,228 --> 01:54:18,228
+şuradaki görmüş olduğunuz right ucu bu cihazın yazma ucuymuş gibi düşüneceğiz. Onun haricinde başka bir işlem yapmamıza gerek yok.
+
+487
+01:54:18,256 --> 01:54:32,016
+Yine bu cihazın data uçları, data input 0'dan data input 7'ye kadar 8 tane uç. Dolayısıyla bunlar mikroişlemcinin veri yoluna bağlı olacak.
+
+488
+01:54:32,016 --> 01:54:43,376
+Bunun dışında referans ucuna eksi 5 volt bağlıyoruz. Çünkü az önceki yapmış olduğumuz hesapta hatırlayın, o pump'un bu şekilde bağlanması evren kuvvetlendiriciydi. Yani ne demek?
+
+489
+01:54:44,148 --> 01:54:54,307
+Başına bir eksi işareti koyuyor. O yüzden dolayı eğer ki biz referans değerimizi 5 volt değil de eksi 5 volt seçersek, bu durumda çıktılarımız pozitif gerilim değerleri olur.
+
+490
+01:54:54,307 --> 01:55:06,068
+Az önce hesapladığımızda neydi buradası? 0 ile eksi 5 volt arasında üretiyordu ama referansımızı biz, referansımızı eksi 5 volt seçersek burada, bu şu demek,
+
+491
+01:55:11,380 --> 01:55:21,380
+Kuvvetlendirme miktarı neyse o kadar kuvvetlendirerek çalıştır. Yani biz buraya eksi 5 verdiğimizde özetle çıkacak gerilim değerleri 0 ile 5 volt arasında olur. Onu sağlamış olduk.
+
+492
+01:55:21,380 --> 01:55:33,279
+Bu cihazın bir dalga şeklini inceleyecek olursak, öncelikli olarak cihazın chip select olarak seçilmesi gerekiyor. Cihazı seçtiğimizde...
+
+493
+01:55:33,279 --> 01:55:44,279
+Veri uçlarında değeri ayarladıktan sonra, right işlemini yaptığımızda, belirli bir hesaplama süresinden sonra, stabil gerilim değerini elde ediyoruz.
+
+494
+01:55:44,279 --> 01:55:51,279
+Stabil gerilim değerini elde ediyoruz ve bunu da opamp üzerinden sürerek elde etmemiz lazım.
+
+495
+01:55:51,279 --> 01:55:59,279
+Hani burada görmüş olduğunuz opampın bu şekilde dirençleri vardı ya, bu dirençler aslında devre içerisinde mevcut.
+
+496
+01:55:59,444 --> 01:56:02,043
+Şu entegre içerisinde mevcut, öyle düşünün.
+
+497
+01:56:02,043 --> 01:56:04,844
+Hariçten ama bir opamp bağlamamız gerekecek.
+
+498
+01:56:04,844 --> 01:56:07,444
+Deneyler de bu şekilde verilecek size.
+
+499
+01:56:10,836 --> 01:56:30,836
+Örneğin, bununla ilgili bir tane örnek yapıp dersi bitirelim. 1000H adresine yerleştirilmiş olan bir tane DAC0830 entegremiz var. Bu entegre üzerinde biz şu kodu çalıştırırsak ne olur? Bunu söyleyebilirmiş. Ne yapıyoruz bakın? AL'ye 0 değerini atıyoruz. Bir sonsuz döngü içerisinde...
+
+500
+01:56:32,051 --> 01:56:53,051
+0830 entegresine AL'deki değeri gönderdik. Dalga şekline göre gönderdiğimiz data neyse, o dataya karşılık olarak bir gerilim değerini üretecek. Eğer biz 8 bit ile çalışıyorsak, 8 bit ile çalışıyorsak, ff değerini gönderdiğimizde, bu cihazın 5 volt üretmesini bekliyorum.
+
+501
+01:56:59,988 --> 01:57:08,488
+Arada vermiş olduğumuz Bini değer neyse ona karşılık linear olarak burada da bir V gerilimin üretilmesini bekliyorum. Devre bu şekilde çalışacak zaten.
+
+502
+01:57:08,488 --> 01:57:15,288
+FF vermişsem 5 volt üretecek, göndermişsem 0, 0 göndermişsem 0 volt üretecek. Bu şekilde çalışmasını bekliyorum.
+
+503
+01:57:15,288 --> 01:57:24,488
+Ne yaptık öncelikli olarak? 0 değerini gönderdik. 0 değerine karşılık 0 volt üretti. Birazcık bekledim. AL'yi 1 arttırdım. Tekrar yukarı döndüm.
+
+504
+01:57:24,948 --> 01:57:38,268
+Bu sefer bir değerini gönderdim. Binary bir değerine karşılık bir output üretti. O analog değeri yaktım, biraz sürdüm, bekledim. İkiyi gönderdim, 3, 4, 5, her birini tek tek gönderdim.
+
+505
+01:57:38,268 --> 01:57:49,387
+Bu arada şunu söylememiz lazım. 8 bitlik bir cihaz olduğu için buradaki 0830 entegresi bizim göndermiş olduğumuz değerler mesela
+
+506
+01:57:51,091 --> 01:58:18,551
+AL'deki değerimiz X olsun. Bu X değerini 0830'a gönderdiğimde ve AL'de X artı 1 değerini oluşturup bunu tekrar 0830'a gönderdiğimde elde edeceğim gerilim değerleri arasındaki fark nedir? VX eksi ve X artı 1 veya ters söyleyelim, tersten çıkartalım, büyükten küçüğü çıkartalım.
+
+507
+01:58:19,028 --> 01:58:33,028
+Bu iki değeri gönderdiğimde elde edeceğim gerilim farkı nedir? Yani bir adım data değerimi arttırdığımda elde edeceğim öncekine göre gerilim farkı nedir? Bunu bulabilir miyiz? 8 bitlik bir cihaz.
+
+508
+01:58:35,028 --> 01:58:37,028
+Nasıl söyleyebiliriz bunu?
+
+509
+01:58:40,275 --> 01:58:45,775
+Soruyu anlatabildim herhalde değil mi? Anlaşılmayan bir yer varsa tekrar söyleyeyim.
+
+510
+01:58:46,775 --> 01:58:53,775
+Ben 0830 entegresine x binary değerini gönderdiğimde elde ettiğim analog değer vx olsa
+
+511
+01:58:54,775 --> 01:59:02,775
+ve 0830 entegresine gönderdiğim dijital değer x artı 1 olduğunda elde ettiğim analog değer de vx artı 1 olsa
+
+512
+01:59:02,775 --> 01:59:05,260
+bu ikisi arasındaki fark ne olur?
+
+513
+01:59:18,068 --> 01:59:42,060
+Evet, 5 volt bölü 256 olması lazım. 5 volt değil, 5 volt bölü 256. Çünkü ne demiştik bakın, FF için 5 volt üretmesi lazım, 0, 0 için 0 volt üretmesi lazım. Toplamda 256 adım için 5 voltluk bir renç sağlıyorsam, 1 adım için kaç voltluk renç sağlarım? Oran orantı?
+
+514
+01:59:42,068 --> 02:00:04,887
+5 volt bölü 256'lık bir gerilim farkı oluşur. Tamam, dolayısıyla buradaki devrede de, mesela ilk başta 1 ile başladım. 2, 3, 4, 5, 6, 7, 8, 9, 10. 255'e kadar ulaştım. FF değerini gönderdim. 255 oldu. AL değerini arttırıyorum ya. AL değeri FF'den sonra bir adım daha arttırırsam ne olur?
+
+515
+02:00:10,579 --> 02:00:34,679
+Başladım, arttırdım, arttırdım, arttırdım, arttırdım. Şu nokta, AL'nin FF olduğu durum. Yani gerilim değeri olarak da baktığımızda 5 volta kadar geldim. Bu noktada AL'yi tekrar arttırırsam, çünkü burada sürekli inkrement var. AL'yi tekrar arttırırsam ne olur bu? FFH'dan sonra 1 artı tekrar 0'a düşer.
+
+516
+02:00:35,091 --> 02:00:46,591
+O zaman tekrar 0'a düştüğü için 0'a karşılık analog değerim 0'dı. Yine adım adım arttı, arttı, arttı. 255'e düştüğünde tekrar 0, adım adım arttı, arttı, arttı, tekrar 0.
+
+517
+02:00:46,591 --> 02:00:56,591
+Dolayısıyla elde edeceğimiz analog sinyalin ismi arkadaşlar testere dişi analog sinyal olarak isimlendiriliyor. Böyle bir çıktığı elde etmiş oluruz. Tamam mı?
+
+518
+02:00:56,591 --> 02:01:02,591
+Şimdi bu noktada dersimizi bitireceğim. Lap saati de başlıyor zaten. Diğer tarafa bağlanırsınız.
+
+519
+02:01:03,060 --> 02:01:13,060
+Bu konuyla ilgili sormak istediğiniz bir şey var mı? Önümüzdeki hafta biraz bunu tekrar edip ADC'ye de geçmiş oluruz. Bu noktaya kadar sormak istediğiniz bir şey var mı?
+
+520
+02:01:29,876 --> 02:01:43,996
+Yoksa arkadaşlar, laps seansıyla birlikte devam edeceğiz. Diğer laps saati için bağlantınızı gerçekleştirebilirsiniz. Ben dersi burada bitiriyorum. Haftaya görüşmek üzere.

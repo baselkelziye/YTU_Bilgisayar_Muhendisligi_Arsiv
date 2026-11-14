@@ -1,0 +1,3663 @@
+1
+00:00:21,556 --> 00:00:22,756
+Günaydın arkadaşlar.
+
+2
+00:00:24,435 --> 00:00:26,475
+5-6 dakika sonra başlarız.
+
+3
+00:07:00,660 --> 00:07:02,475
+Merhabalar arkadaşlar.
+
+4
+00:07:08,915 --> 00:07:10,915
+Geçen hafta
+
+5
+00:07:11,915 --> 00:07:16,915
+Arigoritma ile alakalı slide'ları bitirmiştik. Hepinize günaydın.
+
+6
+00:07:16,915 --> 00:07:18,915
+Bu hafta
+
+7
+00:07:18,915 --> 00:07:28,915
+Ağaçlara geçeceğiz. Banu Hoca bunların slide'larını yine duyurmuş da ben deki slide'larda bazı farklılıklar var. Onları ders duvarına ekleyeyim.
+
+8
+00:07:31,411 --> 00:07:39,851
+Konu sıralamasını ben bu konuda Banu Hoca'ya katılmıyorum. Onun için farklı bir başlangıç yapıp öyle ağaçlara gireceğim.
+
+9
+00:07:41,132 --> 00:07:48,331
+Şimdi biz kümeleri gördükten sonra binary relation ilişkiler konuya bakmıştık sizlerle.
+
+10
+00:07:49,331 --> 00:07:54,811
+Bu konudan türeyen graflar konusu var. O graflardan da türeyen ağaçlar konusu var.
+
+11
+00:07:55,731 --> 00:07:58,931
+Bu şekilde bir geçiş yapmak daha doğru olacaktır.
+
+12
+00:07:59,411 --> 00:08:04,211
+İşte biz bir ikili ilişki de, şu an ekranım geliyor herhalde değil mi arkadaşlar?
+
+13
+00:08:12,084 --> 00:08:24,324
+İkili bir ilişkiyi bu şekilde küme gösterimiyle veya bir matriz gösterimiyle gösterebiliyorduk. Bunun bir diğer yöntemi de grafları kullanmaktı, yönlü graflar.
+
+14
+00:08:25,684 --> 00:08:33,624
+İşte hangi kümeden, hangi elemandan, hangi elemana ilişki varsa yönlü bir grafla, ok işaretiyle bu ilişkiyi gösteriyorduk.
+
+15
+00:08:38,676 --> 00:08:41,036
+Gerçi bunu daha sonra tekrar ederiz.
+
+16
+00:08:44,216 --> 00:08:54,736
+İlişkiler biliyorsunuz, matriz gösteriminde eğer iki değişken arasında, iki eleman arasında ilişki varsa bunu birle, yoksa sıfırla gösteriyorduk.
+
+17
+00:08:58,196 --> 00:09:03,196
+ve bunun daha genel hali Directed Graph dediğimiz D-graph'larla göstermektir.
+
+18
+00:09:04,196 --> 00:09:07,196
+Bu konunun türediği kısım
+
+19
+00:09:07,196 --> 00:09:09,196
+graflar konusu.
+
+20
+00:09:09,196 --> 00:09:15,196
+Grafın önce tanımına bakalım, ondan sonra Ağaç ile ilgileneceğiz.
+
+21
+00:09:16,196 --> 00:09:23,196
+Sadece orada bir kısa hatırlatma yapmış olmak amacıyla relation'lardan bahsettim.
+
+22
+00:09:23,196 --> 00:09:25,196
+Şimdi bir G-graph'ı
+
+23
+00:09:27,091 --> 00:09:36,771
+Köşeler, vertex ve edge'ler, kenarlar kümelerinden oluşan, bu kümeler arasındaki ilişkiyi gösteren bir yeni kümedir.
+
+24
+00:09:38,531 --> 00:09:47,152
+Burada olduğu gibi bizim V'ler kümemizde A, B, C ve D var ve bunların arasındaki kenarlar E'ler kümesi oluyor.
+
+25
+00:09:48,432 --> 00:09:51,771
+Bu V'ler arasındaki ilişkiyi gösteren, kenarları belirten...
+
+26
+00:09:52,755 --> 00:09:57,875
+ilişkiye graf diyoruz. Özel bir ilişki türü, relation türü.
+
+27
+00:10:00,955 --> 00:10:07,596
+Bu her kenarın uç noktaları adı verilen, kendisiyle ilişkili bir veya iki köşesi oluyor.
+
+28
+00:10:08,635 --> 00:10:15,035
+Bir kenar graftaki bu köşeleri birbirine bağlayan ve iki köşe arasında bir ilişki gösteren eleman oluyor.
+
+29
+00:10:15,275 --> 00:10:19,836
+Yani A'dan B'ye bir ilişkinin varlığı ne olacak?
+
+30
+00:10:20,148 --> 00:10:28,908
+bir kenarı gösterecek. Bu ilişki ne demektir? İşte A şehrinden B şehrinde bir yol olabilir.
+
+31
+00:10:30,587 --> 00:10:39,468
+Bilgisayarcı açısından baktığımızda sosyal paylaşımlarda işte A kişisiyle B kişisi arasındaki bir arkadaşlık ilişkisi olabilir sosyal medyada.
+
+32
+00:10:40,548 --> 00:10:41,748
+Ondan sonra
+
+33
+00:10:43,347 --> 00:10:46,587
+herhangi iki öğrenci arasındaki
+
+34
+00:10:47,220 --> 00:10:51,820
+Benzerlikler olabilir ve bu ilişkinin üzerine bir sayı değeri yazılır.
+
+35
+00:10:52,379 --> 00:10:55,080
+İşte 3 gibi, 5 gibi veya 0 ila 100 arasında.
+
+36
+00:10:55,879 --> 00:11:02,820
+Örneğin kod benzerliği, ödev benzerliği bakıyoruz veya öğrencilerin çalışma alanlarının benzerliğine bakıyoruz.
+
+37
+00:11:03,940 --> 00:11:09,340
+Dersleri alan öğrenciler arasındaki ilişkiye bakıyoruz. Bunlar hep grafın uygulamalarıdır.
+
+38
+00:11:10,707 --> 00:11:25,528
+kenarlar veya düğümler veya köşeler, vertex dediğimiz kümesinden kenarlar kümesiyle oluşturulan ilişkiler ile genel olarak graf diyeceğiz. Bu konunun detaylarını bir sonraki chapter'da inceleyeceğiz.
+
+39
+00:11:26,207 --> 00:11:37,347
+Şimdi graf dediğimiz şey şöyle bir şey, böyle bir yapı görsel olarak. Burada görüyorsunuz bir sürü kapalı çevrimler var. İşte şu nokta bir kapalı çevrimdir.
+
+40
+00:11:38,868 --> 00:11:43,868
+Ondan sonra şurası bir kapalı çevrim, burada başka bir kapalı çevrim var.
+
+41
+00:11:43,868 --> 00:11:48,868
+Burada, burada, burada ve bir sürü kapalı çevrim olduğunu görüyoruz.
+
+42
+00:11:48,868 --> 00:11:55,868
+Bu grafın kapalı çevrim olmayan haline, özel bir haline de ağaç diyeceğiz arkadaşlar.
+
+43
+00:11:55,868 --> 00:12:04,868
+Yani ağaçlar da bir graftır. Farklılığı kapalı çevrim içermemesi gerekir. Kapalı çevrim varsa o ağaç olmaz.
+
+44
+00:12:05,812 --> 00:12:13,812
+Öncelikle o kısmı inceleyelim. Daha sonra dediğim gibi bunun detaylarına ve uygulamalarına gelecek dersimizde gireceğiz.
+
+45
+00:12:13,812 --> 00:12:19,812
+Şimdi öncelikle ağaçlar, slide'ını bir açayım.
+
+46
+00:12:26,388 --> 00:12:51,968
+Bu arada bir Ocak haftası tatil sebebiyle dersimiz yokmuş. Bugün Bane Hoca ile konuştuk, bir duyuru yapmış olalım. Ondan sonraki hafta, 8 Ocak oluyor, bir test sınavı yapacağız, ikinci vize gibi. Ondan sonra da zannediyorum dersler bitiyor, başka dersimiz kalmıyor. Yani bu hafta dışında dört haftamız var diye biliyorum.
+
+47
+00:12:52,596 --> 00:13:09,076
+Onun da bir haftası tatile gidiyor. Bizim size anlatacağımız ağaçlar, graflar, kromatik polinomlar ve finite state machine konuları var. Bunları bitireceğiz. Eğer yetiştiremezsek bir ek ders yaparız. Bütün konular yetişsin diye.
+
+48
+00:13:10,655 --> 00:13:16,076
+Bir test sınavı olacak. Kaç soru olacağını falan o zaman size tekrar söyleriz. Dersin akabinde de...
+
+49
+00:13:17,587 --> 00:13:28,587
+Bu konuyu yetiştirmek için veya öncesinde sonrasında yine dersimizi yaparız. Ama dediğim gibi ders yetişmezse konular, böyle bir saatlik bir ek ders yapılabilir.
+
+50
+00:13:30,587 --> 00:13:34,988
+Katılamayanlar, ders saatinde de yapabiliriz yani o hafta.
+
+51
+00:13:35,988 --> 00:13:38,187
+Neyin etkisi? Sınavın etkisi mi?
+
+52
+00:13:38,988 --> 00:13:43,788
+Yani iki vize olacak şekilde, testinde etkisi bir vize olacak şekilde.
+
+53
+00:13:43,892 --> 00:13:50,412
+Ama dönem içi ortalamaya olan, yani diğer vizeyle olan etkisi konusunda şu an için bir karar vermedik.
+
+54
+00:13:51,292 --> 00:13:55,152
+Hocayla konuşuruz, tartışırız, size tekrar bilgi veririz.
+
+55
+00:13:56,052 --> 00:13:59,512
+Ama bir vize notu yerine girilecek sistem arkadaşlar.
+
+56
+00:14:02,152 --> 00:14:06,832
+Şimdi ağaçlar konusuna gelelim. Bizim için ağaçlar neden önemli?
+
+57
+00:14:06,832 --> 00:14:10,832
+Bilgisayar bilimleri açısından birçok uygulamamız var. En basiti...
+
+58
+00:14:11,731 --> 00:14:16,231
+Bizim bu kullandığımız Binary Search Trader falan.
+
+59
+00:14:17,632 --> 00:14:21,632
+Bunların tabii çok çok daha geniş uygulamaları var.
+
+60
+00:14:23,331 --> 00:14:28,531
+Genel olarak bir ağaç nedir diye sorarsak, konuşursak,
+
+61
+00:14:29,432 --> 00:14:33,731
+işte bir root düğümü olan, bu root düğümden
+
+62
+00:14:35,031 --> 00:14:38,831
+alt düğümlere geçiş sağlayan, farklı kenarlar içeren
+
+63
+00:14:39,572 --> 00:14:44,372
+ve bunun belli bir derinliği olan bir veri yapısı, genel bir veri yapısı.
+
+64
+00:14:45,072 --> 00:14:51,072
+Bunun çok özel halleri var. Bunlardan bir tanesi binary tree dediğimiz ikili ağaçlar.
+
+65
+00:14:52,271 --> 00:14:57,072
+Orada olan şey şudur, her bir düğümün en fazla iki tane çocuğu oluyor.
+
+66
+00:14:59,271 --> 00:15:05,271
+Bu dersteki bizim amacımız bunun genel terminolojisini, ağaçlarla alakalı genel terminolojiyi öğrenmek.
+
+67
+00:15:06,227 --> 00:15:09,227
+Daha sonra bazı uygulamalarına bakacağız.
+
+68
+00:15:09,227 --> 00:15:13,227
+Acaba bilgisayar açısından ne farkı, nasıl uygulamalar yapabiliriz?
+
+69
+00:15:13,227 --> 00:15:19,227
+En çok bilinen uygulaması da bizim stacklerle size anlattığımız dönüşümler vardı.
+
+70
+00:15:19,227 --> 00:15:23,227
+Neydi? Infix, Prefix ve Postfix dönüşüm.
+
+71
+00:15:23,227 --> 00:15:29,227
+Orada stack kullanarak biraz daha bu işi zor yapıyorduk. Ağaçlarla bu kısmen daha kolay oluyor.
+
+72
+00:15:29,227 --> 00:15:33,227
+Çünkü stackte yapılabilen operasyon en fazla ekle çıkardı.
+
+73
+00:15:33,748 --> 00:15:44,248
+ekle çıkar sebebiyle çok fazla bir hareket kabiliyetimiz yok. Bu ağaçlar üzerindeki hareket kabiliyeti biraz daha fazla nispeten. Bunun uygulamalarına bakacağız.
+
+74
+00:15:44,248 --> 00:15:56,948
+Ağaçlar üzerinde traverse işlemleri var, onları konuşacağız. Bunun ikili ağaçların uygulaması traverse ile alakalı uygulamalarını ben yapısal programlamada anlatacağım.
+
+75
+00:15:57,556 --> 00:16:09,756
+Orada da Strak'ların ve LinkedDist'e benzer Binary Triller'in uygulaması olarak hala anlatmamamız sebebi, önce şeyde anlatayım, Discrete'de anlatalım.
+
+76
+00:16:10,616 --> 00:16:14,676
+Burada bir teorik olarak görün, ondan sonra da orada uygulamalı görelim.
+
+77
+00:16:15,636 --> 00:16:22,916
+Asıl gerçek uygulamaları da veri yapıları, algoritma analizi derslerinde anlatılıyor, analizleri falan.
+
+78
+00:16:26,611 --> 00:16:34,412
+V ve W düğüm çiftinden oluşan basit bir graftır. Yani iki tane düğümümüz var. Bunlardan oluşan basit bir graftır arkadaşlar.
+
+79
+00:16:35,871 --> 00:16:48,611
+V'den W'ya tek bir yol vardır. Dairesel bir yapı içermez. Yani bir kapalı çevrim olmuyor. Buradan buraya giderken herhangi bir şekilde bir çevrimle karşılaşmıyoruz.
+
+80
+00:16:54,163 --> 00:17:02,743
+bütün düğümlerini ele aldığınızda, bunu bir kapalı, öncelikle kapalı bir çevrim içeren graf gibi düşünelim.
+
+81
+00:17:03,743 --> 00:17:13,923
+Kapalı çevrim içermeyecek şekilde kenarları kaldırdığınızda, yani bakıyorsunuz grafı her bir adımda, grafı ağaç haline getirmek istiyorsunuz.
+
+82
+00:17:14,983 --> 00:17:21,644
+İşte bir kenar sildiniz, tamam oradaki kapalı, işte normalde önceden şurada belki bir kenar vardı, öyle düşünelim.
+
+83
+00:17:22,548 --> 00:17:29,028
+Bu kenarı sildiğim zaman buradaki kapalı çevrimi kaldırıyorum. İşte şurada bir tane kenar varsa onu kaldırırsam oluyor.
+
+84
+00:17:29,887 --> 00:17:37,907
+Bütün asgari, bütün şeyleri kaldırmamız gerekiyor kenarları. Bütün kapalı çevrimler yok olsun.
+
+85
+00:17:38,468 --> 00:17:44,448
+İşte bu bir ağaç. Bunların bir alt kümesi, alt kümesi diye diye dersimizi ilerleteceğiz.
+
+86
+00:17:44,448 --> 00:17:49,768
+Bunlardan bir tanesi köklü olan ağaçlar. Köklü olan ağaç şu demek.
+
+87
+00:17:50,963 --> 00:18:13,304
+Şuradaki düğümler arasında bir alt-üst ilişkisi doğrudan belki görülmeyebilir. En fazla şuradaki kısımlarda, şuradaki kısımlarda görürüz. Bütün bir ağaca bunu ifade edemiyoruz. Fakat şurada baktığımızda her bir düğümün mutlaka bir atası olacaktır gibi bir şey geliyor. Yani düğümler arasında bir seviye ortaya geliyor.
+
+88
+00:18:14,324 --> 00:18:25,423
+Ve bunlardan bir tanesi en üst seviyeli bir düğüm. Şuraya baktığınızda hangisinin üst seviyeli olduğunu tahmin edebilmek veya belirleyebilmek biraz zor bir şey.
+
+89
+00:18:25,884 --> 00:18:34,784
+Çünkü şuraya baktığımızda acaba şu mu daha üst seviyeli, bu mu daha üst seviyeli? Yani gördüğümüz şey belki şu bunların atası olacak.
+
+90
+00:18:34,784 --> 00:18:41,284
+Ama belki bu bunun atası, şu ortadaki de bunun atası.
+
+91
+00:18:41,971 --> 00:18:48,271
+İşte buradaki belirsizlik, tamam bu bir ağaç ama şurada baktığınızda bu belirsizlik ortadan kalkıyor.
+
+92
+00:18:49,451 --> 00:18:57,951
+Belli bir düğümden türetilmiş ve en üst dereceli olarak belirlenmiş ağaçlara köklü ağaçlar diyoruz.
+
+93
+00:19:03,604 --> 00:19:11,483
+Herhangi bir düğümün seviyesi o düğümün bulunduğu yerden ağacın köküne olan uzaklığı, uzunluğu veriyor arkadaşlar.
+
+94
+00:19:12,244 --> 00:19:17,063
+Örneğin bu düğümün ağacın köküne olan uzunluğu nasıl bulunur?
+
+95
+00:19:17,063 --> 00:19:24,043
+İşte buradan bir üst düğüme geçiyorum bir adımda, sonra bir adımda da ikinci üst düğüme geçiyorum ve ruta ulaşıyorum.
+
+96
+00:19:24,724 --> 00:19:27,284
+O zaman bunun derecesi iki olarak verilecek.
+
+97
+00:19:30,228 --> 00:19:57,228
+O ağacın maksimum seviyeye olan düğümünün değeri, yani her bir düğümün seviyesine yüksekliğine bakıyoruz, I değerlerine. Bunlardan en büyüğü ağacın yüksekliğini veriyor. Yani en fazla kenar, en derin ne kadar kenar var onu tayin etmek için kullanılan bir şeydir. İşte burada baktığımızda 1, 2, 3, şu iki düğüm için 3 erli.
+
+98
+00:19:57,299 --> 00:20:08,099
+bir durum var. İşte şunlar için ikişerli bir durum var. Bunlar da birdir, şu da birdir, şunlar da ikişerlidir. Bunlar arasındaki en yüksek uzaklık üç olarak veriyor.
+
+99
+00:20:08,099 --> 00:20:23,099
+Noktalar arasındaki çizgilerin uzunluklarının bir anlamı var mı? Yok. Burada öyle bir anlam yok. Graflarda, hani çizginin uzunluklarından ziyade çizgiler üzerine yazılan sayısal değerlerin bir anlamı vardır. Ağaçlarda
+
+100
+00:20:23,859 --> 00:20:49,279
+doğrudan bir anlam yüklenmiyor bunlara. Yani ben ağırlıklı bir ağaç, weighted ağaç diye bir şey şu ana kadar görmedim. Ama graflarda o bahsettiğimiz şeyden konuşacağız. Çizginin uzunluğundan ziyade çizgi uzunluğu bir illüzyon olabilir. Yani şöyle de söyleyebiliriz. İşte şu bir graf. Burası 3 birim, burası 8 birim, burası 6 birim. İşte yol uzunluğu olarak düşünürsek.
+
+101
+00:20:49,615 --> 00:20:54,655
+Çizgilerin üzerine belirtilen ağırlık değerleri bizim için bir anlam ifade edecek.
+
+102
+00:20:55,496 --> 00:20:58,936
+Graflarda var, ağaçlarda böyle bir şeyden söz edemiyoruz.
+
+103
+00:21:00,355 --> 00:21:04,875
+Şimdi bunun terminolojisine hakim olmak gerekiyor arkadaşlar.
+
+104
+00:21:05,115 --> 00:21:13,256
+Çünkü bilgisayar bilimlerinde ve veri yapılarında hatta işletim sistemlerinde birçok yerde ağaçlar karşımıza çıkacak.
+
+105
+00:21:14,291 --> 00:21:26,652
+Dolayısıyla bu ağaçların karşısında çıkması sebebiyle sizin problem çözerken ve algoritma geliştirirken neyin ne olduğunu bilmeniz gerekiyor.
+
+106
+00:21:28,132 --> 00:21:34,371
+Bunlardan bir tanesi parent veya root dediğimiz en üst düzey olan anne baba.
+
+107
+00:21:42,259 --> 00:21:51,319
+parent olarak söylenir. Çünkü bununla, bunun işte şu üç kardeşin bir parentıdır. İşte şu iki kardeşin parentı da budur diye. Ruth bir tane olacak ama.
+
+108
+00:21:52,360 --> 00:22:05,039
+Ancaster ata dediğimiz, her bir düğümün bir üst düğümündeki düğümü ifade ediyor. İşte şuradaki üçün bunu, bu düğümü. Bu iki düğümün bir üst düğümü olan bu.
+
+109
+00:22:09,683 --> 00:22:13,743
+Daha sonra gelen, bir alt seviyede gelen düğümleri ifade eder, çaylıklar.
+
+110
+00:22:14,804 --> 00:22:20,743
+Torun dediğimiz şey, en alt seviyede söylenen düğümleri ifade ediyor.
+
+111
+00:22:21,483 --> 00:22:27,764
+Aynı seviyede düğümleri de sibling dediğimiz kardeş düğümleri söylüyoruz.
+
+112
+00:22:28,963 --> 00:22:35,103
+Aynı seviyede olması, şunlar kendi içerisinde iki kardeş, bunlar kendi içerisinde üç kardeştir.
+
+113
+00:22:36,276 --> 00:22:44,076
+Yani yükseklikler açısından söyleyecek olursak, ruta olan yüksekliği aynı olan düğümler kardeş oluyorlar.
+
+114
+00:22:45,836 --> 00:22:51,615
+Terminal düğüm, herhangi bir çocuğu olmayan düğümler olarak ifade edilir.
+
+115
+00:22:52,516 --> 00:22:55,716
+Genellikle en alttaki düğümleri ifade edebiliriz.
+
+116
+00:22:56,675 --> 00:23:00,256
+Internal düğümler de şuradaki olduğu gibi ara düğümlerdir.
+
+117
+00:23:03,604 --> 00:23:22,024
+Herhangi bir kenarın kopartılmasıyla, şuradaki kenarı kopartsak, oluşan yeni bir ağaç, oluşacak olan yeni bir ağaç, alt ağaç olarak geliyor. Biz bunu aritmetiksel ifadelerde veya ağaç gezme işlemlerinde çok çok kullanacağız.
+
+118
+00:23:26,003 --> 00:23:39,683
+Ara ve internal, ara ve uç düğümler konusuna gelince, bakın, root dahi bir ara düğümdür. Çünkü en az bir çocuğa sahip olan düğümlere internal düğüm diyoruz.
+
+119
+00:23:40,723 --> 00:23:49,384
+Terminal düğümde herhangi bir çocuğu olmayan düğümdür. İşte şuradaki en sondakileri terminal, diğerleri ara düğüm olarak söyleniyor.
+
+120
+00:23:53,875 --> 00:24:03,596
+Ağacın bir alt kümesi, yani kenar koparmak herhangi bir belli parçasını, şuraları kopardığınızda oluşan şu koyu renkli ağaç bir alt kümedir.
+
+121
+00:24:06,675 --> 00:24:17,675
+Bir T ağacının alt kümesi, T üstü diye ifade edecek olursak, kenarları yani vertexler ve edgeler ne oluyor?
+
+122
+00:24:17,779 --> 00:24:29,220
+t ağacının vertexlerinin alt kümesi, t üstü ağacının vertexleri, t ağacının kenarlarının alt kümesi, t üstü ağacının kenarları olarak ifade ediliyor.
+
+123
+00:24:32,099 --> 00:24:44,079
+Bunların karakteristiği, özellikleriyle alakalı bazı kurallar, işte t en düğümlü bir graf ise aşağıdakiler doğrudur, t bir ağaçtır.
+
+124
+00:24:45,491 --> 00:24:51,912
+T bağlantılı ve döngü içermeyen bir ağaçtır, olmak durumdadır.
+
+125
+00:24:52,592 --> 00:25:00,531
+T bağlantılı ve n-1 tane kenara sahiptir. N tane düğüm varsa n-1 kenar olacak.
+
+126
+00:25:01,451 --> 00:25:09,572
+T acyclic ve n-1 kenara sahip olacak. Bu özellikleri sağladığında ağaç özelliğini kontrol etmiş oluyoruz.
+
+127
+00:25:10,963 --> 00:25:22,864
+Demek ki en tane düğüm varsa, üç tane düğüm için üç tane kenar çizersem ağaç olmaktan çıkar. En eksi bir tane kenara sahip olacak. Bunu kontrol edeceğiz.
+
+128
+00:25:24,584 --> 00:25:35,324
+Şimdi yine bunun bir alt kümesi dediğimiz, her bir ağaçta, ağaçta her bir düğümün en fazla iki çocuğa sahip olduğu durum binary triler.
+
+129
+00:25:36,307 --> 00:25:41,428
+ve bunun üzerine biz bilgisayar bilimi olarak birçok uygulama geliştirmişiz.
+
+130
+00:25:42,708 --> 00:25:47,307
+Bir düğüm ya sıfır çocuğa ya bir çocuğa veya iki çocuğa sahip olacak.
+
+131
+00:25:47,307 --> 00:25:50,548
+İşte şuradaki çocuğun, şuradaki düğümün herhangi bir çocuğu yok.
+
+132
+00:25:51,028 --> 00:25:54,468
+Bunun iki çocuğu var, şunun bir çocuğu var.
+
+133
+00:25:54,468 --> 00:25:58,788
+İşte bu ifade bize binary türü oluyor.
+
+134
+00:25:58,788 --> 00:26:01,508
+Bir ağaç için minimum kaç düğüm gerekir?
+
+135
+00:26:03,284 --> 00:26:30,044
+düğümün herhangi bir sınırı yok. Yani sen ne kadar düğüm eklersen şunları, not eklersen o kadar olur. Herhangi bir sınır yok. Ama düğüm sayısına göre kenar sayısının bir şeyi vardır. Ha, şu ağaç yapısı için tek bir şeyden, belki bir ağaç ifade etmez tek bir düğümden. Onu söylemek istiyorsan o zaman en az iki tane şey olacak ki bu bir ağaç olsun.
+
+136
+00:26:30,836 --> 00:26:32,748
+Herhalde bunu kastetmek istedim.
+
+137
+00:26:38,099 --> 00:26:52,099
+tek bir düğüm olursa, yani ona biz doğrudan hani graf deyip herhangi bir çünkü alt üst ilişkisi olmuyor tek bir düğümde, bunu ağaç haline getirmek için iki tane düğüm söyleyebiliriz.
+
+138
+00:26:52,099 --> 00:27:04,099
+Şimdi buradaki graf teorisine, konseptlerine baktığımızda ağayı özel olarak root ile isimliyoruz. A aynı zamanda bir parent'tır. Kimin parent'ı? B ve C'nin parent.
+
+139
+00:27:04,723 --> 00:27:12,843
+B sol çocuk oluyor. C de A'nın sağ çocuğu oluyor. Left side, right side.
+
+140
+00:27:14,503 --> 00:27:27,823
+D herhangi bir şekilde sağ çocuğa sahip değil. Sadece sol çocuğa sahip. Aynı şekilde H'nin sol çocuğu yok. Sağ çocuğu var.
+
+141
+00:27:31,519 --> 00:27:40,759
+yani terminal olanlar ve ı yapraklar olarak ifade ediyor. Bu yaprak şeyinde, terminal önerjisinde kullanıyoruz arkadaşlar.
+
+142
+00:27:42,399 --> 00:27:45,679
+Basittir, çok fazla karmaşık şeyler değil.
+
+143
+00:27:47,059 --> 00:27:50,500
+Şimdi biz bu ifadeyi, ağaçları,
+
+144
+00:27:53,019 --> 00:27:54,919
+steklerde de gördüğümüz şekilde,
+
+145
+00:27:56,819 --> 00:28:23,899
+kullanıyoruz. Şimdi onu önce şurada ifade edeyim. Ondan sonra geçelim. Şimdi bizim temel olarak ifadelerin yazımında üç farklı şeyimiz vardı. Birincisi A artı B. Ben bu şekilde kodlamanızı tavsiye ederim demiştim. Artı AB. AB artı. Buna biz ne diyorduk? Operatör ortadayken infiks diyorduk.
+
+146
+00:28:24,596 --> 00:28:33,655
+Operatör baştayken pre diyorduk. Pre zaten ön demekti. Buna da postfix diyorduk. Post da son demekti.
+
+147
+00:28:36,296 --> 00:28:48,428
+Genel olarak arkadaşlar, ağaçlara yerleştirme, yani adding, infix ifadelerle yapılıyor. Buna biz...
+
+148
+00:28:49,107 --> 00:28:53,227
+Compiler teorisinde arkadaşlar parsing işlemi diyoruz.
+
+149
+00:28:54,087 --> 00:28:57,807
+Parsing of mathematical statements.
+
+150
+00:28:58,727 --> 00:29:02,187
+Hatta sadece mathematical statementlar pars edilmez.
+
+151
+00:29:03,687 --> 00:29:08,567
+Herhangi bir programlama statementı da pars edilir.
+
+152
+00:29:09,667 --> 00:29:12,227
+İşte a eşittir a artı 5.
+
+153
+00:29:13,227 --> 00:29:16,587
+Önce a artı 5 yapılacak, sonra atama yapılacak gibi.
+
+154
+00:29:16,980 --> 00:29:18,160
+Şimdilik bunu geçelim.
+
+155
+00:29:22,708 --> 00:29:40,067
+Şimdi bu atama işlemlerinde biliyorsunuz ki infiks ifadeler, derste konuştuk, değerlendirilmesi açısından zordu. Özellikle stekte ne yaptık? Infiks ifadeyi iki tane stekle değerlendirmiştik.
+
+156
+00:29:41,448 --> 00:29:48,067
+Onun için neyi kullanıyorduk? Prefiks veya posfiks kullanıyorduk. Prefiks ve posfiks'i de dönüştürmek gerekiyordu.
+
+157
+00:29:48,564 --> 00:29:58,524
+Şimdi bu işlemi stack ile yapabilmek nispeten zordu. Burada daha kolay bir şekilde binary trilerle yapacağız.
+
+158
+00:29:59,284 --> 00:30:06,164
+Şimdi bir ifade binary tree'ye nasıl dönüştürülür? Öncelikle buna bakmamız lazım.
+
+159
+00:30:07,044 --> 00:30:11,424
+Daha çok arkadaşlar ağaca adding into tree diyelim buraya.
+
+160
+00:30:14,067 --> 00:30:22,067
+infix ifade üzerinden ekleme yapılıyor dedik. Ve bu ağacın parent düğümleri root başta olmak üzere
+
+161
+00:30:22,067 --> 00:30:28,507
+nasıl ekleniyor? Operatörler parent'larda oluyor. Operatör
+
+162
+00:30:32,468 --> 00:30:37,827
+Operantlar, child düğümlerde oluyor genellikle.
+
+163
+00:30:40,028 --> 00:30:46,347
+Child düğümlerden kastederken, terminal olan düğümlerde olacak yani operantlar.
+
+164
+00:30:47,668 --> 00:30:54,768
+Buradaki örneğe göre bakarsak, buna göre kodlarsanız, A burada, plus burada, B burada.
+
+165
+00:30:59,059 --> 00:31:25,739
+eksi c gibi bir şey yazacak olsaydım, iki tane operatör içeren bir ağaç, üç tane de herhangi bir çocuğu olmayan terminal düğümlere ihtiyacım var. Ağaçta iki tane parent, şu örnek için, üç tane child. Ama bu childlar özelliği terminal olacak.
+
+166
+00:31:27,188 --> 00:31:33,387
+Yani şuradaki terminolojiye göre gidersek internal ve external demiştik ya.
+
+167
+00:31:40,211 --> 00:31:46,551
+Internal'lar operatör, Terminal'lar operant olacak şekilde düzenlenmesi lazım.
+
+168
+00:31:48,011 --> 00:31:52,831
+Bu ne için gerekli? Ağaç üzerinde dönüşüm için olması gereken bir şarttır.
+
+169
+00:31:55,571 --> 00:31:58,251
+Şuraya Internal diyelim.
+
+170
+00:32:00,311 --> 00:32:02,172
+Buraya da Terminal diyelim.
+
+171
+00:32:04,231 --> 00:32:06,652
+Şimdi bunu elde ettikten sonra
+
+172
+00:32:07,380 --> 00:32:10,320
+Bunu genellikle kitaplarda ezberletirler arkadaşlar.
+
+173
+00:32:11,460 --> 00:32:16,100
+Şimdi biz ağacı öğrendikten sonra buna root demiştik.
+
+174
+00:32:18,380 --> 00:32:21,820
+Şunlar da kendi içerisinde eğer çocukları olsaydı root olabilirdi.
+
+175
+00:32:21,920 --> 00:32:23,460
+Buna left demiştik.
+
+176
+00:32:25,060 --> 00:32:26,420
+Buna right demiştik.
+
+177
+00:32:27,640 --> 00:32:30,360
+Genellikle infiks ifadeyi şu şekilde ezberletirler.
+
+178
+00:32:31,920 --> 00:32:33,940
+A plus B infiks ifade.
+
+179
+00:32:34,900 --> 00:32:49,079
+root, left, pardon root değil, left, root, right diye ezberletir. Hiç ezberlemenize gerek yok.
+
+180
+00:32:50,059 --> 00:32:57,440
+A artı B'yi öğrenin mantığını, artı yukarıda olacak, A solda olacak, B sağda olacak. Yani normal bizim yazım usulümüz.
+
+181
+00:32:58,299 --> 00:33:00,500
+Buradan yola çıkarak diğerlerini türetirsiniz.
+
+182
+00:33:01,332 --> 00:33:16,832
+Buradan yola çıkarak o zaman şu yazımı şey yapalım. Prefix için ne diyebiliriz? Prefix ifade, operatör önceydi. O zaman root'a gideceğiz önce. Sonra left'e gideceğiz. Sonra right'a gideceğiz.
+
+183
+00:33:17,952 --> 00:33:21,572
+Root, left, right bize prefix'i söyleyecek. Artı abi.
+
+184
+00:33:26,963 --> 00:33:40,763
+olacak şey de left, right ve root olarak yazılacak. Bu postfix'in bir de reverse'u vardı. Postfix'e biliyorsunuz Polish Notation demiştik.
+
+185
+00:33:42,903 --> 00:33:52,703
+Reverse postfix de önce right'ı yazıyor, sonra left'ı yazıyor, sonra root'ı yazıyor.
+
+186
+00:33:53,875 --> 00:34:20,596
+Bu şeyden yola çıkarak arkadaşlar bütün matematiksel ifadeleri yazabiliyoruz. Örneğin şuradaki prefiks ifadeyi koşturacak olursak ne olacak? Önce root'u yazacakmışım. Root'ta ne var? Artı var. Sonra left'i yazacakmışım. Left'te ne var? A var. Sonra right'ı yazacakmışım. Right'ta ne var? B var. Bakın bu ifade recursive olabilir. Yani öyle bir ağaçla karşılaşabiliriz ki artı.
+
+187
+00:34:21,460 --> 00:34:34,380
+eksi A, B, çarpı, C, D. Böyle bir ağaç.
+
+188
+00:34:35,579 --> 00:34:43,980
+Bunun, bu ağacı verip, işte, prefiks notasyonunu veya postfiks notasyonunu isteyebilir.
+
+189
+00:34:48,884 --> 00:34:57,083
+Ne yapar? Yaptığımız yani stekte gördüğümüz bütün o ikili düğüm, ikili birbirine dönüşümlerin hepsini buradan yapabiliriz.
+
+190
+00:34:58,023 --> 00:35:02,623
+Önemli olan ağaca verileri doğru bir şekilde yerleştirmektir. Şundan bakalım ondan sonra o örneğe bakarız.
+
+191
+00:35:04,443 --> 00:35:11,543
+Burada baktığımızda left'e gidecekmişiz önce. Şimdi left'e gittiğimde kontrol etmem gereken şey left'in çocuğu var mı?
+
+192
+00:35:12,144 --> 00:35:15,644
+Eğer left'in çocuğu olsaydı onun bir daha left'ine bakacaktım.
+
+193
+00:35:16,436 --> 00:35:30,735
+Left'e geldiğinde bunun çocuğu yok diyorum. O zaman A'yı yazacağız. Sonra right'a geliyorum. Çocuğu var mı? Yok. B'yi yazacağız. Sonra root'a gidiyorum. Root zaten doğrudan bir üst seviye. Artıyı yazacağım.
+
+194
+00:35:33,115 --> 00:35:39,536
+Reverse Polish Notation'da da B, A, Artı şeklinde bir yazılım oluyor.
+
+195
+00:35:40,275 --> 00:35:43,255
+Şimdi bana normalde şöyle bir matematiksel ifade verilir.
+
+196
+00:35:43,376 --> 00:35:50,956
+A-B çarpı, o da genellikle parantezlerle verilir, C çarpı D.
+
+197
+00:35:52,135 --> 00:35:54,775
+Bu ifadeyi, bunun infiks olduğunu biliyoruz.
+
+198
+00:35:54,775 --> 00:36:05,916
+Bunun postfiks veya prefiks yazılımını ağaç kullanarak yapın denirse, yapmanız gereken birinci şey bu ifadeyi ağaca dönüştürmektir.
+
+199
+00:36:07,027 --> 00:36:14,287
+Ağaca dönüştürdükten sonra POSFIX veya PREFIX'in mantığından yola çıkarak ezberleme yapmayın diyorum.
+
+200
+00:36:14,587 --> 00:36:18,867
+İşte A artı, artı AB veya AB artı demek istendiğindeki kastım bu.
+
+201
+00:36:19,627 --> 00:36:22,167
+Ne yapacağız? İkinci adımda mesela PREFIX'e bakalım.
+
+202
+00:36:24,427 --> 00:36:28,527
+Şimdi ben bunu ağaç verilmeseydi önce ne yapacaktım?
+
+203
+00:36:29,447 --> 00:36:31,407
+Arkadaşlar ağacı vermediğimi kabul edelim.
+
+204
+00:36:32,724 --> 00:36:58,704
+ikili bir ağaca yerleştirmem gerekiyordu. Şimdi A eksi de B diye bir şey varmış. O zaman A budur, B budur. İnfiks olduğu için böyle bir şey yapacağım. Şu da eksidir. Ağacın bir tarafı bu. Şimdi burada bir şey var. Bir de burada başka bir şey var. Başka bir terim var. Aradaki çarpı o zaman bunun atası olacak.
+
+205
+00:36:59,103 --> 00:37:21,023
+Sağ taraftaki bir şey de bu işlemin devamı olacak. Fakat burada baktığımda bu ifade bir başka matematiksel ifadeçiyor. O zaman öncelikle bunu kendi içinde çözmem lazım. Ne yapacağız? Ortadaki ifadeyi ağaca yerleştiriyorum. Sol tarafına C'yi, sağ tarafına D'yi yerleştiriyorum. Burayı anladık mı?
+
+206
+00:37:23,572 --> 00:37:42,492
+Örneğin şöyle bir matematiksel, daha karmaşık bir ifade yazalım. İsterseniz siz yazın, ona göre çözelim. Bir tane matematiksel karmaşık bir şey yazın. Tabii 50 karakterli olmasın da böyle 7-8 tane biriniz yazsın bakalım ona göre. Ben şimdi kafamdan hep aynı şeyleri ezberlemiş gibi yazmış olmayayım.
+
+207
+00:37:42,771 --> 00:37:45,512
+Sınavdaki örnek varsa hocam açıkta belki olabilir.
+
+208
+00:37:45,512 --> 00:37:49,872
+Evet, güzel söyledin. Bakalım ona hemen.
+
+209
+00:37:58,291 --> 00:38:00,291
+Ayrık sınavlar
+
+210
+00:38:02,072 --> 00:38:03,291
+Bize 1
+
+211
+00:38:04,532 --> 00:38:06,872
+Tamam [öğrenci] senin dediğinize bakalım
+
+212
+00:38:10,675 --> 00:38:12,395
+Mesela sınavdaki şuymuş.
+
+213
+00:38:30,356 --> 00:38:31,115
+şuna bakalım.
+
+214
+00:39:33,139 --> 00:39:35,299
+Arkadaşlar, zoom gitti geldi.
+
+215
+00:39:37,420 --> 00:39:39,179
+Bağlantıda bir problem var herhalde.
+
+216
+00:39:43,155 --> 00:39:45,708
+Herkes mi gitti sadece ben mi gittim acaba?
+
+217
+00:39:50,835 --> 00:39:53,755
+Evet, devam edelim. Tamamdır.
+
+218
+00:39:57,204 --> 00:40:05,404
+Tamam. Okulun interneti yine arıza yapıp duruyor. Şimdi A ve B, A artı B'yi şu şekilde yazacağız.
+
+219
+00:40:10,132 --> 00:40:21,132
+Daha sonra bir operatör daha var. Şimdi bu operatörün öncelik-sonralık ilişkisi yok da ama mecburen, yani bunun yanına bir düğüm yazamıyoruz.
+
+220
+00:40:21,132 --> 00:40:34,124
+Diyeceğim ki şöyle bir eksi ve bu c olacak. Buraya kadarki kısım böyle. Bundan sonra ne var? Çarpı, yani çarpı dersek x üzeri
+
+221
+00:40:35,860 --> 00:40:44,720
+x üzeri 1 bölü 2. Genel olarak yaptığımız şey buydu. Şimdi çarpı işlemini yapacağız.
+
+222
+00:40:46,340 --> 00:40:59,519
+C ile. Dolayısıyla şu eksiyle birlikte aynısı yani önce bu taraf tamamlanacak. Daha sonra çarpmayı yapacağız. O zaman çarpma burada ayrı bir işlem.
+
+223
+00:41:00,880 --> 00:41:03,360
+Çarpmanın sol tarafı şurası.
+
+224
+00:41:03,923 --> 00:41:06,264
+Sağ tarafı şurada yapacağımız şu işlem.
+
+225
+00:41:07,844 --> 00:41:09,783
+Çarpmanın sol çocuğu ne oluyor o zaman?
+
+226
+00:41:10,703 --> 00:41:12,503
+X dediğimiz şey oluyor, şu düğüm oluyor.
+
+227
+00:41:15,023 --> 00:41:16,023
+Sağ çocuğu ne oluyor?
+
+228
+00:41:17,724 --> 00:41:19,083
+Pardon, sol çocuğu.
+
+229
+00:41:19,623 --> 00:41:20,023
+Öyle değil.
+
+230
+00:41:37,715 --> 00:41:38,435
+kalem
+
+231
+00:41:39,435 --> 00:41:40,715
+bir saniye yazmıyor
+
+232
+00:41:45,331 --> 00:42:04,051
+Şurayı x üzeri 1 bölü 2. Hani biz köklü işlemi tamamlamamış olalım. Çarpmanın sonunda ne var? x var. Bunun sonunda öncelikle bir üst işlemi var. Ha işte 1 bölü m pardon.
+
+233
+00:42:09,715 --> 00:42:11,435
+Bir dakika, bu olmaz.
+
+234
+00:42:11,815 --> 00:42:14,376
+Şartımın aşağısında üst işaret almayacak mı hocam?
+
+235
+00:42:15,496 --> 00:42:16,376
+Alt çocuğu olarak.
+
+236
+00:42:20,019 --> 00:42:47,059
+Evet, şöyle yapalım arkadaşlar önce. Şimdi bu çarpmayı yapmadan önce şunu yapalım. Önce x'i yazacağız. Bu düğümün bir üst işlemi olarak şapka olacak. Yani bir üst işlemi. Sonra bunu alacağımız şey bir bölü n olacak. O zaman burada bir bölme var. Bölmenin sonunda bir var. Sağında n var.
+
+237
+00:42:48,532 --> 00:42:56,412
+Daha sonra bu üst işlemi yapıldıktan sonra elde edeceğimiz bu şey ne olacak? Çarpma olarak yazılacak.
+
+238
+00:42:57,351 --> 00:43:04,532
+Şöyle, yani bu ağacın root'u hangisi? Burası root'tur. En son yapılacak işlem için söyleyebiliriz.
+
+239
+00:43:05,271 --> 00:43:08,811
+Root'un sol tarafında şuradaki toplama, çıkarma, çarpmalar var.
+
+240
+00:43:09,652 --> 00:43:14,152
+Şimdi bunu prefiksini yazalım, oradaki cevapla kontrol edelim.
+
+241
+00:43:16,980 --> 00:43:25,859
+Hiç bakın şuradaki şu fonks şeyleri yazmıyorum, ezberlemiyorum. Prefix benim aklımda şudur arkadaşlar. Ben bunu kendim böyle kodlamışımdır.
+
+242
+00:43:26,500 --> 00:43:43,239
+Artı AB. Yani gidebildiğin kadar nereye git? Route'a git. Operatör dediğimiz ruttu. Gittiğin en son ruttan sonra left'e git. Ondan sonra da ne yap? Right'a git.
+
+243
+00:43:43,860 --> 00:43:47,180
+Cevabını da size şöyle göstereyim.
+
+244
+00:43:48,659 --> 00:43:50,260
+Sınav cevaplarını açayım.
+
+245
+00:43:57,684 --> 00:44:17,444
+Tabi biz şey olarak burada şunu kullanmışız. Prefix cevabı şu olacak. Şunun yerine, şu üst işlemi yerine şunu kullanalım. Şimdi gidebildiğim kadar Root'tan başlıyorum. Ama başka Root'lar varsa Root'a gideceğim. Ve burada yapacağımız iş ne olacak?
+
+246
+00:44:18,579 --> 00:44:36,279
+Pardon, burada gidebildiğimiz kadar root'a değil arkadaşlar. Root'u görünce yazacağız. Root'u gördükten sonra, orada şey, post şeyle karıştırdık diğeriyle. Root'u gördükten sonra left'e gideceğiz. Yani root bu, left bu, right bu, right diyelim.
+
+247
+00:44:37,320 --> 00:44:46,199
+Önce root'ları toparlıyoruz. Root'lardan sonra başka root kalmadıysa left'leri topluyoruz. Başka left kalmadıysa right'ları toplayacağız.
+
+248
+00:44:46,579 --> 00:45:03,159
+yazacağız yani. Şimdi root'a baktığım zaman burada root ne var? Çarpı var. Çarpı bir root olduğu için yazıyoruz. Sonra bu root'un altında başka bir düğüm olmadı. Yani root'un yazacak başka şey yok. Artık left'e gidiyoruz. Left tarafında
+
+249
+00:45:04,052 --> 00:45:25,391
+Kendi içerisinde bir root var mı? Evet, var. Recursive düşüneceğiz burada. Bu kendi içerisinde ayrıca bir root. Çünkü sol çocuğu var, sağ çocuğu var. O zaman eksi yine önce root olduğu için bunu yazıyoruz. Bu root'un solunda bir çocuk var mı? Var. Kendisi buraya geliyoruz. Bunun sağında solunda çocuk var mı? Var. O zaman bu kendisi yine bir root'tur. Bunu yazıyoruz.
+
+250
+00:45:26,547 --> 00:45:53,867
+Bakın tekrar edeyim. Root. Solu var mı, sağ var mı? Var. O zaman ne yaptık? Root'u yazdıktan sonra sola geldik. Bunun solunda sağında çocuk var mı? Var. O zaman bu kendisi bir root'tur. Bunu yazıyoruz. Bunun solunda çocuğu artık bunun sol tarafına geliyoruz. Bunun solunda sağında çocuk var mı? Var. O zaman ne yaptık? Buraya geldik. Art. Şimdi bunun soluna geliyoruz. Artı. Bunun sağında solunda bir şey var mı? Yok. Artık bu root değildir, left'tir.
+
+251
+00:45:54,483 --> 00:45:56,983
+Kendisi zaten left olduğu için A'yı yazdık.
+
+252
+00:45:58,224 --> 00:46:01,523
+Şimdi solunda, sağında çocuk olmadığı için artık left yazdık.
+
+253
+00:46:01,623 --> 00:46:03,523
+Sırada ne geldi? B geldi.
+
+254
+00:46:05,144 --> 00:46:07,744
+Ziyaret ettiklerimizi şu şekilde işaretleyebiliriz.
+
+255
+00:46:10,123 --> 00:46:14,684
+Şimdi bu A ve B'nin root'u hangisi? Artı.
+
+256
+00:46:18,195 --> 00:46:26,115
+Artık kendi içerisinde bir left gibi. Artık bu left bittikten sonra şu üst root'un right'ına bakacağız, C'ye yazacağız.
+
+257
+00:46:27,695 --> 00:46:35,615
+Dolayısıyla bu tarafta bittikten sonra şu üst root'un, bu üstteki root'un left'i bitmiş, bunun right'ına geliyoruz.
+
+258
+00:46:35,695 --> 00:46:42,516
+Şimdi bunun right'ına geldiğimizde right tarafında bunun solu var mı, sağ var mı var. O zaman bu bir root'tur. Önce bunu yazıyoruz.
+
+259
+00:46:44,851 --> 00:46:47,471
+Sonra bunun soluna geçiyoruz.
+
+260
+00:46:47,931 --> 00:46:49,711
+Mecburen sola geçmek zorunda.
+
+261
+00:46:49,971 --> 00:46:54,571
+Bunun sağında solunda çocuk var mı? Yok. O zaman bu doğrudan hani left düğümdür.
+
+262
+00:46:54,831 --> 00:46:56,112
+X'i yazıyoruz.
+
+263
+00:46:56,891 --> 00:47:01,231
+X tarafı left'i bittikten sonra right'a geçiyoruz. Tekrar bir recursive durum var.
+
+264
+00:47:01,491 --> 00:47:07,371
+Right tarafında bölü nedir? Bir root'tur. Çünkü solunda sağında çocuk var. O zaman önce bölüyü yazıyoruz.
+
+265
+00:47:08,211 --> 00:47:20,531
+Bunu yazdıktan sonra left'e geçiyoruz, L yazacağız. Pardon L değil, 1 o. 1 yazacağız. Sonra bunun solunda sağında herhangi bir şey zaten yok. Bundan sonra right'e geçiyoruz, n yazıyoruz.
+
+266
+00:47:21,251 --> 00:47:29,291
+Şimdi çarpı eksi artı ABC üst x bir n. Bölü bir n. Bu prefiks.
+
+267
+00:47:31,211 --> 00:47:35,711
+Bunun postfiksini yazalım, cevabı öyle kopyalayalım. Şimdi postfiks'te de yapacağımız şey
+
+268
+00:47:36,307 --> 00:47:48,527
+A, B, artı. Yani öncelikle gidebildiğin kadar left'e git, ondan sonra gidebildiğin kadar right'e git, ondan sonra operatörü yaz. Yani root'u yaz demektir.
+
+269
+00:47:49,567 --> 00:48:02,967
+Gidebildiğimiz kadar left'e gitmek istiyorsak, bu bir root, solu var, sağ var. Tekrar ne yaptık? O zaman sola doğru gittik. Bu da bir root, solu var, sağ var. Tekrar sola doğru gittik. Bu da bir root, solu var, sağ var. Tekrar sola doğru gittik.
+
+270
+00:48:03,231 --> 00:48:08,231
+Bunun herhangi bir gidilecek tarafı solunda sağında bir şey yok. O zaman bunu ne yapıyoruz? Yazıyoruz burada.
+
+271
+00:48:17,460 --> 00:48:18,420
+A'yı yazdık.
+
+272
+00:48:19,360 --> 00:48:21,160
+A'nın başka gidecek şeyi yok.
+
+273
+00:48:21,780 --> 00:48:23,079
+Ne yapıyoruz? B'yi yazıyoruz.
+
+274
+00:48:25,160 --> 00:48:27,500
+B'yi yazdıktan sonra root'u yazacağız.
+
+275
+00:48:28,079 --> 00:48:29,680
+Left, right ve root.
+
+276
+00:48:29,780 --> 00:48:30,440
+Root'ta ne var?
+
+277
+00:48:31,400 --> 00:48:31,900
+Artı var.
+
+278
+00:48:32,440 --> 00:48:35,360
+Şimdi burası kendi içerisinde bir left'tir arkadaşlar.
+
+279
+00:48:36,620 --> 00:48:38,559
+Bu left'in, right'ın neresi? C'dir.
+
+280
+00:48:40,820 --> 00:48:43,220
+Bu left ve right'ın atası nedir?
+
+281
+00:48:43,220 --> 00:48:43,780
+Eksidir.
+
+282
+00:48:45,619 --> 00:48:54,679
+Şimdi burası bittikten sonra burası bir left. Burası bir left. Ne yapacağız? Bu left'in right'ına geleceğiz. Yani şuraya geleceğiz.
+
+283
+00:48:55,899 --> 00:49:03,699
+Çünkü left'in root'u burası, root'un right'ı burası. Bir üst düğümden bakıyoruz. Right'a geldiğimizde burası bir root.
+
+284
+00:49:04,819 --> 00:49:13,019
+Root'u yazamam. Root'un çünkü altında bir düğüm var. O zaman bu düğüme geldim. Burası left. Bunun altında herhangi bir düğüm yok. O zaman önce burayı yazacağız.
+
+285
+00:49:15,891 --> 00:49:32,231
+Left'in right'ına baktığımızda, left'in right'ında ayrıca bir düğüm var, alt düğüm var. Nedir bu? Bölü. Bu bölünün left'i var, right'ı var. O zaman ne yapıyoruz? Yine left'e geliyoruz. Yani bir. Left'in right'ına geçiyoruz.
+
+286
+00:49:40,911 --> 00:49:44,631
+left olduğunu şey, right olduğunu biliyorum. Bu right'ın root'unu yazıyorum.
+
+287
+00:49:45,931 --> 00:49:46,211
+Yüz.
+
+288
+00:49:47,571 --> 00:49:52,091
+Burası kendi içerisinde right olarak bitti. Bunun root'unu yazıyorum. Yıldız.
+
+289
+00:49:54,951 --> 00:49:57,191
+Cevap da şuymuş. Cevabı kopyalayalım.
+
+290
+00:50:05,523 --> 00:50:12,903
+AB artı C eksi bir en üst, şey bölü üst yıldız.
+
+291
+00:50:15,243 --> 00:50:18,883
+Şimdi bir arkadaşımızın yazdığı o örneği de yapalım.
+
+292
+00:50:20,123 --> 00:50:23,663
+Yalnız o örneği tekrar yazar mısın [öğrenci]?
+
+293
+00:50:25,023 --> 00:50:29,983
+Çünkü chat silindi bağlanıp kopunca.
+
+294
+00:50:31,623 --> 00:50:32,963
+Tamam, teşekkür ederim.
+
+295
+00:50:36,115 --> 00:50:37,415
+Ctrl C
+
+296
+00:50:47,795 --> 00:51:04,496
+Şimdi bu yapı, nasıl biz orada bütün, yani bizim ders notlarında, benim ders notumda bütün durumlar vardı. Yani infiksi, posfiksi veya prefiksi, prefiksi, infiksi veya posfiksi veya posfiksi, bütün ikili dönüşümleri yapabiliyoruz.
+
+297
+00:51:04,884 --> 00:51:15,983
+Ağaca yerleştirdikten sonra her şeyi dönüştürebiliriz. Şimdi biraz sonra şunu yapacağız. Verilen infiks bir ifadeyi ağaca yerleştirip ondan sonra postfiks'e dönüştüreceğiz.
+
+298
+00:51:16,623 --> 00:51:26,023
+Şey olarak daha hareket kabiliyetimiz daha kolay. İki boyutlu hareket edebiliyoruz burada. Onun için yapılan her şeyi, stack ile yapılan her şeyi burada yapabiliriz.
+
+299
+00:51:31,923 --> 00:51:45,744
+dönüştürün dersek, stekle veya dönüştürün dersek, en kolayı, herhangi bir yöntemle dönüştürün, işte postfixe veya prefixe dersek, ne yaparsınız? Önce ağaca yerleştirirsiniz, ağaç üzerinden halledebilirsiniz.
+
+300
+00:51:46,903 --> 00:51:51,884
+Ağaç mantığını öğrendikten sonra, yani şunları öğrendikten sonra,
+
+301
+00:51:52,788 --> 00:52:01,568
+Ben onun için ezberlemeyin derim arkadaşlara. Şu A artı B mantığını öğrendikten sonra recursive olarak koşturmak adına daha kolay. Gelelim bunu yapmaya.
+
+302
+00:52:05,139 --> 00:52:12,459
+Şimdi, parantezler öncelikle bu infiks bir ifade. A işlemini yapacakmışım. Daha sonra B varmış.
+
+303
+00:52:15,459 --> 00:52:24,579
+Artı işlemi yapacağız. Arada bir çarpı var. O çarpıdan önce A eksi C'yi yapacağız.
+
+304
+00:52:27,739 --> 00:52:31,659
+Ve bu ikisinin sonucu ne olacak? Çarpılacak.
+
+305
+00:52:35,219 --> 00:52:49,219
+Ağacı bakın yapraklardan köke doğru götürüyoruz. Sonra çarpı işlemi varmış ama ondan önce bir ne var? Üst işlemi var. 2 üstü 2.
+
+306
+00:52:52,019 --> 00:53:01,460
+Şöyle diyelim. Şimdi bu 2 üstü 2'yi ne ile çarpacağım? Şuradaki şu operatörün sol çocuğuyla. O zaman bu
+
+307
+00:53:02,643 --> 00:53:05,783
+Yeni bir çarpma işlemi şöyle bir şeydir.
+
+308
+00:53:07,583 --> 00:53:11,563
+Bakın daha root ortaya çıkmadı. Yani root'un sol çocuğunu bulamadık.
+
+309
+00:53:12,123 --> 00:53:13,823
+Sonra eksi diye bir şey varmış.
+
+310
+00:53:15,143 --> 00:53:19,463
+Eksi ifadesi de ne yapıyor? Operatör önceliğine göre gidiyorum.
+
+311
+00:53:19,703 --> 00:53:22,223
+B bölü C yapacakmış. Önce B bölü C'yi yazalım.
+
+312
+00:53:29,108 --> 00:53:42,527
+Şimdi burada baktığımızda bu eksinin sol çocuğunda operatör önceliğine göre bakarsak çarpma çarpma çarpma aynı öncelikte bir operatör var mı? Yok.
+
+313
+00:53:43,407 --> 00:53:51,567
+Dolayısıyla önce bu çarpmalar yapılacak. Ondan sonra şu taraftaki bölmeler yapılacak. En son eksi işlemi yapılacak.
+
+314
+00:53:51,567 --> 00:53:55,668
+Yani ağacın root'u şu şekilde olacak arkadaşlar.
+
+315
+00:53:56,628 --> 00:54:13,268
+Şimdi eğer ağacın rutu, örneğin şuradaki işlem çıkarma olsaydı, burada şöyle bir durumla karşılaşırdık. Yani buradaki çıkarmadan kastımız şurada 2 üzeri 2'nin çıkarma olacağını düşünüyoruz.
+
+316
+00:54:24,340 --> 00:54:25,099
+eksi
+
+317
+00:54:25,099 --> 00:54:28,519
+b bölü c
+
+318
+00:54:28,519 --> 00:54:34,219
+Bakın, buradaki işlemde gelecek ağaç farklı olur. Çünkü
+
+319
+00:54:34,219 --> 00:54:39,420
+a artı b yapılacak. Daha sonra a eksi c yapılacak.
+
+320
+00:54:40,639 --> 00:54:45,819
+Sonra 2 üzeri 2 yapılacak. Sonra b bölü c yapılacak.
+
+321
+00:54:45,819 --> 00:54:48,599
+Ama şu ifadeden, şuradan
+
+322
+00:54:49,876 --> 00:54:59,356
+Şunlar doğrudan çıkaracak. Şimdi burada ağaç, buradakinden biraz daha farklı çıkıyor. Önce buna bir bakalım, ondan sonra ona da bakarız. İşlem önceliğinden dolayı.
+
+323
+00:55:01,916 --> 00:55:02,516
+Gelelim.
+
+324
+00:55:04,947 --> 00:55:18,887
+Şimdi bu ağacımızı prefiks yapalım. Şimdi prefiks de yapacağımız şey neydi? Artı AB. Yani gidebildiğimiz kadar önce root'ları topluyoruz. Sonra right'ları, sonra left'leri, ondan sonra en son right'ları.
+
+325
+00:55:18,887 --> 00:55:31,887
+Şimdi ağacımızın root'u eksi. Eksi. Sonra geldik, bunun soluna baktık, sağına baktık. Önce sola bakmamız gerekiyor. Sola baktığımızda bu çarpıydı.
+
+326
+00:55:32,980 --> 00:55:36,360
+Çarpı bir kendi içerisinde root. O zaman çarpıyı yazacağız.
+
+327
+00:55:39,240 --> 00:55:41,800
+Buradaki şeylere de mesela değer verelim arkadaşlar.
+
+328
+00:55:41,800 --> 00:55:53,639
+2, 2, 2, 0 demeyelim. 2, 1, 2 üzeri 2, 2, 1. Şöyle bir şey olsun. Sadece sonucunu da karşılaştıralım.
+
+329
+00:55:55,200 --> 00:55:56,519
+Eksi çarpı.
+
+330
+00:55:56,947 --> 00:56:05,947
+Çarpının sonuna geldim. Bu kendisi yine root olduğu için bir çarpı daha yapıyorum. Bunun sonuna geliyorum. Bu kendisi root olduğu için bir tane daha işlem var. Bu art.
+
+331
+00:56:06,627 --> 00:56:13,347
+Bunun sonuna geliyorum. Artık bunun sonunda herhangi bir şey yok. Bunu left olarak alıyoruz. Burayı right olarak alıyoruz.
+
+332
+00:56:14,247 --> 00:56:18,347
+Burayı aldıktan sonra bu left çocuk. Bunun right'ına baktık.
+
+333
+00:56:19,315 --> 00:56:30,175
+Right'ında geldiğimizde buradayız. Bunun solunda sağında elemanlar var. Onun için bu bir roottur. Eksi yazdık. Bunun left'ine geliyoruz A, bunun right'ına geliyoruz C.
+
+334
+00:56:31,715 --> 00:56:45,695
+Burası yine kendi içinde bitti. Bunun artık left'ine baktığımızda şuraya geldik. Burada bu kendi içerisinde ayrı bir ağaç. Önce root'u yazdık. Sonra 2'yi yazdık. Sonra 2'yi yazdık.
+
+335
+00:56:46,099 --> 00:56:53,440
+Bu bittikten sonra şuraya geliyoruz. Burada ne var? Bölü var. B var. C var.
+
+336
+00:56:54,779 --> 00:57:02,000
+Tabii benim A'lar, C'ler küçük büyük oldu, önemli değil. En son baktığımızda bu da tamamlandı.
+
+337
+00:57:02,119 --> 00:57:07,539
+Zaten root'u da yazmıştık. Root, left, right diye gidiyor. Şöyle bir prefiks ifade elde edeceğiz.
+
+338
+00:57:07,539 --> 00:57:12,259
+Şimdi bunun sayısal sonucu kaç? 4 buradan, 1 buradan.
+
+339
+00:57:13,427 --> 00:57:24,407
+eksi 4 oradan, 2 de oradan, 4 çarpı, eksi 4, eksi 2, yani sonuç eksi 2 mi geliyormuş? Evet.
+
+340
+00:57:26,027 --> 00:57:32,847
+Baktığımız zaman acaba şuradan aynı sonucu bulabilecek miyiz? Onun sağlamasını yaparsanız, değer verip o zaman doğru yaptınız.
+
+341
+00:57:32,847 --> 00:57:39,987
+Yani A'ya 2 verelim, B'ye 2 verelim, A'ya 2 verdik, C'ye 1 verdik.
+
+342
+00:57:40,884 --> 00:57:44,923
+B'ye 2 verdik, C'ye 1 verdik.
+
+343
+00:57:46,043 --> 00:57:47,244
+2 kere 2, 4.
+
+344
+00:57:48,423 --> 00:57:49,963
+2 kere 1, 2.
+
+345
+00:57:52,683 --> 00:57:54,063
+Pardon, şurada 4.
+
+346
+00:57:55,384 --> 00:57:56,884
+Önce 2 ile çarpacağız arkadaşlar.
+
+347
+00:57:59,063 --> 00:58:01,023
+Bir dakika, bakalım [öğrenci].
+
+348
+00:58:01,864 --> 00:58:04,284
+4 buradan, şuraya 2 ile çarpacağız.
+
+349
+00:58:05,403 --> 00:58:06,103
+8 oldu.
+
+350
+00:58:07,188 --> 00:58:08,728
+Yok, sekiz olmaz, bir olur.
+
+351
+00:58:11,068 --> 00:58:13,068
+Yok, doğru yapıyoruz. Bir dakika, şurada eksi var.
+
+352
+00:58:14,088 --> 00:58:18,168
+İki çarpı, iki eksi bir, bir. Burası ne oldu? Yine dört oldu.
+
+353
+00:58:19,548 --> 00:58:23,828
+İki üzeri iki, dört. Dörtten dört çıktı. Burası sıfır oldu.
+
+354
+00:58:25,248 --> 00:58:29,068
+İki bölü bir, birdir.
+
+355
+00:58:36,052 --> 00:58:37,251
+x'i 2 üzeri 2.
+
+356
+00:58:37,251 --> 00:58:41,492
+Hocam, aradaki, şurayı mı?
+
+357
+00:58:43,271 --> 00:58:45,791
+Yok, aradakini, yok, onu ayrıca yapalım dedik ya.
+
+358
+00:58:46,572 --> 00:58:47,452
+Yani şuna bakıyorum.
+
+359
+00:58:48,291 --> 00:58:49,912
+2 kere 2, 4.
+
+360
+00:58:50,132 --> 00:58:51,311
+Evet, doğru diyorsunuz.
+
+361
+00:58:52,351 --> 00:58:54,492
+2 eksi 1, 1.
+
+362
+00:58:55,652 --> 00:58:57,992
+Çarpı, ha şurada çarpı var.
+
+363
+00:58:59,391 --> 00:59:00,552
+2 üzeri 2, 4.
+
+364
+00:59:02,152 --> 00:59:03,552
+2 bölü 1, 1.
+
+365
+00:59:04,083 --> 00:59:16,083
+Yani 16 buradan 15 mi geliyor sonuç? 2 kere 2, 4. Hocam sonundaki 2 bölü 1, 2 olacaktı 1 yazdınız.
+
+366
+00:59:16,083 --> 00:59:24,083
+Hıh. 2 kere 2, 4. 2 çarpı 1, 2, 8. Hocam işlem yerinde.
+
+367
+00:59:24,083 --> 00:59:30,083
+B bölü C, 1 yazdınız 2 olacak. 2 bölü 1. 2 o zaman 14.
+
+368
+00:59:32,500 --> 00:59:47,080
+2 kere 2, 4, 8, 2 üzeri 2, 4, 4 kere 8, 32 mi oluyor? Yanlış yaptığım bir şey var mı arkadaşlar? Yok, 8 olmayacak. Gel şurası.
+
+369
+00:59:49,019 --> 00:59:50,519
+İyice kafam karıştı burada.
+
+370
+01:00:00,000 --> 01:00:23,300
+16 oldu. Ne hatamız var? 2 kere 2, 4. 2 eksi 1, 1. Şurası 4 oldu. 2 kere 2, 2 üzeri 2, 4. 4 kere 4. Evet, burası 16. Güzel. 2 bölü 1, burası 2. 16 eksi 2'den 14'ü buluyoruz.
+
+371
+01:00:26,164 --> 01:00:28,463
+Şimdi şuradaki şeye baktığımızda
+
+372
+01:00:28,463 --> 01:00:33,364
+bir infiks ifadeyi nasıl
+
+373
+01:00:33,364 --> 01:00:39,724
+hesaplarız diye geçenlerde sizinle kısa yoldan böyle ifade üzerinden nasıl yapabiliriz?
+
+374
+01:00:39,844 --> 01:00:45,144
+A'ya 2 verdik, B'ye 2 verdik, C'ye de 1 mi vermiştik?
+
+375
+01:00:46,624 --> 01:00:48,083
+Şimdi ne yapıyoruz? Şöyle tarayacağız.
+
+376
+01:00:48,884 --> 01:00:53,124
+Tararken operatörle, şey operantla karşılaştığımızda
+
+377
+01:00:53,492 --> 01:01:19,751
+Önceki işlemleri yapacağız. Yani ne yaptık? Bir operantla karşılaştık iki tane. Ne yapıyoruz? Önce şuradaki toplamayı yapacağız. Burası ne olacak? Eksi çarpı çarpı artı yapacağımız için dört olacak. Ondan sonra tabii bunu left, bunu right olarak alacağız. Eksi AC üzeri iki iki bölü BC.
+
+378
+01:01:20,724 --> 01:01:25,123
+Yine bir tane şeyle karşılaşıyoruz.
+
+379
+01:01:27,324 --> 01:01:29,523
+Şunlara da 2-2 diyelim ya niye?
+
+380
+01:01:33,139 --> 01:01:34,139
+Şöyle yapalım.
+
+381
+01:01:36,139 --> 01:01:39,139
+Eksi çarpı çarpı
+
+382
+01:01:41,139 --> 01:01:44,139
+Burası ne oldu? Dört oldu.
+
+383
+01:01:46,139 --> 01:01:50,139
+Sonra ne var? Eksi A C
+
+384
+01:01:53,748 --> 01:01:55,148
+2bc
+
+385
+01:01:55,148 --> 01:01:57,387
+şöyle ilerlerken
+
+386
+01:01:57,387 --> 01:02:00,208
+şunların yerine de 2'ye 1 yazalım da
+
+387
+01:02:03,699 --> 01:02:15,699
+İlerlerken bir operatör gördüm ama bu tek bir tane bir şey. Buradan geliyorum. Burada ne yapacağım? Önce 2-1 yapacağım. İki tane operatör görmem gerekir. Buradan ne gelecek? Bir gelecek.
+
+388
+01:02:17,000 --> 01:02:21,699
+Tekrar taradığımda dörde bir gördüm. O zaman bu dörde biri çarpacağım. Dört olacak.
+
+389
+01:02:27,668 --> 01:02:54,907
+Yani eksi çarpı 4 oldu. Üst 2 2 bölü 2 1. Taradığımda geleceğim önce burayı yapacağım. Burası ne olacak? 4 olacak. Yine taradığımda şurayı yapacağım. Burası ne olacak? 16 olacak. Eksi 16 bölü 2 1. 2'yi 1'e böleceğim. 2 olacak. 16'dan da 2'yi çıkaracağım. 14 olacak.
+
+390
+01:02:56,307 --> 01:02:59,307
+Bakın burada da aynı şeyi bulduk. Postfix'i yapalım.
+
+391
+01:03:00,307 --> 01:03:04,508
+Çok önemli değil. Yani genelde ağacı kullanmanızı istiyoruz.
+
+392
+01:03:05,307 --> 01:03:11,244
+Yani bu şekilde kısa yoldan tarama yaparken hata yapma olasılığı çok daha fazla artıyor. Postfix'e bakalım arkadaşlar.
+
+393
+01:03:12,436 --> 01:03:27,096
+Neydi Pospix? A, B artı. Gidebildiğimiz kadar sola gideceğiz. Şimdi buradayız. Sola geldik, bu root. Sola geldik, bu root. Sola geldik, bu root. Sola geldik, bu root. Sola geldik, bu artık root değil. Artık bunun sağ solu yok. A'yı yazdık, B'yi yazdık.
+
+394
+01:03:28,236 --> 01:03:37,836
+A ve B'yi yazdıktan sonra root'u yazıyoruz. Art. Burası bir sol olduğu için bunun sağına geçiyoruz. Sağa geçtiğimiz yerde gidebildiğimiz kadar sola gideceğiz. A var.
+
+395
+01:03:38,291 --> 01:03:44,291
+Daha sonra c var, daha sonra eksi var. Bu sağ bitti, sol bitti, bunun rotu eksidir.
+
+396
+01:03:46,291 --> 01:03:54,291
+Şimdi bunun solu bitti, sağına geldik. Sağa geldiğimizde bunun soluna doğru gidiyoruz, ikiyi yazacağız.
+
+397
+01:03:54,291 --> 01:03:59,851
+Sağına gidiyoruz, ikiyi yazacağız. Ondan sonra üste gidiyoruz, bunu yazacağız.
+
+398
+01:03:59,860 --> 01:04:26,820
+Sağ bitti, sol bitti, artık root'u yazabiliriz. Şuradaki çarpıyı yazıyoruz. Buranın sağ bitti, geldik sola. Sola geldiğimizde bu bir root. Bunun içerisinde sol olarak B var. Sonra root'u yazmadan önce işte bu neydi? B, C idi. Sonra işte buradaki işlem bölü. Sol bitti, sağ bitti, root'u yazıyoruz, eksi. Bu şekilde.
+
+399
+01:04:28,820 --> 01:04:30,020
+yerleşimi sağlıyoruz.
+
+400
+01:04:32,900 --> 01:04:34,500
+infix işlemler
+
+401
+01:04:34,500 --> 01:04:36,680
+ağaçlara
+
+402
+01:04:36,680 --> 01:04:38,960
+yerleştirilir, ayrıştırma ağaçları
+
+403
+01:04:38,960 --> 01:04:39,360
+değerler.
+
+404
+01:04:40,680 --> 01:04:43,000
+Bunun postfix veya prefixi hesaplanıp
+
+405
+01:04:43,000 --> 01:04:44,940
+değerleyici tarafında daha çok ağaç
+
+406
+01:04:44,940 --> 01:04:47,100
+kullanılıyor. Stag biraz daha zor çünkü
+
+407
+01:04:47,100 --> 01:04:48,600
+işlem kabiliyet açısından.
+
+408
+01:04:50,280 --> 01:04:53,080
+Bunun işte postfix elde edilip postfix ifade daha sonra
+
+409
+01:04:53,080 --> 01:04:54,000
+evaluate edilir.
+
+410
+01:04:56,019 --> 01:04:57,220
+Burada anlaştık herhalde.
+
+411
+01:04:58,480 --> 01:05:00,500
+Geldiğimizde arkadaşlar şu örneği yapalım.
+
+412
+01:05:05,460 --> 01:05:26,219
+Temizleyelim şuraya. A artı B çarpı A eksi C eksi 2 üzeri 2 eksi B bölü C. Şunun bir ağacını yerleştirelim. Sonra dersimize devam edelim. Saat 3 geçiyor. 13 geçe görüşmek üzere.
+
+413
+01:16:21,652 --> 01:16:25,512
+Arkadaşlar, 5 dakikada ara verin, geliyorum hemen.
+
+414
+01:24:31,412 --> 01:24:33,412
+Evet arkadaşlar, devam edelim.
+
+415
+01:24:34,912 --> 01:24:39,412
+Şimdi şu örneği de yaptıktan sonra, çıkan ağaçtan sonra bir de
+
+416
+01:24:41,912 --> 01:24:45,412
+verilen ifade infiks değil de mesela
+
+417
+01:24:46,412 --> 01:24:55,412
+yani şu ifadenin infiksi verilince ağaca nasıl yerleştireceğiz, o infiksi daha sonra aynı prefiksi ve postfiksi elde edebilecek miyiz?
+
+418
+01:24:56,020 --> 01:25:06,340
+Ona bakalım. Onu da sınavda mesela bir infiks, tabii postfiks için de aynı soruyu çözeriz. Sınavdaki infiks ve postfiks sorularını ağaca çizip o şekilde devam edelim.
+
+419
+01:25:08,260 --> 01:25:14,180
+Önce şunu yapalım. Şimdi A artı B varmış. Bu bir infiks ifade.
+
+420
+01:25:22,100 --> 01:25:33,780
+A, B, burada artı. Sonra bir operatör var. Şimdi burası bu operatörün left'iyse bunun right'ını yazacağız.
+
+421
+01:25:35,360 --> 01:25:41,620
+Right'ında tek bir operatör olabilir. Yani burada T gibi bir şey olsaydık doğrudan T yazacaktım. Doğrudan çarpı yapacaktık.
+
+422
+01:25:42,300 --> 01:25:48,380
+Çarpı şöyle. Burada da ne var? Eksi A eksi C var.
+
+423
+01:25:52,467 --> 01:25:54,068
+Bunu biraz daha alta alalım yani.
+
+424
+01:26:04,148 --> 01:26:21,028
+Evet. Geliyoruz. Bu çıkarma işleminden şeyde sonraki kısmı şimdi bu operatörün sol tarafı burası sağ tarafı burası. O zaman şöyle bir şey olacak.
+
+425
+01:26:22,868 --> 01:26:28,228
+Eksi. Sağ tarafında bir üst işlemi var.
+
+426
+01:26:29,235 --> 01:26:35,835
+Sonra bir çıkarma işlemi daha var. Şimdi eksi tarafında şöyle bir şey yapsak.
+
+427
+01:26:42,068 --> 01:26:43,387
+Evet, operatör.
+
+428
+01:26:44,988 --> 01:26:48,087
+Sol taraf, sağ taraf, üst işareti.
+
+429
+01:26:50,087 --> 01:26:51,548
+Şuraya C yazacağız.
+
+430
+01:26:52,807 --> 01:26:53,548
+2'ye 2.
+
+431
+01:26:55,387 --> 01:27:01,167
+Şimdi şu çıkarma işleminden önceki kısım önce tamamlanacak.
+
+432
+01:27:02,387 --> 01:27:04,368
+Sonra burası tamamlanacak.
+
+433
+01:27:05,087 --> 01:27:07,148
+Sonra burada bir çıkarma işlemi daha var.
+
+434
+01:27:08,020 --> 01:27:32,220
+Şimdi buna üçüncü bir ağaç aynı seviyede olduğu için ekleyemeyiz. Üçüncü bir düğüm ekleyemeyiz. Ne yapacağız? Yani şuraya da şu ikisi ifade matematikte yerleşiyor. İster buraya B bölü C yazacağız, ister bir üst seviyeden bir çıkarma işlemi. Ne olacak arkadaşlar? Bölü B C olacak.
+
+435
+01:27:33,492 --> 01:27:38,612
+Şimdi A ve B'ye 2 ve 1 vermiştik zannediyorum. Buna da 2, 1.
+
+436
+01:27:41,092 --> 01:27:43,012
+Yok şöyle 2.
+
+437
+01:27:46,420 --> 01:27:48,420
+Şöyle, ne oldu? 4.
+
+438
+01:27:50,420 --> 01:27:53,420
+Bir daha, 4.
+
+439
+01:27:54,420 --> 01:28:01,420
+2 üzeri 2, bu 0 oldu. 2 de şeyde 1, eksi 1 çıkıyor herhalde. Yok, eksi 2 çıkıyor.
+
+440
+01:28:04,420 --> 01:28:08,420
+Bakalım şimdi buradan doğru yapmış mıyız, denklemi.
+
+441
+01:28:10,420 --> 01:28:12,011
+Root, not, eksi.
+
+442
+01:28:15,859 --> 01:28:17,059
+2 artı 2, 4.
+
+443
+01:28:18,979 --> 01:28:20,819
+A'dan bu çıktı.
+
+444
+01:28:22,180 --> 01:28:24,180
+2 eksi 1, 1.
+
+445
+01:28:24,459 --> 01:28:25,639
+4 kere 1, 4.
+
+446
+01:28:26,739 --> 01:28:28,760
+2 üzeri 2, 4.
+
+447
+01:28:28,959 --> 01:28:30,180
+4 eksi 4, 0.
+
+448
+01:28:31,379 --> 01:28:32,219
+B bölüce
+
+449
+01:28:32,219 --> 01:28:36,939
+2 bölü 1'den 1, pardon 2 bölü 1'den 2.
+
+450
+01:28:37,599 --> 01:28:39,340
+0 eksi 2, eksi 2.
+
+451
+01:28:40,619 --> 01:28:42,139
+Root nodumuz eksi oluyor.
+
+452
+01:28:44,948 --> 01:28:52,327
+Yani yan yana iki tane şey gelince sonuçta şunun gibi anlaşılabilir ama burada üçüncü bir not ekleyemeyiz.
+
+453
+01:28:53,708 --> 01:29:10,388
+Baktığım zaman önce bu işlem yapılıyor, bunu yapmak için burası gelecek, daha sonra bu gelecek, daha sonra önce bu işlem yapılacak, sonra bu yapılacak, daha sonra bu kısım, ondan sonra buradan sonraki kısımın şu bölüm yapılacak, bölüm işlemi.
+
+454
+01:29:10,388 --> 01:29:12,007
+Bu şekilde devam ediyoruz.
+
+455
+01:29:14,644 --> 01:29:16,644
+Program tasarlarken ağaca yerleştirme.
+
+456
+01:29:18,244 --> 01:29:24,244
+Yani, kendi yazacağın bir matematiksel ifadeyi değerlendirmekten bahsediyorsan,
+
+457
+01:29:25,244 --> 01:29:31,644
+prefixe veya postfixe dönüştürüp o şekilde yapmak daha doğru olur.
+
+458
+01:29:31,644 --> 01:29:39,844
+Ya stack ile yapacaksınız buradaki ifadeyi veya prefixe veya infixe üzerinden zaten yapmak.
+
+459
+01:29:40,756 --> 01:29:59,756
+Doğrudan, yani infiks üzerinden yapacaksanız bile bir ağaca yerleştirmek gerekiyor. Ağaca yerleştirme, hepsi için ağaç aynı bak. Yani ben böyle bir denklem versem de ağaç bu şekilde çıkacak. Biraz sonra bunun ben infiks karşısında...
+
+460
+01:30:00,000 --> 01:30:10,000
+karşılığını versem de ağaç aynı çıkacak, posfix karşılığını versem de ağaç aynı çıkacak. Ağacın üzerindeki dolaşma farklı.
+
+461
+01:30:12,000 --> 01:30:20,000
+Yani prefix veya posfix. Tamam. Ağacın üzerinde dolaşma farklı.
+
+462
+01:30:27,796 --> 01:30:29,076
+işin zor olanı.
+
+463
+01:30:30,876 --> 01:30:32,916
+Şimdi, gelelim,
+
+464
+01:30:33,176 --> 01:30:34,956
+Postpix bir ifadeyi
+
+465
+01:30:36,756 --> 01:30:42,896
+Ağaca nasıl yerleştireceğiz? Yani ezberleyeceğiniz şey sadece şu olsun demiştim ya, AB artı. Yine
+
+466
+01:30:43,416 --> 01:30:45,716
+Operatör daima burada.
+
+467
+01:30:47,256 --> 01:30:48,016
+Sol
+
+468
+01:30:48,796 --> 01:30:50,576
+Ve sağ çocuk bu şekilde.
+
+469
+01:30:51,091 --> 01:30:56,351
+Yani bizim ezberleyeceğimiz prefiks için şunu ezberleyeceksiniz. Eğer ezberlemek denirse buna da.
+
+470
+01:30:57,031 --> 01:31:09,431
+Artı AB. Üçünde de bakın arkadaşlar, notasyon aynı. AB, A artı B'de de neydi? Önce solu yazıyorduk. Sonra artı, sonra B.
+
+471
+01:31:10,011 --> 01:31:15,671
+Ağaç aynı. Ağaç üzerinde gezinme, hareket etme şekillerimiz farklı oluyor.
+
+472
+01:31:16,979 --> 01:31:18,979
+Sınavdaki soru şuymuş.
+
+473
+01:31:30,484 --> 01:31:34,924
+m eşittir 1, n eşittir 2 iken. Şimdi n'lerin yerine 2 yazalım.
+
+474
+01:31:42,739 --> 01:31:50,119
+Bunun sonucunu. Şimdi bunu elle hesaplamak istersek, postfix olduğu için ne yapıyorduk arkadaşlar?
+
+475
+01:31:52,819 --> 01:32:01,340
+Baştan başlıyorduk değil mi? Baştan başladığımızda ilk operatörü gördüğümüz yerde duruyoruz ve ondan önceki iki operatöre işlem yapıyorduk.
+
+476
+01:32:01,420 --> 01:32:04,719
+Birincisi sol olacak, öbürü sağ olacak. Yani burada iki üzeri iki.
+
+477
+01:32:06,779 --> 01:32:09,299
+İki üzeri iki. Ne oldu? Dört.
+
+478
+01:32:10,163 --> 01:32:17,363
+2, 1, yıldız, artı, 3, üst, 2, yıldız.
+
+479
+01:32:18,263 --> 01:32:35,083
+Geldik, operatör görene kadar taradık. Ne yapacağız? 2 çarpı 1 yapacağız. 2. Operatör görene kadar taradık. 4, 2, artı, artıyı gördüğünüz için 4, artı 2 yapacağız. 6. 2, artı 4 değil, 4, artı 2.
+
+480
+01:32:35,667 --> 01:33:01,387
+6, 3, çünkü arada eksi olsaydı iş değişirdi. 6, 3, üst, 2, yıldız. 6 üzeri 3 yapıyoruz. 6 üzeri 3 ile de 2'yi çarpıyoruz. Ne oluyor? O da 432 oluyor. Şimdi mesele, tamam sonuç böyle. Bunu ağaca yerleştirin dediğimizde nasıl yapacağız? Aynı mantık, hiçbir mantık, hiç fark yok.
+
+481
+01:33:03,604 --> 01:33:30,224
+Şimdi tarıyorum, iki, iki diye bir şey geliyor. O zaman bu bir operatör, pardon bu bir operant, iki diğer operant. Operatörü ne? Operatörü şey, şu. Şimdi bakın, iki üst diye gelebilirdi doğrudan. O zaman ona göre bakacaktık. Ne yaptım? Bir operant okudum iki, diğer operandı okudum iki. O zaman birisi dedim ki left olacak, öbürü right olacak.
+
+482
+01:33:30,676 --> 01:33:55,876
+Şimdi bir operatör okudum artık. Bu operatör bir şey, root olacak. Ondan sonra bir operatör daha, operant daha okuyorum, iki. Sonra bir operant daha okuyorum, bir. Bunların üzerine bir operatör okuduk, yıldız. Daha sonra bu ikisinin üzerine, bakın bu left idi.
+
+483
+01:33:56,659 --> 01:34:22,399
+Bu right gibi gelen şey neymiş? Artı. Ha, bu left ve right'ın root'u şuradaki artı olacakmış. Tamam mı? Sonra işin kötülüğüne bakıyoruz. Bu artıdan sonra, artıdan sonra bir ne var? Operant var. Yani üç. Şimdi bu üç,
+
+484
+01:34:23,891 --> 01:34:32,891
+kendisinden önceki gelen şeyle demek ki bir işlem olacak. Yani burası bunun left tarafı yani şöyle bir left var.
+
+485
+01:34:35,492 --> 01:34:40,876
+Böyle bir left var. Pardon şu şekilde bir left var.
+
+486
+01:34:45,011 --> 01:34:59,011
+Bu left'in right kısmı şurası. Bu left ve right'in root'u da şu oluyor. Çünkü iki tane bir şey yok bakın arkadaşlar.
+
+487
+01:35:01,011 --> 01:35:08,011
+Baştan alayım. İki iki, iki tane operant. Birisi sol, birisi sağ. Üst dediğimiz root.
+
+488
+01:35:09,108 --> 01:35:36,728
+Sonra ne okudum? İki okudum. Bu bir operant. Sonra bir okudum. Bu başka bir operant. Bu ikisinin bir operatörü olarak çarpı varmış. Bunu okuduk. Daha sonra artı var. İşte bu artı ne demek? Kendinden önceki iki tane operatörün üstünde bir şey olacak. Dolayısıyla bu operatörün left'i burası, right'i burası oldu. Bunu da okuduktan sonra ne okuduk? Artı okuduk.
+
+489
+01:35:37,844 --> 01:36:00,703
+Değil mi? Pardon, artıdan sonra ne okuduk? Üç okuduk. Şimdi bu üç bir operant. Bu operandın sonrasında bir operatör geliyorsa, o zaman bu şöyle bir şeydir bakın. Yani AB artıya düşünecek olursak.
+
+490
+01:36:01,395 --> 01:36:27,515
+3 operant ise, demek ki kendinden önce bir sayı var. Kendinden önceki sayı, işte şuranın sonucu. Şu artı dahil sonucu. Kendinden sonraki gelen, buradaki şeyimiz ne? Yıldız. Demek ki 3 şey, yıldız diyorum, üst işareti. 3, bunun root'u operant olacak. Bu şekilde bir ağaç devam edecek. Şimdi bundan sonra ne gelmiş? 2 gelmiş. 2 bir operant.
+
+491
+01:36:29,203 --> 01:36:31,423
+2'den sonra ne gelmiş? Yıldız. Demek ki
+
+492
+01:36:31,423 --> 01:36:38,443
+bir şey, iki yıldız. O bir şeyden önceki, yani şu A dediğimiz şey de
+
+493
+01:36:38,443 --> 01:36:42,203
+şu üst alma ile beraber elde ettiğimiz sonucun
+
+494
+01:36:42,203 --> 01:36:45,703
+bu kısmı çarpı diyoruz.
+
+495
+01:36:47,144 --> 01:36:48,523
+Ondan sonra çarpı geliyor.
+
+496
+01:36:49,263 --> 01:36:52,563
+Bakalım bunun infiks notasyonunu yazalım.
+
+497
+01:36:52,563 --> 01:36:54,224
+Çünkü bize ilerlen şey
+
+498
+01:36:54,868 --> 01:37:01,068
+Infix notasyonu çok kolay yazılır arkadaşlar. Buradan başlayıp yazacaksınız. 2 çarpı, pardon 2 üzeri 2.
+
+499
+01:37:03,588 --> 01:37:20,308
+Artı, parantez ekleyebiliriz artık. 2 çarpı 1. Üzeri 2 çarpı 1. Tabi burası toplanacak. Burası toplanacağı için şurayı şöyle, önce bu işlem yapacak, burayı böyle ayrıca alıyoruz.
+
+500
+01:37:22,228 --> 01:37:48,427
+Üç, çünkü üzeri üç dediğim şey buranın tamamının sonucu. İki üzeri birin üçüncü kuvveti değil bakın. Yani önce burası olacak, ondan sonra burası olacak. Sonra çarpı, tamamen şuranın çarpımı, iki. Hesaplayalım. Dört buradan, iki buradan, altı. Altı üzeri üç.
+
+501
+01:37:49,555 --> 01:37:52,495
+çarpı iki. Bu da dört yüz otuz iki oluyor.
+
+502
+01:37:55,495 --> 01:38:05,475
+Bunun prefiksini yazalım dersek, artık ağaç oluştuğu için ağaçtan hepsini çıkartabiliriz. Yani artı AB diyeceğiz.
+
+503
+01:38:06,515 --> 01:38:14,376
+O zaman önce operatörleri toplaya toplaya geleceğiz. Operatörleri toplarsak burada root'ta bir operatör var. Kök çarpı.
+
+504
+01:38:15,539 --> 01:38:42,399
+Sonra ne var? Left'e geleceğiz. Left kendisi operatör olduğu için bunu alıyoruz. Sonra bir daha left'e geliyoruz. Kendisi operatör olduğu için bunu alıyoruz. Bir daha left'e geliyoruz. Kendisi operatör olduğu için bunu alıyoruz. Bir daha left'e geliyoruz. Kendisi operatör değil bunu alıyoruz. Ondan sonra right'e alıyoruz. Bu kısım bitti. Bu kısım bittikten sonra left'i bitti demek. Şunun left'i bitti. Bunun right'ına geliyoruz. Infix'den prefixe dönüşümün aynısı.
+
+505
+01:38:43,475 --> 01:39:04,235
+Bu operatördür. Bunu aldık. 2 ve 1'i aldık. Bu kısım bittikten sonra şunu almıştık zaten. Bunun left'i burası, right'i burası. 3'e alıyoruz. Bu kısım bittikten sonra şunu almıştık. Bunun left'i burası, right'i burası. 2'ye alıyoruz.
+
+506
+01:39:07,315 --> 01:39:16,043
+Hani elle çözelim. Elle çözerken de prefikste baştan başlıyorduk. Önce bu işlem olacak. 4. Sonra...
+
+507
+01:39:19,699 --> 01:39:37,340
+Şu operatörü gördüğümüz için sonra bu işlem olacak. 2. Sonra ne hale gelecek? Eksi çarpı üzeri artı 4, 2, 3, 2. Şu artı. Sonra bu işlem olacak.
+
+508
+01:39:42,676 --> 01:39:51,355
+çarpı kuvvet 6, 3, 2. Sonra bu işlem olacak. 6 üzeri 3. Sonra da öbürü olacak. Çarpı 2.
+
+509
+01:39:53,536 --> 01:39:54,376
+Anlaşıldı mı?
+
+510
+01:39:57,115 --> 01:40:05,515
+Postfix'ten ürettiğimiz ağaç, yine infix ağacı gibi. Yani infix'te de aynı şeyi üretebiliriz. Infix verilseydi.
+
+511
+01:40:06,176 --> 01:40:10,756
+prefiks olarak verseydi yine aynı ağacı. Sadece dolaşmamız farklı oldu.
+
+512
+01:40:12,155 --> 01:40:16,756
+Şimdi gelelim bir de şey örneği yapalım. Sınavdaki örnekten yine yapalım.
+
+513
+01:40:18,176 --> 01:40:22,615
+Prefiks ifadeyi ağaca dönüştürme.
+
+514
+01:40:26,387 --> 01:40:35,927
+Burada B eşittir 4, A eşittir 2 iken demişiz. Şunların yerine. Hadi ağacı çizelim de daha sonra yerine koyalım.
+
+515
+01:40:37,667 --> 01:40:42,827
+Şimdi yine hep ağaca yerleştirirken baştan bakmak zorundayız arkadaşlar.
+
+516
+01:40:43,747 --> 01:40:51,667
+Şimdi ağaçta prefiks notasyonunda bunun prefiks olduğunu biliyoruz. Artı AB vardı. Artı bizim neydi? Kökümüz.
+
+517
+01:40:52,307 --> 01:41:18,507
+A sağımız, şey solumuz, B sağımız. Şimdi bu mantıkla gidersek bir tane artı var operatör. O zaman bu bir şeyin kökü. Sonra çarpı geldi. Normalde bir sonra neye geçecektik? Kökten sonra bu tarafa gelecektik. O zaman nedir arkadaşlar? Bu solda olacak. Bu çarpı olduğu için bu da demek ki bir şeyin kökü. Sonra aşağıya geliyoruz. Artı yani sola doğru geleceğiz.
+
+518
+01:41:19,891 --> 01:41:29,252
+Bu artı da bir şeyin kökü. Sonra bir sola geldik. Bir üst işlemi var. Bu da bir şeyin kökü.
+
+519
+01:41:31,311 --> 01:41:39,912
+Sonra ne var? Bu kökün left çocuğu 3 olacakmış. Right çocuğu 2 olacakmış.
+
+520
+01:41:48,083 --> 01:42:07,463
+Bu left bitti bakın, şurası, 3 ve 2, bu şey, şu artının, A'sı burası, B'si ne? B'si şu artı. B'si A. Tamam mı? Artı AB diye gidiyoruz bakın.
+
+521
+01:42:07,859 --> 01:42:28,420
+Artıya aldık, sonra çarpıya aldık, sonra artıya aldık, sonra üstü aldık. Üstün A'sı 3, yani şuna göre bakarsanız B'si 2. Bu bittikten sonra bu artının A'sı şurası, artının A'sı burası, B'si şuradaki A değişkenimiz.
+
+522
+01:42:34,323 --> 01:42:57,684
+A'sı neresi? Artı, 3, 2, A şunu görene kadar. Sonra ne var arkadaşlar? Bir bölü var. Şimdi artıdan sonra bir bölü geliyorsa demek ki şurada yeni bir kök ekleyeceğim. Bu kökün left'i ne? B, right'i ne? A.
+
+523
+01:43:02,079 --> 01:43:14,279
+A'sı neresi? Artı, işte şu bölüm tamamen bu artının bu kısmı oluyor. B'si neresi? Yani left çocuğu neresi? Bölü BA oluyor.
+
+524
+01:43:14,880 --> 01:43:23,460
+Şimdi bu çarpı için bu bittikten sonra artının left çocuğu şu kısım, right çocuğunda ne varmış? Sadece 3 varmış.
+
+525
+01:43:25,716 --> 01:43:51,716
+Gelelim bunları yerine yazalım. A dediğimiz şey 2'ymiş. Yani A'ya 2 vereceğiz. B'ye de 4 verecekmişiz. 3 üzeri 2, 9. 9, 2 daha 11. 4 bölü 2, 2. 11 çarpı 2, 22. 22 artı 3, 25. Şunu elle yaptığımızda artı çarpı artı...
+
+526
+01:43:53,203 --> 01:43:59,564
+Artı çarpı artı üzeri 3, 2, bölü, pardon bölüden önce şey var.
+
+527
+01:44:02,503 --> 01:44:05,403
+3, 2, A dediğimiz şey 2 idi.
+
+528
+01:44:06,984 --> 01:44:10,623
+Bölü 4, 2 ve 3.
+
+529
+01:44:11,764 --> 01:44:12,484
+Nasıl yapıyorduk?
+
+530
+01:44:13,524 --> 01:44:14,943
+Baştan geliyoruz, tarıyoruz.
+
+531
+01:44:16,372 --> 01:44:43,372
+Operatör gördük, operatörden sonraki iki elemanı aldık, 3 üzeri 2, 9 yaptı. Sonra bu 9'a 2 ekledik, 11 oldu. Ne oldu? Artı çarpı 11. Operatörden sonra burada mutlaka neyi yapmamız lazım? 2 tane operant olacak. Operatör var, 2 operant yok. Operatör var, 2 operant burada var. 4 bölü 2, 2 yapacağız. Artı çarpı 11, 2, 3.
+
+532
+01:44:44,212 --> 01:44:47,712
+Önce burayı yapıyoruz. 22, sonra 3 ekliyoruz. 25.
+
+533
+01:44:49,832 --> 01:44:52,312
+Bu ifadenin infiksini bulalım.
+
+534
+01:44:53,172 --> 01:44:57,472
+Infiks neydi? A artı B. Şimdi A değil bu.
+
+535
+01:44:57,932 --> 01:45:00,292
+Geldik buraya, geldik buraya, geldik buraya, geldik.
+
+536
+01:45:00,292 --> 01:45:05,012
+Yani 3 üzeri 2. Parantez.
+
+537
+01:45:05,912 --> 01:45:10,472
+Sonra artı A dediğim şey 2.
+
+538
+01:45:13,043 --> 01:45:17,703
+Sonra çarpı. Şimdi bu çarpıdan sonra her bir düğümde parantez koymak iyi olur.
+
+539
+01:45:17,884 --> 01:45:21,823
+İnfix gösteriminde. Çünkü işlem önceliğini sağlamamız gerekecek.
+
+540
+01:45:22,863 --> 01:45:23,463
+Çarpı.
+
+541
+01:45:24,724 --> 01:45:29,083
+Ne var? Bir bölü işlemi var. Bir de o zaman parantez.
+
+542
+01:45:29,083 --> 01:45:30,543
+4 bölü 2.
+
+543
+01:45:32,543 --> 01:45:34,743
+Bu da şuranın parantezi.
+
+544
+01:45:35,884 --> 01:45:36,764
+Şöyle.
+
+545
+01:45:38,844 --> 01:45:39,443
+Artı.
+
+546
+01:45:40,243 --> 01:46:04,564
+3, 3, 4, 2, 9, 11, 4 bölü 2'den, şurayı 4 bölü 2 yap, yok, yapmayalım. 4 bölü 2'den 2, ne oluyor? 22, 25. Bu infix'in postfix'ini yazarsak, postfix dediğimiz şey A, B artıydı, gidebileceğimiz kadar sola gidiyoruz.
+
+547
+01:46:05,460 --> 01:46:11,559
+Gidebileceğimiz kadar sola geldiğimizde en son 3'ü göreceğiz. Sonra sağa gidiyoruz, sonra ruta gidiyoruz.
+
+548
+01:46:12,599 --> 01:46:19,579
+Şimdi buranın solu bitti. Sağında ne var? A var. Sağda bitti. Rutunda ne var? Artık ruta geldik. Artı var.
+
+549
+01:46:20,939 --> 01:46:29,300
+Solu bitti. Sağında ne var? Burası var. Burası kendi içinde sol ve sağ çocuk içeriyor. B, A, üst.
+
+550
+01:46:30,868 --> 01:46:41,268
+Solu bitti, sol bitti, sağ bitti, çarpıyı yazıyoruz, şuradaki çarpıyı. Solu bitti, sağ yazıyoruz, en son artıyı yapıyoruz.
+
+551
+01:46:44,787 --> 01:47:07,427
+Herhalde anlaşılmıştır. Bakın, steklerde yaptığımız şeylerden daha kısa sürüyor. Ağaç her zaman aynıdır. Kesinlikle yapraklarda operantlar olacak, ara düğümlerde ne olacak? Operatörler olacak. Sınavda size sorarsak.
+
+552
+01:47:08,372 --> 01:47:30,212
+İşte bir infiks verdik veya postfiks verdik veya prefiks verdik. Bunu işte a eşittir, 3 için, b eşittir, bilmem ne için çözün dediğimizde istediğiniz yöntemi kullanabilirsiniz. İsterseniz benim şurada yaptığım gibi şu tarz bir değerlendirmeyle yapabilirsiniz. Bakın postfiks'te bunu farklı yapıyoruz, infiks'te farklı.
+
+553
+01:47:31,859 --> 01:47:58,579
+Biraz önceki de PostFix'ti. Ne yapıyorduk? Geriden doğru, sondan başa doğru geliyorduk. Ne zaman bir operatör gördük? Operatörden önceki işlemleri değerlendire değerlendire gidiyorduk. Mesela şurada yaptığımız nedir? Operatörden önce tabii iki tane işlem göreceğiz. Ona göre devam edip gidiyoruz. Mesela burada önce iki yapılacak falan.
+
+554
+01:48:00,948 --> 01:48:03,887
+Sorular bu şekilde gelir. Eğer sorarsak tekrardan.
+
+555
+01:48:05,708 --> 01:48:07,387
+Şimdi slide'ımızdan devam edelim.
+
+556
+01:48:08,188 --> 01:48:09,307
+Bu konu bu kadar yeter.
+
+557
+01:48:09,608 --> 01:48:14,028
+Yani burada birkaç alıştırma yaparsanız sizin için iyi olur arkadaşlar.
+
+558
+01:48:15,847 --> 01:48:18,887
+Evet, şuradaki örnekleri de hızlıca kontrol edelim.
+
+559
+01:48:19,248 --> 01:48:22,228
+A-B bölü C. Bunu ağaca yerleştirmek ne demek?
+
+560
+01:48:23,608 --> 01:48:25,548
+Solda A olacak.
+
+561
+01:48:26,588 --> 01:48:28,188
+Arada bu olacak.
+
+562
+01:48:28,979 --> 01:48:51,159
+Sonra bir operant gelmiş. Demek ki burada bir bölü şey burada olacak. B ve C burada olacak. Bunu prefikse çevirin dersek, A, sol, lefte geldik, sağ. Bu sağ kendi içinde sol ve sağ içeriyor. En sona şu. Buna baktığımızda,
+
+563
+01:48:52,948 --> 01:49:09,387
+Mesela bunun da postfix'ini çevirelim. Neydi? AB artı. Geldik bu root, bu root. O zaman AB eksi C çarpı olacak. Sol operant, sağ operant.
+
+564
+01:49:15,475 --> 01:49:42,676
+Şimdi aynı düğüm sayısına sahip farklı yükseklikte ikili ağaçlar. Bu nedir? Mesela operatör önceliklerinde karşımıza çıkar. Biraz önceki şeylerde olduğu gibi. Ağaçlar bu şekilde olabilir. Hepsinde aynı sayıda düğüm var. Ağaca yerleştirme işlemi, farklılık gösteri ve bu şekilde farklı ağaçlar elde edilir. Yani şu da bir ağaçtır arkadaşlar. Bir doğrusal liste gibi. Özellikle bunu Binary Search Trillerinde kullanacağız.
+
+565
+01:49:46,036 --> 01:50:01,195
+Eğer n eşittir sıfırsa boş bir ağaç, eğer bir tane varsa bu birli ağaç oluyor. Yani ikili ağaç olarak bu şekilde n eşittir iki için, üç eşit için bu şekilde ağaçlar tasarlayabiliriz düğüm sayısına göre.
+
+566
+01:50:02,675 --> 01:50:13,155
+Tam ağaç dediğimiz uç düğümler hariç her düğüm iki çocuğa sahipse buna tam ağaç diyoruz. Yani uçlar şunlar, şunları karalayın.
+
+567
+01:50:16,180 --> 01:50:23,880
+Sonra bakıyorum, bunun iki çocuğu var, bunun iki çocuğu var, bunun iki çocuğu var, bunun iki çocuğu var. O zaman tam ağaç diyoruz, ikili ağaç.
+
+568
+01:50:27,180 --> 01:50:41,620
+Eğer burada t adet uç düğüm varsa, tam ikili ağaçlar için, bu uç düğümlerin logaritma t'si h'tan küçük veya eşit olmak zorunda.
+
+569
+01:50:42,644 --> 01:50:54,824
+i artı bir adet ara düğüm varsa, i artı bir adet üç düğüm olur. Şimdi buradaki ara düğümler ne? Bir bu, iki bu, üç bu.
+
+570
+01:51:02,420 --> 01:51:23,279
+Başka ara düğümü var. Ha bir de bu var. 1, 2, 3, 4. 1, 2, 3, 4, 5. 5 tane uç düğüm var. İyi adet ara düğümü varsa toplam düğüm sayısı 2 artı 1'dir. Yani 1, 2, 3, 4 için toplam 4, 5 tane de öyle 9 tane geliyor.
+
+571
+01:51:24,595 --> 01:51:26,595
+Tamam, burada bunun örneğini söylemiş.
+
+572
+01:51:26,755 --> 01:51:32,735
+Şimdi bunlardan biraz daha spesifik olanı, ikili araçlarının ikili arama ağacı arkadaşlar.
+
+573
+01:51:34,075 --> 01:51:45,395
+Özelliği şudur, root düğme, root düğümden küçük olanlar sola, büyük olanlar sağa yerleştirilir.
+
+574
+01:51:45,475 --> 01:51:48,475
+Sayısal olarak baktığınızda veya işte sözler karşılıklarına bakabilirsiniz.
+
+575
+01:51:50,195 --> 01:52:05,755
+sol taraftaki verinin sağ taraftakinden büyük veya küçük olması. Yani burada genel kural, sola küçükleri, sağ büyükleri yerleştirme. Ama hani sağ büyükleri, sola küçükleri yerleştirmek de olabilir. Genelde binary search dediği algoritmalarında bunu görürüz.
+
+576
+01:52:07,115 --> 01:52:08,135
+Veri dediğimiz şey,
+
+577
+01:52:09,395 --> 01:52:18,036
+İşte buradaki sayıların toplamı olabilir, ne bileyim ASCII kod karşılıkları veya integer'lar düşünürsek, işte bir sayı dizisi düşünün, 4, 3, 8, 9.
+
+578
+01:52:18,796 --> 01:52:21,395
+İlk eleman her zaman için root olmak zorunda.
+
+579
+01:52:22,996 --> 01:52:25,355
+Yani ilk eleman geldi, o root.
+
+580
+01:52:26,456 --> 01:52:28,956
+Ondan sonrakiler bu root'a göre şekilleniyor.
+
+581
+01:52:30,336 --> 01:52:33,975
+4, 3'den, 3, 4'den küçük, o zaman 3 buraya gelecek.
+
+582
+01:52:34,804 --> 01:52:55,003
+8'e bakıyoruz. 8'e eklerken 8 root'tan büyük o zaman buraya gelecek. 9'a bakıyoruz. 9 root'tan büyük. Bunu root gibi düşünüp 8 de root'tan, 9 da bundan büyük o zaman 9 şöyle olacak. Yani 4 root, 3 burada, 8 burada, 9 burada. Böyle bir ağaç elde edeceğiz.
+
+583
+01:53:02,899 --> 01:53:22,891
+Sonra buna iki geliyor, sonra buna üç geliyor, sonra dört geliyor, sonra beş geliyor. Bakın bir normal LinkedLisk veya doğrusal liste gibi ağaç ama bildiğiniz liste halinde şuradaki pointerlar boşa çıkıyor yani. Hiç sol tarafına bir şey eklemiyoruz. Bu şekilde ekleme işlemi Binary Search'tir arkadaşlar.
+
+584
+01:53:23,444 --> 01:53:31,744
+Bu binary search dizide dengeli ve dengesiz ağaç kavramı var. Biraz önce şu yaptığımız biraz dengeli gibi ama şu çok dengesiz bir ağaç.
+
+585
+01:53:32,524 --> 01:53:38,584
+Bunu dengeli hale getiren işte B-Tree'ler falan var. Onlarla daha sonra veri yapılarına da bakarsınız, öğrenirsiniz.
+
+586
+01:53:40,184 --> 01:53:45,384
+Yüksekliği H olan bir ağacın yapraklarının seviyesi H veya H1, H2, H1 ise dengeli ağaçtır.
+
+587
+01:53:45,384 --> 01:53:49,984
+Şimdi şunun seviyesi bu ağacın yüksekliği kaç? H eşittir 3.
+
+588
+01:53:50,612 --> 01:54:07,052
+Yapraklara baktığımızda bunun 3, bunun 3, işte bunun 2, bunun 3, bunun 2, bunun 2. Pardon, yaprakların seviyesine bakacağız. Bu 3, bu 3, bu 2, bu 2, bu da 3.
+
+589
+01:54:07,832 --> 01:54:13,592
+Yaprakların yüksekliği 3, yaprakları da 3-1, o zaman dengeli. Şuna baktığımız zaman bunun yüksekliği 4.
+
+590
+01:54:17,043 --> 01:54:20,043
+Buna baktığımız zaman bu üç, bu iki.
+
+591
+01:54:20,043 --> 01:54:25,043
+Eğer şundan dolayı arkadaşlar bu ağaç dengesiz ağaç haline geliyor.
+
+592
+01:54:25,043 --> 01:54:28,043
+Şuraya bir tane daha eklesek biraz daha dengeli olabilir.
+
+593
+01:54:31,956 --> 01:54:55,976
+Bir binary search tree oluşturalım. Burada şey var da, muhtemelen hoca animasyon yapmış. Şimdi bir her zaman root olmak zorunda arkadaşlar. Sonra üç geldi, büyük olduğu için buraya ekledim. Dört geldi, büyük olduğu için üçten de büyük buraya ekledim. Dört, üçü şöyle yapalım. Üçü sağa ekledik. Dördü sağa gittik, burada da üçün sağına ekledik.
+
+594
+01:54:56,351 --> 01:55:13,412
+5 geldi, sağa geldik, sağa geldik, buraya bir düğüm ekliyoruz. 6 geldi, bir düğüm daha ekliyoruz. 16 geldi, bir düğüm daha ekliyoruz. 17 geldi, bir düğüm daha ekliyoruz. 19 geldi, bir düğüm daha ekliyoruz. Niye böyle bir binary search değil?
+
+595
+01:55:24,916 --> 01:55:29,916
+Yani burada hocanın yaptığı şu muhtemelen ikinci elemandan başlamış.
+
+596
+01:55:31,276 --> 01:55:33,316
+Ama hani böyle bir şey olmaz.
+
+597
+01:55:34,655 --> 01:55:38,896
+Şimdi 3 desek, 3'ü root kabul edelim desek.
+
+598
+01:55:40,155 --> 01:55:41,216
+Tamam 3 root olsun.
+
+599
+01:55:41,436 --> 01:55:45,976
+1 geldiğinde 1'i buraya, 4'ü buraya alacağız.
+
+600
+01:55:46,976 --> 01:55:49,195
+5 geldiğinde 5'i buraya alacağız.
+
+601
+01:55:54,868 --> 01:55:57,868
+Bu şekilde Binary Search Tree pek olmaz ama
+
+602
+01:55:59,868 --> 01:56:07,368
+Yani şu düğümle şu düğümün yer değiştirilmesi doğrudan Binary Search Tree algoritması mı yok? Sıralı Binary Search Tree olsa anlarım.
+
+603
+01:56:08,368 --> 01:56:09,868
+5
+
+604
+01:56:12,368 --> 01:56:14,168
+Sonra 6 geliyor, tamam.
+
+605
+01:56:15,967 --> 01:56:17,768
+Sonra 10 geliyor.
+
+606
+01:56:18,967 --> 01:56:20,768
+6'yı yukarıya aldı.
+
+607
+01:56:23,283 --> 01:56:34,283
+Şimdi arkadaşlar, bu şeyde bir sıkıntı var. Ben buna bir bakayım da, yani hocayla bir konuşalım. Doğrudan binary search tree oluşturma. Hatta ben size bir algoritma açayım.
+
+608
+01:56:37,283 --> 01:56:38,283
+Visualization.
+
+609
+01:56:38,283 --> 01:56:40,283
+Ben bir şey söyleyebilirim ya.
+
+610
+01:56:40,283 --> 01:56:47,283
+Bu slide belki mesela şey uçurur dersek sonra düz olur.
+
+611
+01:56:47,731 --> 01:56:56,811
+Peki sonra 4'ü dersek, sonra da bozulur, o zaman 5 seçilecek diye bir slide değil mi mesela?
+
+612
+01:56:58,431 --> 01:57:06,011
+Şimdi söylediğinizi anlayamadım, sesiniz çok karışık geliyor. Bir saniye. Şöyle yapalım.
+
+613
+01:57:16,051 --> 01:57:19,671
+Biraz daha detaylı anlatabilirseniz video vere bakalım.
+
+614
+01:57:20,251 --> 01:57:23,231
+Ben mesela bu slide'dan şöyle anladım.
+
+615
+01:57:24,811 --> 01:57:37,811
+3'ü root dedi. Sonra olmadı. Yer değiştirme falan oldu. Sonra 4 root olmuş. Satırın en son acı.
+
+616
+01:57:37,811 --> 01:57:38,871
+Evet.
+
+617
+01:57:39,359 --> 01:57:44,179
+Sonra 4'te biraz dengesiz sanırım gelmiş.
+
+618
+01:57:44,519 --> 01:57:44,799
+Evet.
+
+619
+01:57:45,439 --> 01:57:49,099
+Ve son aç 5 brut olmuş.
+
+620
+01:57:50,179 --> 01:57:50,379
+Şöyle.
+
+621
+01:57:51,079 --> 01:57:56,239
+Yani böyle bir binary search tree algoritması yok. Şimdi ben size şunu göstereceğim.
+
+622
+01:57:59,679 --> 01:58:03,159
+Belki ben yanlış hatırlıyorum mühimdür diye bunu açmak istedim.
+
+623
+01:58:03,159 --> 01:58:05,319
+Şimdi 1'i ekleyelim.
+
+624
+01:58:06,579 --> 01:58:10,259
+insert diyelim. Sonra 3'ü ekliyorum.
+
+625
+01:58:11,059 --> 01:58:14,819
+Insert diyorum, soluna gelecek. Sonra 4'ü ekliyorum.
+
+626
+01:58:15,659 --> 01:58:21,619
+Insert diyorum, böyle gelecek. Sonra 5'i ekliyorum, insert diyorum.
+
+627
+01:58:23,699 --> 01:58:26,699
+Anlatabildim mi? 6 diyoruz.
+
+628
+01:58:28,916 --> 01:58:36,476
+Muhtemelen Banu Hoca burada farklı bir yerden alıntı yaptı ama o alıntıda hocanın hatası var. Kendisine bildiririm bugün.
+
+629
+01:58:37,656 --> 01:58:43,116
+Binary Search algoritması arkadaşlar, büyükse sağ, küçükse sola ekleme şeklindedir.
+
+630
+01:58:44,836 --> 01:58:47,096
+20'yi niye ekledik ya? 16 ekleyecektik.
+
+631
+01:58:48,436 --> 01:58:52,496
+5, 6, 10 yerine 20 yazmışız. Tamam.
+
+632
+01:58:53,136 --> 01:58:54,476
+Şöyle yapalım, 26 diyelim.
+
+633
+01:58:56,884 --> 01:58:58,884
+Delete yapalım, doğru diyorsun.
+
+634
+01:59:00,884 --> 01:59:10,884
+Delete yaparken de arkadaşlar aynı mantıkla arama yapıyor. Yani diyor ki aradığın şey 20 ise o zaman sağa git. Bundan da büyük daha sağa git, sağa git, sağa git. Bu şekilde.
+
+635
+01:59:14,484 --> 01:59:16,484
+Bakın, o sırayla arıyor.
+
+636
+01:59:17,484 --> 01:59:19,484
+Bulduğu yerde sildi. Güzel.
+
+637
+01:59:19,984 --> 01:59:21,484
+10 ekleyelim şimdi.
+
+638
+01:59:27,923 --> 01:59:29,984
+Ondan sonra 16 ekleyelim.
+
+639
+01:59:35,731 --> 01:59:43,231
+Muhtemelen bu B3 algoritmasını, bir de B3'ye bakalım arkadaşlar, onu bulayım.
+
+640
+01:59:44,731 --> 01:59:46,231
+B3s.
+
+641
+01:59:49,460 --> 02:00:14,399
+Şuna, buradaki veriyi ekleyelim. 1, insert, 3, insert. Gerçi B3'de bu şekilde çalışır. Yani 4 dediğimizde insert. Bakın, 1, 3, 4. Sonra 5 ekleyelim, insert.
+
+642
+02:00:18,931 --> 02:00:21,171
+sonra altı ekleyelim.
+
+643
+02:00:25,332 --> 02:00:27,012
+3 ve 5'i aldı.
+
+644
+02:00:28,092 --> 02:00:31,692
+Şimdi bir eleman daha ekleyince, 10 ekle deyince.
+
+645
+02:00:38,100 --> 02:00:39,640
+16 ekle diyelim.
+
+646
+02:00:43,764 --> 02:00:49,943
+Şöyle bir durum var mı? 5'in rootta olduğu 5, 3, 10.
+
+647
+02:00:54,100 --> 02:00:57,460
+Yani böyle bir binary tree hoca nereden bulduysa
+
+648
+02:01:02,676 --> 02:01:26,436
+16 bir daha ekledik, yanlış oldu. Neyse, ben bunu bir tekrar şey yapayım. Şu algoritmayı burada bir daha görelim. Yani 1, 4, 5. Bu HIP algoritmasında öyle bir şey var. Buna benzer bir durum var. Ama HIP'te de durum farklı. Yani o da olmaz. Bunun kaynağını bir öğreneyim ben arkadaşlar.
+
+649
+02:01:32,724 --> 02:01:34,724
+bu şekilde ekleyip gidiyor.
+
+650
+02:01:43,412 --> 02:01:58,892
+Şimdi binary search uygun şekilde vermiş olan 23, 23'e 13 küçük olduğu için 13'ü sola ekledi. 19 büyük olduğu için, küçük olduğu için yok. Yani burada da bir problem var.
+
+651
+02:02:01,532 --> 02:02:10,612
+Yani 23'ü buraya alacak, 13'ü sola alacak, tamam. 19'u da sola alır, 19'u da buraya, ha 19'u buraya aldı, doğru.
+
+652
+02:02:11,220 --> 02:02:37,559
+47 ekleyince buraya aldı doğru. 11 ekleyince ne olacak? Bu küçük. Bak buradaki örnek doğru. Biraz önceki örnekte başka bir şey var muhtemelen. Şimdi 23 root olarak geliyor arkadaşlar. Bu birinci eleman. 13 küçük olduğu için doğrudan buraya geliyor sırasıyla. 19 küçük oldu. Bundan küçük buraya geldi. Bundan büyük buraya geldi. 47.
+
+653
+02:02:38,163 --> 02:02:48,043
+Büyük olduğu için buraya geldi. 11, bundan küçük buraya geldi, bundan küçük buraya geldi. Eğer burada eleman olsaydı bu tarafa gelecekti veya buraya gelecekti küçüklük durumuna göre.
+
+654
+02:02:48,863 --> 02:03:01,404
+43'e eklediğimizde bundan büyük, bundan küçük buraya geldi. 7 eklediğimizde bundan küçük, bundan küçük, bundan küçük buraya geldi. 29 eklediğimizde ne olacak? Önce buraya gelecek.
+
+655
+02:03:02,292 --> 02:03:11,292
+Bundan küçük olduğu için buraya gelecek, 43'ten küçük olduğu için buraya gelecek. 52 eklediğimizde de bundan büyük, bundan büyük, işte buraya gelecek.
+
+656
+02:03:11,292 --> 02:03:23,292
+Elle çizeyim mi? Bakın 23, 23. Küçük olduğu için 13 buraya geldi. 19 bundan küçük, bundan büyük, bunun burasına geldi.
+
+657
+02:03:23,292 --> 02:03:28,292
+47 buraya geldi. 11 bundan küçük, bundan küçük, 11 buraya geldi.
+
+658
+02:03:29,332 --> 02:03:54,972
+43 bundan büyük bundan küçük buraya geldi. 7 bundan küçük bundan küçük bundan da küçük 7. 29 bundan büyük bundan küçük şuraya geldi. 52 bundan büyük bundan da büyük 52 buraya geldi. Ağaç bu şekilde. Şu önceki binary search tree algoritması değil. Burada başka bir şey var. Bunu bir sorayım ben. Tamam.
+
+659
+02:03:55,828 --> 02:03:58,168
+Gelecek ders size bilgi veririm bu konuda.
+
+660
+02:03:59,608 --> 02:04:01,968
+Yani bu iki slide'ı atlayın arkadaşlar.
+
+661
+02:04:02,188 --> 02:04:09,768
+Ve biz bunu dizide oluşturduğumuzda her bir dizi üzerinde saklamak istersek bu ağacı,
+
+662
+02:04:10,568 --> 02:04:16,868
+birinci eleman, birinci indiz, ikinci indiz, üçüncü indiz, dört, beş, altı, yedi, sekiz, dokuz.
+
+663
+02:04:16,868 --> 02:04:22,268
+Yani burada iyi ve iyiye bağlı bir denklem çıkarırsak,
+
+664
+02:04:22,931 --> 02:04:49,051
+Dereceye göre, burası i eşittir şey için, burası ne oluyor? i artı bir oluyor, burası i artı iki oluyor, şurası i artı üç oluyor. İki i artı bir şeklinde, iki i artı bir, iki i, pardon, iki i, iki i artı bir, iki i artı iki, iki i artı üç şeklinde bunun bir denklem hali vardır. Ona gerek yok şimdilik.
+
+665
+02:04:49,439 --> 02:05:14,979
+Bu birden başlayıp her bir düğümü yani sırasıyla eklediğinizde arada boş düğümler olacak tabii ki. Sekiz, dokuzu yok mesela boş. On yok, on biri yok, on iki, on üç yok, on dört yok, on beş yok. Bu şekilde dizide saklanır. Dizi belirip bunu mesela şunu verdiğinde sizden şeyi istediğinde ağaç şeklini istediğinde bunu elde edebilmeniz lazım.
+
+666
+02:05:15,604 --> 02:05:25,044
+veya dizi şu verilir, bunun dizi şeklini bulun derler. O zaman önce bunu bulacağız, ondan sonra buradan bunu çıkarabiliyoruz.
+
+667
+02:05:28,500 --> 02:05:50,000
+Şimdi ağaç düğümlerinin listesi. Bu arkadaşlar Prefix, Infix ve Postfix ile aynıdır. Preordur, Prefix'tir. Yani artı AB yapacaksınız. Şimdi şuna baktığımızda bu bir ağaç. Bu da bir ağaç. Ben bu ağacı Prefix ile gezmek istersem.
+
+668
+02:05:50,547 --> 02:06:08,368
+Ne yapıyorum? Önce rootlara gidiyorum. Root'ta ne var? Önce bir var. Sonra bir diğer root'a gidiyorum. İki. Sonra bir diğer root'a gidiyorum. Bu artık ne? Üç. Başka root kalmadı. Artık ne yapacağım? Soldakine, yani buna gideceğim. Ondan sonra sağa gideceğim. Dört.
+
+669
+02:06:09,547 --> 02:06:17,788
+Bu işlem bittikten sonra nereye gideceğim? Burada root var. Yani burası sol idi. Bunun solu. Buraya geleceğiz. Beş.
+
+670
+02:06:18,484 --> 02:06:25,884
+Buraya geleceğiz 6, buraya geleceğiz 7. Preorder traversal. Artı AB mantığıyla aynı şekilde çözersiniz.
+
+671
+02:06:26,664 --> 02:06:38,404
+Gelin bunu infix ile yapalım. A artı B. Şimdi bu root. Bunun solunda çocuk var. Geldik. Bu da root. Ne oldu? Önce 3 yazacağız.
+
+672
+02:06:38,404 --> 02:06:45,824
+Sonra 2'yi yazacağız. Sonra 4'ü yazacağız. Burası sol kısımdı. Bunun root'u 1.
+
+673
+02:06:46,644 --> 02:07:08,484
+Sonra sağa geliyoruz. Burası sol kısım 6, 5, 7. Bakın bu infiks. Postfiks ile yazarsak 3, 4, 2, 6, 7, 5, 1. Bu şekilde olur. Veya post order ile yazarsak. Aynı mantığı. Yani şunları öğrenmeniz sizin için burada büyük kolaylık sağlar.
+
+674
+02:07:14,452 --> 02:07:39,612
+A artı B gibi düşünün. Bu ifadeyi yazarken ne olacak? Önce bir yazılacak, sonra iki yazılacak, sonra üç yazılacak. Burada sadece sıralamını göstermiş. Bir, iki, üç, sonra dört yazılacak, sonra beş, sonra altı, sonra yedi. Şu ifadeyi preorder ile yazarsak ne olur? Önce dördü yazarız. Sonra sola geliriz ama bu kendisi root olduğu için yine ikiyi yazarız.
+
+675
+02:07:40,020 --> 02:07:42,239
+Sonra 1'i yazarız, sonra 3'ü yazarız.
+
+676
+02:07:43,060 --> 02:07:43,699
+Şimdi bu bitti.
+
+677
+02:07:44,539 --> 02:07:45,980
+Şurası bitti, şu da bitti.
+
+678
+02:07:46,159 --> 02:07:47,360
+Bunun sağına geldik.
+
+679
+02:07:47,980 --> 02:07:49,380
+6 root olarak var.
+
+680
+02:07:50,140 --> 02:07:51,460
+5 var, 7 var.
+
+681
+02:07:51,760 --> 02:07:54,079
+Bu pre order'dır.
+
+682
+02:07:55,579 --> 02:07:57,140
+Post order yapmak istersek
+
+683
+02:07:57,140 --> 02:07:59,460
+1, 3, 2,
+
+684
+02:07:59,460 --> 02:08:02,000
+5, 7,
+
+685
+02:08:02,279 --> 02:08:03,619
+6, 4 olur.
+
+686
+02:08:05,140 --> 02:08:05,920
+Anlaşıldı mı?
+
+687
+02:08:06,612 --> 02:08:33,992
+infix prefixi anlamak yeterli. Post order işte burada 1, 2, 3, 4, 5, 6, 7. Bunu in orderla yapın, başka şekilde yapın fark etmez. Reverse post order arkadaşlar. Post order için biz şunu biliyorduk. AB artı. Burada bunun reverse ne olur? Artı AB. Yani önce bunu alacaksın. Sonra bir ruta daha gideceksin.
+
+688
+02:08:34,868 --> 02:08:42,368
+Sonra artık gidecek root kalmadı. Pardon, artı ba olacak. Şurada yanlış yazdık. Artı ba.
+
+689
+02:08:43,868 --> 02:09:02,387
+Root. Bu da root. Bunun b'si artık şu. Daha sonra bu. Burası bittikten sonra bu root olarak geldi. Bunun b'si bu, bunun b'si bu. Yani şu post order'ın tam tersten sıralanması.
+
+690
+02:09:03,028 --> 02:09:11,628
+Yani A artı B ile arkadaşlar burada çözemeyeceğiniz sorun yok. Sadece rekürsif düşünüp algoritmanızı koşturmanız gerekiyor zihninizde.
+
+691
+02:09:17,807 --> 02:09:28,927
+Şimdi mesela burada pre-order yapalım demiş. Pre-order ne demekti? Artı AB demekti değil mi? O zaman
+
+692
+02:09:29,328 --> 02:09:31,547
+root'lardan toplaya toplaya geleceğiz.
+
+693
+02:09:32,748 --> 02:09:38,387
+Tabii ikili ağaç olması durumu yok burada. Üçlü ağaçlar da var. Önemli değil.
+
+694
+02:09:40,188 --> 02:09:42,728
+Üçlü bir ağaç olursa veya başka bir ağaç olursa
+
+695
+02:09:42,728 --> 02:09:47,788
+AB sırasına geldiğinizde ABC'de diye devam edip gidebilirsiniz.
+
+696
+02:09:48,988 --> 02:09:50,547
+Şimdi bu bir root A.
+
+697
+02:09:52,128 --> 02:09:54,188
+Sola geldim. Bu başka bir root.
+
+698
+02:09:56,212 --> 02:10:00,832
+Bunun için de sola geliyorum. Root olduğu için bir daha sola geleceğim. E.
+
+699
+02:10:01,832 --> 02:10:03,152
+Sola geliyorum.
+
+700
+02:10:03,852 --> 02:10:04,972
+F var.
+
+701
+02:10:05,312 --> 02:10:06,612
+J var.
+
+702
+02:10:09,252 --> 02:10:10,372
+Solu bitti.
+
+703
+02:10:10,612 --> 02:10:13,252
+Sağa geçeceğim. Bu kendi içinde root.
+
+704
+02:10:14,652 --> 02:10:16,492
+Sola geliyorum. N.
+
+705
+02:10:16,492 --> 02:10:18,292
+Sağa geçiyorum. O.
+
+706
+02:10:18,472 --> 02:10:19,972
+Sağa geçiyorum. P.
+
+707
+02:10:20,532 --> 02:10:22,072
+Bakın şuraya kadar.
+
+708
+02:10:22,836 --> 02:10:47,196
+Sol çocuk bitti. Bunun sağına geçiyorum C. Bunun sağına geçiyorum D, root. Bunun soluna geliyorum G. Bunun soluna geliyorum L. Soluna geliyoruz M. Bu sola geldikten sonra bu root'un... Bir dakika arkadaşlar, şurada farklı bir hata mı yaptık?
+
+709
+02:10:47,196 --> 02:10:49,016
+İyi yaptık hocam.
+
+710
+02:10:50,931 --> 02:10:52,551
+B'den sonra
+
+711
+02:10:58,068 --> 02:11:08,988
+E, tamam C var, D var, G var, L var, M var, H ve İ olacak.
+
+712
+02:11:10,948 --> 02:11:12,648
+C'den önce F vardı hocam.
+
+713
+02:11:14,028 --> 02:11:15,228
+G'den önce F.
+
+714
+02:11:15,307 --> 02:11:16,088
+C'den.
+
+715
+02:11:16,307 --> 02:11:17,108
+C'den önce.
+
+716
+02:11:18,948 --> 02:11:23,788
+B, P'den sonra şuraya F gelecek.
+
+717
+02:11:25,908 --> 02:11:32,168
+A, B, E, J, K, N, O, P, F, C, D, G, L, M, H, I.
+
+718
+02:11:34,708 --> 02:11:35,668
+Tamam mı?
+
+719
+02:11:37,608 --> 02:11:40,188
+Bakın, B'den sonra C'yi yazmıyorum.
+
+720
+02:11:40,307 --> 02:11:44,128
+Çünkü B root, root'un altında bir başka root daha var.
+
+721
+02:11:44,387 --> 02:11:49,548
+Önemli olan artı A, B'de root öncelikli gidiyorsunuz.
+
+722
+02:11:50,996 --> 02:12:09,355
+A'yı görmeden root'u almanız gerekiyor. Onun için şurada root var. C'yi görmeden buradaki öbür root'u alacağız. F'yi görmeden buradaki öbürünü alacağız. J'yi alacağız. Ondan sonra J'den sonra sağda K var. K'dan önce işte bu tarafa çıkmadan bunları alıp gidiyoruz.
+
+723
+02:12:16,659 --> 02:12:40,720
+Önce sola gidiyoruz. Sola gidiyoruz, en sola gidiyoruz. J'yi aldık. Sonra operatörü alıyoruz, artıya aldık. Pardon, ne artısı? E'yi aldık. Sonra sağa geliyoruz. Sağa geldiğimizde de sola kadar gitmemiz lazım. Yani J, E, N'yi aldık. Sonra K'yı aldık, sonra O'yu aldık, sonra P'yi aldık.
+
+724
+02:12:41,524 --> 02:12:57,384
+Bu bittikten sonra, şurası bittikten sonra, B'yi alıyorum, sonra F'yi alıyorum. Burası bittikten sonra, A'yı alıyorum, C'yi alıyorum, D'yi almadan önce G'yi alacağım.
+
+725
+02:12:58,844 --> 02:13:08,684
+G'yi aldıktan sonra, pardon G'yi de almadan önce, bir dakika, kafam karıştı dur. A artı B.
+
+726
+02:13:10,612 --> 02:13:20,332
+sola gidiyoruz, sola gidiyoruz, J'yi aldık. J'den sonra E'yi aldık. Bundan sonra N'yi aldık. Ondan sonra K'yı aldık.
+
+727
+02:13:21,612 --> 02:13:31,112
+A artı O'yu aldık. Sonra P'yi aldık. Tamam. Yalnız şurada bir tane daha K olabilir. Bu üçlüler pek böyle çıkmaz da.
+
+728
+02:13:31,852 --> 02:13:38,012
+Sonra K'yı iki kere, evet şurada K'yı bir daha almamız gerekecek. Tekrar K'ya ulaştık çünkü.
+
+729
+02:13:38,547 --> 02:14:01,887
+K, O, K'dan sonra, N'den sonra, K, K'dan sonra, O, O'dan sonra tekrar, K, sonra P. Bunu aldıktan sonra, bunun üstünde B var, ondan sonra F var, bunun üstünde A var, ondan sonra C var. Şurada tekrar A ekleyeceğiz o zaman.
+
+730
+02:14:04,507 --> 02:14:05,887
+A ekleyeceğiz.
+
+731
+02:14:08,692 --> 02:14:34,092
+Ama A'ya bir defa girdiğimiz için A'yı ikinci defa almaya gerek yok. Onları muhtemelen sileceğiz. Yani cevabın da muhtemelen odur. Sonra D'ye gelmeden önce G'yi alacağız. Pardon, G'yi almadan önce L'yi alacağız. Sonra G'yi alacağız. Sonra M'yi alacağız. Sonra L, G, M. Sonra D'yi alacağız.
+
+732
+02:14:35,060 --> 02:15:00,340
+Ondan sonra H'ı alacağız, sonra İ'yi alacağız. Arada belki D'yi almamız gerekir. Ama bir defa ziyaret ettiğimizi bir defa daha ziyaret etmiyoruz. J, E, N, K, O. Bakın şurada K yok. Çünkü bir defa ziyaret ettikten sonra etmeye gerek yok. K, O, P, B, P, A, C. Şurada A'yı bir defa ziyaret etmiştik bir daha. L, G, M, D, H, İ.
+
+733
+02:15:00,884 --> 02:15:20,283
+Aynı şeye iki defa girmiyoruz. Genellikle arkadaşlar bir ikili arama acıtlarında bu inordur, postordur sorulur. Yani bu tarz şeylerde bazen işte şunları görebilirsiniz. Yani çok bir problem değil çünkü O'dan çıkıp K'ya tekrar giriyoruz. Böyle bir matematiksel işlem olabilir. Yani ne demektir bu?
+
+734
+02:15:27,828 --> 02:15:29,828
+işlem o işlem
+
+735
+02:15:29,828 --> 02:15:31,828
+şöyle diyelim
+
+736
+02:15:31,828 --> 02:15:33,828
+en işlem o
+
+737
+02:15:33,828 --> 02:15:35,828
+işlem p
+
+738
+02:15:35,828 --> 02:15:39,828
+buradaki bu k işlemi hatta şöyle yuvarlak içine alalım
+
+739
+02:15:39,828 --> 02:15:43,828
+böyle bir matematiksel sonucu olabilen bir işlem olabilir
+
+740
+02:15:43,828 --> 02:15:47,828
+ama aynı görünen şeyi bir daha yazmıyorlar
+
+741
+02:15:47,828 --> 02:15:48,972
+onun için
+
+742
+02:15:49,395 --> 02:15:56,095
+Matematiksel ifadeler ikili arama ağacına eklenir. Peki N, O, P kendi arasında nasıl sıralı?
+
+743
+02:15:57,716 --> 02:16:03,315
+Şey, yani A artı B şeklinde, yani soldan sağa doğru. Şuradaki olduğu gibi.
+
+744
+02:16:05,015 --> 02:16:11,536
+Önce sol, ondan sonra, şimdi burada büyüklük, küçüklük olarak diye bir şey olmaz.
+
+745
+02:16:14,739 --> 02:16:24,739
+üç tane pointer tutar burada implementasyonda. Bu gelen veri hangi algoritmaya göre sıralanıyorsa keyfi olarak da sıralayabilirsin.
+
+746
+02:16:24,739 --> 02:16:36,739
+Ama dolaşırken, inorder'a göre dolaşırken en soldaki düğümü önce, ondan sonra en sağdaki, ondan sonraki daha sağdaki, daha sağdaki, en en sağdakinden doğru böyle gider devam eder.
+
+747
+02:16:37,683 --> 02:16:43,563
+Hani buradaki verilerin büyüklüğü, küçüklüğü, üçlü durum olduğu için pek burada kullanılmaz.
+
+748
+02:16:43,563 --> 02:16:45,103
+Tamam.
+
+749
+02:16:52,659 --> 02:17:00,759
+Binary Search gibi değil tabii. Çünkü burada binary durum yok. Yani şimdi öyle olsa her düğümün 3 çocuğu olması lazım. Şimdi binary search değil, kurallı bir şey.
+
+750
+02:17:03,000 --> 02:17:04,799
+Kurallı olduğu için durum farklı oluyor.
+
+751
+02:17:08,059 --> 02:17:13,959
+Post Order'a da baktığımızda aynı. Yani A, B, artı diyeceğiz.
+
+752
+02:17:15,559 --> 02:17:18,959
+Sola geldik, sola geldik, sola geldik. Solda ne var? J var.
+
+753
+02:17:19,924 --> 02:17:45,864
+Burada geldiğimizde, burada N var. Artık sağa gidebiliriz. J, O, N, P, bunun K'sı, bunun E'si. Sonra bunun F'si, bu düğümün B'si. Soldan sonra C'ye geliyoruz. C'den sonra D'ye geliyoruz ama D'den önce G var. G'den önce de pardon, G'den önce L ve M var.
+
+754
+02:17:49,587 --> 02:17:56,907
+L, M, G, G'den sonra H var, İ var, D var, A var.
+
+755
+02:17:58,948 --> 02:18:05,628
+J, O, N, O, P, K, E, F, B, C, L, M, G, H, İ, D, A.
+
+756
+02:18:08,768 --> 02:18:12,427
+Aritmetik ifadeler işte bizim yaptığımız infiks ve postfiksler arkadaşlar.
+
+757
+02:18:13,620 --> 02:18:25,020
+aynı notasyonla gezilebiliyor. İşte prefix formu, postfix formu şu ifadeyi infix ve postfix'e dönüştürmüş. Ben bunu artık daha zorlarını çözdüğüm için şey yapmıyorum.
+
+758
+02:18:25,020 --> 02:18:37,560
+Şimdi Hoofman Coding diye verileri sıkıştırmada kullanılan bir algoritma var. Bu en fazla geçen, en fazla sık kullanılan karaktere en çok
+
+759
+02:18:38,195 --> 02:19:05,556
+şey, en az sayıda bit atamaya dayalı sıkıştırma algoritması. Yani içeride en fazla A geçiyorsa, A'ya daha az bit atayacak kodlama yaparken. Daha az geçene daha fazla bit atayacak. Şimdi, bunun kendi içinde algoritması var. Yani bunu çok burada anlatmıyoruz. Daha çok veri yapılarının konusu. Şu şekilde bütün karakterler yapraklarda bulunuyor.
+
+760
+02:19:06,004 --> 02:19:21,044
+Daha sonra diyoruz ki, Hufman ağacında sağa doğru her gittiğinde bir ekle, sola doğru gittiğinde sıfır ekle. Sağa gittiğinde bir, sola doğru. Ağacın neresinde olursunuz olun. Ruttan itibaren her bir rutun solu sıfır, sağa bir.
+
+761
+02:19:21,044 --> 02:19:32,104
+Şimdi buraya göre baktığımızda t'yi nasıl kodlarız? 0, 1, 1. Mesela t şurada şuymuş. E'yi nasıl kodlarız? 1, 0, 0.
+
+762
+02:19:33,108 --> 02:19:50,468
+Sonra işte şunlar 00 oluyormuş. R dediğimiz şey 00A oluyormuş. R de 001 oluyormuş. Bu bir ağaç. Sağ taraftaki ağaçla kodlamak istediğimizde böyle de kodlanabilir. Çünkü bunlar artık karakter sıklıklarına göre oluşturulan şeyler.
+
+763
+02:20:00,000 --> 02:20:23,840
+Mesela t'yi burada söylememiş, ne kaldı? C'yi söylememiş, t'de 001 oluyor. Bu şekilde veriler kodlanıyor. Ağacın oluşturulması neye göre arkadaşlar? Karakterlerin sıklığına göre. C nasıl 1 oluyor? C1 olmadı. Hangisinde C1? Şurada C010.
+
+764
+02:20:25,716 --> 02:20:52,036
+0, 1, 0. Burada C, 0, 1. İki karakterli. C, 1 değil burada. Karakterleri bakın, büyüklüğüne göre sıralamıyoruz arkadaşlar. Yani A, 8 defa geçmiş. B, 9 defa geçmiş. Bunun kendi algoritması var. Huhman algoritması. Şu sayfadan hatta isterseniz varsa bir bakalım.
+
+765
+02:20:56,244 --> 02:20:56,963
+Hufman.
+
+766
+02:21:05,043 --> 02:21:06,684
+Java versiyonu varmış da.
+
+767
+02:21:08,484 --> 02:21:09,724
+Veya diyelim ki, Hufman
+
+768
+02:21:09,724 --> 02:21:12,583
+Encoding
+
+769
+02:21:12,583 --> 02:21:15,083
+Calculator diyelim.
+
+770
+02:21:17,804 --> 02:21:20,283
+Burada bir metin vermeniz gerekiyor.
+
+771
+02:21:20,824 --> 02:21:22,203
+Bu pek
+
+772
+02:21:22,203 --> 02:21:24,283
+şey bir değil.
+
+773
+02:21:24,443 --> 02:21:27,403
+Online Hufman Coding Visualization
+
+774
+02:21:31,379 --> 02:21:37,259
+Mesela A, A, B, B, C, C, C, D, D olsun.
+
+775
+02:21:38,680 --> 02:21:44,139
+Build 3 diyoruz. Bakın A 3 tane. Şunu biraz slow yapalım.
+
+776
+02:21:45,539 --> 02:21:46,619
+Animations, PT.
+
+777
+02:21:49,259 --> 02:21:57,239
+Build 3. A 3 tane, B 3 tane, C 4 tane, D 2 tane. En küçük 2 tanesini alıyor. Bir ağaç oluşturuyor.
+
+778
+02:21:58,899 --> 02:22:18,559
+Sonra bir küçüğü daha ekleyecek. Sonra ikisini de ekleyecek işte kalan ikisini bir ağaç oluşturacak. Sonra bu ikisinden bir ağaç daha yani ikisini tek bir ağaç haline getirecek. 7-5-12 olacak. Bu şekilde ağaç. Sonra sağlara bir, sollara, sol kısımlara sıfır verecek.
+
+779
+02:22:22,451 --> 02:22:23,531
+Speed arttıralım.
+
+780
+02:22:28,435 --> 02:22:46,935
+Burada doğrudan ağacı mı oluşturuyor? Evet. Sonra diyecek ki mesela D dediğimiz şey 1, 1'e karşılık. C 1, 0'a karşılık. 0, 1'e karşılık. Bu da 0, 0'a karşılık geliyor. Mesela şurada D'yi çok daha fazla arttıralım. Build 3 diyelim.
+
+781
+02:22:52,275 --> 02:23:18,636
+Bakın 6 ve 4'ü bu sefer eşleştirdi. 10 ile 18'i eşleştirecek. Bakın D bir bit ile sıkıştırılabilir olacak. C'ye 2 bit, şunlara da 3'er bit geliyor. Normalde ASCII kod tablosunda 1, 2, 3, 4. Şurada kaç tane karakter var? Mesela 10 tane karakter olsun. 10 tane her biri 8 byte'dan.
+
+782
+02:23:19,156 --> 02:23:45,515
+80 byte yer kaplar. Ama biz burada, işte buraya bir bit dedik. Bunun için bir byte olacak. Yani burada 8 tane şey var. Her birine bir bit desek, bir byte ile bunu hallediyoruz. İşte şurada ciğerler için iki byte. 8 byte de buradan, bir byte, 8 bit de buradan geliyor. 2 byte. Böyle azaltarak veri sıkıştırılabiliyor. Sonuçta yine sıfır ve birler oluyor ama.
+
+783
+02:23:46,644 --> 02:23:48,023
+Neyse, geçelim burayı.
+
+784
+02:23:49,123 --> 02:23:52,423
+Ha, burada yine anlatılmış mı? Yani hoca ekledi herhalde.
+
+785
+02:23:53,363 --> 02:23:57,363
+Elimizde A, K, E, L, M somelinin sırasıyla bu kadar olsun.
+
+786
+02:23:57,603 --> 02:24:00,184
+Yani elimizde bu kadar şey var. Alfabemiz bunlar.
+
+787
+02:24:01,783 --> 02:24:03,724
+Bunları öncelikle küçükten büyüğe sıralıyoruz.
+
+788
+02:24:05,083 --> 02:24:12,623
+Sıklık değerleri soldan başlayarak sıradaki iki sıklık değerinin toplamlarının sırayı bozmayacak şekilde diziye yerleştirmesi devam edilir.
+
+789
+02:24:13,108 --> 02:24:18,528
+Yani 2, 4, eksi 6 demiş.
+
+790
+02:24:21,047 --> 02:24:23,927
+7, 8, arada boşluklar olacak.
+
+791
+02:24:24,727 --> 02:24:26,628
+Toplam değerlerini gösteriyor arkadaşlar.
+
+792
+02:24:27,347 --> 02:24:28,327
+Ama 7, 8 daha.
+
+793
+02:24:29,927 --> 02:24:30,907
+Eksi 6, evet.
+
+794
+02:24:31,667 --> 02:24:33,347
+Eksi 6 ile 7'yi topladı.
+
+795
+02:24:34,007 --> 02:24:34,788
+Eksi 13.
+
+796
+02:24:37,788 --> 02:24:39,108
+14 ile...
+
+797
+02:24:39,376 --> 02:24:41,935
+7'yi topladı, eksi 21.
+
+798
+02:24:43,335 --> 02:24:45,256
+Bunu niye böyle yapmıştı hocam?
+
+799
+02:24:49,716 --> 02:24:53,876
+Hocam, eksi değer ara toplam demekmiş galiba. Yukarıda öyle bir not yazıyorduk.
+
+800
+02:24:53,916 --> 02:24:54,736
+Ara toplam da?
+
+801
+02:25:00,115 --> 02:25:08,636
+Eksi değer bir ara toplum. Yani, eksi 6, 2 ile 4'ün toplamı olacak. Şimdi, 2 ile 4'ü aldığında şöyle bir ağaç olacak arkadaşlar.
+
+802
+02:25:10,815 --> 02:25:27,335
+2 var, 4 var, 6 bölü de not. Daha sonra 7 ve 8. Şimdi, 6 ile 7'yi toplayıp, 6 burada, buna şöyle bir şey yapacak.
+
+803
+02:25:28,084 --> 02:25:52,824
+13 diyecek. 13'e de 7. 6 ile 7 toplayıp 13 olacak. Yani 7'yi aldık, 2'yi aldık, 4'ü aldık. Şimdi 13'e, pardon şurada 7 var, bu 13. 13'e daha sonra bir başka not da 8 ekliyor. Pardon şöyle yapacağız. 8 diye bir not. Bu da 21 olacak.
+
+804
+02:25:55,252 --> 02:25:56,391
+Ə...
+
+805
+02:26:00,211 --> 02:26:23,671
+Sonra 14 ile 25. Şimdi 14 dediğimiz şey buradakinden büyük olduğu için yani bunu aldık, bunu aldık, bunu aldık, bunu aldık. 14, şu 13'ten şey küçük, 13'ten büyük, 14 ile 25'i ayrı bir ağaç yapıyor.
+
+806
+02:26:25,523 --> 02:26:30,903
+Ve 14 ile 25'in toplamı 35 ayrı bir ağaç oluyor.
+
+807
+02:26:33,963 --> 02:26:35,583
+Ara toplam olarak.
+
+808
+02:26:36,503 --> 02:26:38,283
+21 burada ara toplam.
+
+809
+02:26:39,103 --> 02:26:43,563
+Bu 21 ile de 35'i toplaması lazım ama 60'ı nereden buldu?
+
+810
+02:26:46,183 --> 02:26:48,363
+Hocam 14 ile 21'i topluyor galiba.
+
+811
+02:26:53,556 --> 02:26:54,616
+Evet, doğru.
+
+812
+02:26:56,675 --> 02:27:08,156
+Bu, bu şekilde oluşturulmaz. Yani ağacı daha sonra tersten yapmış. Bu biraz şey bir yaklaşım. Bunun daha kolay bir yolu var. Bu derste anlatmıyorduk ama ben daha sonra onu da size anlatırım.
+
+813
+02:27:09,015 --> 02:27:20,436
+21'e, evet, 14'e eklersek 35'i buluyoruz. 35'e de 25'e eklersek 60'ı buluyoruz.
+
+814
+02:27:21,396 --> 02:27:40,115
+Sırayla ne yaptık? 2 ve 4'ü ekledik, 6'yı bulduk. 6'ya 7'yi ekledik, 13'ü bulduk. 13'e 8'i ekledik, 21'i bulduk. 21'e 14 ekledik, 35'i bulduk. 35'e 25 yeşe ekledik, 60 bulduk.
+
+815
+02:27:47,924 --> 02:27:51,224
+Bu sıfır, bu bir bir sıfır. Yaprakları etiketleyeceğiz.
+
+816
+02:27:52,224 --> 02:27:55,764
+Bu bir, pardon, şu sıfır arkadaşlar, şu bir.
+
+817
+02:27:56,644 --> 02:27:58,684
+Ters yapıyorum, sıfır sıfır bir olacak bu.
+
+818
+02:28:00,604 --> 02:28:05,424
+Bu sıfır, sıfır sıfır sıfır, şu bir, üç tane sıfır bir tane bir.
+
+819
+02:28:06,264 --> 02:28:13,164
+Şu da sıfır, şu bir, sıfır sıfır sıfır sıfır bir, sıfır sıfır sıfır sıfır.
+
+820
+02:28:14,164 --> 02:28:14,564
+Böyle.
+
+821
+02:28:15,347 --> 02:28:38,968
+Ağaç oluşturdu. Ama bu ağacın başka oluşturma mantığı da var. Ağaç başka şekilde de çıkabilir. Bu şekilde ağacı oluşturduk. Şimdi baktığımızda en sondaki eleman Hufman konuda. Hani 60 demiş. Yani bu çarpım şekillerini oluştururken kafaya göre bu olmaz. Yani ilk ikisini toplayıp 6 yapıyor.
+
+822
+02:28:41,396 --> 02:28:58,123
+6 ile 7'yi topluyor, 13. 8 ile 14'ün arasına ekliyor. Sonra 13 ile 8'i topluyor, 21. 14'ten büyük olduğu için dizi sıralı olmayacak şekilde 21 buraya ekliyor. Sonra...
+
+823
+02:28:59,379 --> 02:29:26,139
+21 ile 14'ü topluyor, 35, 25'in sonrasını ekliyor. 35 ile de bunu topluyor, 60'ı buluyor. Bütün elemanlar toplandığı için, yani açlıkta eleman kalmadığı için bu şekilde yapmış. Neyse. Sonra demiş ki geriye doğru gelelim. 60 bizim ağacımız, şeyi, eksili olanı bu tarafa, artılı olanı bu tarafa atıyorum. Ondan sonra 35'ten önce ne var? 25.
+
+824
+02:29:27,379 --> 02:29:27,879
+Pardon.
+
+825
+02:29:29,439 --> 02:29:31,399
+Evet, 25'den sonra ne var?
+
+826
+02:29:31,979 --> 02:29:35,759
+Eksili olan 21 kök olacak, 14 yaprak olacak.
+
+827
+02:29:36,859 --> 02:29:37,719
+14, 14, 21.
+
+828
+02:29:37,939 --> 02:29:38,719
+Sonra geldik.
+
+829
+02:29:39,659 --> 02:29:43,659
+Eksi 13 kök olacak, 8 yaprak olacak.
+
+830
+02:29:46,239 --> 02:29:47,079
+Nerede?
+
+831
+02:29:48,659 --> 02:29:49,739
+Evet, 21'den sonra.
+
+832
+02:29:50,420 --> 02:29:59,200
+Sonra, eksi 13'den sonra, eksi 6 bu tarafa gelecek, 7 buraya gelecek, eksi 6'dan sonra 4 buraya gelecek, 2 buraya gelecek.
+
+833
+02:29:59,959 --> 02:30:06,420
+Burada da mesela, eksi 6'yı halbuki şuraya da ekleyebilirdi. Yani 7'yi buraya ekleyip, eksi 6'yı da buraya ekleyebilirdi.
+
+834
+02:30:06,979 --> 02:30:14,639
+Hiçbir şey fark etmezdi bit sayısı açısından. Ne oluyor? İşte bunlar, bu 1, bu 0, 1, bu 0, 1, bu 0, 1.
+
+835
+02:30:15,316 --> 02:30:18,456
+Bu 0, 1, bu da 0. Bu şekilde kodlanıyor.
+
+836
+02:30:21,736 --> 02:30:27,216
+Yapraklara baktığımızda, evet, bunların 0 ve 1 karşılıkları ve bunlar ne oluyor arkadaşlar?
+
+837
+02:30:28,316 --> 02:30:34,816
+Toplamda, işte şu karakter 25 bitlik bir alan kaplıyor.
+
+838
+02:30:36,096 --> 02:30:42,536
+Bu biraz daha 0, 1, yani 28 bitlik bir alan kaplıyor. Böyle devam edip gidiyor.
+
+839
+02:30:44,788 --> 02:30:50,347
+Şimdi şuraya bir bakalım kaçıncı sayfaya gelmişiz daha 36. sayfadayız.
+
+840
+02:30:55,891 --> 02:30:56,891
+Spanning 3.
+
+841
+02:31:01,236 --> 02:31:08,916
+Burada kalalım arkadaşlar biz. Bundan sonra çok fazla şekilli kısım olduğu için onlar çabuk içeride. Spanning Tree
+
+842
+02:31:09,876 --> 02:31:16,116
+hep şeyler var, algoritmalar var. Gelecek hafta
+
+843
+02:31:23,316 --> 02:31:24,355
+Saatimiz kaç?
+
+844
+02:31:25,515 --> 02:31:29,796
+Bir 15 dakikada şu Spanning Tree'yi anlatayım da bu kısım hızlı ilerler.
+
+845
+02:31:38,164 --> 02:31:40,064
+Örnekleri çok fazla zaten bunun.
+
+846
+02:31:42,064 --> 02:31:44,564
+Şimdi arkadaşlar, şöyle diyelim.
+
+847
+02:31:45,544 --> 02:31:55,103
+Ağaç üzerinde ulaşabileceğim bütün düğümleri minimum, ulaşabileceğim bütün düğümleri işaretlemek istiyorum.
+
+848
+02:31:55,224 --> 02:31:57,584
+Bir yol, alt ağaç oluşturmak istiyoruz.
+
+849
+02:31:58,704 --> 02:32:00,564
+Örneğin bir kargo şirketi.
+
+850
+02:32:01,876 --> 02:32:13,876
+bir güzergahı var. Güzergah üzerindeki bütün şeyleri tek bir yolda bir alt ağaçla göstermek istiyor. Bir alt sub tree. Bütün düğümleri içeriyecek. Buna spanning tree diyoruz.
+
+851
+02:32:13,876 --> 02:32:24,747
+Gereksiz yere edge eklemeyeceğiz. Bu genellikle graflarda olan bir şeydir. Onun için grafları anlatmak daha mantıklıydı. Ben başlıyorum.
+
+852
+02:32:25,012 --> 02:32:50,988
+Elimde bir dizi var. Kaç tane eleman? A, B, C, D, E, F, G. Ziyaret ettiklerime bir yapıyorum kenar ekleyerek. Mesela şuraya bir kenar ekleyince A ve B'yi ulaştım. Bir kenar daha ekledim, C'yi ekledim. Sonra ne bileyim bir F ekranı var. Gittim şuraya ekleyince bunu buldum. A, E varmış bunu ekledim. Dizinin bütün elemanları bir olana kadar bu işi yaptığımda neyi bulacağım? Spanning Tree'yi bulacağım. Yalnız...
+
+853
+02:32:52,468 --> 02:33:17,668
+yönlü şey ağırlıklı graflarda örneğin şurası 4 birim burası 8 birim olsun işte burada 3 birim olsun ben şunu ekleyip bunu ekleyip şunu eklemem daha az maliyeti bana söyleyecek. Bu iş graflarla daha çok alakalı. Birazcık anlatayım gelecek hafta graflarla birlikte bu konu daha iyi anlaşılır. Ona da diyeceğiz ki minimum spanning yani minimum cost olan spanning tree diyeceğiz.
+
+854
+02:33:18,451 --> 02:33:45,211
+Farklı Spanning Tree'ler demiş. İşte bu bir Spanning Tree. 8, 4, 1. Mesela 8, 3, 1. Şu daha şey. 3, 3, 1. Önemli olan yine bir ağaç şeklinde. Yani cycle yok. Farklı şekilde bütün düğümleri içerecek. Ben bunlardan en az maliyetli olanını bulursam o zaman ne yapacağız? En az maliyetlerini bulursam en minimum Spanning Tree olacak. Şimdi Spanning Tree oluşturmanın
+
+855
+02:33:45,652 --> 02:34:02,612
+minimalizasyondan farklı olarak iki farklı temel yöntemi var. Birincisi breadth-first search, diğeri depth-first search. Bunu ağaç gibi şöyle düşünürsek, breadth-first search şunu yapıyor. Önce diyor ki şu sıralardan ara, ondan sonra bu sıralardan ara.
+
+856
+02:34:03,992 --> 02:34:11,512
+Depth-first search de böyle git, en aşağıya kadar bulmaya çalış, o şekilde bul. Şimdi bir düğümümüz.
+
+857
+02:34:13,043 --> 02:34:37,844
+Bu Bradford Search ile önce buna git diyor. Sonra buna git diyor. Pardon. Önce şuraya gidelim. Buraya gittikten sonra derinlemesine gidebildiğim kadar gidiyorum. Sonra burada derinlemesine gidebildiğim kadar gidiyorum. Bakın bunları işaretledim. Sonra diyorum ki buraya gideyim. Şimdi buraya gittikten sonra şuraya gelmenin bir anlamı yok çünkü buraya gelinmiş. Şuraya gidebilirdim belki.
+
+858
+02:34:39,316 --> 02:35:03,616
+Buraya gitmemiş. Burada, bunun altına gidiyorum. Bunun altından sonra burası geliyor. Burayı işaretledim. Şurada da şuraya gidiyorum. Bakın, hep bütün düğümleri gördüğüm için bütün noktalara ulaştım. Bu Bread First Search. Depth First Search'te de buradayken buna, buna, buna, şuraya kadar gelebiliyoruz. Sonra buraya gelince bir buna, buna ve buna geliyorum.
+
+859
+02:35:04,275 --> 02:35:22,416
+Şurada kalmıştım. Buradan da buraya buraya geliyorum. Şimdi Bread First Search'de biz arkadaşlar Q kullanıyoruz. Burada da Stack kullanıyoruz. En son kaldığım noktayı unutmamak için Stack'te tutuyorum. Burada da Q'da tutuyorum. Bunun daha sonra biz algoritmik anlamda bakarız da şu örnekten gidelim.
+
+860
+02:35:32,915 --> 02:36:00,779
+A'dan sonra ilk komşu, en yakın komşu işte D olabilir, B olabilir. O önemli değil. D'yi atıyor. Diyor ki ben D'de kaldıysam D'yi çekeyim. D'nin komşusu ne var? F var. Sonra F'yi atıyor siteye. Pardon D'yi çekti, F kaldı. F'nin bir komşusu yok. F'yi de çekiyor. Sonra geldi A'da kaldığını gördü. A'dan sonra kime gidebilirim dedi. İşte H'a gidebilirim. H'ı A'yı tabii sitekten...
+
+861
+02:36:00,979 --> 02:36:22,139
+Daha bütün komşuları devam etsin. A duruyor, H'a gidiyor. H'ın bir şeyi yok, stekten tekrar çekiyor. Yine A'ya geldi. A'dan bu sefer B'ye gidiyor. B'den sonra B'nin komşusu E var. E'yi alıyor. E'den sonra E'yi çıkaracak komşusu yok. B'de kaldığını gördü. B'den sonra C'yi ekliyor. C'den sonra
+
+862
+02:36:23,636 --> 02:36:31,435
+C çıktı, B kaldı, B'yi de ziyaret etti için B'yi çıkardı, en son yine A'ya geldi, başka düğüm kalmadığı için A'da bu şekilde devam ediyor.
+
+863
+02:36:32,515 --> 02:36:40,076
+Ziyaret edeceği düğümler şu şekilde, A, D, F, sonra H, sonra B, sonra E, sonra C.
+
+864
+02:36:41,756 --> 02:36:47,796
+Stake'teki şeyler şu, staken çıkanlar, mesela st, A'yı ekledik, D'yi ekledik.
+
+865
+02:36:48,435 --> 02:36:55,115
+Sonra F'yi ekledik. Sonra F'yi stekten çıkarıyoruz. Niye? Stekte bunun başka komşusu, şey burada komşusu yok. Stekten çıkarılıyor.
+
+866
+02:36:55,756 --> 02:37:08,495
+Çıkardıktan sonra D'de kaldığımızı hatırlıyoruz stek vasıtasıyla. D'yi alıyoruz. Sonra A'yı çıkartmadan, çünkü A'nın başka komşuları var. A'nın komşularını ekliyoruz. H'ı ekledik.
+
+867
+02:37:08,956 --> 02:37:13,855
+Bakın B'yi eklemeden H'ın komşularına gidiyoruz. Derinlemesine dalıyoruz. Tamam mı?
+
+868
+02:37:14,164 --> 02:37:41,104
+B'den sonra C'ye bakmadık, B'den sonra E'ye baktık. Çıkarılanlar için ikinci stack burada tutmuyoruz. Yani stack sadece ekleme için. Outputta da arkadaşlar, visited, yani output olarak şunu söyleyebiliriz. İlk ulaştığımız yer, yani daha önce hiç bastırmadığımız yer, önce A'yı bastırdık, sonra D'yi bastırdık, sonra F'yi bastırdık, sonra H'yi bastırdık.
+
+869
+02:37:41,780 --> 02:37:43,620
+Stag'den çıkardıktan sonra
+
+870
+02:37:43,620 --> 02:37:48,120
+Şu stag'den çıkan için arkadaşlar
+
+871
+02:37:48,120 --> 02:37:50,459
+Her bir çıkma işlemi yaptığında
+
+872
+02:37:50,459 --> 02:37:52,819
+Site'ye kimi eklediysek ilk defa
+
+873
+02:37:52,819 --> 02:37:55,959
+Aslında o ekrana bastırılır. Yalnız
+
+874
+02:37:55,959 --> 02:38:00,120
+Stag'de ilk defa eklenenler bastırırken
+
+875
+02:38:00,120 --> 02:38:03,420
+Şuna dikkat edeceksin. Daha önce o ziyaret edilmiş mi edilmemiş mi?
+
+876
+02:38:04,435 --> 02:38:29,056
+İşin sonunda siteyin boşalması lazım, boş hale gelmesi lazım. Bradford Search'da arkadaşlar, kuyruk veri yapısı kullanılır. Kuyruğa ne yapıyorduk? Önden ekleyip, arkadan ekleyip önden çıkarıyorduk. Şimdi A ile başladığımızda, şimdi A'ya B ve C'nin komşuluğu önemli değil. A'nın ilk komşusu, yani biz bunu bir veri yapısında A, B, C'de sırasıyla saklarsak,
+
+877
+02:38:30,260 --> 02:38:55,619
+A ekleniyor. A'dan sonra A'nın komşuları ne var? B ekleniyor, C ekleniyor. Tamam mı? Dolayısıyla önce A'yı gördük. B'yi ve C'yi gördük. İfadede A, B, C görüldü. Şimdi A'nın başka komşusu yok. A'yı çıkarıyoruz. Sonra B'nin komşularına bakıyoruz. B'nin komşusu ne var? B buraya ekleniyor. F'yi görüyoruz. F eklendikten sonra B'nin başka komşusu yok çıkıyor.
+
+878
+02:38:56,015 --> 02:39:19,695
+Sonra C'nin komşularına bakıyoruz. C'nin komşusu ne var? E var. D var. Hatta D var, E var diyelim. Önce D'yi alalım. Önemli değil sırası. Önce E, sonra D de diyebiliriz. C'nin başka komşusu yok. C çıktı. Buradaki sıraya göre önce F'ye bakacak. C'den sonra sırada F var.
+
+879
+02:39:20,048 --> 02:39:43,608
+F'ye aldı. F'nin başka komşusu olmadığı için sırada kuyrukta D var. D'ye bakacak. D'nin komşuları ne var? H var. D'nin başka komşusu olmadığı için D'yi silecek. Sonra E'ye bakacak. Sonra H'tan sonra H'ın komşusu ne var? C var. H'ı yazacak. Daha sonra C'yi yazacak. Şurada şu şekilde de olabilir. Şimdi kuyruk şöyle.
+
+880
+02:39:45,236 --> 02:40:12,616
+A için bir eleman ekledik. A'nın komşusu ne var? B var dedik, C var dedik. A'yı ekleyince komşularını da ekledik. Sonra A çıkıyor, outputta A'yı gördük. B çıkarken B'nin komşusu ne var? B'nin komşusu F var. B'yi çıkartıyor. F'nin başka komşusu olmadığı için ekleyemedik. Sonra C'nin komşularına bakıyor. Burada ne yapmış arkadaşlar C'nin komşularına? E'yi önce eklemiş.
+
+881
+02:40:13,556 --> 02:40:38,616
+D'yi sonra eklemiş. Yani önce D'ye udayalım demiş. Önemli değil. C'yi çıkardıktan sonra F'yi çıkaracak. E'ye gelecek. E'nin komşusu yok. E'yi çıkaracak. D'ye geldiğinde D'nin komşusu var mı var? H var. Sonra D'nin başka komşusu yok. Eklemedi ve D'yi çıkardı. H'tan sonra H'ın komşusu ne var? J var. H'ı çıkaracak. Daha sonra J'yi çıkaracak. Bu şekilde Alput'u elde ediyoruz. Şuradaki
+
+882
+02:40:39,731 --> 02:41:04,272
+C'den sonra E gelebilir mi? Gelebilir. Yani o sıralamada doğrudur. E, daha sonra D, daha sonra pardon C'den sonra değil F'den sonra arkadaşlar. F'den sonra D, E, pardon pardon D gelirse ne olur? H'a gider. D'den sonra pardon D'den sonra ne var arkadaşlar?
+
+883
+02:41:07,796 --> 02:41:28,976
+Evet, D'ye eklerse H'a gider, H'a eklerse J'ye gider, ondan sonra D'ye gelir. Öyle bir mantığı vardır. Biraz o Depth for Search'e de benziyor burada ama D'nin komşusu kim varsa C'den sonra öyle mi olacaktı? Yok, öyle olmayacak arkadaşlar. Şöyle yapalım.
+
+884
+02:41:31,827 --> 02:41:36,948
+F'den sonra C'ye geldi. Şey yaptık bir dakika şöyle yeniden yazayım kuyruğu.
+
+885
+02:41:41,492 --> 02:41:42,772
+A'yı ekledik.
+
+886
+02:41:44,051 --> 02:41:45,072
+Niye yazamıyoruz?
+
+887
+02:41:49,587 --> 02:41:52,987
+A'yı ekledik kuyruğa, sonra B'yi ekledik.
+
+888
+02:41:54,808 --> 02:41:58,507
+Sonra B ile birlikte C'yi ekledik. İki tane komşusu bu var dedik.
+
+889
+02:41:59,887 --> 02:42:03,727
+Sonra B'nin ilk komşularına bakacak. B'nin ilk komşusu F.
+
+890
+02:42:04,948 --> 02:42:05,927
+F'yi ekleyecek.
+
+891
+02:42:07,727 --> 02:42:10,987
+Sonra sırada C var. C'nin ilk komşusu mesela D olsun.
+
+892
+02:42:12,244 --> 02:42:33,064
+Bir de E'yi ekleyecek, ikinci komşusu. Sonra F'ye bakacak, F'nin komşusu yok. Sonra D'nin komşusuna bakacak, D'nin komşusu H gelecek, çıktı da. Sonra E'nin komşusu yok. Sonra H'ın komşusuna bakacak, H'yi çıkaracak, J'yi çıkaracak, bu şekilde bu sırayla gider. E'yi yazıyoruz işte burada.
+
+893
+02:42:37,268 --> 02:42:40,668
+İlk önce E, sonra H ve J. Oldu mu [öğrenci]?
+
+894
+02:42:48,180 --> 02:43:14,479
+Şimdi bu ifadenin, bu minimal spanning tree'yi vermez. Brad first search ve depth first search. Şöyle düşünün arkadaşlar, bizim elektronik fakültesini hepiniz biliyorsunuz. Ben ikinci katta oturuyorum. Ama dört bloğun hangisinde oturduğumu bilmiyorsunuz. Ahmet Hoca'yı arayacaksınız. Geldiniz, kapıdan girdiniz. Dediniz ki ben derinlemesine arama yapacağım.
+
+895
+02:43:15,731 --> 02:43:19,772
+Derinlemesini arama yaparken bizim A bloktan kontrolden başladınız.
+
+896
+02:43:20,772 --> 02:43:24,011
+A blokun birinci katlarını dolaştınız.
+
+897
+02:43:25,811 --> 02:43:29,991
+Pardon, A blokun birinci katı, ikinci katı, üçüncü katı, dördüncü katını dolaştınız.
+
+898
+02:43:30,231 --> 02:43:31,092
+Baktınız, bulamadınız.
+
+899
+02:43:31,412 --> 02:43:34,011
+Geldiniz B blok'a, 1, 2, 3, 4 dolaştınız, bulamadınız.
+
+900
+02:43:34,191 --> 02:43:35,671
+A'cı düşünürseniz şöyle olur.
+
+901
+02:43:37,631 --> 02:43:38,151
+Geldik.
+
+902
+02:43:38,671 --> 02:43:38,951
+A
+
+903
+02:43:39,924 --> 02:43:57,924
+A1234, sonra B1234, sonra C1234, sonra D1234. Bu şekilde gezersiniz. D'nin şurasında bir yerinde bulursunuz. Depth first search yapmak da şu demektir. Gelelim önce bloktan girdim.
+
+904
+02:43:58,420 --> 02:44:25,740
+A1'i gezeyim, sonra B1'i gezeyim, sonra C1'i, yani şöyle yapacağız, A1'i, B1'i, C1'i, D1'i. Birinci katları bir gezeyim. Katlar arasında da geçiş olduğunu kabul edin, yani fakültenin birinci katları arasında. Sonra birinci katları da bulamadım, A2'ye bakayım, B2'ye bakayım, C2'ye bakayım, D2'ye bakayım. Sonra üçlere bakayım, dörtlere bakayım. Hangisini de bulursanız bulursunuz.
+
+905
+02:44:26,579 --> 02:44:33,520
+Bunlar arkadaşlar kör arama yöntemleri, Blind Search algoritmsi derler bunu.
+
+906
+02:44:34,260 --> 02:44:35,579
+Kör arama algoritmalarıdır.
+
+907
+02:44:37,239 --> 02:44:40,360
+Herhangi bir bilgiye sahip olmuyoruz arama yaparken.
+
+908
+02:44:42,540 --> 02:44:44,979
+Bulana kadar veya bulamıyoruz. Böyle bir şey var.
+
+909
+02:44:46,439 --> 02:44:52,439
+Bunu biraz daha bilgili yapmak ve minimum maliyetli ağacı bulmak istersek
+
+910
+02:44:53,172 --> 02:45:14,312
+Burada gelecek hafta konuşacağımız prim ve kruzkal algoritmalarını göreceğiz. Bundan sonra hep genelde şekilli şeyler var zaten. Minimum spanning tree de kalmış olalım. İnşallah konularımızı yetiştiririz. Yetiştiremezsek arkadaşlar bu konular önemli ek ders yapacağım kesinlikle.
+
+911
+02:45:15,672 --> 02:45:16,852
+Sormak istediğiniz bir şey var mı?
+
+912
+02:45:19,924 --> 02:45:25,084
+yoruldunuz. Çok fazla uzatmayalım daha fazla.
+
+913
+02:45:28,691 --> 02:45:50,291
+Yok. Yani dönem sonuna kadar graflar. Zaten dedik ya, son hafta bu sınavı ikinci vizeyi yaparız, test sınavı. Test sınavı arkadaşlar bütün konuları içerecek şekilde olduğu için final sizin için daha şey. Yani bu konular final için daha önemli. Ama bu konular asıl olarak sizin mesleğiniz için önemli. Onun için ben burada çabalıyorum.
+
+914
+02:45:53,299 --> 02:46:12,059
+Yapacağımız şey de bir ekstra ders. Ben üstün körü geçmek istemem, detaylı gitmek isterim. Ekstra bir ders. Cumartesi günü yapabiliriz. Bir ders yapısal programlama içinde ödevinizde yardımcısı olması açısından bir file operation ve veri tabanı mantığını anlatacağım.
+
+915
+02:46:12,415 --> 02:46:36,415
+Onun hakkında da duyuru yayınlayacağız. Hatta iki grubun ikisine de orada çağrıda bulunacağım yapısal programında ödev için. Bunları size duyururuz ama gidişat ayrık matematikte de ekstra derste bir ihtiyaç duyuyor. En azından o bir haftamız boşa gitmeseydi daha rahat ederdik. Peki hepinize iyi günler, iyi hafta sunlar arkadaşlar. Görüşmek üzere. Hoşçakalın.
+
+916
+02:46:52,020 --> 02:46:52,840
+İgnet.

@@ -1,0 +1,3539 @@
+1
+00:00:50,164 --> 00:00:51,364
+Arkadaşlar günaydın.
+
+2
+00:01:28,596 --> 00:01:49,176
+Geçen hafta kaldığımız noktada hatırlayacak olursanız, dallanma komutlarını incelemiştik. Bunun içinde gerekli karşılaştırma komutu ve koşullu dallanma komutlarının nasıl çalıştığını incelemiştik. Bunların koşulduğunlarını görmüştük.
+
+3
+00:01:51,215 --> 00:02:01,955
+Bu hafta itibariyle göreceğimiz komutlar, geçen hafta da bahsetmiştik daha önceki derste de, yığın komutları ve daha sonrasında gelecek olan döngü komutları şeklinde ilerliyor.
+
+4
+00:02:07,251 --> 00:02:32,931
+Öncelikli olarak yığın komutları nelerdir? Yığın komutları arkadaşlar, temelde iki komut grubundan oluşuyor. Bunlar yığına veri atan ve yığından veri çeken komutlar olarak iki başlık altında incelenebilir. Yığına veri atan komutlar için push komutları gündeme geliyor. Push ve pushf komutu var.
+
+5
+00:02:33,395 --> 00:02:38,015
+Push komutu ve PushF komutu şu şekilde fonksiyon gösteriyor.
+
+6
+00:02:42,419 --> 00:02:54,459
+Push komutu, 16 bitlik Word tipindeki verileri yığına atarken Push F komutu da bayrak yazmacının yığını atıyor.
+
+7
+00:02:58,900 --> 00:03:00,900
+Push F komutunun fonksiyonu bu.
+
+8
+00:03:01,759 --> 00:03:05,840
+POP komutuda da benzer şekilde yığından 16 bitlik bir
+
+9
+00:03:05,840 --> 00:03:10,220
+16 bitlik bir word çekerken
+
+10
+00:03:10,220 --> 00:03:17,360
+Push F komutuda yığının en üstündeki değer neyse bunu bayrak yazmacına çekiyor.
+
+11
+00:03:18,259 --> 00:03:20,360
+Şurası bit olacak, bunu atlamayalım.
+
+12
+00:03:22,360 --> 00:03:24,319
+POP F komutuda yığından
+
+13
+00:03:27,348 --> 00:03:49,028
+yığının en üstündeki veriyi alıp bunu bayrak yanmacına yazıyor. Şu noktada yığının nasıl çalıştığını düşünecek olursak, yığın arkadaşlar bir mantık olarak yığına koymuş olduğumuz veri en altta üstüne veri koydukça biriktiriyor.
+
+14
+00:03:49,747 --> 00:04:03,947
+Yığının sadece en üstüne veri koyabiliyoruz. Yığından veri çektiğimizde de en üstteki değer veri neyse onu almış oluyoruz. Bir tane çektikten sonra sırada kalan en üstteki veri neyse onu çekiyoruz. Böyle bir mantığı var.
+
+15
+00:04:15,283 --> 00:04:22,004
+segment yazmacı olarak stack segment kullanılacak. Buna dikkat ediyoruz. Yani Push F ve
+
+16
+00:04:22,004 --> 00:04:30,563
+Push ve POP komutlarını kullandığımızda varsayılan segment yazmacı olarak stack segment kullanılıyor.
+
+17
+00:04:30,644 --> 00:04:38,783
+Buna dikkat etmek gerekiyor. Tek tek geçecek olursak üzerlerinden. Bir Word değer çekiyor POP komutu.
+
+18
+00:04:39,379 --> 00:04:48,819
+bir tek parametre alıyor. Aldığı parametre destination ya bir 16 bitlik yazmaç olabilir veyahut da bir memory adresi olabilir.
+
+19
+00:04:48,819 --> 00:05:01,220
+Burada bakın bir memory adresi verdiğimiz zaman burada byte ptr veya word ptr demeye gerek yok. Zaten POP komutu bir 16 bitlik veri atıyor.
+
+20
+00:05:01,600 --> 00:05:05,819
+Bundan dolayı bu otomatik olarak verilenmiş durumda. Peki bu...
+
+21
+00:05:06,100 --> 00:05:24,440
+pop komutu çalıştığında yığının hangi adresindeki veriyi çekecek? Bu da stack segmentin stack pointer offsetindeki veriyi çekeceği anlamına geliyor. Normalde arkadaşlar stack pointer adres değeri olarak yığının en üst adresini gösterir. Varsayılan değer olarak.
+
+22
+00:05:26,940 --> 00:05:27,660
+Pardon.
+
+23
+00:05:31,160 --> 00:05:33,160
+En büyük değer diyelim.
+
+24
+00:05:38,132 --> 00:05:45,132
+en büyük değeri gösterir, stack pointer normalde ve yığına bir şeyler attıkça bu değer küçülür, ikişer ikişer küçülür.
+
+25
+00:05:45,132 --> 00:05:55,132
+Yığından bir şey çektiğimizde de ikişer ikişer büyür. İkişer ikişer büyür küçülmesinin sebebi ne? Word tipindeki veriyi yığından çekiyor bu komut.
+
+26
+00:05:55,132 --> 00:05:59,131
+Bu yüzden dolayı ikişer ikişer sonuç değişir.
+
+27
+00:05:59,475 --> 00:06:10,075
+ve netice itibariyle yığında hiçbir şey kalmadığı vakit tekrar orijinal değerine yani egze programları için stack segmentin boyutu olan değere.
+
+28
+00:06:11,275 --> 00:06:19,775
+COM tipi programlarda da zaten bir tane segment kullanıyor. Tek bir segment hem kod segment hem stack segment hem de data segment olarak kullanılıyor.
+
+29
+00:06:19,775 --> 00:06:24,775
+Dolayısıyla bu durumda da FFFF E değerine.
+
+30
+00:06:25,651 --> 00:06:34,811
+ulaşmış oluyor. Orijinalinde de bu değerlere sahip olmuş oluyor. Tabi bu dediğim noktaları, EXE ve CONTİP programlarda daha detaylı bakacağız.
+
+31
+00:06:35,991 --> 00:06:45,831
+POPF komutuda, POP flagFromStack, yani bu aslında yığının o sırada en üstündeki değer neyse, o değeri alıp,
+
+32
+00:06:46,511 --> 00:06:52,371
+word değerini gösterecek şekilde bunu flag yazmacına atamayı sağlayan bir komut.
+
+33
+00:06:53,139 --> 00:07:17,439
+Push komutuna baktığımızda ise Push komutu yığına bir Word tipindeki değer atan komut. Tek bir parametresi var, source parametresi. Bu source parametresini alıp yığının en üstündeki göze yazıyor. Verebileceğimiz değerler immediate bir değer olabilir. 16 bitlik bir yazmaç olabilir.
+
+34
+00:07:18,387 --> 00:07:41,387
+bir memory adresi olabilir. Bakın, memory adresi olduğunda yine WordPtr dememize gerek yok. Bu otomatik olarak PUSH komutuyla kullanıldığı için WordPtr oluyor. Bir de bizim yazmaçlarımız olabilir, segment yazmaçlarımızdan bir tanesi olabilir. Dikkat edecek olursanız, POP komutunda stack...
+
+35
+00:07:41,812 --> 00:08:08,951
+siteye atabildiğimiz değerler içerisinde segment yazmacı, çektiğimiz değerleri, yığın yazma, segment yazmacına yazma imkanımız yok. Eğer ki biz şunu istiyorsak, POP, CS gibi bir komut istiyorsak, bundan önce doğrudan böyle bir komut yok. Önce POP, AX deyip, daha sonrasında MOV, CS, AX ile
+
+36
+00:08:09,396 --> 00:08:22,516
+değeri, stack segmentine, pardon, kod segmentine atamamız gerekiyor. Fakat PUSH tarafında doğrudan segment yazmacını, yığını atabildiğimizi görmüş oluyoruz.
+
+37
+00:08:24,036 --> 00:08:31,795
+Bir de PUSHF komutumuz vardı. PUSHF komutu şurada F değerini yazmayı unutmuşum. PUSHF komutuda
+
+38
+00:08:32,207 --> 00:08:45,847
+Bayrak değerini, bayrak yazmacımızı yığını atmak için kullanılan bir komut. Zaten bayrak yazmacı 16 bitki değer olduğu için yığının en üstündeki değer neyse oraya bayrak yazmacı değerini atamayı sağlıyor.
+
+39
+00:08:47,268 --> 00:08:58,347
+Bu noktada artık döngü komutlarına geçebiliriz arkadaşlar. Döngü komutları için temelde işlemler CX yazmacı ile birlikte kullanılıyor.
+
+40
+00:08:58,816 --> 00:09:17,875
+Burada cx yazmacı döngü count register zaten adı üzerinde sayma işlemlerini bu tür döngülerdeki iterasyon sayısını tutan bir yazmaç olarak çalışıyor. Dolayısıyla döngülere girmeden önce mutlaka ve mutlaka cx yazmacında ilgili değerleri oluşturmamız gerekiyor.
+
+41
+00:09:17,875 --> 00:09:25,956
+Şimdi burada bir şeye bakacaktım. Döngü şekillerimiz burada. Loop komuta arkadaşlar.
+
+42
+00:09:27,539 --> 00:09:55,039
+CX, 0 olmadığı süre boyunca döngü yapar. CX eşit değildir. 0 boyunca döngü yapan bir komut. CX değerini her döngüde birer birer azaltıyor. Dolayısıyla CX 0 olduğunda döngü kırılıyor. Loop 0 komutu ise iki koşulu birden çalıştıran bir komut. Hem CX ile birlikte hem de
+
+43
+00:09:55,344 --> 00:10:18,524
+ve işlem sonucu, yapmış olunan son işlem sonucu, loop'tan önceki işlem sonucu, sıfır olduğu süre boyunca bu döngüyü devam ettiriyor. Yani burada iki tane koşul olacak. Birisi işlem sonucuyla ilgili, diğeri de CX ile ilgili olacak. Bu iki koşul aynı anda sağlandığı süre boyunca.
+
+44
+00:10:18,895 --> 00:10:38,796
+Bu CX'in sıfır olmadığı süre boyunca ve işlem sonucu sıfır olduğu süre boyunca örneğin bu işlemi yapacak. İki koşullu bir döngü. Alt taraf ise işlem sonucu sıfır olmadığı süre boyunca ve CX sıfır olmadığı süre boyunca çalışan bir komut.
+
+45
+00:10:39,283 --> 00:10:55,823
+Sonuncusu da JMP.JX zero komutu. JMP.JX zero komutu da, bakın yukarkilerde CX otomatik olarak azalıyor. Her döngüde CX bir adım azalacak. Fakat JMP.JX de CX'in değişimini biz kontrol ediyoruz.
+
+46
+00:10:56,823 --> 00:10:58,083
+Tamam mı?
+
+47
+00:10:59,484 --> 00:11:03,163
+Bunu biz kontrol ediyoruz. Dolayısıyla JMP.JX de
+
+48
+00:11:03,764 --> 00:11:15,923
+CX döngü değişkenini istersek ikişer ikişer azaltıp veya duruma göre üç azaltabiliriz belirli koşulları sağladığı durumda veya birer birer azaltarak bunu biz kendimiz sağlayabiliyoruz.
+
+49
+00:11:15,984 --> 00:11:20,364
+Ama diğerlerinde dediğim gibi CX'in değeri otomatik olarak değişmiş oluyor.
+
+50
+00:11:25,460 --> 00:11:43,900
+Şimdi loop komutuyla başlayalım arkadaşlar. Loop komutu loop until complete şeklinde tanımlayabileceğimiz bir komut. Loop komutu içerisine almış olduğu bir label var. Bu label ile birlikte veriliyor. Yani biz bunu yaz çalıştırmak istediğimizde temelde şöyle çalışıyor olacak.
+
+51
+00:11:47,900 --> 00:11:49,340
+Loop deyip
+
+52
+00:12:06,707 --> 00:12:17,367
+örneğin loop dedikten sonra label 1 gibi bir etiketle birlikte bunu kullanacağız.
+
+53
+00:12:18,288 --> 00:12:21,967
+Label etiketiyle birlikte bunu kullandığımız zaman bunun anlamı şu olacak.
+
+54
+00:12:22,827 --> 00:12:27,607
+Mesela label 1 etiketi nereye gösteriyor? Örneğin şuraya gösteriyor olsun.
+
+55
+00:12:29,668 --> 00:12:32,607
+Label 1 etiketi burası. Örneğin burası...
+
+56
+00:12:33,471 --> 00:12:55,471
+100 adresi, burası da 110 adresi. Biz bunu kod olarak ele aldığımız vakit, derleyip aldığımız vakit, şu aradaki değişim miktarı kadarlık bir displacement gelecek burada. Bu disp dediğimiz şey bu, displacement'ı gösteriyor. Yani görece bir değişim var. Dolayısıyla burada label, örneğin...
+
+57
+00:12:55,988 --> 00:12:59,988
+vermiş olduğumuz adres, işte 8 bitlik bir durum söz konusuysa,
+
+58
+00:13:00,588 --> 00:13:09,768
+eksi 127 kadar veyahut da 100 pardon, eksi 128 kadar veyahut da 127 adım öteye gidip gelmeyi sağlayacak bir durum oluşturmuş olacak.
+
+59
+00:13:10,508 --> 00:13:13,928
+Dolayısıyla ama bunu bizim hesaplamamıza gerek yok.
+
+60
+00:13:14,048 --> 00:13:17,648
+Biz burada bir etiketle birlikte bunu çalıştırdığımız zaman,
+
+61
+00:13:17,788 --> 00:13:22,488
+assembler zaten bunu otomatik olarak displacement değerine çevirmiş olacak.
+
+62
+00:13:23,860 --> 00:13:33,699
+Burada özellikle dikkat etmemiz gereken nokta label'ı verirken arkadaşlar, tanımlarken iki nokta üst üste vererek label'ımızı tanımlamak gerekiyor.
+
+63
+00:13:35,379 --> 00:13:40,679
+Çağırdığımız tarafta da doğrudan isimle birlikte bunu çağırmış olacağız.
+
+64
+00:13:41,268 --> 00:13:48,427
+Her loop geçişinde CX otomatik olarak bir azaltılıyor. Daha sonrasında display gösterilen adrese gidiliyor.
+
+65
+00:13:49,028 --> 00:13:55,908
+İşlem ne kadar süre boyunca tekrarlanıyor? Mesela bir yapısal bir döngü düşünelim.
+
+66
+00:13:56,568 --> 00:14:06,408
+Şurası loop L1 diyelim. İşte L1 de burası. Bu döngü arkadaşlar başta da CX'e bir değer atamamız lazım tabii ki.
+
+67
+00:14:06,816 --> 00:14:10,016
+MOV, CX, bir değer atadıktan sonra bu döngüye girdim.
+
+68
+00:14:10,896 --> 00:14:14,355
+Döngüde CX'in orijinal değeriyle döngüye geldik.
+
+69
+00:14:14,475 --> 00:14:19,196
+İlk loop'a geldiğim zaman CX'i bir azaltıyor ve döngüye devam ediyor.
+
+70
+00:14:19,496 --> 00:14:23,716
+Daha sonrasında CX'in bir olduğu döngü için tekrar döndük.
+
+71
+00:14:24,036 --> 00:14:26,636
+Dönerken L1'e gittik ama CX sıfır oldu.
+
+72
+00:14:26,716 --> 00:14:28,716
+Dolayısıyla CX'in sıfır olduğu loop içinde
+
+73
+00:14:29,268 --> 00:14:42,348
+bu döngü yürürttükten sonra loop satırına geldiğinde CX 0 olduğu için döngüyü kırıp çıkıyor. Dolayısıyla CX'in 0 olduğu durumda döngü kırılmış oluyor. Bu şekilde bunu özetleyebiliriz.
+
+74
+00:14:47,588 --> 00:14:54,348
+Mesela bir initial durumlar oluşturan kod bloğu ve buna karşılıkta
+
+75
+00:14:57,268 --> 00:15:09,108
+bir döngü durumunu inceleyelim arkadaşlar. Burada toplam isimli bir değişkenimiz olduğunu varsayalım. Bunu data segmentte yapmış olduğumuzu varsayalım şimdilik.
+
+76
+00:15:09,688 --> 00:15:18,728
+Sırasıyla bu komutları yürüttüğümüzde ilgili değişkenlerin durumları ne oluyor? Bunu incelediğimiz vakit döngü komutunun nasıl çalıştığını zaten anlamış olacağız.
+
+77
+00:15:19,347 --> 00:15:27,687
+Burada ilk bu toplam değerini sıfır değerine atadığımız zaman CX ve SI ile ilgili öncül bir bilgimiz olmadığı için soru işareti bıraktım.
+
+78
+00:15:28,167 --> 00:15:36,187
+Toplam değerimiz sıfır. Daha sonra CX'e beş, SI'ye bir atadık. Bu aslında döngünün beş adım döneceği anlamına geliyor.
+
+79
+00:15:37,067 --> 00:15:44,527
+Ve her seferinde de birden beşe kadar olan sayıları nasıl toplarız sanki ona denk gelen bir durum gibi.
+
+80
+00:15:45,107 --> 00:15:59,847
+İlk aşamada döngü içerisinde çalıştırdığımız ilk komut, add toplam SEI. Toplam değerimiz sıfırdı. SEI değerimizin initial değeri 1. Dolayısıyla sıfırla 1'i toplayıp bir değerini tekrar toplama atadı. Yani bu komutu çalıştırdığımızda bakın.
+
+81
+00:16:00,307 --> 00:16:18,107
+Toplam değeri değişti. İlk aşamada toplam değeri değişti. Ama atama yaptığımız için S, I değeri 1 olarak kaldı. C, X değerimizde herhangi bir Loop komutu geçişi olmadığı için 5 olarak kaldı. Daha sonra S, I değerini 1 arttırdık. 2 oldu. Değişim burada var. Görüyorsunuz. Şu değişimleri şöyle yapmıştık.
+
+82
+00:16:27,988 --> 00:16:41,168
+satırına giderken arkadaşlar, yine toplam bir değerinde kaldı. Loop komutu geçişi sonrasında, yani bunu çalıştırdıktan sonra CX biraz alacak ve döngüye tekrar L1 labeluna gideceğiz.
+
+83
+00:16:41,168 --> 00:16:49,227
+L1 labeluna gittiğimizde ise, şunları silelim şimdi. Tekrar L1 labeluna gittiğimizde arkadaşlar,
+
+84
+00:16:51,572 --> 00:17:07,572
+Bu komut çalıştırıldıktan sonra, SEI'deki değerimiz 2 idi hatırlayacak olursanız. Toplam değerimiz 1 idi. Bu komut çalıştırıldıktan sonra, bu kaymış bu arada herhalde, şuralar kaymış. Bu yok gibi düşünün.
+
+85
+00:17:11,412 --> 00:17:23,892
+azaldı, yukarı geldik, seviye değerimiz 2 idi. Bu komut çalıştırdıktan sonra, şurada 2 vardı, burada 1 vardı. Bu ikisinin toplam sonucu olarak 3 değerini elde ettik. CX, loop'tan döndüğümüzde 4 olarak elde edilmişti.
+
+86
+00:17:25,372 --> 00:17:39,412
+SE değerimiz zaten 2, 10'unu değiştirmedik. Tekrar inkrement satırına geldiğimizde, SE'yi 1 arttırdık, bu yine 3 oldu. Döngü satırına geldiğimiz vakitte, bu komut çalıştırıldıktan sonra, CX 1 azaldı ve 3 değerini elde ettik.
+
+87
+00:17:39,412 --> 00:17:59,331
+bir sonraki aşamada yine bu şekilde ilerliyor. Toplam değerimiz yukarı çıktığımızda SEI değerimiz artık 3'tü. 3 ile bir önceki toplam değerimiz 3'tü. Bu ikisini topladığımız zaman 6. SEI'yi arttırdık. Loop komutu geçişinde yine 1 olarak azaldı CX değerimiz. Bunu bu şekilde yürüttüğümüz vakit arkadaşlar.
+
+88
+00:17:59,923 --> 00:18:20,583
+Bakın, loop komutunu bir daha döndüğümde, 1 olarak burayı, CX'i 1 olarak set edip, biraz azalıp tekrar label'ına gidiyorum ve son olarak, SI değeri 5 için toplama işlemini yaptık. Daha sonra SI'yi arttırdık, CX değerimiz 0 olduğu için bu döngüyü kırmış olduk.
+
+89
+00:18:21,619 --> 00:18:40,559
+CX değeri 0 ile loop satırına gelmiş isek döngü kırılıyor. Buna dikkat etmiş olalım, tekrar edeyim. CX değeri 0 ile iken loop satırına gelmiş isem bu komutu çalıştırdığımda loop komutu döngüyü kıracak şekilde sonuç üretmiş oluyor.
+
+90
+00:18:42,699 --> 00:18:49,439
+Şimdi bir sonraki komutumuza geçelim. Bir sonraki komutumuz loop 0 loop equal komutu.
+
+91
+00:18:49,748 --> 00:18:52,827
+Bu komut, bir soru varmış bakalım.
+
+92
+00:18:55,568 --> 00:19:14,288
+Şimdi, burada aslında SI ve DI adı da üzerinde, indeks yazmacı, konvensiyonel bir yaklaşım olarak, indeks yazmacları olduğu için bunlar sanki bir döngünün iterasyon değişkenleri gibi düşünebilirsiniz.
+
+93
+00:19:14,963 --> 00:19:31,243
+Yani bu başka yazmaçlar da olabilir ama SI ve DI'nın kullanılması burada özellikle şundan dolayı bir alışkanlık da olsun. Eğer ki ben burada dolaylı adresleme yapacak olsaydım yani köşeli parantez içerisine yazabileceğim değerler neler?
+
+94
+00:19:39,796 --> 00:20:04,375
+Dolaylı adreslemelerde bunları kullanabiliyorum. Dolayısıyla döngü içinde Memory işlemi yapacak da olsa bunların bu şekilde veriliyor olması hata yapmamı engeller. Bir alışkanlık olarak siz de bu şekilde kullanabilirseniz iyi olur. Ama bu örnek içerisinde SI yerine diğer yazmaçlardan, genel amaçlı yazmaçlardan herhangi birisi de kullanılabilirdi.
+
+95
+00:20:06,832 --> 00:20:21,332
+İlerleyen aşamalarda biz bunları biraz daha dizi işlemlerinde falan kullanacağımız vakit alışkanlık olsun şimdiden. Bu şekilde indis değerlerimizi, indis yazmaçlarımızı kullanıyor olalım.
+
+96
+00:20:23,251 --> 00:20:46,352
+Bir başka komutumuz arkadaşlar, loop0 komutu veya loop equal olarak da geçiyor. Komut sonrasında bir tane etiket veriyoruz yine. Dolayısıyla burada aşağıda bizim kodumuzda loop satırına göre label'ın ne kadar ileride veya geride olduğunu görece hesaplamamıza gerek yok. Label olarak verdiğimizde otomatik olarak bunu assembly düzeltiyor olacak.
+
+97
+00:20:49,683 --> 00:20:51,464
+Aslında iki şey çalışıyor.
+
+98
+00:20:52,423 --> 00:20:53,903
+Mesela şöyle söyleyelim.
+
+99
+00:20:53,984 --> 00:20:55,624
+Burada loop komutu
+
+100
+00:20:55,624 --> 00:20:57,524
+Aslında karşılığı şu.
+
+101
+00:20:59,824 --> 00:21:00,284
+Jump
+
+102
+00:21:00,284 --> 00:21:06,544
+Mesela yukarıda CX ile ilgili işlemi yaptığımızı düşünelim.
+
+103
+00:21:07,964 --> 00:21:09,644
+Şöyle bir saniye.
+
+104
+00:21:11,844 --> 00:21:14,484
+Mesela bu komutun yerine decrement
+
+105
+00:21:14,484 --> 00:21:17,084
+CX
+
+106
+00:21:17,779 --> 00:21:29,259
+sonrasında jump0, L1 şeklinde bu komutu düşünebilirsiniz. Loop komutunun karşılığı bu gibi düşünebilirsiniz.
+
+107
+00:21:30,779 --> 00:21:39,779
+CX'i biraz azaltıp daha sonra sonuç, jump not 0, pardon şunu yanlış yaptık. Jump not 0, L1 şeklinde bunu düşünebilirsiniz.
+
+108
+00:21:40,679 --> 00:21:43,519
+Loop 0 komutunu ise şöyle düşüneceğiz.
+
+109
+00:21:47,124 --> 00:21:48,604
+Loop Zero komutunu.
+
+110
+00:21:50,483 --> 00:21:51,644
+Bunun eş değeri şu.
+
+111
+00:21:52,683 --> 00:21:56,503
+Hemen Loop Zero'dan önce yapmış olduğunuz bir işlem var.
+
+112
+00:21:56,624 --> 00:22:04,084
+Bu işlem sonucu eğer ki sıfır sonucu üretiyorsa ve CX sıfır değilse bu işlem gerçekleşiyor.
+
+113
+00:22:04,183 --> 00:22:06,203
+Yani bunun karşılığında şöyle düşünebilirsiniz.
+
+114
+00:22:07,023 --> 00:22:09,364
+İşte bir tane CMP komutu çalıştırdık.
+
+115
+00:22:10,283 --> 00:22:14,104
+Ondan sonra burada ne diyeceğiz mesela?
+
+116
+00:22:15,700 --> 00:22:23,460
+işlem sonucu 0 oluştuğu vakit, jump, not zero, çıkış,
+
+117
+00:22:27,412 --> 00:22:46,311
+Eğer işlem sonucumuz sıfır değilse çıksın. Daha sonra yine decrement CX, jump not zero, L1. L1 de yukarıda döngümüzün etiketi çıkışta. Şurası.
+
+118
+00:22:47,892 --> 00:23:07,572
+Tabi şeye yazdım ama bu komutun eş değeri de bu arkadaşlar. Yani burada da CMP komutu yerine test olabilir herhangi bir bayrak değiştiren komut da olabilir. Bunlar yani iç içe iki tane ifmiş gibi düşünebilirsiniz bunu. İşlem sonucu sıfırsa zaten dikremente gidiyor. CX'i de azalttı.
+
+119
+00:23:08,788 --> 00:23:33,228
+Dolayısıyla şu satıra geldiğimiz vakit iki tane ifi iç içe gerçeklemiş olacağız. Birincisi, CMP'den gelen sonuç sıfır mı ve CX sıfır değil mi? Bu iki ifi sağladığım vakit L1'e gidiyorum. Aksi halde herhangi birini sağlamazsam bu durumda döngüyü kırmış oluyorum. Dolayısıyla bu komutun karşılığı bu olarak düşünülebilir.
+
+120
+00:23:34,675 --> 00:23:44,675
+iki tane koşulu aynı anda sağlamış oluyoruz. Diğer komutumuz ise loop.not.zero veya loop.not.equal olarak da bunu isimlendirebiliriz.
+
+121
+00:23:45,675 --> 00:23:53,675
+Yine bir label ile kullanılıyor bu komutta. Dolayısıyla label ile birlikte kullanıldığı için, burada şunu göz önüne alacağız.
+
+122
+00:23:53,675 --> 00:24:00,675
+Buradaki göreceye gideceğimiz label olan uzaklığımızı bizim görece hesaplamamıza gerek yok. Assemble bunu yapacak.
+
+123
+00:24:01,172 --> 00:24:10,572
+Yine benzer şekilde her loop geçişinde CX'i bir azaltıyor. Daha sonrasında da display gösterilen etikete gidiyor.
+
+124
+00:24:11,392 --> 00:24:18,932
+Burada ise bakın arkadaşlar, işlem sonucu 0 olmadığı süre boyunca ve CX 0 olmadığı süre boyunca bu işlem tekrarlanıyor.
+
+125
+00:24:19,032 --> 00:24:26,892
+Dolayısıyla biz burada loop not zero komutunu çalıştıracak olursak, bunun eş değeri aslında şuna karşılık geliyor.
+
+126
+00:24:27,763 --> 00:24:38,003
+işte JMP komutu veya koşul oluşturan herhangi bir komut çalıştırdık. Daha sonrasında eğer işlem sonucu 0 ise çıkacağız, döngüyü çıkacağız. Jump 0 çıkış.
+
+127
+00:24:40,823 --> 00:24:54,124
+Eğer 0 değilse devam edecektik. Bu durumda tekrar decrement CX. Daha sonrasında da jump not 0, L1, L1 yukarıda.
+
+128
+00:24:54,900 --> 00:24:59,620
+Burada yürüteceğimiz işlemler var. Onları yerleştiriyoruz. Burası da çıkış etiketi.
+
+129
+00:25:03,155 --> 00:25:16,976
+Burada bakın ne oldu? Eğer ben bu satıra gelmişsem, bu satıra geldiğimde Loop NAT0 komutundan hemen önce çalıştırmış olduğum karşılaştırma test veyahut da başka komutlar olabilir, bayraktı etkileyen komutlar.
+
+130
+00:25:18,135 --> 00:25:30,115
+Bu işlem sonucu 0 olmadığı süre boyunca ve CX0'a düşmediği süre boyunca ben bu döngüme devam ederim. Bunlardan herhangi birisi sağlanmadığında.
+
+131
+00:25:30,960 --> 00:25:50,140
+işlem sonucu 0 ise döngüyü kırıyorum veya işlem sonucu CX 0 ise döngüyü kırıyorum. Yani döngü içerisinde CX 0'a ulaşmışsa döngüyü kırıyorum. Yine iki adet ifi peş peşe sağladığımız bir loop komutunu oluşturmuş olduk.
+
+132
+00:25:52,140 --> 00:25:58,299
+Üçüncü döngü komutumuz ise JMP CX 0 komutu.
+
+133
+00:26:00,115 --> 00:26:06,736
+Bu komut arkadaşlar, genel olarak şöyle işleyecek. İşte bir takım işlemlerimiz olacak.
+
+134
+00:26:07,216 --> 00:26:19,576
+JMP, CX, 0, L1 şeklinde bunu ifade edeceğiz. Ve işte L1 de buraya vereceğiz. Fakat burada CX otomatik olarak azalmayacak.
+
+135
+00:26:19,576 --> 00:26:23,656
+Biz burada CX'e ilişkin olarak ne yapmak istiyorsak, mesela subtract,
+
+136
+00:26:25,556 --> 00:26:48,316
+CX, 2 diyebiliriz. CX'i ikişer ikişer azaltabiliriz. Veyahut da bir koşul koyarız. Bu koşula göre CX'i 2 veya 1 azaltabiliriz. Yani buradaki CX ile ilgili durum kontrol tamamen kullanıcıda, programcıda. Dolayısıyla döngünün dinamik bir şekilde ne kadar döneceğini çeşitli kontrollere göre burada sağlayabiliriz.
+
+137
+00:26:52,468 --> 00:27:01,188
+Dolayısıyla bunu aslında şöyle düşünün. Tam bu güzel bir örnek olmadı. Şuradaki şöyle diyelim.
+
+138
+00:27:02,288 --> 00:27:08,268
+CMP L1. Aslında bu komutun tam çalışma halini şöyle yazayım.
+
+139
+00:27:09,688 --> 00:27:14,607
+Yapmak istediğimiz döngü L1 etiketiyle başlıyor ve şu şekilde ilerliyor.
+
+140
+00:27:15,347 --> 00:27:20,147
+Burada ben CX ile ilgili işlem yaptım. CX değerini değiştiren bir işlem yaptım.
+
+141
+00:27:21,708 --> 00:27:22,988
+Bu satırda.
+
+142
+00:27:24,528 --> 00:27:27,268
+Daha sonrasında eğer işlem sıfırsa döngüyü kırmak istiyorum.
+
+143
+00:27:27,428 --> 00:27:33,488
+Dolayısıyla burada JUMP CX 0 komutunu çalıştırdım ve L2 etiketini verdim.
+
+144
+00:27:34,408 --> 00:27:37,887
+Eğer CX sıfır değil ise döngüye devam ediyor olacağım.
+
+145
+00:27:37,887 --> 00:27:38,887
+Bunun için de...
+
+146
+00:27:39,571 --> 00:27:47,151
+CMP L1 komutunu kullanacağım. L2 de şurada bir yerde yer alacak ve döngüyü kırdığında aslında L2 etiketine gitmiş olacağım.
+
+147
+00:27:47,671 --> 00:27:52,971
+Hani bu komut bu mantık çerçevesinde kullanılıyor olacak.
+
+148
+00:27:54,371 --> 00:28:00,971
+Bakın komut adı üzerinde zaten CX0 olduğunda dallan. Dolayısıyla bunu döngüyü kıran bir komut olarak düşünelim.
+
+149
+00:28:00,971 --> 00:28:04,971
+Tamam mı? Bu önemli bir nokta. Hatırlamak adına da...
+
+150
+00:28:11,092 --> 00:28:12,451
+işlem yapıyor olacağız.
+
+151
+00:28:14,132 --> 00:28:20,032
+Dediğim gibi adı üzerinde CX0 olduğunda döngüyü kıran bir komut gibi bunu düşünmemiz gerekiyor.
+
+152
+00:28:20,992 --> 00:28:31,092
+Şimdi burada döngü komutlarına bakacak olursak, döngü şekillerine bakacak olursak, bunların ilki for döngüsü mantık çerçevesinde gerçekleyeceğiz.
+
+153
+00:28:34,292 --> 00:28:36,092
+Bir saniye, bunların her birinin kodunu...
+
+154
+00:28:41,299 --> 00:28:44,200
+önce şekil olarak görelim, daha sonra kod kısmına bakacağız.
+
+155
+00:28:46,819 --> 00:28:58,299
+For döngüsü dediğimiz yapı arkadaşlar, bir takım işlemlerimiz var, döngüye girmeden önce yaptığımız işlemler var ve döngü sonrasında yaptığımız işlemler var.
+
+156
+00:28:58,400 --> 00:29:07,620
+Bu özellikle döngüye nereden girdik, döngüden nereden çıkmış olduğumuzu ayırt etmek adına döngünün başına ve sonuna koymuş olduğumuz iki tane işlem olarak düşünün.
+
+157
+00:29:07,951 --> 00:29:10,892
+Döngü içerisinde yaptığımız işlem de bakın neymiş.
+
+158
+00:29:13,832 --> 00:29:17,311
+Döngü değişkenimizin değeri zaten döngü içinde artacak.
+
+159
+00:29:17,471 --> 00:29:23,132
+Bu değeri bir biriktirici yazmaçta topluya topluya devam ediyoruz.
+
+160
+00:29:23,892 --> 00:29:25,612
+For döngüsünün genel şey masa bu.
+
+161
+00:29:26,271 --> 00:29:26,872
+Bu yapıda.
+
+162
+00:29:27,372 --> 00:29:29,031
+Şimdi ilk başta bunları böyle görelim.
+
+163
+00:29:29,031 --> 00:29:32,711
+Daha sonrasında her birisi için kod yapısını inceliyor olacağız.
+
+164
+00:29:37,299 --> 00:29:59,980
+Şimdi yapabileceğimiz bir başka işlem de döngü değişkeninin yüksek değerden itibaren sıfıra doğru sıfır olduğunda döngüyü kıracak şekilde çalışması mantığı olabilir. Bu for down to döngüsü olarak ele alabileceğimiz bir durum. Yine döngünün başında ve döngü sonrasında yapacağımız iki işlemler döngünün başını ve sonunu belirlemiş olsun. Bu çerçevede de
+
+165
+00:30:00,000 --> 00:30:14,440
+döngü değerimizi birer birer azaltarak ilerleyebiliriz. Yani bu ikisi arasındaki fark SM'li açısından çok önemli. Şöyle ki, burada birden ona kadar değeri değişen ekstradan bir yazmaç tutmamız gerekiyor.
+
+166
+00:30:16,440 --> 00:30:20,480
+Burada birden ona kadar değişen bir yazmaç tutmamız gerekiyor.
+
+167
+00:30:20,915 --> 00:30:33,236
+Ama burada örneğin for down to da eğer düşüş miktarı 2 değil de 1'er olmuş olsaydı mesela, şurada 1 olmuş olsaydı, burada CX yazmacını doğrudan kullanabilirdim.
+
+168
+00:30:33,336 --> 00:30:35,756
+Yani döngü değişkeni olarak CX'i kullanabilirdik.
+
+169
+00:30:36,336 --> 00:30:42,915
+2 dediğimiz için ekstra bir durum oluşmuş ama özellikle SM'li açısından bu şekilde bir faydası olacağını söyleyebiliriz.
+
+170
+00:30:46,036 --> 00:31:03,615
+while mantığı nasıl çalışıyor? While mantığında arkadaşlar, bir koşullu dallanma durumuyla birlikte bunu yürütebiliriz. Yani temel olarak çalıştığı mantık bu şekilde olacak. Yani loop komutlarının mantığını burada kullanabiliriz.
+
+171
+00:31:06,996 --> 00:31:21,996
+Veyahut da JUMP.JX mantığı burada geçerli olabilir. Yapılacak işlem, koşul sağlandığı süre boyunca bir döngüde kalabilmek. Dolayısıyla burada sürekli olarak bir koşul kontrolü yapmam lazım. Öncekilerde nasıldı? Döngünün ne kadar döneceği belli.
+
+172
+00:31:21,996 --> 00:31:32,996
+Tamam mı? Döngünün ne kadar döneceği belli. While döngüsünde ise koşul sağlandığı süre boyunca döngüde kalıyoruz. Döngüdeki yapılan işlemler,
+
+173
+00:31:33,844 --> 00:31:57,264
+koşul sağlandığı süre boyunca olmuş oluyor. Farklı olarak repeat antilde nasıl arkadaşlar? Mesela while'da, while ve repeat antili düşündüğümüz zaman koşul sağlanmamış ise döngü içerisindeki işlemleri hiç yapmadan çıkma ihtimalim var. Repeat antilde nasıl? Repeat antilde ise yine aynı mantık var. Koşul burada
+
+174
+00:32:00,948 --> 00:32:04,528
+Hani bunu F koluna koyduğumuz için, false koluna koyduğumuz için şöyle düşünelim.
+
+175
+00:32:05,268 --> 00:32:08,728
+Buradaki çıkış koşulu sağlanmadığı süre boyunca döngüdeyiz.
+
+176
+00:32:09,588 --> 00:32:13,588
+Ama bu döngü içerisindeki yapılan işlem en az bir kere kesinlikle yapılıyor.
+
+177
+00:32:13,908 --> 00:32:16,428
+While ile repeatant ile arasındaki farkı böyle görelim.
+
+178
+00:32:17,028 --> 00:32:23,888
+Dolayısıyla burada döngüyü kırma koşulu sağlanmamış olsa bile, pardon sağlanmış olsa bile,
+
+179
+00:32:23,888 --> 00:32:26,248
+yani döngüyü kıracak koşul başta mevcutken bile,
+
+180
+00:32:27,188 --> 00:32:32,728
+döngü içerisindeki işlemler en az bir kere yapılmış olacak. Yani mantık olarak yine koşul koyacağız.
+
+181
+00:32:32,827 --> 00:32:39,528
+Koşulun işleği vermiş olduğumuz false call'ına göre hareket ediyor olacağız. İç içe iki tane döngü de yapabiliriz.
+
+182
+00:32:39,528 --> 00:32:49,728
+Burada yalnız dikkat etmemiz gereken bir nokta var. O şu. Sizin de az önce gördüğünüz üzere döngüler CX yazmacı üzerinden geçiyor.
+
+183
+00:32:49,988 --> 00:32:52,528
+CX yazmacı üzerinden geçiyor. Dolayısıyla ben şu...
+
+184
+00:32:53,491 --> 00:33:19,971
+döngü içinde cx yazmacını kullanmak zorundayım. Şuradaki döngü içinde cx yazmacını kullanmalıyım. Bu loop komutuyla yapacağım zaman başka kaçış yolum yok. Ama birinci döngünün cx'i değiştirdiği durum ile ikinci döngünün cx'i değiştirdiği durumun birbirini etkilememesi lazım. Bunun için şunu yapacağız arkadaşlar. Birinci döngü içteki döngüyü tanımladıktan sonra dış döngünün bunu bozmaması için
+
+185
+00:33:20,352 --> 00:33:35,971
+iç döngüye girerken, bir push, CX komutu çalıştıracağız. Çıkarken de, burada POP, CX komutu çalıştıracağız.
+
+186
+00:33:36,596 --> 00:33:43,155
+Bunu yaptığımız vakit, bakın başta geldim, burada cx eşittir, mesela kaçmış? 3.
+
+187
+00:33:43,375 --> 00:33:50,015
+Cx eşittir, döngü kaç kere dönecek burada? 0, 1, 2, 3 için toplam 4 kere dönecek. Dolayısıyla cx 4 olarak atadım.
+
+188
+00:33:51,455 --> 00:33:56,435
+Daha sonra ilk döngü için içteki döngüye kadar ulaştım.
+
+189
+00:33:56,575 --> 00:34:01,375
+Fakat bu arada push cx yaparak ana döngünün cx'lerini bozmamasını sağladım.
+
+190
+00:34:01,375 --> 00:34:02,615
+Burada bakın ne yapıyor?
+
+191
+00:34:03,124 --> 00:34:23,123
+O andaki dış döngü değişken değerim neyse onun bir fazlasından dörde kadar dönecek. Dolayısıyla burada döngü değerimin ne kadar olacağını düşünüyoruz. Mesela ilk başladığımız durum için sıfırdı birden dörde kadar. Dolayısıyla dört adım. Dolayısıyla buraya da...
+
+192
+00:34:25,172 --> 00:34:44,652
+MOV'la diyelim yine, MOV, CX, 4 dedik. Daha sonra bu döngümüz başladı, loop'la birlikte döngümüz başladı. Döngüyü ilk geçerken CX değerimiz 4, daha sonra 3, bakın içeride 3 ama dışarıdaki döngümüzü push CX yaptığımız için dışarıdaki döngü değerim yığında hala bozulmadı.
+
+193
+00:34:51,023 --> 00:35:03,023
+0 değeriyle gelmiş olduk. Fakat döngüyü kırdıktan sonraki çalıştıracağımız POP.JX ile birlikte yığının en üstündeki değer, o ana kadar yığına sadece CX'e atmıştık, şurada.
+
+194
+00:35:03,543 --> 00:35:10,923
+4 değerini çektik. Dolayısıyla bundan sonra CX eşittir. 4 değeriyle loop'tan dönmüş olduk. Burada da loop komutum var.
+
+195
+00:35:11,863 --> 00:35:16,304
+Bu loop komutunda CX'i biraz altı. Dolayısıyla yukarıya çıktığımda CX eşittir bu sefer.
+
+196
+00:35:19,155 --> 00:35:37,536
+üç değeriyle birlikte dış döngüyü çalıştırıyor olacağım. Dolayısıyla burada iç içe iki tane döngümüz varsa, dikkat edeceğimiz nokta, dış döngü değişken değerini CX'e atarak, daha sonra da CX'den bunu çekerek, bu değeri koruyacak olmamız çok önem arz etmiş oluyor.
+
+197
+00:35:39,876 --> 00:35:42,336
+Şimdi bu, şunu şöyle silelim.
+
+198
+00:35:45,556 --> 00:35:49,416
+Şimdi burada bu ilk döngünün komutunu yazmaya çalışalım arkadaşlar.
+
+199
+00:35:53,416 --> 00:36:07,416
+Burada kolaylık olması açısından ben bir ekranına daha kolay yazmamı sağlayacak bir şey, bir tablet vardı. Onu alıp hemen geliyorum. Bu arada siz bununla ilgili bir kod mantığı nasıl olur bir düşünün.
+
+200
+00:36:58,483 --> 00:37:01,144
+Evet. Nasıl bir şey yapabiliriz burada?
+
+201
+00:37:14,643 --> 00:37:27,323
+Şimdi, genel olarak bir konvansiyonumuz olsun veya notasyonumuz olsun arkadaşlar. Loop komutu, C'deki for'a karşılık geliyor. Siz for'ları break ile kırıyor musunuz?
+
+202
+00:37:30,708 --> 00:37:38,688
+Bunu yapıyor muyuz? Dolayısıyla loop işlemini de mutlaka ve mutlaka döngü sayısı belli işlemler için kullanalım.
+
+203
+00:37:39,368 --> 00:37:50,368
+Yani loopu for gibi düşünelim. Döngüsü koşula bağlı işlemler için ise while'daki mantıkları kullanalım.
+
+204
+00:37:57,364 --> 00:38:15,644
+while mount için JMP, CX, 0 gibi durumlar kullanılabilir. Veyahut da Compare ve JMP koşulu dallanma komutları kullanılabilir while mount için. Ama Loop için verdiğiniz örnek geçerli. CX'i sıfırladığınız zaman, herhangi bir yerde, CX'i sıfırladığınız zaman döngüyü kırıp çıkacaktır.
+
+205
+00:38:16,764 --> 00:38:18,644
+Hatta CX'i...
+
+206
+00:38:19,411 --> 00:38:43,011
+sıfırladığınız zaman bu durumu sağlamakla birlikte ama dediğim gibi bu kodun anlaşılabilirliğini zorlaştırır hem sizin açınızdan hem de okuyanlar açısından. Dolayısıyla Loop işlemlerin Loop komutunu döngü miktarı belli komutlar için kullanın sadece. Diğer durumda CX'i doğrudan sıfırlayabileceğiniz durum while'la falan karşılık geliyor veya da Jump.jx.0 komutu gibi durumlara karşılık geliyor.
+
+207
+00:38:43,407 --> 00:38:53,407
+orada CX ile ilgili koşulları oluşturabilirsiniz ve takibi kolay olur. Buna dikkat edin. Yapabilirsiniz teknik olarak ama mümkünse yapmayalım bunları.
+
+208
+00:38:53,407 --> 00:39:03,275
+Şimdi gelelim, şu before komutumuz var. Bu before komutunu nasıl yürüteceğiz? Şimdi bununla ilgili olarak arkadaşlar
+
+209
+00:39:03,443 --> 00:39:11,523
+yapacağımız işlemler bakın döngünün başındaki bir işlemimiz var zaten bu AX'i sıfırladığımız bir işlem bunu yapalım.
+
+210
+00:39:11,523 --> 00:39:18,683
+İşte bunun için MOV AX, 0 komutunu kullanabileceğimiz gibi bunun eş değeri neydi arkadaşlar?
+
+211
+00:39:19,724 --> 00:39:26,643
+XOR AX, AX komutuydu ve biz burada aslında şu komutu tercih ediyorduk. Bunun niçin olduğunu hatırlayan var mı?
+
+212
+00:39:34,164 --> 00:39:51,544
+Evet, aynı işlemi yapıyor. İşlem sonucunda her ikisinde de bakın, şuraya comment yazalım. Her ikisinde de fonksiyonel olarak AX'e sıfır değeri atanıyor. Fakat bu işlem daha az clock cycle'da gerçekleşiyordu. Şu işlem daha az clock cycle'da gerçekleşiyordu. Dolayısıyla bunu tercih ediyorduk.
+
+213
+00:39:52,284 --> 00:40:00,544
+Daha sonrasında burada bakın arkadaşlar bir döngü değişkenimiz var ve I isimli döngü değişkenini tutmamız lazım. Bundan dolayı
+
+214
+00:40:00,980 --> 00:40:18,480
+Burada MOV, SI, 1 gibi bir komut kullanacağız. Daha sonrasında bir döngümüz de var. Bu döngüyü de CX yazmacıyla tutacağımız için burada da MOV, CX, kaç kere döngümüz dönecek? 1'den 10'a kadar 10 kere 10 değerini atamamız lazım.
+
+215
+00:40:19,123 --> 00:40:33,663
+Burada AX yazmacımız bizim toplam değerimizi biriktirdiğimiz değer. Dolayısıyla her işlem içerisinde, burada bir label isimli label'ımız olsun. Bu label içerisinde yapacağımız işlem, add.
+
+216
+00:40:34,612 --> 00:40:37,072
+AX, SI işlemi olacak.
+
+217
+00:40:37,832 --> 00:40:43,192
+Tabi burada SI değeri de her seferinde birer birer artıyor arkadaşlar.
+
+218
+00:40:43,352 --> 00:40:47,272
+Bakın dikkat edecek olursanız döngüde bu indis değişkeniz birer birer artıyor.
+
+219
+00:40:47,272 --> 00:40:51,332
+Dolayısıyla bunu increment SI ile birer arttıracağız.
+
+220
+00:40:51,452 --> 00:40:52,652
+Daha sonrasında da loop.
+
+221
+00:40:53,268 --> 00:41:08,447
+L1 komutuyla bunu sonlanacağız. Döngü bittikten sonra, döngüyü kırdıktan sonra ise, döngüyü kırdığımızı yani en azından akış üzerinden daha da net görebilmek adına MOV, BX, 1 komutuyla bunu verebiliriz. Bakın bu işlem
+
+222
+00:41:09,331 --> 00:41:34,651
+gördüğünüz haliyle ekstradan bir tane indis yazmacı kullanmamıza sebep oldu. Bunu farklı bir şekilde de yapabilmemiz mümkün aslında. Bunu yaparken de şunu göz önüne alacağız. Bakın döngü süresi boyunca yani şuradaki loop içerisinde zaten CX değeri 10'dan 1'e kadar değerler alıyor döngü içerisinde. Döngüyü kırdığımızda yani şu satıra geldiğimizde
+
+223
+00:41:35,027 --> 00:41:53,827
+cx değeri sıfırla buradan çıkacağız zaten ama bu döngü içerisindeyken cx değeri bu değerleri alıyor. Dolayısıyla aslında döngü değişkenine ihtiyacımız var mı? Bu bir soru işareti. Şöyle olayı daha basitleştirebiliriz dolayısıyla. Mesela komutumuzu şöyle şuraya yazmaya çalışalım bu sefer.
+
+224
+00:42:02,416 --> 00:42:11,215
+Daha sonrasında MOV, CX, 10 dedik. Daha sonra döngü içerisinde şunu yapıyoruz.
+
+225
+00:42:12,956 --> 00:42:27,815
+ADD, AX, CX diyoruz. Daha sonrasında da Loop, L1 diyoruz. Döngü çıktığımızda da MOV, BX, 1 dedik. Bu işlemin sonucu ne olur arkadaşlar?
+
+226
+00:42:28,335 --> 00:42:32,115
+Bu işlem fonksiyonel olarak buradaki yapıya eşdeğer olur.
+
+227
+00:42:33,855 --> 00:42:35,435
+Fonksiyonelite olarak aynı olur.
+
+228
+00:42:35,575 --> 00:42:42,875
+Fakat burada dikkat edecek olursanız AX önce 10 eklenir, sana 9, sonra 8, sonra 7 şeklinde eklemeler devam eder.
+
+229
+00:42:43,415 --> 00:42:48,495
+Burada ise AX'e öncelikli olarak 1 eklenir, daha sonra 2 eklenir, daha sonra 3 eklenir.
+
+230
+00:42:48,895 --> 00:42:52,775
+Fakat fonksiyonelite olarak bu ikisi birbirine eşdeğer olarak çalışıyor.
+
+231
+00:42:53,427 --> 00:43:07,887
+Şu yapıyı nerede tercih ederiz? Bu yapıyı az önceki konuştuğumuz mantık çerçevesinde eğer ben burada sadece AX'e bir toplama değil de farklı bir takım işte memori erişimleriyle ekleme yapacak olsam mesela köşeli parantez.
+
+232
+00:43:08,275 --> 00:43:23,435
+SI falan diyecek olsam, burada mecburen zaten SI'yi indis değişken olarak kullanmam lazım. Bu taraftaki örnekte ise böyle bir memori erişimimiz olmadığı için, bu sahada yazmış olduğumuz durumda geçerli bir örnek oluşturmuş oluyor.
+
+233
+00:43:23,807 --> 00:43:37,427
+Ama temel olarak hani şu soldaki duruma alışırsak da bu da güzel olur. Zaten soldaki örnek birebir buradaki for döngüsündeki akıştaki işlemleri birebir yapmış olduğumuz örneğe karşılık gelmiş oluyor.
+
+234
+00:43:39,948 --> 00:43:50,367
+Burada bakın yazmış olduğumuz ilk veya soldaki duruma karşılık olan kod bloğunu görmüş oluyoruz buradaki yapıda.
+
+235
+00:43:51,188 --> 00:44:06,628
+birebir aynısı aslında. Bu akışın birebir aynısı bu yapı olmuş oluyor. Bunu dediğim gibi sadece CX üzerinden döndürerek de yapabiliriz. Bu da 10 adım boyunca aynı işlemi yapan bir komut parçası olarak ortaya çıkmış oluyor.
+
+236
+00:44:07,487 --> 00:44:10,467
+İkinci örneğimiz arkadaşlar, for down to örneği.
+
+237
+00:44:15,699 --> 00:44:26,699
+for down to örneği. Burada arkadaşlar bakın, döngü yazmacımızın ikişer ikişer ilerlemesi gerekiyor ve işlem sıfırda bitiyor. Yani bu aslında
+
+238
+00:44:26,699 --> 00:44:38,699
+JMP, CX, 0'ya çok uygun bir yapı olarak ortaya çıkabilir. Mesela bunu yazmaya çalışalım. Döngü öncesinde bir işlemimiz var. MOV, AX, 0
+
+239
+00:44:39,443 --> 00:44:48,823
+ondan ikişer ikişer azaltarak işlem sonucu yürütmeye çalışıyoruz. O zaman burada yine ben MOV, CX, 10 diyebilirim.
+
+240
+00:44:48,823 --> 00:44:56,503
+Daha sonra döngü kısmındayız. Döngü kısmındaki etiketimi L1 olarak belirleyeyim. Yapmış olduğumuz işlem ne arkadaşlar?
+
+241
+00:44:56,703 --> 00:45:05,563
+Bakın AX'e o andaki döngü değişken değerimizi atamak. Dolayısıyla ilk başta 10 atayacak. O zaman bunu yapalım. İşlemimizi gerçekleştirelim.
+
+242
+00:45:07,380 --> 00:45:15,039
+AX, CX komutunu çalıştırabiliriz. Yalnız burada ikişer ikişer azalıyor bizim döngü değişkenimiz. Dolayısıyla bunu
+
+243
+00:45:15,039 --> 00:45:23,059
+tabii çift bir sayıdan başladığımızı garanti ettiğimiz için sıfıra varacaktır. Dolayısıyla
+
+244
+00:45:23,059 --> 00:45:29,079
+subtract CX, 2 immediate bir değerle CX'den 2 değerini çıkarttım. Daha sonra
+
+245
+00:45:29,556 --> 00:45:49,775
+JMP, CX, 0, L2 komutunu kullanabiliriz. Eğer ki işlem sonucunda 0 ise, döngüyü kırıp çıkacağız. Eğer döngüyü kırmamış isek de JMP, L1'li komutumuzu yürütebiliriz. L2 etiketimiz de burada. Dolayısıyla bu işleme baktığımız zaman, CX'in,
+
+246
+00:45:53,235 --> 00:46:19,155
+x2 yazması şöyle gerekmiyor. Hani 10'dan 0'a doğru gidiyoruz ya, yani bunun dolaylı olarak 2'şer 2'şer azaldığını anlamış olalım. Bu aslında for down to olduğu için zaten 2'şer 2'şer azalıyor. Bunu ifade ediyor. Yani sizin için daha rahatsa x2 de yazabilirsiniz. Ama benim için dolaylı olarak bu x2'ye eşdeğer.
+
+247
+00:46:20,724 --> 00:46:23,484
+Dolayısıyla buradaki komut karşılığımız bu.
+
+248
+00:46:30,387 --> 00:46:54,567
+Tabi burada önemli olan nokta şu arkadaşlar, bakın, ondan başladığımız için ikişer ikişer azaldığımızda mutlaka ve mutlaka CX değeri bir yerde sıfıra varacak. Eğer sıfıra varmama ihtimali varsa, yani ben bu CX'i kaçtan başlayacağım dışarıdan bir değişken olarak alıyorsam ve azaltma değeri bunu sıfıra eriştirmeyeceği gibi bir durum söz konusuysa bu durumda bunun yerine
+
+249
+00:46:54,963 --> 00:47:05,244
+biraz daha karmaşık bir işlem yazmak lazım. Hem CX'i kontrol eden hem de işlem sonucunu kontrol, dolayısıyla CX'e karşılık gelecek ikisi de.
+
+250
+00:47:05,744 --> 00:47:19,003
+CX'in durumunu kontrol eden bir compare işlemi yazıp bu sefer CX küçük eşittir sıfır durumuyla koşulu dallanma yapacak şekilde bunu ele almamız gerekecektir.
+
+251
+00:47:20,684 --> 00:47:22,543
+Bunu da nasıl yapabiliriz?
+
+252
+00:47:22,880 --> 00:47:24,380
+hemen şu komut yerine
+
+253
+00:47:24,380 --> 00:47:28,599
+cmp, CX, 0 deyip
+
+254
+00:47:28,599 --> 00:47:30,220
+daha sonrasında da
+
+255
+00:47:30,220 --> 00:47:32,599
+sayı negatif de olabilir.
+
+256
+00:47:33,159 --> 00:47:36,179
+Dolayısıyla işaretli bir karşılaştırma yapmakta fayda var.
+
+257
+00:47:36,800 --> 00:47:38,980
+CX 0'dan küçük eşitse o zaman
+
+258
+00:47:38,980 --> 00:47:39,980
+jump
+
+259
+00:47:39,980 --> 00:47:41,800
+equal or
+
+260
+00:47:46,003 --> 00:47:48,003
+yanlış oldu. Boş öyle bir saniye.
+
+261
+00:47:50,804 --> 00:47:51,963
+Hepsini sildik.
+
+262
+00:47:53,083 --> 00:47:54,003
+Şunun yerine
+
+263
+00:47:54,003 --> 00:47:58,003
+cx'in tam sıfır olmama durumu söz konusuysa ne yapacaktık?
+
+264
+00:47:59,264 --> 00:48:02,003
+JMP, cx, 0 deyip daha sonrasında da
+
+265
+00:48:03,043 --> 00:48:04,324
+neyi arıyoruz?
+
+266
+00:48:04,503 --> 00:48:06,784
+cx küçük eşittir sıfır aradığımız için
+
+267
+00:48:08,340 --> 00:48:26,000
+İşaretli sayılarla işlem yapacağız. İşaretli sayılarda less or greater mantığı geçerliydi. Dolayısıyla jump less or equal. Nereye gideceğiz? Jump less or equal ise döngüye devam edeceğim. Dolayısıyla burada L1 diyebiliriz ve burada döngüyü kırmış olabiliriz.
+
+268
+00:48:28,340 --> 00:48:34,059
+Tam emin değilsek bu şekilde bir değişiklik yapmamız gerekiyor.
+
+269
+00:48:36,500 --> 00:48:42,639
+Üçüncü örnek yapımız arkadaşlar, while döngüsü. Bunu nasıl oluşturabiliriz? Buna ilişkin bir yapı.
+
+270
+00:48:43,420 --> 00:48:52,980
+Şimdi burada bir while içerisinde koşul da var. Onu da sağlayacağız. Dolayısıyla ilk baştan itibaren girecek olursak, MOV AX, 0 ile başladık.
+
+271
+00:48:53,759 --> 00:49:01,300
+İçeride bir kontrol değişkenimiz var. Bunu yine SI üzerinde kullanalım. Şunu da aslında şöyle yapayım.
+
+272
+00:49:09,588 --> 00:49:11,628
+Alışkanlık olması açısından arkadaşlar.
+
+273
+00:49:13,828 --> 00:49:16,768
+XOR, AX, AX diyelim.
+
+274
+00:49:17,448 --> 00:49:19,208
+Bu bir while döngüsü olacaktı.
+
+275
+00:49:20,148 --> 00:49:24,148
+Daha sonrasında da MOV, SI, 1 diyelim.
+
+276
+00:49:24,868 --> 00:49:27,848
+Şimdi burada koşulumuzu direkt olarak yazmamız lazım.
+
+277
+00:49:28,008 --> 00:49:29,248
+Koşulumuz nedir arkadaşlar?
+
+278
+00:49:30,168 --> 00:49:32,908
+SI küçük eşittir, 10 ise devam et.
+
+279
+00:49:35,155 --> 00:49:45,316
+Bunu sağlayalım. Şimdi burada hatırlayacak olursanız iflerde bunun false call'unu yazmak bizim işlemlerimizi kolaylaştırıyor. Dolayısıyla bunun false call'u ne? Bu true.
+
+280
+00:49:52,340 --> 00:50:16,160
+Şimdi, clock cycle açısından bakarız. Şu anda doğrudan ezberden bilmiyorum ama büyük ihtimalle jump işlemleri daha az zaman alıyordur ama jump işlemini de tek başına kullanamıyorsun. Jump işlemini yapabilmek için de bir tane compare işlemi lazım. İkisine bakarak karşılaştırabiliriz. Ama burada temel mantık olarak loopu tam adet döngü miktarını bildiğimiz işlemlerde.
+
+281
+00:50:17,523 --> 00:50:38,063
+döngü miktarını tam olarak emin olamayacağımız durumlar için kullanmak noktasında dikkat edersek bu yeterli olur. Ama dediğim gibi JMP'a bakacak olursak koşullu dallanmaya, loop yerine bir koşullu dallanma koyduğumuz zaman Compare koymamız lazım.
+
+282
+00:50:38,804 --> 00:50:59,124
+koşulu dallanmayı koymamız lazım. Bir de ters koldaki jump koymamız lazım. Üç tane ekstra komut geliyor. Loop'a baktığımızda loop'ta da zaten CX'i compare ediyor, decrement ediyor ve jump işlemi yapıyor. Aslında yanlış olabilir ama şu andaki hatırladığımız haliyle belki eşdeğer bir clock cycle'a da erişmiş olabiliriz.
+
+283
+00:50:59,668 --> 00:51:22,427
+Dolayısıyla şimdi şu while döngümüze geldiğimizde burada bir kontrol işlemi var. Kontrol işlemi SE, I, küçük eşittir, 10 için devam edecekti. Dolayısıyla bizde hatırlayacak olursanız koşulu dallanma komutlarında false call için işlemi yazdığımızda veya boş call için yazdığımızda burada boş call false call işlemimiz daha kolay oluyordu. Dolayısıyla false call'unda bizim neyimiz var? SE, I, büyük.
+
+284
+00:51:22,800 --> 00:51:27,680
+büyüktür, on koşulu var, false column da. Dolayısıyla bunu gerçekleyelim burada.
+
+285
+00:51:29,760 --> 00:51:30,639
+Compare
+
+286
+00:51:34,320 --> 00:51:36,519
+Eraser alarak yapayım.
+
+287
+00:51:44,307 --> 00:51:47,167
+Compare SI, 10 dedik ve burada
+
+288
+00:51:47,167 --> 00:51:49,627
+Jump
+
+289
+00:51:49,627 --> 00:51:53,727
+Bunu işaretsiz sayı için düşünebiliriz.
+
+290
+00:51:54,788 --> 00:51:55,467
+Nedir bakın?
+
+291
+00:51:55,707 --> 00:51:59,307
+10'dan büyükse. Dolayısıyla burada SI 10'dan büyükse diyebilmek için
+
+292
+00:51:59,307 --> 00:52:02,047
+Jump above L1 diyelim.
+
+293
+00:52:02,516 --> 00:52:09,135
+Dolayısıyla döngü kırıldığında şuradaki L1 etiketine gidip bu işlemi sonlandırmış olacağız.
+
+294
+00:52:09,715 --> 00:52:11,056
+Döngü içerisinde ne yapıyoruz?
+
+295
+00:52:11,056 --> 00:52:20,036
+Döngü içerisinde add ax, SI komutunu çalıştırıyoruz ve yine
+
+296
+00:52:21,139 --> 00:52:43,139
+Evet, SI, 2 komutunu çalışıyoruz. Döngünün devam edebilmesi için de burada CMPL2 komutunu çalıştırdık. L2'nin nereye gitmesi lazım? L2'de bu satıra gitmiş olacak. Doğru mu? Evet, buraya gidersek sonsuz döngüde kalırız. Herhangi bir...
+
+297
+00:52:44,052 --> 00:53:10,972
+şeyimiz olmaz. Bakın, L2'nin nereye gitmesi gerekiyor? Şurada karşılaştırma yaptığımız satıra gitmesi lazım. Dolayısıyla L2'miz burada oluşmuş olacak. Tamam. Buna dikkat edin. Bu tür döngülerde özellikle yapılan hataların büyük kısmı bu şekilde döngüyle iffetlerini yanlış yere vermekten kaynaklanıyor. Bunlara dikkat edelim. Döngüyü kırdığımızda da ne varmış arkadaşlar? Bakın.
+
+298
+00:53:12,371 --> 00:53:16,432
+MOV, BX, 1 komutuyla da bunu sonlandırmış olacağız.
+
+299
+00:53:16,572 --> 00:53:21,912
+Yani yapılan hatarlarda, döngülerde özellikle burada label'ı tanımlarken iki nokta üst üste bir kaçıyor.
+
+300
+00:53:22,271 --> 00:53:26,811
+İkincisi, döngünün nereye bağlanacağını kaçırabiliyoruz.
+
+301
+00:53:27,952 --> 00:53:30,112
+Bunları bu şekilde kontrol etmiş olalım.
+
+302
+00:53:32,992 --> 00:53:36,012
+Orijinal kod tarafında bir değişiklik yapmışız bakalım.
+
+303
+00:53:37,556 --> 00:53:50,516
+Evet, aynı şekilde işlemlerimiz tekrar etmiş oluyor. Burada hani label'ı daha anlamlı bir şekilde verirseniz, mesela burada anlamsal bir şekilde CA, bunu hani çıkış diyebilirsiniz. Burası çıkış olabilir.
+
+304
+00:53:55,188 --> 00:54:05,128
+kontrol ve takip açısından. Tekrar burada anlamlı olabilir çünkü döngüdeyim gibi. Biraz da label'ların isimlerine dikkat edersek daha iyi olur.
+
+305
+00:54:07,288 --> 00:54:08,748
+Saate bakayım.
+
+306
+00:54:09,827 --> 00:54:10,548
+Tamam.
+
+307
+00:54:11,128 --> 00:54:13,847
+Nerede kaldık? Onu da kontrol edelim.
+
+308
+00:54:13,847 --> 00:54:17,948
+Repeat until. Tamam arkadaşlar. Bir 10 dakika kadar ara verelim öyleyse.
+
+309
+00:54:17,948 --> 00:54:20,948
+Saat kaç şimdi? 17 geçiyor.
+
+310
+00:54:21,907 --> 00:54:25,907
+17-20 geçe devam ederiz.
+
+311
+00:54:41,556 --> 00:54:46,755
+Buralarla ilgili soracağınız herhangi bir şey varsa onları yine sorarsanız cevaplarmaya çalışırım. Ben bilgisayar başımdayım.
+
+312
+00:54:47,556 --> 00:54:49,155
+10.20'de devam ederiz.
+
+313
+01:08:11,923 --> 01:08:13,923
+Evet arkadaşlar, devam edelim.
+
+314
+01:08:13,923 --> 01:08:15,923
+Kaldığımız yerden.
+
+315
+01:08:15,923 --> 01:08:18,923
+En son, do, repeat until'e gelmiştik.
+
+316
+01:08:18,923 --> 01:08:20,923
+While'ı yapıp, repeat until'e gelmiştik.
+
+317
+01:08:20,923 --> 01:08:22,699
+Şimdi ona bakalım.
+
+318
+01:08:33,460 --> 01:08:44,520
+Repeat Until'in While'dan farkı olarak hatırlayacak olursanız, Repeat Until'de döngü içerisindeki işlem en az bir kere tekrarlanıyor. Bu nokta ile farklıydı.
+
+319
+01:08:48,020 --> 01:08:52,760
+Şimdi buradaki mantığı gerçeklemek istersek yine benzer şekilde
+
+320
+01:08:52,760 --> 01:09:00,640
+xor ax, ax diyerek döngü öncesi durumumuzu ayarladık.
+
+321
+01:09:00,780 --> 01:09:03,720
+Döngü değişkeni olarak yine SI, DI tutabiliriz.
+
+322
+01:09:04,940 --> 01:09:10,620
+Burada yine MOV SI, 2 ile başlayalım.
+
+323
+01:09:11,560 --> 01:09:14,380
+Daha sonrasında içeride yapılacak işlemler döngü içerisinde.
+
+324
+01:09:16,787 --> 01:09:20,327
+ADD, AX, SI işlemi olacak.
+
+325
+01:09:21,247 --> 01:09:25,287
+Daha sonrasında ADD, SI, 2 işlemi olacak.
+
+326
+01:09:26,188 --> 01:09:30,527
+Daha sonrasında da bakın, false callumuz, ne diyor?
+
+327
+01:09:31,907 --> 01:09:34,827
+SI'nin onunla karşılaştırılmasını içeriyor.
+
+328
+01:09:34,827 --> 01:09:38,147
+Burada, her iki kolda aslında,
+
+329
+01:09:40,564 --> 01:09:46,084
+düşündüğümüz vakit, true kolu doluymuş gibi düşünürsek, false kolu için bunu yazacak olursak, çünkü bakın,
+
+330
+01:09:46,084 --> 01:09:51,043
+true kolunda bir işlem daha varmış gibi mesela düşünecek olursak, burada,
+
+331
+01:09:53,423 --> 01:10:02,064
+CMPSI, 10, false kolunda ne olacak?
+
+332
+01:10:02,612 --> 01:10:06,231
+I 10'dan küçük olduğu süre boyunca bu işlem yapılacağı için
+
+333
+01:10:06,231 --> 01:10:08,311
+FOS kolundaki şartımız
+
+334
+01:10:08,311 --> 01:10:14,051
+S I eşittir 10 ile bu işlemi sonlandırmak. O zaman
+
+335
+01:10:17,587 --> 01:10:25,587
+SI kolu, 0 ise, pardon, 10 ise, 0 değil, 10 ise, sonlandırmak. Bu durumda,
+
+336
+01:10:25,587 --> 01:10:29,807
+jump, equal, L,
+
+337
+01:10:35,444 --> 01:10:38,444
+Burada bir şeyi yanlış yaptık. Bir saniye şöyle diyelim.
+
+338
+01:10:42,579 --> 01:11:03,619
+Buradaki işlem koşulumuz hangi süre boyunca geçerli olacak onu tekrar konuşalım. I 10'dan küçük olduğu süre boyunca aslında bunun devam etmesi gerekiyor. I 10'dan büyük eşit olduğunda bunu kıracağız. Şuradaki işlem mantığımız, yani 2'den itibaren geldi ki 2'şer 2'şer arttırıyoruz.
+
+339
+01:11:04,340 --> 01:11:20,899
+I, 10'u geçtiği bizim true işlemimiz, yani döngüyü kıracağımız an. Dolayısıyla I, 10'dan küçük olduğu süre boyunca aslında döngümüzü devam ettireceğiz. Küçük eşit diye bunu değiştirmiş olalım.
+
+340
+01:11:20,899 --> 01:11:28,920
+Şu döngümüzü şu şekilde değiştirmiş olalım. O zaman buradaki false call'umuz için bizim yazacağımız işlem ne olur? Jump.
+
+341
+01:11:29,876 --> 01:11:50,595
+yine below or equal komutunu kullanabiliriz. Bunu işaretçi sayı gibi düşündüğümüzde. Burada L1 komutunu verebiliriz. L1 nereye gidecek? Toplama işlemini yaptığımız yere. Zaten döngüyü kırdıktan sonra da burada move BX, 1 ile bunu gerçekleyebiliriz. Bakın.
+
+342
+01:11:51,283 --> 01:12:15,683
+Koşulumuz I, 10'dan büyük olduğunda döngüyü kırmak şeklindeydi. Yani tru kolu bu şekildeydi. Dolayısıyla false kolu için bu koşulu biz yazmış olduk. Buradaki işlemimizi de bu şekilde tanımlayabiliriz. Karşılık gelen kod grubu burada. İncelersiniz yine tekrardan. Şimdi iç içe iki tane döngüye geldiğimiz vakit ne yapacağız?
+
+343
+01:12:16,212 --> 01:12:24,811
+Şimdi iç içe iki tane döngüye denk geldiğimizde yapacağımız işlem hatırlayacak olursanız üst döngü de CX üzerinden dönecekti, alt döngü de CX üzerinden dönecekti.
+
+344
+01:12:24,912 --> 01:12:28,832
+Dolayısıyla bunları uygun şekilde ayarlamamız gerekiyor.
+
+345
+01:12:29,572 --> 01:12:33,492
+Şimdi dış döngü için başlayalım. Dış döngü için yazacağımız işlemler şu olacak.
+
+346
+01:12:34,512 --> 01:12:39,172
+MOV, AX, hatta bunu yine XOR ile yapalım, alışkanlık olsun.
+
+347
+01:12:46,355 --> 01:13:11,255
+x'x, x'x ile başladık. Daha sonrasında burada bu sıfırdan üçe kadar döngü kayacağı için ve içeride bu döngü değişkeni de kullanmamız gerektiği için burada uygun olan durum. Şuradaki döngü değişkenimizi SI ile tutup buradaki döngü değişkenimizi de DI ile tutmak anlamlı olabilir. O zaman burada döngüde daha girmeden önce MOV.
+
+348
+01:13:11,699 --> 01:13:23,159
+SI, 0 diyebiliriz veya bunu da XOR'layabiliriz aynı şekilde. Onu da alışkanlık olması için. Şöyle SLEP tekrar XOR'la verelim.
+
+349
+01:13:26,159 --> 01:13:27,619
+XOR'la verelim.
+
+350
+01:13:31,667 --> 01:13:51,688
+Bunu da verdik. Daha sonrasında döngümüz kaç adım gidecek? 0'dan 3'e kadar 0 ve 3'de 0, 1, 2, 3 toplam 4 adım. Dolayısıyla burada MOV, CX, 4 ile döngü miktarımızı belirledik. Daha sonrasında döngü içerisinde yapacağımız bir takım işlemler var. Şimdilik burayı boş bırakmış olalım.
+
+351
+01:13:57,716 --> 01:14:17,855
+Loop komutuyla L1'e gitmemiz lazım. L1 nereye gidiyor bakın? L1 şu satırlara gidecek. Çünkü döngü içerisinde yapacağımız işlemler burada. Bu kutu içerisinde gösterecek. Döngüyü kırdığımızda da MOV, BX, 1 dememiz gerekecek. Tamam. Bu şekilde bir yapı söz konusu.
+
+352
+01:14:20,275 --> 01:14:46,796
+Şimdi ne demiştik? İç döngüye girebilmek için, iç döngüde CX değerini kaybetmemek için, burada döngüye girer girmez şurada, PUSH, CX, döngüyü, iç döngüyü kırdığımızda da, POP, CX komutuyla CX değerini koruyalım demiştik değil mi? Dolayısıyla bu iki iç döngü arasında, yani şuradaki döngü işlemi,
+
+353
+01:14:47,731 --> 01:14:54,431
+bunu kapsayacak şekilde bir parantez gibi düşünün. PUSH, CX ve POP, CX komutlarını yürütmemiz gerekiyor.
+
+354
+01:14:54,992 --> 01:15:05,011
+Şimdi döngü içerisinde ne yapacağız artık? Bakın burada DI isimli döngü değişkenimiz var. Bu döngü değişkenimizi ile ilgili işlem yapacağız.
+
+355
+01:15:05,011 --> 01:15:15,131
+Tabi şeyi atladık bu arada. Döngünün her adımında SI değişkenimiz birer birer artıyor. Bakın onu şurada yapmayı unuttuk. Yapalım burada.
+
+356
+01:15:15,583 --> 01:15:36,283
+Increment, SI işlemini yapalım. İç döngü için ise ne var arkadaşlar? Bakın MOV, döngü değişkenimiz DI olsun demiştik. Bu 2'den başlayacak. 2'den 4'e kadar. 2, 3, 4. 3 adımda bu gidecek. Dolayısıyla burada da MOV, CX, 3 diyoruz. Daha sonra içeride yapacağımız işlem ne?
+
+357
+01:15:40,212 --> 01:15:42,772
+ADD, pardon yanlış yazdım.
+
+358
+01:15:48,787 --> 01:16:09,027
+içeride yapacağımız işlem, ADD, AX, SI, ADD, AX, DI. Bu iki satır aslında şuradaki toplama işlemini yaptık. Bu iç döngü değişkenimiz için her seferinde de yine bir adım artış var. Onu da ekleyelim.
+
+359
+01:16:15,891 --> 01:16:36,791
+L2 komutunu vereceğiz. L2 nereye gidiyor arkadaşlar? Bakın L2 de şurada toplama işlemin olduğu satıra gitmiş olacak. Dolayısıyla iç içe iki döngüyü yaptığımızda arkadaşlar dış döngüden dolayı CX ve loop'tan dolayı dış döngü loop'undan veya CX değerinden dolayı iç döngünün bozulmaması lazım.
+
+360
+01:16:37,300 --> 01:16:47,640
+Mesela burada 4 değeriyle başladık. 4 değerini yığına attık. İçeri girdik. CX eşitir 3 değeriyle döngüye başladık. CX 2 oldu, 1 oldu, 0 oldu. Döngüyü kırdı.
+
+361
+01:16:48,640 --> 01:16:59,700
+POP CX dediğimizde dış döngünün CX değeri olan 4'ü geri yükledi. SI'yi arttırdı. CX'i biraz azaltıp yukarı döndük tekrar. Bu sefer yığına 3 değerini attık.
+
+362
+01:17:00,532 --> 01:17:03,032
+Burada mutlaka şuna dikkat etmemiz gerekiyor.
+
+363
+01:17:03,992 --> 01:17:11,891
+PUSH ve POP komutları birer parantez gibi düşünecek olursak, parantez açtığımız zaman uygun yerde de parantezi kapatmamız gerekiyor.
+
+364
+01:17:11,891 --> 01:17:19,291
+Yoksa yığına attığımız miktarla, yığından çektiğimiz miktarlar birbiriyle örtüşmez ve yanlış değerleri yığından çekebiliriz.
+
+365
+01:17:27,412 --> 01:17:55,311
+PUSH ve POP komutlarını mesela şeyde çalıştırıyoruz ya, MU8086'da çalıştırıyoruz ya, orada herhangi bir EXE veya COM tipi program olmadan orada verseniz çalışır. Yine benzer şekilde DOS, BOX üzerinde DEBAC işlemi yaptığınızda da herhangi bir EXE veya COM tipi program olmasa bile o anda POP komutu varsa yığından bir şey çekiyor. PUSH komutu varsa yığına bir şey atıyor. Bunu istediğiniz zaman, istediğiniz yerde.
+
+366
+01:17:55,412 --> 01:18:23,231
+deneyebilirsiniz bu mantık çerçevesinde. Ama dediğim gibi yığına bir şey, bir program akışı içerisinde bunu değerlendirmek istiyorsak, yığına bir şey attığımızda, yani şu açma parantezini koyduğumuzda, yığından aynı miktarda bir şey çekmeliyiz. Buna dikkat edelim. Özellikle vurgulamak istediğim bu. Ama dediğim gibi herhangi bir noktada da bu komutları çağırıp çalıştırabiliyoruz. Dolayısıyla buradaki akışı da
+
+367
+01:18:23,344 --> 01:18:32,783
+Yine bu şekilde görüyoruz. Siz de istediğiniz şekilde bunu incelersiniz. Bizim yaptığımızdan farklı olarak burada şu yapılmış. Bu döngü değişkeni için DI tutulmuş.
+
+368
+01:18:34,423 --> 01:18:42,144
+İçteki döngü için de SE değeri tutulmuş. Farklı olarak bu şekildeki örnekler ama mantık aynı.
+
+369
+01:18:43,283 --> 01:19:05,724
+Bu haliyle arkadaşlar döngü komutlarını tamamlamış oluyoruz. Burada işte isterseniz iç içe 3 tane for da yapabilirsiniz. Dikkat edeceğiniz nokta herhangi bir iç for'a gelmeden önce bir üst for'un CX değerlerini yığında saklamak gerekiyor. Buna dikkat ediyoruz. Çünkü hepsinde döngü CX üzerinden döndüğü için bunun kaybolmaması lazım.
+
+370
+01:19:06,095 --> 01:19:23,055
+Bayrak komutlarına geldiğimizde arkadaşlar, bizim öncelikli olarak bayrak yazmacına bir bakmamız lazım. Bayrak yazmacına baktığımızda bu 16 bittik bir register olmakla birlikte 16 tane bizim özel bayrağımız yok. Bunlardan özel bayraklar var.
+
+371
+01:19:23,444 --> 01:19:36,684
+Bu bayrakların neler olduğunu hatırlayacak olursanız, auxiliary flag vardı, ondan sonra carry flag vardı, parity flag vardı, zero flag vardı, sign flag vardı. Bunun gibi bayraklar, direction flag vardı mesela. Bu gibi bayraklarımız vardı.
+
+372
+01:19:38,424 --> 01:19:47,004
+Ama bunlardan hepsiyle ilişkin olarak özel komutlar yok. Sadece özel bir takım bayraklar için yine özel komutlarımız mevcut.
+
+373
+01:19:47,444 --> 01:19:52,604
+Geri kalan bayraklar için ise bu komutları farklı şekilde yürütmeye çalışacağız.
+
+374
+01:19:53,344 --> 01:19:58,144
+Mesela arkadaşlar, burada göreceğimiz birinci komutumuz clear carry flag.
+
+375
+01:19:58,684 --> 01:20:05,963
+Dolayısıyla bu işlem sonucunda CLC komutunu çalıştırdığımız vakit bu işlem carry flag'i sıfırlıyor arkadaşlar.
+
+376
+01:20:06,164 --> 01:20:10,144
+Yani demek ki carry flag'in sıfırlanması için özel bir komutumuz var.
+
+377
+01:20:10,144 --> 01:20:12,204
+Başka bir komut komplement.
+
+378
+01:20:12,819 --> 01:20:17,319
+dolayısıyla cmc komutu nasıl çalışıyor?
+
+379
+01:20:27,188 --> 01:20:29,188
+bu şekilde ifade edebilir miyiz?
+
+380
+01:20:33,235 --> 01:20:34,036
+Bunun anlamı ne?
+
+381
+01:20:36,655 --> 01:20:41,216
+C çarpı birin değili artı, C üstü çarpı sıfırın değili.
+
+382
+01:20:42,476 --> 01:20:45,915
+Dolayısıyla şurası bir, burası sıfır.
+
+383
+01:20:47,755 --> 01:20:49,595
+C'ye C'nin değilini atıyor.
+
+384
+01:20:52,015 --> 01:20:55,395
+Komplement dediğimiz işlem bu. Bir ise sıfır yap, sıfırsa bir yap demek.
+
+385
+01:21:00,787 --> 01:21:08,967
+Üçüncü komutumuz set carry flag. Bu işlemi çalıştırdığımızda carry flag'teki değerimiz 1 olarak ayarlanıyor.
+
+386
+01:21:12,268 --> 01:21:16,007
+Dolayısıyla bu komutlar arkadaşlar carry flag ile ilgili komutlar.
+
+387
+01:21:17,688 --> 01:21:24,027
+Carry flag ile ilgili 3 tane komutumuz var. Carry flag niçin önemli? Şu ana kadar görmüş olduğumuz işlemler için düşünün.
+
+388
+01:21:27,220 --> 01:21:39,520
+ve rotate işlemlerinde işlemin carry flag üzerinden dönme ihtimali var. Dolayısıyla carry flag'teki bir bit kontrolünü yapmak istediğimizde bu işlem bizim için anlamlı oluyor.
+
+389
+01:21:40,840 --> 01:21:50,940
+Veyahut da yapmış olduğumuz işlemlerde yani algoritmik açıdan carry flag'te bir takım değerler oluşturmam gerekiyorsa yine bunun içinde anlamlı bir durum oluyor.
+
+390
+01:21:51,507 --> 01:22:10,087
+İkinci grubumuz arkadaşlar, direction flaglerle ilgili olarak iki tane komutumuz var. Bunlardan birincisi CLD komutu. Yaptığı işlem, direction flag'i sıfırlamak oluyor. Direction flag ne için kullanılıyordu? Dizi işlemlerinde.
+
+391
+01:22:14,195 --> 01:22:36,636
+Adres yönü için kullanılıyordu. Adres yönü için. Örneğin Direction Flex 0 ise, bunun anlamı şuydu. Bizim, örneğin, hafızadaki dizilerimiz şu şekilde yerleşmiş olsun. D0 ise, her kopyalama işleminden sonra adres 1 artıyor. Hem Source'da,
+
+392
+01:22:37,811 --> 01:22:50,291
+hem de destination'da birer artıyordu. Ama eğer ki direction filleyimiz bir olmuş olsaydı, bu durumda da adresler birer azalacaktı. Oradaki mantığımız da şu olacak. Onu da çizelim.
+
+393
+01:22:51,851 --> 01:22:56,252
+Oradaki mantığımız da direction filleyin bir olması durumunda da
+
+394
+01:22:56,252 --> 01:23:03,012
+source ve destination farklı adres bölgelerini gösteriyor olsun.
+
+395
+01:23:03,503 --> 01:23:29,503
+Bu sefer işte yüksek adres bölgesini gösteriyoruz. Her işlem sonrasında adres değerimiz otomatik olarak birer azalarak ilerlemiş olacak. Yani son adresten ilk adrese kadar dizi işlemi yapmamızı da sağlamış olacaktı. Set destination ve clear destination komutları dolayısıyla bunu sağlıyor. İşlem sonucu destination bayrağında 0, işlem sonucu destination bayrağında 0.
+
+396
+01:23:29,680 --> 01:23:31,300
+bir değeri oluşturulmuş oluyor.
+
+397
+01:23:32,480 --> 01:23:36,020
+Bununla birlikte, üçüncü özel komut grubumuz arkadaşlar,
+
+398
+01:23:36,020 --> 01:23:37,440
+Interrupt Flag ile ilgili.
+
+399
+01:23:40,260 --> 01:23:41,300
+Interrupt Flag,
+
+400
+01:23:41,980 --> 01:23:43,180
+net olarak aslında,
+
+401
+01:23:43,420 --> 01:23:45,960
+IF bayrığı olarak geçiyordu, hatırlayacak olursanız.
+
+402
+01:23:46,100 --> 01:23:47,100
+Bu komut sadece,
+
+403
+01:23:48,360 --> 01:23:51,700
+int, R ucuna gelen kesme istekleri için kullanılıyor.
+
+404
+01:23:54,899 --> 01:24:11,180
+Yani bizim 8086 mikro işlemcimizin Intra isimli bir tane fiziki ucu var. Dış çevre birimleri bu uç üzerinde lojik bir seviyesi oluştururlarsa bu mikro işlemci açısından bir kesme isteği olarak değerlendiriliyor.
+
+405
+01:24:11,819 --> 01:24:21,899
+Bu mikro işlemcilerde veri aktarımı açısından 3 alternatiften bir tanesi. Birinci veri aktarımı için polling mantığı kullanılabilir.
+
+406
+01:24:22,387 --> 01:24:25,488
+İkincisinde interrupt mantığı kullanılabilir.
+
+407
+01:24:27,148 --> 01:24:30,268
+Üçüncüsünde de ise Direct Memory Access kullanılabilir.
+
+408
+01:24:31,847 --> 01:24:38,788
+Şimdi polling mantığında belirli bir koşul sağlanana kadar ben sürekli kontrol ediyorum.
+
+409
+01:24:38,908 --> 01:24:40,528
+Veri hazır mı, veri hazır mı, veri hazır mı?
+
+410
+01:24:40,568 --> 01:24:42,268
+Bir bayrak üzerinde bu bildirilmiş bana.
+
+411
+01:24:42,827 --> 01:24:45,247
+Ben bir döngü içerisinde bu kontrolümü yapıyorum.
+
+412
+01:24:45,747 --> 01:24:49,927
+Veri hazır olduğunda veriyi okuyorum. Dolayısıyla burada aktif bir bekleme söz konusu.
+
+413
+01:24:50,188 --> 01:24:57,487
+Interrupt mantığında ben dış çevre birimini hazır olduğunda interrupt üretecek şekilde ayarlıyorum ve başka işlerle uğraşıyorum.
+
+414
+01:24:58,087 --> 01:25:05,627
+Bana intre ucu üzerinden bir kesme isteği geldiğinde ben mevcutta devam eden işlemimi kesip çevre biriminden veri okumayı sağlıyorum.
+
+415
+01:25:05,627 --> 01:25:10,567
+Üçüncü de DMA. Bakın bu iki alternatifte de veri.
+
+416
+01:25:10,771 --> 01:25:22,992
+mikro işlemciden geçiyor. Yani hafızadan okuyup çevre birime yazacaksam veyahut da çevre birimden hafızaya yazacaksam veya iki hafıza birimi arasında veri aktarımı yapacaksam da veri mikro işlemciden geçiyor.
+
+417
+01:25:23,764 --> 01:25:45,003
+Şuradaki örnekte ise Direct Memory Access örneğinde ise mikro işlemci aradan çıkıyor. Kaynak ve hedef birimleri kendi arasında bir DMA kontrolör üzerinden adreslerini ve ne kadarlık veri aktaracağını ayarlayıp hedef ve kaynak arasında veri aktarımı mikro işlemci olmadan gerçekleşmiş oluyor. Dolayısıyla geri dönecek olursak.
+
+418
+01:25:45,460 --> 01:26:12,960
+IF bayrağı, mikro işlemcinin intre ucundaki kesme isteklerini açıp kapamakla ilgili bir bayrak. Eğer ki IF bayrağı 1 ise, 1'e set edilmişse, intre ucundan gelen kesme istekleri değerlendiriliyor. Eğer ki IF bayrağı 0 ise, bu kesme istekleri dikkate alınmıyor. Mantığı bu şekilde. Bunlar mesela bakın arkadaşlar, carry flag için, direction flag için ve interhap flag için önemli.
+
+419
+01:26:13,460 --> 01:26:40,899
+mevcut özel komutlar. Bunun haricindeki sign flag, zero flag, auxiliary flag, parity flag ile ilgili işlem yapmak istediğimde ise bunun için başka bir komutumuz var. Bu load ah with flag yazmacı veya store işlemine ilişkin komutlar olabilir. Load dediğimiz işlem arkadaşlar bakın bayrak yazmacının 16 bitlik bayrak yazmacının 8 adet
+
+420
+01:26:41,235 --> 01:27:00,195
+bitini AH yazmacına atan bir komut. Bunlardan sadece 5 tanesi anlamlı. Sign flag, zero flag, auxiliary flag, parity flag ve carry flag. 1, 2, 3 tanesi boş olarak geliyor. Diğerleri uygun bit sırasında AH bayrağına atanmış oluyor.
+
+421
+01:27:01,300 --> 01:27:27,180
+Store işlemi ise AH'daki o andaki değer neyse onu flag yazmacına atıyor. Yani burada da AH yazmacı aynı sırada flag yazmacının ilgili bitlerine atanmış oluyor. Bu durumda arkadaşlar bizim mesela sign flag ile ilgili özel bir komutumuz olmamasına karşın sign flag değerini manipüle etme imkanımız var mı? Bunu nasıl yapabiliriz? Mesela biz
+
+422
+01:27:27,539 --> 01:27:35,600
+Signflay'in komplementini almak istiyorum. Signflay'in komplementini alıp, flag yazmacını da oluşturmak istiyorum. Bunu nasıl yaparım?
+
+423
+01:27:49,939 --> 01:27:53,779
+sign filleyin komplementini nasıl alıp oluşturabiliriz?
+
+424
+01:27:59,347 --> 01:28:22,147
+Evet, kesinlikle doğru cevap. Peki bunu nasıl yapacağız? Hangi adımlarla yapacağız? İlk yapacağımız işlem, bu işlemi yaptık. Bu işlem sonucunda ne oldu? AH'ın kaçıncı biti bakın? Sign flag 0, 7. biti. AH'ın 7 numaralı biti.
+
+425
+01:28:22,899 --> 01:28:41,579
+sign flag olarak atandı. Daha sonra benim yapmak istediğim sign flag'in komplementini alıp tekrar bayrak yazmacına geri yazmak. Daha sonra ne yapacağız? Yani şu anda AH yazmacım var. AH yazmacımın en yüksek anlamlı bitinde sign flag değerim var. Sonra ne yapacağız?
+
+426
+01:28:49,268 --> 01:29:13,847
+AH'ı 1 ile xorlarsak, şunun komplementini almış oluruz. Evet, 80H ile xorlamalıyız. Şimdi burası herhangi bir biti, az önce de örneğini gördük. Bakın komplement işlemi içinde yapmıştık bunu. Herhangi bir biti, bir bitlik değeri 1 ile xorlarsak bunun sonucu bunun komplementi olarak ortaya çıkıyordu.
+
+427
+01:29:14,355 --> 01:29:24,355
+Aynı şekilde bir biti sıfırla xorlarsak bu da kendisi olarak ortaya çıkıyordu. Pardon şunu yanlış yazdım. Bu keribayrağı.
+
+428
+01:29:25,435 --> 01:29:35,355
+Dolayısıyla biz sadece SF'yi değiştireceğimiz için buradaki değeri birle xorlayacağız. Diğerlerini sıfırla xorlayacağız. O zaman yapacağımız işlem şu olacak.
+
+429
+01:29:42,387 --> 01:30:08,167
+AH'ın 7 numaralı bitine, sign filleyin komplementi gelmiş olacak. Daha sonra yapacağımız işlem ne? Daha sonra yapacağımız işlemde, store AHF işlemiyle birlikte, artık sign filleyin komplementini atama işlemi olmuş olacak. Benzer şekilde arkadaşlar, şunu yapmak istersek ne yapacağız?
+
+430
+01:30:08,756 --> 01:30:25,036
+sign filley sıfırlamak istersek ne yapacağız? Bunun için yine bu komutu çalıştırdık. Bu AH'ın 7'sinde sign filley oluştu. Sonrasında hangi işlemi yapacağım?
+
+431
+01:30:44,340 --> 01:30:46,099
+sign filleyi sıfırlamak istiyoruz.
+
+432
+01:30:51,283 --> 01:30:53,963
+Load AH with flag dedik.
+
+433
+01:30:57,555 --> 01:31:05,735
+AH yazmacanın 7 numaralı biti sign flag ile doldu. Daha sonrasında da sign flag'i sıfırlayacak işlem ve geri yazacak işlem ne olur?
+
+434
+01:31:19,731 --> 01:31:25,492
+iki kere xorlarsak kendisi olur. Yani şu işlemi yapacak olursak, mesela nerede?
+
+435
+01:31:28,211 --> 01:31:41,731
+Şurada C'yi bir ile xorladık. Daha sonra bunu da tekrar bir ile xorlamak demek. Bunun sonucu tekrar C yapar. C'deki değer neyse ona karşılık gelir. Yani sıfırlamayı yapmamış olduk ama
+
+436
+01:31:44,243 --> 01:32:07,583
+80H ile entlemek ne yapar biliyor musunuz? 80H ile entlemek, şuraları sıfırlar, bunları sıfırlar ama SF'yi yine olduğu gibi bırakır. Dolayısıyla bu da tam istediğimiz değil. Ama 7F ile, Shift, Left, Shift, Right de değil de burada 7F ile entlemek doğru bir mantık. Şöyle gösterelim.
+
+437
+01:32:11,380 --> 01:32:12,500
+Şöyle göstereyim.
+
+438
+01:32:13,780 --> 01:32:15,500
+Nerede? Mouse Gerser.
+
+439
+01:32:17,000 --> 01:32:19,260
+Burada SF yazmacımız var.
+
+440
+01:32:19,380 --> 01:32:22,460
+Burada değerlerinin değişmesini istemediğim bitler var.
+
+441
+01:32:22,660 --> 01:32:29,760
+Dolayısıyla ben bunu aynı sırada 0, 1, 1, 1, 0, 0, 1 ile entlersem,
+
+442
+01:32:31,340 --> 01:32:34,440
+1 biti 0 ile entlediğim zaman sonuç kesinlikle 0 çıkar.
+
+443
+01:32:35,252 --> 01:32:46,452
+Herhangi bir biti bir landlediğimde ise kendisi kalır. Yani burada mesela zero flag vardı, nokta nokta nokta, kere flag vardı. Bunlar olduğu gibi korunur. Dolayısıyla burada yapacağımız işlem
+
+444
+01:32:46,452 --> 01:32:58,272
+AND AH,7FH olacak. Daha sonrasında tekrar geri yüklememiz gerekiyor. Bir sorun vardı.
+
+445
+01:33:06,644 --> 01:33:11,344
+Peki, o zaman son bir örnek olarak da şunu yapalım.
+
+446
+01:33:15,412 --> 01:33:37,231
+Bu sefer de şunu yapmak istiyoruz arkadaşlar. Paratif fileyi 1 olarak set etmek istiyoruz. Bunun için neler yaparız? Yine AH'a değerimizi yükledik. Bu durumda AH'ın kaç numaralı biti? 0, 1, 2 numaralı biti paratif file ile doldu. Daha sonra 1 yapmak için ne yapacağız?
+
+447
+01:33:55,731 --> 01:34:03,372
+AH'ımızın 0'dan 7'ye kadar bit numaraları var. Biz bunun parity flag'in yani 2 numaralı bitini 1 yapmak istiyoruz.
+
+448
+01:34:08,467 --> 01:34:13,427
+Şu ana kadar bizim görmüş olduğumuz bit bazı işlemler şunlardı.
+
+449
+01:34:14,307 --> 01:34:22,227
+Herhangi bir biti örneğin sıfırla çarptığımızda işlem kesinlikle sıfır oluyordu.
+
+450
+01:34:23,167 --> 01:34:27,387
+Herhangi bir biti sıfırla x zorladığımızda x çıkıyordu.
+
+451
+01:34:27,527 --> 01:34:31,927
+Herhangi bir biti birle x zorladığımızda x üstü çıkıyordu.
+
+452
+01:34:32,595 --> 01:34:40,576
+ve sonuç olarak herhangi bir biti 1 ile orladığımızda 1 çıkıyordu. Dolayısıyla bundan faydalanak, evet verdiğiniz cevaplar doğru.
+
+453
+01:34:41,496 --> 01:34:45,975
+İlgili biti 1 ile ilgili biti 1 olan bir tane immediate değer oluşturacağım.
+
+454
+01:34:47,055 --> 01:34:50,376
+Nokta nokta nokta. Bu sayının binary karşılığı bakın ne oldu?
+
+455
+01:34:50,376 --> 01:34:58,615
+0, 4H oldu. Dolayısıyla or AH, 0, 4H dediğimiz zaman bakın.
+
+456
+01:34:59,252 --> 01:35:23,252
+Örneğin burada ne vardı? Carry flag vardı. Carry flag 0 ile orladım. İşlem sonucum değişmiyor. Dolayısıyla, bunda şöyle dediğimiz zaman, bu da x eşit olacak. Yine x'i 1 ile end dediğimizde, bu da x eşit olacaktı. Dolayısıyla bu özellikleri kullanarak ilerliyoruz. 0, 4, h ile orladıktan sonra işlem sonucumuz artık AH2'de.
+
+457
+01:35:24,243 --> 01:35:49,503
+değerimiz net olarak, kesin olarak 1 olmuş oluyor. Daha sonrasında da bunu store yaptığımızda da, bu işlem sonucunda da artık parity flag'imizin 1 olarak set edilmesini sağlamış oluyoruz. Bunlar da bit bazında işlemler olarak özel komuta olmayan, özel komuta sahip olmayan bayraklar için oluşturabileceğimiz jenerik.
+
+458
+01:35:49,840 --> 01:35:55,500
+set ve reset hatta clear ve set işlemleri olarak ortaya çıkabilmiş oluyor.
+
+459
+01:35:56,100 --> 01:35:57,840
+Şimdi baya değindik aslında.
+
+460
+01:35:58,020 --> 01:35:59,840
+Mantıksal komutlara bakabiliriz şimdi.
+
+461
+01:36:00,539 --> 01:36:06,020
+Mantıksal komutlar arkadaşlar, bu görmüş olduğunuz komutlar.
+
+462
+01:36:06,020 --> 01:36:11,020
+Bunlara ilişkin olarak mesela aritmetik komutlardan da karşılıkları, benzerleri.
+
+463
+01:36:11,699 --> 01:36:21,820
+vardı, onları bir hatırlıyor. Mesela neg diye bir komutumuz vardı, hatırlayacak olursanız. Burada not komutuyla neg komutunu birlikte inceleyerek bir bakalım.
+
+464
+01:36:22,520 --> 01:36:33,300
+Not komutu, bire tümleyen oluştururken, neg komutu ne oluşturuyordu arkadaşlar? Bu, bu ikiye tümleyen oluşturuyordu.
+
+465
+01:36:39,699 --> 01:36:47,219
+Mesela, AL üzerindeki değerimiz, 1, 0, 0, 1, 1, 1, 0, 0 olsun.
+
+466
+01:36:48,139 --> 01:36:54,279
+Bunu eğer ben, NOT AL edersem, bu işlem sonucunda AL'de ulaşacak değer ne oluyor?
+
+467
+01:36:55,899 --> 01:37:03,339
+0, 1, 1, 0, 0, 0, 1, 1 değerleri oluşuyor değil mi? Bu değer oluşuyor.
+
+468
+01:37:04,779 --> 01:37:06,819
+NEGAL edersem ne olacak?
+
+469
+01:37:08,051 --> 01:37:35,211
+negAlt dediğimde de, AL'deki değerimiz, eksi AL olacak. Yani, tuz komplement olarak. Bunu burada görecek olursak, AL bu ise, bunun tuz komplementini nasıl hesaplayacağız? 0, 0, 1, 0, 0, 1, 1, 0 değeri olacak. Bunun karşılığı bu. Bu değer kaşak karşılık geliyor. 6 çarpı 16, 64 mü yapar?
+
+470
+01:37:36,083 --> 01:37:50,543
+64, artı burada da 4 var, 68. Demek ki şuradaki değerimiz bizim eksi 68'e denk gelirken, şurada ilk değer eksi 68, neg'den sonra kalan değerimiz ise 68 değeri olmuş oldu.
+
+471
+01:37:51,443 --> 01:37:55,384
+Nek ile nat'ı bu şekilde birbirinden ayırarak incelemiş olalım.
+
+472
+01:37:57,903 --> 01:38:01,363
+OR işlemi az önce görmüştük, bu bitwise OR.
+
+473
+01:38:03,380 --> 01:38:04,720
+Bitwise or işlemi.
+
+474
+01:38:06,159 --> 01:38:06,880
+Örneğin
+
+475
+01:38:11,699 --> 01:38:28,920
+AL'deki değerimiz o an için 1100, 0110 iken, biz bunu or AL, 88H dersek, 88H dersek, 88'i yazdığımızda
+
+476
+01:38:31,028 --> 01:38:47,327
+Bu değeri elde ederiz. Bitwise olarak orlama yapacağız. Şu en düşük anlamda iki tanesini orladığımızda 0 ile 0, 0, 0 ile 1, 1, 0 ile 1, 1, 0 ile 0, 0, 0 ile 0, 0, 0, 1, 1, 1, 1.
+
+477
+01:38:47,807 --> 01:38:50,648
+Elde ettiğimiz sonuç bu olmuş olacak. Yani bu işlem sonucunda.
+
+478
+01:38:51,155 --> 01:39:16,775
+ALD'deki değerimiz işte 1100, 1110 değeri olarak elde edilmiş olacak. Benzer şekilde end işlemi de bitwise end olarak kullanacağımız bir işlem. Herhangi bir bitimiz immediate değer olarak verdiğimizde herhangi bir bitimiz bir ise bu durumda onu olduğu gibi koruyor. Sıfır ise ilgili biti sıfırlamış oluyor. Aynı işlemi burada yapalım.
+
+479
+01:39:17,235 --> 01:39:27,095
+Yani AL değerimiz 11001100 iken, biz AND AL, 88H yaparsak ne oluyor bakalım.
+
+480
+01:39:27,095 --> 01:39:29,956
+Yine 88H'ı burada oluşturalım.
+
+481
+01:39:30,155 --> 01:39:32,595
+1000100100
+
+482
+01:39:33,427 --> 01:39:38,067
+Bu işlem sonucunda ALD oluşacak değerimiz en yüksek anlamlı bitten itibaren.
+
+483
+01:39:38,307 --> 01:39:42,787
+1 ile 1'e entledim 1, 0 ile 1'e entledim 0, 0, 0.
+
+484
+01:39:43,387 --> 01:39:45,987
+Daha sonra 0, 0, 0, 0 değeri elde edeceğim.
+
+485
+01:39:47,307 --> 01:39:55,867
+Bakın bu, şu bitler, yani bu iki tane 1, şuradaki 1 ve buradaki 1, karşı tarafta da 1 ise olduğu gibi koruyor.
+
+486
+01:39:55,867 --> 01:40:00,507
+Yoksa onları da maskeleyip sıfırlamış oluyor. Yani şu dayıları otomatik sıfırladı.
+
+487
+01:40:00,979 --> 01:40:09,239
+ve bu şekilde işlem yaptı. Benzer şekilde XOR işlemi de bu da bitwise or olarak, bitwise XOR olarak düşünelim.
+
+488
+01:40:09,899 --> 01:40:17,639
+XOR işlemi için de söylemiştik, X'i herhangi bir biti sıfırla XOR'ladığımızda işlem sonucu kendisini veriyor.
+
+489
+01:40:18,139 --> 01:40:23,739
+Herhangi bir biti birle XOR'ladığımızda da değilini üretiyordu. Bu şekilde bir komut.
+
+490
+01:40:23,739 --> 01:40:25,739
+Şimdi test komutunun da
+
+491
+01:40:26,047 --> 01:40:43,287
+aritmetik işlemlerdeki karşılığı arkadaşlar, JMP komutuydu, hatırlayacak olursanız. JMP işlemi aslında destination-source işlemini yapıyordu. İşlem sonucu herhangi bir yerde saklanmıyordu ama bayraklar etkileniyordu.
+
+492
+01:40:45,487 --> 01:40:52,667
+Bayraklar etkileniyordu, hatırlayacak olursanız. Burada da aynı şey geçerli. Test işlemi de benzer bir mantık.
+
+493
+01:40:53,007 --> 01:41:18,087
+Test işlemi arkadaşlar, destination and source işlemini yapıyor. Test komutu, destination ile source'u birbiriyle endliyor. İşlem sonucu bir yere saklanmıyor fakat bayraklar etkileniyor. Dolayısıyla şimdi ben compare işlemini, çıkartma işlemi yaptığım için compare işlemi şöyle güzel bir şekilde yazacak bir alan oluşturayım.
+
+494
+01:41:20,275 --> 01:41:37,775
+Bu durumda arkadaşlar ben Compare işlemini şimdi şöyle ayırıştırarak yazalım. Compare aslında arka planda subtract çalıştırıyordu. Test işlemi arka planda end komutu çalıştırıyor.
+
+495
+01:41:45,587 --> 01:41:49,608
+büyük eşitlik, küçük eşitlik gibi durumları kontrol edebiliyorduk.
+
+496
+01:41:50,087 --> 01:41:55,707
+AND komutu ile ise herhangi bir bit bazlı işlem yapabiliyoruz.
+
+497
+01:41:55,707 --> 01:41:57,387
+Burada da şöyle özetleyelim.
+
+498
+01:41:58,287 --> 01:42:05,427
+Herhangi bir bitin 1 veya 0 olmasını kontrol edebiliyoruz.
+
+499
+01:42:05,467 --> 01:42:07,667
+1 veya 0 olmasını anlayabiliyoruz.
+
+500
+01:42:11,796 --> 01:42:15,016
+Bu komutun karşılığı da bu şekilde bir sonuç üretmiş oluyor.
+
+501
+01:42:15,996 --> 01:42:20,496
+Aşağıda bunların detayı var. O aşağıda bunu görelim isterseniz şimdi.
+
+502
+01:42:21,256 --> 01:42:25,016
+NAT işlemi bitwise NAT her birinin bire göre tümleyenini alıyor.
+
+503
+01:42:25,936 --> 01:42:30,556
+Burada bir register üzerinden işlem yapabildiğimiz gibi memory üzerinden de işlem yapabiliriz.
+
+504
+01:42:30,556 --> 01:42:39,556
+Fakat burada memory işlemi yaptığımız zaman 16 bitlik mi, 8 bitlik mi bunu belirtmek adına mutlaka ve mutlaka
+
+505
+01:42:39,572 --> 01:42:42,892
+pointer kullanmamız gerekiyor. Yani burada word.ptr
+
+506
+01:42:42,892 --> 01:42:46,572
+veyahut da byte.ptr
+
+507
+01:42:46,572 --> 01:42:50,452
+komutlarını mutlaka kullanmamız gerekiyor.
+
+508
+01:42:52,952 --> 01:42:55,972
+Benzer şekilde ilerleyecek olursak
+
+509
+01:42:55,972 --> 01:42:58,132
+or işlemine baktığımızda
+
+510
+01:42:58,868 --> 01:43:22,967
+Burada Immediate Data'nın bir anlamı yok. Zaten tek parametre alıyordu burada NAT işleminde. OR işlemine baktığımızda Bitwise OR iki tane parametre alıyor. İkisini OR'layıp Bitwise olarak OR'layıp iş sonucu destination'a yazıyor. Immediate Data kullanabiliriz. Register'la. Memory ile Immediate Data kullanabiliriz. Register'la Register'ı OR'layabiliriz. Register'la Memory'yi, Memory ile Register'ı OR'lama işlemi yapabiliriz.
+
+511
+01:43:23,315 --> 01:43:44,275
+Memory üzerinde iyi data işlemi yaptığımızda mutlaka pointer gerekiyor. Ben buraya mesela şöyle bir şey yazmış olsam or 100H, 80H yazsam bile benim burada kastettiğim 80H mıdır yoksa 0080H mıdır?
+
+512
+01:43:46,899 --> 01:43:54,099
+Word.ptr veyahut da byte.ptr'ye göre netleşmiş olacak. Mutlaka bunu yazmamız gerekiyor.
+
+513
+01:43:54,479 --> 01:43:57,879
+Şöyle tekrar söyleyeyim, aramızda anlaşma olsun.
+
+514
+01:43:58,579 --> 01:44:05,279
+Herhangi bir derleyici veyahut da emülatör, burada varsayılan değer olarak byte veya word kabul ediyor olabilir.
+
+515
+01:44:05,839 --> 01:44:06,999
+Bu bizim için önemli değil.
+
+516
+01:44:06,999 --> 01:44:16,199
+Biz derslerimiz boyunca ve sınavlarımız boyunca mutlaka bunun eksplisit bir şekilde ifade edilmesi gerektiğini söylemiştik.
+
+517
+01:44:16,279 --> 01:44:18,079
+Siz de buna uyarak ilerleyeceksiniz.
+
+518
+01:44:18,659 --> 01:44:21,919
+Bir sonraki komut grubumuz end işlemiydi, bitwise end işlemi.
+
+519
+01:44:22,479 --> 01:44:42,619
+destination ve source alıyor. Register'ı immediate data ile endleyebiliriz. Bir memory adresini immediate data ile yine endleyebiliriz ama burada da pointer gerekli, bunu unutmuyoruz. Register'lar arasında endleme, bitwise endleme işlemi yapabiliriz. Register ile memory arasında endleme işlemi gerçekleştirebiliriz.
+
+520
+01:44:47,859 --> 01:45:00,299
+Register ile Immediate Data arasında yürüyebilir, Memory ile Immediate Data arasında yürüyebilir ama burada mutlaka pointer gerekli. İki Register arasında ve Register ile Memory bölgeleri arasında XOR işlemi yapabiliriz.
+
+521
+01:45:00,299 --> 01:45:12,359
+Burada daha önce konuştuğumuz mesele burada geçerli. Eğer ki ben herhangi bir yazmacı FF ile 8 bitlik bir yazmacı FF ile XOR'a sokarsam burada
+
+522
+01:45:12,847 --> 01:45:16,207
+AL'nin, bunun tam olarak denki, yani şöyle yazalım,
+
+523
+01:45:17,268 --> 01:45:23,287
+xor AL, 0FFH komutu neye denktir arkadaşlar?
+
+524
+01:45:24,187 --> 01:45:26,707
+NAT AL komutuna denk oluyor.
+
+525
+01:45:27,127 --> 01:45:27,547
+Tamam mı?
+
+526
+01:45:28,047 --> 01:45:30,847
+Bütün birileri, sıfır sıfırları bir yapmış oluyoruz.
+
+527
+01:45:31,547 --> 01:45:36,587
+Burada yine xor AX, AX dediğimizde de, yani şöyle bir durum söz konusu.
+
+528
+01:45:37,524 --> 01:45:51,963
+x'i 0 ile x orlarsam işlem sonucum x oluyordu. x'i 1 ile x orlarsam x üstü oluyordu. Peki, x'i x ile x orlarsam işlem sonucum ne olur? Bakalım.
+
+529
+01:45:53,064 --> 01:46:03,644
+Ne oluyor arkadaşlar? Açık yazalım. x çarpı x üstü artı x üstü çarpı x. Dolayısıyla hem x hem x üstü var. Şu çarpım sonucu 0'dır.
+
+530
+01:46:04,032 --> 01:46:29,792
+Şu çarpım sonucu da sıfırdı. Dolayısıyla bu işlem sonucu sıfır olur. Demek ki ben burada biti sıfırlamış oldum. Bütün bitleri sıfırlamak istiyorsam da, XOR, AX, AX gibi yani aynı değerleri kendisiyle XOR'layarak sıfır sonucu elde edebiliyoruz. Burada şunları yanlış yazmışım bu arada. Bunlar yer değiştirecek. Şu ikisini ters yazmışım.
+
+531
+01:46:31,507 --> 01:46:48,768
+Dolayısıyla MOV AX, 0 komutu yerine XOR AX, AX komutunu tercih edersem XOR AX, AX 3 Glock Cycle'da 2 byte genişliğinde bir komut olarak elde ediliyor. MOV AX, 0 komutu ise 4 Glock Cycle'da 3 byte genişlikte bir komut olarak elde edilmiş oluyor.
+
+532
+01:46:49,368 --> 01:46:53,507
+Şunları yanlış yazdığımı söylemiştim. Sizi de tekrar düzelterek devam edersiniz bundan.
+
+533
+01:46:54,644 --> 01:47:19,923
+Son olarak arkadaşlar, test komutuna geldik, mantıksal komutlar çerçevesinde. Bu test komutu, az önce söylediğim gibi, koşullu dallanma komutlarıyla birlikte kullanılıyor. Yani tıpkı CMP'de olduğu gibi çalışıyor. Yaptığı işlem destination ile sorsu entliyor. Bakın herhangi bir atama yok burada. Sadece bayraklar değişiyor, sonuç saklanmıyor.
+
+534
+01:47:20,564 --> 01:47:26,784
+Register ile Immediate Data arasında, Memory ile Immediate Data arasında olabilir ama burada pointer gerekli yine.
+
+535
+01:47:27,344 --> 01:47:32,944
+İki Register arasında veya Register ve Memory bölgeler arasında bu işlemi yapmamız gerekiyor olabilir.
+
+536
+01:47:33,084 --> 01:47:36,144
+Şimdi burada test komutuyla ilgili olarak ilerleyelim.
+
+537
+01:47:37,044 --> 01:47:38,864
+Örneğin şöyle bir senaryoyu düşünelim.
+
+538
+01:47:42,864 --> 01:47:43,764
+Biz
+
+539
+01:47:45,716 --> 01:47:54,536
+öyle bir donanım oluşturdu ki bu donanımlarla birlikte 8 adet farklı kapının açık veya kapalı olduğunu kontrol edebiliyoruz.
+
+540
+01:47:54,936 --> 01:47:58,056
+Ve bu kontrol değerini de AL yazmacında saklıyoruz.
+
+541
+01:47:58,195 --> 01:48:04,856
+Yani demek ki AL yazmacında işte şöyle 8 bitlik bir değerimiz var.
+
+542
+01:48:07,316 --> 01:48:09,655
+Şöyle ortalardan da bunu bölelim.
+
+543
+01:48:10,195 --> 01:48:33,155
+herhangi birisi i numaralı, i'ninci kapının durumunu belirtiyor. Eğer ki burası 1 ise kapı açık, eğer 0 ise kapı kapalı. Bu durumda şunu sormak istiyoruz. 6 numaralı numaralı kapının
+
+544
+01:48:37,332 --> 01:48:41,212
+açık olduğunu veya kapalı olduğunu, açık kapalı olduğunu kontrol edelim.
+
+545
+01:48:43,672 --> 01:48:45,492
+Olduğunu kontrol etmek istiyoruz.
+
+546
+01:48:46,712 --> 01:48:47,872
+Bunun için ne yapmamız lazım?
+
+547
+01:48:47,972 --> 01:48:56,192
+Yani burada bütün kapıların açık ve kapalı olma durumları bir tane input output cihazı üzerinden okunmuş, AL yazmacına kadar aktarılmış.
+
+548
+01:48:56,312 --> 01:48:57,932
+AL'de bu dediğimiz mantık var.
+
+549
+01:48:58,532 --> 01:49:01,912
+Dolayısıyla 6 numaralı bitin, yani soru dönüp dolaşıp şuna geliyor.
+
+550
+01:49:01,912 --> 01:49:03,052
+6 numaralı bitin.
+
+551
+01:49:03,891 --> 01:49:24,231
+bir olup olmadığını anlamak istiyoruz. Altı numaralı bit birse, yani kapı açıksa bir işlem yapacağız. Yani burada da bunu ayırmak istiyoruz. Nasıl yaparız burada işlemlerimizi? Şimdi bunu Compare'le yapmak mümkün mü? Sadece tek bir bitle ilgileniyorum. Bunu Compare'le yapmak mümkün mü sizce?
+
+552
+01:49:28,372 --> 01:49:28,872
+Ahem.
+
+553
+01:49:42,931 --> 01:49:46,471
+Evet, bunu compare ile yapmak mümkün mü?
+
+554
+01:49:48,251 --> 01:49:56,291
+Şimdi compare ile yapabilmek, evet yapamıyoruz. Şundan dolayı compare ile yapabilmek için belirli bir değerle karşılaştıracağız.
+
+555
+01:49:56,411 --> 01:50:01,811
+Bu değerin fix olması lazım. Bunun fixlenmesi demek, o sayının bütün bitlerin belirlenmesi demek.
+
+556
+01:50:01,811 --> 01:50:06,511
+Ama burada biz sadece bir tane bitin durumuyla ilgileniyoruz ve diğerleri bizim için don't care.
+
+557
+01:50:06,895 --> 01:50:12,536
+Dolayısıyla sadece bir bitin durumuyla ilgilendiğim zaman bir bitin değerini fiksledim, diğerleri değişken olsun.
+
+558
+01:50:12,635 --> 01:50:18,655
+Burada toplamda 128 farklı alternatif çıkar. Dolayısıyla her birisini tekrar compare yapmam mümkün değil.
+
+559
+01:50:19,175 --> 01:50:22,475
+O zaman compare olmayacak. Neyle yapacağız? Doğal olarak testle yapacağız.
+
+560
+01:50:23,055 --> 01:50:26,735
+Testle yapabilmek için bunu nasıl yürüteceğiz? Bakın amacımız neydi?
+
+561
+01:50:27,375 --> 01:50:34,455
+AL'nin 0, 1, 2, 3, 4, 5, 6 ve 7'in bitleri var. 6 numaralı bitini de bulmak istiyoruz aradığımız sonucu.
+
+562
+01:50:35,028 --> 01:50:55,408
+Tamam, test mantığı doğru. Testle bunu bir bakalım nasıl olacak. Test ettiğimiz değer 40 olsun demişiz. 0, 1, 0, 0, 0, 0, 0, 0. Yani 40H ile test edelim. 40H ile test ettiğimiz zaman burada şöyle diyelim.
+
+563
+01:50:59,220 --> 01:51:20,840
+40H dediğimizde sadece 6 numaralı bit 1 ise işlem sonucu 0'dan farklı oluyor. Ama 6 numaralı bitimizde 0 ise işlem sonucu 0 olur değil mi? Dolayısıyla bundan sonra yapacağımız işlem ne? Yani sizden şunu istiyorum. Mesela burası 6 açık.
+
+564
+01:51:21,811 --> 01:51:27,212
+Altı kapalı şeklinde iki tane labelım var. Bu labellara uygun şekilde dallanmak istiyorum.
+
+565
+01:51:29,672 --> 01:51:34,212
+İsim verirken belki bu isimlendirme yanlış oldu. Alttan çizgi atalım.
+
+566
+01:51:35,912 --> 01:51:39,672
+Nümerik karakterle başlamaması lazım labelların zannedersem.
+
+567
+01:51:41,731 --> 01:51:44,792
+Burada test yaptık. Daha sonra şunu diyelim bakın.
+
+568
+01:51:45,311 --> 01:51:49,311
+Jump 0 ise nereye dallanacağım?
+
+569
+01:51:50,868 --> 01:51:52,788
+Jump Zero ise nereye dallanırım?
+
+570
+01:51:55,007 --> 01:51:57,128
+İşlem sonucu ne zaman sıfır olur?
+
+571
+01:51:57,788 --> 01:52:02,887
+AL sıfır olmuş olsaydı, yani kapalı olduğunda sıfır olacak.
+
+572
+01:52:03,047 --> 01:52:08,788
+Dolayısıyla Jump Zero 6 kapalı başlığına gittik.
+
+573
+01:52:09,328 --> 01:52:14,448
+Demek ki kapalı olmadığında da zaten, arada başka kodlar olduğunu varsayalım.
+
+574
+01:52:14,448 --> 01:52:15,828
+Burada CMP.
+
+575
+01:52:16,307 --> 01:52:23,668
+x86 açık olarak ortaya çıkmış oluyor. Şu ikisinin birbirine karışmadığını varsayalım. Arada uygun jump'lar falan var olmuş olsun.
+
+576
+01:52:24,268 --> 01:52:32,688
+Dolayısıyla bu mantık çerçevesinde bunu anlamış olduk. Demek ki jump zero ise ancak bu ne zaman olabilir?
+
+577
+01:52:32,828 --> 01:52:38,448
+Altı numaralı bit sıfırsa ve kırkaçla entlediğim zaman o zaman her bit sıfırlanmış oluyor.
+
+578
+01:52:39,188 --> 01:52:42,847
+Bu durumda altının kapalı olduğunu anlamış oluyoruz.
+
+579
+01:52:43,288 --> 01:52:48,568
+Peki, bir olduğunu anlamak için de ilgili mantığı gerçekleştirmiş olabiliriz.
+
+580
+01:52:49,268 --> 01:52:53,608
+Dolayısıyla test işleminin çalışma mantığını bu şekilde özetlemiş olalım.
+
+581
+01:52:54,368 --> 01:52:58,228
+Tekrar Compare, Fixed bir değer ile karşılaştırmak için,
+
+582
+01:52:58,228 --> 01:53:06,028
+Test ise tek bir bitin değerini belirlemek için kullandığımız komutlar olarak ortaya çıkmış oluyor.
+
+583
+01:53:15,252 --> 01:53:18,072
+Evet, yani bu mantık aslında sorumuz şu.
+
+584
+01:53:19,572 --> 01:53:21,172
+Farklı şekillerde sorulabilir.
+
+585
+01:53:21,672 --> 01:53:24,231
+Mesela kaç tane kapının açık olduğunu bulmak istiyoruz.
+
+586
+01:53:24,992 --> 01:53:28,132
+Dolayısıyla bir register içerisinde kaç tane bir var, bunu bulmak istiyoruz.
+
+587
+01:53:28,212 --> 01:53:30,692
+Bu mantık aslında population count olarak geçiyor.
+
+588
+01:53:31,372 --> 01:53:34,892
+Bunu yapabilmek için izleyeceğimiz yol sizin de dediğiniz gibi
+
+589
+01:53:34,892 --> 01:53:38,612
+Shift ve Carry Compair'leri şeklinde yürüyebilir.
+
+590
+01:53:38,731 --> 01:53:40,231
+Yani şöyle göstermeye çalışayım.
+
+591
+01:53:40,787 --> 01:53:45,247
+Mesela ALD bizim kapı değerlerimiz mevcut.
+
+592
+01:53:50,003 --> 01:54:03,484
+Bunu arkadaşlar, şurada da carry'miz olsun, aileyi birer bit sağa shift ederek ilgili bitin carry'e gelmesini sağlarız.
+
+593
+01:54:03,828 --> 01:54:21,888
+Daha sonrasında da carry'i kontrol ederiz. Yani bu da jump carry komutuyla olur. Bu nasıl çalışıyordu? Carry eşittir bir ise dallan şeklinde. Dolayısıyla biz kaç kapının bir olduğunu saymak istiyorsak, jump carry ile gittiğimiz label'da değeri bir arttırabiliriz.
+
+594
+01:54:21,888 --> 01:54:25,268
+Veyahut da şu olabilir, jump carry kullanmak istemiyorsam da şu olabilir.
+
+595
+01:54:25,684 --> 01:54:41,564
+Yine shift ile carry'e sıradaki biti atarız. Daha sonrasında da ADC komutunu kullanabiliriz. ADC mesela BX olsun. BX virgül sıfır dediğimiz vakit.
+
+596
+01:54:41,844 --> 01:55:02,484
+Bu, JMP carry'e karşılık bir durum oluşturur. Ne yapıyor bakın? BX ile sıfırı topluyor, buna carry'i de ekliyor. O anda carry'de en düşük anlamlı bit var. Ve bunu bir döngüye koyarsam, 8 seferlik bir döngüye koyarsam, bu durumda da her seferinde zaten ilk shift işlemiyle birlikte bütün bitler birer kaymıştı.
+
+597
+01:55:03,764 --> 01:55:19,764
+while'ın ikinci adımında carry'e attığım değer bu sefer en yüksek anlamda ikinci bit olacak. Üçüncü shift ve döngünün üçüncü adımında üçüncü bit olacak. Bu şekilde bir population count yapma imkanımız var. Dediğim gibi iki mantıkla olabilir. Bir tanesi...
+
+598
+01:55:21,171 --> 01:55:45,771
+Jump Carry ile Carry'nin bir olduğu durumlarda koşulu dallanmayla işlem yapmak. İkincisi ise zaten Population Count yaptığımız için her bir döngü adımında bu biriktirme yazmacı ile biriktirme değerimiz hangisi ise onu sıfırla ve Carry ile toplamak. O da ADC, yazmaç virgül sıfır olarak karşımıza çıkan bir durum olmuş oluyor.
+
+599
+01:55:47,252 --> 01:56:12,252
+Bu şekilde test komutunda görmüş olduk. Şimdi öteleme ve döndürme komutları zaten bunun konusu şu anda yeni gelmiş oluyor. Öteleme ve döndürme komutları arkadaşlar bu görmüş olduğunuz başlıklar çerçevesinde ortaya çıkıyor. Bu komutlarımızdan shift ve rotate komutları olarak bahsederiz. Yani öteleme komutları shift işlemleri.
+
+600
+01:56:13,844 --> 01:56:35,884
+Döndürme ise rotate işlemleri olarak ortaya çıkıyor. Shift ve rotate arasındaki temel fark şu. Shift işlemi belirli bir yöne doğru yaptığımız shift işleminde boş kalan bitler sıfırla dolduruluyor. Örneğin, shift işlemleri için genel olarak bahsedecek olursak, mesela burada shift left işlemi yapacak olursam, buradaki en yüksek anlamlı bit dışarı kaybolurken,
+
+601
+01:56:36,340 --> 01:57:01,860
+her bir bit sola doğru ötelenmişken en düşük anlamlı bit yerine sıfır gelecek. Benzer şekilde shift right yaparsam, burada bütün bitler birer adım sağa doğru kayarken en yüksek anlamlı bit yeri boş kalmıştı. Orayı da mesela sıfırla dolduracağını söyleyebiliriz. Rotate'i nasıl düşünmeliyiz? Rotate'i genel olarak şöyle düşünmeliyiz. Tabi bunlar da keride devreye giriyor ama.
+
+602
+01:57:03,028 --> 01:57:17,688
+sağa veya sola doğru rotate yaptığımızda arkadaşlar, boş alan bit yerine yani yeri boş kalan bit yerine en düşük anlamlı bit veyahut da ters yöne doğru yapıyorsak da en yüksek anlamlı bit gelip onun yerini doldurarak ilerliyor.
+
+603
+01:57:18,488 --> 01:57:28,307
+Burada shift ve shift komutları için özellikle iki ayrı başlık var. Bunlardan bir tanesi aritmetik işlemler, bir tanesi ise lojik işlemler.
+
+604
+01:57:28,671 --> 01:57:33,551
+Dolayısıyla burada shift-left işlemini shift-logical-left olarak düşünebiliriz.
+
+605
+01:57:36,531 --> 01:57:39,031
+Şuradaki işlem ise shift-aritmetik-left.
+
+606
+01:57:44,756 --> 01:58:00,355
+Yine benzer şekilde burası Shift Logical Left, burası ise Shift Arithmetic Right olarak bunları düşünebiliriz.
+
+607
+01:58:01,115 --> 01:58:06,735
+Rotate işlemleri de iki başlık altında inceleyebiliriz. Bunlar Carry'i dahil eden ve Carry'i dahil etmeyenler.
+
+608
+01:58:12,224 --> 01:58:36,543
+bitleri arasında döndürülerek yapılıyor. Rotate işlemlerinde ise bir de kerimiz var. Örneğin ötelerken sanki 9 bit üzerinden öteleyormuşuz gibi, pardon döndürüyormuşuz gibi bu işlemi ele almamız gerekiyor. Mesela tekrar geri dönecek olursak aritmetik işlemlerde önemli olan sayının işaret bitini korumak. Yani işaretli ötelemeler gerekiyor.
+
+609
+01:58:36,979 --> 01:59:02,539
+Burada özellikle mesela şu anlamlı bizim için, Shift Aritmetik Right anlamlı. Çünkü Shift Aritmetik Left ile Shift Left birbirinin eş değeri. Sadece Shift Aritmetik Right özel bir durum oluşturuyor. Mesela 1, 0, 0, 0, 0, 0 şeklinde bir sayım varsa, ben bunu Shift Aritmetik Right yaptığımda her bir sayı bir bit ötelendi.
+
+610
+01:59:04,307 --> 01:59:06,007
+Burada bir tane sıfırı unutmuşuz.
+
+611
+01:59:07,228 --> 01:59:12,228
+Hepsi ötelendi. Şurası boş kaldı. Buraya ne koyacağım? Sayının işaretini korumak üzere,
+
+612
+01:59:12,967 --> 01:59:18,467
+önceki sayımın, shift etmeden önceki sayımın işaret biti neyse, onu oraya tekrar dolduruyorum.
+
+613
+01:59:18,567 --> 01:59:20,307
+Dolayısıyla şuradaki değerimiz bizim.
+
+614
+01:59:20,787 --> 01:59:45,767
+eksi 128 iken buradaki değerimiz bizim eksi 64 olarak işareti korunarak gelmiş oluyor. Eğer işaretini korumamış olsaydım, logical yapmış olsaydım, bu en yüksek anlamlı bit sıfır ile dolacaktı. Yani eksi 128'den sonra 64'e geçmiş olacaktık. Bunu da dikkate almış olalım. Şimdi komutları tekrar inceleyelim. Shift-Left işlemi arkadaşlar.
+
+615
+01:59:46,836 --> 02:00:02,236
+Gördüğünüz gibi sola doğru öteleme her bir bit bir yüksek anlamlı bitine kopyalanıyor. En yüksek anlamlı bitimiz kerifileye kopyalanıyor. Boş kalan en düşük anlamlı bit yerimizde sıfır değeriyle doldurulmuş oluyor.
+
+616
+02:00:02,899 --> 02:00:09,420
+Burada çok önemli bir nokta var. Buna dikkat edelim. Bu genel olarak yanlış yapılan bir nokta, hata yapılan bir nokta.
+
+617
+02:00:10,060 --> 02:00:21,100
+Eğer ki ben, şimdi bu komut iki tane parametre alıyor. Bu parametrelerden bir tanesi destination'ımız, bir tanesi de shift miktarını içeriyor.
+
+618
+02:00:21,699 --> 02:00:30,359
+Eğer ki shift miktarımız birse bunu doğrudan immediate olarak verebiliyoruz buraya ama birden fazlaysa bunu CL yazmacı üzerinden vermemiz gerekiyor.
+
+619
+02:00:30,359 --> 02:00:30,899
+Çok önemli.
+
+620
+02:00:30,899 --> 02:00:49,399
+önemli bir nokta. Yani şu yok. Shift-Left, AX, 4 diye bir komutumuz yok. Bunu yapabilmek için MOV CL, 4 daha sonrasında da Shift-Left, AX, CL diyebilirim. Bu ancak iki adımda olabilir ama şu mümkün.
+
+621
+02:00:49,876 --> 02:01:07,615
+shift left, BX, 1, bu mümkün. Tamam mı? Bizden fazla shift veya rotate işlemi yapacaksam mutlaka ve mutlaka bunun CL yazmacı üzerinden verilmesi lazım. Peki neden CX değil de CL? Ve şuraya bakın. Şu komut.
+
+622
+02:01:08,083 --> 02:01:35,043
+çok yine kafayı karıştıran bir komut. Çünkü bu 16 bit, bu 8 bit. Hani bit uyumu gerekiyordu, hani tip uyumu gerekiyordu, hani şu komut çalışmazken, bu komut çalışmazken, bu nasıl çalışıyor? Bu özel bir durum arkadaşlar. Shift işlemi için miktarı CX'de vermememizin sebebi şu, ben buraya en fazla 16 bitlik bir yazmaç yazabilirim. Zaten en fazla
+
+623
+02:01:35,488 --> 02:01:44,547
+16 kere shift veya rotate etmenin anlamı var. 16 bitlik bir yazmaçta. Daha sonraki rotate'ler ilk yapmış olduğum rotate'in aynısı.
+
+624
+02:01:52,020 --> 02:01:53,220
+şurası içinse
+
+625
+02:01:53,220 --> 02:01:57,920
+şu nokta için
+
+626
+02:01:57,920 --> 02:02:04,060
+bahsettiğiniz herhalde o. Burada byte pointer veya word pointer vermemiz
+
+627
+02:02:04,060 --> 02:02:07,120
+gerekir, gerekebilir. Şunlar da. Onu
+
+628
+02:02:07,120 --> 02:02:11,240
+söyleyelim. Evet, doğru dolayısıyla.
+
+629
+02:02:12,140 --> 02:02:13,960
+Şimdi geri dönecek olursak.
+
+630
+02:02:14,355 --> 02:02:36,695
+yapabileceğimiz işlem, shift veya rotate işlemi en fazla 16 birim olabilir. Dolayısıyla burada CX'in kullanmaya gerek yok. CX'i kullanmaya gerek yok. Sadece CL üzerinden vermemiz yeterli. Dolayısıyla shift left işleminden sonra veya rotate işlemlerinden sonra 16 bitlik bir yazmaçla 8 bitlik bir yazmaç birlikte kullanılıyor ve bu geçerli bir komut.
+
+631
+02:02:36,979 --> 02:02:50,259
+Ama MOV komutunda veri aktarım komutu olduğu için veri aktarımında 8 bitlik bir yazmacı, 16 bitlik bir yazmacı kopyalayamıyoruz. Bu ikisi arasındaki farkı mutlaka dikkat edin arkadaşlar. Yani şunu sormayı da çok seviyoruz açıkçası.
+
+632
+02:02:50,688 --> 02:03:12,448
+Mesela bir kod bloğu veriyoruz. Bir kod bloğu içerisindeki hataları düzeltin dediğimizde illaki bir shift left veya shift komutu verip 16 bitlik yazmakta 8 bitlik yazmak yan yana oluyor ve genel olarak da burası hatalı olarak işaretleniyor. Siz ama bunu artık duydunuz, dikkat edeceksiniz karşılaştığınız zaman bu hatalı bir komut değil.
+
+633
+02:03:13,908 --> 02:03:29,808
+CL yerine DL kullanamıyoruz. Sadece ve sadece CL kullanamıyoruz. Şurada yazmış olduğumuz bu komutun template'leri gibi düşünün. Burada CL fix. Birden fazla bir döngü yapacaksak mutlaka CL kullanacak. DL de kullanamıyoruz.
+
+634
+02:03:32,128 --> 02:03:39,808
+Dolayısıyla shift left işlemi, logical left işlemi bu şekilde. Shift right işlemine geldiğimizde de arkadaşlar,
+
+635
+02:03:41,652 --> 02:04:07,051
+Yüksek anlamlı bitler, düşük anlamlı bitlere doğru kopyalanıyor. Şu şekilde kopyalama işlemi yapılıyor. Boş kalan yüksek anlamlı bit yerine sıfır değeri yükleniyor. En düşük anlamlı bitimiz de carry filleye aktarılmış oluyor. Mantık bu şekilde. Yine az önceki problem burada da geçerli. Shift-Write dedikten sonra memory işlemlerinde mutlaka burada da byte pointer veya word pointer kullanmayı unutmayalım.
+
+636
+02:04:07,456 --> 02:04:27,076
+Çünkü memory dediğimiz için bu önemli bir konu. Yine register üzerinden yapılıyor. Birden fazla döngümüz varsa, birden fazla ötelememiz varsa bunu da mutlaka CL komutu üzerinden vermeliyiz. Aynı durum burada da geçerli. Örneğin shift right BX, CL dediğim zaman bu geçerli bir komut.
+
+637
+02:04:27,796 --> 02:04:38,176
+Geçerli bir komut. Şuna aldanmıyoruz. 8 bitlik yazmaçla 16 bitlik bir yazmaç. Bir komutta birlikte kullanılamaz mıydı noktasında bu geçerli bir komut. Tekrar etmiş olalım.
+
+638
+02:04:39,380 --> 02:04:59,100
+Shift arithmetic write işleminin görseli şekilde gördüğünüz gibi arkadaşlar. Bu örneğini vermiştik. Örneğin, x'i 128'i 1 bit shift ettiğimizde, shift arithmetic write yaptığımızda çıkması gereken sonuç x64 olması gerekiyor. Böyle bir gereksinimden dolayı shift arithmetic write işlemi tanımlanmış durumda.
+
+639
+02:05:00,020 --> 02:05:03,300
+Şimdi shift işlemlerine tekrar ele alacak olursak.
+
+640
+02:05:03,796 --> 02:05:26,615
+Shift-Left işlemi neye karşılık geliyor? Shift-Left işlemi aslında 2 ile çarpmaya denk geliyor. Shift-Right işlemi neye denk geliyor? 2'ye bölmeye denk geliyor. Benzer şekilde burada işaretli sayılar için işlemi düşündüğümüzde işaretin korunması adına da Shift-Arithmetic-Right işlemi tanımlanmış. Bunun anlamı da yine 2'ye böl ama işarete dikkat et.
+
+641
+02:05:27,155 --> 02:05:41,355
+işaretli ikiye bölme. Shift aritmetik left zaten shift logical left ile aynı işlem. Yaptığı işlemde iki ile çarpmak şeklinde ortaya çıkıyordu. Bunları da söylemiş olalım.
+
+642
+02:05:41,779 --> 02:05:47,840
+Şimdi nasıl çalışıyor bakın, Shift, Aritmetik, Write yaptığımda işaret bitinin korunması ve tekrarlanması lazım.
+
+643
+02:05:48,479 --> 02:05:55,659
+Örneğin ben, 1, 0, 0, 0, 0, 0, 0, 0 sayısını, bunu AL'ya atmış olayım.
+
+644
+02:05:55,659 --> 02:06:07,279
+Ve 4 kere ötelemek istersem, yapacağım işlem, MOV AL, 80H, MOV CL, 4,
+
+645
+02:06:08,435 --> 02:06:18,315
+Shift, arithmetic, write, shift, arithmetic, write, AL, CL dediğim vakit işlem sonucu nasıl gerçekleşecek?
+
+646
+02:06:18,739 --> 02:06:45,259
+Şimdi bu sayımız neydi bizim arkadaşlar? Bakın bu sayımız eksi 128 idi. Dört kere ötelediğimde dört kere ikiye böleceğim. Eksi 64, eksi 32, eksi 16 değerine ulaşmak istiyorum. Bunu yapabilmek adına da işaret bitini koruyarak bunu öteleyeceğim. Şimdi işaret bitini koruyarak hepsini bir bit öteledim. Bir, en baştaki bir kaldı. Diğerlerini bir bit kaydırdım. 0, 0, 0, 0, 0. Bu birinci öteleme.
+
+647
+02:06:45,716 --> 02:06:54,576
+İkinci ötelemeye gelelim. İkinci öteleme için işaret bitini koruyacağım. Şu en yüksek anlamlı biti koruyacağım. Ve tekrarlayacağım.
+
+648
+02:06:55,836 --> 02:07:09,516
+Ve diğerlerini birer bit kaydıracağım. 1-0-0-0-0-0. Birinci öteleme, ikinci öteleme, üçüncü ötelemeye gelelim. Üçüncü ötelemede işaret bitini korudum ve birer kaydırdım. Diğerlerini de bir bit kaydırdım.
+
+649
+02:07:10,068 --> 02:07:31,968
+0000 ve dördüncü öteleme sonucunda da elde edeceğimiz sonuç zaten 1111100 olmuş oluyor. Bu baktığımız zaman şu sayıyı nasıl ele almamız gerekiyor bakalım. Bu sayı işaretli bir sayı olarak ele alacağımdan dolayı aritmetik işlem yapıyorum ya işaretli sayı işlem bu bir negatif sayı.
+
+650
+02:07:32,532 --> 02:08:00,072
+Bu negatif sayı olduğunu biliyorum. Negatifimi koydum. Bunun tuz komplementini hesaplayalım. Tuz komplementi ilk sıfırı görene kadar, ilk biri görene kadar olduğu gibi bırak. Daha sonrakilerin hepsinin değilini al. Demek ki bu işaretli sayının genliği de 16'ymış. Demek ki burada dördüncü adımda elde ettiğim sayıyı eksi 16 olarak elde edebilmek adına burada most significant bitimiz olan işaret bitini koruyup tekrarlayarak
+
+651
+02:08:00,756 --> 02:08:13,036
+koruyup tekrarlayarak işaret bitini, işaretli shift işlemini veyahut da aritmetik shift işlemini yapmış oluyoruz. Bu örneği de bununla birlikte vermiş olalım.
+
+652
+02:08:14,315 --> 02:08:25,315
+Rotate işlemlerine geldiğimizde arkadaşlar, rotate işlemleri iki şekilde oluyordu. Bir tanesi carry'i kullanan işlemler, bir tanesi carry'i kullanmayan işlemler. Şu arada ilk örneğimiz rotate carry left işlemi.
+
+653
+02:08:25,728 --> 02:08:50,787
+Rotate Carry Left dediğimizde arkadaşlar aslında biz sanki elimizde 9 bitlik bir sanal yazmaç varmış da onun üzerinde döndürme yapıyormuşuz gibi çalışıyor. Registerımızdaki veya ilgilendiğimiz Destination'daki en yüksek anlamlı bit Carry Flag'e aktarılıyor. Carry Flag içerisindeki değer en düşük anlamlı bite aktarılıyor ve diğer bütün bitlerde birer bit ötelenerek
+
+654
+02:08:51,119 --> 02:09:19,019
+döndürme işlemini gerçekleştiriyoruz. Yine burada dikkat edeceğimiz nokta, sadece bir kere öteleme yapacaksak bunu immediate değer olarak bir şeklinde verebiliriz. Ama birden fazla öteleme yapacaksak bunun mutlaka CL yazmacı üzerinden verilmesi lazım. Dolayısıyla işlem öncesinde CL'ye de uygun değeri vermemiz gerekiyor. Yine aynı şey burada da geçerli. Yapacağımız işlem bir memory işlemi ise word pointer veya byte pointer olarak bunu belirtmek gerekiyor olacak diye düşünüyorum.
+
+655
+02:09:19,119 --> 02:09:23,979
+onun bir denemesini yaparız. Şimdi buraya yazmadığımız için acaba yok mu diye de düşündüm ama
+
+656
+02:09:23,979 --> 02:09:30,960
+yine burada da aynı şey geçerli. Rotate, carry, left yaptıktan sonra AX, CL şeklinde bir komut,
+
+657
+02:09:32,539 --> 02:09:38,180
+valid bir komut ve geçerli bir komut, 16 bitlik bir yazmaçla 8 bitlik bir yazmaç,
+
+658
+02:09:38,180 --> 02:09:41,239
+rotate ve shift işlemlerinde birlikte kullanılabiliyor.
+
+659
+02:09:42,931 --> 02:09:53,012
+Rotate Carry Right işlemine baktığımızda ise arkadaşlar, yine elimizde sanki 9 bitlik bir yazmaç, sanal bir yazmaç varmış gibi bunlar üzerinden döndürme yapıyoruz.
+
+660
+02:09:53,712 --> 02:09:59,172
+Yine iki alternatif söz konusu, bir kere döndürme yapacaksak, immediate olarak bunu verebiliriz.
+
+661
+02:09:59,692 --> 02:10:01,931
+Birden fazla döndürme yapacaksak bunları...
+
+662
+02:10:02,304 --> 02:10:27,344
+CL yazmacı üzerinden önceden ayarlayıp daha sonra bu komutu çalıştırmamız gerekiyor. Yine bir memory işlemiyle birlikte kullanacaksak şurada word pointer, byte pointer'ları vermemiz lazım. Mantık aynı. En düşük anlamlı bit, carry flag'e giderken carry flag'teki değer en yüksek anlamlı bite döndürülmüş oluyor. Sonraki gruplarımız ise arkadaşlar, rotate left ve rotate right.
+
+663
+02:10:27,631 --> 02:10:52,531
+komutları. Bunlar için ise döndürme işlemi sadece 8 bitlik alanda yapılıyor. Fakat döndürme yönüne bağlı olarak en yüksek anlamlı veya en düşük anlamlı bit yine carry flag kopyalanmış oluyor. Carry flag sadece kopyalama amacıyla kullanılıyor. Döndürme işlemi 8 bitlik tarafta gerçekleşiyor.
+
+664
+02:10:53,043 --> 02:11:00,423
+Yine aynı şeyler burada da geçerli. Eğer ki ben bir memory işlemi yapacaksam pointer, byte pointer, word pointer vermemiz lazım.
+
+665
+02:11:01,043 --> 02:11:20,724
+Bir kere Rotate işlemi yapacaksam bunu immediate değer olarak verebilirim ama birden fazla yapacağım Rotate işlemlerinde bunları CL yazmacı üzerinden vermemiz gerekiyor. Bunlara ilişkin bu Shift ve Rotate işlemlerinin kullanıldığı en yaygın durumlar az önce de konusu geçmişti Population Count durumları.
+
+666
+02:11:27,028 --> 02:11:28,728
+Population count komutları.
+
+667
+02:11:29,408 --> 02:11:31,528
+Bu komutlara ilişkin olarak da
+
+668
+02:11:31,528 --> 02:11:33,988
+şunu söyleyebiliriz.
+
+669
+02:11:34,548 --> 02:11:37,168
+Günümüzde, yani bu az önce gördünüz, bunu bir
+
+670
+02:11:37,168 --> 02:11:38,788
+while döngüsü içerisinde
+
+671
+02:11:38,788 --> 02:11:41,168
+işte jump carry veya
+
+672
+02:11:41,168 --> 02:11:41,768
+işte
+
+673
+02:11:42,387 --> 02:12:00,608
+ADC komutları ile yapıyorduk. Uzun bir işlemdi, bir kontrol gerektiriyordu. Güncel işlemlerde population count'u yapan özel instruction'lar var. Yani bir instruction ile bir yazmaç içerisinde kaç veya bir değer içerisinde kaç tane bir var. Tek bir komutla elde edilebilmiş oluyor.
+
+674
+02:12:01,235 --> 02:12:09,215
+Rotate right işlemi, bu da sağa doğru döndürme yapıyor. Aynı şeyler burada da geçerli. 8 bit üzerinden döndürme işlemi yapıyor.
+
+675
+02:12:09,355 --> 02:12:19,555
+Carry flag sadece işlem sonucunun veya en düşük anlamlı bitin kopyalanmış olduğu tek bitlik bir yazmaç görevini yerine getirmiş oluyor.
+
+676
+02:12:21,155 --> 02:12:26,075
+Şimdi arkadaşlar, bu noktaya kadar sormak istediğiniz bir şey var mı? Onları bir alalım sizden.
+
+677
+02:13:06,963 --> 02:13:09,423
+soru yoksa bir sonraki konuya doğru devam edelim.
+
+678
+02:13:18,963 --> 02:13:23,284
+Sonraki komut gruplarımız arkadaşlar şu şekilde geliyor.
+
+679
+02:13:27,412 --> 02:13:29,091
+Dizi komutlarımız var.
+
+680
+02:13:31,212 --> 02:13:33,652
+Sonrasında giriş çıkış komutlarımız var.
+
+681
+02:13:36,032 --> 02:13:37,511
+Bekletme komutları var.
+
+682
+02:13:37,591 --> 02:13:38,971
+BCD komutlarımız var.
+
+683
+02:13:39,231 --> 02:13:43,431
+Ve bundan sonrasında da hemen şöyle bir kontrol ediyorum.
+
+684
+02:13:44,311 --> 02:13:46,631
+Beşinci hafta sunumunda neler vardı?
+
+685
+02:13:47,923 --> 02:13:53,643
+Daha sonrasında da adresleme modlarına geçmiş olacağız. Yani bunlarla birlikte komutlarımızı bitirmiş oluyoruz.
+
+686
+02:13:53,983 --> 02:14:04,583
+Şimdi burada çok böyle detay üzerinde durmadan biraz genel geçeceğiz bu konuları. Dolayısıyla bu kapsamda yetişebileceğini düşünüyorum.
+
+687
+02:14:05,163 --> 02:14:11,183
+Şimdi dizi komutları dediğimiz zaman arkadaşlar bu dizi komutları aslında içerisinde bir döngü içeren komutlar.
+
+688
+02:14:11,183 --> 02:14:14,183
+Yani bu şöyle düşünebiliriz bunları.
+
+689
+02:14:14,771 --> 02:14:29,931
+bunlar dolaylı olarak döngü komutları. Bu şekilde çalışıyorlar. Biz mesela şu komutlardan herhangi birini çalıştırdığımızda aslında bu işlem
+
+690
+02:14:31,572 --> 02:14:51,552
+CX'deki değer kadar gerçekleniyor. Dolayısıyla ben bu komutu çalıştırmadan önce veya bunu çalıştırırken, bunun altında, iç yapısında bir döngü komutunun çalıştığının farkında olmamız lazım. Tek satırlık bir komut ama arka planda bir loop döndürüyor. Nasıl ki biz loop komutunu incelerken nasıl bakmıştık, bunun eş değeri olarak neye bakmıştık?
+
+691
+02:14:58,032 --> 02:15:15,931
+ve bir jump komutu vardı, koşullu dallanma komutu vardı. Aslında iç yapısı bunların bir araya getirilmiş haliydi. Burada da dizi komutları da döngü komutunu dolaylı olarak çağıran komutlar gibi düşünebiliriz. Şimdi bu komutlar için bakın arkadaşlar şu uzantılarından bakacak olursak.
+
+692
+02:15:21,363 --> 02:15:44,363
+Şöyle işaretlemiş olayı. Şuradaki iki komut farklı, onları ayıralım. Bu dizi komutlarını byte veyahut da word dizileri için gündeme alabiliriz. Aynı komutu, mesela movec komutunu byte dizisi için de yapabilirim, word dizisi için de yapabilirim. Bu komut...
+
+693
+02:15:46,355 --> 02:16:00,355
+aldığı adresin bir Word dizisi mi, byte dizisi mi olduğuna bakmıyor. Dolayısıyla buradaki kontrolün bize ait olması lazım. Buradaki kontrol bize ait olacak. Yani ben bir Word dizisi tanımlayıp, yani Word dizilerini şöyle...
+
+694
+02:16:00,756 --> 02:16:19,756
+çizeyim iki tane byte'dan oluşan bir dizi. Bu diziyi tanımlayıp, bunun başlangıç adresini alıp byte dizi işlemi yapabilirim. Bunda assembler herhangi bir problem çıkartmaz. Benim algoritmam buna da uygunsa bundan yana da sıkıntı yok. Ama dediğim gibi bu kontrol assembler'da yok. Adresler adrestir.
+
+695
+02:16:20,180 --> 02:16:43,000
+her adreste bir byte saklanır. Ben o byte'deki, o adresteki değeri word olarak mı ele almak istiyorum, byte olarak mı ele almak istiyorum? Bu tamamen benim kontrolümde olması gereken bir durum. Dolayısıyla bu komutları aslında word ve byte olarak ayırdığımızda 2, 3, 4 ve 5 farklı komut grubumuz var. Bunların yanında
+
+696
+02:16:43,476 --> 02:17:08,756
+Bir de Word'ü, DoubleWord'e döndüren komutlarımız mevcut olacak. Yani şu CBV işlemi bir tane parametre alıyor. Bu almış olduğu parametreyi bir byte değerini Word değerine çevirerek bunu sonuç elde ediyor.
+
+697
+02:17:09,332 --> 02:17:29,952
+CVD komutu da almış olduğu parametredeki wordü bir double word'e dönüştürerek işlem gerçekleştiriyor. Ama diğerleri dediğim gibi dizi işlemleri. Mesela MOVS dediğimiz MOVS string komutu bir source ve destination dizilerimiz var. Buradaki değeri adım adım buraya aktarıyor.
+
+698
+02:17:35,987 --> 02:17:51,987
+Burada yönüm var. Adresten artarak gideceğim. Kaç adet byte veya word aktaracağım. Bir de bu bilgi var. Bu bilgileri sağladıktan sonra MOVS yani MOVString komutunu çalıştırdığım zaman bu işlem bittiğinde
+
+699
+02:17:52,448 --> 02:18:15,567
+bir dizi komple olarak başka bir adrese kopyalanmış oluyor. Veya CompareString var, bakın CompareString var. CompareString de benzer şekilde iki tane dizim var, başlangıç adresleri kaynak ve hedef olmak üzere. İlgili sıradaki byte veya wordlerini karşılaştırıyor. Bunların birbirine eşdeğer veya farklı olmasına göre ben işlem yapabiliyorum.
+
+700
+02:18:15,968 --> 02:18:31,548
+benzer şekilde diğer komutlarımız da mevcut. Şimdi bunların yapısına bakalım. Dikkat edeceğimiz nokta, bu string işlemlerinde byte dizisi üzerinden veya word dizisi üzerinden işlem yapmam mümkün. Bunlara göre komutların varyasyonları oluşmuş oluyor.
+
+701
+02:18:32,371 --> 02:18:55,431
+Tekrarlı işlemler için tasarlanmıştır. İşlem tekrarı CX yazmacında tutulur. Yani bu bir döngü aslında, onu anlamış oluyoruz. Zaten döngülerde CX değeri birer birer azalıyordu. Burada da aynı şey söz konusu. Burada tekrar miktarını ön eklerle birlikte elde edebiliyoruz. Yani repeat diyerek, yani bir sefer gerçekleşmemesi için.
+
+702
+02:18:55,840 --> 02:19:05,900
+repeat, repeat equal, repeat not equal gibi ön eklerle bunları tekrarlı işlem olarak ortaya koyabiliyoruz. Şimdi biraz sonra bakacağız onlara.
+
+703
+02:19:06,451 --> 02:19:14,511
+döngü işlemi dolayısıyla bu ön eklerle birlikte gerçekleşecek ve CX yazmacı üzerinden ne kadar tekrarlandığını buluyoruz.
+
+704
+02:19:15,031 --> 02:19:20,851
+Burada dizinin yönü, işlem yönü önemli. Bunun için direction flag kullanılıyor.
+
+705
+02:19:21,551 --> 02:19:28,752
+Eğer ki bakın ne denmiş? Direction flag 0 ise bu durumda iki tane dizim için, kaynak ve hedef dizilerim için
+
+706
+02:19:28,752 --> 02:19:34,451
+ben burada referans olarak başlangıç adreslerini göstermeliyim ki DF de 0 oldu.
+
+707
+02:19:34,451 --> 02:19:59,291
+olduğu için her işlemden sonra, her döngü adımından sonra adres bir artsın. Yani burada artı bir olarak bir sonraki adresleri gösterecek. Bu konfigürasyon bunun için geçerli. Referans olarak başlangıç adresleri, DF bayrağım sıfır, her işlem adımında bir sonraki büyük adrese doğru gidiyorum. Eğer DF değerim sıfırsa bunun anlamı şu, iki tane dizim var, kaynak ve hedef olmak üzere.
+
+708
+02:20:00,000 --> 02:20:08,959
+referans adresim bu sefer dizilerin son adresi olmuş oluyor. DF bayrağımız da bir olduğu için her seferinde bir azalarak gideceğiz.
+
+709
+02:20:10,239 --> 02:20:16,239
+Son adresten itibaren dizinin ilk adresine kadar ilerleyerek işlemlerimizi yapıyor olacağız.
+
+710
+02:20:16,360 --> 02:20:24,579
+Dolayısıyla yine bakın önceki adımda dizi işlemini yapmadan önce CX'de ilgili değeri oluşturmam gerektiğini anladım.
+
+711
+02:20:24,579 --> 02:20:26,719
+Yani dizi işlemlerindeki koşullardan bir.
+
+712
+02:20:27,123 --> 02:20:30,103
+CX'de uygun değeri oluştur.
+
+713
+02:20:35,731 --> 02:20:40,252
+2, DF'de uygun değeri oluştur.
+
+714
+02:20:45,459 --> 02:21:02,099
+Üçüncüsü de arkadaşlar, burada yazmamışız, şu başlangıç adreslerini uygun şekilde oluşturmamız gerekiyor. Bu başlangıç adresleri de arkadaşlar DS ve ES yazmaçlarında olacak. DS için source.
+
+715
+02:21:02,708 --> 02:21:13,468
+index, es için destination index birlikte kullanılıyor olacak. Üçüncü koşulda, üçüncü ön hazırlıkta bunu gerektiriyor olacak. Şimdi komutlarımıza bakalım.
+
+716
+02:21:14,208 --> 02:21:27,148
+MOVS komutu, bakın MOVS komutu bir komut grubu gibi düşünebilirsiniz. Bunun iki başlığı vardı. Ne demiştik? Byte ve Word için çalışabilir. Dolayısıyla bizim MOVStringByte ve
+
+717
+02:21:27,731 --> 02:21:51,871
+MOV, STRING, WORD komutlarımız var. MOV, STRING, WORD'i kullanırsam her seferinde bir byte'lık işlem yapacak. MOV, STRING, WORD'i kullanırsam her seferinde bir WORD işlem yapacak. O zaman byte işlemi yaptığımda SI ve DI birer birer artıyor. MOV, STRING, WORD işlemini yaptığımda da SI ve DI ikişer ikişer artıyor ve bu artım otomatik olarak yapılıyor.
+
+718
+02:21:53,459 --> 02:21:55,360
+Ne yapıyormuş MOV string komutu?
+
+719
+02:21:55,899 --> 02:21:59,939
+Bir bellek bölgesinden, bir başka bellek bölgesine kopyalama yapıyor.
+
+720
+02:22:00,159 --> 02:22:02,639
+MOV işlemi yapıyor. Dolayısıyla kopyalama işlemi yapıyor.
+
+721
+02:22:03,319 --> 02:22:06,479
+Önceki değer, yani source'daki değer kaybolmuyor. Buna dikkat edin.
+
+722
+02:22:08,059 --> 02:22:09,439
+Oradaki değer kaybolmuyor.
+
+723
+02:22:12,059 --> 02:22:18,119
+İkinci komutumuz Compare String. Bunun da aynı şekilde byte ve word versiyonları var.
+
+724
+02:22:18,708 --> 02:22:24,927
+byte versiyonunda SE ve DE değerlerimiz birer birer artıyor otomatik olarak.
+
+725
+02:22:25,628 --> 02:22:31,567
+word versiyonunu kullandığımızda da SE ve DE değeri yine ikişer ikişer artmış oluyor.
+
+726
+02:22:33,887 --> 02:22:41,988
+Karşılaştırma için kullanılıyor. İki bellek bölgesinin ilgili indi sıralarını birbiriyle karşılaştırmak için kullanılan bir komut.
+
+727
+02:22:42,927 --> 02:22:44,407
+Diğer komutumuz arkadaşlar.
+
+728
+02:22:46,355 --> 02:23:04,355
+Scan işlemi neyi tarıyor? İlgili bellek bölgesini tarıyor. Eğer şöyle söyleyelim, ScanStringByte dersek veya ScanStringWord dersek, vermiş olduğumuz diziyi
+
+729
+02:23:04,819 --> 02:23:09,500
+AX yazmacıyla word, ilgili adresteki word'ü karşılaştırıyor.
+
+730
+02:23:09,599 --> 02:23:18,459
+Veyahut da ScanStringByte komutunu kullanmışsam da, dizinin ilgili sırasındaki gözünü aile ile karşılaştırarak ilerliyor.
+
+731
+02:23:18,899 --> 02:23:20,540
+Bu karşılaştırmayı ne kadar yapıyor?
+
+732
+02:23:21,180 --> 02:23:29,599
+Karşılaştırma sonucu sıfır olana kadar veya sıfır olmayana kadar gibi tekrarlı adımlarını burada ek bir koşul olarak verebiliyoruz.
+
+733
+02:23:30,995 --> 02:23:49,635
+Başka bir komut grubumuz ne? Başka bir komut grubumuz load string komutu. Şuradaki load string komutu. Yaptığı işlem ne? Bellek bölgesinde sırasıyla gelen dizinin sıradaki indislerini AX veya AL'ye yüklemek için kullanılıyor. Yani bunun anlamı şu.
+
+734
+02:23:54,995 --> 02:24:16,495
+i'ye atıyor. Bunu bir döngü içerisinde yapacak olursak bu işlemi yapıyor. Load. Store ne işlemi yapıyor? Store da şunu yapıyor. For içerisinde dizimizin ilgili gözüne AL değerini atamak için kullanılıyor. Bu da store etmiş oluyor değeri.
+
+735
+02:24:17,172 --> 02:24:44,031
+ConvertBiteToWord ve ConvertWordToDoubleWord işlemleri ise dikkat edin arkadaşlar, işaretini koruyarak genişletme yapıyor. Yine Word'u, DoubleWord'u genişletirken de yine işaretini koruyarak genişletme yapıyor. İşaret bitini koruyarak genişletme yapıyor. Burada gizli operantlar var. Bunların ne olduğunu da şimdi detaylı bir şekilde göreceğiz.
+
+736
+02:24:44,659 --> 02:25:01,139
+Örneğin, MOV string komutuna bakacak olursak arkadaşlar, MOV string komutu bir destination bölgesinden, bu destination bölgesi data segment ve source index ile oluşturuyor.
+
+737
+02:25:10,227 --> 02:25:17,927
+Extra segment ve destination index ile belirtmiş olduğumuz adres bölgesine aktarmak için kullanılıyor.
+
+738
+02:25:19,407 --> 02:25:21,327
+Bu şekilde kullanılan bir yapı.
+
+739
+02:25:21,948 --> 02:25:27,907
+Her seferinde otomatik olarak DF değerimiz 0 ise bir sonraki
+
+740
+02:25:28,755 --> 02:25:46,595
+Hafıza gözüne ilerliyor. Df0 ise. Eğer df1 olmuş olsaydı da, vermiş olduğumuz referans adresten itibaren, yani referans adresi kim belirledi? dsSI ile esDI belirledi. İki tane referansımız var ya, bir tanesi source, bir tanesi destination.
+
+741
+02:25:47,087 --> 02:26:04,347
+source referansımız DS ve SI ile belirlenmişken destinationımız ESDI ile belirlendi. Bu referanstan sonra bir geri adrese mi gideceğim yoksa bir sonraki adrese mi gideceğim bu arkadaşlar DF ile belirleniyordu hatırlatacak olursanız.
+
+742
+02:26:04,347 --> 02:26:10,747
+Dolayısıyla referanstan sonraki adrese gitmek için DF'yi sıfır olarak set etmeliyim ki
+
+743
+02:26:11,092 --> 02:26:17,512
+Bu benim referansımın aslında dizilerimizin başlangıç adresi olduğunu ortaya koymuş olalım.
+
+744
+02:26:18,192 --> 02:26:24,252
+Yine bu bütün işlemler, burada görmüş olduğunuz işlemler, DI'nın arttırılması falan otomatik olarak gerçekleşiyor.
+
+745
+02:26:24,332 --> 02:26:25,872
+Bizim buna müdahalemiz gerekmiyor.
+
+746
+02:26:26,612 --> 02:26:28,872
+Aynı işlemi Word için de yapabiliriz.
+
+747
+02:26:28,932 --> 02:26:36,211
+Word için yaptığımızda yine destination ve source'umuz ilgili adresler, ilgili segment yazmaçları ile birlikte belirleniyor.
+
+748
+02:26:38,772 --> 02:26:58,772
+bir sonraki Word'e mi, bir önceki Word'e mi gideceğim? O da yine Direction Flag ile belirli. Direction Flag 0 ise bir sonraki Word'e gidiyorum. Yani adres değerlerim 2 artıyor. Ama Direction Flag 1 ise bir önceki Word'e giderek işlemimizi gerçekleştirmiş oluyoruz. Şimdi Compare işlemine bakalım.
+
+749
+02:26:59,316 --> 02:27:24,616
+Compare String işlemi. Compare String işlemi arkadaşlar, vermiş olduğumuz destination ile source arasında bir compare işlemi yapıyor. Bunu niçin kullanabiliriz? Örneğin iki tane dizimiz var. Bu dizi içerisinde farklı elemanı bulmak için kullanabiliriz. Veyahut da ilk eşleşmeyi bulmak için kullanabiliriz. Bu amaçlarla kullanılabilecek bir komut. Compare işlemi olduğu için
+
+750
+02:27:25,139 --> 02:27:44,579
+Çıkartma işlemi yapıyor, satrak işlemi yapıyor. İşlem sonucu saklanmaz. Yani dizinin her bir elemanla ilgili, ilgili sıradaki elemanıyla ilgili çıkartma işlemi yaptığında işlem sonucu saklanmaz. Sadece bayraklar etkilenir. Bayrakların etkilenmesi de bu işlemi tekrarlı olarak ne kadar yapacağımı belirlemek adına.
+
+751
+02:27:49,108 --> 02:28:08,988
+bayraklar etkilenir. Eğer byte işlemi yapıyorsam, bir sonraki veya bir önceki byte'a geçiyorum. Bunu da destination, pardon, direction flag belirliyor. Aynı karşılaştırma işlemini word tipinde de yapabilirim. Bunun için yine destination referans adresim dsse offsetinde belirlenirken,
+
+752
+02:28:09,332 --> 02:28:17,752
+Diğer adresimiz ise arkadaşlar, diğer hedef referansımız ise ESDI ikilisiyle birlikte belirleniyor.
+
+753
+02:28:19,031 --> 02:28:26,132
+Her seferinde bir sonraki veya bir önceki Word'e geçme imkanım var. Onu da yine Direction Flag belirlemiş oluyor.
+
+754
+02:28:26,792 --> 02:28:35,191
+Scan işlemine bakmış olduğumuzda Scan String işlemini bir byte dizisi üzerinden veya bir Word dizisi üzerinden yapabiliriz.
+
+755
+02:28:35,520 --> 02:28:38,319
+Scan işleminin yapmış olduğu işlem neydi arkadaşlar?
+
+756
+02:28:43,119 --> 02:28:45,799
+Burada bunu anlış mı yazmışız?
+
+757
+02:28:47,920 --> 02:28:49,280
+Bir saniye.
+
+758
+02:28:53,907 --> 02:29:10,907
+Compare işlemi iki ayrı dizi bölgesi arasında yapılırken, scan işlemi, register, AL veya AX yazmacıyla bellek bölgesi arasında yapılıyor. Dolayısıyla bunu ne için kullanabiliriz mantık olarak düşünelim. Elimizde yazmacımızda bir...
+
+759
+02:29:12,115 --> 02:29:30,675
+referans değer var. Bunu dizi içerisinde bulana kadar aramak şeklinde düşünebileceğimiz bir yapı olabilir bu ScanSystembyte. Yapmış olduğu işlem şu şekilde görülebilir. Burada source değerimiz artık
+
+760
+02:29:31,156 --> 02:29:57,096
+DS, SI değil, AL veya AX yazmacımız ama destination'ımız aynı. Bakın destination değişmemiş. Sadece sorsumuz bir yazmaç olarak güncellenmiş oluyor. Bu ikisi arasında compare işlemi yani çıkartma işlemi olarak yürüyen bir işlem. Dolayısıyla şurada for şeklinde yazdığımız şeyi aslında bunu şöyle çıkartma işlemi olarak.
+
+761
+02:29:58,451 --> 02:30:04,691
+değiştirmiş olalım. Load işlemine baktığımızda ise arkadaşlar, load işleminde
+
+762
+02:30:04,691 --> 02:30:16,572
+string dizimizi word olarak veya byte dizisi olarak ilgili yazmaca adım adım kopyalamak şeklinde düşünebiliriz.
+
+763
+02:30:16,572 --> 02:30:18,631
+Bunu da
+
+764
+02:30:22,644 --> 02:30:25,404
+Şunu yanlış yazmış olabilir miyim diye düşünüyorum ama.
+
+765
+02:30:26,164 --> 02:30:28,684
+Eğer bir yanlışlık varsa düzeltirim, sonradan kontrol edeyim.
+
+766
+02:30:29,504 --> 02:30:42,283
+Buradaki işlemin amacı da dizinin sıradaki elemanlarını alıp, AL'ye atıp bir takım işlemler yapıp, daha sonra bir sonraki elemanla ilgili döngü şeklinde devam etmek gibi düşünebilirsiniz.
+
+767
+02:30:42,283 --> 02:30:49,443
+Yapılan işlem, source değerinin AL veya AX yazmacına atanması şeklinde ilerleyen bir durum.
+
+768
+02:30:51,059 --> 02:30:58,459
+Bir de store işlemimiz vardı. Store işlemimiz, ha şunu şimdi oldu.
+
+769
+02:31:04,531 --> 02:31:08,471
+Şunları load ve store için yazmıştık değil mi? Tamam. O zaman bunda sıkıntı yok.
+
+770
+02:31:11,391 --> 02:31:12,591
+Bunda sıkıntı yok.
+
+771
+02:31:16,211 --> 02:31:23,171
+load dediğimiz şu load işlemiydi. Şu store işlemi. Böyle dediğimiz vakit sıkıntı kalmadı. Tamam.
+
+772
+02:31:24,631 --> 02:31:37,112
+Şimdi load işlemini söyledik. AX veya AL'ye sıradaki değerleri atamak. Store işlemi de AL veya AX'deki Word veya Byte değeri ilgili adres gözüne atamak şeklinde düşünebiliriz.
+
+773
+02:31:39,667 --> 02:31:50,387
+dizim, bir dizim var. Bu diziye initial değer atacağım ve hepsinde aynı değer olmasını istiyorum. Mesela bu durumda hızlı bir şekilde store işlemini kullanabileceğimizi görüyoruz.
+
+774
+02:31:51,628 --> 02:32:05,288
+Convert byte to word ve convert word to double word bunlar operant almayan komutlar. Tek başlarına çalışıyor. Bunların içerisinde iki ve üç tane gizli operant var.
+
+775
+02:32:05,695 --> 02:32:25,015
+Birincisi, byte'ı word'e çevirirken bunu AL ve AX yazmaçları üzerinden yapıyor. Örneğin elimizde 1, 0, 0, 0, 0, 0, 0 değeri varken AL'de, convert byte to word komutunu çalıştırdıktan sonra arkadaşlar, AX'de oluşacak değer şu oluyor.
+
+776
+02:32:32,147 --> 02:32:38,967
+Bu değer olmuş oluyor. Aslında bunu sign-extend olarak düşünebiliriz. Yani bu işlem
+
+777
+02:32:38,967 --> 02:32:48,948
+signed-extend işlemi oluyor. Şu anda AX'de oluşan değerle ALD'e oluşan değeri bir karşılaştırmak istersek ne diyeceğiz?
+
+778
+02:32:49,087 --> 02:32:58,867
+Mesela şu anda ALD zaten işlem öncesi, eksi 128 vardı. Bunu biliyoruz. Peki AX'de bu extension işleminden sonra oluşan değer ne oldu? Bakalım.
+
+779
+02:32:59,316 --> 02:33:03,676
+sayı işaretli bir sayı olduğu için, en yüksek anlamlı biti de 1 olduğu için sayı negatif bir kere.
+
+780
+02:33:04,159 --> 02:33:31,020
+geri kalanın TUNS komplementini oluşturalım. TUNS komplementi oluşturduğumuzda ilk biri görene kadar olduğu gibi bırak, daha sonra her birisinin değilini al. Zaten bunun genliği de 128 çıkıyor. Dolayısıyla bu da 128, eksi 128 sayısına karşılık gelmiş oluyor. Aralarındaki fark ne? Ben buradaki AL'deki eksi 128'i 8 bit signed bir değer olarak ele alırken, extend edildikten sonra AX'deki değeri de
+
+781
+02:33:31,280 --> 02:33:37,460
+16 bit, signed bir sayı olarak ele almam gerekiyor.
+
+782
+02:33:40,040 --> 02:33:47,620
+Yine, convert word to double word ile ele aldığımızda da, bu da AX yazmacı içerisindeki 16 bitlik değeri,
+
+783
+02:33:48,540 --> 02:33:53,640
+signed extent olarak, signed extent olarak 32 bite tamamlayan bir örnek.
+
+784
+02:33:54,131 --> 02:33:59,831
+Örneğin, bunun içinde yine CVD komutu tek başına operant almadan çalışan bir komut.
+
+785
+02:34:00,511 --> 02:34:15,891
+Bunun öncesinde AX'de mesela eksi 128 varken CVD komutunu çalıştırdığımızda, ConvertWord'u çalıştırdığımızda, DX, AX 32 bitlik bir sanal yazmaç gibi düşünün bunu.
+
+786
+02:34:19,156 --> 02:34:27,096
+Buna atanan değer de eksi 128 olacak. Aralarındaki fark ne? DX'deki değerlerin hepsi 1, 1, 1 şeklinde olacak.
+
+787
+02:34:31,188 --> 02:34:34,648
+Bu şekilde bir öteleme elde etmiş olacağız. Bunu nerede kullanabiliriz?
+
+788
+02:34:35,327 --> 02:34:46,887
+Bunu mesela AX'deki değeri sign extent edip 32 bite çevirdikten sonra div işleminde bunu kullanabiliriz mesela.
+
+789
+02:34:47,948 --> 02:34:50,927
+Div işlemi için bunu kullanmak mümkün olabilir.
+
+790
+02:34:51,087 --> 02:34:56,007
+32 bitlik signed bir sayı için bölme işlemini yapabiliriz.
+
+791
+02:34:56,007 --> 02:34:57,628
+Çünkü div komutu ne kabul ediyordu?
+
+792
+02:35:00,147 --> 02:35:01,948
+div, bx, hatta
+
+793
+02:35:01,948 --> 02:35:05,867
+integer şeklinde işaretli bölme yapacağımız zaman
+
+794
+02:35:05,867 --> 02:35:07,747
+idiv komutu vardı.
+
+795
+02:35:08,047 --> 02:35:08,788
+Ne yapıyordu bu?
+
+796
+02:35:09,547 --> 02:35:12,487
+dx, ax yazmacını bx'e bölüyor.
+
+797
+02:35:12,587 --> 02:35:13,207
+Demek ki ben
+
+798
+02:35:13,207 --> 02:35:17,847
+bu işlemi yapmadan önce 32 bitlik bir işaretli bölme yapmak istiyorsam
+
+799
+02:35:17,847 --> 02:35:19,227
+örneğin buradaki
+
+800
+02:35:19,227 --> 02:35:20,707
+işaretli
+
+801
+02:35:20,707 --> 02:35:23,768
+genişletme, yani signed, extend işlemini
+
+802
+02:35:23,768 --> 02:35:24,768
+yapabilirim.
+
+803
+02:35:25,683 --> 02:35:36,283
+örnekler üzerinden şimdi ilerleyeceğiz. Burada arkadaşlar load efektif adres komutunun kullanımı var. Bu load efektif adres komutunu hatırlıyor muyuz? Var mı hatırlayan?
+
+804
+02:35:47,827 --> 02:36:04,468
+Yani dizinin veya şöyle diyelim, değişkenin adresini alır diyebiliriz. Daha teknik bir şekilde konuşmak gerekirse, biz verilerimizi birer data segmentte tanımlıyorduk arkadaşlar hatırlayacak olursanız.
+
+805
+02:36:05,827 --> 02:36:12,847
+Data segmentte tanımlıyorduk. Mesela bizim değişkenimizin ismi dizi. Bu dizi isimli değişken.
+
+806
+02:36:13,459 --> 02:36:39,340
+Segmentin başlangıç offsetinden itibaren nerede tanımlı? Load efektif adres bu offset değerini bize veriyordu. Yani biz herhangi bir değişkeni tanımlarken ne yapıyorduk arkadaşlar? Segment 2.1 üst üste offset olarak kullanıyorduk. Belli ki dizi değişkeni bizim data segmentimizde tanımlı. Bunu biliyoruz zaten. Bizim bilmediğimiz offset değerini hesaplamadık. Çünkü biz tanımlarken şöyle dedik mesela.
+
+807
+02:36:41,299 --> 02:37:08,639
+dizi 1, define byte, işte bir şey bir şey bir şey. Dizi 2, define word, mesela nokta nokta bir şey bir şey bir şey. Burada değişkenlerimiz var, initial değerlerimiz var. Ben mesela var define word 5 dedim. Var değişkenim başlangıçtan itibaren kaçıncı offset'te bunu hesaplamıyorum. Zaten bu tanımlamaları yaptıktan sonra load efektif adresle bunu çekiyoruz. Dolayısıyla offset değerini veriyor. Teknik olarak offset değerini veriyor.
+
+808
+02:37:09,007 --> 02:37:16,468
+biraz daha anlaşılır olması açısından da değişkenin adresini bize veriyor diye bunu söyleyebiliriz.
+
+809
+02:37:17,167 --> 02:37:18,907
+Şimdi burada yapılan işlemlere bakalım.
+
+810
+02:37:22,227 --> 02:37:25,808
+Şimdi burada yapılan işlem, şunu anlıyoruz buradan.
+
+811
+02:37:29,148 --> 02:37:32,988
+Bizim data segmentimizde dizi isimli bir değişken tanımlı.
+
+812
+02:37:34,036 --> 02:38:00,775
+Dizinin boyutu size isimli bir değişkende tanımlı yine ve yapmış olduğumuz bir işlem var. Bu işlemi anlayalım şimdi. Load efektif DI dizi dediğimiz zaman DI'da offset dizi değerimiz artık elimizde var. Veyahut da dizinin başlangıç adresi var. Başka bir deyişle başlangıç adresi. Dizi isimli değişkenin başlangıç adresi.
+
+813
+02:38:01,620 --> 02:38:13,620
+DI isimli değişkende. CLD komutunu çalıştırdığımızda ne yapıyordu arkadaşlar? CLD komutu, Direction Fillet'i 0 yaptı. Bunun anlamı ne? Her seferinde...
+
+814
+02:38:14,324 --> 02:38:22,444
+adres değerimi arttırarak ilerleyeceğim. Demek ki bu başlangıç adresini aldıktan sonra bir sonraki adrese, bir sonraki adrese doğru ilerleyeceğim.
+
+815
+02:38:23,004 --> 02:38:32,844
+XOR işlemi ne yapıyor? ALD sıfır değerini oluşturdu. CX'e dizinin size değerini atadık. Yani burada dizinin kaç elemandan oluştuğunu atadık.
+
+816
+02:38:33,424 --> 02:38:40,364
+Ve store string byte komutunu repeat ön ekiyle birlikte kullandık. Şimdi repeat ön ekiyle bunu kullanmak demek arkadaşlar.
+
+817
+02:38:40,816 --> 02:39:05,516
+bunun CX 0 olana kadar tekrarla her adımda da CX'i bir azalt anlamına geliyor. Bu önekin karşılığı bu. Yani RAP karşılığı şu. Dikrement CX, JUMP, ZERO, çıkış. Buna karşılık gelen bir önek olarak bunu düşünebiliriz. Şimdi
+
+818
+02:39:07,092 --> 02:39:11,752
+Bu durumda, bu komut grubunu düşündüğümüz, store ne yapıyordu onu da söyleyelim.
+
+819
+02:39:11,832 --> 02:39:19,792
+Store, dizi i'ye bir AL değerini atayan komut şeklinde çalışıyor.
+
+820
+02:39:19,832 --> 02:39:27,292
+O zaman, bunun şurada da çalıştırmış olduğumuz komut grubunun, komut bloğunun karşılığı ne olmuş olacak?
+
+821
+02:39:31,763 --> 02:39:51,543
+dizi isimli değişkenimizi sıfırlamakla karşı sonuç üreten bir durum olmuş olacak. Yaptığı işlemleri adım adım inceleyecek olursak, öncelikli olarak dizi isimli bir dizimiz var. Bunun başlangıç adresini DI'ye aldık. Daha sonra Direction File'yi sıfır olarak set ettiğimiz için
+
+822
+02:39:51,987 --> 02:40:17,108
+Artık her adımda ilerleyen adımlara doğru gideceğiz. Ne kadar bunu gerçekleyeceğiz? CX kadar, yani size kadar gerçekleyeceğiz. Her adımda bir store string işlemi yapıyoruz. Dizinin ilk adresini ne yapacağız yani? İlk adımımız dizi sıfıra AL'yı atamak. AL'ye de sıfır olduğu için dizi sıfırı sıfırladık. Güzel. Direction flag repeat ediyor muyuz? CX'i biraz azalttım, size eksi bir oldu ama hala sıfır değil.
+
+823
+02:40:20,308 --> 02:40:21,548
+Onu da
+
+824
+02:40:21,548 --> 02:40:25,208
+Set Direction Flag yok muydu?
+
+825
+02:40:25,788 --> 02:40:26,748
+Hemen şöyle bir bakalım.
+
+826
+02:40:31,827 --> 02:40:32,247
+Sure.
+
+827
+02:40:46,388 --> 02:40:48,488
+Bu bayrak komutlarını görmüştük ya.
+
+828
+02:40:49,288 --> 02:40:49,968
+Neredeyle onlar?
+
+829
+02:40:52,828 --> 02:40:54,728
+STD diye bir komutumuz vardı.
+
+830
+02:41:05,556 --> 02:41:25,115
+Bu benim yazdıklarım nereye gitti? Ha şuradalar. Tamam. STD diye bir komutumuz vardı. Bu STD komutu CLD direction filayı sıfırlarken STD komutu da direction filayı bir yapan komuttu. Özel komutları vardı hatırlayacak olursak. Şimdi ne yapıyorduk? Bunu adım adım yürütüyorduk.
+
+831
+02:41:25,492 --> 02:41:36,891
+Dolayısıyla ilk başta dizinin başlangıç adresini almak demek, bunun başlangıç adresini almak demek. Yani ilk gözünün adresini almak demek.
+
+832
+02:41:37,531 --> 02:41:43,211
+Bunu store ettiğimiz zaman AL değerini atıyorduk. Demek ki AL değeri de sıfır olduğuna göre dizinin ilk gözünü sıfırladık.
+
+833
+02:41:47,347 --> 02:42:12,487
+1 arttı. Bakın, niye 1 arttı? Çünkü biz burada byte işlemi yapıyoruz. Byte işlemi yaptığımız zaman, şurada hemen görelim, store komutuydu değil mi? Store string komutu. Store string komutunda arkadaşlar bakın, DI indeks yazmacı kullanılıyor. Dolayısıyla burada DI değeri 1 arttı. Yani bizim burada aldığımız değer DI değeri.
+
+834
+02:42:14,195 --> 02:42:24,635
+1 arttığı için ben bir sonraki adrese gittim. Bir sonraki adres demek de zaten dizimizin bir numaralı gözüne erişmek demek.
+
+835
+02:42:25,175 --> 02:42:32,675
+Aynı işlemi orada da yaptım, onu da sıfırladım. Ta ki ne zamana kadar? Toplamda CX defa bu işlemi tekrarlayana kadar.
+
+836
+02:42:32,815 --> 02:42:39,395
+CX de zaten dizinin tanımladığımız boyutuydu. Dolayısıyla dizinin tamamını sıfırlamış oldum.
+
+837
+02:42:40,051 --> 02:43:06,412
+Dolayısıyla buradaki işlem karşılığımız dizi isimli değişkeni veya diziyi sıfırlamak oluyor. Dizi dizisini sıfırlamak oluyor. Bir başka örneğimize bakalım arkadaşlar. Bu örneğimizde ise Source Index ve Destination Index'i iki ayrı dizi için tanımlamışız. Dolayısıyla şöyle iki dizimiz olsun. Bu dizi bir. Bunu Source Index ile tuttuk. Demek ki Source'umuz burası.
+
+838
+02:43:06,963 --> 02:43:26,424
+Data segmentte başka bir yerde de dizi 2 tanımladık. Burada da destination index ile bunların başlangıç adreslerini aldık. Source ve destination ile bunları aldık. Eğer herhangi bir değişiklik yapmamışsak arkadaşlar, bizim kodumuz çalıştığında, exe veya comtipi programlarda,
+
+839
+02:43:26,868 --> 02:43:49,368
+Bizde ES ve DS birbirine eşit olacak şekilde kod başlıyor. Dolayısıyla burada ekstra bir değişik olmadığını görüyorsunuz. Ama bu arka planda, mesela şu komutu çalıştırdığımızda ESDI ve DSSI segment ve offsetleri üzerinden source ve destination adreslerinin belirlendiğini biliyoruz. Dolayısıyla
+
+840
+02:43:49,843 --> 02:43:56,483
+Farklı bir data segmentle ilgili işlem yapmak istersek, burada ESI'yi mutlaka değiştirmemiz gerektiğini hatırlatmış olmak istiyorum.
+
+841
+02:43:57,363 --> 02:44:03,983
+Başlangıç adreslerini aldık. Destination flay'i 0'a set ettik. Anlamı ne? Artan adreslere doğru gideceğim.
+
+842
+02:44:04,083 --> 02:44:08,263
+Zaten başlangıç adresini bildiğime göre artan adreslere doğru gitmek anlamlı.
+
+843
+02:44:08,763 --> 02:44:13,803
+CX'de dizilerimizin boyutu var. Bunun size de boyutu. Bu boyutu aldık.
+
+844
+02:44:14,260 --> 02:44:21,639
+Dolayısıyla ikisine de aynı büyüklükte işlem yapacağımız için ikisinin genişliğinde size olduğunu kabul etmiş olduk.
+
+845
+02:44:21,639 --> 02:44:33,760
+Ve CX0 olmadığı süre boyunca her adımda CX'i bir adet azaltarak bu işi tekrarlıyoruz. Hangi işi? MOV string işlemine. Sonuç ne? Şöyle çalışıyor.
+
+846
+02:44:34,079 --> 02:44:39,628
+SI zaten dizinin başlangıç adresini aldığı için bunun aynı zamanda anlamı...
+
+847
+02:44:39,956 --> 02:45:00,476
+dizinin sıfır numaralı gözü aslında SI ile tutulmuş durumda. Bunun içeriğini alıyor. Destination'ımızın ilgili adresine yazıyor. İlgili adresi de zaten burada. DI'daki değer dizinin sıfır numaralı gözüne karşılık geliyor. Adres olarak buna karşılık geliyor.
+
+848
+02:45:01,396 --> 02:45:13,936
+Dolayısıyla bu değeri aldı, buraya kopyaladı. Daha sonra destination flag 0 olduğu için ve daha CX'i biraz azalttık bu arada. CX 0 olmadığı için tekrarlıyoruz. Tekrarlarken
+
+849
+02:45:14,319 --> 02:45:39,099
+Buradaki SI değerini bir arttırdı ve bu SI değeri bir sonraki adresin içeriğini gösterdi. Aynı şekilde DI'yi de bir arttırıyor. Bu arttırımlar otomatik oluyor. Artık kaynak adresin burası, hedef adresin burayı gösteriyor. Bir sonraki kopyalamayı gerçekleştiriyor. Bunu size kadar tekrarladığımızda buradaki işlem sonucu aslında daha üst seviyeden ifade etmek gerekirse dizi 2Y.
+
+850
+02:45:40,468 --> 02:45:51,468
+dizi 1'i kopyalamak şeklinde bir sonuçla karşılaşmış oluyoruz. Şurada gördüğünüz üzere dizi 2'ye dizi 1'i kopyalamış oluyoruz.
+
+851
+02:45:53,007 --> 02:45:57,468
+Burada öneklerin kullanımıyla ilgili olarak kısacık bir bahsedelim.
+
+852
+02:45:59,128 --> 02:46:07,587
+Repeat komutu tek başına kullanıldığında yani repeat komutundan sonra burada bir string komutu kullanacağız.
+
+853
+02:46:08,051 --> 02:46:17,211
+bu string komutunun CX her seferinde bir azaltılsın, CX 0 olana kadar tekrarlansın anlamına geliyor.
+
+854
+02:46:20,752 --> 02:46:24,432
+Dolayısıyla bunun eş değeri Loop komutu. Birebir eş değeri bu.
+
+855
+02:46:25,451 --> 02:46:34,072
+Repeat equal veya repeat 0 komutu ise CX 0 olana kadar veya 0 flag 0 olana kadar tekrarla.
+
+856
+02:46:34,963 --> 02:46:37,123
+Bunun anlamı ne olmuş oluyor?
+
+857
+02:46:39,123 --> 02:46:41,984
+Loop ile çok doğrudan alakalı olmayabilir ama
+
+858
+02:46:41,984 --> 02:46:46,623
+Loop 0 ile eşdeğer mi bakalım?
+
+859
+02:46:49,183 --> 02:46:50,923
+Loop 0 ile eşdeğer.
+
+860
+02:46:51,283 --> 02:46:53,003
+Bu birebir loop 0 ile eşdeğer.
+
+861
+02:46:53,083 --> 02:46:54,564
+Şimdi şunu düşünecek olursak
+
+862
+02:46:54,564 --> 02:47:00,263
+CX'in 0 olması veya ZF'nin 0 olması dediğimiz zaman ona eşdeğer geliyor.
+
+863
+02:47:00,263 --> 02:47:01,224
+Loop
+
+864
+02:47:02,004 --> 02:47:03,264
+NAT0'da
+
+865
+02:47:03,264 --> 02:47:05,504
+aslında
+
+866
+02:47:05,504 --> 02:47:08,844
+RUNATECO'la karşılık gelen bir durum gibi düşünemiz.
+
+867
+02:47:09,484 --> 02:47:11,764
+Yani toplamda Loop'un 3 alternatifi vardı.
+
+868
+02:47:13,324 --> 02:47:16,543
+Loop komutlarına karşılık arkadaşlar birer
+
+869
+02:47:16,543 --> 02:47:19,623
+assembly komutu üretiliyor.
+
+870
+02:47:20,543 --> 02:47:22,224
+Ama öneklere karşılık
+
+871
+02:47:22,224 --> 02:47:27,283
+assembly komutu üretilmiyor. Aralarındaki fark da böyle bir durum söz konusu.
+
+872
+02:47:27,791 --> 02:47:34,531
+Yani ben şurada işlem sonucunu repeat zero ile yapacak olursam, yani şöyle diyelim.
+
+873
+02:47:44,819 --> 02:48:06,319
+Bu işlemi yapacak olursam arkadaşlar, tekrarlamayı ne zaman yapı? CX 0 değilken ve ZF bayrağı eşittir 1ken işlemi tekrarlıyor. Yani şunun tersini düşünün. Bu çıkma koşulu, bu da devam etme koşulu. O zaman bu Loop Zero'ya eş değer.
+
+874
+02:48:07,507 --> 02:48:33,187
+Benzer şekilde, bu şurada yazmış olduğumuz çıkış koşulu, devam koşulu ne? Mesela şöyle diyelim, repeat not zero, compare string word diyelim mesela. Buradaki tekrar koşulumuz ne? CX0 olmadığı sürece ve zero flag 0 olduğu süre boyunca tekrar et. Yani tam olarak loop not zero'ya eşdeğer bir durum.
+
+875
+02:48:34,739 --> 02:48:49,719
+Mesela ilkinde neyi ararız? Farklı olanı buluruz. Değil mi? Farklı olan bulunur. Burada da ilk aynı olan bulunur. Mesela değil mi? Bu şekilde çalışan durumlar.
+
+876
+02:48:49,719 --> 02:48:56,719
+Şimdi bu noktadan itibaren giriş çıkış komutlarımız ve BCD komutlarımız kaldı. Süremiz dolduğu için ben...
+
+877
+02:48:57,012 --> 02:49:03,632
+Bu aşamada ders tamamlamış olacağım. Bu noktaya kadar sormak istediğiniz bir şeyler var mı arkadaşlar?
+
+878
+02:49:06,552 --> 02:49:12,172
+Bu iki slide geçmiş olduk. Bu iki slide'ı ben online yıldız edi tr'den yükleyeceğim yine.
+
+879
+02:49:13,152 --> 02:49:16,932
+BCD komutlarının üzerinde çok durmayabiliriz. Onu söyleyeyim.
+
+880
+02:49:22,227 --> 02:49:24,947
+Basit örnekler üzerinden geçebiliriz BCD komutlarını.
+
+881
+02:49:26,407 --> 02:49:29,947
+Onun dışında soracağınız bir şey yoksa arkadaşlar dersimizi tamamlamış olalım.
+
+882
+02:49:30,067 --> 02:49:31,547
+Herkese iyi günler diliyorum.
+
+883
+02:49:33,107 --> 02:49:35,907
+Daha kitap çıkmadı arkadaşlar. Kitaptan bir haber yok şu anda.
+
+884
+02:49:37,367 --> 02:49:38,507
+Çıktığı zaman haber edeceğim.
+
+885
+02:49:39,387 --> 02:49:40,847
+Herkese iyi günler. Görüşmek üzere.
