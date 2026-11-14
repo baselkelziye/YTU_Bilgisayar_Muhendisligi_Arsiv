@@ -1,0 +1,4415 @@
+1
+00:00:13,236 --> 00:00:14,236
+[öğrenci]?
+
+2
+00:00:14,236 --> 00:00:17,236
+Günaydın hocam.
+
+3
+00:00:17,236 --> 00:00:18,236
+Günaydın.
+
+4
+00:00:18,236 --> 00:00:22,236
+Proje göstereceksin değil mi?
+
+5
+00:00:22,236 --> 00:00:23,236
+Evet.
+
+6
+00:00:23,236 --> 00:00:25,236
+Bana bir numaranı söyleyebilir misin?
+
+7
+00:00:25,236 --> 00:00:29,236
+Tabii, [kişisel bilgi].
+
+8
+00:00:29,236 --> 00:00:32,236
+[kişisel bilgi].
+
+9
+00:00:39,444 --> 00:01:06,444
+[öğrenci] değil mi? Evet. Evet. Şimdi şu örnek sorularını da alayım. Kaç tanesini yaptın? 6 tanesini yaptın. Tamam, bir yüzünü hatırlayayım mı? Efendim? Yüzünü hatırlayabilir miyim? 1-2-5 saniye. Evet. Seni tanıdım.
+
+10
+00:01:07,316 --> 00:01:26,316
+Çünkü kuridorlarda da görüyorum. Evet. Peki, dur dur dur dur. Şu geçen sefer yaptığımız örnekler üzerinden yine hazır gideceğim. Bir tanesinde problem yaşanmıştı. Sen onu kendinde denedin mi?
+
+11
+00:01:26,316 --> 00:01:34,316
+Geçenki dersi tam dinlemekten geçmiştim. Tamam peki. Matris inversini alalım mı?
+
+12
+00:01:34,867 --> 00:01:35,867
+Tamamdır.
+
+13
+00:01:35,867 --> 00:01:36,867
+Önce kodunu açıyorsun?
+
+14
+00:01:36,867 --> 00:01:37,867
+[öğrenci].
+
+15
+00:01:37,867 --> 00:01:38,867
+Tamam.
+
+16
+00:01:52,596 --> 00:02:12,596
+Hocam şarj aletim yok da şu an, araya girebilir miyim? Tamam, [öğrenci] abisi seni alayım. [öğrenci]. Ara demekte bunu kastettin herhalde. Şimdi bu inverse, dur ben bir adapte olayım olaya.
+
+17
+00:02:12,596 --> 00:02:17,596
+Bir şey, sıfır sıfırlar kabul etmediği için diğer kirli yapamamıştım, ben de kopaktör falan hesapladım.
+
+18
+00:02:18,804 --> 00:02:38,183
+Neyi kabul etmedi? Neyi? Sıfırlı olanları kabul etmiyor. Matrisda sıfırlı olanları mı? Sıfıra böldüğünde sıfıra... Evet, sıfıra bölün. Tamam, tamam. Ben konfaktörlü yaptım. İyi olsun, sonucunu görelim. 3'e 3'lük bir matris vereceğim.
+
+19
+00:02:38,183 --> 00:02:46,463
+Açı al, görebiliyor musunuz? Daha ekstra şeyi görmüyorum. Kodu görüyorum.
+
+20
+00:02:46,496 --> 00:02:47,788
+Hata analizasyon ve sayısal integral göreceğiz.
+
+21
+00:02:52,276 --> 00:02:59,276
+Evet, üçe üçlük bir matris. Satır satır mı söylüyorum? Evet.
+
+22
+00:02:59,276 --> 00:03:18,924
+1, 2, 3, 4, 5, 6, 7, 2, 9. Eksi 92, 0, 83, 0, 75, 0, 17. Tamam. Bir tane daha sormak istiyorum. Türev alalım. Türev.
+
+23
+00:03:19,252 --> 00:03:21,252
+Tamam, bir saniye.
+
+24
+00:03:21,252 --> 00:03:27,252
+Birdenbire çok kalabalıklaştı. Eyvah eyvah.
+
+25
+00:03:27,252 --> 00:03:28,748
+Türev alalım.
+
+26
+00:03:33,108 --> 00:03:41,347
+[öğrenci]? [öğrenci]? Cevap veriyor mu acaba bana?
+
+27
+00:03:45,587 --> 00:03:46,587
+Açtır mı?
+
+28
+00:03:46,587 --> 00:03:47,587
+Evet, açtır.
+
+29
+00:03:47,587 --> 00:03:48,587
+Tamam, çalıştır.
+
+30
+00:03:48,587 --> 00:03:51,587
+Nasıl istiyorsun denklemi benden?
+
+31
+00:03:51,587 --> 00:03:54,587
+Bir saniye, tamam, açayım.
+
+32
+00:03:58,099 --> 00:03:59,099
+[öğrenci]
+
+33
+00:04:01,099 --> 00:04:05,099
+Uf, çabak da ben de. Gelmedi ekranın.
+
+34
+00:04:09,012 --> 00:04:11,012
+Paylaşımı yapacağım da, saniye.
+
+35
+00:04:21,043 --> 00:04:23,043
+Tamam, şuan oldu.
+
+36
+00:04:23,043 --> 00:04:26,043
+Evet, uygulamaya gelin. Merkezi olsun.
+
+37
+00:04:26,043 --> 00:04:28,043
+Tamam.
+
+38
+00:04:28,043 --> 00:04:32,043
+Söyleyebiliyorsunuz, ilk noktasına gelin. Bu ne? Biri, x1.
+
+39
+00:04:32,043 --> 00:04:33,043
+Tamam.
+
+40
+00:04:33,043 --> 00:04:36,043
+Pd, 0,25.
+
+41
+00:04:36,043 --> 00:04:38,043
+Tamam.
+
+42
+00:04:38,043 --> 00:04:40,043
+En yüksek üstü.
+
+43
+00:04:40,043 --> 00:04:41,043
+Yüksek üstü, 2.
+
+44
+00:04:41,043 --> 00:04:44,043
+Tamam. x üzeri 2, x kalitli fonksiyon.
+
+45
+00:04:44,043 --> 00:04:45,043
+3.
+
+46
+00:04:47,060 --> 00:04:49,060
+eksi iki, eksi bir
+
+47
+00:04:53,459 --> 00:04:56,459
+Sen ne kadar çıkın? Bir noktasından.
+
+48
+00:04:56,459 --> 00:04:58,459
+Üç...
+
+49
+00:05:00,459 --> 00:05:03,459
+Bir noktası... Haa, ben yanlış şeyi söyledim. Bir dakika.
+
+50
+00:05:03,459 --> 00:05:08,459
+Üç, dört, iki, üçün altı bir geldi. İki geldi, dört çıktı. Evet, tamam.
+
+51
+00:05:13,971 --> 00:05:40,811
+Şarjı biten kimdi? Benim hocam. Tamam, [öğrenci]. Numaranı alayım, son numarası ne? [kişisel bilgi]. Kaç tanesini yaptın? Hepsi hocam. Tamam. Sen de de integral alalım. Önce bir kodu görelim.
+
+52
+00:05:41,427 --> 00:05:43,427
+Açıyorum hocam hemen.
+
+53
+00:05:45,427 --> 00:05:50,427
+Tamam [öğrenci], bugün hepsini alacağız. Sıraya koyduk işte.
+
+54
+00:05:51,427 --> 00:05:53,427
+Hocam integral dediniz, Simpson mı?
+
+55
+00:05:54,427 --> 00:05:56,427
+Ben hiçbir şey görmüyorum henüz.
+
+56
+00:05:56,427 --> 00:05:59,427
+Hayır, dediniz de integral görelim, hangisini açayım diyorum.
+
+57
+00:06:00,427 --> 00:06:06,319
+Sen bir ekran paylaşımı yapsana şeyden, nasıl yani hangisini açayım?
+
+58
+00:06:06,319 --> 00:06:33,639
+Tamam paylaşıyorum. Her birine ayrı ayrı mı yazdın? Evet hocam. Simpson olsun o zaman. Açtım hocam, geldim paylaşın. Evet geldi. Bir büyük kuşu kodu bir bakalım. Kıvızları da hiç okuyamıyorum. İn o printfleri geç. Pova yine sen de pova kullandın. Kas sayılar dedik. Orada porun var.
+
+59
+00:06:39,187 --> 00:06:52,187
+Bu sıfırda eşittirle yaptığın şey neydi? Ha anladım, okey tamam, okey tamam. Okey çalıştıralım. Ne istiyorsun benden şimdi?
+
+60
+00:06:57,524 --> 00:06:59,524
+Ben görmüyorum.
+
+61
+00:06:59,524 --> 00:07:02,524
+Çalıştırıyorum hocam, çalıştırdım.
+
+62
+00:07:02,524 --> 00:07:04,524
+Bir bölü üç mü, üç bölü sekiz mi?
+
+63
+00:07:04,524 --> 00:07:06,524
+Görmüyorum ama.
+
+64
+00:07:06,524 --> 00:07:08,524
+Nasıl? Bir saniye.
+
+65
+00:07:08,524 --> 00:07:10,524
+Ekran paylaşımını değiştirmek gerekiyor.
+
+66
+00:07:10,524 --> 00:07:12,524
+Tamam.
+
+67
+00:07:13,524 --> 00:07:15,524
+Tamam mıdır hocam?
+
+68
+00:07:15,524 --> 00:07:16,524
+Okey.
+
+69
+00:07:16,524 --> 00:07:19,524
+Evet üç bölü sekiz olsun.
+
+70
+00:07:21,524 --> 00:07:23,148
+Simpson dedik değil mi?
+
+71
+00:07:23,156 --> 00:07:23,716
+Aynen.
+
+72
+00:07:23,855 --> 00:07:26,675
+6 ve 3 sınırını 1 ve 3.
+
+73
+00:07:29,196 --> 00:07:30,196
+1'den 3'e kadar.
+
+74
+00:07:30,975 --> 00:07:31,615
+6.
+
+75
+00:07:33,956 --> 00:07:35,876
+En yüksek üst değeri 2.
+
+76
+00:07:37,876 --> 00:07:38,615
+1.
+
+77
+00:07:39,936 --> 00:07:40,656
+2.
+
+78
+00:07:42,396 --> 00:07:42,675
+0.
+
+79
+00:07:45,516 --> 00:07:46,316
+16.
+
+80
+00:07:46,475 --> 00:07:47,596
+Bilmem ne çıkacak.
+
+81
+00:07:47,756 --> 00:07:47,936
+Evet.
+
+82
+00:07:48,055 --> 00:07:49,076
+Bilmem ne çıktı.
+
+83
+00:07:49,875 --> 00:07:52,956
+Peki, bir tane de kök bulma yapalım.
+
+84
+00:07:52,956 --> 00:07:54,995
+Tamam.
+
+85
+00:07:54,995 --> 00:07:57,036
+Newton'u aç.
+
+86
+00:08:04,180 --> 00:08:15,460
+Mesela bir tane soru vardı, yine arkadaşlarım takılmıştı. Eğer verdiğim başlangıç ve bitiş noktaların arasında iki tane kök varsa problem yaşıyorlardı.
+
+87
+00:08:15,460 --> 00:08:22,939
+Geçen ders yoktu hocam, bilmiyorum. Tamam, o zaman şansımızı değineceğiz şimdi. Newton'u açıyorsun.
+
+88
+00:08:22,939 --> 00:08:30,939
+Açtım. Tamam. Newton'un ana kısmını bir göreyim. Dur.
+
+89
+00:08:36,115 --> 00:08:46,275
+Orada eksilttin. Okey. Tamam, çalıştıralım. Önce ne istiyorsun? Bakalım.
+
+90
+00:08:53,587 --> 00:09:15,587
+Niye bu kadar ağır ya? Hocam internetim çok kötü de, kay kay yorgundayım. Mikrimin en büyük derecesine giriniz. 3. Sonra üçün kas sayısı 1, ikininki 1, birinki eksi 9, sıfırınki eksi 9.
+
+91
+00:09:17,875 --> 00:09:36,355
+Sonra ne istiyorsun? Başlangıç değeri... Haa, dur şimdi, başlangıç değerini... Ben Newton'u seçtim, başlangıç değeri eksi beş olsun. Hata payını sen kendin ver.
+
+92
+00:09:44,980 --> 00:09:46,980
+Teşekkür ediyorum.
+
+93
+00:09:46,980 --> 00:09:47,980
+Hoşçakalın.
+
+94
+00:09:51,731 --> 00:10:09,731
+Evet. Şu çete ne yazıldı? Bu kim? Mu kim? Görmüyorum bunu. M'den gönderildi. Mu kim? Hocam önce [öğrenci] var.
+
+95
+00:10:10,163 --> 00:10:21,764
+[öğrenci]. Siz kendiniz gidin sıraya, ben bir de onu kontrol etmeyeyim. Kim var? [öğrenci]. [öğrenci]. Tamam. Numaranın sonu? [kişisel bilgi].
+
+96
+00:10:30,004 --> 00:10:56,724
+Evet, kaç tanesini yaptın? Hepsini yaptım hocam. Kaç tane vardı? On. Aferin. Peki, ben de kendimi eğlendiriyorum. Şey yapalım, Gauss eliminasyonu ya da Gauss-Seidel hangisini istiyorsan aç. Tamam, eliminasyon açayım. Şu şekilde kodum.
+
+97
+00:10:57,139 --> 00:10:59,139
+O kodu biraz büyütür müsün?
+
+98
+00:10:59,139 --> 00:11:00,139
+Tabi.
+
+99
+00:11:02,139 --> 00:11:04,139
+Şu elementer işlemler nerede yapılıyor?
+
+100
+00:11:12,755 --> 00:11:22,755
+Nerede yapılıyor? Mat, böldün, ha burada. Sonra çıkarıyorsun falan filan.
+
+101
+00:11:22,755 --> 00:11:23,755
+Yani yazdırıyorum.
+
+102
+00:11:23,755 --> 00:11:24,755
+Yazdırıyorum.
+
+103
+00:11:24,755 --> 00:11:29,755
+Okey, tamam. Şimdi çalıştı bakalım ne istiyorsun benden?
+
+104
+00:11:29,755 --> 00:11:36,755
+Önene, bilinmeyen sayısına giriniz. 3.
+
+105
+00:11:38,388 --> 00:12:05,451
+Birinci denklemin birinci kas sayısını. Beş, eksi iki, üç, sonra sonucu istiyoruz. Eksi bir. Tamam. Eksi üç, dokuz, bir, iki, iki, eksi bir, eksi yedi,
+
+106
+00:12:05,971 --> 00:12:13,131
+Üç, başlangıç değerlerim, sen mi verdin başlangıç değerlerini?
+
+107
+00:12:13,131 --> 00:12:15,491
+Eliminasyon da değil miyiz hocam?
+
+108
+00:12:15,491 --> 00:12:20,091
+Goals eliminasyon, evet Goals eliminasyonundayız.
+
+109
+00:12:20,091 --> 00:12:23,451
+O olsun yine başlangıç değerini ben veremez miyim?
+
+110
+00:12:25,235 --> 00:12:30,235
+Hocam, ben eliminasyonda öyle bir şey olduğunu hatırlamıyorum ama ben Sidle'da başlangıç değerleri aldım.
+
+111
+00:12:30,235 --> 00:12:35,235
+Aa, pardon, pardon. Ben Jacobi ile karıştırdım. Okey, okey, tamam.
+
+112
+00:12:35,235 --> 00:12:44,235
+18, 0, 18, 0, 33, eksi 0, 42 çıkması lazım. Doğru. Tamam, senden başka bir şey istemiyorum.
+
+113
+00:12:44,235 --> 00:12:46,235
+Tamamdır.
+
+114
+00:12:46,235 --> 00:12:48,939
+Neden istemiyorum? Hiçbir fikrüm de yok.
+
+115
+00:12:51,539 --> 00:13:14,539
+Bir saniye, sırada kim var? Ben Varım hocam. Ben Varım'ın adı [öğrenci]. [öğrenci]. Tamam. Numara? [kişisel bilgi]. Kaçta kaç yaptın? Hepsini yaptım hocam. Peki.
+
+116
+00:13:20,532 --> 00:13:29,532
+interpolasyon yapalım. Ekran geldi mi? Kodun geldi. Tamam hocam. Tamam, kodun gelsin.
+
+117
+00:13:29,532 --> 00:13:37,900
+Enterpolasyondaki şu formülün hesaplandığı yeri bir bana gösterir misin? Ne oldu? Şey hocam, termineleri açtın da bir zaman.
+
+118
+00:13:41,683 --> 00:13:42,683
+Burada.
+
+119
+00:13:43,483 --> 00:13:45,483
+Burada bir mouse koyar mısın?
+
+120
+00:13:46,683 --> 00:13:47,435
+Hah.
+
+121
+00:13:50,740 --> 00:13:54,899
+O delta niye 99 ile kontrol edildi? Orada ne yapıyoruz?
+
+122
+00:13:54,899 --> 00:13:58,899
+Hocam 99 girdiğiniz zaman kök almayı bırakıyor da acıdan.
+
+123
+00:13:58,899 --> 00:14:01,460
+Niye öyle yaptın?
+
+124
+00:14:01,460 --> 00:14:04,899
+Kök almayı bırakıyor ne demek ya?
+
+125
+00:14:04,899 --> 00:14:08,899
+Kök almayı bırakıyor ne demek?
+
+126
+00:14:08,899 --> 00:14:15,139
+Size sayı giriyorsanız ya, 99 olduğu zaman tamam oluyor artık, girmiyorsunuz başka.
+
+127
+00:14:16,788 --> 00:14:41,788
+Ama 99'dan büyük disi giremem. Aynen. Hayır, sayı kendisi 99. 999 da verebilirdim mesela. Onu orada indikatör olarak koydum. Ben o 99'un ne olduğunu bana yeniden anlat, anlamadım. Neyin kontrolü o? Şimdi siz kök giriyorsunuz ya Gregory Newton'da. Kök giriyorum.
+
+128
+00:14:42,323 --> 00:14:48,764
+Evet, sonra onun sonucunu giriyorsunuz. Kök giriyorsunuz dedim, önce başlangıç x değeri giriyorsunuz, sonra da h artış miktarını giriyorsunuz.
+
+129
+00:14:48,764 --> 00:14:53,163
+İşte mesela 1, artış miktarında 1 diyelim, başlangıç 0 diyelim, 1-2-3 diye gidiyor ya.
+
+130
+00:14:53,163 --> 00:14:53,603
+Evet.
+
+131
+00:14:53,603 --> 00:15:01,723
+Ve onun karşısında bir değer giriyorsunuz o fonksiyon çıktısına. O fonksiyon çıktısına 99 girdiğiniz zaman x almayı bırakıyor yani.
+
+132
+00:15:02,644 --> 00:15:06,043
+Pardon, x değerine 99 girdiğiniz zaman x almayı bırakıyor.
+
+133
+00:15:06,043 --> 00:15:10,443
+Benim kopuma yakmadı ama neyse, boş ver, çalıştıralım bakalım, anlarız şimdi.
+
+134
+00:15:10,443 --> 00:15:15,443
+Anlayacağım. Şimdi başlangıç x değerini söyleyin.
+
+135
+00:15:15,443 --> 00:15:17,443
+4.
+
+136
+00:15:17,443 --> 00:15:23,043
+Tabii, pardon. Ama bu 4 tane gireceğim anlamına mı geliyor?
+
+137
+00:15:23,475 --> 00:15:32,475
+Hayır, başlangıç değerini söylüyorsunuz, artış miktarını da söylüyorsunuz, ben üzerine ekle ekle yazacağım. Şimdi başlangıç değeri 4 olan fonksiyon sonucunu söyleyeyim.
+
+138
+00:15:32,475 --> 00:15:36,475
+Bak, interpolasyondan yapacağım, benden x ve y değerleri isteyeceksin.
+
+139
+00:15:39,220 --> 00:15:54,620
+Yanlış şey mi açtım? Gregory Newton istemiyorum musunuz hocam? Hayır, enterpolasyon. Evet, Gregory Newton, enterpolasyon. Ama üzerine dört eklemek falan nedir? Ben sana mesela x diyeceğim, bir, iki, üç, dört, beş, altı, x değerlerini vereceğim. Ya da...
+
+140
+00:15:54,620 --> 00:16:04,220
+Aynen, öyle zaten. Peki oğlum, istediğin dört ne? Dizinin eleman sayısı mı? Hayır, hayır, x'in başlangıç değer hocam.
+
+141
+00:16:04,947 --> 00:16:10,148
+Mesela x1, 2, 3, 4 isteyeceksiniz ya, o zaman ilk şu an isteyeceğinizde x1 olmuş oluyor.
+
+142
+00:16:12,388 --> 00:16:14,628
+Bir yapalım, görürsünüz hocam ya.
+
+143
+00:16:15,988 --> 00:16:19,588
+Öyleyse sana şöyle söyleyeyim, sana yedi tane değer vereceğim.
+
+144
+00:16:19,588 --> 00:16:20,388
+Tamam.
+
+145
+00:16:20,388 --> 00:16:25,187
+Bu değerler sıfırdan başlıyor, altıya kadar gidiyor.
+
+146
+00:16:25,187 --> 00:16:28,388
+Tamam hocam, şimdi f0'ın karşılığını söyleyin.
+
+147
+00:16:29,427 --> 00:16:30,628
+Eksi 4.
+
+148
+00:16:31,187 --> 00:16:32,788
+Eksi 4, tamam.
+
+149
+00:16:33,011 --> 00:17:00,611
+Haa, eksi iki. Tamam. Peki dur şimdi, ben sıfırdan başlamasaydım ne olacaktı? Hiç fark etmiyorum hocam, istediğiniz derden başlayırsınız. Mesela x'i elli iki vereceğim, sen x'i elli iki diyeceksin, elli ikim diye. Haa, ay, fonksiyonda yazdım diye öyle gösterdim diye öyle oldu. Tamam. Tamam, şimdi elli iki mi? Hayır. Eksi dört, eksi iki on dört.
+
+150
+00:17:00,980 --> 00:17:12,980
+On dört, tamam. Üç, altmış iki. Tamam. Yüz altmış. Yüz altmış. Üç yüz yirmi altı. Üç yüz yirmi altı. Üç yüz yirmi altı. Üç yüz yirmi sekiz.
+
+151
+00:17:13,844 --> 00:17:21,164
+5, 178. Hocam şimdi o 99'u da burada giriyorum. Burada x 99'u girdiğim zaman işte çıktı şu an.
+
+152
+00:17:21,164 --> 00:17:26,764
+Tamam, sen benden eleman sayısı istemiyorsun. Bitti deyince sen 99'u giriyorsun.
+
+153
+00:17:26,764 --> 00:17:30,443
+Tamam, şimdi yeni bir fonksiyon oluşturduk ya, burada hangi x de?
+
+154
+00:17:30,443 --> 00:17:33,963
+Evet, 4. 4. Bu şekilde hocam.
+
+155
+00:17:37,715 --> 00:17:40,835
+Bu da şey, hani aradaki farka göre şey yapıyoruz ya.
+
+156
+00:17:40,835 --> 00:17:43,955
+Ben fonksiyonu bana yazdırmadın yani?
+
+157
+00:17:43,955 --> 00:17:49,155
+Yok, fonksiyonu yazdırmadım hocam. Direkt sonucu, bir de o fark tablosunu yazdırıyorum.
+
+158
+00:17:49,155 --> 00:17:55,155
+Peki sen buna bakarak kaçıncı dereceden fonksiyon olduğunu söyleyebilir misin?
+
+159
+00:17:55,155 --> 00:18:00,835
+Söyleyemem şu an.
+
+160
+00:18:00,835 --> 00:18:02,195
+Niye?
+
+161
+00:18:02,867 --> 00:18:10,547
+Ne yapıyorduk bu fonksiyonu açtığımızda sabitlendiği nokta fonksiyonun derecesini veriyordu?
+
+162
+00:18:10,547 --> 00:18:12,788
+O zaman üçüncü dereceden mi oluyor?
+
+163
+00:18:12,788 --> 00:18:13,788
+Evet.
+
+164
+00:18:14,707 --> 00:18:16,147
+Bu dereceden.
+
+165
+00:18:17,268 --> 00:18:18,467
+Unutma.
+
+166
+00:18:19,587 --> 00:18:21,268
+Peki, teşekkürler.
+
+167
+00:18:24,067 --> 00:18:25,347
+Sırada kim var?
+
+168
+00:18:28,564 --> 00:18:30,963
+[öğrenci] sesin çıkmıyor ama.
+
+169
+00:18:33,364 --> 00:18:35,564
+Pardon hocam açıyorum dedin.
+
+170
+00:18:35,564 --> 00:18:37,564
+Halen gelmiyor sesin.
+
+171
+00:18:44,339 --> 00:18:49,539
+Yani aslında mikrofonum kapalı gözükmüyor ama senin sesini duyamıyoruz.
+
+172
+00:19:01,844 --> 00:19:05,844
+[öğrenci] gelene kadar bir başkası olsun, sonra [öğrenci]'yı alalım.
+
+173
+00:19:07,844 --> 00:19:09,844
+Kim vardı [öğrenci]'dan sonra?
+
+174
+00:19:11,844 --> 00:19:13,844
+Arkadaşlar, Nazlanma...
+
+175
+00:19:13,844 --> 00:19:15,844
+Hocam ben yapabilirim.
+
+176
+00:19:15,844 --> 00:19:17,844
+[öğrenci]'ın sucu.
+
+177
+00:19:17,844 --> 00:19:19,844
+[öğrenci] vardı sanırım, [öğrenci] sen yap.
+
+178
+00:19:19,844 --> 00:19:21,844
+Fark etmez [öğrenci] ya.
+
+179
+00:19:21,844 --> 00:19:24,844
+Ya, o aşkına çocuklar, bitirelim, çok sıcak.
+
+180
+00:19:24,844 --> 00:19:28,844
+[öğrenci] sucuyu alıyorum ben. Susadım.
+
+181
+00:19:29,011 --> 00:19:31,572
+Sucunun numarası?
+
+182
+00:19:31,572 --> 00:19:34,172
+[kişisel bilgi]
+
+183
+00:19:34,172 --> 00:19:38,971
+[kişisel bilgi], ilk sıradaymış. Kaçta kaç?
+
+184
+00:19:38,971 --> 00:19:41,172
+10-10, hepsini yapsın.
+
+185
+00:19:41,172 --> 00:19:44,571
+Okey, sen de Gregory Lifton'u önce bir açıver.
+
+186
+00:19:44,571 --> 00:19:46,011
+Tamam.
+
+187
+00:19:46,011 --> 00:19:49,771
+Görebiliyor musunuz hocam?
+
+188
+00:19:49,771 --> 00:19:50,771
+Görebiliyorum.
+
+189
+00:19:50,771 --> 00:19:55,371
+Ama yani direktriği görüyorum, kodu görmüyorum.
+
+190
+00:20:02,483 --> 00:20:12,483
+Şu an. Tamam, görüyorum. Sende de şu şeyin hesaplandığı yeri göreyim. Şöyle hocam.
+
+191
+00:20:15,700 --> 00:20:21,460
+ha, faktöryeller oradan geldi. Faktöryeller oradan yaptı. Evet, rık geldi, sındım.
+
+192
+00:20:24,339 --> 00:20:33,180
+Bak şeyleri orada böldün. Tamam, burada farkları aldın. Ha sen, sen de sonucu hesaplıyorsun. Şey yazdın mı?
+
+193
+00:20:33,180 --> 00:20:38,460
+Evet hocam, evet. Yok, şey, fonksiyonu yazdım. Direk sonucu ben de. İyi, peki.
+
+194
+00:20:39,980 --> 00:20:43,019
+Çalıştıralım. Seninki bakar nasıl çalışıyor?
+
+195
+00:20:45,556 --> 00:20:48,556
+Şu an görebiliyor musunuz? Tamam, görüyorum. Beş tane var.
+
+196
+00:20:48,556 --> 00:20:50,155
+Bir saniye.
+
+197
+00:20:54,036 --> 00:20:57,115
+Tamam, 1891.
+
+198
+00:20:57,115 --> 00:20:59,675
+1891.
+
+199
+00:20:59,675 --> 00:21:00,955
+1901.
+
+200
+00:21:02,995 --> 00:21:05,556
+X değerler arasındaki farkı...
+
+201
+00:21:05,556 --> 00:21:08,115
+Ama sabit olmayabilir.
+
+202
+00:21:08,115 --> 00:21:10,675
+Hocam sabit dememiş miydiniz?
+
+203
+00:21:10,675 --> 00:21:14,516
+Hayır, olur mu? Sabit de olabilir.
+
+204
+00:21:14,516 --> 00:21:19,115
+Sadece bir de olabilir. Her biri de farklı olabilir.
+
+205
+00:21:19,316 --> 00:21:36,316
+Farklı olursa değişken dönüşümü uygulayacaktınız. Hocam değişken dönüşümsüz... Evet, öyle dedim. Aha, bir bakayım bunların arasında bir fark var mı? Bunların arasında hiçbir fark yok. O zaman bunu bir daha çalıştır.
+
+206
+00:21:40,019 --> 00:21:44,019
+Yedi tane değer gireceksin. Ne oldu?
+
+207
+00:21:44,019 --> 00:21:46,635
+Hocam tekrar çalışıyorum bir saniye.
+
+208
+00:21:49,748 --> 00:21:51,748
+Görebiliyor musunuz? Hayır.
+
+209
+00:21:58,324 --> 00:22:04,644
+Şu an? Evet. Tamam. Yedi tane. Evet. Sıfır.
+
+210
+00:22:08,372 --> 00:22:29,872
+Bir, eksi dört, eksi iki, on dört, altmış iki, yüz altmış, üç yüz yirmi altı, beş yüz yetmiş sekiz.
+
+211
+00:22:29,872 --> 00:22:34,372
+X değerini yiyiniriz.
+
+212
+00:22:34,372 --> 00:22:35,372
+Altı.
+
+213
+00:22:38,867 --> 00:22:39,659
+Tamam.
+
+214
+00:22:43,508 --> 00:22:45,508
+[öğrenci] bana bir cevap verir misin?
+
+215
+00:22:49,844 --> 00:23:16,444
+[öğrenci] içinizde tanıyan... Efendim hocam? [kişisel bilgi].
+
+216
+00:23:18,451 --> 00:23:23,451
+Devlet teorisi neydi o? Kayseri Hocam sınav.
+
+217
+00:23:23,451 --> 00:23:27,451
+Pardon, sen sayısal analiz dersinin sınavına girmedin mi?
+
+218
+00:23:27,451 --> 00:23:30,451
+Bize ikiye girmedin, evet.
+
+219
+00:23:30,451 --> 00:23:32,451
+Peki dilekçe vermedin mi bölüme?
+
+220
+00:23:32,451 --> 00:23:34,451
+Hayır.
+
+221
+00:23:34,451 --> 00:23:40,107
+Dilekçe vermediysen giremezsin. Bana dilekçe verilmiş ve girecek diye geldi.
+
+222
+00:23:42,867 --> 00:23:54,867
+Devre teorisine de gireceksin. Evet, biliyorum. Orada da gözüküyor. Ama eminsin vermediğini. Tabii ki eminsindir. İyi, peki tamam. Dilek Çay'ın yoksa artık destraka giremezsin.
+
+223
+00:23:55,763 --> 00:23:58,763
+Kaçta peki? Giremem evet de.
+
+224
+00:23:58,763 --> 00:24:10,763
+On buçuktaydı. Çünkü bütün vizelere girmeyen arkadaşların hepsini almam gerekir. O zaman da bu mazere sınavı olmaz. Bütün herkes üçüncü bir hak almak ister.
+
+225
+00:24:10,763 --> 00:24:13,763
+Evet evet. Ben dilekçe vermedim hocam.
+
+226
+00:24:13,763 --> 00:24:15,763
+Tamam. Peki teşekkür ederim.
+
+227
+00:24:18,996 --> 00:24:20,996
+Şimdi kimdeydi sıra arkadaşlar?
+
+228
+00:24:20,996 --> 00:24:22,996
+Hocam ben geldim, göstereyim mi sesini gelip?
+
+229
+00:24:22,996 --> 00:24:26,996
+Tamam gel, ben kaybettim ama senin numaranı.
+
+230
+00:24:26,996 --> 00:24:28,996
+[kişisel bilgi].
+
+231
+00:24:32,468 --> 00:24:56,468
+Evet, kaçta kaç yaptın? Hocam onda sekiz. Matrisin tersiyle Gauss eliminasyon yok bende. Gauss eliminasyon yok. Gauss eliminasyon yok, Gauss eliminasyon yok. Peki. Gauss cycle var mı? Hocam var. Niye öyle bir ağlayarak söyledin? Hocam sesim çıkmıyor biraz. Peki. Peki.
+
+232
+00:24:59,028 --> 00:25:01,028
+Gauss-Seidel yapalım.
+
+233
+00:25:01,028 --> 00:25:05,028
+Yapalım hocam. Hocam üçe üçlük bir denklem takımı verirseniz.
+
+234
+00:25:05,028 --> 00:25:07,028
+Niye ikiye ikilik veremez miyim?
+
+235
+00:25:07,028 --> 00:25:09,028
+Hocam ben üçe üçlük yazdım.
+
+236
+00:25:09,028 --> 00:25:13,028
+Ooo, peki üçe üçlük olsun.
+
+237
+00:25:13,028 --> 00:25:17,028
+Hocam bir saniye. Hocam birinci denklemi birinci kat sayısı.
+
+238
+00:25:17,028 --> 00:25:19,028
+Bir, bir, bir.
+
+239
+00:25:19,028 --> 00:25:21,028
+Sonucu?
+
+240
+00:25:21,028 --> 00:25:22,220
+Yirmi beş.
+
+241
+00:25:23,092 --> 00:25:40,332
+İkinci denklem birinci katsayı. Beş, üç, iki. Sonucu? Sıfır. Üçüncü denklem? Sıfır bir eksi bir. Sonucu? Altı. Hata payı? Kendin ver onu.
+
+242
+00:25:44,243 --> 00:25:52,243
+Hocam, bir saniye. Bu neden oldu acaba? Hemen bakıyorum ben.
+
+243
+00:25:56,915 --> 00:26:00,915
+Daha mesela üçüncü denklemde X yoktu, acaba o?
+
+244
+00:26:00,915 --> 00:26:02,915
+Hocam ondan dolayı, evet.
+
+245
+00:26:02,915 --> 00:26:08,915
+Ama öyle özel bir şey, böyle şey yazılmaz, program yazılmaz. Başka bir kode geçelim.
+
+246
+00:26:08,915 --> 00:26:09,915
+Tamam hocam.
+
+247
+00:26:09,915 --> 00:26:11,915
+Şuraya notumu alayım ama.
+
+248
+00:26:17,907 --> 00:26:21,227
+Peki, inversi yapmış mıydın?
+
+249
+00:26:21,227 --> 00:26:22,747
+Hocam inversi yok bende.
+
+250
+00:26:22,747 --> 00:26:25,827
+Yok dedin. Peki, integrali yapalım.
+
+251
+00:26:25,827 --> 00:26:27,227
+Tamam hocam, bir saniye.
+
+252
+00:26:27,227 --> 00:26:28,227
+Kudu aç.
+
+253
+00:26:34,259 --> 00:26:43,259
+Bir dakika. Bu eksik olan ve yapamadıklarınızı lütfen yazın, yapın ki algoritmanızı geliştirin, tamam mı? Tamam hocam.
+
+254
+00:26:53,875 --> 00:27:08,811
+Evet, ne yapıyorduk? Trapezi. Trapez mi hocam? Bende ikisi de var. Tamam. İkisini de mi göstereceksin? İkisini seçtiriyorum. İyi tamam, trapezi seç. Tamam hocam, bir saniye.
+
+255
+00:27:24,084 --> 00:27:30,084
+Her şey bitti de havalı havalı menü yapmışsın. Integralim derecesi, beş.
+
+256
+00:27:33,084 --> 00:27:37,084
+Sıfırıncı dereceden gireceğim, peki. Sıfır üç.
+
+257
+00:27:37,084 --> 00:27:41,084
+Sıfır nokta üç. Hayır, sıfırın derecesi üç.
+
+258
+00:27:41,084 --> 00:27:43,084
+Hocam, bir saniye.
+
+259
+00:27:44,084 --> 00:27:47,084
+Ama [öğrenci] ya, baygın beni.
+
+260
+00:27:47,084 --> 00:27:48,084
+Beş misiniz?
+
+261
+00:27:48,084 --> 00:27:49,708
+Hadi beş.
+
+262
+00:27:50,003 --> 00:28:17,604
+Tamam, 0'ın derecesi 3, 1 teradesi 0, 2'nin, 3'ün, 0, 4'ün, 0, 5'in, 2. Kaç parçaya bölmek istiyoruz? 6. Integral'ın sınırları AB? 1'den 4'e kadar. Hocam, trapez mi demiştiniz Simpson'ı? Trapez.
+
+263
+00:28:17,824 --> 00:28:43,615
+Tamam. Hocam, 1363. Bende 1311 ama olabilir. Kim bilir, nerede ne yaptın da böyle oldu. O zaman bir de Simpson'a çalıştır. Tamam. Yine outputlara girecek miyiz? Evet. Beşinci dereceden de. Sıfırıncı derece sıfır mıydı hocam? Evet. Hayır.
+
+264
+00:28:43,615 --> 00:29:07,615
+3. Yaaa! Ben başka soruya bakıyorum. Tamam soruya değilim. Tamam, giriyoruz şimdi hocam. Sıfırıncı derece 3'tü. 3, birinci derece 0, ikinci derece eksi 3, üçüncü derece 0, 4, 0, 5, 2. Kaç parça? 6 yapıyorsun. Sınırlar? Birden 4'e kadar.
+
+265
+00:29:08,531 --> 00:29:36,332
+Trapez miydi hocam? Simpsondu. Tamam. Hocam 1311. Sen geç, evet. Halbuki bir önceki Simpson çıktı. Simpson aldık. Hocam, yöntemi mi farklı söylediniz ikisinde? Hayır, birincisinde trapez dedim, ikincisinde Simpson dedim ama ters çıktı şeyler. Neyse, belki de ben ters yazdım, önemli değil.
+
+266
+00:29:37,683 --> 00:29:38,683
+Peki.
+
+267
+00:29:42,483 --> 00:29:43,683
+Sıradaki?
+
+268
+00:29:43,983 --> 00:29:45,683
+Hocam ben var, Meraklı.
+
+269
+00:29:45,683 --> 00:29:46,683
+Sen kimsin?
+
+270
+00:29:46,683 --> 00:29:47,683
+[öğrenci].
+
+271
+00:29:47,683 --> 00:29:49,683
+[öğrenci].
+
+272
+00:29:49,683 --> 00:29:50,683
+Tamam.
+
+273
+00:29:50,683 --> 00:29:51,683
+Numara?
+
+274
+00:29:52,683 --> 00:29:55,683
+[kişisel bilgi].
+
+275
+00:30:00,000 --> 00:30:01,000
+Kaçta kaç?
+
+276
+00:30:01,759 --> 00:30:02,759
+Onda on hocam.
+
+277
+00:30:04,559 --> 00:30:11,159
+Peki, sen de acaba bir section'ı yapabilir miyiz?
+
+278
+00:30:12,079 --> 00:30:13,559
+Bir dakika hocam.
+
+279
+00:30:14,959 --> 00:30:16,240
+Önce bir aç.
+
+280
+00:30:17,759 --> 00:30:20,639
+Bir section değil mi? Görebiliyor musunuz hocam?
+
+281
+00:30:20,639 --> 00:30:21,639
+Görebiliyorum.
+
+282
+00:30:22,319 --> 00:30:22,988
+Tamam.
+
+283
+00:30:24,180 --> 00:30:34,180
+Yarıya bölmeleri nerede yapıyorsun? Aşağıda, apur apur aldın. Dur, ikiyi karşılaştırdın. Else-DiNo. Okey, tamam, çalıştır.
+
+284
+00:30:34,180 --> 00:30:49,180
+Ne istiyorsun şimdi? Denklimin derecesi 3. Denklimin sıfırıncı elemanına gir. Eksi 9. Eksi 9. Yine eksi 9.
+
+285
+00:30:51,635 --> 00:30:54,635
+Bir bir.
+
+286
+00:30:54,635 --> 00:30:55,635
+Bir.
+
+287
+00:30:57,635 --> 00:30:59,635
+Aralığı söylüyorum.
+
+288
+00:31:04,980 --> 00:31:11,639
+Söyleyemiyorum bir dakika, aralığı söylüyorum. Eksi dörtten eksi ikiye kadar.
+
+289
+00:31:11,639 --> 00:31:14,639
+Eksi dört, eksi iki.
+
+290
+00:31:14,639 --> 00:31:15,480
+Evet.
+
+291
+00:31:15,480 --> 00:31:17,279
+Hata payı ne kadar hocam?
+
+292
+00:31:17,279 --> 00:31:18,279
+İstediğini ver.
+
+293
+00:31:18,279 --> 00:31:21,279
+Sıfır nokta bir veririm mi?
+
+294
+00:31:21,279 --> 00:31:22,980
+Ya da bir mu veririm?
+
+295
+00:31:22,980 --> 00:31:23,980
+Büyük verdin.
+
+296
+00:31:23,980 --> 00:31:26,480
+Sıfır nokta sıfır sıfır bir.
+
+297
+00:31:26,480 --> 00:31:28,279
+Hı hı.
+
+298
+00:31:28,279 --> 00:31:29,980
+Tamam.
+
+299
+00:31:29,980 --> 00:31:32,480
+Eksi üç. Tamamdır.
+
+300
+00:31:36,019 --> 00:31:37,019
+Teşekkürler.
+
+301
+00:31:38,019 --> 00:31:39,019
+Nereden? Şuradan.
+
+302
+00:31:41,019 --> 00:31:42,019
+Şurada kim var?
+
+303
+00:31:42,019 --> 00:31:43,019
+Hocam, ben gelebilir miyim?
+
+304
+00:31:44,019 --> 00:31:45,019
+Gel, su başı.
+
+305
+00:31:46,019 --> 00:31:47,019
+Gelin hocam.
+
+306
+00:31:47,019 --> 00:31:48,019
+Su başı, su başı.
+
+307
+00:31:48,019 --> 00:31:49,019
+Numara?
+
+308
+00:31:50,019 --> 00:31:52,019
+[kişisel bilgi].
+
+309
+00:31:54,019 --> 00:31:55,019
+Evet. Kaçta kaç?
+
+310
+00:31:56,019 --> 00:31:57,019
+Onda on.
+
+311
+00:32:00,019 --> 00:32:01,019
+Peki.
+
+312
+00:32:01,236 --> 00:32:11,236
+inverse yapalım. Tamamdır hocam. Bir saniye. Önce bir kodu açalım. Bu arada arkadaşlar gösterenler çıkabilir.
+
+313
+00:32:11,236 --> 00:32:29,228
+At senin tersini alma değil mi hocam? Evet inverse tersini alma. Şimdi şu elementer işlemlerin nerede? Bir saniye hocam ben yavaş yavaş ineyim o zaman. Dur.
+
+314
+00:32:30,099 --> 00:32:32,099
+Bir dakika, burada ne yapıyorsun?
+
+315
+00:32:34,099 --> 00:32:36,099
+Burada ne yapıyorsun?
+
+316
+00:32:38,099 --> 00:32:41,099
+Bu F ne ki? F-2'niz ne oluyor?
+
+317
+00:32:42,099 --> 00:32:43,099
+Efendim hocam?
+
+318
+00:32:43,099 --> 00:32:46,099
+O F'de ne yapıyorsun 68. satırdan?
+
+319
+00:32:46,099 --> 00:32:54,099
+Hocam, yavaş yavaş iki eksilte eksilte, hani kodun ne kadar devam edeceğini belirliyorum orada.
+
+320
+00:32:55,099 --> 00:32:57,099
+Üniversal maden ne demek o?
+
+321
+00:32:58,451 --> 00:33:22,451
+Hocam bu kofaktör. Ha, kofaktör yaptım. Aynen hocam. Peki, tamam. Çalıştır o zaman. Çalıştırayım hocam. Dörde dört. Bir saniye, çalıştırabilirsem. Ne demek çalıştırabilirsem? Yani açılırsa. Girelim hocam.
+
+322
+00:33:35,604 --> 00:33:58,476
+Söyleyeyim mi? Evet hocam sizi bekliyorum. Ama ben şeyi görmüyorum. Neyi hocam? Çalışan ekranını görmüyorum. Aa, pardon. Evet. Kusura bakmayın hocam. Şimdi görebiliyor musunuz? A, varla. Bir dakika arkadaşlar.
+
+323
+00:34:00,051 --> 00:34:06,171
+Bundaki iki kısımda tamam, kalsın sen diğer kısımda şah. Söylüyorum dörde dört.
+
+324
+00:34:06,171 --> 00:34:09,171
+Evet hocam. Satır satır mı söyleyeceğim?
+
+325
+00:34:09,171 --> 00:34:12,371
+Direk, aynen hocam. Başlayalım.
+
+326
+00:34:12,371 --> 00:34:25,492
+1-3-5-9. 1-3-5-9. Sonra bir dakika, 1-3-1-7. 1-3-1-7. 4-3-9-7.
+
+327
+00:34:28,467 --> 00:34:30,467
+5, 2, 0, 9
+
+328
+00:34:33,068 --> 00:34:34,068
+Tamamdır.
+
+329
+00:34:34,867 --> 00:34:36,467
+O, şimdi kontrol.
+
+330
+00:34:36,467 --> 00:34:44,867
+Eksi 0, 27, eksi 0, 0, 42, eksi 0, 48, 127, en aşağısına bakayım bir de.
+
+331
+00:34:44,867 --> 00:34:46,268
+Tamam, doğru.
+
+332
+00:34:50,708 --> 00:35:17,708
+Su başıydın değil mi? Evet hocam. Tamam. Sırada kim var? Ben varım hocam. [öğrenci]. [öğrenci]. [öğrenci] evet gördüm seni. Kaçta kaç var soru? Hepsini yaptım hocam. Okey. [kişisel bilgi]. Allah Allah.
+
+333
+00:35:18,804 --> 00:35:22,324
+[öğrenci], peki sana acaba ne sorsak?
+
+334
+00:35:24,884 --> 00:35:26,284
+Ne sorsam?
+
+335
+00:35:31,764 --> 00:35:33,764
+Bir saniye soralım. Türevi aç.
+
+336
+00:35:46,099 --> 00:35:46,956
+Yani, işe de geçecek.
+
+337
+00:35:53,108 --> 00:36:08,608
+Görebiliyor musunuz hocam? Evet, görebiliyorum. Çok da büyük gösterdin zaten. Güçültemiyorum ya. Çok hoşuma gitti. Çok rahat görüyorum. Şimdi bir saniye. Onları in aşağıya in.
+
+338
+00:36:15,284 --> 00:36:22,684
+İn şu 23. satıra gel, aşağıya doğru in. Ya print hepleri niye bakayım? İner misin [öğrenci]?
+
+339
+00:36:27,539 --> 00:36:29,355
+Yartımı oradan aldın, dur.
+
+340
+00:36:32,884 --> 00:36:43,283
+x0 x1 nereden geliyor? x0 x1 x0 x1 x ha, [öğrenci]'i oradan aldım. Okey, çalıştıralım.
+
+341
+00:36:56,148 --> 00:37:19,468
+Bir saniye.
+
+342
+00:37:07,764 --> 00:37:09,764
+Çalışı olması lazım da.
+
+343
+00:37:09,764 --> 00:37:11,764
+Görmüyorum, paylaşım yap.
+
+344
+00:37:16,764 --> 00:37:19,468
+Bir saniye, tekrar deneyebilir miyim?
+
+345
+00:37:29,747 --> 00:37:31,747
+Bir saniye.
+
+346
+00:37:29,331 --> 00:37:30,331
+Teşekkürler.
+
+347
+00:37:57,239 --> 00:38:09,239
+Bir saniye.
+
+348
+00:37:56,371 --> 00:38:23,371
+Geldi hocam. Pardon beklettim. Ne geldi? Ben göremiyorum. Hocam şu aşağıda, şurası gözükmüyor mu? Hayır. Ben kodu görüyorum şu an. Aşağı kısım gözükmüyor mu hocam? Buraya nasıl gözükmüyor? Gözükse niye gözükmüyor diyeyim. Pardon. Evet, refresh diye bir şey açıldı şimdi.
+
+349
+00:38:28,340 --> 00:38:30,659
+Şu an sadece kurdunu görüyorum.
+
+350
+00:38:32,659 --> 00:38:37,500
+Aşağıda sayısal türev falan yazması lazım. Şu an bende gözüküyor ama bunu nasıl...
+
+351
+00:38:37,500 --> 00:38:41,659
+Ben görmüyorum ama. Sen çalıştır o zaman sonucu bana. Heh şimdi geldi.
+
+352
+00:38:41,659 --> 00:38:45,060
+Heh geldi mi? Ay paylaştık değil, dur dur. Pardon.
+
+353
+00:38:47,060 --> 00:38:47,700
+Geldi mi?
+
+354
+00:38:49,700 --> 00:38:50,700
+Daha gelmedim.
+
+355
+00:38:52,659 --> 00:38:53,420
+Geldim.
+
+356
+00:38:54,708 --> 00:38:56,708
+Herkes iyi fark olsun.
+
+357
+00:39:00,115 --> 00:39:03,195
+X noktası 1 olsun.
+
+358
+00:39:07,347 --> 00:39:08,608
+H-DR
+
+359
+00:39:11,547 --> 00:39:12,988
+0-25 olsun.
+
+360
+00:39:17,204 --> 00:39:19,804
+En yüksek üst değeri. Dört.
+
+361
+00:39:19,804 --> 00:39:32,804
+Dördü aldın mı? Aldım hocam. Peki onu görmüyorum. Dördüncü derecenin kuvvetini veriyorum. Eksi sıfır nokta bir.
+
+362
+00:39:38,356 --> 00:39:39,796
+Eksi sıfır on beş
+
+363
+00:39:44,019 --> 00:39:45,340
+Ekşi 05
+
+364
+00:39:48,692 --> 00:39:50,211
+eksi sıfır yirmi beş
+
+365
+00:39:53,523 --> 00:39:54,523
+1.2
+
+366
+00:39:54,523 --> 00:39:59,523
+Geldim hocam.
+
+367
+00:39:59,523 --> 00:40:01,523
+Sonuç ne?
+
+368
+00:40:01,523 --> 00:40:05,523
+Eksi 2.13,1343 böyle bir şekilde yok.
+
+369
+00:40:05,523 --> 00:40:08,523
+Eksi 2.43 ve 13.
+
+370
+00:40:08,523 --> 00:40:11,523
+Tamam gördüm gördüm.
+
+371
+00:40:11,523 --> 00:40:15,523
+Evet. Eksi 2.13. Okey.
+
+372
+00:40:16,523 --> 00:40:19,523
+Herhalde şu an bu oda
+
+373
+00:40:20,019 --> 00:40:30,019
+Vardır bir yirmi dokuz derece falan. Ayırlayacağım biraz sonra. [öğrenci]'tun değil mi? Yine kaçtı?
+
+374
+00:40:30,019 --> 00:40:32,019
+[kişisel bilgi].
+
+375
+00:40:33,019 --> 00:40:34,019
+Doksan yedi.
+
+376
+00:40:39,347 --> 00:40:40,347
+Evet.
+
+377
+00:40:44,083 --> 00:40:47,403
+Tamam, sırada kim? Ben var hocam, sırada.
+
+378
+00:40:47,403 --> 00:40:56,723
+Kim konuştu demin? [öğrenci]. Hayır, sen değil. Demin kim de sıra var? Ben hocam, [öğrenci].
+
+379
+00:40:56,723 --> 00:41:05,083
+Tamam, çok bir kere söyleyip hızlı yapınca o küçük bir sarı çizgi çıkıyor, onu ben kaçırıyorum ve göremiyorum. [öğrenci] numara?
+
+380
+00:41:09,619 --> 00:41:17,619
+Bir saniye arkadaşlar, [öğrenci] dışarıdaymış, bana veremeyecekmiş, koy o zaman ona alırsa.
+
+381
+00:41:17,619 --> 00:41:20,619
+Tamam, değişirse haber veririm.
+
+382
+00:41:20,619 --> 00:41:24,619
+Bir ara verirsem, suna çıkarırsa çıkış alırım, haber veririm.
+
+383
+00:41:24,619 --> 00:41:25,619
+Yanında gelin, hastane takip.
+
+384
+00:41:25,619 --> 00:41:27,619
+O zaman tamam, koy.
+
+385
+00:41:27,619 --> 00:41:30,619
+Pardon arkadaşlar, kim de?
+
+386
+00:41:30,619 --> 00:41:32,619
+Ben hocam [öğrenci].
+
+387
+00:41:32,619 --> 00:41:35,619
+Ha, [öğrenci] aşkım. Numaranı bir daha söylesene.
+
+388
+00:41:36,244 --> 00:41:38,244
+[kişisel bilgi].
+
+389
+00:41:39,244 --> 00:41:42,244
+Evet, tamam. Kaç tanesini yaptın?
+
+390
+00:41:43,244 --> 00:41:44,244
+Hocam, bir tanesi çalışmıyor.
+
+391
+00:41:45,244 --> 00:41:46,244
+Hangisi?
+
+392
+00:41:46,244 --> 00:41:51,244
+Simpson 3.8. Aslında çalışıyordu da, az önceki örnekleri ben de deniyordum, o çalışmadı az önceki örnek.
+
+393
+00:41:51,244 --> 00:41:53,244
+Simpson çalışmadı?
+
+394
+00:41:53,244 --> 00:41:54,244
+Evet.
+
+395
+00:41:54,244 --> 00:41:57,244
+Halbuki çok rahatlıkla çalıştırabilirsin onu.
+
+396
+00:41:58,244 --> 00:42:02,244
+Bilmiyorum hocam, normalde ben birkaç kere denedim, çalışmıştı zaten.
+
+397
+00:42:02,900 --> 00:42:05,900
+Bu örnekte çalışmadı. Bir deneyelim mi? Gir bakayım.
+
+398
+00:42:10,931 --> 00:42:12,211
+Geliyor mu şu an [öğrenci]?
+
+399
+00:42:12,211 --> 00:42:14,771
+Geldi. Çalıştırdık Simpson'ı.
+
+400
+00:42:21,715 --> 00:42:48,155
+Ne diyorsun? Başındaki numarayı... Ne soruyorsun bana? Okuyamıyorum. Polinomun derecesi. Yöntemi seç. Ben de hepsi aynı kodla. Tamam, yöntemi seç. Simpson seç işte. Polinomun derecesi iki. İki derecelin kas sayısı bir. Birin kas sayısı iki. Sonra ne istiyorsun?
+
+401
+00:42:48,467 --> 00:42:50,467
+Onunki de sıfır.
+
+402
+00:42:52,467 --> 00:42:56,268
+İlk aralık, birden üçe kadar
+
+403
+00:42:59,731 --> 00:43:27,452
+Altı. Hocam işte böyle çalışmıyor yani şurada bir. Aaa bir şey kitlendi. Acaba ne kitlendi? Neyse tamam. Trapez çalışıyor mu peki? Trapez çalışıyor hocam. Tamam trapezi aç. Üçüncü dereceden denklem. Sıfır. İki.
+
+404
+00:43:28,307 --> 00:43:39,307
+Bir, sonra sıfır, birden üçe kadar, ende altı.
+
+405
+00:43:42,307 --> 00:43:44,307
+21.4 çıktı hocam.
+
+406
+00:43:44,307 --> 00:43:49,307
+21 mi? Ben de 21 değil.
+
+407
+00:43:52,851 --> 00:43:55,351
+Dur bakalım, bunu çözmeye kalksak.
+
+408
+00:43:55,351 --> 00:43:56,851
+Kaç olması lazım?
+
+409
+00:43:56,851 --> 00:44:07,851
+x kare artı 2x, birden 3'e kadar x küp bölü 3, artı 2x kare bölü 2, birden 3'e kadar koydum, bunlar bitti.
+
+410
+00:44:07,851 --> 00:44:20,576
+3'ün küpü nedir? 3 kere 3, 9. 3, 9'un 27 bölü 3, artı 9, eksi 1 bölü 3.
+
+411
+00:44:20,576 --> 00:44:46,576
+Artı bir bölü iki. Bunu dokuzla çarptık. Burası on sekiz. Bunu ikiyle, bunu üçle. Beş bölü altı, beş bölü altı, altı kere sekiz kırk sekiz, altı, yüz sekiz, bölü beş, yüz üç bölü altı. Kaç çıktı sende? Yirmi bir noktada çıktı hocam. Yok. Onda altı bir kere var.
+
+412
+00:44:46,719 --> 00:45:09,119
+43, alt kere var, alt kere 6, 36, yok 16, bilmem ne çıkacak. Senin bu şeylerinde bir şey var. Çok basit bir trapez yapalım. X karenin integralini alalım. Birden ikiye kadar.
+
+413
+00:45:09,940 --> 00:45:16,940
+Bu ne olur? x küp bölü 3 olur. 1'den 2'ye kadar 8 bölü 3, eksi 1 bölü 3 olacak.
+
+414
+00:45:16,940 --> 00:45:20,540
+Kaç parçası? 7 bölü 3 çıkacak. 2 nokta bir şey çıkacak.
+
+415
+00:45:20,540 --> 00:45:23,940
+Kaç parçası? 6'ı 1.
+
+416
+00:45:23,940 --> 00:45:28,940
+2 nokta 33. Ama diğerlerinde niye çalışmadı?
+
+417
+00:45:28,940 --> 00:45:32,940
+Başka bir tane deneyelim.
+
+418
+00:45:32,940 --> 00:45:37,804
+Enterpolasyonu yaptın mı Gregory Newton'u? Evet hocam.
+
+419
+00:45:38,516 --> 00:46:05,516
+Peki, çalıştır, input sayısını gidin. Yedi tane sıfırdan başlıyor. Altıya kadar. Girdiği yerleri sıfırdan altıya kadar mı yani? Evet, sıfır, bir, iki, üç, dört, beş, altı. Çıktı değerlerinden. O ne demek? Ha, özür dilerim, eksi dört.
+
+420
+00:46:08,307 --> 00:46:28,547
+Birin eksi iki, ikinin on dört, üçün altmış iki, dördün yüz altmış, beşin üç yüz yirmi altı, altının beş yüz yetmiş sekiz, x eşittir, biri bul.
+
+421
+00:46:32,788 --> 00:46:47,500
+Hocam bu sonlu farklar tablosunu yazdırdın buraya. Evet. Bir için mi buldun? Ha, eksi iki. Tamam. Tamam, sen [öğrenci] mıydın? Evet. Evet. Peki.
+
+422
+00:46:52,275 --> 00:46:58,395
+Okey. Kim gelecek? Ay yeter ama. Evet. Hocam ben yapabilirim.
+
+423
+00:46:58,395 --> 00:47:10,395
+Tamam hocam şey, staçlar gidilir için bir saniye alabilir mi? Ya ben yanlış şu an proje bakıyorum ama getir hızla imzalayayım, bekleyemem bu sıcaklı. Ay çıkar onları. Kimde sıra?
+
+424
+00:47:10,395 --> 00:47:15,916
+Ben yapabilirim hocam. [öğrenci]. Numaran kaç? [kişisel bilgi].
+
+425
+00:47:16,275 --> 00:47:28,275
+[kişisel bilgi]. Kaçta kaç yaptın? Yaptım hepsini hocam. Tamam, sen de interpolasyonu hazırla. Tamam.
+
+426
+00:47:34,291 --> 00:47:36,692
+Bir staj evra imzaladalım, bir saniye.
+
+427
+00:47:43,603 --> 00:47:49,163
+Sen niye bunu geç getirdin? Bunu bugün mü aldın? Bu evra al?
+
+428
+00:47:49,163 --> 00:47:51,163
+Yok, geçen gün aldım.
+
+429
+00:47:51,163 --> 00:47:53,083
+Niye dün gelmedi imzaya?
+
+430
+00:47:53,083 --> 00:47:55,643
+Çünkü fotoğraf eksikti, fotoğraf etmemişti.
+
+431
+00:47:56,643 --> 00:47:59,963
+Şimdi buraya hocanın imzasını sunuklamışlar.
+
+432
+00:48:05,460 --> 00:48:07,460
+Bir saniye bekletiyorum.
+
+433
+00:48:07,460 --> 00:48:08,972
+Tamamdır acaba.
+
+434
+00:48:14,771 --> 00:48:18,632
+Tüm kocsiyka, patlamam, çiftlığa prozı.
+
+435
+00:48:23,923 --> 00:48:26,804
+Evet, interpolasyonu mu aç demiştim?
+
+436
+00:48:26,804 --> 00:48:28,324
+Evet, açtım.
+
+437
+00:48:28,324 --> 00:48:30,003
+Okey, tamam açtın.
+
+438
+00:48:35,092 --> 00:48:39,492
+Sen X girişlerini nasıl alıyorsun? Artımlarını?
+
+439
+00:48:39,492 --> 00:48:42,612
+Ben önce X, sonra Y'sini alıyorum.
+
+440
+00:48:42,612 --> 00:48:46,771
+Hayır, hayır. X değerlerini de artım 1 olarak mı vereceğim sana?
+
+441
+00:48:46,771 --> 00:48:49,172
+Yok hocam, o fark etmiyor.
+
+442
+00:48:49,172 --> 00:48:53,811
+Peki, X, beş tane değer gireceğim, çalıştır.
+
+443
+00:48:57,139 --> 00:49:23,900
+beş tane. 1891, 46. Sonucu değil mi hocam? Evet. 1901, 66. 1911, 81. 1921, 93. 1931, 101.
+
+444
+00:49:27,603 --> 00:49:29,804
+1895'i bulalım.
+
+445
+00:49:32,804 --> 00:49:42,804
+Tamam, demin bir arkadaşınız dedi ya, değişken dönüşümü yapmayın hocam dediniz. O yüzden artımları bir bir alacağım.
+
+446
+00:49:42,864 --> 00:50:05,463
+Ama unutmayın, formülün basitleştirilmiş halini, ilk halini kullandığımızda artımlar herhangi bir iş aralıkta olabilir. Ne sabit olması gerekir, ne de artımların bir H'ye bölerek kullanırsak olayı her türlü işlemi yapabiliriz. Tamam, teşekkür ediyorum. Sırada kim var?
+
+447
+00:50:05,811 --> 00:50:07,811
+Merhaba hocam, ben yapabilirim.
+
+448
+00:50:07,811 --> 00:50:15,811
+Tamam. Aa ben yüzlere bakmayı unuttum. Teşekkür ederim hatırlattığın için yüzünü gösterip. [öğrenci].
+
+449
+00:50:15,811 --> 00:50:16,811
+Merhaba hocam.
+
+450
+00:50:16,811 --> 00:50:19,811
+Dürürürürürt numara vermeyecek misin?
+
+451
+00:50:19,811 --> 00:50:21,811
+[kişisel bilgi].
+
+452
+00:50:21,811 --> 00:50:23,811
+[kişisel bilgi].
+
+453
+00:50:26,811 --> 00:50:28,811
+Yok. Başı neydi?
+
+454
+00:50:28,811 --> 00:50:30,811
+[kişisel bilgi].
+
+455
+00:50:36,467 --> 00:50:39,867
+Tibet genç diye gözüküyor bu numara bende.
+
+456
+00:50:41,867 --> 00:50:44,467
+Bir daha söyleyeyim isterseniz hocam.
+
+457
+00:50:44,467 --> 00:50:45,467
+Söyle bakayım.
+
+458
+00:50:45,467 --> 00:50:48,467
+[kişisel bilgi].
+
+459
+00:50:48,467 --> 00:50:51,867
+[kişisel bilgi].
+
+460
+00:50:52,275 --> 00:50:55,275
+Dış bölüm değil de yatay geçiş öğrencisi.
+
+461
+00:50:55,275 --> 00:50:56,275
+Yatay geçiş mi?
+
+462
+00:50:56,275 --> 00:51:04,275
+Aa, 505 oluyorsun sen. Aslında 505 desen olay bitecekti. [öğrenci].
+
+463
+00:51:04,275 --> 00:51:05,275
+Evet hocam.
+
+464
+00:51:05,275 --> 00:51:07,275
+Okey. Kaçta kaç yaptın?
+
+465
+00:51:07,275 --> 00:51:18,275
+Hocam hepsini yaptım ama güzel bir proje olması için hani girdiğimiz fonksiyonları böyle elle girmeyelim de biz onu ayıralım diye bütün fonksiyonlarda çalışabilir hale getirdim.
+
+466
+00:51:18,275 --> 00:51:20,203
+İyi tamam, önemli değil.
+
+467
+00:51:20,884 --> 00:51:25,364
+Dın dın dın dın şey yapalım.
+
+468
+00:51:30,675 --> 00:51:56,915
+Doğuz eliminasyonunu yapalım. Yapalım hocam. Yapalım hocam. Ama diğerlerinden de yapalım bence. Allah Allah, ona bir ben karar vereyim. Sen bir gir bakalım eliminasyondan. Evet hocam. Ne soruyorsun bana? Kaç tane? İki tane. İki tane. Kaç değişkenimiz var?
+
+469
+00:51:57,364 --> 00:52:01,884
+İşte iki tane. Kaç denklemimiz var? Kaç tane?
+
+470
+00:52:01,884 --> 00:52:13,764
+Tamam, denklem sayısı da iki, değişken sayısı da iki. Birincininki iki, beş ve on altı.
+
+471
+00:52:13,764 --> 00:52:19,364
+Evet. Üç, bir, on bir.
+
+472
+00:52:23,092 --> 00:52:24,092
+Kaç çıktı?
+
+473
+00:52:24,092 --> 00:52:25,092
+3'e 2.
+
+474
+00:52:25,092 --> 00:52:29,092
+Evet, 3'e 2.
+
+475
+00:52:29,092 --> 00:52:31,092
+Peki Simpson yapalım.
+
+476
+00:52:38,483 --> 00:52:44,723
+Ne istiyor acaba benden? Error dedi. Şöyle bir şey yapmam lazım, ben kendimi değerliyorum.
+
+477
+00:52:44,723 --> 00:53:06,324
+Simpson hangisini istiyorsunuz hocam? Hangisini görmen istiyorsam? Şöyle bir şey yapayım o zaman. Bakın hava atıyor, sınıf. Görüyorsunuz değil mi? Evet. Hangisini yaptın? Üç bölü sekiz. Üç bölü sekiz hocam. Tamam komisyonun neyini gireceğim?
+
+478
+00:53:07,219 --> 00:53:10,299
+Yani direkt expression halini söyleseniz yeterli.
+
+479
+00:53:10,299 --> 00:53:13,699
+Nasıl yani? x kare artı iki x.
+
+480
+00:53:13,699 --> 00:53:19,699
+Ooo, sen bunu mu çözdün içeride?
+
+481
+00:53:19,699 --> 00:53:21,699
+Evet hocam.
+
+482
+00:53:21,699 --> 00:53:23,699
+Aha.
+
+483
+00:53:23,795 --> 00:53:33,795
+Biraz vizem düşük olduğu için açıkçası Ahmet'in de bonus verdiğini görünce herhalde dedim siz de boş geçmezsiniz ama size kalmış.
+
+484
+00:53:33,795 --> 00:53:49,795
+Ben bonus vermedim. Ahmet kapısına göre takılıyor. Boş ver. O da projelere bakarken bazı şeylerden not kırmış. Ben de oralardan not kırmadım. Yani dengeye varıyoruz arkadaşlar. Merak etmeyin. Yanlışımda x kare artı 2x.
+
+485
+00:53:50,612 --> 00:54:16,112
+Tamam, bunun integrali alınacak. Bir ile üç arası, birden üçe kadar. Altı veriyorum aralığı. Ne istiyorsun başka? Olan da 66. O kadar küçük ki ben onları da görsem. E tamam, yüz verdim için rahat etsin. Ama ben yine seni kaybettim.
+
+486
+00:54:16,532 --> 00:54:30,132
+Buldum [öğrenci]. 505 hocam. Tamam. Tamam, teşekkür ediyorum. Teşekkürler hocam, iyi günler. Sıradaki... Arkadaşlar şuradan bir sol geliyorum, hemen yan masamdan.
+
+487
+00:54:53,268 --> 00:55:02,867
+Evet, sıra kimde? Ben de hocam. Ben de diyen [öğrenci]. [öğrenci].
+
+488
+00:55:02,867 --> 00:55:15,107
+Numaranı söyle. [kişisel bilgi]. Buldum, şu an söyleyene kadar bulduk. Kaçta kaç yaptık? 10'da 10 yaptım. 10'da 10 yaptık.
+
+489
+00:55:21,619 --> 00:55:48,820
+Peki, Newton olsun. Newton, Gregor Newton mı? Yok yok, kök bulma Newton. Ha tamam. Burada şöyle göstereyim fonksiyonun içine. Ha şurası. Hocam ben yalnız bir aralık istiyorum burada. Newton'da sen iki aralık mı istiyorsun? Veririz. Evet.
+
+490
+00:55:49,556 --> 00:56:15,307
+Niye? Nereden kullanıyorsun iki aralığı? Hocam burada içinde o kapıların içinde kök var mı diye bakıyorum. Burada da ortasını seçiyorum o arada. Peki tamam. Ne istiyorsun şimdi benden? Çalıştır. Çalıştırdım. Gözüküyor mu şu an? Geliyor. Aferin büyüteyim biraz. Derecesini istiyorum hocam.
+
+491
+00:56:16,019 --> 00:56:32,699
+Ekranda yazılıyor mu öyle bir şey? Ben görmüyorum. Bir ekran açıldı, başka da bir şey yok. Nasıl çözeceğim onu bilmiyorum. Hiç bana sorma, ben size soruyorum. Tamam hocam, hemen çözüyorum.
+
+492
+00:56:36,692 --> 00:56:38,692
+Şöyle yapsam olacak bence.
+
+493
+00:56:38,692 --> 00:56:40,692
+Oldum.
+
+494
+00:56:40,692 --> 00:56:44,692
+Evet. Fonksiyonun derecesine giriyoruz. İki.
+
+495
+00:56:46,692 --> 00:56:49,692
+İkinci derecenin kas sayısı bir.
+
+496
+00:56:49,692 --> 00:56:54,692
+Eksi dört. Eksi beş.
+
+497
+00:56:55,692 --> 00:56:58,692
+Bu mekul aralıkları girin.
+
+498
+00:56:58,692 --> 00:57:01,692
+Yedi ve dört.
+
+499
+00:57:03,827 --> 00:57:10,827
+4 ve 7 olsun. 4 büyü 7. Maksimum iterasyon bu hocam dönüşüye girmesin.
+
+500
+00:57:10,827 --> 00:57:28,827
+Niye öyle yandın ya? En sevmediğim şey. Hocam şöyle yüz yazayım mı? İyi yandı. Bulduğun iki üç bir arasındaki farka bak. Ver ona da 0.001. Tamam. 5 çıkıyor hocam. 5 buldum. Tamamdır.
+
+501
+00:57:36,403 --> 00:58:01,603
+Kim var? Ben veriyorum, dam var hocam, günaydın. [öğrenci], günaydın. Son iki numara? [kişisel bilgi]. Kaçta kaç? On. On da on? Evet. Peki, onuncusu neyse onu göster, trapez.
+
+502
+00:58:08,692 --> 00:58:16,492
+Gözüküyor mu hocam? Yok, evet, çalışırken görmüyorum, kodu görüyorum sadece. Tamam.
+
+503
+00:58:16,492 --> 00:58:28,492
+Geldi mi? Evet, geldi. Aralık sayısını giriniz. Trapez yapıyoruz, aralık sayısını sordum, 1 ve 1, 4.
+
+504
+00:58:32,815 --> 00:58:39,815
+Yok yok şey, şöyle söyleyeyim, alt sınır ve üst sınır ayrı gireceğiz de, ben fonksiyonu burada elle tanımladım.
+
+505
+00:58:39,815 --> 00:58:42,815
+Fonksiyon istiyorsanız şimdi söyleyin ya da...
+
+506
+00:58:42,815 --> 00:58:47,815
+Hepsini orada mı? Bütün kodunu da böyle mi yaptın diğerlerinde de?
+
+507
+00:58:47,815 --> 00:58:50,815
+Yok yok, iki tanesinde böyle diye hatırlıyorum, tam hatırlamıyorum da.
+
+508
+00:59:05,492 --> 00:59:12,892
+Ne kadar zahmetli görüyorsun değil mi? Eksi 3x kare artı 3
+
+509
+00:59:17,876 --> 00:59:44,076
+Onlara parantez koymak zorunda mısın? Hangisine? O 3x²'ye, 2x²'ye, parantez koymazsan... Yok, ya yıldızla da yapabilirim de, şunları ayırmak için birbirini... İşte onu diyorum, o parantezleri koymazsan o ayıramaz mı işlem önceliğini, kendisi bilemez mi? Bilir. Bilebilir.
+
+510
+00:59:44,755 --> 00:59:45,956
+Hadi çalıştır.
+
+511
+00:59:45,956 --> 00:59:47,356
+Tamam, çalıştır.
+
+512
+00:59:47,356 --> 00:59:48,755
+Ne soracağım bakalım.
+
+513
+00:59:56,724 --> 00:59:58,724
+Oo, yok artık.
+
+514
+00:59:58,724 --> 01:00:01,724
+Hocam, başkasına geçeyim istiyorsanız ben...
+
+515
+01:00:01,724 --> 01:00:04,724
+Hayır ya, gördük bunu bir kere, gördüm ben.
+
+516
+01:00:04,724 --> 01:00:05,724
+Olmaz.
+
+517
+01:00:05,724 --> 01:00:10,724
+Hiç yakışmıyor, sizlere yakışmıyor. Böyle sakın yapmayın.
+
+518
+01:00:10,724 --> 01:00:19,660
+Yani bir algoritma dersi falan olsa oca kağıdı tuttuğu gibi fırlatır ha. Ona göre. Bizim zamanımızda öyleydi.
+
+519
+01:00:19,731 --> 01:00:23,052
+Tamam, sonuç olalım. Bakalım sonuçta ne yapacaksın?
+
+520
+01:00:23,052 --> 01:00:25,291
+3x kare bir de 3x küp müydü?
+
+521
+01:00:25,291 --> 01:00:30,931
+Dur, ben demin söylediğimi hatırlamıyorum ki. Ne söylüyordum ki ben?
+
+522
+01:00:32,211 --> 01:00:33,532
+2x üzeri 5.
+
+523
+01:00:33,532 --> 01:00:37,211
+2x üzeri 5, eksi 3x kare artı 3.
+
+524
+01:00:41,491 --> 01:00:43,052
+Tamam, aralık sayısı.
+
+525
+01:00:43,052 --> 01:00:45,052
+Aralık sayısı 6.
+
+526
+01:00:47,764 --> 01:00:57,523
+integralin alt sınırı, integral bir, üst sınırı da dört. Nebu trapez mi? Evet.
+
+527
+01:01:04,532 --> 01:01:26,851
+1363 çıkacak. 1363 çıkmadı. Yanlış mı girdik acaba? Vaaayyyy. Beş tane mi x var orada? İki, dört, beş. İki tane üç x kare. Aa, altı tane var herhalde hocam. Altı tane var. Ama eksi üç x kare. Evet, altı tane var. Benim dördüm onu hiç sayamaz.
+
+528
+01:01:30,643 --> 01:01:43,643
+Tamam, baştan şey yapalım. Ne yapalım? [öğrenci] birden dörde kadar. Ne soruyorsun? Söyleyin bana ne istediğinizi de.
+
+529
+01:01:43,643 --> 01:01:53,643
+Tamam, girdim hocam derlerim. 1360. Okey, ama bunu hiç sevmedim. Başka bir şeye daha bakalım. Tamam, bakalım.
+
+530
+01:02:12,563 --> 01:02:15,563
+Burada da öyle tanımlamışım hocam, siz de buraya direkt getirirsiniz.
+
+531
+01:02:15,563 --> 01:02:19,563
+Ama olmaz, ben niye dedim? Notunu kıracağım, bunu bilmiş ol.
+
+532
+01:02:19,563 --> 01:02:21,563
+Ama neden?
+
+533
+01:02:21,563 --> 01:02:24,563
+Neden mi? Ayol hiç kabul etmeyebilirim.
+
+534
+01:02:24,563 --> 01:02:28,563
+Haberin var mı bunları görünce? Böyle yazılmaz.
+
+535
+01:02:30,563 --> 01:02:36,563
+Bir de pazarlık yapıyorsun. Ne soruyorsun bana? Ha yine içeride yazacağız.
+
+536
+01:02:43,507 --> 01:02:44,507
+x kare.
+
+537
+01:02:44,507 --> 01:02:48,507
+Eksi 4 x, eksi 5.
+
+538
+01:03:06,516 --> 01:03:09,155
+Bu aralıkta kök yok. Aralığı vermedin.
+
+539
+01:03:13,907 --> 01:03:17,907
+Haralık neydi?
+
+540
+01:03:17,907 --> 01:03:21,907
+Haralıkta hangi soruyu yapıyoruz?
+
+541
+01:03:21,907 --> 01:03:23,907
+Bir seçin.
+
+542
+01:03:23,907 --> 01:03:31,907
+Onun aralığı, eksi beş ile sıfır. Pardon, eksi beş ile eksi iki.
+
+543
+01:03:31,907 --> 01:03:36,907
+Her şey içeriden, her şey içeriden.
+
+544
+01:03:40,851 --> 01:04:08,223
+Ne okuyamıyorum. Var, eksi üç var. X kare, eksi dört, eksi. Pardon, pardon, ne buldun? Bu aralıkta kök yok mu buldun? Ben ne dedim? Bir daha söyle. Aralıkta eksi beş ve eksi iki dediniz. Eksi beş ve eksi iki. Tamam, evet, bu aralıkta kök yok. Doğru. Ben öteki soruyu soruyormuşum. Doğru. Tamam.
+
+545
+01:04:08,224 --> 01:04:12,384
+Peki ama böyle yazılmaz, tamam mı? Bunu unutma.
+
+546
+01:04:12,384 --> 01:04:13,984
+Tamam.
+
+547
+01:04:13,984 --> 01:04:17,344
+[öğrenci]. Peki sıradan alalım.
+
+548
+01:04:17,344 --> 01:04:19,664
+Bende hocam, sıra.
+
+549
+01:04:19,664 --> 01:04:21,104
+[öğrenci].
+
+550
+01:04:21,104 --> 01:04:22,544
+Evet, on altı.
+
+551
+01:04:30,931 --> 01:04:31,931
+Kaçta kaç?
+
+552
+01:04:31,931 --> 01:04:33,931
+Hepsini yaptım hocam, onda.
+
+553
+01:04:33,931 --> 01:04:37,931
+Tamam. Gregor'un iftunu alalım.
+
+554
+01:04:37,931 --> 01:04:39,931
+Tamam.
+
+555
+01:04:43,315 --> 01:04:49,915
+Hata analizi, cahaya çalıştırıyorum o zaman. Kaç tane kök istiyorsunuz hocam?
+
+556
+01:04:49,915 --> 01:04:54,315
+Kaç tane x istiyorum? Evet. Beş tane. Tamam.
+
+557
+01:04:54,315 --> 01:05:05,915
+X değerleri. Ama ben çıktığı göremiyorum. Aa, bir saniye. Onu nasıl yapıyorduk? Tekrardan paylaşayım hocam. Peki.
+
+558
+01:05:08,980 --> 01:05:12,219
+Şu an görebiliyor musunuz? Evet. Tamam.
+
+559
+01:05:12,219 --> 01:05:20,419
+Kökleri eşit aralıkla giriniz. Haa, sen de öyle çözdün. Evet. Değişken dönüşümsüz olduğu için o zaman.
+
+560
+01:05:20,419 --> 01:05:29,419
+Ooo, o zaman dur bakalım bir şeyi değiştireceğiz. Beş dedik ona. Sıfır gir. Dörde kadar git.
+
+561
+01:05:29,419 --> 01:05:35,619
+Tamam. Eksi dört eksi iki.
+
+562
+01:05:36,563 --> 01:05:51,163
+14, 62, 160. Burası ileri fark tablosu, burada da denklemi veriyor. Şimdi aradığınız değeri sayılınca. 3. Tamam.
+
+563
+01:05:54,420 --> 01:05:57,420
+Teşekkürler. Ne demek görüşürüz hocam.
+
+564
+01:05:58,420 --> 01:06:00,420
+[öğrenci] çıkar mısın dışarı?
+
+565
+01:06:01,420 --> 01:06:06,420
+Ya gösterenler durmasın arkadaşlar. Çok kalabalık görüyorum ve moralim bozuluyor.
+
+566
+01:06:06,420 --> 01:06:07,420
+Pardon hocam, tükürüm.
+
+567
+01:06:07,420 --> 01:06:09,420
+Heynep sen de çık.
+
+568
+01:06:10,420 --> 01:06:11,420
+Altıncı çık.
+
+569
+01:06:13,420 --> 01:06:15,420
+Bu [öğrenci]'a bakınmadı mı?
+
+570
+01:06:17,420 --> 01:06:18,420
+Hayır hocam, bakma.
+
+571
+01:06:18,420 --> 01:06:19,420
+Allah Allah.
+
+572
+01:06:19,420 --> 01:06:21,420
+[öğrenci]'a bakınmadı mı?
+
+573
+01:06:22,739 --> 01:06:34,739
+Yok hocam. Bakıldı. Hayır, ben daha gelmedim. Daha gelmedim, iyi. Kimde sıra? Ben de hocam, merhaba. Ben de [öğrenci]. Numara? [kişisel bilgi].
+
+574
+01:06:42,612 --> 01:06:43,612
+Kaçta kaç?
+
+575
+01:06:43,612 --> 01:06:44,612
+Hepsini yaptım hocam.
+
+576
+01:06:45,612 --> 01:06:46,612
+Peki.
+
+577
+01:06:47,612 --> 01:06:50,612
+Sen bu interpolasyonu yaparken aralığını sabit mi aldın?
+
+578
+01:06:50,612 --> 01:06:52,612
+Evet, evet, değişken dönüşürüz lütfen iki de.
+
+579
+01:06:53,612 --> 01:06:56,612
+Niye orijinal formülü kullanmadınız?
+
+580
+01:06:57,811 --> 01:07:04,811
+Ya zaten sanki ben proje kodunda da hani sizin ABC'sinizde değişken dönüşümsüz yeseniz galiba ama ben tamamen diyorum.
+
+581
+01:07:04,811 --> 01:07:18,811
+Tamam, değişken dönüşümsüz de kullanmadan esas formülü basitleştirmemiş halini kullanarak çözebiliyorsun. Bunları defalarca söylemiştim derste. Peki o zaman inverse yapalım.
+
+582
+01:07:18,811 --> 01:07:20,811
+Tamamdır, okey.
+
+583
+01:07:22,811 --> 01:07:23,811
+Ekranını göreyim.
+
+584
+01:07:23,811 --> 01:07:25,067
+Tamamdır, veriyorum şimdi.
+
+585
+01:07:25,844 --> 01:07:27,659
+Önce kodu açalım.
+
+586
+01:07:33,652 --> 01:07:56,251
+Şu an gözüküyor mu hocam? Evet, gözüküyor. Şu elemental işlemleri yaptığın yeri göreyim. Elemental işlemleri, şurada rowları değiştiriyorum, şurada. Yani birim matrişi şurada ekliyorum, bu tarafta bölümler falan filan oluyor. Rowları değiştiriyorum derken ne demek istedi? Yani neydi, hani şey, şurada göstereyim, Swap Row.
+
+587
+01:07:58,387 --> 01:08:02,788
+Temp yapıyorum mı hocam? Şey yapıyorum, rofları birbirinden değiştiriyorum.
+
+588
+01:08:02,788 --> 01:08:04,788
+Neden?
+
+589
+01:08:04,788 --> 01:08:08,387
+Tersini alırken. Bazen sorunlar olabiliyor, denk gelmiyor falan.
+
+590
+01:08:08,387 --> 01:08:15,987
+Tamam, çalıştır o zaman. Dörde dörtlük bir madresim olsun. Inverse alıyoruz.
+
+591
+01:08:15,987 --> 01:08:18,987
+Şu an terminalde geldi mi?
+
+592
+01:08:18,987 --> 01:08:19,987
+Geldi.
+
+593
+01:08:19,987 --> 01:08:22,987
+Tamamdır. Birinci satın meclisi tutun.
+
+594
+01:08:24,627 --> 01:08:29,627
+Birinci satır, birinci sütun. Nasıl isteyeceksin benden? Satır satır mı?
+
+595
+01:08:29,627 --> 01:08:32,627
+Birinci sütun, ikinci sütun gelecek daha sonrasında.
+
+596
+01:08:32,627 --> 01:08:35,627
+Tamam, bir, üç, beş, dokuz.
+
+597
+01:08:37,627 --> 01:08:40,627
+Bir, üç, bir, yedi.
+
+598
+01:08:40,627 --> 01:08:44,627
+Dört, üç, dokuz, yedi.
+
+599
+01:08:44,627 --> 01:08:47,148
+Beş, iki, sıfır, dokuz.
+
+600
+01:08:50,163 --> 01:09:12,163
+Patladı hocam. Zaten bilmiyorum, aynen. Niye böyle oldu? Bazen böyle... Hayır, bazen böyle olmuyor. Şeyden böyle oldu. Yok. Aa, aynı kolona aynı şeyler geldiğinde sıfıra bölme oluyor diye oldu. Bir daha çalıştıralım. Ters girmiş olabilir miyim? Yani siz şey...
+
+601
+01:09:12,372 --> 01:09:27,372
+Satırı, yani yanına dönelim, 1-3-5-9 tamam, doğru girdik herhalde. Doğru, doğru, onda bir şey yok. Ben neden olduğunu biliyorum. Şimdi doğru çalışacak. 3'e 3'lük yapayım tamam. Evet. 1-2-3, 4-5-6, 7-2-9.
+
+602
+01:09:31,220 --> 01:09:40,720
+Evet. Şimdi bu neden doğal çalıştı? Demin neden olmadı? Demin aynı kolonda aynı değerler vardı. Sen işlem yaparken orada sıfıra bölme çıkıyor.
+
+603
+01:09:40,720 --> 01:09:47,720
+Hımm, bu yüzden şey tanıtsız oluyor. Evet. Peki, teşekkür ediyorum. Ben teşekkür ederim.
+
+604
+01:09:47,720 --> 01:09:53,720
+Sırada kim var? Ben varım hocam. [öğrenci].
+
+605
+01:09:53,939 --> 01:09:56,939
+[öğrenci]. [öğrenci].
+
+606
+01:09:56,939 --> 01:09:57,939
+On bir son.
+
+607
+01:09:57,939 --> 01:09:58,939
+Tamam.
+
+608
+01:10:05,524 --> 01:10:25,524
+Evet, kaçta kaç? Hepsini yaptım. Peki, sende bu matris çalışıyor mu İnverse? Aynı olduğunda? Daha deminki gibiyse çalışmayabilir bende de, şimdi deneyelim isterseniz. O kontrolü yapmadıysan?
+
+609
+01:10:25,652 --> 01:10:27,652
+Yok, o konferi ben de yapmadım.
+
+610
+01:10:27,652 --> 01:10:31,652
+Ama başka bir şekilde elementar şey, dönüşüm yapmış olabilirsin. Neyse, tamam, üçe üçe gir.
+
+611
+01:10:31,652 --> 01:10:32,652
+Tamam, açıyorum.
+
+612
+01:10:32,652 --> 01:10:38,652
+Ekranım geldi mi?
+
+613
+01:10:38,652 --> 01:10:43,652
+Yok. Kodu görüyorum şu an. Çalıştır.
+
+614
+01:10:43,652 --> 01:10:46,652
+Tamam. Üç diyoruz.
+
+615
+01:10:46,652 --> 01:10:50,652
+Ha, üç. Bir, iki, üç, dört, beş, altı.
+
+616
+01:10:52,851 --> 01:10:58,851
+7-2-9
+
+617
+01:10:58,851 --> 01:11:00,851
+0-92
+
+618
+01:11:00,851 --> 01:11:02,851
+1-17
+
+619
+01:11:02,851 --> 01:11:04,851
+0-75
+
+620
+01:11:04,851 --> 01:11:06,851
+0-83
+
+621
+01:11:06,851 --> 01:11:08,851
+Okey
+
+622
+01:11:08,851 --> 01:11:10,851
+Tamam mıdır?
+
+623
+01:11:10,851 --> 01:11:12,851
+İlken miydin?
+
+624
+01:11:12,851 --> 01:11:14,851
+Evet hocam. Tamam, tamamdır.
+
+625
+01:11:14,851 --> 01:11:16,851
+Teşekkür ederim, iyi günler.
+
+626
+01:11:21,235 --> 01:11:22,435
+Kimdi sıra?
+
+627
+01:11:25,908 --> 01:11:28,988
+Ben de hocam. [öğrenci].
+
+628
+01:11:30,908 --> 01:11:31,908
+Evet, buldum.
+
+629
+01:11:31,908 --> 01:11:33,740
+3 tanesini yaptım.
+
+630
+01:11:37,908 --> 01:11:40,468
+Kaç tane yaptın? Sesim geliyor mu?
+
+631
+01:11:40,468 --> 01:11:42,468
+Geliyor. Kaç tane yaptın?
+
+632
+01:11:42,468 --> 01:11:44,364
+Ben sizin sesinizi duymuyorum. Bir saniye.
+
+633
+01:11:49,524 --> 01:12:12,236
+Duyuyor musun? Aşağıma duyuyorum. Tamam. Kaç tane yaptın? Onda sekizini yaptım. Saydıl ve Gregory yok. Gregory Newton'la ne yok? Saydıl yok, Gareth Saydıl. Tamam, peki. Newton'u yapalım. Ekran açıyorum.
+
+634
+01:12:25,908 --> 01:12:27,908
+Kodu açık mı önce?
+
+635
+01:12:27,908 --> 01:12:29,908
+Erektriği görüyorum şu an.
+
+636
+01:12:29,908 --> 01:12:31,908
+Atamam. Şu an görüyor musunuz?
+
+637
+01:12:31,908 --> 01:12:42,908
+Görüyorum. Bir formülü hesapladığın yeri göreyim. Yani o iki kök, ardışık iki kök arasındaki farkı mı kontrol ettin durmak için?
+
+638
+01:12:45,908 --> 01:12:47,908
+Hatay'ı nerede hesaplıyorsun?
+
+639
+01:12:47,908 --> 01:12:49,908
+Hatay'ı burada hesaplıyorum.
+
+640
+01:12:50,996 --> 01:12:59,756
+İlk değerden çıkarıyormuşum. Hesaplaya bölüp bölüp yapıyorum. Tamam hesaplada fonksiyon aşağıda. Aynen.
+
+641
+01:12:59,756 --> 01:13:05,756
+Fonksiyon burada. Okey çalıştı şimdi. Süper. Süper. Süper. Buradan çalışıyorum.
+
+642
+01:13:05,756 --> 01:13:18,355
+Abi ben bu arada Ahmet Hoca'ya benim öğrencim yokmuş diye mesaj atmam lazım. Bir dakika unutmadım onu atayım. Bekleyelim şimdi.
+
+643
+01:13:18,612 --> 01:13:19,467
+Tamam.
+
+644
+01:13:42,260 --> 01:14:04,579
+Ne istiyorsun şimdi benden? Derece istiyorum. Denklemin derecesini istiyorsun. Üç. Elemanın kast sayısı. Bir. Bir. Eksi dokuz. Eksi dokuz. Sonra ne istiyorsun? Hata değeni.
+
+645
+01:14:05,492 --> 01:14:22,292
+Hata değeri derken 0.01 hata değeri o değil mi? Evet evet. Tamam. Sonra? Başlangıç atalım. Aralık istiyorsun sen de. Peki, eksi beş ile sıfır.
+
+646
+01:14:27,507 --> 01:14:29,507
+Eksi üç çıktı. Okey, tamam.
+
+647
+01:14:34,163 --> 01:14:53,163
+Teşekkürler. Ben tepkik ürün. Sırada kim var? Ben [öğrenci]. [öğrenci]. [öğrenci]. Buldum. Kaçta kaç? Hepsini yaptım. Aa ben yine yüz görmeye bak, yüz görmeyi unuttum. Bir saksın yüzünü göreyim.
+
+648
+01:14:56,532 --> 01:14:59,852
+Onlar ne, araba mı? Sen neredesin?
+
+649
+01:14:59,852 --> 01:15:02,692
+Tren galiba, perde hocam.
+
+650
+01:15:02,692 --> 01:15:08,852
+Allah seni ne yapmasın ha! Galeride falan zannettim seni. Perde çıktı.
+
+651
+01:15:08,852 --> 01:15:15,332
+Tamam, dur bakayım, onda on yaptın. Sen de Gregory Newton nasıl?
+
+652
+01:15:15,332 --> 01:15:17,332
+Arkınlarını...
+
+653
+01:15:17,876 --> 01:15:25,675
+Aynen, artımların sabit olması gerekiyor. Sabit olması gerekiyor. Allah sizi ne yapmasın. Peki, gir.
+
+654
+01:15:25,675 --> 01:15:28,332
+Bir saniye.
+
+655
+01:15:31,604 --> 01:15:38,324
+Aslında sabit olmaması için de ne yapılacaktı biliyor musunuz? O hesapladığın formülü açsana koddan.
+
+656
+01:15:38,324 --> 01:15:43,844
+Var ya şuradaki x.
+
+657
+01:15:43,844 --> 01:15:45,844
+Evet.
+
+658
+01:15:45,844 --> 01:15:53,604
+Oradan x eksi sıfırı çıkaracaksın çünkü sıfırdan başlamıyor. Bir de bölü h olacak oralara, o kadar.
+
+659
+01:15:53,604 --> 01:15:55,204
+Sadece orası.
+
+660
+01:15:55,204 --> 01:15:58,164
+Evet, yedi tane değer gireceksin.
+
+661
+01:16:00,500 --> 01:16:26,500
+Başkan güç değeri sıfır. Sonra ne bu? Birer bir. Girilecek x değerin sayısını girin ne demek? Kaç tane x değeri var? Yedi. Eksi dört, eksi iki, on dört.
+
+662
+01:16:27,060 --> 01:16:35,900
+62, 160, 326, 578.
+
+663
+01:16:38,900 --> 01:16:40,620
+Aç, de oryosu.
+
+664
+01:16:42,220 --> 01:16:45,100
+3,5.
+
+665
+01:16:47,500 --> 01:16:49,620
+Keyif benim değil mi? 3,5.
+
+666
+01:16:50,579 --> 01:16:53,459
+Sen onu integer mi aldın? Üçü verdi.
+
+667
+01:16:53,459 --> 01:16:58,100
+Evet, integer almışım herhalde. Orayı da yuvarlamışım herhalde. O yüzden direkt üçü buldu.
+
+668
+01:16:58,100 --> 01:17:03,139
+Evet. O yuvarladığın yeri görebilir miyiz? X değerini ne olarak tanımlamışsın?
+
+669
+01:17:04,340 --> 01:17:27,100
+Integer, değil mi? Aynen, o yüzden oldu. Okey, tamam. Zaten üç verseydim 62 çıkacaktı, okey. Ama mesela bunlar güzel oldu, ben illa Integer bir aralık vermek istemeyebilirim yani, arada bir değer verebilirim. Evet. Peki. Tamam [öğrenci], teşekkürler.
+
+670
+01:17:33,043 --> 01:17:34,243
+Sesim geliyor mu?
+
+671
+01:17:34,243 --> 01:17:36,644
+Geliyor. [öğrenci], altın.
+
+672
+01:17:39,043 --> 01:17:40,644
+Numara söyleyecek mi?
+
+673
+01:17:40,644 --> 01:17:42,243
+[kişisel bilgi].
+
+674
+01:17:49,011 --> 01:17:50,011
+Kaçtı kaç?
+
+675
+01:17:53,684 --> 01:18:20,684
+Kaçta kaç yaptın? Yaptım hocam. Hepsini yaptın. Öyle mi? Evet. Bak işaretleri işe yaradı. Okey, okey, okey. Peki sen bu Gregory Newton'da artımları sabit olarak mı aldın? Hayır hocam normal, orijinal formüle göre. Tamam, o zaman fark yapalım. Onu çalıştır.
+
+676
+01:18:23,507 --> 01:18:30,907
+X, Y'nin adetini giriniz, 5. Sırayla X değerliğini gir. 1891.
+
+677
+01:18:33,307 --> 01:18:50,108
+Yok diyor. 1891. Sonra ne istiyorsun? Yine X değerler hocam, sırayla X değerler. 1901. 1911.
+
+678
+01:18:50,996 --> 01:19:17,996
+1921, 1931. Sonra f değerleri, 46, 66, 86, 81, 93, 101. H değeri. H değeri sabit değil ki.
+
+679
+01:19:19,828 --> 01:19:22,828
+Hocam bölü H var ne formülünde? Onu soruyor.
+
+680
+01:19:22,828 --> 01:19:30,828
+E tamam, ben bakarsan X'leri karışık H değerlerinde verdim. Sen öyle yaptım dedin.
+
+681
+01:19:30,828 --> 01:19:37,828
+Ha şey hocam, X1-X0 bölü H formülüne göre yaptım.
+
+682
+01:19:37,828 --> 01:19:39,828
+Bir daha söyle.
+
+683
+01:19:40,627 --> 01:19:45,247
+Hocam şeyde orijinal formülde x1-x0 bölü haş formülü var ya.
+
+684
+01:19:45,247 --> 01:20:01,627
+Tamam, haş formülü var ama haş burada sabit değil. Orada sen her birini değişik koyman gerekir. Yani şu iki x'lerin arasındaki farka bakacaksın, onun olduğu yere onu yazacaksın. O zaman bir daha çalıştır.
+
+685
+01:20:09,300 --> 01:20:24,300
+Ne soruyordun? x değerliğin adetine giriniz. 7 tane 0'dan, ne istiyorsun sonra? x değer 0, 1, 2, 3, 4, 5, 6.
+
+686
+01:20:38,515 --> 01:20:40,515
+578
+
+687
+01:20:43,515 --> 01:20:46,515
+H değeri 1
+
+688
+01:20:47,515 --> 01:20:48,515
+X
+
+689
+01:20:48,515 --> 01:20:49,515
+7
+
+690
+01:20:51,515 --> 01:20:52,515
+X0
+
+691
+01:20:55,515 --> 01:20:58,515
+Ya sen ne istiyorsun benden artık ama?
+
+692
+01:20:59,515 --> 01:21:04,515
+Hocam sıfıra girebilirim. Normalde de H1, X0 kabul ediliyor ya ben onları şartlarım işte.
+
+693
+01:21:05,908 --> 01:21:13,908
+O zaten 0 verilmiş. 578'den büyük bir değer çıkması lazım. 934 çıktı.
+
+694
+01:21:13,908 --> 01:21:22,908
+Aa, şimdi o kadar sayıyı hiç yapamam. Doğrudur. 578'den büyük çıktı. Tamam.
+
+695
+01:21:22,908 --> 01:21:25,908
+Aa, kimdin, unuttum.
+
+696
+01:21:25,908 --> 01:21:27,908
+Saniki [öğrenci]'nın.
+
+697
+01:21:31,667 --> 01:21:32,619
+Ok.
+
+698
+01:21:36,948 --> 01:21:38,948
+Peki, teşekkürler.
+
+699
+01:21:40,948 --> 01:21:42,948
+Siz kim var?
+
+700
+01:21:42,948 --> 01:21:44,948
+Ben varım hocam.
+
+701
+01:21:44,948 --> 01:21:46,948
+[öğrenci].
+
+702
+01:21:46,948 --> 01:21:49,948
+[kişisel bilgi].
+
+703
+01:21:49,948 --> 01:21:52,948
+Evet, kaç tanesini yaptın?
+
+704
+01:21:52,948 --> 01:21:55,948
+Hepsini yaptım hocam, hepsi tek bir kodda.
+
+705
+01:21:55,948 --> 01:21:57,948
+Okey.
+
+706
+01:21:57,948 --> 01:22:01,948
+O zaman bu enterpalasyonu sen nasıl yaptın?
+
+707
+01:22:01,948 --> 01:22:03,596
+Hangisini hocam?
+
+708
+01:22:03,859 --> 01:22:05,859
+Gregory Newton'u.
+
+709
+01:22:05,859 --> 01:22:07,859
+Ben de değişken dönüşüksüz yaptım hocam yani.
+
+710
+01:22:07,859 --> 01:22:08,859
+Neri yaptın?
+
+711
+01:22:08,859 --> 01:22:10,859
+Değişken dönüşüksüz yaptım ben de.
+
+712
+01:22:10,859 --> 01:22:18,859
+Tamam peki. O zaman regula falsi olsun.
+
+713
+01:22:18,859 --> 01:22:19,859
+Peki.
+
+714
+01:22:25,363 --> 01:22:27,363
+Gemin derecesini gireceğim hocam.
+
+715
+01:22:27,363 --> 01:22:28,363
+Görmüyorum.
+
+716
+01:22:29,363 --> 01:22:30,363
+Gelmedi mi [öğrenci]?
+
+717
+01:22:30,363 --> 01:22:32,363
+Senin yüzün de gelmedi.
+
+718
+01:22:33,363 --> 01:22:34,363
+Yüzümü açmam mı gerekiyor?
+
+719
+01:22:34,363 --> 01:22:35,363
+Evet.
+
+720
+01:22:36,363 --> 01:22:38,363
+Notunuzda yüz görümlülüğü.
+
+721
+01:22:41,876 --> 01:22:48,596
+Ne yani yüzsüz müsün? Aç oğlum, aç. Tanıyım sizi. Görüyorum ama tanımıyorum.
+
+722
+01:22:54,260 --> 01:22:59,260
+Abi yüzün görünecek, başka yeni gösterme. Müsait değil sen.
+
+723
+01:23:02,612 --> 01:23:30,092
+Nereye gidiyor bu ya? [öğrenci]? Zoom'u açamıyorum. Ay vazgeçtim. Regula'yı aç. Hesapladığın yere bakayım. Ekranın geldi mi şu an? Gözükmüyor mu? Yok gözükmüyorsun. Kodunu görüyorum ama. Şey görüyor musunuz? Çıktığı yerine? Denklem düzenizde şu an. Görmüyorum.
+
+724
+01:23:42,836 --> 01:23:53,836
+Zoom'a giremiyorum ki. Bir daha söyle. Zoom'a giremiyorum ki. Sen Zoom'a giremesen... Bir saniye tamam hocam, gördüm, gördüm.
+
+725
+01:23:58,100 --> 01:24:00,100
+Okey, tamam. Yüzümü açabiliyorum şu anda hocam, geldim.
+
+726
+01:24:00,100 --> 01:24:22,100
+Geldi, biz negula yapıyoruz. Denklemin derecesi iki. Sıfırdan başlayacağız. Eksi beş, eksi dört, bir. Sonra ikiye basmanı verdi küçük bir değer.
+
+727
+01:24:23,891 --> 01:24:31,891
+Kök aralığı için A diyene girelim. Şimdi bir saniye, bir dakika dur. İki ile altı.
+
+728
+01:24:38,036 --> 01:24:39,335
+Kök 5 çıkıyorum.
+
+729
+01:24:39,335 --> 01:24:42,536
+Kök 5 çıkıyor. Evet, köklerden biri 5.
+
+730
+01:24:51,347 --> 01:25:18,627
+Aslanlıydın değil mi? Aynen. Tamam. İyi günler hocam. Sana da. Hah! Yüzünü de gördüm çok şükür. Açtın zaten hocam az önce. Hayır! Açılmadışlar mı? Açmıştım hocam. Yok olu, paylaşırken açmıştım zaten ya. O zaman ekranını gösterirken seni göstermedi. Olabilir, bilmiyorum. Ondan çıkınca seni gösterdi. Peki. Bir dakika Ahmet Hoca arıyor. Teşekkürler sana. Efendim Ahmet?
+
+731
+01:26:04,724 --> 01:26:06,724
+Evet, kimdeydi sıra?
+
+732
+01:26:06,724 --> 01:26:08,724
+Ben mi hocam? [öğrenci].
+
+733
+01:26:08,724 --> 01:26:10,724
+006.
+
+734
+01:26:14,724 --> 01:26:16,724
+Evet, kaçta kaç?
+
+735
+01:26:16,724 --> 01:26:18,724
+10'dan hocam.
+
+736
+01:26:20,724 --> 01:26:24,724
+Evet, [öğrenci] da sensin. Neyiz bak seni görsem tanıma.
+
+737
+01:26:25,724 --> 01:26:27,724
+Çok derse girmiyorum hocam, ondan da mutlaka.
+
+738
+01:26:27,724 --> 01:26:29,724
+Çok derse girmiyorsun hocam.
+
+739
+01:26:30,612 --> 01:26:57,612
+Hepsi aynı kodda. Hepsi aynı kodda, peki. Hangisi isterseniz? Hmm, sen bu inverse problem yaşıyor ya arkadaşlar, sen de yaşıyor musun onu? Sıfıra bölünürse olabilir hocam. Yani determinat sıfırsa olabilir. Peki, tamam. Türev yapalım. Türev. Üçünü de bana gösterir mi? Pardon, önce kodu göstereyim mi?
+
+740
+01:26:57,747 --> 01:27:19,211
+Üçünü de gösterecek mi, seçecek miyiz? Üçünü de hangisi hocam? Yani merkez ileri geri olarak mı? Evet. Üçünden birini seçeceğiz. Şeyde ekran, göstereyim hocam. İyi peki, tamam. Yedi. Önce polinomu gireceğiz, sonra ileri mi, geri mi, merkez mi seçeceğiz? Tamam. Polinoma eleman sayısı lazım hocam.
+
+741
+01:27:19,283 --> 01:27:26,683
+Polym eleman sayısı derken kaç iki dereceden mi? Hayır, hayır. Yani kaç tane eleman var mesela?
+
+742
+01:27:26,683 --> 01:27:35,883
+İt x kare artı, içi, iç eleman olarak. Ama mesela bazı üstlerin kas sayısı yok. Onları nasıl ayarlayacağım?
+
+743
+01:27:35,883 --> 01:27:43,683
+Hocam, üstleri integer olarak aldım da. Hayır, onu demiyorum. Ben sana diyeceğim ki bir kas sayı.
+
+744
+01:27:43,891 --> 01:27:50,132
+Sen bunun kaçıncı üsse ait olduğunu nereden bileceksin? Bek, sadece iki, beş var.
+
+745
+01:27:50,132 --> 01:27:53,891
+Birinci yamanın karsesine gidiyoruz, sonra üstüne gidiyoruz, yani kuvvetime.
+
+746
+01:27:53,891 --> 01:27:56,891
+Haa, anladım. Dört.
+
+747
+01:27:56,891 --> 01:27:57,891
+Tamam.
+
+748
+01:28:01,747 --> 01:28:28,947
+Birinci elemanın kas sayısı. Bir, üç, eksi bir, iki, eksi bir, bir, eksi bir, sıfır. Tamamdır hocam. Türevini hesaplamak istediniz. Bak da bir olsun.
+
+749
+01:28:30,547 --> 01:28:32,547
+Hata değeri, sıkmak istedik.
+
+750
+01:28:32,547 --> 01:28:34,547
+Gider oldu kendine bir şey.
+
+751
+01:28:38,547 --> 01:28:40,547
+Nerede sonuç?
+
+752
+01:28:40,547 --> 01:28:42,547
+Sonuç ne? Bir.
+
+753
+01:28:42,547 --> 01:28:48,547
+Şey, şu, şey almadığı bir hata vardı da galiba oraya şey koymadım ya ben.
+
+754
+01:28:48,547 --> 01:28:51,547
+Şu, ben bu hatayı kendi alıyorum.
+
+755
+01:28:54,547 --> 01:28:55,547
+Bir dakika, koyacağım.
+
+756
+01:28:55,764 --> 01:28:57,764
+Değerin kaç çıktı? Bana bir söyler misin?
+
+757
+01:28:57,764 --> 01:29:08,587
+Hayır, hocam değer almadı. Şurada seçme ekranında hata verdi. Bize bir değer almam şeyi bitirdi.
+
+758
+01:29:08,979 --> 01:29:19,479
+Yani hangi türevi alacağını alamadın. Evet, burada hata verip işlemi sonlandırdı. Nedir ki oradaki hata? Ne olabilir ki? Choice'e gir diyorsun. Evet.
+
+759
+01:29:19,479 --> 01:29:34,479
+Bir, iki, üçden birini verdin. Onlardan birinin içine girdi diyelim. Şu almadan direkt çıktı. Anlamadım hocam. Yalnız mesela Choice 1 olsun, CoinParty Epsilon var.
+
+760
+01:29:35,220 --> 01:29:41,720
+Langued polynomial function value ne? Function value'u nasıl yazdın ona bir bakalım.
+
+761
+01:29:41,720 --> 01:29:54,420
+Tabii ki hocam. Bulursam göstereceğim. Bir şey var, polinom olarak bir strakli yapısı var.
+
+762
+01:29:54,420 --> 01:30:02,420
+Ben şöyle göstereyim. Kofaktör ve derece alıyor. Yani denkleminden şey bu. Bunu alarak
+
+763
+01:30:02,963 --> 01:30:07,363
+cildimiz fonksiyonun o x değinliçi, dn'i buluyor.
+
+764
+01:30:07,363 --> 01:30:15,764
+Tamam, merkezi yapacaksa, sonra bir bölü ikisini çıkaracak, bir bölü ikisini ekleyecek.
+
+765
+01:30:15,764 --> 01:30:17,163
+Evet, göster.
+
+766
+01:30:17,163 --> 01:30:20,363
+Ama orada ifi giremedi mi, fonksiyon mu hatalı?
+
+767
+01:30:20,363 --> 01:30:24,563
+Şurada hata verdi hocam, ben de alalım. Bir daha deneyeyim mi hemen?
+
+768
+01:30:24,563 --> 01:30:30,363
+Ya hayır, sen şu fonksiyonun içine girdiyse bir hello falan yazdırsana, bakalım fonksiyonun içine giriyor mu?
+
+769
+01:30:31,220 --> 01:30:47,052
+Buraya mı yazılayım? Hayır, hayır. Onlardan birini seçmiş ve sanki function value'ya gitmiş. O function value'nun içinde bir print ek koy. Tamam, tamam. Bence oraya girmedi ama. Olsun.
+
+770
+01:30:50,292 --> 01:30:57,452
+Yani o choice'lere girmemesinin sebebi ne olabilir ki? Alt tarafı bir tane şey alıyor. Tamam, bir daha çalıştıralım.
+
+771
+01:30:59,131 --> 01:31:02,332
+Bu gün onun eleman sayısına giriniz. Dört.
+
+772
+01:31:02,332 --> 01:31:05,332
+Hocam, şu an denemek için bir şey yapıyorum.
+
+773
+01:31:09,332 --> 01:31:12,332
+Pardon hocam, yalışsa bastım. Özür dilerim.
+
+774
+01:31:14,332 --> 01:31:17,228
+Denemek için yapıyorum şu an. İçiye.
+
+775
+01:31:17,395 --> 01:31:19,395
+0.1 olsun.
+
+776
+01:31:19,395 --> 01:31:21,395
+2.3 derece 0 demiş.
+
+777
+01:31:21,395 --> 01:31:25,395
+Herhalde çoğısı otomatik olarak seçiyor mu diyeyim?
+
+778
+01:31:25,395 --> 01:31:26,395
+Ya...
+
+779
+01:31:26,395 --> 01:31:29,395
+Ha Hello'in yazmadı.
+
+780
+01:31:29,395 --> 01:31:31,395
+Hayır yazmadı, farkındayım.
+
+781
+01:31:31,395 --> 01:31:34,395
+Buraya hiç gitmiyor.
+
+782
+01:31:34,395 --> 01:31:35,395
+Ya şey...
+
+783
+01:31:35,395 --> 01:31:37,395
+Göstereyim.
+
+784
+01:31:37,395 --> 01:31:39,395
+Şurada...
+
+785
+01:31:39,395 --> 01:31:42,395
+Şuraya girmedi hiç.
+
+786
+01:31:42,931 --> 01:32:00,907
+Bu soruyu sordu ama ScanF almadı. İşte yani sebebine bakıyorum. Burada ne var ki yani ScanF'i aldı, alt tarafı... Şurası ScanF almadı işte hocam yani ScanF sormadı. Niye almaz ki? Bilmiyorum. Yani kodudan yazdım ve çalıştırmıştım da.
+
+787
+01:32:05,427 --> 01:32:09,427
+Stenepsoy mandrik atladı hocam. Integer.
+
+788
+01:32:11,427 --> 01:32:12,427
+Olulun.
+
+789
+01:32:14,427 --> 01:32:18,427
+Yanlış mı yazdın diye bakıyorum, o da doğru. Zaten hata verildi.
+
+790
+01:32:19,427 --> 01:32:21,427
+O zaman başka soruya geçelim.
+
+791
+01:32:22,427 --> 01:32:25,427
+Biz neye bakıyorduk? Türeve bakıyorduk.
+
+792
+01:32:26,427 --> 01:32:28,427
+Üniversite bakalım.
+
+793
+01:32:28,427 --> 01:32:30,091
+Tabii, kodu göstereyim önce.
+
+794
+01:32:30,579 --> 01:32:53,420
+İnversiyonu yazdım belli artık. Tamam. İnversiyonu hangisi? 4. En değeri hocam. 3. Pardon. Birinci satır, birin üstüne gir. 1, 2, 3, 4, 5, 6, 7, 2, 9.
+
+795
+01:32:57,203 --> 01:33:12,603
+092, 017, 075, bir de şuradan bakalım, 083. Tamam. Ama ben o türevi çalışmıyor kabul ediyorum. Kusura bakma.
+
+796
+01:33:12,603 --> 01:33:14,923
+Aptın hocam. Bilmiyorum neden olduğunu şu an.
+
+797
+01:33:14,923 --> 01:33:15,923
+Hadi.
+
+798
+01:33:15,923 --> 01:33:17,923
+Tamamdır hocam.
+
+799
+01:33:17,923 --> 01:33:19,923
+Sırada kim var?
+
+800
+01:33:20,724 --> 01:33:22,724
+Ben de hocam. Sesim geliyor mu?
+
+801
+01:33:22,724 --> 01:33:24,724
+Geliyor. [öğrenci].
+
+802
+01:33:24,724 --> 01:33:25,579
+Evet.
+
+803
+01:33:32,275 --> 01:33:34,275
+[kişisel bilgi]
+
+804
+01:33:41,524 --> 01:33:43,524
+11.00 nedir ya?
+
+805
+01:33:44,764 --> 01:33:45,524
+Numaram hocam sana...
+
+806
+01:33:45,524 --> 01:33:47,024
+Sıfır olmaz bir numara.
+
+807
+01:33:47,323 --> 01:33:48,923
+Hocam ben yüzünce girdim de.
+
+808
+01:33:50,524 --> 01:33:52,123
+O yüzden 11.00 oluyor sana.
+
+809
+01:33:58,836 --> 01:34:02,235
+O zaman yüz diyeceksin. [öğrenci].
+
+810
+01:34:02,235 --> 01:34:03,235
+Evet.
+
+811
+01:34:03,235 --> 01:34:09,635
+[kişisel bilgi].
+
+812
+01:34:09,635 --> 01:34:14,836
+[kişisel bilgi].
+
+813
+01:34:14,836 --> 01:34:16,836
+Ne yapmış?
+
+814
+01:34:16,836 --> 01:34:22,836
+[kişisel bilgi].
+
+815
+01:34:22,836 --> 01:34:25,836
+Gerçekten bu şey...
+
+816
+01:34:26,292 --> 01:34:28,692
+Neyse, kaçta kaçsın?
+
+817
+01:34:28,692 --> 01:34:30,292
+Hepsini yaptım hocam.
+
+818
+01:34:30,292 --> 01:34:36,292
+Biz öyle hepsini yaptım diyenleri gördük. En korktuğun hangisi?
+
+819
+01:34:36,292 --> 01:34:39,292
+Bilmiyorum hocam öyle hiçbir şey yok yani.
+
+820
+01:34:39,292 --> 01:34:44,292
+Gregory Newton'u artımlı mı artımsız mı çözdün?
+
+821
+01:34:44,292 --> 01:34:46,292
+Hocam sabit.
+
+822
+01:34:46,292 --> 01:34:49,292
+Sabit, peki gidelim Gregory'ye.
+
+823
+01:34:49,939 --> 01:34:54,260
+Yok, vazgeçtim. Gauss eliminasyonu yap, özür dilerim.
+
+824
+01:34:58,868 --> 01:35:26,148
+Gözüküyor değil mi hocam? Gözüküyor, kodundasın. Çalıştı. Matrisin boyutu ikiye iki. Birinci denklemin kas sayısı iki, beş, ah biraz esinti geldi, on altı, üç, bir, on bir. Üç, ha, bir, on bir. Üç ve iki çıktı, doğru.
+
+825
+01:35:36,148 --> 01:35:38,148
+Tamam, teşekkürler.
+
+826
+01:35:38,148 --> 01:35:40,148
+Tamam hocam.
+
+827
+01:35:40,148 --> 01:35:42,148
+Teşekkürler hocam, iyi günler.
+
+828
+01:35:43,148 --> 01:35:52,148
+Dört kişi mi kaldık, beş kişi? Ara vermeyeceğim çünkü bir jüri belirleyeceğim, telefon konuşması yapmam gerekiyor. Bitirelim.
+
+829
+01:35:52,148 --> 01:36:02,148
+Ya da çocuklar, bana beş dakika izin verir misiniz? Bulamazsam fen bilimlerine gönderemeyeceğim. Bir beş dakika bir jüriyi arıyorum.
+
+830
+01:38:22,100 --> 01:38:33,779
+Teşekkür ederim. Şimdi jüriye, hocaya sormadan yazmamam lazım. Etik olmaz. Hocadan izin aldım, yazabilirsin dedi. [öğrenci] girdi. Çıksın o lütfen, ona baktım.
+
+831
+01:38:33,779 --> 01:38:42,140
+Beli kırık, çıksın. Hocam, hataya fark ettim de, 0 nokta olarak şey yapıyormuş, 0 virgül yerine, float alırken hata payını.
+
+832
+01:38:42,140 --> 01:38:48,140
+Aa, mücadır halkı siedi. Hangi soru da bu başımıza gelmişti hata? Türev, türev.
+
+833
+01:38:49,395 --> 01:38:55,395
+Hee tamam. Hemen gösterebilir miyim hocam? Bir dakika, beli kırıklı seni buldum önce. 006.
+
+834
+01:38:59,444 --> 01:39:01,444
+Hata analizasyon, da, so first the third ultra.
+
+835
+01:39:06,931 --> 01:39:13,931
+Deli olacağım. Tamam, göster. Benden şunu bir şey isteyeceksin.
+
+836
+01:39:13,931 --> 01:39:14,931
+Evet.
+
+837
+01:39:16,931 --> 01:39:18,931
+Türev, türev, türev.
+
+838
+01:39:22,644 --> 01:39:25,963
+Tamam, niye soruyorsun şimdi? Elman sayısını soruyorsun.
+
+839
+01:39:25,963 --> 01:39:26,963
+Evet.
+
+840
+01:39:26,963 --> 01:39:31,524
+Dört, birinci elemanın gaz sayısı bir,
+
+841
+01:39:33,524 --> 01:39:38,404
+eksi bir, ha derecesi pardon, derecesi üç,
+
+842
+01:39:39,283 --> 01:39:45,923
+eksi bir, derecesi iki, eksi bir, derecesi bir,
+
+843
+01:39:46,564 --> 01:39:48,963
+eksi bir, derecesi sıfır.
+
+844
+01:39:49,684 --> 01:39:50,484
+Tamam hocam.
+
+845
+01:39:50,844 --> 01:39:51,444
+Nokta.
+
+846
+01:39:51,984 --> 01:39:53,304
+Bir.
+
+847
+01:39:54,064 --> 01:39:57,024
+Epsiyon değeri 0,001.
+
+848
+01:39:58,264 --> 01:39:59,564
+Ama hocam şimdi oldu.
+
+849
+01:40:00,484 --> 01:40:00,824
+Bir.
+
+850
+01:40:00,984 --> 01:40:01,344
+Doğru.
+
+851
+01:40:02,104 --> 01:40:02,344
+Okey.
+
+852
+01:40:02,804 --> 01:40:04,444
+Sen onda on mu yapmıştın soruyu?
+
+853
+01:40:04,444 --> 01:40:05,163
+Evet hocam.
+
+854
+01:40:05,284 --> 01:40:05,503
+Evet.
+
+855
+01:40:05,503 --> 01:40:08,003
+Tamam hocam sağ olun.
+
+856
+01:40:12,564 --> 01:40:15,204
+Ben kimi arıyordum? [kişisel bilgi].
+
+857
+01:40:19,475 --> 01:40:23,075
+[kişisel bilgi]. Zaten bulmuştum.
+
+858
+01:40:28,787 --> 01:40:44,787
+Ya [öğrenci]'in aydın. [kişisel bilgi]. Çıldıracağım. Burada olması lazım. Bir tane [kişisel bilgi] var. O da [öğrenci].
+
+859
+01:40:44,787 --> 01:40:47,787
+O arkadaştı zaten hocam. Zaten o arkadaş gösterdi hocam.
+
+860
+01:40:49,787 --> 01:40:56,587
+Ya tamam, ben beli kırıktan önce birine başlamıştım ya. O kimdi?
+
+861
+01:41:01,619 --> 01:41:02,619
+Arkadaşlar...
+
+862
+01:41:02,619 --> 01:41:03,619
+[öğrenci] miydi?
+
+863
+01:41:03,619 --> 01:41:07,619
+Bilmiyorum işte, o kimdi? Araya beli kırık girdi.
+
+864
+01:41:07,619 --> 01:41:09,619
+Araya girmedi aslında.
+
+865
+01:41:09,619 --> 01:41:11,619
+Konuşma falan yapacak.
+
+866
+01:41:11,619 --> 01:41:14,619
+İyi tamam, hadi kim bilse bana söylesin. Kimdisi ben?
+
+867
+01:41:14,619 --> 01:41:15,619
+Ben başlayamıyorum.
+
+868
+01:41:15,619 --> 01:41:17,619
+[öğrenci], tamam. Numara?
+
+869
+01:41:17,619 --> 01:41:20,619
+[kişisel bilgi].
+
+870
+01:41:20,619 --> 01:41:21,619
+[öğrenci], kaçta kaç?
+
+871
+01:41:21,619 --> 01:41:23,619
+Hepsini yaptım hocam.
+
+872
+01:41:24,619 --> 01:41:25,619
+Peki.
+
+873
+01:41:28,180 --> 01:41:29,740
+Yüzüm görünüyormuş şu an.
+
+874
+01:41:29,840 --> 01:41:30,420
+Evet.
+
+875
+01:41:30,659 --> 01:41:31,079
+Tamam.
+
+876
+01:41:31,240 --> 01:41:32,119
+Sen de tanıdım.
+
+877
+01:41:33,039 --> 01:41:33,500
+Tanıdım.
+
+878
+01:41:35,500 --> 01:41:37,280
+Ama belki de karıştırdım biriydi.
+
+879
+01:41:37,800 --> 01:41:39,600
+Yok hocam tanımsınızdır ya.
+
+880
+01:41:41,180 --> 01:41:42,159
+Paylaşıyorum hocam.
+
+881
+01:41:42,520 --> 01:41:43,380
+Evet lütfen.
+
+882
+01:41:44,860 --> 01:41:46,659
+Eliminasyonu yapabilir miyiz?
+
+883
+01:41:48,619 --> 01:41:49,260
+Tamam hocam.
+
+884
+01:41:49,820 --> 01:41:50,539
+Gözüküyor mu hocam?
+
+885
+01:41:51,240 --> 01:41:51,840
+Gözüküyor.
+
+886
+01:41:59,507 --> 01:42:01,507
+Hocam, şurada maddesi güncelledim.
+
+887
+01:42:01,507 --> 01:42:02,507
+Evet.
+
+888
+01:42:03,507 --> 01:42:08,507
+Burada da, şey aldım işte, diğer tabloya aldım. Çalıştırayım mı hocam?
+
+889
+01:42:08,507 --> 01:42:10,507
+Tamam, çalıştır.
+
+890
+01:42:11,507 --> 01:42:13,507
+Hocam, burada birine örnek olsun diye girdi.
+
+891
+01:42:13,507 --> 01:42:15,507
+Ben etkili bilemiyorum yalnız.
+
+892
+01:42:15,507 --> 01:42:17,507
+Hocam, nasıl yapacağım onu?
+
+893
+01:42:17,507 --> 01:42:19,507
+Vallahi...
+
+894
+01:42:19,859 --> 01:42:26,859
+Ben şöyle yapıyordum, o çalıştırılır ekran varken paylaşımı kes, yeniden paylaşım yap.
+
+895
+01:42:26,859 --> 01:42:28,859
+Tamam hocam, öyle yapıyorum.
+
+896
+01:42:33,011 --> 01:42:59,011
+Şimdi gözüküyor mu hocam? Evet gözüküyor. Madresin boyutunu gireyim. Üç. Evet hocam. Birinci madresin satıda bir. Evet. Birinci sütun ikinci satır hocam. Birinci ama birinci sütun ikinci, haa sen de ters alıyorsun. Beş. Evet. Sıfır. İkinci sütun birinci satır.
+
+897
+01:42:59,283 --> 01:43:22,403
+Birinci sütun birinci satır. Bir, üç, bir. Evet. Evet. İki, iki. Bir daha söyler misiniz hocam? Bir. Evet. İki, eksi bir. Eksi bir. Şimdi hocam, yirmi beş. Sonuçlar. Evet. Altı. Sıfır altı. Evet.
+
+898
+01:43:26,868 --> 01:43:28,868
+Onlar gözüm görsün.
+
+899
+01:43:28,868 --> 01:43:31,268
+Eksi on dokuz, eksi on dokuz, eksi on dokuz, eksi on dokuz, eksi on dokuz.
+
+900
+01:43:31,268 --> 01:43:38,068
+Şimdi bende öyle çıkmadı. Biz matrise yanlış girebilir miyiz? Bir dur bakayım. Sifardan bakacağım matrise.
+
+901
+01:43:38,068 --> 01:43:41,028
+Bir, evet ben yanlış vermişim.
+
+902
+01:43:41,028 --> 01:43:43,268
+Tamam hocam, bir daha çalıştırıyorum o zaman.
+
+903
+01:43:43,268 --> 01:43:47,428
+Yani sen benden sütun sütunla okumamı istiyorsun.
+
+904
+01:43:47,428 --> 01:43:50,708
+Evet hocam, önce sütunları istiyorum.
+
+905
+01:43:50,708 --> 01:43:52,708
+Ama ben sütunları girdim.
+
+906
+01:43:53,844 --> 01:43:55,844
+Hocam, bir daha isteyeyim isterseniz.
+
+907
+01:43:55,844 --> 01:43:57,612
+İste bakayım.
+
+908
+01:44:04,372 --> 01:44:31,372
+Üç. Üç dedim. Evet. Birinci sütunun birinci sütudaki değeri. Bir. Evet. Birinci sütunun iki. Doğru söylemişim aslında. Beş. Evet. Bir. Sıfır, sıfır, sıfır. Özür dilerim. Sıfır. Tamam. Sonra bir, üç, bir. Bir, iki. Evet. Eksi bir.
+
+909
+01:44:33,235 --> 01:44:35,235
+Şimdi hocam, Bm atlasını bilin.
+
+910
+01:44:35,235 --> 01:44:36,235
+25-0
+
+911
+01:44:37,235 --> 01:44:38,235
+6
+
+912
+01:44:42,228 --> 01:44:44,228
+Bir de aynısı çıktı ama.
+
+913
+01:44:44,228 --> 01:44:47,228
+Nasıl? Tamam deneyeceğim şimdi, şununla deneyeceğim.
+
+914
+01:44:47,228 --> 01:45:00,228
+X yerine eksi 19 koyayım, Y yerine artı 8, Z yerine de eksi 7.4 koyduğumda 25 çıkacak.
+
+915
+01:45:00,228 --> 01:45:07,228
+8'den yok çıkmaz, negatif bir sayı çıkar. Ve çıkıyor. Ama 25 etmesi lazım.
+
+916
+01:45:08,819 --> 01:45:21,539
+Dur bakayım. Hocam çıkıyor aslında baksanıza. 8.8'e 5 çarptı. 44 ediyor. Eksi 19, 25 ediyor. Niye çarptın? Ben x, y, z, eşittir 25 var.
+
+917
+01:45:21,908 --> 01:45:29,667
+Sen işte orayı yanlış yazdırıyorsun. Ben de orayı yanlış gördüğümde yanlış girdim dedim sana.
+
+918
+01:45:29,667 --> 01:45:33,587
+Hocam o zaman satır satır alayım isterseniz. Onda bir sıkıntı var.
+
+919
+01:45:33,587 --> 01:45:37,347
+Ama göreceğim seni. İlk gördüğüm. Hocam kısır bakmayın. Hemen hallettim.
+
+920
+01:45:38,467 --> 01:45:46,068
+Her zaman kendi bildiğin akıl en doğrusudur. Ya durmadan yeni kişiler mi ekleniyor?
+
+921
+01:45:47,956 --> 01:46:03,956
+Satır satır vereceğim. Evet hocam. 1, 1, 1, 5, 3, 2, 0, 1, eksi 1, 25, 0, 6,
+
+922
+01:46:06,739 --> 01:46:09,140
+Hadi lütfen, et tamamdır.
+
+923
+01:46:09,140 --> 01:46:11,140
+Sağ olun hocam, teşekkür ederim.
+
+924
+01:46:11,140 --> 01:46:14,140
+Kimdi, bana bir daha hatırlatsana.
+
+925
+01:46:14,140 --> 01:46:17,539
+[öğrenci] hocam, [kişisel bilgi].
+
+926
+01:46:22,515 --> 01:46:26,515
+Yıpranma payı da ekliyorum kendime, epsilon kadar.
+
+927
+01:46:26,515 --> 01:46:27,515
+Peki...
+
+928
+01:46:27,515 --> 01:46:29,515
+Tamam hocam, iyi günler diliyorum size.
+
+929
+01:46:31,515 --> 01:46:33,515
+Hocam, ben sunabilirim isterseniz.
+
+930
+01:46:33,515 --> 01:46:41,515
+Evet [öğrenci]. Sunabilmen için numaranı söylemen lazım.
+
+931
+01:46:41,515 --> 01:46:42,515
+[kişisel bilgi].
+
+932
+01:46:43,515 --> 01:46:45,515
+Evet [öğrenci], [kişisel bilgi].
+
+933
+01:46:50,676 --> 01:46:52,476
+Evet, kaçta kaç?
+
+934
+01:46:52,476 --> 01:46:56,156
+Hocam, yedi. Onda yedi.
+
+935
+01:46:56,156 --> 01:46:58,276
+Hangi değerini yaptın, görebilir miyim?
+
+936
+01:46:58,276 --> 01:47:03,476
+Bir seksiyon, regula falsi, Newton-Raphson, maddisi tersi türev, Simpson ve trapez.
+
+937
+01:47:05,996 --> 01:47:07,396
+Simpson olsun.
+
+938
+01:47:12,724 --> 01:47:38,699
+Ne diyordur? Boyunamıştır. İçinden büyük kuvvet hocam. Simpsons dedik değil mi? Beş, iki, iki, iki, karsayız iki, dördünki sıfır, üçünki sıfır, eksi üç, sıfır, üç. Atmayalım hocam.
+
+939
+01:47:39,667 --> 01:47:52,147
+4, en eşittir 6. 1311, evet. Teşekkür ediyorum.
+
+940
+01:47:55,412 --> 01:48:01,412
+Tamam mıdır hocam? Tamamdır. İyi günler, kolay gelsin. Sırada kim var?
+
+941
+01:48:07,315 --> 01:48:33,315
+Bir beş kişi kaldı, yaşasın. Hocam ben sunabilir miyim? [öğrenci]. Hemen bakar bakmaz gördüm, kaçta kaç? Hepsini yaptım hocam. Peki. Şu an görebiliyor musunuz? Tamam, kodunu görebiliyorum. Ne misin açayım hocam? Saydılı yapalım.
+
+942
+01:48:38,100 --> 01:48:43,100
+Burada alıyor ilk önce maddisi.
+
+943
+01:48:43,100 --> 01:48:48,100
+Burada işlemler için değiştiriyor.
+
+944
+01:48:48,100 --> 01:48:55,100
+Burada da işte maddisi yazdırma veya işte büyük satır yer değiştirme gibi fonksiyonlarım var.
+
+945
+01:48:55,100 --> 01:48:57,100
+Bu satır yer değiştiriyor mesela.
+
+946
+01:48:57,100 --> 01:48:59,100
+Burada işte bunun ne yaptığını hatırlamıyorum.
+
+947
+01:48:59,796 --> 01:49:04,796
+Bu büyüyü buluyor, satırdaki. Bir sütundaki en büyüyü buluyor, ondan sonra onu yerine döndürüyor.
+
+948
+01:49:04,796 --> 01:49:05,796
+Hata analizmelerini soruyorsun, ne yapıyor diye.
+
+949
+01:49:05,796 --> 01:49:10,796
+Yok yok, ben kendime sordum da. En büyük satırı bulup ondan sonra onun değerini döndürüyor.
+
+950
+01:49:10,796 --> 01:49:13,796
+Tamam. Çalıştıralım.
+
+951
+01:49:16,796 --> 01:49:17,796
+Boyutu görücem.
+
+952
+01:49:17,796 --> 01:49:20,796
+İki de, görmüyorum şeyi, çıkışı.
+
+953
+01:49:20,796 --> 01:49:23,796
+Şöyle biraz daha büyüksen görebiliyor musunuz? Şey pardon.
+
+954
+01:49:23,796 --> 01:49:24,796
+Ekran gelmiyor.
+
+955
+01:49:24,796 --> 01:49:25,796
+Tamam, ondan.
+
+956
+01:49:26,271 --> 01:49:28,271
+Nasıl ayarlamam gerekiyor?
+
+957
+01:49:28,271 --> 01:49:30,271
+Ama herkes aynı soruyor, soruyor.
+
+958
+01:49:30,271 --> 01:49:34,271
+Paylaşımı kesiyorsun, spreen'e giriyorsun.
+
+959
+01:49:34,271 --> 01:49:35,271
+Tamam.
+
+960
+01:49:35,271 --> 01:49:36,271
+[öğrenci] sonra paylaşıyorsun.
+
+961
+01:49:39,444 --> 01:49:58,823
+Evet, boyutu gireriz. İki. İterasyon sayısı, en sevmediğim soru. Çünkü bunu ardaşık iki kök arasındaki bakmamız en doğrusu. Bingir, bine kadar mı dönecek?
+
+962
+01:50:05,492 --> 01:50:09,692
+matrisin birbiri iki, beş,
+
+963
+01:50:13,043 --> 01:50:21,043
+3, 1, 16, 11.
+
+964
+01:50:24,532 --> 01:50:26,532
+Bir ne kadar soruncak oyalım.
+
+965
+01:50:28,532 --> 01:50:30,532
+Nasıl bir ne kadar soruncak?
+
+966
+01:50:31,532 --> 01:50:34,532
+İterasyonu soruncak bir ne kadar.
+
+967
+01:50:34,532 --> 01:50:38,532
+Ya benim misin sen? Bir ne kadar iterasyonu sormak ne demek?
+
+968
+01:50:40,532 --> 01:50:43,532
+Hocam... İlk iterasyon ne demek?
+
+969
+01:50:46,532 --> 01:50:49,292
+Nasıl istiyorsun? Bir ver, tamam bir ver.
+
+970
+01:50:49,908 --> 01:50:52,127
+Ona da bir başka iterasyon vermem.
+
+971
+01:50:52,127 --> 01:50:54,127
+Tamam, ortam böyleymiş.
+
+972
+01:50:54,127 --> 01:50:55,127
+Yazıklar olsun.
+
+973
+01:50:55,127 --> 01:50:59,627
+Bir ve iki verdim hocam sadece. İsterseniz bir gibi gireyim.
+
+974
+01:50:59,627 --> 01:51:03,627
+Hı, daha onu ne için istediğini bilmiyor.
+
+975
+01:51:03,627 --> 01:51:06,627
+Hocam ben çok önceden yapmıştım, hiç hatırlamıyorum.
+
+976
+01:51:06,627 --> 01:51:11,087
+Çok önceden yaptıysan neden önümüzdeki hafta, geçen hafta göstermedin?
+
+977
+01:51:11,087 --> 01:51:13,984
+Çünkü geçen hafta başka bir yani...
+
+978
+01:51:13,984 --> 01:51:23,984
+Bilmiyorum, kalkamadım sanırım. Doğruyu söyleyelim. Tamam, peki. Doğruyu söyleyelim hocam. Ben ona inandım.
+
+979
+01:51:23,984 --> 01:51:34,984
+Bir şey varmış ya falan filan, onları yemiyorum. Doğru olsa da yemiyorum yani. Hadi seni de gönderiyorum. Yine dört kişi kaldık.
+
+980
+01:51:34,984 --> 01:51:41,612
+Şimdi sıra. [öğrenci]'i alıyorum.
+
+981
+01:51:42,771 --> 01:51:44,771
+Bir yük lütfen dışarı çık artık.
+
+982
+01:51:44,771 --> 01:51:46,771
+Sesim geliyor mu şu an?
+
+983
+01:51:46,771 --> 01:51:47,771
+Geliyor.
+
+984
+01:51:47,771 --> 01:51:48,771
+[öğrenci].
+
+985
+01:51:48,771 --> 01:51:49,771
+Tekrar paylaşayım.
+
+986
+01:51:53,684 --> 01:51:55,684
+[öğrenci] numaran?
+
+987
+01:51:55,684 --> 01:51:57,684
+[kişisel bilgi].
+
+988
+01:52:04,020 --> 01:52:08,420
+Evet. Kaçta kaç?
+
+989
+01:52:08,420 --> 01:52:11,780
+Tamam, sekiz tanesini yapabildim.
+
+990
+01:52:11,780 --> 01:52:13,619
+Hangilerini yapamadın?
+
+991
+01:52:13,619 --> 01:52:18,420
+Bu, interpolasyonla Gauss-Seidel'i eksik galiba.
+
+992
+01:52:18,420 --> 01:52:22,020
+Peki, tamam. Gauss eliminasyonu yapalım o zaman.
+
+993
+01:52:22,020 --> 01:52:28,420
+Ama ekran paylaşmam için Zoom'u yeniden başlatman gerekiyor diyor. İki saniye içinde gelsem olur mu?
+
+994
+01:52:28,420 --> 01:52:29,619
+Tamam, olur. Hadi.
+
+995
+01:53:29,684 --> 01:53:30,923
+Gelemedim.
+
+996
+01:53:32,364 --> 01:53:33,364
+[öğrenci].
+
+997
+01:54:00,115 --> 01:54:02,956
+Hocam geliyor mu sesim? Az önce internet kesildi de bir anda.
+
+998
+01:54:02,956 --> 01:54:03,956
+Tamam, geliyor.
+
+999
+01:54:05,755 --> 01:54:10,956
+Senle hiç konuşmaya başlamış mıydık? Evet, sekiz tane her şeyi yapacaktın, Doğuz.
+
+1000
+01:54:12,235 --> 01:54:13,956
+Eliminasyonu mu yapacaktın?
+
+1001
+01:54:14,835 --> 01:54:17,195
+Duymadım hocam o kısmı, internetim gitti yani.
+
+1002
+01:54:17,195 --> 01:54:18,715
+Doğuz, tuyumacaktın eliminasyonu, evet.
+
+1003
+01:54:19,315 --> 01:54:21,355
+Ağız eliminasyonu açayım hocam.
+
+1004
+01:54:29,684 --> 01:54:31,684
+işlemlerin yapıldığı kısım burası.
+
+1005
+01:54:35,347 --> 01:54:38,948
+Dur bakayım, azıcık, azıcık dur. Dur, dur, dur, dur.
+
+1006
+01:54:43,796 --> 01:54:48,796
+Orada niye matrisin hep 0. kolonu sabit? 59'da?
+
+1007
+01:54:49,796 --> 01:54:50,796
+Nerede hocam?
+
+1008
+01:54:50,796 --> 01:54:52,780
+59. satırda.
+
+1009
+01:54:56,243 --> 01:54:58,243
+Bilmiyorum ki hocam, hatırlamıyorum.
+
+1010
+01:54:58,243 --> 01:55:00,243
+Hep satırsın.
+
+1011
+01:55:00,243 --> 01:55:02,243
+Kolon sıfır oldu.
+
+1012
+01:55:02,243 --> 01:55:08,243
+Bu yöntemde kolonun sıfır olmasını acaba ne yaptın ki orada? Hep orayı aldı.
+
+1013
+01:55:08,243 --> 01:55:18,243
+Matrisi böldü, çıkardı, çarptı. Burada şey işlemlerini yapıyorsun. Dur bakalım doğru çalışırsa. Tamam çalıştır.
+
+1014
+01:55:29,844 --> 01:55:35,164
+Satır elemanlarının aralarına boşluk bırakarak girilmiş.
+
+1015
+01:55:35,164 --> 01:55:36,724
+Bir, bir, bir.
+
+1016
+01:55:37,844 --> 01:55:39,844
+Pardon, yanlış bastım.
+
+1017
+01:55:45,971 --> 01:55:55,724
+Şeyi de istiyor musun? C matrisini. Evet, onu da sonradan isteyeceksin. Ha, sonra isteyeceksin, tamam. Evet.
+
+1018
+01:55:59,091 --> 01:56:01,091
+0, 1, eksi 1
+
+1019
+01:56:04,564 --> 01:56:08,163
+25-06
+
+1020
+01:56:12,051 --> 01:56:16,171
+eksi yirmi altı yirmi dokuz yirmi iki buçuk çıkacak. Tamam.
+
+1021
+01:56:20,243 --> 01:56:21,483
+Teşekkürler.
+
+1022
+01:56:21,483 --> 01:56:22,683
+Tamamdır, hoşçakal.
+
+1023
+01:56:32,372 --> 01:56:44,372
+[öğrenci], [öğrenci]. Sesim geliyor mu hocam? Geliyor, geliyor, [öğrenci]'ı bulduk. Kaçta kaç? Hepsini yaptım.
+
+1024
+01:56:51,060 --> 01:56:53,300
+[kişisel bilgi].
+
+1025
+01:56:53,300 --> 01:57:00,300
+Birileri mi bağlanıyor arkadaşlar? [öğrenci], sana bakmadık mı?
+
+1026
+01:57:02,300 --> 01:57:06,700
+Maneysel. [öğrenci] 10'da 10 yaptın.
+
+1027
+01:57:07,900 --> 01:57:08,900
+Evet.
+
+1028
+01:57:08,900 --> 01:57:11,820
+Tamam. Türevi açalım.
+
+1029
+01:57:20,180 --> 01:57:21,380
+Söyle kondom.
+
+1030
+01:57:22,380 --> 01:57:23,580
+Tamam, kodu geç.
+
+1031
+01:57:30,707 --> 01:57:41,707
+Ne isteyeceğim ben ben şimdi? Ne istiyorsun? Şu an Clear Screen yaptığım için biraz bekletiyorum. Bu nasıl bir Clear Screen ya?
+
+1032
+01:57:59,155 --> 01:58:01,155
+eksi 0,5
+
+1033
+01:58:03,155 --> 01:58:05,155
+eksi 0,25
+
+1034
+01:58:07,155 --> 01:58:09,155
+1,2
+
+1035
+01:58:11,155 --> 01:58:13,155
+Hangi türev yöntemi?
+
+1036
+01:58:14,155 --> 01:58:15,155
+İleri
+
+1037
+01:58:18,579 --> 01:58:19,579
+0-25
+
+1038
+01:58:28,020 --> 01:58:30,820
+Ben hashtagine 0-25 verdim.
+
+1039
+01:58:30,820 --> 01:58:34,020
+Aa, baştan çalıştım.
+
+1040
+01:58:40,372 --> 01:58:47,372
+4, 0.1, 0.15
+
+1041
+01:58:52,212 --> 01:58:54,212
+eksi 0,5
+
+1042
+01:58:54,212 --> 01:58:57,212
+eksi 0,25
+
+1043
+01:59:01,395 --> 01:59:03,395
+Artı 1.2
+
+1044
+01:59:05,956 --> 01:59:07,635
+Birin değerini bul.
+
+1045
+01:59:11,891 --> 01:59:13,891
+0.25
+
+1046
+01:59:18,771 --> 01:59:32,172
+Eksi iki, eksi iki. Evet. Bitti değil mi hocam? Bitti. Tamamdır. İyi günler. Kuşça kal.
+
+1047
+01:59:37,203 --> 02:00:04,203
+[öğrenci]. Kaçta kaç? Merhaba, 10'da 10 hocam. Aa, ismini aç. Yine unuttum. Ben de 10 açıyorum tam. Kamera şurada. Okey. Kapatabilirsin. 10'da 10. Hadi bakalım. Sen şey nasıl yaptın Gregory Newton'u? H'yi nasıl aldın?
+
+1048
+02:00:04,948 --> 02:00:08,948
+Hocam, şey, şeyi mi söylüyorsunuz, artanlı olarak?
+
+1049
+02:00:08,948 --> 02:00:12,948
+Gregory Nifson'a interpolasyonunu söylüyorum.
+
+1050
+02:00:12,948 --> 02:00:13,948
+Tamam.
+
+1051
+02:00:13,948 --> 02:00:19,948
+Artımları bir olarak mı kabul ettin? Ona göre bir şey söyleyeceğim.
+
+1052
+02:00:19,948 --> 02:00:26,948
+Hocam, bir onlu da var, birli de var. Dün denedim ben, ikisinin de oluyordu hocam, yaptım.
+
+1053
+02:00:26,948 --> 02:00:28,948
+Onlu dediğin ne?
+
+1054
+02:00:28,948 --> 02:00:30,948
+Farkları demiyor musunuz hocam?
+
+1055
+02:00:31,923 --> 02:00:58,796
+Tamam, gir bakalım. Ben ekranı ayarlamaya çalışıyorum. Şu an geliyor mu ekran? İnşallah. Burası neresi? Manhattan mı? Bir yer geldi. Bağırayım, neresi burası? Tamam, onu çalıştır sen. Tamam. X diğerini alacağım sizden kaç tane olduğunu. Beş tane.
+
+1056
+02:00:58,899 --> 02:01:25,771
+Beş tane. İlk diğeri? 1891. Şimdi de farkı isteyeceğim sizden. Ne farkı? Evet başlıyor. Bunu kaç kere soracaksın? Her biri değil mi? Bir kere soracağım. Yok, bir kere soracağım. O zaman söyleyemem. Sen sabitli yapmışsın. Bu değeri veremem. Yeniden çalıştım. Tamam. Bir dakika önce.
+
+1057
+02:01:29,971 --> 02:01:32,771
+Tamam. Yine seçtim.
+
+1058
+02:01:32,771 --> 02:01:35,891
+X, yedi tane vereceğim.
+
+1059
+02:01:35,891 --> 02:01:37,171
+Hı hı.
+
+1060
+02:01:37,171 --> 02:01:38,771
+E sıfır.
+
+1061
+02:01:38,771 --> 02:01:41,971
+H değeri bir.
+
+1062
+02:01:41,971 --> 02:01:45,971
+Şimdi y değerlere.
+
+1063
+02:01:45,971 --> 02:01:47,971
+Eksi 4.
+
+1064
+02:01:47,971 --> 02:01:49,971
+Eksi 2.
+
+1065
+02:01:49,971 --> 02:01:51,971
+On dört.
+
+1066
+02:01:51,971 --> 02:01:54,971
+Altmış iki.
+
+1067
+02:01:54,971 --> 02:01:56,971
+Yüz altmış.
+
+1068
+02:01:59,315 --> 02:02:22,435
+326, 578, x değerini, bulmak istediğiniz değerini. 7. Demin biri 600 küsur bulmuştu bakalım 7'ye. 934 mü? Ama artık şunu koyacağım, bir dakika, kapama. Tamam hocam, kapatmaz.
+
+1069
+02:02:26,644 --> 02:02:52,404
+7'nin küpü, burada da bir saniştipik var mı? Var. Gözüm görmüyor. 7'nin küpüü çarpı 3 eksi 49 çarpı 2, 198
+
+1070
+02:02:53,492 --> 02:03:04,292
+Artı yedi, eksi dört eşittir. Dokuz otuz dört, tamamdır. Tamamdır. Tamamdır. Okey.
+
+1071
+02:03:07,380 --> 02:03:09,380
+Ama sen kim diyorsun?
+
+1072
+02:03:09,380 --> 02:03:14,380
+[kişisel bilgi].
+
+1073
+02:03:18,260 --> 02:03:20,260
+Dur gitme, bulana kadar gitme.
+
+1074
+02:03:20,260 --> 02:03:22,260
+Hıhı, burdayım hocam.
+
+1075
+02:03:24,260 --> 02:03:27,260
+Ya aslında kalemi koyuyorum, sonra unutup kalemi alıyorum.
+
+1076
+02:03:31,260 --> 02:03:33,260
+Siz de yoruluyorsunuz hocam.
+
+1077
+02:03:33,260 --> 02:03:41,260
+Oda çok sıcak, oda o kadar sıcak ki yani nefes alamıyorsun, cam açık olmasına rağmen. 35 dedin değil mi?
+
+1078
+02:03:41,260 --> 02:03:42,260
+Evet hocam.
+
+1079
+02:03:42,260 --> 02:03:44,260
+Evet, buldum, okey.
+
+1080
+02:03:45,171 --> 02:04:10,771
+Tamamdır. Ve son [öğrenci]. Hoşça kal [öğrenci] sana. [öğrenci]. Hocam hiç gelmeyecek sandım ya. Yani [öğrenci]'a çıkıyorsun artık. Bir yüzünü aç bu kadar bekledin bir bakalım. Hemen açayım hocam. Kütüphan edeyim. Bir de, tamam. Numaran kaç? [kişisel bilgi].
+
+1081
+02:04:11,060 --> 02:04:13,980
+Ah, tam da burada. Okey. Kaçta kaç?
+
+1082
+02:04:13,980 --> 02:04:19,980
+Hocam, Gregory Newton'da yaptım. Aslında da kod enteresan bir şekilde çalışmıyor. Gerisi full.
+
+1083
+02:04:19,980 --> 02:04:26,700
+Niye çalışmıyor? Sen yaptın dediğinde çalışıyor muydu? Şu an benim verdiğim değerlerden...
+
+1084
+02:04:26,700 --> 02:04:32,500
+Yok yok. Kod tamamen temiz ama hiç doğru sonuç alamadım. Yakın sonuç veriyor, doğru sonuç vermedi.
+
+1085
+02:04:32,500 --> 02:04:35,220
+Değiştirdim, değiştirdim. Olmadı, ben de vazgeçtim.
+
+1086
+02:04:35,220 --> 02:04:36,780
+Tamam, peki.
+
+1087
+02:04:38,547 --> 02:05:05,291
+Paylaşım açacağım bir dakika. Ben yine kaybettim. Deli olacağım ya. Ha buldum. [öğrenci]. Peki, hadi en son sensin. Hangisini istiyorsan çalıştır ve göster. Hocam, valla hangisini isterseniz onu çalıştır. İnversi istiyorum. Hemen hocam. Şu an gözüküyor mu sizce? Evet. Tamamdır.
+
+1088
+02:05:05,747 --> 02:05:07,747
+üçlük bir matrisim var.
+
+1089
+02:05:07,747 --> 02:05:14,747
+Bir, iki, üç, dört, beş, altı.
+
+1090
+02:05:14,747 --> 02:05:18,747
+Pardon hocam, ben de tekrar ederse satırı kontrol ediyorum.
+
+1091
+02:05:18,747 --> 02:05:22,747
+E diyor mu? Bir tane daha çalıştırırız. Yedi, iki, dokuz.
+
+1092
+02:05:22,804 --> 02:05:30,804
+Hocam ben biraz üstüne düştüm, o yüzden yetişmedi aslında. Determinant hesaplattım. Determinant sıfır çıkıyorsa.
+
+1093
+02:05:30,804 --> 02:05:37,804
+Okey, dur ona geldiğinde söyle. On altı sıfır yetmiştir. Tamam. Şimdi yeniden çalıştı. Dörde dördü.
+
+1094
+02:05:40,804 --> 02:05:42,804
+Dörde dört mi olsun hocam? Tamamdır.
+
+1095
+02:05:49,456 --> 02:06:11,655
+Bir yedi. Dört üç, dokuz yedi. Beş iki, sıfır dokuz. Kontrol vermedi. Hata verdi. Hocam, determinant sıfır çıkması lazım da normalde eğer tekrar ediyorsa.
+
+1096
+02:06:12,435 --> 02:06:17,895
+İlginç bir şekilde. Aa, burada şeyler tekrar ediyordu. Neyse, bu herkesten olan bir şeydi.
+
+1097
+02:06:17,895 --> 02:06:21,935
+Neyse, burada stünnal mı tekrar ediyordu? Ben soru diyorum, Türevi.
+
+1098
+02:06:21,935 --> 02:06:22,935
+Hemen hocam.
+
+1099
+02:06:26,612 --> 02:06:28,612
+Türev.
+
+1100
+02:06:33,011 --> 02:06:38,611
+Ben de farklı farklı birini seçip yapıyoruz. Tamam, siz seçin. İleri merkezi olsun.
+
+1101
+02:06:42,611 --> 02:06:47,011
+Peki, ne istiyorsun şimdi derecesi? Üç. Derece. Üç.
+
+1102
+02:06:47,811 --> 02:06:54,411
+Sırayla kat sayılar istiyor. Bir, eksi bir, eksi bir, eksi bir.
+
+1103
+02:07:02,612 --> 02:07:12,612
+X'te birin bu. Okey. Sıfır, tamam. Teşekkür ediyorum.
+
+1104
+02:07:12,612 --> 02:07:16,612
+Teşekkür ederim hocam, iyi günler. Hoşçakalın. Sağ olun hocam.

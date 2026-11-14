@@ -1,27 +1,8 @@
-# Sayısal Analiz Ders Kayıtları
+# Sayısal Analiz 2021-2022 Ders Kayıtları
 
-> **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+2021-2022 eğitim öğretim yılında bu dersin birden çok şube ya da dönem kaydı vardır. Her birinin altyazıları ve notları kendi klasöründedir.
 
-### 📋 Genel Bilgiler
-* **Ders:** Sayısal Analiz (BLM1022)
-* **Dönem:** Bahar
-* **Akademik Yıl:** 2021-2022
-* **Şube:** BLM1022 - 1
-
-Bu dizin, ilgili ders kayıtlarının altyazılarını (.srt) içermektedir. Notlar henüz yazılmamıştır.
-
-## 📚 Ders Kayıtları Dizini
-
-Ders numaraları, kayıt arşivindeki ders kaydı sıra numaralarıdır (hafta numarası değildir). Notu olmayan dersler "—" ile gösterilmiştir.
-
-| Ders No | Tarih | Altyazı |
-| :---: | :---: | :---: |
-| **Ders 4** | 25 Mayıs 2022 Çarşamba | [SRT](altyazilar/ders_4.srt) |
-| **Ders 5** | 1 Haziran 2022 Çarşamba | [SRT](altyazilar/ders_5.srt) |
-
-> [!NOTE]
-> 1 numaralı ders kaydı kayıt arşivinde bulunmamaktadır.
-> 2 numaralı ders kaydı kayıt arşivinde bulunmamaktadır.
-> 3 numaralı ders kaydı kayıt arşivinde bulunmamaktadır.
-
-Ders tarihleri ve eksik kayıtların ayrıntısı için `altyazilar/README.md` dosyasına bakın.
+| Şube | Dönem | Hoca | Klasör |
+| :---: | :---: | :--- | :--- |
+| 1 | Bahar | — | [sube_1/](sube_1/) |
+| 2 | Bahar | — | [sube_2/](sube_2/) |
