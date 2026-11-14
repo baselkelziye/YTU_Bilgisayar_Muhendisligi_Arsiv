@@ -1,0 +1,4611 @@
+1
+00:00:06,387 --> 00:00:07,868
+Evet, merhaba gençler.
+
+2
+00:00:32,179 --> 00:00:34,519
+Ok, let me share our slides.
+
+3
+00:00:47,188 --> 00:01:00,308
+Last week we introduced definition of sequence series, convergence of them, and we introduced some tests for convergence for series.
+
+4
+00:01:05,555 --> 00:01:06,555
+Ok, can you hear me?
+
+5
+00:01:09,155 --> 00:01:09,855
+Yes, sir.
+
+6
+00:01:12,615 --> 00:01:20,555
+Ok, today we are going to introduce some tests, ratio test, limit comparison test, comparison test.
+
+7
+00:01:26,932 --> 00:01:27,391
+Ok.
+
+8
+00:01:34,707 --> 00:01:36,587
+Biraz daha bekleyelim birkaç dakika.
+
+9
+00:01:41,396 --> 00:01:43,756
+Sisteme katılmak isteyen vardır daha bakayım.
+
+10
+00:01:45,156 --> 00:01:45,415
+Evet.
+
+11
+00:01:47,795 --> 00:01:51,855
+Geçen hafta arkadaşlar, arkadaşlar katılıncaya kadar bir Türkçe özet geçeyim.
+
+12
+00:01:52,115 --> 00:01:56,096
+Geçen hafta ne yaptık? Diziler, seriler, onların yakınsaklıkları.
+
+13
+00:01:57,036 --> 00:01:58,055
+Onlardan bahsettik.
+
+14
+00:01:58,436 --> 00:02:01,695
+Integral testi, ondan sonra en ince genel terim testi.
+
+15
+00:02:02,855 --> 00:02:07,195
+Hangi koşullarda sağlanır? Bu testler çalışır, çalışmaz. Onları inceledik.
+
+16
+00:02:07,763 --> 00:02:18,163
+İşte bu haftada oran testi, kıyaslama testi, limit kıyaslama testi, diğer 2-3 tane test var. Onlardan bahsedeceğiz. Ondan sonra soru çözeceğiz.
+
+17
+00:02:28,788 --> 00:02:33,088
+Evet arkadaşlar, oran testi nedir? Başlayalım. Okey.
+
+18
+00:03:02,479 --> 00:03:09,179
+These terms, ak, a sub k plus 1, a sub k, as k goes to infinity. Let's say this is r.
+
+19
+00:03:09,620 --> 00:03:19,040
+So, if these r, bigger than 0, equal to 0, and smaller than 1, so we say that the series is convergent to some value.
+
+20
+00:03:19,639 --> 00:03:26,699
+So, if this ratio r is bigger than 1, so include also infinite, the series diverge.
+
+21
+00:03:26,800 --> 00:03:33,620
+Okay, as you see, since our series are with positive terms, so this limit result cannot be negative value.
+
+22
+00:03:33,620 --> 00:03:37,620
+Okay, so if the r is...
+
+23
+00:03:37,620 --> 00:03:40,099
+Bir şeyde bir test verilmiş.
+
+24
+00:03:40,439 --> 00:03:42,219
+Tamam.
+
+25
+00:03:42,319 --> 00:03:44,879
+Şimdi bu bir örnek alınçı.
+
+26
+00:03:44,879 --> 00:03:46,879
+Bu bir örnek alınçı.
+
+27
+00:03:47,635 --> 00:03:54,455
+So, let's suppose the addition of the terms after the first k terms.
+
+28
+00:03:55,135 --> 00:04:04,075
+Okay, now, so we know that, so ak plus 1, so attention, this is very important because of this fact.
+
+29
+00:04:04,075 --> 00:04:13,415
+So, we suppose that ak plus 1 over ak approximates, so we can write this ak plus 1.
+
+30
+00:04:13,780 --> 00:04:36,908
+Bu yüzeyde yü
+
+31
+00:04:37,139 --> 00:04:42,139
+Yükselen
+
+32
+00:05:05,519 --> 00:05:06,519
+yukur
+
+33
+00:05:05,139 --> 00:05:08,100
+1, but r is not equal to 1.
+
+34
+00:05:08,100 --> 00:05:11,039
+Okay.
+
+35
+00:05:11,159 --> 00:05:18,639
+As you see, the ratio test is nothing else than spatial case of geometric series.
+
+36
+00:05:21,279 --> 00:05:24,699
+Now, so let's introduce some examples.
+
+37
+00:05:25,340 --> 00:05:25,699
+Okay.
+
+38
+00:05:27,124 --> 00:05:52,268
+Bu, bu
+
+39
+00:05:53,492 --> 00:06:15,352
+Now, so first of all, we need to check out whether all terms are positive. As you see, ak are always positive. Ak values are always positive. So limit as k goes to infinite, we consider this ratio, ak sub, sorry.
+
+40
+00:06:15,839 --> 00:06:34,819
+Ak plus 1 over ak limit, so let's say r, so ak sub 1, ak sub k plus 1, so we have this, and this, okay, by manipulating this expression, so we got this as k goes to infinite, the answer is 0.
+
+41
+00:06:35,795 --> 00:06:45,436
+As you see, the limit result is smaller than 1. That's why this series is convergent by the ratio test.
+
+42
+00:06:45,436 --> 00:06:45,915
+Okay.
+
+43
+00:06:47,656 --> 00:06:58,436
+Similarly, you can decide whether series given in the item B is divergent or convergent. As you see, this limit result...
+
+44
+00:06:59,507 --> 00:07:04,547
+1, daha sonra bu serisi, yasak, değil, konvergant.
+
+45
+00:07:21,908 --> 00:07:30,487
+Dikkat edin, hem ıraksaklık testinden hem de oran testinden B'de verilen serinin ıraksak olduğunu belirleyebiliriz gençler.
+
+46
+00:07:34,612 --> 00:07:38,612
+Bakın arkadaşlar, oran testi birçok seriler için...
+
+47
+00:07:39,091 --> 00:07:43,451
+Geçersiz olabiliyor, yani kesin bir sonuç vermiyor.
+
+48
+00:07:43,871 --> 00:07:44,871
+Okay, attention here.
+
+49
+00:07:44,871 --> 00:07:47,691
+So, for example, consider this harmonic series.
+
+50
+00:07:47,871 --> 00:07:51,051
+Let's try to apply ratio test for this harmonic series.
+
+51
+00:07:51,631 --> 00:07:56,871
+So, as k goes to infinite, consider this ratio and r.
+
+52
+00:07:57,231 --> 00:08:00,111
+So, as you see, r is 1, so inconclusive.
+
+53
+00:08:00,351 --> 00:08:02,671
+As you see, the ratio test is inconclusive.
+
+54
+00:08:03,071 --> 00:08:06,011
+But by the p test, this is harmonic series.
+
+55
+00:08:06,471 --> 00:08:07,091
+So, you know that.
+
+56
+00:08:07,091 --> 00:08:09,891
+P-Test is the special case of integration test.
+
+57
+00:08:09,891 --> 00:08:11,891
+So this is...
+
+58
+00:08:17,204 --> 00:08:29,144
+Okay, this is divergent series according to p-test, but ratio test is inconclusive, okay, because of this fact, so r is equal to 1.
+
+59
+00:08:31,384 --> 00:08:40,243
+Okay, so again verify that ratio test is also inconclusive for this p-series, as you see, limit.
+
+60
+00:08:40,980 --> 00:09:05,799
+As k goes to infinite, ak plus 1 over ak, you are going to see that this limit is 1. So the ratio is inconclusive, but by the p-test, okay, so we know that by the p-test, so this series is convergent, okay, but the ratio test is fail.
+
+61
+00:09:06,144 --> 00:09:15,384
+Dikkat edin, oran testi burada çalışmadı ama P testine göre biz onun yakınsak olduğunu biliyoruz. Tamam mı gençler? Devam.
+
+62
+00:09:20,340 --> 00:09:38,820
+Ok, so let's consider root test. So the root test is very similar to ratio test. So again, we have some series with positive terms. All terms of this series are positive. So this is precondition. Also maybe negative and maybe zero. So that's why we write non-negative.
+
+63
+00:09:48,340 --> 00:09:52,580
+As you see, these conditions are the same,
+
+64
+00:09:52,580 --> 00:09:57,259
+okay, given in the case of ratio test.
+
+65
+00:09:57,259 --> 00:09:58,460
+Look at here.
+
+66
+00:10:00,100 --> 00:10:02,340
+Okay, here as you see.
+
+67
+00:10:02,340 --> 00:10:05,900
+Only difference is this limit structure.
+
+68
+00:10:07,740 --> 00:10:08,427
+Okay.
+
+69
+00:10:09,524 --> 00:10:16,683
+Now, if you see some exponential function, something like that, as you see, this depends on k.
+
+70
+00:10:16,844 --> 00:10:21,943
+Okay, now, it is better to apply root test in such cases.
+
+71
+00:10:21,943 --> 00:10:26,884
+So, as you see, so also you can apply root test to this.
+
+72
+00:10:27,344 --> 00:10:31,943
+But I prefer to use ratio test for...
+
+73
+00:10:32,275 --> 00:10:40,435
+Okay, such series. 2 üzeri k bölü, k üzeri 10, ben orada oran testini uygulamayı tercih edelim. Belki daha kolay gelir.
+
+74
+00:10:40,836 --> 00:10:51,975
+Okay, so let's compute the limit of this term. Okay, so the answer is for this. Okay, for item A. For item B,
+
+75
+00:10:52,447 --> 00:11:10,007
+Okay, now we got this. Okay, so the bigger than one, bigger than one. So that's why this series is divergent. So the series given in the item B is divergent. Okay. Is there any question?
+
+76
+00:11:10,899 --> 00:11:28,600
+Sorusu olan var mı? Oran testi ve kök testi dediğimiz gibi koşulları benzer. Aynı hatta. Sadece limitleri farklı. Limit değerleri arkadaşlar sıfırdan büyük veya eşit, birden küçük olursa yakınsak, aksi durumda bıraksak oluyor serimiz. Tamam mı gençler?
+
+77
+00:11:29,107 --> 00:11:53,767
+Dediğimiz gibi kök testi ve oran testi her zaman arkadaşlar çalışmıyor. Ne tarz sorularda çalışıyor? Böyle üstel ifadelerde genellikle çalışıyor. Güzel sonuçlar veriyor. Ama böyle rasyonel ifadelerde çalışmaz. Bir sonucunu elde edeceksiniz. Eğer sizin teriminiz rasyonel bir fonksiyon ise, yani polinom, iki polinom oranı şeklinde verilmişse çalışmaz. Onu belirteyim. Tamam mı gençler?
+
+78
+00:11:57,235 --> 00:11:59,435
+Evet, sorunuz yoksa geçiyorum.
+
+79
+00:12:00,096 --> 00:12:04,235
+Okay, let's talk about comparison test, kıyaslama testi.
+
+80
+00:12:05,015 --> 00:12:11,635
+Okay, again we have two series whose terms are positive.
+
+81
+00:12:12,275 --> 00:12:15,835
+Okay, so this is preconditioned, otherwise we cannot apply this test.
+
+82
+00:12:15,835 --> 00:12:22,835
+So, we have this ordering, but this ordering, okay, so this ordering,
+
+83
+00:12:24,148 --> 00:12:41,148
+Maybe true for some, maybe true for all k, and bigger than some n-step. Okay, n-terims. After the first n-terims. İlk n-terimden sonra, bu...
+
+84
+00:12:41,620 --> 00:12:57,600
+Eşitsizlik doğru olsa yeterli arkadaşlar. Çünkü ilk en tane terimi iptal edersek serinin karakteri değişmez. Yani her k için sağlanmak zorunda değil. Her doğal k değeri için. Ama belli bir adından sonra böyle bir eşitsizlik varsa, sağlanıyorsa o zaman olur.
+
+85
+00:12:57,600 --> 00:13:04,640
+Dikkatli arkadaşlar. Bk yakınsak ise, bk ile oluşturulan seri yakınsak ise, ak ile oluşturulan seri yakınsak diyor.
+
+86
+00:13:09,620 --> 00:13:13,480
+So, if, so, let me summarize this.
+
+87
+00:13:14,040 --> 00:13:18,460
+So, so, we have this ordering.
+
+88
+00:13:19,040 --> 00:13:28,020
+If this convergent, if this convergent, so, this must be also convergent.
+
+89
+00:13:28,220 --> 00:13:30,340
+Okay, attention here.
+
+90
+00:13:30,340 --> 00:13:32,540
+If this convergent.
+
+91
+00:13:35,220 --> 00:13:38,460
+convergent, then this must be convergent.
+
+92
+00:13:38,919 --> 00:13:40,720
+So similarly, look at this.
+
+93
+00:13:42,319 --> 00:13:48,159
+If this is item A, item B, let's consider this ordering.
+
+94
+00:13:50,159 --> 00:13:53,080
+So if this is divergent,
+
+95
+00:13:55,475 --> 00:14:16,115
+If this is divergent, then the series generated by ak terms, ak terms that are bigger than bk, okay, so this is also divergent. If this is divergent, then this is also divergent, okay? From the logical point of view, we can see this.
+
+96
+00:14:19,475 --> 00:14:46,575
+Okay, so let's consider this example. Okay, we have this series. Okay, so this series generated by 1 over k square plus 10. So consider this series generated by 1 over k square. So we know this ordering. So you can show this. So it's very similar. Okay, k square smaller than or equal to k square plus 10. For all k, this inequality is true.
+
+97
+00:14:47,475 --> 00:14:51,475
+Bu yüzden bu k2'ye görebilirsiniz.
+
+98
+00:14:51,475 --> 00:15:13,475
+Bu k2'ye görebilirsiniz.
+
+99
+00:15:18,035 --> 00:15:45,195
+Okay, now consider the second case of comparison test. Okay, let's see this series. So we know that this series is divergent according to p test. So where p is 1 over 2 smaller than or equal to 1. So this logical statement is true. That's why this is divergent series. Now let's compare this series with this series.
+
+100
+00:15:46,035 --> 00:15:49,815
+So we have this ordering, so you can show that.
+
+101
+00:15:50,375 --> 00:15:52,535
+Okay, this is very simple ordering.
+
+102
+00:15:53,555 --> 00:15:58,235
+Now, so this is true for all k bigger than or equal to 4.
+
+103
+00:15:58,715 --> 00:16:00,435
+That's why we have this ordering.
+
+104
+00:16:01,096 --> 00:16:04,715
+So as you see, this is divergence.
+
+105
+00:16:04,715 --> 00:16:09,055
+So the series generated by Bk is divergence,
+
+106
+00:16:09,775 --> 00:16:11,715
+implying that the series...
+
+107
+00:16:12,244 --> 00:16:18,944
+Generated by AK must be divergent according to comparison test.
+
+108
+00:16:19,224 --> 00:16:24,024
+Ok, so this is also divergent according to comparison test.
+
+109
+00:16:25,283 --> 00:16:27,984
+Sorusu olan var mı? Yoksa geçeceğim.
+
+110
+00:16:31,423 --> 00:16:32,324
+İzlerini koyuyor için.
+
+111
+00:16:33,364 --> 00:16:34,683
+Sesim geliyor değil mi gençler?
+
+112
+00:16:37,444 --> 00:16:38,704
+Kesilme falan yok.
+
+113
+00:16:39,324 --> 00:16:39,644
+Devam.
+
+114
+00:16:43,539 --> 00:17:10,659
+Ok, let's see this illustration. As you see, if you try to sketch graphs of each sequence, so this is the graph of, so this is the terms of graph of this, ok. As you see, we have this, so a partial sum, the seconds of partial sum for this series, not this.
+
+115
+00:17:11,316 --> 00:17:19,935
+Say, okay, this sequence. So this is the graph of seconds of partial sums. Okay, attention here.
+
+116
+00:17:24,051 --> 00:17:26,431
+Ok, using the comparison test,
+
+117
+00:17:26,751 --> 00:17:32,612
+We can determine whether each series is convergent or divergent.
+
+118
+00:17:33,192 --> 00:17:39,392
+So let's consider this rational function, this rational function, which is the ratio of two given polynomials.
+
+119
+00:17:40,112 --> 00:17:47,751
+So we know this, so look at here, as k goes to infinite, so we can consider this approach.
+
+120
+00:17:47,751 --> 00:17:54,751
+So as k goes to infinite, so 2k to 4 minus 1 approximately...
+
+121
+00:17:54,751 --> 00:17:57,091
+2 times k to 4
+
+122
+00:17:57,091 --> 00:17:59,811
+so this is also k to 3
+
+123
+00:17:59,811 --> 00:18:02,291
+okay now so this simplified
+
+124
+00:18:02,291 --> 00:18:03,711
+1 over k
+
+125
+00:18:03,711 --> 00:18:06,291
+okay now so we have some
+
+126
+00:18:06,291 --> 00:18:08,412
+reasonable choice
+
+127
+00:18:08,412 --> 00:18:10,071
+in order to compare
+
+128
+00:18:10,071 --> 00:18:12,331
+okay this choice with
+
+129
+00:18:12,331 --> 00:18:14,491
+this given series so that's why
+
+130
+00:18:14,491 --> 00:18:16,291
+we can compare this
+
+131
+00:18:16,291 --> 00:18:18,511
+series with 1 over
+
+132
+00:18:18,511 --> 00:18:19,912
+2 k okay
+
+133
+00:18:19,912 --> 00:18:21,111
+is there an equation
+
+134
+00:18:24,372 --> 00:18:25,452
+Sorusu olan var mı?
+
+135
+00:18:26,612 --> 00:18:32,592
+Yok. Yani 1 bölü 2k ile kıyaslama yapabilirsiniz. Buradan hemen eşitsizlikleri bulursunuz.
+
+136
+00:18:32,731 --> 00:18:45,872
+Ok, by considering this fact, so we can obtain this ordering. So we know that the series generated by 1 over 2k is divergent according to p test.
+
+137
+00:18:45,872 --> 00:18:54,612
+So ignore this constant term 1 over 2. So 1 over k, so harmonic series is divergent. That's why this is also...
+
+138
+00:18:54,612 --> 00:18:58,231
+Divergent, if you generate some series by Ak.
+
+139
+00:18:59,072 --> 00:19:02,132
+Okay, you got this series, which is divergent.
+
+140
+00:19:02,752 --> 00:19:03,012
+Okay.
+
+141
+00:19:04,432 --> 00:19:07,352
+So what about item B?
+
+142
+00:19:07,951 --> 00:19:13,992
+So we know this inequality for all k bigger than or equal to 2.
+
+143
+00:19:13,992 --> 00:19:20,992
+So let's divide, okay, so this term by k cubed in order to obtain some...
+
+144
+00:19:20,992 --> 00:19:21,992
+Some...
+
+145
+00:19:22,612 --> 00:19:24,552
+Orduğr, gradyan, ok.
+
+146
+00:19:25,272 --> 00:19:26,712
+Now we got this.
+
+147
+00:19:27,632 --> 00:19:29,192
+We got this ordering.
+
+148
+00:19:29,692 --> 00:19:35,252
+As you see, if you consider series generated by 1 over k square,
+
+149
+00:19:35,632 --> 00:19:39,792
+and we got this series generated by lnk over k to 3.
+
+150
+00:19:40,212 --> 00:19:41,152
+So we know that.
+
+151
+00:19:41,272 --> 00:19:46,472
+So this is convergent series according to p test.
+
+152
+00:19:50,132 --> 00:20:12,632
+So, this, sorry, equality not, there is no equality condition here. So, this must be convergent. Dikkat edin, bir bölü k kare ile oluşturulan seri yakınsak, dolayısıyla bir bölü k kareden daha küçük terimlerle oluşturulan, yani ln k bölü k 3 derle oluşturulan seri de hayli hayli yakınsak olacaktır gençler. Var mı sorusu olan?
+
+153
+00:20:13,140 --> 00:20:22,640
+Herhalde anlaşılmıştır. Kıyaslama testinin mantığı, oran testi zaten geometrik serinin özel hali dedik. Mantığa odaklanın arkadaşlar orada.
+
+154
+00:20:23,300 --> 00:20:30,480
+Şimdi burada diğer bir husus. Bazı testler arkadaşlar, kıyaslama testleri bazen işe yaramıyor.
+
+155
+00:21:06,420 --> 00:21:12,240
+So, we got two series which have positive terms.
+
+156
+00:21:12,880 --> 00:21:18,840
+Okay, now consider the limit of ratio of these general terms, ak over bk.
+
+157
+00:21:18,960 --> 00:21:20,280
+Let's say this is l.
+
+158
+00:21:20,280 --> 00:21:26,120
+So, if this l, finite number, so this means l is finite number.
+
+159
+00:21:26,740 --> 00:21:29,840
+L is finite number.
+
+160
+00:21:31,092 --> 00:21:34,471
+Okay, but attention here, non-zero final number.
+
+161
+00:21:35,092 --> 00:21:40,672
+Then, so we can easily say that they have the same character.
+
+162
+00:21:40,852 --> 00:21:42,672
+So how can we figure out this is true?
+
+163
+00:21:43,092 --> 00:21:44,892
+So let me comment on this fact.
+
+164
+00:21:45,192 --> 00:21:46,872
+So let's comment on this fact.
+
+165
+00:21:47,172 --> 00:21:48,112
+So what does it mean?
+
+166
+00:21:48,112 --> 00:21:58,112
+So limit, the first case, limit as k goes to infinite, ak over bk.
+
+167
+00:21:58,996 --> 00:22:08,196
+L, L is the finite number, non-zero, non-zero, finite number.
+
+168
+00:22:08,756 --> 00:22:25,316
+So, so this means that, let's comment on this result, this means that ak terms, general terms, approximates l times bk for sufficiently
+
+169
+00:22:26,708 --> 00:22:46,548
+for sufficiently large k-values, k-integers. Okay, so we got this. So if we ignore the first k-terms in both k's, in both series, okay, so we know that the character of series,
+
+170
+00:22:46,548 --> 00:22:50,948
+okay, don't change.
+
+171
+00:22:51,476 --> 00:23:17,935
+Okay, now, so this means that, so we got this, ak, and so, ak is equal to, let me write here, sorry, ak is equal to, ak is equal to, l times bk, okay, l times bk, and this, ak, they, that's okay, this is,
+
+172
+00:23:18,612 --> 00:23:39,751
+Okay, so this is, not approximate, so this is a mistake. So the character of this, character of this, and the character of this, okay, same, attention here. So, and Bk, so we have this. So all of them are of the same character. Can you see that?
+
+173
+00:23:42,312 --> 00:23:45,751
+Because of this approximation relation, we can write this.
+
+174
+00:23:46,771 --> 00:24:07,352
+Dikkat edin arkadaşlar. Eğer biri ıraksaksa öteki de ıraksak olur. Biri yakınsak ise öteki de yakınsak olur. Çünkü neden? Yeterince belli bir adım gittikten sonra AK terimleri ne yapıyor? BK terimlerin L katı oluyor. Yani L'de sıfırdan farklı bir kertinizi çekerim. Sonlu bir değer. Sonsuz değil. O yüzden böyle bir sonuca ulaşabiliriz.
+
+175
+00:24:14,099 --> 00:24:20,740
+So again, so we use the same approach, same logic in order to understand second case.
+
+176
+00:24:21,480 --> 00:24:23,579
+Evet, herkes düşünsün bakalım, aynı mantıkla.
+
+177
+00:24:25,460 --> 00:24:27,880
+Düşünsün bakalım, neden ikinci ifade doğru?
+
+178
+00:24:28,960 --> 00:24:34,039
+Şöyle kısaca zihnimizde o ikinci ifadenin neden doğru olduğunu teyit edelim.
+
+179
+00:24:35,059 --> 00:24:36,240
+İşin özünü kavrayalım.
+
+180
+00:24:38,380 --> 00:24:39,519
+Ezber yaparsak olmaz.
+
+181
+00:24:42,036 --> 00:25:06,596
+Evet, ne yapıyoruz gençler? Yine aynı mantık. So, okay, let's verify the second case is true, second logical implication is true. So, again, so limit as k goes to infinite, ak over bk. So, in this case, the answer is zero. So, what does it mean? So, this means that
+
+182
+00:25:06,900 --> 00:25:31,140
+Ak, from the point of approximation relation, ak approximates, ak, ak, ak, sufficiently smaller than, sufficiently smaller than, vk, for,
+
+183
+00:25:33,907 --> 00:25:36,347
+N is sufficiently larger number.
+
+184
+00:25:37,347 --> 00:25:38,887
+We got this idea.
+
+185
+00:25:39,147 --> 00:25:49,027
+Dikkat edin, yani ak bölü bk terimlerinin daha sonuçta giderken sıfıra gitmesi demek, ak terimleri yeterince küçük olacak demek bk terimlerinden.
+
+186
+00:25:49,167 --> 00:25:51,307
+Belir biraz daha, yeterince bir adından sonra.
+
+187
+00:25:51,307 --> 00:25:52,727
+O zaman ne olur?
+
+188
+00:25:53,087 --> 00:25:59,307
+By the comparison test, so we can say that if, if,
+
+189
+00:25:59,892 --> 00:26:10,872
+by the compression test, the seri generated by BK, converts, then, it's obvious a fake that,
+
+190
+00:26:11,412 --> 00:26:22,492
+The study generated by AK is also convergent by the comparison test. As you see, limit comparison test is an application of comparison test.
+
+191
+00:26:22,492 --> 00:26:35,312
+In fact, dikkat edin arkadaşlar. Aslında özel bir durumu fiyaslama testinin ama daha sofistike, daha güzel bir yöntem. Birçok durumda işe yarıyor. Tamam mı gençler? Aynı mantı şimdi, üçüncü durumda.
+
+192
+00:26:35,796 --> 00:26:40,296
+Okay, let's consider, let's verify the second implication is true.
+
+193
+00:26:40,796 --> 00:26:42,155
+So what does it mean?
+
+194
+00:26:42,596 --> 00:26:44,096
+So L is infinite.
+
+195
+00:26:44,316 --> 00:26:44,996
+What does it mean?
+
+196
+00:26:44,996 --> 00:26:51,796
+In that case, so ak sufficiently bigger than bk.
+
+197
+00:26:51,796 --> 00:26:53,796
+Okay, for...
+
+198
+00:26:54,099 --> 00:27:18,059
+All k values, bigger than, sufficient larger number. Okay. Now, so, in this case, if the seri generated by Bk divergent, then the seri generated by Ak must be divergent, according to the previous test. As you see, we can verify the third implication, logical implication. Okay.
+
+199
+00:27:18,675 --> 00:27:41,815
+Sizler enikoy için, hocam ben buranın mantığını anlamanızı dediğim gibi var mı? Gördüğünüz gibi arkadaşlar, tuğlaları yavaş yavaş, mantıksal tuğlaları yavaş yavaş koyuyoruz. Böylelikle öğrenme binamız gerçekleşiyor. Evet, yani bunların yıkılması arkadaşlar zor olur. Öğrenmeyi böyle gerçekleştirmemiz lazım. Yani üzeri toz olur, kirlenir, zamanla unutabilirsin.
+
+200
+00:27:42,195 --> 00:28:07,255
+Ama gelirsiniz, bir boyama yaparsınız, bir cidalama yaparsınız. Tekrar eski haline gelir arkadaşlar. Ama öteki türlü ezberlerseniz bu testleri unutursunuz arkadaşlar. Ezberlersiniz, geçersiniz. Ama yarın bir gün bu tarz, ARGE çalışmalarında bu tarz belki bir konu. Mesela verilerle çalışıyorsunuz, dizilerle çalışıyorsunuz. Böyle bir şeyle karşılayacaksınız. Belki kullanacaksınız. Aklınıza bu gelir eğer.
+
+201
+00:28:07,859 --> 00:28:10,599
+Öğrençleriz mantığını. Tamam mı gençler? Devam.
+
+202
+00:28:11,699 --> 00:28:18,699
+Okay, using the limit comparison test, let's try to determine the characters of the following series.
+
+203
+00:28:19,500 --> 00:28:31,259
+Okay, now so the main task is to identify the sum proper, okay, comparison series test.
+
+204
+00:28:31,259 --> 00:28:35,439
+Okay, which one? So look at here, this is polynomial degree of four.
+
+205
+00:28:36,307 --> 00:28:38,367
+This is polynomial degree of 4.
+
+206
+00:28:38,988 --> 00:28:41,028
+This is polynomial degree of 6.
+
+207
+00:28:41,347 --> 00:28:41,627
+Okay.
+
+208
+00:28:42,127 --> 00:28:43,728
+As k goes to infinite,
+
+209
+00:28:43,927 --> 00:28:46,048
+this approximates k to 4.
+
+210
+00:28:46,807 --> 00:28:49,468
+This terms approximates k to 6.
+
+211
+00:28:49,468 --> 00:28:54,268
+So that's why we can obtain some terms.
+
+212
+00:28:55,008 --> 00:28:56,327
+1 over k.
+
+213
+00:28:57,427 --> 00:28:58,327
+Okay, so this one.
+
+214
+00:28:58,488 --> 00:28:59,867
+So let me, k to 4.
+
+215
+00:29:00,288 --> 00:29:01,387
+So let me write here.
+
+216
+00:29:03,188 --> 00:29:18,928
+K2, 4, K2, 6, ok, so, 1 over K2, K2, K2, ok, so, this rational expression approximates 1 over K2, K2, 2, ok, K2.
+
+217
+00:29:25,203 --> 00:29:48,843
+Let's say this is ak, let's say this is bk. We know that the series generated by bk is convergent. We know this by the p series test. So p is 2 bigger than 1. By the p series test, so this is convergent. Let's consider, okay, let's consider the limit.
+
+218
+00:29:49,940 --> 00:30:11,779
+Of this ratio, ak over bk. If you do this, ok, if you do this, yaparsanız arkadaşlar ne olur? 1 bölü 2 mi geliyor gençler? Evet, 1 bölü 2 geliyor değil mi? AK bölü BK yaparsak 1 bölü 2 gelecek. So, finite number, ok, they are of the same character. Ok.
+
+219
+00:30:12,531 --> 00:30:26,731
+They are of the same character. Ak bölü bk limiti, ne oluyor arkadaşlar? Aynı character olmuyor. Çünkü ak bölü bk approximates 1 over 2 as k goes to infinite.
+
+220
+00:30:26,731 --> 00:30:39,851
+This means that ak approximates bk times 1 over 2 for sufficiently larger steps. So this means that
+
+221
+00:30:40,723 --> 00:30:47,723
+They are of the same character.
+
+222
+00:30:50,723 --> 00:30:54,723
+Same character according to limit comparison test.
+
+223
+00:30:54,723 --> 00:30:55,723
+Okay?
+
+224
+00:30:57,723 --> 00:31:01,723
+Okay, let's consider other case, other series.
+
+225
+00:31:05,587 --> 00:31:19,728
+Ok, so let me see original question. So lnk over k square. So you can prefer to use 1 over k square in order to compare by the limit compression test. So we know that this is convergent.
+
+226
+00:31:20,211 --> 00:31:22,211
+Evet, bu bir kere.
+
+227
+00:31:22,211 --> 00:31:24,211
+Bu bir kere.
+
+228
+00:31:24,211 --> 00:31:43,692
+Bu kere.
+
+229
+00:31:44,403 --> 00:31:54,604
+So, seri generated by BK is convergent. Can we say anything about the character of seri generated by AK?
+
+230
+00:31:55,044 --> 00:32:06,784
+Dikkat edin, BK ile üretilen seri, yakınsak ise, BK'den daha büyük terimlerle üretilen seri, hakkında bir şey söyleyebilir misiniz? Test işe yarar mı gençler? Düşünün bakalım. Yarar mı sizce?
+
+231
+00:32:07,892 --> 00:32:09,812
+Yakınsak da olabilir, yıraksak da olabilir.
+
+232
+00:32:09,932 --> 00:32:19,572
+Eğer you see, if you prefer to use 1 over k² in order to compare these two given series, so you got some inconclusive result.
+
+233
+00:32:19,971 --> 00:32:25,572
+Yani işe yaramayan bir soru çağır ettiniz. İşe yaramadı. İşin mantığını kavrarsak yaramadığını görüyoruz.
+
+234
+00:32:25,572 --> 00:32:26,652
+Okey.
+
+235
+00:32:33,779 --> 00:32:44,619
+B'ler k denersi. Okay, let's try to apply 1 over k in order to compare these two given series. Okay, now in that case, ak over bk. So we know that this is divergent.
+
+236
+00:32:45,779 --> 00:32:57,259
+So ak over bk approximates zero. Let's comment on this limit result. So what does it mean? Ak terms are sufficiently smaller than bk.
+
+237
+00:32:57,839 --> 00:33:01,379
+Otherwise, you cannot get this result, limit result, zero.
+
+238
+00:33:01,699 --> 00:33:14,699
+Okay, so we know that if the series, if the series generated by, okay, this is 1 over k, so this is divergent.
+
+239
+00:33:15,347 --> 00:33:29,647
+If this is divergent, this series, can you say anything about the series generated by a, k, which are smaller than b, k? As you say, again, the test is also incongruous.
+
+240
+00:33:30,248 --> 00:33:42,548
+Gördüğünüz gibi arkadaşlar, limit kıyaslama testi, bir bölü k'ları falan seçerseniz işe yaramıyor. Bir bölü k, kar, yı seçtik, k'nın kalesi seçtik, işe yaramıyor. Bir bölü k'yı seçtik, işe yaramıyor.
+
+241
+00:33:42,932 --> 00:33:49,851
+Gördünüz mü? Yani bu tarz sorularda, o zaman ne yapacaksınız? Seçiminiz çok önemli arkadaşlar, limit testinde.
+
+242
+00:33:50,471 --> 00:33:58,631
+Ok, let's change our test series. Ok, let's consider this one, so they are ok.
+
+243
+00:34:01,044 --> 00:34:22,524
+This is divergent attenuation. Let's consider this series. Okay, so we know that this series is convergent according to p test. So let's say this is ak, let's say this is bk. If you compare these two given series, okay, so we got this zero. Now, so ak smaller than always.
+
+244
+00:34:23,635 --> 00:34:25,895
+Sufficient isimler than vk.
+
+245
+00:34:26,435 --> 00:34:32,755
+Now, as you see, we know that the series generated by vk is convergent.
+
+246
+00:34:33,255 --> 00:34:38,235
+So, this is convergent according to p-series test.
+
+247
+00:34:41,376 --> 00:34:50,895
+Okay, so according to limit comparison test, the series generated by ak must be also convergent according to limit comparison test.
+
+248
+00:34:51,539 --> 00:35:15,359
+Evet gençler, gördüğünüz gibi, liquid kıyaslama testinde seçmeniz çok önemli. Hangi seriyle kıyaslayacağınızı çok iyi belirlemeniz lazım. Aksi durumda işe yaramayan sonuçlar elde edebilirsiniz gençler. Dikkat edin, iki tane örnek verdik zaten. Yakınsaklık içinde, raksaklık içinde işe yaramadı. Tamam mı? Ama bir tane doğru olanı seçersem.
+
+249
+00:35:16,467 --> 00:35:20,028
+1 bölü kazi 3 bölü 2 yakınsak olduğunu gördük arkadaşlar.
+
+250
+00:35:21,028 --> 00:35:21,247
+Evet.
+
+251
+00:35:22,608 --> 00:35:24,167
+So we have some guidelines.
+
+252
+00:35:25,492 --> 00:35:32,492
+İkincisi
+
+253
+00:35:53,492 --> 00:35:58,572
+İzlediğiniz için, serileriniz özel seriler mi değil mi? Yani geometrik seri mi, teleskop seri mi? Bunlara bakalım.
+
+254
+00:36:21,492 --> 00:36:32,732
+ve genel termi, parçal sum sequence. Şimdi, bu series'i convergent, or divergent, by considering
+
+255
+00:36:32,732 --> 00:36:36,812
+the limit of the partial sum sequence.
+
+256
+00:36:41,652 --> 00:37:01,731
+İkincisi, if you feel that you can easily integrate general term of series, you can try to apply integration test, under the condition test, under the condition that each term are positively defined and decreasing.
+
+257
+00:37:01,731 --> 00:37:04,132
+Okay, very important.
+
+258
+00:37:05,556 --> 00:37:29,716
+If you see k! k to k and a to k and a is a constant, in such cases it is better to apply, generally, to apply ratio test or root test. Dikkat edin, oran testi veya kök testi arkadaşlar uygulanabilir. K! k, a ve k'lı terimler ifade.
+
+259
+00:37:31,188 --> 00:37:33,288
+İhtiva ediyorsa seriniz, tamam mı gençler?
+
+260
+00:37:35,967 --> 00:37:36,887
+Ok, if your
+
+261
+00:37:36,887 --> 00:37:41,007
+term of series
+
+262
+00:37:41,007 --> 00:37:43,987
+some rational function, ok, you can easily
+
+263
+00:37:43,987 --> 00:37:45,987
+use
+
+264
+00:37:45,987 --> 00:37:48,947
+comparison test or limit compression test.
+
+265
+00:37:49,728 --> 00:37:53,108
+Dikkat edin, rasyonel fonksiyon ise, yani iki polinomun oranı şeklinde ise,
+
+266
+00:37:53,527 --> 00:37:55,188
+limit kıyaslama testi genellikle
+
+267
+00:37:55,188 --> 00:37:57,027
+çok iyi işe yarar.
+
+268
+00:37:57,027 --> 00:37:57,827
+Evet.
+
+269
+00:38:02,387 --> 00:38:03,387
+Dikkat edin arkadaşlar.
+
+270
+00:38:03,588 --> 00:38:09,047
+These guidelines will help, but in the end, convergent tenses are mastered through practice.
+
+271
+00:38:09,327 --> 00:38:10,168
+It's your turn.
+
+272
+00:38:10,867 --> 00:38:12,547
+Şimdi sizin sıranız arkadaşlar.
+
+273
+00:38:13,527 --> 00:38:14,748
+İşin mantığını kavradınız mı?
+
+274
+00:38:14,947 --> 00:38:17,967
+Önemli olan mantığını kavradıktan sonra söz çözmek.
+
+275
+00:38:18,067 --> 00:38:19,447
+Okay, you need to practice.
+
+276
+00:38:20,907 --> 00:38:22,847
+Okay, look at this.
+
+277
+00:38:24,947 --> 00:38:28,027
+Do you think which test is the best one?
+
+278
+00:38:34,547 --> 00:38:54,667
+Hangi test uygulamak avantajlı olur burada? Dokuzuncu soruda. Which test is the best one? Birkaç tanesini çözelim. Which test is the best one in order to determine the character of this series? Herkes düşündü mü?
+
+279
+00:38:56,019 --> 00:39:05,099
+Uygula bakayım. Herkes ratio test uygulasın. [öğrenci] ratio test dedi. [öğrenci] ratio test dedi. Evet, herkes uygulasın.
+
+280
+00:39:14,260 --> 00:39:18,200
+Oran testinin hatırlayın mantığı neydi aslında arkadaşlar?
+
+281
+00:39:18,720 --> 00:39:21,700
+AK artı bir bölü AK'nın ona R diyelim.
+
+282
+00:39:22,220 --> 00:39:24,539
+AK artı bir bölü AKR oluyor.
+
+283
+00:39:24,760 --> 00:39:28,200
+Yani belli bir adımdan sonra AK artı bir eşittir R çarpı AK oluyor.
+
+284
+00:39:28,559 --> 00:39:30,160
+Bir geometrik seri elde ediyorsunuz aslında.
+
+285
+00:39:30,740 --> 00:39:39,559
+AK çarpı bir artı R artı belli bir adımdan sonra bütün terimler AK çarpı bir artı R artı nokta nokta nokta bir geometrik seri şeklinde davranacak arkadaşlar serimiz.
+
+286
+00:39:39,960 --> 00:39:40,640
+Dolayısıyla ne oldu?
+
+287
+00:39:40,640 --> 00:39:42,240
+Geometrik seriye dönüştürmüş.
+
+288
+00:39:42,260 --> 00:39:46,960
+Eğer R'miz arkadaşlar 1'e eşit olursa geometrik seride yakınsak oluyor muydu? Olmuyordu.
+
+289
+00:39:47,500 --> 00:39:55,600
+R 0 ile 1 arasında olursa birden küçük o zaman yakınsak oluyordu. Ona dikkat edin. R 1 olursa test işe yaramaz.
+
+290
+00:39:57,260 --> 00:40:02,160
+Buldunuz mu? Oran testi işe yarıyor mu? Yoksa işe yaramayan bir sonuç mu elde ettiniz?
+
+291
+00:40:04,600 --> 00:40:06,200
+Herkesin önünde kağıt kalem olsun.
+
+292
+00:40:19,059 --> 00:40:19,539
+Evet.
+
+293
+00:40:25,492 --> 00:40:28,672
+Oran testinden mi buldun? Tamam, bakalım.
+
+294
+00:40:31,271 --> 00:40:31,672
+Okay.
+
+295
+00:40:32,992 --> 00:40:35,052
+Let's apply Creshe test.
+
+296
+00:40:37,912 --> 00:40:44,592
+Limit as k goes to infinite, ak plus 1 over ak.
+
+297
+00:40:45,812 --> 00:40:51,211
+Limit as k goes to infinite, 1 over ak.
+
+298
+00:40:51,572 --> 00:40:57,692
+So that is k! over k plus 1!
+
+299
+00:40:57,692 --> 00:41:06,572
+Limit as k goes to infinite k! times k plus 1!
+
+300
+00:41:06,943 --> 00:41:11,643
+Okay, k! L. So this and this simplified.
+
+301
+00:41:11,643 --> 00:41:15,143
+The answer for this, so this goes to zero.
+
+302
+00:41:15,143 --> 00:41:17,443
+This zero smaller than one.
+
+303
+00:41:17,443 --> 00:41:20,943
+By the comparison test, that is convergent.
+
+304
+00:41:21,943 --> 00:41:25,443
+Okay, which test is the best one?
+
+305
+00:41:25,443 --> 00:41:29,344
+Ratio test or comparison ratio test or root test?
+
+306
+00:41:29,344 --> 00:41:32,943
+I think ratio test is the best one, not root test.
+
+307
+00:41:32,943 --> 00:41:34,795
+Ratio test.
+
+308
+00:41:34,835 --> 00:41:47,775
+Okay, all of them, for all of them, you need to apply ratio test. Okay, yeah, I think you can decide whether those are convergent or divergent, so those are homeworks for you.
+
+309
+00:41:48,047 --> 00:41:51,207
+Dikkat edin arkadaşlar, bunlar ödev, siz yaparsınız, basit ödevler bunlar.
+
+310
+00:41:51,507 --> 00:41:56,327
+Bakın ne tarz sorular olduğuna dikkat edin, ne tarz serilerde oran testi işe yarar.
+
+311
+00:41:56,327 --> 00:42:05,447
+As you see, we have k-factor over k2k, so we got this exponential function, so we got this exponential function, this.
+
+312
+00:42:06,167 --> 00:42:12,907
+Okay, when you see such series, it is better to apply ratio test.
+
+313
+00:42:13,556 --> 00:42:24,056
+Ama if you try to apply root test, also you can apply root test, but sometimes it is not better to apply root test. You need to prefer ratio test.
+
+314
+00:42:24,856 --> 00:42:36,795
+So what about these cases? As you see, in such cases, it is better to apply root test. Okay, so as you see, this one. Let's apply root test.
+
+315
+00:42:41,460 --> 00:42:43,920
+Herkes şuna uygulasın arkadaşlar.
+
+316
+00:42:44,699 --> 00:42:48,679
+Let's try to apply root test for this.
+
+317
+00:42:50,639 --> 00:42:51,859
+Bunu uygulasın bakayım herkes.
+
+318
+00:42:53,440 --> 00:42:55,839
+Bir tanesini çözelim. Gerisini siz çözersiniz.
+
+319
+00:42:59,476 --> 00:43:01,476
+Let's try to apply root test.
+
+320
+00:43:23,188 --> 00:43:26,248
+[öğrenci], burada yok [öğrenci] herhalde.
+
+321
+00:43:30,195 --> 00:43:33,936
+[öğrenci], [öğrenci] ne yaptın? 23. soruyu çözüyor musun [öğrenci]?
+
+322
+00:43:41,235 --> 00:43:41,715
+Evet.
+
+323
+00:43:43,556 --> 00:43:45,455
+Kök testini uygulayacaksın bu ket.
+
+324
+00:43:46,596 --> 00:43:47,596
+Neydi kök testi?
+
+325
+00:43:47,715 --> 00:43:49,235
+Kök derecesi K olacak.
+
+326
+00:43:49,735 --> 00:43:52,536
+Ondan sonra kök altına AK'yı yerleştireceksin.
+
+327
+00:43:52,795 --> 00:43:53,795
+Limitini alacaksın.
+
+328
+00:43:54,536 --> 00:44:00,175
+Bulduğun sonuç sıfırla bir arasında ise o zaman birden bir eşit olmayacak.
+
+329
+00:44:00,175 --> 00:44:02,056
+O zaman serimiz yakınsaktır.
+
+330
+00:44:02,135 --> 00:44:03,536
+Aksi durumda ıraksak olacak.
+
+331
+00:44:03,715 --> 00:44:04,835
+Geometrik seriye dönüşüyor.
+
+332
+00:44:04,935 --> 00:44:08,815
+Çünkü AK artı bir bölü AK ile seriyi geometrik seriye dönüştürebilirsin.
+
+333
+00:44:09,268 --> 00:44:13,768
+Evet. [öğrenci]. Ne yaptın [öğrenci]? Buldun mu [öğrenci]?
+
+334
+00:44:16,288 --> 00:44:18,307
+Hocam çözmeye çalışıyorum şu an.
+
+335
+00:44:20,827 --> 00:44:21,428
+Tamam.
+
+336
+00:44:29,012 --> 00:44:31,172
+kök testini uygulayacaksınız gençler.
+
+337
+00:44:32,532 --> 00:44:32,932
+Okay.
+
+338
+00:44:34,211 --> 00:44:37,972
+Limit as k goes to infinite,
+
+339
+00:44:41,572 --> 00:44:42,851
+root degree k,
+
+340
+00:44:44,211 --> 00:44:45,412
+radical symbol,
+
+341
+00:44:46,452 --> 00:44:46,731
+okay.
+
+342
+00:44:49,412 --> 00:44:50,932
+If this limit result,
+
+343
+00:44:52,211 --> 00:45:01,632
+Bikre than or equal to zero and smaller than one, then we say that series is convergent. Otherwise, series is divergent.
+
+344
+00:45:20,307 --> 00:45:21,887
+Evet. Ne bulduk?
+
+345
+00:45:36,916 --> 00:45:40,695
+Evet, yakınsak bulmuş, [öğrenci] yakınsak bulmuş.
+
+346
+00:45:41,275 --> 00:45:42,695
+Okay, let's try this all together.
+
+347
+00:45:44,516 --> 00:45:48,135
+For this, so this is ak, let me arise.
+
+348
+00:45:51,923 --> 00:46:12,024
+Let me use blue color. Limit as k goes to infinite, root degree, ak, so k. Limit as k goes to infinite, we got this result if you apply this operation.
+
+349
+00:46:12,024 --> 00:46:19,024
+So, k over, let me write this.
+
+350
+00:46:23,635 --> 00:46:25,795
+2k² over k, 2k.
+
+351
+00:46:27,575 --> 00:46:41,455
+Now, this is k, as k goes to infinite, we got 1 minus 1 over k plus 1, 2k, and square of this, square of this.
+
+352
+00:46:41,455 --> 00:46:50,935
+So, this goes to, as you see, by the popular formula, so this goes to exponential minus 1.
+
+353
+00:46:51,347 --> 00:46:52,507
+You can show this.
+
+354
+00:46:52,847 --> 00:46:53,067
+Okay?
+
+355
+00:46:53,907 --> 00:46:55,228
+Bunu gösterebilirsiniz arkadaşlar.
+
+356
+00:46:56,487 --> 00:46:58,168
+E üzeri eksi bire gidecek.
+
+357
+00:46:59,027 --> 00:47:00,768
+O zaman burada şurada karesi de var.
+
+358
+00:47:01,587 --> 00:47:02,768
+Bir bölü e kare.
+
+359
+00:47:03,527 --> 00:47:04,248
+Ne oluyor arkadaşlar?
+
+360
+00:47:04,248 --> 00:47:06,748
+Sıfırdan büyük, birden küçük.
+
+361
+00:47:07,307 --> 00:47:09,027
+That's why that is convergent.
+
+362
+00:47:09,367 --> 00:47:10,107
+Is there any mistake?
+
+363
+00:47:12,208 --> 00:47:13,748
+Sorusu olan yok galiba.
+
+364
+00:47:15,135 --> 00:47:18,855
+Diğerleri basit zaten, all of them are simple ones.
+
+365
+00:47:19,295 --> 00:47:20,596
+Okay, this goes to zero.
+
+366
+00:47:21,195 --> 00:47:23,835
+If you ignore this and this, k.
+
+367
+00:47:24,271 --> 00:47:27,271
+bu kadar 0, ok?
+
+368
+00:47:52,724 --> 00:47:58,564
+Evet, herhalde anlaşıldı.
+
+369
+00:47:58,564 --> 00:48:03,324
+Evet, let's apply comparision test or limit comparision test.
+
+370
+00:48:03,324 --> 00:48:07,164
+So, by the limit comparision test, you can show that.
+
+371
+00:48:08,903 --> 00:48:09,903
+Evet, so, by the limit comparison test, you can show that.
+
+372
+00:48:09,903 --> 00:48:10,903
+Okay, so,
+
+373
+00:48:08,788 --> 00:48:27,827
+This is ak, so let's prefer to use bk, 1 over k square. We know that 1 over, a series generated by 1 over k square is convergent. So if you consider the limit of ratio of these terms, ak over bk.
+
+374
+00:48:28,244 --> 00:48:52,824
+Now the answer is 1. So, this is non-zero term. So this says that the series generated by a k and b k are of the same karakter. İkisi aynı karakterdendir. Dolayısıyla bir bölük k kare ile oluşturulan seri yakınsak, dolayısıyla öteki de yakınsak. Okay, this is convergent.
+
+375
+00:48:55,027 --> 00:49:20,895
+ve bu k2 k3 k
+
+376
+00:49:20,896 --> 00:49:26,716
+So, by the limit completion test, okay, you can obtain one.
+
+377
+00:49:27,135 --> 00:49:33,735
+Ok, non-zero terms. That's why they are of the same character. Yani bunu da gösterebilirsiniz. İşlemleri tek tek yapmıyorum.
+
+378
+00:49:34,315 --> 00:49:42,155
+So, you can compare these series generated by k square over k to 4, 1 over k square. Ok.
+
+379
+00:49:42,516 --> 00:49:46,875
+And we know that the series generated by 1 over k square is convergent.
+
+380
+00:49:47,155 --> 00:49:52,875
+So, if you consider limit of ak over, this is ak, so this is pk.
+
+381
+00:49:53,300 --> 00:49:59,640
+ak over bk limits, as k goes to infinite, is 1. That's why this is also conversion.
+
+382
+00:50:00,000 --> 00:50:00,100
+Okay?
+
+383
+00:50:01,880 --> 00:50:06,120
+Now, similarly, you can show this. Bunları gösterebilirsiniz arkadaşlar.
+
+384
+00:50:06,860 --> 00:50:08,580
+Okay, let's try to solve this one.
+
+385
+00:50:09,440 --> 00:50:12,019
+Herkes bunu yapsın. Hadi bunu detaylı detaylı çözelim.
+
+386
+00:50:12,720 --> 00:50:15,620
+Okay, let's try to solve this problem.
+
+387
+00:50:16,340 --> 00:50:16,600
+Evet.
+
+388
+00:50:17,360 --> 00:50:19,660
+Başüst olmayan bir tane çözelik zor ol bana.
+
+389
+00:50:21,844 --> 00:50:22,284
+Evet.
+
+390
+00:50:22,744 --> 00:50:22,963
+Ok.
+
+391
+00:50:23,063 --> 00:50:24,423
+Let's write Saul 33.
+
+392
+00:50:25,284 --> 00:50:26,824
+İşin mantığını kavradınız herhalde.
+
+393
+00:50:45,748 --> 00:50:51,348
+Evet. Ben de şöyle bir beyaz tahtı açayım. Böyle detaylı detaylı çözelim.
+
+394
+00:51:17,556 --> 00:51:20,215
+Görüyorsunuz değil mi arkadaşlar? Can you see my whiteboard?
+
+395
+00:51:22,215 --> 00:51:22,815
+Yes.
+
+396
+00:51:29,972 --> 00:51:32,052
+Nasıl arkadaşlar sorun, unutmayın.
+
+397
+00:51:32,892 --> 00:51:34,612
+Sinüs 1 bölük k k kare.
+
+398
+00:51:34,852 --> 00:51:35,012
+Tamam.
+
+399
+00:51:36,392 --> 00:51:38,512
+Okey, so this is our series.
+
+400
+00:51:48,563 --> 00:51:54,283
+Ok, which series must be used in order to compare this series?
+
+401
+00:51:54,283 --> 00:51:55,283
+Ok.
+
+402
+00:52:02,835 --> 00:52:09,896
+Evet gençler, hangi seri ile kıyaslamalıyız? Hangi terimlerle üretilen seri ile kıyaslamalıyız?
+
+403
+00:52:15,891 --> 00:52:17,011
+This is ak.
+
+404
+00:52:19,951 --> 00:52:22,311
+So we need to consider some bk.
+
+405
+00:52:24,791 --> 00:52:25,431
+Y.
+
+406
+00:52:36,788 --> 00:52:41,387
+Ok, let's try so, 1 over k square.
+
+407
+00:52:43,027 --> 00:52:52,267
+Limit as k goes to infinite, ak over bk.
+
+408
+00:52:54,407 --> 00:53:01,687
+Limit as k goes to infinite, ak is sine 1 over k.
+
+409
+00:53:02,164 --> 00:53:19,484
+over k2, this is ak, and so let's consider pk, 1 over k2. So this answer is limit as k goes to infinite sine 1 over k2.
+
+410
+00:53:19,983 --> 00:53:22,743
+ve bu 0.
+
+411
+00:53:22,743 --> 00:53:23,983
+Bu 0.
+
+412
+00:53:23,983 --> 00:53:25,623
+Bu konuda bu.
+
+413
+00:53:25,623 --> 00:53:26,983
+Bu konuda,
+
+414
+00:53:26,983 --> 00:53:45,103
+bu konuda,
+
+415
+00:53:45,103 --> 00:54:03,344
+Conclusive or inconclusive? Sonuç veren bir şey mi yoksa? Sonuç vermeyen bir eşitsizlik mi? Kıyaslama testine göre düşünecek olursak. K'lar sonsuza giderken, AK bölü, BK limiti 0 geliyorsa, AK'lar, BK'lardan yeterince küçüktür.
+
+416
+00:54:12,851 --> 00:54:20,211
+1 over k2 is convergent according to P-series test.
+
+417
+00:54:21,311 --> 00:54:31,092
+So that's why, so if this series, if the series generated by Bk is convergent,
+
+418
+00:54:31,632 --> 00:54:36,791
+so by the limit comparison test or comparison test, this series,
+
+419
+00:54:37,268 --> 00:54:40,588
+Must be also convergent, attention here.
+
+420
+00:54:43,428 --> 00:54:52,688
+By the limit comparison test.
+
+421
+00:54:54,827 --> 00:55:01,048
+Okey. Dikkat edin. O zaman serimiz yakınsak geldi. Anlaşımda bir yer var mı?
+
+422
+00:55:05,844 --> 00:55:11,684
+Güzel. Öğrendiniz galiba. İşin mantığını kavrarsanız, stres katsayınız azalır.
+
+423
+00:55:13,544 --> 00:55:15,923
+Ne kadar çok ezber, o kadar çok stres.
+
+424
+00:55:16,983 --> 00:55:20,524
+The more you memorize, the more you have stress.
+
+425
+00:55:22,403 --> 00:55:27,844
+The more you learn logic, the more you have...
+
+426
+00:55:29,043 --> 00:55:33,643
+Rahatlık ne deriz arkadaşlar? Bilmiyorum. Orayı kurgulayamadım. İngilizcesini. Evet.
+
+427
+00:55:36,244 --> 00:55:36,943
+Let's go on.
+
+428
+00:55:43,507 --> 00:55:51,007
+Ya da bir ara verelim. Okey, let's break. 15 minutes. 15 dakika ara. Break. 15 minutes.
+
+429
+00:55:54,771 --> 00:55:57,311
+Sorusu olan varsa söyleyebiliriz, açıklayabiliriz.
+
+430
+00:56:01,043 --> 00:56:23,323
+Tabi dersi arkadaşlar, baştan sona dinlemeniz lazım, not almanız lazım. Özellikle çözerken ben, diğer kısımlarda not almanıza gerek yok ama çözerken muhakkak, mesela bir tane örneği özel olarak alıp çözüyoruz ya, orada çözmeye çalışın. Önünüzde bulunsun. Çözdüğünüz o notlar. Tamam mı gençler? Evet, sorunuz yoksa 15 dakika ara.
+
+431
+01:10:11,572 --> 01:10:13,372
+Merhaba arkadaşlar, sesim geliyor mu?
+
+432
+01:10:22,707 --> 01:10:23,188
+Evet.
+
+433
+01:10:29,492 --> 01:10:33,792
+Ok, so we introduced some tests so far.
+
+434
+01:10:35,852 --> 01:10:39,971
+So let me talk about, let me summarize this test.
+
+435
+01:10:49,011 --> 01:10:50,371
+Divergence test.
+
+436
+01:10:55,796 --> 01:11:19,296
+Okay, so there is no any condition, so we have any series. This an turns maybe negative or positive. Okay, if limit as n goes to infinite an, non-zero, we can say that. So an is divergent. Okay, so this is divergent test.
+
+437
+01:11:20,020 --> 01:11:28,560
+İntegrel test, so integration test, positively define, okay? Okay, let me erase this.
+
+438
+01:11:33,171 --> 01:11:37,391
+Ak, terms are positive.
+
+439
+01:11:37,931 --> 01:11:40,551
+Otherwise, you cannot apply this test.
+
+440
+01:11:42,071 --> 01:11:42,471
+Okay.
+
+441
+01:11:43,251 --> 01:11:44,791
+Integration test.
+
+442
+01:11:46,631 --> 01:11:47,631
+Integration
+
+443
+01:11:47,631 --> 01:11:51,471
+ratio
+
+444
+01:11:51,471 --> 01:11:54,811
+root
+
+445
+01:11:59,028 --> 01:12:00,028
+Comparison,
+
+446
+01:12:03,028 --> 01:12:04,028
+and Limit Comparison.
+
+447
+01:12:07,028 --> 01:12:13,028
+Ok, positiveness is precondition in order to apply this test.
+
+448
+01:12:14,028 --> 01:12:16,028
+Ok, so in this case,
+
+449
+01:12:18,028 --> 01:12:21,028
+Alternating Harmonic Series,
+
+450
+01:12:22,028 --> 01:12:23,028
+so,
+
+451
+01:12:25,460 --> 01:12:35,159
+So, in this case, as you see, the sign of terms alternates plus, minus, plus, minus, plus, minus, or minus, plus, minus, plus, doesn't matter, okay?
+
+452
+01:12:35,680 --> 01:12:41,220
+That's why we call such series alternating series test, but this is alternating harmonic series.
+
+453
+01:12:42,220 --> 01:12:48,880
+But this alternates coming from the fact that the sign of terms always change, okay?
+
+454
+01:12:49,600 --> 01:12:52,479
+But, so, any alternating series test, so,
+
+455
+01:12:52,895 --> 01:12:56,275
+Ak, kısmi türev ve katlı, ok?
+
+456
+01:12:56,716 --> 01:13:03,995
+But in order to alterate, ok, sin, so we put this factor, minus 1 to k plus 1.
+
+457
+01:13:04,755 --> 01:13:10,115
+So in such cases, we call this series, alternating series, ok?
+
+458
+01:13:10,675 --> 01:13:16,975
+So how can we figure out, these alternating series tests are convergent or divergent?
+
+459
+01:13:18,195 --> 01:13:42,216
+In order to say an alternating series test, so we need to check out, sorry, we need to check out, ak terms are non-increasing or decreasing, you can say that ak terms are decreasing, and as k goes to infinite ak, is approaching zero.
+
+460
+01:13:42,216 --> 01:13:45,136
+Okay, now attention here.
+
+461
+01:13:45,492 --> 01:13:50,492
+Ak'da bir kere daha doğrusu.
+
+462
+01:13:50,492 --> 01:13:53,492
+İlk kere daha doğrusu.
+
+463
+01:13:53,492 --> 01:14:05,492
+Ak'da bir kere daha doğrusu.
+
+464
+01:14:06,771 --> 01:14:15,032
+So, minus 1 to n, or n plus 1, doesn't matter. So, this alternating series is convergent.
+
+465
+01:14:15,692 --> 01:14:34,072
+Is convergent. Okay. If one of them, okay, so for example, suppose that, so not this, suppose that this, either this or this, okay, do not hold. So, we say that series is,
+
+466
+01:14:34,515 --> 01:14:42,755
+Yani şu iki koşuldan biri sağlanmazsa, direkt ıraksak diyebilirsiniz arkadaşlar. Mesela örnek verelim.
+
+467
+01:14:44,036 --> 01:14:44,716
+Örnekleri var.
+
+468
+01:14:44,775 --> 01:14:45,855
+Look at this example.
+
+469
+01:14:46,716 --> 01:14:50,255
+So here, a k, so this is the alternative series.
+
+470
+01:14:50,515 --> 01:14:52,456
+A k, 1 over k square.
+
+471
+01:14:52,755 --> 01:14:55,835
+1 over k square is always positive.
+
+472
+01:14:56,635 --> 01:14:57,755
+So this is decreasing.
+
+473
+01:14:59,115 --> 01:14:59,915
+Decreasing.
+
+474
+01:15:02,899 --> 01:15:09,959
+ve 1 k² olarak 0, k olarak k olarak 0, k olarak 0.
+
+475
+01:15:09,959 --> 01:15:15,699
+Bu yüzden bu alternatif series test, alternatif, or Leibniz test,
+
+476
+01:15:15,699 --> 01:15:17,399
+some people say Leibniz test,
+
+477
+01:15:17,399 --> 01:15:21,159
+but I generally prefer to use alternatif series test,
+
+478
+01:15:21,159 --> 01:15:22,399
+so this is convergent.
+
+479
+01:15:23,399 --> 01:15:26,699
+Alternatif series test says that,
+
+480
+01:15:29,395 --> 01:15:30,976
+That is convergent.
+
+481
+01:15:31,496 --> 01:15:33,655
+So, say that is convergent.
+
+482
+01:15:35,175 --> 01:15:35,895
+Okay.
+
+483
+01:15:41,747 --> 01:15:49,907
+Okay, now let's consider this one. Do you think is this series convergent or divergent? So actually this is alternating series test.
+
+484
+01:15:50,647 --> 01:16:08,847
+Okay, now we have some series, alternating series, as n from 1 from 0 to infinite n over n plus 1.
+
+485
+01:16:10,452 --> 01:16:13,272
+Böyle mi arkadaşlar? 2 ile başlıyor. Doğru mu?
+
+486
+01:16:14,631 --> 01:16:16,391
+N2'den başlatalım biz de.
+
+487
+01:16:18,492 --> 01:16:22,231
+2'den başlatırsak şöyle. N artı 1 bölü N olur. Doğru mu?
+
+488
+01:16:22,692 --> 01:16:24,352
+N plus 1 over N.
+
+489
+01:16:24,532 --> 01:16:25,912
+So let's start by 2.
+
+490
+01:16:27,012 --> 01:16:30,811
+We have this alternating series test.
+
+491
+01:16:32,391 --> 01:16:34,592
+So this is A N.
+
+492
+01:16:40,115 --> 01:16:41,576
+This is a n.
+
+493
+01:16:43,396 --> 01:16:45,435
+This is minus 1 to n.
+
+494
+01:16:45,515 --> 01:16:50,456
+In order to say this is alternating series, we need to put this factor minus 1 to n.
+
+495
+01:16:50,456 --> 01:16:52,916
+So this is always positive a n.
+
+496
+01:16:53,755 --> 01:16:58,136
+Okay, so n plus 1 over n goes to 1.
+
+497
+01:16:58,235 --> 01:16:59,815
+Does not approach 0.
+
+498
+01:17:00,435 --> 01:17:06,795
+Bu yüzden bu konvergant, bu konvergant, bu konvergant, genel term test.
+
+499
+01:17:06,795 --> 01:17:08,515
+Tamam, you can easily see that.
+
+500
+01:17:26,131 --> 01:17:29,691
+That is, divergent.
+
+501
+01:17:32,191 --> 01:17:32,912
+Dikkat edin.
+
+502
+01:17:34,031 --> 01:17:40,831
+Alternatif seri testine göre yakınsak gelmedi ama o dolayı doğal olarak, bıraksaklık testine göre bıraksak çıkacaktır.
+
+503
+01:17:40,831 --> 01:17:42,931
+So what about this?
+
+504
+01:17:43,751 --> 01:17:45,371
+So consider this series.
+
+505
+01:17:45,912 --> 01:17:48,671
+So ak, ak.
+
+506
+01:17:49,747 --> 01:18:01,827
+lnk over k, that is always positive. So because of this factor minus 1 to k, this series is alternating series test, alternating series, sorry.
+
+507
+01:18:02,127 --> 01:18:08,188
+This means that we can apply alternating series test. So this is decreasing. So if you derivate this,
+
+508
+01:18:08,543 --> 01:18:25,943
+You can see that this is decreasing function, but you don't need to derivate this in order to see this is decreasing. So which term go fast? Okay, is this lnk or is this k? I think so. K, okay. K is increasing.
+
+509
+01:18:28,787 --> 01:18:37,987
+Always. Also lnk is also increasing, but this k, the velocity of this k is bigger than the velocity of change of this lnk.
+
+510
+01:18:38,107 --> 01:18:40,127
+That's why this is decreasing.
+
+511
+01:18:41,167 --> 01:18:41,768
+Decreasing.
+
+512
+01:18:42,387 --> 01:18:45,587
+lnk, ak goes to 0.
+
+513
+01:18:46,107 --> 01:18:48,087
+lnk over k goes to 0.
+
+514
+01:18:48,567 --> 01:18:52,167
+You can see that by the L'Hôpital's rule.
+
+515
+01:18:52,167 --> 01:18:55,167
+So that's why this item c is convergent.
+
+516
+01:18:56,115 --> 01:18:58,935
+according to alternating series test.
+
+517
+01:19:00,076 --> 01:19:00,355
+Okay.
+
+518
+01:19:03,716 --> 01:19:06,655
+As you see, item B diverge.
+
+519
+01:19:08,115 --> 01:19:09,675
+You don't need to derivate this.
+
+520
+01:19:09,996 --> 01:19:12,416
+You can easily see that this is a decreasing function.
+
+521
+01:19:13,695 --> 01:19:15,796
+And the ak goes to zero.
+
+522
+01:19:16,056 --> 01:19:21,556
+That is, okay, convergent according to alternating series test.
+
+523
+01:19:22,076 --> 01:19:22,956
+Is there an equation?
+
+524
+01:19:26,868 --> 01:19:52,068
+AVS'e yükledim ya, [şifre] şifresiyle girebiliyorsunuz bunları. Yüklenmiş halde var zaten. Var diye hatırlıyorum. Yani hepsi farklı dosyaymış gibi gözüküyor ama eksik değil. İlk dosyalar eksik. Son dosyayı indirirseniz o 533 sayfalık bir şey olacak. O tam. Sadece son dosyayı indirmeniz yeterli.
+
+525
+01:19:54,484 --> 01:20:01,364
+The last one. Okay, the last one is the best one. Okay.
+
+526
+01:20:05,011 --> 01:20:05,531
+No
+
+527
+01:20:09,619 --> 01:20:10,619
+Let's go on.
+
+528
+01:20:13,920 --> 01:20:16,920
+Absolute and conditional convergence test.
+
+529
+01:20:17,100 --> 01:20:18,000
+So what does it mean?
+
+530
+01:20:20,579 --> 01:20:23,079
+So let me talk about this.
+
+531
+01:20:27,091 --> 01:20:34,971
+Here, absolute convergence test, let me clean my page.
+
+532
+01:20:34,971 --> 01:20:45,811
+Okay, so, let this be a given, okay, any series.
+
+533
+01:20:46,131 --> 01:20:50,572
+This means that ak may be positive or negative.
+
+534
+01:20:51,072 --> 01:20:52,811
+Okay, now,
+
+535
+01:20:54,068 --> 01:21:05,467
+You cannot apply many tests to this series because of this fact. So these ak terms may be negative or positive.
+
+536
+01:21:06,327 --> 01:21:18,347
+But we can apply this if you consider the absolute of this. So this is smaller than this.
+
+537
+01:21:23,315 --> 01:21:24,975
+Also, we can write this.
+
+538
+01:21:36,020 --> 01:21:45,860
+Ok, now, so focus on this fact, if this convergent,
+
+539
+01:21:52,659 --> 01:22:04,699
+Okay, so this is a series, a series with positive term, positive terms.
+
+540
+01:22:06,119 --> 01:22:13,260
+If this series generated by absolute of ak terms is convergent,
+
+541
+01:22:16,260 --> 01:22:19,420
+then from the logical point of view,
+
+542
+01:22:19,988 --> 01:22:20,468
+Ok.
+
+543
+01:22:26,931 --> 01:22:28,351
+İzseyi, to be.
+
+544
+01:22:34,003 --> 01:22:36,144
+Absolutely convergent.
+
+545
+01:22:44,467 --> 01:22:45,688
+So, remark that.
+
+546
+01:22:46,847 --> 01:22:47,847
+Remark that.
+
+547
+01:22:57,939 --> 01:23:01,340
+Any series is absolutely convergent.
+
+548
+01:23:09,524 --> 01:23:10,164
+then
+
+549
+01:23:10,164 --> 01:23:13,644
+is
+
+550
+01:23:13,644 --> 01:23:15,203
+convergent.
+
+551
+01:23:15,984 --> 01:23:20,084
+Mutlak yakınsak ise yakınsaktır. Mutlak sıfatını kaldırırsınız orada arkadaşlar.
+
+552
+01:23:21,144 --> 01:23:23,804
+So this is adjective in Turkish. Mutlak
+
+553
+01:23:23,804 --> 01:23:26,564
+yakınsak.
+
+554
+01:23:28,164 --> 01:23:30,264
+This is adjective sıfat.
+
+555
+01:23:32,543 --> 01:23:36,324
+Bu da sıfat ama sıfatı tamlayan bir tane başka daha sıfat.
+
+556
+01:23:36,655 --> 01:23:41,395
+Tamam mı? Yakınsak, isim aslında aynı zamanda, isim olarak da görebiliriz.
+
+557
+01:23:41,395 --> 01:23:51,195
+If you have some mutlak yakınsak in Turkish, implies that this.
+
+558
+01:23:51,916 --> 01:23:59,136
+Bir şey mutlak yakınsak ise sıfatını kaldırırsam isim hali kalır yakınsak diyebilirsiniz. Tamam mı gençler? Evet.
+
+559
+01:23:59,891 --> 01:24:03,891
+Şimdi, yani nasıl şuradan, burayla ilişkili diyebiliriz sonuç.
+
+560
+01:24:03,891 --> 01:24:04,791
+Bu sonuç.
+
+561
+01:24:06,171 --> 01:24:06,951
+Ok, consider.
+
+562
+01:24:12,659 --> 01:24:22,860
+Consider this alternating harmonic series, as you see, so this is series with any term, so terms may be negative or positive, but alternating series.
+
+563
+01:24:23,760 --> 01:24:38,680
+Okay, now if you take the absolute of each term, so we got this, so we know that, so this is convergent, if you take the absolute of this series, you got this series, which is convergent, that's why you can say that this alternating series test,
+
+564
+01:24:39,347 --> 01:25:04,395
+Bu, bu
+
+565
+01:25:06,579 --> 01:25:12,920
+serisi test, it is convergent.
+
+566
+01:25:15,159 --> 01:25:18,840
+Attention here, so we have 1 over k, positive terms.
+
+567
+01:25:19,299 --> 01:25:27,279
+In order to obtain alternating serisi test, we need to put this, because of this factor, minus 1 to k plus 1, that is alternating serisi.
+
+568
+01:25:27,420 --> 01:25:30,079
+This means that we can apply alternating serisi test.
+
+569
+01:25:30,659 --> 01:25:33,719
+Now, so 1 over k is decreasing and
+
+570
+01:25:34,131 --> 01:25:44,171
+approaching zero, one over k, decreasing. That's why this is convergent series, by the alternating series test.
+
+571
+01:25:44,331 --> 01:25:53,591
+But this is not absolutely convergent. Bakın yakınsak diyoruz ama önüne arkadaşlar mutlak sıfatını koyamıyoruz. Doğru mu?
+
+572
+01:25:53,591 --> 01:26:01,591
+Önüne mutlak sıfatını, mutlak yakınsaktır diyemiyorum. Bakın yakınsak diyorum ama mutlak yakınsak diyemiyorum.
+
+573
+01:26:02,068 --> 01:26:07,068
+Evet, bu bir konvergist, ama bu konvergist.
+
+574
+01:26:07,068 --> 01:26:08,068
+Çünkü bu konvergist.
+
+575
+01:26:08,068 --> 01:26:14,068
+Bu konvergist, bu konvergist.
+
+576
+01:26:14,068 --> 01:26:25,644
+Bu konvergist.
+
+577
+01:26:25,844 --> 01:26:32,043
+Because of the fact that if you take the absolute of this term, you got some divergent series.
+
+578
+01:26:32,224 --> 01:26:35,144
+Okay? Not absolutely convergent.
+
+579
+01:26:36,264 --> 01:26:39,184
+Dikkat edin. Yakınsaktır ama mutlak yakınsak olmadı.
+
+580
+01:26:43,604 --> 01:27:03,024
+Okay, so this is a simple one. Absolute convergence implies convergence. Yani mutlak yakınsak ise yakınsaktır sıfatı kaldırırsınız. Mutlak yakınsak yakınsak. Ama her yakınsak mutlak iyi. Okay, so we know that. So in Turkish, let me explain this. Mutlak yakınsak in Turkish.
+
+581
+01:27:10,676 --> 01:27:17,676
+Yakınsak ise, mutlak yakınsak diyebilir misiniz arkadaşlar? Her zaman diyebilir misiniz?
+
+582
+01:27:25,652 --> 01:27:36,131
+So, let's say this is P, implies Q, not equivalent, Q implies P.
+
+583
+01:27:36,852 --> 01:27:39,512
+Okay, so this is a counterexample, this.
+
+584
+01:27:39,971 --> 01:27:45,852
+This is a convergent, according to alternating series test, but not absolute, as you see.
+
+585
+01:27:53,427 --> 01:28:11,007
+Okay, so let me introduce conditionally convergent. If you see such cases, so this is conditionally convergent, we can put adjective conditional, okay, because of the fact that if you take the absolute of that convergent series, you got divergent series, okay.
+
+586
+01:28:12,587 --> 01:28:15,108
+If you have some convergent
+
+587
+01:28:15,108 --> 01:28:18,467
+and
+
+588
+01:28:18,467 --> 01:28:19,747
+not
+
+589
+01:28:20,851 --> 01:28:22,592
+Absolutely convergent.
+
+590
+01:28:29,524 --> 01:28:34,724
+Bu iki informasyonun, result implies, conditionally convergent.
+
+591
+01:28:40,243 --> 01:29:02,343
+Yani bir seri yakınsak ama mutlak yakınsak değil. O zaman şartlı yakınsaktır. Yani bir sizi yakınsaklığın önüne mutlağı koyamıyorsanız doğal olarak ne olacak? Şartlı yakınsak olacak. Tamam mı? Yakınsaklığın önüne iki tane sıfat koyacaksınız. Ya mutlak ya da şartlı. Başka bir durum yok.
+
+592
+01:29:02,343 --> 01:29:05,983
+You can put two adjectives. Okay, in front of convergence.
+
+593
+01:29:31,328 --> 01:29:56,507
+Şartlı yakınsaklık nedir? Anlaşıldı. O zaman örnek verdik. Eksi bir üzeri k artı bir bölü k ile üretilen seri şartlı yakınsaktır. Neden? Kendisi yakınsak alternatör testine göre. Ama önüne mutlağı koyamıyorum. Çünkü mutlağını aldığımda ıraksak bir seri geldi. O zaman bu önüne yakınsaklıklığının önüne şartlı sıfatları koyabilirim. Tamam mı?
+
+594
+01:29:59,283 --> 01:30:07,643
+Let's try to identify the following series is absolutely or conditionally converged.
+
+595
+01:30:07,863 --> 01:30:17,823
+Okay, so what, look at here. Think about this. Her şey düşünsün bakalım. Is this absolutely converged or conditionally converged?
+
+596
+01:30:18,083 --> 01:30:23,943
+Her şey düşünsün bakalım, A şıkkında verilen seri mutlak mı, şartlı mı? Şartlı yakınsak mı?
+
+597
+01:30:29,939 --> 01:30:33,659
+Evet, buldunuz mu aşıklığındaki? Hemen söylemeniz lazım.
+
+598
+01:30:41,876 --> 01:30:49,596
+Nasıl bir seri arkadaşlar bu? Alternatif seri değil mi? Is this alternating series? Yes, that is alternating series.
+
+599
+01:30:50,296 --> 01:30:59,096
+So recall the conditions of alternating series test. So we have ak turns, 1 over square root of k, which are always positive for all k.
+
+600
+01:30:59,695 --> 01:31:07,775
+And 1 over square root of k is decreasing, okay, and approaching 0. That's why this is, okay.
+
+601
+01:31:08,500 --> 01:31:11,600
+convergent series by the alternating series test.
+
+602
+01:31:11,820 --> 01:31:14,940
+But if you take the absolute of these terms,
+
+603
+01:31:16,640 --> 01:31:19,400
+so you got the alternating series test,
+
+604
+01:31:20,020 --> 01:31:21,020
+so convergence
+
+605
+01:31:21,020 --> 01:31:26,579
+by the alternating series test.
+
+606
+01:31:27,039 --> 01:31:29,539
+But if you take the absolute of this expression,
+
+607
+01:31:30,340 --> 01:31:34,880
+so you are going to obtain 1 over absolute of this expression,
+
+608
+01:31:34,880 --> 01:31:35,360
+this.
+
+609
+01:31:35,764 --> 01:31:37,364
+is divergent.
+
+610
+01:31:38,564 --> 01:31:42,884
+So that's why this is conditionally, conditionally,
+
+611
+01:31:43,444 --> 01:31:46,404
+converts.
+
+612
+01:31:48,564 --> 01:31:50,304
+Evet, şartlı olarak yakınsak arkadaşlar.
+
+613
+01:31:51,304 --> 01:31:52,884
+What about this similarly?
+
+614
+01:31:53,804 --> 01:31:56,043
+This is conditionally,
+
+615
+01:31:59,731 --> 01:32:06,731
+Bu konverde, bu konverde, bu konverde, bu konverde,
+
+616
+01:32:06,731 --> 01:32:14,731
+konverde, ok, konverde, sorry, konverde, konverde,
+
+617
+01:32:14,731 --> 01:32:22,731
+konverde, konverde, konverde,
+
+618
+01:32:22,731 --> 01:32:23,724
+konverde,
+
+619
+01:32:25,747 --> 01:32:28,007
+by the alternating series test.
+
+620
+01:32:31,007 --> 01:32:43,087
+And if you take the absolute of these terms, you are going to obtain this series generated by 1 over k 3 over 2.
+
+621
+01:32:43,087 --> 01:32:45,087
+So it's convergent.
+
+622
+01:32:47,315 --> 01:32:51,315
+3 over 2 1.
+
+623
+01:32:51,315 --> 01:32:54,315
+Bu yüzden bu,
+
+624
+01:32:54,315 --> 01:32:58,315
+absolutely convergent.
+
+625
+01:32:58,315 --> 01:33:04,315
+As you see sin k
+
+626
+01:33:04,315 --> 01:33:06,315
+takes values between minus 1 and plus 1.
+
+627
+01:33:06,315 --> 01:33:09,315
+So this is not a series with positive term.
+
+628
+01:33:09,315 --> 01:33:12,315
+Some terms may be negative.
+
+629
+01:33:12,315 --> 01:33:13,983
+Look at here.
+
+630
+01:33:13,984 --> 01:33:36,684
+Ama bu,
+
+631
+01:33:36,948 --> 01:33:45,028
+Ok, so this is smaller than 1, 1 over k², we can write this. This is convergent.
+
+632
+01:33:47,547 --> 01:33:58,148
+So, this side, this is also convergent. As you see, absolute of this series is convergent. That's why this is absolutely convergent.
+
+633
+01:33:59,148 --> 01:33:59,868
+Absolutely.
+
+634
+01:34:02,036 --> 01:34:12,435
+convergent. Zaten mutlak yakınsak ise, aynı zamanda yakınsaktır. Önün elindeki sıfatı kaldırırsam sıkıntı yok. Mutlak yakınsak ise, yakınsaktır.
+
+635
+01:34:12,636 --> 01:34:16,855
+Ve şartlı yakınsak ise, o da yakınsak zaten. Sadece şartlı sıfatını kaldırıyorsun.
+
+636
+01:34:17,756 --> 01:34:24,676
+Ok, what about this? Is this conditionally convergent or absolutely convergent or divergent?
+
+637
+01:34:24,676 --> 01:34:29,296
+3 tane durum var. Şartlı mı? Mutlak şartlı yakınsak mı? Mutlak yakınsak mı?
+
+638
+01:34:29,971 --> 01:34:33,032
+Yoksa ıraksak mı? ıraksaklığın önüne bir şey koyamıyorsunuz.
+
+639
+01:34:33,872 --> 01:34:34,231
+Okay.
+
+640
+01:34:35,792 --> 01:34:38,931
+If you take the absolute of this, you got the divergence.
+
+641
+01:34:39,952 --> 01:34:41,511
+But this is the alternating series test.
+
+642
+01:34:41,712 --> 01:34:43,092
+So let's just focus on this.
+
+643
+01:34:43,172 --> 01:34:43,931
+This is ak.
+
+644
+01:34:44,731 --> 01:34:45,231
+ak.
+
+645
+01:34:45,692 --> 01:34:47,192
+So this is the alternating series.
+
+646
+01:34:47,552 --> 01:34:49,011
+k over k plus 1.
+
+647
+01:34:49,752 --> 01:34:51,132
+So this is approaching 1.
+
+648
+01:34:52,724 --> 01:35:15,164
+Ok, this is approaching 1. Also, you can write this. You don't need to write this. By the alternating series, that's divergent. Also, minus 1, k over k over k plus 1. General term of this series approaching 1 or minus 1. So by the divergence test and general term test.
+
+649
+01:35:16,020 --> 01:35:18,800
+This is divergent, not convergent.
+
+650
+01:35:19,800 --> 01:35:20,700
+Dıraksak oldu.
+
+651
+01:35:21,060 --> 01:35:25,880
+En genel terim testine göre veya alternatör testine göre bıraksak bulabiliyoruz.
+
+652
+01:35:25,880 --> 01:35:29,680
+Dört yüzü arkadaşlar, ne yapabiliyoruz?
+
+653
+01:35:29,740 --> 01:35:37,040
+Serilerimiz yakınsak mı, yakınsak ise şartlı mı, yoksa bıraksak mı, farklı mı, mutlak mı belirleyebiliyoruz arkadaşlar.
+
+654
+01:35:46,579 --> 01:35:48,180
+Bunları yaptık arkadaşlar.
+
+655
+01:35:50,260 --> 01:35:51,800
+Bunu da yaptık.
+
+656
+01:35:55,636 --> 01:35:58,536
+Ok, converged absolutely means that is convergent.
+
+657
+01:36:02,515 --> 01:36:24,635
+Ok, so because of the general term test, this is divergent. Ok, so this is summarizing of all tests. Ok, look at here. So we have geometric series, ok, of this form. Can you see that? Divergent test. So, divergent test.
+
+658
+01:36:26,100 --> 01:36:34,180
+So, if the general term of this limit, if the general term of this series is non-zero, we can say that, that is divergent.
+
+659
+01:36:34,659 --> 01:36:39,699
+Okay, so you cannot apply this method in order to show this is convergent.
+
+660
+01:36:40,260 --> 01:36:43,319
+Okay, integral test, p-series test.
+
+661
+01:36:44,000 --> 01:36:45,579
+So, this is summarizing of this.
+
+662
+01:36:45,640 --> 01:36:47,560
+So, okay, you can print this page.
+
+663
+01:36:48,699 --> 01:36:51,260
+Bu sayfayı arkadaşlar çıkartın, hep önünüze dursun.
+
+664
+01:36:51,260 --> 01:36:52,440
+Bunlar.
+
+665
+01:36:52,916 --> 01:36:55,336
+Soruları çözerken işinize yarayacak.
+
+666
+01:36:56,296 --> 01:36:56,435
+Evet.
+
+667
+01:36:59,336 --> 01:37:01,715
+Şunlardan bazılarını çözelim bakayım gençler.
+
+668
+01:37:01,715 --> 01:37:02,175
+Evet.
+
+669
+01:37:09,555 --> 01:37:10,916
+Herkes baksın bakalım.
+
+670
+01:37:28,692 --> 01:37:30,771
+Ok, let's try to solve this.
+
+671
+01:37:36,884 --> 01:37:38,264
+Tert etiyorsun bakalım onu.
+
+672
+01:38:02,420 --> 01:38:06,359
+26. soruya bakın arkadaşlar. En zorunu seçtim gibi sanki.
+
+673
+01:38:24,532 --> 01:38:25,992
+Kolayları size bıraktım.
+
+674
+01:38:27,992 --> 01:38:30,752
+Alternatif seri testinin 3 tane şartı vardı.
+
+675
+01:38:31,032 --> 01:38:32,512
+AK'lar pozitif olacak.
+
+676
+01:38:33,912 --> 01:38:35,352
+AK'lar azalan olacak.
+
+677
+01:38:36,572 --> 01:38:38,632
+Ama azalacak. Nereye doğru azalacak?
+
+678
+01:38:38,772 --> 01:38:41,372
+Sıfıra doğru azalacak. Sıfıra yakınsak AK'lar.
+
+679
+01:38:41,852 --> 01:38:45,372
+Bir de serimizde eksi bir üzeri K'lı bir şeyler bulunması lazım.
+
+680
+01:38:45,952 --> 01:38:50,672
+Yoksa alternatif seri olmaz. İşaretlerin artı eksi, artı eksi veya eksi artı eksi artı şeklinde.
+
+681
+01:38:51,699 --> 01:38:53,979
+olması lazım. Aksi durumda,
+
+682
+01:38:54,059 --> 01:38:56,699
+testini uygulayamazsınız.
+
+683
+01:38:57,459 --> 01:38:57,939
+Gençler.
+
+684
+01:38:59,499 --> 01:39:00,779
+Evet, buldunuz mu gençler?
+
+685
+01:39:03,339 --> 01:39:05,939
+Neden yakınsamıyor [öğrenci]?
+
+686
+01:39:08,399 --> 01:39:09,659
+AK'yı ne buldun?
+
+687
+01:39:09,919 --> 01:39:11,019
+AK'nın limitini.
+
+688
+01:39:11,019 --> 01:39:13,239
+K faktörü yer bölü, K üzeri K.
+
+689
+01:39:19,252 --> 01:39:35,612
+Hocam, ben daha çok şeyden gittim, kartı bir alarak yeniden yazdım. Sonra oranladım onlara, AN bölü BN olarak. Ve yakınsak adını ben oradan buldum. Birazcık değişik, bulmuş olabilirim ama.
+
+690
+01:39:35,712 --> 01:39:43,472
+Öyle kafanıza göre yöntem geliştirmeyin ya. Zaten yöntemler belli. Geliştirilmiş, başka yöntem yok. Bütün yöntemler bulundu.
+
+691
+01:39:47,796 --> 01:39:48,956
+Onu söyleyeyim sana.
+
+692
+01:39:55,764 --> 01:40:03,904
+Size öğrettiğimiz yöntemlerle çözmeyi çalışın. Try to solve, try to give your answer by using test given in the lecture.
+
+693
+01:40:12,372 --> 01:40:15,012
+Hepsi bulundu. Bunlar çok eski konular.
+
+694
+01:40:21,395 --> 01:40:23,795
+Burada alternatif seri testini uygulayacaksın [öğrenci].
+
+695
+01:40:28,372 --> 01:40:33,952
+Okey. Şurada geniş bir sayfada yapayım. Burası yeterli gelmeyecek bana.
+
+696
+01:40:39,380 --> 01:40:42,539
+Bana söylersin, k faktörüye bölü, k üzeri k mı?
+
+697
+01:40:47,252 --> 01:40:48,892
+Ok, so this is our series.
+
+698
+01:41:02,963 --> 01:41:04,963
+k üzeri k, değil mi?
+
+699
+01:41:06,163 --> 01:41:09,923
+Okay, so this is our ak, this is alternating series.
+
+700
+01:41:12,243 --> 01:41:14,243
+So this is ak.
+
+701
+01:41:14,803 --> 01:41:20,563
+Okay, so ak is always positive. The first condition is good.
+
+702
+01:41:20,563 --> 01:41:27,844
+ak is always positive. Let's check out second case. ak must be decreasing.
+
+703
+01:41:29,363 --> 01:41:32,043
+Ak, maski dekrizi,
+
+704
+01:41:36,884 --> 01:42:04,011
+Bu, bu
+
+705
+01:42:04,083 --> 01:42:19,943
+As you see, k! over k to k, smaller than 1, that's why as k goes to infinite, okay, so this is decreasing, as k goes to infinite, this is decreasing.
+
+706
+01:42:21,224 --> 01:42:22,903
+Okay, you don't need to check that.
+
+707
+01:42:24,144 --> 01:42:29,836
+The third condition, so you need to check out limit as k...
+
+708
+01:42:38,963 --> 01:42:41,823
+is approaching 0.
+
+709
+01:42:42,743 --> 01:42:46,304
+How can we shoot that? This term goes to 0.
+
+710
+01:42:47,304 --> 01:42:50,703
+Evet, nasıl sıfıra girmeyi mi gösteririz?
+
+711
+01:42:51,184 --> 01:42:53,163
+Can you apply L'hôpital's rule here?
+
+712
+01:42:54,503 --> 01:42:56,283
+Burada L'hôpital kuralını uygulayabilir misiniz?
+
+713
+01:42:57,104 --> 01:42:58,963
+So can you apply L'hôpital's rule here?
+
+714
+01:42:58,963 --> 01:43:00,963
+So we got k!
+
+715
+01:43:01,568 --> 01:43:07,268
+İndeterminant form of this, infinite over infinite.
+
+716
+01:43:08,887 --> 01:43:13,887
+Okay, how can we sure that this limit is zero?
+
+717
+01:43:18,707 --> 01:43:22,627
+Comparison test, no comparison test, near.
+
+718
+01:43:30,579 --> 01:43:34,720
+Evet, göster. Onun neden sıfıra gidiyor.
+
+719
+01:43:42,868 --> 01:43:44,868
+Ok, now, remark.
+
+720
+01:43:50,195 --> 01:43:52,836
+This is ak, attention here.
+
+721
+01:43:53,315 --> 01:43:54,336
+Ak, remark.
+
+722
+01:43:54,536 --> 01:43:55,787
+We know that...
+
+723
+01:43:59,539 --> 01:44:16,960
+We know that any series generated by ak, attention here, so we do not put this minus 1 to k plus 1, ak, this series, is convergent.
+
+724
+01:44:21,363 --> 01:44:34,203
+If, let me put here, if, then limit as k goes to infinite, ak goes to zero.
+
+725
+01:44:35,323 --> 01:44:41,023
+We know that this is a necessary condition for convergence of this.
+
+726
+01:44:42,103 --> 01:44:42,423
+Okay?
+
+727
+01:44:43,220 --> 01:45:09,400
+Now, that's why we need to check out, is this true or not? If this is true, if this is true, we can say that this is true. Is this true or false? Is this true or false? If this is true, if this is true, then this is also true. Okay?
+
+728
+01:45:10,068 --> 01:45:14,748
+Şimdi bu nedenle bu nedenle bu sorun var.
+
+729
+01:45:16,068 --> 01:45:19,847
+K! over k to k
+
+730
+01:45:19,847 --> 01:45:22,408
+is convergent.
+
+731
+01:45:22,788 --> 01:45:25,007
+Bu sorun var.
+
+732
+01:45:26,088 --> 01:45:28,748
+As you see, bu sorun var.
+
+733
+01:45:29,228 --> 01:45:31,268
+So, bu comparasyon test,
+
+734
+01:45:36,692 --> 01:46:01,672
+Ak plus 1 over ak, limit as k goes to infinite, k plus 1 factorial over k plus 1 square, 1 over ak, k square over k factorial, so we got limit as k goes to infinite.
+
+735
+01:46:02,420 --> 01:46:11,980
+K plus 1, k over, k plus 1, square, as 1.
+
+736
+01:46:12,640 --> 01:46:17,119
+Ok, so I see you cannot give an answer. Cevap ne geliyor arkadaşlar?
+
+737
+01:46:18,199 --> 01:46:24,159
+K artı 1 çarpı, K faktör yani onları götürdü. Bize bir cevap vermiyor. Inconclusive.
+
+738
+01:46:25,332 --> 01:46:51,872
+This method is incomplete. Nasıl anlayacağız arkadaşlar? Onun sıfıra gittiğini. Buradan bulamadım. Ben göremedim sıfıra gittiğini. Buradan gelmiyorsa o zaman ne olur? Zaten bunu arkadaşlar oran testine göre bir şey söyleyemiyoruz. Ama bu 1'e gitmiyor. AK 1'e gitmiyor. AK artı 1 böyle AK 1'e gitti.
+
+739
+01:46:52,500 --> 01:46:56,840
+Eğer burası birden küçük bir değer gelseydi, ben bura yakınsak diyecektim.
+
+740
+01:46:58,300 --> 01:47:01,699
+Bura yakınsak ise o zaman AK'nın limiti 0 diyecektim.
+
+741
+01:47:02,579 --> 01:47:06,099
+Yine AK'nın limitinin 0 olduğunu söyleyemiyorum. Nasıl söyleyebilirim?
+
+742
+01:47:06,519 --> 01:47:10,259
+Şu anki yöntemleri, öğrendiğimiz yöntemleri limitiyle söyleyemiyorum.
+
+743
+01:47:17,524 --> 01:47:44,164
+K üzeri K. Tabii ya. K kare nereden çıktı? Bak yanlış. Orada K üzeri K yazmışız. Okey. Evet, yanlış yapıyoruz. Soruda yanlışlık yazmış. Şurası K üzeri K. Doğru söylüyorsun. Aynen. Şimdi oldu. Bunun cevabı gelmesi lazım normalde. Okey. So let's correct this. This is not K squared. This is K to K. Okey. K plus one to K. So let me write here. K to K.
+
+744
+01:47:45,076 --> 01:47:46,756
+Ok, let's correct this one.
+
+745
+01:47:47,496 --> 01:48:00,315
+So, we have this limit as k, yanlış yapmışız bir yerde, as k goes to infinite, so we got k plus 1.
+
+746
+01:48:05,076 --> 01:48:22,795
+Yani şurayı, şey de yapabiliriz arkadaşlar, k bölü, ne geliyor burası? Şöyle yapalım, silelim. Tek tek yapmıyorum, çamlayalım. Şurada k artı bir gelir. Şurası k artı birleri götürür arkadaşlar.
+
+747
+01:48:27,252 --> 01:48:35,972
+K artı birin eksi birinci kuvveti. Doğru mu arkadaşlar? Ya da, K artı birin, kalsın burası, K bölü,
+
+748
+01:48:41,971 --> 01:48:45,032
+Bunun limiti birden küçük bir değer gelir mi arkadaşlar?
+
+749
+01:48:50,228 --> 01:49:02,148
+Bunun limiti birden küçük gelir mi? Limit as k goes to infinite. Ne geliyor arkadaşlar? K üzeri k. Bunu yapamadım ya. Bu limiti ne geliyor? Bunun limiti hesaplayın bakayım gençler.
+
+750
+01:49:04,627 --> 01:49:05,448
+Şu an göremedim.
+
+751
+01:49:17,140 --> 01:49:18,739
+0'ı nasıl buldum burada?
+
+752
+01:49:24,627 --> 01:49:35,087
+Ben şu an göremedim bunu ya, zihnim durdu. K artı 1 burada, K bölü K artı 1'in K inci kuvveti, üstel şeye mi benzetmeye çalıştık? İşlem hatası yapmadık değil mi?
+
+753
+01:49:35,807 --> 01:49:44,728
+K artı 1 çarpı K artı 1, K faktüriyeler gitti, evet, buradan K artı 1'ler geldi.
+
+754
+01:49:47,228 --> 01:49:49,167
+Yani burası sonsuza gidiyor.
+
+755
+01:49:52,884 --> 01:49:56,203
+Buradan bu limit bulunmuyor. Buradan bir şey geliyor limit.
+
+756
+01:49:58,103 --> 01:50:00,483
+Bir dakika, şöyle ayrıştırsam.
+
+757
+01:50:02,163 --> 01:50:08,684
+Sonsuz gelirse, ıraksaktır derim ama ıraksak olursa da zaten o zaman sıfıra gitmiyor olur.
+
+758
+01:50:09,323 --> 01:50:09,523
+Evet.
+
+759
+01:50:10,903 --> 01:50:14,983
+O zaman AK sıfırdan farklı bir limit gelir. AK sıfırdan farklı olur.
+
+760
+01:50:15,643 --> 01:50:20,043
+O zaman da ne olur? Burası sıfırdan farklı olursa, ıraksak olur. Evet.
+
+761
+01:50:20,851 --> 01:50:29,251
+O zaman öyle görünüyor. Yani eninci genel terim testine göre bıraksak olmuş olur. AK'nın limiti sıfırdan farklı olursa.
+
+762
+01:50:42,195 --> 01:51:06,015
+Evet, buradan AK'yı bulduk arkadaşlar. Bunun şey limiti, 1-1 bölü K'nin kaydı kuvveti. Burası ne oluyor arkadaşlar? E üzeri eksi 1'e yakınsak. Burası da buraya yakınsak. Sonsuza cevap sonsuz olur. Sonsuz olursa, o zaman ne olur?
+
+763
+01:51:07,507 --> 01:51:11,068
+birden büyük bir şey oldu. O zaman bu
+
+764
+01:51:11,068 --> 01:51:14,047
+divergent oldu.
+
+765
+01:51:16,247 --> 01:51:18,188
+Bu divergent olursa
+
+766
+01:51:18,188 --> 01:51:21,507
+divergent olursa demek ki
+
+767
+01:51:21,507 --> 01:51:23,047
+limit
+
+768
+01:51:23,047 --> 01:51:25,347
+k sonsuza giderken
+
+769
+01:51:25,347 --> 01:51:27,768
+ak'nın limiti sıfırdan farklı.
+
+770
+01:51:28,408 --> 01:51:31,747
+ak'nın limiti sıfırdan farklı olduğundan
+
+771
+01:51:31,828 --> 01:51:54,927
+Burada arkadaşlar, bu false, sıfırdan farklı olduğundan, alternatör seri testinden, tamam mı arkadaşlar? Bakın, sıfırdan farklı geldi. Alternatör seri testinden, ıraksak, ya da bunun limiti direkt, limit, k sonsuza giderken, ak'nın limiti, arkadaşlar, sıfırdan farklı olduğundan, o zaman ne olur?
+
+772
+01:52:01,043 --> 01:52:02,603
+That is divergent.
+
+773
+01:52:03,603 --> 01:52:06,043
+Evet, en zor sorulardan birisi bu arkadaşlar.
+
+774
+01:52:06,663 --> 01:52:08,543
+Kolay değil, bayağı bir şey düşünüyorsunuz.
+
+775
+01:52:09,083 --> 01:52:10,963
+Beni bile zorla da açık konuşmak gerekirse.
+
+776
+01:52:11,743 --> 01:52:13,523
+Biraz karışık geldi.
+
+777
+01:52:14,243 --> 01:52:16,983
+Size de gelmiştir öyle ama anlaşıldı galiba, tamam mı?
+
+778
+01:52:23,572 --> 01:52:25,572
+k faktöreye bölü, k üzeri k.
+
+779
+01:52:31,444 --> 01:52:32,384
+Bir dakika ya.
+
+780
+01:52:38,420 --> 01:52:43,840
+Öyle düşünmeyelim ya. K faktöriyel bölü K üzeri K. Limit durumunda onlar öyle olmaz.
+
+781
+01:52:47,828 --> 01:52:54,748
+Yani şöyle düşünün, o ondan küçük, ondan dolayı böyle, bak şimdi, k bölü k artı 1, e k k artı 1'den küçük mü?
+
+782
+01:52:56,068 --> 01:53:00,668
+E k k artı 1'den küçük sıfıra mı gidiyor? Cevap 1, k sonsuza giderken.
+
+783
+01:53:02,228 --> 01:53:02,768
+Anladınız mı?
+
+784
+01:53:03,828 --> 01:53:08,008
+Ondan sonra, mesela düşünün, ne var?
+
+785
+01:53:15,252 --> 01:53:20,172
+Artık k kareden küçük, ama limit nereye gidiyor? 1'e gidiyor.
+
+786
+01:53:21,932 --> 01:53:29,232
+K sonsuza giderken, yani ondan küçük, dolayısıyla k sonsuza giderken 0'a gidiyor gibi bir algı yanlış oldu.
+
+787
+01:53:29,332 --> 01:53:34,872
+Sadece azalan olduğunu söylersin. Oranı şunların şey olduğundan dolayı. Tamam mı?
+
+788
+01:53:38,612 --> 01:53:39,472
+Dikkat edin.
+
+789
+01:53:40,872 --> 01:53:41,712
+Ben öyle buldum.
+
+790
+01:53:45,171 --> 01:53:52,291
+Tamam [öğrenci], mantığın doğru değil. Pay paydadan küçük, dolayısıyla limit durumunda sonuç sıfıra gider demek doğru değil.
+
+791
+01:53:54,111 --> 01:53:56,971
+Onu çürüttüm mantığını, aksine örnek vererek.
+
+792
+01:53:58,051 --> 01:54:00,251
+Evet, herhalde tekrar ediyorum arkadaşlar.
+
+793
+01:54:01,251 --> 01:54:04,711
+Ne yapıyoruz? Alt en eseri testine göre bunun yakınsak olabilmesi için,
+
+794
+01:54:04,711 --> 01:54:09,931
+AK'nın pozitif terimli olması lazım, azalan olması lazım ve AK'nın limiti sıfıra gidiyor olması lazım.
+
+795
+01:54:10,804 --> 01:54:35,623
+AK'nın limiti sıfıra gitmiyorsa direkt alternatif serileri testinden bıraksaktır derim. K faktörü yerbereli K üzeri K'nın limitini hesaplayacağım. Şimdi K faktörü yerbereli K üzeri K'nın limitini hesaplamak için şu yakınsaklık için gerek olan koşul vardı. Yani AK ile oluşturulan seri yakınsak ise AK'nın limiti K'sı olursa giderken sıfıra gider. Eğer AK ile oluşturulan seri bıraksak ise o zaman AK'nın limiti ne olur arkadaşlar? Sıfıra şöyle diyelim.
+
+796
+01:54:36,916 --> 01:54:54,735
+Zaten ben AK'nın limiti, bir dakika, seri, ıraksak buldum, bir dakika, yanlış yapıyorum, mantığım yine doğru değil, benim mantığım da doğru değil. AK'nın ben sadece AK ile oluşturulan serinin ıraksak olduğunu buldum, burası böyle, bunu doğurmaz, ıraksak ise buna sıfırdan farklı sonuçtur diyemem.
+
+797
+01:54:55,235 --> 01:55:03,215
+Çünkü ıraksak olup genel terimin limiti sıfıra gidenler var, başka bir yol düşünmem lazım. Ama ben bunu düşünme gençler, bundan zaman kaybetmeyelim.
+
+798
+01:55:03,764 --> 01:55:25,764
+Burayı göremedik. Bu ya mantık da yanlış arkadaşlar. Iraksak ise bir seri, genel terimi sıfırdan farklı bir yere gider diye bir şey yok. Sıfıra da gidebilir. Mantık doğru değil. Benim mantığım da doğru değil. Tamam mı? Ben bunu şey yapacağım arkadaşlar. Yarın ben size anlatacağım. İyice düşünüm sakin kafayla üzerinde. Zor bir soruyormuş gerçekten. Geçiyorum.
+
+799
+01:55:28,423 --> 01:55:30,864
+Şurayı hatırlatın bana. Tamam mı arkadaşlar?
+
+800
+01:55:30,963 --> 01:55:53,564
+Yarın unutmayın, bugün bakacağım yanına. 26. soru. Sayfa kaç? Sayfamıza da bakalım. Gerçi şeyden sonra, doğru mu? Burada 120. sayfada, tamam mı? 119. sayfada. Evet, en zor olanlar bunlar arkadaşlar. Dediğimiz gibi bu muhtemelen sıfıra gidecek ama göstermemiz lazım.
+
+801
+01:55:57,332 --> 01:55:59,652
+Bir dakika, şu telefonu kapamam lazım gençler.
+
+802
+01:56:11,028 --> 01:56:16,208
+Okay, I'm going to show solution of this question tomorrow. Okay.
+
+803
+01:56:19,488 --> 01:56:28,348
+And should not pass it. Okay, let's try solve this problem. So this is ak, ak positive, ak decreasing.
+
+804
+01:56:31,228 --> 01:56:36,188
+And limit as k goes to infinite.
+
+805
+01:56:36,756 --> 01:56:43,916
+lnk k2, by the L'Hôpital's rule, you can easily show that, this goes to 0.
+
+806
+01:56:43,916 --> 01:56:46,076
+Okay, so that's why this is convergent.
+
+807
+01:56:47,076 --> 01:56:54,616
+As a little bit, this is decreasing and positively defined, because of this factor, this is alternating series, and this goes to 0.
+
+808
+01:56:55,136 --> 01:56:59,916
+That's why this is convergent, by the alternating series test.
+
+809
+01:57:00,636 --> 01:57:01,016
+Okay.
+
+810
+01:57:03,699 --> 01:57:09,520
+Now, what about this? I think so, this is also a very nice question. So, look at here.
+
+811
+01:57:11,500 --> 01:57:19,699
+Now, so, the limit of this term, so, look at here, sine 1 over k over, 1 over k.
+
+812
+01:57:20,439 --> 01:57:29,640
+Now, as k goes to infinite, as k goes to infinite, so, this is, let's say, 1 over k is equal to x.
+
+813
+01:57:30,100 --> 01:57:55,100
+İkailin arkadaşlar.
+
+814
+01:57:56,275 --> 01:58:05,176
+0'a gitmesi lazım oranın, AK'nın. Yoksa alternatör serimiz yakınsak olmaz, ıraksak olur. Tamam mı?
+
+815
+01:58:07,496 --> 01:58:14,076
+Muhtemelen bu K faktörü, K üzeri K'da 0'a gidebilir ama gitmeyebilir de kesin emin olmak lazım orada.
+
+816
+01:58:27,252 --> 01:58:32,771
+Dizilerin limitleri, bunlar zaten arkadaşlar basit şeyler. Bunları yaparsınız. Geçiyorum bunları.
+
+817
+01:58:37,011 --> 01:58:39,692
+Yani istiyorsanız binlardan bir tanesini çözelim.
+
+818
+01:58:40,612 --> 01:58:53,412
+Ok, by the logaritmic method, you can show that this is ln, ln, ln, 1 over n, over ln, n.
+
+819
+01:58:54,171 --> 01:58:58,051
+So, infinite over infinite.
+
+820
+01:58:59,171 --> 01:59:02,372
+By l'Hôpital, you can show this, by l'Hôpital.
+
+821
+01:59:03,796 --> 01:59:05,796
+You can show its limit.
+
+822
+01:59:05,796 --> 01:59:06,376
+Okay?
+
+823
+01:59:07,975 --> 01:59:15,996
+As n goes to infinite, as n goes to infinite, this goes to infinite, and sine infinite, oscillates, no limit.
+
+824
+01:59:19,015 --> 01:59:25,956
+Arctangent n, as n goes to infinite, arctangent n, approach pi over 2.
+
+825
+01:59:28,500 --> 01:59:39,520
+Tamam mı gençler? Bunları biliyorsunuz zaten. By the conjugate method, you can show its limit. So, this approach 1, by the logaritmic method, you can show that this approach 1.
+
+826
+01:59:41,420 --> 01:59:46,340
+Burada arkadaşlar, bunun limitini de ne yaparsınız? Yine benzer şekilde gösterebilirsiniz.
+
+827
+01:59:51,123 --> 01:59:54,224
+Burada geometrik seri uygulayabilirsiniz sanki arkadaşlar.
+
+828
+01:59:54,423 --> 01:59:57,703
+Ya da şey, şunu uygulayın arkadaşlar.
+
+829
+01:59:58,484 --> 01:59:58,663
+Ok.
+
+830
+02:00:00,583 --> 02:00:12,743
+Now, if an is convergent, then an approach zero.
+
+831
+02:00:12,963 --> 02:00:15,484
+Muhtemelen bu sıfıra gidecek. Bu yöntemi kullanabilirsiniz.
+
+832
+02:00:16,032 --> 02:00:24,532
+Bunun yakınsak olduğunu göstermeniz lazım. Bunun yakınsak olduğunu göstermek için de arkadaşlar, oran testi uygulayabilirsiniz.
+
+833
+02:00:31,604 --> 02:00:33,024
+As n goes to infinite.
+
+834
+02:00:46,420 --> 02:00:50,900
+Yine benzer şeyler geldi. Bunda başka yöntem kullanacağız. Bu yöntem işe yaramıyor.
+
+835
+02:00:55,923 --> 02:00:56,944
+Doğru mu gençler?
+
+836
+02:00:58,964 --> 02:00:59,724
+Yok, bir dakika.
+
+837
+02:01:00,244 --> 02:01:01,284
+Şurada ne geliyor arkadaşlar?
+
+838
+02:01:02,104 --> 02:01:03,484
+Limiti düzgün hesaplayalım.
+
+839
+02:01:05,044 --> 02:01:06,144
+8 geldi.
+
+840
+02:01:07,144 --> 02:01:09,304
+8 bölü n artı 1 geldi.
+
+841
+02:01:09,904 --> 02:01:10,224
+Doğru mu?
+
+842
+02:01:11,544 --> 02:01:12,944
+Buradan ne gelir arkadaşlar?
+
+843
+02:01:13,684 --> 02:01:14,804
+Cevap 0 gelir.
+
+844
+02:01:15,484 --> 02:01:16,604
+0 da birden küçük.
+
+845
+02:01:16,724 --> 02:01:17,564
+O zaman bu yakınsak.
+
+846
+02:01:17,664 --> 02:01:18,684
+Yes, this is true.
+
+847
+02:01:19,244 --> 02:01:21,444
+So then we can say that this is also true.
+
+848
+02:01:22,612 --> 02:01:35,992
+Tamam, this approach 0. Evet, 8 üzeri M bölü M faktörüye 0'a yakınsak. A ne ile oluşturulan seri yakınsak olduğundan A ne'nin limitini 0'a gittiğini söyleyebilirim. Tamam mı? Yani direkt A ne'nin limitini almıyorum.
+
+849
+02:01:49,108 --> 02:01:54,047
+Generated by an is convergent. We can say that an general term goes to zero.
+
+850
+02:01:54,547 --> 02:01:57,967
+Yani dolaylı yoldan ane en limitin sıfıra gittiğini söylüyorum. Doğrudan hesaplayamıyorum.
+
+851
+02:01:58,467 --> 02:02:00,907
+Yani burada lopital uygulayamam çünkü. Tamam mı gençler?
+
+852
+02:02:04,047 --> 02:02:09,947
+Şunları yine direkt doğrudan limitini alabilirsiniz. Doğrudan limitini alabilirsiniz.
+
+853
+02:02:09,947 --> 02:02:11,707
+You can directly take limit of this.
+
+854
+02:02:15,507 --> 02:02:17,187
+Dikkat edin gençler, tamam mı?
+
+855
+02:02:18,347 --> 02:02:20,547
+Let's compute values of this series.
+
+856
+02:02:22,147 --> 02:02:22,587
+Okay.
+
+857
+02:02:23,787 --> 02:02:25,187
+No, not values of this series.
+
+858
+02:02:25,187 --> 02:02:27,267
+Okay, you can compute values of this series.
+
+859
+02:02:27,267 --> 02:02:28,947
+So, this is geometric series.
+
+860
+02:02:33,684 --> 02:02:35,484
+So, let's expand this series.
+
+861
+02:02:36,884 --> 02:02:37,964
+So, 4K1,
+
+862
+02:02:40,024 --> 02:02:41,124
+4K2,
+
+863
+02:02:45,203 --> 02:02:57,863
+And goes to infinite. The first term, 9 over 10. So A is 9 over 10. The R is 9 over 10.
+
+864
+02:02:58,323 --> 02:03:01,103
+Okay. Doğru değil mi arkadaşlar?
+
+865
+02:03:04,103 --> 02:03:07,443
+A bölü 1 eksi R'den hesaplayabilirsiniz arkadaşlar.
+
+866
+02:03:08,643 --> 02:03:11,023
+Okay. So this is telescopic series.
+
+867
+02:03:13,524 --> 02:03:16,543
+This is telescopik series. So this is ak.
+
+868
+02:03:20,500 --> 02:03:28,679
+So in order to compute the value of telescoping series, so you need to compute a general term of the seconds of partial sum.
+
+869
+02:03:28,679 --> 02:03:36,039
+The first term, a1, a1 plus a2 plus dot dot dot, an.
+
+870
+02:03:36,948 --> 02:03:51,884
+Bu, bu
+
+871
+02:04:02,387 --> 02:04:14,347
+A is 1 over 4 to 3, and R is also 1 over 4 to 3.
+
+872
+02:04:16,028 --> 02:04:22,787
+Geometric series, you can distribute this sigma notation into each term here.
+
+873
+02:04:23,220 --> 02:04:32,440
+And this is geometric series. Let's compute the value of this geometric series. Let's compute the value of this geometric series and take the difference of this geometric series values.
+
+874
+02:04:32,620 --> 02:04:46,120
+Okay. Herhalde anlaşıldı arkadaşlar. Genel olarak burada zor soru yok gördüğüm kadarıyla. Hepsi kolay. Telescope series, telescoping series, telescoping series, geometric series, geometric series.
+
+875
+02:04:53,076 --> 02:04:58,836
+Sorunuz yoksa, geçiyorum ya da bir ara verelim arkadaşlar. 10 dakika ara.
+
+876
+02:04:59,876 --> 02:05:01,136
+Have a break, 10 minutes.
+
+877
+02:05:18,547 --> 02:05:21,887
+Bunları daha önce biz çözmemiştik değil mi gençler?
+
+878
+02:05:23,867 --> 02:05:25,507
+Yani bahsetmemiştik sandımca.
+
+879
+02:05:26,347 --> 02:05:30,007
+Ama burada gördüğünüz gibi bir sürü basit, orta, zor sorular var.
+
+880
+02:05:30,228 --> 02:05:31,307
+Bunları çözebiliyorsanız.
+
+881
+02:05:36,115 --> 02:05:37,996
+10 dakika ara gençler dedik.
+
+882
+02:05:39,456 --> 02:05:40,636
+10 dakika sonra görüşürüz.
+
+883
+02:15:33,427 --> 02:15:34,668
+Evet, merhaba gençler.
+
+884
+02:15:41,427 --> 02:15:44,527
+Burada hangi yöntemleri kullanacağımızı arkadaşlar söylüyor.
+
+885
+02:15:46,867 --> 02:15:50,407
+Burada kendiniz belirleyeceksiniz hangi yöntemi kullanmanız gerektiğini.
+
+886
+02:15:51,067 --> 02:15:51,767
+Tamam mı gençler?
+
+887
+02:15:53,227 --> 02:15:54,747
+Şimdi yarın ben örnek çözeceğim.
+
+888
+02:15:56,627 --> 02:15:59,659
+Konuları birazcık daha iltireyim. Yarın uygulama çözeceğim.
+
+889
+02:16:03,252 --> 02:16:12,391
+Evet, ya da bugün başlayalım uygulamaya. Bir dakika arkadaşlar, diğer defteri getireyim. Defterden çözelim. Beyaz tatlı da çözeceğim.
+
+890
+02:17:01,620 --> 02:17:05,540
+Herkes önüne kağıt kalemi alsın gençler. Genel uygulama yapıyoruz.
+
+891
+02:17:26,739 --> 02:17:27,739
+Okay.
+
+892
+02:17:28,239 --> 02:17:35,739
+Look at this general term of this series. So according to the general term of this series, which test is the proper one?
+
+893
+02:17:36,939 --> 02:17:41,739
+Geometric series, this is not geometric series, this is not telescoping series.
+
+894
+02:17:42,739 --> 02:17:53,548
+If you see some factorial, m factorial, and some exponential function, such n to n, it is advisable to apply.
+
+895
+02:17:54,708 --> 02:17:57,907
+Root test or ratio test.
+
+896
+02:17:58,668 --> 02:17:58,747
+Okay.
+
+897
+02:17:59,747 --> 02:18:03,227
+I think ratio test is the best one to solve this problem.
+
+898
+02:18:03,788 --> 02:18:04,427
+Which character?
+
+899
+02:18:05,648 --> 02:18:08,247
+Is this divergent or convergent?
+
+900
+02:18:08,547 --> 02:18:09,927
+Evet. Herkesin ulasın bakalım.
+
+901
+02:18:10,007 --> 02:18:13,948
+Oran testinden yakınsak mı, raksak mı olduğunu belirlesin bakalım.
+
+902
+02:18:44,020 --> 02:18:45,540
+Evet, buldunuz mu gençler?
+
+903
+02:18:45,979 --> 02:18:46,540
+Devamını.
+
+904
+02:18:55,763 --> 02:18:57,123
+Oradasın değil mi gençler?
+
+905
+02:18:59,484 --> 02:19:04,523
+Şimdiye bulmuş olmanız lazımdı ya, oran testinden. Kolay bir soru bu, çok da zor değil.
+
+906
+02:19:05,804 --> 02:19:06,763
+Yemite hemen geliyor.
+
+907
+02:19:09,243 --> 02:19:12,323
+Sesimi alıyorsunuz değil mi gençler? Sistemden mi düştük acaba?
+
+908
+02:19:18,324 --> 02:19:20,108
+Sessizlik olunca...
+
+909
+02:19:38,067 --> 02:19:44,887
+Evet, ane artı bir bölü ane'nin limitine bakacaksınız.
+
+910
+02:19:46,167 --> 02:19:54,067
+You need to compute the limit of an plus 1 over an as n goes to infinite.
+
+911
+02:19:55,167 --> 02:20:03,987
+If the limit of ratio is smaller than 1, then we say that the series is convergent, otherwise divergent.
+
+912
+02:20:38,195 --> 02:20:46,855
+n to n over 2 to n times m! L. Let me use different color here.
+
+913
+02:20:48,015 --> 02:20:54,695
+So, this and this simplify. So, we got 2 here.
+
+914
+02:20:57,335 --> 02:21:01,935
+And this and this. Okay, so we got m plus 1.
+
+915
+02:21:02,995 --> 02:21:18,036
+Faktör, limit as n goes to infinite, 2 times, we have, so this and this simply, we have n over n plus 1 to n.
+
+916
+02:21:18,036 --> 02:21:27,036
+Okay, now, so this is nothing else than 2 times limit as n goes to infinite.
+
+917
+02:21:27,796 --> 02:21:31,816
+1-1 over n plus 1 to n.
+
+918
+02:21:32,596 --> 02:21:50,536
+Okay, you can show that by logaritmic method, by logaritmic method, logaritmic limit is approaching this, 2 over e, so this is smaller than 1, by the ratio test that is convergent.
+
+919
+02:21:50,536 --> 02:21:51,015
+Okay.
+
+920
+02:21:51,924 --> 02:21:55,504
+Bide ratio test, that is convergent.
+
+921
+02:21:57,804 --> 02:21:58,064
+Evet.
+
+922
+02:22:01,747 --> 02:22:26,028
+Bu dizinin
+
+923
+02:22:27,924 --> 02:22:30,004
+Evet, hangi test sizce uygun arkadaşlar?
+
+924
+02:22:33,004 --> 02:22:34,324
+Root test.
+
+925
+02:22:36,124 --> 02:22:38,324
+Okay, by the root test,
+
+926
+02:22:39,124 --> 02:22:41,284
+by the
+
+927
+02:22:41,284 --> 02:22:43,664
+root test,
+
+928
+02:22:44,124 --> 02:22:45,764
+it's obvious that limit
+
+929
+02:22:45,764 --> 02:22:48,384
+as k goes to
+
+930
+02:22:48,384 --> 02:22:49,124
+infinite
+
+931
+02:22:49,124 --> 02:22:51,624
+is
+
+932
+02:22:52,788 --> 02:23:05,427
+We have limit as k goes to infinite, 1 over 5, 2 over k, constant over infinite goes to 0, 1 over 5, is smaller than 1.
+
+933
+02:23:05,808 --> 02:23:07,507
+So that is convergent, okay?
+
+934
+02:23:12,084 --> 02:23:27,564
+Now, next example. Did you solve this problem before? Let's investigate the character of this series. Minus 1 to n plus 1 over n to n. Is this divergent or convergent?
+
+935
+02:23:28,504 --> 02:23:31,824
+Okay, do you think which test must be used?
+
+936
+02:23:34,067 --> 02:23:44,987
+As you see, this is a special series, that is alternating series. This means that you can apply alternating series test or Leibniz test name.
+
+937
+02:23:46,367 --> 02:23:47,087
+Okay.
+
+938
+02:23:50,027 --> 02:23:54,647
+Gördüm herkes alternatisleri olduğunu ve alternatisleri testinin uygulanması gerektiğini.
+
+939
+02:23:55,547 --> 02:24:01,647
+Bunları gördüyseniz gençler, rahatlıkla cevabı bulabilirsiniz.
+
+940
+02:24:22,548 --> 02:24:22,808
+Evet.
+
+941
+02:24:29,396 --> 02:24:31,636
+Buldunuz mu? Cevabı.
+
+942
+02:24:33,276 --> 02:24:44,936
+Okay, so an, 1 over n, always positive, and because of this minus 1 to n plus 1 factor, so that is alternating series.
+
+943
+02:24:46,216 --> 02:24:54,335
+This is alternating series, by the alternating series test, so in fact we have two main conditions.
+
+944
+02:24:55,152 --> 02:24:58,152
+Bu dizinin
+
+945
+02:24:54,932 --> 02:24:56,932
+Bu ilk prekondition.
+
+946
+02:24:56,932 --> 02:25:00,932
+1 over n to n
+
+947
+02:25:00,932 --> 02:25:02,932
+is decreasing,
+
+948
+02:25:02,932 --> 02:25:04,932
+it's obvious.
+
+949
+02:25:04,932 --> 02:25:06,932
+Decreasing.
+
+950
+02:25:06,932 --> 02:25:10,932
+1 over n to n
+
+951
+02:25:10,932 --> 02:25:12,932
+is approaching 0
+
+952
+02:25:12,932 --> 02:25:14,932
+is obvious.
+
+953
+02:25:14,932 --> 02:25:16,932
+As n goes to infinite.
+
+954
+02:25:16,932 --> 02:25:18,932
+By the alternating series test,
+
+955
+02:25:18,932 --> 02:25:22,572
+by the alternating series test,
+
+956
+02:25:22,835 --> 02:25:33,915
+ve serisi, minus 1 to n plus 1 over n to n series, is convergent, not divergent.
+
+957
+02:25:33,915 --> 02:25:36,995
+Okay, attention here.
+
+958
+02:25:38,835 --> 02:25:40,556
+This is also convergent.
+
+959
+02:25:42,235 --> 02:25:43,475
+I think we say this.
+
+960
+02:25:44,835 --> 02:25:48,556
+Okay, now what about other example?
+
+961
+02:25:49,780 --> 02:25:50,360
+So
+
+962
+02:25:54,195 --> 02:25:58,056
+Pekiştirmek için böyle basit sorularla başlıyoruz arkadaşlar.
+
+963
+02:26:10,899 --> 02:26:19,239
+Bu da arkadaşlar, yakınsak, is convergent, yakınsak olduğunu herkes gördü değil mi? Hangi test? Which test?
+
+964
+02:26:21,819 --> 02:26:35,959
+Okay, so this is an, and this is always positive, okay, and so decreasing, an decreasing, an is decreasing.
+
+965
+02:26:39,123 --> 02:26:42,123
+Bu yüzden bu konferinçliğe yöntem.
+
+966
+02:26:42,123 --> 02:26:46,123
+Bu konferinçliğe yöntem.
+
+967
+02:26:46,123 --> 02:26:47,123
+Şimdi,
+
+968
+02:26:47,123 --> 02:26:54,123
+A n'ı yöntem.
+
+969
+02:26:54,123 --> 02:26:56,123
+As n'ı yöntem.
+
+970
+02:26:56,123 --> 02:27:02,123
+Bu konferinçliğe yöntem.
+
+971
+02:27:05,123 --> 02:27:06,123
+Ok.
+
+972
+02:27:12,340 --> 02:27:13,959
+That is convergent.
+
+973
+02:27:18,675 --> 02:27:18,995
+Ok.
+
+974
+02:27:20,995 --> 02:27:21,376
+So.
+
+975
+02:27:25,811 --> 02:27:35,351
+Peki arkadaşlar, do you think is this conditionally convergent or absolutely convergent? Do you think is this series?
+
+976
+02:27:41,523 --> 02:27:54,304
+Conditionally or Absolutely Convergent. Herkes bunun cevabını düşünsün bakayım.
+
+977
+02:27:56,664 --> 02:28:05,283
+Hangisi? Şartlı yakınsak mı, mutlak yakınsak mı? Mutlağın aldığımız, elde ettiğimiz seri mutlak ise mutlak yakınsak.
+
+978
+02:28:06,260 --> 02:28:19,360
+Yakınsaklık modeli, mutlak sıfatını koyarız. Mutlağını aldığımızda, ıraksak oluyorsa, tabii kendi yakınsak olmak hoşuyla, kendi yakınsak, mutlağını aldık, ıraksak gelirse, o zaman da katlı yakınsak deriz.
+
+979
+02:28:31,603 --> 02:28:34,683
+Ne çıktı arkadaşlar? Mutlak mı? Şartlı mı?
+
+980
+02:29:04,852 --> 02:29:07,032
+Evet, bunu düşünün arkadaşlar siz.
+
+981
+02:29:09,612 --> 02:29:12,512
+Yani, neye bakacaksınız? Mutluğunu aldığımızda.
+
+982
+02:29:22,644 --> 02:29:26,044
+Kolay bir seriye benzemiyor, mutluğun aldığımızda.
+
+983
+02:29:28,044 --> 02:29:29,164
+Elde ettiğiniz seri.
+
+984
+02:29:38,291 --> 02:29:39,691
+Evet. Bu.
+
+985
+02:29:40,771 --> 02:29:42,971
+Is this convergent or divergent?
+
+986
+02:29:43,671 --> 02:29:44,531
+Buna bakacaksınız.
+
+987
+02:29:47,171 --> 02:29:48,211
+This is an.
+
+988
+02:29:51,211 --> 02:29:59,591
+Yani, şöyle yaparsam, bn alırsam, so, an goes to zero.
+
+989
+02:30:01,412 --> 02:30:04,151
+So, divergence test.
+
+990
+02:30:06,739 --> 02:30:08,380
+İz inconclusive
+
+991
+02:30:12,275 --> 02:30:23,295
+Okay, let's try another method. So bn, let's take bn, 1 over n. So we know that 1 over n is series, divergent.
+
+992
+02:30:24,435 --> 02:30:36,095
+Let's try to apply a comparison test, limit comparison test, limit as n goes to infinite, an over bn.
+
+993
+02:30:36,788 --> 02:30:53,368
+Limit, then goes to infinite, so ln, 1 plus 1 over n over bn, okay, bn, 1 over n, okay, we got this.
+
+994
+02:30:58,324 --> 02:31:07,804
+Limit, ne geliyor arkadaşlar? En çi, en sonsuza giderken, gerçi sonsu, ln bir sıfır bölü sıfır geliyor. Bunu böyle kalsın bu.
+
+995
+02:31:09,064 --> 02:31:12,204
+Okay, so we got 0 over 0 in the terminal form.
+
+996
+02:31:14,144 --> 02:31:24,684
+0 over 0 in the terminal form. Limit as n goes to infinite. Derivation of this, minus 1 over n squared.
+
+997
+02:31:25,167 --> 02:31:37,707
+over 1 plus 1 over n over minus 1 over n squared. Derivation of this by L'Opital's rule. Dikkat edin, hata yapmadım değil mi arkadaşlar? Doğru yaptım değil mi?
+
+998
+02:31:39,547 --> 02:31:52,007
+Ne olur o zaman? Şunları düzenleyecek olursanız arkadaşlar, limit n sonsuza giderken, eksi 1 bölü n kare,
+
+999
+02:31:53,907 --> 02:32:14,047
+n artı 1 bölen, n bölü n artı 1, bu aynen kaldı. Bunu da terçelik çarparsam, eksiler sadeleşir, artı olur. Hata yapmayalım, n kare. Bunlar gider, 1 mi geldi? 1 geldi, doğru mu? Evet. Şunlar da çarpar. İşleme hatası yok değil mi? 1.
+
+1000
+02:32:21,971 --> 02:32:26,572
+4, daha çok daha n numar.
+
+1001
+02:32:26,572 --> 02:32:28,011
+Ok, bu.
+
+1002
+02:32:28,731 --> 02:32:29,211
+Now,
+
+1003
+02:32:32,611 --> 02:32:38,412
+bu,
+
+1004
+02:32:42,004 --> 02:32:43,644
+same character.
+
+1005
+02:32:45,324 --> 02:32:47,044
+Yani bu ne olacak arkadaşlar?
+
+1006
+02:32:48,384 --> 02:32:50,103
+Bunun ıraksak olduğunu biliyorum.
+
+1007
+02:32:50,804 --> 02:32:52,024
+This is divergent.
+
+1008
+02:32:52,384 --> 02:32:53,524
+So this is also
+
+1009
+02:32:53,524 --> 02:32:55,224
+this is also
+
+1010
+02:32:55,224 --> 02:32:56,783
+divergent.
+
+1011
+02:32:57,344 --> 02:33:01,044
+Var mı sorusu olan?
+
+1012
+02:33:01,504 --> 02:33:03,004
+Ölen ben anlamam dediğimiz yer var mı?
+
+1013
+02:33:03,004 --> 02:33:04,724
+Hatası yok galiba bir yerde.
+
+1014
+02:33:05,204 --> 02:33:06,924
+Değil mi? Bölmelerde, çapmalarda.
+
+1015
+02:33:07,924 --> 02:33:08,443
+Evet.
+
+1016
+02:33:10,164 --> 02:33:15,283
+Bu şekilde. O zaman ne olur? Dıraksak olursa, mutluğunu aldım.
+
+1017
+02:33:15,283 --> 02:33:28,184
+This implies that the series, so attention here, minus 1 over n plus 1, a n series is conditionally.
+
+1018
+02:33:32,051 --> 02:33:39,311
+Conditionally convergent. Şartlı raksaklık diye bir şey yok. Şartlı yakınsaklık var.
+
+1019
+02:33:40,291 --> 02:33:47,551
+Not absolutely convergent. Mutlak değil. Şartlı yakınsak oldu gençler.
+
+1020
+02:33:49,311 --> 02:33:52,112
+Evet. Herhalde anlaşıldı.
+
+1021
+02:34:06,067 --> 02:34:08,867
+Bakıyorum şöyle güzel genel örnekler nelerinde var.
+
+1022
+02:34:28,468 --> 02:34:30,508
+Şöyle bir örnek var.
+
+1023
+02:34:31,747 --> 02:34:35,427
+Okay, let's try to show this example.
+
+1024
+02:34:35,427 --> 02:34:38,548
+Let's try to identify character of this series.
+
+1025
+02:35:04,147 --> 02:35:12,467
+square root of n, ln of 2n plus 1 over n.
+
+1026
+02:35:14,647 --> 02:35:17,567
+Okay, let's investigate the character of this series.
+
+1027
+02:35:19,948 --> 02:35:28,567
+Okay, do you think which test is the proper one to determine whether this series divergent or convergent?
+
+1028
+02:35:30,207 --> 02:35:31,628
+Evet, herkes yapsın gençler.
+
+1029
+02:35:32,115 --> 02:35:38,576
+Hangi test uygundur bu seriyi çözmek için? Bu serinin karakterini belirlemek için? Evet.
+
+1030
+02:35:59,796 --> 02:36:00,876
+Buldunuz mu gençler?
+
+1031
+02:36:03,695 --> 02:36:06,495
+Testi belirlemeniz lazım ilk önce. Hangi test?
+
+1032
+02:36:07,816 --> 02:36:09,956
+İlk 30 saniyede görmeniz lazım.
+
+1033
+02:36:12,216 --> 02:36:19,956
+Bu basit bir soru aslında, zor gibi görünüyor ama, hangi testi kullanmanız gerektiğini söylüyor bizinin genel terimi.
+
+1034
+02:36:27,667 --> 02:36:53,247
+Divergence test is inconclusive, because of the fact that the general term an goes to 0, as n goes to infinite. That's why we cannot say this is divergent. But also you cannot say this is convergent. Try another method. It is not better to apply comparison test. I think it is better to apply limit comparison test.
+
+1035
+02:36:53,683 --> 02:37:00,163
+Ama in order to compare this series with some series, we need to choose some proper test series.
+
+1036
+02:37:00,163 --> 02:37:02,163
+Which series?
+
+1037
+02:37:04,644 --> 02:37:12,163
+Okay, not, root test is not proper one, not, now look at here. So in the root test, so we got this.
+
+1038
+02:37:15,443 --> 02:37:18,483
+So we got this, an to 1 over n.
+
+1039
+02:37:18,963 --> 02:37:21,583
+Ama burada, kutup sıvı, değil.
+
+1040
+02:37:22,783 --> 02:37:24,043
+Tamam, [öğrenci].
+
+1041
+02:37:26,783 --> 02:37:27,963
+Bu, yanlış.
+
+1042
+02:37:31,144 --> 02:37:33,943
+Yanlış yaklaşın. Seni karmaşık yere götürür.
+
+1043
+02:37:34,563 --> 02:37:36,804
+Kök gördün diye kök testi vuracaksın diye bir şey yok.
+
+1044
+02:37:37,783 --> 02:37:41,984
+Genellikle altıda üstüde neye bağlı ifadeler görürse kök testi faydalı olabiliyor.
+
+1045
+02:37:43,724 --> 02:37:46,083
+Oran testi hiç uygulamayın. Cevap 1 gelir.
+
+1046
+02:37:47,603 --> 02:37:52,903
+Oran testinin ne zaman uygulandığı durumları göstermiştik. Hiç ona benzemiyor.
+
+1047
+02:37:53,843 --> 02:37:57,243
+Do not try to apply ratio test.
+
+1048
+02:37:57,644 --> 02:38:02,423
+Okay, it remains to apply limit comparison test.
+
+1049
+02:38:02,563 --> 02:38:06,123
+No way. Başka yol yok arkadaşlar. Limit kıyaslama testi.
+
+1050
+02:38:31,987 --> 02:38:56,987
+Evet.
+
+1051
+02:38:56,115 --> 02:39:10,596
+Now, if you prefer to use this term, so we got this series, which is divergent according to P-series test.
+
+1052
+02:39:11,195 --> 02:39:14,475
+So 1 over 2, smaller than or equal to 1.
+
+1053
+02:39:14,475 --> 02:39:16,475
+Okay, now so...
+
+1054
+02:39:17,363 --> 02:39:33,603
+Let's try to apply limit comparison test. Limit as n goes to infinite, an over bn. Limit as n goes to infinite, an over bn. So we got this.
+
+1055
+02:39:38,036 --> 02:39:38,756
+Oh, sorry.
+
+1056
+02:39:44,724 --> 02:39:51,583
+An over Bn, natural logaritmic An over Bn, 2n plus 1 over n.
+
+1057
+02:39:52,263 --> 02:39:58,004
+So this goes to the end phrase ln2, which is non-zero.
+
+1058
+02:39:58,743 --> 02:39:59,903
+Let's comment on this.
+
+1059
+02:40:00,636 --> 02:40:05,636
+Evet.
+
+1060
+02:40:00,000 --> 02:40:04,700
+An approximates ln 2 times bn
+
+1061
+02:40:04,700 --> 02:40:09,120
+for sufficiently larger n.
+
+1062
+02:40:09,120 --> 02:40:10,739
+So, okay, values.
+
+1063
+02:40:11,659 --> 02:40:14,719
+Now, that's why they are of the same character.
+
+1064
+02:40:19,700 --> 02:40:21,700
+are of the same character.
+
+1065
+02:40:25,236 --> 02:40:30,156
+Aynı karakterdendir arkadaşlar. O zaman bu da ıraksaktır.
+
+1066
+02:40:30,376 --> 02:40:34,855
+So we know that this is divergent, this is also divergent.
+
+1067
+02:40:35,416 --> 02:40:37,316
+Okay. Is there an equation?
+
+1068
+02:40:38,236 --> 02:40:39,276
+Var mı anlaştığım bir yer?
+
+1069
+02:40:40,056 --> 02:40:43,216
+Hocamın ben anlamadım dediğimiz yer varsa söyleyin.
+
+1070
+02:40:45,156 --> 02:40:46,176
+İzah edelim.
+
+1071
+02:40:48,296 --> 02:40:49,516
+Evet gençler.
+
+1072
+02:40:53,523 --> 02:40:54,443
+Bakıyorum.
+
+1073
+02:40:55,984 --> 02:40:58,783
+Başka nerelerde sorular var?
+
+1074
+02:41:00,804 --> 02:41:04,103
+Çözebileceğimiz güzel sorular arıyorum.
+
+1075
+02:41:04,543 --> 02:41:07,403
+Neredeyse soruların hepsini çözmüşüz arkadaşlar.
+
+1076
+02:41:08,023 --> 02:41:10,743
+Şey anlamında, görmüşüz soruların bir çoğunu.
+
+1077
+02:41:11,623 --> 02:41:13,383
+Görmediğimiz soru tipi yok gibi.
+
+1078
+02:41:14,703 --> 02:41:14,963
+Evet.
+
+1079
+02:41:28,051 --> 02:41:38,471
+Evet gençler, sıkıntı yok gibi hepsini çözmüşüz gibi. Ben başka şey göremiyorum. Bizim kitaplardan bakalım.
+
+1080
+02:41:39,811 --> 02:41:48,871
+Homework. Evet. Bunlar arkadaşlar, altı mesajları. Bunları yapmıştık zaten. Şuralardan bakalım.
+
+1081
+02:41:54,355 --> 02:41:56,255
+Tamam, bu soru deneyelim.
+
+1082
+02:41:58,455 --> 02:42:07,056
+Do you think which test is the proper one to identify character of series given in the 24 question?
+
+1083
+02:42:07,056 --> 02:42:13,975
+24. soruda verilen serinin karakterini belirlemek için hangi test uygundur?
+
+1084
+02:42:18,388 --> 02:42:18,948
+Evet.
+
+1085
+02:42:31,956 --> 02:42:39,796
+Ne yapıyoruz arkadaşlar? Bu, bu bir polinomial function, ama bu polinomial function, bir polinomial function,
+
+1086
+02:42:57,971 --> 02:43:00,351
+Okay, so we got this.
+
+1087
+02:43:01,351 --> 02:43:03,711
+2 times
+
+1088
+02:43:03,711 --> 02:43:07,791
+k, 1 over 2.
+
+1089
+02:43:08,551 --> 02:43:13,991
+Okay, now let's say this is ak, a, so bk, sorry.
+
+1090
+02:43:14,271 --> 02:43:15,351
+So this is bk.
+
+1091
+02:43:16,271 --> 02:43:17,151
+Varmanashmihmihmih.
+
+1092
+02:43:17,151 --> 02:43:18,791
+So this is ak.
+
+1093
+02:43:22,899 --> 02:43:24,099
+So this is a k.
+
+1094
+02:43:25,239 --> 02:43:26,819
+So this is b k.
+
+1095
+02:43:27,899 --> 02:43:31,680
+Now limit as k goes to
+
+1096
+02:43:31,680 --> 02:43:35,559
+Divergence testten de gelir.
+
+1097
+02:43:35,899 --> 02:43:37,279
+Evet, oradan da bulabilirsin.
+
+1098
+02:43:38,319 --> 02:43:39,399
+Ama biz bunu seçtik.
+
+1099
+02:43:39,479 --> 02:43:40,379
+Bakalım gelecek mi?
+
+1100
+02:43:40,479 --> 02:43:44,520
+Limit as k goes to
+
+1101
+02:43:44,520 --> 02:43:44,959
+Infinite
+
+1102
+02:43:47,827 --> 02:44:10,268
+Evet, oradan in sonsuz geliyor zaten. Değil mi? O şeye gerek yok. Divergent testte gerek yok zaten. Direkt sonsuz geliyor. Bir dakika, aynen. Divergent testte gerek yok. Direkt sonsuz geliyor. Aynen öyle. Sıfır gelse tamam. Sıkıntı yok. Divergent testten yapalım. Limit as k equals to infinite ak
+
+1103
+02:44:11,123 --> 02:44:19,703
+Limit as k goes to infinite, 2 to k square plus 1 over k to 3 over 2 plus
+
+1104
+02:44:19,703 --> 02:44:26,843
+Böyle düşünebilirsin arkadaşlar. Yani şunu şeyden alıyorum, k üzeri 3 bölü 2 parantezine aldım.
+
+1105
+02:44:26,843 --> 02:44:29,723
+K üzeri 3 parantezine aldım, k üzeri 3 bölü 2.
+
+1106
+02:44:30,355 --> 02:44:44,716
+Burası ne olur arkadaşlar? 1 artı 2 üzeri k 3 bölü 2. Şunlar zaten burayı da şey alırsan, k kare parantezini alırsan, 2 geliyor arkadaşlar. Yaparsan ne geliyor? Sonsuz mu geliyor? Sonsuz gelecek. Doğru mu?
+
+1107
+02:44:46,056 --> 02:44:51,536
+As you see, this is non-zero. By the divergence test, this is divergent.
+
+1108
+02:44:54,216 --> 02:44:54,815
+Okey.
+
+1109
+02:44:55,667 --> 02:44:58,488
+So, which test is the proper one for this?
+
+1110
+02:44:59,628 --> 02:45:05,927
+If you see 2 to k, k factorial, k to k, I think ratio test.
+
+1111
+02:45:07,747 --> 02:45:08,788
+Ratio test.
+
+1112
+02:45:09,328 --> 02:45:11,087
+Ratio teste bakın arkadaşlar.
+
+1113
+02:45:13,247 --> 02:45:14,968
+Yapmıyorum, siz yaparsınız.
+
+1114
+02:45:20,884 --> 02:45:25,743
+Eğer bu condition halde, sayıda, bu konverged.
+
+1115
+02:45:34,195 --> 02:45:49,456
+24'ü bir daha anlatayım. Bir serinin yakınsak olması için ne olması gerekirdi? Seriyi meydana getiren AK genel terimin limitinin sıfıra gitmesi gerek koşu. Ama yakınsak olması için yeterli değildir bu durum.
+
+1116
+02:45:50,556 --> 02:46:01,236
+Şimdi bakıyorum, AK genel terimin limiti, K sonuçta giderken polinom gibi düşünebilirsin. Bu polinomun derecesi 2. Aşağıdakini de polinom gibi düşünebilirsin.
+
+1117
+02:46:01,631 --> 02:46:06,272
+Şu iki yok say, k sonuçta giderken iki yok sayılabilir.
+
+1118
+02:46:06,675 --> 02:46:33,255
+Bu da 3 bölü 2. dereceden bir polinommuş gibi davranır. Payın derecesi, paydanın derecesinden büyük olduğundan, AK limiti, K sonsuza giderken sonsuz gelecektir. İstiyorsan burada cebri ser işlemleri yap, ortak çarpan parantezleri alırsan görebilirsin. Gerçekten sonsuza geliyor. Genel terimin limiti sonsuza gittiğinden, dolayısıyla AK ile oluşturan seri ıraksak olur. İraksaklık testine göre. Tamam mı? Var mı anlaşma imbiye?
+
+1119
+02:46:35,667 --> 02:46:36,108
+Evet.
+
+1120
+02:46:41,108 --> 02:46:42,547
+Kroki, what about this?
+
+1121
+02:46:44,007 --> 02:46:45,688
+Which test is the proper one?
+
+1122
+02:47:19,636 --> 02:47:21,155
+Böyle düşünebilirsiniz arkadaşlar.
+
+1123
+02:47:33,203 --> 02:47:39,043
+Mesela bunu böyle aldık. BK'ydı arkadaşlar, sanki bir bölü kakare işi yarayacakmış gibi görünüyor.
+
+1124
+02:47:39,043 --> 02:47:39,423
+Okey.
+
+1125
+02:47:40,023 --> 02:47:40,443
+I see.
+
+1126
+02:47:41,223 --> 02:47:45,863
+It seems that, okey, so this is good one, but not good one.
+
+1127
+02:47:46,164 --> 02:47:49,164
+Okey, if you do this, this is convergent.
+
+1128
+02:47:51,572 --> 02:48:13,172
+This is a convergent series. Limit as k goes to infinite, ak over bk. Let's try to apply comparison test, limit comparison test. Limit as k goes to infinite, 2 times lnk over k squared times bk.
+
+1129
+02:48:13,520 --> 02:48:16,440
+1 over bk, k².
+
+1130
+02:48:17,159 --> 02:48:19,840
+So, this disk, and the answer is infinite.
+
+1131
+02:48:20,060 --> 02:48:26,500
+This implies that ak is sufficiently bigger than bk.
+
+1132
+02:48:27,020 --> 02:48:32,920
+So, the seri generated by bk is convergent.
+
+1133
+02:48:32,920 --> 02:48:38,000
+Then, can you say anything about the character of seri generated by?
+
+1134
+02:48:38,579 --> 02:48:59,340
+AK terms which are bigger than BK. You cannot say inconclusive. This kind of preference is inconclusive. Böyle bir tercih işe yaramadı. Gördüğünüz gibi arkadaşlar her zaman limit kıyaslama testinde seçtiğiniz şey işe yaramayabilir ama uygun bir şey seçmeniz lazım.
+
+1135
+02:49:05,172 --> 02:49:09,731
+1 bölü k alırsanız işe yarayacakmış gibi görünüyor. Tamam mı gençler?
+
+1136
+02:49:11,871 --> 02:49:12,112
+Evet.
+
+1137
+02:49:14,391 --> 02:49:18,731
+Divergence test işe yaramaz burada 35'te.
+
+1138
+02:49:19,752 --> 02:49:22,172
+Divergence testi nasıl işe yaradığını söylüyorsun.
+
+1139
+02:49:24,631 --> 02:49:28,471
+2 ln k bölü k'nın karesi.
+
+1140
+02:49:30,531 --> 02:49:32,231
+Bu ne olur? Bu sıfıra gider.
+
+1141
+02:49:35,156 --> 02:49:51,236
+Divergence test, incongruciv. Divergence test, incongruciv. Ok. I think this is best one.
+
+1142
+02:49:51,236 --> 02:50:01,276
+Hadi onu yapalım bakalım sağlayalım mu? Let's try to apply this pair, ak and bk. Limit as k equals to infinite.
+
+1143
+02:50:01,744 --> 02:50:27,184
+Ak over bk, limit as k goes to infinite, 2 times lnk over k square, 1 over bk, times 1 over bk, and k, and so we got limit as k goes to infinite, 2 times lnk over k, and this goes to zero.
+
+1144
+02:50:27,987 --> 02:50:54,572
+Bu, bu
+
+1145
+02:50:54,804 --> 02:51:21,123
+İntegral testi işe yarar mı? İntegral testi işe yarayacak gibi duruyor arkadaşlar. Evet, integral testi işe yarayacak gibi duruyor. Hiçbir işe yaramıyor arkadaşlar. İntegral testi işe yarayacakmış gibi duruyor. Yani BK'yı şunu da deneyin. BK, bir bölü, hep bir bölü K'lı aldık. K kareli alsak ne olur?
+
+1146
+02:51:26,804 --> 02:51:39,443
+BK'yı bunları deneyin akşam. Bir bölüm, K üzeri 3 bölü 2, BK, K kare alın. Bu uraksaktır zaten. Tamam mı gençler? Bunları alın, deneyin ama integral testi daha uygun.
+
+1147
+02:51:39,443 --> 02:51:50,423
+Or this is the integration test. I think the best is the integration test. Integration test is the best one.
+
+1148
+02:51:51,123 --> 02:52:04,324
+Yani neden? Bunu integraline alabilirim ben. 2 çarpı ln x bölü x kare dx. Bu azalan. So this is decreasing and positively defined.
+
+1149
+02:52:17,652 --> 02:52:28,311
+Bu, ne oldu arkadaşlar? Explanation minus t dt, integration. As you see, we can easily integrate this from 1 to infinite.
+
+1150
+02:52:29,452 --> 02:52:37,311
+I think you can see this is divergent or convergent. Tamam? The integration test is the best one to solve this problem.
+
+1151
+02:52:38,324 --> 02:52:57,263
+Şimdilik öyle. Ama başka uygun bir BK seçerseniz şunları deneyin. Bir kıyaslama testi de sanki şunlardan birinde gelecekmiş gibi duruyor. Size ödev olsun, siz bakın gençler. Tamam mı? Evet, benim bu anlayacaklarım bugünlük bu kadar. Sorusu olan var mı? Hocam ben şurayı anlamadım dediğimiz yer var mı? Yoksa dersimizi bitirelim.
+
+1152
+02:53:01,363 --> 02:53:03,463
+Zaten herkes ayrılmış herhalde, çoğu.
+
+1153
+02:53:04,943 --> 02:53:07,324
+Evet gençler, kendinize iyi bakın. Görüşmek üzere.
