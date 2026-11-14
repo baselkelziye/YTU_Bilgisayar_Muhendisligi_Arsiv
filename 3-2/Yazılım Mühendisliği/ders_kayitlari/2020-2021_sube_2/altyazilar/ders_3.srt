@@ -1,0 +1,2827 @@
+1
+00:00:22,835 --> 00:00:26,155
+Aftar, tam ne süreçte, birbirine izin.
+
+2
+00:01:36,243 --> 00:01:39,144
+Bu kadar yapabildik.
+
+3
+00:01:49,524 --> 00:02:06,403
+Evet arkadaşlar, günaydın herkese, hoş geldiniz. Ben de 2-3 dakika geç başladım. Geçen hafta ne yapmıştık, ne etmiştik onu bir hatırlamak için. Şimdi kaldığımız yerden derse devam edebiliriz.
+
+4
+00:02:08,276 --> 00:02:36,276
+Geçen hafta arkadaşlar, en son bu artımsal ve yinelemeli modeller üstüne konuşmuştuk. Bunların önce genel özelliklerini konuştuk. Ardından bugün iki tane klasik artımsal ve yinelemeli model göreceğiz. Onların literatüre kazandırdığı bazı önemli adımlar var. Ardından daha güncel olarak çevik süreçleri konuşuyor olacağız bugün. Bakalım işte.
+
+5
+00:02:36,276 --> 00:02:41,236
+İnşallah bugün rahat rahat yaparız. Nereye kadar ilerleyebilirsek göreceğiz.
+
+6
+00:02:46,771 --> 00:02:54,771
+Şimdi ilk başta sarmal model ile başlayalım. İngilizce spiral model. Şimdi bu şemayı okumak için...
+
+7
+00:02:55,539 --> 00:02:57,459
+Şu şekilde düşünmemiz gerekiyor.
+
+8
+00:02:58,319 --> 00:03:02,319
+Önce şu an faremin üstünde olduğu noktadan itibaren başlıyoruz.
+
+9
+00:03:02,859 --> 00:03:11,259
+Yani bu çizginin kesiştiği noktanın en yakın olan okum başlangıcının yerinden başlıyoruz.
+
+10
+00:03:11,719 --> 00:03:16,299
+İçteki en koyu sarmal ilk iterasyonumuz, ilk çevremimiz olacak.
+
+11
+00:03:17,500 --> 00:03:21,759
+Bu genelde ilk başlarda tabii ki artımsal şekilde ilerliyoruz.
+
+12
+00:03:21,759 --> 00:03:23,539
+Daha sonra bazı çevremlerimiz.
+
+13
+00:03:23,539 --> 00:03:30,680
+İterasyon için yapabiliriz. İlk yapacağımız etkinlik arkadaşlar, müşteri ile iletişim.
+
+14
+00:03:31,092 --> 00:03:59,092
+Bunu şu şekilde anlayınız. Gereksinimlerinin belirlenmesi çalışmaları yapıyoruz bu aşamada. Bu tamamlanıyor ve ikinci büyük çizgiye geliniyor. Daha doğrusu aslında birinci, ya altı adımın birincisi ilk iterasyonunda tamamlanmış olup ikinci adıma geçiliyor. İkinci adımda planlama eylemleri yapıyoruz. Hangi kaynakları kullanacağız? Onları belirliyoruz. Burada insan kaynaklarının da belirlenmesi.
+
+15
+00:03:59,092 --> 00:04:10,132
+İşte yazılım geliştirme için kullanılacak araçlar, gereçler, lisanslar vesaire onlar da önemli. Çeşitli aşamalarda.
+
+16
+00:04:10,804 --> 00:04:38,604
+Her neye ihtiyacımız olacaksa her türlü kaynağı planlıyoruz. Danışmanlık hizmetleri alacaksak, bazı kısımları artı solsat yapacaksak falan hepsinin kaynağı planlanmasını yapıyoruz. Ne zaman, hangi işler ne zaman yapılacak, hangisinde yapılacak bütün bunları ayrıntılarıyla belirliyoruz. Daha sonra biraz daha ilerleyip risk analizi yapıyoruz. Bu sürecin önemli bir katkısı risk analizinin sürekli yapılması gereken bir iş.
+
+17
+00:04:38,803 --> 00:05:05,343
+olduğunun vurgulanmasıdır. Burada risk analizi konusuna daha sonra deneyeceğiz. Yani bununla ilgili başı başına bir konumuz, bölümümüz var. Ama kısaca risk analizinde üç tip risk olduğundan bahsedebilirim. Teknik riskler, mali riskler ve politik riskler. Burada teknik riskler derken yazılım geliştirme süreciyle ilgili her tür teknik ayrıntıdan bahsediyorum.
+
+18
+00:05:06,543 --> 00:05:25,983
+Diyelim ki kullanacağımız programlama yaklaşımında çok deneyimli kaynağımız yoksa bu bir teknik risktir. İnsan kaynağımız yoksa bu bir teknik risktir. Müşterinin illa tümleştirilmesi gereken bir sistemi varsa ve biz onunla hiç daha önce otobüstenle tümleştirme yapmadıysak bu bir teknik risktir gibi.
+
+19
+00:05:26,543 --> 00:05:28,303
+İkincisi mali riskler.
+
+20
+00:05:28,692 --> 00:05:34,292
+Bu daha çok işletmenin finansal öz kaynakları ile ilgilidir.
+
+21
+00:05:34,292 --> 00:05:41,351
+Ben şöyle bir örnek vereyim. Şu an öz kaynaklarımız sınırlıdır. Fakat projenin arge odağına güvenmişizdir.
+
+22
+00:05:41,792 --> 00:05:49,752
+Ve diyelim ki bir destek programına başvurmuşuzdur bunun için. TÜBİTAK'ın TDP programları var. Onlardan birine başvurmuşuzdur.
+
+23
+00:05:50,292 --> 00:05:56,471
+Eğer oradan arge desteği kazanamazsak bu proje hiç başlayamayacağızdır.
+
+24
+00:05:56,692 --> 00:06:04,312
+Belki de çünkü mali kaynaklarımız yeterli değildir. Destek etse başlayacağız yoksa başlamayacağız gibi düşünülebilir.
+
+25
+00:06:04,911 --> 00:06:17,992
+Politik risklerden ise ülke siyasetinden bahsetmiyorum. Şirket içi ve yazılım eviyle olası müşteri şirketler arasındaki politik risklerden bahsediyorum.
+
+26
+00:06:18,711 --> 00:06:24,692
+Tabii ki ülke siyasetinin de bazı eğilimleri, ekonomi şunu bunu veya şöyle de diyebilirim.
+
+27
+00:06:24,692 --> 00:06:32,692
+Mesela ülke siyasetindeki şu şu şu alanlara öncelik vereceğiz. Sağlığa ve ulaşıma. O zaman biz de...
+
+28
+00:06:33,300 --> 00:06:50,840
+Zaten bu alanlarda çalışan bir firmaysak ve bu alanlarda bir proje yöneteceksek ne mutlu çok güzel, bu bir avantaj. Ama o konularda değil de bizim odaklandığımız konular hiç önceki konular arasında yer almıyorsa bunu da bir mesela politik risk, politik etken olarak düşünebilirsiniz.
+
+29
+00:06:50,840 --> 00:07:01,300
+Veya işte şirket çeşitli dinamikler olabilir. Ben onlardan pek anlamlı bir insan diyelim. Ama bu üç ana kategoride bütün riskler...
+
+30
+00:07:01,300 --> 00:07:11,200
+belirlenmeye çalışırız, değerlendirir, derecelendirir ve izlenir. Bütün bunların nasıl yapıldığını daha sonraki haftalardaki derslerimizden birinde göreceğiz.
+
+31
+00:07:12,920 --> 00:07:21,100
+Şimdi şuradan başlamaya başlamış. Bir, iki, üçüncü iç sarmalı bitirdik. Dördüncüsüne geçtik. Çözümleme ve tasarım.
+
+32
+00:07:25,887 --> 00:07:39,647
+Nesne yönelik programlama dersinde yaptığınız analiz işlemlerini de değerlendirebiliriz, ekleyebiliriz biraz. Ama biraz daha ayrıntısını önümüzdeki haftalarda analiz etkinlikleri içerisinde göreceğiz.
+
+33
+00:07:40,607 --> 00:07:48,667
+Keza tasarımla da ilgili ile çalışacağız. Bu işlemimizi yaptıktan sonra sıradaki adıma geçiyoruz. Gerçekleme ve kurulum.
+
+34
+00:07:53,887 --> 00:08:13,247
+geçireceğiz. Ama sadece kodlamakta kalmayacağız. Unutmayın, yazılım sadece çalışan kod değildir. Teknik dokumentasyon ve son kullanıcı yönelik dokumentasyon da dahildir. Onu da yapıyoruz. Bu gerçekleştirdiğimiz kısmı kullanıcı ortamına veya bir test ortamına kuruyoruz.
+
+35
+00:08:21,887 --> 00:08:26,127
+kullanılacağıyla ilgili eğitiyoruz. Bütün bu etkinlikleri yapıyoruz bu aşamada.
+
+36
+00:08:27,379 --> 00:08:50,187
+Ardından müşteri bu gerçeklediğimiz kısmı değerlendiriyor. Eksiklikler ne varsa, yanlışlar varsa, hatalar varsa bütün bunlarla ilgili geri bildirimler de bulunuyor. İyi olmuş olan yerleri de tabii ki her türlü düşüncesini bildiriyor. Bildirmek üzere değerlendiriyor ve ardından...
+
+37
+00:08:50,259 --> 00:09:07,259
+İkinci adıma geçiyoruz. Bu değerlendirmeleri tekrar işte müşteri iletişime geçip bu sefer o değerlendirmeleri alıp eğer yeni ihtiyaçlar ortaya çıkmışsa onları da alıp tekrar bu bilgilerden yola çıkartan yine aynı işlemleri sürekli yapmaya devam ediyoruz.
+
+38
+00:09:07,259 --> 00:09:18,259
+Tekrar sıradaki döngümüzü planlıyoruz. Tekrar risk analizi çalışmalarımızı gözden geçiriyoruz veya izleme çalışmaları yapıyoruz. Sonra ardından...
+
+39
+00:09:18,259 --> 00:09:36,460
+ilgili yapacağımız kısmın çözümlenme, tasarımını yapıyoruz. Gerçeklenme kullanımını yapıyoruz. Müşteri ürünü deniyor ve tekrar bize sonucu bildiriyor derken bu şekilde sürekli yazılımımızın hacmi de büyüyor. Yani gelişiyor, ilerliyor. Bu şekilde bir model. Sarmal model.
+
+40
+00:09:41,011 --> 00:10:01,531
+Tabii bu klasik modeller şu an sektörde aktif olarak kullanılmıyor. Şelale modeli hariç bu modeller sektörde pratik olarak kullanılmıyor. Ama önemli bunların getirdikleri kazançlar daha güncel süreçlerde kullanılıyor veya klasik süreç içerisine monte edilmiş oluyor.
+
+41
+00:10:02,515 --> 00:10:21,415
+Şimdi yine benzer bir şekil üstünden konuşacağımız kazan-kazan modeli var. Bu yeniçerilerin kazan kaldırması gibi değil. Bu win, kazanmak anlamında kazan. Burada önemli olan işin içerisine paydaş kavramının getirilmesi.
+
+42
+00:10:30,515 --> 00:10:53,495
+Veya tek bir müşteriye bile özel yapılacak yazılım bile olsa, o müşterinin içerisinde farklı paydaşlar vardır. Paydaş dediğiniz şey de, yazılım projesinin başarısının veya başarısızlığının, hiç fark etmez, olumlu veya olumsuz, etkileyici, her farklı tür, kişi, kurum, grup, departman vs.
+
+43
+00:10:55,124 --> 00:11:09,803
+Bunlar her bir birer paydaştır. Yazılım evi olarak biz de bir paydaşız. Hatta belki kendi işimizle yazılım evinin üst yönetimi ve çalışanları gibi iki alt gruba da erebiliriz paydaşları.
+
+44
+00:11:11,604 --> 00:11:22,464
+Buradaki temel dinamik şu, yazılımın başarısı veya başarısızlığı veya farklı kısımlarının başarısı ve başarısızlığı farklı paydaşları farklı şekillerde etkiler.
+
+45
+00:11:23,364 --> 00:11:35,104
+Bazı işlevler bazı paydaşları daha çok ilgilendirir, onları daha çok kazanç sağlar. Bazı paydaşların ise işini daha fazla arttırabilir mesela.
+
+46
+00:11:36,275 --> 00:11:46,355
+Yani hiçbiri olmasa bile en azından paydaşlar yazılımın farklı bölümlerinin önceliklerini farklı düzeylerde görürler.
+
+47
+00:11:46,355 --> 00:12:01,495
+Ve biz de her bir tekrarda eğer artım yapacaksak hangi işlevi, hangi kullanım öyküsünü, hangi use case gerçekleyeceğimizin sıralamasını yaparken o paydaş şu olacak diyecek, bu paydaş bu olacak diyecek.
+
+48
+00:12:01,775 --> 00:12:04,275
+Arada bir hiçbir şey olmasa bile bu yönden bir...
+
+49
+00:12:04,275 --> 00:12:21,615
+Çelişme olacak. Yani şanslıysak, şanslısak işte çakışma bile olabilir. Bu nedenle, yani temel dinamik bu, bu dinamik etrafına şekillenen bir süreç bu. Öncelikle paydaşları belirliyoruz.
+
+50
+00:12:22,100 --> 00:12:50,100
+Sonra bu paydaşların kazanma durumlarını belirliyoruz. Bunların aslında çeşitliler illa çıkacaktır. Ardından çeşitli uzlaşma yöntemlerinin ve seçeneklerinin belirlenmesi işlemlerini yapıyoruz. Bizden fazla seçenek olabilir. Bu seçeneklerin değerlendirilmesi işlemlerini yapıyoruz ardından. Genele baktığımızda tüm paydaşların toplamda optimumunu kazanıyoruz.
+
+51
+00:12:50,100 --> 00:12:55,000
+...sajlayacak şekilde de düşünebiliriz seçenek değerlendirmesinde.
+
+52
+00:12:55,379 --> 00:12:59,884
+Veya odamız maliyet ise en düşük maliyetle...
+
+53
+00:13:00,148 --> 00:13:12,528
+Uzlaşı'ya götürecek seçeneği de seçebiliriz. Artık bu elimizdeki problemin ve şartların doğasına göre değişir. Seçenekleri değerlendirip birisinin üstünde karar veriyoruz.
+
+54
+00:13:12,528 --> 00:13:18,948
+Ve bu aşamada tabii ki risk analizi etkinliklerinde yapmayı unutmamalıyız deniyor.
+
+55
+00:13:23,412 --> 00:13:42,132
+Açıkla açık hale getirdiğimiz durumun gerçeklenmesi ve kurulumu söz konusu. Tabii ki bu arada tasarım etkinlikleri de yapılmadan olmaz. Onu biraz geçiştirmiş diyelim bu modeller. Ama zaten yapılacağı nasıl gereken bir iş olduğu için özellikle vurgulamamış da diyebiliriz.
+
+56
+00:13:43,635 --> 00:14:10,336
+Evet, gerçekleme kurulumun altından tekrar çeşitli paydaşlar yazılımı deniyorlar ve tekrar onlarla bu sefer tekrar belirleyip, görüşüp değişiklik olmuşsa kazanma durumlarında şurada, burada onları gözden geçirip uzlaşma seçeneklerinin ağırlıkları değişmişse onları tekrar gözden geçirip bunlardan bir tanesini kabul vermek, risk çözümleme işlemleri, tasarım, gerçekleme, kurulum bu şekilde ilerleyen bir süreç.
+
+57
+00:14:11,635 --> 00:14:20,115
+bize getirdiği de bu paydaşlarla ilgili durumların açıklaştırılması ve çözülmesine yönelik çeşitli öneriler sunmasıdır.
+
+58
+00:14:22,964 --> 00:14:50,744
+Bunlar klasik süreçlerdi. Aslında şimdi daha güncel olarak kullanılan çivik süreçlerden bahsetmek istiyorum. Artımsal süreçler bunlar ve geçen hafta bu yazılım projelerinin başarısızlık durumlarını ayrıntılı konuşmuştuk. Oralarda yazılım projesinin başarı şansını önemli oranda arttıran bir yazılım geliştirme süreç modeli ailesi.
+
+59
+00:14:50,964 --> 00:14:52,644
+Olduğunu gördük çevik süreçte.
+
+60
+00:14:52,944 --> 00:15:00,484
+Çevik süreçlerin odağı ve amacı veya çevik denilmesinin sebebi agile.
+
+61
+00:15:01,344 --> 00:15:05,704
+Değişen gereksinimlerin, teknik risklerin bunlardan kaçınamıyoruz.
+
+62
+00:15:06,204 --> 00:15:08,644
+Bunlar gibi önceden belirlenemeyen durumlara karşı...
+
+63
+00:15:09,456 --> 00:15:17,576
+Ve yazılım ürününü etkileyebilecek her türlü değişikliklere karşı esneklik sağlamak amacı güden süreçlerdir.
+
+64
+00:15:17,576 --> 00:15:31,515
+Çevik süreçler. Bunlara bir aile diyoruz. Bu çevik süreç airesinden XP ve Scrum'u göreceğiz. Ama önce bunların bir ortak özelliklerini bilmemiz ve iyi anlamamız gerekmektedir.
+
+65
+00:15:32,532 --> 00:15:41,232
+Şimdi bir yazılım geliştirme sürecinde önemli olan sekiz tane etken listelenmiş burada. İki sütun halinde.
+
+66
+00:15:42,792 --> 00:15:52,092
+Sol sütundaki maddeler ile bazen sağ sütundaki maddelerin de birbiriyle çelişme olasılığı da var.
+
+67
+00:15:52,092 --> 00:15:54,412
+Biraz konuşalım bunların üstünde.
+
+68
+00:15:55,352 --> 00:15:56,972
+Bireyler ve etkileşim lazım.
+
+69
+00:15:57,812 --> 00:16:01,271
+Bu çirkin süreçlerde en önemli etkenlerden birisidir.
+
+70
+00:16:02,192 --> 00:16:03,391
+Önemli biridir.
+
+71
+00:16:03,831 --> 00:16:12,552
+Aslında zaten yazılım mühendisliği bir kodlama işi veya makinelerle uğraşma işi değildir arkadaşlar.
+
+72
+00:16:13,292 --> 00:16:16,391
+Yazılım mühendisliği artık bir insan işidir.
+
+73
+00:16:17,751 --> 00:16:24,591
+İnsanların yetenekleri ve iletişimleri en önemli etkendir.
+
+74
+00:16:25,139 --> 00:16:33,639
+Bunun üzerine yazılım proje yönetimi konu zamanı geldiğinde, o konuları geldiğimizde özellikle vurgulayacağız ve dedikleyeceğiz.
+
+75
+00:16:35,639 --> 00:16:37,639
+Şuradan sadece şunu söyleyeyim.
+
+76
+00:16:39,923 --> 00:17:01,563
+Yeterli ve uygun bir ekiple çalışmaya çalışamıyorsanız, hem yazılım evi tarafından, hem de müşteri tarafından, o zaman o projenin başarısızlığa uğrayacağıma şansı aşırı yüksek. O yüzden bireyler ve etkileşimler aslında bizim yaptığımız işlerin odağında. Tamam, teknik yetenekler önemli.
+
+77
+00:17:02,323 --> 00:17:24,324
+Düzgün yapılması gereken karmaşık işler. Ama o konularda ne kadar yetenekli veyahut da zengin başarılı olursak olalım, bireyler arasındaki ilişkiler, onların koordinasyonu ve bir ekip halinde kenetlenip hareket edememeleri durumunda.
+
+78
+00:17:26,736 --> 00:17:45,876
+Sonuca ulaşmıyor. Ve doğru kişilerle doğru etkileşimlerinde net açık verimli olabilmesi lazımdır. Aksi taktörde geri kalan şeyler ne kadar önemli, ayrıntılı, zengin vs. olursa olsun proje başarısız ağlayacaktır.
+
+79
+00:17:48,147 --> 00:18:02,967
+Tabii ki o yüzden süreçler önemli. İyi tanımlanmış adımları belli ve elimizdeki probleme uygun bir yazılım gelişimi süreciyle çalışıyorsak başarı şansımız önemli oranda da artmaktadır.
+
+80
+00:18:02,967 --> 00:18:11,867
+Fakat burada aslında önemli olan bireyleri sürece uydurmak değildir diyecek çevik süreçler.
+
+81
+00:18:13,556 --> 00:18:25,556
+Veya işte bizim yazılım evimizde veya müştemizin kendi içerisinde hiyerarşi ağır basıyorsa, örneğin bir…
+
+82
+00:18:27,412 --> 00:18:35,912
+Bir kişiden bir görüş alacaksa, bir toplantı planlanacaksa vs. Bununla ilgili yazılışmalar için illa şu form doğrudurulmalıdır.
+
+83
+00:18:36,012 --> 00:18:44,291
+Bu formda illa şu günün şu saatine kadar gönderilmelidir. Formun aracılısı da ertesi gün ne kadar yanıt verir.
+
+84
+00:18:44,392 --> 00:18:48,932
+Böylece toplantı ayarlarının falan gibi bir or bir streç de olabilir.
+
+85
+00:18:48,932 --> 00:18:55,412
+Ama bazı durumlarda da hızlıca, alo abi şu iş nasıl yapılıyor, alo Ayşe Hanım şu iş nasıl yapılıyor?
+
+86
+00:18:55,412 --> 00:19:15,711
+diye mailleşip veyahut da anlık mesajlaşıp veyahut da yüz yüzeye kar makinesinin önünde konuşup bu işlerin de yapılabilmesi de gerekmektedir. Burada böyle hani ufak biraz da belki abartalaktan biraz çelişki olabileceğini göstermek istedim. İlla ki çelişki şekli değil ama olabilir.
+
+87
+00:19:17,811 --> 00:19:45,271
+Şimdi tabii ki çalışan bir yazılımı, doğru çalışan ve mühendisliği şekilde çalışan yazılımı üretmek projenin başarısının üç ayağından bir tanesi. Ama sadece bir yazılım sadece çalışan kod demek değildir. Belgelendirme de önemlidir demiştik. Ama bu belgelendirmeyi ne kadar ayrıntılı yapacağız? Bu belgelenin oluşturulmasına ne kadar zaman ayıracağız?
+
+88
+00:19:45,811 --> 00:20:06,531
+Burada elimizdeki probleme göre denge kurmak daha doğru. Buradaki çelişki ise zamanımız ve eforumuz sınırı ise hangisine ne oranda bunları ayıracağız? O da bir denge kurulması gerektiğinden bir çelişmeden bahsedebiliriz.
+
+89
+00:20:07,635 --> 00:20:31,635
+Müşterinin sürece katılımı çok önemlidir arkadaşlar. Hele ki ilk aşamalarda çok daha önemlidir. Gereksinimlerin belirlenmesi ve hatta analiz aşamalarında müşterinin bir temsilcisi yoksa bile bir konu uzmanının görüşlerinin alınması ve sürece aktif olarak katılımının sağlanması önemli yararı sağlayacaktır.
+
+90
+00:20:35,635 --> 00:21:01,576
+Önemliğimizi tekrar hatırlayın. Süreçte ilerledikçe değişiklik yapma masrafı önemli oranda artıyor. Bu nedenle gereksinimlerin belirlenmesi etkinliğinin mümkün olduğu kadar net ve iyi yapılması gerektiğinden bahsetmiştik. Burada da bize en önemli bilgileri, doneleri, ayrıntıları çözmeye çalıştığımız problem alanında uzman olan kişiler sağlayacaktır.
+
+91
+00:21:03,059 --> 00:21:11,059
+Daha sonra da müşteriyi sürece katmanın yararı vardır. Onlardan da biraz konuşuruz. Fakat...
+
+92
+00:21:11,796 --> 00:21:15,935
+Projeye başlamadan önce illaki müşteriyle bir sözleşme de yapılacak.
+
+93
+00:21:17,336 --> 00:21:25,395
+Yani eğer özellikle müşteriye özel bir yazılım hazırlanıyorsa, işte gereksinim belirlenmesi açmasından sonra yapılacak işler,
+
+94
+00:21:25,955 --> 00:21:32,675
+use case'ler, şunlar bunlar ortaya çıktıktan sonra, bir yazılım gereksinimleri belgesi ortaya çıktıktan sonra,
+
+95
+00:21:33,076 --> 00:21:37,056
+bunun bir oturup daha ayrıntılı net pazarlığı yapılacaktır.
+
+96
+00:21:39,796 --> 00:21:54,435
+Bu özelliklerdeki yazılım şu kadar süre içerisinde puanlanacak. Bunun karşılığında işte müşteri yazılım evine şu kadar para ödeyecektir. Ödemede şu koşullarda yapılacaktır falan gibi bir ayrıntılı bir sözleşme de yapılacak.
+
+97
+00:21:54,435 --> 00:22:05,855
+Peki, çeşitli değişiklikler ortaya çıktığı zaman bunlar acaba projeye nasıl dahil edilecek? Sözleşmede bunun kuralları da belirlenmiş olabilir.
+
+98
+00:22:07,796 --> 00:22:18,215
+Müşteri belki de bu süreç esnasında bu anlaşmayı belki kendine yarar biçimde yorumlamaya çalışabilir.
+
+99
+00:22:18,275 --> 00:22:23,796
+Veya biz yazılım ev olarak bunu kendimize yarar bir şekilde yontmaya çalışabiliriz vs.
+
+100
+00:22:23,796 --> 00:22:29,296
+Arada bir tekrar pazarlık yapılması gerekebilir bu sözleşme üzerinde de.
+
+101
+00:22:29,836 --> 00:22:35,796
+Müşteriyi sürece çok fazla katmazsak, bu gibi işlemleri de yapmak zorunda kalmayız gibi bir...
+
+102
+00:22:35,796 --> 00:22:37,755
+Belki bir ikiler söz konusu olabilir.
+
+103
+00:22:38,655 --> 00:22:43,296
+Öte yandan, gereksinimlerdeki değişikliklerden kaçınılmaz.
+
+104
+00:22:43,296 --> 00:22:48,655
+Çünkü, çözeceğimiz problem illaki değişebilecektir.
+
+105
+00:22:48,775 --> 00:22:50,296
+Şartlar değişebilecektir.
+
+106
+00:22:50,596 --> 00:22:53,455
+Yönetimciler, kurallar, şunlar bunlar değişebilecektir.
+
+107
+00:22:53,735 --> 00:22:57,775
+Bu değişikliklere uyum sağlayabilmek, projenin başarısı için elza.
+
+108
+00:22:58,135 --> 00:23:00,995
+Ama bu demek değildir ki, bir plan yapılmayacak.
+
+109
+00:23:01,336 --> 00:23:02,495
+Elbette planlar yapılacak.
+
+110
+00:23:02,775 --> 00:23:03,296
+Ama bu da önemli olan...
+
+111
+00:23:03,796 --> 00:23:19,596
+Ne kadar ayrıntılı bir plan yapacağız? Onunla ilgili de yazılım proje yönetimi konusunda da konuşacağız. Bir plan olmadan yola çıkan veya bir haritası olmadan yola çıkan insanın kaybolacağı gibi mutlaka bir ana planımız da olmalı.
+
+112
+00:23:19,596 --> 00:23:30,955
+Buna ne kadar ve nasıl revize etmeliyiz, ne yapmalıyız, ne etmeliyiz bunlar da önemli konular. Bütün bunlar bu nedenle önemli ama çivik süreçler diyor ki biz
+
+113
+00:23:31,476 --> 00:23:54,876
+Sol taraftaki maddelere daha fazla önem veriyoruz. Sağ taraftaki, sağ sütundaki maddelerin de önemini kabul etmekle birlikte, onlarla ilgili çalışmalar da yapmakla birlikte, esas önemi ve ağırlığımızı sol taraftaki, sol sütundaki maddelere veriyoruz şeklinde bir manifesto da bulunuyorlar. İşin odanı da bu var.
+
+114
+00:23:57,807 --> 00:24:03,988
+Çeviklik sadece uyum sağlamak değildir. Mutlaka ilerleme de kaydetmeliyiz haliyle.
+
+115
+00:24:03,988 --> 00:24:08,048
+Çeviklik bir süreç olduğu için yazılım artımsal olarak gelişecek.
+
+116
+00:24:08,627 --> 00:24:16,028
+Çok önemli bir nokta, müşteriye erkenden ve sık sık ürün tesliminde bulunmak söz konusu.
+
+117
+00:24:16,508 --> 00:24:20,427
+Ki müşteri ürünü erken değerlendirmeye başlayabilsin.
+
+118
+00:24:22,008 --> 00:24:25,807
+Az önce konuştuğumuz kazan kazan ve sarma model.
+
+119
+00:24:25,807 --> 00:24:45,728
+Bu yinelemeli yapıları ve ilk birkaç çevrimden sonra hemen müşterinin ürünü deneyemeye başlayabilmesi önemli bir avantaj bu konuda. Çevik süreçler de bu konuda aynı avantaja sahip ve bunun sık sık yapılmasını öneriyoruz. Birazdan göreceğiz.
+
+120
+00:24:53,807 --> 00:24:56,968
+Birinci ölçütü doğdu çalışan yazılımdır diyor.
+
+121
+00:24:57,523 --> 00:25:09,104
+Zamanlamada değişiklikler olabilir, bütçelemede, planlamada değişiklikler olabilir. Belki gereksinimlerin ihtiyaçları, belki hepsi karşılanmayabilir.
+
+122
+00:25:09,104 --> 00:25:21,443
+Ama ne olursa olsun müşteriye doğru çalışan bir yazılım teslimi en önemli başarı ölçütümüzdür. Şeklinde bir bakış açısı söz konusu.
+
+123
+00:25:30,228 --> 00:25:32,127
+Çevk süreçler.
+
+124
+00:25:32,884 --> 00:25:49,584
+Bireyler ve etkileşimlere çok önem veriyor dedik. Bu anlamda çevik süreçlerle çalışabilmek için bu süreçlerle çalışacak ekibin ve ekip üyelerinin bazı özelliklere sahip olması gerekmektedir.
+
+125
+00:25:50,223 --> 00:25:58,384
+Eğer bu özelliklere sahip değilsek veya kazanamıyorsak o zaman çevik süreçler bizim için uygun değildir. Nokta. Bu kadar.
+
+126
+00:26:00,468 --> 00:26:18,228
+Klasik süreçlerle çalışırız, şerit süreciyle çalışırız. Bazı fikirlerini uyarlamaya çalışabiliriz, olabiliriz ama nihayetinde çevik süreçler bu birazdan konuşacağımız özelliklere sahip ve o bakış açılarına sahip kişiler tarafından yürütülmelidir.
+
+127
+00:26:20,248 --> 00:26:25,328
+Çevik süreçler der ki, yüz yüze görüşme en etkili bilgi aktarımı yoludur.
+
+128
+00:26:27,119 --> 00:26:37,440
+İki kişi arasında herhangi bir etkileşim oluşacaksa, bu önce yüz yüze ve sözlü olarak yapılmaya çalışılmalıdır ve yapılır.
+
+129
+00:26:37,440 --> 00:26:51,319
+Bu şekilde biz sonuca eriyoruz burada. İkincisi, takım iki üyeleri çivik yaklaşım hakkında eğitimli olmalı. Onu şimdi burada ana hatlarıyla yapıyoruz birlikte.
+
+130
+00:26:52,627 --> 00:27:03,747
+Üçüncüsü, ekip üyeleri ortak bir amaç etrafında kenetleyip çalışabilmelidir ki o da çalışan yazılımı üreterek müşteriye zamanla teslim etmektir.
+
+131
+00:27:05,587 --> 00:27:15,787
+Bunu da yapabilmek için elbette ekip üyeleri birbiriyle işbirleri içerisinde olmalı. Yetmiyor, müşteri ile de sıkı işbirleri içerisinde olmalı.
+
+132
+00:27:16,243 --> 00:27:34,823
+Çünkü birazdan ayrıntılara baktığımızda göreceğiz. Müşteri sürecin başından sonuna kadar birçok adımın içerisinde bizimle birlikte ve bizim çalışmamızı da şekillendiriyor. Tek başına şekillendirmiyor. Bizimle birlikte şekillendiriyor. Ama şekillendiriyor sürekli olarak.
+
+133
+00:27:36,403 --> 00:27:44,024
+Bu nedenle karşılıklı saygı ve güvende olmalıdır. Aksi takdirde bu işi yapamayız.
+
+134
+00:27:45,644 --> 00:28:00,324
+Yazılım ekibi belirli bir düzeyde otonom olabilmelidir, onlara serbest sağlanabilmelidir. Bunun için diyoruz ki hem teknik kararla hem de tüm projeyi etkileyecek kararla verebilmelidir.
+
+135
+00:28:00,788 --> 00:28:11,107
+Yazılım ekibi. Ki buna müşteriyi de ekliyoruz aslında. O da sürecin bir parçası. Sonra şu yaklaşım şeklinde düşünmek lazım.
+
+136
+00:28:11,536 --> 00:28:31,956
+Boşa harcanan çaba yoktur, elde edilen deneyim vardır ve bu bizim kazancımızdır şeklinde bakılması lazım. Çünkü yine birazdan göreceğiz. Bazı işler değişebilecek, bazı işler yapılmayabilecek, vazgeçilebilecek, değiştirebilecek hepsini göreceğiz.
+
+137
+00:28:36,531 --> 00:28:57,291
+Evet, ve son olarak bir otonomiye sahip olabilmeli demiş ekip. Biraz daha ayrıntı veririm bunun üstünde. Ekip kendini yapacak işe göre uyarlayabilmeli. Onun için de şöyle söyleyelim mesela. Üstünde çalışacağımız problemin özelliklerine.
+
+138
+00:28:57,647 --> 00:29:08,707
+Bunun gerektirdiği yeteneklere ve bizim ekibimizin sahip olduğu yeteneklere göre ekip kendi içerisinde farklı organizasyonlarda, farklı yapılanmalarda bulunabilir.
+
+139
+00:29:09,707 --> 00:29:16,127
+Örneğin geleneksel bir yapılanmada, geleneksel bir ekip yapılanmasında bir ekip lideri vardır.
+
+140
+00:29:23,700 --> 00:29:29,120
+Developers kurumu vardır. Onun ardında yanında veyahut da işte
+
+141
+00:29:30,932 --> 00:29:40,291
+Developer görevleri vardır, bir tester görevi vardır, bir analiz görevi vardır.
+
+142
+00:29:40,692 --> 00:29:53,432
+Hem analiz aşamalarında o etkiler yaparken daha fazla eşit düşer ama ardından kodlama eliyle ilgili kısımlar da geldiği zaman o da yetenekleri çerçevesinde kodlamaya dahil olur ve yardımcı olur.
+
+143
+00:29:53,432 --> 00:29:56,591
+Mesela diyelim ki geleneksel ipi var.
+
+144
+00:30:00,000 --> 00:30:27,000
+Fakat şu an elimize düşen çalışmada, projede daha önce hiç deneyimimiz olmadığı bir problem alanı. Bu nedenle bizim için bir ARGE projesinin niteliği taşıyor. Daha önce hiç yapmadığımız bir konu üstünde çalışıyoruz. Daha önce hiç yeni teknik kazanımlar elde edip onları da bu projede kullanmamız gerekecek. İşte böyle bir yapıda hiyerarşik organizasyon verimli değildir.
+
+145
+00:30:28,000 --> 00:30:54,179
+Eşler arası peer-to-peer dediğimiz bir matriz organizasyonu daha doğrudur. Çünkü örneğin diyelim ki o proje ekibinin, proje liderinin o konuda daha önce bilgisi yoktur ama daha işte geçen sene başlamış bir eleman yüksek lisans testini o konuda yapmıştık mesela. Onun o konuda daha çok bilgisi vardır. O zaman sensus mu diyeceğiz? Öyle bir şey mümkün olabilir mi?
+
+146
+00:30:54,740 --> 00:31:04,579
+Bu nedenle böyle bir durumda ekip üyeleri, rolleri görevleri değiştirebilir, yapılanmasını hiyerarşik düzeyden mahtizli organizasyonuna çevirebilir vs.
+
+147
+00:31:06,359 --> 00:31:13,859
+Bunun yok kardeşim, siz böyle yapamazsınız. Bizim üç kralımız böyle tanımlıdır, hiyerarşik çalışılacak deniyorsa bu işi olmaz.
+
+148
+00:31:15,759 --> 00:31:20,099
+Veya olur da sarkar, teknik riskler artmış olur vs.
+
+149
+00:31:21,236 --> 00:31:35,536
+İkinci olarak, ekip kullanacağı süreci yerel ortama ve probleme göre uyarlayacak. Tamam, çift süreçlerle çalışıyoruz ama burada diyelim ki örneğin 3 haftalık artımlardan bahsediyor olacağız.
+
+150
+00:31:35,536 --> 00:31:48,516
+Ama belki de bu biraz daha riskli olduğu için veyahut da iş kalemlerimiz biraz daha kısa sürede yapılabilecek içerisinde o zaman 2 haftalık çevrimlere göre sürecimizi ayarlayabilmeliyiz mesela.
+
+151
+00:31:49,460 --> 00:31:51,423
+Ve üçüncü olarak...
+
+152
+00:31:51,423 --> 00:32:00,144
+O anda üstünde çalıştığımız artımsal yazılım parçasını tamamlayabilmek için gerekli zamanlama konusunda da ekip esnek bırakılabilmeli.
+
+153
+00:32:00,663 --> 00:32:06,203
+Örneğin, bu çevrimde zor bir problemi çözmeye çalışıyoruz.
+
+154
+00:32:06,203 --> 00:32:16,804
+O nedenle normalde sabah 9, akşam 6 arasında çalışıyorken bu çevrim boyunca 2 hafta mı 3 hafta mı biraz fazla mesaiye kalacağız.
+
+155
+00:32:17,344 --> 00:32:19,344
+8'de çıklar, 9'da çıkacağız belki.
+
+156
+00:32:19,423 --> 00:32:35,844
+Ama sonraki çevremimiz biraz daha kolay bir iş üzerinde çalışıyorsak, yetişeceği çok net belliyse o zaman da varsın akşam 5'te çıkalım ya da 4'te çıkalım. Veyahut da tam 9'ta hiç başında olmuyorum, 10'da da gelebilelim gibi.
+
+157
+00:32:37,076 --> 00:32:57,235
+Bu esnekliğin de sağlanması gerekmektedir. Yok kardeşim, saat dokuzda geleceksen kartını basacaksın, akşam çıkarken saat mutlaka en beş buçuktan erkende çıkış kartını basmayacaksın, yoksa marşını aşağı kadar kesiyoruz gibi bir çalışma biçimi bu çevik süreçte çalışma biçimine uymuyor. Bunlar bunlar.
+
+158
+00:33:00,915 --> 00:33:21,875
+Tonracıma. Evet. Peki. Şimdi biraz da dezavantajlarından da bahsedeyim. Ondan sonra sizin soru, yorum ve görüşlerinizi alayım. Şimdi çevik süreçler sihri değnek değil. Başarının garantisi de değil. Anahtarı da değil. Bazı dezavantajı olduğu durumlarla.
+
+159
+00:33:22,963 --> 00:33:42,303
+Birincisi, uygun olmayan ekiple çevik çalışılamadığını söyledik. Ve hatta bunu biraz daha gençletelim, tekrar aramakta yarar var. Yazılım evinin ve müşterinin kurumsal yapısı da uygun değilse, çevik çalışmaya yine bu süreçleri uygulayamıyoruz.
+
+160
+00:33:47,763 --> 00:34:11,364
+Ölçek problemidir arkadaşlar. Büyük ölçekli projelerde çevik süreçlerin getirilerinin yararı azalıyor. Ölçek derken hem çalışan sayısı veya ilgili paydaşlar şeklinde de hem o açıdan bakmalıyız hem de ortaya çıkartacağımız yazılımın büyüklüğü açısından bakmalıyız.
+
+161
+00:34:11,827 --> 00:34:26,768
+Her iki ölçek deyince her ikisini de kastediyorum. Bu iki ölçek etkeninden biri veya ikisinin büyük ölçekli olduğu projelerde, çirik süreçlerde sıkıntılarla karşılaşıyoruz. Önemli sıkıntılarla karşılaşıyoruz.
+
+162
+00:34:27,787 --> 00:34:35,207
+Bir tane örnek herhalde bunu açıklayacaktır. Ne demiştik? Yüz yüze iletişim en etkili konuşma biçimidir. Peki.
+
+163
+00:34:36,115 --> 00:34:49,516
+Eğer ekipte 5-6-8 kişi isek bunu sağlayabiliriz. Ama 20 kişi isek bütün ekip üyelerinin birbiriyle sürekli ve yüz yüze iletişime geçmesi zorlaşacaktır.
+
+164
+00:34:50,735 --> 00:35:03,216
+Hele ki diyelim ki birkaç yerde şubemiz var, ofisimiz var ülkede. 2 ya da 3 ofisimizdeki elemanlardan oluşan bir ekibimiz var.
+
+165
+00:35:03,668 --> 00:35:14,847
+Haydi, iletişim yine zorlaştı. Yüz yüze olamıyor. Tamam, online görüşmeler, video konferanslar falan bazı şeyler yapılabilir ama bunlar da hemen had edilmeli olmuyor.
+
+166
+00:35:16,387 --> 00:35:29,668
+Karşındaki, karşı masadaki veya yan odadaki elemanın hemen yana gidebilirsin ama işte örneğin Gaziantep ofisindeki elemanla görüntülü görüşmeyi hemen ayarlayamazsın gibi.
+
+167
+00:35:31,380 --> 00:35:37,659
+Ve diyelim ki yazılımı etkilen eğilimlerden bahsetmiştik, küreselleşmeden bahsedelim.
+
+168
+00:35:38,100 --> 00:35:39,720
+Diyelim ki çok uluslu bir şirketiz.
+
+169
+00:35:41,100 --> 00:35:48,039
+Lisbon ofisimiz, Washington ofisimiz ve Ankara ofisimiz var.
+
+170
+00:35:48,779 --> 00:35:49,119
+Haydi.
+
+171
+00:35:49,699 --> 00:35:52,739
+Şimdi farklı zaman dilimleri de söz konusu oldu.
+
+172
+00:35:52,739 --> 00:35:55,940
+Hadi Lisbon daha yakındır da arada belki 3 saat vardır.
+
+173
+00:35:56,724 --> 00:36:14,423
+Ama Washington ofisiyle aramızda rahat 10 saat vardır yani. Nasıl yüz yüze iletişeceğiz? İletişemeyeceğiz. Bu kadar nasıl? O yüzden bu ölçek büyüdükçe iş zorlaşıyor, kişi ölçeği.
+
+174
+00:36:19,860 --> 00:36:36,180
+Kullanıcı öykülerinden bahsedeceğiz. Kullanıcı için anlamı olan her bir işler bir kullanıcı öyküsüdür. Bunların planlanması olacak ve ortalama 3 haftalık öykülerden, 3 haftada gerçeklenecek öykülerden bahsedeceğiz.
+
+175
+00:36:41,460 --> 00:36:59,460
+İyice artacaktır. Bir şeyi tamam böyle parçalara yönet doğru bir yaklaşımdır ama bu parçaların sayısı yönetebileceğimizden daha da fazla da olma olasılığı var ölçek büyüdükçe. Bu nedenle çevik süreçler büyük ölçekli çalışmalar için uygun değildir.
+
+176
+00:36:59,891 --> 00:37:17,411
+Bu arada sektörde boş durmuyor. Bu problemlerin çözümünün için veya etkisinin azaltılması için çalışmalar yapılıyor, önerilerde bulunuluyor ama daha hala bu dezavantaj kuruluyor. Çözülebileceğinde bir garantisi yok.
+
+177
+00:37:19,632 --> 00:37:24,231
+Bu bence, bu söylediğim ikinci husus en önemli dezavantajı.
+
+178
+00:37:24,952 --> 00:37:26,992
+Üçüncüsü de önemli bir etken.
+
+179
+00:37:27,391 --> 00:37:52,612
+Eğer bir dış denetleyicinin dahil olduğu bir proje veya ürün ortaya çıkacaksa ve veya ayrıntılı kurallarda uyulması gerekiyorsa ve hatta bu kurallarda uyulmadığı denetleniyorsa o zaman bu tip projelerde çevik süreçlerde pek uyuşmamaktadır.
+
+180
+00:37:52,612 --> 00:37:55,391
+Çünkü bu gibi durumlarda ayrıntılı...
+
+181
+00:37:55,391 --> 00:38:22,652
+Mergelendirme çok çok büyük önem taşımaktadır. Ekip problemi kendi istediği biçimde veya müşterinin isteğine göre çeşitli öykülerden vazgeçememektedir. Çeşitli uyarlamaları yapamamaktadır. Çünkü çeşitli kanun ve yönetmeliklerle ve denetleme gerekleriyle bu esnek çalışma biçimi örtüşmemekte uyuşmamaktadır.
+
+182
+00:38:23,023 --> 00:38:42,664
+Aksi gibi birçok finansal uygulamada dış yönetimler epey yapılır. Bu nedenle finansal kurumlarda ayrıca bu tip projelerin büyük ölçekli olma eğilimini de göz önünde bulundursak genelde klasik süreçlerde çalışılmaktadır.
+
+183
+00:38:51,023 --> 00:39:02,023
+Anılabilir miyiz? Elbette. Ama öbür türlü bu konu dış denetliğinin müdahalesi ve ayrıntılı yönetmeliklerle güdülen...
+
+184
+00:39:02,612 --> 00:39:15,392
+Konu alanlarında çevik süreçler çok başarı ortaya koyamıyor. Ve son olarak dördüncüsü, yazılım ekibine yönelik, hem oraya yönelik hem üst yönetimlere de yönelik aslında.
+
+185
+00:39:15,812 --> 00:39:26,552
+Çevik çalışmak disiplininsizlik olarak yorumlanmamalıdır ve bunu üst yönetime söyleyelim ve disiplininsizliğe de evrilmemelidir. Onu da teknik ekibe söyleyelim.
+
+186
+00:39:30,612 --> 00:39:41,312
+Hatta bu durumlar söz konusu değilse o zaman ilk tercihimiz proje başarılı olanının önemli oranda yükselten, iyileşilen çirkin süreçlerinin kullanımı olmalıdır.
+
+187
+00:39:41,692 --> 00:39:48,772
+Öbür türlü bu dezavantajlardan biri bile söz konusuysa o zaman çirkin süreçleri kullanmamalıyızdır diyeceğiz.
+
+188
+00:39:48,772 --> 00:39:54,932
+Ve önümüzdeki ders saatinde iki tane çirkin süreç örneği olan XP ve Scrum'dan bahsedeceğiz.
+
+189
+00:39:56,500 --> 00:40:16,639
+Rahat vaktimiz var. Sizlerin soru, yorum görüşlerinizi alayım. Hocam şu işin şu kısmı kafama yatmadı diyeniniz varsa onları alayım. Aranızda çalışan öğrenciler olabiliriz. Şu anda derse katılmışlar ise kendi deneyimlerinden bahsedebilirler. Şimdi ben biraz sizi dinlemek istiyorum. Buyurun.
+
+190
+00:40:35,059 --> 00:40:42,359
+Tabi belki hocam önce şu örnekleri de görelim, ondan sonra daha fazla sorumuz, yorumumuz falan olur diyorsanız, orası baş katı bir de.
+
+191
+00:40:42,960 --> 00:40:46,319
+Ama varsa katımsa yatmayan bir şey, bu aşamada lütfen sorun.
+
+192
+00:40:47,920 --> 00:40:54,000
+Türk süreçlerde olabilir, bu sarmal süreçlerde olabilir, daha önce konuştuğumuz şeylerle de ilgili olabilir.
+
+193
+00:40:54,480 --> 00:40:55,759
+Varsa soru lütfen buyurun.
+
+194
+00:41:24,947 --> 00:41:30,247
+Yoksa o zaman ara vereceğim. Nada böyle. Ara verilecek bir saate geldik çünkü.
+
+195
+00:41:31,867 --> 00:41:37,427
+Ben diyelim ki 9.45 ile 9.55 arasında arası veririm.
+
+196
+00:41:39,567 --> 00:41:45,507
+9.45 ile 9.55 arasında 10 dakika ara arkadaşlar.
+
+197
+00:51:43,635 --> 00:51:48,275
+Evet arkadaşlar, 10 dakika anımızı doldurduk. Yavaş yavaş başlayalım daha sonra.
+
+198
+00:51:56,403 --> 00:52:11,903
+Şimdi, çürük süreç ayrıntılarına başlayacağız. İki tane örnek üzerinden. Fakat önce bu arada aklınıza soru gelmişse, lütfen buyurun. Soru varsa alalım, yoksa başlayacağım.
+
+199
+00:52:30,324 --> 00:52:41,423
+İlk başta Extreme Programming. Ben bunu aşırı programlama diye çevirdim. Daha güzel önerisi olan arkadaşım varsa bir şey söyleyebilirim mutlaka.
+
+200
+00:52:42,503 --> 00:52:48,923
+Şimdi çalışma biçimimiz şu şekilde adımlar listelendi. Önce planlamayla başlıyoruz.
+
+201
+00:52:50,228 --> 00:53:05,228
+Şimdi her aşamanın nasıl olduğunu ayrıntı olarak konuşacağız. Yaptığımız planlamanın ardından o planlamaya yönelik tasarım etkinliklerimizi yapıyoruz. Tasarım etkinliklerinin ardından tasarladığımız kısmı kodluyoruz.
+
+202
+00:53:18,228 --> 00:53:37,427
+Müşteri'ye teslim ediyoruz. Müşteri o artımsal ürünü deniyor. Ve tekrar planlamaya geçiyoruz. Planlama aşamasında eğer arada yeterli vakit varsa, müşteri o artımı hemen deneyip o ilgili sıradaki planlama etkinliklerine girdi de bulunuyor.
+
+203
+00:53:46,228 --> 00:54:04,027
+planlama aşamasına geri bildirimlerini veriyor. Ama bunu lütfen şey gibi anlamayın, illaki bir sonraki şeylerin başını beklemek zorunda değil. Eğer bir bulgularını belli bir noktaya kadar getirmişse istediği anda ekibe bildiririz.
+
+204
+00:54:04,027 --> 00:54:14,007
+Ve o ekip elde ettiği geri bildirim eğer şu anki planlamaya bir etkide bulunacaksa ince ayar yapar.
+
+205
+00:54:14,228 --> 00:54:28,447
+Yoksa bir sonraki artımda değerlendirmek üzere girdiği alır, bilgiyi alır. Bu şekilde bir çalışma biçimimiz söz konusu. Şimdi bakalım bu adımları nasıl yürütüyoruz?
+
+206
+00:54:28,807 --> 00:54:41,708
+Planlama aşaması temel olarak kullanıcı öykülerine dayanıyor. Kullanıcı öyküsü dediğimiz şey, müşterinin işine yarayacak anlamlı bir işler.
+
+207
+00:54:42,324 --> 00:54:59,963
+Çok büyük olmasına gerek yok. Yani modül düzeyinde düşünmüyoruz. Yapılabilecek bir iş düzeyinde düşünüyoruz. Bu iş yaklaşık 3 hafta gibi bir sürede gerçeklenebilecek bir iş olmalıdır.
+
+208
+00:54:59,963 --> 00:55:04,344
+Tabii ki öyküleri aslında kullanıcı belirliyor.
+
+209
+00:55:04,784 --> 00:55:32,224
+Veya şöyle diyebiliriz, analiz ekibiyle kullanıcı yakın çalışarak kullanıcı öyküsü belirleniyor. Esas kullanıcı belirliyor tabii. Fakat bu teknik yapılabilirliği, bu üstünde anlaşılmış olan 3 hafta dedik örneğin, bu artı eksi bir hafta olabilir, çevrim süresince kodlanabilecek bir iş mi bu, kodlanacak, gerçekleşebilecek bir iş mi bu gibi ayrıntılar konusunda.
+
+210
+00:55:32,784 --> 00:55:39,324
+Teknik ekibin analiz üyeleri mutlaka müşteriye geri bildimlerinde bulunuyor.
+
+211
+00:55:39,324 --> 00:55:45,503
+Bu şekilde ortaya çıkan öyküler önemine göre derecelendiriliyor kullanıcı tarafından.
+
+212
+00:55:45,884 --> 00:55:51,224
+Kullanıcı kendisi için hangi öykü, hangi düzeyde öneme sahipse o belirliyor.
+
+213
+00:55:51,864 --> 00:55:59,623
+Ekip ise bu öyküleri teknik zorluk açısından derecelendiriyor.
+
+214
+00:56:00,467 --> 00:56:11,607
+Ve işte eğer bir öykü 3 haftada gerçeklenebilecek bir durumdaysa o zaman kullanıcılar, müşteriden bu öykünün alt öykülere bölünmesini istiyor.
+
+215
+00:56:11,607 --> 00:56:18,227
+İşte eğer 5-6 haftada gerçeklenebilecek bir öykü ise bu o zaman 2 alt öyküye bölünüyor.
+
+216
+00:56:18,627 --> 00:56:28,107
+Yok biraz ağız geniş, coars, grint diye geçer, daha ayrıntılı, ağızlık düşürmüş bir öyküyle.
+
+217
+00:56:28,467 --> 00:56:37,347
+O zaman bu belki de 9 haftada gerçeklenebilecek bir öyküdür. O zaman 3 art öyküye bölünür gibi.
+
+218
+00:56:38,227 --> 00:56:53,407
+Bu şekilde küçük yutulabilecek haplar gibi diyebilirim. Parçalara ayrılmış olan kullanıcı öykülerinin artık bu çevrimlerimize hangi sırada katılacağına müşteriyle birlikte karar veriliyor.
+
+219
+00:56:53,940 --> 00:57:13,360
+İki ana yaklaşım var. Birincisi, önce yüksek riskli öykülerin gerçeklenmesi. Öykülerin teknik risk düzeyinde yazılım ekip beliriyordu, hatırlatırım. Bunun avantajı şu, eğer bir hatayla, bir engelle karşılaşacaksak,
+
+220
+00:57:13,907 --> 00:57:26,707
+Veya bir zorlukla karşılaşacaksak, ki yüksek risk bunu getirir. Bunların daha erken yapılması önemli bir kazanç sağlayacaktır. Nedir o kazanç?
+
+221
+00:57:28,327 --> 00:57:35,707
+Temel dinamiğimizi hatırlayın, yazılım yaşam zorluklarını hatırlayın. Zor işleri eğer başa alırsak...
+
+222
+00:57:36,851 --> 00:57:45,612
+Oralarda yapacağımız hataları daha erken, daha çabuk fark eder ve daha kolay düzeltiriz.
+
+223
+00:57:45,612 --> 00:57:47,612
+Gecikmesi daha...
+
+224
+00:57:48,307 --> 00:58:01,088
+Bu önemli kötü etkiler, ters etkilere yol açacaktır. Hatta bazen öyle bir durumda gerçekleşebilir ki, elimizdeki kısıtlanma çerçevesinde bunun gerçeklenemeyeceği bile ortaya çıkan,
+
+225
+00:58:01,568 --> 00:58:11,928
+veyahut da sözleşmede büyük ölçekli bir değişiklik yapılması gerektiği ortaya çıkan, bunlar ne kadar erken belirlenirse o kadar az yan etkiyle kotarılabilirsiniz.
+
+226
+00:58:12,692 --> 00:58:29,331
+Hiçbir şey olmayacaksa bile en azından fail fast denir. Yani başarısız olacak proje. Daha erken başarısız olması daha iyi. Daha geç ki biz daha fazla ona yatırım yaptıktan sonra başarısız olacaklar. Daha erken başarısız olsun olacaksa daha iyi.
+
+227
+00:58:37,204 --> 00:58:42,764
+Müşteri der ki kullanıcı, benim için yüksek öncelikli öyküleri önce gerçekleştirelim.
+
+228
+00:58:43,188 --> 00:59:09,188
+Böylece, eğer daha sonraki aşamalarda yüksek risk nedeniyle, o riskin gerçekleşmesi nedeniyle süreyi uzatacak veyahut da o kısıtlar altında yapılması mümkün olmayacak öyküler hiç kodlanmaz, vazgeçilir karşılıklı anlaşmayla ve en azından müşterin elinde işine yarayabilecek bütün ihtiyaçlarına...
+
+229
+00:59:09,748 --> 00:59:16,468
+Yaramasa bile en azından şu anda ve bazı ihtiyaçlar için kullanabileceği bir ürün olacak.
+
+230
+00:59:18,628 --> 00:59:25,768
+Örnek, şimdi çift süreçlerle ilgili ayrıca literatürü tanımına tararsanız göreceksiniz.
+
+231
+00:59:26,128 --> 00:59:28,948
+Şimdi amacımız nedir? Bir A noktasından B noktasına gitmek.
+
+232
+00:59:29,327 --> 00:59:30,908
+Buna yürerek gidebiliriz.
+
+233
+00:59:32,708 --> 00:59:34,388
+Patenle gidebiliriz.
+
+234
+00:59:35,288 --> 00:59:36,468
+Bisikletle gidebiliriz.
+
+235
+00:59:36,980 --> 00:59:50,640
+Motosikletle gidebiliriz, arabayla gidebiliriz. Gideceğimiz arabada A sınıfı arabadan E sınıfı arabaya kadar değişik ölçek ve yeteneklerde arabalar olabiliriz. Veya uçakla gideriz veya trenle gideriz her neyse.
+
+236
+00:59:50,640 --> 01:00:00,000
+Ama eğer bizim şu anki planımız diyelim ki bir B sınıfı otomobil ise ama o noktaya ulaşabiliriz.
+
+237
+01:00:00,000 --> 01:00:08,940
+Yemeyeceğimiz ortaya çıkacaksa, bir motosiklet de bizi A noktasından B noktasına yürümeye göre daha az çabayla götürecektir ve işimize yarayacaktır.
+
+238
+01:00:09,579 --> 01:00:13,039
+Otomobil üretemedik ama motosiklet ürettik, o da olur mu?
+
+239
+01:00:13,220 --> 01:00:17,000
+Ben bir örnek verebilirim bu konuda.
+
+240
+01:00:17,780 --> 01:00:21,160
+Bu iki farklı yaklaşımın, iki farklı avantajı var.
+
+241
+01:00:21,160 --> 01:00:24,200
+Bunun bir melez hibrit çözümü de olabilir.
+
+242
+01:00:25,720 --> 01:00:27,083
+Ama nihayetinde...
+
+243
+01:00:27,092 --> 01:00:55,092
+Teknik ekip ve müşteri karşılıklı anlaşarak hangi öyküler, hangi sırada yapılacak buna karar veriliyor. Yalnız bu sıralama bir kere yapılıp bundan sonra değiştiremeyecek diye bir kural yok. Her çevrimde bu sıralamada eğer bir değişiklik yapılmasını müşteri veya teknik ekip talep ederse yine bir araya gelinip karşılıklı uzlaşma ile bu sıralama değişebilecektir. Ne olursa olsun ama bütün çevrimde...
+
+244
+01:00:55,092 --> 01:01:01,271
+Kısa sürede yapılabilecek çeridinden olmalıdır. Ortalama 3 hafta, artı eksi 1 hafta olabilir.
+
+245
+01:01:09,523 --> 01:01:22,243
+Planlamaya devam ediyoruz. Bu artımsal ürünler ortaya çıkacak. Bu sadece sınama ve geri bildirim için kullanılmaz. Aynı zamanda projenin hızını ölçmek amacıyla da değerlendirilebilir.
+
+246
+01:01:22,243 --> 01:01:32,243
+Diyelim ki şimdi bu artımın ilk bir çevrimlerin ya da artımsal ürünlerin 3 haftalık çevrimlerde...
+
+247
+01:01:32,563 --> 01:02:00,203
+elde edileceğini öngörmüştük ama baktık sürekli dört haftaya sarkıyor. Yani on çevrimin yedisi, sekizi dört haftada yapıldı. İki tanesi ancak üç haftada yapıldı. O zaman bakarız bunları ölçeklendirmede veyahut da teknik zorluklardan karşılaştığımız nedenlerle, teknik zorluklardan kaynaklanan nedenlerle çevrim hızımızı
+
+248
+01:02:00,563 --> 01:02:13,963
+3 haftada tutamıyoruz. 4 hafta olarak başlamayı planlayalım. Ama bu da demektir ki bütün çevrenleri 3 haftadan 4 haftaya çıkarmak, proje süresini %33 oranında uzatmak anlamına da gelmektedir.
+
+249
+01:02:13,963 --> 01:02:15,963
+Ciddi bir...
+
+250
+01:02:16,532 --> 01:02:39,012
+Orandır bu. Ve bu nedenle bu oran müşteri ile değerlendirilip iki çözümden birisi yapılır. Ya süre uzayacak, bunu kabul edeceğiz. Veyahut da eğer illaki önceden belirliğiniz sürenin sonunda proje tamamlanması gerekiyorsa o zaman müşteri bazı öyküleri seçip o öykülerden vazgeçecek.
+
+251
+01:02:40,275 --> 01:03:01,355
+Daha sonra tekrar hızlandığımız ortaya çıkarsa vazgeçilen öyküler tekrar devreye alınabilir. Hiç önemli değil. Ama böyle bir planlama söz konusudur. Bunu anlatmak istedim öncelikle. Ve yazılım projesi tamamlanma kadar müşteri yeni öyküler ekleyebiliriz.
+
+252
+01:03:01,715 --> 01:03:22,215
+Eski ölkülerin önceliğini değiştirebiliriz. Ölkeleri farklı şekilde alt parçalarda bölüp birleştirebiliriz. Bazı ölkülerden vazgeçebiliriz. Bütün bunlar serbesttir. Fakat tabii ki karşılıklı uzlaşma ile yapılacak bir iştir. Gerçi bizim amacımız nedir? Müşteri için yazılım üretiyoruz.
+
+253
+01:03:22,804 --> 01:03:38,463
+O yüzden bütün bunları müşterinin yapabilmesi son derece mantıklı aslında. Müşteri bu tariflerini söylediğinde teknik ekipte geri kalan artımları ve iş planını uygun biçimde değiştirecektir. Süreyi etkilemeyecekse toplam süreyi zaten hiç program yok.
+
+254
+01:03:38,867 --> 01:04:04,147
+Müşteri daima haklı, ülkesi var ya, tabii her zaman haklı değildir, yanılgıları illa olabilir, ondan üstüne konuştuk ve konuşmaya da devam edebileceğiz. Ama kardeşim sonuçta müşteri için yapıyoruz bunu. O yüzden patron o. Zaten biz Türkçe'de patron deyince yönetici falan diye ağrı oluyoruz ama patron diye geçerli. Aslında hizmet alan müşterilere de patron deniyoruz yani bir açlık bakıma.
+
+255
+01:04:05,940 --> 01:04:08,420
+Evet, peki. Planlama bu şekildeydi.
+
+256
+01:04:12,692 --> 01:04:20,351
+Geldik tasarım aşamasına. Tasarım aşamasında karmaşıklığa kaçmamamız öneriliyor.
+
+257
+01:04:20,980 --> 01:04:42,179
+Basit bir tasarımımız, karmaşık bir gösterimden her zaman için üstündür ve tercih edilir. Burada KIS diye bir ilkeden bahsedilir. Kendisi sevimli gibi geliyor sözlük anlamı ölçük karşılığında ama aslında bu kısaltmadır. Keep it simple, stupid demek oluyor. Yani eğer bir işi basit tutmazsak aptallık etmişizdir.
+
+258
+01:04:42,179 --> 01:04:48,980
+Veya daha doğru bir deyişle olması gerekenden daha fazla karmaşıklaştırdıysak o zaman aptalca bir iş.
+
+259
+01:04:48,980 --> 01:04:50,980
+Yanlış bir iş yapmışız. Demekiz.
+
+260
+01:04:52,947 --> 01:05:00,647
+Bu nedenle tasarım aşamasında illaki bazı tasarım aşamasında yapacağımız etkinlikleri göreceğiz.
+
+261
+01:05:00,647 --> 01:05:09,607
+Çeşitli sınıf şamaları çizeceğiz, yöner sınıf şamaları çizeceğiz ve bazı başka yöner şama türleriyle de tasarımımızı destekleyebileceğiz.
+
+262
+01:05:10,287 --> 01:05:13,667
+Ama çeki süreçler bunları zorunlu kırmıyor.
+
+263
+01:05:14,347 --> 01:05:20,647
+Benim şahsı görüşüm en azından bir sınıf şaması üstünden çok ayrıntılı olması bile ana tasarımımızı...
+
+264
+01:05:20,947 --> 01:05:47,027
+Dergelendirmemiz de benim her zaman şahsi düşüncem bu dozum. Epey uygulanan bir düşünce de bu. Fakat hani illaki zorunlu tutmuyor çivik süreçlerden ekstrem program bu konuda sizi. Sadece CRC kartları yapsanız bile bu yeter diyor ki CRC kartını şimdi göreceğiz. O CRC kartını yapan otomatik olarak UML sınıf şamasını dahi oluşturabilir zaten. Göreceğiz şimdi.
+
+265
+01:05:47,536 --> 01:05:54,736
+Hatta hemen göreyim önce, CRC kartını anlatayım. Ondan sonra yansıda kaldığımız yerden devam edeyim.
+
+266
+01:05:57,236 --> 01:06:11,836
+Önlikle CRC kartı görüyorsunuz. Bu kartın üst bölümünde 3 ayrı alt alan var. Üst alanda sınıfımızın adı yazıyor. Satış sınıfıymış bu.
+
+267
+01:06:15,103 --> 01:06:23,823
+Bu temel amacı yer almaktadır. Neyi modellediği yer almaktadır. İşte kasada yapılan ödeme isim genel sınıfmış bu.
+
+268
+01:06:25,076 --> 01:06:32,895
+Bir kalıtı ilişkisi içerisinde olabilir bu sınıf. O yüzden eğer üst sınıfı veya alt sınıfları varsa ondan yazılır.
+
+269
+01:06:33,455 --> 01:06:41,555
+Aslında biliyorsunuz normalde bir üst sınıf olması önerilir. Fakat bir multiple inheritance da destekleyen bazı diller var.
+
+270
+01:06:41,675 --> 01:06:47,255
+Güncel diller desteklemiyor sakıncalar öneriliyle. Nesli yönelik programları da konuşmuştuk bunları hatırlayın.
+
+271
+01:06:47,255 --> 01:06:52,915
+Ama yine de destekleyebilen var. O yüzden üst sınıflar desem de genelde bunları pek olmuyor.
+
+272
+01:06:53,076 --> 01:06:57,375
+Ama alt solutları olabilir, large şeklinde. Bazı da onları da yazıyoruz.
+
+273
+01:06:58,420 --> 01:07:09,119
+Bu şekilde sınıf işlemasının üye alanlar ve üye metotlar olmadan ama aradaki ilişkilerin temelini atmış oluyoruz. Özellikle kalıtım düzeninde.
+
+274
+01:07:09,659 --> 01:07:17,179
+Keza şu iş birikçi sütununa baktığımızda onlar da üye anlaştırma işlemasında sınıflar arasındaki diğer ok biçimlerini anlatan ifadeler olacak.
+
+275
+01:07:17,980 --> 01:07:26,420
+Bu başlık kısmından sonra, üç bölümünün başlık kısmından sonra iki sütuna ayrılıyor kartımız. Sorumluluklar ve iş birikçi.
+
+276
+01:07:26,420 --> 01:07:34,380
+Bu sorumluluklar sütununa o sınıfa yüklediğimiz bütün sorumlulukları yazıyoruz.
+
+277
+01:07:35,347 --> 01:07:53,307
+Bunun karşısına düşen satırda ise, Stool'un satırında ise, bu sınıf o sorumluluğu yerine getirmek için başka sınıflardan, nesnelerle bir ilişki ve işbirliği içerisinde olması gerekiyorsa, onları yazıyoruz.
+
+278
+01:07:53,707 --> 01:07:56,947
+Birden fazla sınıf olacaksa da bir gürlü de ayırıp yazılabiliriz mesela.
+
+279
+01:07:57,527 --> 01:08:02,567
+Örneğin işte bu satış sınıfının ilk sorumluluğu, satışın yapıldığı tarih ve saati saklamakmış.
+
+280
+01:08:03,347 --> 01:08:05,967
+Bunun için başka herhangi bir iş birikliğe ihtiyaç yok.
+
+281
+01:08:06,447 --> 01:08:10,947
+Ama şimdi bakın, madem tarif bir saat saklanacak, işte size üye alan, iki tane üye alan.
+
+282
+01:08:10,947 --> 01:08:19,327
+Eğer Java kullanıyorsak, ikisi tek bir üye şeklinde, date türünden, Java, util date türünden bir üye alan.
+
+283
+01:08:19,448 --> 01:08:20,368
+İşte bakın, o bile çıktı.
+
+284
+01:08:21,127 --> 01:08:23,727
+Sonra neymiş? Yapılan ödeme tutanını saklamak.
+
+285
+01:08:23,868 --> 01:08:26,987
+Tamam, ama bunu kendisi saklamıyormuş. Ödeme ile birlikte saklıyormuş.
+
+286
+01:08:27,327 --> 01:08:31,347
+Aslında onda tutulacak da, bu satış sınıfında da ödeme türünden ilerleyecek.
+
+287
+01:08:31,347 --> 01:08:33,727
+İlhakimiz sahiplik veyahut da
+
+288
+01:08:33,760 --> 01:08:44,620
+Belki kullanma ilişkisi söz konusu olabilir. Şu an o okun, o yüzden düz çizgi mi, kesikli çizgi mi olduğunu şu aşamada pek göremeyebiliriz ama en azından fikir yürütebiliriz rahatlıkla.
+
+289
+01:08:45,120 --> 01:08:54,880
+Ve üçüncü sorumluluk, satılan malların listesine erişim, mal ya da mağazeyince pardon, da sayıp olabiliyor, ürün de diyebiliriz. Satılan ürünlerin listesine erişim, sınıfın adında mal demişiz.
+
+290
+01:08:54,880 --> 01:09:00,000
+Bu şekilde her sınıf için CRC kartları hazırlanıyor.
+
+291
+01:09:01,760 --> 01:09:06,860
+Bu CRC kartlarının hepsi ekip üyelerini eşit sayıda bölüştürülüyor.
+
+292
+01:09:08,540 --> 01:09:14,079
+50 sınıf varsa, 5 kişilik yüksek, 10'ar adet bölüştürüyoruz herkese.
+
+293
+01:09:14,800 --> 01:09:20,239
+Herkes bu CRC kartlarını, kendi elindeki kartları önce inceliyor.
+
+294
+01:09:21,159 --> 01:09:22,920
+Üstünde biraz düşünüyor.
+
+295
+01:09:29,460 --> 01:09:32,860
+Öyle bir şey olduğunu düşünürse, bunu dile getiriyor.
+
+296
+01:09:35,475 --> 01:09:54,195
+Diğer ekip üyeleri ya bunun gerçekten bir sorun, yanlış, eksiklik olduğuna inanır, karar verir. İlk söyleyen kişi diğer ekip üyelerini ikna eder, nihayetinde bütün kararlar ortak alınıyor. Ya gerçekten böyledir ve o zaman o durum saptanmış olur ve hemen düzeltirilir.
+
+297
+01:09:55,315 --> 01:10:00,000
+Aksi takdirde bu gerçekten bir yanlış, eksiklik hata değilse o zaman...
+
+298
+01:10:00,000 --> 01:10:25,460
+Ekimin geri kalanından bu ilgili kişi ya da kişiler bunun neden bir sorun, eksiklik hata olmadığı konusunu ilgili varsayımda bulunan ekip üyesine aktarırlar, açıklarlar. O zaman o ikna olur. Her halükarda eğer bir sorun varsa düzeltiriz, sorun yoksa da olmadığı üstüne kararlaştırırız. Sonra herkes elindeki kartı bir yanındakine verir.
+
+299
+01:10:25,876 --> 01:10:34,456
+Böylece bütün ekip üyeleri, bütün tasarımın üstünden ayrıntılı bir gözden geçirme çalışması yapmış olur.
+
+300
+01:10:34,976 --> 01:10:42,036
+Ve eksikler, getikler, problemler varsa herkesin katılımı ile, aktif katılımı ile düzeltilmiş olur.
+
+301
+01:10:42,615 --> 01:10:45,175
+CNC kartlarının böyle bir avantajı var.
+
+302
+01:10:46,136 --> 01:10:48,456
+Yapmak zorunda mısınız? Öneriliyor.
+
+303
+01:10:49,316 --> 01:10:53,195
+Tabii yapmak zorunda değilsiniz ama yaparsanız böyle bir avantajı var.
+
+304
+01:10:54,676 --> 01:10:55,436
+Bir şey, Tony.
+
+305
+01:11:01,043 --> 01:11:13,984
+CRC'nin açılımı da işte Class Responsibility Collaboration. Üç ana bölümü vardı ya kartın. Class bölümü Responsibility Sormuklar ve Collaboration. Bunları yerine getirmek için hangi sınıflarla işbirliği içerisinde bulundu?
+
+306
+01:11:15,463 --> 01:11:19,243
+İşte böylece sınıf düzeninde tasarımımız incelenmiş olunur.
+
+307
+01:11:20,115 --> 01:11:44,296
+Mümkün olduğu kadar basit bir tasarıma gidin demiştik. Ama o problemin parçasının doğası gereği karmaşık bir tasarımdan kaçınamıyorsak isek, o zaman bu tasarımımızın geçerliliğini bir sınamak lazım. Bunun için bir işlevsel bir öngerçekleme yapılır. Eşittir prototip. Ama sadece o kısım için prototip.
+
+308
+01:11:44,692 --> 01:11:59,592
+Ya da belki prototip olarak düşünmesek bile, pump of concept, yani düşündüğümüz çözümün geçerli olduğunun küçük bir demonstrasyon ve ispatına yönelik bir kod yazmaya çalışırız.
+
+309
+01:12:00,916 --> 01:12:19,275
+Öyle birkaç sınıf, birkaç metot ölçelinde de olabilir. Biraz daha bir işlerin ayrıntılı bir prototiplenmesi cinsinden de olabilir. O iki ölçek arasında bir çözüm ortaya çıkılacak. Buna spike solution deniliyor. Extreme programming ve çivik süreçler literatüründe.
+
+310
+01:12:20,372 --> 01:12:26,972
+Bu kritik bir etkinlik. Sonra refactoring tasarımda teşvik ediliyor.
+
+311
+01:12:26,972 --> 01:12:38,972
+Şimdi belki biz bu çevremin başında yeni bir öykü gerçeklemeye karar vermiştik belki ama geri kalana baktığımızda...
+
+312
+01:12:39,764 --> 01:13:07,764
+Zaten cerecek arttırıcı bütün tasarımın da elimizde ve hatta sınıf şımlarımız da bir tarafta güncel bir şekilde geliyor. Belki baktık ki şimdi bu öyküyü gerçekleştirmek için yapmamız gereken eklentiler aslında ilk tasarımımızın biraz daha farklı olursa bu öyküyü daha verimli bir şekilde kodlarız gibi bir karara varanırsa o zaman bunu artım yapmak gerekir.
+
+313
+01:13:07,764 --> 01:13:12,764
+Yineleme, yani daha önce yaptığımız kodun...
+
+314
+01:13:14,644 --> 01:13:33,804
+Arayüzlerini değiştirmeden veya test kezlerimizin de modifiye etmemizi gerektirecek bir değişikliğe sebep olmadan tasarımımızın iç yapısını değiştirmek amacıyla da bu artımı o şekilde yapmaya, yani yineleme şeklinde yapmaya da karar verebiliriz.
+
+315
+01:13:33,804 --> 01:13:42,603
+Faktörün her zaman teşvik ediliyor bu bakımdan. Hele ki bu proje ilerleme hızında eğer hızlı olduğumuz açığa çıkar.
+
+316
+01:13:42,644 --> 01:14:00,904
+Bu ortaya çıkacak zamanı, kazandığımız zamanı, refactoring yapalım mı sorusunu da bir gözünde bulunur. Refactoring amacıyla veya testlerimizi zenginleştirmek amacıyla kullanabiliriz, kullanmalıyız.
+
+317
+01:14:02,387 --> 01:14:13,407
+XP der ki, CRC kartları ve bu spikes oluşumlar varsa sadece onları yapsanız yeter der. Ama siz biraz daha fazla bir şey yapabilirsiniz tabii ki ihtiyaçlarınız doğrultusunda.
+
+318
+01:14:17,524 --> 01:14:18,984
+Geldik kodlamaya.
+
+319
+01:14:21,943 --> 01:14:26,584
+Ekstrem programming'e ekstrem özenini veren adım aslında bu.
+
+320
+01:14:27,804 --> 01:14:34,824
+Şimdi, XP'nin önerisi, ilk önerisi, önce bilim sınamalarını hazırla kardeşimler.
+
+321
+01:14:35,344 --> 01:14:37,064
+Bilim sınaması yani unit test.
+
+322
+01:14:38,244 --> 01:14:41,703
+Sınama aşamasında tekrar konuşacağız bu konuları ama.
+
+323
+01:14:42,260 --> 01:14:50,840
+Temel tanımı yazarsak, hangi programlama yaklaşımını kullanıyorsak, onun temel birimlerinin sınanmasından bahsediyoruz.
+
+324
+01:14:51,319 --> 01:14:56,300
+Nesliyelik programları kullanıyorsak, bireysel sınıfların sınanmasından bahsediyoruz.
+
+325
+01:14:59,315 --> 01:15:09,636
+Ve diyor ki, önce bilim sınamasını yazıyor. Bu test driven design anlamına geliyor. Test güdümlü tasarım.
+
+326
+01:15:25,395 --> 01:15:53,395
+Eksik tasarlamışsınızdır. Hatalı demiyorum, hata olma olasılığı da var ama hata yoksa bile eksik veya esnek olmayan bir biçimde tasarlamışsınızdır. Anlamı çıkmaktadır. Testlerinin, dizaynının temel düşüncesi bu, temel odak noktası bu. O yüzden önce bilim testlerini hazırla ve kodlama yaparken de bu ekstremi programmingin katkısı sadece...
+
+327
+01:15:53,395 --> 01:16:05,555
+Sınavı geçmeye yarayan kod yaz. Daha fazlasını yapma. Gerek de yok zaten. Çünkü müşteri ilerleyen aşamalarda ölkeleri zaten değiştirebilir, ekleyebilir, çıkartabilir.
+
+328
+01:16:05,555 --> 01:16:17,115
+Siz şimdi acaba bunu şu şekilde yazsam acaba şu olası değişikliklere karşı da bir önlem almış olur muyum? Ona göre kod yazayım biraz daha bu nedenle.
+
+329
+01:16:18,804 --> 01:16:28,963
+Öyle düşündüğünüzde o kodu yazma zamanınız da artacaktır. Çünkü daha fazla iş yaptırmaya çalışacaksınız o koda.
+
+330
+01:16:28,963 --> 01:16:37,123
+Fakat belki sonra kullanıcı o ekran tamamen vazgeçecek, bu harcadığınız ekstra çaba da kullanılmayacak.
+
+331
+01:16:37,523 --> 01:16:41,963
+Veyahut da değiştirecek, sizin ekstra harcadığınız çaba yine kullanılmayacak.
+
+332
+01:16:42,844 --> 01:16:46,384
+O yüzden bunları bu aşamada düşünmeye mi yapmaya hiç gerek yok.
+
+333
+01:16:46,804 --> 01:17:01,083
+Gerekirse müşer değiştirecek saat. Bu yüzden sadece sınavı yazmaya, sınavı test kezlerinizi, sınavlarınızı, onlar da bir sınav aslında, geçmeye yarayan kod yazmak yeterlidir ve önerilir.
+
+334
+01:17:01,083 --> 01:17:14,804
+Ekstrem programmingde. Tabii şimdi herkes test kezleri çalışmakta da rahat etmeyebilir. O yüzden test kezleri önce hazırlamak yerine isterseniz eldeki...
+
+335
+01:17:14,804 --> 01:17:24,324
+Tasarıma göre önce bir miktar kod yazıp test gezileri de onun ardından yavaş yavaş yani kodda birlikte, kodda paralel olarak da hazırlayabilirsiniz.
+
+336
+01:17:24,904 --> 01:17:30,804
+Veyahut da daha geleneksel yaklaşım olarak da önce kodunuzu yazar sonra test gezilerinizi de yazabilirsiniz.
+
+337
+01:17:30,804 --> 01:17:42,724
+Yani siz bilirsiniz. Bu üç çözümden birisini uygulayabilirsiniz. XP'nin önerisi birincisidir. Test treatment'dır. Ama illaki test treatment çalışmakta zorunda değil.
+
+338
+01:17:42,804 --> 01:18:00,683
+Şeklinde bağlayabilirim bu konuyu. Ve geldik şimdi. Esas ekstremliğini veren konuya çift kişiyle programlama. Payal programming diye geçer. Hatta XP o payal da anlamına da gelmektedir. Payal'in anlamı.
+
+339
+01:18:02,064 --> 01:18:06,384
+Şimdi şey soracağım. Aranızda tüplü dalış yapan var mı?
+
+340
+01:18:07,764 --> 01:18:14,423
+Tüplü dalış yapan veya tüplü dalış eğitimlerine başlamış olan bir arkadaşım varsa lütfen sesini açıp ben buradayım desin.
+
+341
+01:18:20,916 --> 01:18:25,695
+Ben yapmıyorum da, tanıdığım bir iki arkadaşım var. Sizlerin arasında var mı onu merak ediyorum.
+
+342
+01:18:29,587 --> 01:18:31,608
+Yok galiba, o zaman söyleyeyim.
+
+343
+01:18:31,608 --> 01:18:38,667
+Şimdi, bir insan tek başına tüpüklü balış yapmaz. Bu yasaktır ve çok tehlikeleriz. Neden?
+
+344
+01:18:39,587 --> 01:18:46,167
+Suyun altında birçok şey ters gidebilir ve bunlara ölüme varabilecek kılıcı zararlara yol açabilir.
+
+345
+01:18:47,327 --> 01:18:57,207
+Biz denizin derinlikleri için yaratılmamışız. Yaşam suda başlamış olabilir ama biz artık çoktan o kökenlerimizi kaybetmişiz.
+
+346
+01:18:57,619 --> 01:19:00,619
+Denizin su altı bizim için ölümcül olabilir.
+
+347
+01:19:02,059 --> 01:19:04,260
+İşte giysimiz yırtılabilir.
+
+348
+01:19:05,279 --> 01:19:07,559
+Taşlar keskin su altı taşları.
+
+349
+01:19:08,139 --> 01:19:09,859
+Oksijen otomumuz dolanabilir.
+
+350
+01:19:10,680 --> 01:19:13,859
+Ve böyle bir şeyi fark ettiğimizde çok geç olacaktır.
+
+351
+01:19:14,119 --> 01:19:14,699
+Bayılırız.
+
+352
+01:19:15,479 --> 01:19:17,100
+Olsunumuzu kendimiz çözemeyiz.
+
+353
+01:19:18,340 --> 01:19:20,799
+Ne bileyim, bin bir türlü tehlike var.
+
+354
+01:19:21,460 --> 01:19:49,239
+Bu nedenle hiçbir zaman için tüplü dalışına tek dalınmaz. İlla ki iki kişi dalınız. Buna body denilir. İki kişi de birbirinin body'sidir. Eçli dalma söz konusudur. Ve birbirlerini sürekli gözetirler. Birbirlerinin oksijen tüplerini kontrol ederler. Bir gaz kaçalarını kontrol ederler. Durumlarını kontrol ederler. Kevreyi kontrol ederler. Sürekli gözleri hem çevrede hem birbirinin üstündedir.
+
+355
+01:19:49,460 --> 01:20:08,199
+Ancak böylece başarılı bir dalış gerçekleştirilebilir. E keza yukarı çıkarken de çok hızlı çıkılmaz, yoksa vurgun yeme olasılığı var, kalıcı bir tasarlığına yol açabilir. Eğer birisi fazla hızlı çıkarsa öyküse onu uyarır gibi sürekli birbirlerini desteklerler.
+
+356
+01:20:09,716 --> 01:20:29,896
+Extreme Program'de de Peer Program öneriliyor. Önemli bir birleşeni. Türkiye şartlarında ne kadar uygulanabiliriz o ayrı bir tartışma konusu ama önce bir öneriyi dinleyelim. Öneri şu. Bir bilgisayarın başında iki kişi çalışacak. Birinci kişi klavye ve fari yerine almış durumda olacak. Kodu yazıyor olacak.
+
+357
+01:20:37,524 --> 01:20:40,684
+Acaba genel tasarıma uygun mu kod yazıyor?
+
+358
+01:20:41,268 --> 01:20:58,667
+Üzerinde kararlaştırdığımız kalite kriterlerine yönelik mi kod yazıyor? Önceden üstünde kararlaştırdığımız standartlara göre mi kod yazıyor? Örneğin işte pretty printing işlemini yapıyor mu? Giritlendim mi? Falan falan.
+
+359
+01:20:58,667 --> 01:21:09,228
+Eğer kod karmaşıklığı üstüne çeşitli kısıtlarımız varsa bir satırda 5-6 tane kodu zincirleme kodun karmaşıklığının arttırıp yapılmamalıdır karar almışız.
+
+360
+01:21:09,268 --> 01:21:21,688
+Öyle mi davranıyor? Veyahut da şu anki kodladığı kısım tasarım geneline bakıldığında acaba uygun mu? Veya bir sorun oluşturacak mı? Bunu sürekli kontrol ediyor.
+
+361
+01:21:22,452 --> 01:21:39,212
+Ki bir de şunu da hatırlatırım. Geçen hafta bu artımsal süreçlerde iğnelemeniz süreçlerde demiştik ki en önemli dikkat etmemiz gereken şey ayrıntılara odaklanırken büyük resmi kaçırmamalıyız. Demiştik ya işte bu PIR ona yarıyor.
+
+362
+01:21:40,332 --> 01:21:47,192
+Söylediklerimi bu şekilde özetleyebilirim. Büyük resmi unutmamıza, ana proje planını unutmamamıza sağlıyor.
+
+363
+01:21:47,536 --> 01:21:59,235
+Ve bu pairlerden eğer birisi ötikisinden daha deneyimliyse, bu arada usta çırak ilişkisiyle bilgi aktarımı da kendiliğinden ortaya çıkmış olabiliyor.
+
+364
+01:22:00,715 --> 01:22:08,615
+Tabii eğer siz bir kobi iseniz, kobi olan biri yazılım evlisiniz, pair programı kapacak kadar insan kaynağınız yoktur olabilir.
+
+365
+01:22:09,171 --> 01:22:15,271
+Bu durumda XP ile çalışmak istiyorsanız, ya PayIt Programming'den vazgeçeceksiniz, bunu yapabilirsiniz.
+
+366
+01:22:15,271 --> 01:22:23,671
+Çünkü zaten çevik süreçlerin ilkesinden ne demiştik? Ekip süreci kendi koşullarına göre ve eldeki problem koşullarına göre uyarlayabilmelidir demiştik.
+
+367
+01:22:24,191 --> 01:22:30,471
+O yüzden hüzün hariyasak PayIt Programming yoksa XP de yok diye bir şey söylemiyoruz tabii ki.
+
+368
+01:22:31,231 --> 01:22:36,531
+Ya öyle yaparız veyahut da bir sonra konuşacağımız Scrum üzerinde çalışırız.
+
+369
+01:22:37,171 --> 01:22:40,651
+Özellikle pay programın önerisi yok. Yapmayın da demez.
+
+370
+01:22:40,651 --> 01:22:41,451
+Tabii demekse.
+
+371
+01:22:42,068 --> 01:22:51,728
+Evet, şey bu arkadaşlar. En ilginç kısım bu. Sınama kısmını sadece kısatar geçeceğim. Çünkü daha sonra sınama ayrı bir konular olarak konuşacağız.
+
+372
+01:22:51,728 --> 01:23:10,068
+Bilim sınamalarını hazırlamıştık ya, ister önce, ister an paralel olarak, ister sonda. Bu bilim sınamalarının otomatik olarak çalıştırılması ve mümkünse o çalıştıran gerecin ilgili test, başarı ve başarısız raporlarını da ve hatta...
+
+373
+01:23:10,068 --> 01:23:17,827
+Bazı analizleriyle birlikte, olası kök neden önerileriyle birlikte size söylemesi çok önemli taşımaktadır.
+
+374
+01:23:18,047 --> 01:23:26,287
+Çünkü sınavının zor bir işi olduğunu göreceğiz. Bu işi mümkün olduğu kadar kolaylaştırmaya yönelik gereksinim kullanmalıyız deniliyor.
+
+375
+01:23:26,287 --> 01:23:38,007
+Ve tabii ki müşteri altıncı saat ürünü de deneyecek. Peki, şimdi değişik bir şeyler gördük arkadaşlar. Kafanıza yatmayan bir şeyler illaki olabilir. Konuşalım.
+
+376
+01:23:38,068 --> 01:23:42,728
+Dün sorularınız üstünde ve görüşleriniz üzerinde.
+
+377
+01:23:47,123 --> 01:23:50,863
+İlgi de bilmek için sunum modundan çıktım. Buyurun.
+
+378
+01:24:41,619 --> 01:24:42,420
+Çok mutlu oldu arkadaşlar.
+
+379
+01:24:46,131 --> 01:24:47,431
+O zaman devam edeceğiz.
+
+380
+01:25:00,851 --> 01:25:20,372
+XP anahtarıyla ve önemli ayrıntılarıyla bu kadar. Gelelim ikinci çiftlik süreç örneğimize. Bu da Scrum. Şimdi Scrum'ı Türkçe'ye çevrilmek iddiasından vazgeçtim. Çünkü nasıl çevireceğiz? Belki koşu diye çevirebilirim.
+
+381
+01:25:20,948 --> 01:25:44,528
+Çünkü bu üç adımdan koşu adımının ayrıntılı olarak nasıl yapıldığına yönelik bir önerileri var. Koşu diyebilirim belki. Bir ara sürü demek istedim ama sürü de garip kaçtı biraz. Olay şu, Scrum aslında bir oyun tekniği, taktiği.
+
+382
+01:25:45,524 --> 01:26:07,844
+Amerikan futbolu değil, rugby. Bu kolucu kıyafetler olmadan, şotlarda, atletlerle falan oynanan, Avustralya falan o taraflarda daha çok oynanan oyun, rugby oyununda bir taktik Scrum. O da şu, topu alan oyuncunun etrafında takımın diğer geri kalan oyuncuları neredeyse bir etten duvar oluşturuyor.
+
+383
+01:26:13,524 --> 01:26:22,444
+Belki bir değişikliği sürü olarak böyle koşturan bir zonları düşünelim. Aldı bulduk, aldı bulduk. Ezip geçecekler vakibi mesela. Bu şekilde bir taktik.
+
+384
+01:26:22,868 --> 01:26:31,908
+Ona Scrum adı veriliyor. Bu yazılım geliştirme modeli de oradan esinlenerekten Scrum demiş, adını vermiş kendisine.
+
+385
+01:26:32,628 --> 01:26:41,088
+Adımlarımız önce görev listesi oluşturuyor, sonra Scrum koşusu gerçekleştiriliyor ve ardından işlev gösterimi yapılıyor.
+
+386
+01:26:41,088 --> 01:26:49,963
+Şimdi görev listesi dediğiniz aynı XP'de bahsettiğimiz kullanıcı öyküleri gibi. Ondan sadece görev demişler ama onun dışında...
+
+387
+01:26:50,484 --> 01:27:06,164
+Geri kalan bütün aynıklar aynı. Yine önceliklendiriliyor, yine planlaması yapılıyor, yine kısa çevrimlerde yapılabilecek görevler oluyor bunlar. Bütün aynıklarıyla aynı.
+
+388
+01:27:06,931 --> 01:27:25,671
+Sonra geliyoruz koşu aşamasına. Koşu aşamasında da tabii ki aslında analiz ve tasarım etkinlikleri yapılacak. Elimizdeki yapılabilir, elimizdeki görevle ilgili. Bu aşamada önemli bir fark getiriyor Scrum.
+
+389
+01:27:27,988 --> 01:27:55,708
+Toplantılar. Şimdi ilk başta önemli bir yavruç evlilik süreçlerde her gün toplantı yapmak zıt bir şey. Ama bu toplantılar öyle resmi, formal ve uzun toplantıları değil. 15 dakikalık kısa toplantılar bunlar. Ama bütün ekip yerlerinin katıldığı sözlü yüz yüze yapılan kısa toplantılar. 15 dakika gibi sürede yapılabilecek bir toplantı olacak. Bu toplantıda proje yöneticisi, yöneticisi ya da proje lideri.
+
+390
+01:27:55,988 --> 01:28:06,828
+ekip lideri yönetici durumunda. Küçük bile olsa her toplantının bir yöneticisi olmalı. Yoksa toplantıda sarpa sarabiliyor veya uzayabiliyor, verimse birleşiyor.
+
+391
+01:28:06,828 --> 01:28:13,028
+Şimdi projelerin aslında kendisi de dahil herkese üç soru soruyor.
+
+392
+01:28:13,524 --> 01:28:38,284
+Ve bu soruların yanıtlarını alıyor. Ve tabii ki aslında herkes de bu yanıtları dinlemiş oluyor. Sorular şunlar ana hatlarıyla. Son toplantıdan böyle ne yaptınız? Yani dünden beri aslında demek oluyor. Ne gibi engellerle karşılaştınız? Ve bunları nasıl aşabildiyseniz veya açma planınız var mı ki? O da üçüncü soruya giriyor aslında. Yarınki toplantıya kadar da neleri başarmayı hedefliyorsunuz?
+
+393
+01:28:38,612 --> 01:28:49,972
+Bu üç ana soru ekseninde herkes durumunu anlatıyor. Böylece ekipteki herkes birbirinin durumundan sürekli olarak haberdar bir biçimde çalışıyorlar.
+
+394
+01:28:51,572 --> 01:28:59,132
+Keza işlev gösterimi de işte şeyin sınanması, müşteri tarafından da artımsal ürünün denenip sınanması.
+
+395
+01:28:59,771 --> 01:29:05,731
+Anlatlarıyla XB'ye çok benziyor. Farkı işte paid programming önemlisi yok.
+
+396
+01:29:06,252 --> 01:29:10,552
+Fakat koşu esnasında her gün kısa toplantılar öneriyor.
+
+397
+01:29:11,092 --> 01:29:16,372
+Bu arada Scrum bir haftaya kadar düşürüyor kısa süreyi.
+
+398
+01:29:18,068 --> 01:29:24,307
+XP çok o kadar önemli. Ortalama 3, alt, teksi 1 ama yine de orada da 1'e düşürürseniz.
+
+399
+01:29:25,108 --> 01:29:33,728
+Ama bu kadar küçük ayrıntıda da belki ölkü sayınız aşırı artacaktır. İşte o arada bir denge kurmak lazım.
+
+400
+01:29:35,068 --> 01:29:51,828
+Şimdi bu arada aslında bu çevremin, yani üç adımlık çevremin bir başına pre-scrum yani ön-scrum ve en son da projenin tamamlanmasına yakın post-scrum aşamaları da ekleyebiliriz.
+
+401
+01:29:52,564 --> 01:29:59,404
+Pre-sıklama, aynı zamanda kick-off da diyorlar, başlama buluşu. Bu olarak bir kökenli şeyden ithafet.
+
+402
+01:30:01,395 --> 01:30:29,376
+Şimdi, gereksinim mühendisliği çalışmalarının öneminden bahsetmiştik. Bu çalışmaları aceleye getirmemek için bütün görev listeleri belirlenmeden önce bir ayrıntılı ve istediğiniz kadar zaman ayıracağınız daha ağızlık veya daha ayrıntılı, bu hızlı çevrenin hızından daha bağımsız bir biçimde.
+
+403
+01:30:29,395 --> 01:30:40,836
+Gereksinim analizi ve risk analizi işlemlerini yapmak için zaman ayırdığınız bir pre-scrum adımı tanımlayabilirsiniz rahatlıkla.
+
+404
+01:30:40,836 --> 01:30:57,216
+Ve işte bu proje sonuna yaklaşıldı. Artık toplu olarak belki eksik belgelendirmeyi tamamlama, kullanıcı eğitimi bu gibi işlemleri de ayrı birer koşu gibi düşünmek yerine.
+
+405
+01:30:57,395 --> 01:31:09,315
+Bu hızlı çevrimli koşular şeklinde, görevlerli koşular şeklinde düşünmek yerine bunu da ayrı bir planlama kapsamında post Scrum adını olarak da değerlendirebilirsiniz.
+
+406
+01:31:09,315 --> 01:31:19,496
+Yani şuraya da azıcık çizik direyim. İşte önce bir pre-scrum.
+
+407
+01:31:19,872 --> 01:31:44,851
+Aslında tekstil yazsam daha rahat oluyor. Bir pre-scrum ardından da bir post-scrum aşamaları da pek rahatlıkla tanımlayabilirsiniz. Önce pre-scrum, ondan sonra bu çevriler, ondan sonra bittiği zaman da post-scrum şeklinde de tanım yapabilirsiniz. Hatta bunlar öneriliyor da.
+
+408
+01:31:46,868 --> 01:31:48,768
+Şeklinde söyleyebilirim.
+
+409
+01:31:49,208 --> 01:31:50,548
+Şimdi şunu bir temizleyelim.
+
+410
+01:31:56,180 --> 01:32:03,680
+Peki, durum bu arkadaşlar. Sorusu olan varsa lütfen buyursun.
+
+411
+01:32:13,811 --> 01:32:35,811
+Anadlarıyla, çevik süreçler hakkında ve iki önliği hakkında bilgi sahibi olmuş olduk. Bu arada ufak bir iki tavsiye ile konuyu bağlayalım. Tasarım açamasında da basitlikten ödün vermeyeceğiz. Tasarımdan önce, tasarımınızın...
+
+412
+01:32:37,011 --> 01:32:53,492
+İçinde de düşünebiliriz veya bir ön adımı olarak da düşünebiliriz. Öncelikle analiz ve varlıklar arasındaki ilişkiler bunlar nelerdir? Kısaca ne sorusuna yanıp aldığımız analiz aşamasında aslında bir modelleme yapmış oluyoruz.
+
+413
+01:32:53,492 --> 01:33:04,752
+Yani problem alanındaki varlıkları yazılımıza dahil ederken bunların aranındaki hangi nitelikler ve hangi ilişkiler önemlidir onları dahil ediyoruz projemizi.
+
+414
+01:33:05,011 --> 01:33:07,292
+Bu aşamaya modellemede deniliyor.
+
+415
+01:33:08,612 --> 01:33:22,692
+Ve bu modeli belgelendirirken veya herhangi bir paydaşa anlatmak üzere kağıda dökerken, elektronik belgelerde dökerken her şeyi her ayrıntısıyla yapmak zorunda değiliz diyor.
+
+416
+01:33:22,692 --> 01:33:30,792
+Çünkü ayrıntılı belgeler yerine çalışan kod daha çok önem veriyor ya.
+
+417
+01:33:31,172 --> 01:33:32,692
+Bu nedenle bir model...
+
+418
+01:33:33,011 --> 01:34:00,632
+oluştururken veya bir çizim, bir şema yaparken neyi, kime, hangi düzeyde anlatmak istiyorsak ona göre yapacağız. Her paydaş, her bileşeni, her parçayı aynı şekilde anlamaz. Konu uzmanları örneğin şeyden çok anlamaz, sınıflardan, metodlardan anlamaz. Örneğin. Fakat teknik pandas gibi.
+
+419
+01:34:01,011 --> 01:34:05,311
+İki gibi yönetli modelleme yapıyorsak o şekilde şemalar çizebiliriz.
+
+420
+01:34:05,311 --> 01:34:18,572
+Ama konu uzmanına bir şey anlatmaksa şu anki amacımız o kadar ağır ya da ayrıntılı çizip vakit kaybetmek yerine şu an ne gerekiyorsa onu özetleyip onu o şekilde anlatmak daha doğru olacaktır.
+
+421
+01:34:19,072 --> 01:34:26,311
+Sonra uygun bir çevrim zamanında diğer ayrıntılı belgelere gerek duyulacaksa onlar da yapılır gibi.
+
+422
+01:34:27,859 --> 01:34:40,659
+Bir düşünce tarzında olmamız lazım. Sunumdan ziyade içerik önemlidir diyoruz. Model istediği kadar hatasız olsun, aktarılması gereken bilgi içermiyorsa o zaman işe yaramaz diyoruz.
+
+423
+01:34:40,659 --> 01:34:55,720
+Onun dışında çok hızlı geçen bir çalışma temposu içerisinde yürüyor çirp seçimler. Bu hız içerisinde kullandığımız gereçlere hakim olmalıyız. Bu hızlı çalışmaya başlamadan önce
+
+424
+01:34:55,859 --> 01:35:21,819
+Kullanılacak gereçler hakkında bilgimiz ve az bile olsa bir deneyimimiz, tecrübemiz, hands-on experience diye tabir ettiğimiz deneyimimiz olmalı. Yoksa o hızlı süreç içerisinde şu gereçler nasıl kullanılır, test için, c-nut kullanıyoruz, onun için orada nasıl koşturuyordu bununla, onları öğrenip araştırmak için vakit kaybetmek doğru olmayacaktır.
+
+425
+01:35:23,859 --> 01:35:33,939
+Hem kullandığımız modelleme yolunu, hem kullandığımız gerekçileri, bunları iyi öğrenip kullanıyor olmamız önemli taşımaktadır.
+
+426
+01:35:33,939 --> 01:35:49,680
+Ve işte dengeyi de kaybetmemek lazım. Çevik çalışacağız demek bu disiplinsizlik olmamalıdır. Ama disiplinde çalışacağız diye de gereksiz iş yapmamalıyız şeklinde bu konuyu özetliyorum arkadaşlar ve bağlıyorum.
+
+427
+01:35:50,292 --> 01:35:55,311
+Ama tabii sizin sorularınız varsa tabii ki onları da bekleyeyim biraz.
+
+428
+01:36:02,707 --> 01:36:19,607
+Çevik süreçler önemli arkadaşlar. Yani mesleğinizde eğer yazılım geliştirme alanında çalışacaksanız ya geleneksel klasik işareler süreciyle veya bir çevik süreç ile çalışıyor olacaksınız. Bunlar sizin hayatınızın bir parçası olacak. Önemli parçalarından biri olacak.
+
+429
+01:36:43,636 --> 01:36:44,256
+Peki o zaman.
+
+430
+01:36:46,476 --> 01:36:50,696
+Evet, şimdi sıraç sertifikasyonu var. Bunun üstünde ne kadar konuşabildim?
+
+431
+01:36:53,696 --> 01:36:56,976
+Konuşabilirim yani. Gerekirse bir 5 dakika daha sonra deniz var.
+
+432
+01:36:57,416 --> 01:37:02,256
+Peki, şu anlar vermek için bir de sarken bence süreç sertifikasyonu üstüne konuşalım.
+
+433
+01:37:02,876 --> 01:37:03,076
+Şimdi.
+
+434
+01:37:03,923 --> 01:37:21,503
+Süreç sertifikasyonu ilk bakışta kivik süreçlere zıt gibi gözükebilir ama öyle bir taban tabana dışlama söz konusu değildir. Önce biraz konuşalım süreç sertifikasyonu ondan sonra o konuya döneriz. Unutursam bile siz hatırlatırsınız.
+
+435
+01:37:32,180 --> 01:37:46,180
+Doğru düzgün bir biçimde ve verimli biçimde kullanamıyorsak o süreç tek başına bizi kurtarmaz. Bizim projelerimizi başarı ile sonuçlandırmamızı otomatik olarak sağlamaz.
+
+436
+01:37:47,091 --> 01:38:09,251
+İlip sürecimiz yoksa zaten işimiz şanssallığa kalmış demek ki o da ilk kategori olarak biraz daha söyleyeceğim. Biz bu işi çok iyi yapıyoruz, yapıyor olabiliriz yazılım olarak, iddialı da olabiliriz ama bir kişinin kendi iddiası sadece iddia düzeyinde kalır. İllaki bir gerçek olarak.
+
+437
+01:38:09,716 --> 01:38:28,476
+Onaylanması için, pastik edilmesi için, bu çalıştığınız sürecin yeterliliğini ve sizin bu süreci düzgün biçimde yürüttüğünüzün bağımsız kurumlara denetletilmesi ve onay alınmasını seçebilir bir yazılım evi.
+
+438
+01:38:29,716 --> 01:38:36,336
+Bunu niçin isteyebilir? Birincisi, kendini sürekli iyileştirmek için bunu isteyebilir.
+
+439
+01:38:36,884 --> 01:38:52,544
+Ama daha büyük güdüm aslında etken birçok büyük müşterinin bu şekilde sertifikalı ya da akredite yazılım firmaları ile çalışmayı şart koşması. Temel güdüm bu.
+
+440
+01:38:53,235 --> 01:39:08,975
+Şimdi siz bir kurumsal büyük bir müşterisiniz ve diyelim ki bütün çalışma sürecinizi önemli oranda destekleyecek ve ona önemli oranda bel bağlayacağınız bir IAP yazılımına sahip olmak istiyorsunuz.
+
+441
+01:39:10,155 --> 01:39:16,935
+Bunu pazardan elma seçer gibi, herhangi bir tezgahtan elma seçer gibi alamazsınız.
+
+442
+01:39:17,844 --> 01:39:28,203
+Veya ilk önünüze gelen hıldavaç dükkanına gelip ya da usta benim bir elektrik tesisatım var, yapar mısın diye...
+
+443
+01:39:28,307 --> 01:39:50,288
+O şekilde kimden hizmet alacağınızı seçmeniz doğru olmaz. O kişi olan yetenekli mi? Bunu yapabiliyor mu? Hiçbir şey olmasa bile en azından oradaki kartlar belgesi var mı o kişinin? O an konuştuğum kişi o kişi mi diye bakmak istersiniz en azından. Basit bir elektrik veya tesisat probleminiz varsa bile.
+
+444
+01:39:56,307 --> 01:40:11,768
+destekleyecek ve ona bağımlı olacağınız bir pen ortaya çıkması gerekiyorsa, bunu bu işi yapmaya muktedir yetkin, yetenekli, liyakat sahibi, bilgi beceri sahibi kurumlara yaptırmak isteyeceksiniz.
+
+445
+01:40:13,768 --> 01:40:18,768
+Büyük kurumsal şirketler ve ülkelerin...
+
+446
+01:40:19,412 --> 01:40:46,472
+Bakanlıkları ve askeri kurumları büyük ölçekli yazılım projelerine ihtiyaç duyduklarından belirli bir düzeyde olgunluğa ve akreditasyona sahip kurumlara hizmet verir. İhaleye katılabilmek için bile belirli bir düzeyin üstünde bir akreditasyona sahip olmasını şart koşar.
+
+447
+01:40:47,347 --> 01:41:03,407
+İşte büyük projelerin riski de fazladır, getirisi de fazladır. Ama bir kere oyuna dair olabilmek için bile belli bir olgunluk düzeyinin üstünde olmanız gerekmektedir. Temel güdü bu genel olarak baktığımızda.
+
+448
+01:41:05,087 --> 01:41:14,827
+Böyle bir durum varsa o zaman süreç sertifikasyonuna girmeniz gereklidir. Ama illaki süreç sertifikasyonu gerekli mi?
+
+449
+01:41:15,475 --> 01:41:23,775
+Eğer siz küçük ölçekli bir şirketseniz, bir COBI yazılım iseniz süreç sertifikasyonuna ihtiyacınız yok.
+
+450
+01:41:24,148 --> 01:41:35,188
+Ha o süreçlerin gerekliliğini kendiniz düzgün yaparsınız, bunu da bir başkasına kanıtlamanızda ihtiyacımız olmayabilir yoktur genelde.
+
+451
+01:41:35,648 --> 01:41:46,068
+Veya belki siz gerçekten akrediti bir kurumsunuzdur ama o anda küçük ölçek bir proje üstüne çalışacaktır, ekibinizin belli bir parçası.
+
+452
+01:41:46,068 --> 01:41:52,068
+Onların bu süreç adımlarını, akrediti süreç adımlarını izleyerekten...
+
+453
+01:41:52,148 --> 01:42:12,148
+çalışmasına da çok gerek yok. Çünkü bu sertifikasyona yönelik veya süreçleri doğru yürüttüğünüze yönelik olan etkinliklerin de bir maliyeti vardır. Onların da ayrıca yürütülmesi ve o etkinliklere zaman, insan ve emek...
+
+454
+01:42:12,543 --> 01:42:28,983
+Ve para harcanması gerekmektedir. Eğer bu nedenle küçük bir iş için bir kendi hacmi ya da yarısı kadar daha hacimli bir emek ve masraf koymak mantıksız bir şey olacaktır. Gereksiz bir şey olacaktır.
+
+455
+01:42:29,395 --> 01:42:45,335
+Böyle durumlarda süreç akreditasyonu gitmeyiz veya akredite sürecimizi kullanmayabiliriz. Ama onun dışında gerekli olduğu durumlarda da bir model ve standarta göre akredite olmamız gerekmektedir.
+
+456
+01:42:57,395 --> 01:43:22,395
+Alınan model ve standartlar arasında üç tane örnek vermek istiyorum size. Birincisi CMMI, Capability, Maturity, Model Integration'ın hadlerinin açılımı. Bu modeli öneren kurum, Amerika'daki Carnegie Mellon Üniversitesi'nin Software Engineering Institute'su.
+
+457
+01:43:25,235 --> 01:43:34,315
+Yazılım Mühendisliği Disiplinindeki en eski, en köklü ve en önemli katılımcılardan birisi.
+
+458
+01:43:36,756 --> 01:44:04,756
+Onun tarafından verilmiş. İkincisi PMI. Bu da Project Management Institute adı vermiş kendini. Bir kurum tarafından temelleri atılmış ve yürütülüyor. PMI daha çok genel amaçlı bir proje yönetimi yaklaşımıdır ve CMMI kurumsal olarak, CMMI ve ISO kurumsal olarak akredite olunan süreçler iken PMI'da hem kurumsal hem de
+
+459
+01:44:04,756 --> 01:44:08,055
+Bireysel akreditasyonlar söz konusudur.
+
+460
+01:44:10,036 --> 01:44:15,215
+Hani sadece bireysel değil mi? Bireysel ve kurumsal desem daha doğru olacak.
+
+461
+01:44:15,215 --> 01:44:25,555
+O yüzden bunu da yine kurumsal şeklinde yazayım.
+
+462
+01:44:27,036 --> 01:44:30,555
+Ona eklememişim. İso'ya eklemişim de oraya eklememişim.
+
+463
+01:44:32,243 --> 01:44:32,743
+Evet.
+
+464
+01:44:35,636 --> 01:44:54,016
+Ve PMI da Amerika kökenli, kökleri orada. Üçüncü olarak da ISO'dan bahsetmek istiyorum. ISO'nun 9001-2015 standartları var. Bu genel amaçlı standartı. ISO International Standards Organization anlamına gelmektedir.
+
+465
+01:44:54,416 --> 01:45:03,256
+Amerika günü ne değildir? Avrupa ve daha uluslararası bir katılım söz konusudur. Katılımcı söz konusudur portföyü.
+
+466
+01:45:03,636 --> 01:45:19,456
+ISO'da, adı üstünde International Standards Organization. Bu ISO 9001 standartının 2015 sürmüğü, 2.5'den sonra geçen sayı yıldız. O standartın en son hangi yılda güncellendiğini gösterir.
+
+467
+01:45:31,636 --> 01:45:35,816
+ISO 9001-2015 akreditasyonuna da sahibiz.
+
+468
+01:45:35,816 --> 01:45:40,816
+Ve bu bağlamda her sene kendi iç denetimlerimizi yapıyoruz.
+
+469
+01:45:41,196 --> 01:45:44,596
+İki senede bir de dış denetime tabi tutuluyoruz.
+
+470
+01:45:44,976 --> 01:45:52,516
+Türk Standartları Enstitüsü'nün yetki verdiği akreditasyon kurumları tarafından akredite oluyoruz.
+
+471
+01:45:52,596 --> 01:45:54,276
+Dış denetçiler geliyor, bizi denetliyor.
+
+472
+01:45:59,636 --> 01:46:08,196
+Denetçi havuzunun bir parçasıyım. Bu konuda özel üç günlük eğitim aldık. Bu eğitimler normalde ücretlidir.
+
+473
+01:46:09,516 --> 01:46:18,796
+Yeniye tabii ki üniversite bir ücret ödeyerekten akademik ve idari personeli arasından gönüllü olanları bu eğitime tabi tuttu ve iç denetçi olarak çalışıyoruz.
+
+474
+01:46:21,779 --> 01:46:37,619
+Ama genel amaçlı biz şimdi daha çok yazılım evi olarak bir yazılım geliştirme sürecimizin akreditasyonu için düşünüyorsak o zaman ISO 9001 bizim için yetmez. Olsa tabii iyi olur ama yetmez.
+
+475
+01:46:38,260 --> 01:46:49,520
+Odağımız ISO'nun 90.003 standartı var yazılım geliştirmeye özel. Oda kurumsal. 2018'de yayınlanmış. Güncellenmiş mi? Bakmadım.
+
+476
+01:46:49,779 --> 01:47:11,360
+Bakmayı unuttum. Belki 2021'i çıkmıştır ama öyle her sene güncellenen şeyler değil bunlar. Mesela ISO bundan önceki güncellemesi yanılmıyorsam 2000 filandı. Yani 5-10, 5 seneden daha erken genelde standartta güncellenmiyor. Çok hızlı güncellenen şeyler değiller.
+
+477
+01:47:14,771 --> 01:47:41,131
+İşte o ne? Bu 90.3 standartı yazılım geliştirmeyi özerdim. Veya veri güvenliğine yönelik neydi? 14.001 miydi? Unuttum. Değişik standartlarımız var. Ve siz de hangi problem alanlarına yönelik ürünler ortaya çıkartıyorsanız, onların gerektirdiği bütün alanlarda sadece 90.3 değil, daha başka standartlarda da akredite olmak isteyebileceksiniz.
+
+478
+01:47:42,771 --> 01:48:08,451
+Ulusal bu konuda belgelendirici firma DENETİK'tir. Ulusal otorite ise Türkiye'de bir kamu kurumu olan TÜRKAK'tır. Türkiye Akvelitasyon Kurumu. Bu ISO'nun genel standartlarının, genel ve özel yani ISO'nun bütün standartları için Ulusal Otorite TÜRKAK'tır. TÜRKAK'ın yetkilendirdiği belgelendirici akvelitli kurumlar söz konusudur.
+
+479
+01:48:10,771 --> 01:48:38,771
+Bunların arasında denetik vardır mesela. ISO'nun daha farklı mühendislik alanlarında da farklı standartları vardır. Onlarla ilgili belgelendirici farklı firmalar da vardır. Örneğin Türk Lloyd'u bunlardan bir tanesidir. Böyle kurumlar vardır. Onlara başvurulur ve öncesinde ayrıntılı bir değerlendirme raporları hazırlanır. Daha sonra...
+
+480
+01:48:38,771 --> 01:48:48,192
+Yerinde yapılan ziyaretlerde de bu işi gerçekten iddia ettiğiniz biçimde ve standartların öngördüğü biçimde yerine getiriyor musunuz?
+
+481
+01:48:48,192 --> 01:49:00,692
+Getirmiyor musunuz? Bunun denetlendirmesi yapılır ve bu denetlemelerden başarılı olarak geçerseniz belli bir süreliğine artık 1 yıl mı, 2 yıl mı, 3 yıl mı, 4 yıl mı o standart tarafından belirlenir.
+
+482
+01:49:01,031 --> 01:49:06,431
+Akredite olmuş olursunuz. Sürenin sonunda tekrar akreditasyon için başlıyorsunuz.
+
+483
+01:49:07,764 --> 01:49:28,923
+Keza biz de geçen hafta müdekten bahsetmiştik. Biz de fakültemizin bölümleri olarak eğitim programımızın olgunluğunu iddia ediyoruz. Bu iddiamızın bağımsız denetleyiciler tarafından denetlenmesi ve eğer gerçekten öyleyse akli ette edilmesi gerekmektedir demiştik.
+
+484
+01:49:35,764 --> 01:49:59,524
+Standartlar yazılım mühendisliği etkinlikleri konusunda sizi çok yönlendirmez. Bunu belki bir esneklik olarak da düşünebilirsiniz. Ayrıntılı biz kendimiz belirleyeceğiz. Bu da bizi elimizi rahatlatacak diyebilirsiniz ama yine de biraz havada kaldığını düşünüyorum bu genel avançlı standartların. İlla ki özel uyarlanmış standartlar gereklidir. PMI belli bir seneye kadar öyleydi.
+
+485
+01:50:00,000 --> 01:50:05,119
+Genel olarak mühendislik projelerinin yönetimini öngörüyordu.
+
+486
+01:50:05,440 --> 01:50:13,000
+Ama artık birkaç senedir yazılım projelerine yönelik de PMI alt dalları da mevcuttur.
+
+487
+01:50:13,579 --> 01:50:19,100
+Bu üç ana model ve üç modelin ana hatlarından bahsettim.
+
+488
+01:50:19,100 --> 01:50:21,680
+Şimdi ayrıntılarından bahsedeyim.
+
+489
+01:50:22,300 --> 01:50:25,420
+PMI iki yansı, üç yansı.
+
+490
+01:50:25,775 --> 01:50:39,555
+[öğrenci]'de 10.55 yaptık. Ben şu an daha fazla uzatmayalım. Bir ana çerçeveyi çizdik. Şu an 10 dakika aramızı veririm. Ondan sonra CMI'nin ayrıntılarıyla konumuza devam edeceğiz.
+
+491
+01:50:39,555 --> 01:50:48,235
+Ve geçen hafta da bu ünlük işleri nedeniyle 2 saat ders yaptığımızdan bu gereksinim mühendisliği etkinliklerine de...
+
+492
+01:50:48,627 --> 01:51:04,167
+Üçüncü dersimizde gidebildiğimiz kadar ilerlemek istiyorum. Bu nedenle şimdi şu noktada kaldık. 10 dakikadığımızı veriyorum. 10.15 ile 11.05 arasında 10 dakikadır arkadaşlar.
+
+493
+02:02:00,564 --> 02:02:07,444
+Evet arkadaşlar, süremize yine doldurduk. Son dersimize başlarım artık. Vakit geldi.
+
+494
+02:02:09,944 --> 02:02:25,564
+CMMI'den devam ediliriz. Önceki dersin sonunda hatırlarsınız, çeşitli akreditasyon süreç olgunluk modellerinden bahsetmiştik. Bunların içerisinde CMMI'ın üzerinde ben ayrıntılı olarak durmak istiyorum.
+
+495
+02:02:25,952 --> 02:02:37,591
+Ki aslında onda da çok fazla ayrıntıya giremeyeceğiz de temelinden bahsedeceğiz. Çünkü bu başlı başına bir uzmanlık alanı ve belirli bir kariyer dalı arkadaşlar aslında.
+
+496
+02:02:37,591 --> 02:02:53,591
+Yani her ki bu süreç akreditasyonlarının büyük ölçek için daha gerekli ve geçerli olduğunu düşünürseniz, hem büyük ölçekli kurumlar hem büyük ölçekli projelerde kullanılmak üzere o zaman bunda başlı...
+
+497
+02:02:53,952 --> 02:03:05,992
+başlı başına bu kalite ve süreç olumluğuna yönelik departman ve eleman çalıştırılması, bilim açılması söz konusu olmaktadır. Başlı başına bir uzmanlık alanıdır.
+
+498
+02:03:05,992 --> 02:03:19,032
+CMM'in bütün dökümanları, bütün kaynakları ücretsiz olarak, online olarak erişilebiliniz. Adresi en aşağıda görüyorsunuz.
+
+499
+02:03:21,952 --> 02:03:31,792
+Möğstin'in domeninde işte noktaya dutsal, CMMA şeklinde bu yörelden indireceğiniz ana dokümanının 700'den fazla sayfası var.
+
+500
+02:03:31,792 --> 02:03:44,131
+Yani kocaman bir şey. Bu nedenle bunun ne kadar bir ayrıntı ve başlı başına bir uzmanlık alanı olduğunun en önemli örnek delillerinden bir tanesi bu.
+
+501
+02:03:49,268 --> 02:04:13,807
+Şimdi bazı akreditasyonlar var ya da yok şeklinde binary düzeyde olabilmektedir. Ama bazıları da kategorilenmiş düzeylerden birinde verilebilmektedir. Örneğin ISO 9001 var ya da yok şeklindedir. Ama CMMI kategorili bir biçimdedir.
+
+502
+02:04:15,188 --> 02:04:34,268
+Beş ayrı düzey söz konusudur. Aslında bir sıfırıncı düzey de tanımlanmıştır. Toplamda altı gibi ama sıfırıncı düzey hiçbir şey yok. Yani yürütülmüyor. Hiçbir süreç adımı tanımlı değil, hiçbir şey yok. Level zero, incomplete şeklinde geçiyor.
+
+503
+02:04:34,268 --> 02:04:42,368
+Şimdi tabii ki aslında İngilizcelerini bilmek gerekiyor. Ben onun Türkçe tanımlarını yapmaya çalıştım.
+
+504
+02:04:43,283 --> 02:04:46,064
+O anlamda yürütülmeyen şeklinde söyledim.
+
+505
+02:04:47,444 --> 02:04:49,283
+Birinci düzey, giriş düzeyi.
+
+506
+02:04:50,123 --> 02:04:54,923
+Initial diye de geçiyor. Performed olarak da adlandırılıyor.
+
+507
+02:04:55,944 --> 02:04:57,703
+Buradaki durum şu.
+
+508
+02:04:58,364 --> 02:05:05,203
+Bir sürecimiz var ama sistematik biçimde yürütülmüyor.
+
+509
+02:05:06,264 --> 02:05:10,663
+İşimiz bu nedenle şansa ve anahtar kişilere kalmış.
+
+510
+02:05:11,604 --> 02:05:30,024
+O ekip üyelerinden birisinin bile işten ayrılması veya bir sağlık nedeniyle bir süre çalışamaz hale gelmesi projeyi tamamen durdurmakta veya başarısızlık ihtimalini yüzde yüzlere çıkarmaktadır.
+
+511
+02:05:30,420 --> 02:05:50,500
+Böyle bir durum sırası konusuysa buna initial ya da perform deniliyor giriş düzeyi. Şimdi incomplete diyemeyeceğiz. Hiçbir şey tanımlı değil elbette. Etkinliklerin tümü yürütülüyor. Fakat bunlar sistematik biçimde tanımlanmamış ve yürütülmesinin, denetlenmesine yönelik de bir sistematik kurallar tanımlanmamış.
+
+512
+02:05:58,420 --> 02:06:11,060
+Yürütülüş şekli de farklılaşabilir, kaliteli düzeyleri de, eşiği de daha düşebilir de, yükselebilir de. Yani böyle bir ilk durum söz konusu. Buna birinci düzey deniliyor.
+
+513
+02:06:11,764 --> 02:06:23,743
+İkinci düzey, bu arada şöyle bir durum da var arkadaşlar. Her aşama, bir önceki aşamanın üstüne yeni bir şeyler koyar bu şekilde bir birikimli ilerleme söz konusudur.
+
+514
+02:06:24,243 --> 02:06:39,484
+Sıfırıncı düzeyde hiçbir şey yoktu. Birinci düzeyde etkinlikler yürütülüyor ama tanımlanmamış. İkinci düzeyde buna manage ya da repeatable deniliyor. Yönetilen veya tekrarlanabilir, yenilenebilir deniliyor.
+
+515
+02:06:39,764 --> 02:07:07,484
+Burada bu seviyenin getirdiği temel proje planlama ve izleme yöntemleri öngörüyor bu düzey, onları tanımlıyor. Bunlar kullanılıyorsa ve bunlar kullanılarak daha evvelki projelerde ister aynı konularında, ister farklı konularında, daha önceki projelerdeki başarıla yeni projelerde de tekrarlanabiliyorsa buna ikinci düzey deniliyor. Yönetilen ya da yenilenebilir.
+
+516
+02:07:07,764 --> 02:07:32,064
+Çevirmeyi tercih ettim. Üçüncü düzey, kritik bir düzey. Defined diye geçiyor. Tanımlanmış şeklinde bir şey çevirdim. Burada ikinci düzeydeki temel planlama izlenme yöntemlerinin üzerine gelen konu kişi yönetimi ve risk yönetimi. Risk yönetimi etkinlikleri yürütmüyorsak EYAS, üçüncü düzeye hak kazanamıyoruz.
+
+517
+02:07:32,787 --> 02:07:54,387
+Kişi derken de çalışanların ve bireyler arasındaki etkileşimlerin yönetilmesi ve belgelendirilmesi de söz konusu. Çünkü bütün bu etkinlikleri yapıyorken bu etkinlikleri yaptığımızın delillerini de sunabilmeliyiz. İlla ayrı bir belgelendirme ihtiyacı olmayabilir ama delillerinin sunulması gereklidir.
+
+518
+02:08:00,787 --> 02:08:08,847
+Otomatik oluşturması söz konusuysa, Nihala daha az ek yük getirilirse ama bu söz konusu değilse belli bir ek yükü vardır bu işlemlerin.
+
+519
+02:08:09,427 --> 02:08:37,427
+Evet, üçüncü düzeyden bahsediyorduk. Kişi yönetimi ve risk yönetimi etkinlikleri vardır. Bunlar tanınlanmıştır ve kullanılmaktadır. Bütün organizasyonda standart olarak kullanılmaktadır bunlar ise. O zaman CMMI Level 3'e hak etmiş oluyoruz ve bu kritik bir düzey, bu bahsettiğim büyük müşteriler en azından CMMI Level 3 yazılım evleriyle çalışmak istiyorlar. Eşik o. Level 3'ü almışsanız önemli bir eşik.
+
+520
+02:08:37,427 --> 02:08:39,648
+Geçmişsiniz anlamına gelmektedir bu.
+
+521
+02:08:41,167 --> 02:08:52,728
+Kendi açınızdan baktığınızda ise, gerek yurt içinde, gerek yurt dışında bir kurumdan iş teklifi aldınız diyelim ki, acaba bu kurum nasıl bir kurumdur?
+
+522
+02:08:53,847 --> 02:08:58,207
+Her kurum kendini çok güzel pazarlar, biz şöyle iyiyiz, böyleyiz derler ama,
+
+523
+02:08:59,539 --> 02:09:26,060
+Eğer bir yazılım evi olarak veya IT departmanı olarak CMMM Level 3 akredite bir firmaysa, o zaman gayet iyi bir fırsattır bu sizin için. Öneriyi mutlaka kabul edin şeklinde ipucu verebilirim mesela size. O yüzden Level 3 önemli. Ve çevik süreçler Level 3'e kadar uyumluluğu sağlayabiliyor.
+
+524
+02:09:26,868 --> 02:09:35,548
+Arada bir çelişik olabilir demiştik. Çelişik süreçlerde ayrıntılı belgeler, süreç planlama bununla ikinci önceliktedir.
+
+525
+02:09:35,908 --> 02:09:46,388
+Ve nasıl yapılacağını da önceki ders saatinde ana ayrıntılığı da gördük. O etkinlikler bizi CMMI Level 3 düzeyine taşıyabiliyor sorunsuz.
+
+526
+02:09:54,868 --> 02:10:08,308
+Oluşmadan çalışan kurumlarımız var Türkiye'de de var. O yüzden bu level 3 kritik bir düzey. Çevik süreçlerinde ulaşabileceği bir düzey. Ama ondan sonrası mümkün olamayabiliyor çevik süreçlerde.
+
+527
+02:10:09,228 --> 02:10:22,108
+Dördüncü düzey, Quantitatively Managed şeklinde geçer. Burada dikkat ederseniz slash koymadım. Managed diye de geçebiliyor ya da uzun adıyla Quantitatively Managed olarak da geçebiliyor.
+
+528
+02:10:22,612 --> 02:10:30,452
+Nicel olarak yönetilen, nicelik olarak yönetilen.
+
+529
+02:10:30,452 --> 02:10:39,292
+Şimdi burada üstüne gelen konu ise süreç ve yazılım ölçütleri kullanarak kalite yönetimi etkinliklerinin yapılmasıdır.
+
+530
+02:10:40,771 --> 02:10:44,452
+Bu ölçütler sadece ölçütmekle kullanılırsa...
+
+531
+02:10:45,747 --> 02:10:58,747
+Çok fazla bir etkisi olmaz. O ölçütlerin rehberliği doğrultusunda o projede gerekli önlemler ve düzenlemeler yapılmak zorundasınızdır.
+
+532
+02:10:59,287 --> 02:11:06,467
+Projedeki ilerleme metrikler ve ölçütler ve onların desteğiyle birlikte sürekli izlenmektedir.
+
+533
+02:11:06,467 --> 02:11:13,467
+Eğer bütçe, zaman hedeflerinden sapmalar söz konusu olacaksa bunların sinyallerini algılamışsak...
+
+534
+02:11:13,747 --> 02:11:37,148
+Bu ölçütleri kullanarak da veya hedeflediğimiz kod kalitesi, ürün kalitesi düzeyindeki hedeflerimizden ilgili ölçütlerin rehberliği doğrultusunda sapmaya eğilim ortaya çıkmışsa, o zaman bunları erkenden belirleyip gerekli düzeltici önlemler, gerekli düzeltici etkinlikler yürütülmektedir, yürütülmelidir.
+
+535
+02:11:41,747 --> 02:11:48,307
+Yazılım proje yönetimi konusunda çeşitli süreç ve yazılım ölçüllerinden ayrıca konuşuyor olacağız.
+
+536
+02:11:49,167 --> 02:11:52,967
+Ve beşinci düzey, optimized, iyileştirilmiş.
+
+537
+02:11:54,027 --> 02:12:00,228
+Buradaki anahtar olgu ise, süreç yönetimi geçmiş deneyimlerin ışığında sürekli iyileştirilir.
+
+538
+02:12:00,979 --> 02:12:28,159
+Dikkatli dinlediyseniz, dördüncü düzeyi anlatırken, bu etkinlikler o projeye özel, o projede yapılır dedik. Ama bu projeden elde ettiğimiz bilgi ve deneyim, sonraki projelerde de kullanılmak üzere bir gelir besleme döngüsüne sahipse, o zaman beşinci düzeye geçmiş oluyoruz. Bu da optimist olarak geçer.
+
+539
+02:12:30,771 --> 02:12:33,712
+Şey bu arkadaşlar, ana hatlarıyla SMMI bu.
+
+540
+02:12:35,212 --> 02:12:42,332
+SMMI aslında her düzeyinde, işte aslında söyledim, belirli süreç alanlarının kapsanıyor olmasını ister.
+
+541
+02:12:42,632 --> 02:12:45,592
+Bunların da neler olduğunu ana hatlarıyla söylemiştik aslında.
+
+542
+02:12:46,032 --> 02:12:50,771
+Mesela bir geriye gidersem, ikinci düzeyde temel planlama izleme yöntemlerinin...
+
+543
+02:12:51,507 --> 02:13:03,547
+Onunla ilgili süreç alanlarının kapsanıyor ve uygulanıyor olmasını beklemektedir. Böylece her düzeyde bir ilerledikçe onun gerektirdiği şeylerin de kapsanıyor ve yürütülüyor olması beklenmekte.
+
+544
+02:13:04,083 --> 02:13:29,104
+Tekrar sunumadan geçeyim. Seymemay illaki bir etkinliği şu şekilde yapacaksınız demez. Kendi yoldan ve yöntemlerinizi kullanmanıza izin verir. Ama bunların Seymemay'ın gereksinimlerini yeterli düzeyde karşılık karşılamadığı da işte denetlenerek, incelenerek ve denetlenerek karar verilir bu konuda.
+
+545
+02:13:31,456 --> 02:13:49,796
+O yüzden size tek bir tornadan çıkmış veya tek bir yol sunmuyor size. Kendi yol ve yöntemlerinizi kullanarak da CMM'in gerektirdiği ana etkinlikleri yapıyorsanız ve bununla başarılı olursanız o zaman sorun yoktur şeklinde geçer.
+
+546
+02:13:54,195 --> 02:14:07,916
+Şimdi, tabii Seymamay da zaman içerisinde her standartta olduğu gibi yenilikler ve değişiklikler içermektedir. Daha eskiden 3 ayrı alt alan söz konusuydu.
+
+547
+02:14:07,916 --> 02:14:09,872
+Seymamay de...
+
+548
+02:14:09,872 --> 02:14:20,652
+Development'ın veri, yazılım geliştirme etkinlikleriyle ilgili. CMMI, servis, SVC, hizmet sunumu ve yönetimi ile ilgili etkinlikler.
+
+549
+02:14:20,792 --> 02:14:31,992
+Ve CMMI, ACQ, Accution kısaltılması, ün ve hizmet alımı. Bu üç ayrı alt alan söz konusuydu.
+
+550
+02:14:31,992 --> 02:14:37,872
+Ve siz bunlardan birinde veya birden fazlasında ayrı ayrı level'larda akreştiliyorsunuz.
+
+551
+02:14:37,872 --> 02:14:51,671
+Bu şekilde olabiliyordunuz. Eğer siz çekirdek olarak tabii buradaki işin çekirdeği, SEMI Development bir yazılım evi olarak yazılım geliştirme süreçlerinizin olgunluğunu ispatlamak için öncelikle buna yöneliyordunuz.
+
+552
+02:14:55,764 --> 02:15:07,764
+Daha büyük firmalara iş yapıyorsanız, daha doğrusu şöyle söyleyeyim, büyük yazılım evleri ve çeşitli projeleri için sizleri alt yüklenicisi olarak...
+
+553
+02:15:07,775 --> 02:15:32,255
+Alıyorlarsa, sizden bir art source kaynağı olarak yararlanıyorsa, o zaman bu art source verdiğiniz hizmeti, verdiğiniz art source hizmetini düzgün, olgun, kaliteli bir biçimde yönettiğinizi ve verdiğinizi de ispatlamak için CMMI servisten de akredite olmak isteyebilirsiniz.
+
+554
+02:15:32,836 --> 02:15:35,296
+Bilirdiniz diyeyim ya da geçmiş zaman kullanayım.
+
+555
+02:15:35,775 --> 02:15:59,036
+Tam tersi, siz böyle çok art force işlemleri kaynak kullanıyorsanız, art force kaynak kullanıyorsanız, bunları doğru kullanamadığınızda çok önem taşımaktadır. Size iş yaptığı çıkan kişi, tamam sen iş verdim, sen bunları artık rencere dağıtıyorsun ama onlar acaba düzgün yapabilecek mi? Onlardan emin miyim? Ya da sen emin misin? diye önemli bir sorgulama bu.
+
+556
+02:15:59,036 --> 02:16:03,775
+Buna da yanıt olarak da ben CMI 200 işinden daha...
+
+557
+02:16:03,775 --> 02:16:09,395
+Bu üçlü sahibiyim bilerekten çok rahatlıkla yanıt verebilirsiniz eğer o şekilde çalışıyorsanız.
+
+558
+02:16:10,355 --> 02:16:20,836
+2018'de CMMI versiyon 2.0 çıktı. Önemli bir yeniden yapılanma oldu. Bu üç alanı tek bir model altında birleştirdi artık CMMI.
+
+559
+02:16:20,836 --> 02:16:35,615
+Ve biraz daha tarihçesine bakarsak aslında 1987'de kökenlere atılmış ve 10 yıllık bir süre içerisinde aslında CMM diye şeklinde geçiyordu. Capability, maturity, model. İntegration yoktu pek.
+
+560
+02:16:38,355 --> 02:16:49,236
+Adımların kendi içerisinde tümleşik çalışmasına da verilen önem daha fazla ön plana çıkarılması düşünülüp, 98'in itibaren CMMI adını aldı standart.
+
+561
+02:16:49,236 --> 02:16:56,435
+O yüzden çeşitli kaynaklardan araştırdığımızda eski kaynaklarda CMMI diye geçer, yeni kaynaklarda CMMI diye geçer.
+
+562
+02:16:56,752 --> 02:17:17,652
+2010 yılında CMMI V1.3 oldu ve bu sürümüyle birlikte artık çirik süreçler desteklenmeye başlandı ve dediğim gibi CMMI Level 3'e ECR süreçlerde çok rahatlıkla erişebiliyorsunuz. Bu duruma geldiği süreç.
+
+563
+02:17:24,752 --> 02:17:39,432
+Bu üç ayrı ilgi alanından bahsettim. Onun dışında bir kırılım daha vardı. Continuous veya stage şeklinde ikiye ayrılıyordu. Continuous olan nispeten kısmi bir akreditasyondu.
+
+564
+02:17:52,752 --> 02:18:16,471
+O zaman continuous olarak şey diyordunuz, atlet oluyordunuz. Öbür türlü staged alıyordunuz. Bütüncül, yani tüm atlet genetleriniz belli bir olgunluğun üstünde. Bu daha değerli oluyordu tabii ki bu akreditasyon. Bu ayrımı vardı, o ayrımı kaldırdılar. Hepsini bütüncül şekle getirdiler. 2018'deki 2.0 versiyonu ile.
+
+565
+02:18:18,835 --> 02:18:43,716
+Ülkemizde CMI Level 3 ve daha yukarıda sahip olan kamu ve özel kurumlarımız var. Onlardan birkaç karnesini yazdım. Şimdi en alttaki URL'de bu sorgulamayı siz de yapabilirsiniz. En alttaki URL'i kullanarak. Keza bazı kurumlar belki de Level 3'den Level 4'ü çıkmış olabilir. Belki şimdi bakalım sizlerle birlikte.
+
+566
+02:18:44,435 --> 02:19:00,795
+Yüksek level'dan daha düşüne doğru yazayım. Milsoft, level 5 bir kurum. Military Software oradan geliyor. Askeri projelerde yazılım çözümleri üreten bir firmamız Milsoft.
+
+567
+02:19:02,004 --> 02:19:10,164
+TÜBİTAK'ın çeşitli bilimleri var. Bunların içerisinde Bilgem Biliminin Yazılım Teknolojileri Araştırma Enstitüsü var.
+
+568
+02:19:10,164 --> 02:19:21,684
+Level 5 Akrediteler. Huawei'in Türkiye'nin grubu Level 5 Akredite. Asersan Level 3 Akredite. Cybersoft.
+
+569
+02:19:22,515 --> 02:19:46,736
+Daha çok finans ve kurumsal yazımlar anında çalışır, Level 3 Akredite. Haralsan, hava elektroniği, sanayi kısaltılmıştır. Ama askeri hava sistemlerine sivil amaçlı da olabiliyor. Onlara yönelik gönül uygulama, kontrol yazımları vesaire, onları da üreten bir kurum, Level 3 Akredite.
+
+570
+02:19:49,056 --> 02:20:00,876
+Özel kurum, Level 3 Akredite. Koç sistemin şöyle bir özelliği var. Koç sistem hem bir sistem yönetimi hizmetleri de sunuyor.
+
+571
+02:20:01,427 --> 02:20:25,167
+Hem yazılım geliştirme hizmetleri de sağlıyor, sunuyor. Farklı alanlarda. Herhangi bir kurumun IT ihtiyaçlarını yazılımdan donanıma, oradan networking'e, oradan güvenliğe, herhangi düzeyde sağlayabilecek çözümlere ve danışmanlık hizmetlerine sahip bir firma, coach sistem. Onlar da LV3 Akredite.
+
+572
+02:20:25,811 --> 02:20:40,351
+Etiyah firması var. Yeterli Teknopark'ta da şöbesi var. Level 3 Akredite yazılım. Ben oraya yakın hatırlıyorum. Sabi Gırkşan Havaalanı'nın yanında İstanbul Teknopark Kurulu.
+
+573
+02:20:40,819 --> 02:21:08,759
+Biliyorum arkadaşlarım vardır mutlaka. Oradan iki firma var. IC Terra ve OBSS. Open Source Business Solutions. Business Software Solutions. Onların kısaltması. Pandemiden önce kendi açık kaynaklı yazılım üreten bir firmadır bu OBSS. Açık kaynaklı yazılımı ondan nasıl gelir getirilebileceği konusunda uzun uzun konuşmak için tekrarlamama gerek yok. Öyle çalışan bir firma. Herkesinde İstanbul Teknopark'ta.
+
+574
+02:21:08,819 --> 02:21:18,699
+O, ofisleri var. Hatta OBSS'nin ana ofisi oldu. Başka yerlerde ofisleri var ama. Bildiğim için anik olarak varmışım. Yoksa reklam olmasın.
+
+575
+02:21:20,415 --> 02:21:38,595
+Fakat buradaki bütün kurumlar, SML, leverage ve üzeri atleti olarak da belli bir saygınlarsak ve belli bir övgüde hak ediyorlar. Hepsi hiç kolay bir iş değil. Şimdi sizlerle şu yörele bir bakalım. Bir değişiklik olmuşsa da onları yansıtalım.
+
+576
+02:21:44,180 --> 02:21:46,840
+Yüklenmesi biraz zaman alabiliyor ilk aşamada.
+
+577
+02:21:50,611 --> 02:21:56,651
+O sırada sizin soruları varsa, bu gün kadar konuştuğumuz bütün her şeyden, lütfen buyurun.
+
+578
+02:21:59,491 --> 02:22:00,671
+Tam zamanı sormanın.
+
+579
+02:22:10,164 --> 02:22:12,064
+Biraz bekleyelim, buna bakmak istiyorum.
+
+580
+02:22:14,984 --> 02:22:16,984
+Time out oldu, şimdi tekrar deneyelim.
+
+581
+02:22:23,347 --> 02:22:25,148
+İlk sene bu zamanlar bakmıştım ben buna.
+
+582
+02:22:30,847 --> 02:22:35,507
+Veya da tekrar ararsam Google'dan mesela ya da şuradan.
+
+583
+02:23:05,843 --> 02:23:30,223
+Bakın bir şey var galiba. Evet, göstermek istedik ama site sunmuyor. Tamam peki, dur bakalım. Belki altı yarı de değiştirmişler. Olabilir misinizin içerisinde. Geliyor şimdi. Bir şeyler geliyordu bakalım. Şunalar değişmiş artık. Ama, pardon, soru sistemi değişmiş. Search for Organization ne de? Country, any country değil, Turkey demek istiyorum.
+
+584
+02:23:36,147 --> 02:23:48,687
+Türkiye, any level, any year apply. Evet, değişmiş. Gerhard değişmiş.
+
+585
+02:23:52,404 --> 02:23:56,963
+slash pass diye geçiyor ve bunu da slash pass o şekilde yapalım.
+
+586
+02:24:05,683 --> 02:24:10,063
+ASP X Extended Yardımcısında farklı bir artıplıya geçmişler.
+
+587
+02:24:10,503 --> 02:24:11,484
+Bakalım şimdi, evet.
+
+588
+02:24:12,984 --> 02:24:17,263
+Toplam A9638 Akre Etiket kurumdan bu uluslararası.
+
+589
+02:24:18,623 --> 02:24:26,123
+Türkiye'de, bu arada Level 3 ve üstü deseydim de olabilirdi ama belki bunların içerisinde Level 2'ler de olabilir.
+
+590
+02:24:26,783 --> 02:24:31,603
+Ben mesela Akkın Komputer'ı bir TD projelerini değiştirmiştim, değerlendirmiştim mesela, değiştirmiştim diye.
+
+591
+02:24:31,603 --> 02:24:32,903
+Şimdi burada.
+
+592
+02:24:33,396 --> 02:24:43,515
+Üç ve üstü şeklinde yazamıyorum. O yüzden şimdi hepsi dedim. Ama zaten burada bakın biri göstermeye bile pek değer, özellikle listelmeye bile değer bulmamış.
+
+593
+02:24:44,256 --> 02:24:52,775
+Demiş ama hani daha ciddi işin üç olduğunu söylemiştim. Bakalım şimdi mesela AGML duymamıştım. Ne zaman almış bakın yazıyor mu?
+
+594
+02:24:52,775 --> 02:24:58,775
+Yeni sayılır, 2019'sa almış ama dikkat etmemişim demek ki. Akin computers, evet peki.
+
+595
+02:24:59,247 --> 02:25:18,467
+Altay yazılım. Altay takları üretiliyor ya. İnşallah işte bakalım. Asarsan. Asarsan kendi içerisinde farklı birimleri. Peki. Epey var aslında. Bir dakika yoksa bu. 31. Kaç tarafı? 1, 2, 3, 4, 5, 5, 5, 5, 5, 5, 6, 5, 5, 30. Evet tamam pekala.
+
+596
+02:25:18,847 --> 02:25:29,087
+Komple listede vermiyor. Eski halinde komple liste veriyordu. Sayfa arasında tek tek dolaşmaktansa hepsini görebiliyorduk mesela. Asıl sen savunma sanayi teknolojileri.
+
+597
+02:25:29,087 --> 02:25:33,208
+Asıl duymamıştım.
+
+598
+02:25:34,512 --> 02:25:45,051
+Aydın Yazın, ISAŞ, peki. Başar softu biliyorum. Bitesi duymamıştım. Yeniymiş 2020 akvaryatlarımdan.
+
+599
+02:25:45,512 --> 02:25:54,172
+Bundan artık siz de dolaşabilirsiniz arkadaşlar. Tek tek bütün sayfaları yapmayayım. Ama bunu bir farkındalık olarak söylemek istiyorum.
+
+600
+02:25:55,531 --> 02:25:58,031
+Level 5'e desem bakalım neler çıkacak.
+
+601
+02:25:58,031 --> 02:26:01,851
+5, kaç tane çıkacak?
+
+602
+02:26:03,476 --> 02:26:30,956
+İki, peki. Minisoft ve Tibitak. Peki. Bakalım. Burada beş için. Minisoft'ta. Peki. Huawei kaybetmiş bu düzeni galiba. Bakalım süresiz olmuştur belki. Yeni şeyler içerisinde olabilir. Bakalım dört diyelim. Acaba düşmüş olabilir mi? Pardon. Apply demediye yanlış söyledim. Pardon.
+
+603
+02:26:31,827 --> 02:26:37,288
+4, U'dan yukarı çıkmak, T daha kolay oluyor.
+
+604
+02:26:37,808 --> 02:26:38,227
+Ve atline.
+
+605
+02:26:39,227 --> 02:26:39,587
+Bakalım.
+
+606
+02:26:41,067 --> 02:26:42,207
+Sıfır, peki.
+
+607
+02:26:43,347 --> 02:26:43,988
+Çık bakalım.
+
+608
+02:26:49,876 --> 02:26:52,876
+İlerleyelim bakalım H harfine.
+
+609
+02:26:54,536 --> 02:26:55,376
+Peki H.
+
+610
+02:26:56,515 --> 02:26:56,835
+H.
+
+611
+02:26:56,835 --> 02:26:57,376
+Icetera.
+
+612
+02:26:57,615 --> 02:26:57,876
+Hımm.
+
+613
+02:26:57,956 --> 02:26:58,495
+Icetera.
+
+614
+02:26:58,716 --> 02:26:59,296
+Tamam peki.
+
+615
+02:26:59,896 --> 02:27:00,275
+Evet.
+
+616
+02:27:00,275 --> 02:27:22,484
+H.
+
+617
+02:27:08,404 --> 02:27:11,844
+Sonra belki yeniden alırlar.
+
+618
+02:27:12,603 --> 02:27:13,844
+Evet, durum bu arkadaşlar.
+
+619
+02:27:13,844 --> 02:27:17,603
+Bu arada sorusu olan da hiç çıkmadı.
+
+620
+02:27:17,924 --> 02:27:19,103
+Devam edeyim madem öyle.
+
+621
+02:27:20,884 --> 02:27:25,144
+Çok ilerleyemeyeceğiz galiba sonraki konuya ama neyse en azından bu kısım bitmiş olacağız.
+
+622
+02:27:32,435 --> 02:27:43,755
+SMMI'da case gereçlerinin kullanım şart olmamakla birlikte case gereçlerinin kullanımında SMMI'ya destek vermesi gayet doğal.
+
+623
+02:27:43,755 --> 02:27:54,515
+Bu anlamda eğer case açısından SMMI'yi incelersek veya SMMI'ya case gereçlerinin katkısını düşünürsek,
+
+624
+02:27:56,500 --> 02:28:08,500
+Birinci düzey, CMMI'in birinci başlangıç düzeyi için. Burada case araçları, her ne kadar yazılım ölçülerinin hesaplanmasında destek sağlasa da bu destek...
+
+625
+02:28:09,876 --> 02:28:28,296
+Kullanılmıyor ise bu case araçlar açısından CMMR birinci başlangıç düzeye denk geliyor. Bu araçlar kullanılıyor ama firma düzeyinde tutarlı olarak ve çalışanlar düzeninde aynı olgunlukta, aynı kalite, aynı yeterlikte kullanılmıyordur.
+
+626
+02:28:29,256 --> 02:28:35,616
+Yazılımın yeniden kullanımı ise, çünkü case'in önemli geliştirilmeklerinden sağladığı faydalarından biri de buydu.
+
+627
+02:28:37,876 --> 02:28:55,296
+Repository içerisine deneyimleri aktarılıyordu ve yazılan konu da aktarılıyordu. Burada yeniden kullanımda ya yok ya da çok az. Böyle bir eşleşme söz konusu. İkinci düzeyde, tekrarlanabilir düzeyde ise, bu case araçlarının kullanıma yönelik standartlar vardır.
+
+628
+02:28:55,775 --> 02:29:10,755
+Bunlar hem tanımlanmıştır hem de çalışanlar tarafından bu konuda bilgi sahibidirler çalışanlar. Farkındalık değil, bilgi. Çünkü eğitimlerini almıştırlar ve hands-on experience sahibidirler, kullanmaktadırlar.
+
+629
+02:29:23,775 --> 02:29:32,716
+İş yönetimi, iş atama ve bunun yönetimi, izlenmesi yönetimi gibi işlerler yapan bu tip yazılımlarla case gereksinimlerimizi entegredir.
+
+630
+02:29:32,716 --> 02:29:38,635
+Belki kendi içerisinde modül de var olabilir case aracığım, o da başka bir sene. Böyle bir durum söz konusuysa.
+
+631
+02:29:39,076 --> 02:29:46,275
+Ve yeniden kullanılabilerek bir miktar iyileşmişse o zaman bu düze ikiye denk geliyor.
+
+632
+02:29:47,827 --> 02:30:08,487
+Düzey 3'te ise veri deposu artık kullanılıyor, aktif olarak kullanılıyor. Bir kütüphane şeklinde güzel organize edilmiş ve bu sayede yeniden kullanım önemli oranda hedeflerine ulaşılmış. Yazılım ölçütleri toplanmakta.
+
+633
+02:30:08,896 --> 02:30:19,436
+ve kullanılmakta. Ama iyileştirme şart değil, o beşinci düzey içindir. Yine bu konuları ileride zamanı gelince değineceğiz. Yazılım öncelikle önemli ettikleri.
+
+634
+02:30:21,363 --> 02:30:32,743
+Organizasyonla ait veri tabanımız, işte bu da ölçüler ve bunların değerleri zaman içerisinde işini saklanmakta, kullanılmakta gibi kriterler var.
+
+635
+02:30:33,463 --> 02:30:43,123
+Dördüncü düzeyde, yönetilebilir düzeyde artık yazılım ölçülerini niteliksel olarak analiz edip süreç yönetimimizde bunları da kullanmaktır.
+
+636
+02:30:49,363 --> 02:31:07,984
+Diğer sonraki projelerde kullanılmıyorsa, düzey 5'e Optimize O'ya denk geliyor. Yeni yazılım aşağıda dahil olmak üzere, bütün gereksinimiz sadece kullanı geldiklerimiz değil, yeni kullanmaya başladıklarımız da aynı şekilde bünyemize entekle oluyor diyelim.
+
+637
+02:31:17,363 --> 02:31:45,363
+İster bizim çalıştığımız bir biçim ve modeller olsun, onlarda iyileşmeler var mı, yenilikler var mı veya yepyeni bir model önerilmiş mi veya bir mimari yaklaşımı önerilmiş mi falan. Bunları da inceleyip, araştırıp, değerlendirip, işimize yarayıp yaramayacağının değerlendirilip, yarıyorsa bünyemize alınması ve bütün bu art düzeylerdeki etkinlikler.
+
+638
+02:31:45,363 --> 02:31:56,963
+Derle birlikte yönetilmesi de söz konuyorsa o zaman bu da case ile CMMI LR5 Optimized düzeyde çalışıyoruz anlamına gelmektedir.
+
+639
+02:32:00,023 --> 02:32:04,743
+Buraya kadar sorusu olan arkadaşım varsa lütfen buyursun.
+
+640
+02:32:08,884 --> 02:32:16,984
+Bir iki dakika bekleyin, ondan sonra bakalım nasıl ilerleyelim, onun bir değerlendirmesini yapalım altında. Şimdi bir iki dakika sorularınızı bekleyin.
+
+641
+02:32:21,876 --> 02:32:23,515
+Kayıt ettiğimde unutmayın.
+
+642
+02:32:24,876 --> 02:32:27,115
+Ve ona pileri de bakabilirim.
+
+643
+02:32:29,756 --> 02:32:30,916
+Evet, bir dakika.
+
+644
+02:32:31,276 --> 02:32:32,476
+Soru için bekliyorum arkadaşlar.
+
+645
+02:32:33,115 --> 02:32:33,675
+Çok konuştum.
+
+646
+02:32:33,816 --> 02:32:35,056
+Biraz teyze soru almadım.
+
+647
+02:32:54,164 --> 02:32:56,123
+Açık elginiYaz, gerekli yedirme.
+
+648
+02:33:20,884 --> 02:33:24,463
+Bu kadar zorlamazdım da.
+
+649
+02:33:25,963 --> 02:33:26,684
+Bu kadar yapamadık.
+
+650
+02:33:26,684 --> 02:33:29,024
+Daha ilerleyelim.
+
+651
+02:33:34,963 --> 02:33:41,363
+Bu düşünmeniz için zaman kalmıyor da. Yoksa de yoktur.
+
+652
+02:33:43,763 --> 02:33:45,644
+Peki o ara...
+
+653
+02:33:48,979 --> 02:33:55,159
+gereksinim mühendisliği etkinliklerine bir kısaca giriş yapalım. Ayrıntılarını haftaya konuşuyor olacağız.
+
+654
+02:33:55,880 --> 02:33:58,259
+İngilizcesi Requirements Engineering.
+
+655
+02:34:02,932 --> 02:34:15,932
+Gereksinim mühendisliği etkinliklerinin ana tanımı veya ana odağı üzerinde çalışmaya başlayacağımız olan projenin amaçlarını, boyutlarını ve etkilerini belirlemeye yönelik çalışmalardır.
+
+656
+02:34:16,852 --> 02:34:22,932
+Bu gereksinim mühendisliği çalışmalarını tamamladıktan sonra belki de bu projeye başlamamayı da seçebiliriz.
+
+657
+02:34:23,972 --> 02:34:27,632
+Hani çalışmaya başlanacak dedik ama belki başlamamayı da seçebiliriz.
+
+658
+02:34:30,260 --> 02:34:41,000
+Aslında gereksinim mühendisliği bize yapılabilirlik çalışmasına da önemli bir girdi sağlamaktadır. İngilizcesi feasibility.
+
+659
+02:34:41,600 --> 02:34:52,079
+Feasibility deyip geçiyoruz bazen, yamuk bir şekilde çevirerek Türkçe söyleyebiliyoruz, aktarabiliyoruz. Ama feasibility yani yapılabilirlik çalışması.
+
+660
+02:34:54,644 --> 02:35:02,524
+Bizim için ne gibi maliyet kalemlerini yol açacak, ne gibi maliyet kalemleri doğrulacak?
+
+661
+02:35:03,572 --> 02:35:12,792
+Bu projenin yapılabilirliğini engelleyecek veya yapılabilmesi için gerekli olan kanun, yönetmelik, yükümlülükler var mıdır?
+
+662
+02:35:13,752 --> 02:35:16,871
+Bizde bunlara uyum var mıdır?
+
+663
+02:35:16,871 --> 02:35:27,972
+Veya bu projenin yapılmasına yönelik gerekli bütün kaynaklar, her açıdan baktığımızda, insan kaynağından, lisansa, her açıdan baktığımızda, bütün bu kaynaklar bizde var mı?
+
+664
+02:35:28,628 --> 02:35:51,608
+Yoksa kiralanabilir mi? Veyahut da el olmayan deneyim, eğitim veyahut da danışmanlık veyahut da outsourcing ile karşılanabilir mi? Bütün bunların bize maliyeti ne olacak? Ne kadar sürecek çalışmamız? Ne kadar zamanda kara geçebileceğiz?
+
+665
+02:35:54,260 --> 02:36:13,399
+Bunu sürdürebilecek miyiz bu düzeyde? Bütün bunlar çok önemli sorular. Ve nihayetinde bir yazılım evi olarak da, bir ticari kurum olarak da biz de kar edebilmek için çalışıyoruz. Eğer bu projeden kar edemeyeceksek de hiç girmeyiz, başlamayız.
+
+666
+02:36:14,644 --> 02:36:36,084
+Önemli bir etkinliktir bu. Gereksinim mühendisliği de buraya önemli girdiler sağlar. Bir gereksinim mühendisliği etkinliği yapmadan fizibilite çalışması yapılamaz. Eksik kalır. Eksik olan da yok demektir aslında bu açıdan.
+
+667
+02:36:37,427 --> 02:36:45,788
+Geeksinim mühendisi zorunlu bir etkinlik. Gerçi yazılım hakkında yanılgılar konusunda da bahsetmiştik bu konuda.
+
+668
+02:36:46,648 --> 02:36:52,768
+Müşteri ne istediğini bilmez mi? O yüzden gereksinimler zaten belli değil mi? Pek öyle olmuyor.
+
+669
+02:36:52,768 --> 02:37:02,167
+Çünkü genelde müşterinin kafasında sadece an hatlarıyla bir fikir doğmuştur. Ayrıntılar belirlenmemiştir.
+
+670
+02:37:02,868 --> 02:37:25,508
+Veya kendi belirlediği ayrıntı değildir aslında, yoruma açık ifadelerdir. Kesin çizgiler belirlenmemiştir. Çünkü zaten o müşterinin kafasında yazılım nasıl olsa esnektir, yanılgısı vardır belki de konuşmuşluk ilk haftalarda. Bütün bunlar projenin başarısızlığını resmen çağırıyor, davetliye çıkarıyor.
+
+671
+02:37:26,100 --> 02:37:32,399
+Kaldı ki, çok iyi ve ayrıntılı belirlenmiş gereksinimler bile zaman içerisinde değiştirebilecektir.
+
+672
+02:37:32,920 --> 02:37:35,459
+Yani boşuna dememişler, şeytan ayrıntılı gizlidir diye.
+
+673
+02:37:37,020 --> 02:37:44,439
+Ve ayrıca, nihayetinde biz müşterinin ihtiyaçlarını karşılayacak bir yazılım üretiyoruz.
+
+674
+02:37:45,139 --> 02:37:52,180
+Yani yanlış veya eksik işi yapan ama mükemmel olan bir yazılım zaten böyle bir şey yok aslında.
+
+675
+02:37:52,380 --> 02:37:58,680
+Oksimonom. Tamam çok güzel kullanım kolaylığı vardır, işleri çok hızlı yapıyordur, filan ölçeklenebilirdir vesaire.
+
+676
+02:37:59,000 --> 02:38:05,860
+Ama yanlış işi yapıyorsa veya işi eksik yapıyorsa o zaman işe yaramaz.
+
+677
+02:38:06,399 --> 02:38:09,020
+Önemli olan doğru işi yapan iyi çözüm.
+
+678
+02:38:11,092 --> 02:38:24,112
+Eksik işi yapan mükemmel çözüm değil, doğru işi yapan iyi çözüm esas ihtiyacı uzanan şey. Bu nedenle özetlersek, gereksinim mühendisliği, elbisem ve gerekli bir etkinliktir.
+
+679
+02:38:32,468 --> 02:38:42,368
+Gereksinim mühendisliği etkinliklerinin sonunda ortaya çıkacak olan belgeye SRS belgesi diyoruz.
+
+680
+02:38:42,899 --> 02:39:03,020
+Açılımı Software Requirements Specification. Yazılım gereksinimler belgesi, YGB diye. Ama Türkçe hiç kullanmıyoruz, hiç YGB diyene pek denk gelmedim. Ama bu işlerin literatürdeki özgün kısaltması. SLS, Software Requirements Specification.
+
+681
+02:39:10,899 --> 02:39:14,860
+Başka standartlar da olabilir.
+
+682
+02:39:16,039 --> 02:39:25,439
+Burada tekrar standart hakkında hatırlatma yaparsam, IEEE standartı sunan kurum, 830 standartın numarası,
+
+683
+02:39:26,119 --> 02:39:31,404
+Tire'den sonra geçen rakam ise senedir, hangi senede oluşturduğunun...
+
+684
+02:39:31,540 --> 02:39:44,940
+belirtir. Bu ITAP'nin bu 8.30 standartı Software Regulant Specification belgesini oluşturmak odaklıdır. Orada çeşitli etkinlikler tanımlanır, nasıl yapılacağı hakkında bilgi verilir, öneriler de bulunur.
+
+685
+02:39:45,200 --> 02:39:58,520
+İSOR'un da bir standartı var. 29.148 standartı. 2011 tarihli sürümü var. Systems and Software Engineering Life Cycle Processes Requirements Engineering şeklinde geçer.
+
+686
+02:39:59,540 --> 02:40:00,000
+Şunu da...
+
+687
+02:40:00,000 --> 02:40:15,619
+Bu bir şey demek istiyor. Ana olarak bir herhangi bir sistem mühendisi veya yazılım mühendisi etkinliğinde onun birçok alt adımı vardır. Bunların içerisinde life cycle yani yaşam döngüsü süreçleri etkinliklerden biridir.
+
+688
+02:40:28,468 --> 02:40:53,948
+Kırınmalarına da bakarsak aslında bir standartlar ailesidir deniyor. Bunların da farkında olun denilmek isteniyor. Ama tabii ki bir yazılım evi olarak, hele ki küçük ölçekli bir yazılım evisi, bütün standartlara uymak zorunda da değiliz. Bunlara uymak için gerekli önce öğrenme etkinlikleri, sonra bunlara uymak için gerekli etkinlikler, çabalar, maliyetler hepsi biraz ek yüktür.
+
+689
+02:40:56,468 --> 02:41:23,128
+Kısıklıysa, o zaman yapmamız gereken şey, en kötü olduğumuz veya bizi en çok zorlayan, bizi ayağımızın en çok takıldığı veya bizi en çok geri çeken, en sıkıntıda olduğumuz etkinlik alanı neyse, onları önceliklendirerek, onlara yönelik standartların gerekliliğini yapmaya çalışmak en doğru seçimdir, diyorum.
+
+690
+02:41:23,860 --> 02:41:44,819
+Bu standartlar ve uyum veya kendi yönteminizi kullanın fark etmez. Bu gereksinim belgesi içerisinde çeşitli metinler, içerikler, şemalar yer alacaktır. Bütün bunların hepsine artifact diyoruz.
+
+691
+02:41:47,412 --> 02:41:57,311
+Bir yazılım geliştirme etkinliği sırasında kaynak kodu dışında ortaya çıkarttığımız her türlü metin ve şema artifact olarak adlandırılıyor.
+
+692
+02:41:58,171 --> 02:42:09,932
+Çeşitli konfigürasyon XMR'lar için yazdığımız XMR dosyaları bile aslında bir artifact olarak değerlendirilebilir duruma göre.
+
+693
+02:42:10,324 --> 02:42:20,263
+Bunu da bir tanım olarak aklınızda koysun. Artifakt, artifakt deniyor. Nedir artifakt? Bu. Bir yazılım projesinde kod dışındaki her şey artifaktır.
+
+694
+02:42:20,263 --> 02:42:37,824
+Aslında konfigürasyon dosyalarını da kodun bir parçası olarak alıyorsanız o zaman artifakt değildir. Ama kaynak kodunuzu belirli bir hedef platforma yönelik derle ve bağlama işlemleri için bir build manager kullanıyorsanız onun konfigürasyon dosyası aslında bir artifakt olarak düşünebilir.
+
+695
+02:42:38,835 --> 02:42:42,495
+Ama ana tanımıyla kod dışındaki her şey atıfaktır.
+
+696
+02:42:46,291 --> 02:43:14,171
+Bugünkü dersi burada bitirelim diyorum. Çünkü artık bundan sonra genel adımlar söz konusu. 7 tane adım söz konusu. Bu da kendi içerisinde bir süreç ve her adımda yapılacak çeşitli etkinlikler var. Onların anahtarıyla anlatılır söz konusu. Hiç onlara boşuna girmeyin. Bugün bu kadar konularda ilerlemek yeter. Ama sizlerin soruları varsa çok rahatlıkla üstümde konuşacak vaktimiz var. Buyurun sorun.
+
+697
+02:43:14,291 --> 02:43:19,152
+Ben de sizlerden soru beklerken nerede kalp bir noteri.
+
+698
+02:43:24,948 --> 02:43:26,067
+M.I.K. dedik.
+
+699
+02:43:30,131 --> 02:43:35,452
+İçbosim eksek yazım yazım.
+
+700
+02:43:40,404 --> 02:43:47,844
+Daha sonra şimdi burada, evet, önümüzdeki hafta, gereksinim mühendisliğinden geçeceğiz, devam edeceğiz.
+
+701
+02:43:54,739 --> 02:44:02,459
+Yani aslında şöyle bir 53'e belki değinirim ama esas 54'ten itibaren başlayacağız.
+
+702
+02:44:06,579 --> 02:44:10,399
+P54'tan bir ara kaba gidebilirsek.
+
+703
+02:44:27,123 --> 02:44:28,724
+Evet, şu da azı obu iloç, tak?
+
+704
+02:44:51,603 --> 02:45:01,003
+O zaman bugün bir kadar ithal günü kapatıyoruz, oturumu kapatıyoruz diyebiliriz arkadaşlar. Sağlıkla kalın, sağlıcakla kalın. Haftaya inşallah görüşmek üzere.
+
+705
+02:45:01,823 --> 02:45:09,384
+İyi günler arkadaşlar. Ben de önceki sorumlu var mı diye bir sorumlardım. Çete yokmuş. İyi de eklerinizi belirtiyorsunuz. Çok teşekkür ederim.
+
+706
+02:45:10,003 --> 02:45:10,663
+Bilimli kabene.
+
+707
+02:45:12,283 --> 02:45:13,063
+Allah'a sınırlı.
